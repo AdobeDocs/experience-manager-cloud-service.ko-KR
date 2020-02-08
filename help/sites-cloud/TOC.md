@@ -1,0 +1,73 @@
+---
+sub-product: Authoring Content in AEM as a Cloud Service
+user-guide-title: Authoring Content in AEM as a Cloud Service
+translation-type: tm+mt
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+
+---
+
+
+# 사이트 {#sites}
+
++ [클라우드 서비스로서의 AEM 사이트](/help/sites-cloud/home.md)
++ [AEM Cloud Service의 AEM Sites 주목할 만한 변경 사항](sites-cloud-changes.md)
++ 작성 {#authoring}
+   + 시작하기 {#getting-started}
+      + [작성 페이지에 대한 빠른 시작 안내서](authoring/getting-started/quick-start.md)
+      + [작성 개념](authoring/getting-started/concepts.md)
+      + [기본 처리](authoring/getting-started/basic-handling.md)
+      + [검색](authoring/getting-started/search.md)
+      + [계정 환경 구성](authoring/getting-started/account-environment.md)
+      + [받은 편지함](authoring/getting-started/inbox.md)
+      + [키보드 단축키](authoring/getting-started/keyboard-shortcuts.md)
+   + 작성 기본 사항 {#fundamentals}
+      + [환경 및 도구](authoring/fundamentals/environment-tools.md)
+      + [페이지 주석 추가](authoring/fundamentals/annotations.md)
+      + [페이지 생성 및 구성](authoring/fundamentals/organizing-pages.md)
+      + [페이지 컨텐츠 편집](authoring/fundamentals/editing-content.md)
+      + [리치 텍스트 편집기](authoring/fundamentals/rich-text-editor.md)
+      + [페이지 속성](authoring/fundamentals/page-properties.md)
+      + [페이지 게시](authoring/fundamentals/publishing-pages.md)
+      + [컨텐츠 조각](authoring/fundamentals/content-fragments.md)
+      + [경험 조각](authoring/fundamentals/experience-fragments.md)
+      + [CSV로 내보내기](authoring/fundamentals/csv-export.md)
+      + [구성 요소](authoring/fundamentals/components.md)
+      + [모바일 장치용 제작](authoring/fundamentals/mobile.md)
+      + [액세스 가능한 컨텐츠(WCAG 2.0 적합성)](authoring/fundamentals/accessible-content.md)
+      + [문제 해결](authoring/fundamentals/troubleshooting.md)
+      + [키보드 단축키](authoring/fundamentals/keyboard-shortcuts.md)
+   + 작성 기능 {#features}
+      + [페이지 템플릿](authoring/features/templates.md)
+      + [스타일 시스템](authoring/features/style-system.md)
+      + [페이지 버전](authoring/features/page-versions.md)
+      + [페이지 비교](authoring/features/page-diff.md)
+      + [구성 요소 콘솔](authoring/features/components-console.md)
+      + [응답형 레이아웃](authoring/features/responsive-layout.md)
+      + [태그 사용](authoring/features/tags.md)
+   + 프로젝트 {#projects}
+      + [프로젝트 작업](authoring/projects/overview.md)
+      + [프로젝트 관리](authoring/projects/managing.md)
+      + [작업](authoring/projects/tasks.md)
+      + [프로젝트 워크플로우 작업](authoring/projects/workflows.md)
+   + 론치 {#launches}
+      + [론치 작업](authoring/launches/overview.md)
+      + [론치 만들기](authoring/launches/creating.md)
+      + [론치 편집](authoring/launches/editing.md)
+      + [론치 홍보](authoring/launches/promoting.md)
+   + 워크플로우 {#workflows}
+      + [워크플로우 작업](authoring/workflows/overview.md)
+      + ](authoring/workflows/applying.md)페이지에 워크플로우 적용[
+      + ](authoring/workflows/participating.md)워크플로우에 참여[
+   + 개인화 {#personalization}
+      + [개인화 개요](authoring/personalization/overview.md)
+      + [ContextHub 데이터를 사용하여 페이지 미리 보기](authoring/personalization/contexthub.md)
+      + [타깃팅 모드를 사용한 타깃팅된 컨텐츠 작성](authoring/personalization/targeted-content.md)
+      + [다중 사이트에서 타깃팅된 컨텐츠 작업](authoring/personalization/multisite-targeted-content.md)
+      + [타깃팅된 컨텐츠에 대한 다중 사이트 관리 구성 방식](authoring/personalization/multisite-structure.md)
+      + [활동 관리](authoring/personalization/activities.md)
+      + [대상자 관리](authoring/personalization/audiences.md)
+      + [오퍼 생성 및 관리](authoring/personalization/offers.md)
+      + [세그멘테이션 이해](authoring/personalization/segmentation.md)
++ 클라우드 서비스로 AEM과 통합 {#integrations}
+   + [Adobe Analytics와 통합](integrating/adobe-analytics.md)
+   + [Adobe Target과 통합](integrating/adobe-target.md)
