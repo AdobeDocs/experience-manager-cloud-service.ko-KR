@@ -302,7 +302,7 @@ If you decide that the offer can be used for other experiences, you can create a
 
    ![오퍼 추가](/help/sites-cloud/authoring/assets/targeted-component-menu.png)
 
-1. + 아이콘을 클릭하거나 탭합니다.
+1. &#x200B;+ 아이콘을 클릭하거나 탭합니다.
 
    기본값 오퍼의 컨텐츠는 현재 경험을 위한 오퍼로 사용됩니다.
 
