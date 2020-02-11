@@ -2,7 +2,7 @@
 title: IMS 클라우드 서비스로서의 Adobe Experience Manager 지원
 description: 'IMS 클라우드 서비스로서의 Adobe Experience Manager 지원 '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
 
 ## 아키텍처 {#architecture}
 
-IMS 인증은 AEM과 Adobe IMS 끝점 간 OAuth 프로토콜을 사용합니다. 사용자가 IMS에 추가되고 Adobe Identity가 있으면 IMS 자격 증명을 사용하여 AEM Managed Services 인스턴스에 로그인할 수 있습니다.
+IMS 인증은 AEM과 Adobe IMS 끝점 간 OAuth 프로토콜을 사용합니다. 사용자가 IMS에 추가되고 Adobe Identity가 있으면 IMS 자격 증명을 사용하여 AEM 작성자 서비스에 로그인할 수 있습니다.
 
 사용자 로그인 흐름이 아래에 표시되어 있고, 사용자는 IMS로 리디렉션되고, 선택적으로 SSO용 고객 IDP로 리디렉션된 다음 AEM으로 다시 리디렉션됩니다.
 
