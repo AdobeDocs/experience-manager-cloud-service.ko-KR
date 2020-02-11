@@ -2,7 +2,7 @@
 title: 클라우드 서비스 개발 지침으로서 AEM
 description: '완료 예정 '
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
 
 ---
 
@@ -58,7 +58,7 @@ Adobe에서는 HTTP 연결을 만들기 위해 제공된 [Apache HttpComponents 
 
 AEM을 클라우드 서비스 개발자 환경으로 디버깅하기 위한 도구 세트는 개발, 준비 및 프로덕션 환경을 위해 개발자 콘솔에서 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
 
-`https://dev-console>-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 바로 가기 키로, 아래 설명된 환경 매개 변수를 기반으로 개발자 콘솔을 실행하는 데 다음 Cloud Manager CLI 명령을 사용할 수 있습니다.
 
