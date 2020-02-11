@@ -460,7 +460,7 @@ Dynamic Media를 원활하게 <!--(with `dynamicmedia_scene7` run mode)--> 실�
 * 미리 정의된 [MOCK] Update the predefined Granite workflow (images and non-video assets) queue worker threads.
 * Dynamic Media Classic 서버에 대한 최대 업로드 연결을 업데이트합니다.
 
-#### [MOCK] Updating the Granite Temporary Workflow queue {#updating-the-granite-transient-workflow-queue}
+#### Updating the Granite Temporary Workflow queue {#updating-the-granite-transient-workflow-queue}
 
 [DAM 자산 업데이트] 작업 과정에는 [DAM **[!UICONTROL 전송 워크플로] 큐가]** 사용됩니다. Dynamic Media에서는 이미지 처리 및 처리에 사용됩니다.
 
