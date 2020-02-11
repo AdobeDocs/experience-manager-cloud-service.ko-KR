@@ -2,7 +2,7 @@
 title: 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager
 description: '차이점 및 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager(AEM) '
 translation-type: tm+mt
-source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
+source-git-commit: 27a16045ff0c22d65e61468036e6ee0b9ab1d826
 
 ---
 
@@ -121,7 +121,6 @@ Adobe는 서비스의 모든 운영 인스턴스를 최신 버전의 AEM 코드 
 >자세한 내용은 배포 [아키텍처를 참조하십시오](/help/core-concepts/architecture.md#deployment-architecture).
 
 ## Cloud Manager {#cloud-manager}
-
 
 Adobe Cloud Manager는 인스턴스에 대한 모든 업데이트를 제어하므로 AEM을 클라우드 서비스로 지속적으로 업그레이드할 때 없어서는 안 될 필수 사항입니다.
 
@@ -347,36 +346,4 @@ Adobe Experience Manager Assets as a Cloud Service는 클라우드 기반의 Saa
 
 자세한 내용은 [개요와 Assets as a Cloud Service 소개를 참조하십시오](/help/assets/overview.md).
 
-<!--
 
-#### Previous Versions {#previous-versions-aem-sites}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-sites}
-
-tbc
-
--->
-
-<!--
-
-#### Previous Versions* {#previous-versions-aem-assets}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-assets}
-
-tbc 
-
--->
-
-<!--
-
-### Miscellaneous {#miscellaneous}
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-miscellaneous}
-
-Additionally???
-
--->
