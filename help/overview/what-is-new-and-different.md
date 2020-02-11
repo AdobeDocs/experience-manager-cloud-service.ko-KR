@@ -2,7 +2,7 @@
 title: 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager
 description: '차이점 및 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager(AEM) '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
 
 ---
 
@@ -118,27 +118,10 @@ Adobe는 서비스의 모든 운영 인스턴스를 최신 버전의 AEM 코드 
 
 >[!NOTE]
 >
->이는 Cloud Manager를 사용하여 [가능합니다](#cloud-manager).
+>자세한 내용은 배포 [아키텍처를 참조하십시오](/help/core-concepts/architecture.md#deployment-architecture).
 
 ## Cloud Manager {#cloud-manager}
 
->[!NOTE]
->
->자세한 내용은 배포 [아키텍처를 참조하십시오](/help/core-concepts/architecture.md#deployment-architecture).
-
-### 이전 버전 {#previous-versions-cloud-manager}
-
-클라우드 관리자는 AEM의 Managed Services 인스턴스에 대한 배포 도구로 사용되었습니다.
-
-AMS용 Cloud Manager와 클라우드 서비스의 주요 차이점은 임차인이 만들어지면 고객이 구매한 SKU를 기반으로 크레딧이 채워집니다.
-
->[!NOTE]
->운영 관점에서 본다면 크레딧의 개념이 Cloud Manager UI에 바로 표시되지 ** 않습니다.
-
-일반 프로그램을 만들면 크레딧이 소비되지 않지만, 크레딧을 만들려면 핵심 크레딧이 있어야 합니다.
-다양한 프로그램이 만들어지는 방식에 대한 자세한 내용은 프로그램 [만들기를 참조하십시오](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
-
-### 클라우드 서비스로 AEM 사용 {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud Manager는 인스턴스에 대한 모든 업데이트를 제어하므로 AEM을 클라우드 서비스로 지속적으로 업그레이드할 때 없어서는 안 될 필수 사항입니다.
 
