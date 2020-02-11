@@ -2,7 +2,7 @@
 title: 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager
 description: '차이점 및 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager(AEM) '
 translation-type: tm+mt
-source-git-commit: 27a16045ff0c22d65e61468036e6ee0b9ab1d826
+source-git-commit: b9a32b3ac4c296f4bb02e9a590c1b3e22d53f562
 
 ---
 
@@ -136,7 +136,7 @@ Cloud Manager:
 
 특히, 클라우드 관리자에서 만들 수 있는 AEM 프로그램의 수와 유형은 다음 중 하나를 파생시킵니다.
 
-* 고객 라이센스 계약(크레딧풀 형식)에서
+* Shankari는 고객 라이선스 [계약에서 크레딧을 언급할 수 없습니다.]
 
 * AEM을 클라우드 서비스로 사용하는 경우 내부 제어 행위자로부터 지원 또는 트레이닝에
 
