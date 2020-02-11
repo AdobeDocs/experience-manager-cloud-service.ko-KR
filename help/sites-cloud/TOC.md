@@ -56,8 +56,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [론치 홍보](authoring/launches/promoting.md)
    + 워크플로우 {#workflows}
       + [워크플로우 작업](authoring/workflows/overview.md)
-      + ](authoring/workflows/applying.md)페이지에 워크플로우 적용[
-      + ](authoring/workflows/participating.md)워크플로우에 참여[
+      + [페이지에 워크플로우 적용](authoring/workflows/applying.md)
+      + [워크플로우에 참여](authoring/workflows/participating.md)
    + 개인화 {#personalization}
       + [개인화 개요](authoring/personalization/overview.md)
       + [ContextHub 데이터를 사용하여 페이지 미리 보기](authoring/personalization/contexthub.md)
