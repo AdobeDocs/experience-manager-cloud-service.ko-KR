@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 운영 및 유지 관리
 description: Adobe Experience Manager를 클라우드 서비스 운영 및 유지 관리 자체 도움말 리소스 및 설명서 링크로 사용
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
 * [컨텐츠 복제](replication.md)
 * [유지 관리 작업](maintenance.md)
 * [백업 및 복원](backup.md)
-* [색인 생성](indexing.md)
 
 ## 클라우드 서비스 가이드로 Experience Manager 사용 {#aem-guides}
 
