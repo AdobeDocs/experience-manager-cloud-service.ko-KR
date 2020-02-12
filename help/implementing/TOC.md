@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 + 클라우드 서비스로 AEM용으로 개발 {#developing}
    + [AEM 프로젝트 패키지 구조](developing/introduction/aem-project-content-package-structure.md)
    + [저장소 구조 패키지 개발](developing/introduction/repository-structure-package.md)
-   + [클라우드 서비스 SDK로 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [클라우드 서비스 SDK로 AEM 사용](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [컨텐츠 검색 및 인덱싱](/help/operations/indexing.md)
    + [클라우드 서비스 개발 지침으로서 AEM](developing/introduction/development-guidelines.md)
    + [AEM 사이트 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
