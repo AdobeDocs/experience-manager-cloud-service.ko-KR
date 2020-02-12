@@ -2,7 +2,7 @@
 title: 클라우드 서비스로 AEM에 배포
 description: '클라우드 서비스로 AEM에 배포 '
 translation-type: tm+mt
-source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
+source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
 
 ---
 
@@ -48,7 +48,7 @@ AEM이 자주 업데이트되며, 잠재적으로 하루에 한 번 정도 업�
 > [!메모}
 >애플리케이션이 로컬 시스템에서 작동하는 방식과 Adobe Cloud의 작동 방식은 서로 다릅니다. 이러한 아키텍처 차이는 로컬 개발 중에 존중되어야 하며 클라우드 인프라에 배포할 때 다른 행동을 초래할 수 있습니다. 이러한 차이점 때문에 프로덕션에서 새로운 사용자 지정 코드를 롤아웃하기 전에 개발 및 스테이지 환경에서 철저한 테스트를 수행하는 것이 중요합니다.
 
-다음은 개발자가 관련 버전의 AEM 객체에 액세스하는 프로세스입니다. AEM은 내부 릴리스에 대한 사용자 정의 코드를 개발하는 데 필요한 클라우드 서비스 SDK라고 합니다. 디스패처에 대한 정보는 이 [페이지에서](/help/implementing/dispatcher/overview.md)찾을 수 있습니다.
+내부 릴리스에 대한 사용자 정의 코드를 개발하려면 관련 버전의 [AEM을 클라우드 서비스 SDK로](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 다운로드하여 설치해야 합니다. 클라우드 서비스 디스패처 도구로 사용에 대한 자세한 내용은 [이 페이지를](/help/implementing/dispatcher/overview.md)참조하십시오.
 
 ## Cloud Manager 및 Package Manager를 통한 콘텐츠 패키지 배포 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
