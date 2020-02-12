@@ -1,13 +1,13 @@
 ---
-title: 색인 생성
-description: '색인 생성 '
+title: 컨텐츠 검색 및 인덱싱
+description: '컨텐츠 검색 및 인덱싱 '
 translation-type: tm+mt
-source-git-commit: 83d2abd5b75e644be97de1d5420e7bca6b13e0d9
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
 
-# 색인 생성 {#indexing}
+# 컨텐츠 검색 및 인덱싱 {#indexing}
 
 ## 클라우드 서비스로 AEM의 변경 사항 {#changes-in-aem-as-a-cloud-service}
 
