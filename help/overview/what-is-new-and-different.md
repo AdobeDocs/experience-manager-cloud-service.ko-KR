@@ -2,7 +2,7 @@
 title: 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager
 description: '차이점 및 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager(AEM) '
 translation-type: tm+mt
-source-git-commit: 38503961d0d7437511533d122ac1f4e7c8f9f042
+source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
 
 ---
 
@@ -46,22 +46,24 @@ AEM은 여러 해 동안 다음과 같이 사용할 수 있습니다.
 >
 >자세한 내용은 아키텍처를 [참조하십시오](/help/core-concepts/architecture.md).
 
-### 이전 버전 {#previous-versions-architecture}
+<!--
+### Previous Versions {#previous-versions-architecture}
 
-AEM 온프레미스 및 Managed Services의 AEM 모두 고정된 수의 시스템과 인스턴스로 구성된 정적 아키텍처를 사용했습니다.
+Both AEM on-premise, and AEM under Managed Services used a static architecture comprised of a fixed number of machines and instances. 
 
-![정적](assets/introduction-01.png "아키텍처정적 아키텍처")
+![Static architecture](assets/introduction-01.png "Static architecture")
 
-다음과 같습니다.
+These:
 
-* 최대 *트래픽(인터넷) 및* 최대 ** 활동(마케팅)을 위해 크기를 조정했으며, 이로 인해 상당 기간 동안 유휴 상태가 되었습니다.
-   ![정적 구조는 다양한 사용 패턴을 충족해야](assets/introduction-02.png "합니다.정적 구조는 다양한 사용 패턴을 충족해야 합니다.")
+* Were sized for *peak* traffic (internet) and *peak* activity (marketing), which resulted in them being idle for significant periods of time:
+![Static structure must cater for varying usage patterns](assets/introduction-02.png "Static structure must cater for varying usage patterns")
 
-* 단일 애플리케이션(빠른 시작)입니다.
+* Were monolithic applications (the quickstart).
 
-* 단일 작성자 인스턴스가 있습니다.유지 관리 기간 동안 다운타임이 발생할 수 있었습니다.
+* Had a single author instance; which was subject to downtime during maintenance windows.
 
-### 클라우드 서비스로 AEM 사용 {#aem-as-a-cloud-service-architecture}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-architecture}
+-->
 
 이제 클라우드 서비스로 AEM에 다음이 포함됩니다.
 
@@ -92,13 +94,15 @@ AEM 온프레미스 및 Managed Services의 AEM 모두 고정된 수의 시스�
 >For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
 -->
 
-### 이전 버전 {#previous-versions-upgrades}
+<!--
+### Previous Versions {#previous-versions-upgrades}
 
-AEM 온프레미스 및 Managed Services의 AEM 모두 서비스 팩, 기능 팩 및 핫픽스별 연간 주요 릴리스의 고정 패턴이 적용되었습니다. 종종 인스턴스는 2년 이상 주 버전을 실행합니다.
+Both AEM on-premise, and AEM under Managed Services were subject to a fixed pattern of a yearly major release augmented by service packs, feature packs and hot-fixes. Often instances would run a major version for two or more years. 
 
-업그레이드 유형에 따라 분석, 개발 및 테스트로 구성된 상당한 준비 과정을 거친 후 실제 업그레이드에 대한 가동 중지 시간이 발생할 수 있습니다.
+Depending on the upgrade type, the process could require significant preparation consisting of analysis, development and testing, followed with a window of downtime for the actual upgrade.
 
-### 클라우드 서비스로 AEM 사용 {#aem-as-a-cloud-service-upgrades}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-upgrades}
+-->
 
 이제 클라우드 서비스로 AEM은 연속 통합 및 연속 배달(CI/CD)을 사용하여 프로젝트가 완전히 최신 상태인지 확인합니다. 따라서 모든 업그레이드 작업은 완전히 자동화되므로 사용자가 서비스를 중단할 필요가 없습니다.
 
@@ -168,13 +172,17 @@ Cloud Manager는 AEM의 클라우드 서비스로 기본 구성 요소를 만들
 >For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
 -->
 
-### 이전 버전 {#previous-versions-onboarding}
+<!--
+### Previous Versions {#previous-versions-onboarding}
 
-AEM 프로젝트 구현은 기본적으로 기존 프로젝트 관리 방법을 따릅니다.
+Implementing an AEM project basically followed traditional project management methods.  
 
-### 클라우드 서비스로 AEM 사용 {#aem-as-a-cloud-service-onboarding}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-onboarding}
 
-AEM 프로젝트를 Adobe가 많은 측면을 담당하므로 클라우드 서비스로 AEM을 사용하는 경우 AEM 프로젝트를 시작하고 관리하는 것이 훨씬 쉽습니다.
+Starting and managing an AEM project is significantly easier when using AEM as a Cloud service as Adobe is responsible for many aspects:
+-->
+
+AEM 프로젝트를 시작 및 관리하는 것은 Adobe가 많은 측면을 담당하므로 클라우드 서비스로 AEM을 사용하는 경우 간단합니다.
 
 * 기본 AEM 이미지는 특정 사용 사례에 맞게 최적화되어 있습니다.
 
@@ -208,17 +216,24 @@ AEM 프로젝트를 Adobe가 많은 측면을 담당하므로 클라우드 서�
 >For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
 -->
 
-### 이전 버전 {#previous-versions-developing}
+<!--
+### Previous Versions {#previous-versions-developing}
+-->
 
 <!-- needs more detail -->
-개발은 로컬에서 수행한 집중적인 작업이었고 그 다음에 프로덕션 인스턴스에 배포했습니다.
 
-### 클라우드 서비스로 AEM 사용 {#aem-as-a-cloud-service-developing}
+<!-- 
+Development was an intensive task performed locally, followed by deployment to the production instance. 
+
+### AEM as a Cloud Service {#aem-as-a-cloud-service-developing}
+-->
 
 <!-- Will need information for new customers -->
 클라우드 서비스로 AEM을 지원하는 새로운 아키텍처에는 전반적인 개발자 경험에 대한 몇 가지 주요 변경 사항이 포함됩니다. AEM을 클라우드 서비스로 사용하는 주요 목표 중 하나는 경험 있는 고객(온-프레미스 또는 Adobe Managed Services 컨텍스트에서 AEM을 사용함)이 사용자 지정된 코드의 대부분을 다시 쓰지 않고도 가능한 한 빨리 클라우드 서비스로 마이그레이션할 수 있도록 하는 것입니다. 그러나 일부 조정이 필요할 수 있습니다.
 
-#### 클라우드 개발 {#aem-as-a-cloud-service-developing-cloud-development}
+<!-- adjusting title level -->
+
+### 클라우드 개발 {#aem-as-a-cloud-service-developing-cloud-development}
 
 기존 AEM 애플리케이션이 클라우드 서비스로 AEM에서 실행되도록 하려면 다음 단계가 필요합니다.
 
@@ -246,7 +261,9 @@ OSGI 번들 및 관련 구성이 관리되고 이전의 AEM QuickStart의 일부
 
 * 서비스 사용자 및 사용자 그룹
 
-#### 로컬 개발 {#aem-as-a-cloud-service-developing-local-development}
+<!-- adjusting title level -->
+
+### 로컬 개발 {#aem-as-a-cloud-service-developing-local-development}
 
 신속한 반복 및 개발을 지원하기 위해 AEM 외부에서 클라우드 서비스 컨텍스트로 AEM 애플리케이션을 개발할 수도 있습니다. 따라서 개발자는 다음 결함을 사용할 수 있습니다.
 
@@ -264,11 +281,13 @@ OSGI 번들 및 관련 구성이 관리되고 이전의 AEM QuickStart의 일부
 >
 >자세한 내용은 백업, [인덱싱](/help/operations/backup.md)및 [기타 유지 관리](/help/operations/indexing.md)작업을 [참조하십시오](/help/operations/maintenance.md).
 
-### 이전 버전 {#previous-versions-operations-and-performance}
+<!--
+### Previous Versions {#previous-versions-operations-and-performance}
 
-이전에는, 특히 작성자측에서 인스턴스를 정기적으로 중지할 필요가 있었습니다.를 참조하십시오. 일부 고객의 경우 주간 다운타임이 몇 시간 동안 발생했습니다.
+In the past, especially on the author side, there was a need to periodically stop an instance; for routine maintenance operations, as well as upgrades and updates. For some customers, this resulted in hours of scheduled downtime on a weekly basis. 
 
-### 클라우드 서비스로 AEM 사용 {#aem-as-a-cloud-service-operatioms-and-performance}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-operatioms-and-performance}
+-->
 
 AEM을 클라우드 서비스로 사용하는 경우 이러한 작업은 자동화되므로 더 이상 서비스를 중단할 필요가 없습니다.
 
@@ -290,19 +309,20 @@ AEM을 클라우드 서비스로 사용하는 작업은 새로운 모니터링, 
 >For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
 -->
 
-### 이전 버전 {#previous-versions-identity-management}
+<!--
+### Previous Versions {#previous-versions-identity-management}
 
-기본적으로 ID 관리는 AEM에 내적입니다.
+By default, identity management was internal to AEM.
 
 >[!NOTE]
 >
->AEM 6.4.3.0 도입:
+>AEM 6.4.3.0 introduced:
 >
->* AEM 인스턴스에 대한 관리 콘솔 지원.
->* AEM Managed Services 고객을 위한 Adobe IMS(Identity Management System) 기반 인증
+>* Admin Console support for AEM instances. 
+>* Adobe IMS (Identity Management System) based authentication for AEM Managed Services customers.
 
-
-### 클라우드 서비스로 AEM 사용 {#aem-as-a-cloud-service-identity-management}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-identity-management}
+-->
 
 클라우드 서비스로서 AEM에 대한 주요 변경 사항은 작성자 계층에 액세스하기 위해 Adobe ID를 완벽하게 통합한 것입니다.
 
@@ -322,11 +342,13 @@ AEM을 클라우드 서비스로 사용하는 작업은 새로운 모니터링, 
 >For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
 -->
 
-### 이전 버전 {#previous-versions-authoring}
+<!--
+### Previous Versions {#previous-versions-authoring}
 
-사이트 및 자산 모두에 대해 작성 인스턴스(UI)의 사용자 인터페이스는 터치 활성화 및 클래식 UI 모두를 사용하여 모든 사용 사례에 맞게 점진적으로 개발되고 최적화되었습니다.
+The user interface of the author instance (UI), for both Sites and Assets, was progressively developed and optimized to cater for all use-cases, using both the touch-enabled and classic UIs.
 
-### 클라우드 서비스로 AEM 사용 {#aem-as-a-cloud-service-authoring}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-authoring}
+-->
 
 사이트 및 자산 모두에 대한 UI(작성 사용자 인터페이스)의 기본 원칙은 이전에 AEM을 사용한 모든 사람에게 매우 익숙할 것입니다.
 
@@ -345,5 +367,3 @@ Adobe Experience Manager Assets as a Cloud Service는 클라우드 기반의 Saa
 에셋 서비스에는 클라우드에서 차세대 에셋 처리 및 고성능 에셋 수집 및 검색이 포함됩니다.
 
 자세한 내용은 [개요와 Assets as a Cloud Service 소개를 참조하십시오](/help/assets/overview.md).
-
-
