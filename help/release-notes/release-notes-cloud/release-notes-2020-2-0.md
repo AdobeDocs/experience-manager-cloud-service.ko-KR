@@ -2,7 +2,7 @@
 title: 릴리스 2020.2.0 릴리스 노트
 description: 릴리스 2020.2.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
 
 다음 섹션에서는 Adobe Experience Manager의 일반 릴리스 노트를 클라우드 서비스 2020.2.0으로 간략하게 설명합니다.
 
-릴리스 날짜는 20 파섹
-
 ## Cloud Manager {#cloud-manager}
+
+Cloud Manager 릴리스 2020.2.0의 릴리스 날짜는 2020년 2월 13일입니다.
 
 이 섹션을 통해 새로운 기능 및 Cloud Manager 릴리스 2020.2.0에 대한 업데이트를 살펴보십시오.
 
