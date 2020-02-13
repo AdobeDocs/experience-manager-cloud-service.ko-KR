@@ -2,7 +2,7 @@
 title: 테스트 결과 이해 - 클라우드 서비스
 description: 테스트 결과 이해 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 예를 들어 이름이 지정된 클래스는 `com.myco.tests.aem.ExampleIT` 실행되지만 이름이 지정된 클래스는 실행되지 `com.myco.tests.aem.ExampleTest` 않습니다.
 
-테스트 클래스는 일반 JUnit 테스트여야 합니다. 테스트 인프라는 aem-testing-clients 테스트 라이브러리에서 사용하는 규칙과 호환되도록 디자인되고 구성됩니다. 개발자는 이 라이브러리를 사용하고 모범 사례를 따를 것을 적극 권장합니다.
+테스트 클래스는 일반 JUnit 테스트여야 합니다. 테스트 인프라는 aem-testing-clients 테스트 라이브러리에서 사용하는 규칙과 호환되도록 디자인되고 구성됩니다. 개발자는 이 라이브러리를 사용하고 모범 사례를 따를 것을 적극 권장합니다. 자세한 내용은 [Git](https://github.com/adobe/aem-testing-clients) 링크를 참조하십시오.
 
 ## 사용자 정의 기능 테스트 {#custom-functional-test}
 
@@ -126,7 +126,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 그러나 빌드에 의해 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다. 이 단계는 단계 배포 직후 수행됩니다.
 
 > 메모:
->[ **로그** 다운로드] 단추를 사용하면 테스트 실행 세부 양식에 대한 로그가 포함된 ZIP 파일에 액세스할 수 있습니다. 이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그는 위에 설명된 일반 다운로드 또는 세부 로그 기능을 사용하여 액세스할 수 있습니다.
+>[ **로그** 다운로드] 단추를 사용하면 테스트 실행 세부 양식에 대한 로그가 포함된 ZIP 파일에 액세스할 수 있습니다. 이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그는 일반 다운로드 또는 세부 로그 기능을 사용하여 액세스할 수 있습니다. 자세한 내용은 [로그 액세스 및 관리를](/help/implementing/cloud-manager/manage-logs.md) 참조하십시오.
 
 ## 로컬 테스트 실행 {#local-test-execution}
 
