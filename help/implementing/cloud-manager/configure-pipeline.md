@@ -2,7 +2,7 @@
 title: CI/CD 파이프라인 구성 - 클라우드 서비스
 description: CI/CD 파이프라인 구성 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ Cloud Manager UI를 사용하여 프로그램을 설정하고 하나 이상의 �
 
    또한 파이프라인 옵션에서 배포 트리거 및 중요 실패 동작을 설정할 수도 있습니다.
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. 저장을 **클릭하면** 다음과 같이 세 가지 작업이 있는 파이프라인이 홈 화면의 카드에 표시됩니다.
 
@@ -97,8 +97,6 @@ Cloud Manager UI를 사용하여 프로그램을 설정하고 하나 이상의 �
    * **편집** - 파이프라인 설정을 편집할 수 있습니다.
    * **빌드** - 파이프라인을 실행할 수 있는 실행 페이지로 이동합니다.
    * **Git** 관리 - 사용자는 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있습니다.
-
-
 
 ## 다음 단계 {#the-next-steps}
 
