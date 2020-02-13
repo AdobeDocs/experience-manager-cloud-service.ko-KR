@@ -2,7 +2,7 @@
 title: 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager
 description: '차이점 및 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager(AEM) '
 translation-type: tm+mt
-source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
+source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
 
 ---
 
@@ -37,8 +37,6 @@ AEM은 여러 해 동안 다음과 같이 사용할 수 있습니다.
 >[!NOTE]
 >
 >온-프레미스 및 관리 서비스 버전에 대한 자세한 내용은 AEM [6.5에 대한 설명서를 참조하십시오](https://helpx.adobe.com/support/experience-manager/6-5.html).
-
-<!-- * [Miscellaneous](#miscellaneous) -->
 
 ## 아키텍처 {#architecture}
 
@@ -88,11 +86,9 @@ These:
 
 ## 업그레이드 {#upgrades}
 
-<!--
 >[!NOTE]
 >
->For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
--->
+>자세한 내용은 배포 [소개를 참조하십시오](/help/implementing/deploying/overview.md).
 
 <!--
 ### Previous Versions {#previous-versions-upgrades}
@@ -166,11 +162,9 @@ Cloud Manager는 AEM의 클라우드 서비스로 기본 구성 요소를 만들
 
 ## 온보딩 {#onboarding}
 
-<!--
 >[!NOTE]
 >
->For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
--->
+>자세한 내용은 온보딩을 [참조하십시오](/help/onboarding/home.md).
 
 <!--
 ### Previous Versions {#previous-versions-onboarding}
@@ -208,13 +202,7 @@ AEM 프로젝트를 시작 및 관리하는 것은 Adobe가 많은 측면을 담
 
 >[!NOTE]
 >
->자세한 내용은 개발 지침 [설명서를](/help/implementing/developing/introduction/development-guidelines.md) 참조하십시오.
-
-<!--
->[!NOTE]
->
->For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
--->
+>자세한 내용은 개발 지침 및 [개발](/help/implementing/developing/introduction/development-guidelines.md) - WKND [자습서를 참조하십시오](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 <!--
 ### Previous Versions {#previous-versions-developing}
@@ -303,11 +291,9 @@ AEM을 클라우드 서비스로 사용하는 작업은 새로운 모니터링, 
 
 ## ID 관리 {#identity-management}
 
-<!--
 >[!NOTE]
 >
->For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
--->
+>자세한 내용은 보안 - [IMS 지원을 참조하십시오](/help/security/ims-support.md).
 
 <!--
 ### Previous Versions {#previous-versions-identity-management}
@@ -336,11 +322,9 @@ By default, identity management was internal to AEM.
 
 ## 작성 사용자 인터페이스 {#authoring-user-interface}
 
-<!--
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
--->
+>자세한 내용은 기본 [처리를](/help/sites-cloud/authoring/getting-started/basic-handling.md) 시작하는 것이 좋습니다.
 
 <!--
 ### Previous Versions {#previous-versions-authoring}
