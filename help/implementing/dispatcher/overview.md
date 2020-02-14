@@ -2,7 +2,7 @@
 title: Dispatcher in the Cloud
 description: 'Dispatcher in the Cloud '
 translation-type: tm+mt
-source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -806,9 +806,9 @@ AEM을 클라우드 서비스로 사용하기 전에는 디스패처 캐시를 �
 클라우드 서비스로서의 AEM은 개별 노드 수준이 아니라 서비스 수준에서 작동하므로 Dispatcher 도움말 [설명서의](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) 무효화 지침이 더 이상 정확하지 않습니다.
 대신 복제 플러시 에이전트를 사용해야 합니다. 이 작업은 복제 API를 사용하여 수행할 수 있습니다. Replication API 설명서는 [여기에서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) 사용할 수 있으며 캐시 플러시의 예는 API [예제 페이지](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) , 특히 사용 가능한 모든 에이전트에 대해 ACTIVATE 유형의 복제 작업을 발급하는 `CustomStep` 예 등을 참조하십시오. 플러시 에이전트 종단점은 구성할 수 없지만 발송자를 가리키도록 미리 구성되었으며 플러시 에이전트를 실행하는 게시 서비스와 일치합니다. 일반적으로 플러시 에이전트는 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
 
-<!--The diagram below illustrates this.
+아래 다이어그램은 이를 보여줍니다.
 
-![CDN](assets/cdn.png "CDN")-->
+![](assets/cdnb.png "CDNCDN")
 
 디스패처 캐시가 지워지지 않을 우려가 있는 경우 필요한 경우 디스패처 캐시를 플러시할 수 있는 고객 지원에 문의하십시오.
 
