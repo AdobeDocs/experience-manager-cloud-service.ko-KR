@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
 
 ---
 
@@ -14,7 +14,6 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
    + [환경 관리](cloud-manager/manage-environments.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
    + [코드 배포](cloud-manager/deploy-code.md)
-   + [테스트 결과 이해](cloud-manager/understand-test-results.md)
    + [사용자 지정 코드 품질 규칙 이해](cloud-manager/custom-code-quality-rules.md)
    + [로그 액세스 및 관리](cloud-manager/manage-logs.md)
    + [알림 이해](cloud-manager/notifications.md)
@@ -30,6 +29,7 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
    + [클라우드 서비스 개발 지침으로서 AEM](developing/introduction/development-guidelines.md)
    + [AEM 사이트 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
    + [클라우드 서비스 API로 AEM 사용](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
 + AEM을 클라우드 서비스로 확장 {#extending}
    + [경험 조각](developing/extending/experience-fragments.md)
 + 클라우드 서비스로 AEM에 배포 {#deploying}
