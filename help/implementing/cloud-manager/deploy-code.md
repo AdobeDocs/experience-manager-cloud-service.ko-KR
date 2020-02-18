@@ -2,7 +2,7 @@
 title: 코드 배포 - 클라우드 서비스
 description: 코드 배포 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ Pipeline(저장소, **환경** 및 테스트 환경)을 구성했으면 코드�
 
    * 유효성 검사:이 단계에서는 파이프라인이 현재 사용 가능한 리소스를 사용하도록 구성되어 있는지 확인합니다. 예를 들어 구성된 분기가 있고 환경을 사용할 수 있습니다.
    * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스를 실행합니다. 빌드 [환경에 대한 자세한 내용은 AEM](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) 응용 프로그램 프로젝트 만들기를 참조하십시오.
-   * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 [프로세스에 대한](understand-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
+   * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 [프로세스에 대한](/help/implementing/developing/introduction/understand-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
    * 이미지 작성:이 단계에는 이미지를 작성하는 데 사용되는 프로세스의 로그 파일이 있습니다. 이 프로세스는 빌드 단계에서 생성된 컨텐츠 및 디스패처 패키지를 Docker 이미지 및 Kubernetes 구성으로 변환해야 합니다.
    * 스테이지에 배포
 
       ![](assets/stage-deployment.png)
    스테이지 **테스트에는**&#x200B;다음 단계가 포함됩니다.
 
-   * 제품 기능 테스트:Cloud Manager 파이프라인 실행은 스테이지 환경에 대해 실행되는 테스트 실행을 지원합니다. 테스트 [프로세스에 대한](understand-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
-   * 사용자 지정 기능 테스트:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 그러나 빌드에 의해 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다. 테스트 [프로세스에 대한](understand-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
+   * 제품 기능 테스트:Cloud Manager 파이프라인 실행은 스테이지 환경에 대해 실행되는 테스트 실행을 지원합니다. 테스트 [프로세스에 대한](/help/implementing/developing/introduction/understand-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
+   * 사용자 지정 기능 테스트:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 그러나 빌드에 의해 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다. 테스트 [프로세스에 대한](/help/implementing/developing/introduction/understand-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
 
       ![](assets/stage-testing.png)
 
