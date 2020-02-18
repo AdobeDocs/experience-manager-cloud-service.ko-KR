@@ -2,7 +2,7 @@
 title: 테스트 결과 이해 - 클라우드 서비스
 description: 테스트 결과 이해 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
@@ -125,7 +125,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 그러나 빌드에 의해 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다. 이 단계는 단계 배포 직후 수행됩니다.
 
-> 메모:
+>[!NOTE]
 >[ **로그** 다운로드] 단추를 사용하면 테스트 실행 세부 양식에 대한 로그가 포함된 ZIP 파일에 액세스할 수 있습니다. 이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그는 일반 다운로드 또는 세부 로그 기능을 사용하여 액세스할 수 있습니다. 자세한 내용은 [로그 액세스 및 관리를](/help/implementing/cloud-manager/manage-logs.md) 참조하십시오.
 
 ## 로컬 테스트 실행 {#local-test-execution}
