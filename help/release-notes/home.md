@@ -2,7 +2,7 @@
 title: 클라우드 서비스로 제공되는 AEM(Adobe Experience Manager)에 대한 릴리스 노트입니다.
 description: '클라우드 서비스로 제공되는 AEM(Adobe Experience Manager)에 대한 릴리스 노트입니다. '
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
@@ -17,6 +17,7 @@ source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
 
 ## 주요 릴리스 정보 {#key-articles}
 
+* [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
 * [새로운 기능](what-is-new.md)
 * [주목할 만한 변경 사항](aem-cloud-changes.md)
 * [알려진 문제](known-issues.md)
