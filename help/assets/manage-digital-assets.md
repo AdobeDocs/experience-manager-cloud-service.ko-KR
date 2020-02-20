@@ -4,12 +4,12 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage assets {#manag-assets}
+# Manage assets {#manage-assets}
 
 이 문서에서는 AEM(Adobe Experience Manager) 자산에서 자산을 관리하고 편집하는 방법에 대해 설명합니다. 컨텐츠 조각을 관리하려면 컨텐츠 조각 [자산을 참조하십시오](content-fragments/content-fragments.md) .
 
@@ -32,32 +32,7 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 ## Upload assets {#uploading-assets}
 
-Experience Manager에 디지털 자산 [추가를 참조하십시오](add-assets.md).
-
-### 스트리밍 업로드 {#streamed-uploads}
-
-AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로드 효율성이 줄어들고 일부 업로드 작업이 시간 초과될 수도 있습니다. AEM Assets는 자산 스트리밍을 지원합니다. 스트리밍된 업로드는 업로드 작업 중 디스크 I/O를 줄여줍니다. 이렇게 하면 서버에 있는 임시 폴더의 에셋을 보관소에 복사하기 전에 저장할 수 없습니다. 대신 데이터가 저장소로 직접 전송됩니다. 이렇게 하면 대용량 에셋을 업로드할 시간과 제한 시간이 줄어듭니다. AEM 자산에서 기본적으로 스트리밍된 업로드가 활성화됩니다.
-
->[!NOTE]
->
->servlet-api 버전이 3.1보다 낮은 JEE 서버에서 실행되는 AEM에 대해 스트리밍 업로드가 비활성화됩니다.
-
-### 에셋이 포함된 ZIP 아카이브 추출 {#extractzip}
-
-지원되는 다른 자산과 마찬가지로 ZIP 아카이브를 업로드할 수 있습니다. 동일한 파일 이름 규칙이 ZIP 파일에 적용됩니다. AEM에서는 ZIP 아카이브를 DAM 위치에 추출할 수 있습니다. 아카이브 파일에 ZIP이 확장명으로 들어 있지 않으면 컨텐츠를 사용하여 파일 유형 검색을 활성화합니다.
-
-한 번에 하나의 ZIP 아카이브를 선택하고 아카이브 **[!UICONTROL 추출을]**&#x200B;클릭한 다음 대상 폴더를 선택합니다. 충돌을 처리할 옵션을 선택합니다(있는 경우). ZIP 파일의 자산이 이미 대상 폴더에 있는 경우 다음 옵션 중 하나를 선택할 수 있습니다.추출 생략, 기존 파일 바꾸기, 이름을 변경하여 두 에셋 모두 유지 또는 새 버전 만들기
-
-추적이 완료되면 AEM에서 알림 영역에 알려줍니다. AEM이 ZIP을 추출하는 동안 추출을 중단하지 않고 작업을 다시 시작할 수 있습니다.
-
-![zip 추출 알림](assets/zip_extract_notification.png)
-
-이 기능의 일부 제한 사항은 다음과 같습니다.
-
-* 동일한 이름의 폴더가 대상에 있으면 ZIP 파일의 에셋이 기존 폴더에 추출됩니다.
-* 압축을 취소하면 이미 추출된 에셋이 삭제되지 않습니다.
-* 두 개의 ZIP 파일을 동시에 선택하여 추출할 수 없습니다. 한 번에 하나의 ZIP 보관만 추출할 수 있습니다.
-* ZIP 아카이브를 업로드할 때 업로드 대화 상자에 500 서버 오류가 표시되면 최신 서비스 팩을 설치한 후 다시 시도하십시오.
+자세한 내용은 [Adobe Experience Manager에](add-assets.md)디지털 자산 추가를 참조하십시오.
 
 ## 에셋 미리 보기 {#previewing-assets}
 
@@ -100,13 +75,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
    >[!NOTE]
    >
-   >태그를 만들려면 CRX `/content/cq:tags/default` 저장소에서 쓰기 권한이 필요합니다.
-
-1. 자산에 등급을 제공하려면 고급 **[!UICONTROL 탭을 탭/클릭한]** 다음 적절한 위치에서 별을 탭/클릭하여 원하는 등급을 지정합니다.
-
-   ![등급](assets/ratings.png)
-
-   자산에 지정하는 등급 점수는 등급 아래에 **[!UICONTROL 표시됩니다]**. 자산을 평가한 사용자로부터 자산이 받은 평균 등급 점수가 등급 아래에 **[!UICONTROL 표시됩니다]**. 또한 평균 등급 점수에 기여하는 평점 점수가 **[!UICONTROL 분류로 표시됩니다]**. 평균 등급 점수를 기준으로 자산을 검색할 수 있습니다.
+   >태그를 만들려면 CRX 저장소의 `/content/cq:tags/default` 경로에 쓰기 권한이 있어야 합니다.
 
 1. 자산에 대한 사용량 통계를 보려면 인사이트 **[!UICONTROL 탭을 클릭/탭합니다]** .
 
@@ -118,7 +87,8 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
    자세한 내용은 자산 통찰력을 [참조하십시오](assets-insights.md).
 
 1. 저장 및 **[!UICONTROL 닫기를 탭/클릭합니다]**.
-1. 자산 사용자 인터페이스로 이동합니다. 제목, 설명, 등급 등을 포함한 편집된 메타데이터 속성은 카드 보기의 자산 카드와 목록 보기의 관련 열 아래에 표시됩니다.
+
+1. 자산 사용자 인터페이스로 이동합니다. 제목, 설명 및 태그를 비롯한 편집된 메타데이터 속성은 카드 보기의 자산 카드 및 목록 보기의 관련 열 아래에 표시됩니다.
 
 ## 자산 복사 {#copying-assets}
 
@@ -238,28 +208,6 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
    >[!NOTE]
    >
    >비디오 주석은 HTML5 호환 비디오 포맷이 있는 브라우저에서만 지원됩니다. 또한 브라우저에 따라 다른 비디오 형식이 지원됩니다.
-
-### View subassets {#viewing-subassets}
-
-AEM에서 PDF, AI, Powerpoint/Apple Keynote 및 InDesign과 같은 지원되는 다중 페이지 형식의 자산에 대해 하위 자산을 생성할 수 있습니다. 이러한 하위 자산은 일반 자산과 비슷하지만, 상위 자산에 연결되어 있고 터치 UI에서 다중 페이지 보기를 용이하게 합니다.
-
-하위 자산 생성이 기본적으로 비활성화됩니다. 하위 자산 생성을 활성화하려면 하위 자산 **[!UICONTROL 만들기]** 단계를 DAM 자산 업데이트 워크플로우에 추가합니다.
-
-Word 문서의 경우 DAM Parse Word 문서 워크플로우는 Word 문서의 내용에서 구성 `cq:Page` 요소를 생성합니다. 문서에서 추출한 이미지가 구성 요소에서 참조됩니다. `cq:Page` 이러한 이미지는 하위 자산 생성이 비활성화된 경우에도 추출됩니다.
-
-1. 하위 자산을 보려면 자산의 위치로 이동하고 자산 페이지를 엽니다.
-
-1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 목록에서 하위]** 자산을 선택합니다
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >하위 **자산** 옵션은 자산에 대해 하위 자산을 사용할 수 있거나 이미 생성된 경우에만 표시됩니다.
-
-   목록에서 **하위 자산을** 선택하면 **하위 자산** 페이지에 상위 자산에 연결된 하위 자산이 표시됩니다.
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
 
 ## Delete assets {#delete-assets}
 
@@ -564,43 +512,11 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >자산에 하위 자산이 있는 경우 모든 하위 자산을 특정 페이지 단위 주석과 함께 인쇄할 수 있습니다.
-
    글꼴 색상, 크기 및 스타일, 주석 및 상태의 배경색 등 렌더링된 PDF 파일의 모양을 수정하려면 Configuration Manager에서 **[!UICONTROL 주석 PDF 구성을]** 열고 원하는 옵션을 수정합니다. 예를 들어, 승인된 상태의 표시 색상을 변경하려면 해당 필드에서 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 주석 [달기를 참조하십시오](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    렌더링된 PDF 파일로 돌아가 새로 고칩니다. 새로 고친 PDF는 변경한 내용을 반영합니다.
-
-자산에 외국어(특히 라틴 언어가 아닌 언어)의 주석이 포함된 경우, 먼저 AEM 서버에서 이러한 주석을 인쇄할 수 있도록 CQ-DAM-Handler-Gibson Font Manager Service를 구성해야 합니다. CQ-DAM-Handler-Gibson Font Manager 서비스를 구성할 때 원하는 언어의 글꼴이 있는 경로를 제공합니다.
-
-1. URL에서 CQ-DAM-Handler-Gibson Font Manager 서비스 구성 페이지를 엽니다 `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
-1. CQ-DAM-Handler-Gibson Font Manager 서비스를 구성하려면 다음 중 하나를 수행합니다.
-
-   * 시스템 글꼴 디렉토리 옵션에서 시스템의 글꼴 디렉토리에 대한 전체 경로를 지정합니다. 예를 들어 Mac 사용자의 경우 시스템 글꼴 디렉토리 옵션에서 */라이브러리/* 글꼴을 지정할 수 있습니다. AEM 파섹
-   * 폴더 `fonts` 안에 이름이 지정된 디렉토리를 만듭니다 ``crx-quickstart`` . CQ-DAM-Handler-Gibson Font Manager Service는 해당 위치에서 글꼴을 자동으로 가져옵니다 `crx-quickstart/fonts`. Adobe Server Fonts 디렉토리 옵션 내에서 이 기본 경로를 재정의할 수 있습니다.
-
-   * 시스템에 글꼴을 위한 새 폴더를 만들고 원하는 글꼴을 폴더에 저장합니다. 그런 다음 고객 글꼴 디렉토리 옵션에서 해당 폴더의 전체 경로를 지정합니다.
-
-1. URL에서 주석 PDF 구성에 액세스합니다 `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. 다음과 같이 올바른 글꼴 모음으로 주석 PDF를 구성합니다.
-
-   * 글꼴 모음 옵션 `<font_family_name_of_custom_font, sans-serif>` 내에 문자열을 포함합니다. 예를 들어 CJK(중국어, 일본어 및 한국어)로 주석을 인쇄하려면 글꼴 모음 옵션에 문자열을 `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` 포함시킵니다. 힌디어로 주석을 인쇄하려면 해당 글꼴을 다운로드하고 글꼴 모음을 Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif로 구성합니다.
-
-1. AEM 인스턴스를 다시 시작합니다.
-
-다음은 CJK(중국어, 일본어 및 한국어)에서 주석을 인쇄하도록 AEM을 구성하는 방법의 예입니다.
-
-1. 다음 링크에서 Google Noto CJK 글꼴을 다운로드하여 Font Manager Service에 구성된 글꼴 디렉토리에 저장합니다.
-
-   * All In One Super CJK font: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans(유럽 언어용): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * 원하는 언어의 글꼴을 찾을 수 없습니다. [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. font-family 매개 변수를 로 설정하여 주석 PDF 파일을 `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`구성합니다. 이 구성은 기본적으로 사용할 수 있으며 모든 유럽 및 CJK 언어에서 작동합니다.
-1. 선택한 언어가 2단계에서 언급한 언어와 다른 경우, 기본 글꼴 모음에 적절한(쉼표로 구분된) 항목을 추가합니다.
 
 ## 에셋 버전 관리 {#asset-versioning}
 
