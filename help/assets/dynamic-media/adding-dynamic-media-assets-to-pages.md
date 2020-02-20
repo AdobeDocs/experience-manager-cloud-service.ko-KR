@@ -2,7 +2,7 @@
 title: 페이지에 Dynamic Media 자산 추가
 description: AEM의 페이지에 Dynamic Media 구성 요소를 추가하는 방법
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -301,7 +301,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 보다 신속하게 정보를 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 에셋 배달을 HTTP/2를 통해 보다 나은 응답 및 로드 시간을 제공할 수 있습니다.
 
-Dynamic [Media 계정으로](/help/assets/dynamic-media/http2.md) HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 HTTP2 컨텐츠 제공을 참조하십시오.
+Dynamic [Media 계정으로](/help/assets/dynamic-media/http2faq.md) HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 HTTP2 컨텐츠 제공을 참조하십시오.
 
 >[!MORELIKETHIS]
 >
