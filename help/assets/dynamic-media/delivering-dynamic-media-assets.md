@@ -2,7 +2,7 @@
 title: Dynamic Media 자산 제공
 description: 다이내믹 미디어 에셋을 제공하는 방법 학습
 translation-type: tm+mt
-source-git-commit: 5b55a339f466a7a0ffb4900c72e7d95995b28e83
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -31,7 +31,7 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 * [Dynamic Media에서 핫링크 보호 활성화](/help/assets/dynamic-media/hotlink-protection.md)
 * [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [반응형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)
-* [HTTP2 컨텐츠 전달](/help/assets/dynamic-media/http2.md)
+* [HTTP2 컨텐츠 전달](/help/assets/dynamic-media/http2faq.md)
 * [CDN 캐시 컨텐츠 무효화](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [규칙 세트를 사용하여 URL 변환](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
@@ -39,4 +39,4 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
 이제 AEM은 HTTP/2를 통해 모든 다이내믹 미디어 컨텐츠(이미지 및 비디오)의 배달을 지원합니다. 즉, 이미지 또는 비디오에 대해 게시된 URL 또는 임베드 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 그런 다음 HTTP/2 프로토콜을 통해 게시된 에셋을 전달합니다. 이 전달 방법은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킵니다.
 
-자세한 [내용은 HTTP/2 FAQ](/help/assets/dynamic-media/scene7-http2faq.md) 제공을 참조하십시오.
+자세한 [내용은 HTTP/2 FAQ](/help/assets/dynamic-media/http2faq.md) 제공을 참조하십시오.
