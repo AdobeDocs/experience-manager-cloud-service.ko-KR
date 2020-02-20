@@ -2,7 +2,7 @@
 title: URL을 웹 응용 프로그램에 연결
 description: 다이내믹 미디어에서 웹 애플리케이션에 URL을 연결하는 방법
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -205,4 +205,4 @@ Dynamic Media는 정적인 에셋 전달을 지원합니다. 정적인 에셋은
 
 HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 보다 신속하게 정보를 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 에셋 배달을 HTTP/2를 통해 보다 나은 응답 및 로드 시간을 제공할 수 있습니다.
 
-Dynamic [Media 계정으로](http2.md) HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 HTTP2 컨텐츠 제공을 참조하십시오.
+Dynamic [Media 계정으로](http2faq.md) HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 HTTP2 컨텐츠 제공을 참조하십시오.
