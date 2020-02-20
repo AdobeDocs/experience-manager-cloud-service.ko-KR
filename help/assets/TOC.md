@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2b53420aeb1358f8475902648b1a49a4c5bdd207
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -78,7 +78,6 @@ source-git-commit: 2b53420aeb1358f8475902648b1a49a4c5bdd207
    + [다이내믹 미디어 비디오 프로필](dynamic-media/video-profiles.md)
    + [다이내믹 미디어 이미지 프로필](dynamic-media/image-profiles.md)
    + [스마트 이미징](dynamic-media/imaging-faq.md)
-   + [HTTP2 컨텐츠 전달](dynamic-media/http2.md)
    + [다이내믹 미디어 에셋 제공](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](dynamic-media/hotlink-protection.md)
    + [이미지 세트](dynamic-media/image-sets.md)
@@ -103,4 +102,4 @@ source-git-commit: 2b53420aeb1358f8475902648b1a49a4c5bdd207
    + [선택기 작업](dynamic-media/working-with-selectors.md)
    + [DHTML 뷰어 사용 종료 FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 뷰어 지원 중단 알림](dynamic-media/flash-viewers-eol.md)
-   + [HTTP2 컨텐츠 제공 FAQ](dynamic-media/scene7-http2faq.md)
+   + [HTTP2 컨텐츠 제공 FAQ](dynamic-media/http2faq.md)
