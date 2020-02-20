@@ -2,7 +2,7 @@
 title: 다이내믹 미디어 자산 게시
 description: 다이내믹 미디어 자산을 게시하는 방법
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
 
@@ -39,5 +39,5 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 이제 AEM은 HTTP/2를 통해 모든 다이내믹 미디어 컨텐츠(이미지 및 비디오)의 배달을 지원합니다. 즉, 이미지 또는 비디오에 대해 게시된 URL 또는 임베드 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 그런 다음 HTTP/2 프로토콜을 통해 게시된 에셋을 전달합니다. 이 전달 방법은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킵니다.
 
-자세한 [내용은 FAQ](/help/assets/dynamic-media/scene7-http2faq.md) HTTP/2 제공을 참조하십시오.
+자세한 [내용은 FAQ](/help/assets/dynamic-media/http2faq.md) HTTP/2 제공을 참조하십시오.
 <!--this md file used to reside under sites-administering-->
