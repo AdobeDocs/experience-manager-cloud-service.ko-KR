@@ -3,7 +3,7 @@ title: AEM에서 자산 다운로드
 description: AEM에서 자산을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -61,8 +61,6 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons�
 1. 발송자 구성을 통해 자산 다운로드 요청을 차단하려면 `dispatcher.any` 구성을 편집하고 [필터 섹션에](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)새 규칙을 추가합니다.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. 게시 인스턴스에서 OSGi 구성 요소를 수동으로 비활성화할 수 있습니다. 이 경우 에서 OSGi 콘솔로 이동합니다 `<aem-host>/system/console/components`. [비활성화]를 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` 찾아 **[!UICONTROL 클릭합니다]**.
 
 >[!MORELIKETHIS]
 >
