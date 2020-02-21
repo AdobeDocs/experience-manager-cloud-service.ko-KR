@@ -3,14 +3,14 @@ title: 자산에 워크플로우 적용
 description: Adobe Experience Manager Assets에서 자산, 폴더 및 컬렉션에 워크플로우를 적용하는 방법을 살펴봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # 자산에 워크플로우 적용 {#applying-workflows-to-assets}
 
-디지털 자산의 워크플로우를 사용하여 자산을 활성화하거나 워터마크를 만들 수 있습니다. 자산 워크플로우 중 일부는 특정 조건에 따라 자동으로 실행되도록 구성됩니다. 예를 들어, 이미지를 편집한 후 자동으로 표현물을 만드는 워크플로우가 자동으로 실행됩니다.
+디지털 자산의 워크플로우를 사용하여 자산을 활성화합니다. 자산 워크플로우 중 일부는 특정 조건에 따라 자동으로 실행되도록 구성됩니다. 예를 들어, 이미지를 편집한 후 자동으로 표현물을 만드는 워크플로우가 자동으로 실행됩니다.
 
 ## AEM 자산에 워크플로우 적용 {#apply-a-workflow-to-an-aem-asset}
 
