@@ -3,7 +3,7 @@ title: 자산 네트워크 고려 사항
 description: AEM 자산 배포를 디자인할 때 네트워크 고려 사항에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -87,11 +87,9 @@ AEM 인스턴스는 다중 서비스와 1Gbps 연결을 공유합니다. 네트�
 
 * XMP 메타데이터 읽기/쓰기 저장
 * 자동 활성화 및 복제
-* 원본에 쓰기
 * 하위 자산 통합/페이지 추출
 * 워크플로우가 겹칩니다.
 
 다음은 자산 워크플로우의 정의에 대한 고객 예입니다.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
