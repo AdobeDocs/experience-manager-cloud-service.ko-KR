@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -36,7 +36,6 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
    + [메타데이터 스키마](metadata-schemas.md)
    + [비디오 자산 관리](manage-video-assets.md)
    + [AEM에서 자산 다운로드](download-assets-from-aem.md)
-   + [자산에 워터마크 추가](add-watermark-to-assets.md)
    + [편집할 에셋 체크 인 및 체크 아웃](check-out-and-submit-assets.md)
    + [디지털 자산 권한 관리](drm.md)
 + 자산 구성, 관리 및 확장 {#admin}
