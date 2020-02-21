@@ -2,14 +2,14 @@
 title: 클라우드 서비스로 Adobe Experience Manager 구현
 description: Adobe Experience Manager as a Cloud Service implementation self-help resources and documentation links
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 ---
 
 
 # 클라우드 서비스로 AEM용 애플리케이션 구현 {#aem-implementation-guide}
 
-이 페이지에는 Experience Manager를 클라우드 서비스로 구현하기 위한 자체 도움말 리소스가 나열됩니다.
+이 페이지에는 Experience Manager를 클라우드 서비스로 구현하기 위한 자체 도움말 리소스가 나열됩니다. Adobe Experience Manager를 클라우드 서비스 배포로 맞춤화하는 방법을 살펴보십시오.
 
 ## 주요 구현 아티클 {#key-articles}
 
