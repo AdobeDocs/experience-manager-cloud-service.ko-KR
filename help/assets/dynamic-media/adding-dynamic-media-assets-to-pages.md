@@ -2,7 +2,7 @@
 title: 페이지에 Dynamic Media 자산 추가
 description: AEM의 페이지에 Dynamic Media 구성 요소를 추가하는 방법
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
@@ -15,7 +15,7 @@ AEM 파섹 WCM에 대해 서드 파티를 사용하는 경우 자산을 [링크�
 
 >[!NOTE]
 >
->자산을 AEM의 페이지에 추가하기 전에 게시해야 합니다. 다이내믹 [미디어 자산 게시를 참조하십시오](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>자산을 AEM의 페이지에 추가하기 전에 게시해야 합니다. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -199,6 +199,8 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
    이미지 세트, 스핀 세트 또는 혼합 미디어 집합을 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
+
+* **[!UICONTROL 종횡비 일치]**&#x200B;활성화 - 스마트 자르기 변환을 선택할 때 원본 이미지의 종횡비와 일치합니다.
 
 * **[!UICONTROL 제목]**- 스마트 자르기 이미지의 제목을 변경합니다.
 
