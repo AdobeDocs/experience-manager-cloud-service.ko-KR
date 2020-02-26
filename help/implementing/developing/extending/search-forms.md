@@ -2,18 +2,32 @@
 title: 검색 양식 구성
 description: Adobe Experience Manager에 대한 검색 양식을 클라우드 서비스로 구성합니다.
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # 검색 양식 구성 {#configuring-search-forms}
 
-검색 **양식을** 사용하여 작성 환경 내의 다양한 검색 패널에서 사용할 수 있는 검색 패싯 및 필터를 사용자 정의합니다. 이러한 패널을 사용자 정의하면 특정 요구 사항에 따라 검색 기능을 유연하게 사용할 수 있습니다.
+Adobe Experience Manager as a Cloud Service는 강력한 검색 [메커니즘을 제공합니다](/help/sites-cloud/authoring/getting-started/search.md) .
 
-즉시 사용 가능한 [다양한](#predicates-and-their-settings)예측자를 이용할 수 있습니다.
+이와 함께 컨텐츠를 필터링할 수 있도록 미리 정의된 옵션 세트도 있습니다. 이러한 유지 패싯은 **수정한 날짜**, 게시 **상태**&#x200B;또는 Livecopy **상태와 같은 사전** 정의되므로 필요한 리소스로 빠르게 드릴다운할 수 있습니다.
 
-다양한 콘솔 및 자산 브라우저(페이지 편집 시)에서 사용되는 검색 양식을 [](#configuring-your-search-forms) 구성할 수 있습니다. 이러한 양식을 [](#configuring-your-search-forms) 구성하기 위한 대화 상자는 다음을 통해 액세스할 수 있습니다.
+![검색 및 필터 사용](assets/csf-usage.png)
+
+이러한 기능을 통해 컨텐츠를 빠르고 손쉽게 찾을 수 있습니다.
+
+* [검색 및 필터](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* 자산 [브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (페이지 편집 시)
+
+>[!NOTE]
+>
+>기본 컨텐츠 검색 및 [인덱싱 서비스를 구성할 수](/help/operations/indexing.md) 있습니다.
+
+Search **Forms**&#x200B;기능을 사용하면 특정 요구 사항에 따라 이러한 패널을 사용자 정의하고 확장할 수 있습니다.
+
+검색 **양식은** 결합하고 정의할 수 있는 [조건자를](#predicates-and-their-settings) 즉시 선택할 수 있도록 합니다. 이러한 양식을 [](#configuring-your-search-forms) 구성하기 위한 대화 상자는 다음을 통해 액세스할 수 있습니다.
 
 * **도구**
 
@@ -21,73 +35,48 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
 
       * **검색 양식**
 
-이 콘솔에 처음 액세스하면 모든 구성에 자물쇠 기호가 있는 것을 확인할 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 구성을 사용자 지정하면 사용자 지정된 구성을 [삭제하지 않으면 잠금이](#deleting-a-configuration-to-reinstate-the-default)사라지고, 이 경우 기본값(및 자물쇠 표시기)이 복원됩니다.
+## 기본 양식 {#default-forms}
+
+양식 검색 **콘솔에 처음 액세스하면** 모든 구성에는 자물쇠 기호가 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 사용자 정의 및 저장했으면 잠금이 사라집니다. 사용자 정의된 구성을 [삭제하면](#deleting-a-configuration-to-reinstate-the-default)다시 나타납니다. 이 경우 기본값(및 자물쇠 표시기)이 복원됩니다.
 
 ![검색 양식 개요 구성](assets/csf-overview.png)
-
-## 구성 {#configurations}
 
 사용 가능한 기본 구성(알파벳순 목록)은 다음과 같습니다.
 
 * **자산 관리자 검색 레일:**
 
-   이 구성은 사용자가 자산 콘솔을 사용할 때 사용할 수 있는 검색 옵션을 정의합니다.
-
 * **페이지 편집기(문서 검색):**
-
-   이 구성은 자산 브라우저에서 문서를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
 * **페이지 편집기(경험 조각 검색):**
 
-   이 구성은 자산 브라우저에서 경험 조각을 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
-
 * **페이지 편집기(이미지 검색):**
-
-   이 구성은 자산 브라우저에서 이미지를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
 * **페이지 편집기(원고 검색):**
 
-   이 구성은 자산 브라우저에서 사본을 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
-
 * **페이지 편집기(페이지 검색):**
-
-   이 구성은 자산 브라우저에서 페이지를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
 * **페이지 편집기(단락 검색):**
 
-   이 구성은 자산 브라우저에서 단락을 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
-
 * **페이지 편집기(제품 검색):**
-
-   이 구성은 자산 브라우저에서 제품을 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
 * **페이지 편집기(Scene7 검색)**:
 
-   이 구성은 자산 브라우저에서 Scene7 리소스를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
-
 * **페이지 편집기(비디오 검색)**:
-
-   이 구성은 자산 브라우저에서 비디오를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
 * **프로젝트 관리자 검색 레일:**
 
-   이 구성은 사용자가 프로젝트를 검색할 때 사용할 수 있는 검색 옵션을 정의합니다.
-
 * **프로젝트 번역 검색 레일:**
-
-   이 구성은 프로젝트 번역 검색 시 사용자가 사용할 수 있는 검색 옵션을 정의합니다.
 
 * **사이트 관리자 검색 레일**:
 
-   이 구성은 사이트 콘솔의 검색 레일을 사용할 때 사용자가 사용할 수 있는 검색 옵션을 정의합니다.
-
 * **코드 조각 관리자 검색 레일**:
-
-   이 구성은 코드 조각을 검색할 때 사용자가 사용할 수 있는 검색 옵션을 정의합니다.
 
 * **Stock 관리자 검색 레일**:
 
-   이 구성은 사용자가 스톡 검색 시 사용할 수 있는 검색 옵션을 정의합니다.
+>[!NOTE]
+>
+> 자산 관련 검색 양식에 대한 자세한 내용은 자산 - [검색 패싯을 참조하십시오.](/help/assets/search-facets.md)
+
 
 ## 예측 및 설정 {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>날짜 범위</td>
-   <td>날짜 속성에 대해 지정된 범위 내에서 만들어진 자산을 검색합니다. 검색 패널에서 시작 날짜와 종료 날짜를 지정할 수 있습니다.</td>
+   <td>날짜 속성에 대해 지정된 범위 내에서 만들어진 리소스를 검색합니다. 검색 패널에서 시작 날짜와 종료 날짜를 지정할 수 있습니다.</td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -181,7 +170,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>만료 상태</td>
-   <td>만료 상태를 기반으로 자산을 검색합니다.</td>
+   <td>만료 상태를 기반으로 리소스를 검색합니다.</td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -191,7 +180,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>파일 크기</td>
-   <td>크기를 기반으로 에셋을 검색합니다.</td>
+   <td>크기에 따라 리소스를 필터링합니다.</td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -205,7 +194,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
    <td>파일/MIME 유형을 기반으로 자산을 검색합니다.</td>
    <td>
     <ul>
-     <li>필드 레이블</li>
+     <li>필드 레이블</li> 
      <li>속성 이름*</li>
      <li>MIME 유형 경로</li>
      <li>설명</li>
@@ -214,7 +203,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>전체 텍스트</td>
-   <td>전체 텍스트 검색에 대한 검색 조건자입니다.</td>
+   <td>전체 텍스트 검색에 대한 검색 조건자입니다. 'jcr:contains' 연산자로 매핑됩니다.</td>
    <td>
     <ul>
      <li>자리 표시자</li>
@@ -304,7 +293,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>페이지 상태</td>
-   <td>상태에 따라 페이지를 검색합니다.</td>
+   <td>상태에 따라 페이지를 필터링합니다.</td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -315,7 +304,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>경로</td>
-   <td>특정 경로 아래에 있는 자산을 검색합니다.</td>
+   <td>특정 경로에 따라 필터링합니다. 여러 경로를 옵션으로 지정할 수 있습니다.</td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -325,7 +314,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>경로 브라우저</td>
-   <td>검색할 경로 브라우저를 제공합니다.</td>
+   <td>사전 정의된 루트 경로에서 검색할 경로 브라우저를 제공합니다.</td>
    <td>
     <ul>
      <li>자리 표시자</li>
@@ -360,7 +349,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>게시 상태</td>
-   <td>게시 상태에 따라 자산 검색</td>
+   <td>게시 상태에 따라 리소스를 필터링합니다.</td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -380,7 +369,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>등급</td>
-   <td>등급을 기준으로 자산을 검색합니다.<br /> </td>
+   <td>평균 등급에 따라 리소스를 검색합니다.<br /> </td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -391,7 +380,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>상대적 날짜</td>
-   <td>만든 날짜를 기준으로 자산 검색<br /> </td>
+   <td>작성의 상대 날짜를 기준으로 리소스를 필터링합니다. 예를 들어 1주 전, 1개월 전</td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -497,23 +486,24 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* 일반적인 검색 조건자는
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+이 정보는 참조용이므로 변경할 수 `/libs`없습니다.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### 설명 설정 {#predicate-settings}
 
-조건자에 따라 선택한 설정을 구성에 사용할 수 있습니다.
+조건자에 따라 다음과 같은 설정을 선택할 수 있습니다.
 
 * **필드 레이블**
 
@@ -659,22 +649,19 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
 
    * `jcr:title` - 검색 레일에 표시할 필드 레이블
    * `value` - 검색할 속성 값
+   ![설명 정의](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->패스에 있는 ***어떤 것도 변경하지*** 않아야 `/libs` 합니다.
->
->이는 다음에 인스턴스를 업그레이드할 때 의 컨텐츠를 `/libs` 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
->
->구성 및 기타 변경에 대한 권장 방법은 다음과 같습니다.
->
->1. 에 있는 대로 아래 `/libs`에서 필요한 항목을 다시 `/apps`만듭니다. 이 경우:
->1. `/libs/cq/gui/content/common/options/predicates`
->1. Make any changes within `/apps.`
+   >[!NOTE]
+   >
+   >패스에 있는 ***어떤 것도 변경하지*** 않아야 `/libs` 합니다.
+   >
+   >이는 다음에 인스턴스를 업그레이드할 때 의 컨텐츠를 `/libs` 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
+   >
+   >구성 및 기타 변경에 대한 권장 방법은 다음과 같습니다.
+   >
+   >1. 에 있는 대로 아래 `/libs`에서 필요한 항목을 다시 `/apps`만듭니다. 이 경우:
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. Make any changes within `/apps.`
 
 
 1. 양식 **검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예: 사이트 **관리자 검색 레일입니다**.
@@ -695,16 +682,13 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
       옵션을 저장할 경로를 선택합니다. 예:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![옵션 설명](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. 적절한 콘솔(이 예: 사이트) **으로**&#x200B;이동하고 검색 **레일을 엽니다** . 새롭게 정의된 검색 양식과 다양한 옵션이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 확인합니다.
+1. 적절한 콘솔(이 예: 사이트) **으로**&#x200B;이동하고 검색 **레일을 엽니다** . 새롭게 정의된 검색 양식과 다양한 옵션이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 봅니다.
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## 사용자 권한 {#user-permissions}
