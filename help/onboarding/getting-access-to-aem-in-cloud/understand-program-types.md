@@ -2,7 +2,7 @@
 title: 프로그램 및 프로그램 유형 이해
 description: 프로그램 및 프로그램 유형 이해 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
+source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 # 프로그램 및 프로그램 유형 이해 {#understanding-programs}
 
 Cloud Manager에서 맨 위에 여러 개의 프로그램을 포함할 수 있는 임차인 엔티티가 있습니다.  각 프로그램에는 둘 이상의 프로덕션 환경과 여러 비프로덕션 환경을 포함할 수 없습니다.
+
+다음 다이어그램은 Cloud Manager의 엔티티 계층을 보여줍니다.
+
+![이미지](assets/program-types1.png)
 
 ## 프로그램 유형 {#program-types}
 
