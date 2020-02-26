@@ -2,14 +2,14 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
+source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
 
 ---
 
 
 # 구현 {#implementing}
 
-+ [클라우드 서비스로 AEM용 애플리케이션 구현](/help/implementing/home.md)
++ [클라우드 서비스로서의 AEM용 애플리케이션 구현](/help/implementing/home.md)
 + Cloud Manager 사용 {#using-cloud-manager}
    + [환경 관리](cloud-manager/manage-environments.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
@@ -21,18 +21,19 @@ source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
    + [Maven 프로젝트 버전 처리](cloud-manager/project-version-handling.md)
    + [Git 액세스](cloud-manager/accessing-git.md)
    + [Adobe Cloud Manager와 Git 통합](cloud-manager/integrating-with-git.md)
-+ 클라우드 서비스로 AEM용으로 개발 {#developing}
++ 클라우드 서비스로서의 AEM을 위한 개발 {#developing}
    + [AEM 프로젝트 패키지 구조](developing/introduction/aem-project-content-package-structure.md)
    + [저장소 구조 패키지 개발](developing/introduction/repository-structure-package.md)
    + [클라우드 서비스 SDK로 AEM 사용](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [컨텐츠 검색 및 인덱싱](/help/operations/indexing.md)
-   + [클라우드 서비스 개발 지침으로서 AEM](developing/introduction/development-guidelines.md)
+   + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
    + [AEM 사이트 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
-   + [클라우드 서비스 API로 AEM 사용](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
-+ AEM을 클라우드 서비스로 구성 및 확장 {#configuring-and-extending}
++ Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
    + [경험 조각 확장](developing/extending/experience-fragments.md)
-+ 클라우드 서비스로 AEM에 배포 {#deploying}
-   + [클라우드 서비스로 AEM에 배포](deploying/overview.md)
-+ Dispatcher in the Cloud {#dispatcher}
-   + [Dispatcher in the Cloud](dispatcher/overview.md)
+   + [검색 양식 구성](developing/extending/search-forms.md)
++ 클라우드 서비스로서의 AEM에 배포 {#deploying}
+   + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
++ 클라우드의 디스패처 {#dispatcher}
+   + [클라우드의 디스패처](dispatcher/overview.md)
