@@ -2,12 +2,12 @@
 title: 사용자 및 역할 추가 - 필수 사항
 description: 사용자 및 역할 추가 - 필수 사항
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# 사용자 및 역할 추가 - 필수 사항 {#add-users-roles}
+# 사용자 및 역할 추가 {#add-users-roles}
 
 
 Cloud Manager의 많은 [!UICONTROL 기능을] 사용하려면 특정 권한이 필요합니다. 예를 들어 특정 사용자만 프로그램에 대한 주요 성과 지표(KPI)를 설정할 수 있습니다. 이러한 권한은 논리적으로 역할로 그룹화됩니다.
