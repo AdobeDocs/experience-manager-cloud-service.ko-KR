@@ -1,8 +1,8 @@
 ---
 sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+translation-type: tm+mt
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
@@ -13,6 +13,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 + 필수 사항 {#what-is-required}
    + [부여된 액세스 권한](what-is-required/access-rights-granted.md)
    + [사용자 및 역할 추가](what-is-required/add-users-roles.md)
+   + [역할 기반 권한](what-is-required/role-based-permissions.md)
    + [소스 코드 저장소](what-is-required/source-code-repository.md)
 + 클라우드에서 AEM에 액세스 {#getting-access}
    + [클라우드 서비스로서의 Experience Manager 액세스](getting-access-to-aem-in-cloud/navigation.md)
@@ -24,3 +25,4 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 기초 준비 완료](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 사이트 준비 완료](data-privacy-and-protection-readiness/sites-readiness.md)
++ [도구 콘솔 개요](tools-consoles.md)
