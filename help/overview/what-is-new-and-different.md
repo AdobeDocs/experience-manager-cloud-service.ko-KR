@@ -2,12 +2,12 @@
 title: 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager
 description: '차이점 및 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager(AEM) '
 translation-type: tm+mt
-source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
+source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
 
 
-# 새로운 기능과 다른 기능 {#what-is-new-and-what-is-different}
+# 새로운 기능 및 차이점 {#what-is-new-and-what-is-different}
 
 AEM은 여러 해 동안 다음과 같이 사용할 수 있습니다.
 
@@ -178,6 +178,10 @@ AEM 프로젝트를 시작 및 관리하는 것은 Adobe가 많은 측면을 담
 이 프로세스를 클라우드 우선 개발이라고 합니다. 종단 간 지속 시간은 몇 분(애플리케이션의 복잡도에 따라 20~50분)이 소요되므로 대기 중인 코드와 구성 변경 사항을 클라우드에서 시도하기 전에 신속한 개발 방법론을 수용해야 합니다.
 
 OSGI 번들 및 관련 구성이 관리되고 이전의 AEM QuickStart의 일부인 웹 콘솔은 더 이상 AEM 사용자가 클라우드 서비스 환경으로 직접 액세스할 수 없습니다. 이 인터페이스는 여전히 새 개발자 콘솔을 사용하여 읽기 전용 모드로 액세스할 수 있습니다. 이 콘솔을 사용하여 개발자는 작성자 또는 게시 서비스의 특정 노드를 선택하여 바로 로그인한 다음 기본적으로 차단된 영역에 액세스할 수 있습니다.
+
+>[!NOTE]
+>
+>OSGi [구성 참조](/help/implementing/deploying/overview.md#osgi-configuration)
 
 개발자는 다양한 환경의 로그 파일에 신속하게 액세스할 수 있어야 합니다. AEM을 클라우드 서비스로 사용하면 작성 및 게시 노드에 있는 다른 노드의 로그 파일을 클라우드 관리자를 통해 다운로드하거나 API를 통해 사용할 수 있습니다.
 
