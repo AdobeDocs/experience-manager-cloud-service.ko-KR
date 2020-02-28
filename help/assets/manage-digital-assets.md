@@ -4,7 +4,7 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
@@ -96,7 +96,7 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 자산의 특정 사본에 고유한 몇 가지 특성은 전달되지 않습니다. 몇 가지 예는 다음과 같습니다.
 
-* 상대 경로, 자산 ID, 작성 날짜 및 시간, 버전 및 버전 내역. 이러한 속성 중 일부는 속성, `dam:relativePath``jcr:uuid`, `jcr:created`및 `cq:name`로 표시됩니다.
+* 자산 ID, 작성 날짜 및 시간, 버전 및 버전 내역. 이러한 속성 중 일부는 속성 `jcr:uuid``jcr:created`및 `cq:name`로 표시됩니다.
 
 * 작성 시간 및 참조된 경로는 각 자산과 각 변환에 대해 고유합니다.
 
@@ -241,7 +241,7 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ## 자산 다운로드 {#download-assets}
 
-AEM [에서 자산 다운로드를 참조하십시오](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publish-assets}
 
@@ -313,7 +313,7 @@ CUG 파섹 폴더에 대한 로그인 페이지를 구성할 수도 있습니다
 1. 폴더를 게시한 다음 게시 인스턴스에서 액세스합니다. 로그인 화면이 표시됩니다.
 1. CUG 회원인 경우 보안 자격 증명을 입력합니다. AEM에서 사용자를 인증한 후 폴더가 표시됩니다.
 
-## Search assets {#search-assets}
+## 자산 검색 {#search-assets}
 
 자산 검색은 크리에이티브 전문가가 추가적으로 사용하거나 비즈니스 사용자 및 마케터가 자산을 안전하게 관리하거나 DAM 관리자의 관리를 위해 디지털 자산 관리 시스템을 사용하는 데 중요합니다.
 
