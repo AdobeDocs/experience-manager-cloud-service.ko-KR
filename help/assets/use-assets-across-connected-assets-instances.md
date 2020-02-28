@@ -3,7 +3,7 @@ title: 연결된 에셋을 사용하여 Adobe Experience Manager Sites 제작 �
 description: 다른 Experience Manager 사이트 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager 자산 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45371da5617a0d87105dbf2f574de15bf0698d98
+source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
 
 ---
 
@@ -29,7 +29,7 @@ AEM Sites는 웹 페이지를 구축하는 기능을 제공하며, AEM Assets은
 
    |  | 클라우드 서비스로서의 AEM 사이트 | AMS의 AEM 6.5 사이트 | AEM 6.5 사이트 온프레미스 |
    |---|---|---|---|
-   | **클라우드 서비스로 AEM 자산** | 지원됨 | 지원됨 | 지원됨 |
+   | **클라우드 서비스로서의 AEM Assets** | 지원됨 | 지원됨 | 지원됨 |
    | **AMS의 AEM 6.5 자산** | 지원되지 않음 | 지원됨 | 지원됨 |
    | **AEM 6.5 온프레미스 자산** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
@@ -37,14 +37,10 @@ AEM Sites는 웹 페이지를 구축하는 기능을 제공하며, AEM Assets은
 
 작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 구성 요소에 추가할 수 `Download` 있으며 이미지를 `Image` 구성 요소에 추가할 수 있습니다. 작성자는 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 AEM 구성 요소에 원격 자산을 추가할 수도 있습니다.
 
-* Microsoft Word(DOC 및 DOCX)
-* Microsoft Excel(XLS 및 XLSX)
-* Microsoft PowerPoint(PPT 및 PPTX)
-* Adobe PDF(PDF)
-* ODT(OpenDocument Text)
-* 서식 있는 텍스트 형식(RTF)
-* 일반 텍스트(TXT)
-* 웹 페이지(HTML)
+지원되는 형식 목록은 다음과 같습니다.
+
+* **이미지 형식**:이미지 구성 요소에서 지원하는 [이미지](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) 형식이 지원됩니다. 다이내믹 미디어 구성 요소는 지원되지 않습니다.
+* **문서 포맷**:연결된 [자산 지원 문서 형식을](file-format-support.md#supported-document-formats)참조하십시오.
 
 ### Users and groups involved {#users-and-groups-involved}
 
