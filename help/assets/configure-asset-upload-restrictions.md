@@ -3,7 +3,7 @@ title: 자산 업로드 제한 사항 구성
 description: AEM(Adobe Experience Manager) 자산을 구성하여 사용자가 업로드할 수 있는 자산 유형(파일)을 제한하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -22,4 +22,3 @@ AEM(Adobe Experience Manager) 자산을 구성하여 사용자가 업로드할 �
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
 1. 저장을 클릭/탭하여 **** 변경 내용을 저장합니다. 허용되는 MIME 유형에 대해 MIME 문자열을 지정하는 경우 MIME 유형의 모든 자산에 대해 업로드 작업이 실패합니다. MIME 형식은 이러한 필드에 구성된 MIME 문자열과 일치하지 않습니다.
-
