@@ -3,7 +3,7 @@ title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
 description: 다양한 미디어 핸들러와 워크플로우에서 이를 사용하여 에셋에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -453,7 +453,7 @@ AEM을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 �
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>선택적 인수입니다. 자산이 인수 중 하나와 동일한 mime 형식을 갖는 경우 프로세스가 적용됩니다.</p> <p>여러 MIME 형식을 정의할 수 있습니다.</p> </td>
+   <td><p>선택적 인수입니다. 자산이 인수 중 하나와 동일한 MIME 형식을 갖는 경우 프로세스가 적용됩니다.</p> <p>여러 MIME 형식을 정의할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
@@ -461,7 +461,7 @@ AEM을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 �
   </tr>
   <tr>
    <td> cmd:&lt;command&gt;</td>
-   <td><p>실행할 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다.</p> <p>하나의 명령만 정의할 수 있습니다.</p> <p>다음 변수를 사용하여 명령을 만들 수 있습니다.<br/></p> <p><code>${filename}</code>:입력 파일의 이름(예: original.jpg<br/><code>${file}</code>:입력 파일의 전체 경로 이름(예:/tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>:입력 파일의 디렉토리(예:/tmp/cqdam0816.tmp.<br/><code>${basename}</code>:입력 파일의 확장자가 없는 이름(예: 원본<br/><code>${extension}</code>:입력 파일의 확장자(예: jpg)<br/></p></td>
+   <td><p>실행할 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다.</p> <p>하나의 명령만 정의할 수 있습니다.</p> <p>다음 변수를 사용하여 명령을 만들 수 있습니다.<br/></p> <p><code>${filename}</code>:입력 파일의 이름(예: 'original.jpg'<br/><code>${file}</code>):입력 파일의 전체 경로 이름(예: '/tmp/cqdam0816.tmp/original.jpg'<br/><code>${directory}</code>:입력 파일의 디렉토리(예: '/tmp/cqdam0816.tmp').<br/><code>${basename}</code>:입력 파일의 확장자가 없는 이름(예: 원본<br/><code>${extension}</code>:입력 파일의 확장자(예: JPG)<br/></p></td>
   </tr>
  </tbody>
 </table>
