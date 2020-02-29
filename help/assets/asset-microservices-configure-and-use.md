@@ -3,12 +3,12 @@ title: 자산 처리를 위한 자산 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 자산 마이크로 서비스를 구성 및 사용하여 자산을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# 에셋 마이크로서비스 사용 시작 {#get-started-using-asset-microservices}
+# 자산 마이크로서비스 사용 시작 {#get-started-using-asset-microservices}
 
 <!--
 
@@ -97,9 +97,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 #### MIME 유형 포함 규칙 {#mime-type-inclusion-rules}
 
-특정 MIME 유형의 자산이 처리되면, MIME 유형은 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 확인됩니다. 이 목록이 해당 목록과 일치하면 해당 자산에 대해 특정 변환이 생성되지 않습니다(&quot;블랙리스트&quot;).
+특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 이 목록이 해당 목록과 일치하면 해당 자산에 대해 특정 변환이 생성되지 않습니다(&quot;블랙리스트&quot;).
 
-그렇지 않으면 포함된 MIME 유형에 대해 MIME 유형이 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(&quot;화이트리스트&quot;).
+그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(&quot;허용 목록&quot;).
 
 #### 특수 FPO 변환 {#special-fpo-rendition}
 
@@ -126,7 +126,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 >
 >에셋이 폴더에 업로드되면 Experience Manager는 포함된 폴더의 속성이 처리 프로필인지 확인합니다. 아무 것도 적용되지 않으면 적용된 처리 프로필을 찾을 때까지 폴더 트리에서 위로 이동하고 자산에 사용합니다. 즉, 폴더에 적용된 처리 프로필은 전체 트리에 대해 작동하지만 하위 폴더에 적용된 다른 프로필로 인해 오버레이될 수 있습니다.
 
-사용자는 처리가 완료된 새로 업로드된 자산을 열고, 자산 미리 보기를 열고, 왼쪽 레일의 표현물 보기를 클릭하여 실제로 처리되었는지 확인할 **[!UICONTROL 수]** 있습니다. 특정 자산의 유형이 MIME 유형 포함 규칙과 일치하는 처리 프로필의 특정 변환을 표시하고 액세스할 수 있어야 합니다.
+사용자는 처리가 완료된 새로 업로드된 자산을 열고, 자산 미리 보기를 열고, 왼쪽 레일의 표현물 보기를 클릭하여 실제로 처리되었는지 확인할 **[!UICONTROL 수]** 있습니다. 특정 자산의 유형이 MIME 유형 포함 규칙과 일치하는 처리 프로필의 특정 변환을 보고 액세스할 수 있어야 합니다.
 
 ![추가 표현물](assets/renditions-additional-renditions.png)*그림:상위 폴더에 적용된 처리 프로필로 생성된 두 개의 추가 표현물의 예*
 
