@@ -3,7 +3,7 @@ title: 자산 HTTP API
 description: Assets HTTP API의 구현, 데이터 모델 및 기능에 대해 알아봅니다. 자산 HTTP API를 사용하여 자산 관련 다양한 작업을 수행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
