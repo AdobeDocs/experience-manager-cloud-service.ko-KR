@@ -1,14 +1,14 @@
 ---
-title: 클라우드 서비스로 에셋 소개
+title: 클라우드 서비스로서의 자산 소개
 description: 클라우드 서비스로서의 에셋의 새로운 기능
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# 클라우드 서비스로 에셋 소개 {#assets-cloud-service-introduction}
+# Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ Adobe Experience Manager Assets as a Cloud Service는 클라우드 기반의 Paa
 
 기업은 다양한 파일 포맷과 다중 장치, 지리 및 다국어 사용 사례를 위한 컨텐츠 해상도를 지원해야 합니다. 자산 처리 및 스토리지 요구 사항에는 기존 솔루션의 부담을 가중시킬 수 있는 리소스와 기능이 필요합니다. 경우에 따라, 자산 처리의 기술적 제한으로 원하는 결과를 얻지 못할 수도 있고, 다른 경우에는 저장 비용이 이익 수익에 장애가 될 수도 있습니다.
 
-먼저 클라우드 기본 솔루션의 [이점을](#solution-benefits)파악하십시오. 자산에도 영향을 주는 클라우드 서비스로서 AEM에 대한 주목할 만한 [변경](/help/release-notes/aem-cloud-changes.md) 사항을 살펴보십시오. 이러한 변경 사항은 자산에 [적용됩니다](/help/assets/assets-cloud-changes.md).
+먼저 클라우드 기본 솔루션의 [이점을](#solution-benefits)파악하십시오. Adobe Experience Manager Assets에 영향을 미치는 클라우드 서비스로서 AEM의 주목할 만한 [변경](/help/release-notes/aem-cloud-changes.md) 사항을 확인하고 [변경 사항을 자산에 적용합니다](/help/assets/assets-cloud-changes.md).
 
 새로운 자산 기능과 [](#whats-new-assets) 알려진 문제에 [](/help/release-notes/known-issues.md)대한 자세한 내용을 살펴보십시오. 이 릴리스에서 제거되는 기능을 [확인하려면](/help/release-notes/deprecated-removed-features.md) 더 이상 사용되지 않거나 제거된 기능 [목록을 참조하십시오. 그리고 향후 출시될 기능에](/help/release-notes/known-issues.md#upcoming-assets-capabilities) 대한목록을 참조하십시오. 마지막으로, 이 [용어 해설을](/help/overview/terminology.md)통해 AEM 용어를 이해합니다.
 
