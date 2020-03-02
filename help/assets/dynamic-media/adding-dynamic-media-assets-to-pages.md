@@ -2,7 +2,7 @@
 title: 페이지에 Dynamic Media 자산 추가
 description: AEM의 페이지에 Dynamic Media 구성 요소를 추가하는 방법
 translation-type: tm+mt
-source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
+source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ---
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL 종횡비 일치]**&#x200B;활성화 - 스마트 자르기 변환을 선택할 때 원본 이미지의 종횡비와 일치합니다.
+* **[!UICONTROL 종횡비 일치]**&#x200B;활성화 - Dynamic Media에서 원본 이미지의 종횡비와 가장 일치하는 종횡비로 스마트 자르기 변환을 선택하도록 하려면 이 옵션을 선택합니다.
 
 * **[!UICONTROL 제목]**- 스마트 자르기 이미지의 제목을 변경합니다.
 
