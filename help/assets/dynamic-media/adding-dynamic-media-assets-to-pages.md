@@ -261,7 +261,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 * 2:1 종횡비.
 * 키워드 `equirectangular` 또는 (`spherical` + `panorama`) 또는 (`spherical` + `panoramic`) 태그가 지정되어 있습니다. 태그 [사용을 참조하십시오](/help/sites-cloud/authoring/features/tags.md).
 
-종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 파노라마 미디어 WCM 구성 요소에 대한 파노라마 **[!UICONTROL 자산에]** 적용됩니다.
+종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 파노라마 미디어 WCM 구성 요소의 파노라마 **[!UICONTROL 자산에]** 적용됩니다.
 
 >[!NOTE]
 >
