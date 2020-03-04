@@ -2,7 +2,7 @@
 title: 역할 기반 권한
 description: 역할 기반 권한
 translation-type: tm+mt
-source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
+source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ---
 
@@ -32,5 +32,5 @@ source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 | 파이프라인 실행 | 프로덕션 파이프라인 다시 시작을 참조하십시오. |  |  |  |  |
 | 환경 관리 | 환경 관리 화면에서 게시 발송자 세그먼트 추가를 참조하십시오. | x | x |  |  |  |
 | 푸시 업데이트 | 푸시 업데이트 파이프라인을 시작합니다. |  |  |  |  |
-| 개인 액세스 토큰 생성 | 개인 액세스 토큰 생성을 참조하십시오. |  | x |  | x |
+| 개인 액세스 토큰 생성 | Git 액세스. |  | x |  | x |
 
