@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud 서비스 구성
 description: Adobe Experience Manager Cloud Service에서 Dynamic Media를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
 
 ---
 
@@ -59,7 +59,7 @@ Dynamic Media Cloud 서비스를 구성하려면:
    >
    >Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인하여](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경하십시오. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media 클라우드 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
-1. 연결이 성공하면 다음을 설정합니다.
+1. 연결이 성공하면 다음을 설정할 수 있습니다.
 
    * **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다. 다양한 하위 브랜드, 사업부 또는 다른 스테이징/프로덕션 환경에 대해 여러 개의 Dynamic Media 계정이 있을 수 있습니다.
 
@@ -161,14 +161,14 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
    >
    >AEM과의 일관성을 유지하려면 항상 이 설정을 선택하십시오.현재 **폴더에 동일한 기본 이미지 이름/확장명을 덮어씁니다.**
 
-* **[!UICONTROL 동일한 기본 자산 이름/확장자를]** 모든 폴더에 덮어쓰기 - 대체 이미지의 파일 이름 확장자가 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 함). 그러나 교체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 더 이상 파일을 찾을 수 없습니다.
+* **[!UICONTROL 동일한 기본 에셋 이름/확장자를]** 모든 폴더에 덮어쓰기 - 대체 이미지의 파일 이름 확장자가 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 함). 그러나 교체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 더 이상 파일을 찾을 수 없습니다.
 * **[!UICONTROL 확장명에]** 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기 - 이 옵션은 가장 포괄적인 대체 규칙입니다. 교체 이미지를 원본과 다른 폴더에 업로드하고 다른 파일 이름 확장자로 파일을 업로드한 다음 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 
 * **[!UICONTROL 기본 색상 프로파일]** - [자세한 내용은 색상 관리](#configuring-color-management) 구성을 참조하십시오.
 
 >[!NOTE]
 >
->기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 사전 **[!UICONTROL 설정을 선택하면]** 15개의변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 감소 [표시되는](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가 또는 감소를 참조하십시오.
+>기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 **[!UICONTROL 사전 설정을 선택하면]** 15개의변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 감소 [표시되는](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가 또는 감소를 참조하십시오.
 
 
 #### 색상 관리 구성 {#configuring-color-management}
@@ -279,7 +279,7 @@ AEM 자산에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유�
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. 여전히 MIME 유형을 `image_vnd.dwg` 선택한 상태로 속성 **[!UICONTROL 탭의]** 활성화된 **** 행의 값 **[!UICONTROL 열에서 값을 두 번 클릭하여 값을 Value]** **** drop-down 목록을 엽니다.
+1. 여전히 mime 유형을 `image_vnd.dwg` 선택한 상태에서 속성 **[!UICONTROL 탭의]** **[!UICONTROL 활성화된]** 행의 값 **[!UICONTROL 열에서 값을 두 번 클릭하여 값을 Value]** **** drop-down 목록을 엽니다.
 1. 필드에 `false` 입력하거나 드롭다운 목록에서 **[!UICONTROL false]** 를 선택합니다.
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -292,7 +292,7 @@ AEM 자산에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유�
 
 먼저 자산을 집합으로 그룹화하는 방법에 대한 이름 지정 규칙을 정의합니다. 그런 다음 사전 설정 레서피에서 정의된 이름 지정 규칙과 일치하는 이미지를 사용하여 세트를 구성하는 방법을 정의하는 고유한 이름 및 자체 포함 지침 세트인 배치 집합 사전 설정을 만들 수 있습니다.
 
-파일을 업로드하면 Dynamic Media는 활성 사전 설정에서 정의된 이름 지정 규칙과 일치하는 모든 파일이 포함된 세트를 자동으로 만듭니다.
+파일을 업로드할 때 Dynamic Media는 활성 사전 설정에서 정의된 이름 지정 규칙과 일치하는 모든 파일이 포함된 세트를 자동으로 만듭니다.
 
 **기본 이름 지정 구성**
 
@@ -460,7 +460,7 @@ Dynamic Media를 원활하게 <!--(with `dynamicmedia_scene7` run mode)--> 실�
 * 미리 정의된 [MOCK] Update the predefined Granite workflow (images and non-video assets) queue worker threads.
 * Dynamic Media Classic 서버에 대한 최대 업로드 연결을 업데이트합니다.
 
-#### Updating the Granite Temporary Workflow queue {#updating-the-granite-transient-workflow-queue}
+#### [MOCK] Updating the Granite Temporary Workflow queue {#updating-the-granite-transient-workflow-queue}
 
 [DAM 자산 업데이트] 작업 과정에는 [DAM **[!UICONTROL 전송 워크플로] 큐가]** 사용됩니다. Dynamic Media에서는 이미지 처리 및 처리에 사용됩니다.
 
