@@ -1,7 +1,7 @@
 ---
 title: 콘솔용 키보드 단축키
 description: 이러한 키보드 단축키를 사용하여 작성할 때 시간을 절약합니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 콘솔용 키보드 단축키 {#keyboard-shortcuts-for-consoles}
 
-사이트, 자산, 사용자, 그룹, 프로젝트 및 경험 조각 콘솔에 대해 다음 단축키를 사용할 수 있습니다.
+다음 단축키는 사이트, 자산, 사용자, 그룹, 프로젝트 및 경험 조각 콘솔에 사용할 수 있습니다.
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
@@ -22,7 +22,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 |  | `Esc` | 동일한 수준의 페이지 목록 위로 이동합니다. |
 | 콘솔 | `?` | 키보드 단축키 도움말 |
 |  | `/` | [검색](/help/sites-cloud/authoring/getting-started/search.md) 호출 |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | 보려는 [레일 선택기 옵션](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)을 전환합니다. |
 |  | ` | 레일 숨기기 |
 |  | `e` | 편집 |
 |  | `p` | 속성 |
