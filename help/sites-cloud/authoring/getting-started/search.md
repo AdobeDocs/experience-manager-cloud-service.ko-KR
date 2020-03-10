@@ -1,7 +1,7 @@
 ---
 title: 검색
 description: 포괄적인 검색으로 신속하게 컨텐츠 찾기
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -25,7 +25,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>검색 레일이 표시될 때마다 핫키 `/`(슬래시)를 사용하여 검색을 호출할 수 있습니다.
 
 ## 검색 및 필터 {#search-and-filter}
 
@@ -57,7 +57,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * 저장된 검색
    * 검색 디렉토리
    * 태그
-   * 검색 기준(예: 수정한 날짜, 게시 상태, LiveCopy 상태)
+   * 검색 기준(예: 수정한 날짜, 게시 상태, Live Copy 상태)
    >[!NOTE]
    >
    >검색 기준은 다음과 같이 다양할 수 있습니다.
@@ -69,7 +69,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
 
-![검색 측면 패널](/help/sites-cloud/authoring/assets/search-side-panel.png)
+![검색 사이드 패널](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
 1. 검색어를 추가할 수도 있습니다.
 
