@@ -1,7 +1,7 @@
 ---
 title: CSV로 내보내기
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -45,12 +45,12 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 CSV 내보내기를 만들려면:
 
 1. **사이트** 콘솔을 열고 필요한 경우 필요한 위치로 이동합니다.
-   * CSV **보고서** 만들기 옵션은 사이트 **콘솔을 탐색할 때** 사용할 수 있습니다(목록 보기).
-   * 만들기 드롭다운 **메뉴의** 옵션입니다.
+   * **CSV 보고서** 만들기 옵션은 **Sites** 콘솔을 탐색(목록 보기)할 때 사용할 수 있습니다.
+   * 이 옵션은 **만들기** 드롭다운 메뉴의 옵션입니다.
 
       ![CSV 만들기 옵션](/help/sites-cloud/authoring/assets/csv-create.png)
 
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. 도구 모음에서 **만들기**&#x200B;를 선택한 다음 **CSV 보고서**&#x200B;를 선택하여 마법사를 엽니다.
 
    ![CSV 내보내기 옵션](/help/sites-cloud/authoring/assets/csv-options.png)
 
