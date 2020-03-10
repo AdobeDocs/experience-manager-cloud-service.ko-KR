@@ -1,7 +1,7 @@
 ---
 title: 계정 환경 구성
 description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -13,16 +13,16 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 [헤더](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)의 [사용자](#user-settings) 선택 사항 및 연관된 [내 환경 설정](#my-preferences) 대화 상자를 사용하면 사용자 선택 사항을 수정할 수 있습니다.
 
-Begin by accessing the [User](#user-settings) option in the header.
+헤더에서 [사용자](#user-settings) 선택 사항에 액세스해 보십시오.
 
 ## 사용자 설정 {#user-settings}
 
 **사용자 설정** 대화 상자에서는 다음에 액세스할 수 있습니다.
 
 * 가장 대상 
-   * With the Impersonate as functionality, a user can work on behalf of another user. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+   * 가장 대상 기능을 사용하면 사용자는 다른 사용자를 대신하여 작업할 수 있습니다. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * 프로필
-   * Offers a convenient link to your user settings <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * 사용자 설정을 연결하는 편리한 링크를 제공합니다. <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [내 환경 설정](#my-preferences)
    * 사용자에게만 해당하는 다양한 환경 설정을 지정합니다.
 
@@ -84,10 +84,10 @@ Begin by accessing the [User](#user-settings) option in the header.
    * [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
    키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 사용할 수 있지만 사용자에게 특정 액세스 가능성 요구 사항이 있는 경우처럼 원하는 경우에는 사용하지 않도록 설정할 수 없습니다.
 
-* **자산 홈 페이지 활성화**
+* **자산 홈페이지 활성화**
 
-   이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈 페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
+   이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
 
 * **Stock 구성**
 
-   이 옵션을 사용하면 기본 Adobe Stock 구성을 지정할 수 있으며, 이 옵션은 시스템 관리자가 Adobe Stock 통합<!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->을 사용하도록 설정한 경우에만 사용할 수 있습니다. 
+   이 옵션을 사용하면 기본 Adobe Stock 구성을 지정할 수 있으며, 이 옵션은 시스템 관리자가 Adobe Stock 통합을 사용하도록 설정한 경우에만 사용할 수 있습니다. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
