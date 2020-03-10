@@ -1,7 +1,7 @@
 ---
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 기본 처리 {#basic-handling}
 
-이 문서는 AEM 작성 환경을 사용할 때 기본적인 처리 방법에 대한 개요를 제공하도록 설계되었습니다. **사이트** 콘솔을 기본으로 사용합니다.
+이 문서는 AEM 작성 환경을 사용할 때 기본 처리에 대한 개요를 알 수 있도록 설계되었습니다. **사이트** 콘솔을 기본으로 사용합니다.
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 터치 활성화 UI {#a-touch-enabled-ui}
 
-AEM의 사용자 인터페이스는 터치에 대해 활성화됩니다. 터치 활성화 인터페이스를 사용하면 탭, 길게 터치하기, 밀기 등과 같은 동작을 통해 소프트웨어와 상호 작용할 수 있습니다. AEM UI가 터치를 지원하므로 모바일 휴대폰 또는 태블릿과 같은 터치 디바이스에서 터치 제스처를 사용할 수 있습니다. 그러나 기존 데스크톱 장치에서는 마우스 동작을 사용할 수 있으므로 컨텐츠를 작성하는 방법을 유연하게 선택할 수 있습니다.
+AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 활성화 인터페이스를 사용하면 탭, 길게 터치하기, 밀기 등과 같은 동작을 통해 소프트웨어와 상호 작용할 수 있습니다. AEM UI는 터치를 지원하므로 휴대 전화 또는 태블릿과 같은 터치 장치에서 터치 제스처를 사용할 수 있습니다. 그러나 기존 데스크탑 장치에서 마우스 동작도 사용할 수 있으므로 컨텐츠를 작성하는 방법을 유연하게 선택할 수 있습니다.
 
 ## 첫 단계 {#first-steps}
 
@@ -35,21 +35,21 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![탐색 자습서](/help/sites-cloud/authoring/assets/tutorial.png)
 
-개요의 다음 페이지로 이동하려면 **다음**&#x200B;을 클릭하거나 탭합니다. Click or tap **Close** or click or tap outside of the overview dialog to close.
+개요의 다음 페이지로 이동하려면 **다음**&#x200B;을 클릭하거나 탭합니다. 닫으려면 **닫기**&#x200B;를 클릭 또는 탭하거나 개요 대화 상자의 외부를 클릭 또는 탭합니다.
 
-The overview will restart the next time you access a console unless you either view all slides or check the option **Don&#39;t show this again**.
+모든 슬라이드를 표시하지 않거나 **다시 표시 안 함** 옵션을 선택하지 않은 한 이후에 콘솔에 액세스하면 개요가 다시 시작됩니다.
 
 ## 전역 탐색 {#global-navigation}
 
 전역 탐색 패널을 사용하여 콘솔 간을 탐색할 수 있습니다. 화면의 왼쪽 상단에 있는 Adobe Experience Manager 링크를 클릭하거나 탭하면 전체 화면 드롭다운으로 트리거됩니다.
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+**닫기**&#x200B;를 클릭하거나 탭하여 전역 탐색 패널을 닫고 이전 위치로 돌아갈 수 있습니다.
 
 ![탐색 패널 상단 막대](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
 전역 탐색에는 다음과 같은 두 개의 패널이 있으며 화면의 왼쪽 여백에 아이콘으로 표시됩니다.
 
-* **[탐색](#navigation-panel)**- 나침반으로 표시됨 및 AEM에 로그인할 때의 기본 패널
+* **[탐색](#navigation-panel)**- 나침반으로 표시되며,  AEM에 로그인할 경우 기본 패널입니다.
 * **[도구](#tools-panel)**- 망치로 표시됨
 
 이러한 패널에서 사용 가능한 옵션은 아래에 설명되어 있습니다.
@@ -64,17 +64,17 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 | 콘솔 | 목적 |
 |---|---|
-| 프로젝트 | 프로젝트 콘솔에서는 프로젝트에 직접 액세스할 수 있습니다. [프로젝트는 팀을 만드는 데 사용할 수 있는 가상 대시보드입니다](/help/sites-cloud/authoring/projects/overview.md) . 그런 다음 해당 팀이 리소스, 워크플로우 및 작업에 액세스할 수 있도록 함으로써 일반적인 목표를 향해 작업할 수 있습니다. |
-| 사이트 | The Sites consoles let you [create, view, and manage sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. 이 콘솔을 통해 페이지를 생성, 편집, 복사, 이동 및 삭제하고, 워크플로우를 시작하고, 페이지를 게시할 수 있습니다. |
-| 경험 조각 | An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences. |
-| 자산 | 자산 콘솔을 사용하면 이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 자산을 가져오고 관리할 수 있습니다. These assets can then be used by any site running on the same AEM instance.<!--add some kind of assets link--> |
-| 개인화 | This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md) |
+| 프로젝트 | 프로젝트 콘솔에서는 프로젝트에 직접 액세스할 수 있습니다. [프로젝트는 가상 대시보드](/help/sites-cloud/authoring/projects/overview.md)로서 팀을 만드는 데 사용할 수 있습니다. 팀을 만든 후에는 공동 목표를 위한 작업을 수행할 수 있도록 이 팀에 리소스, 워크플로우 및 작업에 대한 액세스 권한을 부여할 수 있습니다. |
+| 사이트 | Sites 콘솔에서는 AEM 인스턴스에서 실행되는 [사이트를 만들고, 보고, 관리](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)할 수 있습니다. 이 콘솔을 통해 페이지를 만들고, 편집하고, 복사하고, 이동하고, 삭제하며 워크플로우를 시작하고, 페이지를 게시할 수 있습니다. |
+| 경험 조각 | [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)은 여러 채널 간에 재사용할 수 있으며 변형이 있는 독립형 환경으로, 경험 또는 경험 일부를 반복해서 복사하고 붙여넣는 단조로운 작업을 수행할 필요를 없애줍니다. |
+| 자산 | Assets 콘솔에서는 이미지, 비디오, 문서 및 오디오 파일 등의 디지털 자산을 관리하고 가져올 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 사이트에서 이러한 자산을 사용할 수 있습니다.<!--add some kind of assets link--> |
+| 개인화 | [이 콘솔은 타게팅된 컨텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## 도구 패널 {#tools-panel}
 
-[도구] 패널에는 다양한 카테고리가 포함된 사이드 패널이 있으며 유사한 도구 콘솔을 함께 그룹화합니다. The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+도구 패널에는 유사한 도구 콘솔을 함께 그룹화하는 다양한 카테고리가 포함된 사이드 패널이 있습니다. 도구 콘솔에서는 웹 사이트, 디지털 자산 및 컨텐츠 리포지토리의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구 및 콘솔에 액세스할 수 있습니다.<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
-![툴 패널](/help/sites-cloud/authoring/assets/tools-panel.png)
+![도구 패널](/help/sites-cloud/authoring/assets/tools-panel.png)
 
 ## 헤더 {#the-header}
 
@@ -84,7 +84,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 * [전역 탐색](#global-navigation)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   콘솔 간에 탐색하려면 **Adobe Experience Manager** 링크를 선택합니다.
 
    ![전역 탐색](/help/sites-cloud/authoring/assets/global-navigation.png)
 
@@ -92,11 +92,11 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![검색 단추](/help/sites-cloud/authoring/assets/search-button.png)
 
-   You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   [단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
-* [솔루션](https://www.adobe.com/experience-cloud.html)
+* [솔루션](https://www.adobe.com/kr/experience-cloud.html)
 
-   ![솔루션 버튼](/help/sites-cloud/authoring/assets/solutions.png)
+   ![솔루션 단추](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [도움말](#accessing-help)
 
@@ -116,7 +116,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![레일 선택기 단추](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   제공된 옵션은 현재 콘솔에 따라 다릅니다. For example, in **Sites** you can select content only (the default), the timeline, references, or filter side panel.
+   제공된 옵션은 현재 콘솔에 따라 다릅니다. 예를 들어 **Sites**&#x200B;에서 컨텐츠 전용(기본값), 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
 
    ![레일 선택기의 예](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
@@ -124,11 +124,11 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![탐색 막대의 탐색 표시](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   레일의 중간에 위치하며 항상 현재 선택된 항목에 대한 설명을 표시하는 [탐색 표시]를 사용하면 특정 콘솔 내에서 탐색할 수 있습니다. In the **Sites** console, you can navigate through the levels of your website.
+   레일의 중간에 위치하며 항상 현재 선택된 항목에 대한 설명을 표시하는 [탐색 표시]를 사용하면 특정 콘솔 내에서 탐색할 수 있습니다. **Sites** 콘솔에서는 웹 사이트 수준을 탐색할 수 있습니다.
 
    현재 선택된 항목의 계층 구조 레벨을 나열하는 드롭다운 목록을 표시하려면 [탐색 표시] 텍스트를 클릭하면 됩니다. 해당 위치로 이동하려면 항목을 클릭하십시오.
 
-   ![확장된 탐색 표시 예](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+   ![확장된 탐색 표시의 예](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
 * **만들기** 단추
 
@@ -142,13 +142,13 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![보기 단추](/help/sites-cloud/authoring/assets/views-button.png)
 
-   열 보기, 카드 보기 및 목록 보기 간을 전환할 수 있습니다.목록 보기에는 보기 설정도 표시됩니다.
+   열 보기, 카드 보기 및 목록 보기 간에 전환할 수 있습니다. 목록 보기에서 보기 설정도 표시됩니다.
 
    ![보기](/help/sites-cloud/authoring/assets/view.png)
 
    >[!NOTE]
    >
-   >설정 **보기** 옵션은 목록 보기 **모드에서만 사용할 수 있습니다** .
+   >**보기 설정** 옵션은 **목록 보기** 모드에서만 사용할 수 있습니다.
 
 ## 도움말 액세스 {#accessing-help}
 
@@ -184,7 +184,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
    * **개발자 리소스** - 개발자 리소스 및 다운로드
    >[!NOTE]
    >
-   >콘솔에서 언제든지 핫키(물음표)를 사용하여 사용할 수 있는 단축키 `?` 개요를 볼 수 있습니다.
+   >콘솔에서 있을 때에는 핫키 `?`(물음표)를 사용하여 사용 가능한 단축키 개요를 언제든지 볼 수 있습니다.
    >
    >모든 키보드 단축키에 대한 개요는 다음 문서를 참조하십시오.
    >
@@ -198,15 +198,15 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 * 현재 콘솔
 * 현재 컨텍스트
-* Whether you are in [selection mode](#viewing-and-selecting-resources)
+* [선택 모드](#viewing-and-selecting-resources)인지 여부
 
 도구 모음에서 사용 가능한 작업은 선택한 특정 항목에서 수행할 수 있는 작업을 반영하도록 변경됩니다.
 
 [리소스 선택 방법](#viewing-and-selecting-resources)은 보기에 따라 다릅니다.
 
-일부 창은 공간이 제한되어 있으므로 도구 모음이 사용할 수 있는 공간보다 바로 길어질 수 있습니다. 이 경우추가 옵션이 표시됩니다. 줄임표(세 점 또는 **...**)를 클릭하거나 탭하면 나머지 작업을 모두 포함하는 드롭다운 선택기가 열립니다. 예를 들어 **사이트** 콘솔에서 페이지를 선택하면 다음이 수행됩니다.
+일부 창은 공간이 제한되어 있으므로 도구 모음이 사용할 수 있는 공간보다 바로 길어질 수 있습니다. 이 경우 추가 옵션이 표시됩니다. 생략 부호(세 점 또는 **...**)를 클릭하거나 탭하면 나머지 작업을 모두 포함하는 드롭다운 선택기가 열립니다. 예를 들어 **사이트** 콘솔에서 페이지를 선택하면 다음이 수행됩니다.
 
-![추가 옵션](/help/sites-cloud/authoring/assets/additional-options.png)
+![추가적인 옵션](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
 >
@@ -216,15 +216,15 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 [카드 보기](#card-view)에서는 특정 작업을 빠른 작업 아이콘으로 사용할 수 있을 뿐 아니라 도구 모음에 표시할 수도 있습니다. 빠른 작업 아이콘은 한 번에 단일 항목에 사용할 수 있으며 사전 선택할 필요가 없습니다.
 
-빠른 작업은 (데스크톱 장치) 리소스 카드 위에 마우스를 올려 놓으면 표시됩니다. 사용 가능한 빠른 작업은 콘솔 및 컨텍스트에 따라 달라질 수 있습니다. 예를 들어, **사이트** 콘솔에서 페이지에 대한 빠른 작업은 다음과 같습니다.
+빠른 작업은(데스크톱 장치) 리소스 카드 위에 마우스를 올려 놓으면 표시됩니다. 사용 가능한 빠른 작업은 콘솔 및 컨텍스트에 따라 달라질 수 있습니다. 예를 들어, **사이트** 콘솔에서 페이지에 대한 빠른 작업은 다음과 같습니다.
 
-![추가 옵션](/help/sites-cloud/authoring/assets/quick-actions.png)
+![추가적인 옵션](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 ## 리소스 보기 및 선택 {#viewing-and-selecting-resources}
 
 보기, 탐색 및 선택은 모든 보기에서 개념적으로는 같지만 사용 중인 보기에 따라 처리 방식이 약간 다릅니다.
 
-사용 가능한 보기 중 하나에서 (추가 작업을 위해) 리소스를 보고, 탐색하며 선택할 수 있습니다. 각 보기는 오른쪽 상단의 아이콘으로 선택할 수 있습니다.
+사용 가능한 보기 중 하나에서(추가 작업을 위해) 리소스를 보고, 탐색하며 선택할 수 있습니다. 각 보기는 오른쪽 상단의 아이콘으로 선택할 수 있습니다.
 
 * [열 보기 ](#column-view)
 * [카드 보기](#card-view)
@@ -240,16 +240,16 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 | 보기 | 터치 선택 | 데스크탑 선택 | 터치 선택 취소 | 데스크탑 선택 취소 |
 |---|---|---|---|---|
-| 열 | 축소판을 누릅니다 | 축소판 클릭 | 축소판을 누릅니다 | 축소판 클릭 |
-| 카드 | 카드를 길게 누릅니다 | 마우스를 위에 놓고 확인 표시 빠른 작업 사용 | 카드를 누릅니다 | 카드를 클릭합니다. |
-| 목록 | 축소판을 누릅니다 | 축소판 클릭 | 축소판을 누릅니다 | 축소판 클릭 |
+| 열 | 썸네일 탭 | 썸네일 클릭 | 썸네일 탭 | 썸네일 클릭 |
+| 카드 | 카드를 길게 탭 | 마우스를 위에 놓고 확인 표시 빠른 작업 사용 | 카드 탭 | 카드 클릭 |
+| 목록 | 썸네일 탭 | 썸네일 클릭 | 썸네일 탭 | 썸네일 클릭 |
 
 #### 모두 선택 {#select-all}
 
 콘솔의 오른쪽 상단에 있는 **모두 선택** 옵션을 클릭하여 보기에서 모든 항목을 선택할 수 있습니다.
 
 * **카드 보기**&#x200B;에서 모든 카드가 선택됩니다.
-* In **List View** all items in the list are selected.
+* **목록 보기**&#x200B;에서는 목록의 모든 항목이 선택됩니다.
 * **열 보기**&#x200B;에서 맨 왼쪽 열에 있는 모든 항목이 선택됩니다.
 
 ![모두 선택](/help/sites-cloud/authoring/assets/select-all.png)
@@ -258,14 +258,14 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 모든 항목을 선택하면 선택한 항목의 수가 도구 모음의 오른쪽 상단에 표시됩니다.
 
-다음을 통해 모든 항목을 선택 취소하고 선택 모드를 종료할 수 있습니다.
+모든 항목을 선택 취소하고 다음 방법으로 선택 모드를 종료할 수 있습니다.
 
-* Clicking or tapping the **X** next to the count
-* Esc **키** 사용
+* 카운트 옆에 있는 **X**&#x200B;를 클릭하거나 탭합니다.
+* **Esc** 키를 사용합니다.
 
-![모두 선택 취소](/help/sites-cloud/authoring/assets/deselect-all.png)
+![전체 선택 취소 ](/help/sites-cloud/authoring/assets/deselect-all.png)
 
-데스크톱 장치를 사용하는 경우 키보드에서 Esc 키를 눌러 모든 항목을 선택 취소할 수 있습니다.
+데스크탑 장치를 사용하는 경우 모든 보기에서 키보드에서 Esc 키를 눌러 모든 항목을 선택 취소할 수 있습니다.
 
 #### 선택 예 {#selecting-example}
 
@@ -275,7 +275,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 1. 리소스를 선택하면 상단 헤더에는 현재 선택한 리소스에 적용할 수 있는 작업에 대한 액세스를 제공하는 [작업 도구 모음](#actions-toolbar)이 표시됩니다.
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   선택 모드를 종료하려면 오른쪽 상단에서 **X**&#x200B;를 선택하거나 **Esc** 키를 사용하십시오.
 
 ### 열 보기 {#column-view}
 
@@ -285,15 +285,15 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 맨 왼쪽 열의 리소스를 선택하면 오른쪽 열에 하위 리소스가 표시됩니다. 오른쪽 열에서 리소스를 선택하면 오른쪽의 다른 열에 하위 리소스가 표시됩니다.
 
-* 리소스 이름 또는 리소스 이름 오른쪽에 있는 V자형을 탭하거나 클릭하여 트리에서 위아래로 탐색할 수 있습니다.
+* 리소스 이름 또는 리소스 이름 오른쪽에 있는 V자형 화살표를 탭하거나 클릭하여 트리에서 위아래로 탐색할 수 있습니다.
 
-   * 탭하거나 클릭하면 리소스 이름 및 V자형이 강조 표시됩니다.
+   * 탭하거나 클릭하면 리소스 이름 및 V자형 화살표가 강조 표시됩니다.
    * 클릭하거나 탭한 리소스의 하위 항목은 클릭하거나 탭한 리소스의 오른쪽에 있는 열에 표시됩니다.
    * 하위 항목이 없는 리소스 이름을 탭하거나 클릭하는 경우, 마지막 열에 해당 세부 정보가 표시됩니다.
 
 * 썸네일을 탭하거나 클릭하면 리소스가 선택됩니다.
 
-   * 이 옵션을 선택하면 축소판에서 확인 표시가 오버레이되고 리소스 이름도 강조 표시됩니다.
+   * 선택하면 확인 표시가 썸네일에 오버레이되고 리소스 이름도 강조 표시됩니다.
    * 선택한 리소스의 세부 정보가 마지막 열에 표시됩니다.
    * 작업 도구 모음을 사용할 수 있습니다.
    [열 보기]에서 페이지를 선택하면 선택한 페이지가 다음 세부 정보와 함께 마지막 열에 표시됩니다.
@@ -333,7 +333,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 * 리소스 이름을 탭/클릭하여 트리를 탐색하고 [헤더에서 [탐색 표시]](#the-header)를 사용하여 백업할 수 있습니다.
 * 목록에서 모든 항목을 간편하게 선택하려면 목록의 왼쪽 상단에 있는 확인란을 사용합니다.
 
-   ![모두 목록 보기](/help/sites-cloud/authoring/assets/list-view-select-all.png)
+   ![목록 보기 모두 선택](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
    * 목록의 모든 항목을 선택하면 이 확인란이 선택된 것으로 표시됩니다.
 
@@ -356,27 +356,27 @@ You can close the global navigation panel by clicking or tapping **Close** to re
    * **페이지 시간**
 
       ![열 선택](/help/sites-cloud/authoring/assets/select-columns.png)
-   By default the **Name** column is shown, which makes up part of the URL for the page. 어떤 경우에는 작성자가 다른 언어로 된 페이지에 액세스해야 하며 작성자가 페이지의 언어를 모르는 경우 페이지 이름(일반적으로 변경되지 않음)을 확인하는 것이 도움이 될 수 있습니다.
+   기본적으로 페이지 URL 부분을 구성하는 **이름** 열이 표시됩니다. 일부 경우에는 작성자가 다른 언어로 된 페이지에 액세스해야 하며 작성자가 페이지의 언어를 모르는 경우 페이지 이름(일반적으로 변경되지 않음)을 확인하면 도움이 될 수 있습니다.
 
 * 목록에서 각 항목의 맨 오른쪽에 있는 점선 세로 막대를 사용하여 항목 순서를 변경합니다.
 
    >[!NOTE]
    >
-   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+   >순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
 
    ![열 순서](/help/sites-cloud/authoring/assets/column-order.png)
 
    수직 선택 막대를 클릭하거나 탭하고 항목을 목록의 새 위치로 드래그합니다.
 
-   ![주문 목록](/help/sites-cloud/authoring/assets/order-list.png)
+   ![목록 순서 지정](/help/sites-cloud/authoring/assets/order-list.png)
 
 ## 레일 선택기 {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+**레일 선택기**&#x200B;는 창 왼쪽 상단에서 사용할 수 있으며 현재 콘솔에 따라 옵션을 표시합니다.
 
-![레일 선택기 확장](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
+![확장된 레일 선택기](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-For example, in **Sites** you can select content only (the default), content tree, the timeline, references, or filter side panel.
+예를 들어 **Sites**&#x200B;에서 컨텐츠 전용(기본값), 컨텐츠 트리, 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
 
 컨텐츠만을 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
 
@@ -400,7 +400,7 @@ For example, in **Sites** you can select content only (the default), content tre
 
 ### 타임라인 {#timeline}
 
-타임라인을 사용하여 선택한 리소스에서 발생한 이벤트를 보거나 시작할 수 있습니다. 타임라인 열을 열려면 레일 선택기를 사용합니다.
+타임라인을 사용하면 선택한 리소스에서 발생한 이벤트를 보거나 시작할 수 있습니다. 타임라인 열을 열려면 레일 선택기를 사용합니다.
 
 ![타임라인 트리](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -416,7 +416,7 @@ For example, in **Sites** you can select content only (the default), content tre
       * [론치](/help/sites-cloud/authoring/launches/overview.md)
       * [버전](/help/sites-cloud/authoring/features/page-versions.md)
       * [워크플로우](/help/sites-cloud/authoring/workflows/overview.md)
-         * With the exception of transient workflows as no history information is saved for these <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+         * 내역 정보가 저장되지 않는 임시 워크플로우 제외 <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * 모두 표시
 
 * 선택한 항목에 대한 댓글 추가/보기 이벤트 목록 맨 아래쪽에 **주석** 상자가 표시됩니다. 댓글을 입력(입력 후 Return 키)하면 댓글이 등록되고 이 댓글은 **댓글** 또는 **모두 표시**&#x200B;를 선택하면 표시됩니다.
@@ -426,7 +426,7 @@ For example, in **Sites** you can select content only (the default), content tre
    * [버전 저장](/help/sites-cloud/authoring/features/page-versions.md)
    * [워크플로우 시작](/help/sites-cloud/authoring/workflows/applying.md)
 
-These options accessible via the chevron next to the **Comment** field.
+이러한 옵션은 **댓글** 필드 옆에 있는 V자형 화살표를 통해 액세스할 수 있습니다.
 
 ![댓글 필드](/help/sites-cloud/authoring/assets/comments.png)
 
@@ -439,8 +439,8 @@ These options accessible via the chevron next to the **Comment** field.
 * 언어 복사<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
 * 컨텐츠 참조:
 
-   * 다른 페이지에서 선택한 페이지로 연결되는 링크
-   * 참조 구성 요소로 선택한 페이지에서 빌려 온 컨텐츠
+   * 다른 페이지에서 선택한 페이지로의 링크
+   * 참조 구성 요소가 선택한 페이지에서 빌린 컨텐츠 및/또는 선택한 페이지에 빌려준 컨텐츠
 
 ![참조 예](/help/sites-cloud/authoring/assets/references-example.png)
 
