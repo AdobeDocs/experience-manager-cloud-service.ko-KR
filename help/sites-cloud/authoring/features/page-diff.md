@@ -1,7 +1,7 @@
 ---
 title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 서로 다른 점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!CAUTION]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>이 기능을 사용하려면 사용자에게 **노드에 대한**&#x200B;수정/만들기/삭제`/content/versionhistory` 권한이 있어야 합니다.
 >
 >이 기능에 대한 기술적인 세부 사항은 개발 및 페이지 차이를 참조하십시오. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
 
@@ -25,10 +25,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 이러한 병렬 비교에서 비교할 수 있는 내용은 다음과 같습니다.
 
-* [버전](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - 현재 상태가 있는 페이지의 이전 버전
-* Live Copies - Live Copy with its Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
-* [론치](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - 해당 소스로 시작
-* Language Copies - A page before and after (re-)translation <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [버전](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - 페이지의 이전 버전과 현재 상태
+* Live Copy - Live Copy와 블루프린트 <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [론치](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - 론치와 소스
+* 언어 사본 - (재)번역 전후 페이지 <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
 
 해당 컨텍스트 내에서 비교를 시작하는 방법에 대한 각 주제를 참조하십시오.
 
@@ -59,7 +59,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 **HTML 변경 사항**
 
 * 진한 녹색 - 추가된 HTML
-* 빨간색 - HTML 제거됨
+* 빨간색 - 제거된 HTML
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->브라우저 너비가 전체 화면 보기에서 두 페이지 이름을 모두 수용할 수 없는 경우 표시되는 페이지의 이름만 표시되고 다른 이름은 줄임표 뒤에 사용할 수 있습니다.
+>브라우저 너비가 전체 화면 보기에서 두 페이지 이름을 모두 수용할 수 없는 경우 표시되는 페이지의 이름만 표시되고 다른 이름은 생략 부호 뒤에 사용할 수 있습니다.
 
 전체 화면 종료 아이콘을 클릭하여 전체 화면 보기를 닫을 수도 있습니다.
 
@@ -91,7 +91,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * 버전과 론치를 비교할 때, 탐색 표시, 메뉴, 제품 목록 또는 로고(컨텐츠를 렌더링하기 위해 사이트 구조에 의존하는 구성 요소)와 같은 동적 구성 요소는 고려되지 않습니다.
 * 버전 비교 시 액세스 제어 정책 및 Live Copy 관계는 다시 만들어지지 않습니다.
-* alt, title 또는 src 속성을 수정하는 등 이미지를 변경하면 변경된 대로 파란색으로 강조 표시됩니다. 그러나 일부 경우에는 이미지에 src 속성의 Base64 표현이 있고 두 이미지가 동일하게 보여도 src 속성이 달라서 다르게 표시됩니다.
+* alt, title 또는 src 속성의 수정과 같이 이미지에 변경 사항이 생기면 변경되는 대로 파란색으로 강조 표시됩니다. 그러나 일부 경우에는 이미지에 src 속성의 Base64 표현이 있으며, 두 이미지가 동일하게 보이는데도 비교 시에는 src 특성 비교로 인해 다르게 표시됩니다.
 * 비교 시 이미지 회전은 감지할 수 없습니다.
 * 페이지가 이동되면 이동 전에 만든 버전으로 더 이상 다른 작업을 수행할 수 없습니다.
    * 차이에 문제가 발생한 경우 페이지에 대한 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)에서 페이지가 이동되었는지 확인합니다.
