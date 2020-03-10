@@ -1,7 +1,7 @@
 ---
 title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -32,10 +32,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 웹 디자이너는 구성 요소의 다른 시각적 변형을 만듭니다.
 1. HTML 개발자에게는 구현을 위해 구성 요소의 HTML 출력과 원하는 시각적 변형이 제공됩니다.
-1. HTML 개발자는 각 시각적 변형에 해당하고 구성 요소를 래핑하는 요소에 삽입해야 하는 CSS 클래스를 정의합니다.
-1. HTML 개발자는 정의된 대로 표시되도록 각 시각적 변형에 대해 해당 CSS 코드(및 선택적으로 JS 코드)를 구현합니다.
+1. HTML 개발자는 각 시각적 변형에 해당하며 구성 요소를 래핑하는 요소에 삽입해야 하는 CSS 클래스를 정의합니다.
+1. HTML 개발자는 정의된 대로 표시되도록 각 시각적 변형에 해당하는 CSS 코드(및 선택적으로 JS 코드)를 구현합니다.
 1. AEM 개발자는 제공된 CSS(및 선택적 JS)를 클라이언트 라이브러리에 배치하고 배포합니다. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
-1. AEM 개발자 또는 템플릿 작성자는 페이지 템플릿을 구성하고, 스타일이 지정된 각 구성 요소의 정책을 편집하고, 정의된 CSS 클래스를 추가하고, 각 스타일에 사용자에게 친숙한 이름을 지정하고, 결합할 수 있는 스타일을 지정합니다.
+1. AEM 개발자 또는 템플릿 작성자는 페이지 템플릿을 구성하고, 스타일이 지정된 각 구성 요소의 정책을 편집하며, 정의된 CSS 클래스를 추가하고, 각 스타일에 대해 사용자에게 익숙한 이름을 지정하고, 결합할 수 있는 스타일을 지정합니다.
 1. 그러면 AEM 페이지 작성자는 구성 요소 도구 모음의 스타일 메뉴를 통해 페이지 편집기에서 디자인된 스타일을 선택할 수 있습니다.
 
 AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 CSS 및 Javascript의 모든 개발을 AEM 없이도 수행할 수 있습니다.
@@ -48,7 +48,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ## 사용 {#use}
 
-이 기능을 이해하기 위해 구성 요소에 대해 스타일을 만들어야 합니다. 다음 섹션 [컨텐츠 작성자](#as-a-content-author) 및 [템플릿 작성자는](#as-a-template-author) 구성 요소에 이미 스타일이 구성되어 있다고 가정할 때 스타일 시스템을 사용하여 스타일 시스템의 기능을 사용하는 방법에 대해 설명합니다.
+이 기능을 이해하기 위해 구성 요소에 대해 스타일을 만들어야 합니다. 다음의 [컨텐츠 작성자](#as-a-content-author) 섹션과 [템플릿 작성자](#as-a-template-author) 섹션에서는 구성 요소에 이미 스타일이 구성되어 있다고 가정할 때 스타일 시스템을 사용하여 스타일 시스템의 기능을 사용하는 방법에 대해 설명합니다.
 
 사용자 고유의 구성 요소에 대해 스타일 시스템을 사용하려면 다음을 수행하십시오.
 
@@ -59,25 +59,25 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 ### 컨텐츠 작성자 {#as-a-content-author}
 
 1. 스타일이 구성된 구성 요소가 있는 페이지를 편집합니다.
-1. 목록 구성 요소와 같이 스타일이 구성된 구성 **요소를** 여기서 예로 선택합니다.
+1. 여기의 예로서 **목록** 구성 요소와 같이 스타일이 구성된 구성 요소를 선택합니다.
 
    ![작성 스타일](/help/sites-cloud/authoring/assets/style-system-author.png)
 
 1. **목록** 구성 요소의 도구 모음에서 **스타일** 단추를 탭하거나 클릭하여 스타일 메뉴를 열고 구성 요소의 모양을 변경합니다.
 
-   ![Authoring styles by selecting](/help/sites-cloud/authoring/assets/style-system-author-select.png)
+   ![선택하여 스타일 작성](/help/sites-cloud/authoring/assets/style-system-author-select.png)
 
    >[!NOTE]
    >
-   >In this example, the **Layout** styles (**Block** and **Grid**) are mutually exclusive, while the **Display** options (**Image** or **Date**) can be combined. 이 내용은 ](#as-a-template-author)템플릿 작성자로서 템플릿에 구성[할 수 있습니다.
+   >이 예제에서 **레이아웃** 스타일들(**블록** 및 **그리드**)는 함께 사용할 수 없지만, **표시** 옵션들(**이미지** 또는 **날짜**)는 함께 결합할 수 있습니다. 이 내용은 ](#as-a-template-author)템플릿 작성자로서 템플릿에 구성[할 수 있습니다.
 
 ### 템플릿 작성자 {#as-a-template-author}
 
-1. 스타일을 구성할 컨텐츠 페이지를 편집하는 동안 페이지 정보 -> 템플릿 편집을 통해 페이지 **템플릿을 편집합니다**.
+1. 스타일을 구성할 컨텐츠 페이지를 편집하는 동안 **페이지 정보 -> 템플릿 편집**&#x200B;을 통해 페이지 템플릿을 편집합니다.
 
    ![템플릿 편집](/help/sites-cloud/authoring/assets/style-system-template.png)
 
-1. 구성 요소의 정책 단추를 탭하거나 클릭하여 목록 구성 **요소와 같은** 스타일을 구성할 구성 **요소의** 정책을편집합니다.
+1. 구성 요소의 **정책** 단추를 탭하거나 클릭하여 **목록** 구성 요소와 같은 스타일을 구성할 구성 요소의 정책을 편집합니다.
 
    ![템플릿 구성 요소 정책](/help/sites-cloud/authoring/assets/style-system-template-policy.png)
 
@@ -93,7 +93,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as Client Libraries in order to work. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(필요한 Javascript 포함)는 클라이언트 라이브러리로 배포해야 적용됩니다. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
 
 ## 설정 {#setup}
 
@@ -103,7 +103,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 >
 >다음 단계에 따라 사용자 지정 구성 요소에 대해 스타일 시스템을 활성화하거나 해당 기능을 활용하도록 버전 1 코어 구성 요소를 확장합니다.
 
-구성 요소가 AEM의 스타일 시스템을 사용하고 디자인 대화 상자에 스타일 탭을 표시하도록 하려면 구성 요소 개발자가 다음 설정을 갖는 제품의 해당 탭을 구성 요소에 포함해야 합니다.
+구성 요소가 AEM의 스타일 시스템을 사용하고 디자인 대화 상자에 스타일 탭을 표시하도록 하려면 구성 요소 개발자가 다음 설정을 있는 제품의 해당 탭을 구성 요소에 포함해야 합니다.
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
@@ -114,7 +114,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 개발자는 `cq:styleElements` 문자열 배열 속성을 사용하여 구성 요소의 스타일에 대해 허용되는 요소 이름 목록을 구성할 수도 있습니다. 그러면 템플릿 작성자는 디자인 대화 상자의 정책 스타일 탭에서 각 스타일에 대해 설정할 요소 이름을 선택할 수도 있습니다. 다음은 래퍼 요소의 요소 이름을 설정합니다.
 
-This property is set on the `cq:Component` node. 예:
+이 속성은 `cq:Component` 노드에서 설정됩니다. 예:
 
 * `/apps/wknd/components/content/contentfragment@cq:styleElements=[div,section,span]`
 
@@ -124,11 +124,11 @@ This property is set on the `cq:Component` node. 예:
 >
 >1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
->1. Finally, the component&#39;s `cq:htmlTag`/ `cq:tagName` will be considered as a fallback value.
+>1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
 >
 
 
 
 스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 컨텐츠 조각 구성 요소와 같은 매우 일반적인 구성 요소에 추가적인 의미를 제공할 때 유용합니다.
 
-For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, etc.
+예를 들어 레이아웃 컨테이너에 `<main>`, `<aside>`, `<nav>` 등과 같은 의미 체계를 부여할 수 있습니다.
