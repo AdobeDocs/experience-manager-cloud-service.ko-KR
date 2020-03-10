@@ -1,7 +1,7 @@
 ---
 title: 페이지 컨텐츠 편집
 description: 페이지를 생성하면 컨텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->If your page and/or template has been appropriately set up, then you can use [responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md) when editing.
+>페이지 및/또는 템플릿이 적절하게 설정된 경우 편집할 때 [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)을 사용할 수 있습니다.
 
 >[!TIP]
 >
->When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+>**편집** 모드에서는 컨텐츠에 링크가 표시되지만 **액세스할 수 없습니다**. 컨텐츠의 링크를 사용하여 탐색하려면 [미리 보기 모드](#previewing-pages)를 사용하십시오.
 
 ## 페이지 도구 모음 {#page-toolbar}
 
@@ -58,9 +58,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **ContextHub**
 
-   ContextHub를 [엽니다](/help/sites-cloud/authoring/personalization/contexthub.md). [미리 보기 모드]에서만 사용 가능합니다.
+   [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)를 엽니다. [미리 보기 모드]에서만 사용 가능합니다.
 
-   ![컨텍스트 허브 단추](/help/sites-cloud/authoring/assets/context-hub.png)
+   ![Context Hub 단추](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **페이지 제목**
 
@@ -88,7 +88,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### 상태 알림 {#status-notification}
 
-If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+페이지가 [워크플로우](/help/sites-cloud/authoring/workflows/overview.md) 또는 다중 워크플로우의 일부인 경우 페이지를 편집할 때 화면 맨 위에 있는 알림 표시줄에 이 정보가 표시됩니다.
 
 ![워크플로우 알림](/help/sites-cloud/authoring/assets/editing-workflow-notification.png)
 
@@ -98,11 +98,11 @@ If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview
 
 알림은 페이지에 대해 실행 중인 워크플로우를 나열합니다. 사용자가 현재 워크플로우 단계에 참여 중인 경우 옵션은 [워크플로우 상태](/help/sites-cloud/authoring/workflows/participating.md)에 영향을 주며 워크플로우에 대한 자세한 정보는 다음과 같이 확인할 수 있습니다.
 
-* **완료** - 작업 **항목 완료 대화 상자를 엽니다**
-* **위임** - 작업 항목 **완료 대화 상자를 엽니다**
-* **세부 사항** 보기 - **워크플로우의 세부** 사항 창을 엽니다.
+* **완료** - **작업 항목 완료** 대화 상자를 엽니다.
+* **위임** - **작업 항목 완료** 대화 상자를 엽니다.
+* **세부 사항 보기** - 워크플로우의 **세부 사항** 창을 엽니다.
 
-Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-cloud/authoring/workflows/participating.md) from the Notification inbox.
+알림 표시줄을 통해 워크플로우 단계를 완료하고 위임하는 것은 알림 받은 편지함에서 [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)할 때와 같은 방식입니다.
 
 페이지에 여러 개의 워크플로우가 있는 경우 알림 오른쪽 끝에 화살표 단추와 함께 워크플로우 개수가 표시되어 워크플로우를 스크롤할 수 있습니다.
 
@@ -118,7 +118,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 * 기존 구성 요소를 이동할 때:
 
-   ![페이지에서 기존 구성 요소를 이동할 때 자리 표시자](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+   ![페이지에서 기존 구성 요소를 이동할 때의 자리 표시자](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## 구성 요소 삽입 {#inserting-a-component}
 
@@ -127,7 +127,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. [구성 요소 자리 표시자](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다:
 
 1. 페이지가 [**편집&#x200B;**모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
-1. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 엽니다 .
+1. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 엽니다.
 1. 필요한 구성 요소를 [필요한 위치](#component-placeholder)로 드래그합니다.
 1. 구성 요소를 [편집합니다.](#edit-content)
 
@@ -146,7 +146,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
       ![구성 요소 삽입](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * If you are on a desktop device you can double-click on the **Drag components here** box.
+   * 데스크탑 장치를 사용하는 경우 **구성 요소를 여기로 드래그하십시오.** 상자를 두 번 클릭합니다.
 
    * 필수 구성 요소를 선택할 수 있는 **새 구성 요소 삽입** 대화 상자가 열립니다.
 
@@ -156,7 +156,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 ### 자산 브라우저를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-assets-browser}
 
-[자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다 . 이렇게 하면 적절한 유형의 새 구성 요소가 자동으로 만들어집니다(자산이 들어 있음).
+[자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 적절한 유형의 새 구성 요소가 자동으로 만들어집니다(자산이 들어 있음).
 
 이 동작은 설치에 대해 구성할 수 있습니다. 자세한 내용은 단락 시스템 구성 및 자산 드래그를 통한 구성 요소 인스턴스 생성을 참조하십시오. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -188,13 +188,13 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 * **편집**
 
-   [구성 요소 유형에](/help/sites-cloud/authoring/fundamentals/components.md) 따라 구성 요소의 컨텐츠를 [편집할 수 있습니다](#edit-content). 종종 도구 모음이 제공됩니다.
+   [편집 구성 요소 유형에 따라](/help/sites-cloud/authoring/fundamentals/components.md) [구성 요소의 컨텐츠를 편집](#edit-content)할 수 있게 됩니다. 종종 도구 모음이 제공됩니다.
 
    ![편집 단추](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **구성**
 
-   [구성 요소 유형에](/help/sites-cloud/authoring/fundamentals/components.md) 따라 구성 요소의 속성을 편집하고 구성할 수 있습니다. 종종 대화 상자가 열립니다.
+   [구성 요소 유형에 따라](/help/sites-cloud/authoring/fundamentals/components.md) 구성 요소의 속성을 편집 및 구성할 수 있게 됩니다. 종종 대화 상자가 열립니다.
 
    ![구성 단추](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
@@ -243,7 +243,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 * **상위**
 
-   이렇게 하면 선택한 구성 요소의 상위 구성 요소를 선택할 수 있습니다.
+   선택한 구성 요소의 상위 구성 요소를 선택할 수 있습니다.
 
    ![상위 단추](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
@@ -257,13 +257,13 @@ Completing and delegating workflow steps via the notification bar works as it do
 
    이 작업에서는 선택한 구성 요소에서 새 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)을 생성하거나 기존 경험 조각에 추가할 수 있습니다.
 
-   ![경험 조각으로 변환 단추](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+   ![경험 조각 변형으로 변환 단추](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## 컨텐츠 편집 {#edit-content}
 
 구성 요소에서 컨텐츠를 추가 및/또는 편집하는 방법에는 두 가지가 있습니다.
 
-* [편집하려면 구성 요소 대화 상자](#component-edit-dialog)를 엽니다 .
+* [편집하려면 구성 요소 대화 상자](#component-edit-dialog)를 엽니다.
 * 자산 브라우저에서 [자산을 끌어다 놓아](#drag-and-drop-assets-into-component) 컨텐츠를 바로 추가합니다.
 
 ### 구성 요소 편집 대화 상자 {#component-edit-dialog}
@@ -284,7 +284,7 @@ Completing and delegating workflow steps via the notification bar works as it do
    >
    >빈 이미지 구성 요소에서는 편집기가 작동하지 않습니다.
    >
-   >이미지를 편집하려면 먼저 구성 요소에 이미지를 드래그하거나 업로드해야 합니다.
+   >편집을 시작할 수 있으려면 먼저 이미지를 구성 요소에 드래그하거나 업로드해야 합니다.
 
 * 이미지 구성 요소 - 전체 화면
 
@@ -292,13 +292,13 @@ Completing and delegating workflow steps via the notification bar works as it do
 
    ![이미지 구성 요소의 전체 화면 모드](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
-* 두 개 이상의 기본 구성 요소로 구성된 구성 요소는 먼저 원하는 편집 옵션 세트를 확인하도록 요청합니다.
+* 두 개 이상의 기본 구성 요소에서 만들어진 구성 요소는 우선 원하는 편집 옵션 세트를 확인할 것을 사용자에게 요구합니다.
 
 ### 자산을 구성 요소로 끌어다 놓기 {#drag-and-drop-assets-into-component}
 
-특정 구성 요소 유형(예: 이미지)의 경우 자산 브라우저의 자산을 구성 요소로 직접 드래그하여 놓아 컨텐츠를 업데이트할 수 있습니다.
+특정 구성 요소 유형(이미지 등)의 경우 컨텐츠를 업데이트하려면 자산 브라우저의 자산을 구성 요소에 바로 드래그하여 놓으면 됩니다.
 
-## Edit Content in Full Screen Mode {#edit-content-full-screen-mode}
+## 전체 화면 모드로 컨텐츠 편집 {#edit-content-full-screen-mode}
 
 모든 구성 요소에 대해 다음 아이콘으로 전체 화면 모드에 액세스(및 액세스 종료)할 수 있습니다.
 
@@ -310,7 +310,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 >[!NOTE]
 >
->일부 구성 요소의 경우 전체 화면 모드는 기본 즉석 편집기보다 더 많은 옵션을 사용할 수 있습니다.
+>일부 구성 요소의 경우, 전체 화면 모드는 기본 즉석 편집기보다 사용할 수 있는 옵션이 더 많습니다.
 
 ## 구성 요소 이동 {#moving-a-component}
 
@@ -331,11 +331,11 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 구성 요소를 조정하기 위해 편집에서 [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md)로 반복적으로 전환하는 대신 해당 구성 요소의 레이아웃을 변경하려는 구성 요소에 대해 **레이아웃** 작업을 선택하면 [편집 모드]를 벗어나지 않고 시간을 절약할 수 있습니다.
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component&#39;s toolbar.
+1. Sites 콘솔의 **편집** 모드에 있는 경우 구성 요소를 선택하면 구성 요소의 도구 모음이 표시됩니다.
 
    ![페이지 구성 요소의 구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   **레이아웃** 작업을 클릭하거나 탭하여 구성 요소의 레이아웃을 조정합니다.
 
    ![구성 요소 도구 모음의 레이아웃 단추](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
@@ -346,15 +346,15 @@ Completing and delegating workflow steps via the notification bar works as it do
    * 표준 편집 작업 대신 레이아웃 작업이 구성 요소 도구 모음에 표시됩니다.
    ![레이아웃 모드의 구성 요소](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+   [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)에서처럼 구성 요소의 레이아웃을 수정할 수 있습니다.
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. 구성 요소의 도구 모음이 일반적인 편집 상태로 돌아갑니다.
+1. 필요한 레이아웃 변경을 만든 후 구성 요소 작업 메뉴에서 **닫기** 단추를 클릭하여 구성 요소 레이아웃 수정을 중지할 수 있습니다. 구성 요소의 도구 모음이 일반적인 편집 상태로 돌아갑니다.
 
    ![페이지 구성 요소의 구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-layout-exit.png)
 
 >[!TIP]
 >
->레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어, 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라지면서 레이아웃 도구 모음이 아닌 표준 편집 도구 모음이 새로 선택한 구성 요소와 크기 조정 핸들에 대해 표시됩니다.
+>레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어, 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라질 뿐 아니라 새롭게 선택한 구성 요소와 크기 조정 핸들에 대해 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시됩니다.
 >
 >여러 구성 요소에 영향을 미치는 페이지의 전체 레이아웃을 편집해야 하는 경우 [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md)로 전환하십시오.
 
@@ -365,9 +365,9 @@ Completing and delegating workflow steps via the notification bar works as it do
 * 다중 사이트 관리 <!--[Multi site management](/help/sites-administering/msm.md)-->
 * [Launch](/help/sites-cloud/authoring/launches/overview.md)(live copy을 기반으로 할 때).
 
-상속을 취소(그런 다음 다시 활성화)할 수 있습니다. 구성 요소에 따라 구성 요소가 live copy 또는 launch(live copy 기반)의 일부인 페이지에 있는 경우 구성 요소 도구 모음에서 사용할 수 있습니다.
+상속을 취소(그런 다음 다시 활성화)할 수 있습니다. 구성 요소에 따라 구성 요소가 Live Copy 또는 론치(Live Copy 기반)의 일부인 페이지에 있는 경우 구성 요소 도구 모음에서 상속을 사용할 수 있습니다.
 
-![상속 관계를 표시하는 구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-component-toolbar-inheritance.png)
+![상속 관계를 보여주는 구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-component-toolbar-inheritance.png)
 
 예:
 
@@ -375,17 +375,17 @@ Completing and delegating workflow steps via the notification bar works as it do
 
    ![상속 취소 단추](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
-* 상속을 다시 활성화(상속이 이미 취소된 경우)
+* 상속 재활성화(상속이 이미 취소된 경우)
 
-   ![상속 다시 활성화 단추](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+   ![상속 재활성화 단추](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
-* 블루프린트 또는 Live Copy 소스에서도 롤아웃 작업을 사용할 수 있습니다.
+* 롤라웃 작업은 블루프린트 또는 Live Copy 소스에서도 사용 가능합니다.
 
    ![롤아웃 단추](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## 페이지 템플릿 편집 {#editing-the-page-template}
 
-[페이지 정보] 메뉴에서 [템플릿 편집]을 선택하여 [템플릿 편집기로](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) 쉽게 ****[전환할](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)수있습니다.
+[페이지 정보 메뉴](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)에서 **템플릿 편집**&#x200B;을 선택하면 [템플릿 편집기](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors)로 쉽게 전환할 수 있습니다.
 
 [열 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) 페이지를 선택할 때 페이지가 기반으로 하는 템플릿을 쉽게 확인할 수 있습니다.
 
@@ -398,7 +398,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 예:
 
-![표시되는 Live Copy 상태 예](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
+![표시되는 Live Copy 상태의 예](/help/sites-cloud/authoring/assets/editing-live-copy-status.png)
 
 ## 주석 추가 {#adding-annotations}
 
@@ -415,7 +415,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 >
 >* 컨텐츠에 있는 링크는 볼 수는 있지만 편집 모드에서 액세스할 수는 없습니다.
 >* 링크를 사용하여 탐색하려는 경우 미리 보기 옵션 중 하나를 사용합니다.
->* Use the [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
+>* [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M`을 사용하여 미리 보기와 마지막에 선택한 모드 간에 전환할 수 있습니다.
 
 
 >[!NOTE]
@@ -471,7 +471,7 @@ AEM에서는 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 
 
 ## 페이지 잠금 해제 {#unlocking-a-page}
 
-Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked the lock options are replaced by unlock actions.
+페이지 잠금을 해제하는 것은 [페이지 잠금](#locking-a-page)과 매우 유사해서, 페이지가 잠기면 잠금 옵션이 잠금 해제 동작으로 대체됩니다.
 
 [페이지 정보] 메뉴에 **잠금 해제**&#x200B;가 옵션으로 표시되며 [사이트 콘솔]의 잠금 아이콘은 **잠금 해제** 아이콘으로 바뀝니다.
 
@@ -488,14 +488,14 @@ Unlocking a page is very similar to [locking the page](#locking-a-page). Once th
 
 ## 페이지 편집 실행 취소 및 재실행 {#undoing-and-redoing-page-edits}
 
-다음 아이콘을 사용하여 작업을 실행 취소하거나 재실행할 수 있습니다. 이 아이콘들은 경우에 따라 도구 모음에도 표시됩니다.
+다음 아이콘을 사용하여 작업을 실행 취소하거나 재실행할 수 있습니다. 이 아이콘들은 때에 따라 도구 모음에도 표시됩니다.
 
-![실행 취소 및 다시 실행 단추](/help/sites-cloud/authoring/assets/redo.png)
+![실행 취소 및 재실행 단추](/help/sites-cloud/authoring/assets/redo.png)
 
 >[!TIP]
 >
->* The [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` is also available to undo page edit actions.
->* The keyboard shortcut `Ctrl-Y` is also available to redo page edit actions.
+>* [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z`를 사용하여 페이지 편집 작업을 취소할 수 있습니다.
+>* 또한 키보드 단축키 `Ctrl-Y`를 사용하여 페이지 편집 작업을 재실행할 수 있습니다.
 
 
 >[!NOTE]
@@ -508,9 +508,9 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 
 컨텐츠 페이지의 요소(예: 텍스트 구성 요소 등)가 선택된 경우 명령을 실행 취소 및 다시 실행하면 선택한 항목에 적용됩니다.
 
-실행 취소 및 재실행 명령의 동작은 다른 소프트웨어의 동작과 유사합니다.컨텐츠를 결정할 때 명령을 사용하여 웹 페이지의 최신 상태를 복원합니다. 예를 들어 텍스트 단락을 페이지의 다른 위치로 이동한 후 실행 취소 명령을 사용하여 단락을 원래 위치로 되돌릴 수 있습니다. 그런 다음 이전 위치가 더 낫다고 판단되는 경우 다시 실행 명령을 사용하여 &quot;실행 취소를 실행 취소&quot;하십시오.
+실행 취소 및 재실행 명령의 동작은 다른 소프트웨어의 경우와 비슷합니다. 이러한 명령을 사용하여 웹 페이지의 컨텐츠를 편집하면서 최근 상태로 복원할 수 있습니다. 예를 들어 텍스트 단락을 페이지의 다른 위치로 이동한 후 실행 취소 명령을 사용하여 단락을 원래 위치로 되돌릴 수 있습니다. 그런 다음 이전 위치가 더 낫다고 판단되는 경우 다시 실행 명령을 사용하여 &quot;실행 취소를 실행 취소&quot;하십시오.
 
-예를 들어 다음을 수행할 수 있습니다.
+예를 들어 다음 작업을 수행할 수 있습니다.
 
 * 실행 취소를 사용한 후 페이지를 편집하지 않은 경우 작업을 재실행합니다.
 * 최대 20개의 편집 작업 실행을 취소합니다(기본 설정).
