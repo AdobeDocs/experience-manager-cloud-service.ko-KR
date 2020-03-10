@@ -1,7 +1,7 @@
 ---
 title: 페이지 생성 및 구성
-description: AEM을 사용하여 페이지를 만들고 구성하는 방법
-translation-type: tm+mt
+description: AEM으로 페이지를 생성 및 구성하는 방법
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,11 +9,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 페이지 생성 및 구성 {#creating-and-organizing-pages}
 
-This document describes how to create and manage pages with Adobe Experience Manager Cloud Service so that you can then [create content](/help/sites-cloud/authoring/fundamentals/editing-content.md) on those pages.
+이 문서에서는 해당 페이지에 [컨텐츠를 만들 수](/help/sites-cloud/authoring/fundamentals/editing-content.md) 있도록 Adobe Experience Manager 클라우드 서비스로 페이지를 만들고 관리하는 방법을 설명합니다.
 
 >[!NOTE]
 >
->작성, 복사, 이동, 편집 및 삭제와 같은 작업을 페이지에서 수행하기 위해서는 계정에 적절한 액세스 권한이 있어야 합니다.
+>생성, 복사, 이동, 편집, 삭제와 같은 작업을 페이지에서 수행하기 위해서는 계정에 적절한 액세스 권한과 사용 권한이 있어야 합니다. 
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
@@ -34,9 +34,9 @@ This document describes how to create and manage pages with Adobe Experience Man
 
 컨텐츠 구성에 도움이 되도록 [폴더](#creating-a-new-folder)를 사용할 수도 있습니다.
 
-웹 사이트의 구조는 컨텐츠 페이지를 포함하는 트리로 생각할 수 있습니다. 이러한 컨텐츠 페이지의 이름은 URL을 구성하는 데 사용되는 반면 제목은 페이지 컨텐츠를 볼 때 표시됩니다.
+웹 사이트의 구조는 컨텐츠 페이지를 담는 트리로 생각할 수 있습니다. 이 컨텐츠 페이지의 이름은 URL을 구성하는 데 사용됩니다. 반면에 제목은 페이지 컨텐츠가 표시될 때 표시됩니다.
 
-다음은 WKND Tutorial [사이트에서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) `la-skateparks`스케이트파크()에 대한 아티클에 액세스하는 예를 보여 줍니다.
+다음은 [WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 사이트에서 스케이트보드장(`la-skateparks`)에 대한 문서에 액세스하는 예를 보여 줍니다.
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -57,7 +57,7 @@ This document describes how to create and manage pages with Adobe Experience Man
    /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) and perform actions on the pages. 새 사이트와 [새 페이지](#creating-a-new-page)를 만들 수도 있습니다.
+이 구조가 표시되는 **사이트** 콘솔에서는 [웹 사이트의 페이지를 모두 탐색](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)하고 페이지에서 작업을 수행할 수 있습니다. 새 사이트와 [새 페이지](#creating-a-new-page)를 만들 수도 있습니다.
 
 어떤 지점에서든, 헤더 막대의 탐색 표시를 통해 위쪽 분기를 볼 수 있습니다.
 
@@ -86,19 +86,19 @@ This structure can be viewed From the **Sites** console, where you can [navigate
 
 >[!TIP]
 >
->페이지 이름을 정의할 때 되도록이면 간단하게 지정하되, 함축적이며 기억하기 쉽게 지정하여 독자가 쉽게 이해할 수 있도록 하는 것이 좋습니다. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
+>페이지 이름을 정의할 때 되도록이면 간단하게 지정하되, 함축적이며 기억하기 쉽게 지정하여 독자가 쉽게 이해할 수 있도록 하는 것이 좋습니다. 자세한 내용은 `title` 요소에 대한 [W3C 스타일 가이드](https://www.w3.org/Provider/Style/TITLE.html)를 참조하십시오.
 >
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 
-When creating a new page, AEM will validate the page name according to the conventions imposed by AEM and the JCR. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+새 페이지를 생성할 때 AEM은 AEM 및 JCR에서 지정한 규칙에 따라 페이지 이름을 확인합니다. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
 
 허용되는 최소 문자는 다음과 같습니다.
 
-* `a` through `z`
-* `A` through `Z`
-* `0` through `9`
-* `_` (밑줄)
-* `-` (하이픈/빼기)
+* `a` ~ `z`
+* `A` ~ `Z`
+* `0` ~ `9`
+* `_`(밑줄)
+* `-`(하이픈/빼기)
 
 허용되는 모든 문자에 대한 전체 상세 정보는 이름 지정 규칙<!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->에서 찾을 수 있습니다. 
 
@@ -110,7 +110,7 @@ When creating a new page, AEM will validate the page name according to the conve
 
 새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**&#x200B;을 파생하고 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
 
-A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters substituted. 예:
+**제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
 
 | 제목 | 파생되는 이름 |
 |---|---|
@@ -119,9 +119,9 @@ A **Title** field containing invalid characters will be accepted, but the name d
 
 #### 이름 {#name}
 
-새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM 파섹 <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 강조 표시됩니다. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
 
-![잘못된 페이지 이름을 입력하는 예](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
+![유효하지 않은 페이지 이름을 입력하는 예](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
 >[!TIP]
 >
@@ -155,7 +155,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 ### 구성 요소 {#components}
 
-구성 요소는 특정 유형의 컨텐츠를 추가할 수 있도록 AEM에서 제공하는 요소입니다. AEM에는 포괄적인 기능을 제공하는 다양한 기본 구성 요소가 포함되어 있습니다.다음과 같습니다.
+구성 요소는 특정 유형의 컨텐츠를 추가할 수 있도록 AEM에서 제공하는 요소입니다. AEM에는 다음과 같이 광범위한 기능을 제공하는 다양하고 특별한 구성 요소가 포함되어 있습니다.
 
 * 텍스트
 * 이미지
@@ -173,9 +173,9 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 ### 새 페이지 만들기 {#creating-a-new-page}
 
-모든 페이지를 미리 만들지 않은 경우 컨텐츠 생성을 시작하기 전에 페이지를 만들어야 합니다.
+모든 페이지가 미리 만들어져 있지 않다면 컨텐츠를 만들기 전에 먼저 페이지를 만들어야 합니다.
 
-1. Open the Sites console (for example, `https://<host>:<port>/sites.html/content`.
+1. Sites 콘솔을 엽니다(예: `https://<host>:<port>/sites.html/content`).
 1. 새 페이지를 만들 위치로 이동합니다.
 1. 도구 모음에서 **만들기**&#x200B;를 사용하여 드롭다운 선택기를 연 다음, 목록에서 **페이지**&#x200B;를 선택합니다.
 
@@ -186,7 +186,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    * 새 페이지를 만드는 데 사용할 템플릿을 선택한 후, **다음**&#x200B;을 클릭/탭하여 계속 진행합니다.
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
-   ![새 페이지의 템플릿 선택](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
+   ![새 페이지에 사용할 템플릿 선택](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. 마법사의 마지막 단계에서 다음 중 하나를 수행할 수 있습니다.
 
@@ -209,7 +209,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
    새 페이지를 만드는 데 필요한 최소 정보는 **제목**&#x200B;입니다.
 
-   ![페이지 제목 제공](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
+   ![페이지 제목 입력](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
 1. **만들기**&#x200B;를 클릭하여 프로세스를 완료하고 새 페이지를 만듭니다. 확인 대화 상자에 페이지를 즉시 **열지** 또는 콘솔로 돌아갈지(**완료**) 여부를 묻는 메시지가 표시됩니다.
 
@@ -225,7 +225,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 >[!CAUTION]
 >
->Once a page has been created its template cannot be changed - unless you [create a launch with a new template](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template), though this will lose any existing content.
+>페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 론치를 만들 수는 있지만](/help/sites-cloud/authoring/launches/creating.md#create-launch-with-new-template) 그렇게 되면 존재하는 컨텐츠는 모두 잃게 됩니다.
 
 ### 편집할 페이지 열기 {#opening-a-page-for-editing}
 
@@ -237,7 +237,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
    * [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 및 도구 모음
-   And then select the **Edit** icon:
+   그런 다음 **편집** 아이콘을 선택하십시오.
 
    ![편집 단추](/help/sites-cloud/authoring/assets/edit.png)
 
@@ -249,7 +249,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 ### 페이지 복사 및 붙여넣기 {#copying-and-pasting-a-page}
 
-페이지와 모든 하위 페이지를 새 위치로 복사할 수 있습니다.
+페이지 및 모든 하위 페이지를 새 위치에 복사할 수 있습니다.
 
 1. **사이트** 콘솔에서 복사할 페이지가 표시될 때까지 탐색합니다.
 1. 다음 중 하나를 사용하여 페이지를 선택합니다.
@@ -269,11 +269,11 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
    ![붙여넣기 단추](/help/sites-cloud/authoring/assets/paste.png)
 
-   원본 페이지와 하위 페이지의 복사본이 이 위치에 만들어집니다.
+   이 위치에 원래 페이지와 하위 페이지의 복사본이 만들어집니다.
 
    >[!NOTE]
    >
-   >페이지를 원본과 동일한 이름의 페이지가 이미 있는 위치에 복사하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach` 이미 존재하는 경우 이름이 있는 새 페이지가 `beach` 됩니다 `beach1`.
+   >페이지를 원본과 동일한 이름의 페이지가 이미 있는 위치에 복사하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach`가 이미 존재하는 경우 `beach`를 사용하는 새 페이지는 `beach1`이 됩니다.
 
 ### 페이지 이동 또는 이름 바꾸기 {#moving-or-renaming-a-page}
 
@@ -300,13 +300,13 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    * 페이지가 이동되면 사용할 페이지의 이름을 지정한 후 **다음**&#x200B;을 클릭/탭하여 다음 단계로 진행합니다.
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
-   ![페이지 이동 및 이름 바꾸기](/help/sites-cloud/authoring/assets/move-page-rename.png)
+   ![페이지 이동 및 이름 변경](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    페이지를 이동하는 경우에만 페이지 이름이 동일하게 유지될 수 있습니다.
 
    >[!NOTE]
    >
-   >페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach` 이미 존재하는 경우 이름이 있는 새 페이지가 `beach` 됩니다 `beach1`.
+   >페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach`가 이미 존재하는 경우 `beach`를 사용하는 새 페이지는 `beach1`이 됩니다.
 
 1. 마법사의 **대상 선택** 단계에서 다음 중 하나를 수행할 수 있습니다.
 
@@ -323,7 +323,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    >[!NOTE]
    >
-   >페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter` 이미 존재하는 경우 `winter` 해당 항목이 `winter1`변경됩니다.
+   >페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter`가 이미 존재하는 경우 `winter`는 `winter1`이 됩니다.
 
 1. 페이지가 연결되거나 참조된 경우 또는 게시된 경우 세부 사항이 **조정/다시 게시** 단계에서 나열됩니다.
 
@@ -339,7 +339,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 >[!NOTE]
 >
->페이지가 이미 게시된 경우 페이지를 이동하면 자동으로 게시 취소됩니다. By default, it will be republished when the move is complete, but this can changed by un-checking the **Republish** field in the **Adjust/Republish** step.
+>페이지가 이미 게시된 경우 페이지를 이동하면 자동으로 게시 취소됩니다. 기본적으로 이동이 완료되면 다시 게시되지만 **조정/다시 게시** 단계에서 **다시 게시** 필드를 선택 취소하여 변경할 수 있습니다.
 
 >[!NOTE]
 >
@@ -377,13 +377,14 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 >[!NOTE]
 >
->페이지가 이미 게시된 경우 삭제하기 전에 자동으로 게시되지 않습니다.
+>페이지가 이미 게시되어 있으면 삭제하기 전에 자동으로 게시 취소됩니다.
 
 ### 페이지 잠금 {#locking-a-page}
 
-콘솔에서, 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)할 수 있습니다. 페이지가 잠겨 있는지 여부도 두 위치 모두에 표시됩니다.
+콘솔에서 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)할 수 있습니다. 페이지가 잠겨 있는지 여부도 두 위치 모두에 표시됩니다.
 
-![잠금 단추](/help/sites-cloud/authoring/assets/lock.png)잠금![해제 단추](/help/sites-cloud/authoring/assets/unlock.png)
+![잠금 단추](/help/sites-cloud/authoring/assets/lock.png)
+![잠금 해제 단추](/help/sites-cloud/authoring/assets/unlock.png)
 
 ### 새 폴더 만들기 {#creating-a-new-folder}
 
@@ -404,6 +405,6 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 >[!CAUTION]
 >
 >* 폴더는 **사이트**&#x200B;나 다른 폴더 아래에서만 직접 만들 수 있습니다. 페이지 아래에서는 만들 수 없습니다.
->* 폴더에서 이동, 복사, 붙여넣기, 삭제, 게시, 게시 취소 및 보기/편집 속성을 수행할 수 있습니다.
+>* 표준 작업인 이동, 복사, 붙여넣기, 삭제, 게시, 게시 취소 및 보기/편집 속성은 폴더에서 수행할 수 있습니다.
 >* live copy 내에서는 폴더를 선택할 수 없습니다.
 
