@@ -1,7 +1,7 @@
 ---
 title: 구성 요소
-description: 구성 요소는 AEM에서 컨텐츠 페이지의 기본적인 작성 구성 요소입니다.
-translation-type: tm+mt
+description: 구성 요소는 AEM에서 컨텐츠 페이지의 기본적인 작성 빌딩 블록입니다.
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 구성 요소 {#components}
 
-구성 요소는 AEM(Adobe Experience Manager)에서 콘텐츠 페이지의 기본적인 작성 구성 요소입니다. 이미지, 텍스트, 제목 등의 구성 요소 손쉽게 드래그 앤 드롭하여 컨텐츠를 제작할 수 있습니다.
+구성 요소는 AEM(Adobe Experience Manager)에서 컨텐츠 페이지의 기본적인 작성 빌딩 블록입니다. 이미지, 텍스트, 제목 등의 구성 요소를 손쉽게 드래그하여 놓는 것으로 컨텐츠를 작성할 수 있습니다.
 
 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다. [페이지를 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)하고 기본 기능 영역(구성 요소 그룹이라고 함)별로 그룹화할 때 사용하면 필터링에 도움이 됩니다.
 
@@ -33,14 +33,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 모든 구성 요소의 개요 {#overview-of-all-components}
 
-The [Components Console](/help/sites-cloud/authoring/features/components-console.md) gives an overview of the component groups and components that are provided by your AEM installation. 개별 구성 요소 및 해당 사용법에 대한 주요 정보를 볼 수 있습니다.
+[구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)은 AEM 설치 시 제공된 구성 요소 그룹 및 구성 요소에 대한 개요를 제공합니다. 개별 구성 요소 및 해당 사용법에 대한 주요 정보를 볼 수 있습니다.
 
 ## 코어 구성 요소 {#core-components}
 
-The [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
+[코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)는 페이지를 작성하는 데 필요한 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
-AEM 우수 사례를 사용하여 빌드하고 있으며 AEM 작성 경험의 기반입니다. 개발자는 특정 프로젝트 요구 사항을 충족하기 위해 핵심 구성 요소를 손쉽게 확장할 수 있습니다.
+이 구성 요소는 AEM 우수 사례를 사용하여 빌드하며 AEM 작성 환경의 기반입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
 
 ### 템플릿 구성 {#configuring-templates}
 
-If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-cloud/authoring/features/templates.md) enable/disable these and edit parameters for specific components.
+페이지가 권장되는 편집 가능한 현대적 템플릿을 기반으로 하는 경우 [템플릿을 편집](/help/sites-cloud/authoring/features/templates.md)하여 특정 구성 요소에 대해 이러한 템플릿을 활성화/비활성화하고 매개 변수를 편집할 수 있습니다.
