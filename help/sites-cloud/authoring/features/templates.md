@@ -1,7 +1,7 @@
 ---
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 **템플릿 콘솔**&#x200B;을 사용하여 템플릿 작성자는 다음을 수행할 수 있습니다.
 
 * 새 템플릿을 만들거나 기존 템플릿을 복사합니다.
-* 템플릿의 라이프 사이클 관리를 참조하십시오.
+* 템플릿의 수명 주기를 관리합니다.
 
 **템플릿 편집기**&#x200B;를 사용하여 템플릿 작성자는 다음을 수행할 수 있습니다.
 
@@ -38,21 +38,21 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >템플릿 작성자가 해당 폴더에서 템플릿을 만들려면 먼저 관리자가 **구성 브라우저**&#x200B;에서 템플릿 폴더를 구성하고 적절한 사용 권한을 적용해야 합니다.
 
-시작하기 전에 새 템플릿을 만들려면 공동 작업이 필요합니다. 이러한 이유로 각 작업에 대해 [역할](#roles)이 지정됩니다. 이 방법은 실제로 템플릿을 사용하여 페이지를 만드는 방법에는 영향을 주지 않지만, 페이지가 해당 템플릿과 어떻게 관련이 있는지에 영향을 줍니다.
+시작하기 전에 새 템플릿을 만드는 데에는 협업이 필요하다는 것을 고려해야 합니다. 이러한 이유로 각 작업에 대해 [역할](#roles)이 지정됩니다. 이 사실은 실제로 템플릿을 사용하여 페이지 만드는 방법에는 영향을 주지 않지만, 페이지가 해당 템플릿과 관련되는 방식에는 영향을 줍니다.
 
 ### 역할 {#roles}
 
 **템플릿 콘솔** 및 **템플릿 편집기**&#x200B;를 사용하여 새 템플릿을 만들려면 다음 역할 간의 공동 작업이 필요합니다.
 
 * **관리자**:
-   * Creates a new folder for templates requires `admin` rights.
+   * 템플릿에 대한 새 폴더를 만들려면 `admin` 권한이 필요합니다.
    * 종종 이러한 작업을 개발자가 수행할 수도 있습니다.
 * **개발자**:
    * 기술/내부 세부 사항에 주력합니다.
    * 개발 환경에 대한 경험이 필요합니다.
    * 템플릿 작성자에게 필요한 정보를 제공합니다.
 * **템플릿 작성자**:
-   * This is a specific author who is member of the group `template-authors`
+   * `template-authors` 그룹의 멤버인 특정 작성자입니다.
       * 필요한 권한을 할당합니다.
    * 구성 요소의 사용 방식과 다음이 요구되는 기타 고급 세부 사항을 구성할 수 있습니다.
       * 일부 기술적인 지식
@@ -68,14 +68,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 편집 가능 템플릿을 새로 만들 때 다음을 수행합니다.
 
 * **템플릿** 콘솔을 사용합니다. **도구** 콘솔의 **일반** 섹션에서 사용할 수 있습니다.
-   * 또는 `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
+   * 또는 `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`에서 바로 사용할 수 있습니다.
+* 필요한 경우 [템플릿용 폴더를 만들 수](#creating-a-template-folder-admin) 있습니다.
 * 처음에는 빈 상태인 [새 템플릿을 만듭니다](#creating-a-new-template-template-author).
 * 필요한 경우 템플릿에 대한 [추가 속성을 정의](#defining-template-properties-template-author)합니다.
 * [템플릿을 편집](#editing-templates-template-authors)하여 다음을 정의합니다.
    * [구조](#editing-a-template-structure-template-author) - 템플릿으로 만든 페이지에서 변경할 수 없는 사전 정의된 컨텐츠입니다.
    * [초기 컨텐츠](#editing-a-template-initial-content-author) - 템플릿으로 만든 페이지에서 변경할 수 있는 사전 정의된 컨텐츠입니다.
-   * [레이아웃](#editing-a-template-layout-template-author) - 다양한 장치용.
+   * [레이아웃](#editing-a-template-layout-template-author) - 장치 범위에 해당합니다.
    * [스타일](/help/sites-cloud/authoring/features/style-system.md) - 템플릿 및 해당 구성 요소와 함께 사용할 스타일을 정의합니다.
 * 페이지를 만들 때 사용할 [템플릿을 활성화](#enabling-a-template-template-author)합니다.
 * 웹 사이트의 필수 페이지 또는 분기에 대해 [템플릿을 허용](#allowing-a-template-author)합니다.
@@ -89,7 +89,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >국제화해야 하는 정보는 템플릿에 입력하지 마십시오. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->현지화해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 핵심 구성 요소의 [현지화 기능을 활용합니다.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)
+>로컬라이제이션해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/get-started/localization.html)을 활용하십시오.
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
@@ -97,13 +97,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### 새 템플릿 만들기 - 템플릿 작성자 {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools ->** **General**) then navigate to the required folder.
+1. **도구 ->** **일반**&#x200B;에서 **템플릿 콘솔**&#x200B;을 연 후 필요한 폴더로 이동합니다.
 
    >[!NOTE]
    >
-   >In a standard AEM instance the **global** folder already exists in the template console. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형을 찾을 수 없는 경우 폴백으로 작동합니다.
+   >표준 AEM 인스턴스에서는 **전역** 폴더가 템플릿 콘솔에 이미 있습니다. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형을 찾을 수 없는 경우 폴백으로 작동합니다.
    >
-   >프로젝트용으로 만든 템플릿 폴더<!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->를 사용하는 것이 가장 좋습니다. 
+   >프로젝트용으로 만든 템플릿 폴더를 사용하는 것이 가장 좋습니다. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
 
 1. **만들기**, **템플릿 만들기**&#x200B;를 차례로 선택하여 마법사를 엽니다.
 
@@ -135,11 +135,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * 제목
    * **페이지 만들기** 마법사의 경우처럼 템플릿을 식별하는 데 사용되는 제목입니다.
 * 설명
-   * An optional description to provide more information about the template and its use, which can be seen for example in the **Create Page** wizard.
+   * 템플릿 및 해당 사용 방법에 대한 자세한 내용을 제공하기 위한 선택적 설명으로, **페이지 만들기** 마법사와 같은 기능에서 볼 수 있습니다.
 
 속성을 보거나 편집하려면:
 
-1. In the **Templates Console**, select the template.
+1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음 또는 빠른 옵션에서&#x200B;**속성 보기**&#x200B;를 선택하여 대화 상자를 엽니다.
 1. 이제 템플릿 속성을 보거나 편집할 수 있습니다.
 
@@ -163,8 +163,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 페이지를 작성할 때 템플릿을 사용하려면 다음을 수행해야 합니다.
 
-* [페이지를 만들 때 사용할 수 있도록 템플릿을](#enabling-a-template-template-author) 활성화합니다.
-* [템플릿을](#allowing-a-template-author) 사용할 수 있는 컨텐츠 분기를 템플릿에 지정할 수 있도록 허용합니다.
+* [템플릿 활성화](#enabling-a-template-template-author): 페이지를 만들 때 사용할 수 있도록 합니다.
+* [템플릿 허용](#allowing-a-template-author): 템플릿을 사용할 수 있는 컨텐츠 분기를 지정합니다.
 
 #### 템플릿 활성화 - 템플릿 작성자 {#enabling-a-template-template-author}
 
@@ -174,8 +174,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >템플릿이 활성화된 상태에서 템플릿 작성자가 템플릿을 추가로 업데이트하기 시작하면 경고가 표시됩니다. 이 경고는 템플릿이 참조될 수 있으므로 변경을 수행할 경우 템플릿을 참조하는 페이지에 영향을 줄 수 있음을 나타냅니다.
 
-1. In the **Templates Console**, select the template.
-1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
+1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
+1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
 1. 이제 요구 사항에 따라 [템플릿을 편집](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)할 수 있지만, [새 페이지를 만들 때](#editing-templates-template-authors) 템플릿을 사용할 수 있습니다.
 
 >[!NOTE]
@@ -188,7 +188,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 템플릿을 사용할 수 있도록 하려는 분기의 루트 페이지에 대한 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)을 엽니다.
 1. **고급** 탭을 엽니다.
-1. Under **Template Settings** use **Add field** to specify the path(s) to your template(s).
+1. **템플릿 설정**&#x200B;에서 **필드 추가**&#x200B;를 사용하여 템플릿에 대한 경로를 지정합니다.
 
    경로는 명시적일 수도 있고 패턴을 사용할 수도 있습니다. 예:
 
@@ -201,7 +201,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
    >
-   >See Template Availability - the principles for allowed templates remain the same. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >템플릿 가용성을 참조하십시오. 허용된 템플릿에 대한 원칙은 동일하게 유지됩니다. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
 
 1. **저장**&#x200B;을 클릭하여 페이지 속성에 대한 변경 사항을 저장합니다.
 
@@ -213,8 +213,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 페이지가 렌더링될 때 템플릿이 참조되면 게시 환경에서 사용할 수 있도록 완전히 구성된 템플릿을 게시해야 합니다.
 
-1. In the **Templates Console**, select the template.
-1. Select **Publish** from the toolbar to open the wizard.
+1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
+1. 도구 모음에서 **게시**&#x200B;를 선택하여 마법사를 엽니다.
 1. 함께 게시할 **컨텐츠 정책**&#x200B;을 선택합니다.
 1. 도구 모음에서 **게시**&#x200B;를 선택하여 작업을 완료합니다.
 
@@ -238,13 +238,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >작성자가 이미 활성화된 템플릿을 편집하기 시작하면 경고가 표시됩니다. 이 경고는 템플릿이 참조될 수 있으므로 변경을 수행할 경우 템플릿을 참조하는 페이지에 영향을 줄 수 있음을 나타냅니다.
 
-### 템플릿 속성 {#template-attributes}
+### 템플릿 특성 {#template-attributes}
 
-템플릿의 다음 속성을 편집할 수 있습니다.
+템플릿의 다음 특성을 편집할 수 있습니다.
 
 #### 구조 {#template-structure}
 
-Components added to the [structure](#editing-a-template-structure-template-author) cannot be moved/removed from resultant pages by the page authors. 페이지 작성자가 결과 페이지에 구성 요소를 추가 및 제거할 수 있게 하려면, 템플릿에 단락 시스템을 추가해야 합니다.
+[구조](#editing-a-template-structure-template-author)에 추가된 구성 요소는 페이지 작성자가 결과 페이지에서 이동/제거할 수 없습니다. 페이지 작성자가 결과 페이지에 구성 요소를 추가 및 제거할 수 있게 하려면, 템플릿에 단락 시스템을 추가해야 합니다.
 
 구성 요소가 잠긴 경우 컨텐츠를 추가할 수 있지만 이 컨텐츠를 페이지 작성자는 편집할 수 없습니다. 구성 요소의 잠금을 해제하여 [초기 컨텐츠](#editing-a-template-initial-content-author)를 정의할 수 있습니다.
 
@@ -254,7 +254,7 @@ Components added to the [structure](#editing-a-template-structure-template-autho
 
 #### 초기 컨텐츠 {#template-initial-content}
 
-When a component has been unlocked you can define the [initial content](#editing-a-template-initial-content-author) that will be copied to the resultant page(s), created from the template. 잠금이 해제된 이러한 구성 요소는 결과 페이지에서 편집할 수 있습니다.
+구성 요소 잠금이 해제된 경우 템플릿에서 만든 결과 페이지에 복사할 [초기 컨텐츠](#editing-a-template-initial-content-author)를 정의할 수 있습니다. 잠금이 해제된 이러한 구성 요소는 결과 페이지에서 편집할 수 있습니다.
 
 >[!NOTE]
 >
@@ -262,21 +262,21 @@ When a component has been unlocked you can define the [initial content](#editing
 
 #### 레이아웃 {#template-layout}
 
-With the [layout](#editing-a-template-layout-template-author) you can predefine the template layout for the required device formats. 템플릿 작성에 대한&#x200B;**레이아웃** 모드는 [**페이지 작성에 대한 레이아웃&#x200B;**모드](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)와 동일한 기능을 갖습니다.
+[레이아웃](#editing-a-template-layout-template-author)으로 필요한 장치 형식에 대한 템플릿 레이아웃을 미리 정의할 수 있습니다. 템플릿 작성에 대한&#x200B;**레이아웃** 모드는 [**페이지 작성에 대한 레이아웃&#x200B;**모드](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)와 동일한 기능을 갖습니다.
 
 #### 페이지 정책 {#template-page-policies}
 
-[페이지 정책은](#page-policies) 사전 정의된 페이지 정책을 페이지에 연결할 수 있습니다. 이러한 페이지 정책은 다양한 디자인 구성을 정의합니다.
+[페이지 정책](#page-policies)은 사전 정의된 페이지 정책을 페이지에 연결할 수 있습니다. 이러한 페이지 정책은 다양한 디자인 구성을 정의합니다.
 
 #### 스타일 {#template-styles}
 
-The [Style System](/help/sites-cloud/authoring/features/style-system.md) allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
+[스타일 시스템](/help/sites-cloud/authoring/features/style-system.md)을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
 
 자세한 내용은 [스타일 시스템 설명서](/help/sites-cloud/authoring/features/style-system.md)를 참조하십시오.
 
 ### 템플릿 편집 - 구조 - 템플릿 작성자 {#editing-a-template-structure-template-author}
 
-In **Structure** mode you define components and content for your template and define policy for the template and its components.
+**구조** 모드에서 템플릿에 대한 구성 요소 및 컨텐츠를 정의하고 템플릿 및 해당 구성 요소에 대한 정책을 정의합니다.
 
 * 템플릿 구조에 정의된 구성 요소는 결과 페이지 안에서 이동하거나 결과 페이지에서 삭제할 수 없습니다.
 * 페이지 작성자가 구성 요소를 추가 및 제거할 수 있도록 하려면 템플릿에 단락 시스템을 추가하십시오.
@@ -285,14 +285,14 @@ In **Structure** mode you define components and content for your template and de
 
 ![템플릿 편집기 페이지 구조](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-템플릿 편집기의 구조 **모드에서 수행할 수 있는** 여러 작업과 도움이 되는 다양한 기능이 있습니다.
+템플릿 편집기의 **구조** 모드에서 수행할 수 있는 작업과 도움이 되는 기능이 많이 있습니다.
 
-#### Add Components {#add-components}
+#### 구성 요소 추가 {#add-components}
 
 템플릿에 구성 요소를 추가하기 위한 다음과 같은 몇 가지 메커니즘이 있습니다.
 
 * 사이드 패널의 **구성 요소**&#x200B;에서 브라우저에서
-* By using the **Insert Component** option available on the toolbar of components already on the template or the **Drag components here** box.
+* 템플릿에 이미 있는 구성 요소의 도구 모음에서 사용할 수 있는 **구성 요소 삽입** 옵션 또는 **구성 요소를 여기로 드래그하십시오.** 상자를 사용하여
 * 사이드 패널의 **자산** 브라우저에서 템플릿으로 직접 자산을 끌어와 제 위치에 해당 구성 요소를 생성하여
 
 일단 추가된 각 구성 요소는 다음으로 표시됩니다.
@@ -303,7 +303,7 @@ In **Structure** mode you define components and content for your template and de
 
 >[!NOTE]
 >
->When you add an out-of-the-box **Title** component to the template it will contain the default text **structure**.
+>곧바로 사용 가능한 **제목** 구성 요소를 템플릿에 추가하면 기본 텍스트 **구조**&#x200B;가 포함됩니다.
 >
 >이를 변경하고 사용자 고유의 텍스트를 추가하는 경우 템플릿에서 페이지를 만들 때 이 업데이트된 텍스트가 사용됩니다.
 >
@@ -311,7 +311,7 @@ In **Structure** mode you define components and content for your template and de
 
 >[!NOTE]
 >
->Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+>동일하지는 않지만 구성 요소 및 자산을 템플릿에 추가하는 것은 [페이지 작성](/help/sites-cloud/authoring/fundamentals/editing-content.md) 시 수행되는 작업과 매우 비슷합니다.
 
 #### 구성 요소 작업 {#component-actions}
 
@@ -325,7 +325,7 @@ In **Structure** mode you define components and content for your template and de
 
 이러한 두 가지 작업을 사용하여 구성 요소에 컨텐츠를 추가할 수 있습니다.
 
-#### Border to Indicate Structure {#border-to-indicate-structure}
+#### 구조를 나타내는 테두리 {#border-to-indicate-structure}
 
 **구조** 모드에서 작업할 경우 주황색 테두리는 현재 선택된 구성 요소를 나타냅니다. 또한 점선은 상위 구성 요소를 나타냅니다.
 
@@ -335,16 +335,16 @@ In **Structure** mode you define components and content for your template and de
 
 구성 요소에 대해 컨텐츠 정책을 만들거나 기존 컨텐츠 정책을 선택합니다.
 
-![콘텐츠 정책 단추](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
+![컨텐츠 정책 단추](/help/sites-cloud/authoring/assets/templates-content-policy-button.png)
 
 이를 통해 디자인 세부 사항을 정의할 수 있습니다.
 
-![콘텐츠 정책](/help/sites-cloud/authoring/assets/template-content-policy.png)
+![컨텐츠 정책](/help/sites-cloud/authoring/assets/template-content-policy.png)
 
-구성 창은 두 개로 나뉘어집니다.
+구성 창은 두 개로 나누어집니다.
 
-* In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
-* In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
+* **정책** 아래의 대화 상자 왼쪽에서는 새 정책을 만들거나 기존 정책을 선택할 수 있습니다.
+* **속성** 아래의 대화 상자 오른쪽에서는 구성 요소 유형과 관련된 속성을 설정할 수 있습니다.
 
 사용 가능한 속성은 선택한 구성 요소에 따라 다릅니다. 예를 들어 텍스트 구성 요소의 경우 속성은 여러 다른 옵션 중에서 복사 및 붙여넣기 옵션, 서식 옵션 및 단락 스타일을 정의합니다.
 
@@ -352,21 +352,21 @@ In **Structure** mode you define components and content for your template and de
 
 컨텐츠(또는 디자인) 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-Under **Policy** you can select an existing policy to apply to the component via the drop-down.
+**정책** 아래에서 드롭다운을 통해 구성 요소에 적용할 기존 정책을 선택할 수 있습니다.
 
 ![정책 선택](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-**정책 선택** 드롭다운 옆에 있는 추가 단추를 선택하여 새 정책을 추가할 수 있습니다. A new title should then be given in the **Policy Title** field.
+**정책 선택** 드롭다운 옆에 있는 추가 단추를 선택하여 새 정책을 추가할 수 있습니다. 그런 후 **정책 제목** 필드에 새 제목을 지정해야 합니다.
 
 ![정책 추가 단추](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-**정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 단추를 사용하여 새 정책으로서 복사할 수 있습니다. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+**정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 단추를 사용하여 새 정책으로서 복사할 수 있습니다. 그런 후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
 
 ![정책 복사 단추](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 **정책 설명** 필드에서 정책에 대한 설명은 선택 사항입니다.
 
-In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+**선택한 정책을 사용하는 다른 템플릿** 섹션에서 **정책 선택** 드롭다운에서 선택한 정책을 사용하는 다른 템플릿을 쉽게 확인할 수 있습니다.
 
 ![기존 정책 사용](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -407,13 +407,13 @@ In the **Other templates also using the selected policy** section, you can easil
 
 >[!CAUTION]
 >
->Note that in AEM crop ratios are defined as **height/width**. 이는 폭/높이의 기존 정의와 다르며 이전 호환성 이유로 수행됩니다. **이름**&#x200B;을 명확히 정의한 경우 이 이름이 UI에 표시되므로 페이지 작성 사용자가 차이를 알지 못합니다.
+>AEM에서 자르기 비율은 **높이/폭**&#x200B;으로 정의됩니다. 이것은 종래의 폭/높이 정의와 다르며, 레거시 호환성을 위해 수행됩니다. **이름**&#x200B;을 명확히 정의한 경우 이 이름이 UI에 표시되므로 페이지 작성 사용자가 차이를 알지 못합니다.
 
 >[!NOTE]
 >
 >리치 텍스트 편집기를 구현하는 구성 요소에 대한 컨텐츠 정책은 RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
 
-#### Policy and Properties (Layout Container) {#policy-and-properties-layout-container}
+#### 정책 및 속성(레이아웃 컨테이너) {#policy-and-properties-layout-container}
 
 레이아웃 컨테이너의 정책 및 속성 설정은 일반적인 사용 방식과 유사하지만 일부 차이점이 있습니다.
 
@@ -421,13 +421,13 @@ In the **Other templates also using the selected policy** section, you can easil
 >
 >컨테이너 구성 요소의 경우 컨테이너에서 사용할 수 있는 구성 요소를 정의하는 데 필요하므로 정책을 반드시 구성해야 합니다.
 
-이 구성 창은 창의 일반적인 사용 방식과 마찬가지로 두 개로 나뉘어집니다.
+이 구성 창은 창의 일반적인 사용 방식과 마찬가지로 두 개로 나누어집니다.
 
 ##### 정책 {#policy-layout}
 
 컨텐츠(또는 디자인) 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-Under **Policy** you can select an existing policy to apply to the component via the drop-down. 이것은 창의 일반적인 사용 방식과 같습니다.
+**정책** 아래에서 드롭다운을 통해 구성 요소에 적용할 기존 정책을 선택할 수 있습니다. 이것은 창의 일반적인 사용 방식과 같습니다.
 
 ##### 속성 {#properties-layout}
 
@@ -455,7 +455,7 @@ Under **Policy** you can select an existing policy to apply to the component via
 
 완전히 새로운 구성 요소 및 MIME 유형 매핑을 추가하려면 **매핑 추가**&#x200B;를 클릭하거나 탭하십시오.
 
-이미 매핑된 구성 요소에 추가 MIME 유형을 추가하려면 목록에서 구성 요소를 선택하고 **유형 추가**&#x200B;를 클릭하거나 탭하십시오. Click the **Delete** icon to remove a MIME type.
+이미 매핑된 구성 요소에 추가 MIME 유형을 추가하려면 목록에서 구성 요소를 선택하고 **유형 추가**&#x200B;를 클릭하거나 탭하십시오. MIME 유형을 제거하려면 **삭제** 아이콘을 클릭하십시오.
 
 ![기본 구성 요소 탭](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -472,7 +472,7 @@ Under **Policy** you can select an existing policy to apply to the component via
 * 테두리에 열린 자물쇠 표시가 나타납니다.
 * 구성 요소 도구 모음이 그에 따라 조정됩니다.
 * 이미 입력한 컨텐츠는 **구조** 모드에 더 이상 표시되지 않습니다.
-   * Already entered content is considered initial content and is only visible in **Initial Content** mode.
+   * 이미 입력한 컨텐츠는 초기 컨텐츠로 간주되며 **초기 컨텐츠** 모드에서만 볼 수 있습니다.
 * 잠금 해제된 구성 요소의 상위 항목을 이동하거나, 잘라내거나, 삭제할 수 없습니다.
 
 ![구성 요소 잠금 단추](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
@@ -511,7 +511,7 @@ Under **Policy** you can select an existing policy to apply to the component via
 
    ![잠금 해제된 구성 요소](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
-* 컨테이너 구성 요소의 잠금이 해제된 경우(**구조** 모드에서) 새 구성 요소를 컨테이너에 추가할 수 있습니다(**초기 컨텐츠** 모드). Components added in **Initial Content** mode can be moved on or deleted from resulting pages.
+* 컨테이너 구성 요소의 잠금이 해제된 경우(**구조** 모드에서) 새 구성 요소를 컨테이너에 추가할 수 있습니다(**초기 컨텐츠** 모드). **초기 컨텐츠** 모드에서 추가한 구성 요소는 결과 페이지에서 이동하거나 삭제할 수 있습니다.
 
    해당 컨테이너의 도구 모음에서 **구성 요소를 여기로 드래그하십시오.** 영역 또는 **새 구성 요소 삽입** 옵션을 사용하여 구성 요소를 추가할 수 있습니다.
 
@@ -524,11 +524,11 @@ Under **Policy** you can select an existing policy to apply to the component via
 >
 >초기 컨텐츠는 컨텐츠를 작성하기 위한 시작점으로 사용되는 구성 요소 및 페이지 레이아웃을 준비하기 위한 것입니다. 이는 그대로 남아 있어야 하는 실제 컨텐츠용이 아닙니다. 따라서 초기 컨텐츠를 변환할 수 없습니다.
 >
->머리글이나 바닥글과 같은 번역 가능한 텍스트를 템플릿에 포함시켜야 하는 경우 핵심 구성 요소의 [로컬라이제이션 기능을](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)사용할 수 있습니다.
+>머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 
-장치 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다. [템플릿에 대한 반응형 레이아웃은](/help/sites-cloud/authoring/features/responsive-layout.md) 페이지 작성과 동일하게 작동합니다.
+장치 범위에 대한 템플릿 레이아웃을 정의할 수 있습니다. 템플릿에 대한 [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)은 페이지 작성의 경우와 마찬가지로 작동합니다.
 
 >[!NOTE]
 >
@@ -536,14 +536,14 @@ Under **Policy** you can select an existing policy to apply to the component via
 
 ![템플릿 레이아웃 편집](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
-### Editing a Template - Page Policy - Template Author/Developer {#editing-a-template-page-policy-template-author-developer}
+### 템플릿 편집 - 페이지 정책 - 템플릿 작성자/개발자 {#editing-a-template-page-policy-template-author-developer}
 
-필요한 클라이언트측 라이브러리를 포함한 페이지 정책은 페이지 정보 **메뉴의 페이지** 정책 **옵션에서** 유지 관리됩니다.
+필요한 클라이언트 측 라이브러리를 포함한 페이지 정책은 **페이지 정보** 메뉴의 **페이지 정책** 옵션에서 유지 관리됩니다.
 
-To access the **Page Policy** dialog:
+**페이지 정책** 대화 상자에 액세스하려면:
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Policy** to open the dialog.
-1. The **Page Policy** dialog opens and is divided into two sections:
+1. **템플릿 편집기**&#x200B;에서 **페이지 정보**&#x200B;를 선택하고 **페이지 정책**&#x200B;을 선택하여 대화 상자를 엽니다.
+1. **페이지 정책** 대화 상자가 열리고 두 개의 섹션으로 나뉩니다.
 
    * 왼쪽 절반 섹션에서는 [페이지 정책](#page-policies)을 정의합니다.
    * 오른쪽 절반 섹션에서는 [페이지 속성](#page-properties)을 정의합니다.
@@ -559,11 +559,11 @@ To access the **Page Policy** dialog:
 
    ![정책 선택기](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   **정책 선택** 드롭다운 옆에 있는 추가 단추를 선택하여 새 정책을 추가할 수 있습니다. A new title should then be given in the **Policy Title** field.
+   **정책 선택** 드롭다운 옆에 있는 추가 단추를 선택하여 새 정책을 추가할 수 있습니다. 그런 후 **정책 제목** 필드에 새 제목을 지정해야 합니다.
 
    ![정책 추가 단추](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 단추를 사용하여 새 정책으로서 복사할 수 있습니다. A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+   **정책 선택** 드롭다운에서 선택한 기존 정책은 드롭다운 옆에 있는 복사 단추를 사용하여 새 정책으로서 복사할 수 있습니다. 그런 후 **정책 제목** 필드에 새 제목을 지정해야 합니다. 기본적으로 복사된 정책 제목은 **X의 사본**&#x200B;으로 지정됩니다. 여기서 X는 복사된 정책의 제목입니다.
 
    ![정책 복사 단추](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -572,25 +572,25 @@ To access the **Page Policy** dialog:
    ![정책 제목](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * **정책 설명** 필드에서 정책에 대한 설명은 선택 사항입니다.
-* In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+* **선택한 정책을 사용하는 다른 템플릿** 섹션에서 **정책 선택** 드롭다운에서 선택한 정책을 사용하는 다른 템플릿을 쉽게 확인할 수 있습니다.
 
    ![정책 사용](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### 페이지 속성 {#page-properties}
 
-Using page properties, you can define the required client-side libraries by using the **Page Design** dialog. 이러한 클라이언트측 라이브러리에는 템플릿과 함께 로드될 스타일 시트 및 Javascript와, 해당 템플릿으로 작성된 페이지가 포함되어 있습니다.
+페이지 속성을 사용하면 **페이지 디자인** 대화 상자에서 필수 클라이언트 측 라이브러리를 정의할 수 있습니다. 이러한 클라이언트 측 라이브러리에는 템플릿과 함께 로드될 스타일 시트 및 Javascript와 해당 템플릿으로 작성된 페이지가 포함되어 있습니다.
 
 ![페이지 속성](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
-* 이 템플릿으로 작성된 페이지에 적용할 클라이언트측 라이브러리를 지정합니다. **클라이언트측 라이브러리** 섹션의 텍스트 필드에 라이브러리 이름을 입력합니다.
+* 이 템플릿으로 작성된 페이지에 적용할 클라이언트 측 라이브러리를 지정합니다. **클라이언트 측 라이브러리** 섹션의 텍스트 필드에 라이브러리 이름을 입력합니다.
 
-   ![클라이언트측 라이브러리](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+   ![클라이언트 측 라이브러리](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * 여러 라이브러리가 필요한 경우 추가 단추를 클릭하여 라이브러리 이름에 대한 추가 텍스트 필드를 추가합니다.
 
    ![추가 단추](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   클라이언트측 라이브러리에 필요한 수만큼 텍스트 필드를 추가합니다.
+   클라이언트 측 라이브러리에 필요한 수만큼 텍스트 필드를 추가합니다.
 
 * 끌기 핸들을 사용하여 필드를 끌어 필요에 따라 라이브러리의 상대 위치를 정의합니다.
 
@@ -598,7 +598,7 @@ Using page properties, you can define the required client-side libraries by usin
 
 >[!NOTE]
 >
->템플릿 작성자는 템플릿에 대한 페이지 정책을 지정할 수 있지만, 개발자로부터 해당 클라이언트측 라이브러리의 세부 정보를 가져와야 합니다.
+>템플릿 작성자는 템플릿에 대한 페이지 정책을 지정할 수 있지만, 개발자로부터 해당 클라이언트 측 라이브러리의 세부 정보를 가져와야 합니다.
 
 ### 템플릿 편집 - 초기 페이지 속성 - 작성자 {#editing-a-template-initial-page-properties-author}
 
