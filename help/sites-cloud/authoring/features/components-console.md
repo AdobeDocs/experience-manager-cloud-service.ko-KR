@@ -1,7 +1,7 @@
 ---
 title: 구성 요소 콘솔
-description: 구성 요소 콘솔을 사용하면 인스턴스에 대해 정의된 모든 구성 요소를 검색할 수 있습니다
-translation-type: tm+mt
+description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다.
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,15 +9,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 구성 요소 콘솔 {#components-console}
 
-구성 요소 콘솔을 사용하면 인스턴스에 대해 정의된 모든 구성 요소를 검색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
+구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
 
-It can be accessed from **Tools ->** **General ->** **Components**. 구성 요소에 대한 트리 구조가 없으므로 목록 보기만 사용할 수 있습니다.
+**도구 ->** **일반 ->** **구성 요소**&#x200B;에서 액세스할 수 있습니다. 구성 요소에 대한 트리 구조가 없으므로 목록 보기만 사용할 수 있습니다.
 
 ![구성 요소 콘솔](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->구성 요소 콘솔은 시스템의 모든 구성 요소를 표시합니다. The [Component Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) shows components that are available to authors and hides any component groups that begin with a period ( `.`).
+>구성 요소 콘솔은 시스템의 모든 구성 요소를 표시합니다. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)는 작성자가 사용할 수 있는 구성 요소를 표시하며 마침표(`.`)로 시작하는 모든 구성 요소 그룹을 숨깁니다.
 
 ## 검색 {#search-field}
 
@@ -42,7 +42,7 @@ It can be accessed from **Tools ->** **General ->** **Components**. 구성 요�
       * [리소스 슈퍼 유형]을 클릭하면 해당 구성 요소로 이동합니다.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >`/apps`는 런타임 시 편집할 수 없으므로 구성 요소 콘솔은 읽기 전용입니다.
 
 * **정책**
 
@@ -50,7 +50,7 @@ It can be accessed from **Tools ->** **General ->** **Components**. 구성 요�
 
 * **라이브 사용량**
 
-   ![구성 요소의 실시간 사용](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+   ![구성 요소의 라이브 사용량](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
    >[!CAUTION]
    >
