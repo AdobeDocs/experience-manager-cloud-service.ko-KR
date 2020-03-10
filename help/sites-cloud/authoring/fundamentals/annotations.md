@@ -1,7 +1,7 @@
 ---
 title: 페이지 주석 추가
 description: 컨텐츠와 직접 관련된 많은 구성 요소를 사용하여 주석을 추가할 수 있습니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -11,7 +11,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 웹 사이트의 페이지에 컨텐츠를 추가할 때는 컨텐츠를 실제로 게시하기 전에 논의를 거쳐야 하는 경우가 많습니다. 이 과정을 돕기 위해 컨텐츠와 직접적으로 관련된(예를 들어 레이아웃과는 반대로) 많은 구성 요소는 주석을 추가할 수 있습니다.
 
-주석은 페이지에 색상 있는 스케치 또는 스티커 노트를 배치합니다. 주석을 사용하는 사용자(또는 다른 사용자)는 다른 작성자/검토자에 대한 댓글 및/또는 질문을 할 수 있습니다.
+주석을 달면 페이지에 색상이 있는 스케치/스티커 메모가 생깁니다. 주석을 사용하는 사용자(또는 다른 사용자)는 다른 작성자/검토자에 대한 댓글 및/또는 질문을 할 수 있습니다.
 
 >[!NOTE]
 >
@@ -23,11 +23,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!CAUTION]
 >
->리소스(예: 구성 요소)를 삭제하면 페이지의 위치에 관계없이 해당 리소스에 첨부된 주석과 스케치가 모두 삭제됩니다.
+>리소스(예: 구성 요소)를 삭제하면 해당 리소스에 첨부된 주석과 스케치가 페이지에서의 위치와 관계없이 모두 삭제됩니다.
 
 >[!NOTE]
 >
->요구 사항에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림을 보내는 워크플로우를 개발할 수도 있습니다.
+>필요에 따라 주석이 추가, 업데이트 또는 삭제될 때 알림 메시지를 보내는 워크플로우를 개발할 수도 있습니다.
 
 ### 구성 요소에 주석 추가 {#annotating-a-component}
 
@@ -59,9 +59,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 스케치(선과 모양)를 만들어 구성 요소 영역 강조 표시
 
 
-      ![주석 스케치 버튼](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+      ![주석 스케치 단추](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      스케치를 만들 때 커서가 십자 모양으로 바뀝니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
+      스케치를 만들 때 커서는 십자 모양으로 바뀝니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
 
    * 색상 선택/변경:
 
@@ -91,7 +91,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->다른 사용자가 잠근 페이지에 주석을 추가할 수 없습니다.
+>다른 사용자가 잠근 페이지에는 주석을 추가할 수 없습니다.
 
 >[!NOTE]
 >
@@ -103,9 +103,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ![주석 표시기](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-## 기타 리소스에 주석 추가 {#annotating-other-resources}
+## 기타 리소스에 주석 달기 {#annotating-other-resources}
 
-구성 요소 외에도 다양한 리소스에 주석을 달 수 있습니다.
+구성 요소 외에, 다양한 리소스에 주석을 달 수 있습니다.
 
 * 자산에 주석 달기 [자산에 주석 달기](/help/assets/manage-digital-assets.md#annotating)
-* 비디오 자산에 주석 달기 [비디오 에셋에 주석 달기](/help/assets/manage-video-assets.md#annotate-video-assets)
+* 비디오 자산에 주석 달기 [비디오 자산에 주석 달기](/help/assets/manage-video-assets.md#annotate-video-assets)
