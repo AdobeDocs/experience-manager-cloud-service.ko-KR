@@ -1,17 +1,17 @@
 ---
-title: 작성 페이지에 대한 빠른 시작 안내서
-description: 페이지 컨텐츠 작성을 시작하는 데 도움이 되는 빠른 고급 가이드
-translation-type: tm+mt
+title: 페이지 작성에 대한 빠른 시작 안내서
+description: 페이지 컨텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Quick Start Guide to Authoring Pages {#quick-guide-to-authoring-pages}
+# 페이지 작성에 대한 빠른 시작 안내서{#quick-guide-to-authoring-pages}
 
-이 문서는 AEM 파섹 이 문서:
+이 문서는 AEM의 주요 페이지 작성 작업에 대한 빠른 시작 개요 안내서로서 작성되었습니다. 이 문서는
 
-* 포괄적으로 적용되는 것은 아닙니다.
+* 포괄적인 내용을 담고 있지는 않습니다.
 * 자세한 설명서에 대한 링크를 제공합니다.
 
 AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하십시오.
@@ -21,17 +21,17 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ## 몇 가지 빠른 힌트 {#a-few-quick-hints}
 
-빠른 시작 안내서를 시작하기 전에 기억해야 하는 일반적인 팁과 힌트 몇 가지를 작성 시스템의 영역으로 나누어서 설명합니다.
+여기에서는 빠른 시작 안내서를 시작하기 전에 기억해야 하는 일반적인 팁과 힌트 몇 가지를 작성 시스템의 영역으로 나누어서 설명합니다.
 
-### 사이트 콘솔에서 {#sites-console}
+### Sites 콘솔에서 {#sites-console}
 
 * 만들기 단추
 
    * 이 단추는 여러 콘솔에서 사용할 수 있습니다. 제공된 옵션은 상황에 맞는 옵션이므로 시나리오에 따라 달라질 수 있습니다.
 
-* 페이지 순서 변경
+* 페이지 순서 재지정
 
-   * This can be done in [List View](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). The changes will be applied and be visible in other views.
+   * 이 작업은 [목록 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)에서 수행할 수 있습니다. 변경 사항이 적용되고 다른 보기에서 볼 수 있습니다.
 
 ### 페이지 작성 {#page-authoring}
 
@@ -42,7 +42,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * [미리 보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [게시됨으로 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* Versions are not started/created from the page editor. This is now done from the **Sites** console (via either **Create** or [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) for a selected resource).
+* 버전이 페이지 편집기에서 시작/작성되지 않습니다. 이제는 **Sites** 콘솔에서 수행됩니다(선택한 리소스에 대한 **만들기** 또는 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)을 통해).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![선택 항목 보기 드롭다운](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), which allows you to return to the selected location:
+1. [헤더에서 탐색 표시](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)를 사용하여 트리 위로 탐색합니다. 그러면 선택한 위치로 돌아갈 수 있습니다.
 
    ![탐색 표시 드롭다운](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -97,19 +97,19 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 카드 보기:
 
-   * Enter selection mode by [selecting the required resource](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources). 이 방법은 장치에 따라 다릅니다.
+   * [필요한 리소스를 선택](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)하여 선택 모드에 들어갑니다. 이렇게 하는 방법은 장치에 따라 다릅니다.
 
-      * 모바일 장치에서:카드를 길게 탭하기
-      * 데스크톱 장치에서:tick 아이콘으로 표시되는 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 사용:
+      * 모바일 장치에서: 카드를 길게 탭
+      * 데스크탑 장치에서: 확인 표시 아이콘으로 표시되는 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 사용
    * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
-   ![예제 카드](/help/sites-cloud/authoring/assets/card.png)
+   ![카드 예](/help/sites-cloud/authoring/assets/card.png)
 
 ### 빠른 작업(카드 보기/데스크탑 전용) {#quick-actions-card-view-desktop-only}
 
 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)을 사용할 수 있습니다.
 
 1. 작업을 수행할 [페이지로 이동](#finding-your-page)합니다.
-1. 필요한 리소스를 나타내는 카드 위로 마우스 포인터를 가져갑니다.빠른 작업이 표시됩니다.
+1. 필요한 리소스를 나타내는 카드 위에 마우스 포인터를 두면 빠른 작업이 표시됩니다.
 
    ![카드 작업](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -124,16 +124,16 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    다음 방법 중 하나로 해당 아이콘에 액세스할 수 있습니다.
 
-   * [해당 리소스에 대한 빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only) .
+   * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
    * 페이지를 선택했을 때의 [도구 모음](#selecting-your-page-for-further-action)
 
 1. 편집기가 열리면 다음을 수행할 수 있습니다.
 
-   * [다음 방법으로 페이지에](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component) 새 구성 요소를 추가합니다.
+   * 다음 작업을 수행하여 [페이지에 새 구성 요소 추가](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component):
 
       * 사이드 패널 열기
-      * Selecting the components tab (the [components browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser))
-      * 필요한 구성 요소를 페이지로 드래그합니다.
+      * 구성 요소 탭([구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)) 선택
+      * 필요한 구성 요소를 페이지로 드래그
       다음 아이콘을 사용하여 사이드 패널을 열고 닫을 수 있습니다.
 
       ![사이드 패널 전환 단추](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -151,23 +151,23 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 다음 방법 중 하나로 [구성 요소를 이동](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)합니다.
 
       * 필요한 구성 요소를 새 위치로 끕니다.
-      * Open the component toolbar with either tap or click. Use the **Cut** then **Paste** icons where required.
+      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요한 경우 **잘라내기** 및 **붙여넣기** 아이콘을 사용합니다.
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
-      * Open the component toolbar with either tap or click. Use the **Copy** then **Paste** icons as required.
+      * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
    >[!NOTE]
    >
    >같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
 
    * 구성 요소 [삭제:](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
-      * Open the component toolbar with either tap or click, then use the **Delete** icon.
+      * 탭하거나 클릭하여 구성 요소 도구 모음을 열고 **삭제** 아이콘을 사용합니다.
    * 페이지에 [주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations):
 
       * **주석** 모드(말풍선 아이콘)를 선택합니다. **주석 추가**(더하기) 아이콘을 사용하여 주석을 추가합니다. 오른쪽 상단의 X를 사용하여 주석 모드를 끝냅니다.
 
          ![주석 단추](/help/sites-cloud/authoring/assets/annotations.png)
-   * [페이지 미리 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) (게시 환경에 표시될 모양 보기)
+   * [페이지 미리 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)(게시 환경에 표시될 모양 보기)
 
       * 도구 모음에서 **미리 보기**&#x200B;를 선택합니다.
    * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
@@ -184,7 +184,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    1. 게시할 [페이지로 이동](#finding-your-page)합니다.
    1. 다음 중 하나를 사용하여 **속성** 아이콘을 선택합니다.
 
-      * [해당 리소스에 대한 빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only) .
+      * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
       * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
       ![속성 단추](/help/sites-cloud/authoring/assets/properties.png)
 
@@ -205,9 +205,9 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 * **사이트** 콘솔에서:
 
    1. 게시할 [페이지로 이동](#finding-your-page)합니다.
-   1. Select the **Quick Publish** icon from either:
+   1. 다음 중 하나에서 **빠른 게시** 아이콘을 선택합니다.
 
-      * [해당 리소스에 대한 빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only) .
+      * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
       * [페이지를 선택했을 때](#selecting-your-page-for-further-action)(또는 [나중에 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)에 액세스할 때)의 도구 모음
       ![빠른 게시 단추](/help/sites-cloud/authoring/assets/quick-publish.png)
 
@@ -273,7 +273,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![참조 보기](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고 (해당되는 경우) 추가 작업을 수행합니다.
+1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고(해당되는 경우) 추가 작업을 수행합니다.
 
 ### 페이지 버전 생성 {#creating-a-version-of-your-page}
 
@@ -283,7 +283,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![타임라인 보기 옵션](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Tap/click on the ellipsis at the bottom right of the Timeline column to reveal extra buttons, including **Save as Version**.
+1. 타임라인 열 오른쪽 하단에 있는 생략 부호를 탭하거나 클릭하여 **다른 버전으로 저장**&#x200B;을 비롯한 추가 단추를 표시합니다.
 
    ![타임라인 보기](/help/sites-cloud/authoring/assets/timeline-view.png)
 
