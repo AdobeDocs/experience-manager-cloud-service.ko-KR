@@ -1,7 +1,7 @@
 ---
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -61,12 +61,12 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **해제 시간**
 
    * 게시된 페이지를 비활성화할 시간입니다.
-   * 즉시 작업을 수행하려면 이 필드를 비워 두십시오.
+   * 즉각적인 조치를 취할 수 있도록 이러한 필드를 비워 둡니다.
 
 * **별칭 URL**
 
    * 이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
-   * For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
+   * 예를 들어 웹 사이트 `http://example.com`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `welcome`으로 설정하면, `http://example.com/welcome`이 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
    >[!CAUTION]
    >
    >별칭 URL:
@@ -99,11 +99,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 이 페이지에 사용할 별칭을 지정합니다.
    >[!NOTE]
    >
-   >별칭은 `sling:alias` 속성을 설정하여 리소스의 별칭 이름을 정의합니다. 이 이름은 경로가 아니라 리소스에만 영향을 줍니다.
+   >별칭은 리소스의 별칭 이름을 정의하기 위해 `sling:alias` 속성을 설정합니다. 이 이름은 경로에는 영향을 주지 않고 리소스에만 영향을 줍니다.
    >
-   >예:노드 노드에 `latin-lang` 대한 별칭을 정의하는 경우, 이 `/content/we-retail/spanish` 페이지는 `/content/we-retail/latin-language`
+   >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
    >
-   >자세한 내용은 SEO 및 URL 관리 우수 사례 아래의 현지화된 페이지 이름을 참조하십시오.
+   >자세한 내용은 SEO 및 URL 관리 우수 사례 아래의 로컬라이제이션된 페이지 이름을 참조하십시오.
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -135,7 +135,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    * 내보내기 구성을 지정합니다.
 
-### 축소판 {#thumbnail}
+### 썸네일 {#thumbnail}
 
 페이지 썸네일 이미지를 보여 줍니다. 다음을 작업을 수행할 수 있습니다.
 
@@ -159,24 +159,24 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **소셜 미디어 공유**
 
-   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
+   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
 
    * **Facebook에 대한 사용자 공유 활성화**
    * **Pinterest에 대한 사용자 공유 활성화**
    * **선호하는 XF 변형**
-      * 페이지의 메타데이터를 생성하는 데 사용되는 경험 조각 변형 정의
+      * 페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의합니다.
 
 ### 클라우드 서비스 {#cloud-services}
 
 * **클라우드 서비스**
 
-   * 클라우드 서비스<!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->에 대한 속성을 정의합니다. 
+   * 클라우드 서비스에 대한 속성을 정의합니다. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
 
 ### 개인화 {#personalization}
 
 * **ContextHub 구성**
 
-   * ContextHub 구성 및 세그먼트 경로<!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->를 선택합니다. 
+   * ContextHub 구성 및 세그먼트 경로를 선택합니다. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
 
 * **타깃팅 구성**
 
@@ -194,14 +194,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **블루프린트**
 
-   * Define properties for a Blueprint page within multi-site management. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * 다중 사이트 관리 내에서 블루프린트 페이지에 대한 속성을 정의합니다.<!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
    * 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
 ### Live Copy {#live-copy}
 
 * **Livecopy**
 
-   * Define properties for a Live Copy page within multi-site management. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
+   * 다중 사이트 관리 내에서 Live Copy 페이지에 대한 속성을 정의합니다.<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
 ### 사이트 구조 {#site-structure}
@@ -212,18 +212,18 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **사이트** 콘솔에서:
    * [새 페이지 만들기](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)(속성 하위 집합)
-   * Clicking or tapping **Properties**
+   * **속성** 클릭 또는 탭
       * 단일 페이지의 경우
       * 여러 페이지의 경우(속성의 하위 집합만 편집 가능)
 * 페이지 편집기에서:
-   * Using **Page Information** (then **Open Properties**)
+   * **페이지 정보**&#x200B;를 사용하여 **속성 열기**
 
 ### 사이트 콘솔에서 - 단일 페이지 {#from-the-sites-console-single-page}
 
 **속성**&#x200B;을 클릭하거나 탭하여 페이지 속성을 정의하십시오.
 
 1. **사이트** 콘솔에서 속성을 보고 편집할 페이지의 위치로 이동합니다.
-1. Select the **Properties** option for the required page using either:
+1. 다음 중 하나를 사용하여 필요한 페이지에 대한 **속성** 옵션을 선택합니다.
    * [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * 페이지 속성이 해당 탭을 사용하여 표시됩니다.
@@ -236,7 +236,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 속성을 편집할 페이지를 엽니다.
 1. **페이지 정보** 아이콘을 선택하여 다음과 같은 선택 메뉴를 엽니다.
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. 다음 단추들은 도구 모음의 오른쪽에서도 사용할 수 있습니다.
+1. **속성 열기**&#x200B;를 선택합니다. 해당 탭별로 정렬된 속성을 편집할 수 있는 대화 상자가 열립니다. 다음 단추들은 도구 모음의 오른쪽에서도 사용할 수 있습니다.
    * **취소**
    * **저장 및 닫기**
 1. **저장 및 닫기** 단추를 사용하여 변경 사항을 저장합니다.
@@ -261,9 +261,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **사이트** 콘솔을 찾아볼 때
 * **검색**&#x200B;을 사용하여 일련의 페이지를 찾은 후
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+페이지를 선택한 다음 **속성 옵션**&#x200B;을 클릭하거나 탭하면 벌크 속성이 표시됩니다.
 
-![페이지 속성 일괄 편집](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
+![페이지 속성 벌크 편집](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
 다음과 같은 페이지에 대해서만 벌크 편집을 수행할 수 있습니다.
 
@@ -292,7 +292,7 @@ After selecting the pages and then clicking or tapping the **Properties option**
    * 사용 가능한 필드의 값을 업데이트할 수 있습니다.
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
       * 필드가 다중 값(예: 태그)이면 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. 이러한 필드를 편집할 때는 데이터가 손실되지 않도록 주의해야 합니다.
+   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다. 이러한 필드를 편집할 때는 데이터가 손실되지 않도록 주의해야 합니다.
 
 >[!NOTE]
 >
