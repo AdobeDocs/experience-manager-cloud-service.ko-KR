@@ -2,7 +2,7 @@
 title: 컨텐츠 검색 및 인덱싱
 description: '컨텐츠 검색 및 인덱싱 '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
 
 ---
 
@@ -61,7 +61,7 @@ AS NOTE: the above is internal for now.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-그 다음 `ui.content/src/main/content/jcr_root`밑으로 들어가야겠네요 현재 하위 루트 폴더는 지원되지 않습니다.
+그 다음 `ui.apps/src/main/content/jcr_root`밑으로 들어가야겠네요 현재 하위 루트 폴더는 지원되지 않습니다.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -71,9 +71,9 @@ AS NOTE: the above is internal for now.
 
 이제 색인 정의가 사용자 정의 및 버전 관리로 표시됩니다.
 
-* 가변 컨텐츠인 색인 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
+* 색인 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
 
-따라서 인덱스를 배포하려면 일반적으로 Git 및 Cloud Manager 배포 프로세스를 통해`/oak:index/definitionname`변경 가능한 패키지를 **통해**&#x200B;색인 정의( `ui.content` )를 전달해야 합니다.
+따라서 색인을 배포하려면 Git 및 Cloud Manager 배포 프로세스를`/oak:index/definitionname`통해 색인 정의( `ui.apps` )를 전달해야 합니다.
 
 새 인덱스 정의가 추가되면 Cloud Manager를 통해 새 애플리케이션을 배포해야 합니다. 배포 시 작성자와 게시를 위해 각각 MongoDB 및 Azure 세그먼트 저장소에 인덱스 정의를 추가(필요한 경우 병합)할 책임이 있는 두 개의 작업이 시작됩니다. Blue-Green 스위치를 실행하기 전에 기본 리포지토리는 새 인덱스 정의로 다시 색인화됩니다.
 
@@ -93,7 +93,7 @@ AS NOTE: the above is internal for now.
 
 * **/**
 * */apps(읽기 전용)*
-* **/컨텐츠**
+* **/content**
 * */libs(읽기 전용)*
 * **/oak:index**
 * **/oak:index/acme**
