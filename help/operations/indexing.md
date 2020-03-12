@@ -2,7 +2,7 @@
 title: 컨텐츠 검색 및 인덱싱
 description: '컨텐츠 검색 및 인덱싱 '
 translation-type: tm+mt
-source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
+source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
 
 ---
 
@@ -68,6 +68,10 @@ AS NOTE: the above is internal for now.
 위 샘플의 패키지는 로 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`빌드됩니다.
 
 ### 색인 정의 배포 {#deploying-index-definitions}
+
+> [!NOTE]
+>
+> Jackrabbit Filevault Maven Package Plugin 버전 **1.1.0** 관련 알려진 문제로 인해 모듈 `oak:index` 추가 작업이 `<packageType>application</packageType>`중단되었습니다. 이 문제를 해결하려면 버전 **1.0.4를 사용하십시오**.
 
 이제 색인 정의가 사용자 정의 및 버전 관리로 표시됩니다.
 
