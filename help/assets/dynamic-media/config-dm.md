@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud 서비스 구성
 description: Adobe Experience Manager Cloud Service에서 Dynamic Media를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
+source-git-commit: 91f1a7c89b3c3122a0d1cd3fde4a45c16bcff317
 
 ---
 
@@ -73,7 +73,7 @@ Dynamic Media Cloud 서비스를 구성하려면:
    * **[!UICONTROL 모든 컨텐츠]** 동기화 - 기본적으로 선택됩니다. 다이내믹 미디어와 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.
 
    * **[!UICONTROL Dynamic Media 동기화 모드]**
-      * **[!UICONTROL 기본적으로]** 활성화 - 제외되도록 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL 기본적으로]** 사용 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로]** 비활성화 - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시해야만 구성이 어떤 폴더에도 적용되지 않습니다.
 선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더의 속성 페이지를 엽니다. 세부 **[!UICONTROL 사항]** 탭을 누른 다음 Dynamic Media **[!UICONTROL 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택한 다음 저장을 **[!UICONTROL 탭합니다]**.
          * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태.
@@ -168,7 +168,7 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 
 >[!NOTE]
 >
->기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 **[!UICONTROL 사전 설정을 선택하면]** 15개의변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 감소 [표시되는](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가 또는 감소를 참조하십시오.
+>기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 **[!UICONTROL 사전]** 설정을 선택하면 15개의 변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 감소 [표시되는](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가 또는 감소를 참조하십시오.
 
 
 #### 색상 관리 구성 {#configuring-color-management}
