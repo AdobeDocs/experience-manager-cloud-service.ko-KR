@@ -4,7 +4,7 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -415,78 +415,79 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-1. 주석에 대해 사용자에게 알리려면 사용자의 이메일 주소를 지정하고 주석을 추가합니다. 예를 들어 주석을 Aaron MacDonald에 알리려면 @aa를 입력합니다. 일치하는 모든 사용자에 대한 힌트가 목록에 표시됩니다. 목록에서 Aaron의 이메일 주소를 선택하여 주석에 태그를 지정합니다. 마찬가지로 주석 내 또는 그 이전 또는 후에 더 많은 사용자에게 태그를 지정할 수 있습니다.
+<!--
+1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
    >[!NOTE]
    >
-   >관리자가 아닌 사용자의 경우, 사용자에게 Crx-de의 */home* 읽기 권한이 있는 경우에만 제안이 나타납니다.
+   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. 주석을 추가한 후 추가를 **[!UICONTROL 클릭하여]** 저장합니다. 주석에 대한 알림이 Aaron에게 전송됩니다.
+1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
    >[!NOTE]
    >
-   >여러 주석을 저장하기 전에 추가할 수 있습니다.
+   >You can add multiple annotations, before you save them.
 
-1. 닫기를 탭/ **[!UICONTROL 클릭하여]** 주석 모드에서 종료합니다.
-1. 알림을 보려면 Aaron MacDonald의 자격 증명으로 AEM 자산에 로그인하고 알림 **[!UICONTROL 아이콘을 클릭하여]** 알림을 확인합니다.
+1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
+1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
-   >주석을 비디오 자산에 추가할 수도 있습니다. 비디오에 주석을 달 때 플레이어에서 프레임에 주석을 달 수 있도록 일시 중지됩니다. 자세한 내용은 비디오 자산 [관리를 참조하십시오](manage-video-assets.md).
+   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md).
 
-1. 사용자를 차별화할 수 있도록 다른 색상을 선택하려면 프로필 아이콘을 클릭/탭하고 내 기본 설정을 클릭/ **[!UICONTROL 탭합니다]**.
+1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   [주석 색상] 상자에서 원하는 색상을 **[!UICONTROL 지정한]** 다음 [승인]을 클릭/ **[!UICONTROL 탭합니다]**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
 >[!NOTE]
 >
->컬렉션에 주석을 추가할 수도 있습니다. 그러나 컬렉션에 하위 컬렉션이 포함된 경우 상위 컬렉션에만 주석/주석을 추가할 수 있습니다. 자식 컬렉션에는 주석 옵션을 사용할 수 없습니다.
+>You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
 
-### 저장된 주석 보기 {#viewing-saved-annotations}
+### View saved annotations {#viewing-saved-annotations}
 
-1. 자산에 대해 저장된 주석을 보려면 자산의 위치로 이동하고 자산의 자산 페이지를 엽니다.
+1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
-1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 목록에서 타임라인을]** 선택합니다.
+1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. 타임라인의 **[!UICONTROL 모든]** 표시 목록에서 주석을 **[!UICONTROL 기반으로 결과를]** 필터링하려면 주석을 선택합니다.
+1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   타임라인 패널에서 주석을 탭/클릭하여 **[!UICONTROL 이미지에]** 해당하는 주석을 표시합니다.
+   Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   삭제를 탭/ **[!UICONTROL 클릭하여]**&#x200B;특정 주석을 삭제합니다.
+   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
-### 주석 인쇄 {#printing-annotations}
+### Print annotations {#printing-annotations}
 
-에셋에 주석이 있거나 검토 워크플로우가 수행되어 있는 경우 오프라인 검토를 위해 주석과 함께 에셋을 인쇄하고 상태를 PDF 파일로 검토할 수 있습니다.
+If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
-주석만 인쇄하거나 상태를 검토하도록 선택할 수도 있습니다.
+You can also choose to print only the annotations or review status.
 
-주석을 인쇄하고 상태를 검토하려면 인쇄 **[!UICONTROL 아이콘을 탭/클릭하고]** 마법사의 지침을 따릅니다. 인쇄 **[!UICONTROL 아이콘은]** 자산에 하나 이상의 주석 또는 검토 상태가 할당된 경우에만 도구 모음에 표시됩니다.
+To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
-1. 자산 UI에서 자산의 미리 보기 페이지를 엽니다.
-1. 다음 중 하나를 수행하십시오.
+1. From the Assets UI, open the preview page for an asset.
+1. Do one of the following:
 
-   * 모든 주석과 검토 상태를 인쇄하려면 3단계를 건너뛰고 4단계로 바로 이동합니다.
-   * 특정 주석을 인쇄하고 상태를 검토하려면 [타임라인을](/help/assets/manage-digital-assets.md#timeline) 연 다음 3단계로 이동합니다.
+    * To print all the annotations and the review status, skip step 3 and directly go to step 4.
+    * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
 
-1. 특정 주석을 인쇄하려면 타임라인에서 주석을 선택합니다.
+1. To print specific annotations, select the annotations from the timeline.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   검토 상태만 인쇄하려면 타임라인에서 선택합니다.
+   To print the review status only, select it from the timeline.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -494,120 +495,120 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. 인쇄 대화 상자에서 주석/검토 상태를 PDF에 표시할 위치를 선택합니다. 예를 들어 인쇄된 이미지가 들어 있는 페이지의 오른쪽 위에 주석/상태를 인쇄하려면 왼쪽 **위 설정을 사용합니다** . 기본적으로 선택됩니다.
+1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   인쇄 PDF에 주석/상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. 인쇄된 자산과 별개인 페이지에 주석/상태를 표시하려면 [다음 페이지]를 **[!UICONTROL 선택합니다]**.
+   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
    >[!NOTE]
    >
-   >긴 주석이 PDF 파일에서 제대로 렌더링되지 않을 수 있습니다. 최적의 렌더링을 위해 주석을 50단어로 제한하는 것이 좋습니다.
+   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
 
-1. 인쇄를 탭/ **[!UICONTROL 클릭합니다]**. 2단계에서 선택한 옵션에 따라 생성된 PDF에 지정된 위치에 주석/상태가 표시됩니다. 예를 들어 왼쪽 위 설정을 사용하여 주석과 검토 상태를 모두 인쇄하도록 선택한 **경우** 생성된 출력은 여기에 설명된 PDF 파일과 유사합니다.
+1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. 오른쪽 상단의 옵션을 사용하여 PDF를 다운로드하거나 인쇄할 수 있습니다.
+1. Download or print the PDF using the options at the top-right.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   글꼴 색상, 크기 및 스타일, 주석 및 상태의 배경색 등 렌더링된 PDF 파일의 모양을 수정하려면 Configuration Manager에서 **[!UICONTROL 주석 PDF 구성을]** 열고 원하는 옵션을 수정합니다. 예를 들어, 승인된 상태의 표시 색상을 변경하려면 해당 필드에서 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 주석 [달기를 참조하십시오](/help/assets/manage-digital-assets.md#annotating).
+   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-   렌더링된 PDF 파일로 돌아가 새로 고칩니다. 새로 고친 PDF는 변경한 내용을 반영합니다.
+   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
-## 에셋 버전 관리 {#asset-versioning}
+## Asset versioning {#asset-versioning}
 
-버전 매기기를 통해 특정 시점의 디지털 자산 스냅샷을 만들 수 있습니다. 버전 관리를 통해 나중에 에셋을 이전 상태로 복원할 수 있습니다. 예를 들어, 자산에 대한 변경 사항을 취소하려는 경우 편집되지 않은 버전의 자산을 복원합니다.
+Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
 
-다음은 버전을 만드는 시나리오입니다.
+The following are scenarios where you create versions:
 
-* 다른 애플리케이션에서 이미지를 수정하고 AEM 자산에 업로드합니다. 원본 이미지를 덮어쓰지 않도록 이미지 버전이 만들어집니다.
-* 자산의 메타데이터를 편집합니다.
-* AEM 데스크톱 앱을 사용하여 기존 자산을 체크 아웃하고 변경 내용을 저장합니다. 에셋을 저장할 때마다 새 버전이 만들어집니다.
+* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
+* You edit the metadata of an asset.
+* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
 
-워크플로우를 통해 자동 버전 관리를 활성화할 수도 있습니다. 자산에 대한 버전을 만들면 메타데이터와 표현물이 버전과 함께 저장됩니다. 변환은 업로드된 JPEG 파일의 PNG 변환과 같은 동일한 이미지의 대체 요소가 렌더링됩니다.
+You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
-버전 관리 기능을 사용하면 다음을 수행할 수 있습니다.
+The versioning functionality lets you do the following:
 
-* 자산의 버전을 만듭니다.
-* 자산에 대한 현재 개정판을 봅니다.
-* 자산을 이전 버전으로 복원합니다.
+* Create a version of an asset.
+* View the current revision for an asset.
+* Restore the asset to a previous version.
 
-1. 버전을 만들 자산의 위치로 이동한 후 자산을 탭/클릭하여 자산 페이지를 엽니다.
+1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
 
-1. 전역 탐색 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인을]** 선택합니다.
+1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
 
-   ![타임라인](assets/timeline.png)
+   ![timeline](assets/timeline.png)
 
-1. 하단에 **[!UICONTROL 있는 작업]** (화살표) 아이콘을 탭/클릭하여 자산에서 수행할 수 있는 사용 가능한 작업을 봅니다.
+1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. 버전으로 저장을 탭/ **[!UICONTROL 클릭하여]** 자산에 대한 버전을 만듭니다.
+1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. 레이블과 주석을 추가한 다음 만들기를 클릭하여 **[!UICONTROL 버전을]** 만듭니다. 또는 취소를 탭/클릭하여 **작업을** 종료합니다.
+1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. 새 버전을 보려면 자산 세부 사항 **[!UICONTROL 페이지]** 또는 자산 UI에서 타임라인에서 모두 표시 목록을 열고 버전을 **[!UICONTROL 선택합니다]**. 자산에 대해 만들어진 모든 버전은 타임라인 탭 아래에 나열됩니다. 드롭다운 화살표를 클릭하고 목록에서 버전을 선택하여 버전을 표시하도록 **[!UICONTROL 목록을 필터링할]** 수 있습니다.
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
    ![versions_option](assets/versions_option.png)
 
-1. 자산을 미리 보거나 자산 UI에 표시할 특정 버전을 선택합니다.
+1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
 
    ![select_version](assets/select_version.png)
 
-1. 버전에 대한 레이블 및 주석을 추가하여 자산 UI의 특정 버전으로 되돌립니다.
+1. Add a label and comment for the version to revert to the particular version in the Assets UI.
 
    ![save_version](assets/save_version.png)
 
-1. 버전에 대한 미리 보기를 생성하려면 버전 미리 보기를 탭/ **[!UICONTROL 클릭합니다]**.
-1. 자산 UI에서 이 버전을 표시하려면 이 버전으로 **[!UICONTROL 되돌리기를 선택합니다]**.
-1. 두 버전 간에 비교하려면 자산의 자산 페이지로 이동하여 현재 버전과 비교할 버전을 탭/클릭합니다.
+1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
+1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
+1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. 타임라인에서 비교할 버전을 선택하고 슬라이더를 왼쪽으로 드래그하면 현재 버전 위에 이 버전을 오버레이하고 비교할 수 있습니다.
+1. From the timeline, select the version you want to compare and drag the slider to the left to superimpose this version over the current version and compare.
 
    ![compare_versions](assets/compare_versions.png)
 
-### 자산에서 워크플로우 시작 {#starting-a-workflow-on-an-asset}
+### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
 
-1. 워크플로우를 시작할 자산의 위치로 이동하고 자산을 탭/클릭하여 자산 페이지를 엽니다.
-1. 전역 탐색 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인을]** 선택하여 타임라인을 표시합니다.
+1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
+1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
-   ![타임라인-1](assets/timeline-1.png)
+   ![timeline-1](assets/timeline-1.png)
 
-1. 하단에 있는 **[!UICONTROL 작업]** (화살표) 아이콘을 탭/클릭하여 자산에 사용할 수 있는 작업 목록을 엽니다.
+1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. 목록에서 워크플로우 **[!UICONTROL 시작을]** 탭/클릭합니다.
+1. Tap/click **[!UICONTROL Start Workflow]** from the list.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. 워크플로우 **[!UICONTROL 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. (선택 사항) 워크플로우 인스턴스를 참조하는 데 사용할 수 있는 워크플로우의 제목을 지정합니다.
+1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 시작을 탭/ **[!UICONTROL 클릭한]** 다음 대화 **[!UICONTROL 상자에서 진행을]** 탭/클릭하여 확인합니다. 각 워크플로우 단계는 타임라인에 이벤트로 표시됩니다.
+1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-## 컬렉션 {#collections}
+## Collections {#collections}
 
-컬렉션은 순차적 자산 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다.
+A collection is an ordered set of assets. Use collections to share assets between users.
 
-* 컬렉션은 이러한 자산에 대한 참조만 포함하므로 다른 위치의 자산을 포함할 수 있습니다. 각 컬렉션은 자산의 참조 무결성을 유지합니다.
-* 편집, 보기 등 다양한 권한 수준을 가진 여러 사용자와 컬렉션을 공유할 수 있습니다.
+* A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
+* You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-컬렉션 [관리에](/help/assets/manage-collections.md) 대한 자세한 내용은 컬렉션 관리를 참조하십시오.
+See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.
