@@ -1,13 +1,13 @@
 ---
-title: 프로젝트의 컨텐츠 패키지 구조 이해
-description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 제대로 정의하는 방법에 대해 학습합니다.
+title: AEM 프로젝트 구조
+description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 학습합니다.
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# Adobe Experience Manager Cloud Service의 프로젝트 콘텐츠 패키지 구조 이해 {#understand-cloud-service-package-structure}
+# AEM 프로젝트 구조
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ AEM에서는 **컨텐츠와** **코드를**&#x200B;분리해야 **합니다. 즉
 
 `/apps` 및 AEM은 AEM이 시작된 후(예: 런타임 시) 변경(생성, 업데이트, 삭제) `/libs` **** 할 수 없으므로 변경할 수 없는 영역으로 간주됩니다. 실행 시 변경할 수 없는 영역을 변경하려고 하면 실패합니다.
 
-저장소, `/content`, `/conf`, `/var``/home`, `/etc``/oak:index`, `/system`복구, `/tmp`복구 등 다른 모든 것 는 모두 **변경 가능한** 영역이므로 런타임 시 변경할 수 있습니다.
+저장소의 다른 모든 것, `/content``/conf`, `/var``/etc`, `/oak:index``/system`, `/tmp`,등 는 모두 **변경 가능한** 영역이므로 런타임 시 변경할 수 있습니다.
 
 >[!WARNING]
 >
@@ -58,23 +58,28 @@ AEM에서는 **컨텐츠와** **코드를**&#x200B;분리해야 **합니다. 즉
       + `/apps/settings`
    + ACL(권한)
       + 임의 `rep:policy` 경로 `/apps`
+   + Repo Init OSGi 구성 지침(및 관련 스크립트)
+      + [Repo Init](#repo-init) 는 AEM 애플리케이션의 논리적으로 구성 가능한 컨텐츠를 배포하는 데 권장되는 방법입니다. Repo Init를 사용하여 다음을 정의해야 합니다.
+         + 기본 컨텐츠 구조
+            + `/conf/my-app`
+            + `/content/my-app`
+            + `/content/dam/my-app`
+         + 사용자
+         + 서비스 사용자
+         + 그룹
+         + ACL(권한)
+            + 모든 `rep:policy` 경로(변경 가능 또는 변경 불가능)
 + 패키지 또는 코드 `ui.content` 패키지에는 모든 컨텐츠와 구성이 들어 있습니다. 패키지의 일반적인 요소에는 다음이 포함되지만 이에 국한되지 않습니다. `ui.content`
    + 컨텍스트 인식 구성
       + `/conf`
-   + 기본 컨텐츠 구조(자산 폴더, 사이트 루트 페이지)
+   + 필수, 복잡한 컨텐츠 구조(예: Report Init에 정의된 기준선 컨텐츠 구조를 기반으로 구축되어 확장되는 컨텐츠 빌드아웃입니다.
       + `/content`, `/content/dam`, 등이 됩니다.
    + 관리 태깅 분류
       + `/content/cq:tags`
-   + 서비스 사용자
-      + `/home/users`
-   + 사용자 그룹
-      + `/home/groups`
    + Oak 인덱스
-      + `/oak:indexes`
+      + `/oak:index`
    + 기타 레거시 노드
       + `/etc`
-   + ACL(권한)
-      + Any `rep:policy` for any path **not** under `/apps`
 + 패키지는 `all` 포함 패키지만 `ui.apps` 및 `ui.content` 패키지를 포함하는 컨테이너 패키지입니다. 패키지에 `all` 자체 컨텐츠가 **** 없어야 하지만, 모든 배포를 하위 패키지에 위임해야 합니다.
 
    이제 패키지는 [구성이 아닌 Maven FileVault Package](#embeddeds)Maven 플러그인의 임베드 구성을 `<subPackages>` 사용하여 포함됩니다.
@@ -111,6 +116,35 @@ AEM에서는 **컨텐츠와** **코드를**&#x200B;분리해야 **합니다. 즉
 >[!TIP]
 >
 >전체 코드 [조각에 대한 자세한 내용은](#pom-xml-snippets) 아래의 POM XML 코드 조각 섹션을 참조하십시오.
+
+## 보고서 초기화{#repo-init}
+
+Repo Init는 폴더 트리와 같은 공통 노드 구조에서 사용자, 서비스 사용자, 그룹 및 ACL 정의에 이르기까지 JCR 구조를 정의하는 지침 또는 스크립트를 제공합니다.
+
+Repo Init의 주요 이점은 스크립트에 의해 정의된 모든 작업을 수행할 수 있는 암시적 권한이 있으며 배포 라이프사이클의 초기에 호출되어 시간 코드가 실행될 때까지 모든 필수 JCR 구조가 존재함을 보장한다는 것입니다.
+
+Repo Init 스크립트는 프로젝트에서 스크립트로 라이브되지만, 다음과 같은 변경 가능한 구조를 정의하는 데 사용할 수 있으며 사용해야 합니다. `ui.apps`
+
++ 기본 컨텐츠 구조
+   + 예: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
++ 서비스 사용자
++ 사용자
++ 그룹
++ ACL
+
+Repo Init 스크립트는 OSGi 팩토리 구성의 `scripts` 항목으로 저장되므로 `RepositoryInitializer` 런타임 모드를 통해 암시적으로 타깃팅할 수 있으므로 AEM Author 및 AEM Publish Services의 Repo Init 스크립트 또는 Envs(Dev, Stage 및 Prod) 간 차이점을 확인할 수 있습니다.
+
+사용자 및 그룹을 정의할 때 그룹만 애플리케이션의 일부로 간주되며, 이 경우 해당 기능에 대한 필수 구성 요소가 여기에 정의되어 있어야 합니다. 조직 사용자 및 그룹은 AEM에서 런타임 시 여전히 정의되어 있어야 합니다.예를 들어, 사용자 지정 워크플로가 지정된 그룹에 작업을 할당하는 경우, AEM 애플리케이션에서 Repo Init를 통해 해당 그룹이 정의되어야 하지만, 그룹화가 &quot;Wendy&#39;s Team&quot; 및 &quot;Sean&#39;s Team&quot;과 같은 단순한 조직일 경우, 이것이 AEM에서 런타임 시 가장 잘 정의되고 관리됩니다.
+
+>[!TIP]
+>
+>Repo Init 스크립트를 인라인 *필드에 정의해야* 하며 `scripts` `references` 구성이 작동하지 않습니다.
+
+Repo Init 스크립트의 전체 어휘는 Apache Sling Repo [Init 문서에서](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)사용할 수 있습니다.
+
+>[!TIP]
+>
+>전체 코드 [조각에 대한 자세한 내용은](#snippet-repo-init) 아래 Repo Init Snippets 섹션을 참조하십시오.
 
 ## 저장소 구조 패키지 {#repository-structure-package}
 
@@ -151,7 +185,7 @@ AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하기 위해 패키지는 
    + `/apps/vendor-packages`
    >[!WARNING]
    >
-   >규칙에 따라 하위 패키지 포함 폴더의 이름은 `-packages`의 접미어로 지정됩니다. 이렇게 하면 배포 코드 및 컨텐츠 패키지가 파괴적이고 반복적인 설치 동작을 **일으키는 하위 패키지의 대상 폴더를 배포하지** 않습니다 `/apps/<app-name>/...` .
+   >규칙에 따라, 하위 패키지 포함 폴더의 이름은 `-packages`의 접미어로 지정됩니다. 이렇게 하면 배포 코드 및 컨텐츠 패키지가 파괴적이고 반복적인 설치 동작을 **일으키는 하위 패키지의 대상 폴더를 배포하지** 않습니다 `/apps/<app-name>/...` .
 
 + 세 번째 수준 폴더는 다음 중 하나여야 합니다.
    `application` 또는 `content`
@@ -321,6 +355,28 @@ Maven 종속성을 추가하는 것은 표준 Maven 사례를 따르고, 타사 
     ...
 ```
 
+### 보고서 초기화{#snippet-repo-init}
+
+Repo Init 스크립트가 포함된 Repo Init 스크립트는 `RepositoryInitializer` `scripts` 속성을 통해 OSGi 팩토리 구성에 정의됩니다. 이러한 스크립트는 OSGi 구성 내에서 정의되므로 일반적인 `../config.<runmode>` 폴더 의미 체계를 사용하여 런타임 모드로 쉽게 범위가 지정될 수 있습니다.
+
+스크립트는 일반적으로 여러 줄 선언이므로 XML 기반 `.config` `sling:OsgiConfig` 형식보다 파일에서 정의하는 것이 쉽습니다.
+
+`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
+
+```plain
+scripts=["
+    create service user my-data-reader-service
+
+    set ACL on /var/my-data
+        allow jcr:read for my-data-reader-service
+    end
+
+    create path (sling:Folder) /conf/my-app/settings
+"]
+```
+
+OSGi `scripts` 속성은 Apache Sling의 Repo [Init 언어로](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)정의된 지시어를 포함합니다.
+
 ### 저장소 구조 패키지 {#xml-repository-structure-package}
 
 코드 패키지( `ui.apps/pom.xml` )를 선언하는 `pom.xml` 및 기타`<packageType>application</packageType>`파일에서 다음 저장소 구조 패키지 구성을 FileVault Maven 플러그인에 추가합니다. 프로젝트에 [대한 저장소 구조 패키지를 직접](repository-structure-package.md)만들 수 있습니다.
@@ -429,6 +485,9 @@ Maven 종속성을 추가하는 것은 표준 Maven 사례를 따르고, 타사 
 임베드 대상에 여러 `/apps/*-packages` 개가 사용되는 경우 모두 여기에서 열거되어야 합니다.
 
 ### 타사 마웬 저장소 {#xml-3rd-party-maven-repositories}
+
+>[!WARNING]
+> 추가적인 Maven 저장소가 세부 설정을 확인하므로 더 많은 Maven 저장소를 추가하면 빌드 시간이 연장될 수 있습니다.
 
 원자로 프로젝트의 `pom.xml`경우 필요한 타사 공개 Maven 리포지토리 지시를 추가합니다. 전체 `<repository>` 구성은 타사 저장소 공급자에서 사용할 수 있어야 합니다.
 
