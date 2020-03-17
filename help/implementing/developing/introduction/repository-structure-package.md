@@ -1,13 +1,13 @@
 ---
-title: '저장소 구조 패키지 개발   '
+title: 'AEM 프로젝트 저장소 구조 패키지  '
 description: Adobe Experience Manager를 Cloud Service Maven 프로젝트로 배포하려면 저장소 구조 하위 패키지 정의가 필요합니다. 이 하위 패키지 정의에서는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의합니다.
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
 
-# 저장소 구조 패키지 개발
+# AEM 프로젝트 저장소 구조 패키지
 
 Adobe Experience Manager를 클라우드 서비스로 사용하는 Adobe Experience Manager에 대한 전문적인 프로젝트를 사용하려면 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 저장소 구조 하위 패키지 정의가 필요합니다. 이렇게 하면 클라우드 서비스로서 Experience Manager에서 패키지를 JCR 리소스 종속성에 의해 자동으로 설치됩니다. 종속성이 누락되면 하위 구조가 상위 구조 앞에 설치되고 따라서 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
 
