@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 AEM 개발 지침
 description: '완료 예정 '
 translation-type: tm+mt
-source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
+source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
 
 ---
 
@@ -91,10 +91,14 @@ pub-sub 메커니즘을 통해 작성자에서 게시로 컨텐츠가 복제됩�
 
 클라우드 환경의 로그 수준을 변경하려면 Sling Logging OSGI 구성을 수정한 후 전체 재배포해야 합니다. 이는 즉각적이지는 않으므로 많은 트래픽을 받는 프로덕션 환경에서 자세한 로그를 활성화하는 것에 주의하십시오. 앞으로 로그 수준을 보다 신속하게 변경하는 메커니즘이 있을 수 있습니다.
 
+> [!NOTE]
+> 
+> 아래 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 해당 변경 사항을 만든 다음 AEM을 클라우드 서비스 인스턴스로 푸시해야 합니다. 이 방법에 대한 자세한 내용은 클라우드 서비스로 [AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
+
 **디버그 로그 수준 활성화**
 
 기본 로그 수준은 INFO입니다. 즉, DEBUG 메시지가 기록되지 않습니다.
-디버그 로그 수준을 활성화하려면 CRX 탐색기를 사용하여
+디버그 로그 수준을 활성화하려면
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
