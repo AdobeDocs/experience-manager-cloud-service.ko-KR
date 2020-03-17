@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
+source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
 
@@ -22,8 +22,8 @@ source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
    + [Git 액세스](cloud-manager/accessing-git.md)
    + [Adobe Cloud Manager와 Git 통합](cloud-manager/integrating-with-git.md)
 + 클라우드 서비스로서의 AEM을 위한 개발 {#developing}
-   + [AEM 프로젝트 패키지 구조](developing/introduction/aem-project-content-package-structure.md)
-   + [저장소 구조 패키지 개발](developing/introduction/repository-structure-package.md)
+   + [AEM 프로젝트 구조](developing/introduction/aem-project-content-package-structure.md)
+   + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)
    + [클라우드 서비스 SDK로 AEM 사용](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [컨텐츠 검색 및 인덱싱](/help/operations/indexing.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
