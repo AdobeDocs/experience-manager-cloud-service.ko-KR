@@ -2,7 +2,7 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 학습합니다.
 translation-type: tm+mt
-source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
+source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
 
 ---
 
@@ -185,7 +185,7 @@ AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하기 위해 패키지는 
    + `/apps/vendor-packages`
    >[!WARNING]
    >
-   >규칙에 따라, 하위 패키지 포함 폴더의 이름은 `-packages`의 접미어로 지정됩니다. 이렇게 하면 배포 코드 및 컨텐츠 패키지가 파괴적이고 반복적인 설치 동작을 **일으키는 하위 패키지의 대상 폴더를 배포하지** 않습니다 `/apps/<app-name>/...` .
+   >규칙에 따라 하위 패키지 포함 폴더의 이름은 `-packages`의 접미어로 지정됩니다. 이렇게 하면 배포 코드 및 컨텐츠 패키지가 파괴적이고 반복적인 설치 동작을 **일으키는 하위 패키지의 대상 폴더를 배포하지** 않습니다 `/apps/<app-name>/...` .
 
 + 세 번째 수준 폴더는 다음 중 하나여야 합니다.
    `application` 또는 `content`
@@ -394,7 +394,7 @@ OSGi `scripts` 속성은 Apache Sling의 Repo [Init 언어로](https://sling.apa
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
