@@ -4,7 +4,7 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 913339d0892b37814df1bd04bc352cfadf32b3e6
 
 ---
 
@@ -19,7 +19,9 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 >[!NOTE]
 >
->Marketing Cloud에 공유할 때 해당 유형의 자산 폴더 `sling:OrderedFolder`공유가 지원되지 않습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 순서가] 지정되지 않습니다.
+>* Marketing Cloud에 공유할 때 해당 유형의 자산 폴더 `sling:OrderedFolder`공유가 지원되지 않습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 순서가] 지정되지 않습니다.
+>* Experience Manager에서는 폴더 이름으로 `subassets` 단어를 사용할 수 없습니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다.
+
 
 1. 새 폴더를 만들 디지털 자산 폴더의 위치로 이동합니다. 메뉴에서 만들기를 **[!UICONTROL 클릭합니다]**. [새 **[!UICONTROL 폴더]를 선택합니다]**.
 1. 제목 **[!UICONTROL 필드에]** 폴더 이름을 입력합니다. 기본적으로 DAM은 폴더 이름으로 제공한 제목을 사용합니다. 폴더가 만들어지면 기본값을 무시하고 다른 폴더 이름을 지정할 수 있습니다.
