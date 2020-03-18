@@ -1,7 +1,7 @@
 ---
 sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
@@ -24,5 +24,5 @@ source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 + 데이터 개인 정보 보호 및 보호 준비 완료 {#data-privacy}
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 기초 준비 완료](data-privacy-and-protection-readiness/foundation-readiness.md)
-   + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 사이트 준비 완료](data-privacy-and-protection-readiness/sites-readiness.md)
+   + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM Sites 준비 완료](data-privacy-and-protection-readiness/sites-readiness.md)
 + [도구 콘솔 개요](tools-consoles.md)
