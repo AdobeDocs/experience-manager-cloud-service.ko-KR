@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 0dd6ffe72297ffb2e260039c3cce23499b61d62b
 
 ---
 
@@ -40,7 +40,9 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
    + [자산에 대한 디지털 권한 관리](drm.md)
 + 자산 구성, 관리 및 확장 {#admin}
    + [API 및 참조 자료](developer-reference-material-apis.md)
+   + [자산 마이그레이션 가이드](assets-migration-guide.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
+   + [처리 프로필](/help/assets/dynamic-media/processing-profiles.md)
    + [다국어 자산 및 자산 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
    + [자산 편집기 확장](extend-asset-editor.md)
@@ -51,14 +53,14 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
    + [XMP 메타데이터](xmp-metadata.md)
    + [MediaLibrary 기능](medialibrary.md)
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
-+ 컨텐츠 조각 {#content-fragments}
-   + [컨텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
-   + [컨텐츠 조각 관리](content-fragments/content-fragments-managing.md)
-   + [컨텐츠 조각 모델](content-fragments/content-fragments-models.md)
-   + [변형 - 조각 컨텐츠 작성](content-fragments/content-fragments-variations.md)
-   + [컨텐츠 조각 관련 컨텐츠](content-fragments/content-fragments-assoc-content.md)
++ 콘텐츠 조각 {#content-fragments}
+   + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
+   + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
+   + [콘텐츠 조각 모델](content-fragments/content-fragments-models.md)
+   + [변형 - 조각 콘텐츠 작성](content-fragments/content-fragments-variations.md)
+   + [콘텐츠 조각 관련 콘텐츠](content-fragments/content-fragments-assoc-content.md)
    + [메타데이터 - 조각 속성](content-fragments/content-fragments-metadata.md)
-   + [컨텐츠 조각 - 삭제 고려 사항](content-fragments/content-fragments-delete.md)
+   + [콘텐츠 조각 - 삭제 고려 사항](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
 + Dynamic Media {#dynamicmedia}
    + [Experience League의 Dynamic Media 뉴스레터](dynamic-media/dynamic-media-newsletter.md)
@@ -96,8 +98,8 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
    + [URL을 웹 애플리케이션에 연결](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [CDN 캐시 컨텐츠 무효화](dynamic-media/invalidate-cdn-cached-content.md)
+   + [CDN 캐시 콘텐츠 무효화](dynamic-media/invalidate-cdn-cached-content.md)
    + [선택기를 사용한 작업](dynamic-media/working-with-selectors.md)
    + [DHTML 뷰어 지원 중단 FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 뷰어 지원 중단 알림](dynamic-media/flash-viewers-eol.md)
-   + [컨텐츠의 HTTP2 전달 FAQ](dynamic-media/http2faq.md)
+   + [콘텐츠의 HTTP2 전달 FAQ](dynamic-media/http2faq.md)
