@@ -1,7 +1,7 @@
 ---
 title: 도구 콘솔
 description: AEM 전체에서 다양한 도구 콘솔에 대해 알아봅니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 ---
@@ -9,13 +9,13 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 # 도구 콘솔{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository.
+**도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구에 액세스할 수 있습니다.
 
-이러한 콘솔은 전역 탐색의 도구 [패널에서 액세스할 수 있습니다](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel).
+이러한 콘솔은 [글로벌 탐색의 도구 패널](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel)에서 액세스할 수 있습니다.
 
 >[!NOTE]
 >
->이 표에서는 UI의 카드에 각 옵션의 용도에 대한 세부 정보를 제공하므로 도구 패널의 기능 위치에 대한 빠른 참조를 제공합니다.
+>UI의 카드에서 각 옵션의 용도에 대한 세부 정보를 제공하므로 이 표에서는 도구 패널의 기능 위치에 대한 빠른 참조를 제공합니다.
 
 <table>
  <tbody>
@@ -125,7 +125,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>AEM용 데스크톱 도구<br /> </td>
+   <td>AEM용 데스크탑 도구<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -137,7 +137,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>컨텐츠 조각 모델<br /> </td>
+   <td>콘텐츠 조각 모델<br /> </td>
   </tr>
   <tr>
    <td> </td>
