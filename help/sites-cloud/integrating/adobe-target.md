@@ -2,7 +2,7 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: 94ba99acf2d14219d63485e3443b7080b8ba32bd
+source-git-commit: ed8cfc564e198552ae4efabee1ff48950470790a
 
 ---
 
@@ -42,7 +42,7 @@ Target과 통합하려면 다음 작업을 수행하십시오.
 
 >[!CAUTION]
 >
->AEM에서 클라우드 서비스로, AEM의 오퍼 및 활동을 Adobe Target과 동기화하는 복제 에이전트는 기본적으로 비활성화됩니다. 복제 [에이전트를](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) 다시 활성화해야 하는 경우 Adobe 지원 센터에 문의하십시오.
+>AEM에서 클라우드 서비스로, AEM의 오퍼 및 활동을 Adobe Target과 동기화하는 복제 에이전트는 기본적으로 비활성화됩니다. 복제 에이전트를 [다시](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) 활성화해야 하는 경우 Adobe 지원 팀에 문의하십시오.
 
 >[!NOTE]
 >
