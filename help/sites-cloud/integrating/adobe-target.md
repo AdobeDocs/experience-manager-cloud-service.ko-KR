@@ -2,7 +2,7 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
 
 ---
 
@@ -34,18 +34,22 @@ Target과 통합하려면 다음 작업을 수행하십시오.
    * [Adobe I/O를 통해 AEM과 Adobe Launch 통합](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [Adobe, Analytics 및 Target의 Launch와 AEM 통합 이해](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
-1. [활동 구성](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):활동을 Target 클라우드 구성과 연결합니다.
-
 >[!NOTE]
 >
 >Launch by Adobe의 IMS 구성(기술 계정)은 AEM에서 클라우드 서비스로 미리 구성되어 있습니다. 사용자는 이 구성을 만들 필요가 없습니다.
+
+1. [활동 구성](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):활동을 Target 클라우드 구성과 연결합니다.
+
+>[!CAUTION]
+>
+>&quot;클라우드 서비스로 AEM에서 AEM의 오퍼 및 활동을 Adobe Target과 동기화하는 복제 에이전트는 기본적으로 비활성화됩니다. 복제 [에이전트를](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) 다시 활성화해야 하는 경우 Adobe 지원 센터에 문의하십시오.&quot;
 
 >[!NOTE]
 >
 >사용자 지정 프록시 구성과 함께 Target을 사용하는 경우, AEM의 일부 기능이 3.x API를 사용하고 있고 일부 다른 API는 4.x API를 사용하고 있으므로 HTTP 클라이언트 프록시 구성을 모두 구성해야 합니다.
 >
->* 3.x는 http://localhost:4502/system/console/configMgr/com.day.commons.httpclient로 구성되어 [있습니다.](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x는 http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator로 구성되어 [있습니다.](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x는 http://localhost:4502/system/console/configMgr/com.day.commons.httpclient으로 구성되어 [있습니다.](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x는 http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator으로 구성되어 [있습니다.](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 
