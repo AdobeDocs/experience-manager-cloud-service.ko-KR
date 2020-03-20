@@ -1,7 +1,7 @@
 ---
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 
 ---
@@ -24,14 +24,14 @@ source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
 + 클라우드 서비스로서의 AEM을 위한 개발 {#developing}
    + [AEM 프로젝트 구조](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)
-   + [클라우드 서비스 SDK로 AEM 사용](developing/introduction/aem-as-a-cloud-service-sdk.md)
-   + [컨텐츠 검색 및 인덱싱](/help/operations/indexing.md)
+   + [클라우드 서비스 SDK로서의 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [콘텐츠 검색 및 색인 지정](/help/operations/indexing.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
-   + [AEM 사이트 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
-   + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
+   + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
-+ Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
-   + [경험 조각 확장](developing/extending/experience-fragments.md)
++ 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
+   + [경험 구성요소 확장](developing/extending/experience-fragments.md)
    + [검색 양식 구성](developing/extending/search-forms.md)
 + 클라우드 서비스로서의 AEM에 배포 {#deploying}
    + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
