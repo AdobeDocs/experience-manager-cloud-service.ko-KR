@@ -2,8 +2,8 @@
 title: 연결된 자산을 사용하여 Adobe Experience Manager Sites 작성 워크플로우에서 DAM 자산 공유
 description: 다른 Experience Manager Site 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager Assets 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
-translation-type: ht
-source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
+translation-type: tm+mt
+source-git-commit: 77494565596f3d7ac04613c057f0fccc8be71eab
 
 ---
 
@@ -37,7 +37,7 @@ Sites 작성자의 경우 원격 자산을 읽기 전용 로컬 자산으로 사
 
 작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 `Download` 구성 요소에 추가할 수 있고 이미지를 `Image` 구성 요소에 추가할 수 있습니다. 작성자가 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 AEM 구성 요소에 원격 자산을 추가할 수도 있습니다. 지원되는 형식 목록은 다음과 같습니다.
 
-* **이미지 형식**: [이미지 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)에서 지원하는 이미지 형식이 지원됩니다. Dynamic Media 이미지는 지원되지 않습니다.
+* **이미지 형식**: [이미지 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)에서 지원하는 이미지 형식이 지원됩니다. Dynamic Media 이미지는 지원되지 않습니다.
 * **문서 형식**: [연결된 자산에서 지원하는 문서 형식](file-format-support.md#doc-formats)을 참조하십시오.
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
@@ -164,7 +164,7 @@ AEM 관리자가 이 통합을 만들 수 있습니다. 통합을 만들면 이 
 * 메타데이터 스키마를 가져오지 않았습니다.
 * 모든 사이트 작성자는 원격 DAM 배포에 액세스할 권한이 없어도 가져온 복사본에 대한 읽기 권한을 갖습니다.
 * 통합을 사용자 지정할 수 있는 API 지원이 없습니다.
-* 이 기능을 통해 원격 자산을 원활하게 검색하고 사용할 수 있습니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 마이그레이션하는 것이 좋습니다. [자산 마이그레이션 안내서](assets-migration-guide.md)를 참조하십시오.
+* 이 기능을 통해 원격 자산을 원활하게 검색하고 사용할 수 있습니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 마이그레이션하는 것이 좋습니다.
 * [!UICONTROL 페이지 속성]의 [!UICONTROL 썸네일] 탭에서 [!UICONTROL 이미지 선택]을 클릭하여 원격 자산을 웹 페이지에 대한 썸네일로 사용할 수 없습니다.
 
 **설정 및 라이선스**
