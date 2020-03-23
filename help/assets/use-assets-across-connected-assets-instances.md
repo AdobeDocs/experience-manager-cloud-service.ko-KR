@@ -2,7 +2,7 @@
 title: 연결된 자산을 사용하여 Adobe Experience Manager Sites 작성 워크플로우에서 DAM 자산 공유
 description: 다른 Experience Manager Site 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager Assets 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
 
 ---
@@ -37,7 +37,7 @@ Sites 작성자의 경우 원격 자산을 읽기 전용 로컬 자산으로 사
 
 작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 `Download` 구성 요소에 추가할 수 있고 이미지를 `Image` 구성 요소에 추가할 수 있습니다. 작성자가 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 AEM 구성 요소에 원격 자산을 추가할 수도 있습니다. 지원되는 형식 목록은 다음과 같습니다.
 
-* **이미지 형식**: [이미지 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)에서 지원하는 이미지 형식이 지원됩니다. Dynamic Media 이미지는 지원되지 않습니다.
+* **이미지 형식**: [이미지 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)에서 지원하는 이미지 형식이 지원됩니다. Dynamic Media 이미지는 지원되지 않습니다.
 * **문서 형식**: [연결된 자산에서 지원하는 문서 형식](file-format-support.md#doc-formats)을 참조하십시오.
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
