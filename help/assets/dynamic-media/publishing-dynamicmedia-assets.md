@@ -2,16 +2,16 @@
 title: 다이내믹 미디어 자산 게시
 description: 다이내믹 미디어 자산을 게시하는 방법
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
 
 ---
 
 
-# 다이내믹 미디어 자산 게시 {#publishing-dynamic-media-assets}
+# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
 자산을 선택하고 게시를 탭하여 Dynamic Media 자산을 **[!UICONTROL 게시합니다]**. 다이내믹 미디어 에셋이 게시되면 URL을 통해 웹 페이지에 포함하거나 임베드할 수 있습니다.
 
-또한 사용자가 개입하지 않고도 업로드한 자산을 즉시 게시할 수 있습니다. See [Configuring Dynamic Media](config-dm.md).
+또한 사용자가 개입하지 않고도 업로드한 자산을 즉시 게시할 수 있습니다. 또는 해당 자산을 선택적으로 게시할 수 있습니다. See [Configuring Dynamic Media](config-dm.md).
 
 카드 **[!UICONTROL 보기에서]**, 자산 이름 바로 아래에 작은 글로벌 아이콘이 표시되어 게시되었음을 나타냅니다. 목록 **[!UICONTROL 보기에서]**&#x200B;게시된 **[!UICONTROL 열은]** 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
@@ -21,7 +21,7 @@ source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 비디오 에셋을 인코딩한 후 즉시 게시하려면 인코딩이 완전히 완료되었는지 확인하십시오. 비디오를 인코딩하는 동안 시스템에서 비디오 처리 워크플로우가 진행 중임을 알 수 있습니다. 비디오 인코딩이 완료되면 비디오 변환을 미리 볼 수 있어야 합니다. 이때 게시 오류를 발생시키지 않고 비디오를 게시할 수 있습니다.
 
-웹 [애플리케이션에 URL 연결을 참조하십시오](linking-urls-to-yourwebapplication.md).
+See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
 웹 [페이지에 비디오 뷰어 포함을 참조하십시오.](embed-code.md)
 
