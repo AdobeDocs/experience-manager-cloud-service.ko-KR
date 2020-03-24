@@ -1,8 +1,8 @@
 ---
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
@@ -159,7 +159,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **소셜 미디어 공유**
 
-   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
+   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
 
    * **Facebook에 대한 사용자 공유 활성화**
    * **Pinterest에 대한 사용자 공유 활성화**
@@ -181,6 +181,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **타깃팅 구성**
 
    * [타깃팅할 범위를 지정하려면 [브랜드]](/help/sites-cloud/authoring/personalization/targeted-content.md)를 선택합니다.
+   >[!NOTE]
+   >이 옵션을 사용하려면 사용자 계정이 `Target Adminstrators`그룹에 있어야 합니다.
 
 ### 권한 {#permissions}
 
