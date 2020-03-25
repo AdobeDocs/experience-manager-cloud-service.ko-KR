@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud 서비스 구성
 description: Adobe Experience Manager Cloud Service에서 Dynamic Media를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 4b9630dfdc8dfc3a621f307f53c48dec415618e5
+source-git-commit: 50ebc2187cff4d35c93e25da9d2f62f6a86f12ad
 
 ---
 
@@ -68,29 +68,27 @@ Dynamic Media Cloud 서비스를 구성하려면:
    * **[!UICONTROL 자산 게시]** - 다음 세 가지 옵션 중에서 선택할 수 있습니다.
       * **[!UICONTROL 에셋이 업로드되면 시스템이 에셋을 인제스트하고 URL/포함을 즉시 제공함을 즉시]** 의미합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다.
       * **[!UICONTROL 활성화]** 시 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.
-<!--       * **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain. -->
+      * **[!UICONTROL 선택적]** 게시는 에셋이 보안 미리 보기만을 위해 자동으로 게시되며 공개 도메인에 전달을 위해 DMS7에 게시하지 않고도 AEM에 명시적으로 게시할 수 있음을 의미합니다. 앞으로 Adobe는 자산을 AEM에 게시하고 상호 배타적인 Dynamic Media에 게시하기 위한 이 옵션을 개선합니다. 즉, DMS7에 자산을 게시하여 스마트 자르기 또는 동적 표현물과 같은 기능을 사용할 수 있습니다. 또는 미리 보기를 위해 AEM에서만 자산을 게시할 수 있습니다.동일한 에셋은 공개 도메인에 전달하기 위해 DMS7에 게시되지 않습니다.
+   * **[!UICONTROL 보안 미리 보기]** 서버 - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM에서 안전하게 원격 다이내믹 미디어 표현물에 액세스하고 미리 볼 수 있습니다(바이너리가 AEM 인스턴스로 다시 전송되지 않음).
+회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정된 대로 유지하는 것이 좋습니다.
 
-    **[!UICONTROL 보안 미리 보기 서버]** - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM에서 안전하게 원격 다이내믹 미디어 표현물에 액세스하고 미리 볼 수 있습니다(바이너리가 AEM 인스턴스로 다시 전송되지 않음).
-    회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정된 대로 유지하는 것이 좋습니다.
-    
-    **[!UICONTROL 모든 컨텐츠]동기화** - 기본적으로 선택됩니다. 다이내믹 미디어와 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드
-    
-    중에서 선택할 수 있습니다.***[!UICONTROL Dynamic Media 동기화 모드]**
-    **Enabled by default*** - 제외용으로 특정 폴더를 표시하지 않는 한 구성이 기본적으로 모든 폴더에 적용됩니다. &lt;!— 구성을 적용하지 않을 폴더를 선택 취소할 수 있습니다.—>
-    **[!UICONTROL 기본적으로]비활성화됨** - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시할 때까지 구성이 어떤 폴더에도 적용되지 않습니다.
-    선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더의 속성 페이지를 엽니다. **[!UICONTROL 세부 사항]** 탭을 누른 다음 **[!UICONTROL 다이내믹 미디어 동기화 모드]*** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택한 다음 **[!UICONTROL 저장]**을 누릅니다.
-    **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태.
-    **[!UICONTROL 하위 폴더에]대해 활성화** - 다이내믹 미디어와 동기화할 수 있도록 이 하위 트리에 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
-    **[!UICONTROL 하위 폴더에]대해 비활성화됨** - 이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다.
+   * **[!UICONTROL 모든 컨텐츠]** 동기화 - 기본적으로 선택됩니다. 다이내믹 미디어와 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.
 
->[!NOTE]
->
->Dynamic Media에서는 버전 관리가 지원되지 않습니다. 또한, 지연된 활성화는 [ **[!UICONTROL 다이내믹 미디어 구성 편집]** ] 페이지의 [자산 게시]가 [활성화 시] **[!UICONTROL 로]**&#x200B;설정된 경우에만 적용되며, 처음 자산이 활성화될 때까지만 적용됩니다.
->
->
->자산이 활성화되면 모든 업데이트가 즉시 S7 전달에 실시간으로 게시됩니다.
+   * **[!UICONTROL Dynamic Media 동기화 모드]**
+      * **[!UICONTROL 기본적으로]** 사용 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL 기본적으로]** 비활성화 - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시해야만 구성이 어떤 폴더에도 적용되지 않습니다.
+선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더의 속성 페이지를 엽니다. 세부 **[!UICONTROL 사항]** 탭을 누른 다음 Dynamic Media **[!UICONTROL 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택한 다음 저장을 **[!UICONTROL 탭합니다]**.
+         * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태.
+         * **[!UICONTROL 하위 폴더]** 활성화 - Dynamic Media에 동기화할 수 있도록 이 하위 트리에 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
+         * **[!UICONTROL 하위 폴더에]** 대해 사용 안 함 - 이 하위 트리의 모든 항목을 Dynamic Media로 동기화에서 제외합니다.
+   >[!NOTE]
+   >
+   >Dynamic Media에서는 버전 관리가 지원되지 않습니다. 또한, 지연된 활성화는 [ **[!UICONTROL 다이내믹 미디어 구성 편집]** ] 페이지의 [자산 게시]가 [활성화 시] **[!UICONTROL 로]**&#x200B;설정된 경우에만 적용되며, 처음 자산이 활성화될 때까지만 적용됩니다.
+   >
+   >
+   >자산이 활성화되면 모든 업데이트가 즉시 S7 전달에 실시간으로 게시됩니다.
 
-![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 1. Dynamic Media 콘텐츠를 게시하기 전에 안전하게 미리 보려면 AEM 작성자 인스턴스를 &quot;화이트리스트&quot;하여 Dynamic Media에 연결해야 합니다.
