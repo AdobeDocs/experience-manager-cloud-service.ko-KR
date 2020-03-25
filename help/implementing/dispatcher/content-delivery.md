@@ -2,14 +2,14 @@
 title: 컨텐츠 전달
 description: '컨텐츠 전달 '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
 # 클라우드 서비스로 AEM에서 컨텐츠 전달 {#content-delivery}
 
-게시 서비스 컨텐츠 전달에는 다음이 포함됩니다.
+현재 페이지 세부 사항은 AEM에서 클라우드 서비스로 서비스 콘텐츠 제공을 게시합니다. 게시 서비스 컨텐츠 전달에는 다음이 포함됩니다.
 
 * CDN(일반적으로 Adobe에서 관리)
 * AEM 디스패처
