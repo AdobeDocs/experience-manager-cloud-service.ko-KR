@@ -3,12 +3,12 @@ title: '클라우드 서비스로 Adobe Experience Manager의 디지털 에셋 �
 description: 자산 API를 사용하면 이진, 메타데이터, 변환, 주석 및 컨텐츠 조각을 비롯한 에셋을 관리하는 기본 CRUD(Create-Read-Update-Delete) 작업을 수행할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
 
-# 클라우드 서비스 API로서 에셋 {#assets-cloud-service-apis}
+# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -114,7 +114,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 >
 > 자산이 이미 존재하며 createVersion이나 바꾸기가 지정되지 않은 경우, 인스턴스는 자산의 현재 버전을 새 바이너리로 업데이트합니다.
 
-시작 프로세스와 마찬가지로 전체 요청 데이터에는 두 개 이상의 파일에 대한 정보가 포함될 수 있습니다.
+시작 프로세스와 마찬가지로 전체 요청 데이터에는 둘 이상의 파일에 대한 정보가 포함될 수 있습니다.
 
 이진 업로드 프로세스는 파일에 대해 전체 URL을 호출할 때까지 수행되지 않습니다. 파일의 바이너리가 전체적으로 업로드되더라도 업로드 프로세스가 완료될 때까지 에셋이 인스턴스별로 처리되지 않습니다.
 
@@ -129,7 +129,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### 사용되지 않는 자산 업로드 API {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Experience Manager를 클라우드 서비스로 사용하는 경우 새로운 업로드 API만 지원됩니다. Experience Manager 6.5의 API는 더 이상 사용되지 않습니다.
