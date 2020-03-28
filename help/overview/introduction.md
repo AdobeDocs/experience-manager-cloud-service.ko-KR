@@ -1,15 +1,15 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 소개
 description: '클라우드 서비스로서의 Adobe Experience Manager(AEM) 소개. '
-translation-type: ht
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+translation-type: tm+mt
+source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
 
 ---
 
 
 # 클라우드 서비스로서의 Adobe Experience Manager 소개 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/kr/marketing/experience-manager.html)(AEM)는 이제 클라우드 서비스로 제공됩니다.
+[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html)(AEM)는 이제 클라우드 서비스로 제공됩니다.
 
 클라우드 서비스로서의 Adobe Experience Manager는
 
@@ -18,6 +18,8 @@ source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 * AEM 컨텐츠 관리 시스템의 강력한 기능을 AEM 디지털 자산 관리와 결합하여 고객에게 개인화된 컨텐츠 중심의 경험을 제공할 수 있도록 합니다.
 
 * 다운타임 없이 업데이트할 수 있도록 지속적인 제공 및 지속적인 통합을 제공합니다.
+
+* 내장된 CDN(Content Delivery Network) 및 기타 네트워크 계층 모범 사례를 활용하여 컨텐츠를 신속하고 효율적으로 전달할 수 있습니다.
 
 * 자동 크기 조절을 수행하는 동적 아키텍처를 기반으로 하며, 따라서 인프라 고려 사항이 제거됩니다.
 
