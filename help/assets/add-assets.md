@@ -2,7 +2,7 @@
 title: Adobe Experience Manager에 디지털 자산 추가
 description: Adobe Experience Manager에 클라우드 서비스로 디지털 자산 추가
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager에서 이진 파일을 업로드 및 관리할 수 있�
 
 > [!NOTE]
 >
-> Adobe Experience Manager as a Cloud Service는 직접 바이너리 업로드라는 새로운 방식의 자산 업로드 방식을 활용합니다. 기본적으로 AEM 사용자 인터페이스, Adobe Asset Link, AEM 데스크탑 앱과 같은 기본 제품 기능 및 클라이언트에서 지원되므로 최종 사용자에게 투명하게 표시됩니다.
+> Adobe Experience Manager as a Cloud Service는 직접 바이너리 업로드라는 새로운 방식의 자산 업로드 방식을 활용합니다. 기본적으로 AEM 사용자 인터페이스, Adobe Asset Link, AEM 데스크탑 앱과 같은 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
 >
 > 고객 기술 팀에서 사용자 정의하거나 확장한 코드를 업로드하려면 새로운 업로드 API 및 프로토콜을 사용해야 합니다.
 
@@ -64,7 +64,7 @@ Adobe Experience Manager에서 이진 파일을 업로드 및 관리할 수 있�
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Adobe Experience Manager에서 이진 파일을 업로드 및 관리할 수 있�
 
 > [!NOTE]
 >
-> AEM에 중첩 폴더 계층 구조를 업로드해야 하는 경우 자산 [일괄 전송을 참조하십시오.](#bulk-upload)
+> 중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [벌크 업로드를 참조하십시오](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
