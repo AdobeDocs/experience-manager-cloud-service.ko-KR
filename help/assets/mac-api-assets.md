@@ -3,7 +3,7 @@ title: 자산 HTTP API
 description: Assets HTTP API의 구현, 데이터 모델 및 기능에 대해 알아봅니다. 자산 HTTP API를 사용하여 자산 관련 다양한 작업을 수행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -25,9 +25,9 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 >[!NOTE]
 >
->자산 또는 이진 파일 업로드 또는 업데이트와 관련된 모든 API 호출(예: 변환)은 AEM에 대해 클라우드 서비스 배포로 정의됩니다. 바이너리를 업로드하려면 [직접 바이너리 업로드 API를 대신 사용하십시오](developer-reference-material-apis.md#asset-upload-technical) .
+>자산 또는 이진 파일 업로드 또는 업데이트와 관련된 모든 API 호출(예: 변환)은 AEM에 대해 클라우드 서비스 배포로 정의됩니다. 바이너리를 업로드하려면 [직접 이진 업로드 API를](developer-reference-material-apis.md#asset-upload-technical) 대신 사용하십시오.
 
-## 컨텐츠 조각 {#content-fragments}
+## 콘텐츠 조각 {#content-fragments}
 
 컨텐츠 [조각은](content-fragments/content-fragments.md) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 자산(예: 이미지 또는 문서)에 몇 가지 차이가 있으므로 컨텐츠 조각 처리에 일부 추가 규칙이 적용됩니다. `standard`
 
@@ -77,7 +77,7 @@ AEM에서 폴더에는 다음 구성 요소가 있습니다.
 자산 HTTP API는 다음 기능을 제공합니다.
 
 * 폴더 목록 검색
-* 폴더 만들기
+* 폴더를 만듭니다
 * 자산 만들기(더 이상 사용되지 않음)
 * 자산 이진 업데이트(더 이상 사용되지 않음)
 * 자산 메타데이터 업데이트
@@ -125,7 +125,7 @@ GET /api/assets/myFolder.json
 
 포함된 엔티티의 속성은 각 엔티티의 전체 속성 세트의 하위 집합입니다. 엔티티의 전체 표현을 얻으려면 클라이언트가 의 링크가 가리키는 URL의 컨텐츠를 검색해야 `rel` 합니다 `self`.
 
-## 폴더 만들기 {#create-a-folder}
+## 폴더를 만듭니다 {#create-a-folder}
 
 새로 `sling`만듭니다.지정된 `OrderedFolder` 경로에서 노드 이름 대신 *가 주어지면 서블릿은 매개변수 이름을 노드 이름으로 사용합니다. 요청 데이터는 새 폴더의 사이렌 표시 또는 HTML 양식에서 직접 폴더를 만드는 데 유용한 이름-값 쌍 집합입니다. `application/www-form-urlencoded` 또는 `multipart`/ `form``data`로 인코딩되어 있습니다. 또한 폴더의 속성을 URL 쿼리 매개 변수로 지정할 수 있습니다.
 
