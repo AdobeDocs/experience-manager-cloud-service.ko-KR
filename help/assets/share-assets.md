@@ -3,20 +3,20 @@ title: 자산, 폴더 및 컬렉션을 링크로 공유
 description: 이 문서에서는 Experience Manager 자산 내에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Adobe Experience Manager에서 관리하는 에셋 공유 및 배포 {#share-assets-from-aem}
 
-AEM(Adobe Experience Manager) 자산을 사용하면 자산, 폴더 및 컬렉션을 조직 및 외부 개체(파트너 및 공급업체 등)의 멤버와 공유할 수 있습니다. 다음 방법을 사용하여 Experience Manager Assets의 자산을 클라우드 서비스로 공유할 수 있습니다.
+AEM(Adobe Experience Manager) 자산을 사용하면 자산, 폴더 및 컬렉션을 조직 및 외부 개체(파트너 및 공급업체 등)의 멤버와 공유할 수 있습니다. 다음 방법을 사용하여 Experience Manager Assets의 자산을 클라우드 서비스로 공유합니다.
 
 * 링크로 공유
-* 자산 다운로드
+* 자산을 다운로드하고 별도로 공유할 수 있습니다.
 * AEM 데스크탑 앱을 통해 공유
-* Adobe Asset Link를 통해 공유
-* (향후 기능) 브랜드 포털을 사용하여 공유
+* Adobe Asset Link를 통해 공유할 수 있습니다.
+* (예정된 기능) 브랜드 포털을 사용하여 공유합니다.
 
 ## 링크로 자산 공유 {#sharelink}
 
@@ -110,11 +110,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 마케터와 비즈니스 라인 사용자는 승인된 자산을 자신의 크리에이티브 전문가와 손쉽게 공유할 수 있습니다.
 
-* **AEM 데스크탑 앱**:이 앱은 Windows 및 Mac에서 작동합니다. 데스크탑 [앱 개요를](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)참조하십시오. 권한이 있는 모든 데스크탑 사용자가 공유 에셋에 손쉽게 액세스할 수 있는 방법을 알아보려면 에셋을 [검색하고 미리](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)보십시오. 데스크톱 사용자는 새 자산을 만들고 새 이미지를 업로드하여 AEM 사용자와 다시 공유할 수 있습니다. 데스크탑 앱을 [사용하여 자산](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)업로드를 참조하십시오.
+* **AEM 데스크탑 앱**:이 앱은 Windows 및 Mac에서 작동합니다. 데스크탑 [앱 개요를](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)참조하십시오. 권한이 있는 모든 데스크탑 사용자가 공유 에셋에 손쉽게 액세스할 수 있는 방법을 알아보려면 에셋을 [검색하고 미리](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)보십시오. 데스크톱 사용자는 새 이미지를 업로드하여 자산을 만들고 AEM 사용자 팀과 다시 공유할 수 있습니다. 데스크탑 앱을 [사용하여 자산](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)업로드를 참조하십시오.
 
 * **Adobe Asset 링크**:크리에이티브 전문가는 Adobe InDesign, Adobe Illustrator 및 Adobe Photoshop에서 바로 에셋을 검색하고 사용할 수 있습니다.
 
 ## 자산 공유 구성 {#configure-sharing}
+
+자산을 공유하기 위한 다양한 옵션에는 특정 구성이 필요하며 특정 사전 요구 사항이 있습니다.
 
 ### 자산 링크 공유 구성 {#asset-link-sharing}
 
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 데스크탑 앱과 함께 사용할 데스크탑 작업 활성화 {#desktop-actions}
 
-브라우저의 자산 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 데스크톱 응용 프로그램에서 편집할 자산을 열 수 있습니다. 이러한 옵션은 데스크톱 작업이라고 하며 이 옵션이 활성화되지 않은 경우 AEM 웹 인터페이스에서 [데스크톱 작업 활성화를 참조하십시오](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+브라우저의 자산 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 데스크톱 응용 프로그램에서 편집할 자산을 열 수 있습니다. 이러한 옵션을 데스크톱 작업이라고 하며 이를 활성화하려면 AEM 웹 인터페이스에서 [데스크톱 작업 활성화를 참조하십시오](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![데스크탑 앱 작업 시 바로 가기로 사용할 수 있도록 데스크탑 작업 활성화](assets/enable_desktop_actions.png)
 
