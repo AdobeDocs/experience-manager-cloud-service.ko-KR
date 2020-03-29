@@ -2,14 +2,14 @@
 title: Adobe Experience Manager에 디지털 자산 추가
 description: Adobe Experience Manager에 클라우드 서비스로 디지털 자산 추가
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Adobe Experience Manager에 디지털 자산 추가 {#add-assets-to-experience-manager}
 
-Adobe Experience Manager에 디지털 파일을 업로드하면 리치 메타데이터, 스마트 태그, 변환 및 기타 DAM(Digital Asset Management) 서비스를 통해 파일의 바이너리 컨텐츠가 더욱 풍부해집니다. 로컬 폴더 또는 네트워크 드라이브에서 다양한 유형의 파일(이미지, PDF 파일, Raw 파일 등)을 Experience Manager Assets로 업로드할 수 있습니다.
+Adobe Experience Manager는 풍부한 메타데이터, 스마트 태그, 변환 및 기타 DAM(Digital Asset Management) 서비스를 통해 업로드된 디지털 파일의 바이너리 컨텐츠를 더욱 풍부하게 제공합니다. 로컬 폴더 또는 네트워크 드라이브에서 Experience Manager Assets로 이미지, 문서 및 Raw 이미지 파일과 같은 다양한 유형의 파일을 업로드할 수 있습니다.
 
 다양한 업로드 방법이 제공됩니다. 가장 일반적으로 사용되는 브라우저 업로드 외에도, Adobe Asset Link 또는 Experience Manager 데스크탑 앱과 같은 데스크탑 클라이언트, 만들 스크립트 업로드 및 통합, AEM 익스텐션으로 추가된 자동화된 통합 등 Experience Manager 저장소에 자산을 추가하는 다른 방법이 있습니다.
 
@@ -77,7 +77,7 @@ Adobe Experience Manager에서 이진 파일을 업로드 및 관리할 수 있�
 
 > [!NOTE]
 >
-> 중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [벌크 업로드를 참조하십시오](#bulk-upload).
+> 중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [일괄 업로드를 참조하십시오](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
