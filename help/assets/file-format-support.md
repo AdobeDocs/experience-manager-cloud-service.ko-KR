@@ -3,12 +3,12 @@ title: Experience Manager Assets에서 클라우드 서비스로 지원되는 �
 description: Experience Manager Assets에서 클라우드 서비스로 지원되는 파일 포맷 및 MIME 유형
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
-# 자산 지원 파일 포맷 {#supported-file-formats}
+# Assets supported file formats {#supported-file-formats}
 
 클라우드 서비스로서의 Adobe Experience Manager는 기본적인 콘텐츠 관리 기능을 지원합니다. 저장, 온라인 메타데이터 관리, 버전 관리, 업로드 및 다운로드 등 for any binary file, independent of its format. Adobe Experience Manager Assets는 다양한 파일 포맷을 지원하며 각 제품 기능은 서로 다른 포맷을 지원합니다.
 
@@ -169,7 +169,7 @@ source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
 
 ## 지원되는 문서 포맷 {#doc-formats}
 
-자산 관리 기능에 지원되는 문서 포맷은 다음과 같습니다.
+자산 관리 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 | 파일 포맷 | 저장 용량 | 메타데이터 관리 | [연결된 자산](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|
