@@ -3,7 +3,7 @@ title: '클라우드 서비스로 Adobe Experience Manager의 디지털 에셋 �
 description: 자산 API를 사용하면 이진, 메타데이터, 변환, 주석 및 컨텐츠 조각을 비롯한 에셋을 관리하는 기본 CRUD(Create-Read-Update-Delete) 작업을 수행할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -55,9 +55,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 * `(string) fileName`: 필수. 인스턴스에 나타날 자산의 이름입니다.
 * `(number) fileSize`: 필수. 업로드할 바이너리의 총 길이(바이트)입니다.
 
-각 바이너리에 필수 필드가 포함된 경우 단일 요청을 사용하여 여러 바이너리에 대한 업로드를 시작할 수 있습니다.
-
-요청이 성공하면, 요청은 201 상태 코드와 JSON 데이터가 포함된 본문으로 응답합니다.
+각 바이너리에 필수 필드가 포함된 경우 단일 요청을 사용하여 여러 바이너리에 대한 업로드를 시작할 수 있습니다. 성공하면 요청은 `201` 상태 코드와 JSON 데이터가 포함된 본문으로 응답합니다.
 
 ```
 {
@@ -74,17 +72,17 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`:바이너리의 업로드를 마치면 호출해야 하는 URI입니다. 절대 또는 상대 URI일 수 있으며 클라이언트 중 하나를 처리할 수 있어야 합니다. 즉, 값은 `"https://author.acme.com/content/dam.completeUpload.json"` 또는 `"/content/dam.completeUpload.json"` 일 수 있습니다(업로드 [완료](#complete-upload)참조).
-* `(string) folderPath`:바이너리가 업로드되는 폴더의 전체 경로입니다.
-* `(array) (files)`:길이 및 순서가 시작 요청에 제공된 이진 정보 목록의 길이 및 순서와 일치하는 요소 목록입니다.
-* `(string) fileName`:시작 요청에 제공된 해당 바이너리의 이름입니다. 이 값은 전체 요청에 포함되어야 합니다.
-* `(string) mimeType`:시작 요청에서 제공되는 해당 바이너리의 MIME 유형입니다. 이 값은 전체 요청에 포함되어야 합니다.
-* `(string) uploadToken`:해당 바이너리에 대한 업로드 토큰입니다. 이 값은 전체 요청에 포함되어야 합니다.
-* `(array) uploadURIs`:값이 바이너리의 컨텐츠를 업로드해야 하는 전체 URI인 문자열 목록입니다(바이너리 [업로드 참조](#upload-binary)).
-* `(number) minPartSize`:둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최소 길이(바이트)입니다.
-* `(number) maxPartSize`:둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최대 길이(바이트)입니다.
+* `completeURI` (문자열):바이너리 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 값은 `"https://author.acme.com/content/dam.completeUpload.json"` 전체 업로드가 `"/content/dam.completeUpload.json"` 가능하거나 [전체 업로드를](#complete-upload)참조하십시오.
+* `folderPath` (문자열):바이너리가 업로드되는 폴더의 전체 경로입니다.
+* `(files)` (배열):길이 및 순서가 시작 요청에 제공된 이진 정보 목록의 길이 및 순서와 일치하는 요소 목록입니다.
+* `fileName` (문자열):시작 요청에 제공된 해당 바이너리의 이름입니다. 이 값은 전체 요청에 포함되어야 합니다.
+* `mimeType` (문자열):시작 요청에서 제공되는 해당 바이너리의 MIME 유형입니다. 이 값은 전체 요청에 포함되어야 합니다.
+* `uploadToken` (문자열):해당 바이너리에 대한 업로드 토큰입니다. 이 값은 전체 요청에 포함되어야 합니다.
+* `uploadURIs` (배열):값이 바이너리의 컨텐츠를 업로드해야 하는 전체 URI인 문자열 목록입니다(바이너리 [업로드 참조](#upload-binary)).
+* `minPartSize` (숫자):둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최소 길이(바이트)입니다.
+* `maxPartSize` (숫자):둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최대 길이(바이트)입니다.
 
 ### 이진 업로드 {#upload-binary}
 
