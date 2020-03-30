@@ -2,7 +2,7 @@
 title: 컨텐츠 전달
 description: '컨텐츠 전달 '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -221,7 +221,7 @@ Strict clientlib 버전 관리는 기본적으로 모든 AEM에서 클라우드 
 
 로컬 SDK에서 strict clientlib 버전 지정을 활성화하려면 Quickstart에서 다음 작업을 수행합니다.
 
-1. OSGi 구성 관리자로 이동합니다. <host>/system/console/configMgr
+1. OSGi 구성 관리자로 이동합니다. `<host>/system/console/configMgr`
 1. Adobe Granite HTML Library Manager용 OSGi 구성을 찾습니다.
    * 엄격한 버전 관리를 활성화하려면 확인란을 선택합니다.
    * Long term client side cache key 레이블이 지정된 필드에 / 값을 입력합니다.*;해시
