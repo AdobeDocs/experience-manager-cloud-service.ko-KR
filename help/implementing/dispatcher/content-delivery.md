@@ -2,7 +2,7 @@
 title: 컨텐츠 전달
 description: '컨텐츠 전달 '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -187,7 +187,7 @@ AEM을 클라우드 서비스로 사용하기 전에는 디스패처 캐시를 �
 
 아래 다이어그램은 이를 보여줍니다.
 
-![](assets/cdnc.png "CDNCDN")
+![](assets/cdnd.png "CDNCDN")
 
 디스패처 캐시가 지워지지 않을 수 있는 문제가 있는 경우 필요한 경우 디스패처 캐시를 플러시할 수 있는 [고객 지원에](https://helpx.adobe.com/support.ec.html) 문의하십시오.
 
