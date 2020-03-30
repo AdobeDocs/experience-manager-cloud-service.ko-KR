@@ -1,13 +1,13 @@
 ---
-title: 컨텐츠 검색 및 인덱싱
-description: '컨텐츠 검색 및 인덱싱 '
+title: 콘텐츠 검색 및 색인 지정
+description: '콘텐츠 검색 및 색인 지정 '
 translation-type: tm+mt
-source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
+source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 ---
 
 
-# 컨텐츠 검색 및 인덱싱 {#indexing}
+# 콘텐츠 검색 및 색인 지정 {#indexing}
 
 ## 클라우드 서비스로 AEM의 변경 사항 {#changes-in-aem-as-a-cloud-service}
 
@@ -31,7 +31,7 @@ AEM을 클라우드 서비스로 사용하는 Adobe는 AEM 인스턴스 중심 �
 
 1. Blue-Green 배포 모델이 [](#index-management-using-blue-green-deployments) 도입됨에 따라 AEM에서 클라우드 서비스로 높은 수준의 AEM에는 다음과 같은 두 가지 인덱스 세트가 존재합니다.이전 버전 세트(파란색)와 새 버전 세트(녹색)에 대해 설정된 세트
 
-사용되는 인덱스의 버전은 `useIfExist` 플래그를 통해 색인 정의에 플래그를 사용하여 구성됩니다. 인덱스는 한 버전의 응용 프로그램(예: 파란색 또는 녹색만 해당)에서만 사용하거나 두 버전 모두에서 사용할 수 있습니다. 자세한 설명서는 블루-그린 배포를 [사용하는 색인 관리에서 사용할 수 있습니다](#index-management-using-blue-green-deployments).
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. 고객은 Cloud Manager 빌드 페이지에서 색인 작업이 완료되었는지 확인하고 새 버전이 트래픽을 받을 준비가 되면 알림을 받게 됩니다.
 
