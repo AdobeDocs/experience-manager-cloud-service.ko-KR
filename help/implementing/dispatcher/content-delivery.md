@@ -2,7 +2,7 @@
 title: 컨텐츠 전달
 description: '컨텐츠 전달 '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ Adobe의 기본 CDN을 사용하여 컨텐츠 전달을 준비하는 방법은 �
 
 * 기본적으로 브라우저가 apache 레이어에서 방출하는 캐시 제어 헤더를 기반으로 5분 동안 캐시합니다. CDN도 이 값을 따릅니다.
 * aem을 클라우드 서비스 SDK 디스패처 도구로 `EXPIRATION_TIME` `global.vars` 사용할 때 변수를 정의하여 모든 HTML/텍스트 콘텐츠에 대해 재정의할 수 있습니다.
-
-아래 파일에 다음 규칙이 `src/conf.dispatcher.d/cache` 있는지 확인해야 합니다.
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * 다음과 같은 apache mod_headers 지시어를 통해 보다 세부적으로 분류된 수준에서 재정의할 수 있습니다.
 
 ```
