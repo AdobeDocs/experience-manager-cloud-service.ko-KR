@@ -1,7 +1,7 @@
 ---
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
@@ -31,7 +31,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
       * 그러면 새 태그가 표시되고 태그 오른쪽에는 새 태그임을 가리키는 작은 별이 표시됩니다.
    * 드롭다운 기능을 통해 기존 태그에서 선택할 수 있습니다.
    * 선택 상자에서 태그 항목을 마우스로 가리키면 x가 표시됩니다. 이를 통해 이 페이지에서 해당 태그를 제거할 수 있습니다.
-   * 태그에 대한 자세한 내용은 ](/help/sites-cloud/authoring/features/tags.md)태그 사용[을 참조하십시오.
+   * 태그에 대한 자세한 내용은 [태그 사용](/help/sites-cloud/authoring/features/tags.md)을 참조하십시오.
 
 * **탐색 시 숨김**
 
@@ -159,7 +159,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 * **소셜 미디어 공유**
 
-   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
+   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
 
    * **Facebook에 대한 사용자 공유 활성화**
    * **Pinterest에 대한 사용자 공유 활성화**
