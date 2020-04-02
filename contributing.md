@@ -1,5 +1,5 @@
 ---
-source-git-commit: 3162a65d19d5ccba5671c40f5184ab4882f77ecb
+source-git-commit: 3dd012e70e467be458523ad4a2be4610743e9980
 translation-type: tm+mt
 
 ---
@@ -50,9 +50,9 @@ AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만
 
 ### Adobe 직원의 기여
 
-Adobe 직원이고 풀 요청을 하려는 경우 의 개인 저장소를 사용하십시오 `https://git.corp.adobe.com/AdobeDocs`.
+Adobe 직원이고 기여도가 있는 경우 회사 Git의 `AdobeDocs` 조직을 사용하십시오.
 
-문제는 공개 리포지토리를 자유롭게 사용하십시오.
+Adobe는 물론 모든 기부에 만족하며, 기부가 공개 보관소에 있는 경우 귀하의 기여 내용을 검토할 것이지만, Adobe 직원의 요청을 처리하는 것이 더 쉽고 회사 보고에 대해 더욱 빠르게 승인할 수 있습니다. 회사 보고에 대한 독점적인 정보만 명시되어 있는지 확인하십시오.
 
 ## 추가 정보
 
