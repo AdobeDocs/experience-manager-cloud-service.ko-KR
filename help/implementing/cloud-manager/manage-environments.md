@@ -2,7 +2,7 @@
 title: 환경 관리 - 클라우드 서비스
 description: 환경 관리 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 ---
 
@@ -37,6 +37,9 @@ source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 
 1. 사용자가 환경 추가 **버튼을** 클릭하여 환경을 추가합니다.
+
+   >[!NOTE]
+   >이 단추는 환경 페이지 또는 환경 카드에서 액세스할 수도 있습니다. 사용자는 필수 권한이 있는 경우에만 이 옵션을 볼 수 있습니다. 문의 사항이 있는 경우 Adobe 담당자에게 문의하십시오.
 
    ![](assets/add-environment.png)
 
