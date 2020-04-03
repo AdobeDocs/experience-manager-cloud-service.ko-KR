@@ -1,7 +1,7 @@
 ---
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
 
 ---
@@ -28,7 +28,7 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [콘텐츠 검색 및 색인 지정](/help/operations/indexing.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
    + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
-   + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
 + 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
@@ -37,4 +37,4 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
 + 클라우드의 디스패처 {#dispatcher}
    + [클라우드의 디스패처](dispatcher/overview.md)
-   + [클라우드 서비스로 AEM에서 컨텐츠 전달](dispatcher/content-delivery.md)
+   + [클라우드 서비스로서의 AEM에서 컨텐츠 전달](dispatcher/content-delivery.md)
