@@ -1,9 +1,9 @@
 ---
-source-git-commit: 3162a65d19d5ccba5671c40f5184ab4882f77ecb
+source-git-commit: b5380858e0887da017657c653b05529066d95fd8
 translation-type: tm+mt
 
 ---
-# AEM 문서에 기여 지침
+# Adobe Experience Manager 설명서 기여 지침
 
 ## AEM 설명서 철학
 
@@ -35,9 +35,9 @@ AEM 설명서는 표준 사용 사례를 다룹니다. 이러한 이유로 버�
 
 AEM 설명서를 개선하기 위해 필요한 모든 아이디어는 증여로 환영합니다. 그러나 댓글, 문제 및 풀 요청은 *기여도만을* 위한 것입니다. AEM 사용 방법, AEM 프로젝트 구현 또는 기술 문제 해결 방법에 대한 질문에 답하기 위해 사용되는 것이 아닙니다.
 
-AEM 사용 또는 기술 오류에 대한 모든 질문은 Experience Manager 지원 포털을 통해 일반적인 지원 프로세스를 통해 [보고하거나 Experience](https://daycare.day.com/home.html) Manager 커뮤니티에서 [](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)논의해야 합니다.
+AEM 사용 또는 기술 오류에 대한 모든 질문은 Experience Cloud 엔터프라이즈 지원 포털을 [통해 일반적인 지원 프로세스를 통해 보고하거나 Experience Manager 커뮤니티에서](https://helpx.adobe.com/contact/enterprise-support.ec.html)[](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)논의해야 합니다.
 
-***AEM 문서 기여도는 Adobe 지원을*** 대체할 수 없으며 지원 관련 질문에 대한 답변을 요구하는 이러한 기여도가 거부됩니다.
+***AEM 문서 기여도는 Adobe 고객 지원 센터를*** 대체할 수 없으며, 지원 관련 질문에 대한 답변을 구하는 이러한 기여도가 거부됩니다.
 
 ### 기여도는 해당 문서 페이지를 명확하게 참조해야 합니다.
 
