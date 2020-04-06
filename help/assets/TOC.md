@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 translation-type: tm+mt
-source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
+source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
 + 에셋 공유 및 배포 {#brandportal}
    + [브랜드 포털에서 AEM 자산 구성](configure-aem-assets-with-brand-portal.md)
-   + [브랜드 포털에 AEM 자산 게시](publish-to-brand-portal.md)
+   + [브랜드 포털에 자산 게시](publish-to-brand-portal.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
