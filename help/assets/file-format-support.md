@@ -3,7 +3,7 @@ title: Experience Manager Assets에서 클라우드 서비스로 지원되는 �
 description: Experience Manager Assets에서 클라우드 서비스로 지원되는 파일 포맷 및 MIME 유형
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
 
 ---
 
@@ -169,7 +169,7 @@ source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ## 지원되는 문서 포맷 {#doc-formats}
 
-자산 관리 기능에 지원되는 문서 형식은 다음과 같습니다.
+자산 관리 기능에 지원되는 문서 포맷은 다음과 같습니다.
 
 | 파일 포맷 | 저장 용량 | 메타데이터 관리 | [연결된 자산](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|
