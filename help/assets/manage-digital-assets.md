@@ -4,7 +4,7 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
@@ -19,9 +19,7 @@ source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
 
 >[!NOTE]
 >
->* Marketing Cloud에 공유할 때 해당 유형의 자산 폴더 `sling:OrderedFolder`공유가 지원되지 않습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 순서가] 지정되지 않습니다.
->* Experience Manager에서는 폴더 이름으로 `subassets` 단어를 사용할 수 없습니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다.
-
+>Marketing Cloud에 공유할 때 해당 유형의 자산 폴더 `sling:OrderedFolder`공유가 지원되지 않습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 순서가] 지정되지 않습니다.
 
 1. 새 폴더를 만들 디지털 자산 폴더의 위치로 이동합니다. 메뉴에서 만들기를 **[!UICONTROL 클릭합니다]**. [새 **[!UICONTROL 폴더]를 선택합니다]**.
 1. 제목 **[!UICONTROL 필드에]** 폴더 이름을 입력합니다. 기본적으로 DAM은 폴더 이름으로 제공한 제목을 사용합니다. 폴더가 만들어지면 기본값을 무시하고 다른 폴더 이름을 지정할 수 있습니다.
@@ -417,15 +415,13 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-<!--
-1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
--->
+1. 주석에 대해 사용자에게 알리려면 사용자의 이메일 주소를 지정하고 주석을 추가합니다. 예를 들어 주석을 Aaron MacDonald에 알리려면 @aa를 입력합니다. 일치하는 모든 사용자에 대한 힌트가 목록에 표시됩니다. 목록에서 Aaron의 이메일 주소를 선택하여 주석에 태그를 지정합니다. 마찬가지로 주석 내 또는 그 이전 또는 후에 더 많은 사용자에게 태그를 지정할 수 있습니다.
 
->[!NOTE]
->
->관리자가 아닌 사용자의 경우 CRXDE에서 사용자에게 읽기 권한이 있는 경우에만 제안이 `/home` 표시됩니다.
+   >[!NOTE]
+   >
+   >관리자가 아닌 사용자의 경우, 사용자에게 Crx-de의 */home* 읽기 권한이 있는 경우에만 제안이 나타납니다.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+   ![chlimage_1-235](assets/chlimage_1-235.png)
 
 1. 주석을 추가한 후 추가를 **[!UICONTROL 클릭하여]** 저장합니다. 주석에 대한 알림이 Aaron에게 전송됩니다.
 
