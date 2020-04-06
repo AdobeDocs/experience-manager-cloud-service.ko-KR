@@ -2,7 +2,7 @@
 title: 로그 관리 - 클라우드 서비스
 description: 로그 관리 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
@@ -66,10 +66,3 @@ Environment Id Service    Name
 
 >[!Note]
 >로그 **다운로드는** UI와 API를 통해 사용할 수 있지만 로그 **타임은 API** /CLI 전용입니다.
-
-### 추가 리소스 {#resources}
-
-Cloud Manager API 및 Adobe I/O CLI에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
-
-* [Cloud Manager API 설명서](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
