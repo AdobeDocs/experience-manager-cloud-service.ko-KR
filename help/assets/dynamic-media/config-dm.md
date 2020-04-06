@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud 서비스 구성
 description: Adobe Experience Manager Cloud Service에서 Dynamic Media를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 50ebc2187cff4d35c93e25da9d2f62f6a86f12ad
+source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
 
 ---
 
@@ -65,17 +65,15 @@ Dynamic Media Cloud 서비스를 구성하려면:
 
    * **[!UICONTROL 회사 루트 폴더 경로]**
 
-   * **[!UICONTROL 자산 게시]** - 다음 세 가지 옵션 중에서 선택할 수 있습니다.
-      * **[!UICONTROL 에셋이 업로드되면 시스템이 에셋을 인제스트하고 URL/포함을 즉시 제공함을 즉시]** 의미합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다.
-      * **[!UICONTROL 활성화]** 시 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.
-      * **[!UICONTROL 선택적]** 게시는 에셋이 보안 미리 보기만을 위해 자동으로 게시되며 공개 도메인에 전달을 위해 DMS7에 게시하지 않고도 AEM에 명시적으로 게시할 수 있음을 의미합니다. 앞으로 Adobe는 자산을 AEM에 게시하고 상호 배타적인 Dynamic Media에 게시하기 위한 이 옵션을 개선합니다. 즉, DMS7에 자산을 게시하여 스마트 자르기 또는 동적 표현물과 같은 기능을 사용할 수 있습니다. 또는 미리 보기를 위해 AEM에서만 자산을 게시할 수 있습니다.동일한 에셋은 공개 도메인에 전달하기 위해 DMS7에 게시되지 않습니다.
+   * **[!UICONTROL 자산 게시]** - **[!UICONTROL 즉시]** 옵션은 에셋이 업로드되면 시스템이 에셋을 인제스트하고 URL/포함을 즉시 제공함을 의미합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다. 활성화 **[!UICONTROL 시]** (기본값) 옵션은 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.
+
    * **[!UICONTROL 보안 미리 보기]** 서버 - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM에서 안전하게 원격 다이내믹 미디어 표현물에 액세스하고 미리 볼 수 있습니다(바이너리가 AEM 인스턴스로 다시 전송되지 않음).
 회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정된 대로 유지하는 것이 좋습니다.
 
    * **[!UICONTROL 모든 컨텐츠]** 동기화 - 기본적으로 선택됩니다. 다이내믹 미디어와 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.
 
    * **[!UICONTROL Dynamic Media 동기화 모드]**
-      * **[!UICONTROL 기본적으로]** 사용 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL 기본적으로]** 활성화 - 제외되도록 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로]** 비활성화 - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시해야만 구성이 어떤 폴더에도 적용되지 않습니다.
 선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더의 속성 페이지를 엽니다. 세부 **[!UICONTROL 사항]** 탭을 누른 다음 Dynamic Media **[!UICONTROL 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택한 다음 저장을 **[!UICONTROL 탭합니다]**.
          * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태.
