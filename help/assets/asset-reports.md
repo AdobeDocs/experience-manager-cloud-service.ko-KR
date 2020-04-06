@@ -3,7 +3,7 @@ title: 자산 보고서
 description: 이 문서에서는 AEM 자산의 자산에 대한 다양한 보고서와 보고서 생성 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -18,7 +18,7 @@ AEM Assets 보고 프레임워크는 Sling 작업을 활용하여 정렬된 방�
 
 보고서 관리 인터페이스는 직관적이며, 보관된 보고서에 액세스하고 보고서 실행 상태(성공, 실패 및 큐에 있음)를 볼 수 있는 세밀한 옵션과 컨트롤을 포함합니다.
 
-보고서가 생성되면 받은 편지함 알림을 통해 알림을 받게 <!-- through an email (optional) and --> 됩니다. 이전에 생성된 모든 보고서가 표시되는 보고서 목록 페이지에서 보고서를 보거나, 다운로드하거나, 삭제할 수 있습니다.
+보고서가 생성되면 이메일(선택 사항) 및 받은 편지함 알림을 통해 알림을 받게 됩니다. 이전에 생성된 모든 보고서가 표시되는 보고서 목록 페이지에서 보고서를 보거나, 다운로드하거나, 삭제할 수 있습니다.
 
 ## 보고서 생성 {#generate-reports}
 
@@ -79,7 +79,7 @@ AEM 관리자는 구현을 위해 이러한 보고서를 쉽게 생성하고 사
 
    ![files_report](assets/files_report.png)
 
-   링크 **[!UICONTROL 공유]** 보고서는 AEM 자산 내에서 외부 사용자와 공유된 자산에 대한 URL을 표시합니다. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> 열을 사용자 정의할 수 없습니다.
+   링크 **[!UICONTROL 공유]** 보고서는 AEM 자산 내에서 외부 사용자와 공유된 자산에 대한 URL을 표시합니다. 여기에는 자산을 공유한 사용자의 이메일 ID, 자산이 공유되는 사용자의 이메일 ID, 공유 날짜 및 링크의 만료 날짜가 포함됩니다. 열을 사용자 정의할 수 없습니다.
 
    링크 **[!UICONTROL 공유]** 보고서는 하위 폴더 및 변환에 대한 옵션을 포함하지 않으며, 단지 */var/dam/share*&#x200B;아래에 나타나는 공유 URL만 게시하기 때문입니다.
 
