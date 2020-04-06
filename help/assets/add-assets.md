@@ -2,14 +2,14 @@
 title: Adobe Experience Manager에 디지털 자산 추가
 description: Adobe Experience Manager에 클라우드 서비스로 디지털 자산 추가
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 ---
 
 
 # Adobe Experience Manager에 디지털 자산 추가 {#add-assets-to-experience-manager}
 
-Adobe Experience Manager는 풍부한 메타데이터, 스마트 태그, 변환 및 기타 DAM(Digital Asset Management) 서비스를 통해 업로드된 디지털 파일의 바이너리 컨텐츠를 더욱 풍부하게 제공합니다. 로컬 폴더 또는 네트워크 드라이브에서 Experience Manager Assets로 이미지, 문서 및 Raw 이미지 파일과 같은 다양한 유형의 파일을 업로드할 수 있습니다.
+Adobe Experience Manager에 디지털 파일을 업로드하면 리치 메타데이터, 스마트 태그, 변환 및 기타 DAM(Digital Asset Management) 서비스를 통해 파일의 바이너리 컨텐츠가 더욱 풍부해집니다. 로컬 폴더 또는 네트워크 드라이브에서 다양한 유형의 파일(이미지, PDF 파일, Raw 파일 등)을 Experience Manager Assets로 업로드할 수 있습니다.
 
 다양한 업로드 방법이 제공됩니다. 가장 일반적으로 사용되는 브라우저 업로드 외에도, Adobe Asset Link 또는 Experience Manager 데스크탑 앱과 같은 데스크탑 클라이언트, 만들 스크립트 업로드 및 통합, AEM 익스텐션으로 추가된 자동화된 통합 등 Experience Manager 저장소에 자산을 추가하는 다른 방법이 있습니다.
 
@@ -64,7 +64,7 @@ Adobe Experience Manager에서 이진 파일을 업로드 및 관리할 수 있�
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Adobe Experience Manager에서 이진 파일을 업로드 및 관리할 수 있�
 
 > [!NOTE]
 >
-> 중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [일괄 업로드를 참조하십시오](#bulk-upload).
+> AEM에 중첩 폴더 계층 구조를 업로드해야 하는 경우 자산 [일괄 전송을 참조하십시오.](#bulk-upload)
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -138,7 +138,7 @@ AEM Assets에서는 파일 이름에 금지된 문자가 포함된 자산을 업
 
 Experience Manager는 웹 브라우저 사용자 인터페이스 외에도 데스크탑에서 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 환경을 제공합니다.
 
-* [Adobe Asset](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) Link는 Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 AEM의 자산에 대한 액세스를 제공합니다. 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 직접 현재 열려 있는 문서를 AEM에 업로드할 수 있습니다.
+* [Adobe Asset](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) Link는 Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 AEM의 자산에 대한 액세스를 제공합니다. 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 직접 현재 열려 있는 문서를 AEM에 업로드할 수 있습니다.
 * [Adobe Experience Manager 데스크탑 앱을](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 사용하면 데스크탑 기반의 에셋을 간편하게 작업할 수 있고 파일 유형이나 기본 애플리케이션을 통해 에셋을 처리할 수 있습니다. 브라우저 업로드는 플랫 파일 목록만 업로드하므로 로컬 파일 시스템에서 중첩된 폴더 계층 구조의 파일을 업로드하는 것이 특히 유용합니다.
 
 ## 추가 처리 {#additional-processing}
@@ -169,8 +169,8 @@ Experience Manager는 웹 브라우저 사용자 인터페이스 외에도 데�
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 데스크탑 앱](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience Manager 데스크탑 앱](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Adobe Asset Link 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Adobe Asset Link 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [자산 업로드를 위한 기술 참조](developer-reference-material-apis.md#asset-upload-technical)
 
