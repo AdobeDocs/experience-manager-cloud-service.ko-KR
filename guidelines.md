@@ -1,5 +1,5 @@
 ---
-source-git-commit: b5380858e0887da017657c653b05529066d95fd8
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
@@ -33,9 +33,9 @@ AEM 설명서는 표준 사용 사례를 다룹니다. 이러한 이유로 버�
 
 ### 기술 관련 질문에 대한 답변은 문서 관련 자료가 아닙니다.
 
-AEM 설명서를 개선하기 위해 필요한 모든 아이디어는 증여로 환영합니다. 그러나 댓글, 문제 및 풀 요청은 *기여도만을* 위한 것입니다. AEM 사용 방법, AEM 프로젝트 구현 또는 기술 문제 해결 방법에 대한 질문에 답하기 위해 사용되는 것이 아닙니다.
+AEM 설명서를 개선하기 위해 필요한 모든 아이디어는 증여로 환영합니다. 그러나 댓글, 문제 및 풀 요청은 *기여도만을* 위한 것입니다. AEM을 사용하거나 기술 문제를 해결하는 방법에 대한 질문에 응답하는 데 사용되지 않습니다.
 
-AEM 사용 또는 기술 오류에 대한 모든 질문은 Experience Cloud 엔터프라이즈 지원 포털을 [통해 일반적인 지원 프로세스를 통해 보고하거나 Experience Manager 커뮤니티에서](https://helpx.adobe.com/contact/enterprise-support.ec.html)[](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)논의해야 합니다.
+AEM 사용 또는 기술 오류에 대한 모든 질문은 Experience Cloud 엔터프라이즈 지원 포털을 [통해 일반적인 지원 프로세스를 통해 보고하거나 Experience Manager 커뮤니티에서](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)[](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)논의해야 합니다.
 
 ***AEM 문서 기여도는 Adobe 고객 지원 센터를*** 대체할 수 없으며, 지원 관련 질문에 대한 답변을 구하는 이러한 기여도가 거부됩니다.
 
@@ -43,13 +43,13 @@ AEM 사용 또는 기술 오류에 대한 모든 질문은 Experience Cloud 엔�
 
 설명서에 대한 개선 사항을 제안하는 문제를 만드는 경우 해당 페이지에 대한 링크를 포함해야 합니다. 문서 페이지에서 이 페이지 **편집** 링크를 사용하여 문제를 만들면 페이지에 대한 링크가 자동으로 생성됩니다.
 
-이러한 요청은 원래 끌어오기 요청이 영향을 받는 페이지를 참조하므로 끌어오기 요청에 적용되지 않습니다.
+풀 요청은 정의에 따라 영향을 받는 페이지를 포함하므로 풀 요청에 적용되지 않습니다.
 
 ## 설명서 지침
 
 Adobe는 설명서에 대한 모든 공헌 사항이 특정 스타일 지침을 따르도록 요청합니다.
 
-다음 지침을 따르면 귀하의 기여도를 보다 쉽게 검토할 수 있으므로 Adobe 설명서에 대한 통합이 더욱 빨라졌습니다.
+다음 지침을 따르면 귀하의 기여도를 보다 쉽게 검토할 수 있으므로 Adobe 설명서에 대한 통합이 더욱 빨라졌습니다. 그러나 이러한 지침을 준수하지 않거나 불완전하게 준수하더라도 기여도가 거부되는 것은 아닙니다.
 
 ### 언어 및 스타일
 
