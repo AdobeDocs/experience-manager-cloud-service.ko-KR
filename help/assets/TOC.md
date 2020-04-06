@@ -1,15 +1,14 @@
 ---
-sub-product: AEM Assets as a Cloud Service
-user-guide-title: AEM Assets as a Cloud Service
-translation-type: ht
-source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
+sub-product: 클라우드 서비스로서의 AEM Assets
+user-guide-title: 클라우드 서비스로서의 AEM Assets
+translation-type: tm+mt
+source-git-commit: 733b63785113cdff05876c50d9c66325760e1fae
 
 ---
 
 
 # 자산 {#assets}
 
-+ [클라우드 서비스로서의 AEM Assets](/help/assets/home.md)
 + [개요 및 새로운 기능](overview.md)
 + [클라우드 서비스로서의 AEM Assets에 대한 주요 변경 사항](assets-cloud-changes.md)
 + [아키텍처](architecture.md)
@@ -40,8 +39,8 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [자산에 대한 디지털 권한 관리](drm.md)
 + 자산 구성, 관리 및 확장 {#admin}
    + [API 및 참조 자료](developer-reference-material-apis.md)
+   + [자산 공유 구성](configure-asset-sharing.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
-   + [처리 프로필](/help/assets/dynamic-media/processing-profiles.md)
    + [다국어 자산 및 자산 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
    + [자산 편집기 확장](extend-asset-editor.md)
@@ -52,6 +51,9 @@ source-git-commit: d872d78feb6cab972282979ec67bf3196c56febf
    + [XMP 메타데이터](xmp-metadata.md)
    + [MediaLibrary 기능](medialibrary.md)
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
++ 에셋 공유 및 배포 {#brandportal}
+   + [브랜드 포털에서 AEM 자산 구성](configure-aem-assets-with-brand-portal.md)
+   + [브랜드 포털에 AEM 자산 게시](publish-to-brand-portal.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
