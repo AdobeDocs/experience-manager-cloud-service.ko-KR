@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
+source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# Brand Portal에 자산, 폴더 및 컬렉션 게시 {#publish-aem-assets-to-brand-portal}
 
 AEM(Adobe Experience Manager) 자산 관리자는 자산, 폴더 및 컬렉션을 AEM Assets 브랜드 포털 인스턴스에 게시할 수 있습니다. 자산 또는 폴더의 게시 워크플로우를 나중 날짜 또는 시간으로 예약할 수도 있습니다. 게시되면 브랜드 포털 사용자는 자산, 폴더 및 컬렉션을 액세스하고 다른 사용자에게 추가로 배포할 수 있습니다.
 
