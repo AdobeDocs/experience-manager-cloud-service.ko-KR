@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 AEM 개발 지침
 description: '완료 예정 '
 translation-type: tm+mt
-source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
+source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
 
 ---
 
@@ -83,37 +83,7 @@ pub-sub 메커니즘을 통해 작성자에서 게시로 컨텐츠가 복제됩�
 
 ### 로그 {#logs}
 
-로컬 개발의 경우 로그 항목은 `/crx-quickstart/logs` 폴더의 로컬 파일에 기록됩니다.
-
-클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 툴을 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-
-**로그 수준 설정**
-
-클라우드 환경의 로그 수준을 변경하려면 Sling Logging OSGI 구성을 수정한 후 전체 재배포해야 합니다. 이는 즉각적이지는 않으므로 많은 트래픽을 받는 프로덕션 환경에서 자세한 로그를 활성화하는 것에 주의하십시오. 앞으로 로그 수준을 보다 신속하게 변경하는 메커니즘이 있을 수 있습니다.
-
-> [!NOTE]
-> 
-> 아래 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 해당 변경 사항을 만든 다음 AEM을 클라우드 서비스 인스턴스로 푸시해야 합니다. 이 방법에 대한 자세한 내용은 클라우드 서비스로 [AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
-
-**디버그 로그 수준 활성화**
-
-기본 로그 수준은 INFO입니다. 즉, DEBUG 메시지가 기록되지 않습니다.
-디버그 로그 수준을 활성화하려면
-
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
-
-property to debug. 로그를 많은 로그를 생성하므로 DEBUG 로그 수준에서 로그를 필요 이상으로 오래 보관하지 마십시오.
-디버그 파일의 행은 일반적으로 DEBUG로 시작되며 로그 수준, 설치 프로그램 작업 및 로그 메시지를 제공합니다. 예:
-
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
-
-로그 수준은 다음과 같습니다.
-
-| 0 | 치명적인 오류 | 작업이 실패하여 설치 프로그램을 계속할 수 없습니다. |
-|---|---|---|
-| 1 | 오류 | 작업이 실패했습니다. 설치가 진행되지만 CRX의 일부가 제대로 설치되지 않아 작동하지 않습니다. |
-| 2 | 경고 | 작업에 성공했지만 문제가 발생했습니다. CRX가 제대로 작동하지 않거나 작동하지 않을 수 있습니다. |
-| 3 | 정보 | 작업이 성공했습니다. |
+로그 작업 방법에 대한 자세한 내용은 로깅 [설명서를](/help/implementing/developing/introduction/logging.md)참조하십시오.
 
 ### 스레드 덤프 {#thread-dumps}
 
