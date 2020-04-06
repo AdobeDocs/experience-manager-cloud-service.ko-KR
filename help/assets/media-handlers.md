@@ -3,7 +3,7 @@ title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
 description: 다양한 미디어 핸들러와 워크플로우에서 이를 사용하여 에셋에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -18,7 +18,7 @@ AEM(Adobe Experience Manager) 자산은 자산을 처리하기 위한 기본 워
 
 >[!NOTE]
 >
->AEM [자산에서 지원하는 모든 포맷과 각 형식에 지원되는 기능에 대한 설명은 자산 지원 파일 형식](file-format-support.md) 아티클을 참조하십시오.
+>AEM 자산에서 [지원하는 모든 포맷과 각 형식에 지원되는 기능에 대한 설명은 자산 지원 형식](file-format-support.md) 페이지를 참조하십시오.
 
 ## 기본 미디어 핸들러 {#default-media-handlers}
 
@@ -76,7 +76,7 @@ AEM(Adobe Experience Manager) 자산은 자산을 처리하기 위한 기본 워
   </tr>
   <tr>
    <td>MSP 파섹</td>
-   <td>com.day.cq.dam.handler.standard.msoffice.MSPopowerPointHandler</td>
+   <td>com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler</td>
    <td>application/vnd.ms-powerpoint<br /> </td>
   </tr>
   <tr>
@@ -407,7 +407,7 @@ AEM을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 �
 
 먼저 AEM 서버를 호스팅하는 디스크에 ImageMagick을 설치합니다.
 
-1. ImageMagick 설치:ImageMagick [설명서를](https://www.imagemagick.org/script/download.php)참조하십시오.
+1. ImageMagick 설치:imageMagick 설명서를 [참조하십시오](https://www.imagemagick.org/script/download.php).
 1. 명령줄에서 변환을 실행할 수 있도록 도구를 설정합니다.
 1. 도구가 제대로 설치되었는지 확인하려면 명령줄에서 다음 명령을 `convert -h` 실행하십시오.
 
