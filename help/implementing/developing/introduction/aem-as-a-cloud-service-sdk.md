@@ -2,7 +2,7 @@
 title: 클라우드 서비스 SDK로서의 AEM
 description: '완료 예정 '
 translation-type: tm+mt
-source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
+source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
 ## 클라우드 서비스 SDK로 AEM 액세스 {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * AEM 관리 콘솔의 Adobe Experience **Manager 정보** 아이콘을 확인하여 프로덕션에서 실행 중인 AEM 버전을 확인할 수 있습니다.
-* 빠른 시작 jar 및 발송자 도구는 소프트웨어 배포 포털에서 [zip 파일로 다운로드할 수](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)있습니다. SDK 목록에 대한 액세스는 클라우드 서비스 환경으로 AEM Managed Services 또는 AEM을 사용하는 것으로 제한됩니다.
+* 빠른 시작 jar 및 발송자 도구는 소프트웨어 배포 포털에서 [zip 파일로 다운로드할 수](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)있습니다. SDK 목록에 대한 액세스는 클라우드 서비스 환경으로 AEM Managed Services 또는 AEM을 사용하는 것으로 제한됩니다.
 * Java API Jar 및 Javadoc Jar는 명령줄 또는 기본 IDE와 함께 전문적인 툴을 통해 다운로드할 수 있습니다.
 * 마스터 프로젝트 속성은 다음 API Jar 패키지를 참조해야 합니다. 이 종속성은 모든 하위 패키지 홈에서도 참조되어야 합니다.
 
