@@ -3,7 +3,7 @@ title: 클라우드 서비스로 Adobe Experience Manager 자산 구성 및 관�
 description: 클라우드 서비스로서 자산에 필요한 구성 및 관리 작업에 대해 알아보기
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -12,8 +12,7 @@ source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 이 문서에서는 Adobe Experience Manager Assets를 클라우드 서비스로 사용하기 시작하는 데 필요한 최상위 구성 또는 관리 작업을 나열합니다.
 
-<!-- SCOPE 
-
+<!-- 
 Top-level page for all administrative tasks specific to Assets as a Cloud Service.
 Backlink to Sites administering content where required.
 Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/assets.html though not complete and not so accurate.
@@ -26,9 +25,7 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.
 * Steps to integrate with Adobe and third-party solutions. Analytics, Launch, Creative Cloud, etc.
--->
 
-<!-- 
 ## Work with search indices {#search-index-for-assets-cloud-service}
 
 * Link to this topic for information about Experience Manager's common index https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service-prerelease.en/blob/master/help/sites/operations/indexing.html
