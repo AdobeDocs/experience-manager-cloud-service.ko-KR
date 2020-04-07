@@ -3,7 +3,7 @@ title: Adobe Experience Manager Assets의 디지털 권한 관리
 description: AEM 파섹
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -54,11 +54,13 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 1. Adobe **[!UICONTROL CQ DAM 만료 알림을 선택합니다]**. 기본적으로 시간 **[!UICONTROL 기반 스케줄러가]** 선택되어 자산이 만료된 하위 자산이 있는지 여부를 특정 시간에 확인할 작업을 예약합니다. 작업이 완료되면 만료된 하위 자산 및 참조된 자산이 검색 결과에 만료된 것으로 표시됩니다.
 
 1. 작업을 주기적으로 실행하려면 시간 기반 스케줄러 **[!UICONTROL 규칙]** 필드를 지우고 시간(초) **[!UICONTROL 을]** 수정합니다. 예: 예제 표현식 &#39;0 &amp;ast;&amp;ast;?&#39; 00시간에 작업을 트리거합니다.
-1. 자산이 만료될 때 이메일을 **[!UICONTROL 받으려면 이메일]** 보내기를 선택합니다.
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >자산 생성자(AEM 자산에 특정 자산을 업로드하는 사람)만 자산이 만료되면 이메일을 받습니다. 전체 AEM 수준에서 이메일 알림을 구성하는 방법에 대한 자세한 내용은 이메일 알림을 구성하는 방법을 참조하십시오.
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. 이전 **[!UICONTROL 알림(초]** 단위) 필드에서 만료 관련 알림을 받을 때 자산이 만료되기 전 시간(초)을 지정합니다. 관리자 또는 자산 작성자는 자산이 만료되기 전에 지정된 시간 후에 만료될 것임을 알려주는 메시지를 받게 됩니다.
 
