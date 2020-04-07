@@ -2,13 +2,14 @@
 sub-product: 클라우드 서비스로 AEM에 대한 구현
 user-guide-title: 클라우드 서비스로 AEM에 대한 구현
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # 구현 {#implementing}
 
++ [클라우드 서비스로서의 AEM용 애플리케이션 구현](/help/implementing/home.md)
 + Cloud Manager 사용 {#using-cloud-manager}
    + [환경 관리](cloud-manager/manage-environments.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
@@ -21,12 +22,11 @@ source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
    + [Git 액세스](cloud-manager/accessing-git.md)
    + [Adobe Cloud Manager와 Git 통합](cloud-manager/integrating-with-git.md)
 + 클라우드 서비스로서의 AEM을 위한 개발 {#developing}
-   + [AEM 프로젝트 패키지 구조](developing/introduction/aem-project-content-package-structure.md)
-   + [저장소 구조 패키지 개발](developing/introduction/repository-structure-package.md)
+   + [AEM 프로젝트 구조](developing/introduction/aem-project-content-package-structure.md)
+   + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)
    + [클라우드 서비스 SDK로서의 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [콘텐츠 검색 및 색인 지정](/help/operations/indexing.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
-   + [로깅](/help/implementing/developing/introduction/logging.md)
    + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
@@ -37,3 +37,4 @@ source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
    + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
 + 클라우드의 디스패처 {#dispatcher}
    + [클라우드의 디스패처](dispatcher/overview.md)
+   + [클라우드 서비스로서의 AEM에서 컨텐츠 전달](dispatcher/content-delivery.md)
