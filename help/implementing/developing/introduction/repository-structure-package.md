@@ -1,13 +1,13 @@
 ---
-title: '저장소 구조 패키지 개발   '
+title: 'AEM 프로젝트 저장소 구조 패키지  '
 description: Adobe Experience Manager를 Cloud Service Maven 프로젝트로 배포하려면 저장소 구조 하위 패키지 정의가 필요합니다. 이 하위 패키지 정의에서는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의합니다.
 translation-type: tm+mt
-source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# 저장소 구조 패키지 개발
+# AEM 프로젝트 저장소 구조 패키지
 
 Adobe Experience Manager를 클라우드 서비스로 사용하는 Adobe Experience Manager에 대한 전문적인 프로젝트를 사용하려면 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 저장소 구조 하위 패키지 정의가 필요합니다. 이렇게 하면 클라우드 서비스로서 Experience Manager에서 패키지를 JCR 리소스 종속성에 의해 자동으로 설치됩니다. 종속성이 누락되면 하위 구조가 상위 구조 앞에 설치되고 따라서 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
 
@@ -51,9 +51,9 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면, 비�
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>my-app.repository-structure</artifactId>
+    <artifactId>ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>My App - Adobe Experience Manager Repository Structure Package</name>
+    <name>UI Apps Structure - Repository Structure Package for /apps</name>
 
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the code packages in this project deploy into.
@@ -66,6 +66,10 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면, 비�
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
+                <properties>
+                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
                 <configuration>
                     <properties>
                         <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
@@ -76,14 +80,29 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면, 비�
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
 
-                        <!-- Common overlay roots -->
-                        <filter><root>/apps/sling</root></filter>
-                        <filter><root>/apps/cq</root></filter>
-                        <filter><root>/apps/dam</root></filter>
-                        <filter><root>/apps/wcm</root></filter>
+                        <!--
+                        Examples of complex roots
 
-                        <!-- Immutable context-aware configurations -->
+
+                        Overlays of /libs typically require defining the overlayed structure, at each level here.
+
+                        For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
+
+                        <filter><root>/apps/cq</root></filter>
+                        <filter><root>/apps/cq/core</root></filter>
+                        <filter><root>/apps/cq/core/content</root></filter>
+                        <filter><root>/apps/cq/core/content/nav/</root></filter>
+                        <filter><root>/apps/cq/core/content/nav/tools</root></filter>
+
+
+                        Any /apps level Context-aware configurations need to enumerated here. 
+                        
+                        For example, providing email templates under `/apps/settings/notification-templates/com.day.cq.replication` necessitates the following rules:
+
                         <filter><root>/apps/settings</root></filter>
+                        <filter><root>/apps/settings/notification-templates</root></filter>
+                        <filter><root>/apps/settings/notification-templates/com.day.cq.replication</root></filter>
+                        -->
 
                     </filters>
                 </configuration>
@@ -112,7 +131,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면, 비�
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>my-app.repository-structure</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -124,7 +143,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면, 비�
     <!-- Add the dependency for the repository structure package so it resolves -->
     <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>my-app.repository-structure</artifactId>
+        <artifactId>ui.apps.structure</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
     </dependency>
