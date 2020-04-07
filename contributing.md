@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
+source-git-commit: b0abce7f1d911123da37ba279a565c7608e5a4c5
 translation-type: tm+mt
 
 ---
@@ -19,25 +19,7 @@ AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만
 
 ## Contribute 방법
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe는 귀하의 공헌 자료를 가능한 한 손쉽게 제출할 수 있도록 하고자 합니다. 다음과 같은 두 가지 방법으로 기여할 수 있습니다.
-=======
-=======
->>>>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of f6e5291로 병합...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of 190577c...&#39;master&#39; 분기를 스테이징에 병합기여 방법은 작성자와 작성하고자 하는 변경 내용의 종류에 따라 다릅니다.
-
-
-
-
-
-> 
-
-### 문제 만들기
->>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
-
-
-
-
-
-
+귀하의 기고를 가능한 한 쉽게 제출하고자 합니다. 다음과 같은 두 가지 방법으로 기여할 수 있습니다.
 
 * [문제 만들기](#create-an-issue)
 * [풀 요청 만들기](#create-a-pull-request)
@@ -45,7 +27,8 @@ AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만
 어떤 방법을 선택하느냐에 따라 GitHub에서 직접 설명서를 얼마나 편리하게 편집할 수 있는지 결정됩니다.
 
 >[!NOTE]
-제출한 기여도는 Adobe 사용 [약관의 적용을 받습니다.](https://www.adobe.com/legal/terms.html)
+>
+>제출한 기여도는 Adobe 사용 [약관의 적용을 받습니다.](https://www.adobe.com/legal/terms.html)
 
 ### 문제 만들기 {#create-an-issue}
 
@@ -55,24 +38,7 @@ AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만
 
 ### 풀 요청 만들기 {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADERf 문제가 발생하여 이를 수정하는 방법을 정확히 알고 있다면 풀 요청을 만드는 것이 좋습니다. 끌어오기 요청을 사용하면 문서에 직접 편집한 다음 AEM Docs Team 구성원이 포함하도록 검토합니다. 페이지의 **오른쪽 탐색 패널 상단에 있는 이 페이지** 편집 링크를 클릭하면 제안된 변경 사항을 적용하고 가져오기 요청을 만들 수 있습니다.
-=======
->=======>
->>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of f6e5291로 병합...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of 190577c...지점 &#39;마스터&#39;를 스테이징에 병합
-
-
-
-
->> 
-
-### Adobe 직원의 주요 변경 사항
->>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
-
-
-
-
-
-
+문제가 발견되고 이를 수정하는 방법을 정확히 아는 경우 풀 요청을 만드는 것이 좋습니다. 끌어오기 요청을 사용하면 문서에 직접 편집한 다음 AEM Docs Team 구성원이 포함하도록 검토합니다. 페이지의 **오른쪽 탐색 패널 상단에 있는 이 페이지** 편집 링크를 클릭하면 제안된 변경 사항을 적용하고 가져오기 요청을 만들 수 있습니다.
 
 모든 가져오기 요청에는 서명된 [기고자 라이선스 계약 또는 CLA가 포함되어야 합니다.](https://opensource.adobe.com/cla.html)  이를 통해 Adobe에 프로젝트의 일부로 기여도를 재배포할 수 있는 권한을 부여합니다. Adobe CLA를 한 번만 제출하면 되므로 이전에 제출했다면 충분히 제출하십시오!
 
@@ -82,42 +48,11 @@ AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
-&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 ### Adobe 직원의 기여
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIf 귀하는 Adobe 직원이며 공헌을 가지고 있는 경우, 기업 git의 `AdobeDocs` 조직을 사용하십시오.
+Adobe 직원이고 풀 요청을 하려는 경우 의 개인 저장소를 사용하십시오 `https://git.corp.adobe.com/AdobeDocs`.
 
-Adobe는 물론 모든 기부에 만족하며, 기부가 공개 보관소에 있는 경우 귀하의 기여 내용을 검토할 것이지만, Adobe 직원의 요청을 처리하는 것이 더 쉽고 회사 보고에 대해 더욱 빠르게 승인할 수 있습니다. 회사 보고에 대한 독점적인 정보만 명시되어 있는지 확인하십시오.
-=======
->=======>
->>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of f6e5291로 병합...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of 190577c...지점 &#39;마스터&#39;를 스테이징에 병합
-
-
-
-
->> 
-
-## 도구 및 설정
-
-커뮤니티 작성자는 기본 편집에 GitHub UI를 사용하거나 보고서를 포크하여 주요 기여를 할 수 있습니다.
-
-GitHub [제작](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) 플랫폼을 사용하는 방법에 대한 개요는 Adobe Docs Contributor Guide를 참조하십시오.
-
-## 마크다운을 사용하여 토픽 서식 지정 방법
-
-이 저장소의 모든 아티클은 GitHub 분량 마크다운을 사용합니다. 마크다운에 익숙하지 않은 경우 다음을 참조하십시오.
-
-* [마케팅 기본 사항](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [인쇄용 마크다운 시트](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## 레이블
->>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
-
-
-
-
-
-
+문제는 공개 리포지토리를 자유롭게 사용하십시오.
 
 ## 추가 정보
 
