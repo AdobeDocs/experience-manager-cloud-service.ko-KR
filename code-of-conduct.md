@@ -47,8 +47,8 @@ translation-type: tm+mt
 
 &lt;&lt;&lt;&lt;&lt;&lt; HEADT이 작성한 행동 코드는 https://contributor-covenant.org/version/1/4에서 [제공하는](https://contributor-covenant.org)Contributor Agreement 버전 1.4에서 [채택되었습니다](https://contributor-covenant.org/version/1/4/).
 =======
-본 수칙(Code of Contributor Agreement) [은 https://contributor-covenant.org/version/1/4에](https://contributor-covenant.org)있는 버전 1.4 [에서](https://contributor-covenant.org/version/1/4/)채택되었습니다.&lt;&lt;&lt;&lt;&lt;&lt; HEAD
->>>>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of f6e5291로 병합...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
+본 수칙은 https://contributor-covenant.org/version/1/4&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; [HEAD](https://contributor-covenant.org)&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD)에 있는 [기고자](https://contributor-covenant.org/version/1/4/)규약 버전 1.4에서 채택되었습니다.
+>>>>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of f6e5291로 병합...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of f6e5291로 병합...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
 
 
 
