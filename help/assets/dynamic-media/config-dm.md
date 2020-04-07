@@ -170,7 +170,7 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 
 >[!NOTE]
 >
->기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 **[!UICONTROL 사전 설정을 선택하면]** 15개의변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 감소 [표시되는](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가 또는 감소를 참조하십시오.
+>기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 **[!UICONTROL 사전]** 설정을 선택하면 15개의 변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 감소 [표시되는](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가 또는 감소를 참조하십시오.
 
 
 #### 색상 관리 구성 {#configuring-color-management}
