@@ -2,13 +2,14 @@
 sub-product: 클라우드 서비스로 AEM에서 컨텐츠 작성
 user-guide-title: 클라우드 서비스로 AEM에서 컨텐츠 작성
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # 사이트 {#sites}
 
++ [클라우드 서비스로서의 AEM 사이트](/help/sites-cloud/home.md)
 + [AEM 클라우드 서비스의 AEM 사이트에 대한 주요 변경 사항](sites-cloud-changes.md)
 + 작성 {#authoring}
    + 시작하기 {#getting-started}
