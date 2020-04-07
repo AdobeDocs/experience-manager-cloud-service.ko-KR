@@ -2,7 +2,7 @@
 title: 다이내믹 미디어 자산 게시
 description: 다이내믹 미디어 자산을 게시하는 방법
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 자산을 선택하고 게시를 탭하여 Dynamic Media 자산을 **[!UICONTROL 게시합니다]**. 다이내믹 미디어 에셋이 게시되면 URL을 통해 웹 페이지에 포함하거나 임베드할 수 있습니다.
 
-또한 사용자가 개입하지 않고도 업로드한 자산을 즉시 게시할 수 있습니다. See [Configuring Dynamic Media](config-dm.md).
+또한 사용자가 개입하지 않고도 업로드한 자산을 즉시 게시할 수 있습니다. 또는 해당 자산을 선택적으로 게시할 수 있습니다. See [Configuring Dynamic Media](config-dm.md).
 
 카드 **[!UICONTROL 보기에서]**, 자산 이름 바로 아래에 작은 글로벌 아이콘이 표시되어 게시되었음을 나타냅니다. 목록 **[!UICONTROL 보기에서]**&#x200B;게시된 **[!UICONTROL 열은]** 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
