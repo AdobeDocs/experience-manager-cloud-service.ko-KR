@@ -2,7 +2,7 @@
 title: 콘텐츠 검색 및 색인 지정
 description: '콘텐츠 검색 및 색인 지정 '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -31,7 +31,7 @@ AEM을 클라우드 서비스로 사용하는 Adobe는 AEM 인스턴스 중심 �
 
 1. Blue-Green 배포 모델이 [](#index-management-using-blue-green-deployments) 도입됨에 따라 AEM에서 클라우드 서비스로 높은 수준의 AEM에는 다음과 같은 두 가지 인덱스 세트가 존재합니다.이전 버전 세트(파란색)와 새 버전 세트(녹색)에 대해 설정된 세트
 
-사용되는 인덱스의 버전은 `useIfExist` 플래그를 통해 색인 정의에 플래그를 사용하여 구성됩니다. 인덱스는 한 버전의 응용 프로그램(예: 파란색 또는 녹색만 해당)에서만 사용하거나 두 버전 모두에서 사용할 수 있습니다. 자세한 설명서는 블루-그린 배포를 [사용하는 색인 관리에서 사용할 수 있습니다](#index-management-using-blue-green-deployments).
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. 고객은 Cloud Manager 빌드 페이지에서 색인 작업이 완료되었는지 확인하고 새 버전이 트래픽을 받을 준비가 되면 알림을 받게 됩니다.
 
@@ -61,7 +61,7 @@ AS NOTE: the above is internal for now.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-그 다음 `ui.content/src/main/content/jcr_root`밑으로 들어가야겠네요 현재 하위 루트 폴더는 지원되지 않습니다.
+그 다음 `ui.apps/src/main/content/jcr_root`밑으로 들어가야겠네요 현재 하위 루트 폴더는 지원되지 않습니다.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,11 +69,15 @@ AS NOTE: the above is internal for now.
 
 ### 색인 정의 배포 {#deploying-index-definitions}
 
+> [!NOTE]
+>
+> Jackrabbit Filevault Maven Package Plugin 버전 **1.1.0** 관련 알려진 문제로 인해 모듈 `oak:index` 추가 작업이 `<packageType>application</packageType>`중단되었습니다. 이 문제를 해결하려면 버전 **1.0.4를 사용하십시오**.
+
 이제 색인 정의가 사용자 정의 및 버전 관리로 표시됩니다.
 
-* 가변 컨텐츠인 색인 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
+* 색인 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
 
-따라서 인덱스를 배포하려면 일반적으로 Git 및 Cloud Manager 배포 프로세스를 통해`/oak:index/definitionname`변경 가능한 패키지를 **통해**&#x200B;색인 정의( `ui.content` )를 전달해야 합니다.
+따라서 색인을 배포하려면 Git 및 Cloud Manager 배포 프로세스를`/oak:index/definitionname`통해 색인 정의( `ui.apps` )를 전달해야 합니다.
 
 새 인덱스 정의가 추가되면 Cloud Manager를 통해 새 애플리케이션을 배포해야 합니다. 배포 시 작성자와 게시를 위해 각각 MongoDB 및 Azure 세그먼트 저장소에 인덱스 정의를 추가(필요한 경우 병합)할 책임이 있는 두 개의 작업이 시작됩니다. Blue-Green 스위치를 실행하기 전에 기본 리포지토리는 새 인덱스 정의로 다시 색인화됩니다.
 
