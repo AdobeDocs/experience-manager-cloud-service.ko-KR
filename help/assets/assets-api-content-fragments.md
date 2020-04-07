@@ -50,7 +50,7 @@ Assets REST API 파섹
 
 자산 REST API는 [AEM](https://en.wikipedia.org/wiki/Representational_state_transfer)인스턴스 내에 저장된 자산에 대한 REST 스타일 액세스를 제공합니다.
 
-종단점을 사용하고 `/api/assets` 자산의 경로가 있어야 합니다(행간 `/content/dam`없음).
+종단점을 사용하고 `/api/assets` 이에 액세스하려면 자산의 경로가 필요합니다(행간 `/content/dam`없음).
 
 * 즉, 다음 위치에서 자산에 액세스합니다.
    * `/content/dam/path/to/asset`
