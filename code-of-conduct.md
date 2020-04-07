@@ -1,5 +1,5 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -45,5 +45,13 @@ translation-type: tm+mt
 
 ## 기여도 분석
 
-본 수칙(Code of Contributor Agreement) [은 버전](https://contributor-covenant.org)1.4(https://contributor-covenant.org/version/1/4)에서 [채택되었습니다.](https://contributor-covenant.org/version/1/4/)
+&lt;&lt;&lt;&lt;&lt;&lt; HEADT이 작성한 행동 코드는 https://contributor-covenant.org/version/1/4에서 [제공하는](https://contributor-covenant.org)Contributor Agreement 버전 1.4에서 [채택되었습니다](https://contributor-covenant.org/version/1/4/).
+=======
+본 수칙(Code of Contributor Agreement) [은 https://contributor-covenant.org/version/1/4에](https://contributor-covenant.org)있는 버전 1.4 [에서](https://contributor-covenant.org/version/1/4/)채택되었습니다.&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;staging&#39;을 staging======parent of f6e5291로 병합...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
 
+
+
+
+
+> 
