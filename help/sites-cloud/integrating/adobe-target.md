@@ -2,7 +2,7 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -34,11 +34,15 @@ Target과 통합하려면 다음 작업을 수행하십시오.
    * [Adobe I/O를 통해 AEM과 Adobe Launch 통합](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [Adobe, Analytics 및 Target의 Launch와 AEM 통합 이해](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
-1. [활동 구성](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):활동을 Target 클라우드 구성과 연결합니다.
-
 >[!NOTE]
 >
 >Launch by Adobe의 IMS 구성(기술 계정)은 AEM에서 클라우드 서비스로 미리 구성되어 있습니다. 사용자는 이 구성을 만들 필요가 없습니다.
+
+1. [활동 구성](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):활동을 Target 클라우드 구성과 연결합니다.
+
+>[!CAUTION]
+>
+>AEM에서 클라우드 서비스로, AEM의 오퍼 및 활동을 Adobe Target과 동기화하는 복제 에이전트는 기본적으로 비활성화됩니다. 복제 에이전트를 [다시](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) 활성화해야 하는 경우 Adobe 지원 팀에 문의하십시오.
 
 >[!NOTE]
 >
