@@ -3,7 +3,7 @@ title: 디지털 자산을 클라우드에서 처리하는 방법 살펴보기
 description: 클라우드 기반의 확장 가능한 자산 처리 마이크로서비스를 사용하여 디지털 자산을 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -13,10 +13,9 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
-
 -->
 
-클라우드 서비스로서의 Adobe Experience Manager는 Adobe Experience Manager 애플리케이션 및 기능을 클라우드 기반으로 활용합니다. 이 새로운 아키텍처의 주요 요소 중 하나는 자산 통합 및 처리, 자산 마이크로 서비스 힘입니다.
+Adobe Experience Manager as a Cloud Service는 Experience Manager 애플리케이션 및 기능을 이용할 수 있는 클라우드 기반의 방법을 제공합니다. 이 새로운 아키텍처의 주요 요소 중 하나는 자산 통합 및 처리, 자산 마이크로 서비스 힘입니다.
 
 에셋 마이크로서비스는 다양한 에셋 유형 및 처리 옵션을 최적화하기 위해 Adobe에서 관리하는 클라우드 서비스를 사용하여 에셋을 확장 가능하고 탄력적으로 처리할 수 있습니다. 주요 이점은 다음과 같습니다.
 
@@ -53,10 +52,10 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 자산 수집 및 처리의 기본 흐름입니다. 구성된 경우, Experience Manager는 고객의 워크플로우 모델을 시작하여 자산의 사후 처리를 수행할 수 있습니다. 예를 들어, 고객의 엔터프라이즈 시스템에서 정보를 가져와 자산 속성에 추가하는 등 고객 환경과 관련된 일부 사용자 지정 단계를 실행할 수 있습니다.
 
-통합 및 처리 흐름은 Adobe Experience Manager의 자산 마이크로 서비스 아키텍처에서 활용하는 몇 가지 주요 개념을 보여줍니다.
+통합 및 처리 과정은 Adobe Experience Manager의 자산 마이크로 서비스 아키텍처의 핵심 개념입니다.
 
-* **직접 바이너리 액세스** - 에셋은 Experience Manager 환경용으로 구성되면 클라우드 바이너리 스토어로 전송(및 업로드됨)된 다음 AEM, 에셋 마이크로 서비스 및 클라이언트는 직접 액세스하여 작업을 수행할 수 있습니다. 이렇게 하면 네트워크 로드와 저장된 바이너리의 복제가 최소화됩니다.
-* **외부 처리** - 자산 처리는 AEM 환경 외부에서 수행되며, 주요 디지털 자산 관리 기능을 제공하고 최종 사용자를 위해 시스템과 인터랙티브한 작업을 지원하기 위해 리소스(CPU, 메모리)를 저장합니다
+* **직접 이진 액세스**:자산은 Experience Manager 환경을 위해 구성되면 클라우드 바이너리 스토어로 전송(및 업로드됨)되고, 그런 다음 AEM, 자산 마이크로 서비스 및 클라이언트는 직접 액세스하여 작업을 수행할 수 있습니다. 이렇게 하면 네트워크 로드와 저장된 바이너리의 복제가 최소화됩니다.
+* **외부 처리**:자산 처리는 AEM 환경 외부에서 수행되며, 핵심 디지털 자산 관리 기능을 제공하고 최종 사용자를 위한 시스템에서 대화형 작업을 지원하기 위해 리소스(CPU, 메모리)를 저장합니다
 
 ## 직접 이진 액세스를 통해 에셋 업로드 {#asset-upload-with-direct-binary-access}
 
