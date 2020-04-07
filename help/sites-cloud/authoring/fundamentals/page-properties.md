@@ -2,7 +2,7 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -181,6 +181,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **타깃팅 구성**
 
    * [타깃팅할 범위를 지정하려면 [브랜드]](/help/sites-cloud/authoring/personalization/targeted-content.md)를 선택합니다.
+   >[!NOTE]
+   >이 옵션을 사용하려면 사용자 계정이 `Target Adminstrators`그룹에 있어야 합니다.
 
 ### 권한 {#permissions}
 
