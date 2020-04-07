@@ -2,13 +2,14 @@
 sub-product: 클라우드 서비스로서의 AEM에 온보딩
 user-guide-title: 클라우드 서비스로서의 AEM에 온보딩
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # 온보딩 {#onboarding}
 
++ [클라우드 서비스로서의 AEM에 온보딩](/help/onboarding/home.md)
 + 필수 사항 {#what-is-required}
    + [부여된 액세스 권한](what-is-required/access-rights-granted.md)
    + [사용자 및 역할 추가](what-is-required/add-users-roles.md)
