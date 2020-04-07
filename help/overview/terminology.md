@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 소개 - 용어
 description: '클라우드 서비스로서의 Adobe Experience Manager 소개 - 용어. '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -38,6 +38,7 @@ source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 | 자산 마이크로서비스 | 표현물 생성, PDF 처리, 하위 자산 처리, 텍스트 추출 등과 같은 다양한 자산 처리 사용 사례를 충족하는 클라우드 기반의 디지털 자산 처리 서비스입. 자세한 내용은 [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)를 참조하십시오. |
 | Cloud Manager Git 리포지토리 | 고객이 자신의 코드 및 구성 설정을 저장하는 곳. |
 | 클라우드 제공업체 | 클라우드 서비스로서의 AEM은 클라우드 제공업체로 Azure 및 AWS를 모두 지원합니다. |
+| CDN(Content Delivery Network) | 클라우드 서비스로서의 AEM이 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 컨텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다. |
 | 컨텐츠 리포지토리 | 컨텐츠가 계속 유지되는 곳. |
 | 엔터프라이즈 분리 | 클라우드 서비스로서의 AEM의 각 인스턴스는 다른 인스턴스와 분리되어 있습니다. |
 | 골든 마스터 | AEM 게시 계층. |
