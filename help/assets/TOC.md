@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 translation-type: tm+mt
-source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
+source-git-commit: 2097a49b20225dea01b1ef3b5d0dd79a62e04f68
 
 ---
 
@@ -52,8 +52,8 @@ source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
    + [XMP 메타데이터](xmp-metadata.md)
    + [MediaLibrary 기능](medialibrary.md)
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD==================
->>>>>>>>>>733b637의 부모...목차 업데이트
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD===================
+>>>>>>>>>>733b637의 부모...update toc=======parent of 733b637...목차 업데이트
 
 
 
@@ -63,7 +63,8 @@ source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
 + 자산 공유 및 배포 {#brandportal}
    + [브랜드 포털에서 AEM 자산 구성](configure-aem-assets-with-brand-portal.md)
    + [브랜드 포털에 AEM 자산 게시](publish-to-brand-portal.md)
->>>>>>>733b637의 부모...update toc=======parent of da6a8ae...클라우드 기반의 AEM 자산을 사용하여 브랜드 포털 구성=======parent of da6a8ae...클라우드에서 AEM 자산을 사용하여 브랜드 포털 구성
+>>>>>>>733b637의 부모...update toc======
+>>>>>>> da6a8ae의 부모...클라우드 기반의 AEM 자산을 사용하여 브랜드 포털 구성=======parent of da6a8ae...클라우드에서 AEM 자산을 사용하여 브랜드 포털 구성
 
 
 
