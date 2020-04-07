@@ -3,7 +3,7 @@ title: 자산 HTTP API
 description: Assets HTTP API의 구현, 데이터 모델 및 기능에 대해 알아봅니다. 자산 HTTP API를 사용하여 자산 관련 다양한 작업을 수행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -25,7 +25,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 >[!NOTE]
 >
->자산 또는 이진 파일 업로드 또는 업데이트와 관련된 모든 API 호출(예: 변환)은 AEM에 대해 클라우드 서비스 배포로 정의됩니다. 바이너리를 업로드하려면 [직접 바이너리 업로드 API를 대신 사용하십시오](developer-reference-material-apis.md#asset-upload-technical) .
+>자산 또는 이진 파일 업로드 또는 업데이트와 관련된 모든 API 호출(예: 변환)은 AEM에 대해 클라우드 서비스 배포로 정의됩니다. 바이너리를 업로드하려면 [직접 이진 업로드 API를](developer-reference-material-apis.md#asset-upload-technical) 대신 사용하십시오.
 
 ## 콘텐츠 조각 {#content-fragments}
 
