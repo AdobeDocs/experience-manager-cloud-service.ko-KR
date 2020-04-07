@@ -4,7 +4,7 @@ description: Adobe Experience Manager Assets의 컬렉션 개념을 이해하십
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -170,7 +170,7 @@ Smart Collection은 검색 기준을 사용하여 자산을 동적으로 채웁�
 
 1. 컬렉션 콘솔에서 다운로드할 컬렉션을 하나 이상 선택합니다.
 1. 도구 모음에서 다운로드 아이콘을 탭/클릭합니다.
-1. 다운로드 **[!UICONTROL 대화 상자에서]** 다운로드를 탭/ **[!UICONTROL 클릭합니다]**. 컬렉션 내에서 자산의 표현물을 다운로드하려면 표현물을 **[!UICONTROL 선택합니다]**. 이메일 **[!UICONTROL 옵션을 선택하여]** 컬렉션의 소유자에게 이메일 알림을 보냅니다.
+1. 다운로드 **[!UICONTROL 대화 상자에서]** 다운로드를 탭/ **[!UICONTROL 클릭합니다]**. 컬렉션 내에서 자산의 표현물을 다운로드하려면 표현물을 **[!UICONTROL 선택합니다]**. <!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    다운로드할 컬렉션을 선택하면 컬렉션 아래의 전체 폴더 계층 구조가 다운로드됩니다. 다운로드한 각 컬렉션(상위 컬렉션 아래에 중첩된 하위 컬렉션에 있는 자산 포함)을 개별 폴더에 포함하려면 각 자산에 **[!UICONTROL 대해]**&#x200B;별도의 폴더 만들기를 선택합니다.
 
