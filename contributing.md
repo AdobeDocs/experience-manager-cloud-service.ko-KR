@@ -1,5 +1,5 @@
 ---
-source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -19,18 +19,25 @@ AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만
 
 ## Contribute 방법
 
-&lt;&lt;&lt;&lt;&lt;&lt; HEADWe를 사용하면 가능한 한 손쉽게 자신의 작품을 제출할 수 있습니다. 다음과 같은 두 가지 방법으로 기여할 수 있습니다.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe는 귀하의 기여도를 가능한 한 쉽게 제출할 수 있도록 하고자 합니다. 다음과 같은 두 가지 방법으로 기여할 수 있습니다.
 =======
-기여도를 높이는 방법은 자신이 누구이고 어떤 유형의 변경 사항을 기여할 것인지에 따라 다릅니다.
-
-### 문제 만들기
->>>>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
+=======
+>>>>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합기여 방식은 사용자 및 증여할 변경 내용의 종류에 따라 달라집니다.
 
 
 
 
 
 > 
+
+### 문제 만들기
+>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
+
+
+
+
+
+
 
 * [문제 만들기](#create-an-issue)
 * [풀 요청 만들기](#create-a-pull-request)
@@ -48,8 +55,16 @@ AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만
 
 ### 풀 요청 만들기 {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt; HEADI문제가 발생하여 이를 수정하는 방법을 정확히 알고 있다면 풀 요청을 만드는 것이 좋습니다. 끌어오기 요청을 사용하면 문서에 직접 편집한 다음 AEM Docs Team 구성원이 포함하도록 검토합니다. 페이지의 **오른쪽 탐색 패널 상단에 있는 이 페이지** 편집 링크를 클릭하면 제안된 변경 사항을 적용하고 가져오기 요청을 만들 수 있습니다.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIif you see a problem and exactly how to fix it, consider a pull request. 끌어오기 요청을 사용하면 문서에 직접 편집한 다음 AEM Docs Team 구성원이 포함하도록 검토합니다. 페이지의 **오른쪽 탐색 패널 상단에 있는 이 페이지** 편집 링크를 클릭하면 제안된 변경 사항을 적용하고 가져오기 요청을 만들 수 있습니다.
 =======
+=======
+>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
+
+
+
+
+
+
 ### Adobe 직원의 주요 변경 사항
 >>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
 
@@ -70,10 +85,18 @@ AEM 설명서를 개선하기 위한 모든 기여를 환영합니다. 하지만
 &lt;&lt;&lt;&lt;&lt;&lt; HEAD
 ### Adobe 직원의 기여
 
-Adobe 직원이고 기여도가 있는 경우 회사 Git의 `AdobeDocs` 조직을 사용하십시오.
+&lt;&lt;&lt;&lt;&lt;&lt; HEADIif you are a Adobe employee and have a contribution, please use the org in the corporate git. `AdobeDocs`
 
 Adobe는 물론 모든 기부에 만족하며, 기부가 공개 보관소에 있는 경우 귀하의 기여 내용을 검토할 것이지만, Adobe 직원의 요청을 처리하는 것이 더 쉽고 회사 보고에 대해 더욱 빠르게 승인할 수 있습니다. 회사 보고에 대한 독점적인 정보만 명시되어 있는지 확인하십시오.
 =======
+=======
+>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
+
+
+
+
+
+
 ## 도구 및 설정
 
 커뮤니티 작성자는 기본 편집에 GitHub UI를 사용하거나 보고서를 포크하여 주요 기여를 할 수 있습니다.
@@ -88,13 +111,13 @@ GitHub [제작](https://docs.adobe.com/help/en/contributor/contributor-guide/int
 * [인쇄용 마크다운 시트](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 레이블
->>>>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
+>>>>>>>f6e5291의 부모...https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en의 분기 &#39;스테이징&#39;을 스테이징에 병합
 
 
 
 
 
-> 
+
 
 ## 추가 정보
 
