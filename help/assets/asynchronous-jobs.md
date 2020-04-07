@@ -3,7 +3,7 @@ title: 비동기 작업
 description: AEM Assets는 리소스를 많이 사용하는 일부 작업을 비동기적으로 완료하여 성능을 최적화합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ## 비동기 작업 상태 모니터링 {#monitoring-the-status-of-asynchronous-operations}
 
-AEM 자산이 비동기적으로 작업을 처리할 때마다 받은 편지함과 이메일을 통해 알림을 받습니다.
+AEM 자산이 비동기적으로 작업을 처리할 때마다 받은 편지함에서 알림을 받게 <!-- and through email -->됩니다.
 
 비동기 작업의 상태를 자세히 보려면 [비동기 작업 상태] **[!UICONTROL 페이지로 이동합니다]** .
 
