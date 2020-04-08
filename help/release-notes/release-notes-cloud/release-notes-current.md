@@ -2,7 +2,7 @@
 title: 2020.4.0용 클라우드 서비스 릴리스 노트로 Adobe Experience Manager
 description: 2020.4.0용 Adobe Experience Manager 릴리스 노트
 translation-type: tm+mt
-source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
+source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
 
 ---
 
