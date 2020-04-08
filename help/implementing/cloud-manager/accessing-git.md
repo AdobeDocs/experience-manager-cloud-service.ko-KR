@@ -4,7 +4,7 @@ seo-title: Git 액세스
 description: 이 페이지에서는 Git 리포지토리에 액세스하고 관리하는 방법에 대해 설명합니다.
 seo-description: 이 페이지에서 Git 리포지토리에 액세스하고 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -39,6 +39,7 @@ Cloud Manager에서 Git을 관리하는 데 고려해야 할 사항은 다음과
 * **암호**:[암호 생성] **단추를** 클릭할 때 표시되는 값입니다.
 
 
-> [!NOTE]
-> 사용자는 자신의 코드 사본을 체크 아웃하고 로컬 코드 리포지토리에서 변경할 수 있습니다. 준비가 되면 사용자는 코드 변경 내용을 Cloud Manager의 원격 코드 저장소로 다시 커밋할 수 있습니다.
+>[!NOTE]
+>
+>사용자는 자신의 코드 사본을 체크 아웃하고 로컬 코드 리포지토리에서 변경할 수 있습니다. 준비가 되면 사용자는 코드 변경 내용을 Cloud Manager의 원격 코드 저장소로 다시 커밋할 수 있습니다.
 
