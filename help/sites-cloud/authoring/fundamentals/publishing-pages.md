@@ -1,8 +1,8 @@
 ---
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
-translation-type: ht
-source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -43,6 +43,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 >* 게시할 요청을 적절한 사람에게 알리도록 워크플로우가 트리거됩니다.
 >* 이 워크플로우는 개발 팀에서 사용자 지정했을 수 있습니다.
 >* 워크플로우가 트리거되었음을 알리는 메시지가 짧게 표시됩니다.
+
 
 <!--
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
@@ -182,7 +183,10 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
    참조는 트리거된 워크플로우 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 
    * 워크플로우의 제목을 정의합니다.
-   * 워크플로우가 다중 참조 지원을 제공한다면 워크플로우 패키지를 유지합니다. <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).-->
+   * 워크플로우가 다중 참조 지원을 제공한다면 워크플로우 패키지를 유지합니다.
+   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    -->
+
    * 워크플로우 패키지를 유지하는 옵션이 선택된 경우 워크플로우 패키지의 제목을 정의합니다.
    **게시** 또는 **나중에 게시**&#x200B;를 클릭하여 게시를 완료할 수 있습니다.
 
