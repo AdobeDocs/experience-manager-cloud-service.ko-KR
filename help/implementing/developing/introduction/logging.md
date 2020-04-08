@@ -2,7 +2,7 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -122,13 +122,13 @@ source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
 
 클라우드 환경의 로그 수준을 변경하려면 Sling Logging OSGI 구성을 수정한 후 전체 재배포해야 합니다. 이는 즉각적이지는 않으므로 많은 트래픽을 받는 프로덕션 환경에서 자세한 로그를 활성화하는 것에 주의하십시오. 앞으로 로그 수준을 보다 신속하게 변경하는 메커니즘이 있을 수 있습니다.
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > 아래 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 해당 변경 사항을 만든 다음 AEM을 클라우드 서비스 인스턴스로 푸시해야 합니다. 이 방법에 대한 자세한 내용은 클라우드 서비스로 [AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
 
 ### 디버그 로그 수준 활성화 {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > DEBUG 로그 수준을 전역적으로 활성화하면 대량의 정보가 생성되므로 간을 전환하기 어렵습니다. 디버깅이 필요한 서비스에만 사용하도록 설정하는 것이 좋습니다. 자세한 내용은 로거 및 개인 [서비스 작성자를 참조하십시오](logging.md#loggers-and-writers-for-individual-services).
 
@@ -174,7 +174,7 @@ property to debug. 로그를 많은 로그를 생성하므로 DEBUG 로그 수�
 특정 상황에서는 다른 로그 수준의 사용자 정의 로그 파일을 만들 수 있습니다. 다음과 같은 방법으로 저장소에서 이 작업을 수행할 수 있습니다.
 
 1. 아직 존재하지 않는 경우 프로젝트에 대한 새 구성 폴더( `sling:Folder`)를 `/apps/<*project-name*>/config`만듭니다.
-1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성에 대한 노드를 만듭니다.
+1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성의 노드를 만듭니다.
 
    * 이름:(로거인 경우) `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>`
 
