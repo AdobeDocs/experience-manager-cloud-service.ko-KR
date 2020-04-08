@@ -1,8 +1,8 @@
 ---
 title: 클라우드 서비스 SDK로서의 AEM
-description: '완료 예정 '
+description: 완료 예정
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -32,12 +32,12 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>aem-sdk-api</artifactId>
-  <version>2019.11.3006.20191108T223635Z-191201</version> 
+  <version>2019.11.3006.20191108T223635Z-191201</version>
   <scope>provided</scope>
 </dependency>
 ```
 
-> [!NOTE] SDK의 버전 항목은 AEM 버전과 클라우드 서비스로 일치해야 합니다. AEM에 로그인한 다음 화면 오른쪽 상단에 있는 물음표로 이동하여 Adobe Experience Manager **[!UICONTROL 정보를 선택하면 사용 중인 버전을 확인할 수 있습니다]**
+>[!NOTE] SDK의 버전 항목은 AEM 버전과 클라우드 서비스로 일치해야 합니다. AEM에 로그인한 다음 화면 오른쪽 상단에 있는 물음표로 이동하여 Adobe Experience Manager **[!UICONTROL 정보를 선택하면 사용 중인 버전을 확인할 수 있습니다]**
 
 * 패키지가 호스팅된 maven 저장소의 원격 좌표를 pom 파일에 포함해야 합니다.
 
