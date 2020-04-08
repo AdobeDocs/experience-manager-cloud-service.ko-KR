@@ -2,7 +2,7 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
    >
    >자세한 내용은 SEO 및 URL 관리 우수 사례 아래의 로컬라이제이션된 페이지 이름을 참조하십시오.
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * **클라우드 서비스**
 
-   * 클라우드 서비스에 대한 속성을 정의합니다. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * 클라우드 서비스에 대한 속성을 정의합니다.
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### 개인화 {#personalization}
 
 * **ContextHub 구성**
 
-   * ContextHub 구성 및 세그먼트 경로를 선택합니다. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * ContextHub 구성 및 세그먼트 경로를 선택합니다.
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **타깃팅 구성**
 
@@ -188,16 +193,24 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * **권한**
 
-   * 권한 추가 <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * 폐쇄된 사용자 그룹 편집 <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * 유효 권한<!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)--> 보기 
+   * 권한 추가
+   * 폐쇄된 사용자 그룹 편집
+   * 유효 권한 보기
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### 블루프린트 {#blueprint}
 
 * **블루프린트**
 
-   * 다중 사이트 관리 내에서 블루프린트 페이지에 대한 속성을 정의합니다.<!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * 다중 사이트 관리 내에서 블루프린트 페이지에 대한 속성을 정의합니다.
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
+
 
 ### Live Copy {#live-copy}
 
@@ -252,6 +265,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >속성의 벌크 편집은 자산에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 다중 자산의 속성 편집을 참조하십시오.
 >
 >GQL(Google 쿼리 언어)을 사용하여 여러 페이지에서 컨텐츠를 검색한 다음 변경 사항을 원래 페이지에 저장하기 전에 [벌크 편집기]에서 직접 컨텐츠를 편집할 수 있으므로 벌크 편집기라고도 합니다.
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >[!NOTE]
 >
 >벌크 편집에 사용할 수 있는 필드를 지정하도록 페이지 구성 요소를 구성할 수 있습니다. 자세한 내용은 페이지 속성의 벌크 편집을 위한 페이지 구성을 참조하십시오.
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
