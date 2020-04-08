@@ -2,7 +2,7 @@
 title: 릴리스 2020.4.0 릴리스 노트
 description: 릴리스 2020.4.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
+source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
 # 클라우드 서비스 2020.4.0으로서의 AEM 릴리스 노트 {#release-notes}
 
 다음 섹션에서는 클라우드 서비스 2020.4.0으로서의 Experience Manager에 대한 일반 릴리스 노트를 간략하게 설명합니다.
+
+## Release Date {#release-date}
+
+클라우드 서비스 2020.4.0으로서 Experience Manager의 릴리스 날짜는 2020년 4월 9일입니다.
 
 ## 자산 {#assets}
 
