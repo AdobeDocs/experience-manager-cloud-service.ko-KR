@@ -1,8 +1,8 @@
 ---
 title: 릴리스 2020.2.0 릴리스 노트
 description: 릴리스 2020.2.0 릴리스 노트
-translation-type: ht
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+translation-type: tm+mt
+source-git-commit: 8796d4bcbfc4089e1e78bd18bdb253386a5f5b6d
 
 ---
 
@@ -11,11 +11,13 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 다음 섹션에서는 클라우드 서비스 2020.2.0으로서의 Experience Manager에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
+## Release Date {#release-date}
+
+클라우드 서비스 2020.2.0으로서 Experience Manager의 릴리스 날짜는 2020년 2월 13일입니다.
+
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager 릴리스 2020.2.0의 릴리스 날짜는 2020년 2월 13일입니다.
-
-이 섹션을 통해 Cloud Manager 릴리스 2020.2.0에 대한 새로운 기능 및 업데이트를 알아보십시오.
+클라우드 서비스 릴리스 2020.2.0으로서 AEM에서 Cloud Manager의 새로운 기능과 업데이트에 대해 알아보려면 이 섹션을 따르십시오.
 
 ### 새로운 기능 {#what-is-new}
 
