@@ -1,8 +1,8 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
-description: '클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원 '
-translation-type: ht
-source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
+description: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
+translation-type: tm+mt
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -106,7 +106,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ## 클라우드 서비스로서의 Adobe Experience Manager 구성 {#aem-configuration}
 
-> [!NOTE]
+>[!NOTE]
 >
 >필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다. 그러나 관리자는 [여기에서](/help/implementing/deploying/overview.md) 설명하는 방법을 사용하여 필요한 대로 수정할 수 있습니다.
 
