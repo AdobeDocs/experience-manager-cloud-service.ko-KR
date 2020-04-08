@@ -2,7 +2,7 @@
 title: Adobe Experience Manager에 디지털 자산 추가
 description: Adobe Experience Manager에 클라우드 서비스로 디지털 자산 추가
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager에서 이진 파일을 업로드 및 관리할 수 있�
 
 업로드된 자산에 대해 추가 처리를 수행하도록 선택할 수도 있습니다. 특정 메타데이터, 변환 또는 이미지 처리 서비스를 추가하기 위해 자산을 업로드하는 폴더에 다양한 자산 처리 프로필을 구성할 수 있습니다. 자세한 [내용은 아래 추가 처리를](#additional-processing) 참조하십시오.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Adobe Experience Manager as a Cloud Service는 직접 바이너리 업로드라는 새로운 방식의 자산 업로드 방식을 활용합니다. 기본적으로 AEM 사용자 인터페이스, Adobe Asset Link, AEM 데스크탑 앱과 같은 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
 >
@@ -75,9 +75,9 @@ Adobe Experience Manager에서 이진 파일을 업로드 및 관리할 수 있�
 
 또한 자산 사용자 인터페이스에는 업로드한 최신 자산 또는 처음 만든 폴더가 표시됩니다.
 
-> [!NOTE]
+>[!NOTE]
 >
-> 중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [벌크 업로드를 참조하십시오](#bulk-upload).
+> 중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [일괄 업로드를 참조하십시오](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -130,7 +130,7 @@ AEM Assets에서는 파일 이름에 금지된 문자가 포함된 자산을 업
 * 사용자 정의 업로드 스크립트 또는 [자산 업로드 API를 활용하는 도구를 사용합니다](developer-reference-material-apis.md#asset-upload-technical). 이러한 사용자 지정 도구는 필요한 경우 자산 처리(예: 메타데이터 번역 또는 파일 이름 변경)를 추가할 수 있습니다.
 * Experience [Manager 데스크탑 앱을](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 사용하여 중첩된 폴더 계층을 업로드합니다.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Adobe Experience Manager를 설정하고 Experience Manager로 배포할 때 다른 시스템에서 컨텐츠 마이그레이션의 일부로 일괄 업로드하려면 신중한 계획, 고려 사항 및 도구 선택이 필요합니다. 콘텐츠 마이그레이션 방법에 대한 지침은 [배포 가이드를](/help/implementing/deploying/overview.md) 참조하십시오.
 
@@ -157,7 +157,7 @@ Experience Manager는 웹 브라우저 사용자 인터페이스 외에도 데�
 * [이미지 프로필을](dynamic-media/image-profiles.md) 사용하면 특정 자르기(스마트 자르기 및&#x200B;**[!UICONTROL 픽셀 자르기)]** 및 선명하게 하기 구성을 업로드된 자산에 적용할 수 있습니다
 * [비디오 프로필을](dynamic-media/video-profiles.md) 사용하면 특정 비디오 인코딩 프로필(해상도, 형식, 매개 변수)을 적용할 수 있습니다
 
-> [!NOTE]
+>[!NOTE]
 >
 > 다이내믹 미디어 자르기 및 자산에서 기타 작업은 원본을 훼손하지 않습니다. 즉, 업로드된 원본을 변경하지 않고 자산을 전달할 때 자르기 또는 미디어 변환을 위한 매개 변수를 제공합니다
 
