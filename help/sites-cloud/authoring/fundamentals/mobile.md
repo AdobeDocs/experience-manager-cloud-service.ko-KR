@@ -1,8 +1,8 @@
 ---
 title: 모바일 장치용 페이지 작성
 description: 모바일용으로 작성할 때 몇 개의 에뮬레이터 간을 전환하여 최종 사용자에게 표시되는 내용을 확인할 수 있습니다.
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -20,6 +20,7 @@ Adobe Experience Manager 페이지는 응답형 레이아웃을 기반으로 합
 >기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. 다른 채널용 Live Copy 만들기를 참조하십시오.
 >
 >AEM 개발자는 새 장치 그룹을 만들 수 있습니다. 장치 그룹 필터 만들기를 참조하십시오.
+
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
