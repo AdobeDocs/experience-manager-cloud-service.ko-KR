@@ -3,7 +3,7 @@ title: Brand Portal에 자산, 폴더 및 컬렉션 게시
 description: 자산, 폴더 및 컬렉션을 브랜드 포털에 게시합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -21,7 +21,9 @@ AEM 자산에서 원본 자산, 폴더 또는 컬렉션을 이후에 수정하�
 * [브랜드 포털에 컬렉션 게시](#publish-collections-to-brand-portal)
 
 >[!NOTE]
->>Adobe에서는 피크 시간이 아닌 시간에 구애받지 않는 게시가 권장되므로 AEM 작성자가 초과 리소스를 차지하지 않도록 합니다.>
+>
+>피크 시간이 아닌 시간에 구애받지 않고 AEM 작성자가 초과 리소스를 차지하지 않도록 시차 게시를 권장합니다.
+
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
