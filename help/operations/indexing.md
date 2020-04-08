@@ -1,8 +1,8 @@
 ---
 title: 콘텐츠 검색 및 색인 지정
-description: '콘텐츠 검색 및 색인 지정 '
+description: 콘텐츠 검색 및 색인 지정
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -39,7 +39,7 @@ AEM을 클라우드 서비스로 사용하는 Adobe는 AEM 인스턴스 중심 �
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
 
 AS NOTE: the above is internal for now.
 
@@ -69,7 +69,7 @@ AS NOTE: the above is internal for now.
 
 ### 색인 정의 배포 {#deploying-index-definitions}
 
-> [!NOTE]
+>[!NOTE]
 >
 > Jackrabbit Filevault Maven Package Plugin 버전 **1.1.0** 관련 알려진 문제로 인해 모듈 `oak:index` 추가 작업이 `<packageType>application</packageType>`중단되었습니다. 이 문제를 해결하려면 버전 **1.0.4를 사용하십시오**.
 
@@ -118,7 +118,8 @@ AS NOTE: the above is internal for now.
 다음 표는 5개의 인덱스 정의를 보여 줍니다.index `cqPageLucene` 는 두 버전 모두에서 사용되지만 색인은 버전 2에서만 `damAssetLucene-custom-1` 사용됩니다.
 
 
-> [!NOTE]
+>[!NOTE]
+>
 > `<indexName>-custom-<customerVersionNumber>` 은 AEM을 클라우드 서비스로 사용하여 기존 색인의 교체로 표시해야 합니다.
 
 | 색인 | 기본 색인 | 버전 1에서 사용 | 버전 2에서 사용 |
