@@ -1,8 +1,8 @@
 ---
 title: 검색
 description: 포괄적인 검색으로 신속하게 컨텐츠 찾기
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -64,6 +64,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    >
    >* 선택한 리소스 유형에 따라(예: 자산 및 커뮤니티) 기준이 세분화됩니다.
    >* 검색 양식과 같은 인스턴스는 AEM 내의 위치에 맞게 사용자 지정할 수 있습니다.
+
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
