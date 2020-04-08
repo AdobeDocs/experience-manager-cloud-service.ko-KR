@@ -2,7 +2,7 @@
 title: 소스 코드 저장소 - 클라우드 서비스
 description: 소스 코드 저장소 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 6f323f33663f83043eb8a15fe00e6ed872c3cac1
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -21,5 +21,6 @@ AEM Cloud 응용 프로그램 개발을 시작하려면, Cloud Manager 리포지
 $ git clone {URL}
 ```
 
-> [!NOTE]
+>[!NOTE]
+>
 > 사용자는 자신의 코드 사본을 체크 아웃하고 로컬 코드 리포지토리에서 변경할 수 있습니다. 준비가 되면 사용자는 코드 변경 내용을 Cloud Manager의 원격 코드 저장소로 다시 커밋할 수 있습니다.
