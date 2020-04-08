@@ -2,7 +2,7 @@
 title: 페이지에 워크플로우 적용
 description: 작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다. 또한 둘 이상의 워크플로우를 적용할 수도 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -30,7 +30,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >* 워크플로우를 DAM 자산에 적용하는 방법
 >* [프로젝트 워크플로우 작업](/help/sites-cloud/authoring/projects/workflows.md)
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >[!NOTE]
 >
 >AEM 관리자는 몇 가지 다른 방법을 사용하여 워크플로우를 시작할 수 있습니다.
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -102,6 +104,7 @@ You can start a workflow from the toolbar of the **Sites** console:
    >[!NOTE]
    >
    >여러 리소스 지원을 위한 워크플로우를 구성하고 여러 리소스를 선택하면 **워크플로우 패키지 유지** 선택 사항을 사용할 수 있습니다.
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
