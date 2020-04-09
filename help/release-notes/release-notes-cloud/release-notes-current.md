@@ -2,7 +2,7 @@
 title: 2020.4.0용 클라우드 서비스 릴리스 노트로 Adobe Experience Manager
 description: 2020.4.0용 Adobe Experience Manager 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ The following section outlines the general release notes for [!DNL Experience Ma
 >* [Experience Manager가 자산 링크와 연동되도록 구성](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Adobe Experience Manager에서 자산 마이크로 서비스를 사용하여 워크플로우 제작](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Cloud Manager 업데이트 {#cloud-manager}
+
+## Cloud Manager의 새로운 기능 {#whats-new-cloud-manager}
+
+* 이제 Cloud Manager UI의 환경 페이지에서 게시자 URL을 사용할 수 있습니다.
+* 사용자가 Cloud Manager 개요 페이지에서 프로그램을 편집, 전환 또는 추가할 수 있도록 탐색이 변경되었습니다.
+* 사용자가 Cloud Manager 랜딩 페이지의 프로그램 카드에서 프로그램을 편집할 수 있도록 하는 변경 사항입니다.
+* 새 파이프라인 상태 **파이프라인** 실행 중 연결된 환경에 대해 표시됩니다.
+* 파이프라인 실행 페이지 이해 기능이 개선되었습니다. 여기에는 파이프라인 이름(비프로덕션 파이프라인 전용) 및 유형, 파이프라인 상태가 진행 중/취소됨/실패인지 여부를 나타내는 배지가 포함됩니다.
+* 프로그램/환경 추가 단추가 비활성화된 이유에 대한 사용자 경험과 이해를 돕기 위한 도구 팁입니다.
+* 이제 UI 및 API를 통해 실패한 환경을 삭제할 수 있습니다.
+* Git 암호를 생성하는 데 사용되는 프로세스는 기본 서비스 레이어의 문제에 보다 탄력적으로 적용됩니다.
+
+## 버그 수정 {#bug-fixes-cloud-manager}
+
+* 파이프라인 실행 세부 정보 페이지의 스테이지 환경에 대한 링크가 올바른 위치로 일관되게 이동하지 않았습니다.
+* 환경 생성 프로세스 내의 개별 단계가 필요 이상으로 빨리 시간 초과되어 프로세스가 실패합니다.
+* 빌드 컨테이너에 사용된 Maven 구성이 아티팩트 메타데이터를 다운로드할 때 교착 상태를 방지하기 위해 업데이트되었습니다.
+* 경우에 따라 이미지 작성 단계가 고객 패키지를 다운로드하지 못할 수 있습니다.
+* 특정 자주 발생하는 조건은 환경을 삭제하지 못하게 합니다.
+* Experience Cloud 알림을 일관되게 받지 못했습니다.
