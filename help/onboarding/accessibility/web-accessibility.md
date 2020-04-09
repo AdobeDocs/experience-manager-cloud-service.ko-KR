@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
 seo-title: Adobe Experience Manager as a Cloud Service and the Web Accessibility Guidelines
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Experience Manager as a Cloud Service는 World Wide Web Consortium에서 �
 
 W3C( [World Wide Web Consortium)](https://www.w3.org/) 는 웹 표준 개발을 위한 국제 커뮤니티입니다. WAI( [Web Accessibility Initiative)](https://www.w3.org/WAI/) 는 웹 컨텐츠 [접근성 가이드라인을 게시합니다](#wcag-accessibility-guidelines).
 
-## WCAG 2.1 웹 컨텐츠 접근성 지침 {#wcag-accessibility-guideslines}
+## WCAG(Web Content Accessibility Guidelines) 2.1 {#wcag-accessibility-guideslines}
 
 웹 디자이너와 개발자가 액세스 가능한 웹 사이트를 제작할 수 있도록 [WAI(Web Accessibility Initiative)](https://www.w3.org/WAI/) 가 2018년 6월 WCAG(Web Content [Accessibility Guidelines) 2.1을](https://www.w3.org/TR/WCAG/) 게시했습니다.
 
