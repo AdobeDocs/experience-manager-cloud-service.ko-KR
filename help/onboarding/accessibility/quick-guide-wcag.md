@@ -2,7 +2,7 @@
 title: WCAG 2.1에 대한 빠른 가이드
 seo-title: WCAG 2.1에 대한 빠른 가이드
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -87,7 +87,7 @@ WCAG 2.1은 안정적인 문서이며 변경되지 않지만 이러한 지원 �
 
 [WCAG 2.1의 새로운](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 기능은 WCAG와 2.0 및 WCAG 2.1 간의 델타에 대한 중요한 정보를 제공합니다.
 
-[WCAG 2.0 및 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 관계는 더욱 명확해졌습니다.
+WCAG [2.0 및 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 조항은 해당 관계의 상태를 더욱 명확하게 합니다.
 
 ### WCAG 2.1 기술 {#techniques-for-wcag}
 
