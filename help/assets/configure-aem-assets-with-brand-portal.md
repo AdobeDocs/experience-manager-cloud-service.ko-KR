@@ -3,7 +3,7 @@ title: 브랜드 포털에서 AEM Assets 클라우드 서비스 구성
 description: 브랜드 포털에서 AEM Assets 클라우드 서비스를 구성합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -204,8 +204,6 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
    배포 에이전트에는 두 개의 대기열이 있습니다.
    * 브랜드 포털에 자산을 배포하기 위한 처리 대기열입니다.
    * 배포가 실패한 자산에 대한 오류 대기열입니다.
-   개별 대기열 또는 전체 구성을 테스트할 수 있습니다.
-
    ![](assets/test-bpconfig3.png)
 
 1. AEM 자산과 브랜드 포털 간의 연결을 확인하려면 연결 **[!UICONTROL 테스트를 클릭합니다]**.
@@ -218,11 +216,20 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
    >
    >자산(실행 중인 큐)의 배포가 실패할 수 있으므로 배포 에이전트를 비활성화하지 마십시오.
 
-브랜드 포털이 AEM Assets 클라우드 인스턴스로 구성되었습니다. 이제 다음을 수행할 수 있습니다.
+
+브랜드 포털이 AEM Assets 클라우드 인스턴스로 성공적으로 구성되면 다음을 수행할 수 있습니다.
 
 * [AEM 자산에서 브랜드 포털에 자산 게시](publish-to-brand-portal.md)
 * [AEM 자산의 폴더를 브랜드 포털에 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [AEM 자산에서 브랜드 포털에 컬렉션 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+위의 내용 외에도 메타데이터 스키마, 이미지 사전 설정, 검색 패싯 및 태그를 AEM Assets의 브랜드 포털에 게시할 수 있습니다.
+
+* [브랜드 포털에 사전 설정, 스키마 및 패싯 게시](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [태그를 Brand Portal에 게시](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+자세한 내용은 [브랜드 포털 설명서를](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 참조하십시오.
 
 
 ## 배포 로그 {#distribution-logs}
@@ -233,7 +240,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
 1. 연결 테스트에 표시된 대로 단계(1-4단계) **[!UICONTROL 를]** 따라 배포 에이전트 페이지로 이동합니다.
 
-1. 배포 큐 **[!UICONTROL 배포 에이전트0을]** 선택하고 **[!UICONTROL 로그를]** 클릭하여 배포 로그를 봅니다.
+1. 로그를 **[!UICONTROL 클릭하여]** 배포 로그를 봅니다. 여기서 처리 및 오류 로그를 볼 수 있습니다.
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,8 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
 위의 예에서 추가 요청 및 응답이 트리거됩니다. 자산이 처음으로 게시되었기 때문에 시스템이 브랜드 포털에서 상위 폴더(경로 추가)를 찾을 수 없으므로 자산이 게시된 브랜드 포털에서 동일한 이름으로 상위 폴더를 만들기 위한 추가 요청을 트리거합니다.
 
-같은 이름의 상위 폴더가 있는 경우(a.k.a.브랜드 포털에서 경로 추가)를 사용할 경우 추가 요청이 트리거되지 않습니다.
-
 >[!NOTE]
->
->오류 로그를 보려면 배포 큐 **[!UICONTROL 오류-큐-배포]** 에이전트0을 선택하고 로그를 **[!UICONTROL 클릭합니다]**.
-
+>>상위 폴더가 브랜드 포털에 없거나(위 예에서) 상위 폴더가 AEM 자산에서 수정된 경우 추가 요청이 생성됩니다.>
 
 ## 추가 정보 {#additional-information}
 
@@ -274,6 +277,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
