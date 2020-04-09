@@ -3,7 +3,7 @@ title: 브랜드 포털에서 AEM Assets 클라우드 서비스 구성
 description: 브랜드 포털에서 AEM Assets 클라우드 서비스를 구성합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -48,7 +48,7 @@ IMS 구성에는 다음 두 단계가 포함됩니다.
 
 1. AEM Assets 클라우드 인스턴스에 로그인
 
-1. 도구 **패널에서** ![보안](assets/tools.png) > **[!UICONTROL Adobe IMS]** 구성을 ****&#x200B;탐색합니다.
+1. 도구 **패널에서** ![보안](assets/tools.png) > **[!UICONTROL Adobe IMS]** ****&#x200B;구성패널로 이동합니다.
 
    ![Adobe IMS 계정 구성 UI](assets/ims-configuration1.png)
 
@@ -56,7 +56,7 @@ IMS 구성에는 다음 두 단계가 포함됩니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   Adobe IMS 기술 계정 **[!UICONTROL 구성 페이지로 이동합니다]** .
+   그러면 Adobe IMS 기술 **[!UICONTROL 계정 구성 페이지로 이동합니다]** .
 
 1. 기본적으로 인증서 **탭이** 열립니다.
 
@@ -163,7 +163,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
 1. AEM Assets 클라우드 인스턴스에 로그인
 
-1. 도구 **도구** ![패널에서](assets/tools.png) 클라우드 서비스 **[!UICONTROL > AEM 브랜드]**&#x200B;포털로 이동합니다.
+1. 도구 **패널에서** ![클라우드 서비스](assets/tools.png) > **[!UICONTROL AEM]** 브랜드 **[!UICONTROL 포털]**&#x200B;도구 모음으로 이동합니다.
 
    브랜드 포털 구성 페이지가 열립니다.
 
@@ -217,7 +217,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
    >자산(실행 중인 큐)의 배포가 실패할 수 있으므로 배포 에이전트를 비활성화하지 마십시오.
 
 
-브랜드 포털이 AEM Assets 클라우드 인스턴스로 성공적으로 구성되면 다음을 수행할 수 있습니다.
+AEM Assets 클라우드 인스턴스가 브랜드 포털로 성공적으로 구성되었으므로 이제 다음을 수행할 수 있습니다.
 
 * [AEM 자산에서 브랜드 포털에 자산 게시](publish-to-brand-portal.md)
 * [AEM 자산의 폴더를 브랜드 포털에 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,7 +262,9 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 위의 예에서 추가 요청 및 응답이 트리거됩니다. 자산이 처음으로 게시되었기 때문에 시스템이 브랜드 포털에서 상위 폴더(경로 추가)를 찾을 수 없으므로 자산이 게시된 브랜드 포털에서 동일한 이름으로 상위 폴더를 만들기 위한 추가 요청을 트리거합니다.
 
 >[!NOTE]
->>상위 폴더가 브랜드 포털에 없거나(위 예에서) 상위 폴더가 AEM 자산에서 수정된 경우 추가 요청이 생성됩니다.>
+>
+>상위 폴더가 브랜드 포털에 없거나(위 예에서) 상위 폴더가 AEM 자산에서 수정된 경우에 대한 추가 요청이 생성됩니다.
+
 
 ## 추가 정보 {#additional-information}
 
