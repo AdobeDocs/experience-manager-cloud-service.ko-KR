@@ -2,7 +2,7 @@
 title: 2020.4.0용 클라우드 서비스 릴리스 노트로 Adobe Experience Manager
 description: 2020.4.0용 Adobe Experience Manager 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
+source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
 
 ---
 
@@ -32,9 +32,10 @@ The following section outlines the general release notes for [!DNL Experience Ma
    * 자산 재처리 대화 상자에서는 특정 처리 프로필을 선택하고 하위 폴더에서 다시 처리할 수 있습니다.
    * [!DNL Dynamic Media]:안전한 미리 보기용으로 에셋이 자동 게시되도록 선택적 게시 구성을 추가했습니다. 또한 공개 도메인에 제공하기 위해 DMS7에 게시하지 않고도 Experience Manager에 자산을 명시적으로 게시할 수 있습니다.
 
-* 다음 문제가 해결되었습니다.
-   * 자산 처리 문제에 대한 수정 사항.
-   * 구성 및 자산 게시가 [!DNL Dynamic Media] [!DNL Dynamic Media] 배달 서비스에 수정되었습니다.
+### 버그 수정 {#assets-bug-fixes}
+
+* 자산 처리 문제에 대한 수정 사항.
+* 구성 및 자산 게시가 [!DNL Dynamic Media] [!DNL Dynamic Media] 배달 서비스에 수정되었습니다.
 
 >[!MORELIKETHIS]
 >
