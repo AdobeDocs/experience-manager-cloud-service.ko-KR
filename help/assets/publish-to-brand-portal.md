@@ -3,7 +3,7 @@ title: Brand Portal에 자산, 폴더 및 컬렉션 게시
 description: 자산, 폴더 및 컬렉션을 브랜드 포털에 게시합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -215,7 +215,7 @@ AEM Assets 인스턴스에서 Brand Portal에 게시된 모든 컬렉션을 게�
 
 1. AEM **자산** 인스턴스의 컬렉션 콘솔에서 게시 취소할 컬렉션을 선택합니다.
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. 도구 모음에서 브랜드 포털에서 **[!UICONTROL 제거 아이콘을 클릭합니다]** .
 1. 대화 상자에서 게시 취소를 **[!UICONTROL 클릭합니다]**.
