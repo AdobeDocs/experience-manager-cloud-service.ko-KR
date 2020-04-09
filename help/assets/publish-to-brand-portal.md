@@ -3,7 +3,7 @@ title: Brand Portal에 자산, 폴더 및 컬렉션 게시
 description: 자산, 폴더 및 컬렉션을 브랜드 포털에 게시합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ AEM Assets 인스턴스에서 Brand Portal에 게시된 모든 컬렉션을 게�
 1. 대화 상자에서 게시 취소를 **[!UICONTROL 클릭합니다]**.
 1. 확인 메시지를 닫습니다. 컬렉션은 브랜드 포털 인터페이스에서 제거됩니다.
 
-최종 [사용자에게 자산, 폴더 및 컬렉션을 배포하는 방법에 대한 자세한 내용은 브랜드 포털 설명서를](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 참조하십시오.
+위의 내용 외에도 메타데이터 스키마, 이미지 사전 설정, 검색 패싯 및 태그를 AEM Assets의 브랜드 포털에 게시할 수 있습니다.
 
+* [브랜드 포털에 사전 설정, 스키마 및 패싯 게시](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [태그를 Brand Portal에 게시](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+자세한 내용은 [브랜드 포털 설명서를](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 참조하십시오.
 
 
 <!--
