@@ -2,7 +2,7 @@
 title: 클라우드 서비스 SDK로서의 AEM
 description: 완료 예정
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 </repository>
 ```
 
-## 새 SDK 버전으로 로컬 프로젝트 새로 고침 {#refreshing-a-local-prokect-with-a-new-skd-version}
+## 새 SDK 버전으로 로컬 프로젝트 새로 고침 {#refreshing-a-local-project-with-a-new-skd-version}
 
 새 SDK로 로컬 프로젝트를 새로 고치는 것이 언제부터 권장됩니까?
 
@@ -92,5 +92,5 @@ CryptoSupport에 의존하는 경우(AEM에서 Cloudservices 또는 SMTP 메일 
 
 * 처음에 로컬 quickstart.jar를 시작할 때 아래 매개 변수를 추가해야 합니다.&quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot; 항상 추가하는 것은 권장되지만 선택 사항입니다.
 * 인스턴스를 처음 시작할 때 루트 &quot;`/etc/key`&quot;에 대한 필터가 포함된 패키지를 만듭니다. 이렇게 하면 재사용하고자 하는 모든 환경에서 다시 사용할 수 있는 비밀이 유지됩니다.
-* 기밀 정보가 포함된 변경 가능한 컨텐츠를 내보내거나, 설치 시 다시 사용할 `/crx/de` 패키지에 해당 암호화된 값을 추가하여 검색합니다
+* 기밀이 포함된 변경 가능한 컨텐츠를 내보내거나, 여러 설치 시 다시 사용할 패키지에 `/crx/de` 추가하기 위해 암호화된 값을 찾습니다
 * 새로운 인스턴스를 스핀업할 때마다(새 버전으로 대체하거나 여러 개발 환경에서 테스트를 위해 자격 증명을 공유해야 함), 2단계 및 3단계에서 생성된 패키지를 설치하여 수동으로 다시 구성할 필요 없이 컨텐츠를 재사용할 수 있습니다. 이것은 이제 암호키가 동기화되었기 때문입니다.
