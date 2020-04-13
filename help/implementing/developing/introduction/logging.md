@@ -2,7 +2,7 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
+source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
 
 * 중앙 로깅 서비스를 위한 전역 매개 변수
 * 요청 데이터 로깅;요청 정보를 위한 전문 로깅 구성
-* 개별 서비스에 대한 특정 설정;예를 들어 개별 로그 파일과 로그 메시지의 형식
+* 개별 서비스에 대한 특정 설정
 
 로컬 개발의 경우 로그 항목은 `/crx-quickstart/logs` 폴더의 로컬 파일에 기록됩니다.
 
@@ -55,23 +55,27 @@ source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
 
    메시지를 생성하는 서비스를 정의합니다.
 
-* **로그 파일(로깅 로거)**
+<!-- * **Log File (Logging Logger)**
 
-   로그 메시지를 저장할 물리적 파일을 정의합니다.
+  Define the physical file for storing the log messages.
 
-   로깅 로거를 로깅 작성기와 연결하는 데 사용됩니다. 연결이 이루어지려면 로깅 작성기 구성에서 동일한 매개 변수와 값이 동일해야 합니다.
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
 
-* **로그 파일(로깅 작성기)**
+* **Log File (Logging Writer)**
 
-   로그 메시지가 작성될 실제 파일을 정의합니다.
+  Define the physical file that the log messages will be written to.
 
-   로깅 기록기 구성에서 동일한 매개 변수와 동일해야 하며 그렇지 않으면 일치하지 않습니다. 일치하는 항목이 없으면 암시적 작성기가 기본 구성(일별 로그 회전)으로 만들어집니다.
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ### Standard Logger 및 Writer {#standard-loggers-and-writers}
 
+> [!IMPORTANT]
+> 이러한 구성 요소는 필요한 경우 사용자 정의할 수 있지만, 표준 구성은 대부분의 설치에 적합합니다. 그러나 표준 로깅 구성을 사용자 정의해야 하는 경우 `dev` 환경에서만 수행해야 합니다.
+
 특정 로거 및 작성기는 클라우드 서비스 설치로 표준 AEM에 포함됩니다.
 
-첫 번째 경우는 `request.log` 및 `access.log` 파일을 모두 제어하는 특별한 경우입니다.
+첫 번째는 `request` 로그와 `access` 로그를 모두 제어하는 특별한 경우입니다.
 
 * 로거:
 
@@ -88,8 +92,6 @@ source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
       (org.apache.sling.engine.impl.log.RequestLogger)
 
    * 또는 에 메시지를 `request.log` 씁니다 `access.log`.
-
-이러한 구성 요소는 필요한 경우 사용자 정의할 수 있지만, 표준 구성은 대부분의 설치에 적합합니다.
 
 다른 쌍은 표준 구성을 따릅니다.
 
@@ -114,6 +116,56 @@ source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
    * 서비스에 `Warning` 대한 메시지를 `../logs/error.log` `org.apache.pdfbox`씁니다.
 
 * 특정 작성기에 링크하지 않으므로 기본 구성(일별 로그 회전)이 있는 암시적 작성기를 만들어 사용합니다.
+
+AEM에 클라우드 서비스 인스턴스(`request`및 `access``error` 로그)로 제공되는 세 가지 로그 외에도 디스패처 문제를 디버깅하는 데 사용되는 다른 로그가 있습니다. 자세한 내용은 Apache [및 Dispatcher 구성](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)디버깅을 참조하십시오.
+
+모범 사례의 경우 현재 AEM에 있는 구성을 Cloud Service Maven 전형으로 정렬하는 것이 좋습니다. 이러한 설정은 특정 환경 유형에 대해 서로 다른 로그 설정 및 수준을 설정합니다.
+
+* 및 `local dev` 환경의 경우 로거를 DEBUG `dev` 수준으로 **** 설정합니다. `error.log`
+* for `stage`the logger to **WARN** level to the `error.log`
+* for `prod`the set logger to **ERROR** level to the `error.log`
+
+아래 각 구성에 대한 예를 살펴보십시오.
+
+* `dev` 환경:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="debug"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+
+* `stage` 환경:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="warn"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+* `prod` 환경:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="error"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
 
 ## 로그 수준 설정 {#setting-the-log-level}
 
@@ -153,7 +205,6 @@ property to debug. 로그를 많은 로그를 생성하므로 DEBUG 로그 수�
 
 1. Apache Sling Logger Configuration의 새 인스턴스를 [만듭니다](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
-   1. 로그 파일을 지정합니다.
    1. 로거를 지정합니다.
 
 <!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
@@ -167,7 +218,7 @@ property to debug. 로그를 많은 로그를 생성하므로 DEBUG 로그 수�
 >
 >Adobe Experience Manager를 사용하여 작업할 때는 이러한 서비스에 대한 구성 설정을 관리하는 몇 가지 방법이 있습니다.
 
-특정 상황에서는 다른 로그 수준의 사용자 정의 로그 파일을 만들 수 있습니다. 다음과 같은 방법으로 저장소에서 이 작업을 수행할 수 있습니다.
+특정 상황에서는 다른 로그 수준으로 사용자 정의 로그를 만들 수 있습니다. 다음과 같은 방법으로 저장소에서 이 작업을 수행할 수 있습니다.
 
 1. 아직 존재하지 않는 경우 프로젝트에 대한 새 구성 폴더( `sling:Folder`)를 `/apps/<*project-name*>/config`만듭니다.
 1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성의 노드를 만듭니다.
