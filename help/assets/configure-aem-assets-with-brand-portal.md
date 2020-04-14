@@ -3,7 +3,7 @@ title: 브랜드 포털에서 AEM Assets 클라우드 서비스 구성
 description: 브랜드 포털에서 AEM Assets 클라우드 서비스를 구성합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
 
 ---
 
@@ -56,7 +56,7 @@ IMS 구성에는 다음 두 단계가 포함됩니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   그러면 Adobe IMS 기술 **[!UICONTROL 계정 구성 페이지로 이동합니다]** .
+   Adobe IMS 기술 계정 **[!UICONTROL 구성 페이지로 이동합니다]** .
 
 1. 기본적으로 인증서 **탭이** 열립니다.
 
@@ -152,7 +152,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
 >[!CAUTION]
 >
->하나의 유효한 IMS 구성만 만듭니다. 여러 IMS 구성을 만들지 마십시오.
+>하나의 유효한 IMS 구성만 만듭니다.
 >
 > 구성이 올바른지 확인하십시오. 구성이 비정상인 경우 삭제하고 새 정상 구성을 만듭니다.
 
