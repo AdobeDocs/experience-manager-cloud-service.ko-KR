@@ -3,14 +3,14 @@ title: 연결된 자산을 사용하여 Adobe Experience Manager Sites 작성 �
 description: 다른 Experience Manager Site 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager Assets 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7524f6146c33932677b6c8af49d5fe2638a5c02a
 
 ---
 
 
 # 연결된 자산을 사용하여 AEM Sites에서 DAM 자산 공유 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 여러 가지 이유로 인해 모회사가 함께 사용하고자 하는 이기종 인프라 구축으로 이어지는 복잡한 작업을 수행하는 데 필요한 기존 배포를 지리적으로 배포할 수 있습니다.
+대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 서로 다른 배포에 있는 이유는 모회사가 함께 사용하려는 형식이 다른 인프라로 이어질 수 있는 탠덤 또는 고객 확보 작업에 필요한 기존 배포가 지리적으로 분산되었기 때문일 수 있습니다.
 
 AEM Sites는 웹 페이지를 구축하는 기능을 제공하며, AEM Assets은 웹 사이트에 필요한 자산을 제공하는 디지털 자산 관리(DAM) 시스템입니다. AEM은 AEM Sites 및 AEM Assets를 통합하여 위의 사용 사례를 지원합니다.
 
@@ -91,9 +91,9 @@ AEM 관리자가 이 통합을 만들 수 있습니다. 통합을 만들면 이 
    1. 속성 마법사에서 **[!UICONTROL 경로]** 필드를 다음 매핑으로 변경하여 마운트 지점 **[!UICONTROL connectedassets]**&#x200B;을 제외하도록 해당 정규식을 업데이트합니다.
    | 이전 | 이후 |
    |---|---|
-   | /content/dam(/((?!/subassets).)*/)renditions/original | /content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*/)renditions/original | /content/dam(/((?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*)/jcr:content/metadata | /content/dam(/((?!connectedassets).)*/)jcr:content/metadata |
+   | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
