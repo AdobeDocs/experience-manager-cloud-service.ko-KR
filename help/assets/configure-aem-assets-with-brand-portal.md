@@ -3,7 +3,7 @@ title: 브랜드 포털에서 AEM Assets 클라우드 서비스 구성
 description: 브랜드 포털에서 AEM Assets 클라우드 서비스를 구성합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
+source-git-commit: bbb3327d4bc7cef8eede3169bc14a1d247ee2bdc
 
 ---
 
@@ -152,9 +152,9 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
 >[!CAUTION]
 >
->상태 확인을 전달하는 IMS 구성은 하나만 있어야 합니다. IMS 구성을 여러 개 만들지 마십시오.
+>IMS 구성은 하나만 있어야 합니다. IMS 구성을 여러 개 만들지 마십시오.
 >
->구성이 상태 검사를 통과하지 않으면 구성이 잘못되었습니다. 이를 삭제하고 유효한 새 구성을 만들어야 합니다.
+>IMS 구성이 상태 확인을 통과하는지 확인합니다. 구성이 상태 검사를 통과하지 않으면 구성이 잘못되었습니다. 이를 삭제하고 유효한 새 구성을 만들어야 합니다.
 
 
 
