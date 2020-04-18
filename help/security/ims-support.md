@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
 description: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: d51d0e8c57a4c3d3af3083c58a4c1510869c5604
 
 ---
 
@@ -138,7 +138,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ![제품 프로필](/help/security/assets/ims8.png)
 
-### 클라우드 서비스로서의 Adobe Experience Manager에 로그인(#logging-in-to-aem)
+### Logging into Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
 **로컬 관리자 로그인**
 
@@ -153,6 +153,10 @@ AEM은 관리 사용자에 대한 로컬 로그인을 계속 지원할 수 있�
 다른 사용자의 경우 인스턴스에 IMS가 구성되어 있으면 IMS 기반 로그인을 사용할 수 있습니다. 사용자는 아래에 표시된 대로 먼저 Adobe로 로그인 단추를 클릭합니다.
 
 ![IMS 로그인](/help/security/assets/ims10.png)
+
+
+>[!NOTE]
+> IMS에서 만든 모든 사용자는 Adobe ID 또는 Federated ID를 사용하여 만들 수 있습니다. 사용자가 Adobe ID를 사용하여 설정하는 경우 회사의 ID 공급자를 사용하여 로그인해야 합니다.
 
 그러면 IMS 로그인 화면으로 리디렉션되고 자격 증명을 입력해야 합니다.
 
@@ -189,3 +193,54 @@ IMS에서 동기화된 사용자 그룹은 AEM에서 **DAM 사용자**&#x200B;�
 아래 그림과 같이, **AEM-GRP_008** 그룹은 **DAM 사용자**&#x200B;의 권한을 상속합니다. 이는 동기화된 그룹에 대한 권한을 관리하는 효과적인 방법이며 LDAP 기반 인증 방법에서도 일반적으로 사용됩니다.
 
 ![ACL3](/help/security/assets/ims18.png)
+
+
+### 클라우드 관리자 액세스 {#accessing-cloud-manager}
+
+Cloud Manager 또는 AEM에 클라우드 서비스 환경으로 액세스하려면 Cloud Manager 제품의 프로필에 할당되어야 합니다.
+
+Cloud Manager 제품에는 다음 프로필이 있습니다.
+
+* 비즈니스 소유자
+* 배포 관리자
+* 프로그램 관리자
+* 개발자
+* 통합
+
+>[!NOTE]
+>Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 특정 권한, 사전 구성된 작업 또는 각 역할과 연관된 권한이 있는 각 역할에 대해 알아보려면 역할 기반 [권한을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+
+**사용자 추가 단계**
+
+1. 기존 사용자의 화면 또는 새 사용자 화면에서 특정 프로필에 사용자를 추가합니다.
+
+1. 또는 아래 그림과 같이 개요 **화면에서** 사용자를 추가할 수도 있습니다.
+
+   ![ACL3](/help/security/assets/ims23.png)
+
+   >[!NOTE]
+   >아래 그림과 같이 사용자에게 두 개 이상의 프로필을 할당할 수 있습니다.
+
+   ![ACL3](/help/security/assets/ims22.png)
+
+
+1. 해당 프로필에 추가되면 사용자 인터페이스의 오른쪽 상단 모서리에서 Adobe Experience [Cloud를](http://my.cloudmanager.adobe.com) 통해 Cloud Manager의 각 테넌트에 액세스할 수 있습니다.
+
+
+### AEM에서 클라우드 서비스로 인스턴스 액세스 {#accessing-instance-cloud-service}
+
+>[!IMPORTANT]
+>AEM에서 클라우드 서비스로 인스턴스에 대한 액세스 권한을 부여하기 전에 위의 섹션에 언급된 단계가 이미 완료되었어야 합니다.
+
+관리 콘솔 내에서 AEM 인스턴스에 액세스하려면 **관리 콘솔의**&#x200B;제품 목록에 클라우드 관리자 프로그램 및 프로그램 내의 환경이 **표시됩니다**.
+
+예를 들어 아래 스크린샷에는 *개발 작성자와* *게시*&#x200B;등 두 가지 사용 가능한 환경이 표시됩니다.
+
+![ACL3](/help/security/assets/ims19.png)
+
+AEM 인스턴스에 액세스하려면 해당 클라우드 서비스 제품 그룹에 사용자를 추가해야 합니다.
+
+모든 작성자 인스턴스에는 AEM 관리자 및 AEM 사용자 프로필이 있으며 모든 게시 인스턴스에는 AEM 사용자 프로필이 있습니다. 필요에 따라 다른 프로필을 추가할 수 있습니다.
+
+AEM 인스턴스에 대한 관리자 수준 액세스 권한을 얻으려면 해당 특정 제품에 대한 AEM 관리자 프로필에 사용자를 추가하십시오.
+
