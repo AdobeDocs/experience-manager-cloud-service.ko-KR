@@ -2,12 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service Content Fragments in Assets HTTP API
 description: Adobe Experience Manager를 Assets HTTP API의 클라우드 서비스 콘텐츠 조각 지원으로서 살펴보십시오.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
 
-# AEM Assets HTTP API의 컨텐츠 조각 지원{#content-fragments-support-in-aem-assets-http-api}
+# Content Fragments Support in AEM Assets HTTP API{#content-fragments-support-in-aem-assets-http-api}
 
 ## 개요 {#overview}
 
@@ -32,6 +32,7 @@ AEM [코어 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager
 이것은 자산 REST API를 사용할 수 있는 때입니다. 이를 통해 개발자는 에셋(예: 이미지 및 컨텐츠 조각)을 페이지에 먼저 임베드할 필요 없이 직접 액세스할 수 있으며, 에셋을 직렬화된 JSON 포맷으로 제공할 수 있습니다.
 
 >[!NOTE]
+>
 >자산 REST API 파섹
 
 또한 Assets REST API를 사용하면 개발자는 기존 자산, 컨텐츠 조각 및 폴더를 새로 만들거나 업데이트하거나 삭제하여 컨텐츠를 수정할 수 있습니다.
@@ -50,7 +51,7 @@ Assets REST API 파섹
 
 자산 REST API는 [AEM](https://en.wikipedia.org/wiki/Representational_state_transfer)인스턴스 내에 저장된 자산에 대한 REST 스타일 액세스를 제공합니다.
 
-종단점을 사용하고 `/api/assets` 이에 액세스하려면 자산의 경로가 필요합니다(행간 `/content/dam`없음).
+종단점을 사용하고 `/api/assets` 자산의 경로가 있어야 합니다(행간 `/content/dam`없음).
 
 * 즉, 다음 위치에서 자산에 액세스합니다.
    * `/content/dam/path/to/asset`
