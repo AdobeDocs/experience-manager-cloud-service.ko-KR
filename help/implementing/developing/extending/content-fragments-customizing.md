@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 사용자 정의 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -290,11 +290,9 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM 자산의 일부입니다.
 
 * 추가 노력이 필요할 수 있는 작업:
 
-   * 새 요소를 만들거나 제거해도 단순 조각 템플릿 기반 단순 조각의 데이터 구조가 업데이트되지 **않습니다** .
-
    * 데이터 구조를 `ContentFragment` 업데이트하려면 새 변형을 만듭니다.
 
-   * 기존 변형을 제거해도 데이터 구조가 업데이트되지 않습니다.
+   * 요소를 통해 기존 변형을 제거해도 변형에 할당된 전역 데이터 구조가 업데이트되지 `ContentElement.removeVariation()`않습니다. 이러한 데이터 구조를 동기화하려면 `ContentFragment.removeVariation()` 대신 변형을 전체적으로 제거합니다.
 
 ## 컨텐츠 조각 관리 API - 클라이언트측 {#the-content-fragment-management-api-client-side}
 
@@ -312,84 +310,18 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM 자산의 일부입니다.
 
 ## 세션 편집 {#edit-sessions}
 
-사용자가 편집기 페이지 중 하나에서 컨텐츠 조각을 열면 편집 세션이 시작됩니다. 편집 세션은 사용자가 저장 또는 취소를 선택하여 편집기를 **떠날 때** **완료됩니다**.
+>[!CAUTION]
+>
+>이 배경 정보를 고려하십시오. 저장소에서 *비공개 영역으로* 표시되므로 여기서 어떤 것도 변경해서는 안 되지만, 경우에 따라 백그라운드에서 어떻게 작동하는지 이해하는 데 도움이 될 수 있습니다.
 
-### 요구 사항 {#requirements}
+여러 보기(= HTML 페이지)를 확장할 수 있는 컨텐츠 조각을 편집하는 것은 원자적입니다. 이러한 원자 다중 보기 편집 기능은 일반적인 AEM 개념이 아니므로 컨텐츠 조각은 *편집 세션이라고*&#x200B;하는 것을 사용합니다.
 
-편집 세션을 제어하기 위한 요구 사항은 다음과 같습니다.
+사용자가 편집기에서 컨텐츠 조각을 열면 편집 세션이 시작됩니다. 편집 세션은 사용자가 저장 또는 취소를 선택하여 편집기를 **떠날 때** **완료됩니다**.
 
-* 여러 보기(= HTML 페이지)를 확장할 수 있는 컨텐츠 조각을 편집하는 것은 원자력이 있어야 합니다.
+기술적으로 모든 편집 작업은 다른 모든 AEM 편집과 마찬가지로 *라이브* 컨텐츠에서도 수행됩니다. 편집 세션이 시작되면 편집되지 않은 현재 상태의 버전이 만들어집니다. 사용자가 편집을 취소하면 해당 버전이 복원됩니다. 사용자가 [저장] **을**&#x200B;클릭하는 경우 모든 편집이 *라이브* 컨텐츠에서 실행되므로 특정 작업이 수행되지 않으므로 모든 변경 사항이 이미 유지됩니다. 또한 저장을 클릭하면 **일부** 백그라운드 처리가 트리거됩니다(전체 텍스트 검색 정보 만들기 및/또는 혼합 미디어 자산 처리).
 
-* 편집도 *트랜잭션*&#x200B;작업이어야 합니다.편집 세션이 종료되면 변경 내용을 커밋하거나 저장(저장) 또는 롤백(취소)해야 합니다.
-
-* Edge Case는 적절하게 처리해야 합니다.이러한 기능에는 사용자가 URL을 수동으로 입력하거나 전역 탐색을 사용하여 페이지를 나가는 경우와 같은 경우가 포함됩니다.
-
-* 데이터 손실을 방지하기 위해 주기적인 자동 저장(x분마다)을 사용할 수 있어야 합니다.
-
-* 두 사용자가 동시에 컨텐츠 조각을 편집하는 경우 서로의 변경 사항을 덮어쓰지 않아야 합니다.
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* 페이지 나가기
-
-   * 편집 세션이 있고 변경 사항이 지속되지 않은 경우, 사용자에게 손실될 가능성이 있는 컨텐츠를 알리고 해당 페이지를 유지할 수 있도록 양식 확인 대화 상자가 표시됩니다.
+최첨단 사례에 대한 몇 가지 안전 조치가 있습니다.예를 들어 사용자가 편집 세션을 저장하거나 취소하지 않고 편집기를 벗어나려고 할 경우 또한 주기적인 자동 저장을 사용하여 데이터 손실을 방지할 수 있습니다.
+두 사용자가 동일한 컨텐츠 조각을 동시에 편집할 수 있으므로 다른 변경 사항을 덮어쓸 수 있습니다. 이를 방지하려면 조각에 DAM 관리의 체크아웃 *작업을 적용하여 컨텐츠 조각을* 잠가야 합니다.
 
 ## 예 {#examples}
 
