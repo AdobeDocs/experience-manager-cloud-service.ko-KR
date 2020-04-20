@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로 AEM에 대한 구현
 user-guide-title: 클라우드 서비스로 AEM에 대한 구현
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
 
 ---
 
@@ -32,6 +32,8 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
 + 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
+   + [컨텐츠 조각 사용자 정의 및 확장](developing/extending/content-fragments-customizing.md)
+   + [컨텐츠 조각 렌더링용 구성 요소 구성](developing/extending/content-fragments-configuring-components-rendering.md)
    + [검색 양식 구성](developing/extending/search-forms.md)
 + 클라우드 서비스로서의 AEM에 배포 {#deploying}
    + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
