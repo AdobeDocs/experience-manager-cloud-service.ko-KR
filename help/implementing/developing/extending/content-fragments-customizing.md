@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 사용자 정의 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
    * 새 변형 등을 추가하기 위한 함수에서는 그에 따라 조각을 업데이트해야 합니다.
    >[!NOTE]
    >
-   >컨텐츠 조각을 표시하거나 렌더링하려면 계정에 모델에 대한 읽기 권한이 있어야 합니다.
+   >컨텐츠 조각을 표시하거나 렌더링하려면 계정에 모델에 대한 `read` 권한이 있어야 합니다.
 
    >[!CAUTION]
    >
