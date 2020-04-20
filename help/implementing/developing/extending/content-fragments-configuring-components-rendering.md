@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 렌더링용 구성 요소 구성
 description: 컨텐츠 조각 렌더링용 구성 요소 구성
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 * 고유한 컨텐츠 조각 기반 구성 요소를 구현해야 합니다.
 * 고급 서비스를 사용해야 합니다.
 
-그러나 핵심 구성 요소를 사용하는 것이 좋습니다.
+핵심 구성 요소를 사용하는 것이 좋습니다.
 
 >[!CAUTION]
 >
