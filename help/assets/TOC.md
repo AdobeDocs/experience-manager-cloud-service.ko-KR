@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
 
 ---
 
@@ -40,6 +40,7 @@ source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
    + [자산에 대한 디지털 권한 관리](drm.md)
 + 자산 구성, 관리 및 확장 {#admin}
    + [API 및 참조 자료](developer-reference-material-apis.md)
+   + [AEM Assets HTTP API의 컨텐츠 조각 지원](assets-api-content-fragments.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [처리 프로필](/help/assets/dynamic-media/processing-profiles.md)
    + [다국어 자산 및 자산 번역](translate-assets.md)
@@ -53,8 +54,8 @@ source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
    + [MediaLibrary 기능](medialibrary.md)
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
 + 에셋 공유 및 배포 {#brand-portal}
-   + [브랜드 포털에서 AEM 자산 구성](configure-aem-assets-with-brand-portal.md)
-   + [브랜드 포털에 자산 게시](publish-to-brand-portal.md)
+   + [Brand Portal에서 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)
+   + [자산을 Brand Portal에 게시](publish-to-brand-portal.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
