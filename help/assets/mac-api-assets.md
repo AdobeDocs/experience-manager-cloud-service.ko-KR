@@ -3,7 +3,7 @@ title: 자산 HTTP API
 description: Assets HTTP API의 구현, 데이터 모델 및 기능에 대해 알아봅니다. 자산 HTTP API를 사용하여 자산 관련 다양한 작업을 수행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## 개요 {#overview}
 
-자산 HTTP API를 사용하면 이진, 메타데이터, 변환 및 주석을 비롯한 자산에 대해 CRUD(Create-Read-Update-delete) 작업을 AEM 컨텐츠 조각을 사용한 구조화된 컨텐츠와 함께 수행할 수 있습니다. 에 노출되어 REST API로 `/api/assets` 구현됩니다. 컨텐츠 조각에 대한 [지원이 포함되어 있습니다](content-fragments/content-fragments.md).
+자산 HTTP API를 사용하면 이진, 메타데이터, 변환 및 주석을 비롯한 자산에 대해 CRUD(Create-Read-Update-delete) 작업을 AEM 컨텐츠 조각을 사용한 구조화된 컨텐츠와 함께 수행할 수 있습니다. 에 노출되어 REST API로 `/api/assets` 구현됩니다. 컨텐츠 조각에 대한 [지원이 포함되어 있습니다](assets-api-content-fragments.md).
 
 API에 액세스하려면:
 
@@ -31,13 +31,13 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 컨텐츠 [조각은](content-fragments/content-fragments.md) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 자산(예: 이미지 또는 문서)에 몇 가지 차이가 있으므로 컨텐츠 조각 처리에 일부 추가 규칙이 적용됩니다. `standard`
 
-자세한 내용은 AEM Assets [HTTP API의 콘텐츠 조각 지원을 참조하십시오](content-fragments/content-fragments.md).
+자세한 내용은 AEM Assets [HTTP API의 콘텐츠 조각 지원을 참조하십시오](assets-api-content-fragments.md).
 
 ## Data model {#data-model}
 
 자산 HTTP API는 두 가지 주요 요소, 폴더 및 자산을 표시합니다(표준 자산의 경우).
 
-또한 컨텐츠 조각에서 구조화된 컨텐츠를 설명하는 사용자 지정 데이터 모델에 대한 보다 자세한 요소를 노출합니다. 자세한 [내용은 컨텐츠 조각](content-fragments/content-fragments.md) 데이터 모델을 참조하십시오.
+또한 컨텐츠 조각에서 구조화된 컨텐츠를 설명하는 사용자 지정 데이터 모델에 대한 보다 자세한 요소를 노출합니다. 자세한 [내용은 컨텐츠 조각](assets-api-content-fragments.md#content-models-and-content-fragments) 데이터 모델을 참조하십시오.
 
 ### 폴더 {#folders}
 
@@ -66,7 +66,7 @@ AEM에서 자산은 다음 요소를 포함합니다.
 * 원본 변환(원래 업로드된 에셋), 축소판 및 다양한 기타 표현물과 같은 여러 변환 추가 변환은 다양한 크기의 이미지, 서로 다른 비디오 인코딩 또는 PDF 또는 InDesign에서 추출한 페이지일 수 있습니다.
 * 선택적 주석
 
-컨텐츠 조각의 요소에 대한 자세한 내용은 AEM Assets HTTP [API의 컨텐츠 조각 지원을 참조하십시오](content-fragments/content-fragments.md).
+컨텐츠 조각의 요소에 대한 자세한 내용은 AEM Assets HTTP [API의 컨텐츠 조각 지원을 참조하십시오](assets-api-content-fragments.md).
 
 AEM에서 폴더에는 다음 구성 요소가 있습니다.
 
