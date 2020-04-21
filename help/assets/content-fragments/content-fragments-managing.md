@@ -1,13 +1,13 @@
 ---
-title: 컨텐츠 조각 관리
+title: 콘텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 ---
 
 
-# 컨텐츠 조각 관리{#managing-content-fragments}
+# 콘텐츠 조각 관리{#managing-content-fragments}
 
 컨텐츠 조각은 **자산으로**&#x200B;저장되므로 기본적으로 자산 **콘솔에서 관리됩니다** .
 
@@ -24,13 +24,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->템플릿에 대한 자세한 내용은 컨텐츠 조각 개발을 참조하십시오.단순 컨텐츠 조각에 사용됩니다.
-
-<!--
->[!NOTE]
->
->See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
--->
+>템플릿에 [대한](/help/implementing/developing/extending/content-fragments-customizing.md) 자세한 내용은 컨텐츠 조각 개발을 참조하십시오.단순 컨텐츠 조각에 사용됩니다.
 
 ### 컨텐츠 조각 만들기 {#creating-a-content-fragment}
 
@@ -42,7 +36,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    * 다음과 같은 경우일 수 있습니다.
 
-      * 템플릿 - 예: **단순 조각**<!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
+      * 템플릿 - 예: **단순 조각**
 
       * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다.예를 들어 **공항** 모델
    * 사용 가능한 모든 템플릿과 모델이 표시됩니다.
@@ -120,11 +114,9 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 편집할 조각을 열려면 다음을 수행합니다.
 
-<!--
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
--->
+>컨텐츠 조각을 편집하려면 [적절한 권한이](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)필요합니다. 문제가 발생하면 시스템 관리자에게 문의하십시오.
 
 >[!CAUTION]
 >
@@ -142,9 +134,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >[!NOTE]
    >
    >1. 조각이 컨텐츠 페이지에서 이미 참조되면 메시지가 표시됩니다.
-   >
-   >
-   >2. 사이드 패널은 사이드 패널 전환 **아이콘을 사용하여 숨기거나 표시할 수** 있습니다.
+      >
+      >
+      >
+
+   2. 사이드 패널은 사이드 패널 전환 **아이콘을 사용하여 숨기거나 표시할 수** 있습니다.
 
 
 3. 사이드 패널의 아이콘을 사용하여 세 가지 모드를 탐색합니다.
@@ -176,13 +170,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    >[!CAUTION]
    >
-   >컨텐츠 조각을 편집하려면 적절한 권한이 필요합니다. 문제가 발생하면 시스템 관리자에게 문의하십시오.
-
-   <!-- 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-  -->
+   >컨텐츠 조각을 편집하려면 [적절한 권한이](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)필요합니다. 문제가 발생하면 시스템 관리자에게 문의하십시오.
 
    >[!NOTE]
    >
@@ -228,7 +216,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ## 조각과 컨텐츠 연결 {#associating-content-with-your-fragment}
 
-컨텐츠를 [](/help/assets/content-fragments/content-fragments-assoc-content.md) 조각에 연결할 수도 있습니다. 컨텐츠 페이지에 추가될 때 조각과 함께 자산(예: 이미지)을 사용할 수 있도록 연결을 제공합니다(선택 사항).
+컨텐츠를 [](/help/assets/content-fragments/content-fragments-assoc-content.md) 조각에 연결할 수도 있습니다. 이렇게 하면 자산(예: 이미지)이 컨텐츠 페이지에 추가될 때 조각과 함께 (선택 사항) 사용될 수 있도록 연결이 제공됩니다.
 
 ## 조각의 메타데이터(속성) 보기 및 편집 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
