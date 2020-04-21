@@ -1,13 +1,13 @@
 ---
-title: 컨텐츠 조각 - 삭제 고려 사항
-description: 컨텐츠 조각 - 삭제 고려 사항
+title: 콘텐츠 조각 - 삭제 고려 사항
+description: 콘텐츠 조각 - 삭제 고려 사항
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# 컨텐츠 조각 - 삭제 고려 사항{#content-fragments-delete-considerations}
+# 콘텐츠 조각 - 삭제 고려 사항{#content-fragments-delete-considerations}
 
 ## 권한 - 삭제 또는 삭제 안 함 {#permissions-delete-or-not-delete}
 
@@ -25,7 +25,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    컨텐츠 조각 편집기의 기본 작업을 수행하려면 이러한 일시적인 하위 요소를 삭제할 수 있어야 합니다. 예를 들어 변형을 조작할 때또한 메타데이터를 편집하거나 관련 컨텐츠를 관리할 때 가능합니다.
 
    * **사용 사례**:전체 조각을 삭제할 수 **없는 컨텐츠 조각을**&#x200B;편집/업데이트해야 하는 사용자입니다.
-   * **권한**:편집기 기능에 필요한 권한만 참조하십시오. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **권한**:편집기 [기능에 필요한 권한만](#permissions-required-for-editor-functionality-only)참조하십시오.
 
 >[!NOTE]
 >
