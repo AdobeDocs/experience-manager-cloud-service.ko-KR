@@ -1,13 +1,13 @@
 ---
-title: 컨텐츠 조각 작업
+title: 콘텐츠 조각을 사용한 작업
 description: 컨텐츠 조각을 사용하여 페이지에 영향을 받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# 컨텐츠 조각 작업{#working-with-content-fragments}
+# 콘텐츠 조각을 사용한 작업{#working-with-content-fragments}
 
 AEM(Adobe Experience Manager) 컨텐츠 조각을 사용하면 페이지에 영향을 받지 않는 컨텐츠를 [디자인, 제작, 조정 및](/help/sites-cloud/authoring/fundamentals/content-fragments.md)게시할 수 있습니다. 이러한 기능을 사용하면 여러 채널에서 여러 위치에서 사용할 수 있도록 컨텐츠를 준비할 수 있습니다.
 
@@ -161,7 +161,7 @@ JSON Exporter를 사용하여 컨텐츠 서비스를 구현하는 데에도 사�
    * 간단한 조각:
 
       * 컨텐츠는 하나 이상의 여러 줄 텍스트 필드 또는 요소에 보관됩니다.
-      * 요소는 조각 템플릿에서 정의됩니다(조각을 작성할 때 정의할 수 없음, 컨텐츠 조각 템플릿 참조). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * 요소는 조각 템플릿에서 정의됩니다(조각을 작성할 때 정의할 수 없음).
 
 * **단락 조각**
 
@@ -198,7 +198,7 @@ JSON Exporter를 사용하여 컨텐츠 서비스를 구현하는 데에도 사�
    * 자산은 컬렉션을 [통해 조각에](/help/assets/content-fragments/content-fragments-assoc-content.md)연결됩니다.연결된 컬렉션을 사용하면 작성자가 페이지를 작성할 때 사용할 자산을 결정할 수 있습니다.
 
       * 컬렉션은 템플릿을 통해 조각, 기본 컨텐츠 또는 조각 작성 동안 작성자가 조각에 연결할 수 있습니다.
-      * [자산(DAM 파섹 컬렉션은 조각과 관련된 컨텐츠의 기반이 됩니다.](/help/assets/manage-collections.md)
+      * [자산(DAM 파섹](/help/assets/manage-collections.md) 컬렉션은 조각과 관련된 컨텐츠의 기반이 됩니다.
    * 선택적으로 조각 자체를 컬렉션에 추가하여 추적을 지원할 수도 있습니다.
 
 * **조각 메타데이터**
@@ -263,7 +263,7 @@ JSON Exporter를 사용하여 컨텐츠 서비스를 구현하는 데에도 사�
 * **조각 템플릿**
 
    * 단순 조각을 [만드는 데 필요합니다](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * 일반적으로 프로젝트 수행 중 개발작성 시 만들 수 없습니다. <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+   * 일반적으로 프로젝트 수행 중 개발작성 시 만들 수 없습니다.
    * 간단한 조각(제목, 텍스트 요소 수, 태그 정의)의 기본 속성을 정의합니다.
    * 템플릿 정의는 제목과 텍스트 요소 하나가 필요합니다.다른 모든 것은 선택 사항입니다. 템플릿은 해당되는 경우 조각 및 기본 컨텐트의 최소 범위를 정의합니다. 작성자는 나중에 템플릿에서 정의된 범위를 넘어 조각을 확장할 수 있습니다.
 
