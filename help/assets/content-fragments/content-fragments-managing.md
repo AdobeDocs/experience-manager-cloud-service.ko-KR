@@ -2,7 +2,7 @@
 title: 콘텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 [구조화된 컨텐츠로 컨텐츠 조각을 만들기 전에 컨텐츠 조각 모델을](/help/assets/content-fragments/content-fragments-models.md) 활성화하고 생성할 수 있습니다.
 
->[!NOTE]
->
->템플릿에 [대한](/help/implementing/developing/extending/content-fragments-customizing.md) 자세한 내용은 컨텐츠 조각 개발을 참조하십시오.단순 컨텐츠 조각에 사용됩니다.
-
 ### 컨텐츠 조각 만들기 {#creating-a-content-fragment}
 
 컨텐츠 조각을 만드는 방법은 (기본적으로) 단순 조각과 구조화된 조각 모두에 대해 동일합니다.
@@ -34,12 +30,13 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 2. 만들기를 **선택한**&#x200B;다음 **컨텐츠** 조각을 선택하여 마법사를 엽니다.
 3. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
-   * 다음과 같은 경우일 수 있습니다.
+   * 다음과 같은 작업이 가능합니다.
 
-      * 템플릿 - 예: **단순 조각**
+      * 단순 **조각** 템플릿
 
       * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다.예를 들어 **공항** 모델
-   * 사용 가능한 모든 템플릿과 모델이 표시됩니다.
+
+         * 사용 가능한 모든 모델이 표시됩니다.
    선택 후 다음을 **사용하여** 계속 진행합니다.
 
    ![조각](assets/cfm-managing-01.png)
