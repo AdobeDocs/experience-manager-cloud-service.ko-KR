@@ -2,7 +2,7 @@
 title: 콘텐츠 조각을 사용한 작업
 description: 컨텐츠 조각을 사용하여 페이지에 영향을 받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
 
 ---
 
@@ -93,11 +93,19 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 컨텐츠 조각은 다음과 같습니다.
 
-* 단순 조각미리 정의된 구조가 없습니다. 텍스트 및 이미지만 포함되어 있습니다.
-단순 조각 템플릿을 기반으로 **합니다** .
+* 단순 조각
 
-* 구조화된 컨텐츠를 포함하는 조각이 조각은 [결과 조각의 구조를](/help/assets/content-fragments/content-fragments-models.md)사전 정의하는 컨텐츠 조각 모델을 기반으로 합니다.
-JSON Exporter를 사용하여 컨텐츠 서비스를 구현하는 데에도 사용할 수 있습니다.
+   * 이러한 구조에는 미리 정의된 구조가 없습니다.
+
+   * 텍스트 및 이미지만 포함되어 있습니다.
+
+   * 단순 조각 템플릿을 기반으로 **합니다** .
+
+* 구조화된 컨텐츠가 포함된 조각
+
+   * 이러한 구성 요소는 결과 [조각에](/help/assets/content-fragments/content-fragments-models.md)대한 구조를 미리 정의하는 컨텐츠 조각 모델을 기반으로 합니다.
+
+   * JSON Exporter를 사용하여 컨텐츠 서비스를 구현하는 데에도 사용할 수 있습니다.
 
 ## 컨텐트 유형 {#content-type}
 
