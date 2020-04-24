@@ -2,7 +2,7 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ AEM as a Cloud Service는 고객이 고유한 고객 경험을 만들기 위해 
 
 * 특정 작성기에 링크하지 않으므로 기본 구성(일별 로그 회전)이 있는 암시적 작성기를 만들어 사용합니다.
 
-### 클라우드 서비스로 AEM 요청 로깅 {#request-logging}
+**클라우드 서비스로 AEM 요청 로깅**
 
 AEM WCM 및 저장소에 대한 모든 액세스 요청은 여기에 등록되어 있습니다.
 
 출력 예:
 
-### AEM HTTP 요청/응답 액세스 로깅 {#access-logging}
+**AEM HTTP 요청/응답 액세스 로깅**
 
 각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
 출력 예:
 
-### Apache 웹 서버/발송자 로깅 {#dispatcher-logging}
+**Apache 웹 서버/발송자 로깅**
 
 디스패처 문제를 디버깅하는 데 사용되는 로그입니다. 자세한 내용은 Apache [및 Dispatcher 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/)디버깅을 참조하십시오.
 
@@ -237,7 +237,7 @@ property to debug. 로그를 많은 로그를 생성하므로 DEBUG 로그 수�
 특정 상황에서는 다른 로그 수준으로 사용자 정의 로그를 만들 수 있습니다. 다음과 같은 방법으로 저장소에서 이 작업을 수행할 수 있습니다.
 
 1. 아직 존재하지 않는 경우 프로젝트에 대한 새 구성 폴더( `sling:Folder`)를 `/apps/<*project-name*>/config`만듭니다.
-1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성에 대한 노드를 만듭니다.
+1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성의 노드를 만듭니다.
 
    * 이름:(로거인 경우) `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>`
 
