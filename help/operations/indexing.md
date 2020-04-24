@@ -2,7 +2,7 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
 
 ---
 
@@ -116,7 +116,6 @@ AS NOTE: the above is internal for now.
 청록색 배포로 다운타임이 없습니다. 그러나 색인 관리의 경우, 이렇게 하려면 특정 버전의 응용 프로그램에서만 인덱스가 사용되어야 합니다. 예를 들어 응용 프로그램 버전 2에서 인덱스를 추가할 때 아직 응용 프로그램 버전 1에서 사용하지 않도록 설정할 수 있습니다. 반대는 색인이 제거될 때의 경우입니다.버전 2에서 제거된 색인은 버전 1에서 계속 필요합니다. 색인 정의를 변경할 때 이전 버전의 색인은 버전 1에만 사용하고 새 버전의 색인은 버전 2에만 사용할 수 있습니다.
 
 다음 표는 5개의 인덱스 정의를 보여 줍니다.index `cqPageLucene` 는 두 버전 모두에서 사용되지만 색인은 버전 2에서만 `damAssetLucene-custom-1` 사용됩니다.
-
 
 >[!NOTE]
 >
