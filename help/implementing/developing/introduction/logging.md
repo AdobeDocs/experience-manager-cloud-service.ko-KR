@@ -2,7 +2,7 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ AEM as a Cloud Service는 고객이 고유한 고객 경험을 만들기 위해 
 
    * 서비스에 `Warning` 대한 메시지를 `../logs/error.log` `org.apache.pdfbox`씁니다.
 
-* 특정 작성기에 링크하지 않으므로 기본 구성(일별 로그 회전)이 있는 암시적 작성기를 만들어 사용합니다.
+* 특정 작성기에 연결하지 않으므로 기본 구성이 있는 암시적 작성기를 만들어 사용합니다.
 
 **클라우드 서비스로 AEM 요청 로깅**
 
@@ -96,7 +96,7 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청은 여기에 등록되�
 
 출력 예:
 
-**AEM HTTP 요청/응답 액세스 로깅**
+**AEM을 클라우드 서비스로 사용 HTTP 요청/응답 액세스 로깅**
 
 각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
@@ -183,7 +183,7 @@ leftover text from the last breakaway chunk (re dispatcher) -->
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## 로그 수준 설정 {#setting-the-log-level}
+### 로그 수준 설정 {#setting-the-log-level}
 
 클라우드 환경의 로그 수준을 변경하려면 Sling Logging OSGI 구성을 수정한 후 전체 재배포해야 합니다. 이는 즉각적이지는 않으므로 많은 트래픽을 받는 프로덕션 환경에서 자세한 로그를 활성화하는 것에 주의하십시오. 앞으로 로그 수준을 보다 신속하게 변경하는 메커니즘이 있을 수 있습니다.
 
@@ -191,7 +191,7 @@ leftover text from the last breakaway chunk (re dispatcher) -->
 >
 > 아래 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 해당 변경 사항을 만든 다음 AEM을 클라우드 서비스 인스턴스로 푸시해야 합니다. 이 방법에 대한 자세한 내용은 클라우드 서비스로 [AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
 
-### 디버그 로그 수준 활성화 {#activating-the-debug-log-level}
+**디버그 로그 수준 활성화**
 
 >[!WARNING]
 >
@@ -237,7 +237,7 @@ property to debug. 로그를 많은 로그를 생성하므로 DEBUG 로그 수�
 특정 상황에서는 다른 로그 수준으로 사용자 정의 로그를 만들 수 있습니다. 다음과 같은 방법으로 저장소에서 이 작업을 수행할 수 있습니다.
 
 1. 아직 존재하지 않는 경우 프로젝트에 대한 새 구성 폴더( `sling:Folder`)를 `/apps/<*project-name*>/config`만듭니다.
-1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성에 대한 노드를 만듭니다.
+1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성의 노드를 만듭니다.
 
    * 이름:(로거인 경우) `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>`
 
