@@ -2,7 +2,7 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
+source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
 
 ---
 
@@ -237,7 +237,7 @@ property to debug. 로그를 많은 로그를 생성하므로 DEBUG 로그 수�
 특정 상황에서는 다른 로그 수준으로 사용자 정의 로그를 만들 수 있습니다. 다음과 같은 방법으로 저장소에서 이 작업을 수행할 수 있습니다.
 
 1. 아직 존재하지 않는 경우 프로젝트에 대한 새 구성 폴더( `sling:Folder`)를 `/apps/<*project-name*>/config`만듭니다.
-1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성의 노드를 만듭니다.
+1. 에서 새 Apache `/apps/<*project-name*>/config`Sling 로깅 로거 구성에 대한 노드를 만듭니다.
 
    * 이름:(로거인 경우) `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>`
 
