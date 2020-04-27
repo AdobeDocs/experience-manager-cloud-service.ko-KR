@@ -1,7 +1,7 @@
 ---
 title: 액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)
 description: 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련 도움말
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
