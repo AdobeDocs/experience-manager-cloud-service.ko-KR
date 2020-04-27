@@ -1,7 +1,7 @@
 ---
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
@@ -89,7 +89,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
 **빠른 게시**&#x200B;는 간단한 사례에 해당하며 추가적인 상호 작용 없이 선택한 페이지를 즉시 게시합니다. 이로 인해 게시되지 않은 참조도 자동으로 게시됩니다.
 
-[빠른 게시]로 페이지를 게시하려면 다음을 수행하십시오.
+빠른 게시로 페이지를 게시하려면 다음을 수행하십시오.
 
 1. Sites 콘솔에서 페이지를 선택하고 **빠른 게시** 단추를 누릅니다.
 
@@ -109,7 +109,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
 **게시 관리**&#x200B;는 빠른 게시보다 많은 옵션을 제공하여 하위 페이지, 참조의 사용자 지정, 적용 가능한 워크플로우 시작뿐 아니라 나중에 게시할 수 있는 옵션이 포함되어 있습니다.
 
-[게시 관리]를 사용하여 페이지를 게시 또는 게시 취소하려면 다음을 수행하십시오.
+게시 관리를 사용하여 페이지를 게시 또는 게시 취소하려면 다음을 수행하십시오.
 
 1. Sites  콘솔에서 페이지를 선택하고 **게시 관리** 단추를 누릅니다.
 
@@ -119,7 +119,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
    * 선택한 페이지를 게시하거나 게시 취소하도록 선택합니다.
    * 지금 또는 나중에 해당 작업을 수행하도록 선택합니다.
-   [나중에 게시]하면 지정된 시간에 선택한 페이지를 게시하기 위한 워크플로우를 시작합니다. 반대로 [나중에 게시 취소]하면 지정된 시간에 선택한 페이지를 게시 취소하기 위한 워크플로우를 시작합니다.
+   나중에 게시하면 지정된 시간에 선택한 페이지를 게시하기 위한 워크플로우를 시작합니다. 반대로 나중에 게시 취소하면 지정된 시간에 선택한 페이지를 게시 취소하기 위한 워크플로우를 시작합니다.
 
    나중에 게시/게시 취소를 취소하려면 워크플로우 콘솔로 가서 해당 워크플로우를 종료합니다. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
 
@@ -133,7 +133,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
    게시 관리 마법사를 시작하기 전에 선택하지 않은 경우 **컨텐츠 추가** 단추를 사용하여 게시할 페이지 목록에 페이지를 추가할 수 있습니다.
 
-   [컨텐츠 추가] 단추를 클릭하면 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
+   컨텐츠 추가 단추를 클릭하면 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
 
    필요한 페이지를 선택한 후 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
 
@@ -153,7 +153,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
    ![하위 항목을 포함한 게시 관리](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
-   마법사로 돌아가면 [하위 포함] 대화 상자의 옵션 선택에 따라 추가된 페이지가 표시됩니다.
+   마법사로 돌아가면 하위 포함 대화 상자의 옵션 선택에 따라 추가된 페이지가 표시됩니다.
 
    페이지를 선택한 다음 **게시된 참조** 단추를 클릭하여 게시되거나 게시 취소된 참조를 보고 수정할 수 있습니다.
 
@@ -169,7 +169,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
 1. **게시**&#x200B;를 클릭하여 완료합니다.
 
-   [사이트 콘솔]로 돌아가면 알림 메시지가 표시되어 게시를 확인합니다.
+   사이트 콘솔로 돌아가면 알림 메시지가 표시되어 게시를 확인합니다.
 
 1. 게시된 페이지가 워크플로우와 연관되어 있으면 게시 마법사의 마지막 **워크플로우** 단계에 표시될 수 있습니다.
 
@@ -205,14 +205,14 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
 ### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
 
-[게시하기 위해 [게시 관리]를 사용](#manage-publication)하는 것과 같은 방식으로 게시 취소할 수 있습니다.
+[게시하기 위해 게시 관리를 사용](#manage-publication)하는 것과 같은 방식으로 게시 취소할 수 있습니다.
 
 1. Sites 콘솔에서 페이지를 선택하고 **게시 관리** 단추를 누릅니다.
 1. **게시 관리** 마법사가 시작됩니다. 첫 번째 단계인 **옵션**&#x200B;에서 기본 옵션인 **게시**&#x200B;를 선택하는 대신 **게시 취소**&#x200B;를 선택합니다.
 
    ![게시 취소](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
-   [나중에 게시]를 사용하면 지정된 시간에 이 페이지 버전을 게시하는 워크플로우가 시작됩니다. [나중에 비활성화]를 사용하면 특정 시간에 선택한 페이지를 게시 취소하는 워크플로우가 시작됩니다.
+   나중에 게시를 사용하면 지정된 시간에 이 페이지 버전을 게시하는 워크플로우가 시작됩니다. 나중에 비활성화를 사용하면 특정 시간에 선택한 페이지를 게시 취소하는 워크플로우가 시작됩니다.
 
    나중에 게시/게시 취소를 취소하려면 워크플로우 콘솔로 가서 해당 워크플로우를 종료합니다. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
 
@@ -222,9 +222,9 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
 동일한 루트 페이지 아래에서 수많은 컨텐츠 페이지를 입력하거나 업데이트한 경우 전체 트리를 한 번에 게시하면 더욱 편리할 수 있습니다.
 
-[사이트 콘솔]에서 [게시 관리](#manage-publication) 옵션을 사용하여 이 작업을 수행할 수 있습니다.
+사이트 콘솔에서 [게시 관리](#manage-publication) 옵션을 사용하여 이 작업을 수행할 수 있습니다.
 
-1. [사이트 콘솔]에서 게시 또는 게시 취소하려는 트리의 루트 페이지를 선택하고 **게시 관리**&#x200B;를 선택합니다.
+1. 사이트 콘솔에서 게시 또는 게시 취소하려는 트리의 루트 페이지를 선택하고 **게시 관리**&#x200B;를 선택합니다.
 1. **게시 관리** 마법사가 시작됩니다. 게시 또는 게시 취소하도록 선택하고 해당 작업이 수행되면 **다음**&#x200B;을 클릭하여 계속 진행합니다.
 1. **범위** 단계에서 루트 페이지를 선택하고 **하위 포함**&#x200B;을 선택합니다.
 
@@ -254,7 +254,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
    ![카드 보기의 게시 상태](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   게시 상태는 [사이트 콘솔]에 [카드](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [열](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view), [목록](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) 보기로 표시됩니다.
+   게시 상태는 사이트 콘솔에 [카드](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [열](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view), [목록](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) 보기로 표시됩니다.
 
 * [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)에서
 
