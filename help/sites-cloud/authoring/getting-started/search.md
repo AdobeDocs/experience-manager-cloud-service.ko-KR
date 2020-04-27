@@ -1,7 +1,7 @@
 ---
 title: 검색
 description: 포괄적인 검색으로 신속하게 컨텐츠 찾기
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
