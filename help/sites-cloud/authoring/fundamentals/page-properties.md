@@ -1,7 +1,7 @@
 ---
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
@@ -185,7 +185,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 * **타깃팅 구성**
 
-   * [타깃팅할 범위를 지정하려면 [브랜드]](/help/sites-cloud/authoring/personalization/targeted-content.md)를 선택합니다.
+   * [타깃팅할 범위를 지정하려면 브랜드](/help/sites-cloud/authoring/personalization/targeted-content.md)를 선택합니다.
    >[!NOTE]
    >이 옵션을 사용하려면 사용자 계정이 `Target Adminstrators`그룹에 있어야 합니다.
 
@@ -264,7 +264,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 >
 >속성의 벌크 편집은 자산에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 다중 자산의 속성 편집을 참조하십시오.
 >
->GQL(Google 쿼리 언어)을 사용하여 여러 페이지에서 컨텐츠를 검색한 다음 변경 사항을 원래 페이지에 저장하기 전에 [벌크 편집기]에서 직접 컨텐츠를 편집할 수 있으므로 벌크 편집기라고도 합니다.
+>GQL(Google 쿼리 언어)을 사용하여 여러 페이지에서 컨텐츠를 검색한 다음 변경 사항을 원래 페이지에 저장하기 전에 벌크 편집기에서 직접 컨텐츠를 편집할 수 있으므로 벌크 편집기라고도 합니다.
 
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
@@ -299,7 +299,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
       * 선택한 모든 페이지에서 사용할 수 있고 벌크 편집에서 사용할 수 있다고 명시적으로 정의된 속성이 표시됩니다.
       * 페이지 선택을 한 페이지로 제한하면 모든 속성이 보입니다.
    * 공통 값을 갖는 공통 속성
-      * 공통 값을 갖는 속성만 [보기] 모드에 표시됩니다.
+      * 공통 값을 갖는 속성만 보기 모드에 표시됩니다.
       * 필드가 다중 값이면(예: 태그) *모두* 공통된 경우에만 값이 표시됩니다. 일부만 공통된 경우에는 편집할 때만 표시됩니다.
       * 공통 값이 있는 속성이 없으면 메시지가 표시됩니다.
 
