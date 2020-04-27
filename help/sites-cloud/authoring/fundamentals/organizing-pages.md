@@ -1,8 +1,8 @@
 ---
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
@@ -258,19 +258,21 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    * [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 및 도구 모음
    그런 다음 페이지 **복사** 아이콘을 선택합니다.
 
-   ![복사 단추](/help/sites-cloud/authoring/assets/copy.png)
+   ![복사](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >선택 모드에 있을 경우, 페이지가 복사되자마자 이 모드가 종료됩니다.
 
 1. 페이지의 새 복사본을 위한 위치로 이동합니다.
-1. **붙여넣기** 페이지 아이콘을 사용합니다. 
+1. 붙여넣기 **아이콘은** 오른쪽 드롭다운 화살표로 사용할 수 있습니다.
 
-   ![붙여넣기 단추](/help/sites-cloud/authoring/assets/paste.png)
+   ![붙여넣기](/help/sites-cloud/authoring/assets/paste.png)
 
-   이 위치에 원래 페이지와 하위 페이지의 복사본이 만들어집니다.
+   다음을 수행할 수 있습니다.
 
+   1. 페이지 **붙여넣기** 아이콘 자체를 선택합니다.원본 페이지와 모든 하위 페이지의 복사본이 이 위치에 만들어집니다.
+   1. 드롭다운 화살표를 선택하여 하위 항목 없이 **붙여넣기** 옵션을 표시합니다. 이 위치에 원본 페이지의 복사본이 만들어집니다.하위 페이지는 복사되지 않습니다.
    >[!NOTE]
    >
    >페이지를 원본과 동일한 이름의 페이지가 이미 있는 위치에 복사하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach`가 이미 존재하는 경우 `beach`를 사용하는 새 페이지는 `beach1`이 됩니다.
