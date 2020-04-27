@@ -1,7 +1,7 @@
 ---
 title: 알려진 문제
 description: 클라우드 서비스로서의 Adobe Experience Manager의 알려진 문제와 관련된 릴리스 노트
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 일부 알려진 문제는 다음과 같습니다.
 
-* **메타데이터 스키마**:JSP 컴파일 오류를 발생시키는 데 사용되는 자산 등급 위젯. 메타데이터 스키마에서 제거되었습니다. <!-- CQ-4282865, CQ-4284633 -->
+* **메타데이터 스키마**: 사용된 자산 등급 위젯으로 인해 JSP 컴파일 오류가 발생했습니다. 메타데이터 스키마에서 제거되었습니다. <!-- CQ-4282865, CQ-4284633 -->
 
 ### 예정된 Assets 기능 {#upcoming-assets-capabilities}
 
