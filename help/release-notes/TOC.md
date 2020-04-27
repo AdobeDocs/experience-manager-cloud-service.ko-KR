@@ -1,7 +1,7 @@
 ---
-sub-product: 클라우드 서비스 으로서의 AEM 릴리스 노트
-user-guide-title: 클라우드 서비스 으로서의 AEM 릴리스 노트
-translation-type: tm+mt
+sub-product: 클라우드 서비스로서의 AEM 릴리스 노트
+user-guide-title: 클라우드 서비스로서의 AEM 릴리스 노트
+translation-type: ht
 source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 ---
