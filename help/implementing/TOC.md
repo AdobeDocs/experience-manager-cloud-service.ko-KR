@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로 AEM에 대한 구현
 user-guide-title: 클라우드 서비스로 AEM에 대한 구현
 translation-type: tm+mt
-source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
+source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
 
 ---
 
@@ -25,7 +25,6 @@ source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
    + [AEM 프로젝트 구조](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)
    + [클라우드 서비스 SDK로서의 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
-   + [콘텐츠 검색 및 색인 지정](/help/operations/indexing.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
    + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
