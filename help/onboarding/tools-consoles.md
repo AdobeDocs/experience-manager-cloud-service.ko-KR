@@ -1,8 +1,8 @@
 ---
 title: 도구 콘솔
 description: AEM 전체에서 다양한 도구 콘솔에 대해 알아봅니다.
-translation-type: ht
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+translation-type: tm+mt
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 >UI의 카드에서 각 옵션의 용도에 대한 세부 정보를 제공하므로 이 표에서는 도구 패널의 기능 위치에 대한 빠른 참조를 제공합니다.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>섹션</td>
    <td>옵션</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>일반</td>
    <td> </td>
