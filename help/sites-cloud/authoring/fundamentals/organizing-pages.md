@@ -2,7 +2,7 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
 translation-type: tm+mt
-source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
+source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
 
@@ -369,8 +369,13 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    >
    >보안 규정에 따라, **삭제** 페이지 아이콘은 빠른 작업으로 사용할 수 없습니다.
 
-1. 확인을 묻는 대화 상자가 나타나면:
+1. 확인을 요청하는 대화 상자가 나타납니다.
 
+   ![삭제 대화 상자](/help/sites-cloud/authoring/assets/delete-page.png)
+
+   * **삭제하기 전에 페이지를 보관하시겠습니까?** - 이 확인란을 선택하면 삭제하도록 선택한 페이지의 버전이 삭제 시 생성됩니다.
+      * [버전은 나중에 복원할 수 있습니다.](/help/sites-cloud/authoring/features/page-versions.md)
+      * 이전 버전 없이 삭제된 페이지는 복원할 수 없습니다.
    * **취소**&#x200B;를 사용하여 작업을 중단하거나,
    * **삭제**&#x200B;를 사용하여 작업을 확인합니다.
 
