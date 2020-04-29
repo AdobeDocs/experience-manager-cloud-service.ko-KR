@@ -2,7 +2,7 @@
 title: 검색 양식 구성
 description: Adobe Experience Manager에 대한 검색 양식을 클라우드 서비스로 구성합니다.
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -525,7 +525,7 @@ Search **Forms**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 
 * **속성 깊이**
 
-   리소스 내에서 해당 속성을 검색할 최대 깊이입니다. 따라서 하위 수준이 지정된 깊이와 같을 때까지 리소스 및 재귀적 자식에 대한 검색을 수행할 수 있습니다.
+   리소스 내에서 해당 속성을 검색할 최대 깊이입니다. 따라서 자식의 수준이 지정된 깊이와 같을 때까지 해당 속성에 대한 검색을 리소스와 재귀적 자식으로 수행할 수 있습니다.
 
 * **속성 값**
 
@@ -611,7 +611,7 @@ Search **Forms**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 ### 설명 필드 삭제 {#deleting-a-predicate-field}
 
 1. [업데이트할 사용자 지정 구성을](#creating-opening-a-customized-configuration) 엽니다.
-1. 설명 필드(오른쪽)를 선택하고 설정 **탭을 연** 다음 **삭제** 아이콘(왼쪽 아래)을 선택합니다.
+1. 설명 필드(오른쪽)를 선택하고 설정 **탭을** 연 다음 **삭제** 아이콘(왼쪽 아래)을 선택합니다.
 
    ![삭제 아이콘](assets/csf-delete-icon.png)
 
@@ -693,11 +693,13 @@ Search **Forms**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 다음 표에는 검색 양식에서 편집, 삭제 및 미리 보기 작업을 수행하는 데 필요한 권한이 나와 있습니다.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>작업</strong></td>
    <td><strong>권한</strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>편집 </td>
    <td>읽기, <code>/apps </code>노드에 대한 쓰기 권한</td>
