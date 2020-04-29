@@ -1,15 +1,15 @@
 ---
 title: 콘텐츠 조각을 사용한 작업
-description: 컨텐츠 조각을 사용하여 페이지에 영향을 받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
+description: AEM(Adobe Experience Manager)의 콘텐츠 조각을 클라우드 서비스로 사용하여 페이지에 구애받지 않는 콘텐츠를 디자인하고, 만들고, 조정하고, 사용하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # 콘텐츠 조각을 사용한 작업{#working-with-content-fragments}
 
-AEM(Adobe Experience Manager) 컨텐츠 조각을 사용하면 페이지에 영향을 받지 않는 컨텐츠를 [디자인, 제작, 조정 및](/help/sites-cloud/authoring/fundamentals/content-fragments.md)게시할 수 있습니다. 이러한 기능을 사용하면 여러 채널에서 여러 위치에서 사용할 수 있도록 컨텐츠를 준비할 수 있습니다.
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 이러한 기능을 사용하면 여러 채널에서 여러 위치에서 사용할 수 있도록 컨텐츠를 준비할 수 있습니다.
 
 컨텐츠 조각은 AEM 핵심 구성 요소의 JSON(Sling Model) 내보내기 기능을 사용하여 JSON 포맷으로 전달할 수도 있습니다. 이 전달 형식:
 
