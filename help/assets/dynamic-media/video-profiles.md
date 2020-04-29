@@ -2,7 +2,7 @@
 title: 비디오 프로필
 description: Dynamic Media는 사전 정의된 적응형 비디오 인코딩 프로필을 이미 갖추고 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 환경을 제공하도록 최적화되었습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
 
 ---
 
@@ -86,9 +86,9 @@ Dynamic Media는 사전 정의된 적응형 비디오 인코딩 프로필을 이
  </tbody>
 </table>
 
-## 비디오 프로파일에서 스마트 자르기 사용 정보 {#about-smart-crop-video}
+## About using smart crop in video profiles {#about-smart-crop-video}
 
-비디오 프로파일에서 사용할 수 있는 고급 비디오 자르기(선택 사항) - Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자를 수 있는 도구입니다.
+비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오 스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자르는 도구입니다.
 
 스마트 자르기를 위해 지원되는 비디오 포맷은 MP4, MKV, MOV, AVI, FLV 및 WMV입니다.
 
