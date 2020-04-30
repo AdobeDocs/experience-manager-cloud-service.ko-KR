@@ -2,7 +2,7 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 학습합니다.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -69,7 +69,7 @@ AEM에서는 **컨텐츠와** **코드를**&#x200B;분리해야 **합니다. 즉
          + 그룹
          + ACL(권한)
             + 모든 `rep:policy` 경로(변경 가능 또는 변경 불가능)
-+ 패키지 또는 컨텐츠 `ui.content` 패키지에 모든 컨텐츠와 구성이 포함되어 있습니다. 패키지의 일반적인 요소에는 다음이 포함되지만 이에 국한되지 않습니다. `ui.content`
++ 패키지 또는 코드 `ui.apps` 패키지에는 배포할 모든 코드가 들어 있으며 `/apps`배포만 포함됩니다. 패키지의 일반적인 요소에는 다음이 포함되지만 이에 국한되지 않습니다. `ui.apps` <!-- GRANITE-29128 -->
    + 컨텍스트 인식 구성
       + `/conf`
    + 필수, 복잡한 컨텐츠 구조(예: Report Init에 정의된 기준선 컨텐츠 구조를 기반으로 구축되어 확장되는 컨텐츠 빌드아웃입니다.
@@ -126,7 +126,7 @@ Repo Init의 주요 이점은 스크립트에 의해 정의된 모든 작업을 
 Repo Init 스크립트는 프로젝트에서 스크립트로 라이브되지만, 다음과 같은 변경 가능한 구조를 정의하는 데 사용할 수 있으며 사용해야 합니다. `ui.apps`
 
 + 기본 컨텐츠 구조
-   + 예: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
+   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
 + 서비스 사용자
 + 사용자
 + 그룹
