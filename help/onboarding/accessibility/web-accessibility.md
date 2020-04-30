@@ -1,19 +1,19 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침
 seo-title: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침
-translation-type: ht
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+translation-type: tm+mt
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
 # 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침{#aem-and-the-web-accessibility-guidelines}
 
-장애나 제한 사항에 관계없이 웹 컨텐츠를 타겟 대상자가 가능한 한 이용할 수 있도록 설계해야 할 많은 사회적, 경제적 및 법적 동기가 있습니다. 따라서 웹 액세스 가능성은 좋은 웹 디자인의 측면에서 점점 더 중요해지고 있습니다.
+장애나 제한 사항에 관계없이 웹 컨텐츠를 타겟 대상자가 가능한 한 이용할 수 있도록 설계해야 할 많은 사회적, 경제적 및 법적 동기가 있습니다. Adobe Experience Manager(AEM)를 클라우드 서비스로 사용하여 웹 접근성을 향상시킬 수 있으므로 웹 디자인 측면에서 중요한 역할을 하고 있습니다.
 
 클라우드 서비스로서의 AEM을 사용하여 액세스 가능한 웹 사이트 및 컨텐츠를 만드는 것은 다음과 같은 사용자에게 영향을 줍니다.
 
-* 액세스 가능성 기능이 올바로 활성화되도록 AEM(Adobe Experience Manager)을 구성할 책임이 있는 관리자
+* 액세스 가능성 기능이 올바르게 활성화되도록 AEM을 구성하는 관리자
 
 * 액세스 가능한 웹 사이트를 제작하기 위해 이러한 기능을 사용하는 작성자
 
