@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로서의 AEM에 온보딩
 user-guide-title: 클라우드 서비스로서의 AEM에 온보딩
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
 
 ---
 
@@ -25,4 +25,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 기초 준비 완료](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM Sites 준비 완료](data-privacy-and-protection-readiness/sites-readiness.md)
++ 액세스 가능성 {#accessibility}
+   + [클라우드 서비스로서의 AEM 및 웹 접근성 지침](accessibility/web-accessibility.md)
+   + [WCAG 2.1에 대한 빠른 안내서](accessibility/quick-guide-wcag.md)
 + [도구 콘솔 개요](tools-consoles.md)
