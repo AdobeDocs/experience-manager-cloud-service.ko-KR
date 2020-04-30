@@ -2,14 +2,14 @@
 title: 클라우드 서비스로 Adobe Experience Manager에 대한 액세스 가능한 컨텐츠 만들기(WCAG 2.1 준수)
 description: 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련 도움말
 translation-type: tm+mt
-source-git-commit: 6d905c5a29b71c9d05dba910a20ffef21a4eceec
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
 # 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성) {#creating-accessible-content-wcag-conformance}
 
-WCAG( [Web Content Accessibility Guidelines) 2.1](https://www.w3.org/TR/WCAG/)(World Wide Wec Consortium)의 작업 그룹이 작성한 WCAG(Web Content Accessibility Guidelines) 2.1 [](https://www.w3.org/컨소시엄/활동#Accessibility_Guidelines_Working_Group)은 장애가 있는 사용자가 웹 컨텐츠를 액세스하고 사용할 수 있도록 하는 데 도움이 되는 기술 독립 지침 및 성공 기준으로 구성되어 있습니다.
+WCAG( [Web Content Accessibility Guidelines) 2.1](https://www.w3.org/TR/WCAG/)(Web Content Accessibility Guidelines)은 World Wide Wec Consortium의 작업 [그룹에 의해 작성되었으며](https://www.w3.org/컨소시엄/활동#Accessibility_Guidelines_Working_Group), 장애가 있는 사용자가 웹 컨텐츠를 액세스하고 사용할 수 있도록 하는 데 도움이 되는 기술 독립적인 지침 및 성공 기준으로 구성되어 있습니다.
 
 Consortium에서는 다음과 같은 섹션 및 지원 문서를 제공합니다.
 
