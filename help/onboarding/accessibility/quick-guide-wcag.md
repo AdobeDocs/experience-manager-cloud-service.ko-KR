@@ -1,8 +1,8 @@
 ---
 title: WCAG 2.1에 대한 빠른 안내서
 seo-title: WCAG 2.1에 대한 빠른 안내서
-translation-type: ht
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+translation-type: tm+mt
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 클라우드 서비스로서의 Adobe Experience Manager(AEM)는 웹 컨텐츠 액세스 가능성 지침을 최대한 준수하기 위해 개발되었습니다.
 
-[웹 컨텐츠 액세스 가능성 지침(WCAG) 버전 2.1](https://www.w3.org/TR/WCAG/)은 [World Wide Web Consortium(W3C)](https://www.w3.org/)에서 [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/)에 따라 작성한 국제 공인 지침입니다.
+The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.1은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다. 이 지침에서는 시각 장애, 청력 상실, 학습 장애, 연령 관련 제한 사항 등의 장애 여부와 상관없이 최대한 많은 사람이 웹 컨텐츠 작성자, 디자이너 및 개발자가 만든 리소스에 액세스할 수 있는 방법을 웹 컨텐츠 작성자, 디자이너 및 개발자에게 설명합니다.
 
