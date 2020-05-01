@@ -3,7 +3,7 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 자산 처리는 기본 설정을 제공하고 관리자가 보다 구체적인 자산 처리 구성을 추가할 수 있도록 **[!UICONTROL 해주는 처리]**&#x200B;프로필의 구성에 따라 다릅니다. 관리자는 사용자 정의 옵션을 포함하여 사후 처리 워크플로우의 구성을 만들고 유지 관리할 수 있습니다. 사용자 정의 워크플로우를 통해 확장 및 사용자 정의
 
-에셋 마이크로서비스를 사용하면 이전 버전의 Experience Manager에서 사용할 수 있는 포맷보다 더 많은 포맷을 포함하는 [다양한 파일 유형을](/help/assets/file-format-support.md) 처리할 수 있습니다. 예를 들어, 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출과 같이 말이죠.
+에셋 마이크로서비스를 사용하면 이전 버전의 Adobe Experience Manager보다 [다양한 포맷을](/help/assets/file-format-support.md) 간편하게 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
