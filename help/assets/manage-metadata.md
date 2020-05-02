@@ -4,7 +4,7 @@ description: 메타데이터의 유형과 [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 07ebe0588944fff40157119e658aca00eaed6ec3
 
 ---
 
@@ -161,7 +161,7 @@ DOS와 같은 상황을 방지하기 위해 AEM은 Sling 요청에서 지원되�
 
 ### 표준 메타데이터 {#standard-metadata}
 
-* dc - [!DNL Dublin Core] 가장 중요하고 널리 사용되는 메타데이터 세트입니다.
+* DC - [!DNL Dublin Core] 중요하며 널리 사용되는 메타데이터 세트입니다.
 * DICOM - 의료 분야의 디지털 이미징 및 커뮤니케이션
 * Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard에는 많은 분야별 메타데이터가 포함되어 있습니다.
 * rdf - 리소스 설명 프레임워크 - 일반 의미론적 웹 메타데이터용
@@ -173,45 +173,45 @@ DOS와 같은 상황을 방지하기 위해 AEM은 Sling 요청에서 지원되�
 애플리케이션별 메타데이터에는 기술 및 설명 메타데이터가 포함됩니다. 이러한 경우 다른 애플리케이션에서 메타데이터를 사용할 수 없을 수도 있습니다. 예를 들어 메타데이터가 있는 자산이 있고 다른 이미지 렌더링 응용 프로그램이 메타데이터에 액세스하려고 하면 메타데이터에 액세스할 수 없을 수 있습니다. [!DNL Adobe Photoshop] 자산에 애플리케이션별 메타데이터가 많이 있는 경우 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
 
 * ACDSee - 프로그램에서 관리하는 [!DNL ACDSee] 메타데이터입니다. www.acdsee.com [를 참조하십시오](https://www.acdsee.com/).
-* album - [!DNL Adobe Photoshop Album].
-* cq - 사용됨 [!DNL Experience Manager Assets].
-* dam - 에 의해 [!DNL Experience Manager Assets]사용됩니다.
-* dex - SC 설명 탐색기를 최적화합니다.
-* crs - Adobe Photoshop Camera Raw.
-* lr - [!DNL Adobe Lightroom].
-* mediapro - IView MediaPro
+* 앨범 - [!DNL Adobe Photoshop Album].
+* CQ - 사용됨 [!DNL Experience Manager Assets].
+* DAM - 사용 [!DNL Experience Manager Assets].
+* DEX - [Optima SC Description 탐색기는](http://www.optimasc.com/products/dex/index.html) Windows 운영 체제용 메타데이터 및 파일 관리를 위한 도구 모음입니다.
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * Microsoft Photo &amp; MP - Microsoft Photo.
-* pdf 및 pdfx.
-* photoshop &amp; psAux - [!DNL Adobe Photoshop].
+* PDF 및 PDF/X.
+* Photoshop 및 psAux - [!DNL Adobe Photoshop].
 
 ### 디지털 권한 관리 메타데이터 {#digital-rights-management-metadata}
 
 * 참조 - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* plus - [Picture Licensing Universal System](https://www.useplus.com).
-* 프리즘 - https://www.idealliance.org/prism-metadata Publishing Requirements for Industry Standard Metadata.
+* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
+* PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.idealliance.org/prism-metadata)사항.
 * PRL - 프리즘 권한 언어.
 * PUR - 프리즘 사용 권한.
-* xmpPlus - PLUS와 XMP의 통합
+* `xmpPlus` - PLUS와 XMP 통합
 
 ### 사진별 메타데이터 {#photography-specific-metadata}
 
 * Exif - GPS 위치를 비롯한 카메라의 기술 정보.
 * CRS - [!DNL Camera Raw] 스키마.
-* Iptc4xmpCore 및 iptc4xmpExt.
+* `iptc4xmpCore` 및 `iptc4xmpExt`.
 * TIFF - 이미지 메타데이터(TIFF 이미지에만 해당)
 
 ### 인쇄 관련 메타데이터 {#print-specific-metadata}
 
-* pdf 및 pdfx - Adobe PDF 및 타사 애플리케이션
-* 프리즘 - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
+* PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션
+* PRISM - [www.prismstandard.org업계](https://www.prismstandard.org) 표준 메타데이터에 대한 DPS(Publishing Requirements)를 참조하십시오.
 * XMP.
-* xmpPG - 페이지 지정된 텍스트에 대한 XMP 메타데이터
+* `xmpPG` - 페이징된 텍스트에 대한 XMP 메타데이터
 
 ### 멀티미디어 관련 메타데이터 {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media]XMP
-* xmpMM - 미디어 관리.
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` - 미디어 관리.
 
 ## 메타데이터 기반의 워크플로우 {#metadata-driven-workflows}
 
