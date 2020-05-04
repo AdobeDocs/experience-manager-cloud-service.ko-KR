@@ -3,7 +3,7 @@ title: '클라우드 서비스로 Adobe Experience Manager의 디지털 에셋 �
 description: 자산 API를 사용하면 이진, 메타데이터, 변환, 주석 및 컨텐츠 조각 등 자산을 관리하는 기본 CRUD(Create-Read-Update-delete) 작업을 수행할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
 
 ---
 
@@ -48,7 +48,7 @@ AEM의 이전 버전과 비교할 때 중요한 차이점이 있습니다.
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-````
+```
 
 요청 본문의 컨텐츠 유형은 `application/x-www-form-urlencoded` 양식 데이터여야 하며 다음 필드를 포함해야 합니다.
 
