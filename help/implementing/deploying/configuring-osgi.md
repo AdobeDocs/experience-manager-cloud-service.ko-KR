@@ -2,7 +2,7 @@
 title: AEM에 대해 클라우드 서비스로 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
+source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
 
 ---
 
@@ -291,7 +291,7 @@ AEM을 시작하기 전에 구성에 사용된 환경 변수를 설정하고 이
 OSGI 속성에 작성자와 게시에 서로 다른 값이 필요한 경우:
 
 * 실행 모드 `config.author` 해상도 섹션에 설명된 대로 별도의 `config.publish` 및 OSGi 폴더를 [사용해야 합니다](#runmode-resolution).
-* 독립 변수 이름을 사용해야 합니다. author_<variablename> and publish_<variablename> 변수 이름이
+* 독립 변수 이름을 사용해야 합니다. 변수 이름이 같은 접두사를 사용하는 `author_<variablename>` `publish_<variablename>` 것이 좋습니다.
 
 ### 구성 예 {#configuration-examples}
 
