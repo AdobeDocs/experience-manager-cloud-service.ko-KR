@@ -2,7 +2,7 @@
 title: AEM에 대해 클라우드 서비스로 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: 743a8b4c971bf1d3f22ef12b464c9bb0158d96c0
+source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
 
 ---
 
@@ -336,3 +336,204 @@ config.dev
 
 OSGI 속성의 값이 스테이지, prod 및 각 3가지 개발 환경에 대해 `my_var1` 다를 수 있습니다. 따라서 각 dev env에 대한 값을 설정하려면 클라우드 관리자 API를 호출해야 `my_var1` 합니다.
 
+<table>
+<tr>
+<td>
+<b>폴더</b>
+</td>
+<td>
+<b>myfile.cfg.json의 컨텐츠</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+**예제 3**
+
+OSGi 속성 값 `my_var1` 이 스테이지, 프로덕션 및 개발 환경 중 하나에 대해 동일하지만 다른 두 개발 환경에 대해서는 다를 수 있습니다. 이 경우, 준비 및 프로덕션과 동일한 값을 가져야 하는 개발 환경을 비롯하여 각 개발 환경 `my_var1` 에 대한 값을 설정하려면 클라우드 관리자 API를 호출해야 합니다. 폴더 구성에 설정된 값은 상속되지 **않습니다**.
+
+<table>
+<tr>
+<td>
+<b>폴더</b>
+</td>
+<td>
+<b>myfile.cfg.json의 컨텐츠</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+이 작업을 수행하기 위한 또 다른 방법은 config.dev 폴더에서 교체 토큰에 대한 기본값을 설정하여 구성 **폴더에 있는 값과 같은 값을 설정하는** 것입니다.
+
+<table>
+<tr>
+<td>
+<b>폴더</b>
+</td>
+<td>
+<b>myfile.cfg.json의 컨텐츠</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+## 속성 설정을 위한 클라우드 관리자 API 형식 {#cloud-manager-api-format-for-setting-properties}
+
+### API를 통한 값 설정 {#setting-values-via-api}
+
+API를 호출하면 일반적인 고객 코드 배포 파이프라인과 유사한 새로운 변수와 값이 클라우드 환경에 배포됩니다. 작성자 및 게시 서비스가 다시 시작되고 새 값을 참조하며 일반적으로 몇 분 정도 걸립니다.
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+기본 변수는 API를 통해 설정되지 않고 OSGi 속성 자체에서 설정됩니다.
+
+자세한 내용은 [이 페이지를](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) 참조하십시오.
+
+### API를 통해 값 가져오기 {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+자세한 내용은 [이 페이지를](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) 참조하십시오.
+
+### API를 통해 값 삭제 {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+변수를 삭제하려면 빈 값과 함께 포함하십시오.
+
+자세한 내용은 [이 페이지를](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) 참조하십시오.
+
+### 명령줄을 통해 값 가져오기 {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### 명령줄을 통해 값 설정 {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### 명령줄을 통한 값 삭제 {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> Adobe I/O CLI용 Cloud Manager 플러그인을 사용하여 값을 구성하는 방법에 대한 자세한 내용은 [이 페이지를](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 참조하십시오.
+
+### 변수 수 {#number-of-variables}
+
+최대 20개의 변수를 선언할 수 있습니다.
+
+## 보안 및 환경별 구성 값에 대한 배포 고려 사항 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+보안 및 환경별 구성 값은 Git 외부에 있으므로 클라우드 서비스 배포 메커니즘인 공식 AEM에 속하지 않으므로 고객은 클라우드 서비스 배포 프로세스로 AEM을 관리, 관리 및 통합해야 합니다.
+
+위에 언급했듯이 API를 호출하면 일반적인 고객 코드 배포 파이프라인과 유사한 새로운 변수와 값이 클라우드 환경에 배포됩니다. 작성자 및 게시 서비스가 다시 시작되고 새 값을 참조하며 일반적으로 몇 분 정도 걸립니다. 일반적인 코드 배포 동안 Cloud Manager에서 실행하는 품질 게이트와 테스트는 이 프로세스 동안 수행되지 않습니다.
+
+일반적으로 고객은 API를 호출하여 환경 변수를 설정한 후 Cloud Manager에 의존하는 코드를 배포합니다. 코드가 이미 배포된 후 기존 변수를 수정할 수도 있습니다.
+
+파이프라인을 사용 중인 경우, AEM 업데이트 또는 고객 배포 중 어느 부분이 해당 시점에 최종 파이프라인이 실행되고 있는지에 따라 API가 실패할 수 있습니다. 이 오류 응답에는 요청이 성공을 하지 않았음을 나타내지만 특정 이유를 나타내지는 않습니다.
+
+예약된 고객 코드 배포가 기존 변수에 의존하여 현재 코드와 맞지 않는 새 값을 갖는 시나리오가 있을 수 있습니다. 이러한 문제가 발생하는 경우 부가적인 방식으로 변수를 수정하는 것이 좋습니다. 이렇게 하려면 이전 코드가 새 값을 참조하지 않도록 이전 변수의 값을 변경하는 대신 새 변수 이름을 만드십시오. 그런 다음 새 고객 릴리스가 안정적일 때 이전 값을 제거할 수 있습니다.
+
+마찬가지로 변수 값의 버전이 관리되지 않으므로 코드를 롤백하면 문제를 일으키는 새로운 값을 참조할 수 있습니다. 앞서 언급한 변수 추가 전략도 여기에 도움이 될 것입니다.
+
+이 부가적 변수 전략은 재배포하기 며칠 전의 코드가 필요한 경우, 해당 변수가 참조하는 변수 이름과 값이 그대로 유지되는 재해 복구 시나리오에 유용합니다. 이는 고객이 이전 변수를 제거하기 전에 며칠 동안 대기하는 전략에 의존합니다. 그렇지 않으면 이전 코드에 참조되는 적절한 변수가 없을 것입니다.
