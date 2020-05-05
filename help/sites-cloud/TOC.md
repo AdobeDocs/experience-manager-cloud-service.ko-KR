@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로 AEM에서 컨텐츠 작성
 user-guide-title: 클라우드 서비스로 AEM에서 컨텐츠 작성
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
       + [CSV로 내보내기](authoring/fundamentals/csv-export.md)
       + [구성 요소](authoring/fundamentals/components.md)
       + [모바일 장치용 작성](authoring/fundamentals/mobile.md)
-      + [액세스 가능한 컨텐츠(WCAG 2.0 적합성)](authoring/fundamentals/accessible-content.md)
+      + [액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성)](authoring/fundamentals/accessible-content.md)
       + [문제 해결](authoring/fundamentals/troubleshooting.md)
       + [키보드 단축키](authoring/fundamentals/keyboard-shortcuts.md)
    + 작성 기능 {#features}
