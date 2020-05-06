@@ -2,9 +2,9 @@
 title: AEM에 대해 클라우드 서비스로 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2214'
 ht-degree: 0%
 
 ---
@@ -127,64 +127,66 @@ OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하면 사용 �
 
 비밀 환경별 구성을 사용하여 스테이지 및 프로덕션을 비롯한 모든 AEM에 있는 비밀에 대한 값을 클라우드 서비스 환경으로 저장합니다.
 
-### 저장소에 새 구성 추가 {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### 알아야 할 사항 {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-저장소에 새 구성을 추가하려면 다음을 알아야 합니다.
+To add a new configuration to the repository you need to know the following:
 
-1. 서비스의 **PID** (영구 ID)입니다.
+1. The **Persistent Identity** (PID) of the service.
 
-   웹 콘솔 **의 구성** 필드를 참조하십시오. 번들 이름(또는 페이지 아래쪽의 **구성 정보** )의 뒤에 대괄호로 이름이 표시됩니다.
+   Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   예를 들어 AEM WCM 버전 관리자 `com.day.cq.wcm.core.impl.VersionManagerImpl.` 를 구성하는 **노드를 만듭니다**.
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. 특정 실행 모드가 필요한지 여부를 나타냅니다. 폴더를 만듭니다.
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config` - 모든 실행 모드
-   * `config.author` - 작성 환경
-   * `config.publish` - 게시 환경용
-   * `config.<run-mode>` - 적절하
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
-1. 구성 **또는** **팩토리 구성** 필요여부.
-1. 구성할 개별 매개 변수; 을 포함하는 경우, 다시 만들어야 하는 기존 매개 변수 정의를 포함합니다.
+1. Whether a **Configuration** or **Factory Configuration** is necessary.
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   웹 콘솔에서 개별 매개 변수 필드를 참조합니다. 이 이름은 각 매개 변수에 대해 대괄호로 표시됩니다.
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   예를 들어 속성을 만듭니다
-   `versionmanager.createVersionOnActivation` 활성화 **시 버전 만들기를 구성합니다**.
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. 구성이 이미 있습니까 `/libs`? 인스턴스의 모든 구성을 나열하려면 CRXDE Lite의 **쿼리** 도구를 사용하여 다음 SQL 쿼리를 제출합니다.
+1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
 
    `select * from sling:OsgiConfig`
 
-   이 경우 이 구성을 복사하여 새 위치 ` /apps/<yourProject>/`에서 사용자 지정할 수 있습니다.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## 저장소에서 구성 만들기 {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-실제로 새 구성을 저장소에 추가하려면:
+To actually add the new configuration to the repository:
 
-1. ui.apps 프로젝트에서 사용 중인 실행 모드를 기반으로 필요에 따라 `/apps/…/config.xxx` 폴더를 만듭니다
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-1. PID라는 이름으로 새 JSON 파일을 만들고 `.cfg.json` 확장자를 추가합니다
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
 
-1. OSGi 구성 키 값 쌍으로 JSON 파일 채우기
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >기본 OSGi 서비스를 구성하는 경우 `/system/console/configMgr`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. JSON 파일을 프로젝트에 저장합니다.
+1. Save the JSON file to your project. -->
 
 ## 소스 컨트롤의 구성 속성 형식 {#configuration-property-format-in-source-control}
 
-새 OSGI 구성 속성 만들기에 대해서는 위의 저장소 [에 새 구성 추가 섹션에서](#creating-the-configuration-in-the-repository) 설명합니다. 다음 단계에 따라 아래 하위 섹션에 설명된 대로 구문을 수정합니다.
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+다음 단계에 따라 아래 하위 섹션에 설명된 대로 구문을 수정합니다.
 
 ### 인라인 값 {#inline-values}
 
