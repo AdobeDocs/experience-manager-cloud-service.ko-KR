@@ -2,9 +2,9 @@
 title: AEM에 대해 클라우드 서비스로 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
+source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -162,29 +162,29 @@ To add a new configuration to the repository you need to know the following:
 
    `select * from sling:OsgiConfig`
 
-   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
+## 저장소에서 구성 만들기 {#creating-the-configuration-in-the-repository}
 
-To actually add the new configuration to the repository:
+실제로 새 구성을 저장소에 추가하려면:
 
-1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
+1. ui.apps 프로젝트에서 사용 중인 실행 모드를 기반으로 필요에 따라 `/apps/…/config.xxx` 폴더를 만듭니다
 
-1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
+1. PID라는 이름으로 새 JSON 파일을 만들고 `.cfg.json` 확장자를 추가합니다
 
 
-1. Populate the JSON file with the OSGi configuration key value pairs
+1. OSGi 구성 키 값 쌍으로 JSON 파일 채우기
 
    >[!NOTE]
    >
-   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
+   >기본 OSGi 서비스를 구성하는 경우 `/system/console/configMgr`
 
 
-1. Save the JSON file to your project. -->
+1. JSON 파일을 프로젝트에 저장합니다. -->
 
 ## 소스 컨트롤의 구성 속성 형식 {#configuration-property-format-in-source-control}
 
-<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+새 OSGI 구성 속성 만들기에 대해서는 위의 저장소 [에 새 구성 추가 섹션에서](#creating-the-configuration-in-the-repository) 설명합니다.
 
 다음 단계에 따라 아래 하위 섹션에 설명된 대로 구문을 수정합니다.
 
