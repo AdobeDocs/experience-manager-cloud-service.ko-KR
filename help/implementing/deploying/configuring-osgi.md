@@ -2,9 +2,9 @@
 title: AEM에 대해 클라우드 서비스로 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
+source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2311'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ OSGi 구성 파일은
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-cfg.json [OSGi 구성 형식](cfg.json OSGi 구성 형식 아래).
+cfg.json OSGi 구성 형식을 따릅니다.
 
 > [!NOTE]
 >
