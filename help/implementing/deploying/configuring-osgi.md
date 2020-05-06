@@ -2,12 +2,15 @@
 title: AEM에 대해 클라우드 서비스로 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '2509'
+ht-degree: 0%
 
 ---
 
 
-# OSGi 구성 {#osgi-configurations}
+# Configuring OSGi for AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi는](https://www.osgi.org/) AEM(Adobe Experience Manager)의 기술 스택에서 기본적인 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
 
@@ -95,7 +98,7 @@ cfg.json [OSGi 구성 형식](cfg.json OSGi 구성 형식 아래).
 
 OSGi의 일반적인 경우 인라인 OSGi 구성 값을 사용합니다. 환경별 구성은 개발 환경 간에 값이 다른 특정 사용 사례에만 사용됩니다.
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 환경별 구성은 인라인 값이 들어 있는 기존의 정적으로 정의된 OSGi 구성을 확장하여 Cloud Manager API를 통해 외부에서 OSGi 구성 값을 관리하는 기능을 제공합니다. 인라인 값을 정의하고 Git에 저장하는 일반적인 방식과 기존 방식을 사용해야 하는지, 아니면 값을 환경별 구성으로 추출해야 하는지를 이해하는 것이 중요합니다.
 
@@ -165,50 +168,19 @@ OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하면 사용 �
 
 실제로 새 구성을 저장소에 추가하려면:
 
-1. CRXDE Lite를 사용하여 다음 항목으로 이동합니다.
+1. ui.apps 프로젝트에서 사용 중인 실행 모드를 기반으로 필요에 따라 `/apps/…/config.xxx` 폴더를 만듭니다
 
-   ` /apps/<yourProject>`
+1. PID라는 이름으로 새 JSON 파일을 만들고 `.cfg.json` 확장자를 추가합니다
 
-1. 아직 존재하지 않는 경우 폴더 `config` ()를 `sling:Folder`만듭니다.
 
-   * `config` - 모든 실행 모드 적용 가능
-   * `config.<run-mode>` - 특정 실행 모드 전용
+1. OSGi 구성 키 값 쌍으로 JSON 파일 채우기
 
-1. 이 폴더에서 노드를 만듭니다.
-
-   * 유형: `sling:OsgiConfig`
-   * 이름: 영구 ID(PID);
-
-      예: AEM WCM Version Manager 사용 `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >공장 구성을 만들 때 이름 `-<identifier>` 에 추가합니다.
-   >
-   >As in: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >여기서 `<identifier>` 는 인스턴스를 식별하기 위해 입력한 자유 텍스트로 대체됩니다(이 정보를 생략할 수 없음). 예를 들면 다음과 같습니다.
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >기본 OSGi 서비스를 구성하는 경우 `/system/console/configMgr`
 
-1. 구성할 각 매개 변수에 대해 이 노드에 속성을 만듭니다.
 
-   * 이름: 웹 콘솔에 표시된 대로 매개 변수 이름; 필드 설명 끝에 대괄호로 이름이 표시됩니다. 예를 들어, `Create Version on Activation` `versionmanager.createVersionOnActivation`
-   * 유형: 를 참조하십시오.
-   * 값: 를 참조하십시오.
-   구성할 매개 변수의 속성만 만들어야 하지만 다른 매개 변수들은 AEM에서 설정한 대로 기본값을 사용합니다.
-
-1. 모든 변경 사항을 저장합니다.
-
-   서비스를 다시 시작하여 노드가 업데이트되는 즉시 변경 사항이 적용됩니다(웹 콘솔에서 변경한 내용).
-
->[!CAUTION]
->
->경로에서 어떤 것도 변경해서는 안 `/libs` 된다.
-
->[!CAUTION]
->
->시작 시 읽으려면 구성의 전체 경로가 정확해야 합니다.
-
+1. JSON 파일을 프로젝트에 저장합니다.
 
 ## 소스 컨트롤의 구성 속성 형식 {#configuration-property-format-in-source-control}
 
