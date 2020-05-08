@@ -2,9 +2,9 @@
 title: AEM에 대해 클라우드 서비스로 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
+source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2689'
 ht-degree: 0%
 
 ---
@@ -164,41 +164,56 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## 저장소에서 구성 만들기 {#creating-the-configuration-in-the-repository}
+## OSGi 구성 만들기
 
-실제로 새 구성을 저장소에 추가하려면:
+아래에 설명된 두 가지 방법으로 새 OSGi 구성을 만들 수 있습니다. 이전의 방법은 일반적으로 개발자에 의한 잘 알려진 OSGi 속성과 값을 가진 사용자 지정 OSGi 구성 요소와 AEM 제공 OSGi 구성 요소에 대한 후자를 구성하는 데 사용됩니다.
 
-1. ui.apps 프로젝트에서 사용 중인 실행 모드를 기반으로 필요에 따라 `/apps/…/config.xxx` 폴더를 만듭니다
+### OSGi 구성 작성
 
-1. PID라는 이름으로 새 JSON 파일을 만들고 `.cfg.json` 확장자를 추가합니다
+JSON 형식 OSGi 구성 파일은 AEM 프로젝트에서 직접 손으로 작성할 수 있습니다. 이는 잘 알려진 OSGi 구성 요소, 특히 구성을 정의하는 동일한 개발자가 디자인하고 개발한 맞춤형 OSGi 구성 요소에 대한 OSGi 구성을 만드는 가장 빠른 방법입니다. 또한 이 방법을 활용하여 다양한 실행 모드 폴더에 있는 동일한 OSGi 구성 요소에 대한 구성을 복사/붙여넣거나 업데이트할 수 있습니다.
+
+1. IDE에서 `ui.apps` 프로젝트를 열고, 새로운 OSGi 구성이 적용되어야 하는 런모드를 대상으로 하는 구성 폴더(`/apps/.../config.<runmode>`)를 찾거나 만듭니다
+1. 이 구성 폴더에서 새 `<PID>.cfg.json` 파일을 만듭니다. PID는 OSGi 구성 요소의 영구 ID입니다. 일반적으로 OSGi 구성 요소 구현의 전체 클래스 이름입니다. 예:
+   `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
+OSGi 구성 팩토리 파일 이름, 이름 지정 규칙 `<PID>-<factory-name>.cfg.json` 사용
+1. 새 `.cfg.json` 파일을 열고 [JSON OSGi 구성 형식을 따라 OSGi 속성 및 값 쌍의 키/값 조합을 정의합니다](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. 새 `.cfg.json` 파일에 변경 내용 저장
+1. 새로운 OSGi 구성 파일을 Git에 추가 및 커밋
+
+### AEM SDK Quickstart를 사용하여 OSGi 구성 생성
+
+AEM SDK Quickstart Jar의 AEM 웹 콘솔은 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM Web Console의 구성 UI를 사용하면 저장소에 `.cfg.json` 파일이 작성되므로 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하려면 이 점을 주의하십시오.
+
+1. 관리 사용자로 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다
+1. OSGi > 구성으로 이동합니다.
+1. 구성할 OSGi 구성 요소를 찾아 제목을 눌러 편집
+   ![OSGi 구성](./assets/configuring-osgi/configuration.png)
+1. 필요에 따라 웹 UI를 통해 OSGi 구성 속성 값 편집
+1. PID(Persistent Identity)를 안전한 위치에 기록합니다. 나중에 OSGi 구성 JSON을 생성하는 데 사용됩니다
+1. 저장을 누릅니다.
+1. OSGi > OSGi 설치 프로그램 구성 프린터로 이동합니다.
+1. 5단계에서 복사한 PID에 붙여넣기를 통해 일련화 형식이 &quot;OSGi Configurator JSON&quot;으로 설정되어 있는지 확인합니다.
+1. 인쇄를 누릅니다.
+1. JSON 형식의 OSGi 구성은 직렬화된 구성 속성 섹션에 표시됩니다.
+   ![OSGi 설치 프로그램 구성 프린터](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. IDE에서 `ui.apps` 프로젝트를 열고, 새로운 OSGi 구성이 적용되어야 하는 실행 모드를 대상으로 하는 구성 폴더(`/apps/.../config.<runmode>`)를 찾거나 만듭니다.
+1. 이 구성 폴더에서 새 `<PID>.cfg.json` 파일을 만듭니다. PID는 5단계의 값과 동일합니다.
+1. 10단계의 일련화된 구성 속성을 `.cfg.json` 파일에 붙여넣습니다.
+1. 변경 내용을 새 `.cfg.json` 파일에 저장합니다.
+1. 새로운 OSGi 구성 파일을 Git에 추가하고 커밋합니다.
 
 
-1. OSGi 구성 키 값 쌍으로 JSON 파일 채우기
-
-   >[!NOTE]
-   >
-   >기본 OSGi 서비스를 구성하는 경우 `/system/console/configMgr`
-
-
-1. JSON 파일을 프로젝트에 저장합니다. -->
-
-## 소스 컨트롤의 구성 속성 형식 {#configuration-property-format-in-source-control}
-
-새 OSGI 구성 속성 만들기에 대해서는 위의 저장소 [에 새 구성 추가 섹션에서](#creating-the-configuration-in-the-repository) 설명합니다.
-
-다음 단계에 따라 아래 하위 섹션에 설명된 대로 구문을 수정합니다.
+## OSGi 구성 속성 형식
 
 ### 인라인 값 {#inline-values}
 
 예상대로 인라인 값은 표준 JSON 구문에 따라 표준 이름-값 쌍으로 형식이 지정됩니다. 예:
 
 ```json
- {
-
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-
+{
+   "my_var1": "val",
+   "my_var2": [ "abc", "def" ],
+   "my_var3": 500
 }
 ```
 
