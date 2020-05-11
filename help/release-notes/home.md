@@ -1,7 +1,7 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager(AEM) 릴리스 노트.
 description: '클라우드 서비스로서의 Adobe Experience Manager(AEM) 릴리스 노트. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 ---
