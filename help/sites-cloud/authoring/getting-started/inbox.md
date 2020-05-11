@@ -1,8 +1,11 @@
 ---
 title: 받은 편지함
 description: 받은 편지함에서 작업 관리
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '892'
+ht-degree: 100%
 
 ---
 
