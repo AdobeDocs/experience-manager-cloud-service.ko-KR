@@ -1,7 +1,7 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
 description: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
@@ -138,7 +138,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ![제품 프로필](/help/security/assets/ims8.png)
 
-### Logging into Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
+### 클라우드 서비스로서의 Adobe Experience Manager에 로그인{#logging-in-to-aem}
 
 **로컬 관리자 로그인**
 
@@ -156,7 +156,7 @@ AEM은 관리 사용자에 대한 로컬 로그인을 계속 지원할 수 있�
 
 
 >[!NOTE]
-> IMS에서 만든 모든 사용자는 Adobe ID 또는 Federated ID를 사용하여 만들 수 있습니다. 사용자가 Adobe ID를 사용하여 설정하는 경우 회사의 ID 공급자를 사용하여 로그인해야 합니다.
+> IMS에서 만든 모든 사용자는 Adobe ID 또는 Federated ID를 사용하여 만들 수 있습니다. 사용자가 Adobe ID를 사용하여 설정되는 경우 로그인을 위해 회사의 ID 공급자를 사용하여 인증됩니다.
 
 그러면 IMS 로그인 화면으로 리디렉션되고 자격 증명을 입력해야 합니다.
 
@@ -195,20 +195,20 @@ IMS에서 동기화된 사용자 그룹은 AEM에서 **DAM 사용자**&#x200B;�
 ![ACL3](/help/security/assets/ims18.png)
 
 
-### 클라우드 관리자 액세스 {#accessing-cloud-manager}
+### Cloud Manager 액세스 {#accessing-cloud-manager}
 
 Cloud Manager 또는 AEM에 클라우드 서비스 환경으로 액세스하려면 Cloud Manager 제품의 프로필에 할당되어야 합니다.
 
-Cloud [Manager](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) 의 특정 기능의 가용성을 제어하는 사용자의 역할에 대한 자세한 내용은 역할 정의를 참조하십시오.
+Cloud Manager의 특정 기능의 가용성을 제어하는 사용자 역할에 대한 자세한 내용은 [역할 정의](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)를 참조하십시오.
 
 >[!NOTE]
->Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 특정 권한, 사전 구성된 작업 또는 각 역할과 연관된 권한이 있는 각 역할에 대해 알아보려면 역할 기반 [권한을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 특정 권한, 사전 구성된 작업 또는 각 역할과 연관된 권한이 있는 각 역할에 대해 알아보려면 [역할 기반 권한](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)을 참조하십시오.
 
 **사용자 추가 단계**
 
 1. 기존 사용자의 화면 또는 새 사용자 화면에서 특정 프로필에 사용자를 추가합니다.
 
-1. 또는 아래 그림과 같이 개요 **화면에서** 사용자를 추가할 수도 있습니다.
+1. 또는 아래 그림과 같이 **개요** 화면에서 사용자를 추가할 수도 있습니다.
 
    ![ACL3](/help/security/assets/ims23.png)
 
@@ -218,17 +218,17 @@ Cloud [Manager](/help/onboarding/what-is-required/add-users-roles.md#role-defini
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. 해당 프로필에 추가되면 사용자 인터페이스의 오른쪽 상단 모서리에서 Adobe Experience [Cloud를](http://my.cloudmanager.adobe.com) 통해 Cloud Manager의 각 테넌트에 액세스할 수 있습니다.
+1. 해당 프로필에 추가되면 사용자 인터페이스의 오른쪽 상단 모서리에서 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com)를 통해 Cloud Manager의 각 테넌트에 액세스할 수 있습니다.
 
 
-### AEM에서 클라우드 서비스로 인스턴스 액세스 {#accessing-instance-cloud-service}
+### AEM에서 클라우드 서비스로 인스턴스에 액세스 {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
 >AEM에서 클라우드 서비스로 인스턴스에 대한 액세스 권한을 부여하기 전에 위의 섹션에 언급된 단계가 이미 완료되었어야 합니다.
 
-관리 콘솔 내에서 AEM 인스턴스에 액세스하려면 **관리 콘솔의**&#x200B;제품 목록에 클라우드 관리자 프로그램 및 프로그램 내의 환경이 **표시됩니다**.
+**관리 콘솔** 내에서 AEM 인스턴스에 액세스하려면 **Admin Console**&#x200B;의 제품 목록에 있는 프로그램 내에 Cloud Manager 프로그램 및 환경이 표시되어야 합니다.
 
-예를 들어 아래 스크린샷에는 *개발 작성자와* *게시*&#x200B;등 두 가지 사용 가능한 환경이 표시됩니다.
+예를 들어 아래 스크린샷에는 *개발 작성자*&#x200B;와 *게시*&#x200B;라는 두 가지 사용 가능한 환경이 표시됩니다.
 
 ![ACL3](/help/security/assets/ims19.png)
 
