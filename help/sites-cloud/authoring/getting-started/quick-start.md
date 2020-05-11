@@ -1,8 +1,11 @@
 ---
 title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 컨텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1585'
+ht-degree: 100%
 
 ---
 
@@ -74,7 +77,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 [새 페이지를 만들려면](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
-1. 새 페이지를 만들 [위치로 이동](#finding-your-page)합니다.
+1. [새 페이지를 만들 위치로 이동합니다.](#finding-your-page)
 1. **만들기** 아이콘을 사용한 다음 목록에서 **페이지**&#x200B;를 선택합니다.
 
    ![만들기 단추](/help/sites-cloud/authoring/assets/create.png)
@@ -125,7 +128,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    다음 방법 중 하나로 해당 아이콘에 액세스할 수 있습니다.
 
    * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
-   * 페이지를 선택했을 때의 [도구 모음](#selecting-your-page-for-further-action)
+   * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
 
 1. 편집기가 열리면 다음을 수행할 수 있습니다.
 
@@ -251,7 +254,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
-[페이지를 잠그면](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금] (및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
+[페이지를 잠그면](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금](및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
 
 * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
 * 페이지를 편집할 때 [[페이지 정보] 드롭다운 메뉴](#editing-the-page-properties)
@@ -273,7 +276,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![참조 보기](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고(해당되는 경우) 추가 작업을 수행합니다.
+1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고 (해당되는 경우) 추가 작업을 수행합니다.
 
 ### 페이지 버전 생성 {#creating-a-version-of-your-page}
 
