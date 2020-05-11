@@ -1,7 +1,7 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
@@ -53,8 +53,8 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
    + [XMP 메타데이터](xmp-metadata.md)
    + [MediaLibrary 기능](medialibrary.md)
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
-+ 에셋 공유 및 배포 {#brand-portal}
-   + [Brand Portal에서 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)
++ 자산 공유 및 분배 {#brand-portal}
+   + [Brand Portal로 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)
    + [자산을 Brand Portal에 게시](publish-to-brand-portal.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
