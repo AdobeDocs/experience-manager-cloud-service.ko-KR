@@ -230,7 +230,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 이러한 작업은 모두 다음을 수행하여 트리거할 수 있습니다.
 
 1. 이동, 복사 및 붙여넣기 또는 삭제할 [페이지로 이동](#finding-your-page)하십시오.
-1. 다음 중 하나를 사용하여 필요에 따라 [복사](및 [붙여넣기]), [이동] 또는 [삭제] 아이콘을 선택합니다.
+1. 다음 중 하나를 사용하여 필요에 따라 [복사] (및 [붙여넣기]), [이동] 또는 [삭제] 아이콘을 선택합니다.
 
    * 필요한 리소스에 대한 [빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only)
    * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
@@ -251,7 +251,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
-[페이지를 잠그면](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금](및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
+[페이지를 잠그면](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금] (및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
 
 * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
 * 페이지를 편집할 때 [[페이지 정보] 드롭다운 메뉴](#editing-the-page-properties)
