@@ -254,7 +254,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
-[페이지를 잠그면](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금](및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
+[페이지를 잠그면](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금] (및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
 
 * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
 * 페이지를 편집할 때 [[페이지 정보] 드롭다운 메뉴](#editing-the-page-properties)
