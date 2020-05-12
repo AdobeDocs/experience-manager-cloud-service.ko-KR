@@ -3,9 +3,9 @@ title: Digital Rights Management [!DNL Adobe Experience Manager Assets] 는 클�
 description: Cloud Service에서 라이선스가 부여된 에셋의 에셋 만료 상태 및 정보 [!DNL Experience Manager] 를 관리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 만료됨 **[!UICONTROL 옵션을]** 선택하면 [!DNL Assets] 콘솔에는 복합 자산에서 참조하는 만료된 자산과 하위 자산만 표시됩니다. 만료된 하위 자산을 참조하는 복합 자산은 하위 자산이 만료되는 즉시 표시되지 않습니다. 대신, 스케줄러가 다음에 실행될 때 만료된 하위 자산을 참조한다는 것을 감지하면 [!DNL Experience Manager] 표시됩니다.
 
-게시된 자산의 만료 날짜를 현재 스케줄러 주기보다 빠른 날짜로 수정하는 경우 예약은 이 자산이 다음 번 실행될 때 만료된 자산으로 여전히 감지하고 그에 따라 상태를 반영합니다.
+게시된 자산의 만료 날짜를 현재 스케줄러 주기보다 빠른 날짜로 수정하는 경우 예약은 이 자산이 다음 번 실행될 때 만료된 자산으로 여전히 감지하고 그에 따라 상태를 반영합니다. 자산의 만료 날짜는 다른 시간대에 있는 사용자에 대해 다르게 표시됩니다.
 
 또한, 오류나 오류로 인해 스케줄러가 현재 주기의 만료된 자산을 감지하지 못하는 경우 스케줄러는 다음 주기에 이러한 자산을 다시 검사하여 만료된 상태를 감지합니다.
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 1. 사용자 [!DNL Assets] 인터페이스에서 자산을 선택합니다.
 
-1. 도구 모음 **[!UICONTROL 에서 게시를]** 클릭합니다. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
+1. 도구 **[!UICONTROL 모음에서]** 게시를 클릭합니다. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
 
 1. 메뉴에서 **[!UICONTROL 게시를]** 선택한 다음 확인 대화 상자를 닫습니다.
 1. 선택 모드를 종료합니다. 자산에 대한 게시 상태는 카드 보기의 자산 축소판 아래에 표시됩니다. 목록 보기에서 게시된 열에는 자산이 게시된 시간이 표시됩니다.
