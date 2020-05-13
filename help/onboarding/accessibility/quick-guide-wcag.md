@@ -2,7 +2,10 @@
 title: WCAG 2.1에 대한 빠른 안내서
 seo-title: WCAG 2.1에 대한 빠른 안내서
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 91%
 
 ---
 
@@ -13,11 +16,19 @@ source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
+>[!NOTE]
+> 
+> WCAG 2.1은 이전 버전인 2008년의 WCAG 2.0을 업데이트합니다. [WCAG 2.1 - WCAG 2.0과의 비교](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)를 참조하십시오.
+
+>[!NOTE]
+> 
+>[이 지침의 업데이트된 버전인 WCAG 2.2](https://www.w3.org/TR/WCAG22/)는 현재 개발 중이지만 현 시점에서 고려되지는 않습니다.
+
 WCAG 2.1은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다. 이 지침에서는 시각 장애, 청력 상실, 학습 장애, 연령 관련 제한 사항 등의 장애 여부와 상관없이 최대한 많은 사람이 웹 컨텐츠 작성자, 디자이너 및 개발자가 만든 리소스에 액세스할 수 있는 방법을 웹 컨텐츠 작성자, 디자이너 및 개발자에게 설명합니다.
 
 예를 들어, HTML에서 `alt` 특성을 사용하여 이미지(또는 기타 텍스트가 아닌 컨텐츠)를 설명하는 것은 앞이 보이지 않거나 부분적으로 시력이 있는 사람들에게 큰 도움이 됩니다. `alt` 특성의 텍스트 설명은 음성 출력으로 변환하거나 전자식 재생 가능 점자 디스플레이에 전송할 수 있습니다.
 
-또한 WCAG 2.1은 *상황적 장애인*&#x200B;으로 간주될 수 있는 사람들을 포함하여 다른 수혜자들에게 이점을 줄 수 있습니다. 탐색 기술, 네트워크 연결 속도 또는 탐색 환경과 같은 상황으로 인해 장애가 있는 사람과 유사한 장애를 겪을 수 있는 사람들에게도 유익할 수 있습니다.
+Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. 탐색 기술, 네트워크 연결 속도 또는 탐색 환경과 같은 상황으로 인해 장애가 있는 사람과 유사한 장애를 겪을 수 있는 사람들에게도 유익할 수 있습니다.
 
 컨텐츠 작성자 및/또는 웹 사이트 소유자는 Adobe Experience Manager를 사용하여 적절한 WCAG 2.1 Level A 및 Level AA 성공 기준을 충족하는 웹 컨텐츠를 만들 수 있습니다.
 
@@ -63,14 +74,14 @@ WCAG 2.1은 **POUR**&#x200B;이라는 약어로 지칭되는 액세스 가능한
 * 각 지침이 하나 이상의 **성공 기준**&#x200B;으로 구성되어 있습니다.
 * 성공 기준은 주어진 웹 페이지에 대해 `True` 또는 `False`인 구문으로 작성됩니다.
 * 성공 기준에는 어느 하나/또는 선택 사항을 포함하거나, 성공 기준을 충족할 필요가 없는 상황과 같은 예외를 포함할 수 있습니다.
-* 성공 기준은 상위 지침 및 원칙에 따라 1.1.1부터 4.1.1까지 번호가 매겨져 있습니다. 또한 이 성공 기준에는 쉽게 참조할 수 있도록 해당 기준의 의도를 요약하는 짧은 이름이 있습니다. 예를 들어 성공 기준 1.1.1은 텍스트가 아닌 대체 요소입니다.
+* 성공 기준은 상위 지침 및 원칙에 따라 1.1.1부터 4.1.1까지 번호가 매겨져 있습니다. 또한 이 성공 기준에는 쉽게 참조할 수 있도록 해당 기준의 의도를 요약하는 짧은 이름이 있습니다. 예를 들어 성공 기준 1.1.1은 텍스트가 아닌 컨텐츠입니다.
 * 성공 기준에는 관련 **기법** 목록이 포함되어 있습니다(아래에 자세히 설명됨).
 
 ## 지원 리소스 {#supporting-resources}
 
 원칙, 지침 및 성공 기준이라는 핵심적 WCAG 2.1 구성 요소 외에도 일련의 지원 문서가 있습니다. 이 중 일부는 지침의 여러 측면을 충족하는 방법에 대한 구체적인 조언을 제공하며, 또 다른 부분은 다양한 수준의 웹 작성자, 디자이너 및 개발자가 WCAG 2.1을 이해하고 가능한 한 효과적으로 사용할 수 있도록 지원하는 일반적인 참조 사항입니다.
 
-WCAG 2.1은 안정적인 문서이며 변경되지 않지만 이러한 지원 리소스의 대부분은 동적 문서라서 새로운 기술이 등장하고 시간이 지남에 따라 변화하고 확장될 것이며 웹 액세스 가능성을 실현하는 방법에 대한 새로운 사례를 발견할 수 있습니다.
+WCAG 2.1 자체는 안정적인 문서이며 변경되지 않지만 이러한 지원 리소스는 대부분 동적 문서입니다. 새로운 기술이 부상하면서 시간이 지남에 따라 이러한 기술이 변화하고 증가할 것이며 웹 접근성을 구현하는 새로운 사례가 발견됩니다.
 
 ### WCAG 2.1 리소스 {#wcag-resources}
 
@@ -85,7 +96,7 @@ WCAG 2.1은 안정적인 문서이며 변경되지 않지만 이러한 지원 �
 
 ### WCAG 2.1의 새로운 기능 {#what-is-new}
 
-[WCAG 2.1의 새로운 기능](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)에서는 WCAG 2.0과 WCAG 2.1 간의 차이에 대한 중요한 정보를 제공합니다.
+[WCAG 2.1의 새로운](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 기능은 WCAG 2.0과 WCAG 2.1 간의 델타에 대한 중요한 정보를 제공합니다.
 
 [WCAG 2.0 및 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 섹션에서는 해당 관계의 상태를 더욱 명확하게 합니다.
 
@@ -136,7 +147,7 @@ WCAG 2.1에 대한 기법은 [WCAG 2.1용 기법](https://www.w3.org/WAI/WCAG21/
 
 ### WCAG 2.1을 충족하는 방법 {#how-to-meet-wcag}
 
-충족하는 방법 섹션은 [WCAG 2.1 을 충족하는 방법](https://www.w3.org/WAI/WCAG21/quickref/) 페이지에 있습니다. 이 섹션에서는 WCAG에 대한 대체 표현을 제공하여 지침의 컨텐츠를 독자의 관심사나 상황과 가장 관련이 있는 사항으로 구체화합니다. 독자는 CSS(Cascading Style Sheet)나 스크립팅과 같은 특정 웹 컨텐츠 기술을 지정하거나 특정 우선 순위 수준을 지정하여 원하는 성공 기준 기법을 필터링할 수 있습니다.
+충족하는 방법 섹션은 [WCAG 2.1 을 충족하는 방법](https://www.w3.org/WAI/WCAG21/quickref/) 페이지에 있습니다. 이 섹션에서는 WCAG에 대한 대체 프레젠테이션을 제공하여 독자가 지침 내용을 자신의 관심 및/또는 상황과 가장 관련이 있는 사람에게 구체화할 수 있도록 합니다. 독자는 CSS(Cascading Style Sheet)나 스크립팅과 같은 특정 웹 컨텐츠 기술을 지정하거나 특정 우선 순위 수준을 지정하여 원하는 성공 기준 기법을 필터링할 수 있습니다.
 
 이 리소스는 필터링하지 않고 지침별로 그룹화된 모든 성공 기준을 제공합니다. 각 성공 기준에 대해 다음 항목이 제공됩니다.
 
