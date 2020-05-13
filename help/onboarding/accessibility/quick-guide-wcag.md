@@ -2,10 +2,10 @@
 title: WCAG 2.1에 대한 빠른 안내서
 seo-title: WCAG 2.1에 대한 빠른 안내서
 translation-type: tm+mt
-source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 91%
+source-wordcount: '1758'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 
 >[!NOTE]
 > 
-> WCAG 2.1은 이전 버전인 2008년의 WCAG 2.0을 업데이트합니다. [WCAG 2.1 - WCAG 2.0과의 비교](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)를 참조하십시오.
+> WCAG 2.1은 2008년부터 이전 버전 WCAG 2.0을 업데이트합니다. [WCAG 2.1 - WCAG 2.0과의 비교](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)를 참조하십시오.
 
 >[!NOTE]
 > 
@@ -36,24 +36,18 @@ Additionally, WCAG 2.1 can result in advantages for other beneficiaries, includi
 
 WCAG 2.1의 목적은 다음과 같은 지침을 제공하는 것입니다.
 
-* **기술과 관계없는 지침:** 다시 말해, HTML뿐만 아니라 다양한 웹 컨텐츠 형식에 적용할 수 있는 지침입니다. 따라서 WCAG 2.1은 PDF, Flash, JavaScript 및 기타 최신 및 미래 웹 기술에 의해 생성되거나 제공된 컨텐츠를 다룰 수 있습니다. <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+* **기술과 관계없는 지침:** 다시 말해, HTML뿐만 아니라 다양한 웹 컨텐츠 형식에 적용할 수 있는 지침입니다. 따라서 WCAG 2.1은 PDF, Flash, JavaScript 및 기타 최신 및 미래 웹 기술에 의해 생성되거나 제공된 컨텐츠를 다룰 수 있습니다.
 
-* **테스트 가능한 지침:**&#x200B;각 지침이 액세스 가능성 전문가 그룹이 지침이 충족되었다는 것에 일반적으로 동의할 수 있도록 객관적으로 테스트할 수 있는 방식으로 작성됩니다. 액세스 가능성 지침의 어려운 점 중 하나는 일부 지침은 기술적으로 테스트 가능하지만, 다른 지침은 지침이 제대로 이행되었는지 사람이 직접 판단해야 한다는 것입니다. <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+* **테스트 가능한 지침:**&#x200B;각 지침이 액세스 가능성 전문가 그룹이 지침이 충족되었다는 것에 일반적으로 동의할 수 있도록 객관적으로 테스트할 수 있는 방식으로 작성됩니다. 액세스 가능성 지침의 어려운 점 중 하나는 일부 지침은 기술적으로 테스트 가능하지만, 다른 지침은 지침이 제대로 이행되었는지 사람이 직접 판단해야 한다는 것입니다.
 
-* **우선 순위가 지정되고 상황에 따른 구현을 지원하는 지침:**
-   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+* 우선 **순위와 컨텍스트 기반 구현 지원:**
+WCAG 2.1 지침에는 장애가 있는 특정 사용자 그룹에 대한 지침을 따르지 않을 가능성이 있는 영향과 관련하여 우선 순위가 지정됩니다. 이를 통해 작성자는 특정 상황에 가장 중요한 지침에 대해 현명한 결정을 내릴 수 있습니다. 또한 지원되는 *접근성* 개념을 도입했습니다. 이를 통해 작성자는 완벽한 액세서빌러티 지원이 없을 수 있는 웹 기술을 가장 효과적으로 사용하는 방법을 결정하거나 액세스 가능성 기능을 활용하려면 특정 보조 기술 및/또는 브라우저를 사용해야 할 수도 있습니다.
 
 이러한 목적은 WCAG 2.1의 구조에 상당한 영향을 주었습니다.
 
 >[!NOTE]
 >
 >모든 가능한 장애나 유형의 사람을 만족시키는 웹 사이트를 만들 수는 없습니다. WCAG 2.1의 목적은 웹 작성자가 특정 조건 및 온당한 범위 내에서 최대한 액세스할 수 있는 사이트를 만들 수 있도록 지원하는 것입니다.
-
-<!--
->[!NOTE]
->
->If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
--->
 
 ## 구조 {#structure}
 
@@ -113,7 +107,7 @@ WCAG 2.1에 대한 기법은 [WCAG 2.1용 기법](https://www.w3.org/WAI/WCAG21/
 * 컬렉션 사용(기법은 일반적이거나 HTML, CSS 또는 클라이언트측 스크립팅과 같은 특정 기술 또는 형식과 관련될 수 있음), 또는
 * 관련 성공 기준 사용. 기법은 두 개 이상의 성공 기준에 적용될 수 있습니다.
 
-각 기법에는 해당 컬렉션과 관련된 고유한 숫자가 있습니다. 예를 들어 ARIA 기법 중 하나는 *기법 ARIA2: &quot;필수&quot; 속성을 사용하여 필수 필드 식별*&#x200B;입니다.
+각 기법에는 해당 컬렉션과 관련된 고유한 숫자가 있습니다. For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 기법은 충분하거나, 도움이 되거나 실패할 수 있습니다.
 
