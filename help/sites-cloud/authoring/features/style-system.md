@@ -1,15 +1,18 @@
 ---
 title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
+workflow-type: tm+mt
+source-wordcount: '1310'
+ht-degree: 70%
 
 ---
 
 
-# 스타일 시스템 {#style-system}
+# 스타일 시스템{#style-system}
 
-스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
+스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 구성 요소의 시각적 변형으로 구성 요소를 보다 유연하게 만들 수 있습니다.
 
 따라서 각 스타일에 대해 사용자 지정 구성 요소를 개발하거나 이러한 스타일 기능을 사용하도록 구성 요소 대화 상자를 사용자 지정할 필요가 없습니다. 또한 AEM 백엔드 개발 없이 컨텐츠 작성자의 요구에 맞게 빠르고 쉽게 조정될 수 있는 재사용 가능한 구성 요소가 생성되게 됩니다.
 
@@ -19,7 +22,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 마찬가지로 컨텐츠 작성자는 컨텐츠를 구성하고 배열해야 할 뿐만 아니라 시각적으로 표시되는 방법도 선택해야 합니다.
 
-스타일 시스템은 템플릿 작성자 및 컨텐츠 작성자 요구 사항을 둘 다 충족할 수 있는 통합된 솔루션을 제공합니다.
+스타일 시스템은 템플릿 작성자의 요구 사항과 컨텐츠 작성자의 요구 사항을 모두 충족하는 통합 솔루션을 제공합니다.
 
 * 템플릿 작성자는 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다.
 * 그러면 컨텐츠 작성자가 페이지에서 구성 요소를 편집할 때 해당 스타일을 적용하기 위해 드롭다운에서 이러한 클래스를 선택할 수 있습니다.
@@ -28,14 +31,20 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 개요 {#overview}
 
-스타일 시스템을 사용할 경우 일반적으로 다음 양식이 사용됩니다.
+스타일 시스템을 사용하면 일반적으로 다음 양식이 사용됩니다.
 
 1. 웹 디자이너는 구성 요소의 다른 시각적 변형을 만듭니다.
+
 1. HTML 개발자에게는 구현을 위해 구성 요소의 HTML 출력과 원하는 시각적 변형이 제공됩니다.
+
 1. HTML 개발자는 각 시각적 변형에 해당하며 구성 요소를 래핑하는 요소에 삽입해야 하는 CSS 클래스를 정의합니다.
+
 1. HTML 개발자는 정의된 대로 표시되도록 각 시각적 변형에 해당하는 CSS 코드(및 선택적으로 JS 코드)를 구현합니다.
+
 1. AEM 개발자는 제공된 CSS(및 선택적 JS)를 클라이언트 라이브러리에 배치하고 배포합니다. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+
 1. AEM 개발자 또는 템플릿 작성자는 페이지 템플릿을 구성하고, 스타일이 지정된 각 구성 요소의 정책을 편집하며, 정의된 CSS 클래스를 추가하고, 각 스타일에 대해 사용자에게 익숙한 이름을 지정하고, 결합할 수 있는 스타일을 지정합니다.
+
 1. 그러면 AEM 페이지 작성자는 구성 요소 도구 모음의 스타일 메뉴를 통해 페이지 편집기에서 디자인된 스타일을 선택할 수 있습니다.
 
 AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 CSS 및 Javascript의 모든 개발을 AEM 없이도 수행할 수 있습니다.
@@ -44,13 +53,15 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 다음 다이어그램은 스타일 시스템의 아키텍처를 보여 줍니다.
 
-![스타일 시스템 아키텍처](/help/sites-cloud/authoring/assets/style-system-architecture.png)
+![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
 ## 사용 {#use}
 
-이 기능을 이해하기 위해 구성 요소에 대해 스타일을 만들어야 합니다. 다음의 [컨텐츠 작성자](#as-a-content-author) 섹션과 [템플릿 작성자](#as-a-template-author) 섹션에서는 구성 요소에 이미 스타일이 구성되어 있다고 가정할 때 스타일 시스템을 사용하여 스타일 시스템의 기능을 사용하는 방법에 대해 설명합니다.
+이 기능을 보여주기 위해 핵심 구성 요소의 [제목 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2) 의 구현을 예로 사용할 것입니다.
 
-사용자 고유의 구성 요소에 대해 스타일 시스템을 사용하려면 다음을 수행하십시오.
+The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
+
+자신만의 구성 요소에 스타일 시스템을 사용하려면 다음을 수행합니다.
 
 1. [개요](#overview) 섹션에서 설명한 대로 CSS를 클라이언트 라이브러리로 설치합니다.
 1. [템플릿 작성자](#as-a-template-author) 섹션에 설명된 대로 컨텐츠 작성자가 사용할 수 있도록 하려는 CSS 클래스를 구성합니다.
@@ -58,32 +69,32 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ### 컨텐츠 작성자 {#as-a-content-author}
 
-1. 스타일이 구성된 구성 요소가 있는 페이지를 편집합니다.
-1. 여기의 예로서 **목록** 구성 요소와 같이 스타일이 구성된 구성 요소를 선택합니다.
+1. WKND 프로젝트를 설치한 후 에서 WKND의 영어 마스터 홈 페이지로 이동하여 페이지 `http://<host>:<port>/sites.html/content/wknd/language-masters/en` 를 편집합니다.
+1. 페이지 **에서** 더 아래로 제목 구성 요소 선택
 
-   ![작성 스타일](/help/sites-cloud/authoring/assets/style-system-author.png)
+   ![작성자를 위한 스타일 시스템](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
 1. **목록** 구성 요소의 도구 모음에서 **스타일** 단추를 탭하거나 클릭하여 스타일 메뉴를 열고 구성 요소의 모양을 변경합니다.
 
-   ![선택하여 스타일 작성](/help/sites-cloud/authoring/assets/style-system-author-select.png)
+   ![스타일 선택](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
    >[!NOTE]
    >
-   >이 예제에서 **레이아웃** 스타일들(**블록** 및 **그리드**)는 함께 사용할 수 없지만, **표시** 옵션들(**이미지** 또는 **날짜**)는 함께 결합할 수 있습니다. 이 내용은 ](#as-a-template-author)템플릿 작성자로서 템플릿에 구성[할 수 있습니다.
+   >이 예에서, 색상 **스타일(** Black **** Gray **및 GrayExclusive)는**&#x200B;반면 StyleOptions(Allies Align WhiteAlign RightAlign And Mini Spacing)는 상호 배타적인 **반면 Briey**&#x200B;및 Gray는 ****************&#x200B;배타적인으로, Albeshl(Alk 및 AllikAlign Align Allik 및 MiniSpacing을 조합할 수 있습니다. 이 내용은 ](#as-a-template-author)템플릿 작성자로서 템플릿에 구성[할 수 있습니다.
 
 ### 템플릿 작성자 {#as-a-template-author}
 
-1. 스타일을 구성할 컨텐츠 페이지를 편집하는 동안 **페이지 정보 -> 템플릿 편집**&#x200B;을 통해 페이지 템플릿을 편집합니다.
+1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
 
-   ![템플릿 편집](/help/sites-cloud/authoring/assets/style-system-template.png)
+   ![템플릿 편집](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
-1. 구성 요소의 **정책** 단추를 탭하거나 클릭하여 **목록** 구성 요소와 같은 스타일을 구성할 구성 요소의 정책을 편집합니다.
+1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
 
-   ![템플릿 구성 요소 정책](/help/sites-cloud/authoring/assets/style-system-template-policy.png)
+   ![정책 편집](/help/sites-cloud/authoring/assets/style-system-edit-policy.png)
 
 1. 속성의 스타일 탭에서 스타일이 구성된 방식을 확인할 수 있습니다.
 
-   ![속성 창의 스타일 탭](/help/sites-cloud/authoring/assets/style-system-template-styles.png)
+   ![속성 편집](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
    * **그룹 이름:** 구성 요소의 스타일을 구성할 때 컨텐츠 작성자에게 표시될 스타일을 스타일 메뉴에서 함께 그룹화할 수 있습니다.
    * **스타일을 결합할 수 있음:** 해당 그룹 내의 여러 스타일을 은 한꺼번에 선택할 수 있습니다.
@@ -93,22 +104,37 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 >[!CAUTION]
 >
->구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(필요한 Javascript 포함)는 클라이언트 라이브러리로 배포해야 적용됩니다. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(필요한 Javascript 포함)는 클라이언트 라이브러리로 배포해야 적용됩니다.
+
+<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
 
 ## 설정 {#setup}
 
->[!NOTE]
->
->코어 구성 요소의 버전 2는 추가 구성 없이 스타일 시스템을 활용하도록 완전히 활성화됩니다.
->
->다음 단계에 따라 사용자 지정 구성 요소에 대해 스타일 시스템을 활성화하거나 해당 기능을 활용하도록 버전 1 코어 구성 요소를 확장합니다.
+핵심 구성 요소 버전 2 이상은 스타일 시스템을 활용할 수 있도록 완벽하게 활성화되며 추가 구성이 필요 없습니다.
 
-구성 요소가 AEM의 스타일 시스템을 사용하고 디자인 대화 상자에 스타일 탭을 표시하도록 하려면 구성 요소 개발자가 다음 설정을 있는 제품의 해당 탭을 구성 요소에 포함해야 합니다.
+다음 단계는 사용자 정의 구성 요소에 대해 스타일 시스템을 활성화하거나 편집 대화 상자에서 스타일 탭(선택 사항)을 [활성화하기만 하면 됩니다.](#enable-styles-tab-edit)
+
+### 디자인 대화 상자에서 스타일 탭 사용 {#enable-styles-tab-design}
+
+구성 요소가 AEM의 스타일 시스템에서 작동하고 디자인 대화 상자에 스타일 탭을 표시하려면 구성 요소 개발자가 구성 요소에 다음 설정이 있는 스타일 탭을 포함해야 합니다.
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 구성 요소가 구성되면 페이지 작성자가 구성한 스타일이 AEM을 통해 데코레이션 요소에 자동으로 삽입됩니다. AEM은 이러한 스타일을 편집 가능한 모든 구성 요소에 자동으로 래핑합니다. 구성 요소 자체는 이를 위해 어떤 작업도 수행할 필요가 없습니다.
+
+### 편집 대화 상자에서 스타일 탭 사용 {#enable-styles-tab-edit}
+
+편집 대화 상자의 스타일 탭(선택 사항)도 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 반드시 필요한 것은 아니지만 내용 작성자가 스타일을 설정할 수 있는 선택 가능한 대체 인터페이스입니다.
+
+편집 대화 상자 탭은 디자인 대화 상자 탭과 유사한 방식으로 포함될 수 있습니다.
+
+* `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
+* `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>
+>편집 대화 상자의 스타일 탭은 기본적으로 활성화되지 않습니다.
 
 ### 요소 이름을 갖는 스타일 {#styles-with-element-names}
 
@@ -116,7 +142,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 이 속성은 `cq:Component` 노드에서 설정됩니다. 예:
 
-* `/apps/wknd/components/content/contentfragment@cq:styleElements=[div,section,span]`
+* `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 
 >[!CAUTION]
 >
