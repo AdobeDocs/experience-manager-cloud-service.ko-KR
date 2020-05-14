@@ -2,9 +2,9 @@
 title: WCAG 2.1에 대한 빠른 안내서
 seo-title: WCAG 2.1에 대한 빠른 안내서
 translation-type: tm+mt
-source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1774'
 ht-degree: 84%
 
 ---
@@ -68,7 +68,7 @@ WCAG 2.1은 **POUR**&#x200B;이라는 약어로 지칭되는 액세스 가능한
 * 각 지침이 하나 이상의 **성공 기준**&#x200B;으로 구성되어 있습니다.
 * 성공 기준은 주어진 웹 페이지에 대해 `True` 또는 `False`인 구문으로 작성됩니다.
 * 성공 기준에는 어느 하나/또는 선택 사항을 포함하거나, 성공 기준을 충족할 필요가 없는 상황과 같은 예외를 포함할 수 있습니다.
-* 성공 기준은 상위 지침 및 원칙에 따라 1.1.1부터 4.1.1까지 번호가 매겨져 있습니다. 또한 이 성공 기준에는 쉽게 참조할 수 있도록 해당 기준의 의도를 요약하는 짧은 이름이 있습니다. 예를 들어 성공 기준 1.1.1은 텍스트가 아닌 컨텐츠입니다.
+* 성공 기준은 상위 지침 및 원칙에 따라 1.1.1부터 4.1.1까지 번호가 매겨져 있습니다. 또한 이 성공 기준에는 쉽게 참조할 수 있도록 해당 기준의 의도를 요약하는 짧은 이름이 있습니다. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * 성공 기준에는 관련 **기법** 목록이 포함되어 있습니다(아래에 자세히 설명됨).
 
 ## 지원 리소스 {#supporting-resources}
@@ -90,9 +90,11 @@ WCAG 2.1 자체는 안정적인 문서이며 변경되지 않지만 이러한 �
 
 ### WCAG 2.1의 새로운 기능 {#what-is-new}
 
-[WCAG 2.1의 새로운](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 기능은 WCAG 2.0과 WCAG 2.1 간의 델타에 대한 중요한 정보를 제공합니다.
+지침은 WCAG 2.1의 새로운 기능에 대한 정보를 제공합니다.
 
-[WCAG 2.0 및 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 섹션에서는 해당 관계의 상태를 더욱 명확하게 합니다.
+* [WCAG 2.1의 새로운](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 기능은 WCAG 2.0과 WCAG 2.1 간의 델타에 대한 중요한 정보를 제공합니다.
+
+* [WCAG 2.0 및 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 섹션에서는 해당 관계의 상태를 더욱 명확하게 합니다.
 
 ### WCAG 2.1 기법 {#techniques-for-wcag}
 
