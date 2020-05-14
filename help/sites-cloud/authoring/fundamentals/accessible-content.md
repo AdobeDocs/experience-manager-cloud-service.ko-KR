@@ -2,10 +2,10 @@
 title: 클라우드 서비스로 Adobe Experience Manager에 대한 액세스 가능한 컨텐츠 만들기(WCAG 2.1 준수)
 description: 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련 도움말
 translation-type: tm+mt
-source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '13874'
-ht-degree: 51%
+source-wordcount: '13873'
+ht-degree: 50%
 
 ---
 
@@ -38,14 +38,14 @@ WCAG( [Web Content Accessibility Guidelines) 2.1](https://www.w3.org/TR/WCAG/)(W
 
 사이트를 만들 때에는 사이트가 따라야 할 전반적인 수준을 결정해야 합니다.
 
-다음 섹션에서는 레벨 A 및 레벨 AA [적합성 수준](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)에 대한 관련 성공 기준이 있는 [WCAG 2.1 지침](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1)에 대해 설명합니다. 
+The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
 >이 문서에서는
 >
->* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
+>* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
 
 
 ## 원칙 1: 인지 가능 {#principle-perceivable}
@@ -133,7 +133,7 @@ W3C에서는 다음과 같이 많은 방법을 제안합니다. 이러한 각각
 
 [지침 1.2 시간 기반 미디어: 시간 기반 미디어에 대한 대체 요소를 제공합니다.](https://www.w3.org/TR/WCAG/#time-based-media)
 
-여기서는 *시간 기반*&#x200B;의 웹 컨텐츠를 다룹니다. 사용자가 재생할 수 있고(예: 비디오, 오디오 및 애니메이션 컨텐츠) 사전 녹화된 스트림이나 라이브 스트림일 수 있는 컨텐츠가 여기에 포함됩니다.
+This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
 
 ### Audio-only and Video-only (Prerecorded) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -157,10 +157,10 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 
 #### How to Meet - Audio-only and Video-only (Prerecorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* 컨텐츠가 비디오가 없는 사전 녹음된 오디오인 경우(예: 팟캐스트)
+* 컨텐츠가 비디오가 없는 사전 녹음된 오디오인 경우(예: 팟캐스트):
    * 컨텐츠의 바로 앞 또는 뒤의 링크를 오디오 컨텐츠의 텍스트 스크립트에 연결합니다.
 텍스트 스크립트는 모든 음성 컨텐츠 및 중요한 비음성 컨텐츠에 상당하는 텍스트가 있고 말하고 있는 사람, 설정 설명, 음성 표현 및 다른 중요한 오디오의 설명에 대한 명시가 있는 HTML 페이지여야 합니다.
-* 컨텐츠가 오디오가 없는 애니메이션 또는 사전 녹화된 비디오인 경우
+* 컨텐츠가 오디오가 없는 애니메이션 또는 사전 녹화된 비디오인 경우:
    * 컨텐츠의 바로 앞 또는 뒤의 링크를 비디오가 제공하는 정보에 상응하는 텍스트 설명에 연결합니다.
    * 또는 MP3와 같이 일반적으로 사용되는 오디오 형식의 상응하는 오디오 설명에 연결합니다.
 
@@ -200,13 +200,13 @@ AEM 웹 페이지에 멀티미디어를 삽입하는 방법은 이미지를 삽�
 
 캡션을 볼지 여부를 사용자가 선택할 수 있도록, 가능할 때마다 닫힘 캡션 기능을 사용하십시오.
 
-닫힘 캡션의 경우, 비디오 파일과 함께 동기화된 캡션 파일을 적절한 형식(예: [SMIL](https://www.w3.org/AudioVideo/))으로 만들어 제공해야 할 것입니다(이렇게 하는 방법에 대한 자세한 설명은 이 안내서의 범위를 벗어나지만, [추가 정보 - 캡션(사전 기록된)(1.2.2)](#more-information-captions-pre-recorded)에 일부 자습서 링크를 제공). 사용자에게 비디오에 캡션을 사용할 수 있다는 것을 알리기 위해 메모를 제공하거나 비디오 플레이어에서 캡션 기능을 활성화해야 합니다.
+For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Prerecorded) (1.2.2)](#more-information-captions-prerecorded). 사용자에게 비디오에 캡션을 사용할 수 있다는 것을 알리기 위해 메모를 제공하거나 비디오 플레이어에서 캡션 기능을 활성화해야 합니다.
 
 열림 캡션을 사용해야 하는 경우 텍스트를 비디오 트랙에 포함하십시오. 비디오에 제목을 오버레이할 수 있도록 해주는 비디오 편집 애플리케이션을 사용하면 됩니다.
 
-#### More Information - Captions (PreRecorded) (1.2.2) {#more-information-captions-prerecorded}
+#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [성공 기준 이해 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
+* [성공 기준 이해 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [성공 기준을 충족하는 방법 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -240,9 +240,12 @@ AEM 웹 페이지에 멀티미디어를 삽입하는 방법은 이미지를 삽�
 
 #### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [성공 기준 이해 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html):
+* [성공 기준 이해 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [성공 기준을 충족하는 방법 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
+
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
 
 ### 캡션(라이브) (1.2.4)  {#captions-live}
 
@@ -252,7 +255,7 @@ AEM 웹 페이지에 멀티미디어를 삽입하는 방법은 이미지를 삽�
 
 #### 목적 - 캡션(라이브)(1.2.4) {#purpose-captions-live}
 
-이 성공 기준이 웹캐스트와 같은 라이브 프레젠테이션을 다루는 경우를 제외하면 이 성공 기준은 소리를 아예 들을 수 없거나 청각 장애가 있는 사람이 경험하는 액세서빌러티 장벽을 해결한다는 점에서 [캡션(사전 녹음된)](#captions-pre-recorded)과 동일합니다.
+This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
 #### 충족하는 방법 - 캡션(라이브)(1.2.4) {#how-to-meet-captions-live}
 
@@ -363,44 +366,46 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미있게 의미 �
       >이러한 요소는 효과가 동일하지만 `<strong>`과 `<em>`이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 `<strong>`과 `<em>`(`<b>`와 `<i>` 대신)을 사용하도록 RTE를 구성할 수 있습니다.
 
 
-* **복잡한 데이터 표**: 때에 따라 두 개 이상의 헤더 수준이 있는 복잡한 표가 있을 때 기본 표 속성이 모든 필요한 구조적 정보를 제공하기에 충분하지 않을 수 있습니다. 이러한 종류의 복잡한 표의 경우, **header** 및 **id** 특성을 사용하여 헤더와 헤더 관련 셀 간에 직접적인 관계를 만들어야 합니다. 예를 들어, 아래 표에서 headers와 id는 보조 기술 사용자를 위해 프로그램 방식으로 연계되도록 일치됩니다.
+* **복잡한 데이터 표**: 때에 따라 두 개 이상의 헤더 수준이 있는 복잡한 표가 있을 때 기본 표 속성이 모든 필요한 구조적 정보를 제공하기에 충분하지 않을 수 있습니다. 이러한 종류의 복잡한 표의 경우, **header** 및 **id** 특성을 사용하여 헤더와 헤더 관련 셀 간에 직접적인 관계를 만들어야 합니다.
 
    >[!NOTE]
    >
    >기본적으로 제공되는 설치에서는 id 속성을 사용할 수 없습니다. RTE에서 HTML 규칙과 직렬 변환기를 구성하여 사용하도록 만들 수 있습니다.
 
-```xml
- <table>
-    <tr>
-      <th rowspan="2" id="h">Homework</th>
-      <th colspan="3" id="e">Exams</th>
-      <th colspan="3" id="p">Projects</th>
-    </tr>
-    <tr>
-      <th id="e1" headers="e">1</th>
-      <th id="e2" headers="e">2</th>
-      <th id="ef" headers="e">Final</th>
-      <th id="p1" headers="p">1</th>
-      <th id="p2" headers="p">2</th>
-      <th id="pf" headers="p">Final</th>
-    </tr>
-    <tr>
-     <td headers="h">15%</td>
-     <td headers="e e1">15%</td>
-     <td headers="e e2">15%</td>
-     <td headers="e ef">20%</td>
-     <td headers="p p1">10%</td>
-     <td headers="p p2">10%</td>
-     <td headers="p pf">15%</td>
-    </tr>
-   </table>
-```
+   예를 들어, 아래 표에서 headers와 id는 보조 기술 사용자를 위해 프로그램 방식으로 연계되도록 일치됩니다.
 
-AEM에서 이를 수행하려면 소스 편집 모드를 사용하여 마크업을 직접 추가해야 합니다.
+   ```xml
+     <table>
+       <tr>
+         <th rowspan="2" id="h">Homework</th>
+         <th colspan="3" id="e">Exams</th>
+         <th colspan="3" id="p">Projects</th>
+       </tr>
+       <tr>
+         <th id="e1" headers="e">1</th>
+         <th id="e2" headers="e">2</th>
+         <th id="ef" headers="e">Final</th>
+         <th id="p1" headers="p">1</th>
+         <th id="p2" headers="p">2</th>
+         <th id="pf" headers="p">Final</th>
+       </tr>
+       <tr>
+         <td headers="h">15%</td>
+         <td headers="e e1">15%</td>
+         <td headers="e e2">15%</td>
+         <td headers="e ef">20%</td>
+         <td headers="p p1">10%</td>
+         <td headers="p p2">10%</td>
+         <td headers="p pf">15%</td>
+       </tr>
+     </table>
+   ```
 
->[!NOTE]
->
->이 기능은 표준 설치에서 바로 사용할 수는 없으므로 RTE에서 HTML 규칙과 직렬 변환기를 구성해야 합니다.
+   AEM에서 이를 수행하려면 소스 편집 모드를 사용하여 마크업을 직접 추가해야 합니다.
+
+   >[!NOTE]
+   >
+   >이 기능은 표준 설치에서 바로 사용할 수는 없으므로 RTE에서 HTML 규칙과 직렬 변환기를 구성해야 합니다.
 
 #### 추가 정보 - 정보 및 관계(1.3.1) {#more-information-info-and-relationships}
 
@@ -495,9 +500,6 @@ AEM에서 이를 수행하려면 소스 편집 모드를 사용하여 마크업�
 * [성공 기준 이해 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [성공 기준을 충족하는 방법 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
 ### 오디오 컨트롤(1.4.2)  {#audio-control}
 
 * 성공 기준 1.4.2
@@ -562,7 +564,7 @@ AEM에서 이를 수행하려면 소스 편집 모드를 사용하여 마크업�
 
 >[!NOTE]
 >
->다른 단위로 전환하는 데 도움이 되는 방법은 다음과 같습니다.
+>다음 사이트는 다른 단위로 전환하는 데 도움이 될 수 있습니다.
 >
 >* [Px에서 Em 계산기로 - 옴니](https://www.omnicalculator.com/conversion/px-to-em)
 >* [글꼴 크기 변환: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
@@ -874,7 +876,7 @@ John Smith’s publications
 >
 >위의 코드 조각은 실례입니다. **이미지** 구성 요소를 사용하는 것이 좋습니다.
 
-추가 컨텍스트를 필요로 하지 않고 링크의 목적을 알려주는 링크 텍스트를 제공하는 것이 좋지만, 이것이 항상 가능하지는 않습니다. 컨텍스트가 없는 링크는 다음 경우에 사용할 수 있습니다. HTML 예는 [성공 기준 충족 방법 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)에서 찾을 수 있습니다.
+추가 컨텍스트를 필요로 하지 않고 링크의 목적을 식별하는 링크 텍스트를 제공하는 것이 좋지만, 이것이 항상 가능하지는 않습니다. 컨텍스트가 없는 링크는 다음 경우에 사용할 수 있습니다. HTML 예는 [성공 기준 충족 방법 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)에서 찾을 수 있습니다.
 
 * 링크 텍스트가 밀접히 관련된 링크의 일부이고 이 링크를 둘러싼 목록 항목에서 컨텍스트를 충분히 제공하는 경우
 * 링크의 목적을 *이전*(이후가 아닌) 단락 텍스트에서 명확히 식별할 수 있는 경우
