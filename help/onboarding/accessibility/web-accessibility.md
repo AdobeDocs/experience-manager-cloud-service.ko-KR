@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침
 seo-title: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침
 translation-type: tm+mt
-source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 87%
@@ -24,7 +24,7 @@ ht-degree: 87%
 
 * 템플릿 개발자도 웹 사이트 디자인을 구현할 때 이러한 문제를 알고 있어야 합니다.
 
-클라우드 서비스로서의 Adobe Experience Manager는  [World Wide Web Consortium](#world-wide-web-consortium)에서 제공하는 [지침](#wcag-accessibility-guideslines)을 따라야 합니다.
+클라우드 서비스로서의 Adobe Experience Manager는  [World Wide Web Consortium](#world-wide-web-consortium)에서 제공하는 [지침](#wcag-accessibility-guidelines)을 따라야 합니다.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ ht-degree: 87%
 
 [World Wide Web Consortium(W3C)](https://www.w3.org/)은 웹 표준 개발을 위한 국제 커뮤니티입니다. 이 커뮤니티의 [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/)에서는 [웹 컨텐츠 액세스 가능성 지침](#wcag-accessibility-guidelines)을 발행합니다.
 
-## 웹 컨텐츠 액세스 가능성 지침(WCAG) 2.1 {#wcag-accessibility-guideslines}
+## 웹 컨텐츠 액세스 가능성 지침(WCAG) 2.1 {#wcag-accessibility-guidelines}
 
 웹 디자이너와 개발자가 액세스 가능한 웹 사이트를 제작할 수 있도록 지원하기 위해 [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/)에서는 2018년 6월에 [웹 컨텐츠 액세스 가능성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG/)을 발행했습니다.
 
