@@ -3,7 +3,10 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '1870'
+ht-degree: 1%
 
 ---
 
@@ -171,3 +174,7 @@ Experience Manager에 사후 처리 워크플로우 구성을 추가하는 방�
 > AEM의 온프레미스 및 관리 서비스 배포와 달리 OSGi 웹 콘솔은 클라우드 서비스 배포에서 직접 사용할 수 없습니다.
 
 사후 처리 워크플로우에서 사용할 수 있는 표준 워크플로우 단계에 대한 자세한 내용은 개발자 참조에서 [사후 처리 워크플로우의](developer-reference-material-apis.md#post-processing-workflows-steps) 워크플로우 단계를 참조하십시오.
+
+## 모범 사례 및 제한 사항 {#best-practices-limitations-tips}
+
+* 워크플로우를 설계할 때 모든 유형의 변환에 대한 요구 사항을 고려합니다. 나중에 변환의 필요성을 예측할 수 없는 경우 워크플로우에서 변환 생성 단계를 제거합니다. 나중에 변환을 일괄 삭제할 수 없습니다. 장기 사용 후 원치 않는 변환이 많은 저장 공간을 차지할 수 있습니다 [!DNL Experience Manager]. 개별 자산의 경우 사용자 인터페이스에서 변환을 수동으로 제거할 수 있습니다. 여러 자산의 경우 특정 표현물을 삭제하도록 사용자 [!DNL Experience Manager] 지정하거나 자산을 삭제하고 다시 업로드할 수 있습니다.
