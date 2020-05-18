@@ -2,10 +2,10 @@
 title: 클라우드 서비스로 Adobe Experience Manager에 대한 액세스 가능한 컨텐츠 만들기(WCAG 2.1 준수)
 description: 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련 도움말
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 0f1ef5ab6ebc929ced669e47c8737d7401d5ea35
 workflow-type: tm+mt
-source-wordcount: '13873'
-ht-degree: 50%
+source-wordcount: '13935'
+ht-degree: 49%
 
 ---
 
@@ -70,14 +70,18 @@ The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w
 
 #### 충족 방법 - 텍스트가 아닌 컨텐츠(1.1.1) {#how-to-meet-non-text-content}
 
-정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 **대체 텍스트** 필드에서 수행할 수 있습니다.
+정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 대체 텍스트 **필드에서 수행할** 수 있습니다. 예를 들어 핵심 구성 요소 **[이미지를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->**회전판**&#x200B;이나 **Slideshow**&#x200B;처럼 기본적으로 제공되는 몇 가지 구성 요소에서는 이미지에 대체 텍스트 설명을 추가하는 수단을 제공하지 않습니다. AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt` 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조).
+>전체 구성 요소에 대해 레이블 **[필드(액세서빌러티 탭)가 있더라도 회전판](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/carousel.html)**과 같은 일부 기본**의 핵심&#x200B;**구성 요소는 개별 이미지에 대체 텍스트 설명을 추가할 수 있는 대체 텍스트**필드&#x200B;**를 제공하지**[않습니다](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** .
+>
+>AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt` 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조).
 
 <!--
->Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
 AEM을 사용하려면 기본적으로 **대체 텍스트** 필드를 채워야 합니다. If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
@@ -1191,19 +1195,21 @@ To add the span element, with an appropriate language, you can manually edit you
 
 양식을 완료하는 데 도움이 되도록 지침을 제공하는 것은 인터페이스 유용성 면에서 좋은 관행의 기본적인 부분입니다. 이렇게 하면 특히 양식의 레이아웃과 특정 양식 필드에 제공할 데이터의 종류를 이해하는 데 어려움이 있을 수 있는, 시각 또는 인지 장애가 있는 사용자에게 도움이 됩니다.
 
-AEM에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페이지에 추가할 때 기본 레이블이 추가됩니다. 이 기본 제목은 구성 요소 유형에 따라 다르며, 해당 필드에 대한 편집 대화 상자의 **제목 및 텍스트** 탭에서 원하는 제목을 추가할 수 있습니다. 레이블은 사용자가 각 양식 구성 요소와 연결된 데이터를 이해하는 데 도움이 되도록 해야 합니다.
+##### 양식
+
+In the AEM WKND demo project a default label is added when you add a form component, such as a **Text Field**, to the page. 이 기본 제목은 구성 요소 유형에 따라 다르며, 해당 필드에 대한 편집 대화 상자의 **제목 및 텍스트** 탭에서 원하는 제목을 추가할 수 있습니다. 레이블은 사용자가 각 양식 구성 요소와 연결된 데이터를 이해하는 데 도움이 되도록 해야 합니다.
 
 이 **제목** 필드는 보조 기술에 사용할 수 있는 레이블을 제공할 때 필드 요소에 사용해야 합니다. 필드의 옆에 텍스트로 레이블을 쓰는 것만으로는 충분하지 않습니다.
 
 일부 양식 구성 요소의 경우 **제목 숨기기** 확인란을 사용하여 레이블을 보이지 않게 숨길 수도 있습니다. 이런 식으로 숨겨진 레이블은 화면에는 표시되지 않지만 여전히 보조 기술에서 사용할 수 있습니다. 어떤 사용자는 화면의 매우 작은 부분(한 번에 한 필드)을 보고 있어서 필드를 올바르게 식별하기 위해 레이블을 필요로 할 수 있으므로 가능하다면 시각적 레이블을 포함하는 것이 최상인 경우 이 방법이 좋은 접근 방법일 수 있습니다.
 
-#### 이미지 단추 {#image-buttons}
+###### 이미지 단추 {#image-buttons}
 
-이미지 단추를 사용하면(예: **이미지 단추** 구성 요소) 편집 대화 상자의 **제목 및 텍스트** 탭에 있는 **제목** 필드에서 실제로 레이블이 아니라 이미지에 대한 대체 텍스트를 제공합니다. 따라서 아래 예에는 `Submit`이라는 텍스트가 있는 이미지에 편집 대화 상자의 `Submit`제목 필드를 사용하여 추가된 ****&#x200B;이라는 대체 텍스트가 있습니다.
+Where image buttons are used (for example, the **Image Button** component of the WKND project) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. 따라서 아래 예에는 `Submit`이라는 텍스트가 있는 이미지에 편집 대화 상자의 `Submit`제목 필드를 사용하여 추가된 ****&#x200B;이라는 대체 텍스트가 있습니다.
 
-#### 양식 필드 그룹 {#groups-of-form-fields}
+###### 양식 필드 그룹 {#groups-of-form-fields}
 
-**라디오 그룹**&#x200B;과 같은 관련 컨트롤 그룹이 있으면 개별 컨트롤 뿐만 아니라 그룹에도 제목이 필요할 수 있습니다. 라디오 단추(**항목**)가 생성될 때 개별 제목이 지정되는 반면, AEM에서 라디오 단추 집합을 추가하면 **제목** 필드가 이 그룹 제목을 제공합니다.
+In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. 라디오 단추(**항목**)가 생성될 때 개별 제목이 지정되는 반면, AEM에서 라디오 단추 집합을 추가하면 **제목** 필드가 이 그룹 제목을 제공합니다.
 
 하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성** 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조).
 
@@ -1211,7 +1217,7 @@ AEM에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페이�
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-#### 양식에 대한 추가 고려 사항 {#additional-considerations-for-forms}
+###### 양식에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 
 데이터를 특정 형식으로 입력해야 하는 경우 레이블 텍스트에서 이를 분명히 하십시오. 예를 들어, 날짜를 `DD-MM-YYYY` 형식으로 입력해야 하는 경우, 특히 레이블 일부로 이 형식을 표현하십시오. 이는 스크린 리더 사용자가 해당 필드를 만나면 형식에 대한 추가 정보와 함께 레이블을 자동으로 알림을 의미합니다.
 
