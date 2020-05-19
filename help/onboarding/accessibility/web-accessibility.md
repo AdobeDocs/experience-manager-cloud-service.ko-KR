@@ -1,11 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침
-seo-title: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침
+description: 클라우드 서비스로서의 Adobe Experience Manager 소개 및 웹 접근성 지침
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 87%
+source-wordcount: '385'
+ht-degree: 83%
 
 ---
 
