@@ -1,10 +1,10 @@
 ---
 title: 클라우드 서비스로 Adobe Experience Manager에 대한 액세스 가능한 컨텐츠 만들기(WCAG 2.1 준수)
-description: 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련 도움말
+description: 장애가 있는 사용자가 액세스하여 사용할 수 있는 웹 컨텐츠를 만드는 데 도움이 되는 AEM을 클라우드 서비스로 사용
 translation-type: tm+mt
-source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '13936'
+source-wordcount: '13943'
 ht-degree: 49%
 
 ---
