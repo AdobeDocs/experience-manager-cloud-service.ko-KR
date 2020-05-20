@@ -2,9 +2,9 @@
 title: 환경 관리 - 클라우드 서비스
 description: 환경 관리 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
 
    ![](assets/no-environments.png)
 
-   >[!메모)
+   >[!NOTE]
    >권한 **부족 또는 계약될 수 있는 사항에 따라 환경** 추가 옵션이 비활성화됩니다.
 
 1. 환경 **추가** 대화 상자가 나타납니다.사용자는 **환경 유형** 및 **환경 이름** 및 환경 설명 **(특정 테넌트에 사용 가능한 항목 범위 내에 환경을 만드는 사용자의 목표에 따라)과 같은 세부 사항을 제출해야 합니다** .
