@@ -2,9 +2,9 @@
 title: 샌드박스 프로그램 - 클라우드 서비스
 description: 샌드박스 프로그램 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 샌드박스 프로그램에는 사이트 및 에셋이 포함되며 샘플 코드, 개발 환경 및 비프로덕션 파이프라인이 포함된 Git 분기로 자동 채워집니다.
 
-프로그램 유형에 대한 자세한 내용은 프로그램 및 프로그램 유형 [이해를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html).
+프로그램 [유형에 대한 자세한 내용은 프로그램 및 프로그램 유형](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) 이해를 참조하십시오.
 
 ### 샌드박스 프로그램의 속성 {#attributes-sandbox}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 프로덕션-스테이지 환경 세트는 사용자가 프로덕션 파이프라인을 설정할 준비가 되면 샌드박스 프로그램에 수동으로 추가할 수 있습니다.
 
-환경을 수동으로 만드는 방법에 대해 자세히 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
+수동으로 환경을 만드는 방법에 대해 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
 
 ### 샌드박스 환경 삭제  {#deleting-sandbox-environments}
 
@@ -86,9 +86,17 @@ ht-degree: 0%
 
 1. 개발자 **콘솔로 이동합니다**.
 환경 [카드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) 에서 **개발자 콘솔에** 액세스하는 방법을 **알아보려면 개발자 콘솔** 액세스를참조하십시오.
-1. 아래 그림에 표시된 대로 Hibernate를 클릭합니다.
+
+1. 아래 그림에 표시된 대로 Hibernate를 클릭합니다
+
+   ![](assets/hibernate-1.png)
 1. Hibernate **를** 클릭하여 단계를 확인합니다.
-1. 최대 절전 모드에 성공하면 다음 화면이 나타납니다.
+
+   ![](assets/hibernate-2.png)
+
+1. 최대 절전 모드에 성공하면 **개발자 콘솔** 화면에 환경에 대한 최대 절전 모드 프로세스 완료 알림이 표시됩니다.
+
+   ![](assets/hibernate-4.png)
 
 #### 동면기 환경 액세스 {#accessing-hibernated-environment}
 
