@@ -2,7 +2,10 @@
 sub-product: 클라우드 서비스로서의 AEM에 온보딩
 user-guide-title: 클라우드 서비스로서의 AEM에 온보딩
 translation-type: tm+mt
-source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 88%
 
 ---
 
@@ -17,9 +20,11 @@ source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
    + [소스 코드 저장소](what-is-required/source-code-repository.md)
 + 클라우드에서 AEM에 액세스 {#getting-access}
    + [클라우드 서비스로서의 Experience Manager 액세스](getting-access-to-aem-in-cloud/navigation.md)
-   + [프로그램 액세스](getting-access-to-aem-in-cloud/first-time-login.md)
-   + [프로그램 및 프로그램 유형 이해](getting-access-to-aem-in-cloud/understand-program-types.md)
-   + [프로그램 만들기](getting-access-to-aem-in-cloud/creating-a-program.md)
+   + 클라우드 서비스 프로그램 {#cloud-service-programs}
+      + [프로그램 액세스](getting-access-to-aem-in-cloud/first-time-login.md)
+      + [프로그램 및 프로그램 유형 이해](getting-access-to-aem-in-cloud/understand-program-types.md)
+      + [프로그램 만들기](getting-access-to-aem-in-cloud/creating-a-program.md)
+      + [샌드박스 프로그램](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + [AEM 애플리케이션 프로젝트 만들기](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
 + 데이터 개인 정보 보호 및 보호 준비 완료 {#data-privacy}
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
