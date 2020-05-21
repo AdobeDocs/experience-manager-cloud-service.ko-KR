@@ -2,9 +2,9 @@
 title: 샌드박스 프로그램 - 클라우드 서비스
 description: 샌드박스 프로그램 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 샌드박스는 일반적으로 교육, 실행 데모, 지원 또는 POC(Proof of of of Concept)의 목적을 위해 만들어집니다. 그들은 라이브 트래픽을 운반하기 위한 것이 아니다.
 
-샌드박스 프로그램에는 사이트 및 에셋이 포함되며 샘플 코드, 개발 환경 및 비프로덕션 파이프라인이 포함된 Git 분기로 자동 채워집니다.
+샌드박스 프로그램에는 사이트 및 에셋이 포함되며 Git 저장소, 개발 환경 및 비프로덕션 파이프라인으로 자동 채워집니다.  Git 리포지토리는 AEM 프로젝트 원형을 기반으로 하는 샘플 프로젝트로 채워집니다.
 
 프로그램 [유형에 대한 자세한 내용은 프로그램 및 프로그램 유형](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) 이해를 참조하십시오.
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 프로그램 생성 마법사를 사용하면 샌드박스 프로그램을 만들 수 있습니다.
 
-샌드박스 프로그램을 만드는 방법에 대해 알아보려면 를 참조하십시오.
+샌드박스 프로그램 생성 방법에 대해 알아보려면 [샌드박스 프로그램](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) 만들기를 참조하십시오.
 
 ### 샌드박스 환경 만들기 {#creating-sandbox-environments}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 프로덕션-스테이지 환경 세트는 사용자가 프로덕션 파이프라인을 설정할 준비가 되면 샌드박스 프로그램에 수동으로 추가할 수 있습니다.
 
-환경을 수동으로 만드는 방법에 대해 자세히 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
+수동으로 환경을 만드는 방법에 대해 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
 
 ### 샌드박스 환경 삭제 {#deleting-sandbox-environments}
 
@@ -74,6 +74,9 @@ ht-degree: 0%
 * **자동** 샌드박스 프로그램 환경은 8시간 동안 활동이 없는 경우 자동으로 동면됩니다. 즉, 작성자 및 게시 서비스는 요청을 받지 않습니다.
 
 * **수동**: 사용자는 샌드박스 프로그램 환경에 수동으로 절전 모드를 적용할 수 있지만, 일정 기간(8시간)이 없는 경우 자동으로 최대 절전 모드가 발생하므로 그럴 필요는 없습니다.
+
+>[!CAUTION]
+>최신 릴리스에서는 Cloud Manager의 개발자 콘솔에 연결해도 샌드박스 프로그램 환경의 최대 절전 모드를 수행할 수 없습니다.
 
 #### 수동 최대 절전 모드 사용 {#using-manual-hibernation}
 
@@ -149,6 +152,17 @@ Cloud **Manager - 개발자 역할을** 사용하는 사용자는 **개발자 �
 >[!NOTE]
 > Cloud Manager의 많은 기능을 사용하려면 특정 권한이 필요합니다. 특정 기능의 가용성을 제어하는 사용자의 역할에 대한 자세한 내용은 사용자 및 역할 추가[를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
+#### 중요 고려 사항 {#important-considerations}
+
+최대 절전 모드 및 최대 절전 모드 해제 환경과 관련된 주요 고려 사항은 다음과 같습니다.
+
+* 사용자는 파이프라인을 사용하여 최대 절전 모드 환경에 사용자 정의 코드를 배포할 수 있습니다. 이 환경은 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 절전 모드이며 새로운 코드는 최대 최대 절전 모드일 때 최대 절전 모드일 수 있습니다.
+
+* AEM 업그레이드는 고객이 Cloud Manager에서 수동으로 트리거할 수 있는 최대 절전 모드 환경에 적용할 수 있습니다. 이 환경은 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 절전 환경이다.
+
+>[!NOTE]
+>현재 Cloud Manager는 환경이 최대 절전 모드인지 여부를 표시하지 않습니다.
+
 ## 샌드박스 환경에 대한 AEM 업데이트 {#aem-updates-sandbox}
 
 자세한 내용은 [AEM 버전 업데이트를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) 참조하십시오.
@@ -158,13 +172,9 @@ Cloud **Manager - 개발자 역할을** 사용하는 사용자는 **개발자 �
 환경 [을](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) 업데이트하는 방법에 대해서는 환경 업데이트를 참조하십시오.
 
 >[!NOTE]
->수동 *업데이트 파이프라인을 시작하려면 관심* 개발 환경에 배포되는 비프로덕션 파이프라인을 구성해야 합니다.
+>* 수동 업데이트는 타깃팅된 환경에 제대로 구성된 파이프라인이 있는 경우에만 실행할 수 있습니다.
+>* 프로덕션 *또는* 스테이지 *환경* 에 대한 수동업데이트는 다른 환경을 자동으로 업데이트합니다. Production+Stage 환경 세트는 동일한 AEM 릴리스에 있어야 합니다.
 
->[!NOTE]
->프로덕션 *파이프라인을* 구성하여 Production+Stage 환경으로 수동 업데이트 파이프라인을 시작해야 합니다.
-
->[!NOTE]
->프로덕션 *또는* 스테이지 *환경* 에 대한 수동업데이트는 다른 환경을 자동으로 업데이트합니다. Production+Stage 환경 세트는 동일한 AEM 릴리스에 있어야 합니다.
 
 
 
