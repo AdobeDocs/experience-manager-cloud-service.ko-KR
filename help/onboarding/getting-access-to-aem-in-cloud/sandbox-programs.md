@@ -2,9 +2,9 @@
 title: 샌드박스 프로그램 - 클라우드 서비스
 description: 샌드박스 프로그램 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 프로그램 생성 마법사를 사용하면 샌드박스 프로그램을 만들 수 있습니다.
 
-샌드박스 프로그램을 만드는 방법에 대해 알아보려면 샌드박스 프로그램 [만들기를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program).
+샌드박스 프로그램 생성 방법에 대해 알아보려면 [샌드박스 프로그램](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) 만들기를 참조하십시오.
 
 ### 샌드박스 환경 만들기 {#creating-sandbox-environments}
 
@@ -49,9 +49,9 @@ ht-degree: 0%
 
 프로덕션-스테이지 환경 세트는 사용자가 프로덕션 파이프라인을 설정할 준비가 되면 샌드박스 프로그램에 수동으로 추가할 수 있습니다.
 
-수동으로 환경을 만드는 방법에 대해 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
+환경을 수동으로 만드는 방법에 대해 자세히 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
 
-### 샌드박스 환경 삭제  {#deleting-sandbox-environments}
+### 샌드박스 환경 삭제 {#deleting-sandbox-environments}
 
 필요한 권한을 가진 사용자는 개발 또는 프로덕션/스테이지 환경 또는 세트를 삭제할 수 있습니다.
 
@@ -75,6 +75,9 @@ ht-degree: 0%
 
 * **수동**: 사용자는 샌드박스 프로그램 환경에 수동으로 절전 모드를 적용할 수 있지만, 일정 기간(8시간)이 없는 경우 자동으로 최대 절전 모드가 발생하므로 그럴 필요는 없습니다.
 
+>[!CAUTION]
+>최신 릴리스에서는 Cloud Manager의 개발자 콘솔에 연결해도 샌드박스 프로그램 환경의 최대 절전 모드를 수행할 수 없습니다.
+
 #### 수동 최대 절전 모드 사용 {#using-manual-hibernation}
 
 다음 두 가지 방법으로 개발자 콘솔에서 샌드박스 프로그램의 최대 절전 모드를 수동으로 수행할 수 있습니다.
@@ -87,9 +90,16 @@ ht-degree: 0%
 1. 개발자 **콘솔로 이동합니다**.
 환경 [카드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) 에서 **개발자 콘솔에** 액세스하는 방법을 **알아보려면 개발자 콘솔** 액세스를참조하십시오.
 
-1. 아래 그림에 표시된 대로 Hibernate를 클릭합니다
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   또는,
+
+   아래 **그림과 같이 환경** 목록에서 Hibernate를 클릭합니다.
+
+   ![](assets/hibernate-1b.png)
+
 1. Hibernate **를** 클릭하여 단계를 확인합니다.
 
    ![](assets/hibernate-2.png)
@@ -97,14 +107,6 @@ ht-degree: 0%
 1. 최대 절전 모드에 성공하면 **개발자 콘솔** 화면에 환경에 대한 최대 절전 모드 프로세스 완료 알림이 표시됩니다.
 
    ![](assets/hibernate-4.png)
-
-#### 동면기 환경 액세스 {#accessing-hibernated-environment}
-
-최대 절전 모드 환경의 작성자 또는 게시 계층에 대해 브라우저 요청이 있을 경우 사용자는 아래 그림과 같이 최대 절전 모드 상태를 설명하는 랜딩 페이지가 나타납니다.
-
-Cloud **Manager - 개발자 역할을** 가진 사용자는 개발자 콘솔 버튼을 클릭하여 개발자 콘솔에 액세스하고 환경의 최대 절전 모드를 해제할 수 있습니다. 역할 설정에 대한 정보는 Cloud Manager 문서에서 확인할 수 있습니다.
-
-조직의 사용자가 개발자 콘솔 단추를 클릭하여 개발자 콘솔로 이동할 수 없는 경우 &quot;클라우드 관리자 - 개발자 역할&quot;이 표시될 수 있습니다.
 
 
 ### 동면 해제 {#de-hibernation-introduction}
@@ -119,6 +121,13 @@ Cloud **Manager - 개발자 역할을** 가진 사용자는 개발자 콘솔 버
 
    ![](assets/de-hibernation-img1.png)
 
+   또는,
+
+   아래 **그림과 같이 환경** 목록에서 최대 **** 절전 모드 해제를 클릭합니다.
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. 단계를 확인하려면 **절전 모드** 를 클릭합니다.
 
    ![](assets/de-hibernation-img2.png)
@@ -131,24 +140,42 @@ Cloud **Manager - 개발자 역할을** 가진 사용자는 개발자 콘솔 버
 
    ![](assets/de-hibernation-img4.png)
 
+#### 동면기 환경 액세스 {#accessing-hibernated-environment}
+
+최대 절전 모드 환경의 작성자 또는 게시 계층에 대해 브라우저를 요청하는 경우 아래 그림과 같이 사용자는 최대 절전 모드 상태를 설명하는 랜딩 페이지가 나타납니다.
+
+![](assets/de-hibernation-img5.png)
+
+
+Cloud **Manager - 개발자 역할을** 사용하는 사용자는 **개발자 콘솔을** 클릭하여 개발자 콘솔에 액세스하고 환경의 최대 절전 모드를 해제할 수 있습니다.
+
+>[!NOTE]
+> Cloud Manager의 많은 기능을 사용하려면 특정 권한이 필요합니다. 특정 기능의 가용성을 제어하는 사용자의 역할에 대한 자세한 내용은 사용자 및 역할 추가[를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
+
+#### 중요 고려 사항 {#important-considerations}
+
+최대 절전 모드 및 최대 절전 모드 해제 환경과 관련된 주요 고려 사항은 다음과 같습니다.
+
+* 사용자는 파이프라인을 사용하여 최대 절전 모드 환경에 사용자 정의 코드를 배포할 수 있습니다. 이 환경은 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 절전 모드이며 새로운 코드는 최대 최대 절전 모드일 때 최대 절전 모드일 수 있습니다.
+
+* AEM 업그레이드는 고객이 Cloud Manager에서 수동으로 트리거할 수 있는 최대 절전 모드 환경에 적용할 수 있습니다. 이 환경은 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 최대 절전 환경이다.
+
+>[!NOTE]
+>현재 Cloud Manager는 환경이 최대 절전 모드인지 여부를 표시하지 않습니다.
 
 ## 샌드박스 환경에 대한 AEM 업데이트 {#aem-updates-sandbox}
 
-
 자세한 내용은 [AEM 버전 업데이트를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) 참조하십시오.
 
-사용자는 샌드박스 프로그램의 환경에 AEM 업데이트를 수동으로 적용할 수 있습니다(아래 그림 참조). 표시된 상태가 UPDATE AVAILABLE일 때 **수행할 수 있습니다**.
+사용자는 샌드박스 프로그램의 환경에 AEM 업데이트를 수동으로 적용할 수 있습니다.
 
-업데이트 옵션은 환경 카드의 드롭다운 메뉴에서 사용할 수 **있습니다** . 환경 **카드** 에서 세부 사항 **을** 클릭하면 이 옵션을 **관리** 단추에서도 사용할 수있습니다.
-
->[!NOTE]
->수동 *업데이트 파이프라인을 시작하려면 관심* 개발 환경에 배포되는 비프로덕션 파이프라인을 구성해야 합니다.
+환경 [을](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) 업데이트하는 방법에 대해서는 환경 업데이트를 참조하십시오.
 
 >[!NOTE]
->프로덕션 *파이프라인을* 구성하여 Production+Stage 환경으로 수동 업데이트 파이프라인을 시작해야 합니다.
+>* 수동 *업데이트 파이프라인을 시작하려면 관심* 개발 환경에 배포되는 비프로덕션 파이프라인을 구성해야 합니다.
+>* 프로덕션 *파이프라인을* 구성하여 Production+Stage 환경으로 수동 업데이트 파이프라인을 시작해야 합니다.
+>* 프로덕션 *또는* 스테이지 *환경* 에 대한 수동업데이트는 다른 환경을 자동으로 업데이트합니다. Production+Stage 환경 세트는 동일한 AEM 릴리스에 있어야 합니다.
 
->[!NOTE]
->프로덕션 *또는* 스테이지 *환경* 에 대한 수동업데이트는 다른 환경을 자동으로 업데이트합니다. Production+Stage 환경 세트는 동일한 AEM 릴리스에 있어야 합니다.
 
 
 
