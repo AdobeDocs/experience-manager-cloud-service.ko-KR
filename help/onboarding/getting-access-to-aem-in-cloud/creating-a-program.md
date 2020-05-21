@@ -2,7 +2,7 @@
 title: 프로그램 만들기 - 클라우드 서비스
 description: 프로그램 만들기 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 ![](assets/create-program-add.png)
 
-## 샌드박스 프로그램 만들기 {#create-demo-program}
+## 샌드박스 프로그램 만들기 {#create-sandbox-program}
 
 아래의 단계에 따라 샌드박스 프로그램을 만드십시오.
 
