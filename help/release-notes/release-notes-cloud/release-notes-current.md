@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.5.0용 릴리스 노트
 description: Experience Manager 2020.5.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 29%
+source-wordcount: '374'
+ht-degree: 18%
 
 ---
 
@@ -14,7 +14,22 @@ ht-degree: 29%
 
 다음 섹션에서는 클라우드 서비스 2020.5.0으로서의 Experience Manager에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
-## Cloud Manager {#cloud-manager}
+## 릴리스 날짜 {#release-date}
+
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+
+## What&#39;s New in AEM Sites {#aem-sites}
+
+클라우드 서비스 릴리스 2020.5.0으로서 AEM의 AEM Sites에 대한 새로운 기능과 업데이트를 살펴보려면 이 섹션을 따르십시오.
+
+* 이제 벌크 페이지 이동 및 롤아웃을 비동기 작업으로 처리한 후 자세한 작업 정보를 사용할 수 있습니다.
+* 페이지 트리를 복사/붙여넣을 때 이제 루트 페이지만 붙여넣거나 트리의 하위 페이지를 선택할 수 있습니다.
+* Adobe Target 작업 영역으로 내보낸 AEM 경험 조각은 이제 Target에서 고유한 오퍼 유형 및 오퍼 소스로 표시됩니다.
+* MSM - *게시* 트리거를 사용하면 이제 Live Copy 소스에서 삭제된 Live Copy 구성 요소의 삭제 이벤트를 성공적으로 롤아웃합니다.
+* MSM - Live Copy 구성 요소의 이름이 Live Copy 소스에서 동일한 구성 요소 롤아웃 후 *_msm_move* 로 변경되었습니다.
+
+
+## Cloud Manager의 새로운 기능 {#cloud-manager}
 
 클라우드 서비스로서의 AEM 릴리스 2020.5.0에 있는 Cloud Manager의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
 
