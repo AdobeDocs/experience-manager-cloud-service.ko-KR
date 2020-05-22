@@ -2,9 +2,9 @@
 title: 샌드박스 프로그램 - 클라우드 서비스
 description: 샌드박스 프로그램 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
+source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,9 @@ ht-degree: 0%
 
 샌드박스 프로그램은 AEM Cloud Service에서 사용할 수 있는 두 가지 유형의 프로그램 중 하나이며, 다른 프로그램은 정규 프로그램 중 하나입니다.
 
-샌드박스는 일반적으로 교육, 실행 데모, 지원 또는 POC(Proof of of of Concept)의 목적을 위해 만들어집니다. 그들은 라이브 트래픽을 운반하기 위한 것이 아니다.
+샌드박스는 일반적으로 교육, 실행 데모, 지원 또는 POC(Proof of of of Concept)의 목적을 위해 만들어집니다. 그들은 라이브 트래픽을 운반하기 위한 것이 아니다. 클라우드 서비스 [약정으로 AEM의 적용을 받지 않습니다](https://www.adobe.com/legal/service-commitments.html).
+
+샌드박스에서 만들어진 환경은 자동 크기 조정을 위해 구성되지 않습니다. 따라서 성능이나 로드 테스트에 적합하지 않습니다.
 
 샌드박스 프로그램에는 사이트 및 에셋이 포함되며 Git 저장소, 개발 환경 및 비프로덕션 파이프라인으로 자동 채워집니다.  Git 리포지토리는 AEM 프로젝트 원형을 기반으로 하는 샘플 프로젝트로 채워집니다.
 
@@ -49,7 +51,7 @@ ht-degree: 0%
 
 프로덕션-스테이지 환경 세트는 사용자가 프로덕션 파이프라인을 설정할 준비가 되면 샌드박스 프로그램에 수동으로 추가할 수 있습니다.
 
-환경을 수동으로 만드는 방법에 대해 자세히 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
+수동으로 환경을 만드는 방법에 대해 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
 
 ### 샌드박스 환경 삭제 {#deleting-sandbox-environments}
 
