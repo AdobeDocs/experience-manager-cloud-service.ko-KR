@@ -1,11 +1,11 @@
 ---
-sub-product: 클라우드 서비스로 AEM에 대한 구현
-user-guide-title: 클라우드 서비스로 AEM에 대한 구현
-translation-type: tm+mt
+sub-product: 클라우드 서비스로서의 AEM용 구현
+user-guide-title: 클라우드 서비스로서의 AEM용 구현
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -34,12 +34,12 @@ ht-degree: 81%
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
 + 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
-   + [컨텐츠 조각 사용자 정의 및 확장](developing/extending/content-fragments-customizing.md)
+   + [컨텐츠 조각 사용자 지정 및 확장](developing/extending/content-fragments-customizing.md)
    + [컨텐츠 조각 렌더링용 구성 요소 구성](developing/extending/content-fragments-configuring-components-rendering.md)
    + [검색 양식 구성](developing/extending/search-forms.md)
 + 클라우드 서비스로서의 AEM에 배포 {#deploying}
    + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
-   + [AEM에 대해 클라우드 서비스로 OSGi 구성](deploying/configuring-osgi.md)
+   + [클라우드 서비스로서의 AEM에 대한 OSGi 구성](deploying/configuring-osgi.md)
 + 클라우드의 디스패처 {#dispatcher}
    + [클라우드의 디스패처](dispatcher/overview.md)
    + [클라우드 서비스로서의 AEM에서 컨텐츠 전달](dispatcher/content-delivery.md)
