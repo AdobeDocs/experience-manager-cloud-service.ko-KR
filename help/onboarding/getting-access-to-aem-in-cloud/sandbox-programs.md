@@ -4,7 +4,7 @@ description: 샌드박스 프로그램 - 클라우드 서비스
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,8 @@ ht-degree: 0%
 
 1. 개발자 **콘솔로 이동합니다**.
 환경 [카드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) 에서 **개발자 콘솔에** 액세스하는 방법을 **알아보려면 개발자 콘솔** 액세스를참조하십시오.
-   >[!NOTE]
-   >Cloud Manager에서 직접 개발자 콘솔에 연결해도 샌드박스 프로그램 환경의 최대 절전 모드를 선택할 수 있는 옵션이 제공되지 않습니다. 해결 방법은 개발자 콘솔에서 한 번, url `#release-cm-p1234-e5678 where 1234` 1234의 끝에 다음 패턴을 추가하여 사용자 *프로그램 ID이고* 5678은 사용자 *환경 ID입니다*.
+   >[!IMPORTANT]
+   >Cloud Manager에서 바로 **개발자 콘솔에** 연결해도 샌드박스 프로그램 환경의 최대 절전 모드를 수행할 수 있는 옵션이 제공되지 않습니다. 해결 방법은 개발자 콘솔에서 한 번, url `#release-cm-p1234-e5678 where 1234` 1234의 끝에 다음 패턴을 추가하여 사용자 *프로그램 ID이고* 5678은 사용자 *환경 ID입니다*.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -117,6 +117,9 @@ ht-degree: 0%
 
 1. 개발자 **콘솔로 이동합니다**.
 환경 [카드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) 에서 **개발자 콘솔에** 액세스하는 방법을 **알아보려면 개발자 콘솔** 액세스를참조하십시오.
+
+   >[!IMPORTANT]
+   >Cloud Manager에서 바로 **개발자 콘솔에** 연결해도 샌드박스 프로그램 환경의 절전 모드를 해제할 수 있는 옵션이 제공되지 않습니다. 해결 방법은 개발자 콘솔에서 한 번, url `#release-cm-p1234-e5678 where 1234` 1234의 끝에 다음 패턴을 추가하여 사용자 *프로그램 ID이고* 5678은 사용자 *환경 ID입니다*.
 
    >[!NOTE]
    >또는 이미 최대 절전 **상태인 환경의 작성자 또는 게시 서비스에 액세스하려고 하면 개발자 콘솔로** 이동하여 최대 절전 모드 해제 기능을 수행할 수 있습니다. 이 경우, 랜딩 페이지가 개발자 콘솔로의 링크와 함께 나타납니다. 아래의 동면자 환경 액세스 섹션을 참조하십시오.
