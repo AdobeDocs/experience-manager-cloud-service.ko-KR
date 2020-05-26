@@ -2,10 +2,10 @@
 title: 받은 편지함
 description: 받은 편지함에서 작업 관리
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 100%
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
@@ -108,6 +108,10 @@ AEM 알림 받은 편지함 열기
 
 ## 항목에 대한 작업 수행 {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>두 개 이상의 항목을 선택할 수 있지만 한 번에 한 항목에서만 작업을 수행할 수 있습니다.
+
 1. 항목에 대해 작업을 수행하기 위해서는 해당 항목 옆에 있는 썸네일을 선택합니다. 해당 항목에 적용할 수 있는 작업에 대한 아이콘이 도구 모음에 표시됩니다.
 
    ![받은 편지함 항목 선택](/help/sites-cloud/authoring/assets/inbox-select-item.png)
@@ -131,7 +135,7 @@ AEM 알림 받은 편지함 열기
    >* 워크플로우 항목 - ](/help/sites-cloud/authoring/workflows/participating.md)워크플로우에 참여[
 
 
-1. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
+2. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
 
    * 작업에 해당하는 대화 상자가 열립니다
    * 작업 마법사가 시작됩니다
