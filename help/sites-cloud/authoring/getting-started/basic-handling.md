@@ -1,8 +1,11 @@
 ---
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +62,8 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 탐색 패널:
 
 ![탐색 패널](/help/sites-cloud/authoring/assets/navigation.png)
+
+콘솔 및 컨텐츠를 탐색할 때 브라우저 탭의 제목이 위치를 반영하도록 업데이트됩니다.
 
 탐색에서 사용할 수 있는 콘솔은 다음과 같습니다.
 
@@ -150,6 +155,14 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    >
    >**보기 설정** 옵션은 **목록 보기** 모드에서만 사용할 수 있습니다.
 
+* 키보드 탐색
+
+   키보드만 사용하여 웹 사이트를 탐색할 수 있습니다. 여기서는 **TAB** 키(또는 **OPT+TAB**)의 표준 브라우저 기능을 사용하여 포커스가 있는 페이지의 요소 간에 이동할 수 있습니다.
+
+   사이트 **콘솔** 에는 기본 컨텐츠로 **건너뛸 수 있는 추가된 옵션이 있습니다**. 이 단축키는 헤더 옵션을 탭하면 표시되며 (제품) 도구 모음에서 표준 요소를 건너뛰고 기본 컨텐츠로 바로 이동할 수 있으므로 탐색 시간을 단축할 수 있습니다.
+
+   ![기본 컨텐츠로 건너뛰기](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+
 ## 도움말 액세스 {#accessing-help}
 
 사용할 수 있는 도움말 리소스는 다양합니다.
@@ -226,7 +239,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 사용 가능한 보기 중 하나에서(추가 작업을 위해) 리소스를 보고, 탐색하며 선택할 수 있습니다. 각 보기는 오른쪽 상단의 아이콘으로 선택할 수 있습니다.
 
-* [열 보기 ](#column-view)
+* [열 보기](#column-view)
 * [카드 보기](#card-view)
 * [목록 보기](#list-view)
 
