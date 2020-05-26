@@ -2,9 +2,9 @@
 title: 샌드박스 프로그램 - 클라우드 서비스
 description: 샌드박스 프로그램 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -150,17 +150,17 @@ ht-degree: 0%
 
    ![](assets/de-hibernation-img4.png)
 
+#### 최대 절전 모드 해제 권한 {#permissions-de-hibernate}
+
+클라우드 서비스로 AEM에 액세스할 수 있는 제품 프로필을 보유한 모든 사용자는 **개발자 콘솔에**&#x200B;액세스하여 환경의 최대 절전 모드를 해제할 수 있습니다.
+
+사용자 권한 [설정에 대해서는 Cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) Manager에서 사용자 및 역할 추가를 참조하십시오.
+
 #### 동면기 환경 액세스 {#accessing-hibernated-environment}
 
 최대 절전 모드 환경의 작성자 또는 게시 계층에 대해 브라우저를 요청하는 경우 아래 그림과 같이 사용자는 최대 절전 모드 상태를 설명하는 랜딩 페이지가 나타납니다.
 
 ![](assets/de-hibernation-img5.png)
-
-
-Cloud **Manager - 개발자 역할을** 사용하는 사용자는 **개발자 콘솔을** 클릭하여 개발자 콘솔에 액세스하고 환경의 최대 절전 모드를 해제할 수 있습니다.
-
->[!NOTE]
-> Cloud Manager의 많은 기능을 사용하려면 특정 권한이 필요합니다. 특정 기능의 가용성을 제어하는 사용자의 역할에 대한 자세한 내용은 사용자 및 역할 추가[를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ### 중요 고려 사항 {#important-considerations}
 
