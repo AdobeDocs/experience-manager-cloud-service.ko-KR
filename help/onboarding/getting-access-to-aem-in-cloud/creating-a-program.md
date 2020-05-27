@@ -2,7 +2,7 @@
 title: 프로그램 만들기 - 클라우드 서비스
 description: 프로그램 만들기 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 특정 고객/조직에서 사용할 수 있는 범위 내에서 프로그램을 만드는 사용자의 목적에 따라 프로그램 생성 마법사는 사용자에게 하나 이상의 세부 사항을 제출하도록 요청합니다.
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >프로그램이 이미 존재하는 경우 아래 그림과 같이 **랜딩** 페이지의 오른쪽 상단에 프로그램 추가가 표시됩니다.
@@ -36,7 +36,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 아래의 단계에 따라 샌드박스 프로그램을 만드십시오.
 
-1. 프로그램 만들기 마법사에서 데모 **설정을 선택합니다**. 사용자가 만들기를 선택하기 전에 프로그램 이름을 **제출합니다**.
+1. 프로그램 만들기 마법사에서 **샌드박스 설정을 선택합니다**. 사용자가 만들기를 선택하기 전에 프로그램 이름을 **제출합니다**.
 
    ![](assets/create-sandbox.png)
 
