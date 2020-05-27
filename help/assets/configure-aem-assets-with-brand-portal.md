@@ -3,9 +3,9 @@ title: Brand Portal을 사용하여 AEM Assets 클라우드 서비스 구성
 description: Brand Portal을 사용하여 AEM Assets 클라우드 서비스를 구성합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1806'
 ht-degree: 28%
 
 ---
@@ -17,7 +17,7 @@ AEM(Adobe Experience Manager) 자산은 브랜드 포털 테넌트의 승인을 
 
 **구성 작동 방식**
 
-브랜드 포털 테넌트(조직)로 AEM Assets 클라우드 인스턴스를 구성하는 것은 AEM Assets 클라우드 인스턴스와 Adobe 개발자 콘솔에서 구성이 필요한 다중 단계 프로세스입니다.
+브랜드 포털 임차인(조직)으로 AEM Assets 클라우드 인스턴스를 구성하려면 AEM Assets 클라우드 인스턴스와 Adobe 개발자 콘솔에서 구성이 필요합니다.
 
 1. AEM Assets 클라우드 인스턴스에서 IMS 계정을 만들고 공개 인증서(공개 키)를 생성합니다.
 1. Adobe 개발자 콘솔에서 브랜드 포털 테넌트(조직)에 대한 프로젝트를 만듭니다.
@@ -28,9 +28,11 @@ AEM(Adobe Experience Manager) 자산은 브랜드 포털 테넌트의 승인을 
 1. AEM Assets 클라우드 인스턴스의 자산을 브랜드 포털에 게시하여 구성을 테스트합니다.
 
 >[!NOTE]
->>브랜드 포털 테넌트는 하나의 AEM Assets 클라우드 인스턴스로 구성되어야 합니다.
->>여러 AEM Assets 클라우드 인스턴스로 브랜드 포털 테넌트를 구성하지 마십시오.
 >
+>브랜드 포털 테넌트는 하나의 AEM Assets 클라우드 인스턴스로 구성되어야 합니다.
+>
+>여러 AEM Assets 클라우드 인스턴스로 브랜드 포털 테넌트를 구성하지 마십시오.
+
 
 ## 전제 조건 {#prerequisites}
 
