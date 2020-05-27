@@ -2,9 +2,9 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 학습합니다.
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2417'
 ht-degree: 1%
 
 ---
@@ -237,7 +237,9 @@ Maven 종속성을 추가하는 것은 표준 Maven 사례를 따르고, 타사 
 
 패키지를 제대로 설치하려면 패키지 간 종속성을 설정하는 것이 좋습니다.
 
-일반 규칙은 변경 가능한 컨텐츠가 포함된 패키지입니다(`ui.content`)는 변경 가능한 컨텐츠의 렌더링 및 사용을 지원하는 변경 불가능한 컨텐츠(`ui.apps`)에 따라 달라져야 합니다.
+일반 규칙은 가변 컨텐츠(`ui.content`)를 포함하는 패키지로, 변경 가능한 컨텐츠의 렌더링 및 사용을 지원하는 불변의 코드(`ui.apps`)에 따라 달라져야 합니다.
+
+이 일반 규칙의 주목할 만한 예외는 불변량 코드 패키지(`ui.apps` 또는 기타)가 OSGi 번들만을 __포함하는__ 경우입니다. 이 경우 AEM 패키지가 종속성이 선언되지 않아야 합니다. 이는 OSGi 번들을 포함하는 불변성 코드 패키지만 ____ AEM Package Manager에 등록되어 있지 않으므로, AEM 패키지에 종속되는 모든 AEM 패키지에 불만족한 종속성이 있으며 설치하지 못할 것이기 때문입니다.
 
 >[!TIP]
 >
