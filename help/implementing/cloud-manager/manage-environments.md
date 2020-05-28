@@ -2,9 +2,9 @@
 title: 환경 관리 - 클라우드 서비스
 description: 환경 관리 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '702'
 ht-degree: 2%
 
 ---
@@ -97,7 +97,12 @@ ht-degree: 2%
 
 ## 개발자 콘솔 액세스 {#accessing-developer-console}
 
-환경 **카드** 의 드롭다운 메뉴에서 **개발자 콘솔을** 선택합니다.
+환경 **카드** 의 드롭다운 메뉴에서 **개발자 콘솔을** 선택합니다. 그러면 브라우저에서 새 탭이 열리고 개발자 콘솔의 로그인 페이지가 **표시됩니다**.
+
+개발자 역할의 사용자만 **개발자 콘솔에 액세스할 수 있습니다**. 클라우드 관리자 샌드박스 프로그램에 액세스할 수 있는 모든 사용자가 **개발자 콘솔에 액세스할 수 있는 샌드박스 프로그램에 대한 예외 사항입니다**.
+
+자세한 내용은 [최대 절전 모드 및 최대 절전 모드 해제](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) 환경을 참조하십시오.
+
 
 ![](assets/dev-console1.png)
 
