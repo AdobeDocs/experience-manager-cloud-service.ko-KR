@@ -1,8 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager를 위한 SEO 및 URL 관리 우수 사례
 seo-title: 클라우드 서비스로서의 Adobe Experience Manager를 위한 SEO 및 URL 관리 우수 사례
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ URL과 관련하여 일반적으로 받아들여지는 우수 사례가 있습�
 
 AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보십시오.
 
-&quot;사용자가 이 URL은 보고 페이지에 있는 컨텐츠는 보지 못하는 경우 이 페이지의 내용을 설명할 수 있습니까?&quot;
+*&quot;사용자가 이 URL은 보고 페이지에 있는 컨텐츠는 보지 못하는 경우 이 페이지의 내용을 설명할 수 있습니까?&quot;*
 
 답변이 예라면 검색 엔진에서 URL이 제대로 작동할 가능성이 높습니다.
 
