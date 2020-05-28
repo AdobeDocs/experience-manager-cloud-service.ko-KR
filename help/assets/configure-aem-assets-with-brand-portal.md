@@ -3,10 +3,10 @@ title: Brand Portal을 사용하여 AEM Assets 클라우드 서비스 구성
 description: Brand Portal을 사용하여 AEM Assets 클라우드 서비스를 구성합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
+source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 28%
+source-wordcount: '1762'
+ht-degree: 29%
 
 ---
 
@@ -69,7 +69,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. AEM Assets 클라우드 인스턴스에 로그인합니다.
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS 계정 구성 UI](assets/ims-configuration1.png)
 
@@ -134,9 +134,11 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 조직(브랜드 포털 테
 
 1. 공용 인증서를 확인하고 [다음]을 **[!UICONTROL 클릭합니다]**.
 
-1. 브랜드 포털에서 각 조직에 대해 기본 프로필이 만들어집니다. 사용자 역할을 기준으로 그룹에 사용자를 할당하기 위해 제품 프로필이 관리 콘솔에서 만들어집니다. 브랜드 포털을 통한 구성의 경우 OAuth 토큰이 조직 수준에서 생성됩니다. 따라서 조직의 기본 제품 프로필을 구성해야 합니다.
+1. 기본 제품 프로필 **[!UICONTROL 자산 브랜드 포털을]** 선택하고 **[!UICONTROL 구성 저장을 클릭합니다]**.
 
-   기본 제품 프로필 **[!UICONTROL 자산 브랜드 포털을 선택합니다]**.
+   <!-- 
+   In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
+   -->
 
    ![제품 프로필 선택](assets/service-account4.png)
 
@@ -144,7 +146,7 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 조직(브랜드 포털 테
 
    >[!NOTE]
    >
-   >필요에 따라 자격 증명을 보고 기타 작업(JWT 토큰 생성, 자격 증명 세부 사항 복사, 클라이언트 기밀 검색 등)을 수행할 수 있습니다.
+   >필요에 따라 자격 증명을 보고 기타 작업(JWT 토큰 생성, 자격 증명 세부 사항 복사, 클라이언트 암호 검색 등)을 수행할 수 있습니다.
 
 1. 클라이언트 자격 증명 **[!UICONTROL 탭에서]** 클라이언트 ID를 복사합니다 ****.
 
@@ -237,7 +239,7 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 조직(브랜드 포털 테
 
 1. AEM Assets 클라우드 인스턴스에 로그인합니다.
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. 브랜드 포털 구성 페이지에서 만들기를 **[!UICONTROL 클릭합니다]**.
 
@@ -257,7 +259,7 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 조직(브랜드 포털 테
 
 1. AEM Assets 클라우드 인스턴스에 로그인합니다.
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -315,7 +317,7 @@ AEM Assets 클라우드 인스턴스가 Brand Portal을 사용하여 성공적�
 
 예를 들어, 구성을 확인하기 위해 AEM Assets의 자산을 브랜드 포털에 게시했습니다.
 
-1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
 
 1. **[!UICONTROL 로그]**&#x200B;를 클릭하여 분배 로그를 확인합니다. 여기에서 처리 및 오류 로그를 볼 수 있습니다.
 
