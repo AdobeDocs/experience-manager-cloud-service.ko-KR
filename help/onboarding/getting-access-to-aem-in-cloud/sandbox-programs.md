@@ -2,9 +2,9 @@
 title: 샌드박스 프로그램 - 클라우드 서비스
 description: 샌드박스 프로그램 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 프로덕션-스테이지 환경 세트는 사용자가 프로덕션 파이프라인을 설정할 준비가 되면 샌드박스 프로그램에 수동으로 추가할 수 있습니다.
 
-환경을 수동으로 만드는 방법에 대해 자세히 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
+수동으로 환경을 만드는 방법에 대해 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
 
 ### 샌드박스 환경 삭제 {#deleting-sandbox-environments}
 
@@ -86,6 +86,9 @@ ht-degree: 0%
 
 * 환경 세부 사항 화면
 * 환경 목록 화면
+
+>[!NOTE]
+>Cloud Manager의 모든 사용자는 샌드박스 프로그램의 개발자 콘솔에 액세스할 수 있습니다.
 
 아래의 단계에 따라 샌드박스 프로그램 환경을 수동으로 절전 모드로 전환하십시오.
 
