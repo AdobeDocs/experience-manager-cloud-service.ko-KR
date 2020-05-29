@@ -2,7 +2,7 @@
 title: 프로그램 만들기 - 클라우드 서비스
 description: 프로그램 만들기 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
+source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 1. 프로그램 **만들기** 마법사에서 프로덕션 설정을 선택하여 일반 프로그램을 만듭니다. 사용자는 [계속]을 선택하기 전에 기본 프로그램 이름을 수락하거나 편집할 수 **있습니다**.
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. 사용자는 위의 화면 다음에 표시될 화면의 프로그램에 포함될 솔루션을 선택합니다.
 
