@@ -2,7 +2,7 @@
 title: 클라우드 서비스로 AEM으로 이동
 description: 클라우드 서비스 자체 도움말 리소스 및 설명서 링크로 AEM으로 이동하는 클라우드 서비스인 Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
