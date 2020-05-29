@@ -2,7 +2,7 @@
 title: 클라우드 서비스로 AEM으로 이동
 description: 클라우드 서비스 자체 도움말 리소스 및 설명서 링크로 AEM으로 이동하는 클라우드 서비스인 Adobe Experience Manager
 translation-type: tm+mt
-source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
+source-git-commit: 43c5af886ccddea73b68008a372f192ff8c1f26f
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
@@ -10,7 +10,7 @@ ht-degree: 57%
 ---
 
 
-# Move to AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 ## 클라우드 서비스로 AEM으로 전환하여 얻을 수 있는 이점 {#benefits-aem-moving-to-aem-guide}
 
