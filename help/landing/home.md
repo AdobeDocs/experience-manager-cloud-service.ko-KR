@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 사용 안내서
 description: 클라우드 서비스로서의 Adobe Experience Manager 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: 2d6c91dac4fec04cb5f1a6d050f0464bc724a09b
+source-git-commit: 45e17deb7a08deaaf2af07ca6ab3b8ee80bcb21f
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 94%
