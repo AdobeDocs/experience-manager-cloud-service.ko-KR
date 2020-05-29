@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로 AEM으로 이동
 user-guide-title: 클라우드 서비스로 AEM으로 이동
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Move to AEM as a Cloud Service Guide {#moving}
+# Moving to AEM as a Cloud Service Guide {#moving}
 
 + [클라우드 서비스로 AEM으로 이동](/help/move-to-cloud-service/home.md)
 + 전환 경로의 단계 {#phases}
