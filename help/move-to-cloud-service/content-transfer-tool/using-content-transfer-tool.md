@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,8 @@ ht-degree: 1%
 
 * 샌드박스 환경을 사용 중인 경우 *환경이 2020년 5월 29일*&#x200B;이후 릴리스로 업그레이드되었는지 확인하십시오. 프로덕션 환경을 사용하는 경우 *자동으로*&#x200B;업데이트됩니다.
 
+* 콘텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리자 사용자여야 하며, 콘텐츠를 전송하는 클라우드 서비스 인스턴스의 관리 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 콘텐츠 전송 도구를 사용할 수 없습니다.
+
 * 추출 단계 동안 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
 * 작성자의 *통합* 단계는 전체 작성자 배포를 축소합니다. 이는 전체 통합 프로세스 동안 작성자 AEM을 사용할 수 없음을 의미합니다.
@@ -29,7 +31,7 @@ ht-degree: 1%
 소프트웨어 배포 포털에서 컨텐트 전송 도구를 zip 파일로 다운로드할 수 있습니다. 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
->자세한 [내용은 AEM을 클라우드 서비스 SDK로](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) 액세스를 참조하십시오.
+>Adobe [Experience Cloud에서 콘텐츠 전송 도구를 다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## 컨텐츠 전송 도구 실행 {#running-tool}
 
@@ -120,7 +122,8 @@ ht-degree: 1%
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > 업데이트된 상태를 보려면 페이지를 새로 고쳐야 합니다.
+   >업데이트된 상태를 보려면 페이지를 새로 고쳐야 합니다.
+   >추출 단계가 시작되면 *60초*&#x200B;후 쓰기 잠금이 만들어지고 해제됩니다. 따라서 추출을 중지한 경우 다시 추출을 시작하기 전에 잠금이 해제될 때까지 잠시 기다려야 합니다.
 
 #### 위쪽 추출 {#top-up-extraction-process}
 
@@ -250,10 +253,12 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 
 사용자는 컨텐츠 전송 도구에 대한 사용자 인터페이스(UI)에서 다음과 같은 동작 변경 사항을 볼 수 있습니다.
 
-1. 사용자는 작성자 URL(개발/스테이지/프로덕션)에 대한 마이그레이션 세트를 만들고 추출 및 회수를 성공적으로 수행합니다.
+* 사용자는 작성자 URL(개발/스테이지/프로덕션)에 대한 마이그레이션 세트를 만들고 추출 및 회수를 성공적으로 수행합니다.
 
-1. 그런 다음 사용자는 동일한 작성자 URL에 대한 새 마이그레이션 세트를 만들고 새 마이그레이션 세트에 대해 추출 및 질문을 수행합니다. UI에 첫 번째 마이그레이션 세트의 통합 상태가 FAILED로 **변경되고** 로그를 사용할 수 없음을 보여줍니다.
+* 그런 다음 사용자는 동일한 작성자 URL에 대한 새 마이그레이션 세트를 만들고 새 마이그레이션 세트에 대해 추출 및 질문을 수행합니다. UI에 첫 번째 마이그레이션 세트의 통합 상태가 FAILED로 **변경되고** 로그를 사용할 수 없음을 보여줍니다.
 
-1. 이는 첫 번째 마이그레이션 세트에 대한 회합이 실패했음을 의미하지 않습니다. 이 동작은 새 통합 작업이 시작되면 이전 통합 작업이 삭제되기 때문에 표시됩니다. 따라서 첫 번째 마이그레이션 세트의 변경 상태는 무시되어야 합니다.
+* 이는 첫 번째 마이그레이션 세트에 대한 회합이 실패했음을 의미하지 않습니다. 이 동작은 새 통합 작업이 시작되면 이전 통합 작업이 삭제되기 때문에 표시됩니다. 따라서 첫 번째 마이그레이션 세트의 변경 상태는 무시되어야 합니다.
+
+* 컨텐츠 전송 도구 UI의 아이콘은 이 안내서에 표시된 스크린샷과 다르거나 소스 AEM 인스턴스의 버전에 따라 전혀 표시되지 않을 수 있습니다.
 
 
