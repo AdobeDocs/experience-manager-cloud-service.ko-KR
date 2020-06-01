@@ -3,10 +3,10 @@ title: Brand Portal을 사용하여 AEM Assets 클라우드 서비스 구성
 description: Brand Portal을 사용하여 AEM Assets 클라우드 서비스를 구성합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
+source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 29%
+ht-degree: 28%
 
 ---
 
@@ -56,7 +56,7 @@ Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필�
 
 ### IMS 구성 만들기 {#create-ims-configuration}
 
-IMS 구성은 AEM Assets 작성자 인스턴스를 사용하여 Brand Portal 테넌트를 인증합니다.
+IMS 구성은 AEM Assets 클라우드 인스턴스로 브랜드 포털 테넌트를 인증합니다.
 
 IMS 구성에는 두 단계가 포함됩니다.
 
