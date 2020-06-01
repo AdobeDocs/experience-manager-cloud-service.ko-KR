@@ -2,9 +2,9 @@
 title: Dynamic Media 이미지 프로필
 description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 이미지 프로필을 만든 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 translation-type: tm+mt
-source-git-commit: 937b06829f290b1e5a2108c456a759100c450a14
+source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2655'
 ht-degree: 4%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 4%
 
 ## Crop options {#crop-options}
 
-선택할 수 있는 두 가지 이미지 자르기 옵션과 색상 및 이미지 견본 생성을 자동화하는 옵션이 있습니다.
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->만드는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 처리 속도가 느려질 수 있습니다. 또한 시스템에서 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 필요한 폴더에서만 ** 사용하는 것이 좋습니다.
+만드는 각 스마트 자르기 생성에는 추가 처리가 필요합니다. 예를 들어 5개 이상의 스마트 자르기 종횡비를 추가하면 자산 처리 속도가 느려질 수 있습니다. 또한 시스템에서 로드가 증가할 수 있습니다. 폴더 수준에서 스마트 자르기를 적용할 수 있으므로 필요한 폴더에서만 ** 사용하는 것이 좋습니다.
+
+선택할 수 있는 이미지 자르기 옵션이 두 개 있습니다. 또한 색상 및 이미지 견본 생성을 자동화하는 옵션도 있습니다.
 
 <table>
  <tbody>
@@ -39,7 +39,7 @@ ht-degree: 4%
      <li>자르기 시작 지점: 왼쪽은 X, 상쪽은 Y</li>
      <li>수평 계산: 원본 이미지의 가로 픽셀 치수에서 [왼쪽]을 뺀 다음 [오른쪽]을 뺀 값.</li>
      <li>세로 계산: 세로 픽셀 높이를 위쪽에서 뺀 다음 아래쪽을 뺀 것입니다.</li>
-    </ul> <p>예를 들어 4000 x 3000픽셀 이미지를 가지고 있다고 가정합니다. 값을 사용합니다. Top=250; 아래쪽=500; 왼쪽=300; 오른쪽=700.</p> <p>(4000-300-700, 3000-250-500 또는 3000,2250)의 칠 공간을 사용하여 왼쪽 상단에서 자르십시오.</p> </td>
+    </ul> <p>예를 들어 4000 x 3000픽셀 이미지를 가지고 있다고 가정합니다. 값을 사용합니다. 위쪽=250, 아래쪽=500, 왼쪽=300, 오른쪽=700.</p> <p>(4000-300-700, 3000-250-500 또는 3000,2250)의 칠 공간을 사용하여 왼쪽 상단에서 자르십시오.</p> </td>
   </tr>
   <tr>
    <td>스마트 자르기</td>
@@ -267,13 +267,13 @@ Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets
 1. 폴더 또는 여러 폴더에서 제거할 이미지 프로필을 선택합니다.
 1. 폴더에서 **[!UICONTROL 처리 프로필 제거를]** 누르고 프로필을 제거할 폴더 또는 여러 폴더를 선택한 다음 제거를 **[!UICONTROL 누릅니다]**.
 
-   이름이 더 이상 폴더 이름 아래에 나타나지 않으므로 이미지 프로필이 더 이상 폴더에 적용되지 않도록 확인할 수 있습니다.
+   이름이 폴더 이름 아래에 더 이상 나타나지 않으므로 이미지 프로필이 더 이상 폴더에 적용되지 않도록 확인할 수 있습니다.
 
 ### 속성을 통해 폴더에서 다이내믹 미디어 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-properties}
 
 1. AEM 로고를 누르고 **[!UICONTROL 자산]** 으로 이동한 다음 이미지 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 속성을 **[!UICONTROL 누릅니다]**.
 1. 이미지 프로필 **[!UICONTROL 탭을]** 선택합니다.
-1. 프로필 **[!UICONTROL 이름]** 드롭다운 메뉴에서 없음 **[!UICONTROL 을]**&#x200B;선택한 다음 **[!UICONTROL 저장 및]**&#x200B;닫기를 누릅니다.
+1. 프로필 **[!UICONTROL 이름]** 드롭다운 목록에서 없음 **[!UICONTROL 을]**&#x200B;선택한 다음 **[!UICONTROL 저장 및]**&#x200B;닫기를 누릅니다.
 
    프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
