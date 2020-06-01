@@ -2,15 +2,15 @@
 title: Dynamic Media Cloud 서비스 구성
 description: Adobe Experience Manager Cloud Service에서 다이내믹 미디어를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+source-git-commit: bc0852120580065a93923e7fe730485012afba6e
 workflow-type: tm+mt
-source-wordcount: '5120'
+source-wordcount: '5123'
 ht-degree: 0%
 
 ---
 
 
-# Dynamic Media 구성 {#configuring-dynamic-media-scene-mode}
+# Dynamic Media Cloud 서비스 구성 정보 {#configuring-dynamic-media-scene-mode}
 
 Adobe Experience Manager를 개발용, 스테이징용 및 라이브 프로덕션용 등 다양한 환경에 대해 설정하는 경우 해당 환경 각각에 대해 Dynamic Media Cloud 서비스를 구성해야 합니다.
 
@@ -147,7 +147,7 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 동적 �
 * **[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
 * **[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
 * **[!UICONTROL 공통 축소판 속성]** - 이 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 카탈로그 필드 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
+* **[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 * **[!UICONTROL 색상 관리 속성]** - 이 설정에 따라 어떤 ICC 색상 프로파일이 사용되는지 결정됩니다.
 * **[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 텍스트 레이어의 선행 및 후행 단락을 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리할 수 있습니다.
 * **[!UICONTROL 로컬라이제이션 지원]** - 이 설정을 통해 여러 로케일 특성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 **자산 현지화 설정 시**&#x200B;고려 사항 [을 참조하십시오](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
