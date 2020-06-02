@@ -1,11 +1,11 @@
 ---
 title: WCAG 2.1에 대한 빠른 안내서
 description: WCAG 2.1에 대한 빠른 안내서
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 84%
 
 클라우드 서비스로서의 Adobe Experience Manager(AEM)는 웹 컨텐츠 액세스 가능성 지침을 최대한 준수하기 위해 개발되었습니다.
 
-The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+[웹 컨텐츠 액세스 가능성 지침(WCAG) 버전 2.1](https://www.w3.org/TR/WCAG/)은 [World Wide Web Consortium(W3C)](https://www.w3.org/)에서 [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/)에 따라 작성한 국제 공인 지침입니다.
 
 >[!NOTE]
 > 
-> WCAG 2.1은 2008년부터 이전 버전 WCAG 2.0을 업데이트합니다. [WCAG 2.1 - WCAG 2.0과의 비교](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)를 참조하십시오.
+> WCAG 2.1은 이전 버전인 2008년의 WCAG 2.0을 업데이트합니다. [WCAG 2.1 - WCAG 2.0과의 비교](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)를 참조하십시오.
 
 >[!NOTE]
 > 
@@ -28,7 +28,7 @@ WCAG 2.1은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 
 예를 들어, HTML에서 `alt` 특성을 사용하여 이미지(또는 기타 텍스트가 아닌 컨텐츠)를 설명하는 것은 앞이 보이지 않거나 부분적으로 시력이 있는 사람들에게 큰 도움이 됩니다. `alt` 특성의 텍스트 설명은 음성 출력으로 변환하거나 전자식 재생 가능 점자 디스플레이에 전송할 수 있습니다.
 
-Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. 탐색 기술, 네트워크 연결 속도 또는 탐색 환경과 같은 상황으로 인해 장애가 있는 사람과 유사한 장애를 겪을 수 있는 사람들에게도 유익할 수 있습니다.
+또한 WCAG 2.1은 *상황적 장애인*&#x200B;으로 간주될 수 있는 사람들을 포함하여 다른 수혜자들에게 이점을 줄 수 있습니다. 탐색 기술, 네트워크 연결 속도 또는 탐색 환경과 같은 상황으로 인해 장애가 있는 사람과 유사한 장애를 겪을 수 있는 사람들에게도 유익할 수 있습니다.
 
 컨텐츠 작성자 및/또는 웹 사이트 소유자는 Adobe Experience Manager를 사용하여 적절한 WCAG 2.1 Level A 및 Level AA 성공 기준을 충족하는 웹 컨텐츠를 만들 수 있습니다.
 
@@ -40,8 +40,8 @@ WCAG 2.1의 목적은 다음과 같은 지침을 제공하는 것입니다.
 
 * **테스트 가능한 지침:**&#x200B;각 지침이 액세스 가능성 전문가 그룹이 지침이 충족되었다는 것에 일반적으로 동의할 수 있도록 객관적으로 테스트할 수 있는 방식으로 작성됩니다. 액세스 가능성 지침의 어려운 점 중 하나는 일부 지침은 기술적으로 테스트 가능하지만, 다른 지침은 지침이 제대로 이행되었는지 사람이 직접 판단해야 한다는 것입니다.
 
-* 우선 **순위와 컨텍스트 기반 구현 지원:**
-WCAG 2.1 지침에는 장애가 있는 특정 사용자 그룹에 대한 지침을 따르지 않을 가능성이 있는 영향과 관련하여 우선 순위가 지정됩니다. 이를 통해 작성자는 특정 상황에 가장 중요한 지침에 대해 현명한 결정을 내릴 수 있습니다. 또한 지원되는 *접근성* 개념을 도입했습니다. 이를 통해 작성자는 완벽한 액세서빌러티 지원이 없을 수 있는 웹 기술을 가장 효과적으로 사용하는 방법을 결정하거나 액세스 가능성 기능을 활용하려면 특정 보조 기술 및/또는 브라우저를 사용해야 할 수도 있습니다.
+* **우선 순위가 지정된 컨텍스트 기반 구현 지원:**
+WCAG 2.1 지침에는 장애가 있는 특정 사용자 그룹에 대한 지침을 따르지 않을 가능성이 있는 영향과 관련하여 우선 순위가 지정됩니다. 이를 통해 작성자는 특정 상황에 가장 중요한 지침에 대해 현명한 결정을 내릴 수 있습니다. 또한 *지원되는 액세서빌러티 개념*&#x200B;을 도입했습니다. 이를 통해 작성자는 완벽한 액세서빌러티 지원이 없을 수 있는 웹 기술을 가장 효과적으로 사용하는 방법을 결정하거나 액세서빌러티를 활용하려면 특정 보조 기술 및/또는 브라우저를 사용해야 할 수도 있습니다.
 
 이러한 목적은 WCAG 2.1의 구조에 상당한 영향을 주었습니다.
 
@@ -68,14 +68,14 @@ WCAG 2.1은 **POUR**&#x200B;이라는 약어로 지칭되는 액세스 가능한
 * 각 지침이 하나 이상의 **성공 기준**&#x200B;으로 구성되어 있습니다.
 * 성공 기준은 주어진 웹 페이지에 대해 `True` 또는 `False`인 구문으로 작성됩니다.
 * 성공 기준에는 어느 하나/또는 선택 사항을 포함하거나, 성공 기준을 충족할 필요가 없는 상황과 같은 예외를 포함할 수 있습니다.
-* 성공 기준은 상위 지침 및 원칙에 따라 1.1.1부터 4.1.1까지 번호가 매겨져 있습니다. 또한 이 성공 기준에는 쉽게 참조할 수 있도록 해당 기준의 의도를 요약하는 짧은 이름이 있습니다. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
+* 성공 기준은 상위 지침 및 원칙에 따라 1.1.1부터 4.1.1까지 번호가 매겨져 있습니다. 또한 이 성공 기준에는 쉽게 참조할 수 있도록 해당 기준의 의도를 요약하는 짧은 이름이 있습니다. 예를 들어 성공 기준 [1.1.1은 텍스트가 아닌 컨텐츠](https://www.w3.org/TR/WCAG/#non-text-content)입니다.
 * 성공 기준에는 관련 **기법** 목록이 포함되어 있습니다(아래에 자세히 설명됨).
 
 ## 지원 리소스 {#supporting-resources}
 
 원칙, 지침 및 성공 기준이라는 핵심적 WCAG 2.1 구성 요소 외에도 일련의 지원 문서가 있습니다. 이 중 일부는 지침의 여러 측면을 충족하는 방법에 대한 구체적인 조언을 제공하며, 또 다른 부분은 다양한 수준의 웹 작성자, 디자이너 및 개발자가 WCAG 2.1을 이해하고 가능한 한 효과적으로 사용할 수 있도록 지원하는 일반적인 참조 사항입니다.
 
-WCAG 2.1 자체는 안정적인 문서이며 변경되지 않지만 이러한 지원 리소스는 대부분 동적 문서입니다. 새로운 기술이 부상하면서 시간이 지남에 따라 이러한 기술이 변화하고 증가할 것이며 웹 접근성을 구현하는 새로운 사례가 발견됩니다.
+WCAG 2.1은 안정적인 문서이며 변경되지 않지만 이러한 지원 리소스의 대부분은 동적 문서라서 새로운 기술이 등장하고 시간이 지남에 따라 변화하고 확장될 것이며 웹 액세서빌러티를 실현하는 방법에 대한 새로운 사례를 발견할 수 있습니다.
 
 ### WCAG 2.1 리소스 {#wcag-resources}
 
@@ -92,7 +92,7 @@ WCAG 2.1 자체는 안정적인 문서이며 변경되지 않지만 이러한 �
 
 지침은 WCAG 2.1의 새로운 기능에 대한 정보를 제공합니다.
 
-* [WCAG 2.1의 새로운](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 기능은 WCAG 2.0과 WCAG 2.1 간의 델타에 대한 중요한 정보를 제공합니다.
+* [WCAG 2.1의 새로운 기능](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)에서는 WCAG 2.0과 WCAG 2.1 간의 차이에 대한 중요한 정보를 제공합니다.
 
 * [WCAG 2.0 및 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 섹션에서는 해당 관계의 상태를 더욱 명확하게 합니다.
 
@@ -109,7 +109,7 @@ WCAG 2.1에 대한 기법은 [WCAG 2.1용 기법](https://www.w3.org/WAI/WCAG21/
 * 컬렉션 사용(기법은 일반적이거나 HTML, CSS 또는 클라이언트측 스크립팅과 같은 특정 기술 또는 형식과 관련될 수 있음), 또는
 * 관련 성공 기준 사용. 기법은 두 개 이상의 성공 기준에 적용될 수 있습니다.
 
-각 기법에는 해당 컬렉션과 관련된 고유한 숫자가 있습니다. For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
+각 기법에는 해당 컬렉션과 관련된 고유한 숫자가 있습니다. 예를 들어 ARIA 기법 중 하나는 [기법 ARIA2: Aria-필수 속성을 사용하여 필수 필드 식별](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html)입니다.
 
 기법은 충분하거나, 도움이 되거나 실패할 수 있습니다.
 
@@ -143,7 +143,7 @@ WCAG 2.1에 대한 기법은 [WCAG 2.1용 기법](https://www.w3.org/WAI/WCAG21/
 
 ### WCAG 2.1을 충족하는 방법 {#how-to-meet-wcag}
 
-충족하는 방법 섹션은 [WCAG 2.1 을 충족하는 방법](https://www.w3.org/WAI/WCAG21/quickref/) 페이지에 있습니다. 이 섹션에서는 WCAG에 대한 대체 프레젠테이션을 제공하여 독자가 지침 내용을 자신의 관심 및/또는 상황과 가장 관련이 있는 사람에게 구체화할 수 있도록 합니다. 독자는 CSS(Cascading Style Sheet)나 스크립팅과 같은 특정 웹 컨텐츠 기술을 지정하거나 특정 우선 순위 수준을 지정하여 원하는 성공 기준 기법을 필터링할 수 있습니다.
+충족하는 방법 섹션은 [WCAG 2.1 을 충족하는 방법](https://www.w3.org/WAI/WCAG21/quickref/) 페이지에 있습니다. 이 섹션에서는 WCAG에 대한 대체 표현을 제공하여 독자가 지침의 컨텐츠를 독자의 관심사나 상황과 가장 관련이 있는 사항으로 구체화할 수 있습니다. 독자는 CSS(Cascading Style Sheet)나 스크립팅과 같은 특정 웹 컨텐츠 기술을 지정하거나 특정 우선 순위 수준을 지정하여 원하는 성공 기준 기법을 필터링할 수 있습니다.
 
 이 리소스는 필터링하지 않고 지침별로 그룹화된 모든 성공 기준을 제공합니다. 각 성공 기준에 대해 다음 항목이 제공됩니다.
 
