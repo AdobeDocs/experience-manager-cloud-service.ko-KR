@@ -1,22 +1,22 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침
-description: 클라우드 서비스로서의 Adobe Experience Manager 소개 및 웹 접근성 지침
-translation-type: tm+mt
+description: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세서빌러티 지침 소개
+translation-type: ht
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침{#aem-and-the-web-accessibility-guidelines}
 
-장애나 제한 사항에 관계없이 웹 컨텐츠를 타겟 대상자가 가능한 한 이용할 수 있도록 설계해야 할 많은 사회적, 경제적 및 법적 동기가 있습니다. Adobe Experience Manager(AEM)를 클라우드 서비스로 사용하는 웹 접근성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
+장애나 제한 사항에 관계없이 웹 컨텐츠를 타겟 대상자가 가능한 한 이용할 수 있도록 설계해야 할 많은 사회적, 경제적 및 법적 동기가 있습니다. 클라우드 서비스로서의 AEM(Adobe Experience Manager)을 사용하는 웹 액세스 가능성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
 
 클라우드 서비스로서의 AEM을 사용하여 액세스 가능한 웹 사이트 및 컨텐츠를 만드는 것은 다음과 같은 사용자에게 영향을 줍니다.
 
-* 액세스 가능성 기능이 올바르게 활성화되도록 AEM을 구성하는 관리자
+* 액세스 가능성 기능이 올바로 활성화되도록 AEM을 구성할 책임이 있는 관리자
 
 * 액세스 가능한 웹 사이트를 제작하기 위해 이러한 기능을 사용하는 작성자
 
@@ -24,11 +24,11 @@ ht-degree: 83%
 
 * 템플릿 개발자도 웹 사이트 디자인을 구현할 때 이러한 문제를 알고 있어야 합니다.
 
-클라우드 서비스로서의 Adobe Experience Manager는  [World Wide Web Consortium](#world-wide-web-consortium)에서 제공하는 [지침](#wcag-accessibility-guidelines)을 따라야 합니다.
+클라우드 서비스로서의 Adobe Experience Manager는 [World Wide Web Consortium](#world-wide-web-consortium)에서 제공하는 [지침](#wcag-accessibility-guidelines)을 따라야 합니다.
 
 >[!NOTE]
 >
-> 자세한 내용은 [Adobe 솔루션에](https://www.adobe.com/accessibility/compliance.html) 대한 액세스 가능성 보고서를 참조하십시오.
+> 자세한 내용은 [Adobe 솔루션에 대한 액세서빌러티 준수 보고서](https://www.adobe.com/accessibility/compliance.html)를 참조하십시오.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
