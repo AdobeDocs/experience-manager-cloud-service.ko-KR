@@ -2,9 +2,9 @@
 title: 페이지에 Dynamic Media 자산 추가
 description: AEM의 페이지에 Dynamic Media 구성 요소를 추가하는 방법
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '3132'
+source-wordcount: '3137'
 ht-degree: 26%
 
 ---
@@ -22,7 +22,7 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-페이지에 Dynamic Media, 대화형 미디어, 파노라마 미디어 또는 비디오 360 미디어 구성 요소를 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media 구성 요소는 다음 섹션에 설명되어 있습니다.
+3D 미디어, 다이내믹 미디어, 인터랙티브 미디어, 파노라마 미디어, 스마트 자르기 비디오 또는 비디오 360 미디어 구성 요소를 페이지에 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media 구성 요소는 다음 섹션에 설명되어 있습니다.
 
 **페이지에 Dynamic Media 구성 요소 추가**
 
@@ -51,7 +51,7 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
    Dynamic Media Video 360 미디어 구성 요소입니다.
 
-1. 완료되면 대화 상자의 오른쪽 위 모서리 근처에 있는 체크 표시를 눌러 변경 내용을 저장합니다.
+1. 완료되면 대화 상자의 오른쪽 위 모서리에서 확인 표시를 눌러 변경 내용을 저장합니다.
 
 ### Dynamic Media 구성 요소 활성화 {#enabling-dynamic-media-components}
 
