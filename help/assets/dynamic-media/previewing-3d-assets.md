@@ -2,15 +2,15 @@
 title: 3D 자산 미리 보기
 description: 3D 자산을 미리 보는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 12%
+source-wordcount: '566'
+ht-degree: 11%
 
 ---
 
 
-# 3D 자산 미리 보기{#previewing-3d-assets}
+# AEM에서 3D 자산 미리 보기{#previewing-3d-assets}
 
 Adobe Experience Manager는 제작 프로세스의 일환으로 3D 자산의 업로드, 전달 및 대화형 미리 보기를 지원합니다.
 
@@ -18,9 +18,9 @@ Adobe Experience Manager는 제작 프로세스의 일환으로 3D 자산의 업
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## 3D 미리 보기에 지원되는 포맷{#supported-3d-previewing-assets}
+## AEM에서 3D 미리 보기에 지원되는 포맷{#supported-3d-previewing-assets}
 
-인터랙티브한 3D 미리 보기는 다음 파일 형식을 지원합니다.
+AEM의 대화형 3D 미리 보기는 다음 파일 형식을 지원합니다.
 
 | 3D 파일 확장자 | 파일 포맷 | MIME 유형 | 메모 |
 |---|---|---|---|
@@ -40,13 +40,13 @@ Adobe Experience Manager는 제작 프로세스의 일환으로 3D 자산의 업
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Performance considerations when you preview 3D assets{#performance-3d-previewing-assets}
+## AEM에서 3D 자산을 미리 볼 때의 성능 고려 사항{#performance-3d-previewing-assets}
 
 자산 세부 사항 보기 페이지에서 3D 자산을 여는 데 걸리는 시간은 대역폭, 이미지 복잡도, 서버에 대한 대기 시간 등과 같은 여러 요인에 따라 다릅니다.
 
 또한 카메라를 대화형으로 조작할 때 클라이언트 컴퓨터(예: 워크스테이션, 노트북 또는 모바일 터치 장치)의 기능도 중요합니다. 그래픽 성능이 좋은 강력한 시스템에서는 대화형 3D 보기 환경이 좀 더 원활하고 유용할 수 있습니다.
 
-**3D 자산을 미리 보려면**
+**AEM에서 3D 자산을 미리 보려면**
 
 1. 3D 자산을 AEM에 업로드했는지 확인합니다.
 3D 미리 [보기](#supported-3d-previewing-assets) 및 자산 [업로드에 지원되는 형식을 참조하십시오](/help/assets/manage-digital-assets.md#uploading-assets).
