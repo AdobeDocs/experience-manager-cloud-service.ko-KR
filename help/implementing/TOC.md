@@ -1,11 +1,11 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
-translation-type: ht
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: ht
-source-wordcount: '181'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,8 @@ ht-degree: 100%
 + 클라우드 서비스로서의 AEM에 배포 {#deploying}
    + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
    + [클라우드 서비스로서의 AEM에 대한 OSGi 구성](deploying/configuring-osgi.md)
-+ 클라우드의 디스패처 {#dispatcher}
-   + [클라우드의 디스패처](dispatcher/overview.md)
-   + [클라우드 서비스로서의 AEM에서 컨텐츠 전달](dispatcher/content-delivery.md)
++ 컨텐츠 전달 개요 {#content-delivery}
+   + [컨텐츠 전달 흐름](dispatcher/overview.md)
+   + [클라우드의 디스패처](dispatcher/disp-overview.md)
+   + [클라우드 서비스로 AEM의 CDN](dispatcher/cdn.md)
+   + [클라우드 서비스로 AEM에서 캐싱](dispatcher/caching.md)
