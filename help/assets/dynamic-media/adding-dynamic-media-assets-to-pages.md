@@ -2,9 +2,9 @@
 title: 페이지에 Dynamic Media 자산 추가
 description: AEM의 페이지에 Dynamic Media 구성 요소를 추가하는 방법
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3124'
 ht-degree: 26%
 
 ---
@@ -34,10 +34,6 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Dynamic **[!UICONTROL Media]** 구성 요소를 페이지에서 원하는 위치에 놓습니다.
-
-   아래 예에서, **[!UICONTROL 비디오 360 미디어]** 구성 요소가 사용되고 있습니다.
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. 마우스 포인터를 구성 요소에 바로 놓습니다. 구성 요소 주위에 파란색 상자가 표시되면 한 번 눌러 구성 요소의 도구 모음을 표시합니다. 구성( **[!UICONTROL 렌치)]** 아이콘을 누릅니다.
 
@@ -121,6 +117,7 @@ Dynamic Media 구성 요소는 스마트합니다. 이미지를 추가하는지 
 >
 >* 동일한 페이지에서 사용되는 Dynamic Media 구성 요소의 여러 인스턴스.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
+
 >
 >
 해당 페이지의 각 Dynamic Media 구성 요소에 다른 뷰어 사전 설정을 할당하는 것은 지원되지 않습니다.
@@ -200,6 +197,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    * 캡션 파일을 비디오와 연결: [캡션](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * 탐색 파일을 비디오와 연결: [탐색](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL 제목**- 비디오 제목을 변경합니다.
@@ -258,6 +256,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 >
 >* 동일한 페이지에서 사용되는 대화형 미디어 구성 요소의 다중 인스턴스.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
+
 >
 >
 해당 페이지의 각 Interactive Media 구성 요소에 다른 뷰어 사전 설정을 할당하는 것은 지원되지 않습니다.
@@ -299,6 +298,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 >
 >* 동일한 페이지에서 사용되는 여러 **[!UICONTROL 파노라마 미디어]** 구성 요소 인스턴스입니다.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
+
 >
 >
 해당 페이지의 각 파노라마 미디어 구성 요소에 서로 다른 뷰어 **[!UICONTROL 사전]** 설정을 할당하는 것은 지원되지 않습니다.
