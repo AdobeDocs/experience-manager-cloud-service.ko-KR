@@ -2,7 +2,7 @@
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 translation-type: tm+mt
-source-git-commit: a6731a1a5476b1d6697bb01e5311e9acfc5016df
+source-git-commit: b03fcba0dc2e03b6ca0d57aa804bddf0817f227e
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 99%
@@ -86,7 +86,7 @@ ht-degree: 99%
    + [스마트 이미징](dynamic-media/imaging-faq.md)
    + [Dynamic Media 자산 제공](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](dynamic-media/hotlink-protection.md)
-   + [3D 이미지](/help/assets/dynamic-media/assets-3d.md)
+   + [3D 이미지](dynamic-media/assets-3d.md)
    + [이미지 세트](dynamic-media/image-sets.md)
    + [파노라마 이미지](dynamic-media/panoramic-images.md)
    + [혼합 미디어 세트](dynamic-media/mixed-media-sets.md)
