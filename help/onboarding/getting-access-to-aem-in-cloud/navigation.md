@@ -2,9 +2,9 @@
 title: 탐색
 description: 탐색 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 1f084c5f8b218808468ce7984fa0abdac497884f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '360'
 ht-degree: 2%
 
 ---
@@ -20,17 +20,20 @@ ht-degree: 2%
 
 ## SysAdmin 액세스 {#sysadmin-access}
 
-SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 권한이 관리되는 관리 콘솔의 위치에 대한 한 번의 클릭으로 액세스할 수 있습니다.
+SysAdmin 역할의 사용자는 한 번의 클릭으로 Cloud Manager에 대한 사용자 역할이나 권한이 관리되는 관리 콘솔의 위치에 액세스할 수 있습니다.
 
 ### 역할 관리 {#manage-roles}
 
 SysAdmin의 사용자로서, 프로그램 **추가** 옆의 랜딩 페이지에서 역할 **관리 옵션을 사용할 수 있습니다**. 이를 통해 Cloud Manager에 대한 사용자 역할이나 권한을 관리할 수 있는 관리 콘솔의 위치에 한 번의 클릭으로 액세스할 수 있습니다.
 
-프로필에 사용자를 추가하는 방법에 대한 자세한 내용은 [클라우드 관리자](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) 액세스를 참조하십시오. 클라우드 관리자 액세스
+프로파일에 사용자를 추가하는 방법에 대한 자세한 내용은 [클라우드 관리자](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) 액세스를 참조하십시오.
 
 ### AEM에 대한 액세스 관리 {#manage-access-aem}
 
-SysAdmin의 사용자는 Cloud Manager에서 직접 작성자 인스턴스에 한 번의 클릭으로 액세스할 수 있습니다.
+SysAdmin의 사용자는 한 번의 클릭으로 관리 콘솔에 액세스할 수 있습니다. 여기에서 작성자 인스턴스로 바로 이동하여 액세스 권한을 관리할 수 있습니다.
+
+![](assets/manage-access1.png)
+
 자세한 [내용은 AEM의 인스턴스 액세스를 클라우드 서비스로](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 참조하십시오.
 
 ## 기존 AMS 고객의 경우 {#existing-aem}
