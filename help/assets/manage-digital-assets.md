@@ -4,9 +4,9 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4284'
+source-wordcount: '4419'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,19 @@ ht-degree: 2%
 
 ## Upload assets {#uploading-assets}
 
-자세한 내용은 [Adobe Experience Manager에](add-assets.md)디지털 자산 추가를 참조하십시오.
+Experience Manager에 디지털 자산 [추가를 참조하십시오](add-assets.md).
+
+## 중복 에셋 검색 {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드하는 경우, 중복을 [!DNL Experience Manager] 감지하여 사용자에게 알립니다. 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 중복 감지는 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL Adobe AEM Cloud Asset Duplicator를 구성합니다]. OSGi 구성 [방법](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)보기 중복 검색은 에 저장된 고유 `dam:sha1` 값을 기반으로 합니다 `jcr:content/metadata/dam:sha1`. 즉, 파일 이름이 다른 경우에도 중복된 자산이 검색됩니다.
+
+![중복 자산 OSGi 구성 감지](assets/duplicate-detection.png)
+
+활성화되면 Adobe Experience Manager는 중복된 자산에 대한 알림을 받은 편지함으로 보냅니다. 여러 중복에 대해 집계된 결과입니다. 사용자는 결과에 따라 자산을 제거하도록 선택할 수 있습니다.
+
+![중복 자산에 대한 받은 편지함 알림](assets/duplicate-detect-inbox-notification.png)
 
 ## 에셋 미리 보기 {#previewing-assets}
 
@@ -89,6 +101,7 @@ ht-degree: 2%
    * 자산을 보거나 다운로드한 횟수
    * 자산이 사용된 채널/장치
    * 자산이 최근 사용된 크리에이티브 솔루션
+
    자세한 내용은 자산 [인사이트를 참조하십시오](assets-insights.md).
 
 1. 저장 및 **[!UICONTROL 닫기를 탭/클릭합니다]**.
@@ -160,6 +173,7 @@ ht-degree: 2%
    * 뒤로를 탭/ **[!UICONTROL 클릭하여]** 대상 **[!UICONTROL 선택 화면으로]** 돌아갑니다.
 
    * 취소를 탭/ **[!UICONTROL 클릭하여]** 이동 작업을 중지합니다.
+
    참조를 업데이트하지 않으면 자산의 이전 경로를 계속 가리킵니다. 참조를 조정하면 새 자산 경로로 업데이트됩니다.
 
 ### 변환 관리 {#managing-renditions}
@@ -233,6 +247,7 @@ ht-degree: 2%
 
       * 자산에 참조가 없으면 자산이 삭제됩니다.
       * 자산에 참조가 있으면, 오류 메시지가 하나 **이상의 자산이 참조되었다고 알려줍니다.** **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
+
    >[!NOTE]
    >
    >자산을 삭제할 수 있으려면 dam/asset에 대한 삭제 권한이 필요합니다. 수정 권한만 있는 경우 자산 메타데이터만 편집하고 자산에 주석을 추가할 수 있습니다. 하지만 자산이나 해당 메타데이터를 삭제할 수는 없습니다.
@@ -292,6 +307,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL 작업을 중지하려면]** 취소
    * **[!UICONTROL 게시]** 취소를 클릭하여 지정된 날짜에 자산 게시 취소(더 이상 게시 환경에서 사용할 수 없음)가 되었는지 확인합니다.
+
    >[!NOTE]
    >
    >복잡한 자산을 게시 취소할 때는 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조를 게시 취소하지 마십시오.
@@ -344,6 +360,7 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
    * 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭/탭합니다.
    * 카드 보기에서 자산에 나타나는 **[!UICONTROL 편집]** 아이콘을 탭/클릭합니다.
    * 자산 페이지의 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 탭/클릭합니다.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. 이미지를 자르려면 자르기 아이콘을 탭/ **클릭합니다** .
@@ -414,6 +431,7 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    * [빠른 작업](#quick-actions)
    * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. 타임라인 아래쪽에 있는 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는, 이미지에서 영역을 마크업하고 주석 **[!UICONTROL 추가 대화 상자에 주석을]** 추가합니다.
