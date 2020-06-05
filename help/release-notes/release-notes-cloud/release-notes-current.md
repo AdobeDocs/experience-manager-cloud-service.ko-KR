@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.6.0용 릴리스 노트
 description: Experience Manager 2020.6.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1843'
 ht-degree: 7%
 
 ---
@@ -120,17 +120,12 @@ PM/EM review required before publishing.
 
 **3D 컨텐츠 수집, 미리 보기 및 전달 지원**
 
-조직은 이제 AEM Assets 내에서 3D 파일을 저장하고 사용할 수 있습니다. 사용자는 .obj, .stl, .gltf 및 .glb 파일을 비롯한 다양한 핵심 3D 파일을 업로드, 미리 보고 활용할 수 있습니다. 또한 [!DNL Dynamic Media]독립적인 URL 또는 뷰어를 통해 3D 경험을 구성하고 전달할 수 있습니다. 여기에는 [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer 구성 요소 및 3D 파일을 [!DNL Dynamic Media] (AR/VR)를 통해 전달하는 기능이 포함됩니다.
-
-<!-- TBD: Add link to the DM help article, if any. -->
+조직은 이제 AEM Assets 내에서 3D 파일을 저장하고 사용할 수 있습니다. 사용자는 .obj, .stl, .gltf 및 .glb 파일을 비롯한 다양한 핵심 3D 파일을 업로드, 미리 보고 활용할 수 있습니다. 또한 [!DNL Dynamic Media]독립적인 URL 또는 뷰어를 통해 3D 경험을 구성하고 전달할 수 있습니다. 여기에는 [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer 구성 요소 및 3D 파일을 [!DNL Dynamic Media] (AR/VR)를 통해 전달하는 기능이 포함됩니다. 다이내믹 [미디어에서 3D 자산 작업을 참조하십시오](/help/assets/dynamic-media/assets-3d.md).
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **액세스 가능성 개선**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * 사용자 인터페이스 요소, 컨트롤 및 입력 양식 필드는 키보드를 사용하여 액세스할 수 있습니다.
 * 일부 인터페이스 요소의 색상 또는 대비를 변경하여 시력이 제한적이고 색상에 대한 인식 없이도 사용자가 이러한 요소를 더욱 구별할 수 있도록 합니다. 예를 들어, 이제 자산 페이지 및 카드 보기의 별 등급 아이콘에 [!UICONTROL 적절한] 대비가 있습니다.
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **기타 개선 사항**
 
 이 릴리스에서는 다음과 같은 추가 개선 사항이 제공됩니다.
 
-* 자산 사용자 인터페이스에 대한 접근성 개선 사항.
 * 자산 처리 프로필로 자산을 재처리할 수 있으므로 프로세스를 완전히 제어할 수 있습니다(전체 자산 처리 실행, 특정 처리 프로필 적용, 사후 처리 워크플로우 실행 여부 결정).
 * 검색 쿼리는 기본 클러스터 인스턴스가 백그라운드에서 다시 시작되었을 때 결과를 빠르게 반환합니다(이러한 경우 초기 검색 실행이 더 오래 지속될 수 있음).
-* 자산 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때는 &#39;이름&#39;으로 정렬합니다.
-* 자산 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때 &#39;만든 날짜&#39;(날짜)로 정렬합니다.
-* EPS 파일을 이미지로 변환하는 지원
+* 자산 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때는 &#39;이름&#39;으로 정렬합니다. 자산 [검색을 참조하십시오](/help/assets/search-assets.md#sort).
+* 자산 인터페이스 및 검색 결과의 목록 보기에서 자산을 볼 때 &#39;만든 날짜&#39;(날짜)로 정렬합니다. 자산 [검색을 참조하십시오](/help/assets/search-assets.md#sort).
+* 에셋 마이크로서비스를 사용하여 EPS 파일을 이미지로 변환하는 지원
 
 ### 버그 수정 {#assets-bug-fixes}
 
