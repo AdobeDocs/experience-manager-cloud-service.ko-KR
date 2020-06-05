@@ -2,9 +2,9 @@
 title: 프로그램 만들기 - 클라우드 서비스
 description: 프로그램 만들기 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,19 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 클라우드 관리자의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 클라우드 관리자 UI를 통해 프로덕션 및 스테이지 환경 세트를 삭제할 수 있습니다.
 
-삭제 옵션은 환경 페이지뿐만 아니라 *개요* 페이지의 환경 카드에서도 사용할 수 **있습니다** . 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
+>[!NOTE]
+>프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
+
+아래와 같이 랜딩 페이지에서 삭제 옵션을 사용할 수 있습니다.
+
+![](assets/delete-sandbox1.png)
+
+또는,
+
+[ **개요** ] *페이지에서 [프로그램* 삭제]를 선택하여 샌드박스 프로그램을 삭제합니다.
+
+![](assets/delete-sandbox2.png)
+
 
 ## 정규 프로그램 만들기 {#create-regular-program}
 
