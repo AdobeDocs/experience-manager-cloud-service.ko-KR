@@ -2,7 +2,7 @@
 title: 탐색
 description: 탐색 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -33,11 +33,9 @@ SysAdmin 역할의 사용자는 한 번의 클릭으로 Cloud Manager에 대한 
 
 1. 클라우드 관리자의 랜딩 페이지로 이동하고 액세스 **관리를 클릭합니다**.
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. 액세스 **관리** 를 **클릭하면** Cloud Manager에 대한 사용자 역할 또는 권한을 관리할 수 있는 관리 콘솔로 이동합니다.
-
-   ![](assets/sys-admin2.png)
 
 ### 작성자 인스턴스에 대한 액세스 관리 {#manage-access-aem}
 
@@ -48,14 +46,17 @@ SysAdmin 역할의 사용자는 한 번의 클릭으로 **관리 콘솔에** 액
 
 자세한 [내용은 AEM의 인스턴스 액세스를 클라우드 서비스로](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 참조하십시오.
 
-1. 아래 그림과 같이 **개요** 페이지 ** 또는 **환경** 페이지에서 **환경** 카드로 이동하여 액세스관리옵션을 사용합니다.
+1. 프로그램 **개요** 페이지에서 **환경** 카드로이동합니다.
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
+
+   또는,
+
+   환경 **카드** 에서 세부 **를** 클릭하여 환경 페이지를 엽니다. 관리 **-> 액세스** **관리를 클릭합니다**.
+
+   ![](assets/sys-admin4.png)
 
 1. 액세스 **관리** 를 **클릭하면** 환경의 작성자 인스턴스에 대한 액세스 권한이 있는 관리 콘솔로이동합니다.
-
-   ![](assets/sys-admin3.png)
-
 
 ## 기존 AMS 고객의 경우 {#existing-aem}
 
