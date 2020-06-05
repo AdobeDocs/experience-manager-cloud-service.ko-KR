@@ -2,7 +2,7 @@
 title: 탐색
 description: 탐색 - 클라우드 서비스
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
@@ -59,6 +59,8 @@ SysAdmin 역할의 사용자는 한 번의 클릭으로 **관리 콘솔에** 액
    ![](assets/sys-admin4.png)
 
 1. 액세스 **관리**&#x200B;를 클릭하면 **환경의** 작성자 인스턴스에 대한 액세스 권한이 있는 관리 콘솔로 이동합니다.
+
+   ![](assets/sys-admin-2.png)
 
 ## 기존 AMS 고객의 경우 {#existing-aem}
 
