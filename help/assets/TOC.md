@@ -2,10 +2,10 @@
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 translation-type: tm+mt
-source-git-commit: b03fcba0dc2e03b6ca0d57aa804bddf0817f227e
+source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 99%
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 99%
    + [API 및 참조 자료](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [처리 프로필](/help/assets/dynamic-media/processing-profiles.md)
+   + [스마트 태그 구성](smart-tags-configuration.md)
    + [다국어 자산 및 자산 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
    + [자산 편집기 확장](extend-asset-editor.md)
@@ -86,7 +87,7 @@ ht-degree: 99%
    + [스마트 이미징](dynamic-media/imaging-faq.md)
    + [Dynamic Media 자산 제공](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](dynamic-media/hotlink-protection.md)
-   + [3D 이미지](dynamic-media/assets-3d.md)
+   + [3D 지원](dynamic-media/assets-3d.md)
    + [이미지 세트](dynamic-media/image-sets.md)
    + [파노라마 이미지](dynamic-media/panoramic-images.md)
    + [혼합 미디어 세트](dynamic-media/mixed-media-sets.md)
