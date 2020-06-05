@@ -3,19 +3,19 @@ title: 지능적인 서비스를 사용하여 이미지에 태그 지정
 description: Adobe Sensei 서비스를 사용하여 상황에 맞는 설명형 비즈니스 태그를 적용하는 지능적인 서비스를 통해 이미지에 태그를 지정할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 0%
 
 ---
 
 
-# 스마트 서비스를 사용하여 이미지에 태그 지정 {#smart-tag-assets}
+# 스마트 태그 서비스 트레이닝 및 이미지 태그 지정 {#train-service-tag-assets}
 
 디지털 자산을 처리하는 조직은 자산 메타데이터에 분류 제어 용어를 점점 더 사용하고 있습니다. 기본적으로 직원, 파트너 및 고객이 디지털 자산을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록이 포함되어 있습니다. 분류 제어 어휘를 사용하여 자산에 태그를 지정하면 태그 기반 검색으로 자산을 쉽게 식별하고 검색할 수 있습니다.
 
-자연어 어휘와 비교하여 비즈니스 분류 방식을 기반으로 태그를 지정하면 자산을 회사의 비즈니스에 맞게 조정하고 검색에서 가장 연관성 있는 자산이 표시되도록 할 수 있습니다. 예를 들어 자동차 제조업체는 자동차 이미지에 모델 이름을 태그로 지정할 수 있으므로 프로모션 캠페인을 디자인하기 위해 검색될 때 관련 이미지만 표시되도록 할 수 있습니다.
+자연어 어휘와 비교하여 비즈니스 분류 방식을 기반으로 태그를 지정하면 자산을 회사의 비즈니스에 맞게 조정하고 검색에서 가장 관련성이 높은 자산이 표시되도록 할 수 있습니다. 예를 들어 자동차 제조업체는 자동차 이미지에 모델 이름을 태그로 지정할 수 있으므로 프로모션 캠페인을 디자인하기 위해 검색될 때 관련 이미지만 표시되도록 할 수 있습니다.
 
 백그라운드에서 스마트 태그는 [Adobe Sensei의](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) 인공 지능 프레임워크를 사용하여 태그 구조 및 비즈니스 분류 체계에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 스마트 태그 지정을 사용하려면 다음 작업을 완료하십시오.
 
-* [Adobe Experience Manager와 Adobe I/O](#integrate-aem-with-aio)통합
+* [Adobe Developer Console과 Experience Manager 통합](#integrate-aem-with-aio).
 * [태그 모델 및 지침을 이해합니다](#understand-tag-models-guidelines).
 * [모델](#train-model)트레이닝
 * [디지털 에셋에 태그를 지정할 수 있습니다](#tag-assets).
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Adobe I/O [!DNL Experience Manager] 와 통합 {#integrate-aem-with-aio}
+## Adobe 개발자 콘솔 [!DNL Experience Manager] 과 통합 {#integrate-aem-with-aio}
 
-Adobe I/O를 사용하여 스마트 태그 [!DNL Adobe Experience Manager] 와 통합할 수 있습니다. 이 구성을 사용하여 내에서 스마트 태그 서비스에 액세스합니다 [!DNL Experience Manager].
+Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마트 태그와 통합할 수 있습니다. 이 구성을 사용하여 내에서 스마트 태그 서비스에 액세스합니다 [!DNL Experience Manager].
 
-스마트 태그를 구성하는 작업에 대한 자산 [](smart-tags-configuration.md) 스마트 태그 지정을 위한 Experience Manager 구성을 참조하십시오. 백엔드 [!DNL Experience Manager] 는 Smart Tags 서비스로 요청을 전달하기 전에 Adobe I/O 게이트웨이로 서비스 자격 증명을 인증합니다.
+스마트 태그를 구성하는 작업에 대한 자산 [](smart-tags-configuration.md) 스마트 태그 지정을 위한 Experience Manager 구성을 참조하십시오. 백엔드 [!DNL Experience Manager] 는 스마트 태그 서비스로 요청을 전달하기 전에 Adobe 개발자 콘솔 게이트웨이로 서비스 자격 증명을 인증합니다.
 
 ## 태그 모델 및 지침 이해 {#understand-tag-models-guidelines}
 
