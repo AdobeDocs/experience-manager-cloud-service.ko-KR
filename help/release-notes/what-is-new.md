@@ -1,8 +1,11 @@
 ---
 title: 새로운 기능
 description: '클라우드 서비스로서의 Adobe Experience Manager(AEM)의 새로운 기능 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 100%
 
 ---
 
