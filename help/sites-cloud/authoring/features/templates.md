@@ -1,8 +1,11 @@
 ---
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '4554'
+ht-degree: 100%
 
 ---
 
@@ -547,6 +550,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    * 왼쪽 절반 섹션에서는 [페이지 정책](#page-policies)을 정의합니다.
    * 오른쪽 절반 섹션에서는 [페이지 속성](#page-properties)을 정의합니다.
+
    ![페이지 디자인](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### 페이지 정책 {#page-policies}
@@ -635,6 +639,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * 구조만- 즉시 적용
       * 초기 컨텐츠 포함 - 변경 후에 생성된 페이지만
+
    다음 작업을 수행할 때는 특히 주의하십시오.
 
    * 활성화된 템플릿에서 구성 요소 잠금 또는 잠금 해제.
@@ -642,6 +647,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * 구성 요소(잠겨 있는)의 잠금을 해제하면 기존 페이지에서 누락됩니다.
       * 구성 요소(편집 가능)를 잠그면 해당 컨텐츠가 페이지에 표시되지 않고 숨겨집니다.
+
    >[!NOTE]
    >
    >AEM은 더 이상 초안이 아닌 템플릿에서 구성 요소의 잠금 상태를 변경할 때 명시적인 경고를 제공합니다.
