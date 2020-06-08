@@ -3,6 +3,9 @@ title: 워크플로우에 참여
 description: '워크플로우는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 73%
 
 ---
 
@@ -36,7 +39,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * 페이지가 적용되는 워크플로우의 수. 다음을 작업을 수행할 수 있습니다.
       * 왼쪽/오른쪽 화살표를 사용하여 다양한 워크플로우의 상태 정보를 탐색할 수 있습니다.
       * 실제 숫자를 클릭/탭하여 적용 가능한 모든 워크플로우가 있는 드롭다운 목록을 연 다음, 상태 표시줄에 표시할 워크플로우를 선택할 수 있습니다.
-   ![여러 워크플로우가 있는 페이지](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+
+   ![다양한 워크플로우가 있는 페이지](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
    >
@@ -154,7 +158,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 새 할당자를 지정합니다.
 
-   ![담당자 변경](/help/sites-cloud/authoring/assets/workflows-assignee.png)
+   ![할당자 변경](/help/sites-cloud/authoring/assets/workflows-assignee.png)
 
 1. Select **Assign** to confirm the action.
 
