@@ -1,8 +1,11 @@
 ---
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 100%
 
 ---
 
@@ -67,6 +70,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
    * 이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
    * 예를 들어 웹 사이트 `http://example.com`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `welcome`으로 설정하면, `http://example.com/welcome`이 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
+
    >[!CAUTION]
    >
    >별칭 URL:
@@ -172,6 +176,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 * **클라우드 서비스**
 
    * 클라우드 서비스에 대한 속성을 정의합니다.
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -180,6 +185,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 * **ContextHub 구성**
 
    * ContextHub 구성 및 세그먼트 경로를 선택합니다.
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -196,6 +202,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
    * 권한 추가
    * 폐쇄된 사용자 그룹 편집
    * 유효 권한 보기
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -207,6 +214,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 * **블루프린트**
 
    * 다중 사이트 관리 내에서 블루프린트 페이지에 대한 속성을 정의합니다.
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
