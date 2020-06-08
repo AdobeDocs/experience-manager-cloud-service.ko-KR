@@ -314,4 +314,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## 소스 제어에서 유지 관리 작업 구성 {#maintenance-tasks-configuration-in-source-control}
 
-클라우드 환경에서 **도구 > 작업** 화면을 더 이상 사용할 수 없으므로 유지 관리 작업 구성은 소스 제어에서 유지되어야 합니다. 이는 변경 사항이 적극적으로 적용되거나 잊혀지는 것이 아니라 의도적으로 유지되도록 보장하는 이점이 있습니다. 자세한 내용은 [유지 관리 작업 문서를](/help/operations/maintenance.md) 참조하십시오.
+클라우드 환경에서 **도구 > 작업** 화면을 더 이상 사용할 수 없으므로 유지 관리 작업 구성은 소스 제어에서 유지되어야 합니다. 이는 변경 사항이 적극적으로 적용되거나 잊혀지는 것이 아니라 의도적으로 지속되도록 보장하는 이점이 있습니다. 자세한 내용은 [유지 관리 작업 문서를](/help/operations/maintenance.md) 참조하십시오.
