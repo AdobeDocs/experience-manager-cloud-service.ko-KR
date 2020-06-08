@@ -1,9 +1,9 @@
 ---
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 100%
 
@@ -189,6 +189,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    * 새 페이지를 만드는 데 사용할 템플릿을 선택한 후, **다음**&#x200B;을 클릭/탭하여 계속 진행합니다.
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
+
    ![새 페이지에 사용할 템플릿 선택](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. 마법사의 마지막 단계에서 다음 중 하나를 수행할 수 있습니다.
@@ -196,6 +197,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    * 세 탭을 사용하여 새 페이지에 지정할 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)을 입력한 다음, 실제로 페이지를 만들려면 **만들기**&#x200B;를 클릭/탭합니다.
 
    * 선택한 템플릿으로 돌아가려면 **뒤로**&#x200B;를 사용하십시오.
+
    주요 필드는 다음과 같습니다.
 
    * **제목**:
@@ -206,6 +208,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
       * URI를 생성하는 데 사용됩니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
       * 새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * **이름** 필드에 **잘못된 문자를 제출**&#x200B;할 수 없습니다. AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
+
    >[!TIP]
    >
    >[페이지 이름 지정 규칙](#page-naming-conventions)을 참조하십시오.
@@ -240,6 +243,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
    * [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 및 도구 모음
+
    그런 다음 **편집** 아이콘을 선택하십시오.
 
    ![편집 단추](/help/sites-cloud/authoring/assets/edit.png)
@@ -259,6 +263,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
    * [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 및 도구 모음
+
    그런 다음 페이지 **복사** 아이콘을 선택합니다.
 
    ![복사](/help/sites-cloud/authoring/assets/copy.png)
@@ -276,6 +281,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
    1. **붙여넣기** 아이콘 자체를 선택합니다. 원본 페이지와 모든 하위 페이지의 복사본이 이 위치에 만들어집니다.
    1. 드롭다운 화살표를 선택하여 **하위 항목 없이 붙여넣기** 옵션을 표시합니다. 이 위치에 원본 페이지의 복사본이 만들어집니다. 하위 페이지는 복사되지 않습니다.
+
    >[!NOTE]
    >
    >페이지를 원본과 동일한 이름의 페이지가 이미 있는 위치에 복사하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `beach`가 이미 존재하는 경우 `beach`를 사용하는 새 페이지는 `beach1`이 됩니다.
@@ -295,6 +301,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    * [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) 및 도구 모음
+
    그런 다음 페이지 **이동** 아이콘을 선택합니다.
 
    ![이동 단추](/help/sites-cloud/authoring/assets/move.png)
@@ -305,6 +312,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    * 페이지가 이동되면 사용할 페이지의 이름을 지정한 후 **다음**&#x200B;을 클릭/탭하여 다음 단계로 진행합니다.
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
+
    ![페이지 이동 및 이름 변경](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    페이지를 이동하는 경우에만 페이지 이름이 동일하게 유지될 수 있습니다.
@@ -320,6 +328,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
       * 대상의 썸네일을 클릭하여 대상을 선택합니다.
       * 계속하려면 **다음**&#x200B;을 클릭하십시오.
    * **뒤로**&#x200B;를 사용하여 페이지 이름 지정으로 돌아갑니다.
+
    >[!NOTE]
    >
    >기본적으로 이동/이름을 바꾼 페이지의 상위 페이지는 대상으로 선택됩니다.
