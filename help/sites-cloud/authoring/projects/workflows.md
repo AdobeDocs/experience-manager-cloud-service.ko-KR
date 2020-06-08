@@ -3,6 +3,9 @@ title: 프로젝트 워크플로우 작업
 description: 다양한 프로젝트 워크플로우를 즉시 사용할 수 있습니다.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 71%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 | 론치 요청 | x |  |  |
 | 랜딩 페이지 요청 | x |  |  |
 | 이메일 요청 | x |  |  |
-| DAM 언어 복사 및 암호 만들기;ast; |  |  | x |
+| DAM 언어 사본 만들기;ast; |  |  | x |
 | DAM 언어 복사 및 번역;ast; |  |  | x |
 
 >[!NOTE]
@@ -41,7 +44,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 [프로젝트]에서 바로 워크플로우를 시작합니다([DAM 언어 사본 작성]이나 [DAM 언어 사본 작성 및 번역] 제외). 프로젝트에서 아직 처리되지 않은 작업에 대한 정보는 **작업** 타일에 나열됩니다. 완료해야 하는 작업에 대한 알림은 사용자 아이콘 옆에 표시됩니다.
 
-AEM에서 워크플로우 작업에 대한 자세한 내용은 다음을 참조하십시오.
+AEM의 워크플로우 작업에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)
 * [페이지에 워크플로우 적용](/help/sites-cloud/authoring/workflows/applying.md)
@@ -60,7 +63,7 @@ AEM에서 워크플로우 작업에 대한 자세한 내용은 다음을 참조�
 
 1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. 작업이 **작업** 타겟에 나타납니다.
 
-   ![요청 사본 추가됨](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
+   ![요청 카피 추가됨](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
 
 ## 프로젝트 승인 워크플로우 {#project-approval-workflow}
 
@@ -73,7 +76,7 @@ AEM에서 워크플로우 작업에 대한 자세한 내용은 다음을 참조�
 
 1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. 작업이 **작업** 타겟에 나타납니다.
 
-   ![승인 요청 추가됨](/help/sites-cloud/authoring/assets/projects-approval-add.png)
+   ![요청 승인 추가됨](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## 론치 요청 워크플로우 {#request-launch-workflow}
 
@@ -84,7 +87,7 @@ AEM에서 워크플로우 작업에 대한 자세한 내용은 다음을 참조�
 
    ![론치 요청](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. **워크플로우가 워크플로우**&#x200B;목록에&#x200B;**나타납니다(줄임표 클릭**...을 **클릭하여** 이 목록에 액세스합니다.)
+1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
 
 ## 자산에 대한 언어 복사 워크플로우 생성(및 번역){#create-and-translate-language-copy-workflow-for-assets}
 
