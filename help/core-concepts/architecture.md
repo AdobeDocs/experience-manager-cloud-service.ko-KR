@@ -1,8 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 아키텍처 소개
 description: '클라우드 서비스로서의 Adobe Experience Manager 아키텍처 소개. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 100%
 
 ---
 
