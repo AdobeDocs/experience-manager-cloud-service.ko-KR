@@ -4,6 +4,9 @@ description: 자산 API를 사용하면 이진, 메타데이터, 변환, 주석 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+workflow-type: tm+mt
+source-wordcount: '1249'
+ht-degree: 1%
 
 ---
 
