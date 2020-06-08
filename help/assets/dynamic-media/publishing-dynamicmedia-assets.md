@@ -33,6 +33,7 @@ See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplicati
 >
 >* URL을 사용하려면 자산을 게시해야 합니다. 에셋이 게시되지 않으면 URL을 복사하여 웹 브라우저에 붙여넣는 기능이 작동하지 않습니다.
 >* 실시간 전달을 위해 이미지 사전 설정과 뷰어 사전 설정을 활성화하고 게시해야 합니다.
+
 >
 
 
