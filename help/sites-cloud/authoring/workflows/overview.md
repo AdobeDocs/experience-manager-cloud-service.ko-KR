@@ -3,6 +3,9 @@ title: 워크플로우 작업
 description: AEM의 워크플로우에서는 페이지나 자산에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 100%
 
 ---
 
@@ -24,5 +27,5 @@ AEM 워크플로우에서는 (하나 이상의) 페이지 및/또는 자산에�
 
 다음 페이지에 이 내용이 나와 있습니다.
 
-* ](/help/sites-cloud/authoring/workflows/applying.md)페이지에 워크플로우 적용[
-* ](/help/sites-cloud/authoring/workflows/participating.md)워크플로우에 참여[
+* [페이지에 워크플로우 적용](/help/sites-cloud/authoring/workflows/applying.md)
+* [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)
