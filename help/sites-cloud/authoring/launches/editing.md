@@ -3,6 +3,9 @@ title: 론치 편집
 description: '페이지(또는 페이지 세트)에 대한 론치를 만들면 페이지의 론치 카피에서 컨텐츠를 편집할 수 있습니다. '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +31,7 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 표준 Live Copy를 편집하는 것과 동일한 방법으로 변경 작업을 수행할 수 있습니다. 예를 들면 다음과 같습니다.
 
 * 닫힌 자물쇠를 클릭하면 이 동기화가 중단되고 론치에서 컨텐츠를 새로 업데이트할 수 있습니다. 잠금 해제되면(열려 있는 자물쇠) 사용자가 수행한 변경 내용을 소스 분기 내의 동일한 위치에 수행된 변경 내용이 덮어쓰지 않습니다.
-* **특정** 페이지에 **대한 상속을 일시 중단**(및 다시 시작)합니다.
+* **특정 페이지에 대한 상속을 일시 중단** (및 **다시 시작**)합니다.
 
 자세한 내용은 Live Copy 컨텐츠 변경을 참조하십시오. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
 
@@ -40,7 +43,7 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 1. **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**패널을 열고&#x200B;**론치**를 선택합니다.
 1. 특정 론치를 선택한 다음, **소스와 비교**&#x200B;를 선택합니다.
 
-   ![론치를 소스와 비교](/help/sites-cloud/authoring/assets/launches-compare.png)
+   ![론치와 소스 비교](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. 두 페이지(론치와 소스)가 나란히 열립니다.
 
