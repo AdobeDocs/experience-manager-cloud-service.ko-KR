@@ -1,8 +1,11 @@
 ---
 title: 개인화 및 컨텐츠 타깃팅된
-description: AEM에서 개인화된 콘텐츠를 제작하는 방법 살펴보기
+description: AEM에서 개인화된 컨텐츠를 만드는 방법 학습
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 79%
 
 ---
 
@@ -41,7 +44,7 @@ Use the [Activities console](/help/sites-cloud/authoring/personalization/activit
 
 오퍼는 경험을 위한 페이지에서 위치에 나타나는 컨텐츠입니다. 서로 다른 경험에 대해 서로 다른 오퍼를 사용하여 대상을 위한 컨텐츠의 효과를 극대화하십시오.
 
-예를 들어 샘플 웹 사이트의 여성 페이지에서는 페이지 상단에 표시되는 티저 이미지로 오퍼를 사용할 수 있습니다. 다른 오퍼가 30 이상 여성 경험과 30 미만 여성 경험을 위한 티저로 사용될 수 있습니다.
+예를 들어 샘플 웹 사이트의 여성 페이지에서는 페이지 상단에 나타나는 티저 이미지로 오퍼를 사용할 수 있습니다. 다른 오퍼가 30 이상 여성 경험과 30 미만 여성 경험을 위한 티저로 사용될 수 있습니다.
 
 [오퍼 콘솔](/help/sites-cloud/authoring/personalization/offers.md)을 사용하여 여러 경험에서 사용할 수 있는 오퍼를 만드십시오. [타깃팅된 컨텐츠를 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)할 때 단일 사용 오퍼를 만들거나 오퍼 라이브러리의 오퍼를 추가하십시오.
 
