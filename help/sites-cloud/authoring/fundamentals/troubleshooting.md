@@ -1,8 +1,11 @@
 ---
 title: 작성 시의 AEM 문제 해결
 description: AEM을 사용할 때 발생할 수 있는 몇 가지 문제
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 100%
 
 ---
 
