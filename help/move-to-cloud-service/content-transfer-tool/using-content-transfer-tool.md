@@ -217,7 +217,7 @@ ht-degree: 1%
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
 
-1. [마이그레이션 **세트** 삭제] 대화 **상자에서** 삭제를 클릭하여 삭제를 확인합니다.
+1. [마이그레이션 **세트** **삭제** ] 대화 상자에서 삭제를 클릭하여 삭제를 확인합니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
