@@ -1,8 +1,11 @@
 ---
 title: 릴리스 2020.3.0 릴리스 노트
 description: 릴리스 2020.3.0 릴리스 노트
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
 
