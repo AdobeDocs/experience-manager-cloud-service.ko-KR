@@ -4,13 +4,16 @@ description: 클라우드 서비스로서 자산에 필요한 구성 및 관리 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 0%
 
 ---
 
 
 # 자산을 클라우드 서비스로 구성 및 관리 {#config-administer-assets-cloud-service}
 
-이 문서에서는 Adobe Experience Manager Assets를 클라우드 서비스로 사용하기 시작하는 데 필요한 최상위 구성 또는 관리 작업을 나열합니다.
+이 문서에서는 Adobe Experience Manager Assets를 클라우드 서비스로 사용하여 시작하는 데 필요한 최상위 수준의 구성 또는 관리 작업을 나열합니다.
 
 <!-- SCOPE 
 
