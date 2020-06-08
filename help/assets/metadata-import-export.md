@@ -4,6 +4,9 @@ description: 이 문서에서는 메타데이터를 일괄적으로 가져오고
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 2%
 
 ---
 
