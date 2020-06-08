@@ -131,6 +131,7 @@ Adobe Experience Manager 구성 요소는 페이지 컨텐츠를 숨기며 사�
 >* **이름**: `configPath`
 >* **유형**: `String`
 >* **값**: 실제 구성을 포함하는 노드의 경로
+
 >
 >
 RTE 구성 노드의 이름을 다음으로 지정하지 마십시오 `config`. 그렇지 않으면 RTE 구성은 관리자만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
@@ -164,6 +165,7 @@ RTE 플러그인의 자세한 구성에 대해서는 RTE 플러그인을 활성�
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 자체 텍스트 구성 요소를 만들려면 이러한 구성 요소를 편집하는 대신 위의 구성 요소를 복사하십시오.
