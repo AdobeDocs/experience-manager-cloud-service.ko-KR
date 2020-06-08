@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -92,6 +92,7 @@ AEM 알림 받은 편지함 열기
    * **그룹화 기준**
    * **예약** 또는 **없음**
    * **카드 크기**
+
    ![받은 편지함 달력 보기 설정](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **목록 보기**
@@ -100,6 +101,7 @@ AEM 알림 받은 편지함 열기
 
    * **정렬 기준**
    * **정렬 순서**
+
    ![받은 편지함 목록 보기 설정](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    다른 사용자에게 달력을 위임할 수 있을 뿐만 아니라 다른 사용자로부터의 위임을 요청하고 위임을 관리할 수도 있습니다.
@@ -128,6 +130,7 @@ AEM 알림 받은 편지함 열기
    * 이전 단계로 **돌아갑니다**
    * 워크플로우에 대한 페이로드를 확인합니다
    * 항목에서 프로젝트를 생성합니다
+
    >[!NOTE]
    >
    >자세한 내용은 다음을 참조하십시오.
@@ -140,6 +143,7 @@ AEM 알림 받은 편지함 열기
    * 작업에 해당하는 대화 상자가 열립니다
    * 작업 마법사가 시작됩니다
    * 문서 페이지가 열립니다
+
    예를 들어 **위임**&#x200B;은 다음과 같은 대화 상자가 열립니다.
 
    ![받은 편지함 작업 위임](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ AEM 알림 받은 편지함 열기
       * **작업 우선순위**
       * **시작 날짜**
       * **기한**
+
    ![받은 편지함 추가 작업](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **고급**
 
       * **이름**: URL을 구성하는 데 사용됩니다. 공백이 있는 경우 **제목**&#x200B;을 기준으로 합니다.
+
    ![받은 편지함 추가 작업 고급 옵션](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. **제출**&#x200B;을 선택합니다.
