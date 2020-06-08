@@ -3,6 +3,9 @@ title: 론치 만들기
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 81%
 
 ---
 
@@ -33,6 +36,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **사이트**:
       1. 도구 모음에서 **만들기**&#x200B;를 선택하여 선택 상자를 엽니다.
       1. 여기서 **론치 만들기**&#x200B;를 선택하여 마법사를 엽니다.
+
    >[!NOTE]
    >
    >**사이트** 콘솔에서 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)를 사용하여 **만들기**&#x200B;를 선택하기 전에 페이지를 선택할 수도 있습니다.
@@ -42,6 +46,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. **소스 선택** 단계에서 **페이지를 추가**&#x200B;해야 합니다. 각각에 대해 경로를 지정하여 여러 페이지를 선택할 수 있습니다.
    * 필요한 위치로 이동합니다.
    * 소스 페이지를 선택하고 확인(확인 표시)합니다.
+
    필요에 따라 반복하십시오.
 
    ![론치 소스 선택](/help/sites-cloud/authoring/assets/launches-select-source.png)
@@ -57,6 +62,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **하위 페이지 포함**:
 
       * 하위 페이지를 포함하여 론치를 만들지 아니면 하위 페이지를 포함하지 않고 론치를 만들지 지정합니다.  기본적으로 이 하위 페이지가 포함됩니다.
+
    **다음**&#x200B;을 선택하여 계속 진행합니다.
 
    ![론치 소스 선택](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
@@ -68,7 +74,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **새 템플릿을 사용하여 페이지 바꾸기**: 자세한 내용은 [새 템플릿을 사용하여 론치 만들기](#create-launch-with-new-template)를 참조하십시오.
    * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면, 소스 페이지가 변경될 때 론치 페이지 내용이 자동으로 업데이트됩니다. 이 옵션은 론치를 Live Copy로 만들어 이를 수행합니다. 기본적으로 이 옵션은 선택되어 있습니다. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름) [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)를 참조하십시오.
-   ![시작 속성](/help/sites-cloud/authoring/assets/launches-properties.png)
+
+   ![속성 실행](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. **만들기**&#x200B;를 사용하여 프로세스를 완료하고 새 론치를 만듭니다. 확인 대화 상자를 통해 론치를 즉시 열지 여부를 묻게 됩니다.
 
