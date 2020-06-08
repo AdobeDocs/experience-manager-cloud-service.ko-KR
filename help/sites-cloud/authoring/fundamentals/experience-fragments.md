@@ -1,8 +1,11 @@
 ---
 title: 경험 조각
 description: 클라우드 서비스로서의 Adobe Experience Manager 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 100%
 
 ---
 
@@ -226,6 +229,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    * **이름** - 비워 두면 제목에서 파생됩니다.
    * **설명**
    * **변형 태그**
+
    예:
 
    ![변형 속성](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -244,6 +248,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    * 자산 브라우저에서 필요한 조각을 구성 요소에 끌어다 놓기.
    * 구성 요소 도구 모음에서 **구성**&#x200B;을 선택하고 사용할 조각을 지정한 다음 **완료**&#x200B;로 확인.
+
    >[!NOTE]
    >
    >구성 요소 도구 모음의 편집은 조각 편집기에서 조각을 여는 단축키로 작동합니다.
