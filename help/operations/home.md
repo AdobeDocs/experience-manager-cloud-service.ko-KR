@@ -1,8 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 작업 및 유지 관리
 description: 클라우드 서비스로서의 Adobe Experience Manager 작업 및 유지 관리 자습 리소스 및 설명서 링크
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
 
