@@ -1,9 +1,12 @@
 ---
-title: 연결된 자산을 사용하여 [!DNL Adobe Experience Manager Sites] 제작 워크플로우에서 DAM 자산을 공유합니다.
-description: 다른 [!DNL Adobe Experience Manager Sites] 배포에서 웹 페이지를 만들 때 원격 [!DNL Adobe Experience Manager Assets] 배포에서 사용할 수 있는 자산을 사용하십시오.
+title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+workflow-type: tm+mt
+source-wordcount: '2049'
+ht-degree: 53%
 
 ---
 
@@ -89,6 +92,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. 워크플로우 런처를 선택하고 작업 표시줄에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 
    1. In the [!UICONTROL Properties] wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
+
    | 이전 | 이후 |
    | ------------------------------------------------------- | -------------------------------------------------------------------------- |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
