@@ -4,6 +4,9 @@ description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 1%
 
 ---
 
