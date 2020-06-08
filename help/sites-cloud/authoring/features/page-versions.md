@@ -1,8 +1,11 @@
 ---
 title: 페이지 버전 사용
 description: 페이지 버전 생성, 비교 및 복원
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 100%
 
 ---
 
