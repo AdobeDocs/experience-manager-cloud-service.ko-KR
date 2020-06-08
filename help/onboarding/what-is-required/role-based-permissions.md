@@ -3,13 +3,16 @@ title: 역할 기반 권한
 description: 역할 기반 권한
 translation-type: tm+mt
 source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 21%
 
 ---
 
 
 # 역할 기반 권한 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager에는] 적절한 권한이 있는 미리 구성된 역할이 있습니다. 예를 들어 개발자는 코드를 개발하고 코드를 **Git 리포지토리로 푸시할 수 있는 권한이 있습니다**. 또는 비즈니스 소유자는 KPI(Key Performance Indicator)를 정의하고 배포를 승인할 수 있는 다양한 권한을 갖습니다.
+[!UICONTROL Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. ] 예를 들어 개발자는 코드를 개발하고 코드를 **Git 리포지토리로 푸시할 수 있는 권한이 있습니다**. 또는 비즈니스 소유자는 KPI(Key Performance Indicator)를 정의하고 배포를 승인할 수 있는 다양한 권한을 갖습니다.
 
 ## 사용자 권한 {#user-permissions}
 
