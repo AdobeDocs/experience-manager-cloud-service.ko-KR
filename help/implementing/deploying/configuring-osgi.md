@@ -1,16 +1,16 @@
 ---
-title: AEM에 대해 클라우드 서비스로 OSGi 구성
+title: 클라우드 서비스로서의 AEM에 대한 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
 source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
 source-wordcount: '2689'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configuring OSGi for AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+# 클라우드 서비스로서의 AEM에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi는](https://www.osgi.org/) AEM(Adobe Experience Manager)의 기술 스택에서 기본적인 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
 
@@ -182,7 +182,7 @@ OSGi 구성 팩토리 파일 이름, 이름 지정 규칙 `<PID>-<factory-name>.
 
 ### AEM SDK Quickstart를 사용하여 OSGi 구성 생성
 
-AEM SDK Quickstart Jar의 AEM 웹 콘솔은 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM Web Console의 구성 UI를 사용하면 저장소에 `.cfg.json` 파일이 작성되므로 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하려면 이 점을 주의하십시오.
+AEM SDK Quickstart Jar의 AEM 웹 콘솔을 사용하여 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM Web Console의 구성 UI를 사용하면 저장소에 `.cfg.json` 파일이 작성되므로 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하려면 이 점을 주의하십시오.
 
 1. 관리 사용자로 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다
 1. OSGi > 구성으로 이동합니다.
