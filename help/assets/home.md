@@ -3,6 +3,9 @@ title: 클라우드 서비스로서의 Adobe Experience Manager 자산
 description: 클라우드 서비스로서의 Adobe Experience Manager 자산 자습 리소스 및 설명서 링크
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 100%
 
 ---
 
