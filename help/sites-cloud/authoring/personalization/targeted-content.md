@@ -3,6 +3,9 @@ title: 타깃팅 모드를 사용한 타깃팅된 컨텐츠 작성
 description: 타깃팅 모드 및 타겟 구성 요소는 경험을 위한 컨텐츠를 만드는 도구를 제공합니다.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '5351'
+ht-degree: 75%
 
 ---
 
@@ -31,7 +34,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 >[!NOTE]
 >
->Adobe Target에서 캠페인을 만들 때 각 캠페인에 `thirdPartyId`라는 속성을 지정하게 됩니다. Adobe Target에서 이 캠페인을 삭제해도 thirdPartyId는 삭제되지 않습니다. `thirdPartyId`는 다른 유형의 캠페인(AB, XT)에 대해 다시 사용할 수 없으며 수동으로 제거할 수 없습니다. 이 문제를 방지하려면 각 캠페인의 이름을 고유한 이름으로 지정합니다.따라서 캠페인 이름을 다른 캠페인 유형에서 다시 사용할 수 없습니다.
+>Adobe Target에서 캠페인을 만들 때 각 캠페인에 `thirdPartyId`라는 속성을 지정하게 됩니다. Adobe Target에서 이 캠페인을 삭제해도 thirdPartyId는 삭제되지 않습니다. `thirdPartyId`는 다른 유형의 캠페인(AB, XT)에 대해 다시 사용할 수 없으며 수동으로 제거할 수 없습니다. 이 문제를 방지하려면 각 캠페인의 이름을 고유한 이름으로 지정합니다. 따라서 캠페인 이름을 다른 캠페인 유형에서 다시 사용할 수 없습니다.
 >
 >동일한 캠페인 유형에서 동일한 이름을 사용하는 경우 기존 캠페인을 덮어쓰게 됩니다.
 >
@@ -107,7 +110,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 >[!NOTE]
 >
->타깃팅 프로세스를 사용하려면 타겟 활동 작성자 사용자 그룹의 구성원이어야 합니다.
+>타깃팅 프로세스를 사용하려면 Target 활동 작성자 사용자 그룹의 구성원이어야 합니다.
 
 활동을 추가하려면 다음을 수행하십시오.
 
@@ -131,7 +134,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 >[!CAUTION]
 >
->작성자 인스턴스에서 이미 타깃팅된 구성 요소에 대한 타깃팅을 비활성화할 때는 주의하십시오. 각 활동은 게시 인스턴스에서도 자동으로 삭제됩니다.
+>작성자 인스턴스에서 이미 타깃팅된 구성 요소에 대한 타깃팅을 비활성화할 때는 주의하십시오. 게시 인스턴스에서도 해당 활동이 자동으로 삭제됩니다.
 
 >[!NOTE]
 >
@@ -190,7 +193,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 1. 경험 이름 옆에 있는 화살표를 클릭하거나 탭합니다.
 1. Click **Rename Experience** and type in the new name.
-1. 화면의 다른 곳을 클릭하거나 탭하여 변경 내용을 저장합니다.
+1. 화면의 다른 곳을 클릭하거나 탭하여 변경 사항을 저장합니다.
 
 #### 타깃팅 모드를 사용한 대상자 편집 {#editing-audiences-using-targeting-mode}
 
@@ -246,7 +249,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 #### 타겟 구성 요소를 추가하여 오퍼 생성 {#creating-an-offer-by-adding-a-target-component}
 
-기본값 경험을 위한 오퍼를 생성하려면 타겟 구성 요소를 추가하십시오. Target 구성 요소는 다른 구성 요소의 컨테이너이며, 그 안에 배치된 구성 요소는 타깃팅됩니다. 타겟 구성 요소를 사용하는 경우 몇 개의 구성 요소를 추가하여 오퍼를 생성할 수 있습니다. 또한 각 경험에서 다른 구성 요소를 사용하여 서로 다른 오퍼를 생성할 수도 있습니다.
+기본값 경험을 위한 오퍼를 생성하려면 타겟 구성 요소를 추가하십시오. 타겟 구성 요소는 다른 구성 요소의 컨테이너이며, 그 안에 배치된 구성 요소는 타깃팅됩니다. 타겟 구성 요소를 사용하는 경우 몇 개의 구성 요소를 추가하여 오퍼를 생성할 수 있습니다. 또한 각 경험에서 다른 구성 요소를 사용하여 서로 다른 오퍼를 생성할 수도 있습니다.
 
 See [Configuring Target component options](#configuring-target-component-options) for information on customizing this component.
 
@@ -258,11 +261,11 @@ See [Configuring Target component options](#configuring-target-component-options
 
 타겟 모드에서 타겟 구성 요소에는 파란색 테두리가 있고, 드롭-타겟 메시지는 타깃팅된 특성을 나타냅니다.
 
-![타겟 드롭 영역](/help/sites-cloud/authoring/assets/targeted-drop-target.png)
+![대상 드롭 영역](/help/sites-cloud/authoring/assets/targeted-drop-target.png)
 
 편집 모드에서 타겟 구성 요소에는 과녁 중앙 아이콘이 있습니다.
 
-![대상 놓기 영역의 아이콘](/help/sites-cloud/authoring/assets/targeted-drop-target-icon.png)
+![대상 드롭 영역의 아이콘](/help/sites-cloud/authoring/assets/targeted-drop-target-icon.png)
 
 구성 요소를 타겟 구성 요소로 드래그하면 이 구성 요소가 타깃팅된 구성 요소입니다.
 
@@ -288,7 +291,7 @@ See [Configuring Target component options](#configuring-target-component-options
 1. 오퍼를 생성할 경험을 선택합니다.
 1. 다음과 같이 오퍼를 생성합니다.
 
-   * 기본 환경의 경우 구성 요소를 타깃팅된 드롭 영역으로 드래그하고 구성 요소 속성을 평소대로 편집하여 오퍼에 대한 컨텐츠를 만듭니다.
+   * 기본 경험의 경우 구성 요소를 타깃팅된 드롭 영역으로 드래그하고 구성 요소 속성을 평소대로 편집하여 오퍼에 대한 컨텐츠를 만듭니다.
    * 기본값이 아닌 경험의 경우 [사용자 지정 오퍼를 추가](#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](#adding-an-offer-from-an-offer-library)합니다.
 
 #### 사용자 지정 오퍼 추가 {#adding-a-custom-offer}
@@ -302,7 +305,7 @@ If you decide that the offer can be used for other experiences, you can create a
 
    ![오퍼 추가](/help/sites-cloud/authoring/assets/targeted-component-menu.png)
 
-1. &#x200B;+ 아이콘을 클릭하거나 탭합니다.
+1. + 아이콘을 클릭하거나 탭합니다.
 
    기본값 오퍼의 컨텐츠는 현재 경험을 위한 오퍼로 사용됩니다.
 
@@ -334,17 +337,20 @@ Add an offer from the [offer library](/help/sites-cloud/authoring/personalizatio
    오퍼 선택기를 사용하면 오퍼를 탐색하거나 필터링할 수 있습니다. 탐색 또는 필터링할 때 오퍼를 정렬하고 오퍼를 표시하는 방법을 변경할 수도 있습니다. 오른쪽 위에 있는 숫자는 현재 라이브러리에서 사용할 수 있는 오퍼의 수를 나타냅니다.
 
    * Click or tap **Browse** to navigate to another folder. 탐색 창이 열리면 화살표를 클릭하여 폴더로 드릴다운합니다. Click or tap **Browse** again to close the navigation pane.
-   ![콘텐츠 검색](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
+
+   ![콘텐츠 찾아보기](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * 키워드 또는 태그를 기준으로 오퍼를 필터링하려면 **필터**&#x200B;를 클릭하거나 탭하십시오. 키워드를 입력하고 드롭다운 메뉴에서 태그를 선택합니다. 필터링 창을 닫으려면 다시 **필터**&#x200B;를 클릭하거나 탭합니다.
+
    ![콘텐츠 필터링](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
    * **가장 최근에서 가장 오래된 순으로** 옆에 있는 화살표를 클릭하거나 탭하여 오퍼를 정렬하는 방법을 변경합니다. 오퍼를 가장 최근 오퍼에서 가장 오래된 오퍼순으로 또는 가장 오래된 오퍼에서 가장 최근 오퍼순으로 정렬할 수 있습니다.
+
    ![필터 정렬 순서](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    오퍼를 타일이나 목록으로 표시하려면 **다르게 보기** 옆에 있는 아이콘을 클릭하거나 탭하십시오.
 
-   ![단추로 보기](/help/sites-cloud/authoring/assets/targeted-view-as-button.png)
+   ![다른 이름으로 보기 단추](/help/sites-cloud/authoring/assets/targeted-view-as-button.png)
 
 #### 라이브러리에 사용자 지정 오퍼 추가 {#adding-a-custom-offer-to-a-library}
 
@@ -388,7 +394,7 @@ For information about using the Offers console to create a reusable offer, see [
 
 ![대상 매핑](/help/sites-cloud/authoring/assets/targeted-diagram.png)
 
-세그먼트를 사용하여 대상을 정의하십시오. 페이지의 클라우드 구성은 사용자가 사용할 수 있는 세그먼트를 결정합니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있지 않으면 대상을 정의하는 데 AEM 세그먼트를 사용할 수 있습니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있으면 타겟 세그먼트를 사용합니다.
+세그먼트를 사용하여 대상을 정의하십시오. 페이지에 대한 클라우드 구성은 사용자가 사용할 수 있는 세그먼트를 결정합니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있지 않으면 대상을 정의하는 데 AEM 세그먼트를 사용할 수 있습니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있으면 타겟 세그먼트를 사용합니다.
 
 타깃팅 엔진에 대한 자세한 내용은 [타깃팅 엔진](/help/sites-cloud/authoring/personalization/overview.md#targeting-engine)을 참조하십시오.
 
@@ -430,7 +436,7 @@ The Goals &amp; Settings step of [the targeting process](#the-targeting-process-
 
 타깃팅 엔진으로 AEM을 사용하는 경우:
 
-![AEM을 타겟 엔진으로 사용](/help/sites-cloud/authoring/assets/targeted-goals.png)
+![AEM을 대상 엔진으로](/help/sites-cloud/authoring/assets/targeted-goals.png)
 
 타깃팅 엔진으로 Adobe Target을 사용하는 경우:
 
@@ -444,21 +450,21 @@ The Goals &amp; Settings step of [the targeting process](#the-targeting-process-
 
 | 지표 | 설명 | 옵션 |
 |---|---|---|
-| 변환 | 테스트되는 경험의 일부를 클릭한 방문자의 비율입니다. 전환은 방문자당 한 번씩 또는 방문자가 전환을 완료할 때마다 계산됩니다. 전환 지표는 다음 중 하나로 설정됩니다 | 페이지 보기 - URL을 선택한 다음 URL이나 여러 URL을 정의하거나 URL을 선택한 다음 경로나 키워드를 추가하여 대상이 본 페이지를 정의할 수 있습니다. mbox 보기 - mbox 이름을 입력하여 대상이 본 mbox를 정의할 수 있습니다. mbox 추가를 클릭하여 여러 mbox를 입력할 수 있습니다. |
-| 수입 | 방문으로 생성된 매출액. 나열된 매출 지표 중에서 선택할 수 있습니다. 이러한 옵션의 경우 mbox를 보았는지 여부는 목표에 도달했음을 나타냅니다. mbox 또는 여러 mbox를 정의할 수 있습니다. | 방문자당 매출(RPV), 평균 주문 가격(AOV), 총 판매, 주문 수 |
-| 참여 | 세 가지 유형의 참여를 측정할 수 있습니다 | 페이지 보기, 사용자 지정 점수, 사이트에서 보낸 시간 |
+| 변환 | 테스트되는 경험의 일부를 클릭한 방문자 비율. 전환은 방문자당 한 번씩 또는 방문자가 전환을 완료할 때마다 계산됩니다. 전환 지표는 다음 중 하나로 설정됩니다 | 페이지 보기 - URL을 선택한 다음 URL 또는 여러 URL을 정의하거나 URL 포함 사항을 선택한 다음 경로나 키워드를 추가하여 대상이 본 페이지를 정의할 수 있습니다. mbox 확인됨 - mbox의 이름을 입력하여 대상이 본 mbox를 정의할 수 있습니다. mbox 추가를 클릭하여 여러 mbox를 입력할 수 있습니다. |
+| 수입 | 방문으로 생성된 매출입니다. 나열된 매출 지표 중에서 선택할 수 있습니다. 이러한 옵션의 경우 mbox를 보았는지 여부는 목표에 도달했음을 나타냅니다. mbox 또는 여러 mbox를 정의할 수 있습니다. | 방문자당 매출(RPV), 평균 주문 가격(AOV), 총 판매, 주문 수 |
+| 참여 | 세 가지 유형의 참여를 측정할 수 있습니다 | 페이지 보기 횟수, 사용자 지정 점수, 사이트에서 보낸 시간 |
 
 또한 성공 지표의 수를 계산하는 방법을 결정할 수 있는 고급 설정이 있습니다. 선택 사항에는 노출당 지표나 방문자당 한 번씩 계산하는 작업과, 활동에 사용자를 유지할지 여부를 선택하거나 사용자를 제거하는 작업이 포함됩니다.
 
 고급 설정을 사용하여 사용자가 목표 지표를 찾은 **후** 발생하는 일을 결정하십시오. 다음 표는 사용 가능한 선택 사항을 보여줍니다.
 
-| 사용자가 이 목표 지표를 찾은 후... | 다음 중 하나를 선택합니다. |
+| 사용자가 이 목표 지표를 찾은 후.. | 다음 중 하나를 선택합니다. |
 |---|---|
-| 증분 카운트 및 사용자 활동 유지 | 카운트가 증가되는 방식을 지정합니다.참가자당 한 번, 페이지 새로 고침 제외, 모든 노출 시 |
-| 증분 카운트, 사용자 해제 및 재입력 허용 | 방문자가 활동에 다시 입장할 때 표시되는 경험을 선택합니다.동일한 경험, 임의 경험, 보이지 않는 경험 |
-| 증분 카운트, 릴리스 사용자 및 막대 재입력 | 사용자가 활동 컨텐츠 대신 보게 되는 내용을 결정합니다.추적 없이 동일한 경험, 기본 컨텐츠 또는 기타 활동 컨텐츠 |
+| 증분 카운트 및 사용자 활동 유지 | 카운트가 증가되는 방식을 지정합니다. 참가자당 한 번, 페이지 새로 고침을 제외한 모든 노출 시 모든 노출 |
+| 증분 카운트, 사용자 해제 및 재입력 허용 | 활동에 다시 입장할 경우 방문자가 보는 경험을 선택합니다. 동일한 경험, 무작위 경험, 보이지 않는 경험 |
+| 증분 카운트, 릴리스 사용자 및 막대 재입력 | 사용자가 활동 컨텐츠 대신 보게 되는 내용을 결정합니다. 추적 없이 동일한 경험, 기본 컨텐츠 또는 기타 활동 컨텐츠 |
 
-성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html)를 참조하십시오.
+성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://marketing.adobe.com/resources/help/ko_KR/target/target/r_success_metrics.html)를 참조하십시오.
 
 ### 설정 구성(AEM 타깃팅) {#configuring-settings-aem-targeting}
 
@@ -497,13 +503,13 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음을 
 
    ![보고 소스](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상이 취하는 조치)을 입력합니다. 이전 표에서 목표 지표의 정의를 참조하고 성공 지표에 대해 [Adobe Target 설명서](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html)를 참조하십시오.
+1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상이 취하는 조치)을 입력합니다. 이전 표에서 목표 지표의 정의를 참조하고 성공 지표에 대해 [Adobe Target 설명서](https://marketing.adobe.com/resources/help/ko_KR/target/target/r_success_metrics.html)를 참조하십시오.
 
    You can rename the goal by clicking the three dots in the upper right corner and selecting **Rename**.
 
    모든 필드를 지워야 하는 경우 오른쪽 위 모서리에 있는 세 개의 점을 클릭하고 **모든 필드 지우기**&#x200B;를 선택하십시오.
 
-   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html).
+   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/ko_KR/target/target/r_success_metrics.html).
 
    >[!NOTE]
    >
@@ -588,7 +594,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음을 
 
 | 옵션 | 설명 |
 |---|---|
-| 위치 | 위치는 타깃팅된 컨텐츠 위치에 이름을 지정하고 오퍼를 페이지에서 오퍼를 배치할 위치(또는 위치 또는 구성 요소)와 연결하는 문자열입니다. 이 필드는 일반 값입니다. 오퍼를 구성 요소에 넣으면 오퍼는 위치 ID를 기억합니다. 페이지가 실행되면 엔진은 사용자의 세그먼트를 평가하고 이를 기반으로 하여 표시해야 하는 활성 캠페인의 경험을 해결합니다. 그런 다음, 페이지에서 위치 ID를 확인하고 해당 위치 ID를 사용하는 오퍼를 위치 ID에 대응시킵니다. |
+| 위치 | 위치는 타깃팅된 컨텐츠 위치에 이름을 지정하고 오퍼를 배치할 페이지의 위치(또는 위치 또는 구성 요소)와 오퍼를 연결하는 문자열입니다. 이 필드는 일반 값입니다. 오퍼를 구성 요소에 넣으면 오퍼는 위치 ID를 기억합니다. 페이지가 실행되면 엔진은 사용자의 세그먼트를 평가하고 이를 기반으로 하여 표시해야 하는 활성 캠페인의 경험을 해결합니다. 그런 다음, 페이지에서 위치 ID를 확인하고 해당 위치 ID를 사용하는 오퍼를 위치 ID에 대응시킵니다. |
 | 엔진 | 사용할 엔진에 따라 클라이언트 측 규칙(추적 없음), Adobe Target, ContextHub 및 Adobe Campaign 중에서 선택합니다. |
 
 Adobe Target을 엔진으로 선택하는 경우:
@@ -597,11 +603,11 @@ Adobe Target을 엔진으로 선택하는 경우:
 
 | 옵션 | 설명 |
 |---|---|
-| 정확한 타겟 지정 | 정확한 타깃팅을 활성화하면 구성 요소가 Adobe Target으로 요청을 보내기 전에 클라이언트 컨텍스트 또는 컨텍스트 허브 데이터를 사용할 수 있을 때까지 대기하도록 합니다. 이것으로 로드 시간이 늘어날 수 있습니다. 작성을 위해 항상 정확한 타깃팅이 활성화되어 있습니다. 정확한 타깃팅 확인란을 선택하면 mboxDefine을 먼저 수행하고 mboxUpdate를 나중에 수행하여 데이터를 사용할 수 있게 되면 Ajax 요청이 발생합니다. 정확한 타깃팅 확인란을 선택하지 않으면 mboxCreate가 mboxCreate를 수행하므로 즉시 동기 요청이 발생합니다(이 경우 일부 컨텍스트 데이터를 아직 사용할 수 없는 경우). 참고:특정 구성 요소에서 정확한 타깃팅을 활성화하거나 비활성화해도 전체적으로 설정한 설정에 영향을 주지 않습니다. 구성 요소에서 [정확한 타겟 지정]을 선택하여 전역 설정을 항상 무시할 수 있습니다. |
-| 해결된 세그먼트 포함 | 이 확인란을 선택하면 mbox 호출의 모든 해결된 세그먼트와 페이지와 프레임워크에 구성된 모든 매개 변수가 포함됩니다. 이 기능은 AEM 세그먼트를 동기화하는 XML API가 있는 상황에서만 작동합니다. Adobe Target으로 처리되지 않는 AEM의 세그먼트(예: 스크립트 세그먼트)가 있다면 이 선택 사항을 사용할 경우 AEM에서 세그먼트를 해결하고 세그먼트가 활성 상태인 Adobe Target에 정보를 전송할 수 있습니다. |
-| 상속된 컨텍스트 매개 변수 | 선택한 페이지와 연결된 경우 Adobe Target 프레임워크에서 상속된 컨텍스트 매개 변수를 나열합니다. |
-| 컨텍스트 매개 변수 | 추가 컨텍스트 매개 변수를 구성하려면 필드 추가를 클릭하거나 탭하십시오(Target 프레임워크에서 사용할 수 있는 것과 동일). 구성 요소에 추가된 컨텍스트 매개 변수는 프레임워크에 컨텍스트 매개 변수를 직접 추가한 경우처럼 구성 요소에만 적용되고 다른 구성 요소에는 적용되지 않습니다. |
-| 정적 매개 변수 | 필드 추가를 클릭하거나 탭하여 추가 정적 매개 변수를 구성합니다(Target 프레임워크에서 사용할 수 있는 것과 동일). 구성 요소에 추가된 정적 매개 변수는 프레임워크에 정적 매개 변수를 직접 추가한 경우처럼 구성 요소에만 적용되고 다른 구성 요소에는 적용되지 않습니다. 정적 매개 변수는 컨텍스트(컨텐츠 허브의 Client Context)에서 가져오지 않습니다. |
+| 정확한 타겟 지정 | 정확한 타깃팅을 활성화하면 구성 요소는 요청을 Adobe Target으로 보내기 전에 클라이언트 컨텍스트 또는 컨텍스트 허브 데이터를 사용할 수 있을 때까지 대기하도록 합니다. 이것으로 로드 시간이 늘어날 수 있습니다. 작성을 위해 항상 정확한 타깃팅이 활성화되어 있습니다. 정확한 타깃팅 확인란을 선택하면 mbox가 mboxDefine을 먼저 수행하고 mboxUpdate를 나중에 수행하므로 데이터를 사용할 수 있게 되면 Ajax 요청이 발생합니다. 정확한 타깃팅 확인란을 선택하지 않으면 mbox가 mboxCreate를 수행하여 즉시 동기 요청을 만듭니다(이 경우 일부 컨텍스트 데이터를 아직 사용할 수 있는 것은 아닙니다). 참고: 특정 구성 요소에 대해 정확한 타깃팅을 활성화하거나 비활성화해도 전체적으로 설정한 설정에 영향을 주지 않습니다. 구성 요소에서 [정확한 타겟 지정]을 선택하여 전역 설정을 항상 무시할 수 있습니다. |
+| 해결된 세그먼트 포함 | 이 확인란을 선택하면 mbox 호출의 모든 해결된 세그먼트와 페이지 및 프레임워크에 구성된 모든 매개 변수가 포함됩니다. 이 기능은 AEM 세그먼트를 동기화하는 XML API가 있는 상황에서만 작동합니다. Adobe Target으로 처리되지 않는 AEM의 세그먼트(예: 스크립트 세그먼트)가 있다면 이 선택 사항을 사용할 경우 AEM에서 세그먼트를 해결하고 세그먼트가 활성 상태인 Adobe Target에 정보를 전송할 수 있습니다. |
+| 상속된 컨텍스트 매개 변수 | 선택한 페이지와 연결된 Adobe Target 프레임워크에서 상속된 컨텍스트 매개 변수를 나열합니다(있는 경우). |
+| 컨텍스트 매개 변수 | 추가 컨텍스트 매개 변수를 구성하려면 필드 추가를 클릭하거나 탭하십시오(Target 프레임워크에서 사용 가능한 것과 동일). 구성 요소에 추가된 컨텍스트 매개 변수는 프레임워크에 컨텍스트 매개 변수를 직접 추가한 경우 마찬가지로 구성 요소에만 적용되고 다른 구성 요소에는 적용되지 않습니다. |
+| 정적 매개 변수 | 필드 추가를 클릭하거나 탭하여 추가 정적 매개 변수를 구성합니다(Target 프레임워크에서 사용할 수 있는 것과 동일함). 구성 요소에 추가된 정적 매개 변수는 프레임워크에 정적 매개 변수를 직접 추가한 경우 마찬가지로 구성 요소에만 적용되고 다른 구성 요소에는 적용되지 않습니다. 정적 매개 변수는 컨텍스트(컨텐츠 허브의 Client Context)에서 가져오지 않습니다. |
 
 >[!NOTE]
 >
