@@ -1,9 +1,9 @@
 ---
 title: 컨텐츠 조각
 description: 클라우드 서비스로서의 Adobe Experience Manager 컨텐츠 조각을 사용하면 페이지 독립적 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 100%
 
