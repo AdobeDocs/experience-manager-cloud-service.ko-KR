@@ -1,16 +1,16 @@
 ---
-title: 기업 개발 운영
+title: 엔터프라이즈 개발 운영
 description: 배포 및 공동 작업 간소화에 필요한 프로세스, 방법 및 커뮤니케이션에 대해 알아봅니다.
 translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 기업 개발 운영{#enterprise-devops}
+# 엔터프라이즈 개발 운영{#enterprise-devops}
 
 DevOps는 다음 작업에 필요한 프로세스, 방법 및 커뮤니케이션을 다룹니다.
 
