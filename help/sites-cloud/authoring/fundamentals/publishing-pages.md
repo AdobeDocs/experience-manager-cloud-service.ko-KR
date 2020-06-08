@@ -1,8 +1,11 @@
 ---
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 100%
 
 ---
 
