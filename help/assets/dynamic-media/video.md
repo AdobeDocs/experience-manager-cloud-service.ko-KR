@@ -3,6 +3,9 @@ title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
 source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
+workflow-type: tm+mt
+source-wordcount: '10160'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +23,7 @@ source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
 >Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 이미 Dynamic Media Cloud 서비스를 활성화하고 구성했는지 확인하십시오.
 >
 >* 다이내믹 [미디어 구성 및 다이내믹 미디어 문제](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) 해결에서 Dynamic Media Cloud 서비스 [구성을 참조하십시오](/help/assets/dynamic-media/troubleshoot-dm.md).
+
 >
 
 
@@ -391,7 +395,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 이 비율을 계산하려면 소스 너비를 인코딩된 너비로 나누어 너비 비율을 가져옵니다. 그런 다음 소스 높이를 인코딩된 높이로 나누면 높이 비율이 높아집니다.
 
-결과 비율이 정수 단위인 경우 비디오 크기가 최적으로 조절됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
+결과 비율이 정수 단위인 경우, 비디오가 최적으로 크기가 조정됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
 
 예를 들어 소스 비디오가 1920 x 1080이라고 가정합니다. 다음 표에서 세 개의 인코딩된 비디오는 사용할 최적의 인코딩 설정을 제공합니다.
 
@@ -469,6 +473,7 @@ Google 클라우드 설정을 구성하려면:
 
    * 프로젝트의 대시보드의 시작하기 카드에서 탐색 **[!UICONTROL 및 API를 활성화합니다]**.
    * 프로젝트의 대시보드의 API 카드에서 API로 **[!UICONTROL 이동 개요를 누릅니다]**.
+
    ![6_5_googleaccount-api-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. API 및 서비스 페이지 상단 근처에 있는 **[!UICONTROL API 및 서비스 활성화를 탭합니다]**.
@@ -488,6 +493,7 @@ Google 클라우드 설정을 구성하려면:
    * API를 **[!UICONTROL 어디에서 호출합니까?]** 드롭다운 목록에서 **[!UICONTROL 웹 서버(예: node.js, Tomcat)를 선택합니다.]**
 
    * 어떤 **[!UICONTROL 데이터에 액세스합니까?]** 드롭다운 목록에서 **[!UICONTROL 사용자 데이터를 누릅니다]**.
+
    ![6_5_googleaccount-api-createcertification2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. 필요한 자격 증명 **[!UICONTROL 을 탭하려면]**
@@ -833,9 +839,11 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
 1. 자산 폴더에서 비디오 인코딩 진행 상황 보기:
 
    * 카드 보기에서는 자산에 비디오 인코딩 진행률이 백분율로 표시됩니다. 오류가 있으면 이 정보도 자산에 표시됩니다.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * 목록 보기에서는 비디오 인코딩 진행 상태가 [ **[!UICONTROL 처리 상태] 열에]** 표시됩니다. 오류가 있으면 이 메시지가 동일한 열에 표시됩니다.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    이 열은 기본적으로 표시되지 않습니다. 열을 활성화하려면 보기 드롭다운 메뉴에서 **[!UICONTROL 설정]** 보기를 선택하고 **[!UICONTROL 처리 상태]** 열을 추가한 다음 **[!UICONTROL 업데이트]**&#x200B;를 탭하거나 클릭합니다.
@@ -855,6 +863,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
    >    * [MOCK] Granite Workflow Timeout Queue
+
    >
    >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
 
@@ -889,6 +898,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
    >    * [MOCK] Granite Workflow Timeout Queue
+
    >
    >
    >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
@@ -987,6 +997,7 @@ For YouTube publishing jobs, do the following:
 
    * 오른쪽 위 모서리 근처에 있는 UICONTROL 날짜 **[선택기]** 아이콘을 누릅니다.
 비디오 데이터를 저장할 시작 및 종료 날짜 범위를 지정한 다음 보고서 **[!UICONTROL 실행을 누릅니다]**.
+
    상위 지표 그룹 상자는 사이트에 게시된 모든 *비디오에 대한 다양한 집계 측정을 식별합니다.
 
 1. 상위 게시된 비디오가 나열된 테이블에서 비디오 이름을 눌러 비디오를 재생하고 비디오의 대상자 유지(드롭다운) 보고서를 확인합니다.
