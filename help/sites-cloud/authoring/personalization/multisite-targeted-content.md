@@ -3,6 +3,9 @@ title: 다중 사이트에서 타깃팅된 컨텐츠 작업
 description: 사이트 간 활동, 경험 및 오퍼와 같은 타깃팅된 컨텐츠를 관리해야 하는 경우 타깃팅된 컨텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 84%
 
 ---
 
@@ -61,7 +64,7 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
 
 타깃팅된 컨텐츠에 대한 다중 사이트 지원 시 다음 컨텐츠 세트 중 하나가 있는 두 개(또는 이상) 사이트가 있고 이 사이트들이 **하나**&#x200B;의 브랜드를 사용하는 경우가 있을 수 있습니다.
 
-* 완전히 *분리된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집해도 다른 사이트에 영향을 주지 않습니다. 개별 영역에 연결하는 사이트는 자체 구성 영역에 읽고 씁니다. 예:
+* 완전히 *분리된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집해도 다른 사이트에 영향을 주지 않습니다. 개별 영역에 연결하는 사이트는 구성된 영역에 읽고 씁니다. 예:
    * 사이트 A는 영역 X에 연결합니다.
    * 사이트 B는 영역 Y에 연결합니다.
 * *공유된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집하면 두 사이트 모두가 직접적인 영향을 받습니다. 두 사이트가 동일한 영역을 참조하도록 함으로써 이렇게 설정할 수 있습니다. 동일한 영역에 연결하는 사이트는 이 영역 내에서 타깃팅된 컨텐츠를 공유합니다. 예:
@@ -73,7 +76,7 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
 
 한 사이트에서 사용되는 **여러** 브랜드가 있을 수도 있습니다. 그럴 경우 이 예보다 더 복잡할 수 있습니다.
 
-![다중 사이트 예](/help/sites-cloud/authoring/assets/multisite-example.png)
+![다중 사이트 예제](/help/sites-cloud/authoring/assets/multisite-example.png)
 
 >[!NOTE]
 >
@@ -102,7 +105,7 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
 
 ![미국 버전](/help/sites-cloud/authoring/assets/multisite-us.png)
 
-탭을 새로 고치면 캐나다 사이트는 우리 쪽에서 아무런 작업을 하지 않아도 새 이미지로 변경됩니다. 이는 캐나다가 미국과 마스터 영역을 공유하기 때문입니다. 영국과 오스트레일리아 사이트에서는 이미지가 바뀌지 않습니다.
+탭을 새로 고치면 캐나다 사이트는 우리 쪽에서 아무런 작업을 하지 않아도 새 이미지로 변경됩니다. 이는 캐나다가 미국과 마스터 영역을 공유하기 때문입니다. 영국과 호주 사이트에서는 이미지가 바뀌지 않는다.
 
 ![버전 변경](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
@@ -277,7 +280,7 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 1. **타깃팅 시작**&#x200B;을 탭하거나 클릭합니다.
 1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
 
-   ![Live Copy 다시 시작](/help/sites-cloud/authoring/assets/multisite-resume.png)
+   ![Live Copy 재개](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
 1. **다시 시작**&#x200B;을 탭하거나 클릭하여 Live Copy 상속을 다시 시작할 것임을 확인합니다. 상속을 다시 시작하는 경우 현재 활동에 대한 수정 사항은 모두 잃게 됩니다.
 
