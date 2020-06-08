@@ -1,8 +1,11 @@
 ---
 title: 계정 환경 구성
 description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 100%
 
 ---
 
@@ -82,6 +85,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
    * [페이지 편집을 위한 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+
    키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 사용할 수 있지만 사용자에게 특정 액세스 가능성 요구 사항이 있는 경우처럼 원하는 경우에는 사용하지 않도록 설정할 수 없습니다.
 
 * **자산 홈페이지 활성화**
