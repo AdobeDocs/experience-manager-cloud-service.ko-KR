@@ -1,9 +1,9 @@
 ---
 title: 도구 콘솔
 description: AEM 전체에서 다양한 도구 콘솔에 대해 알아봅니다.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 100%
 
