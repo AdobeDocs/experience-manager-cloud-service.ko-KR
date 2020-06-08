@@ -1,9 +1,9 @@
 ---
 title: 이제 사용되지 않는 기능과 제거된 기능
 description: 클라우드 서비스로서의 Adobe Experience Manager의 이제 사용되지 않는 기능과 제거된 기능에 관한 릴리스 노트입니다.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 
