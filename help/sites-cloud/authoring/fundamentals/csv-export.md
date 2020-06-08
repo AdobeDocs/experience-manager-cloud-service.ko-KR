@@ -1,8 +1,11 @@
 ---
 title: CSV로 내보내기
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 100%
 
 ---
 
