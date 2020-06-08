@@ -1,8 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 핵심 개념
 description: 클라우드 서비스로서의 Adobe Experience Manager 핵심 개념 자습 리소스 및 설명서 링크
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7f0896adbfad31597ea8224f1daaa12a2f40180
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
