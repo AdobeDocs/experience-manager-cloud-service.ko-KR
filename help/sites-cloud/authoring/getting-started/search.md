@@ -1,8 +1,11 @@
 ---
 title: 검색
 description: 포괄적인 검색으로 신속하게 컨텐츠 찾기
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
@@ -58,6 +61,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * 검색 디렉토리
    * 태그
    * 검색 기준(예: 수정한 날짜, 게시 상태, Live Copy 상태)
+
    >[!NOTE]
    >
    >검색 기준은 다음과 같이 다양할 수 있습니다.
