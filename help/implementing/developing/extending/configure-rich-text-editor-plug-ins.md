@@ -150,7 +150,6 @@ Microsoft Word와 같은 다른 프로그램에서 AEM에서 붙여넣을 때 �
    * **이름** `underline`
    * **이름**`anchor` (링크와 지정된 앵커의 경우)
    * **이름** `image`
-
    모든 속성은 **유형**`Boolean`**** 이므로 해당값에서 확인 표시를 선택하거나 제거하여 기능을 활성화하거나 비활성화할 수 있습니다.
 
    >[!NOTE]
@@ -272,7 +271,6 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
    * **이름** `externalStyleSheets`
    * **유형**`String[]` (다중 문자열; CRXDE **에서** 다중 클릭)
    * **값** 포함할 모든 스타일 시트의 경로 및 파일 이름입니다. 저장소 경로를 사용합니다.
-
    >[!NOTE]
    >
    >나중에 추가 스타일 시트에 대한 참조를 추가할 수 있습니다.
@@ -350,10 +348,9 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
 1. 속성 텍스트를 동일한 노드에 추가합니다. 값은 작성자가 스타일을 선택할 때 보는 스타일의 이름입니다.
    * 이름: `text`
 *유형: `String`
-값: `Japanese word-wrap`
-   * 스타일시트를 만들고 해당 경로를 지정합니다. 스타일시트 [위치 지정을 참조하십시오](#locationofstylesheet). Add the following contents to the stylesheet. 원하는 대로 배경색을 변경합니다.
+   * 값: `Japanese word-wrap`
 
-1. ![Stylesheet to make Japanese word wrap feature available to authors](assets/rte_jpwordwrap_stylesheet.jpg)
+1. 스타일시트를 만들고 해당 경로를 지정합니다. 스타일시트 [위치 지정을 참조하십시오](#locationofstylesheet). Add the following contents to the stylesheet. 원하는 대로 배경색을 변경합니다.
 
    ```css
    .text span.jpn-word-wrap {
@@ -364,151 +361,154 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
    }
    ```
 
-   단락 서식 구성 {#paraformats}](assets/rte_jpwordwrap_stylesheet.jpg)
+   ![Stylesheet to make Japanese word wrap feature available to authors](assets/rte_jpwordwrap_stylesheet.jpg)
 
-## RTE로 작성되는 모든 텍스트는 기본적으로 블록 태그 내에 배치됩니다 `<p>`. 플러그인을 활성화하면 `paraformat` 드롭다운 선택 목록을 사용하여 단락에 할당할 수 있는 추가 블록 태그를 지정할 수 있습니다. 단락 포맷은 올바른 블록 태그를 지정하여 단락 유형을 결정합니다. 작성자는 형식 선택기를 사용하여 선택 및 할당할 수 있습니다. 예제 블록 태그에는 표준 단락 &lt;p> 및 머리글 &lt;h1>, &lt;h2> 등이 포함됩니다.
+## 단락 서식 구성 {#paraformats}
 
-[!CAUTION]`paraformat`
+RTE로 작성되는 모든 텍스트는 기본적으로 블록 태그 내에 배치됩니다 `<p>`. 플러그인을 활성화하면 `paraformat` 드롭다운 선택 목록을 사용하여 단락에 할당할 수 있는 추가 블록 태그를 지정할 수 있습니다. 단락 포맷은 올바른 블록 태그를 지정하여 단락 유형을 결정합니다. 작성자는 형식 선택기를 사용하여 선택 및 할당할 수 있습니다. 예제 블록 태그에는 표준 단락 &lt;p> 및 머리글 &lt;h1>, &lt;h2> 등이 포함됩니다.
 
->[!CAUTION]이 플러그인은 목록 또는 표와 같이 구조가 복잡한 컨텐츠에 적합하지 않습니다.
+>[!CAUTION]
 >
+>이 플러그인은 목록 또는 표와 같이 구조가 복잡한 컨텐츠에 적합하지 않습니다.
+
 >[!NOTE]
-
->[!NOTE]단락(예: &lt;hr> 태그)에 블록 태그를 지정할 수 없는 경우 paraformat 플러그인에 유효한 사용 사례가 아닙니다.
 >
->Paragraph Formats 플러그인이 처음 활성화되면 기본 Paragraph Formats를 사용할 수 없습니다. 팝업 목록이 비어 있습니다. 작성자에게 단락 형식을 제공하려면 다음을 수행합니다.
+>단락(예: &lt;hr> 태그)에 블록 태그를 지정할 수 없는 경우 paraformat 플러그인에 유효한 사용 사례가 아닙니다.
 
-형식 드롭다운 선택기 목록을 활성화합니다.
+Paragraph Formats 플러그인이 처음 활성화되면 기본 Paragraph Formats를 사용할 수 없습니다. 팝업 목록이 비어 있습니다. 작성자에게 단락 형식을 제공하려면 다음을 수행합니다.
 
+* 형식 드롭다운 선택기 목록을 활성화합니다.
 * 드롭다운에서 단락 포맷으로 선택할 수 있는 블록 태그를 지정합니다.
-* 나중에(다시) 구성을 위해, 더 많은 포맷을 추가하려면 지침 중 관련 부분만 따르십시오.
 
-형식 드롭다운 선택기 활성화 {#formatselectorlist}
+나중에(다시) 구성을 위해, 더 많은 포맷을 추가하려면 지침 중 관련 부분만 따르십시오.
 
-### 먼저 Paraformat 플러그인을 활성화합니다.{#formatselectorlist}
+### 형식 드롭다운 선택기 활성화 {#formatselectorlist}
 
-구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/paraformat`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+먼저 Paraformat 플러그인을 활성화합니다.
 
-1. 노드에서 `features` 속성을 `paraformat` 만듭니다.](#activateplugin)
-1. **이름** `features`
+1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/paraformat`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 노드에서 `features` 속성을 `paraformat` 만듭니다.
 
+   * **이름** `features`
    * **유형** `String`
    * **값** `*` (별표)
-   * [!NOTE]**`*`
 
->[!NOTE]플러그인이 추가로 구성되지 않으면 다음 기본 형식이 활성화됩니다.
-단락 ( `<p>`)
+>[!NOTE]
+플러그인이 추가로 구성되지 않으면 다음 기본 형식이 활성화됩니다.
+* 단락 ( `<p>`)
 * 제목 1 ( `<h1>`)
 * 제목 2 ( `<h2>`)
 * 제목 3 ( `<h3>`)
-* [!CAUTION]
 
 
 
->RTE의 단락 형식을 구성할 때는 단락 태그 &lt;p>를 서식 옵션으로 제거하지 마십시오. 태그를 `<p>` 제거한 경우 컨텐츠 작성자는 추가 형식이 구성된 경우에도 **단락 형식** 옵션을 선택할 수 없습니다.
-사용 가능한 단락 서식 지정 {#paraformatsindropdown}****
+>[!CAUTION]
+RTE의 단락 형식을 구성할 때는 단락 태그 &lt;p>를 서식 옵션으로 제거하지 마십시오. 태그를 `<p>` 제거한 경우 컨텐츠 작성자는 추가 형식이 구성된 경우에도 **단락 형식** 옵션을 선택할 수 없습니다.
 
-### 다음 방법을 통해 단락 포맷을 선택할 수 있습니다.{#paraformatsindropdown}
+### 사용 가능한 단락 서식 지정 {#paraformatsindropdown}
 
-구성 요소 정의에서 형식 `<rtePlugins-node>/paraformat`활성화 드롭다운 선택기에서 [만든 대로 노드를 탐색합니다](#styleselectorlist).
+다음 방법을 통해 단락 포맷을 선택할 수 있습니다.
 
-1. Under the node create a new node, to hold the list of formats: `paraformat`[](#styleselectorlist)
-1. **이름** `formats`
+1. 구성 요소 정의에서 형식 `<rtePlugins-node>/paraformat`활성화 드롭다운 선택기에서 [만든 대로 노드를 탐색합니다](#styleselectorlist).
+1. Under the node create a new node, to hold the list of formats: `paraformat`
 
+   * **이름** `formats`
    * **유형** `cq:WidgetCollection`
-   * 노드 아래에 새 노드를 `formats` 만듭니다. 이 노드에는 개별 형식에 대한 세부 정보가 포함됩니다.**`cq:WidgetCollection`
 
-1. **이름을 지정할**&#x200B;수 있지만 형식(예: myparagraph, myheading1)에 적합해야 합니다.
+1. 노드 아래에 새 노드를 `formats` 만듭니다. 이 노드에는 개별 형식에 대한 세부 정보가 포함됩니다.
 
+   * **이름을 지정할**&#x200B;수 있지만 형식(예: myparagraph, myheading1)에 적합해야 합니다.
    * **유형** `nt:unstructured`
-   * **이 노드에 속성을 추가하여 사용되는 블록 태그를 정의합니다.**`nt:unstructured`
 
-1. **이름** `tag`
+1. 이 노드에 속성을 추가하여 사용되는 블록 태그를 정의합니다.
 
+   * **이름** `tag`
    * **유형** `String`
-   * **값** 형식의 블록 태그; 예를 들면 다음과 같습니다. p, h1, h2 등`String`
-   * **구분 기호를 입력할 필요는 없습니다.**
+   * **값** 형식의 블록 태그; 예를 들면 다음과 같습니다. p, h1, h2 등
 
-      같은 노드에서 다른 속성을 추가하여 설명 텍스트가 드롭다운 목록에 나타나도록 합니다.
+      구분 기호를 입력할 필요는 없습니다.
 
-1. **이름** `description`
+1. 같은 노드에서 다른 속성을 추가하여 설명 텍스트가 드롭다운 목록에 나타나도록 합니다.
 
+   * **이름** `description`
    * **유형** `String`
-   * **값** 이 포맷의 설명 텍스트입니다. 예를 들어 단락, 머리글 1, 머리글 2 등이 있습니다. 이 텍스트는 형식 선택 목록에 표시됩니다.`String`
-   * **변경 사항을 저장합니다.**
+   * **값** 이 포맷의 설명 텍스트입니다. 예를 들어 단락, 머리글 1, 머리글 2 등이 있습니다. 이 텍스트는 형식 선택 목록에 표시됩니다.
 
-1. 각 필수 형식에 대해 단계를 반복합니다.
+1. 변경 사항을 저장합니다.
 
-   [!CAUTION]
+   각 필수 형식에 대해 단계를 반복합니다.
 
->사용자 정의 형식을 정의하면 기본 형식(`<p>`, `<h1>``<h2>`, 및 `<h3>`)이 제거됩니다. 기본 포맷인 것처럼 `<p>` 형식을 다시 만듭니다.
-특수 문자 구성 {#spchar}`<h1>``<h2>``<h3>``<p>`
+>[!CAUTION]
+사용자 정의 형식을 정의하면 기본 형식(`<p>`, `<h1>``<h2>`, 및 `<h3>`)이 제거됩니다. 기본 포맷인 것처럼 `<p>` 형식을 다시 만듭니다.
 
-## 표준 AEM 설치에서 `misctools` 플러그인이 특수 문자(`specialchars`)에 대해 활성화되면 즉시 기본 선택 사항을 사용할 수 있습니다. 예를 들어, 저작권 및 상표 심볼입니다.
+## 특수 문자 구성 {#spchar}
 
-사용자가 직접 선택한 문자를 사용할 수 있도록 RTE를 구성할 수 있습니다. 개별 문자를 정의하거나 전체 시퀀스를 정의할 수 있습니다.`misctools``specialchars`
+표준 AEM 설치에서 `misctools` 플러그인이 특수 문자(`specialchars`)에 대해 활성화되면 즉시 기본 선택 사항을 사용할 수 있습니다. 예를 들어, 저작권 및 상표 심볼입니다.
 
-[!CAUTION]
+사용자가 직접 선택한 문자를 사용할 수 있도록 RTE를 구성할 수 있습니다. 개별 문자를 정의하거나 전체 시퀀스를 정의할 수 있습니다.
 
->[!CAUTION]고유한 특수 문자를 추가하면 기본 선택 내용이 무시됩니다. 필요한 경우 (re-)직접 선택한 항목에 이러한 문자를 정의합니다.
-단일 문자 정의 {#definesinglechar}
+>[!CAUTION]
+고유한 특수 문자를 추가하면 기본 선택 내용이 무시됩니다. 필요한 경우 (re-)직접 선택한 항목에 이러한 문자를 정의합니다.
 
-### 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/misctools`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+### 단일 문자 정의 {#definesinglechar}
 
-1. 노드에서 `features` 속성을 `misctools` 만듭니다.](#activateplugin)
-1. **이름** `features`
+1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/misctools`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 노드에서 `features` 속성을 `misctools` 만듭니다.
 
+   * **이름** `features`
    * **유형** `String[]`
    * **값** `specialchars`
-   *     (또는 이 플러그인에 대한 모든 기능을 적용하는 경우) `String / *`**`specialchars`
 
-      Create a node to hold the special character configurations: `misctools`
+          (또는 이 플러그인에 대한 모든 기능을 적용하는 경우) `String / *`
 
-1. **이름** `specialCharsConfig`
+1. Create a node to hold the special character configurations: `misctools`
 
+   * **이름** `specialCharsConfig`
    * **유형** `nt:unstructured`
-   * Create another node to hold the list of characters: `specialCharsConfig`**`nt:unstructured`
 
-1. **이름** `chars`
+1. Create another node to hold the list of characters: `specialCharsConfig`
 
+   * **이름** `chars`
    * **유형** `nt:unstructured`
-   * 새 노드 `chars` 추가에서 개별 문자 정의를 보유합니다.**`nt:unstructured`
 
-1. **이름을 지정할** 수 있지만 문자를 반영해야 합니다. 예를 들어, 절반
+1. 새 노드 `chars` 추가에서 개별 문자 정의를 보유합니다.
 
+   * **이름을 지정할** 수 있지만 문자를 반영해야 합니다. 예를 들어, 절반
    * **유형** `nt:unstructured`
-   * **이 노드에 다음 속성을 추가합니다.**`nt:unstructured`
 
-1. **이름** `entity`
+1. 이 노드에 다음 속성을 추가합니다.
 
+   * **이름** `entity`
    * **유형** `String`
    * **필요한 문자의 HTML 표현 값** ; 예를 들어 분수 `&189;` 1/2의 경우
-   * **변경 사항을 저장합니다.**`&189;`
 
-1. CRXDE에서 속성을 저장하면 표현된 문자가 표시됩니다. 아래 절반의 예를 참조하십시오. 작성자가 사용할 수 있는 특수 문자를 만들려면 위 단계를 반복합니다.
+1. 변경 사항을 저장합니다.
+
+CRXDE에서 속성을 저장하면 표현된 문자가 표시됩니다. 아래 절반의 예를 참조하십시오. 작성자가 사용할 수 있는 특수 문자를 만들려면 위 단계를 반복합니다.
 
 ![CRXDE에서 RTE](assets/chlimage_1-106.png "도구 모음에서 사용할 수 있는 단일 문자 추가CRXDE에서 RTE 도구 모음에서 사용할 수 있도록 단일 문자 추가")
 
-문자 범위 정의 {#definerangechar}](assets/chlimage_1-106.png "")
+### 문자 범위 정의 {#definerangechar}
 
-### 단일 문자 [정의에서 1~3단계를 사용합니다](#definingasinglecharacter).
+1. 단일 문자 [정의에서 1~3단계를 사용합니다](#definingasinglecharacter).
+1. 새 노드 `chars` 추가에서 문자 범위 정의를 보유합니다.
 
-1. 새 노드 `chars` 추가에서 문자 범위 정의를 보유합니다.](#definingasinglecharacter)
-1. **이름을 지정할** 수 있지만 문자 범위를 반영해야 합니다. 예를 들어 연필
-
+   * **이름을 지정할** 수 있지만 문자 범위를 반영해야 합니다. 예를 들어 연필
    * **유형** `nt:unstructured`
-   * **이 노드 아래에서(특수 문자 범위에 따라 이름 지정) 다음 두 속성을 추가합니다.**`nt:unstructured`
 
-1. **이름** `rangeStart`
+1. 이 노드 아래에서(특수 문자 범위에 따라 이름 지정) 다음 두 속성을 추가합니다.
 
+   * **이름** `rangeStart`
+      **유형** `Long`
+      **범위** 에서 [첫 번째](https://unicode.org/) 문자의 유니코드 표현(십진수) 값
 
-   * **유형** `Long`
-      **범위** 에서 [첫 번째[#$tu253] 문자의 유니코드 표현(십진수) 값      
+   * **이름** `rangeEnd`
+      **유형** `Long`
+      **범위** 의 [마지막](https://unicode.org/) 문자 중 유니코드 표현(십진수)의 값
 
-   * **유형** `Long`
-      **범위** 의 [마지막[#$tu257] 문자 중 유니코드 표현(십진수)의 값      
+1. 변경 사항을 저장합니다.
 
-1. 예를 들어 9998 - 10000에서 범위를 정의하면 다음 문자가 제공됩니다.
+   예를 들어 9998 - 10000에서 범위를 정의하면 다음 문자가 제공됩니다.
 
    ![CRXDE에서 RTE에서 사용할 수 있는 문자 범위를 정의합니다.](assets/chlimage_1-107.png)
 
@@ -516,261 +516,254 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
 
    ![RTE에서 사용할 수 있는 특수 문자가 팝업](assets/rtepencil.png "창의 작성자에게 표시RTE에서 사용할 수 있는 특수 문자가 팝업 창의 작성자에게 표시됩니다")
 
-   표 스타일 구성 {#tablestyles}](assets/rtepencil.png "")
+## 표 스타일 구성 {#tablestyles}
 
-## 스타일은 일반적으로 텍스트에 적용되지만 표 또는 일부 표 셀에도 별도의 스타일 세트를 적용할 수 있습니다. 이러한 스타일은 셀 속성 또는 표 속성 대화 상자의 스타일 선택기 상자에서 작성자가 사용할 수 있습니다. 이 스타일은 표준 표 구성 요소가 아닌 텍스트 구성 요소(또는 파생) 내의 표를 편집할 때 사용할 수 있습니다.{#tablestyles}
+스타일은 일반적으로 텍스트에 적용되지만 표 또는 일부 표 셀에도 별도의 스타일 세트를 적용할 수 있습니다. 이러한 스타일은 셀 속성 또는 표 속성 대화 상자의 스타일 선택기 상자에서 작성자가 사용할 수 있습니다. 이 스타일은 표준 표 구성 요소가 아닌 텍스트 구성 요소(또는 파생) 내의 표를 편집할 때 사용할 수 있습니다.
 
-[!NOTE]
+>[!NOTE]
+클래식 UI에 대해서만 표 및 셀의 스타일을 정의할 수 있습니다.
 
->[!NOTE]클래식 UI에 대해서만 표 및 셀의 스타일을 정의할 수 있습니다.
-[!NOTE]
+>[!NOTE]
+RTE 구성 요소의 테이블 복사 및 붙여넣기는 브라우저에 따라 다릅니다. 모든 브라우저에서는 지원되지 않습니다. 표 구조 및 브라우저에 따라 다양한 결과를 얻을 수 있습니다. 예를 들어 클래식 UI 및 터치 UI에서 Mozilla Firefox의 RTE 구성 요소에 표를 복사하여 붙여넣으면 표 레이아웃이 유지되지 않습니다.
 
->[!NOTE]RTE 구성 요소의 테이블 복사 및 붙여넣기는 브라우저에 따라 다릅니다. 모든 브라우저에서는 지원되지 않습니다. 표 구조 및 브라우저에 따라 다양한 결과를 얻을 수 있습니다. 예를 들어 클래식 UI 및 터치 UI에서 Mozilla Firefox의 RTE 구성 요소에 표를 복사하여 붙여넣으면 표 레이아웃이 유지되지 않습니다.
-구성 요소 내에서 노드를 탐색합니다 `<rtePlugins-node>/table`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 구성 요소 내에서 노드를 탐색합니다 `<rtePlugins-node>/table`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 노드에서 `features` 속성을 `table` 만듭니다.
 
-1. 노드에서 `features` 속성을 `table` 만듭니다.](#activateplugin)
-1. **이름** `features`
-
+   * **이름** `features`
    * **유형** `String`
    * **값** `*`
-   * [!NOTE]**`*`
+   >[!NOTE]
+   모든 표 기능을 활성화하지 않으려면 속성을 다음과 같이 만들 수 `features` 있습니다.
+   * **유형** `String[]`
 
-   >모든 표 기능을 활성화하지 않으려면 속성을 다음과 같이 만들 수 `features` 있습니다.
-   **유형** `String[]`
-   * **필요에 따라 다음 값**&#x200B;중 하나 또는 둘 다를 선택합니다.`String[]`
-
-   * `table` to allow the editing of table properties; 를 참조하십시오.**
+   * **필요에 따라 다음 값**&#x200B;중 하나 또는 둘 다를 선택합니다.
+      * `table` to allow the editing of table properties; 를 참조하십시오.
       * `cellprops` to allow the editing of cell properties, including the styles.
-      * CSS 스타일 시트의 위치를 정의하여 지정합니다. 텍스트 [에 대한](#locationofstylesheet) 스타일을 정의할 때와 동일하게 스타일 시트 [위치 지정을 참조하십시오](#textstyles). 다른 스타일을 정의한 경우 위치를 정의할 수 있습니다.
 
 
-1. Under the `table` node create the following new nodes (as required):](#locationofstylesheet)[](#textstyles)
-1. 전체 표에 대한 스타일을 정의하려면(표 속성 **에서 사용 가능**):
+1. CSS 스타일 시트의 위치를 정의하여 지정합니다. 텍스트 [에 대한](#locationofstylesheet) 스타일을 정의할 때와 동일하게 스타일 시트 [위치 지정을 참조하십시오](#textstyles). 다른 스타일을 정의한 경우 위치를 정의할 수 있습니다.
+1. Under the `table` node create the following new nodes (as required):
 
-   * **이름** `tableStyles`
+   * 전체 표에 대한 스타일을 정의하려면(표 속성 **에서 사용 가능**):
 
+      * **이름** `tableStyles`
       * **유형** `cq:WidgetCollection`
-      * 개별 셀의 스타일을 정의하려면(셀 속성 **에서 사용 가능**):`cq:WidgetCollection`
-   * **이름** `cellStyles`
+   * 개별 셀의 스타일을 정의하려면(셀 속성 **에서 사용 가능**):
 
+      * **이름** `cellStyles`
       * **유형** `cq:WidgetCollection`
-      * 개별 스타일을 나타내는 새 노드( `tableStyles` 또는 `cellStyles` 노드 아래)를 만듭니다.`cq:WidgetCollection`
 
 
-1. **이름을 지정할** 수 있지만 스타일을 반영해야 합니다.
+1. 개별 스타일을 나타내는 새 노드( `tableStyles` 또는 `cellStyles` 노드 아래)를 만듭니다.
 
+   * **이름을 지정할** 수 있지만 스타일을 반영해야 합니다.
    * **유형** `nt:unstructured`
-   * **이 노드에서 속성을 만듭니다.**`nt:unstructured`
 
-1. 참조할 CSS 스타일을 정의하려면
+1. 이 노드에서 속성을 만듭니다.
 
-   * **이름** `cssName`
+   * 참조할 CSS 스타일을 정의하려면
 
+      * **이름** `cssName`
       * **유형** `String`
       * **값** CSS 클래스의 이름(예: 앞에 `.`가 없는 `cssClass` 경우, 대신 `.cssClass`)
-      * **드롭다운 선택기에 표시할 설명 텍스트를 정의하려면**`.``cssClass``.cssClass`
-   * **이름** `text`
+   * 드롭다운 선택기에 표시할 설명 텍스트를 정의하려면
 
+      * **이름** `text`
       * **유형** `String`
-      * **선택 목록에 표시할 텍스트 값**`String`
-      * **모든 변경 사항을 저장합니다.**
+      * **선택 목록에 표시할 텍스트 값**
 
 
-1. 각 필수 스타일에 대해 위 단계를 반복합니다.
+1. 모든 변경 사항을 저장합니다.
 
-접근성을 위해 표에 숨겨진 머리글 구성 {#hiddenheader}
+각 필수 스타일에 대해 위 단계를 반복합니다.
 
-### 열의 목적이 다른 열과 열 간의 시각적 관계에 의해 암묵되었다고 가정할 때, 열 머리글에 시각적 텍스트가 없는 데이터 표를 만들 수 있습니다. 이 경우, 다양한 요구 사항이 있는 독자가 열의 용도를 이해할 수 있도록 화면 판독기 및 기타 보조 기술을 허용하려면 헤더 셀의 셀 내에 숨겨진 내부 텍스트를 제공해야 합니다.{#hiddenheader}
+### 접근성을 위해 표에 숨겨진 머리글 구성 {#hiddenheader}
+
+열의 목적이 다른 열과 열 간의 시각적 관계에 의해 암묵되었다고 가정할 때, 열 머리글에 시각적 텍스트가 없는 데이터 표를 만들 수 있습니다. 이 경우, 다양한 요구 사항이 있는 독자가 열의 용도를 이해할 수 있도록 화면 판독기 및 기타 보조 기술을 허용하려면 헤더 셀의 셀 내에 숨겨진 내부 텍스트를 제공해야 합니다.
 
 이러한 시나리오에서 액세서빌러티를 향상시키기 위해 RTE는 숨겨진 헤더 셀을 지원합니다. 또한 표의 숨겨진 헤더와 관련된 구성 설정을 제공합니다. 이러한 설정을 사용하면 편집 및 미리 보기 모드에서 숨겨진 헤더에 CSS 스타일을 적용할 수 있습니다. 작성자가 편집 모드에서 숨겨진 헤더를 식별하는 데 도움이 되도록 코드에 다음 매개 변수를 포함하십시오.
 
-`hiddenHeaderEditingCSS`: RTE를 편집할 때 숨겨진 헤더 셀에 적용되는 CSS 클래스의 이름을 지정합니다.
-
+* `hiddenHeaderEditingCSS`: RTE를 편집할 때 숨겨진 헤더 셀에 적용되는 CSS 클래스의 이름을 지정합니다.
 * `hiddenHeaderEditingStyle`: RTE를 편집할 때 숨겨진 헤더 셀에 적용되는 스타일 문자열을 지정합니다.
-* `hiddenHeaderEditingStyle`코드에서 CSS와 Style 문자열을 모두 지정하는 경우 CSS 클래스가 스타일 문자열보다 우선하며 스타일 문자열의 구성 변경 사항을 덮어쓸 수 있습니다.
+
+코드에서 CSS와 Style 문자열을 모두 지정하는 경우 CSS 클래스가 스타일 문자열보다 우선하며 스타일 문자열의 구성 변경 사항을 덮어쓸 수 있습니다.
 
 작성자가 미리 보기 모드에서 숨겨진 헤더에 CSS를 적용하는 데 도움이 되도록 코드에 다음 매개 변수를 포함할 수 있습니다.
 
-`hiddenHeaderClassName`: 미리 보기 모드에서 숨겨진 헤더 셀에 적용되는 CSS 클래스의 이름을 지정합니다.
-
+* `hiddenHeaderClassName`: 미리 보기 모드에서 숨겨진 헤더 셀에 적용되는 CSS 클래스의 이름을 지정합니다.
 * `hiddenHeaderStyle`: 미리 보기 모드에서 숨겨진 헤더 셀에 적용되는 스타일 문자열을 지정합니다.
-* `hiddenHeaderStyle`코드에서 CSS와 Style 문자열을 모두 지정하는 경우 CSS 클래스가 스타일 문자열보다 우선하며 스타일 문자열의 구성 변경 사항을 덮어쓸 수 있습니다.
 
-맞춤법 검사기 사전 추가 {#adddict}
+코드에서 CSS와 Style 문자열을 모두 지정하는 경우 CSS 클래스가 스타일 문자열보다 우선하며 스타일 문자열의 구성 변경 사항을 덮어쓸 수 있습니다.
 
-## 맞춤법 검사 플러그인이 활성화되면 RTE에서는 각 해당 언어에 대한 사전을 사용합니다. 그런 다음 하위 트리에서 언어 속성을 가져오거나 URL에서 언어를 추출하여 웹 사이트의 언어에 따라 선택됩니다. 예를 들면 다음과 같습니다. 그 `/en/` 분기는 영어로, 분기는 독일어로 `/de/` 확인된다.
+## 맞춤법 검사기 사전 추가 {#adddict}
 
-[!NOTE]`/de/`
+맞춤법 검사 플러그인이 활성화되면 RTE에서는 각 해당 언어에 대한 사전을 사용합니다. 그런 다음 하위 트리에서 언어 속성을 가져오거나 URL에서 언어를 추출하여 웹 사이트의 언어에 따라 선택됩니다. 예를 들면 다음과 같습니다. 그 `/en/` 분기는 영어로, 분기는 독일어로 `/de/` 확인된다.
 
->[!NOTE]&quot;맞춤법 검사에 실패했습니다.&quot; 메시지 가 설치되지 않은 언어를 확인하려고 하면 표시됩니다.
+>[!NOTE]
+&quot;맞춤법 검사에 실패했습니다.&quot; 메시지 가 설치되지 않은 언어를 확인하려고 하면 표시됩니다.
+
 표준 AEM 설치에는 다음과 같은 사전이 포함됩니다.
 
-미국 영어(en_us)
-
+* 미국 영어(en_us)
 * 영어(en_gb)
-* [!NOTE]
 
->표준 사전은 해당 Readme 파일과 `/libs/cq/spellchecker/dictionaries`함께 에 있습니다. 파일을 수정하지 마십시오.
-필요한 경우 사전을 더 추가하려면 다음 단계를 따르십시오.`/libs/cq/spellchecker/dictionaries`
+>[!NOTE]
+표준 사전은 해당 Readme 파일과 `/libs/cq/spellchecker/dictionaries`함께 에 있습니다. 파일을 수정하지 마십시오.
 
-https://extensions.openoffice.org/페이지로 [이동합니다[#$tu323].
+필요한 경우 사전을 더 추가하려면 다음 단계를 따르십시오.
 
-1. 
-1. [!CAUTION]
+1. https://extensions.openoffice.org/페이지로 [이동합니다](https://extensions.openoffice.org/).
+1. 필요한 언어를 선택하고 맞춤법 정의가 있는 ZIP 파일을 다운로드합니다. 파일 시스템에서 아카이브 컨텐츠를 추출합니다.
 
-   >OpenOffice.org v2.0.1 또는 이전 버전의 `MySpell` 형식의 사전만 지원됩니다. 현재 사전이 파일을 보관하는 경우 다운로드 후 아카이브를 확인하는 것이 좋습니다.
-   .aff 및 .dic 파일을 찾습니다. 파일 이름을 소문자로 유지합니다. 예를 들어, `de_de.aff` 및 `de_de.dic`.
+   >[!CAUTION]
+   OpenOffice.org v2.0.1 또는 이전 버전의 `MySpell` 형식의 사전만 지원됩니다. 현재 사전이 파일을 보관하는 경우 다운로드 후 아카이브를 확인하는 것이 좋습니다.
 
-1. 의 저장소에서 .aff 및 .dic 파일을 로드합니다 `/apps/cq/spellchecker/dictionaries`.`de_de.dic`
-1. [!NOTE]
+1. .aff 및 .dic 파일을 찾습니다. 파일 이름을 소문자로 유지합니다. 예를 들어, `de_de.aff` 및 `de_de.dic`.
+1. 의 저장소에서 .aff 및 .dic 파일을 로드합니다 `/apps/cq/spellchecker/dictionaries`.
 
->[!NOTE]RTE 맞춤법 검사기는 on-demand로 사용할 수 있습니다. 텍스트를 입력하기 시작하면 자동으로 실행되지 않습니다.
+>[!NOTE]
+RTE 맞춤법 검사기는 on-demand로 사용할 수 있습니다. 텍스트를 입력하기 시작하면 자동으로 실행되지 않습니다.
 맞춤법 검사기를 실행하려면 도구 모음에서 맞춤법 검사기 단추를 탭/클릭합니다. RTE는 단어의 맞춤법을 검사하고 철자가 잘못된 단어를 강조 표시합니다.
 맞춤법 검사기에서 제안하는 변경 내용을 포함할 경우 텍스트 상태가 변경되고 맞춤법이 틀린 단어가 강조 표시된 문제가 해결되었습니다. 맞춤법 검사기를 실행하려면 맞춤법 검사기 단추를 다시 탭/클릭합니다.
-실행 취소 및 다시 실행 작업의 기록 크기 구성 {#undohistory}
 
-## RTE를 통해 작성자는 몇 번의 마지막 편집 내용을 실행 취소하거나 재실행할 수 있습니다. 기본적으로 50개의 편집 내용이 내역에 저장됩니다. 필요에 따라 이 값을 구성할 수 있습니다.{#undohistory}
+## 실행 취소 및 다시 실행 작업의 기록 크기 구성 {#undohistory}
 
-구성 요소 내에서 노드를 탐색합니다 `<rtePlugins-node>/undo`. 이러한 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+RTE를 통해 작성자는 몇 번의 마지막 편집 내용을 실행 취소하거나 재실행할 수 있습니다. 기본적으로 50개의 편집 내용이 내역에 저장됩니다. 필요에 따라 이 값을 구성할 수 있습니다.
 
-1. 노드에서 `undo` 속성을 만듭니다.[](#activateplugin)
-1. **이름** `maxUndoSteps`
+1. 구성 요소 내에서 노드를 탐색합니다 `<rtePlugins-node>/undo`. 이러한 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 노드에서 `undo` 속성을 만듭니다.
 
+   * **이름** `maxUndoSteps`
    * **유형** `Long`
    * **기록에 저장할 실행 취소 단계 수의 값입니다** . 기본값은 50입니다. 실행 취소/다시 실행 `0` 을 완전히 비활성화하는 데 사용합니다.
-   * **변경 사항을 저장합니다.**`0`
 
-1. 탭 크기 구성 {#tabsize}
+1. 변경 사항을 저장합니다.
 
-## 텍스트 내에서 탭 문자를 누르면 사전 정의된 공백 수가 삽입됩니다. 기본적으로 3개의 비분리 공백과 1개의 공백이 있습니다.{#tabsize}
+## 탭 크기 구성 {#tabsize}
+
+텍스트 내에서 탭 문자를 누르면 사전 정의된 공백 수가 삽입됩니다. 기본적으로 3개의 비분리 공백과 1개의 공백이 있습니다.
 
 탭 크기를 정의하려면
 
-구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/keys`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/keys`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 노드에서 `keys` 속성을 만듭니다.
 
-1. 노드에서 `keys` 속성을 만듭니다.[](#activateplugin)
-1. **이름** `tabSize`
-
+   * **이름** `tabSize`
    * **유형** `String`
-   * **변수에서 사용할 공백 문자 수의 값입니다** .`String`
-   * **변경 사항을 저장합니다.**
+   * **변수에서 사용할 공백 문자 수의 값입니다** .
 
-1. 들여쓰기 여백 설정 {#indentmargin}
+1. 변경 사항을 저장합니다.
 
-## 들여쓰기를 활성화하면(기본값) 들여쓰기 크기를 정의할 수 있습니다.{#indentmargin}
+## 들여쓰기 여백 설정 {#indentmargin}
 
-[!NOTE]
+들여쓰기를 활성화하면(기본값) 들여쓰기 크기를 정의할 수 있습니다.
 
->[!NOTE]이 들여쓰기 크기는 텍스트의 단락(블록)에만 적용됩니다. 실제 목록의 들여쓰기에는 영향을 주지 않습니다.
-구성 요소 내에서 노드를 탐색합니다 `<rtePlugins-node>/lists`. 이러한 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+>[!NOTE]
+이 들여쓰기 크기는 텍스트의 단락(블록)에만 적용됩니다. 실제 목록의 들여쓰기에는 영향을 주지 않습니다.
 
-1. 노드에서 `lists` 매개 변수를 `identSize` 만듭니다.](#activateplugin)
-1. **이름**: `identSize`
+1. 구성 요소 내에서 노드를 탐색합니다 `<rtePlugins-node>/lists`. 이러한 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 노드에서 `lists` 매개 변수를 `identSize` 만듭니다.
 
+   * **이름**: `identSize`
    * **유형**: `Long`
-   * **값**: 들여쓰기 여백에 필요한 픽셀 수입니다.`Long`
-   * 편집 가능한 공간의 높이 구성 {#editablespace}**
+   * **값**: 들여쓰기 여백에 필요한 픽셀 수입니다.
 
-## [!NOTE]
+## 편집 가능한 공간의 높이 구성 {#editablespace}
 
->[!NOTE]이는 대화 상자에서 RTE를 사용할 때만 해당됩니다(클래식 UI에서는 즉석 편집 작업이 아님).
+>[!NOTE]
+이는 대화 상자에서 RTE를 사용할 때만 해당됩니다(클래식 UI에서는 즉석 편집 작업이 아님).
+
 구성 요소 대화 상자 내에 표시된 편집 가능한 공간의 높이를 정의할 수 있습니다.
 
-구성 요소에 대한 대화 상자 정의의 `../items/text` 노드에서 새 속성을 만듭니다.
+1. 구성 요소에 대한 대화 상자 정의의 `../items/text` 노드에서 새 속성을 만듭니다.
 
-1. **이름** `height`
-
+   * **이름** `height`
    * **유형** `Long`
-   * **편집 캔버스의 높이를 픽셀 단위로 지정합니다** .`Long`
-   * [!NOTE]**
+   * **편집 캔버스의 높이를 픽셀 단위로 지정합니다** .
+   >[!NOTE]
+   대화 상자 창의 높이는 변경되지 않습니다.
 
-   >[!NOTE]대화 상자 창의 높이는 변경되지 않습니다.
-   변경 사항을 저장합니다.
+1. 변경 사항을 저장합니다.
 
-1. 링크에 대한 스타일 및 프로토콜 구성 {#linkstyles}
+## 링크에 대한 스타일 및 프로토콜 구성 {#linkstyles}
 
-## AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.{#linkstyles}
+AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
 
-사용할 CSS 스타일
-
+* 사용할 CSS 스타일
 * 프로토콜이 자동으로 승인됨
-* 다른 프로그램에서 AEM에 링크가 추가되는 방식을 구성하려면 HTML 규칙을 정의합니다.
 
-CRXDE Lite를 사용하여 프로젝트의 텍스트 구성 요소를 찾습니다.
+다른 프로그램에서 AEM에 링크가 추가되는 방식을 구성하려면 HTML 규칙을 정의합니다.
 
+1. CRXDE Lite를 사용하여 프로젝트의 텍스트 구성 요소를 찾습니다.
 1. Create a new node at the same level as `<rtePlugins-node>`, that, create the node under the parent node of `<rtePlugins-node>`:
-1. **이름** `htmlRules`
 
+   * **이름** `htmlRules`
    * **유형** `nt:unstructured`
-   * [!NOTE]**`nt:unstructured`
-
-   >노드에는 `../items/text` 다음과 같은 속성이 있습니다.
-   **이름** `xtype`
+   >[!NOTE]
+   노드에는 `../items/text` 다음과 같은 속성이 있습니다.
+   * **이름** `xtype`
    * **유형** `String`
    * **값** `richtext`
-   * 노드의 `../items/text` 위치는 대화 상자의 구조에 따라 다를 수 있습니다. 두 가지 예는 다음과 같습니다.**`richtext`
-
-   `/apps/myProject>/components/text/dialog/items/text`
+   노드의 `../items/text` 위치는 대화 상자의 구조에 따라 다를 수 있습니다. 두 가지 예는 다음과 같습니다.
+   * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-   * 아래에서 `htmlRules`새 노드를 만듭니다.
 
 
-1. **이름** `links`
+1. 아래에서 `htmlRules`새 노드를 만듭니다.
 
+   * **이름** `links`
    * **유형** `nt:unstructured`
-   * 노드 아래에서 `links` 필요에 따라 속성을 정의합니다.**`nt:unstructured`
 
-1. 내부 링크에 대한 CSS 스타일:`links`
+1. 노드 아래에서 `links` 필요에 따라 속성을 정의합니다.
 
-   * **이름** `cssInternal`
+   * 내부 링크에 대한 CSS 스타일:
 
+      * **이름** `cssInternal`
       * **유형** `String`
       * **값** CSS 클래스의 이름(이전 &#39;.&#39; 없이); for example, `cssClass` instead of `.cssClass`)
-      * **외부 링크에 대한 CSS 스타일**`cssClass``.cssClass`
-   * **이름** `cssExternal`
+   * 외부 링크에 대한 CSS 스타일
 
+      * **이름** `cssExternal`
       * **유형** `String`
       * **값** CSS 클래스의 이름(이전 &#39;.&#39; 없이); for example, `cssClass` instead of `.cssClass`)
-      * 유효한 **프로토콜** 배열(https://, https:// file://, mailto: 등)`cssClass``.cssClass`
-   * **이름** `protocols`
+   * 유효한 **프로토콜** 배열(https://, https:// file://, mailto: 등)
 
+      * **이름** `protocols`
       * **유형** `String[]`
-      * **값**&#x200B;하나 이상의 프로토콜`String[]`
-      * **defaultProtocol** (문자열 유형의 **속성**): 사용자가 명시적으로 프로토콜을 지정하지 않은 경우 사용할 프로토콜입니다.
-   * **이름** `defaultProtocol`**
+      * **값**&#x200B;하나 이상의 프로토콜
+   * **defaultProtocol** (문자열 유형의 **속성**): 사용자가 명시적으로 프로토콜을 지정하지 않은 경우 사용할 프로토콜입니다.
 
+      * **이름** `defaultProtocol`
       * **유형** `String`
-      * **값**&#x200B;하나 이상의 기본 프로토콜`String`
-      * **링크의 대상 속성을 처리하는 방법에 대한 정의입니다. 새 노드 만들기:**
-   * **이름** `targetConfig`
+      * **값**&#x200B;하나 이상의 기본 프로토콜
+   * 링크의 대상 속성을 처리하는 방법에 대한 정의입니다. 새 노드 만들기:
 
+      * **이름** `targetConfig`
       * **유형** `nt:unstructured`
-      * 노드에서 `targetConfig`: 필수 속성을 정의합니다.**`nt:unstructured`
+      노드에서 `targetConfig`: 필수 속성을 정의합니다.
 
-      대상 모드를 지정합니다.`targetConfig`
+      * 대상 모드를 지정합니다.
 
-      * **이름** `mode`
-
+         * **이름** `mode`
          * **유형** `String`)
-         * **값**:`String`
-         * `auto`: 자동 타겟이 선택된다는 의미입니다.**
+         * **값**:
 
-            * (외부 링크 또는 내부 링크의 `targetExternal` 속성으로 `targetInternal` 지정됨).
+            * `auto`: 자동 타겟이 선택된다는 의미입니다.
 
-               `manual`: 이 컨텍스트에 적용되지 않음`targetInternal`
+               (외부 링크 또는 내부 링크의 `targetExternal` 속성으로 `targetInternal` 지정됨).
 
+            * `manual`: 이 컨텍스트에 적용되지 않음
             * `blank`: 이 컨텍스트에 적용되지 않음
-            * `blank`내부 링크의 대상:
-      * **이름** `targetInternal`
+      * 내부 링크의 대상:
 
+         * **이름** `targetInternal`
          * **유형** `String`
          * **내부 링크에 대한 타겟의 값** (&quot;mode is `auto`인 경우에만 사용)
-         * **외부 링크의 대상:**`auto`
-      * **이름** `targetExternal`
+      * 외부 링크의 대상:
 
+         * **이름** `targetExternal`
          * **유형** `String`
          * **외부 링크의 대상 값** (모드가 인 경우에만 사용됨 `auto`).
-         * **모든 변경 사항을 저장합니다.**`auto`
 
 
 
@@ -779,4 +772,4 @@ CRXDE Lite를 사용하여 프로젝트의 텍스트 구성 요소를 찾습니�
 
 
 
-1. Save all changes.
+1. 모든 변경 사항을 저장합니다.
