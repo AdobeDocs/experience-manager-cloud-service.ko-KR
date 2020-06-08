@@ -3,6 +3,9 @@ title: 로그 관리 - 클라우드 서비스
 description: 로그 관리 - 클라우드 서비스
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 2%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 사용자는 환경 카드를 사용하여 선택한 환경에서 사용 가능한 로그 파일 목록에 액세스할 수 있습니다.  사용자는 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
 
-이러한 파일은 개요 페이지에서 UI를 통해 다운로드할 수 **있습니다** .
+이러한 파일은 UI를 통해 **개요** 페이지에서 다운로드할 수 있습니다.
 
 ![](assets/manage-logs1.png)
 
@@ -29,19 +32,19 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 UI를 통해 로그를 다운로드하는 것 외에도 API와 명령줄 인터페이스를 통해 로그를 사용할 수 있습니다.
 
-예를 들어 특정 환경의 로그 파일을 다운로드하려면 명령은
+예를 들어 특정 환경의 로그 파일을 다운로드하려면
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-다음 명령을 사용하여 로그를 추적할 수 있습니다.
+다음 명령을 사용하면 로그를 추적할 수 있습니다.
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-환경 ID(이 경우 1884)와 사용 가능한 서비스 또는 로그 이름 옵션을 얻으려면 다음을 사용할 수 있습니다.
+환경 ID(이 경우 1884년)와 사용 가능한 서비스 또는 로그 이름 옵션을 얻으려면 다음을 사용할 수 있습니다.
 
 ```java
 $ aio cloudmanager:list-environments
@@ -65,7 +68,7 @@ Environment Id Service    Name
 ```
 
 >[!Note]
->로그 **다운로드는** UI와 API를 통해 사용할 수 있지만 로그 **타임은 API** /CLI 전용입니다.
+>UI와 API를 통해 **로그 다운로드** 기능을 사용할 수 있지만, 로그 **는 API/CLI만** 사용할 수 있습니다.
 
 ### 추가 리소스 {#resources}
 
