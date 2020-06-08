@@ -1,8 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 온보딩
 description: 클라우드 서비스로서의 Adobe Experience Manager 온보딩 자습 리소스 및 설명서 링크
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 848601903cb83b930d8ec4523720a5c1287d720b
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 100%
 
 ---
 
