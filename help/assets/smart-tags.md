@@ -3,9 +3,9 @@ title: 지능적인 서비스를 사용하여 이미지에 태그 지정
 description: Adobe Sensei 서비스를 사용하여 상황에 맞는 설명형 비즈니스 태그를 적용하는 지능적인 서비스를 통해 이미지에 태그를 지정할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2401'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 비즈니스별 태그의 모델을 만들고 교육하려면 다음 단계를 따르십시오.
 
 1. 필요한 태그와 적절한 태그 구조를 만듭니다. DAM 저장소에서 관련 이미지를 업로드합니다.
-1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 자산]** > **[!UICONTROL 교육 모델에 액세스합니다]**.
+1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 자산]** > **[!UICONTROL 스마트 태그 교육에 액세스합니다]**.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 제목 **[!UICONTROL 과 설명]**&#x200B;을 **[!UICONTROL 제공합니다]**.
 1. 모델을 교육할 기존 태그의 태그 `cq:tags` 를 찾아보고 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 자산 **[!UICONTROL 선택]** 대화 상자에서 각 태그에 **[!UICONTROL 대해 자산]** 추가를 클릭합니다. DAM 저장소에서 검색하거나 저장소를 검색하여 최소 10개 및 최대 50개의 이미지를 선택할 수 있습니다. 폴더가 아닌 자산을 선택합니다. 이미지를 선택하고 나면 선택을 **[!UICONTROL 클릭합니다]**.
