@@ -3,6 +3,9 @@ title: 프로젝트 관리
 description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 78%
 
 ---
 
@@ -54,7 +57,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >
    >프로젝트와 연결할 수 있는 프로젝트 타일은 [프로젝트 타일](/help/sites-cloud/authoring/projects/overview.md#project-tiles)에 자세히 설명되어 있습니다.
 
-1. **만들기**&#x200B;를 탭/클릭합니다. 리소스가 프로젝트에 연결되어 있으므로 지금부터 프로젝트에서 리소스에 액세스할 수 있습니다.
+1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되어 있으므로 이제부터 프로젝트에서 리소스에 액세스할 수 있습니다.
 
 ### 프로젝트 또는 리소스 링크 삭제 {#deleting-a-project-or-resource-link}
 
@@ -100,7 +103,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 해당 타일에 있는 항목이 나열됩니다. 선택 모드에 들어가 항목을 수정하거나 삭제할 수 있습니다.
 
-   ![열린 타일](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![타일 열림](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
 ## 프로젝트 통계 보기 {#viewing-project-statistics}
 
