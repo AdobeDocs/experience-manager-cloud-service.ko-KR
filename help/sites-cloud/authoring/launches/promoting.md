@@ -3,6 +3,9 @@ title: 론치 홍보
 description: '게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 83%
 
 ---
 
@@ -61,7 +64,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * **현재 페이지 및 하위 페이지 홍보**
       예를 들어, 수정된 페이지만 홍보하도록 선택하는 경우:
 
-      ![출시 프로모션](/help/sites-cloud/authoring/assets/launches-promote.png)
+      ![출시 홍보](/help/sites-cloud/authoring/assets/launches-promote.png)
 
       >[!NOTE]
       >
@@ -93,9 +96,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
 1. 다음과 같은 필수 세부 사항을 입력합니다.
    * **타겟**
-      * **프로모션 타겟** - 모든 소스로 승격할 수 있습니다.
-      * **판촉 행사** 후 론치 삭제 - 선택한 론치를 프로모션한 후, 그리고 론치 내에 중첩된 모든 론치가 삭제됩니다.
-   * **범위** - 전체 론치를 홍보할지, 실제로 편집된 페이지만 홍보할지 여부를 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
+      * **프로모션 타겟** - 모든 소스로 홍보할 수 있습니다.
+      * **판촉 행사** 후 론치 삭제 - 선택한 론치를 홍보하면 해당 론치에 중첩된 모든 론치가 삭제됩니다.
+   * **범위** - 전체 론치를 홍보할지 또는 실제로 편집된 페이지만 홍보할지 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
       * **전체 론치 홍보**
       * **수정된 페이지 홍보**
       * **현재 페이지 홍보**
@@ -113,7 +116,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 변경 사항이 **론치** 콘솔에서 홍보되고 반영됩니다.
 
-   ![시작 콘솔에서](/help/sites-cloud/authoring/assets/launches-console.png)
+   ![론치 콘솔에서](/help/sites-cloud/authoring/assets/launches-console.png)
 
 ## AEM Workflow를 사용하여 승격된 페이지 처리 {#processing-promoted-pages-using-aem-workflow}
 
