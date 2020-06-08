@@ -3,6 +3,9 @@ title: 론치
 description: 론치를 사용하여 향후 릴리스용 컨텐츠를 효율적으로 개발할 수 있습니다. 현재 페이지를 유지 관리하면서 나중에 게시할 수 있도록 변경할 수도 있습니다.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 91%
 
 ---
 
@@ -59,7 +62,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 * 소스 페이지와 론치 페이지 동시 업데이트:
    * 소스 페이지 변경 사항은 론치 카피(상속을 통해, 즉 Live Copy로 설정된 경우)에서 자동으로 구현됩니다.
    * 론치 카피에 대한 변경은 이 자동 업데이트 또는 소스 페이지를 중단하지 않고 수행할 수 있습니다.
-   ![동시에 작업 수행](/help/sites-cloud/authoring/assets/launches-parallel.png)
+   ![동시 작업](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [중첩 론치 만들기](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - 론치 내 론치:
    * 소스는 기존 론치입니다.
@@ -90,7 +93,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 1. **참조** 레일을 열고 소스 페이지를 선택합니다.
 1. **론치**&#x200B;를 선택합니다. 그러면 기존 론치가 나열됩니다.
 
-   ![사이트 콘솔에서 론치 참조](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![사이트 콘솔의 론치 참조](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 적절한 론치를 탭/클릭합니다. 가능한 작업 목록이 표시됩니다.
 
