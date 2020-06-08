@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 1%
    1. **액세스 토큰**: 액세스 토큰을 입력합니다.
 
       >[!NOTE]
-      >로 이동하여 작성 인스턴스에서 액세스 토큰을 검색할 수 있습니다 `/libs/granite/migration/token.json`.
+      >로 이동하여 작성 인스턴스에서 액세스 토큰을 검색할 수 있습니다 `/libs/granite/migration/token.json`. 액세스 토큰이 클라우드 서비스 작성자 인스턴스에서 검색됩니다.
 
    1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
@@ -217,7 +217,7 @@ ht-degree: 1%
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
 
-1. [마이그레이션 **세트** **삭제** ] 대화 상자에서 삭제를 클릭하여 삭제를 확인합니다.
+1. [마이그레이션 **세트** 삭제] 대화 **상자에서** 삭제를 클릭하여 삭제를 확인합니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
 
