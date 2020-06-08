@@ -1,8 +1,11 @@
 ---
 title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 서로 다른 점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 100%
 
 ---
 
