@@ -2,9 +2,9 @@
 title: URL을 웹 애플리케이션에 연결
 description: 다이내믹 미디어에서 웹 애플리케이션에 URL을 연결하는 방법
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1272'
 ht-degree: 1%
 
 ---
@@ -22,13 +22,13 @@ AEM을 WCM으로 사용하지 *않는* 경우에만 URL에 연결합니다. 연�
 >
 >URL 문자열은 자산의 동적 변환에만 사용할 수 있습니다. 현재 동적 미디어 서버가 아닌 DAM에 있는 정적 자산에는 사용할 수 없습니다. 정적인 변환에는 URL 단추가 표시되지 않습니다.
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-See also [Linking YouTube URLs to your Web Application.](video.md)
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
+See also [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## 자산에 대한 URL 얻기 {#obtaining-a-url-for-an-asset}
 
@@ -52,7 +52,7 @@ URL 문자열을 얻는 방법에는 여러 가지가 있습니다. 그러나 �
 
    URL은 자산을 처음 *게시한* 후에만 *복사할 수* 있습니다. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
 
-   자산 [게시를 참조하십시오.](publishing-dynamicmedia-assets.md)
+   자산 [게시를 참조하십시오](publishing-dynamicmedia-assets.md).
 
    See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -84,6 +84,7 @@ URL 문자열을 얻는 방법에는 여러 가지가 있습니다. 그러나 �
 
 Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미지와 비디오를 넘어 추가 자산입니다. 배달을 위해 지원되는 정적 자산 형식은 다음과 같습니다.
 
+* 3D 파일
 * 애니메이션 GIF
 * 오디오 파일
 * CSS
@@ -99,7 +100,7 @@ Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미�
 
    URL은 정적 자산을 처음 *게시한* 후에만 *복사할 수* 있습니다.
 
-   자산 [게시를 참조하십시오.](publishing-dynamicmedia-assets.md)
+   자산 [게시를 참조하십시오](publishing-dynamicmedia-assets.md).
 
 1. 게시된 정적 자산의 URL을 얻으려면 다음 방법 중 하나를 사용하십시오.
 
@@ -108,7 +109,7 @@ Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미�
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          예, `https://aem.com/is/content/adobe/image.gif`.
-   * 자산 **[!UICONTROL > 동적 표현물]**&#x200B;을 클릭한 다음 정적 자산의 동적 변환을 누르고 URL을 복사합니다.
+   * 자산 **[!UICONTROL > 동적 표현물]**&#x200B;을 누른 다음 정적 자산의 동적 변환을 누르고 URL을 복사합니다.
 
       복사된 URL을 경로 대신 경로 `is/content` 에서 사용하도록 변경합니다 `is/image/`.
 
