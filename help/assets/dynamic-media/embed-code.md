@@ -2,15 +2,15 @@
 title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
 description: 웹 페이지에 Dynamic Media 비디오 또는 이미지를 임베드하는 방법 학습
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 
-# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# 웹 페이지에 Dynamic Media Video, Image Viewer 또는 Dimension 뷰어 포함 {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 비디오를 **[!UICONTROL 재생하거나 웹 페이지에 포함된 자산을]** 보려는 경우 포함 코드 기능을 사용합니다. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. 포함 코드 대화 상자에서 코드 **[!UICONTROL 를 편집할 수]** 없습니다.
 
