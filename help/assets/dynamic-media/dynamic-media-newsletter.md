@@ -2,9 +2,9 @@
 description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스레터입니다. Dynamic Media와 Dynamic Media Classic을 통해 작업 속도를 높일 수 있으므로 바로 가치를 실현할 수 있습니다. 비디오 방법, 솔루션 개요, 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 일부 주요 기능과 기능에 대한 도입 등 유용한 지식 작성 리소스를 이 원 스톱 스토어 뉴스레터에서 사용할 수 있습니다. '
 title: 다이내믹 미디어 뉴스레터
 translation-type: tm+mt
-source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,21 @@ Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media �
 [Dynamic Media Newsletter를 받은 편지함에서 매월 수신하려면 등록하십시오](https://www.adobe.com/subscription/dynamic-media-newsletter.html) .
 
 ## Dynamic Media 뉴스레터 문제가 누락되었습니까?
+
+* **[2020년 5월, 발행물 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   이 문제:
+
+   * 불투명한 시기에 무중단 업무 운영
+   * 첫 번째 디지털 Adobe Summit의 주요 내용
+   * Adobe Experience Manager 소규모 회의 세션 보기
+   * Summit 고객 사례: 갑옷 아래요
+   * Experience Insider 웨비나를 놓치지 마십시오.
+   * 공공 부문의 주목: 디지털 등록 시 긴급한 필요
+   * Adobe Experience Manager Innovation의 새로운 기능
+   * Adobe 전문가와의 *라이브* 제작
+   * Adobe Experience Manager 커뮤니티와 교류
+   * Adobe Experience League를 사용하여 Adobe 전문 기술을 신속하게 추적할 수 있습니다.
 
 * **[2020년 4월, 발행물 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
