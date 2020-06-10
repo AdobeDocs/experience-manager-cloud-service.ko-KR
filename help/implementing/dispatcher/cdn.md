@@ -2,9 +2,9 @@
 title: 클라우드 서비스로 AEM의 CDN
 description: 클라우드 서비스로 AEM의 CDN
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,16 @@ ht-degree: 2%
 
 ## AEM Managed CDN  {#aem-managed-cdn}
 
-Adobe의 특별 판매 CDN을 사용하여 컨텐츠 전달을 준비하는 방법은 아래에 설명된 것처럼 간단합니다.
+최신 Adobe CDN을 사용하여 컨텐츠 전달을 준비하려면 다음을 수행합니다.
 
 1. 사용자는 이 정보가 들어 있는 보안 양식에 대한 링크를 공유하여 서명된 SSL 인증서와 비밀 키를 Adobe에 제공하게 됩니다. 이 작업에 대한 고객 지원 부서에 문의하십시오.
    **참고:** 클라우드 서비스로서 AEM은 DV(Domain Validated) 인증서를 지원하지 않습니다.
 1. 고객 지원에 다음 사항을 알려주십시오.
-   * 프로그램 id 및 환경 id로 정의된 대로 지정된 환경과 연결해야 하는 사용자 지정 도메인이
+   * 프로그램 id 및 환경 id로 정의된 대로 지정된 환경과 연결해야 하는 사용자 지정 도메인이 작성자 측의 사용자 지정 도메인은 지원되지 않습니다.
    * 지정된 환경으로 트래픽을 제한하기 위해 IP 허용 목록이 필요한 경우
-1. 그러면 고객 지원에서 FQDN을 가리키는 CNAME DNS 레코드 타이밍을 조정하게 됩니다 `cdn.adobeaemcloud.com`.
+1. DNS 레코드에 필요한 변경 타이밍에 대해 고객 지원 부서에 조정해야 합니다. 지침은 에이펙스 레코드가 필요한지 여부를 기준으로 다릅니다.
+   * apex 레코드가 필요하지 않은 경우 고객은 FQDN을 가리키도록 CNAME DNS 레코드를 설정해야 합니다 `cdn.adobeaemcloud.com`.
+   * apex 레코드가 필요한 경우 다음 IP를 가리키는 A 레코드를 만듭니다. 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. 원하는 FQDN이 DNS Apex와 일치하는 경우 고객 레코드가 필요합니다 zone. 출력 SOA 값이 도메인과 일치하는지 확인하기 위해 Unix dig 명령을 사용하여 이 값을 테스트할 수 있습니다. 예를 들어 이 명령은 SOA `dig anything.dev.adobeaemcloud.com` 의 SOA(권한 시작, 즉 영역)를 APEX 레코드가 아닌 `dev.adobeaemcloud.com` 반환하고 SOA의 APEX를 반환하므로 레코드 `dig dev.adobeaemcloud.com` `dev.adobeaemcloud.com` 가 됩니다.
 1. SSL 인증서가 만료되면 알림을 받게 되므로 새 SSL 인증서를 다시 제출할 수 있습니다.
 
 **트래픽 제한**
