@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
+source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 * 컨텐츠 전송 도구에 대한 최소 시스템 요구 사항은 AEM 6.3 + 및 JAVA 8입니다. 더 낮은 AEM 버전을 사용하는 경우 콘텐츠 저장소를 AEM 6.5로 업그레이드하여 콘텐츠 전송 도구를 사용해야 합니다.
 
-* 샌드박스 환경을 사용 중인 경우 *환경이 2020년 5월 29일*&#x200B;이후 릴리스로 업그레이드되었는지 확인하십시오. 프로덕션 환경을 사용하는 경우 *자동으로*&#x200B;업데이트됩니다.
+* 샌드박스 환경을 사용 중인 경우 *환경이 2020년 6월 10일* 이후 릴리스로 업그레이드되었는지 확인하십시오. 프로덕션 환경을 사용하는 경우 *자동으로*&#x200B;업데이트됩니다.
 
-* 콘텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리자 사용자여야 하며, 콘텐츠를 전송하는 클라우드 서비스 인스턴스의 관리 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 콘텐츠 전송 도구를 사용할 수 없습니다.
+* 콘텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리자 사용자여야 하며, 콘텐츠를 전송하는 클라우드 서비스 인스턴스의 AEM 관리자 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 콘텐츠 전송 도구를 사용할 수 없습니다.
 
 * 추출 단계 동안 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
@@ -28,10 +28,10 @@ ht-degree: 1%
 
 ## 사용 가능 {#availability}
 
-소프트웨어 배포 포털에서 컨텐트 전송 도구를 zip 파일로 다운로드할 수 있습니다. 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
+Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일(Content Transfer Tool v1.0.0)로 다운로드할 수 있습니다. 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
->Adobe [Experience Cloud에서 콘텐츠 전송 도구를 다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Software Distribution Portal에서 [Content Transfer Tool을 다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## 컨텐츠 전송 도구 실행 {#running-tool}
 
