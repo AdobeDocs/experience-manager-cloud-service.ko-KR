@@ -2,9 +2,9 @@
 title: 클라우드 서비스로 AEM에서 캐싱
 description: '클라우드 서비스로 AEM에서 캐싱 '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,10 @@ ht-degree: 0%
 
 # 소개 {#intro}
 
-발송자 규칙을 사용하여 CDN에서 캐싱을 구성할 수 있습니다. 디스패처는 또한 디스패처 구성에서 활성화된 경우 결과 캐시 만료 헤더 `enableTTL` 를 준수하며, 이는 재게시되는 컨텐츠 외부에서도 특정 컨텐츠를 새로 고침한다는 의미입니다.
+트래픽은 CDN을 통해 Apache 웹 서버 레이어로 전달되며, 이 레이어는 디스패처를 포함한 모듈을 지원합니다. 성능을 높이기 위해 디스패처는 주로 게시 노드에서 처리를 제한하는 캐시로 사용됩니다.
+기본 캐시 만료 설정을 수정하기 위해 발송자 구성에 규칙을 적용할 수 있으므로 CDN에서 캐싱이 이루어집니다. 디스패처는 또한 디스패처 구성에서 활성화된 경우 결과 캐시 만료 헤더 `enableTTL` 를 준수하며, 재게시되는 컨텐츠 외부에서도 특정 컨텐츠를 새로 고칩니다.
+
+이 페이지에서는 발송자 캐시가 무효화되는 방식뿐만 아니라 클라이언트측 라이브러리와 관련하여 브라우저 수준에서 캐싱이 작동하는 방법도 설명합니다.
 
 ## 캐싱 {#caching}
 
@@ -33,6 +36,14 @@ ht-degree: 0%
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* 특정 콘텐츠가 캐시되지 않도록 하려면 Cache-Control 헤더를 &quot;private&quot;으로 설정합니다. 예를 들어, &quot;myfolder&quot;라는 디렉터리 아래의 html 콘텐츠가 캐시되지 않도록 합니다.
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * 디스패처- [ttl AEM ACS Commons 프로젝트를](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)비롯한 다른 방법은 값을 성공적으로 재정의하지 않습니다.
@@ -70,13 +81,9 @@ src/conf.dispatcher.d/cache 아래의 파일에 다음과 같은 규칙이 있�
 * 기본값은 html/텍스트 파일 유형에 사용되는 `EXPIRATION_TIME` 변수로 설정할 수 없습니다.
 * 캐시 만료는 적절한 regex를 지정하여 html/text 섹션에 설명된 것과 동일한 LocationMatch 전략으로 설정할 수 있습니다
 
-## Dispatcher {#disp}
+## 발송자 캐시 무효화 {#disp}
 
-트래픽은 Apache 웹 서버를 통과하며, 이 서버는 디스패처를 포함한 모듈을 지원합니다. 디스패처는 주로 성능을 높이기 위해 게시 노드에서 처리를 제한하는 캐시로 사용됩니다.
-
-CDN의 캐싱 섹션에 설명된 대로, 규칙을 발송자 구성에 적용하여 기본 캐시 만료 설정을 수정할 수 있습니다.
-
-이 섹션의 나머지 섹션에서는 발송자 캐시 무효화와 관련된 고려 사항에 대해 설명합니다. 대부분의 고객은 디스패처 캐시를 무효화할 필요가 없으며, 대신 디스패처가 재게시되는 컨텐츠와 캐시 만료 헤더를 준수하는 CDN을 새로 고침합니다.
+일반적으로 디스패처 캐시를 무효화할 필요는 없습니다. 대신 컨텐츠가 다시 게시될 때 디스패처가 캐시를 새로 고침하고 캐시 만료 헤더를 허용하는 CDN에 의존해야 합니다.
 
 ### 활성화/비활성화 중 Dispatcher 캐시 무효화 {#cache-activation-deactivation}
 
