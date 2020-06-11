@@ -3,9 +3,9 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1872'
 ht-degree: 1%
 
 ---
@@ -99,9 +99,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 #### MIME 형식 포함 규칙 {#mime-type-inclusion-rules}
 
-특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 이 목록이 해당 목록과 일치하면 해당 자산에 대해 특정 변환이 생성되지 않습니다(&quot;블랙리스트&quot;).
+특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 해당 목록과 일치하는 경우, 자산에 대해 특정 변환이 생성되지 않습니다(차단된 목록).
 
-그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(&quot;허용 목록&quot;).
+그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(허용된 목록).
 
 #### 특수 FPO 변환 {#special-fpo-rendition}
 
