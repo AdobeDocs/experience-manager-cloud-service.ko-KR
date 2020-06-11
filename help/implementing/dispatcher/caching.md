@@ -2,7 +2,7 @@
 title: 클라우드 서비스로 AEM에서 캐싱
 description: '클라우드 서비스로 AEM에서 캐싱 '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 0%
@@ -83,7 +83,7 @@ src/conf.dispatcher.d/cache 아래의 파일에 다음과 같은 규칙이 있�
 
 ## 발송자 캐시 무효화 {#disp}
 
-일반적으로 디스패처 캐시를 무효화할 필요는 없습니다. 대신 컨텐츠가 다시 게시될 때 디스패처가 캐시를 새로 고침하고 캐시 만료 헤더를 허용하는 CDN에 의존해야 합니다.
+일반적으로 디스패처 캐시를 무효화할 필요는 없습니다. 대신 컨텐츠가 재게시되고 있고 캐시 만료 헤더를 준수하는 CDN은 디스패처가 캐시를 새로 고치는 데 의존해야 합니다.
 
 ### 활성화/비활성화 중 Dispatcher 캐시 무효화 {#cache-activation-deactivation}
 
