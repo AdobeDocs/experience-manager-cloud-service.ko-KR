@@ -4,9 +4,9 @@ description: AEM 인스턴스를 Adobe Creative Cloud와 통합하여 에셋 전
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3302'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ AEM Assets는 AEM Assets 배포에 대한 액세스를 기반으로 두 가지 �
 
 #### DAM에 직접 액세스할 수 있는 크리에이티브 사용자 {#creative-users-with-direct-access-to-dam}
 
-일반적으로 사내 크리에이티브 팀 또는 내부 네트워크에 연결된 에이전시/크리에이티브 전문가는 AEM 로그인을 비롯한 DAM 인스턴스에 액세스할 수 있습니다. AEM 및 네트워크 인프라를 설정하여 외부 당사자(일반적으로 클라이언트에 대해 일하는 에이전시 등 신뢰할 수 있는 조직)에게 직접 액세스하면 네트워크를 통해 AEM에 액세스할 수 있습니다(예: VPN 또는 IP 허용 목록을 통해).
+일반적으로 사내 크리에이티브 팀 또는 내부 네트워크에 연결된 에이전시/크리에이티브 전문가는 AEM 로그인을 비롯한 DAM 인스턴스에 액세스할 수 있습니다. AEM 및 네트워크 인프라를 설정하여 외부 당사자(일반적으로 클라이언트를 위해 일하는 에이전시 등 신뢰할 수 있는 조직)에게 직접 액세스하면 네트워크를 통해 AEM에 액세스할 수 있습니다(예: VPN 또는 IP 허용 목록).
 
 이러한 경우 Adobe Asset Link 또는 AEM 데스크탑 앱을 사용하면 최종/승인된 자산에 손쉽게 액세스할 수 있고 크리에이티브한 에셋을 DAM에 저장할 수 있습니다.
 
@@ -186,7 +186,7 @@ DAM 인스턴스에 직접 액세스하지 않고도 외부 에이전시 및 프
 * 자산 링크가 작동하지 않는 경우 데스크탑 앱을 사용하십시오.
 * AEM [Assets 브랜드 포털](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) 을 사용하여 자산을 외부 파트너에 안전하게 배포합니다.
 * 자산 공유 공유에 기반한 배포 및 소싱 포털의 사용자 [지정 구현 사용](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* AEM에서 설정된 액세스 제어 기능과 필요한 네트워크 인프라(예: VPN 및 IP 허용 목록)를 사용하여 외부 당사자에게 DAM의 전용 컨텐츠 영역에 액세스할 수 있도록 합니다. AEM 웹 UI를 사용하여 자산을 가져오고 새 콘텐츠를 DAM에 업로드할 수 있습니다.
+* AEM에서 설정된 액세스 제어 기능과 필요한 네트워크 인프라(예: VPN 및 IP 허용 목록)를 사용하여 외부 당사자에게 DAM의 컨텐츠 전용 영역에 액세스할 수 있도록 합니다. AEM 웹 UI를 사용하여 자산을 가져오고 새 콘텐츠를 DAM에 업로드할 수 있습니다.
 
 #### AEM의 자산에서 진행 중인 작업 {#work-in-progress-on-assets-from-aem}
 
