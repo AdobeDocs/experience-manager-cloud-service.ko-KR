@@ -2,10 +2,10 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 클라우드 준비 분석기를 클릭하면 **도구**&#x200B;가 보고서 생성을 시작하고 몇 분 후 생성된 보고서가 표시됩니다.
+1. 클라우드 준비 분석기를 ****&#x200B;클릭하면 도구가 보고서 생성을 시작하고 몇 분 후 AEM 인스턴스에서 요약 보고서를 사용할 수 있습니다.
 
    >[!NOTE]
    >전체 보고서를 보려면 페이지를 아래로 스크롤해야 합니다.
@@ -77,12 +77,21 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 1. 
    1. Adobe Experience Manager를 선택하고 도구 -> **작업** -> **클라우드 준비 분석기로 이동합니다**.
 
-1. 보고서가 생성되면 **CSV를** 클릭하여 아래 그림과 같이, 전체 요약 보고서를 쉼표로 구분된 값(CSV) 형식으로 다운로드합니다.
+1. 보고서를 사용할 수 있게 되면 **CSV를** 클릭하여 아래 그림과 같이, 전체 요약 보고서를 쉼표로 구분된 값(CSV) 형식으로 다운로드합니다.
 
 ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### AEM 6.1 인스턴스에서 보고서 보기 {#aem-instances-report}
 
-AEM 6.1용 csv 보고서를 다운로드할 수 있습니다. 보류 중입니다.
+아래 절차에 따라 AEM(Adobe Experience Manager) 6.1용 CSV 보고서를 다운로드하십시오.
+
+1.를 사용하여 **Adobe Experience Manager 웹 콘솔** 구성으로 이동합니다 `https://serveraddress:serverport/system/console/configMgr`.
+
+1. 아래 그림과 같이 **상태** 탭을 선택하고 드롭다운 목록에서 **패턴** 탐지기를 검색합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. 요약 보고서는 zip 폴더 또는 JSON 형식으로 다운로드할 수 있습니다.
+
 
