@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 툴 개요
 description: 컨텐츠 전송 툴 개요
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -57,8 +57,8 @@ ht-degree: 0%
 
 * 콘텐츠 전송 도구를 실행하기 전에 소스 AEM 인스턴스의 하위 디렉터리에 디스크 공간이 충분한지 확인해야 `crx-quickstart` 합니다. 이는 컨텐츠 전송 도구가 나중에 마이그레이션 세트에 업로드된 저장소의 로컬 복사본을 만들기 때문입니다.
 필요한 여유 디스크 공간을 계산하는 일반 공식은 다음과 같습니다.
-   *데이터 저장소 크기 + 노드 저장소 크기 * 1.5*
+   `data store size + node store size * 1.5`
 
-   * 실제 *데이터 저장소 크기가*&#x200B;크더라도 내용 전송 도구는 64GB를 사용합니다.
-   * 노드 *저장소 크기는* 세그먼트 저장소 디렉터리 크기 또는 MongoDB 데이터베이스 크기입니다.
+   * *데이터 저장소 크기*: 컨텐츠 전송 도구는 실제 데이터 저장소가 더 큰 경우에도 64GB를 사용합니다.
+   * *노드 저장소 크기*: 세그먼트 저장소 디렉터리 크기 또는 MongoDB 데이터베이스 크기입니다.
 따라서 세그먼트 저장소 크기가 20GB인 경우 필요한 여유 디스크 공간은 94GB입니다.
