@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1582'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 * 컨텐츠 전송 도구에 대한 최소 시스템 요구 사항은 AEM 6.3 + 및 JAVA 8입니다. 더 낮은 AEM 버전을 사용하는 경우 콘텐츠 저장소를 AEM 6.5로 업그레이드하여 콘텐츠 전송 도구를 사용해야 합니다.
 
-* 샌드박스 환경을 사용 중인 경우 *환경이 2020년 6월 10일* 이후 릴리스로 업그레이드되었는지 확인하십시오. 프로덕션 환경을 사용하는 경우 *자동으로*&#x200B;업데이트됩니다.
+* 샌드박스 환경을 사용 중인 경우 *환경이 2020년* 6월 10일 릴리스 이상으로 업그레이드되었는지 확인하십시오. 프로덕션 환경을 사용하는 경우 *자동으로*&#x200B;업데이트됩니다.
 
 * 콘텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리자 사용자여야 하며, 콘텐츠를 전송하는 클라우드 서비스 인스턴스의 AEM 관리자 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 콘텐츠 전송 도구를 사용할 수 없습니다.
 
@@ -26,9 +26,11 @@ ht-degree: 1%
 
 * 작성자의 *통합* 단계는 전체 작성자 배포를 축소합니다. 이는 전체 통합 프로세스 동안 작성자 AEM을 사용할 수 없음을 의미합니다.
 
+* Content Transfer Tool이 한 번에 지원할 수 있는 저장소 크기에 대한 권장 상한은 20GB입니다.
+
 ## 사용 가능 {#availability}
 
-Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일(Content Transfer Tool v1.0.0)로 다운로드할 수 있습니다. 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
+컨텐트 전송 도구는 소프트웨어 배포 포털에서 zip 파일(Content Transfer Tool v1.0.0)로 다운로드할 수 있습니다. 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
 >Software Distribution Portal에서 [Content Transfer Tool을 다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
@@ -207,6 +209,8 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일(Content 
    [ *개요] 화면에서 마이그레이션 세트에 대한 로그를 볼 수도* 있습니다. 마이그레이션 세트를 선택하고 추출 필드 아래에서 상태를 **클릭합니다** . 이 경우 [마침] **을** 클릭하여 새 탭에서 로그를 봅니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. 사용자 인터페이스를 사용하지 않고 로그를 추적하려면 소스 AEM 환경에 SSH를 사용하여 로그를 추적할 수 있습니다 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### 마이그레이션 세트 삭제 {#deleting-migration-set}
 
