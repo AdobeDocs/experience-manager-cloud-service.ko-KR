@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 개요
 description: 클라우드 준비 분석기 개요
 translation-type: tm+mt
-source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 >[!NOTE]
 >클라우드 준비 분석기 보고서는 수동으로 수집하고 평가해야 하는 정보를 제공하여 AEM을 클라우드 서비스로 전환하는 데 필요한 시간과 비용을 계산하는 프로세스를 가속화합니다.
 
-요약 보고서는 AEM 사용자 인터페이스에서 사용할 수 있습니다. 리팩토링 프로세스 중에 유용한 CSV(쉼표로 구분된 값) 형식으로 전체 보고서를 다운로드하는 옵션이 있습니다.
+AEM 사용자 인터페이스에서 요약 보고서를 다운로드할 수도 있습니다. 보류 중인 **CSV 형식으로 결과 보기를** 참조하십시오.
