@@ -3,9 +3,9 @@ title: Adobe Experience Manager에서 콘텐츠를 클라우드 서비스로 작
 description: Adobe Experience Manager에서 콘텐츠를 클라우드 서비스로 작성하도록 리치 텍스트 편집기를 구성합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -56,9 +56,9 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 *그림: 툴바에서 기본 옵션을 사용하여 인라인 편집*
 
-### Full screen editing {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
-Adobe Experience Manager 구성 요소는 페이지 컨텐츠를 숨기며 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 대부분의 편집 옵션을 제공하므로 인라인 편집의 자세한 버전을 전체 화면으로 편집하는 것이 좋습니다. 인라인 편집 모드를 사용할 때 작은 도구 모음에서 ![rte_fullscreen](assets/rte_fullscreen.png)을 클릭하여 열 수 있습니다.
+Adobe Experience Manager 구성 요소는 페이지 컨텐츠를 숨기며 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 편집 옵션이 가장 다양하므로 전체 화면 편집이 인라인 편집의 자세한 버전입니다. 인라인 편집 모드를 사용할 때 작은 도구 모음에서 ![rte_fullscreen](assets/rte_fullscreen.png)을 클릭하여 열 수 있습니다.
 
 대화 상자의 전체 화면 모드에서는 자세한 RTE 도구 모음과 함께 대화 상자에서 사용할 수 있는 옵션 및 구성 요소도 사용할 수 있습니다. 다른 구성 요소와 함께 RTE가 포함된 대화상자에만 적용됩니다.
 
@@ -113,7 +113,7 @@ Adobe Experience Manager 구성 요소는 페이지 컨텐츠를 숨기며 사�
 
 >[!NOTE]
 >
->대화 상자 모드에서는 전체 화면 플러그인이 지원되지 않습니다. 전체 화면 모드 `dialogFullScreen` 에 대한 도구 모음을 구성하는 설정을 사용합니다.
+>전체 화면 플러그인은 대화 상자에서 지원되지 않습니다. 전체 화면 모드로 도구 모음을 구성하는 `dialogFullScreen` 설정을 사용합니다.
 
 ## 구성 경로 및 위치 이해 {#understand-the-configuration-paths-and-locations}
 
@@ -131,7 +131,6 @@ Adobe Experience Manager 구성 요소는 페이지 컨텐츠를 숨기며 사�
 >* **이름**: `configPath`
 >* **유형**: `String`
 >* **값**: 실제 구성을 포함하는 노드의 경로
-
 >
 >
 RTE 구성 노드의 이름을 다음으로 지정하지 마십시오 `config`. 그렇지 않으면 RTE 구성은 관리자만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
@@ -165,7 +164,6 @@ RTE 플러그인의 자세한 구성에 대해서는 RTE 플러그인을 활성�
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 자체 텍스트 구성 요소를 만들려면 이러한 구성 요소를 편집하는 대신 위의 구성 요소를 복사하십시오.
@@ -215,13 +213,13 @@ Adobe Experience Manager를 사용하면 리치 텍스트 편집기의 인터페
 </uiSettings>
 ```
 
-인라인 모드 및 전체 화면 모드에 서로 다른 UI 설정이 사용됩니다. 도구 모음 속성은 도구 모음의 단추를 지정하는 데 사용됩니다.
+인라인 모드 및 전체 화면 모드에 서로 다른 사용자 인터페이스 설정이 사용됩니다. toolbar 속성은 도구 모음의 옵션을 지정합니다.
 
-예를 들어 단추 자체가 피쳐(예: `Bold`)인 경우, `PluginName#FeatureName` (예: `links#modifylink`)로 지정됩니다.
+예를 들어 옵션 자체가 피쳐(예: `Bold`)인 경우, `PluginName#FeatureName` (예: `links#modifylink`) 로 지정됩니다.
 
-단추가 팝업인 경우(예: 플러그인 일부 기능 포함), 로 `#PluginName` 지정됩니다 `#format`.
+옵션이 팝업인 경우(예: 플러그인 일부 기능 포함), 로 `#PluginName` 지정됩니다 `#format`.
 
-단추 그룹 사이의 구분 문자(`|`)는 로 지정할 수 있습니다 `-`.
+옵션 그룹 간 구분 기호(`|`)는 로 지정할 수 있습니다 `-`.
 
 인라인 또는 전체 화면 모드 아래의 팝업 노드에는 사용 중인 팝오버 목록이 포함되어 있습니다. &#39;Popagers&#39; 노드 아래의 각 하위 노드의 이름은 플러그인(예: 형식)의 이름을 따릅니다. 플러그인 기능 목록이 포함된 속성 &#39;items&#39;가 있습니다(예: format#bold).
 
