@@ -4,7 +4,7 @@ description: 개별 기능을 사용하도록 AEM 리치 텍스트 편집기 플
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b5af8cad55c8644ba613370cf65b6a04b3abf9ed
+source-git-commit: 78f1e6427d5918639e56a89ca1f94fc402e34fee
 workflow-type: tm+mt
 source-wordcount: '4348'
 ht-degree: 3%
@@ -493,7 +493,7 @@ CRXDE에서 속성을 저장하면 표현된 문자가 표시됩니다. 아래 �
 
 ### 문자 범위 정의 {#definerangechar}
 
-1. 단일 문자 [정의에서 1~3단계를 사용합니다](#definingasinglecharacter).
+1. 단일 문자 정의에서 1~3단계 [를 사용합니다](#definesinglechar).
 1. 새 노드 `chars` 추가에서 문자 범위 정의를 보유합니다.
 
    * **이름을 지정할** 수 있지만 문자 범위를 반영해야 합니다. 예를 들어 연필
