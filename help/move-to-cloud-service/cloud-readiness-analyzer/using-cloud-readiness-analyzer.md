@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -46,14 +46,14 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 클라우드 준비 분석기를 ****&#x200B;클릭하면 도구가 보고서 생성을 시작하고 몇 분 후 AEM 인스턴스에서 요약 보고서를 사용할 수 있습니다.
+1. 클라우드 준비 분석기를 ****&#x200B;클릭하면 도구가 보고서 생성을 시작하고 몇 분 후 CRA 보고서를 AEM 인스턴스에서 사용할 수 있습니다.
 
    >[!NOTE]
    >전체 보고서를 보려면 페이지를 아래로 스크롤해야 합니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## 클라우드 준비 분석기 구성 보고서 해석 {#organized-report}
+## 클라우드 준비 분석기 보고서 해석 {#cra-report}
 
 클라우드 준비 분석기가 AEM 인스턴스에서 실행되면 보고서가 도구 창에 결과로 표시됩니다.
 
@@ -83,7 +83,7 @@ AEM 6.3 이상 버전의 경우, Cloud Ready Analyzer를 실행하는 주요 방
    >[!NOTE]
    >도구를 여는 즉시 보고서를 생성하기 위한 배경 프로세스가 CRA에 시작됩니다. 보고서가 준비될 때까지 보고서 생성이 진행 중임을 표시합니다. 브라우저 탭을 닫고 나중에 다시 방문하여 보고서가 완료되면 확인할 수 있습니다.
 
-1. CRA 보고서가 생성되고 표시되면 보고서를 쉼표로 구분된 값(CSV)으로 다운로드하는 옵션이 있습니다. 아래 그림과 같이 **CSV를** 클릭하여 전체 요약 보고서를 쉼표로 구분된 값(CSV) 형식으로 다운로드합니다.
+1. CRA 보고서가 생성되고 표시되면 보고서를 쉼표로 구분된 값(CSV)으로 다운로드하는 옵션이 있습니다. 아래 그림과 같이 **CSV** 를 클릭하여 전체 CRA 보고서를 쉼표로 구분된 값(CSV) 형식으로 다운로드합니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,29 +92,18 @@ AEM 6.3 이상 버전의 경우, Cloud Ready Analyzer를 실행하는 주요 방
 
 ### Adobe Experience Manager 6.2 및 6.1 {#aem-specific-versions}
 
-AEM(Adobe Experience Manager) 6.2에서 CSV 보고서를 생성하고 다운로드하는 링크로 클라우드 준비 분석기가 제한됩니다.
+클라우드 준비 분석기는 Adobe Experience Manager 6.2에서 CSV 보고서를 생성하고 다운로드하는 링크로 제한됩니다.
+
+Adobe Experience Manager 6.1의 경우 도구가 작동하지 않으며 HTTP 인터페이스만 사용할 수 있습니다.
 
 >[!NOTE]
->
->* Adobe Experience Manager 6.1의 경우 도구가 작동하지 않으며 HTTP 인터페이스만 사용할 수 있습니다.
-   >
-   >
-* 모든 버전에서 포함된 패턴 탐지기는 독립적으로 실행될 수 있습니다.
+>모든 버전에서 포함된 패턴 탐지기는 독립적으로 실행될 수 있습니다.
 
+## 클라우드 준비 분석기 CSV 보고서 해석 {#cra-csv-report}
 
-아래 절차에 따라 Adobe Experience Manager(AEM) 6.1 및 6.2용 CSV 보고서를 다운로드하십시오.
+AEM 인스턴스에서 **CSV** 옵션을 클릭하면 클라우드 준비 분석기 보고서의 CSV 형식이 결과 캐시에서 빌드되어 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 인 파일로 자동으로 다운로드됩니다 `results.csv`.
 
-1.를 사용하여 **Adobe Experience Manager 웹 콘솔** 구성으로 이동합니다 `https://serveraddress:serverport/system/console/configMgr`.
-
-1. 아래 그림과 같이 **상태** 탭을 선택하고 드롭다운 목록에서 **패턴** 탐지기를 검색합니다.
-
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. 요약 보고서는 zip 폴더 또는 JSON 형식으로 다운로드할 수 있습니다.
-
-## 클라우드 준비 분석기 CSV 보고서 해석 {#crs-csv-report}
-
-AEM 인스턴스에서 **CSV** 옵션을 클릭하면 클라우드 준비 분석기 보고서의 CSV 형식이 결과 캐시에서 빌드되어 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 인 파일로 자동으로 다운로드됩니다 `results.csv`. 캐시가 만료되면 CSV 파일을 빌드하고 다운로드하기 전에 보고서가 다시 생성됩니다.
+캐시가 만료되면 CSV 파일을 빌드하고 다운로드하기 전에 보고서가 다시 생성됩니다.
 
 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 카테고리 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다. Microsoft Excel과 같은 애플리케이션에서 보고 편집하는 데 적합합니다. 진행 상황을 측정하기 위해 시간 경과에 따른 보고서를 비교할 때 유용할 수 있는 모든 검색 정보를 반복 가능한 형식으로 제공하기 위한 것입니다.
 
@@ -189,7 +178,7 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 캐시 라이프타임 값은 다음 저장소 노드의 `maxCacheAge` 속성으로 저장됩니다.
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-이 속성의 값은 캐시 수명(초)입니다. 관리자는 CRX/DE Lite를 사용하여 캐시 수명을 조정할 수 있습니다.
+이 속성의 값은 캐시 수명(초)입니다. 관리자는 CRXDE Lite를 사용하여 캐시 수명을 조정할 **수 있습니다**.
 
 
 
