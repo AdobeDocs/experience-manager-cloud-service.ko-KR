@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 3%
+source-wordcount: '1450'
+ht-degree: 2%
 
 ---
 
@@ -83,6 +83,10 @@ AS NOTE: the above is internal for now.
 따라서 색인을 배포하려면 Git 및 Cloud Manager 배포 프로세스를 통해 색인 정의(`/oak:index/definitionname`) `ui.apps` 를 전달해야 합니다.
 
 새로운 색인 정의가 추가되면 새 응용 프로그램을 Cloud Manager를 통해 배포해야 합니다. 배포 시 작성자와 게시를 위해 각각 MongoDB와 Azure 세그먼트 저장소에 인덱스 정의를 추가(필요한 경우 병합)할 책임이 있는 두 개의 작업이 시작됩니다. Blue-Green 스위치가 실행되기 전에 기본 리포지토리는 새로운 인덱스 정의로 재인덱싱됩니다.
+
+>[!TIP]
+>
+>클라우드 서비스로 AEM에 필요한 패키지 구조에 대한 자세한 내용은 AEM 프로젝트 구조 문서 [를 참조하십시오.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 블루-그린 배포를 사용한 색인 관리 {#index-management-using-blue-green-deployments}
 
