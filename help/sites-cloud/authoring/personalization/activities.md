@@ -2,9 +2,9 @@
 title: 활동 관리
 description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '2002'
 ht-degree: 79%
 
 ---
@@ -130,7 +130,7 @@ Adobe Target A/B 테스트를 사용하는 경우:
 
 >[!NOTE]
 >
->활동 게시 취소 시
+>활동을 게시 취소할 때 페이지를 새로 고치지 않으면 활동의 상태가 변경되지 않습니다.
 
 활동을 게시하거나 게시 취소하려면 다음을 수행하십시오.
 
@@ -166,6 +166,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 �
 
    * 현재 활동이 비활성화됩니다.
    * 모든 페이지가 수정되고 타깃팅된 컨텐츠가 우승 경험의 실제 컨텐츠로 교체됩니다. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![우승자 전환](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    우승 경험은 보고서에서 더 많은 리프트를 생성하는 경험으로서, 전환율을 기반으로 합니다.
