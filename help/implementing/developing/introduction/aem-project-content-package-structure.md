@@ -2,10 +2,10 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 학습합니다.
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 1%
+source-wordcount: '2522'
+ht-degree: 0%
 
 ---
 
@@ -37,6 +37,16 @@ AEM에는 **컨텐츠** 및 **코드**&#x200B;분리가 필요합니다. 즉, �
 >[!WARNING]
 >
 > 이전 버전의 AEM에서와 마찬가지로 수정해서는 `/libs` 안 됩니다. AEM 제품 코드만 다음 위치에 배포할 수 있습니다 `/libs`.
+
+### Oak Indexes {#oak-indexes}
+
+Oak 색인(`/oak:index`)은 AEM Cloud Service 배포 프로세스에서 특히 관리됩니다. 이는 Cloud Manager가 새 인덱스가 배포되고 완전히 다시 표시될 때까지 기다렸다가 새 코드 이미지로 전환해야 하기 때문입니다.
+
+이러한 이유로 Oak 색인은 런타임 시 변경할 수 있지만, 변경 가능한 패키지를 설치하기 전에 설치할 수 있도록 코드로 배포해야 합니다. 따라서 `/oak:index` 구성은 코드 패키지의 일부이며 아래 설명된 내용 패키지 [의 일부가 아닙니다.](#recommended-package-structure)
+
+>[!TIP]
+>
+>AEM을 클라우드 서비스로 인덱싱하는 방법에 대한 자세한 내용은 [콘텐츠 검색 및 인덱싱 문서를 참조하십시오.](/help/operations/indexing.md)
 
 ## 권장 패키지 구조 {#recommended-package-structure}
 
@@ -184,6 +194,7 @@ AEM 작성자, AEM 게시 또는 둘 다를 타깃팅하려면 패키지가 특�
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
+
    >[!WARNING]
    >
    >계약에 따라, 하위 패키지 포함 폴더의 이름은 접미사를 붙여넣습니다 `-packages`. 이렇게 하면 배포 코드 및 컨텐츠 패키지가 파괴적이고 반복적인 설치 비헤이비어가 발생하는 하위 패키지의 대상 폴더 **를 배포하지** 않습니다 `/apps/<app-name>/...` .
