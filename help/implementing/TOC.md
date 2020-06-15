@@ -2,10 +2,10 @@
 sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
 translation-type: tm+mt
-source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
+source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 85%
+source-wordcount: '213'
+ht-degree: 81%
 
 ---
 
@@ -43,6 +43,9 @@ ht-degree: 85%
 + 클라우드 서비스로서의 AEM에 배포 {#deploying}
    + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
    + [클라우드 서비스로서의 AEM에 대한 OSGi 구성](deploying/configuring-osgi.md)
++ Author Tier {#author-tier}
+   + [작성자 계층 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
 + 컨텐츠 전달 개요 {#content-delivery}
    + [컨텐츠 전달 흐름](dispatcher/overview.md)
    + [클라우드의 디스패처](dispatcher/disp-overview.md)
