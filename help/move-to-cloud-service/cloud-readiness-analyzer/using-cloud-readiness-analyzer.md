@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: daa281745540e6446adecd2501e26135d6000844
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
-* CRA 보고서는 AEM(Adobe Experience Manager) [패턴 탐지기 결과를 사용하여 구축됩니다](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). CRA에서 사용하는 패턴 탐지기 버전은 CRA 설치 패키지에 포함되어 있습니다.
+* CRA 보고서는 Adobe Experience Manager(AEM) [패턴 탐지기 출력을 사용하여 만듭니다](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). CRA에서 사용하는 패턴 탐지기 버전은 CRA 설치 패키지에 포함되어 있습니다.
 
 * CRA는 관리자 ** 사용자 또는 관리자 **그룹의 사용자만 실행할 수** 있습니다.
 
@@ -25,7 +25,7 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 * CRA는 모든 환경에서 실행할 수 있지만 *스테이지* 환경에서 실행되는 것이 좋습니다.
 
    >[!NOTE]
-   >비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 제작 환경에 *가장* 가까운 작성 스테이징 환경에서 CRA를 실행하는 것이 좋습니다. 또는 프로덕션 작성자 환경의 클론에서 실행할 *수* 있습니다.
+   >비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 제작 환경에 최대한 가까운 작성자 스테이징 환경에서 CRA를 실행하는 것이 좋습니다. 또는 프로덕션 작성 환경의 클론에서 실행할 수 있습니다.
 
 * CRA 보고서 생성에는 몇 분에서 몇 시간 정도의 시간이 걸릴 수 있습니다. 필요한 시간은 AEM 리포지토리 컨텐츠, AEM 버전 및 기타 요소에 크게 의존합니다.
 
@@ -33,7 +33,7 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 
 ## 사용 가능 {#availability}
 
-클라우드 준비 분석기는 소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다. 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
+클라우드 준비 분석기는 소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다. 소스 Adobe Experience Manager(AEM) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
 >Software Distribution Portal *pending*&#x200B;에서 Cloud Readance Analyzer를 다운로드합니다.
@@ -42,7 +42,7 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 
 클라우드 준비 분석기를 실행하는 방법을 알려면 다음 섹션을 따르십시오.
 
-1. Adobe Experience Manager를 선택하고 도구 -> **작업** -> **클라우드 준비 분석기로 이동합니다**.
+1. Adobe Experience Manager을 선택하고 도구 -> **작업** -> **클라우드 준비 분석기로 이동합니다**.
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
@@ -53,41 +53,9 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-### AEM 6.3 이상 {#aem-older-version}
+## 클라우드 준비 분석기 구성 보고서 해석 {#organized-report}
 
-AEM 6.3 이상 버전의 경우, Cloud Ready Analyzer를 실행하는 주요 방법은 다음과 같습니다.
-
-1. Adobe Experience Manager 인스턴스를 선택하고 도구 -> **작업** -> **클라우드 준비 분석기로 이동합니다**.
-
-   >[!NOTE]
-   >도구를 여는 즉시 보고서를 생성하기 위한 배경 프로세스가 CRA에 시작됩니다. 보고서가 준비될 때까지 보고서 생성이 진행 중임을 표시합니다. 브라우저 탭을 닫고 나중에 다시 방문하여 보고서가 완료되면 확인할 수 있습니다.
-
-1. CRA 보고서가 생성되고 표시되면 보고서를 쉼표로 구분된 값(CSV)으로 다운로드하는 옵션이 있습니다. 아래 그림과 같이 **CSV를** 클릭하여 전체 요약 보고서를 쉼표로 구분된 값(CSV) 형식으로 다운로드합니다.
-
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
-
-   >[!NOTE]
-   >왼쪽 위 모서리의 [보고서 **새로 고침] 단추를 클릭하여 CRA가 캐시를 지우고 보고서를 다시** 생성하도록 할 수 있습니다.
-
-### AEM 6.2 및 6.1 {#aem-specific-versions}
-
-클라우드 준비 분석기 사용자 인터페이스는 CSV 보고서를 생성하고 다운로드하는 링크로 AEM 6.2에서 제한됩니다. AEM 6.1의 경우 사용자 인터페이스가 작동하지 않고 HTTP 인터페이스만 사용할 수 있습니다.
-
-모든 버전에서 포함된 패턴 탐지기는 독립적으로 실행될 수 있습니다.
-
-아래 절차에 따라 AEM(Adobe Experience Manager) 6.1 및 6.2용 CSV 보고서를 다운로드하십시오.
-
-1.를 사용하여 **Adobe Experience Manager 웹 콘솔** 구성으로 이동합니다 `https://serveraddress:serverport/system/console/configMgr`.
-
-1. 아래 그림과 같이 **상태** 탭을 선택하고 드롭다운 목록에서 **패턴** 탐지기를 검색합니다.
-
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. 요약 보고서는 zip 폴더 또는 JSON 형식으로 다운로드할 수 있습니다.
-
-## CRA 요약 보고서 {#cra-summary-report}
-
-클라우드 준비 분석기가 AEM 사용자 인터페이스에서 실행되면 보고서가 도구 창에 결과로 표시됩니다.
+클라우드 준비 분석기가 AEM 인스턴스에서 실행되면 보고서가 도구 창에 결과로 표시됩니다.
 
 보고서의 형식은 다음과 같습니다.
 
@@ -106,7 +74,45 @@ AEM 6.3 이상 버전의 경우, Cloud Ready Analyzer를 실행하는 주요 방
 | 주요 | 이 문제는 해결해야 하는 업그레이드 문제가 될 수 있습니다. |
 | 위험 | 이러한 검색 결과는 기능 또는 성능 손실을 방지하기 위해 해결해야 하는 업그레이드 문제가 될 가능성이 높습니다. |
 
-## CRA CSV 보고서 {#crs-csv-report}
+### Adobe Experience Manager 6.3 and later {#aem-older-version}
+
+AEM 6.3 이상 버전의 경우, Cloud Ready Analyzer를 실행하는 주요 방법은 다음과 같습니다.
+
+1. Adobe Experience Manager 인스턴스를 선택하고 도구 -> **작업** -> **클라우드 준비 분석기로 이동합니다**.
+
+   >[!NOTE]
+   >도구를 여는 즉시 보고서를 생성하기 위한 배경 프로세스가 CRA에 시작됩니다. 보고서가 준비될 때까지 보고서 생성이 진행 중임을 표시합니다. 브라우저 탭을 닫고 나중에 다시 방문하여 보고서가 완료되면 확인할 수 있습니다.
+
+1. CRA 보고서가 생성되고 표시되면 보고서를 쉼표로 구분된 값(CSV)으로 다운로드하는 옵션이 있습니다. 아래 그림과 같이 **CSV를** 클릭하여 전체 요약 보고서를 쉼표로 구분된 값(CSV) 형식으로 다운로드합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >왼쪽 위 모서리의 [보고서 **새로 고침] 단추를 클릭하여 CRA가 캐시를 지우고 보고서를 다시** 생성하도록 할 수 있습니다.
+
+### Adobe Experience Manager 6.2 및 6.1 {#aem-specific-versions}
+
+AEM(Adobe Experience Manager) 6.2에서 CSV 보고서를 생성하고 다운로드하는 링크로 클라우드 준비 분석기가 제한됩니다.
+
+>[!NOTE]
+>
+>* Adobe Experience Manager 6.1의 경우 도구가 작동하지 않으며 HTTP 인터페이스만 사용할 수 있습니다.
+   >
+   >
+* 모든 버전에서 포함된 패턴 탐지기는 독립적으로 실행될 수 있습니다.
+
+
+아래 절차에 따라 Adobe Experience Manager(AEM) 6.1 및 6.2용 CSV 보고서를 다운로드하십시오.
+
+1.를 사용하여 **Adobe Experience Manager 웹 콘솔** 구성으로 이동합니다 `https://serveraddress:serverport/system/console/configMgr`.
+
+1. 아래 그림과 같이 **상태** 탭을 선택하고 드롭다운 목록에서 **패턴** 탐지기를 검색합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. 요약 보고서는 zip 폴더 또는 JSON 형식으로 다운로드할 수 있습니다.
+
+## 클라우드 준비 분석기 CSV 보고서 해석 {#crs-csv-report}
 
 AEM 인스턴스에서 **CSV** 옵션을 클릭하면 클라우드 준비 분석기 보고서의 CSV 형식이 결과 캐시에서 빌드되어 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 인 파일로 자동으로 다운로드됩니다 `results.csv`. 캐시가 만료되면 CSV 파일을 빌드하고 다운로드하기 전에 보고서가 다시 생성됩니다.
 
@@ -128,7 +134,7 @@ CSV 형식 보고서의 열은 다음과 같습니다.
 
 ## HTTP 인터페이스 {#http-interface}
 
-CRA는 AEM 사용자 인터페이스 대신 사용할 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. CRA 보고서를 생성하고 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다. JSON, CSV 및 탭으로 구분된 값(TSV).
+CRA는 AEM 인스턴스의 대체 요소로 사용될 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. CRA 보고서를 생성하고 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다. JSON, CSV 및 탭으로 구분된 값(TSV).
 
 다음 URL은 CRA가 설치된 서버의 호스트 이름 `<host>` 과 포트(필요한 경우)인 HTTP 액세스에 사용할 수 있습니다.
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` for JSON format
@@ -163,7 +169,7 @@ HTTP 헤더와 해당 쿼리 매개 변수가 모두 있으면 쿼리 매개 변
 HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방법은 다음 명령을 사용하는 것입니다.
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며, 보고서가 생성되면 다른 클라이언트의 캐시에서 확인되거나 AEM 사용자 인터페이스의 CSV 도구에서 볼 수 있습니다.
+요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며 보고서가 생성되면 다른 클라이언트의 캐시에서 보거나 AEM 인스턴스의 CSV 도구에서 볼 수 있습니다.
 
 ### 응답(#http-responses)
 
@@ -178,12 +184,12 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 ## 캐시 수명 조정 {#cache-adjustment}
 
-기본 CRA 캐시 수명은 24시간입니다. 사용자 인터페이스와 HTTP 인터페이스 모두에서 보고서를 새로 고치고 캐시를 다시 생성하는 옵션을 사용할 경우 이 기본값은 대부분의 CRA 사용에 적절할 것입니다. 보고서 생성 시간이 AEM 인스턴스에 특히 긴 경우 보고서 재생성을 최소화하기 위해 캐시 수명을 조정할 수 있습니다.
+기본 CRA 캐시 수명은 24시간입니다. 보고서를 새로 고치고 캐시를 다시 생성하는 옵션과 함께 AEM 인스턴스와 HTTP 인터페이스 모두에서 이 기본값은 CRA의 대부분의 사용에 적절할 것입니다. 보고서 생성 시간이 AEM 인스턴스에 특히 긴 경우 보고서 재생성을 최소화하기 위해 캐시 수명을 조정할 수 있습니다.
 
 캐시 라이프타임 값은 다음 저장소 노드의 `maxCacheAge` 속성으로 저장됩니다.
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-이 속성의 값은 캐시 수명(초)입니다. 관리자는 CRX/DE Lite 인터페이스를 AEM에 사용하여 캐시 수명을 조정할 수 있습니다.
+이 속성의 값은 캐시 수명(초)입니다. 관리자는 CRX/DE Lite를 사용하여 캐시 수명을 조정할 수 있습니다.
 
 
 
