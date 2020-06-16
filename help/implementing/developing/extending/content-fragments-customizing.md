@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # 컨텐츠 조각 사용자 지정 및 확장{#customizing-and-extending-content-fragments}
 
-클라우드 서비스로 Adobe Experience Manager 내에서 컨텐츠 조각은 표준 자산을 확장합니다. see:
+Adobe Experience Manager 내에서 Cloud Service으로 컨텐츠 조각은 표준 자산을 확장합니다. see:
 
 * [컨텐츠 조각 만들기 및 관리](/help/assets/content-fragments/content-fragments.md) 및 컨텐츠 조각으로 [페이지](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 작성및 관리를 참조하십시오.
 
@@ -66,7 +66,7 @@ ht-degree: 3%
 
 ### 사이트와 에셋 통합 {#integration-of-sites-with-assets}
 
-CFM(컨텐츠 조각 관리)은 다음과 같은 AEM 자산에 포함되어 있습니다.
+CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
 * 콘텐츠 조각은 자산입니다.
 * 기존 자산 기능을 사용합니다.
