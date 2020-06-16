@@ -2,7 +2,7 @@
 title: AEM Dispatcher 변환기 도구
 description: AEM Dispatcher 변환기 도구
 translation-type: tm+mt
-source-git-commit: d3593edcfee660d5ce0b0a8774fe3c61025cbe36
+source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 15%
@@ -27,7 +27,7 @@ Dispatcher는 Adobe Experience Manager의 캐싱 및/또는 로드 밸런싱 도
 
 Cloud 환경에 배포하기 전에 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 이를 로컬로 검증하고 실행하는 방법을 배워야 합니다.
 
-자세한 내용은 [클라우드의](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html) Dispatcher을 참조하십시오.
+자세한 내용은 [클라우드의](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher을 참조하십시오.
 
 ## AEM Dispatcher 변환기 {#aem-dispatcher-converter}
 
