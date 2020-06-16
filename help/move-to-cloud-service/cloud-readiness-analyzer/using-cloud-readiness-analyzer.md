@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ HTTP 헤더와 해당 쿼리 매개 변수가 모두 있으면 쿼리 매개 변
 HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방법은 다음 명령을 사용하는 것입니다.
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며 보고서가 생성되면 다른 클라이언트의 캐시에서 보거나 AEM 인스턴스의 CSV 도구에서 볼 수 있습니다.
+요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며 보고서가 생성되면 다른 클라이언트의 캐시에서 보거나 AEM 내의 사용자 인터페이스의 CSV 도구에서 볼 수 있습니다.
 
 ### 응답(#http-responses)
 
