@@ -1,6 +1,6 @@
 ---
 title: 검색 양식 구성
-description: Adobe Experience Manager용 검색 양식을 클라우드 서비스로 구성
+description: Adobe Experience Manager에 대한 검색 양식을 Cloud Service으로 구성
 translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # 검색 양식 구성 {#configuring-search-forms}
 
-클라우드 서비스인 Adobe Experience Manager에는 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘이 포함되어 있습니다.
+Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘을 제공합니다.
 
 이와 함께 컨텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 이러한 보류 중인 패싯은 **수정한 날짜**, **게시 상태**&#x200B;또는 **Livecopy 상태** 와 같은 사전 정의된패싯으로 필요한 리소스로 빠르게 드릴다운할 수 있도록 도와줍니다.
 
@@ -96,7 +96,7 @@ ht-degree: 15%
   </tr>
   <tr>
    <td>분석</td>
-   <td>분석 기반 데이터를 표시할 때 사이트 브라우저의 검색/필터 기능입니다. Analytics 검색 필터는 매핑된 사용자 지정 분석 열과 일치하도록 로드됩니다.</td>
+   <td>분석 기반 데이터를 표시할 때 사이트 브라우저의 검색/필터 기능입니다. Analytics 검색 필터가 매핑된 사용자 지정 분석 열과 일치하도록 로드됩니다.</td>
    <td>
     <ul>
      <li>필드 레이블</li>
