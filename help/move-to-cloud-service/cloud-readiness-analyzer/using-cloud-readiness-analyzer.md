@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 
 ## 클라우드 준비 분석기 보고서 보기 {#viewing-report}
 
-### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
 
 클라우드 준비 분석기 보고서를 보는 방법을 알려면 다음 섹션을 따르십시오.
 
@@ -64,7 +64,7 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 
 ### Adobe Experience Manager 6.2 및 6.1 {#aem-specific-versions}
 
-클라우드 준비 분석기는 Adobe Experience Manager 6.2에서 CSV 보고서를 생성하고 다운로드하는 링크로 제한됩니다.
+클라우드 준비 분석기 도구는 Adobe Experience Manager 6.2에서 CSV 보고서를 생성하고 다운로드하는 링크로 제한됩니다.
 
 Adobe Experience Manager 6.1의 경우 도구가 작동하지 않으며 HTTP 인터페이스만 사용할 수 있습니다.
 
@@ -77,11 +77,11 @@ AEM 인스턴스에서 클라우드 준비 분석기 도구를 실행하면 보�
 
 보고서의 형식은 다음과 같습니다.
 
-* **보고서 개요**: 보고서 자체에 대한 정보 및 다음과 같은 정보
-   * *보고서 시간*: 보고서 컨텐츠가 생성되어 처음 사용할 수 있게 되었을 때.
-   * *만료 시간*: 보고서 내용 캐시가 만료될 때.
-   * *생성 기간*: 보고서 내용 생성 프로세스의 체류 시간.
-   * *Finding Count*: The total number of findings included in the report.
+* **보고서 개요**: 보고서 자체에 대한 정보 및 다음 정보가 포함됩니다.
+   * **보고서 시간**: 보고서 컨텐츠가 생성되어 처음 사용할 수 있게 되었을 때.
+   * **만료 시간**: 보고서 내용 캐시가 만료될 때.
+   * **생성 기간**: 보고서 내용 생성 프로세스의 체류 시간.
+   * **검색 횟수**: 보고서에 포함된 총 결과 수입니다.
 * **시스템 개요**: CRA가 실행된 AEM 시스템에 대한 정보입니다.
 * **카테고리 찾기**: 각 섹션에서 동일한 카테고리의 하나 이상의 발견을 처리하는 여러 섹션입니다. 각 섹션에는 다음이 포함됩니다. 카테고리 이름, 하위 유형, 검색 횟수 및 중요도, 요약, 카테고리 설명서 링크 및 개별 검색 정보
 
