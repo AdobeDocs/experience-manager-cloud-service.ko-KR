@@ -2,9 +2,9 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-고객은 임의의 모듈을 추가할 수 없지만, 향후 제품에 포함할 추가 모듈을 고려할 수 있습니다. 고객은 위에 설명된 대로 SDK에서 &quot;유효성 검사기 화이트 리스트&quot;를 실행하여 지정된 Dispatcher 버전에 사용할 수 있는 지시어 목록을 찾을 수 있습니다.
+고객은 임의의 모듈을 추가할 수 없지만, 향후 제품에 포함할 추가 모듈을 고려할 수 있습니다. 고객은 위에 설명된 대로 SDK에서 유효성 검사기의 allowlist 명령을 실행하여 지정된 Dispatcher 버전에 사용할 수 있는 지시어 목록을 찾을 수 있습니다.
 
 allowlist에는 고객 구성에서 허용되는 Apache 지시문 목록이 포함되어 있습니다. 지시문이 허용되지 않으면 도구가 오류를 기록하고 0이 아닌 종료 코드를 반환합니다. 명령줄에 allowlist가 지정되지 않은 경우(호출해야 하는 방식), 이 도구는 Cloud 환경에 배포하기 전에 Cloud Manager가 유효성 검사에 사용할 기본 허용 목록을 사용합니다.
 
