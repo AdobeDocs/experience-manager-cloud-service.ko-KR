@@ -1,8 +1,8 @@
 ---
-title: 클라우드 서비스로 AEM의 CDN
-description: 클라우드 서비스로 AEM의 CDN
+title: Cloud Service으로 AEM의 CDN
+description: Cloud Service으로 AEM의 CDN
 translation-type: tm+mt
-source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -10,9 +10,9 @@ ht-degree: 1%
 ---
 
 
-# 클라우드 서비스로 AEM의 CDN {#cdn}
+# Cloud Service으로 AEM의 CDN {#cdn}
 
-클라우드 서비스로 AEM을 제공하는 경우 내장 CDN이 제공됩니다. 주 목적은 브라우저 근처의 가장자리에 있는 CDN 노드에서 캐쉬가능 컨텐츠를 전달하여 지연을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
+Cloud Service으로 AEM에 내장된 CDN이 포함되어 있습니다. 주 목적은 브라우저 근처의 가장자리에 있는 CDN 노드에서 캐쉬가능 컨텐츠를 전달하여 지연을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
 
 AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만족합니다. 고객은 선택적으로 CDN을 가리킬 수 있으며, 이를 관리해야 합니다. 이것은 포기하기 어려운 기존 CDN 공급업체와의 통합을 비롯하여, 이에 국한되지 않고, 특정 사전 요구 사항을 충족하는 것을 기준으로, 사례별로 허용됩니다.
 
@@ -21,10 +21,10 @@ AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만�
 최신 Adobe CDN을 사용하여 컨텐츠 전달을 준비하려면 다음을 수행합니다.
 
 1. 이 정보가 들어 있는 보안 양식에 대한 링크를 공유하여 서명된 SSL 인증서와 비밀 키를 Adobe에 제공합니다. 이 작업에 대한 고객 지원 부서에 문의하십시오.
-   **참고:** 클라우드 서비스로서 AEM은 DV(Domain Validated) 인증서를 지원하지 않습니다.
+   **참고:** Cloud Service으로 AEM은 DV(Domain Validated) 인증서를 지원하지 않습니다.
 1. 고객 지원에 알림:
    * 프로그램 id 및 환경 id로 정의된 대로 지정된 환경과 연결해야 하는 사용자 지정 도메인이 작성자 측의 사용자 지정 도메인은 지원되지 않습니다.
-   * 지정된 환경으로 트래픽을 제한하기 위해 IP 허용 목록이 필요한 경우
+   * 지정된 환경으로 트래픽을 제한하기 위해 IP 허용목록이 필요한 경우
 1. DNS 레코드에 필요한 변경 타이밍에 대한 고객 지원과 조정합니다. 지침은 에이펙스 레코드가 필요한지 여부를 기준으로 다릅니다.
    * apex 레코드가 필요하지 않은 경우 고객은 FQDN을 가리키도록 CNAME DNS 레코드를 설정해야 합니다 `cdn.adobeaemcloud.com`.
    * apex 레코드가 필요한 경우 다음 IP를 가리키는 A 레코드를 만듭니다. 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. 원하는 FQDN이 DNS Apex와 일치하는 경우 고객 레코드가 필요합니다 zone. 출력 SOA 값이 도메인과 일치하는지 확인하기 위해 Unix dig 명령을 사용하여 이 값을 테스트할 수 있습니다. 예를 들어 이 명령은 SOA `dig anything.dev.adobeaemcloud.com` 의 SOA(권한 시작, 즉 영역)를 APEX 레코드가 아닌 `dev.adobeaemcloud.com` 반환하고 SOA의 APEX를 반환하므로 레코드 `dig dev.adobeaemcloud.com` `dev.adobeaemcloud.com` 가 됩니다.
@@ -40,7 +40,7 @@ AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만�
 
 * 고객은 교체해야 하는 기존 CDN이 있어야 합니다.
 * 고객은 이를 관리해야 합니다.
-* 고객은 AEM을 클라우드 서비스로 사용하도록 CDN을 구성할 수 있어야 합니다. 아래 구성 지침을 참조하십시오.
+* 고객은 AEM을 Cloud Service으로 작동하도록 CDN을 구성할 수 있어야 합니다. 아래 구성 지침을 참조하십시오.
 * 고객은 관련 문제가 발생할 경우 호출되는 엔지니어링 CDN 전문가가 있어야 합니다.
 * 고객은 프로덕션으로 이동하기 전에 로드 테스트를 성공적으로 수행하고 통과해야 합니다.
 
