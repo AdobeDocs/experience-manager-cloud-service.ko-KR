@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 0%
 
 ## 클라우드 준비 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
-CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
+CRA(Cloud Readiness Analyzer)를 실행하기 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
 * CRA 보고서는 Adobe Experience Manager(AEM) [패턴 탐지기 출력을 사용하여 만듭니다](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). CRA에서 사용하는 패턴 탐지기 버전은 CRA 설치 패키지에 포함되어 있습니다.
 
-* CRA는 관리자 **사용자** 또는 관리자의 사용자만 실행할 수 **있습니다**.
+* CRA는 관리자 **** 사용자 또는 관리자 **그룹의 사용자만 실행할 수** 있습니다.
 
 * CRA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
 
 * CRA는 모든 환경에서 실행할 수 있지만 *스테이지* 환경에서 실행되는 것이 좋습니다.
 
    >[!NOTE]
-   >비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역에서 가능한 한 *프로덕션* ** 환경과 가까운 작성 환경에서 CRA를 실행하는 것이 좋습니다. 또는 프로덕션 작성자 환경의 클론에서 실행할 *수* 있습니다.
+   >비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 *프로덕션* ** 환경에 최대한 가까운 작성 환경에서 CRA를 실행하는 것이 좋습니다. 또는 프로덕션 작성자 환경의 클론에서 실행할 *수* 있습니다.
 
 * CRA 보고서 컨텐츠를 만드는 데 몇 분에서 몇 시간 정도의 시간이 걸릴 수 있습니다. 필요한 시간은 AEM 리포지토리 컨텐츠, AEM 버전 및 기타 요소에 크게 의존합니다.
 
@@ -55,7 +55,7 @@ CRA(클라우드 준비 분석기)를 실행하는 동안 중요한 고려 사�
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. CRA 보고서가 생성되고 표시되면 보고서를 쉼표로 구분된 값(CSV)으로 다운로드하는 옵션이 있습니다. 아래 그림과 같이 **CSV** 를 클릭하여 전체 CRA 보고서를 쉼표로 구분된 값(CSV) 형식으로 다운로드합니다.
+1. CRA 보고서가 생성되고 표시되면 아래 그림과 같이 CSV를 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드하는 옵션이 **있습니다**.
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -77,7 +77,7 @@ AEM 인스턴스에서 클라우드 준비 분석기 도구를 실행하면 보�
 
 보고서의 형식은 다음과 같습니다.
 
-* **보고서 개요**: 보고서 자체에 대한 정보 및 다음 정보가 포함됩니다.
+* **보고서 개요**: 다음 정보를 포함하는 보고서 자체에 대한 정보:
    * **보고서 시간**: 보고서 컨텐츠가 생성되어 처음 사용할 수 있게 되었을 때.
    * **만료 시간**: 보고서 내용 캐시가 만료될 때.
    * **생성 기간**: 보고서 내용 생성 프로세스의 체류 시간.
@@ -176,7 +176,7 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 캐시 라이프타임 값은 다음 저장소 노드의 `maxCacheAge` 속성으로 저장됩니다.
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-이 속성의 값은 캐시 수명(초)입니다. 관리자는 CRXDE Lite를 사용하여 캐시 수명을 조정할 수 있습니다.
+이 속성의 값은 캐시 수명(초)입니다. 관리자는 CRX/DE Lite를 사용하여 캐시 수명을 조정할 수 있습니다.
 
 
 
