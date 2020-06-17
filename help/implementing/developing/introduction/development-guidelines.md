@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 AEM 개발 지침
 description: 완료하기
 translation-type: tm+mt
-source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 1%
@@ -12,9 +12,9 @@ ht-degree: 1%
 
 # 클라우드 서비스로서의 AEM 개발 지침 {#aem-as-a-cloud-service-development-guidelines}
 
-클라우드 서비스로 AEM에서 실행되는 코드는 클러스터에서 항상 실행되고 있다는 사실을 알고 있어야 합니다. 즉, 실행되는 인스턴스가 두 개 이상 있습니다. 특히 특정 시점에 인스턴스가 중지될 수 있으므로 코드는 복원력이 있어야 합니다.
+Cloud Service으로 AEM에서 실행되는 코드는 클러스터에서 항상 실행되고 있다는 사실을 알고 있어야 합니다. 즉, 실행되는 인스턴스가 두 개 이상 있습니다. 특히 특정 시점에 인스턴스가 중지될 수 있으므로 코드는 복원력이 있어야 합니다.
 
-클라우드 서비스로 AEM을 업데이트하는 동안 오래된 코드와 새 코드가 동시에 실행되는 인스턴스가 있게 됩니다. 따라서 이전 코드는 새 코드로 만들어진 컨텐츠와 구분해서는 안 되며 새 코드는 이전 컨텐츠를 처리할 수 있어야 합니다.
+Cloud Service으로 AEM을 업데이트하는 동안, 이전 코드와 새 코드가 동시에 실행되는 인스턴스가 있게 됩니다. 따라서 이전 코드는 새 코드로 만들어진 컨텐츠와 구분해서는 안 되며 새 코드는 이전 컨텐츠를 처리할 수 있어야 합니다.
 <!--
 
 >[!NOTE]
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 -->
 
-클러스터에서 마스터를 식별할 필요가 있는 경우 Apache Sling Discovery API를 사용하여 이를 감지할 수 있습니다.
+클러스터에서 운영 체제를 식별할 필요가 있는 경우 Apache Sling Discovery API를 사용하여 이를 감지할 수 있습니다.
 
 ## 상태 인 메모리 {#state-in-memory}
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ## 파일 시스템의 상태 {#state-on-the-filesystem}
 
-인스턴스의 파일 시스템은 AEM에서 클라우드 서비스로 사용해서는 안 됩니다. 이 디스크는 일시적이며, 인스턴스가 재생될 때 폐기될 것이다. 단일 요청 처리와 관련된 임시 저장에 파일 시스템을 제한적으로 사용할 수는 있지만 대용량 파일에 악용되어서는 안 됩니다. 이는 리소스 사용량 할당량에 부정적인 영향을 줄 수 있고 디스크 제한 사항이 있기 때문입니다.
+인스턴스의 파일 시스템은 AEM에서 Cloud Service으로 사용해서는 안 됩니다. 이 디스크는 일시적이며, 인스턴스가 재생될 때 폐기될 것이다. 단일 요청 처리와 관련된 임시 저장에 파일 시스템을 제한적으로 사용할 수는 있지만 대용량 파일에 악용되어서는 안 됩니다. 이는 리소스 사용량 할당량에 부정적인 영향을 줄 수 있고 디스크 제한 사항이 있기 때문입니다.
 
 파일 시스템 사용이 지원되지 않는 예를 들어, 게시 계층은 지속되어야 하는 모든 데이터를 장기 보관을 위해 외부 서비스로 배송해야 합니다.
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ## 백그라운드 작업 및 긴 실행 작업 {#background-tasks-and-long-running-jobs}
 
-백그라운드 작업으로 실행되는 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하며 가져오기 작업이 가능해야 합니다. 즉, 코드가 다시 실행될 경우 처음부터 다시 시작하지 않고 코드가 종료되는 부분에서 더 가까워야 합니다. 이러한 유형의 코드에 대한 새로운 요구 사항은 아니지만, AEM에서 클라우드 서비스로서, 인스턴스가 삭제될 가능성이 높습니다.
+백그라운드 작업으로 실행되는 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하며 가져오기 작업이 가능해야 합니다. 즉, 코드가 다시 실행될 경우 처음부터 다시 시작하지 않고 코드가 종료되는 부분에서 더 가까워야 합니다. 이러한 유형의 코드에 대한 새로운 요구 사항은 아니지만, AEM에서 Cloud Service로서 인스턴스 다운이 발생할 가능성이 높습니다.
 
 이를 최소화하려면 장기간에 걸친 작업은 가급적 뒤로 하고 최소한 재개해야 한다. 이러한 작업을 실행하는 경우, 적어도 한 번 보증이 있어 중단되는 경우 가능한 한 빨리 다시 실행됩니다. 그러나 처음부터 다시 시작해서는 안 될 것이다. 이러한 작업을 예약하려면 Sling 작업 [스케줄러를 다시 한 번](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 실행으로 사용하는 것이 가장 좋습니다.
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 ## 나가는 HTTP 연결 {#outgoing-http-connections}
 
-나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 이러한 시간 초과를 적용하지 않는 코드의 경우, 클라우드 서비스로 AEM에서 실행되는 AEM 인스턴스가 전역 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초, 다음 인기 있는 Java 라이브러리에서 사용하는 연결에 대한 읽기 호출에 60초입니다.
+나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 이러한 시간 초과를 적용하지 않는 코드의 경우 Cloud Service으로 AEM에서 실행되는 AEM 인스턴스가 전역 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초, 다음 인기 있는 Java 라이브러리에서 사용하는 연결에 대한 읽기 호출에 60초입니다.
 
 Adobe에서는 HTTP 연결을 만들기 위해 제공된 [Apache HttpComponents Client 4.x 라이브러리를](https://hc.apache.org/httpcomponents-client-ga/) 사용하는 것이 좋습니다.
 
@@ -62,13 +62,13 @@ Adobe에서는 HTTP 연결을 만들기 위해 제공된 [Apache HttpComponents 
 
 ## 클래식 UI 사용자 정의 없음 {#no-classic-ui-customizations}
 
-클라우드 서비스로 AEM은 타사 고객 코드에 대한 터치 UI만 지원합니다. 클래식 UI는 사용자 정의에 사용할 수 없습니다.
+Cloud Service으로 AEM은 타사 고객 코드에 대한 터치 UI만 지원합니다. 클래식 UI는 사용자 정의에 사용할 수 없습니다.
 
 ## 네이티브 바이너리 방지 {#avoid-native-binaries}
 
 런타임에 바이너리를 다운로드하거나 수정할 수 없습니다. 예를 들어, 파일 `jar` 이나 파일의 압축을 풀 수 `tar` 없습니다.
 
-## 클라우드 서비스로 AEM을 통한 스트리밍 바이너리 없음 {#no-streaming-binaries}
+## AEM을 Cloud Service으로 통한 스트리밍 바이너리 없음 {#no-streaming-binaries}
 
 바이너리는 핵심 AEM 서비스 외부의 바이너리를 제공하는 CDN을 통해 액세스해야 합니다.
 
@@ -76,7 +76,7 @@ Adobe에서는 HTTP 연결을 만들기 위해 제공된 [Apache HttpComponents 
 
 ## 역방향 복제 에이전트 없음 {#no-reverse-replication-agents}
 
-게시에서 작성자로 역방향 복제는 AEM에서 클라우드 서비스로 지원되지 않습니다. 이러한 전략이 필요한 경우 게시 인스턴스의 팜 및 작성자 클러스터 간에 공유되는 외부 지속성 저장소를 사용할 수 있습니다.
+게시에서 작성자로 역방향 복제는 AEM에서 Cloud Service으로 지원되지 않습니다. 이러한 전략이 필요한 경우 게시 인스턴스의 팜 및 작성자 클러스터 간에 공유되는 외부 지속성 저장소를 사용할 수 있습니다.
 
 ## 포팅해야 할 수도 있습니다. {#forward-replication-agents}
 
@@ -96,7 +96,7 @@ pub-sub 메커니즘을 통해 작성자에서 게시로 컨텐츠를 복제할 
 
 >[!NOTE]
 >
->아래에 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 변경 사항을 만든 다음 클라우드 서비스 인스턴스로 AEM에 푸시해야 합니다. 이 방법에 대한 자세한 내용은 클라우드 서비스로 [AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
+>아래에 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 변경 사항을 만든 다음 Cloud Service 인스턴스로 AEM에 푸시해야 합니다. 이 방법에 대한 자세한 내용은 Cloud Service [로 AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
 
 **디버그 로그 수준 활성화**
 
@@ -134,7 +134,7 @@ property to debug. 로그를 많은 로그를 생성하므로 로그를 필요 �
 
 고객은 개발 환경에서 CRXDE lite에 액세스할 수 있지만 스테이지나 프로덕션은 액세스할 수 없습니다. 실행 시 변경 불가능한 저장소(`/libs`, `/apps`)를 쓸 수 없으므로 작성하려고 하면 오류가 발생합니다.
 
-개발, 준비 및 프로덕션 환경을 위해 개발자 콘솔에서 AEM을 클라우드 서비스 개발자 환경으로 디버깅하는 도구 세트를 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
+Cloud Service 개발자 환경으로서 AEM을 디버깅하기 위한 도구 세트는 개발, 준비 및 프로덕션 환경을 위해 개발자 콘솔에서 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -160,7 +160,7 @@ property to debug. 로그를 많은 로그를 생성하므로 로그를 필요 �
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-일반 프로그램의 경우, 개발자 콘솔에 대한 액세스는 관리 콘솔의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되며 샌드박스 프로그램의 경우, 개발자 콘솔을 모든 사용자가 클라우드 서비스로 AEM에 액세스할 수 있는 제품 프로필을 가진 모든 사용자가 사용할 수 있습니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+일반 프로그램의 경우, 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되고, 샌드박스 프로그램의 경우, 개발자 콘솔은 제품 프로필을 가진 모든 사용자가 Cloud Service으로 AEM에 액세스할 수 있도록 해줍니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 
