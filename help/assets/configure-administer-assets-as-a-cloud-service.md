@@ -1,9 +1,9 @@
 ---
-title: 클라우드 서비스로 Adobe Experience Manager 자산 구성 및 관리
-description: 클라우드 서비스로서 자산에 필요한 구성 및 관리 작업에 대해 알아보기
+title: Adobe Experience Manager 자산을 Cloud Service으로 구성 및 관리
+description: Cloud Service으로 자산에 필요한 구성 및 관리 작업에 대해 알아보기
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# 자산을 클라우드 서비스로 구성 및 관리 {#config-administer-assets-cloud-service}
+# Cloud Service으로 자산 구성 및 관리 {#config-administer-assets-cloud-service}
 
-이 문서에서는 Adobe Experience Manager Assets를 클라우드 서비스로 사용하여 시작하는 데 필요한 최상위 수준의 구성 또는 관리 작업을 나열합니다.
+이 문서에서는 Adobe Experience Manager 에셋을 Cloud Service으로 사용하기 시작하는 데 필요한 최상위 구성 또는 관리 작업을 나열합니다.
 
 <!-- SCOPE 
 
@@ -24,7 +24,7 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * How to monitor health of services
 * How to see the running statuses
 * How to get service-level reports like usage, performance, uptime, etc.
-* Enable asset download by configuring the download servlet. It is disbaled to prevent DDOS kind of situations.
+* Enable asset download by configuring the download servlet. It is disabled to prevent DDOS kind of situations.
 * Configure SMTP to enable email notifications.
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.
