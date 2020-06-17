@@ -3,7 +3,7 @@ title: AEM에서 자산 다운로드
 description: AEM에서 자산을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법에 대해 학습합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 4%
@@ -29,7 +29,7 @@ ht-degree: 4%
 1. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다.
 1. 도구 모음에서 다운로드를 **[!UICONTROL 누릅니다]**.
 
-   ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download.png)
+   ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download1.png)
 
    *다운로드 대화 상자 옵션.*
 
