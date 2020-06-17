@@ -2,7 +2,7 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
+source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 0%
