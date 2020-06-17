@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며 보고서가 생성되면 다른 클라이언트의 캐시에서 보거나 AEM 내의 사용자 인터페이스의 CSV 도구에서 볼 수 있습니다.
 
-### 응답(#http-responses)
+### 응답 {#http-responses}
 
 다음 응답 값이 가능합니다.
 
