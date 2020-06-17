@@ -1,9 +1,9 @@
 ---
-title: AEM 자산에 Adobe Stock 디지털 자산 사용
-description: Adobe Experience Manager에서 Adobe Stock 에셋을 검색, 가져오기, 라이선스 부여 및 관리할 수 있습니다. 라이선스가 부여된 에셋을 다른 Experience Manager 에셋으로 처리합니다.
+title: AEM Assets에서 Adobe Stock 디지털 에셋 사용
+description: Experience Manager에서 Adobe Stock 에셋을 검색, 가져오기, 라이선스 부여 및 관리할 수 있습니다. 라이선스가 부여된 에셋을 다른 Experience Manager 에셋으로 처리합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # AEM Assets에서 Adobe Stock 자산 사용 {#use-adobe-stock-assets-in-aem-assets}
 
-조직은 Adobe Stock 엔터프라이즈 플랜과 AEM Assets를 통합하여 AEM의 강력한 자산 관리 기능을 통해 라이선스가 부여된 자산이 크리에이티브 및 마케팅 프로젝트에 광범위하게 사용할 수 있도록 할 수 있습니다.
+조직은 Adobe Stock 엔터프라이즈 플랜을 AEM Assets과 통합하여 AEM의 강력한 자산 관리 기능과 함께 라이선스가 부여된 에셋을 크리에이티브 및 마케팅 프로젝트에 광범위하게 사용할 수 있도록 할 수 있습니다.
 
 Adobe Stock 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다. AEM 사용자는 AEM 작업 영역을 벗어나지 않고도 AEM에 저장된 Adobe Stock 자산을 신속하게 검색, 미리 보고 라이선스를 부여할 수 있습니다.
 
@@ -23,7 +23,7 @@ AEM과 Adobe Stock 간의 통신을 허용하려면 AEM에서 IMS 구성과 Adob
 
 >[!NOTE]
 >
->조직의 AEM 관리자와 관리 콘솔 관리자만 관리자 권한이 필요하므로 통합을 수행할 수 있습니다.
+>조직의 AEM 관리자 및 Admin Console 관리자만 관리자 권한이 필요하므로 통합을 수행할 수 있습니다.
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
@@ -33,9 +33,13 @@ AEM과 Adobe Stock 간의 통신을 허용하려면 AEM에서 IMS 구성과 Adob
 1. 제목, **[!UICONTROL 권한 부여 서버]**, **[!UICONTROL API 키]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 및 Payload라는 필드에 적절한 값을]******&#x200B;제공합니다. Adobe 개발자 [콘솔에서 이러한 값을 가져오는 방법에 대한 자세한 내용은 JWT 인증 빠른 시작을](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)참조하십시오.
 1. 다운로드한 공개 키를 Adobe 개발자 콘솔 서비스 계정에 추가합니다.
 
+<!--
+TBD: Update this instance when AIO updates their documentation publish URL.
+-->
+
 ### AEM에서 Adobe Stock 구성 만들기 {#create-adobe-stock-configuration-in-aem}
 
-1. AEM 사용자 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Adobe]** Stock으로 이동합니다.
+1. AEM 사용자 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock으로]**&#x200B;이동합니다.
 1. 만들기 **[!UICONTROL 를]** 클릭하여 구성을 만들고 기존 IMS 구성에 연결합니다. 환경 매개 변수 `PROD` 로 선택합니다.
 1. 라이센스 **[!UICONTROL 자산 경로]** 필드에서 위치를 그대로 두십시오. Adobe Stock 에셋을 저장할 위치를 변경하지 마십시오.
 1. 필요한 모든 속성을 추가하여 작성을 완료합니다. Click **[!UICONTROL Save &amp; Close]**.
@@ -47,7 +51,7 @@ AEM과 Adobe Stock 간의 통신을 허용하려면 AEM에서 IMS 구성과 Adob
 
 ## AEM에서 Adobe Stock 에셋 사용 및 관리 {#usemanage}
 
-조직은 이 기능을 사용하여 사용자가 AEM 자산에 있는 Adobe Stock 자산을 사용하여 작업하도록 허용할 수 있습니다. AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock 자산을 검색하고 필요한 자산에 라이선스를 부여할 수 있습니다.
+조직은 이 기능을 사용하여 사용자가 AEM Assets에서 Adobe Stock 에셋을 사용하여 작업할 수 있도록 허용할 수 있습니다. AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock 자산을 검색하고 필요한 자산에 라이선스를 부여할 수 있습니다.
 
 AEM에서 Adobe Stock 에셋에 라이선스가 부여되면 일반적인 에셋처럼 사용하고 관리할 수 있습니다. AEM에서 사용자는 자산을 검색하고 미리 볼 수 있습니다. 자산 복사 및 게시; 브랜드 포털에서 자산 공유; AEM 데스크탑 앱을 통해 에셋 액세스 및 사용 다양한 기능을 사용할 수 있습니다.
 
@@ -62,7 +66,7 @@ AEM 사용자는 AEM 및 Adobe Stock 모두에서 자산을 검색할 수 있습
 
 * Adobe Stock 에셋을 검색하려면 **[!UICONTROL 탐색]** > **[!UICONTROL 에셋]** > **[!UICONTROL Adobe Stock]**&#x200B;검색을클릭합니다.
 
-* Adobe Stock 및 AEM 자산에서 자산을 검색하려면 검색 아이콘 ![search_icon을 클릭합니다](assets/do-not-localize/search_icon.png).
+* Adobe Stock 및 AEM Assets에서 자산을 검색하려면 검색 아이콘 ![search_icon을 클릭합니다](assets/do-not-localize/search_icon.png).
 
 또는 검색 막대 `Location: Adobe Stock` 에 입력하기 시작하여 Adobe Stock 에셋을 선택합니다.  AEM에서는 검색된 자산에 대해 고급 필터링 기능을 제공하여 지원되는 에셋 유형, 이미지 방향 및 라이센스 상태 등의 필터를 사용하여 필요한 에셋을 빠르게 0으로 입력할 수 있습니다.
 
@@ -76,7 +80,7 @@ AEM 사용자는 AEM 및 Adobe Stock 모두에서 자산을 검색할 수 있습
 
 AEM에서 저장할 자산을 선택합니다. 맨 위의 도구 모음에서 저장을 클릭하고 자산의 이름과 위치를 제공합니다. 라이센스가 없는 에셋은 워터마크를 사용하여 로컬에 저장됩니다.
 
-다음 번에 자산을 검색할 때 저장된 자산이 AEM 자산에서 해당 자산을 사용할 수 있음을 나타내는 배지로 강조 표시됩니다.
+다음 번에 에셋을 검색할 때 저장된 에셋이 AEM Assets에서 사용할 수 있음을 나타내는 배지로 강조 표시됩니다.
 
 >[!NOTE]
 >
@@ -84,9 +88,9 @@ AEM에서 저장할 자산을 선택합니다. 맨 위의 도구 모음에서 �
 
 ### 라이선스 에셋 {#licenseassets}
 
-사용자는 Adobe Stock Enterprise 플랜의 할당량을 사용하여 Adobe Stock 에셋에 라이선스를 부여할 수 있습니다. 자산 라이선스를 부여하면 워터마크 없이 저장되며 AEM 자산에서 검색하고 사용할 수 있습니다.
+사용자는 Adobe Stock Enterprise 플랜의 할당량을 사용하여 Adobe Stock 에셋에 라이선스를 부여할 수 있습니다. 에셋 라이선스를 부여하면 워터마크 없이 저장되며 AEM Assets에서 검색하고 사용할 수 있습니다.
 
-![AEM Assets에서 Adobe Stock 에셋에 라이선스를 부여하고 저장하는 대화](assets/aem-stock_licenseandsave.jpg)상자&#x200B;*를 참조하십시오. 그림: AEM 자산에 Adobe Stock 에셋에 라이선스를 부여하고 저장하는 대화 상자*
+![AEM Assets에서 Adobe Stock 에셋에 라이선스를 부여하고 저장하는 대화 상자](assets/aem-stock_licenseandsave.jpg)*를 참조하십시오. 그림: AEM Assets에 Adobe Stock 에셋의 라이선스를 부여하고 저장하는 대화 상자*
 
 ### 메타데이터 및 자산 속성 액세스 {#access-metadata-and-asset-properties}
 
@@ -112,7 +116,7 @@ AEM에서 저장할 자산을 선택합니다. 맨 위의 도구 모음에서 �
 
 ## Related resources {#related-resources}
 
-[AEM 자산과 함께 Adobe Stock 에셋을 사용하는 방법에 대한 비디오 자습서](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+[AEM Assets과 함께 Adobe Stock 에셋 사용에 대한 비디오 자습서](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
 
 [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 
