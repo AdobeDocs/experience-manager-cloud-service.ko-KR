@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 개요
 description: 클라우드 준비 분석기 개요
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ## 클라우드 준비 분석기 보고서 {#cra-report}
 
-클라우드 준비 분석기 보고서는 일반적인 업그레이드 준비 상태를 세부적으로 파악하는 데 사용됩니다. 이 보고서는 Cloud Service으로 AEM에 성공적으로 배포하기 전에 해결해야 하는 문제 카테고리 내의 검색 결과로 구성됩니다.
+클라우드 준비 분석기 보고서는 일반적인 업그레이드 준비 상태를 세부적으로 파악하는 데 사용됩니다. The report consists of findings within categories of issues that must be addressed before a successful deployment to AEM as a Cloud Service.
 
-클라우드 준비 분석기 보고서에는 다음 카테고리가 포함됩니다.
+The Cloud Readiness Analyzer report includes the following categories:
 
 * 리팩토링해야 하는 애플리케이션 기능
 * 지원되는 위치로 이동해야 하는 저장소 항목
@@ -33,4 +33,4 @@ ht-degree: 0%
 >[!NOTE]
 >클라우드 준비 분석기 보고서는 수동으로 수집하고 평가해야 하는 정보를 제공하여 Cloud Service으로 전환하는 데 필요한 시간과 비용을 계산하는 프로세스를 가속화합니다.
 
-AEM 인스턴스에서 클라우드 준비 분석기 보고서를 다운로드할 수도 있습니다. 보류 중인 **CSV 형식으로 결과 보기를** 참조하십시오.
+AEM 인스턴스에서 클라우드 준비 분석기 보고서를 다운로드할 수도 있습니다. 자세한 [내용은 클라우드 준비 분석기 보고서](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) 보기를 참조하십시오.
