@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
@@ -36,6 +36,8 @@ ht-degree: 1%
 >Software Distribution [portal에서 Content Transfer Tool을](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 다운로드합니다.
 
 ## 컨텐츠 전송 도구 실행 {#running-tool}
+
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 콘텐츠 전송 도구를 사용하여 컨텐츠를 Cloud Service으로 AEM으로 마이그레이션하는 방법(작성자/게시)을 배우려면 이 섹션을 따르십시오.
 
