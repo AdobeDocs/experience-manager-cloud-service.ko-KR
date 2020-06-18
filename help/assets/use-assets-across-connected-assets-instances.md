@@ -28,11 +28,11 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자 각 배포에 적절한 사용자 그룹에 포함됩니다.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 6.5에 대한 자세한 내용은 [!DNL Experience Manager] Experience Manager 6.5 [Assets의 연결된 자산 기능을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 6.5에 대한 자세한 내용은 Experience Manager 6.5 자산의 [!DNL Experience Manager] 연결된 자산 기능을 참조하십시오 [](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] 클라우드 서비스로 | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
+   |  | [!DNL Sites] Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]클라우드 서비스로&#x200B;** | 지원됨 | 지원됨 | 지원됨 |
+   | **[!DNL Experience Manager Assets]Cloud Service ** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5[!DNL Assets]AMS ** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5[!DNL Assets]온-프레미스&#x200B;** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
