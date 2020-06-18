@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 * 샌드박스 환경을 사용 중인 경우 *환경이 2020년* 6월 10일 릴리스 이상으로 업그레이드되었는지 확인하십시오. 프로덕션 환경을 사용하는 경우 *자동으로*&#x200B;업데이트됩니다.
 
-* 콘텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리자 사용자여야 하며, 콘텐츠를 전송하는 클라우드 서비스 인스턴스의 AEM 관리자 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 콘텐츠 전송 도구를 사용할 수 없습니다.
+* 컨텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리자 사용자여야 하며 컨텐츠를 전송하는 Cloud Service 인스턴스의 AEM 관리자 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 콘텐츠 전송 도구를 사용할 수 없습니다.
 
 * 추출 단계 동안 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
@@ -30,16 +30,16 @@ ht-degree: 1%
 
 ## 사용 가능 {#availability}
 
-컨텐트 전송 도구는 소프트웨어 배포 포털에서 zip 파일(Content Transfer Tool v1.0.0)로 다운로드할 수 있습니다. 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
+컨텐트 전송 도구는 소프트웨어 배포 포털에서 zip 파일(Content Transfer Tool v1.0.0)로 다운로드할 수 있습니다. 소스 Adobe Experience Manager(AEM) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
->Software Distribution Portal에서 [Content Transfer Tool을 다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Software Distribution [portal에서 Content Transfer Tool을](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 다운로드합니다.
 
 ## 컨텐츠 전송 도구 실행 {#running-tool}
 
-콘텐츠 전송 도구를 사용하여 콘텐츠를 클라우드 서비스로 AEM으로 마이그레이션하는 방법(작성자/게시)을 배우려면 이 섹션을 따르십시오.
+콘텐츠 전송 도구를 사용하여 컨텐츠를 Cloud Service으로 AEM으로 마이그레이션하는 방법(작성자/게시)을 배우려면 이 섹션을 따르십시오.
 
-1. Adobe Experience Manager를 선택하고 도구 -> **작업** -> **컨텐츠 전송으로 이동합니다**.
+1. Adobe Experience Manager을 선택하고 도구 -> 작업 **->** 컨텐츠 **전송으로**&#x200B;이동합니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
@@ -59,7 +59,7 @@ ht-degree: 1%
       >[!NOTE]
       >마이그레이션 세트 이름에는 특수 문자가 허용되지 않습니다.
 
-   1. **클라우드 서비스 구성**: 대상 AEM을 클라우드 서비스 작성자 URL로 입력합니다.
+   1. **Cloud Service 구성**: 대상 AEM을 Cloud Service 작성자 URL로 입력합니다.
 
       >[!NOTE]
       >컨텐츠 전송 작업 중에 한 번에 최대 4개의 마이그레이션 세트를 만들고 유지 관리할 수 있습니다.
@@ -68,7 +68,7 @@ ht-degree: 1%
    1. **액세스 토큰**: 액세스 토큰을 입력합니다.
 
       >[!NOTE]
-      >로 이동하여 작성 인스턴스에서 액세스 토큰을 검색할 수 있습니다 `/libs/granite/migration/token.json`. 액세스 토큰이 클라우드 서비스 작성자 인스턴스에서 검색됩니다.
+      >로 이동하여 작성 인스턴스에서 액세스 토큰을 검색할 수 있습니다 `/libs/granite/migration/token.json`. 액세스 토큰이 Cloud Service 작성자 인스턴스에서 검색됩니다.
 
    1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
@@ -132,7 +132,7 @@ ht-degree: 1%
 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 상업을 지원하는 기능이 있습니다.
 
 >[!NOTE]
->초기 컨텐츠 전송 후 Cloud Service에서 라이브하기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 상업을 수행하는 것이 좋습니다.
+>초기 컨텐츠 전송 후, Cloud Service에서 라이브하기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 상업을 수행하는 것이 좋습니다.
 
 추출 프로세스가 완료되면 위쪽 추출 방법을 사용하여 델타 컨텐츠를 전송할 수 있습니다. 아래 단계를 따르십시오.
 
@@ -177,7 +177,7 @@ ht-degree: 1%
 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 *최상위* 기능을 지원합니다.
 
 >[!NOTE]
->초기 컨텐츠 전송 후 Cloud Service에서 라이브하기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 상업을 수행하는 것이 좋습니다.
+>초기 컨텐츠 전송 후, Cloud Service에서 라이브하기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 상업을 수행하는 것이 좋습니다.
 
 처리 과정이 완료되면, 최상위 처리 방법을 사용하여 델타 컨텐츠를 사용할 수 있습니다. 아래 단계를 따르십시오.
 
