@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 툴 개요
 description: 컨텐츠 전송 툴 개요
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 컨텐츠 전송 툴을 사용하기 위한 지침과 모범 사례를 이해하려면 아래 섹션을 따르십시오.
 
-* 잠재적인 문제를 찾아 저장소에 있는 불필요한 쓰레기를 줄이기 위해 이전에 저장소에서 구성, 데이터 저장소 일관성 검사를 실행하는 것이 좋습니다.
+* 잠재적인 문제를 식별하고 저장소의 크기를 줄이기 위해 [소스](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) 저장소에서 수정 [및](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) 데이터 **저장소 일관성 검사를** 실행하는 것이 좋습니다.
 
 * AEM Cloud CDN(Author Content Delivery Network) 구성이 IP의 허용 목록을 포함하도록 구성된 경우 소스 환경과 AEM Cloud 환경이 서로 통신할 수 있도록 소스 환경 IP도 허용 목록에 추가되는지 확인해야 합니다.
 
