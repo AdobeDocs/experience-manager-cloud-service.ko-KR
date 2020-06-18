@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ CRA(Cloud Readiness Analyzer)를 실행하기 위한 중요한 고려 사항을 
 클라우드 준비 분석기는 소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다. 소스 Adobe Experience Manager(AEM) 인스턴스에 패키지 관리자를 통해 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
->Software Distribution Portal에서 Cloud Readance Analyzer를 다운로드합니다.
+>Software Distribution [portal에서 Cloud Readance Analyzer를](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 다운로드합니다.
 
 ## 클라우드 준비 분석기 보고서 보기 {#viewing-report}
 
