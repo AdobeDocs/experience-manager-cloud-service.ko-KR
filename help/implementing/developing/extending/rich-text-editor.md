@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager에서 콘텐츠를 클라우드 서비스로 작성하도록 리치 텍스트 편집기를 구성합니다.
-description: Adobe Experience Manager에서 콘텐츠를 클라우드 서비스로 작성하도록 리치 텍스트 편집기를 구성합니다.
+title: Adobe Experience Manager의 컨텐츠를 Cloud Service으로 작성하도록 리치 텍스트 편집기를 구성합니다.
+description: Adobe Experience Manager의 컨텐츠를 Cloud Service으로 작성하도록 리치 텍스트 편집기를 구성합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
-RTE(Rich Text Editor)는 작성자에게 텍스트 컨텐츠를 편집하는 다양한 기능을 제공합니다. 아이콘, 선택 상자, 도구 모음 및 메뉴는 WYSIWYG 텍스트 편집 환경을 위해 제공됩니다. 관리자는 작성 구성 요소에서 사용 가능한 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성합니다. 작성을 위해 RTE 기능을 사용하는 방법에 대해 알아보려면 [작성에 리치 텍스트 편집기 사용을 참조하십시오](rich-text-editor.md). 작성자가 웹 컨텐츠 작성에 RTE를 [사용하는](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) 방법을 참조하십시오.
+RTE(Rich Text Editor)는 작성자에게 텍스트 컨텐츠를 편집하는 다양한 기능을 제공합니다. 아이콘, 선택 상자, 도구 모음 및 메뉴는 WYSIWYG 텍스트 편집 환경을 위해 제공됩니다. 관리자는 작성 구성 요소에서 사용 가능한 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성합니다. 작성자가 웹 컨텐츠 작성에 RTE를 [사용하는](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) 방법을 참조하십시오.
 
 구성하는 데 필요한 RTE 개념과 단계는 아래에 나열되어 있습니다.
 
@@ -31,7 +31,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 *그림: 사용 가능한 모든 옵션이 활성화된 리치 텍스트 편집기 도구 모음.*
 
-도구 모음은 WYSIWYG 작성 환경을 위한 옵션을 제공합니다. Experience Manager 관리자는 인터페이스의 도구 모음에서 사용할 수 있는 옵션을 구성할 수 있습니다. 포괄적인 편집 옵션은 기본적으로 Experience Manager에서 사용할 수 있습니다. 개발자는 Adobe Experience Manager를 사용자 정의하여 더 많은 편집 옵션을 추가할 수 있습니다.
+도구 모음은 WYSIWYG 작성 환경을 위한 옵션을 제공합니다. Experience Manager 관리자는 인터페이스의 도구 모음에서 사용할 수 있는 옵션을 구성할 수 있습니다. 포괄적인 편집 옵션은 기본적으로 Experience Manager에서 사용할 수 있습니다. 개발자는 Experience Manager을 사용자 정의하여 더 많은 편집 옵션을 추가할 수 있습니다.
 
 ## 다양한 편집 모드 {#editingmodes}
 
@@ -58,7 +58,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 ### Full-screen editing {#full-screen-editing}
 
-Adobe Experience Manager 구성 요소는 페이지 컨텐츠를 숨기며 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 편집 옵션이 가장 다양하므로 전체 화면 편집이 인라인 편집의 자세한 버전입니다. 인라인 편집 모드를 사용할 때 작은 도구 모음에서 ![rte_fullscreen](assets/rte_fullscreen.png)을 클릭하여 열 수 있습니다.
+Experience Manager 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 편집 옵션이 가장 다양하므로 전체 화면 편집이 인라인 편집의 자세한 버전입니다. 인라인 편집 모드를 사용할 때 작은 도구 모음에서 ![rte_fullscreen](assets/rte_fullscreen.png)을 클릭하여 열 수 있습니다.
 
 대화 상자의 전체 화면 모드에서는 자세한 RTE 도구 모음과 함께 대화 상자에서 사용할 수 있는 옵션 및 구성 요소도 사용할 수 있습니다. 다른 구성 요소와 함께 RTE가 포함된 대화상자에만 적용됩니다.
 
@@ -131,6 +131,7 @@ Adobe Experience Manager 구성 요소는 페이지 컨텐츠를 숨기며 사�
 >* **이름**: `configPath`
 >* **유형**: `String`
 >* **값**: 실제 구성을 포함하는 노드의 경로
+
 >
 >
 RTE 구성 노드의 이름을 다음으로 지정하지 마십시오 `config`. 그렇지 않으면 RTE 구성은 관리자만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
@@ -164,13 +165,14 @@ RTE 플러그인의 자세한 구성에 대해서는 RTE 플러그인을 활성�
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 자체 텍스트 구성 요소를 만들려면 이러한 구성 요소를 편집하는 대신 위의 구성 요소를 복사하십시오.
 
 ## RTE 도구 모음 구성 {#dialogfullscreen}
 
-Adobe Experience Manager를 사용하면 리치 텍스트 편집기의 인터페이스를 다양한 편집 모드로 구성할 수 있습니다. 기본 설정은 아래에 제공됩니다. 요구 사항에 따라 이러한 기본값을 무시할 수 있습니다. 작성자에게 제공할 도구 모음 기능만 사용자 정의합니다. 도구 모음 구성을 모두 지정할 필요는 없습니다.
+Experience Manager을 사용하면 다양한 편집 모드에 대해 리치 텍스트 편집기의 인터페이스를 다르게 구성할 수 있습니다. 기본 설정은 아래에 제공됩니다. 요구 사항에 따라 이러한 기본값을 무시할 수 있습니다. 작성자에게 제공할 도구 모음 기능만 사용자 정의합니다. 도구 모음 구성을 모두 지정할 필요는 없습니다.
 
 도구 모음을 구성하려면 다음 샘플 구성 `dialogFullScreen`을 사용하십시오.
 
@@ -272,7 +274,7 @@ Experience Manager RTE 기능에는 다음과 같은 제한 사항이 있습니�
 
 * RTE 기능은 Experience Manager 구성 요소 대화 상자에서만 지원됩니다. RTE는 마법사 또는 Foundation 양식에서 지원되지 않습니다.
 
-* Experience Manager는 하이브리드 장치에서 작동하지 않습니다. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+* 하이브리드 장치에서 Experience Manager이 작동하지 않습니다. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
 * RTE 구성 노드의 이름을 지정하지 마십시오 `config`. 그렇지 않으면 RTE 구성은 관리자에게만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
 
