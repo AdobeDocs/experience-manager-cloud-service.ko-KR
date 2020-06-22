@@ -2,9 +2,9 @@
 title: 변형 - 조각 콘텐츠 작성
 description: 변형을 사용하면 조각에 대한 컨텐츠를 작성한 다음 목적에 따라 다양한 컨텐츠(필요한 경우)를 만들 수 있습니다.
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1686'
 ht-degree: 6%
 
 ---
@@ -50,12 +50,6 @@ ht-degree: 6%
    * 다양한 [작업 액세스](#actions)
 
 예:
-
-* 간단한 조각 편집
-
-   단순 조각은 하나의 여러 줄 텍스트 필드로 구성됩니다(전체 화면 편집기에서 시각적 자산을 추가할 수 있음).
-
-   ![단순 조각](assets/cfm-variations-01.png)
 
 * 구조화된 컨텐츠로 조각 편집
 
@@ -210,6 +204,7 @@ ht-degree: 6%
    * 제거할 문장은 빨간색으로 강조 표시되고, 취소선이 그어져 있습니다.
    * 강조 표시된 문장을 클릭하면 요약된 컨텐츠에 표시됩니다.
    * 강조 표시되지 않은 문장을 클릭하면 제거됩니다.
+
    ![요약 비교](assets/cfm-variations-06.png)
 
 6. 요약을 **선택하여** 변경 사항을 확인합니다.
@@ -267,6 +262,7 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 
    * DAM에서 필요한 자산으로 이동
    * DAM에서 자산 검색
+
    일단 찾으면 축소판을 클릭하여 필요한 자산을 선택합니다.
 
 4. 선택 **을** 사용하여 자산을 현재 위치에서 컨텐츠 조각의 단락 시스템에 추가합니다.
@@ -355,6 +351,7 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
    * green은 추가된 컨텐츠(변형)를 나타냅니다.
    * red는 제거된 컨텐츠(변수에서)를 나타냅니다.
    * 파란색은 대체 텍스트를 나타냅니다.
+
    ![마스터와 동기화](assets/cfm-variations-11.png)
 
 1. 동기화 **를**&#x200B;선택하면 변형이 업데이트되고 표시됩니다.
