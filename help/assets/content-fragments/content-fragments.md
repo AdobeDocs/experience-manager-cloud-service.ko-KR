@@ -1,10 +1,10 @@
 ---
 title: 콘텐츠 조각을 사용한 작업
-description: AEM(Adobe Experience Manager)의 클라우드 서비스로 콘텐츠 조각을 사용하여 페이지에 구애받지 않는 콘텐츠를 디자인, 제작, 조정 및 사용하는 방법을 알아봅니다.
+description: Adobe Experience Manager(AEM)의 컨텐츠 조각을 Cloud Service으로 사용하여 페이지에 영향을 받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1804'
 ht-degree: 4%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 4%
 # 콘텐츠 조각을 사용한 작업{#working-with-content-fragments}
 
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
+
+콘텐츠 조각에 구조화된 콘텐츠 포함:
+
+* 결과 조각의 구조를 미리 정의하는 [컨텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)모델을 기반으로 합니다.
 
 AEM 핵심 구성 요소의 JSON(Sling Model) 내보내기 기능을 사용하여 컨텐츠 조각을 JSON 포맷으로 전달할 수도 있습니다. 이 전달 형식:
 
@@ -59,7 +63,7 @@ AEM Content Services는 웹 페이지에 중점을 둔 수준에서 AEM 내/에�
 * 기본 모바일 애플리케이션
 * AEM 외부에 있는 기타 채널 및 터치 포인트
 
-배달은 JSON 형식으로 이루어집니다.
+배달은 JSON 내보내기 도구를 사용하여 JSON 형식으로 만들어집니다.
 
 AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관리할 수 있습니다. 구조화된 컨텐츠는 다양한 컨텐츠 유형을 포함할 수 있는 모델에서 정의됩니다. 텍스트, 숫자 데이터, 부울, 날짜 및 시간 등을 포함합니다.
 
@@ -77,12 +81,6 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 >
 >자세한 내용은 AEM의 [컨텐츠 조각 및 경험 조각 이해를 참조하십시오](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
->[!CAUTION]
->
->컨텐츠 조각은 클래식 UI에서 사용할 수 없습니다.
->
->컨텐츠 조각 구성 요소는 클래식 UI 사이드 킥에서 볼 수 있지만 추가 기능을 사용할 수 없습니다.
-
 >[!NOTE]
 >
 >또한 AEM은 조각 컨텐츠 변환을 지원합니다. 자세한 내용은 컨텐츠 조각에 대한 번역 프로젝트 만들기를 참조하십시오.
@@ -92,24 +90,6 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
 -->
-
-## 컨텐츠 조각 유형 {#types-of-content-fragment}
-
-컨텐츠 조각은 다음 중 하나일 수 있습니다.
-
-* 간단한 조각
-
-   * 미리 정의된 구조가 없습니다.
-
-   * 텍스트 및 이미지만 포함되어 있습니다.
-
-   * 이러한 템플릿은 **단순 조각 템플릿을** 기반으로 합니다.
-
-* 구조화된 컨텐츠가 포함된 조각
-
-   * 이러한 구성 요소는 [결과 조각의 구조를 미리 정의하는 컨텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)모델을 기반으로 합니다.
-
-   * JSON 내보내기 도구를 사용하여 컨텐츠 서비스를 구현하는 데에도 사용할 수 있습니다.
 
 ## 컨텐트 유형 {#content-type}
 
@@ -170,18 +150,14 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 * **조각 요소**
 
    * 요소는 컨텐츠를 포함하는 데이터 필드에 상관 관계를 맺습니다.
-   * 구조화된 컨텐츠가 있는 조각의 경우 컨텐츠 모델을 사용하여 컨텐츠 조각을 생성합니다. 모델에 지정된 요소(필드)는 조각의 구조를 정의합니다. 이러한 요소(필드)는 다양한 데이터 유형일 수 있습니다.
-   * 간단한 조각:
-
-      * 컨텐츠는 하나 이상의 여러 줄 텍스트 필드 또는 요소에 보관됩니다.
-      * 요소는 **단순 조각 템플릿에서** 정의됩니다.
+   * 컨텐츠 모델을 사용하여 컨텐츠 조각을 생성합니다. 모델에 지정된 요소(필드)는 조각의 구조를 정의합니다. 이러한 요소(필드)는 다양한 데이터 유형일 수 있습니다.
 
 * **조각 단락**
 
    * 텍스트 블록(예:
 
       * 세로 공백으로 구분(캐리지 리턴)
-      * 여러 줄 텍스트 요소에서; 단순 또는 구조화된 조각
+      * 여러 줄로 된 텍스트 요소
    * 리치 텍스트 [및](/help/assets/content-fragments/content-fragments-variations.md#rich-text) 마크다운 [](/help/assets/content-fragments/content-fragments-variations.md#markdown) 모드에서 단락 서식을 머리글로 지정할 수 있습니다. 이 경우 단락을 모두 하나로 묶습니다.
 
    * 페이지 작성 중 컨텐츠 컨트롤을 활성화합니다.
@@ -212,7 +188,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
    * 자산은 컬렉션을 통해 조각에 [연결됩니다](/help/assets/content-fragments/content-fragments-assoc-content.md). 연결된 컬렉션은 작성자가 페이지를 작성할 때 사용할 자산을 결정할 수 있도록 해줍니다.
 
       * 컬렉션은 기본 컨텐츠로 조각에 연결하거나 조각 작성 도중 작성자가 연결할 수 있습니다.
-      * [자산(DAM) 컬렉션은](/help/assets/manage-collections.md) 조각 관련 컨텐츠의 기본입니다.
+      * [자산(DAM) 컬렉션은](/help/assets/manage-collections.md) 조각과 관련된 컨텐츠의 기본입니다.
    * 선택적으로 조각 자체를 컬렉션에 추가하여 추적을 지원할 수도 있습니다.
 
 * **조각 메타데이터**
@@ -275,11 +251,6 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
    * 조각(제목, 컨텐츠 요소, 태그 정의)의 구조를 정의합니다.
    * 콘텐츠 모델 정의는 제목과 하나의 데이터 요소가 필요합니다. 그 외의 모든 것은 선택 사항입니다. 모델은 가능한 경우 조각 및 기본 컨텐트의 최소 범위를 정의합니다. 작성자는 조각 컨텐츠를 작성할 때 정의된 구조를 변경할 수 없습니다.
 
-* **조각 템플릿**
-
-   * 단순 **조각** 템플릿은 [간단한 조각을 만드는 데 필요합니다](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * 간단한 조각(제목, 텍스트 요소 수, 태그 정의)의 기본 속성을 정의합니다.
-
 * **컨텐츠 조각 구성 요소**
 
    * 조각을 HTML 및/또는 JSON 형식으로 전달하는 데 도움이 됩니다.
@@ -294,6 +265,6 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 ### WKND 샘플 {#wknd-sample}
 
-WKND [사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 샘플이 제공되어 AEM에 대한 클라우드 서비스에 대한 자세한 내용을 알 수 있습니다. 여기에는 샘플 조각이 포함되어 있으며 다음과 같이 볼 수 있습니다.
+Cloud Service [로 AEM에 대해 학습하는 데 도움이 되는 WKND 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 샘플이 제공됩니다. 여기에는 샘플 조각이 포함되어 있으며 다음과 같이 볼 수 있습니다.
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
