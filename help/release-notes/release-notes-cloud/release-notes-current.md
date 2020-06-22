@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.6.0용 릴리스 노트
 description: Experience Manager 2020.6.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1942'
 ht-degree: 7%
 
 ---
@@ -109,16 +109,16 @@ AEM 프로젝트 빌드 시간은 AEM 프로젝트 pom.xml의 모든 참조를 �
 
 고급 스마트 태그를 사용하면 일반 스마트 태그 외에도 고급 태그 모델 기반의 이미지를 인식할 수 있도록 고급 태그 지정 모델을 교육할 수 있습니다.
 
-이번 릴리스에는 고객별 태그의 세트에 대한 스마트 태그 교육을 설정하고, 이를 교육, 자산에 대한 교육을 제공하는 가이드 방식의 새로운 사용자 경험이 포함되어 있으며, 이를 인식하여 향후 태그해야 합니다. 보다 직관적인 경험을 제공합니다.
+이번 릴리스에는 고객별 태그의 세트에 대한 스마트 태그 교육을 설정하고, 이를 교육, 자산에 대한 교육을 제공하는 가이드 방식의 새로운 사용자 경험이 포함되어 있으며, 이를 인식하여 향후 태그해야 합니다. 이제 보다 직관적인 경험을 경험할 수 있습니다.
 고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. 자산에 스마트 태그를 추가하고 스마트 태그 [를](/help/assets/smart-tags.md) 구성하는 방법을 [참조하십시오](/help/assets/smart-tags-configuration.md).
 
 **3D 컨텐츠 수집, 미리 보기 및 전달 지원**
 
-조직은 이제 AEM Assets 내에 3D 파일을 저장하고 사용할 수 있습니다. 사용자는 .obj, .stl, .gltf 및 .glb 파일을 비롯한 다양한 핵심 3D 파일을 업로드, 미리 보고 활용할 수 있습니다. 또한 [!DNL Dynamic Media]독립적인 URL 또는 뷰어를 통해 3D 경험을 구성하고 전달할 수 있습니다. 여기에는 [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer 구성 요소 및 3D 파일을 [!DNL Dynamic Media] (AR/VR)를 통해 전달하는 기능이 포함됩니다. Dynamic Media [에서 3D 자산 작업을 참조하십시오](/help/assets/dynamic-media/assets-3d.md).
+조직은 이제 AEM Assets 내에 3D 파일을 저장하고 사용할 수 있습니다. 사용자는 OBJ, STL, GLTF, GLB 파일 등 다양한 핵심 3D 파일을 업로드, 미리 보고 사용할 수 있습니다. 또한 다양한 URL 또는 뷰어를 사용하여 3D 경험을 구성하고 전달할 수 [!DNL Dynamic Media]있습니다. 여기에는 [!DNL Dynamic Media] 3D Experience Viewer, Sites 3D Viewer 구성 요소 및 3D 파일을 [!DNL Dynamic Media] (AR/VR)를 통해 전달하는 기능이 포함됩니다. Dynamic Media [에서 3D 자산 작업을 참조하십시오](/help/assets/dynamic-media/assets-3d.md).
 
 **Adobe XD를 위한 Adobe Asset Link 지원**
 
-최신 릴리스를 [!DNL Experience Manager Assets] 통해 v29.3과 함께 출시된 새로운 [!DNL Adobe Asset Link] 플러그인에 대한 지원을 [!DNL Adobe XD] 제공합니다. 이러한 통합을 통해 디자이너는 [!DNL Experience Manager] 애플리케이션을 종료하지 않고도 디자인 [!DNL Adobe XD] 에서 에셋에 액세스하여 사용할 수 있습니다. Adobe [XD용 Adobe Asset Link 설명서를 참조하십시오](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
+최신 릴리스는 [!DNL Experience Manager Assets] v29.3과 함께 출시된 새로운 [!DNL Adobe Asset Link] 플러그인을 지원합니다. 이러한 통합을 통해 디자이너는 [!DNL Adobe XD] 애플리케이션을 종료하지 않고도 디자인에 있는 에셋 [!DNL Experience Manager] 에 액세스하여 사용할 수 있습니다 [!DNL Adobe XD] . Adobe [XD용 Adobe Asset Link 설명서를 참조하십시오](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
 이번 릴리스를 통해 크리에이티브 사용자와 디자이너는 이제 [!DNL AEM Assets] , [!DNL Adobe Asset Link] 및 [!DNL Adobe XD]같은 다양한 Creative Cloud 데스크탑 앱 [!DNL Photoshop]에서 [!DNL Illustrator]를 사용하여 에셋을 관리할 수 [!DNL InDesign]있습니다.
 
@@ -128,35 +128,35 @@ AEM 프로젝트 빌드 시간은 AEM 프로젝트 pom.xml의 모든 참조를 �
 
 유저 인터페이스 요소는 화면 판독기에 익숙하고, 키보드를 사용하여 액세스할 수 있으며, 대비를 더 잘 합니다. 다음은 향상된 기능의 세부 목록입니다.
 
-* 게시Facebook 페이지의 [!UICONTROL 옵션][!UICONTROL ,]범위 [!UICONTROL 및] 워크플로우 [!UICONTROL 진행률 표시기를] 화면 판독기에서 진행률 표시기로 읽지 않습니다. 대신 화면 판독기 사용자는 이러한 상태 표시기를 탭 목록으로 인식합니다. (CQ-4273015)
+* [게시 관리] 페이지의 [!UICONTROL 옵션], [!UICONTROL 범위]및 [!UICONTROL 워크플로] 진행률 [!UICONTROL 막대는] 화면 판독기에서 진행률 표시줄로 읽지 않습니다. 대신 화면 판독기 사용자는 이러한 상태 표시기를 탭 목록으로 인식합니다. (CQ-4273015)
 
 * 자산의 [!UICONTROL 속성] 페이지에서 태그를 추가할 때 사용자는 태그의 트리 구조를 탐색합니다. 화면 판독기 사용자가 트리 구조를 탐색할 때 아무 소리도 듣지 않으므로 트리 구조에 액세스할 수 없습니다. (CQ-4272964)
 
 * 링크 공유 대화 상자에서 찾아보기 모드에서 탐색할 때 화면 판독기에서
 
-   * 대화 상자가 로드되는 즉시 테이블 정보에 내레이션이 적용됩니다.
-   * 에 나열된 모든 자동 제안 항목으로 이동할 수 없습니다.
-   * 에는 이메일 주소/검색 [!UICONTROL 콤보 상자에 대해 표시되는 자동 제안] 기능이 나레이션되지 않습니다. (CQ-4294232)
+   * 대화 상자가 로드되는 즉시 테이블 정보에 나레이션이 적용됩니다.
+   * 나열된 모든 자동 제안 항목으로 이동할 수 없습니다.
+   * 이메일 주소/검색 [!UICONTROL 콤보 상자에 대해 표시된 자동 제안을] 분류하지 않습니다. (CQ-4294232)
 
-* 이제 [!UICONTROL 메타데이터 스키마 편집기] 페이지와 해당 요소에 액세스할 수 있으며 화면 판독기를 사용할 수 있습니다. 이 옵션은 키보드를 사용하여 사용할 수 있습니다. (CQ-4272953) 사용자는 NVDA 검색 모드에서 키보드를 사용하여 구성 요소를 드래그할 수 있습니다. (CQ-4296326)
+* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953) 사용자는 NVDA 검색 모드에서 키보드를 사용하여 구성 요소를 드래그할 수 있습니다. (CQ-4296326)
 
 * 자산 사용자 인터페이스에서 보기 설정은 키보드에서 액세스할 수 없습니다. (CQ-4289038)
 
 * 황색 등급 아이콘의 광도 비율은 3:1보다 작습니다. 이 기능은 시각 장애가 있거나 색상에 대한 인식이 없는 사용자에게 유용하지 않습니다. 등급 별은 자산 또는 카드 보기에서 탭에 표시됩니다
 
-* 일부 사용자 인터페이스 요소의 색상 및 대비가 업데이트되어 시력이 제한된 사용자 또는 색상에 대한 인식이 없는 사용자가 이러한 사용자 인터페이스 요소를 구분할 수 있습니다. 예를 들어 자산의 속성 및 카드 보기 [!UICONTROL 에서] 고급 [!UICONTROL 탭] 의 등급 [!UICONTROL 섹션] 에 있는 별점등급 아이콘의 색상이 적절한 대비를 위해 변경됩니다. (CQ-4295106)
+* 일부 사용자 인터페이스 요소의 색상 및 대비가 업데이트되어 시력이 제한된 사용자 또는 색상에 대한 인식이 없는 사용자가 이러한 사용자 인터페이스 요소를 구분할 수 있습니다. For example, the color of star rating icons in the [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in the [!UICONTROL Properties] of an asset and in card view is changed for appropriate contrast. (CQ-4295106)
 
-* 이제 콤보 상자의 목록 상자 팝업 메뉴(여러 페이지의 다양한 필드)에 화면 판독기에서 알릴 수 있는 옵션 목록으로 항목이 표시됩니다. (CQ-4294017)
+* 이제 화면 판독기에서 콤보 상자의 목록 상자 팝업 메뉴 항목을 옵션 목록으로 읽을 수 있습니다(여러 페이지의 다양한 필드). (CQ-4294017)
 
 * 자산에 워크플로우를 적용하려면 [!UICONTROL 타임라인에 있는] V자 모양 화살표를 키보드로 액세스할 수 있습니다. (CQ-4289268)
 
-* 사용자는 기호를 사용하여 자산 속성 [!UICONTROL 페이지의] 기본 [!UICONTROL 탭] 에 있는 [!UICONTROL 태그] 필드에서 선택한 `x` 태그를 제거할 수있습니다. 이제 스크린 리더에서 선택한 태그 수와 함께 이 문서의 용도를 발표했습니다(CQ-4273033).
+* 사용자는 기호를 사용하여 자산 속성 [!UICONTROL 페이지의] 기본 [!UICONTROL 탭] 에 있는 [!UICONTROL 태그] 필드에서 선택한 `x` 태그를 제거할 수있습니다. 이제 화면 판독기에서 선택한 태그의 용도와 수를 알려줍니다(CQ-4273033).
 
 * 읽기 전용 양식 필드는 키보드 사용에 중점을 둘 수 있습니다. 예를 들어, 자산의 [!UICONTROL 속성] 페이지에서 기본 [!UICONTROL 탭의 비활성화된 필드] 가있습니다. (CQ-4273031)
 
 * 키보드를 사용하여 왼쪽 사이드바의 에셋을 필터링하는 옵션에 액세스합니다. (CQ-4273018)
 
-* 이제 자산 속성 [!UICONTROL 페이지의] 기본 [!UICONTROL 탭에서 선택 대화 상자를 여는 옵션, 경로 필드와 같은 다양한 콤보 상자 요소의 용도가 화면 판독기에서 올바르게] 발표됩니다. (CQ-4273016)
+* 화면 판독기는 경로 필드 및 자산 속성 [!UICONTROL 페이지의 기본] 탭에서 선택 대화 상자를 여는 옵션과 같은 다양한 콤보 상자 요소의 용도를 [!UICONTROL 알려 줍니다] . (CQ-4273016)
 
 * 비디오의 볼륨 컨트롤은 키보드를 사용하여 액세스할 수 있습니다. (CQ-4272696)
 
@@ -168,11 +168,11 @@ AEM 프로젝트 빌드 시간은 AEM 프로젝트 pom.xml의 모든 참조를 �
 
 * 자산 페이지 또는 폴더 탐색의 머리글과 확대/축소 옵션 같은 링크 및 옵션과 같은 대화형 사용자 인터페이스 요소에 이제 키보드를 사용하여 액세스할 수 있습니다. (CQ-4271412)
 
-* 이제 자산에 있는 모든 브라우저 페이지의 제목이 [!DNL Adobe Experience Manager] 고유합니다. (CQ-4271409)
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique. (CQ-4271409)
 
 **기타 개선 사항**
 
-이 릴리스에서는 다음과 같은 추가 개선 사항이 제공됩니다.
+이 릴리스에서는 다음과 같은 기타 개선 사항이 제공됩니다.
 
 * 자산 처리 프로필로 자산을 재처리할 수 있으므로 프로세스를 완전히 제어할 수 있습니다(전체 자산 처리 실행, 특정 처리 프로필 적용, 사후 처리 워크플로우 실행 여부 결정).
 * 검색 쿼리는 기본 클러스터 인스턴스가 백그라운드에서 다시 시작되었을 때 결과를 빠르게 반환합니다(이러한 경우 초기 검색 실행이 더 오래 지속될 수 있음).
