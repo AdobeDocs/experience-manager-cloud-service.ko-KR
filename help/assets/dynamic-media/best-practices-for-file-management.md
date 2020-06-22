@@ -1,22 +1,22 @@
 ---
-title: 프로필 사용을 위한 디지털 자산 구성을 위한 모범 사례
-description: 디지털 에셋 파일에 대한 메타데이터 이름 지정, 구성 및 관리를 위한 팁 및 모범 사례
+title: Dynamic Media 이미지 프로필 또는 비디오 프로필 사용을 위한 디지털 자산을 구성하기 위한 모범 사례
+description: Dynamic Media 이미지 및 비디오 자산 파일의 이름 지정, 구성 및 관리를 위한 팁 및 모범 사례
 translation-type: tm+mt
-source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# 디지털 자산을 구성하여 프로파일을 사용하는 모범 사례 {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
+# 이미지 프로필 또는 비디오 프로필 사용을 위한 디지털 자산을 구성하기 위한 모범 사례{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-AEM Assets에서 프로필 사용에 대한 중요한 개념은 폴더에 프로필 할당된다는 것입니다. 프로필 내에는 비디오 프로필 또는 이미지 프로필과 함께 메타데이터 프로필 형식의 설정이 있습니다. 이러한 설정은 하위 폴더와 함께 폴더의 컨텐츠를 처리합니다. 따라서 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내의 파일을 처리하는 방법은 해당 자산이 프로필로 처리되는 방식에 큰 영향을 줍니다.
+Dynamic Media 이미지 프로필 또는 비디오 프로필 사용과 관련된 중요한 개념은 폴더에 할당된다는 것입니다. 프로필 내에는 이미지나 비디오에 대한 설정이 있습니다. 이러한 설정은 하위 폴더와 함께 폴더의 컨텐츠를 처리합니다. 따라서 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내의 파일을 처리하는 방법은 해당 자산이 프로필로 처리되는 방식에 큰 영향을 줍니다.
 
 일관되고 적절한 파일 및 폴더 이름 지정 전략을 사용하고 적절한 메타데이터 방법을 사용하여 디지털 에셋 컬렉션을 최대한 활용하고 적합한 프로필을 통해 올바른 파일을 처리할 수 있습니다.
 
-비디오, 메타데이터 및 이미지 [를 처리하기 위한 프로필을 참조하십시오](processing-profiles.md).
+Dynamic Media [이미지 프로필 및 비디오 프로필 정보를 참조하십시오](about-image-video-profiles.md).
 
 다음은 디지털 에셋 파일을 구성하기 위한 모범 사례입니다.
 
