@@ -2,10 +2,10 @@
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 98%
 + 자산 구성, 관리 및 확장 {#admin}
    + [API 및 참조 자료](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
-   + [처리 프로필](/help/assets/dynamic-media/processing-profiles.md)
+   + [처리 프로필](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [스마트 태그 구성](smart-tags-configuration.md)
    + [다국어 자산 및 자산 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
