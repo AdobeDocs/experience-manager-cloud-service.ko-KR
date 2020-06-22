@@ -1,16 +1,16 @@
 ---
-title: 비디오 프로필
+title: Dynamic Media 비디오 프로필
 description: Dynamic Media은 미리 정의된 응용 비디오 인코딩 프로필을 제공합니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하기 위해 최적화되어 있습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '3678'
+source-wordcount: '3682'
 ht-degree: 3%
 
 ---
 
 
-# Video profiles{#video-profiles}
+# Dynamic Media 비디오 프로필{#video-profiles}
 
 Dynamic Media은 미리 정의된 응용 비디오 인코딩 프로필을 제공합니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하기 위해 최적화되어 있습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩할 때 재생 중에 비디오 플레이어는 고객의 인터넷 연결 속도에 따라 비디오 스트림의 품질을 자동으로 조정합니다. 이를 적응형 스트리밍이라고 합니다.
 
@@ -34,11 +34,11 @@ Dynamic Media은 미리 정의된 응용 비디오 인코딩 프로필을 제공
 >
 >메타데이터는 자산을 검색할 때 유용합니다. 축소판은 인코딩 중 생성된 정적 비디오 이미지입니다. AEM 시스템에서 이러한 요구 사항을 충족해야 하며 사용자 인터페이스에서 카드 보기, 검색 결과 보기 및 자산 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 됩니다. 인코딩된 비디오의 표현물 아이콘(페인터의 팔레트)을 누르면 생성된 축소판이 표시됩니다.
 
-비디오 프로필 만들기가 완료되면 폴더 또는 여러 폴더에 적용합니다. See [Applying a video profile to folders.](#applying-a-video-profile-to-folders)
+비디오 프로필 작성을 마치면 폴더 또는 여러 폴더에 적용합니다. See [Applying a Video Profile to folders.](#applying-a-video-profile-to-folders)
 
 다른 자산 유형에 대한 고급 처리 매개 변수를 정의하려면 자산 처리 [구성을 참조하십시오](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-메타데이터, [이미지 및 비디오를 처리하기 위한 프로필을 참조하십시오](/help/assets/dynamic-media/processing-profiles.md).
+메타데이터, [이미지 및 비디오를 처리하기 위한 프로필을 참조하십시오](/help/assets/dynamic-media/about-image-video-profiles.md).
 
 ## 적응형 비디오 인코딩 사전 설정 {#adaptive-video-encoding-presets}
 
@@ -89,7 +89,7 @@ Dynamic Media은 미리 정의된 응용 비디오 인코딩 프로필을 제공
  </tbody>
 </table>
 
-## About using smart crop in video profiles {#about-smart-crop-video}
+## About using smart crop in Video Profiles {#about-smart-crop-video}
 
 비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오 스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자르는 도구입니다.
 
@@ -113,11 +113,11 @@ Adobe Sensei는 현재 9,000프레임으로 제한됩니다. 즉, 30FPS로 5분 
 
 ![스마트 자르기 기능을 사용하여 비디오 인코딩 프로필 편집](assets/edit-smart-crop-video2.png)
 
-사용자 인터페이스에서 슬라이더를 사용하여 **[!UICONTROL 스마트 자르기 비율의 맨 오른쪽에 있는 비디오 스마트 자르기]** 기능을 켜거나 끌 수 있습니다.
+사용자 인터페이스에서 **[!UICONTROL 스마트 자르기 비율의 맨 오른쪽에 있는 슬라이더를 사용하여 비디오 프로필의 비디오 스마트 자르기를 켜거나 끌]** 수 있습니다.
 
 비디오 프로필을 만들고 저장한 후 원하는 폴더에 적용할 수 있습니다.
 
-특정 폴더에 [비디오 프로필 적용](#applying-video-profiles-to-specific-folders) 또는 [전역](#applying-a-video-profile-globally)비디오 프로필 적용을 참조하십시오.
+특정 폴더에 [비디오 프로필 적용](#applying-video-profiles-to-specific-folders) 또는 [전역 비디오 프로필 적용을 참조하십시오](#applying-a-video-profile-globally).
 
 이미지를 [위한 스마트 자르기를 참조하십시오](image-profiles.md).
 
@@ -184,7 +184,7 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
 
 1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장을]** 다시 눌러 프로필을 저장합니다.
 
-이제 비디오가 포함된 폴더에 프로필을 적용할 수 있습니다. 폴더 [에 비디오 프로필 적용](#applying-a-video-profile-to-folders) 또는 [전역 비디오 프로필 적용을 참조하십시오](#applying-a-video-profile-globally).
+이제 비디오가 포함된 폴더에 프로필을 적용할 수 있습니다. 폴더 [에 비디오 프로필 적용](#applying-a-video-profile-to-folders) 또는 전역 [비디오 프로필 적용을 참조하십시오](#applying-a-video-profile-globally).
 
 ## 점진적 스트리밍을 위한 비디오 프로필 만들기 {#creating-a-video-encoding-profile-for-progressive-streaming}
 
@@ -237,7 +237,7 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
 
 1. 페이지의 오른쪽 맨 위에서 **[!UICONTROL 저장을]** 눌러 프로필을 저장합니다.
 
-이제 비디오가 포함된 폴더에 프로필을 적용할 수 있습니다. 폴더 [에 비디오 프로필 적용](#applying-a-video-profile-to-folders) 또는 [전역 비디오 프로필 적용을 참조하십시오](#applying-a-video-profile-globally).
+이제 비디오가 포함된 폴더에 프로필을 적용할 수 있습니다. 폴더 [에 비디오 프로필 적용](#applying-a-video-profile-to-folders) 또는 전역 [비디오 프로필 적용을 참조하십시오](#applying-a-video-profile-globally).
 
 ## 사용자 요구에 맞게 추가된 비디오 인코딩 매개 변수 사용 {#using-custom-added-video-encoding-parameters}
 
@@ -318,7 +318,7 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
 **비디오 프로필을 편집하려면 다음을 수행하십시오**.
 
 1. AEM 로고를 누르고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]** 으로 **[!UICONTROL 이동합니다]**.
-1. 비디오 프로필 페이지에서 비디오 프로필 이름을 하나 선택합니다.
+1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 편집을 누릅니다]**.
 1. 비디오 인코딩 프로필 페이지에서 원하는 대로 이름과 설명을 편집합니다.
 1. 적응형 스트리밍을 위해 **[!UICONTROL 인코딩]** 확인란이 선택되어 있는지 확인하는 것이 좋습니다.
@@ -332,12 +332,12 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
 ### 비디오 프로필 복사 {#copying-a-video-encoding-profile}
 
 1. AEM 로고를 누르고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]** 으로 **[!UICONTROL 이동합니다]**.
-1. 비디오 프로필 페이지에서 비디오 프로필 이름을 하나 선택합니다.
+1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 복사를 누릅니다]**.
 1. 비디오 인코딩 프로필 페이지에서 프로필의 새 이름을 입력합니다.
 1. 적응형 스트리밍을 위해 **[!UICONTROL 인코딩]** 확인란이 선택되어 있는지 확인하는 것이 좋습니다. 적응형 스트리밍에 대한 설명을 보려면 정보 아이콘을 누릅니다. 점진적 비디오 프로필을 복사하는 경우 확인란을 선택하지 마십시오.
 
-   Dynamic Media - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필의 일부인 경우 모든 사전 설정이 MP4여야 하므로 **[!UICONTROL 적응형 스트리밍을]** 위해 인코딩할 수 없습니다.
+   Dynamic Media - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필의 일부인 경우 모든 사전 설정이 MP4여야 하므로 응용 스트리밍을 **** 위해 인코딩할 수 없습니다.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
 
    권장 설정 및 설명을 보려면 기본 및 고급 탭의 각 옵션 옆에 있는 정보 아이콘을 누릅니다.
@@ -363,15 +363,15 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
 
 특정 폴더 또는 모든 자산에 전역으로 비디오 프로필을 적용할 수 있습니다.
 
-나중에 변경한 기존 비디오 프로필이 이미 있는 폴더의 에셋을 다시 처리할 수 있습니다. 폴더에서 [자산 재처리를 참조하십시오](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+나중에 변경한 기존 비디오 프로필이 이미 있는 폴더의 에셋을 다시 처리할 수 있습니다. 폴더에서 [자산 재처리를 참조하십시오](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 ### 특정 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-specific-folders}
 
-[ **[!UICONTROL 도구] 메뉴 내에서 또는 폴더에 있는 경우 [속성]에서]** 비디오 프로필을 폴더에 적용할 수 **[!UICONTROL 있습니다]**. 이 섹션에서는 두 가지 방법으로 폴더에 비디오 프로필을 적용하는 방법을 설명합니다.
+[ **[!UICONTROL 도구] 메뉴 내에서 또는 폴더에 있는 경우 []** 속성 **에서 폴더에 비디오 프로필을]**&#x200B;적용할 수 있습니다. 이 섹션에서는 두 가지 방법으로 폴더에 비디오 프로필을 적용하는 방법을 설명합니다.
 
 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+See also [Reprocessing assets in a folder after you have edited its processing profile](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 #### 프로필 사용자 인터페이스를 통해 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
@@ -392,9 +392,9 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 폴더에 프로필을 적용하는 것 외에도 AEM 자산에 업로드된 모든 콘텐츠가 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
 
-폴더에서 [자산 재처리를 참조하십시오](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+폴더에서 [자산 재처리를 참조하십시오](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**비디오 프로필을 전체적으로 적용하려면**,
+**비디오 프로필을 전역적으로 적용하려면**,
 
 * 다음 노드로 CRXDE Lite로 이동합니다. `/content/dam/jcr:content`. 속성을 추가하고 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 모두 **[!UICONTROL 저장을 누릅니다]**.
 
@@ -409,9 +409,9 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 ## 폴더에서 비디오 프로필 제거 {#removing-a-video-profile-from-folders}
 
-폴더에서 비디오 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 프로필 제거를 자동으로 상속합니다. 그러나 폴더 내에서 발생한 파일 처리는 그대로 유지됩니다.
+폴더에서 비디오 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 자동으로 프로필 제거를 상속합니다. 그러나 폴더 내에서 발생한 파일 처리는 그대로 유지됩니다.
 
-[ **[!UICONTROL 도구]** ] 메뉴 내의 폴더에서 또는 폴더에 있는 경우 [폴더 설정]에서 비디오 프로필을 **[!UICONTROL 제거할 수 있습니다]**. 이 섹션에서는 폴더에서 비디오 프로필을 제거하는 방법을 설명합니다.
+[ **[!UICONTROL 도구]** ] 메뉴 내의 폴더에서 또는 폴더에 있는 경우 **[!UICONTROL 폴더 설정]**&#x200B;에서 비디오 프로필을 제거할 수 있습니다. 이 섹션에서는 폴더에서 비디오 프로필을 제거하는 방법을 설명합니다.
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 비디오 프로필 제거 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
@@ -419,11 +419,11 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 1. 폴더 또는 여러 폴더에서 제거할 비디오 프로필을 선택합니다.
 1. 폴더에서 **[!UICONTROL 프로필]** 제거를 누르고 프로필을 제거하는 데 사용할 폴더 또는 여러 폴더를 선택한 다음 제거를 **[!UICONTROL 누릅니다]**.
 
-   이름이 폴더 이름 아래에 더 이상 나타나지 않으므로 비디오 프로필이 더 이상 폴더에 적용되지 않음을 확인할 수 있습니다.
+   이름이 폴더 이름 아래에 더 이상 나타나지 않으므로 비디오 프로필이 더 이상 폴더에 적용되지 않도록 확인할 수 있습니다.
 
 ### 속성을 통해 폴더에서 비디오 프로필 제거 {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 자산으로]** 이동한 다음 비디오 프로필을 제거할 폴더로 이동합니다.
+1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 자산]** 으로 이동한 다음 비디오 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 누르거나 클릭하여 선택한 다음 속성 **을 탭하거나 클릭합니다**.
 1. [ **[!UICONTROL 비디오 프로필]** ] 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]** 을 선택한 다음 **[!UICONTROL 저장 및]**&#x200B;닫기를 클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
