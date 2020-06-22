@@ -3,7 +3,7 @@ title: 메타데이터 프로필
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 1%
@@ -15,12 +15,6 @@ ht-degree: 1%
 
 메타데이터 프로필을 사용하면 폴더 내의 자산에 기본 메타데이터를 적용할 수 있습니다. 메타데이터 프로필을 만들어 폴더에 적용합니다. 나중에 폴더에 업로드하는 모든 자산은 메타데이터 프로필에 구성된 기본 메타데이터를 상속받습니다.
 
-<!-- See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
-
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
-
--->
-
 ## 메타데이터 프로필 추가 {#adding-a-metadata-profile}
 
 1. AEM 로고를 누르고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필로]**&#x200B;이동한 다음 **[!UICONTROL 만들기를 탭합니다]**.
@@ -31,7 +25,7 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
    * **[!UICONTROL 필드 레이블]** - 메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
    * **[!UICONTROL 속성에 매핑]** - 이 속성의 값은 저장소에 저장된 자산 노드에 대한 상대 경로/이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 있음을 `./` 나타내므로 항상 다음으로 시작해야 합니다.
 
-      속성에 **[!UICONTROL 매핑에 지정하는]** 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우 `/jcr:content/metadata/dc:desc` 속성에 **[!UICONTROL 매핑의 이름으로]**, AEM Assets는 자산의 메타데이터 노드 `dc:desc` 에 값을 저장합니다.
+      속성에 **[!UICONTROL 매핑에 지정하는]** 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우 `/jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, AEM Assets은 자산의 메타데이터 노드 `dc:desc` 에 값을 저장합니다.
 
    * **[!UICONTROL 기본값]** - 이 속성을 사용하여 메타데이터 구성 요소의 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드 `dc:desc` 에 있는 속성에 할당됩니다.
 
