@@ -3,9 +3,9 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
+source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1875'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 자산 처리는 기본 설정을 제공하고 관리자가 보다 구체적인 자산 처리 구성을 추가할 수 있도록 **[!UICONTROL 해주는 처리]**&#x200B;프로필의 구성에 따라 다릅니다. 관리자는 사용자 정의 옵션을 포함하여 사후 처리 워크플로우의 구성을 만들고 유지 관리할 수 있습니다. 사용자 정의 워크플로우를 통해 확장 및 사용자 정의
 
-에셋 마이크로서비스를 사용하면 이전 버전의 Adobe Experience Manager보다 [다양한 포맷을](/help/assets/file-format-support.md) 간편하게 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
+에셋 마이크로서비스를 사용하면 이전 버전의 Experience Manager에서 가능한 것보다 더 많은 포맷을 즉시 포함하는 [다양한 파일 유형을](/help/assets/file-format-support.md) 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -57,7 +57,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 기본 구성 {#default-config}
 
-기본 구성으로 표준 처리 프로필만 구성됩니다. 표준 처리 프로필은 사용자 인터페이스에 표시되지 않으며 수정할 수 없습니다. 업로드된 자산을 처리하기 위해 항상 실행합니다. 표준 처리 프로필에서는 Experience Manager에 필요한 모든 기본 처리가 모든 자산에 대해 완료되도록 합니다.
+기본 구성으로 표준 처리 프로필만 구성됩니다. 표준 처리 프로필은 사용자 인터페이스에 표시되지 않으며 수정할 수 없습니다. 업로드된 자산을 처리하기 위해 항상 실행합니다. 표준 처리 프로필은 Experience Manager에 필요한 모든 기본 처리가 모든 자산에 대해 완료되도록 합니다.
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
@@ -105,13 +105,13 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 #### 특수 FPO 변환 {#special-fpo-rendition}
 
-AEM의 큰 자산을 Adobe InDesign 문서로 가져올 때 크리에이티브 전문가는 자산을 [배치한 후 상당한 시간을 기다려야 합니다](https://helpx.adobe.com/indesign/using/placing-graphics.html). 반면 사용자는 InDesign을 사용할 수 없습니다. 크리에이티브 흐름을 가로막으며 사용자 경험에 부정적인 영향을 줍니다. Adobe는 InDesign 문서에서 작은 크기의 변환을 임시로 배치함으로써 나중에 전체 해상도 에셋으로 대체될 수 있습니다. Adobe Experience Manager는 배치 전용(FPO)에 사용되는 변환을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 종횡비가 동일합니다.
+AEM의 큰 자산을 Adobe InDesign 문서로 가져올 때 크리에이티브 전문가는 자산을 [배치한 후 상당한 시간을 기다려야 합니다](https://helpx.adobe.com/indesign/using/placing-graphics.html). 반면 사용자는 InDesign을 사용할 수 없습니다. 크리에이티브 흐름을 가로막으며 사용자 경험에 부정적인 영향을 줍니다. Adobe는 InDesign 문서에서 작은 크기의 변환을 임시로 배치함으로써 나중에 전체 해상도 에셋으로 대체될 수 있습니다. Experience Manager은 배치 전용(FPO)에 사용되는 변환을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 종횡비가 동일합니다.
 
 처리 프로필에는 FPO(배치에만 해당) 변환이 포함될 수 있습니다. 처리 프로필에 맞게 설정해야 하는지 확인하려면 Adobe Asset Link [설명서를](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 참조하십시오. 자세한 내용은 [Adobe Asset Link 전체 설명서를 참조하십시오](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html).
 
 ## 에셋 마이크로서비스를 사용하여 에셋 처리 {#use-asset-microservices}
 
-이러한 폴더에 업로드되거나 업데이트된 자산에 대해 Experience Manager가 처리하도록 추가 사용자 지정 처리 프로필을 만들어 특정 폴더에 적용합니다. 기본 내장 표준 처리 프로필은 항상 실행되지만 사용자 인터페이스에 표시되지 않습니다. 사용자 지정 프로필을 추가하는 경우 두 프로필 모두 업로드된 자산을 처리하는 데 사용됩니다.
+추가 사용자 정의 처리 프로필을 만들어 Experience Manager의 특정 폴더에 적용하여 이러한 폴더에 업로드되거나 업데이트된 자산에 대해 처리합니다. 기본 내장 표준 처리 프로필은 항상 실행되지만 사용자 인터페이스에 표시되지 않습니다. 사용자 지정 프로필을 추가하는 경우 두 프로필 모두 업로드된 자산을 처리하는 데 사용됩니다.
 
 두 가지 방법으로 폴더에 처리 프로필을 적용할 수 있습니다.
 
@@ -126,7 +126,7 @@ AEM의 큰 자산을 Adobe InDesign 문서로 가져올 때 크리에이티브 �
 
 >[!NOTE]
 >
->에셋이 폴더에 업로드되면 Experience Manager는 포함된 폴더의 속성이 처리 프로필인지 확인합니다. 적용된 처리 프로필이 없을 경우 적용된 처리 프로필을 찾을 때까지 폴더 트리에서 위로 이동하고 자산에 사용합니다. 즉, 폴더에 적용된 처리 프로필은 전체 트리에서 작동하지만 하위 폴더에 다른 프로필이 적용된 경우 오버레이될 수 있습니다.
+>에셋이 폴더에 업로드되면 Experience Manager은 포함된 폴더의 속성에 처리 프로필이 있는지 확인합니다. 적용된 처리 프로필이 없을 경우 적용된 처리 프로필을 찾을 때까지 폴더 트리에서 위로 이동하고 자산에 사용합니다. 즉, 폴더에 적용된 처리 프로필은 전체 트리에서 작동하지만 하위 폴더에 다른 프로필이 적용된 경우 오버레이될 수 있습니다.
 
 사용자는 처리가 완료된 새로 업로드된 자산을 열고, 자산 미리 보기를 열고, 왼쪽 레일의 **[!UICONTROL 표현물]** 보기를 클릭하여 처리가 실제로 이루어졌는지 확인할 수 있습니다. 특정 자산의 유형이 MIME 유형 포함 규칙과 일치하는 처리 프로필의 특정 변환을 확인하고 액세스할 수 있어야 합니다.
 
@@ -136,20 +136,18 @@ AEM의 큰 자산을 Adobe InDesign 문서로 가져올 때 크리에이티브 �
 
 처리 프로필을 사용하여 얻을 수 없는 자산의 추가 처리가 필요한 경우 추가 사후 처리 워크플로우를 구성에 추가할 수 있습니다. 이를 통해 자산 마이크로 서비스를 사용하여 구성 가능한 처리 위에 완전히 사용자 정의된 처리를 추가할 수 있습니다.
 
-사후 처리 워크플로우는 구성된 경우 마이크로서비스 처리가 완료된 후 AEM에서 자동으로 실행됩니다. 워크플로우 런터을 수동으로 추가하여 트리거할 필요가 없습니다.
+사후 처리 워크플로우는 구성된 경우 마이크로서비스 처리가 완료된 후 AEM에서 자동으로 실행됩니다. 워크플로우 런터을 수동으로 추가하여 트리거할 필요가 없습니다. 이러한 예는 다음과 같습니다.
 
-예:
+* 자산을 처리하는 사용자 정의 워크플로우 단계
+* 제품 또는 프로세스 정보 등 외부 시스템의 자산에 메타데이터 또는 속성을 추가하는 통합
+* 외부 서비스에서 수행한 추가 처리.
 
-* 자산 처리를 위한 사용자 정의 워크플로우 단계(예: 전용 파일 포맷에서 변환을 생성하는 Java 코드)
-* 통합으로 외부 시스템의 자산(예: 제품 또는 프로세스 정보)에 메타데이터나 속성을 추가할 수 있습니다.
-* 외부 서비스에서 수행한 추가 처리
+Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단계로 구성됩니다.
 
-Experience Manager에 사후 처리 워크플로우 구성을 추가하는 방법은 다음 단계로 구성됩니다.
-
-* 하나 이상의 워크플로우 모델 만들기 이를 &quot;사후 처리 워크플로우 모델&quot;이라고 부르지만 일반적인 AEM 워크플로우 모델입니다.
-* 이러한 모델에 특정 워크플로우 단계 추가 이러한 단계는 워크플로우 모델 구성에 따라 자산에 대해 실행됩니다.
-* 이러한 모델의 마지막 단계가 `DAM Update Asset Workflow Completed Process` 단계여야 합니다. AEM에서 처리가 끝났음을 알고 자산이 처리됨으로 표시되도록 하려면 필요합니다(&quot;새로 만들기&quot;).
-* 경로(폴더 위치) 또는 정규 표현식 기준으로 사후 처리 워크플로우 모델의 실행을 구성할 수 있는 사용자 지정 워크플로우 러너 서비스에 대한 구성 만들기
+* 하나 이상의 워크플로우 모델을 만들 수 있습니다. 이 문서에는 *사후 처리 워크플로우 모델로*&#x200B;언급되어 있지만 일반 Experience Manager 워크플로우 모델입니다.
+* 이러한 모델에 특정 워크플로우 단계를 추가합니다. 이 단계는 워크플로우 모델 구성에 따라 자산에 대해 실행됩니다.
+* DAM [!UICONTROL 자산 업데이트 워크플로우 완료 프로세스] 추가 단계가 마지막에 표시됩니다. 이 단계를 추가하면 Experience Manager이 처리가 끝나는 시점을 알 수 있고 자산이 처리된 것으로 표시할 수 있으며, 즉 *새* 값이 자산에 표시됩니다.
+* 경로(폴더 위치) 또는 정규 표현식을 통해 사후 처리 워크플로우 모델의 실행을 구성할 수 있는 사용자 지정 워크플로우 러너 서비스에 대한 구성을 만듭니다.
 
 ### 사후 처리 워크플로우 모델 만들기 {#create-post-processing-workflow-models}
 
@@ -157,7 +155,7 @@ Experience Manager에 사후 처리 워크플로우 구성을 추가하는 방�
 
 필요에 따라 처리 단계를 추가해야 합니다. 지원되는 모든 단계와 사용자 요구에 맞게 구현된 워크플로우 단계를 사용할 수 있습니다.
 
-각 사후 처리 워크플로우의 마지막 단계가 올바른지 확인하십시오 `DAM Update Asset Workflow Completed Process`. 마지막 단계는 Experience Manager가 자산 처리가 완료되는 시기를 파악하는 데 도움이 됩니다.
+각 사후 처리 워크플로우의 마지막 단계가 올바른지 확인하십시오 `DAM Update Asset Workflow Completed Process`. 마지막 단계는 자산 처리가 완료되는 시기를 Experience Manager이 알 수 있도록 도와줍니다.
 
 ### 사후 처리 워크플로우 실행 구성 {#configure-post-processing-workflow-execution}
 
@@ -170,7 +168,7 @@ Experience Manager에 사후 처리 워크플로우 구성을 추가하는 방�
 
 >[!NOTE]
 >
->사용자 지정 워크플로우 러너의 구성은 OSGi 서비스의 구성입니다. OSGi [구성](/help/implementing/deploying/overview.md) 배포 방법에 대한 자세한 내용은 Experience Manager에 배포를 참조하십시오.
+>사용자 지정 워크플로우 러너의 구성은 OSGi 서비스의 구성입니다. OSGi 구성 [을 배포하는 방법에 대한 자세한 내용은 Experience Manager](/help/implementing/deploying/overview.md) 배포를 참조하십시오.
 > AEM의 온프레미스 및 관리 서비스 배포와 달리 OSGi 웹 콘솔은 클라우드 서비스 배포에서 직접 사용할 수 없습니다.
 
 사후 처리 워크플로우에서 사용할 수 있는 표준 워크플로우 단계에 대한 자세한 내용은 개발자 참조에서 [사후 처리 워크플로우의](developer-reference-material-apis.md#post-processing-workflows-steps) 워크플로우 단계를 참조하십시오.
