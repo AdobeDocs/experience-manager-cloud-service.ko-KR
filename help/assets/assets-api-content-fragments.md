@@ -1,10 +1,10 @@
 ---
-title: Assets HTTP API에서 클라우드 서비스 콘텐츠 조각 지원으로서의 Adobe Experience Manager
-description: Assets HTTP API에서 클라우드 서비스 콘텐츠 조각 지원으로서 Adobe Experience Manager에 대해 학습합니다.
+title: 자산 HTTP API에서 Cloud Service 컨텐츠 조각 지원으로서의 Adobe Experience Manager
+description: 자산 HTTP API의 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1891'
 ht-degree: 2%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 2%
 >
 에셋 HTTP API의 현재 구현은 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 아키텍처 스타일을 기반으로 합니다.
 
-Assets REST API를 [](/help/assets/mac-api-assets.md) 사용하면 Adobe Experience Manager의 클라우드 서비스 개발자는 CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 AEM에 저장된 컨텐츠에 액세스할 수 있습니다.
+Assets REST API를 [](/help/assets/mac-api-assets.md) 사용하면 Cloud Service 개발자는 CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 AEM에 저장된 컨텐츠에 액세스할 수 있습니다.
 
-API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공함으로써 Adobe Experience Manager를 헤드리스 CMS(Content Management System)로 클라우드 서비스로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 기타 애플리케이션입니다.
+API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공함으로써 Adobe Experience Manager을 헤드리스 CMS(Content Management System)로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 기타 애플리케이션입니다.
 
 예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 정의 등은 HTTP API를 통해 제공되는 컨텐츠가 종종 JSON 형식으로 필요합니다.
 
@@ -49,7 +49,7 @@ AEM [Core 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-c
 
 ## 전제 조건 {#prerequisites}
 
-Assets REST API는 최신 Adobe Experience Manager를 클라우드 서비스 버전으로 즉시 설치할 때마다 사용할 수 있습니다.
+Assets REST API는 최신 Adobe Experience Manager을 Cloud Service 버전으로 즉시 설치할 때마다 사용할 수 있습니다.
 
 ## 주요 개념 {#key-concepts}
 
@@ -75,7 +75,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 * **GET** - 자산 또는 폴더의 JSON 표현 가져오기
 * **POST** - 새 자산 또는 폴더를 만들려면
 * **PUT** - 자산 또는 폴더의 속성을 업데이트하려면
-* **삭제** - 자산 또는 폴더를 삭제하려면
+* **DELETE** - 자산 또는 폴더 삭제
 
 >[!NOTE]
 >
@@ -348,11 +348,10 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
    다음은 이 오류 상태가 반환되는 일반적인 시나리오와 생성된 오류 메시지(고정 공간)를 함께 나열합니다.
 
    * 상위 폴더가 없습니다(다음을 통해 컨텐츠 조각을 만들 때). `POST`
-   * 제공된 컨텐츠 조각 모델이 없거나(cq:model이 없습니다), 읽을 수 없거나(잘못된 경로 또는 권한 문제) 올바른 조각 모델/템플릿이 없습니다.
+   * 제공된 컨텐츠 조각 모델이 없거나(cq:model이 없습니다), 읽을 수 없거나(잘못된 경로 또는 권한 문제) 올바른 조각 모델이 없습니다.
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * 콘텐츠 조각을 만들 수 없습니다(권한 문제가 있을 수 있음).
 
       * `Could not create content fragment`
