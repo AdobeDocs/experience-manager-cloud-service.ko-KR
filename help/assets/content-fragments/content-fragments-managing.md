@@ -2,9 +2,9 @@
 title: 콘텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1454'
 ht-degree: 2%
 
 ---
@@ -22,24 +22,19 @@ ht-degree: 2%
 
 ### 컨텐츠 모델 만들기 {#creating-a-content-model}
 
-
 [구조화된 컨텐츠로 컨텐츠 조각을 생성하기 전에 컨텐츠 조각 모델을](/help/assets/content-fragments/content-fragments-models.md) 활성화하고 생성할 수 있습니다.
 
 ### 컨텐츠 조각 만들기 {#creating-a-content-fragment}
 
-컨텐츠 조각을 만드는 방법은(기본적으로) 단순 조각과 구조화된 조각 모두에 대해 동일합니다.
+컨텐츠 조각을 만드는 방법은 다음과 같습니다.
 
 1. 조각을 **만들 자산** 폴더로 이동합니다.
 2. 만들기 **를**&#x200B;선택한 다음 **컨텐츠 조각** 을 선택하여 마법사를 엽니다.
 3. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
-   * 다음과 같습니다.
+   * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 생성하는 데 사용됩니다. 예: **Adventure** model
 
-      * 단순 **조각** 템플릿
-
-      * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 생성하는 데 사용됩니다. 예를 들어 **공항** 모델
-
-         * 사용 가능한 모든 모델이 표시됩니다.
+      * 사용 가능한 모든 모델이 표시됩니다.
 
    선택 후 **다음을** 사용하여 진행하십시오.
 
