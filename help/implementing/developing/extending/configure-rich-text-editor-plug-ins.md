@@ -1,12 +1,12 @@
 ---
-title: 리치 텍스트 편집기 플러그인 구성
-description: 개별 기능을 사용하도록 AEM 리치 텍스트 편집기 플러그인을 구성하는 방법에 대해 학습합니다.
+title: 리치 텍스트 편집기 플러그인을 구성합니다 [!DNL Adobe Experience Manager].
+description: 리치 텍스트 편집기 플러그인 [!DNL Adobe Experience Manager] 을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 78f1e6427d5918639e56a89ca1f94fc402e34fee
+source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4301'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ RTE 기능은 기능 속성이 있는 일련의 플러그인을 통해 제공됩
 
 플러그인을 활성화하려면 다음 단계를 수행합니다. 일부 단계는 해당 노드가 없으므로 처음으로 플러그인을 구성할 때만 필요합니다.
 
-기본적으로, `format`, `link``list`, `justify`및 플러그인과 `control` 모든 기능이 RTE에서 활성화됩니다.
+기본적으로 `format`, `link``list`, `justify`및 플러그인과 `control` 모든 기능이 RTE에서 활성화됩니다.
 
 >[!NOTE]
 >
@@ -60,11 +60,11 @@ RTE 기능은 기능 속성이 있는 일련의 플러그인을 통해 제공됩
 
 플러그인을 활성화한 후 다음 지침에 따라 속성을 `features` 구성합니다.
 
-|  | 모든 기능 사용 | 몇 가지 특정 기능 사용 | 모든 기능 비활성화 |
+|  | 모든 기능 사용 | 몇 가지 특정 기능을 활성화합니다. | 모든 기능을 비활성화합니다. |
 |---|---|---|---|
 | 이름 | features | features | features |
-| 유형 | 문자열 | 문자열[] (다중 문자열; 유형을 문자열로 설정하고 CRXDE Lite에서 멀티를 클릭합니다.) | 문자열 |
-| 값 | `*` (별표) | 하나 이상의 피쳐 값으로 설정 | - |
+| 유형 | 문자열 | `String` (multi-string; CRXDE Lite `String` 에서 유형 설정 `Multi` 및 클릭) | 문자열 |
+| 값 | `*` (별표) | 하나 이상의 피쳐 값으로 설정합니다. | - |
 
 ## finderplace 플러그인 이해 {#findreplace}
 
@@ -72,7 +72,7 @@ RTE 기능은 기능 속성이 있는 일련의 플러그인을 통해 제공됩
 
 바꾸기 기능을 사용할 때는 바꿀 대체 문자열을 찾기 문자열과 동시에 입력해야 합니다. 그래도 찾기 를 클릭하여 문자열을 교체하기 전에 검색할 수 있습니다. 찾기를 클릭한 후 대체 문자열을 입력하면 검색이 텍스트 시작으로 재설정됩니다.
 
-찾기 및 바꾸기 대화 상자는 찾기를 클릭하면 투명하게 되고 바꾸기를 클릭하면 불투명해집니다. 이를 통해 작성자는 작성자가 대체할 텍스트를 검토할 수 있습니다. 사용자가 모두 바꾸기를 클릭하면 대화 상자가 닫히고 교체 수가 표시됩니다.
+찾기 및 바꾸기 대화 상자는 찾기를 클릭하면 투명하게 되고 바꾸기를 클릭하면 불투명해집니다. 이 동작을 통해 작성자는 바꿀 텍스트를 검토할 수 있습니다. 사용자가 모두 바꾸기를 클릭하면 대화 상자가 닫히고 교체 수가 표시됩니다.
 
 ## 붙여넣기 모드 구성 {#pastemodes}
 
@@ -80,7 +80,7 @@ RTE를 사용할 때 작성자는 다음 세 가지 모드 중 하나에 컨텐�
 
 * **브라우저 모드**: 브라우저의 기본 붙여넣기 구현을 사용하여 텍스트를 붙여넣습니다. 원하지 않는 마크업을 도입할 수 있으므로 권장하지 않습니다.
 
-* **일반 텍스트 모드**: 클립보드 내용을 일반 텍스트로 붙여넣습니다. AEM 구성 요소에 삽입하기 전에 복사한 컨텐츠에서 스타일 및 서식 요소의 모든 요소를 제거합니다.
+* **일반 텍스트 모드**: 클립보드 내용을 일반 텍스트로 붙여넣습니다. 구성 요소에 삽입하기 전에 복사한 컨텐츠에서 스타일과 서식 요소의 모든 요소를 [!DNL Experience Manager] 제거합니다.
 
 * **MS Word 모드**: 표를 포함한 텍스트를 MS Word에서 복사할 때 서식과 함께 붙여넣습니다. 웹 페이지 또는 MS Excel과 같은 다른 소스에서 텍스트를 복사하고 붙여넣는 것은 지원되지 않으며 부분 서식만 유지합니다.
 
@@ -108,29 +108,29 @@ RTE 도구 모음에서 이러한 세 가지 아이콘 중 일부, 전체 또는
 
 * 브라우저의 기본 붙여넣기 구현을 사용하여 텍스트를 붙여넣습니다. 원하지 않는 마크업을 도입할 수 있으므로 권장하지 않습니다. 아래를 사용하여 `browser` 구성합니다.
 
-* 클립보드 내용을 일반 텍스트로 붙여넣습니다. AEM 구성 요소에 삽입하기 전에 복사한 컨텐츠에서 스타일 및 서식 요소의 모든 요소를 제거합니다. 아래를 사용하여 `plaintext` 구성합니다.
+* 클립보드 내용을 일반 텍스트로 붙여넣습니다. 구성 요소에 삽입하기 전에 복사한 컨텐츠에서 스타일과 서식 요소의 모든 요소를 [!DNL Experience Manager] 제거합니다. 아래를 사용하여 `plaintext` 구성합니다.
 
 * 표를 포함한 텍스트를 MS Word에서 복사할 때 서식과 함께 붙여넣습니다. 웹 페이지 또는 MS Excel과 같은 다른 소스에서 텍스트를 복사하고 붙여넣는 것은 지원되지 않으며 부분 서식만 유지합니다. 아래를 사용하여 `wordhtml` 구성합니다.
 
-1. 구성 요소에서 `<rtePlugins-node>/edit` 노드로 이동합니다. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 구성 요소에서 `<rtePlugins-node>/edit` 노드로 이동합니다. 노드가 없으면 노드를 생성합니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
 1. 노드에서 `edit` 다음 세부 사항을 사용하여 속성을 만듭니다.
 
    * **이름** `defaultPasteMode`
    * **유형** `String`
-   * **값** 필수 붙여넣기 모드 `browser``plaintext`또는 `wordhtml`중 하나입니다.
+   * **값** 은 `browser`, `plaintext`또는 `wordhtml` 모드에서 필요한 붙여넣기 모드 중 하나입니다.
 
 ### 컨텐츠를 붙여넣을 때 허용되는 형식 구성 {#pasteformats}
 
-Microsoft Word와 같은 다른 프로그램에서 AEM에서 붙여넣을 때 허용되는 스타일을 명시적으로 정의할 수 있도록 붙여넣기-Microsoft-Word(`paste-wordhtml`) 모드를 추가로 구성할 수 있습니다.
+붙여넣기-as-Microsoft-Word(`paste-wordhtml`) 모드는 추가 구성할 수 있으므로 다른 프로그램(예: [!DNL Experience Manager] 다른 프로그램)에서 붙여넣을 때 몇 가지 스타일을 명시적으로 허용할 수 있습니다 [!DNL Microsoft Word].
 
-예를 들어 AEM에서 붙여넣을 때 굵게 표시된 형식 및 목록만 허용해야 하는 경우 다른 형식을 필터링할 수 있습니다. 이를 구성 가능한 붙여넣기 필터라고 하며 두 가지 모두에 대해 수행할 수 있습니다.
+예를 들어 붙여넣을 때 굵게 표시된 형식 및 목록만 허용해야 하는 경우 다른 형식 [!DNL Experience Manager]을 필터링할 수 있습니다. 이를 구성 가능한 붙여넣기 필터라고 하며 두 가지 모두에 대해 수행할 수 있습니다.
 
 * [텍스트](#pastemodes)
 * [링크](#linkstyles)
 
 링크의 경우 자동으로 허용되는 프로토콜을 정의할 수도 있습니다.
 
-텍스트를 다른 프로그램에서 AEM에 붙여넣을 때 허용되는 형식을 구성하려면:
+다른 프로그램에서 텍스트를 붙여넣을 때 허용되는 형식 [!DNL Experience Manager] 을 구성하려면:
 
 1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/edit`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
 1. 노드 아래에 노드를 만들어 HTML `edit` 붙여넣기 규칙을 유지합니다.
@@ -159,51 +159,14 @@ Microsoft Word와 같은 다른 프로그램에서 AEM에서 붙여넣을 때 �
 
 1. 다른 형식은 `htmlPasteRules` 노드에 적용되는 다양한 다른 속성이나 노드를 사용하여 정의할 수도 있습니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>속성</strong></td>
-   <td><strong>유형</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>String[]</td>
-   <td><p>허용되는 블록 태그 목록을 정의합니다.</p> <p>가능한 몇 가지 블록 태그는 다음과 같습니다.</p>
-    <ul>
-     <li>headlines (h1, h2, h3)</li>
-     <li>paragraph (p)</li>
-     <li>lists (ol, ul)</li>
-     <li>tables (table)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>문자열</td>
-   <td><p>allowBlockTags에 포함되지 않은 블록 태그가 있는 모든 블록에 사용되는 블록 태그를 정의합니다.</p> <p> 대부분의 경우 p가 적당하다.</p> </td>
-  </tr>
-  <tr>
-   <td>표</td>
-   <td>nt:unstructured</td>
-   <td><p>표를 붙여넣을 때의 동작을 정의합니다.<br /> </p> <p>이 노드에는 테이블 붙여넣기 허용 여부를 <code>allow</code> 정의하기 위한 속성(유형 <code>Boolean</code>)이 있어야 합니다.</p> <p>이 <code>allow</code> 를 <code>false</code>로 설정하면 속성 <code>ignoreMode</code> (유형<code> String</code>)을 지정하여 붙여넣기한 테이블 컨텐츠의 처리 방법을 정의해야 합니다. 유효한 값은 다음과 <code>ignoreMode</code> 같습니다.</p>
-    <ul>
-     <li><code>remove</code>: 표 컨텐츠를 제거합니다.</li>
-     <li><code>paragraph</code>: 표 셀을 단락으로 바꿉니다.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>list</td>
-   <td>nt:unstructured</td>
-   <td><p>목록을 붙여넣을 때의 동작을 정의합니다.<br /> </p> <p>목록 붙여넣기가 허용되는지 여부를 정의하려면 속성 <code>allow</code> (유형 <code>Boolean</code>)이 있어야 합니다.</p> <p>이 <code>allow</code> 를 <code>false</code>로 설정하면 속성 <code>ignoreMode</code> (유형)을 지정하여 붙여넣은 목록 컨텐트를 처리하는 방법을 정의해야 <code>String</code>합니다. 유효한 값은 다음과 <code>ignoreMode</code> 같습니다.</p>
-    <ul>
-     <li><code>remove</code>: 목록 컨텐츠를 제거합니다.</li>
-     <li><code>paragraph</code>: 목록 항목을 단락으로 바꿉니다.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+| 속성 | 유형 | 설명 |
+|--- |--- |--- |
+| `allowBlockTags` | `String` | 허용되는 블록 태그 목록을 정의합니다. 헤드라인(h1, h2, h3), 단락(p), 목록(ol, ul), 표(표)가 가능한 몇 가지 블록 태그입니다. |
+| `fallbackBlockTag` | `String` | 블록 태그가 포함되지 않은 모든 블록에 사용된 블록 태그를 정의합니다 `allowBlockTags`. 대개 `p` 충분합니다 |
+| `table` | `nt:unstructured` | 표를 붙여넣을 때의 동작을 정의합니다. This node must have the property allow (type Boolean) to define whether pasting tables is allowed. allow가 false로 설정된 경우, 붙여넣은 테이블 컨텐츠가 처리되는 방식을 정의하려면 property ignoreMode(문자열 유형)를 지정해야 합니다. ignoreMode의 유효한 값은 테이블 컨텐츠를 제거하고 표 셀 `remove` 을 단락으로 바꾸는 `paragraph` 것입니다. |
+| `list` | `nt:unstructured` | 목록을 붙여넣을 때의 동작을 정의합니다. 목록 붙여넣기가 허용되는지 여부를 정의하려면 속성 `allow` (부울 유형)이 있어야 합니다. 이 `allow` 를 `false`로 설정하면 속성 `ignoreMode` `String`(유형)을 지정하여 붙여넣은 목록 컨텐트를 처리하는 방법을 정의합니다. ignoreMode에 유효한 값은 목록 컨텐츠를 `remove` 제거하고 목록 항목을 단락으로 `paragraph` 변환하는 값입니다. |
 
-유효한 `htmlPasteRules` 구조의 예:
+유효한 `htmlPasteRules` 구조의 예는 다음과 같습니다.
 
 ```xml
 "htmlPasteRules": {
@@ -236,10 +199,10 @@ Microsoft Word와 같은 다른 프로그램에서 AEM에서 붙여넣을 때 �
 Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사용할 수 없습니다. 팝업 목록이 비어 있습니다. 작성자에게 스타일을 제공하려면 다음을 수행합니다.
 
 * 스타일 드롭다운 선택기를 활성화합니다.
-* 스타일 시트의 위치를 지정합니다.
-* 스타일 드롭다운 목록에서 선택할 수 있는 개별 스타일을 지정합니다.
+* 스타일 시트의 위치를 하나 이상 지정합니다.
+* 스타일 팝업 목록에서 선택할 수 있는 개별 스타일을 지정합니다.
 
-나중에(다시) 구성에 대해 스타일을 더 추가하려면 지침을 따라 새 스타일 시트를 참조하고 추가 스타일을 지정합니다.
+나중에 다시 구성하는 경우, 스타일을 더 추가하려면 지침을 따라 새 스타일 시트를 참조하고 추가 스타일을 지정합니다.
 
 >[!NOTE]
 >
@@ -249,7 +212,7 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
 
 이렇게 하려면 스타일 플러그인을 활성화합니다.
 
-1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/styles`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/styles`. 노드가 없으면 노드를 생성합니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
 1. 노드에서 `features` 속성을 `styles` 만듭니다.
 
    * **이름** `features`
@@ -279,35 +242,31 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
 
 1. 모든 변경 사항을 저장합니다.
 
->[!NOTE]
->
->대화 상자(클래식 UI)에서 RTE를 사용하는 경우 리치 텍스트 편집에 최적화된 스타일 시트를 지정할 수 있습니다. 기술 제한으로 인해 편집기에서 CSS 컨텍스트가 손실되므로 이 컨텍스트를 에뮬레이트하여 WYSIWYG 환경을 개선할 수 있습니다.
->
->리치 텍스트 편집기는 ID가 있는 컨테이너 DOM 요소를 사용하여 보고 편집하기 위해 다른 스타일을 제공할 `CQrte` 수 있습니다.
->
->
+대화 상자(클래식 UI)에서 RTE를 사용하는 경우 리치 텍스트 편집에 최적화된 스타일 시트를 지정할 수 있습니다. 기술 제한으로 인해 편집기에서 CSS 컨텍스트가 손실되므로 이 컨텍스트를 에뮬레이트하여 WYSIWYG 환경을 개선할 수 있습니다.
+
+리치 텍스트 편집기는 보고 편집할 수 있는 서로 다른 스타일을 제공하는 ID가 있는 컨테이너 DOM 요소를 사용합니다. `CQrte`
+
+```css
+#CQ td {
+// defines the style for viewing
+ }
 ```
->#CQ td {
-> // defines the style for viewing
-> }
->```
->
->
+
+```css
+#CQrte td {
+ // defines the style for editing
+ }
 ```
->#CQrte td {
-> // defines the style for editing
-> }
->```
 
 ### 팝업 목록에서 사용 가능한 스타일 지정 {#stylesindropdown}
 
 1. 구성 요소 정의에서 스타일 `<rtePlugins-node>/styles`활성화 드롭다운 선택기에서 [만든 대로 노드로 이동합니다](#styleselectorlist).
-1. 노드 아래에 `styles``styles`새 노드(라고도 함)를 만들어 사용 가능한 목록을 보유합니다.
+1. 노드 `styles`아래에서 사용 가능한 목록을 저장할 노드(라고도 함)를 `styles`만듭니다.
 
    * **이름** `styles`
    * **유형** `cq:WidgetCollection`
 
-1. 노드 아래에 새 노드를 만들어 개별 스타일을 `styles` 나타냅니다.
+1. 노드 아래에 노드를 만들어 개별 스타일을 `styles` 나타냅니다.
 
    * **이름**, 이름을 지정할 수 있지만 스타일에 적합해야 합니다
    * **유형** `nt:unstructured`
@@ -330,17 +289,13 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
 
 ### 일본어에서 최적의 단어 나누기를 위해 RTE 구성 {#jpwordwrap}
 
-일본어 컨텐츠를 작성하기 위해 AEM을 사용하는 작성자는 나누기가 필요하지 않은 줄 바꿈을 방지하기 위해 문자에 스타일을 적용할 수 있습니다. 이를 통해 작성자는 원하는 위치에서 문장이 지워질 수 있습니다. 이 기능의 스타일은 CSS 스타일 시트에서 미리 정의된 CSS 클래스를 기반으로 합니다.
-
->[!NOTE]
->
->이 기능을 사용하려면 AEM 6.5 서비스 팩 1 이상이 필요합니다.
+일본어 컨텐츠 [!DNL Experience Manager] 를 작성하는 데 사용하는 작성자는 문자 스타일을 적용하여 나누기가 필요하지 않은 줄 바꿈을 방지할 수 있습니다. 이를 통해 작성자는 원하는 위치에서 문장이 지워질 수 있습니다. 이 기능의 스타일은 CSS 스타일 시트에서 미리 정의된 CSS 클래스를 기반으로 합니다.
 
 작성자가 일본어 텍스트에 적용할 수 있는 스타일을 만들려면 다음 단계를 수행하십시오.
 
-1. Create a new node under the styles node. 새 스타일 [지정을 참조하십시오](#stylesindropdown).
+1. Create a node under the styles node. 스타일 [지정을 참조하십시오](#stylesindropdown).
    * 이름: `jpn-word-wrap`
-   * 유형: &#39;nt:구조 해제
+   * 유형: `nt:unstructure`
 
 1. 노드 `cssName` 에 속성을 추가하여 CSS 클래스를 참조합니다. 이 클래스 이름은 일본어 단어 감싸기 기능에 예약된 이름입니다.
    * 이름: `cssName`
@@ -353,7 +308,7 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
 `String`
    * 값: `Japanese word-wrap`
 
-1. 스타일시트를 만들고 해당 경로를 지정합니다. 스타일시트 [위치 지정을 참조하십시오](#locationofstylesheet). Add the following contents to the stylesheet. 원하는 대로 배경색을 변경합니다.
+1. 스타일 시트를 만들고 해당 경로를 지정합니다. 스타일시트 [위치 지정을 참조하십시오](#locationofstylesheet). Add the following contents to the stylesheet. 원하는 대로 배경색을 변경합니다.
 
    ```css
    .text span.jpn-word-wrap {
@@ -364,7 +319,7 @@ Styles plug-in이 처음으로 활성화되어 있으면 기본 스타일을 사
    }
    ```
 
-   ![Stylesheet to make Japanese word wrap feature available to authors](assets/rte_jpwordwrap_stylesheet.jpg)
+   ![작성자가 일본어 단어 감싸기 기능을 사용할 수 있도록 스타일 시트](assets/rte_jpwordwrap_stylesheet.jpg)
 
 ## 단락 서식 구성 {#paraformats}
 
@@ -376,20 +331,20 @@ RTE로 작성되는 모든 텍스트는 기본적으로 블록 태그 내에 배
 
 >[!NOTE]
 >
->단락(예: &lt;hr> 태그)에 블록 태그를 지정할 수 없는 경우 paraformat 플러그인에 유효한 사용 사례가 아닙니다.
+>예를 들어, `<hr>` 태그와 같은 블록 태그를 단락에 할당할 수 없는 경우 `paraformat` 플러그인에 유효한 사용 사례가 아닙니다.
 
 Paragraph Formats 플러그인이 처음 활성화되면 기본 Paragraph Formats를 사용할 수 없습니다. 팝업 목록이 비어 있습니다. 작성자에게 단락 형식을 제공하려면 다음을 수행합니다.
 
-* 형식 드롭다운 선택기 목록을 활성화합니다.
-* 드롭다운에서 단락 포맷으로 선택할 수 있는 블록 태그를 지정합니다.
+* [ [!UICONTROL 형식] ] 팝업 선택기 목록을 활성화합니다.
+* 팝업 메뉴에서 단락 포맷으로 선택할 수 있는 블록 태그를 지정합니다.
 
-나중에(다시) 구성을 위해, 더 많은 포맷을 추가하려면 지침 중 관련 부분만 따르십시오.
+나중에 다시 구성하는 경우, 더 많은 포맷을 추가하려면 지침 중 관련 부분만 따르십시오.
 
 ### 형식 드롭다운 선택기 활성화 {#formatselectorlist}
 
-먼저 Paraformat 플러그인을 활성화합니다.
+플러그인을 `paraformat` 활성화하려면 다음 단계를 수행합니다.
 
-1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/paraformat`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/paraformat`. 노드가 없으면 노드를 생성합니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
 1. 노드에서 `features` 속성을 `paraformat` 만듭니다.
 
    * **이름** `features`
@@ -397,28 +352,24 @@ Paragraph Formats 플러그인이 처음 활성화되면 기본 Paragraph Format
    * **값** `*` (별표)
 
 >[!NOTE]
-플러그인이 추가로 구성되지 않으면 다음 기본 형식이 활성화됩니다.
-* 단락 ( `<p>`)
-* 제목 1 ( `<h1>`)
-* 제목 2 ( `<h2>`)
-* 제목 3 ( `<h3>`)
-
-
+>
+>플러그인이 추가로 구성되지 않은 경우 활성화된 기본 형식은 단락(), 머리글 1( `<p>`), 머리글 2( `<h1>`), 머리글 3() `<h2>``<h3>`입니다.
 
 >[!CAUTION]
-RTE의 단락 형식을 구성할 때는 단락 태그 &lt;p>를 서식 옵션으로 제거하지 마십시오. 태그를 `<p>` 제거한 경우 컨텐츠 작성자는 추가 형식이 구성된 경우에도 **단락 형식** 옵션을 선택할 수 없습니다.
+>
+>RTE의 단락 형식을 구성할 때는 단락 태그 &lt;p>를 서식 옵션으로 제거하지 마십시오. 태그를 `<p>` 제거한 경우 컨텐츠 작성자는 추가 형식이 구성된 경우에도 [!UICONTROL 단락 형식] 옵션을 선택할 수 없습니다.
 
 ### 사용 가능한 단락 서식 지정 {#paraformatsindropdown}
 
-다음 방법을 통해 단락 포맷을 선택할 수 있습니다.
+단락 포맷은 다음과 같이 선택할 수 있습니다.
 
 1. 구성 요소 정의에서 형식 `<rtePlugins-node>/paraformat`활성화 드롭다운 선택기에서 [만든 대로 노드를 탐색합니다](#styleselectorlist).
-1. Under the node create a new node, to hold the list of formats: `paraformat`
+1. 노드 아래에 `paraformat` 노드 만들기, 형식 목록을 포함합니다.
 
    * **이름** `formats`
    * **유형** `cq:WidgetCollection`
 
-1. 노드 아래에 새 노드를 `formats` 만듭니다. 이 노드에는 개별 형식에 대한 세부 정보가 포함됩니다.
+1. 노드 아래에 노드 `formats` 를 만듭니다. 여기에는 개별 형식에 대한 세부 정보가 포함됩니다.
 
    * **이름을 지정할**&#x200B;수 있지만 형식(예: myparagraph, myheading1)에 적합해야 합니다.
    * **유형** `nt:unstructured`
@@ -446,16 +397,16 @@ RTE의 단락 형식을 구성할 때는 단락 태그 &lt;p>를 서식 옵션�
 
 ## 특수 문자 구성 {#spchar}
 
-표준 AEM 설치에서 `misctools` 플러그인이 특수 문자(`specialchars`)에 대해 활성화되면 즉시 기본 선택 사항을 사용할 수 있습니다. 예를 들어, 저작권 및 상표 심볼입니다.
+표준 [!DNL Experience Manager] 설치에서 `misctools` 플러그인이 특수 문자(`specialchars`)에 대해 활성화되면 즉시 기본 선택 사항을 사용할 수 있습니다. 예를 들어, 저작권 및 상표 심볼입니다.
 
-사용자가 직접 선택한 문자를 사용할 수 있도록 RTE를 구성할 수 있습니다. 개별 문자를 정의하거나 전체 시퀀스를 정의할 수 있습니다.
+RTE를 구성하여 문자 선택 가능; 개별 문자를 정의하거나 전체 시퀀스를 정의할 수 있습니다.
 
 >[!CAUTION]
-고유한 특수 문자를 추가하면 기본 선택 내용이 무시됩니다. 필요한 경우 (re-)직접 선택한 항목에 이러한 문자를 정의합니다.
+특수 문자를 추가하면 기본 선택 내용이 무시됩니다. 필요한 경우 선택 영역에서 이러한 문자를 재정의합니다.
 
 ### 단일 문자 정의 {#definesinglechar}
 
-1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/misctools`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/misctools`. 노드가 없으면 노드를 생성합니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
 1. 노드에서 `features` 속성을 `misctools` 만듭니다.
 
    * **이름** `features`
@@ -474,7 +425,7 @@ RTE의 단락 형식을 구성할 때는 단락 태그 &lt;p>를 서식 옵션�
    * **이름** `chars`
    * **유형** `nt:unstructured`
 
-1. 새 노드 `chars` 추가에서 개별 문자 정의를 보유합니다.
+1. 노드 `chars` 추가에서 개별 문자 정의를 보유합니다.
 
    * **이름을 지정할** 수 있지만 문자를 반영해야 합니다. 예를 들어, 절반
    * **유형** `nt:unstructured`
@@ -494,7 +445,7 @@ CRXDE에서 속성을 저장하면 표현된 문자가 표시됩니다. 아래 �
 ### 문자 범위 정의 {#definerangechar}
 
 1. 단일 문자 정의에서 1~3단계 [를 사용합니다](#definesinglechar).
-1. 새 노드 `chars` 추가에서 문자 범위 정의를 보유합니다.
+1. 노드 `chars` 추가에서 문자 범위 정의를 보유합니다.
 
    * **이름을 지정할** 수 있지만 문자 범위를 반영해야 합니다. 예를 들어 연필
    * **유형** `nt:unstructured`
@@ -531,7 +482,7 @@ CRXDE에서 속성을 저장하면 표현된 문자가 표시됩니다. 아래 �
 >[!NOTE]
 RTE 구성 요소의 테이블 복사 및 붙여넣기는 브라우저에 따라 다릅니다. 모든 브라우저에서는 지원되지 않습니다. 표 구조 및 브라우저에 따라 다양한 결과를 얻을 수 있습니다. 예를 들어 클래식 UI 및 터치 UI에서 Mozilla Firefox의 RTE 구성 요소에 표를 복사하여 붙여넣으면 표 레이아웃이 유지되지 않습니다.
 
-1. 구성 요소 내에서 노드를 탐색합니다 `<rtePlugins-node>/table`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 구성 요소 내에서 노드를 탐색합니다 `<rtePlugins-node>/table`. 노드가 없으면 노드를 생성합니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
 1. 노드에서 `features` 속성을 `table` 만듭니다.
 
    * **이름** `features`
@@ -548,31 +499,31 @@ RTE 구성 요소의 테이블 복사 및 붙여넣기는 브라우저에 따라
 
 
 1. CSS 스타일 시트의 위치를 정의하여 지정합니다. 텍스트 [에 대한](#locationofstylesheet) 스타일을 정의할 때와 동일하게 스타일 시트 [위치 지정을 참조하십시오](#textstyles). 다른 스타일을 정의한 경우 위치를 정의할 수 있습니다.
-1. Under the `table` node create the following new nodes (as required):
+1. Under the node create the following nodes as required: `table`
 
-   * 전체 표에 대한 스타일을 정의하려면(표 속성 **에서 사용 가능**):
+   * 전체 표에 대한 스타일을 정의하려면(표 속성 **[!UICONTROL 에서 사용 가능]**):
 
       * **이름** `tableStyles`
       * **유형** `cq:WidgetCollection`
-   * 개별 셀의 스타일을 정의하려면(셀 속성 **에서 사용 가능**):
+   * 개별 셀의 스타일을 정의하려면(셀 속성 **[!UICONTROL 에서 사용 가능]**)
 
       * **이름** `cellStyles`
       * **유형** `cq:WidgetCollection`
 
 
-1. 개별 스타일을 나타내는 새 노드( `tableStyles` 또는 `cellStyles` 노드 아래)를 만듭니다.
+1. 노드( `tableStyles` 또는 `cellStyles` 노드 아래)를 만들어 개별 스타일을 나타냅니다.
 
    * **이름을 지정할** 수 있지만 스타일을 반영해야 합니다.
    * **유형** `nt:unstructured`
 
 1. 이 노드에서 속성을 만듭니다.
 
-   * 참조할 CSS 스타일을 정의하려면
+   * 참조되는 CSS 스타일을 정의하려면
 
       * **이름** `cssName`
       * **유형** `String`
       * **값** CSS 클래스의 이름(예: 앞에 `.`가 없는 `cssClass` 경우, 대신 `.cssClass`)
-   * 드롭다운 선택기에 표시할 설명 텍스트를 정의하려면
+   * 팝업 선택기에 표시할 설명 텍스트를 정의하려면
 
       * **이름** `text`
       * **유형** `String`
@@ -608,13 +559,13 @@ RTE 구성 요소의 테이블 복사 및 붙여넣기는 브라우저에 따라
 >[!NOTE]
 &quot;맞춤법 검사에 실패했습니다.&quot; 메시지 가 설치되지 않은 언어를 확인하려고 하면 표시됩니다.
 
-표준 AEM 설치에는 다음과 같은 사전이 포함됩니다.
+표준 Experience Manager 설치에는 다음과 같은 사전이 포함됩니다.
 
 * 미국 영어(en_us)
 * 영어(en_gb)
 
 >[!NOTE]
-표준 사전은 해당 Readme 파일과 `/libs/cq/spellchecker/dictionaries`함께 에 있습니다. 파일을 수정하지 마십시오.
+표준 사전은 적절한 ReadMe 파일과 `/libs/cq/spellchecker/dictionaries`함께 에 있습니다. 파일을 수정하지 마십시오.
 
 필요한 경우 사전을 더 추가하려면 다음 단계를 따르십시오.
 
@@ -651,7 +602,7 @@ RTE를 통해 작성자는 몇 번의 마지막 편집 내용을 실행 취소�
 
 탭 크기를 정의하려면
 
-1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/keys`. 노드가 없으면 노드를 만듭니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
+1. 구성 요소에서 노드를 탐색합니다 `<rtePlugins-node>/keys`. 노드가 없으면 노드를 생성합니다. 자세한 내용은 플러그인 [활성화를 참조하십시오](#activateplugin).
 1. 노드에서 `keys` 속성을 만듭니다.
 
    * **이름** `tabSize`
@@ -676,33 +627,22 @@ RTE를 통해 작성자는 몇 번의 마지막 편집 내용을 실행 취소�
 
 ## 편집 가능한 공간의 높이 구성 {#editablespace}
 
->[!NOTE]
-이는 대화 상자에서 RTE를 사용할 때만 해당됩니다(클래식 UI에서는 즉석 편집 작업이 아님).
+구성 요소 대화 상자 내에 표시된 편집 가능한 공간의 높이를 정의할 수 있습니다. 구성은 대화 상자에서 RTE를 사용하는 경우에만 적용됩니다. 구성은 대화 상자 창의 높이를 변경하지 않습니다.
 
-구성 요소 대화 상자 내에 표시된 편집 가능한 공간의 높이를 정의할 수 있습니다.
-
-1. 구성 요소에 대한 대화 상자 정의의 `../items/text` 노드에서 새 속성을 만듭니다.
+1. 노드의 구성 `../items/text` 요소에 대한 대화 상자 정의에서 속성을 만듭니다.
 
    * **이름** `height`
    * **유형** `Long`
    * **편집 캔버스의 높이를 픽셀 단위로 지정합니다** .
 
-   >[!NOTE]
-   대화 상자 창의 높이는 변경되지 않습니다.
-
 1. 변경 사항을 저장합니다.
 
 ## 링크에 대한 스타일 및 프로토콜 구성 {#linkstyles}
 
-AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
-
-* 사용할 CSS 스타일
-* 프로토콜이 자동으로 승인됨
-
-다른 프로그램에서 AEM에 링크가 추가되는 방식을 구성하려면 HTML 규칙을 정의합니다.
+링크를 추가할 때 사용할 CSS 스타일 [!DNL Experience Manager]과 자동으로 적용되는 프로토콜을 정의할 수 있습니다. 다른 프로그램에서 링크가 추가되는 방식을 구성하려면 HTML 규칙 [!DNL Experience Manager] 을 정의합니다.
 
 1. CRXDE Lite를 사용하여 프로젝트의 텍스트 구성 요소를 찾습니다.
-1. Create a new node at the same level as `<rtePlugins-node>`, that, create the node under the parent node of `<rtePlugins-node>`:
+1. Create a node at the same level as `<rtePlugins-node>`, that, create the node under the parent node of `<rtePlugins-node>`:
 
    * **이름** `htmlRules`
    * **유형** `nt:unstructured`
@@ -713,12 +653,9 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
    * **유형** `String`
    * **값** `richtext`
 
-   노드의 `../items/text` 위치는 대화 상자의 구조에 따라 다를 수 있습니다. 두 가지 예는 다음과 같습니다.
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
+   노드의 위치는 대화 상자 구조에 따라 `../items/text` 다를 수 있습니다. 두 가지 예는 `/apps/myProject>/components/text/dialog/items/text` and `/apps/<myProject>/components/text/dialog/items/panel/items/text`입니다.
 
-
-1. 아래에서 `htmlRules`새 노드를 만듭니다.
+1. 아래에서 `htmlRules`노드를 만듭니다.
 
    * **이름** `links`
    * **유형** `nt:unstructured`
@@ -735,7 +672,7 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
       * **이름** `cssExternal`
       * **유형** `String`
       * **값** CSS 클래스의 이름(이전 &#39;.&#39; 없이); for example, `cssClass` instead of `.cssClass`)
-   * 유효한 **프로토콜** 배열(https://, https:// file://, mailto: 등)
+   * Array of valid **[!UICONTROL protocols]** including `https://`, `https://``file://`, `mailto:`and other,
 
       * **이름** `protocols`
       * **유형** `String[]`
@@ -745,7 +682,7 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
       * **이름** `defaultProtocol`
       * **유형** `String`
       * **값**&#x200B;하나 이상의 기본 프로토콜
-   * 링크의 대상 속성을 처리하는 방법에 대한 정의입니다. 새 노드 만들기:
+   * 링크의 대상 속성을 처리하는 방법에 대한 정의입니다. 노드 만들기:
 
       * **이름** `targetConfig`
       * **유형** `nt:unstructured`
