@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1538'
+ht-degree: 99%
 
 ---
 
@@ -39,6 +39,10 @@ ht-degree: 100%
 * **탐색 시 숨김**
 
    * 결과 사이트의 페이지 탐색에 페이지가 표시되거나 숨겨지는지 여부를 나타냅니다.
+
+* **HTML ID**
+
+   * 구성 요소에 적용할 HTML ID.
 
 * **페이지 제목**
 
@@ -98,6 +102,10 @@ ht-degree: 100%
 
    * 이 페이지에서 자동으로 리디렉션할 페이지를 지정합니다.
 
+* **디자인**
+
+   * 결과 사이트의 페이지 탐색에 페이지가 표시되거나 숨겨지는지 여부를 나타냅니다.
+
 * **별칭**
 
    * 이 페이지에 사용할 별칭을 지정합니다.
@@ -113,9 +121,11 @@ ht-degree: 100%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **&lt;*경로*>에서 상속됨**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * 페이지가 상속되었는지 여부 및 상속된 위치를 나타냅니다.
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **클라우드 구성**
 
@@ -173,7 +183,7 @@ ht-degree: 100%
 
 ### 클라우드 서비스 {#cloud-services}
 
-* **클라우드 서비스**
+* **클라우드 서비스 구성**
 
    * 클라우드 서비스에 대한 속성을 정의합니다.
 
