@@ -2,10 +2,10 @@
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 99%
+source-wordcount: '406'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 99%
 + 자산 구성, 관리 및 확장 {#admin}
    + [API 및 참조 자료](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
-   + [처리 프로필](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [이미지 프로필 및 비디오 프로필 작업 정보](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [스마트 태그 구성](smart-tags-configuration.md)
    + [다국어 자산 및 자산 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
@@ -82,8 +82,8 @@ ht-degree: 99%
    + [Dynamic Media 뷰어 사전 설정 적용](dynamic-media/viewer-presets.md)
    + [Dynamic Media 이미지 사전 설정 관리](dynamic-media/managing-image-presets.md)
    + [Dynamic Media 이미지 사전 설정 적용](dynamic-media/image-presets.md)
-   + [Dynamic Media 비디오 프로필](dynamic-media/video-profiles.md)
-   + [Dynamic Media 이미지 프로필](dynamic-media/image-profiles.md)
+   + [이미지 프로필](dynamic-media/image-profiles.md)
+   + [비디오 프로필](dynamic-media/video-profiles.md)
    + [스마트 이미징](dynamic-media/imaging-faq.md)
    + [Dynamic Media 자산 제공](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](dynamic-media/hotlink-protection.md)
