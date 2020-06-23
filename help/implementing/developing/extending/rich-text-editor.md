@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager의 컨텐츠를 Cloud Service으로 작성하도록 리치 텍스트 편집기를 구성합니다.
-description: Adobe Experience Manager의 컨텐츠를 Cloud Service으로 작성하도록 리치 텍스트 편집기를 구성합니다.
+title: 컨텐츠를 Cloud Service으로 작성하도록 리치 텍스트 편집기 [!DNL Adobe Experience Manager] 를 구성합니다.
+description: 컨텐츠를 Cloud Service으로 작성하도록 리치 텍스트 편집기 [!DNL Adobe Experience Manager] 를 구성합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
+source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,18 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 *그림: 사용 가능한 모든 옵션이 활성화된 리치 텍스트 편집기 도구 모음.*
 
-도구 모음은 WYSIWYG 작성 환경을 위한 옵션을 제공합니다. Experience Manager 관리자는 인터페이스의 도구 모음에서 사용할 수 있는 옵션을 구성할 수 있습니다. 포괄적인 편집 옵션은 기본적으로 Experience Manager에서 사용할 수 있습니다. 개발자는 Experience Manager을 사용자 정의하여 더 많은 편집 옵션을 추가할 수 있습니다.
+도구 모음은 WYSIWYG 작성 환경을 위한 옵션을 제공합니다. [!DNL Experience Manager] 관리자는 인터페이스의 도구 모음에서 사용할 수 있는 옵션을 구성할 수 있습니다. 기본적으로 다양한 편집 옵션을 사용할 수 있습니다 [!DNL Experience Manager]. 개발자는 사용자 요구에 맞게 구성 [!DNL Experience Manager] 하여 더 많은 편집 옵션을 추가할 수 있습니다.
 
 ## 다양한 편집 모드 {#editingmodes}
 
-작성자는 다양한 구성 요소 모드를 사용하여 Experience Manager에서 텍스트 컨텐츠를 만들고 편집할 수 있습니다. 컨텐츠 작성 및 서식 지정을 위한 툴바 옵션과 다양한 편집 모드에서 RTE 지원 구성 요소의 사용자 환경은 RTE 구성에 따라 다릅니다.
+작성자는 다양한 구성 요소 모드를 사용하여 텍스트 컨텐츠를 만들고 편집할 [!DNL Experience Manager] 수 있습니다. 컨텐츠 작성 및 서식 지정을 위한 툴바 옵션과 다양한 편집 모드에서 RTE 지원 구성 요소의 사용자 환경은 RTE 구성에 따라 다릅니다.
 
 | 편집 모드 | 편집 영역 | 활성화할 기능 권장 |
 |--- |--- |--- |
-| 인라인 | 간단한 편집을 위한 즉석 편집, 대화 상자를 열지 않고 서식 지정 | 최소 RTE 기능 |
-| RTE 전체 화면 | 전체 페이지 | 모든 필수 RTE 기능 |
-| 대화 상자 | 페이지 컨텐츠 맨 위에 있는 대화 상자지만 전체 페이지를 포함하지 않음 | 편리한 기능 |
-| 대화 상자 전체 화면 | 전체 화면 모드와 동일; RTE와 함께 대화 상자의 필드 포함 | 모든 필수 RTE 기능 |
+| 인라인 | 간단한 편집을 위한 즉석 편집, 대화 상자를 열지 않고 형식을 지정합니다. | 최소 RTE 기능 |
+| RTE 전체 화면 | 전체 페이지를 포함합니다. | 모든 필수 RTE 기능 |
+| 대화 상자 | 대화 상자는 페이지 컨텐츠 상단에 있지만 전체 페이지는 포함되지 않습니다. | 편리한 기능 |
+| 대화 상자 전체 화면 | 전체 화면 모드와 동일; 은 RTE와 함께 대화 상자의 필드를 포함합니다. | 모든 필수 RTE 기능 |
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 ### 인라인 편집 {#inline-editing}
 
-천천히 두 번 클릭하면서 페이지를 열면 페이지 내에서 컨텐츠를 편집할 수 있습니다. 매우 기본적인 옵션이 포함된 작은 도구 모음이 표시됩니다.
+페이지 내의 컨텐츠를 편집하려면 느리게 두 번 클릭하여 컨텐츠를 엽니다. 기본 옵션이 있는 작은 도구 모음이 표시됩니다.
 
 ![툴바의 기본 옵션을 사용한 인라인 편집](assets/inline-editing-mode-basic-options.png)
 
@@ -58,7 +58,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 ### Full-screen editing {#full-screen-editing}
 
-Experience Manager 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 편집 옵션이 가장 다양하므로 전체 화면 편집이 인라인 편집의 자세한 버전입니다. 인라인 편집 모드를 사용할 때 작은 도구 모음에서 ![rte_fullscreen](assets/rte_fullscreen.png)을 클릭하여 열 수 있습니다.
+[!DNL Experience Manager] 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 편집 옵션이 가장 다양하므로 전체 화면 편집이 인라인 편집의 자세한 버전입니다. 아이콘을 클릭하여 전체 화면 ![에서](assets/rte_fullscreen.png)RTE를 열 수 있고 인라인 편집 모드를 사용할 때는 작은 도구 모음에서 열 수 있습니다.
 
 대화 상자의 전체 화면 모드에서는 자세한 RTE 도구 모음과 함께 대화 상자에서 사용할 수 있는 옵션 및 구성 요소도 사용할 수 있습니다. 다른 구성 요소와 함께 RTE가 포함된 대화상자에만 적용됩니다.
 
@@ -68,7 +68,7 @@ Experience Manager 구성 요소는 페이지 컨텐츠를 숨기고 사용 가�
 
 ### 대화 상자 편집 {#dialog-editing}
 
-구성 요소를 두 번 클릭하면 컨텐츠를 편집할 수 있는 대화 상자가 열립니다. 대화 상자가 기존 페이지 상단에 열립니다. 일부 특정 시나리오에서 대화 상자가 팝업 창으로 열립니다. 예를 들어 텍스트 구성 요소가 다중 열 페이지 레이아웃의 열에 포함되어 있고 대화 상자에 사용할 수 있는 영역이 더 적은 경우
+구성 요소를 두 번 클릭하면 컨텐츠를 편집할 수 있는 대화 상자가 열립니다. 대화 상자가 기존 페이지 상단에 열립니다. 일부 특정 시나리오에서 대화 상자가 팝업 창으로 열립니다. 예를 들어 텍스트 구성 요소가 여러 열로 구성된 페이지 레이아웃의 열에 포함되어 있고 대화 상자에 사용할 수 있는 영역은 더 작아집니다.
 
 ![대화 상자 편집 모드](assets/dialog_editing_modetouchui.png)
 
@@ -83,7 +83,7 @@ Experience Manager 구성 요소는 페이지 컨텐츠를 숨기고 사용 가�
    * 해당 플러그인에 대한 기본 기능을 활성화하거나 비활성화하는 데 사용됩니다.
    * 표준화된 절차를 사용하여 구성됩니다.
 
-* 적절한 경우 추가적인 속성과 옵션을 사용해야 합니다.
+* 적절한 경우 보다 많은 속성과 옵션을 사용하여 특수 구성을 수행해야 합니다.
 
 해당 플러그인과 관련된 노드의 `features` 속성 값에 따라 RTE의 기본 기능이 활성화되거나 비활성화됩니다.
 
@@ -95,21 +95,21 @@ Experience Manager 구성 요소는 페이지 컨텐츠를 숨기고 사용 가�
 
 | 플러그인 ID | features | 설명 |
 |--- |--- |--- |
-| 편집 | cut copy paste-default paste-plaintext paste-wordhtml | [잘라내기, 복사 및 3가지 붙여넣기 모드](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [칠드플레이스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | 찾기 바꾸기 | 찾기 및 바꾸기 |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | 굵은 기울임꼴 밑줄 | [기본 텍스트 서식](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [이미지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | 이미지 | 기본 이미지 지원(컨텐츠 또는 컨텐츠 파인더에서 드래그) 브라우저에 따라 작성자에 대한 지원 동작이 다릅니다 |
-| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 이 값을 정의하려면 [탭 크기를 참조하십시오](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justice](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justfyleft justifycenter justifyright | 단락 정렬. |
-| [링크](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink 연결 해제 | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 순서가 없는 들여쓰기 내어쓰기 | 이 플러그인은 들여쓰기 및 목록 [을 모두 제어합니다](configure-rich-text-editor-plug-ins.md#indentmargin). 중첩된 목록 포함. |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 기타 도구를 사용하면 작성자가 [특수 문자를](configure-rich-text-editor-plug-ins.md#spchar) 입력하거나 HTML 소스를 편집할 수 있습니다. 또한 목록을 정의하려는 경우 전체 [범위의 특수 문자를](configure-rich-text-editor-plug-ins.md#definerangechar) 추가할 수도 있습니다. |
-| Paraformat | paraformat | 기본 단락 형식은 Paragraph, Heading 1, Heading 2 및 Heading 3(`<p>`, `<h1>`및 `<h2>`and `<h3>`)입니다. 단락 서식 [을](configure-rich-text-editor-plug-ins.md#paraformats) 더 추가하거나 목록을 확장할 수 있습니다. |
-| spellcheck | checktext | [언어 인식 맞춤법 검사기입니다](configure-rich-text-editor-plug-ins.md#adddict). |
-| styles | styles | CSS 클래스를 사용한 스타일 지정 지원. [텍스트에 사용할 고유한 스타일을 추가(또는 확장)하려면 새로운 텍스트 스타일을](configure-rich-text-editor-plug-ins.md#textstyles) 추가합니다. |
-| 아래 첨자 | 아래 첨자 | 기본 포맷의 익스텐션, 하위 및 수퍼 스크립트 추가 |
-| 표 | 표 제거 가능한 삽입방법 제거삽입열 제거열 제거cellprop셀 분할셀 선택열 | 전체 표 또는 개별 셀에 고유한 스타일을 추가하려는 경우 표 스타일 [](configure-rich-text-editor-plug-ins.md#tablestyles)구성을 참조하십시오. |
-| 실행 취소 | 실행 취소 재실행 | 실행 [취소 및 재실행 작업의 기록](configure-rich-text-editor-plug-ins.md#undohistory) 크기입니다. |
+| 편집 | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [잘라내기, 복사 및 3가지 붙여넣기 모드](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [칠드플레이스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | 찾기 및 바꾸기 |
+| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [기본 텍스트 서식](configure-rich-text-editor-plug-ins.md#textstyles). |
+| [이미지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | 기본 이미지 지원(컨텐츠 또는 컨텐츠 파인더에서 드래그) 브라우저에 따라 작성자에 대한 지원 동작이 다릅니다 |
+| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | 이 값을 정의하려면 [탭 크기를 참조하십시오](configure-rich-text-editor-plug-ins.md#tabsize). |
+| [justice](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | 단락 정렬. |
+| [링크](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | 이 플러그인은 들여쓰기 및 목록 [을 모두 제어합니다](configure-rich-text-editor-plug-ins.md#indentmargin). 중첩된 목록 포함. |
+| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | 기타 도구를 사용하여 작성자는 [특수 문자를](configure-rich-text-editor-plug-ins.md#spchar) 입력하거나 HTML 소스를 편집할 수 있습니다. 또한 목록을 정의하려는 경우 [다양한 특수 문자를](configure-rich-text-editor-plug-ins.md#definerangechar) 추가할 수도 있습니다. |
+| Paraformat | `paraformat` | 기본 단락 형식은 Paragraph, Heading 1, Heading 2 및 Heading 3(`<p>`, `<h1>`및 `<h2>`and `<h3>`)입니다. 단락 서식 [을](configure-rich-text-editor-plug-ins.md#paraformats) 더 추가하거나 목록을 확장할 수 있습니다. |
+| spellcheck | `checktext` | [언어 인식 맞춤법 검사기입니다](configure-rich-text-editor-plug-ins.md#adddict). |
+| styles | `styles` | CSS 클래스를 사용한 스타일 지정 지원. [텍스트에 사용할 고유한 스타일을 추가(또는 확장)하려면 새로운 텍스트 스타일을](configure-rich-text-editor-plug-ins.md#textstyles) 추가합니다. |
+| 아래 첨자 | `subscript`, `superscript` | 기본 포맷의 익스텐션, 하위 스크립트 및 슈퍼 스크립트 추가 |
+| 표 | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | 표 스타일 [을 구성하여](configure-rich-text-editor-plug-ins.md#tablestyles) 전체 표 또는 개별 셀에 고유한 스타일을 추가할 수 있습니다. |
+| 실행 취소 | `undo`, `redo` | 실행 [취소 및 재실행 작업의 기록](configure-rich-text-editor-plug-ins.md#undohistory) 크기입니다. |
 
 >[!NOTE]
 >
@@ -117,12 +117,12 @@ Experience Manager 구성 요소는 페이지 컨텐츠를 숨기고 사용 가�
 
 ## 구성 경로 및 위치 이해 {#understand-the-configuration-paths-and-locations}
 
-작성자에게 제공하는 RTE [편집 모드(및 UI)](#editingmodes) 는 RTE 플러그인을 활성화할 때 구성 세부 사항 [의 위치를 결정합니다](configure-rich-text-editor-plug-ins.md#activateplugin).
+RTE [플러그인](#editingmodes) 활성화 시 작성자에게 제공하는 인터페이스 [및 RTE 편집](configure-rich-text-editor-plug-ins.md#activateplugin)모드는 구성 세부 사항의 위치를 결정합니다. 위치는 다음과 같습니다.
 
-* 인라인 모드: `cq:editConfig/cq:inplaceEditing`
-* 전체 화면 모드: `cq:editConfig/cq:inplaceEditing`
-* 대화 상자 모드: `cq:dialog`
-* 전체 화면 대화 모드: `cq:dialog`
+* 인라인 모드: `cq:editConfig/cq:inplaceEditing`.
+* 전체 화면 모드: `cq:editConfig/cq:inplaceEditing`.
+* 대화 상자 모드: `cq:dialog`.
+* 전체 화면 대화 모드: `cq:dialog`.
 
 >[!NOTE]
 >
@@ -131,22 +131,17 @@ Experience Manager 구성 요소는 페이지 컨텐츠를 숨기고 사용 가�
 >* **이름**: `configPath`
 >* **유형**: `String`
 >* **값**: 실제 구성을 포함하는 노드의 경로
-
 >
 >
 RTE 구성 노드의 이름을 다음으로 지정하지 마십시오 `config`. 그렇지 않으면 RTE 구성은 관리자만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
 
 대화 상자 편집 모드에 적용되는 다음 속성을 구성합니다.
 
-* `useFixedInlineToolbar`: RTE 노드(sling:resourceType=)에 정의된 이 부울 속성 `cq/gui/components/authoring/dialog/richtext`을 설정하여 `True`부동 대신 RTE 도구 모음을 고정합니다.
-
-   이 속성이 true이면 Richtext 편집은 기본적으로 &quot;foundation-contentloaded&quot; 이벤트에서 시작됩니다.
-
-   이를 방지하려면 속성을 설정하여 &#39;rte-start&#39; 이벤트 `customStart` 를 트리거하여 RTE `True`편집을 시작합니다. 이 속성이 &#39;true&#39;인 경우 기본 동작인 &#39;클릭 시 시작&#39;이 작동하지 않습니다.
+* `useFixedInlineToolbar`: 떠 있는 대신 RTE 도구 모음을 고정시킬 수 있습니다. sling:resourceType=로 RTE 노드에 정의된 이 부울 속성 `cq/gui/components/authoring/dialog/richtext` 을 설정합니다 `True`. 이 속성을 로 설정하면 이벤트 `True`에서 리치 텍스트 편집이 `foundation-contentloaded` 시작됩니다. 이를 방지하려면 속성을 설정하여 이벤트 `customStart` 를 `True` 트리거하여 RTE 편집을 `rte-start` 시작합니다. 이 속성이 `true`설정되면 RTE는 클릭을 시작하지 않으며 이는 기본 동작입니다.
 
 * `customStart`: 이벤트를 트리거하여 RTE를 시작할 시기를 제어하려면 RTE 노드에 정의된 이 부울 속성 `True`을 로 설정합니다 `rte-start`.
 
-* `rte-start`: RTE의 편집 `contenteditable-div` 을 시작할 때 이 이벤트를 트리거합니다. 이 기능은 true로 설정된 경우에만 `customStart` 작동합니다.
+* `rte-start`: RTE의 편집 `contenteditable-div` 을 시작할 때 이 이벤트를 트리거합니다. 설정된 경우에만 `customStart` 작동합니다 `true`.
 
 터치 지원 대화 상자에서 RTE를 사용하는 경우 문제를 방지하려면 속성 `useFixedInlineToolbar` 을 `true` 설정합니다.
 
@@ -165,14 +160,13 @@ RTE 플러그인의 자세한 구성에 대해서는 RTE 플러그인을 활성�
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 자체 텍스트 구성 요소를 만들려면 이러한 구성 요소를 편집하는 대신 위의 구성 요소를 복사하십시오.
 
 ## RTE 도구 모음 구성 {#dialogfullscreen}
 
-Experience Manager을 사용하면 다양한 편집 모드에 대해 리치 텍스트 편집기의 인터페이스를 다르게 구성할 수 있습니다. 기본 설정은 아래에 제공됩니다. 요구 사항에 따라 이러한 기본값을 무시할 수 있습니다. 작성자에게 제공할 도구 모음 기능만 사용자 정의합니다. 도구 모음 구성을 모두 지정할 필요는 없습니다.
+[!DNL Experience Manager] 다양한 편집 모드에 대해 리치 텍스트 편집기의 인터페이스를 다르게 구성할 수 있습니다. 기본 설정은 아래에 제공됩니다. 요구 사항에 따라 이러한 기본값을 무시할 수 있습니다. 작성자에게 제공할 도구 모음 기능만 사용자 정의합니다. 도구 모음 구성을 모두 지정할 필요는 없습니다.
 
 도구 모음을 구성하려면 다음 샘플 구성 `dialogFullScreen`을 사용하십시오.
 
@@ -219,11 +213,11 @@ Experience Manager을 사용하면 다양한 편집 모드에 대해 리치 텍�
 
 예를 들어 옵션 자체가 피쳐(예: `Bold`)인 경우, `PluginName#FeatureName` (예: `links#modifylink`) 로 지정됩니다.
 
-옵션이 팝업인 경우(예: 플러그인 일부 기능 포함), 로 `#PluginName` 지정됩니다 `#format`.
+옵션이 팝업(플러그인의 일부 기능 포함)인 경우 `#PluginName` (예: `#format`) 로 지정됩니다.
 
 옵션 그룹 간 구분 기호(`|`)는 로 지정할 수 있습니다 `-`.
 
-인라인 또는 전체 화면 모드 아래의 팝업 노드에는 사용 중인 팝오버 목록이 포함되어 있습니다. &#39;Popagers&#39; 노드 아래의 각 하위 노드의 이름은 플러그인(예: 형식)의 이름을 따릅니다. 플러그인 기능 목록이 포함된 속성 &#39;items&#39;가 있습니다(예: format#bold).
+인라인 또는 전체 화면 모드 아래의 팝업 노드에는 사용되는 팝업 오버의 목록이 포함되어 있습니다. 노드 아래의 각 하위 노드는 `popovers` 플러그인(예: format)의 이름을 따릅니다. 플러그인 기능 목록이 포함된 속성 &#39;items&#39;가 있습니다(예: format#bold).
 
 ## RTE 사용자 인터페이스 설정 및 컨텐츠 정책 {#rtecontentpolicies}
 
@@ -246,7 +240,7 @@ RTE 도구 모음에 표시된 Coral 아이콘과 사용 가능한 명령 간의
 1. 아래에 개별 아이콘에 대한 노드를 만듭니다.
 1. 각 개별 아이콘 노드에서 Coral 아이콘과 아이콘에 매핑할 명령을 지정합니다.
 
-아래는 Bold 명령을 Coral 아이콘에 매핑하는 샘플 조각입니다 `textItalic`.
+아래는 명령을 Coral 아이콘에 매핑하기 위한 샘플 조각 `Bold` 입니다 `textItalic`.
 
 ```java
 <text jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/richtext" name="./text" useFixedInlineToolbar="{Boolean}true">
@@ -270,11 +264,11 @@ RTE 도구 모음에 표시된 Coral 아이콘과 사용 가능한 명령 간의
 
 ## 알려진 제한 사항 {#known-limitations}
 
-Experience Manager RTE 기능에는 다음과 같은 제한 사항이 있습니다.
+[!DNL Experience Manager] RTE 기능에는 다음과 같은 제한 사항이 있습니다.
 
-* RTE 기능은 Experience Manager 구성 요소 대화 상자에서만 지원됩니다. RTE는 마법사 또는 Foundation 양식에서 지원되지 않습니다.
+* RTE 기능은 구성 요소 대화 상자에서만 [!DNL Experience Manager] 지원됩니다. RTE는 마법사 또는 Foundation 양식에서 지원되지 않습니다.
 
-* 하이브리드 장치에서 Experience Manager이 작동하지 않습니다. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+* [!DNL Experience Manager] 하이브리드 장치에서는 작동하지 않습니다. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
 * RTE 구성 노드의 이름을 지정하지 마십시오 `config`. 그렇지 않으면 RTE 구성은 관리자에게만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
 
@@ -284,7 +278,7 @@ Experience Manager RTE 기능에는 다음과 같은 제한 사항이 있습니�
 
 * 부동 대화 상자의 경우 팝업 대화 상자 없이 플러그인만 활성화합니다. 팝업 창이 없는 플러그인은 크기가 작고 부동 대화 상자에 가장 적합합니다.
 * 플러그인과 같은 큰 팝업을 사용하여 전체 화면 대화 상자 모드 또는 전체 화면 모드에서만 플러그인을 활성화할 수 있습니다. `Paste` 대형 팝업이 있는 플러그인에는 제작 환경이 양호하여 더 많은 화면 부동산이 필요합니다.
-* CoralUI3 RTE에 사용자 정의 플러그인을 사용하는 경우 `rte.coralui3` 라이브러리를 사용하십시오.
+* CoralUI3 RTE용 사용자 정의 플러그인을 사용하는 경우 `rte.coralui3` 라이브러리를 사용하십시오.
 
 >[!MORELIKETHIS]
 >
