@@ -2,10 +2,10 @@
 title: 컨텐츠 조각
 description: 클라우드 서비스로서의 Adobe Experience Manager 컨텐츠 조각을 사용하면 페이지 독립적 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 98%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 100%
 >
 >* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠이며, 따라서 웹 페이지 조각입니다.
+
 >
 >
 경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
@@ -58,6 +59,7 @@ ht-degree: 100%
 3. 다음을 수행할 수 있습니다.
    * **자산** 브라우저를 열고 **컨텐츠 조각**&#x200B;을 필터링합니다(기본값은 이미지). 그런 다음 필수 조각을 구성 요소 인스턴스에 드래그합니다.
    * 컨텐츠 조각 구성 요소를 선택한 다음, 도구 모음에서 **구성**&#x200B;을 선택하십시오. 대화 상자에서 선택 대화 상자를 열어 필요한 **컨텐츠 조각**&#x200B;을 찾아 선택할 수 있습니다.
+
    >[!NOTE]
    >
    >다른 방법은 특정 컨텐츠 조각을 페이지로 직접 드래그하는 것입니다. 이 경우 관련 구성 요소(컨텐츠 조각)가 자동으로 만들어집니다.
@@ -70,8 +72,8 @@ ht-degree: 100%
    >
    >추가 편집 기능에 대한 자세한 정보는 다음을 참조하십시오.
    >
-   >    * [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [페이지 컨텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [페이지 컨텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### 요소 또는 변형 선택 {#selecting-the-element-or-variation}
@@ -86,20 +88,19 @@ ht-degree: 100%
    * **단일 텍스트 요소**
    * **여러 요소**
 * **요소**
-   * 기본 **기본**&#x200B;은 항상 사용할 수 있습니다.
-   * 해당 템플릿을 사용하여 조각을 생성한 경우 선택이 가능합니다.
+   * 선택한 항목은 사용된 모델에 따라 사용할 수 있습니다.
+
    >[!NOTE]
    >
-   >사용할 수 있는 요소는 사용된 템플릿에 따라 다릅니다.
+   >사용 가능한 요소는 사용된 모델에 따라 다릅니다.
 
 * **변형**
    * 기본 **마스터**&#x200B;는 항상 사용할 수 있습니다.
    * 조각에 대해 변형을 만든 경우 선택이 가능합니다.
-* **단락**: 포함할 단락 범위를 지정합니다.
-   * **모두**
-   * **범위**: 예를 들어, `1`, `3-5`, `9-*`
-      * **제목을 소유자의 단락으로 처리**
-* **제목을 소유자의 단락으로 처리**
+
+* **ID**
+
+   * **구성 요소에 적용할 HTML ID 속성입니다.**
 
 ### 조각 편집기에 대한 빠른 연결 {#quick-connection-to-fragment-editor}
 
