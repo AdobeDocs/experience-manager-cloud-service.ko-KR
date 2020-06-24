@@ -1,16 +1,16 @@
 ---
-title: 데이터 보호 및 데이터 개인 정보 보호 규정 - 클라우드 서비스 사이트 준비 솔루션인 Adobe Experience Manager
-description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 클라우드 서비스 사이트 지원으로서 Adobe Experience Manager에 대해 알아봅니다. 여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법 및 새로운 AEM을 클라우드 서비스 프로젝트로 구현할 때 준수하는 방법이 포함됩니다. '
+title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Cloud Service 사이트 준비 Adobe Experience Manager
+description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 사이트 지원으로서 Adobe Experience Manager에 대해 알아보십시오. 여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법 및 새로운 AEM을 Cloud Service 프로젝트로 구현할 때 준수하는 방법이 포함됩니다. '
 translation-type: tm+mt
-source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1038'
 ht-degree: 1%
 
 ---
 
 
-# Adobe Experience Manager를 클라우드 서비스 사이트로서 데이터 보호 및 데이터 개인 정보 보호 규정 준비 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 사이트의 Adobe Experience Manager {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -22,13 +22,13 @@ ht-degree: 1%
 >
 >개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe의 개인정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
 
-Adobe Experience Manager as a Cloud Service Sites는 고객의 데이터 개인 정보 보호 및 보호 규정 준수 의무를 지원할 준비가 되어 있습니다. 이 페이지는 고객이 AEM Sites에서 이러한 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치 및 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해 설명합니다.
+Cloud Service 사이트로서 Adobe Experience Manager은 고객의 데이터 개인 정보 보호 및 보호 규정 준수 의무를 지원할 준비가 되어 있습니다. 이 페이지는 고객이 AEM Sites에서 이러한 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치 및 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해 설명합니다.
 
 자세한 내용은 [Adobe 개인정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->자세한 내용은 [Adobe Experience Manager를 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 클라우드 서비스](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) 준비로 참조하십시오.
+>자세한 내용은 [Adobe Experience Manager을 데이터 보호 및 데이터 개인 정보 보호 규정](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) Cloud Service으로 참조하십시오.
 
 ## AEM 작성 계층 {#aem-author-tier}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager as a Cloud Service Sites는 고객의 데이터 개인 
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-Adobe Experience Manager는 사용자를 위한 옵트인/옵트아웃 관리를 위해 사용되는 쿠키 옵트아웃 서비스의 적용을 받습니다.
+Adobe Experience Manager은 사용자에 대한 옵트인/옵트아웃을 관리하는 데 사용되는 쿠키 옵트아웃 서비스의 적용을 받습니다.
 
 옵트아웃하려면:
 
@@ -68,21 +68,25 @@ Adobe Experience Manager는 사용자를 위한 옵트인/옵트아웃 관리를
       옵트인 - 방문자 세션 집계 및 분석에 나를 `amcglobal.sc.omtrdc.net` 포함합니다(옵트아웃 쿠키 설치 안 함) - 여기를 클릭하십시오.
    위 단계에 따라 실제 링크에 액세스합니다.
 
+   <!--
+    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
+    -->
+
    >[!NOTE]
    >
    > 사용 약관의 **개인정보 보호 정책** 섹션에 [대한 추가 설명이 있습니다](https://marketing.adobe.com/resources/help/ko_KR/terms.html).
 
-## Analytics Foundation {#analytics-foundation}
+## Analytics 재단 {#analytics-foundation}
 
-AEM Sites에는 Adobe Analytics 온디맨드 서비스 내의 기능을 사용하는 Analytics Foundation과의 선택적 통합이 포함되어 있습니다.
+AEM Sites에는 Adobe Analytics 온디맨드 서비스 내에서 기능을 사용하는 Analytics Foundation과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics와 관련된 데이터 주체의 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인 정보를 참조하십시오](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
+Adobe Analytics과 관련된 데이터 주체의 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인정보 보호를 참조하십시오](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
-## Target별 개인화 기반 {#personalization-foundation-by-target}
+## Target의 개인화 기반 {#personalization-foundation-by-target}
 
-AEM Sites에는 Adobe Target 온디맨드 서비스 내의 기능을 사용하는 Target별 개인화 기반과의 선택적 통합이 포함되어 있습니다.
+AEM Sites에는 Target 온디맨드 서비스 내의 기능을 사용하는 Adobe Target에 의한 개인화 기반과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Target과 관련된 데이터 주체의 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정을 참조하십시오](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html).
+Adobe Target과 관련된 데이터 주체의 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인정보 보호 및 일반 데이터 보호 규정을 참조하십시오](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -173,7 +177,6 @@ ContextHub에서 사용한 지속 상태를 미리 보려면 다음 작업을 �
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
-
       ContextHub 저장소는 사용할 지속성 레이어를 정의하므로 모든 레이어를 선택해야 하는 지속성 현재 상태를 볼 수 있습니다.
 
 
@@ -203,7 +206,6 @@ ContextHub에서 사용한 지속 상태를 미리 보려면 다음 작업을 �
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
-
       ContextHub 저장소는 사용할 지속성 레이어를 정의하므로 모든 레이어를 선택해야 하는 지속성 현재 상태를 볼 수 있습니다.
 
 
