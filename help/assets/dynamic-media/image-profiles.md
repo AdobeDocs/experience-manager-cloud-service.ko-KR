@@ -2,9 +2,9 @@
 title: Dynamic Media 이미지 프로필
 description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 Dynamic Media 이미지 프로필을 만든 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2732'
 ht-degree: 4%
 
 ---
@@ -93,7 +93,7 @@ Unsharp mask **** 를 사용하면 최종 다운샘플링된 이미지에 선명
  </tbody>
 </table>
 
-Sharpening is described in [Sharpening Images](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
 ## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
@@ -243,12 +243,14 @@ Dynamic Media [이미지 프로필 및 비디오 프로필 정보를 참조하�
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있는 경우 자르기 상자의 모서리 핸들을 드래그하여 자르기 영역의 보기 가능한 크기를 조정합니다.
       * 이미지에 스마트 자르기 및 스마트 색상 견본이 모두 있는 경우 자르기 상자의 모서리 핸들을 드래그하여 자르기의 보기 가능한 영역의 크기를 조정합니다. 또는 이미지 아래의 스마트 견본을 누르거나 클릭한 다음(색상 견본은 정적임) 자르기 상자의 모서리 핸들을 드래그하여 견본의 볼 수 있는 영역의 크기를 조정합니다.
+
       ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png)
 
    * 스마트 자르기 상자를 이동합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있으면 자르기 상자를 새 위치로 드래그합니다.
       * 이미지에 스마트 자르기 및 스마트 색상 견본이 모두 있는 경우 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래의 스마트 견본을 누르거나 클릭한 다음(색상 견본은 정적입니다) 스마트 견본 자르기 상자를 새로운 위치로 드래그합니다.
+
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * 모든 편집 내용을 실행 취소하고 원본 스마트 자르기 또는 스마트 견본을 복원합니다(현재 편집 세션에만 적용).
