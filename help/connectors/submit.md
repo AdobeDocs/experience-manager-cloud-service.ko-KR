@@ -2,9 +2,9 @@
 title: AEM 커넥터 제출
 description: AEM 커넥터 제출
 translation-type: tm+mt
-source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '262'
 ht-degree: 4%
 
 ---
@@ -15,9 +15,9 @@ AEM 커넥터 제출
 
 아래에 제공된 정보는 AEM Connectors를 제출하는 데 유용하며 커넥터 [구현](implement.md) 및 [유지 관리에 대한](maintain.md) 아티클과 함께 읽어야 합니다.
 
-AEM Connectors는 [Adobe Exchange에 나열되어 있습니다](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace.html).
+AEM Connectors는 [Adobe Exchange에 나열되어 있습니다](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-이전 AEM 솔루션에서 패키지 관리자는 다양한 AEM 인스턴스에 커넥터를 설치하는 데 사용되었습니다. 그러나 AEM을 클라우드 서비스로 사용하는 경우 Cloud Manager의 CI/CD 프로세스 동안 커넥터가 배포됩니다. 커넥터를 배포하려면 마비되는 프로젝트의 pom.xml에서 커넥터를 참조해야 합니다.
+이전 AEM 솔루션에서 패키지 관리자는 다양한 AEM 인스턴스에 커넥터를 설치하는 데 사용되었습니다. 그러나 AEM을 Cloud Service으로 사용하는 경우 Cloud Manager의 CI/CD 프로세스 동안 커넥터가 배포됩니다. 커넥터를 배포하려면 마비되는 프로젝트의 pom.xml에서 커넥터를 참조해야 합니다.
 
 프로젝트에 패키지를 포함할 수 있는 방법에는 다양한 옵션이 있습니다.
 
