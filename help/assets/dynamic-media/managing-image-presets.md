@@ -2,9 +2,9 @@
 title: 이미지 사전 설정 관리
 description: 이미지 사전 설정을 이해하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3651'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Managing Image Presets{#managing-image-presets}
 
-AEM Assets는 이미지 사전 설정을 사용하여 서로 다른 크기, 서로 다른 형식 또는 동적으로 생성되는 다른 이미지 속성과 함께 이미지를 동적으로 제공할 수 있습니다. 각 이미지 사전 설정은 이미지 표시를 위한 크기 및 형식 지정 명령의 사전 정의된 컬렉션을 나타냅니다. When you create an Image Preset, you choose a size for image delivery. 또한 이미지를 볼 수 있도록 전달할 때 이미지의 모양이 최적화되도록 서식 명령을 선택합니다.
+이미지 사전 설정을 사용하면 AEM Assets이 서로 다른 크기, 서로 다른 형식 또는 동적으로 생성되는 다른 이미지 속성과 함께 이미지를 동적으로 제공할 수 있습니다. 각 이미지 사전 설정은 이미지 표시를 위한 크기 및 형식 지정 명령의 사전 정의된 컬렉션을 나타냅니다. When you create an Image Preset, you choose a size for image delivery. 또한 이미지를 볼 수 있도록 전달할 때 이미지의 모양이 최적화되도록 서식 명령을 선택합니다.
 
 관리자는 에셋 내보내기를 위한 사전 설정을 만들 수 있습니다. 사용자는 이미지를 내보낼 때 사전 설정을 선택할 수 있으며 관리자가 지정한 사양에 맞게 이미지를 다시 포맷할 수 있습니다.
 
@@ -26,9 +26,9 @@ AEM Assets는 이미지 사전 설정을 사용하여 서로 다른 크기, 서�
 
 ## 이미지 사전 설정 이해 {#understanding-image-presets}
 
-매크로와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 및 서식 지정 명령의 사전 정의된 모음입니다. To understand how Image Presets work, suppose your web site requires each product image to appear in different sizes, different formats, and compression rates for desktop and mobile delivery.
+매크로와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 및 서식 지정 명령의 사전 정의된 모음입니다. 이미지 사전 설정이 작동하는 방식을 이해하려면 웹 사이트에서 각 제품 이미지가 서로 다른 크기, 서로 다른 형식 및 데스크탑 및 모바일 전달의 압축 속도로 나타나야 한다고 가정합니다.
 
-두 개의 이미지 사전 설정을 만들 수 있습니다. 하나는 데스크탑 버전의 경우 500 x 500픽셀이고 다른 하나는 모바일 버전의 경우 150 x 150픽셀입니다. 두 개의 이미지 사전 설정 `Enlarge` 을 만듭니다. 하나는 500x500픽셀의 이미지를 표시하기 위해 호출되고 다른 하나는 150 x 150픽셀의 이미지 `Thumbnail` 를 표시하기 위해 호출됩니다. 이미지를 `Enlarge` 크기와 `Thumbnail` 크기로 전달하려면 AEM이 이미지 사전 설정 확대 및 축소판 이미지 사전 설정의 정의를 조회합니다. 그런 다음 AEM은 각 이미지 사전 설정의 크기와 서식 사양에 맞게 이미지를 동적으로 생성합니다.
+두 개의 이미지 사전 설정을 만들 수 있습니다. 하나는 데스크탑 버전의 경우 500 x 500픽셀이고 다른 하나는 모바일 버전의 경우 150 x 150픽셀입니다. 두 개의 이미지 사전 설정을 만듭니다. 이 사전 설정 `Enlarge` 은 이미지를 500x500픽셀로 표시하고 하나는 이미지를 150 x 150픽셀로 표시하기 위해 호출됩니다 `Thumbnail` . 이미지를 `Enlarge` 크기와 `Thumbnail` 크기로 전달하려면 AEM이 이미지 사전 설정 확대 및 축소판 이미지 사전 설정의 정의를 조회합니다. 그런 다음 AEM은 각 이미지 사전 설정의 크기와 서식 사양에 맞게 이미지를 동적으로 생성합니다.
 
 이미지를 동적으로 전달할 때 크기가 축소되면 선명도와 세부 묘사가 손실될 수 있습니다. 이러한 이유로 각 이미지 사전 설정에는 특정 크기로 전달될 때 이미지를 최적화하기 위한 서식 지정 컨트롤이 포함되어 있습니다. 이러한 컨트롤을 사용하면 웹 사이트 또는 애플리케이션에 이미지를 전달할 때 선명하고 명확하게 이미지를 전달할 수 있습니다.
 
@@ -67,7 +67,7 @@ Adobe Illustrator의 파일 포맷은 PDF의 변형입니다. AEM Assets 컨텍�
 
 자산을 열고 콘텐츠 메뉴를 누른 다음 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지를 선택하면 하위 자산이나 페이지를 볼 수 있습니다]**. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 워크플로우 구성 요소에 의해 `Create Sub Asset` 추출됩니다. 그런 다음 기본 자산 아래 `page1.pdf`에, `page2.pdf`등으로 저장됩니다. 저장된 후에는 워크플로우가 `DAM Update Asset` 처리합니다.
 
-Dynamic Media를 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
+Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
 
 1. 워크플로우에서 `DAM Update Asset` 프로세스 구성 요소는 구성된 해상도를 사용하여 원본 자산의 첫 페이지를 `Rasterize PDF/AI Image Preview Rendition` `cqdam.preview.png` 변환으로 래스터화합니다.
 
@@ -86,7 +86,7 @@ Dynamic Media를 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 
 워크플로우 `Rasterize PDF/AI Image Preview Rendition` 를 통해 프로세스 구성 요소 옵션에 `DAM Update Asset` 액세스합니다.
 
-왼쪽 상단에 있는 Adobe Experience Manager를 탭하고 **[!UICONTROL 도구 > 워크플로우 > 모델로 이동합니다]**. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산]**&#x200B;업데이트를 선택한 다음 도구 모음에서 **[!UICONTROL 편집을 탭합니다]**. DAM 자산 업데이트 워크플로우 페이지에서 프로세스 구성 요소를 두 번 눌러 해당 단계 속성 대화 상자를 엽니다. `Rasterize PDF/AI Image Preview Rendition`
+왼쪽 상단에 있는 Adobe Experience Manager을 누르고 도구 > 워크플로우 > 모델 **[!UICONTROL 으로 이동합니다]**. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산]**&#x200B;업데이트를 선택한 다음 도구 모음에서 **[!UICONTROL 편집을 탭합니다]**. DAM 자산 업데이트 워크플로우 페이지에서 프로세스 구성 요소를 두 번 눌러 해당 단계 속성 대화 상자를 엽니다. `Rasterize PDF/AI Image Preview Rendition`
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -173,9 +173,9 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 ### 이미지 축소판 크기 구성 {#configuring-image-thumbnail-size}
 
-DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 **[!UICONTROL 구성할 수]** 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. 정적 축소판 생성을 위한 동적 이미지 에셋과&#x200B;**[!UICONTROL 다른(]**&#x200B;프로세스 축소판&#x200B;**[!UICONTROL )는 동적 미디어 프로세스 이미지 에셋]**&#x200B;에 사용되거나 다른 모든 프로세스에서 축소판을 생성하지 못할 경우 *둘* 모두에 동일한 설정이 있어야 합니다.
+DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 **[!UICONTROL 구성할 수]** 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. 정적 축소판 생성을 위한 동적 이미지 에셋과&#x200B;**[!UICONTROL 다른(]**&#x200B;프로세스 축소판&#x200B;**[!UICONTROL )의 경우 또는 다른 모든 프로세스에서 축소판을 생성하지 못하는 경우]**&#x200B;둘 ** 모두 동일한 설정을 사용해야 합니다.
 
-[ **[!UICONTROL 다이내믹 미디어 프로세스 이미지 자산]** ] 단계에서는 이미지 서버에서 축소판을 생성하며 이 구성은 [ **[!UICONTROL 프로세스 축소판]** ] 단계에 적용된 구성과 독립적입니다. 축소판 **[!UICONTROL 처리 단계를 통해]** 축소판을 생성하는 것은 축소판을 만드는 데 가장 느리지만 메모리를 많이 사용하는 방법입니다.
+[ **[!UICONTROL Dynamic Media 처리 이미지 자산]** ] 단계에서는 이미지 서버에서 축소판을 생성하며 이 구성은 [ **[!UICONTROL 프로세스 축소판]** ] 단계에 적용된 구성과 독립적입니다. 축소판 **[!UICONTROL 처리 단계를 통해]** 축소판을 생성하는 것은 축소판을 만드는 데 가장 느리지만 메모리를 많이 사용하는 방법입니다.
 
 축소판 크기 조정은 다음 형식으로 정의됩니다. **[!UICONTROL width:height:center]**(예: *80:80:false)입니다*. 너비와 높이는 축소판의 크기(픽셀 단위)를 결정합니다. center 값은 false 또는 true이고, true로 설정된 경우 축소판 이미지의 크기가 구성에 지정된 대로 정확하게 지정됩니다. 크기가 조정된 이미지가 더 작은 경우 축소판 내에서 가운데에 표시됩니다.
 
@@ -193,7 +193,7 @@ DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 �
 **이미지 축소판 크기를 구성하려면**
 
 1. 도구 **[!UICONTROL > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집을 누릅니다]**.
-1. Dynamic **[!UICONTROL Media Process Image Assets]** 단계를 누르고 **[!UICONTROL 축소판]** 탭을 누릅니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인을 누릅니다]**.
+1. Dynamic Media 처리 **[!UICONTROL 이미지 자산]** 단계를 누르고 **[!UICONTROL 축소판]** 탭을 누릅니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인을 누릅니다]**.
 
    ![6_5_dynamicmediaprocesseassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -201,7 +201,7 @@ DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 �
 
    >[!NOTE]
    >
-   >[ **[!UICONTROL 프로세스 축소판]** ] 단계의 thumbnails 인수 값은 [ **[!UICONTROL 다이내믹 미디어 프로세스 이미지 자산] 단계의 축소판]** 인수와 일치해야 합니다.
+   >[ **[!UICONTROL 프로세스 축소판]** ] 단계의 thumbnails 인수에 있는 값은 [Dynamic Media 처리 이미지 자산] 단계의 [축소판] 인수와 일치해야 **[!UICONTROL 합니다]** .
 
 1. 저장을 **[!UICONTROL 눌러]** 워크플로우에 변경 사항을 저장합니다.
 
@@ -394,7 +394,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도, Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">이미지 서버 프로토콜 명령 참조에서 정의됩니다</a>.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>Dynamic Media은 UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 [ <strong>이미지 수정자] 필드에 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다</strong> . 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조에서 정의됩니다</a>.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li>
      <li>현지화 명령: <code>locale=</code> and <code>req=xlate</code></li>
@@ -403,7 +403,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>비코어 다이내믹 미디어 서비스: SVG, 이미지 렌더링 및 Web-to-Print</li>
+     <li>비코어 Dynamic Media 서비스: SVG, 이미지 렌더링 및 Web-to-Print</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -475,4 +475,4 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
 ### 이미지 사전 설정 삭제 {#deleting-image-presets}
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산 > 이미지 사전 설정으로 이동합니다]**.
-1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제를 클릭합니다**. Dynamic Media에서 삭제를 확인합니다. 삭제를 **[!UICONTROL 눌러]** 삭제하거나 **[!UICONTROL 취소를 눌러]** 중단합니다.
+1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제를 클릭합니다**. Dynamic Media에서 삭제할 것임을 확인합니다. 삭제를 **[!UICONTROL 눌러]** 삭제하거나 **[!UICONTROL 취소를 눌러]** 중단합니다.
