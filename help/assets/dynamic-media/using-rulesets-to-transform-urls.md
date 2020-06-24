@@ -1,10 +1,10 @@
 ---
 title: 규칙 세트를 사용하여 URL 변환
-description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다.'
+description: 'Dynamic Media에 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다.'
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 규칙 세트를 사용하여 URL 변환 {#using-rulesets-to-transform-urls}
 
-Dynamic Media에서 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. 각 규칙은 하나 이상의 조건과 하나 이상의 작업으로 구성됩니다. 규칙은 조건에 대해 XML 데이터를 평가하며 조건이 충족되면 적절한 작업을 수행합니다. 규칙 세트의 예는 다음과 같습니다.
+Dynamic Media에 규칙 세트를 배포하여 URL을 변형할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. 각 규칙은 하나 이상의 조건과 하나 이상의 작업으로 구성됩니다. 규칙은 조건에 대해 XML 데이터를 평가하며 조건이 충족되면 적절한 작업을 수행합니다. 규칙 세트의 예는 다음과 같습니다.
 
 * MIME 형식 접미사를 추가하는 중입니다. 많은 서비스 및 웹 사이트에는 URL에 추가하는 등 이미지 접미사 `.jpg` 가 필요합니다.
 * SEO용 URL의 폴더 경로 만들기(검색 엔진 최적화) 목적
@@ -30,14 +30,14 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변형할 수 있습니
 
    URL [에서 특수 문자 제거를 참조하십시오](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-다이내믹 미디어 컨텍스트에서 자산 정보를 관리하기 위해 XML 기반 시스템을 사용하는 웹 사이트는 XML 파일을 다이내믹 미디어에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 자산을 제공하기 위한 사전 처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media와 통합된 시스템의 비즈니스 로직을 충족하기 위해 표준 URL 프로토콜 포맷을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
+Dynamic Media에서 XML 기반 시스템을 사용하여 자산 정보를 관리하는 웹 사이트에서는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋을 제공하는 사전 처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media과 통합된 시스템의 비즈니스 로직을 충족하기 위해 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
 
 >[!CAUTION]
 >
 >규칙 세트를 사용할 때는 주의하십시오. Dynamic Media 컨텐츠가 웹 사이트에 표시되지 않도록 방지할 수 있습니다.
 
 고유한 규칙 세트를 만드는 데 도움이 되는 샘플 규칙 세트를 사용할 수 있습니다.
-규칙 [세트 참조를 참조하십시오](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html).
+규칙 [세트 참조를 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 모든 규칙 세트 만들기와 마찬가지로 XML 파일을 업로드하기 전에 xmlvalid와 같은 XML 유효성 검사기 프로그램을 사용하여 XML 파일이 유효한지 확인하십시오.
 규칙 세트 [문제 해결을 참조하십시오](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
@@ -76,7 +76,7 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변형할 수 있습니
 1. 설정 페이지의 오른쪽 아래에 있는 닫기를 **[!UICONTROL 클릭합니다]**.
 1. 이미지 서버 게시 작업을 실행합니다.
 
-   규칙 세트 조건은 실시간 다이내믹 미디어 이미지 서버에 대한 요청에 적용됩니다.
+   규칙 세트 조건은 라이브 Dynamic Media 이미지 서버에 대한 요청에 적용됩니다.
 
    규칙 세트 파일을 변경하면 업데이트된 규칙 세트 파일을 다시 업로드하고 다시 게시할 때 변경 내용이 즉시 적용됩니다.
 
