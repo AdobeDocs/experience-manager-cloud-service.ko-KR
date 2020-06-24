@@ -2,9 +2,9 @@
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '10169'
+source-wordcount: '10146'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows �
 * 비디오 에셋을 효율적으로 관리할 수 있는 완벽한 메타데이터 지원을 통해 비디오를 구성, 검색 및 검색할 수 있습니다.
 * 응용 비디오 세트를 웹뿐만 아니라 iPhone, iPad, Android, Blackberry 및 Windows 폰을 비롯한 데스크탑 및 모바일 장치에 제공합니다.
 
-적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. Scene7 [뷰어 참조 안내서를 참조하십시오](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html).
+적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. Scene7 [뷰어 참조 안내서를 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다. [Blackberry에서 지원되는 비디오 포맷입니다](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -161,7 +161,7 @@ Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 동적 [비디오 재생](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 샘플을 참조하십시오.
 
-AEM [자산에 대한 AEM 및 Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) 및 [뷰어는 Adobe Scene7 뷰어 참조 안내서에서만](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) 참조하십시오.
+AEM [자산에 대한 AEM 및 Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) 및 [뷰어는 Adobe Scene7 뷰어 참조 안내서에서만](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 참조하십시오.
 
 ## 모범 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
@@ -173,7 +173,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하고 내장된 재생을 제공하며 브라우저 기능에 따라 적응형 및 점진적 스트리밍을 사용하는 단일 플레이어로 통합함으로써 리치 미디어 컨텐츠의 범위를 데스크탑 및 모바일 사용자 모두로 확대하고 간소화된 비디오 경험을 제공할 수 있습니다.
 
-Adobe [Scene7 뷰어 참조 안내서에서 HTML5 뷰어](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) 정보를 참조하십시오.
+Adobe [Scene7 뷰어 참조 안내서에서 HTML5 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 정보를 참조하십시오.
 
 ### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 디바이스에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -356,7 +356,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 **해상도 **비디오 파일의 높이와 너비를 픽셀 단위로 설명합니다. 대부분의 소스 비디오는 고해상도(예: 1920 x 1080)에 저장됩니다. 스트리밍 목적으로 소스 비디오는 더 작은 해상도(640 x 480 이하)로 압축됩니다.
 
-해상도와 데이터 전송률은 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록 해상도가 높을수록 더 높은 데이터 속도가 필요합니다. 예를 들어 320 x 240 해상도 및 640 x 480 해상도 비디오 파일의 프레임당 픽셀 수를 고려해 보십시오.
+해상도와 데이터 전송률은 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록 해상도가 높을수록 데이터 비율이 높아야 합니다. 예를 들어 320 x 240 해상도 및 640 x 480 해상도 비디오 파일의 프레임당 픽셀 수를 고려해 보십시오.
 
 | 해상도 | 프레임당 픽셀 |
 |--- |--- |
@@ -395,7 +395,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 이 비율을 계산하려면 소스 너비를 인코딩된 너비로 나누어 너비 비율을 가져옵니다. 그런 다음 소스 높이를 인코딩된 높이로 나누면 높이 비율이 높아집니다.
 
-결과 비율이 정수 단위인 경우 비디오 크기가 최적으로 조절됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
+결과 비율이 정수 단위인 경우, 비디오가 최적으로 크기가 조정됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
 
 예를 들어 소스 비디오가 1920 x 1080이라고 가정합니다. 다음 표에서 세 개의 인코딩된 비디오는 사용할 최적의 인코딩 설정을 제공합니다.
 
@@ -1008,7 +1008,7 @@ Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기�
 
 Scene7 뷰어 참조 및 Scene7 HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
-Scene7 [뷰어 참조 안내서를 참조하십시오](https://marketing.adobe.com/resources/help/ko_KR/s7/viewers_ref/index.html).
+Scene7 [뷰어 참조 안내서를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html).
 
 <!-- 
 
@@ -1031,7 +1031,7 @@ Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 
 
    이 `config2` 매개 변수는 HTML5 뷰어에서 추적을 활성화합니다. 또한 비디오 보고 및 고객별 Adobe Analytics 구성에 대한 구성 정보가 포함된 회사별 사전 설정입니다.
 
-   config2 매개 변수에 대한 올바른 값이 포함 코드 **[!UICONTROL 및 복제]** UICONTROL URL **[]** 함수에서 모두 찾을 수 있습니다. UICONTROL URL 복사 **[명령의 URL에서 찾을 매개 변수는]** `&config2=<value>` 입니다. 이 값은 거의 항상 `companypreset`사용되지만, 어떤 경우에는 이 값 `companypreset-1`이 될 수도 `companypreset-2`있고, 기타 등일 수도 있습니다.
+   config2 매개 변수에 대한 올바른 값이 포함 코드 **[!UICONTROL 및 복제]** UICONTROL URL **[함수에서 모두]** 있습니다. UICONTROL URL 복사 **[명령의 URL에서 찾을 매개 변수는]** `&config2=<value>` 입니다. 이 값은 거의 항상 `companypreset`사용되지만, 어떤 경우에는 이 값 `companypreset-1`이 될 수도 `companypreset-2`있고, 기타 등일 수도 있습니다.
 
 1. 사용자 정의 비디오 뷰어 코드에서 다음을 수행하여 뷰어 페이지에 AppMeasurementBridge .jsp를 추가합니다.
 
@@ -1081,7 +1081,7 @@ to attach the component to the trackingManager. 한 페이지에서 여러 뷰�
 
 Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이러한 전환은 JSON 텍스트를 숨김과 전체 비디오 스크립트로 웹 페이지에 포함시킬 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링 및 색인화하여 비디오를 보다 손쉽게 검색할 수 있도록 하고 비디오 컨텐츠에 대한 추가 정보를 고객에게 제공할 수 있습니다.
 
-URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제공 API 도움말](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) 의 정적(이미지가 아님) 컨텐츠 ** 제공을 참조하십시오.
+URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제공 API 도움말](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) 의 정적(이미지가 아님) 컨텐츠 ** 제공을 참조하십시오.
 
 **비디오에 캡션 또는 자막을 추가하려면**
 
