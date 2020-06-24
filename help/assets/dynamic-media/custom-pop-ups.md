@@ -2,9 +2,9 @@
 title: 빠른 보기를 사용하여 사용자 지정 팝업 만들기
 description: 기본 빠른 보기는 제품 정보와 함께 팝업이 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 사용자 정의 컨텐츠가 팝업에 표시되도록 트리거할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1023'
 ht-degree: 2%
 
 ---
@@ -129,9 +129,9 @@ ht-degree: 2%
 
    다음 페이지에서 방법에 대한 자세한 `quickViewActivate` 내용을 살펴보십시오.
 
-   * 대화형 이미지 뷰어: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
-   * 대화형 비디오 뷰어: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
-   * 대화형 비디오 뷰어에서 대화형 데이터 지원: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html)
+   * 대화형 이미지 뷰어 - [이벤트 콜백](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * 대화형 비디오 뷰어 - [이벤트 콜백](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * 인터랙티브한 비디오 뷰어에서 인터랙티브한 데이터 지원 - [인터랙티브한 데이터 지원](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. 다음을 수행합니다.
 
@@ -207,8 +207,8 @@ ht-degree: 2%
 
    다음 페이지에서 방법에 대한 자세한 `init()` 내용을 살펴보십시오.
 
-   * 대화형 이미지 뷰어: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html)
-   * 대화형 비디오 뷰어: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html)
+   * 대화형 이미지 뷰어 - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * 대화형 비디오 뷰어 - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. 이전 단계에 설명된 팝업을 뷰어에 첨부하려면 다음 코드를 사용하십시오.
 
