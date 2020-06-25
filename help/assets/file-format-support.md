@@ -1,11 +1,11 @@
 ---
-title: Experience Manager Assets가 클라우드 서비스로 지원하는 파일 포맷 및 MIME 유형
-description: Experience Manager Assets가 클라우드 서비스로 지원하는 파일 형식 및 MIME 형식입니다.
+title: Experience Manager 에셋에서 Cloud Service으로 지원하는 파일 형식 및 MIME 형식
+description: Experience Manager 자산에서 Cloud Service으로 지원하는 파일 형식 및 MIME 형식입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '821'
 ht-degree: 7%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 7%
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager as a Cloud Service는 포맷에 상관없이 모든 바이너리 파일에 대해 저장, 메타데이터 온라인 관리, 버전 관리, 업로드 및 다운로드 등의 기본적인 컨텐츠 관리 기능을 지원합니다. Adobe Experience Manager Assets는 다양한 파일 포맷을 지원하며 각 제품 기능에는 서로 다른 포맷을 지원합니다.
+Cloud Service은 포맷과 상관없이 모든 바이너리 파일에 대한 저장 공간, 메타데이터 온라인 관리, 버전 관리, 업로드 및 다운로드 등 기본적인 컨텐츠 관리 기능을 지원합니다. Adobe Experience Manager 에셋은 다양한 파일 포맷을 지원하며 각 제품 기능에는 서로 다른 포맷에 대한 다양한 지원이 포함되어 있습니다.
 
-또한 Adobe Experience Manager Assets는 미리 보기 및 표현물을 생성하고 전체 텍스트 인덱싱을 위한 메타데이터와 텍스트를 추출하는 확장된 지원을 제공합니다. 이러한 확장 지원은 [에셋 마이크로서비스를 통해 제공됩니다](asset-microservices-configure-and-use.md).
+또한 Experience Manager 자산은 미리 보기 및 표현물을 생성하고 전체 텍스트 색인 작업을 위한 메타데이터와 텍스트를 추출하는 확장된 지원을 제공합니다. 이러한 확장 지원은 [에셋 마이크로서비스를 통해 제공됩니다](asset-microservices-configure-and-use.md).
 
 자산 마이크로서비스를 사용하는 자산 전환의 주요 특징은 다음과 같습니다.
 
@@ -86,6 +86,21 @@ Adobe Experience Manager as a Cloud Service는 포맷에 상관없이 모든 바
 * 16보다 비트 심도가 높은 PSD 파일
 * 부동 소수점 데이터가 있는 TIFF 파일
 * Lab 색상 공간이 있는 TIFF 파일
+
+## 지원되는 3D 포맷 {#support-3d-formats}
+
+다음 3D 형식 목록이 지원됩니다.
+
+Dynamic Media [에서 3D 자산 작업을 참조하십시오.](/help/assets/dynamic-media/assets-3d.md)
+
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 배달 |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## [!DNL Camera RAW] formats {#camera-raw-formats}
 
@@ -203,7 +218,7 @@ Adobe Experience Manager as a Cloud Service는 포맷에 상관없이 모든 바
 
 ## 오디오 포맷 {#audio-formats}
 
-클라우드 서비스로서의 에셋은 AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 포맷에 대한 XMP 메타데이터 추출 지원을 제공합니다.
+Cloud Service의 에셋은 AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 포맷에 대한 XMP 메타데이터 추출 지원을 제공합니다.
 
 >[!MORELIKETHIS]
 >
