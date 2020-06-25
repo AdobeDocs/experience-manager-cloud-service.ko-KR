@@ -3,7 +3,7 @@ title: Experience Manager 에셋에서 Cloud Service으로 지원하는 파일 �
 description: Experience Manager 자산에서 Cloud Service으로 지원하는 파일 형식 및 MIME 형식입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
+source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 7%
@@ -87,11 +87,11 @@ Cloud Service은 포맷과 상관없이 모든 바이너리 파일에 대한 저
 * 부동 소수점 데이터가 있는 TIFF 파일
 * Lab 색상 공간이 있는 TIFF 파일
 
-## 지원되는 3D 포맷 {#support-3d-formats}
+## 3D 포맷 {#support-3d-formats}
 
 다음 3D 형식 목록이 지원됩니다.
 
-Dynamic Media [에서 3D 자산 작업을 참조하십시오.](/help/assets/dynamic-media/assets-3d.md)
+Dynamic Media [에서 3D 에셋을 사용한 작업을 참조하십시오.](/help/assets/dynamic-media/assets-3d.md)
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 배달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
