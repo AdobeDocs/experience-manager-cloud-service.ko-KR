@@ -2,9 +2,9 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1871'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,12 @@ CRA(Cloud Readiness Analyzer)를 실행하기 위한 중요한 고려 사항을 
 
 * CRA 보고서는 Adobe Experience Manager(AEM) [패턴 탐지기 출력을 사용하여 만듭니다](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html). CRA에서 사용하는 패턴 탐지기 버전은 CRA 설치 패키지에 포함되어 있습니다.
 
-* CRA는 관리자 **** 사용자 또는 관리자 **그룹의 사용자만 실행할 수** 있습니다.
+* CRA는 관리자 **** 사용자 또는 **관리자** 그룹의 사용자만 실행할 수 있습니다.
 
 * CRA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
+
+   >[!NOTE]
+   > AEM 6.1 [에 CRA](#installing-on-aem61) 설치에 대한 특별 요구 사항은 AEM 6.1에 설치를 참조하십시오.
 
 * CRA는 모든 환경에서 실행할 수 있지만 *스테이지* 환경에서 실행되는 것이 좋습니다.
 
@@ -169,7 +172,9 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 * `500 Internal Server Error`: 내부 서버 오류가 발생했음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
 * `503 Service Unavailable`: 서버가 다른 응답으로 사용 중이어서 이 요청을 적시에 처리할 수 없음을 나타냅니다. 이는 동기 요청이 수행된 경우에만 발생합니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
 
-## 캐시 수명 조정 {#cache-adjustment}
+## 관리자 정보
+
+### 캐시 수명 조정 {#cache-adjustment}
 
 기본 CRA 캐시 수명은 24시간입니다. 보고서를 새로 고치고 캐시를 다시 생성하는 옵션과 함께 AEM 인스턴스와 HTTP 인터페이스 모두에서 이 기본값은 CRA의 대부분의 사용에 적절할 것입니다. 보고서 생성 시간이 AEM 인스턴스에 특히 긴 경우 보고서 재생성을 최소화하기 위해 캐시 수명을 조정할 수 있습니다.
 
@@ -178,7 +183,12 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 이 속성의 값은 캐시 수명(초)입니다. 관리자는 CRX/DE Lite를 사용하여 캐시 수명을 조정할 수 있습니다.
 
+### AEM 6.1에 설치 {#installing-on-aem61}
 
+CRA는 Pattern Detector를 실행하기 `repository-reader-service` 위해 명명된 시스템 서비스 사용자 계정을 사용합니다. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서 이 계정은 CRA를 설치하기 *전에* 다음 단계를 수행하여 만들어야 합니다.
 
+1. 사용자를 만들려면 [새 서비스 사용자](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) 만들기의 지침을 따르십시오. UserID를 설정하고 중간 경로 `repository-reader-service` 를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
 
+2. 사용자 및 그룹 [관리의](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups)지침, 특히 그룹에 사용자 추가 지침을 `repository-reader-service` 따라 `administrators` 그룹에 사용자를 추가합니다.
 
+3. 소스 AEM 인스턴스에 패키지 관리자를 통해 CRA 패키지를 설치합니다. 시스템 서비스 사용자에 대한 ServiceUserMapper 구성에 필요한 구성 수정을 `repository-reader-service` 추가합니다.
