@@ -1,11 +1,11 @@
 ---
-title: 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager
-description: '차이점 및 새로운 기능 - 클라우드 서비스로서의 Adobe Experience Manager(AEM)입니다. '
+title: 차이점 및 새로운 기능 - Cloud Service의 Adobe Experience Manager
+description: 'Cloud Service의 차이점과 새로운 기능 - Adobe Experience Manager(AEM)입니다. '
 translation-type: tm+mt
-source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 6%
+source-wordcount: '1809'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 * 관리 서비스
 
-이러한 이전 접근 방식과 클라우드 서비스로서의 AEM 사이에는 고유한 차이점이 있습니다.
+이러한 이전 접근 방식과 Cloud Service으로 AEM은 본질적으로 다릅니다.
 
 * [아키텍처](#architecture)
 * [업그레이드](#upgrades)
@@ -72,7 +72,7 @@ ht-degree: 6%
 >
 >자세한 내용은 [도입 배포를 참조하십시오](/help/implementing/deploying/overview.md).
 
-이제 클라우드 서비스로 AEM에서 연속 통합 및 연속 배달(CI/CD)을 사용하여 프로젝트가 완전히 최신 상태인지 확인합니다. 따라서 모든 업그레이드 작업은 완전히 자동화되므로 사용자가 서비스를 중단할 필요가 없습니다.
+이제 Cloud Service으로 AEM에서 연속 통합 및 연속 배달(CI/CD)을 사용하여 프로젝트가 완전히 최신 버전인지 확인합니다. 따라서 모든 업그레이드 작업은 완전히 자동화되므로 사용자가 서비스를 중단할 필요가 없습니다.
 
 Adobe는 서비스의 모든 운영 인스턴스를 최신 버전의 AEM 코드 베이스로 업데이트하기 위해 사전에 조치를 취합니다.
 
@@ -94,7 +94,7 @@ Adobe는 서비스의 모든 운영 인스턴스를 최신 버전의 AEM 코드 
 
 ## Cloud Manager {#cloud-manager}
 
-Adobe Cloud Manager는 인스턴스에 대한 모든 업데이트를 제어하므로 AEM을 클라우드 서비스로 지속적으로 업그레이드할 때 없어서는 안 될 필수 사항입니다.
+Adobe Cloud Manager는 인스턴스에 대한 모든 업데이트를 제어하므로 AEM을 Cloud Service으로 지속적으로 업그레이드할 때 없어서는 안 되는 필수 사항입니다.
 
 새로운 버전의 클라우드 서비스를 사용할 수 있는 경우 Adobe에서 업데이트를 트리거할 수 있습니다. 또는 Cloud Manager에서 제공하는 파이프라인을 사용하여 애플리케이션 업데이트를 트리거할 수 있습니다.
 
@@ -102,7 +102,7 @@ Adobe Cloud Manager는 인스턴스에 대한 모든 업데이트를 제어하�
 
 * AEM 프로그램 및 환경을 관리하는 데 사용됩니다.
 
-* 클라우드 서비스로서 AEM의 필수 구성 요소 각각의 새 테넌트는 클라우드 관리자 액세스에 대해 먼저 프로비저닝되며
+* Cloud Service로서 AEM의 필수 구성 요소 각각의 새 테넌트는 클라우드 관리자 액세스에 대해 먼저 프로비저닝되며
 
 * 운영 및 개발 담당 직원을 위한 단일 시작 지점
 
@@ -110,11 +110,11 @@ Adobe Cloud Manager는 인스턴스에 대한 모든 업데이트를 제어하�
 
 * 고객 라이센스 계약,
 
-* AEM을 클라우드 서비스로 사용하는 경우 활성화 또는 트레이닝에 내부 연기자
+* AEM을 Cloud Service으로 활성 또는 트레이닝에 사용하는 경우 내부 제어 행위자로부터
 
 * 시험버전과 같은 외부 제어 프로세스는 Adobe.com에서 시작되었습니다.
 
-클라우드 관리자는 클라우드 서비스로 AEM의 기본 구성 요소를 만들고 구성할 수 있는 셀프 서비스 포털로 발전했습니다.
+Cloud Manager는 AEM의 Cloud Service 기본 구성 요소를 만들고 구성할 수 있는 셀프 서비스 포털로 발전했습니다.
 
 * 새로운 프로그램 제작 및 관리
 
@@ -166,11 +166,11 @@ AEM 프로젝트를 시작 및 관리하는 것은 Adobe가 많은 측면을 담
 >
 >자세한 내용은 [개발 지침](/help/implementing/developing/introduction/development-guidelines.md) 및 개발 - WKND 자습서 [를 참조하십시오](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-클라우드 서비스로 AEM을 지원하는 새로운 아키텍처에는 전반적인 개발자 경험에 대한 몇 가지 주요 변경 사항이 포함됩니다. 클라우드 서비스로 AEM을 사용하는 주요 목표 중 하나는 경험 있는 고객(온-프레미스 또는 Adobe Managed Services 컨텍스트에서 AEM을 사용한 고객)이 사용자 지정된 코드의 대량 작성 없이 가능한 한 빨리 클라우드 서비스로 AEM으로 마이그레이션할 수 있도록 허용하는 것입니다. 그러나 일부 조정이 필요할 수 있습니다.
+Cloud Service으로 AEM을 지원하는 새로운 아키텍처에는 전반적인 개발자 경험에 대한 몇 가지 주요 변경 사항이 포함됩니다. Cloud Service로서 AEM에 대한 주요 목표 중 하나는 경험 있는 고객(AEM을 온-프레미스 또는 Adobe Managed Services 컨텍스트에서 사용)이 사용자 지정된 코드의 벌크를 다시 작성하지 않고도 가능한 한 빨리 Cloud Service으로 AEM으로 마이그레이션할 수 있도록 허용하는 것입니다. 그러나 일부 조정이 필요할 수 있습니다.
 
 ### 클라우드 개발 {#aem-as-a-cloud-service-developing-cloud-development}
 
-기존 AEM 응용 프로그램이 클라우드 서비스로 AEM에서 실행되려면 다음 단계가 필요합니다.
+기존 AEM 응용 프로그램이 Cloud Service으로 AEM에서 실행되려면 다음 단계가 필요합니다.
 
 * 응용 프로그램 코드와 구성은 관련 Cloud Manager 프로그램의 Git 코드 리포지토리에 저장해야 합니다.
 * 애플리케이션 코드와 구성은 기준 AEM 이미지의 최신 버전(매일 변경될 수 있음)과 호환되어야 합니다.
@@ -180,13 +180,13 @@ AEM 프로젝트를 시작 및 관리하는 것은 Adobe가 많은 측면을 담
 
 이 프로세스를 클라우드 퍼스트 개발이라고 합니다. 종단 간 지속 시간은 몇 분(애플리케이션의 복잡성에 따라 20~50분)이 소요되기 때문에 클라우드에서 보류 중인 코드 및 구성 변경을 시도하기 전에 신속한 개발 방법을 수용해야 합니다.
 
-OSGI 번들 및 관련 구성이 관리되고 이전에 AEM QuickStart의 일부였던 웹 콘솔은 더 이상 클라우드 서비스 환경으로 AEM 사용자가 직접 액세스할 수 없습니다. 이 인터페이스는 새 개발자 콘솔을 사용하여 읽기 전용 모드로 여전히 액세스할 수 있습니다. 개발자는 이 콘솔을 사용하여 작성자 또는 게시 서비스의 특정 노드를 선택하여 직접 로그인한 다음 기본적으로 차단된 영역에 액세스할 수 있습니다.
+OSGI 번들 및 관련 구성이 관리되고 이전에 AEM QuickStart의 일부였던 웹 콘솔은 더 이상 Cloud Service 환경으로 AEM 사용자가 직접 액세스할 수 없습니다. 이 인터페이스는 새 개발자 콘솔을 사용하여 읽기 전용 모드로 여전히 액세스할 수 있습니다. 개발자는 이 콘솔을 사용하여 작성자 또는 게시 서비스의 특정 노드를 선택하여 직접 로그인한 다음 기본적으로 차단된 영역에 액세스할 수 있습니다.
 
 >[!NOTE]
 >
 >OSGi [구성 참조](/help/implementing/deploying/overview.md#osgi-configuration)
 
-개발자는 다양한 환경의 로그 파일에 신속하게 액세스할 수 있어야 합니다. AEM을 클라우드 서비스로 사용하는 경우 작성자 및 게시 노드에 있는 다른 노드의 로그 파일은 클라우드 관리자를 통해 다운로드할 수 있는 파일 형식이나 API를 통해 사용할 수 있습니다.
+개발자는 다양한 환경의 로그 파일에 신속하게 액세스할 수 있어야 합니다. AEM을 Cloud Service으로 사용하는 경우 작성자 및 게시 노드에 있는 다른 노드의 로그 파일은 클라우드 관리자를 통해, 다운로드할 수 있는 파일 형식 또는 API를 통해 사용할 수 있습니다.
 
 코드와 컨텐츠가 명확히 구분되어 있으므로 개발자는 특정 프로세스를 사용하여 컨텐츠를 배포의 일부로 업데이트할 수 있습니다. 변경 가능한 컨텐츠에 대한 일반적인 사용 사례는 다음과 같습니다.
 
@@ -200,15 +200,15 @@ OSGI 번들 및 관련 구성이 관리되고 이전에 AEM QuickStart의 일부
 
 ### 로컬 개발 {#aem-as-a-cloud-service-developing-local-development}
 
-신속한 반복 및 개발을 지원하기 위해 AEM 외부에서 클라우드 서비스 컨텍스트로 AEM 애플리케이션을 개발할 수도 있습니다. 따라서 개발자는 다음 객체를 사용할 수 있습니다.
+신속한 반복 및 개발을 지원하기 위해 Cloud Service 컨텍스트으로 AEM 외부에서 AEM 애플리케이션을 개발할 수도 있습니다. 따라서 개발자는 다음 객체를 사용할 수 있습니다.
 
-* 클라우드 서비스 빠른 시작으로서 AEM: 동일한 기능 및 API 표면이 포함된 최신 AEM 코드 베이스의 `.jar` 독립적인 기반 설치 프로그램입니다.
+* Cloud Service QuickStart로 AEM: 동일한 기능 및 API 표면이 포함된 최신 AEM 코드 베이스의 `.jar` 독립적인 기반 설치 프로그램입니다.
 
-* 클라우드 서비스 발송자 SDK로 AEM: 로컬에서 Dispatcher 구성을 테스트 및 검증하기 위한 이미지 기반 프로세스
+* Cloud Service Dispatcher SDK로 AEM: 로컬에서 Dispatcher 구성을 테스트 및 검증하기 위한 이미지 기반 프로세스
 
 >[!NOTE]
 >
->클라우드 QuickStart는 모든 AEM 사이트 및 AEM Assets 기능에 대해 허용되지 않습니다. 대부분의 익스텐션을 개발 및 테스트할 수 있는 간단한 작성 환경으로 구성됩니다.
+>클라우드 QuickStart는 모든 AEM Sites 및 AEM Assets 기능을 허용하지 않습니다. 대부분의 익스텐션을 개발 및 테스트할 수 있는 간단한 작성 환경으로 구성됩니다.
 
 ## 운영 및 성능 {#operations-and-performance}
 
@@ -216,7 +216,7 @@ OSGI 번들 및 관련 구성이 관리되고 이전에 AEM QuickStart의 일부
 >
 >자세한 내용은 [백업](/help/operations/backup.md), 인덱싱 [및](/help/operations/indexing.md)기타 유지 관리 작업 [을](/help/operations/maintenance.md)참조하십시오.
 
-AEM을 클라우드 서비스로 사용하는 경우 이러한 작업이 자동화되므로 더 이상 서비스를 중단할 필요가 없습니다.
+Cloud Service으로 AEM을 사용하는 경우 이러한 작업은 자동화되므로 더 이상 서비스를 중단할 필요가 없습니다.
 
 다음 영역에서 다음을 수행합니다.
 
@@ -226,7 +226,7 @@ AEM을 클라우드 서비스로 사용하는 경우 이러한 작업이 자동�
 
 * 큐, 작업 및 벌크 처리 작업과 같은 무거운 로드 작업은 핵심 AEM 인스턴스에서 이동하여 공유 및 전용 마이크로 서비스에 의해 처리되었습니다.
 
-클라우드 서비스로서 AEM에 대한 작업은 새로운 모니터링, 보고 및 경고 인프라에서도 지원됩니다. 이를 통해 Adobe SRE(Site 신뢰성 Engineers)는 적극적으로 서비스를 건강하게 유지할 수 있습니다. 그 건축의 다양한 요소에는 다양한 건강검진이 있다. 어떤 이유로 아키텍처의 특정 노드가 건강하지 않다고 여겨지면 서비스에서 제거되고 자동으로 새로운 건강한 노드로 대체됩니다.
+Cloud Service으로 AEM에 대한 작업은 새로운 모니터링, 보고 및 경고 인프라에서도 지원됩니다. 이를 통해 Adobe SRE(Site 신뢰성 Engineers)는 적극적으로 서비스를 건강하게 유지할 수 있습니다. 그 건축의 다양한 요소에는 다양한 건강검진이 있다. 어떤 이유로 아키텍처의 특정 노드가 건강하지 않다고 여겨지면 서비스에서 제거되고 자동으로 새로운 건강한 노드로 대체됩니다.
 
 ## ID 관리 {#identity-management}
 
@@ -234,15 +234,15 @@ AEM을 클라우드 서비스로 사용하는 경우 이러한 작업이 자동�
 >
 >자세한 내용은 [보안 - IMS 지원을 참조하십시오](/help/security/ims-support.md).
 
-클라우드 서비스로서 AEM의 주요 변경 사항은 작성자 계층에 액세스하기 위해 Adobe ID를 완전히 통합된 것입니다.
+Cloud Service로서 AEM에 대한 주요 변경 사항은 작성자 계층에 액세스하기 위해 Adobe ID를 완전히 통합된 것입니다.
 
-이를 위해서는 사용자 및 사용자 그룹을 관리하기 위해 [Adobe 관리 콘솔을](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) 사용해야 합니다. 사용자 계정은 사용자 프로필 정보가 모든 클라우드 서비스에서 공유되도록 Adobe IMS(Identity Management System)에서 중앙 집중화되므로 사용자가 Adobe 제품 및 서비스에 액세스할 수 있도록 합니다. AEM에 대한 액세스 권한이 할당되면 사용자 계정을 클라우드 서비스로 AEM에서 참조할 수 있습니다(이전과 같이). 예를 들어 AEM Security 사용자 인터페이스에서 역할 및 권한을 정의하는 경우
+이를 위해서는 사용자 및 사용자 그룹을 관리하기 위해 [Adobe 관리 콘솔을](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) 사용해야 합니다. 사용자 계정은 사용자 프로필 정보가 모든 클라우드 서비스에서 공유되도록 Adobe Identity Management 시스템(IMS)에 중앙 집중화되므로 사용자가 Adobe 제품 및 서비스에 액세스할 수 있도록 합니다. AEM에 대한 액세스 권한이 할당되면 사용자 계정을 AEM에서 Cloud Service으로 참조할 수 있습니다(이전과 같이). 예를 들어 AEM Security 사용자 인터페이스에서 역할 및 권한을 정의하는 경우
 
 여기에는 다음과 같은 이점이 포함됩니다.
 
-* Adobe IMS(Identity Management System)를 사용하여 모든 Adobe 클라우드 애플리케이션에서 Single Sign-On을 제공합니다.
+* Adobe IMS(Identity Management System)를 사용하여 모든 Adobe Cloud 애플리케이션에서 Single Sign-On을 제공합니다.
 
-* 사용자 환경 설정은 클라우드 서비스로 AEM의 각 특정 인스턴스에 로컬에 남아 있습니다.
+* 사용자 환경 설정은 Cloud Service으로 AEM의 각 특정 인스턴스에 로컬에 남아 있습니다.
 
 ## 작성 사용자 인터페이스 {#authoring-user-interface}
 
@@ -256,14 +256,26 @@ AEM을 클라우드 서비스로 사용하는 경우 이러한 작업이 자동�
 
 ## AEM Sites {#aem-sites}
 
-Adobe Experience Manager Sites를 클라우드 서비스로 사용하면 AEM Content Management System의 강력한 기능과 AEM Digital Asset Management가 통합되어 개인화된 콘텐츠 중심의 경험을 고객에게 제공할 수 있습니다.
+Adobe Experience Manager 사이트를 Cloud Service으로 사용하면 AEM Content Management System의 강력한 기능과 AEM Digital Asset Management를 결합함으로써 개인화된 컨텐츠 중심의 경험을 고객에게 제공할 수 있습니다.
 
 자세한 내용은 사이트 [변경 사항 개요를 참조하십시오](/help/sites-cloud/sites-cloud-changes.md).
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service는 기업이 디지털 에셋 관리 및 다이내믹 미디어 작업을 신속하고 효율적으로 수행할 수 있을 뿐만 아니라 항상 최신, 항상 사용 가능하며 항상 학습하는 시스템에서 AI/ML과 같은 차세대 스마트 기능을 사용할 수 있는 클라우드 기반의 SaaS 솔루션을 제공합니다.
+Cloud Service의 Adobe Experience Manager 자산은 기업이 디지털 자산 관리 및 Dynamic Media 작업을 신속하고 효율적으로 수행할 수 있을 뿐만 아니라 항상 최신 정보이고 항상 사용 가능하며 항상 학습 속도가 빠른 시스템에서 AI/ML과 같은 차세대 스마트 기능을 사용할 수 있도록 클라우드 기반의 SaaS 솔루션을 제공합니다.
 
 자산 서비스에는 클라우드의 차세대 에셋 처리 및 고성능 에셋 수집 및 검색이 포함됩니다.
 
-자세한 내용은 [개요 및 Assets as a Cloud Service 소개를 참조하십시오](/help/assets/overview.md).
+자세한 내용은 [개요와 에셋 소개를 Cloud Service으로 참조하십시오](/help/assets/overview.md).
+
+## 클라우드 서비스로서의 Adobe Experience Manager 알기 {#getting-to-know-aem-as-cloud-service}
+
+자세한 내용은 다음을 참조하십시오.
+
+* [클라우드 서비스로서의 Adobe Experience Manager 소개](/help/overview/introduction.md)
+* 클라우드 서비스로서의 Adobe Experience Manager [아키텍처](/help/core-concepts/architecture.md)
+* [Cloud Service으로 AEM에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
+* [ 클라우드 서비스로서의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
+* [클라우드 서비스로서의 AEM Assets에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
+* [Cloud Service 소개](/help/assets/overview.md)
+* [클라우드 서비스로서의 Adobe Experience Manager 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
