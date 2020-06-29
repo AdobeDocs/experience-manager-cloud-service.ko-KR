@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager(AEM)의 주요 변경 사항
 description: 클라우드 서비스로서의 Adobe Experience Manager(AEM)의 주요 변경 사항
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -15,21 +15,31 @@ ht-degree: 100%
 AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운 기능과 가능성을 제공합니다. 그러나 온프레미스 또는 Adobe Managed Service의 AEM Sites에는 AEM 클라우드 서비스와 비교하여 많은 차이점이 있습니다. 이 문서에서는 중요한 차이점을 조명합니다.
 
 >[!NOTE]
->이 문서에서는 전반적인 AEM에 대한 주요 변경 사항을 조명합니다. 솔루션별 변경 사항에 대해서는 다음을 참조하십시오.
+>이 문서에서는 전반적인 AEM에 대한 주요 변경 사항을 조명합니다. 자세한 내용 및 솔루션별 변경 사항은 다음을 참조하십시오.
 >
->* [AEM 클라우드 서비스의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
->* [AEM 클라우드 서비스의 AEM Assets에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
+>* [클라우드 서비스로서의 Adobe Experience Manager 소개](/help/overview/introduction.md)
+>* 클라우드 서비스로서의 Adobe Experience Manager와 이전 버전 간의 [새로운 기능과 차이점](/help/overview/what-is-new-and-different.md)
+>* 클라우드 서비스로서의 Adobe Experience Manager [아키텍처](/help/core-concepts/architecture.md)
+>* [ 클라우드 서비스로서의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
+>* [클라우드 서비스로서의 AEM Assets에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 
 
 기본 차이점은 다음 영역에서 찾을 수 있습니다.
 
 * [런타임 시 /apps 및 /libs를 변경할 수 없습니다](#apps-libs-immutable)
+
 * [OSGi 번들 및 설정은 리포지토리 기반이어야 합니다](#osgi)
+
 * [게시 리포지토리에 대한 변경이 허용되지 않습니다](#changes-to-publish-repo)
+
 * [사용자 지정 실행 모드가 허용되지 않습니다](#custom-runmodes)
+
 * [복제 에이전트 제거](#replication-agents)
+
 * [클래식 UI 제거](#classic-ui)
+
 * [게시 측 제공](#publish-side-delivery)
+
 * [자산 처리 및 제공](#asset-handling)
 
 ## 런타임 시 /apps 및 /libs를 변경할 수 없습니다 {#apps-libs-immutable}
