@@ -2,10 +2,10 @@
 sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
 translation-type: tm+mt
-source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 81%
+source-wordcount: '231'
+ht-degree: 74%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 81%
    + [클라우드 서비스 SDK로서의 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
    + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
+   + [Cloud Service으로 AEM의 오버레이](developing/introduction/overlays.md)
+   + [Cloud Service으로 AEM에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
 + 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
@@ -49,5 +51,5 @@ ht-degree: 81%
 + 컨텐츠 전달 개요 {#content-delivery}
    + [컨텐츠 전달 흐름](dispatcher/overview.md)
    + [클라우드의 디스패처](dispatcher/disp-overview.md)
-   + [클라우드 서비스로 AEM의 CDN](dispatcher/cdn.md)
-   + [클라우드 서비스로 AEM에서 캐싱](dispatcher/caching.md)
+   + [Cloud Service으로 AEM의 CDN](dispatcher/cdn.md)
+   + [AEM에서 Cloud Service으로 캐싱](dispatcher/caching.md)
