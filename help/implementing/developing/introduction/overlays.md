@@ -2,9 +2,9 @@
 title: Cloud Service의 오버레이
 description: Cloud Service로서 AEM은 오버레이의 원칙을 사용하여 콘솔 및 기타 기능을 확장하고 사용자 지정할 수 있습니다
 translation-type: tm+mt
-source-git-commit: e9fa89753289563edd59e3d75413c90efe3ff0b2
+source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Cloud Service으로 AEM의 오버레이 {#overlays-in-aem}
 
-Adobe Experience Manager은 오버레이 원칙을 사용하여 콘솔과 기타 기능(예: 페이지 작성)을 확장하고 사용자 정의할 수 있도록 해줍니다.
+Cloud Service은 오버레이의 원칙을 사용하여 콘솔과 기타 기능(예: 페이지 작성)을 확장하고 사용자 정의할 수 있습니다.
 
 <!--
 Adobe Experience Manager as a Cloud Service uses the principle of overlays to allow you to extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
@@ -28,7 +28,7 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
       * 적절한 `/libs` 구조물을 다음 아래에 재구성합니다 `/apps`.
 
-         이 경우 1:1 사본이 필요하지 않으며, Sling [Resource Commodification](/help/implementing/developing/introduction/sling-resource-merger.md) 은 필요한 원본 정의를 상호 참조하는 데 사용됩니다. Sling Resource Combination은 차이(차이) 메커니즘을 통해 리소스에 액세스하고 병합하는 서비스를 제공합니다.
+         Sling Resource Commodification은 필요한 원본 정의를 상호 참조하는 데 사용되므로 [1:1 사본이](/help/implementing/developing/introduction/sling-resource-merger.md) 필요하지 않습니다. Sling Resource Combination은 차이(차이) 메커니즘을 통해 리소스에 액세스하고 병합하는 서비스를 제공합니다.
 
       * 변경 `/apps`내용
    * 장점
