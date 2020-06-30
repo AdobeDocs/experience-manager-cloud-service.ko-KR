@@ -2,9 +2,9 @@
 title: Adobe Experience Manager에서 슬링 리소스 합병을 Cloud Service으로 사용
 description: Sling Resource Combination은 리소스에 액세스하고 병합하는 서비스를 제공합니다
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Sling Resource Commodification을 사용하면 오버레이/재정의 리소스 
 >
 >Sling 리소스 합병 및 관련 메서드는 Granite에서만 사용할 수 [있습니다](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). 이는 표준 터치 지원 UI에만 해당됨을 의미합니다. 이 방법으로 정의된 특정 오버라이드는 구성 요소의 터치 지원 대화 상자에만 적용됩니다.
 >
->다른 영역(터치 지원 구성 요소 또는 클래식 UI의 다른 측면 포함)에 대한 오버레이/오버라이드는 적절한 노드 및 구조를 원본에서 사용자 지정이 정의된 위치로 복사하는 것을 포함합니다.
+>다른 영역(터치 지원 구성 요소의 다른 측면 포함)에 대한 오버레이/오버라이드는 적절한 노드 및 구조를 원본에서 사용자 지정이 정의될 위치로 복사하는 것을 포함합니다.
 
 ### AEM에 대한 목표 {#goals-for-aem}
 
