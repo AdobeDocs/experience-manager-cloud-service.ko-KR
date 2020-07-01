@@ -2,9 +2,9 @@
 title: Adobe Experience Manager에서 슬링 리소스 합병을 Cloud Service으로 사용
 description: Sling Resource Combination은 리소스에 액세스하고 병합하는 서비스를 제공합니다
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Sling Resource Combination은 리소스에 액세스하고 병합하는 서비스를 제공합니다. 두 가지 모두에 대해 차이(차이) 메커니즘을 제공합니다.
 
-* **[구성된](/help/implementing/developing/introduction/overlays.md)**검색 경로를 사용하여[리소스의 오버레이](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths).
+* **[](/help/implementing/developing/introduction/overlays.md)**검색 경로를 사용하는 리소스[](/help/implementing/developing/introduction/overlays.md#search-paths)오버레이
 
 * **리소스** 유형 계층 구조(속성을 통해)를 사용하여 터치 지원 UI에 대한 구성 요소 대화 상자`cq:dialog`를 무시합니다 `sling:resourceSuperType`.
 
@@ -30,9 +30,7 @@ Sling Resource Commodification을 사용하면 오버레이/재정의 리소스 
 
 >[!CAUTION]
 >
->Sling 리소스 합병 및 관련 메서드는 Granite에서만 사용할 수 [있습니다](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). 이는 표준 터치 지원 UI에만 해당됨을 의미합니다. 이 방법으로 정의된 특정 오버라이드는 구성 요소의 터치 지원 대화 상자에만 적용됩니다.
->
->다른 영역(터치 지원 구성 요소의 다른 측면 포함)에 대한 오버레이/오버라이드는 적절한 노드 및 구조를 원본에서 사용자 지정이 정의될 위치로 복사하는 것을 포함합니다.
+>Sling 리소스 합병 및 관련 메서드는 터치 지원 UI에서만 사용할 수 있습니다(Cloud Service으로 AEM에 사용할 수 있는 유일한 UI).
 
 ### AEM에 대한 목표 {#goals-for-aem}
 
@@ -43,27 +41,17 @@ AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습�
 
    Sling Resource Combination을 사용하는 경우 전체 구조를 복사하지 않는 것이 좋습니다. 이렇게 하면 사용자 지정(일반적으로 `/libs` `/apps`)에서 정보가 너무 많이 보관됩니다. 정보를 중복하면 시스템을 어떤 식으로든 업그레이드할 때 문제가 발생할 가능성이 불필요하게 커집니다.
 
->[!NOTE]
->
->오버라이드는 검색 경로에 종속되지 않고 속성을 사용하여 연결을 `sling:resourceSuperType` 만듭니다.
->
->그러나 AEM에서 가장 좋은 방법은 사용자 지정 `/apps`을 정의하는 것이므로, 대체를 정의하 `/apps`는 경우가 많습니다. 이것은 여러분이 아래의 어떤 것도 바꾸지 말아야 하기 때문입니다 `/libs`.
-
 >[!CAUTION]
 >
 >경로 ***에서 어떤 것도 변경하지*** 않아야 `/libs` 합니다.
 >
->이는 다음에 인스턴스를 업그레이드할 때 `/libs` 의 컨텐츠를 덮어쓰고, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있기 때문입니다.
+>이는 업그레이드 내용이 인스턴스에 적용될 때마다 내용을 덮어쓸 `/libs` 수 있기 때문입니다.
 >
->구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
->
->1. 필요한 항목(예: 존재함)을 `/libs``/apps`
+>* 오버레이는 [검색 경로에 따라 다릅니다](/help/implementing/developing/introduction/overlays.md#search-paths).
    >
    >
-1. Make any changes within `/apps`
-
->
-
+* 오버라이드는 검색 경로에 종속되지 않고 속성을 사용하여 연결을 `sling:resourceSuperType` 만듭니다.
+   >  그러나 AEM에서 Cloud Service `/apps`로 사용자 지정을 정의하는 것이 가장 좋은 방법인 경우, 대체는 종종 아래에 정의되어 `/apps`있습니다. 이것은 여러분이 아래의 어떤 것도 바꾸지 말아야 하기 때문입니다 `/libs`.
 
 
 ### 속성 {#properties}
@@ -210,7 +198,6 @@ AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습�
 
       * 유형: `String[]`
       * value: 숨기기/무시할 하위 노드 목록(정의된 항목 `/libs`)
-
       와일드카드 &amp;ast; 모든 하위 노드를 숨기거나 무시하는 데 사용할 수 있습니다.
 
 
