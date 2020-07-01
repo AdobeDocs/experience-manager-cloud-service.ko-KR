@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1475'
 ht-degree: 2%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # 콘텐츠 검색 및 색인 지정 {#indexing}
 
-## 클라우드 서비스로 AEM의 변경 사항 {#changes-in-aem-as-a-cloud-service}
+## Cloud Service으로 AEM의 변경 사항 {#changes-in-aem-as-a-cloud-service}
 
-AEM을 클라우드 서비스로 사용하는 Adobe는 Cloud Manager에서 CI/CD 파이프라인을 통해 구동되는 n-x AEM 컨테이너가 있는 서비스 기반 보기로 AEM 인스턴스 중심의 모델에서 벗어납니다. 단일 AEM 인스턴스에서 인덱스를 구성 및 유지 관리하는 대신 배포 전에 색인 구성을 지정해야 합니다. 제작 과정의 구성 변화는 분명히 CI/CD 정책을 위반하는 것이다. 색인 변경 사항도 마찬가지입니다. 색인 변경 작업은 지정된 테스트 및 재색인이 없는 경우 시스템 안정성 및 성능에 영향을 줄 수 있기 때문에 프로덕션으로 가져오기 전에 적용됩니다.
+AEM을 Cloud Service으로 사용하는 경우 Adobe는 Cloud Manager에서 CI/CD 파이프라인을 통해 제어되는 n-x AEM 컨테이너가 있는 서비스 기반 보기로 AEM 인스턴스 중심 모델에서 이동합니다. 단일 AEM 인스턴스에서 인덱스를 구성 및 유지 관리하는 대신 배포 전에 색인 구성을 지정해야 합니다. 제작 과정의 구성 변화는 분명히 CI/CD 정책을 위반하는 것이다. 색인 변경 사항도 마찬가지입니다. 색인 변경 작업은 지정된 테스트 및 재색인이 없는 경우 시스템 안정성 및 성능에 영향을 줄 수 있기 때문에 프로덕션으로 가져오기 전에 적용됩니다.
 
 다음은 AEM 6.5 및 이전 버전과 비교하여 주요 변경 사항 목록입니다.
 
@@ -32,13 +32,11 @@ AEM을 클라우드 서비스로 사용하는 Adobe는 Cloud Manager에서 CI/CD
 
 1. 색인 구성은 배포를 통해 변경됩니다. 색인 정의 변경 사항은 다른 컨텐츠 변경 사항과 같이 구성됩니다.
 
-1. Blue-Green 배포 모델 [](#index-management-using-blue-green-deployments) 도입과 함께 클라우드 서비스로 AEM의 높은 레벨에서 다음 두 가지 인덱스 세트가 존재합니다. 한 세트는 이전 버전(파란색)으로, 한 세트는 새 버전(녹색)으로 설정되어 있습니다.
-
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+1. Cloud Service으로 AEM에서 높은 수준의 AEM에는 [블루-그린 배포 모델](#index-management-using-blue-green-deployments) 2개의 인덱스 세트가 도입됩니다. 한 세트는 이전 버전(파란색)으로, 한 세트는 새 버전(녹색)으로 설정되어 있습니다.
 
 1. 고객은 Cloud Manager 빌드 페이지에서 색인 작업이 완료되었는지 확인하고 새 버전이 트래픽을 받을 준비가 되면 알림을 받게 됩니다.
 
-1. 제한 사항: 현재, 클라우드 서비스로 AEM에서 인덱스 관리는 lucene 유형의 색인에만 지원됩니다.
+1. 제한 사항: 현재 Cloud Service으로 AEM에서 인덱스 관리는 lucene 유형의 색인에만 지원됩니다.
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -56,7 +54,7 @@ AS NOTE: the above is internal for now.
 1. 기존 색인 정의를 업데이트하는 중입니다. 이는 기존 색인 정의의 새 버전을 추가하는 것을 의미합니다
 1. 중복되거나 사용되지 않는 기존 인덱스를 제거합니다.
 
-위의 두 점 모두 1과 2의 경우, 각각의 Cloud Manager 릴리스 일정에 사용자 지정 코드 베이스의 일부로 새 색인 정의를 만들어야 합니다. 자세한 내용은 AEM에 클라우드 [서비스로 배포 설명서를 참조하십시오](/help/implementing/deploying/overview.md).
+위의 두 점 모두 1과 2의 경우, 각각의 Cloud Manager 릴리스 일정에 사용자 지정 코드 베이스의 일부로 새 색인 정의를 만들어야 합니다. 자세한 내용은 Cloud Service 설명서로 AEM에 [배포 설명서를 참조하십시오](/help/implementing/deploying/overview.md).
 
 ### 새 색인 정의 준비 {#preparing-the-new-index-definition}
 
@@ -86,7 +84,7 @@ AS NOTE: the above is internal for now.
 
 >[!TIP]
 >
->클라우드 서비스로 AEM에 필요한 패키지 구조에 대한 자세한 내용은 AEM 프로젝트 구조 문서 [를 참조하십시오.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Cloud Service으로 AEM에 필요한 패키지 구조에 대한 자세한 내용은 AEM 프로젝트 [구조 문서를 참조하십시오.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 블루-그린 배포를 사용한 색인 관리 {#index-management-using-blue-green-deployments}
 
@@ -126,7 +124,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` 은 AEM을 클라우드 서비스로 표시하여 기존 색인을 대체해야 합니다.
+> `<indexName>-custom-<customerVersionNumber>` 은 AEM을 Cloud Service으로 표시하여 기존 색인의 교체로 표시해야 합니다.
 
 | 색인 | 기본 색인 | 버전 1에서 사용 | 버전 2에서 사용 |
 |---|---|---|---|
@@ -161,7 +159,9 @@ Adobe가 이름이 `damAssetLucene-2` 되거나 새로 만들어진 &quot;damAss
 
 응용 프로그램의 새 버전 이상에서 사용할 &quot;/oak:index/acmeProduct-custom-1&quot;이라는 인덱스를 추가하려면 다음과 같이 인덱스를 구성해야 합니다.
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+이 작업은 인덱스 이름에 사용자 지정 식별자를 미리 대기시키고 점(점)을 붙이면 됩니다&#x200B;**.**). 식별자는 1-4자 사이여야 합니다.
 
 위와 같이, 이렇게 하면 인덱스가 응용 프로그램의 새 버전에서만 사용됩니다.
 
