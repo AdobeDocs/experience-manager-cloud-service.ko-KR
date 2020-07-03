@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 커넥터
 description: 클라우드 서비스로서의 Adobe Experience Manager 커넥터 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 69%
+source-wordcount: '379'
+ht-degree: 71%
 
 ---
 
@@ -34,7 +34,6 @@ ht-degree: 69%
 | [자산 사용 안내서](/help/assets/home.md) | Experience Manager 자산을 Cloud Service으로 사용하고 관리하는 방법을 이해합니다. |
 | [클라우드 서비스로서 AEM으로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 비롯하여 Cloud Service 배포으로 Experience Manager을 사용자 정의하는 방법을 알아봅니다. |
-| [Connectors 사용 안내서](/help/connectors/home.md) | 커넥터를 Experience Manager에 Cloud Service으로 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 및 유지 관리 작업과 같은 Cloud Service의 백엔드 작업에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
