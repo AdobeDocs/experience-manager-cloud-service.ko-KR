@@ -3,7 +3,7 @@ title: Brand Portal에 자산, 폴더 및 컬렉션 게시
 description: Brand Portal에 자산, 폴더 및 컬렉션을 게시합니다.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
@@ -26,7 +26,6 @@ AEM Assets에서 원래 자산, 폴더 또는 컬렉션을 차후에 수정하�
 >[!NOTE]
 >
 >AEM 작성자가 초과 리소스를 차지하지 않도록 가급적이면 피크가 아닌 시간에, 시차 게시를 수행하는 것이 좋습니다.
-
 
 ## 자산을 Brand Portal에 게시 {#publish-assets-to-bp}
 
@@ -186,7 +185,6 @@ AEM Assets 클라우드 인스턴스에서 컬렉션을 게시하거나 게시 �
 >컨텐츠 조각은 Brand Portal에 게시할 수 없습니다. 따라서 AEM Assets에서 컨텐츠 조각을 선택한다면 **[!UICONTROL Brand Portal에 게시]** 동작을 사용할 수 없습니다.
 >
 >컨텐츠 조각이 포함된 컬렉션이 AEM Assets에서 Brand Portal로 게시되면 컨텐츠 조각을 제외한 폴더의 모든 컨텐츠가 Brand Portal 인터페이스에 복제됩니다.
-
 
 ### 컬렉션 게시 {#publish-collections}
 
