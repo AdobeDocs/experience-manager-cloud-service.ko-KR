@@ -2,7 +2,7 @@
 title: WCAG 2.1에 대한 빠른 안내서
 description: WCAG 2.1에 대한 빠른 안내서
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 100%
@@ -17,11 +17,11 @@ ht-degree: 100%
 [웹 컨텐츠 액세스 가능성 지침(WCAG) 버전 2.1](https://www.w3.org/TR/WCAG/)은 [World Wide Web Consortium(W3C)](https://www.w3.org/)에서 [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/)에 따라 작성한 국제 공인 지침입니다.
 
 >[!NOTE]
-> 
-> WCAG 2.1은 이전 버전인 2008년의 WCAG 2.0을 업데이트합니다. [WCAG 2.1 - WCAG 2.0과의 비교](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)를 참조하십시오.
+>
+>WCAG 2.1은 이전 버전인 2008년의 WCAG 2.0을 업데이트합니다. [WCAG 2.1 - WCAG 2.0과의 비교](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)를 참조하십시오.
 
 >[!NOTE]
-> 
+>
 >[이 지침의 업데이트된 버전인 WCAG 2.2](https://www.w3.org/TR/WCAG22/)는 현재 개발 중이지만 현 시점에서 고려되지는 않습니다.
 
 WCAG 2.1은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다. 이 지침에서는 시각 장애, 청력 상실, 학습 장애, 연령 관련 제한 사항 등의 장애 여부와 상관없이 최대한 많은 사람이 웹 컨텐츠 작성자, 디자이너 및 개발자가 만든 리소스에 액세스할 수 있는 방법을 웹 컨텐츠 작성자, 디자이너 및 개발자에게 설명합니다.
