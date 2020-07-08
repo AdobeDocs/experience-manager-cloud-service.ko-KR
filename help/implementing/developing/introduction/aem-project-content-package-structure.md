@@ -2,10 +2,10 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2530'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -30,13 +30,13 @@ AEM에는 **컨텐츠** 및 **코드**&#x200B;분리가 필요합니다. 즉, �
 
 ## 저장소의 변경 가능 영역과 불변경 영역 {#mutable-vs-immutable}
 
-`/apps` 및 `/libs` 는 AEM이 **시작된 후(예: 런타임 시) 변경(만들기, 업데이트, 삭제)할 수 없으므로 AEM의 변경할 수 없는** 영역으로 간주됩니다. 실행 시 변경할 수 없는 영역을 변경하려는 시도가 실패합니다.
+`/apps` 및 `/libs`**는 AEM이 시작된 후(예: 런타임 시) 변경(만들기, 업데이트, 삭제)할 수 없으므로 AEM에서 변경할 수 없는 영역으로 간주됩니다.** 런타임 시 변경할 수 없는 영역을 변경하려고 하면 오류가 발생합니다.
 
-저장소의 다른 모든 것, `/content`, `/conf``/var`, `/etc``/oak:index`, `/system``/tmp`,등의 모든 것 은 모두 **변경할** 수 있는 영역이므로 런타임 시 변경할 수 있습니다.
+Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
-> 이전 버전의 AEM에서와 마찬가지로 수정해서는 `/libs` 안 됩니다. AEM 제품 코드만 다음 위치에 배포할 수 있습니다 `/libs`.
+>이전 버전의 AEM에서와 마찬가지로 수정해서는 `/libs` 안 됩니다. AEM 제품 코드만 다음 위치에 배포할 수 있습니다 `/libs`.
 
 ### Oak Indexes {#oak-indexes}
 
@@ -501,7 +501,8 @@ OSGi `scripts` 속성은 Apache Sling의 [Repo Init 언어로 정의된 지시�
 ### 타사 마웬 저장소 {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> 추가적인 Maven 리포지토리가 종속성에 대해 확인되면 더 많은 Maven 저장소를 추가하면 빌드 시간이 연장될 수 있습니다.
+>
+>추가적인 Maven 리포지토리가 종속성에 대해 확인되면 더 많은 Maven 저장소를 추가하면 빌드 시간이 연장될 수 있습니다.
 
 원자로 프로젝트의 지침에 필요한 타사 공용 Maven 리포지토리 지시문을 `pom.xml`추가합니다. 전체 `<repository>` 구성은 타사 저장소 공급자로부터 사용할 수 있어야 합니다.
 
