@@ -2,7 +2,7 @@
 title: 복제
 description: 배포 및 문제 해결 복제.
 translation-type: tm+mt
-source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 3%
@@ -12,17 +12,17 @@ ht-degree: 3%
 
 # 복제 {#replication}
 
-클라우드 서비스인 Adobe Experience Manager는 [Sling 콘텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html) 기능을 사용하여 콘텐츠를 AEM 런타임 외부에 있는 Adobe I/O에서 실행되는 파이프라인 서비스로 복제합니다.
+Adobe Experience Manager은 AEM 런타임 외부에 있는 Adobe I/O에서 실행되는 파이프라인 서비스로 [복제하기 위해 컨텐츠를 Cloud Service으로](https://sling.apache.org/documentation/bundles/content-distribution.html) 이동합니다.
 
 >[!NOTE]
 >
-> 자세한 [내용은 배포](/help/core-concepts/architecture.md#content-distribution) 를 참조하십시오.
+>자세한 [내용은 배포](/help/core-concepts/architecture.md#content-distribution) 를 참조하십시오.
 
 ## 컨텐츠 게시 방법 {#methods-of-publishing-content}
 
 ### 빠른 게시 취소/게시 - 계획된 게시 취소/게시 {#publish-unpublish}
 
-작성자를 위한 이러한 표준 AEM 기능은 AEM Cloud 서비스와 함께 변경되지 않습니다.
+작성자를 위한 이러한 표준 AEM 기능은 AEM Cloud Service과 함께 변경되지 않습니다.
 
 ### 트리 활성화 {#tree-activation}
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 문제 해결 {#troubleshooting}
 
-복제 문제를 해결하려면 AEM 작성자 서비스 웹 UI의 복제 큐로 이동합니다.
+복제 문제를 해결하려면 AEM Author 서비스 웹 UI의 복제 대기열로 이동합니다.
 
 1. AEM 시작 메뉴에서 **도구 > 배포 > 배포로 이동합니다**
 2. 카드 forwardPublisher **선택**
@@ -48,5 +48,5 @@ ht-degree: 3%
 
 ![로그](assets/logs.png "로그")
 
-콘텐츠를 게시할 수 없는 경우 전체 게시가 AEM 게시 서비스에서 되돌려집니다.
+컨텐츠를 게시할 수 없는 경우 AEM Publish 서비스에서 전체 게시가 되돌려집니다.
 이러한 경우 발행물 취소를 일으킨 항목을 식별하기 위해 대기열을 검토해야 합니다. 빨간색 상태를 보여주는 큐를 클릭하면 보류 중인 항목이 있는 대기열이 나타나며 필요한 경우 단일 또는 모든 항목을 지울 수 있습니다.
