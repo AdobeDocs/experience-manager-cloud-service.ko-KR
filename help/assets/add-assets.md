@@ -2,7 +2,7 @@
 title: Adobe Experience Manager에 디지털 자산 추가
 description: Adobe Experience Manager에 Cloud Service으로 디지털 자산 추가
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 2%
@@ -24,9 +24,9 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
 
 >[!NOTE]
 >
-> Cloud Service은 직접 바이너리 업로드라는 새로운 방식의 자산 업로드 방식을 활용합니다. 기본적으로 AEM 사용자 인터페이스, Adobe Asset Link, AEM 데스크탑 앱과 같은 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
+>Cloud Service은 직접 바이너리 업로드라는 새로운 방식의 자산 업로드 방식을 활용합니다. 기본적으로 AEM 사용자 인터페이스, Adobe Asset Link, AEM 데스크탑 앱과 같은 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
 >
-> 고객 기술 팀이 사용자 정의하거나 확장한 코드를 업로드하려면 새로운 업로드 API 및 프로토콜을 사용해야 합니다.
+>고객 기술 팀이 사용자 정의하거나 확장한 코드를 업로드하려면 새로운 업로드 API 및 프로토콜을 사용해야 합니다.
 
 ## Upload assets {#upload-assets}
 
@@ -37,7 +37,6 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
 
    * 도구 모음에서 **[!UICONTROL 만들기]** 아이콘을 누릅니다. 그런 다음 메뉴에서 **[!UICONTROL 파일을 누릅니다]**. 필요한 경우 표시된 대화 상자에서 파일의 이름을 변경할 수 있습니다.
    * HTML5를 지원하는 브라우저에서 자산을 자산 사용자 인터페이스에서 바로 드래그합니다. 파일 이름 바꾸기 대화 상자가 표시되지 않습니다.
-
    ![create_menu](assets/create_menu.png)
 
    여러 파일을 선택하려면 Ctrl 또는 Command 키를 누르고 파일 선택기 대화 상자에서 자산을 선택합니다. iPad를 사용하는 경우 한 번에 하나의 파일만 선택할 수 있습니다.
@@ -81,7 +80,7 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
 
 >[!NOTE]
 >
-> 중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [벌크 업로드를 참조하십시오](#bulk-upload).
+>중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [벌크 업로드를 참조하십시오](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -136,7 +135,7 @@ AEM Assets을 사용하면 파일 이름에 금지된 문자가 포함된 에셋
 
 >[!NOTE]
 >
-> Experience Manager으로 설정 및 배포할 때 다른 시스템에서 컨텐츠 마이그레이션의 일부로 일괄 업로드하려면 도구를 신중하게 계획, 고려 및 선택해야 합니다. 콘텐츠 [마이그레이션 방식에 대한 지침은 배포 가이드를](/help/implementing/deploying/overview.md) 참조하십시오.
+>Experience Manager으로 설정 및 배포할 때 다른 시스템에서 컨텐츠 마이그레이션의 일부로 일괄 업로드하려면 도구를 신중하게 계획, 고려 및 선택해야 합니다. 콘텐츠 [마이그레이션 방식에 대한 지침은 배포 가이드를](/help/implementing/deploying/overview.md) 참조하십시오.
 
 ## 데스크탑 클라이언트를 사용하여 에셋 업로드 {#upload-assets-desktop-clients}
 
@@ -163,7 +162,7 @@ AEM Assets을 사용하면 파일 이름에 금지된 문자가 포함된 에셋
 
 >[!NOTE]
 >
-> 자산에 대한 Dynamic Media 자르기 및 기타 작업은 파괴적이지 않습니다. 즉, 업로드된 원본을 변경하지 않고 자산 제공 시 수행할 자르기 또는 미디어 변환에 대한 매개 변수를 제공합니다
+>자산에 대한 Dynamic Media 자르기 및 기타 작업은 파괴적이지 않습니다. 즉, 업로드된 원본을 변경하지 않고 자산 제공 시 수행할 자르기 또는 미디어 변환에 대한 매개 변수를 제공합니다
 
 처리 프로필이 할당된 폴더의 경우 카드 보기의 축소판에 프로필 이름이 나타납니다. 목록 보기에서 프로필 이름이 처리 프로필 **[!UICONTROL 열에]** 나타납니다.
 
