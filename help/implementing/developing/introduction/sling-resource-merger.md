@@ -2,7 +2,7 @@
 title: Adobe Experience Manager에서 슬링 리소스 합병을 Cloud Service으로 사용
 description: Sling Resource Combination은 리소스에 액세스하고 병합하는 서비스를 제공합니다
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 1%
@@ -51,8 +51,9 @@ AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습�
    >
    >
 * 오버라이드는 검색 경로에 종속되지 않고 속성을 사용하여 연결을 `sling:resourceSuperType` 만듭니다.
-   >  그러나 AEM에서 Cloud Service `/apps`로 사용자 지정을 정의하는 것이 가장 좋은 방법인 경우, 대체는 종종 아래에 정의되어 `/apps`있습니다. 이것은 여러분이 아래의 어떤 것도 바꾸지 말아야 하기 때문입니다 `/libs`.
-
+>
+>
+그러나 AEM에서 Cloud Service `/apps`로 사용자 지정을 정의하는 것이 가장 좋은 방법인 경우, 대체는 종종 아래에 정의되어 `/apps`있습니다. 이것은 여러분이 아래의 어떤 것도 바꾸지 말아야 하기 때문입니다 `/libs`.
 
 ### 속성 {#properties}
 
