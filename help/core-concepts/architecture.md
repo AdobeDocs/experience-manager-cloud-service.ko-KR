@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 아키텍처 소개
 description: '클라우드 서비스로서의 Adobe Experience Manager 아키텍처 소개. '
 translation-type: tm+mt
-source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> 자세한 내용은 [배포 - 런타임 모드](/help/implementing/deploying/overview.md#runmodes)를 참조하십시오.
+>자세한 내용은 [배포 - 런타임 모드](/help/implementing/deploying/overview.md#runmodes)를 참조하십시오.
 
 클라우드 서비스로서의 AEM은 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다. 클라우드 서비스로서의 AEM에 사용할 수 있는 환경에는 다음 네 가지 유형이 있습니다.
 
