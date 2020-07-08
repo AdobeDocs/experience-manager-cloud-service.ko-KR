@@ -3,7 +3,7 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
 workflow-type: tm+mt
 source-wordcount: '2049'
 ht-degree: 53%
@@ -139,13 +139,13 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
    *그림: 원격 DAM에서 자산을 검색할 때 문서 유형 및 이미지를 필터링하는 옵션.*
 
-1. 자산을 비동기적으로 가져오는 경우 및 가져오기 작업이 실패할 경우 사이트 작성자에게 알립니다. 작성자는 작성 중이나 작성 후에도 [비동기 작업](/help/assets/asynchronous-jobs.md) 사용자 인터페이스에서 가져오기 작업 및 오류에 대한 자세한 정보를 볼 수 있습니다.
+1. 자산을 비동기적으로 가져오는 경우 및 가져오기 작업이 실패할 경우 사이트 작성자에게 알립니다. 작성자는 작성 중이나 작성 후에도 [비동기 작업](/help/operations/asynchronous-jobs.md) 사용자 인터페이스에서 가져오기 작업 및 오류에 대한 자세한 정보를 볼 수 있습니다.
 
    ![백그라운드에서 발생하는 자산의 비동기적 가져오기에 대한 알림.](assets/assets_async_transfer_fails.png)
 
    *그림: 백그라운드에서 발생하는 자산의 비동기적 가져오기에 대한 알림.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. 게시할 때 원격 자산을 성공적으로 가져오는지 확인합니다. 가져온 각 자산의 상태를 확인하려면 [비동기 작업](/help/assets/asynchronous-jobs.md) 사용자 인터페이스를 참조하십시오.
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. 게시할 때 원격 자산을 성공적으로 가져오는지 확인합니다. 가져온 각 자산의 상태를 확인하려면 [비동기 작업](/help/operations/asynchronous-jobs.md) 사용자 인터페이스를 참조하십시오.
 
    >[!NOTE]
    >
@@ -189,4 +189,4 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 일반적인 오류 시나리오에 대한 문제를 해결하려면 다음 단계를 따르십시오.
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* 원격 사이트에 존재하지 않거나, 가져오기 위한 적절한 권한이 없거나, 네트워크 오류로 인해 원격 DAM에서 가져온 자산은 웹 페이지에 게시되지 않을 수 있습니다. 원격 DAM에서 자산이 제거되지 않았거나 권한이 변경되지 않았는지 확인합니다. 적절한 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/assets/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
+* 원격 사이트에 존재하지 않거나, 가져오기 위한 적절한 권한이 없거나, 네트워크 오류로 인해 원격 DAM에서 가져온 자산은 웹 페이지에 게시되지 않을 수 있습니다. 원격 DAM에서 자산이 제거되지 않았거나 권한이 변경되지 않았는지 확인합니다. 적절한 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/operations/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
