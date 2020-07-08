@@ -1,8 +1,8 @@
 ---
-title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Adobe Experience Manager를 클라우드 서비스 기반 준비
-description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 클라우드 서비스 기반 지원으로서 Adobe Experience Manager에 대해 알아봅니다. 여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법 및 새로운 AEM을 클라우드 서비스 프로젝트로 구현할 때 준수하는 방법이 포함됩니다. '
+title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Cloud Service 기반 준비 Adobe Experience Manager
+description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 기반 지원으로서 Adobe Experience Manager에 대해 알아보십시오. 여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법 및 새로운 AEM을 Cloud Service 프로젝트로 구현할 때 준수하는 방법이 포함됩니다. '
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Experience Manager를 클라우드 서비스 기반 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 준비 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 기반 준비 Adobe Experience Manager {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> AEM을 클라우드 서비스로 사용하는 경우 CRXDE에 액세스할 수 없으므로 UI에서 사용자 프로필을 삭제하기 위한 수동 절차를 사용할 수 없습니다.
+>AEM을 Cloud Service으로 사용하는 경우 CRXDE에 액세스할 수 없으므로 UI에서 사용자 프로필을 삭제하기 위한 수동 절차를 사용할 수 없습니다.
 
 ### HTTP API {#http-api-1}
 
