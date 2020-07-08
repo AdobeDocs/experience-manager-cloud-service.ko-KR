@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세스 가능성 지침
 description: 클라우드 서비스로서의 Adobe Experience Manager 및 웹 액세서빌러티 지침 소개
 translation-type: tm+mt
-source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> 자세한 내용은 [Adobe 솔루션에 대한 액세서빌러티 준수 보고서](https://www.adobe.com/accessibility/compliance.html)를 참조하십시오.
+>자세한 내용은 [Adobe 솔루션에 대한 액세서빌러티 준수 보고서](https://www.adobe.com/accessibility/compliance.html)를 참조하십시오.
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
@@ -49,7 +49,7 @@ WCAG 2.1은 [액세스 가능성 수준과 이를 준수하는 방법에 대한 
 * [액세스 가능한 컨텐츠 만들기](/help/sites-cloud/authoring/fundamentals/accessible-content.md)에서는 AEM과 어떻게 관련되는지를 자세히 설명합니다.
 
 >[!NOTE]
-> 
+>
 >사이트를 만들 때에는 사이트가 따라야 할 전반적인 수준을 결정해야 합니다.
 
 <!--
