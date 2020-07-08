@@ -2,17 +2,17 @@
 title: 클라우드 서비스로서의 AEM 개발 지침
 description: 완료하기
 translation-type: tm+mt
-source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
+source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 1%
+source-wordcount: '1631'
+ht-degree: 2%
 
 ---
 
 
 # 클라우드 서비스로서의 AEM 개발 지침 {#aem-as-a-cloud-service-development-guidelines}
 
-Cloud Service으로 AEM에서 실행되는 코드는 클러스터에서 항상 실행되고 있다는 사실을 알고 있어야 합니다. 즉, 실행되는 인스턴스가 두 개 이상 있습니다. 특히 특정 시점에 인스턴스가 중지될 수 있으므로 코드는 복원력이 있어야 합니다.
+Cloud Service으로 AEM에서 실행되는 코드는 클러스터에서 항상 실행되고 있다는 사실을 알고 있어야 합니다. 즉, 실행되는 인스턴스가 항상 두 개 이상 있습니다. 특히 특정 시점에 인스턴스가 중지될 수 있으므로 코드는 복원력이 있어야 합니다.
 
 Cloud Service으로 AEM을 업데이트하는 동안, 이전 코드와 새 코드가 동시에 실행되는 인스턴스가 있게 됩니다. 따라서 이전 코드는 새 코드로 만들어진 컨텐츠와 구분해서는 안 되며 새 코드는 이전 컨텐츠를 처리할 수 있어야 합니다.
 <!--
@@ -160,8 +160,7 @@ Cloud Service 개발자 환경으로서 AEM을 디버깅하기 위한 도구 세
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-일반 프로그램의 경우, 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되고, 샌드박스 프로그램의 경우, 개발자 콘솔은 제품 프로필을 가진 모든 사용자가 Cloud Service으로 AEM에 액세스할 수 있도록 해줍니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
+일반 프로그램의 경우, 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되고, 샌드박스 프로그램의 경우, 개발자 콘솔은 제품 프로필을 가진 모든 사용자가 Cloud Service으로 AEM에 액세스할 수 있도록 해줍니다. 모든 프로그램의 경우, 상태 덤프에 대해 &quot;클라우드 관리자 - 개발자 역할&quot;이 필요하며, 두 서비스의 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두에서 AEM 사용자 또는 AEM 관리자 제품 프로필에 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### AEM 스테이징 및 프로덕션 서비스 {#aem-staging-and-production-service}
