@@ -3,7 +3,7 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 1%
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> 여기에 설명된 자산 처리는 이전 버전의 Experience Manager에 있는 `DAM Update Asset` 워크플로우 모델을 대체합니다. 대부분의 표준 변환 생성 및 메타데이터 관련 단계는 에셋 마이크로서비스 처리로 대체되며, 나머지 단계는(있는 경우) 사후 처리 워크플로우 구성으로 대체할 수 있습니다.
+>여기에 설명된 자산 처리는 이전 버전의 Experience Manager에 있는 `DAM Update Asset` 워크플로우 모델을 대체합니다. 대부분의 표준 변환 생성 및 메타데이터 관련 단계는 에셋 마이크로서비스 처리로 대체되며, 나머지 단계는(있는 경우) 사후 처리 워크플로우 구성으로 대체할 수 있습니다.
 
 ## 자산 처리 시작 {#get-started}
 
@@ -99,9 +99,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 #### MIME 형식 포함 규칙 {#mime-type-inclusion-rules}
 
-특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 해당 목록과 일치하는 경우, 자산에 대해 특정 변환이 생성되지 않습니다(차단된 목록).
+특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 해당 목록과 일치하는 경우 자산(차단 목록)에 대해 특정 변환이 생성되지 않습니다.
 
-그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(허용된 목록).
+그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(허용 목록).
 
 #### 특수 FPO 변환 {#special-fpo-rendition}
 
@@ -169,7 +169,7 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 >[!NOTE]
 >
 >사용자 지정 워크플로우 러너의 구성은 OSGi 서비스의 구성입니다. OSGi 구성 [을 배포하는 방법에 대한 자세한 내용은 Experience Manager](/help/implementing/deploying/overview.md) 배포를 참조하십시오.
-> AEM의 온프레미스 및 관리 서비스 배포와 달리 OSGi 웹 콘솔은 클라우드 서비스 배포에서 직접 사용할 수 없습니다.
+>AEM의 온프레미스 및 관리 서비스 배포와 달리 OSGi 웹 콘솔은 클라우드 서비스 배포에서 직접 사용할 수 없습니다.
 
 사후 처리 워크플로우에서 사용할 수 있는 표준 워크플로우 단계에 대한 자세한 내용은 개발자 참조에서 [사후 처리 워크플로우의](developer-reference-material-apis.md#post-processing-workflows-steps) 워크플로우 단계를 참조하십시오.
 
