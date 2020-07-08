@@ -2,25 +2,27 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3914'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
 
 # 클라우드의 디스패처 {#Dispatcher-in-the-cloud}
 
-## Apache 및 Dispatcher 구성 및 테스트 {#apache-and-dispatcher-configuration-and-testing}
+## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
 이 섹션에서는 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 Cloud 환경에 배포하기 전에 로컬로 유효성을 확인하고 실행하는 방법에 대해 설명합니다. 또한 클라우드 환경의 디버깅에 대해 설명합니다. Dispatcher에 대한 자세한 내용은 [AEM Dispatcher 설명서를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
+>
 >Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 로컬 컴퓨터에서 Dispatcher을 실행하고 디버깅하는 데 필요한 사전 요구 사항입니다. 아래 섹션에는 Mac 또는 Linux 버전의 SDK를 사용하는 명령이 포함되어 있지만 Windows SDK는 유사한 방식으로 사용할 수 있습니다.
 
 >[!WARNING]
-> Windows 사용자: Cloud Service 로컬 Dispatcher 도구(v2.0.20)로서 현재 AEM 버전은 Windows와 호환되지 않습니다. Windows 호환성에 대한 업데이트를 받으려면 [Adobe](https://daycare.day.com/home.html) 지원 센터에 문의하십시오.
+>
+>Windows 사용자: Cloud Service 로컬 Dispatcher 도구(v2.0.20)로서 현재 AEM 버전은 Windows와 호환되지 않습니다. Windows 호환성에 대한 업데이트를 받으려면 [Adobe](https://daycare.day.com/home.html) 지원 센터에 문의하십시오.
 
 ## Dispatcher 도구 {#dispatcher-sdk}
 
@@ -197,7 +199,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 다음과 같이 호출됩니다. `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-이 도구는 Apache 및 발송자 구성의 유효성을 확인합니다. 패턴으로 모든 파일을 `conf.d/enabled_vhosts/*.vhost` 스캔하고 허용되는 지시문만 사용하는지 확인합니다. Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 allowlist 명령을 실행하여 나열할 수 있습니다.
+이 도구는 Apache 및 발송자 구성의 유효성을 확인합니다. 패턴으로 모든 파일을 `conf.d/enabled_vhosts/*.vhost` 스캔하고 허용되는 지시문만 사용하는지 확인합니다. Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 명령을 실행하여 나열할 수 허용 목록에 추가하다 있습니다.
 
 ```
 $ validator whitelist
@@ -236,9 +238,9 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-고객은 임의의 모듈을 추가할 수 없지만, 향후 제품에 포함할 추가 모듈을 고려할 수 있습니다. 고객은 위에 설명된 대로 SDK에서 유효성 검사기의 allowlist 명령을 실행하여 지정된 Dispatcher 버전에 사용할 수 있는 지시어 목록을 찾을 수 있습니다.
+고객은 임의의 모듈을 추가할 수 없지만, 향후 제품에 포함할 추가 모듈을 고려할 수 있습니다. 고객은 위에 설명된 대로 SDK에서 유효성 검사기의 Dispatcher 명령을 실행하여 지정된 버전에 사용할 수 있는 지시어 목록을 찾을 수 있습니다허용 목록에 추가하다.
 
-allowlist에는 고객 구성에서 허용되는 Apache 지시문 목록이 포함되어 있습니다. 지시문이 허용되지 않으면 도구가 오류를 기록하고 0이 아닌 종료 코드를 반환합니다. 명령줄에 allowlist가 지정되지 않은 경우(호출해야 하는 방식), 이 도구는 Cloud 환경에 배포하기 전에 Cloud Manager가 유효성 검사에 사용할 기본 허용 목록을 사용합니다.
+에는 허용 목록에 추가하다 고객 구성에서 허용되는 Apache 지시문 목록이 포함되어 있습니다. 지시문이 허용되지 않으면 도구가 오류를 기록하고 0이 아닌 종료 코드를 반환합니다. 명령줄에허용 목록에 추가하다가 없는 경우(호출해야 하는 방식), 이 도구는 Cloud 환경에 배포하기 전에 Cloud Manager가 유효성 검사에 사용할 기본 허용 목록에 추가하다를 사용합니다.
 
 또한 패턴을 사용하여 모든 파일을 추가로 스캔하고 다음을 `conf.dispatcher.d/enabled_farms/*.farm` 확인합니다.
 
@@ -474,23 +476,25 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## AMS를 클라우드 서비스 디스패처 구성으로 AEM으로 변환하는 방법
 
-다음 섹션에서는 AMS 구성을 변환하는 방법에 대한 단계별 지침을 제공합니다. Cloud [Manager 디스패처 구성에 설명된 것과 유사한 구조를 가진 아카이브를 가지고 있다고 가정합니다](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+다음 섹션에서는 AMS 구성을 변환하는 방법에 대한 단계별 지침을 제공합니다. It assumes
+that you have an archive with a structure similar to the one described in [Cloud Manager dispatcher configuration](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### 아카이브 추출 및 최종 접두사 제거
 
 아카이브를 하나의 폴더로 추출하고, 바로 하위 폴더가 `conf`, `conf.d``conf.dispatcher.d` 및 `conf.modules.d`로 시작되도록 합니다. 그렇지 않으면 위쪽으로 옮겨라.
 
-### 사용되지 않은 하위 폴더와 파일 제거
+### 사용하지 않는 하위 폴더와 파일 제거
 
 하위 폴더 `conf` 와 `conf.modules.d`일치하는 파일도 제거할 수 있습니다 `conf.d/*.conf`.
 
 ### 게시되지 않은 모든 가상 호스트 제거
 
-가상 호스트 파일 `conf.d/enabled_vhosts` 의 이름 `author`, `unhealthy``health``lc` 또는 `flush` 해당 이름을 가진 가상 호스트 파일을제거합니다. 연결되어 있지 않은 가상 호스트 파일 `conf.d/available_vhosts` 은 모두 제거할 수 있습니다.
+가상 호스트 파일 `conf.d/enabled_vhosts` 의 이름 `author`, `unhealthy``health``lc` 또는 `flush` 해당 이름을 가진 가상 호스트 파일을제거합니다. All virtual host files in `conf.d/available_vhosts` that are not
+linked to can be removed as well.
 
-### 포트 80을 참조하지 않는 가상 호스트 섹션 제거 또는 주석 추가
+### 포트 80을 참조하지 않는 가상 호스트 섹션 제거 또는 주석 달기
 
-포트 80이 아닌 다른 포트만을 참조하는 가상 호스트 파일에 섹션이 있는 경우
+가상 호스트 파일에 포트 80 이외의 다른 포트만 참조하는 섹션이 있는 경우
 
 ```
 <VirtualHost *:443>
@@ -498,168 +502,194 @@ $ docker exec d75fbd23b29 httpd-test
 </VirtualHost>
 ```
 
-제거하거나 주석을 달 수 있습니다. 이러한 섹션의 문은 처리되지 않습니다. 이 문을 계속 유지하면 아무런 효과가 없는 상태로 편집하게 되므로 혼동됩니다.
+해당 섹션을 제거하거나 주석을 답니다. 이러한 섹션의 문은 처리되지 않지만, 이 문을 계속 유지하면 아무것도 적용되지 않은 상태로 편집을 종료할 수 있으므로 혼동을 줄 수 있습니다.
 
-### 다시 쓰기 확인
+### rewrites 확인
 
 Enter directory `conf.d/rewrites`.
 
-이름 `base_rewrite.rules` 과 `xforwarded_forcessl_rewrite.rules` 을 지정한 파일을 제거하고 해당 파일을 참조하는 가상 호스트 파일의 문을 `Include` 다시 이동하도록 기억하십시오.
+Remove any file named `base_rewrite.rules` and `xforwarded_forcessl_rewrite.rules` and remember to
+remove `Include` statements in the virtual host files referring to them.
 
-이제 `conf.d/rewrites` 단일 파일이 포함된 경우 이름을 가상 호스트 파일 `rewrite.rules` 에서 해당 파일을 참조하는 `Include` 문을 적용하도록 변경해야 합니다.
+If `conf.d/rewrites` now contains a single file, it should be renamed to `rewrite.rules` and don&#39;t
+forget to adapt the `Include` statements referring to that file in the virtual host files as well.
 
-그러나 폴더에 여러 개의 가상 호스트 특정 파일이 들어 있는 경우 해당 콘텐트를 가상 호스트 파일에서 해당 파일을 참조하는 `Include` 문으로 복사해야 합니다.
+If the folder however contains multiple, virtual host specific files, their contents should be
+copied to the `Include` statement referring to them in the virtual host files.
 
 ### 변수 확인
 
 Enter directory `conf.d/variables`.
 
-이름이 지정된 파일 `ams_default.vars` 을 제거하고 해당 파일을 참조하는 가상 호스트 `Include` 파일에서 명령문을 제거해야 합니다.
+Remove any file named `ams_default.vars` and remember to remove `Include` statements in the virtual
+host files referring to them.
 
-이제 `conf.d/variables` 단일 파일이 포함된 경우 이름을 가상 호스트 파일 `custom.vars` 에서 해당 파일을 참조하는 `Include` 문을 적용하도록 변경해야 합니다.
+If `conf.d/variables` now contains a single file, it should be renamed to `custom.vars` and don&#39;t
+forget to adapt the `Include` statements referring to that file in the virtual host files as well.
 
-그러나 폴더에 여러 개의 가상 호스트 특정 파일이 들어 있는 경우 해당 콘텐트를 가상 호스트 파일에서 해당 파일을 참조하는 `Include` 문으로 복사해야 합니다.
+If the folder however contains multiple, virtual host specific files, their contents should be
+copied to the `Include` statement referring to them in the virtual host files.
 
 ### 허용 목록 제거
 
-폴더를 `conf.d/whitelists` 제거하고 해당 하위 폴더에 있는 일부 파일을 참조하는 가상 호스트 `Include` 파일에서 문을 제거합니다.
+Remove the folder `conf.d/whitelists` and remove `Include` statements in the virtual host files referring to
+some file in that subfolder.
 
-### 더 이상 사용할 수 없는 모든 변수 바꾸기
+### 더 이상 사용할 수 없는 변수 모두 바꾸기
 
-모든 가상 호스트 파일에서:
+모든 가상 호스트 파일에서 다음을 수행합니다.
 
 이름 `PUBLISH_DOCROOT` 을 `DOCROOT`Remove 섹션, `DISP_ID``PUBLISH_FORCE_SSL` 또는 `PUBLISH_WHITELIST_ENABLED`
 
-### 유효성 검사기를 실행하여 상태 확인
+### 검사기를 실행하여 상태 확인
 
-다음 하위 명령을 사용하여 디렉토리에서 검사기를 `httpd` 실행합니다.
+Run the dispatcher validator in your directory, with the `httpd` subcommand:
 
 ```
 $ validator httpd .
 ```
 
-누락된 포함 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인하십시오.
+누락된 포함 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인합니다.
 
 허용되지 않는 Apache 지시문이 표시되면 제거하십시오.
 
 ### 게시되지 않은 모든 팜 제거
 
-이름이 있는 팜 파일 `conf.dispatcher.d/enabled_farms``author`을 `unhealthy``health`모두`lc` 제거합니다 `flush` . 연결되지 않은 팜 파일 `conf.dispatcher.d/available_farms` 은 모두 제거할 수 있습니다.
+이름이 있는 팜 파일 `conf.dispatcher.d/enabled_farms``author`을 `unhealthy``health`모두`lc` 제거합니다 `flush` . All farm files in `conf.dispatcher.d/available_farms` that are not
+linked to can be removed as well.
 
 ### 팜 파일 이름 변경
 
 패턴과 일치하도록 모든 팜의 이름을 `conf.d/enabled_farms` 변경해야 `*.farm`합니다. 예를 들어 호출된 `customerX_farm.any` afarm 파일의 이름을 변경해야 합니다 `customerX.farm`.
 
-### 캐시 확인
+### cache 확인
 
 Enter directory `conf.dispatcher.d/cache`.
 
-미리 고정한 파일을 제거합니다 `ams_`.
+`ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-현재 비어 `conf.dispatcher.d/cache` 있는 경우 표준 발송자 구성 `conf.dispatcher.d/cache/rules.any`에서 이 폴더로 파일을 복사합니다. 표준 디스패처 구성은 이 SDK의 폴더 `src` 에 있습니다. 팜 파일에서도 규칙 파일을`$include` 참조하는 `ams_*_cache.any` 문서도 적용하십시오.
+If `conf.dispatcher.d/cache` is now empty, copy the file `conf.dispatcher.d/cache/rules.any`
+from the standard dispatcher configuration to this folder. The standard dispatcher
+configuration can be found in the folder `src` of this SDK. Don&#39;t forget to adapt the
+`$include` statements referring to the `ams_*_cache.any` rule files  in the farm files
+as well.
 
-대신 `conf.dispatcher.d/cache` 이제 접미어가 붙은 단일 파일이 포함되어 `_cache.any`있으면 이름이 &#39;로 변경되어야 `rules.any` 하며 팜 파일에서도 해당 파일을 참조하는 `$include` 문서도 수정해야 합니다.
+If instead `conf.dispatcher.d/cache` now contains a single file with suffix `_cache.any`,
+it should be renamed to `rules.any` and don&#39;t forget to adapt the `$include` statements
+referring to that file in the farm files as well.
 
-그러나 폴더에 해당 패턴이 있는 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 해당 파일을 참조하는 `$include` 문으로 복사해야 합니다.
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
 
-접미어가 붙은 파일을 제거합니다 `_invalidate_allowed.any`.
+Remove any file that has the suffix `_invalidate_allowed.any`.
 
 Cloud 디스패처 구성 `conf.dispatcher.d/cache/default_invalidate_any` 의 기본 AEM에서 해당 위치로 파일을 복사합니다.
 
-각 팜 파일에서 섹션의 내용을 제거하고 다음 `cache/allowedClients` 형식으로 바꿉니다.
+In each farm file, remove any contents in the `cache/allowedClients` section and replace it
+with:
 
 ```
 $include "../cache/default_invalidate.any"
 ```
 
-### 클라이언트 헤더 확인
+### client headers 확인
 
 Enter directory `conf.dispatcher.d/clientheaders`.
 
-미리 고정한 파일을 제거합니다 `ams_`.
+`ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-이제 `conf.dispatcher.d/clientheaders` 접미어가 붙은 단일 파일이 포함되어 `_clientheaders.any`있으면 이름이 팜 파일에서도 해당 파일을 참조하는 `clientheaders.any` `$include` 문을 적용하도록 변경되어야 합니다.
+If `conf.dispatcher.d/clientheaders` now contains a single file with suffix `_clientheaders.any`,
+it should be renamed to `clientheaders.any` and don&#39;t forget to adapt the `$include` statements
+referring to that file in the farm files as well.
 
-그러나 폴더에 해당 패턴이 있는 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 해당 파일을 참조하는 `$include` 문으로 복사해야 합니다.
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
 
 기본 AEM `conf.dispatcher/clientheaders/default_clientheaders.any` 에서 Cloud Service 디스패처 구성으로 파일을 해당 위치에 복사합니다.
 
-각 팜 파일에서 클라이언트 판독기를 바꾸려면 다음과 같이 보이는 명령문이 포함됩니다.
+각 팜 파일에서 다음과 같은 clientheader 포함 문을
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.any"
 ```
 
-with the statement:
+다음 문으로 바꿉니다.
 
 ```
 $include "../clientheaders/default_clientheaders.any"
 ```
 
-### 필터 확인
+### filter 확인
 
 Enter directory `conf.dispatcher.d/filters`.
 
-미리 고정한 파일을 제거합니다 `ams_`.
+`ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-이제 `conf.dispatcher.d/filters` 하나의 파일이 포함된 경우 이름을`filters.any` 변경하여 팜 파일에서도 해당 파일을 참조하는 `$include` 문을 적용해야 합니다.
+If `conf.dispatcher.d/filters` now contains a single file it should be renamed to
+`filters.any` and don&#39;t forget to adapt the `$include` statements referring to that
+file in the farm files as well.
 
-그러나 폴더에 해당 패턴이 있는 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 해당 파일을 참조하는 `$include` 문으로 복사해야 합니다.
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
 
 기본 AEM `conf.dispatcher/filters/default_filters.any` 에서 Cloud Service 디스패처 구성으로 파일을 해당 위치에 복사합니다.
 
-각 팜 파일에서 필터에는 다음과 같이 보이는 문이 포함됩니다.
+각 팜 파일에서 다음과 같은 filter 포함 문을
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
 ```
 
-with the statement:
+다음 문으로 바꿉니다.
 
 ```
 $include "../filters/default_filters.any"
 ```
 
-### 렌더링 확인
+### renders 확인
 
 Enter directory `conf.dispatcher.d/renders`.
 
-해당 폴더의 모든 파일을 제거합니다.
+해당 폴더의 파일을 모두 제거합니다.
 
 기본 AEM `conf.dispatcher.d/renders/default_renders.any` 에서 Cloud Service 디스패처 구성으로 파일을 해당 위치에 복사합니다.
 
-각 팜 파일에서 섹션의 내용을 제거하고 다음 `renders` 형식으로 바꿉니다.
+In each farm file, remove any contents in the `renders` section and replace it
+with:
 
 ```
 $include "../renders/default_renders.any"
 ```
 
-### 가상 호스트 확인
+### virtualhosts 확인
 
-디렉토리 이름 `conf.dispatcher.d/vhosts` 을 변경하여 `conf.dispatcher.d/virtualhosts` 입력합니다.
+Rename the directory `conf.dispatcher.d/vhosts` to `conf.dispatcher.d/virtualhosts` and enter it.
 
-미리 고정한 파일을 제거합니다 `ams_`.
+`ams_` 접두어가 있는 파일을 모두 제거합니다.
 
-이제 `conf.dispatcher.d/virtualhosts` 하나의 파일이 포함된 경우 이름을`virtualhosts.any` 변경하여 팜 파일에서도 해당 파일을 참조하는 `$include` 문을 적용해야 합니다.
+If `conf.dispatcher.d/virtualhosts` now contains a single file it should be renamed to
+`virtualhosts.any` and don&#39;t forget to adapt the `$include` statements referring to that
+file in the farm files as well.
 
-그러나 폴더에 해당 패턴이 있는 팜 특정 파일이 여러 개 있는 경우 해당 컨텐츠를 팜 파일에서 해당 파일을 참조하는 `$include` 문으로 복사해야 합니다.
+If the folder however contains multiple, farm specific files with that pattern, their contents
+should be copied to the `$include` statement referring to them in the farm files.
 
 기본 AEM `conf.dispatcher/virtualhosts/default_virtualhosts.any` 에서 Cloud Service 디스패처 구성으로 파일을 해당 위치에 복사합니다.
 
-각 팜 파일에서 필터에는 다음과 같이 보이는 문이 포함됩니다.
+각 팜 파일에서 다음과 같은 filter 포함 문을
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
 ```
 
-with the statement:
+다음 문으로 바꿉니다.
 
 ```
 $include "../virtualhosts/default_virtualhosts.any"
 ```
 
-### 유효성 검사기를 실행하여 상태 확인
+### 검사기를 실행하여 상태 확인
 
 다음 하위 명령을 사용하여 디렉토리에서 AEM을 Cloud Service 디스패처 유효성 검사기로 `dispatcher` 실행합니다.
 
@@ -667,15 +697,17 @@ $include "../virtualhosts/default_virtualhosts.any"
 $ validator dispatcher .
 ```
 
-누락된 포함 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인하십시오.
+누락된 포함 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인합니다.
 
-정의되지 않은 변수와 관련된 오류가 표시되면 이름을 `PUBLISH_DOCROOT`바꿀 수 `DOCROOT`있습니다.
+정의되지 않은 변수 `PUBLISH_DOCROOT`와 관련된 오류가 표시되면 이름을 `DOCROOT`로 바꿀 수 있습니다.
 
-다른 모든 오류는 유효성 검사기 도구 설명서의 문제 해결 섹션을 참조하십시오.
+다른 모든 오류에 대해서는 유효성 검사기 도구 설명서의 문제 해결 섹션을 참조하십시오.
 
 ### 로컬 배포로 구성 테스트(Docker 설치 필요)
 
-AEM `docker_run.sh` 의 스크립트를 Cloud Service Dispatcher 도구로 사용하여 구성에 배포에만 표시되는 다른 오류가 없는지 테스트할 수 있습니다.
+Using the script `docker_run.sh` in the AEM as a Cloud Service Dispatcher Tools, you can test that
+your configuration does not contain any other error that would only show up in
+deployment:
 
 ### 1단계: 유효성 검사기를 사용하여 배포 정보 생성
 
@@ -683,11 +715,11 @@ AEM `docker_run.sh` 의 스크립트를 Cloud Service Dispatcher 도구로 사�
 validator full -d out .
 ```
 
-전체 구성을 인증하고 배포 정보를 생성합니다. `out`
+This validates the full configuration and generates deployment information in `out`
 
 ### 2단계: 해당 배포 정보를 사용하여 문서 이미지에서 디스패처 시작
 
-macOS 컴퓨터에서 실행 중인 AEM 게시 서버가 포트 4503에서 수신 대기 중이면 다음과 같이 해당 서버 앞에서 디스패처를 시작할 수 있습니다.
+macOS 컴퓨터에서 실행 중인 AEM 게시 서버를 사용하여 포트 4503에서 수신 대기하면 다음과 같이 해당 서버 앞에서 Dispatcher를 시작할 수 있습니다.
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -697,6 +729,9 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 새 발송자 구성 사용
 
-축하합니다! 유효성 검사기가 더 이상 문제를 보고하지 않고 도커 컨테이너가 아무런 오류 또는 경고 없이 시작하는 경우 구성을 git 저장소의 `dispatcher/src` 하위 디렉터로 이동할 준비가 됩니다.
+축하합니다! If the validator no longer reports any issue and the
+docker container starts up without any failures or warnings, you&#39;re
+ready to move your configuration to a `dispatcher/src` subdirectory
+of your git repository.
 
 **AMS Dispatcher 구성 버전 1을 사용하는 고객은 위의 지침을 따를 수 있도록 고객 지원에 문의하여 버전 1에서 버전 2로 마이그레이션할 수 있도록 지원하시기 바랍니다.**
