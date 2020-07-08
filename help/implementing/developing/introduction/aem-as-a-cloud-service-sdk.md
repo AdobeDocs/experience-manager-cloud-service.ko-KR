@@ -2,32 +2,32 @@
 title: 클라우드 서비스 SDK로서의 AEM
 description: 완료하기
 translation-type: tm+mt
-source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
-클라우드 서비스 SDK로서 AEM은 다음과 같은 가공물로 구성됩니다.
+Cloud Service SDK로서 AEM은 다음과 같은 가공물로 구성됩니다.
 
 * **빠른 시작 Jar** - 로컬 개발에 사용되는 AEM 런타임입니다.
-* **Java API Jar** - AEM에서 Cloud Service로 개발한 데 사용할 수 있는 모든 허용되는 Java API를 노출하는 Java Jar/Maven 종속성 이전에 초인이라고도 함
+* **Java API Jar** - AEM에서 Cloud Service으로 개발하는 데 사용할 수 있는 모든 허용되는 Java API를 노출하는 Java Jar/Maven 종속성 이전에 초인이라고도 함
 * **Javadoc Jar** - Java API Jar용 javadocs
-* **발송자 도구** - Dispatcher 로컬에서 개발하는 데 사용되는 도구 세트입니다. unix 및 windows용 객체 분리
+* **Dispatcher 도구** - 로컬에서 Dispatcher에서 개발하는 데 사용되는 도구 세트입니다. unix 및 windows용 객체 분리
 
-또한 AEM 6.5 이전 버전으로 이전에 배포한 일부 고객은 아래 결함을 사용하게 됩니다. 로컬 컴파일이 Quickstart jar에서 작동하지 않고 클라우드 서비스로 배포된 AEM에서 제거된 인터페이스 때문일 가능성이 있는 경우 고객 지원에 연락하여 액세스 권한이 필요한지 확인합니다. 이를 위해서는 백엔드의 변경이 필요합니다.
+또한 AEM 6.5 이전 버전으로 이전에 배포한 일부 고객은 아래 결함을 사용하게 됩니다. 로컬 컴파일이 Quickstart jar에서 작동하지 않고 Cloud Service으로 배포된 AEM에서 제거된 인터페이스 때문일 것으로 의심되는 경우 고객 지원에 연락하여 액세스 권한이 필요한지 확인합니다. 이를 위해서는 백엔드의 변경이 필요합니다.
 
 * **6.5 더 이상 사용되지 않는 Java API Jar** - AEM 6.5 이후 제거된 추가 인터페이스 집합
 * **6.5 더 이상 사용되지 않는 Javadoc Jar** - 추가 인터페이스 세트를 위한 Javadocs
 
-## 클라우드 서비스 SDK로 AEM 액세스 {#accessing-the-aem-as-a-cloud-service-sdk}
+## Cloud Service SDK로 AEM 액세스 {#accessing-the-aem-as-a-cloud-service-sdk}
 
-* AEM 관리 콘솔의 Adobe Experience Manager **정보** 아이콘을 확인하여 프로덕션에서 실행 중인 AEM 버전을 확인할 수 있습니다.
-* 빠른 시작 jar 및 발송자 도구는 [소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). SDK 목록에 대한 액세스는 클라우드 서비스 환경으로 AEM Managed Services 또는 AEM을 사용하는 것으로 제한됩니다.
+* AEM Admin Console Adobe Experience Manager **정보** 아이콘을 확인하여 프로덕션에서 실행 중인 AEM 버전을 확인할 수 있습니다.
+* 빠른 시작 jar 및 Dispatcher 도구는 [소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html). SDK 목록에 대한 액세스는 Cloud Service 환경으로 AEM Managed Services 또는 AEM을 사용하는 것으로 제한됩니다.
 * Java API Jar 및 Javadoc Jar는 명령줄 또는 기본 IDE와 함께 전문적인 툴을 통해 다운로드할 수 있습니다.
 * 마스터 프로젝트 앱은 다음 API Jar 패키지를 참조해야 합니다. 이러한 종속성은 모든 하위 패키지 홈에서도 참조되어야 합니다.
 
@@ -40,7 +40,9 @@ ht-degree: 0%
 </dependency>
 ```
 
->[!NOTE] SDK의 버전 항목은 클라우드 서비스로 AEM 버전과 일치해야 합니다. AEM에 로그인한 다음 화면 오른쪽 상단에 있는 물음표로 이동하여 Adobe Experience Manager **[!UICONTROL 정보를 선택하면 사용 중인 버전을 확인할 수 있습니다]**
+>[!NOTE]
+>
+>SDK의 버전 항목은 Cloud Service으로 AEM 버전과 일치해야 합니다. AEM에 로그인한 다음 화면 오른쪽 상단 모서리에 있는 질문 표시로 이동하고 Adobe Experience Manager **[!UICONTROL 정보를 선택하면 사용 중인 버전을 확인할 수 있습니다]**
 
 
 ## 새 SDK 버전으로 로컬 프로젝트 새로 고침 {#refreshing-a-local-project-with-a-new-skd-version}
