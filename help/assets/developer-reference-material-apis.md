@@ -1,9 +1,9 @@
 ---
-title: '클라우드 서비스로 Adobe Experience Manager의 디지털 에셋 관리를 위한 에셋 API '
+title: 'Cloud Service의 디지털 에셋 관리를 위한 에셋 API '
 description: 자산 API를 사용하면 이진, 메타데이터, 변환, 주석 및 컨텐츠 조각 등 자산을 관리하는 기본 CRUD(Create-Read-Update-delete) 작업을 수행할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Give a list of and overview of all reference information available.
 
 ## 자산 업로드 {#asset-upload-technical}
 
-클라우드 서비스인 Experience Manager는 자산을 저장소에 업로드하는 새로운 방법을 제공합니다. 바이너리 클라우드 스토리지에 직접 바이너리를 업로드할 수 있습니다. 이 섹션에서는 기술 개요를 제공합니다.
+클라우드 서비스로 Experience Manager은 저장소에 자산을 업로드하는 새로운 방법을 제공합니다. 바이너리 클라우드 스토리지에 직접 바이너리 업로드를 수행할 수 있습니다. 이 섹션에서는 기술 개요를 제공합니다.
 
 ### 직접 이진 업로드 개요 {#overview-binary-upload}
 
@@ -42,8 +42,9 @@ AEM의 이전 버전과 비교할 때 중요한 차이점이 있습니다.
 
 이 접근 방식은 자산 업로드를 보다 확장 가능하고 성능 있게 처리할 수 있습니다.
 
-> !![NOTE]
-이 방법을 구현하는 클라이언트 코드를 검토하려면 오픈 소스 aem- [upload 라이브러리를 참조하십시오](https://github.com/adobe/aem-upload)
+>[!NOTE]
+>
+>이 방법을 구현하는 클라이언트 코드를 검토하려면 오픈 소스 aem- [upload 라이브러리를 참조하십시오](https://github.com/adobe/aem-upload)
 
 ### 업로드 시작 {#initiate-upload}
 
@@ -108,14 +109,13 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 | `fileName` | 문자열 | 필수 | 시작 데이터에 의해 제공된 자산의 이름입니다. |
 | `mimeType` | 문자열 | 필수 | 초기화 데이터에 의해 제공된 바이너리의 HTTP 컨텐츠 유형입니다. |
 | `uploadToken` | 문자열 | 필수 | 초기화 데이터에 의해 제공된 것처럼 바이너리에 대한 토큰을 업로드합니다. |
-| `createVersion` | 부울 | 선택 사항입니다 | 지정된 이름의 자산 `True` 과 자산이 이미 존재하는 경우, Experience Manager가 자산의 새 버전을 만듭니다. |
+| `createVersion` | 부울 | 선택 사항입니다 | 지정된 이름의 자산 `True` 과 자산이 이미 존재하는 경우, Experience Manager은 자산의 새 버전을 만듭니다. |
 | `versionLabel` | 문자열 | 선택 사항입니다 | 새 버전이 만들어진 경우 자산의 새 버전과 연관된 레이블입니다. |
 | `versionComment` | 문자열 | 선택 사항입니다 | 새 버전이 만들어지면 버전과 연결된 댓글이 표시됩니다. |
-| `replace` | 부울 | 선택 사항입니다 | 지정된 이름의 자산 `True` 과 자산이 이미 존재하는 경우, Experience Manager가 자산을 삭제한 후 자산을 다시 만듭니다. |
+| `replace` | 부울 | 선택 사항입니다 | 지정된 이름의 자산 `True` 과 자산이 이미 존재하는 경우, Experience Manager은 자산을 삭제한 후 자산을 다시 만듭니다. |
 
 >!![NOTE]
->
-> 자산이 이미 존재하며 지정되지 않은 경우 `createVersion` Experience Manager `replace` 는 자산의 현재 버전을 새 바이너리로 업데이트합니다.
+자산이 이미 존재하며 지정되지 않은 경우 `createVersion` 는 자산의 현재 버전을 새 바이너리로 업데이트합니다 `replace` .
 
 시작 프로세스와 마찬가지로 전체 요청 데이터에는 둘 이상의 파일에 대한 정보가 포함될 수 있습니다.
 
@@ -134,7 +134,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Adobe Experience Manager를 클라우드 서비스로 사용하는 경우 새로운 업로드 API만 지원됩니다. Adobe Experience Manager 6.5의 API는 더 이상 사용되지 않습니다. 자산 또는 표현물(바이너리 업로드)의 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
+Cloud Service의 경우 새 업로드 API만 지원됩니다. Adobe Experience Manager 6.5의 API는 더 이상 사용되지 않습니다. 자산 또는 표현물(바이너리 업로드)의 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
 
 * [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, 좋아요 `AssetManager.createAsset(..)`
@@ -146,15 +146,15 @@ Adobe Experience Manager를 클라우드 서비스로 사용하는 경우 새로
 
 ## 자산 처리 및 사후 처리 워크플로우 {#post-processing-workflows}
 
-Experience Manager에서 자산 처리는 **[!UICONTROL 자산 마이크로서비스를 사용하는 처리 프로필]** 구성을 기반으로 합니다 [](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). 프로세싱에는 개발자 익스텐션이 필요하지 않습니다.
+Experience Manager에서 자산 처리는 **[!UICONTROL 자산 마이크로서비스를 사용하는 처리 프로필]** 구성을 기반으로 [합니다](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). 프로세싱에는 개발자 익스텐션이 필요하지 않습니다.
 
 사후 처리 워크플로우 구성의 경우 사용자 정의 단계와 함께 표준 워크플로우와 함께 사용하십시오.
 
 ## 사후 처리 워크플로우의 워크플로우 단계 지원 {#post-processing-workflows-steps}
 
-이전 버전의 Experience Manager에서 클라우드 서비스로 Experience Manager로 업그레이드한 고객은 에셋 마이크로 서비스를 사용하여 에셋을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로 서비스는 구성 및 사용이 훨씬 간단합니다. 이전 버전의 [!UICONTROL DAM 자산] 업데이트 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다.
+이전 버전의 Experience Manager에서 Cloud Service으로 Experience Manager으로 업그레이드한 고객은 에셋 마이크로 서비스를 사용하여 에셋을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로 서비스는 구성 및 사용이 훨씬 간단합니다. 이전 버전의 [!UICONTROL DAM 자산] 업데이트 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다.
 
-다음 워크플로우 단계는 클라우드 서비스로 Experience Manager에서 지원됩니다.
+다음 워크플로우 단계는 Experience Manager에서 Cloud Service으로 지원됩니다.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
