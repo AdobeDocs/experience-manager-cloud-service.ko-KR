@@ -1,8 +1,8 @@
 ---
 title: Git과 통합
-description: Git과 통합 - 클라우드 서비스
+description: Git과 통합 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 �
 
 >[!NOTE]
 >
-> 이 비디오 시리즈에서 설명한 단계 및 이름 지정 규칙은 고객이 관리하는 git 리포지토리 및 Cloud Manager를 사용하여 작업하는 데 필요한 몇 가지 모범 사례를 보여줍니다. 묘사된 규칙과 워크플로우는 개별 개발 팀에 맞게 조정될 것으로 예상됩니다.
+>이 비디오 시리즈에서 설명한 단계 및 이름 지정 규칙은 고객이 관리하는 git 리포지토리 및 Cloud Manager를 사용하여 작업하는 데 필요한 몇 가지 모범 사례를 보여줍니다. 묘사된 규칙과 워크플로우는 개별 개발 팀에 맞게 조정될 것으로 예상됩니다.
 
 ## 초기 동기화 {#initial-sync}
 
