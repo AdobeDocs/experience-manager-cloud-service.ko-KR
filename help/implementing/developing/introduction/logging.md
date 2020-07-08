@@ -2,17 +2,17 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
 # 로깅{#logging}
 
-AEM as a Cloud Service는 고객이 고유한 고객 경험을 만드는 사용자 지정 코드를 포함할 수 있는 플랫폼입니다. 이러한 점을 염두에 두고, 로깅은 클라우드 환경에서 사용자 지정 코드를 디버깅하고 특히 로컬 개발 환경을 위해 중요한 기능입니다.
+Cloud Service로서 AEM은 고객이 고객층의 고유한 경험을 만들기 위해 사용자 지정 코드를 포함할 수 있는 플랫폼입니다. 이러한 점을 염두에 두고, 로깅은 클라우드 환경에서 사용자 지정 코드를 디버깅하고 특히 로컬 개발 환경을 위해 중요한 기능입니다.
 
 
 <!-- ## Global Logging {#global-logging}
@@ -26,9 +26,9 @@ AEM as a Cloud Service는 고객이 고유한 고객 경험을 만드는 사용�
 * the format to be used when writing the log messages
 -->
 
-## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
+## Cloud Service 로깅으로 AEM {#aem-as-a-cloud-service-logging}
 
-클라우드 서비스로서의 AEM에서는 다음을 구성할 수 있습니다.
+AEM을 Cloud Service으로 사용하면 다음을 구성할 수 있습니다.
 
 * 중앙 로깅 서비스를 위한 전역 매개 변수
 * 요청 데이터 로깅; 요청 정보를 위한 전문 로깅 구성
@@ -40,16 +40,17 @@ AEM as a Cloud Service는 고객이 고유한 고객 경험을 만드는 사용�
 
 >[!NOTE]
 >
->클라우드 서비스로 AEM에 로그인하는 것은 Sling 원칙을 기반으로 합니다. 자세한 [내용은 Sling](https://sling.apache.org/site/logging.html) Logging을 참조하십시오.
+>Cloud Service으로 AEM에 로그인하는 것은 Sling 원칙을 기반으로 합니다. 자세한 [내용은 Sling](https://sling.apache.org/site/logging.html) Logging을 참조하십시오.
 
-## 클라우드 서비스 Java 로깅으로 AEM 사용 {#aem-as-a-cloud-service-java-logging}
+## Cloud Service Java 로깅으로 AEM {#aem-as-a-cloud-service-java-logging}
 
 ### 표준 로거 및 작가 {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> 표준 구성은 대부분의 설치에 적합하지만 필요할 경우 사용자 정의할 수 있습니다. 그러나 표준 로깅 구성을 사용자 정의해야 하는 경우 `dev` 환경에서만 수행해야 합니다.
+>[!IMPORTANT]
+>
+>표준 구성은 대부분의 설치에 적합하지만 필요할 경우 사용자 정의할 수 있습니다. 그러나 표준 로깅 구성을 사용자 정의해야 하는 경우 `dev` 환경에서만 수행해야 합니다.
 
-특정 로거 및 작가는 클라우드 서비스 설치로서 표준 AEM에 포함됩니다.
+특정 로거 및 작가는 Cloud Service 설치로서 표준 AEM에 포함됩니다.
 
 첫 번째는 로그 `request` 와 로그를 모두 제어하는 특수 `access` 경우입니다.
 
@@ -93,21 +94,21 @@ AEM as a Cloud Service는 고객이 고유한 고객 경험을 만드는 사용�
 
 * 특정 작성기에 링크하지 않으므로 기본 구성이 있는 암시적 작성기를 만들고 사용합니다.
 
-**클라우드 서비스 HTTP 요청 로깅으로 AEM 사용**
+**Cloud Service HTTP 요청 로깅으로 AEM**
 
 AEM WCM 및 보관소에 대한 모든 액세스 요청은 여기에 등록되어 있습니다.
 
 출력 예:
 
-**클라우드 서비스 HTTP 요청/응답 액세스 로깅으로 AEM 사용**
+**Cloud Service HTTP 요청/응답 액세스 로깅의 AEM**
 
 각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
 출력 예:
 
-**Apache 웹 서버/디스패처 로깅**
+**Apache 웹 서버/Dispatcher 로깅**
 
-디스패처 문제를 디버깅하는 데 사용되는 로그입니다. 자세한 내용은 Apache [및 Dispatcher 구성 디버깅을 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/).
+Dispatcher 문제 디버깅에 사용되는 로그입니다. 자세한 내용은 Apache [및 Dispatcher 구성 디버깅을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/).
 
 <!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
 
@@ -154,14 +155,14 @@ leftover text from the last breakaway chunk (re dispatcher) -->
 
 ### 로거 및 개인 서비스 작가 {#loggers-and-writers-for-individual-services}
 
-글로벌 로깅 설정 외에도 AEM을 클라우드 서비스로 사용하면 개별 서비스에 대한 특정 설정을 구성할 수 있습니다.
+전역 로깅 설정 외에도 AEM을 Cloud Service으로 사용하면 개별 서비스에 대한 특정 설정을 구성할 수 있습니다.
 
 * 특정 로깅 수준
 * 로거(로그 메시지를 제공하는 OSGi 서비스)
 
 단일 서비스의 로그 메시지를 별도의 파일로 보낼 수 있습니다. 개발 또는 테스트 중에 특히 유용할 수 있습니다. 예를 들어 특정 서비스에 대해 로그 수준이 향상되어야 할 경우
 
-클라우드 서비스로 AEM에서는 다음을 사용하여 로그 메시지를 파일에 기록합니다.
+AEM은 Cloud Service으로 다음을 사용하여 로그 메시지를 파일에 기록합니다.
 
 1. OSGi 서비스 **** (로거)는 로그 메시지를 기록합니다.
 1. Logging **Logger는 이 메시지를 가져와서** 사용자의 사양에 따라 포맷합니다.
@@ -192,13 +193,13 @@ leftover text from the last breakaway chunk (re dispatcher) -->
 
 >[!NOTE]
 >
-> 아래에 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 변경 사항을 만든 다음 클라우드 서비스 인스턴스로 AEM에 푸시해야 합니다. 이 방법에 대한 자세한 내용은 클라우드 서비스로 [AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
+>아래에 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 변경 사항을 만든 다음 Cloud Service 인스턴스로 AEM에 푸시해야 합니다. 이 방법에 대한 자세한 내용은 Cloud Service [로 AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
 
 **디버그 로그 수준 활성화**
 
 >[!WARNING]
 >
-> DEBUG 로그 수준을 전역적으로 활성화하면 많은 양의 정보가 생성되므로 간을 이동하기 어렵습니다. 디버깅이 필요한 서비스에만 사용하도록 설정하는 것이 좋습니다. 자세한 내용은 로거 [및 개인 서비스 작성자를 참조하십시오](logging.md#loggers-and-writers-for-individual-services).
+>DEBUG 로그 수준을 전역적으로 활성화하면 많은 양의 정보가 생성되므로 간을 이동하기 어렵습니다. 디버깅이 필요한 서비스에만 사용하도록 설정하는 것이 좋습니다. 자세한 내용은 로거 [및 개인 서비스 작성자를 참조하십시오](logging.md#loggers-and-writers-for-individual-services).
 
 기본 로그 수준은 INFO입니다. 즉, DEBUG 메시지는 기록되지 않습니다.
 디버그 로그 수준을 활성화하려면
@@ -235,7 +236,7 @@ property to debug. 로그를 많은 로그를 생성하므로 로그를 필요 �
 
 >[!NOTE]
 >
->Adobe Experience Manager를 사용하여 작업할 때는 이러한 서비스에 대한 구성 설정을 관리하는 몇 가지 방법이 있습니다.
+>Adobe Experience Manager을 사용하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법이 몇 가지 있습니다.
 
 특정 상황에서는 다른 로그 수준의 사용자 지정 로그를 만들 수 있습니다. 다음과 같은 방법으로 저장소에서 이 작업을 수행할 수 있습니다.
 
