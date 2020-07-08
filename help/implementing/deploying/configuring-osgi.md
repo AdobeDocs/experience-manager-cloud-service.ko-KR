@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 AEM에 대한 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 클라우드 서비스로서의 AEM에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi는](https://www.osgi.org/) AEM(Adobe Experience Manager)의 기술 스택에서 기본적인 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
+[OSGi](https://www.osgi.org/) 는 AEM(Adobe Experience Manager)의 기술 스택에서 기본적인 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
 
 OSGi는 표준화된 원시 도형을 제공하여 애플리케이션이 작고 재사용 가능한 공동 작업 구성 요소로 구성되도록 합니다. 이러한 구성 요소는 애플리케이션으로 구성하고 배포할 수 있습니다. 이를 통해 OSGi 번들은 개별적으로 시작, 중지, 설치 및 설치할 수 있으므로 간편하게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소는 다양한 번들 중 하나에 포함됩니다. 자세한 내용은 [OSGi 사양을 참조하십시오](https://www.osgi.org/Specifications/HomePage).
 
@@ -36,9 +36,9 @@ OSGi 구성 파일은
 
 cfg.json OSGi 구성 형식을 따릅니다.
 
-> [!NOTE]
+>[!NOTE]
 >
-> 이전 버전의 AEM에서는 .cfg, .config 및 XML sling:OsgiConfig 리소스 정의와 같은 다른 파일 형식을 사용하여 OSGi 구성 파일을 지원합니다. 이러한 형식은 cfg.json OSGi 구성 포맷으로 대체됩니다.
+>이전 버전의 AEM에서는 .cfg, .config 및 XML sling:OsgiConfig 리소스 정의와 같은 다른 파일 형식을 사용하여 OSGi 구성 파일을 지원합니다. 이러한 형식은 cfg.json OSGi 구성 포맷으로 대체됩니다.
 
 ## 실행 모드 해상도 {#runmode-resolution}
 
@@ -58,7 +58,7 @@ cfg.json OSGi 구성 형식을 따릅니다.
 
 ## OSGi 구성 값 유형 {#types-of-osgi-configuration-values}
 
-클라우드 서비스로 AEM과 함께 사용할 수 있는 OSGi 구성 값에는 세 가지 종류가 있습니다.
+AEM에서 Cloud Service으로 사용할 수 있는 세 가지 유형의 OSGi 구성 값이 있습니다.
 
 1. **인라인 값**- OSGi 구성에 하드 코딩되어 Git에 저장된 값입니다. 예:
 
@@ -76,7 +76,7 @@ cfg.json OSGi 구성 형식을 따릅니다.
    } 
    ```
 
-1. **개발 환경에 따라 달라지는 값이므로 실행 모드로 정확하게 타깃팅할 수 없는 환경별 값**(클라우드 서비스로 AEM에 단일 `dev` 실행 모드가 있으므로). 예:
+1. **환경별 값**- 개발 환경에 따라 달라서 실행 모드로 정확하게 타깃팅할 수 없습니다(Cloud Service으로 AEM에 단일 `dev` 실행 모드가 있으므로). 예:
 
    ```json
    {
@@ -116,16 +116,16 @@ OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하면 사용 �
 
 ### 비비밀 환경별 구성 값을 사용하는 경우 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-값이 개발 환경에 따라 다를`$[env:ENV_VAR_NAME]`때 비보안 구성 값에 환경별 구성(CDS)만 사용하십시오. 여기에는 로컬 개발 인스턴스 및 클라우드 서비스 개발 환경으로서의 모든 AEM이 포함됩니다. 클라우드 서비스 단계 또는 프로덕션 환경에서 AEM에 대해 비비밀 환경별 구성을 사용하지 마십시오.
+값이 개발 환경에 따라 다를`$[env:ENV_VAR_NAME]`때 비보안 구성 값에 환경별 구성(CDS)만 사용하십시오. 여기에는 로컬 개발 인스턴스 및 Cloud Service 개발 환경으로서의 모든 AEM이 포함됩니다. Cloud Service 단계 또는 프로덕션 환경에서 AEM에 대해 비비밀 환경별 구성을 사용하지 마십시오.
 
 * 로컬 개발 인스턴스를 포함하여 개발 환경이 서로 다른 구성 값에 비비밀 환경별 구성만 사용하십시오.
 * 대신 스테이지 및 프로덕션 비비밀 값에 대해 OSGi 구성의 표준 인라인 값을 사용하십시오.  이와 관련하여 런타임 시 스테이지 및 프로덕션 환경에 맞게 구성을 쉽게 변경할 수 있도록 환경별 구성을 사용하지 않는 것이 좋습니다. 이러한 변경 사항은 소스 코드 관리를 통해 도입해야 합니다.
 
 ### 비밀 환경별 구성 값을 사용해야 하는 경우 {#when-to-use-secret-environment-specific-configuration-values}
 
-클라우드 서비스로서 AEM은 암호, 개인 API 키 또는 보안상의 이유로 Git에 저장할 수 없는 기타 모든 값과 같은 비밀 OSGi 구성 값에 대해 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
+Cloud Service로서 AEM은 암호, 개인 API 키 또는 보안상의 이유로 Git에 저장할 수 없는 기타 모든 값과 같은 비밀 OSGi 구성 값에 대해 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
 
-비밀 환경별 구성을 사용하여 스테이지 및 프로덕션을 비롯한 모든 AEM에 있는 비밀에 대한 값을 클라우드 서비스 환경으로 저장합니다.
+비밀 환경별 구성을 사용하여 스테이지 및 프로덕션을 비롯한 Cloud Service 환경에서 모든 AEM에 있는 기밀 값을 저장할 수 있습니다.
 
 <!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
@@ -182,7 +182,7 @@ OSGi 구성 팩토리 파일 이름, 이름 지정 규칙 `<PID>-<factory-name>.
 
 ### AEM SDK Quickstart를 사용하여 OSGi 구성 생성
 
-AEM SDK Quickstart Jar의 AEM 웹 콘솔을 사용하여 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM Web Console의 구성 UI를 사용하면 저장소에 `.cfg.json` 파일이 작성되므로 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하려면 이 점을 주의하십시오.
+AEM SDK Quickstart Jar의 AEM 웹 콘솔은 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM Web Console의 구성 UI를 사용하면 저장소에 `.cfg.json` 파일이 작성되므로 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하려면 이 점을 주의하십시오.
 
 1. 관리 사용자로 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다
 1. OSGi > 구성으로 이동합니다.
@@ -503,9 +503,9 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
 ```
 
-> [!NOTE]
+>[!NOTE]
 >
-> Adobe I/O CLI용 Cloud Manager 플러그인을 사용하여 값을 구성하는 방법에 대한 자세한 내용은 [이 페이지를](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 참조하십시오.
+>Adobe I/O CLI용 Cloud Manager 플러그인을 사용하여 값을 구성하는 방법에 대한 자세한 내용은 [이 페이지를](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 참조하십시오.
 
 ### 변수 수 {#number-of-variables}
 
@@ -513,7 +513,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ## 보안 및 환경별 구성 값에 대한 배포 고려 사항 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-보안 및 환경별 구성 값은 Git 외부에 있으므로 클라우드 서비스 배포 메커니즘인 공식 AEM에 속하지 않으므로 고객은 클라우드 서비스 배포 프로세스로 AEM을 관리, 관리 및 통합해야 합니다.
+보안 및 환경별 구성 값은 Git 외부에 있으므로 Cloud Service 배포 메커니즘으로서 공식 AEM에 속하지 않으므로 고객은 Cloud Service 배포 프로세스로 AEM을 관리, 관리 및 통합해야 합니다.
 
 위에 언급했듯이 API를 호출하면 일반적인 고객 코드 배포 파이프라인과 유사한 새로운 변수와 값이 클라우드 환경에 배포됩니다. 작성자 및 게시 서비스가 다시 시작되고 새 값을 참조하며 일반적으로 몇 분 정도 걸립니다. 일반적인 코드 배포 동안 Cloud Manager에서 실행하는 품질 게이트와 테스트는 이 프로세스 동안 수행되지 않습니다.
 
