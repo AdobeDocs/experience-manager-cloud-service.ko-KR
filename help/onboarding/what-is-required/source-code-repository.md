@@ -1,8 +1,8 @@
 ---
-title: 소스 코드 저장소 - 클라우드 서비스
-description: 소스 코드 저장소 - 클라우드 서비스
+title: 소스 코드 저장소 - Cloud Service
+description: 소스 코드 저장소 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 1%
@@ -26,4 +26,4 @@ $ git clone {URL}
 
 >[!NOTE]
 >
-> 사용자는 코드 사본을 체크 아웃하고 로컬 코드 리포지토리에서 변경할 수 있습니다. 준비가 되면 사용자는 코드 변경 사항을 Cloud Manager의 원격 코드 저장소로 다시 커밋할 수 있습니다.
+>사용자는 코드 사본을 체크 아웃하고 로컬 코드 리포지토리에서 변경할 수 있습니다. 준비가 되면 사용자는 코드 변경 사항을 Cloud Manager의 원격 코드 저장소로 다시 커밋할 수 있습니다.
