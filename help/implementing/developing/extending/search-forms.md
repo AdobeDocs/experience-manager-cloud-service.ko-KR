@@ -2,7 +2,7 @@
 title: 검색 양식 구성
 description: Adobe Experience Manager에 대한 검색 양식을 Cloud Service으로 구성
 translation-type: tm+mt
-source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 15%
@@ -78,7 +78,7 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 
 >[!NOTE]
 >
-> 자산 관련 검색 양식에 대한 자세한 내용은 [자산 - 검색 패싯을 참조하십시오.](/help/assets/search-facets.md)
+>자산 관련 검색 양식에 대한 자세한 내용은 [자산 - 검색 패싯을 참조하십시오.](/help/assets/search-facets.md)
 
 
 ## 설명 및 설정 {#predicates-and-their-settings}
@@ -491,11 +491,10 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 
 >[!NOTE]
 >
->* 일반적인 검색 예측자는
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>일반적인 검색 예측자는
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
-이 정보는 참조용이므로 변경할 수 없습니다 `/libs`.
+>이 정보는 참조용이므로 변경할 수 없습니다 `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
