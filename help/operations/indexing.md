@@ -2,7 +2,7 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 translation-type: tm+mt
-source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1475'
 ht-degree: 2%
@@ -72,7 +72,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> Jackrabbit Filevault Maven Package Plugin 버전 **1.1.0** 과 관련하여 알려진 문제가 있으며, 이 문제로 인해 모듈 `oak:index` 에 추가할 수 없습니다 `<packageType>application</packageType>`. 이 문제를 해결하려면 버전 **1.0.4를 사용하십시오**.
+>Jackrabbit Filevault Maven Package Plugin 버전 **1.1.0** 과 관련하여 알려진 문제가 있으며, 이 문제로 인해 모듈 `oak:index` 에 추가할 수 없습니다 `<packageType>application</packageType>`. 이 문제를 해결하려면 버전 **1.0.4를 사용하십시오**.
 
 이제 색인 정의는 사용자 지정 및 버전으로 표시됩니다.
 
@@ -124,7 +124,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` 은 AEM을 Cloud Service으로 표시하여 기존 색인의 교체로 표시해야 합니다.
+>`<indexName>-custom-<customerVersionNumber>` 은 AEM을 Cloud Service으로 표시하여 기존 색인의 교체로 표시해야 합니다.
 
 | 색인 | 기본 색인 | 버전 1에서 사용 | 버전 2에서 사용 |
 |---|---|---|---|
