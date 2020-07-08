@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
 description: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
 translation-type: tm+mt
-source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -91,7 +91,7 @@ UST(사용자 동기화 도구)를 사용하면 기업 고객은 Active Director
 
 >[!NOTE]
 >
-> 베타 버전 **2.4RC1**&#x200B;은 동적 그룹 생성 지원과 함께 사용 가능하며 [여기](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)에서 찾을 수 있습니다.
+>베타 버전 **2.4RC1**&#x200B;은 동적 그룹 생성 지원과 함께 사용 가능하며 [여기](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)에서 찾을 수 있습니다.
 
 이 릴리스의 주요 기능은 Admin Console에서 사용자 멤버십에 대한 새 LDAP 그룹을 동적으로 매핑하고 동적 사용자 그룹 생성을 수행하는 기능입니다.
 
@@ -159,7 +159,8 @@ AEM은 관리 사용자에 대한 로컬 로그인을 계속 지원할 수 있�
 
 
 >[!NOTE]
-> IMS에서 만든 모든 사용자는 Adobe ID 또는 Federated ID를 사용하여 만들 수 있습니다. 사용자가 Adobe ID를 사용하여 설정되는 경우 로그인을 위해 회사의 ID 공급자를 사용하여 인증됩니다.
+>
+>IMS에서 만든 모든 사용자는 Adobe ID 또는 Federated ID를 사용하여 만들 수 있습니다. 사용자가 Adobe ID를 사용하여 설정되는 경우 로그인을 위해 회사의 ID 공급자를 사용하여 인증됩니다.
 
 그러면 IMS 로그인 화면으로 리디렉션되고 자격 증명을 입력해야 합니다.
 
