@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 91%
@@ -238,7 +238,8 @@ ht-degree: 91%
 다음 명령이 실행됩니다.
 
 >[!NOTE]
-> `--verbose` 플래그는 BLOB을 참조하는 노드 경로를 보고하는 데 필요합니다.
+>
+>`--verbose` 플래그는 BLOB을 참조하는 노드 경로를 보고하는 데 필요합니다.
 
 **저장소 AEM 6.5(Oak 1.8 이하)의 경우**
 
