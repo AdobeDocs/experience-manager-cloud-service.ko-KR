@@ -1,10 +1,10 @@
 ---
-title: 환경 관리 - 클라우드 서비스
-description: 환경 관리 - 클라우드 서비스
+title: 환경 관리 - Cloud Service
+description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '695'
 ht-degree: 2%
 
 ---
@@ -41,8 +41,7 @@ ht-degree: 2%
 
 
 1. 환경 **추가를** 클릭하여 환경을 추가합니다. 이 단추는 환경 **화면에서** 액세스할 수 있습니다.
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
    환경 **추가** 옵션 **은 프로그램에 환경이 없는 경우** 환경카드에서도 사용할 수 있습니다.
 
@@ -74,12 +73,12 @@ ht-degree: 2%
 ![](assets/manage-environments2.png)
 
 
-[ **업데이트** ] 옵션은 [환경 카드]의 드롭다운 메뉴에서 사용할 수 **있습니다** .
+[ **업데이트** ] 옵션은 **환경** 카드에서 사용할 수 있습니다.
 환경 **카드** 에서 세부 사항 **을** 클릭하면 이 옵션을 **관리** 단추에서도 사용할 수있습니다.
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-드롭다운 메뉴에서 이를 선택하면 배포 관리자가 이 환경과 연결된 파이프라인을 최신 릴리스로 업데이트한 다음 파이프라인을 실행할 수 있습니다.
+이 옵션을 선택하면 배포 관리자가 이 환경과 연결된 파이프라인을 최신 릴리스로 업데이트한 다음 파이프라인을 실행할 수 있습니다.
 
 파이프라인이 이미 업데이트되면 파이프라인 실행 메시지가 표시됩니다.
 
