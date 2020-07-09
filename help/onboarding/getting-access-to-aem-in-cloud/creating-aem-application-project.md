@@ -2,9 +2,9 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: e3370b7a7f543ae93b25ead8c174796fd27067f2
+source-git-commit: 3979cad8f9e51756113971c81a601e8cba21c8a2
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1252'
 ht-degree: 0%
 
 ---
@@ -99,12 +99,11 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
                     </jdk>
                 </toolchains>
             </configuration>
+        </plugin>
 ```
 
 >[!NOTE]
->* 지원되는 공급업체는 `oracle` 및 `sun`입니다.
->* 지원되는 버전은 `1.8`및 `1.11`입니다 `11`.
-
+>지원되는 `vendor` 값 `oracle` 과 `sun` 지원되는 `version` 값은 `1.8`, `1.11`및 `11`입니다.
 
 ## 환경 변수 {#environment-variables}
 
