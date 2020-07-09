@@ -2,9 +2,9 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 3979cad8f9e51756113971c81a601e8cba21c8a2
+source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -125,31 +125,6 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
 | CM_PROGRAM_NAME | 프로그램 이름 |
 | ARTIFACTS_VERSION | 스테이지 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 합성 버전 |
 | CM_AEM_PRODUCT_VERSION | 릴리스 이름 |
-
-
-### 사용자 지정 환경 변수 {#custom-environ-variables}
-
-경우에 따라 고객의 빌드 프로세스는 git 리포지토리에 배치하기에 부적절한 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager를 사용하면 Adobe 담당자가 고객별로 이러한 변수를 구성할 수 있습니다. 이러한 변수는 보안 저장소 위치에 저장되며 특정 고객의 빌드 컨테이너에서만 볼 수 있습니다. 이 기능을 사용하려는 고객은 Adobe 담당자에게 문의하여 변수를 구성해야 합니다.
-
-구성되면 이러한 변수를 환경 변수로 사용할 수 있습니다. 이들을 Maven 속성으로 사용하려면 위에서 설명한 프로필 내에서 pom.xml 파일에서 참조할 수 있습니다.
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
-            </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
-        </profile>
-```
-
->[!NOTE]
->
->환경 변수 이름에는 영숫자 및 밑줄(_)만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다.
 
 ## Cloud Manager에서 마스터 프로필 활성화 {#activating-maven-profiles-in-cloud-manager}
 
