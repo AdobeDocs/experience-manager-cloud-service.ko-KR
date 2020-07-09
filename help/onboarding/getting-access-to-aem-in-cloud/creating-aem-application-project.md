@@ -1,10 +1,10 @@
 ---
-title: AEM 애플리케이션 프로젝트 - 클라우드 서비스
-description: AEM 애플리케이션 프로젝트 - 클라우드 서비스
+title: AEM 애플리케이션 프로젝트 - Cloud Service
+description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1255'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 
 * pom.xml ** 파일에서 추가 Maven 객체 저장소에 대한 참조를 추가할 수 있습니다. 그러나 암호로 보호되거나 네트워크로 보호된 객체 저장소에 대한 액세스는 지원되지 않습니다.
 * 배포 가능한 컨텐츠 패키지는 *target* 이라는 디렉토리에 포함되어 있는 컨텐츠 패키지 *zip*&#x200B;파일을 검색하여 찾을 수 있습니다. 모든 수의 하위 모듈에서는 콘텐츠 패키지를 생성할 수 있습니다.
 
-* 배포 가능한 Dispatcher 가공물은 *conf**및 conf.d라는 이름의 디렉토리가 있는 zip*&#x200B;파일( *target* 디렉토리에 포함됨)을 검색하여 **&#x200B;검색합니다.
+* 배포 가능한 Dispatcher 가공물은 *conf* 및 conf.d라는 이름의 디렉토리가 있는 zip *파일(* target *디렉토리에 포함됨)을 검색하여* **&#x200B;검색됩니다.
 
 * 둘 이상의 컨텐츠 패키지가 있는 경우 패키지 배포 순서가 보장되지 않습니다. 특정 주문이 필요한 경우 컨텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다. 배포에서 패키지를 [건너뛸](#skipping-content-packages) 수 있습니다.
 
@@ -59,7 +59,7 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
 
 * 빌드 환경은 Linux 기반이며 Ubuntu 18.04에서 파생됩니다.
 * Apache Maven 3.6.0이 설치되어 있습니다.
-* 설치된 Java 버전은 Oracle JDK 8u202입니다.
+* Java 버전이 Oracle JDK 8u202 및 11.0.2를 설치했습니다.
 * 다음과 같은 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
 
    * bzip2
@@ -73,6 +73,37 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
 * Maven은 항상 명령을 사용하여 실행됩니다. *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:pref-agent package*
 * Maven은 공개 Adobe Artifact 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 **구성됩니다** . (자세한 내용은 [Adobe Public Maven Repository](https://repo.adobe.com/) 를 참조하십시오.)
 
+### Java 11 사용 {#using-java-11}
+
+Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로젝트 작성을 지원합니다. 기본적으로 프로젝트는 Java 8을 사용하여 빌드됩니다. 프로젝트에서 Java 11을 사용하려는 고객은 [Apache Maven Toolchain 플러그인을 사용할 수 있습니다](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+이렇게 하려면 pom.xml 파일에서 다음과 같은 `<plugin>` 항목을 추가합니다.
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>지원되는 공급업체는 Oracle 및 Sun Microsystems이며 지원되는 버전은 1.8, 1.11 및 11입니다.
 
 ## 환경 변수 {#environment-variables}
 
@@ -258,7 +289,7 @@ Cloud Manager 빌드 환경 내에서 마스터 프로필의 활성화는 위에
 
 >[!NOTE]
 >
->이러한 방식으로 시스템 패키지를 설치해도 Adobe Experience Manager 실행에 사용되는 런타임 환경에 설치되지 **않습니다** . AEM 환경에 시스템 패키지를 설치해야 하는 경우 Adobe 담당자에게 문의하십시오.
+>이러한 방식으로 시스템 패키지를 설치해도 Adobe Experience Manager을 실행하는 데 사용되는 런타임 환경에 설치되지 **않습니다** . AEM 환경에 시스템 패키지를 설치해야 하는 경우 Adobe 담당자에게 문의하십시오.
 
 ## 콘텐츠 패키지 건너뛰기 {#skipping-content-packages}
 
