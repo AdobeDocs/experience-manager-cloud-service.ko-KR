@@ -2,9 +2,9 @@
 title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Cloud Service 사이트 준비 Adobe Experience Manager
 description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 사이트 지원으로서 Adobe Experience Manager에 대해 알아보십시오. 여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법 및 새로운 AEM을 Cloud Service 프로젝트로 구현할 때 준수하는 방법이 포함됩니다. '
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,9 @@ Adobe Experience Manager은 사용자에 대한 옵트인/옵트아웃을 관리
       옵트인 - 방문자 세션 집계 및 분석에 나를 `amcglobal.sc.omtrdc.net` 포함합니다(옵트아웃 쿠키 설치 안 함) - 여기를 클릭하십시오.
    위 단계에 따라 실제 링크에 액세스합니다.
 
-   <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
    >[!NOTE]
    >
-   > 사용 약관의 **개인정보 보호 정책** 섹션에 [대한 추가 설명이 있습니다](https://marketing.adobe.com/resources/help/ko_KR/terms.html).
+   > 더 자세한 설명은 **2. 개인 정보.** 섹션 [을 참조하십시오](https://www.adobe.com/legal/terms.html).
 
 ## Analytics 재단 {#analytics-foundation}
 
@@ -177,6 +173,7 @@ ContextHub에서 사용한 지속 상태를 미리 보려면 다음 작업을 �
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       ContextHub 저장소는 사용할 지속성 레이어를 정의하므로 모든 레이어를 선택해야 하는 지속성 현재 상태를 볼 수 있습니다.
 
 
@@ -206,6 +203,7 @@ ContextHub에서 사용한 지속 상태를 미리 보려면 다음 작업을 �
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
       ContextHub 저장소는 사용할 지속성 레이어를 정의하므로 모든 레이어를 선택해야 하는 지속성 현재 상태를 볼 수 있습니다.
 
 
