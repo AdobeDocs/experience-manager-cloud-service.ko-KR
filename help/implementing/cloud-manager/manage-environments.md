@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '702'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 개발 환경 업데이트는 프로그램 사용자가 관리합니다. 환경에서 공개적으로 사용 가능한 최신 AEM 릴리스가 실행되고 있지 않으면 홈 화면의 환경 카드에 있는 **UPDATE AVAILABLE이 표시됩니다**.
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 [ **업데이트** ] 옵션은 **환경** 카드에서 사용할 수 있습니다.
@@ -86,10 +86,14 @@ ht-degree: 2%
 
 필요한 권한이 있는 사용자는 개발 환경을 삭제할 수 있습니다.
 
-[ **삭제** ] 옵션은 [환경 카드]의 드롭다운 메뉴에서 **사용할 수** 있습니다.
-환경 **카드** 에서 세부 사항 **을** 클릭하면 이 옵션을 **관리** 단추에서도 사용할 수있습니다.
+[ **삭제** ] 옵션은 [환경 카드]의 드롭다운 메뉴에서 **사용할 수** 있습니다. 삭제할 개발 환경 **..** .을 클릭합니다.
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+환경 **카드** 에서 세부 사항을 클릭하면 환경 **을 삭제할 수도** 있습니다.
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 프로덕션 목적으로 설정된 일반 프로그램에 설정된 프로덕션/스테이지 환경에서는 이 기능을 사용할 수 없습니다. 하지만 이 기능은 샌드박스 프로그램의 프로덕션/스테이지 환경에 사용할 수 있습니다.
@@ -103,7 +107,7 @@ ht-degree: 2%
 자세한 내용은 [최대 절전 모드 및 최대 절전 모드 해제](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) 환경을 참조하십시오.
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 환경 **카드** 에서 세부 사항 **을** 클릭하면 [관리] 단추에서 이 옵션을 선택할 수도 **있습니다** .
 
