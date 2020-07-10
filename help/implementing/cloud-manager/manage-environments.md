@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '753'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 
 [ **업데이트** ] 옵션은 **환경** 카드에서 사용할 수 있습니다.
-환경 **카드** 에서 세부 사항 **을** 클릭하면 이 옵션을 **관리** 단추에서도 사용할 수있습니다.
+환경 **카드** 에서 세부 사항 **을 클릭하면 이 옵션을 사용할 수도 있습니다** . 환경 **페이지가** 열리고 개발 환경을 선택한 다음 아래 그림과 같이 **..를** 클릭하고 **업데이트**&#x200B;를선택합니다.
 
 ![](assets/environments-screen-update.png)
 
@@ -90,7 +90,7 @@ ht-degree: 2%
 
 ![](assets/environ-delete.png)
 
-환경 **카드** 에서 세부 사항을 클릭하면 환경 **을 삭제할 수도** 있습니다.
+환경 **카드** **** 에서 세부 사항을 클릭하면 삭제 옵션도 사용할 수 있습니다. 환경 **페이지가** 열리고 개발 환경을 선택한 다음 아래 그림과 같이 **..를** 클릭하고 **삭제**&#x200B;를 선택합니다.
 
 ![](assets/environ-delete-2.png)
 
@@ -109,5 +109,5 @@ ht-degree: 2%
 
 ![](assets/environ-dev-console.png)
 
-환경 **카드** 에서 세부 사항 **을** 클릭하면 [관리] 단추에서 이 옵션을 선택할 수도 **있습니다** .
+환경 **카드** 에서 세부 사항 **을 클릭하면 이 옵션을 사용할 수도 있습니다** . 환경 **페이지가** 열리고 환경을 선택한 후...을 클릭하고 개발자 콘솔 **을** **선택합니다**.
 
