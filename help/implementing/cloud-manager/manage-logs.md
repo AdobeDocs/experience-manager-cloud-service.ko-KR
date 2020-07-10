@@ -1,11 +1,11 @@
 ---
-title: 로그 관리 - 클라우드 서비스
-description: 로그 관리 - 클라우드 서비스
+title: 로그 관리 - Cloud Service
+description: 로그 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 또는 환경 **페이지** :
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Note]
 >열려 있는 위치에 관계없이 동일한 대화 상자가 나타나고 개별 로그 파일을 다운로드할 수 있습니다.
