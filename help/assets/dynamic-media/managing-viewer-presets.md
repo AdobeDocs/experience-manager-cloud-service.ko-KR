@@ -2,7 +2,7 @@
 title: 뷰어 사전 설정 관리
 description: 뷰어 사전 설정을 만들고 관리하는 방법
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
 source-wordcount: '4263'
 ht-degree: 2%
@@ -25,11 +25,11 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 Adobe 뷰어 [참조 안내서를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html).
 
-이 섹션에서는 뷰어 사전 설정을 만들고, 편집하고, 관리하는 방법에 대해 설명합니다. 미리 볼 때마다 자산에 뷰어 사전 설정을 적용할 수 있습니다. See [Applying Viewer Presets](#applying-a-viewer-preset-to-an-asset).
+This section describes how to create, edit, and manage viewer presets. You can apply a viewer preset to an asset anytime you preview it. See [Applying Viewer Presets](#applying-a-viewer-preset-to-an-asset).
 
 >[!NOTE]
 >
->사전 정의된 *즉시 사용 가능한 뷰어 사전 설정을* 편집하는 것은 지원되지 않습니다. 즉시 사용 가능한 뷰어 사전 설정을 편집하려고 하면 새 이름을 사용하여 뷰어 사전 설정을 저장하라는 메시지가 표시됩니다.
+>Be aware that editing any *predefined, out-of-the-box viewer presets* is not a supported scenario. 즉시 사용 가능한 뷰어 사전 설정을 편집하려고 하면 새 이름을 사용하여 뷰어 사전 설정을 저장하라는 메시지가 표시됩니다.
 
 ## 뷰어를 위한 키보드 액세스 가능성 {#keyboard-accessibility-for-viewers}
 
@@ -85,7 +85,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>플라이아웃 확대/축소</strong></td>
-   <td><p>원본 이미지 옆에 확대된 영역의 두 번째 이미지를 표시합니다. 사용할 컨트롤이 없습니다. 사용자가 보려는 영역 위로 선택 항목을 이동합니다.</p> <p>이 뷰어에 대한 전체 대역폭 사용을 결정할 때는 기본 이미지와 플라이아웃 이미지가 모두 뷰어에서 제공되는지 고려하십시오. 기본 이미지 크기(스테이지 너비 및 높이)와 확대/축소 비율이 플라이아웃 이미지 크기를 결정합니다. 플라이아웃 파일 크기가 너무 커지지 않도록 하려면 다음 두 값의 균형을 맞춥니다. 메인 이미지 크기가 큰 경우 [확대/축소 비율] 값을 낮춥니다. (플라이아웃 너비 및 플라이아웃 높이는 플라이아웃 창의 크기를 결정하지만 뷰어에 제공되는 플라이아웃 이미지의 크기는 아닙니다.)</p> <p>예를 들어 기본 이미지 크기가 350 x 350픽셀이고 확대/축소 인수가 3인 경우 결과 플라이아웃 이미지는 1050 x 1050픽셀입니다. 기본 이미지 크기가 300 x 300픽셀이고 확대/축소 비율이 4인 경우 플라이아웃 이미지는 1200 x 1200픽셀입니다. JPEG 품질 설정(권장 설정은 80-90 사이)에 따라 파일 크기를 크게 줄일 수 있습니다. 기본 이미지의 크기에 따라 권장되는 확대/축소 요소는 2.5에서 4까지입니다.</p> </td>
+   <td><p>원본 이미지 옆에 확대된 영역의 두 번째 이미지를 표시합니다. 사용할 컨트롤이 없습니다. 사용자가 보려는 영역 위로 선택 항목을 이동합니다.</p> <p>이 뷰어에 대한 전체 대역폭 사용을 결정할 때는 기본 이미지와 플라이아웃 이미지가 모두 뷰어에서 제공되는지 고려하십시오. 기본 이미지 크기(스테이지 너비 및 높이)와 확대/축소 비율이 플라이아웃 이미지 크기를 결정합니다. 플라이아웃 파일 크기가 너무 커지지 않도록 하려면 다음 두 값의 균형을 맞춥니다. 메인 이미지 크기가 큰 경우 [확대/축소 비율] 값을 낮춥니다. (The Flyout Width and Flyout Height determine the size of the flyout window, but not the size of the flyout image that is served into the viewer.)</p> <p>예를 들어 기본 이미지 크기가 350 x 350픽셀이고 확대/축소 인수가 3인 경우 결과 플라이아웃 이미지는 1050 x 1050픽셀입니다. 기본 이미지 크기가 300 x 300픽셀이고 확대/축소 비율이 4인 경우 플라이아웃 이미지는 1200 x 1200픽셀입니다. JPEG 품질 설정(권장 설정은 80-90 사이)에 따라 파일 크기를 크게 줄일 수 있습니다. 기본 이미지의 크기에 따라 권장되는 확대/축소 요소는 2.5에서 4까지입니다.</p> </td>
   </tr>
   <tr>
    <td><strong>인라인 확대/축소</strong></td>
@@ -150,7 +150,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 다음 표는 Dynamic Media과 함께 제공되는 미리 정의된 모든 미리 정의된 기본 뷰어 사전 설정을 식별합니다.
 
-참고 항목 <!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+라이브 [데모도 참조하십시오](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 뷰어용 지원되는 웹 브라우저 및 운영 체제 버전에 대한 자세한 내용은 뷰어 릴리스 정보를 검토할 수 있습니다.
 
