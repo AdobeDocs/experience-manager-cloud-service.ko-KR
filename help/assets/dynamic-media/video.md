@@ -2,9 +2,9 @@
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
 workflow-type: tm+mt
-source-wordcount: '10146'
+source-wordcount: '10058'
 ht-degree: 1%
 
 ---
@@ -395,7 +395,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 이 비율을 계산하려면 소스 너비를 인코딩된 너비로 나누어 너비 비율을 가져옵니다. 그런 다음 소스 높이를 인코딩된 높이로 나누면 높이 비율이 높아집니다.
 
-결과 비율이 정수 단위인 경우, 비디오가 최적으로 크기가 조정됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
+결과 비율이 정수 단위인 경우 비디오 크기가 최적으로 조절됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
 
 예를 들어 소스 비디오가 1920 x 1080이라고 가정합니다. 다음 표에서 세 개의 인코딩된 비디오는 사용할 최적의 인코딩 설정을 제공합니다.
 
@@ -425,7 +425,6 @@ YouTube 서버에 비디오 에셋을 게시하려면 YouTube를 통해 안전�
 1. [Google 클라우드 설정 구성](#configuring-google-cloud-settings)
 1. [YouTube 채널 만들기](#creating-a-youtube-channel)
 1. [게시용 태그 추가](#adding-tags-for-publishing)
-1. [YouTube 게시 복제 에이전트 활성화](#enabling-the-youtube-publish-replication-agent)
 1. [AEM에서 YouTube 설정](#setting-up-youtube-in-aem)
 1. [(선택 사항) 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다.](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [YouTube 채널에 비디오 게시](#publishing-videos-to-your-youtube-channel)
@@ -564,19 +563,21 @@ YouTube 채널을 만들려면
 
 비디오를 YouTube에 게시하려면 AEM이 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 태그 [관리를 참조하십시오](/help/sites-cloud/authoring/features/tags.md).
 
-또는 AEM에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 YouTube 게시 복제 에이전트 [활성화로 이동할 수 있습니다](#enabling-the-youtube-publish-replication-agent).
+또는 AEM에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 AEM에서 YouTube [설정으로 이동할 수 있습니다](#setting-up-youtube-in-aem).
 
-### YouTube 게시 복제 에이전트 활성화 {#enabling-the-youtube-publish-replication-agent}
+>[!NOTE]
+>
+>클라우드 서비스가 구성된 후에는 이 시점으로서 YouTube 게시 복제 에이전트를 활성화하는 데 추가 구성이 필요하지 않습니다. 클라우드 서비스 구성을 저장할 때 활성화되었기 때문입니다.
 
-YouTube 게시 복제 에이전트를 활성화한 후 Google 클라우드 계정에 대한 연결을 테스트하려면 연결 **[!UICONTROL 테스트를 누릅니다]**. 브라우저 탭에 연결 결과가 표시됩니다. YouTube 채널을 추가한 경우 해당 채널의 목록이 테스트의 일부로 표시됩니다.
+<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 클릭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** **[!UICONTROL > 복제]** > **[!UICONTROL 작성자]**&#x200B;에서 에이전트를클릭합니다.
-1. [작성자 에이전트] 페이지에서 **[!UICONTROL YouTube 게시(youtube)를 클릭합니다]**.
-1. 도구 모음에서 설정 오른쪽의 편집을 **[!UICONTROL 클릭합니다]**.
-1. 복제 에이전트 **[!UICONTROL 를]** 켜려면 사용 확인란을 선택합니다.
-1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-   이제 AEM에서 YouTube를 설정합니다.
+1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
+1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
+1. Click **[!UICONTROL OK]**. -->
 
 ### Setting up YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -749,17 +750,14 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 잠시 후에 다시 �
 >
 >즉시 게시해도 YouTube에 자동으로 게시되지는 않습니다. Dynamic Media을 설정할 때 선택할 수 있는 두 가지 게시 옵션이 있습니다. **[!UICONTROL 즉시]** 또는 활성화 **[!UICONTROL 시]**.
 >
->**[!UICONTROL 즉시]** 게시는 업로드된 자산이 IPS와 동기화된 후 배달 시스템에 자동으로 게시됨을 의미합니다. 이것은 Dynamic Media에게 진실이지만, 유투브에는 사실이 아니다. YouTube에 게시하려면 AEM Author을 통해 게시해야 합니다.
+>**[!UICONTROL 즉시]** 게시는 업로드된 자산이 IPS와 동기화된 후 게재 시스템에 자동으로 게시됨을 의미합니다. 이것은 Dynamic Media에게 진실이지만, 유투브에는 사실이 아니다. YouTube에 게시하려면 AEM Author을 통해 게시해야 합니다.
 
 >[!NOTE]
->
->YouTube에서 콘텐츠를 게시하기 위해 AEM에서는 진행 상황을 모니터링하고 오류 정보를 볼 수 있는 **[!UICONTROL YouTube]** 에 게시 워크플로우를 사용합니다.
->
->비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](#monitoring-video-encoding-and-youtube-publishing-progress).
->
->자세한 진행 정보를 보려면 복제 중인 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스 권한이 필요합니다.
+YouTube에서 콘텐츠를 게시하기 위해 AEM에서는 진행 상황을 모니터링하고 오류 정보를 볼 수 있는 **[!UICONTROL YouTube]** 에 게시 워크플로우를 사용합니다.
+비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](#monitoring-video-encoding-and-youtube-publishing-progress).
+자세한 진행 정보를 보려면 복제 중인 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스 권한이 필요합니다.
 
-비디오를 YouTube 채널에 게시하려면 다음을 수행하십시오.
+**비디오를 YouTube 채널에 게시하려면 다음을 수행하십시오**.
 
 1. AEM에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
 1. 비디오 자산(응용 비디오 세트)을 선택합니다.
@@ -792,8 +790,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 잠시 후에 다시 �
 비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 배치되므로 필요에 따라 웹 사이트나 애플리케이션의 페이지에 붙여넣을 수 있습니다.
 
 >[!NOTE]
->
->YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 수 없습니다.
+YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 수 없습니다.
 
 YouTube URL을 웹 응용 프로그램에 연결하려면:
 
@@ -810,14 +807,11 @@ YouTube URL을 웹 응용 프로그램에 연결하려면:
 AEM에서 비디오 자산을 게시 취소하면 비디오가 YouTube에서 제거됩니다.
 
 >[!CAUTION]
->
->YouTube 내에서 바로 비디오를 제거하는 경우 AEM은 이를 알지 못하고 비디오가 YouTube에 아직 게시된 것처럼 계속 동작합니다. 항상 AEM을 통해 YouTube에서 비디오 자산을 게시 취소합니다.
+YouTube 내에서 바로 비디오를 제거하는 경우 AEM은 이를 알지 못하고 비디오가 YouTube에 아직 게시된 것처럼 계속 동작합니다. 항상 AEM을 통해 YouTube에서 비디오 자산을 게시 취소합니다.
 
 >[!NOTE]
->
->YouTube에서 컨텐츠를 제거하기 위해 AEM은 진행 상황을 모니터링하고 오류 정보를 볼 수 있는 **[!UICONTROL YouTube]** 에서 게시 취소 워크플로우를 사용합니다.
->
->비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](#monitoring-video-encoding-and-youtube-publishing-progress).
+YouTube에서 컨텐츠를 제거하기 위해 AEM은 진행 상황을 모니터링하고 오류 정보를 볼 수 있는 **[!UICONTROL YouTube]** 에서 게시 취소 워크플로우를 사용합니다.
+비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려면 다음을 수행하십시오.
 
@@ -857,21 +851,17 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    인코딩 등 모든 워크플로우 정보가 타임라인에 표시됩니다. YouTube 게시의 경우 워크플로우 타임라인에는 YouTube 채널의 이름과 YouTube 비디오 URL도 포함되어 있습니다. 또한 게시가 완료된 후 워크플로우 타임라인에 오류 알림이 표시됩니다.
 
    >[!NOTE]
-   >
-   >다음과 같이 **[!UICONTROL 재시도]**, 재시도 지연 **[!UICONTROL 및]**&#x200B;시간 **[!UICONTROL 초과로 인해 여러 워크플로우 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 오랜 시간이 걸릴 수]** 있습니다. 예를 들면 다음과 같습니다. [https://localhost:4502/system/console/configMgr에서 시간](https://localhost:4502/system/console/configMgr)을참조하십시오.
-   >
-   >    * Apache Sling 작업 큐 구성
-   >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
-   >    * [MOCK] Granite Workflow Timeout Queue
+   다음과 같이 **[!UICONTROL 재시도]**, 재시도 지연 **[!UICONTROL 및]**&#x200B;시간 **[!UICONTROL 초과로 인해 여러 워크플로우 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 오랜 시간이 걸릴 수]** 있습니다. 예를 들면 다음과 같습니다. [https://localhost:4502/system/console/configMgr에서 시간](https://localhost:4502/system/console/configMgr)을참조하십시오.
+   * Apache Sling 작업 큐 구성
+   * Adobe Granite Workflow 외부 프로세스 작업 처리기
+   * [MOCK] Granite Workflow Timeout Queue
 
-   >
-   >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
+   이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
 
 1. 진행 중인 워크플로우의 경우 도구 > **[!UICONTROL 워크플로우]** > **[!UICONTROL 인스턴스]** 에서 사용 가능한 워크플로우 인스턴스를 **[!UICONTROL 참조하십시오]**.
 
    >[!NOTE]
-   >
-   >도구 메뉴에 액세스하려면 **[!UICONTROL 관리 권한이]** 필요할 수 있습니다.
+   도구 메뉴에 액세스하려면 **[!UICONTROL 관리 권한이]** 필요할 수 있습니다.
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -884,30 +874,22 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
 1. 실패한 작업의 경우 도구 > **[!UICONTROL 워크플로우]** > **[!UICONTROL 실패]** 에서 사용 가능한 워크플로우 **[!UICONTROL 실패를]**&#x200B;참조하십시오. 워크플로우 **[!UICONTROL 실패에는]** 실패한 모든 워크플로우 활동이 나열됩니다.
 
    >[!NOTE]
-   >
-   >도구 메뉴에 액세스하려면 **[!UICONTROL 관리 권한이]** 필요할 수 있습니다.
+   도구 메뉴에 액세스하려면 **[!UICONTROL 관리 권한이]** 필요할 수 있습니다.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >
-   >다음과 같이 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 초과로 인해 오류 메시지가 최종적으로 기록되는 데 오랜 시간이 걸릴 수 있습니다. 예를 들어, https://localhost:4502/system/console/configMgr에서 [](https://localhost:4502/system/console/configMgr)시간초과가있습니다.
-   >
-   >
-   >
-   >    * Apache Sling 작업 큐 구성
-   >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
-   >    * [MOCK] Granite Workflow Timeout Queue
+   다음과 같이 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 초과로 인해 오류 메시지가 최종적으로 기록되는 데 오랜 시간이 걸릴 수 있습니다. 예를 들어, https://localhost:4502/system/console/configMgr에서 [](https://localhost:4502/system/console/configMgr)시간초과가있습니다.
+   * Apache Sling 작업 큐 구성
+   * Adobe Granite Workflow 외부 프로세스 작업 처리기
+   * [MOCK] Granite Workflow Timeout Queue
 
-   >
-   >
-   >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
+   이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
 
 1. 완료된 워크플로우의 경우 도구 > **[!UICONTROL 워크플로우]** > **[!UICONTROL 아카이브]** 에서 사용 가능한 워크플로우 **[!UICONTROL 아카이브를]**&#x200B;참조하십시오. 워크플로우 아카이브 **[!UICONTROL 는]** 완료된 모든 워크플로우 활동을 나열합니다.
 
    >[!NOTE]
-   >
-   >도구 메뉴에 액세스하려면 **[!UICONTROL 관리 권한이]** 필요할 수 있습니다.
+   도구 메뉴에 액세스하려면 **[!UICONTROL 관리 권한이]** 필요할 수 있습니다.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -962,8 +944,7 @@ For YouTube publishing jobs, do the following:
 ## 비디오 보고서 보기 {#viewing-video-reports}
 
 >[!NOTE]
->
->비디오 보고서는 Dynamic Media(하이브리드 모드)를 실행할 때만 사용할 수 있습니다.
+비디오 보고서는 Dynamic Media(하이브리드 모드)를 실행할 때만 사용할 수 있습니다.
 
 비디오 보고서에는 지정된 기간 동안 여러 개의 집계 지표가 표시되므로 *게시된 *개별 비디오와 집계 비디오가 예상대로 수행되고 있음을 모니터링할 수 있습니다. 다음 상위 지표 데이터는 전체 웹 사이트에서 게시된 모든 비디오에 대해 집계됩니다.
 
@@ -980,8 +961,7 @@ For YouTube publishing jobs, do the following:
 비디오가 Adobe Experience Manager Dynamic Media 외부로 인코딩된 경우 대상 유지(드롭다운) 차트와 테이블의 재생 백분율 데이터를 사용할 수 없습니다.
 
 >[!NOTE]
->
->추적 및 보고 데이터는 Dynamic Media 자체 비디오 플레이어 및 관련 비디오 플레이어 사전 설정을 사용하는 경우에만 사용됩니다. 따라서 다른 비디오 플레이어로 재생되는 비디오를 추적하고 보고할 수 없습니다.
+추적 및 보고 데이터는 Dynamic Media 자체 비디오 플레이어 및 관련 비디오 플레이어 사전 설정을 사용하는 경우에만 사용됩니다. 따라서 다른 비디오 플레이어로 재생되는 비디오를 추적하고 보고할 수 없습니다.
 
 기본적으로 비디오 보고서를 처음 입력할 때 보고서는 현재 월의 첫 부분에서 시작하여 현재 월의 날짜에 끝나는 비디오 데이터를 표시합니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 무시할 수 있습니다. 다음 번에 비디오 보고서를 입력하면 지정한 날짜 범위가 사용됩니다.
 
@@ -1076,8 +1056,7 @@ to attach the component to the trackingManager. 한 페이지에서 여러 뷰�
 자막은 또한 청각 장애자나 난청인 사람들에게 자막을 사용하여 접근성을 높일 수 있도록 해줍니다.
 
 >[!NOTE]
->
->사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
+사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
 
 Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이러한 전환은 JSON 텍스트를 숨김과 전체 비디오 스크립트로 웹 페이지에 포함시킬 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링 및 색인화하여 비디오를 보다 손쉽게 검색할 수 있도록 하고 비디오 컨텐츠에 대한 추가 정보를 고객에게 제공할 수 있습니다.
 
@@ -1102,8 +1081,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제
    이제 사이트의 화면 지침에 따라 WebVTT 파일을 작성하고 저장합니다. 완료되면 캡션 파일 내용을 복사하여 일반 텍스트 편집기에 붙여넣고 .vtt 파일 확장명으로 저장합니다.
 
    >[!NOTE]
-   >
-   >여러 언어로 된 비디오 자막을 전체적으로 지원하려면 WebVTT 표준을 사용하려면 지원할 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
+   여러 언어로 된 비디오 자막을 전체적으로 지원하려면 WebVTT 표준을 사용하려면 지원할 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
 
    일반적으로 캡션 VTT 파일의 이름을 비디오 파일과 같은 이름으로 지정하고 언어 로케일(예: -EN, -FR 또는 -DE 등)에 첨부해야 합니다. 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 됩니다.
 
@@ -1133,8 +1111,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제
 장 마커를 단일 비디오 또는 응용 비디오 세트에 추가하여 긴 양식 비디오를 보다 손쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생하면 비디오 타임라인에서 장 마커(비디오 스크러버)를 클릭하여 관심 영역으로 손쉽게 이동하거나 새로운 컨텐츠, 데모, 자습서 등으로 바로 이동할 수 있습니다.
 
 >[!NOTE]
->
->사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장(chapter) 마커를 지원하지만 타사 비디오 플레이어를 사용하는 경우에는 지원하지 않을 수 있습니다.
+사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장(chapter) 마커를 지원하지만 타사 비디오 플레이어를 사용하는 경우에는 지원하지 않을 수 있습니다.
 
 원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 사용하여 자신만의 HTML5 뷰어를 만드는 방법에 대한 자세한 내용은 HTML5용 Adobe Scene7 Viewer SDK 안내서에서 클래스 및 `s7sdk.video.VideoPlayer` 에서 &quot;수정자를 사용하여 동작 사용자 정의&quot; 머리글을 참조하십시오 `s7sdk.video.VideoScrubber`. Adobe Scene7 Viewer SDK는 [Adobe Developer Connection에서 다운로드할 수 있습니다](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
