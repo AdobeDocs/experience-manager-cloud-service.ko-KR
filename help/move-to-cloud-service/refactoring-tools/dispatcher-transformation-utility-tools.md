@@ -1,11 +1,11 @@
 ---
 title: AEM Dispatcher 변환기 도구
 description: AEM Dispatcher 변환기 도구
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
