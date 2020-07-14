@@ -1,11 +1,11 @@
 ---
 title: 알려진 문제
 description: 클라우드 서비스로서의 Adobe Experience Manager의 알려진 문제와 관련된 릴리스 노트
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 96%
    * 사진 촬영 워크플로우 모델.
    * 자산 속성 사용자 인터페이스의 제품 정보 탭이 채워져 있지 않습니다.
 * InDesign 서버 통합에 대한 종속성으로 인해 이 단계에서 사용할 수 없는 기능:
-   * 자산 템플릿 및 자산 카탈로그.
+   * 자산 템플릿 및 자산 카탈로그
    * Adobe InDesign 파일의 여러 페이지 미리 보기
 
 >[!MORELIKETHIS]
