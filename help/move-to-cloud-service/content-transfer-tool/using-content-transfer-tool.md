@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,22 +18,22 @@ ht-degree: 91%
 
 * 컨텐츠 전송 도구의 최소 시스템 요구 사항은 AEM 6.3 이상 및 JAVA 8입니다. 더 낮은 AEM 버전을 사용하는 경우 컨텐츠 저장소를 AEM 6.5로 업그레이드해야 컨텐츠 전송 도구를 사용할 수 있습니다.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. *프로덕션 환경*&#x200B;을 사용하는 경우 자동으로 업데이트됩니다.
+* *샌드박스 환경*&#x200B;을 사용 중인 경우 환경이 2020년 6월 10일 이후 릴리스로 업그레이드되었는지 확인하십시오. *프로덕션 환경*&#x200B;을 사용하는 경우 자동으로 업데이트됩니다.
 
-* 컨텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리자 사용자여야 하며 컨텐츠를 전송하는 Cloud Service 인스턴스의 AEM 관리자 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 컨텐츠 전송 도구를 사용할 수 없습니다.
+* 컨텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리 사용자여야 하며, 컨텐츠를 전송하는 클라우드 서비스 인스턴스의 AEM 관리 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 컨텐츠 전송 도구를 사용할 수 없습니다.
 
 * 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
 * 작성자에 대한 *수집 단계*&#x200B;는 전체 작성자 배포를 축소합니다. 즉, 전체 수집 프로세스 중에 작성자 AEM을 사용할 수 없습니다.
 
-* Content Transfer Tool이 한 번에 지원할 수 있는 저장소 크기에 대한 권장 상한은 20GB입니다.
+* 컨텐츠 전송 도구가 한 번에 지원할 수 있는 저장소 크기에 대한 권장 상한은 20GB입니다.
 
 ## 사용 가능 {#availability}
 
-컨텐트 전송 도구는 소프트웨어 배포 포털에서 zip 파일(Content Transfer Tool v1.0.0)로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
+소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일(컨텐츠 전송 도구 v1.0.0)로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
->Software Distribution [portal에서 Content Transfer Tool을](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html) 다운로드합니다.
+>[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html) 포털에서 컨텐츠 전송 도구를 다운로드합니다.
 
 ## 컨텐츠 전송 도구 실행 {#running-tool}
 
@@ -70,7 +70,7 @@ ht-degree: 91%
    1. **액세스 토큰**: 액세스 토큰을 입력합니다.
 
       >[!NOTE]
-      >`/libs/granite/migration/token.json`으로 이동하여 작성자 인스턴스에서 액세스 토큰을 검색할 수 있습니다. 액세스 토큰이 Cloud Service 작성자 인스턴스에서 검색됩니다.
+      >`/libs/granite/migration/token.json`으로 이동하여 작성자 인스턴스에서 액세스 토큰을 검색할 수 있습니다. 액세스 토큰이 클라우드 서비스 작성자 인스턴스에서 검색됩니다.
 
    1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
@@ -213,7 +213,7 @@ ht-degree: 91%
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-1. 사용자 인터페이스를 사용하지 않고 로그를 추적하려면 소스 AEM 환경에 SSH를 사용하여 로그를 추적할 수 있습니다 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+1. 사용자 인터페이스를 사용하지 않고 로그를 추적하려면 소스 AEM 환경에 SSH를 사용하여 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`를 추적할 수 있습니다.
 
 ### 마이그레이션 세트 삭제 {#deleting-migration-set}
 
