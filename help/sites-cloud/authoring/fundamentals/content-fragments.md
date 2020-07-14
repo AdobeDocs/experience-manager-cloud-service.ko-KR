@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 98%
 
    >[!NOTE]
    >
-   >사용 가능한 요소는 사용된 모델에 따라 다릅니다.
+   >사용할 수 있는 요소는 사용된 모델에 따라 다릅니다.
 
 * **변형**
    * 기본 **마스터**&#x200B;는 항상 사용할 수 있습니다.
