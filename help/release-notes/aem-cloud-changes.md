@@ -1,11 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager(AEM)의 주요 변경 사항
 description: 클라우드 서비스로서의 Adobe Experience Manager(AEM)의 주요 변경 사항
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
