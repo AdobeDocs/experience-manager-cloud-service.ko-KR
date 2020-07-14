@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -48,18 +48,18 @@ ht-degree: 69%
 
 컨텐츠 전송 도구를 사용하기 위한 지침과 우수 사례를 이해하려면 아래 섹션을 따르십시오.
 
-* 잠재적인 문제를 식별하고 저장소의 크기를 줄이기 위해 [소스](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) 저장소에서 수정 [및](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) 데이터 **저장소 일관성 검사를** 실행하는 것이 좋습니다.
+* 잠재적인 문제를 식별하고 저장소의 크기를 줄이기 위해 [소스](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/deploying/deploying/revision-cleanup.html) 저장소에서 [수정 정리](https://helpx.adobe.com/kr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) 및 **데이터 저장소 일관성 검사**&#x200B;를 실행하는 것이 좋습니다.
 
-* AEM Cloud CDN(Author Content Delivery Network) 구성이 IP의 허용 목록을 포함하도록 구성된 경우 소스 환경 IP도에 추가되므로 소스 환경 및 AEM Cloud 환경이 서로 통신할 수 허용 목록에 추가하다 있습니다.
+* AEM 클라우드 작성자 CDN(Content Delivery Network) 구성이 IP의 허용 목록을 포함하도록 구성된 경우 소스 환경과 AEM 클라우드 환경이 서로 통신할 수 있도록 소스 환경 IP가 허용 목록에도 추가되도록 해야 합니다.
 
 * 수집 단계에서는 대상 AEM 클라우드 서비스 환경의 기존 저장소(작성자 또는 게시)가 완전히 삭제된 후 마이그레이션 세트 데이터로 업데이트되는 *지우기* 모드를 사용하여 수집을 실행하는 것이 좋습니다. 이 모드는 현재 컨텐츠 위에 마이그레이션 세트가 적용되는 지우지 않음 모드보다 훨씬 빠릅니다.
 
 * 컨텐츠 전송 활동이 완료되면 클라우드 서비스 환경에서 컨텐츠가 성공적으로 렌더링되도록 하려면 클라우드 서비스 환경에 올바른 프로젝트 구조가 필요합니다.
 
-* 콘텐츠 전송 도구를 실행하기 전에 소스 AEM 인스턴스의 하위 디렉터리에 디스크 공간이 충분한지 확인해야 `crx-quickstart` 합니다. 이는 컨텐츠 전송 도구가 나중에 마이그레이션 세트에 업로드된 저장소의 로컬 복사본을 만들기 때문입니다.
+* 컨텐츠 전송 도구를 실행하기 전에 소스 AEM 인스턴스의 `crx-quickstart` 하위 디렉토리에 디스크 공간이 충분한지 확인해야 합니다. 이는 컨텐츠 전송 도구가 나중에 마이그레이션 세트에 업로드된 저장소의 로컬 복사본을 만들기 때문입니다.
 필요한 여유 디스크 공간을 계산하는 일반 공식은 다음과 같습니다.
    `data store size + node store size * 1.5`
 
    * *데이터 저장소 크기*: 컨텐츠 전송 도구는 실제 데이터 저장소가 더 큰 경우에도 64GB를 사용합니다.
-   * *노드 저장소 크기*: 세그먼트 저장소 디렉터리 크기 또는 MongoDB 데이터베이스 크기입니다.
+   * *노드 저장소 크기*: 세그먼트 저장소 디렉토리 크기 또는 MongoDB 데이터베이스 크기입니다.
 따라서 세그먼트 저장소 크기가 20GB인 경우 필요한 여유 디스크 공간은 94GB입니다.
