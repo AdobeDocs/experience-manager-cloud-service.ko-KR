@@ -1,11 +1,11 @@
 ---
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1538'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 99%
 
 * **HTML ID**
 
-   * 구성 요소에 적용할 HTML ID.
+   * 구성 요소에 적용할 HTML ID입니다.
 
 * **페이지 제목**
 
