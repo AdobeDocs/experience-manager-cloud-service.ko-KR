@@ -2,7 +2,7 @@
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
 source-wordcount: '10058'
 ht-degree: 1%
@@ -567,7 +567,7 @@ YouTube 채널을 만들려면
 
 >[!NOTE]
 >
->클라우드 서비스가 구성된 후에는 이 시점으로서 YouTube 게시 복제 에이전트를 활성화하는 데 추가 구성이 필요하지 않습니다. 클라우드 서비스 구성을 저장할 때 활성화되었기 때문입니다.
+>클라우드 서비스가 구성된 후에는 이 시점에서 YouTube 게시 복제 에이전트를 활성화하는 데 추가 구성이 필요하지 않습니다. 클라우드 서비스 구성을 저장할 때 활성화되었기 때문입니다.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
