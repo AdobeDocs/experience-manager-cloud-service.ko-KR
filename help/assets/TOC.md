@@ -1,11 +1,11 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
