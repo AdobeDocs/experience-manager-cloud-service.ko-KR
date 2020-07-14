@@ -1,11 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 소개
 description: '클라우드 서비스로서의 Adobe Experience Manager(AEM) 소개. '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ AEM은 최신 클라우드 서비스의 주요 특성을 채택하여 다음과 
 
 * 클라우드 서비스로서의 Adobe Experience Manager와 이전 버전 간의 [새로운 기능과 차이점](/help/overview/what-is-new-and-different.md)
 * 클라우드 서비스로서의 Adobe Experience Manager [아키텍처](/help/core-concepts/architecture.md)
-* [Cloud Service으로 AEM에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
+* [클라우드 서비스로서의 AEM에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
 * [ 클라우드 서비스로서의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
 * [클라우드 서비스로서의 AEM Assets에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 * [클라우드 서비스로서의 Assets 소개](/help/assets/overview.md)
