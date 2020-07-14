@@ -1,11 +1,11 @@
 ---
 sub-product: 클라우드 서비스로서 AEM으로 이동
 user-guide-title: 클라우드 서비스로서 AEM으로 이동
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe2c098b55bf501dc0ae68d01139b828d92d90f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
