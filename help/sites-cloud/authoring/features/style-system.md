@@ -1,11 +1,11 @@
 ---
 title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -117,19 +117,19 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ### 디자인 대화 상자에서 스타일 탭 활성화 {#enable-styles-tab-design}
 
-구성 요소가 AEM의 스타일 시스템에서 작동하고 해당 디자인 대화 상자에 스타일 탭을 표시하려면 구성 요소 개발자가 구성 요소에 다음 설정이 있는 스타일 탭을 포함해야 합니다.
+구성 요소가 AEM의 스타일 시스템을 사용하고 디자인 대화 상자에 스타일 탭을 표시하도록 구성 요소 개발자가 다음 설정이 있는 스타일 탭을 구성 요소에 포함해야 합니다.
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->이는 [Sling Resource Commodification](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이를 사용합니다](/help/implementing/developing/introduction/sling-resource-merger.md).
+>이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
 
 구성 요소가 구성되면 페이지 작성자가 구성한 스타일이 AEM을 통해 데코레이션 요소에 자동으로 삽입됩니다. AEM은 이러한 스타일을 편집 가능한 모든 구성 요소에 자동으로 래핑합니다. 구성 요소 자체는 이를 위해 어떤 작업도 수행할 필요가 없습니다.
 
 ### 편집 대화 상자에서 스타일 탭 활성화 {#enable-styles-tab-edit}
 
-편집 대화 상자의 선택적 스타일 탭도 사용할 수 있습니다. [디자인 대화 상자] 탭과 달리, [편집] 대화 상자의 탭은 스타일 시스템이 작동하는 데 반드시 필요한 것은 아니지만 내용 작성자가 스타일을 설정할 수 있는 선택적 대체 인터페이스입니다.
+편집 대화 상자의 선택적 스타일 탭도 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 꼭 필요한 것은 아니지만 컨텐츠 작성자가 스타일을 설정할 수 있는 선택 가능한 대체 인터페이스입니다.
 
 편집 대화 상자 탭은 디자인 대화 상자 탭과 유사한 방식으로 포함될 수 있습니다.
 
@@ -137,7 +137,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->이는 [Sling Resource Commodification](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이를 사용합니다](/help/implementing/developing/introduction/sling-resource-merger.md).
+>이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
 
 >[!NOTE]
 >
