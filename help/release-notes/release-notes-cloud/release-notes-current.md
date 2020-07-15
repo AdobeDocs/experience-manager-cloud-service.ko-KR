@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.7.0용 릴리스 노트
 description: Experience Manager 2020.7.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d800ffd57826251031206290405ec1dd5febede8
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 29%
+source-wordcount: '248'
+ht-degree: 28%
 
 ---
 
@@ -27,6 +27,8 @@ Cloud Manager [!UICONTROL 버전] 2020.7.0의 릴리스 날짜는 2020년 7월 9
 * 환경 페이지가 다시 디자인되었습니다.
 
 * 최대 절전 모드인 환경에서 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
+
+* 환경당 환경 변수의 수가 200개로 증가했습니다.
 
 * 이제 클라우드 관리자 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
 
