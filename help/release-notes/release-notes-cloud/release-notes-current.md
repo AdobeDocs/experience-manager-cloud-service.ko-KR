@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.7.0용 릴리스 노트
 description: Experience Manager 2020.7.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
+source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '365'
 ht-degree: 20%
 
 ---
@@ -52,7 +52,7 @@ Cloud Manager [!UICONTROL 버전] 2020.7.0의 릴리스 날짜는 2020년 7월 9
 
 ## 클라우드 준비 분석기의 새로운 기능 {#cloud-readiness-analyzer}
 
-Cloud Readance Analyzer의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
+Cloud Readance Analyzer 릴리스 v1.0.2의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
 
 ### 버그 수정 {#cra-bug-fixes}
 
