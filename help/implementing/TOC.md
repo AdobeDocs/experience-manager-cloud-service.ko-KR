@@ -1,11 +1,11 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
-translation-type: ht
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,8 +30,10 @@ ht-degree: 100%
    + [클라우드 서비스 SDK로서의 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
    + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
-   + [클라우드 서비스로서의 AEM에서 오버레이](developing/introduction/overlays.md)
+   + [슬링 치트](developing/introduction/sling-cheatsheet.md)
+   + [슬링 어댑터 사용](developing/introduction/sling-adapters.md)
    + [클라우드 서비스로서의 AEM에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
+   + [클라우드 서비스로서의 AEM에서 오버레이](developing/introduction/overlays.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
 + 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
