@@ -2,7 +2,7 @@
 title: 슬링 어댑터 사용
 description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 편리하게 변환합니다
 translation-type: tm+mt
-source-git-commit: 24e75871113d3dae903911cc28c0c2c8a994a04e
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# 슬링 어댑터 사용{#using-sling-adapters}
+# 슬링 어댑터 사용 {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) 은 [어댑터 패턴](https://sling.apache.org/site/adapters.html) 을 제공하여 어댑터 인터페이스 [를 구현하는 개체를 편리하게](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 변환합니다. 이 인터페이스는 인수 [로 전달되는 클래스 유형으로 개체를 변환하는 일반](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) adaptTo() 메서드를 제공합니다.
 
@@ -55,7 +55,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 이 캐싱은 모든 `AdapterFactory` 기반 사례에 대해 수행됩니다.
 
-그러나 일반 규칙이 없습니다. 개체가 새 인스턴스나 기존 인스턴스일 수 있습니다. 이는 두 가지 행동에 의존할 수 없음을 의미합니다. 따라서 특히 내부에서 이 시나리오에서 개체 `AdapterFactory`가 다시 사용된다는 것이 중요합니다.
+그러나 일반 규칙이 없습니다. 개체가 새 인스턴스나 기존 인스턴스일 수 있습니다. 이는 두 행동 중 하나에 의존할 수 없음을 의미합니다. 따라서 특히 내부에서 이 시나리오에서 개체 `AdapterFactory`가 다시 사용된다는 것이 중요합니다.
 
 ### 작동 방식 {#how-it-works}
 
