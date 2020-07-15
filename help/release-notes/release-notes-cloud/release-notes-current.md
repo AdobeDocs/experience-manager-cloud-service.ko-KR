@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.7.0용 릴리스 노트
 description: Experience Manager 2020.7.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: d800ffd57826251031206290405ec1dd5febede8
+source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 28%
+source-wordcount: '363'
+ht-degree: 20%
 
 ---
 
@@ -49,3 +49,20 @@ Cloud Manager [!UICONTROL 버전] 2020.7.0의 릴리스 날짜는 2020년 7월 9
 * 환경 이름의 유효성 검사에 오류가 발생했습니다.
 
 * [환경] 페이지는 존재하지 않을 때 게시 및 발송자 세그먼트를 표시합니다.
+
+## 클라우드 준비 분석기의 새로운 기능 {#cloud-readiness-analyzer}
+
+Cloud Readance Analyzer의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
+
+### 버그 수정 {#cra-bug-fixes}
+
+* AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
+
+   자세한 [내용은 AEM 6.1에](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) CRA 설치를 참조하십시오.
+
+* 요약 보고서에 표시되는 만료 타임스탬프가 잘못되었습니다.
+
+* CRA가 중복된 사용자 지정 구성 요소를 감지하고 있습니다.
+
+* AEM 6.1에서 전체 검사를 완료하기 전에 컨텐츠 검사를 종료했습니다. 전체 검사가 완료될 때까지 검사자가 건너뛸 수 있도록 예외 처리가 추가되었습니다.
+
