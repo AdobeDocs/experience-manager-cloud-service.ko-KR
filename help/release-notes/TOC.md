@@ -1,10 +1,10 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM 릴리스 노트
 user-guide-title: 클라우드 서비스로서의 AEM 릴리스 노트
-translation-type: ht
-source-git-commit: a898e836ac93a6050a40151c130e2c14d233f733
-workflow-type: ht
-source-wordcount: '52'
+translation-type: tm+mt
+source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+workflow-type: tm+mt
+source-wordcount: '55'
 ht-degree: 100%
 
 ---
@@ -14,7 +14,8 @@ ht-degree: 100%
 
 + [릴리스 정보](/help/release-notes/home.md)
 + 릴리스 노트 {#release-notes}
-   + [현재 릴리스 노트(2020.6.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + [현재 릴리스 노트(2020.7.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + [2020.6.0 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-2020-6-0.md)
    + [2020.5.0 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-2020-5-0.md)
    + [2020.4.0 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-2020-4-0.md)
    + [2020.3.0 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-2020-3-0.md)
