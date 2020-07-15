@@ -2,7 +2,7 @@
 title: 슬링 치트
 description: 간편한 슬링 참조
 translation-type: tm+mt
-source-git-commit: a209ecaa99b1501a48d6fcc09999a9356a3ea6fe
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
 source-wordcount: '30'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 슬링 치트{#sling-cheatsheet}
+# 슬링 치트 {#sling-cheatsheet}
 
 ![Apache Sling 스크립트 해상도 이해.](assets/sling-cheatsheet-01.png)
 
