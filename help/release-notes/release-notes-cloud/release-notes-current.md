@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.7.0용 릴리스 노트
 description: Experience Manager 2020.7.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 20%
+source-wordcount: '404'
+ht-degree: 18%
 
 ---
 
@@ -49,6 +49,10 @@ Cloud Manager [!UICONTROL 버전] 2020.7.0의 릴리스 날짜는 2020년 7월 9
 * 환경 이름의 유효성 검사에 오류가 발생했습니다.
 
 * [환경] 페이지는 존재하지 않을 때 게시 및 발송자 세그먼트를 표시합니다.
+
+### 알려진 문제 {#known-issues}
+
+* 코드 검사 계산 방식의 변경으로 인해 Jacoco 플러그인의 _최소_ 버전은 이제 0.7.5.201505241946(2015년 5월 릴리스)입니다. 이전 버전을 명시적으로 참조하는 고객은 코드 품질 프로세스에서 오류 메시지가 표시됩니다.
 
 ## 클라우드 준비 분석기의 새로운 기능 {#cloud-readiness-analyzer}
 
