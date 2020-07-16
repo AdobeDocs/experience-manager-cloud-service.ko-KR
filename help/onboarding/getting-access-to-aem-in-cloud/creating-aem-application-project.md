@@ -2,9 +2,9 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1138'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,9 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
 * 모든 빌드는 본래 환경에서 수행됩니다. 빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
 * Maven은 항상 명령을 사용하여 실행됩니다. *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:pref-agent package*
 * Maven은 공개 Adobe Artifact 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 **구성됩니다** . (자세한 내용은 [Adobe Public Maven Repository](https://repo.adobe.com/) 를 참조하십시오.)
+
+>[!NOTE]
+>Cloud Manager가 특정 버전의 버전을 정의하지는 않지만, 사용된 버전 `jacoco-maven-plugin`은 적어도 같아야 합니다 `0.7.5.201505241946`.
 
 ### Java 11 사용 {#using-java-11}
 
