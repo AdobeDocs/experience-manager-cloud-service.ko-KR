@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 사용자 지정 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 translation-type: tm+mt
-source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
+source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1849'
 ht-degree: 3%
 
 ---
@@ -166,7 +166,7 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
 서버측 API를 사용하여 컨텐츠 조각에 액세스할 수 있습니다. see:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-frame.html)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -244,7 +244,9 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
 * `ContentElement` 을(를) 다음과 같이 적용할 수 있습니다.
 
-   * `ElementTemplate` - 요소의 구조적 정보에 액세스하는 경우.
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 요소의 구조적 정보에 액세스하는 경우.
+
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` 을(를) 다음과 같이 적용할 수 있습니다.
 
@@ -258,7 +260,7 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
 * 추가 작업이 필요할 수 있는 작업:
 
-   * 새 변형을 만들어 데이터 구조 `ContentFragment` 를 업데이트합니다.
+   * 새 변형을 만드는 것이 좋습니다 `ContentFragment`. 이렇게 하면 모든 요소가 이러한 변화를 공유하고, 컨텐츠 구조에서 새로 생성된 변화를 반영하기 위해 적절한 글로벌 데이터 구조가 필요에 따라 업데이트될 수 있습니다.
 
    * 요소를 통해 기존 변형을 제거해도 변형에 지정된 전역 데이터 구조 `ContentElement.removeVariation()`는 업데이트되지 않습니다. 이러한 데이터 구조를 동기화하려면 `ContentFragment.removeVariation()` 대신 변형을 전체적으로 제거합니다.
 
@@ -318,8 +320,8 @@ if (fragmentResource != null) {
 예:
 
 ```java
-Resource ModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
+Resource modelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
