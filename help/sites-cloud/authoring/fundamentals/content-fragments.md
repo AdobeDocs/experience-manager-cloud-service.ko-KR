@@ -2,10 +2,10 @@
 title: 컨텐츠 조각
 description: 클라우드 서비스로서의 Adobe Experience Manager 컨텐츠 조각을 사용하면 페이지 독립적 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 94%
 
 ---
 
@@ -80,6 +80,10 @@ ht-degree: 100%
 
 조각의 **구성** 대화 상자를 열어 현재 페이지에서 사용할 조각을 구성합니다. 이 대화 상자는 사용된 구성 요소에 따라 달라질 수 있습니다.
 
+>[!NOTE]
+>
+>핵심 [구성 요소, 컨텐츠 조각 구성 요소를 참조하십시오.](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html)
+
 적절한 구성 대화 상자에서 다음을 포함하여 사용 가능한 매개 변수를 선택할 수 있습니다.
 
 * **콘텐츠 조각**
@@ -132,7 +136,7 @@ ht-degree: 100%
 >
 >또한 조각 자체에 [시각적 자산(이미지)을 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)할 수도 있습니다.
 >
->조각 자체에 삽입된 시각적 자산은 조각의 이전 단락에 첨부됩니다. 즉, 시각적 자산과 이전 단락 간에 중간 컨텐츠를 배치할 수 없음을 의미합니다.
+>조각 자체에 삽입된 시각적 자산은 조각의 이전 단락에 첨부됩니다. 즉, 시각적 자산과 이전 단락 간에 중간 컨텐츠를 배치할 수 없음을 의미합니다. 이 연결 수준이 필요한 경우 조각( [혼합 미디어 조각)에 이미지를 추가할 수 있습니다](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets).
 
 >[!CAUTION]
 >
@@ -149,7 +153,7 @@ ht-degree: 100%
 
 ### 관련 컨텐츠 사용 {#using-associated-content}
 
-[](/help/assets/content-fragments/content-fragments-assoc-content.md)컨텐츠를 컨텐츠 조각과 연결[](/help/assets/content-fragments/content-fragments.md)한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)의 특별한 컨텐츠 소스입니다.
+[](/help/assets/content-fragments/content-fragments-assoc-content.md)컨텐츠를 컨텐츠 조각과 연결[](/help/assets/content-fragments/content-fragments.md)한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -167,7 +171,7 @@ ht-degree: 100%
 
 ### 조각에 삽입된 자산 {#assets-inserted-into-the-fragment}
 
-자산(예: 이미지)이 조각 자체에 삽입된 경우, 페이지 편집기에서 이러한 자산을 편집하는 옵션은 제한됩니다.
+If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
 
 예를 들어, 이미지의 경우 다음 작업을 수행할 수 있습니다.
 
