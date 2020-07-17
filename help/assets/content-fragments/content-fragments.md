@@ -2,10 +2,10 @@
 title: 콘텐츠 조각을 사용한 작업
 description: Adobe Experience Manager(AEM)의 컨텐츠 조각을 Cloud Service으로 사용하여 페이지에 영향을 받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 4%
+source-wordcount: '1828'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ AEM 핵심 구성 요소의 JSON(Sling Model) 내보내기 기능을 사용하�
 
 * [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) - 컨텐츠 조각 만들기; 그런 다음 편집, 게시 및 참조
 * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) - 모델 활성화, 생성 및 정의
-* [변형 - 조각 컨텐츠](/help/assets/content-fragments/content-fragments-variations.md) 작성 - 조각 컨텐츠를 작성하고 마스터의 변형을 생성합니다.
+* [변형 - 조각 컨텐츠](/help/assets/content-fragments/content-fragments-variations.md) 작성 - 조각 컨텐츠를 작성하고 기본 변형된
 * [마크다운](/help/assets/content-fragments/content-fragments-markdown.md) - 조각에 대한 마크다운 구문 사용
 * [관련 컨텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md) - 관련 컨텐츠 추가
 * [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
@@ -72,7 +72,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 >[!NOTE]
 >
 >**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**은 AEM 내의 다양한 기능입니다.
->* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
+>* **컨텐츠 조각은** 편집 컨텐츠로 텍스트, 번호, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 정의 및 구조가 있지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
 
 >
@@ -154,14 +154,11 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 * **조각 단락**
 
-   * 텍스트 블록(예:
+   * 개별 엔티티로 구분된 여러 줄로 된 텍스트 블록.
 
-      * 세로 공백으로 구분(캐리지 리턴)
-      * 여러 줄로 된 텍스트 요소
    * 리치 텍스트 [및](/help/assets/content-fragments/content-fragments-variations.md#rich-text) 마크다운 [](/help/assets/content-fragments/content-fragments-variations.md#markdown) 모드에서 단락 서식을 머리글로 지정할 수 있습니다. 이 경우 단락을 모두 하나로 묶습니다.
 
    * 페이지 작성 중 컨텐츠 컨트롤을 활성화합니다.
-
 
 * **조각에 삽입된 자산(혼합 미디어 조각)**
 
@@ -210,19 +207,19 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
    * 조각의 필수 부분
 
-      * 모든 컨텐츠 조각에는 하나의 마스터 인스턴스가 있습니다.
-      * 마스터를 삭제할 수 없습니다.
-   * 마스터는 변형 아래의 조각 편집기에서 액세스할 **[수 있습니다](/help/assets/content-fragments/content-fragments-variations.md)**.
-   * 마스터는 이와 같은 변화가 아니라 모든 변형의 기초가 된다.
+      * 모든 컨텐츠 조각에는 하나의 인스턴스가 기본 있습니다.
+      * 삭제할 수 기본 없습니다.
+   * 변형 아래의 조각 편집기에서 기본 액세스할 수 **[있습니다](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * 변형이 기본 아니라 모든 변형의 기초가 됩니다.
 
 
 * **변형**
 
    * 편집 목적에 맞는 조각 텍스트 변환 채널과 관련될 수 있지만, 강제적이지 않으며, 임시 로컬 수정에 사용할 수도 있습니다.
-   * Are created as copy of **Master**, but then can be edited as required; 일반적으로 변형 자체 간에 내용이 겹치는 경우가 있습니다.
+   * 는 사본 **기본**&#x200B;로 생성되지만 필요에 따라 편집할 수 있습니다. 일반적으로 변형 자체 간에 내용이 겹치는 경우가 있습니다.
    * 조각 작성 중에 정의할 수 있습니다.
    * 조각 내에 저장되므로 컨텐츠 복사본 분산을 방지할 수 있습니다.
-   * 마스터 컨텐츠가 업데이트된 경우 변형을 [마스터와 동기화할](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) 수 있습니다.
+   * 컨텐츠가 업데이트된 기본 경우 변형기본을 [](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) 과 동기화할 수 있습니다.
    * 사전 정의된 [길이로](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) 텍스트를 빠르게 자르기 위해 요약할 수 있습니다.
    * 조각 편집기의 [변형](/help/assets/content-fragments/content-fragments-variations.md) 탭에서 사용할 수 있습니다.
 
@@ -247,9 +244,12 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 * **콘텐츠 모델**
 
    * 활성화한 [다음 도구를 사용하여 만듭니다](/help/assets/content-fragments/content-fragments-models.md).
-   * 구조화된 조각을 [만드는 데 필요합니다](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
+   * 조각 [을 만드는 데 필요합니다](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * 조각(제목, 컨텐츠 요소, 태그 정의)의 구조를 정의합니다.
-   * 콘텐츠 모델 정의는 제목과 하나의 데이터 요소가 필요합니다. 그 외의 모든 것은 선택 사항입니다. 모델은 가능한 경우 조각 및 기본 컨텐트의 최소 범위를 정의합니다. 작성자는 조각 컨텐츠를 작성할 때 정의된 구조를 변경할 수 없습니다.
+   * 콘텐츠 모델 정의는 제목과 하나의 데이터 요소가 필요합니다. 그 외의 모든 것은 선택 사항입니다.
+   * 모델은 기본 컨텐트를 정의할 수 있습니다(해당되는 경우).
+   * 작성자는 조각 컨텐츠를 작성할 때 정의된 구조를 변경할 수 없습니다.
+   * 종속 컨텐츠 조각을 만든 후 모델에 대한 변경 사항은 해당 컨텐츠 조각에 영향을 줍니다.
 
 * **컨텐츠 조각 구성 요소**
 
