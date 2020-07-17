@@ -2,7 +2,7 @@
 title: 자산 HTTP API에서 Cloud Service 컨텐츠 조각 지원으로서의 Adobe Experience Manager
 description: 자산 HTTP API의 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -67,7 +67,7 @@ Assets REST API는 최신 Adobe Experience Manager을 Cloud Service 버전으로
 >[!NOTE]
 >액세스 권한:
 >* `/api/assets` **은** 선택기를 사용할 필요가 `.model` 없습니다.
->* `/content/assets` **을** 사용하려면 선택기를 `.model` 사용해야 합니다.
+>* `/content/path/to/page` **을** 사용하려면 선택기를 `.model` 사용해야 합니다.
 
 
 HTTP 메서드는 실행할 작업을 결정합니다.
