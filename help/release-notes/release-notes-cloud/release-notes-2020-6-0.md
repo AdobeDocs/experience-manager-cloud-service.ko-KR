@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.6.0용 릴리스 노트
 description: Experience Manager 2020.6.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 100%
+source-wordcount: '1949'
+ht-degree: 99%
 
 ---
 
@@ -182,11 +182,6 @@ AEM 프로젝트 빌드 시간은 AEM 프로젝트 pom.xml의 모든 참조를 �
 
 ### 버그 수정 {#assets-bug-fixes}
 
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
 위의 새로운 기능 외에도 현재 릴리스는 고객의 피드백을 기반으로 [!DNL Assets]에 대해 다음과 같은 버그 수정을 제공합니다.
 
 * MP3 음악 파일의 경우 DAM 미리 보기의 썸네일에 표시되는 재생 단추가 작동하지 않습니다. (CQ-4294731)
@@ -195,3 +190,4 @@ Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/t
 * 자산을 다운로드할 때 이메일 옵션이 선택되어 있고 유효한 이메일 ID가 제공되더라도 다운로드 옵션을 사용할 수 없습니다. (CQ-4296535)
 * 스마트 컬렉션으로 저장된 사용자 지정 필터는 자산에 제대로 적용되지 않습니다. (CQ-4294942)
 * 여러 검색 및 색인 개선 사항 및 버그 수정을 통해 성능을 향상할 수 있습니다. (CQ-4286373)
+* 폴더 속성은 500개의 내부 서버 오류를 표시합니다. (CQ-4295701)
