@@ -2,7 +2,7 @@
 title: 자산 HTTP API에서 Cloud Service 컨텐츠 조각 지원으로서의 Adobe Experience Manager
 description: 자산 HTTP API의 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -211,7 +211,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 자산이 요청되면 응답에서 해당 메타데이터를 반환합니다. 제목, 이름 및 해당 자산 스키마에 의해 정의된 기타 정보 등.
 
-자산의 이진 데이터는 유형 `content` (라고도 함)의 SYNN 링크로 `rel attribute`노출됩니다.
+자산의 이진 데이터는 유형의 SYNN 링크로 노출됩니다 `content`.
 
 자산에 여러 표현물이 있을 수 있습니다. 이러한 항목은 일반적으로 하위 엔티티로 노출되며, 한 가지 예외는 축소판 변환이며 유형 `thumbnail` ( `rel="thumbnail"`)의 링크로 노출됩니다.
 
@@ -244,7 +244,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 사용 방법은 특정 사용 사례와 함께 AEM 작성자 환경을 사용하는지 게시 환경을 사용하는지에 따라 다를 수 있습니다.
 
-* 작성은 작성자 인스턴스에 엄격하게 구속됩니다([현재 이 API를 사용하여 게시할 조각을 복제할 방법이 없습니다](/help/assets/assets-api-content-fragments.md#limitations)).
+* 작성은 작성자 인스턴스에 바인딩되어[있으며 현재 이 API를 사용하여 게시할 조각을 복제할 방법이 없습니다](/help/assets/assets-api-content-fragments.md#limitations).
 * AEM은 요청된 컨텐츠를 JSON 형식으로만 제공하므로 두 가지 모두에서 전달할 수 있습니다.
 
    * AEM 작성자 인스턴스의 저장소 및 배달은 방화벽 뒤에 있는 미디어 라이브러리 응용 프로그램이면 충분합니다.
