@@ -16,7 +16,7 @@ ht-degree: 2%
 
 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다.
 
-경험 조각 마스터 및/또는 변형은 다음을 사용합니다.
+경험 조각 기본 및/또는 변형은 다음을 사용합니다.
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
@@ -96,10 +96,10 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
    1. 템플릿의 이름은 다음으로 시작해야 합니다.
       `experience-fragments`
-이 폴더를 사용하면 /content/experience-fragments에 이름이 시작하는 모든 템플릿이 포함되어 있으므로 사용자가 경험 조각을 /content/experience-fragments에 만들 수 있습니다 `cq:allowedTemplates` `experience-fragment`. 고객은 고유한 이름 지정 구성표 또는 템플릿 위치를 포함하도록 이 속성을 업데이트할 수 있습니다.
-[허용된 템플릿은](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 경험 조각 콘솔에서 구성할 수 있습니다.
+이를 통해 사용자는 /content/experience-fragments에서 
+`cq:allowedTemplates` 이 폴더의 속성에는 이름을 가진 모든 템플릿이 포함되어 있습니다 `experience-fragment`. 고객은 고유한 이름 지정 구성표 또는 템플릿 위치를 포함하도록 이 속성을 업데이트할 수 있습니다.
 
-1. 경험 조각용 구성 요소 {#components-for-experience-fragments}](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)
+1. [허용된 템플릿은](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 경험 조각 콘솔에서 구성할 수 있습니다.
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -110,11 +110,11 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
 
-## 경험 조각에 사용할 구성 요소를 개발하는 방법은 표준 방법을 따릅니다.{#components-for-experience-fragments}
+## 경험 조각용 구성 요소 {#components-for-experience-fragments}
+
+경험 조각에 사용할 구성 요소를 개발하는 방법은 표준 방법을 따릅니다.
 
 유일한 추가 구성은 구성 요소가 템플릿에서 허용되는지 확인하는 것입니다. 이는 컨텐츠 정책으로 이루어집니다.
-
-경험 조각 링크 재작성자 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 <!--
 [Developing components](/help/sites-developing/components.md) for use with/in Experience Fragments follow standard practices.
@@ -122,79 +122,79 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:{#the-experience-fragment-link-rewriter-provider-html}
+## 경험 조각 링크 재작성자 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
-구성 요소 그룹과 레이아웃으로 구성되며
+AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:
 
+* 구성 요소 그룹과 레이아웃으로 구성되며
 * 은 AEM 페이지와 독립적으로 존재할 수 있습니다.
-* 이러한 그룹에 대한 사용 사례 중 하나는 Adobe Target과 같은 타사 터치포인트에 컨텐트를 포함시키는 것입니다.
 
-기본 링크 재작성 {#default-link-rewriting}
+이러한 그룹에 대한 사용 사례 중 하나는 Adobe Target과 같은 타사 터치포인트에 컨텐트를 포함시키는 것입니다.
 
-### Target으로 내보내기 기능을 사용하여 다음을 수행할 수 있습니다.{#default-link-rewriting}
+### 기본 링크 재작성 {#default-link-rewriting}
 
 <!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
-경험 조각 만들기,
+Target으로 내보내기 기능을 사용하여 다음을 수행할 수 있습니다.
 
+* 경험 조각 만들기,
 * 구성 요소 추가
 * 그런 다음 HTML 형식 또는 JSON 형식으로 Adobe Target 오퍼으로 내보냅니다.
-* 이 기능은 AEM의 작성자 인스턴스에서 활성화할 수 있습니다. 링크 외부 도우미에는 유효한 Adobe Target 구성 및 구성이 필요합니다.
 
-링크 외부 도우미는 Target 오퍼의 HTML 버전을 만들 때 필요한 올바른 URL을 결정하는 데 사용되며, 이 URL은 이후 Adobe Target으로 전송됩니다. Adobe Target에서 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하기 때문에 필요합니다. 즉, 링크 참조 및 경험 조각 자체는 게시되어야 사용할 수 있습니다.
+이 기능은 AEM의 작성자 인스턴스에서 활성화할 수 있습니다. 링크 외부 도우미에는 유효한 Adobe Target 구성 및 구성이 필요합니다.
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-기본적으로 Target HTML 오퍼를 구성할 때 AEM의 사용자 지정 Sling 선택기로 요청이 전송됩니다. 이 선택기를 호출합니다 `.nocloudconfigs.html`. 이름이 암시하듯이 경험 조각의 일반 HTML 렌더링을 만들지만 클라우드 구성(탁월한 정보)은 포함하지 않습니다.
+링크 외부 도우미는 Target 오퍼의 HTML 버전을 만들 때 필요한 올바른 URL을 결정하는 데 사용되며, 이 URL은 이후 Adobe Target으로 전송됩니다. Adobe Target에서 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하기 때문에 필요합니다. 즉, 링크 참조 및 경험 조각 자체는 게시되어야 사용할 수 있습니다.
 
-HTML 페이지를 생성하면 Sling Rewriter 파이프라인이 출력을 수정합니다.`.nocloudconfigs.html`
+기본적으로 Target HTML 오퍼를 구성할 때 AEM의 사용자 지정 Sling 선택기로 요청이 전송됩니다. 이 선택기를 호출합니다 `.nocloudconfigs.html`. 이름이 암시하듯이 경험 조각에 대한 일반 HTML 렌더링을 만들지만 클라우드 구성(탁월한 정보)은 포함하지 않습니다.
 
-요소 `html`, `head`및 `body` 요소는 `div` 요소로 대체됩니다. 및 `meta`요소는 제거됩니다(원래 `noscript` 요소의 하위 요소이며, 이 요소가 `title` `head` `div` 요소로 바뀐 경우에는 고려되지 않습니다.).
+HTML 페이지를 생성하면 Sling Rewriter 파이프라인이 출력을 수정합니다.
 
-1. 이는 HTML Target 오퍼이 Target 활동에 포함될 수 있도록 하기 위해 수행됩니다.`html``head``body``div``meta``noscript``title``head``div`
+1. 요소 `html`, `head`및 `body` 요소는 `div` 요소로 대체됩니다. 및 `meta`요소는 제거됩니다(원래 `noscript` 요소의 하위 요소이며, 이 요소가 `title` `head` `div` 요소로 바뀐 경우에는 고려되지 않습니다.).
 
-   AEM은 게시된 리소스를 가리키도록 HTML에 있는 모든 내부 링크를 수정합니다.
+   이는 HTML Target 오퍼이 Target 활동에 포함될 수 있도록 하기 위해 수행됩니다.
 
-2. 수정할 링크를 결정하기 위해 AEM은 HTML 요소의 속성에 대해 이 패턴을 따릅니다.
+2. AEM은 게시된 리소스를 가리키도록 HTML에 있는 모든 내부 링크를 수정합니다.
 
-   `src` 특성
+   수정할 링크를 결정하기 위해 AEM은 HTML 요소의 속성에 대해 이 패턴을 따릅니다.
 
-   1. `href` 특성
-   2. `*-src` 속성(data-src, custom-src 등)
-   3. `*-href` 속성(예: `data-href`, `custom-href``img-href`, 등)
-   4. [!NOTE]`data-href``custom-href``img-href`
+   1. `src` 특성
+   2. `href` 특성
+   3. `*-src` 속성(data-src, custom-src 등)
+   4. `*-href` 속성(예: `data-href`, `custom-href``img-href`, 등)
 
-   >[!NOTE]대부분의 경우 HTML의 내부 링크는 상대 링크이지만 사용자 지정 구성 요소가 HTML에서 전체 URL을 제공하는 경우가 있을 수 있습니다. 기본적으로 AEM은 이러한 완전한 URL을 무시하고 수정하지 않습니다.
+   >[!NOTE]
    >
-   >이러한 속성의 링크는 AEM Link Externalizer `publishLink()` 를 통해 실행되어 URL이 게시된 인스턴스에서와 같이 공개적으로 사용 가능한 URL을 다시 만듭니다.
+   >대부분의 경우 HTML의 내부 링크는 상대 링크이지만 사용자 지정 구성 요소가 HTML에서 전체 URL을 제공하는 경우가 있을 수 있습니다. 기본적으로 AEM은 이러한 완전한 URL을 무시하고 수정하지 않습니다.
 
-   기본 구현을 사용하는 경우 위에 설명된 프로세스에서는 경험 조각에서 Target 오퍼을 생성한 다음 Adobe Target으로 내보내는 데 충분해야 합니다. 그러나 이 프로세스에서 고려하지 않은 일부 사용 사례가 있습니다. 다음과 같습니다.`publishLink()`
+   이러한 속성의 링크는 AEM Link Externalizer `publishLink()` 를 통해 실행되어 URL이 게시된 인스턴스에서와 같이 공개적으로 사용 가능한 URL을 다시 만듭니다.
 
-게시 인스턴스에서만 사용 가능한 Sling 매핑
+기본 구현을 사용하는 경우 위에 설명된 프로세스에서는 경험 조각에서 Target 오퍼을 생성한 다음 Adobe Target으로 내보내는 데 충분해야 합니다. 그러나 이 프로세스에서 고려하지 않은 일부 사용 사례가 있습니다. 다음과 같습니다.
 
+* 게시 인스턴스에서만 사용 가능한 Sling 매핑
 * Dispatcher 리디렉션
-* 이러한 경우에 대해 AEM은 링크 리작성자 공급자 인터페이스를 제공합니다.
 
-링크 리작성기 공급자 인터페이스 {#link-rewriter-provider-interface}
+이러한 경우에 대해 AEM은 링크 리작성자 공급자 인터페이스를 제공합니다.
 
-### 더 복잡한 경우, [기본값에](#default-link-rewriting)포함되지 않은 경우 AEM은 링크 리작성자 공급자 인터페이스를 제공합니다. 이 인터페이스는 서비스로 번들에서 구현할 수 있는 `ConsumerType` 인터페이스입니다. 경험 조각에서 렌더링되는 대로 AEM이 HTML 오퍼의 내부 링크에서 수행하는 수정 사항을 건너뜁니다. 이 인터페이스를 사용하면 비즈니스 요구에 맞게 내부 HTML 링크를 재작성하는 프로세스를 사용자 정의할 수 있습니다.
+### 링크 리작성기 공급자 인터페이스 {#link-rewriter-provider-interface}
 
-이 인터페이스를 서비스로 구현하는 데 사용되는 예는 다음과 같습니다.[](#default-link-rewriting)`ConsumerType`
+더 복잡한 경우, [기본값에](#default-link-rewriting)포함되지 않은 경우 AEM은 링크 리작성자 공급자 인터페이스를 제공합니다. 이 인터페이스는 서비스로 번들에서 구현할 수 있는 `ConsumerType` 인터페이스입니다. 경험 조각에서 렌더링되는 대로 AEM이 HTML 오퍼의 내부 링크에서 수행하는 수정 사항을 건너뜁니다. 이 인터페이스를 사용하면 비즈니스 요구에 맞게 내부 HTML 링크를 재작성하는 프로세스를 사용자 정의할 수 있습니다.
 
-Sling 매핑은 게시 인스턴스에서 활성화되지만 작성자 인스턴스에는 활성화되지 않습니다
+이 인터페이스를 서비스로 구현하는 데 사용되는 예는 다음과 같습니다.
 
+* Sling 매핑은 게시 인스턴스에서 활성화되지만 작성자 인스턴스에는 활성화되지 않습니다
 * 발송자 또는 유사한 기술을 사용하여 내부적으로 URL을 리디렉션합니다.
 * 리소스 `sling:alias mechanisms` 가 적소에 있다
-* [!NOTE]
 
->[!NOTE]이 인터페이스는 생성된 Target 오퍼의 내부 HTML 링크만 처리합니다.
+>[!NOTE]
 >
->링크 리작성기 공급자 인터페이스( `ExperienceFragmentLinkRewriterProvider`)는 다음과 같습니다.
+>이 인터페이스는 생성된 Target 오퍼의 내부 HTML 링크만 처리합니다.
 
-링크 리작성기 공급자 인터페이스를 사용하는 방법 {#how-to-use-the-link-rewriter-provider-interface}
+링크 리작성기 공급자 인터페이스( `ExperienceFragmentLinkRewriterProvider`)는 다음과 같습니다.
 
 ```java
 public interface ExperienceFragmentLinkRewriterProvider {
@@ -208,13 +208,13 @@ public interface ExperienceFragmentLinkRewriterProvider {
 }
 ```
 
-### 인터페이스를 사용하려면 먼저 링크 리저터 공급자 인터페이스를 구현하는 새 서비스 구성 요소가 포함된 번들을 만들어야 합니다.{#how-to-use-the-link-rewriter-provider-interface}
+### 링크 리작성기 공급자 인터페이스를 사용하는 방법 {#how-to-use-the-link-rewriter-provider-interface}
+
+인터페이스를 사용하려면 먼저 링크 리저터 공급자 인터페이스를 구현하는 새 서비스 구성 요소가 포함된 번들을 만들어야 합니다.
 
 이 서비스는 다양한 링크에 액세스하기 위해 경험 조각 내보내기에 Target 재작성을 연결하는 데 사용됩니다.
 
 예, `ComponentService`:
-
-서비스가 제대로 작동하기 위해서는 이제 서비스 내에서 구현해야 하는 세 가지 방법이 있습니다.`ComponentService`
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;
@@ -244,22 +244,22 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 }
 ```
 
-` [shouldRewrite](#shouldrewrite)`
+서비스가 제대로 작동하기 위해서는 이제 서비스 내에서 구현해야 하는 세 가지 방법이 있습니다.
 
+* ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
-* `rewriteLinkExample2`
 
-   * ` [getPriority](#priorities-getpriority)`
+   * `rewriteLinkExample2`
 
-* shouldRewrite {#shouldrewrite}
+* ` [getPriority](#priorities-getpriority)`
 
-#### 특정 경험 조각 변형에서 Target으로 내보내기를 호출할 때 링크를 다시 작성해야 하는지 여부를 시스템에 표시해야 합니다. 이 작업은 메서드를 구현하여 수행합니다.{#shouldrewrite}
+#### shouldRewrite {#shouldrewrite}
+
+특정 경험 조각 변형에서 Target으로 내보내기를 호출할 때 링크를 다시 작성해야 하는지 여부를 시스템에 표시해야 합니다. 이 작업은 메서드를 구현하여 수행합니다.
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-`shouldRewrite(ExperienceFragmentVariation experienceFragment);`예:
-
-이 메서드는 매개 변수로 Target으로 내보내기 시스템이 현재 재작성하고 있는 경험 조각 변형을 받습니다.
+예:
 
 ```java
 @Override
@@ -268,56 +268,56 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
+이 메서드는 매개 변수로 Target으로 내보내기 시스템이 현재 재작성하고 있는 경험 조각 변형을 받습니다.
+
 위의 예에서 다음을 다시 작성하려고 합니다.
 
-링크 `src`
+* 링크 `src`
 
 * `href` 속성만
 
-* `href`(특정 경험 조각):
+* (특정 경험 조각):
+   `/content/experience-fragment/master`
 
+Target으로 내보내기 시스템을 통과하는 기타 모든 경험 조각은 무시되며 본 서비스에 구현된 변경 사항에 영향을 받지 않습니다.
 
-* `/content/experience-fragment/master`   `/content/experience-fragment/master`Target으로 내보내기 시스템을 통과하는 기타 모든 경험 조각은 무시되며 본 서비스에 구현된 변경 사항에 영향을 받지 않습니다.
+#### rewriteLink {#rewritelink}
 
-rewriteLink {#rewritelink}
-
-#### 재작성 프로세스의 영향을 받은 경험 조각 변형에 대해 서비스는 링크 재작성을 처리하도록 진행합니다. 내부 HTML에서 링크가 발생할 때마다 다음 메서드가 호출됩니다.{#rewritelink}
+재작성 프로세스의 영향을 받은 경험 조각 변형에 대해 서비스는 링크 재작성을 처리하도록 진행합니다. 내부 HTML에서 링크가 발생할 때마다 다음 메서드가 호출됩니다.
 
 `rewriteLink(String link, String tag, String attribute)`
 
-`rewriteLink(String link, String tag, String attribute)`입력 시 이 메서드는 매개 변수를 받습니다.
+입력 시 이 메서드는 매개 변수를 받습니다.
 
-`link`
-현재 처리 중인 링크의 `String` 표현. 일반적으로 작성자 인스턴스의 리소스를 가리키는 상대 URL입니다.
+* `link`
+ 
+`String` 현재 처리 중인 링크의 표현. 일반적으로 작성자 인스턴스의 리소스를 가리키는 상대 URL입니다.
 
 * `tag`
 현재 처리 중인 HTML 요소의 이름입니다.
-`attribute`
+
+* `attribute`
 정확한 속성 이름입니다.
 
-* 예를 들어 Target으로 내보내기 시스템에서 현재 이 요소를 처리 중인 경우 다음과 같이 정의할 수 `CSSInclude` 있습니다.
-
-* 메서드 호출은 다음 매개 변수를 사용하여 `rewriteLink()` 수행됩니다.
-
-서비스를 만들 때 주어진 입력에 따라 결정을 내리고 그에 따라 링크를 다시 작성할 수 있습니다.`CSSInclude`
+예를 들어 Target으로 내보내기 시스템에서 현재 이 요소를 처리 중인 경우 다음과 같이 정의할 수 `CSSInclude` 있습니다.
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
 ```
 
-예를 들어 URL의 `/etc.clientlibs` 부분을 제거하고 적절한 외부 도메인을 추가하려고 합니다. 단순하게 유지하기 위해 다음과 같이 귀하의 서비스에 대한 리소스 해결 프로그램에 액세스할 수 있다고 간주합니다. `rewriteLinkExample2`
+메서드 호출은 다음 매개 변수를 사용하여 `rewriteLink()` 수행됩니다.
 
 ```java
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-[!NOTE]
+서비스를 만들 때 주어진 입력에 따라 결정을 내리고 그에 따라 링크를 다시 작성할 수 있습니다.
 
-서비스 사용자를 통해 리소스 확인자를 가져오는 방법에 대한 자세한 내용은 AEM의 서비스 사용자를 참조하십시오.`/etc.clientlibs``rewriteLinkExample2`
+예를 들어 URL의 `/etc.clientlibs` 부분을 제거하고 적절한 외부 도메인을 추가하려고 합니다. 단순하게 유지하기 위해 다음과 같이 귀하의 서비스에 대한 리소스 해결 프로그램에 액세스할 수 있다고 간주합니다. `rewriteLinkExample2`
 
 >[!NOTE]
 >
->위의 메서드가 반환되면 Target으로 내보내기 시스템 `null`은 리소스에 대한 상대 링크인 링크를 그대로 유지합니다.
+>서비스 사용자를 통해 리소스 확인자를 가져오는 방법에 대한 자세한 내용은 AEM의 서비스 사용자를 참조하십시오.
 
 <!--
 >For more information on how to get a resource resolver through a service user see [Service Users in AEM](/help/sites-administering/security-service-users.md).
@@ -348,16 +348,16 @@ public String rewriteLink(String link, String tag, String attribute) {
 }
 ```
 
->우선 순위 - getPriority {#priorities-getpriority}
+>[!NOTE]
 >
->다양한 유형의 경험 조각에 맞는 서비스를 여러 개 필요로 하거나 모든 경험 조각에 대한 외부화 및 매핑을 처리하는 범용 서비스를 필요로 하는 경우도 있습니다. 이러한 경우 사용할 서비스가 충돌할 수 있으므로 AEM에서는 다양한 서비스에 대해 **우선 순위를** 정의할 수 있습니다. 우선 순위는 다음 방법을 사용하여 지정합니다.
+>위의 메서드가 반환되면 Target으로 내보내기 시스템 `null`은 리소스에 대한 상대 링크인 링크를 그대로 유지합니다.
 
-#### `getPriority()`
+#### 우선 순위 - getPriority {#priorities-getpriority}
+
+다양한 유형의 경험 조각에 맞는 서비스를 여러 개 필요로 하거나 모든 경험 조각에 대한 외부화 및 매핑을 처리하는 범용 서비스를 필요로 하는 경우도 있습니다. 이러한 경우 사용할 서비스가 충돌할 수 있으므로 AEM에서는 다양한 서비스에 대해 **우선 순위를** 정의할 수 있습니다. 우선 순위는 다음 방법을 사용하여 지정합니다.
+
+* `getPriority()`
 
 이 방법을 사용하면 동일한 경험 조각에 대해 `shouldRewrite()` 메서드가 true를 반환하는 여러 서비스를 사용할 수 있습니다. 해당 `getPriority()`메서드에서 가장 높은 수를 반환하는 서비스는 경험 조각 변형을 처리하는 서비스입니다.
 
-* 예를 들어 모든 경험 조각에 대한 기본 매핑을 `GenericLinkRewriterProvider` 처리하고, 메서드가 모든 경험 조각 변형에 대해 반환되는 `shouldRewrite()` 경우 `true` 를 처리할 수 있습니다. 몇 가지 특정 경험 조각에 대해 특수 처리를 원할 수 있으므로 이 경우, 일부 경험 조각 변형에 대해서만 `SpecificLinkRewriterProvider` `shouldRewrite()` 메서드가 true로 반환되는 값을 제공할 수 있습니다. 이러한 경험 조각 변형을 처리하도록 `SpecificLinkRewriterProvider` `getPriority()` 선택되었는지 확인하려면 해당 메서드에서 `GenericLinkRewriterProvider.`
-
-This method allows the use of several services where the `shouldRewrite()` method returns true for the same Experience Fragment. The service that returns the highest number from its `getPriority()`method is the service that handles the Experience Fragment Variation.
-
-As an example, you can have a `GenericLinkRewriterProvider` that handles the basic mapping for all Experience Fragments and when the `shouldRewrite()` method returns `true` for all Experience Fragment Variations. For several specific Experience Fragments, you may want special handling, so in this case, you can provide a `SpecificLinkRewriterProvider` for which the `shouldRewrite()` method returns true only for some Experience Fragment Variations. To make sure that `SpecificLinkRewriterProvider` is chosen to handle those Experience Fragment Variations, it must return in its `getPriority()` method a higher number than `GenericLinkRewriterProvider.`
+예를 들어 모든 경험 조각에 대한 기본 매핑을 `GenericLinkRewriterProvider` 처리하고, 메서드가 모든 경험 조각 변형에 대해 반환되는 `shouldRewrite()` 경우 `true` 를 처리할 수 있습니다. 몇 가지 특정 경험 조각에 대해 특수 처리를 원할 수 있으므로 이 경우, 일부 경험 조각 변형에 대해서만 `SpecificLinkRewriterProvider` `shouldRewrite()` 메서드가 true로 반환되는 값을 제공할 수 있습니다. 이러한 경험 조각 변형을 처리하도록 `SpecificLinkRewriterProvider` `getPriority()` 선택되었는지 확인하려면 해당 메서드에서 `GenericLinkRewriterProvider.`
