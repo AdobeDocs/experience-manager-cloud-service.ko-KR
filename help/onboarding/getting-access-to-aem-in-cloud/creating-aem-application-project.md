@@ -2,9 +2,9 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
+source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1314'
 ht-degree: 0%
 
 ---
@@ -128,6 +128,39 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
 | CM_PROGRAM_NAME | 프로그램 이름 |
 | ARTIFACTS_VERSION | 스테이지 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 합성 버전 |
 | CM_AEM_PRODUCT_VERSION | 릴리스 이름 |
+
+### 파이프라인 변수 {#pipeline-variables}
+
+경우에 따라 고객의 빌드 프로세스는 Git 리포지토리에 배치하기에 적합하지 않거나 동일한 분기를 사용하여 파이프라인 실행 간에 변경해야 하는 특정 구성 변수에 따라 달라질 수 있습니다.
+
+Cloud Manager를 사용하면 이러한 변수를 Cloud Manager API 또는 Cloud Manager CLI를 통해 파이프라인별로 구성할 수 있습니다. 변수는 일반 텍스트로 저장하거나 안전하게 암호화할 수 있습니다. 두 경우 모두 빌드 환경 내에서 변수를 환경 변수로 사용할 수 있으며 이 변수는 `pom.xml` 파일 또는 기타 빌드 스크립트 내에서 참조할 수 있습니다.
+
+CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행합니다.
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+현재 변수는 나열할 수 있습니다.
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+변수 이름에는 영숫자 및 밑줄(_) 문자만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다. 파이프라인당 변수 수는 200자로 제한됩니다. 각 이름은 100자 미만이어야 하며, 각 값은 2048자 미만이어야 합니다.
+
+파일 내에서 사용할 경우, 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 데 유용합니다. `Maven pom.xml`
+
+```xml
+        <profile>
+            <id>cmBuild</id>
+            <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+            </activation>
+            <properties>
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
+            </properties>
+        </profile>
+```
+
 
 ## Cloud Manager에서 마스터 프로필 활성화 {#activating-maven-profiles-in-cloud-manager}
 
