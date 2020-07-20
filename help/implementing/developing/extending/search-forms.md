@@ -547,174 +547,174 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **옵션 노드 경로**&#x200B;는 **옵션 경로**&#x200B;와 효과적으로 동일하며, 이 경계는 공통 술어 필드에만 있고 다른 경계는 자산에 한정됩니다.
-**단일 선택**&#x200B;이 선택된 경우 옵션이 하나의 선택만 허용하는 확인란으로 렌더링됩니다. 실수로 선택한 경우 확인란을 선택 취소할 수 있습니다.
+* **옵션 노드 경로**&#x200B;와 
+**옵션 경로**. 공통 술어 필드에만 있고 다른 술어는 자산에 고유합니다.
+
+* **단일 선택**&#x200B;이 선택된 경우 옵션이 하나의 선택만 허용하는 확인란으로 렌더링됩니다. 실수로 선택한 경우 확인란을 선택 취소할 수 있습니다.
 
 * **게시 및 Live Copy 속성 이름**&#x200B;사이트 특정 술어에 대한 게시 및 Live Copy 확인란의 레이블입니다.
 
 * &amp;ast; 설정 **** 탭의 필드 레이블에는 필드가 필수이며 비워 두면 오류 메시지가 표시됩니다.
 
-* 검색 양식 구성 {#configuring-your-search-forms}**
+## 검색 양식 구성 {#configuring-your-search-forms}
 
-## 사용자 지정된 구성 만들기/열기 {#creating-opening-a-customized-configuration}
+### 사용자 지정된 구성 만들기/열기 {#creating-opening-a-customized-configuration}
 
-### 도구, **일반**, **검색 양식**&#x200B;으로 **이동합니다**.
+1. 도구, **일반**, **검색 양식**&#x200B;으로 **이동합니다**.
 
-1. 사용자 정의할 구성을 선택합니다.************
-
+1. 사용자 정의할 구성을 선택합니다.
 1. 편집 **** 아이콘을 사용하여 업데이트를 위한 구성을 엽니다.
 1. 새로운 사용자 지정 기능을 사용할 경우 새 설명 필드를 [추가하고 필요에 따라 설정을](#add-edit-a-predicate-field-and-define-field-settings) 정의할 수 있습니다. 기존 사용자 지정 시 기존 필드를 선택하고 설정을 [업데이트할 수 있습니다](#add-edit-a-predicate-field-and-define-field-settings).
-1. Select **Done** to save the configuration. 구성은 다음에 볼 수 있습니다.[](#add-edit-a-predicate-field-and-define-field-settings)
-1. [!NOTE]**
+1. Select **Done** to save the configuration. 구성은 다음에 볼 수 있습니다.
 
-   >[!NOTE]사용자 지정된 구성은 다음 위치에 저장됩니다.
+   >[!NOTE]
    >
-   >`/apps/cq/gui/content/facets/<option>`
+   >사용자 지정된 구성은 다음 위치에 저장됩니다.
    >
+   >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
-   >* 설명 필드 추가/편집 및 필드 설정 정의 {#add-edit-a-predicate-field-and-define-field-settings}
 
 
-### 필드를 추가하거나 편집하고 설정을 정의/업데이트할 수 있습니다.{#add-edit-a-predicate-field-and-define-field-settings}
+### 설명 필드 추가/편집 및 필드 설정 정의 {#add-edit-a-predicate-field-and-define-field-settings}
 
-[업데이트할 사용자 지정된 구성을](#creating-opening-a-customized-configuration) 엽니다.
+필드를 추가하거나 편집하고 설정을 정의/업데이트할 수 있습니다.
 
+1. [업데이트할 사용자 지정된 구성을](#creating-opening-a-customized-configuration) 엽니다.
 1. 새 필드를 추가하려면 설명 선택 탭 **을** 열고 필요한 술어를 필요한 위치로 드래그합니다. 예를 들어 날짜 범위 **설명**:
-1. ![설명 추가](assets/csf-add-predicate.png)****
 
-   ![다음 여부에 따라 다름:](assets/csf-add-predicate.png)
+   ![설명 추가](assets/csf-add-predicate.png)
 
-1. 새 필드를 추가하고 있습니다.
+1. 다음 여부에 따라 다름:
 
-   * 조건자를 추가하면 **설정** 탭이 열리고 정의할 수 있는 속성이 표시됩니다.
+   * 새 필드를 추가하고 있습니다.
 
-      기존 조건자를 업데이트하려는 경우:****
+      조건자를 추가하면 **설정** 탭이 열리고 정의할 수 있는 속성이 표시됩니다.
 
-   * 설명 필드(오른쪽)를 선택한 다음 설정 **탭을** 엽니다.
+   * 기존 조건자를 업데이트하려는 경우:
 
-      예를 들어 날짜 범위 설명 **에 대한 설정은 다음과 같습니다**.
+      설명 필드(오른쪽)를 선택한 다음 설정 **탭을** 엽니다.
+   예를 들어 날짜 범위 설명 **에 대한 설정은 다음과 같습니다**.
+
    ![설명 수정](assets/csf-modify-predicate.png)
 
-   필요에 따라 변경하고 완료를 **확인합니다**. 구성은 다음에 볼 수 있습니다.
+1. 필요에 따라 변경하고 완료를 **확인합니다**. 구성은 다음에 볼 수 있습니다.
 
-1. 검색 구성 미리 보기 {#previewing-the-search-configuration}**
+### 검색 구성 미리 보기 {#previewing-the-search-configuration}
 
-### 미리 보기 아이콘을 선택합니다.{#previewing-the-search-configuration}
+1. 미리 보기 아이콘을 선택합니다.
 
-1. ![미리 보기 아이콘](assets/csf-preview-icon.png)
+   ![미리 보기 아이콘](assets/csf-preview-icon.png)
 
-   ![그러면 해당 콘솔의 검색 열에 표시될 검색 양식이 표시됩니다(완전히 확장됨).](assets/csf-preview-icon.png)
+1. 그러면 해당 콘솔의 검색 열에 표시될 검색 양식이 표시됩니다(완전히 확장됨).
 
-1. ![미리 보기 양식](assets/csf-preview-form.png)
+   ![미리 보기 양식](assets/csf-preview-form.png)
 
-   **미리 보기를 닫아서** 구성을 다시 시작하고 완료합니다.
+1. **미리 보기를 닫아서** 구성을 다시 시작하고 완료합니다.
 
-1. 설명 필드 삭제 {#deleting-a-predicate-field}**
+### 설명 필드 삭제 {#deleting-a-predicate-field}
 
-### [업데이트할 사용자 지정된 구성을](#creating-opening-a-customized-configuration) 엽니다.
-
+1. [업데이트할 사용자 지정된 구성을](#creating-opening-a-customized-configuration) 엽니다.
 1. 설명 필드(오른쪽)를 선택하고 **설정** 탭을 연 다음 **삭제** 아이콘(왼쪽 아래)을 선택합니다.
-1. ![삭제 아이콘](assets/csf-delete-icon.png)****
 
-   ![대화 상자가 삭제 작업의 확인을 요청합니다.](assets/csf-delete-icon.png)
+   ![삭제 아이콘](assets/csf-delete-icon.png)
+
+1. 대화 상자가 삭제 작업의 확인을 요청합니다.
 
 1. 완료를 사용하여 이 및 기타 모든 변경 사항을 **확인합니다**.
 
-1. 구성 삭제(기본값 복원) {#deleting-a-configuration-to-reinstate-the-default}**
+### 구성 삭제(기본값 복원) {#deleting-a-configuration-to-reinstate-the-default}
 
-### 구성을 사용자 지정했으면 기본값이 무시됩니다. 사용자 지정된 구성을 삭제하여 기본 구성을 다시 지정할 수 있습니다.{#deleting-a-configuration-to-reinstate-the-default}
+구성을 사용자 지정했으면 기본값이 무시됩니다. 사용자 지정된 구성을 삭제하여 기본 구성을 다시 지정할 수 있습니다.
 
-[!NOTE]
-
->[!NOTE]기본 구성은 삭제할 수 없습니다.
+>[!NOTE]
 >
->콘솔에서 사용자 지정된 구성 삭제가 수행됩니다.
+>기본 구성은 삭제할 수 없습니다.
 
-필요한 구성(예: **페이지 편집기(단락 검색)**)을 선택한 다음 도구 모음에서 **삭제** 아이콘을 선택합니다.
+콘솔에서 사용자 지정된 구성 삭제가 수행됩니다.
 
-1. ![기본값 복원](assets/csf-restore-default.png)****
+1. 필요한 구성(예: **페이지 편집기(단락 검색)**)을 선택한 다음 도구 모음에서 **삭제** 아이콘을 선택합니다.
 
-   ![사용자 지정된 구성이 삭제되고 기본 복원됩니다(콘솔에 자물쇠 기호가 다시 표시됨).](assets/csf-restore-default.png)
+   ![기본값 복원](assets/csf-restore-default.png)
 
-1. 옵션 설명 추가 {#adding-options-predicates}
+1. 사용자 지정된 구성이 삭제되고 기본 복원됩니다(콘솔에 자물쇠 기호가 다시 표시됨).
 
-### 옵션 설명(옵션, 옵션 속성)을 사용하면 검색할 항목을 구성할 수 있습니다. 일반적으로 페이지 바로 아래에서 항목을 검색하는 데 사용됩니다. 예를 들어 페이지 노드의 속성입니다.{#adding-options-predicates}
+### 옵션 설명 추가 {#adding-options-predicates}
+
+옵션 설명(옵션, 옵션 속성)을 사용하면 검색할 항목을 구성할 수 있습니다. 일반적으로 페이지 바로 아래에서 항목을 검색하는 데 사용됩니다. 예를 들어 페이지 노드의 속성입니다.
 
 다음 예제(페이지를 만드는 데 사용된 템플릿에 따라 검색하기)에서는 관련 단계를 보여 줍니다.
 
-검색할 속성을 정의하는 노드를 만듭니다.
+1. 검색할 속성을 정의하는 노드를 만듭니다.
 
-1. 사용자가 사용할 수 있는 개별 옵션에 대한 정의를 포함하는 루트 노드가 필요합니다.
+   사용자가 사용할 수 있는 개별 옵션에 대한 정의를 포함하는 루트 노드가 필요합니다.
 
    개별 옵션에 대한 노드에는 속성이 필요합니다.
 
-   `jcr:title` - 검색 레일에 표시할 필드 레이블
-
+   * `jcr:title` - 검색 레일에 표시할 필드 레이블
    * `value` - 검색할 속성 값
-   * ![설명 정의](assets/csf-options-predicate-01.png)
 
-   [!NOTE]](assets/csf-options-predicate-01.png)
+   ![설명 정의](assets/csf-options-predicate-01.png)
 
+   >[!NOTE]
+   >
    >경로 ***에서 어떤 것도 변경하지*** 않아야 `/libs` 합니다.
    >
-   >이는 다음에 인스턴스를 업그레이드할 때 `/libs` 의 컨텐츠를 덮어쓰고, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있기 때문입니다.***`/libs`
+   >이는 다음에 인스턴스를 업그레이드할 때 `/libs` 의 컨텐츠를 덮어쓰고, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있기 때문입니다.
    >
-   >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.`/libs`
+   >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
    >
-   >에 있는 것처럼 아래 `/libs`에서 필요한 항목을 다시 만듭니다 `/apps`. 이 경우:
-   >
-   >1. `/libs/cq/gui/content/common/options/predicates``/apps`
+   >1. 에 있는 것처럼 아래 `/libs`에서 필요한 항목을 다시 만듭니다 `/apps`. 이 경우:
+   >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Make any changes within `/apps.`
-   >1. 양식 **검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예: **사이트 관리자 검색 레일**. 그런 다음 **편집을 선택합니다**.
 
 
-1. 구성에 따라 구성에 **옵션** 또는 **옵션 속성** 을 추가합니다.****
+1. 양식 **검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예: **사이트 관리자 검색 레일**. 그런 다음 **편집을 선택합니다**.
 
-1. 특히 필드를 업데이트합니다.********
-1. **속성 이름**
+1. 구성에 따라 구성에 **옵션** 또는 **옵션 속성** 을 추가합니다.
+1. 특히 필드를 업데이트합니다.
 
-   * **대상 노드에서 검색할 노드 속성에 대해 지정합니다. 예:**
+   * **속성 이름**
+
+      대상 노드에서 검색할 노드 속성에 대해 지정합니다. 예:
 
       `jcr:content/cq:template`
 
-      **옵션 노드 경로**
+   * **옵션 노드 경로**
 
-   * **옵션을 저장할 경로를 선택합니다. 예:**
+      옵션을 저장할 경로를 선택합니다. 예:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
+   ![옵션 설명](assets/csf-options-predicate-02.png)
 
-      ![옵션 설명](assets/csf-options-predicate-02.png)
-   Select **Done** to save your configuration.
-
+1. Select **Done** to save your configuration.
 1. 적절한 콘솔(이 예: **사이트**)으로 이동하고 **검색 - 필터** 레일을엽니다. 새롭게 정의된 검색 양식과 다양한 옵션이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 확인합니다.
-1. ![사용 중인 옵션](assets/csf-options-usage.png)****
 
-   사용자 권한 {#user-permissions}](assets/csf-options-usage.png)
-
-
-## 다음 표에는 검색 양식에서 편집, 삭제 및 미리 보기 작업을 수행하는 데 필요한 권한이 나와 있습니다.{#user-permissions}
+   ![사용 중인 옵션](assets/csf-options-usage.png)
 
 
+## 사용자 권한 {#user-permissions}
+
+다음 표에는 검색 양식에서 편집, 삭제 및 미리 보기 작업을 수행하는 데 필요한 권한이 나와 있습니다.
 
 <table>
  <thead>
   <tr>
-   </td>
-   </td>
+   <td><strong>작업</strong></td>
+   <td><strong>권한</strong></td>
   </tr>
  </thead>
  <tbody>
   <tr>
-   </td>
-   </td>
+   <td>편집 </td>
+   <td>읽기, <code>/apps </code>노드에 대한 쓰기 권한</td>
   </tr>
   <tr>
-   </td>
-   </td>
+   <td>삭제</td>
+   <td>노드에서 읽기, 쓰기, 삭제 권한 <code>/apps</code></td>
   </tr>
   <tr>
-   </td>
-   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> Read, Write permissions on the <code>/apps</code> node.</td>
+   <td>미리 보기</td>
+   <td>노드에서 읽기, 쓰기, 삭제 권한을 <code>/var/dam/content</code> 참조하십시오.<br /> 노드에 대한 읽기, 쓰기 권한 <code>/apps</code> .</td>
   </tr>
  </tbody>
 </table>
