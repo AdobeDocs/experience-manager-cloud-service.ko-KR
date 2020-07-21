@@ -2,9 +2,9 @@
 title: Adobe Experience Manager에 디지털 자산 추가
 description: Adobe Experience Manager에 Cloud Service으로 디지털 자산 추가
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1356'
 ht-degree: 2%
 
 ---
@@ -37,6 +37,7 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
 
    * 도구 모음에서 **[!UICONTROL 만들기]** 아이콘을 누릅니다. 그런 다음 메뉴에서 **[!UICONTROL 파일을 누릅니다]**. 필요한 경우 표시된 대화 상자에서 파일의 이름을 변경할 수 있습니다.
    * HTML5를 지원하는 브라우저에서 자산을 자산 사용자 인터페이스에서 바로 드래그합니다. 파일 이름 바꾸기 대화 상자가 표시되지 않습니다.
+
    ![create_menu](assets/create_menu.png)
 
    여러 파일을 선택하려면 Ctrl 또는 Command 키를 누르고 파일 선택기 대화 상자에서 자산을 선택합니다. iPad를 사용하는 경우 한 번에 하나의 파일만 선택할 수 있습니다.
@@ -80,7 +81,7 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
 
 >[!NOTE]
 >
->중첩된 폴더 계층을 AEM에 업로드하려면 자산의 [벌크 업로드를 참조하십시오](#bulk-upload).
+>중첩된 폴더 계층을 AEM에 업로드하려면 자산 [일괄 업로드를 참조하십시오](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
