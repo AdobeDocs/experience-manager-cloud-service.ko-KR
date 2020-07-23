@@ -2,7 +2,7 @@
 title: 페이지에 워크플로우 적용
 description: 작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다. 또한 둘 이상의 워크플로우를 적용할 수도 있습니다.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 81%
@@ -23,8 +23,8 @@ ht-degree: 81%
 
 워크플로우는 다음 위치에서 시작될 수 있습니다.
 
-* [**사이트** 콘솔](#starting-a-workflow-from-the-sites-console).
-* [페이지 편집 시 **페이지 정보&#x200B;**](#starting-a-workflow-from-the-page-editor)
+* [사이트 콘솔](#starting-a-workflow-from-the-sites-console).
+* [페이지 편집 시 페이지 정보](#starting-a-workflow-from-the-page-editor)
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ ht-degree: 81%
 
 다음 중 하나에서 워크플로우를 시작할 수 있습니다.
 
-* [[사이트] 도구 모음의 **만들기** 선택 사항](#starting-a-workflow-from-the-sites-toolbar)
-* [사이트 콘솔의 **타임라인** 레일](#starting-a-workflow-from-the-timeline)
+* [[사이트] 도구 모음의 만들기 선택 사항](#starting-a-workflow-from-the-sites-toolbar)
+* [사이트 콘솔의 타임라인 레일](#starting-a-workflow-from-the-timeline)
 
 두 경우 모두 다음을 수행해야 합니다.
 
@@ -87,8 +87,8 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 다음 중 하나에서 **워크플로우 만들기** 마법사를 여십시오.
 
-* [[사이트] 도구 모음의 **만들기** 선택 사항](#starting-a-workflow-from-the-sites-toolbar)
-* [사이트 콘솔의 **타임라인** 레일](#starting-a-workflow-from-the-timeline)
+* [[사이트] 도구 모음의 만들기 선택 사항](#starting-a-workflow-from-the-sites-toolbar)
+* [사이트 콘솔의 타임라인 레일](#starting-a-workflow-from-the-timeline)
 
 세부 사항을 지정할 수 있습니다.
 
