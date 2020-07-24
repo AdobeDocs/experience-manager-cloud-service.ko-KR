@@ -232,6 +232,7 @@ ht-degree: 100%
    * 같은 페이지나 다른 페이지에 붙여넣을 수 있습니다.
    * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣게 됩니다.
    * 클립보드에 컨텐츠가 있는 경우에만 붙여넣기 작업이 표시됩니다.
+
    ![붙여넣기 단추](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -271,7 +272,7 @@ ht-degree: 100%
 
 ### 구성 요소 편집 대화 상자 {#component-edit-dialog}
 
-[구성 요소 도구 모음의 [편집]&#x200B;(연필) 아이콘](#component-toolbar)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
+[구성 요소 도구 모음의 편집(연필) 아이콘](#component-toolbar)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
 
 정확한 편집 옵션은 구성 요소에 따라 다릅니다. 일부 구성 요소의 경우 [모든 작업이 전체 화면 모드에서만 사용](#edit-content-full-screen-mode)할 수 있습니다. 예:
 
@@ -347,6 +348,7 @@ ht-degree: 100%
    * 구성 요소 표시의 크기 조정 핸들이 표시됩니다.
    * 에뮬레이터 도구 모음이 화면 맨 위에 표시됩니다.
    * 표준 편집 작업 대신 레이아웃 작업이 구성 요소 도구 모음에 표시됩니다.
+
    ![레이아웃 모드의 구성 요소](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)에서처럼 구성 요소의 레이아웃을 수정할 수 있습니다.
