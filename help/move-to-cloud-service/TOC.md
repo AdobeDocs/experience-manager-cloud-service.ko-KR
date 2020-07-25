@@ -1,9 +1,10 @@
 ---
 sub-product: 클라우드 서비스로서 AEM으로 이동
 user-guide-title: 클라우드 서비스로서 AEM으로 이동
-translation-type: ht
-source-git-commit: fe2c098b55bf501dc0ae68d01139b828d92d90f3
-workflow-type: ht
+user-guide-description: Understand the transition journey to Cloud Service.
+translation-type: tm+mt
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
+workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 100%
 
