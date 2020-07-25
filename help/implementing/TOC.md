@@ -1,11 +1,12 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
+user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 100%
 
 ---
 
@@ -30,8 +31,8 @@ ht-degree: 0%
    + [클라우드 서비스 SDK로서의 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
    + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
-   + [슬링 치트](developing/introduction/sling-cheatsheet.md)
-   + [슬링 어댑터 사용](developing/introduction/sling-adapters.md)
+   + [Sling 커닝 페이퍼](developing/introduction/sling-cheatsheet.md)
+   + [Sling 어댑터 사용](developing/introduction/sling-adapters.md)
    + [클라우드 서비스로서의 AEM에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
    + [클라우드 서비스로서의 AEM에서 오버레이](developing/introduction/overlays.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
