@@ -33,7 +33,7 @@ ht-degree: 100%
 소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일(컨텐츠 전송 도구 v1.0.0)로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
->[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html) 포털에서 컨텐츠 전송 도구를 다운로드합니다.
+>[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털에서 컨텐츠 전송 도구를 다운로드합니다.
 
 ## 컨텐츠 전송 도구 실행 {#running-tool}
 
