@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 AEM 개발 지침
 description: 완료하기
 translation-type: tm+mt
-source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
+source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 2%
+source-wordcount: '1940'
+ht-degree: 1%
 
 ---
 
@@ -170,3 +170,45 @@ Cloud Service 개발자 환경으로서 AEM을 디버깅하기 위한 도구 세
 ### 성능 모니터링 {#performance-monitoring}
 
 Adobe는 애플리케이션 성능을 모니터링하고 변치 여부를 처리하는 조치를 취합니다. 현재는 애플리케이션 지표를 검색할 수 없습니다.
+
+## 전용 송신 IP 주소
+
+요청 시, Cloud Service으로 AEM은 Java 코드로 프로그래밍된 HTTP(포트 80) 및 HTTPS(포트 443) 아웃바운드 트래픽에 대한 정적 전용 IP 주소를 제공합니다.
+
+### 이점
+
+이 전용 IP 주소는 IP 주소의 Cloud Service을 제공하는로 SaaS 공급업체(예: CRM 공급업체)와 통합하거나 AEM 외부에 있는 다른 통합을 통합할 때 보안을 강화할 수 허용 목록에 추가하다 있습니다. 전용 IP 주소를에 허용 목록에 추가하다 추가하면 고객의 AEM Cloud Service의 트래픽만 외부 서비스로 이동할 수 있습니다. 이는 허용된 다른 IP의 트래픽 외에 추가됩니다.
+
+전용 IP 주소 기능이 활성화되지 않은 경우 Cloud Service으로 AEM에서 나오는 트래픽이 다른 고객과 공유된 IP 세트를 통과합니다.
+
+### 구성
+
+전용 IP 주소를 활성화하려면 고객 지원 센터에 요청을 제출하여 IP 주소 정보를 제공합니다. 초기 요청 후에 만들어지는 모든 새 환경을 포함하여 각 환경에 대해 요청해야 합니다.
+
+### 기능 사용
+
+이 기능은 프록시 구성에 표준 Java 시스템 속성을 사용하는 경우 아웃바운드 트래픽을 발생하는 Java 코드 또는 라이브러리와 호환됩니다. 실제로 대부분의 공용 라이브러리를 포함해야 합니다.
+
+다음은 코드 샘플입니다.
+
+```
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+동일한 전용 IP가 Adobe 조직의 모든 프로그램과 각 프로그램의 모든 환경에 적용됩니다. 작성자 및 게시 서비스 모두에 적용됩니다.
+
+HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 HTTP/1.1뿐만 아니라 암호화 시 HTTP/2도 포함됩니다.
+
+### 디버깅 고려 사항
+
+예상되는 전용 IP 주소에서 트래픽이 실제로 전송되는지 확인하려면, 가능한 경우 대상 서비스에서 로그를 확인하십시오. 그렇지 않으면 호출 IP 주소를 반환하는 [https://ifconfig.me/ip과](https://ifconfig.me/ip)같은 디버깅 서비스로 전화하는 것이 유용할 수 있습니다.
