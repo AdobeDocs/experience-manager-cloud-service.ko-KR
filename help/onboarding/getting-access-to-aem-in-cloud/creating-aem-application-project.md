@@ -2,9 +2,9 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
+source-git-commit: 38be3237eb3245516d3ccf51d0718505ee5102f0
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 
 * 프로젝트는 Apache Maven을 사용하여 빌드해야 합니다.
 * Git 저장소의 루트에 *pom.xml* 파일이 있어야 합니다. 이 *pom.xml* 파일은 하위 모듈을 여러 개 참조할 수 있으며, 이 경우 다른 하위 모듈 등이 있을 수 있습니다. 필요한 경우.
 
-* pom.xml ** 파일에서 추가 Maven 객체 저장소에 대한 참조를 추가할 수 있습니다. 그러나 암호로 보호되거나 네트워크로 보호된 객체 저장소에 대한 액세스는 지원되지 않습니다.
+* pom.xml ** 파일에서 추가 Maven 객체 저장소에 대한 참조를 추가할 수 있습니다. 암호로 [보호된 객체 리포지토리에](#password-protected-maven-repositories) 대한 액세스는 구성 시 지원됩니다. 그러나 네트워크 보호 객체 저장소에 대한 액세스는 지원되지 않습니다.
 * 배포 가능한 컨텐츠 패키지는 *target* 이라는 디렉토리에 포함되어 있는 컨텐츠 패키지 *zip*&#x200B;파일을 검색하여 찾을 수 있습니다. 모든 수의 하위 모듈에서는 콘텐츠 패키지를 생성할 수 있습니다.
 
 * 배포 가능한 Dispatcher 가공물은 *conf* 및 conf.d라는 이름의 디렉토리가 있는 zip *파일(* target *디렉토리에 포함됨)을 검색하여* **&#x200B;검색됩니다.
@@ -240,6 +240,74 @@ Cloud Manager 빌드 환경 내에서 마스터 프로필의 활성화는 위에
         </profile>
 ```
 
+## 암호로 보호된 Maven 리포지토리 지원 {#password-protected-maven-repositories}
+
+Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 사용자 이름(선택 사항)를 비밀 [파이프라인 변수로](#pipeline-variables) 지정한 다음 git 리포지토리에 있는 파일 `.cloudmanager/maven/settings.xml` 에서 해당 암호를 참조합니다. 이 파일은 [마비설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일로 병합됩니다. 이 파일을 적절히 사용하면 서버 ID가 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 `pom.xml` 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필]{#activating-maven-profiles-in-cloud-manager}내에 포함되지만 반드시 필요한 것은 아닙니다.
+
+예를 들어 저장소가 https://repository.myco.com/maven2에 있고 Cloud Manager가 사용해야 하는 사용자 이름 `cloudmanager` 은 is이고 암호는 is `secretword`라고 가정해 봅시다.
+
+먼저 파이프라인에서 암호를 암호로 설정합니다.
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+
+그런 다음 `.cloudmanager/maven/settings.xml` 파일에서 다음을 참조합니다.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>myco-repository</id>
+            <username>cloudmanager</username>
+            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+        </server>
+    </servers>
+</settings>
+```
+
+마지막으로 파일 내의 서버 ID를 `pom.xml` 참조합니다.
+
+```xml
+<profiles>
+    <profile>
+        <id>cmBuild</id>
+        <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+        </activation>
+        <build>
+            <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </build>
+    </profile>
+</profiles>
+```
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
