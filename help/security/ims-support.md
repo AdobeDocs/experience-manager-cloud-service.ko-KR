@@ -1,9 +1,9 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
 description: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1926'
 ht-degree: 100%
 
