@@ -2,7 +2,7 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
+source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -34,48 +34,62 @@ AEM 응용 프로그램 수준에서 로깅은 세 가지 로그로 처리됩니
 AEM은 Cloud Service으로 Java 로그 문에 액세스할 수 있습니다. AEM용 애플리케이션 개발자는 일반적인 Java 로깅 우수 사례를 따라야 하며, 사용자 지정 코드 실행에 대한 관련 문을 다음 로그 수준에서 기록합니다.
 
 <table>
-<tbody>
 <tr>
-<td> <b>AEM 환경</b></td>
-<td> <b>로그 수준</b></td>
-<td> <b>설명</b></td>
-<td> <b>로그 문 가용성</b></td>
+<td>
+<b>AEM 환경</b></td>
+<td>
+<b>로그 수준</b></td>
+<td>
+<b>설명</b></td>
+<td>
+<b>로그 문 가용성</b></td>
 </tr>
 <tr>
-<td> 개발</td>
-<td> 디버그</td>
-<td> 애플리케이션에서 발생하는 내용을 설명합니다.
+<td>
+개발</td>
+<td>
+디버그</td>
+<td>
+애플리케이션에서 발생하는 내용을 설명합니다.<br>
 
 DEBUG 로깅이 활성화되면 어떤 활동이 발생하는지 명확하게 파악하고 처리에 영향을 주는 모든 키 매개 변수를 제공하는 문이 기록됩니다.</td>
-<td> <ul>
+<td>
+<ul>
 <li> 로컬 개발</li>
 <li>개발</li>
 </ul></td>
 </tr>
 <tr>
-<td> 단계</td>
-<td> 경고</td>
-<td> 오류가 될 가능성이 있는 조건에 대해 설명합니다.
+<td>
+단계</td>
+<td>
+경고</td>
+<td>
+오류가 될 가능성이 있는 조건에 대해 설명합니다.<br>
 
 WARN 로깅이 활성화되면 하위 최적화에 접근하는 조건을 나타내는 명령문만 기록됩니다.</td>
-<td> <ul>
+<td>
+<ul>
 <li> 로컬 개발</li>
 <li>개발</li>
 <li>단계</li>
 </ul></td>
 </tr>
 <tr>
-<td> 프로덕션</td>
-<td> 오류</td>
-<td> 실패를 나타내며 이를 해결해야 하는 조건을 설명합니다.
+<td>
+프로덕션</td>
+<td>
+오류</td>
+<td>
+실패를 나타내며 이를 해결해야 하는 조건을 설명합니다.<br>
 
 ERROR 로깅이 활성화되면 오류를 나타내는 문만 기록됩니다. 오류 로그 문은 가능한 빨리 해결해야 하는 심각한 문제를 나타냅니다.</td>
-<td> <ul>
+<td>
+<ul>
 <li> 로컬 개발</li>
 <li>개발</li>
 <li>단계</li>
 <li>프로덕션</li>
 </ul></td>
 </tr>
-</tbody>
 </table>
