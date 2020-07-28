@@ -2,7 +2,7 @@
 title: 코드 배포 - Cloud Service
 description: 코드 배포 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
+source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 0%
@@ -34,6 +34,7 @@ ht-degree: 0%
    1. 스테이지 배포
    1. 스테이지 테스트
    1. 프로덕션 배포
+
    >[!NOTE]
    >
    >또한 로그를 보거나 결과를 검토하여 테스트 기준에 대한 다양한 배포 프로세스의 단계를 검토할 수 있습니다.
@@ -58,7 +59,8 @@ ht-degree: 0%
 
 
 
->[!IMPORTANT]:
+>[!IMPORTANT]
+>
 >AEM cloud services에 대해 Cloud Manager에 대해 다음 섹션을 업데이트해야 하며 진행 중입니다.
 
 ## 배포 프로세스 {#deployment-process}
@@ -93,6 +95,7 @@ Cloud Manager가 비프로덕션 토폴로지에 배포되는 경우, 가능한 
    1. 아티팩트가 httpd 디렉토리에 추출됩니다.  변경 불가능한 파일은 덮어쓰지 않습니다. 배포 시 git 저장소에서 변경할 수 없는 파일을 변경하면 변경 사항이 무시됩니다.  이러한 파일은 AMS 디스패처 프레임워크의 핵심이므로 변경할 수 없습니다.
    1. Apache가 구성 테스트를 수행합니다. 오류가 없으면 서비스가 다시 로드됩니다. 오류가 발생하면 구성이 백업에서 복원되고 서비스가 다시 로드되며 오류가 다시 Cloud Manager에 보고됩니다.
    1. 파이프라인 구성에 지정된 각 경로는 디스패처 캐시에서 무효화되거나 플러시됩니다.
+
    >[!NOTE]
    >
    >Cloud Manager에서는 디스패처 아티팩트에 전체 파일 세트가 들어 있어야 합니다.  모든 발송자 구성 파일이 git 리포지토리에 있어야 합니다. 파일 또는 폴더가 누락되면 배포에 실패합니다.
