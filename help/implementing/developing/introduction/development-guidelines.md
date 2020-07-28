@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의 AEM 개발 지침
 description: 완료하기
 translation-type: tm+mt
-source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
+source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1949'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Cloud Service으로 AEM에서 실행되는 코드는 클러스터에서 항상 실행되고 있다는 사실을 알고 있어야 합니다. 즉, 실행되는 인스턴스가 항상 두 개 이상 있습니다. 특히 특정 시점에 인스턴스가 중지될 수 있으므로 코드는 복원력이 있어야 합니다.
 
-Cloud Service으로 AEM을 업데이트하는 동안, 이전 코드와 새 코드가 동시에 실행되는 인스턴스가 있게 됩니다. 따라서 이전 코드는 새 코드로 만들어진 컨텐츠와 구분해서는 안 되며 새 코드는 이전 컨텐츠를 처리할 수 있어야 합니다.
+AEM을 Cloud Service으로 업데이트하는 동안 이전 코드와 새 코드가 동시에 실행되는 인스턴스가 있게 됩니다. 따라서 이전 코드는 새 코드로 만들어진 컨텐츠와 구분해서는 안 되며 새 코드는 이전 컨텐츠를 처리할 수 있어야 합니다.
 <!--
 
 >[!NOTE]
@@ -40,43 +40,43 @@ Cloud Service으로 AEM을 업데이트하는 동안, 이전 코드와 새 코�
 
 ## 백그라운드 작업 및 긴 실행 작업 {#background-tasks-and-long-running-jobs}
 
-백그라운드 작업으로 실행되는 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하며 가져오기 작업이 가능해야 합니다. 즉, 코드가 다시 실행될 경우 처음부터 다시 시작하지 않고 코드가 종료되는 부분에서 더 가까워야 합니다. 이러한 유형의 코드에 대한 새로운 요구 사항은 아니지만, AEM에서 Cloud Service로서 인스턴스 다운이 발생할 가능성이 높습니다.
+백그라운드 작업으로 실행되는 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하며 가져오기 작업이 가능해야 합니다. 즉, 코드가 다시 실행될 경우 처음부터 다시 시작하지 않고 코드가 종료되는 부분에서 더 가까워야 합니다. 이러한 종류의 코드에 대한 새로운 요구 사항은 아니지만, AEM에서는 Cloud Service의 경우 인스턴스가 삭제될 가능성이 더 높습니다.
 
 이를 최소화하려면 장기간에 걸친 작업은 가급적 뒤로 하고 최소한 재개해야 한다. 이러한 작업을 실행하는 경우, 적어도 한 번 보증이 있어 중단되는 경우 가능한 한 빨리 다시 실행됩니다. 그러나 처음부터 다시 시작해서는 안 될 것이다. 이러한 작업을 예약하려면 Sling 작업 [스케줄러를 다시 한 번](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 실행으로 사용하는 것이 가장 좋습니다.
 
 실행을 보장할 수 없으므로 Sling Commons Scheduler를 사용하여 예약하면 안 됩니다. 일정이 더 잡힐 것 같다.
 
-마찬가지로, 관측 이벤트(JCR 이벤트 또는 Sling 리소스 이벤트 포함)에 대한 작업과 같이 비동기적으로 발생하는 모든 것은 실행될 수 없으므로 주의해야 합니다. 현재 AEM 배포에 대해서는 이미 적용됩니다.
+마찬가지로, 관측 이벤트(JCR 이벤트 또는 Sling 리소스 이벤트 포함)에 대한 작업과 같이 비동기적으로 발생하는 모든 것은 실행될 수 없으므로 주의해야 합니다. 현재 AEM 배포에서는 이미 마찬가지입니다.
 
 ## 나가는 HTTP 연결 {#outgoing-http-connections}
 
-나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 이러한 시간 초과를 적용하지 않는 코드의 경우 Cloud Service으로 AEM에서 실행되는 AEM 인스턴스가 전역 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초, 다음 인기 있는 Java 라이브러리에서 사용하는 연결에 대한 읽기 호출에 60초입니다.
+나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 이러한 시간 초과를 적용하지 않는 코드의 경우 Cloud Service으로 AEM에서 실행되는 AEM 인스턴스는 전역 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초, 다음 인기 있는 Java 라이브러리에서 사용하는 연결에 대한 읽기 호출에 60초입니다.
 
-Adobe에서는 HTTP 연결을 만들기 위해 제공된 [Apache HttpComponents Client 4.x 라이브러리를](https://hc.apache.org/httpcomponents-client-ga/) 사용하는 것이 좋습니다.
+Adobe은 HTTP 연결을 만들기 위해 제공된 [Apache HttpComponents Client 4.x 라이브러리를](https://hc.apache.org/httpcomponents-client-ga/) 사용하는 것이 좋습니다.
 
 효과가 있지만 직접 종속성을 제공해야 할 수 있는 대체 방법은 다음과 같습니다.
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) 및/ [또는 java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (AEM에서 제공)
+* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) 및/ [또는 java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (AEM 제공)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (이전 버전이고 버전 4.x로 대체되므로 권장되지 않음)
 * [OK Http](https://square.github.io/okhttp/) (AEM에서 제공되지 않음)
 
 ## 클래식 UI 사용자 정의 없음 {#no-classic-ui-customizations}
 
-Cloud Service으로 AEM은 타사 고객 코드에 대한 터치 UI만 지원합니다. 클래식 UI는 사용자 정의에 사용할 수 없습니다.
+AEM은 Cloud Service로서 타사 고객 코드에 대해서만 터치 UI를 지원합니다. 클래식 UI는 사용자 정의에 사용할 수 없습니다.
 
 ## 네이티브 바이너리 방지 {#avoid-native-binaries}
 
 런타임에 바이너리를 다운로드하거나 수정할 수 없습니다. 예를 들어, 파일 `jar` 이나 파일의 압축을 풀 수 `tar` 없습니다.
 
-## AEM을 Cloud Service으로 통한 스트리밍 바이너리 없음 {#no-streaming-binaries}
+## AEM을 통해 Cloud Service으로 바이너리를 스트리밍하지 않음 {#no-streaming-binaries}
 
 바이너리는 핵심 AEM 서비스 외부의 바이너리를 제공하는 CDN을 통해 액세스해야 합니다.
 
-예를 들어, AEM 서비스 `asset.getOriginal().getStream()`의 임시 디스크에 바이너리를 다운로드하는 트리거인 사용을 자제하십시오.
+예를 들어, AEM 서비스 `asset.getOriginal().getStream()`의 임시 디스크에 바이너리를 다운로드하는 트리거인 바이너리를 사용하지 마십시오.
 
 ## 역방향 복제 에이전트 없음 {#no-reverse-replication-agents}
 
-게시에서 작성자로 역방향 복제는 AEM에서 Cloud Service으로 지원되지 않습니다. 이러한 전략이 필요한 경우 게시 인스턴스의 팜 및 작성자 클러스터 간에 공유되는 외부 지속성 저장소를 사용할 수 있습니다.
+게시에서 작성자로 역 복제는 AEM에서 Cloud Service으로 지원되지 않습니다. 이러한 전략이 필요한 경우 게시 인스턴스의 팜 및 작성자 클러스터 간에 공유되는 외부 지속성 저장소를 사용할 수 있습니다.
 
 ## 포팅해야 할 수도 있습니다. {#forward-replication-agents}
 
@@ -96,7 +96,7 @@ pub-sub 메커니즘을 통해 작성자에서 게시로 컨텐츠를 복제할 
 
 >[!NOTE]
 >
->아래에 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 변경 사항을 만든 다음 Cloud Service 인스턴스로 AEM에 푸시해야 합니다. 이 방법에 대한 자세한 내용은 Cloud Service [로 AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
+>아래에 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 변경 사항을 만든 다음 AEM에 Cloud Service 인스턴스로 푸시해야 합니다. 이 방법에 대한 자세한 내용은 AEM에 Cloud Service [로 배포를 참조하십시오](/help/implementing/deploying/overview.md).
 
 **디버그 로그 수준 활성화**
 
@@ -126,7 +126,7 @@ property to debug. 로그를 많은 로그를 생성하므로 로그를 필요 �
 
 ### 로컬 개발 {#local-development}
 
-로컬 개발의 경우 개발자는 CRXDE Lite(`/crx/de`) 및 AEM 웹 콘솔(`/system/console`)에 대한 모든 액세스 권한을 가집니다.
+로컬 개발의 경우 개발자는 CRXDE Lite(`/crx/de`)와 AEM 웹 콘솔(`/system/console`)에 대한 모든 액세스 권한을 가집니다.
 
 로컬 개발 시(클라우드 지원 빠른 시작 사용) `/apps` 에 직접 작성할 `/libs` 수 있으며 최상위 폴더를 변경할 수 없는 클라우드 환경과는 다릅니다.
 
@@ -134,7 +134,7 @@ property to debug. 로그를 많은 로그를 생성하므로 로그를 필요 �
 
 고객은 개발 환경에서 CRXDE lite에 액세스할 수 있지만 스테이지나 프로덕션은 액세스할 수 없습니다. 실행 시 변경 불가능한 저장소(`/libs`, `/apps`)를 쓸 수 없으므로 작성하려고 하면 오류가 발생합니다.
 
-Cloud Service 개발자 환경으로서 AEM을 디버깅하기 위한 도구 세트는 개발, 준비 및 프로덕션 환경을 위해 개발자 콘솔에서 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
+개발, 준비 및 프로덕션 환경을 위해 개발자 콘솔에서 AEM을 Cloud Service 개발자 환경으로 디버깅하는 도구 세트를 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -160,7 +160,7 @@ Cloud Service 개발자 환경으로서 AEM을 디버깅하기 위한 도구 세
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-일반 프로그램의 경우, 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되고, 샌드박스 프로그램의 경우, 개발자 콘솔은 제품 프로필을 가진 모든 사용자가 Cloud Service으로 AEM에 액세스할 수 있도록 해줍니다. 모든 프로그램의 경우, 상태 덤프에 대해 &quot;클라우드 관리자 - 개발자 역할&quot;이 필요하며, 두 서비스의 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두에서 AEM 사용자 또는 AEM 관리자 제품 프로필에 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+일반 프로그램의 경우, 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되고, 샌드박스 프로그램의 경우, 개발자 콘솔은 AEM에 대한 Cloud Service 액세스를 제공하는 제품 프로필을 가진 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에 대해 &quot;Cloud Manager - Developer Role&quot;이 필요하며 두 서비스의 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두에서 AEM 사용자 또는 AEM 관리자 제품 프로필에 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 
 ### AEM 스테이징 및 프로덕션 서비스 {#aem-staging-and-production-service}
@@ -169,21 +169,21 @@ Cloud Service 개발자 환경으로서 AEM을 디버깅하기 위한 도구 세
 
 ### 성능 모니터링 {#performance-monitoring}
 
-Adobe는 애플리케이션 성능을 모니터링하고 변치 여부를 처리하는 조치를 취합니다. 현재는 애플리케이션 지표를 검색할 수 없습니다.
+Adobe은 응용 프로그램 성능을 모니터링하고 변치 여부를 처리하는 조치를 수행합니다. 현재는 애플리케이션 지표를 검색할 수 없습니다.
 
 ## 전용 송신 IP 주소
 
-요청 시, Cloud Service으로 AEM은 Java 코드로 프로그래밍된 HTTP(포트 80) 및 HTTPS(포트 443) 아웃바운드 트래픽에 대한 정적 전용 IP 주소를 제공합니다.
+요청이 있을 경우, AEM은 Java 코드로 프로그래밍된 HTTP(포트 80) 및 HTTPS(포트 443) 아웃바운드 트래픽에 대한 정적 전용 IP 주소를 제공합니다.
 
 ### 이점
 
-이 전용 IP 주소는 IP 주소의 Cloud Service을 제공하는로 SaaS 공급업체(예: CRM 공급업체)와 통합하거나 AEM 외부에 있는 다른 통합을 통합할 때 보안을 강화할 수 허용 목록에 추가하다 있습니다. 전용 IP 주소를에 허용 목록에 추가하다 추가하면 고객의 AEM Cloud Service의 트래픽만 외부 서비스로 이동할 수 있습니다. 이는 허용된 다른 IP의 트래픽 외에 추가됩니다.
+이 전용 IP 주소는 SaaS 공급업체(예: CRM 공급업체)와 통합하거나 IP 주소 AEM을 제공하는 Cloud Service으로 외부에서 다른 통합을 할 때 보안을 강화할 수 허용 목록에 추가하다 있습니다. 전용 IP 주소를에 허용 목록에 추가하다 추가하면 고객의 AEM Cloud Service의 트래픽만 외부 서비스로 이동할 수 있습니다. 이는 허용된 다른 IP의 트래픽 외에 추가됩니다.
 
-전용 IP 주소 기능이 활성화되지 않은 경우 Cloud Service으로 AEM에서 나오는 트래픽이 다른 고객과 공유된 IP 세트를 통과합니다.
+전용 IP 주소 기능을 사용하지 않으면 Cloud Service이 다른 고객과 공유된 IP 세트를 통해 AEM에서 나오는 트래픽입니다.
 
 ### 구성
 
-전용 IP 주소를 활성화하려면 고객 지원 센터에 요청을 제출하여 IP 주소 정보를 제공합니다. 초기 요청 후에 만들어지는 모든 새 환경을 포함하여 각 환경에 대해 요청해야 합니다.
+전용 IP 주소를 활성화하려면 고객 지원 센터에 요청을 제출하여 IP 주소 정보를 제공합니다. 요청은 초기 요청 이후 새 환경에 기능이 필요한 경우 각 환경을 지정해야 하고 추가 요청을 해야 합니다. 샌드박스 프로그램 환경은 지원되지 않습니다.
 
 ### 기능 사용
 
