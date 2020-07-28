@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 AEM 개발 지침
 description: 완료하기
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 1%
@@ -171,21 +171,21 @@ property to debug. 로그를 많은 로그를 생성하므로 로그를 필요 �
 
 Adobe은 응용 프로그램 성능을 모니터링하고 변치 여부를 처리하는 조치를 수행합니다. 현재는 애플리케이션 지표를 검색할 수 없습니다.
 
-## 전용 송신 IP 주소
+## 전용 송신 IP 주소 {#dedicated-egress-ip-address}
 
 요청이 있을 경우, AEM은 Java 코드로 프로그래밍된 HTTP(포트 80) 및 HTTPS(포트 443) 아웃바운드 트래픽에 대한 정적 전용 IP 주소를 제공합니다.
 
-### 이점
+### 이점 {#benefits}
 
 이 전용 IP 주소는 SaaS 공급업체(예: CRM 공급업체)와 통합하거나 IP 주소 AEM을 제공하는 Cloud Service으로 외부에서 다른 통합을 할 때 보안을 강화할 수 허용 목록에 추가하다 있습니다. 전용 IP 주소를에 허용 목록에 추가하다 추가하면 고객의 AEM Cloud Service의 트래픽만 외부 서비스로 이동할 수 있습니다. 이는 허용된 다른 IP의 트래픽 외에 추가됩니다.
 
 전용 IP 주소 기능을 사용하지 않으면 Cloud Service이 다른 고객과 공유된 IP 세트를 통해 AEM에서 나오는 트래픽입니다.
 
-### 구성
+### 구성 {#configuration}
 
 전용 IP 주소를 활성화하려면 고객 지원 센터에 요청을 제출하여 IP 주소 정보를 제공합니다. 요청은 초기 요청 이후 새 환경에 기능이 필요한 경우 각 환경을 지정해야 하고 추가 요청을 해야 합니다. 샌드박스 프로그램 환경은 지원되지 않습니다.
 
-### 기능 사용
+### 기능 사용 {#feature-usage}
 
 이 기능은 프록시 구성에 표준 Java 시스템 속성을 사용하는 경우 아웃바운드 트래픽을 발생하는 Java 코드 또는 라이브러리와 호환됩니다. 실제로 대부분의 공용 라이브러리를 포함해야 합니다.
 
@@ -209,6 +209,6 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 HTTP/1.1뿐만 아니라 암호화 시 HTTP/2도 포함됩니다.
 
-### 디버깅 고려 사항
+### 디버깅 고려 사항 {#debugging-considerations}
 
 예상되는 전용 IP 주소에서 트래픽이 실제로 전송되는지 확인하려면, 가능한 경우 대상 서비스에서 로그를 확인하십시오. 그렇지 않으면 호출 IP 주소를 반환하는 [https://ifconfig.me/ip과](https://ifconfig.me/ip)같은 디버깅 서비스로 전화하는 것이 유용할 수 있습니다.
