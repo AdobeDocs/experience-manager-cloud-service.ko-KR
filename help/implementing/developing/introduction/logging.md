@@ -2,7 +2,7 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -66,7 +66,6 @@ DEBUG 로깅이 활성화되면 어떤 활동이 발생하는지 명확하게 �
 경고</td>
 <td>
 오류가 될 가능성이 있는 조건에 대해 설명합니다.<br>
-
 WARN 로깅이 활성화되면 하위 최적화에 접근하는 조건을 나타내는 명령문만 기록됩니다.</td>
 <td>
 <ul>
@@ -82,7 +81,6 @@ WARN 로깅이 활성화되면 하위 최적화에 접근하는 조건을 나타
 오류</td>
 <td>
 실패를 나타내며 이를 해결해야 하는 조건을 설명합니다.<br>
-
 ERROR 로깅이 활성화되면 오류를 나타내는 문만 기록됩니다. 오류 로그 문은 가능한 빨리 해결해야 하는 심각한 문제를 나타냅니다.</td>
 <td>
 <ul>
