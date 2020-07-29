@@ -2,9 +2,9 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 38be3237eb3245516d3ccf51d0718505ee5102f0
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # AEM 애플리케이션 프로젝트 만들기 {#aem-application-project}
 
-## 마법사를 사용하여 AEM 애플리케이션 프로젝트 만들기 {#using-wizard-to-create-an-aem-application-project}
+## 마법사를 사용하여 AEM 응용 프로그램 프로젝트 만들기 {#using-wizard-to-create-an-aem-application-project}
 
-신규 고객 확보를 지원하기 위해 Cloud Manager는 이제 최소한의 AEM 프로젝트를 시작점으로 만들 수 있습니다. 이 프로세스는 AEM 프로젝트 [**원형을 기반으로 합니다&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+새로운 고객을 위한 Cloud Manager의 시작점으로 최소한의 AEM 프로젝트를 제작할 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형을 기반으로 합니다&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 절차를 따르십시오.
@@ -40,7 +40,7 @@ Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 �
 
 ### 프로젝트 설정 세부 사항 수정 {#modifying-project-setup-details}
 
-Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 AEM 프로젝트에 몇 가지 기본 규칙을 준수해야 합니다.
+Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 AEM 프로젝트는 몇 가지 기본 규칙을 준수해야 합니다.
 
 * 프로젝트는 Apache Maven을 사용하여 빌드해야 합니다.
 * Git 저장소의 루트에 *pom.xml* 파일이 있어야 합니다. 이 *pom.xml* 파일은 하위 모듈을 여러 개 참조할 수 있으며, 이 경우 다른 하위 모듈 등이 있을 수 있습니다. 필요한 경우.
@@ -76,37 +76,6 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
 >[!NOTE]
 >Cloud Manager가 특정 버전의 버전을 정의하지는 않지만, 사용된 버전 `jacoco-maven-plugin`은 적어도 같아야 합니다 `0.7.5.201505241946`.
 
-### Java 11 사용 {#using-java-11}
-
-Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로젝트 작성을 지원합니다. 기본적으로 프로젝트는 Java 8을 사용하여 빌드됩니다. 프로젝트에서 Java 11을 사용하려는 고객은 [Apache Maven Toolchain 플러그인을 사용할 수 있습니다](https://maven.apache.org/plugins/maven-toolchains-plugin/).
-
-이렇게 하려면 pom.xml 파일에서 다음과 같은 `<plugin>` 항목을 추가합니다.
-
-```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-toolchains-plugin</artifactId>
-            <version>1.1</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>toolchain</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <toolchains>
-                    <jdk>
-                        <version>11</version>
-                        <vendor>oracle</vendor>
-                    </jdk>
-                </toolchains>
-            </configuration>
-        </plugin>
-```
-
->[!NOTE]
->지원되는 `vendor` 값 `oracle` 과 `sun` 지원되는 `version` 값은 `1.8`, `1.11`및 `11`입니다.
 
 ## 환경 변수 {#environment-variables}
 
