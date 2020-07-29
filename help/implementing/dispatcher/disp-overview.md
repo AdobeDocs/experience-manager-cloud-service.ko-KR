@@ -2,7 +2,7 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 8%
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 ## Apache and Dispatcher configuration and testing {#apache-and-dispatcher-configuration-and-testing}
 
-이 섹션에서는 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 Cloud 환경에 배포하기 전에 로컬로 유효성을 확인하고 실행하는 방법에 대해 설명합니다. 또한 클라우드 환경의 디버깅에 대해 설명합니다. Dispatcher에 대한 자세한 내용은 [AEM Dispatcher 설명서를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html).
+이 섹션에서는 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 Cloud 환경에 배포하기 전에 이를 로컬로 검증하고 실행하는 방법에 대해 설명합니다. 또한 클라우드 환경의 디버깅에 대해 설명합니다. Dispatcher에 대한 자세한 내용은 [AEM Dispatcher 설명서를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html).
 
 >[!NOTE]
 >
@@ -22,11 +22,11 @@ ht-degree: 8%
 
 >[!WARNING]
 >
->Windows 사용자: Cloud Service 로컬 Dispatcher 도구(v2.0.20)로서 현재 AEM 버전은 Windows와 호환되지 않습니다. Windows 호환성에 대한 업데이트를 받으려면 [Adobe](https://daycare.day.com/home.html) 지원 센터에 문의하십시오.
+>Windows 사용자: Cloud Service 로컬 Dispatcher 도구(v2.0.20)로서 AEM의 현재 버전은 Windows와 호환되지 않습니다. Windows 호환성에 대한 업데이트를 받으려면 [Adobe](https://daycare.day.com/home.html) 지원 센터에 문의하십시오.
 
 ## Dispatcher 도구 {#dispatcher-sdk}
 
-Dispatcher 도구는 Cloud Service SDK로서 전체 AEM에 포함되며 다음을 제공합니다.
+Dispatcher 도구는 Cloud Service SDK로 전체 AEM에 포함되어 있으며 다음과 같은 기능을 제공합니다.
 
 * 발송자를 위한 고급 프로젝트에 포함할 구성 파일이 포함된 바닐라 파일 구조
 * 고객이 발송자 구성을 로컬로 확인할 수 있는 도구;
@@ -34,7 +34,7 @@ Dispatcher 도구는 Cloud Service SDK로서 전체 AEM에 포함되며 다음�
 
 ## 도구 다운로드 및 추출 {#extracting-the-sdk}
 
-Dispatcher 도구는 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 다운로드할 수 있습니다. SDK 목록에 대한 액세스는 Cloud Service 환경으로 AEM Managed Services 또는 AEM을 사용하는 것으로 제한됩니다. 새 발송자 도구 버전에서 사용 가능한 모든 새 구성을 사용하여 클라우드 이상에서 해당 AEM 버전을 실행하는 클라우드 환경에 배포할 수 있습니다.
+Dispatcher 도구는 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 다운로드할 수 있습니다. SDK 목록에 대한 액세스는 Cloud Service 환경으로 AEM Managed Services 또는 AEM이 있는 것으로 제한됩니다. 새 발송자 도구 버전에서 사용 가능한 모든 새 구성을 사용하여 클라우드 이상에서 해당 버전의 AEM을 실행하는 클라우드 환경에 배포할 수 있습니다.
 
 **macOS 및 Linux**&#x200B;경우 셸 스크립트를 컴퓨터의 폴더에 다운로드하고 실행 파일로 만들어 실행합니다. 저장한 디렉토리 아래에 있는 Dispatcher 도구 파일(디스패처 도구 버전 `version` )을 자체 추출합니다.
 
@@ -189,7 +189,7 @@ Uncompressing DispatcherSDKv<version>  100%
 표준 프로젝트에 적합한 기본 호스트 글로빙입니다. 사용자 지정이 필요한 경우 수정합니다 `virtualhosts.any`. 사용자 지정에서는 들어오는 **모든** 요청과 일치하므로 기본 호스트 글로브를 포함해서는 안 됩니다.
 
 >[!NOTE]
->Cloud Service 마비로서 AEM은 동일한 발송자 구성 파일 구조를 생성합니다.
+>Cloud Service 전문가 원형인 AEM은 동일한 발송자 구성 파일 구조를 생성합니다.
 
 아래 섹션에서는 내부 릴리스를 배포할 때 Cloud Manager에서 관련 품질 게이트를 전달할 수 있도록 구성을 로컬로 검증하는 방법에 대해 설명합니다.
 
@@ -199,7 +199,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 다음과 같이 호출됩니다. `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-이 도구는 Apache 및 발송자 구성의 유효성을 확인합니다. 패턴으로 모든 파일을 `conf.d/enabled_vhosts/*.vhost` 스캔하고 허용되는 지시문만 사용하는지 확인합니다. Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 명령을 실행하여 나열할 수 허용 목록에 추가하다 있습니다.
+이 도구는 Apache 및 발송자 구성의 유효성을 확인합니다. 패턴으로 모든 파일을 스캔하고 지시문만 허용 목록에추가된 사용되는지 확인합니다. `conf.d/enabled_vhosts/*.vhost` Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 명령을 실행하여 나열할 수 허용 목록에 추가하다 있습니다.
 
 ```
 $ validator whitelist
@@ -240,7 +240,7 @@ Whitelisted directives:
 
 고객은 임의의 모듈을 추가할 수 없지만, 향후 제품에 포함할 추가 모듈을 고려할 수 있습니다. 고객은 위에 설명된 대로 SDK에서 유효성 검사기의 Dispatcher 명령을 실행하여 지정된 버전에 사용할 수 있는 지시어 목록을 찾을 수 있습니다허용 목록에 추가하다.
 
-에는 허용 목록에 추가하다 고객 구성에서 허용되는 Apache 지시문 목록이 포함되어 있습니다. 지시문이 허용되지 않으면 도구가 오류를 기록하고 0이 아닌 종료 코드를 반환합니다. 명령줄에허용 목록에 추가하다가 없는 경우(호출해야 하는 방식), 이 도구는 Cloud 환경에 배포하기 전에 Cloud Manager가 유효성 검사에 사용할 기본 허용 목록에 추가하다를 사용합니다.
+에는 허용 목록에 추가하다 고객 구성에서 허용되는 Apache 지시문 목록이 포함되어 있습니다. 지시문이 허용 목록에추가된 없으면 도구가 오류를 기록하고 0이 아닌 종료 코드를 반환합니다. 명령줄에허용 목록에 추가하다가 없는 경우(호출해야 하는 방식), 이 도구는 Cloud 환경에 배포하기 전에 Cloud Manager가 유효성 검사에 사용할 기본 허용 목록에 추가하다를 사용합니다.
 
 또한 패턴을 사용하여 모든 파일을 추가로 스캔하고 다음을 `conf.dispatcher.d/enabled_farms/*.farm` 확인합니다.
 
@@ -253,12 +253,12 @@ Whitelisted directives:
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
 2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
- conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
+  conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
- conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
+  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-유효성 검사 도구는 허용되지 않은 Apache 지시문의 금지된 사용만 보고합니다. 이 정보는 실행 중인 환경의 Apache 모듈에만 사용할 수 있으므로 Apache 구성에 대한 구문 또는 세미나 문제를 보고하지는 않습니다.
+유효성 검사 도구는 허용되지 않은 Apache 지시문의 금지된 사용만 허용 목록에추가된 보고합니다. 이 정보는 실행 중인 환경의 Apache 모듈에만 사용할 수 있으므로 Apache 구성에 대한 구문 또는 세미나 문제를 보고하지는 않습니다.
 
 유효성 검사 오류가 보고되지 않으면 구성이 배포될 준비가 됩니다.
 
@@ -367,7 +367,7 @@ Starting httpd server
 ...
 ```
 
-이렇게 하면 4503 포트에서 로컬 Mac OS 시스템에서 실행 중인 AEM 인스턴스를 가리키는 백 엔드가 있는 컨테이너에서 디스패처가 시작됩니다.
+이렇게 하면 4503 포트에서 로컬 Mac OS 시스템에서 실행되는 AEM 인스턴스를 가리키는 백 엔드가 있는 컨테이너에서 디스패처가 시작됩니다.
 
 ## Apache 및 Dispatcher 구성 디버깅 {#debugging-apache-and-dispatcher-configuration}
 
@@ -464,17 +464,17 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Cloud Service으로 AMS Dispatcher과 AEM의 주요 차이점 {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-위의 참조 페이지에 설명된 대로 AEM의 Cloud Service으로 Apache 및 Dispatcher 구성은 AMS 1과 매우 유사합니다. 주요 차이점은 다음과 같습니다.
+위의 참조 페이지에서 설명한 바와 같이, AEM의 Cloud Service과 아파치 및 Dispatcher 구성은 AMS 1과 매우 유사합니다. 주요 차이점은 다음과 같습니다.
 
 * AEM에서 Cloud Service으로 일부 Apache 지시어를 사용할 수 없습니다(예: `Listen` 또는 `LogLevel`).
-* Cloud Service으로 AEM에서 일부 Dispatcher 구성만 포함 파일에 넣을 수 있으며 해당 이름 지정도 중요합니다. 예를 들어 여러 호스트 간에 재사용할 필터 규칙을 호출한 파일에 추가해야 합니다 `filters/filters.any`. 자세한 내용은 참조 페이지를 참조하십시오.
-* AEM에서 Cloud Service으로 보안 문제를 방지하기 위해 사용하여 작성된 필터 규칙을 허용하지 않기 위한 추가 유효성 검사 `/glob` 가 있습니다. 이 `deny *` 는 사용되지 `allow *` 않기 때문에, 사용자는 Dispatcher을 로컬에서 실행하고 시험버전 및 오류를 수행함으로써 Dispatcher 필터가 어떤 경로를 추가하도록 차단하는지 정확하게 확인할 수 있습니다.
+* AEM에서 Cloud Service으로 사용할 경우 일부 Dispatcher 구성만 포함 파일에 넣을 수 있으며 해당 이름을 지정하는 것이 중요합니다. 예를 들어 여러 호스트 간에 재사용할 필터 규칙을 호출한 파일에 추가해야 합니다 `filters/filters.any`. 자세한 내용은 참조 페이지를 참조하십시오.
+* AEM의 Cloud Service에서는 보안 문제를 방지하기 위해 사용하는 필터 규칙을 사용하지 않기 위해 추가 유효성 검사 `/glob` 가 있습니다. 이 `deny *` 는 사용되지 `allow *` 않기 때문에, 사용자는 Dispatcher을 로컬에서 실행하고 시험버전 및 오류를 수행함으로써 Dispatcher 필터가 어떤 경로를 추가하도록 차단하는지 정확하게 확인할 수 있습니다.
 
-## Cloud Service으로 AMS에서 AEM으로 발송자 구성을 마이그레이션하기 위한 지침
+## AMS에서 AEM으로 발송자 구성을 Cloud Service으로 마이그레이션하는 지침
 
-디스패처 구성 구조는 Cloud Service으로 Managed Services와 AEM이 서로 다릅니다. 아래에 제시된 것은 Cloud Service으로 AMS Dispatcher 구성 버전 2에서 AEM으로 마이그레이션하는 방법에 대한 단계별 가이드입니다.
+디스패처 구성 구조는 Cloud Service으로 Managed Services과 AEM이 서로 다르다. 아래에 제시된 것은 Cloud Service으로 AMS Dispatcher 구성 버전 2에서 AEM으로 마이그레이션하는 방법에 대한 단계별 가이드입니다.
 
-## AMS를 클라우드 서비스 디스패처 구성으로 AEM으로 변환하는 방법
+## AMS를 클라우드 서비스 발송자 구성으로 AEM으로 변환하는 방법
 
 다음 섹션에서는 AMS 구성을 변환하는 방법에 대한 단계별 지침을 제공합니다. It assumes
 that you have an archive with a structure similar to the one described in [Cloud Manager dispatcher configuration](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
@@ -551,7 +551,7 @@ $ validator httpd .
 
 누락된 포함 파일에 대한 오류가 표시되면 해당 파일의 이름을 올바르게 변경했는지 확인합니다.
 
-허용되지 않는 Apache 지시문이 표시되면 제거하십시오.
+Apache 지시문이 표시되지 허용 목록에추가된 않으면 제거합니다.
 
 ### 게시되지 않은 모든 팜 제거
 
@@ -691,7 +691,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### 검사기를 실행하여 상태 확인
 
-다음 하위 명령을 사용하여 디렉토리에서 AEM을 Cloud Service 디스패처 유효성 검사기로 `dispatcher` 실행합니다.
+다음 하위 명령을 사용하여 디렉토리에서 AEM을 Cloud Service 발송자 유효성 검사기로 `dispatcher` 실행합니다.
 
 ```
 $ validator dispatcher .
