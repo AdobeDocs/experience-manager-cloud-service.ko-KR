@@ -1,8 +1,8 @@
 ---
 title: 'AEM 프로젝트 저장소 구조 패키지  '
-description: Adobe Experience Manager를 Cloud Service Maven 프로젝트로 사용하려면 저장소 구조 하위 패키지 정의가 필요합니다. 이 하위 패키지 정의는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것입니다.
+description: Cloud Service Maven 프로젝트로 Adobe Experience Manager을 사용하려면 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 용도의 저장소 구조 하위 패키지 정의가 필요합니다.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # AEM 프로젝트 저장소 구조 패키지
 
-Adobe Experience Manager를 클라우드 서비스로 사용하는 Adobe Experience Manager용 Maven 프로젝트를 사용하려면 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 데 유일한 목적을 가진 저장소 구조 하위 패키지 정의가 필요합니다. 이렇게 하면 클라우드 서비스로 Experience Manager에서 패키지를 JCR 리소스 종속성으로 자동으로 설치할 수 있습니다. 종속성이 누락되면 하위 구조가 상위 구조 앞에 설치되고 따라서 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
+Cloud Service의 Adobe Experience Manager용 Maven 프로젝트는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 것이 유일한 목적을 가진 저장소 구조 하위 패키지 정의가 필요합니다. 이렇게 하면 Cloud Service이 JCR 리소스 종속성으로 자동 주문되므로 Experience Manager에 패키지를 설치할 수 있습니다. 종속성이 누락되면 하위 구조가 상위 구조 앞에 설치되고 따라서 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
 
 코드 패키지가 코드 패키지로 포함되지 **않은** 위치에 배포되는 경우, 이러한 종속성을 설정하려면 모든 상위 리소스(JCR 루트에 더 가까운 JCR 리소스)가 저장소 구조 패키지에 열거되어야 합니다.
 
