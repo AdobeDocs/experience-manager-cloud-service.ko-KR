@@ -2,7 +2,7 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
+source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
 ht-degree: 8%
@@ -372,7 +372,7 @@ Starting httpd server
 
 ## Apache 및 Dispatcher 구성 디버깅 {#debugging-apache-and-dispatcher-configuration}
 
-로그 수준은 변수 `DISP_LOG_LEVEL` 와 `REWRITE_LOG_LEVEL` s&#39;에 의해 `conf.d/variables/global.var`정의됩니다. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
+로그 수준은 변수 `DISP_LOG_LEVEL` 와 `REWRITE_LOG_LEVEL` s&#39;에 의해 `conf.d/variables/global.var`정의됩니다. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
 
 ## 환경당 서로 다른 Dispatcher 구성 {#different-dispatcher-configurations-per-environment}
 
