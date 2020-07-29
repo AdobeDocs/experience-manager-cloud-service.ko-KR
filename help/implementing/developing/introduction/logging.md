@@ -2,9 +2,9 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 1cee93310d84ea21b626f456163de6855056db5b
+source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '1077'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,6 @@ AEM은 Cloud Service으로 Java 로그 문에 액세스할 수 있습니다. AEM
 디버그</td>
 <td>
 애플리케이션에서 발생하는 내용을 설명합니다.<br>
-
 DEBUG 로깅이 활성화되면 어떤 활동이 발생하는지 명확하게 파악하고 처리에 영향을 주는 모든 키 매개 변수를 제공하는 문이 기록됩니다.</td>
 <td>
 <ul>
@@ -207,3 +206,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### HTTP 액세스 로그 구성 {#configuring-the-http-access-log}
+
+AEM에서 Cloud Service으로 HTTP 액세스 로그를 구성할 수 없습니다.
+
+## Apache 웹 서버/Dispatcher 로깅 {#dispatcher-logging}
+
+AEM은 Publish에서 Apache 웹 서버 및 디스패처 레이어에 대해 3개의 로그를 제공합니다.
+
+* Apache HTTPD 웹 서버 액세스 로그
+* Apache HTTPD 웹 서버 오류 로그
+* Dispatcher 로그
+
+이러한 로그는 게시 계층에만 사용할 수 있습니다.
+
+이 로그 세트는 AEM 애플리케이션에 도달하기 전에 Cloud Service 게시 계층으로 AEM에 대한 HTTP 요청에 대한 통찰력을 제공합니다. 이는 Publish 계층 서버에 대한 대부분의 HTTP 요청은 Apache HTTPD Web Server 및 AEM Dispatcher에서 캐시된 컨텐츠에 의해 제공되며 AEM 애플리케이션 자체에는 도달하지 않으므로 AEM Java, 요청 또는 액세스 로그에 이러한 요청에 대한 로그 명령문이 없음을 이해하는 데 중요합니다.
