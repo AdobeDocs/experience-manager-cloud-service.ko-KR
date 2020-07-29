@@ -2,9 +2,9 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
+source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '2053'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,9 @@ AEM 응용 프로그램 수준에서 로깅은 세 가지 로그로 처리됩니
 1. HTTP 요청 로그 - AEM에서 제공하는 HTTP 요청 및 응답에 대한 정보를 기록합니다.
 1. AEM에서 제공하는 요약된 정보와 HTTP 요청을 기록하는 HTTP 액세스 로그
 
-게시 계층의 Dispatcher 캐시 또는 업스트림 CDN에서 제공되는 HTTP 요청은 이러한 로그에 반영되지 않습니다.
+> [!NOTE]
+> 
+> 게시 계층의 Dispatcher 캐시 또는 업스트림 CDN에서 제공되는 HTTP 요청은 이러한 로그에 반영되지 않습니다.
 
 ## AEM Java 로깅 {#aem-java-logging}
 
@@ -97,10 +99,6 @@ AEM 로그 레벨은 OSGi 구성을 통해 환경 유형별로 설정되며, 이
 
 ### 로그 형식 {#log-format}
 
-| 날짜 및 시간 | AEM의 Cloud Service 도드 ID | 로그 수준 | 스레드 | Java 클래스 | 로그 메시지 |
-|---|---|---|---|---|---|
-| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | `No specified approver, defaulting to [ Creative Approvers user group ]` |
-
 **로그 출력 예**
 
 ```
@@ -110,6 +108,35 @@ AEM 로그 레벨은 OSGi 구성을 통해 환경 유형별로 설정되며, 이
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+<table>
+<tbody>
+<tr>
+<td>날짜 및 시간</td>
+<td>29.04.2020 21:50:13.398</td>
+</tr>
+<tr>
+<td>AEM을 Cloud Service 노드 ID로 사용</td>
+<td>[cm-p1234-e5678-aem-author-5955cb5b8-q7l9s]</td>
+</tr>
+<tr>
+<td>로그 수준</td>
+<td>디버그</td>
+</tr>
+<tr>
+<td>스레드</td>
+<td>qtp2130572036-1472</td>
+</tr>
+<tr>
+<td>Java 클래스</td>
+<td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
+</tr>
+<tr>
+<td>로그 메시지</td>
+<td>지정된 승인자가 없습니다. [크리에이티브 승인자 사용자 그룹] 기본값이 됩니다.</td>
+</tr>
+</tbody>
+</table>
 
 ### 구성 로거 {#configuration-loggers}
 
@@ -167,10 +194,6 @@ AEM은 Cloud Service의 HTTP 요청 로깅으로 AEM에 대한 HTTP 요청과 �
 
 ### 로그 형식 {#http-request-logging-format}
 
-| 날짜 및 시간 | 요청/응답 쌍 ID |  | HTTP 메서드 | URL | 프로토콜 | AEM을 Cloud Service 노드 ID로 사용 |
-|---|---|---|---|---|---|---|
-| 2020년 4월 29일:19:14:21 +000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataprofile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
-
 **예제 로그**
 
 ```
@@ -182,6 +205,36 @@ AEM은 Cloud Service의 HTTP 요청 로깅으로 AEM에 대한 HTTP 요청과 �
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+<table>
+<tbody>
+<tr>
+<td>날짜 및 시간</td>
+<td>2020년 4월 29일:19:14:21 +000</td>
+</tr>
+<tr>
+<td>요청/응답 쌍 ID</td>
+<td><code>[137]</code></td>
+</tr>
+<tr>
+<td>HTTP 메서드</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/conf/global/settings/dam/adminui-extension/metadataprofile/</td>
+</tr>
+<tr>
+<td>프로토콜</td>
+<td>HTTP/1.1
+</td>
+</tr>
+<tr>
+<td>AEM을 Cloud Service 노드 ID로 사용</td>
+<td>[cm-p1234-e5678-aem-author-5955cb5b8-q7l9s]</td>
+</tr>
+</tbody>
+</table>
 
 ### 로그 구성 {#configuring-the-log}
 
@@ -258,7 +311,7 @@ AEM에서 Cloud Service으로 HTTP 액세스 로그를 구성할 수 없습니�
 
 ## Apache 웹 서버 및 Dispatcher 로깅 {#apache-web-server-and-dispatcher-logging}
 
-AEM은 Publish에서 Apache 웹 서버 및 디스패처 레이어에 대해 3개의 로그를 제공합니다.
+AEM as Cloud Service은 Publish에서 Apache 웹 서버 및 디스패처 레이어에 대해 3개의 로그를 제공합니다.
 
 * Apache HTTPD 웹 서버 액세스 로그
 * Apache HTTPD 웹 서버 오류 로그
@@ -335,5 +388,145 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcher 로그 {#dispatcher-log}
 
-**로그 형식**
+<!--de completat-->
 
+**예**
+
+```
+[17/Jul/2020:23:48:06 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures.html" - 475ms [publishfarm/0] [action miss] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/root/responsivegrid/carousel/item_1571266094599.coreimg.jpeg/1473680817282/sport-climbing.jpeg" 302 10ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+```
+
+### 로그 형식 {#dispatcher-log-format}
+
+### Dispatcher 오류 로그 구성 {#configuring-the-dispatcher-error-log}
+
+디스패처 로그 수준은 파일의 변수 DISP_LOG_LEVEL에 의해 정의됩니다 `conf.d/variables/global.var`.
+
+Error, Warn, Info, Debug 및 Trace1로 설정할 수 있으며 기본값은 Warn입니다.
+
+Dispatcher 로깅은 다른 여러 수준의 로깅 세부기간을 지원하는 반면 AEM은 아래 설명된 수준을 사용하는 것이 좋습니다.
+
+환경별 로그 수준을 설정하려면 아래 설명된 대로 `global.var` 파일에 적절한 조건부 분기를 사용하십시오.
+
+```
+Define DISP_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define DISP_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define DISP_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## 로그에 액세스하는 방법 {#how-to-access-logs}
+
+### 클라우드 환경 {#cloud-environments}
+
+AEM은 Cloud Manager 인터페이스를 통해 다운로드하거나 Adobe I/O 명령줄 인터페이스를 사용하여 명령줄에서 로그를 미행하여 클라우드 서비스에 대한 Cloud Service 로그으로 액세스할 수 있습니다. 자세한 내용은 [Cloud Manager 로깅 설명서를 참조하십시오](/help/implementing/cloud-manager/manage-logs.md).
+
+### 로컬 SDK {#local-sdk}
+
+AEM은 Cloud Service SDK로 로컬 개발을 지원하는 로그 파일을 제공합니다.
+
+AEM 로그는 다음 로그를 볼 수 있는 폴더 `crx-quickstart/logs`에 있습니다.
+
+* AEM Java 로그: `error.log`
+* AEM HTTP 요청 로그: `request.log`
+* AEM HTTP 액세스 로그: `access.log`
+
+디스패처를 포함한 Apache 레이어 로그는 Dispatcher을 포함하는 Docker 컨테이너에 있습니다. Dispatcher을 시작하는 방법에 대한 자세한 내용은 [Dispatcher 설명서를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) 참조하십시오.
+
+로그를 검색하려면
+
+1. 명령줄에 을 입력하여 컨테이너 `docker ps` 를 나열합니다.
+1. 컨테이너에 로그인하려면 &quot;`docker exec -it <container> /bin/sh`&quot;를 입력합니다. 여기서 `<container>` 는 이전 단계의 발송자 컨테이너 ID입니다
+1. 아래의 캐시 루트로 이동합니다. `/mnt/var/www/html`
+1. 통나무는 밑에 있다 `/etc/httpd/logs`
+1. Inspect: XYZ 폴더에서 액세스할 수 있습니다. 여기서 다음 로그를 볼 수 있습니다.
+   * Apache HTTPD 웹 서버 액세스 로그 - `httpd_access.log`
+   * Apache HTTPD 웹 서버 오류 로그 - `httpd_error.log`
+   * Dispatcher 로그 - `dispatcher.log`
+
+로그가 터미널 출력에 직접 인쇄됩니다. 대부분의 경우 이러한 로그는 DEBUG여야 하며 Docker를 실행할 때 디버그 수준을 매개 변수로 전달하여 수행할 수 있습니다. 예:
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+## 프로덕션 및 스테이지 디버깅 {#debugging-production-and-stage}
+
+예외적인 상황에서는 단계 또는 프로덕션 환경에서 보다 세밀하게 기록하려면 로그 수준을 변경해야 합니다.
+
+가능한 한 Git의 구성 파일에 있는 로그 수준을 Warn 및 Error에서 Debug로 변경하고 이러한 구성 변경 사항을 환경에 등록하려면 Cloud Service으로 AEM에 배포해야 합니다.
+
+Debug가 작성한 트래픽 및 로그 문의 양에 따라 환경에 나쁜 성능 영향을 줄 수 있으므로 단계 및 프로덕션 디버그 수준의 변경을 권장합니다.
+
+* 공평하게 그리고 꼭 필요한 경우에만
+* 적절한 수준으로 복귀하여 가능한 한 빨리 재배포
+
+## Splunk Logs {#splunk-logs}
+
+Splunk 계정을 보유한 고객은 고객 지원 티켓을 통해 AEM Cloud Service 로그가 적절한 지수로 전달되도록 요청할 수 있습니다. 로깅 데이터는 Cloud Manager 로그 다운로드를 통해 사용할 수 있는 것과 동일하지만 고객은 Splunk 제품에서 사용할 수 있는 쿼리 기능을 편리하게 활용할 수 있습니다.
+
+Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네트워크 I/O 사용의 일부로 간주됩니다.
+
+### 분할된 전달 활성화 {#enabling-splunk-forwarding}
+
+지원 요청에서 고객은 다음을 표시해야 합니다.
+
+* The Splunk host
+* The Splunk index
+* The Splunk port
+* Splunk HEC 토큰. 자세한 내용은 [이 페이지를](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) 참조하십시오.
+
+위의 속성은 각 관련 프로그램/환경 유형 조합에 대해 지정해야 합니다.  예를 들어 고객이 개발, 스테이징 및 프로덕션 환경을 원하는 경우 아래 표시된 세 가지 정보 세트를 제공해야 합니다.
+
+> [!NOTE]
+>
+> 샌드박스 프로그램 환경을 위한 스플덩크 포워드는 지원되지 않습니다.
+
+아래에서 샘플 고객 지원 요청을 확인할 수 있습니다.
+
+프로그램 123, 프로덕션 환경
+
+* Splunk 호스트: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123prod(고객은 원하는 이름 지정 규칙을 선택할 수 있음)
+* Splunk 포트: 443년
+* Splunk HEC 토큰: ABC123
+
+프로그램 123, 스테이지 환경
+
+* Splunk 호스트: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123stage
+* Splunk 포트: 443년
+* Splunk HEC 토큰: ABC123
+
+프로그램 123, 개발 지원
+
+* Splunk 호스트: `splunk-hec-ext.acme.com`
+* Splunk index: acme_123dev
+* Splunk 포트: 443년
+* Splunk HEC 토큰: ABC123
+
+각 환경에 대해 동일한 Splunk 인덱스를 사용하기에 충분할 수 있습니다. 이 경우 필드가 dev, stage 및 prod 값을 기준으로 차별화하는 데 사용될 수 `aem_env_type` 있습니다. 개발 환경이 여러 개인 경우 `aem_env_id` 필드도 사용할 수 있습니다. 관련 색인이 Splunk 사용자 수가 줄어든 설정으로 액세스를 제한하는 경우 일부 조직은 프로덕션 환경 로그에 대해 별도의 색인을 선택할 수 있습니다.
+
+다음은 로그 항목의 예입니다.
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+file_path: /var/log/aem/error.log
+host: 172.34.200.12 
+level: INFO
+msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
+orig_time: 16.07.2020 08:35:32.346
+pod_name: aemloggingall-aem-author-77797d55d4-74zvt
+splunk_customer: true
+```
