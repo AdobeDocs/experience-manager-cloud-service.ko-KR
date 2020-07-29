@@ -2,10 +2,10 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
+source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 2%
+source-wordcount: '2212'
+ht-degree: 3%
 
 ---
 
@@ -97,8 +97,6 @@ Java 로깅은 몇 가지 다른 수준의 로깅 세부기간을 지원하는 �
 
 AEM 로그 레벨은 OSGi 구성을 통해 환경 유형별로 설정되며, 이는 Git에 커밋되고 Cloud Manager를 통해 AEM을 Cloud Service으로 배포합니다. 따라서, 업데이트된 로그 수준 구성을 사용하여 애플리케이션을 재배포하지 않고도 AEM을 통해 사용 가능한 로그가 최적의 로그 수준에서 사용할 수 있도록 하기 위해, Cloud Service을 통해 사용 가능한 로그를 환경 유형에 대해 일관되고 잘 알려진 로그 문을 유지하는 것이 가장 좋습니다.
 
-### 로그 형식 {#log-format}
-
 **로그 출력 예**
 
 ```
@@ -108,6 +106,8 @@ AEM 로그 레벨은 OSGi 구성을 통해 환경 유형별로 설정되며, 이
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+**로그 형식**
 
 <table>
 <tbody>
@@ -192,8 +192,6 @@ AEM은 Cloud Service의 HTTP 요청 로깅으로 AEM에 대한 HTTP 요청과 �
 
 이 로그를 이해하는 열쇠는 대괄호 안의 숫자 값으로 나타내는 ID로 HTTP 요청 및 응답 쌍을 매핑하는 것입니다. 요청과 해당 응답에 다른 HTTP 요청과 답변이 로그에 들어 있다는 점을 참고하십시오.
 
-### 로그 형식 {#http-request-logging-format}
-
 **예제 로그**
 
 ```
@@ -205,6 +203,8 @@ AEM은 Cloud Service의 HTTP 요청 로깅으로 AEM에 대한 HTTP 요청과 �
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+**로그 형식**
 
 <table>
 <tbody>
@@ -246,15 +246,15 @@ AEM의 Cloud Service HTTP 액세스 로깅은 HTTP 요청을 시간 순서대로
 
 이 로그는 AEM에 수행되는 HTTP 요청, 함께 제공되는 HTTP 응답 상태 코드 및 HTTP 요청이 완료되는 데 걸린 시간을 빨리 이해하는 데 유용합니다. 이 로그는 사용자별로 로그 항목을 필터링하여 특정 사용자의 활동을 디버깅하는 데 유용할 수도 있습니다.
 
-### 로그 형식 {#access-log-format}
-
-**예**
+**로그 출력 예**
 
 ```
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css HTTP/1.1" 200 1141 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+**로그 형식**
 
 <table>
 <tbody>
@@ -327,17 +327,64 @@ Apache HTTP Web Server 액세스 로그는 게시 계층의 웹 서버/Dispatche
 
 공식 apache 설명서의 오류 로그 형식에 대한 정보를 [참조하십시오](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-**로그 형식**
-
-<!--blank until prod build finishes-->
-
-**예**
+**로그 출력 예**
 
 ```
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
 ```
+
+**로그 형식**
+
+<table>
+<tbody>
+<tr>
+<td>AEM을 클라우드 서비스 노드 ID로 사용</td>
+<td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
+</tr>
+<tr>
+<td>클라이언트의 IP 주소</td>
+<td>-</td>
+</tr>
+<tr>
+<td>사용자</td>
+<td>-</td>
+</tr>
+<tr>
+<td>날짜 및 시간</td>
+<td>01/5월 2020:00:09:46 +000</td>
+</tr>
+<tr>
+<td>HTTP 메서드</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/example.html</td>
+</tr>
+<tr>
+<td>프로토콜</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>HTTP 응답 상태</td>
+<td>200</td>
+</tr>
+<tr>
+<td>크기</td>
+<td>310</td>
+</tr>
+<tr>
+<td>참조</td>
+<td>-</td>
+</tr>
+<tr>
+<td>사용자 에이전트</td>
+<td>"Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형</td>
+</tr>
+</tbody>
+</table>
 
 ### Apache HTTPD 웹 서버 액세스 로그 구성 {#configuring-the-apache-httpd-webs-server-access-log}
 
@@ -349,17 +396,40 @@ Apache HTTP Web Server 오류 로그는 게시 계층의 웹 서버/Dispatcher�
 
 공식 apache 설명서의 오류 로그 형식에 대한 정보를 [참조하십시오](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
-**로그 형식**
-
-<!--placeholder-->
-
-**예**
+**로그 출력 예**
 
 ```
 Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
 Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
 Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
 ```
+
+**로그 형식**
+
+<table>
+<tbody>
+<tr>
+<td>날짜 및 시간</td>
+<td>2020년 7월 17일 02시 16분 42초 608913</td>
+</tr>
+<tr>
+<td>이벤트 수준</td>
+<td>[mpm_worker:notice]</td>
+</tr>
+<tr>
+<td>프로세스 ID</td>
+<td>[pid 1:tid 140715149343624]</td>
+</tr>
+<tr>
+<td>창 이름</td>
+<td>[cm-p1234-e56789-aem-publish-b86c6b466-qpfvp]</td>
+</tr>
+<tr>
+<td>메시지</td>
+<td>AH00094: 명령줄: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+</tr>
+</tbody>
+</table>
 
 ### Apache HTTPD 웹 서버 오류 로그 구성 {#configuring-the-apache-httpd-web-server-error-log}
 
@@ -388,8 +458,6 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcher 로그 {#dispatcher-log}
 
-<!--de completat-->
-
 **예**
 
 ```
@@ -398,7 +466,48 @@ Define REWRITE_LOG_LEVEL Debug
 [17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
 ```
 
-### 로그 형식 {#dispatcher-log-format}
+**로그 형식**
+
+<table>
+<tbody>
+<tr>
+<td>날짜 및 시간</td>
+<td>[2020년 7월 17일:23:48:16 +000]</td>
+</tr>
+<tr>
+<td>창 이름</td>
+<td>[cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr]</td>
+</tr>
+<tr>
+<td>프로토콜</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>Dispatcher 응답 상태 코드</td>
+<td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
+</tr>
+<tr>
+<td>기간</td>
+<td>1949ms</td>
+</tr>
+<tr>
+<td>농장</td>
+<td>[publishfarm/0]</td>
+</tr>
+<tr>
+<td>캐시 상태</td>
+<td>[작업 누락]</td>
+</tr>
+<tr>
+<td>호스트</td>
+<td>"publish-p12904-e25628.adobeaemcloud.com"</td>
+</tr>
+</tbody>
+</table>
 
 ### Dispatcher 오류 로그 구성 {#configuring-the-dispatcher-error-log}
 
