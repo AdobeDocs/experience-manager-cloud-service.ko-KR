@@ -2,10 +2,10 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
+source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 3%
+source-wordcount: '1304'
+ht-degree: 2%
 
 ---
 
@@ -195,41 +195,18 @@ AEM의 Cloud Service HTTP 액세스 로깅은 HTTP 요청을 시간 순서대로
 
 ### 로그 형식 {#access-log-format}
 
-<table>
-<tbody>
-<tr>
-<td><b>AEM을 Cloud Service 노드 ID로 사용</b></td>
-<td><b>클라이언트의 IP 주소</b></td>
-<td><b>사용자</b></td>
-<td><b>날짜 및 시간</b></td>
-<td><b>비어 있음</b></td>
-<td><b>HTTP 메서드</b></td>
-<td><b>URL</b></td>
-<td><b>프로토콜</b></td>
-<td><b>비어 있음</b></td>
-<td><b>HTTP 응답 상태</b></td>
-<td><b>HTTP 응답 시간(밀리초)</b></td>
-<td><b>레퍼러</b></td>
-<td><b>사용자 에이전트</b></td>
-</tr>
-<tr>
-<td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
-<td>-</td>
-<td>myuser@adobe.com</td>
-<td>2020년 4월 30일:17시 37분 14 +000</td>
-<td>"</td>
-<td>GET</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-<td>HTTP/1.1</td>
-<td>"</td>
-<td>200</td>
-<td>1141</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-<td>"Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형</td>
-</tr>
-</tbody>
-</table>
-
+| AEM을 Cloud Service 노드 ID로 사용 | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
+|---|---|
+| 클라이언트의 IP 주소 | - |
+| 사용자 | myuser@adobe.com |
+| 날짜 및 시간 | 2020년 4월 30일:17시 37분 14 +000 |
+| HTTP 메서드 | GET |
+| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
+| 프로토콜 | HTTP/1.1 |
+| HTTP 응답 상태 | 200 |
+| HTTP 요청 시간(밀리초) | 1141 |
+| 레퍼러 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| 사용자 에이전트 | &quot;Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형 |
 
 **예**
 
@@ -243,7 +220,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 AEM에서 Cloud Service으로 HTTP 액세스 로그를 구성할 수 없습니다.
 
-## Apache 웹 서버/Dispatcher 로깅 {#dispatcher-logging}
+## Apache 웹 서버 및 Dispatcher 로깅 {#apache-web-server-and-dispatcher-logging}
 
 AEM은 Publish에서 Apache 웹 서버 및 디스패처 레이어에 대해 3개의 로그를 제공합니다.
 
@@ -253,4 +230,74 @@ AEM은 Publish에서 Apache 웹 서버 및 디스패처 레이어에 대해 3개
 
 이러한 로그는 게시 계층에만 사용할 수 있습니다.
 
-이 로그 세트는 AEM 애플리케이션에 도달하기 전에 Cloud Service 게시 계층으로 AEM에 대한 HTTP 요청에 대한 통찰력을 제공합니다. 이는 Publish 계층 서버에 대한 대부분의 HTTP 요청은 Apache HTTPD Web Server 및 AEM Dispatcher에서 캐시된 컨텐츠에 의해 제공되며 AEM 애플리케이션 자체에는 도달하지 않으므로 AEM Java, 요청 또는 액세스 로그에 이러한 요청에 대한 로그 명령문이 없음을 이해하는 데 중요합니다.
+이 로그 세트는 AEM 애플리케이션에 도달하기 전에 Cloud Service 게시 계층으로 AEM에 대한 HTTP 요청에 대한 통찰력을 제공합니다. 이는 Apache HTTPD Web Server 및 AEM Dispatcher에 의해 캐시되고 AEM 애플리케이션 자체에 도달할 수 없는 컨텐츠에 의해 게시 계층 서버에 대한 대부분의 HTTP 요청이 제공된다는 것을 이상적으로 이해하는 데 중요합니다. 따라서 AEM Java, 요청 또는 액세스 로그에는 이러한 요청에 대한 로그 문이 없습니다.
+
+### Apache HTTPD 웹 서버 액세스 로그 {#apache-httpd-web-server-access-log}
+
+Apache HTTP Web Server 액세스 로그는 게시 계층의 웹 서버/Dispatcher에 도달하는 각 HTTP 요청에 대한 문을 제공합니다. 업스트림 CDN에서 제공되는 요청은 이러한 로그에 반영되지 않습니다.
+
+공식 apache 설명서의 오류 로그 형식에 대한 정보를 [참조하십시오](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+
+**로그 형식**
+
+<!--blank until prod build finishes-->
+
+**예**
+
+```
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+```
+
+### Apache HTTPD 웹 서버 액세스 로그 구성 {#configuring-the-apache-httpd-webs-server-access-log}
+
+이 로그는 AEM에서 Cloud Service으로 구성할 수 없습니다.
+
+## Apache HTTPD 웹 서버 오류 로그 {#apache-httpd-web-server-error-log}
+
+Apache HTTP Web Server 오류 로그는 게시 계층의 웹 서버/Dispatcher에서 각 오류에 대한 문을 제공합니다.
+
+공식 apache 설명서의 오류 로그 형식에 대한 정보를 [참조하십시오](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
+
+**로그 형식**
+
+<!--placeholder-->
+
+**예**
+
+```
+Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
+Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
+Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
+```
+
+### Apache HTTPD 웹 서버 오류 로그 구성 {#configuring-the-apache-httpd-web-server-error-log}
+
+mod_rewrite 로그 수준은 파일의 REWRITE_LOG_LEVEL 변수에 의해 정의됩니다 `conf.d/variables/global.var`.
+
+Error, Warn, Info, Debug 및 Trace1 - Trace8으로 설정할 수 있으며 기본값은 Warn입니다. RewriteRules를 디버깅하려면 로그 수준을 Trace2로 높이는 것이 좋습니다.
+
+자세한 내용은 [mod_rewrite 모듈 설명서를](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) 참조하십시오.
+
+환경당 로그 수준을 설정하려면 아래 설명된 대로 global.var 파일에서 적절한 조건부 분기를 사용하십시오.
+
+```
+Define REWRITE_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define REWRITE_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define REWRITE_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Dispatcher 로그 {#dispatcher-log}
+
+**로그 형식**
+
