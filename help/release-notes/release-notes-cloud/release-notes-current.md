@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.7.0용 릴리스 노트
 description: Experience Manager 2020.7.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 17%
+source-wordcount: '409'
+ht-degree: 18%
 
 ---
 
@@ -29,8 +29,6 @@ Cloud Manager [!UICONTROL 버전] 2020.7.0의 릴리스 날짜는 2020년 7월 9
 * 최대 절전 모드인 환경에서 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
 
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
-
-* 이제 클라우드 관리자 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
 
 * 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 기밀을 지원합니다.
 자세한 내용은 [파이프라인 변수를](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) 참조하십시오.
@@ -63,7 +61,7 @@ Cloud Readance Analyzer 릴리스 v1.0.2의 새로운 기능과 업데이트에 
 
 ### 버그 수정 {#cra-bug-fixes}
 
-* AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
+* 이전 버전의 CRA를 Adobe Experience Manager(AEM) 6.1에서 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
 
    자세한 [내용은 AEM 6.1에](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) CRA 설치를 참조하십시오.
 
@@ -71,5 +69,5 @@ Cloud Readance Analyzer 릴리스 v1.0.2의 새로운 기능과 업데이트에 
 
 * CRA가 중복된 사용자 지정 구성 요소를 감지하고 있습니다.
 
-* AEM 6.1에서 전체 검사를 완료하기 전에 컨텐츠 검사를 종료했습니다. 전체 검사가 완료될 때까지 검사자가 건너뛸 수 있도록 예외 처리가 추가되었습니다.
+* AEM 6.1에서는 콘텐트 검사가 완료되기 전에 종료되었습니다. 전체 검사가 완료될 때까지 검사자가 건너뛸 수 있도록 예외 처리가 추가되었습니다.
 
