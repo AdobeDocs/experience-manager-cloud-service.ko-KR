@@ -2,9 +2,9 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
+source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1081'
 ht-degree: 3%
 
 ---
@@ -195,9 +195,41 @@ AEM의 Cloud Service HTTP 액세스 로깅은 HTTP 요청을 시간 순서대로
 
 ### 로그 형식 {#access-log-format}
 
-| AEM을 Cloud Service 노드 ID로 사용 | 클라이언트의 IP 주소 | 사용자 |  | 날짜 및 시간 |  | HTTP 메서드 | URL | 프로토콜 |  | HTTP 응답 | HTTP 요청 시간(밀리초) | 레퍼러 | 사용자 에이전트 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| cm-p1235-e2644-aem-author-5955cb5b8-8kgr2 | - | `myuser@adobe.com` | 2020년 4월 30일:17시 37분 14 +000 | &quot; | GET | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |  | HTTP/1.1 | &quot; | 200 | 1141 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` | &quot;Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형 |
+<table>
+<tbody>
+<tr>
+<td><b>AEM을 Cloud Service 노드 ID로 사용</b></td>
+<td><b>클라이언트의 IP 주소</b></td>
+<td><b>사용자</b></td>
+<td><b>날짜 및 시간</b></td>
+<td><b>비어 있음</b></td>
+<td><b>HTTP 메서드</b></td>
+<td><b>URL</b></td>
+<td><b>프로토콜</b></td>
+<td><b>비어 있음</b></td>
+<td><b>HTTP 응답 상태</b></td>
+<td><b>HTTP 응답 시간(밀리초)</b></td>
+<td><b>레퍼러</b></td>
+<td><b>사용자 에이전트</b></td>
+</tr>
+<tr>
+<td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
+<td>-</td>
+<td>myuser@adobe.com</td>
+<td>2020년 4월 30일:17시 37분 14 +000</td>
+<td>"</td>
+<td>GET</td>
+<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
+<td>HTTP/1.1</td>
+<td>"</td>
+<td>200</td>
+<td>1141</td>
+<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
+<td>"Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형</td>
+</tr>
+</tbody>
+</table>
+
 
 **예**
 
