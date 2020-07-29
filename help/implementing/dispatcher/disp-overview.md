@@ -2,9 +2,9 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
+source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3824'
 ht-degree: 8%
 
 ---
@@ -189,6 +189,7 @@ Uncompressing DispatcherSDKv<version>  100%
 표준 프로젝트에 적합한 기본 호스트 글로빙입니다. 사용자 지정이 필요한 경우 수정합니다 `virtualhosts.any`. 사용자 지정에서는 들어오는 **모든** 요청과 일치하므로 기본 호스트 글로브를 포함해서는 안 됩니다.
 
 >[!NOTE]
+>
 >Cloud Service 전문가 원형인 AEM은 동일한 발송자 구성 파일 구조를 생성합니다.
 
 아래 섹션에서는 내부 릴리스를 배포할 때 Cloud Manager에서 관련 품질 게이트를 전달할 수 있도록 구성을 로컬로 검증하는 방법에 대해 설명합니다.
@@ -371,37 +372,7 @@ Starting httpd server
 
 ## Apache 및 Dispatcher 구성 디버깅 {#debugging-apache-and-dispatcher-configuration}
 
-다음 전략을 사용하여 디스패처 모듈에 대한 로그 출력을 높이고 로컬 및 클라우드 환경 모두에서 `RewriteRule` 평가 결과를 확인할 수 있습니다.
-
-이러한 모듈의 로그 수준은 변수와 변수에 의해 `DISP_LOG_LEVEL` 정의됩니다 `REWRITE_LOG_LEVEL`. 파일에 설정할 수 있습니다 `conf.d/variables/global.vars`. 관련 부분은 다음과 같습니다.
-
-```
-# Log level for the dispatcher
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1
-# Default value: Warn
-#
-# Define DISP_LOG_LEVEL Warn
- 
-# Log level for mod_rewrite
-#
-# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
-# Default value: Warn
-#
-# To debug your RewriteRules, it is recommended to raise your log
-# level to Trace2.
-#
-# More information can be found at:
-# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
-#
-# Define REWRITE_LOG_LEVEL Warn
-```
-
-Dispatcher을 로컬로 실행할 때 로그가 터미널 출력에 직접 인쇄됩니다. 대부분의 경우 이러한 로그는 DEBUG에 있어야 하며 Docker를 실행할 때 디버그 수준을 매개 변수로 전달하여 수행할 수 있습니다. 예:
-
-`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
-
-클라우드 환경에 대한 로그는 Cloud Manager에서 사용할 수 있는 로깅 서비스를 통해 노출됩니다.
+로그 수준은 변수 `DISP_LOG_LEVEL` 와 `REWRITE_LOG_LEVEL` s&#39;에 의해 `conf.d/variables/global.var`정의됩니다. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
 
 ## 환경당 서로 다른 Dispatcher 구성 {#different-dispatcher-configurations-per-environment}
 
