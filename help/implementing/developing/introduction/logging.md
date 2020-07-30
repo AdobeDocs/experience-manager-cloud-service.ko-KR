@@ -2,7 +2,7 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 3%
@@ -27,9 +27,9 @@ AEM 응용 프로그램 수준에서 로깅은 세 가지 로그로 처리됩니
 1. HTTP 요청 로그 - AEM에서 제공하는 HTTP 요청 및 응답에 대한 정보를 기록합니다.
 1. AEM에서 제공하는 요약된 정보와 HTTP 요청을 기록하는 HTTP 액세스 로그
 
-> [!NOTE]
-> 
-> 게시 계층의 Dispatcher 캐시 또는 업스트림 CDN에서 제공되는 HTTP 요청은 이러한 로그에 반영되지 않습니다.
+>[!NOTE]
+>
+>게시 계층의 Dispatcher 캐시 또는 업스트림 CDN에서 제공되는 HTTP 요청은 이러한 로그에 반영되지 않습니다.
 
 ## AEM Java 로깅 {#aem-java-logging}
 
@@ -595,9 +595,9 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 
 위의 속성은 각 관련 프로그램/환경 유형 조합에 대해 지정해야 합니다.  예를 들어 고객이 개발, 스테이징 및 프로덕션 환경을 원하는 경우 아래 표시된 세 가지 정보 세트를 제공해야 합니다.
 
-> [!NOTE]
+>[!NOTE]
 >
-> 샌드박스 프로그램 환경을 위한 스플덩크 포워드는 지원되지 않습니다.
+>샌드박스 프로그램 환경을 위한 스플덩크 포워드는 지원되지 않습니다.
 
 아래에서 샘플 고객 지원 요청을 확인할 수 있습니다.
 
