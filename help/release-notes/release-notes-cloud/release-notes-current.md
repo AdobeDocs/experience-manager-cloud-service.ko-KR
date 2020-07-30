@@ -2,10 +2,10 @@
 title: Cloud Service의 2020.7.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.7.0).'
 translation-type: tm+mt
-source-git-commit: 5103d54bcb71d6c78894a30edafccf288a51368f
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 7%
+source-wordcount: '918'
+ht-degree: 6%
 
 ---
 
@@ -51,13 +51,13 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-* 새로운 [PDF 뷰어 구성 요소 소개](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
+* 새로운 [PDF 뷰어 구성 요소](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)소개
 
-* [AMP(Accelerated Mobile Pages)의 핵심 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) 지원을 활용하면 Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 사용자 참여도와 SEO를 향상시킴으로써 고객 경험을 신속하게 제작할 수 있습니다.
+* 핵심 구성 요소의 AMP(Accelerated Mobile Pages) 지원을 활용하면 Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 사용자 참여도와 SEO를 향상시킴으로써 고객 경험을 신속하게 제작할 수 있습니다.
 
-* Adobe 클라이언트 데이터 레이어의 버전 1.0.2와의 [호환성](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* Adobe 클라이언트 데이터 레이어의 버전 1.0.2와의 [호환성](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html).
 
 * 버그 수정 및 코드 품질 개선
 
