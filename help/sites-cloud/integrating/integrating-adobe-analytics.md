@@ -2,7 +2,7 @@
 title: Adobe Analytics와 통합
 description: 'Adobe Analytics와 통합 '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 4%
@@ -27,7 +27,7 @@ AEM의 이전 버전과 비교하여 AEM의 Analytics 구성에서 프레임워�
 
 1. 도구 **→** Cloud Service으로 **이동합니다**.
 2. [ **Adobe Analytics 구성]을 선택합니다**.
-   ![Analytics](assets/analytics_screen.png "WindowAnalytics 창")
+   ![Analytics](assets/analytics_screen1.png "WindowAnalytics 창")
 3. 만들기 **단추를** 선택합니다.
 4. 세부 사항을 채우고(아래 참조) **Connect를 클릭합니다**.
 
@@ -35,7 +35,7 @@ AEM의 이전 버전과 비교하여 AEM의 Analytics 구성에서 프레임워�
 
 Adobe Analytics 구성 창에 있는 구성 필드는 다음과 같습니다.
 
-![구성](assets/properties_field.png "매개 변수구성 매개 변수")
+![구성](assets/properties_field1.png "매개 변수구성 매개 변수")
 
 | 속성 | 설명 |
 |---|---|
