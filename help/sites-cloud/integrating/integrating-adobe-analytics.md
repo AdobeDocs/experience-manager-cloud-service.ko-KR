@@ -2,9 +2,9 @@
 title: Adobe Analytics와 통합
 description: 'Adobe Analytics와 통합 '
 translation-type: tm+mt
-source-git-commit: e5e199c4a457935119e3a02b87ced72d2f2de6cf
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 4%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 4%
 Adobe Analytics과 AEM을 Cloud Service으로 통합하면 웹 페이지 활동을 추적할 수 있습니다. 통합에는 다음이 필요합니다.
 
 * 터치 UI를 사용하여 AEM에서 Cloud Service 구성을 Analytics으로 만듭니다.
-* Adobe Launch의 확장으로 Adobe Analytics 추가 및 [구성](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* Adobe Launch의 확장으로 Adobe Analytics 추가 및 [구성].(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-AEM의 이전 버전과 비교하여 AEM의 Analytics 구성에서 프레임워크 지원이 Cloud Service으로 제공되지 않습니다. 대신 이제 Analytics 기능(JS 라이브러리)을 갖춘 AEM 사이트를 구현하기 위한 사실상의 도구인 Adobe 론치를 통해 수행됩니다. Adobe 론치에서 Adobe Analytics 확장을 구성하고 데이터를 Adobe Analytics으로 보내기 위한 규칙을 만드는 속성이 만들어집니다. Adobe 실행이 sitecatalyst에서 제공하는 분석 작업을 대체했습니다.
+AEM의 이전 버전과 비교하여 AEM의 Analytics 구성에서 프레임워크 지원이 Cloud Service으로 제공되지 않습니다. 대신, 이제 Analytics 기능(JS 라이브러리)이 있는 AEM 사이트를 구현하기 위한 사실상의 도구인 Adobe 론치를 통해 수행됩니다. Adobe 론치에서 Adobe Analytics 확장을 구성하고 데이터를 Adobe Analytics으로 보내기 위한 규칙을 만드는 속성이 만들어집니다. Adobe 실행이 sitecatalyst에서 제공하는 분석 작업을 대체했습니다.
 
 >[!NOTE]
 >
->Adobe Experience Manager은 기존 Analytics 계정이 없는 Cloud Service 고객으로 Experience Cloud에 대한 액세스 권한을 요청할 수 있습니다.  이 Foundation Pack은 Analytics의 볼륨 사용을 제한합니다.
+>Adobe Experience Manager은 기존 Analytics 계정이 없는 Cloud Service 고객으로 Experience Cloud에 대한 액세스 권한을 요청할 수 있습니다. 이 Foundation Pack은 Analytics의 볼륨 사용을 제한합니다.
 
 ## Analytics 구성 만들기 {#analytics-configuration}
 
@@ -33,7 +33,7 @@ AEM의 이전 버전과 비교하여 AEM의 Analytics 구성에서 프레임워�
 
 ### 구성 매개 변수 {#configuration-parameters}
 
-Adobe Analytics 구성 창에 표시되는 구성 필드는 다음과 같습니다.
+Adobe Analytics 구성 창에 있는 구성 필드는 다음과 같습니다.
 
 ![구성](assets/properties_field.png "매개 변수구성 매개 변수")
 
@@ -60,7 +60,7 @@ Adobe Analytics 구성 창에 표시되는 구성 필드는 다음과 같습니�
 
 >[!NOTE]
 >
->기존 프레임워크는 여전히 작동하지만 터치 UI에서는 구성할 수 없습니다. Launch에서 변수 매핑 구성을 다시 구성하는 것이 좋습니다.
+>기존(기존) 프레임워크는 여전히 작동하지만 터치 UI에서는 구성할 수 없습니다. Launch에서 변수 매핑 구성을 다시 구성하는 것이 좋습니다.
 
 >[!NOTE]
 >
