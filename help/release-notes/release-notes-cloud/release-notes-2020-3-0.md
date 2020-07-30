@@ -2,18 +2,17 @@
 title: 릴리스 2020.3.0 릴리스 노트
 description: 릴리스 2020.3.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 100%
+source-wordcount: '245'
+ht-degree: 94%
 
 ---
 
 
 # 클라우드 서비스 2020.3.0으로서의 AEM 릴리스 노트 {#release-notes}
 
-다음 섹션에서는 클라우드 서비스 2020.3.0으로서의 Experience Manager에 대한 일반 릴리스 노트를 간략하게 설명합니다.
-
+이 페이지에서는 Experience Manager에 대한 일반 릴리스 노트를 Cloud Service 2020.3.0으로 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
