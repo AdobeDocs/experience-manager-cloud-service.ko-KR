@@ -2,9 +2,9 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -17,18 +17,18 @@ Adobe Target을 사용하면 모든 채널에서 타깃팅과 측정을 통해 �
 * 터치 UI를 사용하여 AEM에서 Analytics 구성을 Cloud Service(IMS 구성 필요)로 만듭니다.
 * Adobe Launch의 확장으로 Adobe Analytics 추가 및 [구성](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-&quot;경험 타깃팅&quot;에 론치와의 통합이 필요합니다. 경험 조각을 Target으로 내보내려면 Adobe Target 구성 및 IMS만 있으면 됩니다.
+Adobe 실행은 AEM 페이지의 Analytics 및 Target 모두에 대한 클라이언트측 속성을 관리하는 데 필요합니다(JS 라이브러리/태그). 즉, &quot;경험 타깃팅&quot;을 위해 Launch와의 통합이 필요합니다. 경험 조각을 Target으로 내보내려면 Adobe Target 구성 및 IMS만 있으면 됩니다.
 
 >[!NOTE]
 >
->Adobe Experience Manager은 기존 Target 계정이 없는 Cloud Service 고객으로 Experience Cloud에 대한 Target Foundation Pack 액세스를 요청할 수 있습니다.  Foundation Pack은 Target의 볼륨 사용을 제한합니다.
+>Adobe Experience Manager은 기존 Target 계정이 없는 Cloud Service 고객으로 Experience Cloud에 대한 Target Foundation Pack 액세스를 요청할 수 있습니다. Foundation Pack은 Target의 볼륨 사용을 제한합니다.
 
 ## Adobe Target 구성 만들기 {#create-configuration}
 
 1. 도구 **→** Cloud Service으로 **이동합니다**.
    ![탐색](assets/cloudservice.png "탐색")
 2. Adobe Target을 **선택합니다**.
-3. 만들기 **단추를** 클릭합니다.
+3. 만들기 **단추를** 선택합니다.
    ![만들기](assets/tenant.png "만들기")
 4. 세부 사항을 채우고(아래 참조) **Connect를 선택합니다**.
    ![](assets/open_screen.png "Connect")
@@ -59,10 +59,6 @@ AEM은 Experience Platform Launch과 간편하게 통합할 수 있습니다. Ex
 >
 >기존(기존) 프레임워크는 여전히 작동하지만 터치 UI에서는 구성할 수 없습니다. Launch에서 변수 매핑 구성을 다시 구성하는 것이 좋습니다.
 
->[!NOTE]
->
->기존(기존) 프레임워크는 여전히 작동하지만 터치 UI에서는 구성할 수 없습니다. Launch에서 변수 매핑 구성을 다시 구성하는 것이 좋습니다.
-
 일반적인 개요로서 통합 단계는 다음과 같습니다.
 
 1. 론치 속성 만들기
@@ -83,7 +79,7 @@ AEM은 Experience Platform Launch과 간편하게 통합할 수 있습니다. Ex
 
 ### 필요한 확장 추가 {#add-extension}
 
-익스텐션은 핵심 라이브러리 설정을 관리하는 컨테이너입니다. Adobe Target 익스텐션은 최신 웹 at.js용 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. Adobe Target **및** Adobe ContextHub **** 확장을 모두 추가해야 합니다.
+**익스텐션은** 핵심 라이브러리 설정을 관리하는 컨테이너입니다. Adobe Target 익스텐션은 최신 웹 at.js에 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. Adobe Target **및** Adobe ContextHub **** 확장을 모두 추가해야 합니다.
 
 1. [확장 카탈로그] 옵션을 선택하고 필터에서 Target을 검색합니다.
 2. at.js **를** 선택하고 설치 옵션을 클릭합니다.
@@ -95,7 +91,7 @@ AEM은 Experience Platform Launch과 간편하게 통합할 수 있습니다. Ex
 
 ### 데이터 요소 만들기 {#data-element}
 
-데이터 요소는 컨텍스트 허브 매개 변수를 매핑할 수 있는 자리 표시자입니다.
+**데이터 요소는** 컨텍스트 허브 매개 변수를 매핑할 수 있는 자리 표시자입니다.
 
 1. 데이터 **요소를 선택합니다**.
 2. 데이터 **요소 추가를 선택합니다**.
@@ -105,7 +101,7 @@ AEM은 Experience Platform Launch과 간편하게 통합할 수 있습니다. Ex
 
 ### 페이지 규칙 만들기 {#page-rule}
 
-규칙에서 타깃팅을 수행하기 위해 사이트에서 실행되는 일련의 작업을 정의하고 순서를 지정합니다.
+규칙 **에서** 타깃팅을 수행하기 위해 사이트에서 실행되는 일련의 작업을 정의하고 순서를 지정합니다.
 
 1. 스크린샷에 나타난 것처럼 일련의 동작을 추가합니다.
    ![작업](assets/rules.png "작업")
