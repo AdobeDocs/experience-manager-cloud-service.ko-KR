@@ -1,18 +1,18 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.5.0용 릴리스 노트
 description: Experience Manager 2020.5.0용 릴리스 노트
-translation-type: ht
-source-git-commit: 06a56b0ca8000a41fe4e492206459b1525aae59d
-workflow-type: ht
-source-wordcount: '374'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 96%
 
 ---
 
 
 # 클라우드 서비스 2020.5.0으로서의 AEM 릴리스 노트 {#release-notes}
 
-다음 섹션에서는 클라우드 서비스 2020.5.0으로서의 Experience Manager에 대한 일반 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 Experience Manager에 대한 일반 릴리스 노트를 Cloud Service 2020.5.0으로 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
