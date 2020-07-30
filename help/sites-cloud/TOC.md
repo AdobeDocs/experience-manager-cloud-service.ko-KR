@@ -3,7 +3,7 @@ sub-product: 클라우드 서비스로서의 AEM에서 컨텐츠 작성
 user-guide-title: 클라우드 서비스로서의 AEM에서 컨텐츠 작성
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
@@ -73,5 +73,5 @@ ht-degree: 100%
       + [오퍼 생성 및 관리](authoring/personalization/offers.md)
       + [세그멘테이션 이해](authoring/personalization/segmentation.md)
 + 클라우드 서비스로서의 AEM과 통합 {#integrations}
-   + [Adobe Analytics와 통합](integrating/adobe-analytics.md)
-   + [Adobe Target과 통합](integrating/adobe-target.md)
+   + [Adobe Analytics와 통합](integrating/integrating-adobe-analytics.md)
+   + [Adobe Target과 통합](integrating/integrating-adobe-target.md)
