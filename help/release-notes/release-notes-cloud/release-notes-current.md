@@ -2,10 +2,10 @@
 title: Cloud Service의 2020.7.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.7.0).'
 translation-type: tm+mt
-source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
+source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 6%
+source-wordcount: '968'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * 새 사용자 인터페이스 구현은 클래식 UI에 따른 구현을 대체합니다.
 
-* 사용자 인터페이스 대화 상자가 간소화되면서 변수 매핑 및 기타 구성을 위한 프레임워크 생성이 종료됩니다 [!DNL Adobe Launch].
+* 사용자 인터페이스 대화 상자가 간소화되면서 변수 매핑 및 기타 구성을 위한 프레임워크 생성이 종료됩니다 [!DNL Adobe Launch]. Adobe Analytics [통합](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 및 Adobe Target [통합을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
 
 * 이제 구성은 Experience Manager 저장소가 `/conf` 아닌 `/etc/cloudsettings` 에 저장됩니다.
 
