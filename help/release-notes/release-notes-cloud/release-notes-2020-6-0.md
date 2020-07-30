@@ -2,17 +2,17 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.6.0용 릴리스 노트
 description: Experience Manager 2020.6.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1948'
+ht-degree: 98%
 
 ---
 
 
 # 클라우드 서비스 2020.6.0으로서의 AEM 릴리스 노트 {#release-notes}
 
-다음 섹션에서는 클라우드 서비스 2020.6.0으로서의 Experience Manager에 대한 일반 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 Experience Manager에 대한 일반 릴리스 노트를 Cloud Service 2020.6.0으로 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
