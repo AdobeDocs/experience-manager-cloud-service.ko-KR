@@ -2,7 +2,7 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -26,12 +26,12 @@ Adobe 실행은 AEM 페이지의 Analytics 및 Target 모두에 대한 클라이
 ## Adobe Target 구성 만들기 {#create-configuration}
 
 1. 도구 **→** Cloud Service으로 **이동합니다**.
-   ![탐색](assets/cloudservice.png "탐색")
+   ![탐색](assets/cloudservice1.png "탐색")
 2. Adobe Target을 **선택합니다**.
 3. 만들기 **단추를** 선택합니다.
-   ![만들기](assets/tenant.png "만들기")
+   ![만들기](assets/tenant1.png "만들기")
 4. 세부 사항을 채우고(아래 참조) **Connect를 선택합니다**.
-   ![](assets/open_screen.png "Connect")
+   ![](assets/open_screen1.png "Connect")
 
 ### IMS 구성
 
@@ -44,7 +44,7 @@ Target 구성을 편집하려면 다음 단계를 수행합니다.
 1. 기존 구성을 선택하고 속성 **을 클릭합니다**.
 2. 속성을 편집합니다.
 3. Adobe Target **에 다시 연결을 선택합니다**.
-   ![다시](assets/edit_config_page.png "연결다시 연결")
+   ![다시](assets/edit_config_page1.png "연결다시 연결")
 4. **저장 후 닫기**&#x200B;를 선택합니다.
 
 ### 사이트에 구성 추가 {#add-configuration}
@@ -75,7 +75,7 @@ AEM은 Experience Platform Launch과 간편하게 통합할 수 있습니다. Ex
 2. 속성의 이름을 입력합니다.
 3. 도메인이 론치 라이브러리를 로드할 IP/호스트를 입력합니다.
 4. 저장 **단추를** 선택합니다.
-   ![Launchproperty](assets/properties_newproperty.png "Launchproperty")
+   ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### 필요한 확장 추가 {#add-extension}
 
@@ -83,10 +83,10 @@ AEM은 Experience Platform Launch과 간편하게 통합할 수 있습니다. Ex
 
 1. [확장 카탈로그] 옵션을 선택하고 필터에서 Target을 검색합니다.
 2. at.js **를** 선택하고 설치 옵션을 클릭합니다.
-   ![Target](assets/search_ext.png "SearchTarget 검색")
+   ![Target](assets/search_ext1.png "SearchTarget 검색")
 3. Select the **Configure** button. Target 계정 자격 증명을 가져온 구성 창과 이 확장 기능에 대한 at.js 버전을 확인하십시오.
 4. 저장 **을** 선택하여 Target 확장을 Launch 속성에 추가합니다. 설치된 확장 목록 아래에 Target 확장 기능이 **나열되어** 있어야 합니다.
-   ![확장](assets/configure_extension.png "저장 확장 기능 저장")
+   ![확장](assets/configure_extension1.png "저장 확장 기능 저장")
 5. 위의 단계를 반복하여 **Adobe ContextHub** 확장 기능을 검색하고 설치합니다(타깃팅이 수행되는 대상에 따라 contexthub 매개 변수를 통합하는 데 필요합니다).
 
 ### 데이터 요소 만들기 {#data-element}
@@ -97,16 +97,16 @@ AEM은 Experience Platform Launch과 간편하게 통합할 수 있습니다. Ex
 2. 데이터 **요소 추가를 선택합니다**.
 3. 데이터 요소의 이름을 입력하고 컨텍스트 허브 매개 변수에 매핑합니다.
 4. select **Save**.
-   ![데이터](assets/data_elem.png "요소데이터 요소")
+   ![데이터](assets/data_elem1.png "요소데이터 요소")
 
 ### 페이지 규칙 만들기 {#page-rule}
 
 규칙 **에서** 타깃팅을 수행하기 위해 사이트에서 실행되는 일련의 작업을 정의하고 순서를 지정합니다.
 
 1. 스크린샷에 나타난 것처럼 일련의 동작을 추가합니다.
-   ![작업](assets/rules.png "작업")
+   ![작업](assets/rules1.png "작업")
 2. 모든 mbox에 매개 변수 추가에서 이전에 구성된 데이터 요소(위의 데이터 요소 참조)를 mbox 호출에서 전송할 매개 변수에 추가합니다.
-   ![mbox](assets/map_data.png "Actions")
+   ![mbox](assets/map_data1.png "Actions")
 
 ### 빌드 및 게시 {#build-publish}
 
