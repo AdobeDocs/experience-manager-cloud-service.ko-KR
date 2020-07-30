@@ -2,17 +2,17 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 2020.4.0용 릴리스 노트
 description: Experience Manager 2020.4.0용 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '654'
+ht-degree: 98%
 
 ---
 
 
 # 클라우드 서비스로서의 Adobe Experience Manager 2020.4.0 릴리스 노트 {#release-notes}
 
-다음 섹션에서는 클라우드 서비스 2020.4.0으로서의 [!DNL Experience Manager]에 대한 일반 릴리스 노트를 간략하게 설명합니다.
+This page outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
 
 ## 릴리스 날짜 {#release-date}
 
