@@ -3,15 +3,15 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '2246'
 ht-degree: 1%
 
 ---
 
 
-# 자산 마이크로서비스 사용 시작 {#get-started-using-asset-microservices}
+# 에셋 마이크로서비스 및 처리 프로필 사용 {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -23,11 +23,11 @@ ht-degree: 1%
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
 -->
 
-에셋 마이크로서비스는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적으로 처리할 수 있습니다. Adobe는 다양한 자산 유형 및 처리 옵션을 적절하게 처리하기 위해 서비스를 관리합니다.
+에셋 마이크로서비스는 클라우드 서비스를 사용하여 에셋을 확장 가능하고 탄력적으로 처리할 수 있습니다. Adobe은 다양한 자산 유형 및 처리 옵션에 대한 최적의 처리를 위해 서비스를 관리합니다.
 
 자산 처리는 기본 설정을 제공하고 관리자가 보다 구체적인 자산 처리 구성을 추가할 수 있도록 **[!UICONTROL 해주는 처리]**&#x200B;프로필의 구성에 따라 다릅니다. 관리자는 사용자 정의 옵션을 포함하여 사후 처리 워크플로우의 구성을 만들고 유지 관리할 수 있습니다. 사용자 정의 워크플로우를 통해 확장 및 사용자 정의
 
-에셋 마이크로서비스를 사용하면 이전 버전의 Experience Manager에서 가능한 것보다 더 많은 포맷을 즉시 포함하는 [다양한 파일 유형을](/help/assets/file-format-support.md) 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
+Asset microservices allows you can process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -38,78 +38,116 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
->여기에 설명된 자산 처리는 이전 버전의 Experience Manager에 있는 `DAM Update Asset` 워크플로우 모델을 대체합니다. 대부분의 표준 변환 생성 및 메타데이터 관련 단계는 에셋 마이크로 서비스 처리로 대체되며, 나머지 단계는 처리 후 워크플로우 구성으로 대체할 수 있습니다.
+>여기에 설명된 자산 처리는 이전 버전의 워크플로우 모델을 대체합니다 `DAM Update Asset` [!DNL Experience Manager]. 대부분의 표준 변환 생성 및 메타데이터 관련 단계는 에셋 마이크로서비스 처리로 대체되며, 나머지 단계는(있는 경우) 사후 처리 워크플로우 구성으로 대체할 수 있습니다.
 
-## 자산 처리 시작 {#get-started}
+## 자산 처리 옵션 이해 {#get-started}
 
-자산 마이크로서비스를 사용한 자산 처리는 기본 구성으로 미리 구성되므로 시스템에 필요한 기본 변환을 사용할 수 있습니다. 또한 메타데이터 추출 및 텍스트 추출 작업을 사용할 수 있습니다. 사용자는 에셋을 즉시 업로드하거나 업데이트할 수 있으며 기본 처리는 기본적으로 사용할 수 있습니다.
+Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행할 수 있습니다.
 
-특정 변환 생성 또는 자산 처리 요구 사항에 대해 AEM 관리자가 추가 [!UICONTROL 처리 프로필을 만들 수 있습니다]. 사용자는 특정 폴더에 하나 이상의 사용 가능한 프로필을 할당하여 추가 처리를 수행할 수 있습니다. 예를 들어 웹, 모바일 및 태블릿별 변환을 생성합니다. 다음 비디오에서는 처리 프로필을 만들고 적용하는 방법 [!UICONTROL 과] 만들어진 표현물에 액세스하는 방법을 보여 줍니다.
+| 구성 | 설명 | 활용 사례 |
+|---|---|---|
+| [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | 사용자 인터페이스에 사용되는 표준 축소판(48, 140 및 319px) [!DNL Assets] 대규모 미리 보기(웹 변환 - 1280px); 메타데이터 및 텍스트 추출 |
+| [표준 구성](#standard-config) | 관리자가 사용자 인터페이스만 통해 구성합니다. 위의 기본 구성보다 더 많은 변환 생성 옵션을 제공합니다. | 이미지의 형식 및 해상도 변경 FPO 변환 생성. |
+| [사용자 지정 구성](#custom-config) | 관리자가 사용자 인터페이스를 통해 보다 복잡한 요구 사항을 지원하는 사용자 지정 작업자를 호출하도록 구성합니다. Leverages a cloud-native [!DNL Asset Compute Service]. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
-
-기존 프로필을 변경하려면 자산 마이크로서비스에 대한 [구성을 참조하십시오](#configure-asset-microservices).
 사용자 지정 요구 사항에 맞는 사용자 지정 처리 프로필을 만들려면 다른 시스템과 통합하라고 [하십시오](#post-processing-workflows).
 
-## 에셋 마이크로서비스 구성 {#configure-asset-microservices}
-
-자산 마이크로서비스를 구성하려면 관리자가 도구 > 자산 > 처리 프로필에서 구성 사용자 인터페이스를 사용할 **[!UICONTROL 수 있습니다]**.
-
-### 기본 구성 {#default-config}
-
-기본 구성으로 표준 처리 프로필만 구성됩니다. 표준 처리 프로필은 사용자 인터페이스에 표시되지 않으며 수정할 수 없습니다. 업로드된 자산을 처리하기 위해 항상 실행합니다. 표준 처리 프로필은 Experience Manager에 필요한 모든 기본 처리가 모든 자산에 대해 완료되도록 합니다.
-
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
-
-표준 처리 프로필은 다음 처리 구성을 제공합니다.
-
-* 에셋 사용자 인터페이스에 사용되는 표준 축소판(48, 140 및 319px)
-* 대규모 미리 보기(웹 변환 - 1280px)
-* 메타데이터 추출
-* 텍스트 추출
-
-### 지원되는 파일 형식 {#supported-file-formats}
+## 지원되는 파일 형식 {#supported-file-formats}
 
 에셋 마이크로서비스는 변환을 생성하거나 메타데이터를 추출하는 기능 측면에서 다양한 파일 형식을 지원합니다. 전체 목록은 [지원되는](file-format-support.md) 파일 형식을 참조하십시오.
 
-### 추가 처리 프로필 추가 {#processing-profiles}
+## 기본 구성 {#default-config}
 
-만들기 작업을 사용하여 추가 처리 프로필을 추가할 **[!UICONTROL 수]** 있습니다.
+일부 기본값은 Experience Manager에 필요한 기본 변환을 사용할 수 있도록 미리 구성되어 있습니다. 기본 구성을 통해 메타데이터 추출 및 텍스트 추출 작업을 사용할 수 있습니다. 사용자는 에셋을 즉시 업로드하거나 업데이트할 수 있으며 기본 처리는 기본적으로 사용할 수 있습니다.
 
-각 처리 프로필 구성에는 변환 목록이 포함됩니다. 각 변환에 대해 다음을 지정할 수 있습니다.
+기본 구성을 사용하는 경우 가장 기본적인 처리 프로필만 구성됩니다. 이러한 처리 프로필은 사용자 인터페이스에 표시되지 않으며 수정할 수 없습니다. 업로드된 자산을 처리하기 위해 항상 실행합니다. 이러한 기본 처리 프로필은 에 필요한 기본 처리가 모든 자산에 대해 완료되도록 [!DNL Experience Manager] 합니다.
 
-* 변환 이름.
-* 지원되는 변환 형식(예: JPEG, PNG 또는 GIF).
-* 변환 너비 및 높이(픽셀 단위) 지정하지 않으면 원본 이미지의 전체 픽셀 크기가 사용됩니다.
-* JPEG의 변환 품질을 백분율로 나타낸 것입니다.
-* 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+-->
+
+## 표준 프로필 {#standard-config}
+
+[!DNL Experience Manager] 사용자의 요구 사항에 따라 일반 포맷에 대한 보다 구체적인 표현물을 생성할 수 있는 기능을 제공합니다. 관리자는 추가 [!UICONTROL 처리] 프로필을 만들어 이러한 변환을 쉽게 만들 수 있습니다. 그런 다음 사용자는 특정 폴더에 하나 이상의 사용 가능한 프로파일을 할당하여 추가 처리를 완료합니다. 예를 들어, 추가 처리에서는 웹, 모바일 및 태블릿용 변환을 생성할 수 있습니다. 다음 비디오에서는 처리 프로필을 만들고 적용하는 방법 [!UICONTROL 과] 만들어진 표현물에 액세스하는 방법을 보여 줍니다.
+
+* **Rendition width and height**: Rendition width and height specification provides maximum sizes of the generated output image. 에셋 마이크로서비스는 폭 및 높이가 각각 지정된 폭과 높이보다 크지 않은 가장 큰 변환을 생성하려고 시도합니다. The aspect ratio is preserved, that is the same as the original. 비어 있는 값은 자산 처리가 원본 픽셀 크기를 가정함을 의미합니다.
+
+* **MIME 형식 포함 규칙**: 특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 해당 목록과 일치하는 경우 자산(차단 목록)에 대해 특정 변환이 생성되지 않습니다. 그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(허용 목록).
+
+* **특수 FPO 변환**: 큰 크기의 에셋을 [!DNL Experience Manager] 문서로 가져올 때 크리에이티브 전문가는 에셋을 [!DNL Adobe InDesign] 배치한 후 상당한 시간 [을 기다립니다](https://helpx.adobe.com/indesign/using/placing-graphics.html). 그 동안 사용자는 사용이 차단되었습니다 [!DNL InDesign]. 크리에이티브 흐름을 가로막으며 사용자 경험에 부정적인 영향을 줍니다. Adobe을 사용하면 [!DNL InDesign] 문서에서 작은 크기의 표현물을 일시적으로 삽입할 수 있으므로 나중에 온디맨드 방식으로 전체 해상도 자산으로 대체할 수 있습니다. [!DNL Experience Manager] 는 배치에만 사용되는 표현물(FPO)을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 종횡비가 동일합니다.
+
+처리 프로필에는 FPO(배치에만 해당) 변환이 포함될 수 있습니다. 처리 [!DNL Adobe Asset Link] 프로필에 맞게 [설정해야 하는지 알아보려면 설명서를 참조하십시오](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) . 자세한 내용은 [Adobe 자산 링크 전체 설명서를 참조하십시오](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html).
+
+### 표준 프로필 만들기 {#create-standard-profile}
+
+표준 처리 프로필을 만들려면 다음 단계를 수행하십시오.
+
+1. 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**&#x200B;에 액세스합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 폴더에 적용할 때 프로파일을 고유하게 식별하는 데 도움이 되는 이름을 제공합니다.
+1. FPO 변환을 생성하려면 **[!UICONTROL 표준]** 탭에서 FPO 변환 **[!UICONTROL 만들기를]**&#x200B;활성화합니다. 1과 **[!UICONTROL 100 사이의]** 품질 값을 입력합니다.
+1. 다른 변환을 생성하려면 새로 **[!UICONTROL 추가]** 를 클릭하고 다음 정보를 입력합니다.
+
+   * 각 변환의 파일 이름입니다.
+   * 각 변환의 파일 형식(PNG, JPEG 또는 GIF)입니다.
+   * 각 변환의 너비 및 높이(픽셀 단위) 값을 지정하지 않으면 원본 이미지의 전체 픽셀 크기가 사용됩니다.
+   * 각 JPEG 변환의 품질(%)
+   * 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
 
 ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
-새 처리 프로필을 만들고 저장하면 구성된 처리 프로필 목록에 추가됩니다. 이러한 처리 프로필을 폴더 계층 구조의 폴더에 적용하여 자산 업로드 및 자산 처리를 효과적으로 수행할 수 있습니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+다음 비디오에서는 표준 프로필의 유용성과 사용 방법을 보여줍니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 
 <!-- Removed per cqdoc-15624 request by engineering.
- ![processing-profiles-list](assets/processing-profiles-list.png) -->
+ ![processing-profiles-list](assets/processing-profiles-list.png) 
+ -->
 
-#### 변환 너비 및 높이 {#rendition-width-height}
+## 사용자 지정 프로필 및 사용 사례 {#custom-config}
 
-변환 폭 및 높이 사양은 생성된 출력 이미지의 최대 크기를 제공합니다. 에셋 마이크로서비스는 폭과 높이가 각각 지정된 폭과 높이보다 크지 않은 가장 큰 변환을 생성하려고 시도합니다. 종횡비는 그대로 유지되며 원본과 동일합니다.
+**TBD 항목**:
 
-비어 있는 값은 자산 처리가 원본 픽셀 크기를 가정함을 의미합니다.
+* 확장성 콘텐츠와 전체 교차 연결
+* 작업자의 URL을 가져오는 방법을 설명합니다. 개발, 준비 및 제품 환경을 위한 작업자 URL
+* 서비스 매개 변수의 언급 매핑을 참조하십시오. 계산 서비스 아티클에 대한 링크입니다.
+* Jira 티켓에서 공유된 흐름 원근감을 검토합니다.
 
-#### MIME 형식 포함 규칙 {#mime-type-inclusion-rules}
+조직의 요구 사항이 다르므로 기본 구성을 사용하여 일부 복잡한 자산 처리 사용 사례를 수행할 수 없습니다. Adobe [!DNL Asset Compute Service] 는 이러한 사용 사례를 제공합니다. 디지털 자산을 처리할 수 있는 확장 가능한 서비스입니다. 이미지, 비디오, 문서 및 기타 파일 포맷을 축소판, 추출한 텍스트 및 메타데이터, 보관 파일 등 다양한 변환으로 변환할 수 있습니다.
 
-특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 해당 목록과 일치하는 경우 자산(차단 목록)에 대해 특정 변환이 생성되지 않습니다.
+개발자는 Asset Compute Service를 사용하여 미리 정의된 복잡한 사용 사례를 필요로 하는 특수 사용자 지정 작업자를 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 작업자를 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 다음 사용 사례를 지원합니다.
 
-그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(허용 목록).
+* Adobe Sensei을 사용하여 디지털 자산에 대한 사용자 정의 고급 스마트 태그를 생성할 수 있습니다.
+* Adobe Sensei을 사용하여 대상의 자르기 마스크를 생성할 수 있습니다.
+* PIM 시스템에서 제품 메타데이터 정보를 검색하고 자산을 수집하는 동안 메타데이터가 자산의 바이너리에 포함됩니다.
+* API를 사용하여 투명한 이미지의 배경색을 [!DNL Adobe Photoshop] 변경합니다.
+* API를 사용하여 이미지 수정 [!DNL Photoshop]
+* API를 사용하여 이미지를 똑바르게 [!DNL Adobe Lightroom] 합니다.
 
-#### 특수 FPO 변환 {#special-fpo-rendition}
+>[!NOTE]
+>
+>사용자 지정 작업자를 사용하여 표준 메타데이터를 편집할 수는 없습니다. 사용자 지정 메타데이터만 수정할 수 있습니다.
 
-AEM의 큰 자산을 Adobe InDesign 문서로 가져올 때 크리에이티브 전문가는 자산을 [배치한 후 상당한 시간을 기다려야 합니다](https://helpx.adobe.com/indesign/using/placing-graphics.html). 반면 사용자는 InDesign을 사용할 수 없습니다. 크리에이티브 흐름을 가로막으며 사용자 경험에 부정적인 영향을 줍니다. Adobe는 InDesign 문서에서 작은 크기의 변환을 임시로 배치함으로써 나중에 전체 해상도 에셋으로 대체될 수 있습니다. Experience Manager은 배치 전용(FPO)에 사용되는 변환을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 종횡비가 동일합니다.
+### 사용자 정의 프로필 만들기 {#create-custom-profile}
 
-처리 프로필에는 FPO(배치에만 해당) 변환이 포함될 수 있습니다. 처리 프로필에 맞게 설정해야 하는지 확인하려면 Adobe Asset Link [설명서를](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 참조하십시오. 자세한 내용은 [Adobe Asset Link 전체 설명서를 참조하십시오](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html).
+사용자 지정 프로필을 만들려면 다음 단계를 수행하십시오.
 
-## 에셋 마이크로서비스를 사용하여 에셋 처리 {#use-asset-microservices}
+1. 관리자는 도구 **[!UICONTROL > 자산 > 처리 프로필에 액세스합니다]**. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. Click on **[!UICONTROL Custom]** tab. 새로 **[!UICONTROL 추가를 클릭합니다]**. 변환의 원하는 파일 이름을 입력합니다.
+1. 다음 정보를 입력하고 [저장]을 **[!UICONTROL 클릭합니다]**.
+
+   * 각 변환의 파일 이름 및 지원되는 파일 확장자입니다.
+   * Firefly 사용자 지정 앱의 끝점 URL입니다. 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
+   * 필요에 따라 서비스 매개 변수를 추가합니다.
+   * 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
+
+![custom-processing-profile](assets/custom-processing-profile.png)
+
+>[!CAUTION]
+>
+>Firefox 앱 및 [!DNL Experience Manager] 계정이 동일한 조직의 계정이 아닌 경우 통합이 작동하지 않습니다.
+
+## 처리 프로필을 사용하여 자산 처리 {#use-profiles}
 
 추가 사용자 정의 처리 프로필을 만들어 Experience Manager의 특정 폴더에 적용하여 이러한 폴더에 업로드되거나 업데이트된 자산에 대해 처리합니다. 기본 내장 표준 처리 프로필은 항상 실행되지만 사용자 인터페이스에 표시되지 않습니다. 사용자 지정 프로필을 추가하는 경우 두 프로필 모두 업로드된 자산을 처리하는 데 사용됩니다.
 
@@ -138,7 +176,7 @@ AEM의 큰 자산을 Adobe InDesign 문서로 가져올 때 크리에이티브 �
 
 처리 프로필을 사용하여 얻을 수 없는 자산의 추가 처리가 필요한 경우 추가 사후 처리 워크플로우를 구성에 추가할 수 있습니다. 이를 통해 자산 마이크로 서비스를 사용하여 구성 가능한 처리 위에 완전히 사용자 정의된 처리를 추가할 수 있습니다.
 
-사후 처리 워크플로우는 구성된 경우 마이크로서비스 처리가 완료된 후 AEM에서 자동으로 실행됩니다. 워크플로우 런터을 수동으로 추가하여 트리거할 필요가 없습니다. 이러한 예는 다음과 같습니다.
+사후 처리 워크플로우는 마이크로서비스 처리가 끝난 후 AEM에서 자동으로 실행됩니다(구성된 경우). 워크플로우 런터을 수동으로 추가하여 트리거할 필요가 없습니다. 이러한 예는 다음과 같습니다.
 
 * 자산을 처리하는 사용자 정의 워크플로우 단계
 * 제품 또는 프로세스 정보 등 외부 시스템의 자산에 메타데이터 또는 속성을 추가하는 통합
