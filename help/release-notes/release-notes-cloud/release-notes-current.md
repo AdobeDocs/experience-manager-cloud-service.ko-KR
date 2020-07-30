@@ -2,9 +2,9 @@
 title: Cloud Service의 2020.7.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.7.0).'
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '942'
 ht-degree: 6%
 
 ---
@@ -55,7 +55,8 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * 새로운 [PDF 뷰어 구성 요소](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)소개
 
-* 핵심 구성 요소의 AMP(Accelerated Mobile Pages) 지원을 활용하면 Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 사용자 참여도와 SEO를 향상시킴으로써 고객 경험을 신속하게 제작할 수 있습니다.
+* 이제 핵심 구성 요소에 대한 AMP(가속 모바일 페이지) 지원을 사용할 수 있습니다. Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 사용자 참여도와 SEO를 향상시킴으로써 고객 경험을 신속하게 제작할 수 있습니다.
+자세한 내용은 [핵심 구성 요소에 대한](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) AMP 지원을 참조하십시오.
 
 * Adobe 클라이언트 데이터 레이어의 버전 1.0.2와의 [호환성](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html).
 
