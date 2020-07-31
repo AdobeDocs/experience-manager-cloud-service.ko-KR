@@ -2,7 +2,7 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
+source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 Adobe Target을 사용하면 모든 채널에서 타깃팅과 측정을 통해 컨텐츠 관련성을 높일 수 있습니다. Adobe Target과 AEM을 Cloud Service으로 통합하려면 다음을 수행해야 합니다.
 
 * 터치 UI를 사용하여 AEM에서 Analytics 구성을 Cloud Service(IMS 구성 필요)로 만듭니다.
-* Adobe Launch의 확장으로 Adobe Analytics 추가 및 [구성](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* Adobe Target 추가 및 구성을 [Adobe Launch에서 확장으로 지정합니다](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 Adobe 실행은 AEM 페이지의 Analytics 및 Target 모두에 대한 클라이언트측 속성을 관리하는 데 필요합니다(JS 라이브러리/태그). 즉, &quot;경험 타깃팅&quot;을 위해 Launch와의 통합이 필요합니다. 경험 조각을 Target으로 내보내려면 Adobe Target 구성 및 IMS만 있으면 됩니다.
 
