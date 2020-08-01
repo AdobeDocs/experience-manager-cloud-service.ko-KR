@@ -3,9 +3,9 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
+source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2405'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 1%
 
 에셋 마이크로서비스는 클라우드 서비스를 사용하여 에셋을 확장 가능하고 탄력적으로 처리할 수 있습니다. Adobe은 다양한 자산 유형 및 처리 옵션에 대한 최적의 처리를 위해 서비스를 관리합니다.
 
-자산 처리는 기본 설정을 제공하고 관리자가 보다 구체적인 자산 처리 구성을 추가할 수 있도록 **[!UICONTROL 해주는 처리]**&#x200B;프로필의 구성에 따라 다릅니다. 관리자는 사용자 정의 옵션을 포함하여 사후 처리 워크플로우의 구성을 만들고 유지 관리할 수 있습니다. 사용자 정의 워크플로우를 통해 확장 및 사용자 정의
+자산 처리는 기본 설정을 제공하는 **[!UICONTROL 처리]**&#x200B;프로필의 구성에 따라 다르며, 관리자가 보다 구체적인 자산 처리 구성을 추가할 수 있도록 합니다. 관리자는 사용자 정의 옵션을 포함하여 사후 처리 워크플로우의 구성을 만들고 유지 관리할 수 있습니다. 사용자 정의 워크플로우를 통해 확장 및 사용자 정의
 
-에셋 마이크로서비스를 사용하면 이전 버전의 Experience Manager에서 가능한 것보다 더 많은 포맷을 즉시 포함하는 [다양한 파일 유형을](/help/assets/file-format-support.md) 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
+에셋 마이크로서비스를 사용하면 이전 버전의 Experience Manager에서 [가능한 것보다 더 많은 포맷을 즉시](/help/assets/file-format-support.md) 포함하는 광범위한 파일 유형을 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -44,17 +44,18 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행할 수 있습니다.
 
-| 구성 | 설명 | 활용 사례 |
+| 옵션 | 설명 | 활용 사례 |
 |---|---|---|
-| [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | 사용자 인터페이스에 사용되는 표준 축소판(48, 140 및 319px) [!DNL Assets] 대규모 미리 보기(웹 변환 - 1280px); 메타데이터 및 텍스트 추출 |
-| [표준 구성](#standard-config) | 관리자가 사용자 인터페이스만 통해 구성합니다. 위의 기본 구성보다 더 많은 변환 생성 옵션을 제공합니다. | 이미지의 형식 및 해상도 변경 FPO 변환 생성. |
-| [사용자 지정 구성](#custom-config) | 관리자가 사용자 인터페이스를 통해 보다 복잡한 요구 사항을 지원하는 사용자 지정 작업자를 호출하도록 구성합니다. 클라우드 기반의 솔루션을 활용합니다 [!DNL Asset Compute Service]. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
+| [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | <ul> <li>사용자 인터페이스에 사용되는 표준 축소판(48, 140 및 319px) [!DNL Assets] </li> <li> 대규모 미리 보기(웹 변환 - 1280px) </li><li> 메타데이터 및 텍스트 추출</li></ul> |
+| [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 변환 생성을 위한 더 많은 옵션을 제공합니다. 즉시 사용 가능한 작업자를 확장하여 다른 형식 및 변환을 제공합니다. | <ul><li>FPO 변환. </li> <li>이미지 파일 포맷 및 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
+| [사용자 지정 프로필](#custom-config) | 사용자 지정 작업자를 통해 사용자 지정 코드를 사용하여 호출하는 사용자 인터페이스를 통해 관리자가 구성합니다 [!DNL Asset Compute Service]. 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
 
-사용자 지정 요구 사항에 맞는 사용자 지정 처리 프로필을 만들려면 다른 시스템과 통합하라고 [하십시오](#post-processing-workflows).
+<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+-->
 
 ## 지원되는 파일 형식 {#supported-file-formats}
 
-에셋 마이크로서비스는 변환을 생성하거나 메타데이터를 추출하는 기능 측면에서 다양한 파일 형식을 지원합니다. 전체 목록은 [지원되는](file-format-support.md) 파일 형식을 참조하십시오.
+에셋 마이크로서비스는 메타데이터를 처리, 생성 또는 추출할 수 있는 다양한 파일 형식을 지원합니다. MIME 형식의 전체 목록과 각 유형에 대해 지원되는 기능에 대해서는 [지원되는 파일 형식을](file-format-support.md) 참조하십시오.
 
 ## 기본 구성 {#default-config}
 
@@ -65,7 +66,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## 표준 프로필 {#standard-config}
+## 표준 구성 {#standard-config}
 
 [!DNL Experience Manager] 사용자의 요구 사항에 따라 일반 포맷에 대한 보다 구체적인 표현물을 생성할 수 있는 기능을 제공합니다. 관리자는 추가 [!UICONTROL 처리] 프로필을 만들어 이러한 변환을 쉽게 만들 수 있습니다. 그런 다음 사용자는 특정 폴더에 하나 이상의 사용 가능한 프로파일을 할당하여 추가 처리를 완료합니다. 예를 들어, 추가 처리에서는 웹, 모바일 및 태블릿용 변환을 생성할 수 있습니다. 다음 비디오에서는 처리 프로필을 만들고 적용하는 방법 [!UICONTROL 과] 만들어진 표현물에 액세스하는 방법을 보여 줍니다.
 
@@ -96,11 +97,14 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-다음 비디오에서는 표준 프로필의 유용성과 사용 방법을 보여줍니다.
+<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+
+The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+-->
 
-<!-- Removed per cqdoc-15624 request by engineering.
+<!-- This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -114,14 +118,20 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 * Review from flow perspective shared in Jira ticket.
 -->
 
-조직의 요구 사항이 다르므로 기본 구성을 사용하여 일부 복잡한 자산 처리 사용 사례를 수행할 수 없습니다. Adobe [!DNL Asset Compute Service] 는 이러한 사용 사례를 제공합니다. 디지털 자산을 처리할 수 있는 확장 가능한 서비스입니다. 이미지, 비디오, 문서 및 기타 파일 포맷을 축소판, 추출한 텍스트 및 메타데이터, 보관 파일 등 다양한 변환으로 변환할 수 있습니다.
+이 [!DNL Asset Compute Service] 는 기본 처리, Photoshop 파일과 같은 Adobe 관련 형식 처리, 사용자 지정 또는 조직별 처리 구현 등의 다양한 사용 사례를 지원합니다. 이전에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 기본적으로 처리되거나 UI에서 처리 프로필 구성을 통해 처리됩니다. 이 처리에서 비즈니스 요구 사항을 충족하지 않는 경우, 기본 기능을 확장하려면 자산 계산 서비스를 개발 및 사용하는 것이 좋습니다.
 
-개발자는 Asset Compute Service를 사용하여 미리 정의된 복잡한 사용 사례를 필요로 하는 특수 사용자 지정 작업자를 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 작업자를 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
+>[!NOTE]
+>
+>기본 구성이나 표준 프로파일을 사용하여 비즈니스를 수행할 수 없는 경우에만 사용자 지정 작업자를 사용하는 것이 좋습니다.
 
-* 이미지 컷아웃 API를 [!DNL Adobe Photoshop] 호출하고 결과를 변환으로 저장합니다.
+이미지, 비디오, 문서 및 기타 파일 포맷을 축소판, 추출한 텍스트 및 메타데이터, 보관 파일 등 다양한 변환으로 변환할 수 있습니다.
+
+개발자는 이 [!DNL Asset Compute Service] 를 사용하여 사전 정의된 사용 사례를 필요로 하는 전문 맞춤형 작업자를 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 작업자를 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
+
+* 의 [!DNL Adobe Photoshop]ImageCutout API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 를 사용하고 결과를 변환으로 저장합니다.
 * 서드파티 시스템을 호출하여 데이터를 업데이트합니다(예: PIM 시스템).
 * API를 사용하여 Photoshop 템플릿을 기반으로 다양한 변환을 생성할 수 있습니다. [!DNL Photoshop]
-* API를 사용하여 인제스트한 자산을 최적화하고 표현물로 저장합니다. [!DNL Adobe Lightroom]
+* Adobe [Lightroom API를](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) 사용하여 인제스트된 자산을 최적화하고 표현물로 저장합니다.
 
 >[!NOTE]
 >
@@ -133,18 +143,30 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 
 1. 관리자는 도구 **[!UICONTROL > 자산 > 처리 프로필에 액세스합니다]**. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. Click on **[!UICONTROL Custom]** tab. 새로 **[!UICONTROL 추가를 클릭합니다]**. 변환의 원하는 파일 이름을 입력합니다.
-1. 다음 정보를 입력하고 [저장]을 **[!UICONTROL 클릭합니다]**.
+1. 다음 정보를 제공합니다.
 
    * 각 변환의 파일 이름 및 지원되는 파일 확장자입니다.
    * Firefly 사용자 지정 앱의 끝점 URL입니다. 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
-   * 필요에 따라 서비스 매개 변수를 추가합니다.
+   * 추가 [!UICONTROL 정보나] 매개 변수를 사용자 지정 작업자에게 전달하려면 서비스 매개 변수를 추가합니다.
    * 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
 
-![custom-processing-profile](assets/custom-processing-profile.png)
+   **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 >[!CAUTION]
 >
 >Firefox 앱 및 [!DNL Experience Manager] 계정이 동일한 조직의 계정이 아닌 경우 통합이 작동하지 않습니다.
+
+### 사용자 지정 프로필의 예 {#custom-profile-example}
+
+사용자 지정 프로필의 사용을 설명하기 위해 캠페인 이미지에 일부 사용자 지정 텍스트를 적용하는 사용 사례를 생각해 보겠습니다. Photoshop API를 활용하여 이미지를 편집하는 처리 프로필을 만들 수 있습니다.
+
+자산 계산 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개변수] 필드를 사용하여 이러한 매개 변수를 사용자 정의 작업자에게 전달할 수 있습니다. 그러면 사용자 지정 작업자가 Photoshop API를 호출하고 이러한 값을 API로 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 사용자 정의 텍스트를 캠페인 이미지에 추가할 수 있습니다.
+
+![custom-processing-profile](assets/custom-processing-profile.png)
+
+*그림: 서비스[!UICONTROL 매개 변수]필드를 사용하여 추가된 정보를 사용자 지정 작업자에 미리 정의된 매개 변수로 전달합니다.*
+
+캠페인 이미지가 이 처리 프로필이 적용된 폴더에 업로드되면 이미지는 `Jumanji` 텍스트로 `Arial-BoldMT` 업데이트됩니다.
 
 ## 처리 프로필을 사용하여 자산 처리 {#use-profiles}
 
@@ -152,7 +174,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 
 다음 방법 중 하나를 사용하여 폴더에 처리 프로필을 적용합니다.
 
-* 관리자는 [ **[!UICONTROL 도구] > [자산] > [처리 프로필]**]에서 처리 프로필 정의를 선택하고 [폴더에 **[!UICONTROL 프로필 적용]]** 작업을 사용할 수 있습니다. 특정 폴더로 이동하여 선택한 다음 프로필의 적용을 확인할 수 있는 컨텐츠 브라우저가 열립니다.
+* 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**&#x200B;에서 처리 프로필 정의를 선택하고 **** 폴더에 프로필 적용 작업을 사용할 수 있습니다. 특정 폴더로 이동하여 선택한 다음 프로필의 적용을 확인할 수 있는 컨텐츠 브라우저가 열립니다.
 * 사용자는 자산 사용자 인터페이스에서 폴더를 선택하고, **[!UICONTROL 속성]** 작업을 사용하여 폴더 속성 화면을 열고, **[!UICONTROL 처리 프로필]** 탭을 클릭하고, 팝업 목록에서 해당 폴더에 대해 올바른 처리 프로필을 선택할 수 있습니다. 변경 내용을 저장하려면 저장 및 **[!UICONTROL 닫기를 클릭합니다]**.
 
 >[!NOTE]
@@ -165,7 +187,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 >
 >폴더에 적용된 처리 프로필은 전체 트리에 대해 작동하지만 하위 폴더에 다른 프로필이 적용된 경우 오버로드할 수 있습니다. 에셋이 폴더에 업로드되면 Experience Manager은 포함된 폴더의 속성에 처리 프로필이 있는지 확인합니다. 적용되지 않으면 계층의 상위 폴더에서 적용할 처리 프로필이 선택됩니다.
 
-사용자는 처리가 완료된 새로 업로드된 자산을 열고, 자산 미리 보기를 열고, 왼쪽 레일의 **[!UICONTROL 표현물]** 보기를 클릭하여 처리가 실제로 이루어졌는지 확인할 수 있습니다. 특정 자산의 유형이 MIME 유형 포함 규칙과 일치하는 처리 프로필의 특정 변환을 확인하고 액세스할 수 있어야 합니다.
+생성된 모든 표현물은 왼쪽 레일의 [!UICONTROL 표현물] 보기에서 사용할 수 있습니다. 자산 미리 보기를 열고 왼쪽 레일을 열어 표현물 보기에 **[!UICONTROL 액세스합니다]** . 특정 자산의 유형이 MIME 유형 포함 규칙과 일치하는 처리 프로필의 특정 변환을 확인하고 액세스할 수 있어야 합니다.
 
 ![추가 표현물](assets/renditions-additional-renditions.png)
 
