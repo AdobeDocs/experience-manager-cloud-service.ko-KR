@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 5%
+ht-degree: 38%
 
 ---
 
@@ -66,25 +66,25 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 ### 릴리스 날짜 {#release-date-cm}
 
-Cloud Manager [!UICONTROL 버전] 2020.7.0의 릴리스 날짜는 2020년 7월 9일입니다.
+[!UICONTROL Cloud Manager] 버전 2020.7.0의 릴리스 날짜는 2020년 7월 9일입니다.
 
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
 * 환경 페이지가 다시 디자인되었습니다.
 
-* 최대 절전 모드인 환경에서 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
+* 최대 절전 모드인 환경에서 이제 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
 
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
 
 * 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 기밀을 지원합니다.
 
-   자세한 내용은 [파이프라인 변수를](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) 참조하십시오.
+   자세한 내용은 [파이프라인 변수](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)를 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cm}
 
-* 환경이 완전히 만들어지기 전에 클라우드 관리자에서 개발자 콘솔로의 링크가 잘못 활성화되었습니다.
+* 환경이 완전히 만들어지기 전에 Cloud Manager에서 개발자 콘솔로의 링크가 잘못 활성화되었습니다.
 
-* Cloud Manager에서 직접 개발자 콘솔로 연결되는 링크가 샌드박스 프로그램 환경을 최대 절전 모드 해제/최대 절전 모드 해제 옵션을 표시하지 않았습니다.
+* Cloud Manager에서 직접 개발자 콘솔로 연결되는 링크에는 샌드박스 프로그램 환경의 최대 절전 모드 해제/최대 절전 모드 해제 옵션이 표시되지 않습니다.
 
 * 비프로덕션 파이프라인 편집 페이지의 **취소** 및 **저장** 옵션이 항상 표시되는 것은 아닙니다.
 
@@ -96,7 +96,7 @@ Cloud Manager [!UICONTROL 버전] 2020.7.0의 릴리스 날짜는 2020년 7월 9
 
 * 환경 이름의 유효성 검사에 오류가 발생했습니다.
 
-* [환경] 페이지는 존재하지 않을 때 게시 및 발송자 세그먼트를 표시합니다.
+* 환경 페이지는 존재하지 않을 때 게시 및 발송자 세그먼트를 표시하는 경우가 있습니다.
 
 ### 알려진 문제 {#known-issues}
 
@@ -117,16 +117,16 @@ Cloud Manager [!UICONTROL 버전] 2020.7.0의 릴리스 날짜는 2020년 7월 9
 
 ## 클라우드 준비 분석기 {#cloud-readiness-analyzer}
 
-Cloud Readance Analyzer 릴리스 v1.0.2의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
+이 섹션을 통해 Cloud Readiness Analyzer 릴리스 버전 1.0.2에 대한 새로운 기능 및 업데이트를 알아보십시오.
 
 ### 버그 수정 {#cra-bug-fixes}
 
-* 이전 버전의 CRA를 Adobe Experience Manager(AEM) 6.1에서 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
+* AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
 
-   자세한 [내용은 AEM 6.1에](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) CRA 설치를 참조하십시오.
+   자세한 내용은 [AEM 6.1에 CRA 설치](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
 
 * 요약 보고서에 표시되는 만료 타임스탬프가 잘못되었습니다.
 
 * CRA가 중복된 사용자 지정 구성 요소를 감지하고 있습니다.
 
-* AEM 6.1에서는 콘텐트 검사가 완료되기 전에 종료되었습니다. 전체 검사가 완료될 때까지 검사자가 건너뛸 수 있도록 예외 처리가 추가되었습니다.
+* AEM 6.1에서 전체 검사를 완료하기 전에 컨텐츠 검사를 종료했습니다. 전체 검사가 완료될 때까지 검사자가 건너뛸 수 있도록 예외 처리가 추가되었습니다.
