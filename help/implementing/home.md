@@ -1,11 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager 구현
 description: 클라우드 서비스로서의 Adobe Experience Manager 구현 자습 리소스 및 설명서 링크
-translation-type: ht
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
-workflow-type: ht
-source-wordcount: '398'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 |---|---|
 | [클라우드 서비스로서의 Experience Manager 홈](/help/landing/home.md) | 클라우드 서비스로서의 Experience Manager 설명서에 대한 개요를 살펴보려면 여기에서 시작하십시오. |
 | [개요](/help/overview/home.md) | 이 안내서에서는 클라우드 서비스로서의 Experience Manager 소개, 용어 등 개요를 제공합니다. |
-| [릴리스 노트](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 클라우드 서비스로서의 Experience Manager의 최신 릴리스에 대한 중요 정보를 제공합니다. |
+| [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 클라우드 서비스로서의 Experience Manager의 최신 릴리스에 대한 중요 정보를 제공합니다. |
 | [핵심 개념](/help/core-concepts/home.md) | 이 안내서에서는 이 새로운 서비스의 아키텍처를 포함하여 클라우드 서비스로서의 Experience Manager의 핵심 개념을 소개합니다. |
 | [보안 사용 안내서](/help/security/home.md) | 클라우드 서비스로서의 Experience Manager에 대한 중요 보안 항목에 대해 알아봅니다. |
 | [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 클라우드 서비스로서의 Experience Manager를 시작하는 방법에 대한 요약을 제공합니다. |
@@ -36,6 +36,7 @@ ht-degree: 100%
 | [클라우드 서비스로서 AEM으로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | 클라우드 서비스로서의 Experience Manager에 커넥터를 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 클라우드 서비스로서의 Experience Manager가 수행하는 백엔드 작업에 대해 알아봅니다. |
+| [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM에서 Cloud Service으로 제공하는 커머스 통합 프레임워크에 대해 자세히 알아보십시오. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
