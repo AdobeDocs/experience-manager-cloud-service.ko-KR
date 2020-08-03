@@ -2,7 +2,7 @@
 title: Cloud Service의 2020.7.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.7.0).'
 translation-type: tm+mt
-source-git-commit: d0d51efbc9a904a5958e15544cff18fad9a20bfb
+source-git-commit: de220114d7eb4ac1fcee028890ff029de168d0c3
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -115,9 +115,9 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* 이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
+이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
 
-   자세한 [내용은 AEM Commerce 시작을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 형식으로 참조하십시오.
+자세한 [내용은 AEM Commerce 시작을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 형식으로 참조하십시오.
 
 ## 클라우드 준비 분석기 {#cloud-readiness-analyzer}
 
