@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager(AEM) 릴리스 노트.
 description: '클라우드 서비스로서의 Adobe Experience Manager(AEM) 릴리스 노트. '
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 100%
 | [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 비롯한 클라우드 서비스로서의 Experience Manager 배포를 사용자 지정하는 방법에 대해 알아봅니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | 클라우드 서비스로서의 Experience Manager에 커넥터를 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 클라우드 서비스로서의 Experience Manager가 수행하는 백엔드 작업에 대해 알아봅니다. |
+| [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM에서 Cloud Service으로 제공하는 커머스 통합 프레임워크에 대해 자세히 알아보십시오. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
