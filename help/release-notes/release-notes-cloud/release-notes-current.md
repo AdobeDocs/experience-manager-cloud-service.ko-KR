@@ -2,9 +2,9 @@
 title: Cloud Service의 2020.7.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.7.0).'
 translation-type: tm+mt
-source-git-commit: 459843adff623395bcf7afb41f427d6ea0fb825c
+source-git-commit: d0d51efbc9a904a5958e15544cff18fad9a20bfb
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '992'
 ht-degree: 37%
 
 ---
@@ -43,12 +43,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * Cloud Service 배포과 호환되지 않는 워크플로우 단계가 이제 [!UICONTROL 워크플로우 모델] 편집기에 경고로 표시됩니다. 또한 Cloud Service 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
 
 * Cloud Manager의 환경과 연관된 Git 프로젝트 `/conf/global` 에 배포되는 고객이 생성한 워크플로우 모델은 자동으로 Experience Manager에 배포되어 `/var` 사용할 수 있습니다. 고객이 변경한 제품 워크플로우 모델 `/libs` 은 자동으로 배포되지 않습니다 `/var`.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### 새로운 기능 {#what-is-new-commerce}
-
-* 이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다. 자세한 내용은 [시작하기를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html).
 
 ## 코어 구성 요소 {#core-components}
 
@@ -105,7 +99,6 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * 코드 검사 계산 방식의 변경으로 인해 Jacoco 플러그인의 *최소* 버전은 이제 0.7.5.201505241946(2015년 5월 릴리스)입니다. 이전 버전을 명시적으로 참조하는 고객은 코드 품질 프로세스에서 오류 메시지가 표시됩니다.
 
-
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
 
 ### 새로운 기능 {#what-is-new-foundations}
@@ -117,6 +110,14 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 * AEM Analytics 클라우드 서비스 UI를 클래식 UI에서 새 AEM UI로 포팅했습니다. 또한 AEM 저장소의 Analytics 클라우드 서비스 위치를 다른 AEM cloud services `/etc` 에 맞게 `/conf`이동했습니다.
 
 * 클래식 UI에서 새 AEM UI로 AEM Target 클라우드 서비스 UI를 포팅했습니다. 또한 AEM 저장소의 Target 클라우드 서비스 위치를 다른 AEM cloud services `/etc` 에 맞게 `/conf`이동했습니다.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 새로운 기능 {#what-is-new-commerce}
+
+* 이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
+
+   자세한 [내용은 AEM Commerce 시작을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 형식으로 참조하십시오.
 
 ## 클라우드 준비 분석기 {#cloud-readiness-analyzer}
 
