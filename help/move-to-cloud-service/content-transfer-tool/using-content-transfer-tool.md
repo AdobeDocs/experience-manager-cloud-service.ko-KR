@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 1a2172a35c3409dd98f4ce93d621762b935d122f
+source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1617'
 ht-degree: 97%
 
 ---
