@@ -1,12 +1,12 @@
 ---
-sub-product: Cloud Service으로 AEM 개요
-user-guide-title: Cloud Service으로 AEM 개요
+sub-product: 클라우드 서비스로서의 AEM 개요
+user-guide-title: 클라우드 서비스로서의 AEM 개요
 user-guide-description: For an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc., start here.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '41'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
