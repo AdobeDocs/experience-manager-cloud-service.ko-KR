@@ -3,9 +3,9 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
@@ -146,8 +146,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 다음 정보를 제공합니다.
 
    * 각 변환의 파일 이름 및 지원되는 파일 확장자입니다.
-   * Firefly 사용자 지정 앱의 끝점 URL입니다. 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
-   * 추가 [!UICONTROL 정보나] 매개 변수를 사용자 지정 작업자에게 전달하려면 서비스 매개 변수를 추가합니다.
+   * [Firefly 사용자 지정 앱의 끝점 URL입니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html). 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
+   * 서비스 매개 변수를 추가하여 추가 정보 또는 매개 변수를 [사용자 지정 작업자에게 전달합니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters).
    * 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
 
    **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
