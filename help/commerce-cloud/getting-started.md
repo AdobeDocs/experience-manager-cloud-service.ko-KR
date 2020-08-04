@@ -2,7 +2,7 @@
 title: Cloud Service으로 AEM Commerce 시작하기
 description: Cloud Service으로 AEM Commerce 시작하기
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 # Cloud Service으로 AEM Commerce 시작하기 {#start}
 
 AEM Commerce를 Cloud Service으로 시작하려면 Experience Manager Cloud Service에 CIF(Commerce Integration Framework) 추가 기능이 제공되어야 합니다. CIF Add-on은 Cloud Service으로 [AEM Sites 위에 추가 모듈입니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/sites/home.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## 온보딩 {#onboarding}
 
