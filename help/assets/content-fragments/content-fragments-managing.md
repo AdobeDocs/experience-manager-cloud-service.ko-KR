@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
 translation-type: tm+mt
-source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 97%
@@ -131,9 +131,7 @@ ht-degree: 97%
    >[!NOTE]
    >
    >1. 이미 컨텐츠 페이지에서 조각을 참조 중이면 메시지가 표시됩니다.
-      >
-      >
-   2. 사이드 패널은 **사이드 패널 전환** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
+   >2. 사이드 패널은 **사이드 패널 전환** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
 
 
 3. 사이드 패널의 아이콘을 사용하여 세 가지 모드를 탐색합니다.
