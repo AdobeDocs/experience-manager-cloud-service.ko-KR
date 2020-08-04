@@ -3,9 +3,9 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
+source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2482'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 |---|---|---|
 | [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | <ul> <li>사용자 인터페이스에 사용되는 표준 축소판(48, 140 및 319px) [!DNL Assets] </li> <li> 대규모 미리 보기(웹 변환 - 1280px) </li><li> 메타데이터 및 텍스트 추출</li></ul> |
 | [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 변환 생성을 위한 더 많은 옵션을 제공합니다. 즉시 사용 가능한 작업자를 확장하여 다른 형식 및 변환을 제공합니다. | <ul><li>FPO 변환. </li> <li>이미지 파일 포맷 및 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
-| [사용자 지정 프로필](#custom-config) | 사용자 지정 작업자를 통해 사용자 지정 코드를 사용하여 호출하는 사용자 인터페이스를 통해 관리자가 구성합니다 [!DNL Asset Compute Service]. 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
+| [사용자 지정 프로필](#custom-config) | 사용자 지정 작업자를 통해 사용자 지정 코드를 사용하여 [자산 계산 서비스를 호출하도록 관리자가 사용자 인터페이스를 통해 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -118,7 +118,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-이 [!DNL Asset Compute Service] 는 기본 처리, Photoshop 파일과 같은 Adobe 관련 형식 처리, 사용자 지정 또는 조직별 처리 구현 등의 다양한 사용 사례를 지원합니다. 이전에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 기본적으로 처리되거나 UI에서 처리 프로필 구성을 통해 처리됩니다. 이 처리에서 비즈니스 요구 사항을 충족하지 않는 경우, 기본 기능을 확장하려면 자산 계산 서비스를 개발 및 사용하는 것이 좋습니다.
+이 [!DNL Asset Compute Service] 는 기본 처리, Photoshop 파일과 같은 Adobe 관련 형식 처리, 사용자 지정 또는 조직별 처리 구현 등의 다양한 사용 사례를 지원합니다. 이전에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 처리되거나 처리 프로필 구성을 통해 처리됩니다. 이러한 처리 옵션에 의해 비즈니스 요구 사항이 충족되지 않으면 기본 기능을 확장하는 데 개발 및 사용 [!DNL Asset Compute Service] 을 권장합니다. 개요는 확장 기능 [및 사용 시기 이해를 참조하십시오](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 이미지, 비디오, 문서 및 기타 파일 포맷을 축소판, 추출한 텍스트 및 메타데이터, 보관 파일 등 다양한 변환으로 변환할 수 있습니다.
 
-개발자는 이 [!DNL Asset Compute Service] 를 사용하여 사전 정의된 사용 사례를 필요로 하는 전문 맞춤형 작업자를 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 작업자를 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
+개발자는 이 [!DNL Asset Compute Service] 를 사용하여 지원되는 사용 사례를 [준수하는 사용자 정의 작업자](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) 작업을 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 작업자를 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
 
 * 의 [!DNL Adobe Photoshop]ImageCutout API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 를 사용하고 결과를 변환으로 저장합니다.
 * 서드파티 시스템을 호출하여 데이터를 업데이트합니다(예: PIM 시스템).
@@ -238,3 +238,10 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 
 * 워크플로우를 설계할 때 모든 유형의 변환에 대한 요구 사항을 고려합니다. 나중에 변환의 필요성을 예측할 수 없는 경우 워크플로우에서 변환 생성 단계를 제거합니다. 나중에 변환을 일괄 삭제할 수 없습니다. 장기 사용 후 원치 않는 변환이 많은 저장 공간을 차지할 수 있습니다 [!DNL Experience Manager]. 개별 자산의 경우 사용자 인터페이스에서 변환을 수동으로 제거할 수 있습니다. 여러 자산의 경우 특정 표현물을 삭제하도록 사용자 [!DNL Experience Manager] 지정하거나 자산을 삭제하고 다시 업로드할 수 있습니다.
 * 현재, 지원은 변환을 생성하는 것으로 제한됩니다. 새 자산 생성은 지원되지 않습니다.
+
+>[!MORELIKETHIS]
+>
+>* [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)소개
+>* [확장성 및 사용 시기를](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)이해합니다.
+>* [사용자 정의 근로자를 만드는 방법](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html).
+
