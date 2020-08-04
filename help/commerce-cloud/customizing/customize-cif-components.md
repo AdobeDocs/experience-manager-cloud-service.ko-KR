@@ -2,7 +2,7 @@
 title: CIF 핵심 구성 요소 사용자 정의
 description: CIF 핵심 구성 요소 사용자 정의
 translation-type: tm+mt
-source-git-commit: dd6973085ae34dd6ea7296c36d0a14f699440269
+source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
 workflow-type: tm+mt
 source-wordcount: '2520'
 ht-degree: 1%
@@ -352,7 +352,7 @@ Sling Models는 Java로 구현되며 생성된 프로젝트의 **핵심** 모듈
    -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
    +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
       data-sly-use.actionsTpl="actions.html">
-       ...
+      ...
    ```
 
    변경 내용을 저장합니다 `productteaser.html`.
