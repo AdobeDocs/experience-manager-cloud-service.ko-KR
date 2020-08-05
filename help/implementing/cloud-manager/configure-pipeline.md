@@ -1,11 +1,11 @@
 ---
-title: CI/CD 파이프라인 구성 - 클라우드 서비스
-description: CI/CD 파이프라인 구성 - 클라우드 서비스
+title: CI/CD 파이프라인 구성 - Cloud Services
+description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 0%
+source-wordcount: '578'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 흐름 이해 {#understanding-the-flow}
 
-Cloud Manager UI의 **파이프라인 설정** 타일에서 파이프라인을 구성할 [!UICONTROL 수] 있습니다.
+Cloud Manager UI의 **파이프라인 설정** 타일에서 프로덕션 파이프라인을 구성할 [!UICONTROL 수] 있습니다.
 
 배포 관리자는 파이프라인을 설정할 책임이 있습니다. 그런 다음 먼저 **Git 리포지토리에서 분기를 선택합니다**.
 
