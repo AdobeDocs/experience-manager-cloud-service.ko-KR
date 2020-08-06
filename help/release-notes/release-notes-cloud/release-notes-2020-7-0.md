@@ -2,7 +2,7 @@
 title: Cloud Service의 2020.7.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.7.0).'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -34,7 +34,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### 새로운 기능 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] 은 자산을 처리할 수 있는 확장 가능한 서비스입니다. 관리자는 Experience Manager을 구성하여 JavaScript를 사용하여 만든 사용자 지정 작업자를 불러올 수 있습니다 [!DNL Asset Compute Service]. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 맞춤형 작업자를 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 축소판, Adobe 파일 포맷의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인화를 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 Sensei 서비스를 통해 자산 실행 등의 작업을 수행할 수 있습니다. 자산 [마이크로서비스 및 처리 프로필 사용을 참조하십시오](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] 은 자산을 처리할 수 있는 확장 가능한 서비스입니다. 관리자는 Experience Manager을 구성하여 [!DNL Asset Compute Service] 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 맞춤형 애플리케이션을 제작할 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 축소판, Adobe 파일 포맷의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인화를 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 Sensei 서비스를 통해 자산 실행 등의 작업을 수행할 수 있습니다. 자산 [마이크로서비스 및 처리 프로필 사용을 참조하십시오](/help/assets/asset-microservices-configure-and-use.md).
 
 * Cloud Service [!DNL Dynamic Media] 로 [!DNL Experience Manager] 의 초기 구성이 더욱 강력하도록 개선되었습니다. 이제 관리자에게 프로세스 진행 상황을 제공합니다.
 
