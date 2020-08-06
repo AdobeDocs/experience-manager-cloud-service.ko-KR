@@ -2,9 +2,9 @@
 title: Cloud Service의 2020.8.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.8.0).'
 translation-type: tm+mt
-source-git-commit: b4a0cbd29991f8c418ab7b3305f5e9e99e62cc4a
+source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '370'
 ht-degree: 6%
 
 ---
@@ -23,6 +23,8 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
 * 콘텐츠 감사는 Cloud Manager Sites 프로덕션 파이프라인에서 활성화된 기능입니다. 이제 사이트가 있는 프로그램에 대한 프로덕션 파이프라인 구성에는 컨텐츠 감사라는 세 번째 탭이 **포함됩니다**. 프로덕션 파이프라인이 실행될 때마다 사용자 정의 기능 테스트 후 새로운 컨텐츠 감사 단계가 파이프라인에 포함됩니다. 사용자 정의 기능 테스트 후에는 성능, SEO(검색 엔진 최적화), 접근성, 우수 사례 및 PWA(점진적 웹 앱)을 비롯한 다양한 차원과 사이트를 평가합니다.
+
+   Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
 * 자산 프로그램에서 새로 만들어진 환경은 이제 스마트 콘텐츠 서비스로 자동 구성됩니다.
 
