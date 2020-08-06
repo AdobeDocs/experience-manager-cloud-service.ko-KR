@@ -2,7 +2,7 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -57,11 +57,11 @@ Cloud Manager UI의 **파이프라인 설정** 타일에서 파이프라인을 �
 
 1. 파이프라인 **설정** 화면이 표시됩니다. Select the branch and click **Next**.
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. 배포 옵션을 구성합니다.
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    트리거를 정의하여 파이프라인을 시작할 수 있습니다.
 
