@@ -2,16 +2,24 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 0%
 
 ---
 
 
 # CI-CD 파이프라인 구성 {#configure-ci-cd-pipeline}
 
+Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
+
+* **프로덕션 파이프라인**:
+프로덕션 및 스테이지 환경이 만들어진 경우에만 프로덕션 파이프라인을 추가할 수 있습니다. 자세한 [내용은 파이프라인](configure-pipeline.md#setting-up-the-pipeline) 설정 섹션을 참조하십시오.
+
+* **비프로덕션 파이프라인**:
+
+   비프로덕션 파이프라인은 Cloud Manager의 사용자 인터페이스에서 **개요** 페이지에서 추가할 수 있습니다. 자세한 내용은 [비프로덕션 및 코드 품질만 파이프라인](configure-pipeline.md#non-production-pipelines) 을 참조하십시오.
 
 ## 흐름 이해 {#understanding-the-flow}
 
@@ -78,14 +86,18 @@ Cloud Manager UI의 **파이프라인 설정** 타일에서 파이프라인을 �
 
    자세한 내용은 [컨텐츠 감사 결과](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 이해를 참조하십시오.
 
-   ![](assets/set-up-pipeline4.png)
+   ![](assets/content-audit-1.png)
 
-1. **저장**&#x200B;을 클릭합니다. 이제 *개요* 페이지에 프로그램 **배포** 카드가 표시됩니다. 프로그램 **을** 배포하려면 [배포] 단추를 클릭합니다.
+   새 **페이지 무시** 추가를 클릭하여 컨텐츠 감사에 포함할 URL 경로를 제공합니다. 경로를 추가한 후 저장을 **클릭합니다**.
+
+   ![](assets/content-audit-2.png)
+
+1. 파이프라인 **편집** 화면에서 **저장을** 클릭합니다. 이제 **개요** 페이지에 프로그램 **배포** 카드가 표시됩니다. 프로그램 **을** 배포하려면 [배포] 단추를 클릭합니다.
 
    ![](assets/configure-pipeline5.png)
 
 
-## 비프로덕션 및 코드 품질 전용 파이프라인
+## 비프로덕션 및 코드 품질 전용 파이프라인 {#non-production-pipelines}
 
 스테이지와 프로덕션에 배포되는 기본 파이프라인 외에도, 고객은 비프로덕션 파이프라인이라고 하는 추가 파이프라인 **을 설정할 수 있습니다**. 이러한 파이프라인은 항상 빌드 및 코드 품질 단계를 실행합니다. 선택적으로 Adobe Managed Services 환경에 배포할 수도 있습니다.
 
