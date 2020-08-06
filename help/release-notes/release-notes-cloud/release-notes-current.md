@@ -2,7 +2,7 @@
 title: Cloud Service의 2020.8.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.8.0).'
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 6%
@@ -28,7 +28,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 자산 프로그램에서 새로 만들어진 환경은 이제 스마트 콘텐츠 서비스로 자동 구성됩니다.
 
-* Cloud Manager 개요 페이지에서 최대 절전 모드 해제 환경을 사용할 수 있습니다.
+* Cloud Manager의 **개요** 페이지에서 최대 절전 모드 해제 환경을 사용할 수 있습니다.
 
 * 이제 인증 바인딩된 개인 마웬 리포지토리가 지원됩니다.
 
@@ -52,7 +52,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 개요 페이지에 색상 불일치가 있습니다.
 
-### 알려진 문제 {#known-issues}
+### 알려진 문제 {#known-issues-cm}
 
 * 콘텐츠 감사 평균 점수 이하로 유도하는 잘못된 페이지가 포함됩니다.
 
