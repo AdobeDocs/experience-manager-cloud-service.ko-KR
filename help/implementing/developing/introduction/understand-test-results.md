@@ -2,7 +2,7 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 2%
@@ -176,7 +176,9 @@ Cloud Manager의 콘텐츠 감사 기능을 사용하면 최종 사용자가 사
 #### 페이지 수준 점수 {#page-level-scores}
 
 테스트를 드릴다운하여 보다 자세한 페이지 수준 점수를 확인할 수 있습니다. 사용자는 테스트를 실행한 이전 시간의 변경과 함께 특정 테스트에 대해 개별 페이지의 점수가 어떻게 기록되는지 확인할 수 있습니다.
+
 개별 페이지의 세부 사항을 클릭하면 평가된 페이지의 요소에 대한 정보와 개선 가능성이 감지되는 문제를 해결하는 지침을 제공합니다. 테스트 및 관련 지침의 세부 사항은 Google Lighthouse에서 제공합니다.
+
 ![](assets/page-level-scores.png)
 
 ## 로컬 테스트 실행 {#local-test-execution}
