@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 * **프로덕션 파이프라인**:
 
-   프로덕션 및 스테이지 환경이 만들어진 경우에만 프로덕션 파이프라인을 추가할 수 있습니다.
+   프로덕션 및 스테이지 환경 세트가 생성되면 프로덕션 파이프라인을 추가할 수 있습니다.
 
-   자세한 [내용은 파이프라인](configure-pipeline.md#setting-up-the-pipeline) 설정을 참조하십시오.
+   자세한 [내용은 프로덕션 파이프라인](configure-pipeline.md#setting-up-the-pipeline) 설정을 참조하십시오.
 
 * **비프로덕션 파이프라인**:
 
@@ -26,23 +26,19 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
    자세한 내용은 [비프로덕션 및 코드 품질만 파이프라인](configure-pipeline.md#non-production-pipelines) 을 참조하십시오.
 
-## 흐름 이해 {#understanding-the-flow}
+>[!NOTE]
+>파이프라인을 구성하려면 다음을 수행해야 합니다.
+> * 파이프라인을 시작할 트리거를 정의합니다.
+> * 프로덕션 배포를 제어하는 매개 변수를 정의합니다.
+> * 성능 테스트 매개 변수를 구성합니다.
 
-Cloud Manager UI의 **파이프라인 설정** 타일에서 파이프라인을 구성할 [!UICONTROL 수] 있습니다.
 
-배포 관리자는 파이프라인을 설정할 책임이 있습니다. 그런 다음 먼저 **Git 리포지토리에서 분기를 선택합니다**.
+## 프로덕션 파이프라인 설정 {#setting-up-production-pipeline}
 
-파이프라인을 구성하려면 사용자가 다음을 수행해야 합니다.
+배포 관리자는 프로덕션 파이프라인을 설정할 책임이 있습니다.
 
-* 파이프라인을 시작할 트리거를 정의합니다.
-* 프로덕션 배포를 제어하는 매개 변수를 정의합니다.
-* 성능 테스트 매개 변수를 구성합니다.
-
-## 파이프라인 설정 {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->하나의 프로그램 생성이 완료되고 Git 리포지토리에 최소 하나의 분기가 있을 때까지 파이프라인을 설정할 수 없습니다.
+>[!NOTE]
+>프로그램 제작이 완료되고 Git 리포지토리에 최소 하나의 분기가 있으며 프로덕션 및 스테이지 환경 세트가 생성될 때까지 프로덕션 파이프라인을 설정할 수 없습니다.
 
 코드를 배포하기 전에 [!UICONTROL 클라우드 관리자에서 파이프라인 설정을 구성해야 합니다].
 
