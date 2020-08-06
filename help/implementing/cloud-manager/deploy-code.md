@@ -2,7 +2,7 @@
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
+source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
    * 컨텐츠 감사: 파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 정의 기능 테스트 후에 컨텐츠 감사 단계가 포함됩니다. 구성된 페이지는 서비스로 전송되어 평가됩니다. 이 결과는 정보 제공용이며 사용자가 현재 점수와 이전 점수 사이의 점수 및 변경 사항을 볼 수 있도록 합니다. 이러한 통찰력은 현재 배포에서 발생하는 회귀 여부를 확인하는 데 유용합니다.
 자세한 내용은 [컨텐츠 감사 결과](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 이해를 참조하십시오.
 
-      ![](assets/stage-testing.png)
+      ![](assets/testing-tab.png)
 
 
 
