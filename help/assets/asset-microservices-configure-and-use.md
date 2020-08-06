@@ -3,9 +3,9 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 # 에셋 마이크로서비스 및 처리 프로필 사용 {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -47,8 +47,8 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 | 옵션 | 설명 | 활용 사례 |
 |---|---|---|
 | [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | <ul> <li>사용자 인터페이스에 사용되는 표준 축소판(48, 140 및 319px) [!DNL Assets] </li> <li> 대규모 미리 보기(웹 변환 - 1280px) </li><li> 메타데이터 및 텍스트 추출</li></ul> |
-| [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 변환 생성을 위한 더 많은 옵션을 제공합니다. 즉시 사용 가능한 작업자를 확장하여 다른 형식 및 변환을 제공합니다. | <ul><li>FPO 변환. </li> <li>이미지 파일 포맷 및 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
-| [사용자 지정 프로필](#custom-config) | 사용자 지정 작업자를 통해 사용자 지정 코드를 사용하여 [자산 계산 서비스를 호출하도록 관리자가 사용자 인터페이스를 통해 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
+| [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 변환 생성을 위한 더 많은 옵션을 제공합니다. 기본 옵션을 확장하여 다양한 형식 및 변환을 제공합니다. | <ul><li>FPO 변환. </li> <li>이미지 파일 포맷 및 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
+| [사용자 지정 프로필](#custom-config) | 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하여 [자산 계산 서비스를 호출하는 사용자 인터페이스를 통해 관리자가 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -113,7 +113,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 <!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
 -->
@@ -122,11 +122,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->기본 구성이나 표준 프로파일을 사용하여 비즈니스를 수행할 수 없는 경우에만 사용자 지정 작업자를 사용하는 것이 좋습니다.
+>기본 구성이나 표준 프로필을 사용하여 비즈니스 요구 사항을 수행할 수 없는 경우에만 사용자 지정 응용 프로그램을 사용하는 것이 좋습니다.
 
-이미지, 비디오, 문서 및 기타 파일 포맷을 축소판, 추출한 텍스트 및 메타데이터, 보관 파일 등 다양한 변환으로 변환할 수 있습니다.
+이미지, 비디오, 문서 및 기타 파일 형식을 축소판, 추출한 텍스트 및 메타데이터, 보관 파일 등 다양한 표현물로 변환할 수 있습니다.
 
-개발자는 이 [!DNL Asset Compute Service] 를 사용하여 지원되는 사용 사례를 [준수하는 사용자 정의 작업자](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) 작업을 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 작업자를 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
+개발자는 이 [!DNL Asset Compute Service] 를 사용하여 지원되는 사용 사례를 [준수하는 맞춤형 애플리케이션을](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 응용 프로그램을 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
 
 * 의 [!DNL Adobe Photoshop]ImageCutout API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 를 사용하고 결과를 변환으로 저장합니다.
 * 서드파티 시스템을 호출하여 데이터를 업데이트합니다(예: PIM 시스템).
@@ -135,22 +135,24 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->사용자 지정 작업자를 사용하여 표준 메타데이터를 편집할 수는 없습니다. 사용자 지정 메타데이터만 수정할 수 있습니다.
+>사용자 지정 응용 프로그램은 표준 메타데이터를 편집할 수 없습니다. 사용자 지정 메타데이터만 수정할 수 있습니다.
 
 ### 사용자 정의 프로필 만들기 {#create-custom-profile}
 
 사용자 지정 프로필을 만들려면 다음 단계를 수행하십시오.
 
 1. 관리자는 도구 **[!UICONTROL > 자산 > 처리 프로필에 액세스합니다]**. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. Click on **[!UICONTROL Custom]** tab. 새로 **[!UICONTROL 추가를 클릭합니다]**. 변환의 원하는 파일 이름을 입력합니다.
+1. 사용자 **[!UICONTROL 지정]** 탭을 클릭합니다. 새로 **[!UICONTROL 추가를 클릭합니다]**. 변환의 원하는 파일 이름을 입력합니다.
 1. 다음 정보를 제공합니다.
 
    * 각 변환의 파일 이름 및 지원되는 파일 확장자입니다.
-   * [Firefly 사용자 지정 앱의 끝점 URL입니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html). 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
-   * 서비스 매개 변수를 추가하여 추가 정보 또는 매개 변수를 [사용자 지정 작업자에게 전달합니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters).
+   * [Firefly 사용자 지정 앱의 끝점 URL입니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
+   * 서비스 매개 변수를 추가하여 추가 [정보나 매개 변수를 사용자 지정 응용 프로그램에 전달합니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters).
    * 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
 
    **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+사용자 지정 응용 프로그램은 제공된 파일이 처리 프로필로 설정된 경우 모든 파일을 가져옵니다. 응용 프로그램이 파일을 필터링해야 합니다.
 
 >[!CAUTION]
 >
@@ -160,11 +162,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 사용자 지정 프로필의 사용을 설명하기 위해 캠페인 이미지에 일부 사용자 지정 텍스트를 적용하는 사용 사례를 생각해 보겠습니다. Photoshop API를 활용하여 이미지를 편집하는 처리 프로필을 만들 수 있습니다.
 
-자산 계산 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개변수] 필드를 사용하여 이러한 매개 변수를 사용자 정의 작업자에게 전달할 수 있습니다. 그러면 사용자 지정 작업자가 Photoshop API를 호출하고 이러한 값을 API로 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 사용자 정의 텍스트를 캠페인 이미지에 추가할 수 있습니다.
+자산 계산 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개 변수] 필드를 사용하여 이러한 매개 변수를 사용자 정의 응용 프로그램에 전달할 수 있습니다. 그런 다음 사용자 정의 응용 프로그램이 Photoshop API를 호출하고 이러한 값을 API로 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 사용자 정의 텍스트를 캠페인 이미지에 추가할 수 있습니다.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*그림: 서비스[!UICONTROL 매개 변수]필드를 사용하여 추가된 정보를 사용자 지정 작업자에 미리 정의된 매개 변수로 전달합니다.*
+*그림: 서비스[!UICONTROL 매개 변수]필드를 사용하여 사용자 정의 응용 프로그램에 빌드되는 사전 정의된 매개 변수에 추가된 정보를 전달합니다.*
 
 캠페인 이미지가 이 처리 프로필이 적용된 폴더에 업로드되면 이미지는 `Jumanji` 텍스트로 `Arial-BoldMT` 업데이트됩니다.
 
@@ -243,5 +245,5 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 >
 >* [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)소개
 >* [확장성 및 사용 시기를](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)이해합니다.
->* [사용자 정의 근로자를 만드는 방법](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html).
+>* [사용자 정의 애플리케이션을 만드는 방법](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
 
