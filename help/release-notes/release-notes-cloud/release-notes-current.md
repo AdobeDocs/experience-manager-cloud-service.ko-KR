@@ -2,9 +2,9 @@
 title: Cloud Service의 2020.8.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.8.0).'
 translation-type: tm+mt
-source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 6%
 
 ---
@@ -48,7 +48,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 경우에 따라 파이프라인 집행이 완료되었다고 기록되지 않아 파이프라인의 새로운 처형이 방지되는 경우도 있습니다.
 
-* 가끔 내부 통신 문제로 인해 파이프라인 실행이 &quot;멈추는&quot; 경우가 있습니다.
+* 가끔 내부 통신 문제로 인해 파이프라인 *실행이* 중단될 수 있습니다.
 
 * 새 조직을 프로비저닝할 때 시스템 관리자 이외의 관리자 역할을 가진 일부 사용자에게 클라우드 관리자에 대한 액세스 권한이 잘못 부여되었습니다.
 
@@ -58,7 +58,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * 사용자 인터페이스가 삭제되는 동안 환경에서 작업을 시도하도록 잘못 허용되었습니다.
 
-* 개요 페이지에 색상 불일치가 있습니다.
+* Cloud Manager의 **개요** 페이지에 색상이 일치하지 않습니다.
 
 ### 알려진 문제 {#known-issues-cm}
 
