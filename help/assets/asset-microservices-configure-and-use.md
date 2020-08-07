@@ -3,9 +3,9 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2537'
 ht-degree: 1%
 
 ---
@@ -70,11 +70,11 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 
 [!DNL Experience Manager] 사용자의 요구 사항에 따라 일반 포맷에 대한 보다 구체적인 표현물을 생성할 수 있는 기능을 제공합니다. 관리자는 추가 [!UICONTROL 처리] 프로필을 만들어 이러한 변환을 쉽게 만들 수 있습니다. 그런 다음 사용자는 특정 폴더에 하나 이상의 사용 가능한 프로파일을 할당하여 추가 처리를 완료합니다. 예를 들어, 추가 처리에서는 웹, 모바일 및 태블릿용 변환을 생성할 수 있습니다. 다음 비디오에서는 처리 프로필을 만들고 적용하는 방법 [!UICONTROL 과] 만들어진 표현물에 액세스하는 방법을 보여 줍니다.
 
-* **변환 너비 및 높이**: 변환 폭 및 높이 사양은 생성된 출력 이미지의 최대 크기를 제공합니다. 에셋 마이크로서비스는 폭 및 높이가 각각 지정된 폭과 높이보다 크지 않은 가장 큰 변환을 생성하려고 시도합니다. 종횡비는 그대로 유지되며 원본과 동일합니다. 비어 있는 값은 자산 처리가 원본 픽셀 크기를 가정함을 의미합니다.
+* **변환 너비 및 높이**:변환 폭 및 높이 사양은 생성된 출력 이미지의 최대 크기를 제공합니다. 에셋 마이크로서비스는 폭 및 높이가 각각 지정된 폭과 높이보다 크지 않은 가장 큰 변환을 생성하려고 시도합니다. 종횡비는 그대로 유지되며 원본과 동일합니다. 비어 있는 값은 자산 처리가 원본 픽셀 크기를 가정함을 의미합니다.
 
-* **MIME 형식 포함 규칙**: 특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 해당 목록과 일치하는 경우 자산(차단 목록)에 대해 특정 변환이 생성되지 않습니다. 그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(허용 목록).
+* **MIME 형식 포함 규칙**:특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 해당 목록과 일치하는 경우 자산(차단 목록)에 대해 특정 변환이 생성되지 않습니다. 그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(허용 목록).
 
-* **특수 FPO 변환**: 큰 크기의 에셋을 [!DNL Experience Manager] 문서로 가져올 때 크리에이티브 전문가는 에셋을 [!DNL Adobe InDesign] 배치한 후 상당한 시간 [을 기다립니다](https://helpx.adobe.com/indesign/using/placing-graphics.html). 그 동안 사용자는 사용이 차단되었습니다 [!DNL InDesign]. 크리에이티브 흐름을 가로막으며 사용자 경험에 부정적인 영향을 줍니다. Adobe을 사용하면 [!DNL InDesign] 문서에서 작은 크기의 표현물을 일시적으로 삽입할 수 있으므로 나중에 온디맨드 방식으로 전체 해상도 자산으로 대체할 수 있습니다. [!DNL Experience Manager] 는 배치에만 사용되는 표현물(FPO)을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 종횡비가 동일합니다.
+* **특수 FPO 변환**:큰 크기의 에셋을 [!DNL Experience Manager] 문서로 가져올 때 크리에이티브 전문가는 에셋을 [!DNL Adobe InDesign] 배치한 후 상당한 시간 [을 기다립니다](https://helpx.adobe.com/indesign/using/placing-graphics.html). 그 동안 사용자는 사용이 차단되었습니다 [!DNL InDesign]. 크리에이티브 흐름을 가로막으며 사용자 경험에 부정적인 영향을 줍니다. Adobe을 사용하면 [!DNL InDesign] 문서에서 작은 크기의 표현물을 일시적으로 삽입할 수 있으므로 나중에 온디맨드 방식으로 전체 해상도 자산으로 대체할 수 있습니다. [!DNL Experience Manager] 는 배치에만 사용되는 표현물(FPO)을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 종횡비가 동일합니다.
 
 처리 프로필에는 FPO(배치에만 해당) 변환이 포함될 수 있습니다. 처리 [!DNL Adobe Asset Link] 프로필에 맞게 [설정해야 하는지 알아보려면 설명서를 참조하십시오](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) . 자세한 내용은 [Adobe 자산 링크 전체 설명서를 참조하십시오](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html).
 
@@ -110,14 +110,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 사용자 지정 프로필 및 사용 사례 {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
 이 [!DNL Asset Compute Service] 는 기본 처리, Photoshop 파일과 같은 Adobe 관련 형식 처리, 사용자 지정 또는 조직별 처리 구현 등의 다양한 사용 사례를 지원합니다. 이전에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 처리되거나 처리 프로필 구성을 통해 처리됩니다. 이러한 처리 옵션에 의해 비즈니스 요구 사항이 충족되지 않으면 기본 기능을 확장하는 데 개발 및 사용 [!DNL Asset Compute Service] 을 권장합니다. 개요는 확장 기능 [및 사용 시기 이해를 참조하십시오](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
@@ -148,11 +140,11 @@ The following video demonstrates the usefulness and usage of standard profile.
    * 각 변환의 파일 이름 및 지원되는 파일 확장자입니다.
    * [Firefly 사용자 지정 앱의 끝점 URL입니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
    * 서비스 매개 변수를 추가하여 추가 [정보나 매개 변수를 사용자 지정 응용 프로그램에 전달합니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters).
-   * 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
+   * 처리를 일부 특정 파일 포맷으로 제한하기 위해 MIME 형식을 포함하거나 제외했습니다.
 
    **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-사용자 지정 응용 프로그램은 제공된 파일이 처리 프로필로 설정된 경우 모든 파일을 가져옵니다. 응용 프로그램이 파일을 필터링해야 합니다.
+사용자 지정 애플리케이션은 헤드리스 [프로젝트 Firefox](https://github.com/AdobeDocs/project-firefly) 앱입니다. 사용자 지정 응용 프로그램은 제공된 파일이 처리 프로필로 설정된 경우 모든 파일을 가져옵니다. 응용 프로그램이 파일을 필터링해야 합니다.
 
 >[!CAUTION]
 >
@@ -166,7 +158,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*그림: 서비스[!UICONTROL 매개 변수]필드를 사용하여 사용자 정의 응용 프로그램에 빌드되는 사전 정의된 매개 변수에 추가된 정보를 전달합니다.*
+*그림:서비스[!UICONTROL 매개 변수]필드를 사용하여 사용자 정의 응용 프로그램에 빌드되는 사전 정의된 매개 변수에 추가된 정보를 전달합니다.*
 
 캠페인 이미지가 이 처리 프로필이 적용된 폴더에 업로드되면 이미지는 `Jumanji` 텍스트로 `Arial-BoldMT` 업데이트됩니다.
 
@@ -193,7 +185,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![추가 표현물](assets/renditions-additional-renditions.png)
 
-*그림: 상위 폴더에 적용된 처리 프로필로 생성된 두 개의 추가 표현물의 예.*
+*그림:상위 폴더에 적용된 처리 프로필로 생성된 두 개의 추가 표현물의 예.*
 
 ## 사후 처리 워크플로우 {#post-processing-workflows}
 
@@ -226,8 +218,8 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 
 사용자 지정 Workflow Runner 서비스(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)는 OSGi 서비스이며 구성에 대한 두 가지 옵션을 제공합니다.
 
-* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`): 다양한 저장소 경로에 따라 여러 워크플로우 모델을 표시할 수 있습니다. 패스와 모델은 콜론으로 구분해야 합니다. 단순 저장소 경로가 지원되며 경로의 워크플로우 모델에 매핑되어야 `/var` 합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 식별 사후 처리 워크플로우(`postProcWorkflowsByExpression`): 서로 다른 정규 표현식을 기반으로 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`):다양한 저장소 경로에 따라 여러 워크플로우 모델을 표시할 수 있습니다. 패스와 모델은 콜론으로 구분해야 합니다. 단순 저장소 경로가 지원되며 경로의 워크플로우 모델에 매핑되어야 `/var` 합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 식별 사후 처리 워크플로우(`postProcWorkflowsByExpression`):서로 다른 정규 표현식을 기반으로 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
