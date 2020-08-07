@@ -2,9 +2,9 @@
 title: Cloud Service의 2020.8.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.8.0).'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '494'
 ht-degree: 6%
 
 ---
@@ -67,4 +67,18 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * 컨텐츠 감사 탭에 게시 도메인 대신 작성자 도메인을 사용하여 기본 URL이 잘못 표시됩니다.
 
 * 컨텐츠 감사 단계를 활성화하려면 파이프라인을 편집하고 선택적으로 페이지를 추가해야 합니다. 페이지가 추가되지 않으면 홈 페이지가 감사됩니다.
+
+## 컨텐츠 전송 도구 {#content-transfer-tool}
+
+컨텐츠 전송 도구 릴리스 v1.0.4의 새로운 기능과 업데이트에 대해 알아보려면 이 섹션을 따르십시오.
+
+### 새로운 기능 {#what-is-new-ctt}
+
+* 이제 콘텐츠 전송 도구가 공유 S3 DataStore를 지원합니다.
+
+### 버그 수정 {#ctt-bug-fixes}
+
+* 추가 시간 초과가 추가 작업에 추가되었습니다.
+
+* 이전 버전 UI는 로그에 오류가 표시되더라도 성공적인 추출을 표시하기도 했습니다.
 
