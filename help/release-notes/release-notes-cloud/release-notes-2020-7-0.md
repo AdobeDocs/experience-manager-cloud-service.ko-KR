@@ -2,7 +2,7 @@
 title: Cloud Service의 2020.7.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
 description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.7.0).'
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -43,6 +43,14 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * Cloud Service 배포과 호환되지 않는 워크플로우 단계가 이제 [!UICONTROL 워크플로우 모델] 편집기에 경고로 표시됩니다. 또한 Cloud Service 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
 
 * Cloud Manager의 환경과 연관된 Git 프로젝트 `/conf/global` 에 배포되는 고객이 생성한 워크플로우 모델은 자동으로 Experience Manager에 배포되어 `/var` 사용할 수 있습니다. 고객이 변경한 제품 워크플로우 모델 `/libs` 은 자동으로 배포되지 않습니다 `/var`.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 새로운 기능 {#what-is-new-commerce}
+
+이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
+
+자세한 [내용은 AEM Commerce 시작을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 형식으로 참조하십시오.
 
 ## 코어 구성 요소 {#core-components}
 
@@ -110,14 +118,6 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 * AEM Analytics 클라우드 서비스 UI를 클래식 UI에서 새 AEM UI로 이식했습니다. 또한 AEM 저장소의 Analytics 클라우드 서비스 위치를 다른 AEM 클라우드 서비스와 일치하도록 `/etc` `/conf`이동했습니다.
 
 * 클래식 UI에서 새 AEM UI로 AEM Target 클라우드 서비스 UI를 포팅했습니다. 또한 다른 AEM 클라우드 서비스와 일치하도록 AEM 저장소의 Target 클라우드 서비스 위치 `/etc` 를 `/conf`이동했습니다.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### 새로운 기능 {#what-is-new-commerce}
-
-이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
-
-자세한 [내용은 AEM Commerce 시작을 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 형식으로 참조하십시오.
 
 ## 클라우드 준비 분석기 {#cloud-readiness-analyzer}
 
