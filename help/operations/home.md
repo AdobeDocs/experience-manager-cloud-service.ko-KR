@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 작업 및 유지 관리
 description: 클라우드 서비스로서의 Adobe Experience Manager 작업 및 유지 관리 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 96%
+source-wordcount: '392'
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 96%
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 준비 완료](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [클라우드 서비스로서의 Adobe Experience Manager 자습서](https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
