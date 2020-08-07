@@ -1,17 +1,17 @@
 ---
-title: 'Cloud Service의 디지털 에셋 관리를 위한 에셋 API '
+title: 'Cloud Service으로 Adobe Experience Manager의 디지털 에셋 관리를 위한 에셋 API '
 description: 자산 API를 사용하면 이진, 메타데이터, 변환, 주석 및 컨텐츠 조각 등 자산을 관리하는 기본 CRUD(Create-Read-Update-delete) 작업을 수행할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
 
 
-# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
+# Cloud Service API로 자산 {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -29,15 +29,15 @@ Give a list of and overview of all reference information available.
 
 이진 파일을 업로드하는 높은 수준의 알고리즘은 다음과 같습니다.
 
-1. 새 바이너리를 업로드하려는 의도를 AEM에 알리는 HTTP 요청을 제출합니다.
-1. POST 이진 내용을 초기화 요청에 의해 제공된 하나 이상의 URI에 게시합니다.
+1. AEM에서 새 바이너리를 업로드하겠다는 의도를 알리는 HTTP 요청을 제출합니다.
+1. POST을 [시작] 요청에서 제공하는 하나 이상의 URI로 이진 내용을합니다.
 1. HTTP 요청을 제출하여 바이너리의 내용이 성공적으로 업로드되었음을 서버에 알립니다.
 
 ![직접 바이너리 업로드 프로토콜 개요](assets/add-assets-technical.png)
 
-AEM의 이전 버전과 비교할 때 중요한 차이점이 있습니다.
+AEM의 이전 버전과 비교할 때 중요한 차이점은 다음과 같습니다.
 
-* 바이너리는 AEM을 통해 이동하지 않습니다. 이 AEM은 배포에 대해 구성된 바이너리 클라우드 스토리지를 통해 업로드 프로세스를 조정할 수 있습니다
+* 바이너리는 AEM을 통해 이동하지 않습니다. 이제 배포 시 구성된 바이너리 클라우드 스토리지를 사용하여 업로드 프로세스를 조정할 수 있습니다
 * 이진 클라우드 스토리지는 업로드 종점을 클라이언트에 더 가깝게 가져오는 CDN(Content Delivery Network)에 의해 앞에 배치되므로, 특히 분산된 팀이 자산을 업로드하는 경우 업로드 성능과 사용자 경험을 향상시킬 수 있습니다
 
 이 접근 방식은 자산 업로드를 보다 확장 가능하고 성능 있게 처리할 수 있습니다.
@@ -48,11 +48,7 @@ AEM의 이전 버전과 비교할 때 중요한 차이점이 있습니다.
 
 ### 업로드 시작 {#initiate-upload}
 
-첫 번째 단계는 자산을 만들거나 업데이트해야 하는 폴더에 HTTP POST 요청을 제출하는 것입니다. include the selector `.initiateUpload.json` to indicate that the request is to start binary upload. 예를 들어 자산을 만들어야 하는 폴더의 경로는 다음과 같습니다. `/assets/folder`
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+첫 번째 단계는 자산을 만들거나 업데이트해야 하는 폴더에 HTTP POST 요청을 제출하는 것입니다.include the selector `.initiateUpload.json` to indicate that the request is to start binary upload. 예를 들어 자산을 만들어야 하는 폴더의 경로는 입니다 `/assets/folder`. POST 요청이 `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`있습니다.
 
 요청 본문의 컨텐츠 유형은 `application/x-www-form-urlencoded` 양식 데이터여야 하며 다음 필드를 포함해야 합니다.
 
@@ -61,7 +57,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 각 바이너리에 필수 필드가 포함된 경우 단일 요청을 사용하여 여러 바이너리에 대한 업로드를 시작할 수 있습니다. 요청이 성공하면, 요청은 `201` 상태 코드와 JSON 데이터가 포함된 본문으로 응답합니다.
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
@@ -78,15 +74,15 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 }
 ```
 
-* `completeURI` (문자열): 바이너리 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 이 값은 `"https://author.acme.com/content/dam.completeUpload.json"` 또는 전체 업로드 `"/content/dam.completeUpload.json"` 를 [참조하십시오](#complete-upload).
-* `folderPath` (문자열): 바이너리가 업로드되는 폴더의 전체 경로입니다.
-* `(files)` (배열): 길이 및 순서가 시작 요청에 제공된 이진 정보 목록의 길이 및 순서와 일치하는 요소 목록입니다.
-* `fileName` (문자열): 시작 요청에 제공된 해당 바이너리의 이름입니다. 이 값은 전체 요청에 포함되어야 합니다.
-* `mimeType` (문자열): 시작 요청에서 제공된 해당 바이너리의 MIME 형식입니다. 이 값은 전체 요청에 포함되어야 합니다.
-* `uploadToken` (문자열): 해당 바이너리에 대한 업로드 토큰입니다. 이 값은 전체 요청에 포함되어야 합니다.
-* `uploadURIs` (배열): 값이 바이너리 컨텐츠를 업로드해야 하는 전체 URI인 문자열 목록입니다(바이너리 [업로드 참조](#upload-binary)).
-* `minPartSize` (숫자): 둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최소 길이(바이트)입니다.
-* `maxPartSize` (숫자): 둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최대 길이(바이트)입니다.
+* `completeURI` (문자열):바이너리 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 이 값은 `"https://author.acme.com/content/dam.completeUpload.json"` 또는 전체 업로드 `"/content/dam.completeUpload.json"` 를 [참조하십시오](#complete-upload).
+* `folderPath` (문자열):바이너리가 업로드되는 폴더의 전체 경로입니다.
+* `(files)` (배열):길이 및 순서가 시작 요청에 제공된 이진 정보 목록의 길이 및 순서와 일치하는 요소 목록입니다.
+* `fileName` (문자열):시작 요청에 제공된 해당 바이너리의 이름입니다. 이 값은 전체 요청에 포함되어야 합니다.
+* `mimeType` (문자열):시작 요청에서 제공된 해당 바이너리의 MIME 형식입니다. 이 값은 전체 요청에 포함되어야 합니다.
+* `uploadToken` (문자열):해당 바이너리에 대한 업로드 토큰입니다. 이 값은 전체 요청에 포함되어야 합니다.
+* `uploadURIs` (배열):값이 바이너리 컨텐츠를 업로드해야 하는 전체 URI인 문자열 목록입니다(바이너리 [업로드 참조](#upload-binary)).
+* `minPartSize` (숫자):둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최소 길이(바이트)입니다.
+* `maxPartSize` (숫자):둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최대 길이(바이트)입니다.
 
 ### 이진 업로드 {#upload-binary}
 
@@ -94,9 +90,9 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 이를 달성하기 위한 한 가지 가능한 방법은 API에서 제공하는 업로드 URI 수를 기반으로 부품 크기를 계산하는 것입니다. 바이너리의 전체 크기가 20,000바이트이고 업로드 URI 수는 2라고 가정하는 예:
 
-* 전체 크기를 URI 수로 나누어 부품 크기를 계산합니다. 20,000 / 2 = 10,000
-* 업로드 URI 목록의 첫 번째 URI에 대한 바이너리의 POST 바이트 범위 0-9,999입니다.
-* POST 바이트 범위 10,000 - 바이너리의 19,999를 업로드 URI 목록의 두 번째 URI로
+* 전체 크기를 URI 수로 나누어 부품 크기를 계산합니다.20,000 / 2 = 10,000
+* 업로드 URI 목록의 첫 번째 URI에 대한 바이너리의 POST 바이트 범위 0-9,999
+* 업로드 URI 목록에 있는 바이너리의 POST 바이트 범위 10,000 - 19,999를 두 번째 URI로
 
 성공하면 서버가 각 요청에 응답하고 `201` 상태 코드가 있습니다.
 
@@ -125,7 +121,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### 오픈 소스 업로드 라이브러리 {#open-source-upload-library}
 
-업로드 알고리즘에 대해 자세히 알아보거나 자신만의 업로드 스크립트 및 도구를 만들기 위해 Adobe는 오픈 소스 라이브러리와 도구를 시작점으로 제공합니다.
+업로드 알고리즘에 대해 자세히 알아보거나 자신만의 업로드 스크립트 및 도구를 만들기 위해 Adobe은 오픈 소스 라이브러리와 도구를 시작점으로 제공합니다.
 
 * [오픈 소스 aem-upload 라이브러리](https://github.com/adobe/aem-upload)
 * [오픈 소스 명령줄 툴](https://github.com/adobe/aio-cli-plugin-aem)
@@ -134,7 +130,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Cloud Service의 경우 새 업로드 API만 지원됩니다. Adobe Experience Manager 6.5의 API는 더 이상 사용되지 않습니다. 자산 또는 표현물(바이너리 업로드)의 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
+Cloud Service으로 Adobe Experience Manager의 경우 새 업로드 API만 지원됩니다. Adobe Experience Manager 6.5의 API는 더 이상 사용되지 않습니다. 자산 또는 표현물(바이너리 업로드)의 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
 
 * [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, 좋아요 `AssetManager.createAsset(..)`
