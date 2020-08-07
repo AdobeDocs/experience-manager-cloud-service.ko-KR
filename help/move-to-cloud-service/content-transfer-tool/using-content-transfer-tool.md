@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
+source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 97%
+source-wordcount: '1640'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 * 컨텐츠 전송 도구의 최소 시스템 요구 사항은 AEM 6.3 이상 및 JAVA 8입니다. 더 낮은 AEM 버전을 사용하는 경우 컨텐츠 저장소를 AEM 6.5로 업그레이드해야 컨텐츠 전송 도구를 사용할 수 있습니다.
 
-* 컨텐츠 전송 도구는 다음 유형의 데이터 저장소와 함께 사용할 수 있습니다. 파일 데이터 저장소, S3 데이터 저장소 및 공유 S3 데이터 저장소. 현재 Azure Blob 저장소 데이터 저장소를 지원하지 않습니다.
+* 컨텐츠 전송 도구는 다음 유형의 데이터 저장소와 함께 사용할 수 있습니다.파일 데이터 저장소, S3 데이터 저장소 및 공유 S3 데이터 저장소. 현재 Azure Blob 저장소 데이터 저장소를 지원하지 않습니다.
 
 * *샌드박스 환경*&#x200B;을 사용 중인 경우 환경이 2020년 6월 10일 이후 릴리스로 업그레이드되었는지 확인하십시오. *프로덕션 환경*&#x200B;을 사용하는 경우 자동으로 업데이트됩니다.
 
@@ -32,7 +32,7 @@ ht-degree: 97%
 
 ## 사용 가능 {#availability}
 
-소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일(컨텐츠 전송 도구 v1.0.0)로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
+Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 릴리스 [노트를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털에서 컨텐츠 전송 도구를 다운로드합니다.
