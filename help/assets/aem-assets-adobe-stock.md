@@ -1,86 +1,90 @@
 ---
-title: AEM Assets에서 Adobe Stock 디지털 에셋 사용
-description: Experience Manager에서 Adobe Stock 에셋을 검색, 가져오기, 라이선스 부여 및 관리할 수 있습니다. 라이선스가 부여된 에셋을 다른 Experience Manager 에셋으로 처리합니다.
+title: 자산 [!DNL Adobe Stock] 을 [!DNL Adobe Experience Manager Assets]관리합니다.
+description: 내부에서 자산을 검색, 가져오기, 라이선스 부여 및 [!DNL Adobe Stock] 관리할 수 있습니다 [!DNL Adobe Experience Manager]. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: 453a8459e042f57820c10fb90f30c2016aa0f5d0
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '986'
 ht-degree: 3%
 
 ---
 
 
-# AEM Assets에서 Adobe Stock 자산 사용 {#use-adobe-stock-assets-in-aem-assets}
+# Use [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
-조직은 Adobe Stock 엔터프라이즈 플랜을 AEM Assets과 통합하여 AEM의 강력한 자산 관리 기능과 함께 라이선스가 부여된 에셋을 크리에이티브 및 마케팅 프로젝트에 광범위하게 사용할 수 있도록 할 수 있습니다.
+조직은 엔터프라이즈 플랜과 [!DNL Adobe Stock] 통합하여 크리에이티브 및 마케팅 프로젝트 [!DNL Experience Manager Assets] 에서 라이선스가 부여된 에셋을 광범위한 에셋 관리 기능과 함께 사용할 수 있도록 할 수 있습니다. 강력한 에셋 관리 기능은 다음과 같습니다 [!DNL Experience Manager].
 
-Adobe Stock 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다. AEM 사용자는 AEM 작업 영역을 벗어나지 않고도 AEM에 저장된 Adobe Stock 자산을 신속하게 검색, 미리 보고 라이선스를 부여할 수 있습니다.
+[!DNL Adobe Stock] 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다. [!DNL Experience Manager] 사용자는 [!DNL Adobe Stock] [!DNL Experience Manager][!DNL Experience Manager] 인터페이스 내에서 저장한 에셋을 신속하게 찾아 미리 보고 라이선스를 부여할 수 있습니다.
 
-## AEM 및 Adobe Stock 통합 {#integrate-aem-and-adobe-stock}
+## 통합 [!DNL Experience Manager] 및 [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
-AEM과 Adobe Stock 간의 통신을 허용하려면 AEM에서 IMS 구성과 Adobe Stock 구성을 만드십시오.
+에서 통신 [!DNL Experience Manager] 을 허용하려면 에서 IMS 구성 [!DNL Adobe Stock]과 구성을 [!DNL Adobe Stock] 만듭니다 [!DNL Experience Manager].
 
 >[!NOTE]
 >
->조직의 AEM 관리자 및 Admin Console 관리자만 관리자 권한이 필요하므로 통합을 수행할 수 있습니다.
+>조직의 [!DNL Experience Manager] 관리자 및 [!DNL Admin Console] 관리자만 관리자 권한이 필요하므로 통합을 수행할 수 있습니다.
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. AEM 로고를 클릭합니다. 도구 **[!UICONTROL > 보안]** **** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
 1. 기존 인증서를 재사용하거나 새 인증서 **[!UICONTROL 만들기를 선택합니다]**.
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 생성된 공개 키를 다운로드합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 제목, **[!UICONTROL 권한 부여 서버]**, **[!UICONTROL API 키]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 및 Payload라는 필드에 적절한 값을]******&#x200B;제공합니다. Adobe 개발자 [콘솔에서 이러한 값을 가져오는 방법에 대한 자세한 내용은 JWT 인증 빠른 시작을](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)참조하십시오.
-1. 다운로드한 공개 키를 Adobe 개발자 콘솔 서비스 계정에 추가합니다.
+1. 다운로드한 공개 키를 [!DNL Adobe Developer Console] 서비스 계정에 추가합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다. IMS [!UICONTROL 기술 계정 구성] 화면을 열어 값을 바로 제공할 수 있습니다.
+1. Adobe 개발자 [콘솔에 액세스합니다](https://console.adobe.io). 통합이 필요한 조직에 대한 관리자 권한이 계정에 있는지 확인합니다.
+1. 새 프로젝트 **[!UICONTROL 만들기를]** 클릭하고 **[!UICONTROL API 추가를 클릭합니다]**. 사용 가능한 API 목록에서 **[!UICONTROL Adobe Stock]** 를 선택합니다. OAUTH [!UICONTROL 2.0 Web을 선택합니다]. 표시된 다양한 값을 구성하고 복사합니다.
+1. 제목, 권한 부여 서버 [!DNL Experience Manager] 라는 필드 **[!UICONTROL 에]** API 키 **[!UICONTROL ,]** API Client Secret **[!UICONTROL , 및 Facebook Payload라는 값을]**********&#x200B;입력합니다. 이러한 값에 대한 자세한 내용은 [JWT 인증 빠른 시작](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)을 참조하십시오.
 
-<!--
-TBD: Update this instance when AIO updates their documentation publish URL.
+<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
-### AEM에서 Adobe Stock 구성 만들기 {#create-adobe-stock-configuration-in-aem}
+### 구성 [!DNL Adobe Stock] 을 [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
-1. AEM 사용자 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock으로]**&#x200B;이동합니다.
+1. 에서 [!DNL Experience Manager]도구 **[!UICONTROL > Cloud Services]** **[!UICONTROL >]** Adobe Stock으로 **[!UICONTROL 이동합니다]**.
 1. 만들기 **[!UICONTROL 를]** 클릭하여 구성을 만들고 기존 IMS 구성에 연결합니다. 환경 매개 변수 `PROD` 로 선택합니다.
-1. 라이센스 **[!UICONTROL 자산 경로]** 필드에서 위치를 그대로 두십시오. Adobe Stock 에셋을 저장할 위치를 변경하지 마십시오.
-1. 필요한 모든 속성을 추가하여 작성을 완료합니다. Click **[!UICONTROL Save &amp; Close]**.
-1. 자산에 라이선스를 부여할 수 있는 AEM 사용자 또는 그룹을 추가합니다.
+1. 라이센스 **[!UICONTROL 자산 경로]** 필드에서 위치를 그대로 두십시오. 자산을 저장할 위치를 변경하지 [!DNL Adobe Stock] 마십시오.
+1. 필요한 모든 속성을 추가하여 작성을 완료합니다. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. 자산에 라이선스를 부여할 수 있는 사용자 또는 그룹을 추가합니다. [!DNL Experience Manager]
 
 >[!NOTE]
 >
->여러 Adobe Stock 구성이 있는 경우 AEM 사용자 인터페이스에서 AEM 로고를 클릭하여 [!UICONTROL 사용자 환경] 설정 패널에서 원하는 구성을 선택합니다.
+>구성이 여러 개 [!DNL Adobe Stock] 있는 경우 [사용자 환경 설정] 패널에서 원하는 구성을 선택합니다. Experience Manager 홈 페이지에서 패널에 액세스하려면 사용자 아이콘을 클릭한 다음 **[!UICONTROL 사용자 환경 설정]** > **[!UICONTROL 스톡 구성]**)을 클릭합니다.
 
-## AEM에서 Adobe Stock 에셋 사용 및 관리 {#usemanage}
+## 자산 사용 및 [!DNL Adobe Stock] 관리 [!DNL Experience Manager] {#usemanage}
 
-조직은 이 기능을 사용하여 사용자가 AEM Assets에서 Adobe Stock 에셋을 사용하여 작업할 수 있도록 허용할 수 있습니다. AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock 자산을 검색하고 필요한 자산에 라이선스를 부여할 수 있습니다.
+조직은 이 기능을 사용하여 사용자가 자신의 [!DNL Adobe Stock] 자산을 사용하여 작업할 수 있도록 허용할 수 [!DNL Experience Manager Assets]있습니다. 사용자 인터페이스 내에서 [!DNL Experience Manager] [!DNL Adobe Stock] 사용자는 자산을 검색하고 필요한 자산의 라이선스를 부여할 수 있습니다.
 
-AEM에서 Adobe Stock 에셋에 라이선스가 부여되면 일반적인 에셋처럼 사용하고 관리할 수 있습니다. AEM에서 사용자는 자산을 검색하고 미리 볼 수 있습니다. 자산 복사 및 게시; 브랜드 포털에서 자산 공유; AEM 데스크탑 앱을 통해 에셋 액세스 및 사용 다양한 기능을 사용할 수 있습니다.
+에셋에 라이선스가 부여되면 일반적인 에셋처럼 사용하고 관리할 수 [!DNL Adobe Stock] [!DNL Experience Manager]있습니다. 에서 [!DNL Experience Manager]사용자는 자산을 검색하고 미리 볼 수 있습니다.자산 복사 및 게시;자산을 공유할 수 [!DNL Brand Portal]있습니다.데스크탑 앱을 통해 에셋 액세스 및 [!DNL Experience Manager] 사용다양한 기능을 사용할 수 있습니다.
 
-<!--  ![Search for Adobe Stock assets and filter results from your AEM workspace](assets/adobe-stock-search-results-workspace.png)
-*Figure: Search for Adobe Stock assets and filter results from your AEM workspace* -->
+<!--  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
 
-**A.** Adobe Stock ID가 제공되는 자산과 유사한 에셋을 검색합니다. **B.** 선택한 모양 또는 방향과 일치하는 에셋을 검색합니다. **C.** 지원되는 더 많은 자산 유형 **D.** 열기 또는 **E.** 라이선스를 검색하고 선택한 자산을 AEM **F.** . **축소합니다.** 워터마크G와 함께 AEM 자산에 저장합니다. **선택한 자산을 AEM에 저장합니다.Assets와 함께 AEM 자산을 저장합니다.Explore Adobe 웹 사이트에 있는 Stock이 Stock에서 Stock이 Stock에 비슷한 기능을 제공합니다. StockStockStockStock에 StockStockStockStock이 Stock이 Stock이 Stock에 Stock이 Stock에 Stock이 Stock이 Stock이 Stock에 Stock이 Stock이 Stock이 Stock이 Stock이 Stock에 Stock이 Stock이 Stock에이이 Stock을** 을 **을** 을 **Stock을** 을에을을을을 J.J.List 보기 간 검색 결과 보기에서 선택한 자산의 번호
+*Figure: Search for [!DNL Adobe Stock] assets and filter results from your [!DNL Experience Manager] interface.*
+
+**A.** Search assets similar to the assets whose [!DNL Adobe Stock] ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager] **F.** Save the asset in [!DNL Experience Manager] with watermark **G.** Explore assets on [!DNL Adobe Stock] website that are similar to the selected asset **H.** View the selected assets on [!DNL Adobe Stock] website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view -->
 
 ### 자산 찾기 {#find-assets}
 
-AEM 사용자는 AEM 및 Adobe Stock 모두에서 자산을 검색할 수 있습니다. 검색 위치가 Adobe Stock에 제한되지 않으면 AEM 및 Adobe Stock의 검색 결과가 표시됩니다.
+사용자 [!DNL Experience Manager] 는 및 모두에서 자산을 검색할 수 [!DNL Experience Manager] 있습니다 [!DNL Adobe Stock]. 검색 위치가 다음으로 제한되지 않으면 [!DNL Adobe Stock]검색 결과 [!DNL Experience Manager] 가 표시되고 [!DNL Adobe Stock] 표시됩니다.
 
-* Adobe Stock 에셋을 검색하려면 **[!UICONTROL 탐색]** > **[!UICONTROL 에셋]** > **[!UICONTROL Adobe Stock]**&#x200B;검색을클릭합니다.
+* 자산을 검색하려면 [!DNL Adobe Stock] 탐색 **[!UICONTROL >]** 자산 **** > Adobe Stock ****&#x200B;검색을 클릭합니다.
 
-* Adobe Stock 및 AEM Assets에서 자산을 검색하려면 검색 아이콘 ![search_icon을 클릭합니다](assets/do-not-localize/search_icon.png).
+* 여러 [!DNL Adobe Stock] 가지 [!DNL Experience Manager Assets]에서 자산을 검색하려면 ![검색을 클릭합니다](assets/do-not-localize/search_icon.png).
 
-또는 검색 막대 `Location: Adobe Stock` 에 입력하기 시작하여 Adobe Stock 에셋을 선택합니다.  AEM에서는 검색된 자산에 대해 고급 필터링 기능을 제공하여 지원되는 에셋 유형, 이미지 방향 및 라이센스 상태 등의 필터를 사용하여 필요한 에셋을 빠르게 0으로 입력할 수 있습니다.
+또는 검색 막대 `Location: Adobe Stock` 에 입력하기 시작하여 자산을 [!DNL Adobe Stock] 선택합니다. [!DNL Experience Manager] 검색된 자산에 고급 필터링 기능을 제공하여 지원되는 에셋 유형, 이미지 방향 및 라이선스 상태 등의 필터를 사용하여 필요한 에셋을 신속하게 이용할 수 있습니다.
 
 >[!NOTE]
 >
->Adobe Stock에서 검색된 자산은 AEM에 표시됩니다. Adobe Stock 에셋은 사용자가 에셋을 [저장하거나 에셋에 라이선스를 부여해야 AEM](/help/assets/aem-assets-adobe-stock.md#saveassets) 저장소에 [보관됩니다](/help/assets/aem-assets-adobe-stock.md#licenseassets). AEM에 이미 저장된 에셋이 쉽게 참조되고 액세스할 수 있도록 강조 표시됩니다. 또한 이러한 에셋은 소스를 Adobe Stock으로 나타내기 위해 일부 추가 메타데이터와 함께 저장됩니다.
+>검색된 자산 [!DNL Adobe Stock] [!DNL Experience Manager]은 [!DNL Adobe Stock] 에셋은 사용자가 에셋 [!DNL Experience Manager] 또는 [라이선스를](/help/assets/aem-assets-adobe-stock.md#saveassets) 저장하고 에셋을 저장한 후에만 보관됩니다 [](/help/assets/aem-assets-adobe-stock.md#licenseassets). 이미 저장된 에셋이 [!DNL Experience Manager] 표시되고 강조 표시되므로 쉽게 참조하고 액세스할 수 있습니다. 또한, [!DNL Stock] 자산은 소스를 나타내는 일부 추가 메타데이터와 함께 저장됩니다 [!DNL Stock].
 
-![AEM의 검색 필터 및 검색 결과에서 강조 표시된 Adobe Stock 에셋](assets/aem-search-filters2.jpg)*그림: AEM의 검색 필터 및 검색 결과에서 강조 표시된 Adobe Stock 에셋*
+![Experience Manager의 검색 필터 및 검색 결과에서 강조 표시된 Adobe Stock 에셋](assets/aem-search-filters2.jpg)
+
+*그림:검색 결과에서 필터[!DNL Experience Manager]와 강조 표시된[!DNL Adobe Stock]에셋을 검색합니다.*
 
 ### 필요한 자산 저장 및 보기 {#saveassets}
 
-AEM에서 저장할 자산을 선택합니다. 맨 위의 도구 모음에서 저장을 클릭하고 자산의 이름과 위치를 제공합니다. 라이센스가 없는 에셋은 워터마크를 사용하여 로컬에 저장됩니다.
+저장할 자산을 선택합니다 [!DNL Experience Manager]. 상단에 있는 [!UICONTROL 도구 모음에서 저장을] 클릭하고 자산의 이름과 위치를 입력합니다. 라이센스가 없는 에셋은 워터마크를 사용하여 로컬에 저장됩니다.
 
-다음 번에 에셋을 검색할 때 저장된 에셋이 AEM Assets에서 사용할 수 있음을 나타내는 배지로 강조 표시됩니다.
+다음 번에 에셋을 검색할 때 저장된 에셋이 배지로 강조 표시되어 해당 에셋을 사용할 수 있음을 나타냅니다 [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -88,36 +92,33 @@ AEM에서 저장할 자산을 선택합니다. 맨 위의 도구 모음에서 �
 
 ### 라이선스 에셋 {#licenseassets}
 
-사용자는 Adobe Stock Enterprise 플랜의 할당량을 사용하여 Adobe Stock 에셋에 라이선스를 부여할 수 있습니다. 에셋 라이선스를 부여하면 워터마크 없이 저장되며 AEM Assets에서 검색하고 사용할 수 있습니다.
+사용자는 기업 계획의 할당량을 사용하여 [!DNL Adobe Stock] 자산에 대한 라이선스를 부여할 수 [!DNL Adobe Stock] 있습니다. 에셋에 라이선스를 부여하면 워터마크 없이 저장되며 에서 검색하고 사용할 수 있습니다 [!DNL Experience Manager Assets].
 
-![AEM Assets에서 Adobe Stock 에셋에 라이선스를 부여하고 저장하는 대화 상자](assets/aem-stock_licenseandsave.jpg)*를 참조하십시오. 그림: AEM Assets에 Adobe Stock 에셋의 라이선스를 부여하고 저장하는 대화 상자*
+![Experience Manager 자산에 Adobe Stock 에셋의 라이선스를 부여하고 저장하는 대화 상자](assets/aem-stock_licenseandsave.jpg)
+
+*그림:에셋에 라이선스를 부여하고 저장할 수 있는 대화[!DNL Adobe Stock]상자[!DNL Experience Manager Assets].*
 
 ### 메타데이터 및 자산 속성 액세스 {#access-metadata-and-asset-properties}
 
-사용자는 AEM에 저장된 자산에 대한 Adobe Stock 메타데이터 속성을 비롯한 메타데이터를 액세스하고 미리 볼 수 있으며, 자산에 대한 **[!UICONTROL 라이선스 참조를]** 추가할 수 있습니다. 그러나 라이선스 참조에 대한 업데이트는 AEM과 Adobe Stock 웹 사이트 간에 동기화되지 않습니다.
+사용자는 에셋에 저장된 에셋의 [!DNL Adobe Stock] 메타데이터 속성을 비롯한 메타데이터에 액세스하고 미리 볼 수 [!DNL Experience Manager]있으며 **[!UICONTROL 에셋에 대한 라이센스 참조]** 사항을 추가할 수 있습니다. 그러나 라이선스 참조에 대한 업데이트는 [!DNL Experience Manager] 웹 사이트와 [!DNL Adobe Stock] 웹 사이트 간에 동기화되지 않습니다.
 
 사용자는 라이선스가 부여된 에셋과 라이선스가 없는 에셋의 속성을 볼 수 있습니다.
 
-![저장된 자산의 메타데이터 및 라이센스 참조를 보고 액세스합니다](assets/metadata_properties.jpg)*그림: 저장된 에셋의 메타데이터 및 라이선스 참조 보기 및 액세스*
+![저장된 에셋의 메타데이터 및 라이선스 참조 보기 및 액세스](assets/metadata_properties.jpg)
+
+*그림:저장된 에셋의 메타데이터 및 라이선스 참조를 보고 액세스합니다.*
 
 ## 알려진 제한 사항 {#known-limitations}
 
-### 편집 이미지 경고가 표시되지 않음
+* **편집 이미지 경고가 표시되지 않습니다**.이미지 라이선스를 부여할 때 이미지가 편집 전용 이미지인지 확인할 수 없습니다. 오용 가능성을 방지하기 위해 관리자는 Admin Console에서 편집 자산에 대한 액세스를 끌 수 있습니다.
 
-이미지 라이선스를 부여할 때 이미지가 편집 전용 이미지인지 확인할 수 없습니다. 오용 가능성을 방지하기 위해 관리자는 Admin Console에서 편집 자산에 대한 액세스를 끌 수 있습니다.
+* **잘못된 라이선스 유형이 표시됩니다**.에셋에 대해 잘못된 라이선스 유형 [!DNL Experience Manager] 이 표시될 수 있습니다. 사용자는 [!DNL Adobe Stock] 웹 사이트에 로그인하여 라이센스 유형을 볼 수 있습니다.
 
-### 잘못된 라이선스 유형이 표시됩니다.
+* **참조 필드 및 메타데이터는 동기화되지 않습니다**.사용자가 라이센스 참조 필드를 업데이트하면 라이센스 참조 정보가 웹 사이트 [!DNL Experience Manager] 에서 업데이트되지만 [!DNL Adobe Stock] 웹 사이트에서는 업데이트되지 않습니다. 마찬가지로 사용자가 웹 사이트의 참조 필드를 업데이트하면 [!DNL Adobe Stock] 업데이트가 에서 동기화되지 않습니다 [!DNL Experience Manager].
 
-자산에 대해 AEM에 잘못된 라이선스 유형이 표시될 수 있습니다. 사용자는 Adobe Stock 웹 사이트에 로그인하여 라이선스 유형을 확인할 수 있습니다.
+>[!MORELIKETHIS]
+>
+>* [Experience Manager 자산에 Adobe Stock 에셋을 사용하는 방법에 대한 비디오 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
 
-### 참조 필드 및 메타데이터는 동기화되지 않습니다.
-
-사용자가 라이센스 참조 필드를 업데이트하면 라이센스 참조 정보는 AEM에서 업데이트되지만 Adobe Stock 웹 사이트에서는 업데이트되지 않습니다. 마찬가지로 사용자가 Adobe Stock 웹 사이트의 참조 필드를 업데이트하면 업데이트가 AEM에서 동기화되지 않습니다.
-
-## Related resources {#related-resources}
-
-[AEM Assets과 함께 Adobe Stock 에셋 사용에 대한 비디오 자습서](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
-
-[Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
-
-[Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
