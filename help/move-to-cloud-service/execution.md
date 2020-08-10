@@ -1,9 +1,9 @@
 ---
 title: 실행 단계
 description: 실행 단계
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -77,11 +77,11 @@ Cloud Manager Git을 통해 코드를 클라우드 서비스 환경에 푸시하
 
 * Dispatcher SDK 설치를 시청하고 Dispatcher SDK를 설치하는 방법을 알아보십시오.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=kor)
 
 * Dispatcher SDK 구성을 시청하고 Dispatcher SDK를 구성하는 방법을 알아보십시오.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=kor)
 
 * [로컬 개발 설정](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) 설명서를 검토하여 로컬 개발 환경을 설정하는 방법을 알아보십시오.
 
