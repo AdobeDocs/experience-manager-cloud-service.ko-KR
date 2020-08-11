@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1717'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 용어 {#terminology}
 
-AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있습니다.
+Adobe Experience Manager(AEM)에서 Cloud Service으로 작업할 때 게시와 관련된 서로 다른 용어가 있을 수 있습니다.
 
 * **게시/게시 취소**
    * 이 용어는 컨텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
@@ -53,6 +53,10 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
 
+>[!NOTE]
+>
+> 추가 가능성 **은 페이지 속성** 의 **기본 탭에서 시간** 및 [해제 시간을참조하십시오.](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+
 ### 편집기에서 게시 {#publishing-from-the-editor}
 
 페이지를 편집하는 경우 편집기에서 직접 게시할 수 있습니다.
@@ -67,6 +71,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
    * 페이지에 게시해야 하는 참조가 있을 경우 **게시 마법사**&#x200B;에 나열되며 여기서 다음을 수행할 수 있습니다.
       * 페이지와 함께 게시할 자산, 태그 등 하나를 지정한 다음 **게시**&#x200B;를 사용하여 프로세스를 완료합니다.
       * **취소**&#x200B;를 사용하여 작업을 중단합니다.
+
    ![페이지를 사용하여 참조 게시](/help/sites-cloud/authoring/assets/publishing-references.png)
 
 1. **게시**&#x200B;를 선택하면 페이지가 게시 환경에 복제됩니다. 페이지 편집기에 게시 작업을 확인하는 정보 배너가 표시됩니다.
@@ -122,6 +127,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
    * 선택한 페이지를 게시하거나 게시 취소하도록 선택합니다.
    * 지금 또는 나중에 해당 작업을 수행하도록 선택합니다.
+
    나중에 게시하면 지정된 시간에 선택한 페이지를 게시하기 위한 워크플로우를 시작합니다. 반대로 나중에 게시 취소하면 지정된 시간에 선택한 페이지를 게시 취소하기 위한 워크플로우를 시작합니다.
 
    나중에 게시/게시 취소를 취소하려면 워크플로우 콘솔로 가서 해당 워크플로우를 종료합니다. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
@@ -138,13 +144,14 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
    컨텐츠 추가 단추를 클릭하면 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
 
-   필요한 페이지를 선택한 후 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
+   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
    마법사로 돌아가 목록에서 항목을 선택한 뒤 다음과 같은 추가 옵션을 구성할 수 있습니다.
 
    * 하위 항목을 포함합니다.
    * 선택 사항에서 제거합니다.
    * 게시된 참조를 관리합니다.
+
    ![게시 관리 페이지 선택](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    **하위 포함**&#x200B;을 클릭하면 대화 상자가 열려 다음 작업을 수행할 수 있습니다.
@@ -152,6 +159,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
    * 바로 아래 하위만 포함.
    * 수정된 페이지만 포함.
    * 이미 게시된 페이지만 포함.
+
    **추가**&#x200B;를 클릭하여 선택 옵션에 따라 게시하거나 게시 취소할 페이지 목록에 하위 페이지를 추가합니다. **취소**&#x200B;를 클릭하여 선택 항목을 취소하고 마법사로 돌아갑니다.
 
    ![하위 항목을 포함한 게시 관리](/help/sites-cloud/authoring/assets/publishing-include-children.png)
@@ -187,10 +195,12 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
    * 워크플로우의 제목을 정의합니다.
    * 워크플로우가 다중 참조 지원을 제공한다면 워크플로우 패키지를 유지합니다.
+
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
    * 워크플로우 패키지를 유지하는 옵션이 선택된 경우 워크플로우 패키지의 제목을 정의합니다.
+
    **게시** 또는 **나중에 게시**&#x200B;를 클릭하여 게시를 완료할 수 있습니다.
 
 ## 페이지 게시 취소 {#unpublishing-pages}
@@ -237,6 +247,7 @@ AEM에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있�
 
    * 바로 아래 하위만 포함
    * 이미 게시된 페이지만 포함
+
    이러한 옵션이 기본적으로 선택되므로 선택 취소해야 합니다. **추가**&#x200B;를 클릭하여 게시/게시 취소할 컨텐츠를 확인하고 추가합니다.
 
    ![게시 취소 시 하위 포함](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
