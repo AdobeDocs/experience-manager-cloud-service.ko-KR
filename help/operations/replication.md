@@ -2,17 +2,17 @@
 title: 복제
 description: 배포 및 문제 해결 복제.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 3%
+source-wordcount: '303'
+ht-degree: 2%
 
 ---
 
 
 # 복제 {#replication}
 
-Adobe Experience Manager은 AEM 런타임 외부에 있는 Adobe I/O에서 실행되는 파이프라인 서비스로 [복제하기 위해 컨텐츠를 Cloud Service으로](https://sling.apache.org/documentation/bundles/content-distribution.html) 이동합니다.
+Adobe Experience Manager은 Cloud Service의 [Sling 컨텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html) 기능을 사용하여 컨텐츠를 이동하여 AEM 런타임 외부에 있는 Adobe I/O에서 실행되는 파이프라인 서비스로 복제합니다.
 
 >[!NOTE]
 >
@@ -22,7 +22,15 @@ Adobe Experience Manager은 AEM 런타임 외부에 있는 Adobe I/O에서 실�
 
 ### 빠른 게시 취소/게시 - 계획된 게시 취소/게시 {#publish-unpublish}
 
-작성자를 위한 이러한 표준 AEM 기능은 AEM Cloud Service과 함께 변경되지 않습니다.
+작성자를 위한 이러한 표준 AEM 기능은 AEM Cloud Service과 변경되지 않습니다.
+
+### 설정 및 해제 시간 - 트리거 구성 {#on-and-off-times-trigger-configuration}
+
+페이지 속성 **의** 기본 **탭에서** 설정 시간 [및](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)해제 시간을추가로 사용할 수있습니다.
+
+자동 복제를 구현하려면 OSGi 구성 **의** 자동 복제 [를 활성화해야](/help/implementing/deploying/configuring-osgi.md) 합니다 ****.
+
+![OSGi 설정 해제 트리거 구성](/help/operations/assets/replication-on-off-trigger.png)
 
 ### 트리 활성화 {#tree-activation}
 
@@ -37,7 +45,7 @@ Adobe Experience Manager은 AEM 런타임 외부에 있는 Adobe I/O에서 실�
 
 ## 문제 해결 {#troubleshooting}
 
-복제 문제를 해결하려면 AEM Author 서비스 웹 UI의 복제 대기열로 이동합니다.
+복제 문제를 해결하려면 AEM 작성자 서비스 웹 UI의 복제 큐로 이동합니다.
 
 1. AEM 시작 메뉴에서 **도구 > 배포 > 배포로 이동합니다**
 2. 카드 forwardPublisher **선택**
@@ -48,5 +56,5 @@ Adobe Experience Manager은 AEM 런타임 외부에 있는 Adobe I/O에서 실�
 
 ![로그](assets/logs.png "로그")
 
-컨텐츠를 게시할 수 없는 경우 AEM Publish 서비스에서 전체 게시가 되돌려집니다.
+콘텐츠를 게시할 수 없는 경우 전체 게시가 AEM 게시 서비스에서 되돌려집니다.
 이러한 경우 발행물 취소를 일으킨 항목을 식별하기 위해 대기열을 검토해야 합니다. 빨간색 상태를 보여주는 큐를 클릭하면 보류 중인 항목이 있는 대기열이 나타나며 필요한 경우 단일 또는 모든 항목을 지울 수 있습니다.
