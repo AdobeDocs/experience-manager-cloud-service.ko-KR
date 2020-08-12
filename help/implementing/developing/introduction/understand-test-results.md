@@ -2,9 +2,9 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1614'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Cloud Manager에서 Cloud Services 파이프라인을 지원하는 세 가지 �
 
 * 고객 서면
 * Adobe
-* Google의 Lighthouse에서 제공하는 오픈 소스 툴
+* 오픈 소스 툴로 Google의 Lighthouse 제공
 
    >[!NOTE]
    > 고객이 작성한 테스트와 Adobe으로 작성된 테스트 모두 이러한 유형의 테스트를 실행하기 위해 설계된 통합 인프라에서 실행됩니다.
@@ -89,6 +89,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >[!NOTE]
 >
 >주석을 가능한 구체적으로 지정하는 것이 가장 좋은 방법이지만, 예를 들어 문제를 일으키는 특정 문이나 블록에만 주석을 다는 것은 클래스 수준에서 주석을 달 수 있습니다. `@SuppressWarnings`
+
+>[!NOTE]
+>명시적 보안 테스트 단계는 없지만 코드 품질 단계 동안 평가된 보안 관련 코드 품질 규칙은 여전히 있습니다. 자세한 내용은 [AEM용 보안 개요를 Cloud Service](/help/security/cloud-service-security-overview.md) 형식으로 참조하십시오.
 
 ## 기능 테스트 {#functional-testing}
 
