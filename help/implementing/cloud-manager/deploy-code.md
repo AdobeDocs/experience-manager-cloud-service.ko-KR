@@ -2,9 +2,9 @@
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,8 @@ ht-degree: 0%
    단계 **배포에는**&#x200B;다음 단계가 포함됩니다.
 
    * 유효성 검사:이 단계에서는 파이프라인이 현재 사용 가능한 리소스를 사용하도록 구성되어 있는지 확인합니다. 예를 들어 구성된 분기가 있고 환경을 사용할 수 있습니다.
-   * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스가 실행됩니다. 빌드 [환경에 대한 자세한 내용은 AEM 응용 프로그램 프로젝트](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) 만들기를 참조하십시오.
-   * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트](/help/implementing/developing/introduction/understand-test-results.md) 결과 이해를 참조하십시오.
+   * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스가 실행됩니다. 빌드 [환경에 대한 자세한 내용은](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) 빌드 환경 세부 정보를 참조하십시오.
+   * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [코드](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) 품질 테스트를 참조하십시오.
    * 이미지 빌드:이 단계에는 이미지를 만드는 데 사용되는 프로세스의 로그 파일이 있습니다. 이 프로세스는 빌드 단계에서 생성된 컨텐츠 및 디스패처 패키지를 Docker 이미지 및 Kubernetes 구성으로 변환해야 합니다.
    * 스테이지에 배포
 
