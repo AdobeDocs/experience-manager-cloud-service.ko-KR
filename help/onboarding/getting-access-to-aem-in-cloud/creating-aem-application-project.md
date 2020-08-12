@@ -2,10 +2,10 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1dfc9cfaba4c7701ebca58346d6eec6b946dd517
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 0%
+source-wordcount: '1472'
+ht-degree: 1%
 
 ---
 
@@ -113,7 +113,7 @@ CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행�
 
 변수 이름에는 영숫자 및 밑줄(_) 문자만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다. 파이프라인당 변수 수는 200자로 제한됩니다. 각 이름은 100자 미만이어야 하며, 각 값은 2048자 미만이어야 합니다.
 
-파일 내에서 사용하는 경우 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다. `Maven pom.xml`
+파일 내에서 사용할 경우, 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 데 유용합니다. `Maven pom.xml`
 
 ```xml
         <profile>
@@ -374,3 +374,12 @@ content-package-maven-plugin은 다음과 유사합니다.
             </configuration>
         </plugin>
 ```
+
+## 추가 리소스 {#additional-resources}
+
+Cloud Service에서 Cloud Manager를 사용하는 방법에 대한 자세한 내용은 아래 섹션을 참조하십시오.
+
+* [환경 관리](/help/implementing/cloud-manager/manage-environments.md)
+* [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md)
+* [코드 배포](/help/implementing/cloud-manager/deploy-code.md)
+* [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
