@@ -2,9 +2,9 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1596'
 ht-degree: 2%
 
 ---
@@ -102,10 +102,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ### 제품 기능 테스트 {#product-functional-testing}
 
-제품 기능 테스트는 저작과 복제에 대한 안정적인 IT(HTTP 통합 테스트)로, AEM의 핵심 기능을 위반하는 경우 애플리케이션 코드에 대한 고객 변경 사항이 배포되지 않도록 합니다.
-고객이 새로운 코드를 Cloud Manager에 배포하면 자동으로 실행됩니다.
+제품 기능 테스트는 AEM의 핵심 기능(예: 작성 및 복제)을 중심으로 안정된 HTTP 통합 테스트 세트로, 이 핵심 기능을 위반하는 경우 애플리케이션 코드에 대한 고객 변경 사항이 배포되지 않도록 합니다.
 
-파이프라인의 제품 기능 테스트 단계는 항상 존재하며 건너뛸 수 없습니다.이 단계는 단계 배포 직후 현재 수행됩니다.
+고객이 새로운 코드를 Cloud Manager에 배포하면 자동으로 실행됩니다.
 
 ### 사용자 정의 기능 테스트 {#custom-functional-testing}
 
