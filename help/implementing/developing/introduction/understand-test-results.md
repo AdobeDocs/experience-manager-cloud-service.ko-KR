@@ -2,9 +2,9 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1578'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,17 @@ ht-degree: 2%
 # 테스트 결과 이해 {#understand-test-results}
 
 클라우드 서비스에 대한 Cloud Manager 파이프라인 실행은 스테이지 환경에서 실행되는 테스트 실행을 지원합니다. 이는 실행 중인 AEM 환경에 대한 액세스 권한 없이 오프라인으로 실행되는 빌드 및 단위 테스트 단계 동안 실행된 테스트와 대비됩니다.
-이 컨텍스트에서는 다음 세 가지 유형의 테스트가 실행됩니다.
-* 고객 서면 테스트
-* Adobe으로 작성된 테스트
+
+Cloud Manager에서 Cloud Services 파이프라인을 지원하는 세 가지 범주가 있습니다.
+
+1. [코드 품질 테스트](#code-quality-testing)
+1. [기능 테스트](#functional-testing)
+1. [컨텐츠 감사 테스트](#content-audit-testing)
+
+이러한 테스트는 다음을 수행할 수 있습니다.
+
+* 고객 서면
+* Adobe
 * Google의 Lighthouse에서 제공하는 오픈 소스 툴
 
    >[!NOTE]
@@ -82,7 +90,31 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >주석을 가능한 구체적으로 지정하는 것이 가장 좋은 방법이지만, 예를 들어 문제를 일으키는 특정 문이나 블록에만 주석을 다는 것은 클래스 수준에서 주석을 달 수 있습니다. `@SuppressWarnings`
 
-## 기능 테스트 작성 {#writing-functional-tests}
+## 기능 테스트 {#functional-testing}
+
+기능 테스트는 두 가지 유형으로 분류됩니다.
+
+* 제품 기능 테스트
+* 사용자 정의 기능 테스트
+
+### 제품 기능 테스트 {#product-functional-testing}
+
+제품 기능 테스트는 저작과 복제에 대한 안정적인 IT(HTTP 통합 테스트)로, AEM의 핵심 기능을 위반하는 경우 애플리케이션 코드에 대한 고객 변경 사항이 배포되지 않도록 합니다.
+고객이 새로운 코드를 Cloud Manager에 배포하면 자동으로 실행됩니다.
+
+파이프라인의 제품 기능 테스트 단계는 항상 존재하며 건너뛸 수 없습니다.이 단계는 단계 배포 직후 현재 수행됩니다.
+
+### 사용자 정의 기능 테스트 {#custom-functional-testing}
+
+파이프라인의 사용자 지정 기능 테스트 단계는 항상 존재하며 건너뛸 수 없습니다.
+
+그러나 빌드로 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다.
+
+>[!NOTE]
+>[ **로그** 다운로드] 단추를 사용하면 테스트 실행 세부 양식에 대한 로그가 포함된 ZIP 파일에 액세스할 수 있습니다. 이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그는 일반 다운로드 또는 세부 로그 기능을 사용하여 액세스할 수 있습니다. 자세한 [내용은 로그](/help/implementing/cloud-manager/manage-logs.md) 액세스 및 관리를 참조하십시오.
+
+
+#### 기능 테스트 작성 {#writing-functional-tests}
 
 고객이 작성한 기능 테스트는 AEM에 배포할 가공물과 동일한 Maven 빌드에 의해 생성된 별도의 JAR 파일로 패키지화해야 합니다. 일반적으로 이 모듈은 별도의 Maven 모듈입니다. 결과 JAR 파일은 필요한 모든 종속성을 포함해야 하며, 일반적으로 jar-with-dependencies 설명자를 사용하여 maven-assembly-plugin을 사용하여 생성합니다.
 
@@ -124,15 +156,6 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 예를 들어 이름이 지정된 클래스는 `com.myco.tests.aem.ExampleIT` 실행되지만 이름이 지정된 클래스는 실행되지 `com.myco.tests.aem.ExampleTest` 않습니다.
 
 테스트 클래스는 일반 JUnit 테스트여야 합니다. 테스트 인프라는 aem-testing-clients 테스트 라이브러리에 사용되는 규칙과 호환되도록 설계 및 구성됩니다. 개발자는 이 라이브러리를 사용하고 최상의 작업 방법을 따를 것을 적극 권장합니다. 자세한 내용은 [Git](https://github.com/adobe/aem-testing-clients) 링크를 참조하십시오.
-
-## 사용자 정의 기능 테스트 {#custom-functional-test}
-
-파이프라인의 사용자 지정 기능 테스트 단계는 항상 존재하며 건너뛸 수 없습니다.
-
-그러나 빌드로 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다. 이 단계는 단계 배포 직후 수행됩니다.
-
->[!NOTE]
->[ **로그** 다운로드] 단추를 사용하면 테스트 실행 세부 양식에 대한 로그가 포함된 ZIP 파일에 액세스할 수 있습니다. 이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그는 일반 다운로드 또는 세부 로그 기능을 사용하여 액세스할 수 있습니다. 자세한 [내용은 로그](/help/implementing/cloud-manager/manage-logs.md) 액세스 및 관리를 참조하십시오.
 
 ## 컨텐츠 감사 테스트 {#content-audit-testing}
 
