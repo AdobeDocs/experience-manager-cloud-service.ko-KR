@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 보안
 description: 클라우드 서비스로서의 Adobe Experience Manager 보안 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: c0a66239e949ee4b460142e392d61e22938896bc
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 93%
+source-wordcount: '396'
+ht-degree: 91%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 93%
 
 ## 주요 보안 문서 {#key-articles}
 
+* [Cloud Service의 AEM 보안 개요](/help/security/cloud-service-security-overview.md)
 * [클라우드 서비스로서의 AEM을 위한 IMS 지원](ims-support.md)
 
 ## 클라우드 서비스로서의 Experience Manager 안내서 {#aem-guides}
