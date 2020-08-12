@@ -2,9 +2,9 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1620'
 ht-degree: 2%
 
 ---
@@ -91,7 +91,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >주석을 가능한 구체적으로 지정하는 것이 가장 좋은 방법이지만, 예를 들어 문제를 일으키는 특정 문이나 블록에만 주석을 다는 것은 클래스 수준에서 주석을 달 수 있습니다. `@SuppressWarnings`
 
 >[!NOTE]
->명시적 보안 테스트 단계는 없지만 코드 품질 단계 동안 평가된 보안 관련 코드 품질 규칙은 여전히 있습니다. 자세한 내용은 [AEM용 보안 개요를 Cloud Service](/help/security/cloud-service-security-overview.md) 형식으로 참조하십시오.
+>명시적 보안 테스트 단계는 없지만 코드 품질 단계 동안 평가된 보안 관련 코드 품질 규칙은 여전히 있습니다. Cloud Service의 보안에 대한 자세한 내용은 [AEM용 보안](/help/security/cloud-service-security-overview.md) 개요를 Cloud Service으로 참조하십시오.
 
 ## 기능 테스트 {#functional-testing}
 
@@ -104,7 +104,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 제품 기능 테스트는 AEM의 핵심 기능(예: 작성 및 복제)을 중심으로 안정된 HTTP 통합 테스트 세트로, 이 핵심 기능을 위반하는 경우 애플리케이션 코드에 대한 고객 변경 사항이 배포되지 않도록 합니다.
 
-제품 기능 테스트는 고객이 Cloud Manager에 새 코드를 배포하면 자동으로 실행됩니다.
+고객이 Cloud Manager에 새 코드를 배포하면 자동으로 제품 기능 테스트가 실행되므로 건너뛸 수 없습니다.
+
+샘플 테스트에 대해서는 [제품 기능 테스트를](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 참조하십시오.
 
 ### 사용자 정의 기능 테스트 {#custom-functional-testing}
 
