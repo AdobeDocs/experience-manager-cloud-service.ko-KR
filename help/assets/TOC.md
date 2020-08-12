@@ -2,11 +2,11 @@
 sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '406'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 5fa5dbd664d4b1e1c93ca03037b8c8340ba6e96f
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ ht-degree: 100%
    + [URL을 웹 애플리케이션에 연결](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [CDN 캐시 콘텐츠 무효화](dynamic-media/invalidate-cdn-cached-content.md)
+   + [Dynamic Media Classic을 통해 CDN 캐시 무효화](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [선택기를 사용한 작업](dynamic-media/working-with-selectors.md)
    + [DHTML 뷰어 지원 중단 FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 뷰어 지원 중단 알림](dynamic-media/flash-viewers-eol.md)
