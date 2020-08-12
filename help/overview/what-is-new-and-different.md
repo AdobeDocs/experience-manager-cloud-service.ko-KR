@@ -2,9 +2,9 @@
 title: Cloud Service의 차이점과 새로운 점
 description: 'What is Different and What is New - as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 9882c95972675ee1e0af5de30119d764638f53f3
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1856'
 ht-degree: 10%
 
 ---
@@ -116,11 +116,11 @@ Adobe Cloud Manager는 모든 인스턴스 업데이트를 제어하므로 Cloud
 
 Cloud Manager는 다음과 같은 Cloud Service의 기본 구성 요소를 만들고 구성할 수 있는 셀프 서비스 포털로 발전했습니다.
 
-* 이러한 프로그램 내에서 AEM 환경을 만들고 관리합니다.
+* 새로운 프로그램 제작 및 관리 자세한 [내용은 프로그램 및 프로그램 유형](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) 이해를 참조하십시오.
 
-* 이러한 프로그램 내에서 AEM 환경을 만들고 관리합니다.
+* 이러한 프로그램 내에서 AEM 환경을 만들고 관리합니다. 자세한 내용은 [환경](/help/implementing/cloud-manager/manage-environments.md) 관리를 참조하십시오.
 
-* 고객 코드 및 관련 구성을 특정 환경에 배포하기 위한 파이프라인을 생성하고 관리합니다.
+* 고객 코드 및 관련 구성을 특정 환경에 배포하기 위한 파이프라인을 생성하고 관리합니다. 자세한 [내용은 CI-CD 파이프라인](/help/implementing/cloud-manager/configure-pipeline.md) 구성을 참조하십시오.
 
 * 이러한 구성 요소에 대한 중요한 라이프사이클 이벤트(예: 제품 업데이트)에 대한 알림을 받습니다.
 
