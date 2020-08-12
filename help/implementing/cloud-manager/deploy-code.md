@@ -2,9 +2,9 @@
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -51,10 +51,10 @@ ht-degree: 0%
    단계 **테스트에는**&#x200B;다음 단계가 포함됩니다.
 
    * 제품 기능 테스트:Cloud Manager 파이프라인 실행은 스테이지 환경에 대해 실행되는 테스트 실행을 지원합니다.
-테스트 프로세스에 대한 자세한 내용은 [제품 기능 테스트를](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) 참조하십시오.
+자세한 내용은 [제품 기능 테스트를](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) 참조하십시오.
 
    * 사용자 지정 기능 테스트:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 그러나 빌드로 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다.\
-      테스트 프로세스에 대한 자세한 내용은 [사용자](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) 지정 기능 테스트를 참조하십시오.
+      자세한 내용은 [맞춤형 기능 테스트를](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) 참조하십시오.
 
    * 컨텐츠 감사:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 정의 기능 테스트 후에 컨텐츠 감사 단계가 포함됩니다. 구성된 페이지는 서비스로 전송되어 평가됩니다. 이 결과는 정보 제공용이며 사용자가 현재 점수와 이전 점수 사이의 점수 및 변경 사항을 볼 수 있도록 합니다. 이러한 통찰력은 현재 배포에서 발생하는 회귀 여부를 확인하는 데 유용합니다.
 자세한 내용은 [컨텐츠 감사 결과](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 이해를 참조하십시오.
