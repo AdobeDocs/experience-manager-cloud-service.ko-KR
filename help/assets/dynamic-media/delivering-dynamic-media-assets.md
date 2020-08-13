@@ -2,9 +2,9 @@
 title: Dynamic Media 자산 제공
 description: 다이내믹 미디어 에셋을 제공하는 방법 학습
 translation-type: tm+mt
-source-git-commit: ea6a1bddaab6819d1f89268ceba3c4d4981729a2
+source-git-commit: a09e82278df1adfb225a01e60ae7ef188375b800
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 26%
 
 ---
@@ -35,7 +35,6 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 * [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [반응형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)
 * [콘텐츠의 HTTP2 전달](/help/assets/dynamic-media/http2faq.md)
-* [다이내믹 미디어를 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [Dynamic Media Classic을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [규칙 세트를 사용하여 URL 변환](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
