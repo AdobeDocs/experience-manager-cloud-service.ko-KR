@@ -1,18 +1,22 @@
 ---
-title: Cloud Service의 2020.8.0 릴리스 [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
-description: '[!DNL Adobe Experience Manager]을(를) Cloud Service 릴리스 노트로(2020.8.0).'
+title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.8.0 릴리스의 릴리스 노트
+description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.8.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
+source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 6%
+source-wordcount: '525'
+ht-degree: 11%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# 클라우드 서비스 2020.8.0으로서의 [!DNL Adobe Experience Manager] 릴리스 노트 {#release-notes}
 
-다음 섹션에서는 클라우드 서비스 2020.8.0으로서의 Experience Manager에 대한 일반 릴리스 노트를 간략하게 설명합니다.
+다음 섹션에서는 클라우드 서비스 2020.8.0으로서의 Experience Manager 일반 릴리스 노트를 간략하게 설명합니다.
+
+## [!DNL Adobe Experience Manager Assets] cloud service {#assets}
+
+* 새로운 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console] 통합되어 있습니다. 이 기능은 스마트 태그 기능을 보다 빠르게 구성하는 데 도움이 됩니다. 기존 배포에서 관리자는 스마트 태그 통합을 [전과 같이](/help/assets/smart-tags-configuration.md#aio-integration) 구성합니다.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
