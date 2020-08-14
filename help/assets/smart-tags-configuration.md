@@ -2,11 +2,11 @@
 title: 향상된 스마트 태그
 description: Adobe Sensei의 AI 및 ML 서비스를 사용하여 컨텍스트 기반의 상황적 및 설명적 비즈니스 태그를 적용하여 자산 검색과 컨텐츠 제작 시간을 향상할 수 있습니다.
 contentOwner: AG
-translation-type: ht
-source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
-workflow-type: ht
-source-wordcount: '1009'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 100%
 2. Is there a link to buy SCS or initiate a sales call.
 3. Keystroke all steps and check all screenshots.
 -->
+
+>[!IMPORTANT]
+>
+>새로운 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console] 통합되어 있습니다. 이 기능은 스마트 태그 기능을 보다 빠르게 구성하는 데 도움이 됩니다. 기존 배포에서 관리자는 다음 단계에 따라 구성합니다.
 
 ## Adobe 개발자 콘솔과 통합 {#aio-integration}
 
