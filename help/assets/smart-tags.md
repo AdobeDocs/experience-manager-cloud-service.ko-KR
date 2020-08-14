@@ -3,10 +3,10 @@ title: 지능적인 서비스를 사용하여 이미지에 태그 지정
 description: Adobe Sensei 서비스를 사용하여 상황에 맞는 설명형 비즈니스 태그를 적용하는 지능적인 서비스를 통해 이미지에 태그를 지정할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 0%
+source-wordcount: '2425'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 자연어 어휘와 비교하여 비즈니스 분류 방식을 기반으로 태그를 지정하면 자산을 회사의 비즈니스에 맞게 조정하고 검색에서 가장 연관성 있는 자산이 표시되도록 할 수 있습니다. 예를 들어 자동차 제조업체는 자동차 이미지에 모델 이름을 태그로 지정할 수 있으므로 프로모션 캠페인을 디자인하기 위해 검색될 때 관련 이미지만 표시되도록 할 수 있습니다.
 
-백그라운드에서 스마트 태그는 [Adobe Sensei의](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) 인공 지능 프레임워크를 사용하여 태그 구조 및 비즈니스 분류 체계에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
+In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
 
 <!-- TBD: Create a similar flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -25,21 +25,23 @@ ht-degree: 0%
 
 스마트 태그 지정을 사용하려면 다음 작업을 완료하십시오.
 
-* [Adobe Developer Console과 Experience Manager 통합](#integrate-aem-with-aio).
+* [Adobe 개발자 콘솔과 Experience Manager 통합](#integrate-aem-with-aio).
 * [태그 모델 및 지침을 이해합니다](#understand-tag-models-guidelines).
 * [모델](#train-model)트레이닝
 * [디지털 에셋에 태그를 지정할 수 있습니다](#tag-assets).
 * [태그 및 검색을 관리합니다](#manage-smart-tags-and-searches).
 
-스마트 태그는 [!DNL Adobe Experience Manager Assets] 고객에게만 적용됩니다. 스마트 태그는 추가 기능으로 구매할 수 있습니다 [!DNL Experience Manager].
+스마트 태그는 [!DNL Adobe Experience Manager Assets] 고객에게만 적용됩니다. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Adobe 개발자 콘솔 [!DNL Experience Manager] 과 통합 {#integrate-aem-with-aio}
+## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
-Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마트 태그와 통합할 수 있습니다. 이 구성을 사용하여 내에서 스마트 태그 서비스에 액세스합니다 [!DNL Experience Manager].
+>[!IMPORTANT]
+>
+>새로운 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console] 통합되어 있습니다. 이 기능은 스마트 태그 기능을 보다 빠르게 구성하는 데 도움이 됩니다. 기존 배포에서 관리자는 스마트 태그 통합을 수동으로 [구성할 수 있습니다](/help/assets/smart-tags-configuration.md#aio-integration).
 
-스마트 태그를 구성하는 작업에 대한 자산 [](smart-tags-configuration.md) 스마트 태그 지정을 위한 Experience Manager 구성을 참조하십시오. 백엔드 [!DNL Experience Manager] 는 스마트 태그 서비스로 요청을 전달하기 전에 Adobe 개발자 콘솔 게이트웨이로 서비스 자격 증명을 인증합니다.
+를 사용하여 스마트 태그 [!DNL Adobe Experience Manager] 와 통합할 수 있습니다 [!DNL Adobe Developer Console]. 이 구성을 사용하여 내에서 스마트 태그 서비스에 액세스합니다 [!DNL Experience Manager]. 스마트 태그를 구성하는 작업에 대한 자산 [](smart-tags-configuration.md) 스마트 태그 지정을 위한 Experience Manager 구성을 참조하십시오. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## 태그 모델 및 지침 이해 {#understand-tag-models-guidelines}
 
@@ -48,7 +50,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 현실적으로 처리할 수 없는 태그는 다음과 관련되어 있습니다.
 
 * 제품 출시 년도, 분위기 또는 감정 등 비시각적이고 추상적인 측면을 이미지로 불러옵니다.
-* 제품에 임베드된 콜라주가 있는 셔츠 또는 없는 작은 제품 로고와 같은 제품의 시각적 차이를 세밀하게 조정할 수 있습니다.
+* 제품에 임베드된 콜라주가 있거나 없는 셔츠 또는 작은 제품 로고와 같은 제품의 시각적 차이를 세밀하게 조정할 수 있습니다.
 
 태그 모델을 만들고 서비스를 교육하기 전에 비즈니스 컨텍스트에서 이미지의 개체를 가장 잘 설명하는 고유한 태그 집합을 식별합니다. 선별된 세트의 에셋이 교육 지침 [을 따르는지 확인합니다](#training-guidelines).
 
@@ -58,15 +60,15 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 **수량 및 크기:** 태그당 최소 10개의 이미지와 최대 50개의 이미지.
 
-**일관성**: 태그의 이미지는 시각적으로 유사해야 합니다. 동일한 시각적 측면(이미지의 동일한 개체 유형 등)에 대한 태그를 하나의 태그 모델에 함께 추가하는 것이 가장 좋습니다. 예를 들어 이러한 이미지는 시각적으로 유사하지 않기 때문에 이러한 이미지 `my-party` 에 태그를 모두 교육 목적으로 지정하는 것은 좋지 않습니다.
+**일관성**:태그의 이미지는 시각적으로 유사해야 합니다. 동일한 시각적 측면(이미지의 동일한 개체 유형 등)에 대한 태그를 하나의 태그 모델에 함께 추가하는 것이 가장 좋습니다. 예를 들어 이러한 이미지는 시각적으로 유사하지 않기 때문에 이러한 이미지 `my-party` 에 태그를 모두 교육 목적으로 지정하는 것은 좋지 않습니다.
 
 ![트레이닝 지침을 예시하기 위한 실례가 되는 이미지](assets/do-not-localize/coherence.png)
 
-**적용 범위**: 트레이닝에서 이미지에 다양한 이미지가 있어야 합니다. 몇 가지 하지만 여러 가지 예제를 제공하여 AEM이 적절한 부분에 초점을 맞추도록 하는 것이 좋습니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 최소 5개의 예를 포함합니다. 예를 들어 태그 *모델 다운 포즈의*&#x200B;경우 태그 지정 중에 서비스에서 유사한 이미지를 보다 정확하게 식별할 수 있도록 아래 강조 표시된 이미지와 유사한 더 많은 교육 이미지를 포함합니다.
+**적용 범위**:트레이닝에서 이미지에 다양한 이미지가 있어야 합니다. AEM이 올바른 것에 초점을 맞추도록 배울 수 있도록 몇 가지 하지만 상당히 다양한 예를 제공하는 것이 그 생각입니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 최소 5개의 예를 포함합니다. 예를 들어 태그 *모델 다운 포즈의*&#x200B;경우 태그 지정 중에 서비스에서 유사한 이미지를 보다 정확하게 식별할 수 있도록 아래 강조 표시된 이미지와 유사한 더 많은 교육 이미지를 포함합니다.
 
 ![트레이닝 지침을 예시하기 위한 실례가 되는 이미지](assets/do-not-localize/coverage_1.png)
 
-**방해/방해**: 집중을 덜 하는 이미지(두드러진 배경, 주제와 관련된 사물/사람 등 관련 없는 요소)에서 서비스를 더 잘 운행한다. 예를 들어, 태그 *캐주얼*&#x200B;카드의 경우 두 번째 이미지는 올바른 교육 후보가 아닙니다.
+**방해/방해**:집중을 덜 하는 이미지(두드러진 배경, 주제와 관련된 사물/사람 등 관련 없는 요소)에서 서비스를 더 잘 운행한다. 예를 들어, 태그 *캐주얼*&#x200B;카드의 경우 두 번째 이미지는 올바른 교육 후보가 아닙니다.
 
 ![트레이닝 지침을 예시하기 위한 실례가 되는 이미지](assets/do-not-localize/distraction.png)
 
@@ -74,13 +76,13 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 ![트레이닝 지침을 예시하기 위한 실례가 되는 이미지](assets/do-not-localize/completeness.png)
 
-**태그 수**: Adobe에서는 각 태그에 대해 최소 2개의 서로 다른 태그와 최소 10개의 이미지를 사용하여 모델을 교육하는 것이 좋습니다. 단일 태그 모델에서 50개 이상의 태그를 추가하지 마십시오.
+**태그 수**:Adobe에서는 각 태그에 대해 최소한 두 개의 서로 다른 태그와 최소 10개의 서로 다른 이미지를 사용하여 모델을 교육하는 것이 좋습니다. 단일 태그 모델에서 50개 이상의 태그를 추가하지 마십시오.
 
-**예**&#x200B;수: 각 태그에 대해 최소 10개의 예를 추가합니다. 그러나 Adobe는 약 30개의 예를 권장합니다. 태그당 최대 50개의 예가 지원됩니다.
+**예**&#x200B;수:각 태그에 대해 최소 10개의 예를 추가합니다. 그러나 Adobe은 약 30개의 예를 추천합니다. 태그당 최대 50개의 예가 지원됩니다.
 
-**잘못된 긍지와 충돌 방지**: 단일 시각적 측면용으로 단일 태그 모델을 만드는 것이 좋습니다. 모델 간의 태그 겹치지 않도록 태그 모델을 구성합니다. 예를 들어, 두 개의 서로 다른 태그 모델 이름 및 `sneakers` 에 있는 일반적인 태그 `shoes` 를 사용하지 마십시오 `footwear`. 교육 프로세스는 하나의 교육된 태그 모델을 공통 키워드에 대한 다른 태그 모델로 덮어씁니다.
+**잘못된 긍지와 충돌 방지**:Adobe에서는 단일 시각적 측면용으로 단일 태그 모델을 만드는 것이 좋습니다. 모델 간의 태그 겹치지 않도록 태그 모델을 구성합니다. 예를 들어, 두 개의 서로 다른 태그 모델 이름 및 `sneakers` 에 있는 일반적인 태그 `shoes` 를 사용하지 마십시오 `footwear`. 교육 프로세스는 하나의 교육된 태그 모델을 공통 키워드에 대한 다른 태그 모델로 덮어씁니다.
 
-**예**: 지침은 다음과 같습니다.
+**예**:지침은 다음과 같습니다.
 
 * 다음을 포함하는 태그 모델 만들기
    * 자동차 모델과 관련된 태그만.
@@ -90,7 +92,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
    * 자동차 모델이 포함된 태그 모델
    * 동일한 몇 개의 자동차 모델을 포함하는 여러 개의 태그 모델.
 
-**트레이닝에 사용되는 이미지**: 동일한 이미지를 사용하여 다른 태그 모델을 교육할 수 있습니다. 그러나 태그 모델에서 이미지를 두 개 이상의 태그와 연결하지 마십시오. 따라서 동일한 이미지에 다른 태그 모델에 속하는 다른 태그를 지정할 수 있습니다.
+**트레이닝에 사용되는 이미지**:동일한 이미지를 사용하여 다른 태그 모델을 교육할 수 있습니다. 그러나 태그 모델에서 이미지를 두 개 이상의 태그와 연결하지 마십시오. 따라서 동일한 이미지에 다른 태그 모델에 속하는 다른 태그를 지정할 수 있습니다.
 
 교육은 실행 취소할 수 없습니다. 위의 지침은 트레이닝할 이미지를 선택하는 데 도움이 됩니다.
 
@@ -108,7 +110,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 ![스마트 태그 지정을 위한 태깅 모델 트레이닝 워크플로우](assets/smart-tag-model-training-flow.png)
 
-*그림: 태깅 모델을 교육하는 교육 워크플로우의 단계.*
+*그림:태깅 모델을 교육하는 교육 워크플로우의 단계.*
 
 ### 교육 상태 및 보고서 보기 {#training-status}
 
@@ -128,7 +130,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 ### 워크플로우 콘솔에서 자산 태그 지정 {#tagging-assets-from-the-workflow-console}
 
-1. Adobe Experience Manager 인터페이스에서 **[!UICONTROL 도구 > 워크플로우 > 모델로 이동합니다]**.
+1. Experience Manager 인터페이스에서 **[!UICONTROL 도구 > 워크플로우 > 모델로 이동합니다]**.
 1. 워크플로우 **[!UICONTROL 모델]** 페이지에서 **[!UICONTROL DAM 스마트 태그 자산]** 워크플로우를 선택한 다음 도구 모음에서 **[!UICONTROL 워크플로우]** 시작을클릭합니다.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -157,7 +159,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 ### 업로드된 자산에 태그 지정 {#tag-uploaded-assets}
 
-Adobe Experience Manager는 사용자가 DAM에 업로드하는 자산에 자동으로 태그를 지정할 수 있습니다. 이를 위해 관리자는 스마트 태그 자산에 사용 가능한 단계를 추가하는 워크플로우를 구성합니다. 업로드된 자산에 대해 스마트 태그 지정을 활성화하는 [방법을 참조하십시오](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+Experience Manager은 사용자가 DAM에 업로드한 자산에 자동으로 태그를 지정할 수 있습니다. 이를 위해 관리자는 스마트 태그 자산에 사용 가능한 단계를 추가하는 워크플로우를 구성합니다. 업로드된 자산에 대해 스마트 태그 지정을 활성화하는 [방법을 참조하십시오](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## 스마트 태그 및 이미지 검색 관리 {#manage-smart-tags-and-searches}
 
@@ -168,7 +170,7 @@ Adobe Experience Manager는 사용자가 DAM에 업로드하는 자산에 자동
 이미지에 대한 연관성을 높이기 위해 태그에 더 높은 등급을 지정할 수도 있습니다. 이미지에 대한 태그를 승격하면 특정 태그를 기준으로 검색을 수행할 때 이미지가 검색 결과에 표시될 가능성이 높아집니다.
 
 1. Omnisearch 상자에서 태그를 기반으로 자산을 검색합니다.
-1. 검색 결과를 검사하여 검색과 관련이 없는 이미지를 식별합니다.
+1. 검색 결과를 Inspect으로 보내 검색과 관련이 없는 이미지를 식별합니다.
 1. 이미지를 선택한 다음 도구 모음에서 **[!UICONTROL 태그]** 관리 아이콘을 클릭합니다.
 1. 태그 **[!UICONTROL 관리]** 페이지에서 태그를 검사합니다. 특정 태그를 기준으로 이미지를 검색하지 않으려면 태그를 선택한 다음 도구 모음에서 삭제 아이콘을 클릭합니다. 또는 레이블 옆에 표시되는 `X` 기호를 클릭합니다.
 1. 태그에 높은 등급을 지정하려면 태그를 선택하고 도구 모음에서 홍보 아이콘을 클릭합니다. 홍보하는 태그가 **[!UICONTROL 태그]** 섹션으로 이동합니다.
@@ -195,7 +197,7 @@ Adobe Experience Manager는 사용자가 DAM에 업로드하는 자산에 자동
 
 * 이미지의 미묘한 차이를 인식하지 못함 예를 들어, 슬림형 셔츠는 일반 셔츠가 들어 있는 것과 같습니다.
 * 이미지의 작은 패턴/부분을 기반으로 태그를 식별할 수 없음 예를 들어 T-셔츠 상의 로고
-* 태깅은 AEM이 지원되는 로케일에서 지원됩니다. 언어 목록은 [스마트 태그 릴리스 노트를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* 태깅은 AEM에서 지원되는 로케일에서 지원됩니다. 언어 목록은 [스마트 태그 릴리스 노트를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
 스마트 태그가 있는 자산을 검색하려면(일반 또는 고급) 자산 검색(전체 텍스트 검색)을 사용합니다. 스마트 태그에는 별도의 검색 조건자가 없습니다.
 
