@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.8.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.8.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
+source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 11%
+source-wordcount: '544'
+ht-degree: 13%
 
 ---
 
@@ -43,6 +43,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * Cloud Manager의 **개요** 페이지에서 최대 절전 모드 해제 환경을 사용할 수 있습니다.
 
 * 이제 인증 바인딩된 개인 마웬 리포지토리가 지원됩니다.
+
+* 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
+자세한 내용은 [Java 11 지원](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) 사용을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cm}
 
