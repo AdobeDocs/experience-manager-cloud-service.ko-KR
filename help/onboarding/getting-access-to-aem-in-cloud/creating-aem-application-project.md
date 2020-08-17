@@ -2,9 +2,9 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 마법사를 사용하여 AEM 응용 프로그램 프로젝트 만들기 {#using-wizard-to-create-an-aem-application-project}
 
-새로운 고객을 위한 Cloud Manager의 시작점으로 최소한의 AEM 프로젝트를 제작할 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형을 기반으로 합니다&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+새로운 고객을 위한 Cloud Manager의 시작점으로 최소한의 AEM 프로젝트를 제작할 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형을 기반으로 합니다**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 절차를 따르십시오.
@@ -59,6 +59,7 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
 
 * 빌드 환경은 Linux 기반이며 Ubuntu 18.04에서 파생됩니다.
 * Apache Maven 3.6.0이 설치되어 있습니다.
+* 설치된 Java 버전은 Oracle JDK 8u202 및 11.0.2입니다.
 * 다음과 같은 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
 
    * bzip2
@@ -75,6 +76,38 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
 >[!NOTE]
 >Cloud Manager가 특정 버전의 버전을 정의하지는 않지만, 사용된 버전 `jacoco-maven-plugin`은 적어도 같아야 합니다 `0.7.5.201505241946`.
 
+### Java 11 지원 사용 {#using-java-support}
+
+Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로젝트 작성을 지원합니다. 기본적으로 프로젝트는 Java 8을 사용하여 빌드됩니다. 프로젝트에서 Java 11을 사용하려는 고객은 Maven Toolchain 플러그인을 사용할 수 있습니다.
+
+이렇게 하려면 pom.xml 파일에서 다음과 같은 `<plugin>` 항목을 추가합니다.
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>toolchain</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <toolchains>
+            <jdk>
+                <version>11</version>
+                <vendor>oracle</vendor>
+           </jdk>
+        </toolchains>
+    </configuration>
+</plugin>
+```
+
+>[!NOTE]
+>지원되는 공급업체 값은 `oracle` 및 `sun`입니다.
+>지원되는 버전 값은 `1.8`, `1.11`및 `11`입니다.
 
 ## 환경 변수 {#environment-variables}
 
