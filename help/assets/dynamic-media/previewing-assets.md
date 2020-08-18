@@ -2,9 +2,9 @@
 title: 자산 미리 보기
 description: Dynamic Media에서 자산을 미리 보는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM의 웹 페이지(사이트)를 사용하는 경우 **편집** 모드에서 자산을 미리 볼 수 없습니다. 페이지 오른쪽 상단 모서리에서 미리 보기 **를** 클릭하여 미리 보기 **** 모드로 이동해야 합니다.
+>AEM의 웹 페이지(사이트)에 있는 경우 **편집** 모드에서 자산을 미리 볼 수 없습니다. 페이지 오른쪽 상단 모서리에서 미리 보기 **를** 클릭하여 미리 보기 **** 모드로 이동해야 합니다.
 
 사용자 인터페이스에서 뷰어 사전 설정을 활성화하거나 비활성화하려면 뷰어 사전 [설정 관리를 참조하십시오](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 **자산을 미리 보려면**
 
-1. [!UICONTROL Adobe Experience Manager **에서**[!UICONTROL 탐색 **** 페이지 **[!UICONTROL 에서 자산]**&#x200B;을 탭한 다음 **[!UICONTROL 파일Files를]** Assets에 액세스합니다.
+1. **[!UICONTROL Adobe Experience Manager]**&#x200B;의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산]**&#x200B;을 누른 다음 **[!UICONTROL 파일]** 을 눌러 자산에 액세스합니다.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
 1. (선택 사항) **[!UICONTROL 유형]** 열을 사용하여 미리 보기할 유형별로 자산을 정렬합니다.
 1. [ **[!UICONTROL 제목]** ] 열에서 미리 보려는 자산의 제목 이름(축소판 이미지가 아님)을 클릭합니다.
@@ -54,10 +54,10 @@ ht-degree: 1%
       </ul>
       <p><strong>3D 장면 탐색</strong></p>
       <ul>
-      <li><p><strong>3D 카메라</strong> 회전 - 3D 장면 및 개체 주위를 따라 보기를 선회할 수 있습니다.</p> 마우스: 마우스 왼쪽 단추를 클릭하고 드래그합니다. </p> 터치 스크린: + 드래그 키를 누릅니다.</p></li>
-      <li><p><strong>카메라</strong> 이동 - 보기 왼쪽, 오른쪽, 위, 아래로 이동합니다.</p> 마우스: 마우스 오른쪽 단추를 클릭하고 드래그합니다. </p> 터치 스크린: 두 손가락을 누른 상태에서 드래그하십시오.</p></li>
-      <li><p><strong>카메라</strong> 확대 - 3D 장면에서 카메라를 확대/축소하여 영역 안팎으로 이동할 수 있습니다.</p> 마우스: 스크롤 휠입니다. </p> 터치 스크린: 손가락을 벌려</p></li>
-      <li><p><strong>카메라</strong> 다시 입력 - 3D 장면과 개체 주위의 보기를 궤도에 배치할 수 있습니다.</p> 마우스: 두 번 클릭합니다. </p> 터치 스크린: 두 번 누릅니다.</li></ul></td>
+      <li><p><strong>3D 카메라</strong> 회전 - 3D 장면 및 개체 주위를 따라 보기를 선회할 수 있습니다.</p> 마우스:마우스 왼쪽 단추를 클릭하고 드래그합니다. </p> 터치 스크린:+ 드래그 키를 누릅니다.</p></li>
+      <li><p><strong>카메라</strong> 이동 - 보기 왼쪽, 오른쪽, 위, 아래로 이동합니다.</p> 마우스:마우스 오른쪽 단추를 클릭하고 드래그합니다. </p> 터치 스크린:두 손가락을 누른 상태에서 드래그하십시오.</p></li>
+      <li><p><strong>카메라</strong> 확대 - 3D 장면에서 카메라를 확대/축소하여 영역 안팎으로 이동할 수 있습니다.</p> 마우스:스크롤 휠입니다. </p> 터치 스크린:손가락을 벌려</p></li>
+      <li><p><strong>카메라</strong> 다시 입력 - 3D 장면과 개체 주위의 보기를 궤도에 배치할 수 있습니다.</p> 마우스:두 번 클릭합니다. </p> 터치 스크린:두 번 누릅니다.</li></ul></td>
       </tr>
       <tr>
       <td><p>이미지</p> </td>
