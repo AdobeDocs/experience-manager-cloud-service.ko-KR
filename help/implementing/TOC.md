@@ -2,11 +2,11 @@
 sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
-translation-type: ht
-source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 96%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 100%
    + [환경 관리](cloud-manager/manage-environments.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
    + [코드 배포](cloud-manager/deploy-code.md)
+   + 테스트 결과 이해 {#test-results}
+      + [개요](/help/implementing/cloud-manager/overview-test-results.md)
+      + [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [기능 테스트](/help/implementing/cloud-manager/functional-testing.md)
+      + [컨텐츠 감사 테스트](/help/implementing/cloud-manager/content-audit-testing.md)
    + [사용자 지정 코드 품질 규칙 이해](cloud-manager/custom-code-quality-rules.md)
    + [로그 액세스 및 관리](cloud-manager/manage-logs.md)
    + [알림 이해](cloud-manager/notifications.md)
@@ -37,7 +42,6 @@ ht-degree: 100%
    + [클라우드 서비스로서의 AEM에서 오버레이](developing/introduction/overlays.md)
    + [로깅](developing/introduction/logging.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
 + 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
    + [컨텐츠 조각 사용자 지정 및 확장](developing/extending/content-fragments-customizing.md)
