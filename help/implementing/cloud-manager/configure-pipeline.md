@@ -2,7 +2,7 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
    >[!NOTE]
    > 구성된 페이지는 서비스에 전송되어 성능, 접근성, SEO(검색 엔진 최적화), 우수 사례 및 PWA(점진적 웹 앱) 테스트에 따라 평가됩니다.
 
-   자세한 내용은 [컨텐츠 감사 결과](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 이해를 참조하십시오.
+   자세한 내용은 [컨텐츠 감사 결과](/help/implementing/cloud-manager/content-audit-testing.md) 이해를 참조하십시오.
 
    새 **페이지 무시** 추가를 클릭하여 컨텐츠 감사에 포함할 URL 경로를 제공합니다. 경로를 추가한 후 저장을 **클릭합니다**.
 
