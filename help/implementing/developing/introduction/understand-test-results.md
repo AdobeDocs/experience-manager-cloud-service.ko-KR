@@ -2,9 +2,9 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1703'
 ht-degree: 2%
 
 ---
@@ -36,9 +36,13 @@ Cloud Manager에서 Cloud Services 파이프라인을 지원하는 세 가지 �
 
 다양한 유형의 파이프라인에 [대한 자세한 내용은 CI-CD 파이프라인](/help/implementing/cloud-manager/configure-pipeline.md) 구성을 참조하십시오.
 
+### 사용자 지정 코드 품질 규칙 이해 {#understanding-code-quality-rules}
+
 코드 품질 테스트에서는 소스 코드가 배포가 특정 품질 기준을 충족하는지 확인하기 위해 스캔됩니다. 현재 이 기능은 SonarQube와 OakPAL을 사용한 컨텐츠 패키지 레벨 검사를 조합하여 구현됩니다. 일반 Java 규칙과 AEM별 규칙을 결합하는 규칙이 100개 이상 있습니다. AEM별 규칙 중 일부는 AEM Engineering의 모범 사례를 기반으로 생성되며 [사용자 지정 코드 품질 규칙이라고 합니다](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-이 단계의 결과는 *평등으로 전달됩니다*. 아래 표에는 다양한 테스트 기준에 대한 등급이 요약되어 있습니다.
+규칙 목록은 [여기에서 다운로드할 수 있습니다](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
+이 단계의 결과는 *평등으로 전달됩니다*. 다음 표에 테스트 기준에 대한 등급이 요약되어 있습니다.
 
 | 이름 | 정의 | 카테고리 | 실패 임계값 |
 |--- |--- |--- |--- |
@@ -50,9 +54,6 @@ Cloud Manager에서 Cloud Services 파이프라인을 지원하는 세 가지 �
 | 미해결 문제 | 전체 문제 유형 - 취약점, 버그 및 코드 냄새 | 정보 | > 0 |
 | 중복된 라인 | 중복된 블록에 포함된 라인 수입니다. <br/>코드 블록을 중복으로 간주하는 경우: <br/><ul><li>**Java가 아닌 프로젝트:**</li><li>연속된 토큰이 100개 이상 있어야 합니다.</li><li>이러한 토큰은 다음과 같은 경우에 배포해야 합니다. </li><li>COBOL을 위한 30줄의 코드 </li><li>ABAP용 20줄의 코드 </li><li>다른 언어용 코드 10줄</li><li>**Java 프로젝트:**</li><li> 토큰과 줄 수에 관계없이 10개 이상의 연속문과 중복 문이 있어야 합니다.</li></ul> <br/>중복 여부를 검색하는 동안 들여쓰기 및 문자열 리터럴의 차이는 무시됩니다. | 정보 | > 1% |
 | Cloud Service 호환성 | 식별된 Cloud Service 호환성 문제 수입니다. | 정보 | > 0 |
-
-
-여기에서 규칙 목록을 다운로드할 수 [있습니다. code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
