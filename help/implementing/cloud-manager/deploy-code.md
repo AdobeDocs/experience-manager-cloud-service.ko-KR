@@ -2,9 +2,9 @@
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Cloud Manager를 사용하여 코드 배포 {#deploying-code-with-cloud-manager}
 
-파이프라인 **** (저장소, 환경 및 테스트 환경)을 구성하면 코드를 배포할 준비가 됩니다.
+프로덕션 **파이프라인** (저장소, 환경 및 테스트 환경)을 구성하면 코드를 배포할 준비가 됩니다.
 
 1. 클라우드 **관리자에서 배포를** 클릭하여 배포 프로세스를 시작합니다.
 
