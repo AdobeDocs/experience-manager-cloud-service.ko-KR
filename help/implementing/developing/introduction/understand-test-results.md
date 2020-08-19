@@ -2,9 +2,9 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1702'
 ht-degree: 2%
 
 ---
@@ -169,6 +169,25 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 테스트 클래스는 일반 JUnit 테스트여야 합니다. 테스트 인프라는 aem-testing-clients 테스트 라이브러리에 사용되는 규칙과 호환되도록 설계 및 구성됩니다. 개발자는 이 라이브러리를 사용하고 최상의 작업 방법을 따를 것을 적극 권장합니다. 자세한 내용은 [Git](https://github.com/adobe/aem-testing-clients) 링크를 참조하십시오.
 
+#### 로컬 테스트 실행 {#local-test-execution}
+
+테스트 클래스는 JUnit 테스트이므로 Eclipse, IntelliJ, NetBeans 등과 같은 주요 Java IDE에서 실행할 수 있습니다.
+
+그러나 이러한 테스트를 실행할 때는 aem-testing-clients(및 기본 Sling Testing Clients)가 기대하는 다양한 시스템 속성을 설정해야 합니다.
+
+시스템 속성은 다음과 같습니다.
+
+* `sling.it.instances - should be set to 2`
+* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
+* `sling.it.instance.runmode.1 - should be set to author`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
+* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
+* `sling.it.instance.runmode.2 - should be set to publish`
+* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
+* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+
 ## 컨텐츠 감사 테스트 {#content-audit-testing}
 
 콘텐츠 감사는 Google의 오픈 소스 툴인 Lighthouse를 기반으로 하는 Cloud Manager Sites Production 파이프라인에서 사용할 수 있는 기능입니다. 이 기능은 모든 Cloud Manager 프로덕션 파이프라인에서 사용할 수 있습니다.
@@ -215,22 +234,4 @@ Cloud Manager의 콘텐츠 감사 기능을 사용하면 최종 사용자가 사
 개별 페이지의 세부 사항을 클릭하면 평가된 페이지의 요소에 대한 정보와 개선 가능성이 감지되는 문제를 해결하는 지침을 제공합니다. 테스트 및 관련 지침의 세부 사항은 Google Lighthouse에서 제공합니다.
 
 ![](assets/page-level-scores.png)
-
-## 로컬 테스트 실행 {#local-test-execution}
-
-테스트 클래스는 JUnit 테스트이므로 Eclipse, IntelliJ, NetBeans 등과 같은 주요 Java IDE에서 실행할 수 있습니다.
-
-그러나 이러한 테스트를 실행할 때 반드시 aem-testing-clients(및 기본 Sling Testing Clients)가 기대하는 다양한 시스템 속성을 설정해야 합니다.
-
-시스템 속성은 다음과 같습니다.
-
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
 
