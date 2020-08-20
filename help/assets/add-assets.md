@@ -2,15 +2,15 @@
 title: 디지털 자산을 추가할 수 [!DNL Adobe Experience Manager]있습니다.
 description: 디지털 자산을 Cloud Service [!DNL Adobe Experience Manager] 로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
 
 
-# Adobe Experience Manager에 디지털 자산 추가 {#add-assets-to-experience-manager}
+# Adobe Experience Manager에 디지털 에셋 추가 {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager] 리치 메타데이터, 스마트 태그, 변환 및 기타 DAM(Digital Asset Management) 서비스를 사용하여 업로드된 디지털 파일의 바이너리 컨텐츠를 더욱 풍부하게 만들 수 있습니다. 로컬 폴더 또는 네트워크 드라이브에서 이미지, 문서 및 Raw 이미지 파일과 같은 다양한 유형의 파일을 업로드할 수 있습니다 [!DNL Experience Manager Assets].
 
@@ -110,7 +110,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >이름 충돌 대화 상자 **[!UICONTROL 에서]** [!UICONTROL 대체를] 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다.
 >
->자산 통찰력을 사용하여 Adobe Analytics의 노출/클릭 수를 추적하는 경우 재생성된 자산 ID는 Analytics에서 자산에 대해 캡처된 데이터를 무효화합니다.
+>자산 통찰력을 사용하여 Adobe Analytics의 노출 횟수/클릭 수를 추적하는 경우 재생성된 자산 ID는 Analytics에서 자산에 대해 캡처된 데이터를 무효화합니다.
 
 중복된 자산을 에서 유지하려면 [!DNL Assets]보관을 **[!UICONTROL 클릭합니다]**. 업로드한 중복 자산을 삭제하려면 삭제를 탭/ **[!UICONTROL 클릭합니다]**.
 
@@ -154,14 +154,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [메타데이터 프로필을](metadata-profiles.md) 사용하면 해당 폴더에 업로드된 자산에 기본 메타데이터 속성을 적용할 수 있습니다
 * [처리 프로필을](asset-microservices-configure-and-use.md) 사용하면 기본적으로 가능한 것보다 더 많은 변환을 생성할 수 있습니다.
 
-또한 Dynamic Media이 사용자 환경에서 활성화된 경우:
+또한, 사용자 환경에서 Dynamic Media가 활성화된 경우:
 
-* [Dynamic Media 이미지 프로필을](dynamic-media/image-profiles.md) 사용하면 특정 자르기(**[!UICONTROL 스마트 자르기]** 및 픽셀 자르기)와 선명 효과 구성을 업로드된 자산에 적용할 수 있습니다.
-* [Dynamic Media 비디오 프로필을](dynamic-media/video-profiles.md) 사용하면 특정 비디오 인코딩 프로필(해상도, 형식, 매개 변수)을 적용할 수 있습니다.
+* [다이내믹 미디어 이미지 프로필을](dynamic-media/image-profiles.md) 사용하면 특정 자르기(**[!UICONTROL 스마트 자르기]** 및 픽셀 자르기)와 선명하게 하기 구성을 업로드된 자산에 적용할 수 있습니다.
+* [다이내믹 미디어 비디오 프로필을](dynamic-media/video-profiles.md) 사용하면 특정 비디오 인코딩 프로필(해상도, 형식, 매개 변수)을 적용할 수 있습니다.
 
 >[!NOTE]
 >
->자산에 대한 Dynamic Media 자르기 및 기타 작업은 파괴적이지 않습니다. 즉, 업로드된 원본을 변경하지 않고 자산 제공 시 수행할 자르기 또는 미디어 변환에 대한 매개 변수를 제공합니다
+>다이내믹 미디어 자르기 및 기타 자산 작업은 원본을 훼손하지 않습니다. 즉, 업로드된 원본을 변경하지 않고 자산을 제공할 때 수행할 자르기 또는 미디어 변형을 위한 매개 변수를 제공합니다
 
 처리 프로필이 할당된 폴더의 경우 카드 보기의 축소판에 프로필 이름이 나타납니다. 목록 보기에서 프로필 이름이 처리 프로필 **[!UICONTROL 열에]** 나타납니다.
 
