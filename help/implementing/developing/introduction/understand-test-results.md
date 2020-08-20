@@ -2,9 +2,9 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1697'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Cloud Manager에서 Cloud Services 파이프라인을 지원하는 세 가지 �
 
 * 고객 서면
 * Adobe
-* 오픈 소스 툴(Google의 Lighthouse 제공)
+* 오픈 소스 툴
 
    >[!NOTE]
    > 고객이 작성한 테스트와 Adobe으로 작성된 테스트 모두 이러한 유형의 테스트를 실행하기 위해 설계된 통합 인프라에서 실행됩니다.
