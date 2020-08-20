@@ -2,9 +2,9 @@
 title: 컨텐츠 감사 테스트 - Cloud Services
 description: 컨텐츠 감사 테스트 - Cloud Services
 translation-type: tm+mt
-source-git-commit: ce25ec1472dc349937fdbd5f7265d4295fe111e8
+source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 컨텐츠 감사 테스트 {#content-audit-testing}
 
-콘텐츠 감사는 Google의 오픈 소스 툴인 Lighthouse를 기반으로 하는 Cloud Manager Sites Production 파이프라인에서 사용할 수 있는 기능입니다. 이 기능은 모든 Cloud Manager 프로덕션 파이프라인에서 사용할 수 있습니다.
+콘텐츠 감사는 Google의 오픈 소스 툴인 Cloud Manager Sites Production 파이프라인에서 사용할 수 있는 기능입니다. 이 기능은 모든 Cloud Manager 프로덕션 파이프라인에서 사용할 수 있습니다.
 
 배포 프로세스를 검증하고 변경 사항이 배포되었는지 확인하는 데 도움이 됩니다.
 
