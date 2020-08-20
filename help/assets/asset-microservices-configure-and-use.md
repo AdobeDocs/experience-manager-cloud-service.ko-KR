@@ -3,7 +3,7 @@ title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
+source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# 에셋 마이크로서비스 및 처리 프로필 사용 {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -48,7 +48,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 |---|---|---|
 | [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | <ul> <li>사용자 인터페이스에 사용되는 표준 축소판(48, 140 및 319px) [!DNL Assets] </li> <li> 대규모 미리 보기(웹 변환 - 1280px) </li><li> 메타데이터 및 텍스트 추출</li></ul> |
 | [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 변환 생성을 위한 더 많은 옵션을 제공합니다. 기본 옵션을 확장하여 다양한 형식 및 변환을 제공합니다. | <ul><li>FPO 변환. </li> <li>이미지 파일 포맷 및 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
-| [사용자 지정 프로필](#custom-config) | 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하여 [자산 계산 서비스를 호출하는 사용자 인터페이스를 통해 관리자가 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
+| [사용자 지정 프로필](#custom-config) | 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하여 [Asset Compute Service를 호출하도록 관리자가 사용자 인터페이스를 통해 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -121,7 +121,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 개발자는 이 [!DNL Asset Compute Service] 를 사용하여 지원되는 사용 사례를 [준수하는 맞춤형 애플리케이션을](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 응용 프로그램을 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
 
 * 의 [!DNL Adobe Photoshop]ImageCutout API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 를 사용하고 결과를 변환으로 저장합니다.
-* 서드파티 시스템을 호출하여 데이터를 업데이트합니다(예: PIM 시스템).
+* 서드파티 시스템에 전화하여 데이터를 업데이트합니다(예: PIM 시스템).
 * API를 사용하여 Photoshop 템플릿을 기반으로 다양한 변환을 생성할 수 있습니다. [!DNL Photoshop]
 * Adobe [Lightroom API를](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) 사용하여 인제스트된 자산을 최적화하고 표현물로 저장합니다.
 
@@ -154,7 +154,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 사용자 지정 프로필의 사용을 설명하기 위해 캠페인 이미지에 일부 사용자 지정 텍스트를 적용하는 사용 사례를 생각해 보겠습니다. Photoshop API를 활용하여 이미지를 편집하는 처리 프로필을 만들 수 있습니다.
 
-자산 계산 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개 변수] 필드를 사용하여 이러한 매개 변수를 사용자 정의 응용 프로그램에 전달할 수 있습니다. 그런 다음 사용자 정의 응용 프로그램이 Photoshop API를 호출하고 이러한 값을 API로 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 사용자 정의 텍스트를 캠페인 이미지에 추가할 수 있습니다.
+자산 계산 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개 변수] 필드를 사용하여 이러한 매개 변수를 사용자 정의 응용 프로그램에 전달할 수 있습니다. 그러면 사용자 지정 응용 프로그램이 Photoshop API를 호출하고 이러한 값을 API로 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 사용자 정의 텍스트를 캠페인 이미지에 추가할 수 있습니다.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
