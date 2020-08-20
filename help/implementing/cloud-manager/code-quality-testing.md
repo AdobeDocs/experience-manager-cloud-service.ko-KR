@@ -2,10 +2,10 @@
 title: 코드 품질 테스트 - Cloud Services
 description: 코드 품질 테스트 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 3%
+source-wordcount: '831'
+ht-degree: 2%
 
 ---
 
@@ -16,14 +16,26 @@ ht-degree: 3%
 
 다양한 유형의 파이프라인에 [대한 자세한 내용은 CI-CD 파이프라인](/help/implementing/cloud-manager/configure-pipeline.md) 구성을 참조하십시오.
 
-## 사용자 지정 코드 품질 규칙 이해 {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 코드 품질 테스트에서 소스 코드가 특정 품질 기준을 충족하는지 확인하기 위해 스캔됩니다. 현재 이 기능은 SonarQube와 OakPAL을 사용한 컨텐츠 패키지 레벨 검사를 조합하여 구현됩니다. 일반 Java 규칙과 AEM별 규칙을 결합하는 규칙이 100개 이상 있습니다. AEM별 규칙 중 일부는 AEM Engineering의 모범 사례를 기반으로 생성되며 [사용자 지정 코드 품질 규칙이라고 합니다](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
 >전체 규칙 목록을 [여기에서 다운로드할 수 있습니다](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-이 단계의 결과는 *평등으로 전달됩니다*. 다음 표에 테스트 기준에 대한 등급이 요약되어 있습니다.
+**3층 게이트**
+
+식별된 문제에 대한 이 코드 품질 테스트 단계에서는 세 계층의 구조가 있습니다.
+
+* **중요**:이러한 문제는 파이프라인의 즉각적인 실패를 야기하는 게이트로 확인되는 문제입니다.
+
+* **중요**:이 문제는 파이프라인이 일시 중지된 상태로 전환되도록 하는 게이트로 식별되는 문제입니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 파이프라인이 진행되는 경우 문제를 무시하거나 문제를 허용할 수 있습니다. 이 경우 파이프라인이 오류로 인해 멈춥니다.
+
+* **정보**:이러한 문제는 순전히 정보용으로 제공되었으며 파이프라인 실행에 영향을 주지 않는 게이트로 식별됩니다
+
+이 단계의 결과는 *평점으로 전달됩니다*.
+
+다음 표에서는 위기, 중요 및 정보 범주 각각에 대한 등급 및 실패 임계값을 요약합니다.
 
 | 이름 | 정의 | 카테고리 | 실패 임계값 |
 |--- |--- |--- |--- |
