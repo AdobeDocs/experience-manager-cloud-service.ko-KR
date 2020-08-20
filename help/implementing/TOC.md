@@ -3,9 +3,9 @@ sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '245'
 ht-degree: 96%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 96%
    + 테스트 결과 이해 {#test-results}
       + [개요](/help/implementing/cloud-manager/overview-test-results.md)
       + [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [사용자 지정 코드 품질 규칙](cloud-manager/custom-code-quality-rules.md)
       + [기능 테스트](/help/implementing/cloud-manager/functional-testing.md)
       + [컨텐츠 감사 테스트](/help/implementing/cloud-manager/content-audit-testing.md)
-   + [사용자 지정 코드 품질 규칙 이해](cloud-manager/custom-code-quality-rules.md)
    + [로그 액세스 및 관리](cloud-manager/manage-logs.md)
    + [알림 이해](cloud-manager/notifications.md)
 + 코드 관리 {#managing-code}
