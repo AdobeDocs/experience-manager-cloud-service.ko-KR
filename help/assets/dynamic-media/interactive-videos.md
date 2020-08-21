@@ -2,7 +2,7 @@
 title: 대화형 비디오
 description: Dynamic Media에서 인터랙티브한 비디오 및 쇼퍼블 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 0%
@@ -48,13 +48,13 @@ There was a link here that showed the video frame of an interactive video and wh
 ### 인터랙티브한 비디오 제작 방법 보기 {#watch-how-interactive-videos-are-created}
 
 인터랙티브한 비디오가 만들어지는 [방법에 대한 7분 30초 분량의 연습을](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) 시청하십시오 [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
-(비디오 연습은 Assets on Demand로 브랜딩되지만, 원칙 및 단계는 여전히 AEM Assets의 대화형 비디오에 적용됩니다.)
+(비디오 연습은 Assets on Demand로 브랜딩되지만 원칙과 단계는 AEM Assets의 대화형 비디오에 계속 적용됩니다.)
 
 ### Adobe 고객 성공 웨비나 {#adobe-customer-success-webinar}
 
 AEM Assets [웨비나에서](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) 대화형 비디오 사용, 링크 공유 및 YouTube 공유 기능은 대화형 비디오 및 기타 기능을 사용하여 전환 기반 이벤트를 비디오 마케팅 컨텐츠에 연결하는 방법을 설명합니다.
 
-## 빠른 시작: 인터랙티브 비디오 {#quick-start-interactive-videos}
+## 빠른 시작:인터랙티브 비디오 {#quick-start-interactive-videos}
 
 다음 단계별 워크플로우 설명은 Dynamic Media에서 인터랙티브한 비디오를 빠르게 시작하고 실행하는 데 도움이 되도록 만들어졌습니다.
 
@@ -69,9 +69,8 @@ AEM Assets [웨비나에서](https://adobecustomersuccess.adobeconnect.com/p1yxz
 인터랙티브한 비디오 단계:
 
 1. **(선택 사항) Quickview 변수** 식별 - 기존 Quickview 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 인터랙티브한 비디오를 만들 때 이 변수를 사용하여 제품 축소판을 해당 제품 Quickview에 매핑합니다. Quickview 변수 [식별을 참조하십시오(선택 사항)](#optional-identifying-quickview-variables).
-   **이 단계는 다음 내용이 모두 참인 경우에만 필요합니다**.
-・ 빠른 보기를 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
-・ AEM의 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* .
+   **이 단계는 다음 내용이 모두 참인 경우에만 필요합니다**.・ 빠른 보기를 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
+・ AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 *사용하지 않습니다* .
 
 1. **(선택 사항) 대화형 비디오 뷰어 사전 설정** 만들기 - 비디오 스크러버 및 대화형 축소판과 같은 플레이어를 구성하는 다양한 구성 요소의 모양과 동작을 사용자 정의합니다.
 바로 사용 가능한 대화형 비디오 뷰어 사전 설정을 사용하거나 `Shoppable_Video_Light` 대신 대화형 비디오 뷰어 사전 설정을 사용하려는 경우에는 자신의 대화형 비디오 뷰어 사전 설정을 만들 필요 `Shoppable_Video_Dark` 가 없습니다.
@@ -81,11 +80,11 @@ AEM Assets [웨비나에서](https://adobecustomersuccess.adobeconnect.com/p1yxz
 비디오 [및 관련 축소판 에셋 업로드를 참조하십시오](#uploading-a-video-and-its-associated-thumbnail-assets).
 
 1. **비디오에** 인터랙션 추가 - 비디오에 하나 이상의 시간 세그먼트를 추가합니다. 그런 다음 해당 시간 세그먼트 내에 이미지 축소판을 연결합니다. 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 각 이미지 축소판을 할당합니다.
-(인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 링크 방법이 불가능합니다.)
+(인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 지원되지 않습니다.)
 인터랙티브한 비디오 에셋을 게시하여 마무리합니다. 게시를 사용하면 웹 사이트 랜딩 페이지에 최종적으로 복사하고 적용할 포함 코드 또는 URL이 만들어집니다.비디오에 [대화형 작업 추가를 참조하십시오](#adding-interactivity-to-your-video).
 자산 [게시를 참조하십시오](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-1. **AEM Sites, AEM eCommerce 또는 두 가지 모두를 사용하는 경우**, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 비디오를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **AEM에서 웹 사이트 또는 웹 사이트에 대화형 비디오 추가** AEM Sites, AEM eCommerce 또는 둘 다를 사용하는 경우, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 비디오를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 포함 코드 또는 URL을 사용하여 인터랙티브한 비디오를 웹 사이트 경험과 통합할 수 있습니다. 웹 사이트 [와 대화형 비디오 통합을 참조하십시오](#integrating-an-interactive-video-with-your-website).
 타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. 기존 [Quickview와 대화형 비디오 통합을 참조하십시오](#integrating-an-interactive-video-with-an-existing-quickview).
    [](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -95,9 +94,9 @@ AEM Assets [웨비나에서](https://adobecustomersuccess.adobeconnect.com/p1yxz
 >[!NOTE]
 이 작업은 다음과 같은 경우에만 필요합니다.
 * Quickviews로 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
-* AEM을 구현해도 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* . <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+* AEM 구현에서는 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* . <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
-AEM 구현에서 e커머스를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
+AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
 인터랙티브한 비디오 제작 과정 동안 제품 축소판을 해당 제품 Quickview에 매핑할 수 있도록 기존 Quickview 구현에서 사용하는 동적 변수를 식별하여 시작합니다.
 
@@ -120,7 +119,7 @@ AEM 구현에서 e커머스를 사용하는 경우 이 작업을 건너뛰고 �
 
 * Google Chrome에서 나가는 모든 HTTP 요청을 보려면 **F12** (Windows) 또는 **Command+Options+I** (Mac)를 눌러 개발자 도구 패널을 연 다음 **네트워크** 탭을 클릭합니다.
 
-* Firefox에서는 **F12** (Windows) 또는 **Command+Option+I** (Mac)를 눌러 Firebug 플러그인을 활성화하고 **Net]** 탭을 사용하거나 내장된 검사기 도구 및 네트워크 탭을 사용할 수 있습니다.
+* Firefox에서는 **F12** (Windows) 또는 **Command+Option+I** (Mac)를 눌러 Firebug 플러그인을 활성화하고 **[Net]** 탭을 사용하거나 내장된 검사기 도구 및 네트워크 탭을 사용할 수 있습니다.
 
 * Internet Explorer에서 **F12를 눌러 디버거 도구를 활성화합니다**.
 
@@ -130,7 +129,7 @@ AEM 구현에서 e커머스를 사용하는 경우 이 작업을 건너뛰고 �
 
 이 과정 중에는 제품 카테고리 및 유형이 다른 웹 사이트의 여러 영역을 방문하는 것이 중요합니다. Quickview URL에는 지정된 웹 사이트 카테고리에 공통인 부분이 있을 수 있지만 웹 사이트의 다른 영역을 방문하는 경우에만 변경될 수 있습니다.
 
-가장 간단한 경우 Quickview URL의 유일한 변수 부분은 제품 SKU입니다. 이 경우 제품 SKU 값은 AEM의 대화형 비디오에서 시간 세그먼트에 축소판을 추가하는 데 필요한 유일한 데이터 조각입니다.
+가장 간단한 경우 Quickview URL의 유일한 변수 부분은 제품 SKU입니다. 이 경우, AEM의 대화형 비디오에서 시간 세그먼트에 축소판을 추가하는 데 필요한 유일한 데이터 요소는 제품 SKU 값입니다.
 
 하지만 복잡한 경우 Quickview URL에는 카테고리 ID, 색상 코드 등과 같은 제품 SKU 외에도 다양한 요소가 있습니다. 이러한 경우, 이러한 모든 요소는 AEM의 축소판 데이터 정의에서 별도의 변수가 됩니다.
 
@@ -256,10 +255,10 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
 경험 [조각을 참조하십시오](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
-뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다.  이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
 >[!NOTE]
-인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
+인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 
 페이지의 오른쪽 위 모서리 근처에 있는 실행 취소 및 재실행 옵션은 현재 생성/편집 세션 동안 지원됩니다.
 
@@ -399,11 +398,11 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
     <tbody> 
       <tr> 
       <td>선택한 축소판 이미지를 빠른 뷰와 연결하려면</td> 
-      <td><p>작업 유형에서 빠른 보기를 <strong>누릅니다</strong>.</p> <p>AEM Sites 및 Ecommerce 고객인 경우:</p> 
+      <td><p>작업 유형에서 빠른 보기를 <strong>누릅니다</strong>.</p> <p>AEM Sites 및 전자 상거래 고객인 경우:</p> 
        <ul> 
        <li>SKU 값 텍스트 필드는 사용자가 제공하는 각각의 고유 제품 또는 서비스에 대한 고유 식별자인 선택한 제품의 SKU(Stock Keeping Unit)로 미리 채워집니다. 이미지가 AEM Commerce의 제품과 연결되면 자동으로 채워집니다.</li> 
        <li>미리 채워진 SKU가 잘못된 경우 제품 선택기 아이콘(확대경)을 탭하거나 클릭하여 제품 선택 페이지를 엽니다. 사용할 제품을 누르거나 클릭한 다음 페이지의 오른쪽 상단에 있는 확인 표시를 눌러 대화형 비디오 편집기로 돌아갑니다.</li> 
-       </ul> <p> AEM Sites 또는 Ecommerce <em>고객이 아닌</em> 경우</p> 
+       </ul> <p> AEM Sites 또는 전자 상거래 고객이 <em>아닌</em> 경우</p> 
        <ul> 
        <li>핫스팟 <a href="/help/assets/dynamic-media/carousel-banners.md#identifying-hotspot-and-image-map-variables">변수 식별을 참조하십시오</a>. 이러한 변수를 정의해야 합니다. </li> 
        <li>기본적으로 이 SKU 필드는 확장자 없이 이미지 자산의 파일 이름을 사용합니다. SKU를 기반으로 파일에 대한 표준 이름 지정 규칙을 따르는 경우 일반적으로 추가적인 편집 작업이 필요하지 않습니다. </li> 
@@ -414,7 +413,7 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
       <td>선택한 축소판 이미지를 하이퍼링크로 연결하려면</td> 
       <td><p>작업 유형에서 <strong>하이퍼링크를</strong>누른 다음 다음 중 하나를 수행합니다.</p> 
        <ul> 
-       <li>AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 탭하여 웹 페이지로 이동합니다. 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 링크 방법이 가능하지 않습니다.</li> 
+       <li>AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 눌러 웹 페이지로 이동합니다. 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.</li> 
        <li>독립 실행형 Dynamic Media 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지의 전체 URL 경로를 지정합니다.</li> 
        </ul> <p>링크를 새 브라우저 탭에서 열지 또는 현재 탭에서 열지 여부를 지정해야 합니다.</p> </td> 
       </tr> 
@@ -426,7 +425,7 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
       </ul> 
        <ul> 
        <li>비디오에 표시될 경험 조각의 폭과 높이를 지정합니다.</li>
-       </ul><strong>참고</strong>: 뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.</p></tr>&lt; 
+       </ul><strong>참고</strong>:뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.</p></tr>&lt; 
       <tr> 
       <td>축소판 이미지에 이미 할당된 작업을 편집하려면</td> 
       <td>타임라인 세그먼트 내에서 텍스트 레이블 오른쪽에 체인 링크가 있는 축소판 이미지를 누릅니다. 체인 링크는 작업이 할당되었음을 나타냅니다. 작업 <strong>탭을</strong> 눌러 변경합니다.</td> 
@@ -484,7 +483,7 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
 
 1. 인터랙티브한 비디오를 게시합니다. 게시를 사용하면 웹 사이트 경험에 최종적으로 복사하고 붙여넣을 내장 코드 또는 URL이 만들어집니다.
 
-   Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 사용하십시오. 하이퍼링크된 웹 페이지에 인터랙티브한 요소를 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
+   Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 사용하십시오.하이퍼링크된 웹 페이지에 인터랙티브한 요소를 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
 
    자산 [게시를 참조하십시오](publishing-dynamicmedia-assets.md).
 
@@ -501,21 +500,21 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
 
 비디오를 업로드하고 타임라인 세그먼트를 추가하고 대화형 비디오를 게시한 후 이제 기존 웹 사이트에 추가할 준비가 되었습니다.
 
-AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지에 드래그하여 대화형 비디오를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 비디오를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-독립형 AEM Assets 고객인 경우 이 섹션에 설명된 대로 웹 사이트에 대화형 비디오를 수동으로 추가할 수 있습니다.
+독립 실행형 AEM Assets 고객인 경우 이 섹션에 설명된 대로 웹 사이트에 대화형 비디오를 수동으로 추가할 수 있습니다.
 
 1. 게시된 대화형 비디오의 포함 코드 또는 URL을 복사합니다.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 사용하십시오. 하이퍼링크된 웹 페이지에 인터랙티브한 요소를 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
+Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 사용하십시오.하이퍼링크된 웹 페이지에 인터랙티브한 요소를 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
 
 1. 대상의 웹 페이지 코드에서 정적 비디오가 있는 위치를 식별합니다.
-1. 정적 비디오를 제거하고 코드를 AEM 자산에서 복사한 포함 코드 또는 URL로 바꿉니다.
+1. 정적인 비디오를 제거하고 코드를 그대로 AEM Assets에서 복사한 포함 코드 또는 URL로 바꿉니다.
 복사한 포함 코드는 응답형 환경을 위해 설정되므로 정적 비디오가 이전에 점유한 영역에 자동으로 맞춰집니다.
 
 >[!NOTE]
 따라서 하이퍼링크된 웹 페이지로만 인터랙티브한 기능을 추가하면 됩니다.
-그러나 Quickview를 트리거하는 대화형 기능을 추가한 경우 대화형 비디오에 인접한 축소판은 표시 용도로만 사용됩니다. 기존 Quickview와 아직 통합되지 않았습니다. 이러한 경우 이제 대화형 비디오를 웹 사이트의 기존 Quickviews와 통합해야 합니다.
+그러나 Quickview를 트리거하는 대화형 기능을 추가한 경우 대화형 비디오에 인접한 축소판은 표시 용도로만 사용됩니다.기존 Quickview와 아직 통합되지 않았습니다. 이러한 경우 이제 대화형 비디오를 웹 사이트의 기존 Quickviews와 통합해야 합니다.
 
 **예**
 
@@ -550,14 +549,14 @@ Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 
 </script>
 ```
 
-통합은 비디오 포함 코드를 제거하고 AEM의 대화형 비디오 포함 코드로 바꾸는 것만큼 간단합니다. 다음 URL에서 결과를 볼 수 있습니다. 페이지에 표시되는 대화형 비디오는 아직 기존 빠른 보기와 통합되지 않았습니다.
+통합은 비디오 포함 코드를 제거하고 AEM에서 인터랙티브한 비디오 포함 코드로 바꾸는 것만큼 간단합니다. 다음 URL에서 결과를 볼 수 있습니다. 페이지에 표시되는 대화형 비디오는 아직 기존 빠른 보기와 통합되지 않았습니다.
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
 ## 기존 Quickview와 대화형 비디오 통합 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-이 작업은 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
+이 작업은 사용자가 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 웹 사이트에서 사용되는 기존 Quickview 구현과 대화형 비디오를 통합하는 것입니다. 모든 경우에 작동하는 통합에 대한 해결책은 없습니다. 모든 Quickview 구현은 고유합니다. 따라서 프런트 엔드 IT 담당자의 지원을 필요로 하는 특정 접근 방식이 필요합니다.
 
@@ -573,7 +572,7 @@ Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 
 
 이러한 호출은 임의의 단계에서 웹 페이지 로직에서 호출할 수 있는 독립 공개 API 호출을 나타내지 않을 수 있습니다. 대신, 이 호출은 이전 단계의 마지막 단계(콜백)에서 모든 다음 단계가 숨겨지는 연쇄 호출입니다.
 
-대화형 비디오가 1단계와 2단계를 대체하는 동시에 사용자가 대화형 비디오 내에서 축소판을 클릭하면 사용자 상호 작용이 뷰어에서 처리됩니다. 뷰어는 이전에 AEM에 추가된 모든 축소판 데이터를 포함하는 웹 페이지에 이벤트를 반환합니다.
+대화형 비디오가 1단계와 2단계를 대체하는 동시에 사용자가 대화형 비디오 내에서 축소판을 클릭하면 사용자 상호 작용이 뷰어에서 처리됩니다. 뷰어는 이전에 AEM에 추가한 모든 축소판 데이터를 포함하는 웹 페이지에 이벤트를 반환합니다.
 
 이러한 이벤트 핸들러에서 프런트 엔드 코드는 다음을 수행합니다.
 
@@ -583,7 +582,7 @@ Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 
 
 또한 대화형 비디오 뷰어는 전체 화면 작업 모드를 지원합니다. 최종 사용자는 전체 화면에서 나가지 않고 축소판을 클릭하여 빠른 보기를 트리거합니다. 이 기능을 사용하려면 미리 보기 모달 대화 상자가 뷰어의 컨테이너에 연결되도록 프런트 엔드 코드를 변경합니다. 뷰어가 전체 화면 모드일 때 사용할 수 없는 문서 BODY 또는 기타 웹 페이지 요소를 추가하지 마십시오. 이 작업을 수행하는 코드는 뷰어가 페이지에 로드된 후 전송되는 하나 이상의 뷰어 콜백을 들어야 합니다.
 
-AEM에서 반환된 포함 코드에는 이미 사용 가능한 이벤트 핸들러가 있습니다. 이렇게 주석 처리되면 다음과 같이 강조 표시된 코드 조각에 표시됩니다.
+AEM에서 반환되는 포함 코드에는 이미 사용 가능한 이벤트 핸들러가 있습니다. 이렇게 주석 처리되면 다음과 같이 강조 표시된 코드 조각에 표시됩니다.
 
 ```xml
 <style type="text/css">
