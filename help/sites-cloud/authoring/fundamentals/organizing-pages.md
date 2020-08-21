@@ -1,9 +1,9 @@
 ---
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
-translation-type: ht
-source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -385,7 +385,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
          ![비동기 페이지 이동](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-비동기 작업의 상태는 **전역 탐색** -> **도구** -> **작업** -> **작업**&#x200B;의 [**비동기 작업 상태&#x200B;**대시보드](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다.
+비동기 작업의 상태는 **전역 탐색** -> **도구** -> **작업** -> **작업**&#x200B;의 [**비동기 작업 상태** 대시보드](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)에서 확인할 수 있습니다.
 
 >[!NOTE]
 >
