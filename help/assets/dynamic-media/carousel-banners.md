@@ -2,9 +2,9 @@
 title: 회전 배너
 description: Dynamic Media에서 회전판 배너를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '4606'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -36,15 +36,15 @@ Carousel 배너를 통해 마케터는 인터랙티브한 회전 프로모션 �
 
 >[!NOTE]
 >
->캐러셀 배너를 만들거나 편집할 수 있으려면 관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹에 추가해야 합니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 **[!UICONTROL dam-users ]**그룹에 추가할 수 있는 시스템 관리자에게 문의하십시오.
+>캐러셀 배너를 만들거나 편집할 수 있으려면 관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹에 추가해야 합니다. 만들거나 편집하는 데 문제가 있는 경우 사용자를 **[!UICONTROL dam-users]** 그룹에 추가할 수 있는 시스템 관리자에게 문의하십시오.
 
-## 빠른 시작: 회전판 배너 {#quick-start-carousel-banners}
+## 빠른 시작:회전판 배너 {#quick-start-carousel-banners}
 
 빠르게 시작하기
 
 1. [핫스팟 및 이미지 맵 변수](#identifying-hotspot-and-image-map-variables) 식별(AEM Assets + Dynamic Media를 사용하는 고객에게만 해당)
 
-   AEM 자산의 회전판 배너 생성 프로세스 동안 핫스팟과 이미지 맵 데이터를 제대로 입력할 수 있도록 기존 빠른 보기 구현에서 사용되는 동적 변수를 식별하는 것으로 시작합니다.
+   AEM Assets의 회전판 배너 생성 프로세스 중에 핫스팟과 이미지 맵 데이터를 제대로 입력할 수 있도록 기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하는 것으로 시작합니다.
 
 <!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
@@ -83,21 +83,19 @@ Carousel 배너를 통해 마케터는 인터랙티브한 회전 프로모션 �
 
 1. 다음 중 하나를 수행하십시오.
 
-   * [웹 사이트 페이지에 회전판 배너 추가
-      ](#adding-a-carousel-banner-to-your-website-page)회전판 배너 URL을 추가하거나 웹 사이트 페이지에 복사한 포함 코드를 추가할 수 있습니다.
+   * [회전판 배너를 웹 사이트](#adding-a-carousel-banner-to-your-website-page)페이지에 추가회전판 배너 URL을 추가하거나 웹 사이트 페이지에 복사한 코드를 포함할 수 있습니다.
 
       * [캐러셀 배너를 기존 Quickview와 통합합니다](#integrating-the-carousel-banner-with-an-existing-quickview). 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 새로운 캐러셀 배너를 웹 사이트의 기존 Quickview 구현과 통합해야 합니다.
-   * [AEM에서 웹 사이트에 회전판 배너 추가
-      ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)AEM Sites 고객인 경우 대화형 미디어 구성 요소를 사용하여 AEM의 페이지에 직접 회전판 세트를 추가할 수 있습니다.
+   * [AEM Sites 고객인 경우](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)AEMI의 웹 사이트에 Carousel 배너를 추가합니다. Interactive Media 구성 요소를 사용하여 Carousel 세트를 AEM의 페이지에 직접 추가할 수 있습니다.
 
 
 회전판 세트를 편집해야 하는 경우 회전판 세트 [편집을 참조하십시오.](#editing-carousel-sets) 또한 회전판 세트 속성을 보고 편집할 [수 있습니다](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## 핫스팟 및 이미지 맵 변수 식별 {#identifying-hotspot-and-image-map-variables}
 
-AEM 자산에서 회전판 세트 생성 프로세스 동안 핫스팟 또는 이미지 맵 데이터를 제대로 입력할 수 있도록 기존 빠른 보기 구현에서 사용되는 동적 변수를 식별하는 것으로 시작합니다.
+AEM Assets에서 회전판 세트 생성 프로세스 중에 핫스팟이나 이미지 맵 데이터를 제대로 입력할 수 있도록 기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하는 것으로 시작합니다.
 
-AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할 때 각 핫스팟 또는 이미지 맵에 SKU 및 선택적 추가 변수를 할당해야 합니다. 이러한 변수는 나중에 빠른 보기 컨텐츠와 핫스팟 또는 이미지 맵을 일치시키기 위해 사용됩니다.
+AEM Assets의 배너 이미지에 핫스팟이나 이미지 맵을 추가할 때 각 핫스팟 또는 이미지 맵에 SKU 및 선택적 추가 변수를 할당해야 합니다. 이러한 변수는 나중에 빠른 보기 컨텐츠와 핫스팟 또는 이미지 맵을 일치시키기 위해 사용됩니다.
 
 <!-- LEAVE; COMMERCE BEING ADDED LATER
 
@@ -129,7 +127,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 * Google Chrome에서 나가는 HTTP 요청을 모두 보려면 F12(Windows) 또는 Command-Option-I(Mac)를 눌러 개발자 도구 패널을 연 다음 네트워크 탭을 누릅니다.
 * Firefox에서는 F12(Windows) 또는 Command-Option-I(Mac)를 눌러 Firebug 플러그인을 활성화하고 Net 탭을 사용하거나 내장 검사기 도구 및 해당 네트워크 탭을 사용할 수 있습니다.
 
-브라우저에서 네트워크 모니터링을 켜면 페이지의 빠른 보기를 트리거합니다.
+브라우저에서 네트워크 모니터링을 활성화하면 페이지의 빠른 보기를 트리거합니다.
 
 이제 네트워크 로그에서 빠른 보기 Ajax URL을 찾아 기록된 URL을 복사하여 이후 분석을 수행합니다. 대부분의 경우 빠른 보기를 트리거할 때 서버에 전송되는 요청이 많습니다. 일반적으로 빠른 보기 Ajax URL은 목록의 첫 번째 중 하나입니다. 복잡한 쿼리 문자열 부분이나 경로가 있으며 응답 MIME 유형은 `text/html`, `text/xml`또는 `text/javascript`입니다.
 
@@ -201,8 +199,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
    * 페이지의 왼쪽 위 모서리 근처에 있는 슬라이드 **[!UICONTROL 추가]** 아이콘을 누릅니다.
 
    * 페이지 가운데 근처에 있는 탭하기 **[!UICONTROL 를 눌러 자산 선택기를 엽니다]**.
-
-   회전판 세트에 포함할 자산을 선택하려면 을 누릅니다. 선택한 자산에 확인 표시 아이콘이 표시됩니다. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Select를 누릅니다**.
+   회전판 세트에 포함할 자산을 선택하려면 을 누릅니다. 선택한 자산에 확인 표시 아이콘이 표시됩니다. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 선택을 **[!UICONTROL 누릅니다]**.
 
    자산 선택기를 사용하여 키워드를 입력하고 재시작을 탭하거나 클릭하여 자산을 검색할 수 **[!UICONTROL 있습니다]**. 필터를 적용하여 검색 결과를 조정할 수도 있습니다. 경로, 컬렉션, 파일 유형 및 태그별로 필터링할 수 있습니다. 필터를 선택한 다음 도구 모음에서 **[!UICONTROL 필터]** 아이콘을 누릅니다. 보기 아이콘을 누르고 열 보기, 카드 보기 **[!UICONTROL 또는 목록 보기]**&#x200B;를 선택하여 보기 **[!UICONTROL 를]**&#x200B;변경합니다 ****.
 
@@ -257,7 +254,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 >
 >대화형 이미지 [](/help/assets/dynamic-media/interactive-images.md) 또는 회전 배너의 이미지에 핫스팟을 추가할 때 핫스팟 정보는 대화형 이미지 또는 회전 메뉴 배너의 여부와 관계없이 동일한 메타데이터 위치에 저장됩니다. 이 기능은 두 뷰어 모두에서 동일한 이미지를 정의된 핫스팟 데이터와 함께 쉽게 다시 사용할 수 있음을 의미합니다.
 
->그러나 회전판 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다. 대화형 이미지는 그렇지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려는 경우 주의하십시오. 대신 동일한 이미지의 개별 사본을 사용하여 대화형 이미지 및 회전 배너를 만들 수 있습니다.
+>그러나 회전판 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다.대화형 이미지는 그렇지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려는 경우 주의하십시오. 대신 동일한 이미지의 개별 사본을 사용하여 대화형 이미지 및 회전 배너를 만들 수 있습니다.
 
 >[!NOTE]
 핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르면 핫스팟이 제거됩니다.
@@ -272,8 +269,8 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 핫스팟]** 또는 **[!UICONTROL 이미지 맵을 탭합니다]**.
 1. 다음 중 하나를 수행합니다.
 
-   * 핫스팟: 이미지에서 핫스팟을 표시할 위치를 누릅니다.
-   * 이미지 맵의 경우: 이미지에서 왼쪽 상단에서 오른쪽 하단으로 드래그하여 이미지 맵 영역을 만듭니다. 모서리를 드래그하여 이미지 맵의 크기를 조정할 수 있습니다.
+   * 핫스팟:이미지에서 핫스팟을 표시할 위치를 누릅니다.
+   * 이미지 맵의 경우:이미지에서 왼쪽 상단에서 오른쪽 하단으로 드래그하여 이미지 맵 영역을 만듭니다. 모서리를 드래그하여 이미지 맵의 크기를 조정할 수 있습니다.
 
    필요한 경우 핫스팟 또는 이미지 맵을 새 위치로 드래그합니다. 필요에 따라 핫스팟 또는 이미지 맵을 추가합니다.
 
@@ -284,8 +281,8 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 
    * 빠른 **[!UICONTROL 보기를 누릅니다]**.
 
-      * AEM Sites <!-- and Ecommerce customer-->의 경우 제품 선택기 아이콘(확대경)을 탭하여 제품 선택 페이지를 엽니다. 사용할 제품을 누른 다음 페이지의 오른쪽 상단에 있는 확인 표시를 눌러 회전판 배너 편집기로 돌아갑니다.
-      * AEM Sites가 아닌 경우 <!-- or Ecommerce customer -->
+      * AEM Sites인 경우 제품 선택기 아이콘(확대경) <!-- and Ecommerce customer-->을 눌러 제품 선택 페이지를 엽니다. 사용할 제품을 누른 다음 페이지의 오른쪽 상단에 있는 확인 표시를 눌러 회전판 배너 편집기로 돌아갑니다.
+      * AEM Sites이 아니라면 <!-- or Ecommerce customer -->
 
          * 이러한 변수 [를 정의할](#identifying-hotspot-and-image-map-variables) 수 있는 핫스팟 변수 식별을 참조하십시오.
          * 그런 다음 SKU 값을 직접 입력합니다. SKU 값 텍스트 필드에 제공하는 각 개별 제품 또는 서비스에 대한 고유 식별자인 제품의 SKU(Stock Keeping Unit)를 입력합니다. 입력된 SKU 값은 시스템이 탭된 핫스팟을 특정 SKU의 빠른 뷰와 연관시키는 것을 알 수 있도록 빠른 보기 템플릿의 변수 부분을 자동으로 채웁니다.
@@ -294,9 +291,9 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
          * 자세한 [내용은 선택기](/help/assets/dynamic-media/working-with-selectors.md) 작업을 참조하십시오.
    * 하이퍼링크를 **[!UICONTROL 누릅니다]**.
 
-      * AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 탭하여 URL로 이동합니다.
+      * AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 눌러 URL로 이동합니다.
          >[!NOTE]
-         인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
+         인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 
       * 독립 실행형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지의 전체 URL 경로를 지정합니다.
 
@@ -306,7 +303,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 
    * 경험 **[!UICONTROL 조각을 누릅니다]**.
 
-      * AEM Sites 고객인 경우 검색 아이콘(확대경)을 탭하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에서 선택을 탭하여 핫스팟 관리 페이지로 돌아갑니다.
+      * AEM Sites 고객인 경우 검색 아이콘(확대경)을 눌러 경험 조각 페이지를 엽니다. 사용할 경험 조각을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에서 선택을 탭하여 핫스팟 관리 페이지로 돌아갑니다.
 경험 [조각을 참조하십시오](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * 배너에 표시될 경험 조각의 폭과 높이를 지정합니다.
@@ -319,7 +316,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
    회전판 배너의 모양을 미리 볼 수도 있습니다. 회전판 배너 미리 보기 [(선택 사항)를 참조하십시오](#optional-previewing-carousel-banners).
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
-1. 회전판 세트를 게시합니다. 게시를 사용하면 웹 사이트 페이지에서 사용할 수 있는 포함 코드 또는 URL이 만들어집니다. AEM Sites 고객인 경우 웹 페이지에 바로 회전판 세트를 추가할 수 있습니다.
+1. 회전판 세트를 게시합니다. 게시를 사용하면 웹 사이트 페이지에서 사용할 수 있는 포함 코드 또는 URL이 만들어집니다. AEM Sites 고객의 경우 웹 페이지에 직접 Carousel 세트를 추가할 수 있습니다.
 
    자산 [게시를 참조하십시오](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
@@ -368,7 +365,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 
 회전판 배너에 만족하면 게시할 수 있습니다.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 링크 방법이 가능하지 않습니다.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 회전판 편집기(기본 설정 방법) 또는 뷰어 **[!UICONTROL 목록에서 회전판 배너를 미리 볼 수]** 있습니다.
@@ -381,7 +378,7 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. 미리 **보기]를 누릅니다**.
+1. 미리 **[보기를 누릅니다]**.
 1. 이미지의 핫스팟 또는 이미지 맵을 눌러 연결된 동작을 테스트합니다.
 
 **뷰어 목록에서 회전판 배너를 미리 보려면**
@@ -406,19 +403,19 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 회전판을 만들기 위해 배너 이미지를 업로드하고, 배너에 핫스팟 및/또는 이미지 맵을 추가하고, 회전판 세트를 게시하면 이제 기존 웹 사이트 페이지에 추가할 준비가 됩니다.
 
 >[!NOTE]
-AEM Sites 고객인 경우 Interactive Media 구성 요소를 페이지로 드래그하여 회전판 배너를 페이지에 직접 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+AEM Sites 고객인 경우 인터랙티브 미디어 구성 요소를 페이지로 드래그하여 회전판 배너를 페이지에 직접 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 그러나 독립형 AEM 자산 고객인 경우 이 섹션에 설명된 대로 회전판 배너를 웹 사이트 랜딩 페이지에 수동으로 추가할 수 있습니다.
 
 1. 게시된 Carousel 세트의 포함 코드를 복사합니다.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
 
-1. AEM 자산에서 복사한 포함 코드를 웹 페이지에 추가합니다.
+1. AEM Assets에서 복사한 포함 코드를 웹 페이지에 추가합니다.
 복사한 포함 코드는 응답성이 높으므로 페이지의 포함 영역에 자동으로 맞출 수 있습니다.
 
 ## 회전판 배너와 기존 빠른 보기 통합 {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-참고: 이 단계는 독립형 AEM Assets 고객인 경우에만 적용됩니다.
+참고:이 단계는 귀하가 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 캐러셀 배너를 웹 사이트의 기존 빠른 보기 구현과 통합하는 것입니다. 모든 빠른 보기 구현은 고유하며 프런트 엔드 IT 담당자의 지원을 필요로 하는 특정 접근 방식이 필요합니다.
 
@@ -442,7 +439,7 @@ See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-med
 * 핫스팟 또는 이미지 맵 데이터를 기반으로 빠른 보기 URL을 생성합니다.
 * 백 엔드에서 빠른 보기를 로드하고 표시하기 위해 화면에서 렌더링하는 프로세스를 트리거합니다.
 
-AEM Assets에서 반환되는 포함 코드에는 이미 댓글이 지정된 즉시 사용할 수 있는 이벤트 핸들러가 있습니다.
+AEM Assets이 반환하는 포함 코드에는 이미 댓글이 달린 즉시 사용할 수 있는 이벤트 핸들러가 있습니다.
 
 따라서, 코드의 주석을 해제하고 더미 처리기 본문을 특정 웹 페이지에 맞는 코드로 바꾸는 것만 필요합니다.
 
