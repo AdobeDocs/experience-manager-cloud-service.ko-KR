@@ -3,7 +3,7 @@ title: 메타데이터 프로필
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 메타데이터 프로필 추가 {#adding-a-metadata-profile}
 
-1. AEM 로고를 누르고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필로]**&#x200B;이동한 다음 **[!UICONTROL 만들기를 탭합니다]**.
+1. AEM 로고를 누르고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필로]**&#x200B;이동한 다음 **[!UICONTROL 만들기를 누릅니다]**.
 1. 메타데이터 프로필(예: 샘플 메타데이터)의 제목을 입력하고 제출을 **[!UICONTROL 누릅니다]**. 메타데이터 프로필에 대한 양식 편집이 표시됩니다.
 1. 구성 요소를 클릭하고 설정 **[!UICONTROL 탭에서 해당 속성을]** 구성합니다. 예를 들어 설명 구성 **[!UICONTROL 요소를]** 클릭하고 해당 속성을 편집합니다.
 설명 구성 요소에 대해 다음 **[!UICONTROL 속성을]** 편집합니다.
@@ -25,7 +25,7 @@ ht-degree: 1%
    * **[!UICONTROL 필드 레이블]** - 메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
    * **[!UICONTROL 속성에 매핑]** - 이 속성의 값은 저장소에 저장된 자산 노드에 대한 상대 경로/이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 있음을 `./` 나타내므로 항상 다음으로 시작해야 합니다.
 
-      속성에 **[!UICONTROL 매핑에 지정하는]** 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우 `/jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, AEM Assets은 자산의 메타데이터 노드 `dc:desc` 에 값을 저장합니다.
+      속성에 **[!UICONTROL 매핑에 지정하는]** 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우 `/jcr:content/metadata/dc:desc` aem assets은 속성에 **[!UICONTROL 매핑의]**&#x200B;이름으로 자산의 메타데이터 노드 `dc:desc` 에 값을 저장합니다.
 
    * **[!UICONTROL 기본값]** - 이 속성을 사용하여 메타데이터 구성 요소의 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드 `dc:desc` 에 있는 속성에 할당됩니다.
 
@@ -89,11 +89,11 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. 왼쪽 레일에서 **[!UICONTROL 자산을]** 누른 다음 메타데이터 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 누르거나 클릭하여 선택한 다음 속성을 탭하거나 **클릭합니다**.
-1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 **저장을 탭합니다**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 저장을 **[누릅니다]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
 ### 전역 메타데이터 프로필 적용 {#applying-a-metadata-profile-globally}
 
-폴더에 프로필을 적용하는 것 외에도 AEM 자산에 업로드된 모든 콘텐츠가 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
+폴더에 프로필을 적용하는 것 외에도, 모든 폴더의 AEM 자산에 업로드된 콘텐트에 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
@@ -101,7 +101,7 @@ You can reprocess assets in a folder that already has an existing metadata profi
 
 * 해당 프로파일로 `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 이동하여 적용하고 저장을 **누릅니다**.
 
-* 다음 노드로 CRXDE Lite로 이동합니다. `/content/dam/jcr:content`. 속성을 추가하고 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` 모두 **저장을 누릅니다**.
+* 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`. 속성을 추가하고 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` 모두 **저장을 누릅니다**.
 
 ## 폴더에서 메타데이터 프로필 제거 {#removing-a-metadata-profile-from-folders}
 
@@ -111,7 +111,7 @@ You can reprocess assets in a folder that already has an existing metadata profi
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필로 이동합니다]**.
+1. AEM 로고를 누르거나 클릭하고 도구 > 자산 > **[!UICONTROL 메타데이터 프로필로 이동합니다]**.
 1. 폴더 또는 여러 폴더에서 제거할 메타데이터 프로필을 선택합니다.
 1. 폴더에서 **[!UICONTROL 메타데이터 프로필 제거를]** 누르고 프로필을 제거할 폴더 또는 여러 폴더를 선택한 다음 완료를 **[!UICONTROL 누릅니다]**.
 
@@ -119,6 +119,6 @@ You can reprocess assets in a folder that already has an existing metadata profi
 
 ### 속성을 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. AEM 로고를 누르고 **[!UICONTROL 자산]** 으로 이동한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
+1. AEM 로고를 누르고 **[!UICONTROL 자산]** 을 탐색한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성을 누릅니다]**.
 1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]** 을 선택하고 **[!UICONTROL 저장을]**&#x200B;클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
