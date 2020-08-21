@@ -2,9 +2,9 @@
 title: 이미지 사전 설정 관리
 description: 이미지 사전 설정을 이해하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3648'
 ht-degree: 3%
 
 ---
@@ -253,7 +253,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. [!UICONTROL 저장 **]을 클릭합니다**.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ### 반응형 이미지 사전 설정 만들기 {#creating-a-responsive-image-preset}
 
