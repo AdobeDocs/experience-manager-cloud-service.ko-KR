@@ -2,9 +2,9 @@
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '10057'
+source-wordcount: '10056'
 ht-degree: 1%
 
 ---
@@ -689,7 +689,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 클릭하고 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;를 클릭합니다.
 1. 기본값을 **[!UICONTROL 클릭합니다]**. (선택 상자의 왼쪽에 &quot;기본값&quot;을 표시하지 마십시오.)
-1. 기본 **** 페이지에서 **[!UICONTROL 비디오]**&#x200B;왼쪽에 있는 상자를 선택한 다음 **편집]을 클릭합니다**.
+1. 기본 **** 페이지에서 **[!UICONTROL 비디오]**&#x200B;왼쪽에 있는 상자를 선택한 다음 **[편집을 클릭합니다]**.
 1. 메타데이터 스키마 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 클릭합니다.
 1. YouTube 게시 머리글에서 **[!UICONTROL YouTube 카테고리를 클릭합니다]**.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭 아래에서 다음을 수행합니다.
@@ -723,7 +723,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
    * (선택 사항) 페이지 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 을 입력합니다 `YouTube Publishing`.
    * 양식 **[!UICONTROL 작성]** 탭을 클릭한 다음 **[!UICONTROL 다중 값 텍스트]** 라는 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 게시]** 제목 아래에놓습니다.
 
-   * 구성 요소를 선택하려면 **[!UICONTROL 필드 레이블** ]을 클릭합니다.
+   * 필드 **[!UICONTROL 레이블을]** 클릭하여 구성 요소를 선택합니다.
    * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
 
 1. 다음을 수행하여 복사한 YouTube 개인 정보 값을 프로필에 추가합니다.
