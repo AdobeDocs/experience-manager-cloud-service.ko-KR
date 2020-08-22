@@ -2,9 +2,9 @@
 title: Cloud Service으로 AEM Commerce 시작하기
 description: Cloud Service으로 AEM Commerce 시작하기
 translation-type: tm+mt
-source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 4%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Cloud Service으로 AEM Commerce 시작하기 {#start}
 
-AEM Commerce를 Cloud Service으로 시작하려면 Experience Manager Cloud Service에 CIF(Commerce Integration Framework) 추가 기능이 제공되어야 합니다. CIF Add-on은 Cloud Service으로 [AEM Sites 위에 추가 모듈입니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/sites/home.html).
+AEM Commerce를 Cloud Service으로 시작하려면 Experience Manager Cloud Service에 CIF(Commerce Integration Framework) 추가 기능이 제공되어야 합니다. CIF Add-on은 Cloud Service으로 [AEM Sites 위에 있는 추가 모듈입니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/sites/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -56,7 +56,7 @@ AEM Commerce를 Magento과 연결하려면 다음 단계를 따르십시오.
 >
 >다음 명령을 사용하여 모든 Cloud Manager 변수를 나열하여 다시 확인할 수 있습니다. `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
->[!Note]
+>[!NOTE]
 >
 >또는 [클라우드 관리자 API를](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) 사용하여 클라우드 관리자 변수를 구성할 수도 있습니다.
 
