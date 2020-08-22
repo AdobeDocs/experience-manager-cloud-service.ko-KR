@@ -1,10 +1,10 @@
 ---
 title: Go-live 후 단계
 description: Go-live 후 단계
-translation-type: ht
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
-workflow-type: ht
-source-wordcount: '242'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '241'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Go-live 후 단계에서는 임시 파일을 정리하고, 지속적인 개발�
 
 사용자는 개발 환경에서 CRX/DE Lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다.
 
->[중요 사항]
+>[!IMPORTANT]
 >런타임 시 `/libs` 및 `/apps` 같은 변경할 수 없는 저장소에 쓸 경우 오류가 발생합니다. 또한 고객은 스테이징 및 프로덕션 환경을 위한 개발자 도구에 액세스할 수 없습니다.
 
 CRX/DE Lite를 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 알아보려면 [CRX/DE Lite를 사용한 개발](https://docs.adobe.com/help/ko-KR/experience-manager-65/developing/devtools/developing-with-crxde-lite.html)을 참조하십시오.
