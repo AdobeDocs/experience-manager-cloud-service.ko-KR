@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager] 에서 리치 텍스트 편집기를 사용하여 컨텐츠를 작성합니다.'
 description: ' [!DNL Experience Manager] 리치 텍스트 편집기를 사용하여 컨텐츠를 작성합니다.'
-translation-type: ht
-source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
-workflow-type: ht
-source-wordcount: '287'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '286'
 ht-degree: 100%
 
 ---
