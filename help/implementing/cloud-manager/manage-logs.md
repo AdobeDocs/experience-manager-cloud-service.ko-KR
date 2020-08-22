@@ -2,9 +2,9 @@
 title: 로그 관리 - Cloud Service
 description: 로그 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 9%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 ![](assets/download-logs.png)
 
->[!Note]
+>[!NOTE]
 >열려 있는 위치에 관계없이 동일한 대화 상자가 나타나고 개별 로그 파일을 다운로드할 수 있습니다.
 
 ![](assets/manage-logs3.png)
@@ -67,7 +67,7 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Note]
+>[!NOTE]
 >UI와 API를 통해 **로그 다운로드** 기능을 사용할 수 있지만, 로그 **는 API/CLI만** 사용할 수 있습니다.
 
 ### 추가 리소스 {#resources}
