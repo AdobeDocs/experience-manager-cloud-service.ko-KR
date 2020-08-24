@@ -2,9 +2,9 @@
 title: AEM용 AEM Commerce를 Cloud Service으로 개발
 description: AEM용 AEM Commerce를 Cloud Service으로 개발
 translation-type: tm+mt
-source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
+source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '809'
 ht-degree: 10%
 
 ---
@@ -20,11 +20,13 @@ Cloud Service으로 AEM용 CIF(Commerce Integration Framework)를 기반으로 �
 
 ## Cloud Service SDK로 AEM을 사용한 로컬 개발 {#local}
 
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+
 CIF 프로젝트를 사용하는 경우 로컬 개발 환경을 사용하는 것이 좋습니다. Cloud Service 환경으로 AEM용으로 제공되는 CIF Add-On은 로컬 개발에도 사용할 수 있습니다. 소프트웨어 배포 포털에서 다운로드할 수 [있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 CIF Add-On은 Sling 기능 아카이브로 제공됩니다. 소프트웨어 배포 포털에서 사용할 수 있는 zip 파일에는 두 개의 Sling Feature 아카이브 파일이 포함되어 있습니다. 하나는 AEM 작성자용, 다른 하나는 AEM 게시 인스턴스용 파일입니다.
 
-**AEM을 Cloud Service으로 처음 사용하는 경우** AEM을 Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하는 방법은 [다음 가이드를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**AEM을 Cloud Service으로 처음 사용하는 경우** AEM [를 Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하는 방법에 대한 자세한 가이드를 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ### 필수 소프트웨어
 
@@ -39,7 +41,7 @@ CIF Add-On은 Sling 기능 아카이브로 제공됩니다. 소프트웨어 배�
 
 ### CIF Add-on 액세스
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip 파일에는 CIF Add-on이 Sling Feature Archive로 포함되어 있지만 AEM 패키지가 아닙니다. SDK 목록에 대한 액세스는 Cloud Service 라이선스로 AEM이 있는 경우에만 제한됩니다.
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip 파일에는 CIF Add-on이 Sling **Feature Archive**&#x200B;로 들어 있으며 AEM 패키지가 아닙니다. SDK 목록에 대한 액세스는 Cloud Service 라이선스로 AEM이 있는 경우에만 제한됩니다.
 
 >[!TIP]
 >
@@ -59,7 +61,7 @@ Cloud Service SDK로 AEM을 사용하는 로컬 CIF Add-on 개발의 경우 다�
 3. Create a `crx-quickstart/install` folder
 4. CIF Add-On의 올바른 Sling Feature 아카이브 파일을 `crx-quickstart/install` 폴더에 복사합니다.
 
-   CIF Add-on zip 파일에는 두 개의 Sling 기능 아카이브 `.far` 파일이 포함되어 있습니다. Cloud Service SDK로 로컬 AEM을 실행하는 방법에 따라 AEM Author 또는 AEM Publish에 올바른을 사용해야 합니다.
+   CIF Add-on zip 파일에는 두 개의 Sling 기능 아카이브 `.far` 파일이 포함되어 있습니다. 로컬 AEM을 Cloud Service SDK로 실행하려는 방법에 따라 AEM 작성자 또는 AEM 게시물에 올바른을 사용해야 합니다.
 
 5. Magento GraphQL 종단점을 `COMMERCE_ENDPOINT` 보유하는 로컬 OS 환경 변수를 만듭니다.
 
