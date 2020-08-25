@@ -2,7 +2,7 @@
 title: 이제 사용되지 않는 기능과 제거된 기능
 description: 클라우드 서비스로서의 Adobe Experience Manager의 이제 사용되지 않는 기능과 제거된 기능에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | 기능 | 사용되지 않는 기능 | 대체 |
 | ------------ | ------------------ | ----------- |
 | 자산 | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로우입니다. | 이제 자산 수집은 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
-| 자산 | 자산을 AEM에 바로 업로드합니다. [이제 사용하지 않는 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 자세한 내용은 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)를 참조하십시오. |
+| 자산 | 자산을 AEM에 바로 업로드합니다. [이제 사용하지 않는 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 자세한 내용은 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
 | 자산 | ImageMagick와 같은 명령줄 도구 호출을 포함하여 [ 워크플로우의 ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)특정 워크플로우 단계`DAM Asset Update`는 지원되지 않습니다. | [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로우에 대한 대체 기능을 제공합니다. 사용자 지정 처리에는 [사후 처리 워크플로우](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
 | 자산 | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
 
