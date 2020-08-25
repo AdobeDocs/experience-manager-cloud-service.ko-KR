@@ -3,9 +3,9 @@ sub-product: 클라우드 서비스로서의 AEM Assets
 user-guide-title: 클라우드 서비스로서의 AEM Assets
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '409'
 ht-degree: 96%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 96%
    + [스마트 태그 구성](smart-tags-configuration.md)
    + [다국어 자산 및 자산 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
-   + [자산 편집기 확장](extend-asset-editor.md)
    + [자산 HTTP API](mac-api-assets.md)
    + [AEM Assets HTTP API의 컨텐츠 조각 지원](assets-api-content-fragments.md)
    + [연결된 자산](use-assets-across-connected-assets-instances.md)
