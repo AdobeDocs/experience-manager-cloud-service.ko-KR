@@ -1,8 +1,8 @@
 ---
-title: Cloud Service으로 Adobe Experience Manager 에셋의 주목할 만한 변경 사항
-description: Adobe Experience Manager 6.5와 비교하여 AEM Cloud Service의 Adobe Experience Manager 자산에 대한 주목할 만한 변경 사항.
+title: Cloud Service의 Adobe Experience Manager 에셋의 주목할 만한 변화
+description: Adobe Experience Manager 6.5에 비해 AEM Cloud Service의 Adobe Experience Manager 에셋에 대한 주목할 만한 변화.
 translation-type: tm+mt
-source-git-commit: 60f11cd86ecfeb47a46f9809d8ae9f1c45a4a25f
+source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 15%
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Cloud Service의 Adobe Experience Manager은 AEM 프로젝트를 관리할 수 있는 새로운 기능과 다양한 기능을 제공합니다. 그러나 Cloud Service에 비해 온-프레미스 또는 Adobe 관리 서비스의 Experience Manager 자산 간에 Experience Manager과 많은 차이점이 있습니다. 이 문서에서는 자산 기능에 대한 중요한 차이점을 설명합니다.
+Cloud Service으로 자리매김한 Adobe Experience Manager은 AEM 프로젝트를 관리할 수 있는 다양한 새로운 기능과 가능성을 제공합니다. 그러나 Cloud Service에 비해 온-프레미스 또는 Adobe 관리 서비스의 Experience Manager 자산 간에 Experience Manager과 많은 차이점이 있습니다. 이 문서에서는 자산 기능에 대한 중요한 차이점을 설명합니다.
 
 Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니다.
 
@@ -22,7 +22,7 @@ Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니�
 
 >[!NOTE]
 >
->이 문서에서는 AEM Assets의 주목할 만한 변경 사항을 집중적으로 설명합니다. AEM에 대한 Cloud Service 및 기타 모듈에서의 일반적인 변경 사항은 다음을 참조하십시오.
+>이 문서에서는 AEM Assets의 주목할 만한 변경 사항을 집중적으로 다룹니다. AEM에 대한 Cloud Service 및 기타 모듈에서의 일반적인 변경 사항은 다음을 참조하십시오.
 >
 >* [클라우드 서비스로서의 Adobe Experience Manager 소개](/help/overview/introduction.md)
 >* [클라우드 서비스로서의 AEM에 대한 개요 - 새로운 기능 및 다른 기능](/help/overview/what-is-new-and-different.md)
@@ -38,7 +38,7 @@ Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니�
 
 * Experience Manager은 자산 처리를 위해 업로드 및 다운로드 및 자산 마이크로서비스에 직접 이진 액세스 원칙을 사용합니다. 자산 섭취 [개요를 참조하십시오](/help/assets/asset-microservices-overview.md).
    * 직접 바이너리 액세스 [를 사용하여 에셋 업로드](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
-   * 자세한 내용은 [직접 바이너리 업로드 프로토콜 및 API를 참조하십시오](/help/assets/developer-reference-material-apis.md#overview-binary-upload).
+   * 자세한 내용은 [직접 바이너리 업로드 프로토콜 및 API를 참조하십시오](/help/assets/developer-reference-material-apis.md#upload-binary).
 * 이전 AEM 버전의 기본 워크플로우 **[!UICONTROL DAM 자산 업데이트]**&#x200B;는 이제 사용할 수 없습니다. 대신 에셋 마이크로서비스는 대부분의 기본 에셋 처리(변환, 메타데이터 추출, 색인화를 위한 텍스트 추출)를 포괄하는 확장 가능하고 쉽게 사용할 수 있는 서비스를 제공합니다.
    * 에셋 [마이크로서비스 구성 및 사용 참조](/help/assets/asset-microservices-configure-and-use.md)
    * 처리 중에 사용자 정의된 워크플로우 단계를 [사용하려면 사후 처리 워크플로우를](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 사용할 수 있습니다.
