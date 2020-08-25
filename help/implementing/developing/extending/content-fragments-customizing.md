@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 사용자 지정 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 translation-type: tm+mt
-source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 3%
 
 ---
@@ -12,11 +12,15 @@ ht-degree: 3%
 
 # 컨텐츠 조각 사용자 지정 및 확장{#customizing-and-extending-content-fragments}
 
-Adobe Experience Manager 내에서 Cloud Service으로 컨텐츠 조각은 표준 자산을 확장합니다. see:
+Cloud Service으로 Adobe Experience Manager 내에서 컨텐츠 조각은 표준 자산을 확장합니다.see:
 
 * [컨텐츠 조각 만들기 및 관리](/help/assets/content-fragments/content-fragments.md) 및 컨텐츠 조각으로 [페이지](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 작성및 관리를 참조하십시오.
 
-* [자산 관리](/help/assets/manage-digital-assets.md) 및 [자산 편집기](/help/assets/extend-asset-editor.md) 사용자 지정 및 확장을 참조하십시오.
+* [자산 관리를 참조하십시오](/help/assets/manage-digital-assets.md) .
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## 아키텍처 {#architecture}
 
@@ -29,7 +33,7 @@ Adobe Experience Manager 내에서 Cloud Service으로 컨텐츠 조각은 표�
 개별 컨텐츠 조각은 컨텐츠 조각 모델을 기반으로 합니다.
 
 * 컨텐츠 조각 모델은 컨텐츠 조각을 만들 때 해당 구조를 정의합니다.
-* 조각이 모델을 참조합니다. 따라서 모델의 변경 사항이 종속 조각에 영향을 줄 수/있을 것입니다.
+* 조각이 모델을 참조합니다.따라서 모델의 변경 사항이 종속 조각에 영향을 줄 수/있을 것입니다.
 * 모델은 데이터 유형을 구성합니다.
 * 새 변형 등을 추가하는 함수는 해당 조각을 업데이트해야 합니다.
 
@@ -39,11 +43,11 @@ Adobe Experience Manager 내에서 Cloud Service으로 컨텐츠 조각은 표�
 
    >[!CAUTION]
    >
-   >기존 컨텐츠 조각 모델을 변경하면 종속 조각에 영향을 줄 수 있습니다. 이렇게 하면 해당 조각에 고아 속성이 생길 수 있습니다.
+   >기존 컨텐츠 조각 모델을 변경하면 종속 조각에 영향을 줄 수 있습니다.이렇게 하면 해당 조각에 고아 속성이 생길 수 있습니다.
 
 ### 사이트와 에셋 통합 {#integration-of-sites-with-assets}
 
-CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
+CFM(Content Fragment Management)은 다음과 같은 AEM Assets의 일부입니다.
 
 * 콘텐츠 조각은 자산입니다.
 * 기존 자산 기능을 사용합니다.
@@ -64,11 +68,9 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
    * 요소 데이터는 마스터 하위 노드 아래에 저장됩니다.
       `jcr:content/data/master`
 
-   * 변형은 변형의 이름을 전달하는 하위 노드 아래에 저장됩니다.
-예: `jcr:content/data/myvariation`
+   * 변형은 변형의 이름을 전달하는 하위 노드 아래에 저장됩니다.예: `jcr:content/data/myvariation`
 
-   * 각 요소의 데이터는 해당 하위 노드에 요소 이름이 있는 속성으로 저장됩니다.
-예: 요소의 컨텐츠 `text` `text` 가 `jcr:content/data/master`
+   * 각 요소의 데이터는 해당 하위 노드에 요소 이름이 있는 속성으로 저장됩니다.예: 요소의 컨텐츠 `text` `text` 가 `jcr:content/data/master`
 
 * 메타데이터 및 관련 컨텐츠는 아래 `jcr:content/metadata`에 저장됩니다. 제목 및 설명은 일반 메타데이터로 간주되지 않고 
 `jcr:content`
@@ -89,7 +91,7 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
 * CFM(Content Fragment Management) 기능은 자산 코어를 기반으로 구축됩니다.
 
-* CFM은 카드/열/목록 보기의 항목에 대한 자체 구현을 제공합니다. 이러한 플러그인을 기존 자산 컨텐츠 렌더링 구현에 연결합니다.
+* CFM은 카드/열/목록 보기의 항목에 대한 자체 구현을 제공합니다.이러한 플러그인을 기존 자산 컨텐츠 렌더링 구현에 연결합니다.
 
 * 콘텐츠 조각에 맞게 여러 자산 구성 요소가 확장되었습니다.
 
@@ -99,13 +101,13 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 >
 >컨텐츠 [조각 구성 요소는 핵심 구성 요소의 일부입니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html). 자세한 내용은 [핵심 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) 개발을 참조하십시오.
 
-컨텐츠 조각은 다른 자산 유형처럼 AEM 페이지에서 참조할 수 있습니다. AEM에서는 페이지에 컨텐츠 조각을 포함할 수 있는 **[구성 요소인 컨텐츠 조각 핵심 구성 요소를](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html)**제공합니다[](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). 이 컨텐츠 조각**[핵심 구성 요소를](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** 확장할 수도 있습니다.
+컨텐츠 조각은 다른 자산 유형처럼 AEM 페이지에서 참조할 수 있습니다. AEM은 페이지에 컨텐츠 조각을 **[포함할 수 있는](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html)** 구성 요소인 컨텐츠 조각 핵심 구성 요소를 [제공합니다](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). 이 컨텐츠 조각 **[핵심 구성 요소를](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** 확장할 수도 있습니다.
 
-* 구성 요소는 `fragmentPath` 속성을 사용하여 실제 컨텐츠 조각을 참조합니다. 이 `fragmentPath` 속성은 다른 자산 유형의 비슷한 속성과 동일한 방식으로 처리됩니다. 예를 들어 컨텐츠 조각을 다른 위치로 이동할 경우
+* 구성 요소는 `fragmentPath` 속성을 사용하여 실제 컨텐츠 조각을 참조합니다. 이 `fragmentPath` 속성은 다른 자산 유형의 비슷한 속성과 동일한 방식으로 처리됩니다.예를 들어 컨텐츠 조각을 다른 위치로 이동할 경우
 
 * 구성 요소를 사용하면 표시할 변형을 선택할 수 있습니다.
 
-* 또한 여러 단락을 선택하여 출력을 제한할 수 있습니다. 예를 들어 다중 열 출력에 사용할 수 있습니다.
+* 또한 여러 단락을 선택하여 출력을 제한할 수 있습니다.예를 들어 다중 열 출력에 사용할 수 있습니다.
 
 * 구성 요소는 중간 컨텐츠를 허용합니다.
 
@@ -113,7 +115,7 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
    * 중간 컨텐츠의 경우 다음을 수행해야 합니다.
 
-      * 불완전한 언급의 가능성을 알고 있다. 중간 컨텐츠(페이지를 작성할 때 추가됨)는 옆에 배치된 단락에 대해 고정 관계가 없으며 중간 컨텐츠의 위치가 상대 위치를 잃기 전에 새 단락(컨텐츠 조각 편집기에서)을 삽입하십시오
+      * 불완전한 언급의 가능성을 알고 있다.중간 컨텐츠(페이지를 작성할 때 추가됨)는 옆에 배치된 단락에 대해 고정 관계가 없으며 중간 컨텐츠의 위치가 상대 위치를 잃기 전에 새 단락(컨텐츠 조각 편집기에서)을 삽입하십시오
 
       * 추가 매개 변수(예: 변형 및 단락 필터)를 고려하여 페이지에서 렌더링되는 내용을 구성합니다.
 
@@ -133,16 +135,16 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
    컨텐츠 조각은 AEM 번역 워크플로우와 완전히 통합됩니다. 건축적 수준에서, 이것은 다음을 의미한다:
 
-   * 컨텐츠 조각의 개별 변환은 실제로 개별 조각입니다. 예를 들면 다음과 같습니다.
+   * 컨텐츠 조각의 개별 변환은 실제로 개별 조각입니다.예를 들면 다음과 같습니다.
 
-      * 그들은 다른 언어 루트 아래 위치한다. 관련 언어 루트 아래에서 동일한 상대 경로를 공유합니다.
+      * 그들은 다른 언어 루트 아래 위치한다.관련 언어 루트 아래에서 동일한 상대 경로를 공유합니다.
 
          `/content/dam/<path>/en/<to>/<fragment>`
 
          vs.
 
          `/content/dam/<path>/de/<to>/<fragment>`
-   * 규칙 기반 경로 외에도 컨텐츠 조각의 다른 언어 버전 간에 더 이상 연결되지 않습니다. 언어 변형을 탐색하는 수단을 제공하지만 두 개의 개별 조각으로 처리됩니다.
+   * 규칙 기반 경로 외에도 컨텐츠 조각의 다른 언어 버전 간에 더 이상 연결되지 않습니다.언어 변형을 탐색하는 수단을 제공하지만 두 개의 개별 조각으로 처리됩니다.
    >[!NOTE]
    >
    >AEM 번역 워크플로우는 다음과 같이 작동합니다 `/content`.
@@ -164,7 +166,7 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
 ## 컨텐츠 조각 관리 API - 서버측 {#the-content-fragment-management-api-server-side}
 
-서버측 API를 사용하여 컨텐츠 조각에 액세스할 수 있습니다. see:
+서버측 API를 사용하여 컨텐츠 조각에 액세스할 수 있습니다.see:
 
 [com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
@@ -182,7 +184,7 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
    이 인터페이스는 다음 방법을 제공합니다.
 
-   * 기본 데이터 관리(예: 이름 가져오기; get/set title/description)
+   * 기본 데이터 관리(예: 이름 가져오기;get/set title/description)
    * 메타 데이터 액세스
    * 액세스 요소:
 
@@ -238,9 +240,9 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
 * `ContentFragment` 을(를) 다음과 같이 적용할 수 있습니다.
 
-   * `Resource` - 기본 Sling 리소스; 기본 개체를 `Resource` 직접 업데이트하려면 개체를 다시 `ContentFragment` 구성해야 합니다.
+   * `Resource` - 기본 Sling 리소스;기본 개체를 `Resource` 직접 업데이트하려면 개체를 다시 `ContentFragment` 구성해야 합니다.
 
-   * `Asset` - 컨텐츠 조각을 나타내는 DAM `Asset` 추상화 를 `Asset` 직접 업데이트하려면 개체를 다시 `ContentFragment` 구성해야 합니다.
+   * `Asset` - 컨텐츠 조각을 나타내는 DAM `Asset` 추상화를 `Asset` 직접 업데이트하려면 개체를 다시 `ContentFragment` 구성해야 합니다.
 
 * `ContentElement` 을(를) 다음과 같이 적용할 수 있습니다.
 
@@ -288,14 +290,14 @@ CFM(컨텐츠 조각 관리)은 다음과 같은 AEM Assets의 일부입니다.
 
 사용자가 편집기에서 컨텐츠 조각을 열면 편집 세션이 시작됩니다. 사용자가 [저장] 또는 [ **취소]를 선택하여 편집기를 떠나면 편집 세션이** 끝납니다 ****.
 
-기술적으로 모든 편집 작업은 다른 모든 AEM 편집 작업처럼 *라이브* 컨텐츠에서 수행됩니다. 편집 세션이 시작되면 편집되지 않은 현재 상태의 버전이 만들어집니다. 사용자가 편집을 취소하면 해당 버전이 복원됩니다. 사용자가 [ **저장**]을 클릭하는 *경우 모든 편집 작업이* 라이브컨텐츠에서 실행되므로 모든 변경 사항이 이미 유지됩니다. 또한 **저장을** 클릭하면 일부 백그라운드 처리가 트리거됩니다(전체 텍스트 검색 정보 만들기 및/또는 혼합 미디어 자산 처리).
+기술적으로 모든 편집 작업은 다른 AEM 편집 작업처럼 *라이브* 컨텐츠에서 수행됩니다. 편집 세션이 시작되면 편집되지 않은 현재 상태의 버전이 만들어집니다. 사용자가 편집을 취소하면 해당 버전이 복원됩니다. 사용자가 [ **저장**]을 클릭하는 *경우 모든 편집 작업이* 라이브컨텐츠에서 실행되므로 모든 변경 사항이 이미 유지됩니다. 또한 **저장을** 클릭하면 일부 백그라운드 처리가 트리거됩니다(전체 텍스트 검색 정보 만들기 및/또는 혼합 미디어 자산 처리).
 
-첨단 케이스에 대한 몇 가지 안전 조치가 있습니다. 예를 들어 사용자가 편집 세션을 저장하거나 취소하지 않고 편집기를 탈퇴하려고 할 경우 또한 주기적인 자동 저장을 사용하여 데이터 손실을 방지할 수 있습니다.
+첨단 케이스에 대한 몇 가지 안전 조치가 있습니다.예를 들어 사용자가 편집 세션을 저장하거나 취소하지 않고 편집기를 탈퇴하려고 할 경우 또한 주기적인 자동 저장을 사용하여 데이터 손실을 방지할 수 있습니다.
 두 사용자가 동일한 컨텐츠 조각을 동시에 편집할 수 있으므로 다른 변경 사항을 덮어쓸 수 있습니다. 이를 방지하려면 조각에 DAM 관리의 *체크아웃* 작업을 적용하여 컨텐츠 조각을 잠가야 합니다.
 
 ## 예 {#examples}
 
-### 예: 기존 컨텐츠 조각 액세스 {#example-accessing-an-existing-content-fragment}
+### 예:기존 컨텐츠 조각 액세스 {#example-accessing-an-existing-content-fragment}
 
 이를 위해 API를 나타내는 리소스를 다음과 같은 용도로 적용할 수 있습니다.
 
@@ -313,7 +315,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### 예: 새 컨텐츠 조각 만들기 {#example-creating-a-new-content-fragment}
+### 예:새 컨텐츠 조각 만들기 {#example-creating-a-new-content-fragment}
 
 프로그래밍 방식으로 새 컨텐츠 조각을 만들려면 모델 리소스에서`FragmentTemplate` 채택된 조각을 사용해야 합니다.
 
@@ -325,7 +327,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### 예: 자동 저장 간격 지정 {#example-specifying-the-auto-save-interval}
+### 예:자동 저장 간격 지정 {#example-specifying-the-auto-save-interval}
 
 구성 관리자(ConfMgr)를 사용하여 [자동 저장 간격](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions) (초 단위)을 정의할 수 있습니다.
 
@@ -333,9 +335,9 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 * 속성 이름: `autoSaveInterval`
 * 유형: `Long`
 
-* 기본값: `600` 10분) this is defined on `/libs/settings/dam/cfm/jcr:content`
+* 기본값: `600` 10분)this is defined on `/libs/settings/dam/cfm/jcr:content`
 
-자동 저장 간격을 5분으로 설정하려면 노드에서 속성을 정의해야 합니다. 예를 들면 다음과 같습니다.
+자동 저장 간격을 5분으로 설정하려면 노드에서 속성을 정의해야 합니다.예를 들면 다음과 같습니다.
 
 * 노드: `/conf/global/settings/dam/cfm/jcr:content`
 * 속성 이름: `autoSaveInterval`
