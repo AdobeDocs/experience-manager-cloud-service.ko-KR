@@ -2,9 +2,9 @@
 title: 코드 리팩토링 툴을 위한 통합 경험
 description: 코드 리팩토링 툴을 위한 통합 경험
 translation-type: tm+mt
-source-git-commit: c00b10b4d564e05099740b9ff991624db4f37a3d
+source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # 코드 리팩토링 툴을 위한 통합 경험 {#unified-experience}
 
-고객과의 상호 작용 지점이 서로 다른 여러 툴을 사용하면 일관된 경험을 제작할 수 있을 뿐만 아니라 툴 사용의 복잡성도 높일 수 있습니다. 각 툴의 설치, 설정 및 실행 요구 사항은 서로 다릅니다.
+코드 리팩토링용 통합 경험 툴은 AEM을 디스패처 파일, 코드 및 저장소에서 작동하는 Cloud Service 코드 리팩토링 툴로 실행하기 위한 경험을 제공합니다.
+
+이 도구를 사용하면 설치, 설정 및 실행 측면에서 각기 다른 실행 요구 사항이 있기 때문에 코드 리팩토링 도구를 사용하는 복잡성이 줄어듭니다.
 
 ## 이점 {#benefits}
 
@@ -26,9 +28,12 @@ ht-degree: 0%
 
 * 플러그인에 새 도구 추가와 같은 새로운 도구의 추가 작업을 간소화하려면 개발자를 위한 새로운 명령을 추가하고 사용자를 위한 간단한 플러그인 업데이트가 필요합니다. 따라서 더 많은 부가 가치를 제공하는 경험을 일관되게 유지할 수 있습니다.
 
-### 애플리케이션 디자인 이해
+## 플러그인 이해 {#understanding-plugin}
 
-이 도구는 모든 코드 리팩토링 도구를 사용자에게 일관된 사용자 경험을 제공하기 위해 노출되는 하나의 node.js 응용 프로그램 `aio-cli plugin` 으로 통합합니다.
+고객 `aio-cli-plugin-aem-cloud-service-migration` 의 로컬 시스템에서 고객 코드, 저장소 구조 또는 구성을 재구성합니다. 이 페이지에서는 통합 경험에 대한 자세한 요구 사항과 디자인 결정을 캡처합니다.
+커뮤니티에서 맞춤형 사용 사례를 확장할 수 있는 오픈 소스로 제공됩니다.
+
+이 도구는 모든 코드 리팩토링 도구를 사용자에게 일관된 사용자 경험을 제공하기 위해 노출되는 하나의 node.js 응용 프로그램 `aio-cli plugin` 으로 통합합니다. 이 플러그인은 고객의 로컬 코드 베이스를 스캔하고 AEM을 Cloud Service 호환 코드, 구성 및 패키지로 만들어 Cloud Service 환경에 배포할 수 있습니다.
 
 The plugin consists of two main parts:
 
@@ -44,16 +49,12 @@ The plugin consists of two main parts:
 
    * 요약 보고서를 만들기 위해 마이그레이션 중에 수행한 작업을 일관되게 기록합니다.
 
-## Using the Plugin {#using-plugin}
-
-고객 `aio-cli-plugin-aem-cloud-service-migration` 의 로컬 시스템에서 고객 코드, 저장소 구조 또는 구성을 재구성합니다. 이 페이지에서는 통합 경험에 대한 자세한 요구 사항과 디자인 결정을 캡처합니다.
-커뮤니티에서 맞춤형 사용 사례를 확장할 수 있는 오픈 소스로 제공됩니다.
-
 ## 사용 가능 {#availability}
 
-이 방법을 설치하고 사용할 수 있습니다(현재 발송자 변환기와 `aio-cli-plugin-aem-cloud-service-migration` `aio-cli` 통합된 경우에만).
+를 설치하고 사용할 수 `aio-cli-plugin-aem-cloud-service-migration` 있습니다 `aio-cli`.
 
-Git 리소스 [를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) to learn about the usage and how you can contribute for this tool.
+>[!NOTE]
+>현재 이 도구는 Dispatcher Converter에만 통합되어 있습니다.
 
-Github에서 The plugin code has been open source.
+Git 리소스 [를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) to learn about the usage and how you can contribute for this plugin code that is open sources in GitHub.
 
