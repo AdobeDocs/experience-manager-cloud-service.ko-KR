@@ -2,7 +2,7 @@
 title: 코드 리팩토링 툴을 위한 통합 경험
 description: 코드 리팩토링 툴을 위한 통합 경험
 translation-type: tm+mt
-source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
+source-git-commit: 9ef0681f93c8c25a1e5115cccb987d2db32c318e
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 이 도구를 사용하면 설치, 설정 및 실행 측면에서 각기 다른 실행 요구 사항이 있기 때문에 코드 리팩토링 도구를 사용하는 복잡성이 줄어듭니다.
 
-![이미지](/help/move-to-cloud-service/assets/unified-1.png)
+![이미지](/help/move-to-cloud-service/assets/unified-one.png)
 
 ## 이점 {#benefits}
 
