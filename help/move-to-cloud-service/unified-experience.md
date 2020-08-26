@@ -2,7 +2,7 @@
 title: 코드 리팩토링 툴을 위한 통합 경험
 description: 코드 리팩토링 툴을 위한 통합 경험
 translation-type: tm+mt
-source-git-commit: 03434343829e1a1fb95256a607619b55626c6afc
+source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -30,8 +30,8 @@ The plugin consists of two main parts: `aio-cli-plugin-aem-cloud-service-migrati
 
 * **사용자 인터페이스**
 
-   * `aio-cli` 명령을 사용하여 하나 이상의 코드 리팩토링 도구 실행(순차적으로 실행할 도구 연결 사용)
-   * `config.yaml` 필요한 입력 매개 변수를 사용하는 방법
+   * `aio-cli` 명령을 사용하여 하나 이상의 코드 리팩토링 도구를 실행합니다(순차적으로 실행할 도구 연결).
+   * `config.yaml` 필요한 입력 매개 변수를 사용합니다.
 
 * **기본 코드 리팩토링 도구 세트**
 
@@ -43,7 +43,7 @@ The plugin consists of two main parts: `aio-cli-plugin-aem-cloud-service-migrati
 
 ## 사용 가능 {#availability}
 
-Git 리소스 [를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) to learn about the usage and how you can contribute for this plugin code that is open sources in GitHub.
+Git 리소스 [를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) to learn about the usage and how you can contribute to this plugin code that is open source in GitHub.
 
 >[!NOTE]
 >현재 Dispatcher Converter만 플러그인과 통합되었습니다.
