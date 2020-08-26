@@ -361,7 +361,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
   </tr>
   <tr>
    <td><strong>선명하게 하기 유형</strong></td>
-   <td><p>[ <strong>없음</strong>], <strong>선명</strong>또는 <strong>언샵 마스크]를</strong>선택합니다. </p>
+   <td><p>[ <strong>없음</strong>], <strong>선명</strong>또는 <strong>언샵 마스크를</strong>선택합니다. </p>
     <ul>
      <li>[없음] <strong>을 선택하여</strong> 선명 효과를 비활성화합니다.</li>
      <li>모든 크기 <strong>가 </strong>수행된 후 이미지에 기본 선명하게 하기 필터를 적용하려면 선명 효과를 선택합니다. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </li>
