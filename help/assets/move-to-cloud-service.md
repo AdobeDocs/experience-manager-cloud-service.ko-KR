@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager 6.x에서 클라우드 서비스로 마이그레이션
-description: Adobe Experience Manager 6.x에서 클라우드 서비스로 마이그레이션
+title: Adobe Experience Manager 6.x에서 Experience Manager으로 마이그레이션합니다.
+description: Adobe Experience Manager 6.x에서 Experience Manager으로 마이그레이션합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
 workflow-type: tm+mt
-source-wordcount: '28'
+source-wordcount: '36'
 ht-degree: 0%
 
 ---
