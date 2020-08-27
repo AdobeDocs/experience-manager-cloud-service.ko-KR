@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager 자산
 description: 클라우드 서비스로서의 Adobe Experience Manager 자산 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 95%
+source-wordcount: '347'
+ht-degree: 90%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 95%
 | [보안 사용 안내서](/help/security/home.md) | 클라우드 서비스로서의 Experience Manager에 대한 중요 보안 항목에 대해 알아봅니다. |
 | [온보딩](/help/onboarding/home.md) | 클라우드 서비스로서의 Experience Manager를 시작하여 중요한 데이터에 액세스하고 데이터를 보호합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | 클라우드 서비스로서의 Experience Manager 사이트를 제작 및 관리하는 방법을 이해합니다. |
-| [클라우드 서비스로서 AEM으로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
+| [Cloud Service으로 Experience Manager 이동](/help/move-to-cloud-service/home.md) | Experience Manager으로 전환 과정을 Cloud Service으로 파악합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | 클라우드 서비스로서의 Adobe Experience Manager를 사용자 지정, 개발 및 배포할 수 있습니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | 클라우드 서비스로서의 Experience Manager에 커넥터를 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 클라우드 서비스로서의 Experience Manager가 수행하는 백엔드 작업에 대해 알아봅니다. |
