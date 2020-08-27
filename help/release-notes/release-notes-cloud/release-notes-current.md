@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.8.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.8.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
+source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1037'
 ht-degree: 6%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 6%
 
 * 이제 브랜드 포털에서 기본 및 고품질 PDF 문서 미리 보기를 사용할 수 있습니다. 문서 [뷰어 개요를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* 이제 캐시를 무효화하는 사용자 인터페이스를 사용할 수 있습니다 [!DNL Dynamic Media].
+* 이제 AEM [!DNL Dynamic Media] 에서 직접 CDN(Content Delivery Network) 캐시를 Cloud Service(사용과 반대로)로 무효화하여 몇 시간 내에 최신 자산이 제공되도록 할 수 [!DNL Dynamic Media Classic]있습니다. 다이내믹 [미디어를 통해 CDN 캐시 무효화를 참조하십시오.](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 
 * 향상된 액세스 가능성 지원이 의 사용자 인터페이스 컨트롤, 탐색, 검색 및 검색 경험에 추가되었습니다 [!DNL Assets].
 
