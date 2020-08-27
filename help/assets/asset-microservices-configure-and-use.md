@@ -1,11 +1,11 @@
 ---
 title: 에셋 처리를 위한 에셋 마이크로서비스 구성 및 사용
-description: 클라우드 기반의 에셋 마이크로 서비스를 구성 및 사용하여 에셋을 규모에 맞게 처리하는 방법을 살펴볼 수 있습니다.
+description: 클라우드 기반의 자산 마이크로 서비스를 구성 및 사용하여 자산을 규모에 맞게 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
@@ -13,21 +13,11 @@ ht-degree: 1%
 
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+에셋 마이크로서비스는 클라우드 기반의 애플리케이션(작업자라고도 함)을 사용하여 자산을 확장 가능하고 탄력적으로 처리할 수 있도록 제공합니다. Adobe은 다양한 자산 유형 및 처리 옵션에 대한 최적의 처리를 위해 서비스를 관리합니다.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+에셋 마이크로서비스를 사용하면 이전 버전의 [경우보다 더 많은 포맷을 즉시](/help/assets/file-format-support.md) 포함하는 다양한 유형의 파일을 처리할 수 [!DNL Experience Manager]있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
 
-에셋 마이크로서비스는 클라우드 서비스를 사용하여 에셋을 확장 가능하고 탄력적으로 처리할 수 있습니다. Adobe은 다양한 자산 유형 및 처리 옵션에 대한 최적의 처리를 위해 서비스를 관리합니다.
-
-자산 처리는 기본 설정을 제공하는 **[!UICONTROL 처리]**&#x200B;프로필의 구성에 따라 다르며, 관리자가 보다 구체적인 자산 처리 구성을 추가할 수 있도록 합니다. 관리자는 사용자 정의 옵션을 포함하여 사후 처리 워크플로우의 구성을 만들고 유지 관리할 수 있습니다. 사용자 정의 워크플로우를 통해 확장 및 사용자 정의
-
-에셋 마이크로서비스를 사용하면 이전 버전의 Experience Manager에서 [가능한 것보다 더 많은 포맷을 즉시](/help/assets/file-format-support.md) 포함하는 광범위한 파일 유형을 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다.
+자산 처리는 처리 프로필의 구성에 **[!UICONTROL 따라 다릅니다]**. Experience Manager은 기본 설정을 제공하며 관리자가 보다 구체적인 자산 처리 구성을 추가할 수 있도록 해줍니다. 관리자는 사용자 정의 옵션을 포함하여 포스트 처리 워크플로우의 구성을 작성, 유지 관리 및 수정합니다. 워크플로우를 맞춤화하면 개발자는 기본 솔루션을 확장할 수 있습니다.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -70,7 +60,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 
 [!DNL Experience Manager] 사용자의 요구 사항에 따라 일반 포맷에 대한 보다 구체적인 표현물을 생성할 수 있는 기능을 제공합니다. 관리자는 추가 [!UICONTROL 처리] 프로필을 만들어 이러한 변환을 쉽게 만들 수 있습니다. 그런 다음 사용자는 특정 폴더에 하나 이상의 사용 가능한 프로파일을 할당하여 추가 처리를 완료합니다. 예를 들어, 추가 처리에서는 웹, 모바일 및 태블릿용 변환을 생성할 수 있습니다. 다음 비디오에서는 처리 프로필을 만들고 적용하는 방법 [!UICONTROL 과] 만들어진 표현물에 액세스하는 방법을 보여 줍니다.
 
-* **변환 너비 및 높이**:변환 폭 및 높이 사양은 생성된 출력 이미지의 최대 크기를 제공합니다. 에셋 마이크로서비스는 폭 및 높이가 각각 지정된 폭과 높이보다 크지 않은 가장 큰 변환을 생성하려고 시도합니다. 종횡비는 그대로 유지되며 원본과 동일합니다. 비어 있는 값은 자산 처리가 원본 픽셀 크기를 가정함을 의미합니다.
+* **변환 너비 및 높이**:변환 폭 및 높이 사양은 생성된 출력 이미지의 최대 크기를 제공합니다. 에셋 마이크로서비스는 폭 및 높이가 각각 지정된 폭과 높이보다 크지 않은 가장 큰 변환을 생성하려고 시도합니다. 종횡비는 그대로 유지되며 원본과 동일합니다. 비어 있는 값은 자산 처리에서 원본의 픽셀 크기를 가정함을 의미합니다.
 
 * **MIME 형식 포함 규칙**:특정 MIME 유형의 자산이 처리되면 MIME 유형이 먼저 변환 사양에 대해 제외된 MIME 유형 값에 대해 검사됩니다. 해당 목록과 일치하는 경우 자산(차단 목록)에 대해 특정 변환이 생성되지 않습니다. 그렇지 않으면 MIME 유형이 포함된 MIME 유형에 대해 확인되며, MIME 유형이 목록과 일치하면 변환이 생성됩니다(허용 목록).
 
@@ -93,7 +83,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
    * 각 JPEG 변환의 품질(%)
    * 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
 
-   ![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-image.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -158,9 +148,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*그림:서비스[!UICONTROL 매개 변수]필드를 사용하여 사용자 정의 응용 프로그램에 빌드되는 사전 정의된 매개 변수에 추가된 정보를 전달합니다.*
-
-캠페인 이미지가 이 처리 프로필이 적용된 폴더에 업로드되면 이미지는 `Jumanji` 텍스트로 `Arial-BoldMT` 업데이트됩니다.
+*그림:서비스[!UICONTROL 매개 변수]필드를 사용하여 사용자 정의 응용 프로그램에 빌드되는 사전 정의된 매개 변수에 추가된 정보를 전달합니다. 이 예에서 캠페인 이미지가 업로드되면 이미지는`Jumanji`글꼴의 텍스트로`Arial-BoldMT`업데이트됩니다.*
 
 ## 처리 프로필을 사용하여 자산 처리 {#use-profiles}
 
@@ -169,19 +157,20 @@ The following video demonstrates the usefulness and usage of standard profile.
 다음 방법 중 하나를 사용하여 폴더에 처리 프로필을 적용합니다.
 
 * 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**&#x200B;에서 처리 프로필 정의를 선택하고 **** 폴더에 프로필 적용 작업을 사용할 수 있습니다. 특정 폴더로 이동하여 선택한 다음 프로필의 적용을 확인할 수 있는 컨텐츠 브라우저가 열립니다.
-* 사용자는 자산 사용자 인터페이스에서 폴더를 선택하고, **[!UICONTROL 속성]** 작업을 사용하여 폴더 속성 화면을 열고, **[!UICONTROL 처리 프로필]** 탭을 클릭하고, 팝업 목록에서 해당 폴더에 대해 올바른 처리 프로필을 선택할 수 있습니다. 변경 내용을 저장하려면 저장 및 **[!UICONTROL 닫기를 클릭합니다]**.
+* 사용자는 자산 사용자 인터페이스에서 폴더를 선택하고, **[!UICONTROL 속성]** 작업을 사용하여 폴더 속성 화면을 열고, **[!UICONTROL 처리 프로필]** 탭을 클릭하고, 팝업 목록에서 해당 폴더에 적합한 처리 프로필을 선택할 수 있습니다. 변경 내용을 저장하려면 저장 및 **[!UICONTROL 닫기를 클릭합니다]**.
+   ![자산 속성 탭에서 폴더에 처리 프로필 적용](assets/folder-properties-processing-profile.png)
+
+>[!TIP]
+>
+>하나의 처리 프로필만 폴더에 적용할 수 있습니다. 변환을 더 생성하려면 기존 처리 프로필에 변환 정의를 더 추가하십시오.
+
+처리 프로필이 폴더에 적용되면, 이 폴더에 업로드되거나 업데이트되는 모든 새 자산 또는 하위 폴더의 모든 새 자산이 구성된 추가 처리 프로필을 사용하여 처리됩니다. 이 프로세스는 표준 기본 프로필 외에 추가로 사용됩니다.
 
 >[!NOTE]
 >
->하나의 처리 프로필만 특정 폴더에 적용할 수 있습니다. 변환을 더 생성하려면 기존 처리 프로필에 변환 정의를 더 추가하십시오.
+>폴더에 적용된 처리 프로필은 전체 트리에 대해 작동하지만 하위 폴더에 다른 프로필이 적용된 경우 오버로드할 수 있습니다. 에셋이 폴더에 업로드되면 Experience Manager은 포함된 폴더의 속성에 처리 프로필이 있는지 확인합니다. 적용되지 않으면 계층의 상위 폴더에서 적용할 처리 프로필이 확인됩니다.
 
-처리 프로필이 폴더에 적용되면, 이 폴더에 업로드되거나 업데이트되는 모든 새 자산 또는 하위 폴더의 모든 새 자산이 구성된 추가 처리 프로필을 사용하여 처리됩니다. 이 프로세스는 표준 기본 프로필 외에 추가로 사용됩니다. 폴더에 여러 개의 프로필을 적용하는 경우 업로드되거나 업데이트된 에셋은 이러한 각 프로필을 사용하여 처리됩니다.
-
->[!NOTE]
->
->폴더에 적용된 처리 프로필은 전체 트리에 대해 작동하지만 하위 폴더에 다른 프로필이 적용된 경우 오버로드할 수 있습니다. 에셋이 폴더에 업로드되면 Experience Manager은 포함된 폴더의 속성에 처리 프로필이 있는지 확인합니다. 적용되지 않으면 계층의 상위 폴더에서 적용할 처리 프로필이 선택됩니다.
-
-생성된 모든 표현물은 왼쪽 레일의 [!UICONTROL 표현물] 보기에서 사용할 수 있습니다. 자산 미리 보기를 열고 왼쪽 레일을 열어 표현물 보기에 **[!UICONTROL 액세스합니다]** . 특정 자산의 유형이 MIME 유형 포함 규칙과 일치하는 처리 프로필의 특정 변환을 확인하고 액세스할 수 있어야 합니다.
+자산이 처리되었는지 확인하려면 왼쪽 레일의 [!UICONTROL 표현물] 보기에서 생성된 표현물을 미리 봅니다. 자산 미리 보기를 열고 왼쪽 레일을 열어 표현물 보기에 **[!UICONTROL 액세스합니다]** . 특정 자산의 유형이 MIME 유형 포함 규칙과 일치하는 처리 프로필의 특정 변환을 확인하고 액세스할 수 있어야 합니다.
 
 ![추가 표현물](assets/renditions-additional-renditions.png)
 
@@ -238,4 +227,10 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 >* [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)소개
 >* [확장성 및 사용 시기를](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)이해합니다.
 >* [사용자 정의 애플리케이션을 만드는 방법](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
+>* [다양한 사용 사례에 지원되는 MIME 형식입니다](/help/assets/file-format-support.md).
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
