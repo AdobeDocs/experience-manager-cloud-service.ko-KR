@@ -2,7 +2,7 @@
 title: Dynamic Media Classic을 통해 CDN 캐시 무효화
 description: CDN(Content Delivery Network) 캐시 컨텐츠를 무효화할 수 있으므로 캐시 만료가 기다리는 대신 다이내믹 미디어에서 제공하는 자산을 신속하게 업데이트할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: e4822ae72d133bb502bc2c2fa1eb07a625f2a507
+source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 0%
