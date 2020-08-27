@@ -4,9 +4,9 @@ description: 메타데이터의 유형과 메타데이터를 기반으로 에셋
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 기술 메타데이터는 디지털 자산을 처리하고 있지만 수동으로 유지 관리해서는 안 되는 소프트웨어 애플리케이션에 유용합니다. [!DNL Experience Manager Assets] 그리고 기타 소프트웨어는 기술 메타데이터를 자동으로 결정하며 에셋이 수정될 때 메타데이터가 변경될 수 있습니다. 자산의 사용 가능한 기술 메타데이터는 대개 자산의 파일 유형에 따라 달라집니다. 기술 메타데이터의 몇 가지 예는 다음과 같습니다.
 
 * 파일의 크기입니다.
-* 이미지의 크기(높이 및 너비).
+* 이미지의 Dimension(높이 및 너비).
 * 오디오 또는 비디오 파일의 비트 전송률입니다.
 * 이미지의 해상도(세부 수준).
 
@@ -77,14 +77,14 @@ ht-degree: 0%
 
 파일에 메타데이터를 임베드하는 다양한 방법이 있습니다. 다양한 인코딩 표준이 지원됩니다.
 
-* XMP: 추출된 메타데이터 [!DNL Assets] 를 저장소 내에 저장하는 데 사용됩니다.
-* ID3: for audio and video files.
-* Exif: for image files.
-* 기타/레거시: 출처 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]등
+* XMP:추출된 메타데이터 [!DNL Assets] 를 저장소 내에 저장하는 데 사용됩니다.
+* ID3:for audio and video files.
+* Exif:for image files.
+* 기타/레거시:출처 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]등
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)는 모든 메타데이터 관리에 사용되는 개방형 표준 [!DNL Experience Manager Assets] 입니다. 표준은 모든 파일 포맷에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe와 다른 회사는 리치 컨텐츠 모델을 제공하므로 XMP 표준을 지원합니다. XMP 표준과 XMP 사용자 [!DNL Experience Manager Assets] 는 강력한 플랫폼을 갖추고 있으며 자세한 내용은 [XMP를 참조하십시오](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP)은 모든 메타데이터 관리에 사용되는 개방형 표준 [!DNL Experience Manager Assets] 입니다. 표준은 모든 파일 포맷에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe과 다른 회사는 리치 컨텐츠 모델을 제공하면서 XMP standard를 지원합니다. XMP 표준과 PC 사용자는 강력한 플랫폼을 [!DNL Experience Manager Assets] 갖추고 있으며 자세한 내용은 [XMP을 참조하십시오](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -104,7 +104,7 @@ Exif(Exchange) 는 디지털 사진 분야에서 가장 널리 사용되는 메�
 
 Exif의 주요 제한 사항은 BMP, GIF 또는 PNG와 같이 널리 사용되는 몇 가지 이미지 파일 형식이 지원되지 않는다는 것입니다.
 
-Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항이며 수사적 메타데이터 관리를 위해 제한된 용도로 사용됩니다. 이러한 이유로, Exif 속성을 [!DNL Experience Manager Assets] 공통 메타데이터 스키마 [](metadata-schemas.md) 및 XMP에 매핑하는 기능을 제공합니다.
+Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항이며 수사적 메타데이터 관리를 위해 제한된 용도로 사용됩니다. 이러한 이유로, Exif 속성을 [!DNL Experience Manager Assets] 일반적인 메타데이터 스키마 [](metadata-schemas.md) 및 XMP에 매핑하는 기능을 제공합니다.
 
 #### 기타 메타데이터 {#other-metadata}
 
@@ -142,13 +142,23 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
    >
    >단일 값 필드의 경우 추가 모드를 선택하더라도 새 메타데이터는 필드의 기존 값에 추가되지 **[!UICONTROL 않습니다]**.
 
+## 처리 프로필을 사용한 사용자 지정 메타데이터 {#metadata-compute-service}
+
+Cloud Service으로 에셋은 클라우드 기본 서비스를 사용하여 자산에 대한 사용자 정의 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 처리 프로필 [사용 방법을 참조하십시오](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+
+![처리 프로필의 메타데이터 변환](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>하나의 처리 프로필만 폴더에 적용할 수 있습니다. 한 폴더의 자산에 여러 처리를 적용하려면 단일 처리 프로필에 더 많은 옵션을 추가하십시오. 예를 들어 단일 프로필에서는 표현물을 생성하고, 자산을 트랜스코딩하고, 사용자 지정 메타데이터를 생성하는 등의 작업을 할 수 있습니다. 각 작업에 대해 MIME 유형 필터를 적용하여 필요한 파일 형식에 대해 적절한 작업이 트리거되도록 할 수 있습니다.
+
 ## 일괄 메타데이터 업데이트에 대한 제한 구성 {#configlimit}
 
-DOS와 같은 상황을 방지하기 위해 AEM은 Sling 요청에서 지원되는 매개 변수의 수를 제한합니다. 한 번에 많은 자산의 메타데이터를 업데이트할 때 한도에 도달해도 메타데이터가 더 많은 자산에 대해 업데이트되지 않습니다. AEM은 로그에 다음 경고를 생성합니다.
+AEM은 DOS와 같은 상황을 방지하기 위해 Sling 요청에서 지원되는 매개 변수의 수를 제한합니다. 한 번에 많은 자산의 메타데이터를 업데이트할 때 한도에 도달해도 메타데이터가 더 많은 자산에 대해 업데이트되지 않습니다. AEM은 로그에 다음 경고를 생성합니다.
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-제한을 변경하려면 웹 콘솔( **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 콘솔]****[!UICONTROL )에 액세스하고 Apache Sling 웹]** 에서 최대 POST 매개 변수의 값을 **** Maximum POST Parameters의 값을 변경합니다.
+제한을 변경하려면 웹 콘솔( **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**)에 액세스하고 최대 POST 매개 변수 **[!UICONTROL 변경Maximum의 값 변경]** **** Apache Apache Sling 요청 매개 변수 처리OSGi 구성에 액세스합니다.
 
 ## 메타데이터 스키마 {#metadata-schemata}
 
@@ -183,7 +193,7 @@ DOS와 같은 상황을 방지하기 위해 AEM은 Sling 요청에서 지원되�
 * PDF 및 PDF/X.
 * Photoshop 및 psAux - [!DNL Adobe Photoshop].
 
-### 디지털 권한 관리 메타데이터 {#digital-rights-management-metadata}
+### Digital Rights Management 메타데이터 {#digital-rights-management-metadata}
 
 * 참조 - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -205,7 +215,7 @@ DOS와 같은 상황을 방지하기 위해 AEM은 Sling 요청에서 지원되�
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션
 * PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.prismstandard.org)사항.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - 페이징된 텍스트에 대한 XMP 메타데이터
+* `xmpPG` - 페이지 텍스트를 위한 XMP 메타데이터
 
 ### 멀티미디어 관련 메타데이터 {#multimedia-specific-metadata}
 
