@@ -2,10 +2,10 @@
 title: 페이지 버전 사용
 description: 페이지 버전 생성, 비교 및 복원
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 2d5c7ee7866f8334e67a36b120fdb8ad7a34e7f1
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 100%
+source-wordcount: '1510'
+ht-degree: 67%
 
 ---
 
@@ -15,8 +15,14 @@ ht-degree: 100%
 버전 관리를 통해 특정 시점의 페이지 &quot;스냅샷&quot;을 만들 수 있습니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
 
 * 페이지의 버전을 생성합니다.
-* 예를 들어 페이지의 변경을 취소하려면 페이지를 이전 버전으로 복원합니다.
-* 강조 표시된 텍스트와 이미지에 차이점을 보이는 현재 버전의 페이지를 이전 버전과 비교합니다.
+* 하나 이상의 이전 페이지 복원 대상:
+   * 페이지의 변경 사항을 실행 취소합니다.
+   * 삭제된 페이지를 복원합니다.
+   * 트리(지정된 날짜 및 시간)를 복원합니다.
+* 버전 미리 보기
+* 페이지의 현재 버전을 이전 버전과 비교합니다.
+   * 텍스트와 이미지의 차이점이 강조 표시됩니다.
+* 타임워프는 페이지 버전을 사용하여 게시 환경의 상태를 확인합니다.
 
 ## 새 버전 만들기 {#creating-a-new-version}
 
@@ -53,33 +59,104 @@ ht-degree: 100%
 
 새 버전을 나타내기 위해 업데이트된 정보가 포함된 타임라인이 열립니다.
 
-## 페이지 버전으로 복구 {#reverting-to-a-page-version}
+## 버전 복원 {#reinstating-versions}
 
-버전을 만들면 필요할 경우 해당 버전으로 되돌릴 수 있습니다.
+페이지 버전을 만들면 이전 버전을 복원하는 다양한 방법이 있습니다.
+
+* 타임라인 **레일에서 이 버전으로** 되돌리기 [옵션](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+
+   선택한 페이지의 이전 버전을 복원합니다.
+
+* 상단 **작업** 도구 [모음의 복원 옵션](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+
+   * **버전 복원**
+
+      현재 선택된 폴더 내에서 지정된 페이지의 버전을 복원합니다.또한 이전에 삭제한 페이지 복원을 포함할 수 있습니다.
+
+   * **트리 복원**
+
+      지정된 날짜 및 시간으로 전체 트리 버전을 복원합니다.여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
 
 >[!NOTE]
 >
->페이지를 복원할 때, 만들어진 버전은 새 분기의 일부가 됩니다.
+>페이지를 복원할 때 만들어진 버전은 새 분기의 일부가 됩니다.
 >
 >예시:
 >
 >1. 페이지의 버전을 임의로 만듭니다.
 >1. 초기 레이블 및 버전 노드 이름은 1.0, 1.1, 1.2 등이 됩니다.
->1. 첫 번째 버전 즉 1.0을 복원합니다.
+>1. 첫 번째 버전을 복원합니다.예: 1.0
 >1. 다시 새 버전을 만듭니다.
 >1. 생성된 레이블 및 노드 이름은 이제 1.0.0, 1.0.1, 1.0.2 등이 됩니다.
 
 
-이전 버전으로 되돌리기
+### Revert to a Version {#revert-to-a-version}
+
+선택한 **페이지를** 이전 버전으로 되돌리려면:
 
 1. 이전 버전으로 되돌릴 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다 .
 1. **타임라인** 열을 열고, **모두 표시** 또는 **버전**&#x200B;을 선택합니다. 선택한 페이지의 이전 버전이 나열됩니다.
 1. 되돌아갈 버전을 선택합니다. 가능한 옵션이 표시됩니다.
 
-   ![버전 되돌리기](/help/sites-cloud/authoring/assets/versions-revert.png)
+   ![이 버전으로 되돌리기](/help/sites-cloud/authoring/assets/versions-revert.png)
 
 1. **이 버전으로 되돌리기**&#x200B;를 선택합니다. 선택한 버전이 복원되고 타임라인의 정보가 업데이트됩니다.
+
+### 버전 복원 {#restore-version}
+
+이 방법은 현재 폴더 내에서 지정된 페이지의 버전을 복원하는 데 사용할 수 있습니다.이전에 삭제한 페이지 복원을 포함할 수도 있습니다.
+
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. 맨 위 **작업 도구 모음에서****복원** , [버전](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)복원을선택합니다.
+
+   >[!NOTE]
+   >
+   >다음 중 한 가지 경우에 해당됩니다.
+   >* 하위 페이지가 없는 단일 페이지를 선택했습니다.
+   >* 또는 폴더의 모든 페이지에 버전이 없는 경우
+
+   >
+   >해당하는 버전이 없으므로 디스플레이가 비어 있게 됩니다.
+
+1. 사용 가능한 버전이 나열됩니다.
+
+   ![버전 복원 - 폴더의 모든 페이지 목록](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+
+1. 특정 페이지의 경우 RESTORE TO **VERSION** 아래의 드롭다운 선택기를 사용하여 해당 페이지에 필요한 버전을 선택합니다.
+
+   ![버전 복원 - 버전 선택](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+
+1. 기본 디스플레이에서 복원할 필수 페이지를 선택합니다.
+
+   ![버전 복원 - 페이지 선택](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+
+1. 선택한 페이지 **의 선택한 버전에 대해 복원을** 선택하여 *현재* 버전으로 복원합니다.
+
+>[!NOTE]
+>
+>필요한 페이지와 관련 버전을 선택하는 순서는 호환되지 않습니다.
+
+### 트리 복원 {#restore-tree}
+
+이 방법을 사용하여 지정된 날짜 및 시간에 트리 버전을 복원할 수 있습니다.여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
+
+1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. 맨 위 **작업 도구 모음에서**&#x200B;복원 **** , 트리 [복원을](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)선택합니다. 트리의 최신 버전이 표시됩니다.
+
+   ![트리 복원](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+
+1. 최신 버전의 날짜 **에서** 날짜 및 시간 선택기를 사용하여 트리의 다른 버전(복원할 버전)을 선택합니다.
+
+1. 필요에 따라 **보존된 버전이 없는 페이지** 플래그를 설정합니다.
+
+   * 활성(선택) 상태인 경우, 버전이 지정되지 않은 모든 페이지는 유지되며 복원의 영향을 받지 않습니다.
+
+   * 비활성(선택 안 됨)인 경우 버전 관리 트리에 없는 모든 비버전 페이지가 제거되므로
+
+1. 선택한 버전의 트리에서 **복원을** 선택하여 *현재* 버전으로 복원할 수 있습니다.
 
 ## 버전 미리 보기 {#previewing-a-version}
 
