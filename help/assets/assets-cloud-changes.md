@@ -2,10 +2,10 @@
 title: Cloud Service의 Adobe Experience Manager 에셋의 주목할 만한 변화
 description: Adobe Experience Manager 6.5에 비해 AEM Cloud Service의 Adobe Experience Manager 에셋에 대한 주목할 만한 변화.
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 15%
+source-wordcount: '628'
+ht-degree: 14%
 
 ---
 
@@ -48,7 +48,7 @@ Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니�
 
 ## 에셋 마이크로 서비스 개발 및 테스트 {#asset-microservices}
 
-에셋 마이크로서비스는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적으로 처리할 수 있습니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 에셋 마이크로서비스는 ImageMagick과 같은 타사 렌더링 툴과 방법이 필요하지 않고 구성을 단순화하는 동시에 일반적인 파일 유형에 즉시 사용 가능한 기능을 제공합니다. 이전 버전의 Experience Manager에서 [가능한 것보다 더 많은 포맷을 즉시](/help/assets/file-format-support.md) 포함하는 다양한 파일 유형을 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다. 처리 프로필 구성에 대해 ImageMagick의 복잡한 구성을 사용할 [!UICONTROL 수] 없습니다. 또한 비디오 [!DNL Dynamic Media] 의 FFmpeg 트랜스코딩에도 사용합니다.
+에셋 마이크로서비스는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적으로 처리할 수 있습니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 에셋 마이크로서비스는 ImageMagick과 같은 타사 렌더링 툴과 방법이 필요하지 않고 구성을 단순화하는 동시에 일반적인 파일 유형에 즉시 사용 가능한 기능을 제공합니다. 이전 버전의 Experience Manager에서 [가능한 것보다 더 많은 포맷을 즉시](/help/assets/file-format-support.md) 포함하는 다양한 파일 유형을 처리할 수 있습니다. 예를 들어 이전에는 ImageMagick과 같은 타사 솔루션이 필요했던 PSD 및 PSB 포맷의 축소판 추출을 수행할 수 있습니다. 처리 프로필 구성에 대해 ImageMagick의 복잡한 구성을 사용할 [!UICONTROL 수] 없습니다. 비디오 [!DNL Dynamic Media] 를 FFmpeg 트랜스코딩할 때 사용하고 MP4 비디오의 [기본 트랜스코딩에 처리 프로필을 사용합니다](/help/assets/manage-video-assets.md#transcode-video).
 
 에셋 마이크로서비스는 클라우드 관리자에서 관리되는 고객 프로그램 및 환경에서 자동으로 프로비저닝되고 Experience Manager에 연결된 클라우드 기반의 서비스입니다. 개발자는 Experience Manager을 확장하거나 사용자 정의하기 위해 기존 컨텐츠 또는 에셋을 클라우드 환경에서 생성된 변환과 함께 사용하여 에셋을 테스트 및 표시하고 다운로드하여 코드를 확인할 수 있습니다.
 
