@@ -1,28 +1,28 @@
 ---
-title: Brand Portal에서 AEM Assets 구성
+title: 브랜드 포털에서 Cloud Service으로 AEM Assets 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: db5299d353d6a5e46f2d1707379cd6c364531e47
+source-git-commit: 830fd3a61d479a47b03cffc117f7192dd2c740cc
 workflow-type: tm+mt
 source-wordcount: '1664'
-ht-degree: 52%
+ht-degree: 39%
 
 ---
 
 
-# Brand Portal로 AEM Assets 구성 {#configure-aem-assets-with-brand-portal}
+# Configure AEM Assets as a Cloud Service with Brand Portal {#configure-aem-assets-with-brand-portal}
 
-AEM(Adobe Experience Manager) Assets는 Brand Portal 테넌트의 인증을 위한 IMS 토큰을 조달하는 Adobe 개발자 콘솔을 통해 Brand Portal로 구성됩니다.
+Adobe Experience Manager 자산 브랜드 포털을 구성하면 승인된 브랜드 자산을 Adobe Experience Manager 인스턴스로 Cloud Service 자산에서 브랜드 포털에 게시하고 브랜드 포털 사용자에게 배포할 수 있습니다.
 
-**구성 작동 방식**
+**구성 워크플로우**
 
-브랜드 포털에서 AEM Assets을 구성하려면 Adobe 개발자 콘솔뿐만 아니라 AEM Assets 양쪽의 구성이 필요합니다.
+Cloud Service으로 AEM Assets은 Brand Portal 테넌트의 승인을 위해 IMS 토큰을 구입하는 Adobe 개발자 콘솔을 통해 브랜드 포털로 구성됩니다. 여기에는 Adobe 개발자 콘솔뿐만 아니라 AEM Assets에 구성이 필요합니다.
 
-1. AEM Assets에서 IMS 계정을 만들고 공개 인증서(공개 키)를 생성합니다.
+1. AEM Assets에서 IMS(Adobe Identity Management 서비스) 계정을 만들고 공개 키(인증서)를 생성합니다.
 1. Adobe 개발자 콘솔에서 Brand Portal 테넌트(조직)에 대한 프로젝트를 만듭니다.
-1. 프로젝트에서 공개 키로 API를 구성하여 서비스 계정(JWT) 연결을 만듭니다.
-1. 서비스 계정 자격 증명과 JWT 페이로드 정보를 가져옵니다.
+1. 프로젝트 아래에서 공개 키를 사용하여 API를 구성하여 서비스 계정 연결을 만듭니다.
+1. 서비스 계정 자격 증명과 JWT(JSON Web Token) 페이로드 정보를 가져옵니다.
 1. AEM Assets에서 서비스 계정 자격 증명과 JWT 페이로드를 사용하여 IMS 계정을 구성합니다.
 1. AEM Assets에서 IMS 계정 및 브랜드 포털 끝점(조직 URL)을 사용하여 브랜드 포털 클라우드 서비스를 구성합니다.
 1. AEM Assets에서 브랜드 포털에 자산을 게시하여 구성을 테스트합니다.
@@ -37,8 +37,8 @@ AEM(Adobe Experience Manager) Assets는 Brand Portal 테넌트의 인증을 위�
 Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필요합니다.
 
 * Cloud Service 인스턴스로 AEM Assets 실행
-* 브랜드 포털 테넌트 URL.
-* Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
+* 브랜드 포털 테넌트 URL
+* Brand Portal 임차인의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
 
 ## 구성 만들기 {#create-new-configuration}
 
@@ -65,19 +65,16 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. AEM Assets에 로그인합니다.
 
-1. **도구** ![도구](assets/tools.png) 패널에서 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다.
+1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-   ![Adobe IMS 계정 구성 UI](assets/ims-configuration1.png)
 
-1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. 기본적으로 **인증서** 탭이 열립니다.
 
-1. **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지로 리디렉션됩니다. 기본적으로 **인증서** 탭이 열립니다.
+1. 클라우드 솔루션 **[!UICONTROL Adobe Brand Portal]**&#x200B;을 선택합니다.
 
-   클라우드 솔루션 **[!UICONTROL Adobe Brand Portal]**&#x200B;을 선택합니다.
+1. 새 인증서 **[!UICONTROL 만들기]** 확인란을 활성화하고 공개 키에 **대한 별칭을** 지정합니다. 별칭은 공개 키 이름 역할을 합니다.
 
-1. Mark the **[!UICONTROL Create new certificate]** checkbox and specify an **alias** for the certificate. 별칭은 인증서의 이름 역할을 합니다.
-
-1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 그런 다음 대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 클릭하여 공개 인증서를 생성합니다.
+1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![인증서 만들기](assets/ims-config2.png)
 
@@ -89,19 +86,17 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   In the **Account** tab, the Adobe IMS account is created but for that you will need the service account credentials that are generated in Adobe Developer Console. 우선은 이 페이지를 열어 두십시오.
+   [ **계정** ] 탭에서 Adobe 개발자 콘솔에서 생성된 서비스 계정 자격 증명이 필요한 Adobe IMS 계정이 만들어집니다. 우선은 이 페이지를 열어 두십시오.
 
    새 탭을 열고 [Adobe 개발자 콘솔에 서비스 계정(JWT) 연결을 만들어](#createnewintegration) IMS 계정을 구성하기 위한 자격 증명과 JWT 페이로드를 가져옵니다.
 
 ### 서비스 계정(JWT) 연결 만들기 {#createnewintegration}
 
-Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(조직) 수준에서 구성됩니다. API를 구성하면 Adobe 개발자 콘솔에 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 브랜드 포털에서 AEM Assets을 구성하려면 AEM Assets에서 공개 인증서(공개 키)를 생성하고 공개 키를 업로드하여 Adobe 개발자 콘솔에서 자격 증명을 만들어야 합니다. 이 공개 키는 선택한 브랜드 포털 테넌트에 대한 API를 구성하는 데 사용되고 서비스 계정에 대한 자격 증명 및 JWT 페이로드를 생성합니다. 이러한 자격 증명은 AEM Assets에서 IMS 계정을 구성하는 데 추가로 사용됩니다. IMS 계정이 구성되면 AEM Assets에서 브랜드 포털 클라우드 서비스를 구성할 수 있습니다.
+Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(조직) 수준에서 구성됩니다. API를 구성하면 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 브랜드 포털에서 AEM Assets을 구성하려면 AEM Assets에서 공개 인증서(공개 키)를 생성하고 공개 키를 업로드하여 Adobe 개발자 콘솔에서 자격 증명을 만들어야 합니다. 이 공개 키는 선택한 브랜드 포털 테넌트에 대한 API를 구성하는 데 사용되며 서비스 계정에 대한 자격 증명과 JWT 페이로드를 생성합니다. 이러한 자격 증명은 AEM Assets에서 IMS 계정을 구성하는 데 필요합니다. IMS 계정이 구성되면 AEM Assets에서 브랜드 포털 클라우드 서비스를 구성할 수 있습니다.
 
 서비스 계정 자격 증명과 JWT 페이로드를 생성하려면 다음 단계를 수행합니다.
 
-1. IMS 조직(Brand Portal 테넌트)에 대한 시스템 관리자 권한으로 Adobe 개발자 콘솔에 로그인합니다. 기본 URL은
-
-   [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)입니다.
+1. IMS 조직(Brand Portal 테넌트)에 대한 시스템 관리자 권한으로 Adobe 개발자 콘솔에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -112,11 +107,7 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(
 
    **[!UICONTROL 프로젝트 편집]**&#x200B;을 클릭하여 **[!UICONTROL 프로젝트 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 업데이트하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-   ![프로젝트 만들기](assets/service-account1.png)
-
 1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
-
-   ![API 추가](assets/service-account2.png)
 
 1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Next]**.
 
@@ -138,11 +129,11 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(
 
    ![제품 프로필 선택](assets/service-account4.png)
 
-1. API가 구성되면 API 개요로 리디렉션됩니다. **[!UICONTROL 자격 증명]** 아래의 왼쪽 탐색에서 **[!UICONTROL 서비스 계정(JWT)]**&#x200B;을 클릭합니다.
+1. API가 구성되면 API 개요 페이지로 리디렉션됩니다. **[!UICONTROL 자격 증명]** 아래의 왼쪽 탐색에서 **[!UICONTROL 서비스 계정(JWT)]**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
-   >필요에 따라 자격 증명을 보고 기타 작업(JWT 토큰 생성, 자격 증명 세부 사항 복사, 클라이언트 암호 검색 등)을 수행할 수 있습니다.
+   >자격 증명을 보고 JWT 토큰 생성, 자격 증명 세부 사항 복사, 클라이언트 암호 검색 등과 같은 작업을 수행할 수 있습니다.
 
 1. **[!UICONTROL 클라이언트 자격 증명]** 탭에서 **[!UICONTROL 클라이언트 ID]**&#x200B;를 복사합니다.
 
@@ -204,9 +195,9 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
 1. IMS 계정에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
 
-   **[!UICONTROL 인증 서버]**&#x200B;에서 URL [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)을 입력하십시오.
+   In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   서비스 계정(JWT) 연결 **[!UICONTROL 을 만드는 동안 복사한]** API 키 **[!UICONTROL (클라이언트 ID),]**&#x200B;클라이언트 암호 **[!UICONTROL 및]** 페이로드(JWT 페이로드 [)를](#createnewintegration)붙여넣습니다.
+   Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -241,9 +232,9 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
 1. 구성에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
 
-   [IMS 계정을 구성](#create-ims-account-configuration)하는 동안 만든 IMS 구성을 선택합니다.
+   Select the IMS configuration that you created while [configuring the IMS account](#create-ims-account-configuration).
 
-   In the **[!UICONTROL Service URL]**, enter your Brand Portal tenant (organization URL).
+   In the **[!UICONTROL Service URL]** field, specify your Brand Portal tenant (organization) URL.
 
    ![](assets/create-cloud-service.png)
 
@@ -257,7 +248,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
 1. AEM Assets에 로그인합니다.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -283,7 +274,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
    ![](assets/test-bpconfig3.png)
 
-1. AEM Assets와 Brand Portal 간의 연결을 확인하려면 **[!UICONTROL 연결 테스트]**&#x200B;를 클릭합니다.
+1. Cloud Service 및 브랜드 포털로 AEM Assets 간의 연결을 확인하려면 연결 **[!UICONTROL 테스트]** 아이콘을 클릭합니다.
 
    ![](assets/test-bpconfig4.png)
 
@@ -300,13 +291,11 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 * [AEM Assets의 폴더를 Brand Portal에 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [AEM Assets의 컬렉션을 Brand Portal에 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 
-위의 내용 이외에 메타데이터 스키마, 태그, 이미지 사전 설정 및 검색 패싯을 AEM Assets에서 브랜드 포털로 게시할 수도 있습니다.
-
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-자세한 내용은 [Brand Portal 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html)를 참조하십시오.
+See [Brand Portal documentation](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html) for more information.
 
 
 ## 분배 로그 {#distribution-logs}
@@ -317,7 +306,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 
-1. **[!UICONTROL 로그]**&#x200B;를 클릭하여 분배 로그를 확인합니다. 여기에서 처리 및 오류 로그를 볼 수 있습니다.
+1. 처리 **[!UICONTROL 및]** 오류 로그를 보려면 로그를 클릭합니다.
 
    ![](assets/test-bpconfig5.png)
 
