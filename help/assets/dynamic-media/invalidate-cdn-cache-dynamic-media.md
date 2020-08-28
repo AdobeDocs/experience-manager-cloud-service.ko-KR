@@ -2,9 +2,9 @@
 title: 다이내믹 미디어를 통해 CDN 캐시 무효화
 description: CDN(Content Delivery Network) 캐시 컨텐츠를 무효화할 수 있으므로 캐시 만료가 기다리는 대신 다이내믹 미디어에서 제공하는 자산을 신속하게 업데이트할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: fa86e005a44600fe2ff856a137c6de21a263689e
+source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1307'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,9 @@ Dynamic [Media의 캐싱 개요를 참조하십시오](https://helpx.adobe.com/e
 
 1. AEM에서 Cloud Service으로 **[!UICONTROL 도구 > 자산 > CDN 무효화 템플릿을 누릅니다.]**
 
-   ![CDN 유효성 검사 기능](/help/assets/assets-dm/cdn-invalidation-template.png)
+<!--
+    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
+-->
 
 1. CDN **[!UICONTROL 무효화 템플릿]** 페이지에서 시나리오를 기준으로 다음 옵션 중 하나를 수행합니다.
 
