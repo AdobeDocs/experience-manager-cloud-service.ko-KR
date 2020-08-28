@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1521'
 ht-degree: 2%
 
 ---
@@ -32,11 +32,11 @@ AEM을 Cloud Service으로 사용하는 Adobe은 Cloud Manager에서 CI/CD 파�
 
 1. 색인 구성은 배포를 통해 변경됩니다. 색인 정의 변경 사항은 다른 컨텐츠 변경 사항과 같이 구성됩니다.
 
-1. AEM의 Cloud Service에서 [블루-그린 배포 모델](#index-management-using-blue-green-deployments) 도입과 함께 세 가지 인덱스 세트가 존재합니다. 한 세트는 이전 버전(파란색)으로, 한 세트는 새 버전(녹색)으로 설정되어 있습니다.
+1. AEM의 Cloud Service에서 [블루-그린 배포 모델](#index-management-using-blue-green-deployments) 도입과 함께 세 가지 인덱스 세트가 존재합니다.한 세트는 이전 버전(파란색)으로, 한 세트는 새 버전(녹색)으로 설정되어 있습니다.
 
 1. 고객은 Cloud Manager 빌드 페이지에서 색인 작업이 완료되었는지 확인하고 새 버전이 트래픽을 받을 준비가 되면 알림을 받게 됩니다.
 
-1. 제한 사항: 현재 AEM의 Cloud Service 색인 관리는 lucene 유형의 색인에서만 지원됩니다.
+1. 제한 사항:현재 AEM의 Cloud Service 색인 관리는 lucene 유형의 색인에서만 지원됩니다.
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -90,7 +90,7 @@ AS NOTE: the above is internal for now.
 
 ### 색인 관리란? {#what-is-index-management}
 
-색인 관리는 색인을 추가, 제거 및 변경하는 것입니다. 인덱스의 *정의를* 변경하는 것은 빠르지만 변경 사항을 적용(종종 &quot;색인 작성&quot;이라고 함) 또는 기존 인덱스의 경우 &quot;다시 인덱싱&quot;을 수행하려면 시간이 필요합니다. 이것은 즉각적이지 않다: 데이터를 인덱싱하려면 리포지토리를 스캔해야 합니다.
+색인 관리는 색인을 추가, 제거 및 변경하는 것입니다. 인덱스의 *정의를* 변경하는 것은 빠르지만 변경 사항을 적용(종종 &quot;색인 작성&quot;이라고 함) 또는 기존 인덱스의 경우 &quot;다시 인덱싱&quot;을 수행하려면 시간이 필요합니다. 이것은 즉각적이지 않다:데이터를 인덱싱하려면 리포지토리를 스캔해야 합니다.
 
 ### 블루 그린 배포란? {#what-is-blue-green-deployment}
 
@@ -118,9 +118,9 @@ AS NOTE: the above is internal for now.
 
 ### 블루 그린 배포를 통한 색인 관리 {#index-management-with-blue-green-deployment}
 
-블루-그린 배포를 통해 다운타임이 발생하지 않습니다. 그러나 색인 관리의 경우, 이렇게 하려면 인덱스가 특정 버전의 응용 프로그램에서만 사용되어야 합니다. 예를 들어 응용 프로그램 버전 2에서 인덱스를 추가할 때 응용 프로그램 버전 1에서 아직 사용하지 않도록 설정할 수 있습니다. 반대는 색인을 제거할 때의 경우입니다. 버전 1에서는 버전 2에서 제거된 색인이 여전히 필요합니다. 색인 정의를 변경할 때 이전 버전의 색인은 버전 1에서만 사용하고 새 버전의 색인은 버전 2에서만 사용할 수 있도록 하려고 합니다.
+블루-그린 배포를 통해 다운타임이 발생하지 않습니다. 그러나 색인 관리의 경우, 이렇게 하려면 인덱스가 특정 버전의 응용 프로그램에서만 사용되어야 합니다. 예를 들어 응용 프로그램 버전 2에서 인덱스를 추가할 때 응용 프로그램 버전 1에서 아직 사용하지 않도록 설정할 수 있습니다. 반대는 색인을 제거할 때의 경우입니다.버전 1에서는 버전 2에서 제거된 색인이 여전히 필요합니다. 색인 정의를 변경할 때 이전 버전의 색인은 버전 1에서만 사용하고 새 버전의 색인은 버전 2에서만 사용할 수 있도록 하려고 합니다.
 
-다음 표는 5개의 인덱스 정의를 보여 줍니다. index `cqPageLucene` 는 두 버전 모두에서 사용되지만 index `damAssetLucene-custom-1` 는 버전 2에서만 사용됩니다.
+다음 표는 5개의 인덱스 정의를 보여 줍니다.index `cqPageLucene` 는 두 버전 모두에서 사용되지만 index `damAssetLucene-custom-1` 는 버전 2에서만 사용됩니다.
 
 >[!NOTE]
 >
@@ -176,3 +176,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 응용 프로그램의 새 버전에서는 다음(변경된) 구성을 사용합니다.
 
 `/oak:index/acme.product-custom-2`
+
+### 인덱스 가용성/내결함성 {#index-availability}
+
+색인 손상 또는 이러한 예상치 못한 이벤트의 경우 쿼리에 응답할 수 있는 대체 색인이 있으므로 매우 중요한 기능에 대해 중복 색인을 만드는 것이 좋습니다(위에 언급한 색인의 명명 규칙에 주의함).
