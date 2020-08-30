@@ -2,9 +2,9 @@
 title: AEM 애플리케이션 프로젝트 - Cloud Service
 description: AEM 애플리케이션 프로젝트 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 1af31272f0052c557206c82a7e6c7480abca1024
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1675'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행�
 
 변수 이름에는 영숫자 및 밑줄(_) 문자만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다. 파이프라인당 변수 수는 200자로 제한됩니다. 각 이름은 100자 미만이어야 하며, 각 값은 2048자 미만이어야 합니다.
 
-파일 내에서 사용할 경우, 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 데 유용합니다. `Maven pom.xml`
+파일 내에서 사용하는 경우 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다. `Maven pom.xml`
 
 ```xml
         <profile>
@@ -246,6 +246,9 @@ Cloud Manager 빌드 환경 내에서 마스터 프로필의 활성화는 위에
 
 ## 암호로 보호된 Maven 리포지토리 지원 {#password-protected-maven-repositories}
 
+>[!NOTE]
+>암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 Quality Gates를 통해 실행되지 않으므로 매우 조심스럽게 사용해야 합니다. 따라서 드문 경우나 AEM에 연결되지 않은 코드에만 사용해야 합니다. 또한 이진 파일과 함께 전체 프로젝트 소스 코드뿐 아니라 Java 소스도 배포하는 것이 좋습니다.
+
 Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 사용자 이름(선택 사항)를 비밀 [파이프라인 변수로](#pipeline-variables) 지정한 다음 git 리포지토리에 있는 파일 `.cloudmanager/maven/settings.xml` 에서 해당 암호를 참조합니다. 이 파일은 [마비설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일로 병합됩니다. 서버 ID는 다음으로 시작하며 `adobe` `cloud-manager` 는 예약으로 간주되며 사용자 지정 서버에서 사용해서는 안 됩니다. 이러한 접두어 중 하나와 일치하지 **않는** 서버 ID가 Cloud Manager에 의해 미러링되지 `central` 않습니다. 이 파일을 적절히 사용하면 서버 ID가 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 `pom.xml` 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](#activating-maven-profiles-in-cloud-manager)내에 포함되지만, 꼭 필요한 것은 아닙니다.
 
 예를 들어 저장소가 https://repository.myco.com/maven2에 있고 Cloud Manager가 사용해야 하는 사용자 이름 `cloudmanager` 은 is이고 암호는 is `secretword`라고 가정해 봅시다.
@@ -311,6 +314,54 @@ Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면
         </build>
     </profile>
 </profiles>
+```
+
+### 소스 배포 {#deploying-sources}
+
+바이너리와 함께 Java 소스를 Maven 저장소에 배포하는 것이 좋습니다.
+
+프로젝트에서 maven-source-plugin을 구성합니다.
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+```
+
+### 프로젝트 소스 배포 {#deploying-project-sources}
+
+이진 파일과 함께 전체 프로젝트 소스를 Maven 저장소에 배포하는 것이 좋습니다. 이를 통해 정확한 결함을 다시 작성할 수 있습니다.
+
+프로젝트에서 maven-assembly-plugin을 구성합니다.
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>project-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                    <configuration>
+                        <descriptorRefs>
+                            <descriptorRef>project</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 ```
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
