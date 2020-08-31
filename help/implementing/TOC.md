@@ -3,10 +3,10 @@ sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 769364dc0a70e081a1a0cc9b86f616ccb99c93ab
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 96%
+source-wordcount: '365'
+ht-degree: 88%
 
 ---
 
@@ -36,12 +36,42 @@ ht-degree: 96%
    + [클라우드 서비스 SDK로서의 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
    + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
+   + [AEM UI 구조](developing/introduction/ui-structure.md)
    + [Sling 커닝 페이퍼](developing/introduction/sling-cheatsheet.md)
    + [Sling 어댑터 사용](developing/introduction/sling-adapters.md)
    + [클라우드 서비스로서의 AEM에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
    + [클라우드 서비스로서의 AEM에서 오버레이](developing/introduction/overlays.md)
    + [로깅](developing/introduction/logging.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
++ 구성 요소 및 템플릿 {#components-templates}
+   + [구성 요소 개요](developing/components/overview.md)
+   + [템플릿](developing/components/templates.md)
+   + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
+   + [스타일 시스템](/help/sites-cloud/authoring/features/style-system.md)
+   + [컨텐츠 서비스용 JSON 익스포터](developing/components/json-exporter.md)
+   + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
+   + [이미지 편집기](developing/components/image-editor.md)
+   + [데코레이션 태그](developing/components/decoration-tag.md)
+   + [숨기기 조건 사용](developing/components/hide-conditions.md)
++ 헤드리스 환경 관리 {#headless}
+   + [AEM을 사용한 헤드리스 및 하이브리드](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
+   + SPA(Single Page Applications){#spa}
+      + [SPA 소개 및 연습](developing/spa/introduction.md)
+      + [SPA WKND 자습서](developing/spa/wknd-tutorial.md)
+      + [반응 사용 시작](developing/spa/getting-started-react.md)
+      + [각진 사용 시작](developing/spa/getting-started-angular.md)
+      + [SPA 깊이 들어가기](developing/spa/deep-dives.md)
+      + [AEM용 SPA 개발](developing/spa/developing.md)
+      + [SPA 편집기 개요](developing/spa/editor-overview.md)
+      + [SPA 블루프린트](developing/spa/blueprint.md)
+      + [SPA 페이지 구성 요소](developing/spa/page-component.md)
+      + [동적 모델을 구성 요소 매핑으로](developing/spa/model-to-component-mapping.md)
+      + [모델 라우팅](developing/spa/routing.md)
+      + [통합 실행](developing/spa/launch-integration.md)
+      + [서버측 렌더링](developing/spa/ssr.md)
+      + [Javascript API 참조](developing/spa/reference-materials.md)
 + 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
    + [컨텐츠 조각 사용자 지정 및 확장](developing/extending/content-fragments-customizing.md)
