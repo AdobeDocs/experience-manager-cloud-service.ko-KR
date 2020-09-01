@@ -2,10 +2,10 @@
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 100%
+source-wordcount: '4551'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 이 문서에서는 **템플릿 작성자**&#x200B;가 템플릿 콘솔 및 편집기를 사용하여 편집 가능한 템플릿을 만들고 관리하는 방법을 설명합니다.
 
-편집 가능한 템플릿이 기술 수준에서 작동하는 방법에 대한 자세한 내용은 개발자 문서 페이지 템플릿 - 편집 가능을 참조하십시오. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ ht-degree: 100%
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
-프로젝트에 프로젝트 특정 템플릿을 포함하려면 템플릿 폴더를 만들어야 합니다. 이것은 관리자 작업이며 페이지 템플릿 - 편집 가능<!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).--> 문서에 설명되어 있습니다. 
+프로젝트에 프로젝트 특정 템플릿을 포함하려면 템플릿 폴더를 만들어야 합니다. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### 새 템플릿 만들기 - 템플릿 작성자 {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ ht-degree: 100%
    >
    >표준 AEM 인스턴스에서는 **전역** 폴더가 템플릿 콘솔에 이미 있습니다. 이 폴더는 기본 템플릿을 보유하며, 현재 폴더에 정책 및/또는 템플릿 유형을 찾을 수 없는 경우 폴백으로 작동합니다.
    >
-   >프로젝트용으로 만든 템플릿 폴더를 사용하는 것이 가장 좋습니다. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >[프로젝트용으로 만든 템플릿 폴더](/help/implementing/developing/components/templates.md#template-folders)를 사용하는 것이 가장 좋습니다.
 
 1. **만들기**, **템플릿 만들기**&#x200B;를 차례로 선택하여 마법사를 엽니다.
 
@@ -114,7 +114,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >템플릿 유형은 사전 정의된 템플릿 레이아웃이며 템플릿의 템플릿으로 간주할 수 있습니다. 이러한 템플릿은 개발자 또는 시스템 관리자가 미리 정의합니다. 개발자 문서 페이지 템플릿 - 편집 가능<!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->에서 자세한 내용을 확인할 수 있습니다. 
+   >템플릿 유형은 사전 정의된 템플릿 레이아웃이며 템플릿의 템플릿으로 간주할 수 있습니다. 이러한 템플릿은 개발자 또는 시스템 관리자가 미리 정의합니다. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. **템플릿 세부 정보**&#x200B;를 완료합니다.
 
@@ -204,7 +204,7 @@ ht-degree: 100%
    >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
    >
-   >템플릿 가용성을 참조하십시오. 허용된 템플릿에 대한 원칙은 동일하게 유지됩니다. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. **저장**&#x200B;을 클릭하여 페이지 속성에 대한 변경 사항을 저장합니다.
 
@@ -265,7 +265,7 @@ ht-degree: 100%
 
 #### 레이아웃 {#template-layout}
 
-[레이아웃](#editing-a-template-layout-template-author)으로 필요한 장치 형식에 대한 템플릿 레이아웃을 미리 정의할 수 있습니다. 템플릿 작성에 대한&#x200B;**레이아웃** 모드는 [**페이지 작성에 대한 레이아웃&#x200B;**모드](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)와 동일한 기능을 갖습니다.
+[레이아웃](#editing-a-template-layout-template-author)으로 필요한 장치 형식에 대한 템플릿 레이아웃을 미리 정의할 수 있습니다. 템플릿 작성에 대한&#x200B;**레이아웃** 모드는 [**페이지 작성에 대한 레이아웃** 모드](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)와 동일한 기능을 갖습니다.
 
 #### 페이지 정책 {#template-page-policies}
 
@@ -414,7 +414,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->리치 텍스트 편집기를 구현하는 구성 요소에 대한 컨텐츠 정책은 RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[](/help/implementing/developing/extending/rich-text-editor.md)리치 텍스트 편집기를 구현하는 구성 요소에 대한 컨텐츠 정책은 RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다.
 
 #### 정책 및 속성(레이아웃 컨테이너) {#policy-and-properties-layout-container}
 
@@ -490,7 +490,7 @@ ht-degree: 100%
 
 ![구성 가능한 구성 요소 아이콘](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
-#### 기존 페이지에 대한 관계 {#relationship-to-existing-pages}
+#### {#relationship-to-existing-pages}기존 페이지에 대한 관계 
 
 템플릿을 기준으로 페이지를 작성한 후 구조가 업데이트된 경우 이러한 페이지는 템플릿의 변경 사항을 반영합니다. 확인 대화 상자와 함께 이 사실을 알려주는 경고가 도구 모음에 표시됩니다.
 
@@ -504,7 +504,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->**초기 컨텐츠** 모드는 해당 템플릿으로 만든 페이지의 편집 모드로 간주할 수 있습니다. 따라서 정책은 **초기 컨텐츠** 모드에서 정의되지 않고 [**구조&#x200B;**모드](#editing-a-template-structure-template-author)에서 정의됩니다.
+>**초기 컨텐츠** 모드는 해당 템플릿으로 만든 페이지의 편집 모드로 간주할 수 있습니다. 따라서 정책은 **초기 컨텐츠** 모드에서 정의되지 않고 [**구조** 모드](#editing-a-template-structure-template-author)에서 정의됩니다.
 
 * 편집에 사용할 수 있는 잠금 해제된 구성 요소가 표시됩니다. 선택되면 파란색 테두리가 표시됩니다.
 
