@@ -2,7 +2,7 @@
 title: 컨텐츠 서비스용 JSON 익스포터
 description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 게재할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 02d95b7c45cb4d6d2fbfd9699690ecc1b80e1202
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 30%
@@ -38,7 +38,7 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 배달을 수
 
 1. 다음과 같은 컨텐츠를 제공합니다.
 
-   ![WKND 컨텐츠의 JSON 모델](/help/implementing/developing/introduction/assets/json-model-wknd.png)
+   ![WKND 컨텐츠의 JSON 모델](assets/json-model-wknd.png)
 
 구조화된 컨텐츠 조각을 구체적으로 타깃팅하여 컨텐츠를 전달할 수도 있습니다.
 
@@ -56,7 +56,7 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 배달을 수
 
 * 다음과 같은 컨텐츠를 제공합니다.
 
-   ![WKND 컨텐츠 조각 JSON 모델](/help/implementing/developing/introduction/assets/json-model-wknd-content-fragment.png)
+   ![WKND 컨텐츠 조각 JSON 모델](assets/json-model-wknd-content-fragment.png)
 
    >[!NOTE]
    >
