@@ -2,9 +2,9 @@
 title: AEM용 SPA 개발
 description: 이 문서에서는 프런트 엔드 개발자에게 AEM용 SPA를 개발하도록 권유하는 경우 고려해야 할 중요한 사항을 소개하고 있을 뿐만 아니라 AEM에 개발한 SPA를 배포할 때 염두에 두어야 할 SPA와 관련된 AEM 아키텍처에 대한 개요를 제공합니다.
 translation-type: tm+mt
-source-git-commit: d0685af8b05d5491debf7bad99b5c8f111808f26
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2078'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ AEM [에서 SPA 개발 원칙을](#spa-development-principles-for-aem) 준수한
    <th><strong>단점</strong></th>
   </tr>
   <tr>
-   <td>AEM은 <a href="https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-reference-materials.html">SPA Editor SDK 프레임워크를 사용하지 않고도 헤드리스 CMS로 사용됩니다.</a></td>
+   <td>AEM은 <a href="/help/implementing/developing/spa/reference-materials.md">SPA Editor SDK 프레임워크를 사용하지 않고도 헤드리스 CMS로 사용됩니다.</a></td>
    <td>프런트 엔드 개발자는 앱을 완벽하게 제어할 수 있습니다.</td>
    <td><p>컨텐츠 작성자는 AEM 컨텐츠 작성 경험을 활용할 수 없습니다.</p> <p>정적 참조나 라우팅이 포함된 코드에서는 이식성이 불가능하거나 다시 사용할 수 없습니다.</p> <p>템플릿 편집기를 사용할 수 없으므로 프런트 엔드 개발자가 JCR을 통해 편집 가능한 템플릿을 유지 관리해야 합니다.</p> </td>
   </tr>
