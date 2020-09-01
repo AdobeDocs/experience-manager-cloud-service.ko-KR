@@ -2,7 +2,7 @@
 title: SPA 블루프린트
 description: 본 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크가 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 저자가 AEM SPA Editor를 사용하여 SPA의 컨텐츠를 편집할 수 있도록 하려면 SPA가 반드시 충족해야 하는 요구 사항이 있습니다.
 
-## 소개 {#introdcution}
+## 소개 {#introduction}
 
 본 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크가 충족해야 하는(즉, AEM 지원 계층) 일반적인 계약에 대해 설명합니다.
 
@@ -283,4 +283,3 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 AEM의 SPA에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * [SPA 편집기](editor-overview.md) 개요 - AEM의 SPA 및 커뮤니케이션 모델 개요
-
