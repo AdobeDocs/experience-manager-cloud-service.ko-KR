@@ -2,7 +2,7 @@
 title: 장식 태그
 description: 웹 페이지의 구성 요소가 렌더링되면 렌더링된 구성 요소를 자체 내에 래핑하여 HTML 요소를 생성할 수 있습니다. 개발자에게 AEM은 포함된 구성 요소를 둘러싸는 데코레이션 태그를 제어하는 명확하고 간단한 로직을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 78afd53eaa4945e4933ef80a175fdf97c63b388e
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -62,7 +62,7 @@ HTL에서의 개발에 대한 자세한 내용은 [HTL 설명서를 참조하십
 
 이 결정 트리는 래퍼 태그의 동작을 결정하는 로직을 요약합니다.
 
-![의사 결정 트리](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
+![의사 결정 트리](assets/decoration-tag-decision-tree.png)
 
 ### Use Cases {#use-cases}
 
