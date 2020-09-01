@@ -2,7 +2,7 @@
 title: 페이지 버전 사용
 description: 페이지 버전 생성, 비교 및 복원
 translation-type: tm+mt
-source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -132,7 +132,7 @@ ht-degree: 67%
 
    ![버전 복원 - 페이지 선택](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. 선택한 페이지 **의 선택한 버전에 대해 복원을** 선택하여 *현재* 버전으로 복원합니다.
+1. 선택한 페이지 **의 선택한** 버전에 대해 현재 버전으로 복원하기를 선택합니다.
 
 >[!NOTE]
 >
