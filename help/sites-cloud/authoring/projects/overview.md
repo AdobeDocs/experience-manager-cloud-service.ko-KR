@@ -2,10 +2,10 @@
 title: 프로젝트
 description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화하여 공통, 공유 환경에서 프로젝트를 쉽게 관리할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 75%
 
 ### 자산 컬렉션 {#asset-collections}
 
-자산과 유사하게 자산 컬렉션도 프로젝트에 바로 추가할 수 있습니다. You define collections in Assets. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+자산과 유사하게 [자산 컬렉션](/help/assets/manage-collections.md)도 프로젝트에 바로 추가할 수 있습니다. [자산]에서 컬렉션을 정의합니다.
 
 ![자산 수집](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -112,7 +112,7 @@ ht-degree: 75%
 
 ### 번역 작업 {#translation-job}
 
-번역 작업 타일은 번역을 시작하는 곳이며 번역 상태도 볼 수 있는 곳이기도 합니다. 번역을 설정하려면 번역 프로젝트 만들기<!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->를 참조하십시오. 
+번역 작업 타일은 번역을 시작하는 곳이며 번역 상태도 볼 수 있는 곳이기도 합니다. 번역을 설정하려면 [번역 프로젝트 만들기](/help/assets/translate-assets.md)를 참조하십시오.
 
 ![번역 작업](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
@@ -154,7 +154,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 ## 프로젝트 템플릿 {#project-templates}
 
-AEM에는 다음과 같은 세 가지 템플릿이 포함되어 있습니다.
+AEM은 다음과 같은 세 가지 서로 다른 템플릿을 제공합니다.
 
 * 간단한 프로젝트 - 다른 카테고리에 맞지 않는 모든 프로젝트에 대한 참조 샘플입니다(모두 포함). 여기에는 세 개의 기본 역할(소유자, 편집자 및 옵저버)과 네 개의 워크플로우(프로젝트 승인, 론치 요청, 랜딩 페이지 요청 및 이메일 요청)가 포함됩니다.
 * 미디어 프로젝트 - 미디어 관련 활동을 위한 참조 샘플 프로젝트입니다. 여기에는 몇 가지의 미디어 관련 프로젝트 역할(사진사, 편집자, 카피라이터, 디자이너, 소유자 및 옵저버)이 포함되며, 또한 미디어 컨텐츠와 관련된 두 가지 워크플로우인 사본 요청(텍스트 요청 및 검토용) 및 제품 사진 촬영(제품 관련 사진 관리용)이 포함되어 있습니다.
@@ -174,7 +174,7 @@ AEM에는 다음과 같은 세 가지 템플릿이 포함되어 있습니다.
 | 역할 | 설명 | 권한 | 그룹 구성원 |
 |---|---|---|---|
 | 관찰자 | 이 역할의 사용자는 프로젝트 상태를 포함하여 프로젝트 세부 사항을 볼 수 있습니다. | 프로젝트에 대한 읽기 전용 권한 | `workflow-users` 그룹 |
-| 편집자 | 이 역할의 사용자는 프로젝트 컨텐츠를 업로드하고 편집할 수 있습니다. | 프로젝트, 관련 메타데이터 및 관련 자산에 대한 읽기 및 쓰기 액세스 촬영 목록 업로드, 사진 촬영, 자산 검토 및 승인 권한 /etc/commerce; 특정 프로젝트에 대한 권한 수정 | workflow-users 그룹 |
+| 편집자 | 이 역할의 사용자는 프로젝트 컨텐츠를 업로드하고 편집할 수 있습니다. | 프로젝트, 관련 메타데이터 및 관련 자산에 대한 읽기 및 쓰기 액세스촬영 목록 업로드, 사진 촬영, 자산 검토 및 승인 권한/etc/commerce;특정 프로젝트에 대한 권한 수정 | workflow-users 그룹 |
 | 소유자 | 이 역할의 사용자는 프로젝트를 시작할 수 있습니다. 소유자는 프로젝트를 만들고, 프로젝트에서 작업을 시작하고, 승인된 자산을 프로덕션 폴더로 이동할 수도 있습니다. 하지만, 프로젝트의 다른 모든 작업은 소유자가 보고 수행할 수도 있습니다. | 쓰기 권한 `/etc/commerce` | `dam-users` 그룹(프로젝트 만들기) 프로젝트-관리자 그룹(자산 이동 가능) |
 
 >[!NOTE]
