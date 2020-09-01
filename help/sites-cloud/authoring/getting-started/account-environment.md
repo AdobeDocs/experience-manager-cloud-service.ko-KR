@@ -2,7 +2,7 @@
 title: 계정 환경 구성
 description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
@@ -94,4 +94,4 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * **Stock 구성**
 
-   이 옵션을 사용하면 기본 Adobe Stock 구성을 지정할 수 있으며, 이 옵션은 시스템 관리자가 Adobe Stock 통합을 사용하도록 설정한 경우에만 사용할 수 있습니다. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   이 옵션을 사용하면 기본 Adobe Stock 구성을 지정할 수 있으며, 이 옵션은 시스템 관리자가 [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md)을 사용하도록 설정한 경우에만 사용할 수 있습니다.
