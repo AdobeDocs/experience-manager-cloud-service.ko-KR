@@ -2,7 +2,7 @@
 title: 페이지 컨텐츠 편집
 description: 페이지를 생성하면 컨텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -129,7 +129,7 @@ ht-degree: 100%
 
 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. [구성 요소 자리 표시자](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다:
 
-1. 페이지가 [**편집&#x200B;**모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
+1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 엽니다.
 1. 필요한 구성 요소를 [필요한 위치](#component-placeholder)로 드래그합니다.
 1. 구성 요소를 [편집합니다.](#edit-content)
@@ -142,7 +142,7 @@ ht-degree: 100%
 
 단락 시스템의 **구성 요소를 여기로 드래그하십시오.** 상자를 사용하여 새 구성 요소를 추가할 수 있습니다.
 
-1. 페이지가 [**편집&#x200B;**모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
+1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. 단락 시스템에서 새 구성 요소를 선택하고 추가하는 두 가지 방법이 있습니다.
 
    * 기존 구성 요소의 도구 모음 또는 **구성 요소를 여기로 드래그하십시오.** 상자에서 **구성 요소 삽입** 옵션(+)을 선택합니다.
@@ -165,7 +165,7 @@ ht-degree: 100%
 
 위의 자산 유형 중 하나를 끌어 구성 요소를 만들려면,
 
-1. 페이지가 [**편집&#x200B;**모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
+1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. [자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)를 엽니다.
 1. 필요한 자산을 필요한 위치로 끕니다. [구성 요소 자리 표시자](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
@@ -177,7 +177,7 @@ ht-degree: 100%
 >
 >모바일 장치에서 자산 브라우저가 전체 화면을 채웁니다. 자산을 드래그하면 브라우저가 닫히고 자산을 배치할 수 있도록 페이지가 다시 표시됩니다.
 
-자산을 검색할 때 자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 자산 편집기를 브라우저에서 직접 시작할 수 있습니다. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+자산을 검색할 때 자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 [자산 편집기](/help/assets/manage-digital-assets.md)를 브라우저에서 직접 시작할 수 있습니다.
 
 ![자산 편집 단추](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
