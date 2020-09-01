@@ -2,7 +2,7 @@
 title: 숨기기 조건 사용
 description: 숨기기 조건을 사용하여 구성 요소 리소스가 렌더링되었는지 확인할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 6902b40232ae0b704c5e29f09844cab018598c24
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 5%
@@ -58,22 +58,22 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 1. 기본적으로 페이지 작성자는 목록 핵심 구성 요소를 사용하여 하위 페이지 옵션을 선택하여 하위 페이지를 사용하여 목록을 **작성할 수 있습니다**.
 
-   ![목록 구성 요소 설정](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![목록 구성 요소 설정](assets/hide-conditions-list-settings.png)
 
 1. 목록 핵심 구성 요소의 디자인 대화 상자에서 템플릿 작성자는 하위 페이지 **를** 기준으로 목록을 생성하는 옵션이 페이지 작성자에게 표시되지 않도록 할 수 있습니다.
 
-   ![목록 구성 요소 디자인 대화 상자](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![목록 구성 요소 디자인 대화 상자](assets/hide-conditions-list-design.png)
 
 1. 정책 노드는 로 설정된 속성 `/conf/wknd/settings/wcm/policies/wknd/components/list` 아래 `disableChildren` 로 만들어집니다 `true`.
 
-   ![숨기기 조건의 노드 구조](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![숨기기 조건의 노드 구조](assets/hide-conditions-node-structure.png)
 
 1. 숨기기 조건은 대화 상자 속성 노드에서 `granite:hide` 속성의 값으로 정의됩니다 `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-![숨기기 조건 평가](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![숨기기 조건 평가](assets/hide-conditions-evaluation.png)
 
 1. 의 값 `disableChildren` 은 디자인 구성에서 가져오고 표현식은 로 평가됩니다. 즉, 옵션 `${cdDesign.disableChildren}` 이 구성 요소의 일부로 렌더링되지 않습니다 `false`.
 
 1. 목록 구성 요소 **를 사용할 때 더 이상 페이지 작성자에 대해 하위 페이지** 옵션이 렌더링되지 않습니다.
 
-   ![하위 옵션이 비활성화된 목록 구성 요소](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![하위 옵션이 비활성화된 목록 구성 요소](assets/hide-conditions-child-disabled.png)
