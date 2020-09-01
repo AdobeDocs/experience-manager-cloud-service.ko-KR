@@ -2,9 +2,9 @@
 title: AEM UI 구조
 description: AEM UI에는 몇 가지 기본 원칙이 있으며 몇 가지 주요 요소로 구성됩니다
 translation-type: tm+mt
-source-git-commit: 0ae4a4695f3d869b9372694396711ca8626e1df1
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 2%
 
 ---
@@ -169,4 +169,4 @@ AEM에는 페이지 작성을 위해 이미 구현된 여러 레이어가 포함
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-자세한 기술 정보는 터치 지원 페이지 편집기의 [JS 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) 세트를 참조하십시오.
+자세한 기술 정보는 페이지 편집기의 [JS 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) 세트를 참조하십시오.
