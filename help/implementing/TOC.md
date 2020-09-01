@@ -3,10 +3,10 @@ sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 769364dc0a70e081a1a0cc9b86f616ccb99c93ab
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 88%
+source-wordcount: '371'
+ht-degree: 87%
 
 ---
 
@@ -44,6 +44,9 @@ ht-degree: 88%
    + [로깅](developing/introduction/logging.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [테스트 결과 이해](/help/implementing/developing/introduction/understand-test-results.md)
+   + [페이지 비교](/help/implementing/developing/introduction/page-diff.md)
+   + [편집기 제한 사항](/help/implementing/developing/introduction/editor-limitations.md)
+   + [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md)
 + 구성 요소 및 템플릿 {#components-templates}
    + [구성 요소 개요](developing/components/overview.md)
    + [템플릿](developing/components/templates.md)
