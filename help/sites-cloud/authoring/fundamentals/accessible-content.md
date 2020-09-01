@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 액세스 가능한 컨텐츠 만들기(WCAG 2.1 준수)
 description: 장애가 있는 사용자가 액세스하여 사용할 수 있는 웹 컨텐츠를 만드는 데 도움이 되는 AEM을 클라우드 서비스로 사용
 translation-type: tm+mt
-source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
+source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
 workflow-type: tm+mt
-source-wordcount: '13955'
+source-wordcount: '14057'
 ht-degree: 100%
 
 ---
@@ -23,12 +23,10 @@ ht-degree: 100%
 * [WCAG 문서](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 또한 다음을 참조하십시오.
-* [WCAG 2.1에 대한 빠른 안내서](/help/onboarding/accessibility/quick-guide-wcag.md).
-* [Adobe 솔루션에 대한 액세서빌러티 준수 보고서](https://www.adobe.com/accessibility/compliance.html).
 
-<!-- 
->* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
--->
+* [WCAG 2.1에 대한 빠른 안내서](/help/onboarding/accessibility/quick-guide-wcag.md).
+* [Adobe 솔루션에 대한 액세서빌러티 적합성 보고서](https://www.adobe.com/accessibility/compliance.html).
+* [액세스 가능한 컨텐츠를 만들려면 리치 텍스트 편집기 구성 참조](/help/implementing/developing/extending/rte-accessible-content.md)
 
 이러한 적합성 수준에 따라 레벨 A(가장 낮음), 레벨 AA 및 레벨 AAA(가장 높음)로 지침의 등급이 지정됩니다. 이러한 등급을 간단히 정의하면 다음과 같습니다.
 
@@ -70,19 +68,17 @@ ht-degree: 100%
 
 #### 충족 방법 - 텍스트가 아닌 컨텐츠(1.1.1) {#how-to-meet-non-text-content}
 
-정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 **대체 텍스트** 필드에서 수행할 수 있습니다. 예를 들어 핵심 구성 요소 **[이미지](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)**를 참조하십시오.
+정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 **대체 텍스트** 필드에서 수행할 수 있습니다. 예를 들어 핵심 구성 요소 **[이미지](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)**&#x200B;를 참조하십시오.
 
 >[!NOTE]
 >
->전체 구성 요소에 대해&#x200B;**[레이블](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)**필드(**액세서빌러티&#x200B;**탭)가 있더라도**회전 메뉴&#x200B;**등 일부 핵심 구성 요소는 대체 텍스트 설명을 개별 이미지에 추가하는 데**[대체 텍스트](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;를 제공하지 않습니다.
+>전체 구성 요소에 대해&#x200B;**[레이블](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)** 필드(**액세서빌러티** 탭)가 있더라도 **회전 메뉴** 등 일부 핵심 구성 요소는 대체 텍스트 설명을 개별 이미지에 추가하는 데 **[대체 텍스트](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;를 제공하지 않습니다.
 >
 >AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt` 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조).
-
-<!--
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+>전체 구성 요소에 대해 **[레이블](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)** 필드(**액세서빌러티** 탭)가 있더라도 **회전 슬라이드** 등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위해 **[대체 텍스트](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** 필드를 제공하지 않습니다.
+>
+>AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt`[ 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 AEM을 사용하려면 기본적으로 **대체 텍스트** 필드를 채워야 합니다. 이미지가 단순한 장식용이고 대체 텍스트가 필요 없는 경우 **이미지가 장식용임** 옵션을 선택할 수 있습니다.
 
@@ -347,11 +343,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 
    >[!NOTE]
    >
-   >시스템 관리자가 **표 속성** 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조).
-
-   <!-- removed link syntax for ExL - Bob Bringhurst
-  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
-  -->
+   >시스템 관리자가 **표 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    **표 속성** 탭을 선택할 수 있는 **표** 대화 상자를 열려면:
 
@@ -1050,10 +1042,7 @@ AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만,
 >
 >이름이나 도시를 서로 다른 언어로 포함할 때 또는 기본 언어에서 흔하게 사용하게 된 외래나 구(예: 영어의 *schadenfreude*)를 사용할 때에는 이 성공 기준을 따를 필요가 없습니다.
 
-적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang` 특성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조).
-<!--
-To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang`[ 특성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### 추가 정보 - 부분 언어(3.1.2) {#more-information-language-of-parts}
 
@@ -1217,11 +1206,7 @@ AEM WKND에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 �
 
 WKND 프로젝트에서 **라디오 그룹**&#x200B;과 같은 관련 컨트롤 그룹이 있으면 개별 컨트롤 뿐만 아니라 그룹에도 제목이 필요할 수 있습니다. 라디오 단추(**항목**)가 생성될 때 개별 제목이 지정되는 반면, AEM에서 라디오 단추 집합을 추가하면 **제목** 필드가 이 그룹 제목을 제공합니다.
 
-하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성** 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조).
-
-<!--
-However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md)).
 
 ###### 양식에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 
