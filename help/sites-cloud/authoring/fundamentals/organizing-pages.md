@@ -2,10 +2,10 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2554'
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 100%
 >
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 
-새 페이지를 생성할 때 AEM은 AEM 및 JCR에서 지정한 규칙에 따라 페이지 이름을 확인합니다. <!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
 
 허용되는 최소 문자는 다음과 같습니다.
 
@@ -103,7 +103,7 @@ ht-degree: 100%
 * `_`(밑줄)
 * `-`(하이픈/빼기)
 
-허용되는 모든 문자에 대한 전체 상세 정보는 이름 지정 규칙<!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->에서 찾을 수 있습니다. 
+허용되는 모든 문자에 대한 전체 상세 정보는 [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md)에서 찾을 수 있습니다.
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ ht-degree: 100%
 
 #### 제목 {#title}
 
-새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**&#x200B;을 파생하고 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. <!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**[을 파생하고 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다.](/help/implementing/developing/introduction/naming-conventions.md)
 
 **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
 
@@ -122,7 +122,7 @@ ht-degree: 100%
 
 #### 이름 {#name}
 
-새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 강조 표시됩니다. <!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. [](/help/implementing/developing/introduction/naming-conventions.md) **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 설명 메시지와 함께 강조 표시됩니다.
 
 ![유효하지 않은 페이지 이름을 입력하는 예](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -206,7 +206,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
    * **이름**:
 
       * URI를 생성하는 데 사용됩니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
-      * 새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. <!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * 새 페이지를 만들 때 페이지 **이름**[을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다.](/help/implementing/developing/introduction/naming-conventions.md)
       * **이름** 필드에 **잘못된 문자를 제출**&#x200B;할 수 없습니다. AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
 
    >[!TIP]
@@ -365,9 +365,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 >[!NOTE]
 >
->페이지는 페이지가 기반으로 하는 템플릿이 허용되는 위치로만 이동할 수 있습니다. 자세한 내용은 템플릿 가용성을 참조하십시오.
-<!--
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>페이지는 페이지가 기반으로 하는 템플릿이 허용되는 위치로만 이동할 수 있습니다. 자세한 내용은 [템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오.
 -->
 
 #### 비동기 작업 {#asynchronous-actions}
