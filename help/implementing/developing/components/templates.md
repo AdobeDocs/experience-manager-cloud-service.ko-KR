@@ -2,7 +2,7 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기초로 사용할 페이지를 만들 때 사용됩니다
 translation-type: tm+mt
-source-git-commit: 0508311b997789ada07856a73d29e38d1b735979
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 8%
@@ -512,7 +512,7 @@ On the
 
    * `cq:templateType` - 템플릿 유형에 대한 참조를 제공합니다.
 
-![템플릿, 컨텐츠 및 구성 요소가 상호 작용하는 방법](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![템플릿, 컨텐츠 및 구성 요소가 상호 작용하는 방법](assets/templates-content-components.png)
 
 위의 다이어그램은 템플릿, 컨텐트 및 구성 요소가 상호 작용하는 방법을 보여줍니다.
 
@@ -565,7 +565,7 @@ On the
 
 다음 다이어그램은 템플릿 평가 프로세스를 보여 줍니다.
 
-![템플릿 평가 프로세스](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![템플릿 평가 프로세스](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
