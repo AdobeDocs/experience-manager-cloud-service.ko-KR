@@ -2,9 +2,9 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1687'
 ht-degree: 88%
 
 ---
@@ -129,11 +129,9 @@ ht-degree: 88%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **&lt;path>에서 상속됨**
 
-  * Indicates whether the page is inherited. and where from.
--->
+   * 페이지가 상속되었는지 여부 및 상속된 위치를 나타냅니다.
 
 * **클라우드 구성**
 
@@ -148,7 +146,7 @@ ht-degree: 88%
    * 페이지에 액세스할 수 있는 인증을 활성화 또는 비활성화합니다.
    >[!NOTE]
    >
-   >페이지의 닫힌 사용자 그룹은 **[권한](#permissions)**탭에 정의됩니다.
+   >페이지의 닫힌 사용자 그룹은 **[권한](#permissions)** 탭에 정의됩니다.
 
 * **로그인 페이지**
 
