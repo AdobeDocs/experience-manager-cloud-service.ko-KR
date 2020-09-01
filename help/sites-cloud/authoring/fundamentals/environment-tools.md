@@ -2,7 +2,7 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
@@ -40,7 +40,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 페이지를 편집할 때 다음 위치에서 **도움말**&#x200B;에 액세스할 수 있습니다.
 
-* [**페이지 정보&#x200B;**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)선택기: 소개 슬라이드(편집기에 처음 액세스할 때 표시됨)가 표시됩니다.
+* [**페이지 정보**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) 선택기: 소개 슬라이드(편집기에 처음 액세스할 때 표시됨)가 표시됩니다.
 * 특정 구성 요소의 [구성](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 대화 상자(대화 상자 도구 모음의 ? 아이콘 사용): 상황에 맞는 도움말이 표시됩니다.
 
 추가 [도움말 관련 리소스는 콘솔에서 사용할 수 있습니다](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
@@ -100,7 +100,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 ## 자산 브라우저 {#assets-browser}
 
-자산 브라우저에는 현재 페이지에서 직접 사용할 수 있는 모든 자산이 표시됩니다. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+자산 브라우저에는 현재 페이지에서 직접 사용할 수 있는 모든 [자산](/help/assets/home.md)이 표시됩니다.
 
 자산 브라우저는 사이드 패널 내의 탭이며 [구성 요소 브라우저](#components-browser) 및 [컨텐츠 트리](#content-tree)와 함께 있습니다. 사이드 패널을 열려면(또는 닫으려면) 도구 모음의 왼쪽 상단에 있는 아이콘을 사용합니다.
 
@@ -157,7 +157,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 >
 >모바일 장치는 폭이 1024픽셀 미만인 경우 감지됩니다(즉, 작은 데스크톱 창에서도 감지됨).
 
-자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 자산 편집기를 자산 브라우저에서 직접 시작할 수 있습니다. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 [자산 편집기](/help/assets/manage-digital-assets.md)를 자산 브라우저에서 직접 시작할 수 있습니다.
 
 ![자산 편집 단추](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
