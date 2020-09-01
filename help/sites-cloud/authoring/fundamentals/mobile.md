@@ -2,7 +2,7 @@
 title: 모바일 장치용 페이지 작성
 description: 모바일용으로 작성할 때 몇 개의 에뮬레이터 간을 전환하여 최종 사용자에게 표시되는 내용을 확인할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 모바일 장치용 페이지 작성 {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager 페이지는 응답형 레이아웃을 기반으로 합니다. 반응형 레이아웃은 대상 장치에 맞게 컨텐츠를 자동으로 조정하므로 특정 장치를 위한 컨텐츠를 작성할 필요가 없습니다.
+Adobe Experience Manager 페이지는 응답형 레이아웃을 기반으로 합니다. [반응형 레이아웃은 대상 장치에 맞게 컨텐츠를 자동으로 조정하므로 특정 장치를 위한 컨텐츠를 작성할 필요가 없습니다.](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 모바일 페이지를 작성할 때는 모바일 장치를 에뮬레이션하는 방식으로 페이지가 표시됩니다. 페이지를 작성할 때에는 몇 개의 에뮬레이터 간을 전환하여 페이지에 액세스할 때 최종 사용자에게 표시되는 내용을 확인할 수 있습니다.
 
