@@ -2,7 +2,7 @@
 title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 서로 다른 점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 100%
@@ -22,7 +22,7 @@ ht-degree: 100%
 >
 >이 기능을 사용하려면 사용자에게 **노드에 대한**&#x200B;수정/만들기/삭제`/content/versionhistory` 권한이 있어야 합니다.
 >
->이 기능에 대한 기술적인 세부 사항은 개발 및 페이지 차이를 참조하십시오. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>이 기능에 대한 기술적인 세부 사항은 [개발 및 페이지 차이](/help/implementing/developing/introduction/page-diff.md#operation-details)를 참조하십시오.
 
 ## 사용 {#use}
 
@@ -105,4 +105,4 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->페이지 차이 메커니즘 작업 및 페이지 차이에 영향을 줄 수 있는 제한 사항에 대한 자세한 내용은 이 기능의 개발자 설명서를 참조하십시오. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>페이지 차이 메커니즘 작업 및 페이지 차이에 영향을 줄 수 있는 제한 사항에 대한 자세한 내용은 이 기능의 [개발자 설명서](/help/implementing/developing/introduction/page-diff.md)를 참조하십시오.
