@@ -2,11 +2,11 @@
 sub-product: 클라우드 서비스로서의 AEM에 온보딩
 user-guide-title: 클라우드 서비스로서의 AEM에 온보딩
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '133'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,10 @@ ht-degree: 100%
       + [프로그램 및 프로그램 유형 이해](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [프로그램 만들기](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [샌드박스 프로그램](getting-access-to-aem-in-cloud/sandbox-programs.md)
-   + [AEM 애플리케이션 프로젝트 만들기](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
+   + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
+      + [마법사 사용](getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [프로젝트 설정](getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [빌드 환경 세부 사항 이해](getting-access-to-aem-in-cloud/build-environment-details.md)
 + 데이터 개인 정보 보호 및 보호 준비 완료 {#data-privacy}
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 기초 준비 완료](data-privacy-and-protection-readiness/foundation-readiness.md)
