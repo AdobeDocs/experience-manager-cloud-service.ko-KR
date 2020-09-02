@@ -2,20 +2,20 @@
 title: 마법사 사용
 description: 마법사 사용 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 
-# 마법사를 사용하여 AEM 응용 프로그램 프로젝트 만들기 {#using-wizard-to-create-an-aem-application-project}
+# 마법사 사용 {#using-wizard-to-create-an-aem-application-project}
 
 새로운 고객을 위한 Cloud Manager의 시작점으로 최소한의 AEM 프로젝트를 제작할 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형을 기반으로 합니다**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
-Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 절차를 따르십시오.
+아래 절차에 따라 마법사를 사용하여 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만드십시오.
 
 1. Cloud Manager에 로그인하고 기본 프로그램 설정이 완료되면 저장소가 비어 있는 경우 **개요** 화면에 특별 작업 카드가 표시됩니다.
 
