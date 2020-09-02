@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d17aadfa60e2e13487d937c0630181beb7370328
+source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
 workflow-type: tm+mt
-source-wordcount: '2604'
+source-wordcount: '2620'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ CIF [Venia](https://github.com/adobe/aem-cif-guides-venia) 프로젝트는 [CIF 
 
 ## 구축 내용
 
-카드와 유사한 제품 티저 구성 요소에 대해 새 스타일이 구현됩니다.
+이 자습서에서는 카드와 유사한 제품 티저 구성 요소에 대해 새 스타일이 구현됩니다. 자습서에서 학습한 교훈을 다른 CIF 핵심 구성 요소에 적용할 수 있습니다.
 
 ![구축 내용](../assets/style-cif-component/what-you-will-build.png)
 
