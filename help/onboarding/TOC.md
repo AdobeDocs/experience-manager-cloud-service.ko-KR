@@ -3,10 +3,10 @@ sub-product: 클라우드 서비스로서의 AEM에 온보딩
 user-guide-title: 클라우드 서비스로서의 AEM에 온보딩
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 93%
+source-wordcount: '144'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 93%
    + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
       + [마법사 사용](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [프로젝트 설정](getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [빌드 환경 세부 사항 이해](getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [빌드 환경 이해](getting-access-to-aem-in-cloud/build-environment-details.md)
 + 데이터 개인 정보 보호 및 보호 준비 완료 {#data-privacy}
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 기초 준비 완료](data-privacy-and-protection-readiness/foundation-readiness.md)
