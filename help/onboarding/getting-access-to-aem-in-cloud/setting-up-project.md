@@ -2,7 +2,7 @@
 title: 프로젝트 설정 세부 정보
 description: 프로젝트 설정 세부 정보 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 AEM 프로젝트는 몇 가지 기본 규칙을 준수해야 합니다.
 
 * 프로젝트는 Apache Maven을 사용하여 빌드해야 합니다.
-* Git 저장소의 루트에 *pom.xml* 파일이 있어야 합니다. 이 *pom.xml* 파일은 하위 모듈을 여러 개 참조할 수 있으며, 이 경우 다른 하위 모듈 등이 있을 수 있습니다. 필요한 경우.
+* Git 저장소의 루트에 *pom.xml* 파일이 있어야 합니다. 이 *pom.xml* 파일은 하위 모듈을 여러 개 참조할 수 있습니다. 이 경우 다른 하위 모듈 등이 있을 수 있습니다. 필요한 경우.
 
 * pom.xml ** 파일에서 추가 Maven 객체 저장소에 대한 참조를 추가할 수 있습니다. 암호로 [보호된 객체 리포지토리에](#password-protected-maven-repositories) 대한 액세스는 구성 시 지원됩니다. 그러나 네트워크 보호 객체 저장소에 대한 액세스는 지원되지 않습니다.
 * 배포 가능한 컨텐츠 패키지는 *target* 이라는 디렉토리에 포함되어 있는 컨텐츠 패키지 *zip*&#x200B;파일을 검색하여 찾을 수 있습니다. 모든 수의 하위 모듈에서는 콘텐츠 패키지를 생성할 수 있습니다.
@@ -31,7 +31,7 @@ Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 
 
 일부 제한된 경우, 개발자 워크스테이션에서 실행되는 경우와 달리 Cloud Manager 내에서 실행할 때 빌드 프로세스를 약간 변경해야 할 수 있습니다. 이러한 경우 Maven [Profiles를](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 사용하여 Cloud Manager를 비롯한 다양한 환경에서 빌드가 달라지는 방법을 정의할 수 있습니다.
 
-Cloud Manager 빌드 환경 내에서 마스터 프로필의 활성화는 위에 설명된 CM_BUILD 환경 변수를 찾아 수행해야 합니다. Cloud Manager 빌드 환경 외부에서만 사용하도록 만들어진 프로필은 이 변수의 개념을 찾아 수행해야 합니다.
+Cloud Manager 빌드 환경 내에서 마스터 프로필의 활성화는 위에 설명된 CM_BUILD 환경 변수를 찾아 수행해야 합니다. 반대로, Cloud Manager 빌드 환경 외부에서만 사용하도록 만들어진 프로필은 이 변수가 없음을 확인하여 수행해야 합니다.
 
 예를 들어 빌드가 Cloud Manager 내에서 실행되는 경우에만 간단한 메시지를 출력하려는 경우 다음을 수행합니다.
 
