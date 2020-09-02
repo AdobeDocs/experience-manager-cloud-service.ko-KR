@@ -490,7 +490,7 @@ For detailed information about how editable templates work at a technical level,
 
 ![구성 가능한 구성 요소 아이콘](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
-#### {#relationship-to-existing-pages}기존 페이지에 대한 관계 
+#### 기존 페이지에 대한 관계 {#relationship-to-existing-pages}
 
 템플릿을 기준으로 페이지를 작성한 후 구조가 업데이트된 경우 이러한 페이지는 템플릿의 변경 사항을 반영합니다. 확인 대화 상자와 함께 이 사실을 알려주는 경고가 도구 모음에 표시됩니다.
 
