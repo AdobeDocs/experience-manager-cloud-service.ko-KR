@@ -2,9 +2,9 @@
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
    단계 **배포에는**&#x200B;다음 단계가 포함됩니다.
 
    * 유효성 검사:이 단계에서는 파이프라인이 현재 사용 가능한 리소스를 사용하도록 구성되어 있는지 확인합니다. 예를 들어 구성된 분기가 있고 환경을 사용할 수 있습니다.
-   * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스가 실행됩니다. 빌드 [환경에 대한 자세한 내용은](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) 빌드 환경 세부 정보를 참조하십시오.
+   * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스가 실행됩니다. 빌드 [환경에 대한 자세한 내용은](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) 빌드 환경 세부 정보를 참조하십시오.
    * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [코드](/help/implementing/cloud-manager/code-quality-testing.md) 품질 테스트를 참조하십시오.
    * 이미지 빌드:이 단계에는 이미지를 만드는 데 사용되는 프로세스의 로그 파일이 있습니다. 이 프로세스는 빌드 단계에서 생성된 컨텐츠 및 디스패처 패키지를 Docker 이미지 및 Kubernetes 구성으로 변환해야 합니다.
    * 스테이지에 배포
@@ -56,8 +56,8 @@ ht-degree: 0%
    * 사용자 지정 기능 테스트:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 그러나 빌드로 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다.\
       자세한 내용은 [맞춤형 기능 테스트를](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 참조하십시오.
 
-   * 컨텐츠 감사:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 정의 기능 테스트 후에 컨텐츠 감사 단계가 포함됩니다. 구성된 페이지는 서비스로 전송되어 평가됩니다. 이 결과는 정보 제공용이며 사용자가 현재 점수와 이전 점수 사이의 점수 및 변경 사항을 볼 수 있도록 합니다. 이러한 통찰력은 현재 배포에서 발생하는 회귀 여부를 확인하는 데 유용합니다.
-자세한 내용은 [컨텐츠 감사 결과](/help/implementing/cloud-manager/content-audit-testing.md) 이해를 참조하십시오.
+   * 경험 감사:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 지정 기능 테스트 후에 경험 감사 단계가 포함됩니다. 구성된 페이지는 서비스로 전송되어 평가됩니다. 이 결과는 정보 제공용이며 사용자가 현재 점수와 이전 점수 사이의 점수 및 변경 사항을 볼 수 있도록 합니다. 이러한 통찰력은 현재 배포에서 발생하는 회귀 여부를 확인하는 데 유용합니다.
+자세한 내용은 [경험 감사 결과](/help/implementing/cloud-manager/experience-audit-testing.md) 이해를 참조하십시오.
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Cloud Manager가 비프로덕션 토폴로지에 배포되는 경우, 가능한 
 
    >[!NOTE]
    >
-   >모든 AEM 아티팩트는 작성자와 발행자 모두에 배포됩니다. 런타임 모드는 노드별 구성이 필요할 때 활용되어야 합니다. 런타임 모드를 사용하여 특정 목적을 위해 AEM 인스턴스를 조정하는 방법에 대한 자세한 내용은 실행 모드를 참조하십시오.
+   >모든 AEM 아티팩트는 작성자와 발행자 모두에 배포됩니다. 실행 모드는 노드별 구성이 필요할 때 활용해야 합니다. 실행 모드를 사용하여 특정 목적으로 AEM 인스턴스를 조정하는 방법에 대한 자세한 내용은 실행 모드를 참조하십시오.
 
 1. 발송자 아티팩트는 다음과 같이 각 디스패처에 배포됩니다.
 
