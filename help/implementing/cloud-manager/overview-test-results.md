@@ -2,7 +2,7 @@
 title: 테스트 결과 개요 - Cloud Services
 description: 테스트 결과 개요 - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Cloud Manager에서 Cloud Services 파이프라인을 지원하는 세 가지 �
 
    기능 테스트는 프로덕션 파이프라인의 단계 테스트 단계의 일부입니다.
 
-1. [컨텐츠 감사 테스트](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   모든 Cloud Manager 프로덕션 파이프라인에서 콘텐츠 감사 테스트를 사용할 수 있으며 건너뛸 수 없습니다.
+   모든 Cloud Manager 프로덕션 파이프라인에서 경험 감사 테스트를 사용할 수 있으며 건너뛸 수 없습니다.
 
 이러한 테스트는 다음을 수행할 수 있습니다.
 
