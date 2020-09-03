@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.8.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.8.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 6%
 
 ---
