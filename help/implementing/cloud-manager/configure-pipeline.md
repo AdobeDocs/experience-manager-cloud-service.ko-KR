@@ -2,7 +2,7 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -78,21 +78,21 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
    * **즉시** 계속 - 이 옵션을 선택하면 중요 오류가 발생할 때마다 파이프라인이 자동으로 진행됩니다. 이는 기본적으로 사용자가 각 실패를 수동으로 승인하는 것입니다.
 
 
-1. 프로덕션 파이프라인 설정에는 컨텐츠 감사로 레이블이 지정된 세 번째 탭이 **포함됩니다**.
+1. 프로덕션 파이프라인 설정에는 경험 감사로 레이블이 지정된 세 번째 탭이 **포함됩니다**.
 
    ![](assets/content-audit-1.png)
 
-   이 옵션은 컨텐츠 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 포함할 URL 경로를 수동으로 입력할 수 있습니다. 최대 25개의 행을 포함할 수 있습니다. 이 섹션에 사용자가 제출한 페이지가 없는 경우 사이트의 홈 페이지가 기본적으로 컨텐츠 감사에 포함됩니다.
+   이 옵션은 경험 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 포함할 URL 경로를 수동으로 입력할 수 있습니다. 최대 25개의 행을 포함할 수 있습니다. 이 섹션에 사용자가 제출한 페이지가 없는 경우 사이트의 홈 페이지가 기본 경험 감사에 포함됩니다.
 
    >[!NOTE]
    > 구성된 페이지는 서비스에 전송되어 성능, 접근성, SEO(검색 엔진 최적화), 우수 사례 및 PWA(점진적 웹 앱) 테스트에 따라 평가됩니다.
 
-   자세한 내용은 [컨텐츠 감사 결과](/help/implementing/cloud-manager/content-audit-testing.md) 이해를 참조하십시오.
+   자세한 내용은 [경험 감사 결과](/help/implementing/cloud-manager/experience-audit-testing.md) 이해를 참조하십시오.
 
-   새 **페이지 무시** 추가를 클릭하여 컨텐츠 감사에 포함할 URL 경로를 제공합니다. 경로를 추가한 후 저장을 **클릭합니다**.
+   새 **페이지 무시** 추가를 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다. 경로를 추가한 후 저장을 **클릭합니다**.
 
    >[!NOTE]
-   >컨텐츠 감사 단계를 활성화하려면 파이프라인을 편집하고 선택적으로 페이지를 추가해야 합니다. 자세한 내용은 [알려진 문제](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 를 참조하십시오.
+   >경험 감사 단계를 활성화하려면 파이프라인을 편집하고 선택적으로 페이지를 추가해야 합니다. 자세한 내용은 [알려진 문제](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 를 참조하십시오.
 
    ![](assets/content-audit2.png)
 
