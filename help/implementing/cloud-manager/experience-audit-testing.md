@@ -2,7 +2,7 @@
 title: 경험 감사 테스트 - Cloud Services
 description: 경험 감사 테스트 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -51,7 +51,8 @@ Cloud Manager의 경험 감사는 최종 사용자가 사이트에 대한 디지
 
 * **N/A** - 비교할 이전 점수가 없습니다.
 
-   ![](/help/implementing/developing/introduction/assets/content-audit-test1.png)
+   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+
 
 ### 페이지 수준 점수 {#page-level-scores}
 
@@ -59,5 +60,5 @@ Cloud Manager의 경험 감사는 최종 사용자가 사이트에 대한 디지
 
 개별 페이지의 세부 사항을 클릭하면 평가된 페이지의 요소에 대한 정보와 개선 가능성이 감지되는 문제를 해결하는 지침을 제공합니다. 테스트 및 관련 지침의 세부 사항은 Google Lighthouse에서 제공합니다.
 
-![](/help/implementing/developing/introduction/assets/page-level-scores.png)
+![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
 
