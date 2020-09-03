@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.7.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.7.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
+source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 80%
@@ -89,12 +89,12 @@ ht-degree: 80%
 
 * 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 암호를 지원합니다.
 
-   자세한 내용은 [파이프라인 변수](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)를 참조하십시오.
+   자세한 내용은 [파이프라인 변수](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)를 참조하십시오.
 
 * 이제 인증 바인딩된 개인 마웬 리포지토리가 지원됩니다.
 
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
-자세한 내용은 [Java 11 지원](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) 사용을 참조하십시오.
+자세한 내용은 [Java 11 지원](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 사용을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cm}
 
