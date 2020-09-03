@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 AEM에 배포
 description: '클라우드 서비스로서의 AEM에 배포 '
 translation-type: tm+mt
-source-git-commit: bb810684a513718ddb7232f1a2da725b2df7f36c
+source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
 workflow-type: tm+mt
 source-wordcount: '3537'
 ht-degree: 0%
@@ -183,7 +183,7 @@ Cloud Manager를 통해 설치되는 모든 컨텐츠 패키지(mutable 및 muta
 
 ### 타사 패키지 포함 {#including-third-party}
 
-고객은 Adobe의 번역 파트너와 같은 소프트웨어 공급업체와 같은 제3자 소스에서 사전에 작성된 패키지를 포함하는 것이 일반적입니다. 원격 저장소에서 이러한 패키지를 호스팅하여 `pom.xml` 이 방법은 [암호로 보호된 다중 저장소에 설명된 것처럼 공용 저장소 및 암호 보호 전용 저장소에 대해서도 가능합니다](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories).
+고객은 Adobe의 번역 파트너와 같은 소프트웨어 공급업체와 같은 제3자 소스에서 사전에 작성된 패키지를 포함하는 것이 일반적입니다. 원격 저장소에서 이러한 패키지를 호스팅하여 `pom.xml` 이 방법은 [암호로 보호된 다중 저장소에 설명된 것처럼 공용 저장소 및 암호 보호 전용 저장소에 대해서도 가능합니다](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 원격 저장소에 패키지를 저장할 수 없는 경우, 고객은 프로젝트의 일부로 SCM에 커밋되고 프로젝트에 종속되어 있는 어떤 항목에서도 참조되는 로컬 파일 시스템 기반의 Maven 저장소에 패키지를 저장할 수 있습니다. 리포지토리는 아래 그림과 같이 프로젝트 프롬프트에서 선언됩니다.
 
