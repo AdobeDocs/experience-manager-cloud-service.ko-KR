@@ -2,7 +2,7 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 1. 파이프라인 **설정** 화면이 표시됩니다. Select the branch and click **Next**.
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. 배포 옵션을 구성합니다.
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    트리거를 정의하여 파이프라인을 시작할 수 있습니다.
 
@@ -80,7 +80,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 1. 프로덕션 파이프라인 설정에는 경험 감사로 레이블이 지정된 세 번째 탭이 **포함됩니다**.
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    이 옵션은 경험 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 포함할 URL 경로를 수동으로 입력할 수 있습니다. 최대 25개의 행을 포함할 수 있습니다. 이 섹션에 사용자가 제출한 페이지가 없는 경우 사이트의 홈 페이지가 기본 경험 감사에 포함됩니다.
 
@@ -94,7 +94,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
    >[!NOTE]
    >경험 감사 단계를 활성화하려면 파이프라인을 편집하고 선택적으로 페이지를 추가해야 합니다. 자세한 내용은 [알려진 문제](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 를 참조하십시오.
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. 파이프라인 **편집** 화면에서 **저장을** 클릭합니다. 이제 **개요** 페이지에 프로그램 **배포** 카드가 표시됩니다. 프로그램 **을** 배포하려면 [배포] 단추를 클릭합니다.
 
