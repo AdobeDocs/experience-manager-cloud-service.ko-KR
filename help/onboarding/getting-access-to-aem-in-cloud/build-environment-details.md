@@ -2,9 +2,9 @@
 title: 빌드 환경 세부 사항
 description: 빌드 환경 세부 사항 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,10 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
 
 * 다른 패키지는 [아래](#installing-additional-system-packages)설명에 따라 빌드 시간에 설치할 수 있습니다.
 * 모든 빌드는 본래 환경에서 수행됩니다.빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
-* Maven은 항상 명령을 사용하여 실행됩니다. *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:pref-agent package*
+* Maven은 항상 다음 세 개의 명령으로 실행됩니다.
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
 * Maven은 공개 Adobe Artifact 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 **구성됩니다** . (자세한 내용은 [Adobe Public Maven Repository](https://repo.adobe.com/) 를 참조하십시오.)
 
 >[!NOTE]
