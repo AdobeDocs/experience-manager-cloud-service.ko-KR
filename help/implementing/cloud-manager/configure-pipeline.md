@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -90,9 +90,6 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
    자세한 내용은 [경험 감사 결과](/help/implementing/cloud-manager/experience-audit-testing.md) 이해를 참조하십시오.
 
    새 **페이지 무시** 추가를 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다. 경로를 추가한 후 저장을 **클릭합니다**.
-
-   >[!NOTE]
-   >경험 감사 단계를 활성화하려면 파이프라인을 편집하고 선택적으로 페이지를 추가해야 합니다. 자세한 내용은 [알려진 문제](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 를 참조하십시오.
 
    ![](assets/exp-audit2.png)
 
