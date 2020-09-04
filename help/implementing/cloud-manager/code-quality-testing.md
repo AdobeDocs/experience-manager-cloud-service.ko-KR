@@ -2,7 +2,7 @@
 title: 코드 품질 테스트 - Cloud Services
 description: 코드 품질 테스트 - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 ## 잘못된 양질 처리 {#dealing-with-false-positives}
 
-품질 스캔 프로세스는 완벽하지 않으며, 실제로 문제가 되지 않는 문제를 잘못 식별하기도 합니다. 이를 &#39;거짓 긍정&#39;이라고 한다.
+품질 스캔 프로세스는 완벽하지 않으며, 실제로 문제가 되지 않는 문제를 잘못 식별하기도 합니다. 이를 *거짓 양성이라고 한다*.
 
 이러한 경우, 소스 코드에 주석 달기 시 규칙 ID를 주석 속성으로 지정하는 표준 Java `@SuppressWarnings` 주석으로 주석을 달 수 있습니다. 예를 들어, 한 가지 일반적인 문제는 하드코딩된 암호를 검색하는 SonarQube 규칙이 하드 코딩된 암호를 식별하는 방법에 대해 공격적일 수 있다는 것입니다.
 
