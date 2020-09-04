@@ -2,7 +2,7 @@
 title: 테스트 결과 이해 - Cloud Services
 description: 테스트 결과 이해 - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 736a7c8d56a957e511451b0ba06affd9643f75e5
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 2%
@@ -213,7 +213,7 @@ Cloud Manager의 콘텐츠 감사 기능을 사용하면 최종 사용자가 사
 
 각 테스트 유형(성능, 접근성, SEO, 우수 사례 및 PWA)에 대한 집계 수준 점수가 있습니다.
 
-집계 수준 점수는 실행에 포함된 페이지의 평균 점수를 가져옵니다. 집계 수준의 변경은 현재 실행 내의 페이지의 평균 점수를 이전 실행의 평균 점수와 비교하여 실행 간에 구성된 페이지 컬렉션이 변경된 경우에도 나타냅니다.
+집계 수준 점수는 실행에 포함된 페이지의 평균 점수를 가져옵니다. 집계 수준의 변경은 현재 실행 내의 페이지의 평균 점수를 이전 실행의 평균 점수와 비교하여, 포함하여 구성된 페이지의 컬렉션이 실행 간에 변경된 경우에도 나타냅니다.
 
 변경 지표의 값은 다음 중 하나일 수 있습니다.
 
@@ -225,7 +225,7 @@ Cloud Manager의 콘텐츠 감사 기능을 사용하면 최종 사용자가 사
 
 * **N/A** - 비교할 이전 점수가 없습니다.
 
-   ![](assets/content-audit-test1.png)
+   <!-- ![](assets/content-audit-test1.png) -->
 
 #### 페이지 수준 점수 {#page-level-scores}
 
@@ -233,5 +233,5 @@ Cloud Manager의 콘텐츠 감사 기능을 사용하면 최종 사용자가 사
 
 개별 페이지의 세부 사항을 클릭하면 평가된 페이지의 요소에 대한 정보와 개선 가능성이 감지되는 문제를 해결하는 지침을 제공합니다. 테스트 및 관련 지침의 세부 사항은 Google Lighthouse에서 제공합니다.
 
-![](assets/page-level-scores.png)
+<!-- ![](assets/page-level-scores.png) -->
 
