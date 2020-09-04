@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의 AEM에서 CDN
 description: 클라우드 서비스로서의 AEM에서 CDN
 translation-type: tm+mt
-source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
+source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '689'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만�
 Adobe의 특별 CDN을 사용하여 컨텐츠 전달을 준비하려면 다음을 수행합니다.
 
 1. 이 정보가 들어 있는 보안 양식에 대한 링크를 공유하여 서명된 SSL 인증서와 비밀 키를 Adobe에 제공합니다. 이 작업에 대한 고객 지원 부서에 문의하십시오.
-   **참고:** Cloud Service으로 AEM은 DV(Domain Validated) 인증서를 지원하지 않습니다.
+   **참고:** Cloud Service으로 AEM은 DV(Domain Validated) 인증서를 지원하지 않습니다. 또한 2048비트 RSA 개인 키가 일치하는 신뢰할 수 있는 인증 기관(CA)의 X.509 TLS 인증서여야 합니다.
 1. 고객 지원에 알림:
    * 프로그램 id 및 환경 id로 정의된 대로 지정된 환경과 연결해야 하는 사용자 지정 도메인이 작성자 측의 사용자 지정 도메인은 지원되지 않습니다.
    * 지정된 환경으로 트래픽을 제한하기 위해 IP 허용 목록에 추가가 필요한 경우
