@@ -1,10 +1,10 @@
 ---
-title: 알림 - 클라우드 서비스
-description: 알림 - 클라우드 서비스
+title: 알림 - Cloud Service
+description: 알림 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '192'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 >
 >승인 및 예약된 알림은 비즈니스 소유자, 프로그램 관리자 및 배포 관리자 역할의 사용자에게만 전송됩니다.
 
-알림은 [!UICONTROL Cloud Manager] UI(사용자 인터페이스)와 Adobe [!UICONTROL Experience Cloud]전체에서 사이드바에 나타납니다.
+알림은 [!UICONTROL Cloud Manager] UI(사용자 인터페이스)의 사이드바와 Adobe [!UICONTROL Experience Cloud]전체에 표시됩니다.
 ![](assets/notify-1.png)
 
 헤더에서 벨 아이콘을 클릭하여 사이드바를 열고 아래 그림과 같이 알림을 확인합니다.
@@ -32,11 +32,10 @@ ht-degree: 1%
 
 기본적으로 알림은 Adobe [!UICONTROL Experience Cloud] 솔루션 간 웹 사용자 인터페이스에서 사용할 수 있습니다. 또한 개별 사용자는 이메일을 통해 즉시 또는 다이제스트할 수 있는 알림을 선택할 수 있습니다.
 
-
-그러면 Adobe [!UICONTROL Experience Cloud의 알림 환경 설정 화면이 표시됩니다].
+그러면 사용자가 Adobe [!UICONTROL Experience Cloud의 [알림 환경 설정] 화면으로 이동합니다].
 
 사용자는 이메일 알림을 켜고 이메일을 통해 수신하려는 알림 유형을 선택할 수 있습니다(선택 사항).
 
 >[!NOTE]
 >
->아래와 같이 Adobe [!UICONTROL Experience Cloud]에서 디지털 처리를 활성화할 수도 있습니다.
+>Adobe [!UICONTROL Experience Cloud에서 음성을 활성화할 수도 있습니다].
