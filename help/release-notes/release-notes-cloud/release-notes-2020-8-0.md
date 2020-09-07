@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.8.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.8.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: 5a3a8638bbb9fc8c0b28929bcc9c91c404d608d3
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 6%
@@ -24,7 +24,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 
 * 페이지 및 하위 페이지(페이지 트리)를 이전 버전으로 [복원하는 기능](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* AEM SPA Editor에서 론치를 만들 수 있습니다.
+* AEM [SPA Editor에서 론치](/help/sites-cloud/authoring/launches/overview.md) 생성 [기능](/help/implementing/developing/spa/introduction.md)
 
 ## [!DNL Adobe Experience Manager Assets] cloud service {#assets}
 
