@@ -4,9 +4,9 @@ description: 필터 패널을 사용하여 AEM에서 필요한 에셋을 찾는 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
+source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4525'
 ht-degree: 0%
 
 ---
@@ -106,13 +106,13 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 자산 사용자 인터페이스에서 자산의 속성 페이지를 엽니다. 고급 **[!UICONTROL 을]** 클릭하고 검색 키워드 **[!UICONTROL 를]** 위한 **[!UICONTROL 격려]**&#x200B;아래에서추가를 클릭/탭합니다.
 1. 홍보 **[!UICONTROL 검색]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 **[!UICONTROL 추가를 클릭/탭합니다]**. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
-1. Click/tap **[!UICONTROL Save &amp; Close]**. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 사이에 나타납니다.
+1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 사이에 나타납니다.
 
 타깃팅된 키워드에 대한 검색 결과의 일부 자산의 등급을 강화하여 이 분류를 장점으로 사용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 내용은 AEM에서 [검색을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*검색 결과의 등급 지정 방법과 등급에 영향을 주는 방법을 이해합니다.*
+*비디오:검색 결과의 등급 지정 방법과 등급에 영향을 주는 방법을 이해합니다.*
 
 ## Advanced search {#scope}
 
@@ -241,7 +241,7 @@ AEM 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원�
 
 ![자산 선택기에서 자산 찾아보기 및 선택](assets/assetpicker.png)
 
-자산 선택기에서 자산 찾아보기 및 선택
+*그림:자산 선택기에서 자산을 검색하고 선택합니다.*
 
 ## 제한 사항 {#limitations}
 
@@ -263,8 +263,8 @@ AEM Assets의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 * 인사이트 술어를 사용하여 다양한 크리에이티브 앱에서 얻은 사용 통계를 기반으로 지원되는 자산을 검색합니다. 사용 데이터는 자산이 카테고리가 표시되는 사용량 점수, 노출 횟수, 클릭 수 및 미디어 채널로 그룹화됩니다.
 * 선택 영역에서 사용할 검색 결과 또는 필터링된 검색 결과를 모두 선택하려면 확인란을 선택합니다. 현재 사용자 보기에 표시되는 자산 수에 관계없이 검색된 모든 자산을 선택합니다. 예를 들어 선택한 모든 자산을 다운로드하거나, 선택한 모든 자산에 대해 메타데이터 속성을 일괄 업데이트하거나, 선택한 자산을 컬렉션에 추가할 수 있습니다.
 * 필수 메타데이터가 포함되지 않은 자산을 검색하려면 [필수 메타데이터를 참조하십시오](#mandatorymetadata).
-* 검색은 모든 메타데이터 필드를 사용합니다. 12를 검색하는 것과 같은 일반 검색은 일반적으로 많은 결과를 반환합니다. 더 나은 결과를 얻으려면 큰 따옴표(작은 따옴표가 아님)를 사용하거나 숫자가 특수 문자(예: *shoe12*)가 없는 단어에 인접하는지 확인합니다.
-* 전체 텍스트 검색은 -,^ 등과 같은 연산자를 지원합니다. 이러한 문자를 문자열 리터럴으로 검색하려면 검색 표현식을 큰 따옴표로 묶습니다. 예를 들어 노트북 - Beauty 대신 &quot;Notebook - Beauty&quot;를 사용합니다.
+* 검색은 모든 메타데이터 필드를 사용합니다. 12를 검색하는 것과 같은 일반 검색은 일반적으로 많은 결과를 반환합니다. 더 나은 결과를 얻으려면 큰 따옴표(작은 따옴표가 아님)를 사용하거나 숫자가 특수 문자 없이 단어에 인접하는지 확인합니다(예: `shoe12`).
+* 전체 텍스트 검색은 `-` 및 `^`등의 연산자를 지원합니다. 이러한 문자를 문자열 리터럴으로 검색하려면 검색 표현식을 큰 따옴표로 묶습니다. 예를 들어, 대신 `"Notebook - Beauty"` 를 사용합니다 `Notebook - Beauty`.
 * 검색 결과가 너무 많으면 원하는 자산에 대해 검색 [범위를](#scope) 0으로 제한합니다. 특정 파일 유형, 특정 위치, 특정 메타데이터 등 원하는 에셋을 보다 효과적으로 찾는 방법을 알고 있을 때 가장 적합합니다.
 
 * **태그 지정**:태그를 사용하면 보다 효율적으로 검색 및 검색할 수 있는 자산을 분류할 수 있습니다. Tagging을 사용하면 적절한 분류법을 다른 사용자 및 워크플로우에 전파할 수 있습니다. AEM은 사용 및 트레이닝을 통해 자산에 더 잘 태그를 지정할 수 있는 Adobe Sensei의 지능적인 서비스를 사용하여 에셋에 자동으로 태그를 지정하는 방법을 제공합니다. 자산을 검색할 때 계정에서 기능이 활성화되면 스마트 태그가 포함됩니다. 내장된 검색 기능과 함께 작동합니다. 검색 [동작을 참조하십시오](#searchbehavior). 검색 결과가 표시되는 순서를 최적화하기 위해 일부 특정 자산의 검색 순위를 [높일](#searchrank) 수 있습니다.
@@ -277,7 +277,7 @@ AEM Assets의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 
 ![따옴표가 있는 경우와 없는 경우 검색 동작](assets/search_with_quotes.gif)
 
-따옴표가 있는 경우와 없는 경우 검색 동작
+*그림:따옴표가 있는 경우와 없는 경우에는 검색 동작을 참조하십시오.*
 
 **별표 와일드카드를 사용하여 검색**:검색을 확장하려면 검색어 앞이나 뒤에 별표를 사용하여 문자 수에 관계없이 검색어를 찾습니다. 예를 들어 별표 없이 실행만 검색해도 변형된 단어(메타데이터에 포함)가 포함된 에셋은 반환되지 않습니다. 별표는 문자 수에 관계없이 쓰인다. 예,
 
@@ -288,7 +288,7 @@ AEM Assets의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 
 ![예를 사용하여 자산 검색에서 별표 와일드카드의 사용](assets/search_with_asterisk_run.gif)
 
-예를 사용하여 자산 검색에서 별표 와일드카드의 사용
+*그림:예를 사용하여 자산 검색에서 별표 와일드카드의 사용을 보여 줍니다.*
 
 **물음표 와일드카드로 검색**:검색을 확장하려면 하나 이상의 &#39;?&#39;를 사용하십시오. 문자를 정확하게 개수와 일치시킵니다. 예를 들어 다음 그림에서는
 
@@ -300,7 +300,7 @@ AEM Assets의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 
 ![예를 사용하여 자산 검색에서 물음표 와일드카드 사용](assets/search_with_questionmark_run.gif)
 
-예를 사용하여 자산 검색에서 물음표 와일드카드 사용
+*그림:예를 사용하여 자산 검색에서 물음표 와일드카드의 사용을 보여 줍니다.*
 
 **키워드 제외**:키워드를 포함하지 않는 자산을 검색하려면 대시를 사용합니다. 예를 들어 `running -shoe` 쿼리는 포함되지만 포함되지 않은 자산을 `running`반환합니다 `shoe`. 마찬가지로 쿼리는 포함되지만 포함되지 않은 자산 `camp -night` 을 `camp` `night`반환합니다. 쿼리는 `camp-night` 와 둘 다 포함된 자산을 `camp` 반환합니다 `night`.
 
@@ -312,6 +312,7 @@ AEM Assets의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
+-->
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -346,7 +347,6 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
-
 -->
 
 <!--
@@ -361,8 +361,9 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+-->
 
-<!-- Check with gklebus if this customization is possible in AEM now.
+<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -372,20 +373,20 @@ You can search for digital assets based on one or more of the following properti
 
 | Search field | Search property values |
 |---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
 | Approved Status | Approved or Rejected. |
+| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
+| File Size | Small, Medium, or Large. |
+| Last Modified | Hour, Day, Week, Month, or Year. |
+| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
 | Orientation | Horizontal, Vertical, or Square. |
+| Publish Status | Published or Unpublished. |
 | Style | Color, or Black & White. |
+| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Video Codec | x264. Value is stored in the metadata of video renditions only. |
+| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
 | Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
 -->
 
@@ -463,6 +464,9 @@ You can search for digital assets based on one or more of the following properti
 **검색 필터/조건자를 사용할 수 없습니다**.사용자 인터페이스에서 검색 필터에 대한 예상 사용자 지정을 사용할 수 없는 경우 관리자에게 문의하여 사용 중인 모든 작성자 및 프로덕션 서버에 대해 사용자 지정이 구현되었는지 확인하십시오. 구성이 잘못되었을 수 있습니다.
 
 ## 검색 관련 문제 해결 {#troubleshoot}
+
+<!-- TBD: Expand this section.
+-->
 
 아래의 문제 및 가능한 작업 과정을 참조하십시오.
 
