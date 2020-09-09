@@ -2,7 +2,7 @@
 title: 알림 - Cloud Service
 description: 알림 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -37,5 +37,4 @@ ht-degree: 1%
 사용자는 이메일 알림을 켜고 이메일을 통해 수신하려는 알림 유형을 선택할 수 있습니다(선택 사항).
 
 >[!NOTE]
->
 >Adobe [!UICONTROL Experience Cloud에서 음성을 활성화할 수도 있습니다].
