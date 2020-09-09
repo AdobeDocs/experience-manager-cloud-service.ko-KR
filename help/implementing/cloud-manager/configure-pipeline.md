@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
+source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -78,27 +78,23 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
    * **즉시** 계속 - 이 옵션을 선택하면 중요 오류가 발생할 때마다 파이프라인이 자동으로 진행됩니다. 이는 기본적으로 사용자가 각 실패를 수동으로 승인하는 것입니다.
 
 
-1. 프로덕션 파이프라인 설정에는 경험 감사로 레이블이 지정된 세 번째 탭이 **포함됩니다**.
+1. 프로덕션 파이프라인 설정에는 경험 감사로 레이블이 지정된 세 번째 탭이 **포함됩니다**. 이 옵션은 경험 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 사용자 지정 링크를 정의하려면 입력 필드를 완료해야 합니다.
 
    ![](assets/setup-3.png)
 
-   이 옵션은 경험 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 사용자 지정 링크를 정의하려면 입력 필드를 완료해야 합니다.
+   새 **페이지 무시** 추가를 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다.
 
    예를 들어 경험 감사 `https://wknd.site/us/en/about-us.html` 에 포함하려면 이 필드 `us/en/about-us.html` 에 경로를 입력합니다.
 
-   ![](assets/set-up-5.png)
+   ![](assets/exp-audit4.png)
 
-   테이블에 표시되는 URL이 됩니다 `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`.
+   테이블에 표시되는 URL이 됩니다 `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`.
 
-   ![](assets/set-up-4.png)
+   ![](assets/exp-audit5.png)
 
    최대 25개의 행을 포함할 수 있습니다. 이 섹션에 사용자가 제출한 페이지가 없는 경우, 기본적으로 사이트의 홈 페이지가 경험 감사에 포함됩니다.
 
    자세한 내용은 [경험 감사 결과](/help/implementing/cloud-manager/experience-audit-testing.md) 이해를 참조하십시오.
-
-   새 **페이지 무시** 추가를 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다. 경로를 추가한 후 저장을 **클릭합니다**.
-
-   ![](assets/exp-audit2.png)
 
    >[!NOTE]
    > 구성된 페이지는 서비스에 전송되어 성능, 접근성, SEO(검색 엔진 최적화), 우수 사례 및 PWA(점진적 웹 앱) 테스트에 따라 평가됩니다.
