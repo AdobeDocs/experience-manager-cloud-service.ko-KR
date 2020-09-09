@@ -2,7 +2,7 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
+source-git-commit: 044d3498749ea79bbf920e7eb6354750a626ffc7
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 0%
@@ -88,7 +88,9 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
    ![](assets/exp-audit4.png)
 
-   테이블에 표시되는 URL이 됩니다 `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`.
+   테이블에 표시되는 URL은 다음과 같습니다.
+
+   `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
    ![](assets/exp-audit5.png)
 
