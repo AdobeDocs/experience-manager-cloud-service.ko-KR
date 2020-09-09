@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
+source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -82,9 +82,9 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
    ![](assets/setup-3.png)
 
-   새 **페이지 무시** 추가를 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다.
+   새 페이지 **추가를** 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다.
 
-   예를 들어 경험 감사 `https://wknd.site/us/en/about-us.html` 에 포함하려면 이 필드 `us/en/about-us.html` 에 경로를 입력합니다.
+   예를 들어 경험 감사 `https://wknd.site/us/en/about-us.html` 에 포함하려면 이 필드 `us/en/about-us.html` 에 경로를 입력하고 **저장을 클릭합니다**.
 
    ![](assets/exp-audit4.png)
 
