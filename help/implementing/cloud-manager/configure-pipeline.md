@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -82,16 +82,26 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
    ![](assets/setup-3.png)
 
-   이 옵션은 경험 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 포함할 URL 경로를 수동으로 입력할 수 있습니다. 최대 25개의 행을 포함할 수 있습니다. 이 섹션에 사용자가 제출한 페이지가 없는 경우 사이트의 홈 페이지가 기본 경험 감사에 포함됩니다.
+   이 옵션은 경험 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 사용자 지정 링크를 정의하려면 입력 필드를 완료해야 합니다.
 
-   >[!NOTE]
-   > 구성된 페이지는 서비스에 전송되어 성능, 접근성, SEO(검색 엔진 최적화), 우수 사례 및 PWA(점진적 웹 앱) 테스트에 따라 평가됩니다.
+   예를 들어 경험 감사 `https://wknd.site/us/en/about-us.html` 에 포함하려면 이 필드 `us/en/about-us.html` 에 경로를 입력합니다.
+
+   ![](assets/set-up-5.png)
+
+   테이블에 표시되는 URL이 됩니다 `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`.
+
+   ![](assets/set-up-4.png)
+
+   최대 25개의 행을 포함할 수 있습니다. 이 섹션에 사용자가 제출한 페이지가 없는 경우, 기본적으로 사이트의 홈 페이지가 경험 감사에 포함됩니다.
 
    자세한 내용은 [경험 감사 결과](/help/implementing/cloud-manager/experience-audit-testing.md) 이해를 참조하십시오.
 
    새 **페이지 무시** 추가를 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다. 경로를 추가한 후 저장을 **클릭합니다**.
 
    ![](assets/exp-audit2.png)
+
+   >[!NOTE]
+   > 구성된 페이지는 서비스에 전송되어 성능, 접근성, SEO(검색 엔진 최적화), 우수 사례 및 PWA(점진적 웹 앱) 테스트에 따라 평가됩니다.
 
 1. 파이프라인 **편집** 화면에서 **저장을** 클릭합니다. 이제 **개요** 페이지에 프로그램 **배포** 카드가 표시됩니다. 프로그램 **을** 배포하려면 [배포] 단추를 클릭합니다.
 
