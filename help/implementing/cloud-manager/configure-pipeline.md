@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 044d3498749ea79bbf920e7eb6354750a626ffc7
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
    * **즉시** 계속 - 이 옵션을 선택하면 중요 오류가 발생할 때마다 파이프라인이 자동으로 진행됩니다. 이는 기본적으로 사용자가 각 실패를 수동으로 승인하는 것입니다.
 
 
-1. 프로덕션 파이프라인 설정에는 경험 감사로 레이블이 지정된 세 번째 탭이 **포함됩니다**. 이 옵션은 경험 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 사용자 지정 링크를 정의하려면 입력 필드를 완료해야 합니다.
+1. 프로덕션 파이프라인 설정에는 경험 감사로 레이블이 지정된 세 번째 탭이 **포함됩니다**. 이 옵션은 경험 감사에 항상 포함되어야 하는 URL 경로에 대한 표를 제공합니다. 사용자는 새 페이지 **추가를 클릭하여** 자신의 사용자 지정 링크를 정의해야 합니다.
 
    ![](assets/setup-3.png)
 
