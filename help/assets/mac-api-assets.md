@@ -3,7 +3,7 @@ title: Assets HTTP API in [!DNL Adobe Experience Manager].
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-자산 HTTP API를 사용하면 메타데이터, 표현물, 댓글 등 디지털 자산에 대한 CRUD(Create-Read-Update-Delete) 작업을 컨텐츠 조각을 사용한 구조화된 컨텐츠와 함께 수행할 수 [!DNL Experience Manager] 있습니다. REST API로 `/api/assets` 노출되어 구현됩니다. 여기에는 컨텐츠 조각에 대한 [지원이 포함됩니다](/help/assets/assets-api-content-fragments.md).
+자산 HTTP API를 사용하면 메타데이터, 표현물, 댓글 등 디지털 자산에 대한 CRUD(Create-Read-Update-Delete) 작업을 컨텐츠 조각을 사용한 구조화된 컨텐츠와 함께 수행할 수 [!DNL Experience Manager] 있습니다. REST API로 `/api/assets` 노출되어 구현됩니다. 여기에는 컨텐츠 조각에 대한 [지원이 포함됩니다](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 API에 액세스하려면:
 
@@ -34,13 +34,13 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 컨텐츠 [조각은](/help/assets/content-fragments/content-fragments.md) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 자산(예: 이미지 또는 문서)에 몇 가지 차이가 있으므로 컨텐츠 조각 처리에 일부 추가 규칙이 적용됩니다. `standard`
 
-자세한 내용은 Experience Manager 자산 HTTP API의 [콘텐츠 조각 지원을 참조하십시오](/help/assets/assets-api-content-fragments.md).
+자세한 내용은 Experience Manager 자산 HTTP API의 [콘텐츠 조각 지원을 참조하십시오](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Data model {#data-model}
 
 자산 HTTP API는 두 가지 주요 요소, 폴더 및 자산을 노출합니다(표준 자산의 경우).
 
-또한 컨텐츠 조각에서 구조화된 컨텐츠를 설명하는 사용자 지정 데이터 모델에 대한 보다 자세한 요소를 노출합니다. 자세한 내용은 [컨텐츠 조각 데이터 모델](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments) 을 참조하십시오.
+또한 컨텐츠 조각에서 구조화된 컨텐츠를 설명하는 사용자 지정 데이터 모델에 대한 보다 자세한 요소를 노출합니다. 자세한 내용은 [컨텐츠 조각 데이터 모델](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) 을 참조하십시오.
 
 ### 폴더 {#folders}
 
@@ -71,7 +71,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 * 원본 변환(원래 업로드된 에셋), 축소판 및 다양한 기타 표현물과 같은 여러 표현물. 추가 변환은 서로 다른 크기의 이미지, 다른 비디오 인코딩 또는 PDF 또는 Adobe InDesign 파일에서 추출한 페이지일 수 있습니다.
 * 선택적 주석.
 
-컨텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager 자산 HTTP API에서 [컨텐츠 조각 지원을 참조하십시오](/help/assets/assets-api-content-fragments.md).
+컨텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager 자산 HTTP API에서 [컨텐츠 조각 지원을 참조하십시오](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 폴더 [!DNL Experience Manager] 에는 다음 구성 요소가 있습니다.
 
@@ -124,7 +124,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 ## 폴더를 만듭니다 {#create-a-folder}
 
-새 항목을 만듭니다 `sling`. `OrderedFolder` 를 선택합니다. 노드 이름 대신 a `*` 가 제공되면 서블릿은 매개변수 이름을 노드 이름으로 사용합니다. 요청 데이터는 새 폴더의 사이렌 표시 또는 HTML 양식에서 직접 폴더를 만드는 데 유용한 이름-값 쌍 집합 `application/www-form-urlencoded` 또는 `multipart`/ `form`- `data`로 인코딩됩니다. 또한 폴더의 속성을 URL 쿼리 매개 변수로 지정할 수 있습니다.
+새 파일을 만듭니다 `sling`. `OrderedFolder` 를 선택합니다. 노드 이름 대신 a `*` 가 제공되면 서블릿은 매개변수 이름을 노드 이름으로 사용합니다. 요청 데이터는 새 폴더의 사이렌 표시 또는 HTML 양식에서 직접 폴더를 만드는 데 유용한 이름-값 쌍 집합 `application/www-form-urlencoded` 또는 `multipart`/ `form`- `data`로 인코딩됩니다. 또한 폴더의 속성을 URL 쿼리 매개 변수로 지정할 수 있습니다.
 
 제공된 경로의 상위 노드가 없는 경우 API 호출이 `500` 응답 코드와 함께 실패합니다. 폴더가 이미 있는 `409` 경우 호출은 응답 코드를 반환합니다.
 
