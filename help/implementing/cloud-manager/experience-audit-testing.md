@@ -2,9 +2,9 @@
 title: 경험 감사 테스트 - Cloud Services
 description: 경험 감사 테스트 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 경험 감사 테스트 {#experience-audit-testing}
 
-경험 감사는 Google의 오픈 소스 툴인 Cloud Manager Sites Production 파이프라인에서 사용할 수 있는 기능입니다. 이 기능은 모든 Cloud Manager 프로덕션 파이프라인에서 사용할 수 있습니다.
+Experience Audit은 Google의 오픈 소스 툴인 Google Lighthouse를 기반으로 하는 Cloud Manager Sites Production 파이프라인에서 사용할 수 있는 기능입니다. 이 기능은 모든 Cloud Manager 프로덕션 파이프라인에서 사용할 수 있습니다.
 
 배포 프로세스를 검증하고 변경 사항이 배포되었는지 확인하는 데 도움이 됩니다.
 
