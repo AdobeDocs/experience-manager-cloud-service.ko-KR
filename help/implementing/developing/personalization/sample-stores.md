@@ -2,9 +2,9 @@
 title: 샘플 ContextHub 저장소 후보
 description: ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 스토어 지원자를 제공합니다
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 2%
 
 ---
@@ -112,7 +112,7 @@ aem.segmentation store 후보자가 확장합니다 [`ContextHub.Store.Persisted
 
 장치, 창, 브라우저, 날짜 및 시간과 같은 현재 클라이언트 환경에 대한 정보를 저장합니다.
 
-### 소스 위치 {#source-location-surferinfo
+### 소스 위치 {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
