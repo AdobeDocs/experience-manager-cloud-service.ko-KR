@@ -2,7 +2,7 @@
 title: ContextHub 데이터를 사용하여 페이지 미리 보기
 description: ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해주며 컨텐츠를 미리 보는 데 유용합니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 89%
@@ -12,14 +12,14 @@ ht-degree: 89%
 
 # ContextHub 데이터를 사용하여 페이지 미리 보기  {#previewing-pages-using-contexthub-data}
 
-ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해줍니다. ContextHub 도구 모음은 ContextHub 저장소의 데이터로 판별되는 컨텐츠를 미리 보는 데 유용합니다.<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
+ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해줍니다. ContextHub 도구 모음은 ContextHub 저장소의 데이터로 판별되는 컨텐츠를 미리 보는 데 유용합니다.
 
 도구 모음은 하나 이상의 UI 모듈을 포함하는 일련의 UI 모드로 구성됩니다.
 
 * UI 모드는 도구 모음의 왼쪽에 표시되는 아이콘입니다. 아이콘을 클릭하거나 탭하면 포함된 UI 모듈이 도구 모음에 표시됩니다.
 * UI 모듈은 하나 이상의 ContextHub 저장소에서 가져온 데이터를 표시합니다. 일부 UI 모듈에서는 저장소 데이터를 조작할 수도 있습니다.
 
-ContextHub는 몇 가지 UI 모드와 UI 모듈을 설치합니다. 관리자가 다른 것들을 표시하도록 ContextHub를 구성했을 수 있습니다.<!--ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.-->
+ContextHub는 몇 가지 UI 모드와 UI 모듈을 설치합니다. 관리자가 다른 것들을 표시하도록 [ContextHub를 구성](/help/implementing/developing/personalization/configuring-contexthub.md)했을 수 있습니다.
 
 ## ContextHub 도구 모음 표시 {#revealing-the-contexthub-toolbar}
 
