@@ -1,9 +1,10 @@
 ---
-sub-product: Cloud Service으로 AEM Commerce
-user-guide-title: Cloud Service으로 AEM Commerce
+sub-product: CLOUD SERVICE으로 AEM Commerce
+user-guide-title: CLOUD SERVICE으로 AEM Commerce
+breadcrumb-title: Commerce Guide
 user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8e7b2e2e0c5c23aa14bc4d302c417dcc27f70468
+source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 16%
@@ -13,7 +14,7 @@ ht-degree: 16%
 
 # 상거래 {#commerce}
 
-+ [Cloud Service으로 AEM Commerce](/help/commerce-cloud/home.md)
++ [CLOUD SERVICE으로 AEM Commerce](/help/commerce-cloud/home.md)
 + [소개](overview.md)
 + [주요 변경 사항](changes.md)
 + 아키텍처 {#architecture}
