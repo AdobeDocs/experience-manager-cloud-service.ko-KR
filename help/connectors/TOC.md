@@ -1,10 +1,11 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM용 커넥터
 user-guide-title: 클라우드 서비스로서의 AEM용 커넥터
+breadcrumb-title: Connectors Guide
 user-guide-description: Learn how to integrate Connectors into Experience Manager as a Cloud Service.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 100%
 
