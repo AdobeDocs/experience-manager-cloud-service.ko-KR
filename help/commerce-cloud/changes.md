@@ -2,9 +2,9 @@
 title: Cloud Service으로 AEM Commerce의 주목할 만한 변경 사항
 description: Adobe Experience Manager 6.5에 비해 Cloud Service으로 AEM 커머스가 눈에 띄게 변화했다.
 translation-type: tm+mt
-source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
+source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니�
 >
 >AEM Managed Service 또는 AEM 온프레미스에서 CIF를 사용하는 방법에 대한 추가 문서는 [커머스 통합 프레임워크를 참조하십시오.](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
->[!Note]
+>[!NOTE]
 >
 >CIF Classic/Quickstart 버전의 Commerce Integration Framework는 AEM 온프레미스 오퍼링에서 매우 제한된 사용 사례를 사용할 수 있습니다. 그러나 이는 권장되지 않는 솔루션입니다.
 
