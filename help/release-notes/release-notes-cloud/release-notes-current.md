@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.9.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.9.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: a2037fb3a315db801423c33671e1885a0b655391
+source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 22%
+source-wordcount: '255'
+ht-degree: 21%
 
 ---
 
@@ -13,6 +13,12 @@ ht-degree: 22%
 # 클라우드 서비스 2020.9.0으로서의 [!DNL Adobe Experience Manager] 릴리스 노트 {#release-notes}
 
 다음 섹션에서는 클라우드 서비스 2020.9.0으로서의 Experience Manager 일반 릴리스 노트를 간략하게 설명합니다.
+
+## [!DNL Adobe Experience Manager Sites] cloud service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* 단일 페이지 애플리케이션(SPA) 편집기 Javascript SDK [가 이제 오픈 소스입니다.](/help/implementing/developing/spa/reference-materials.md)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -31,7 +37,6 @@ ht-degree: 22%
 ### 버그 수정 {#bug-fixes-commerce}
 
 * Commerce Cloud 구성이 상속을 고려하지 않았습니다. 구성이 값을 상속하도록 수정되었습니다.
-
 
 ## Cloud Manager {#cloud-manager}
 
