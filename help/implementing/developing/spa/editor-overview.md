@@ -2,7 +2,7 @@
 title: SPA 편집기 개요
 description: SPA Editor에 대한 포괄적인 개요와 SPA Editor가 AEM에서 SPA Editor와 상호 작용한 세부 워크플로우에 대해 자세히 설명합니다.
 translation-type: tm+mt
-source-git-commit: 9b52d94b9f00be30c21dece9b34b0b56056dcbd6
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
@@ -36,7 +36,7 @@ SPA용 페이지 구성 요소는 JSP 또는 HTL 파일을 통해 하위 구성 
 
 ### 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해상도 및 관리는 제공된 `PageModel` 라이브러리에 위임됩니다. SPA Editor에서 초기화하고 작성하려면 SPA에서 페이지 모델 라이브러리를 사용해야 합니다. 페이지 모델 라이브러리는 npm을 통해 AEM 페이지 구성 요소에 간접적으로 `cq-react-editable-components` 제공되었습니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지를 작성할 때 페이지 편집기와의 통신을 활성화하려면 추가 라이브러리를 추가해야 `cq.authoring.pagemodel.messaging` 합니다.
+페이지 모델의 해상도 및 관리는 제공된 `PageModel` 라이브러리에 위임됩니다. SPA Editor에서 초기화하고 작성하려면 SPA에서 페이지 모델 라이브러리를 사용해야 합니다. 페이지 모델 라이브러리는 npm을 통해 AEM 페이지 구성 요소에 간접적으로 `aem-react-editable-components` 제공되었습니다. 페이지 모델은 AEM과 SPA 사이의 인터프리터이므로 항상 있어야 합니다. 페이지를 작성할 때 페이지 편집기와의 통신을 활성화하려면 추가 라이브러리를 추가해야 `cq.authoring.pagemodel.messaging` 합니다.
 
 SPA 페이지 구성 요소가 페이지 코어 구성 요소에서 상속되는 경우 클라이언트 라이브러리 카테고리를 사용할 수 있도록 하는 두 가지 옵션이 `cq.authoring.pagemodel.messaging` 있습니다.
 
