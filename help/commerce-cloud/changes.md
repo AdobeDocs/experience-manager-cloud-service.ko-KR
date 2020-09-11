@@ -2,9 +2,9 @@
 title: Cloud Service으로 AEM Commerce의 주목할 만한 변경 사항
 description: Adobe Experience Manager 6.5에 비해 Cloud Service으로 AEM 커머스가 눈에 띄게 변화했다.
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '624'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,7 @@ Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니�
 
 ## Experience Manager에서 Cloud Service으로 CIF Classic/Quickstart 지원 {#cif-classic}
 
-제품 카탈로그를 Experience Manager에 가져오고 저장하기 위한 제품 가져오기가 포함된 클래식 커머스 통합 프레임워크는 더 이상 Experience Manager에서 Cloud Service으로 사용할 수 없습니다. Classic CIF는 Experience Manager에서 Cloud Service으로 지원되지 않으며, Classic CIF를 사용하는 프로젝트는 Experience Manager의 CIF에 설명된 대로 지원되는 버전으로 Classic CIF 구현을 [대체해야 합니다](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/cif/help/commerce-cloud/architecture.md)
+제품 카탈로그를 Experience Manager에 가져오고 저장하기 위한 제품 가져오기가 포함된 클래식 커머스 통합 프레임워크는 더 이상 Experience Manager에서 Cloud Service으로 사용할 수 없습니다. Classic CIF는 Experience Manager에서 Cloud Service으로 지원되지 않으며, Classic CIF를 사용하는 프로젝트는 Experience Manager의 CIF에 설명된 대로 지원되는 버전으로 Classic CIF 구현을 [대체해야 합니다](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/architecture/magento.html#overview)
 
 ## CIF 배포 {#deployment}
 
@@ -33,6 +33,10 @@ Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니�
 | CIF [Venia 프로젝트를 배포하는 방법](https://github.com/adobe/aem-cif-guides-venia) | AEM 패키지 설치 | Cloud Manager를 통해 [배포 완료](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | 프로젝트는 [Cloud Manager Git 리포지토리로](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) 이동하고 [Cloud Manager를 통해 배포](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
 >[!NOTE]
+>
+>AEM Managed Service 또는 AEM 온프레미스에서 CIF를 사용하는 방법에 대한 추가 문서는 [커머스 통합 프레임워크를 참조하십시오.](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+
+>[!Note]
 >
 >CIF Classic/Quickstart 버전의 Commerce Integration Framework는 AEM 온프레미스 오퍼링에서 매우 제한된 사용 사례를 사용할 수 있습니다. 그러나 이는 권장되지 않는 솔루션입니다.
 
