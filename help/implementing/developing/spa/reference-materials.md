@@ -2,17 +2,17 @@
 title: SPA 참조 자료
 description: 단일 페이지 애플리케이션 API 참조 및 소스 코드 저장소 개요
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: ef3e40c22264e96253dc1ff322a667b4b2432450
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 3%
+source-wordcount: '127'
+ht-degree: 0%
 
 ---
 
 
-# SPA Javascript API 참조{#spa-javascript-api-references}
+# SPA 참조 자료 {#spa-reference-materials}
 
-## NMP 모듈의 API 참조 {#api-references}
+## NMP 모듈용 SPA Javascript API 참조 {#api-references}
 
 다음은 AEM SPA Editor SDK 프레임워크용 NPM 모듈의 사용 가능한 JavaScript API 참조입니다.
 
