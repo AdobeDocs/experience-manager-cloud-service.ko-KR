@@ -3,7 +3,7 @@ sub-product: 클라우드 서비스로서의 AEM용 구현
 user-guide-title: 클라우드 서비스로서의 AEM용 구현
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 7031e923c40367115c4423b561757b0f2b40878c
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 86%
@@ -73,7 +73,7 @@ ht-degree: 86%
       + [모델 라우팅](developing/spa/routing.md)
       + [통합 실행](developing/spa/launch-integration.md)
       + [서버측 렌더링](developing/spa/ssr.md)
-      + [Javascript API 참조](developing/spa/reference-materials.md)
+      + [SPA 참조 문서](developing/spa/reference-materials.md)
 + 개인화 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub 구성](developing/personalization/configuring-contexthub.md)
