@@ -2,7 +2,7 @@
 title: SPA 블루프린트
 description: 본 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크가 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -97,7 +97,7 @@ npm 모듈: [@adobe/aem-responsive-editable-components](https://www.npmjs.com/pa
 
 #### 각진 {#angular}
 
-npm 모듈: [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+npm 모듈: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## 기본 서비스 및 구성 요소 {#main-services-and-components}
 
