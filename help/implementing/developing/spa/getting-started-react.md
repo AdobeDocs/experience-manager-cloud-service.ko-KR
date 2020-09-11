@@ -2,7 +2,7 @@
 title: React를 사용하여 AEM에서 SPA 시작하기
 description: 본 문서는 샘플 SPA 응용 프로그램을 소개하고 SPA가 어떻게 구성되어 있는지를 설명하며 Repact 프레임워크를 사용하여 신속하게 자체 SPA를 바로 시작할 수 있도록 합니다.
 translation-type: tm+mt
-source-git-commit: 4652ab5a064d1ad397eb8eebd9dd92f7c8bb1c21
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 2%
@@ -48,9 +48,9 @@ AEM에서 SPA가 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -123,7 +123,7 @@ SPA의 진입점은 중요한 컨텐츠에 초점을 맞추기 위해 여기에 
 ```
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -148,7 +148,7 @@ DOM `index.js` 에서 애플리케이션을 주입할 위치를 결정하는 기
 이 앱을 렌더링하면 `index.js` 호출이 `App.js`중요한 컨텐츠에 초점을 맞춰 간소화된 버전으로 표시됩니다.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -166,7 +166,7 @@ export default withModel(App);
 페이지를 렌더링하면 `App.js` 여기에 `Page.js` 나열된 간단한 버전으로 호출됩니다.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -187,7 +187,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -230,7 +230,7 @@ AEM의 SPA는 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠�
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
