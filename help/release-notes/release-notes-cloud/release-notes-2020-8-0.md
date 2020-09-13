@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.8.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.8.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 5a3a8638bbb9fc8c0b28929bcc9c91c404d608d3
+source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1066'
 ht-degree: 6%
 
 ---
@@ -30,25 +30,24 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 비디오 트랜스코딩은 이제 비디오 비트 전송률 및 크기 구성을 지원하는 [!UICONTROL 처리 프로필] 화면의 새로운 비디오 섹션에서 에셋 마이크로서비스에서 지원됩니다(출력 형식은 H.264 코덱이 있는 MP4). 자세한 내용은 비디오 자산 [관리를 참조하십시오](/help/assets/manage-video-assets.md#transcode-video). 더 많은 트랜스코딩 옵션과 비디오 전달 [!DNL Dynamic Media] 추가 기능을 사용할 수 있습니다.
+* 비디오 트랜스코딩은 이제 에셋 마이크로서비스에서 지원됩니다. 처리 프로필 [!UICONTROL 구성의 새로운] 섹션에서 비디오 비트 전송률과 크기를 설정할 수 있습니다. 출력 형식은 H.264 코덱이 있는 MP4입니다. 자세한 내용은 비디오 자산 [관리를 참조하십시오](/help/assets/manage-video-assets.md#transcode-video). 트랜스코딩 옵션과 비디오 전달을 위한 추가 기능을 사용할 수 [!DNL Dynamic Media] 있습니다.
 
 * 새 [!DNL Experience Manager Assets] 배포에서는 스마트 태그 지정 기능이 기본적으로 구성됩니다. 수동으로 통합할 필요가 없습니다 [!DNL Adobe Developer Console]. 기존 배포에서 관리자는 스마트 태그 통합을 [전과 같이](/help/assets/smart-tags-configuration.md#aio-integration) 구성합니다.
 
 * 새로운 [에셋 다운로드 환경을 통해](/help/assets/download-assets-from-aem.md) ,
 
    * 대규모 다운로드에 대한 비동기 다운로드로 사용자가 기다리지 않아도 됩니다.
-
    * 개발자 확장성을 위한 새로운 모듈식 API
 
-* [!DNL Experience Manager] 에셋 마이크로서비스에 대한 메타데이터 추출 성능이 향상되었습니다. 전체 자산 처리 처리량을 증가시킵니다.
+* 에셋 마이크로서비스에 대한 메타데이터 추출을 통해 성능이 개선되었습니다. 전체 자산 처리 처리량을 증가시킵니다.
 
-* 계산 서비스를 사용하여 사용자 지정 메타데이터를 생성하려면 처리 프로필을 사용하십시오. 처리 [프로필을 사용하여 사용자 지정 메타데이터 참조](/help/assets/manage-metadata.md#metadata-compute-service)
+* 계산 서비스를 사용하여 사용자 지정 메타데이터를 생성하려면 처리 프로필을 사용하십시오. 처리 [프로필을 사용하여 사용자 지정 메타데이터를 참조하십시오](/help/assets/manage-metadata.md#metadata-compute-service).
 
 * 관리자가 구성할 수 있는 브랜드 포털 사용자를 위한 간소화된 다운로드 경험입니다. 경험 [다운로드 개요를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
 * 이제 브랜드 포털에서 기본 및 고품질 PDF 문서 미리 보기를 사용할 수 있습니다. 문서 [뷰어 개요를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* 이제 AEM [!DNL Dynamic Media] 에서 직접 CDN(Content Delivery Network) 캐시를 Cloud Service(사용과 반대로)로 무효화하여 몇 시간 내에 최신 자산이 제공되도록 할 수 [!DNL Dynamic Media Classic]있습니다. 다이내믹 [미디어를 통해 CDN 캐시 무효화를 참조하십시오.](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* 이제 AEM에서 직접 CDN(Content Delivery Network) 캐시를 Cloud Service(사용과 반대로) [!DNL Dynamic Media] 로 무효화할 수 [!DNL Dynamic Media Classic]있습니다. 최신 에셋이 몇 시간 내에 제공될 수 있습니다. 다이내믹 [미디어를 통해 CDN 캐시 무효화를 참조하십시오](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * 향상된 액세스 가능성 지원이 의 사용자 인터페이스 컨트롤, 탐색, 검색 및 검색 경험에 추가되었습니다 [!DNL Assets].
 
@@ -57,7 +56,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
    * 검색 필터 섹션의 아코디언 요소는 표준 확장 가능한 아코디언으로 해석됩니다. <!-- via CQ-4273103 -->
    * 태그에 태그를 적용하면 대화 상자에 태그가 트리 요소로 표시됩니다. ARIA 속성은 트리 요소에 적절히 적용되어 이제 액세스할 수 있습니다. <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3 릴리스가 출시되어 [!DNL AEM] 6.5.5와의 호환성 [!DNL Service Pack] 을 개선하고 클라이언트 OS 호환성 목록을 업데이트( [!DNL Windows] 7 및 [!DNL MacOS] 버전 10.14 이전 제거)합니다.
+* [!DNL AEM Desktop app] 2.0.3 릴리스를 지금 사용할 수 있습니다. 또한 [!DNL Experience Manager] 6.5.5 서비스 팩과의 호환성이 향상되고 클라이언트 OS 호환성 목록이 업데이트되었습니다. [!DNL Windows] 7 및 10.14 이전 버전은 지원되지 않습니다. [!DNL macOS]
 
 ### 버그 수정 [!DNL Assets] {#bugs-fixed}
 
