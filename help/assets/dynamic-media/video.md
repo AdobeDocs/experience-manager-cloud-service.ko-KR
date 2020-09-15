@@ -2,9 +2,9 @@
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
+source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
 workflow-type: tm+mt
-source-wordcount: '10052'
+source-wordcount: '10056'
 ht-degree: 1%
 
 ---
@@ -412,9 +412,9 @@ Dynamic Media는 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것
 
 ## YouTube에 비디오 게시 {#publishing-videos-to-youtube}
 
-이전에 만든 YouTube 채널에 온프레미스 AEM 비디오 자산을 직접 게시할 수 있습니다.
+AEM Assets에서 관리되는 비디오 자산을 이전에 만든 YouTube 채널에 직접 게시할 수 있습니다.
 
-비디오 자산을 YouTube에 게시하려면 태그가 있는 AEM Assets을 설정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
+비디오 자산을 YouTube에 게시하려면 AEM Assets의 비디오 자산에 태그를 태그로 지정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
 
 YouTube는 자체 인코딩을 수행합니다. 따라서 AEM에 업로드된 원본 비디오 파일은 Dynamic Media 인코딩이 생성된 모든 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media를 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 비디오를 처리할 필요가 있습니다.
 
