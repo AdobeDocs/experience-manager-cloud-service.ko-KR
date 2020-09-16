@@ -2,10 +2,10 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
 workflow-type: tm+mt
-source-wordcount: '2091'
-ht-degree: 77%
+source-wordcount: '2189'
+ht-degree: 71%
 
 ---
 
@@ -51,19 +51,37 @@ CRA(Cloud Readiness Analyzer)를 실행하기 위한 중요한 고려 사항을 
 
    ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. **클라우드 준비 분석기**&#x200B;를 클릭하면 도구에서 보고서 생성을 시작하고 사용 가능한 경우 보고서를 표시합니다.
+1. [보고서 **생성** ]을 클릭하여 클라우드 준비 분석기를 실행합니다.
 
-   >[!NOTE]
-   >전체 보고서를 보려면 페이지를 아래로 스크롤해야 합니다.
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
+1. CRA가 보고서를 생성하는 동안 화면에 있는 도구가 만든 진행 상황을 볼 수 있습니다. 분석된 항목 수와 발견된 결과 수를 표시합니다.
 
-1. CRA 보고서가 생성되고 표시되면 아래 그림과 같이 **CSV**&#x200B;를 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드할 수 있는 옵션이 생깁니다.
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
+
+1. CRA 보고서가 생성되면 요약 및 결과 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 특정 검색 결과에 대한 자세한 내용을 보려면 표의 검색 유형에 해당하는 숫자를 클릭하면 됩니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+
+위의 작업은 보고서에서 해당 검색 위치를 자동으로 스크롤합니다.
+
+![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
 
    >[!NOTE]
    >**보고서 새로 고침**&#x200B;을 클릭하여 CRA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+
+   >[!NOTE]
+   >보고서를 다시 생성하는 동안 아래 이미지에 표시된 대로 완료된 백분율로 진행 상태를 표시합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+
 
 ### Adobe Experience Manager 6.2 및 6.1 {#aem-specific-versions}
 
