@@ -1,11 +1,11 @@
 ---
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
-translation-type: ht
-source-git-commit: a0e58c626f94b778017f700426e960428b657806
-workflow-type: ht
-source-wordcount: '1871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+workflow-type: tm+mt
+source-wordcount: '2091'
+ht-degree: 77%
 
 ---
 
@@ -146,29 +146,33 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 
 이 인터페이스에서는 다음 HTTP 헤더를 사용합니다.
 
-* `Cache-Control: max-age=<seconds>`: 캐시 새로 고침 수명을 초 단위로 지정합니다. ([RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)를 참조하십시오.)
-* `Prefer: respond-async`: 서버가 비동기적으로 응답해야 함을 나타냅니다. ([RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)을 참조하십시오.)
+* `Cache-Control: max-age=<seconds>`:캐시 신선도 수명을 초 단위로 지정합니다. ([RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)를 참조하십시오.)
+* `Prefer: respond-async`:서버가 비동기적으로 응답하도록 지정합니다. ([RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)을 참조하십시오.)
+* `Prefer: return=minimal`:서버가 최소한의 응답을 반환하도록 지정합니다. ([RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)을 참조하십시오.)
 
 다음 HTTP 쿼리 매개 변수는 HTTP 헤더를 쉽게 사용할 수 없을 때 편리하게 사용할 수 있습니다.
 
-* `max-age` (숫자, 선택 사항): 캐시 새로 고침 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 신선도 수명은 86,400초입니다. 즉, 이 매개 변수 또는 해당 헤더가 없으면 새 캐시가 24시간 동안 요청을 제공하는 데 사용되어 보고서를 다시 생성해야 합니다. `max-age=0`을 사용하면 캐시가 지워지고 보고서의 재생성이 시작됩니다. 이 요청 직후 새로 고침 수명은 이전의 0이 아닌 값으로 재설정됩니다.
-* `respond-async` (부울, 선택 사항): 응답이 비동기식으로 제공되도록 지정합니다. 캐시가 오래된 경우 `respond-async=true`을 사용하면 서버가 보고서가 생성되어 캐시가 새로 고쳐질 때까지 기다리지 않고 `202 Accepted, processing cache` 응답을 반환합니다. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. 기본값은 `false`입니다. 즉, 이 매개 변수 또는 해당 헤더가 없으면 서버가 동기적으로 응답합니다. 이 경우 상당한 시간이 필요하고 HTTP 클라이언트에 대한 최대 응답 시간을 조정해야 합니다.
+* `max-age` (숫자, 선택 사항):캐시 신선도 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 신선도 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 빈 캐시가 24시간 동안 요청을 처리하는 데 사용되므로 캐시를 다시 생성해야 합니다. 를 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 신선도 수명을 사용하여 캐시를 강제로 지우고 보고서 재생성을 시작합니다. `max-age=0`
+* `respond-async` (부울, 선택 사항):응답이 비동기식으로 제공되도록 지정합니다. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
+* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되었거나, 곧 만료될 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. 지정된 경우 `may-refresh-cache=true`또는 지정하지 않은 경우 서버는 패턴 탐지기 및 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. 그러면 서버가 새로 고침 작업을 시작하지 않고 캐시가 비어 있거나 오래된 경우 이 경우 보고서가 비어 있게 됩니다. `may-refresh-cache=false` 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
+* `return-minimal` (부울, 선택 사항):서버의 응답에 JSON 형식의 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. 이 경우 응답 본문 `return-minimal=true`은 상태 개체로 제한됩니다. 지정된 경우 `return-minimal=false`또는 지정되지 않은 경우 전체 응답이 제공됩니다.
+* `log-findings` (부울, 선택 사항):서버가 처음 빌드하거나 새로 고칠 때 캐시 내용을 기록하도록 지정합니다. 캐시의 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 요청이 새 캐시 `log-findings=true` 를 생성하는 경우에만 발생합니다.
 
 HTTP 헤더와 해당 쿼리 매개 변수가 모두 있으면 쿼리 매개 변수가 우선시됩니다.
 
 HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방법은 다음 명령을 사용하는 것입니다.
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며 보고서가 생성되면 다른 클라이언트의 캐시에서 보거나 AEM 내의 사용자 인터페이스의 CSV 도구에서 볼 수 있습니다.
+요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며, 보고서가 생성되면 다른 클라이언트와 함께 캐시에서 열람되거나 AEM 사용자 인터페이스에서 CRA 도구를 사용하여 볼 수 있습니다.
 
 ### 응답 {#http-responses}
 
 다음 응답 값이 가능합니다.
 
-* `200 OK`: 이 응답에는 캐시의 새로 고침 수명 내에 생성된 패턴 탐지기 결과를 포함합니다.
-* `202 Accepted, processing cache`: 캐시가 오래된 상태이고 새로 고침이 진행 중임을 나타내는 비동기 응답에 대해 제공됩니다.
-* `400 Bad Request`: 요청에 오류가 있음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식([RFC 7807](https://tools.ietf.org/html/rfc7807) 참조)의 메시지를 참조하십시오.
-* `401 Unauthorized`: 요청이 승인되지 않았습니다.
+* `200 OK`:응답에 캐시의 최신 수명 내에 생성된 패턴 탐지기 결과가 포함되어 있음을 나타냅니다.
+* `202 Accepted`:캐시가 오래되었음을 나타내는 데 사용됩니다. 이 응답 `respond-async=true` 과 `may-refresh-cache=true` 이 응답은 새로 고침 작업이 진행 중임을 나타냅니다. 이 응답 `may-refresh-cache=false` 은 캐시가 오래되었음을 나타냅니다.
+* `400 Bad Request`: 요청에 오류가 있음을 나타냅니다. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `401 Unauthorized`:요청이 인증되지 않았음을 나타냅니다.
 * `500 Internal Server Error`: 내부 서버 오류가 발생했음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
 * `503 Service Unavailable`: 서버가 다른 응답으로 사용 중이어서 이 요청을 적시에 처리할 수 없음을 나타냅니다. 이는 동기 요청이 수행된 경우에만 발생합니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
 
