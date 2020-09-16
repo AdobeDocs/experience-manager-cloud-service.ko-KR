@@ -3,9 +3,9 @@ title: 브랜드 포털에서 Cloud Service으로 AEM Assets 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 96a084dd0e8f250b343b616573aeedb2b83682e4
+source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1647'
 ht-degree: 32%
 
 ---
@@ -275,7 +275,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
    ![](assets/test-bpconfig4.png)
 
-   A message appears at the bottom of the page that your *test package is successfully delivered*.
+   테스트 패키지가 *성공적으로 배달된다는 메시지가 나타납니다*.
 
    >[!NOTE]
    >
