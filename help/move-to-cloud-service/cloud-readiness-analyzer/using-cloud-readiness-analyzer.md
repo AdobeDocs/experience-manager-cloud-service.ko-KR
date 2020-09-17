@@ -2,7 +2,7 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -62,20 +62,20 @@ CRA(Cloud Readiness Analyzer)를 실행하기 위한 중요한 고려 사항을 
 
 1. CRA 보고서가 생성되면 요약 및 결과 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 특정 검색 결과에 대한 자세한 내용을 보려면 표의 검색 유형에 해당하는 숫자를 클릭하면 됩니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    위의 작업은 보고서에서 해당 검색 위치를 자동으로 스크롤합니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >**보고서 새로 고침**&#x200B;을 클릭하여 CRA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >보고서를 다시 생성하는 동안 아래 이미지에 표시된 대로 완료된 백분율로 진행 상태를 표시합니다.
@@ -172,7 +172,7 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 
 * `max-age` (숫자, 선택 사항):캐시 신선도 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 신선도 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 빈 캐시가 24시간 동안 요청을 처리하는 데 사용되므로 캐시를 다시 생성해야 합니다. 를 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 신선도 수명을 사용하여 캐시를 강제로 지우고 보고서 재생성을 시작합니다. `max-age=0`
 * `respond-async` (부울, 선택 사항):응답이 비동기식으로 제공되도록 지정합니다. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되거나, 곧 만료될 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. 지정된 경우 `may-refresh-cache=true`또는 지정하지 않은 경우 서버는 패턴 탐지기 및 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. 그러면 서버가 새로 고침 작업을 시작하지 않고 캐시가 비어 있거나 오래된 경우 이 경우 보고서가 비어 있게 됩니다. `may-refresh-cache=false` 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
+* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되었거나, 곧 만료될 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. 지정된 경우 `may-refresh-cache=true`또는 지정하지 않은 경우 서버는 패턴 탐지기 및 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. 그러면 서버가 새로 고침 작업을 시작하지 않고 캐시가 비어 있거나 오래된 경우 이 경우 보고서가 비어 있게 됩니다. `may-refresh-cache=false` 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
 * `return-minimal` (부울, 선택 사항):서버의 응답에 JSON 형식의 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. 이 경우 응답 본문 `return-minimal=true`은 상태 개체로 제한됩니다. 지정된 경우 `return-minimal=false`또는 지정되지 않은 경우 전체 응답이 제공됩니다.
 * `log-findings` (부울, 선택 사항):서버가 처음 빌드하거나 새로 고칠 때 캐시 내용을 기록하도록 지정합니다. 캐시의 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 요청이 새 캐시 `log-findings=true` 를 생성하는 경우에만 발생합니다.
 
