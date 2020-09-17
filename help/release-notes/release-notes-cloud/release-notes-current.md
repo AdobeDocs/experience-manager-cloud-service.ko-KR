@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.9.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.9.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
+source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 21%
+source-wordcount: '390'
+ht-degree: 20%
 
 ---
 
@@ -53,3 +53,20 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 ### 버그 수정 {#bug-fixes-cm}
 
 * 컨텐츠 감사 탭이 게시 도메인 대신 작성자 도메인을 사용하여 기본 URL을 잘못 표시했습니다.
+
+## 클라우드 준비 분석기 {#cloud-readiness-analyzer}
+
+이 섹션을 통해 Cloud Readiness Analyzer 릴리스 버전 1.1.0에 대한 새로운 기능 및 업데이트를 알아보십시오.
+
+### 새로운 기능 {#what-is-new-cra}
+
+* 클라우드 준비 분석기(CRA)에는 사용자가 CRA를 실행하기 위해 클릭하는 명시적 &quot;보고서 생성&quot; 단추를 표시하는 시작 상태 콘솔이 있습니다.
+
+* 실행 중인 CRA UI에 진행률이 표시됩니다. 분석 중인 항목과 실행 중에 발견된 결과를 표시합니다.
+
+* CRA 보고서에는 요약 및 결과의 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 검색 결과 수를 클릭하면 보고서에서 해당 검색 결과의 위치로 자동으로 스크롤됩니다.
+
+### 버그 수정 {#cra-bug-fixes}
+
+* 특정 경우에는 새로 고침을 실행한 후 CRA 보고서가 업데이트되지 않았습니다. 이 버전에서 수정되었습니다.
+
