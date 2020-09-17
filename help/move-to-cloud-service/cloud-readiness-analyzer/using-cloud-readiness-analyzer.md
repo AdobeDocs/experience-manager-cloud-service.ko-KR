@@ -2,10 +2,10 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
+source-git-commit: b0ea504fe9b1f2d8eadb9fd263c983dae090cd1a
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 71%
+source-wordcount: '2209'
+ht-degree: 70%
 
 ---
 
@@ -106,7 +106,7 @@ AEM 인스턴스에서 클라우드 준비 분석기 도구를 실행하면 보�
 * **시스템 개요**: CRA가 실행된 AEM 시스템에 대한 정보
 * **카테고리 찾기**: 각 섹션에서 동일한 카테고리의 하나 이상의 발견을 처리하는 여러 섹션. 각 섹션에는 카테고리 이름, 하위 유형, 검색 횟수 및 중요도, 요약, 카테고리 설명서 링크 및 개별 검색 정보가 포함됩니다.
 
-작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다.
+작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다. 각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지 카테고리를 참조하십시오.](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
 
 아래 표에 따라 중요도 수준을 파악하십시오.
 
@@ -172,7 +172,7 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 
 * `max-age` (숫자, 선택 사항):캐시 신선도 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 신선도 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 빈 캐시가 24시간 동안 요청을 처리하는 데 사용되므로 캐시를 다시 생성해야 합니다. 를 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 신선도 수명을 사용하여 캐시를 강제로 지우고 보고서 재생성을 시작합니다. `max-age=0`
 * `respond-async` (부울, 선택 사항):응답이 비동기식으로 제공되도록 지정합니다. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되었거나, 곧 만료될 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. 지정된 경우 `may-refresh-cache=true`또는 지정하지 않은 경우 서버는 패턴 탐지기 및 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. 그러면 서버가 새로 고침 작업을 시작하지 않고 캐시가 비어 있거나 오래된 경우 이 경우 보고서가 비어 있게 됩니다. `may-refresh-cache=false` 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
+* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되거나, 곧 만료될 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. 지정된 경우 `may-refresh-cache=true`또는 지정하지 않은 경우 서버는 패턴 탐지기 및 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. 그러면 서버가 새로 고침 작업을 시작하지 않고 캐시가 비어 있거나 오래된 경우 이 경우 보고서가 비어 있게 됩니다. `may-refresh-cache=false` 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
 * `return-minimal` (부울, 선택 사항):서버의 응답에 JSON 형식의 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. 이 경우 응답 본문 `return-minimal=true`은 상태 개체로 제한됩니다. 지정된 경우 `return-minimal=false`또는 지정되지 않은 경우 전체 응답이 제공됩니다.
 * `log-findings` (부울, 선택 사항):서버가 처음 빌드하거나 새로 고칠 때 캐시 내용을 기록하도록 지정합니다. 캐시의 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 요청이 새 캐시 `log-findings=true` 를 생성하는 경우에만 발생합니다.
 
