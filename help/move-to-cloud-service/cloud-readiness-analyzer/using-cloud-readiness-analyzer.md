@@ -2,7 +2,7 @@
 title: 클라우드 준비 분석기 사용
 description: 클라우드 준비 분석기 사용
 translation-type: tm+mt
-source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
+source-git-commit: 99e721e373f34d72f75393b0771a069b9c1f8631
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 70%
@@ -106,7 +106,7 @@ AEM 인스턴스에서 클라우드 준비 분석기 도구를 실행하면 보�
 * **시스템 개요**: CRA가 실행된 AEM 시스템에 대한 정보
 * **카테고리 찾기**: 각 섹션에서 동일한 카테고리의 하나 이상의 발견을 처리하는 여러 섹션. 각 섹션에는 카테고리 이름, 하위 유형, 검색 횟수 및 중요도, 요약, 카테고리 설명서 링크 및 개별 검색 정보가 포함됩니다.
 
-작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다. 각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지 카테고리를 참조하십시오.](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
+작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다. 각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지 카테고리를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 아래 표에 따라 중요도 수준을 파악하십시오.
 
