@@ -10,7 +10,7 @@ audience: developer
 kt: 4279
 thumbnail: 4279-customize-cif.jpg
 translation-type: tm+mt
-source-git-commit: 34b4dc697d3fb8c3f81e16ee3cab5d768e42b99c
+source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 1%
@@ -176,7 +176,7 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [Magento GraphQL�
    }
    ```
 
-   ![샘플 그래픽QL 응답](../assets/customize-cif-components/sample-graphql-query.png)
+   ![GraphQL 응답 샘플](../assets/customize-cif-components/sample-graphql-query.png)
 
    Yes 값은 **1** 의 정수입니다 ****. 이 기능은 Java로 GraphQL 쿼리를 작성할 때 유용합니다.
 
