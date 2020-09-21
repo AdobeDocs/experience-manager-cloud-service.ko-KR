@@ -4,10 +4,10 @@ user-guide-title: 클라우드 서비스로서의 AEM에서 컨텐츠 작성
 breadcrumb-title: Authoring Guide
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '204'
+ht-degree: 98%
 
 ---
 
@@ -73,6 +73,7 @@ ht-degree: 100%
       + [대상자 관리](authoring/personalization/audiences.md)
       + [오퍼 생성 및 관리](authoring/personalization/offers.md)
       + [세그멘테이션 이해](authoring/personalization/segmentation.md)
+      + [ContextHub로 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + 클라우드 서비스로서의 AEM과 통합 {#integrations}
    + [Adobe Analytics와 통합](integrating/integrating-adobe-analytics.md)
    + [Adobe Target과 통합](integrating/integrating-adobe-target.md)
