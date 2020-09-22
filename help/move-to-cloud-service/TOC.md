@@ -4,10 +4,10 @@ user-guide-title: 클라우드 서비스로서 AEM으로 이동
 breadcrumb-title: Move Guide
 user-guide-description: Understand the transition journey to Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: f45d50c63ca9a4a226ce84cb62fee5dd58ad68ca
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 97%
+source-wordcount: '72'
+ht-degree: 94%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 97%
       + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 코드 리팩터링 도구 {#refactoring-tools}
    + [일관된 경험](/help/move-to-cloud-service/unified-experience.md)
+   + [Repository Modernizer](/help/move-to-cloud-service/repo-modernizer.md)
    + [자산 워크플로우 마이그레이션](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher 변환기](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM 현대화 도구](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
