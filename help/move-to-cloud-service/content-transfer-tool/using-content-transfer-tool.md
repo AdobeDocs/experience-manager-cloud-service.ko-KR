@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
+source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 95%
+source-wordcount: '1667'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 * 컨텐츠 전송 도구의 최소 시스템 요구 사항은 AEM 6.3 이상 및 JAVA 8입니다. 더 낮은 AEM 버전을 사용하는 경우 컨텐츠 저장소를 AEM 6.5로 업그레이드해야 컨텐츠 전송 도구를 사용할 수 있습니다.
 
-* 컨텐츠 전송 도구는 다음 유형의 데이터 저장소와 함께 사용할 수 있습니다.파일 데이터 저장소, S3 데이터 저장소 및 공유 S3 데이터 저장소. 현재 Azure Blob 저장소 데이터 저장소를 지원하지 않습니다.
+* 컨텐츠 전송 도구는 다음 유형의 데이터 저장소와 함께 사용할 수 있습니다.파일 데이터 저장소, S3 데이터 저장소, 공유 S3 데이터 저장소 및 Azure Blob 저장소 데이터 저장소.
 
 * *샌드박스 환경*&#x200B;을 사용 중인 경우 환경이 2020년 6월 10일 이후 릴리스로 업그레이드되었는지 확인하십시오. *프로덕션 환경*&#x200B;을 사용하는 경우 자동으로 업데이트됩니다.
 
@@ -47,16 +47,16 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다�
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. **마이그레이션 세트 만들기**&#x200B;를 클릭하여 새 마이그레이션 세트를 만듭니다. **컨텐츠 마이그레이션 세트 세부 정보**&#x200B;가 표시됩니다.
+1. 첫 번째 마이그레이션 세트를 만들면 아래 콘솔이 나타납니다. **마이그레이션 세트 만들기**&#x200B;를 클릭하여 새 마이그레이션 세트를 만듭니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >현재 상태로 이 화면에서 기존 마이그레이션 세트를 봅니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   >기존 마이그레이션 세트가 있는 경우 콘솔에 기존 마이그레이션 세트 목록이 현재 상태로 표시됩니다.
 
 1. 아래 설명된 대로 **컨텐츠 마이그레이션 세트 세부 정보 화면**&#x200B;의 필드를 채웁니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
 
 
    1. **이름**: 마이그레이션 세트의 이름을 입력합니다.
@@ -72,13 +72,13 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다�
    1. **액세스 토큰**: 액세스 토큰을 입력합니다.
 
       >[!NOTE]
-      >`/libs/granite/migration/token.json`으로 이동하여 작성자 인스턴스에서 액세스 토큰을 검색할 수 있습니다. 액세스 토큰이 클라우드 서비스 작성자 인스턴스에서 검색됩니다.
+      >액세스 토큰 열기 단추를 사용하여 **액세스 토큰을** 검색할 수 있습니다. 대상 Cloud Service 인스턴스의 AEM 관리자 그룹에 속하는지 확인해야 합니다.
 
    1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
       1. **버전 포함**: 필요에 따라 선택합니다.
 
-      1. **포함할 경로**: 경로 브라우저를 사용하여 마이그레이션해야 하는 경로를 선택합니다.
+      1. **포함할 경로**: 경로 브라우저를 사용하여 마이그레이션해야 하는 경로를 선택합니다. 경로 선택기는 입력 또는 선택 방법으로 입력을 허용합니다.
 
          >[!IMPORTANT]
          >마이그레이션 세트를 만드는 동안 다음 경로가 제한됩니다.
@@ -92,43 +92,40 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다�
 
 1. 마이그레이션 세트는 *개요* 페이지에 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   이 화면의 모든 기존 마이그레이션 세트가 현재 상태 및 상태 정보와 함께 *개요* 페이지에 표시됩니다.
+   이 화면의 모든 기존 마이그레이션 세트가 현재 상태 및 상태 정보와 함께 *개요* 페이지에 표시됩니다. 아래에 설명된 이러한 아이콘 중 일부를 볼 수 있습니다.
 
    * *빨간색 클라우드*&#x200B;는 추출 프로세스를 완료할 수 없음을 나타냅니다.
    * *녹색 클라우드*&#x200B;는 추출 과정을 완료할 수 있음을 나타냅니다.
    * *노란색 아이콘*&#x200B;은 기존 마이그레이션 세트를 만들지 않았으며, 특정 마이그레이션은 동일한 인스턴스에 있는 다른 사용자가 작성했음을 나타냅니다.
 
-1. 개요 페이지에서 마이그레이션 세트를 선택하고 **속성**&#x200B;을 클릭하여 마이그레이션 세트 속성을 보거나 편집합니다.
+1. 개요 페이지에서 마이그레이션 세트를 선택하고 **속성**&#x200B;을 클릭하여 마이그레이션 세트 속성을 보거나 편집합니다. 속성을 편집하는 동안 컨테이너 이름 또는 서비스 URL을 변경할 수 없습니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+
 
 ### 컨텐츠 전송의 추출 프로세스 {#extraction-process}
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
 
-1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **추출**&#x200B;을 클릭하여 추출을 시작합니다.
+1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **추출**&#x200B;을 클릭하여 추출을 시작합니다. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. **마이그레이션 세트 추출** 대화 상자가 표시되면 **추출**&#x200B;을 클릭하여 추출 단계를 완료합니다.
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
    >[!NOTE]
    >추출 단계 중에 스테이징 컨테이너를 덮어쓰는 옵션이 제공됩니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. 이제 **추출** 필드에 진행 중인 추출 프로세스에 대한 **실행** 상태가 표시됩니다.
+1. 이제 **추출** 필드에 추출 **이 진행 중임을** 나타내는 실행 중 상태가 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    추출이 완료되면 마이그레이션 세트의 상태가 **완료됨**&#x200B;으로 업데이트되고 *녹색* 클라우드 아이콘이 **정보**&#x200B;필드 아래에 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >업데이트된 상태를 보려면 페이지를 새로 고쳐야 합니다.
+   >UI에는 30초마다 개요 페이지를 다시 로드하는 자동 다시 로드 기능이 있습니다.
    >추출 단계가 시작되면 *60초* 후 쓰기 잠금이 만들어지고 해제됩니다. 따라서 추출이 중지된 경우 다시 추출을 시작하기 전에 잠금이 해제될 때까지 잠시 기다려야 합니다.
 
 #### 추가 추출 {#top-up-extraction-process}
@@ -140,41 +137,25 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다�
 
 추출 프로세스가 완료되면 추가 추출 방법을 사용하여 델타 컨텐츠를 전송할 수 있습니다. 아래 단계를 따르십시오.
 
-1. *개요* 페이지로 이동하고 추가 추출을 수행할 마이그레이션 세트를 선택합니다.
-
-1. **추출**&#x200B;을 클릭하여 추가 추출을 시작합니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. **마이그레이션 세트 추출** 대화 상자가 표시됩니다.
+1. *개요* 페이지로 이동하고 추가 추출을 수행할 마이그레이션 세트를 선택합니다. **추출**&#x200B;을 클릭하여 추가 추출을 시작합니다. **마이그레이션 세트 추출** 대화 상자가 표시됩니다.
 
    >[!IMPORTANT]
    >**추출 중에 스테이징 컨테이너 덮어쓰기** 옵션을 비활성화해야 합니다.
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### 컨텐츠 전송의 수집 프로세스 {#ingestion-process}
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
 
-1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **수집**&#x200B;을 클릭하여 추출을 시작합니다.
+1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **수집**&#x200B;을 클릭하여 추출을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다. Click on **Ingest** to start the ingestion phase. 데모 목적으로 **컨텐츠를 작성자 인스턴스에 수집** 옵션이 비활성화됩니다. 컨텐츠를 작성자와 게시에 동시에 수집할 수 있습니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
+1. 통합 작업이 완료되면 [게시 통합] **필드의** 상태가 **완료됨으로 업데이트됩니다**.
 
-   데모 목적으로 **컨텐츠를 작성자 인스턴스에 수집** 옵션이 비활성화됩니다. 컨텐츠를 작성자와 게시에 동시에 수집할 수 있습니다.
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
-
-   **수집**&#x200B;을 클릭하여 수집 단계를 완료합니다.
-
-1. 수집이 완료되면 **작성자 수집** 필드의 상태가 **완료됨**&#x200B;으로 업데이트되고, 녹색 클라우드 아이콘이 **정보** 아래에 표시됩니다.
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
-
-   >[!NOTE]
-   > 업데이트된 상태를 보려면 페이지를 새로 고쳐야 합니다.
 
 #### 추가 수집 {#top-up-ingestion-process}
 
@@ -185,17 +166,11 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다�
 
 수집 프로세스가 완료되면 추가 수집 방법을 사용하여 델타 컨텐츠를 사용할 수 있습니다. 아래 단계를 따르십시오.
 
-1. *개요* 페이지로 이동하고 추가 수집을 수행할 마이그레이션 세트를 선택합니다.
+1. *개요* 페이지로 이동하고 추가 수집을 수행할 마이그레이션 세트를 선택합니다. **수집**&#x200B;을 클릭하여 추가 추출을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
 
-1. **수집**&#x200B;을 클릭하여 추가 추출을 시작합니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
-
-1. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
-
-   >[!NOTE]
-   >이전 수집 활동에서 기존 컨텐츠를 삭제하지 않으려면 *지우기* 옵션을 비활성화해야 합니다.
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
+   >[!IMPORTANT]
+   >수집 전 **에 기존 컨텐츠 삭제** 옵션을 비활성화하여 이전 통합 활동에서 기존 컨텐츠를 삭제하지 않아야 합니다.
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### 마이그레이션 세트에 대한 로그 보기 {#viewing-logs-migration-set}
 
