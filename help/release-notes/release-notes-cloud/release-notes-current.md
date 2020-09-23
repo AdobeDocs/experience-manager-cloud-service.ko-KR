@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.9.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.9.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
+source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 20%
+source-wordcount: '462'
+ht-degree: 18%
 
 ---
 
@@ -70,3 +70,16 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 * 특정 경우 새로 고침을 실행한 후 CRA 보고서가 업데이트되지 않았습니다. 이 버전에서 수정되었습니다.
 
+## 컨텐츠 전송 도구 {#content-transfer-tool}
+
+컨텐츠 전송 도구 릴리스 v1.1.10의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
+
+### 새로운 기능 {#what-is-new-ctt}
+
+* CTT(콘텐츠 전송 도구)는 Azure Blob 저장소 데이터 저장소를 지원합니다.
+
+* CTT 사용자 인터페이스에는 30초마다 개요 페이지를 다시 로드하는 자동 다시 로드 기능이 있습니다.
+
+* 액세스 토큰을 쉽게 검색하기 위해 CTT 사용자 인터페이스에 *단추를* 추가했습니다.
+
+* URL 및 *마이그레이션 세트 이름에 대해* 설명 유효성 *검사 메시지가 추가되었습니다*.
