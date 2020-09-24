@@ -1,18 +1,18 @@
 ---
-sub-product: 클라우드 서비스로서의 AEM Assets
-user-guide-title: 클라우드 서비스로서의 AEM Assets
+sub-product: 클라우드 서비스로서의 Adobe Experience Manager 자산
+user-guide-title: Cloud Service 가이드로 에셋
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 62cb875355691ebfde6ce1240011782fb59f77ab
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 92%
+source-wordcount: '432'
+ht-degree: 90%
 
 ---
 
 
-# 자산 {#assets}
+# Cloud Service 가이드로 에셋 {#assets}
 
 + [클라우드 서비스로서의 AEM Assets](/help/assets/home.md)
 + [개요 및 새로운 기능](overview.md)
