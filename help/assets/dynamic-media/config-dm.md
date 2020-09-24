@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager Cloud Service에서 다이내믹 미디어를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: ed904a95768fb1965506187932d4f9d6464ed190
+source-git-commit: 9b2095594432dbf8479c7b3ac482a62fc6672cab
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 0%
@@ -158,9 +158,7 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다]**.
 
 * **[!UICONTROL 서버]** - 계정 프로비저닝에서 Dynamic Media는 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. AEM 지원에 의해 명시적으로 지시된 경우를 제외하고 서버 이름을 변경하지 마십시오.
-
 * **[!UICONTROL 이미지]** 덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 것을 허용하지 않습니다. 각 항목의 URL ID(파일 이름 - 확장명)는 고유해야 합니다. 다음 옵션은 대체 자산이 업로드되는 방식을 지정합니다.원본을 대체할지 또는 중복되게 할지 여부. 중복 에셋의 이름이 &quot;-1&quot;으로 바뀝니다(예: chair.tif의 이름이 chair-1.tif로 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 에셋이나 원본 파일 이름 확장자가 다른 에셋에 영향을 줍니다(예: JPG, TIF 또는 PNG).
-
 * **[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장명]** - 이 옵션은 교체에 가장 강력한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 이름 확장자는 원본과 같아야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 만들어집니다.
 
    >[!NOTE]
@@ -172,10 +170,9 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 
 * **[!UICONTROL 기본 색상 프로필]** - 자세한 내용은 [색상 관리](#configuring-color-management) 구성을 참조하십시오.
 
->[!NOTE]
->
->기본적으로 자산의 세부 정보 보기에서 뷰어 **[!UICONTROL 를]** 선택하면 변환 **[!UICONTROL 및 15개의 뷰어 사전 설정을 선택하면]** 15개의 변환이표시됩니다. 이 한도를 늘릴 수 있습니다. 표시되는 [이미지 사전](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 설정 수 증가 또는 감소 [또는 표시되는 뷰어 사전](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)설정 수 증가 또는 감소를 참조하십시오.
-
+   >[!NOTE]
+   >
+   >기본적으로 자산의 세부 정보 보기에서 뷰어 **[!UICONTROL 를]** 선택하면 변환 **[!UICONTROL 및 15개의 뷰어 사전 설정을 선택하면]** 15개의 변환이표시됩니다. 이 한도를 늘릴 수 있습니다. 표시되는 [이미지 사전](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 설정 수 증가 또는 감소 [또는 표시되는 뷰어 사전](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)설정 수 증가 또는 감소를 참조하십시오.
 
 #### 색상 관리 구성 {#configuring-color-management}
 
@@ -189,10 +186,10 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 
    다음 색상 교정 속성을 설정할 수 있습니다.
 
-   * **[!UICONTROL CMYK 기본 색상 공간]** - 기본 CMYK 색상 프로파일의 이름
-   * **[!UICONTROL 회색 크기 조절 기본 색상 공간]** - 기본 회색 색상 프로필의 이름
-   * **[!UICONTROL RGB 기본 색상 공간]** - 기본 RGB 색상 프로필의 이름
-   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,]**&#x200B;절대의 최고수준. Adobe은 **[!UICONTROL 상대]** 를 기본값으로 권장합니다.
+   * **[!UICONTROL CMYK 기본 색상 공간]** - 기본 CMYK 색상 프로파일의 이름입니다.
+   * **[!UICONTROL 회색 크기 조절 기본 색상 공간]** - 기본 회색 색상 프로파일의 이름입니다.
+   * **[!UICONTROL RGB 기본 색상 공간]** - 기본 RGB 색상 프로필의 이름입니다.
+   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,절대소량측정]** Adobe은 **[!UICONTROL 상대]** 를 기본값으로 권장합니다.
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
