@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager Cloud Service에서 다이내믹 미디어를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
+source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
 workflow-type: tm+mt
-source-wordcount: '5122'
-ht-degree: 0%
+source-wordcount: '5599'
+ht-degree: 1%
 
 ---
 
@@ -46,53 +46,43 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Dynamic Media Cloud Service 구성 {#configuring-dynamic-media-cloud-services}
+## Cloud Services에서 새 다이내믹 미디어 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-**Dynamic Media Cloud Service을 구성하기 전**:Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인해야](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경할 수 있습니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
-
-다이내믹 미디어 클라우드 서비스를 구성하려면:
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
-1. 콘솔 왼쪽의 **[!UICONTROL 도구]** 머리글 아래에서 **[!UICONTROL Cloud Services > Dynamic Media 구성을 누릅니다]**.
+1. 콘솔 왼쪽에서 도구 아이콘을 누른 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성을 누릅니다]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 글로벌]** ( **[!UICONTROL 전역]**&#x200B;왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 않음)을 탭한 다음 **[!UICONTROL 만들기를]**&#x200B;탭합니다.
-1. [다이내믹 미디어 구성 만들기] 페이지에서 제목과 Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. Adobe이 제공 이메일에 제공합니다. 수신하지 못한 경우 지원 센터에 문의하십시오.
+1. [ **[!UICONTROL 동적 미디어 구성]** 만들기] 페이지에서 제목, Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. Adobe이 제공 이메일에 제공합니다. 수신하지 못한 경우 지원 센터에 문의하십시오.
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
+1. 암호 **[!UICONTROL 변경]** 대화 상자의 **[!UICONTROL 새 암호]** 필드에 8-25자로 구성된 새 암호를 입력합니다. 암호에는 다음 중 하나 이상이 포함되어야 합니다.
 
-   >[!NOTE]
-   >
-   >Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인하여](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경하십시오. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media 클라우드 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
+   * 대문자
+   * 소문자
+   * 번호
+   * 특수 문자: `# $ & . - _ : { }`
+
+   [ **[!UICONTROL 현재 암호]** ] 필드는 상호 작용에서 의도적으로 미리 채워지고 숨겨집니다.
+
+   필요한 경우 암호 눈 아이콘을 눌러 입력하거나 다시 입력한 암호의 맞춤법을 확인하여 암호를 표시할 수 있습니다. 암호를 숨기려면 아이콘을 다시 누릅니다.
+
+1. 암호 **[!UICONTROL 반복]** 필드에서 새 암호를 다시 입력한 다음 완료를 **[!UICONTROL 누릅니다.]**
+
+   동적 미디어 구성 **[!UICONTROL 만들기 페이지의 오른쪽 위 모서리에 있는]** 저장을 탭하면 새 **[!UICONTROL 암호가]** 저장됩니다.
+
+   암호 **[!UICONTROL 변경]** 대화 상자에서 **[!UICONTROL 취소를]** 탭한 **[!UICONTROL 경우]** 저장을 탭하여 새로 만든 Dynamic Media 구성을 저장할 때새로운 암호를 입력해야합니다.
+
+   암호를 [Dynamic Media로 변경을 참조하십시오](#change-dm-password).
 
 1. 연결이 성공하면 다음을 설정할 수 있습니다.
 
-* **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다. 다양한 하위 브랜드, 사업부 또는 다른 스테이징/프로덕션 환경에 대해 여러 개의 Dynamic Media 계정이 있을 수 있습니다.
-
-* **[!UICONTROL 회사 루트 폴더 경로]**
-
-* **[!UICONTROL 자산 게시]** - 다음 세 가지 옵션 중에서 선택할 수 있습니다.
-
-* **[!UICONTROL 에셋이 업로드되면 시스템이 에셋을 인제스트하고 URL/포함을 즉시 제공함을 의미합니다]** . 자산을 게시하는 데 필요한 사용자 개입은 없습니다.
-
-* **[!UICONTROL 활성화]** 시 URL/포함 링크를 제공하기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.
-
-* **[!UICONTROL 선택적 게시]** (Selective Publish)는 에셋이 보안 미리 보기만을 위해 자동으로 게시되며 공개 도메인에 전달을 위해 DMS7에 게시하지 않고도 AEM에 명시적으로 게시할 수 있음을 의미합니다. 앞으로 Adobe은 상호 배타적인 AEM에 자산을 게시하고 Dynamic Media에 자산을 게시하는 이 옵션을 개선하게 됩니다. 즉, DMS7에 자산을 게시하여 스마트 자르기 또는 동적 표현물과 같은 기능을 사용할 수 있습니다. 또는 미리 보기 전용 AEM에서만 에셋을 게시할 수 있습니다.동일한 에셋은 공용 도메인에 전달되기 위해 DMS7에 게시되지 않습니다.
-
-* **[!UICONTROL 보안 미리 보기 서버]** - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM은 안전하게 원격 Dynamic Media 변환에 액세스하고 미리 볼 수 있습니다(이진 파일은 AEM 인스턴스로 다시 전송되지 않음).
-회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정한 대로 유지하는 것이 좋습니다.
-
-* **[!UICONTROL 모든 콘텐츠]** 동기화 - 기본적으로 선택되어 있습니다. Dynamic Media와의 동기화에서 자산을 선택적으로 포함 또는 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.
-
-* **[!UICONTROL Dynamic Media 동기화 모드]**
-
-* **[!UICONTROL 기본적으로]** 활성화됨 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-
-* **[!UICONTROL 기본적으로]** 비활성화됨 - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시해야만 구성이 어떤 폴더에도 적용되지 않습니다.
-선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더의 속성 페이지를 엽니다. 세부 **[!UICONTROL 정보]** 탭을 누른 다음 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 옵션 중에서 선택한 다음 저장을 **[!UICONTROL 탭합니다]**.
-
-* **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 항목에 대한 세부 상태는 도구 설명을 통해 표시됩니다.
-
-* **[!UICONTROL 하위 폴더]** 사용 - Dynamic Media에 동기화할 수 있도록 이 하위 트리에 있는 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
-
-* **[!UICONTROL 하위 폴더에]** 대해 비활성화됨 - 이 하위 트리의 모든 항목을 Dynamic Media로 동기화에서 제외합니다.
+   | 속성 | 설명 |
+   |---|---|
+   | 회사 | Dynamic Media 계정의 이름입니다. 다양한 하위 브랜드, 사업부 또는 다른 스테이징/프로덕션 환경에 대해 여러 개의 Dynamic Media 계정이 있을 수 있습니다. |
+   | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
+   | 자산 게시 | 다음 세 가지 옵션 중에서 [즉시]<br>**[!UICONTROL 를 선택할 수 있습니다&#x200B;]**.자산이 업로드되면 시스템은 자산을 인제스트하고 URL/포함을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입은 없습니다.<br>**[!UICONTROL 활성화 시]**:URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**:에셋은 보안 미리 보기만을 위해 자동으로 게시되며 공개 도메인에서 전달을 위해 DMS7에 게시하지 않고도 AEM에 명시적으로 게시할 수 있습니다. 앞으로 Adobe은 상호 배타적인 AEM에 자산을 게시하고 Dynamic Media에 자산을 게시하는 이 옵션을 개선하게 됩니다. 즉, DMS7에 자산을 게시하여 스마트 자르기 또는 동적 표현물과 같은 기능을 사용할 수 있습니다. 또는 미리 보기 전용 AEM에서만 에셋을 게시할 수 있습니다.동일한 에셋은 공용 도메인에 전달되기 위해 DMS7에 게시되지 않습니다. |
+   | 보안 미리 보기 서버 | 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM은 안전하게 원격 Dynamic Media 변환에 액세스하고 미리 볼 수 있습니다(이진 파일은 AEM 인스턴스로 다시 전송되지 않음).<br>회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정한 대로 유지하는 것이 좋습니다. |
+   | 모든 컨텐츠 동기화 | 기본적으로 선택되어 있습니다. Dynamic Media와의 동기화에서 자산을 선택적으로 포함 또는 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.<br>**[!UICONTROL Dynamic Media 동기화]**<br>**[!UICONTROL 모드기본적으로 활성화됨&#x200B;]**:제외용으로 폴더를 표시하지 않으면 기본적으로 모든 폴더에 구성이 적용됩니다.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]**:선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시할 때까지 구성은 어떤 폴더에도 적용되지 않습니다.<br>선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성을 누릅니다]**. 세부 **[!UICONTROL 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 **[!UICONTROL 저장을 누릅니다]**. *기억하십시오.이전에 모든 컨텐츠&#x200B;**동기화를 선택한 경우에는 이러한 세 가지 옵션을 사용할 수**없습니다.* Dynamic [Media의 폴더 수준에서 선택적 게시 작업을 참조하십시오.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 상속됨&#x200B;]**:폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 항목에 대한 세부 상태는 도구 설명을 통해 표시됩니다.<br>**[!UICONTROL 하위 폴더에 대해 활성화]**:다이내믹 미디어와 동기화할 수 있도록 이 하위 트리에 모든 것을 포함시키십시오. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 비활성화됨&#x200B;]**:이 하위 트리의 모든 항목을 Dynamic Media로 동기화하지 않도록 제외합니다. |
 
    >[!NOTE]
    >
@@ -101,10 +91,19 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >자산이 활성화되면 모든 업데이트가 즉시 S7 전달에 실시간으로 게시됩니다.
 
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. 저장을 **[!UICONTROL 누릅니다]**.
-1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 AEM 작성자 인스턴스를 &quot;&quot;하여 Dynamic Media에 연결해야 합니다.
+1. 저장을 **[!UICONTROL 누릅니다]**. 새 Dynamic Media 암호 및 구성이 저장됩니다. 대신 [ **[!UICONTROL 취소]** ]를 탭하면 암호 업데이트가 발생하지 않습니다.
+1. Dynamic Media **[!UICONTROL 구성]** 대화 상자에서 **[!UICONTROL 확인을]** 눌러 구성을 시작합니다.
+
+   >[!IMPORTANT]
+   >
+   >새로운 다이내믹 미디어 구성이 설정을 마치면 AEM 받은 편지함 내에서 상태 알림을 받게 됩니다.
+   >
+   >이 받은 편지함 알림은 구성이 성공했는지 여부를 알려줍니다.
+   > 자세한 [내용은 새로운 다이내믹 미디어 구성](#troubleshoot-dm-config) 문제 해결 및 받은 [편지함](/help/sites-cloud/authoring/getting-started/inbox.md) 을참조하십시오.
+
+1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 AEM 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다하여 Dynamic Media에 연결해야 합니다. 이를 설정하려면 다음을 수행합니다.
 
    * Dynamic Media Classic 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). 프로비전 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
    * 페이지 오른쪽 상단의 탐색 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버를 클릭합니다]**.
@@ -117,6 +116,58 @@ To migrate any custom viewer presets and configurations that you have created fr
 이제 기본 구성이 완료되었습니다.Dynamic Media를 사용할 준비가 되었습니다.
 
 구성을 추가로 사용자 지정하려면 Dynamic Media에서 고급 설정 [구성 아래의 작업을 선택적으로 완료할 수 있습니다](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### 새 다이내믹 미디어 구성 문제 해결 {#troubleshoot-dm-config}
+
+새로운 Dynamic Media 구성이 설정을 마치면 AEM 받은 편지함 내에서 상태 알림을 받게 됩니다. 이 알림은 구성이 성공했는지 여부를 받은 편지함의 다음 이미지와 같이 알려줍니다.
+
+![aeminboxsuccess](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+
+![aeminboxfailure](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+
+받은 편지함 [을 참조하십시오](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+**새 다이내믹 미디어 구성 문제를 해결하려면**
+
+1. AEM 페이지의 오른쪽 위 모서리 근처에 있는 벨 아이콘을 누른 다음 모두 **[!UICONTROL 보기를 누릅니다]**.
+1. 받은 편지함 페이지에서 성공 알림을 탭하여 구성 상태 및 로그의 개요를 확인합니다.
+
+   구성에 실패하면 다음 스크린샷과 유사한 실패 알림을 탭합니다.
+
+   ![dmsetupfailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+
+1. DMSETUP **** 페이지에서 오류를 설명하는 구성 세부 사항을 검토하십시오. 특히 오류 메시지 또는 오류 코드를 주목하십시오. 이 정보는 Adobe 지원 센터에 문의해야 합니다.
+
+   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+
+### 암호를 Dynamic Media로 변경 {#change-dm-password}
+
+Dynamic Media의 암호 만료일은 현재 시스템 날짜로부터 100년으로 설정됩니다.
+
+암호에는 다음 중 하나 이상이 포함되어야 합니다.
+
+* 대문자
+* 소문자
+* 번호
+* 특수 문자: `# $ & . - _ : { }`
+
+필요한 경우 암호 눈 아이콘을 눌러 입력하거나 다시 입력한 암호의 맞춤법을 확인하여 암호를 표시할 수 있습니다. 암호를 숨기려면 아이콘을 다시 누릅니다.
+
+변경된 암호는 [Dynamic Media **[!UICONTROL 구성]** 편집] 페이지의 오른쪽 위 모서리에 있는 **[!UICONTROL 저장을 탭하면]** 저장됩니다.
+
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
+1. 콘솔 왼쪽에서 도구 아이콘을 누른 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성을 누릅니다.]**
+1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 전역]** ( **[!UICONTROL 전역]**&#x200B;왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 않음)을 탭한 다음 **[!UICONTROL 편집을탭합니다.]**
+1. [ **[!UICONTROL 동적 미디어 구성]** 편집] 페이지의 **[!UICONTROL 암호]** 필드 바로 아래에 있는 **[!UICONTROL 암호변경을누릅니다.]**
+1. 암호 **[!UICONTROL 변경]** 대화 상자에서 다음을 수행합니다.
+
+   * 새 **[!UICONTROL 암호]** 필드에 새 암호를 입력합니다.
+
+      [ **[!UICONTROL 현재 암호]** ] 필드는 상호 작용에서 의도적으로 미리 채워지고 숨겨집니다.
+
+   * 암호 **[!UICONTROL 반복]** 필드에서 새 암호를 다시 입력한 다음 완료를 **[!UICONTROL 누릅니다.]**
+
+1. [Dynamic Media 구성 **[!UICONTROL 편집]** ] 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장을]**&#x200B;누른 **[!UICONTROL 다음확인을누릅니다.]**
 
 ## (선택 사항) Dynamic Media에서 고급 설정 구성{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -182,13 +233,14 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 1. [프로비전 중에 제공된 자격 증명을](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 사용하여 Dynamic Media Classic에 로그인합니다. 설정 **[!UICONTROL > 애플리케이션 설정으로 이동합니다]**.
 1. [ **[!UICONTROL 게시 설정]** ] 영역을 확장하고 [ **[!UICONTROL 이미지 서버]를 선택합니다]**. 게시 인스턴스 **[!UICONTROL 에]** 대한 기본값 **[!UICONTROL 을]** 설정할 때 게시 컨텍스트를 이미지 제공으로 설정합니다.
 1. 변경해야 할 속성(예: 색상 관리 속성 **[!UICONTROL 영역의 속성)으로]** 스크롤합니다.
+다음 색상 교정 속성을 설정할 수 있습니다.
 
-   다음 색상 교정 속성을 설정할 수 있습니다.
-
-   **[!UICONTROL CMYK 기본 색상 공간]** - 기본 CMYK 색상 프로파일의 이름입니다.
-   **[!UICONTROL 회색 크기 조절 기본 색상 공간]** - 기본 회색 색상 프로파일의 이름입니다.
-   **[!UICONTROL RGB 기본 색상 공간]** - 기본 RGB 색상 프로필의 이름입니다.
-   **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,절대소량측정]** Adobe은 **[!UICONTROL 상대]** 를 기본값으로 권장합니다.
+   | 속성 | 설명 |
+   |---|---|
+   | CMYK 기본 색상 공간 | 기본 CMYK 색상 프로파일의 이름입니다. |
+   | 회색 크기 조절 기본 색상 공간 | 기본 회색 색상 프로파일의 이름입니다. |
+   | RGB 기본 색상 공간 | 기본 RGB 색상 프로파일의 이름입니다. |
+   | 색상 변환 렌더링 의도 | 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,절대소량측정]** Adobe은 **[!UICONTROL 상대]** 를 기본값으로 권장합니다. |
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
@@ -474,7 +526,7 @@ Adobe은 PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정�
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-이러한 매개 변수를 업데이트하려면 MIME 유형 기반 자산/ [Dynamic Media Classic 업로드 작업 매개 변수 지원의 단계를 따릅니다](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### [MOCK] Updating the Granite Temporary Workflow queue {#updating-the-granite-transient-workflow-queue}
 
