@@ -2,7 +2,7 @@
 title: 경험 감사 테스트 - Cloud Services
 description: 경험 감사 테스트 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Cloud Manager의 경험 감사는 최종 사용자가 사이트에 대한 디지
    >[!NOTE]
    >점진적 웹 앱(PWA) 점수는 요약 점수에 포함되지 않으며 페이지 수준 보고서 세부 사항 화면에만 표시됩니다.
 * 드릴다운을 통해 개별 페이지 수준 점수를 사용할 수도 있습니다.
-* 컨텐츠 감사 중 확인된 문제를 해결하는 방법에 대한 지침과 함께 개별 테스트의 결과가 무엇인지 확인하기 위해 점수의 세부 사항을 확인할 수 있습니다.
+* 경험 감사 중 확인된 문제를 해결하는 방법에 대한 지침과 함께 개별 테스트의 결과가 무엇인지 확인하기 위해 점수의 세부 사항을 사용할 수 있습니다.
 * 테스트 결과의 내역은 Cloud Manager 내에 유지되므로 고객은 파이프라인 실행에 도입된 변경 사항이 이전 실행의 회귀 여부를 확인할 수 있습니다.
 
 ### 집계 점수 {#aggregate-scores}
