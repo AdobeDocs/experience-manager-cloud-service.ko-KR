@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.9.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.9.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
+source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 15%
+source-wordcount: '714'
+ht-degree: 14%
 
 ---
 
@@ -110,3 +110,18 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 * 액세스 토큰을 쉽게 검색하기 위해 CTT 사용자 인터페이스에 *단추를* 추가했습니다.
 
 * URL 및 *마이그레이션 세트 이름에 대해* 설명 유효성 *검사 메시지가 추가되었습니다*.
+
+## 코드 리팩터링 도구 {#code-refactoring}
+
+이 섹션을 따라 새로운 기능 및 코드 리팩토링 도구에 대한 업데이트에 대해 알아보십시오.
+
+### 새로운 기능 {#what-is-new-refactoring}
+
+* AIO-CLI 플러그인은 Repository Modernizer를 지원하며 사용자는 플러그인을 사용하여 도구를 실행할 수 있습니다.
+
+   Git 리소스 [를 참조하십시오.자세한 내용은 aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
+
+* Repository Modernizer 유틸리티를 사용하여 기존 프로젝트 패키지를 AEM에 대해 정의된 프로젝트 구조와 호환되는 패키지로 재구성할 수 있습니다.
+
+   Git 리소스 [를 참조하십시오.Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 를 참조하십시오.
+
