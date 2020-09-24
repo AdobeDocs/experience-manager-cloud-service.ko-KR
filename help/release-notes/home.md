@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager(AEM) 릴리스 노트.
 description: '클라우드 서비스로서의 Adobe Experience Manager(AEM) 릴리스 노트. '
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 | 제품 | 클라우드 서비스로서의 Adobe Experience Manager |
 |---|---|
-| 버전 | 2020.7.0 |
+| 버전 | 2020.9.0 |
 | 유형 | 연속 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
