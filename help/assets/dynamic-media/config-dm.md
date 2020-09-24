@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager Cloud Service에서 다이내믹 미디어를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 0%
@@ -158,7 +158,9 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
 
 * **[!UICONTROL 서버]** - 계정 프로비저닝에서 Dynamic Media는 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. AEM 지원에 의해 명시적으로 지시된 경우를 제외하고 서버 이름을 변경하지 마십시오.
+
 * **[!UICONTROL 이미지]** 덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 것을 허용하지 않습니다. 각 항목의 URL ID(파일 이름 - 확장명)는 고유해야 합니다. 다음 옵션은 대체 자산이 업로드되는 방식을 지정합니다.원본을 대체할지 또는 중복되게 할지 여부. 중복 에셋의 이름이 &quot;-1&quot;으로 바뀝니다(예: chair.tif의 이름이 chair-1.tif로 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 에셋이나 원본 파일 이름 확장자가 다른 에셋에 영향을 줍니다(예: JPG, TIF 또는 PNG).
+
 * **[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장명]** - 이 옵션은 교체에 가장 강력한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 이름 확장자는 원본과 같아야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 만들어집니다.
 
    >[!NOTE]
@@ -166,7 +168,9 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
    >AEM과의 일관성을 유지하려면 항상 이 설정을 선택하십시오. **현재 폴더에 동일한 기본 이미지 이름/확장명으로 덮어쓰기**
 
 * **[!UICONTROL 동일한 기본 에셋 이름/확장명으로]** 모든 폴더에 덮어쓰기 - 대체 이미지의 파일 이름 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 합니다). 그러나 원본 이미지와 다른 폴더에 교체 이미지를 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 파일을 더 이상 찾을 수 없습니다.
+
 * **[!UICONTROL 확장자와]** 상관없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기 - 이 옵션은 가장 포괄적인 대체 규칙입니다. 원본 파일과 다른 폴더에 교체 이미지를 업로드하고 파일 이름 확장자가 다른 파일을 업로드한 다음 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 교체 이미지는 업로드된 새 폴더에 있습니다.
+
 * **[!UICONTROL 기본 색상 프로필]** - 자세한 내용은 [색상 관리](#configuring-color-management) 구성을 참조하십시오.
 
    >[!NOTE]
@@ -213,7 +217,7 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
 
 [자산 업로드](/help/assets/add-assets.md)를 참조하십시오.
 
-**자산 처리를 구성하려면**
+자산 처리를 구성하려면:
 
 1. AEM에서 AEM 로고를 클릭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 일반 > CRXDE Lite을 클릭합니다]**.
 1. 왼쪽 레일에서 다음 항목으로 이동합니다.
@@ -230,7 +234,6 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
    * jobParam **[!UICONTROL 을]** 두 번 클릭하여 연관된 텍스트 필드를 엽니다. 지정된 [MIME 유형에 사용할 수 있는 허용된 처리 매개 변수 값 목록은 지원되는 MIME 형식을](/help/assets/file-format-support.md) 참조하십시오.
 
 1. 다음 중 하나를 수행하십시오.
-
    * 추가 MIME 유형을 편집하려면 3-4단계를 반복합니다.
    * CRXDE Lite 페이지의 메뉴 모음에서 모두 **[!UICONTROL 저장을 클릭합니다.]**
 
@@ -240,7 +243,7 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
 
 AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형식을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 AEM에서 삭제되지 않도록 하려면 먼저 MIME 형식을 이동해야 하며 `image_` 이 활성화된 값은 **[!UICONTROL false로 설정되어 있어야 합니다]**.
 
-**지원되지 않는 형식에 대한 사용자 지정 MIME 형식을 추가하려면**
+지원되지 않는 형식에 대한 사용자 지정 MIME 형식을 추가하려면:
 
 1. AEM에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 누릅니다.]**
 
@@ -306,7 +309,7 @@ AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형�
 
 두 요소를 정의하면 일치 및 기본 이름을 사용할 수 있습니다. 이러한 필드를 사용하면 이름 지정 규칙의 모든 요소를 정의하고 해당 항목이 포함된 세트의 이름을 지정하는 데 사용되는 규칙의 일부를 식별할 수 있습니다. 회사의 개별 명명 규칙은 이러한 각 요소에 대해 하나 이상의 정의 라인을 사용할 수 있습니다. 고유 정의에 대해 여러 개의 선을 사용하고 기본 이미지, 색상 요소, 대체 보기 요소 및 견본 요소와 같은 별개의 요소로 그룹화할 수 있습니다.
 
-**기본 이름 지정을 구성하려면**
+기본 이름 지정을 구성하려면:
 
 1. Dynamic Media Classic(Scene7) 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -340,7 +343,7 @@ Dynamic Media는 뷰어에 표시하기 위해 일괄 세트 사전 설정을 �
 
 양식 필드 메서드를 사용하여 묶음 집합 사전 설정이나 코드 메서드를 정의할 수 있습니다. 이 방법을 사용하면 정규식을 사용할 수 있습니다. 기본 이름 지정에서와 마찬가지로 양식 보기에서 정의하는 동시에 코드 보기를 선택하고 정규 표현식을 사용하여 정의를 작성할 수 있습니다. 또는 뷰를 선택 취소하여 하나 또는 다른 뷰를 독점적으로 사용할 수도 있습니다.
 
-**배치 집합 사전 설정을 만들려면**
+배치 세트 사전 설정을 만들려면:
 
 1. Dynamic Media Classic(Scene7) 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -503,7 +506,7 @@ Adobe은 PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정�
 
 [MOCK] The Granite Workflow queue is used for non-temporary workflows. Dynamic Media에서는 **[!UICONTROL 다이내믹 미디어 인코딩 비디오]** 워크플로우로 비디오를 처리했습니다.
 
-**[MOCK] To update the Granite Workflow queue**
+[MOCK] To update the Granite Workflow queue:
 
 1. 대기열로 `https://<server>/system/console/configMgr` 이동 및 **검색:[MOCK] Granite Workflow Queue**.
 
@@ -525,7 +528,7 @@ Adobe은 PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정�
 
 Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 동기화합니다.
 
-**Scene7 업로드 연결을 업데이트하려면**
+Scene7 업로드 연결을 업데이트하려면:
 
 1. 다음으로 이동 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 연결 **[!UICONTROL 수]** 필드 및/또는 **[!UICONTROL 활성 작업 시간 초과]** 필드에서 원하는 대로 숫자를 변경합니다.
@@ -538,7 +541,7 @@ Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. 저장을 **[!UICONTROL 누릅니다]**.
+1. 저장을 **[!UICONTROL 누릅니다.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
