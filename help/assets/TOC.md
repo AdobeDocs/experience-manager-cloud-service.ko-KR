@@ -4,10 +4,10 @@ user-guide-title: 클라우드 서비스로서의 AEM Assets
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 62cb875355691ebfde6ce1240011782fb59f77ab
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 94%
+source-wordcount: '425'
+ht-degree: 92%
 
 ---
 
@@ -107,6 +107,7 @@ ht-degree: 94%
    + [URL을 웹 애플리케이션에 연결](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](dynamic-media/publishing-dynamicmedia-assets.md)
+   + [Dynamic Media에서 선택적 게시 사용](dynamic-media/selective-publishing.md)
    + [다이내믹 미디어를 통해 CDN 캐시 무효화](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Dynamic Media Classic을 통해 CDN 캐시 무효화](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [선택기를 사용한 작업](dynamic-media/working-with-selectors.md)
