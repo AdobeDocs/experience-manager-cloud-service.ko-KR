@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.9.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.9.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
+source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 18%
+source-wordcount: '629'
+ht-degree: 15%
 
 ---
 
@@ -14,11 +14,38 @@ ht-degree: 18%
 
 다음 섹션에서는 클라우드 서비스 2020.9.0으로서의 Experience Manager 일반 릴리스 노트를 간략하게 설명합니다.
 
+## 릴리스 날짜 {#release-date}
+
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+
 ## [!DNL Adobe Experience Manager Sites] cloud service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* 단일 페이지 애플리케이션(SPA) 편집기 Javascript SDK [가 이제 오픈 소스입니다.](/help/implementing/developing/spa/reference-materials.md)
+* 이제 단일 페이지 애플리케이션(SPA) 편집기 JavaScript SDK [가 오픈 소스입니다.](/help/implementing/developing/spa/reference-materials.md)
+
+## [!DNL Adobe Experience Manager Assets] cloud service {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* 자산 마이크로 서비스로 생성된 변환에 대해 PNG 이미지 워터마크가 지원됩니다. 처리 프로필로 구성할 수 있습니다. &lt;!— TBD:도움말 문서에 연결합니다.>
+
+* 향상된 기능 [!DNL Dynamic Media]
+
+   * 선택적 게시 - 이제 마케팅 팀이 글로벌 전달을 위해 이러한 자산을 게시하지 않아도 홍보 자료를 만들 수 있도록 동기화된 [!DNL Dynamic Media] 스마트 자르기 이미지 및 동적 표현물에 액세스할 [!DNL Dynamic Media] 수 [!DNL Dynamic Media] 있습니다. AEM 및 [!DNL Dynamic Media] 퍼블리싱은 분리되어 별도로 수행되므로 이를 실현할 수 있습니다.
+   * 관리자는 데스크탑 앱을 사용하지 않고도 AEM UI에서 직접 프로비저닝할 때 받은 [!DNL Dynamic Media] Cloud Service 암호를 재설정할 수 [!DNL Dynamic Media Classic] 있습니다.
+
+* 다음 개선 사항에 대해 알아보려면 브랜드 포털의 새로운 [기능을 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/introduction/whats-new.html).
+
+   * Adobe Document Cloud 뷰 SDK 통합을 통해 향상된 PDF 미리 보기
+   * 한 번의 클릭으로 다운로드 기능을 사용할 수 있습니다.
+   * 다운로드 경험에 대한 새 관리 구성
+
+<!--
+### Bugs Fixed {#bugs-fixed-assets}
+
+TBD: list of Assets aaCS bugs that are fixed.
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
