@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.8.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.8.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
+source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1054'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 6%
 
 다음 섹션에서는 클라우드 서비스 2020.8.0으로서의 Experience Manager 일반 릴리스 노트를 간략하게 설명합니다.
 
-## 릴리스 날짜 {#release-date}
-
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is August 27, 2020.
 
 ## [!DNL Adobe Experience Manager Sites] cloud service {#sites}
 
@@ -25,6 +22,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 * 페이지 및 하위 페이지(페이지 트리)를 이전 버전으로 [복원하는 기능](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
 * AEM [SPA Editor에서 론치](/help/sites-cloud/authoring/launches/overview.md) 생성 [기능](/help/implementing/developing/spa/introduction.md)
+
 
 ## [!DNL Adobe Experience Manager Assets] cloud service {#assets}
 
@@ -80,6 +78,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
 * 콘텐츠 감사는 Cloud Manager Sites 프로덕션 파이프라인에서 활성화된 기능입니다. 이제 사이트가 있는 프로그램에 대한 프로덕션 파이프라인 구성에는 컨텐츠 감사라는 세 번째 탭이 **포함됩니다**. 프로덕션 파이프라인이 실행될 때마다 사용자 정의 기능 테스트 후 새로운 컨텐츠 감사 단계가 파이프라인에 포함됩니다. 사용자 정의 기능 테스트 후에는 성능, SEO(검색 엔진 최적화), 접근성, 우수 사례 및 PWA(점진적 웹 앱)을 비롯한 다양한 차원과 사이트를 평가합니다.
+
 
    >[!NOTE]
    >콘텐츠 감사가 경험 감사로 이름이 변경되었습니다.
