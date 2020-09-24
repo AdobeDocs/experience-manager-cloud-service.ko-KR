@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.9.0 릴리스의 릴리스 노트
 description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.9.0 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 15%
 
 ---
@@ -28,7 +28,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 자산 마이크로 서비스로 생성된 변환에 대해 PNG 이미지 워터마크가 지원됩니다. 처리 프로필로 구성할 수 있습니다. &lt;!— TBD:도움말 문서에 연결합니다.>
+* 자산 마이크로 서비스로 생성된 변환에 대해 PNG 이미지 워터마크가 지원됩니다. 처리 프로필로 구성할 수 있습니다.
 
 * 향상된 기능 [!DNL Dynamic Media]
 
