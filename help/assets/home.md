@@ -1,23 +1,25 @@
 ---
-title: 클라우드 서비스로서의 Adobe Experience Manager 자산
+title: Cloud Service 가이드로 에셋
 description: 클라우드 서비스로서의 Adobe Experience Manager 자산 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
+source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 90%
+ht-degree: 85%
 
 ---
 
 
-# 클라우드 서비스로서의 Adobe Experience Manager Assets {#aem-assets-guide}
+# Cloud Service 가이드로 에셋 {#aem-assets-guide}
 
 클라우드 서비스로서의 Adobe Experience Manager Assets에 대한 자가 진단 리소스는 다음과 같습니다.
 
 ## 주요 Assets 문서 {#key-articles}
 
-* [클라우드 서비스로서의 자산 소개](overview.md)
+* [개요 및 새로운 기능](overview.md)
+* [주목할 만한 변경 사항](/help/assets/assets-cloud-changes.md)
 * [클라우드 서비스로서의 자산 아키텍처](architecture.md)
+* [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
 
 ## Adobe Experience Manager 안내서 {#aem-guides}
 
