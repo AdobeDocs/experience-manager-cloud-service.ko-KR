@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager Cloud Service에서 다이내믹 미디어를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: e2efa569a216e2156425a5ad596ec90a75b39e58
+source-git-commit: 6886bf44b5a62dd54c70d6ba2aa05c082a168705
 workflow-type: tm+mt
-source-wordcount: '5124'
+source-wordcount: '4701'
 ht-degree: 0%
 
 ---
@@ -153,22 +153,22 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 * **[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 텍스트 레이어의 선행 및 후행 단락을 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리할 수 있습니다.
 * **[!UICONTROL 로컬라이제이션 지원]** - 이 설정을 통해 여러 로케일 특성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 **[!UICONTROL 자산 현지화]**&#x200B;설정 시 [고려 사항](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)을 참조하십시오.
 
-#### 응용 프로그램 일반 설정 구성 {#configuring-application-general-settings}
+<!-- #### Configuring application general settings {#configuring-application-general-settings}
 
-응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
+To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings.]**
 
-* **[!UICONTROL 서버]** - 계정 프로비저닝에서 Dynamic Media는 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. AEM 지원에 의해 명시적으로 지시된 경우를 제외하고 서버 이름을 변경하지 마십시오.
-* **[!UICONTROL 이미지]** 덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 것을 허용하지 않습니다. 각 항목의 URL ID(파일 이름 - 확장명)는 고유해야 합니다. 다음 옵션은 대체 자산이 업로드되는 방식을 지정합니다.원본을 대체할지 또는 중복되게 할지 여부. 중복 에셋의 이름이 &quot;-1&quot;으로 바뀝니다(예: chair.tif의 이름이 chair-1.tif로 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 에셋이나 원본 파일 이름 확장자가 다른 에셋에 영향을 줍니다(예: JPG, TIF 또는 PNG).
-* **[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장명]** - 이 옵션은 교체에 가장 강력한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 이름 확장자는 원본과 같아야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 만들어집니다.
+* **[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by AEM support.
+* **[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder than the original or assets with a different filename extension from the original (such as JPG, TIF, or PNG).
+* **[!UICONTROL Overwrite in current folder, same base image name/extension]** - This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created.
    >[!NOTE]
    >
-   >AEM과의 일관성을 유지하려면 항상 이 설정을 선택하십시오. **현재 폴더에 동일한 기본 이미지 이름/확장명으로 덮어쓰기**
-* **[!UICONTROL 동일한 기본 에셋 이름/확장명으로]** 모든 폴더에 덮어쓰기 - 대체 이미지의 파일 이름 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 합니다). 그러나 원본 이미지와 다른 폴더에 교체 이미지를 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 파일을 더 이상 찾을 수 없습니다.
-* **[!UICONTROL 확장자와]** 상관없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기 - 이 옵션은 가장 포괄적인 대체 규칙입니다. 원본 파일과 다른 폴더에 교체 이미지를 업로드하고 파일 이름 확장자가 다른 파일을 업로드한 다음 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 교체 이미지는 업로드된 새 폴더에 있습니다.
-* **[!UICONTROL 기본 색상 프로필]** - 자세한 내용은 [색상 관리](#configuring-color-management) 구성을 참조하십시오.
+   >To maintain consistency with AEM, always choose this setting: **Overwrite in current folder, same base image name/extension**
+* **[!UICONTROL Overwrite in any folder, same base asset name/extension]** - Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location.
+* **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** - This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded.
+* **[!UICONTROL Default Color Profiles]** - See [Configuring Color Management](#configuring-color-management) for additional information.
    >[!NOTE]
    >
-   >기본적으로 자산의 세부 정보 보기에서 뷰어 **[!UICONTROL 를]** 선택하면 변환 **[!UICONTROL 및 15개의 뷰어 사전 설정을 선택하면]** 15개의 변환이표시됩니다. 이 한도를 늘릴 수 있습니다. 표시되는 [이미지 사전](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 설정 수 증가 또는 감소 [또는 표시되는 뷰어 사전](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)설정 수 증가 또는 감소를 참조하십시오.
+   >By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increasing or decreasing the number of image presets that display](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing or decreasing the number of viewer presets that display](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display). -->
 
 #### 색상 관리 구성 {#configuring-color-management}
 
