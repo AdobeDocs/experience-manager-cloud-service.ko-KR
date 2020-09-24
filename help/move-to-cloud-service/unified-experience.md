@@ -2,9 +2,9 @@
 title: 코드 리팩토링 툴을 위한 통합 경험
 description: 코드 리팩토링 툴을 위한 통합 경험
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -46,4 +46,4 @@ The plugin consists of two main parts: `aio-cli-plugin-aem-cloud-service-migrati
 Git 리소스 [를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) to learn about the usage and how you can contribute to this plugin code that is open source in GitHub.
 
 >[!NOTE]
->현재 Dispatcher Converter만 플러그인과 통합되었습니다.
+>현재 이 플러그인은 AEM Dispatcher Converter 및 Repository Modernizer와 통합되어 있습니다.
