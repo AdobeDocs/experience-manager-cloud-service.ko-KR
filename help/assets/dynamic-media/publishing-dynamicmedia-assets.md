@@ -3,7 +3,7 @@ title: 다이내믹 미디어 자산 게시
 description: 다이내믹 미디어 자산을 게시하는 방법
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
+source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 이미 업로드한 자산을 선택하고 게시 또는 **[!UICONTROL 빠른 게시]** 를 탭하여 Dynamic Media 자산을 **[!UICONTROL 게시합니다]**. Dynamic Media 에셋이 게시된 후에는 URL을 통해 또는 페이지에 코드를 임베드하는 방법으로 웹 페이지에 포함할 수 있습니다.
 
-또한 사용자가 개입하지 않고도 업로드한 자산을 즉시 게시할 수 있습니다. 또는 해당 자산을 선택적으로 게시할 수 있습니다. See [Configuring Dynamic Media](config-dm.md). 또는 폴더 수준에서 선택적 게시를 사용하여 서로 배타적인 Dynamic Media 또는 AEM에 선택적으로 **[!UICONTROL 에셋을 게시할]** 수 있습니다. 동적 [미디어에서 선택적 게시 작업을 참조하십시오.](/help/assets/dynamic-media/selective-publishing.md)
+또한 사용자가 개입하지 않고도 업로드한 자산을 즉시 게시할 수 있습니다. 또는 해당 자산을 선택적으로 게시할 수 있습니다. See [Configuring Dynamic Media.](config-dm.md) 또는 폴더 수준에서 선택적 게시를 사용하여 서로 배타적인 Dynamic Media 또는 AEM에 선택적으로 **[!UICONTROL 에셋을 게시할]** 수 있습니다. 동적 [미디어에서 선택적 게시 작업을 참조하십시오.](/help/assets/dynamic-media/selective-publishing.md)
 
 [ **[!UICONTROL 카드 보기]**]에서 자산 이름 바로 아래에, 게시되었음을 나타내는 작은 둥근 모양 아이콘이 날짜와 시간 왼쪽에 표시됩니다. 목록 보기 **[!UICONTROL 에서]**&#x200B;게시된 **** 열은 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 비디오 에셋을 인코딩한 후 즉시 게시하려면 인코딩이 완전히 완료되었는지 확인하십시오. 비디오를 인코딩하는 동안 시스템에서 비디오 처리 워크플로가 진행 중임을 알 수 있습니다. 비디오 인코딩이 완료되면 비디오 변환을 미리 볼 수 있어야 합니다. 이때 게시 오류를 발생시키지 않고 비디오를 게시할 수 있습니다.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 웹 페이지에 Dynamic [Media Video 뷰어 또는 이미지 뷰어 포함을 참조하십시오.](embed-code.md)
 
