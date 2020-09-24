@@ -3,7 +3,7 @@ title: 자산에 워터마크 지정
 description: 디지털 자산에 워터마크 추가
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 1. [처리 프로필을](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 만들어 자산 마이크로서비스를 활용하여 워터마크를 적용합니다.
 
-![워터마크를 만드는 자산 처리 프로필](assets/watermark-processing-profile.png)
+   ![워터마크를 만드는 자산 처리 프로필](assets/watermark-processing-profile.png)
 
 1. [폴더에](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 처리 프로필을 적용하여 워터마크가 있는 에셋을 만듭니다.
 
