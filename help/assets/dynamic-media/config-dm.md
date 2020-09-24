@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager Cloud Service에서 다이내믹 미디어를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 5ee57323e65ccde22e545d1e14cf9bf552ec3d46
+source-git-commit: 97b4d8bba29ddaea959b41c2690b8ff11860413d
 workflow-type: tm+mt
 source-wordcount: '5122'
 ht-degree: 0%
@@ -145,33 +145,24 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 
 [이미지 서버] 화면은 이미지를 전달하기 위한 기본 설정을 설정합니다. 각 설정에 대한 설명은 UI 화면을 참조하십시오.
 
-* **[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
-* **[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 공통 축소판 속성]** - 이 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
-* **[!UICONTROL 색상 관리 속성]** - 이 설정에 따라 어떤 ICC 색상 프로파일이 사용되는지 결정됩니다.
-* **[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 텍스트 레이어의 선행 및 후행 단락을 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리할 수 있습니다.
-* **[!UICONTROL 로컬라이제이션 지원]** - 이 설정을 통해 여러 로케일 특성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 **[!UICONTROL 자산 현지화]**&#x200B;설정 시 [고려 사항](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)을 참조하십시오.
+**[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
+**[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
+**[!UICONTROL 공통 축소판 속성]** - 이 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
+**[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
+**[!UICONTROL 색상 관리 속성]** - 이 설정에 따라 어떤 ICC 색상 프로파일이 사용되는지 결정됩니다.
+**[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 텍스트 레이어의 선행 및 후행 단락을 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리할 수 있습니다.
+**[!UICONTROL 로컬라이제이션 지원]** - 이 설정을 통해 여러 로케일 특성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 **[!UICONTROL 자산 현지화]**&#x200B;설정 시 [고려 사항](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)을 참조하십시오.
 
 #### 응용 프로그램 일반 설정 구성 {#configuring-application-general-settings}
 
 응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
 
-* **[!UICONTROL 서버]** - 계정 프로비저닝에서 Dynamic Media는 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. AEM 지원에 의해 명시적으로 지시된 경우를 제외하고 서버 이름을 변경하지 마십시오.
-* **[!UICONTROL 이미지]** 덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 것을 허용하지 않습니다. 각 항목의 URL ID(파일 이름 - 확장명)는 고유해야 합니다. 다음 옵션은 대체 자산이 업로드되는 방식을 지정합니다.원본을 대체할지 또는 중복되게 할지 여부. 중복 에셋의 이름이 &quot;-1&quot;으로 바뀝니다(예: chair.tif의 이름이 chair-1.tif로 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 에셋이나 원본 파일 이름 확장자가 다른 에셋에 영향을 줍니다(예: JPG, TIF 또는 PNG).
-* **[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장명]** - 이 옵션은 교체에 가장 강력한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 이름 확장자는 원본과 같아야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 만들어집니다.
-
-   >[!NOTE]
-   >
-   >AEM과의 일관성을 유지하려면 항상 현재 폴더 **에서 동일한 기본 이미지 이름/확장명을 사용하여 덮어쓰기를 선택합니다**.
-
-* **[!UICONTROL 동일한 기본 에셋 이름/확장명으로]** 모든 폴더에 덮어쓰기 - 대체 이미지의 파일 이름 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 합니다). 그러나 원본 이미지와 다른 폴더에 교체 이미지를 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 파일을 더 이상 찾을 수 없습니다.
-* **[!UICONTROL 확장자와]** 상관없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기 - 이 옵션은 가장 포괄적인 대체 규칙입니다. 원본 파일과 다른 폴더에 교체 이미지를 업로드하고 파일 이름 확장자가 다른 파일을 업로드한 다음 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 교체 이미지는 업로드된 새 폴더에 있습니다.
-* **[!UICONTROL 기본 색상 프로필]** - 자세한 내용은 [색상 관리](#configuring-color-management) 구성을 참조하십시오.
-
-   >[!NOTE]
-   >
-   >기본적으로 자산의 세부 정보 보기에서 뷰어 **[!UICONTROL 를]** 선택하면 변환 **[!UICONTROL 및 15개의 뷰어 사전 설정을 선택하면]** 15개의 변환이표시됩니다. 이 한도를 늘릴 수 있습니다. 표시되는 [이미지 사전](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 설정 수 증가 또는 감소 [또는 표시되는 뷰어 사전](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)설정 수 증가 또는 감소를 참조하십시오.
+**[!UICONTROL 서버]** - 계정 프로비저닝에서 Dynamic Media는 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. AEM 지원에 의해 명시적으로 지시된 경우를 제외하고 서버 이름을 변경하지 마십시오.
+**[!UICONTROL 이미지]** 덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 것을 허용하지 않습니다. 각 항목의 URL ID(파일 이름 - 확장명)는 고유해야 합니다. 다음 옵션은 대체 자산이 업로드되는 방식을 지정합니다.원본을 대체할지 또는 중복되게 할지 여부. 중복 에셋의 이름이 &quot;-1&quot;으로 바뀝니다(예: chair.tif의 이름이 chair-1.tif로 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 에셋이나 원본 파일 이름 확장자가 다른 에셋에 영향을 줍니다(예: JPG, TIF 또는 PNG).
+**[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장명]** - 이 옵션은 교체에 가장 강력한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 이름 확장자는 원본과 같아야 합니다. 이러한 요구 사항이 충족되지 않으면 복제본이 만들어집니다. AEM과의 일관성을 유지하려면 항상 현재 폴더 **[!UICONTROL 에서 동일한 기본 이미지 이름/확장명을 사용하여 덮어쓰기를 선택합니다]**.
+**[!UICONTROL 동일한 기본 에셋 이름/확장명으로]** 모든 폴더에 덮어쓰기 - 대체 이미지의 파일 이름 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 합니다). 그러나 원본 이미지와 다른 폴더에 교체 이미지를 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 파일을 더 이상 찾을 수 없습니다.
+**[!UICONTROL 확장자와]** 상관없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기 - 이 옵션은 가장 포괄적인 대체 규칙입니다. 원본 파일과 다른 폴더에 교체 이미지를 업로드하고 파일 이름 확장자가 다른 파일을 업로드한 다음 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 교체 이미지는 업로드된 새 폴더에 있습니다.
+**[!UICONTROL 기본 색상 프로필]** - 자세한 내용은 [색상 관리](#configuring-color-management) 구성을 참조하십시오. 기본적으로 자산의 세부 정보 보기에서 뷰어 **[!UICONTROL 를]** 선택하면 변환 **[!UICONTROL 및 15개의 뷰어 사전 설정을 선택하면]** 15개의 변환이표시됩니다. 이 한도를 늘릴 수 있습니다. 표시되는 [이미지 사전](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 설정 수 증가 또는 감소 [또는 표시되는 뷰어 사전](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)설정 수 증가 또는 감소를 참조하십시오.
 
 #### 색상 관리 구성 {#configuring-color-management}
 
@@ -395,7 +386,7 @@ spin-01-01
 
 스핀 세트를 업로드하고 게시하면 **업로드 작업 옵션** 대화 상자의 배치 세트 사전 설정 아래에 나열된 2D 스핀 세트 레시피 **** 이름을 활성화합니다.
 
-**2D 스핀 세트의 자동 생성을 위한 배치 세트 사전 설정을 만들려면**
+2D 스핀 세트의 자동 생성을 위한 배치 세트 사전 설정을 만들려면:
 
 1. Dynamic Media Classic(Scene7) 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
