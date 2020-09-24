@@ -2,10 +2,10 @@
 title: Repository Modernizer
 description: Repository Modernizer
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 3%
+source-wordcount: '301'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,9 @@ Repository Modernizer는 다음 배포 구조를 생성하여 호환되는 AEM C
 
 * `all` 패키지 `ui.apps` `ui.content`는 하위 패키지 및
 
+>[!NOTE]
+>프로젝트 구조는 *Tranype 24* 패키지 및 패키지를 기반으로 `pom.xml/filter.xml files`합니다. 자세한 내용은 [원형 24를](https://github.com/adobe/aem-project-archetype) 참조하십시오.
+
 ## 저장소 현대화 사용 {#using-repo-modernizer}
 
 * Adobe I/O CLI 사용:Adobe I/O CLI용 Cloud Service 코드 리팩토링 플러그인으로 `aio-cli-plugin-aem-cloud-service-migration` (AEM)을 통해 Repository Modernizer를 사용하는 것이 좋습니다.
@@ -36,5 +39,5 @@ Repository Modernizer는 다음 배포 구조를 생성하여 호환되는 AEM C
 
    Git 리소스 **[를 참조하십시오.Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** 를 사용하여 이 도구를 사용하는 방법을 알아봅니다.
 
->[!NOTE]
->Repository Modernizer는 NodeJS를 사용하여 개발되었습니다. NodeJS 10.0+을 설치하는 것이 좋습니다.
+   >[!NOTE]
+   >Repository Modernizer는 NodeJS를 사용하여 개발되었습니다. NodeJS 10.0+을 설치하는 것이 좋습니다.
