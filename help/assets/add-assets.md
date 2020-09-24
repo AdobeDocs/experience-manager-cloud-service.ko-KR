@@ -2,9 +2,9 @@
 title: 디지털 자산을 추가할 수 [!DNL Adobe Experience Manager]있습니다.
 description: 디지털 자산을 Cloud Service [!DNL Adobe Experience Manager] 로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
+source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1318'
 ht-degree: 2%
 
 ---
@@ -24,23 +24,11 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
 
 >[!NOTE]
 >
->Cloud Service은 직접 바이너리 업로드라는 새로운 방식의 자산 업로드 방식을 활용합니다. 기본적으로 Experience Manager 사용자 인터페이스, Adobe 에셋 링크, Experience Manager 데스크탑 앱 등 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
+>Cloud Service은 직접 이진 업로드라는 새로운 자산 업로드 방식을 활용합니다. 기본적으로 Experience Manager 사용자 인터페이스, Adobe 에셋 링크, Experience Manager 데스크탑 앱 등 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
 >
 >고객 기술 팀이 사용자 정의하거나 확장한 코드를 업로드하려면 새로운 업로드 API 및 프로토콜을 사용해야 합니다.
 
 ## Upload assets {#upload-assets}
-
-파일(또는 여러 파일)을 업로드하려면 데스크탑에서 파일을 선택하고 사용자 인터페이스(웹 브라우저)를 대상 폴더로 드래그할 수 있습니다. 또는 사용자 인터페이스에서 업로드를 시작할 수 있습니다.
-
-1. 사용자 인터페이스에서 디지털 자산을 추가할 위치로 이동합니다. [!DNL Assets]
-1. 자산을 업로드하려면 다음 중 하나를 수행합니다.
-
-   * 도구 모음에서 **[!UICONTROL 만들기]** 아이콘을 누릅니다. 그런 다음 메뉴에서 **[!UICONTROL 파일을 누릅니다]**. 필요한 경우 표시된 대화 상자에서 파일의 이름을 변경할 수 있습니다.
-   * HTML5를 지원하는 브라우저에서 자산을 [!DNL Assets] 사용자 인터페이스에서 바로 드래그합니다. 파일 이름 바꾸기 대화 상자가 표시되지 않습니다.
-
-   ![create_menu](assets/create_menu.png)
-
-   여러 파일을 선택하려면 Ctrl 또는 Command 키를 누르고 파일 선택기 대화 상자에서 자산을 선택합니다. iPad를 사용하는 경우 한 번에 하나의 파일만 선택할 수 있습니다.
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -59,10 +47,6 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. 진행 중인 업로드를 취소하려면 진행률 표시줄 옆에 있는 닫기(`X`)를 클릭합니다. 업로드 작업을 취소하면 [!DNL Assets] 자산의 부분적으로 업로드된 부분이 삭제됩니다.
-
-   파일이 업로드되기 전에 업로드 작업을 취소하는 경우 현재 파일 업로드를 [!DNL Assets] 중지하고 콘텐트를 새로 고칩니다. 하지만 이미 업로드된 파일은 삭제되지 않습니다.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,13 +57,29 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
+파일(또는 여러 파일)을 업로드하려면 데스크탑에서 파일을 선택하고 사용자 인터페이스(웹 브라우저)를 대상 폴더로 드래그할 수 있습니다. 또는 사용자 인터페이스에서 업로드를 시작할 수 있습니다.
+
+1. 사용자 인터페이스에서 디지털 자산을 추가할 위치로 이동합니다. [!DNL Assets]
+1. 자산을 업로드하려면 다음 중 하나를 수행합니다.
+
+   * 도구 모음에서 **[!UICONTROL 만들기]** 아이콘을 누릅니다. 그런 다음 메뉴에서 **[!UICONTROL 파일을 누릅니다]**. 필요한 경우 표시된 대화 상자에서 파일의 이름을 변경할 수 있습니다.
+   * HTML5를 지원하는 브라우저에서 자산을 [!DNL Assets] 사용자 인터페이스에서 바로 드래그합니다. 파일 이름 바꾸기 대화 상자가 표시되지 않습니다.
+
+   ![create_menu](assets/create_menu.png)
+
+   여러 파일을 선택하려면 Ctrl 또는 Command 키를 누르고 파일 선택기 대화 상자에서 자산을 선택합니다. iPad를 사용하는 경우 한 번에 하나의 파일만 선택할 수 있습니다.
+
+1. 진행 중인 업로드를 취소하려면 진행률 표시줄 옆에 있는 닫기(`X`)를 클릭합니다. 업로드 작업을 취소하면 [!DNL Assets] 자산의 부분적으로 업로드된 부분이 삭제됩니다.
+
+   파일이 업로드되기 전에 업로드 작업을 취소하는 경우 현재 파일 업로드를 [!DNL Assets] 중지하고 콘텐트를 새로 고칩니다. 하지만 이미 업로드된 파일은 삭제되지 않습니다.
+
 1. 의 업로드 진행 대화 상자에는 업로드된 파일의 수와 업로드하지 못한 파일의 수가 [!DNL Assets] 표시됩니다.
 
-또한 자산 사용자 인터페이스에는 업로드한 가장 최근 자산이나 처음 만든 폴더가 표시됩니다.
+   또한 자산 사용자 인터페이스에는 업로드한 가장 최근 자산이나 처음 만든 폴더가 표시됩니다.
 
 >[!NOTE]
 >
->중첩된 폴더 계층을 AEM에 업로드하려면 [자산 일괄 업로드를 참조하십시오](#bulk-upload).
+>중첩된 폴더 계층을 업로드하려면 자산 [일괄 업로드를 참조하십시오](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
