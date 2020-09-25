@@ -2,7 +2,7 @@
 title: SPA 소개 및 연습
 description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 애플리케이션을 사용하는 방법을 단계별로 살펴봅니다. 이 애플리케이션은 AEM SPA 편집기와 어떻게 관련되어 있는지 보여줍니다.
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 1%
@@ -151,7 +151,7 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이
 
 다음 섹션인 [SPA 애플리케이션](#loading-a-spa-application)로딩 에서는 SPA 로딩 역학 및 컨텐츠를 동기적으로 그리고 비동기적으로 로딩하는 방법에 대해 자세히 살펴봅니다.
 
-### SPA 응용 프로그램 로드 {#loading-an-spa-application}
+### SPA 응용 프로그램 로드 {#loading-a-spa-application}
 
 1. 아직 로드되지 않은 경우, We.Retail 저널 애플리케이션을 게시 서버에 로드하거나 페이지 편집기의 **페이지 정보** 메뉴 **에서 게시됨으로** 보기 옵션을 사용하여로드합니다.
 
