@@ -2,9 +2,9 @@
 title: SPA 및 서버측 렌더링
 description: SPA에서 SSR(서버측 렌더링)을 사용하면 초기 페이지 로드 시간을 단축한 다음 클라이언트에게 추가 렌더링을 전달할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Adobe I/O Runtime에 대한 자세한 내용은
 >
 >Adobe은 모든 AEM 환경(작성자, 게시, 단계 등)에 대해 별도의 Adobe I/O Runtime 인스턴스를 권장합니다.
 
-## 원격 렌더러 구성 {#remote-renderer-configuration}
+## 원격 렌더러 구성 {#remote-content-renderer-configuration}
 
 AEM은 원격으로 렌더링된 내용을 검색할 수 있는 위치를 알고 있어야 합니다. SSR용으로 [구현할 모델에 관계없이](#adobe-i-o-runtime) 이 원격 렌더링 서비스에 액세스하는 방법을 AEM에 지정해야 합니다.
 
@@ -67,8 +67,6 @@ AEM은 원격으로 렌더링된 내용을 검색할 수 있는 위치를 알고
 >[!NOTE]
 >
 >AEM 기반 [통신 흐름](#aem-driven-communication-flow) 또는 [Adobe I/O Runtime 중심 흐름을 구현하도록 선택하더라도](#adobe-i-o-runtime-driven-communication-flow) 원격 컨텐츠 렌더러 구성을 정의해야 합니다.
->
->사용자 지정 Node.js 서버를 [사용하려는 경우에도 이 구성을 정의해야 합니다.](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ AEM은 원격으로 렌더링된 내용을 검색할 수 있는 위치를 알고
 
 ## AEM 기반의 커뮤니케이션 흐름 {#aem-driven-communication-flow}
 
-SSR을 사용할 때 AEM의 SPA의 [구성 요소 상호 작용 작업](introduction.md#workflow) 과정에는 앱의 초기 컨텐츠가 Adobe I/O Runtime에서 생성되는 단계가 포함됩니다.
+SSR을 사용할 때 AEM의 SPA의 [구성 요소 상호 작용 작업](introduction.md#interaction-with-the-spa-editor) 과정에는 앱의 초기 컨텐츠가 Adobe I/O Runtime에서 생성되는 단계가 포함됩니다.
 
 1. 브라우저가 AEM에서 SSR 컨텐츠를 요청합니다.
 1. AEM은 모델을 Adobe I/O Runtime에 게시합니다.
@@ -164,7 +162,7 @@ AEM에서 SSR을 SPA와 함께 사용하는 데 필요한 [원격 컨텐츠 렌�
 
 사용자 지정 요청 핸들러를 추가하려면 `RemoteContentRendererRequestHandler` 인터페이스를 구현합니다. 구성 요소 `Constants.SERVICE_RANKING` 속성은 해당 속성의 등급인 100보다 높은 정수로 설정해야 `DefaultRemoteContentRendererRequestHandlerImpl`합니다.
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 일반적으로 페이지 구성 요소의 HTL 템플릿은 이러한 기능의 기본 수신자입니다.
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
