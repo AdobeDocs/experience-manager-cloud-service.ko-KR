@@ -2,7 +2,7 @@
 title: ContextHub
 description: ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다
 translation-type: tm+mt
-source-git-commit: 75d6b51c0148a21ca401d98a5eaf644fc6b0e8cc
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 1%
@@ -43,8 +43,8 @@ ContextHub 저장소는 클라이언트에 컨텍스트 데이터를 저장합�
 * ContextHub에서는 몇 가지 [샘플 스토어 유형을 제공합니다](sample-stores.md).
 * AEM 콘솔을 사용하여 스토어 [를 만듭니다](configuring-contexthub.md#creating-a-contexthub-store).
 * 개발자는 맞춤형 스토어 유형을 [만들 수 있습니다](extending-contexthub.md#creating-custom-store-candidates).
-* 개발자는 [Javascript를 통해 스토어 데이터에](configuring-contexthub.md#interacting-with-contexthub-stores) 액세스할 수 있습니다.
+* 개발자는 [Javascript를 통해 스토어 데이터에](adding-contexthub.md#interacting-with-contexthub-stores) 액세스할 수 있습니다.
 
 ## 세그멘테이션 {#segmentation}
 
-ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해결된 세그먼트를 결정하는 세그멘테이션 엔진이 포함되어 있습니다. 여러 세그먼트가 정의됩니다. Javascript API를 사용하여 [해결된 세그먼트를 결정할 수 있습니다](configuring-contexthub.md#determining-resolved-contexthub-segments).
+ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해결된 세그먼트를 결정하는 세그멘테이션 엔진이 포함되어 있습니다. 여러 세그먼트가 정의됩니다. Javascript API를 사용하여 [해결된 세그먼트를 결정할 수 있습니다](adding-contexthub.md#determining-resolved-contexthub-segments).
