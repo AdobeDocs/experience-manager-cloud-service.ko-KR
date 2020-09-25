@@ -2,7 +2,7 @@
 title: ContextHub Javascript API 참조
 description: ContextHub 구성 요소가 페이지에 추가되면 스크립트에서 ContextHub Javascript API를 사용할 수 있습니다
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # ContextHub Javascript API 참조 {#contexthub-javascript-api-reference}
 
-ContextHub 구성 요소가 페이지에 추가되면 스크립트에서 [ContextHub Javascript API를 사용할 수 있습니다](configuring-contexthub.md#adding-contexthub-to-a-page-component).
+ContextHub 구성 요소가 페이지에 추가되면 스크립트에서 [ContextHub Javascript API를 사용할 수 있습니다](adding-contexthub.md).
 
 ## ContextHub 상수 {#contexthub-constants}
 
@@ -20,7 +20,7 @@ ContextHub Javascript API가 정의하는 상수 값.
 
 ### 이벤트 상수 {#event-constants}
 
-다음 표에는 ContextHub 저장소에 대해 발생하는 이름 이벤트가 나열되어 있습니다. ContextHub. [Utils.Eventing도 참조하십시오](contexthub-api.md#contexthub-utils-eventing).
+다음 표에는 ContextHub 저장소에 대해 발생하는 이름 이벤트가 나열되어 있습니다. ContextHub. [Utils.Eventing도 참조하십시오](#contexthub-utils-eventing).
 
 | 상수 | 설명 | 값 |
 |---|---|---|
@@ -482,7 +482,7 @@ JSONP 서비스의 URL을 검색합니다.
 
 ## ContextHub.Store.PersistentJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) , 따라서 해당 클래스의 모든 함수를 상속합니다. 그러나 JSONP 서비스에서 검색한 데이터는 ContextHub 지속성 구성에 따라 유지됩니다. (지속성 [모드 참조:](configuring-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` extends [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) , 따라서 해당 클래스의 모든 함수를 상속합니다. 그러나 JSONP 서비스에서 검색한 데이터는 ContextHub 지속성 구성에 따라 유지됩니다. (지속성 [모드 참조:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistentStore {#contexthub-store-persistedstore}
 
