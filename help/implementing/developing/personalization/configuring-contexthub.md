@@ -2,9 +2,9 @@
 title: ContextHub 구성
 description: Context Hub 구성 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,6 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | 일반 UI 모듈 유형 | UI 모듈 속성에 구성됨 |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | 브라우저에 대한 정보를 표시합니다. | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | 날짜 및 시간 정보를 표시합니다. | `datetime` |
-| [contexthub.device](sample-modules.md#contexthub-device-ui-module-type) | 클라이언트 장치 표시 | `emulators` |
 | [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | 클라이언트의 위도 및 경도와 지도의 위치를 표시합니다. 위치를 변경할 수 있습니다. | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | 장치의 화면 방향(가로 또는 세로)을 표시합니다. | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 페이지 태그에 대한 통계를 표시합니다. | `tagcloud` |
@@ -112,14 +111,10 @@ AEM에서는 스토어를 기반으로 다음과 같은 샘플 스토어 지원�
 | 스토어 유형 | 설명 |
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 해결된 및 해결되지 않은 ContextHub 세그먼트를 저장할 수 있습니다. ContextHub 세그먼트 관리자에서 세그먼트를 자동으로 검색합니다. |
-| [aem.resoundsegments](sample-stores.md#aem-resolvedsegments-sample-store-candidate) | 현재 해결된 세그먼트를 저장합니다. ContextHub SegmentManager 서비스를 수신하여 스토어를 자동으로 업데이트합니다. |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | 브라우저 위치의 위도와 경도를 저장합니다. |
-| [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) | 브라우저 위치의 현재 날짜, 시간 및 계절을 저장합니다. |
 | [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 여러 장치의 속성과 기능을 정의하고 현재 클라이언트 장치를 감지합니다. |
-| [contexthub.generic-jsonp](sample-stores.md#contexthub-generic-jsonp-sample-store-candidate) | JSONP 서비스에서 데이터를 검색하고 저장 |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 현재 사용자의 프로필 데이터를 저장합니다. |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | 장치 정보, 브라우저 유형, 창 방향 등 클라이언트에 대한 정보를 저장합니다 |
-| [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) | 페이지 태그 및 태그 카운트를 저장합니다. |
 
 1. Experience Manager 레일에서 도구 > 사이트 > ContextHub를 클릭하거나 탭합니다.
 1. 기본 구성 컨테이너를 클릭하거나 탭합니다.
@@ -144,7 +139,7 @@ AEM에서는 스토어를 기반으로 다음과 같은 샘플 스토어 지원�
 
 서비스 호출에 대한 데이터를 저장하도록 contexthub.generic-jsonp 스토어가 구성됩니다 `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. 서비스는 UI 모듈에 표시되는 다음 데이터를 반환합니다.
 
-```xml
+```javascript
 {
    "md5": "919a56ab62b6d5e1219fe1d95248a2c5",
    "original": "\"text to md5\""
@@ -165,7 +160,7 @@ jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 다�
 * **활성화됨:** 선택
 * **세부 정보 구성(JSON):**
 
-   ```xml
+   ```javascript
    {
     "service": {
     "jsonp": false,
@@ -193,7 +188,7 @@ UI 모듈 [추가의](#adding-a-ui-module) 절차를 사용하여 샘플 페르�
 * **모듈 유형:** contexthub.base
 * **세부 정보 구성(JSON):**
 
-   ```xml
+   ```javascript
    {
     "icon": "coral-Icon--data",
     "title": "MD5 Conversion",
@@ -222,6 +217,15 @@ CRXDE Lite을 사용하여 다음 `debug` 에서 속성을 **true로** 설정합
 
 * `/conf/global/settings/cloudsettings` 또는
 * `/conf/<site>/settings/cloudsettings`
+
+### ContextHub에 대한 디버그 메시지 로깅 {#logging-debug-messages-for-contexthub}
+
+개발 시 유용한 세부 디버그 메시지를 기록하도록 [Adobe Granite ContextHub OSGi 서비스(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)를 구성합니다.
+
+서비스를 구성하려면 [웹 콘솔](/help/implementing/deploying/configuring-osgi.md) 또는 저장소의 JCR 노드를 사용할 수 있습니다.
+
+* 웹 콘솔:디버그 메시지를 기록하려면 디버그 속성을 선택합니다.
+* JCR 노드:디버그 메시지를 기록하려면 부울 `com.adobe.granite.contexthub.debug` 속성을 로 설정합니다 `true`.
 
 ### 자동 모드 {#silent-mode}
 
