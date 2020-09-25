@@ -2,9 +2,9 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기초로 사용할 페이지를 만들 때 사용됩니다
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 8%
 
 ---
@@ -292,7 +292,7 @@ WKND 자습서의 템플릿 폴더 [를](/help/implementing/developing/introduct
 
    * 페이지 구성 요소의 리소스 유형입니다.
    * 템플릿 편집기에서 허용되는 구성 요소를 정의하는 루트 노드의 정책입니다.
-   * 템플릿 유형에서 응답형 그리드에 대한 중단점을 정의하고 모바일 에뮬레이터를 설정하는 것이 좋습니다. 구성은 개별 템플릿에서도 정의할 수 있으므로 선택 사항입니다(템플릿 유형 및 모바일 장치 그룹 [섹션 참조](#p-template-type-and-mobile-device-groups-br-p)).
+   * 템플릿 유형에서 응답형 그리드에 대한 중단점을 정의하고 모바일 에뮬레이터를 설정하는 것이 좋습니다.
 
 * AEM에서는 HTML5 페이지 및 적응형 양식 페이지와 같은 간단한 템플릿 유형을 제공합니다.
 
@@ -476,7 +476,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
    템플릿을 사용하려면 다음 중 하나를 사용하여 템플릿을 활성화해야 합니다.
 
-   * [템플릿](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) 콘솔에서 템플릿 **활성화** .
+   * [템플릿](/help/sites-cloud/authoring/features/templates.md) 콘솔에서 템플릿 **활성화** .
 
    * 노드에서 상태 속성을 `jcr:content` 설정합니다.
 
