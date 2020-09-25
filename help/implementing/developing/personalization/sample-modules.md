@@ -2,9 +2,9 @@
 title: 샘플 ContextHub UI 모듈 유형
 description: ContextHub에서는 솔루션에서 사용할 수 있는 몇 가지 샘플 UI 모듈을 제공합니다
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ contexthub.browserinfo UI 모듈 인스턴스에는 세부 구성 값이 필요�
 
 ## contexthub.datetime UI 모듈 유형 {#contexthub-datetime-ui-module-type}
 
-UI `contexthub.datetime` 모듈은 contexthub.datetime [저장소 후보를 기반으로 하는 datetime이라는 저장소에 저장된 날짜 및 시간을](sample-stores.md#contexthub-datetime-sample-store-candidate) 표시합니다.
+UI `contexthub.datetime` 모듈에는 `contexthub.datetime` 스토어 후보를 기반으로 하는 datetime이라는 저장소에 저장된 날짜 및 시간이 표시됩니다.
 
 ![contexthub.datetime 모듈](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ UI 모듈의 `contexthub.screen-orientation` 인스턴스에는 세부 구성 �
 
 ## contexthub.tagcloud UI 모듈 유형 {#contexthub-tagcloud-ui-module-type}
 
-UI `contexthub.tagcloud` 모듈에는 태그에 대한 정보가 표시됩니다. 도구 모음에서 UI 모듈에는 태그 수가 표시됩니다. 팝업에 새 태그를 추가하기 위한 태그 클라우드 및 텍스트 상자가 표시됩니다. UI 모듈은 [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) 저장소 후보를 기반으로 하는 tagcloud라는 ContextHub 저장소에서 정보를 가져옵니다.
+UI `contexthub.tagcloud` 모듈에는 태그에 대한 정보가 표시됩니다. 도구 모음에서 UI 모듈에는 태그 수가 표시됩니다. 팝업에 새 태그를 추가하기 위한 태그 클라우드 및 텍스트 상자가 표시됩니다. UI 모듈은 `contexthub.tagcloud` 스토어 후보를 기반으로 하는 tagcloud라는 ContextHub 저장소에서 정보를 가져옵니다.
 
 ![contexthub.tagcloud 모듈](assets/tagcloud-module.png)
 
