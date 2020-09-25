@@ -2,7 +2,7 @@
 title: SPA 블루프린트
 description: 본 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크가 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -164,7 +164,7 @@ SPA 구성 요소는 응답형 격자와 같은 그래픽 컨테이너에 매핑
 
 예:
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ SPA 구성 요소는 응답형 격자와 같은 그래픽 컨테이너에 매핑
 
 기본 [`Component Mapping`](#componentmapping) 라이브러리와 그 `MapTo` 기능은 캡슐화되고 확장되어 현재 구성 요소 클래스와 함께 제공된 편집 구성에 관련된 기능을 제공할 수 있습니다.
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 위의 구현에서 프로젝트 구성 요소는 [구성 요소 매핑](#componentmapping) 저장소에 실제로 등록되기 전에 비어 있는 기능으로 확장됩니다. 이렇게 하려면 라이브러리를 캡슐화하고 확장하여 구성 개체에 대한 지원을 [`ComponentMapping`](#componentmapping) `EditConfig` 도입합니다.
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 * 응답형 격자 요소에는 `aem-Grid--`
 * 응답형 열 요소에는 `aem-GridColumn--`
 * 이전 두 개의 접두사가 동일한 요소에 나타나지 않는 것처럼 부모 격자의 열이기도 한 응답형 격자
-* 편집 가능한 리소스에 해당하는 요소에는 속성이 `data-cq-data-path` 적용됩니다. 이 [문서의 페이지 편집기로](#contract-wtih-the-page-editor) 계약 섹션을 참조하십시오.
+* 편집 가능한 리소스에 해당하는 요소에는 속성이 `data-cq-data-path` 적용됩니다. 이 [문서의 페이지 편집기로](#contract-with-the-page-editor) 계약 섹션을 참조하십시오.
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
