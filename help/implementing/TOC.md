@@ -4,10 +4,10 @@ user-guide-title: 클라우드 서비스로서의 AEM용 구현
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: fa7d271a047277afe0a4bad709d1223224c92fb8
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 85%
+source-wordcount: '398'
+ht-degree: 84%
 
 ---
 
@@ -96,6 +96,7 @@ ht-degree: 85%
    + [액세스 가능한 사이트를 생성하도록 RTE 구성](/help/implementing/developing/extending/rte-accessible-content.md)
 + 클라우드 서비스로서의 AEM에 배포 {#deploying}
    + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
+   + [AEM 버전 업데이트](deploying/aem-version-updates.md)
    + [클라우드 서비스로서의 AEM에 대한 OSGi 구성](deploying/configuring-osgi.md)
 + 작성 계층 {#author-tier}
    + [작성자 계층 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
