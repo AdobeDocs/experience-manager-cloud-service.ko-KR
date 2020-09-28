@@ -1,0 +1,50 @@
+---
+title: AEM 버전 업데이트
+description: 'AEM 버전 업데이트 '
+translation-type: tm+mt
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 0%
+
+---
+
+
+# AEM 버전 업데이트 {#aem-version-updates}
+
+## 소개 {#introduction}
+
+AEM은 이제 Cloud Service으로 연속 통합 및 연속 배달(CI/CD)을 사용하여 프로젝트가 최신 AEM 버전을 사용하고 있는지 확인합니다. 즉, 모든 업그레이드 작업은 완전히 자동화되므로 사용자가 서비스를 중단할 필요가 없습니다.
+
+>[!NOTE]
+>프로덕션 환경에 대한 업데이트가 실패할 경우 Cloud Manager는 스테이지 환경을 자동으로 롤백합니다. 이 작업은 업데이트가 완료되면 스테이지와 프로덕션 환경 모두 동일한 AEM 버전을 사용하도록 자동으로 수행됩니다.
+
+AEM 버전 업데이트는 다음과 같은 두 가지 유형입니다.
+
+* **푸시 업데이트**
+
+   * 매일 출시됩니다.
+   * 최신 버그 수정 및 보안 업데이트를 비롯한 대부분의 유지 관리
+
+   변경 사항이 정기적으로 적용되면 효과가 증가하므로 서비스에 미치는 영향이 줄어듭니다.
+
+>[!NOTE]
+>AEM 푸시 업데이트에 대한 자세한 내용은 [Adobe Experience Manager의 Cloud Service 연속 전달 모델로 백서를 참조하십시오.](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+
+* **새로운 기능 업데이트**
+
+   * 예측 가능한 월별 일정을 통해 출시됩니다.
+
+AEM 업데이트는 제작 중인 시스템에 서비스를 중단 없이 여러 단계를 거쳐 강력하고 완벽하게 자동화된 제품 인증 과정을 거칩니다. 상태 검사는 응용 프로그램의 상태를 모니터링하는 데 사용됩니다. AEM에서 Cloud Service 업데이트으로 이러한 검사가 실패하는 경우 릴리스가 진행되지 않으며 Adobe에서 업데이트로 인해 예기치 않은 동작이 발생한 이유를 조사합니다.
+
+[제품 업그레이드 및 고객 코드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 푸시가 최신 AEM 버전 업데이트 중에도 제품 테스트 및 제품 기능 테스트를 통해 제품 업그레이드를 막고 제품 개발을 중단하도록 합니다.
+
+>[메모]
+>사용자 지정 코드가 스테이징으로 푸시된 다음 사용자가 거부하면 다음 AEM 업데이트는 해당 변경 사항을 제거하여 마지막으로 성공한 고객 릴리스의 git 태그를 프로덕션에 반영합니다.
+
+## 복합 노드 저장소 {#composite-node-store}
+
+위에 언급했듯이 대부분의 경우 업데이트로 인해 노드 클러스터인 작성자를 비롯하여 다운타임이 0으로 줄어듭니다. Oak의 *복합 노드 스토어* 기능 때문에 롤링 업데이트가 가능합니다.
+
+이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 순환 배포에서는 기존 Blue AEM 버전과 구별되는 자체(TarMK 기반 변경 가능한 저장소)가 포함되어 있지만, 두 버전은 변경 가능, `/libs` 및 기타 등의 영역이 포함된 공유 DocumentMK 기반 저장소를 참조하고 `/content` `/conf` `/etc` 있습니다. 파란색과 녹색 둘 다 자체 버전이 있으므로 롤링 업데이트 동안 둘 다 활성 상태일 수 `/libs`있으며, 파란색이 완전히 녹색으로 바뀔 때까지 둘 다 트래픽을 수행할 수 있습니다.
+
