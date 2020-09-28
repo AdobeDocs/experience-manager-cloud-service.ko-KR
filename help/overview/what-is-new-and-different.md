@@ -2,9 +2,9 @@
 title: Cloud Service의 차이점과 새로운 점
 description: 'What is Different and What is New - as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 58f9023519a98ae28dc2b0986d6e25e8804e6e72
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1856'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 10%
 ![다양한 사용 패턴을 위한 자동 크기 조절](assets/introduction-04.png "다양한 사용 패턴을 위한 자동 크기 조절")
 
 
-## 업데이트 {#upgrades}
+## AEM 업데이트 {#upgrades}
 
 >[!NOTE]
 >자세한 내용은 [AEM 버전 업데이트를 참조하십시오](/help/implementing/deploying/aem-version-updates.md).
@@ -82,9 +82,6 @@ Adobe은 서비스의 모든 운영 인스턴스를 AEM 코드 베이스의 최�
    * 최신 버그 수정 및 보안 업데이트를 비롯한 대부분의 유지 관리
 
       변경 사항이 정기적으로 적용되면 효과가 증가하므로 서비스에 미치는 영향이 줄어듭니다.
-
-      >[!NOTE]
-      >AEM 푸시 업데이트에 대한 자세한 내용은 [Adobe Experience Manager의 Cloud Service 연속 전달 모델로 백서를 참조하십시오.](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
 
 * **새로운 기능 업데이트**
 
