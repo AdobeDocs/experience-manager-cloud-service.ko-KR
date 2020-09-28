@@ -1,11 +1,11 @@
 ---
-title: 클라우드 서비스로 제공되는 Adobe Experience Manager Assets 아키텍처
-description: 클라우드 서비스로 제공되는 Adobe Experience Manager Assets 아키텍처
+title: 건축 [!DNL Assets]
+description: Cloud Service의 Adobe Experience Manager 에셋의 건축
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '103'
 ht-degree: 7%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Architecture of Assets as a Cloud Service solution {#assets-architecture}
 
-클라우드 서비스로서의 AEM Assets는 Adobe Experience Manager를 기반으로 하며, 최신 Experience Manager 6.5와 잘 비교됩니다. 클라우드 서비스 오퍼링은 클라우드 기본 서비스로서 조정된 아키텍처 및 기능을 제공합니다. 기본 아키텍처의 변경 사항으로 인해 모든 Experience Manager 6.5 기능이 클라우드 서비스의 일부가 되는 것은 아닙니다.
+Cloud Service인 AEM Assets은 Adobe Experience Manager을 기반으로 하고 있으며 최신 Experience Manager 6.5와 잘 견줄 수 있습니다. Cloud Service 오퍼링은 클라우드 기반의 서비스가 될 수 있도록 조정된 아키텍처와 기능을 제공합니다. 기본 아키텍처의 변경 사항으로 인해 모든 Experience Manager 6.5 기능이 Cloud Service의 일부가 되는 것은 아닙니다.
 
 자산 마이크로서비스에 대한 아키텍처 개요를 보려면 이 [자산 마이크로서비스 개요를 참조하십시오](asset-microservices-overview.md#asset-microservices-architecture).
 
