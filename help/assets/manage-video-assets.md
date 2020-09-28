@@ -1,12 +1,12 @@
 ---
-title: 비디오 자산을 관리할 수 있습니다 [!DNL Adobe Experience Manager].
+title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게시할 수 있습니다 [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 0%
+source-wordcount: '539'
+ht-degree: 1%
 
 ---
 
