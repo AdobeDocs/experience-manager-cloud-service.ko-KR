@@ -1,11 +1,11 @@
 ---
-title: 디지털 에셋 관리를 위한 개발자 참조 [!DNL Adobe Experience Manager] 는 Cloud Service입니다.
+title: 개발자 참조 [!DNL Assets]
 description: '[!DNL 자산] API와 개발자 참조 콘텐츠를 사용하면 이진 파일, 메타데이터, 변환, 주석 및 [!DNL Content Fragments]같은 자산을 관리할 수 있습니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1236'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ HTTP POST 요청을 원하는 폴더에 제출합니다. 이 폴더에 자산이
 이를 위한 가능한 방법은 API에서 제공하는 업로드 URI 수를 기준으로 부품 크기를 계산하는 것입니다. 예를 들어 바이너리의 총 크기가 20,000바이트이고 업로드 URI 수는 2라고 가정합니다. 그런 다음 다음 다음 단계를 수행합니다.
 
 * 전체 크기를 URI 수로 나누어 부품 크기를 계산합니다.20,000 / 2 = 10,000.
-* POST 바이트 범위 0-9,999의 바이너리를 업로드 URI 목록의 첫 번째 URI에 연결합니다.
+* 바이너리의 POST 바이트 범위 0-9,999를 업로드 URI 목록의 첫 번째 URI로 지정합니다.
 * 업로드 URI 목록에서 바이너리의 POST 바이트 범위 10,000 - 19,999를 두 번째 URI로 지정합니다.
 
 업로드가 성공하면 서버가 각 요청에 응답하고 `201` 상태 코드가 있습니다.
