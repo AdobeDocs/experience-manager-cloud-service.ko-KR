@@ -2,9 +2,9 @@
 title: AEM 버전 업데이트
 description: 'AEM 버전 업데이트 '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,12 @@ AEM은 이제 Cloud Service으로 연속 통합 및 연속 배달(CI/CD)을 사�
 
 AEM 버전 업데이트는 다음과 같은 두 가지 유형입니다.
 
-* **푸시 업데이트**
+* **AEM 푸시 업데이트**
 
    * 매일 출시됩니다.
    * 최신 버그 수정 및 보안 업데이트를 비롯한 대부분의 유지 관리
 
-   변경 사항이 정기적으로 적용되면 효과가 증가하므로 서비스에 미치는 영향이 줄어듭니다.
-
->[!NOTE]
->AEM 푸시 업데이트에 대한 자세한 내용은 [Adobe Experience Manager의 Cloud Service 연속 전달 모델로 백서를 참조하십시오.](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      변경 사항이 정기적으로 적용되면 효과가 증가하므로 서비스에 미치는 영향이 줄어듭니다.
 
 * **새로운 기능 업데이트**
 
