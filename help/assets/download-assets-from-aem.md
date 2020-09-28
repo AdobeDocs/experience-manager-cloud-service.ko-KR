@@ -1,11 +1,11 @@
 ---
-title: 다음에서 [!DNL Adobe Experience Manager Assets]에셋 다운로드
+title: 자산 다운로드
 description: 자산 다운로드 [!DNL Adobe Experience Manager Assets] 명령 다운로드 기능을 활성화하거나 비활성화합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c4a642541a3c8f69c0efff0dbbe036374a1d6f6b
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '893'
 ht-degree: 4%
 
 ---
