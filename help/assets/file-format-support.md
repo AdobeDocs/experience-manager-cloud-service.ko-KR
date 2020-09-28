@@ -1,11 +1,11 @@
 ---
-title: Experience Manager 에셋에서 Cloud Service으로 지원하는 파일 형식 및 MIME 형식
+title: 지원되는 파일 포맷 및 MIME 유형
 description: Experience Manager 자산에서 Cloud Service으로 지원하는 파일 형식 및 MIME 형식입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '813'
 ht-degree: 7%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 7%
 
 # Assets supported file formats {#supported-file-formats}
 
-Cloud Service은 포맷과 상관없이 모든 바이너리 파일에 대한 저장 공간, 메타데이터 온라인 관리, 버전 관리, 업로드 및 다운로드 등 기본적인 컨텐츠 관리 기능을 지원합니다. Adobe Experience Manager 에셋은 다양한 파일 포맷을 지원하며 각 제품 기능에는 서로 다른 포맷에 대한 다양한 지원이 포함되어 있습니다.
+Adobe Experience Manager Cloud Service은 포맷과 상관없이 모든 바이너리 파일에 대해 저장, 메타데이터 온라인 관리, 버전 관리, 업로드 및 다운로드 등의 기본적인 컨텐츠 관리 기능을 지원합니다. Adobe Experience Manager 에셋은 다양한 파일 포맷을 지원하며 각 제품 기능에는 다양한 포맷을 지원합니다.
 
 또한 Experience Manager 자산은 미리 보기 및 표현물을 생성하고 전체 텍스트 색인 작업을 위한 메타데이터와 텍스트를 추출하는 확장된 지원을 제공합니다. 이러한 확장 지원은 [에셋 마이크로서비스를 통해 제공됩니다](asset-microservices-configure-and-use.md).
 
 자산 마이크로서비스를 사용하는 자산 전환의 주요 특징은 다음과 같습니다.
 
-* Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension, Adobe Acrobat 또는 PDF를 비롯한 Adobe 애플리케이션 및 서비스에서 생성된 주요 [Adobe 파일](#adobe-formats) 포맷입니다.
+* Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension, Adobe Acrobat, 또는 PDF를 비롯한 Adobe 애플리케이션 및 서비스에서 생성된 주요 [Adobe 파일](#adobe-formats) 포맷
 * 주요 [이미징 파일 포맷](#image-formats).
-* [Canon, Nikon, Fujifilm, Olympus 및 기타 제조업체(Adobe Camera Raw 지원)를 비롯한 다양한 카메라의 Camera Raw 파일 포맷을](#camera-raw-formats) 지원합니다.
+* [Canon, Nikon, Fujifilm, Olympus 및 기타 제조업체(Adobe Camera Raw 제공)를 비롯한 다양한 카메라의 파일 포맷Camera Raw을 지원합니다.](#camera-raw-formats)
 * Microsoft Office 및 Open Document 형식을 비롯한 일반적인 [문서 형식](#document-formats).
 * 다양한 [비디오](#video-formats) 및 [오디오](#audio-formats) 포맷
 
@@ -91,9 +91,9 @@ Cloud Service은 포맷과 상관없이 모든 바이너리 파일에 대한 저
 
 다음 3D 형식 목록이 지원됩니다.
 
-Dynamic Media [에서 3D 에셋을 사용한 작업을 참조하십시오.](/help/assets/dynamic-media/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 배달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -218,7 +218,7 @@ Dynamic Media [에서 3D 에셋을 사용한 작업을 참조하십시오.](/hel
 
 ## 오디오 포맷 {#audio-formats}
 
-Cloud Service의 에셋은 AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 포맷에 대한 XMP 메타데이터 추출 지원을 제공합니다.
+Cloud Service로서의 에셋은 AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 포맷에 대한 XMP 메타데이터 추출 지원을 제공합니다.
 
 >[!MORELIKETHIS]
 >
