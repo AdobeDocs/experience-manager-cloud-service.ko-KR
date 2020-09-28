@@ -1,12 +1,12 @@
 ---
-title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL Adobe Experience Manager].
+title: 디지털 자산의 메타데이터 관리
 description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1931'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
    >[!NOTE]
    >
    >* [ [!UICONTROL 속성] ] 페이지에서 자산의 선택을 취소하여 자산 목록에서 자산을 제거할 수 있습니다. 자산 목록에는 기본적으로 모든 자산이 선택되어 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
-   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 근처의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
+   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 옆의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
 
 
 1. 자산에 대해 다른 메타데이터 스키마를 선택하려면 도구 모음에서 **[!UICONTROL 설정을]** 탭/클릭하고 원하는 스키마를 선택합니다. 변경 사항을 저장합니다.
