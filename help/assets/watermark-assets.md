@@ -1,12 +1,12 @@
 ---
-title: 자산에 워터마크 지정
+title: 자산에 워터마크 표시
 description: 디지털 자산에 워터마크 추가
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
