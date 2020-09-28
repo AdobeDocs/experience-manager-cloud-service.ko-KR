@@ -1,11 +1,11 @@
 ---
-title: 디지털 자산의 사용 및 공유에 대한 보고서
+title: 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 [!DNL Adobe Experience Manager Assets] 및 공유를 이해하는 데 도움이 되는 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab9a3bfa3536e25243e9752f9f034e31a57e136c
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 자산 보고서 {#asset-reports}
 
-자산 보고를 사용하면 배포의 유용성을 평가할 수 [!DNL Adobe Experience Manager Assets] 있습니다. 를 [!DNL Assets]사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 이 보고서에서는 시스템 사용량, 사용자가 자산과 상호 작용하는 방법, 다운로드 및 공유되는 자산에 대한 유용한 정보를 제공합니다.
+자산 보고를 사용하면 배포의 유용성을 평가할 수 [!DNL Adobe Experience Manager Assets] 있습니다. 를 [!DNL Assets]사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 이 보고서에서는 시스템 사용, 사용자가 자산과 상호 작용하는 방법, 다운로드 및 공유되는 자산에 대한 유용한 정보를 제공합니다.
 
 보고서의 정보를 사용하여 주요 성공 지표를 추출하여 기업 내 및 고객별 [!DNL Assets] 채택을 측정합니다.
 
