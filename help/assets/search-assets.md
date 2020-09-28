@@ -1,12 +1,12 @@
 ---
-title: AEM에서 디지털 에셋 및 이미지 검색
+title: 디지털 에셋 검색
 description: 필터 패널을 사용하여 AEM에서 필요한 에셋을 찾는 방법 및 검색에 표시되는 에셋을 사용하는 방법을 살펴봅니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4521'
 ht-degree: 0%
 
 ---
