@@ -1,11 +1,11 @@
 ---
-title: Digital Rights Management [!DNL Adobe Experience Manager Assets] 는 클라우드 서비스로,
-description: Cloud Service에서 라이선스가 부여된 에셋의 에셋 만료 상태 및 정보 [!DNL Experience Manager] 를 관리하는 방법을 살펴볼 수 있습니다.
+title: Digital Rights Management in [!DNL Assets]
+description: 라이선스가 부여된 에셋의 에셋 만료 상태 및 정보를 Cloud Service으로 관리하는 방법 [!DNL Experience Manager] 을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Digital Rights Management for assets {#digital-rights-management-in-assets}
 
-디지털 자산은 종종 사용 약관 및 기간을 지정하는 라이선스와 연결됩니다. 플랫폼 [!DNL Adobe Experience Manager Assets] [!DNL Experience Manager] 과 완벽하게 통합되어 있으므로 에셋 만료 정보 및 에셋 상태를 효율적으로 관리할 수 있습니다. 라이선스 정보를 에셋과 연결할 수도 있습니다.
+디지털 자산은 종종 사용 약관 및 기간을 지정하는 라이선스와 연결됩니다. 플랫폼 [!DNL Adobe Experience Manager Assets] [!DNL Experience Manager] 과 완벽하게 통합되어 있으므로 에셋 만료 정보 및 에셋 상태를 효율적으로 관리할 수 있습니다. 라이센스 정보를 에셋과 연결할 수도 있습니다.
 
 ## 에셋 만료 {#asset-expiration}
 
-에셋 만료는 에셋에 대한 라이선스 요구 사항을 적용하는 효과적인 방법입니다. 또한 게시된 자산이 만료될 때 게시 취소되어 라이선스 위반의 가능성을 확인합니다. 관리자 권한이 없는 사용자는 만료된 자산을 편집, 복사, 이동, 게시 및 다운로드할 수 없습니다.
+에셋 만료는 에셋에 대한 라이선스 요구 사항을 적용하는 효과적인 방법입니다. 이렇게 하면 게시된 자산이 만료될 때 게시 취소되어 라이선스 위반의 가능성을 방지할 수 있습니다. 관리자 권한이 없는 사용자는 만료된 자산을 편집, 복사, 이동, 게시 및 다운로드할 수 없습니다.
 
 다음 위치에서 자산의 만료 상태를 볼 수 있습니다.
 
-* **카드 보기**: 만료된 자산의 경우 카드의 플래그가 만료되었음을 나타냅니다.
-* **목록 보기**: 만료된 자산의 경우 **[!UICONTROL 상태]** 열에 **[!UICONTROL 만료된]** 배너가표시됩니다.
-* **타임라인**: 타임라인에서 자산의 만료 상태를 볼 수 있습니다. 자산을 선택하고 타임라인을 선택합니다.
-* **참조 레일**: 참조 레일에서 자산의 만료 상태를 볼 수도 **[!UICONTROL 있습니다]** . 복합 자산과 참조된 하위 자산, 컬렉션 및 프로젝트 간의 자산 만료 상태 및 관계를 관리합니다.
+* **카드 보기**:만료된 자산의 경우 카드의 플래그가 만료되었음을 나타냅니다.
+* **목록 보기**:만료된 자산의 경우 **[!UICONTROL 상태]** 열에 **[!UICONTROL 만료된]** 배너가표시됩니다.
+* **타임라인**:타임라인에서 자산의 만료 상태를 볼 수 있습니다. 자산을 선택하고 타임라인을 선택합니다.
+* **참조 레일**:참조 레일에서 자산의 만료 상태를 볼 수도 **[!UICONTROL 있습니다]** . 복합 자산과 참조된 하위 자산, 컬렉션 및 프로젝트 간의 자산 만료 상태 및 관계를 관리합니다.
 
 1. 참조하는 웹 페이지와 복합 자산을 보려는 자산으로 이동합니다.
 1. 자산을 선택하고 [!DNL Experience Manager] 로고를 클릭합니다.
@@ -51,12 +51,12 @@ ht-degree: 0%
 
 또한, 오류나 오류로 인해 스케줄러가 현재 주기의 만료된 자산을 감지하지 못하는 경우 스케줄러는 다음 주기에 이러한 자산을 다시 검사하여 만료된 상태를 감지합니다.
 
-콘솔에서 [!DNL Assets] 만료된 하위 자산과 함께 참조하는 복합 에셋을 표시하려면 Configuration Manager에서 **[!UICONTROL Adobe CQ DAM 만료 알림]** 워크플로우를 [!DNL Experience Manager] 구성합니다.
+콘솔에서 [!DNL Assets] 만료된 하위 자산과 함께 참조하는 복합 자산을 표시하려면 Configuration Manager에서 **[!UICONTROL Adobe CQ DAM 만료 알림]** 워크플로우를 [!DNL Experience Manager] 구성합니다.
 
 1. 구성 [!DNL Experience Manager] 관리자를 엽니다.
-1. Adobe **[!UICONTROL CQ DAM 만료 알림을 선택합니다]**. 기본적으로 **[!UICONTROL 시간 기반 스케줄러가]** 선택되어 자산이 만료된 하위 자산이 있는지 여부를 특정 시간에 확인할 작업을 예약합니다. 작업이 완료되면, 하위 자산 및 참조된 자산이 만료된 것으로 검색 결과에 표시됩니다.
+1. Adobe CQ **[!UICONTROL DAM 만료 알림을 선택합니다]**. 기본적으로 **[!UICONTROL 시간 기반 스케줄러가]** 선택되어 자산이 만료된 하위 자산이 있는지 여부를 특정 시간에 확인할 작업을 예약합니다. 작업이 완료되면, 하위 자산 및 참조된 자산이 만료된 것으로 검색 결과에 표시됩니다.
 
-1. 작업을 주기적으로 실행하려면 시간 기반 스케줄러 규칙 **** 필드를 지우고 시간(초) **[!UICONTROL 을]** [주기 스케줄러] 필드에서 수정합니다. 예: 예제 표현식 &#39;0 &amp;ast; &amp;ast; ?&#39; 00시간에 작업을 트리거합니다.
+1. 작업을 주기적으로 실행하려면 시간 기반 스케줄러 규칙 **** 필드를 지우고 시간(초) **[!UICONTROL 을]** [주기 스케줄러] 필드에서 수정합니다. 예: 예제 표현식 &#39;0 &amp;ast;&amp;ast;?&#39; 00시간에 작업을 트리거합니다.
 
 <!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 1. 사용자 [!DNL Assets] 인터페이스에서 자산을 선택합니다.
 
-1. 도구 모음 **[!UICONTROL 에서 게시를]** 클릭합니다. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
+1. Click **[!UICONTROL Publish]** from the toolbar. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
 
 1. 메뉴에서 **[!UICONTROL 게시를]** 선택한 다음 확인 대화 상자를 닫습니다.
 1. 선택 모드를 종료합니다. 자산에 대한 게시 상태는 카드 보기의 자산 축소판 아래에 표시됩니다. 목록 보기에서 게시된 열에는 자산이 게시된 시간이 표시됩니다.
@@ -121,7 +121,7 @@ ht-degree: 0%
 >
 >이전 릴리스의 라이선스를 저장하는 데 `/etc/dam/drm/licences` 사용되는 위치 [!DNL Experience Manager] 는 더 이상 사용되지 않습니다.
 >
->라이센스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 포팅하는 경우 `/apps/settings/dam/drm/licenses` 또는 `/conf/*/settings/dam/drm/licenses`아래에 저장하는 것이 좋습니다.
+>라이센스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 포팅하는 경우, Adobe은 이러한 페이지를 `/apps/settings/dam/drm/licenses` 또는 `/conf/*/settings/dam/drm/licenses`아래에 저장하는 것을 권장합니다.
 
 ### DRM으로 보호된 에셋 다운로드 {#downloading-drm-assets}
 
