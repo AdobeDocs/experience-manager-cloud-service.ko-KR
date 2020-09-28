@@ -4,15 +4,15 @@ user-guide-title: Cloud Service 가이드로 에셋
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
+source-git-commit: 0f3f34d8871462bf94f596d04c04c99db6488fa5
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 89%
+source-wordcount: '430'
+ht-degree: 90%
 
 ---
 
 
-# Cloud Service 가이드로 에셋 {#assets}
+# 자산 안내서 {#assets}
 
 + [클라우드 서비스로서의 AEM Assets](/help/assets/home.md)
 + [개요 및 새로운 기능](overview.md)
