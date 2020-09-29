@@ -2,9 +2,9 @@
 title: 빌드 환경 세부 사항
 description: 빌드 환경 세부 사항 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,10 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
 ```
 
 >[!NOTE]
->지원되는 공급업체 값은 `oracle` 및 `sun`입니다.
->
->지원되는 버전 값은 `1.8`, `1.11`및 `11`입니다.
+>지원되는 공급업체 값 `oracle` 은 `sun`and이며 지원되는 버전 값은 `1.8`및 `1.11`입니다 `11`.
+
+>[!NOTE]
+>Cloud Manager 프로젝트 빌드는 여전히 Java 8을 사용하여 Maven을 호출하므로, [Apache Maven Enforcer 플러그인과 같은 플러그인을 통해 도구 체인 플러그인에 구성된 Java 버전을](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 확인하거나 적용할 수 없으며 이러한 플러그인을 사용할 수 없습니다.
 
 ## 환경 변수 {#environment-variables}
 
