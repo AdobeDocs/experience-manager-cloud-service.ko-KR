@@ -2,9 +2,9 @@
 title: AEM 버전 업데이트
 description: 'AEM 버전 업데이트 '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ AEM 업데이트는 제작 중인 시스템에 서비스를 중단 없이 여러
 
 [제품 업그레이드 및 고객 코드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 푸시가 최신 AEM 버전 업데이트 중에도 제품 테스트 및 제품 기능 테스트를 통해 제품 업그레이드를 막고 제품 개발을 중단하도록 합니다.
 
->[메모]
+>[!NOTE]
+>
 >사용자 지정 코드가 스테이징으로 푸시된 다음 사용자가 거부하면 다음 AEM 업데이트는 해당 변경 사항을 제거하여 마지막으로 성공한 고객 릴리스의 git 태그를 프로덕션에 반영합니다.
 
 ## 복합 노드 저장소 {#composite-node-store}
