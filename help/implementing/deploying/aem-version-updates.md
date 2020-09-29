@@ -2,7 +2,7 @@
 title: AEM 버전 업데이트
 description: 'AEM 버전 업데이트 '
 translation-type: tm+mt
-source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
+source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -24,6 +24,7 @@ AEM 버전 업데이트는 다음과 같은 두 가지 유형입니다.
 * **AEM 푸시 업데이트**
 
    * 매일 출시됩니다.
+
    * 최신 버그 수정 및 보안 업데이트를 비롯한 대부분의 유지 관리
 
       변경 사항이 정기적으로 적용되면 효과가 증가하므로 서비스에 미치는 영향이 줄어듭니다.
