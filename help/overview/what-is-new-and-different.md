@@ -2,9 +2,9 @@
 title: Cloud Service의 차이점과 새로운 점
 description: 'What is Different and What is New - as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
+source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
 workflow-type: tm+mt
-source-wordcount: '1875'
+source-wordcount: '1876'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 10%
 ![다양한 사용 패턴을 위한 자동 크기 조절](assets/introduction-04.png "다양한 사용 패턴을 위한 자동 크기 조절")
 
 
-## AEM 업데이트 {#upgrades}
+## AEM 업데이트 {#aem-updates}
 
 >[!NOTE]
 >자세한 내용은 [AEM 버전 업데이트를 참조하십시오](/help/implementing/deploying/aem-version-updates.md).
@@ -78,7 +78,7 @@ AEM은 이제 Cloud Service으로 연속 통합 및 연속 배달(CI/CD)을 사�
 
 AEM 버전 업데이트는 다음과 같은 두 가지 유형입니다.
 
-* **푸시 업데이트**
+* **AEM 푸시 업데이트**
 
    * 매일 출시됩니다.
    * 최신 버그 수정 및 보안 업데이트를 비롯한 대부분의 유지 관리
