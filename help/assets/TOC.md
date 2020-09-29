@@ -4,9 +4,9 @@ user-guide-title: Cloud Service 가이드로 에셋
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0f3f34d8871462bf94f596d04c04c99db6488fa5
+source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 90%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 90%
    + [메타데이터 추가 또는 편집 방법](meta-edit.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [자산 통찰력 사용 및 구성](assets-insights.md)
-   + [비동기 작업](asynchronous-jobs.md)
    + [메타데이터 프로필](metadata-profiles.md)
    + [메타데이터 스키마](metadata-schemas.md)
    + [비디오 자산 관리](manage-video-assets.md)
