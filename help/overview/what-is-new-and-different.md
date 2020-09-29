@@ -2,9 +2,9 @@
 title: Cloud Service의 차이점과 새로운 점
 description: 'What is Different and What is New - as a Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 98514867fba8c998cb653abea059e15a99cbd007
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1875'
 ht-degree: 10%
 
 ---
@@ -73,8 +73,12 @@ ht-degree: 10%
 
 AEM은 이제 Cloud Service으로 연속 통합 및 연속 배달(CI/CD)을 사용하여 프로젝트가 최신 AEM 버전을 사용하고 있는지 확인합니다.
 
-따라서 모든 업그레이드 작업은 완전히 자동화되므로 사용자가 서비스를 중단할 필요가 없습니다.
-Adobe은 서비스의 모든 운영 인스턴스를 AEM 코드 베이스의 최신 버전으로 업데이트하는 데 적극적으로 신경을 쓴다.AEM 버전 업데이트는 다음과 같은 두 가지 유형입니다.
+즉, 프로덕션 및 스테이지 인스턴스는 사용자를 위한 서비스 중단 없이 최신 AEM 버전으로 업데이트됩니다.
+
+>[!NOTE]
+> 프로덕션 환경에 대한 업데이트가 실패할 경우 Cloud Manager는 스테이지 환경을 자동으로 롤백합니다. 이 작업은 업데이트가 완료되면 스테이지와 프로덕션 환경 모두 동일한 AEM 버전을 사용하도록 자동으로 수행됩니다.
+
+AEM 버전 업데이트는 다음과 같은 두 가지 유형입니다.
 
 * **푸시 업데이트**
 
