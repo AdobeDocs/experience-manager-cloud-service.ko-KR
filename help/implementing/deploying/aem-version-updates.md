@@ -2,9 +2,9 @@
 title: AEM 버전 업데이트
 description: 'AEM 버전 업데이트 '
 translation-type: tm+mt
-source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
+source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-AEM은 이제 Cloud Service으로 연속 통합 및 연속 배달(CI/CD)을 사용하여 프로젝트가 최신 AEM 버전을 사용하고 있는지 확인합니다. 즉, 모든 업그레이드 작업은 완전히 자동화되므로 사용자가 서비스를 중단할 필요가 없습니다.
+AEM은 이제 Cloud Service으로 연속 통합 및 연속 배달(CI/CD)을 사용하여 프로젝트가 최신 AEM 버전을 사용하고 있는지 확인합니다. 즉, 프로덕션 및 스테이지 인스턴스는 사용자를 위한 서비스 중단 없이 최신 AEM 버전으로 업데이트됩니다.
 
 >[!NOTE]
 >프로덕션 환경에 대한 업데이트가 실패할 경우 Cloud Manager는 스테이지 환경을 자동으로 롤백합니다. 이 작업은 업데이트가 완료되면 스테이지와 프로덕션 환경 모두 동일한 AEM 버전을 사용하도록 자동으로 수행됩니다.
