@@ -2,9 +2,9 @@
 title: Dynamic Media 문제 해결
 description: Dynamic Media 문제 해결.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 2%
 
 # Dynamic Media 문제 해결 {#troubleshooting-dynamic-media-scene-mode}
 
-다음 문서에서는 다이내믹 미디어 문제 해결에 대해 설명합니다.
+다음 항목에서는 다이내믹 미디어 문제 해결에 대해 설명합니다.
+
+## 새로운 다이내믹 미디어 구성 {#new-dm-config}
+
+새 [다이내믹 미디어 구성 문제 해결을 참조하십시오.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## 일반(모든 자산) {#general-all-assets}
 
@@ -20,7 +24,7 @@ ht-degree: 2%
 
 ### 자산 동기화 상태 속성 {#asset-synchronization-status-properties}
 
-CRXDE Lite에서 다음 자산 속성을 검토하여 AEM에서 다이내믹 미디어로 자산의 성공적인 동기화를 확인할 수 있습니다.
+다음 자산 속성을 CRXDE Lite에서 검토하여 AEM에서 다이내믹 미디어로 자산의 성공적인 동기화를 확인할 수 있습니다.
 
 | **속성** | **예** | **설명** |
 |---|---|---|
@@ -31,15 +35,7 @@ CRXDE Lite에서 다음 자산 속성을 검토하여 AEM에서 다이내믹 미
 
 ### 동기화 로깅 {#synchronization-logging}
 
-동기화 오류 및 문제가 로그인 `error.log` (AEM 서버 디렉토리 `/crx-quickstart/logs/`)됩니다. 대부분의 문제의 근본 원인을 규명하는 데 충분한 로깅을 사용할 수 있지만 Sling Console(https://localhost:4502/system/console/slinglog `com.adobe.cq.dam.ips` )을 통해 패키지의 DEBUG에 대한 로깅을 늘려 자세한 정보를 수집할 수[](https://localhost:4502/system/console/slinglog)있습니다.
-
-### 이동, 복사, 삭제 {#move-copy-delete}
-
-이동, 복사 또는 삭제 작업을 수행하기 전에 다음을 수행합니다.
-
-* 이미지 및 비디오의 경우 이동, 복사 또는 삭제 작업을 수행하기 전에 값이 `<object_node>/jcr:content/metadata/dam:scene7ID` 존재하는지 확인합니다.
-* 이미지 및 뷰어 사전 설정의 경우 이동, 복사 또는 삭제 작업을 수행하기 전에 `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` 값이 존재하는지 확인합니다.
-* 위의 메타데이터 값이 없는 경우 작업을 이동, 복사 또는 삭제하기 전에 자산을 다시 업로드해야 합니다.
+동기화 오류 및 문제가 `error.log` (AEM 서버 디렉토리 `/crx-quickstart/logs/`)에 기록됩니다. 대부분의 문제의 근본 원인을 규명하는 데 충분한 로깅을 사용할 수 있지만 Sling Console(https://localhost:4502/system/console/slinglog `com.adobe.cq.dam.ips` )을 통해 패키지의 DEBUG에 대한 로깅을 늘려 자세한 정보를 수집할 수[](https://localhost:4502/system/console/slinglog)있습니다.
 
 ### 버전 제어 {#version-control}
 
@@ -75,16 +71,6 @@ CRXDE Lite에서 다음 자산 속성을 검토하여 AEM에서 다이내믹 미
      <li>자산 게시.</li>
      <li>자산을 다시 업로드하고 게시합니다.</li>
     </ul> </td>
-  </tr>
-  <tr>
-   <td>세트 편집기의 자산 선택기가 영구 로딩에 고정됨</td>
-   <td><p>6.4에서 해결된 알려진 문제</p> </td>
-   <td><p>선택기를 닫고 다시 엽니다.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>세트 편집의 일부로 자산을 선택한 후 선택</strong> 단추가 활성화되지 않습니다.</td>
-   <td><p> </p> <p>6.4에서 해결된 알려진 문제</p> <p> </p> </td>
-   <td><p>자산 선택기에서 다른 폴더를 먼저 클릭하고 되돌아가서 자산을 선택합니다.</p> </td>
   </tr>
   <tr>
    <td>회전판 핫스팟은 슬라이드 간 전환 후 이동</td>
@@ -130,7 +116,7 @@ CRXDE Lite에서 다음 자산 속성을 검토하여 AEM에서 다이내믹 미
    <td>
     <ul>
      <li>폴더에 비디오 프로필이 할당되어 있는지 확인합니다(지원되지 않는 파일 형식). 지원되지 않는 경우 이미지만 표시됩니다.</li>
-     <li>비디오 프로필에는 AVS 세트를 생성하려면 둘 이상의 인코딩 사전 설정이 있어야 합니다(단일 인코딩은 MP4 파일의 비디오 컨텐츠로 처리됨). 지원되지 않는 파일의 경우 처리되지 않은 것과 동일하게 처리됩니다.</li>
+     <li>비디오 프로필에는 AVS 세트를 생성하려면 둘 이상의 인코딩 사전 설정이 있어야 합니다(단일 인코딩은 MP4 파일의 비디오 컨텐츠로 처리됨).지원되지 않는 파일의 경우 처리되지 않은 것과 동일하게 처리됩니다.</li>
      <li>메타데이터에서 비디오를 확인하여 비디오 처리 <code>dam:scene7FileAvs</code> 가 완료되었는지 <code>dam:scene7File</code> 확인합니다.</li>
     </ul> </td>
    <td>
@@ -151,7 +137,7 @@ CRXDE Lite에서 다음 자산 속성을 검토하여 AEM에서 다이내믹 미
     </ul> </td>
    <td>
     <ol>
-     <li>클라우드 서비스 아래의 다이내믹 미디어 구성이 올바르게 설정되었는지 확인하십시오.</li>
+     <li>Cloud Services 아래의 다이내믹 미디어 구성이 올바르게 설정되었는지 확인하십시오.</li>
      <li>폴더에 비디오 프로필이 있는지 확인합니다. 또한 비디오 프로필을 확인하십시오.</li>
     </ol> </td>
   </tr>
@@ -160,7 +146,6 @@ CRXDE Lite에서 다음 자산 속성을 검토하여 AEM에서 다이내믹 미
    <td><p>비디오 인코딩이 아직 진행 중인지 또는 오류 상태가 되었는지 확인하려면 다음을 수행하십시오.</p>
     <ul>
      <li>비디오 상태 확인 <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>워크플로우 콘솔 &gt; 인스턴스, 보관 <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> 및 실패 탭에서 비디오를 모니터링합니다.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -194,7 +179,7 @@ CRXDE Lite에서 다음 자산 속성을 검토하여 AEM에서 다이내믹 미
   <tr>
    <td>뷰어 사전 설정이 게시되지 않음</td>
    <td><p>샘플 관리자 진단 페이지로 이동합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>계산된 값을 관찰합니다. 올바르게 작동하면 다음을 볼 수 있습니다.</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>: 뷰어 에셋을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 활성화되지 않은 모든 자산 <strong>목록</strong> 단추 중 하나를 클릭하여 세부 사항을 확인합니다.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>:뷰어 에셋을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 활성화되지 않은 모든 자산 <strong>목록</strong> 단추 중 하나를 클릭하여 세부 사항을 확인합니다.</p> </td>
    <td>
     <ol>
      <li>관리 도구에서 뷰어 사전 설정 목록으로 이동합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
@@ -220,19 +205,16 @@ CRXDE Lite에서 다음 자산 속성을 검토하여 AEM에서 다이내믹 미
     </ol> </td>
    <td><p>샘플 에셋 또는 뷰어 사전 설정 아트웍이 동기화되거나 게시되지 않은 경우 전체 복사/동기화 프로세스를 다시 시작합니다.</p>
     <ol>
-     <li>CRXDE Lite로 이동합니다.
-      <ul>
-       <li>삭제 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>CRX 패키지 관리자로 이동합니다. <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>다음으로 이동 <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
+     </li>
+     <li>다음 작업을 순서대로 선택합니다.
       <ol>
-       <li>목록에서 뷰어 패키지 검색(다음으로 시작 <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>다시 <strong>설치를 클릭합니다</strong>.</li>
+       <li>동기화 폴더 삭제를 참조하십시오.</li>
+       <li>사전 설정 폴더 삭제(아래 <code>/conf</code>).
+       <li>DM 설정 비동기 작업을 트리거합니다.</li>
       </ol> </li>
-     <li>클라우드 서비스에서 다이내믹 미디어 구성 페이지로 이동한 다음 다이내믹 미디어 - S7 구성에 대한 구성 대화 상자를 엽니다.
-      <ul>
-       <li>변경하지 않고 저장을 <strong>클릭합니다</strong>. 이를 통해 샘플 에셋, 뷰어 사전 설정 CSS 및 아트웍을 만들고 동기화할 수 있는 로직을 다시 트리거할 수 있습니다.<br />  </li>
-      </ul> </li>
+     <li>AEM 받은 편지함에서 성공적으로 동기화한 알림 대기
+     </li>
     </ol> </td>
   </tr>
  </tbody>
