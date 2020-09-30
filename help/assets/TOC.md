@@ -4,9 +4,9 @@ user-guide-title: Cloud Service 가이드로 에셋
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
+source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '430'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 90%
 + [아키텍처](architecture.md)
 + [지원되는 파일 형식](file-format-support.md)
 + [자산 마이크로서비스 개요](asset-microservices-overview.md)
++ [액세스 가능성 [!DNL Assets]](accessibility.md)
 + AEM을 사용하여 디지털 자산 관리 {#manage}
    + [자산 공유](share-assets.md)
    + [활동 및 DAM 작업 모니터링](assets-activity-history.md)
