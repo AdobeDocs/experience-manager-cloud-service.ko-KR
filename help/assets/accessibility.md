@@ -3,7 +3,7 @@ title: 액세스 가능성 [!DNL Experience Manager Assets].
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0bb58d910fed91e4627e1fd8e1f9af47a1b2f4df
+source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
 workflow-type: tm+mt
 source-wordcount: '1823'
 ht-degree: 2%
@@ -172,7 +172,7 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 * 키보드를 사용하는 드래그 기능은 화면 판독기의 검색 모드에서 메타데이터 스키마 편집기에서 올바르게 작동합니다.
 * 키보드를 사용하여 폴더 속성의 권한 탭에 있는 폐쇄된 사용자 그룹 아래의 사용자 또는 그룹 추가 필드로 초점을 이동할 수 있습니다.
 
-## 디지털 에셋 검색 {#search}
+## 디지털 에셋 검색 {#search-assets}
 
 신속하고 원활한 에셋 검색 경험을 통해 콘텐츠 제작 시간을 단축할 수 있습니다. 콘텐츠 속도 사용 사례는 핵심 [!DNL Assets] 기능의 일부입니다. Omnisearch 막대에서 검색을 시작하려면 키보드 단축키 `/` 를 사용하거나 화면 판독기 `Tab` 와 함께 검색 옵션을 신속하게 찾을 수 있습니다. 포커스가 검색 옵션 [!UICONTROL 검색 옵션] 에 있으면 화면 판독기에서 옵션 이름을 [ ![검색 단추](assets/do-not-localize/search_icon.png)]로 내레이션합니다. 키를 눌러 Omnisearch 상자 `Return` 를 열 수 있습니다. 화면 판독기는 검색 상자에 입력한 키워드에 내레이션할 뿐만 아니라 사용자가 제공하는 자동 완성 제안에 대해서도 설명합니다 [!DNL Experience Manager Assets]. 사용자는 화살표 키 `Return`를 조합하여 사용할 수 있으며, 다양한 옵션에 액세스하여 검색을 시작할 `Tab` 수 있습니다.
 
