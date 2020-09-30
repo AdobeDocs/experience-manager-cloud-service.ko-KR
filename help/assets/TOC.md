@@ -4,24 +4,24 @@ user-guide-title: Cloud Service 가이드로 에셋
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
+source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 90%
+source-wordcount: '406'
+ht-degree: 79%
 
 ---
 
 
-# 자산 안내서 {#assets}
+# [!DNL Assets] 가이드 {#assets}
 
-+ [클라우드 서비스로서의 AEM Assets](/help/assets/home.md)
++ [[!DNL Assets] cloud service](/help/assets/home.md)
 + [개요 및 새로운 기능](overview.md)
-+ [클라우드 서비스로서의 AEM Assets에 대한 주요 변경 사항](assets-cloud-changes.md)
-+ [아키텍처](architecture.md)
++ [Cloud Service [!DNL Assets] 로 주목할 만한 변경 사항](assets-cloud-changes.md)
++ [[!DNL Assets] 아키텍처](architecture.md)
 + [지원되는 파일 형식](file-format-support.md)
 + [자산 마이크로서비스 개요](asset-microservices-overview.md)
 + [액세스 가능성 [!DNL Assets]](accessibility.md)
-+ AEM을 사용하여 디지털 자산 관리 {#manage}
++ 디지털 자산을 관리합니다 {#manage}
    + [자산 공유](share-assets.md)
    + [활동 및 DAM 작업 모니터링](assets-activity-history.md)
    + [자산 마이크로서비스 사용 시작](asset-microservices-configure-and-use.md)
@@ -30,29 +30,29 @@ ht-degree: 90%
    + [일반적인 자산 관리 작업](manage-digital-assets.md)
    + [스마트 태그](smart-tags.md)
    + [자산 구성 방법](organize-assets.md)
-   + [AEM에서 Adobe Stock 자산 사용](aem-assets-adobe-stock.md)
+   + [aem [!DNL Adobe Stock] 에서 에셋 사용](aem-assets-adobe-stock.md)
    + [컬렉션 관리](manage-collections.md)
    + [메타데이터 개요](manage-metadata.md)
-   + [Adobe Creative Cloud와 통합](aem-cc-integration-best-practices.md)
+   + [통합 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [메타데이터 추가 또는 편집 방법](meta-edit.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [자산 통찰력 사용 및 구성](assets-insights.md)
    + [메타데이터 프로필](metadata-profiles.md)
    + [메타데이터 스키마](metadata-schemas.md)
    + [비디오 자산 관리](manage-video-assets.md)
-   + [AEM에서 자산 다운로드](download-assets-from-aem.md)
+   + [자산 다운로드](download-assets-from-aem.md)
    + [편집할 자산 체크인 및 체크아웃](check-out-and-submit-assets.md)
    + [자산에 대한 디지털 권한 관리](drm.md)
    + [워터마크 에셋](watermark-assets.md)
-+ 자산 구성, 관리 및 확장 {#admin}
++ Configure, administer and extend [!DNLAssets] {#admin}
    + [개발자 문서 및 API 참조](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
-   + [이미지 프로필 및 비디오 프로필 작업 정보](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [이미지 및 비디오 프로파일 사용](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [스마트 태그 구성](smart-tags-configuration.md)
-   + [다국어 자산 및 자산 번역](translate-assets.md)
+   + [다국어 에셋 및 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
    + [자산 HTTP API](mac-api-assets.md)
-   + [AEM Assets HTTP API의 컨텐츠 조각 지원](content-fragments/assets-api-content-fragments.md)
+   + [ Assets HTTP API의 컨텐츠 조각 지원](content-fragments/assets-api-content-fragments.md)
    + [연결된 자산](use-assets-across-connected-assets-instances.md)
    + [자산 보고서](asset-reports.md)
    + [계단식 메타데이터](cascading-metadata.md)
@@ -60,8 +60,8 @@ ht-degree: 90%
    + [MediaLibrary 기능](medialibrary.md)
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
 + 자산 공유 및 분배 {#brand-portal}
-   + [Brand Portal로 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)
-   + [자산을 Brand Portal에 게시](publish-to-brand-portal.md)
+   + [구성 [!DNL Assets] 방법 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [에셋 게시 대상 [!DNL Brand Portal]](publish-to-brand-portal.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
