@@ -1,11 +1,11 @@
 ---
-title: 액세스 가능성 [!DNL Experience Manager Assets].
+title: 액세스 가능성 [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
+source-git-commit: a277d647e3ae95ab18cf13b76ceaaeef6d64cc26
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1841'
 ht-degree: 2%
 
 ---
@@ -43,11 +43,12 @@ Adobe은 장애인을 포함한 모든 사용자를 위한 제품을 만들기 �
 
 ## 보조 기술 {#at-support}
 
-장애가 있는 사용자는 자주 하드웨어와 소프트웨어에 의존하여 웹 컨텐츠에 액세스합니다. 이러한 도구는 보조 기술이라고 합니다. [!DNL Adobe Experience Manager Assets] 사용자가 핵심 기능을 사용할 수 있도록 다음의 보조 기술을 사용합니다.
+장애가 있는 사용자는 자주 하드웨어와 소프트웨어에 의존하여 웹 컨텐츠에 액세스합니다. 이러한 도구는 보조 기술이라고 합니다. [!DNL Adobe Experience Manager Assets] 소프트웨어의 핵심 기능을 사용할 때 사용자가 지원할 수 있도록 다음과 같은 유형의 보조 기술을 사용해 작업합니다.
 
 * 화면 판독기
 * 음성 인식 소프트웨어
 * 키보드 사용 - 탐색 및 바로 가기
+* 스위치 컨트롤, 새로 고침 가능한 점자 디스플레이, 기타 컴퓨터 입력 디바이스 등 보조 하드웨어입니다.
 * UI 확대 툴
 
 ## [!DNL Experience Manager Assets] 액세스 가능한 사용 사례 {#accessible-assets-use-cases}
