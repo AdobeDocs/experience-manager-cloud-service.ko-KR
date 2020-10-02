@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 AEM 개발 지침
 description: 클라우드 서비스로서의 AEM 개발 지침
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -232,9 +232,9 @@ CQ [Mail Service OSGI 서비스를](https://docs.adobe.com/content/help/en/exper
 
 AEM CS는 포트 465를 통해 메일을 발송해야 합니다. 메일 서버에서 포트 465를 지원하지 않으면 TLS 옵션이 활성화된 한 포트 587을 사용할 수 있습니다.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Adobe은 고유한 전용 IP 주소를 통한 SMTP 가져오기를 지원하지 않습니다.
+>Adobe은 고유한 전용 IP 주소를 통한 SMTP 가져오기를 지원하지 않습니다.
 
 ### 구성 {#email-configuration}
 
