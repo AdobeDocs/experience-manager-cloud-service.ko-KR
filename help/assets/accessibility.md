@@ -3,9 +3,9 @@ title: 액세스 가능성 [!DNL Experience Manager Assets]
 description: Cloud Service의 액세서빌러티 기능 [!DNL Adobe Experience Manager] 이 장애가 있는 사용자에게 어떤 도움이 되는지 살펴보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bd27bb5da82c9997f4c562a3d1efad77df66728f
+source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1841'
 ht-degree: 2%
 
 ---
