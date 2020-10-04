@@ -3,9 +3,9 @@ title: 액세스 가능성 [!DNL Experience Manager Assets]
 description: Cloud Service의 액세서빌러티 기능 [!DNL Adobe Experience Manager] 이 장애가 있는 사용자에게 어떤 도움이 되는지 살펴보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 2%
 
 ---
@@ -145,7 +145,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 축소판 보기에서 빠른 작업 아이콘을 제거할 때 `Esc` 키를 사용해도 마지막 초점을 맞춘 항목에서 키보드 포커스가 제거되지 않습니다.
 * 자산을 선택한 상태에서 Alt + 4 키보드 단축키를 누르면 참조 목록이 열립니다. 키를 사용하여 `Tab` 아무 것도 없는 참조 항목을 탐색할 수 있습니다.
 * 자산에 대한 주석을 자산 타임라인에서 사용할 수 있습니다. 키보드로 이용할 수 있습니다.
-* Experience Manager의 보기 설정은 키보드를 통해 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고, 선택 및 탭하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
+* Experience Manager의 보기 설정은 키보드를 통해 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 선택 및 탭하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -175,7 +175,7 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 
 ## 디지털 에셋 검색 {#search-assets}
 
-신속하고 원활한 에셋 검색 경험을 통해 콘텐츠 제작 시간을 단축할 수 있습니다. 콘텐츠 속도 사용 사례는 핵심 [!DNL Assets] 기능의 일부입니다. Omnisearch 막대에서 검색을 시작하려면 키보드 단축키 `/` 를 사용하거나 화면 판독기 `Tab` 와 함께 검색 옵션을 신속하게 찾을 수 있습니다. 포커스가 검색 옵션 [!UICONTROL 검색 옵션] 에 있으면 화면 판독기에서 옵션 이름을 [ ![검색 단추](assets/do-not-localize/search_icon.png)]로 내레이션합니다. 키를 눌러 Omnisearch 상자 `Return` 를 열 수 있습니다. 화면 판독기는 검색 상자에 입력한 키워드에 내레이션할 뿐만 아니라 사용자가 제공하는 자동 완성 제안에 대해서도 설명합니다 [!DNL Experience Manager Assets]. 사용자는 화살표 키 `Return`를 조합하여 사용할 수 있으며, 다양한 옵션에 액세스하여 검색을 시작할 `Tab` 수 있습니다.
+신속하고 원활한 에셋 검색 경험을 통해 콘텐츠 제작 시간을 단축할 수 있습니다. 콘텐츠 속도 사용 사례는 핵심 [!DNL Assets] 기능의 일부입니다. Omnisearch 막대에서 검색을 시작하려면 키보드 단축키 `/` 를 사용하거나 화면 판독기 `Tab` 와 함께 검색 옵션을 신속하게 찾을 수 있습니다. 포커스가 검색 옵션 [!UICONTROL 검색 옵션] 에 있으면 화면 판독기에서 옵션 이름을 [ ![검색 단추](assets/do-not-localize/search_icon.png)]로 내레이션합니다. 키를 눌러 Omnisearch 상자 `Return` 를 열 수 있습니다. 화면 판독기는 검색 상자에 입력한 키워드에 대해 내레이션할 뿐만 아니라 사용자가 제공하는 제안에도 내레이션이 있습니다 [!DNL Experience Manager Assets]. 사용자는 화살표 키 `Return`를 조합하여 사용할 수 있으며, 다양한 옵션에 액세스하여 검색을 시작할 `Tab` 수 있습니다.
 
 검색 기능은 다음 기능을 통해 더 쉽게 액세스할 수 있습니다.
 
@@ -203,8 +203,8 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 * 링크 공유 대화 상자에서 찾아보기 모드에서 탐색할 때 화면 판독기에서
 
    * 대화 상자가 로드되는 즉시 테이블 정보를 분류하지 마십시오.
-   * 나열된 모든 자동 제안 항목으로 이동할 수 있습니다.
-   * 이메일 주소 및 검색 추가 필드에 대해 표시되는 자동 제안 내레이션을 지정합니다.
+   * 나열된 모든 제안으로 이동할 수 있습니다.
+   * 이메일 주소 및 검색 필드 추가에 대해 표시되는 제안을 나레이트합니다.
 
 ## 액세스 가능성 [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
