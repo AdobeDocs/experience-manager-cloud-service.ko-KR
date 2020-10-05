@@ -1,11 +1,11 @@
 ---
 title: 클라우드 서비스로서의 Adobe Experience Manager(AEM)의 주요 변경 사항
 description: 클라우드 서비스로서의 Adobe Experience Manager(AEM)의 주요 변경 사항
-translation-type: ht
-source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: ht
-source-wordcount: '861'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+workflow-type: tm+mt
+source-wordcount: '863'
+ht-degree: 96%
 
 ---
 
@@ -109,7 +109,7 @@ AMS 또는 온프레미스 설치에서 프로젝트 전환의 경우에는 AEM 
 
 ## 자산 처리 및 제공 {#asset-handling}
 
-자산 업로드, 처리 및 다운로드가 보다 효율적으로 수행되도록 AEM 클라우드 서비스에서 최적화되었기 때문에 더욱 효율적인 크기 조절과 더 빠른 업로드 및 다운로드가 가능합니다. 그러나 이는 일부 기존 사용자 지정 코드에 영향을 줄 수 있습니다.
+자산 업로드, 처리 및 다운로드는 보다 효율적인 크기 조정 및 신속한 업로드 및 다운로드를 지원하는 Cloud Service으로 자산에서 최적화되었습니다. 그러나 이는 일부 기존 사용자 지정 코드에 영향을 줄 수 있습니다.
 
 * 이전 AEM 버전의 기본 워크플로우 **DAM 자산 업데이트**&#x200B;는 이제 사용할 수 없습니다.
 * **변환하지 않은** 바이너리를 제공하는 웹 사이트 구성 요소는 직접 다운로드를 사용해야 합니다.
