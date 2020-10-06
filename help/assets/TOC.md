@@ -4,9 +4,9 @@ user-guide-title: Cloud Service 가이드로 에셋
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
+source-git-commit: 98f914fbae9fa6291a8330fe0fe6ebbf51984de1
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 79%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 79%
    + [편집할 자산 체크인 및 체크아웃](check-out-and-submit-assets.md)
    + [자산에 대한 디지털 권한 관리](drm.md)
    + [워터마크 에셋](watermark-assets.md)
-+ Configure, administer and extend [!DNLAssets] {#admin}
++ Configure, administer and extend [!DNL Assets] {#admin}
    + [개발자 문서 및 API 참조](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [이미지 및 비디오 프로파일 사용](/help/assets/dynamic-media/about-image-video-profiles.md)
