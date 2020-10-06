@@ -2,9 +2,9 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: d0e63184d229e52b949d0f24660121e3417912be
+source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2828'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 >
 >이 문서는 이러한 학습 및 개념을 바탕으로 하므로 기본 [AEM Project Tranype 사용](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)및 [FileVault Content Maven 플러그인에](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) 익숙해지십시오.
 
-이 문서에서는 불변과 불변량 컨텐츠의 분리를 준수하도록 보장함으로써 Adobe Experience Manager Maven 프로젝트에서 AEM Cloud Service과 호환하는 데 필요한 변경 사항에 대해 설명합니다.충돌하지 않고 결정적 배포를 만들기 위해 필요한 종속성을 설정합니다.배포가능한 구조로 포장되어 있습니다.
+이 문서에서는 불변의 컨텐츠와 불변의 컨텐츠 분리를 존중하여 Adobe Experience Manager Maven 프로젝트에 필요한 변경 사항을 설명하고, 상충되는 배포가 없도록 종속성을 설정하고, 배포 가능한 구조로 패키지되어 있다는 점을 확인하여 AEM과 호환되는 Cloud Service으로 변경 사항을 설명합니다.
 
 AEM 애플리케이션 배포는 단일 AEM 패키지로 구성되어야 합니다. 이 패키지에는 코드, 구성 및 지원 기준 컨텐츠를 포함하여 애플리케이션에서 작동하는 모든 것을 구성하는 하위 패키지가 들어 있어야 합니다.
 
@@ -26,7 +26,7 @@ AEM에는 **컨텐츠** 와 **코드****분리가 필요하며, 이는 단일 �
 
 >[!TIP]
 >
->이 문서에 요약된 구성은 [AEM Project Maven Tranype 21 이상에서 제공됩니다](https://github.com/adobe/aem-project-archetype/releases).
+>이 문서에 요약된 구성은 [AEM Project Maven Tranype 24 이상에서 제공됩니다](https://github.com/adobe/aem-project-archetype/releases).
 
 ## 저장소의 변경 가능 영역과 불변경 영역 {#mutable-vs-immutable}
 
@@ -40,13 +40,13 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 ### Oak Indexes {#oak-indexes}
 
-Oak 색인(`/oak:index`)은 AEM Cloud Service 배포 과정에서 특별히 관리됩니다. 이는 Cloud Manager가 새 인덱스가 배포되고 완전히 다시 표시될 때까지 기다렸다가 새 코드 이미지로 전환해야 하기 때문입니다.
+Oak 색인(`/oak:index`)은 Cloud Service 배포 프로세스로 AEM에서 특별히 관리합니다. 이는 Cloud Manager가 새 인덱스가 배포되고 완전히 다시 인덱싱될 때까지 기다렸다가 새 코드 이미지로 전환해야 하기 때문입니다.
 
-이러한 이유로 Oak 색인은 런타임 시 변경할 수 있지만, 변경 가능한 패키지를 설치하기 전에 설치할 수 있도록 코드로 배포해야 합니다. 따라서 `/oak:index` 구성은 코드 패키지의 일부이며 아래 설명된 내용 패키지 [의 일부가 아닙니다.](#recommended-package-structure)
+이러한 이유로 Oak 색인은 런타임 시 변경할 수 있지만, 변경 가능한 패키지를 설치하기 전에 설치할 수 있도록 코드로 배포해야 합니다. 따라서 `/oak:index` 구성은 코드 패키지의 일부이며 아래 [설명에](#recommended-package-structure)따라 컨텐츠 패키지의 일부가 아닙니다.
 
 >[!TIP]
 >
->AEM에서 Cloud Service으로 색인 지정에 대한 자세한 내용은 [컨텐츠 검색 및 색인 문서를 참조하십시오.](/help/operations/indexing.md)
+>AEM에서 Cloud Service으로 색인 지정에 대한 자세한 내용은 [컨텐츠 검색 및 색인 문서를 참조하십시오](/help/operations/indexing.md).
 
 ## 권장 패키지 구조 {#recommended-package-structure}
 
@@ -56,63 +56,89 @@ Oak 색인(`/oak:index`)은 AEM Cloud Service 배포 과정에서 특별히 관�
 
 권장되는 애플리케이션 배포 구조는 다음과 같습니다.
 
-+ 패키지 또는 코드 `ui.apps` 패키지에는 배포될 모든 코드가 들어 있으며 배포만 합니다 `/apps`. 패키지의 일반적인 요소는 `ui.apps` 포함되지만 이에 국한되지 않습니다.
-   + OSGi 번들
-      + `/apps/my-app/install`
-   + [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)
-      + `/apps/my-app/config`
-   + [HTL](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) 스크립트
+### 코드 패키지/OSGi 번들
+
++ OSGi 번들 Jar 파일이 생성되어 모든 프로젝트에 직접 포함됩니다.
+
++ 패키지에 배포되는 모든 코드가 `ui.apps` 포함되어 있습니다. 이 코드는 배포 대상 `/apps`뿐입니다. 패키지의 일반적인 요소는 `ui.apps` 포함되지만 이에 국한되지 않습니다.
+   + [구성 요소 정의 및 HTL](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) 스크립트
       + `/apps/my-app/components`
    + JavaScript 및 CSS(클라이언트 라이브러리를 통해)
       + `/apps/my-app/clientlibs`
-   + [/libs](/help/implementing/developing/introduction/overlays.md) 오버레이
+   + [오버레이](/help/implementing/developing/introduction/overlays.md) / `/libs`
       + `/apps/cq`, `/apps/dam/`, 등이 됩니다.
    + 대체 컨텍스트 인식 구성
       + `/apps/settings`
    + ACL(권한)
       + 모든 `rep:policy` 경로 `/apps`
-   + Repo Init OSGi 구성 지시어(및 관련 스크립트)
-      + [Repo Init](#repo-init) 는 논리적으로 AEM 애플리케이션의 일부인 컨텐츠를 배포하는 데 권장되는 방법입니다. Repo Init를 사용하여 다음을 정의해야 합니다.
+
++ 패키지 `ui.config` 에 모든 [OSGi 구성이 포함되어 있습니다](/help/implementing/deploying/configuring-osgi.md).
+   + 실행 모드별 OSGi 구성 정의를 포함하는 조직 폴더
+      + `/apps/my-app/osgiconfig`
+   + Cloud Service 배포 대상으로 모든 대상 AEM에 적용되는 기본 OSGi 구성이 포함된 공통 OSGi 구성 폴더
+      + `/apps/my-app/osgiconfig/config`
+   + Cloud Service 배포 대상으로 모든 대상 AEM에 적용되는 기본 OSGi 구성이 포함된 모드 특정 OSGi 구성 폴더 실행
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Repo Init OSGi 구성 스크립트
+      + [Repo Init](#repo-init) 는 논리적으로 AEM 애플리케이션의 일부인 컨텐츠를 배포하는 데 권장되는 방법입니다. Repo Init OSGi 구성은 위에서 설명한 바와 같이 적절한 `config.<runmode>` 폴더에 배치되어야 하며 다음을 정의하는 데 사용해야 합니다.
          + 기준 컨텐츠 구조
-            + `/conf/my-app`
-            + `/content/my-app`
-            + `/content/dam/my-app`
          + 사용자
          + 서비스 사용자
          + 그룹
          + ACL(권한)
-            + 모든 경로 `rep:policy` (변경 가능 또는 변경 불가능)
-+ 패키지 또는 `ui.content` 컨텐트 패키지에는 모든 컨텐트 및 구성이 들어 있습니다. 컨텐트 패키지에는 들어 있지 않은 모든 것 또는 `ui.apps` 그렇지 않은 것 `/apps` 이 들어 `/oak:index`있습니다. 패키지의 일반적인 요소는 `ui.content` 포함되지만 이에 국한되지 않습니다.
+
+### 콘텐츠 패키지
+
++ 이 `ui.content` 패키지에는 모든 컨텐츠와 구성이 들어 있습니다. 컨텐트 패키지에는 `ui.apps` 또 `ui.config` 는 패키지에 들어 있지 않은 모든 노드 정의, 즉 `/apps` 또는 `/oak:index`안에 없는 모든 노드 정의가 들어 있습니다. 패키지의 일반적인 요소는 `ui.content` 포함되지만 이에 국한되지 않습니다.
    + 컨텍스트 인식 구성
       + `/conf`
-   + 필수, 복잡한 컨텐츠 구조(예: Report Init에 정의된 기준선 컨텐츠 구조를 기반으로 구축되고 그 이전의 Content Build-out입니다.
+   + 필수, 복잡한 컨텐츠 구조(예: Report Init에 정의된 기준 요소 컨텐츠 구조를 기반으로 구축되고 확장되는 컨텐츠 빌드아웃)
       + `/content`, `/content/dam`, 등이 됩니다.
    + 관리 태깅 분류
       + `/content/cq:tags`
-   + 기타 기존 노드
+   + 기존 etc 노드(이상적, 비/etc 위치로 마이그레이션)
       + `/etc`
-+ 패키지 `all` 는 ONLY가 포함 `ui.apps` 및 `ui.content` 패키지를 포함하는 컨테이너 패키지입니다. 이 `all` 패키지에는 **자체 컨텐츠가** 없어야 하며, 모든 배포를 해당 하위 패키지에 위임해야 합니다.
+
+### 컨테이너 패키지
+
++ 패키지 `all` 는 배포 가능한 객체, OSGI 번들 Jar 파일, 패키지 `ui.apps``ui.config` `ui.content` 및 패키지를 포함하는 컨테이너 패키지입니다. 이 `all` 패키지에는 **컨텐츠 또는 코드가** 없어야 하지만, 모든 배포를 하위 패키지 또는 OSGi 번들 Jar 파일에 저장소로 위임할 수 있습니다.
 
    이제 패키지가 구성 대신 Maven [FileVault Package Maven 플러그인의 임베드 구성을](#embeddeds)사용하여 `<subPackages>` 포함됩니다.
 
-   복잡한 Experience Manager 배포의 경우 AEM의 특정 사이트 또는 테넌트를 나타내는 다양한 `ui.apps` 및 `ui.content` 프로젝트/패키지를 생성하는 것이 좋습니다. 이러한 작업이 수행되면 변경 가능한 컨텐츠와 변경 불가능한 컨텐츠 간의 분할이 충족되는지 확인하고 필요한 컨텐츠 패키지가 `all` 컨테이너 컨텐츠 패키지에서 하위 패키지로 추가됩니다.
+   복잡한 Experience Manager 배포의 경우 AEM의 특정 사이트 또는 테넌트를 나타내는 여러 개의 `ui.apps``ui.config` `ui.content` 프로젝트/패키지를 생성하는 것이 좋습니다. 이 작업이 수행되면 변경 가능한 컨텐츠와 변경 불가능한 컨텐츠 간의 분할이 충족되는지 확인하고 필요한 컨텐츠 패키지와 OSGi 번들 Jar 파일이 `all` 컨테이너 컨텐츠 패키지에 하위 패키지로 포함됩니다.
 
-   예를 들어 복잡한 배포 컨텐츠 패키지 구조는 다음과 같을 수 있습니다.
+   예를 들어 복잡한 배포 컨텐츠 패키지 구조는 다음과 같이 표시될 수 있습니다.
 
    + `all` 컨텐츠 패키지에는 단일 배포 아티팩트를 만들기 위해 다음 패키지가 포함됩니다.
-      + `ui.apps.common` 사이트 A와 사이트 B **에서 모두** 필요한 코드를 배포합니다.
-      + `ui.apps.site-a` 사이트 A에 필요한 배포 코드
-         + `core.site-a` OSGi 번들 Jar가 `ui.apps.site-a`
-      + `ui.content.site-a` 사이트 A에 필요한 컨텐트 및 구성 배포
-      + `ui.apps.site-b` 사이트 B에 필요한 코드 배포
-         + `core.site-b` OSGi 번들 Jar가 `ui.apps.site-b`
-      + `ui.content.site-b` 사이트 B에 필요한 컨텐트 및 구성 배포
+      + `common.ui.apps` 사이트 A와 사이트 B **에서 모두** 필요한 코드를 배포합니다.
+      + `site-a.core` 사이트 A에 필요한 OSGi 번들 JAR
+      + `site-a.ui.apps` 사이트 A에 필요한 배포 코드
+      + `site-a.ui.config` 사이트 A에 필요한 OSGi 구성 배포
+      + `site-a.ui.content` 사이트 A에 필요한 컨텐트 및 구성 배포
+      + `site-b.core` 사이트 B에 필요한 OSGi 번들 JAR
+      + `site-b.ui.apps` 사이트 B에 필요한 코드 배포
+      + `site-b.ui.config` 사이트 B에 필요한 OSGi 구성 배포
+      + `site-b.ui.content` 사이트 B에 필요한 컨텐트 및 구성 배포
+
+### 기타 응용 프로그램 패키지{#extra-application-packages}
+
+자체 코드와 콘텐츠 패키지로 구성된 다른 AEM 프로젝트를 AEM 배포에서 사용하는 경우 해당 컨테이너 패키지는 프로젝트 `all` 패키지에 포함되어야 합니다.
+
+예를 들어 2개의 공급업체 AEM 애플리케이션이 포함된 AEM 프로젝트는 다음과 같이 보일 수 있습니다.
+
++ `all` 컨텐츠 패키지에는 단일 배포 아티팩트를 만들기 위해 다음 패키지가 포함됩니다.
+   + `core` AEM 애플리케이션에서 OSGi 번들 Jar 필요
+   + `ui.apps` aem 응용 프로그램에 필요한 코드 배포
+   + `ui.config` aem 애플리케이션에서 필요한 OSGi 구성 배포
+   + `ui.content` aem 응용 프로그램에 필요한 컨텐츠 및 구성 배포
+   + `vendor-x.all` 공급업체 X 애플리케이션에서 필요한 모든 것(코드 및 컨텐츠)을 배포합니다.
+   + `vendor-y.all` 공급업체 Y 애플리케이션에서 필요한 모든 것(코드 및 컨텐츠)을 배포합니다.
 
 ## 패키지 유형 {#package-types}
 
 패키지는 선언된 패키지 유형으로 표시됩니다.
 
-+ 컨테이너 패키지에는 집합이 `packageType` 없어야 합니다.
++ 컨테이너 패키지는 `packageType` 로 설정해야 합니다 `container`.
 + 코드(변경할 수 없음) 패키지는 `packageType` 로 설정해야 합니다 `application`.
 + 컨텐츠(mutable) 패키지는 `packageType` 로 설정해야 합니다 `content`.
 
@@ -136,16 +162,17 @@ Repo Init는 폴더 트리와 같은 공통 노드 구조부터 사용자, 서�
 
 Repo Init의 주요 이점은 스크립트에서 정의한 모든 작업을 수행할 수 있는 암시적 권한을 가지고 있으며, 배포 라이프사이클에서 일찍 호출되어 시간 코드가 실행될 때까지 모든 필수 JCR 구조가 존재함을 보장합니다.
 
-Repo Init는 스크립트로 프로젝트에서 라이브로 스크립트를 작성하는 동안 다음과 같은 mutable 구조를 정의하는 데 사용할 수 있으며 사용해야 합니다. `ui.apps`
+Repo Init는 스크립트로 프로젝트에서 라이브로 스크립트를 작성하는 동안 다음과 같은 mutable 구조를 정의하는 데 사용할 수 있으며 사용해야 합니다. `ui.config`
 
 + 기준 컨텐츠 구조
-   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
 + 서비스 사용자
 + 사용자
 + 그룹
 + ACL
 
-Repo Init 스크립트는 `scripts` `RepositoryInitializer` OSGi 팩토리 구성의 항목으로 저장되므로 런타임 모드를 통해 암시적으로 타깃팅할 수 있으므로 AEM 작성자 및 AEM 게시 서비스의 Repo Init 스크립트 또는 Envs(Dev, Stage 및 Prod) 간에 차이가 날 수 있습니다.
+Repo Init 스크립트는 `scripts` `RepositoryInitializer` OSGi 출하 시 구성의 항목으로 저장되므로 실행 모드를 통해 암시적으로 타깃팅할 수 있으므로 AEM 작성자 및 AEM 게시 서비스의 Repo Init 스크립트 또는 환경(Dev, Stage 및 Prod) 간에도 차이가 날 수 있습니다.
+
+Repo Init OSGi 구성은 다중 행을 지원하므로 [`.config` OSGi 구성 형식](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) 으로 작성할 수 있습니다. 이는 OSGi 구성을 정의하는 데 사용하는 모범 사례 [`.cfg.json` 에 대한 예외입니다](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
 사용자 및 그룹을 정의할 때는 그룹만 애플리케이션의 일부로 간주되며, 이 경우 기능에 대한 필수 요소만 여기에서 정의해야 합니다. 조직 사용자 및 그룹은 AEM에서 런타임 시 정의되어야 합니다.예를 들어, 사용자 정의 워크플로우가 지정된 그룹에 작업을 할당하는 경우, AEM 응용 프로그램에서 Repo Init를 통해 해당 그룹이 정의되어야 하지만, 그룹화가 &quot;Wendy&#39;s Team&quot; 및 &quot;Sean&#39;s Team&quot;과 같은 단순한 조직일 경우, 이러한 작업은 AEM에서 런타임 시 가장 잘 정의되고 관리됩니다.
 
@@ -187,7 +214,7 @@ Repo Init 스크립트의 전체 용어는 [Apache Sling Repo Init 설명서에�
 
 AEM 작성자, AEM 게시 또는 둘 다를 대상으로 하기 위해 패키지는 특수 폴더 위치의 `all` 컨테이너 패키지에 다음 형식으로 포함됩니다.
 
-`/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
+`/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
 이 폴더 구조 분류:
 
@@ -202,9 +229,11 @@ AEM 작성자, AEM 게시 또는 둘 다를 대상으로 하기 위해 패키지
    >계약에 따라, 하위 패키지 포함 폴더의 이름은 접미사를 붙여넣습니다 `-packages`. 이렇게 하면 배포 코드와 컨텐츠 패키지가 파괴적이고 반복적인 설치 비헤이비어가 발생하는 하위 패키지의 대상 폴더 **를 배포하지** 않습니다 `/apps/<app-name>/...` .
 
 + 세 번째 수준 폴더는 다음 중 하나여야 합니다.
-   `application` 또는 `content`
+   `application`, `content` 또는 `container`
    + 이 `application` 폴더에는 코드 패키지가 들어 있습니다.
-   + 폴더 `content` 에 콘텐츠 패키지가 있습니다. 이 폴더 이름은 포함된 패키지의 [패키지 유형에](#package-types) 해당됩니다.
+   + 폴더에는 콘텐트 패키지가 `content` 들어 있습니다.
+   + 이 `container` 폴더에는 AEM 응용 프로그램에서 포함할 수 있는 [추가 응용 프로그램 패키지가](#extra-application-packages) 들어 있습니다.
+이 폴더 이름은 포함된 패키지의 [패키지 유형에](#package-types) 해당합니다.
 + 4단계 폴더에는 하위 패키지가 들어 있으며 다음 중 하나여야 합니다.
    + `install` aem 작성자 및 AEM **게시 모두에** 설치하려면
    + `install.author` aem **작성자에만** 설치
@@ -238,7 +267,9 @@ AEM 작성자, AEM 게시 또는 둘 다를 대상으로 하기 위해 패키지
 
 타사 패키지가 **Adobe의 공용 Maven 아티팩트 저장소에**&#x200B;있는 경우 Adobe Cloud Manager가 아티팩트를 해결하는 데 더 이상 구성할 필요가 없습니다.
 
-타사 패키지가 **공개 타사 Maven 아티팩트 저장소에**&#x200B;있는 경우 이 리포지토리는 프로젝트의 `pom.xml` 저장소에 등록되어 위에 [설명한 방법 다음에 포함되어야 합니다](#embeddeds). 타사 응용 프로그램/커넥터에 코드 및 컨텐츠 패키지가 모두 필요한 경우 각 패키지를 컨테이너(`all`) 패키지의 올바른 위치에 삽입해야 합니다.
+타사 패키지가 **공개 타사 Maven 아티팩트 저장소에**&#x200B;있는 경우 이 리포지토리는 프로젝트의 `pom.xml` 저장소에 등록되어 위에 [설명한 방법 다음에 포함되어야 합니다](#embeddeds).
+
+타사 응용 프로그램/커넥터를 프로젝트 컨테이너( `all``all`) 패키지의 컨테이너로 포함시켜야 합니다.
 
 Maven 종속성을 추가하는 것은 표준 Maven 사례를 따르고, 타사 객체(코드 및 컨텐츠 패키지)를 포함하는 것은 위에 [요약되어 있습니다](#embedding-3rd-party-packages).
 
@@ -273,11 +304,11 @@ Maven 종속성을 추가하는 것은 표준 Maven 사례를 따르고, 타사 
 복잡한 배포는 간단한 사례에 따라 확장되며 해당 변경 가능한 컨텐츠와 불변경 코드 패키지 간의 종속성을 설정합니다. 필요에 따라 변경할 수 없는 코드 패키지에도 종속성을 설정할 수 있습니다.
 
 + `all` 종속성이 없습니다.
-   + `ui.apps.common` 종속성이 없습니다.
-   + `ui.apps.site-a` 에 따라 `ui.apps.common`
-   + `ui.content.site-a` 에 따라 `ui.apps.site-a`
-   + `ui.apps.site-b` 에 따라 `ui.apps.common`
-   + `ui.content.site-b` 에 따라 `ui.apps.site-b`
+   + `common.ui.apps.common` 종속성이 없습니다.
+   + `site-a.ui.apps` 에 따라 `common.ui.apps`
+   + `site-a.ui.content` 에 따라 `site-a.ui.apps`
+   + `site-b.ui.apps` 에 따라 `common.ui.apps`
+   + `site-b.ui.content` 에 따라 `site-b.ui.apps`
 
 ## 로컬 개발 및 배포 {#local-development-and-deployment}
 
@@ -311,7 +342,7 @@ Maven 종속성을 추가하는 것은 표준 Maven 사례를 따르고, 타사 
       <extensions>true</extensions>
       <configuration>
         <group>${project.groupId}</group>
-        <name>${my-app.ui.apps}</name>
+        <name>my-app.ui.apps</name>
         <packageType>application</packageType>
         <accessControlHandling>merge</accessControlHandling>
         <properties>
@@ -338,7 +369,7 @@ Maven 종속성을 추가하는 것은 표준 Maven 사례를 따르고, 타사 
       <extensions>true</extensions>
       <configuration>
         <group>${project.groupId}</group>
-        <name>${my-app.ui.content}</name>
+        <name>my-app.ui.content</name>
         <packageType>content</packageType>
         <accessControlHandling>merge</accessControlHandling>
         <properties>
@@ -373,9 +404,9 @@ Maven 종속성을 추가하는 것은 표준 Maven 사례를 따르고, 타사 
 
 ### 보고서 초기화{#snippet-repo-init}
 
-Repo Init 스크립트가 포함된 Repo Init 스크립트는 속성을 통해 OSGi 팩토리 구성에 `RepositoryInitializer` 정의됩니다 `scripts` . 이러한 스크립트는 OSGi 구성 내에서 정의되므로 일반적인 `../config.<runmode>` 폴더 의미 체계를 사용하여 런타임 모드로 쉽게 범위가 지정될 수 있습니다.
+Repo Init 스크립트가 포함된 Repo Init 스크립트는 속성을 통해 OSGi 팩토리 구성에 `RepositoryInitializer` 정의됩니다 `scripts` . 이러한 스크립트는 OSGi 구성 내에서 정의되므로 일반적인 `../config.<runmode>` 폴더 의미 체계를 사용하여 실행 모드로 쉽게 범위를 지정할 수 있습니다.
 
-스크립트는 일반적으로 여러 줄 선언이므로 XML 기반 `.config` `sling:OsgiConfig` 형식보다 파일에서 정의하는 것이 쉽습니다.
+스크립트는 일반적으로 여러 줄의 선언이므로 JSON 기반 `.config` `.cfg.json` 형식보다 파일에서 정의하는 것이 더 쉽습니다.
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
@@ -421,7 +452,7 @@ OSGi `scripts` 속성은 Apache Sling의 [Repo Init 언어로 정의된 지시�
 
 ### 컨테이너 패키지에 하위 패키지 포함 {#xml-embeddeds}
 
-에서 `all/pom.xml`다음 `<embeddeds>` 지시문을 플러그인 `filevault-package-maven-plugin` 선언에 추가합니다. 구성 **은** `<subPackages>` 사용하지 마십시오. 이 구성 `/etc/packages` 에 `/apps/my-app-packages/<application|content>/install(.author|.publish)?`가 아닌 하위 패키지가 포함됩니다.
+에서 `all/pom.xml`다음 `<embeddeds>` 지시문을 플러그인 `filevault-package-maven-plugin` 선언에 추가합니다. 구성 **은** `<subPackages>` 사용하지 마십시오. 이 구성 `/etc/packages` 에 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`가 아닌 하위 패키지가 포함됩니다.
 
 ```xml
 ...
@@ -436,10 +467,26 @@ OSGi `scripts` 속성은 Apache Sling의 [Repo Init 언어로 정의된 지시�
           <!-- Include the application's ui.apps and ui.content packages -->
           <!-- Ensure the artifactIds are correct -->
 
+          <!-- OSGi Bundle Jar file that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.core</artifactId>
+              <type>jar</type>
+              <target>/apps/my-app-packages/application/install</target>
+          </embedded>
+
           <!-- Code package that deploys to BOTH AEM Author and AEM Publish -->
           <embedded>
               <groupId>${project.groupId}</groupId>
               <artifactId>my-app.ui.apps</artifactId>
+              <type>zip</type>
+              <target>/apps/my-app-packages/application/install</target>
+          </embedded>
+
+           <!-- OSGi configuration code package that deploys to BOTH AEM Author and AEM Publish -->
+          <embedded>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>my-app.ui.config</artifactId>
               <type>zip</type>
               <target>/apps/my-app-packages/application/install</target>
           </embedded>
@@ -468,21 +515,12 @@ OSGi `scripts` 속성은 Apache Sling의 [Repo Init 언어로 정의된 지시�
               <target>/apps/my-app-packages/content/install.publish</target>
           </embedded>
 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
+          <!-- Include any other extra packages  -->
           <embedded>
-              <groupId>com.adobe.cq</groupId>
-              <!-- Not to be confused; WCM Core Components' Code package's artifact is named `.content` -->
-              <artifactId>core.wcm.components.content</artifactId>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
               <type>zip</type>
-              <target>/apps/vendor-packages/application/install</target>
-          </embedded>
-
-          <embedded>
-              <groupId>com.adobe.cq</groupId>
-              <!-- Not to be confused; WCM Core Components' Content package's artifact is named `.conf` -->
-              <artifactId>core.wcm.components.conf</artifactId>
-              <type>zip</type>
-              <target>/apps/vendor-packages/content/install</target>
+              <target>/apps/vendor-packages/container/install</target>
           </embedded>
       <embeddeds>
   </configuration>
