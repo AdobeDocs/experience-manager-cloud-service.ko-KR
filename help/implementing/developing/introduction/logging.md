@@ -2,9 +2,9 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2219'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ AEM 응용 프로그램 수준에서 로깅은 세 가지 로그로 처리됩니
 
 >[!NOTE]
 >
->게시 계층의 Dispatcher 캐시 또는 업스트림 CDN에서 제공되는 HTTP 요청은 이러한 로그에 반영되지 않습니다.
+>게시 계층의 Dispatcher 캐시나 업스트림 CDN에서 제공되는 HTTP 요청은 이러한 로그에 반영되지 않습니다.
 
 ## AEM Java 로깅 {#aem-java-logging}
 
@@ -300,7 +300,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 <tr>
 <td>사용자 에이전트</td>
-<td>"Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형</td>
+<td>"Mozilla/5.0(Macintosh;Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형</td>
 </tr>
 </tbody>
 </table>
@@ -309,21 +309,21 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 AEM에서 Cloud Service으로 HTTP 액세스 로그를 구성할 수 없습니다.
 
-## Apache 웹 서버 및 Dispatcher 로깅 {#apache-web-server-and-dispatcher-logging}
+## Apache 웹 서버 및 발송자 로깅 {#apache-web-server-and-dispatcher-logging}
 
 AEM as Cloud Service은 Publish에서 Apache 웹 서버 및 디스패처 레이어에 대해 3개의 로그를 제공합니다.
 
 * Apache HTTPD 웹 서버 액세스 로그
 * Apache HTTPD 웹 서버 오류 로그
-* Dispatcher 로그
+* 디스패처 로그
 
 이러한 로그는 게시 계층에만 사용할 수 있습니다.
 
-이 로그 세트는 AEM 애플리케이션에 도달하기 전에 Cloud Service 게시 계층으로 AEM에 대한 HTTP 요청에 대한 통찰력을 제공합니다. 이는 Apache HTTPD Web Server 및 AEM Dispatcher에 의해 캐시되고 AEM 애플리케이션 자체에 도달할 수 없는 컨텐츠에 의해 게시 계층 서버에 대한 대부분의 HTTP 요청이 제공된다는 것을 이상적으로 이해하는 데 중요합니다. 따라서 AEM Java, 요청 또는 액세스 로그에는 이러한 요청에 대한 로그 문이 없습니다.
+이 로그 세트는 AEM 애플리케이션에 도달하기 전에 AEM에 대한 HTTP 요청에 대한 통찰력을 Cloud Service 게시 계층으로 제공합니다. 이는 Apache HTTPD Web Server 및 AEM Dispatcher에 의해 캐시되고 AEM 애플리케이션 자체에 도달할 수 없는 컨텐츠에 의해 대부분의 게시 계층 서버에 대한 HTTP 요청이 제공된다는 점을 이해하는 데 중요합니다. 따라서 AEM Java, 요청 또는 액세스 로그에는 이러한 요청에 대한 로그 문이 없습니다.
 
 ### Apache HTTPD 웹 서버 액세스 로그 {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Server 액세스 로그는 게시 계층의 웹 서버/Dispatcher에 도달하는 각 HTTP 요청에 대한 문을 제공합니다. 업스트림 CDN에서 제공되는 요청은 이러한 로그에 반영되지 않습니다.
+Apache HTTP Web Server 액세스 로그는 게시 계층의 웹 서버/디스패처에 도달하는 각 HTTP 요청에 대한 문을 제공합니다. 업스트림 CDN에서 제공되는 요청은 이러한 로그에 반영되지 않습니다.
 
 공식 apache 설명서의 오류 로그 형식에 대한 정보를 [참조하십시오](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -381,7 +381,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>사용자 에이전트</td>
-<td>"Mozilla/5.0(Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형</td>
+<td>"Mozilla/5.0(Macintosh;Intel Mac OS X 10_15_4) AppleWebKit/537.36(Gecko와 같은 KHTML) Chrome/81.0.4044.122 Safari/537.36형</td>
 </tr>
 </tbody>
 </table>
@@ -392,7 +392,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 ## Apache HTTPD 웹 서버 오류 로그 {#apache-httpd-web-server-error-log}
 
-Apache HTTP Web Server 오류 로그는 게시 계층의 웹 서버/Dispatcher에서 각 오류에 대한 문을 제공합니다.
+Apache HTTP 웹 서버 오류 로그는 게시 계층의 웹 서버/디스패처의 각 오류에 대한 문을 제공합니다.
 
 공식 apache 설명서의 오류 로그 형식에 대한 정보를 [참조하십시오](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
@@ -426,7 +426,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tr>
 <tr>
 <td>메시지</td>
-<td>AH00094: 명령줄: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+<td>AH00094:명령줄:'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
 </tr>
 </tbody>
 </table>
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Dispatcher 로그 {#dispatcher-log}
+## 발송자 로그 {#dispatcher-log}
 
 **예**
 
@@ -487,7 +487,7 @@ Define REWRITE_LOG_LEVEL Debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>Dispatcher 응답 상태 코드</td>
+<td>발송자 응답 상태 코드</td>
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
@@ -509,13 +509,13 @@ Define REWRITE_LOG_LEVEL Debug
 </tbody>
 </table>
 
-### Dispatcher 오류 로그 구성 {#configuring-the-dispatcher-error-log}
+### 발송자 오류 로그 구성 {#configuring-the-dispatcher-error-log}
 
 디스패처 로그 수준은 파일의 변수 DISP_LOG_LEVEL에 의해 정의됩니다 `conf.d/variables/global.var`.
 
 Error, Warn, Info, Debug 및 Trace1로 설정할 수 있으며 기본값은 Warn입니다.
 
-Dispatcher 로깅은 다른 여러 수준의 로깅 세부기간을 지원하는 반면 AEM은 아래 설명된 수준을 사용하는 것이 좋습니다.
+Dispatcher 로깅은 다른 여러 수준의 로깅 세부기간을 지원하는 반면 AEM은 Cloud Service으로 아래 설명된 수준을 사용하는 것이 좋습니다.
 
 환경별 로그 수준을 설정하려면 아래 설명된 대로 `global.var` 파일에 적절한 조건부 분기를 사용하십시오.
 
@@ -550,7 +550,7 @@ AEM 로그는 다음 로그를 볼 수 있는 폴더 `crx-quickstart/logs`에 �
 * AEM HTTP 요청 로그: `request.log`
 * AEM HTTP 액세스 로그: `access.log`
 
-디스패처를 포함한 Apache 레이어 로그는 Dispatcher을 포함하는 Docker 컨테이너에 있습니다. Dispatcher을 시작하는 방법에 대한 자세한 내용은 [Dispatcher 설명서를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) 참조하십시오.
+디스패처를 포함한 Apache 레이어 로그는 디스패처가 있는 Docker 컨테이너에 있습니다. Dispatcher를 시작하는 방법에 대한 자세한 내용은 [Dispatcher 설명서를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) 참조하십시오.
 
 로그를 검색하려면
 
@@ -558,10 +558,10 @@ AEM 로그는 다음 로그를 볼 수 있는 폴더 `crx-quickstart/logs`에 �
 1. 컨테이너에 로그인하려면 &quot;`docker exec -it <container> /bin/sh`&quot;를 입력합니다. 여기서 `<container>` 는 이전 단계의 발송자 컨테이너 ID입니다
 1. 아래의 캐시 루트로 이동합니다. `/mnt/var/www/html`
 1. 통나무는 밑에 있다 `/etc/httpd/logs`
-1. Inspect: XYZ 폴더에서 액세스할 수 있습니다. 여기서 다음 로그를 볼 수 있습니다.
+1. Inspect:XYZ 폴더에서 액세스할 수 있습니다. 여기서 다음 로그를 볼 수 있습니다.
    * Apache HTTPD 웹 서버 액세스 로그 - `httpd_access.log`
    * Apache HTTPD 웹 서버 오류 로그 - `httpd_error.log`
-   * Dispatcher 로그 - `dispatcher.log`
+   * 발송자 로그 - `dispatcher.log`
 
 로그가 터미널 출력에 직접 인쇄됩니다. 대부분의 경우 이러한 로그는 DEBUG여야 하며 Docker를 실행할 때 디버그 수준을 매개 변수로 전달하여 수행할 수 있습니다. 예:
 
@@ -588,7 +588,7 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 
 지원 요청에서 고객은 다음을 표시해야 합니다.
 
-* The Splunk host
+* Splunk HEC 끝점 주소
 * The Splunk index
 * The Splunk port
 * Splunk HEC 토큰. 자세한 내용은 [이 페이지를](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) 참조하십시오.
@@ -603,24 +603,24 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 
 프로그램 123, 프로덕션 환경
 
-* Splunk 호스트: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123prod(고객은 원하는 이름 지정 규칙을 선택할 수 있음)
-* Splunk 포트: 443년
-* Splunk HEC 토큰: ABC123
+* Splunk HEC 끝점 주소: `splunk-hec-ext.acme.com`
+* Splunk index:acme_123prod(고객은 원하는 이름 지정 규칙을 선택할 수 있음)
+* Splunk 포트:443년
+* Splunk HEC 토큰:ABC123
 
 프로그램 123, 스테이지 환경
 
-* Splunk 호스트: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123stage
-* Splunk 포트: 443년
-* Splunk HEC 토큰: ABC123
+* Splunk HEC 끝점 주소: `splunk-hec-ext.acme.com`
+* Splunk index:acme_123stage
+* Splunk 포트:443년
+* Splunk HEC 토큰:ABC123
 
 프로그램 123, 개발 지원
 
-* Splunk 호스트: `splunk-hec-ext.acme.com`
-* Splunk index: acme_123dev
-* Splunk 포트: 443년
-* Splunk HEC 토큰: ABC123
+* Splunk HEC 끝점 주소: `splunk-hec-ext.acme.com`
+* Splunk index:acme_123dev
+* Splunk 포트:443년
+* Splunk HEC 토큰:ABC123
 
 각 환경에 대해 동일한 Splunk 인덱스를 사용하기에 충분할 수 있습니다. 이 경우 필드가 dev, stage 및 prod 값을 기준으로 차별화하는 데 사용될 수 `aem_env_type` 있습니다. 개발 환경이 여러 개인 경우 `aem_env_id` 필드도 사용할 수 있습니다. 관련 색인이 Splunk 사용자 수가 줄어든 설정으로 액세스를 제한하는 경우 일부 조직은 프로덕션 환경 로그에 대해 별도의 색인을 선택할 수 있습니다.
 
