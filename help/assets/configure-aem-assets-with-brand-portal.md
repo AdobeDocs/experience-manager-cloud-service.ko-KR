@@ -3,7 +3,7 @@ title: 브랜드 포털에서 Cloud Service으로 AEM Assets 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 32%
@@ -30,7 +30,6 @@ Cloud Service으로 AEM Assets은 브랜드 포털 테넌트의 승인을 위해
 >[!NOTE]
 >
 >Cloud Service 인스턴스로 AEM Assets은 하나의 브랜드 포털 테넌트로 구성되어야 합니다.
-
 
 ## 전제 조건 {#prerequisites}
 
@@ -64,16 +63,10 @@ IMS 구성에는 두 단계가 포함됩니다.
 공개 키(인증서)는 Adobe 개발자 콘솔에서 프로필을 인증합니다.
 
 1. AEM Assets에 로그인합니다.
-
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-
-
 1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. 기본적으로 **인증서** 탭이 열립니다.
-
 1. **[!UICONTROL 클라우드 솔루션 드롭다운 목록에서 Adobe 브랜드 포털]** 을 **** 선택합니다.
-
 1. 새 인증서 **[!UICONTROL 만들기]** 확인란을 선택하고 공개 키에 **대한 별칭을** 지정합니다. 별칭은 공개 키 이름 역할을 합니다.
-
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![인증서 만들기](assets/ims-config2.png)
@@ -218,8 +211,6 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 >
 >IMS 구성이 상태 검사를 통과하는지 확인합니다. 구성이 상태 검사를 통과하지 않으면 구성이 잘못된 것입니다. 이 구성을 삭제하고 유효한 새 구성을 만들어야 합니다.
 
-
-
 ### 클라우드 서비스 구성 {#configure-the-cloud-service}
 
 브랜드 포털 클라우드 서비스를 구성하려면 다음 단계를 수행하십시오.
@@ -281,19 +272,15 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
    >
    >자산 분배(큐에서 실행)가 실패하는 원인이 될 수 있으므로 분배 에이전트를 비활성화하지 마십시오.
 
-
 이제 다음을 수행할 수 있습니다.
 
 * [AEM Assets에서 Brand Portal에 자산 게시](publish-to-brand-portal.md)
 * [AEM Assets의 폴더를 Brand Portal에 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [AEM Assets의 컬렉션을 Brand Portal에 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## 분배 로그 {#distribution-logs}
 
@@ -302,7 +289,6 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/ko-KR/exper
 예를 들어, 구성을 확인하기 위해 AEM Assets에서 브랜드 포털에 자산을 게시했습니다.
 
 1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
-
 1. 처리 **[!UICONTROL 및]** 오류 로그를 보려면 로그를 클릭합니다.
 
    ![](assets/test-bpconfig5.png)
@@ -315,10 +301,12 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/ko-KR/exper
 자산을 게시할 때 다음 요청 및 응답 로그가 생성됩니다.
 
 **분배 에이전트 요청**:
+
 * DSTRQ2(요청 2): 자산 게시 요청이 트리거됩니다.
 * DSTRQ3(요청 3):시스템이 다른 요청을 트리거하여 자산이 있는 AEM Assets 폴더를 게시하고 브랜드 포털의 폴더를 복제합니다.
 
 **분배 에이전트 응답**:
+
 * queue-bpdistributionagent0(DSTRQ2): 자산이 Brand Portal에 게시됩니다.
 * queue-bdistribution-agent0(DSTRQ3):시스템이 브랜드 포털에서 AEM Assets 폴더(자산 포함)를 복제합니다.
 
@@ -327,8 +315,6 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/ko-KR/exper
 >[!NOTE]
 >
 >상위 폴더가 브랜드 포털에 없거나 AEM Assets에서 수정된 경우에 대한 추가 요청이 생성됩니다.
-
-
 
 <!--
 
@@ -358,4 +344,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
