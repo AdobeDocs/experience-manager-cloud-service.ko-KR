@@ -2,7 +2,7 @@
 title: Repository Modernizer
 description: Repository Modernizer
 translation-type: tm+mt
-source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 4%
@@ -40,4 +40,5 @@ Repository Modernizer는 다음 배포 구조를 생성하여 호환되는 AEM C
    Git 리소스 **[를 참조하십시오.Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** 를 사용하여 이 도구를 사용하는 방법을 알아봅니다.
 
    >[!NOTE]
+   >
    >Repository Modernizer는 NodeJS를 사용하여 개발되었습니다. NodeJS 10.0+을 설치하는 것이 좋습니다.
