@@ -2,7 +2,7 @@
 title: 대화형 이미지
 description: Dynamic Media에서 인터랙티브한 이미지를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '4238'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 인터랙티브한 이미지 배너를 만드는 [방법에 대한 10분 33초의 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). 또한 인터랙티브한 이미지 배너를 미리 보고 편집 및 전달하는 방법을 살펴볼 수 있습니다.
 
-## 빠른 시작: 인터랙티브한 이미지 {#quick-start-interactive-images}
+## 빠른 시작:인터랙티브한 이미지 {#quick-start-interactive-images}
 
-다음 단계별 워크플로우 설명은 AEM Assets에서 대화형 이미지를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
+다음 단계별 워크플로우 설명은 AEM Assets에서 인터랙티브한 이미지를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
 
 빠른 시작 작업 **의 일부** 내에서 예제 머리글을 찾습니다. 여기에는 아직 대화형 이미지가 추가되지 않은 [웹 페이지 예제를 기반으로 한 간단한 자습서가 포함되어 있습니다](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
 
@@ -36,8 +36,8 @@ ht-degree: 0%
 
 대화형 이미지 단계:
 
-1. **(선택 사항) 핫스팟 변수** 식별 - AEM 자산 및 Dynamic Media 독립 실행형 항목을 사용하는 경우, 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있도록 기존 Quickview 구현에서 사용되는 동적 변수를 식별하여 시작합니다. 핫스팟 [변수 식별을 참조하십시오(선택 사항)](#optional-identifying-hotspot-variables).
-그러나 AEM Sites 또는 AEM eCommerce 또는 두 가지 모두를 사용하는 경우에는 이 단계가 필요하지 않습니다.
+1. **(선택 사항) 핫스팟 변수** 식별 - AEM Assets 및 Dynamic Media 독립 실행형 항목을 사용하는 경우, 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있도록 기존 Quickview 구현에서 사용되는 동적 변수를 식별하여 시작합니다. 핫스팟 [변수 식별을 참조하십시오(선택 사항)](#optional-identifying-hotspot-variables).
+그러나 AEM Sites, AEM eCommerce 또는 두 가지 모두를 사용하는 경우에는 이 단계가 필요하지 않습니다.
 
 1. **(선택 사항) 대화형 이미지 뷰어 사전 설정** 만들기 - 핫스팟을 나타내는 데 사용되는 그래픽 이미지를 사용자 지정합니다. 기본 대화형 이미지 뷰어 사전 설정을 대신 사용하려면 직접 대화형 이미지 뷰어 사전 설정을 만들 필요가 `Shoppable_Banner` 없습니다.
 대화형 [이미지 뷰어 사전 설정 만들기를 참조하십시오](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -50,8 +50,8 @@ ht-degree: 0%
 대화형 이미지 [미리 보기](#optional-previewing-interactive-images) - 선택 사항을 참조하십시오. 원하는 경우 쇼퍼블 배너의 표현을 보고 인터랙션을 테스트할 수 있습니다.
 대화형 [이미지 자산을 게시하는 방법에 대한 자세한 내용은 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 게시를 참조하십시오.
 
-1. **AEM Sites, AEM eCommerce 또는 두 가지 모두를 사용하는 경우**, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-AEM Assets 및 Dynamic Media 독립 실행형 제품을 사용하는 경우, 웹 사이트에 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. 웹 사이트 [와 대화형 이미지 통합을 참조하십시오](#integrating-an-interactive-image-with-your-website).
+1. **AEM의 웹 사이트 또는 웹 사이트에 대화형 이미지 추가** AEM Sites, AEM eCommerce 또는 둘 다를 사용하는 경우, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+AEM Assets 및 다이내믹 미디어 독립 실행형 제품을 사용하는 경우 웹 사이트에 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. 웹 사이트 [와 대화형 이미지 통합을 참조하십시오](#integrating-an-interactive-image-with-your-website).
 타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. 기존 [Quickview와 대화형 이미지 통합을 참조하십시오](#integrating-an-interactive-image-with-an-existing-quickview).
 
 ## (선택 사항) 핫스팟 변수 식별 {#optional-identifying-hotspot-variables}
@@ -61,15 +61,15 @@ AEM Assets 및 Dynamic Media 독립 실행형 제품을 사용하는 경우, 웹
 >이 작업은 다음과 같은 경우에만 필요합니다.
 >
 >* Quickviews에 트리거하여 이미지에 인터랙티브한 요소를 추가하려고 합니다.
->* AEM을 구현해도 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* .
+>* AEM 구현에서는 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* .
 
 >
 >
-AEM 구현에서 e커머스를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
+AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
 먼저 핫스팟 데이터를 입력하여 대화형 이미지를 만들 수 있도록 기존 Quickview 구현에서 사용하는 동적 변수를 식별합니다.
 
-AEM Assets에서 배너 이미지에 핫스팟을 추가할 때 SKU(Stock Keeping Unit; 각 고유 제품 또는 서비스에 대한 고유 식별자) 및 각 핫스팟에 대한 선택적 추가 변수. 이러한 핫스팟 변수는 나중에 Quickview 컨텐츠와 핫스팟을 일치시키는 데 사용됩니다.
+AEM Assets의 배너 이미지에 핫스팟을 추가할 때 SKU(Stock Keeping Unit;각 고유 제품 또는 서비스에 대한 고유 식별자) 및 각 핫스팟에 대한 선택적 추가 변수. 이러한 핫스팟 변수는 나중에 Quickview 컨텐츠와 핫스팟을 일치시키는 데 사용됩니다.
 
 핫스팟 데이터와 연결할 변수의 수와 유형을 적절히 식별해야 합니다. 배너 이미지에 추가된 각 핫스팟은 기존 백엔드 시스템에서 제품을 명확하게 식별할 수 있도록 충분한 정보를 전달해야 합니다.
 
@@ -102,7 +102,7 @@ Mac에서 Command+Option+I를 눌러 개발자 도구 패널을 연 다음 검�
 
 가장 간단한 경우 Quickview URL의 유일한 변수 부분은 제품 SKU입니다. 이 경우 SKU 값은 배너 이미지에 핫스팟을 추가하는 데 필요한 유일한 데이터 조각입니다.
 
-하지만 복잡한 경우 Quickview URL에는 카테고리 ID, 색상 코드, 크기 코드 등과 같은 SKU 외에도 다양한 요소가 있습니다. 이러한 경우, 모든 요소는 AEM 자산의 쇼퍼블 인터랙티브 이미지 기능에 있는 핫스팟 데이터 정의에 있는 별도의 변수입니다.
+하지만 복잡한 경우 Quickview URL에는 카테고리 ID, 색상 코드, 크기 코드 등과 같은 SKU 외에도 다양한 요소가 있습니다. 이러한 경우 모든 요소는 AEM Assets의 쇼퍼블 인터랙티브 이미지 기능에 있는 핫스팟 데이터 정의에 있는 별도의 변수입니다.
 
 Quickview URL 및 결과 핫스팟 변수의 다음 예를 생각해 보십시오.
 
@@ -166,15 +166,15 @@ Quickview URL 및 결과 핫스팟 변수의 다음 예를 생각해 보십시�
 
 이러한 분석을 기반으로 핫스팟을 사용하고 `categoryId``SKU` 는
 
-이제 AEM Assets에서 쇼퍼블 인터랙티브한 이미지 기능을 사용하여 이미지 배너를 업로드하고 핫스팟을 추가할 준비가 되었습니다.
+이제 AEM Assets의 쇼퍼블 인터랙티브한 이미지 기능을 사용하여 이미지 배너를 업로드하고 핫스팟을 추가할 준비가 되었습니다.
 
 ## (선택 사항) 대화형 이미지 뷰어 사전 설정 만들기 {#optional-creating-an-interactive-image-viewer-preset}
 
-AEM 자산과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설정 `Shoppable_Banner` 을 사용하도록 선택할 수 있습니다. 또는 대화형 이미지에 사용할 사용자 정의 뷰어 사전 설정을 만들 수 있습니다.
+AEM Assets과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설정 `Shoppable_Banner` 을 사용하도록 선택할 수 있습니다. 또는 대화형 이미지에 사용할 사용자 정의 뷰어 사전 설정을 만들 수 있습니다.
 
 사용자 정의 대화형 이미지 뷰어 사전 설정을 만들 때 이미지 배너의 핫스팟 모양을 확인할 수 있습니다. 뷰어 사전 설정 만들기의 일부로 사전 정의된 이미지의 갤러리에서 핫스팟 그래픽을 사용하도록 선택할 수 있습니다.
 
-뷰어 사전 설정을 저장하면 AEM 자산의 뷰어 사전 설정 목록 페이지에서 자동으로 활성화(켜짐)됩니다. 이 기능은 Interactive Media 구성 요소에서 그리고 자산을 볼 때마다 표시되도록 합니다. 그러나 *이 뷰어 사전 설정이 있는 대화형 배너를 *제공하려면 *사용자 정의 뷰어 사전 설정 또는 기본 뷰어 사전 설정의 경우 게시해야 합니다.
+뷰어 사전 설정을 저장하면 AEM Assets의 [뷰어 사전 설정] 목록 페이지에서 자동으로 활성화(켜짐)됩니다. 이 기능은 Interactive Media 구성 요소에서 그리고 자산을 볼 때마다 표시되도록 합니다. 그러나 *이 뷰어 사전 설정이 있는 대화형 배너를 *제공하려면 *사용자 정의 뷰어 사전 설정 또는 기본 뷰어 사전 설정의 경우 게시해야 합니다.
 
 **대화형 이미지 뷰어 사전 설정을 만들려면**
 
@@ -210,7 +210,7 @@ AEM 자산과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설�
 
    See [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
-   이제 이미지 배너에 핫스팟을 추가할 준비가 되었습니다. 아래의 다음 작업을 참조하십시오.
+   이제 이미지 배너에 핫스팟을 추가할 준비가 되었습니다.아래의 다음 작업을 참조하십시오.
 
 ## 이미지 배너에 핫스팟 추가 {#adding-hotspots-to-an-image-banner}
 
@@ -222,7 +222,7 @@ AEM 자산과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설�
 
 >[!NOTE]
 >
->경험 조각에 뷰어를 포함할 때는 대화형 이미지의 소셜 미디어 공유 도구가 지원되지 않는다는 점을 참고하십시오.  이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+>경험 조각에 뷰어를 포함할 때는 대화형 이미지의 소셜 미디어 공유 도구가 지원되지 않는다는 점을 참고하십시오. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
 페이지의 오른쪽 위 모서리 근처에 있는 실행 취소 및 재실행 옵션은 현재 생성/편집 세션 동안 지원됩니다.
 
@@ -233,8 +233,8 @@ AEM 자산과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설�
 >[!NOTE]
 >
 >대화형 이미지 또는 회전 배너의 이미지에 핫스팟을 추가하면 핫스팟 정보는 대화형 이미지 또는 회전 메뉴 배너의 여부와 관계없이 동일한 메타데이터 위치(이미지의 위치를 기준으로)에 저장됩니다. 이 기능은 두 뷰어 모두에서 동일한 이미지를 정의된 핫스팟 데이터와 함께 쉽게 다시 사용할 수 있음을 의미합니다.
-
->그러나 회전판 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다. 대화형 이미지는 그렇지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려는 경우 주의하십시오. 대신 동일한 이미지의 개별 사본을 사용하여 대화형 이미지 및 회전 배너를 만들 수 있습니다.
+>
+>그러나 회전판 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다.대화형 이미지는 그렇지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려는 경우 주의하십시오. 대신 동일한 이미지의 개별 사본을 사용하여 대화형 이미지 및 회전 배너를 만들 수 있습니다.
 >
 >회전판 [배너를 참조하십시오](/help/assets/dynamic-media/carousel-banners.md).
 
@@ -266,15 +266,15 @@ AEM 자산과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설�
 
    * 빠른 **[!UICONTROL 보기를 누릅니다]**.
 
-      * AEM Sites 또는 eCommerce 고객인 경우 제품 선택기 아이콘(확대경)을 탭하거나 클릭하여 제품 선택 페이지를 엽니다. 사용할 제품을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에 있는 **Select **를 탭하여 핫스팟 관리 페이지로 돌아갑니다.
-      * AEM Sites 또는 eCommerce 고객이 *아닌* 경우
+      * AEM Sites 또는 전자 상거래 고객인 경우 제품 선택기 아이콘(확대경)을 탭하거나 클릭하여 제품 선택 페이지를 엽니다. 사용할 제품을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에 있는 **Select **를 탭하여 핫스팟 관리 페이지로 돌아갑니다.
+      * AEM Sites 또는 전자 상거래 고객이 *아닌* 경우
 
-         * 핫스팟 [변수 식별을 참조하십시오](#optional-identifying-hotspot-variables). 이러한 변수를 정의해야 합니다.
+         * 핫스팟 [변수 식별을 참조하십시오](#optional-identifying-hotspot-variables).이러한 변수를 정의해야 합니다.
          * 그런 다음 SKU 값을 직접 입력합니다. SKU 값 텍스트 필드에 제공하는 각 개별 제품 또는 서비스에 대한 고유 식별자인 제품의 SKU(Stock Keeping Unit)를 입력합니다. 입력된 SKU 값은 시스템이 탭된 핫스팟을 특정 SKU의 Quickview와 연결할 수 있도록 빠른 보기 템플릿의 변수 부분을 자동으로 채웁니다.
          * (선택 사항) Quickview 내에 제품을 추가로 식별하기 위해 사용해야 하는 다른 변수가 있으면 일반 변수 **[!UICONTROL 추가를 누릅니다]**. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어, 는 추가된 변수 `category=Mens` 입니다.
    * 하이퍼링크를 **[!UICONTROL 누릅니다]**.
 
-      * AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 탭하거나 클릭하여 URL로 이동합니다. 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 링크 방법이 가능하지 않습니다.
+      * AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 탭하거나 클릭하여 URL로 이동합니다. 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
       * 독립 실행형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지의 전체 URL 경로를 지정합니다.
 
    링크를 새 브라우저 탭(권장 기본값)에서 열지 또는 동일한 탭에서 열지를 지정해야 합니다.
@@ -290,7 +290,7 @@ AEM 자산과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설�
 
          >[!NOTE]
          >
-         >경험 조각에 뷰어를 포함할 때는 대화형 이미지의 소셜 미디어 공유 도구가 지원되지 않는다는 점을 참고하십시오.  이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+         >경험 조각에 뷰어를 포함할 때는 대화형 이미지의 소셜 미디어 공유 도구가 지원되지 않는다는 점을 참고하십시오. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
 
 
@@ -313,7 +313,7 @@ AEM 자산과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설�
 
 인터랙티브한 이미지가 마음에 들면 게시할 수 있습니다.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 링크 방법이 가능하지 않습니다.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **대화형 이미지를 미리 보려면**
@@ -329,7 +329,7 @@ See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dy
 
 ## 웹 사이트와 인터랙티브한 이미지 통합 {#integrating-an-interactive-image-with-your-website}
 
-배너 이미지를 업로드하고, 이미지에 핫스팟을 추가하고, 대화형 이미지를 게시한 후 이제 웹 사이트 페이지에 추가할 준비가 되었습니다.
+배너 이미지를 업로드하고, 이미지에 핫스팟을 추가하고, 대화형 이미지를 게시하면 이제 웹 사이트 페이지에 추가할 준비가 됩니다.
 
 AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 이미지를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
@@ -349,11 +349,11 @@ See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-med
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-통합은 태그를 제거하고 AEM 자산에서 복사한 포함 코드로 바꾸는 것만큼 간단합니다. `IMG` 3개의 서클 핫스팟이 있는 페이지에서 쇼퍼블 인터랙티브한 이미지 [를 볼 수 있습니다](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+통합은 태그를 제거하고 AEM Assets에서 복사한 포함 코드로 바꾸는 것만큼 간단합니다. `IMG` 3개의 서클 핫스팟이 있는 페이지에서 쇼퍼블 인터랙티브한 이미지 [를 볼 수 있습니다](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 >
->이 시점에서 데모 웹 사이트의 쇼퍼블 인터랙티브 이미지에 있는 핫스팟은 표시 용도로만 사용됩니다. 이러한 지표는 아직 기존 빠른 보기와 통합되지 않았습니다.
+>이 시점에서 데모 웹 사이트의 쇼퍼블 인터랙티브 이미지에 있는 핫스팟은 표시 용도로만 사용됩니다.이러한 지표는 아직 기존 빠른 보기와 통합되지 않았습니다.
 
 응답형 환경을 위해 쇼퍼블 방식의 인터랙티브한 이미지에 &quot;자르기&quot;를 적용하려면 경로에 인터랙티브한 이미지 구성 속성 `ZoomView.iscommand` 을 포함시킬 수 있습니다. 여기서 호출해야 할 구성 요소이고 `ZoomView` `iscommand` 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
 
@@ -367,7 +367,7 @@ ZoomView.iscommand [구성 속성을](https://docs.adobe.com/content/help/en/dyn
 
 >[!NOTE]
 >
->이 작업은 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
+>이 작업은 사용자가 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 대화형 이미지를 웹 사이트의 기존 Quickview 구현과 통합하는 것입니다. 모든 경우에 작동하는 통합에 대한 해결책은 없습니다. 모든 Quickview 구현은 고유하며 프런트 엔드 IT 담당자의 지원을 필요로 하는 특정 접근 방식이 필요합니다.
 
@@ -383,7 +383,7 @@ ZoomView.iscommand [구성 속성을](https://docs.adobe.com/content/help/en/dyn
 
 이러한 호출은 임의의 단계에서 웹 페이지 로직에서 호출할 수 있는 독립 공개 API 호출을 나타내지 않을 수 있습니다. 대신, 이 호출은 이전 단계의 마지막 단계(콜백)에서 모든 다음 단계가 숨겨지는 연쇄 호출입니다.
 
-동시에 쇼퍼블 인터랙티브한 이미지가 1단계와 2단계를 부분적으로 대체하는 경우 사용자가 쇼퍼블 이미지 내에서 핫스팟을 클릭하면 해당 사용자 상호 작용이 뷰어에서 처리됩니다. 뷰어는 이전에 AEM 자산에 추가된 모든 핫스팟 데이터를 포함하는 웹 페이지에 이벤트를 반환합니다.
+동시에 쇼퍼블 인터랙티브한 이미지가 1단계와 2단계를 부분적으로 대체하는 경우 사용자가 쇼퍼블 이미지 내에서 핫스팟을 클릭하면 해당 사용자 상호 작용이 뷰어에서 처리됩니다. 뷰어는 이전에 AEM Assets에 추가한 모든 핫스팟 데이터를 포함하는 웹 페이지에 이벤트를 반환합니다.
 
 이러한 이벤트 핸들러에서 프런트 엔드 코드는 다음을 수행합니다.
 
@@ -391,7 +391,7 @@ ZoomView.iscommand [구성 속성을](https://docs.adobe.com/content/help/en/dyn
 * 핫스팟 데이터를 기반으로 빠른 보기 URL을 생성합니다.
 * 백엔드에서 Quickview를 로드하고 표시하기 위해 화면에 렌더링하는 프로세스를 트리거합니다.
 
-AEM Assets에서 반환되는 포함 코드에는 이미 다음 강조 표시된 코드 조각에서 보듯이, 주석으로 처리되는 바로 사용 가능한 이벤트 핸들러가 있습니다.
+AEM Assets에서 반환되는 내장 코드에는 이미 다음 강조 표시된 코드 조각에서와 같이 주석으로 처리된 즉시 사용할 수 있는 이벤트 핸들러가 있습니다.
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
@@ -421,7 +421,7 @@ Quickview URL을 구성하는 프로세스는 기본적으로 앞에서 설명�
 
 핫스팟 [변수 식별을 참조하십시오](#optional-identifying-hotspot-variables).
 
-이전 Quickview URL 예제를 사용하여 다음 예에서 각 케이스에서 Quickview URL이 구성되는 방식을 확인할 수 있습니다.
+이전 Quickview URL 예제를 사용하면 다음 예에서 각 케이스에서 Quickview URL이 구성되는 방식을 확인할 수 있습니다.
 
 <table>
  <tbody>
