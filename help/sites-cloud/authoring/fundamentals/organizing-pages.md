@@ -2,7 +2,7 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 99%
@@ -366,7 +366,6 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 >[!NOTE]
 >
 >페이지는 페이지가 기반으로 하는 템플릿이 허용되는 위치로만 이동할 수 있습니다. 자세한 내용은 [템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오.
--->
 
 #### 비동기 작업 {#asynchronous-actions}
 
