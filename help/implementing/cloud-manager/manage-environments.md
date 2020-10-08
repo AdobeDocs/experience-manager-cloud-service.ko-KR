@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 3768474b41abe76ee639e51c9eae39d72ab7c4a4
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 2%
@@ -95,7 +95,8 @@ ht-degree: 2%
 
 
 >[!NOTE]
-프로덕션 목적으로 설정된 일반 프로그램에 설정된 프로덕션/스테이지 환경에서는 이 기능을 사용할 수 없습니다. 하지만 이 기능은 샌드박스 프로그램의 프로덕션/스테이지 환경에 사용할 수 있습니다.
+>
+>프로덕션 목적으로 설정된 일반 프로그램에 설정된 프로덕션/스테이지 환경에서는 이 기능을 사용할 수 없습니다. 하지만 이 기능은 샌드박스 프로그램의 프로덕션/스테이지 환경에 사용할 수 있습니다.
 
 ## 액세스 관리 {#managing-access}
 
