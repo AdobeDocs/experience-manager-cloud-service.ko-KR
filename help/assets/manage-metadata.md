@@ -4,9 +4,9 @@ description: 메타데이터의 유형과 메타데이터를 기반으로 에셋
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1932'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
    >[!NOTE]
    >
    >* [ [!UICONTROL 속성] ] 페이지에서 자산의 선택을 취소하여 자산 목록에서 자산을 제거할 수 있습니다. 자산 목록에는 기본적으로 모든 자산이 선택되어 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
-   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 옆의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
+   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 근처의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
 
 
 1. 자산에 대해 다른 메타데이터 스키마를 선택하려면 도구 모음에서 **[!UICONTROL 설정을]** 탭/클릭하고 원하는 스키마를 선택합니다. 변경 사항을 저장합니다.
@@ -213,7 +213,7 @@ AEM은 DOS와 같은 상황을 방지하기 위해 Sling 요청에서 지원되�
 ### 인쇄 관련 메타데이터 {#print-specific-metadata}
 
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션
-* PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.prismstandard.org)사항.
+* PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.idealliance.org/prism-metadata)사항.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - 페이지 텍스트를 위한 XMP 메타데이터
 
