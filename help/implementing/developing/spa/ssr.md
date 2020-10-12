@@ -2,7 +2,7 @@
 title: SPA 및 서버측 렌더링
 description: SPA에서 SSR(서버측 렌더링)을 사용하면 초기 페이지 로드 시간을 단축한 다음 클라이언트에게 추가 렌더링을 전달할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +118,7 @@ SSR을 사용할 때 AEM의 SPA의 [구성 요소 상호 작용 작업](introduc
     </ul> </td>
    <td>
     <ul>
-     <li>CSS 및 JavaScript와 같은 응용 프로그램에 필요한 Clientlib 리소스는 AEM 개발자가 속성을 통해 사용할 수 있도록 해야 <code>allowProxy</code> 합니다<br /> </li>
+     <li>CSS 및 JavaScript와 같은 응용 프로그램에 필요한 Clientlib 리소스는 AEM 개발자가 속성을 통해 사용할 수 있도록 해야 <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> 합니다<br /> </li>
      <li>리소스는 AEM과 Adobe I/O Runtime 간에 동기화되어야 합니다.<br /> </li>
      <li>SPA의 작성을 가능하게 하려면 Adobe I/O Runtime용 프록시 서버가 필요할 수 있습니다.</li>
     </ul> </td>
