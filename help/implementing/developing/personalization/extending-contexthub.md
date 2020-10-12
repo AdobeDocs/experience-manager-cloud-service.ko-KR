@@ -2,7 +2,7 @@
 title: ContextHub 확장
 description: 제공된 항목이 솔루션 요구 사항을 충족하지 않을 때 새로운 유형의 ContextHub 저장소 및 모듈을 정의합니다.
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -18,9 +18,7 @@ ht-degree: 0%
 
 ContextHub 스토어는 등록된 스토어 후보자로부터 만들어집니다. 사용자 정의 스토어를 만들려면 스토어 지원자를 만들고 등록해야 합니다.
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-저장소 후보를 만들고 등록하는 코드를 포함하는 javascript 파일은 클라이언트 라이브러리 폴더에 포함되어야 합니다. 폴더의 카테고리는 다음 패턴과 일치해야 합니다.
+저장소 후보를 만들고 등록하는 코드를 포함하는 javascript 파일은 [클라이언트 라이브러리 폴더에 포함되어야 합니다](/help/implementing/developing/introduction/clientlibs.md). 폴더의 카테고리는 다음 패턴과 일치해야 합니다.
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ UI 모듈 렌더러를 만들려면 UI 모듈을 렌더링하는 논리를 포�
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-렌더러를 만들고 등록하는 코드를 포함하는 javascript 파일은 클라이언트 라이브러리 폴더에 포함되어야 합니다. 폴더의 카테고리는 다음 패턴과 일치해야 합니다.
+렌더러를 만들고 등록하는 코드를 포함하는 javascript 파일은 [클라이언트 라이브러리 폴더에 포함되어야 합니다](/help/implementing/developing/introduction/clientlibs.md). 폴더의 카테고리는 다음 패턴과 일치해야 합니다.
 
 ```javascript
 contexthub.module.[moduleType]
