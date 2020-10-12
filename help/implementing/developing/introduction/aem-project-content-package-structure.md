@@ -2,7 +2,7 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Oak 색인(`/oak:index`)은 Cloud Service 배포 프로세스로 AEM에서 특�
 + 패키지에 배포되는 모든 코드가 `ui.apps` 포함되어 있습니다. 이 코드는 배포 대상 `/apps`뿐입니다. 패키지의 일반적인 요소는 `ui.apps` 포함되지만 이에 국한되지 않습니다.
    + [구성 요소 정의 및 HTL](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) 스크립트
       + `/apps/my-app/components`
-   + JavaScript 및 CSS(클라이언트 라이브러리를 통해)
+   + JavaScript 및 CSS(클라이언트 라이브러리 [를 통해](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [오버레이](/help/implementing/developing/introduction/overlays.md) / `/libs`
       + `/apps/cq`, `/apps/dam/`, 등이 됩니다.
