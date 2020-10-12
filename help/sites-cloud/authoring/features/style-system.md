@@ -1,9 +1,9 @@
 ---
 title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
-translation-type: ht
-source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. HTML 개발자는 정의된 대로 표시되도록 각 시각적 변형에 해당하는 CSS 코드(및 선택적으로 JS 코드)를 구현합니다.
 
-1. AEM 개발자는 제공된 CSS(및 선택적 JS)를 클라이언트 라이브러리에 배치하고 배포합니다. <!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+1. AEM 개발자는 제공된 CSS(및 선택적 JS)를 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md)에 배치하고 배포합니다.
 
 1. AEM 개발자 또는 템플릿 작성자는 페이지 템플릿을 구성하고, 스타일이 지정된 각 구성 요소의 정책을 편집하며, 정의된 CSS 클래스를 추가하고, 각 스타일에 대해 사용자에게 익숙한 이름을 지정하고, 결합할 수 있는 스타일을 지정합니다.
 
@@ -105,9 +105,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 >[!CAUTION]
 >
->구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(필요한 Javascript 포함)는 클라이언트 라이브러리로 배포해야 적용됩니다.
-
-<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(필요한 Javascript 포함)는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md)로 배포해야 적용됩니다.
 
 ## 설정 {#setup}
 
