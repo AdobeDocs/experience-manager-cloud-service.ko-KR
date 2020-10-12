@@ -2,9 +2,9 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기초로 사용할 페이지를 만들 때 사용됩니다
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3228'
 ht-degree: 8%
 
 ---
@@ -115,8 +115,8 @@ ht-degree: 8%
 >편집기 클라이언트 라이브러리는 컨텐츠 페이지에 `cq.shared` 네임스페이스가 존재한다고 가정하고, 없으면 JavaScript 오류가 `Uncaught TypeError: Cannot read property 'shared' of undefined` 발생합니다.
 >
 >모든 샘플 컨텐츠 페이지에는 `cq.shared`가 포함되어 있으므로 이를 기반으로 하는 모든 컨텐츠에 자동으로 포함됩니다 `cq.shared`. 그러나 샘플 컨텐츠를 기준으로 하지 않고 직접 컨텐츠 페이지를 처음부터 만드는 경우 네임스페이스를 포함해야 `cq.shared` 합니다.
-
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>
+>자세한 [내용은 클라이언트측 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 사용을 참조하십시오.
 
 >[!CAUTION]
 >
