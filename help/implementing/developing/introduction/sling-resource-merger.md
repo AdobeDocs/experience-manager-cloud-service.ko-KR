@@ -48,12 +48,11 @@ AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습�
 >이는 업그레이드 내용이 인스턴스에 적용될 때마다 내용을 덮어쓸 `/libs` 수 있기 때문입니다.
 >
 >* 오버레이는 [검색 경로에 따라 다릅니다](/help/implementing/developing/introduction/overlays.md#search-paths).
-   >
-   >
-* 오버라이드는 검색 경로에 종속되지 않고 속성을 사용하여 연결을 `sling:resourceSuperType` 만듭니다.
+>
+>* 오버라이드는 검색 경로에 종속되지 않고 속성을 사용하여 연결을 `sling:resourceSuperType` 만듭니다.
 >
 >
-그러나 AEM에서 Cloud Service `/apps`로 사용자 지정을 정의하는 것이 가장 좋은 방법인 경우, 대체는 종종 아래에 정의되어 `/apps`있습니다. 이것은 여러분이 아래의 어떤 것도 바꾸지 말아야 하기 때문입니다 `/libs`.
+>그러나 AEM에서 Cloud Service `/apps`로 사용자 지정을 정의하는 것이 가장 좋은 방법인 경우, 대체는 종종 아래에 정의되어 `/apps`있습니다. 이것은 여러분이 아래의 어떤 것도 바꾸지 말아야 하기 때문입니다 `/libs`.
 
 ### 속성 {#properties}
 

@@ -182,12 +182,13 @@ ht-degree: 6%
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-영어로 즉시 이용 가능합니다.
-기타 언어는 패키지 공유의 언어 모델 패키지로 사용할 수 있습니다.
-* [프랑스어(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [독일어(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [이탈리아어(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [스페인어(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
+>영어로 즉시 이용 가능합니다.
+>기타 언어는 패키지 공유의 언어 모델 패키지로 사용할 수 있습니다.
+>* [프랑스어(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [독일어(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [이탈리아어(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [스페인어(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -230,7 +231,8 @@ ht-degree: 6%
 * 편집기의 전체 화면과 일반 모드 모두에서 텍스트의 강조 표시로 표시됩니다. 그러면 강조 표시된 텍스트를 클릭하여 주석의 전체 세부 정보를 보고, 편집하고, 삭제할 수 있으며, 그러면 대화 상자가 다시 열립니다.
 
    >[!NOTE]
-   여러 개의 주석이 하나의 텍스트에 적용된 경우 드롭다운 선택기가 제공됩니다.
+   >
+   >여러 개의 주석이 하나의 텍스트에 적용된 경우 드롭다운 선택기가 제공됩니다.
 
 * 주석이 적용된 전체 텍스트를 삭제하면 주석도 삭제됩니다.
 
@@ -247,11 +249,13 @@ ht-degree: 6%
 포맷하지 않고 조각의 단락 시퀀스에 추가됩니다. 페이지 [에서 조각을 사용/참조할 때 서식을 지정할 수 있습니다](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 
 >[!CAUTION]
-참조하는 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이 작업은 조각 편집기에서 수행해야 합니다.
-그러나 자산(예: 크기)의 서식은 [페이지 편집기에서 수행해야 합니다](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 조각 편집기의 자산 표현은 순전히 컨텐츠 흐름을 작성하기 위한 것입니다.
+>
+>참조하는 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이 작업은 조각 편집기에서 수행해야 합니다.
+>그러나 자산(예: 크기)의 서식은 [페이지 편집기에서 수행해야 합니다](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 조각 편집기의 자산 표현은 순전히 컨텐츠 흐름을 작성하기 위한 것입니다.
 
 >[!NOTE]
-There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>
+>There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 1. 이미지를 추가할 위치에 커서를 놓습니다.
 2. 자산 **삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
@@ -268,9 +272,10 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 4. 선택 **을** 사용하여 자산을 현재 위치에서 컨텐츠 조각의 단락 시스템에 추가합니다.
 
    >[!CAUTION]
-   자산을 추가한 후 형식을 다음으로 변경합니다.
-   * **일반 텍스트**: 조각에서 자산이 완전히 손실됩니다.
-   * **마크다운**: 에셋이 표시되지 않지만 리치 텍스트로 돌아갈 때 **남아 있습니다**.
+   >
+   >자산을 추가한 후 형식을 다음으로 변경합니다.
+   >* **일반 텍스트**: 조각에서 자산이 완전히 손실됩니다.
+   >* **마크다운**: 에셋이 표시되지 않지만 리치 텍스트로 돌아갈 때 **남아 있습니다**.
 
 
 ## 변형 관리 {#managing-variations}
@@ -288,7 +293,8 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 1. 추가 **를**&#x200B;선택합니다. 조각 **마스터** 가 새 변형에 복사되며, 이 변형은 현재 [편집을 위해 열려 있습니다](#editing-a-variation).
 
    >[!NOTE]
-   새 변형을 만들 때는 현재 열려 있는 **변형이 아니라 항상** 복사되는 마스터입니다.
+   >
+   >새 변형을 만들 때는 현재 열려 있는 **변형이 아니라 항상** 복사되는 마스터입니다.
 
 ### 변형 편집 {#editing-a-variation}
 
@@ -312,7 +318,8 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 1. 이름 변경 **작업을** 확인합니다.
 
 >[!NOTE]
-변형 제목에만 영향을 **줍니다**.
+>
+>변형 제목에만 영향을 **줍니다**.
 
 ### 변형 삭제 {#deleting-a-variation}
 
@@ -325,7 +332,8 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 1. 대화 상자에서 **삭제** 작업을 확인합니다.
 
 >[!NOTE]
-마스터는 삭제할 수 **없습니다**.
+>
+>마스터는 삭제할 수 **없습니다**.
 
 ### 마스터와 동기화 {#synchronizing-with-master}
 
@@ -334,10 +342,11 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 변형을 편집할 때 변형의 현재 요소를 마스터와 동기화하는 작업에 액세스할 수 있습니다. 이렇게 하면 마스터의 변경 내용을 필요한 변형에 자동으로 복사할 수 있습니다.
 
 >[!CAUTION]
-동기화는 *마스터&#x200B;**에서 변형**으로 변경*&#x200B;내용을 복사하는 경우에만 사용할 수 있습니다.
-변형의 현재 요소만 동기화됩니다.
-동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
-변경 내용 *에서&#x200B;**마스터로 변경&#x200B;***내용을 전송할 수 없습니다.
+>
+>동기화는 *마스터&#x200B;**에서 변형**으로 변경*&#x200B;내용을 복사하는 경우에만 사용할 수 있습니다.
+>변형의 현재 요소만 동기화됩니다.
+>동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
+>변경 내용 *에서&#x200B;**마스터로 변경&#x200B;***내용을 전송할 수 없습니다.
 
 1. 조각 편집기에서 컨텐츠 조각을 엽니다. 마스터가 **편집되었는지** 확인합니다.
 1. 특정 변형을 선택한 다음, 다음 중 하나에서 적절한 동기화 작업을 선택합니다.

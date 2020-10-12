@@ -55,12 +55,10 @@ Adobe Analytics과 AEM을 Cloud Service으로 통합하면 웹 페이지 활동�
 >사용자 지정 프록시 구성과 함께 Adobe Analytics을 사용하는 경우 [Apache HTTP 클라이언트](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) 프록시 구성에 필요한 두 개의 OSGi 번들 **(예: 웹 콘솔 포함)을** 구성해야 합니다. AEM의 일부 기능에서 3.x API를 사용하는 반면 다른 기능에서는 4.x API를 모두 사용해야 합니다. 구성:
 >
 >* **3.x API를 구성하는 Day Commons HTTP Client 3.1** ;
-   >  예: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
-   >
-   >
-* **4.x API를** 구성하기 위한 Apache HTTP Components Proxy Configuration;
-   >  예: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
+>  예: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>
+>* **4.x API를** 구성하기 위한 Apache HTTP Components Proxy Configuration;
+>  예: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 
