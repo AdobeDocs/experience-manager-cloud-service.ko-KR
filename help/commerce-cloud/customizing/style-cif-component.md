@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2592'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ Venia Project를 [복제한](https://github.com/adobe/aem-cif-guides-venia) 다�
 
 ## 클라이언트 라이브러리 및 ui.frontend 모듈 {#introduction-to-client-libraries}
 
-스토어프런트 테마와 스타일을 렌더링하는 책임이 있는 CSS 및 JavaScript는 [클라이언트 라이브러리](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) 또는 clientlibs에서 간단하게 관리합니다. 클라이언트 라이브러리는 프로젝트 코드에서 CSS 및 Javascript를 구성한 다음 페이지에 전달하는 메커니즘을 제공합니다.
+스토어프런트 테마와 스타일을 렌더링하는 책임이 있는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 또는 clientlibs에서 간단하게 관리합니다. 클라이언트 라이브러리는 프로젝트 코드에서 CSS 및 Javascript를 구성한 다음 페이지에 전달하는 메커니즘을 제공합니다.
 
 이러한 클라이언트 라이브러리에 의해 관리되는 CSS를 추가하고 대체하여 AEM CIF 핵심 구성 요소에 브랜드 전용 스타일을 적용할 수 있습니다. 클라이언트 라이브러리가 구조화되고 페이지에 포함되는 방법을 이해하는 것이 중요합니다.
 
@@ -77,7 +77,7 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
 
 ![ui.frontend ui.apps 아키텍처](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*컴파일된 CSS 및 Javascript는 Maven 빌드 동안`ui.frontend`모듈에서 클라이언트 라이브러리로`ui.apps`모듈로 복사됩니다*
+*컴파일된 CSS 및 Javascript는 Maven 빌드 동안 `ui.frontend` 모듈에서 클라이언트 라이브러리로 `ui.apps` 모듈로 복사됩니다*
 
 ## 티저 스타일 업데이트 {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
    </html>
    ```
 
-   페이지로 배달될 때 클라이언트 라이브러리는 사전 `/etc.clientlibs` 고정되어 [프록시를 통해](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 제공되므로 `/apps` 또는 `/libs`에서 민감한 내용이 노출되지 않습니다.
+   페이지로 배달될 때 클라이언트 라이브러리는 사전 `/etc.clientlibs` 고정되어 [프록시를 통해](/help/implementing/developing/introduction/clientlibs.md) 제공되므로 `/apps` 또는 `/libs`에서 민감한 내용이 노출되지 않습니다.
 
    알림 `venia/clientlibs/clientlib-site.min.css` 및 `venia/clientlibs/clientlib-site.min.js`Adobe 이러한 파일은 `ui.frontend` 모듈에서 파생된 컴파일된 CSS 및 Javascript 파일입니다.
 
@@ -482,6 +482,6 @@ AEM [스타일 시스템을](https://docs.adobe.com/content/help/en/experience-m
 * [AEM 프로젝트 전형](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
 * [로컬 AEM 개발 환경 설정](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [클라이언트측 라이브러리](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html)
+* [클라이언트측 라이브러리](/help/implementing/developing/introduction/clientlibs.md)
 * [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [스타일 시스템을 사용한 개발](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
