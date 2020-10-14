@@ -2,9 +2,9 @@
 title: Dynamic Media 이미지 프로필
 description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 다이내믹 미디어 이미지 프로필을 만든 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 translation-type: tm+mt
-source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
+source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2738'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->PDF, GIF 또는 INDD(Adobe InDesign) 파일에는 이미지 프로필을 적용할 수 없습니다.
+>이미지 프로필은 PDF, 애니메이션 GIF 또는 INDD(Adobe InDesign) 파일에는 적용되지 않습니다.
 
 ## Crop options {#crop-options}
 
