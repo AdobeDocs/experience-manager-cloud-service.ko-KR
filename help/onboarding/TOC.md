@@ -1,13 +1,13 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM에 온보딩
 user-guide-title: 클라우드 서비스로서의 AEM에 온보딩
-breadcrumb-title: Onboarding Guide
-user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
+breadcrumb-title: 온보딩 안내서
+user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 클라우드 서비스로서의 Experience Manager를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 92%
+source-wordcount: '173'
+ht-degree: 93%
 
 ---
 
