@@ -1,13 +1,13 @@
 ---
 sub-product: 클라우드 서비스로서 AEM으로 이동
 user-guide-title: 클라우드 서비스로서 AEM으로 이동
-breadcrumb-title: Move Guide
-user-guide-description: Understand the transition journey to Cloud Service.
+breadcrumb-title: Move 안내서
+user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 translation-type: tm+mt
 source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 94%
+source-wordcount: '81'
+ht-degree: 95%
 
 ---
 
