@@ -2,9 +2,9 @@
 title: 빌드 환경 세부 사항
 description: 빌드 환경 세부 사항 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
+source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행�
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-변수 이름에는 영숫자 및 밑줄(_) 문자만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다. 파이프라인당 변수 수는 200자로 제한됩니다. 각 이름은 100자 미만이어야 하며, 각 값은 2048자 미만이어야 합니다.
+변수 이름에는 영숫자 및 밑줄(_) 문자만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다. 파이프라인당 변수 수는 200자로 제한됩니다. 문자열 유형 변수의 경우 각 이름은 100자 미만이어야 하며, secretString 유형 변수의 경우에는 각 값이 2048자 미만이어야 합니다.
 
 파일 내에서 사용하는 경우 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다. `Maven pom.xml`
 
@@ -187,5 +187,4 @@ CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행�
 이와 동일한 기술을 사용하여 RubyGems용 또는 Python Packages `gem` 용 언어 관련 패키지를 설치할 수 `pip` 있습니다.
 
 >[!NOTE]
->
 >이러한 방식으로 시스템 패키지를 설치해도 Adobe Experience Manager을 실행하는 데 사용되는 런타임 환경에 설치되지 **않습니다** . AEM 환경에 시스템 패키지를 설치해야 하는 경우 Adobe 담당자에게 문의하십시오.
