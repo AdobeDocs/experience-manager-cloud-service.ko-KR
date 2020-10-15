@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 + [클라우드 서비스로서의 AEM에 온보딩](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/onboarding/home.html)
 + [클라우드 서비스로서의 AEM 사이트](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/sites/home.html)
 + [클라우드 서비스로서의 AEM Assets](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/assets/home.html)
-+ [Cloud Service으로 AEM Commerce](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
++ [클라우드 서비스로서의 AEM Commerce](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
 + [클라우드 서비스로서 AEM으로 이동](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/moving/home.html)
 + [클라우드 서비스로서의 AEM용 애플리케이션 구현](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/home.html)
 + [클라우드 서비스로서의 AEM용 커넥터 구현](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/connectors/home.html)
