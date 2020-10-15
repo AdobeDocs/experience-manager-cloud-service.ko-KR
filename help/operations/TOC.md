@@ -1,12 +1,12 @@
 ---
 sub-product: 클라우드 서비스로서의 AEM 작업 및 유지 관리
 user-guide-title: 클라우드 서비스로서의 AEM 작업 및 유지 관리
-breadcrumb-title: Operations Guide
-user-guide-description: Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.
+breadcrumb-title: Operations 안내서
+user-guide-description: 색인 지정 및 유지 관리 작업과 같은 클라우드 서비스로서의 Experience Manager가 수행하는 백엔드 작업에 대해 알아봅니다.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '62'
 ht-degree: 100%
 
 ---
