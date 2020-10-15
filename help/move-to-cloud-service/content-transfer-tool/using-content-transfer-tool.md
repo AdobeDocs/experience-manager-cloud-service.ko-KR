@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 79%
+source-wordcount: '1710'
+ht-degree: 78%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 79%
 아래 섹션을 따라 수행하여 컨텐츠 전송 도구를 실행하는 동안 중요한 고려 사항을 이해하십시오.
 
 * 컨텐츠 전송 도구의 최소 시스템 요구 사항은 AEM 6.3 이상 및 JAVA 8입니다. 더 낮은 AEM 버전을 사용하는 경우 컨텐츠 저장소를 AEM 6.5로 업그레이드해야 컨텐츠 전송 도구를 사용할 수 있습니다.
+
+* AEM을 시작하는 사용자가 명령을 실행할 수 있도록 AEM 환경에서 Java를 구성해야 `java` 합니다.
 
 * 컨텐츠 전송 도구는 다음 유형의 데이터 저장소와 함께 사용할 수 있습니다.파일 데이터 저장소, S3 데이터 저장소, 공유 S3 데이터 저장소 및 Azure Blob 저장소 데이터 저장소.
 
