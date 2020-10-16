@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 액세스 가능한 컨텐츠 만들기(WCAG 2.1 준수)
 description: 장애가 있는 사용자가 액세스하여 사용할 수 있는 웹 컨텐츠를 만드는 데 도움이 되는 AEM을 클라우드 서비스로 사용
 translation-type: tm+mt
-source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '14057'
-ht-degree: 100%
+source-wordcount: '14060'
+ht-degree: 99%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 100%
 
 * [WCAG 2.1에 대한 빠른 안내서](/help/onboarding/accessibility/quick-guide-wcag.md).
 * [Adobe 솔루션에 대한 액세서빌러티 적합성 보고서](https://www.adobe.com/accessibility/compliance.html).
+* [자산의 액세서빌러티](/help/assets/accessibility.md)
 * [액세스 가능한 컨텐츠를 만들려면 리치 텍스트 편집기 구성 참조](/help/implementing/developing/extending/rte-accessible-content.md)
 
 이러한 적합성 수준에 따라 레벨 A(가장 낮음), 레벨 AA 및 레벨 AAA(가장 높음)로 지침의 등급이 지정됩니다. 이러한 등급을 간단히 정의하면 다음과 같습니다.
