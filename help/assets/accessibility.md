@@ -3,10 +3,10 @@ title: 액세스 가능성 [!DNL Experience Manager Assets]
 description: Cloud Service의 액세서빌러티 기능 [!DNL Adobe Experience Manager] 이 장애가 있는 사용자에게 어떤 도움이 되는지 살펴보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 2%
+source-wordcount: '1904'
+ht-degree: 1%
 
 ---
 
@@ -30,22 +30,24 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 # Cloud Service [!DNL Adobe Experience Manager Assets] 의 접근성 {#accessibility-in-aem-assets}
 
-Adobe은 장애인을 포함한 모든 사용자를 위한 제품을 만들기 위해 노력하고 있습니다. [!DNL Adobe Experience Manager] 는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 개선됩니다. [!DNL Experience Manager] 표준을 자세히 설명하고 제품의 액세서빌러티 기능에 대해 개요를 설명하고 규정 준수 수준을 설명하는 적합성 정보를 게시합니다. 따라서 사용자는 Adobe Acrobat Connect를 통해 Acrobat Connect Pro를 사용할 수 있습니다.
+[!DNL Adobe Experience Manager] 콘텐츠 제작자와 출판업체는 웹에서 탁월한 경험을 제공할 수 있습니다. Adobe은 장애인이 접근성을 향상시킴으로써 장애인을 포함시키기 위해 노력하고 [!DNL Experience Manager]있습니다. 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각, 청각, 이동성 또는 기타 장애가 있는 개인을 포함한 전세계 표준을 준수합니다.
 
-[!DNL Adobe Experience Manager] 는 다음 표준에 대한 다양한 수준의 지원을 제공합니다.
+[!DNL Experience Manager] 표준을 설명하고 제품의 액세서빌러티 기능에 대해 개요를 설명하고 규정 준수 수준을 설명하는 적합성 정보를 게시합니다. 이러한 접근성 준수 보고서는 사용자가 [!DNL Experience Manager] 보증의 범위를 이해하는 데 도움이 됩니다. 향상된 기능을 [!DNL Assets] 통해 모든 사용자는 키보드, 화면 판독기, 돋보기 및 기타 보조 기술을 통해 손쉽게 인터페이스를 사용할 수 있습니다.
+
+[!DNL Experience Manager] 는 다음 표준에 대한 다양한 수준의 지원을 제공합니다.
 
 * [웹 컨텐츠 액세스 가능성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
-* [조항 508](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)개정
-* [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/).
+* [회생법](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)508조항 개정
+* [접근성 이니셔티브 - W3C의 액세스 가능한 리치 인터넷 애플리케이션(WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-준수 수준을 자세히 설명하는 보고서에 액세스하려면 모든 Adobe 솔루션에 대한 [액세스 가능성 보고서 ](https://www.adobe.com/accessibility/compliance.html) (ACR) 페이지를 참조하십시오.
+준수 수준을 자세히 설명하는 보고서에 액세스하려면 모든 Adobe 솔루션에 대한 [액세스 가능성 보고서](https://www.adobe.com/accessibility/compliance.html) (ACR) 페이지를 참조하십시오.
 
 ## 보조 기술 {#at-support}
 
-장애가 있는 사용자는 자주 하드웨어와 소프트웨어에 의존하여 웹 컨텐츠에 액세스합니다. 이러한 도구는 보조 기술이라고 합니다. [!DNL Adobe Experience Manager Assets] 소프트웨어의 핵심 기능을 사용할 때 사용자가 지원할 수 있도록 다음과 같은 유형의 보조 기술을 사용해 작업합니다.
+장애가 있는 사용자는 자주 하드웨어와 소프트웨어에 의존하여 웹 컨텐츠에 액세스합니다. 이러한 도구는 보조 기술이라고 합니다. [!DNL Experience Manager Assets] 소프트웨어의 핵심 기능을 사용할 때 다음과 같은 유형의 보조 기술(AT)을 사용할 수 있습니다.
 
-* 화면 판독기
+* 화면 판독기 및 화면 돋보기
 * 음성 인식 소프트웨어
 * 키보드 사용 - 탐색 및 바로 가기
 * 스위치 컨트롤, 새로 고침 가능한 점자 디스플레이, 기타 컴퓨터 입력 디바이스 등 보조 하드웨어입니다.
@@ -75,8 +77,7 @@ Adobe은 장애인을 포함한 모든 사용자를 위한 제품을 만들기 �
 
 ### 에셋의 키보드 단축키 {#keyboard-shortcuts}
 
-<!-- TBD: Add here only those keyboard shortcuts that work for/with Assets. Do with Oct release.
--->
+자산에 있는 다음 작업은 나열된 키보드 단축키와 함께 작동합니다. 콘솔에 적용되는 대부분의 키보드 단축키도 자산에 [!DNL Experience Manager] 적용됩니다. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). 키보드 단축키를 [활성화하거나 비활성화하는 방법을 참조하십시오](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 | 사용자 인터페이스 또는 시나리오 | 키보드 단축키 | 작업 |
 |---|---|---|
@@ -84,38 +85,37 @@ Adobe은 장애인을 포함한 모든 사용자를 위한 제품을 만들기 �
 | 자산 사용자 인터페이스의 열 보기 | 왼쪽 및 오른쪽 화살표 키 | 현재 폴더 위 또는 아래로 파일과 폴더를 탐색합니다. |
 | 자산에서 폴더 찾아보기 | `/` | Omnisearch 상자를 열어 검색을 호출합니다. |
 | 자산 콘솔 | ` | 사이드 레일 전환 |
-| 자산 콘솔 | Alt + 1 | 컨텐츠 트리를 엽니다. |
-| 자산 콘솔 | Alt + 2 | 탐색 [!UICONTROL 사이드레이를] 엽니다. |
-| 자산 콘솔 | Alt + 3 | 선택한 [!UICONTROL 자산의 타임라인] 표시 |
-| 자산 콘솔 | Alt + 4 | 선택한 자산의 Live Copy 참조를 엽니다. |
-| 자산 콘솔 | Alt + 5 | 선택한 폴더 내에서 검색 및 검색을 호출합니다. |
+| 자산 콘솔 | `Alt + 1` | 컨텐츠 트리를 엽니다. |
+| 자산 콘솔 | `Alt + 2` | 탐색 [!UICONTROL 왼쪽] 레일을 엽니다. |
+| 자산 콘솔 | `Alt + 3` | 선택한 [!UICONTROL 자산의 타임라인] 표시 |
+| 자산 콘솔 | `Alt + 4` | 선택한 자산의 Live Copy 참조를 엽니다. |
+| 자산 콘솔 | `Alt + 5` | 선택한 폴더 내에서 검색 및 검색을 호출합니다. |
 | 자산 또는 폴더를 선택했습니다. | 백스페이스 | 선택한 자산 또는 폴더를 삭제합니다. |
 | 자산 또는 폴더를 선택했습니다. | `p` | 선택한 자산의 속성 페이지를 엽니다. |
 | 자산 또는 폴더를 선택했습니다. | `e` | 선택한 자산을 편집합니다. |
 | 자산 또는 폴더를 선택했습니다. | `m` | 선택한 자산을 이동합니다. |
-| 자산 또는 폴더를 선택했습니다. | Ctrl+c | 선택한 자산을 복사합니다. |
-| 자산 또는 폴더를 선택했습니다. | Esc | 선택 항목을 선택 취소합니다. |
-| 대화 상자가 열리고 포커스가 있습니다. | Esc | 대화 상자 닫기 |
-| DAM의 폴더 내부 | Ctrl+v | 복사한 자산을 붙여넣습니다. |
-| 자산 콘솔 | Ctrl + A | 모든 자산을 선택합니다. |
-| 자산 속성 페이지 | Ctrl + S | 변경 사항을 저장합니다. |
+| 자산 또는 폴더를 선택했습니다. | `Ctrl + c` | 선택한 자산을 복사합니다. |
+| 자산 또는 폴더를 선택했습니다. | `Esc` | 선택 항목을 선택 취소합니다. |
+| 대화 상자가 열리고 포커스가 있습니다. | `Esc` | 대화 상자 닫기 |
+| DAM의 폴더 내부 | `Ctrl + v` | 복사한 자산을 붙여넣습니다. |
+| 자산 콘솔 | `Ctrl + A` | 모든 자산을 선택합니다. |
+| 자산 속성 페이지 | `Ctrl + S` | 변경 사항을 저장합니다. |
 | 자산 콘솔 | `?` | 키보드 단축키 목록을 참조하십시오. |
-
-콘솔에 적용되는 대부분의 키보드 단축키도 자산에 [!DNL Experience Manager] 적용됩니다. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). 키보드 단축키를 [활성화하거나 비활성화하는 방법을 참조하십시오](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 ## 로그인 및 [!DNL Assets] 사용자 인터페이스 탐색 {#login}
 
 사용자는 키보드를 사용하여 로그인 필드로 이동하여 입력하여 로그인할 수 있습니다. 로그인 페이지의 잘못된 사용자 이름과 암호 조합으로 인한 오류 메시지는 오류가 발생할 때마다 화면 판독기에서 알려줍니다.
 
-로그인하면 DAM 사용자가 키보드를 사용하여 [!DNL Assets] 사용자 인터페이스로 이동할 수 있습니다. 키보드 탐색 순서는 왼쪽에서 오른쪽 및 위에서 아래로 지정됩니다. 키보드를 사용하여 탐색할 때 초점이 맞춰진 모든 실행 가능한 옵션은 향상된 색상 대비로 강조 표시되고 화면 판독기에서 내레이션이 적용됩니다. 메뉴에서 초점이 맞춰진 옵션의 확장 또는 축소 상태는 화면 판독기로 표시됩니다.
+로그인하면 DAM 사용자는 키보드를 사용하여 [!DNL Assets] 유저 인터페이스 내에서 탐색할 수 있습니다. 왼쪽 레일, 메뉴, 사용자 프로필, 검색 막대, 파일 및 폴더, 관리 및 구성 설정과 같은 사용자 인터페이스 요소는 키보드를 사용하여 탐색할 수 있습니다. 키보드 탐색 순서는 왼쪽에서 오른쪽 및 위에서 아래로 지정됩니다. 키보드를 사용하여 탐색할 때 초점이 맞춰지면 실행 가능한 옵션이 더 나은 색상 대비로 강조 표시되고 화면 판독기에서 내레이션이 적용됩니다. 메뉴에서 초점이 맞춰진 옵션(예: 확장, 축소 및 혼합 상태)의 상태가 적절한 경우 화면 판독기로 표시됩니다. 또한 실행 가능한 옵션의 목적은 화면이나 UI 배치 대신 화면 판독기에 의해 발표됩니다.
 
-사용자가 메뉴에서 도움말 또는 사용자 프로필 옵션을 확장하면 해당 옵션이나 상태가 화면 판독기로 표시됩니다. 사용자가 사용자 프로필 옵션을 확장하면 키보드를 사용하여 사용 가능한 옵션을 선택할 수 있습니다. 예를 들어, 사용자는 다른 사용자로 가장할 수 있습니다. 사용자 인터페이스 옵션 및 오류 메시지
+사용자가 메뉴에서 도움말 또는 사용자 프로필 옵션을 확장하면 해당 옵션이나 상태가 화면 판독기로 표시됩니다. 사용자가 사용자 프로필 옵션을 확장하면 키보드를 사용하여 사용 가능한 옵션을 선택할 수 있습니다. 예를 들어, 관리자는 다른 사용자로 가장할 수 있습니다. 사용자가 [!UICONTROL 도움말] 옵션에서 문자열을 검색하는 경우 내레이터는 검색이 진행 중임을 나타내는 &#39;도움말 검색&#39;을 발표합니다.
 
-![Experience Manager 유저 인터페이스의 주요 옵션 키보드 탐색](assets/keyboard-navigation-in-aem.gif)
+<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
-*그림:키를 사용하여 Experience Manager 사용자 인터페이스 상단에 있는 옵션을 탐색합니다.`Tab`*
+![Keyboard navigation of top options in Experience Manager user interface](assets/keyboard-navigation-in-aem.gif)
 
-사용자가 [!UICONTROL 도움말] 옵션에서 문자열을 검색하는 경우 내레이터는 검색이 진행 중임을 나타내는 &#39;도움말 검색&#39;을 발표합니다.
+*Figure: Navigating through the options at the top of Experience Manager user interface using `Tab` key.*
+-->
 
 ## 기존 에셋 검색 및 관련 정보 보기 {#browse}
 
@@ -143,9 +143,9 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * 키를 사용하여 탐색할 때 사용자의 포커스가 버전 미리 보기의 닫기 옵션으로 이동할 수 `Tab` 있습니다.
 * 키보드를 사용하여 검색할 때 강조 표시된 실행 가능한 유저 인터페이스 옵션은 향상된 대비 기능을 사용하여 보다 눈에 잘 띄는 초점을 갖습니다. 따라서 사용자가 집중된 영역을 보다 쉽게 식별할 수 있습니다.
 * 축소판 보기에서 빠른 작업 아이콘을 제거할 때 `Esc` 키를 사용해도 마지막 초점을 맞춘 항목에서 키보드 포커스가 제거되지 않습니다.
-* 자산을 선택한 상태에서 Alt + 4 키보드 단축키를 누르면 참조 목록이 열립니다. 키를 사용하여 `Tab` 아무 것도 없는 참조 항목을 탐색할 수 있습니다.
-* 자산에 대한 주석을 자산 타임라인에서 사용할 수 있습니다. 키보드로 이용할 수 있습니다.
-* Experience Manager의 보기 설정은 키보드를 통해 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 선택 및 탭하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
+* 자산을 선택한 상태에서 `Alt + 4` 키보드 단축키를 누르면 왼쪽 레일에 [!UICONTROL 있는 참조] 목록이 열립니다. 키를 사용하여 `Tab` 0이 아닌 참조 항목을 탐색할 수 있습니다. 0이 아닌 참조 항목만 검색할 수 있으므로 노력과 키 입력도 절약됩니다.
+* 자산에 대한 주석을 자산 타임라인에서 사용할 수 있습니다. 키보드 또는 키보드 단축키를 사용하여 왼쪽 레일에 액세스하면 액세스할 수 있습니다.
+* [!UICONTROL 키보드] 를 [!DNL Experience Manager] 사용하여 설정 보기에 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 선택 및 탭하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -156,7 +156,6 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * List the a11y fixes in workflows to configure and administer [!DNL Experience Manager Assets]?
 * Some enhancements in Processing profiles creation or application to a folder?
 * Some enhancements to metadata properties UI?
-
 -->
 
 ## 디지털 자산을 관리합니다 {#manage-assets}
@@ -169,7 +168,7 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 
 * [!UICONTROL 자산 속성 페이지의 저장 및 닫기] 옵션은 키보드를 사용하여 액세스할 수 있습니다.
 * 화면 판독기는 선택한 태그를 삭제하기 위해 자산 속성 단추의 기본 탭에서 선택한 태그를 삭제하는 옵션을 알려줍니다.
-* 날짜 선택기 팝업 대화 상자는 키보드를 사용하여 사용할 수 있습니다. Datepicker는 설정 및 해제 시간을 설정하는 데 사용됩니다.
+* 날짜 선택기 팝업 대화 상자는 키보드를 사용하여 사용할 수 있습니다. Datepicker 사용자 인터페이스 요소는 설정 및 해제 시간을 설정하는 데 사용됩니다.
 * 키보드를 사용하는 드래그 기능은 화면 판독기의 검색 모드에서 메타데이터 스키마 편집기에서 올바르게 작동합니다.
 * 키보드를 사용하여 폴더 속성의 권한 탭에 있는 폐쇄된 사용자 그룹 아래의 사용자 또는 그룹 추가 필드로 초점을 이동할 수 있습니다.
 
@@ -206,11 +205,14 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
    * 나열된 모든 제안으로 이동할 수 있습니다.
    * 이메일 주소 및 검색 필드 추가에 대해 표시되는 제안을 나레이트합니다.
 
-## 액세스 가능성 [!DNL Dynamic Media] {#dynamic-media-accessibility}
+<!-- TBD: With more info from the DM team. A few Sev1 issues are fixed and if those are shipped, then mention those here.
 
-Dynamic Media 사용 시 다음 기능을 통해 액세스할 수 있습니다.
+## Accessibility in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
-* 사용자는 에셋 세부 정보 `Flyout`에 있는 뷰어에서 키 `InlineZoom`를 사용하여 `Shoppable_Banner`, `Zoom_dark``Zoom_light`, `ZoomVertical_dark`및 `ZoomVertical_light` `Tab` [!DNL Dynamic Media]옵션에 집중할 수 있습니다.
+When using Dynamic Media, the following functionality helps make it accessible:
+
+* A user can focus to `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light`, `ZoomVertical_dark`, and `ZoomVertical_light` options using `Tab` key in asset details Viewers in [!DNL Dynamic Media].
+-->
 
 ## 액세스 가능한 설명서 {#accessible-docs}
 
@@ -224,15 +226,12 @@ Dynamic Media 사용 시 다음 기능을 통해 액세스할 수 있습니다.
 <!-- 
 ## More resources for accessibility {#a11y-resources}
 
-TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share or leave a link here.
+TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share a reference with asgupta@adobe.com.
 -->
-
-## 릴리스 개선 [!DNL Experience Manager Assets] 사항 {#rn-fixes}
-
-각 개별 릴리스에서 수행한 특정 개선 사항 목록은 해당 릴리스의 [릴리스 노트를](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/release-notes/home.html) 참조하십시오.
 
 >[!MORELIKETHIS]
 >
->* [AEM 접근성 안내](/help/onboarding/accessibility/web-accessibility.md)
->* [Adobe 솔루션 적합성 보고서](https://www.adobe.com/accessibility/compliance.html)
+>* [각 개별 릴리스에서 수행한 특정 개선 사항에 대한 릴리스 노트입니다](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>* [AEM 액세서빌러티 안내](/help/onboarding/accessibility/web-accessibility.md).
+>* [Adobe 솔루션에 대한 적합성 보고서](https://www.adobe.com/accessibility/compliance.html).
 
