@@ -3,9 +3,9 @@ title: 액세스 가능성 [!DNL Experience Manager Assets]
 description: Cloud Service의 액세서빌러티 기능 [!DNL Adobe Experience Manager] 이 장애가 있는 사용자에게 어떤 도움이 되는지 살펴보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 [!DNL Adobe Experience Manager] 콘텐츠 제작자와 출판업체는 웹에서 탁월한 경험을 제공할 수 있습니다. Adobe은 장애인이 접근성을 향상시킴으로써 장애인을 포함시키기 위해 노력하고 [!DNL Experience Manager]있습니다. 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각, 청각, 이동성 또는 기타 장애가 있는 개인을 포함한 전세계 표준을 준수합니다.
 
-[!DNL Experience Manager] 표준을 설명하고 제품의 액세서빌러티 기능에 대해 개요를 설명하고 규정 준수 수준을 설명하는 적합성 정보를 게시합니다. 이러한 접근성 준수 보고서는 사용자가 [!DNL Experience Manager] 보증의 범위를 이해하는 데 도움이 됩니다. 향상된 기능을 [!DNL Assets] 통해 모든 사용자는 키보드, 화면 판독기, 돋보기 및 기타 보조 기술을 통해 손쉽게 인터페이스를 사용할 수 있습니다.
+[!DNL Experience Manager] 표준을 설명하고 제품의 액세서빌러티 기능에 대해 개요를 설명하고 규정 준수 수준을 설명하는 적합성 정보를 게시합니다. 이러한 접근성 준수 보고서는 사용자가 [!DNL Experience Manager] 보증의 범위를 이해할 수 있도록 도와줍니다. 향상된 기능을 [!DNL Assets] 통해 모든 사용자는 키보드, 화면 판독기, 돋보기 및 기타 보조 기술을 통해 손쉽게 인터페이스를 사용할 수 있습니다.
 
 [!DNL Experience Manager] 는 다음 표준에 대한 다양한 수준의 지원을 제공합니다.
 
@@ -77,7 +77,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 ### 에셋의 키보드 단축키 {#keyboard-shortcuts}
 
-자산에 있는 다음 작업은 나열된 키보드 단축키와 함께 작동합니다. 콘솔에 적용되는 대부분의 키보드 단축키도 자산에 [!DNL Experience Manager] 적용됩니다. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). 키보드 단축키를 [활성화하거나 비활성화하는 방법을 참조하십시오](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+자산에 있는 다음 작업은 나열된 키보드 단축키와 함께 작동합니다. 콘솔에 적용되는 대부분의 키보드 단축키도 자산에 [!DNL Experience Manager] 적용됩니다. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). 키보드 단축키를 [활성화하거나 비활성화하는 방법을 참조하십시오](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 | 사용자 인터페이스 또는 시나리오 | 키보드 단축키 | 작업 |
 |---|---|---|
@@ -192,7 +192,7 @@ CRUD 작업, 에셋 다운로드, 메타데이터 추가 등 다양한 에셋 �
 
 ## 자산 공유 {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 자산을 공유할 때 다음 기능은 액세스 가능성을 개선합니다.
