@@ -1,16 +1,16 @@
 ---
-title: Cloud Service 가이드로 에셋
+title: Cloud Service로써 Assets 안내서
 description: 클라우드 서비스로서의 Adobe Experience Manager 자산 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '352'
 ht-degree: 85%
 
 ---
 
 
-# Cloud Service 가이드로 에셋 {#aem-assets-guide}
+# Cloud Service로써 Assets 안내서 {#aem-assets-guide}
 
 클라우드 서비스로서의 Adobe Experience Manager Assets에 대한 자가 진단 리소스는 다음과 같습니다.
 
@@ -40,7 +40,7 @@ ht-degree: 85%
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
-* [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [최근 설명서 업데이트](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
