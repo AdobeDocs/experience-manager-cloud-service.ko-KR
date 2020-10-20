@@ -4,10 +4,10 @@ user-guide-title: 클라우드 서비스로서의 AEM용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 클라우드 서비스로서의 Experience Manager 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 85%
+source-wordcount: '425'
+ht-degree: 84%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 85%
    + [클라우드 서비스로서의 AEM에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
    + [클라우드 서비스로서의 AEM에서 오버레이](developing/introduction/overlays.md)
    + [클라이언트측 라이브러리 사용](developing/introduction/clientlibs.md)
+   + [구성 및 구성 브라우저](developing/introduction/configurations.md)
    + [로깅](developing/introduction/logging.md)
    + [클라우드 서비스로서의 AEM API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [페이지 비교](/help/implementing/developing/introduction/page-diff.md)
