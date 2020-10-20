@@ -2,7 +2,7 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기초로 사용할 페이지를 만들 때 사용됩니다
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 8%
@@ -156,7 +156,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 새 폴더를 만들려면 다음 중 하나를 수행합니다.
 
 * 프로그래밍 방식 또는 CRXDE Lite 사용
-* 구성 브라우저 사용
+* 구성 [브라우저 사용](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## CRXDE Lite 사용 {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 
 ### 구성 브라우저 사용 {#using-the-configuration-browser}
 
-1. 전역 **탐색** -> **도구** > **구성 브라우저로**&#x200B;이동합니다.
+1. 전역 **탐색** -> **도구** > [**구성 브라우저로**&#x200B;이동합니다.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    기존 폴더가 `global` 폴더를 포함하여 왼쪽에 나열됩니다.
 
@@ -203,7 +203,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 
 >[!NOTE]
 >
->이 폴더 내에 템플릿을 만들려면 구성 브라우저에서 전역 폴더를 편집하고 **편집 가능한 템플릿** 옵션을 활성화할 수 있지만 이는 권장되지 않습니다.
+>구성 [브라우저에서](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 전역 폴더를 편집하고, 이 폴더 내에 템플릿을 만들려면 **편집 가능한 템플릿** 옵션을 활성화할 수 있지만, 이 방법은 권장되지 않습니다.
 
 ### ACL 및 그룹 {#acls-and-groups}
 
