@@ -2,9 +2,9 @@
 title: 사용자 지정 코드 품질 규칙 - Cloud Services
 description: 사용자 지정 코드 품질 규칙 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
+source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,7 @@ ht-degree: 0%
 이 페이지에서는 AEM Engineering의 모범 사례를 기반으로 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대해 설명합니다.
 
 >[!NOTE]
->
->여기에 제공된 코드 샘플은 실례만을 위한 것입니다.
+>여기에 제공된 코드 샘플은 실례만을 위한 것입니다. SonarQube [개념](https://docs.sonarqube.org/7.4/user-guide/concepts/) 및 품질 규칙에 대한 자세한 내용은 개념을 참조하십시오.
 
 ## SonarQube 규칙 {#sonarqube-rules}
 
