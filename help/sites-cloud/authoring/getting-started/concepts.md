@@ -2,9 +2,9 @@
 title: 작성 개념
 description: AEM에서 작성의 개념
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '349'
 ht-degree: 100%
 
 ---
@@ -27,10 +27,6 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 ![작성자, 게시자 및 디스패처 다이어그램](/help/sites-cloud/authoring/assets/author-publish.png)
 
 작성 환경에서는 AEM의 작성 UI를 통해 AEM의 기능을 사용할 수 있도록 되어 있습니다. 게시 환경의 경우 사용자가 사용할 수 있도록 만들어진 인터페이스의 전체 모양 및 느낌을 디자인합니다.
-
->[!NOTE]
->
->AEM 자체는 AEM 설명서를 게시하는 데 사용됩니다.
 
 ## 작성 환경 {#author-environment}
 
@@ -65,4 +61,4 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 ## Dispatcher {#dispatcher}
 
-웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[디스패처](/help/implementing/dispatcher/overview.md)**는 부하 분산 및 캐싱을 구현합니다.
+웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[디스패처](/help/implementing/dispatcher/overview.md)**&#x200B;는 부하 분산 및 캐싱을 구현합니다.
