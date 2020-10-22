@@ -1,11 +1,11 @@
 ---
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.9.0 릴리스의 릴리스 노트
-description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.9.0 릴리스 노트
+description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
-source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
+source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 11%
+source-wordcount: '781'
+ht-degree: 9%
 
 ---
 
@@ -87,7 +87,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 새로운 기능 {#what-is-new-cra}
 
-* 클라우드 준비 분석기(CRA)에는 사용자가 CRA를 실행하기 위해 클릭하는 명시적 **보고서** 생성 단추를 표시하는 시작 상태 콘솔이 있습니다.
+* CRA( [Cloud Ready Analyzer)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) 에는 사용자가 CRA를 **실행하기 위해 클릭하는 명시적** 보고서 생성단추를 표시하는 시작 상태 콘솔이 있습니다.
 
 * 실행 중인 CRA UI에 진행률이 표시됩니다. 분석 중인 항목과 실행 중에 발견된 결과를 표시합니다.
 
@@ -103,7 +103,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* CTT(콘텐츠 전송 도구)는 Azure Blob 저장소 데이터 저장소를 지원합니다.
+* CTT( [Content Transfer Tool)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 는 Azure Blob 저장소 데이터 저장소를 지원합니다.
 
 * CTT 사용자 인터페이스에는 30초마다 개요 페이지를 다시 로드하는 자동 다시 로드 기능이 있습니다.
 
