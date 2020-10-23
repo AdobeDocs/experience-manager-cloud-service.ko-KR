@@ -2,9 +2,9 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
 workflow-type: tm+mt
-source-wordcount: '4073'
+source-wordcount: '4082'
 ht-degree: 8%
 
 ---
@@ -34,18 +34,19 @@ ht-degree: 8%
 
 ## 도구 다운로드 및 추출 {#extracting-the-sdk}
 
-디스패처 도구는 [소프트웨어 배포 포털의 zip 파일에서 다운로드할 수](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 있습니다. SDK 목록에 대한 액세스는 Cloud Service 환경으로 AEM Managed Services 또는 AEM이 있는 것으로 제한됩니다. 새 발송자 도구 버전에서 사용 가능한 모든 새 구성을 사용하여 클라우드 이상에서 해당 버전의 AEM을 실행하는 클라우드 환경에 배포할 수 있습니다.
+AEM SDK로 [Cloud Service에](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)포함된 디스패처 도구는 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 다운로드할 수 있습니다. 이 새로운 발송자 도구 버전에서 사용 가능한 모든 새 구성을 사용하여 클라우드 이상에서 해당 버전의 AEM을 실행하는 클라우드 환경에 배포할 수 있습니다.
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdmacOS/Linux 및 Windows용 디스패처 도구를 번들로 제공하는 SDK의 압축을 해제합니다.
 
-**macOS 및 Linux**&#x200B;경우 셸 스크립트를 컴퓨터의 폴더에 다운로드하고 실행 파일로 만들어 실행합니다. 저장한 디렉토리 아래에 있는 Dispatcher 도구 파일 `version` 의 자체 추출이 이루어집니다(디스패처 도구 버전).
+**macOS/Linux**&#x200B;의 경우 디스패처 도구를 가공할 수 있도록 만들고 실행합니다. 저장한 디렉토리 아래에 있는 Dispatcher 도구 파일 `version` 의 자체 추출이 이루어집니다(디스패처 도구 버전).
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Windows**&#x200B;의 경우 zip 아카이브를 다운로드하고 추출합니다.
+**Windows**&#x200B;의 경우 Dispatcher 도구 zip 보관 파일을 추출합니다.
 
 ## 파일 구조 {#file-structure}
 
@@ -379,7 +380,7 @@ Phase 2 finished
 
 Apache 및 Dispatcher 구성을 로컬로 테스트할 수도 있습니다. 위 설명에 따라 문서를 로컬로 설치하고 구성을 통해 유효성을 검사해야 합니다.
 
-디스패처에 필요한 모든 구성 파일과 함께 폴더를 출력하는 &quot;`-d`&quot; 매개 변수를 사용하여 유효성 검사기 도구를 실행합니다. 그러면, `docker_run.sh` 스크립트가 해당 폴더를 가리킬 수 있습니다. 포트 번호(아래 예: 8080)를 제공하여 디스패처 끝점을 노출함으로써 컨테이너를 사용자의 구성으로 시작합니다.
+모든 발송자 구성 파일로 폴더를 출력하는 매개 변수를 사용하여 유효성 검사기 도구( `validator.sh` 앞에서 언급한 것과 다름)를 `-d` 실행합니다. 그런 다음 `docker_run.sh` 스크립트를 실행하여 해당 폴더를 인수로 전달합니다. 포트 번호를 제공하여(여기:8080)을 사용하여 디스패처 끝점을 노출하면 Docker 컨테이너가 시작되어 사용자의 구성으로 디스패처를 실행합니다.
 
 ```
 $ validator full -d out src/dispatcher
