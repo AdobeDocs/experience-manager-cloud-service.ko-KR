@@ -2,9 +2,9 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
+source-git-commit: 95e89bc665ee228da0a25a57a3a917a6b4c379ad
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4073'
 ht-degree: 8%
 
 ---
@@ -35,7 +35,8 @@ ht-degree: 8%
 ## 도구 다운로드 및 추출 {#extracting-the-sdk}
 
 AEM SDK로 [Cloud Service에](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)포함된 디스패처 도구는 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 다운로드할 수 있습니다. 이 새로운 발송자 도구 버전에서 사용 가능한 모든 새 구성을 사용하여 클라우드 이상에서 해당 버전의 AEM을 실행하는 클라우드 환경에 배포할 수 있습니다.
-/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdmacOS/Linux 및 Windows용 디스패처 도구를 번들로 제공하는 SDK의 압축을 해제합니다.
+
+macOS/Linux 및 Windows용 디스패처 도구를 번들로 제공하는 SDK의 압축을 해제합니다.
 
 **macOS/Linux**&#x200B;의 경우 디스패처 도구를 가공할 수 있도록 만들고 실행합니다. 저장한 디렉토리 아래에 있는 Dispatcher 도구 파일 `version` 의 자체 추출이 이루어집니다(디스패처 도구 버전).
 
