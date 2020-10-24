@@ -3,7 +3,7 @@ title: 다양한 언어로 디지털 에셋 제작 및 관리
 description: 이진, 메타데이터 및 태그를 여러 언어로 번역하는 워크플로우를 자동화하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
 workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 3%
@@ -59,14 +59,14 @@ Adobe Experience Manager(AEM) 자산에서 다국어 자산은 폴더에 포함�
 
 ```shell
 /content
-&nbsp; &nbsp; /- dam
-&nbsp; &nbsp; &nbsp; |- en
-&nbsp; &nbsp; &nbsp; |- fr
-&nbsp; &nbsp; &nbsp; |- de
-&nbsp; &nbsp; &nbsp; |- es
-&nbsp; &nbsp; &nbsp; |- it
-&nbsp; &nbsp; &nbsp; |- ja
-&nbsp; &nbsp; &nbsp; |- zh
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 다음 단계를 수행하여 자산을 번역할 준비를 합니다.
