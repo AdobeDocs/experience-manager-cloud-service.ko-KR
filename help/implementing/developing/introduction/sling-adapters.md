@@ -2,9 +2,9 @@
 title: Sling 어댑터 사용
 description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 편리하게 변환합니다
 translation-type: tm+mt
-source-git-commit: 4201207acb48ab61892f4dd5de05d7f5f9f7ba83
+source-git-commit: 8826fde91a2ab0be0fe7850ae20f46ba023cdf55
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -358,4 +358,4 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 #### 기타 {#other}
 
-또한 Sling / JCR / OCM은 사용자 정의 OCM(Object Content Mapping ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` ) 개체에 대한[](https://jackrabbit.apache.org/object-content-mapping.html)기능도 제공합니다.
+또한 Sling / JCR / OCM은 사용자 정의 OCM(Object Content Mapping [`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory) ) 개체에 대한[](https://jackrabbit.apache.org/object-content-mapping.html)기능도 제공합니다.
