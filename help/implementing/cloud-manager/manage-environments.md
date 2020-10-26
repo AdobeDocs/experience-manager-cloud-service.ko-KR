@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
+source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '829'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 2%
    >비프로덕션 파이프라인을 아직 설정하지 않은 경우 *개요* 화면에는 비프로덕션 파이프라인을 만들 수 있는 카드가 표시됩니다.
 
 
-### 환경 보기 {#viewing-environment}
+### 보기 환경 {#viewing-environment}
 
 개요 **페이지의 환경** 카드는 최대 세 개의 환경을 나열합니다.
 
