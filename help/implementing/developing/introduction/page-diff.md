@@ -2,7 +2,7 @@
 title: 개발 및 페이지 비교
 description: 페이지 비교 기능의 작동 방식과 개발자에게 미치는 영향을 이해합니다
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 14%
@@ -30,7 +30,7 @@ ht-degree: 14%
 
 정리 작업이 자동으로 실행되어 이 임시 컨텐츠를 정리할 수 있습니다.
 
-## 권한 {#permissions}
+## 제한 사항 {#limitations}
 
 비교는 DOM 비교를 통해 클라이언트측에서 발생하므로 비교 프로세스가 단순하지만 개발자가 고려해야 하는 많은 제한 사항이 있습니다.
 
