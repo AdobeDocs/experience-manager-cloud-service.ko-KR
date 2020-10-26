@@ -4,7 +4,7 @@ user-guide-title: 클라우드 서비스로서의 AEM에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 클라우드 서비스로서의 Experience Manager를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 207ed100748d87e65f54e7dfe5bb81e100845cc1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 89%
@@ -44,7 +44,7 @@ ht-degree: 89%
       + [프로젝트 설정](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [빌드 환경 이해](getting-access-to-aem-in-cloud/build-environment-details.md)
    + Cloud Manager 릴리스 노트 {#release-notes-cloud-manager}
-      + [2020.10.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+      + [현재 릴리스 노트(2020.10.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [2020.2.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
 + 데이터 개인 정보 보호 및 보호 준비 완료 {#data-privacy}
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
