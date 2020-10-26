@@ -3,9 +3,9 @@ title: 액세스 가능성 [!DNL Experience Manager Assets]
 description: Cloud Service의 액세서빌러티 기능 [!DNL Adobe Experience Manager] 이 장애가 있는 사용자에게 어떤 도움이 되는지 살펴보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: 726c63a9bb3426bea324abec87b5e9f7d5e9e755
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 ## 키보드 사용 지원 {#keyboard-use}
 
-포인터를 사용하여 클릭 가능하거나 실행 가능한 많은 사용자 인터페이스 요소도 키보드를 사용하여 연결할 수 있습니다. 사용자는 키보드를 사용하여 UI 요소에 중점을 두고 적절한 작업을 수행할 수 있습니다. 사용자는 키보드 단축키를 사용하여 UI 요소에 초점을 맞추고 키보드를 사용하여 트리거하지 않고도 명령 또는 동작을 트리거할 수 있습니다. 예를 들어, 사용자는 키보드를 사용하여 UI 컨트롤을 탐색하고 Return 키를 누르고 `alt + 2` 키보드 단축키를 눌러 왼쪽의 에셋의 타임라인을 열 수 있습니다.
+포인터를 사용하여 클릭 가능하거나 실행 가능한 많은 사용자 인터페이스 요소도 키보드를 사용하여 연결할 수 있습니다. 사용자는 키보드를 사용하여 UI 요소에 중점을 두고 적절한 작업을 수행할 수 있습니다. 사용자는 키보드 단축키를 사용하여 UI 요소에 초점을 맞추고 키보드를 사용하여 트리거하지 않고도 명령 또는 동작을 트리거할 수 있습니다. 예를 들어, 사용자는 키보드를 사용하여 UI 컨트롤을 탐색하고 키를 누른 상태에서 `Return` `Alt + 2` 키보드 단축키를 눌러 왼쪽의 에셋 타임라인을 열 수 있습니다.
 
 <!-- TBD items:
 
