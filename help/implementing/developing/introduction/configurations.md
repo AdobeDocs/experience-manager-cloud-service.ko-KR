@@ -2,10 +2,10 @@
 title: 구성 및 구성 브라우저
 description: AEM 구성과 AEM에서 작업 영역 설정을 관리하는 방법을 이해합니다.
 translation-type: tm+mt
-source-git-commit: 174648c78b71ef60d2d2507c3c4fbf18bbdac647
+source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 1%
+source-wordcount: '1496'
+ht-degree: 2%
 
 ---
 
@@ -19,13 +19,13 @@ AEM 구성은 AEM의 설정을 관리하고 작업 영역으로 사용할 수 �
 구성은 두 가지 다른 관점에서 고려될 수 있다.
 
 * [관리자는](#configurations-administrator) 구성을 AEM 내의 작업 영역으로 사용하여 설정 그룹을 정의하고 관리합니다.
-* [개발자는](#configurations-developer) Sling 컨텍스트 인식 구성을 구현하여 AEM에서 설정을 유지하고 조회하는 기본 구성 메커니즘을 사용합니다.
+* [개발자는](#configurations-developer) AEM에서 설정을 유지하고 조회하기 위한 구성을 구현하는 기본 구성 메커니즘을 사용합니다.
 
-간단히 말해, 관리자의 관점에서 구성은 작업 영역을 만들어 AEM에서 설정을 관리하는 방법이지만, 개발자는 AEM이 저장소 내에서 이러한 구성을 어떻게 지속하고 조회하는지 이해해야 합니다.
+요약:관리자의 관점에서 구성은 작업 영역을 만들어 AEM에서 설정을 관리하는 방법이지만, 개발자는 AEM이 저장소 내에서 이러한 구성을 사용하고 관리하는 방법을 이해해야 합니다.
 
 사용자의 관점에서 볼 때 구성은 AEM의 두 가지 주요 목적을 따릅니다.
 
-* 구성은 사용자 그룹에 대해 특정 기능을 활성화합니다.
+* 구성은 특정 사용자 그룹에 대해 특정 기능을 활성화합니다.
 * 구성은 해당 기능에 대한 액세스 권한을 정의합니다.
 
 ## 관리자로서의 구성 {#configurations-administrator}
@@ -38,6 +38,8 @@ AEM 내의 다양한 기능에 대한 구성을 만들 수 있습니다.
 * [컨텍스트 허브 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [편집 가능한 템플릿](/help/sites-cloud/authoring/features/templates.md)
+
+### 예 {#administrator-example}
 
 예를 들어, 관리자는 편집 가능한 템플릿에 대해 두 개의 구성을 만들 수 있습니다.
 
@@ -122,7 +124,7 @@ AEM 내의 다양한 기능에 대한 구성을 만들 수 있습니다.
 
 콘텐츠는 속성을 통해 관련 구성을 `cq:conf` 참조합니다. AEM은 컨텐츠를 기반으로 조회를 수행하고 컨텍스트 `cq:conf` 속성을 사용하여 적절한 구성을 찾습니다.
 
-### 간단한 예 {#example}
+### 예 {#developer-example}
 
 이 예에서는 DAM 설정에 관심이 있는 일부 애플리케이션 코드가 있다고 가정합니다.
 
@@ -193,7 +195,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 구성 사용 {#using-configurations}
 
-AEM의 구성은 Sling 컨텍스트 인식 구성을 기반으로 합니다. Sling 번들은 컨텍스트 인식 구성을 가져오는 데 사용할 수 있는 서비스 API를 제공합니다. 컨텍스트 인식 구성은 이전 예제에 [설명된 대로 컨텐츠 리소스 또는 리소스 트리와 관련된 구성입니다.](#example)
+AEM의 구성은 Sling 컨텍스트 인식 구성을 기반으로 합니다. Sling 번들은 컨텍스트 인식 구성을 가져오는 데 사용할 수 있는 서비스 API를 제공합니다. 컨텍스트 인식 구성은 이전 예제에 [설명된 대로 컨텐츠 리소스 또는 리소스 트리와 관련된 구성입니다.](#developer-example)
 
 컨텍스트 인식 구성, 예제 및 사용 방법에 대한 자세한 내용은 Sling 설명서를 [참조하십시오.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
