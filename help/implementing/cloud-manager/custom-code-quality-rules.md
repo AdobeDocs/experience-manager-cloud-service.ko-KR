@@ -2,9 +2,9 @@
 title: 사용자 지정 코드 품질 규칙 - Cloud Services
 description: 사용자 지정 코드 품질 규칙 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2285'
 ht-degree: 0%
 
 ---
@@ -555,7 +555,7 @@ public void doThis(Resource resource) {
 
 **키**:CQRules:AMSCORE-554
 
-**유형**:코드 냄새
+**유형**:코드 냄새/Cloud Service 호환성
 
 **심각도**:마이너
 
@@ -569,7 +569,7 @@ Sling 스케줄러는 보장된 실행을 필요로 하는 작업에 사용해�
 
 **키**:AMSCORE-553
 
-**유형**:코드 냄새
+**유형**:코드 냄새/Cloud Service 호환성
 
 **심각도**:마이너
 
@@ -680,7 +680,7 @@ Similar to *Contains Duplicate OSGi Configurations* . Similar this is a common p
 
 **키**:ClassicUIAuthauthoringMode
 
-**유형**:코드 냄새
+**유형**:코드 냄새/Cloud Service 호환성
 
 **심각도**:마이너
 
@@ -692,7 +692,7 @@ OSGi 구성은 AEM 내의 기본 작성 모드를 `com.day.cq.wcm.core.impl.Auth
 
 **키**:ComponentWithOnlyClassicUIDialog
 
-**유형**:코드 냄새
+**유형**:코드 냄새/Cloud Service 호환성
 
 **심각도**:마이너
 
@@ -710,7 +710,7 @@ AEM 현대화 도구 설명서는 클래식 UI에서 터치 UI로 구성 요소�
 
 **키**:MutableMutableMixedPackage
 
-**유형**:코드 냄새
+**유형**:코드 냄새/Cloud Service 호환성
 
 **심각도**:마이너
 
@@ -724,7 +724,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/ko-KR/exper
 
 **키**:ReverseReplication
 
-**유형**:코드 냄새
+**유형**:코드 냄새/Cloud Service 호환성
 
 **심각도**:마이너
 
