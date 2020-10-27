@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '828'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 2%
 
 ## 환경 추가 {#adding-environments}
 
-
 1. 환경 **추가를** 클릭하여 환경을 추가합니다. 이 단추는 환경 **화면에서** 액세스할 수 있습니다.
    ![](assets/environments-tab.png)
 
@@ -64,7 +63,7 @@ ht-degree: 2%
    >비프로덕션 파이프라인을 아직 설정하지 않은 경우 *개요* 화면에는 비프로덕션 파이프라인을 만들 수 있는 카드가 표시됩니다.
 
 
-### 보기 환경 {#viewing-environment}
+## 보기 환경 {#viewing-environment}
 
 개요 **페이지의 환경** 카드는 최대 세 개의 환경을 나열합니다.
 
