@@ -1,10 +1,11 @@
 ---
+solution: Experience Manager, Experience Manager Sites
 sub-product: 클라우드 서비스로서의 AEM에서 컨텐츠 작성
 user-guide-title: 클라우드 서비스로서의 AEM에서 컨텐츠 작성
 breadcrumb-title: 작성 안내서
 user-guide-description: 클라우드 서비스로서의 Experience Manager 사이트를 제작 및 관리하는 방법을 이해합니다.
 translation-type: tm+mt
-source-git-commit: d5b92dda6b79407988eea3126f10fe875a0176ea
+source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 97%
