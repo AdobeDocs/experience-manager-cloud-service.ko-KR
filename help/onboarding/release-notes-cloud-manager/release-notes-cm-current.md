@@ -2,7 +2,7 @@
 title: Cloud Service 릴리스 2020.10.0으로 AEM의 Cloud Manager에 대한 릴리스 노트
 description: Cloud Service 릴리스 2020.10.0으로 AEM의 Cloud Manager에 대한 릴리스 노트
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 54%
