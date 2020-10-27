@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '850'
 ht-degree: 2%
 
 ---
@@ -67,9 +67,17 @@ ht-degree: 2%
 
 개요 **페이지의 환경** 카드는 최대 세 개의 환경을 나열합니다.
 
-사용자는 모두 **표시** 단추를 선택하여 **환경** 요약 페이지로 이동하여 전체 환경 목록이 포함된 테이블을 볼 수 있습니다.
+1. 전체 **환경** 목록이 포함된 테이블을 보려면 모두 **** 표시 단추를 선택하여환경요약 페이지로 이동합니다.
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. 환경 **페이지에는** 모든 기존 환경의 목록이 표시됩니다.
+
+   ![](assets/environment-view-2.png)
+
+1. 목록에서 환경 중 하나를 선택하여 환경 세부 사항을 확인합니다.
+
+   ![](assets/environment-view-3.png)
 
 
 ## 환경 업데이트 {#updating-dev-environment}
