@@ -1,11 +1,11 @@
 ---
-title: 릴리스 2020.2.0 릴리스 노트
-description: 릴리스 2020.2.0 릴리스 노트
+title: Cloud Service 릴리스 2020.2.0으로서 AEM의 Cloud Manager에 대한 릴리스 노트
+description: Cloud Service 릴리스 2020.2.0으로서 AEM의 Cloud Manager에 대한 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 77%
+source-wordcount: '199'
+ht-degree: 66%
 
 ---
 
