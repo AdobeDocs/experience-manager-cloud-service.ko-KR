@@ -2,9 +2,9 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.10.0 릴리스의 릴리스 노트
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
-source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
+source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '855'
 ht-degree: 22%
 
 ---
@@ -66,7 +66,7 @@ Content to come
 
 * CIF 클라우드 구성 UI에 /lib 및 /apps/의 구성에 대한 &quot;저장 및 닫기&quot; 단추가 표시되었습니다. 그러나 이러한 UI는 &quot;닫기&quot; 단추만 표시하도록 수정되었습니다.
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * 환경 페이지가 다시 디자인되었습니다.
 
@@ -77,7 +77,7 @@ Content to come
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
 
 * 개요 페이지의 환경 카드는 최대 세 개의 환경을 나열합니다. 사용자는 모두 **표시** 단추를 선택하여 환경 요약 페이지로 이동하여 전체 환경 목록이 포함된 테이블을 볼 수 있습니다.
-
+자세한 내용은 [환경](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 보기를 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cloud-manager}
 
