@@ -1,129 +1,117 @@
 ---
-title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.9.0 릴리스의 릴리스 노트
+title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.10.0 릴리스의 릴리스 노트
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
-source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
+source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 9%
+source-wordcount: '848'
+ht-degree: 22%
 
 ---
 
 
-# 클라우드 서비스 2020.9.0으로서의 [!DNL Adobe Experience Manager] 릴리스 노트 {#release-notes}
+# 클라우드 서비스 2020.10.0으로서의 [!DNL Adobe Experience Manager] 릴리스 노트 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## 릴리스 날짜 {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
+다음 릴리스(2020.11.0)는 11월 26일에 제공됩니다.
 
-## [!DNL Adobe Experience Manager Sites] cloud service {#sites}
+## [!DNL Adobe Experience Manager Sites] cloud service {#sitess}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* 이제 단일 페이지 애플리케이션(SPA) 편집기 JavaScript SDK [가 오픈 소스입니다.](/help/implementing/developing/spa/reference-materials.md)
+<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+
+* **프로젝트 원형 24**:새로운 Adobe 클라이언트 데이터 레이어, AMP에서 사이트를 제공하는 옵션, 프로젝트 CSS/JS를 추가하기 위한 새로운 확장 지점을 포함하여 새로운 AEM 프로젝트를 시작하기 위한 권장 기반이 개선되었습니다.
+
+* **ContextHub 폴더**:ContextHub에서 타깃팅 기능을 제공하는 데 사용할 대상 세그먼트를 쉽게 구성, 검색 및 선택할 수 있는 대상 폴더를 만드는 기능
 
 ## [!DNL Adobe Experience Manager Assets] cloud service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 워터마크 이미지 파일은 자산 마이크로서비스로 생성된 변환에 대해 지원됩니다. 처리 프로필로 구성하고 PNG 파일을 워터마크로 사용할 수 있습니다. See [watermark your assets](/help/assets/watermark-assets.md).
+* **[!DNL Adobe Sensei]강력한 비디오 스마트 태그 지정**:DAM 사용자는 AI 모델을 활용하여 객체 및 특정 태그의 비디오 컨텐츠를 분석함으로써 태그를 추가하는 데 걸리는 시간을 줄이고 다양한 정보를 활용하여 고객에게 최적의 경험을 전달할 수 있습니다. 스마트 [태그 비디오 자산을 참조하십시오](/help/assets/smart-tags-video-assets.md).
 
-* 향상된 기능 [!DNL Dynamic Media]
+* **향상된 브랜드 포털**:다음 새로운 기능 등을 에서 사용할 수 있습니다 [!DNL Brand Portal]. For details, see [[!DNL Brand Portal] release notes](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
-   * 선택적 게시 - 이제 마케팅 팀은 글로벌 전달을 위해 이러한 자산을 게시하지 않아도 홍보 자료를 만들 수 있도록 동기화된 [!DNL Dynamic Media] 스마트 자르기 이미지 및 동적 표현물에 액세스할 [!DNL Dynamic Media] 수 [!DNL Dynamic Media] 있습니다. [!DNL Experience Manager] 게시 [!DNL Dynamic Media] 는 분리되며 이를 위해 개별적으로 발생할 수 있습니다. 선택적 [게시를 참조하십시오](/help/assets/dynamic-media/selective-publishing.md).
-   * 이제 관리자는 프로비저닝 시 받은 [!DNL Dynamic Media] Cloud Service 암호를 재설정할 수 있습니다. 재설정은 데스크톱 앱을 사용하지 않고도 [!DNL Experience Manager] 사용자 인터페이스에서 수행할 수 [!DNL Dynamic Media Classic] 있습니다.
+   * [간소화된 빠른 다운로드를 위한 향상된 다운로드 경험](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) . 관리자는 추가 다운로드 구성을 구성하여 사용자와 기업의 요구 사항에 맞는 경험을 제공할 수 있습니다.
+   * 이제 모든 페이지에서 한 번의 클릭으로 파일, [컬렉션](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)및 공유 링크를 탐색할 수 있습니다.
+   * 사용자는 이제 특정 변환을 [선택하고 다운로드할 수](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 있습니다. 새 변환 다운로드 옵션은 자산 세부 사항 페이지의 변환 패널에서 사용할 수 있습니다.
+   * 게스트 사용자 세션의 제한 시간이 15분으로 모든 동시 사용자에게 더 나은 환경을 제공합니다.
 
-* 다음 개선 사항에 대해 알아보려면 브랜드 포털의 새로운 [기능을 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/introduction/whats-new.html).
+* **[!DNL Adobe Asset Link]버전 2.1**:새 버전의 [Adobe 에셋 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 확장 [!DNL Adobe Photoshop]을 사용할 수 [!DNL Adobe Illustrator]있으며 사용할 수 [!DNL Adobe InDesign] 있습니다. 또한 2020년 10월에 출시된 2021 버전의 최신 [!DNL Adobe Creative Cloud] 애플리케이션과의 호환성을 제공합니다.
 
-   * Adobe Document Cloud 뷰 SDK 통합을 통해 향상된 PDF 미리 보기
-   * 한 번의 클릭으로 다운로드 기능을 사용할 수 있습니다.
-   * 다운로드 경험에 대한 새 관리 구성
+* **[!DNL Assets]WebP 파일 지원**: [!DNL Assets] 이제 Cloud Service에서 WebP 이미지 형식을 지원합니다. WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별할 수 없으며 파일 크기가 훨씬 작습니다. 자산의 파일 크기가 낮아지면 페이지 로드 시간이 단축되고 컨텐츠 작성자가 보다 빠른 웹 경험을 제공할 수 있습니다.
 
 <!--
 ### Bugs Fixed {#bugs-fixed-assets}
 
-TBD: list of Assets aaCS bugs that are fixed.
+Content to come
 -->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* CIF 코어 구성 요소 v1.3.0이 출시되었습니다. 자세한 내용은 [CIF 코어 구성](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 요소를 참조하십시오.
+* 최신 CIF 코어 구성 요소 버전 v1.4.0이 포함된 CIF Venia 참조 사이트 - 2020.10.2가 출시되었습니다. 자세한 내용은 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 를 참조하십시오.
 
-* 제품 및 카테고리 템플릿을 위한 제품/카테고리가 포함된 미리 보기 기능을 사용할 수 있습니다. 이를 통해 AEM의 비즈니스 사용자/마케터는 실제 데이터로 제품/카테고리 템플릿을 볼 수 있습니다.
-
-* 비즈니스 사용자가 제품 SKU/카테고리 ID와 관련된 세부 사항을 볼 수 있도록 제품 및 카테고리에 추가된 속성 페이지입니다.
-
-* 제품 콘솔에 정렬 기능이 추가되어 이름 또는 가격 특성별로 제품/카테고리를 정렬할 수 있습니다.
-
-* 제품 검색 기능이 제품 콘솔에 추가되었습니다.
+* CIF 코어 구성 요소 v1.4.0이 출시되었습니다. 자세한 내용은 [CIF 코어 구성](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 요소를 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-commerce}
 
-* Commerce Cloud 구성이 상속을 고려하지 않았습니다. 구성이 값을 상속하도록 수정되었습니다.
+* 제품 콘솔 및 Pickers의 GraphQL 요청은 HTTP POST을 통해 수행되었습니다. Apollo GraphQL 클라이언트가 GET 요청을 지원하도록 GraphQL 클라이언트 OSGi 구성의 설정을 준수하도록 수정되었습니다.
 
-## Cloud Manager {#cloud-manager}
+* CIF 클라우드 구성 UI에 /lib 및 /apps/의 구성에 대한 &quot;저장 및 닫기&quot; 단추가 표시되었습니다. 그러나 이러한 UI는 &quot;닫기&quot; 단추만 표시하도록 수정되었습니다.
 
-### 릴리스 날짜 {#release-date-cm}
+### Cloud Manager {#cloud-manager}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
+* 환경 페이지가 다시 디자인되었습니다.
 
-### 새로운 기능 {#what-is-new-cloud-manager}
+* 최대 절전 모드인 환경에서 이제 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
 
-* 콘텐츠 감사가 경험 감사로 출시되었습니다.
-* 빌드 프로세스는 세 개의 개별 Maven 명령으로 분리되었습니다.
-* Git 리포지토리를 복제하지 않으면 최대 3회 다시 시도됩니다.
+* 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
 
-### 버그 수정 {#bug-fixes-cm}
+* 환경당 환경 변수의 수가 200개로 증가했습니다.
 
-* 컨텐츠 감사 탭이 게시 도메인 대신 작성자 도메인을 사용하여 기본 URL을 잘못 표시했습니다.
+* 개요 페이지의 환경 카드는 최대 세 개의 환경을 나열합니다. 사용자는 모두 **표시** 단추를 선택하여 환경 요약 페이지로 이동하여 전체 환경 목록이 포함된 테이블을 볼 수 있습니다.
 
-## 클라우드 준비 분석기 {#cloud-readiness-analyzer}
 
-이 섹션을 통해 Cloud Readiness Analyzer 릴리스 버전 1.1.0에 대한 새로운 기능 및 업데이트를 알아보십시오.
+### 버그 수정 {#bug-fixes-cloud-manager}
 
-### 새로운 기능 {#what-is-new-cra}
+* 환경이 완전히 만들어지기 전에 Cloud Manager에서 개발자 콘솔로의 링크가 잘못 활성화되었습니다.
 
-* CRA( [Cloud Ready Analyzer)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) 에는 사용자가 CRA를 **실행하기 위해 클릭하는 명시적** 보고서 생성단추를 표시하는 시작 상태 콘솔이 있습니다.
+* Cloud Manager에서 직접 개발자 콘솔로 연결되는 링크에는 샌드박스 프로그램 환경의 최대 절전 모드 해제/최대 절전 모드 해제 옵션이 표시되지 않습니다.
 
-* 실행 중인 CRA UI에 진행률이 표시됩니다. 분석 중인 항목과 실행 중에 발견된 결과를 표시합니다.
+* 비프로덕션 파이프라인 편집 페이지의 취소 및 저장 단추가 항상 표시되는 것은 아닙니다.
 
-* CRA 보고서에는 요약 및 결과의 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 검색 결과 수를 클릭하면 보고서에서 해당 검색 결과의 위치로 자동으로 스크롤됩니다.
+* 코드 품질 프로세스의 일부 오류로 인해 로그 파일이 올바로 생성되지 않을 수 있습니다.
 
-### 버그 수정 {#cra-bug-fixes}
+* 새 프로그램을 만들 때 제안된 이름은 기존 프로그램 이름의 복제본을 반환하는 경우가 있습니다.
 
-* 특정 경우 새로 고침을 실행한 후 CRA 보고서가 업데이트되지 않았습니다. 이 버전에서 수정되었습니다.
+* 일부 큰 파이프라인 단계 로그를 사용자 인터페이스를 통해 일관되게 다운로드할 수 없습니다.
+
+* 환경 이름의 유효성 검사에 오류가 발생했습니다.
+
+* 환경 페이지는 존재하지 않을 때 게시 및 발송자 세그먼트를 표시하는 경우가 있습니다.
+
+
+## 클라우드 서비스 기반으로서의 Adobe Experience Manager {#cloud-service-foundation}
+
+### 워크플로우 {#workflows}
+
+* 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다.
 
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
-컨텐츠 전송 도구 릴리스 v1.1.10의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
+Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* CTT( [Content Transfer Tool)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 는 Azure Blob 저장소 데이터 저장소를 지원합니다.
+* 로그에 대한 사용자 경험이 개선되었습니다. 추출 및 통합 로그에 타임스탬프가 추가되었습니다. 로그가 비어 있는지를 나타내는 메시지가 추가되었습니다.
 
-* CTT 사용자 인터페이스에는 30초마다 개요 페이지를 다시 로드하는 자동 다시 로드 기능이 있습니다.
+### 버그 수정 {#ctt-bug-fixes}
 
-* 액세스 토큰을 쉽게 검색하기 위해 CTT 사용자 인터페이스에 *단추를* 추가했습니다.
-
-* URL 및 *마이그레이션 세트 이름에 대해* 설명 유효성 *검사 메시지가 추가되었습니다*.
-
-## 코드 리팩터링 도구 {#code-refactoring}
-
-이 섹션을 따라 새로운 기능 및 코드 리팩토링 도구에 대한 업데이트에 대해 알아보십시오.
-
-### 새로운 기능 {#what-is-new-refactoring}
-
-[Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) 는 Adobe Experience Manager에 대해 Cloud Service으로 정의된 프로젝트 구조와 호환되도록 컨텐츠와 코드를 개별 패키지로 구분하여 기존 프로젝트 패키지를 재구성하는 데 사용되는 유틸리티입니다.
-
-* AIO-CLI 플러그인은 Repository Modernizer를 지원하며 사용자는 플러그인을 사용하여 도구를 실행할 수 있습니다.
-
-   Git 리소스 [를 참조하십시오.자세한 내용은 aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 을 참조하십시오.
-
-* Repository Modernizer 유틸리티를 사용하여 기존 프로젝트 패키지를 AEM에 대해 정의된 프로젝트 구조와 호환되는 패키지로 재구성할 수 있습니다.
-
-   Git 리소스 [를 참조하십시오.Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 를 참조하십시오.
-
+* 마이그레이션 세트에 부분적으로 유사한 파일 이름이 있는 경로가 포함된 경우 컨텐츠 전송 도구가 콘텐트 파일을 건너뛰었습니다. 이 문제가 해결되었습니다.
