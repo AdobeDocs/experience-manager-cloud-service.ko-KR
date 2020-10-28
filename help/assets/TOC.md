@@ -5,10 +5,10 @@ breadcrumb-title: Assets 안내서
 user-guide-description: 클라우드 서비스로서의 Experience Manager 자산을 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 81%
+source-wordcount: '429'
+ht-degree: 79%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 81%
    + [자산 추가 및 업로드](add-assets.md)
    + [자산 검색](search-assets.md)
    + [일반적인 자산 관리 작업](manage-digital-assets.md)
-   + [스마트 태그](smart-tags.md)
+   + [이미지를 위한 스마트 태그](smart-tags.md)
+   + [스마트 태그 지정 비디오 에셋](smart-tags-video-assets.md)
    + [자산 구성 방법](organize-assets.md)
    + [aem [!DNL Adobe Stock] 에서 에셋 사용](aem-assets-adobe-stock.md)
    + [컬렉션 관리](manage-collections.md)
@@ -49,7 +50,7 @@ ht-degree: 81%
    + [개발자 문서 및 API 참조](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [이미지 및 비디오 프로파일 사용](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [스마트 태그 구성](smart-tags-configuration.md)
+   + [이미지의 스마트 태그 지정 구성](smart-tags-configuration.md)
    + [다국어 에셋 및 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
    + [자산 HTTP API](mac-api-assets.md)
