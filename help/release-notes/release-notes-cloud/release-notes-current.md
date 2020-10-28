@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.10.0 릴리스의 릴리스 노트
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
-source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
+source-git-commit: 4cbee57ff2490802bb473279a37fe6c539a4f44b
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 22%
+source-wordcount: '869'
+ht-degree: 21%
 
 ---
 
@@ -102,7 +102,7 @@ Content to come
 
 ### 워크플로우 {#workflows}
 
-* 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다.
+* 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다. 워크플로우 [인스턴스 검색을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
