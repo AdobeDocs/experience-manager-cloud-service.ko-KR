@@ -1,10 +1,11 @@
 ---
 title: 커머스 통합 프레임워크를 사용한 AEM 및 타사 커머스 통합
-description: 커머스 통합 프레임워크를 사용한 AEM 및 타사 커머스 통합
+description: 기업 기업은 스토어프런트 파워를 높이기 위해 타사 상거래 솔루션을 추가로 요구할 수 있습니다. 이러한 통합 시나리오에서 CIF(Commerce Integration Framework)를 사용하여 I/O 런타임을 사용하여 타사 상거래 솔루션을 Adobe Experience Manager에 연결할 수 있습니다.
+thumbnail: cif-third-party-architecture.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '368'
 ht-degree: 1%
 
 ---
