@@ -1,11 +1,19 @@
 ---
 title: 다중 스토어 설정
-description: 다중 스토어 설정
+description: 여러 스토어 뷰를 Magento에서 AEM으로 매핑하는 방법을 살펴볼 수 있습니다. 이를 통해 프로젝트는 멀티 테넌트 및 다중 언어 사용 사례를 지원할 수 있습니다.
+sub-product: 상거래
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 3046
+thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
+source-wordcount: '354'
+ht-degree: 1%
 
 ---
 
