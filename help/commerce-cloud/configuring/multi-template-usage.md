@@ -1,10 +1,18 @@
 ---
 title: 여러 카테고리 및 제품 페이지 만들기
-description: 여러 카테고리 및 제품 페이지 만들기
+description: 타깃팅된 마케팅 컨텐츠로 카테고리 랜딩 및 제품 세부 사항 페이지를 향상시키는 방법을 알아봅니다.
+sub-product: 상거래
+version: cloud-service
+doc-type: feature-video
+activity: use
+audience: marketer
+feature: Commerce Integration Framework
+kt: 3455
+thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: d79ac17a2282f2c08b69fae24e672bf17ddf8dc4
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '102'
 ht-degree: 4%
 
 ---
