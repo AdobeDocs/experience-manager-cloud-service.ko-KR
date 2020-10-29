@@ -2,10 +2,10 @@
 title: Cloud Service 릴리스 2020.10.0으로 AEM의 Cloud Manager에 대한 릴리스 노트
 description: Cloud Service 릴리스 2020.10.0으로 AEM의 Cloud Manager에 대한 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: d992646fd89a4e502d74533f5fa2bbe994a9ab97
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 54%
+source-wordcount: '300'
+ht-degree: 48%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 54%
 
 * 최대 절전 모드인 환경에서 이제 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
 
-* 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
+* 이제 클라우드 관리자 빌드 컨테이너는 Java 8 또는 Java 11을 사용하여 프로젝트를 컴파일할 수 있습니다. Java 11에 대한 지원은 Maven 툴체인 시스템에서 제공합니다.
 
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
 
