@@ -1,10 +1,10 @@
 ---
 title: 캐싱 및 성능
-description: 캐싱 및 성능
+description: GraphQL 및 컨텐츠 캐싱을 사용하여 상거래 구현 성능을 최적화하는 데 사용할 수 있는 다양한 구성에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '848'
 ht-degree: 2%
 
 ---
@@ -42,17 +42,17 @@ GraphQl 캐싱 기능을 사용하는 것이 권장되는 다른 예제 시나�
 venia/components/structure/navigation:true:10:600
 ```
 
-Venia [Reference store를](https://github.com/adobe/aem-cif-guides-venia) 사용하는 경우 CIF 탐색 구성 요소의 이름 `venia/components/structure/navigation`이 **아닌** 구성 요소 프록시 이름 사용을`core/cif/components/structure/navigation/v1/navigation`참고하십시오.
+Venia [Reference store를](https://github.com/adobe/aem-cif-guides-venia) 사용하는 경우 구성 요소 프록시 이름 `venia/components/structure/navigation`을 사용하고 CIF 탐색 구성 요소( **)의 이름이** 아닙니다`core/cif/components/structure/navigation/v1/navigation`.
 
-다른 구성 요소에 대한 캐싱은 프로젝트를 기준으로 정의되어야 하며, 일반적으로 Dispatcher 수준에서 구성된 캐싱과 함께 정의됩니다. 이러한 캐시의 활성 무효화가 없으므로 캐싱 기간을 신중하게 설정해야 합니다. 가능한 모든 프로젝트 및 사용 사례와 일치하는 &quot;모든 크기에 맞는 단일&quot; 값이 없습니다. 프로젝트의 요구 사항에 가장 적합한 프로젝트 수준에서 캐싱 전략을 정의해야 합니다.
+다른 구성 요소에 대한 캐싱은 일반적으로 발송자 수준에서 구성된 캐싱과 함께 프로젝트 단위로 정의해야 합니다. 이러한 캐시의 활성 무효화가 없으므로 캐싱 기간을 신중하게 설정해야 합니다. 가능한 모든 프로젝트 및 사용 사례와 일치하는 &quot;모든 크기에 맞는 단일&quot; 값이 없습니다. 프로젝트의 요구 사항에 가장 적합한 프로젝트 수준에서 캐싱 전략을 정의해야 합니다.
 
-## Dispatcher 캐싱 {#dispatcher}
+## 발송자 캐싱 {#dispatcher}
 
-AEM [Dispatcher](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html) 에서 AEM 페이지나 조각을 캐싱하는 것은 AEM 프로젝트에 가장 좋은 방법입니다. 일반적으로 AEM에서 변경된 컨텐츠가 Dispatcher에서 올바르게 업데이트되도록 하는 무효화 기술에 의존합니다. AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
+AEM Dispatcher에서 [AEM 페이지 또는](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html) 조각을 캐싱하는 것은 모든 AEM 프로젝트에 가장 좋은 방법입니다. 일반적으로 AEM에서 변경된 컨텐츠가 디스패처에서 올바르게 업데이트되도록 하는 무효화 기술에 의존합니다. 이는 AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
 
 순수 AEM 관리 컨텐츠 CIF 외에도 페이지는 일반적으로 GraphQL을 통해 Magento에서 동적으로 가져오는 상거래 데이터를 표시할 수 있습니다. 페이지 구조 자체는 변경되지 않지만 일부 제품 데이터(이름, 가격 등)가 Magento에서 변경되는 경우 상거래 컨텐츠가 변경될 수 있습니다.
 
-AEM 디스패처의 한정된 시간 동안 CIF 페이지를 캐싱할 수 있도록 하기 위해 AEM Dispatcher에서 CIF 페이지를 캐싱할 때 [시간 기반 캐시 무효화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (TTL 기반 캐싱이라고도 함)를 사용하는 것이 좋습니다. 이 기능은 추가 [ACS AEM Commons 패키지를 사용하여 AEM에서 구성할 수](https://adobe-consulting-services.github.io/acs-aem-commons/) 있습니다.
+AEM 디스패처의 한정된 시간 동안 CIF 페이지를 캐싱할 수 있도록 하기 위해, AEM 디스패처의 CIF 페이지를 캐싱할 때 [시간 기반 캐시 무효화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (TTL 기반 캐싱이라고도 함)를 사용하는 것이 좋습니다. 이 기능은 추가 [ACS AEM Commons 패키지를 사용하여 AEM에서 구성할 수](https://adobe-consulting-services.github.io/acs-aem-commons/) 있습니다.
 
 TTL 기반 캐싱을 사용하는 개발자는 일반적으로 선택한 AEM 페이지에 대해 하나 이상의 캐싱 기간을 정의합니다. 이렇게 하면 CIF 페이지가 구성된 기간까지 AEM 디스패처에서만 캐시되고 컨텐츠가 자주 업데이트됩니다.
 
