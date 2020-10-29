@@ -1,16 +1,17 @@
 ---
 title: CIF 핵심 구성 요소 사용자 정의
 description: AEM CIF 핵심 구성 요소를 사용자 지정하는 방법을 알아봅니다. 이 자습서에서는 비즈니스 특정 요구 사항을 충족하기 위해 CIF 핵심 구성 요소를 안전하게 확장하는 방법을 설명합니다. GraphQL 쿼리를 확장하여 사용자 지정 속성을 반환하고 CIF 코어 구성 요소에 새 속성을 표시하는 방법을 알아봅니다.
-sub-product: 커머스
-topics: development
+sub-product: 상거래
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 4279
-thumbnail: 4279-customize-cif.jpg
+thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 1%
