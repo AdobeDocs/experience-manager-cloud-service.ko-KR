@@ -2,10 +2,10 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.10.0 릴리스의 릴리스 노트
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
-source-git-commit: 95a5c9ad098a3670221847b9c45cdf6c6e22192f
+source-git-commit: a544acab6f79fa60990bfc3915a5a664befb8b09
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 21%
+source-wordcount: '882'
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
 다음 릴리스(2020.11.0)는 2020년 12월 1일에 제공됩니다.
 
-## [!DNL Adobe Experience Manager Sites] cloud service {#sitess}
+## [!DNL Adobe Experience Manager Sites] cloud service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
@@ -72,7 +72,7 @@ Content to come
 
 * 최대 절전 모드인 환경에서 이제 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
 
-* 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
+* 이제 클라우드 관리자 빌드 컨테이너는 Java 8 또는 Java 11을 사용하여 프로젝트를 컴파일할 수 있습니다. Java 11에 대한 지원은 Maven 툴체인 시스템에서 제공합니다.
 
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
 
