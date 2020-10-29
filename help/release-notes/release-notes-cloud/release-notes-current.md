@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.10.0 릴리스의 릴리스 노트
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
-source-git-commit: 4cbee57ff2490802bb473279a37fe6c539a4f44b
+source-git-commit: 95a5c9ad098a3670221847b9c45cdf6c6e22192f
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 21%
@@ -17,7 +17,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 ## 릴리스 날짜 {#release-date}
 
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
-다음 릴리스(2020.11.0)는 11월 26일에 제공됩니다.
+다음 릴리스(2020.11.0)는 2020년 12월 1일에 제공됩니다.
 
 ## [!DNL Adobe Experience Manager Sites] cloud service {#sitess}
 
