@@ -1,11 +1,17 @@
 ---
 title: Cloud Service으로 AEM Commerce 시작하기
-description: Cloud Service으로 AEM Commerce 시작하기
+description: 상거래 기반의 AEM 프로젝트를 실행 중인 AEM에 클라우드 서비스 환경으로 배포하는 방법을 살펴볼 수 있습니다. Adobe 클라우드 관리자 및 CI/CD 파이프라인의 기능을 사용하여 Venia 참조 스토어를 실행 중인 환경에 구축할 수 있습니다.
+topics: Commerce
+feature: Commerce Integration Framework, Cloud Manager
+version: cloud-service
+doc-type: tutorial
+kt: 4947
+thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 4%
+source-wordcount: '600'
+ht-degree: 3%
 
 ---
 
