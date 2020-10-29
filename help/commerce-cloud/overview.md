@@ -1,16 +1,17 @@
 ---
 title: Cloud Service으로 AEM Commerce 소개
-description: AEM Commerce에서 Cloud Service의 새로운 기능
+description: Cloud Service의 Experience Manager 커머스는 Magento 및 기타 타사 상거래 솔루션에서 Experience Cloud과 상거래 서비스를 통합하고 확장하는 Adobe의 권장 패턴인 CIF(Commerce Integration Framework)로 구성되어 있습니다.
+thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: c5694cf8651cf8ba5331c730fa1b1180310dd35a
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1357'
 ht-degree: 2%
 
 ---
 
 
-# Cloud Service으로 AEM Commerce 소개 {#commerce-intro}
+# Introducing AEM Commerce as a Cloud Service {#commerce-intro}
 
 Cloud Service의 Experience Manager 커머스는 Magento 및 기타 타사 상거래 솔루션에서 Experience Cloud과 상거래 서비스를 통합하고 확장하는 Adobe의 권장 패턴인 CIF(Commerce Integration Framework)로 구성되어 있습니다. 이를 통해 Adobe 고객은 첨단 기술을 기반으로 매력적이고 개인화된 옴니채널 쇼핑 경험을 제공할 수 있습니다.
 
@@ -46,7 +47,7 @@ AEM CIF 핵심 구성 요소는 Magento GraphQL 지원을 통해 서버측 및 �
 
 기본 구성 요소가 제공되며 제품 세부 사항, 제품 목록, 탐색, 검색 등과 같은 상거래 구현 간에 공통으로 제공됩니다. 그대로 사용하거나 확장할 수 있습니다.
 
-AEM [CIF 핵심 구성](https://github.com/adobe/aem-core-cif-components) 요소는 [AEM Sites 핵심 구성 요소와](https://github.com/adobe/aem-core-wcm-components) 같이 작동하지만 상거래 특정 사용 사례에만 사용됩니다.
+AEM [CIF 핵심 구성](https://github.com/adobe/aem-core-cif-components) 요소는 [AEM Sites 핵심 구성 요소와](https://github.com/adobe/aem-core-wcm-components) 같이 작동하지만 상거래 특정 사용 사례에 사용됩니다.
 
 이러한 구성 요소의 주요 이점은 다음과 같습니다.
 
@@ -54,7 +55,7 @@ AEM [CIF 핵심 구성](https://github.com/adobe/aem-core-cif-components) 요소
 * 이 변수들은 있는 그대로 사용하거나 매우 최소한의 수정으로 사용할 수 있습니다.
 * GraphQL API 또는 REST API를 통해 Magento과 연결하는 모범 사례를 제공합니다
 
-제품 티저 및 제품 회전판과 같은 구성 요소는 AEM Author이 AEM에서 경험 페이지를 만들고 마케팅과 상거래 컨텐츠를 결합할 수 있도록 합니다. 이러한 구성 요소는 AEM에서 만든 컨텐츠 페이지로 쉽게 드래그하여 놓을 수 있으며 Cloud Service의 제품 또는 카테고리 선택기와 같은 CIF 작성 도구를 사용하여 특정 제품 또는 카테고리에 연결할 수 있습니다.
+제품 티저 및 제품 회전판과 같은 구성 요소는 AEM 작성자가 마케팅 및 상거래 컨텐츠를 결합하는 AEM에서 경험 페이지를 만들 수 있도록 해줍니다. 이러한 구성 요소는 AEM에서 만든 컨텐츠 페이지로 쉽게 드래그하여 놓을 수 있으며 Cloud Service의 제품 또는 카테고리 선택기와 같은 CIF 작성 도구를 사용하여 특정 제품 또는 카테고리에 연결할 수 있습니다.
 
 모든 구성 요소는 [GitHub에서 오픈 소스로 제공됩니다](https://github.com/adobe/aem-core-cif-components). 이는 진행 중인 변경 사항에 대한 완전한 투명도를 보여주며 최신 버전을 매우 쉽게 얻을 수 있도록 해줍니다. 또한 통합될 수 있는 개선 및 버그 수정을 위한 풀 요청을 제공할 수 있습니다.
 
@@ -74,9 +75,9 @@ AEM Venia Storefront는 AEM이 유리를 소유하고 있고 Magento이 헤드�
 
 #### 계정 관리 {#account-management}
 
-계정 관리는 Magento에 의해 처리되며 참조 스토어프런트는 클라이언트측 반응 기반 구성 요소를 활용하여 AEM이 다음 기능에 대한 경험을 렌더링할 수 있도록 합니다. 계정 만들기, 로그인 및 암호 분실
+계정 관리는 Magento에 의해 처리되며 참조 스토어프런트는 클라이언트측 반응 기반 구성 요소를 활용하여 AEM이 다음 기능에 대한 경험을 렌더링할 수 있도록 합니다.계정 만들기, 로그인 및 암호 분실
 
-AEM Venia Storefront 프로젝트는 오픈 소스이며 자세한 내용은 [AEM Storefront를 참조하십시오](https://github.com/adobe/aem-cif-guides-venia).
+AEM Venia Storefront 프로젝트는 오픈 소스이며 자세한 내용은 [AEM Venia Storefront를 참조하십시오](https://github.com/adobe/aem-cif-guides-venia).
 
 ### AEM 프로젝트 전형 {#aem-project-archtype}
 
