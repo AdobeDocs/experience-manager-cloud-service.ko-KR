@@ -1,16 +1,17 @@
 ---
 title: AEM CIF 핵심 구성 요소 스타일 지정
 description: AEM CIF 핵심 구성 요소의 스타일을 지정하는 방법을 알아봅니다. 이 자습서에서는 Client-Side Libraries 또는 clientlibs를 사용하여 Adobe Experience Manager(AEM) 커머스 구현을 위한 CSS 및 Javascript를 배포 및 관리하는 방법에 대해 설명합니다. 이 자습서에서는 ui.frontend 모듈과 웹 팩 프로젝트를 엔드 투 엔드 빌드 프로세스에 통합하는 방법도 다룹니다.
-sub-product: 커머스
-topics: front-end-development
+sub-product: 상거래
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 2%
