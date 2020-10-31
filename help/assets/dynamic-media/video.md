@@ -2,7 +2,7 @@
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '10056'
 ht-degree: 1%
@@ -689,7 +689,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 클릭하고 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;를 클릭합니다.
 1. 기본값을 **[!UICONTROL 클릭합니다]**. (선택 상자의 왼쪽에 &quot;기본값&quot;을 표시하지 마십시오.)
-1. 기본 **** 페이지에서 **[!UICONTROL 비디오]**&#x200B;왼쪽에 있는 상자를 선택한 다음 **[편집을 클릭합니다]**.
+1. 기본 **** 페이지에서 **[!UICONTROL 비디오]**&#x200B;왼쪽에 있는 상자를 선택한 다음 **[!UICONTROL 편집을 클릭합니다]**.
 1. 메타데이터 스키마 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 클릭합니다.
 1. YouTube 게시 머리글에서 **[!UICONTROL YouTube 카테고리를 클릭합니다]**.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭 아래에서 다음을 수행합니다.
