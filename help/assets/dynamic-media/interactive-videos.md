@@ -2,7 +2,7 @@
 title: 대화형 비디오
 description: Dynamic Media에서 인터랙티브한 비디오 및 쇼퍼블 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 0%
@@ -92,10 +92,9 @@ AEM Assets [웨비나에서](https://adobecustomersuccess.adobeconnect.com/p1yxz
 ## (선택 사항) Quickview 변수 확인 {#optional-identifying-quickview-variables}
 
 >[!NOTE]
->
->이 작업은 다음과 같은 경우에만 필요합니다.
->* Quickviews로 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
->* AEM 구현에서는 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* . <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+이 작업은 다음과 같은 경우에만 필요합니다.
+* Quickviews로 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
+* AEM 구현에서는 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* . <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
 AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -120,7 +119,7 @@ AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다
 
 * Google Chrome에서 나가는 모든 HTTP 요청을 보려면 **F12** (Windows) 또는 **Command+Options+I** (Mac)를 눌러 개발자 도구 패널을 연 다음 **네트워크** 탭을 클릭합니다.
 
-* Firefox에서는 **F12** (Windows) 또는 **Command+Option+I** (Mac)를 눌러 Firebug 플러그인을 활성화하고 **[Net]** 탭을 사용하거나 내장된 검사기 도구 및 네트워크 탭을 사용할 수 있습니다.
+* Firefox에서는 **F12** (Windows) 또는 **Command+Option+I** (Mac)를 눌러 Firebug 플러그인을 활성화하고 **[!UICONTROL Net]** 탭을 사용하거나 내장된 검사기 도구 및 네트워크 탭을 사용할 수 있습니다.
 
 * Internet Explorer에서 **F12를 눌러 디버거 도구를 활성화합니다**.
 
@@ -256,12 +255,10 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
 경험 [조각을 참조하십시오](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
 >[!NOTE]
->
->인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 
 페이지의 오른쪽 위 모서리 근처에 있는 실행 취소 및 재실행 옵션은 현재 생성/편집 세션 동안 지원됩니다.
 
@@ -482,8 +479,7 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
    완료되면 **[!UICONTROL 저장을 누릅니다]**.
 
    >[!NOTE]
-   >
-   >인터랙티브한 비디오를 저장하면 관련 `.vtt` 파일이 자동으로 저장됩니다. 이 `.vtt` 파일은 자산의 루트에 있는 `_VTT` 폴더에 **[!UICONTROL 저장됩니다]**. 인터랙티브한 비디오가 웹 사이트에서 올바르게 재생되려면 파일과 폴더가 필요합니다. 따라서 폴더 또는 해당 컨텐츠를 이동, 편집 또는 삭제하지 마십시오 `_VTT` .
+   인터랙티브한 비디오를 저장하면 관련 `.vtt` 파일이 자동으로 저장됩니다. 이 `.vtt` 파일은 자산의 루트에 있는 `_VTT` 폴더에 **[!UICONTROL 저장됩니다]**. 인터랙티브한 비디오가 웹 사이트에서 제대로 재생되려면 파일과 폴더가 필요합니다. 따라서 폴더 또는 해당 컨텐츠를 이동, 편집 또는 삭제하지 마십시오 `_VTT` .
 
 1. 인터랙티브한 비디오를 게시합니다. 게시를 사용하면 웹 사이트 경험에 최종적으로 복사하고 붙여넣을 내장 코드 또는 URL이 만들어집니다.
 
@@ -492,8 +488,7 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
    자산 [게시를 참조하십시오](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   >
-   >Quickview를 사용하여 쇼퍼블 비디오를 게시하려면 상거래 영역에서 각 비디오의 관련 이미지 에셋을 별도로 게시해야 합니다.
+   Quickview를 사용하여 쇼퍼블 비디오를 게시하려면 상거래 영역에서 각 비디오의 관련 이미지 에셋을 별도로 게시해야 합니다.
 
    타임라인 세그먼트를 추가하고 대화형 비디오를 게시하면 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. 웹 사이트 [와 대화형 비디오 통합을 참조하십시오.](#integrating-an-interactive-video-with-your-website)
 
@@ -518,9 +513,8 @@ Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 
 복사한 포함 코드는 응답형 환경을 위해 설정되므로 정적 비디오가 이전에 점유한 영역에 자동으로 맞춰집니다.
 
 >[!NOTE]
->
->따라서 하이퍼링크된 웹 페이지로만 인터랙티브한 기능을 추가하면 됩니다.
->그러나 Quickview를 트리거하는 대화형 기능을 추가한 경우 대화형 비디오에 인접한 축소판은 표시 용도로만 사용됩니다.기존 Quickview와 아직 통합되지 않았습니다. 이러한 경우 이제 대화형 비디오를 웹 사이트의 기존 Quickviews와 통합해야 합니다.
+따라서 하이퍼링크된 웹 페이지로만 인터랙티브한 기능을 추가하면 됩니다.
+그러나 Quickview를 트리거하는 대화형 기능을 추가한 경우 대화형 비디오에 인접한 축소판은 표시 용도로만 사용됩니다.기존 Quickview와 아직 통합되지 않았습니다. 이러한 경우 이제 대화형 비디오를 웹 사이트의 기존 Quickviews와 통합해야 합니다.
 
 **예**
 
@@ -562,8 +556,7 @@ Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 
 ## 기존 Quickview와 대화형 비디오 통합 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->이 작업은 사용자가 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
+이 작업은 사용자가 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 웹 사이트에서 사용되는 기존 Quickview 구현과 대화형 비디오를 통합하는 것입니다. 모든 경우에 작동하는 통합에 대한 해결책은 없습니다. 모든 Quickview 구현은 고유합니다. 따라서 프런트 엔드 IT 담당자의 지원을 필요로 하는 특정 접근 방식이 필요합니다.
 
