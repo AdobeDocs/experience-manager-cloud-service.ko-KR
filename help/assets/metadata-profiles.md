@@ -3,7 +3,7 @@ title: 메타데이터 프로필
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 1%
@@ -89,7 +89,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. 왼쪽 레일에서 **[!UICONTROL 자산을]** 누른 다음 메타데이터 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 누르거나 클릭하여 선택한 다음 속성을 탭하거나 **클릭합니다**.
-1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 저장을 **[누릅니다]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 저장을 **[!UICONTROL 누릅니다]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
 ### 전역 메타데이터 프로필 적용 {#applying-a-metadata-profile-globally}
 
