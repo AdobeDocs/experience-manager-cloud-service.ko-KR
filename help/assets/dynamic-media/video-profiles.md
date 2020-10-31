@@ -2,9 +2,9 @@
 title: Dynamic Media 비디오 프로필
 description: Dynamic Media는 사전 정의된 응용 비디오 인코딩 프로필을 이미 갖추고 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하기 위해 최적화되어 있습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3680'
 ht-degree: 3%
 
 ---
@@ -424,6 +424,6 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 ### 속성을 통해 폴더에서 비디오 프로필 제거 {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. AEM 로고를 누르거나 클릭하고 **[!UICONTROL 자산]** 으로 이동한 다음 비디오 프로필을 제거할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 누르거나 클릭하여 선택한 다음 속성을 탭하거나 **[클릭합니다]**.
+1. 폴더에서 확인 표시를 누르거나 클릭하여 선택한 다음 **[!UICONTROL 속성을 누릅니다]**.
 1. [ **[!UICONTROL 비디오 프로필]** ] 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]** 을 선택한 다음 **[!UICONTROL 저장 및]**&#x200B;닫기를 클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
