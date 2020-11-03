@@ -3,9 +3,9 @@ title: 지원되는 파일 포맷 및 MIME 유형
 description: Experience Manager 자산에서 Cloud Service으로 지원하는 파일 형식 및 MIME 형식입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '812'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,6 @@ Adobe Experience Manager Cloud Service은 포맷과 상관없이 모든 바이�
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
 ## 이미지 형식 [!DNL Dynamic Media] {#image-support-dynamic-media}
