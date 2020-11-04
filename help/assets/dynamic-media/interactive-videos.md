@@ -2,9 +2,9 @@
 title: 대화형 비디오
 description: Dynamic Media에서 인터랙티브한 비디오 및 쇼퍼블 비디오를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6016'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ AEM Assets [웨비나에서](https://adobecustomersuccess.adobeconnect.com/p1yxz
 1. **AEM에서 웹 사이트 또는 웹 사이트에 대화형 비디오 추가** AEM Sites, AEM eCommerce 또는 둘 다를 사용하는 경우, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 비디오를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 포함 코드 또는 URL을 사용하여 인터랙티브한 비디오를 웹 사이트 경험과 통합할 수 있습니다. 웹 사이트 [와 대화형 비디오 통합을 참조하십시오](#integrating-an-interactive-video-with-your-website).
 타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. 기존 [Quickview와 대화형 비디오 통합을 참조하십시오](#integrating-an-interactive-video-with-an-existing-quickview).
-   [](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## (선택 사항) Quickview 변수 확인 {#optional-identifying-quickview-variables}
 
