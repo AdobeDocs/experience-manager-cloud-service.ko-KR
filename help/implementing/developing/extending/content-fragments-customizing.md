@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 사용자 지정 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 translation-type: tm+mt
-source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
+source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1818'
 ht-degree: 3%
 
 ---
@@ -168,7 +168,7 @@ CFM(Content Fragment Management)은 다음과 같은 AEM Assets의 일부입니�
 
 서버측 API를 사용하여 컨텐츠 조각에 액세스할 수 있습니다.see:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -178,7 +178,7 @@ CFM(Content Fragment Management)은 다음과 같은 AEM Assets의 일부입니�
 
 다음 세 가지 인터페이스는 시작 지점으로 사용할 수 있습니다.
 
-* **컨텐츠 조각** ([컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **컨텐츠 조각** ([컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    이 인터페이스를 사용하면 추상적인 방식으로 컨텐츠 조각을 사용하여 작업할 수 있습니다.
 
@@ -204,7 +204,7 @@ CFM(Content Fragment Management)은 다음과 같은 AEM Assets의 일부입니�
 
    조각의 주요 요소를 나타내는 인터페이스는 다음과 같습니다.
 
-   * **콘텐츠 요소** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **콘텐츠 요소** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 기본 데이터 가져오기(이름, 제목, 설명)
       * 콘텐츠 가져오기/설정
@@ -216,7 +216,7 @@ CFM(Content Fragment Management)은 다음과 같은 AEM Assets의 일부입니�
          * 변형 제거( [주의해야 합니다](#caveats))
          * 변형 데이터 액세스(참조 `ContentVariation`)
       * 변형에 대한 해결 단축키(지정한 변형을 요소에 사용할 수 없는 경우 구현 전용 폴백 논리 추가 적용)
-   * **컨텐츠 변형** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **컨텐츠 변형** ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 기본 데이터 가져오기(이름, 제목, 설명)
       * 콘텐츠 가져오기/설정
@@ -246,9 +246,9 @@ CFM(Content Fragment Management)은 다음과 같은 AEM Assets의 일부입니�
 
 * `ContentElement` 을(를) 다음과 같이 적용할 수 있습니다.
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 요소의 구조적 정보에 액세스하는 경우.
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 요소의 구조적 정보에 액세스하는 경우.
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` 을(를) 다음과 같이 적용할 수 있습니다.
 
@@ -288,7 +288,7 @@ CFM(Content Fragment Management)은 다음과 같은 AEM Assets의 일부입니�
 
 여러 뷰(= HTML 페이지)에 걸쳐 있는 컨텐츠 조각을 편집하는 것은 원자적입니다. 이러한 원자 다중 보기 편집 기능은 일반적인 AEM 개념이 아니므로 컨텐츠 조각은 *편집 세션이라고 하는 것을 사용합니다*.
 
-사용자가 편집기에서 컨텐츠 조각을 열면 편집 세션이 시작됩니다. 사용자가 [저장] 또는 [ **취소]를 선택하여 편집기를 떠나면 편집 세션이** 끝납니다 ****.
+사용자가 편집기에서 컨텐츠 조각을 열면 편집 세션이 시작됩니다. 사용자가 [저장]이나 [ **취소]를 선택하여 편집기를 떠나면 편집 세션이** 끝납니다 ****.
 
 기술적으로 모든 편집 작업은 다른 AEM 편집 작업처럼 *라이브* 컨텐츠에서 수행됩니다. 편집 세션이 시작되면 편집되지 않은 현재 상태의 버전이 만들어집니다. 사용자가 편집을 취소하면 해당 버전이 복원됩니다. 사용자가 [ **저장**]을 클릭하는 *경우 모든 편집 작업이* 라이브컨텐츠에서 실행되므로 모든 변경 사항이 이미 유지됩니다. 또한 **저장을** 클릭하면 일부 백그라운드 처리가 트리거됩니다(전체 텍스트 검색 정보 만들기 및/또는 혼합 미디어 자산 처리).
 
