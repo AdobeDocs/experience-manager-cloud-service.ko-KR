@@ -3,9 +3,9 @@ title: 지원되는 파일 포맷 및 MIME 유형
 description: Experience Manager 자산에서 Cloud Service으로 지원하는 파일 형식 및 MIME 형식입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
+source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '828'
 ht-degree: 7%
 
 ---
@@ -61,6 +61,9 @@ Adobe Experience Manager Cloud Service은 포맷과 상관없이 모든 바이�
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| WebP | ✓ | ✓ | - | - |
+
+* WebP 지원은 현재 손실 압축을 지원하고 0-100개 값을 지원하여 이미지 품질을 변경합니다.
 
 ## 이미지 형식 [!DNL Dynamic Media] {#image-support-dynamic-media}
 
