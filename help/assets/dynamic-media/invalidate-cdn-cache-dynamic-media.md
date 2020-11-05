@@ -2,9 +2,9 @@
 title: 다이내믹 미디어를 통해 CDN 캐시 무효화
 description: CDN(Content Delivery Network) 캐시 컨텐츠를 무효화할 수 있으므로 캐시 만료가 기다리는 대신 다이내믹 미디어에서 제공하는 자산을 신속하게 업데이트할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
+source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1300'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->다음 단계는 AEM의 Dynamic Media에만 Cloud Service으로 적용됩니다. 또한 이 기능을 사용하려면 AEM Dynamic Media와 번들로 제공되는 기본 CDN을 사용해야 합니다.기타 모든 사용자 지정 CDN은 지원되지 않습니다. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>이 기능을 사용하려면 AEM Dynamic Media와 번들로 제공되는 기본 CDN을 사용해야 합니다.기타 모든 사용자 지정 CDN은 지원되지 않습니다. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 Dynamic [Media의 캐싱 개요를 참조하십시오](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
@@ -37,7 +37,9 @@ Dynamic [Media의 캐싱 개요를 참조하십시오](https://helpx.adobe.com/e
 
    ![CDN 무효화 템플릿 - 만들기](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. CDN **[!UICONTROL 무효화 템플릿]** 페이지의 오른쪽 맨 위에서 **[!UICONTROL 저장을]**&#x200B;누른 다음 **[!UICONTROL 확인을누릅니다.]**<br>   *2부:CDN 무효화 옵션 설정*
+1. CDN **[!UICONTROL 무효화 템플릿]** 페이지의 오른쪽 맨 위에서 **[!UICONTROL 저장을]**&#x200B;누른 다음 **[!UICONTROL 확인을누릅니다.]**<br>
+
+   *2부:CDN 무효화 옵션 설정*
    <br>
 
 1. AEM에서 Cloud Service으로 **[!UICONTROL 도구 > 자산 > CDN 무효화를 누릅니다.]**
