@@ -2,9 +2,9 @@
 title: 도메인 이름 상태 확인
 description: 도메인 이름 상태 확인
 translation-type: tm+mt
-source-git-commit: 91b06bcd96fe8a37c3fb20ef90e1684f6d19183f
+source-git-commit: 5cd22d8af20bb947e4cdab448cf8f20c6596bb2e
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,37 @@ ht-degree: 0%
 | CNAME | 사용자 지정 도메인 이름이 Target을 가리킵니다. |
 |--- |--- |
 | www.customdomain.com | cdn.adobeaemcloud.com |
+
+### 에이펙스 레코드 {#apex-record}
+
+Apex 도메인은 example.com과 같은 하위 도메인을 포함하지 않는 사용자 지정 도메인입니다. Apex 도메인은 DNS 공급자를 통해 `A` , `ALIAS` 또는 `ANAME` 레코드로 구성됩니다. Apex 도메인은 특정 IP 주소를 가리켜야 합니다.
+
+도메인 공급자를 통해 다음 모든 A 레코드를 도메인의 DNS 설정에 추가합니다.
+
+* `A RECORD`
+
+* `A record for domain @ pointing to IP 151.101.3.10`
+
+* `A record for domain @ pointing to IP 151.101.67.10`
+
+* `A record for domain @ pointing to IP 151.101.131.10`
+
+* `A record for domain @ pointing to IP 151.101.195.10`
+
+## DNS 레코드 상태 확인 {#check-status-dns-record}
+
+[도메인 설정] 페이지의 [환경] 테이블에서 DNS 레코드의 상태 아이콘을 클릭하여 도메인 이름이 Cloud Service 웹 사이트로 올바르게 확인되는지 여부를 확인할 수 있습니다. 클라우드 관리자가 도메인 이름에 대한 DNS 조회를 수행하고 다음 상태 메시지 중 하나를 표시합니다.
+
+>[!NOTE]
+>사용자 지정 도메인 이름을 확인하고 배포하면 클라우드 관리자가 DNS 조회를 자동으로 트리거합니다. 이후 시도의 경우 상태 옆에 있는 **해결 다시** 아이콘을 적극적으로 선택해야 합니다. 이미지 삽입
+
+* **사용자 지정 도메인 이름을 확인하고 배포하기 전에는 DNS 상태가 검색되지**&#x200B;않습니다. 이 상태는 사용자 지정 도메인 이름이 삭제 진행 중일 때도 관찰됩니다.
+
+* **DNS가 잘못**&#x200B;해결됨 이 값은 DNS 레코드 구성이 아직 확인/가리킬 수 없거나 오류가 있음을 나타냅니다. Adobe 담당자가 자동으로 통보를 받게 됩니다.
+
+   >[!NOTE]
+   >해당 지침에 따라 `CNAME` 또는 `A-record` 를 구성해야 합니다. DNS 설정 구성 INSERT LINK로 이동하여 이 항목에 대한 자세한 내용을 살펴보십시오. 준비가 되면 상태 옆에 있는 &#39;다시 해결&#39; 아이콘을 선택해야 합니다.
+
+* **DNS 확인 진행**&#x200B;중입니다. 이 상태는 일반적으로 상태 옆에 있는 &#39;다시 해결&#39; 아이콘을 선택하면 표시됩니다.
+
+* **DNS가 올바르게 해결됨** DNS 설정이 올바르게 구성되어 있습니다. 사이트에서 방문자를 제공하고 있습니다.
