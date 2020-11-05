@@ -2,7 +2,7 @@
 title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 온보딩
 description: 클라우드 서비스로서의 Adobe Experience Manager 온보딩 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 94%
@@ -30,7 +30,7 @@ ht-degree: 94%
 |---|---|
 | [클라우드 서비스로서의 Experience Manager 홈](/help/landing/home.md) | 클라우드 서비스로서의 Experience Manager 설명서에 대한 개요를 살펴보려면 여기에서 시작하십시오. |
 | [개요](/help/overview/home.md) | 이 안내서에서는 클라우드 서비스로서의 Experience Manager 소개, 용어 등 개요를 제공합니다. |
-| [릴리스 노트](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 클라우드 서비스로서의 Experience Manager의 최신 릴리스에 대한 중요 정보를 제공합니다. |
+| [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 클라우드 서비스로서의 Experience Manager의 최신 릴리스에 대한 중요 정보를 제공합니다. |
 | [핵심 개념](/help/core-concepts/home.md) | 이 안내서에서는 이 새로운 서비스의 아키텍처를 포함하여 클라우드 서비스로서의 Experience Manager의 핵심 개념을 소개합니다. |
 | [보안 사용 안내서](/help/security/home.md) | 클라우드 서비스로서의 Experience Manager에 대한 중요 보안 항목에 대해 알아봅니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | 클라우드 서비스로서의 Experience Manager 사이트를 제작 및 관리하는 방법을 이해합니다. |
