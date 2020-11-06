@@ -3,9 +3,9 @@ title: 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 자산 마이크로 서비스를 구성 및 사용하여 자산을 규모에 맞게 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 
 | 옵션 | 설명 | 활용 사례 |
 |---|---|---|
-| [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | <ul> <li>사용자 인터페이스에 사용되는 표준 축소판(48, 140 및 319px) [!DNL Assets] </li> <li> 대규모 미리 보기(웹 변환 - 1280px) </li><li> 메타데이터 및 텍스트 추출</li></ul> |
+| [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | <ul> <li>사용자 인터페이스에서 사용하는 표준 축소판(48, 140 및 319픽셀) [!DNL Assets] </li> <li> 대규모 미리 보기(웹 변환 - 1280픽셀) </li><li> 메타데이터 및 텍스트 추출</li></ul> |
 | [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 변환 생성을 위한 더 많은 옵션을 제공합니다. 기본 옵션을 확장하여 다양한 형식 및 변환을 제공합니다. | <ul><li>FPO 변환. </li> <li>이미지 파일 포맷 및 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
 | [사용자 지정 프로필](#custom-config) | 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하여 [Asset Compute Service를 호출하도록 관리자가 사용자 인터페이스를 통해 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
 
@@ -78,9 +78,9 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 1. 다른 변환을 생성하려면 새로 **[!UICONTROL 추가]** 를 클릭하고 다음 정보를 입력합니다.
 
    * 각 변환의 파일 이름입니다.
-   * 각 변환의 파일 형식(PNG, JPEG 또는 GIF)입니다.
+   * 각 변환의 파일 형식(PNG, JPEG, GIF 또는 WebP).
    * 각 변환의 너비 및 높이(픽셀 단위) 값을 지정하지 않으면 원본 이미지의 전체 픽셀 크기가 사용됩니다.
-   * 각 JPEG 변환의 품질(%)
+   * 각 JPEG 및 WebP 변환의 품질입니다.
    * 프로필의 적용 가능성을 정의하는 MIME 유형이 포함되거나 제외됩니다.
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
@@ -148,7 +148,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*그림:서비스[!UICONTROL 매개 변수]필드를 사용하여 사용자 정의 응용 프로그램에 빌드되는 사전 정의된 매개 변수에 추가된 정보를 전달합니다. 이 예에서 캠페인 이미지가 업로드되면 이미지는`Jumanji`글꼴의 텍스트로`Arial-BoldMT`업데이트됩니다.*
+*그림:서비스 [!UICONTROL 매개 변수] 필드를 사용하여 사용자 정의 응용 프로그램에 빌드되는 사전 정의된 매개 변수에 추가된 정보를 전달합니다. 이 예에서 캠페인 이미지가 업로드되면 이미지는 `Jumanji` 글꼴의 텍스트로 `Arial-BoldMT` 업데이트됩니다.*
 
 ## 처리 프로필을 사용하여 자산 처리 {#use-profiles}
 
