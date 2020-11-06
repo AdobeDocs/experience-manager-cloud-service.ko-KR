@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager Cloud Service에서 다이내믹 미디어를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5598'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
    | 자산 게시 | 다음 세 가지 옵션 중에서 [즉시]<br>**[!UICONTROL 를 선택할 수 있습니다&#x200B;]**.자산이 업로드되면 시스템은 자산을 인제스트하고 URL/포함을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입은 없습니다.<br>**[!UICONTROL 활성화 시]**:URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**:에셋은 보안 미리 보기만을 위해 자동으로 게시되며 공개 도메인에서 전달을 위해 DMS7에 게시하지 않고도 AEM에 명시적으로 게시할 수 있습니다. 앞으로 Adobe은 상호 배타적인 AEM에 자산을 게시하고 Dynamic Media에 자산을 게시하는 이 옵션을 개선하게 됩니다. 즉, DMS7에 자산을 게시하여 스마트 자르기 또는 동적 표현물과 같은 기능을 사용할 수 있습니다. 또는 미리 보기 전용 AEM에서만 에셋을 게시할 수 있습니다.동일한 에셋은 공용 도메인에 전달되기 위해 DMS7에 게시되지 않습니다. |
    | 보안 미리 보기 서버 | 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM은 안전하게 원격 Dynamic Media 변환에 액세스하고 미리 볼 수 있습니다(이진 파일은 AEM 인스턴스로 다시 전송되지 않음).<br>회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정한 대로 유지하는 것이 좋습니다. |
-   | 모든 컨텐츠 동기화 | 기본적으로 선택되어 있습니다. Dynamic Media와의 동기화에서 자산을 선택적으로 포함 또는 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.<br>**[!UICONTROL Dynamic Media 동기화]**<br>**[!UICONTROL 모드기본적으로 활성화됨&#x200B;]**:제외용으로 폴더를 표시하지 않으면 기본적으로 모든 폴더에 구성이 적용됩니다.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]**:선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시할 때까지 구성은 어떤 폴더에도 적용되지 않습니다.<br>선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성을 누릅니다]**. 세부 **[!UICONTROL 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 **[!UICONTROL 저장을 누릅니다]**. *기억하십시오.이전에 모든 컨텐츠&#x200B;**동기화를 선택한 경우에는 이러한 세 가지 옵션을 사용할 수**없습니다.* Dynamic [Media의 폴더 수준에서 선택적 게시 작업을 참조하십시오.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 상속됨&#x200B;]**:폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 항목에 대한 세부 상태는 도구 설명을 통해 표시됩니다.<br>**[!UICONTROL 하위 폴더에 대해 활성화]**:다이내믹 미디어와 동기화할 수 있도록 이 하위 트리에 모든 것을 포함시키십시오. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 비활성화됨&#x200B;]**:이 하위 트리의 모든 항목을 Dynamic Media로 동기화하지 않도록 제외합니다. |
+   | 모든 컨텐츠 동기화 | 기본적으로 선택되어 있습니다. Dynamic Media와의 동기화에서 자산을 선택적으로 포함 또는 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.<br>**[!UICONTROL Dynamic Media 동기화]**<br>**[!UICONTROL 모드기본적으로 활성화됨&#x200B;]**:제외용으로 폴더를 표시하지 않으면 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]**:선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시할 때까지 구성은 어떤 폴더에도 적용되지 않습니다.<br>선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성을 누릅니다]**. 세부 **[!UICONTROL 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 **[!UICONTROL 저장을 누릅니다]**. *기억하십시오.이전에 모든 컨텐츠&#x200B;**동기화를 선택한 경우에는 이러한 세 가지 옵션을 사용할 수**없습니다.* Dynamic [Media의 폴더 수준에서 선택적 게시 작업을 참조하십시오.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 상속됨&#x200B;]**:폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 항목에 대한 세부 상태는 도구 설명을 통해 표시됩니다.<br>**[!UICONTROL 하위 폴더에 대해 활성화]**:다이내믹 미디어와 동기화할 수 있도록 이 하위 트리에 모든 것을 포함시키십시오. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 비활성화됨&#x200B;]**:이 하위 트리의 모든 항목을 Dynamic Media로 동기화하지 않도록 제외합니다. |
 
    >[!NOTE]
    >
@@ -254,14 +254,14 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 * RGB 출력을 반환하는 동적 변환은 *sRGB* 색상 공간에 반환됩니다.
 * CMYK 출력을 반환하는 동적 변환은 *WebCoated* 색상 공간에 반환됩니다.
 
-#### 자산 처리 구성 {#configuring-asset-processing}
+#### 지원되는 포맷에 대한 MIME 유형 편집 {#configuring-asset-processing}
 
-Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 정의할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
+Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 정의할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
 
 * Adobe PDF을 eCatalog 자산으로 변환
 * Adobe Photoshop 문서(.PSD)를 배너 템플릿 에셋으로 변환하여 개인화합니다.
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated Postscript 파일(.EPS)을 래스터화합니다.
-* 참고:비디오 프로필 및 이미징 프로필을 사용하여 각각 비디오와 이미지 처리를 정의할 수 있습니다.
+* [비디오 프로필](/help/assets/dynamic-media/video-profiles.md) 및 [이미징](/help/assets/dynamic-media/image-profiles.md) 프로필을 사용하여 각각 비디오와 이미지 처리를 정의할 수 있습니다.
 
 [자산 업로드](/help/assets/add-assets.md)를 참조하십시오.
 
@@ -277,7 +277,7 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
 1. mimeTypes 폴더에서 MIME 형식을 선택합니다.
 1. CRXDE Lite 페이지 오른쪽의 아래 부분:
 
-   * enabled **[!UICONTROL 필드를 두 번]** 클릭합니다. 기본적으로 모든 자산 MIME 유형이 활성화되어 있습니다( **[!UICONTROL true로]**&#x200B;설정). 즉, 자산은 처리를 위해 Dynamic Media에 동기화됩니다. 이 자산 MIME 형식을 처리 대상에서 제외하려면 이 설정을 **[!UICONTROL false로 변경하십시오]**.
+   * 활성화된 필드를 **[!UICONTROL 두 번]** 클릭합니다. 기본적으로 모든 자산 MIME 유형이 활성화되어 있습니다( **[!UICONTROL true로]**&#x200B;설정). 즉, 자산은 처리를 위해 Dynamic Media에 동기화됩니다. 이 자산 MIME 형식을 처리 대상에서 제외하려면 이 설정을 **[!UICONTROL false로 변경하십시오]**.
 
    * jobParam **[!UICONTROL 을]** 두 번 클릭하여 연관된 텍스트 필드를 엽니다. 지정된 [MIME 유형에 사용할 수 있는 허용된 처리 매개 변수 값 목록은 지원되는 MIME 형식을](/help/assets/file-format-support.md) 참조하십시오.
 
@@ -287,11 +287,11 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
 
 1. 페이지의 왼쪽 위 모서리에서 **[!UICONTROL CRXDE Lite]** 를 눌러 AEM으로 돌아갑니다.
 
-#### 지원되지 않는 포맷에 대한 사용자 지정 MIME 형식 추가 {#adding-custom-mime-types-for-unsupported-formats}
+#### 지원되지 않는 포맷에 대한 MIME 형식 추가 {#adding-custom-mime-types-for-unsupported-formats}
 
 AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형식을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 AEM에서 삭제되지 않도록 하려면 먼저 MIME 형식을 이동해야 하며 `image_` 이 활성화된 값은 **[!UICONTROL false로 설정되어 있어야 합니다]**.
 
-지원되지 않는 형식에 대한 사용자 지정 MIME 형식을 추가하려면:
+지원되지 않는 포맷에 대해 MIME 형식을 추가하려면:
 
 1. AEM에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 누릅니다.]**
 
@@ -453,7 +453,7 @@ spin-01-01
 
    프로비전 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
-1. 페이지 상단 근처의 내비게이션 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정]>[!UICONTROL 배치 집합 사전 설정]>[!UICONTROL 배치 집합 사전 설정을 클릭합니다]**.
+1. 페이지 상단 근처의 내비게이션 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정] > [!UICONTROL 배치 집합 사전 설정] > [!UICONTROL 배치 집합 사전 설정을 클릭합니다]**.
 
    [ **[!UICONTROL 세부 사항]**] 페이지의 오른쪽 위 모서리에 설정된 [양식 보기]가 기본 보기입니다.
 
