@@ -2,9 +2,9 @@
 title: 스마트 이미징
 description: 스마트 이미징은 각 사용자의 고유한 보기 특성을 활용하여 경험에 최적화된 적합한 이미지를 자동으로 제공하여 향상된 성능과 참여를 유도합니다.
 translation-type: tm+mt
-source-git-commit: 8040cd38bb01296ed89d44c707ca1e759489eb7b
+source-git-commit: e4d75f8bb783df57705bcaa6483bcb0ac6ec7ead
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2085'
 ht-degree: 1%
 
 ---
@@ -105,8 +105,6 @@ Smart Imaging을 사용하도록 새 사용자 지정 도메인을 구성해야 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
-
-또한 스마트 이미징을 사용할 수 [있습니까?를 참조하십시오.](#am-i-eligible-to-use-smart-imaging) to understand for Smart Imaging.
 
 ## 스마트 이미징은 HTTPS를 사용합니까? HTTP/2는 어떻습니까? {#does-smart-imaging-working-with-https-how-about-http}
 
