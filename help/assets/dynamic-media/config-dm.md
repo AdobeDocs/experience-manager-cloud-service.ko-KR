@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager Cloud Service에서 다이내믹 미디어를 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
+source-git-commit: 9719a440a85b150599efa3eb9dc2bd443a917217
 workflow-type: tm+mt
-source-wordcount: '5598'
+source-wordcount: '5619'
 ht-degree: 1%
 
 ---
@@ -193,8 +193,8 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 * [이미지 서버에 대한 게시 설정](#publishing-setup-for-image-server)
 * [응용 프로그램 일반 설정 구성](#configuring-application-general-settings)
 * [색상 관리 구성](#configuring-color-management)
-* [자산 처리 구성](#configuring-asset-processing)
-* [지원되지 않는 포맷에 대한 사용자 지정 MIME 형식 추가](#adding-custom-mime-types-for-unsupported-formats)
+* [지원되는 포맷에 대한 MIME 유형 편집](#editing-mime-types-for-supported-formats)
+* [지원되지 않는 포맷에 대한 MIME 형식 추가](#adding-mime-types-for-unsupported-formats)
 * [이미지 세트 및 스핀 세트를 자동으로 생성하기 위한 일괄 세트 사전 설정 만들기](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### 이미지 서버에 대한 게시 설정 {#publishing-setup-for-image-server}
@@ -254,7 +254,7 @@ Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 다이�
 * RGB 출력을 반환하는 동적 변환은 *sRGB* 색상 공간에 반환됩니다.
 * CMYK 출력을 반환하는 동적 변환은 *WebCoated* 색상 공간에 반환됩니다.
 
-#### 지원되는 포맷에 대한 MIME 유형 편집 {#configuring-asset-processing}
+#### 지원되는 포맷에 대한 MIME 유형 편집 {#editing-mime-types-for-supported-formats}
 
 Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 정의할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
 
@@ -265,7 +265,7 @@ Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처
 
 [자산 업로드](/help/assets/add-assets.md)를 참조하십시오.
 
-자산 처리를 구성하려면:
+**지원되는 포맷에 대해 MIME 형식을 편집하려면**
 
 1. AEM에서 AEM 로고를 클릭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 일반 > CRXDE Lite을 클릭합니다]**.
 1. 왼쪽 레일에서 다음 항목으로 이동합니다.
@@ -287,11 +287,11 @@ Dynamic Media에서 처리하는 자산 유형을 정의하고 고급 자산 처
 
 1. 페이지의 왼쪽 위 모서리에서 **[!UICONTROL CRXDE Lite]** 를 눌러 AEM으로 돌아갑니다.
 
-#### 지원되지 않는 포맷에 대한 MIME 형식 추가 {#adding-custom-mime-types-for-unsupported-formats}
+#### 지원되지 않는 포맷에 대한 MIME 형식 추가 {#adding-mime-types-for-unsupported-formats}
 
 AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형식을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 AEM에서 삭제되지 않도록 하려면 먼저 MIME 형식을 이동해야 하며 `image_` 이 활성화된 값은 **[!UICONTROL false로 설정되어 있어야 합니다]**.
 
-지원되지 않는 포맷에 대해 MIME 형식을 추가하려면:
+**지원되지 않는 형식에 대해 MIME 형식을 추가하려면**
 
 1. AEM에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 누릅니다.]**
 
@@ -357,7 +357,7 @@ AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형�
 
 두 요소를 정의하면 일치 및 기본 이름을 사용할 수 있습니다. 이러한 필드를 사용하면 이름 지정 규칙의 모든 요소를 정의하고 해당 항목이 포함된 세트의 이름을 지정하는 데 사용되는 규칙의 일부를 식별할 수 있습니다. 회사의 개별 명명 규칙은 이러한 각 요소에 대해 하나 이상의 정의 라인을 사용할 수 있습니다. 고유 정의에 대해 여러 개의 선을 사용하고 기본 이미지, 색상 요소, 대체 보기 요소 및 견본 요소와 같은 별개의 요소로 그룹화할 수 있습니다.
 
-기본 이름 지정을 구성하려면:
+**기본 이름 지정을 구성하려면**
 
 1. Dynamic Media Classic(Scene7) 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -391,7 +391,7 @@ Dynamic Media는 뷰어에 표시하기 위해 일괄 세트 사전 설정을 �
 
 양식 필드 메서드를 사용하여 묶음 집합 사전 설정이나 코드 메서드를 정의할 수 있습니다. 이 방법을 사용하면 정규식을 사용할 수 있습니다. 기본 이름 지정에서와 마찬가지로 양식 보기에서 정의하는 동시에 코드 보기를 선택하고 정규 표현식을 사용하여 정의를 작성할 수 있습니다. 또는 뷰를 선택 취소하여 하나 또는 다른 뷰를 독점적으로 사용할 수도 있습니다.
 
-배치 세트 사전 설정을 만들려면:
+**배치 집합 사전 설정을 만들려면**
 
 1. Dynamic Media Classic(Scene7) 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -447,7 +447,7 @@ spin-01-01
 
 스핀 세트를 업로드하고 게시하면 **업로드 작업 옵션** 대화 상자의 배치 세트 사전 설정 아래에 나열된 2D 스핀 세트 레시피 **** 이름을 활성화합니다.
 
-2D 스핀 세트의 자동 생성을 위한 배치 세트 사전 설정을 만들려면:
+**2D 스핀 세트의 자동 생성을 위한 배치 세트 사전 설정을 만들려면**
 
 1. Dynamic Media Classic(Scene7) 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -542,11 +542,13 @@ Adobe은 PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정�
 
 1. 최대 **[!UICONTROL 병렬 작업]** 필드에서 숫자를 원하는 값으로 변경합니다.
 
-   기본적으로 최대 병렬 작업 수는 사용 가능한 CPU 코어 수에 따라 달라집니다. 예를 들어 4코어 서버에서는 2개의 작업자 스레드를 할당합니다. (0.0과 1.0 사이의 값은 비율 기반이거나 1보다 큰 숫자는 작업자 스레드의 수를 지정합니다.)
+   최대 병렬 작업 **[!UICONTROL 을 늘려]** Dynamic Media로 대용량 파일 업로드를 적절하게 지원할 수 있습니다. 정확한 값은 하드웨어 용량에 따라 다릅니다. 초기 마이그레이션 또는 일회성 벌크 업로드와 같은 특정 시나리오에서 큰 값을 사용할 수 있습니다. 하지만 큰 값(예: 코어 수의 2배)을 사용하면 다른 동시 활동에 부정적인 영향을 줄 수 있습니다. 따라서 특정 사용 사례에 따라 값을 테스트 및 조정해야 합니다.
 
-   Adobe은 Dynamic Media Classic(Scene7)에 대용량 파일 업로드를 지원하기 위해 **[!UICONTROL 최대 병렬 작업]** 32개를 구성할 것을 권장합니다.
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
