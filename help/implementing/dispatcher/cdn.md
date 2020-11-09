@@ -1,6 +1,6 @@
 ---
-title: 클라우드 서비스로서의 AEM에서 CDN
-description: 클라우드 서비스로서의 AEM에서 CDN
+title: AEM as a Cloud Service에서 CDN
+description: AEM as a Cloud Service에서 CDN
 translation-type: tm+mt
 source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 4%
 ---
 
 
-# 클라우드 서비스로서의 AEM에서 CDN {#cdn}
+# AEM as a Cloud Service에서 CDN {#cdn}
 
 AEM as Cloud Service은 내장된 CDN과 함께 출하됩니다. 주 목적은 브라우저 근처의 가장자리에 있는 CDN 노드에서 캐쉬가능 컨텐츠를 전달하여 지연을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
 
@@ -25,7 +25,7 @@ Adobe의 특별 CDN을 사용하여 컨텐츠 전달을 준비하려면 다음�
 1. 고객 지원에 알림:
    * 프로그램 id 및 환경 id로 정의된 대로 지정된 환경과 연결해야 하는 사용자 지정 도메인이 작성자 측의 사용자 지정 도메인은 지원되지 않습니다.
    * 지정된 환경으로 트래픽을 제한하기 위해 IP 허용 목록에 추가가 필요한 경우
-1. DNS 레코드에 필요한 변경 타이밍에 대한 고객 지원과 조정합니다. 지침은 에이펙스 레코드가 필요한지 여부를 기준으로 다릅니다.
+1. DNS 레코드에 필요한 변경 타이밍에 대한 고객 지원과 조정합니다. 지침은 에이펙스 레코드가 필요한지 여부에 따라 다릅니다.
    * apex 레코드가 필요하지 않은 경우 고객은 FQDN을 가리키도록 CNAME DNS 레코드를 설정해야 합니다 `cdn.adobeaemcloud.com`.
    * apex 레코드가 필요한 경우 다음 IP를 가리키는 A 레코드를 만듭니다.151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. 원하는 FQDN이 DNS Apex와 일치하는 경우 고객 레코드가 필요합니다 zone. 출력 SOA 값이 도메인과 일치하는지 확인하기 위해 Unix dig 명령을 사용하여 이 값을 테스트할 수 있습니다. 예를 들어 이 명령은 SOA `dig anything.dev.adobeaemcloud.com` 의 SOA(권한 시작, 즉 영역)를 APEX 레코드가 아닌 `dev.adobeaemcloud.com` 반환하고 SOA의 APEX를 반환하므로 레코드 `dig dev.adobeaemcloud.com` `dev.adobeaemcloud.com` 가 됩니다.
 1. SSL 인증서가 만료되면 알림을 받게 되므로 새 SSL 인증서를 다시 제출할 수 있습니다.
