@@ -1,9 +1,9 @@
 ---
 title: 작성자 계층 액세스
 description: 작성자 계층 액세스
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e772687c4034a364912aa426a133134571246db9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 작성자 계층 액세스 {#accessing-the-author-tier}
 
-클라우드 서비스로서의 AEM 환경의 작성자 계층에 액세스하는 작업은 표준 및 사용자 지정 불가 URL을 통해 수행됩니다.
+AEM as a Cloud Service 환경의 작성자 계층에 액세스하는 작업은 표준 및 사용자 지정 불가 URL을 통해 수행됩니다.
 
 URL 형식은 현재 다음과 같습니다.
 
