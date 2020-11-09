@@ -1,8 +1,8 @@
 ---
-sub-product: 클라우드 서비스로서의 AEM에 온보딩
-user-guide-title: 클라우드 서비스로서의 AEM에 온보딩
+sub-product: AEM as a Cloud Service에 온보딩
+user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
-user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 클라우드 서비스로서의 Experience Manager를 시작하는 방법에 대한 요약을 제공합니다.
+user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
@@ -14,14 +14,14 @@ ht-degree: 90%
 
 # 온보딩 {#onboarding}
 
-+ [클라우드 서비스로서의 AEM에 온보딩](/help/onboarding/home.md)
++ [AEM as a Cloud Service 온보딩](/help/onboarding/home.md)
 + 필수 사항 {#what-is-required}
    + [부여된 액세스 권한](what-is-required/access-rights-granted.md)
    + [사용자 및 역할 추가](what-is-required/add-users-roles.md)
    + [역할 기반 권한](what-is-required/role-based-permissions.md)
    + [소스 코드 저장소](what-is-required/source-code-repository.md)
 + 클라우드에서 AEM에 액세스 {#getting-access}
-   + [클라우드 서비스로서의 Experience Manager 액세스](getting-access-to-aem-in-cloud/navigation.md)
+   + [Experience Manager as a Cloud Service 액세스](getting-access-to-aem-in-cloud/navigation.md)
    + 클라우드 서비스 프로그램 {#cloud-service-programs}
       + [프로그램 액세스](getting-access-to-aem-in-cloud/first-time-login.md)
       + [프로그램 및 프로그램 유형 이해](getting-access-to-aem-in-cloud/understand-program-types.md)
@@ -58,7 +58,7 @@ ht-degree: 90%
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 기초 준비 완료](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM Sites 준비 완료](data-privacy-and-protection-readiness/sites-readiness.md)
 + 액세스 가능성 {#accessibility}
-   + [클라우드 서비스로서의 AEM 및 웹 액세스 가능성 지침](accessibility/web-accessibility.md)
+   + [AEM as a Cloud Service 및 웹 액세스 가능성 지침](accessibility/web-accessibility.md)
    + [WCAG 2.1에 대한 빠른 안내서](accessibility/quick-guide-wcag.md)
 + 우수 사례 {#best-practices}
    + [SEO 및 URL 관리](best-practices/seo-and-url-management.md)
