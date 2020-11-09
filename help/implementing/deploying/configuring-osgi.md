@@ -1,5 +1,5 @@
 ---
-title: 클라우드 서비스로서의 AEM에 대한 OSGi 구성
+title: AEM as a Cloud Service에 대한 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
 source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
@@ -10,9 +10,9 @@ ht-degree: 1%
 ---
 
 
-# 클라우드 서비스로서의 AEM에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
+# AEM as a Cloud Service에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi](https://www.osgi.org/) 는 AEM(Adobe Experience Manager)의 기술 스택에서 기본적인 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
+[OSGi는](https://www.osgi.org/) Adobe Experience Manager(AEM)의 기술 스택에서 기본적인 요소입니다. AEM 및 그 구성의 복합 번들을 제어하는 데 사용됩니다.
 
 OSGi는 표준화된 원시 도형을 제공하여 애플리케이션이 작고 재사용 가능한 공동 작업 구성 요소로 구성되도록 합니다. 이러한 구성 요소는 애플리케이션으로 구성하고 배포할 수 있습니다. 이를 통해 OSGi 번들은 개별적으로 시작, 중지, 설치 및 설치할 수 있으므로 간편하게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소는 다양한 번들 중 하나에 포함됩니다. 자세한 내용은 [OSGi 사양을 참조하십시오](https://www.osgi.org/Specifications/HomePage).
 
@@ -48,7 +48,7 @@ cfg.json OSGi 구성 형식을 따릅니다.
 
 이러한 폴더의 모든 OSGi 구성은 구성 폴더 이름에 정의된 실행 모드가 AEM에서 사용하는 실행 모드와 일치하는 경우 사용됩니다.
 
-예를 들어, AEM이 실행 모드 작성자 및 개발 `/apps/example/config.author/` 을 사용하는 경우 구성 노드가 적용되고 구성 노드는 적용되며 구성 노드는 `/apps/example/config.author.dev/` 적용되지 `/apps/example/config.publish/` `/apps/example/config.author.stage/` 않습니다.
+예를 들어 AEM에서 실행 모드 작성자 및 개발 사용 중인 경우 구성 노드가 `/apps/example/config.author/` 적용되고 구성 노드가 `/apps/example/config.author.dev/` 적용되지만 구성 노드는 `/apps/example/config.publish/` 적용되고 `/apps/example/config.author.stage/` 적용되지 않습니다.
 
 동일한 PID에 대해 여러 구성을 적용할 경우 일치하는 실행 모드가 가장 많은 구성이 적용됩니다.
 
@@ -58,7 +58,7 @@ cfg.json OSGi 구성 형식을 따릅니다.
 
 ## OSGi 구성 값 유형 {#types-of-osgi-configuration-values}
 
-AEM에서 Cloud Service으로 사용할 수 있는 세 가지 유형의 OSGi 구성 값이 있습니다.
+AEM에서 Cloud Service으로 사용할 수 있는 OSGi 구성 값에는 세 가지 종류가 있습니다.
 
 1. **인라인 값**- OSGi 구성에 하드 코딩되어 Git에 저장된 값입니다. 예:
 
@@ -76,7 +76,7 @@ AEM에서 Cloud Service으로 사용할 수 있는 세 가지 유형의 OSGi 구
    } 
    ```
 
-1. **환경별 값**- 개발 환경에 따라 달라서 실행 모드로 정확하게 타깃팅할 수 없습니다(Cloud Service으로 AEM에 단일 `dev` 실행 모드가 있으므로). 예:
+1. **환경별 값**- 개발 환경에 따라 달라서 실행 모드로 정확하게 타깃팅할 수 없습니다(Cloud Service에 단일 `dev` 실행 모드가 있으므로). 예:
 
    ```json
    {
@@ -116,16 +116,16 @@ OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하면 사용 �
 
 ### 비비밀 환경별 구성 값을 사용하는 경우 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-값이 개발 환경에 따라 다를`$[env:ENV_VAR_NAME]`때 비보안 구성 값에 환경별 구성(CDS)만 사용하십시오. 여기에는 로컬 개발 인스턴스 및 Cloud Service 개발 환경으로서의 모든 AEM이 포함됩니다. Cloud Service 단계 또는 프로덕션 환경에서 AEM에 대해 비비밀 환경별 구성을 사용하지 마십시오.
+값이 개발 환경에 따라 다를`$[env:ENV_VAR_NAME]`때 비보안 구성 값에 환경별 구성(CDS)만 사용하십시오. 여기에는 로컬 개발 인스턴스와 Cloud Service 개발 환경으로서의 모든 AEM이 포함됩니다. Cloud Service 단계 또는 프로덕션 환경에서 AEM용 비기밀 환경별 구성을 사용하지 마십시오.
 
 * 로컬 개발 인스턴스를 포함하여 개발 환경이 서로 다른 구성 값에 비비밀 환경별 구성만 사용하십시오.
-* 대신 스테이지 및 프로덕션 비비밀 값에 대해 OSGi 구성의 표준 인라인 값을 사용하십시오.  이와 관련하여 런타임 시 스테이지 및 프로덕션 환경에 맞게 구성을 쉽게 변경할 수 있도록 환경별 구성을 사용하지 않는 것이 좋습니다. 이러한 변경 사항은 소스 코드 관리를 통해 도입해야 합니다.
+* 대신 스테이지 및 프로덕션 비비밀 값에 대해 OSGi 구성의 표준 인라인 값을 사용하십시오.  이와 관련하여 런타임 시 스테이지 및 프로덕션 환경에 맞게 구성을 쉽게 변경할 수 있도록 환경별 구성을 사용하지 않는 것이 좋습니다.이러한 변경 사항은 소스 코드 관리를 통해 도입해야 합니다.
 
 ### 비밀 환경별 구성 값을 사용해야 하는 경우 {#when-to-use-secret-environment-specific-configuration-values}
 
-Cloud Service로서 AEM은 암호, 개인 API 키 또는 보안상의 이유로 Git에 저장할 수 없는 기타 모든 값과 같은 비밀 OSGi 구성 값에 대해 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
+AEM은 Cloud Service로서 보안 이유로 Git에 저장할 수 없는 암호, 개인 API 키 또는 기타 모든 값과 같은 모든 비밀 OSGi 구성 값에 대해 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
 
-비밀 환경별 구성을 사용하여 스테이지 및 프로덕션을 비롯한 Cloud Service 환경에서 모든 AEM에 있는 기밀 값을 저장할 수 있습니다.
+안전한 환경별 구성을 사용하여 스테이지 및 프로덕션 등 Cloud Service 환경에서 모든 AEM에 기밀에 대한 가치를 저장할 수 있습니다.
 
 <!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
@@ -166,11 +166,11 @@ To add a new configuration to the repository you need to know the following:
 
 ## OSGi 구성 만들기
 
-아래에 설명된 두 가지 방법으로 새 OSGi 구성을 만들 수 있습니다. 이전의 방법은 일반적으로 개발자에 의한 잘 알려진 OSGi 속성과 값을 가진 사용자 지정 OSGi 구성 요소와 AEM 제공 OSGi 구성 요소에 대한 후자를 구성하는 데 사용됩니다.
+아래에 설명된 두 가지 방법으로 새 OSGi 구성을 만들 수 있습니다. 이전의 방법은 일반적으로 개발자에 의한 잘 알려진 OSGi 속성과 값을 가진 사용자 지정 OSGi 구성 요소와 AEM 제공 OSGi 구성 요소의 경우 사용됩니다.
 
 ### OSGi 구성 작성
 
-JSON 형식 OSGi 구성 파일은 AEM 프로젝트에서 직접 손으로 작성할 수 있습니다. 이는 잘 알려진 OSGi 구성 요소, 특히 구성을 정의하는 동일한 개발자가 디자인하고 개발한 맞춤형 OSGi 구성 요소에 대한 OSGi 구성을 만드는 가장 빠른 방법입니다. 또한 이 방법을 활용하여 다양한 실행 모드 폴더에 있는 동일한 OSGi 구성 요소에 대한 구성을 복사/붙여넣거나 업데이트할 수 있습니다.
+JSON 형식 OSGi 구성 파일은 AEM 프로젝트에서 직접 작성할 수 있습니다. 이는 잘 알려진 OSGi 구성 요소, 특히 구성을 정의하는 동일한 개발자가 디자인하고 개발한 맞춤형 OSGi 구성 요소에 대한 OSGi 구성을 만드는 가장 빠른 방법입니다. 또한 이 방법을 활용하여 다양한 실행 모드 폴더에 있는 동일한 OSGi 구성 요소에 대한 구성을 복사/붙여넣거나 업데이트할 수 있습니다.
 
 1. IDE에서 `ui.apps` 프로젝트를 열고, 새로운 OSGi 구성이 적용되어야 하는 런모드를 대상으로 하는 구성 폴더(`/apps/.../config.<runmode>`)를 찾거나 만듭니다
 1. 이 구성 폴더에서 새 `<PID>.cfg.json` 파일을 만듭니다. PID는 OSGi 구성 요소의 영구 ID입니다. 일반적으로 OSGi 구성 요소 구현의 전체 클래스 이름입니다. 예:
@@ -182,9 +182,9 @@ OSGi 구성 팩토리 파일 이름, 이름 지정 규칙 `<PID>-<factory-name>.
 
 ### AEM SDK Quickstart를 사용하여 OSGi 구성 생성
 
-AEM SDK Quickstart Jar의 AEM 웹 콘솔은 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM Web Console의 구성 UI를 사용하면 저장소에 `.cfg.json` 파일이 작성되므로 AEM Project에서 정의한 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하려면 이 점을 주의하십시오.
+AEM SDK Quickstart Jar의 AEM 웹 콘솔은 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM Web Console의 구성 UI를 사용하면 저장소에 `.cfg.json` 파일이 작성되므로 AEM 프로젝트 정의 OSGi 구성이 생성된 구성과 다를 수 있으므로 로컬 개발 중에 예기치 않은 잠재적인 동작을 방지하려면 이 점을 주의하십시오.
 
-1. 관리 사용자로 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다
+1. AEM SDK Quickstart Jar의 AEM 웹 콘솔에 관리자 사용자로 로그인
 1. OSGi > 구성으로 이동합니다.
 1. 구성할 OSGi 구성 요소를 찾아 제목을 눌러 편집
    ![OSGi 구성](./assets/configuring-osgi/configuration.png)
@@ -225,7 +225,7 @@ OSGi 구성은 환경에 따라 정의될 변수의 자리 표시자를 지정�
 use $[env:ENV_VAR_NAME]
 ```
 
-고객은 사용자 지정 코드와 관련된 OSGI 구성 속성에만 이 기술을 사용해야 합니다. Adobe에서 정의한 OSGI 구성을 무시하는 데 사용해서는 안 됩니다.
+고객은 사용자 지정 코드와 관련된 OSGI 구성 속성에만 이 기술을 사용해야 합니다.adobe 정의 OSGI 구성을 재정의하는 데 사용해서는 안 됩니다.
 
 ### 비밀 구성 값 {#secret-configuration-values}
 
@@ -241,8 +241,8 @@ use $[secret:SECRET_VAR_NAME]
 
 변수 이름은 다음 규칙을 따라야 합니다.
 
-* 최소 길이: 2
-* 최대 길이: 100년
+* 최소 길이:2
+* 최대 길이:100년
 * regex와 일치해야 합니다. `[a-zA-Z_][a-zA-Z_0-9]*`
 
 변수의 값은 2048자를 초과할 수 없습니다.
@@ -269,9 +269,9 @@ $[env:ENV_VAR_NAME;default=<value>]
 export ENV_VAR_NAME=my_value
 ```
 
-AEM을 시작하기 전에 구성에 사용된 환경 변수를 설정하고 이를 실행하는 간단한 배쉬 스크립트를 작성하는 것이 좋습니다. https://direnv.net/ [과 같은](https://direnv.net/) 도구를 사용하여 이 방법을 단순화합니다. 값 유형에 따라 모든 사람 간에 공유할 수 있는 경우 소스 코드 관리에 체크 인될 수 있습니다.
+구성에 사용된 환경 변수를 설정하고 AEM을 시작하기 전에 실행하는 간단한 배쉬 스크립트를 작성하는 것이 좋습니다. https://direnv.net/ [과 같은](https://direnv.net/) 도구를 사용하여 이 방법을 단순화합니다. 값 유형에 따라 모든 사람 간에 공유할 수 있는 경우 소스 코드 관리에 체크 인될 수 있습니다.
 
-비밀 값은 파일에서 읽습니다. 따라서 암호를 사용하는 각 자리 표시자에 대해 비밀 값이 포함된 텍스트 파일을 만들어야 합니다.
+비밀의 값은 파일에서 읽습니다. 따라서 암호를 사용하는 각 자리 표시자에 대해 비밀 값이 포함된 텍스트 파일을 만들어야 합니다.
 
 예를 들어 `$[secret:server_password]` 이 사용된 경우 **server_password라는 텍스트 파일을** 만들어야 합니다. 이러한 모든 비밀 파일은 동일한 디렉토리에 저장되어야 하며 프레임워크 속성을 해당 로컬 디렉토리로 구성해야 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 합니다.
 
@@ -280,7 +280,7 @@ AEM을 시작하기 전에 구성에 사용된 환경 변수를 설정하고 이
 OSGI 속성에 작성자와 게시에 서로 다른 값이 필요한 경우:
 
 * 실행 모드 `config.author` 해상도 섹션에 설명된 대로 별도의 `config.publish` 및 OSGi 폴더를 [사용해야 합니다](#runmode-resolution).
-* 독립 변수 이름을 사용해야 합니다. 변수 이름이 같은 접두사를 사용하는 `author_<variablename>` `publish_<variablename>` 것이 좋습니다.
+* 독립 변수 이름을 사용해야 합니다. 변수 이름이 같은 접두사를 사용하는 것이 좋습니다. `author_<variablename>` `publish_<variablename>`
 
 ### 구성 예 {#configuration-examples}
 
@@ -305,7 +305,7 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val", "my_var2": "abc", "my_var3": 500}
+{ "my_var1":"val", "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -315,7 +315,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ "my_var1" :"$[env:my_var1]" "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -340,7 +340,7 @@ config.stage
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ "my_var1":"val1", "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -350,7 +350,7 @@ config.prod
 </td>
 <td>
 <pre>
-{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+{ "my_var1":"val2", "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -360,7 +360,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ "my_var1" :"$[env:my_var1]" "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -385,7 +385,7 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ "my_var1":"val1", "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -395,7 +395,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ "my_var1" :"$[env:my_var1]" "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -418,7 +418,7 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ "my_var1":"val1", "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -428,7 +428,7 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+{ "my_var1":"$[env:my_var1;default=val1]" "my_var2":"abc", "my_var3":500}
 </pre>
 </td>
 </tr>
@@ -513,13 +513,13 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ## 보안 및 환경별 구성 값에 대한 배포 고려 사항 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-보안 및 환경별 구성 값은 Git 외부에 있으므로 Cloud Service 배포 메커니즘으로서 공식 AEM에 속하지 않으므로 고객은 Cloud Service 배포 프로세스로 AEM을 관리, 관리 및 통합해야 합니다.
+보안 및 환경별 구성 값은 Git 외부에 있으므로 Cloud Service 배포 메커니즘으로서 공식 AEM에 속하지 않으므로 고객은 AEM을 Cloud Service 배포 프로세스로 관리, 관리 및 통합해야 합니다.
 
 위에 언급했듯이 API를 호출하면 일반적인 고객 코드 배포 파이프라인과 유사한 새로운 변수와 값이 클라우드 환경에 배포됩니다. 작성자 및 게시 서비스가 다시 시작되고 새 값을 참조하며 일반적으로 몇 분 정도 걸립니다. 일반적인 코드 배포 동안 Cloud Manager에서 실행하는 품질 게이트와 테스트는 이 프로세스 동안 수행되지 않습니다.
 
 일반적으로 고객은 API를 호출하여 환경 변수를 설정한 후 Cloud Manager에 의존하는 코드를 배포합니다. 코드가 이미 배포된 후 기존 변수를 수정할 수도 있습니다.
 
-파이프라인을 사용 중인 경우, AEM 업데이트 또는 고객 배포 중 어느 부분이 해당 시점에 최종 파이프라인이 실행되고 있는지에 따라 API가 실패할 수 있습니다. 이 오류 응답에는 요청이 성공을 하지 않았음을 나타내지만 특정 이유를 나타내지는 않습니다.
+파이프라인을 사용 중인 경우, AEM 업데이트 또는 고객 배포 중 어느 부분이 해당 시점에 최종 파이프라인의 실행 중에 있는지에 따라 API가 실패할 수 있습니다. 이 오류 응답에는 요청이 성공을 하지 않았음을 나타내지만 특정 이유를 나타내지는 않습니다.
 
 예약된 고객 코드 배포가 기존 변수에 의존하여 현재 코드와 맞지 않는 새 값을 갖는 시나리오가 있을 수 있습니다. 이러한 문제가 발생하는 경우 부가적인 방식으로 변수를 수정하는 것이 좋습니다. 이렇게 하려면 이전 코드가 새 값을 참조하지 않도록 이전 변수의 값을 변경하는 대신 새 변수 이름을 만드십시오. 그런 다음 새 고객 릴리스가 안정적일 때 이전 값을 제거할 수 있습니다.
 
