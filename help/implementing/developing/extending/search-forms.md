@@ -1,6 +1,6 @@
 ---
 title: 검색 양식 구성
-description: Adobe Experience Manager에 대한 검색 양식을 Cloud Service으로 구성
+description: Adobe Experience Manager에 대한 검색 Forms을 Cloud Service으로 구성
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # 검색 양식 구성 {#configuring-search-forms}
 
-Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘을 제공합니다.
+Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘을 따릅니다.
 
 이와 함께 컨텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 이러한 보류 중인 패싯은 **수정한 날짜**, **게시 상태**&#x200B;또는 **Livecopy 상태** 와 같은 사전 정의된패싯으로 필요한 리소스로 빠르게 드릴다운할 수 있도록 도와줍니다.
 
@@ -28,9 +28,9 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 >
 >기본 [컨텐츠 검색 및 인덱싱](/help/operations/indexing.md) 서비스를 구성할 수 있습니다.
 
-양식 **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 이러한 패널을 사용자 정의하고 확장할 수 있습니다.
+Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 이러한 패널을 사용자 정의하고 확장할 수 있습니다.
 
-검색 **양식** 은 결합하고 정의할 수 있는 [예측](#predicates-and-their-settings) 항목을 즉시 제공합니다. 이러한 양식 [을 구성하기 위한 대화 상자는 다음을 통해 액세스할](#configuring-your-search-forms) 수 있습니다.
+검색 **Forms** 는 결합하고 정의할 수 있는 [예측](#predicates-and-their-settings) 기능을 기본적으로 제공합니다. 이러한 양식 [을 구성하기 위한 대화 상자는 다음을 통해 액세스할](#configuring-your-search-forms) 수 있습니다.
 
 * **도구**
 
@@ -38,9 +38,9 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 
       * **검색 양식**
 
-## 기본 양식 {#default-forms}
+## 기본 Forms {#default-forms}
 
-양식 **검색** 콘솔에 처음 액세스하면 모든 구성에 자물쇠 기호가 있음을 확인할 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 사용자 정의 및 저장했으면 잠금이 사라집니다. 사용자 지정된 구성을 [삭제하면 이](#deleting-a-configuration-to-reinstate-the-default)지표가 다시 나타납니다. 이 경우 기본(및 자물쇠 표시기)이 복원됩니다.
+처음 Forms **검색** 콘솔에 액세스하면 모든 구성에 자물쇠 기호가 있음을 확인할 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 사용자 정의 및 저장했으면 잠금이 사라집니다. 사용자 지정된 구성을 [삭제하면 이](#deleting-a-configuration-to-reinstate-the-default)지표가 다시 나타납니다. 이 경우 기본(및 자물쇠 표시기)이 복원됩니다.
 
 ![검색 양식 개요 구성](assets/csf-overview.png)
 
@@ -96,7 +96,7 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
   </tr>
   <tr>
    <td>분석</td>
-   <td>분석 기반 데이터를 표시할 때 사이트 브라우저의 검색/필터 기능입니다. Analytics 검색 필터가 매핑된 사용자 지정 분석 열과 일치하도록 로드됩니다.</td>
+   <td>분석 기반 데이터를 표시할 때 사이트 브라우저의 검색/필터 기능입니다. Analytics 검색 필터는 매핑된 사용자 지정 분석 열과 일치하도록 로드됩니다.</td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -531,7 +531,7 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 
 * **속성 값**
 
-   절대 문자열 또는 표현식 언어로 된 속성 값 예를 들어, `cq:Page` 또는
+   절대 문자열 또는 표현식 언어로 된 속성 값예를 들어, `cq:Page` 또는
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
@@ -554,13 +554,13 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 
 * **게시 및 Live Copy 속성 이름**&#x200B;사이트 특정 술어에 대한 게시 및 Live Copy 확인란의 레이블입니다.
 
-* &amp;ast; 설정 **** 탭의 필드 레이블에는 필드가 필수이며 비워 두면 오류 메시지가 표시됩니다.
+* &amp;ast;설정 **** 탭의 필드 레이블에는 필드가 필수이며 비워 두면 오류 메시지가 표시됩니다.
 
-## 검색 양식 구성 {#configuring-your-search-forms}
+## 검색 Forms 구성 {#configuring-your-search-forms}
 
 ### 사용자 지정된 구성 만들기/열기 {#creating-opening-a-customized-configuration}
 
-1. 도구, **일반**, **검색 양식**&#x200B;으로 **이동합니다**.
+1. 도구, **일반**, **검색 Forms**&#x200B;로 **이동합니다**.
 
 1. 사용자 정의할 구성을 선택합니다.
 1. 편집 **** 아이콘을 사용하여 업데이트를 위한 구성을 엽니다.
@@ -640,7 +640,7 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 
 ### 옵션 설명 추가 {#adding-options-predicates}
 
-옵션 설명(옵션, 옵션 속성)을 사용하면 검색할 항목을 구성할 수 있습니다. 일반적으로 페이지 바로 아래에서 항목을 검색하는 데 사용됩니다. 예를 들어 페이지 노드의 속성입니다.
+옵션 설명(옵션, 옵션 속성)을 사용하면 검색할 항목을 구성할 수 있습니다. 일반적으로 페이지 바로 아래에서 항목을 검색하는 데 사용됩니다.예를 들어 페이지 노드의 속성입니다.
 
 다음 예제(페이지를 만드는 데 사용된 템플릿에 따라 검색하기)에서는 관련 단계를 보여 줍니다.
 
@@ -668,7 +668,7 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
    >1. Make any changes within `/apps.`
 
 
-1. 양식 **검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예: **사이트 관리자 검색 레일**. 그런 다음 **편집을 선택합니다**.
+1. Forms **검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예: **사이트 관리자 검색 레일**. 그런 다음 **편집을 선택합니다**.
 
 1. 구성에 따라 구성에 **옵션** 또는 **옵션 속성** 을 추가합니다.
 1. 특히 필드를 업데이트합니다.
