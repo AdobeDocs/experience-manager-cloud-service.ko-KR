@@ -1,20 +1,20 @@
 ---
-title: 클라우드 서비스로서의 Adobe Experience Manager 소개
-description: '클라우드 서비스로서의 Adobe Experience Manager(AEM) 소개. '
-translation-type: ht
+title: Adobe Experience Manager as a Cloud Service 소개
+description: 'Adobe Experience Manager (AEM) as a Cloud Service 소개. '
+translation-type: tm+mt
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
 
 
-# 클라우드 서비스로서의 Adobe Experience Manager 소개 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
+# Adobe Experience Manager as a Cloud Service 소개 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
 [Adobe Experience Manager](https://www.adobe.com/kr/marketing/experience-manager.html)(AEM)는 이제 클라우드 서비스로 제공됩니다.
 
-클라우드 서비스로서의 Adobe Experience Manager는
+Adobe Experience Manager as a Cloud Service는
 
 * 클라우드 기반의 AEM 애플리케이션 활용 방법입니다.
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->클라우드 서비스로서의 AEM에 도입된 새로운 용어 중 일부는 [용어](terminology.md)를 참조하십시오.
+>AEM as a Cloud Service에 도입된 새로운 용어 중 일부는 [용어](terminology.md)를 참조하십시오.
 
 ## 클라우드 서비스로서 추가된 가치 {#value-added-as-a-cloud-service}
 
@@ -62,22 +62,22 @@ AEM은 최신 클라우드 서비스의 주요 특성을 채택하여 다음과 
 
 * 크기가 항상 적절히 조절됩니다.
 
-   * 클라우드 서비스로서의 AEM의 모든 인스턴스는 동등하게 생성됩니다. 따라서 서비스 아키텍처는 필요에 따라 자동으로 확장 및 축소됩니다.
+   * AEM as a Cloud Service의 모든 인스턴스는 동등하게 생성됩니다. 따라서 서비스 아키텍처는 필요에 따라 자동으로 확장 및 축소됩니다.
 
 * 항상 최신 상태입니다.
 
-   * 클라우드 서비스로서의 AEM은 매월 최대 여러 차례까지의 자동화된 업데이트를 통해 AEM 코드 베이스에 대한 새롭고 연속적인 전달 파이프라인을 구현합니다. 이렇게 하면 최신 버전에서 최신 상태가 유지되므로 AEM 애플리케이션의 주요 문제 중 하나가 해결됩니다.
+   * AEM as a Cloud Service는 매월 최대 여러 차례까지의 자동화된 업데이트를 통해 AEM 코드 베이스에 대한 새롭고 연속적인 전달 파이프라인을 구현합니다. 이렇게 하면 최신 버전에서 최신 상태가 유지되므로 AEM 애플리케이션의 주요 문제 중 하나가 해결됩니다.
 
 * 항상 진화하고 있습니다.
 
-   * 클라우드 서비스로서의 AEM은 고객이 구현하는 프로젝트를 기반으로 매일 발전합니다. 컨텐츠, 코드 및 구성은 우수 사례를 통해 지속해서 검토 및 조사되므로 사용자에게 비즈니스 목표 달성 방법을 안내할 수 있습니다.
+   * AEM as a Cloud Service는 고객이 구현하는 프로젝트를 기반으로 매일 발전합니다. 컨텐츠, 코드 및 구성은 우수 사례를 통해 지속해서 검토 및 조사되므로 사용자에게 비즈니스 목표 달성 방법을 안내할 수 있습니다.
 
-## 클라우드 서비스로서의 Adobe Experience Manager 알기 {#getting-to-know-aem-as-cloud-service}
+## Adobe Experience Manager as a Cloud Service 알기 {#getting-to-know-aem-as-cloud-service}
 
-* 클라우드 서비스로서의 Adobe Experience Manager와 이전 버전 간의 [새로운 기능과 차이점](/help/overview/what-is-new-and-different.md)
-* 클라우드 서비스로서의 Adobe Experience Manager [아키텍처](/help/core-concepts/architecture.md)
-* [클라우드 서비스로서의 AEM에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
-* [ 클라우드 서비스로서의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
-* [클라우드 서비스로서의 AEM Assets에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
-* [클라우드 서비스로서의 Assets 소개](/help/assets/overview.md)
-* [클라우드 서비스로서의 Adobe Experience Manager 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* Adobe Experience Manager as a Cloud Service와 이전 버전 간의 [새로운 기능과 차이점](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager as a Cloud Service [아키텍처](/help/core-concepts/architecture.md)
+* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
+* [ AEM Sites as a Cloud Service에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
+* [Assets as a Cloud Service 소개](/help/assets/overview.md)
+* [Adobe Experience Manager as a Cloud Service 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
