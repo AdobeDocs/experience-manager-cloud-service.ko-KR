@@ -21,8 +21,8 @@ ht-degree: 8%
 Cloud Service으로 AEM용 CIF(Commerce Integration Framework)를 기반으로 하는 AEM 커머스 프로젝트를 개발하는 경우 Cloud Service의 다른 AEM 프로젝트와 같은 규칙과 모범 사례를 따르게 됩니다. 다음 사항을 먼저 검토하십시오.
 
 - [AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [클라우드 서비스 SDK로서의 AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [클라우드 서비스로서의 AEM 개발 지침](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [AEM as a Cloud Service 개발 지침](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## Cloud Service SDK로 AEM을 사용한 로컬 개발 {#local}
 
@@ -38,7 +38,7 @@ CIF Add-On은 Sling 기능 아카이브로 제공됩니다. 소프트웨어 배�
 
 다음은 로컬에 설치해야 합니다.
 
-- [클라우드 서비스 SDK로서의 AEM](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
 - [Node.js v10+](https://nodejs.org/en/)
