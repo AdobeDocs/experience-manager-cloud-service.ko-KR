@@ -1,6 +1,6 @@
 ---
 title: 프로그램 및 프로그램 유형 이해
-description: 프로그램 및 프로그램 유형 이해 - 클라우드 서비스
+description: 프로그램 및 프로그램 유형 이해 - Cloud Services
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 workflow-type: tm+mt
