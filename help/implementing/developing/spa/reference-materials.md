@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # SPA 참조 자료 {#spa-reference-materials}
 
-## NMP 모듈용 SPA Javascript API 참조 {#api-references}
+## SPA NMP 모듈의 Javascript API 참조 {#api-references}
 
 다음은 AEM SPA Editor SDK 프레임워크용 NPM 모듈의 사용 가능한 JavaScript API 참조입니다.
 
