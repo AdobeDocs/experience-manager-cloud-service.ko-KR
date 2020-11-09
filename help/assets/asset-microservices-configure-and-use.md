@@ -38,7 +38,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 |---|---|---|
 | [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | <ul> <li>사용자 인터페이스에서 사용하는 표준 축소판(48, 140 및 319픽셀) [!DNL Assets] </li> <li> 대규모 미리 보기(웹 변환 - 1280픽셀) </li><li> 메타데이터 및 텍스트 추출</li></ul> |
 | [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 변환 생성을 위한 더 많은 옵션을 제공합니다. 기본 옵션을 확장하여 다양한 형식 및 변환을 제공합니다. | <ul><li>FPO 변환. </li> <li>이미지 파일 포맷 및 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
-| [사용자 지정 프로필](#custom-config) | 사용자 지정 응용 프로그램을 통해 사용자 지정 코드를 사용하여 [Asset Compute Service를 호출하도록 관리자가 사용자 인터페이스를 통해 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
+| [사용자 지정 프로필](#custom-config) | 사용자 정의 애플리케이션을 통해 사용자 정의 코드를 사용하여 [Asset compute 서비스를 호출하도록 관리자가 사용자 인터페이스를 통해 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -144,7 +144,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 사용자 지정 프로필의 사용을 설명하기 위해 캠페인 이미지에 일부 사용자 지정 텍스트를 적용하는 사용 사례를 생각해 보겠습니다. Photoshop API를 활용하여 이미지를 편집하는 처리 프로필을 만들 수 있습니다.
 
-자산 계산 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개 변수] 필드를 사용하여 이러한 매개 변수를 사용자 정의 응용 프로그램에 전달할 수 있습니다. 그러면 사용자 지정 응용 프로그램이 Photoshop API를 호출하고 이러한 값을 API로 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 사용자 정의 텍스트를 캠페인 이미지에 추가할 수 있습니다.
+asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개 변수 필드를 사용하여 이러한 매개 변수를 사용자 정의 응용 프로그램에 전달할 수] 있습니다. 그러면 사용자 지정 응용 프로그램이 Photoshop API를 호출하고 이러한 값을 API로 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 사용자 정의 텍스트를 캠페인 이미지에 추가할 수 있습니다.
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
@@ -224,7 +224,7 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 
 >[!MORELIKETHIS]
 >
->* [Asset Compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)소개
+>* [asset compute 서비스](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)소개
 >* [확장성 및 사용 시기를](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)이해합니다.
 >* [사용자 정의 애플리케이션을 만드는 방법](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
 >* [다양한 사용 사례에 지원되는 MIME 형식입니다](/help/assets/file-format-support.md).
