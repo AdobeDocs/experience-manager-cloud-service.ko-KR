@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠 조각을 사용한 작업
-description: Adobe Experience Manager(AEM)의 컨텐츠 조각을 Cloud Service으로 사용하여 페이지에 영향을 받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 알아봅니다.
+description: Adobe Experience Manager(AEM)에서 Cloud Service으로 컨텐츠 조각을 사용하여 페이지에 영향을 받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
 source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
@@ -71,7 +71,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 >[!NOTE]
 >
->**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**은 AEM 내의 다양한 기능입니다.
+>**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
 >* **컨텐츠 조각은** 편집 컨텐츠로 텍스트, 번호, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 정의 및 구조가 있지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
 
@@ -209,7 +209,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
       * 모든 컨텐츠 조각에는 하나의 마스터 인스턴스가 있습니다.
       * 마스터는 삭제할 수 없습니다.
-   * 마스터는 **[변형](/help/assets/content-fragments/content-fragments-variations.md)**아래의 조각 편집기에서 액세스할 수 있습니다.
+   * 마스터는 **[변형](/help/assets/content-fragments/content-fragments-variations.md)** 아래의 조각 편집기에서 액세스할 수 있습니다.
    * 마스터는 그러한 변형이 아니라 모든 변형의 기초입니다.
 
 
@@ -265,6 +265,6 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 ### WKND 샘플 {#wknd-sample}
 
-Cloud Service [로 AEM에 대해 학습하는 데 도움이 되는 WKND 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 샘플이 제공됩니다. 여기에는 샘플 조각이 포함되어 있으며 다음과 같이 볼 수 있습니다.
+WKND [사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 샘플은 AEM에 대해 Cloud Service으로 배우는 데 도움이 됩니다. 여기에는 샘플 조각이 포함되어 있으며 다음과 같이 볼 수 있습니다.
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
