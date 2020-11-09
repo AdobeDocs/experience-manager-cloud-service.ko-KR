@@ -26,7 +26,7 @@ ht-degree: 3%
 
 ## 이미지 사전 설정 이해 {#understanding-image-presets}
 
-매크로와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 및 서식 지정 명령의 사전 정의된 모음입니다. 이미지 사전 설정이 작동하는 방식을 이해하려면 웹 사이트에서 각 제품 이미지가 서로 다른 크기, 서로 다른 형식 및 데스크탑 및 모바일 전달의 압축 속도로 나타나야 한다고 가정합니다.
+매크로와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 및 서식 지정 명령의 사전 정의된 모음입니다. To understand how Image Presets work, suppose your web site requires each product image to appear in different sizes, different formats, and compression rates for desktop and mobile delivery.
 
 두 개의 이미지 사전 설정을 만들 수 있습니다.하나는 데스크탑 버전의 경우 500 x 500픽셀이고 다른 하나는 모바일 버전의 경우 150 x 150픽셀입니다. 두 개의 이미지 사전 설정 `Enlarge` 을 만듭니다. 하나는 500x500픽셀의 이미지를 표시하기 위해 호출되고 다른 하나는 150 x 150픽셀의 이미지 `Thumbnail` 를 표시하기 위해 호출됩니다. AEM은 이미지 `Enlarge` 를 크기와 `Thumbnail` 크기로 확대하기 위해 이미지 사전 설정과 축소판 이미지 사전 설정의 정의를 찾습니다. 그런 다음 AEM은 각 이미지 사전 설정의 크기와 형식 사양에 맞게 이미지를 동적으로 생성합니다.
 
@@ -138,7 +138,7 @@ InDesign 파일의 경우, 하위 자산은 Adobe InDesign 서버가 AEM과 통�
 
 <!-- See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md). -->
 
-워크플로우의 미디어 추출 프로세스 구성 요소는 InDesign 파일을 처리하기 위해 미리 구성된 여러 개의 확장 스크립트를 `DAM Update Asset` 실행합니다.
+워크플로우의 미디어 추출 프로세스 구성 요소는 InDesign 파일을 처리하도록 사전 구성된 여러 가지 확장 스크립트를 `DAM Update Asset` 실행합니다.
 
 ![미디어 추출 프로세스의 인수에 있는 ExtendScript 경로](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
@@ -184,7 +184,7 @@ DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 �
 >* EPS 파일의 축소판 크기는 축소판 그림 아래의 **[!UICONTROL 인수]** 탭에서 EPS 축소판 **[!UICONTROL 단계에서]** 구성합니다.
    >
    >
-* 비디오의 축소판 크기는 [인수] 아래의 [ **[!UICONTROL 프로세스]** ] **[!UICONTROL 탭에서 []** mpeg 축소판 ** 단계에서]**&#x200B;구성합니다.
+* 비디오의 축소판 크기는 [인수] 아래의 [ **[!UICONTROL 처리]** ] **[!UICONTROL 탭에서 []** mpeg 축소판 ** 단계에서]**&#x200B;구성합니다.
 
 >
 
@@ -275,7 +275,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
 
 * **[!UICONTROL 형식]** (**[!UICONTROL 기본]** 탭) - **[!UICONTROL JPEG]** 또는 요구 사항을 충족하는 다른 형식을 선택합니다. 모든 웹 브라우저는 JPEG 이미지 형식을 지원합니다.작은 파일 크기와 이미지 품질 간의 적절한 균형을 제공합니다. 그러나 JPEG 형식 이미지는 압축 설정이 너무 낮으면 원치 않는 이미지 가공물을 가져올 수 있는 손실 압축 체계를 사용합니다. 이러한 이유로 Adobe은 압축 품질을 75로 설정하는 것이 좋습니다. 이 설정은 이미지 품질과 작은 파일 크기 간의 적절한 균형을 제공합니다.
 
-* **[!UICONTROL 단순 선명]** 활성화 - [ **[!UICONTROL 간단한 선명하게 하기]** 설정]을 선택하지 마십시오(이 선명 효과 필터는 [언샵 마스크] 설정에 비해 더 적은 컨트롤을 제공합니다).
+* **[!UICONTROL 단순 선명]** 활성화 - [ **[!UICONTROL 간단한 선명하게 하기]** 설정]을 선택하지 마십시오(이 선명 효과 필터는 [언샵 마스크] 설정에 비해 덜 컨트롤 제공).
 
 * **[!UICONTROL 선명하게 하기:리샘플링 모드]** - **[!UICONTROL Bi-Cubic을 선택합니다]**.
 
@@ -303,7 +303,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
      <li><strong>JPG 색차 다운샘플링</strong> 활성화 - 눈은 고주파 광도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 광도 및 색상 구성 요소로 나눕니다. JPEG 이미지가 압축되면 광도 구성 요소는 전체 해상도로 유지되며 색상 구성 요소는 픽셀 그룹을 평균화하여 다운샘플링됩니다. 다운샘플링은 인지된 품질에 거의 영향을 주지 않으면서 데이터 볼륨을 1/2 또는 1/3까지 감소시킵니다. 다운샘플링은 회색 음영 이미지에는 적용되지 않습니다. 이 기술은 대비가 높은 이미지(예: 텍스트가 겹쳐진 이미지)에 유용합니다.</li>
     </ul>
     <div>
-      GIF <strong>또는 GIF를 alpha</strong><strong>와 함께 선택하면 다음과 같은 추가</strong> GIF 색상 <strong></strong> 양자화 옵션을 제공합니다.
+      GIF <strong>또는 GIF</strong> 를 alpha <strong>와 함께 선택하면 다음과 같은 추가</strong> GIF 색상 <strong>양자화</strong> 옵션이 제공됩니다.
     </div>
     <ul>
      <li><strong>유형 </strong>- <strong>응용</strong> (기본값), <strong>웹</strong>또는 <strong>Macintosh를</strong>선택합니다. If you select <strong>GIF with Alpha</strong>, the Macintosh option is not available.</li>
@@ -361,14 +361,14 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
   </tr>
   <tr>
    <td><strong>선명하게 하기 유형</strong></td>
-   <td><p>[ <strong>없음</strong>], <strong>선명</strong>또는 <strong>언샵 마스크를</strong>선택합니다. </p>
+   <td><p>[ <strong>없음</strong>], <strong>선명</strong>또는 <strong>언샵 마스크]를</strong>선택합니다. </p>
     <ul>
      <li>[없음] <strong>을 선택하여</strong> 선명 효과를 비활성화합니다.</li>
      <li>모든 크기 <strong>가 </strong>수행된 후 이미지에 기본 선명하게 하기 필터를 적용하려면 선명 효과를 선택합니다. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </li>
      <li>Unsharp mask<strong> select</strong> Unsharp mask to fine-tune a sharpening filter effect on the final downsampled image. 무시될 효과의 강도, 효과의 반경(픽셀 단위) 및 대비 임계값을 제어할 수 있습니다. 이 효과는 Photoshop의 "언샵 마스크" 필터와 동일한 옵션을 사용합니다.</li>
     </ul> <p>언샵 마스크 <strong>에</strong>다음 옵션이 있습니다.</p>
     <ul>
-     <li><strong>양</strong> - 가장자리 픽셀에 적용된 대비 양을 제어합니다. 기본 실제 숫자 값은 1.0입니다. 고해상도 이미지의 경우 최대 5.0까지 늘릴 수 있습니다. 필터 강도 측정값으로 양을 생각해 보십시오.</li>
+     <li><strong>양</strong> - 가장자리 픽셀에 적용된 대비 양을 제어합니다. 기본 실수 값은 1.0입니다. 고해상도 이미지의 경우 최대 5.0까지 늘릴 수 있습니다. 필터 강도 측정값으로 양을 생각해 보십시오.</li>
      <li><strong>반경</strong> - 선명하게 하기에 영향을 주는 가장자리 픽셀 주위의 픽셀 수를 결정합니다. 고해상도 이미지의 경우 1부터 2까지의 실수를 입력합니다. 낮은 값은 가장자리 픽셀만 선명하게 합니다.높은 값은 더 넓은 범위의 픽셀을 선명하게 합니다. 정확한 값은 이미지 크기에 따라 다릅니다.</li>
      <li><strong>임계값</strong> - 언샵 마스크 필터를 적용할 때 무시할 대비 범위를 결정합니다. 즉, 이 옵션은 가장자리 픽셀로 간주되고 선명하게 되기 전에 선명하게 된 픽셀이 주변 영역과 얼마나 달라야 하는지를 결정합니다. 노이즈를 유발하지 않으려면 2~20 사이의 정수 값을 실험해 봅니다. </li>
      <li><strong>적용 대상</strong> - 선명하게 하기 설정이 각 색상 또는 밝기에 적용되는지 여부를 결정합니다.</li>
@@ -384,7 +384,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
      <li><strong>Bi-Linear</strong> - 가장 빠른 리샘플링 방법입니다.일부 앨리어스 가공물은 눈에 띈다.</li>
      <li><strong>Bi-Cubic</strong> - CPU 사용을 증가시키지만, 앨리어싱 가공물이 덜 나타나면서 더 선명한 이미지를 생성합니다.</li>
      <li><strong>Sharp2</strong> - Bi-Cubic보다 약간 더 선명하게 결과물을 만들 수 있지만 CPU 비용이 훨씬 더 높습니다.</li>
-     <li><strong>Bi-Sharp</strong> - Adobe Photoshop에서 쌍입방(더 선명하게)이라고 하는 이미지 크기를 줄이기 위한 Photoshop 기본 <strong>리셀러를</strong> 선택합니다.</li>
+     <li><strong>Bi-Sharp</strong> - Adobe Photoshop에서 쌍입방(더 선명하게)이라고 하는 이미지 크기를 줄이기 위한 Photoshop <strong>기본 리셀러를</strong> 선택합니다.</li>
      <li><strong>각 색상</strong> 및 <strong>밝기</strong> - 각 방법은 색상 또는 밝기를 기반으로 할 수 있습니다. 기본적으로 <strong>각 색상이</strong> 선택되어 있습니다.</li>
     </ul> </td>
   </tr>
