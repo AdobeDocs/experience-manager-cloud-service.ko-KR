@@ -23,6 +23,7 @@ See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-pr
 업로드된 자산이 파노라마 이미지 뷰어와 함께 사용할 구형 파노라마 이미지로 자격을 갖추려면 자산에 다음 중 하나 또는 둘 다가 있어야 합니다.
 
 * 2 종횡비
+
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * 키워드 `equirectangular`, `spherical`및 `panorama`및 `spherical` 및 `panoramic`으로 태그되었습니다. 태그 [사용을 참조하십시오](/help/sites-cloud/authoring/features/tags.md).
