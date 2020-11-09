@@ -1,6 +1,6 @@
 ---
 title: 디지털 자산 컬렉션 관리
-description: Adobe Experience Manager 자산에서 컬렉션의 개념을 파악합니다. 다른 사용자와 컬렉션, 관리, 편집 및 컬렉션 사용 방법을 알아봅니다.
+description: Adobe Experience Manager 자산의 컬렉션 개념을 이해합니다. 다른 사용자와 컬렉션, 관리, 편집 및 컬렉션 사용 방법을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -85,7 +85,7 @@ ht-degree: 0%
 1. 저장을 탭/ **[!UICONTROL 클릭하여]** 스마트 컬렉션을 만든 다음 메시지 상자를 닫아서 프로세스를 완료합니다. 새로운 스마트 컬렉션은 저장된 검색 **[!UICONTROL 목록에도]** 추가됩니다.
 스마트 선택 **[!UICONTROL 만들기 단추]** 레이블이 스마트 선택 **[!UICONTROL 편집으로 변경됩니다]**. 스마트 컬렉션의 설정을 편집하려면 파일 및 폴더 **[!UICONTROL 목록에서]** **[!UICONTROL 파일을]** 선택합니다. 그런 다음 스마트 선택 **[!UICONTROL 편집 단추를 탭/클릭합니다]** .
 
-## 컬렉션에 에셋 추가 {#add-assets-to-a-collection}
+## Add assets to a collection {#add-assets-to-a-collection}
 
 참조된 자산 또는 폴더 목록이 포함된 자산을 컬렉션에 추가할 수 있습니다.
 
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 ### 컬렉션 검색 {#search-collections}
 
-컬렉션 콘솔에서 컬렉션을 검색할 수 있습니다. Omnisearch 상자에서 키워드로 검색할 때 AEM Assets은 컬렉션 이름, 메타데이터 및 컬렉션에 추가된 태그를 검색합니다.
+컬렉션 콘솔에서 컬렉션을 검색할 수 있습니다. Omnisearch 상자에서 키워드로 검색할 때 AEM Assets은 컬렉션에 추가된 컬렉션 이름, 메타데이터 및 태그를 검색합니다.
 
 최상위 수준에서 컬렉션을 검색하면 개별 컬렉션만 검색 결과에 반환됩니다. 컬렉션 내의 자산 또는 폴더는 제외됩니다. 다른 모든 경우(예: 개별 컬렉션 또는 폴더 계층 구조) 모든 관련 자산, 폴더 및 컬렉션이 반환됩니다.
 
@@ -179,7 +179,7 @@ ht-degree: 0%
 
 ## 여러 컬렉션의 메타데이터 속성 편집 {#editing-metadata-properties-of-multiple-collections}
 
-AEM(Adobe Enterprise Manager) 자산을 사용하면 많은 컬렉션의 메타데이터를 일괄 편집할 수 있습니다. 속성  페이지를 사용하여 여러 컬렉션에 대한 메타데이터 변경 작업을 수행할 수 있습니다. 예를 들어 메타데이터 속성을 일반 값으로 변경하거나 태그를 추가하거나 수정할 수 있습니다.
+Adobe Enterprise Manager(AEM) 자산을 사용하면 많은 컬렉션의 메타데이터를 일괄 편집할 수 있습니다. 속성  페이지를 사용하여 여러 컬렉션에 대한 메타데이터 변경 작업을 수행할 수 있습니다. 예를 들어 메타데이터 속성을 일반 값으로 변경하거나 태그를 추가하거나 수정할 수 있습니다.
 
 메타데이터 속성 추가, [!UICONTROL 수정] , 삭제 등 메타데이터 속성 페이지를 사용자 정의하려면 스키마 편집기를 사용합니다.
 
