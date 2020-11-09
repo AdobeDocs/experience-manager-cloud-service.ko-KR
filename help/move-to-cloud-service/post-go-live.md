@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Go-live 후 단계에서는 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
-다음 도구는 클라우드 서비스 환경으로서 AEM 문제를 해결하는 데 사용할 수 있습니다.
+다음 도구는 AEM as a Cloud Service 환경으로서 문제를 해결하는 데 사용할 수 있습니다.
 
 * **개발자 콘솔**
 * **CRX/DE Lite**
@@ -23,9 +23,9 @@ Go-live 후 단계에서는 임시 파일을 정리하고, 지속적인 개발�
 
 ## 개발자 콘솔 {#developer-console}
 
-클라우드 서비스 개발자 환경으로 AEM을 디버깅하는 방법은 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다.
+AEM as a Cloud Service 개발자 환경을 디버깅하는 방법은 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다.
 
-개발 도구에 대한 자세한 내용은 [클라우드 서비스로 AEM 구현](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)을 참조하십시오.
+개발 도구에 대한 자세한 내용은 [AEM as a Cloud Service 구현](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)을 참조하십시오.
 
 ## CRX/DE Lite {#crxde-lite}
 
