@@ -19,7 +19,7 @@ ht-degree: 0%
 뷰어 사전 [설정을 참조하십시오](managing-viewer-presets.md#publishing-viewer-presets).
 
 사용 중인 게시 모드에 따라 뷰어 사전 설정을 게시할 필요가 없을 수도 있습니다.
-뷰어 사전 설정과 관련된 문제는 [다이내믹 미디어 문제 해결 - Scene7을 참조하십시오](troubleshoot-dm.md#viewers).
+뷰어 사전 설정과 관련된 문제는 [Dynamic Media 문제 해결 - Scene7을 참조하십시오](troubleshoot-dm.md#viewers).
 
 ## 자산에 Dynamic Media 뷰어 사전 설정 적용 {#applying-a-viewer-preset-to-an-asset}
 
