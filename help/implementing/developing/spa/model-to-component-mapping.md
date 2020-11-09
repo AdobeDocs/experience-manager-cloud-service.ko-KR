@@ -1,6 +1,6 @@
 ---
 title: SPA에 대한 동적 모델과 구성 요소 간 매핑
-description: 이 문서에서는 AEM용 Javascript SPA SDK에서 구성 요소에 대한 동적 모델 매핑이 발생하는 방법에 대해 설명합니다.
+description: 이 문서에서는 AEM용 Javascript SPA SDK에서 구성 요소에 대한 동적 모델이 발생하는 방법에 대해 설명합니다.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
