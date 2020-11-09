@@ -1,6 +1,6 @@
 ---
-title: 클라우드 서비스로서의 Adobe Experience Manager를 위한 SEO 및 URL 관리 우수 사례
-seo-title: 클라우드 서비스로서의 Adobe Experience Manager를 위한 SEO 및 URL 관리 우수 사례
+title: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 우수 사례
+seo-title: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 우수 사례
 translation-type: tm+mt
 source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 100%
 ---
 
 
-# 클라우드 서비스로서의 Adobe Experience Manager를 위한 SEO 및 URL 관리 우수 사례{#seo-and-url-management-best-practices-for-aem}
+# Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 우수 사례{#seo-and-url-management-best-practices-for-aem}
 
-SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 클라우드 서비스로서의 Adobe Experience Manager(AEM) 프로젝트에서 SEO 문제를 해소해야 합니다.
+SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 Adobe Experience Manager (AEM) as a Cloud Service 프로젝트에서 SEO 문제를 해소해야 합니다.
 
-이 문서에서는 먼저 클라우드 서비스로서의 AEM 구현에서 이를 잘 수행하기 위한 [SEO 우수 사례](#seo-best-practices) 및 권장 사항에 대해 설명합니다. 그런 다음 첫 번째 섹션에서 제기한 보다 [복잡한 구현 절차](#aem-configurations) 중 일부를 자세히 살펴봅니다.
+이 문서에서는 먼저 AEM as a Cloud Service 구현에서 이를 잘 수행하기 위한 [SEO 우수 사례](#seo-best-practices) 및 권장 사항에 대해 설명합니다. 그런 다음 첫 번째 섹션에서 제기한 보다 [복잡한 구현 절차](#aem-configurations) 중 일부를 자세히 살펴봅니다.
 
 ## SEO 우수 사례 {#seo-best-practices}
 
@@ -241,7 +241,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 1. 디스패처가 `/my-page.html`에서 응답을 캐시하고 응답을 사용자에게 반환합니다.
 1. 컨텐츠 작성자가 이 페이지를 변경하고 활성화합니다.
-1. 디스패처 초기화 에이전트가 `/content/my-brand/my-page`**에 대한 무효화 요청을 보냅니다.**디스패처에는 이 경로에 캐시된 페이지가 없으므로 이전 컨텐츠는 캐시된 상태로 유지되며 시기적으로 적절하지 않게 됩니다.
+1. 디스패처 초기화 에이전트가 `/content/my-brand/my-page`**에 대한 무효화 요청을 보냅니다.** 디스패처에는 이 경로에 캐시된 페이지가 없으므로 이전 컨텐츠는 캐시된 상태로 유지되며 시기적으로 적절하지 않게 됩니다.
 
 캐시 무효화를 위해 짧은 URL을 긴 URL에 매핑하는 사용자 지정 발송-초기화 규칙을 구성하는 방법이 있습니다.
 
@@ -363,8 +363,8 @@ Disallow: /
 >
 >Sling 서블릿을 등록하여 확장자가 `sitemap`인 선택기 `xml`을 수신 대기할 수 있습니다. 이렇게 하면 다음과 같이 끝나는 URL이 요청될 때마다 서블릿이 요청을 처리하게 됩니다.
 >    `/<path-to>/page.sitemap.xml`
->그러면 요청에서 요청된 리소스를 가져와 JCR API를 사용하여 컨텐츠 트리의 해당 지점에서 사이트 맵을 생성할 수 있습니다.
->이같은 접근 방식의 이점은 동일한 인스턴스에서 여러 사이트를 제공하는 경우입니다. `/content/siteA.sitemap.xml`에 대한 요청은 `siteA`에 대한 사이트 맵을 생성하는 반면 `/content/siteB.sitemap.xml`에 대한 요청은 추가적인 코드를 작성하지 않아도 `siteB`에 대한 사이트 맵을 생성합니다.
+그러면 요청에서 요청된 리소스를 가져와 JCR API를 사용하여 컨텐츠 트리의 해당 지점에서 사이트 맵을 생성할 수 있습니다.
+이같은 접근 방식의 이점은 동일한 인스턴스에서 여러 사이트를 제공하는 경우입니다. `/content/siteA.sitemap.xml`에 대한 요청은 `siteA`에 대한 사이트 맵을 생성하는 반면 `/content/siteB.sitemap.xml`에 대한 요청은 추가적인 코드를 작성하지 않아도 `siteB`에 대한 사이트 맵을 생성합니다.
 
 ### 레거시 URL에 대해 301 리디렉션 생성 {#creating-redirects-for-legacy-urls}
 
