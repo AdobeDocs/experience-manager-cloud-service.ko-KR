@@ -1,22 +1,22 @@
 ---
-title: Adobe Experience Manager에서 슬링 리소스 합병을 Cloud Service으로 사용
+title: Adobe Experience Manager의 슬링 리소스 합병을 Cloud Service으로 사용
 description: Sling Resource Combination은 리소스에 액세스하고 병합하는 서비스를 제공합니다
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Cloud Service으로 AEM에서 Sling 리소스 합병 사용 {#using-the-sling-resource-merger-in-aem}
+# AEM as a Cloud Service에서 Sling 리소스 합병 사용 {#using-the-sling-resource-merger-in-aem}
 
 ## 목적 {#purpose}
 
 Sling Resource Combination은 리소스에 액세스하고 병합하는 서비스를 제공합니다. 두 가지 모두에 대해 차이(차이) 메커니즘을 제공합니다.
 
-* **[](/help/implementing/developing/introduction/overlays.md)**검색 경로를 사용하는 리소스[](/help/implementing/developing/introduction/overlays.md#search-paths)오버레이
+* **[](/help/implementing/developing/introduction/overlays.md)** 검색 경로를 사용하는 리소스 [](/help/implementing/developing/introduction/overlays.md#search-paths)오버레이
 
 * **리소스** 유형 계층 구조(속성을 통해)를 사용하여 터치 지원 UI에 대한 구성 요소 대화 상자`cq:dialog`를 무시합니다 `sling:resourceSuperType`.
 
@@ -30,9 +30,9 @@ Sling Resource Commodification을 사용하면 오버레이/재정의 리소스 
 
 >[!CAUTION]
 >
->Sling 리소스 합병 및 관련 메서드는 터치 지원 UI에서만 사용할 수 있습니다(Cloud Service으로 AEM에 사용할 수 있는 유일한 UI).
+>Sling 리소스 합병 및 관련 방법은 터치 지원 UI에서만 사용할 수 있습니다(AEM에서 Cloud Service으로 사용할 수 있는 유일한 UI).
 
-### AEM에 대한 목표 {#goals-for-aem}
+### AEM 목표 {#goals-for-aem}
 
 AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습니다.
 
@@ -48,11 +48,12 @@ AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습�
 >이는 업그레이드 내용이 인스턴스에 적용될 때마다 내용을 덮어쓸 `/libs` 수 있기 때문입니다.
 >
 >* 오버레이는 [검색 경로에 따라 다릅니다](/help/implementing/developing/introduction/overlays.md#search-paths).
+   >
+   >
+* 오버라이드는 검색 경로에 종속되지 않고 속성을 사용하여 연결을 `sling:resourceSuperType` 만듭니다.
 >
->* 오버라이드는 검색 경로에 종속되지 않고 속성을 사용하여 연결을 `sling:resourceSuperType` 만듭니다.
 >
->
->그러나 AEM에서 Cloud Service `/apps`로 사용자 지정을 정의하는 것이 가장 좋은 방법인 경우, 대체는 종종 아래에 정의되어 `/apps`있습니다. 이것은 여러분이 아래의 어떤 것도 바꾸지 말아야 하기 때문입니다 `/libs`.
+그러나 AEM에서 Cloud Service `/apps`의 경우 사용자 지정을 정의하는 것이 가장 좋은 방법이므로, 오버라이드는 종종 아래에 정의되어 `/apps`있습니다.이것은 여러분이 아래의 어떤 것도 바꾸지 말아야 하기 때문입니다 `/libs`.
 
 ### 속성 {#properties}
 
@@ -106,7 +107,7 @@ AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습�
 
       `/apps/the-project/components/text/cq:dialog`
 
-이 중 하나를 만들려면 뼈대 구조를 다시 만들어야 합니다. 구조를 간소화하기 위해 모든 중간 노드는 유형(원본 노드 유형을 반영하지 않아도 `nt:unstructured` 됩니다. 예: in `/libs`).
+이 중 하나를 만들려면 뼈대 구조를 다시 만들어야 합니다. 구조를 간소화하기 위해 모든 중간 노드는 유형(원본 노드 유형을 반영하지 않아도 `nt:unstructured` 됩니다.예: in `/libs`).
 
 따라서 위의 오버레이 예에서 다음 노드가 필요합니다.
 
@@ -154,7 +155,7 @@ AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습�
    기본적으로 자동 생성된 속성(예: `jcr:primaryType`)은 현재 사용 중인 노드 유형이 존중되도록 하기 위해 오버레이/재정의 `/libs` 를 받지 않습니다. 오버레이/재정의를 적용하려면 노드를 다시 만들어야 하며, 속성을 명시적으로 `/apps`숨기고 재정의해야 합니다.
 
    1. 원하는 노드 아래 `/apps` 에 해당 노드를 만듭니다. `jcr:primaryType`
-   1. 해당 노드 `sling:hideProperties` 에 자동으로 생성된 속성의 값으로 설정된 속성을 만듭니다. 예를 들면 `jcr:primaryType`
+   1. 해당 노드 `sling:hideProperties` 에 자동으로 생성된 속성의 값으로 설정된 속성을 만듭니다.예를 들면 `jcr:primaryType`
 
       에 정의된 이 속성 `/apps`은 이제 `/libs`
 
@@ -197,8 +198,9 @@ AEM에서 Sling Resource Combination을 사용하는 방법은 다음과 같습�
    1. 속성을 만듭니다 `sling:hideChildren`.
 
       * 유형: `String[]`
-      * value: 숨기기/무시할 하위 노드 목록(정의된 항목 `/libs`)
-      와일드카드 &amp;ast; 모든 하위 노드를 숨기거나 무시하는 데 사용할 수 있습니다.
+      * value:숨기기/무시할 하위 노드 목록(정의된 항목 `/libs`)
+
+      와일드카드 &amp;ast;모든 하위 노드를 숨기거나 무시하는 데 사용할 수 있습니다.
 
 
 * **노드 순서 변경**
@@ -227,7 +229,7 @@ Sling Resource Combination에는 두 개의 사용자 지정 리소스 공급자
 
 * 오버레이:
 
-   * 목적: 검색 경로에 따라 리소스 병합
+   * 목적:검색 경로에 따라 리소스 병합
    * 마운트 지점: `/mnt/overlay`
    * usage: `mount point + relative path`
    * 예:
@@ -236,7 +238,7 @@ Sling Resource Combination에는 두 개의 사용자 지정 리소스 공급자
 
 * 재정의:
 
-   * 목적: 슈퍼 유형에 따라 리소스 병합
+   * 목적:슈퍼 유형에 따라 리소스 병합
    * 마운트 지점: `/mnt/overide`
    * usage: `mount point + absolute path`
    * 예:
