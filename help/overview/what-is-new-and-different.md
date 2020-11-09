@@ -45,7 +45,7 @@ ht-degree: 10%
 >
 >자세한 내용은 [아키텍처를 참조하십시오](/help/core-concepts/architecture.md).
 
-이제 클라우드 서비스로서의 AEM에는
+이제 AEM as a Cloud Service에는
 
 * AEM 이미지의 수가 다양한 동적 아키텍처가 있습니다.
 
@@ -268,14 +268,14 @@ Cloud Service의 Adobe Experience Manager 에셋은 기업이 디지털 에셋 �
 
 자세한 내용은 [개요와 에셋 소개를 Cloud Service으로 참조하십시오](/help/assets/overview.md).
 
-## 클라우드 서비스로서의 Adobe Experience Manager 알기 {#getting-to-know-aem-as-cloud-service}
+## Adobe Experience Manager as a Cloud Service 알기 {#getting-to-know-aem-as-cloud-service}
 
 자세한 내용은 다음을 참조하십시오.
 
-* [클라우드 서비스로서의 Adobe Experience Manager 소개](/help/overview/introduction.md)
-* 클라우드 서비스로서의 Adobe Experience Manager [아키텍처](/help/core-concepts/architecture.md)
-* [클라우드 서비스로서의 AEM에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
-* [ 클라우드 서비스로서의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
-* [클라우드 서비스로서의 AEM Assets에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
+* [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
+* Adobe Experience Manager as a Cloud Service [아키텍처](/help/core-concepts/architecture.md)
+* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
+* [ AEM Sites as a Cloud Service에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 * [Cloud Service으로 AEM Assets 소개](/help/assets/overview.md)
-* [클라우드 서비스로서의 Adobe Experience Manager 자습서](https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 자습서](https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html)
