@@ -1,6 +1,6 @@
 ---
 title: SPA 블루프린트
-description: 본 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크가 이행해야 하는 일반적인 프레임워크 독립적인 계약에 대해 설명합니다.
+description: 본 문서에서는 SPA 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 AEM 프레임워크에서 충족해야 하는 프레임워크에 영향을 받지 않는 일반적인 계약을 설명합니다.
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # SPA 블루프린트 {#spa-blueprint}
 
-저자가 AEM SPA Editor를 사용하여 SPA의 컨텐츠를 편집할 수 있도록 하려면 SPA가 반드시 충족해야 하는 요구 사항이 있습니다.
+작성자가 AEM SPA 편집기를 사용하여 SPA의 컨텐츠를 편집할 수 있도록 하려면 SPA이 충족해야 하는 요구 사항이 있습니다.
 
 ## 소개 {#introduction}
 
-본 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크가 충족해야 하는(즉, AEM 지원 계층) 일반적인 계약에 대해 설명합니다.
+이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크이 충족해야 하는(예: AEM 지원 계층) 일반 계약에 대해 설명합니다.
 
 작성자가 AEM 페이지 편집기를 사용하여 단일 페이지 애플리케이션 프레임워크에 의해 노출된 데이터를 편집할 수 있도록 하려면, 프로젝트는 AEM 리포지토리 내 응용 프로그램에 대해 저장된 데이터의 의미론적 구조를 나타내는 모델의 구조를 해석할 수 있어야 합니다. 이러한 목표를 달성하기 위해 프레임워크에 관계없이 다음 두 개의 라이브러리가 제공됩니다.Adobe `PageModelManager` 와 `ComponentMapping`Creative Cloud
 
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM의 SPA 기능은 프레임워크에 영향을 받지 않지만 현재 Reimate 및 Angular 프레임워크만 지원됩니다.
+>AEM의 SPA 기능은 프레임워크에 영향을 받지 않지만 현재 React 및 Angular 프레임워크만 지원됩니다.
 
 ## PageModelManager {#pagemodelmanager}
 
-라이브러리는 SPA 프로젝트에서 사용할 NPM 패키지로 제공됩니다. `PageModelManager` SPA와 함께 제공되며 데이터 모델 관리자 역할을 합니다.
+라이브러리는 `PageModelManager` SPA 프로젝트에서 사용할 NPM 패키지로 제공됩니다. SPA에 동반되고 데이터 모델 관리자 역할을 합니다.
 
-SPA를 대신하여 실제 컨텐츠 구조를 나타내는 JSON 구조의 검색 및 관리를 추상화합니다. 또한 구성 요소를 다시 렌더링해야 하는 시기를 알려주는 SPA와 동기화해야 합니다.
+SPA을 대신하여 실제 컨텐츠 구조를 나타내는 JSON 구조의 검색 및 관리를 추상화합니다. 또한 SPA과 동기화하여 구성 요소를 다시 렌더링해야 하는 시기를 알려 주어야 합니다.
 
 NPM 패키지 [@adobe/aem-spa-model-manager 참조](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
@@ -50,7 +50,7 @@ NPM 패키지 [@adobe/aem-spa-model-manager 참조](https://www.npmjs.com/packag
 
 #### 동적 모델을 구성 요소 매핑으로 {#dynamic-model-to-component-mapping}
 
-AEM용 Javascript SPA SDK에서 구성 요소에 대한 동적 모델 매핑이 발생하는 방법에 대한 자세한 내용은 SPA에 대한 구성 요소 매핑 [으로 동적 모델을 참조하십시오](model-to-component-mapping.md).
+AEM용 Javascript SPA SDK에서 다이내믹 모델-구성 요소 매핑이 발생하는 방법에 대한 자세한 내용은 SPA용 [구성 요소 매핑에 대한 아티클을 참조하십시오](model-to-component-mapping.md).
 
 ### 프레임워크별 레이어 {#framework-specific-layer}
 
@@ -62,7 +62,7 @@ AEM용 Javascript SPA SDK에서 구성 요소에 대한 동적 모델 매핑이 
 
 ### 페이지 모델 {#page-model}
 
-페이지의 컨텐츠 구조는 AEM에 저장됩니다. 페이지의 모델은 SPA 구성 요소를 매핑하고 인스턴스화하는 데 사용됩니다. SPA 개발자들은 AEM 구성 요소에 매핑되는 SPA 구성 요소를 만듭니다. 이렇게 하려면 리소스 유형(또는 AEM 구성 요소의 경로)을 고유한 키로 사용합니다.
+페이지의 컨텐츠 구조는 AEM에 저장됩니다. 페이지의 모델은 SPA 구성 요소를 매핑하고 인스턴스화하는 데 사용됩니다. SPA 개발자는 SPA 구성 요소에 매핑되는 AEM 구성 요소를 만듭니다. 이렇게 하려면 리소스 유형(또는 AEM 구성 요소의 경로)을 고유한 키로 사용합니다.
 
 SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라 컨텐츠의 변경 사항과 함께 업데이트해야 합니다. 동적 구성 요소를 활용하는 패턴을 사용하여 제공된 페이지 모델 구조를 따라 즉시 구성 요소를 인스턴스화해야 합니다.
 
@@ -160,7 +160,7 @@ npm resource [@adobe/aem-response-editable-components를 참조하십시오.](ht
 
 #### 응답형 격자의 자리 표시자 {#placeholder-of-the-responsive-grid}
 
-SPA 구성 요소는 응답형 격자와 같은 그래픽 컨테이너에 매핑되며, 컨텐츠가 작성될 때 가상 하위 자리 표시자를 추가해야 합니다. 페이지 편집기에 의해 SPA의 컨텐츠가 작성되면 해당 컨텐츠는 iframe을 사용하여 편집기에 임베드되고 속성은 해당 컨텐츠의 문서 노드에 추가됩니다. `data-cq-editor` 속성이 `data-cq-editor` 있는 경우, 컨테이너에는 새 구성 요소를 페이지에 삽입할 때 작성자가 상호 작용하는 영역을 나타내는 HTMLElement가 포함되어야 합니다.
+SPA 구성 요소는 응답형 격자와 같은 그래픽 컨테이너에 매핑되며, 컨텐츠가 작성될 때 가상 하위 자리 표시자를 추가해야 합니다. SPA 컨텐츠가 페이지 편집기에 의해 작성되면 해당 컨텐츠는 iframe을 사용하여 편집기에 포함되고 해당 컨텐츠의 문서 노드에 `data-cq-editor` 추가됩니다. 속성이 `data-cq-editor` 있는 경우, 컨테이너에는 새 구성 요소를 페이지에 삽입할 때 작성자가 상호 작용하는 영역을 나타내는 HTMLElement가 포함되어야 합니다.
 
 예:
 
@@ -271,15 +271,15 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 자세한 내용은 [SPA 모델 라우팅](routing.md) 아티클을 참조하십시오.
 
-## SPA in Action {#spa-in-action}
+## SPA inAction {#spa-in-action}
 
-다음과 같은 문서를 계속 진행하여 간단한 SPA가 작동하는 방식을 살펴보고 SPA를 직접 경험해 보십시오.
+다음과 같은 문서를 계속 진행하여 간단한 SPA을 사용하여 SPA을 직접 실험해 보는 방법을 살펴보십시오.
 
-* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md).
-* [AEM에서 Angular를 사용하여 SPA 시작](getting-started-angular.md).
+* [React를 사용하여 AEM에서 시작하기](getting-started-react.md).
+* [AEM에서 Angular를 사용하여 SPA 시작](getting-started-angular.md)
 
 ## Further Reading {#further-reading}
 
 AEM의 SPA에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-* [SPA 편집기](editor-overview.md) 개요 - AEM의 SPA 및 커뮤니케이션 모델 개요
+* [SPA](editor-overview.md) 및 통신 모델의 SPA 개요를 위한 AEM 편집기 개요
