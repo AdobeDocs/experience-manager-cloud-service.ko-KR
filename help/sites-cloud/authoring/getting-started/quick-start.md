@@ -105,6 +105,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * 모바일 장치에서: 카드를 길게 탭
       * 데스크탑 장치에서: 확인 표시 아이콘으로 표시되는 [빠른 작업](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) 사용
    * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
+
    ![카드 예](/help/sites-cloud/authoring/assets/card.png)
 
 ### 빠른 작업(카드 보기/데스크탑 전용) {#quick-actions-card-view-desktop-only}
@@ -137,6 +138,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       * 사이드 패널 열기
       * 구성 요소 탭([구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)) 선택
       * 필요한 구성 요소를 페이지로 드래그
+
       다음 아이콘을 사용하여 사이드 패널을 열고 닫을 수 있습니다.
 
       ![사이드 패널 전환 단추](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -174,6 +176,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 도구 모음에서 **미리 보기**&#x200B;를 선택합니다.
    * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
+
    >[!NOTE]
    >
    >컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)를 사용해야 합니다.
@@ -189,6 +192,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
       * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
+
       ![속성 단추](/help/sites-cloud/authoring/assets/properties.png)
 
    1. 페이지 속성이 표시됩니다. 필요에 따라 업데이트한 다음 [저장]을 사용하여 이러한 내용을 유지할 수 있습니다.
@@ -212,6 +216,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 적절한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
       * [페이지를 선택했을 때](#selecting-your-page-for-further-action)(또는 [나중에 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)에 액세스할 때)의 도구 모음
+
       ![빠른 게시 단추](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -237,6 +242,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 필요한 리소스에 대한 [빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only)
    * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
+
    그런 다음 작업에 따라 수행합니다.
 
    * 복사:
@@ -282,7 +288,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 페이지의 [버전](/help/sites-cloud/authoring/features/page-versions.md)을 생성하려면:
 
-1. 타임라인 레인을 열려면 **[페이지를 선택](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**하기 전이나 후에 도구 모음 아이콘을 사용하여[타임라인](#selecting-your-page-for-further-action)을 선택합니다.
+1. 타임라인 레인을 열려면 **[페이지를 선택](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**&#x200B;하기 전이나 후에 도구 모음 아이콘을 사용하여 [타임라인](#selecting-your-page-for-further-action)을 선택합니다.
 
    ![타임라인 보기 옵션](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -296,7 +302,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 페이지 버전을 복원 및/또는 비교할 때 동일한 기본 메커니즘이 사용됩니다.
 
-1. **[페이지를 선택](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**하기 전이나 후에 도구 모음 아이콘을 사용하여[타임라인](#selecting-your-page-for-further-action)을 선택합니다.
+1. **[페이지를 선택](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**&#x200B;하기 전이나 후에 도구 모음 아이콘을 사용하여 [타임라인](#selecting-your-page-for-further-action)을 선택합니다.
 
    ![타임라인 보기 옵션](/help/sites-cloud/authoring/assets/timeline.png)
 
