@@ -1,22 +1,22 @@
 ---
-title: 클라우드 서비스로서의 Adobe Experience Manager 아키텍처 소개
-description: '클라우드 서비스로서의 Adobe Experience Manager 아키텍처 소개. '
-translation-type: ht
+title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
+description: 'Adobe Experience Manager as a Cloud Service 아키텍처 소개. '
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
 
 ---
 
 
-# 클라우드 서비스로서의 Adobe Experience Manager 아키텍처 소개 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+# Adobe Experience Manager as a Cloud Service 아키텍처 소개 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
-클라우드 서비스로서의 Adobe Experience Manager(AEM)는 아키텍처가 변경되었습니다.
+Adobe Experience Manager (AEM) as a Cloud Service는 아키텍처가 변경되었습니다.
 
 ## 크기 조절 {#scaling}
 
-이제 클라우드 서비스로서의 AEM에는
+이제 AEM as a Cloud Service에는
 
 * AEM 이미지의 수가 다양한 동적 아키텍처가 있습니다.
 
@@ -36,9 +36,9 @@ ht-degree: 100%
 
 ![다양한 사용 패턴을 위한 자동 크기 조절](assets/concepts-02.png "다양한 사용 패턴을 위한 자동 크기 조절")
 
-이를 위해 클라우드 서비스로서의 AEM의 모든 인스턴스는 동일하게 생성되며, 이때 각 인스턴스는 노드 수, 할당된 메모리 및 할당된 컴퓨팅 용량의 측면에서 동일한 기본 크기 특성을 갖습니다.
+이를 위해 AEM as a Cloud Service의 모든 인스턴스는 동일하게 생성되며, 이때 각 인스턴스는 노드 수, 할당된 메모리 및 할당된 컴퓨팅 용량의 측면에서 동일한 기본 크기 특성을 갖습니다.
 
-클라우드 서비스로서의 AEM은 다음과 같은 작업을 수행하는 오케스트레이션 엔진 사용을 기반으로 합니다.
+AEM as a Cloud Service은 다음과 같은 작업을 수행하는 오케스트레이션 엔진 사용을 기반으로 합니다.
 
 * 지속해서 서비스 상태를 모니터링합니다.
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
 * 노드 수, 메모리 용량 및 각 노드의 할당된 CPU 용량에 적용할 수 있습니다.
 
-* 트래픽 패턴이 변화할 때 클라우드 서비스로서의 AEM이 트래픽 패턴을 수용할 수 있도록 해줍니다.
+* 트래픽 패턴이 변화할 때 AEM as a Cloud Service이 트래픽 패턴을 수용할 수 있도록 해줍니다.
 
 서비스의 테넌트당 인스턴스에 대한 크기 조절은 두 축에서 자동 또는 수동으로 수행될 수 있습니다.
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 >
 >자세한 내용은 [배포 - 런타임 모드](/help/implementing/deploying/overview.md#runmodes)를 참조하십시오.
 
-클라우드 서비스로서의 AEM은 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다. 클라우드 서비스로서의 AEM에 사용할 수 있는 환경에는 다음 네 가지 유형이 있습니다.
+AEM as a Cloud Service는 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다. AEM as a Cloud Service에 사용할 수 있는 환경에는 다음 네 가지 유형이 있습니다.
 
 * **프로덕션 환경**: 비즈니스 전문가를 위한 애플리케이션을 호스팅합니다.
 
@@ -88,7 +88,7 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
 | 비프로덕션 환경(개발 또는 데모) | 0 ~ N |
 | 각 환경을 위한 파이프라인 | 0 또는 1 |
 
-처음에는 클라우드 서비스로서의 AEM에 두 가지 프로그램을 사용할 수 있습니다.
+처음에는 AEM as a Cloud Service에 두 가지 프로그램을 사용할 수 있습니다.
 
 * AEM 클라우드 사이트 서비스
 
@@ -102,9 +102,9 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
 
 <!--- needs reworking -->
 
-![클라우드 서비스로서의 AEM - 런타임 아키텍처](assets/concepts-03.png "클라우드 서비스로서의 AEM - 런타임 아키텍처")
+![AEM as a Cloud Service - 런타임 아키텍처](assets/concepts-03.png "AEM as a Cloud Service - 런타임 아키텍처")
 
-* 클라우드 서비스로서의 AEM Sites의 경우:
+* AEM Sites as a Cloud Service의 경우:
 
    * 각 환경에 대한 작성 계층과 게시 계층의 개념이 계속 있습니다(높은 수준).
 
@@ -120,7 +120,7 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
       * 최종 사용자 또는 사이트 방문자는 AEM 게시 서비스를 통해 웹 사이트를 방문합니다.
 
 
-* 클라우드 서비스로서의 AEM Assets의 경우:
+* AEM Assets as a Cloud Service의 경우:
 
    * 아키텍처가 작성 환경만 포함합니다.
 
@@ -138,29 +138,29 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
       >
       >자세한 내용은 [복제](/help/operations/replication.md)를 참조하십시오.
 
-   * 개발자 및 관리자는 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager)를 통해 제공되는 CI/CD(Continuous Integration/Continuous Delivery) 서비스를 사용하여 클라우드 서비스로서의 AEM 애플리케이션을 관리합니다. 이러한 관리에는 Cloud Manager의 CI/CD 파이프라인을 사용한 코드 및 구성 배포가 포함됩니다. 모니터링, 유지 관리 및 문제 해결과 관련된 모든 사항(예: 로그 파일)은 Cloud Manager 내에서 고객에게 표시됩니다.
+   * 개발자 및 관리자는 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager)를 통해 제공되는 CI/CD(Continuous Integration/Continuous Delivery) 서비스를 사용하여 AEM as a Cloud Service 애플리케이션을 관리합니다. 이러한 관리에는 Cloud Manager의 CI/CD 파이프라인을 사용한 코드 및 구성 배포가 포함됩니다. 모니터링, 유지 관리 및 문제 해결과 관련된 모든 사항(예: 로그 파일)은 Cloud Manager 내에서 고객에게 표시됩니다.
 
    * 작성 및 게시 계층 액세스는 항상 로드 밸런서를 통해 수행됩니다. 이 기능은 항상 각 계층의 활성 노드에서 최신 상태로 유지됩니다.
 
    * 게시 계층의 경우 CDN(Continuous Delivery Network) 서비스를 첫 번째 시작 지점으로 사용할 수도 있습니다.
 
-* 클라우드 서비스로서의 AEM의 데모 인스턴스의 경우 아키텍처는 단일 작성 노드로 간소화됩니다. 따라서 표준 개발, 스테이지 또는 프로덕션 환경의 모든 특성을 제공하지는 않습니다. 이것은 또한 일정한 다운타임이 있을 수 있고 백업/복원 작업을 지원하지 않는다는 것을 의미합니다.
+* AEM as a Cloud Service의 데모 인스턴스의 경우 아키텍처는 단일 작성 노드로 간소화됩니다. 따라서 표준 개발, 스테이지 또는 프로덕션 환경의 모든 특성을 제공하지는 않습니다. 이것은 또한 일정한 다운타임이 있을 수 있고 백업/복원 작업을 지원하지 않는다는 것을 의미합니다.
 
 ## 배포 아키텍처 {#deployment-architecture}
 
-Cloud Manager는 클라우드 서비스로서의 AEM 인스턴스에 대한 모든 업데이트를 관리합니다. 이것은 필수 작업으로서, 작성 계층과 게시 계층 모두에 고객 애플리케이션을 작성, 테스트 및 배포할 수 있는 유일한 방법입니다. 이러한 업데이트는 새로운 버전의 AEM 클라우드 서비스가 준비되었을 때 Adobe가 또는 새로운 버전의 애플리케이션이 준비되었을 때 고객이 트리거할 수 있습니다.
+Cloud Manager는 AEM as a Cloud Service 인스턴스에 대한 모든 업데이트를 관리합니다. 이것은 필수 작업으로서, 작성 계층과 게시 계층 모두에 고객 애플리케이션을 작성, 테스트 및 배포할 수 있는 유일한 방법입니다. 이러한 업데이트는 새로운 버전의 AEM 클라우드 서비스가 준비되었을 때 Adobe가 또는 새로운 버전의 애플리케이션이 준비되었을 때 고객이 트리거할 수 있습니다.
 
 기술적으로, 이는 프로그램 내의 각 환경에 연결된 배포 파이프라인의 개념 때문에 구현됩니다. Cloud Manager 파이프라인이 실행되면 작성 계층과 게시 계층 모두에 대해 고객 애플리케이션의 새 버전이 만들어집니다. 이 작업은 최신 고객 패키지를 최신 기준 Adobe 이미지와 결합함으로써 수행됩니다. 새로운 이미지가 성공적으로 만들어지고 테스트되면 Cloud Manager는 롤링 업데이트 패턴을 사용하여 모든 서비스 노드를 업데이트함으로써 최신 버전의 이미지로의 전환을 완전히 자동화합니다. 이렇게 되면 작성 또는 게시 서비스에 대한 다운타임이 발생하지 않습니다.
 
 <!--- needs reworking -->
 
-![클라우드 서비스로서의 AEM - 배포 아키텍처](assets/concepts-04.png "클라우드 서비스로서의 AEM - 배포 아키텍처")
+![AEM as a Cloud Service - 배포 아키텍처](assets/concepts-04.png "AEM as a Cloud Service - 배포 아키텍처")
 
 ## 컨텐츠 배포 {#content-distribution}
 
-클라우드 서비스로서의 Adobe Experience Manager는 컨텐츠 게시가 작동하는 방식을 수정했습니다. 클라우드 서비스로서의 AEM을 사용하는 경우, 이전 AEM 버전의 복제 프레임워크는 이제 페이지를 게시하는 데 사용되지 않습니다(변경 내용을 작성 인스턴스에서 게시 인스턴스로 이동).
+Adobe Experience Manager as a Cloud Service는 컨텐츠 게시가 작동하는 방식을 수정했습니다. AEM as a Cloud Service를 사용하는 경우, 이전 AEM 버전의 복제 프레임워크는 이제 페이지를 게시하는 데 사용되지 않습니다(변경 내용을 작성 인스턴스에서 게시 인스턴스로 이동).
 
-이제 클라우드 서비스로서의 AEM에서는 [Sling 컨텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html) 기능을 사용하여 적절한 컨텐츠를 옮깁니다. 이 작업에서는 AEM 런타임의 외부에 있는 Adobe I/O에서 실행되는 파이프라인 서비스를 사용합니다.
+이제 AEM as a Cloud Service에서는 [Sling 컨텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html) 기능을 사용하여 적절한 컨텐츠를 옮깁니다. 이 작업에서는 AEM 런타임의 외부에 있는 Adobe I/O에서 실행되는 파이프라인 서비스를 사용합니다.
 
 자동 자체 구성을 포함하여 이 설정은 게시 노드가 런타임 중에 추가, 제거 또는 재활용될 때 자동화됩니다.
 
@@ -172,7 +172,7 @@ Cloud Manager는 클라우드 서비스로서의 AEM 인스턴스에 대한 모�
 
 ## 주요 개선 사항 {#key-evolutions}
 
-클라우드 서비스로서의 AEM을 위한 새로운 아키텍처에서는 이전 세대와 비교하여 몇 가지 근본적인 변경 사항과 획기적인 기능을 제공합니다.
+AEM as a Cloud Service를 위한 새로운 아키텍처에서는 이전 세대와 비교하여 몇 가지 근본적인 변경 사항과 획기적인 기능을 제공합니다.
 
 * 모든 파일(Blob)은 클라우드 데이터 리포지토리에서 바로 업로드되고 제공됩니다. 연관된 비트 스트림은 AEM 작성 및 게시 서비스의 JVM을 거치지 않습니다. 그 결과, AEM 작성 및 게시 서비스의 노드는 크기가 더 작아질 수 있고 빠른 자동 크기 조절에 대한 기대를 더 잘 충족합니다. 비즈니스 전문가의 경우 이에 따라 이미지, 비디오 등을 더 빨리 업로드하고 다운로드할 수 있습니다.
 
