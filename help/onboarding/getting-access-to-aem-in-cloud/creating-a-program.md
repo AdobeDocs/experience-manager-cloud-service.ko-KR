@@ -1,11 +1,11 @@
 ---
-title: 프로그램 만들기 - 클라우드 서비스
-description: 프로그램 만들기 - 클라우드 서비스
+title: 프로그램 만들기 - Cloud Service
+description: 프로그램 만들기 - Cloud Service
 translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -53,7 +53,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
    >Cloud Manager UI에서 셀프 서비스 Git 계정 관리를 사용하여 Git 리포지토리에 액세스하고 관리하는 방법에 대한 자세한 내용은 Git 액세스 [를 참조하십시오](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. 개발 환경이 만들어지면 사용자는 아래 그림과 같이 **AEM** 링크에 액세스할 수 있습니다.
+1. 개발 환경이 만들어지면 아래 그림과 같이 사용자는 AEM **** 링크에 액세스할 수 있습니다.
 
    ![](assets/create-program-5.png)
 
@@ -68,7 +68,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 ## 샌드박스 프로그램 삭제 {#delete-sandbox-program}
 
-클라우드 관리자의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 클라우드 관리자 UI를 통해 프로덕션 및 스테이지 환경 세트를 삭제할 수 있습니다.
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
 >프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
@@ -86,7 +86,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 ## 정규 프로그램 만들기 {#create-regular-program}
 
-일반 ** 프로그램은 AEM 및 Cloud Manager에 익숙하고 코드를 Production에 배포하기 위한 목적으로 작성, 빌드 및 테스트를 시작할 준비가 된 사용자를 위한 것입니다.
+일반 ** 프로그램은 AEM 및 Cloud Manager에 익숙하고 코드를 Production에 배포하기 위한 목적으로 작성, 빌드 및 테스트할 준비가 된 사용자를 위한 것입니다.
 
 아래 절차에 따라 일반 프로그램을 만드십시오.
 
