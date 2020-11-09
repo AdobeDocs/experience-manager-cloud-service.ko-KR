@@ -29,7 +29,7 @@ Assets REST API를 [](/help/assets/mac-api-assets.md) 사용하면 Cloud Service
 
 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager을 헤드리스 CMS(Content Management System)로 Cloud Service으로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 기타 애플리케이션입니다.
 
-예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 정의 등은 HTTP API를 통해 제공되는 컨텐츠가 종종 JSON 형식으로 필요합니다.
+예를 들어 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 정의 등은 HTTP API를 통해 제공된 컨텐츠를 주로 JSON 형식으로 요구합니다.
 
 AEM [코어 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 요소는 이러한 목적으로 필요한 읽기 작업을 제공할 수 있고 JSON 출력을 사용자 정의할 수 있는 매우 포괄적이고 유연하며 사용자 정의 가능한 API를 제공하지만 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅되어야 하는 AEM WCM(Web Content Management) 구현에 대한 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 이용하고 있는 것은 아닙니다.
 
@@ -105,7 +105,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
   <tr>
    <td>지원되는 사용 사례</td>
    <td>일반적인 목적</td>
-   <td><p>단일 페이지 애플리케이션(SPA) 또는 기타 모든(컨텐츠 소비) 컨텍스트에서의 사용을 위해 최적화되었습니다.</p> <p>레이아웃 정보를 포함할 수도 있습니다.</p> </td>
+   <td><p>단일 페이지 애플리케이션(SPA) 또는 기타(컨텐츠 소비) 컨텍스트에서의 소비를 위해 최적화되었습니다.</p> <p>레이아웃 정보를 포함할 수도 있습니다.</p> </td>
   </tr>
   <tr>
    <td>지원되는 작업</td>
