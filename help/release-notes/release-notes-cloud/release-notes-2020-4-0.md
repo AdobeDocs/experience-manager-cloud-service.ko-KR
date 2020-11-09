@@ -1,22 +1,22 @@
 ---
-title: 클라우드 서비스로서의 Adobe Experience Manager 2020.4.0용 릴리스 노트
+title: Adobe Experience Manager as a Cloud Service 2020.4.0용 릴리스 노트
 description: Experience Manager 2020.4.0용 릴리스 노트
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
 
 ---
 
 
-# 클라우드 서비스로서의 Adobe Experience Manager 2020.4.0 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.4.0 릴리스 노트 {#release-notes}
 
-이 페이지에서는 클라우드 서비스 2020.4.0으로서의 [!DNL Experience Manager] 일반 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 [!DNL Experience Manager] as a Cloud Service 2020.4.0 일반 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-클라우드 서비스 2020.4.0으로서의 [!DNL Experience Manager]의 출시일은 2020년 4월 9일입니다.
+[!DNL Experience Manager] as a Cloud Service 2020.4.0의 출시일은 2020년 4월 9일입니다.
 
 ## Assets의 새로운 기능 {#assets}
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 
 * [Brand Portal](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html)은 Experience Manager Assets에 대한 자산 분배 사용 사례를 지원합니다. [!DNL Brand Portal]은 승인된 브랜드 및 제품 자산을 외부 에이전시, 파트너, 내부 팀 및 리셀러에게 다운로드하도록 안전하게 분배하여 조직의 마케팅 요구 사항을 충족할 수 있도록 지원합니다.
    * [!DNL Brand Portal] 구성은 [!DNL Adobe I/O] 콘솔을 통해 완료됩니다. [Brand Portal 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)을 참조하십시오.
-   * [!DNL Brand Portal]의 Asset 소싱은 아직 클라우드 서비스로서의 [!DNL Experience Manager]에서 지원되지 않습니다.
+   * [!DNL Brand Portal]의 Asset 소싱은 아직 [!DNL Experience Manager] as a Cloud Service에서 지원되지 않습니다.
 
-* [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) v2.0은 클라우드 서비스로서의 [!DNL Experience Manager]에서 작동합니다. [!DNL Adobe Asset Link]는 인앱 [!DNL Asset Link] 패널을 통해 [!DNL Experience Manager Assets]을 [!DNL Creative Cloud] 데스크탑 앱인 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]과 연결하여 컨텐츠 제작 프로세스에서 크리에이티브와 마케터 간의 협업을 간소화합니다.
+* [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) v2.0은 [!DNL Experience Manager] as a Cloud Service에서 작동합니다. [!DNL Adobe Asset Link]는 인앱 [!DNL Asset Link] 패널을 통해 [!DNL Experience Manager Assets]을 [!DNL Creative Cloud] 데스크탑 앱인 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]과 연결하여 컨텐츠 제작 프로세스에서 크리에이티브와 마케터 간의 협업을 간소화합니다.
    * [!DNL Experience Manager]는 [!DNL Adobe Asset Link]용으로 사전 구성되어 있어서 크리에이티브 전문가가 [쉽게 구성](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html)하고 더 빠른 롤아웃을 수행할 수 있습니다.
    * [!DNL Asset Link]는 이제 크리에이티브 사용자가 다른 [!DNL Experience Manager] 환경에 쉽게 연결할 수 있도록 해주는 [Experience Manager 환경 전환기](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)를 지원합니다. 이 기능은 예를 들어 다양한 [!DNL Experience Manager Assets] 배포를 사용하여 여러 고객과 작업하는 에이전시 디자이너에게 유용합니다.
 
