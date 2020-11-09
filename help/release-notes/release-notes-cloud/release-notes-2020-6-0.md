@@ -1,5 +1,5 @@
 ---
-title: 클라우드 서비스로서의 Adobe Experience Manager 2020.6.0용 릴리스 노트
+title: Adobe Experience Manager as a Cloud Service 2020.6.0용 릴리스 노트
 description: Experience Manager 2020.6.0용 릴리스 노트
 translation-type: tm+mt
 source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
@@ -10,17 +10,17 @@ ht-degree: 99%
 ---
 
 
-# 클라우드 서비스 2020.6.0으로서의 AEM 릴리스 노트 {#release-notes}
+# AEM as a Cloud Service 2020.6.0 릴리스 노트 {#release-notes}
 
-이 페이지에서는 클라우드 서비스 2020.6.0으로서의 Experience Manager 일반 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 Experience Manager as a Cloud Service 2020.6.0 일반 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-클라우드 서비스 2020.6.0으로서의 [!DNL Experience Manager]의 출시일은 2020년 6월 4일입니다.
+[!DNL Experience Manager] as a Cloud Service 2020.6.0의 출시일은 2020년 6월 4일입니다.
 
 ## AEM Sites의 새로운 기능 {#aem-sites}
 
-클라우드 서비스로서의 AEM 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
+AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
 
 ### 새로운 기능 {#whats-new-2020.6.0}
 
@@ -47,15 +47,15 @@ ht-degree: 99%
 
 * 화면 판독기를 향상했습니다.
 
-## 클라우드 서비스로서의 AEM 기본 사항의 새로운 기능 {#foundations}
+## AEM as a Cloud Service 기본 사항의 새로운 기능 {#foundations}
 
 AEM 프로젝트 빌드 시간은 AEM 프로젝트 pom.xml의 모든 참조를 원격 저장소에 제거하여 개선됩니다 `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-해당 위치에서 이전에 호스팅된 클라우드 서비스 SDK API Jar로서의 AEM은 이제 Maven의 기본 객체 저장소인 Maven Central에 있습니다.
+해당 위치에서 이전에 호스팅된 AEM as a Cloud Service SDK API Jar은 이제 Maven의 기본 객체 저장소인 Maven Central에 있습니다.
 
 ## Cloud Manager의 새로운 기능 {#cloud-manager}
 
-클라우드 서비스로서의 AEM 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
+AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 기능과 업데이트에 대해 알려면 이 섹션을 따르십시오.
 
 ### 새로운 기능 {#what-is-new-cloud-manager}
 
