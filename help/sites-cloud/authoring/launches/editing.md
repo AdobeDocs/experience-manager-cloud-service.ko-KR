@@ -40,7 +40,7 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 수행한 변경 작업을 추적하기 위해 **참조**&#x200B;에서 론치를 보고 론치 페이지를 소스 페이지와 비교할 수 있습니다.
 
 1. **사이트** 콘솔에서 [론치의 소스 페이지로 이동하여 선택합니다](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**패널을 열고&#x200B;**론치**를 선택합니다.
+1. **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 패널을 열고 **론치**&#x200B;를 선택합니다.
 1. 특정 론치를 선택한 다음, **소스와 비교**&#x200B;를 선택합니다.
 
    ![론치와 소스 비교](/help/sites-cloud/authoring/assets/launches-compare.png)
