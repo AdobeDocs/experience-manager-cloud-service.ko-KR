@@ -39,7 +39,7 @@ Adobe 뷰어 [참조 안내서를 참조하십시오](https://docs.adobe.com/con
 
 ## Managing Viewer Presets {#managing-viewer-presets-1}
 
-AEM에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]>[!UICONTROL 뷰어 사전 설정을 탭하여 뷰어 사전 설정을 추가, 편집, 삭제, 게시, 게시 취소 및 미리 볼 수]**&#x200B;있습니다.
+AEM에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정을 탭하여 뷰어 사전 설정을 추가, 편집, 삭제, 게시, 게시 취소 및 미리 볼 수]**&#x200B;있습니다.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -399,7 +399,7 @@ AEM에서는 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 다양한
 
 **뷰어 사전 설정을 만들려면**
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]>[!UICONTROL 뷰어 사전 설정을 누릅니다]**.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정을 누릅니다]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -421,11 +421,11 @@ AEM에서는 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 다양한
 
       각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 뷰어 참조 안내서의 &quot; *`<viewer name>`* 뷰어 사용자 지정&quot; 도움말 항목에 [설명되어 있습니다](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). 예를 들어, 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록 및 설명 `Mixed_Media`에 [대해서는 혼합 미디어 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) 사용자 지정을 참조하십시오.
 
-   * 별도의 CSS 파일에서 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 선택한 **[!UICONTROL 유형]** 풀다운 메뉴 아래에 있는 CSS **[!UICONTROL 가져오기를 탭하여 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면]** 시각적 편집기를 위로 스크롤해야 할 수도 있습니다.
+   * 별도의 CSS 파일에서 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 선택한 **[!UICONTROL 유형]** 풀다운 메뉴 아래에 있는 CSS **[!UICONTROL 가져오기를 탭하여 업로드된 CSS 파일을 찾아 뷰어]** 사전 설정과 연결하려면 시각적 편집기를 위로 스크롤해야 합니다.
 
       CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 뷰어 클래스 이름을 사용하여 정의해야 `.s7mixedmediaviewer` 합니다.
 
-      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 뷰어 참조 안내서의 &quot; *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 [설명되어 있습니다](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). 예를 들어 확대/축소 뷰어용 CSS 마커에 대해 읽으려면 확대/축소 뷰어 사용자 [지정을 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html). 하지만 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
+      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 뷰어 참조 안내서의 &quot; *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 [설명되어 있습니다](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). 예를 들어 확대/축소 뷰어의 CSS 마커에 대해 읽으려면 확대/축소 뷰어 사용자 [지정을 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html). 하지만 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
    >[!NOTE]
    >
    >CSS를 Raw 형식으로 직접 편집하려면 선택한 유형 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS]** 표시/숨기기를 누릅니다(보려면 시각적 편집기를 위로 스크롤해야 할 수 있음).
@@ -486,7 +486,7 @@ AEM에서는 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 다양한
 
 뷰어 사전 설정에서 **[!UICONTROL 자동 스크롤]** (확인란 지우기)을 비활성화하는 경우 사용자가 비디오를 재생하는 동안 패널에는 비디오 전체 길이에 대한 첫 번째 축소판 이미지만 표시됩니다. 그러나 원하는 경우 위/아래 화살표 아이콘을 사용하여 축소판을 수동으로 스크롤할 수 있습니다.
 
-뷰어 사전 설정에서 **[!UICONTROL 자동 스크롤을]** 활성화(선택)하면 비디오 재생 중에 비디오 세그먼트에 할당된 축소판 이미지가 세그먼트 시작 시 뷰로 스크롤됩니다. 하지만 세그먼트 내 특정 축소판이 그 이전 또는 후의 다른 축소판보다 두 배 이상 표시되는 경우가 있습니다. 이러한 동작은 세그먼트의 축소판 수가 패널에 표시되는 수보다 크고 균일하게 표시되지 않기 때문에 발생합니다.
+뷰어 사전 설정에서 **[!UICONTROL 자동 스크롤을]** 활성화(선택)하면 비디오 재생 중에 비디오 세그먼트에 할당된 축소판 이미지가 세그먼트 시작 시 뷰로 스크롤됩니다. 하지만 세그먼트 내 특정 축소판이 그 이전 또는 후의 다른 축소판보다 두 배 이상 표시되는 경우가 있습니다. 이러한 동작은 세그먼트의 축소판 수가 패널에 표시되는 수보다 크고 균일하게 분할되지 않기 때문에 발생합니다.
 
 예를 들어 30초 분량의 비디오 세그먼트가 하나 있다고 가정해 보겠습니다. 30초 동안 표시할 총 9개의 축소판이 있습니다. 브라우저 크기는 표시 패널에 표시되는 4개의 축소판 위치가 있는 방식으로 조정됩니다. 30초 비디오 시간 세그먼트는 3개의 하위 세그먼트로 분할됩니다. 다음 표는 지정된 시간 하위 세그먼트에 대해 축소판이 표시되는 분류를 보여줍니다.
 
@@ -523,7 +523,7 @@ AEM에서는 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 다양한
 
 **뷰어 사전 설정을 활성화 또는 비활성화하려면**
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]>[!UICONTROL 뷰어 사전 설정을 누릅니다]**.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정을 누릅니다]**.
 1. Viewer Preset 페이지의 **[!UICONTROL 상태]** 열 헤더 아래에서 토글을 눌러 뷰어 사전 설정을 활성화하거나 비활성화합니다.
 
    활성화되는 뷰어 사전 설정은 오른쪽, 파란색 상자 내에 토글이 표시됩니다.비활성화된 뷰어 사전 설정은 연한 회색 상자 내에 있는 왼쪽에 표시됩니다.
@@ -540,13 +540,13 @@ AEM에서는 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 다양한
 
 **뷰어 사전 설정을 게시하려면**
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]>[!UICONTROL 뷰어 사전 설정을 누릅니다]**.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정을 누릅니다]**.
 1. 게시할 뷰어 사전 설정을 하나 이상 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 게시]** 아이콘을 누릅니다.
 
 ## 뷰어 사전 설정 정렬 {#sorting-viewer-presets}
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]>[!UICONTROL 뷰어 사전 설정을 누릅니다]**.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정을 누릅니다]**.
 1. 사전 **[!UICONTROL 설정 제목]**, **[!UICONTROL 유형]**, **[!UICONTROL 게시됨]**&#x200B;또는 **[!UICONTROL 상태]** 를 클릭하여 해당 열 제목으로 정렬할 수 있습니다. 예를 들어 유형 **[!UICONTROL 을]** 클릭하여 뷰어 사전 설정 유형을 사전순 또는 역사전순으로 정렬합니다.
 
 ## 뷰어 사전 설정 편집 {#editing-viewer-presets}
@@ -555,7 +555,7 @@ AEM에서는 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 다양한
 
 **뷰어 사전 설정을 편집하려면**
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]>[!UICONTROL 뷰어 사전 설정을 누릅니다]**.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정을 누릅니다]**.
 1. 뷰어 사전 설정 제목 왼쪽에 있는 상자를 선택하여 사전 설정을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 편집을 누릅니다]**.
 1. [ **[!UICONTROL 뷰어 사전 설정 편집기]** ] 페이지에서 [모양 ** 및 [비헤이비어]]** 탭에 있는 옵션을 사용하여 뷰어 **[!UICONTROL 사전 설정을 변경할]** 수있습니다.
@@ -573,7 +573,7 @@ AEM에서는 [세부 사항 보기] > [뷰어]에서 자산을 볼 때 다양한
 
 **사용자 정의 뷰어 사전 설정을 삭제하려면**
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]>[!UICONTROL 뷰어 사전 설정을 누릅니다]**.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정을 누릅니다]**.
 1. 뷰어 사전 설정 페이지에서 사전 설정 제목을 선택한 다음 휴지통 **[!UICONTROL 아이콘을]** 누릅니다.
 1. 삭제를 **[!UICONTROL 누릅니다]**.
 
