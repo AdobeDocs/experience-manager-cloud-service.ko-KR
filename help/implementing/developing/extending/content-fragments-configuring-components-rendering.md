@@ -25,14 +25,16 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->* **아래에 설명된[고급 서비스가](#definition-of-advanced-services-that-need-configuration)**필요하지 않은 경우 이 구성을 무시할 수 있습니다.
+>* **아래에 설명된 [고급 서비스가](#definition-of-advanced-services-that-need-configuration)** 필요하지 않은 경우 이 구성을 무시할 수 있습니다.
+   >
+   >
+* **기본 구성 요소를 확장하거나 사용하는 경우** OSGi 구성을 변경하지 않는 것이 좋습니다.
+   >
+   >
+* **컨텐츠 조각 API만 사용하는 구성 요소를 처음부터 작성할 수 있습니다(고급 서비스**&#x200B;없음). 그러나 이러한 경우 적절한 처리를 처리하도록 구성 요소를 개발해야 합니다.
 >
->* **기본 구성 요소를 확장하거나 사용하는 경우** OSGi 구성을 변경하지 않는 것이 좋습니다.
 >
->* **컨텐츠 조각 API만 사용하는 구성 요소를 처음부터 작성할 수 있습니다(고급 서비스**&#x200B;없음). 그러나 이러한 경우 적절한 처리를 처리하도록 구성 요소를 개발해야 합니다.
->
->
->따라서 핵심 구성 요소를 사용하는 것이 좋습니다.
+따라서 핵심 구성 요소를 사용하는 것이 좋습니다.
 
 ## 구성이 필요한 고급 서비스의 정의 {#definition-of-advanced-services-that-need-configuration}
 
@@ -75,22 +77,22 @@ OSGi 구성은 다음과 같습니다.
   <tr>
    <td><strong>리소스 유형</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>등록할 리소스 유형; 예: <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>등록할 리소스 유형;예: <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>참조 속성</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>조각에 대한 참조를 포함하는 속성의 이름 예: <code>fragmentPath</code> 또는 <code>fileReference</code></td>
+   <td>조각에 대한 참조를 포함하는 속성의 이름예: <code>fragmentPath</code> 또는 <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>요소 속성</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>렌더링할 요소의 이름이 들어 있는 속성의 이름입니다. 예:<code>elementName</code></td>
+   <td>렌더링할 요소의 이름이 들어 있는 속성의 이름입니다.예:<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>변화 속성</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>렌더링할 변형의 이름이 포함된 속성의 이름입니다. 예:<code>variationName</code></td>
+   <td>렌더링할 변형의 이름이 포함된 속성의 이름입니다.예:<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
@@ -109,8 +111,8 @@ OSGi 구성은 다음과 같습니다.
    <td><code>paragraphScope</code></td>
    <td><p>단락을 <em>단일 요소 렌더링 모드에서 출력하는 방법을 정의하는 문자열 속성입니다</em>.</p> <p>값:</p>
     <ul>
-     <li><code>all</code> : 모든 단락을 렌더링합니다.</li>
-     <li><code>range</code> : 를 사용하여 <code>paragraphRange</code></li>
+     <li><code>all</code> :모든 단락을 렌더링합니다.</li>
+     <li><code>range</code> :를 사용하여 <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -136,7 +138,7 @@ OSGi 구성은 다음과 같습니다.
 
 ## 예 {#example}
 
-예를 들어, 다음(바로 사용 가능한 AEM 인스턴스에서)을 참조하십시오.
+예를 들어, 다음(기본 AEM 인스턴스에서)을 참조하십시오.
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config
