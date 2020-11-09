@@ -28,7 +28,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
   * Link to a11y-specific channels to report issues, seek support, or request enhancements, if any. Available info from Elle.
 -->
 
-# Cloud Service [!DNL Adobe Experience Manager Assets] 의 접근성 {#accessibility-in-aem-assets}
+# Accessibility in [!DNL Adobe Experience Manager Assets] as a Cloud Service {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager] 콘텐츠 제작자와 출판업체는 웹에서 탁월한 경험을 제공할 수 있습니다. Adobe은 장애인이 접근성을 향상시킴으로써 장애인을 포함시키기 위해 노력하고 [!DNL Experience Manager]있습니다. 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각, 청각, 이동성 또는 기타 장애가 있는 개인을 포함한 전세계 표준을 준수합니다.
 
