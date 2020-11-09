@@ -116,7 +116,7 @@ Adobe Launch 내의 다음 샘플 구성은 뷰어 로드 시 자산 이름을 �
 
    ![image2019-4](assets/image2019-4.png)
 
-### 오디오 및 비디오용 Adobe Analytics 정보 {#about-adobe-analytics-for-audio-and-video}
+### About Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
 Experience Cloud 계정에서 오디오 및 비디오에 Adobe Analytics을 사용하도록 구독하면 *다이내믹 미디어 뷰어 확장 설정에서 비디오 추적을 활성화하기에 충분합니다* . 비디오 지표를 Adobe Analytics에서 사용할 수 있게 됩니다. 비디오 추적은 오디오 및 비디오용 Adobe 미디어 분석 확장 기능에 따라 다릅니다.
 
@@ -132,7 +132,7 @@ Experience Cloud 계정에서 오디오 및 비디오에 Adobe Analytics을 사�
 
 AEM Sites에서 Dynamic Media 뷰어를 추적하려면 [모든 통합 부분](#configuring-all-the-integration-pieces) 구성 섹션에 나열된 모든 단계를 수행해야 합니다. 특히 IMS 구성과 Adobe Launch Cloud 구성을 만들어야 합니다.
 
-적절한 구성을 따르면, Dynamic Media에서 지원하는 WCM 구성 요소를 사용하여 사이트 페이지에 추가하는 모든 Dynamic Media 뷰어는 자동으로 Adobe Analytics으로, 또는 비디오용 Adobe Analytics으로, 또는 두 가지 모두를 추적합니다.
+적절한 구성을 따르면, 다이내믹 미디어에서 지원하는 WCM 구성 요소를 사용하여 사이트 페이지에 추가하는 모든 Dynamic Media 뷰어는 자동으로 Adobe Analytics으로, 또는 비디오용 Adobe Analytics 또는 둘 다에 대한 데이터를 추적합니다.
 
 Adobe [사이트를 사용하여 페이지에 Dynamic Media 자산 추가를 참조하십시오](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
@@ -190,7 +190,7 @@ Dynamic Media Viewers 확장 기능에 대한 유일한 구성 옵션은 오디�
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-각 [뷰어 유형별로 지원되는 이벤트 목록은 Dynamic Media Viewers 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) 를 참조하십시오. 특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 클릭합니다. 현재 다이내믹 미디어 뷰어 참조 가이드는 이벤트 인수를 문서화하지 않습니다.
+각 [뷰어 유형별로 지원되는 이벤트 목록은 Dynamic Media Viewers 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) 를 참조하십시오.특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 클릭합니다. 현재 다이내믹 미디어 뷰어 참조 가이드는 이벤트 인수를 문서화하지 않습니다.
 
 이제 다이내믹 미디어 뷰어 *데이터 요소의 라이프사이클을 고려해 보겠습니다*. 이러한 데이터 요소의 값은 페이지에서 해당 Dynamic Media 뷰어 이벤트가 발생한 후에 채워집니다. 예를 들어 데이터 요소가 **[!UICONTROL LOAD]** 이벤트 및 해당 &quot;asset&quot; 인수를 가리키면, 뷰어가 LOAD 이벤트를 처음 실행한 후 해당 데이터 요소의 값이 유효한 데이터를 받게 됩니다. 데이터 요소가 **[!UICONTROL ZOOM]** 이벤트 및 &quot;scale&quot; 인수를 가리키면 뷰어가 처음 **[!UICONTROL ZOOM]** 이벤트를 보낼 때까지 해당 데이터 요소의 값은 비어 있게 됩니다.
 
@@ -202,7 +202,7 @@ Dynamic Media Viewers 확장 기능에 대한 유일한 구성 옵션은 오디�
 
 **다음 샘플 설정을 고려해 보십시오**.
 
-* 두 개의 Dynamic Media 확대/축소 뷰어가 있는 웹 페이지; viewer1 *및* viewer2 *로 참조합니다*.
+* 두 개의 Dynamic Media 확대/축소 뷰어가 있는 웹 페이지;viewer1 *및* viewer2 *로 참조합니다*.
 
 * **[!UICONTROL ZoomScale]** 데이터 요소는 **[!UICONTROL ZOOM]** 이벤트와 해당 &quot;scale&quot; 인수를 가리킵니다.
 * **[!UICONTROL 다음을 사용하여 TrackPan]** 규칙:
@@ -216,7 +216,7 @@ Dynamic Media Viewers 확장 기능에 대한 유일한 구성 옵션은 오디�
    * 핵심 Adobe 실행 확장 프로그램의 키 인쇄 이벤트를 트리거로 사용합니다.
    * ZoomScale 데이터 **[!UICONTROL 요소의]** 값을 Adobe Analytics으로 전송합니다.
 
-이제 최종 사용자가 두 명의 뷰어와 함께 웹 페이지를 로드한다고 가정합니다. viewer1 *에서는* 50% 크기로 확대됩니다. 그런 다음 *viewer2에서* 25% 크기로 확대됩니다. viewer1 *에서*&#x200B;이미지 주위에 이동하고 마지막으로 키보드에서 키를 누릅니다.
+이제 최종 사용자가 두 명의 뷰어와 함께 웹 페이지를 로드한다고 가정합니다. viewer1 *에서는* 50% 크기로 확대됩니다.그런 다음 *viewer2에서* 25% 크기로 확대됩니다. viewer1 *에서*&#x200B;이미지 주위에 이동하고 마지막으로 키보드에서 키를 누릅니다.
 
 최종 사용자의 활동은 Adobe Analytics에 대해 다음과 같은 두 개의 추적 호출을 만듭니다.
 
@@ -225,9 +225,9 @@ Dynamic Media Viewers 확장 기능에 대한 유일한 구성 옵션은 오디�
 
 위에 설정된 샘플 세트는 데이터 요소 값의 수명 에도 영향을 줍니다. Dynamic Media Viewer에서 관리하는 데이터 요소의 값은 뷰어 자체가 웹 페이지에서 처리된 후에도 Adobe 실행 라이브러리 코드에 저장됩니다. 즉, Dynamic Media Viewer 이외의 확장 프로그램에서 트리거되는 규칙이 있고 이러한 데이터 요소를 참조하는 경우, 뷰어가 더 이상 웹 페이지에 표시되지 않더라도 데이터 요소는 마지막으로 알려진 값을 반환합니다.
 
-어떤 경우든, 다이내믹 미디어 뷰어를 기반으로 하는 데이터 요소의 값은 로컬 저장소 또는 서버에 저장되지 않습니다. 대신 클라이언트측 Adobe 실행 라이브러리에만 보관됩니다. 이러한 데이터 요소의 값은 웹 페이지가 다시 로드될 때 사라집니다.
+어떤 경우든, 다이내믹 미디어 뷰어를 기반으로 하는 데이터 요소의 값은 로컬 저장소 또는 서버에 저장되지 않습니다.대신 클라이언트측 Adobe 실행 라이브러리에만 보관됩니다. 이러한 데이터 요소의 값은 웹 페이지가 다시 로드될 때 사라집니다.
 
-일반적으로 데이터 요소 편집기는 [저장소 기간 선택을 지원합니다](https://docs.adobe.com/content/help/ko-KR/launch/using/reference/manage-resources/data-elements.html#create-a-data-element). 그러나 Dynamic Media Viewers 확장 기능을 사용하는 데이터 요소는 [없음]의 저장 기간 옵션만 **[!UICONTROL 지원합니다]**. 사용자 인터페이스에서 다른 값을 설정할 수 있지만 이 경우에는 데이터 요소 동작이 정의되지 않습니다. 확장자는 데이터 요소의 값을 직접 관리합니다. 전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지하는 데이터 요소입니다.
+일반적으로 데이터 요소 편집기는 [저장소 기간 선택을 지원합니다](https://docs.adobe.com/content/help/ko-KR/launch/using/reference/manage-resources/data-elements.html#create-a-data-element). 그러나 Dynamic Media Viewers 확장 기능을 사용하는 데이터 요소는 [없음]의 저장 기간 옵션만 **[!UICONTROL 지원합니다]**. 사용자 인터페이스에서 다른 값을 설정할 수 있지만 이 경우에는 데이터 요소 동작이 정의되지 않습니다. 확장자는 데이터 요소의 값을 직접 관리합니다.전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지하는 데이터 요소입니다.
 
 ### 다이내믹 미디어 뷰어 확장의 규칙 정보 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -435,7 +435,7 @@ Analytics [구현 안내서를 참조하십시오](https://docs.adobe.com/conten
 
 1. Adobe Analytics 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보고서]** 검색 필드 오른쪽의 드롭다운 목록에서 올바른 보고서 세트를 선택합니다. 사용할 수 있는 보고서 세트가 여러 개 있고 사용할 보고서 세트가 확실치 않은 경우에는 사용할 보고서 세트를 선택하는 데 도움이 되는 Adobe Analytics 관리자에게 문의하십시오.
 
-   아래 그림에서 사용자가 DynamicMediaViewersExtensionDoc라는 *보고서 세트를 만들어* 드롭다운 목록에서 선택했습니다. 보고서 세트 이름은 그림 용도로만 사용됩니다. 선택하는 보고서 세트의 이름은 달라집니다.
+   아래 그림에서 사용자가 DynamicMediaViewersExtensionDoc라는 *보고서 세트를 만들어* 드롭다운 목록에서 선택했습니다. 보고서 세트 이름은 그림 용도로만 사용됩니다.선택하는 보고서 세트의 이름은 달라집니다.
 
    사용할 수 있는 보고서 세트가 없는 경우, 사용자나 Adobe Analytics 관리자가 보고서 세트를 만든 후 구성을 계속 진행할 수 있습니다.
 
@@ -476,7 +476,7 @@ Analytics [구현 안내서를 참조하십시오](https://docs.adobe.com/conten
 
    예를 들어 **[!UICONTROL 뷰어 자산(prop 30)]** 변수에 대한 보고서는 사용자 지정 트래픽 > 사용자 지정 트래픽 21-30 > 뷰어 자산(prop 30)의 보고서 메뉴 **[!UICONTROL 에서 사용할 수 있습니다]**.
 
-   뷰어 자산(prop 30)이 **[!UICONTROL 만들어진 후]** 바로 이 보고서를 방문하면 데이터가 표시되지 않습니다. 이 경우 통합 시 필요합니다.
+   뷰어 자산(prop 30)이 **[!UICONTROL 만들어진 후]** 바로 이 보고서를 방문하면 데이터가 표시되지 않습니다.이 경우 통합 시 필요합니다.
 
    ![image2019-6-26_23-12-49](/help/assets/dynamic-media/assets/image2019-6-26_23-12-49.png)
 
