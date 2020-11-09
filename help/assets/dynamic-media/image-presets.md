@@ -31,8 +31,9 @@ Image Presets enable assets to dynamically deliver images at different sizes, in
    >[!NOTE]
    >
    >* 정적 표현물은 창 상단에서 나타납니다. 동적 표현물은 하단 부분에 나타납니다. 동적 변환만 있는 경우 URL을 사용하여 이미지를 표시할 수 있습니다. URL **[!UICONTROL 단추는]** 동적 변환을 선택하는 경우에만 나타납니다. RESS **** 단추는 응답형 이미지 사전 설정을 선택하는 경우에만 나타납니다.
-   >
-   >* 자산의 세부 사항 보기에서 **[!UICONTROL 표현물을]** 선택하면 시스템은 다양한 표현물을 보여줍니다. 표시되는 사전 설정 수를 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가를 참조하십시오](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+      >
+      >
+   * 자산의 세부 사항 보기에서 **[!UICONTROL 표현물을]** 선택하면 시스템은 다양한 표현물을 보여줍니다. 표시되는 사전 설정 수를 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가를 참조하십시오](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
