@@ -3,9 +3,9 @@ title: 자산에 워터마크 표시
 description: 디지털 자산에 워터마크 추가
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
+source-git-commit: af27295b618fb3909d43ed94a74148f7c4f59c10
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '196'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 1. PNG 파일이 워터마크로 적용됩니다. DAM 저장소에 이 파일을 업로드합니다.
 
-1. 환경과 연관된 [!DNL Cloud Manager] Git 리포지토리에 액세스 다음 컨텐츠 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` 를 사용하여 Git [!DNL Cloud Manager] 리포지토리에 명명된 파일을 커밋합니다. 자세한 내용은 Cloud Service으로 OSGi 구성 [을 수행하는 [!DNL Experience Manager] 방법](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
+1. 환경과 연관된 [!DNL Cloud Manager] Git 리포지토리에 액세스 다음 내용으로 저장소 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 에 명명된 파일을 커밋합니다. 지침은 Cloud Service으로 OSGi 구성 [방법 [!DNL Experience Manager] 을 참조하십시오](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
