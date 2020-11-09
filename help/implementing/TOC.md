@@ -1,8 +1,8 @@
 ---
-sub-product: 클라우드 서비스로서의 AEM용 구현
-user-guide-title: 클라우드 서비스로서의 AEM용 구현
+sub-product: AEM as a Cloud Service용 구현
+user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
-user-guide-description: 개발 및 배포 항목을 비롯한 클라우드 서비스로서의 Experience Manager 배포를 사용자 지정하는 방법에 대해 알아봅니다.
+user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
 source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # 구현 {#implementing}
 
-+ [클라우드 서비스로서의 AEM용 애플리케이션 구현](/help/implementing/home.md)
++ [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
 + Cloud Manager 사용 {#using-cloud-manager}
    + [환경 관리](cloud-manager/manage-environments.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
@@ -31,17 +31,17 @@ ht-degree: 83%
    + [Maven 프로젝트 버전 처리](cloud-manager/project-version-handling.md)
    + [Git 액세스](cloud-manager/accessing-git.md)
    + [Adobe Cloud Manager와 Git 통합](cloud-manager/integrating-with-git.md)
-+ 클라우드 서비스로서의 AEM을 위한 개발 {#developing}
++ AEM as a Cloud Service를 위한 개발 {#developing}
    + [AEM 프로젝트 구조](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)
-   + [클라우드 서비스 SDK로서의 AEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
-   + [클라우드 서비스로서의 AEM 개발 지침](developing/introduction/development-guidelines.md)
+   + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [AEM as a Cloud Service 개발 지침](developing/introduction/development-guidelines.md)
    + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
    + [AEM UI 구조](developing/introduction/ui-structure.md)
    + [Sling 커닝 페이퍼](developing/introduction/sling-cheatsheet.md)
    + [Sling 어댑터 사용](developing/introduction/sling-adapters.md)
-   + [클라우드 서비스로서의 AEM에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
-   + [클라우드 서비스로서의 AEM에서 오버레이](developing/introduction/overlays.md)
+   + [AEM as a Cloud Service에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
+   + [AEM as a Cloud Service에서 오버레이](developing/introduction/overlays.md)
    + [클라이언트측 라이브러리 사용](developing/introduction/clientlibs.md)
    + [구성 및 구성 브라우저](developing/introduction/configurations.md)
    + [로깅](developing/introduction/logging.md)
@@ -87,7 +87,7 @@ ht-degree: 83%
    + [ContextHub API](developing/personalization/contexthub-api.md)
    + [Adobe Target과 통합](/help/sites-cloud/integrating/adobe-target.md)
    + [ContextHub로 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-+ 클라우드 서비스로서 AEM 구성 및 확장 {#configuring-and-extending}
++ AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
    + [컨텐츠 조각 사용자 지정 및 확장](developing/extending/content-fragments-customizing.md)
    + [컨텐츠 조각 렌더링용 구성 요소 구성](developing/extending/content-fragments-configuring-components-rendering.md)
@@ -95,15 +95,15 @@ ht-degree: 83%
    + [리치 텍스트 편집기 구성](/help/implementing/developing/extending/rich-text-editor.md)
    + [RTE 플러그인 구성](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [액세스 가능한 사이트를 생성하도록 RTE 구성](/help/implementing/developing/extending/rte-accessible-content.md)
-+ 클라우드 서비스로서의 AEM에 배포 {#deploying}
-   + [클라우드 서비스로서의 AEM에 배포](deploying/overview.md)
++ AEM as a Cloud Service에 배포 {#deploying}
+   + [AEM as a Cloud Service에 배포](deploying/overview.md)
    + [AEM 버전 업데이트](deploying/aem-version-updates.md)
-   + [클라우드 서비스로서의 AEM에 대한 OSGi 구성](deploying/configuring-osgi.md)
+   + [AEM as a Cloud Service에 대한 OSGi 구성](deploying/configuring-osgi.md)
 + 작성 계층 {#author-tier}
    + [작성자 계층 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
 + 컨텐츠 전달 개요 {#content-delivery}
    + [컨텐츠 전달 흐름](dispatcher/overview.md)
    + [클라우드의 디스패처](dispatcher/disp-overview.md)
-   + [클라우드 서비스로서의 AEM에서 CDN](dispatcher/cdn.md)
-   + [클라우드 서비스로서의 AEM에서 캐싱](dispatcher/caching.md)
+   + [AEM as a Cloud Service에서 CDN](dispatcher/cdn.md)
+   + [AEM as a Cloud Service에서 캐싱](dispatcher/caching.md)
