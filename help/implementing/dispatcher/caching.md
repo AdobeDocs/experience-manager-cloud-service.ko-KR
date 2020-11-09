@@ -1,6 +1,6 @@
 ---
-title: 클라우드 서비스로서의 AEM에서 캐싱
-description: '클라우드 서비스로서의 AEM에서 캐싱 '
+title: AEM as a Cloud Service에서 캐싱
+description: 'AEM as a Cloud Service에서 캐싱 '
 translation-type: tm+mt
 source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
