@@ -24,12 +24,12 @@ Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니�
 >
 >이 문서에서는 AEM Assets의 주목할 만한 변경 사항을 집중적으로 다룹니다. AEM에 대한 Cloud Service 및 기타 모듈에서의 일반적인 변경 사항은 다음을 참조하십시오.
 >
->* [클라우드 서비스로서의 Adobe Experience Manager 소개](/help/overview/introduction.md)
->* [클라우드 서비스로서의 AEM에 대한 개요 - 새로운 기능 및 다른 기능](/help/overview/what-is-new-and-different.md)
->* 클라우드 서비스로서의 Adobe Experience Manager [아키텍처](/help/core-concepts/architecture.md)
->* [클라우드 서비스로서의 AEM에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
->* [ 클라우드 서비스로서의 AEM Sites에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
->* [클라우드 서비스로서의 Adobe Experience Manager 자습서](https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
+>* [AEM as a Cloud Service에 대한 개요 - 새로운 기능 및 다른 기능](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a Cloud Service [아키텍처](/help/core-concepts/architecture.md)
+>* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
+>* [ AEM Sites as a Cloud Service에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager as a Cloud Service 자습서](https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html)
 
 
 ## 자산 수집 및 업로드 {#asset-ingestion}
