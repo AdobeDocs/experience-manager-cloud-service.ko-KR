@@ -39,16 +39,16 @@ ht-degree: 1%
 
 1. 사용 **[!UICONTROL 통계]** 섹션을 검토하여 자산이 속한 법인과 최근에 사용한 크리에이티브 솔루션에 대해 알아보십시오. 사용량이 많을수록 사용자 간에 자산이 인기 있을 가능성이 높습니다. 사용 데이터는 다음 헤드에 표시됩니다.
 
-   * **[!UICONTROL 자산]**: 자산이 컬렉션 또는 복합 자산의 일부인 횟수입니다.
-   * **[!UICONTROL 웹 및 모바일]**: 자산이 웹 사이트 및 앱의 일부인 횟수입니다.
-   * **[!UICONTROL 소셜]**: 자산이 Adobe Social 및 Adobe Campaign과 같은 솔루션에 사용된 횟수입니다.
-   * **[!UICONTROL 이메일]**: 이메일 캠페인에서 자산이 사용된 횟수입니다.
+   * **[!UICONTROL 자산]**:자산이 컬렉션 또는 복합 자산의 일부인 횟수입니다.
+   * **[!UICONTROL 웹 및 모바일]**:자산이 웹 사이트 및 앱의 일부인 횟수입니다.
+   * **[!UICONTROL 소셜]**:Adobe Social, Adobe Campaign 같은 솔루션에 자산이 사용된 횟수입니다.
+   * **[!UICONTROL 이메일]**:이메일 캠페인에서 자산이 사용된 횟수입니다.
 
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >자산 통찰력 기능은 일반적으로 Adobe Analytics에서 정기적으로 솔루션 데이터를 포함하므로 솔루션 섹션에 가장 최근 데이터가 표시되지 않을 수 있습니다. 데이터가 표시되는 기간은 자산 통찰력이 Analytics 데이터를 검색하기 위해 실행하는 가져오기 작업의 예약에 따라 다릅니다.
+   >자산 통찰력 기능은 일반적으로 Adobe Analytics에서 정기적으로 솔루션 데이터를 가져오기 때문에 솔루션 섹션에 가장 최근 데이터가 표시되지 않을 수 있습니다. 데이터가 표시되는 기간은 자산 통찰력이 Analytics 데이터를 검색하기 위해 실행하는 가져오기 작업의 예약에 따라 다릅니다.
 
 1. 일정 기간 동안 자산에 대한 성능 통계를 그래픽으로 보려면 **[!UICONTROL 성과 통계]** 섹션에서 기간을 선택합니다. 클릭 및 노출 수를 비롯한 세부 사항은 그래프의 트렌드 라인으로 표시됩니다.
 
@@ -72,10 +72,10 @@ ht-degree: 1%
 
 ## 백그라운드 작업 예약 {#scheduling-background-job}
 
-자산 인사이트는 Adobe Analytics 보고서 세트의 자산 사용 데이터를 정기적으로 가져옵니다. 기본적으로 자산 통찰력은 오전 2시에 백그라운드 작업을 실행하여 데이터를 가져옵니다. 그러나 웹 콘솔에서 **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스를 구성하여 빈도와 시간을 모두 수정할 수 있습니다.
+자산 인사이트는 주기적으로 Adobe Analytics 보고서 세트의 자산 사용 데이터를 가져옵니다. 기본적으로 자산 통찰력은 오전 2시에 백그라운드 작업을 실행하여 데이터를 가져옵니다. 하지만 웹 콘솔에서 **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스를 구성하여 빈도와 시간을 모두 수정할 수 있습니다.
 
-1. AEM 로고를 누르고 도구 > **[!UICONTROL 작업]** **** > **[!UICONTROL 웹 콘솔]**&#x200B;로 이동합니다.
-1. Adobe **[!UICONTROL CQ DAM 자산 성능 보고서 동기화 작업]** 서비스 구성을 엽니다.
+1. AEM 로고를 누르고 **[!UICONTROL 도구]** > 작업 **** > **[!UICONTROL 웹 콘솔]**&#x200B;로이동합니다.
+1. Adobe CQ **[!UICONTROL DAM 자산 성능 보고서 동기화 작업]** 서비스 구성을 엽니다.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ## Configure Asset Insights {#configure-asset-insights}
 
-AEM(Adobe Experience Manager) 자산은 Adobe Analytics에서 타사 웹 사이트에서 사용하는 AEM 자산에 대한 사용 데이터를 가져옵니다. 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 Adobe Analytics와 통합되도록 기능을 구성합니다.
+Adobe Experience Manager(AEM) 자산은 Adobe Analytics의 타사 웹 사이트에서 사용하는 AEM 자산에 대한 사용 데이터를 가져옵니다. 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 Adobe Analytics과 통합되도록 기능을 구성합니다.
 
 >[!NOTE]
 >
@@ -96,16 +96,16 @@ AEM(Adobe Experience Manager) 자산은 Adobe Analytics에서 타사 웹 사이�
 1. 인사이트 **[!UICONTROL 구성]** 카드를 클릭합니다.
 1. 마법사에서 데이터 센터를 선택하고 조직의 이름, 사용자 이름 및 공유 암호를 비롯한 자격 증명을 제공합니다.
 
-   ![AEM에서 자산 인사이트에 대한 Adobe Analytics 구성](assets/insights_config2.png)
+   ![AEM에서 자산 통찰력에 대한 Adobe Analytics 구성](assets/insights_config2.png)
 
-   *그림: AEM에서 자산 인사이트에 대한 Adobe Analytics 구성*
+   *그림:AEM에서 자산 통찰력에 대한 Adobe Analytics 구성*
 
-1. 인증을 클릭/ **[!UICONTROL 탭합니다]**. AEM이 자격 증명을 인증한 후 **[!UICONTROL 보고서 세트]** 목록에서 자산 통찰력으로 데이터를 가져올 Adobe Analytics 보고서 세트를 선택합니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
-1. AEM이 보고서 세트를 설정한 후 완료를 **[!UICONTROL 누릅니다]**.
+1. 인증을 클릭/ **[!UICONTROL 탭합니다]**. AEM에서 자격 증명을 인증한 후 **[!UICONTROL 보고서 세트]** 목록에서 자산 통찰력을 가져올 Adobe Analytics 보고서 세트를 선택합니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. AEM에서 보고서 세트를 설정한 후 완료를 **[!UICONTROL 누릅니다]**.
 
 ### 페이지 추적기 {#page-tracker}
 
-Adobe Analytics 계정을 구성하면 페이지 추적기 코드가 자동으로 생성됩니다. 자산 통찰력이 타사 웹 사이트에서 사용되는 AEM 자산을 추적하도록 하려면 웹 사이트 코드에 페이지 추적기 코드를 포함시키십시오. AEM 자산의 페이지 추적기 유틸리티를 사용하여 페이지 추적기 코드를 생성합니다. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Adobe Analytics 계정을 구성하면 페이지 추적기 코드가 자동으로 생성됩니다. 자산 인사이트를 사용하여 타사 웹 사이트에서 사용되는 AEM 자산을 추적하려면 웹 사이트 코드에 페이지 추적기 코드를 포함시키십시오. AEM Assets의 페이지 추적기 유틸리티를 사용하여 페이지 추적기 코드를 생성합니다. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
 1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산을 클릭합니다]**.
 
