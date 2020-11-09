@@ -1,6 +1,6 @@
 ---
-title: 클라우드 서비스로서의 AEM 개발 지침
-description: 클라우드 서비스로서의 AEM 개발 지침
+title: AEM as a Cloud Service 개발 지침
+description: AEM as a Cloud Service 개발 지침
 translation-type: tm+mt
 source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# 클라우드 서비스로서의 AEM 개발 지침 {#aem-as-a-cloud-service-development-guidelines}
+# AEM as a Cloud Service 개발 지침 {#aem-as-a-cloud-service-development-guidelines}
 
 Cloud Service으로 AEM에서 실행되는 코드는 클러스터에서 항상 실행되고 있다는 사실을 알고 있어야 합니다. 즉, 실행되는 인스턴스가 항상 두 개 이상 있습니다. 특히 특정 시점에 인스턴스가 중지될 수 있으므로 코드는 복원력이 있어야 합니다.
 
