@@ -1,6 +1,6 @@
 ---
 title: 개인화 및 컨텐츠 타깃팅된
-description: AEM에서 개인화된 컨텐츠를 만드는 방법 학습
+description: AEM에서 개인화된 콘텐츠를 제작하는 방법 살펴보기
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
