@@ -1,6 +1,6 @@
 ---
 title: SPA 및 서버측 렌더링
-description: SPA에서 SSR(서버측 렌더링)을 사용하면 초기 페이지 로드 시간을 단축한 다음 클라이언트에게 추가 렌더링을 전달할 수 있습니다.
+description: SPA에서 SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 클라이언트에 추가 렌더링을 전달할 수 있습니다.
 translation-type: tm+mt
 source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # SPA 및 서버측 렌더링{#spa-and-server-side-rendering}
 
-단일 페이지 애플리케이션(SPA)을 통해 사용자는 종종 기본 애플리케이션과 마찬가지로 익숙한 방식으로 반응하고 동작하는 풍부한 동적 경험을 제공할 수 있습니다. [이는 클라이언트에 의존하여 콘텐츠를 맨 앞에 로드한 다음 사용자 상호](introduction.md#how-does-a-spa-work) 작용을 처리하는 까다로운 작업을 수행하여 클라이언트와 서버 사이에 필요한 통신 양을 최소화하여 앱을 보다 재활성화할 수 있도록 함으로써 이루어집니다.
+단일 페이지 애플리케이션(SPA)은 사용자에게 종종 기본 애플리케이션처럼 친숙한 방식으로 반응하고 동작하는 풍부하고 동적인 경험을 제공할 수 있습니다. [이는 클라이언트에 의존하여 콘텐츠를 맨 앞에 로드한 다음 사용자 상호](introduction.md#how-does-a-spa-work) 작용을 처리하는 까다로운 작업을 수행하여 클라이언트와 서버 사이에 필요한 통신 양을 최소화하여 앱을 보다 재활성화할 수 있도록 함으로써 이루어집니다.
 
-그러나 SPA가 크고 컨텐츠가 풍부한 경우 초기 로드 시간이 길어질 수 있습니다. 로드 시간을 최적화하기 위해 일부 컨텐츠는 서버측에서 렌더링될 수 있습니다. SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 클라이언트에게 추가 렌더링을 전달할 수 있습니다.
+그러나 이는 특히 SPA이 크고 컨텐츠가 풍부한 경우 초기 로드 시간을 더 길게 만들 수 있습니다. 로드 시간을 최적화하기 위해 일부 컨텐츠는 서버측에서 렌더링될 수 있습니다. SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 클라이언트에게 추가 렌더링을 전달할 수 있습니다.
 
 ## SSR 사용 시기 {#when-to-use-ssr}
 
-SSR이 모든 프로젝트에 필요하지 않습니다. AEM은 JS SSR for SPA를 완벽하게 지원하지만, Adobe은 모든 프로젝트에 대해 체계적으로 구현하는 것은 권장하지 않습니다.
+SSR이 모든 프로젝트에 필요하지 않습니다. AEM은 SPA용 JS SSR을 완벽하게 지원하지만, Adobe은 모든 프로젝트에 대해 체계적으로 구현하도록 권장하지 않습니다.
 
 SSR을 구현하기로 결정할 때 먼저 SSR을 현실적으로 추가함으로써 장기적인 유지 관리를 포함하여 프로젝트에 어떤 추가 복잡성, 노력, 비용이 있는지를 평가해야 합니다. SSR 아키텍처는 추가된 값이 예상 비용을 명확하게 초과하는 경우에만 선택해야 합니다.
 
@@ -38,7 +38,7 @@ Adobe I/O Runtime에 대한 자세한 내용은
 * [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - 서비스 개요
 * [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - 플랫폼에 대한 자세한 설명서
 
-다음 섹션에서는 두 가지 서로 다른 모델에서 SSR for your SPA를 구현하는 데 Adobe I/O Runtime을 사용할 수 있는 방법에 대해 자세히 설명합니다.
+다음 섹션에서는 두 가지 서로 다른 모델에서 SPA용 SSR을 구현하는 데 Adobe I/O Runtime을 사용할 수 있는 방법에 대해 자세히 설명합니다.
 
 * [AEM 기반의 커뮤니케이션 흐름](#aem-driven-communication-flow)
 * [Adobe I/O Runtime 중심 커뮤니케이션 흐름](#adobe-i-o-runtime-driven-communication-flow)
@@ -74,7 +74,7 @@ AEM은 원격으로 렌더링된 내용을 검색할 수 있는 위치를 알고
 
 ## AEM 기반의 커뮤니케이션 흐름 {#aem-driven-communication-flow}
 
-SSR을 사용할 때 AEM의 SPA의 [구성 요소 상호 작용 작업](introduction.md#interaction-with-the-spa-editor) 과정에는 앱의 초기 컨텐츠가 Adobe I/O Runtime에서 생성되는 단계가 포함됩니다.
+SSR을 사용할 때 AEM의 [구성 요소 상호 작용 작업](introduction.md#interaction-with-the-spa-editor) 과정에는 앱의 초기 컨텐츠가 Adobe I/O Runtime에서 생성되는 단계가 포함됩니다.
 
 1. 브라우저가 AEM에서 SSR 컨텐츠를 요청합니다.
 1. AEM은 모델을 Adobe I/O Runtime에 게시합니다.
@@ -85,7 +85,7 @@ SSR을 사용할 때 AEM의 SPA의 [구성 요소 상호 작용 작업](introduc
 
 ## Adobe I/O Runtime 중심 커뮤니케이션 흐름 {#adobe-i-o-runtime-driven-communication-flow}
 
-이전 섹션에서는 AEM의 SPA와 관련하여 서버측 렌더링의 표준 및 권장 구현에 대해 설명합니다. 여기서 AEM은 부트스트래핑 및 컨텐츠 제공을 수행합니다.
+이전 섹션에서는 AEM에서 컨텐츠의 부트스트래핑 및 제공을 수행하는 AEM에 대한 서버측 렌더링의 표준 및 권장 구현에 대해 설명합니다.
 
 또는 SSR을 구현하여 Adobe I/O Runtime이 부트스트랩을 책임지도록 하고 통신 흐름을 효과적으로 반대로 할 수 있습니다.
 
@@ -114,13 +114,13 @@ SSR을 사용할 때 AEM의 SPA의 [구성 요소 상호 작용 작업](introduc
    <th><strong>adobe i/o runtime<br /> </strong></th>
    <td>
     <ul>
-     <li>SPA 개발자에게 더 친숙한 기능<br /> </li>
+     <li>SPA 개발자에게 더 친숙한 기술<br /> </li>
     </ul> </td>
    <td>
     <ul>
      <li>CSS 및 JavaScript와 같은 응용 프로그램에 필요한 Clientlib 리소스는 AEM 개발자가 속성을 통해 사용할 수 있도록 해야 <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> 합니다<br /> </li>
      <li>리소스는 AEM과 Adobe I/O Runtime 간에 동기화되어야 합니다.<br /> </li>
-     <li>SPA의 작성을 가능하게 하려면 Adobe I/O Runtime용 프록시 서버가 필요할 수 있습니다.</li>
+     <li>SPA 저작을 활성화하려면 Adobe I/O Runtime용 프록시 서버가 필요할 수 있습니다.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -128,25 +128,25 @@ SSR을 사용할 때 AEM의 SPA의 [구성 요소 상호 작용 작업](introduc
 
 ## SSR 계획 {#planning-for-ssr}
 
-일반적으로 응용 프로그램의 일부만을 서버측에서 렌더링해야 합니다. 일반적인 예는 페이지의 초기 로드에서 접힌 항목 위에 표시되는 컨텐트입니다. 이렇게 하면 이미 렌더링된 컨텐츠를 클라이언트에 전달함으로써 시간을 절약할 수 있습니다. 사용자가 SPA와 상호 작용하면 추가 컨텐츠가 클라이언트에 의해 렌더링됩니다.
+일반적으로 응용 프로그램의 일부만을 서버측에서 렌더링해야 합니다. 일반적인 예는 페이지의 초기 로드에서 접힌 항목 위에 표시되는 컨텐트입니다. 이렇게 하면 이미 렌더링된 컨텐츠를 클라이언트에 전달함으로써 시간을 절약할 수 있습니다. 사용자가 SPA과 상호 작용하면 추가 컨텐츠가 클라이언트에 의해 렌더링됩니다.
 
-SPA에 대한 서버 측 렌더링을 구현하려는 경우 앱의 어떤 부분이 필요한지 검토해야 합니다.
+SPA에 대한 서버측 렌더링을 구현하려는 경우 앱의 어떤 부분이 필요한지 검토해야 합니다.
 
-## SSR을 사용한 SPA 개발 {#developing-an-spa-using-ssr}
+## SSR을 사용하여 SPA 개발 {#developing-an-spa-using-ssr}
 
-SPA 구성 요소는 클라이언트(브라우저) 또는 서버측에서 렌더링할 수 있습니다. 서버측에서 렌더링하면 창 크기 및 위치와 같은 브라우저 속성이 없습니다. 따라서 SPA 구성 요소는 렌더링될 위치를 예측할 수 없도록 그래픽이 되어야 합니다.
+SPA 구성 요소는 클라이언트(브라우저에서) 또는 서버측에서 렌더링할 수 있습니다. 서버측에서 렌더링하면 창 크기 및 위치와 같은 브라우저 속성이 없습니다. 따라서 SPA 구성 요소는 렌더링될 위치에 대해 추측하지 않고 왜곡되어야 합니다.
 
 SSR을 활용하려면 서버측 렌더링을 담당하는 Adobe I/O Runtime과 AEM에 코드를 배포해야 합니다. 대부분의 코드는 동일하지만 서버별 작업은 다릅니다.
 
-## AEM의 SSR for SPA {#ssr-for-spas-in-aem}
+## AEM용 SSR {#ssr-for-spas-in-aem}
 
-AEM의 SSR for SPA에는 앱 컨텐츠 서버측 렌더링을 위해 호출되는 Adobe I/O Runtime이 필요합니다. 앱의 HTL 내에서 컨텐츠를 렌더링하기 위해 Adobe I/O Runtime의 리소스가 호출됩니다.
+AEM의 SPA용 SSR에는 앱 컨텐츠 서버측 렌더링을 위해 호출되는 Adobe I/O Runtime이 필요합니다. 앱의 HTL 내에서 컨텐츠를 렌더링하기 위해 Adobe I/O Runtime의 리소스가 호출됩니다.
 
-AEM이 즉시 사용 가능한 Angular and Responsive SPA 프레임워크를 지원하는 것처럼 Angular 및 Reimate 앱에도 서버측 렌더링이 지원됩니다. 자세한 내용은 두 프레임워크에 대한 NPM 설명서를 참조하십시오.
+AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원하는 것처럼 Angular 및 Reimate 앱에도 서버측 렌더링이 지원됩니다. 자세한 내용은 두 프레임워크에 대한 NPM 설명서를 참조하십시오.
 
 ## 원격 컨텐츠 렌더러 {#remote-content-renderer}
 
-AEM에서 SSR을 SPA와 함께 사용하는 데 필요한 [원격 컨텐츠 렌더러 구성](#remote-content-renderer-configuration) (Remote Content Renderer Configuration)은 보다 일반화된 렌더링 서비스로, 필요에 따라 확장 및 사용자 정의할 수 있습니다.
+AEM에서 SPA과 함께 SSR을 사용하는 데 필요한 [원격 컨텐츠 렌더러 구성](#remote-content-renderer-configuration) (Remote Content Renderer Configuration)은 보다 일반화된 렌더링 서비스로, 필요에 따라 확장 및 사용자 정의할 수 있습니다.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
