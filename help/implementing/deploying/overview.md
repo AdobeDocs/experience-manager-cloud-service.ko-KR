@@ -1,6 +1,6 @@
 ---
-title: 클라우드 서비스로서의 AEM에 배포
-description: '클라우드 서비스로서의 AEM에 배포 '
+title: AEM as a Cloud Service에 배포
+description: 'AEM as a Cloud Service에 배포 '
 translation-type: tm+mt
 source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 클라우드 서비스로서의 AEM에 배포 {#deploying-to-aem-as-a-cloud-service}
+# AEM as a Cloud Service에 배포 {#deploying-to-aem-as-a-cloud-service}
 
 ## 소개 {#introduction}
 
