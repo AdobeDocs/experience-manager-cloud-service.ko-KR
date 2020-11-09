@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # 360/VR Video {#vr-video}
 
-360도 비디오는 모든 방향으로 동시에 보기 기록을 남깁니다. 그것들은 전방향 카메라나 카메라 모음을 사용하여 촬영한다. 평면 디스플레이에서 재생하는 동안 사용자는 보기 각도를 제어할 수 있습니다. 모바일 디바이스에서 재생하는 경우 일반적으로 내장된 자이로스코프 컨트롤을 활용할 수 있습니다.
+360도 비디오는 모든 방향으로 동시에 보기 기록을 남깁니다. 그것들은 전방향 카메라나 카메라 모음을 사용하여 촬영한다. 평면 디스플레이에서 재생하는 동안 사용자는 보기 각도를 제어할 수 있습니다.모바일 디바이스에서 재생하는 경우 일반적으로 내장된 자이로스코프 컨트롤을 활용할 수 있습니다.
 
 Dynamic Media는 360개의 비디오 에셋 전달을 기본적으로 지원합니다. 기본적으로 보거나 재생하는 데 추가 구성이 필요하지 않습니다. .mp4, .mkv 및 .mov와 같은 표준 비디오 익스텐션을 사용하여 360개의 비디오를 제공할 수 있습니다. 가장 일반적인 코덱은 H.264입니다.
 
 이 섹션에서는 360/VR 비디오 뷰어를 사용하여 등장방형 비디오를 렌더링하여 룸, 속성, 위치, 가로, 의료 절차 등의 몰입형 시청 경험을 제공하는 방법을 설명합니다.
 
-공간 오디오가 현재 지원되지 않습니다. 오디오가 스테레오로 혼합되어 있는 경우 고객이 카메라 보기 각도를 변경해도 균형(L/R)이 변경되지 않습니다.
+공간 오디오가 현재 지원되지 않습니다.오디오가 스테레오로 혼합되어 있는 경우 고객이 카메라 보기 각도를 변경해도 균형(L/R)이 변경되지 않습니다.
 
-AEM [자산에서 Dynamic Media 360 비디오 및 사용자 지정 비디오 축소판 사용을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
+AEM Assets [에서 Dynamic Media 360 비디오 및 사용자 정의 비디오 축소판 사용을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
 
 See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -38,7 +38,7 @@ Adobe Premiere Pro를 사용하여 360/VR 영상을 보고 편집할 수 있습�
 
 ## 360 비디오 뷰어에 사용할 에셋 업로드 {#uploading-assets-for-use-with-the-video-viewer}
 
-AEM에 업로드된 360개의 비디오 자산은 일반적인 비디오 자산과 유사한 **자산** 페이지의 멀티미디어로 레이블이 지정됩니다.
+AEM에 업로드된 360개의 비디오 에셋은 일반 비디오 에셋과 유사한 **에셋** 페이지의 멀티미디어로 레이블이 지정됩니다.
 
 ![6_5_360video-selecttoreview카드](assets/6_5_360video-selecttopreview.png)*에서 보이는 업로드된 360개의 비디오 자산. 자산은 멀티미디어로 레이블이 지정됩니다.*
 
@@ -57,9 +57,9 @@ AEM에 업로드된 360개의 비디오 자산은 일반적인 비디오 자산�
       * 4K, UHD 또는 Ultra HD 해상도로 알려진 2160p - 3840 x 2160 이 매우 큰 디스플레이 해상도는 프리미엄 TV 세트와 컴퓨터 모니터에서 흔히 볼 수 있습니다. 2160p 해상도는 너비가 4000픽셀에 가까우므로 &quot;4K&quot;라고 종종 불립니다. 즉, 1080p의 4배 픽셀을 제공합니다.
    * [고품질의 표현물을 사용하여 사용자](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 정의 응용 비디오 프로필을 만듭니다. 예를 들어 다음 세 가지 설정을 포함하는 응용 비디오 프로필을 만들 수 있습니다.
 
-      * width=auto; height=720; bitrate=2500kbps
-      * width=auto; height=1080; bitrate=5000kbps
-      * width=auto; height=1440; bitrate=6600kbps
+      * width=auto;height=720;bitrate=2500kbps
+      * width=auto;height=1080;bitrate=5000kbps
+      * width=auto;height=1440;bitrate=6600kbps
    * 360개의 비디오 에셋에만 해당되는 폴더에서 360개의 비디오 컨텐츠를 처리합니다.
 
    이러한 접근 방식은 최종 사용자의 네트워크 및 CPU에 더 많은 요구도 초래합니다.
@@ -96,7 +96,7 @@ Start by uploading 360 Videos.
 360 비디오가 마음에 들면 게시할 수 있습니다.
 
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 링크 방법이 가능하지 않습니다.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **360개의 비디오를 미리 보려면**
@@ -114,9 +114,9 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
    뷰어 목록에서 **[!UICONTROL Video360_social]**&#x200B;을 누른 다음 다음 중 하나를 수행합니다.
 
    * 마우스 포인터를 비디오 위로 드래그하여 정적 장면의 보기 각도를 변경합니다.
-   * 비디오의 **[!UICONTROL 재생]** 단추를 눌러 재생을 시작합니다. 비디오가 재생되면 비디오 위로 마우스 포인터를 드래그하여 보기 각도를 변경합니다.
+   * 비디오의 **[!UICONTROL 재생]** 단추를 눌러 재생을 시작합니다.비디오가 재생되면 비디오 위로 마우스 포인터를 드래그하여 보기 각도를 변경합니다.
 
-   ![6_5_360video-preview-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 비디오 스크린샷&#x200B;*
+   ![6_5_360video-preview-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 비디오 스크린샷*
 
    * 뷰어 목록에서 **[!UICONTROL Video360VR을 누릅니다]**.
 
@@ -132,5 +132,5 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dy
 
 360 [비디오를 게시하는 방법에 대한 자세한 내용은 다이내믹 미디어 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 게시를 참조하십시오.
 See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 링크 방법이 가능하지 않습니다.
+See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
