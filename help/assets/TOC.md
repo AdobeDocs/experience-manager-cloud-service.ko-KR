@@ -1,8 +1,8 @@
 ---
-sub-product: 클라우드 서비스로서의 Adobe Experience Manager 자산
-user-guide-title: Cloud Service로써 Assets 안내서
+sub-product: Adobe Experience Manager Assets as a Cloud Service
+user-guide-title: Assets as a Cloud Service 안내서
 breadcrumb-title: Assets 안내서
-user-guide-description: 클라우드 서비스로서의 Experience Manager 자산을 사용 및 관리하는 방법을 이해합니다.
+user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
 source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
