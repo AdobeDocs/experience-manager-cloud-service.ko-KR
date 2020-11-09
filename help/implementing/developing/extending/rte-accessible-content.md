@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configure RTE to create accessible sites {#configure-rte-accessible-sites}
+# 액세스 가능한 사이트를 생성하도록 RTE 구성 {#configure-rte-accessible-sites}
 
 [!DNL Adobe Experience Manager] 에서는 이미지의 대체 텍스트와 같은 표준 액세서빌러티 기능과 컨텐츠를 만들 때 액세스할 수 있는 추가 기능을 지원합니다. 컨텐츠 작성자는 리치 텍스트 편집기(RTE)를 사용하는 구성 요소에서 이러한 기능을 사용합니다. 이 기능에는 머리글과 단락 요소를 통해 대체 텍스트, 구조적 정보 추가 등이 포함됩니다.
 
@@ -34,9 +34,9 @@ RTE 구성 지침은 리치 텍스트 편집기 [페이지 구성을 참조하�
 * [플러그인 활성화 및 기능 속성 구성](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [RTE의 다른 기능 구성](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-플러그인의 일부 또는 전체 기능을 활성화하려면 CRXDE Lite의 해당 하위 `rtePlugins` 분기 내에서 플러그인을 구성합니다.
+플러그인에 대한 일부 또는 모든 기능을 활성화하려면 CRXDE Lite의 해당 하위 분기 내에서 플러그인을 `rtePlugins` 구성합니다.
 
-![rtePlugin 예를 보여주는 CRXDE Lite](assets/example-rteplugin-crxde-lite.png)
+![예제 rtePlugin을 보여주는 CRXDE Lite](assets/example-rteplugin-crxde-lite.png)
 
 ### RTE 선택 필드에서 사용할 수 있는 단락 서식 지정 예 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -47,7 +47,7 @@ RTE 구성 지침은 리치 텍스트 편집기 [페이지 구성을 참조하�
 1. [단락 선택 필드에서 사용할 형식을 지정합니다](rich-text-editor.md).
 1. 그런 다음 RTE의 선택 필드에서 컨텐츠 작성자가 단락 포맷을 사용할 수 있습니다.
 
-RTE에서 단락 서식 옵션을 통해 구조적 요소를 사용할 수 있으므로 액세스 가능한 컨텐츠를 개발할 수 있는 충분한 기반을 [!DNL Experience Manager] 제공합니다. 컨텐츠 작성자는 RTE를 사용하여 글꼴 크기 또는 색상 또는 기타 관련 속성의 서식을 지정할 수 없으므로 인라인 서식을 만들 수 없습니다. 대신, 작성자는 제목 등의 적절한 구조적 요소를 선택하고 스타일 옵션에서 선택한 전역 스타일을 사용하여 스타일 시트와 올바르게 구성된 내용을 찾아 볼 수 있는 사용자에게 보다 정확한 마크업 및 향상된 옵션을 제공할 수 있습니다.
+RTE에서 단락 서식 옵션을 통해 구조적 요소를 사용할 수 있으므로 액세스 가능한 컨텐츠를 개발할 수 있는 충분한 기반을 [!DNL Experience Manager] 제공합니다. 컨텐츠 작성자는 RTE를 사용하여 글꼴 크기 또는 색상 또는 기타 관련 속성의 서식을 지정할 수 없으므로 인라인 서식을 만들 수 없습니다. 대신, 작성자는 제목 등의 적절한 구조적 요소를 선택하고 스타일 옵션에서 선택한 전역 스타일을 사용하여 스타일 시트와 올바르게 구조화된 컨텐츠를 원하는 사용자에게 더 나은 마크업 및 깔끔한 마크업 옵션을 제공할 수 있습니다.
 
 ## 소스 편집 기능 사용 {#use-of-the-source-edit-feature}
 
