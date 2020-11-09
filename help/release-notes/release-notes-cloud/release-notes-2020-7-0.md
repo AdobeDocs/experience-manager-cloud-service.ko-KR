@@ -1,28 +1,28 @@
 ---
-title: 클라우드 서비스로서의  [!DNL Adobe Experience Manager]  2020.7.0 릴리스의 릴리스 노트
-description: 클라우드 서비스로서의 [!DNL Adobe Experience Manager] 2020.7.0 릴리스 노트
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
+description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
 source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1052'
 ht-degree: 80%
 
 ---
 
 
-# 클라우드 서비스 2020.7.0으로서의 [!DNL Adobe Experience Manager] 릴리스 노트 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스 노트 {#release-notes}
 
-다음 섹션에서는 클라우드 서비스 2020.7.0으로서의 Experience Manager 일반 릴리스 노트를 간략하게 설명합니다.
+다음 섹션에서는 Experience Manager as a Cloud Service 2020.7.0 일반 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-클라우드 서비스 2020.7.0으로서의 [!DNL Experience Manager] 릴리스 날짜는 2020년 7월 30일입니다.
+[!DNL Experience Manager] as a Cloud Service 2020.7.0 릴리스 날짜는 2020년 7월 30일입니다.
 
-## 클라우드 서비스로서의 Adobe Experience Manager 사이트{#cloud-services-sites}
+## Adobe Experience Manager Sites as a Cloud Service{#cloud-services-sites}
 
 ### 새로운 기능 {#what-is-new-sites}
 
-[!DNL Experience Manager]는 [!DNL Adobe Target] 및 [!DNL Adobe Analytics]의 클라우드 서비스 커넥터로서 다음과 같이 개선되었습니다.
+[!DNL Adobe Target] 및 [!DNL Adobe Analytics]의 [!DNL Experience Manager] as a Cloud Service 커넥터로서 다음과 같이 개선되었습니다.
 
 * 새 사용자 인터페이스 구현으로 클래식 UI 기반의 구현을 대체합니다.
 
@@ -36,7 +36,7 @@ ht-degree: 80%
 
 * [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 맞춤형 애플리케이션을 제작할 수 있습니다. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
 
-* 클라우드 서비스로서의 [!DNL Experience Manager]에서 [!DNL Dynamic Media]의 초기 구성이 더욱 강력하게 개선되었습니다. 이제 관리자에게 프로세스 진행 상황을 제공합니다.
+* [!DNL Experience Manager] as a Cloud Service에서 [!DNL Dynamic Media]의 초기 구성이 더욱 강력하게 개선되었습니다. 이제 관리자에게 프로세스 진행 상황을 제공합니다.
 
 * 자산 마이크로서비스를 사용하고 일괄 게시 벡엔드를 향상하여 자산 게시를 전체 자산 처리 파이프라인에 필수 요소로 통합함으로서 [!DNL Dynamic Media]의 자산 게시가 더 단순화되고 더 강력해졌습니다.
 
@@ -118,7 +118,7 @@ ht-degree: 80%
 
 * 코드 검사 계산 방식의 변경으로 인해 Jacoco 플러그인의 *최소* 버전은 이제 0.7.5.201505241946(2015년 5월 릴리스)입니다. 이전 버전을 명시적으로 참조하는 고객은 코드 품질 프로세스에서 오류 메시지를 받게 됩니다.
 
-## 클라우드 서비스 기반으로서의 Adobe Experience Manager {#cloud-foundation}
+## Adobe Experience Manager as a Cloud Service 기반 {#cloud-foundation}
 
 ### 새로운 기능 {#what-is-new-foundations}
 
