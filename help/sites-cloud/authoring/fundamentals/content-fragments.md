@@ -1,6 +1,6 @@
 ---
 title: 컨텐츠 조각
-description: 클라우드 서비스로서의 Adobe Experience Manager 컨텐츠 조각을 사용하면 페이지 독립적 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
+description: Adobe Experience Manager as a Cloud Service 컨텐츠 조각을 사용하면 페이지 독립적 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 translation-type: tm+mt
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 컨텐츠 조각 {#content-fragments}
 
-클라우드 서비스로서의 AEM(Adobe Experience Manager)의 컨텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 제작되고 관리됩니다](/help/assets/content-fragments/content-fragments.md).
+Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 제작되고 관리됩니다](/help/assets/content-fragments/content-fragments.md).
 
 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 컨텐츠를 만들 수 있습니다. 그런 다음 컨텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**은 AEM 내의 다양한 기능입니다.
+>**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
 >
 >* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠이며, 따라서 웹 페이지 조각입니다.
