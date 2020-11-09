@@ -1,6 +1,6 @@
 ---
-title: React를 사용하여 AEM에서 SPA 시작하기
-description: 본 문서는 샘플 SPA 응용 프로그램을 소개하고 SPA가 어떻게 구성되어 있는지를 설명하며 Repact 프레임워크를 사용하여 신속하게 자체 SPA를 바로 시작할 수 있도록 합니다.
+title: AEM에서 반응 사용 시작
+description: 이 문서에서는 샘플 SPA 응용 프로그램을 소개하고 이 응용 프로그램이 어떻게 구성되어 있는지를 설명하며 Responsive 프레임워크를 사용하여 자체 SPA을 빠르게 익힐 수 있도록 합니다.
 translation-type: tm+mt
 source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
@@ -12,19 +12,19 @@ ht-degree: 2%
 
 # Getting Started with SPAs in AEM Using React {#getting-started-with-spas-in-aem-using-react}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 구축하고, 작성자는 SPA 프레임워크를 사용하여 구축된 사이트에서 AEM 내에서 컨텐츠를 완벽하게 편집하고자 합니다.
+단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고, 작성자는 SPA 프레임워크을 사용하여 구축된 사이트에서 AEM의 컨텐츠를 완벽하게 편집하고자 합니다.
 
-SPA 저작 기능은 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 이 문서는 Reperimate 프레임워크에 간소화된 SPA 애플리케이션을 제시하며, 이를 어떻게 취합하여 SPA를 신속하게 바로 사용할 수 있도록 합니다.
+SPA 저작 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 Responsive 프레임워크에 대해 간소화된 SPA 애플리케이션을 소개하고, 이를 통합하는 방법을 설명하며, SPA을 빠르게 익힐 수 있습니다.
 
 >[!NOTE]
 >
->이 문서는 Responsive 프레임워크를 기반으로 합니다. Angular 프레임워크에 해당하는 문서는 AEM에서 SPA [시작하기 - 각도로 를 참조하십시오](getting-started-angular.md).
+>이 문서는 Responsive 프레임워크를 기반으로 합니다. 각 프레임워크에 해당하는 문서는 AEM에서 [시작하기 - 각진](getting-started-angular.md)을 참조하십시오.
 
 ## 소개 {#introduction}
 
-이 문서는 간단한 SPA의 기본적인 기능과 필요한 최소 기능을 요약해 놓은 것입니다.
+이 문서에서는 간단한 SPA의 기본적인 기능과 필요한 최소 기능을 간략하게 설명합니다.
 
-AEM에서 SPA가 작동하는 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
+AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * [SPA 소개 및 연습](introduction.md)
 * [SPA 편집기 개요](editor-overview.md)
@@ -32,15 +32,15 @@ AEM에서 SPA가 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 >[!NOTE]
 >
->SPA 내에서 컨텐츠를 저작할 수 있으려면 컨텐츠가 AEM에 저장되어 컨텐츠 모델에 노출되어 있어야 합니다.
+>SPA 내에서 컨텐츠를 저작할 수 있으려면 컨텐츠가 AEM에 저장되어야 하며 컨텐츠 모델에 의해 노출되어야 합니다.
 >
->AEM 외부에서 개발된 SPA는 컨텐츠 모델 계약을 준수하지 않으면 저작권을 얻을 수 없습니다.
+>AEM 외부에서 개발된 SPA은 콘텐츠 모델 계약을 존중하지 않으면 저작이 불가능할 것이다.
 
-본 문서는 React 프레임워크를 사용하여 만든 간소화된 SPA의 구조를 자세히 설명하고 사용 방법을 설명함으로써 SPA에 이러한 이해를 적용할 수 있습니다.
+이 문서는 React 프레임워크를 사용하여 만든 간소화된 SPA의 구조를 설명하고 작동 방식을 설명하여 사용자가 자신의 SPA에 이러한 이해를 적용할 수 있도록 합니다.
 
 ## 종속성, 구성 및 작성 {#dependencies-configuration-and-building}
 
-예상 Responsive 종속성 외에도 샘플 SPA는 추가 라이브러리를 활용하여 SPA를 보다 효율적으로 만들 수 있습니다.
+예상 응답 종속성 외에도 샘플 SPA은 추가 라이브러리를 활용하여 SPA을 보다 효율적으로 만들 수 있습니다.
 
 ### 종속성 {#dependencies}
 
@@ -106,19 +106,19 @@ module.exports = {
 
 ### AEM 프로젝트 전형 {#aem-project-archetype}
 
-모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)(React or Angular)을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 프로젝트 전형(Pretype)을 활용해야 합니다.
+모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)(React or Angular)을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 프로젝트를 활용해야 합니다.
 
 ## 애플리케이션 구조 {#application-structure}
 
-이전에 설명한 바와 같이 종속성 및 앱 빌드를 포함하면 AEM 인스턴스에 업로드할 수 있는 작업 중인 SPA 패키지가 남아 있습니다.
+이전에 설명한 대로 종속성 및 앱 빌드를 포함하면 AEM 인스턴스에 업로드할 수 있는 작업 중인 SPA 패키지가 남습니다.
 
-이 문서의 다음 섹션에서는 AEM의 SPA 구성 방법, 애플리케이션을 구동하는 중요한 파일 및 이러한 SPA의 작동 방식을 살펴볼 수 있습니다.
+이 문서의 다음 섹션에서는 AEM의 구성 방법, 애플리케이션을 구동하는 중요한 파일 및 이러한 파일을 함께 사용하는 방법을 살펴봅니다.
 
 간소화된 이미지 구성 요소를 예로 사용하지만 애플리케이션의 모든 구성 요소는 동일한 개념을 기반으로 합니다.
 
 ### index.js {#index-js}
 
-SPA의 진입점은 중요한 컨텐츠에 초점을 맞추기 위해 여기에 나와 있는 `index.js` 파일을 말합니다.
+SPA의 시작 지점은 중요한 컨텐츠에 초점을 맞추기 위해 여기에 간단히 표시된 `index.js` 파일입니다.
 
 ```
 import ReactDOM from 'react-dom';
@@ -179,7 +179,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 이 예제에서 `AppPage` 클래스는 확장되어 사용할 수 `Page`있는 내부 컨텐츠 메서드를 포함합니다.
 
-페이지 모델의 JSON 표현을 `Page` 인제스트하고 페이지의 각 요소를 둘러싸거나 장식하기 위해 컨텐츠를 처리합니다. 자세한 내용은 SPA Blueprint 문서를 `Page` [참조하십시오.](blueprint.md)
+페이지 모델의 JSON 표현을 `Page` 인제스트하고 페이지의 각 요소를 둘러싸거나 장식하기 위해 컨텐츠를 처리합니다. 자세한 내용은 `Page` [SPA Blueprint 문서를 참조하십시오.](blueprint.md)
 
 ### Image.js {#image-js}
 
@@ -210,7 +210,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM의 SPA는 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠가 수정될 때(또는 그 반대로) 구성 요소를 업데이트하는 것을 목표로 합니다. 이 통신 모델에 대한 요약 내용은 [SPA Editor](editor-overview.md) Overview 문서를 참조하십시오.
+AEM의 중앙 아이디어는 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠가 수정될 때(또는 그 반대로) 구성 요소를 업데이트하는 것입니다. 이 통신 모델에 대한 요약은 [SPA 편집기](editor-overview.md) 개요 문서를 참조하십시오.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -263,8 +263,8 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 ## 다음 단계 {#next-steps}
 
-* [AEM에서 Started with SPAs using Angular](getting-started-angular.md) 는 AEM에서 SPA Editor와 함께 작동하도록 기본 SPA가 어떻게 구축되는지를 보여 줍니다.
-* [SPA Editor 개요](editor-overview.md) 는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 더 자세히 설명합니다.
+* [AEM에서 SPA 시작(Getting Started with Angular](getting-started-angular.md) )은 AEM에서 SPA Editor와 함께 작동하도록 기본 SPA을 구성하는 방법을 보여 줍니다.
+* [SPA 편집자](editor-overview.md) 개요에서는 AEM과 SPA 간의 통신 모델에 대해 더 자세히 설명합니다.
 * [WKND SPA Project](wknd-tutorial.md) 는 AEM에서 간단한 SPA 프로젝트를 구현하는 단계별 자습서입니다.
-* [SPA에 대한 동적 모델-구성 요소 매핑](model-to-component-mapping.md) 기능은 구성 요소 간 동적 모델과 AEM의 SPA 내에서 작동하는 방식을 설명합니다.
-* [SPA Blueprint](blueprint.md) 는 AEM에서 Reresponsive 또는 Angular 이외의 프레임워크를 위해 SPA를 구현하려는 경우 AEM용 SPA SDK의 작동 방식을 자세히 살펴볼 수 있습니다.
+* [SPA](model-to-component-mapping.md) 용 동적 모델-구성 요소 매핑은 다이내믹 모델을 구성 요소 간 매핑과 SPA에서 작동하는 방식을 설명합니다.
+* [SPA Blueprint](blueprint.md) (AEM SPA SDK for AEM)이 작동하는 방식을 자세히 살펴봅니다. 이 경우 SPA에서 Reresponsive 또는 Angular 이외의 프레임워크를 구현하거나 더 깊이 있는 이해를 원할 경우 SDK for의 작동 방식을 살펴볼 수 있습니다.
