@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: 'Adobe Experience Manager as a Cloud Service 아키텍처 소개. '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ AEM as a Cloud Service은 다음과 같은 작업을 수행하는 오케스트�
 ## 환경 {#environments}
 
 >[!NOTE]
->
 >자세한 내용은 [배포 - 런타임 모드](/help/implementing/deploying/overview.md#runmodes)를 참조하십시오.
 
-AEM as a Cloud Service는 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다. AEM as a Cloud Service에 사용할 수 있는 환경에는 다음 네 가지 유형이 있습니다.
+AEM as a Cloud Service는 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다.
+
+AEM을 Cloud Service으로 사용할 수 있는 환경에는 세 가지 유형이 있습니다.
 
 * **프로덕션 환경**: 비즈니스 전문가를 위한 애플리케이션을 호스팅합니다.
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service는 개별 인스턴스로서 사용할 수 있게 되었�
 
 * **개발 환경**: 개발자가 스테이지 및 프로덕션 환경과 동일한 런타임 조건으로 AEM 애플리케이션을 구현할 수 있도록 해줍니다.
 
-* **데모 환경**: 평가, 데모, 프로토타이핑 및 교육 용도로 사용할 수 있습니다.
-
-개발 및 데모 환경은 종종 *비프로덕션* 환경이라고 합니다.
+   자세한 내용은 [환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) 관리를 참조하십시오.
 
 ## 프로그램 {#programs}
 
