@@ -12,7 +12,7 @@ ht-degree: 81%
 
 # 페이지에 워크플로우 적용 {#applying-workflows-to-pages}
 
-작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다. 두 개 이상의 워크플로우를 적용할 수도 있습니다.
+작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다.두 개 이상의 워크플로우를 적용할 수도 있습니다.
 
 워크플로우를 적용할 때에는 다음 정보를 지정합니다.
 
@@ -119,7 +119,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 1. **범위** 단계에서 다음 내용을 선택할 수 있습니다.
 
-   * **컨텐츠** 추가를 통해 [경로 브라우저를](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 열고 추가 리소스를 선택합니다. 브라우저에서는 선택을 클릭/탭하여 **워크플로우** 인스턴스에 컨텐츠를 추가합니다.
+   * **컨텐츠** 추가를 통해 [경로 브라우저를](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 열고 추가 리소스를 선택합니다.브라우저에서는 선택을 클릭/탭하여 **워크플로우** 인스턴스에 컨텐츠를 추가합니다.
 
    * 추가 작업을 보기 위한 기존 리소스:
 
