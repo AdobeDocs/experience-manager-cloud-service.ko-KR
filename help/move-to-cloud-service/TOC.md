@@ -1,6 +1,6 @@
 ---
-sub-product: 클라우드 서비스로서 AEM으로 이동
-user-guide-title: 클라우드 서비스로서 AEM으로 이동
+sub-product: AEM as a Cloud Service로 이동
+user-guide-title: AEM as a Cloud Service로 이동
 breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 translation-type: tm+mt
@@ -12,9 +12,9 @@ ht-degree: 95%
 ---
 
 
-# 클라우드 서비스로서 AEM으로 이동 안내서 {#moving}
+# AEM as a Cloud Service로 이동 안내서 {#moving}
 
-+ [클라우드 서비스로서 AEM으로 이동](/help/move-to-cloud-service/home.md)
++ [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md)
 + 전환 여정 단계 {#phases}
    + [계획](/help/move-to-cloud-service/planning.md)
    + [실행](/help/move-to-cloud-service/execution.md)
