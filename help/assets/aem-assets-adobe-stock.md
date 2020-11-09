@@ -78,7 +78,7 @@ ht-degree: 3%
 
 ![Experience Manager의 검색 필터 및 검색 결과에서 강조 표시된 Adobe Stock 에셋](assets/aem-search-filters2.jpg)
 
-*그림:검색 결과에서 필터[!DNL Experience Manager]와 강조 표시된[!DNL Adobe Stock]에셋을 검색합니다.*
+*그림:검색 결과에서 필터 [!DNL Experience Manager] 와 강조 표시된 [!DNL Adobe Stock] 에셋을 검색합니다.*
 
 ### 필요한 자산 저장 및 보기 {#saveassets}
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
 ![Experience Manager 자산에 Adobe Stock 에셋의 라이선스를 부여하고 저장하는 대화 상자](assets/aem-stock_licenseandsave.jpg)
 
-*그림:에셋에 라이선스를 부여하고 저장할 수 있는 대화[!DNL Adobe Stock]상자[!DNL Experience Manager Assets].*
+*그림:에셋에 라이선스를 부여하고 저장할 수 있는 대화 [!DNL Adobe Stock] 상자 [!DNL Experience Manager Assets].*
 
 ### 메타데이터 및 자산 속성 액세스 {#access-metadata-and-asset-properties}
 
