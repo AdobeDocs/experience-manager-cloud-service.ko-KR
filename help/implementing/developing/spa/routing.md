@@ -28,7 +28,7 @@ AEM의 단일 페이지 애플리케이션의 경우, 앱은 라우팅을 담당
 
 ## 수동 및 자동 모델 라우팅 {#manual-vs-automatic-model-routing}
 
-모델의 조각 `ModelRouter` 가져오기를 자동화합니다. 그러나 자동화된 툴에는 제한 사항이 적용됩니다. 필요할 때 메타 속성을 사용하여 경로를 무시하도록 해당 경로를 비활성화하거나 구성할 `ModelRouter` 수 있습니다(SPA 페이지 구성 요소 문서의 메타 속성 섹션 참조 [](page-component.md) ). 그런 다음 프런트 엔드 개발자는 해당 함수를 사용하여 주어진 모델 조각 `PageModelManager` 을 로드하도록 요청하여 자체 모델 라우팅 레이어를 구현할 수 `getData()` 있습니다.
+모델의 조각 `ModelRouter` 가져오기를 자동화합니다. 그러나 자동화된 툴에는 제한 사항이 적용됩니다. 필요할 때 메타 속성을 사용하여 경로를 무시하도록 해당 경로를 비활성화하거나 구성할 `ModelRouter` 수 있습니다( [SPA 페이지 구성 요소](page-component.md) 문서의 메타 속성 섹션 참조). 그런 다음 프런트 엔드 개발자는 해당 함수를 사용하여 주어진 모델 조각 `PageModelManager` 을 로드하도록 요청하여 자체 모델 라우팅 레이어를 구현할 수 `getData()` 있습니다.
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ AEM의 단일 페이지 애플리케이션의 경우, 앱은 라우팅을 담당
 
 ## 라우팅 계약 {#routing-contract}
 
-현재 구현은 SPA 프로젝트에서 HTML5 내역 API를 사용하여 다른 애플리케이션 페이지로 라우팅한다는 가정을 기반으로 합니다.
+현재 구현은 SPA 프로젝트에서 HTML5 내역 API를 사용하여 다른 응용 프로그램 페이지로 라우팅한다는 가정을 기반으로 합니다.
 
 ### 구성 {#configuration}
 
@@ -48,7 +48,7 @@ AEM의 단일 페이지 애플리케이션의 경우, 앱은 라우팅을 담당
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-경로가 선택되면 SPA에서 해당 페이지 모델을 자동으로 로드하려고 `/content/mysite/mypage"``PageModelManager` 하기 때문에 SPA의 모든 경로가 AEM에서 액세스 가능한 리소스(예: &quot;)에 해당됩니다. 하지만, 필요한 경우, SPA는 다음과 같이 무시해야 하는 경로의 &quot;차단 목록&quot;을 정의할 수도 있습니다. `PageModelManager`
+라우트가 선택되면 SPA에서 해당 페이지 모델을 자동으로 로드하려고 `/content/mysite/mypage"``PageModelManager` 하므로의 모든 경로는 AEM에서 액세스 가능한 리소스(예: &quot;)에 해당됩니다. 하지만, 필요할 경우, SPA은 다음 항목에 의해 무시되어야 하는 경로의 &quot;차단 목록&quot;을 정의할 수도 있습니다 `PageModelManager`.
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
