@@ -103,7 +103,7 @@ SCS를 사용하여 이미지에 태그를 지정하려면 Adobe 개발자 콘�
 
    ![새 보안 인증서를 추가하려면 키 저장소에서 기존의 유사 검색 항목 삭제](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *그림: 새 보안 인증서를 추가하려면 키 저장소에서 기존`similaritysearch`항목을 삭제합니다.*
+   *그림: 새 보안 인증서를 추가하려면 키 저장소에서 기존 `similaritysearch` 항목을 삭제합니다.*
 
 1. [!DNL Experience Manager] 사용자 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;에 액세스합니다. 사용 가능한 스마트 태그 구성을 엽니다. 공개 인증서를 다운로드하려면 **[!UICONTROL 공개 인증서 다운로드]**&#x200B;를 클릭합니다.
 
