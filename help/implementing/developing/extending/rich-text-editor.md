@@ -29,7 +29,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 ![리치 텍스트 편집기 도구 모음](assets/rte-toolbar-full-screen-mode.png)
 
-*그림: 사용 가능한 모든 옵션이 활성화된 리치 텍스트 편집기 도구 모음.*
+*그림:사용 가능한 모든 옵션이 활성화된 리치 텍스트 편집기 도구 모음.*
 
 도구 모음은 WYSIWYG 작성 환경을 위한 옵션을 제공합니다. [!DNL Experience Manager] 관리자는 인터페이스의 도구 모음에서 사용할 수 있는 옵션을 구성할 수 있습니다. 기본적으로 다양한 편집 옵션을 사용할 수 있습니다 [!DNL Experience Manager]. 개발자는 사용자 요구에 맞게 구성 [!DNL Experience Manager] 하여 더 많은 편집 옵션을 추가할 수 있습니다.
 
@@ -39,10 +39,10 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 | 편집 모드 | 편집 영역 | 활성화할 기능 권장 |
 |--- |--- |--- |
-| 인라인 | 간단한 편집을 위한 즉석 편집, 대화 상자를 열지 않고 형식을 지정합니다. | 최소 RTE 기능 |
+| 인라인 | 간단한 편집을 위한 즉석 편집,대화 상자를 열지 않고 형식을 지정합니다. | 최소 RTE 기능 |
 | RTE 전체 화면 | 전체 페이지를 포함합니다. | 모든 필수 RTE 기능 |
 | 대화 상자 | 대화 상자는 페이지 컨텐츠 상단에 있지만 전체 페이지는 포함되지 않습니다. | 편리한 기능 |
-| 대화 상자 전체 화면 | 전체 화면 모드와 동일; 은 RTE와 함께 대화 상자의 필드를 포함합니다. | 모든 필수 RTE 기능 |
+| 대화 상자 전체 화면 | 전체 화면 모드와 동일;은 RTE와 함께 대화 상자의 필드를 포함합니다. | 모든 필수 RTE 기능 |
 
 >[!NOTE]
 >
@@ -54,9 +54,9 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 ![툴바의 기본 옵션을 사용한 인라인 편집](assets/inline-editing-mode-basic-options.png)
 
-*그림: 툴바에서 기본 옵션을 사용하여 인라인 편집*
+*그림:툴바에서 기본 옵션을 사용하여 인라인 편집*
 
-### Full-screen editing {#full-screen-editing}
+### 전체 화면 편집 {#full-screen-editing}
 
 [!DNL Experience Manager] 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 편집 옵션이 가장 다양하므로 전체 화면 편집이 인라인 편집의 자세한 버전입니다. 아이콘을 클릭하여 전체 화면 ![에서](assets/rte_fullscreen.png)RTE를 열 수 있고 인라인 편집 모드를 사용할 때는 작은 도구 모음에서 열 수 있습니다.
 
@@ -64,7 +64,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 ![전체 화면 모드에서 편집할 때 자세한 RTE 툴바](assets/rte-toolbar-full-screen-mode.png)
 
-*그림: 전체 화면 모드에서 편집할 때 자세한 RTE 툴바*
+*그림:전체 화면 모드에서 편집할 때 자세한 RTE 툴바*
 
 ### 대화 상자 편집 {#dialog-editing}
 
@@ -72,7 +72,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 
 ![대화 상자 편집 모드](assets/dialog_editing_modetouchui.png)
 
-*그림: 대화 상자 편집 모드*
+*그림:대화 상자 편집 모드*
 
 ## RTE 플러그인 및 관련 기능 정보 {#aboutplugins}
 
@@ -102,7 +102,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인을](/help/si
 | [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | 이 값을 정의하려면 [탭 크기를 참조하십시오](configure-rich-text-editor-plug-ins.md#tabsize). |
 | [justice](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | 단락 정렬. |
 | [링크](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | 이 플러그인은 들여쓰기 및 목록 [을 모두 제어합니다](configure-rich-text-editor-plug-ins.md#indentmargin). 중첩된 목록 포함. |
+| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | 이 플러그인은 들여쓰기 및 목록 [을 모두 제어합니다](configure-rich-text-editor-plug-ins.md#indentmargin).중첩된 목록 포함. |
 | [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | 기타 도구를 사용하여 작성자는 [특수 문자를](configure-rich-text-editor-plug-ins.md#spchar) 입력하거나 HTML 소스를 편집할 수 있습니다. 또한 목록을 정의하려는 경우 [다양한 특수 문자를](configure-rich-text-editor-plug-ins.md#definerangechar) 추가할 수도 있습니다. |
 | Paraformat | `paraformat` | 기본 단락 형식은 Paragraph, Heading 1, Heading 2 및 Heading 3(`<p>`, `<h1>`및 `<h2>`and `<h3>`)입니다. 단락 서식 [을](configure-rich-text-editor-plug-ins.md#paraformats) 더 추가하거나 목록을 확장할 수 있습니다. |
 | spellcheck | `checktext` | [언어 인식 맞춤법 검사기입니다](configure-rich-text-editor-plug-ins.md#adddict). |
@@ -126,22 +126,23 @@ RTE [플러그인](#editingmodes) 활성화 시 작성자에게 제공하는 인
 
 >[!NOTE]
 >
->노드 이름을 다음으로 지정하지 `cq:inplaceEditing` 마십시오 `config`. 노드에서 `cq:inplaceEditing` 다음 속성을 정의합니다.
+>노드 이름을 다음으로 지정하지 `cq:inplaceEditing` 마십시오 `config`. 노드에서 다음 속성을 `cq:inplaceEditing` 정의합니다.
 >
 >* **이름**: `configPath`
 >* **유형**: `String`
->* **값**: 실제 구성을 포함하는 노드의 경로
+>* **값**:실제 구성을 포함하는 노드의 경로
+
 >
 >
 RTE 구성 노드의 이름을 다음으로 지정하지 마십시오 `config`. 그렇지 않으면 RTE 구성은 관리자만 적용되고 그룹의 사용자에 대해서는 적용되지 않습니다 `content-author`.
 
 대화 상자 편집 모드에 적용되는 다음 속성을 구성합니다.
 
-* `useFixedInlineToolbar`: 떠 있는 대신 RTE 도구 모음을 고정시킬 수 있습니다. sling:resourceType=로 RTE 노드에 정의된 이 부울 속성 `cq/gui/components/authoring/dialog/richtext` 을 설정합니다 `True`. 이 속성을 로 설정하면 이벤트 `True`에서 리치 텍스트 편집이 `foundation-contentloaded` 시작됩니다. 이를 방지하려면 속성을 설정하여 이벤트 `customStart` 를 `True` 트리거하여 RTE 편집을 `rte-start` 시작합니다. 이 속성이 `true`설정되면 RTE는 클릭을 시작하지 않으며 이는 기본 동작입니다.
+* `useFixedInlineToolbar`:떠 있는 대신 RTE 도구 모음을 고정시킬 수 있습니다. sling:resourceType=로 RTE 노드에 정의된 이 부울 속성 `cq/gui/components/authoring/dialog/richtext` 을 설정합니다 `True`. 이 속성을 로 설정하면 이벤트 `True`에서 리치 텍스트 편집이 `foundation-contentloaded` 시작됩니다. 이를 방지하려면 속성을 설정하여 이벤트 `customStart` 를 `True` 트리거하여 RTE 편집을 `rte-start` 시작합니다. 이 속성이 `true`설정되면 RTE는 클릭을 시작하지 않으며 이는 기본 동작입니다.
 
-* `customStart`: 이벤트를 트리거하여 RTE를 시작할 시기를 제어하려면 RTE 노드에 정의된 이 부울 속성 `True`을 로 설정합니다 `rte-start`.
+* `customStart`:이벤트를 트리거하여 RTE를 시작할 시기를 제어하려면 RTE 노드에 정의된 이 부울 속성 `True`을 로 설정합니다 `rte-start`.
 
-* `rte-start`: RTE의 편집 `contenteditable-div` 을 시작할 때 이 이벤트를 트리거합니다. 설정된 경우에만 `customStart` 작동합니다 `true`.
+* `rte-start`:RTE의 편집 `contenteditable-div` 을 시작할 때 이 이벤트를 트리거합니다. 설정된 경우에만 `customStart` 작동합니다 `true`.
 
 터치 지원 대화 상자에서 RTE를 사용하는 경우 문제를 방지하려면 속성 `useFixedInlineToolbar` 을 `true` 설정합니다.
 
@@ -160,6 +161,7 @@ RTE 플러그인의 자세한 구성에 대해서는 RTE 플러그인을 활성�
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 자체 텍스트 구성 요소를 만들려면 이러한 구성 요소를 편집하는 대신 위의 구성 요소를 복사하십시오.
