@@ -1,26 +1,26 @@
 ---
-title: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
-description: 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원
-translation-type: ht
+title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
+description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
 
 ---
 
 
-# 클라우드 서비스로서의 Adobe Experience Manager에 대한 IMS 지원 {#ims-support-for-aem-as-a-cloud-service}
+# Adobe Experience Manager as a Cloud Service에 대한 IMS 지원 {#ims-support-for-aem-as-a-cloud-service}
 
 ## 소개 {#introduction}
 
-* 클라우드 서비스로서의 AEM에는 AEM 인스턴스 및 Adobe IMS(Identity Management System) 기반 인증을 위한 Admin Console 지원이 포함되어 있습니다.
+* AEM as a Cloud Service에는 AEM 인스턴스 및 Adobe IMS(Identity Management System) 기반 인증을 위한 Admin Console 지원이 포함되어 있습니다.
 * 관리자는 Admin Console을 사용하여 모든 Experience Cloud 사용자를 중앙에서 관리할 수 있습니다.
-* 사용자 및 그룹을 클라우드 서비스 인스턴스로서 AEM과 연결된 제품 프로필에 지정하여 해당 인스턴스에 로그인할 수 있도록 할 수 있습니다.
+* 사용자 및 그룹을 AEM as a Cloud Service 인스턴스와 연결된 제품 프로필에 지정하여 해당 인스턴스에 로그인할 수 있도록 할 수 있습니다.
 
 ## 주요 특징 {#key-highlights}
 
-클라우드 서비스로서의 AEM에서는 작성자, 관리자 및 개발자 사용자에 대해서만 IMS 인증 지원 서비스를 제공합니다.  사이트 방문자와 같은 고객 사이트의 외부 최종 사용자는 지원하지 않습니다.
+AEM as a Cloud Service에서는 작성자, 관리자 및 개발자 사용자에 대해서만 IMS 인증 지원 서비스를 제공합니다.  사이트 방문자와 같은 고객 사이트의 외부 최종 사용자는 지원하지 않습니다.
 
 * Admin Console은 고객을 IMS 조직으로, 환경에 있는 작성 및 게시 인스턴스를 제품 컨텍스트 인스턴스로 표시합니다. 이렇게 하면 시스템 및 제품 관리자가 인스턴스에 대한 액세스를 관리할 수 있습니다.
 * Admin Console의 제품 프로필이 사용자가 액세스할 수 있는 인스턴스를 결정합니다.
@@ -107,7 +107,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 사용자 동기화 도구에서 사용하는 사용자 관리 API는 [여기에서](https://www.adobe.io/apis/cloudplatform/umapi-new.html) 다룹니다.
 
-## 클라우드 서비스로서의 Adobe Experience Manager 구성 {#aem-configuration}
+## Adobe Experience as a Cloud Service 구성 {#aem-configuration}
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ![제품 프로필](/help/security/assets/ims8.png)
 
-### 클라우드 서비스로서의 Adobe Experience Manager에 로그인{#logging-in-to-aem}
+### Adobe Experience Manager as a Cloud Service에 로그인{#logging-in-to-aem}
 
 **로컬 관리자 로그인**
 
@@ -176,7 +176,7 @@ Federated IDP가 초기 Admin Console 설정 중에 구성된 경우 사용자�
 
 ![IMS 로그인5](/help/security/assets/ims14.png)
 
-### 클라우드 서비스로서의 Adobe Experience Manager의 권한 및 ACL 관리 {#managing-permissions-in-aem}
+### Adobe Experience Manager as a Cloud Service의 권한 및 ACL 관리 {#managing-permissions-in-aem}
 
 ACL 및 권한은 AEM에서 계속 관리됩니다. IMS에서 동기화된 사용자 그룹은 ACL 및 권한이 정의된 로컬 그룹에 지정할 수 있습니다.
 
@@ -201,7 +201,7 @@ IMS에서 동기화된 사용자 그룹은 AEM에서 **DAM 사용자**&#x200B;�
 
 ### Cloud Manager 액세스 {#accessing-cloud-manager}
 
-Cloud Manager 또는 AEM에 클라우드 서비스 환경으로 액세스하려면 Cloud Manager 제품의 프로필에 할당되어야 합니다.
+Cloud Manager 또는 AEM as a Cloud Service 환경으로 액세스하려면 Cloud Manager 제품의 프로필에 할당되어야 합니다.
 
 Cloud Manager의 특정 기능의 가용성을 제어하는 사용자 역할에 대한 자세한 내용은 [역할 정의](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)를 참조하십시오.
 
@@ -225,10 +225,10 @@ Cloud Manager의 특정 기능의 가용성을 제어하는 사용자 역할에 
 1. 해당 프로필에 추가되면 사용자 인터페이스의 오른쪽 상단 모서리에서 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com)를 통해 Cloud Manager의 각 테넌트에 액세스할 수 있습니다.
 
 
-### AEM에서 클라우드 서비스로 인스턴스에 액세스 {#accessing-instance-cloud-service}
+### AEM as a Cloud Service로 인스턴스에 액세스 {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->AEM에서 클라우드 서비스로 인스턴스에 대한 액세스 권한을 부여하기 전에 위의 섹션에 언급된 단계가 이미 완료되었어야 합니다.
+>AEM as a Cloud Service로 인스턴스에 대한 액세스 권한을 부여하기 전에 위의 섹션에 언급된 단계가 이미 완료되었어야 합니다.
 
 **관리 콘솔** 내에서 AEM 인스턴스에 액세스하려면 **Admin Console**&#x200B;의 제품 목록에 있는 프로그램 내에 Cloud Manager 프로그램 및 환경이 표시되어야 합니다.
 
