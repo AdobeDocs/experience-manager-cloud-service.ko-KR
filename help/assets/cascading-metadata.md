@@ -26,7 +26,7 @@ ht-degree: 0%
 * 다른 필드에 지정된 값을 기반으로 특정 필드에 대해 표시되는 변경 옵션
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 기본 메타데이터 값을 설정합니다.
 
-## AEM에서 계단식 메타데이터 구성 {#configure-cascading-metadata-in-aem}
+## AEM에서 CSS 메타데이터 구성 {#configure-cascading-metadata-in-aem}
 
 선택한 자산의 유형에 따라 CSS 메타데이터를 표시하려는 시나리오를 생각해 보십시오. 몇 가지 예
 
@@ -35,8 +35,8 @@ ht-degree: 0%
 
 선택한 자산 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구]** > 자산 **[!UICONTROL > 메타데이터 스키마]** 로 **[!UICONTROL 이동합니다]**.
-1. 스키마 **[!UICONTROL 양식]** 페이지에서 스키마 양식을 선택한 다음 도구 모음 **[!UICONTROL 에서 편집을]** 탭/클릭하여 스키마를 편집합니다.
+1. AEM 로고를 탭/클릭하고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 스키마 **[!UICONTROL 로 이동합니다]**.
+1. 스키마 **[!UICONTROL Forms]** 페이지에서 스키마 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집을]** 탭/클릭하여 스키마를 편집합니다.
 
    ![select_form](assets/select_form.png)
 
@@ -55,6 +55,7 @@ ht-degree: 0%
    * 값을 수동으로 지정하려면 [수동으로 **[!UICONTROL 추가]**]를 선택하고 선택 **[!UICONTROL 추가]** 를 탭/클릭하고 옵션 텍스트 및 값을 지정합니다. 예를 들어 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
 
    * JSON 파일에서 값을 동적으로 가져오려면 [JSON 경로를 **[!UICONTROL 통해 추가]** ]를 선택하고 JSON 파일의 경로를 제공합니다. AEM은 양식이 사용자에게 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
+
    두 옵션은 함께 사용할 수 없습니다. JSON 파일에서 옵션을 가져와 수동으로 편집할 수는 없습니다.
 
    ![add_choice](assets/add_choice.png)
@@ -107,7 +108,7 @@ ht-degree: 0%
 1. 메타데이터 스키마를 적용한 폴더로 이동하고 자산의 속성 페이지를 엽니다. 자산 유형 필드에서 선택한 내용에 따라 관련 CSS 메타데이터 필드가 표시됩니다.
 
    ![비디오 에셋용 CSS 메타데이터](assets/video_asset.png)
-   *그림: 비디오 에셋용 CSS 메타데이터*
+   *그림:비디오 에셋용 CSS 메타데이터*
 
    ![문서 에셋에 대한 CSS 메타데이터](assets/doc_type_fields.png)
-   *그림: 문서 에셋에 대한 CSS 메타데이터*
+   *그림:문서 에셋에 대한 CSS 메타데이터*
