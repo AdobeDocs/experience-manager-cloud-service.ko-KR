@@ -39,6 +39,7 @@ ht-degree: 83%
 >
 >* [중첩된 론치 홍보](#promoting-a-nested-launch)에서는 구조에 둘 이상의 론치가 있는 경우를 설명합니다.
 >* [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)에서는 자동 홍보 및 게시에 대한 세부 정보를 제공합니다.
+
 >
 
 
@@ -62,6 +63,7 @@ ht-degree: 83%
       * **수정된 페이지 홍보**
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
+
       예를 들어, 수정된 페이지만 홍보하도록 선택하는 경우:
 
       ![출시 홍보](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -103,6 +105,7 @@ ht-degree: 83%
       * **수정된 페이지 홍보**
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
+
    ![론치 설정 홍보](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. **다음**&#x200B;을 선택합니다.
