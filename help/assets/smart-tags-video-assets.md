@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 업로드 시 스마트 태그 지정 비디오 {#smart-tag-assets-on-ingestion}
 
-비디오 자산 [을 Cloud Service](add-assets.md#upload-assets) 로 업로드하면 비디오가 [!DNL Adobe Experience Manager] 처리됩니다 ![](assets/do-not-localize/assetprocessing.png). 처리가 완료되면 자산 속성 [!UICONTROL 페이지의] 기본 [!UICONTROL 탭] 을참조하십시오. 스마트 태그는 스마트 태그 아래의 비디오에 자동으로 [!UICONTROL 추가됩니다]. 자산 계산 서비스는 Adobe Sensei을 활용하여 이러한 스마트 태그를 만듭니다.
+비디오 자산 [을 Cloud Service](add-assets.md#upload-assets) 로 업로드하면 비디오가 [!DNL Adobe Experience Manager] 처리됩니다 ![](assets/do-not-localize/assetprocessing.png). 처리가 완료되면 자산 속성 [!UICONTROL 페이지의] 기본 [!UICONTROL 탭] 을참조하십시오. 스마트 태그는 스마트 태그 아래의 비디오에 자동으로 [!UICONTROL 추가됩니다]. asset compute 서비스는 Adobe Sensei을 활용하여 이러한 스마트 태그를 만듭니다.
 
 ![스마트 태그가 비디오에 추가되고 자산 속성의 기본 탭에 표시됩니다.](assets/smart-tags-added-to-videos.png)
 
