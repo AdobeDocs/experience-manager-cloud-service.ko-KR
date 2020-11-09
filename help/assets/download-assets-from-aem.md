@@ -35,7 +35,7 @@ ht-degree: 4%
 
 ![다운로드 알림](assets/download-notification.png)
 
-*그림:받은 편지함을 통해 알림[!DNL Experience Manager]다운로드*
+*그림:받은 편지함을 통해 알림 [!DNL Experience Manager] 다운로드*
 
 비동기 다운로드는 다음 경우 트리거됩니다.
 
