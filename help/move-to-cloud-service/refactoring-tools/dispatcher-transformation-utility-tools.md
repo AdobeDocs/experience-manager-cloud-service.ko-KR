@@ -25,7 +25,7 @@ Dispatcher는 Adobe Experience Manager의 캐싱 및/또는 로드 밸런싱 도
 
 ### Apache 및 Dispatcher 구성과 테스트 {#dispatcher-configurations-cloud}
 
-클라우드 환경에 배포하기 전에 클라우드 서비스로서의 AEM Apache 및 Dispatcher 구성을 조직하는 방법과 이렇게 구성한 조직을 로컬로 확인하고 실행하는 방법을 알아보아야 합니다.
+클라우드 환경에 배포하기 전에 AEM as a Cloud Service Apache 및 Dispatcher 구성을 조직하는 방법과 이렇게 구성한 조직을 로컬로 확인하고 실행하는 방법을 알아보아야 합니다.
 
 자세한 내용은 [클라우드의 Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)를 참조하십시오.
 
