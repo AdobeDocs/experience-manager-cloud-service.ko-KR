@@ -1,8 +1,8 @@
 ---
-sub-product: 클라우드 서비스로서의 AEM 릴리스 노트
-user-guide-title: 클라우드 서비스로서의 AEM 릴리스 노트
+sub-product: AEM as a Cloud Service 릴리스 노트
+user-guide-title: AEM as a Cloud Service 릴리스 노트
 breadcrumb-title: 릴리스 정보
-user-guide-description: 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 클라우드 서비스로서의 Experience Manager의 최신 릴리스에 대한 중요 정보를 제공합니다.
+user-guide-description: 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다.
 translation-type: tm+mt
 source-git-commit: ff6a8bcada76a50d682764bb5a03f498e903779e
 workflow-type: tm+mt
