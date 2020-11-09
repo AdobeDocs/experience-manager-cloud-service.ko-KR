@@ -81,8 +81,8 @@ ht-degree: 81%
 
    **완료**&#x200B;를 사용하여 콘솔로 돌아가면 다음에서 론치를 보고 액세스할 수 있습니다.
 
-   * The [**Launches **console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References **in the** Sites **console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### 새 템플릿을 사용하여 론치 만들기 {#create-launch-with-new-template}
 
