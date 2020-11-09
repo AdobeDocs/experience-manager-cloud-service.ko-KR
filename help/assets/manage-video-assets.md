@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ![Experience Manager에서 비디오 트랜스코딩용 처리 프로필 만들기](assets/video-processing-profile-for-mp4.png)
 
-*그림:비디오 트랜스코딩에 대한 처리 프로필[!DNL Experience Manager].*
+*그림:비디오 트랜스코딩에 대한 처리 프로필 [!DNL Experience Manager].*
 
 너비만 또는 높이만 제공하고 다른 필드를 비워 두면 변환이 종횡비를 유지합니다. 현재 코드 변환에는 h264 코덱만 사용할 수 있습니다.
 
