@@ -45,7 +45,7 @@ Cloud [!UICONTROL Manager에]성공적으로 로그인하면 아래 그림과 �
 ## 기존 프로그램을 사용하여 Cloud Service에 새 프로그램 추가 {#existing-program}
 
 
-1. Adobe **Experience Cloud에[!UICONTROL 로그인하면]** 프로그램 및 제품 **목록이**&#x200B;표시됩니다.
+1. Adobe **Experience Cloud에 [!UICONTROL 로그인하면]** 프로그램 및 제품 **목록이**&#x200B;표시됩니다.
 
    ![](assets/first_timelogin1.png)
 
