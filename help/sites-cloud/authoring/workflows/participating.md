@@ -73,7 +73,7 @@ ht-degree: 73%
 
 다음 절차를 사용하여 작업 항목을 완료하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
 1. Select **Complete** from the toolbar.
 1. **작업 항목 완료** 대화 상자가 열립니다. Select the **Next Step** from the drop down selector and add a **Comment** if required.
@@ -132,7 +132,7 @@ ht-degree: 73%
 
 다음 절차를 사용하여 작업 항목을 위임하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
 1. Select **Delegate** from the toolbar.
 1. 대화 상자가 열립니다. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
@@ -182,7 +182,7 @@ ht-degree: 73%
 
 다음 절차를 사용하여 뒤 단계로 이동하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
 1. Select **Step Back** to open the dialog.
 1. **이전 단계**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
@@ -243,7 +243,7 @@ ht-degree: 73%
 
 워크플로우 항목을 열고 세부 사항을 보려면 다음을 수행하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
 1. Select **Open** to open the information tabs.
 1. 필요할 경우 적절한 작업을 선택하고 세부 사항을 제공한 후 **확인**&#x200B;을 클릭하여 적용합니다(확인하지 않으려면 **취소**&#x200B;를 클릭합니다.).
@@ -264,7 +264,7 @@ ht-degree: 73%
 
 워크플로우 인스턴스의 페이로드 및 리소스를 보려면 다음을 수행하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
 1. Select **View Payload** from the toolbar to open the dialog.
    * 워크플로우 패키지는 단순히 저장소 내 경로에 대한 포인터 컬렉션이므로 여기에 항목을 추가/제거/수정하여 워크플로우 패키지에서 참조되는 내용을 조정할 수 있습니다. **리소스 정의** 구성 요소를 사용하여 새 항목을 추가하십시오.
