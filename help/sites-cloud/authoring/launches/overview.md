@@ -44,6 +44,7 @@ This section describes how to create, edit and promote (and if necessary [delete
    * 이 사본이 론치입니다.
    * 최상위 수준 소스 페이지는 **프로덕션**&#x200B;이라고 합니다.
       * 소스 페이지를 여러 개의(독립된) 분기에서 가져올 수 있습니다.
+
    ![실행 순서](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * 론치 구성 편집:
@@ -62,11 +63,13 @@ This section describes how to create, edit and promote (and if necessary [delete
 * 소스 페이지와 론치 페이지 동시 업데이트:
    * 소스 페이지 변경 사항은 론치 카피(상속을 통해, 즉 Live Copy로 설정된 경우)에서 자동으로 구현됩니다.
    * 론치 카피에 대한 변경은 이 자동 업데이트 또는 소스 페이지를 중단하지 않고 수행할 수 있습니다.
+
    ![동시 작업](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [중첩 론치 만들기](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - 론치 내 론치:
    * 소스는 기존 론치입니다.
    * 어떤 타겟으로든 [중첩 론치를 홍보](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch)할 수 있습니다. 이 타겟은 상위 론치나 최상위 수준 소스 페이지(프로덕션)일 수 있습니다.
+
    ![중첩 론치](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
