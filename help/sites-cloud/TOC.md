@@ -1,9 +1,9 @@
 ---
 solution: Experience Manager, Experience Manager Sites
-sub-product: 클라우드 서비스로서의 AEM에서 컨텐츠 작성
-user-guide-title: 클라우드 서비스로서의 AEM에서 컨텐츠 작성
+sub-product: AEM as a Cloud Service에서 컨텐츠 작성
+user-guide-title: AEM as a Cloud Service에서 컨텐츠 작성
 breadcrumb-title: 작성 안내서
-user-guide-description: 클라우드 서비스로서의 Experience Manager 사이트를 제작 및 관리하는 방법을 이해합니다.
+user-guide-description: Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다.
 translation-type: tm+mt
 source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 # 사이트 {#sites}
 
-+ [클라우드 서비스로서의 AEM 사이트](/help/sites-cloud/home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [AEM 클라우드 서비스의 AEM 사이트에 대한 주요 변경 사항](sites-cloud-changes.md)
 + 작성 {#authoring}
    + 시작하기 {#getting-started}
@@ -77,6 +77,6 @@ ht-degree: 97%
       + [ContextHub로 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + 관리 {#administering}
    + [워크플로우 관리](administering/workflows-administering.md)
-+ 클라우드 서비스로서의 AEM과 통합 {#integrations}
++ AEM as a Cloud Service와 통합 {#integrations}
    + [Adobe Analytics와 통합](integrating/integrating-adobe-analytics.md)
    + [Adobe Target과 통합](integrating/integrating-adobe-target.md)
