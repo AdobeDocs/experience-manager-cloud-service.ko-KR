@@ -14,7 +14,7 @@ ht-degree: 0%
 
 비디오를 **[!UICONTROL 재생하거나 웹 페이지에 포함된 자산을]** 보려는 경우 포함 코드 기능을 사용합니다. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. 포함 코드 대화 상자에서 코드 **[!UICONTROL 를 편집할 수]** 없습니다.
 
-AEM을 WCM으로 사용하지 _않는_ 경우에만 URL을 포함합니다. AEM을 WCM으로 사용하는 [경우 자산을 페이지에 직접 추가합니다.](adding-dynamic-media-assets-to-pages.md)
+AEM을 WCM으로 사용하지 _않는_ 경우에만 URL을 포함합니다. AEM을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다.](adding-dynamic-media-assets-to-pages.md)
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
