@@ -50,7 +50,7 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다�
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
-이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 클라우드 서비스로서 AEM(작성자/게시)에 마이그레이션하는 방법을 알아보십시오.
+이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service(작성자/게시)에 마이그레이션하는 방법을 알아보십시오.
 
 1. Adobe Experience Manager를 선택하고 도구 -> **작업** -> **컨텐츠 전송**&#x200B;으로 이동합니다.
 
@@ -72,7 +72,7 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다�
       >[!NOTE]
       >마이그레이션 세트 이름에는 특수 문자를 사용할 수 없습니다.
 
-   1. **클라우드 서비스 구성**: 대상 AEM을 클라우드 서비스 작성자 URL로 입력합니다.
+   1. **클라우드 서비스 구성**: 대상 AEM as a Cloud Service 작성자 URL로 입력합니다.
 
       >[!NOTE]
       >컨텐츠 전송 작업 중에 한 번에 최대 4개의 마이그레이션 세트를 만들고 유지 관리할 수 있습니다.
