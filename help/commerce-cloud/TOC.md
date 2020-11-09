@@ -1,8 +1,8 @@
 ---
-sub-product: 클라우드 서비스로서의 AEM Commerce
-user-guide-title: 클라우드 서비스로서의 AEM Commerce
+sub-product: AEM Commerce as a Cloud Service
+user-guide-title: AEM Commerce as a Cloud Service
 breadcrumb-title: Commerce 안내서
-user-guide-description: Experience Manager Commerce를 Cloud Service으로 사용하고 관리하는 방법을 이해합니다.
+user-guide-description: Experience Manager Commerce as a Cloud Service로 사용하고 관리하는 방법을 이해합니다.
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 59%
 
 # 상거래 {#commerce}
 
-+ [클라우드 서비스로서의 AEM Commerce](/help/commerce-cloud/home.md)
++ [AEM Commerce as a Cloud Service](/help/commerce-cloud/home.md)
 + [소개](overview.md)
 + [주요 변경 사항](changes.md)
 + 아키텍처 {#architecture}
