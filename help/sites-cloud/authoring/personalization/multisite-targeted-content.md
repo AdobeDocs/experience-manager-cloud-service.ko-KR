@@ -52,6 +52,7 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
 >
 >* 롤아웃이나 Live Copy를 사용하는 경우 MSM 라이센스가 있어야 합니다.
 >* Adobe Target에 대한 동기화를 사용하는 경우 Adobe Target 라이센스가 있어야 합니다.
+
 >
 
 
@@ -239,6 +240,7 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 >
 >* 활동에서는 Live Copy만 일시 중단하거나 분리할 수 있습니다.
 >* 상속된 활동을 확장하기 위해 Live Copy를 일시 중단하거나 분리할 필요는 없습니다. 항상 해당 활동에 대한 **새** 로컬 경험과 오퍼를 만들 수 있습니다. 기존 활동을 수정하려면 상속을 일시 중단해야 합니다.
+
 >
 
 
@@ -253,6 +255,7 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 
    1. 대상과 같은 활동의 요소를 선택합니다. AEM에 Live Copy 일시 중단을 확인하는 상자가 자동으로 표시됩니다. (타깃팅 프로세스에서 임의의 요소를 탭하거나 클릭하여 Live Copy를 일시 중단할 수 있습니다.)
    1. 도구 모음의 드롭다운 메뉴에서 **Live Copy 일시 중단**&#x200B;을 선택합니다.
+
    ![Live Copy 일시 중단](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. Tap or click **Suspend** to suspend the activity. 일시 중단된 활동은 빨간색으로 표시됩니다.
