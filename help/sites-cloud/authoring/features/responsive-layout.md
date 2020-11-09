@@ -14,7 +14,7 @@ ht-degree: 99%
 
 AEM에서는 **레이아웃 컨테이너** 구성 요소를 사용하여 사용자 페이지에 대한 응답형 레이아웃을 보유할 수 있습니다.
 
-이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 장치/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃&#x200B;**모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)와 함께 사용됩니다. 이 모드에서는 장치에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
+이 레이아웃은 응답형 격자 내에 구성 요소를 배치할 수 있도록 해주는 단락 시스템을 제공합니다. 이 격자를 사용하면 장치/창 크기 및 형식에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 [**레이아웃** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)와 함께 사용됩니다. 이 모드에서는 장치에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
 
 레이아웃 컨테이너:
 
@@ -27,15 +27,16 @@ AEM에서는 **레이아웃 컨테이너** 구성 요소를 사용하여 사용�
 
 AEM에서는 메커니즘을 조합하여 페이지에 대한 응답형 레이아웃을 실현합니다.
 
-* [**레이아웃 컨테이너&#x200B;**](#adding-a-layout-container-and-its-content-edit-mode)구성 요소
+* [**레이아웃 컨테이너**](#adding-a-layout-container-and-its-content-edit-mode) 구성 요소
 
    이 구성 요소는 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 사용할 수 있으며, 응답형 그리드 내에 구성 요소를 추가 및 배치할 수 있도록 해주는 그리드 단락 시스템을 제공합니다. 또한 페이지에서 기본 단락 시스템으로 설정할 수도 있습니다.
 
-* [**레이아웃 모드&#x200B;**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+* [**레이아웃 모드**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
    레이아웃 컨테이너를 페이지에 배치하면 **레이아웃** 모드를 사용하여 컨텐츠를 응답형 그리드 내에 배치할 수 있습니다.
 
-* [**에뮬레이터&#x200B;**](#selecting-a-device-to-emulate)에뮬레이터를 사용하면 구성 요소의 크기를 대화 방식으로 변경하여 장치/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 사용자는 컨텐츠가 에뮬레이터를 사용하여 어떻게 렌더링될지 알 수 있습니다.
+* [**에뮬레이터**](#selecting-a-device-to-emulate) 
+에뮬레이터를 사용하면 구성 요소의 크기를 대화 방식으로 변경하여 장치/창 크기에 따라 레이아웃을 다시 정렬하는 응답형 웹 사이트를 만들고 편집할 수 있습니다. 사용자는 컨텐츠가 에뮬레이터를 사용하여 어떻게 렌더링될지 알 수 있습니다.
 
 이러한 응답형 격자 메커니즘을 사용하여 다음을 수행할 수 있습니다.
 
