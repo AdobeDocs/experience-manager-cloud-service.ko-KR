@@ -250,13 +250,13 @@ See also [Adding Dynamic Media assets to pages.](/help/assets/dynamic-media/addi
 
 Dynamic Media는 Dynamic Media에서 *정적 컨텐츠로* 지원되는 다양한 3D 파일 포맷을 수용합니다. 정적 컨텐츠는 3D 자산을 업로드 및 게시할 수 있지만, 3D 자산과 관련된 *다이내믹* 이미징 또는 이미지 리핑은 지원되지 않음을 의미합니다. Dynamic Media Imaging Server가 3D 형식을 인식하지 않기 때문입니다. 따라서 Dynamic Media에서 3D 자산을 게시하면 복사할 수 있는 인스턴트 URL이 있습니다. 3D 자산의 URL은 일반적인 다이내믹 미디어 URL 구조를 따릅니다. 하지만 Dynamic Media의 기존 이미지 자산과 달리 자산의 URL에서 매개 변수를 편집할 수는 없습니다.
 
-정적 [자산에 대한 URL 획득을 참조하십시오.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
+정적 [자산에 대한 URL 얻기를 참조하십시오.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
 
 [ **[!UICONTROL 카드 보기]**]에서 작은 둥근 모양 아이콘이 자산 이름 바로 아래, 해당 날짜 및 시간 왼쪽에 표시되어 게시되었음을 나타냅니다. 목록 보기 **[!UICONTROL 에서]**&#x200B;게시된 **** 열은 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
 AEM을 WCM으로 사용하는 경우 이 게시 방법을 사용하여 웹 페이지에 직접 Dynamic Media 3D 자산을 추가합니다.
 
-Dynamic [Media 자산 게시를 참조하십시오.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+다이내믹 [미디어 자산 게시를 참조하십시오.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
 페이지 [게시를 참조하십시오.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
