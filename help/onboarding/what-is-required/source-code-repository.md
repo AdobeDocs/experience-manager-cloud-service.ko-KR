@@ -1,6 +1,6 @@
 ---
-title: 소스 코드 저장소 - Cloud Service
-description: 소스 코드 저장소 - Cloud Service
+title: 소스 코드 저장소 - Cloud Services
+description: 소스 코드 저장소 - Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Git 클라이언트가 설정되면 Cloud Manager UI에서 git 리포지토리를 관리할 수 있습니다. Cloud Manager UI를 사용하여 Git을 관리하는 방법에 대한 자세한 내용은 [Git 액세스를 참조하십시오](/help/implementing/cloud-manager/accessing-git.md).
 
-AEM Cloud 응용 프로그램 개발을 시작하려면, Cloud Manager 저장소에서 로컬 컴퓨터에서 보관소를 만들려는 위치로 애플리케이션 코드의 로컬 복사본을 체크 아웃하여 응용 프로그램 코드의 로컬 복사본을 만들어야 합니다.
+AEM Cloud 응용 프로그램 개발을 시작하려면, Cloud Manager 저장소에서 보관소를 만들려는 로컬 컴퓨터의 위치로 응용 프로그램 코드의 로컬 복사본을 체크 아웃하여 응용 프로그램 코드의 로컬 복사본을 만들어야 합니다.
 
 ```java
 $ git clone {URL}
