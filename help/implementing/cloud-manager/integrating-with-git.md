@@ -1,6 +1,6 @@
 ---
 title: Git과 통합
-description: Git과 통합 - Cloud Service
+description: Git과 통합 - Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -65,5 +65,5 @@ Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 �
 ## 추가 리소스 {#additional-resources}
 
 * [GitHub 리소스](https://try.github.io)
-* [Atlasian Git 자습서](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [Atlasian Git Tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git 요약서](https://education.github.com/git-cheat-sheet-education.pdf)
