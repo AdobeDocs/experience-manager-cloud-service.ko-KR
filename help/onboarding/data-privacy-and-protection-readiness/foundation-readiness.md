@@ -1,6 +1,6 @@
 ---
-title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Cloud Service 기반 준비 Adobe Experience Manager
-description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 기반 지원으로서 Adobe Experience Manager에 대해 알아보십시오. 여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법 및 새로운 AEM을 Cloud Service 프로젝트로 구현할 때 준수하는 방법이 포함됩니다. '
+title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Cloud Service 기반 준비 규정
+description: '다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 기반 지원으로서 Adobe Experience Manager에 대해 알아보십시오.여기에는 EU 개인 정보 보호 규정(GDPR), 캘리포니아 개인 정보 보호 법(California Consumer Privacy Act) 및 새로운 AEM을 Cloud Service 프로젝트로 구현할 때 준수하는 방법이 포함됩니다. '
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 기반 준비 Adobe Experience Manager {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager, 데이터 보호 및 데이터 개인 정보 보호 규정을 위한 Cloud Service 기반 준비 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe의 개인정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
+>개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe 개인정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
 
 ## AEM Foundation 데이터 개인 정보 보호 및 보호 지원 {#aem-foundation-data-privacy-and-protection-support}
 
@@ -46,7 +46,7 @@ AEM Foundation 수준에서 저장된 개인 데이터는 사용자 프로필에
 
 ### HTTP API {#http-api}
 
-앞에서 언급했듯이 Adobe는 사용자 데이터에 액세스하기 위한 API를 제공하여 자동화를 촉진합니다. 사용할 수 있는 API는 다음과 같은 몇 가지 유형이 있습니다.
+앞에서 언급했듯이 Adobe은 사용자 데이터에 액세스하기 위한 API를 제공하여 자동화를 촉진합니다. 사용할 수 있는 API는 다음과 같은 몇 가지 유형이 있습니다.
 
 **UserProperties API**
 
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->AEM을 Cloud Service으로 사용하는 경우 CRXDE에 액세스할 수 없으므로 UI에서 사용자 프로필을 삭제하기 위한 수동 절차를 사용할 수 없습니다.
+>AEM의 Cloud Service의 경우 CRXDE에 액세스할 수 없으므로 UI에서 사용자 프로필을 삭제할 수 있는 수동 절차가 없습니다.
 
 ### HTTP API {#http-api-1}
 
