@@ -1,6 +1,6 @@
 ---
 title: 경험 구성요소
-description: Adobe Experience Manager을 Cloud Service 경험 조각으로 확장합니다.
+description: Cloud Service 경험 조각으로 Adobe Experience Manager 확장
 translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
 workflow-type: tm+mt
@@ -46,13 +46,13 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 ![일반 HTML 변환](assets/xf-14.png)
 
-일반 변환 선택기는 추가 스크립트 대신 변환기를 사용합니다. 슬링 [리라이터는](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 변압기로 사용됩니다. 이 설정은
+일반 변환 선택기는 추가 스크립트 대신 변환기를 사용합니다.슬링 [리라이터는](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 변압기로 사용됩니다. 이 설정은
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
 ## 소셜 변형 {#social-variations}
 
-소셜 변형을 소셜 미디어(텍스트 및 이미지)에 게시할 수 있습니다. AEM에서 이러한 소셜 변형은 구성 요소를 포함할 수 있습니다. 예를 들어 텍스트 구성 요소, 이미지 구성 요소 등이 있습니다.
+소셜 변형을 소셜 미디어(텍스트 및 이미지)에 게시할 수 있습니다. AEM에서 이러한 소셜 변형은 구성 요소를 포함할 수 있습니다.예를 들어 텍스트 구성 요소, 이미지 구성 요소 등이 있습니다.
 
 소셜 게시물의 이미지와 텍스트는 모든 이미지 리소스 유형이나 심도의 텍스트 리소스 유형에서 가져올 수 있습니다(빌딩 블록 또는 레이아웃 컨테이너).
 
@@ -148,9 +148,9 @@ Target으로 내보내기 기능을 사용하여 다음을 수행할 수 있습�
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-링크 외부 도우미는 Target 오퍼의 HTML 버전을 만들 때 필요한 올바른 URL을 결정하는 데 사용되며, 이 URL은 이후 Adobe Target으로 전송됩니다. Adobe Target에서 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하기 때문에 필요합니다. 즉, 링크 참조 및 경험 조각 자체는 게시되어야 사용할 수 있습니다.
+링크 외부 도우미는 Target 오퍼의 HTML 버전을 만들 때 필요한 올바른 URL을 결정하는 데 사용되며, 이 URL은 이후 Adobe Target으로 전송됩니다. 이는 Adobe Target에서 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하기 때문에 필요합니다.즉, 링크 참조 및 경험 조각 자체는 게시되어야 사용할 수 있습니다.
 
-기본적으로 Target HTML 오퍼를 구성할 때 AEM의 사용자 지정 Sling 선택기로 요청이 전송됩니다. 이 선택기를 호출합니다 `.nocloudconfigs.html`. 이름이 암시하듯이 경험 조각에 대한 일반 HTML 렌더링을 만들지만 클라우드 구성(탁월한 정보)은 포함하지 않습니다.
+기본적으로 Target HTML 오퍼를 생성할 때 AEM의 사용자 정의 Sling 선택기로 요청이 전송됩니다. 이 선택기를 호출합니다 `.nocloudconfigs.html`. 이름이 암시하듯이 경험 조각의 일반 HTML 렌더링을 만들지만 클라우드 구성(탁월한 정보)은 포함하지 않습니다.
 
 HTML 페이지를 생성하면 Sling Rewriter 파이프라인이 출력을 수정합니다.
 
@@ -171,18 +171,18 @@ HTML 페이지를 생성하면 Sling Rewriter 파이프라인이 출력을 수�
    >
    >대부분의 경우 HTML의 내부 링크는 상대 링크이지만 사용자 지정 구성 요소가 HTML에서 전체 URL을 제공하는 경우가 있을 수 있습니다. 기본적으로 AEM은 이러한 완전한 URL을 무시하고 수정하지 않습니다.
 
-   이러한 속성의 링크는 AEM Link Externalizer `publishLink()` 를 통해 실행되어 URL이 게시된 인스턴스에서와 같이 공개적으로 사용 가능한 URL을 다시 만듭니다.
+   이러한 속성의 링크는 URL을 게시된 인스턴스 `publishLink()` 에 있었던 것처럼, 그리고 그와 같이 공개적으로 사용할 수 있도록 AEM Link Externalizer를 통해 실행됩니다.
 
-기본 구현을 사용하는 경우 위에 설명된 프로세스에서는 경험 조각에서 Target 오퍼을 생성한 다음 Adobe Target으로 내보내는 데 충분해야 합니다. 그러나 이 프로세스에서 고려하지 않은 일부 사용 사례가 있습니다. 다음과 같습니다.
+기본 구현을 사용하는 경우 위에 설명된 프로세스에서는 경험 조각에서 Target 오퍼을 생성한 다음 Adobe Target으로 내보내는 데 충분해야 합니다. 그러나 이 프로세스에서 고려하지 않은 일부 사용 사례가 있습니다.다음과 같습니다.
 
 * 게시 인스턴스에서만 사용 가능한 Sling 매핑
 * Dispatcher 리디렉션
 
-이러한 경우에 대해 AEM은 링크 리작성자 공급자 인터페이스를 제공합니다.
+이러한 경우 AEM은 링크 리작성기 공급자 인터페이스를 제공합니다.
 
 ### 링크 리작성기 공급자 인터페이스 {#link-rewriter-provider-interface}
 
-더 복잡한 경우, [기본값에](#default-link-rewriting)포함되지 않은 경우 AEM은 링크 리작성자 공급자 인터페이스를 제공합니다. 이 인터페이스는 서비스로 번들에서 구현할 수 있는 `ConsumerType` 인터페이스입니다. 경험 조각에서 렌더링되는 대로 AEM이 HTML 오퍼의 내부 링크에서 수행하는 수정 사항을 건너뜁니다. 이 인터페이스를 사용하면 비즈니스 요구에 맞게 내부 HTML 링크를 재작성하는 프로세스를 사용자 정의할 수 있습니다.
+AEM에서는 [기본](#default-link-rewriting)기능이 아닌 보다 복잡한 경우를 위해 링크 리라이터 공급자 인터페이스를 제공합니다. 이 인터페이스는 서비스로 번들에서 구현할 수 있는 `ConsumerType` 인터페이스입니다. 이 메서드는 수정 AEM이 경험 조각에서 렌더링되는 대로 HTML 오퍼의 내부 링크에서 수행하는 작업을 건너뜁니다. 이 인터페이스를 사용하면 비즈니스 요구에 맞게 내부 HTML 링크를 재작성하는 프로세스를 사용자 정의할 수 있습니다.
 
 이 인터페이스를 서비스로 구현하는 데 사용되는 예는 다음과 같습니다.
 
@@ -354,7 +354,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### 우선 순위 - getPriority {#priorities-getpriority}
 
-다양한 유형의 경험 조각에 맞는 서비스를 여러 개 필요로 하거나 모든 경험 조각에 대한 외부화 및 매핑을 처리하는 범용 서비스를 필요로 하는 경우도 있습니다. 이러한 경우 사용할 서비스가 충돌할 수 있으므로 AEM에서는 다양한 서비스에 대해 **우선 순위를** 정의할 수 있습니다. 우선 순위는 다음 방법을 사용하여 지정합니다.
+다양한 유형의 경험 조각에 맞는 서비스를 여러 개 필요로 하거나 모든 경험 조각에 대한 외부화 및 매핑을 처리하는 범용 서비스를 필요로 하는 경우도 있습니다. 이러한 경우 어떤 서비스를 사용할 것인지 상충하므로 AEM은 다양한 서비스에 대해 **우선 순위를** 정의할 수 있습니다. 우선 순위는 다음 방법을 사용하여 지정합니다.
 
 * `getPriority()`
 
