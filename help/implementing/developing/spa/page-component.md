@@ -1,6 +1,6 @@
 ---
 title: SPA 페이지 구성 요소
-description: SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제공하지 않지만, 대신 이 요소를 SPA 프레임워크에 위임합니다. 이 문서에서는 SPA의 페이지 구성 요소를 고유하게 만드는 방법을 설명합니다.
+description: SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제공하지 않고 대신 SPA 프레임워크에 위임합니다. 이 문서에서는 SPA의 페이지 구성 요소를 고유하게 만드는 방법을 설명합니다.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 2%
 
 # SPA 페이지 구성 요소 {#spa-page-component}
 
-SPA용 페이지 구성 요소는 JSP 또는 HTL 파일 및 리소스 객체를 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소의 표현은 JSON 데이터 구조(예: 모델)로 가져옵니다. SPA 구성 요소는 제공된 JSON 모델에 따라 페이지에 추가됩니다. 따라서 페이지 구성 요소의 초기 본문 컴포지션은 사전 렌더링된 HTML 시퀀스와 다릅니다.
+SPA용 페이지 구성 요소는 JSP 또는 HTL 파일 및 리소스 개체를 통해 하위 구성 요소의 HTML 요소를 제공하지 않습니다. 이 작업은 SPA 프레임워크에 위임됩니다. 하위 구성 요소의 표현은 JSON 데이터 구조(예: 모델)로 가져옵니다. 그러면 SPA 구성 요소가 제공된 JSON 모델에 따라 페이지에 추가됩니다. 따라서 페이지 구성 요소의 초기 본문 컴포지션은 사전 렌더링된 HTML 시퀀스와 다릅니다.
 
 ## 페이지 모델 관리 {#page-model-management}
 
-페이지 모델의 해상도 및 관리는 제공된 [`PageModelManager`](blueprint.md#pagemodelmanager) 모듈로 위임됩니다. SPA는 초기화를 통해 초기 페이지 모델을 가져오고 모델 업데이트를 등록하도록 `PageModelManager` 모듈(작성자가 페이지 편집기를 통해 페이지를 편집할 때 주로 생성됨)과 상호 작용해야 합니다. SPA 프로젝트 `PageModelManager` 에서 npm 패키지로 이용할 수 있습니다. AEM과 SPA의 통역 역할을 하는 SPA와 함께 `PageModelManager` 하는 것입니다.
+페이지 모델의 해상도 및 관리는 제공된 [`PageModelManager`](blueprint.md#pagemodelmanager) 모듈로 위임됩니다. SPA은 초기화를 통해 초기 페이지 모델을 가져오고 모델 업데이트를 등록하도록 `PageModelManager` 모듈(작성자가 페이지 편집기를 통해 페이지를 편집할 때 주로 생성됨)과 상호 작용해야 합니다. SPA 프로젝트 `PageModelManager` 에서 npm 패키지로 액세스할 수 있습니다. AEM과 SPA 사이의 통역사가 되는 것 `PageModelManager` 은 SPA과 함께 하는 것이다.
 
-페이지를 작성할 수 있도록 하려면 SPA와 페이지 편집기 간의 통신 채널을 제공하기 위해 이름이 지정된 클라이언트 라이브러리를 추가해야 `cq.authoring.pagemodel.messaging` 합니다. SPA 페이지 구성 요소가 페이지 wcm/core 구성 요소에서 상속되는 경우 클라이언트 라이브러리 카테고리를 사용할 수 있도록 하는 다음과 같은 옵션이 `cq.authoring.pagemodel.messaging` 있습니다.
+페이지를 작성할 수 있도록 하려면 SPA과 페이지 편집기 간의 통신 채널을 제공하기 위해 이름이 지정된 클라이언트 라이브러리를 추가해야 `cq.authoring.pagemodel.messaging` 합니다. SPA 페이지 구성 요소가 페이지 wcm/core 구성 요소에서 상속되는 경우 클라이언트 라이브러리 범주를 사용할 수 있게 하는 다음 옵션이 `cq.authoring.pagemodel.messaging` 있습니다.
 
 * 템플릿을 편집할 수 있는 경우 클라이언트 라이브러리 범주를 페이지 정책에 추가합니다.
 * 페이지 구성 요소의 속성을 사용하여 클라이언트 라이브러리 범주 `customfooterlibs.html` 를 추가합니다.
@@ -35,7 +35,7 @@ SPA용 페이지 구성 요소는 JSP 또는 HTL 파일 및 리소스 객체를 
 <div id="page"></div>
 ```
 
-DOM 생성을 지연시키지 않도록 하기 위한 우수 사례 외에도, SPA 프레임워크는 본문 끝에 스크립트를 추가해야 합니다.
+SPA 프레임워크은 DOM 생성을 지연시키지 않도록 하기 위한 우수 사례 외에도 본문 끝에 스크립트를 추가해야 합니다.
 
 **SPA 페이지 구성 요소 -`customfooterlibs.html`**
 
@@ -77,7 +77,7 @@ SPA 컨텐츠를 설명하는 메타 리소스 속성:
 
 ## Sling 모델 JSON 내보내기 구조 구성 {#sling-model-json-exported-structure-configuration}
 
-라우팅 기능이 활성화되면 AEM 탐색 구성 요소의 JSON 내보내기 덕분에 SPA의 JSON 내보내기에 애플리케이션의 서로 다른 경로가 포함되어 있는 것으로 가정합니다. AEM 탐색 구성 요소의 JSON 출력은 다음 두 속성을 통해 SPA의 루트 페이지 컨텐츠 정책에 구성할 수 있습니다.
+라우팅 기능이 활성화되면 SPA의 JSON 내보내기에 AEM 탐색 구성 요소의 JSON 내보내기 덕분에 애플리케이션의 다른 경로가 포함되어 있는 것으로 가정합니다. AEM 탐색 구성 요소의 JSON 출력은 다음 두 속성을 통해 SPA 루트 페이지 컨텐츠 정책에 구성할 수 있습니다.
 
 * `structureDepth`:내보낸 트리 깊이에 해당하는 숫자
 * `structurePatterns`:내보낼 페이지에 해당하는 레익스의 배열을 재구성합니다.
