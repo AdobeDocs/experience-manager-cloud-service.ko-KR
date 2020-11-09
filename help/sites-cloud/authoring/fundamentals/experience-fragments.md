@@ -1,6 +1,6 @@
 ---
 title: 경험 조각
-description: 클라우드 서비스로서의 Adobe Experience Manager 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
+description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 경험 조각 {#experience-fragments}
 
-클라우드 서비스로서의 Adobe Experience Manager 내 경험 조각은
+Adobe Experience Manager as a Cloud Service 내 경험 조각은
 * 하나 이상의 구성 요소 그룹입니다.
 * 컨텐츠와 레이아웃을 모두 포함합니다.
 * 페이지 내에서 참조할 수 있습니다.
