@@ -4,9 +4,9 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '4431'
+source-wordcount: '4429'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Experience Manager에 디지털 자산 [추가를 참조하십시오](add-assets
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드하는 경우, 중복을 [!DNL Experience Manager] 감지하여 사용자에게 알립니다. 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 중복 감지는 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL Adobe AEM Cloud Asset Duplicator를 구성합니다]. OSGi 구성 [방법](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)보기 중복 검색은 에 저장된 고유 `dam:sha1` 값을 기반으로 합니다 `jcr:content/metadata/dam:sha1`. 즉, 파일 이름이 다른 경우에도 중복된 자산이 검색됩니다.
+DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드하는 경우, 중복을 [!DNL Experience Manager] 감지하여 사용자에게 알립니다. 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 중복 감지는 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL Adobe AEM Cloud Asset Duplicator를 구성합니다]. OSGi 구성 [방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)보기 중복 검색은 에 저장된 고유 `dam:sha1` 값을 기반으로 합니다 `jcr:content/metadata/dam:sha1`. 즉, 파일 이름이 다른 경우에도 중복된 자산이 검색됩니다.
 
 ![중복 자산 OSGi 구성 감지](assets/duplicate-detection.png)
 
