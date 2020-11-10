@@ -3,9 +3,9 @@ title: AI에서 생성된 태그를 사용하여 이미지 자동 태그 지정
 description: 서비스를 사용하여 상황에 맞는 및 설명적인 비즈니스 태그를 적용하는 지능적인 서비스를 사용하여 이미지에 태그를 [!DNL Adobe Sensei] 지정할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 1%
 
 ---
@@ -205,7 +205,7 @@ Experience Manager은 사용자가 DAM에 업로드한 자산에 자동으로 �
 
 * 이미지의 미묘한 차이를 인식하지 못함 예를 들어, 슬림형 셔츠는 일반 셔츠가 들어 있는 것과 같습니다.
 * 이미지의 작은 패턴/부분을 기반으로 태그를 식별할 수 없음 예를 들어 T-셔츠의 로고
-* 태깅은 AEM에서 지원되는 로케일에서 지원됩니다. 언어 목록은 [스마트 태그 릴리스 노트를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* 태깅은 Experience Manager에서 지원하는 언어로 지원됩니다. 언어 목록은 [스마트 콘텐츠 서비스 릴리스 노트를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
 
 스마트 태그가 있는 자산을 검색하려면(일반 또는 고급) 자산 검색(전체 텍스트 검색)을 사용합니다. 스마트 태그에는 별도의 검색 조건자가 없습니다.
 
