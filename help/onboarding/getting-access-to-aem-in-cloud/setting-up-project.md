@@ -2,7 +2,7 @@
 title: 프로젝트 설정 세부 정보
 description: 프로젝트 설정 세부 정보 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
+source-git-commit: 207d0742e8bf46065c7e20bec7d88b0776c246b2
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -145,34 +145,32 @@ Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면
                     <name>env.CM_BUILD</name>
                 </property>
         </activation>
-        <build>
-            <repositories>
-                <repository>
-                    <id>myco-repository</id>
-                    <name>MyCo Releases</name>
-                    <url>https://repository.myco.com/maven2</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>myco-repository</id>
-                    <name>MyCo Releases</name>
-                    <url>https://repository.myco.com/maven2</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                </pluginRepository>
-            </pluginRepositories>
-        </build>
+        <repositories>
+             <repository>
+                 <id>myco-repository</id>
+                 <name>MyCo Releases</name>
+                 <url>https://repository.myco.com/maven2</url>
+                 <snapshots>
+                     <enabled>false</enabled>
+                 </snapshots>
+                 <releases>
+                     <enabled>true</enabled>
+                 </releases>
+             </repository>
+         </repositories>
+         <pluginRepositories>
+             <pluginRepository>
+                 <id>myco-repository</id>
+                 <name>MyCo Releases</name>
+                 <url>https://repository.myco.com/maven2</url>
+                 <snapshots>
+                     <enabled>false</enabled>
+                 </snapshots>
+                 <releases>
+                     <enabled>true</enabled>
+                 </releases>
+             </pluginRepository>
+         </pluginRepositories>
     </profile>
 </profiles>
 ```
