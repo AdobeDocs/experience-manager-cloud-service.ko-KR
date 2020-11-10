@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 
 Dynamic Media는 저작 사용자 인터페이스 전반에서 JAWS 및 NVDA 화면 판독기와 같은 키보드 제어 및 보조 기술을 지원합니다.
 
+
+
 ## Dynamic Media의 키보드 액세스 지원
 
 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 쉽게 찾을 수 있습니다. Dynamic Media의 키보드 제어는 다음과 같습니다.
@@ -25,8 +27,8 @@ Dynamic Media는 저작 사용자 인터페이스 전반에서 JAWS 및 NVDA 화
 탭 순서에서 다음 사용자 인터페이스 요소로 입력 포커스를 `Tab` 이동합니다.를 `Shift+Tab` 사용하면 입력 포커스가 이전 사용자 인터페이스 요소로 돌아갑니다.
 초점 트래픽은 화면의 자연스러운 사용자 인터페이스 요소 위치를 따르며 왼쪽에서 오른쪽, 위에서 아래로 이동합니다.
 * 버튼, `Spacebar` 드롭다운 목록 등과 같은 표준 사용자 인터페이스 요소를 활성화하는 데 `Enter` 및키를 사용하는 기능입니다.
-* 핫 스팟 편집기의 화살표 키와 같은 복잡한 UI 요소와 상호 작용하는 사용자 정의 키 입력을 사용하는 기능
 * 활성 요소에서 키보드 초점 강조 표시를 보는 기능 입력 포커스가 있는 사용자 인터페이스 요소는 사용자 인터페이스 요소 주위에 렌더링된 테두리로 시각적 초점 표시를 받을 수 있습니다.
+* 핫 스팟 편집기의 화살표 키와 같은 복잡한 UI 요소와 상호 작용하는 사용자 정의 키 입력을 사용하는 기능 이미지 자르기/스마트 자르기 편집기에서는 화살표 키를 사용하여 프레임 크기를 자르거나 이미지의 위치를 다시 지정하거나 둘 다 지정할 수 있습니다.
 
 Dynamic Media는 AEM Assets에 대한 플러그인이므로 대부분의 키보드 제어 동작은 AEM Assets과 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 단추는 AEM Assets과 동일한 초점 강조 표시를 가지며 AEM Assets에서와 같이 `Spacebar` 키에 반응합니다. 자산에서 [키보드 단축키를 참조하십시오](/help/assets/accessibility.md#keyboard-shortcuts). 핫스팟 편집기와 이미지 자르기/스마트 자르기 편집기는 예외입니다.
 
