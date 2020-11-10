@@ -2,9 +2,9 @@
 title: Dynamic Media 이미지 프로필
 description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 다이내믹 미디어 이미지 프로필을 만든 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 translation-type: tm+mt
-source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2754'
 ht-degree: 4%
 
 ---
@@ -195,7 +195,7 @@ Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/asset
 
 여러 [이미지의 스마트 자르기 또는 스마트 견본 편집을 참조하십시오](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**단일 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면 다음을 수행하십시오**.
+**단일 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면**
 
 1. AEM 로고를 누르고 **[!UICONTROL 에셋으로]**&#x200B;이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
 
@@ -209,6 +209,7 @@ Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/asset
    * 이미지에서 모서리 핸들을 드래그하여 자르기 또는 견본의 보기 가능한 영역의 크기를 조정합니다.
    * 이미지에서 상자/견본을 새 위치로 드래그합니다. 이미지 견본만 편집할 수 있습니다.색상 견본은 정적입니다.
    * 이미지 위에서 되돌리기를 눌러 **[!UICONTROL 모든]** 편집 내용을 취소하고 원본 자르기나 견본을 복원합니다.
+   * 키보드 화살표 키를 사용하여 프레임 크기를 자르거나 이미지 또는 둘 다의 위치를 다시 지정할 수 있습니다.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장을]**&#x200B;누른 다음 **[!UICONTROL 닫기를 탭하여]** 자산의 폴더로 돌아갑니다.
 
@@ -220,7 +221,7 @@ Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/asset
 
 필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.
 
-**여러 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면 다음을 수행하십시오**.
+**여러 이미지의 스마트 자르기 또는 스마트 색상 견본을 편집하려면**
 
 1. AEM 로고를 누르고 **[!UICONTROL 에셋으로]**&#x200B;이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
 1. 폴더에서 **[!UICONTROL 추가 작업]** (..) 아이콘을 누른 다음 **[!UICONTROL 스마트 자르기를 누릅니다]**.
