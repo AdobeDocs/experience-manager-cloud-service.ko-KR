@@ -3,10 +3,10 @@ title: 자산, 폴더 및 컬렉션을 링크로 공유
 description: 이 문서에서는 Experience Manager 자산 내에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 2%
+source-wordcount: '898'
+ht-degree: 1%
 
 ---
 
@@ -113,7 +113,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 마케터와 업무 부문 사용자는
 
-* **AEM 데스크탑 앱**:이 앱은 Windows 및 Mac에서 작동합니다. 데스크탑 [앱 개요를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/introduction.html). 권한이 있는 데스크탑 사용자가 공유 에셋에 손쉽게 액세스할 수 있는 방법을 알아보려면 [에셋 검색, 미리 보기를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). 데스크탑 사용자는 예를 들어 새 이미지를 업로드하여 자산을 만들고 AEM 사용자와 다시 공유할 수 있습니다. 데스크탑 앱을 [사용하여 자산 업로드를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **AEM 데스크탑 앱**:이 앱은 Windows 및 Mac에서 작동합니다. 데스크탑 [앱 개요를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). 권한이 있는 데스크탑 사용자가 공유 에셋에 손쉽게 액세스할 수 있는 방법을 알아보려면 [에셋 검색, 미리 보기를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). 데스크탑 사용자는 예를 들어 새 이미지를 업로드하여 자산을 만들고 AEM 사용자와 다시 공유할 수 있습니다. 데스크탑 앱을 [사용하여 자산 업로드를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe 자산 링크**:크리에이티브 전문가는 Adobe InDesign, Adobe Illustrator 및 Adobe Photoshop에서 바로 에셋을 검색하고 사용할 수 있습니다.
 
@@ -167,7 +167,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 데스크탑 앱과 함께 사용할 데스크탑 작업 활성화 {#desktop-actions}
 
-브라우저의 자산 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 자산을 열어 데스크탑 애플리케이션에서 편집할 수 있습니다. 이러한 옵션은 데스크톱 작업이라고 하며 이를 활성화하려면 AEM 웹 인터페이스에서 [데스크톱 작업 활성화를 참조하십시오](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+브라우저의 자산 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 자산을 열어 데스크탑 애플리케이션에서 편집할 수 있습니다. 이러한 옵션은 데스크톱 작업이라고 하며 이를 활성화하려면 AEM 웹 인터페이스에서 [데스크톱 작업 활성화를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
 ![데스크탑 앱 작업 시 바로 가기를 사용할 수 있도록 데스크탑 작업 활성화](assets/enable_desktop_actions.png)
 
