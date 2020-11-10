@@ -3,9 +3,9 @@ title: 자산 다운로드
 description: 자산 다운로드 [!DNL Adobe Experience Manager Assets] 명령 다운로드 기능을 활성화하거나 비활성화합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 4%
 
 ---
@@ -26,12 +26,12 @@ ht-degree: 4%
 * [Experience Manager 사용자 인터페이스](#download-in-aem)
 * 자산 링크 공유 사용자 인터페이스
 * [자산 공유 공용](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [데스크탑 앱](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## AEM 인터페이스를 사용하여 에셋 다운로드 {#download-in-aem}
 
-비동기 다운로드 서비스는 대규모 자산을 매끄럽게 다운로드하는 프레임워크를 제공합니다. 더 작은 파일은 유저 인터페이스에서 실시간으로 다운로드됩니다. 대용량 파일은 비동기적으로 다운로드되며 사용자는 받은 편지함의 Experience Manager 알림을 통해 완료 사실을 알 수 있습니다. Experience Manager 받은 편지함 [이해를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+비동기 다운로드 서비스는 대규모 자산을 매끄럽게 다운로드하는 프레임워크를 제공합니다. 더 작은 파일은 유저 인터페이스에서 실시간으로 다운로드됩니다. 대용량 파일은 비동기적으로 다운로드되며 사용자는 받은 편지함의 Experience Manager 알림을 통해 완료 사실을 알 수 있습니다. Experience Manager 받은 편지함 [이해를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
 
 ![다운로드 알림](assets/download-notification.png)
 
@@ -86,7 +86,7 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유
 
 자산 다운로드 요청을 차단하도록 발송자 구성을 업데이트하여 `Asset Download Servlet` [!DNL Experience Manager] 게시 인스턴스에서 이 요청을 비활성화할 수 있습니다. OSGi 콘솔을 통해 서블릿을 수동으로 비활성화할 수도 있습니다.
 
-1. 발송자 구성을 통해 자산 다운로드 요청을 차단하려면 구성을 편집하고 `dispatcher.any` 필터 섹션에 새 규칙을 [추가합니다](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter).
+1. 발송자 구성을 통해 자산 다운로드 요청을 차단하려면 구성을 편집하고 `dispatcher.any` 필터 섹션에 새 규칙을 [추가합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
