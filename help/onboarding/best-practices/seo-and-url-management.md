@@ -363,8 +363,8 @@ Disallow: /
 >
 >Sling 서블릿을 등록하여 확장자가 `sitemap`인 선택기 `xml`을 수신 대기할 수 있습니다. 이렇게 하면 다음과 같이 끝나는 URL이 요청될 때마다 서블릿이 요청을 처리하게 됩니다.
 >    `/<path-to>/page.sitemap.xml`
-그러면 요청에서 요청된 리소스를 가져와 JCR API를 사용하여 컨텐츠 트리의 해당 지점에서 사이트 맵을 생성할 수 있습니다.
-이같은 접근 방식의 이점은 동일한 인스턴스에서 여러 사이트를 제공하는 경우입니다. `/content/siteA.sitemap.xml`에 대한 요청은 `siteA`에 대한 사이트 맵을 생성하는 반면 `/content/siteB.sitemap.xml`에 대한 요청은 추가적인 코드를 작성하지 않아도 `siteB`에 대한 사이트 맵을 생성합니다.
+>그러면 요청에서 요청된 리소스를 가져와 JCR API를 사용하여 컨텐츠 트리의 해당 지점에서 사이트 맵을 생성할 수 있습니다.
+>이같은 접근 방식의 이점은 동일한 인스턴스에서 여러 사이트를 제공하는 경우입니다. `/content/siteA.sitemap.xml`에 대한 요청은 `siteA`에 대한 사이트 맵을 생성하는 반면 `/content/siteB.sitemap.xml`에 대한 요청은 추가적인 코드를 작성하지 않아도 `siteB`에 대한 사이트 맵을 생성합니다.
 
 ### 레거시 URL에 대해 301 리디렉션 생성 {#creating-redirects-for-legacy-urls}
 
