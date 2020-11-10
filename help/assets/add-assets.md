@@ -2,10 +2,10 @@
 title: 디지털 자산을 추가할 수 [!DNL Adobe Experience Manager]있습니다.
 description: 디지털 자산을 Cloud Service [!DNL Adobe Experience Manager] 로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 2%
+source-wordcount: '1312'
+ht-degree: 1%
 
 ---
 
@@ -130,7 +130,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 대용량 파일을 업로드하기 위해, 특히 디스크의 중첩된 폴더 계층에 파일이 있는 경우 다음 방법을 사용할 수 있습니다.
 
 * 자산 업로드 API를 활용하는 사용자 지정 업로드 스크립트 또는 [도구를 사용합니다](developer-reference-material-apis.md#asset-upload-technical). 이러한 사용자 지정 도구는 필요한 경우 자산의 추가 처리(예: 메타데이터를 번역하거나 파일 이름 변경)를 추가할 수 있습니다.
-* Experience Manager [데스크탑 앱을](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 사용하여 중첩된 폴더 계층을 업로드합니다.
+* Experience Manager [데스크탑 앱을](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 사용하여 중첩된 폴더 계층을 업로드합니다.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 웹 브라우저 사용자 인터페이스 외에도 Experience Manager은 데스크탑에서 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 환경을 제공합니다.
 
 * [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 는 Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 응용 프로그램 [!DNL Experience Manager] 의 자산에 대한 액세스를 제공합니다. 현재 열려 있는 문서를 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 [!DNL Experience Manager] 직접 업로드할 수 있습니다.
-* [Experience Manager 데스크탑 앱을](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 사용하면 파일 유형이나 이를 처리하는 기본 애플리케이션에 상관없이 데스크탑에서 에셋을 사용하여 작업을 간소화할 수 있습니다. 브라우저 업로드는 플랫 파일 목록만 업로드하므로 로컬 파일 시스템에서 중첩된 폴더 계층 구조의 파일을 업로드하는 것이 특히 유용합니다.
+* [Experience Manager 데스크탑 앱을](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 사용하면 파일 유형이나 이를 처리하는 기본 애플리케이션에 상관없이 데스크탑에서 에셋을 사용하여 작업을 간소화할 수 있습니다. 브라우저 업로드는 플랫 파일 목록만 업로드하므로 로컬 파일 시스템에서 중첩된 폴더 계층 구조의 파일을 업로드하는 것이 특히 유용합니다.
 
 ## 추가 처리 {#additional-processing}
 
@@ -171,7 +171,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 데스크탑 앱](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe 자산 링크 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [자산 업로드를 위한 기술 참조](developer-reference-material-apis.md#asset-upload-technical)
