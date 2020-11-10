@@ -2,10 +2,10 @@
 title: Cloud Service의 Adobe Experience Manager 에셋의 주목할 만한 변화
 description: Adobe Experience Manager 6.5에 비해 AEM Cloud Service의 Adobe Experience Manager 에셋에 대한 주목할 만한 변화.
 translation-type: tm+mt
-source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 14%
+source-wordcount: '626'
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,7 @@ Experience Manager 6.5와 비교할 때 주요 차이점은 다음과 같습니�
 >* Adobe Experience Manager as a Cloud Service [아키텍처](/help/core-concepts/architecture.md)
 >* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
 >* [ AEM Sites as a Cloud Service에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
->* [Adobe Experience Manager as a Cloud Service 자습서](https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## 자산 수집 및 업로드 {#asset-ingestion}
