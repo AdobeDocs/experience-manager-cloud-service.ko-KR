@@ -3,9 +3,9 @@ title: 자산 [!DNL Adobe Stock] 을 [!DNL Assets]관리합니다.
 description: 내부에서 자산을 검색, 가져오기, 라이선스 부여 및 [!DNL Adobe Stock] 관리할 수 있습니다 [!DNL Adobe Experience Manager]. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '984'
 ht-degree: 3%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 3%
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager 자산에 Adobe Stock 에셋을 사용하는 방법에 대한 비디오 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Experience Manager 자산에 Adobe Stock 에셋을 사용하는 방법에 대한 비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
 
