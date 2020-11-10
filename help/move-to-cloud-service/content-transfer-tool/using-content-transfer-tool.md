@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
+source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 71%
+source-wordcount: '1902'
+ht-degree: 70%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 71%
 
 * 현재 Cloud Service 작성자 인스턴스로서 AEM의 기본 MongoDB 크기는 32GB입니다. 20GB를 초과하는 세그먼트 저장소 크기의 경우 지원 티켓을 제출하여 MongoDB 크기를 늘리는 것이 좋습니다.
 
+* 컨텐츠 전송 도구를 통해 전송된 사용자 및 그룹은 권한을 충족하기 위해 컨텐트에 필요한 사용자만 사용할 수 있습니다. 추출 ** 프로세스는 전체 `/home` 를 마이그레이션 *세트에 복사하며, 통합* 프로세스는 마이그레이션된 컨텐츠 ACL에서 참조되는 모든 사용자 및 그룹을 복사합니다.
+
 * 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
 * 컨텐츠 전송 프로세스의 *추출* 단계를 완료하고 *컨텐츠 전송 과정을 시작하기 전에, Cloud Service* 단계 *또는 프로덕션 인스턴스* 로 컨텐츠를 AEM에 *포함하는 통합 단계* 를 시작하기 전에, Adobe을 실행하기 위한를 알리기 위해 표 *지원을 기록해야 할 것입니다. Adobe을 실행하는데를 미리 알려주기* ** 위해를 실행하는데,가 지연되지 않도록JP를 처리할 수 있습니다. 계획된 통합 날짜 1주일 전에 지원 티켓을 *기록해야* 합니다. 지원 티켓을 제출하면 지원 팀이 다음 단계에 대한 지침을 제공할 것입니다.
@@ -49,6 +51,7 @@ Content Transfer Tool은 소프트웨어 배포 포털에서 zip 파일로 다�
 ## 컨텐츠 전송 도구 실행 {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+
 
 이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service(작성자/게시)에 마이그레이션하는 방법을 알아보십시오.
 
