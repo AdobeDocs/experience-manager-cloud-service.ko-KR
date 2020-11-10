@@ -4,9 +4,9 @@ description: Experience Manager 배포를 Adobe Creative Cloud과 통합하여 �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3296'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,6 @@ Adobe Creative Cloud은 크리에이티브 팀에게 디지털 에셋 제작을 
 
 ## 크리에이티브 전문가, 마케터 및 DAM 사용자의 공동 작업 필요 {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
 | 요구 사항 | 사용 사례 | 포함된 서피스 |
 |---|---|---|
 | 데스크탑에서 크리에이티브 작업을 위한 경험 간소화 | 크리에이티브 전문가를 위한 DAM(AEM Assets)을 통해 에셋에 대한 액세스를 간소화할 수 있고 기본 에셋 제작 애플리케이션을 사용하는 데스크탑 사용자도 광범위하게 이용할 수 있습니다. 새로운 파일을 업로드하고 AEM에 변경 사항을 검색, 사용(열기), 편집 및 저장할 수 있는 간편하고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑Creative Cloud 앱 |
@@ -38,7 +37,7 @@ Adobe Creative Cloud은 크리에이티브 팀에게 디지털 에셋 제작을 
 | 고객의 가치 제안 | Adobe 제공 | 포함된 서피스 |
 |---|---|---|
 | 크리에이티브 사용자는 Creative Cloud 앱을 종료하지 않고도 AEM에서 에셋을 검색하고, 열어 사용하고, AEM에 변경 사항을 편집 및 업로드하고, AEM에 새 파일을 업로드합니다. | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator 및 InDesign |
-| 비즈니스 사용자는 간단하게 에셋 열기 및 사용, AEM에 대한 변경 사항 편집 및 업로드, 데스크탑 환경에서 AEM에 새 파일 업로드 등을 할 수 있습니다. 일반 통합을 사용하여 Adobe이 아닌 에셋 유형을 비롯한 모든 에셋 유형을 기본 데스크탑 애플리케이션에서 엽니다. | [AEM Desktop App](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | Win 및 Mac 데스크탑 기반의 AEM 데스크탑 앱 |
+| 비즈니스 사용자는 간단하게 에셋 열기 및 사용, AEM에 대한 변경 사항 편집 및 업로드, 데스크탑 환경에서 AEM에 새 파일 업로드 등을 할 수 있습니다. 일반 통합을 사용하여 Adobe이 아닌 에셋 유형을 비롯한 모든 에셋 유형을 기본 데스크탑 애플리케이션에서 엽니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Win 및 Mac 데스크탑 기반의 AEM 데스크탑 앱 |
 | 마케터와 비즈니스 사용자는 AEM에서 Adobe Stock 에셋을 검색, 미리 보기, 라이선스 부여 및 저장하고 관리할 수 있습니다. 라이선스가 부여된 에셋과 저장된 에셋은 보다 효과적인 관리를 위해 특정 Adobe Stock 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | AEM 웹 인터페이스 |
 
 이 문서에서는 주로 협업의 첫 두 가지 측면을 집중적으로 다룹니다. 자산의 규모에 대한 분배 및 소싱은 사용 사례로서 간단히 언급됩니다. 이러한 요구 사항에 대한 솔루션에 대해서는 Adobe 브랜드 포털 또는 자산 공유 공유의 사용을 고려하십시오. AEM Assets 브랜드 포털 [같은 대체 솔루션,](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html)자산 공유 커머스 [구성 요소,](https://adobe-marketing-cloud.github.io/asset-share-commons/) 링크 공유 [를 기반으로 구축할 수 있는 솔루션,](share-assets.md)AEM Assets 웹 UI를 사용하는 [](/help/assets/manage-digital-assets.md) 링크 공유등은 특정 요구 사항에 따라 검토해야 합니다.
