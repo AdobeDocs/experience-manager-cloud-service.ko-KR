@@ -3,9 +3,9 @@ title: 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 자산 마이크로 서비스를 구성 및 사용하여 자산을 규모에 맞게 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2514'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Experience Manager을 사용하면 다음과 같은 수준의 처리를 수행�
 |---|---|---|
 | [기본 구성](#default-config) | 그대로 사용할 수 있으며 수정할 수 없습니다. 이 구성은 매우 기본적인 변환 생성 기능을 제공합니다. | <ul> <li>사용자 인터페이스에서 사용하는 표준 축소판(48, 140 및 319픽셀) [!DNL Assets] </li> <li> 대규모 미리 보기(웹 변환 - 1280픽셀) </li><li> 메타데이터 및 텍스트 추출</li></ul> |
 | [사용자 지정 구성](#standard-config) | 관리자가 사용자 인터페이스를 통해 구성합니다. 기본 옵션을 확장하여 변환 생성을 위한 더 많은 옵션을 제공합니다. 기본 옵션을 확장하여 다양한 형식 및 변환을 제공합니다. | <ul><li>FPO 변환. </li> <li>이미지 파일 포맷 및 해상도 변경</li> <li> 구성된 파일 유형에 조건부로 적용합니다. </li> </ul> |
-| [사용자 지정 프로필](#custom-config) | 사용자 정의 애플리케이션을 통해 사용자 정의 코드를 사용하여 [Asset compute 서비스를 호출하도록 관리자가 사용자 인터페이스를 통해 구성합니다](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
+| [사용자 지정 프로필](#custom-config) | 사용자 정의 애플리케이션을 통해 사용자 정의 코드를 사용하여 [Asset compute 서비스를 호출하도록 관리자가 사용자 인터페이스를 통해 구성합니다](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html). 클라우드 기반의 확장 가능한 방식으로 보다 복잡한 요구 사항을 지원합니다. | 허용되는 [사용 사례를 참조하십시오](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,7 +100,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 사용자 지정 프로필 및 사용 사례 {#custom-config}
 
-이 [!DNL Asset Compute Service] 는 기본 처리, Photoshop 파일과 같은 Adobe 관련 형식 처리, 사용자 지정 또는 조직별 처리 구현 등의 다양한 사용 사례를 지원합니다. 이전에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 처리되거나 처리 프로필 구성을 통해 처리됩니다. 이러한 처리 옵션에 의해 비즈니스 요구 사항이 충족되지 않으면 기본 기능을 확장하는 데 개발 및 사용 [!DNL Asset Compute Service] 을 권장합니다. 개요는 확장 기능 [및 사용 시기 이해를 참조하십시오](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+이 [!DNL Asset Compute Service] 는 기본 처리, Photoshop 파일과 같은 Adobe 관련 형식 처리, 사용자 지정 또는 조직별 처리 구현 등의 다양한 사용 사례를 지원합니다. 이전에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 처리되거나 처리 프로필 구성을 통해 처리됩니다. 이러한 처리 옵션에 의해 비즈니스 요구 사항이 충족되지 않으면 기본 기능을 확장하는 데 개발 및 사용 [!DNL Asset Compute Service] 을 권장합니다. 개요는 확장 기능 [및 사용 시기 이해를 참조하십시오](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 이미지, 비디오, 문서 및 기타 파일 형식을 축소판, 추출한 텍스트 및 메타데이터, 보관 파일 등 다양한 표현물로 변환할 수 있습니다.
 
-개발자는 이 [!DNL Asset Compute Service] 를 사용하여 지원되는 사용 사례를 [준수하는 맞춤형 애플리케이션을](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 응용 프로그램을 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
+개발자는 이 [!DNL Asset Compute Service] 를 사용하여 지원되는 사용 사례를 [준수하는 맞춤형 애플리케이션을](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) 만들 수 있습니다. [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 응용 프로그램을 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
 
 * 의 [!DNL Adobe Photoshop]ImageCutout API [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 를 사용하고 결과를 변환으로 저장합니다.
 * 서드파티 시스템에 전화하여 데이터를 업데이트합니다(예: PIM 시스템).
@@ -128,8 +128,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 다음 정보를 제공합니다.
 
    * 각 변환의 파일 이름 및 지원되는 파일 확장자입니다.
-   * [Firefly 사용자 지정 앱의 끝점 URL입니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html). 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
-   * 서비스 매개 변수를 추가하여 추가 [정보나 매개 변수를 사용자 지정 응용 프로그램에 전달합니다](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters).
+   * [Firefly 사용자 지정 앱의 끝점 URL입니다](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 이 앱은 Experience Manager 계정과 동일한 조직에서 가져온 것이어야 합니다.
+   * 서비스 매개 변수를 추가하여 추가 [정보나 매개 변수를 사용자 지정 응용 프로그램에 전달합니다](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * 처리를 일부 특정 파일 포맷으로 제한하기 위해 MIME 형식을 포함하거나 제외했습니다.
 
    **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
@@ -224,9 +224,9 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 
 >[!MORELIKETHIS]
 >
->* [asset compute 서비스](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)소개
->* [확장성 및 사용 시기를](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)이해합니다.
->* [사용자 정의 애플리케이션을 만드는 방법](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html).
+>* [asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)소개
+>* [확장성 및 사용 시기를](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)이해합니다.
+>* [사용자 정의 애플리케이션을 만드는 방법](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [다양한 사용 사례에 지원되는 MIME 형식입니다](/help/assets/file-format-support.md).
 
 
