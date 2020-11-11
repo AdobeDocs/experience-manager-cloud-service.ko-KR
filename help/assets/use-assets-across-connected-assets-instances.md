@@ -3,9 +3,9 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2228'
 ht-degree: 41%
 
 ---
@@ -28,7 +28,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포 시 적절한 사용자 그룹의 일부입니다.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 자세한 내용은 [!DNL Experience Manager] 6.5 Experience Manager 6.5 자산의 [연결된 자산 기능을 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. 이 기능이 [!DNL Experience Manager] 6.5에서 작동하는 방법에 대한 자세한 내용은 Experience Manager 6.5 자산에 [연결된 자산을 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] cloud service | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
