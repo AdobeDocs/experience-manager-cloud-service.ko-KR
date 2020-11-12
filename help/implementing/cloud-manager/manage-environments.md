@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 2%
@@ -86,13 +86,13 @@ ht-degree: 2%
 
 개발 환경 업데이트는 프로그램 사용자가 관리합니다. 환경에서 공개적으로 사용 가능한 최신 AEM 릴리스가 실행되고 있지 않으면 홈 화면의 환경 카드에 있는 상태가 **업데이트 사용 가능**&#x200B;상태로 표시됩니다.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 [ **업데이트** ] 옵션은 **환경** 카드에서 사용할 수 있습니다.
 환경 **카드** 에서 세부 사항 **을 클릭하면 이 옵션을 사용할 수도 있습니다** . 환경 **페이지가** 열리고 개발 환경을 선택한 다음 아래 그림과 같이 **..를** 클릭하고 **업데이트**&#x200B;를선택합니다.
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 이 옵션을 선택하면 배포 관리자가 이 환경과 연결된 파이프라인을 최신 릴리스로 업데이트한 다음 파이프라인을 실행할 수 있습니다.
 
@@ -108,7 +108,7 @@ ht-degree: 2%
 
 환경 **카드** **** 에서 세부 사항을 클릭하면 삭제 옵션도 사용할 수 있습니다. 환경 **페이지가** 열리고 개발 환경을 선택한 다음 아래 그림과 같이 **..를** 클릭하고 **삭제**&#x200B;를 선택합니다.
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -121,7 +121,7 @@ ht-degree: 2%
 
 자세한 내용은 [작성자 인스턴스에 대한 액세스](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) 관리를 참조하십시오.
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## 개발자 콘솔 액세스 {#accessing-developer-console}
@@ -133,13 +133,13 @@ ht-degree: 2%
 자세한 내용은 [최대 절전 모드 및 최대 절전 모드 해제](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) 환경을 참조하십시오.
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 환경 **카드** 에서 세부 사항 **을 클릭하면 이 옵션을 사용할 수도 있습니다** . 환경 **페이지가** 열리고 환경을 선택한 후...을 클릭하고 개발자 콘솔 **을** **선택합니다**.
 
 ## 로컬에 로그인 {#login-locally}
 
-환경 **카드의 드롭다운 메뉴에서** 로컬 로그인 **을** 선택하여 로컬로 Adobe Experience Manager에 로그인합니다
+환경 **카드의 드롭다운 메뉴에서** 로컬 로그인 **을** 선택하여 로컬로 Adobe Experience Manager에 로그인합니다.
 
 ![](assets/environ-login-locally.png)
 
