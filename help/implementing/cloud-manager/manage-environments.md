@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
+source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '880'
 ht-degree: 2%
 
 ---
@@ -141,5 +141,9 @@ ht-degree: 2%
 
 환경 **카드의 드롭다운 메뉴에서** 로컬 로그인 **을** 선택하여 로컬로 Adobe Experience Manager에 로그인합니다
 
-![](assets/environ-login.png)
+![](assets/environ-login-locally.png)
+
+또한 환경 **의** 요약 페이지에서 로컬로 로그인할 수도 있습니다.
+
+![](assets/environ-login-locally-2.png)
 
