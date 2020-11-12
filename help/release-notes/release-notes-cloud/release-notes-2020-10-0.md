@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
-source-git-commit: f0ac4b511fefa0bcde8d59c416da638941cd52ad
+source-git-commit: eb4a567e7ae2aac7260aae28e2b91b088e42f945
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 58%
+source-wordcount: '286'
+ht-degree: 55%
 
 ---
 
@@ -15,6 +15,12 @@ ht-degree: 58%
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## Cloud Manager {#cloud-manager}
+
+### 릴리스 날짜 {#release-date-cm}
+
+2020.10.0 Cloud Service으로 AEM의 Cloud Manager에 대한 릴리스 날짜는 2020년 10월 2일입니다.
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * 환경 페이지가 다시 디자인되었습니다.
 
@@ -44,4 +50,3 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 * 환경 이름의 유효성 검사에 오류가 발생했습니다.
 
 * 환경 페이지는 존재하지 않을 때 게시 및 발송자 세그먼트를 표시하는 경우가 있습니다.
-
