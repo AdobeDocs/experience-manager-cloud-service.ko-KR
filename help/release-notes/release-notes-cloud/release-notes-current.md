@@ -2,7 +2,7 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 4%
@@ -69,7 +69,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 ### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
-* 이제 환경 카드 및 환경 요약 페이지의 환경 메뉴 옵션 **에서 사용자가 로컬 로그인을** 사용할 수 있습니다.
+* 이제 환경 카드 및 **환경** 요약 페이지의 환경 메뉴 옵션에서 사용자가 새 메뉴 옵션 **** 로컬 로그인을 **사용할 수** 있습니다.
 자세한 내용은 [환경](/help/implementing/cloud-manager/manage-environments.md##login-locally) 관리를 참조하십시오.
 
 * Cloud **Manager의 학습** 탭이 UI의 새 이미지로 새로 고쳐졌습니다.
