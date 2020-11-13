@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service로 이동
 breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 95%
+ht-degree: 86%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 95%
    + [실행](/help/move-to-cloud-service/execution.md)
    + [Go-live 후](/help/move-to-cloud-service/post-go-live.md)
 + 클라우드 전환 도구 {#cloud-migration}
-   + 클라우드 준비 분석기 {#cloud-readiness-analyzer}
-      + [개요](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-      + [클라우드 준비 분석기 사용](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+   + 모범 사례 분석기 {#best-practices-analyzer}
+      + [개요](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
+      + [모범 사례 분석기 사용](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 컨텐츠 전송 도구 {#content-transfer-tool}
       + [개요](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
