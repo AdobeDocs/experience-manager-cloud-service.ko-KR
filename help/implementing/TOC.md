@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 83%
+source-wordcount: '425'
+ht-degree: 82%
 
 ---
 
@@ -48,6 +48,11 @@ ht-degree: 83%
    + [페이지 비교](/help/implementing/developing/introduction/page-diff.md)
    + [편집기 제한 사항](/help/implementing/developing/introduction/editor-limitations.md)
    + [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md)
++ 개발자 도구 {#developer-tools}
+   + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
+   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
+   + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
+   + [CRXDE Lite 사용](/help/implementing/developing/tools/crxde.md)
 + 구성 요소 및 템플릿 {#components-templates}
    + [구성 요소 개요](developing/components/overview.md)
    + [템플릿](developing/components/templates.md)
