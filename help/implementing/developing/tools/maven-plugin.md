@@ -1,0 +1,269 @@
+---
+title: Adobe Content Package Maven Plugin
+description: Content Package Maven 플러그인을 사용하여 AEM 응용 프로그램 배포
+translation-type: tm+mt
+source-git-commit: 2cdbbe9b8f6608cbdd299889be515d421e3d9ad3
+workflow-type: tm+mt
+source-wordcount: '1857'
+ht-degree: 6%
+
+---
+
+
+# Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
+
+Adobe Content Package Maven 플러그인을 사용하여 패키지 배포 및 관리 작업을 Maven 프로젝트에 통합할 수 있습니다.
+
+AEM에 구성된 패키지의 배포는 Adobe Content Package Maven 플러그인에 의해 수행되며 AEM Package Manager를 사용하여 정상적으로 수행되는 작업의 자동화를 활성화합니다.
+
+* 파일 시스템의 파일에서 새 패키지를 만듭니다.
+* AEM에서 패키지를 설치하고 제거합니다.
+* AEM에서 이미 정의된 패키지를 빌드합니다.
+* AEM에 설치된 패키지 목록을 가져옵니다.
+* AEM에서 패키지를 제거합니다.
+
+이 문서에서는 Maven을 사용하여 이러한 작업을 관리하는 방법을 자세히 설명합니다. 그러나 AEM 프로젝트 및 해당 패키지의 구성 [방법을 이해하는 것도 중요합니다.](#aem-project-structure)
+
+>[!NOTE]
+>
+>이제 패키지 생성은 [Apache Jackrabbit FileVault Package Maven 플러그인이 소유합니다](https://jackrabbit.apache.org/filevault-package-maven-plugin/). AEM에 구성된 패키지의 배포는 여기에 설명된 대로 Adobe Content Package Maven 플러그인에 의해 수행됩니다.
+
+## 패키지 및 AEM 프로젝트 구조 {#aem-project-structure}
+
+AEM 6.5는 온프레미스와 AMS 구현을 위해 최신 AEM Project Tranype에서 구현한 패키지 관리 및 프로젝트 구조에 대한 최신 모범 사례를 준수합니다.
+
+>[!TIP]
+>
+>자세한 내용은 AEM의 [AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 아티클을 Cloud Service 설명서와 AEM 프로젝트 [원형형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) 설명서로 참조하십시오. 두 가지 모두 AEM 6.5에서 완벽하게 지원됩니다.
+
+## Content Package Maven 플러그인 입수 {#obtaining-the-content-package-maven-plugin}
+
+이 플러그인은 Maven [Central Repository에서 사용할 수 있습니다.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+
+## Content Package Maven 플러그인 목표 및 매개 변수
+
+Content Package Maven 플러그인을 사용하려면 POM 파일의 빌드 요소 내에 다음 플러그인 요소를 추가하십시오.
+
+```xml
+<plugin>
+ <groupId>com.day.jcr.vault</groupId>
+ <artifactId>content-package-maven-plugin</artifactId>
+ <version>0.0.24</version>
+ <configuration>
+       <!-- parameters and values common to all goals, as required -->
+ </configuration>
+</plugin>
+```
+
+Maven이 플러그인을 다운로드할 수 있도록 하려면 이 페이지의 [Obtaining the Content Package Maven Plugin](#obtaining-the-content-package-maven-plugin) 섹션에 제공된 프로필을 사용하십시오.
+
+## Content Package Maven Plugin 목표 {#goals-of-the-content-package-maven-plugin}
+
+Content Package 플러그인이 제공하는 목표 및 목표 매개 변수는 다음에 나오는 섹션에 설명되어 있습니다. 공통 매개변수 섹션에 설명된 매개 변수는 대부분의 목표에 사용할 수 있습니다. 한 목표에 적용되는 매개 변수는 해당 목표에 대한 섹션에 설명되어 있습니다.
+
+### 플러그인 접두사 {#plugin-prefix}
+
+플러그인 접두사는 입니다 `content-package`. 다음 예제와 같이 명령줄에서 목표를 실행하려면 이 접두사를 사용합니다.
+
+```shell
+mvn content-package:build
+```
+
+### 매개 변수 접두사 {#parameter-prefix}
+
+별도의 언급이 없는 한 플러그인 목표 및 매개 변수는 다음 예제와 같이 `vault` 접두사를 사용합니다.
+
+```shell
+mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/packmgr/service.jsp"
+```
+
+### 프록시 {#proxies}
+
+AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유효한 프록시 구성을 사용합니다. 프록시 구성을 찾을 수 없으면 프록시가 사용되지 않습니다. 공통 매개변수(Common Parameters) `useProxy` 섹션에서 [매개변수를](#common-parameters) 참조하십시오.
+
+### 공통 매개 변수 {#common-parameters}
+
+다음 표의 매개 변수는 **목표** 열에 언급된 경우를 제외하고 모든 목표에 공통입니다.
+
+| 이름 | 유형 | 필수 | 기본 값 | 설명 | 목표 |
+|---|---|---|---|---|---|
+| `failOnError` | `boolean` | 아니오 | `false` | 값이 `true` 있으면 오류가 발생할 때 빌드가 실패합니다. 값이 값을 `false` 지정하면 빌드가 오류를 무시합니다. | 목표를 제외한 모든 목표 `package` |
+| `name` | `String` | `build`:예, `install`:아니요, `rm`:예 | `build`:기본값 없음, `install`:Maven 프로젝트의 `artifactId` 속성 값 | 수행할 패키지의 이름 | 목표를 제외한 모든 목표 `ls` |
+| `password` | `String` | 예 | `admin` | AEM 인증에 사용되는 암호 | 목표를 제외한 모든 목표 `package` |
+| `serverId` | `String` | 아니오 | 인증을 위해 사용자 이름 및 암호를 검색할 서버 ID | 목표를 제외한 모든 목표 `package` |
+| `targetURL` | `String` | 예 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM 패키지 관리자의 HTTP 서비스 API의 URL | 목표를 제외한 모든 목표 `package` |
+| `timeout` | `int` | 아니오 | `5` | 패키지 관리자 서비스와 통신하는 데 필요한 연결 시간(초) | 목표를 제외한 모든 목표 `package` |
+| `useProxy` | `boolean` | 아니오 | `true` | 값 `true` 은 Maven이 패키지 관리자에 대한 프록시 요청을 위해 찾은 첫 번째 활성 프록시 구성을 사용하도록 합니다. | 목표를 제외한 모든 목표 `package` |
+| `userId` | `String` | 예 | `admin` | AEM에 인증할 사용자 이름 | 목표를 제외한 모든 목표 `package` |
+| `verbose` | `boolean` | 아니오 | `false` | 자세한 로깅 활성화 또는 비활성화 | 목표를 제외한 모든 목표 `package` |
+
+### build {#build}
+
+AEM 인스턴스에 이미 정의된 콘텐츠 패키지를 빌드합니다.
+
+>[!NOTE]
+>
+>이 목표를 Maven 프로젝트 내에서 실행할 필요는 없습니다.
+
+#### 매개 변수 {#parameters}
+
+빌드 목표에 대한 모든 매개 변수는 [공통 매개 변수](#common-parameters) 섹션에 설명되어 있습니다.
+
+### install {#install}
+
+저장소에 패키지를 설치합니다. 이 목표를 실행해도 Maven 프로젝트가 필요하지 않습니다. 목표는 Maven 빌드 라이프사이클의 `install` 단계입니다.
+
+#### 매개 변수 {#parameters-1}
+
+다음 매개 변수 외에 [공통 매개변수](#common-parameters) 섹션의 설명을 참조하십시오.
+
+| 이름 | 유형 | 필수 | 기본 값 | 설명 |
+|---|---|---|---|---|---|
+| `artifact` | `String` | 아니오 | Maven 프로젝트의 `artifactId` 속성 값 | 양식의 문자열 `groupId:artifactId:version[:packaging]` |
+| `artifactId` | `String` | 아니오 | 없음 | 설치할 아티팩트의 ID |
+| `groupId` | `String` | 아니오 | 없음 | 설치할 객체 `groupId` 의 |
+| `install` | `boolean` | 아니오 | `true` | 패키지가 업로드될 때 자동으로 패키지의 압축을 해제할지 여부를 결정합니다. |
+| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | 아니오 | 시스템 변수의 `localRepository` 값 | 시스템 속성이 항상 사용되므로 플러그인 구성을 사용하여 구성할 수 없는 로컬 Maven 저장소 |
+| `packageFile` | `java.io.File` | 아니오 | Maven 프로젝트에 대해 정의된 기본 객체 | 설치할 패키지 파일의 이름 |
+| `packaging` | `String` | 아니오 | `zip` | 설치할 아티팩트의 패키징 유형 |
+| `pomRemoteRepositories` | `java.util.List` | 예 | Maven 프로젝트에 대해 정의된 `remoteArtifactRepositories` 속성 값 | 이 값은 플러그인 구성을 사용하여 구성할 수 없으며 프로젝트에 지정해야 합니다. |
+| `project` | `org.apache.maven.project.MavenProject` | 예 | 플러그인이 구성된 프로젝트 | 프로젝트에 플러그인 구성이 포함되어 있으므로 암시적으로 사용되는 Maven 프로젝트 |
+| `repositoryId` (POM), `repoID` (명령줄) | `String` | 아니오 | `temp` | 객체가 검색되는 저장소의 ID |
+| `repositoryUrl` (POM), `repoURL` (명령줄) | `String` | 아니오 | 없음 | 객체가 검색되는 저장소의 URL |
+| 버전 | 문자열 | 아니오 | 없음 | 설치할 객체 버전 |
+
+### ls {#ls}
+
+패키지 관리자에 배포된 패키지를 나열합니다.
+
+#### 매개 변수 {#parameters-2}
+
+ls 목표의 모든 매개 변수는 [공통 매개변수](#common-parameters) 섹션에 설명되어 있습니다.
+
+### rm {#rm}
+
+패키지 관리자에서 패키지를 제거합니다.
+
+#### 매개 변수 {#parameters-3}
+
+rm 목표의 모든 매개 변수는 [공통 매개변수](#common-parameters) 섹션에 설명되어 있습니다.
+
+### uninstall {#uninstall}
+
+패키지를 제거합니다. 패키지가 제거된 상태의 서버에 남아 있습니다.
+
+#### 매개 변수 {#parameters-4}
+
+제거 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 섹션에 설명되어 있습니다.
+
+### package {#package}
+
+콘텐츠 패키지를 만듭니다. 패키지 목표의 기본 구성에는 컴파일된 파일이 저장되는 디렉토리의 컨텐츠가 포함됩니다. 패키지 목표를 실행하려면 컴파일 빌드 단계가 완료되어야 합니다. 패키지 목표는 Maven 빌드 라이프사이클의 패키지 단계에 바인딩됩니다.
+
+#### 매개 변수 {#parameters-5}
+
+다음 매개 변수 외에 공통 매개변수(Common Parameters) 섹션에서 `name` 매개 변수 설명 [을](#common-parameters) 참조하십시오.
+
+| 이름 | 유형 | 필수 | 기본 값 | 설명 |
+|---|---|---|---|---|
+| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | 아니오 | 없음 | 사용할 아카이브 구성 |
+| `builtContentDirectory` | `java.io.File` | 예 | Maven 빌드의 출력 디렉터리 값 | 패키지에 포함할 콘텐트가 들어 있는 디렉터리 |
+| `dependencies` | `java.util.List` | 아니오 | 없음 |  |
+| `embeddedTarget` | `java.lang.String` | 아니오 | 없음 |  |
+| `embeddeds` | `java.util.List` | 아니오 | 없음 |  |
+| `failOnMissingEmbed` | `boolean` | 예 | `false` | 값이 `true` 있으면 포함된 아티팩트가 프로젝트 종속성에 없으면 빌드가 실패합니다. 값이 `false` 있으면 빌드가 이러한 오류를 무시하게 됩니다. |
+| `filterSource` | `java.io.File` | 아니오 | 없음 | 이 매개 변수는 작업 공간 필터의 소스를 지정하는 파일을 정의합니다. 구성에 지정된 필터와 임베드 또는 하위 패키지를 통해 주입된 필터는 파일 컨텐츠와 병합됩니다. |
+| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | 아니오 | 없음 | 이 매개 변수에는 패키지 내용을 정의하는 필터 요소가 포함됩니다. 실행될 때 필터는 `filter.xml` 파일에 포함됩니다. 아래의 필터 [사용](#using-filters) 섹션을 참조하십시오. |
+| `finalName` | `java.lang.String` | 예 | Maven 프로젝트 `finalName` 에 정의된 단계(빌드 단계) | 생성된 패키지 ZIP 파일의 이름( `.zip` 파일 확장자 없음) |
+| `group` | `java.lang.String` | 예 | Maven 프로젝트에 `groupID` 정의된 항목 | 콘텐츠 패키지 `groupId` 의 대상 설치 경로에 포함된 생성된 콘텐츠 패키지 |
+| `outputDirectory` | `java.io.File` | 예 | Maven 프로젝트에 정의된 빌드 디렉터리 | 콘텐트 패키지가 저장되는 로컬 디렉터리 |
+| `prefix` | `java.lang.String` | 아니오 | 없음 |  |
+| `project` | `org.apache.maven.project.MavenProject` | 예 | 없음 | 메이븐 프로젝트 |
+| `properties` | `java.util.Map` | 아니오 | 없음 | 이러한 매개 변수는 `properties.xml` 파일에서 설정할 수 있는 추가 속성을 정의합니다. 이러한 속성은 다음과 같은 사전 정의된 속성을 덮어쓸 수 없습니다. `group` (매개 변수 `group` 집합 사용), (매개 변수를 설정하여 사용), (매개 변수를 설정할 매개 변수 사용), (매개 변수 `name` 를 설정), `name` (프로젝트 설명 `version` `version` `description` `groupId``groupId` `artifactId``artifactId` `dependencies` `dependencies` `createdBy` `user.name` `created` `requiresRoot` `requiresRoot` `packagePath` 에서 설정), (mavor 설명자 프로젝트 설명자, MAVOPLER PPLICER PPLICER), MVR(mavl이 매개 변수 설정, VR(자동 생성된 매개 변수), fVR000000000000000000000000000000000000000000000000000000000000000000000그룹 및 패키지 이름에서) |
+| `requiresRoot` | `boolean` | 예 | false | 패키지에 루트가 필요한지 여부를 정의합니다. 그러면 파일의 `requiresRoot` 속성이 `properties.xml` 됩니다. |
+| `subPackages` | `java.util.List` | 아니오 | 없음 |  |
+| `version` | `java.lang.String` | 예 | Maven 프로젝트에 정의된 버전 | 콘텐츠 패키지 버전 |
+| `workDirectory` | `java.io.File` | 예 | Maven 프로젝트에 정의된 디렉터리(빌드 단계) | 패키지에 포함할 컨텐츠가 포함된 디렉토리 |
+
+#### 필터 사용 {#using-filters}
+
+필터 요소를 사용하여 패키지 컨텐츠를 정의합니다. 필터는 패키지의 파일 `workspaceFilter` 에 있는 `META-INF/vault/filter.xml` 요소에 추가됩니다.
+
+다음 필터 예는 사용할 XML 구조를 보여 줍니다.
+
+```xml
+<filter>
+   <root>/apps/myapp</root>
+   <mode>merge</mode>
+       <includes>
+              <include>/apps/myapp/install/</include>
+              <include>/apps/myapp/components</include>
+       </includes>
+       <excludes>
+              <exclude>/apps/myapp/config/*</exclude>
+       </excludes>
+</filter>
+```
+
+##### 가져오기 모드 {#import-mode}
+
+요소는 패키지를 가져올 때 저장소가 영향을 받는 방식을 정의합니다. `mode` 다음 값을 사용할 수 있습니다.
+
+* **병합:** 저장소에 아직 없는 패키지의 컨텐츠가 추가됩니다. 패키지와 저장소 모두에 있는 컨텐츠는 변경되지 않습니다. 저장소에서 제거된 콘텐트가 없습니다.
+* **바꾸기:** 저장소에 없는 패키지의 컨텐츠가 저장소에 추가됩니다. 저장소의 컨텐츠는 패키지의 일치하는 컨텐츠로 대체됩니다. 패키지에 없는 콘텐츠는 저장소에서 제거됩니다.
+* **업데이트:** 저장소에 없는 패키지의 컨텐츠가 저장소에 추가됩니다. 저장소의 컨텐츠는 패키지의 일치하는 컨텐츠로 대체됩니다. 기존 컨텐츠는 저장소에서 제거됩니다.
+
+필터에 요소가 없으면 `mode` 의 기본값이 `replace` 사용됩니다.
+
+### 도움말 {#help}
+
+#### 매개 변수 {#parameters-6}
+
+| 이름 | 유형 | 필수 | 기본 값 | 설명 |
+|---|---|---|---|---|
+| `detail` | `boolean` | 아니오 | `false` | 각 목표에 대한 모든 설정 가능 속성을 표시할지 여부를 결정합니다. |
+| `goal` | `String` | 아니오 | 없음 | 이 매개 변수는 도움말을 표시할 목표의 이름을 정의합니다. 값을 지정하지 않으면 모든 목표에 대한 도움말이 표시됩니다. |
+| `indentSize` | `int` | 아니오 | `2` | 각 수준의 들여쓰기를 위해 사용할 공백 수(정의된 경우 양수여야 함) |
+| `lineLength` | `int` | 아니오 | `80` | 표시 라인의 최대 길이(정의된 경우 양수여야 함) |
+
+## 패키지에 축소판 이미지 또는 속성 파일 포함 {#including-a-thumbnail-image-or-properties-file-in-the-package}
+
+기본 패키지 구성 파일을 교체하여 패키지 속성을 사용자 정의합니다. 예를 들어, 축소판 이미지를 포함시켜 패키지 관리자와 패키지 공유에서 패키지를 구별할 수 있습니다.
+
+소스 파일은 파일 시스템의 어느 위치에서나 찾을 수 있습니다. POM 파일에서 소스 파일을 패키지에 포함하기 위해 소스 파일에 복사할 빌드 리소스를 `target/vault-work/META-INF` 정의합니다.
+
+다음 POM 코드는 프로젝트 소스의 `META-INF` 폴더에 있는 파일을 패키지에 추가합니다.
+
+```xml
+<build>
+    <resources>
+        <!-- vault META-INF resources (thumbnail etc.) -->
+        <resource>
+            <directory>${basedir}/src/main/content/META-INF</directory>
+            <targetPath>../vault-work/META-INF</targetPath>
+        </resource>
+    </resources>
+</build>
+```
+
+다음 POM 코드는 패키지에 축소판 이미지만 추가합니다. 축소판 이미지의 이름 `thumbnail.png`을 지정해야 하며 패키지의 `META-INF/vault/definition` 폴더에 있어야 합니다. 이 예에서 소스 파일은 프로젝트의 `/src/main/content/META-INF/vault/definition` 폴더에 있습니다.
+
+```xml
+<build>
+    <resources>
+        <!-- thumbnail only -->
+        <resource>
+            <directory>${basedir}/src/main/content/META-INF/vault/definition</directory>
+            <targetPath>../vault-work/META-INF/vault/definition</targetPath>
+        </resource>
+    </resources>
+</build>
+```
+
+## AEM 프로젝트 원형을 사용하여 AEM 프로젝트 생성 {#using-archetypes}
+
+최신 AEM Project Tranype은 온-프레미스와 AMS 구현 모두에 대한 모범 사례 패키지 구조를 구현하며 모든 AEM 프로젝트에 권장됩니다.
+
+>[!TIP]
+>
+>자세한 내용은 AEM의 [AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 아티클을 Cloud Service 설명서와 AEM 프로젝트 [원형형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) 설명서로 참조하십시오. 두 가지 모두 AEM 6.5에서 완벽하게 지원됩니다.
