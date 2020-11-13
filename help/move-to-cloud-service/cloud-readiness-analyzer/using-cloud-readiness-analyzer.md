@@ -1,100 +1,100 @@
 ---
-title: 클라우드 준비 분석기 사용
-description: 클라우드 준비 분석기 사용
+title: 모범 사례 분석기 사용
+description: 모범 사례 분석기 사용
 translation-type: tm+mt
-source-git-commit: a1690ec94cf739d1b366f5ef99f3124162f35375
+source-git-commit: ca6ee9c820c67b68c7498f2b0bad8c650b00562e
 workflow-type: tm+mt
-source-wordcount: '2209'
-ht-degree: 70%
+source-wordcount: '2207'
+ht-degree: 47%
 
 ---
 
 
-# 클라우드 준비 분석기 사용 {#using-cloud-readiness-analyzer}
+# 모범 사례 분석기 사용 {#using-best-practices-analyzer}
 
-## 클라우드 준비 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
+## 우수 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
-CRA(Cloud Readiness Analyzer)를 실행하기 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
+BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
-* CRA 보고서는 Adobe Experience Manager(AEM) [패턴 탐지기](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/deploying/upgrading/pattern-detector.html)의 출력을 사용하여 작성됩니다. CRA에서 사용하는 패턴 탐지기 버전은 CRA 설치 패키지에 포함되어 있습니다.
+* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
 
-* CRA는 **관리자** 사용자 또는 **관리자** 그룹의 사용자만 실행할 수 있습니다.
+* BPA may only be run by the **admin** user or a user in the **administrators** group.
 
-* CRA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
-
-   >[!NOTE]
-   > AEM 6.1에 CRA를 설치하기 위한 특별 요구 사항은 [AEM 6.1에 설치](#installing-on-aem61)를 참조하십시오.
-
-* CRA는 모든 환경에서 실행할 수 있지만 *스테이지* 환경에서 실행하는 것이 좋습니다.
+* BPA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
 
    >[!NOTE]
-   >비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 *프로덕션* 환경에 최대한 가까운 *작성* 환경에서 CRA를 실행하는 것이 좋습니다. 또는 프로덕션 *작성* 환경의 복제본에서 실행할 수 있습니다.
+   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
 
-* CRA 보고서 컨텐츠를 만드는 데 몇 분에서 몇 시간 정도의 시간이 걸릴 수 있습니다. 필요한 시간은 AEM 저장소 컨텐츠, AEM 버전 및 기타 요소에 따라 크게 달라집니다.
+* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+
+   >[!NOTE]
+   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. 또는 프로덕션 *작성* 환경의 복제본에서 실행할 수 있습니다.
+
+* BPA 보고서 컨텐츠를 만드는 데 몇 분에서 몇 시간 정도의 시간이 걸릴 수 있습니다. 필요한 시간은 AEM 저장소 컨텐츠, AEM 버전 및 기타 요소에 따라 크게 달라집니다.
 
 * 보고서 컨텐츠를 생성하는 데 필요한 상당한 시간으로 인해 백그라운드 프로세스에 의해 생성되고 캐시에 보관됩니다. 보고서가 만료되거나 보고서가 명시적으로 새로 고쳐질 때까지 컨텐츠 캐시를 활용하므로 보고서를 보고 다운로드하는 작업이 상대적으로 빨라야 합니다. 보고서 컨텐츠를 생성하는 동안 브라우저 탭을 닫고 나중에 돌아와서 컨텐츠가 캐시에서 사용 가능하게 되면 보고서를 볼 수 있습니다.
 
 ## 사용 가능 {#availability}
 
-소프트웨어 배포 포털에서 클라우드 준비 분석기를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
+모범 사례 분석기는 소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
->[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html) 포털에서 클라우드 준비 분석기를 다운로드합니다.
+>Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html) portal.
 
-## 클라우드 준비 분석기 보고서 보기 {#viewing-report}
+## 우수 사례 분석기 보고서 보기 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 이상 {#aem-later-versions}
 
-클라우드 준비 분석기 보고서를 보는 방법에 대해 알아보려면 다음 섹션을 따르십시오.
+우수 사례 분석기 보고서를 보는 방법을 알려면 다음 섹션을 따르십시오.
 
-1. Adobe Experience Manager를 선택하고 도구 -> **작업** -> **클라우드 준비 분석기**&#x200B;로 이동합니다.
+1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic1.png)
 
-1. [보고서 **생성** ]을 클릭하여 클라우드 준비 분석기를 실행합니다.
+1. 보고서 **생성을** 클릭하여 우수 사례 분석기를 실행합니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic2.png)
 
-1. CRA가 보고서를 생성하는 동안 화면에 있는 도구가 만든 진행 상황을 볼 수 있습니다. 분석된 항목 수와 발견된 결과 수를 표시합니다.
+1. BPA가 보고서를 생성하는 동안 화면에 있는 도구가 만든 진행 상황을 볼 수 있습니다. 분석된 항목 수와 발견된 결과 수를 표시합니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic3.png)
 
 
-1. CRA 보고서가 생성되면 요약 및 결과 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 특정 검색 결과에 대한 자세한 내용을 보려면 표의 검색 유형에 해당하는 숫자를 클릭하면 됩니다.
+1. BPA 보고서가 생성되면 요약 및 결과 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 특정 검색 결과에 대한 자세한 내용을 보려면 표의 검색 유형에 해당하는 숫자를 클릭하면 됩니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic4.png)
 
    위의 작업은 보고서에서 해당 검색 위치를 자동으로 스크롤합니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >**보고서 새로 고침**&#x200B;을 클릭하여 CRA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다.
+   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
    >보고서를 다시 생성하는 동안 아래 이미지에 표시된 대로 완료된 백분율로 진행 상태를 표시합니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+   ![이미지](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/BPA_pic8.png)
 
 
 ### Adobe Experience Manager 6.2 및 6.1 {#aem-specific-versions}
 
-클라우드 준비 분석기 도구는 Adobe Experience Manager 6.2에서 CSV 보고서를 생성하고 다운로드하는 링크로 제한됩니다.
+Best Practices Analyzer 도구는 Adobe Experience Manager 6.2에서 CSV 보고서를 생성하고 다운로드하는 링크로 제한됩니다.
 
 Adobe Experience Manager 6.1의 경우 도구가 작동하지 않으며 HTTP 인터페이스만 사용할 수 있습니다.
 
 >[!NOTE]
 >모든 버전에서 포함된 패턴 탐지기는 독립적으로 실행될 수 있습니다.
 
-## 클라우드 준비 분석기 보고서 해석 {#cra-report}
+## 우수 사례 분석기 보고서 해석 {#cra-report}
 
-AEM 인스턴스에서 클라우드 준비 분석기 도구를 실행하면 보고서가 도구 창의 결과로 표시됩니다.
+AEM 인스턴스에서 우수 사례 분석기 도구를 실행하면 보고서가 도구 창에 결과로 표시됩니다.
 
 보고서의 형식은 다음과 같습니다.
 
@@ -103,13 +103,13 @@ AEM 인스턴스에서 클라우드 준비 분석기 도구를 실행하면 보�
    * **만료 시간**: 보고서 내용 캐시가 만료되는 시기
    * **생성 기간**: 보고서 내용 생성 프로세스의 체류 시간
    * **검색 횟수**: 보고서에 포함된 총 결과 수
-* **시스템 개요**: CRA가 실행된 AEM 시스템에 대한 정보
+* **시스템 개요**:BPA가 실행된 AEM 시스템에 대한 정보입니다.
 * **카테고리 찾기**: 각 섹션에서 동일한 카테고리의 하나 이상의 발견을 처리하는 여러 섹션. 각 섹션에는 카테고리 이름, 하위 유형, 검색 횟수 및 중요도, 요약, 카테고리 설명서 링크 및 개별 검색 정보가 포함됩니다.
 
 작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다.
 
 >[!NOTE]
->각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지 카테고리를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html).
+>각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지 카테고리를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 아래 표에 따라 중요도 수준을 파악하십시오.
 
@@ -121,9 +121,9 @@ AEM 인스턴스에서 클라우드 준비 분석기 도구를 실행하면 보�
 | 위험 | 이 검색 결과는 기능 또는 성능 손실을 방지하기 위해 해결해야 하는 업그레이드 문제가 될 가능성이 높습니다. |
 
 
-## 클라우드 준비 분석기 CSV 보고서 해석 {#cra-csv-report}
+## 우수 사례 분석기 CSV 보고서 해석 {#cra-csv-report}
 
-AEM 인스턴스에서 **CSV** 옵션을 클릭하면 클라우드 준비 분석기 보고서의 CSV 형식이 컨텐츠 캐시에서 만들어지고 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
+When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
 
 캐시가 만료되면 CSV 파일을 빌드하고 다운로드하기 전에 보고서가 다시 생성됩니다.
 
@@ -145,12 +145,12 @@ CSV 형식 보고서의 열은 다음과 같습니다.
 
 ## HTTP 인터페이스 {#http-interface}
 
-CRA는 AEM 내의 사용자 인터페이스 대신 사용할 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. CRA 보고서를 생성하고 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다. JSON, CSV 및 탭으로 구분된 값(TSV).
+BPA는 AEM 내의 사용자 인터페이스 대신 사용할 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. BPA 보고서를 생성하여 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다.JSON, CSV 및 탭으로 구분된 값(TSV).
 
-다음 URL은 `<host>`이 호스트 이름인 HTTP 액세스와 CRA가 설치된 서버의 포트(필요한 경우) 액세스에 사용할 수 있습니다.
-* JSON 형식용 `http://<host>/apps/readiness-analyzer/analysis/result.json`
-* CSV 형식용 `http://<host>/apps/readiness-analyzer/analysis/result.csv`
-* TSV 형식용 `http://<host>/apps/readiness-analyzer/analysis/result.tsv`
+The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+* JSON 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.json`
+* CSV 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.csv`
+* TSV 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.tsv`
 
 ### HTTP 요청 실행 {#executing-http-request}
 
@@ -161,7 +161,7 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 또한 HTTP 클라이언트 애플리케이션과 `curl` 또는 `wget`와 같은 명령줄 도구를 사용할 수 있습니다. 인증된 세션에서 브라우저 탭을 사용하지 않는 경우 주석의 일부로 관리 사용자 이름과 암호를 제공해야 합니다.
 
 다음은 이 작업을 수행하는 방법의 예입니다.
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
+`curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
 
 ### 헤더 및 매개 변수 {#http-headers-and-parameters}
 
@@ -182,9 +182,9 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 HTTP 헤더와 해당 쿼리 매개 변수가 모두 있으면 쿼리 매개 변수가 우선시됩니다.
 
 HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방법은 다음 명령을 사용하는 것입니다.
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
+`curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`.
 
-요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며, 보고서가 생성되면 다른 클라이언트와 함께 캐시에서 열람되거나 AEM 사용자 인터페이스에서 CRA 도구를 사용하여 볼 수 있습니다.
+요청이 수행된 후 보고서가 생성되도록 클라이언트가 활성 상태를 유지할 필요가 없습니다. HTTP GET 요청을 사용하는 하나의 클라이언트로 보고서 생성을 시작할 수 있으며, 보고서가 생성되면 다른 클라이언트를 사용하는 캐시에서 보거나 AEM 사용자 인터페이스에서 BPA 도구를 사용하여 볼 수 있습니다.
 
 ### 응답 {#http-responses}
 
@@ -201,19 +201,19 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 ### 캐시 새로 고침 조정 {#cache-adjustment}
 
-기본 CRA 캐시 수명은 24시간입니다. 보고서를 새로 고치고 캐시를 다시 생성하는 옵션과 함께 AEM 인스턴스와 HTTP 인터페이스 모두에서 이 기본값은 CRA의 대부분의 사용에 적절할 것입니다. 보고서 생성 시간이 AEM 인스턴스에 대해 특히 긴 경우 보고서 재생성을 최소화하기 위해 캐시 수명을 조정할 수 있습니다.
+기본 BPA 캐시 수명은 24시간입니다. AEM 인스턴스와 HTTP 인터페이스 모두에서 보고서를 새로 고치고 캐시를 다시 생성하는 옵션을 사용할 경우 이 기본값은 대부분의 BPA 사용에 적절할 것입니다. 보고서 생성 시간이 AEM 인스턴스에 대해 특히 긴 경우 보고서 재생성을 최소화하기 위해 캐시 수명을 조정할 수 있습니다.
 
 캐시 수명 값은 다음 저장소 노드의 `maxCacheAge` 속성으로 저장됩니다.
-`/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
+`/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 이 속성의 값은 캐시 수명(초)입니다. 관리자는 CRX/DE Lite를 사용하여 캐시 수명을 조정할 수 있습니다.
 
 ### AEM 6.1에 설치 {#installing-on-aem61}
 
-CRA는 패턴 탐지기를 실행하기 위해 이름이 `repository-reader-service`인 시스템 서비스 사용자 계정을 사용합니다. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서 이 계정은 CRA를 설치하기 *전에* 다음 단계를 수행하여 만들어야 합니다.
+BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
 
 1. 사용자를 만들려면 [새 서비스 사용자 만들기](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)의 지침을 따르십시오. UserID를 `repository-reader-service`로 설정하고 중간 경로를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
 
 2. [사용자 및 그룹 관리](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/security/security.html#managing-users-and-groups)의 지침, 특히 그룹에 사용자 추가 지침을 따라 `repository-reader-service` 사용자를 `administrators` 그룹에 추가합니다.
 
-3. 소스 AEM 인스턴스에서 패키지 관리자를 통해 CRA 패키지를 설치합니다. (`repository-reader-service` 시스템 서비스 사용자에 대한 ServiceUserMapper 구성에 필요한 구성 수정을 추가합니다.)
+3. 소스 AEM 인스턴스에 Package Manager를 통해 BPA 패키지를 설치합니다. (`repository-reader-service` 시스템 서비스 사용자에 대한 ServiceUserMapper 구성에 필요한 구성 수정을 추가합니다.)
