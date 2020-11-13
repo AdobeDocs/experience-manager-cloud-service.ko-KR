@@ -2,7 +2,7 @@
 title: 로그 관리 - Cloud Service
 description: 로그 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 9%
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 이러한 파일은 UI를 통해 **개요** 페이지에서 다운로드할 수 있습니다.
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 또는 환경 **페이지** :
 
@@ -25,7 +25,7 @@ ht-degree: 9%
 >[!NOTE]
 >열려 있는 위치에 관계없이 동일한 대화 상자가 나타나고 개별 로그 파일을 다운로드할 수 있습니다.
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## API를 통한 로그 {#logs-thorugh-api}
