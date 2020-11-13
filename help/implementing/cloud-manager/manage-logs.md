@@ -2,7 +2,7 @@
 title: 로그 관리 - Cloud Service
 description: 로그 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 9%
@@ -28,7 +28,7 @@ ht-degree: 9%
 ![](assets/download-logs2.png)
 
 
-## API를 통한 로그 {#logs-thorugh-api}
+## API를 통한 로그 {#logs-through-api}
 
 UI를 통해 로그를 다운로드하는 것 외에도 API와 명령줄 인터페이스를 통해 로그를 사용할 수 있습니다.
 
