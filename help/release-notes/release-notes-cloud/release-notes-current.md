@@ -2,9 +2,9 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
+source-git-commit: 8a7dd4059a200e82b6cb385acc5dcb174aa50938
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '886'
 ht-degree: 4%
 
 ---
@@ -98,3 +98,19 @@ Follow this section to learn about what is new and the updates for [Content Tran
 ### 버그 수정 {#ctt-bug-fixes}
 
 * 마이그레이션 세트에 부분적으로 유사한 파일 이름이 있는 경로가 포함된 경우 컨텐츠 전송 도구가 콘텐트 파일을 건너뛰었습니다. 이 문제가 해결되었습니다.
+
+## 모범 사례 분석기 {#best-practices-analyzer}
+
+### 릴리스 날짜 {#release-date-bpa}
+
+우수 사례 분석기의 릴리스 날짜는 2020년 11월 13일입니다.
+
+### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+
+* Cloud Readance Analyzer는 이제 BPA(Best Practices Analyzer)입니다. BPA는 현재 AEM 구현에 대한 모범 사례 평가를 제공하고 기존 AEM 인스턴스에서 AEM으로 Cloud Service으로 전환할 준비를 평가합니다.
+
+* AEM에서 Cloud Service으로 사용하면 문제가 발생할 수 `java.io.InputStream`있는 용도의 사용을 탐지하기 위해 새로운 탐지기가 추가되었습니다.
+
+### 버그 수정 {#bpa-bug-fixes}
+
+* textfield foundation 구성 요소와 관련된 *양호* 발생이 수정되었습니다.
