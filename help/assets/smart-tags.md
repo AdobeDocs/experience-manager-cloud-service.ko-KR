@@ -3,7 +3,7 @@ title: AI에서 생성된 태그를 사용하여 이미지 자동 태그 지정
 description: 서비스를 사용하여 상황에 맞는 및 설명적인 비즈니스 태그를 적용하는 지능적인 서비스를 사용하여 이미지에 태그를 [!DNL Adobe Sensei] 지정할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 1%
@@ -154,7 +154,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 1. 시작을 **[!UICONTROL 클릭합니다]**. 워크플로우는 자산에 태그를 적용합니다. 자산 폴더를 탐색하고 태그를 검토하여 에셋에 태그가 제대로 지정되어 있는지 확인합니다. 자세한 내용은 스마트 태그 [관리를 참조하십시오](#manage-smart-tags-and-searches).
 
 >[!NOTE]
-
+>
 >후속 태그 지정 주기 동안 새로 훈련된 태그로 수정된 자산만 다시 태그됩니다. 하지만 태그 지정 워크플로우에 대한 마지막 태그 지정 주기와 현재 태그 지정 주기 사이의 간격이 24시간이 넘는 경우에도 변경되지 않은 자산에 태그됩니다. 주기적인 태그 지정 워크플로우의 경우, 시간 간격이 6개월이 되면 변경되지 않은 자산에 태그가 지정됩니다.
 
 ### 업로드된 자산에 태그 지정 {#tag-uploaded-assets}
