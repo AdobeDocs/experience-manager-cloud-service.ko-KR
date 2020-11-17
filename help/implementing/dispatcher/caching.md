@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 translation-type: tm+mt
-source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
+source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1479'
 ht-degree: 1%
 
 ---
@@ -32,21 +32,21 @@ ht-degree: 1%
    </LocationMatch>
    ```
 
-전역 캐시 컨트롤 헤더 또는 와이드 리렉스와 일치하는 헤더를 설정할 때는 비공개로 유지할 컨텐츠에 적용되지 않도록 주의하십시오. 규칙을 세밀하게 적용하려면 여러 지시어를 사용하는 것이 좋습니다. 즉, AEM은 Cloud Service으로 캐시 헤더를 제거하는데, 디스패처 설명서에 설명된 대로 디스패처가 감지하는 대상에 적용되었음을 감지하면 이를 제거합니다. AEM에서 항상 캐시를 적용하려면 다음과 같이 &quot;always&quot; 옵션을 추가할 수 있습니다.
+   전역 캐시 컨트롤 헤더 또는 와이드 리렉스와 일치하는 헤더를 설정할 때는 비공개로 유지할 컨텐츠에 적용되지 않도록 주의하십시오. 규칙을 세밀하게 적용하려면 여러 지시어를 사용하는 것이 좋습니다. 즉, AEM은 Cloud Service으로 캐시 헤더를 제거하는데, 디스패처 설명서에 설명된 대로 디스패처가 감지하는 대상에 적용되었음을 감지하면 이를 제거합니다. AEM에서 항상 캐시를 적용하려면 다음과 같이 &quot;always&quot; 옵션을 추가할 수 있습니다.
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
-아래 파일에 기본 구성 `src/conf.dispatcher.d/cache` 에 있는 다음 규칙이 있는지 확인해야 합니다.
+   아래 파일에 기본 구성 `src/conf.dispatcher.d/cache` 에 있는 다음 규칙이 있는지 확인해야 합니다.
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
 * 특정 콘텐츠가 캐시되지 않도록 하려면 Cache-Control 헤더를 *private으로 설정합니다*. 예를 들어, 다음과 같이 이름이 myfolder인 디렉토리 **의 html 콘텐츠가 캐시되지** 못하게 됩니다.
 
@@ -76,19 +76,19 @@ ht-degree: 1%
       </LocationMatch>
    ```
 
-너무 많이 캐시하지 않도록 주의하고 AEM에서 항상 &quot;항상&quot; 옵션을 사용하여 캐시를 강제 적용하는 방법에 대해 위의 html/text 섹션에 있는 설명을 참조하십시오.
+   너무 많이 캐시하지 않도록 주의하고 AEM에서 항상 &quot;항상&quot; 옵션을 사용하여 캐시를 강제 적용하는 방법에 대해 위의 html/text 섹션에 있는 설명을 참조하십시오.
 
-src/conf.dispatcher.d/cache 아래의 파일에 다음과 같은 규칙이 있는지 확인해야 합니다(기본 구성).
+   캐시 아래의 파일에 기본 `src/conf.dispatcher.d/`구성에 있는 다음 규칙이 있는지 확인해야 합니다.
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
-캐시되지 않고 비공개로 유지되어야 하는 에셋이 LocationMatch 지시어 필터의 일부가 아닌지 확인합니다.
+   캐시되지 않고 비공개로 유지되어야 하는 에셋이 LocationMatch 지시어 필터의 일부가 아닌지 확인합니다.
 
->[!NOTE]
->디스패처- [ttl AEM ACS Commons 프로젝트를](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)비롯한 다른 방법은 값을 성공적으로 재정의하지 못합니다.
+   >[!NOTE]
+   >디스패처- [ttl AEM ACS Commons 프로젝트를](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)비롯한 다른 방법은 값을 성공적으로 재정의하지 못합니다.
 
 ### 노드 저장소의 다른 콘텐트 파일 형식 {#other-content}
 
