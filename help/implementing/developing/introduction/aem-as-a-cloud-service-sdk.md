@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: Cloud Service 소프트웨어 개발 키트로서의 AEM 개요
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1181'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,17 @@ Cloud Service SDK로서의 AEM은 다음과 같은 가공물로 구성됩니다.
 
 * **6.5 더 이상 사용되지 않는 Java API Jar** - AEM 6.5 이후 제거된 추가 인터페이스 집합
 * **6.5 더 이상 사용되지 않는 Javadoc Jar** - 추가 인터페이스 세트를 위한 Javadocs
+
+## SDK용 빌드 {#building-for-the-sdk}
+
+Cloud Service SDK로 AEM을 사용하면 사용자 지정 코드를 작성하고 배포할 수 있습니다. 자세한 내용은 [AEM Project Tranype 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). 높은 수준에서 다음 단계가 수행됩니다.
+
+* **코드를 컴파일합니다**. 예상대로 소스 코드가 컴파일되어 결과 콘텐츠 패키지가 생성됩니다.
+* **가공물을 제작할 수 있습니다**. 가공물은 이 프로세스 동안 구축됩니다.
+* **번들**&#x200B;분석 번들은 Maven Analyzer 플러그인을 사용하여 분석됩니다. 이 플러그인은 Maven 프로젝트에서 누락된 종속성 등의 문제를 찾습니다
+* **객체 배포**. 객체는 로컬 서버에 배포됩니다.
+
+클라우드 환경에 배포하면 Cloud Manager에서 동일한 단계를 수행합니다. 로컬에서 빌드를 수행하면 로컬 개발 및 테스트를 수행할 수 있으므로 개발자는 소스 제어와 Cloud Manager 배포를 트리거하기 전에 코드 또는 구조적 문제를 효율적으로 확인할 수 있습니다.
 
 ## Cloud Service SDK로 AEM 액세스 {#accessing-the-aem-as-a-cloud-service-sdk}
 
