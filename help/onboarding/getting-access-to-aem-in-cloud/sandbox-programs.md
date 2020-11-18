@@ -2,9 +2,9 @@
 title: 샌드박스 프로그램 - Cloud Service
 description: 샌드박스 프로그램 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1184'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 샌드박스 프로그램에는 사이트 및 에셋이 포함되며 Git 저장소, 개발 환경 및 비프로덕션 파이프라인으로 자동 채워집니다.  Git 리포지토리는 AEM 프로젝트 원형을 기반으로 하는 샘플 프로젝트로 채워집니다.
 
-프로그램 [유형에 대한 자세한 내용은 프로그램 및 프로그램 유형](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) 이해를 참조하십시오.
+프로그램 [유형에 대한 자세한 내용은 프로그램 및 프로그램 유형](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) 이해를 참조하십시오.
 
 ### 샌드박스 프로그램의 속성 {#attributes-sandbox}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 프로그램 생성 마법사를 사용하면 샌드박스 프로그램을 만들 수 있습니다.
 
-샌드박스 프로그램 생성 방법에 대해 알아보려면 [샌드박스 프로그램](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) 만들기를 참조하십시오.
+샌드박스 프로그램 생성 방법에 대해 알아보려면 [샌드박스 프로그램](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) 만들기를 참조하십시오.
 
 ### 샌드박스 환경 만들기 {#creating-sandbox-environments}
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 프로덕션-스테이지 환경 세트는 사용자가 프로덕션 파이프라인을 설정할 준비가 되면 샌드박스 프로그램에 수동으로 추가할 수 있습니다.
 
-수동으로 환경을 만드는 방법에 대해 알아보려면 환경 [추가를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 참조하십시오.
+수동으로 환경을 만드는 방법에 대해 알아보려면 환경 [추가를](/help/implementing/cloud-manager/manage-environments.md) 참조하십시오.
 
 ### 샌드박스 환경 삭제 {#deleting-sandbox-environments}
 
 필요한 권한을 가진 사용자는 개발 또는 프로덕션/스테이지 환경 또는 세트를 삭제할 수 있습니다.
 
-환경을 삭제하려면 환경 [삭제를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) 참조하십시오.
+환경을 삭제하려면 환경 [삭제를](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) 참조하십시오.
 
 
 ## 동면작업 및 동면제거 샌드박스 환경 {#hibernating-introduction}
@@ -93,7 +93,7 @@ ht-degree: 0%
 아래의 단계에 따라 샌드박스 프로그램 환경을 수동으로 절전 모드로 전환하십시오.
 
 1. 개발자 **콘솔로 이동합니다**.
-환경 [카드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) 에서 **개발자 콘솔에** 액세스하는 방법을 **알아보려면 개발자 콘솔** 액세스를참조하십시오.
+환경 [카드](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) 에서 **개발자 콘솔에** 액세스하는 방법을 **알아보려면 개발자 콘솔** 액세스를참조하십시오.
    >[!IMPORTANT]
    >Cloud Manager에서 바로 **개발자 콘솔에** 연결해도 샌드박스 프로그램 환경의 최대 절전 모드를 수행할 수 있는 옵션이 제공되지 않습니다. 해결 방법은 개발자 콘솔에서 한 번, url `#release-cm-p1234-e5678 where 1234` 1234의 끝에 다음 패턴을 추가하여 사용자 *프로그램 ID이고* 5678은 사용자 *환경 ID입니다*.
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 ### 동면 해제 {#de-hibernation-introduction}
 
 1. 개발자 **콘솔로 이동합니다**.
-환경 [카드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) 에서 **개발자 콘솔에** 액세스하는 방법을 **알아보려면 개발자 콘솔** 액세스를참조하십시오.
+환경 [카드](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) 에서 **개발자 콘솔에** 액세스하는 방법을 **알아보려면 개발자 콘솔** 액세스를참조하십시오.
 
    >[!IMPORTANT]
    >Cloud Manager에서 바로 **개발자 콘솔에** 연결해도 샌드박스 프로그램 환경의 절전 모드를 해제할 수 있는 옵션이 제공되지 않습니다. 해결 방법은 개발자 콘솔에서 한 번, url `#release-cm-p1234-e5678 where 1234` 1234의 끝에 다음 패턴을 추가하여 사용자 *프로그램 ID이고* 5678은 사용자 *환경 ID입니다*.
@@ -157,8 +157,6 @@ ht-degree: 0%
 
 Cloud Service으로 AEM에 액세스할 수 있는 제품 프로필을 보유한 모든 사용자는 **개발자 콘솔에**&#x200B;액세스하여 환경의 최대 절전 모드를 해제할 수 있습니다.
 
-사용자 권한 [설정에 대해서는 Cloud](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) Manager에서 사용자 및 역할 추가를 참조하십시오.
-
 #### 동면기 환경 액세스 {#accessing-hibernated-environment}
 
 최대 절전 모드 환경의 작성자 또는 게시 계층에 대해 브라우저를 요청하는 경우 아래 그림과 같이 사용자는 최대 절전 모드 상태를 설명하는 랜딩 페이지가 나타납니다.
@@ -178,11 +176,11 @@ Cloud Service으로 AEM에 액세스할 수 있는 제품 프로필을 보유한
 
 ## AEM 샌드박스 환경 업데이트 {#aem-updates-sandbox}
 
-자세한 내용은 [AEM 버전 업데이트를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) 참조하십시오.
+자세한 내용은 [AEM 버전 업데이트를](/help/implementing/deploying/overview.md#version-updates) 참조하십시오.
 
 사용자는 샌드박스 프로그램의 환경에 AEM 업데이트를 수동으로 적용할 수 있습니다.
 
-환경 [을](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) 업데이트하는 방법에 대해서는 환경 업데이트를 참조하십시오.
+환경 [을](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) 업데이트하는 방법에 대해서는 환경 업데이트를 참조하십시오.
 
 >[!NOTE]
 >* 수동 업데이트는 타깃팅된 환경에 제대로 구성된 파이프라인이 있는 경우에만 실행할 수 있습니다.
