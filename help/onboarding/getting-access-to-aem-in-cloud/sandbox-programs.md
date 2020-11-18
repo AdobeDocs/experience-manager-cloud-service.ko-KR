@@ -2,7 +2,7 @@
 title: 샌드박스 프로그램 - Cloud Service
 description: 샌드박스 프로그램 - Cloud Service
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 프로덕션-스테이지 환경 세트는 사용자가 프로덕션 파이프라인을 설정할 준비가 되면 샌드박스 프로그램에 수동으로 추가할 수 있습니다.
 
-수동으로 환경을 만드는 방법에 대해 알아보려면 환경 [추가를](/help/implementing/cloud-manager/manage-environments.md) 참조하십시오.
+환경을 수동으로 만드는 방법에 대해 자세히 알아보려면 환경 [추가를](/help/implementing/cloud-manager/manage-environments.md) 참조하십시오.
 
 ### 샌드박스 환경 삭제 {#deleting-sandbox-environments}
 
@@ -176,7 +176,7 @@ Cloud Service으로 AEM에 액세스할 수 있는 제품 프로필을 보유한
 
 ## AEM 샌드박스 환경 업데이트 {#aem-updates-sandbox}
 
-자세한 내용은 [AEM 버전 업데이트를](/help/implementing/deploying/overview.md#version-updates) 참조하십시오.
+자세한 내용은 [AEM 버전 업데이트를](/help/implementing/deploying/aem-version-updates.md) 참조하십시오.
 
 사용자는 샌드박스 프로그램의 환경에 AEM 업데이트를 수동으로 적용할 수 있습니다.
 
