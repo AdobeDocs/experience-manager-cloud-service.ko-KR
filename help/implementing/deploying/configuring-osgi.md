@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
+source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
 workflow-type: tm+mt
-source-wordcount: '2691'
+source-wordcount: '2737'
 ht-degree: 1%
 
 ---
@@ -435,6 +435,11 @@ config.dev
 </table>
 
 ## 속성 설정을 위한 클라우드 관리자 API 형식 {#cloud-manager-api-format-for-setting-properties}
+
+API를 구성해야 하는 방법에 대해 [이 페이지를](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) 참조하십시오.
+>[!NOTE]
+>
+>사용된 클라우드 관리자 API에 &quot;배포 관리자 - Cloud Service&quot; 역할이 할당되었는지 확인합니다. 다른 역할은 아래의 명령을 모두 실행할 수 없습니다.
 
 ### API를 통한 값 설정 {#setting-values-via-api}
 
