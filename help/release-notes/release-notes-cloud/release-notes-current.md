@@ -2,9 +2,9 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4bce4fceab08a95fc2c1c8334f84fd54204228ba
+source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '890'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 * **[!DNL Adobe Asset Link]버전 2.1**:새 버전의 [Adobe 에셋 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 확장 [!DNL Adobe Photoshop]을 사용할 수 [!DNL Adobe Illustrator]있으며 사용할 수 [!DNL Adobe InDesign] 있습니다. 또한 2020년 10월에 출시된 2021 버전의 최신 [!DNL Adobe Creative Cloud] 애플리케이션과의 호환성을 제공합니다.
 
-* **[!DNL Assets]WebP 파일 지원**: [!DNL Assets] 이제 Cloud Service에서 WebP 이미지 형식을 지원합니다. WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별할 수 없으며 파일 크기가 훨씬 작습니다. 자산의 파일 크기가 낮아지면 페이지 로드 시간이 단축되고 컨텐츠 작성자가 보다 빠른 웹 경험을 제공할 수 있습니다. 표준 처리 프로필 [만들기를 참조하십시오](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
+* **[!DNL Assets]WebP 파일 지원**: [!DNL Assets] as a Cloud Service은 이제 WebP 이미지 형식의 변환 만들기를 지원합니다. WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별할 수 없으며 파일 크기가 훨씬 작습니다. 자산의 파일 크기가 낮아지면 페이지 로드 시간이 단축되고 컨텐츠 작성자가 보다 빠른 웹 경험을 제공할 수 있습니다. 표준 처리 프로필 [만들기를 참조하십시오](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
