@@ -3,17 +3,17 @@ product: adobe experience manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.ko-KR
 index: y
 type: Documentation
-solution-title: 클라우드 서비스로서의 Adobe Experience Manager
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
+solution-title: Adobe Experience Manager as a Cloud Service
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: 시작하기
-getting-started-url: https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/overview/home.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
 tutorials-title: 튜토리얼
-tutorials-url: https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 20%
+source-wordcount: '110'
+ht-degree: 10%
 
 ---
 
@@ -52,5 +52,3 @@ ToCs
 * `title`
 * `description`
 * `contentOwner` (핵심 자산 컨텐츠에만 해당 `/help/assets`)
-
-메타데이터에 대한 추가 정보는 [내부 작성 안내서에서 찾을 수 있습니다.](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
