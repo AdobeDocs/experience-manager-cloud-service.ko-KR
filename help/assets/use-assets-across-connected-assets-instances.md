@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
+source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
 workflow-type: tm+mt
-source-wordcount: '2228'
-ht-degree: 41%
+source-wordcount: '2244'
+ht-degree: 40%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 41%
 
 ## 연결된 자산 개요 {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. 관리자는 배포의 다른(원격) [!DNL Sites] 배포를 한 번만 통합합니다 [!DNL Assets].
+작성자는 [!UICONTROL 페이지 편집기에서] 페이지를 대상 대상으로 편집할 때 자산의 소스 역할을 하는 다른 [!DNL Assets] 배포의 자산을 원활하게 검색, 탐색 및 포함시킬 수 있습니다. 관리자는 한 번의 클릭으로 기능 [!DNL Experience Manager] 과 다른 기능의 배포 [!DNL Sites] 가 포함된 배포 [!DNL Experience Manager] 를 [!DNL Assets] 통합합니다.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. 이 기능은 한 번에 여러 개의 원격 자산을 원활하게 검색하고 사용할 수 있도록 지원합니다. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk.
 
@@ -154,7 +154,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 >[!CAUTION]
 >
->Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). 또한 자산은 [!UICONTROL 콘텐츠 파인더]를 통해 로컬 저장소에서 검색하고 볼 수 있습니다.
+>웹 페이지에서 사용되면 가져온 원격 에셋은 로컬 폴더에 액세스할 수 있는 권한이 있는 모든 사용자가 검색 및 사용할 수 있습니다. 가져온 에셋은 로컬 폴더(위`connectedassets` 안내 화면)에 저장됩니다. 또한 자산은 [!UICONTROL 콘텐츠 파인더]를 통해 로컬 저장소에서 검색하고 볼 수 있습니다.
 
 가져온 자산은 연결된 메타데이터를 편집할 수 없다는 점을 제외하고 다른 로컬 자산으로 사용할 수 있습니다.
 
