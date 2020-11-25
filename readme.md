@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2ac87c5356579ea650cd3d34219e75eb1940f24b
+source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '221'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 | 프로덕션 | 단계 |
 |---|---|
 | [![빌드 상태](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/lastBuild) | [![빌드 상태](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/lastBuild) |
-| [출력 제품](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) | [출력 단계](https://docs-stg.corp.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) |
+| [출력 제품](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) | [출력 단계](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/landing/home.html) |
 
 Adobe Experience Manager Cloud Service 설명서를 위한 보관소입니다. 이 설명서에서는 설치, 관리, 작성 사용 및 Cloud Service을 사용하여 AEM을 사용자 지정하는 방법에 대해 설명합니다.
 
