@@ -2,15 +2,21 @@
 title: 계획 단계
 description: 계획 단계
 translation-type: tm+mt
-source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
+source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '474'
+ht-degree: 91%
 
 ---
 
 
 # 계획 {#planning-phase}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_planning"
+>title="전환 계획"
+>abstract="클라우드 서비스로 전환 여정을 시작하기 전에 먼저 AEM as a Cloud Service를 숙지하고, 이에 대한 주목할 만한 변경 사항을 검토하고, 교체되거나 더 이상 사용되지 않는 기능을 검토해야 합니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="모범 사례 분석기"
 
 클라우드 서비스로 전환 여정을 시작하기 전에 먼저 AEM as a Cloud Service를 숙지하고, 이에 대한 주목할 만한 변경 사항을 검토하고, 교체되거나 더 이상 사용되지 않는 기능을 검토해야 합니다.
 
