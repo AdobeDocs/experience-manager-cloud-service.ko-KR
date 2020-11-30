@@ -2,7 +2,7 @@
 title: 태그 사용
 description: 태그는 웹 사이트에 포함된 컨텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 96bde8b7f169256b352c1663f902b874afd6a73b
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 태그는 웹 사이트에 포함된 컨텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다. 태그는 검색을 통해 해당 컨텐츠 및 관련 컨텐츠를 찾을 수 있도록 하기 위해 페이지, 자산 또는 컨텐츠에 첨부할 수 있는 키워드 또는 레이블이라고 할 수 있습니다.
 
 * 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 내용은 태그 관리를 참조하십시오. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* 사용자 지정 애플리케이션에서 태그를 포함 및 확장하는 방법과 태깅 프레임워크에 대한 내용은 개발자를 위한 태깅을 참조하십시오. <!-- See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.-->
+* 사용자 지정 애플리케이션에서 태그를 포함 및 확장하는 방법과 태깅 프레임워크에 대한 내용은 [개발자를 위한 태깅](/help/implementing/developing/introduction/tagging-framework.md)을 참조하십시오.
 
 ## 태깅을 사용해야 하는 10가지 이유 {#ten-reasons-to-use-tagging}
 
