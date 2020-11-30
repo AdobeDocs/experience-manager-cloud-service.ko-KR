@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
+source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 82%
+source-wordcount: '436'
+ht-degree: 81%
 
 ---
 
@@ -48,6 +48,9 @@ ht-degree: 82%
    + [페이지 비교](/help/implementing/developing/introduction/page-diff.md)
    + [편집기 제한 사항](/help/implementing/developing/introduction/editor-limitations.md)
    + [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md)
+   + [AEM 태깅 프레임워크](/help/implementing/developing/introduction/tagging-framework.md)
+   + [AEM 애플리케이션에 Tagging 작성](/help/implementing/developing/introduction/tagging-applications.md)
+   + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
 + 개발자 도구 {#developer-tools}
    + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
