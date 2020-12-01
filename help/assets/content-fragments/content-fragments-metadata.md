@@ -2,10 +2,10 @@
 title: 메타데이터 - 조각 속성
 description: 컨텐츠 조각의 메타데이터(속성)를 보고 편집할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 100%
+source-wordcount: '111'
+ht-degree: 89%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 100%
 3. **기본** 탭에는 다음과 같이 보거나 편집할 수 있는 옵션이 있습니다.
 
    * 썸네일 - 여기에 사용할 **이미지를 업로드**&#x200B;할 수 있습니다.
+   * **컨텐츠 조각** 모델은 현재 조각을 만드는 데 사용되는 모델을 나타냅니다.
    * **제목**
    * **설명**
    * **태그**
