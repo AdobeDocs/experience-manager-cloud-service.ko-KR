@@ -5,10 +5,10 @@ user-guide-title: AEM as a Cloud Service에서 컨텐츠 작성
 breadcrumb-title: 작성 안내서
 user-guide-description: Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다.
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 97%
+source-wordcount: '236'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,9 @@ ht-degree: 97%
    + 론치 {#launches}
       + [론치를 사용한 작업](authoring/launches/overview.md)
       + [론치 만들기](authoring/launches/creating.md)
+      + [론치의 페이지 관리](authoring/launches/managing-pages.md)
       + [론치 편집](authoring/launches/editing.md)
+      + [타임워프를 사용하여 론치 미리 보기](authoring/launches/preview.md)
       + [론치 홍보](authoring/launches/promoting.md)
    + 워크플로우 {#workflows}
       + [워크플로우 작업](authoring/workflows/overview.md)
@@ -75,6 +77,7 @@ ht-degree: 97%
       + [오퍼 생성 및 관리](authoring/personalization/offers.md)
       + [세그멘테이션 이해](authoring/personalization/segmentation.md)
       + [ContextHub로 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+      + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 관리 {#administering}
    + [워크플로우 관리](administering/workflows-administering.md)
 + AEM as a Cloud Service와 통합 {#integrations}
