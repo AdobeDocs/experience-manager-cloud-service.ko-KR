@@ -2,10 +2,10 @@
 title: 페이지 버전 사용
 description: 페이지 버전 생성, 비교 및 복원
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 67%
+source-wordcount: '1521'
+ht-degree: 66%
 
 ---
 
@@ -59,15 +59,15 @@ ht-degree: 67%
 
 새 버전을 나타내기 위해 업데이트된 정보가 포함된 타임라인이 열립니다.
 
-## 버전 복원 {#reinstating-versions}
+## 버전 {#reinstating-versions} 복원
 
 페이지 버전을 만들면 이전 버전을 복원하는 다양한 방법이 있습니다.
 
-* 타임라인 **레일에서 이 버전으로** 되돌리기 [옵션](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+* [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 레일의 **이 버전** 옵션으로 되돌리기
 
    선택한 페이지의 이전 버전을 복원합니다.
 
-* 상단 **작업** 도구 [모음의 복원 옵션](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+* 맨 위 [작업 도구 모음](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)에서 **복원** 옵션
 
    * **버전 복원**
 
@@ -90,9 +90,9 @@ ht-degree: 67%
 >1. 생성된 레이블 및 노드 이름은 이제 1.0.0, 1.0.1, 1.0.2 등이 됩니다.
 
 
-### Revert to a Version {#revert-to-a-version}
+### 버전 {#revert-to-a-version}으로 되돌리기
 
-선택한 **페이지를** 이전 버전으로 되돌리려면:
+선택한 페이지를 이전 버전으로 **되돌리기:**
 
 1. 이전 버전으로 되돌릴 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다 .
@@ -107,9 +107,9 @@ ht-degree: 67%
 
 이 방법은 현재 폴더 내에서 지정된 페이지의 버전을 복원하는 데 사용할 수 있습니다.이전에 삭제한 페이지 복원을 포함할 수도 있습니다.
 
-1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+1. 필요한 폴더로 이동하고 [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)합니다.
 
-1. 맨 위 **작업 도구 모음에서****복원** , [버전](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)복원을선택합니다.
+1. **복원**&#x200B;을 선택하고 맨 위 [작업 도구 모음](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)에서 **버전 복원**&#x200B;을 선택합니다.
 
    >[!NOTE]
    >
@@ -124,7 +124,7 @@ ht-degree: 67%
 
    ![버전 복원 - 폴더의 모든 페이지 목록](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
-1. 특정 페이지의 경우 RESTORE TO **VERSION** 아래의 드롭다운 선택기를 사용하여 해당 페이지에 필요한 버전을 선택합니다.
+1. 특정 페이지의 경우 **RESTORE TO VERSION** 아래의 드롭다운 선택기를 사용하여 해당 페이지에 필요한 버전을 선택합니다.
 
    ![버전 복원 - 버전 선택](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
@@ -132,7 +132,7 @@ ht-degree: 67%
 
    ![버전 복원 - 페이지 선택](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. 선택한 페이지 **의 선택한** 버전에 대해 현재 버전으로 복원하기를 선택합니다.
+1. 선택한 페이지의 선택한 버전에 대해 **복원**&#x200B;을 선택하여 현재 버전으로 복원합니다.
 
 >[!NOTE]
 >
@@ -142,21 +142,21 @@ ht-degree: 67%
 
 이 방법을 사용하여 지정된 날짜 및 시간에 트리 버전을 복원할 수 있습니다.여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
 
-1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+1. 필요한 폴더로 이동하고 [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)합니다.
 
-1. 맨 위 **작업 도구 모음에서**&#x200B;복원 **** , 트리 [복원을](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)선택합니다. 트리의 최신 버전이 표시됩니다.
+1. **복원**&#x200B;을 선택한 다음 위쪽 [작업 도구 모음](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)에서 **트리 복원**&#x200B;을 선택합니다. 트리의 최신 버전이 표시됩니다.
 
    ![트리 복원](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. 최신 버전의 날짜 **에서** 날짜 및 시간 선택기를 사용하여 트리의 다른 버전(복원할 버전)을 선택합니다.
+1. **Latest Versions at**&#x200B;의 날짜 및 시간 선택기를 사용하여 트리의 다른 버전인 복원할 버전을 선택합니다.
 
-1. 필요에 따라 **보존된 버전이 없는 페이지** 플래그를 설정합니다.
+1. 필요에 따라 플래그 **버전 없는 페이지**&#x200B;를 설정합니다.
 
    * 활성(선택) 상태인 경우, 버전이 지정되지 않은 모든 페이지는 유지되며 복원의 영향을 받지 않습니다.
 
    * 비활성(선택 안 됨)인 경우 버전 관리 트리에 없는 모든 비버전 페이지가 제거되므로
 
-1. 선택한 버전의 트리에서 **복원을** 선택하여 *현재* 버전으로 복원할 수 있습니다.
+1. 선택한 버전의 트리가 *현재* 버전으로 복원되도록 **복원**&#x200B;을 선택합니다.
 
 ## 버전 미리 보기 {#previewing-a-version}
 
@@ -193,6 +193,10 @@ ht-degree: 67%
 ## 타임워프 {#timewarp}
 
 타임워프는 과거의 특정 시점에 *게시된* 페이지의 상태를 시뮬레이션하도록 디자인된 기능입니다.
+
+>[!NOTE]
+>
+>[타임워프는 론치와 함께 사용하여 미래를 미리 볼 수도 있습니다](/help/sites-cloud/authoring/launches/preview.md).
 
 컨텐츠 작성은 지속적인 공동 작업 프로세스이므로 타임워프는 컨텐츠 작성자가 컨텐츠가 변경된 방식을 파악하기 위해 시간에 따라 게시된 웹 사이트를 추적할 수 있도록 하는 데 목적이 있습니다. 이 기능은 페이지 버전을 사용하여 게시 환경의 상태를 확인합니다.
 
