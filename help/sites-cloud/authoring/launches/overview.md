@@ -2,10 +2,10 @@
 title: 론치
 description: 론치를 사용하여 향후 릴리스용 컨텐츠를 효율적으로 개발할 수 있습니다. 현재 페이지를 유지 관리하면서 나중에 게시할 수 있도록 변경할 수도 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 91%
+source-wordcount: '819'
+ht-degree: 90%
 
 ---
 
@@ -28,10 +28,12 @@ ht-degree: 91%
 * 다중 루트 분기용으로 만들 수도 있습니다. 전체 사이트용으로 론치를 만들 수는 있지만(그리고 거기에서 변경을 수행할 수는 있지만) 전체 사이트를 복사해야 하므로 터무니없는 일입니다. 수백 또는 수천 개의 페이지가 관련되어 있는 경우, 시스템 요구 사항과 성능이 복사 작업과 홍보에 필요한 향후의 비교 작업 모두에 영향을 받습니다.
 * 기존 론치에서 론치를 만들 수 있도록 중첩(론치 내 론치)할 수 있으므로, 작성자는 각 론치에 대해 동일한 변경을 여러 번 수행하지 않고 이미 수행된 변경 사항을 이용할 수 있습니다.
 
-This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
+이 섹션에서는 사이트 콘솔 또는 [론치 콘솔](#the-launches-console)에서 론치 페이지를 만들고, 편집하고, 홍보하는 방법(필요한 경우 [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch))에 대해 설명합니다.
 
 * [론치 만들기](/help/sites-cloud/authoring/launches/creating.md)
 * [론치 편집](/help/sites-cloud/authoring/launches/editing.md)
+* [론치 내 페이지 관리](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [타임워프를 사용하여 론치를 기반으로 컨텐츠 미리 보기](/help/sites-cloud/authoring/launches/preview.md)
 * [론치 홍보](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## 론치 - 이벤트 순서 {#launches-the-order-of-events}
@@ -78,7 +80,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>론치를 만들고 편집하려면 기본 그룹 `content-authors`과 같이 `/content/launches`에 대한 액세스 권한이 필요합니다.
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
@@ -88,7 +90,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**.
 
-* 또는 `https://<host>:<port>/libs/launches/content/launches.html`
+* 또는 `https://<host>:<port>/libs/launches/content/launches.html`과 직접
 
 ## 참조의 론치(사이트 콘솔) {#launches-in-references-sites-console}
 
