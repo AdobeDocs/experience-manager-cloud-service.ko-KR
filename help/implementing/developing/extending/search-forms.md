@@ -2,19 +2,19 @@
 title: 검색 양식 구성
 description: Adobe Experience Manager에 대한 검색 Forms을 Cloud Service으로 구성
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 15%
+source-wordcount: '2043'
+ht-degree: 16%
 
 ---
 
 
 # 검색 양식 구성 {#configuring-search-forms}
 
-Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘을 따릅니다.
+Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘과 함께 제공됩니다.
 
-이와 함께 컨텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 이러한 보류 중인 패싯은 **수정한 날짜**, **게시 상태**&#x200B;또는 **Livecopy 상태** 와 같은 사전 정의된패싯으로 필요한 리소스로 빠르게 드릴다운할 수 있도록 도와줍니다.
+이와 함께 컨텐츠를 필터링하는 데 도움이 되는 사전 정의된 옵션 세트도 있습니다. 이러한 보류는 필요한 리소스로 빠르게 드릴다운하는 데 도움이 되도록 **수정한 날짜**, **게시 상태** 또는 **Livecopy 상태**&#x200B;와 같은 사전 정의된 패싯을 포함합니다.
 
 ![검색 및 필터 사용](assets/csf-usage.png)
 
@@ -22,68 +22,55 @@ Cloud Service의 Adobe Experience Manager은 강력한 [검색](/help/sites-clou
 
 * [검색 및 필터](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* 자산 [브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (페이지 편집 시)
+* [자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)(페이지 편집 시)
 
 >[!NOTE]
 >
->기본 [컨텐츠 검색 및 인덱싱](/help/operations/indexing.md) 서비스를 구성할 수 있습니다.
+>기본 [콘텐츠 검색 및 인덱싱](/help/operations/indexing.md) 서비스를 구성할 수 있습니다.
 
-Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 이러한 패널을 사용자 정의하고 확장할 수 있습니다.
+**Forms 검색**&#x200B;을 사용하면 사용자의 특정 요구에 따라 이러한 패널을 사용자 정의하고 확장할 수 있습니다.
 
-검색 **Forms** 는 결합하고 정의할 수 있는 [예측](#predicates-and-their-settings) 기능을 기본적으로 제공합니다. 이러한 양식 [을 구성하기 위한 대화 상자는 다음을 통해 액세스할](#configuring-your-search-forms) 수 있습니다.
+**검색 Forms**&#x200B;에서는 결합하고 정의할 수 있는 [의 기본 선택 항목](#predicates-and-their-settings)을 제공합니다. 이러한 양식](#configuring-your-search-forms)을 구성하기 위한 [대화 상자는 다음을 통해 액세스할 수 있습니다.
 
 * **도구**
-
    * **일반**
-
       * **검색 양식**
 
 ## 기본 Forms {#default-forms}
 
-처음 Forms **검색** 콘솔에 액세스하면 모든 구성에 자물쇠 기호가 있음을 확인할 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 사용자 정의 및 저장했으면 잠금이 사라집니다. 사용자 지정된 구성을 [삭제하면 이](#deleting-a-configuration-to-reinstate-the-default)지표가 다시 나타납니다. 이 경우 기본(및 자물쇠 표시기)이 복원됩니다.
+먼저 **검색 Forms** 콘솔에 액세스하면 모든 구성에 자물쇠 기호가 있는 것을 확인할 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 사용자 정의 및 저장했으면 잠금이 사라집니다. 사용자 지정 구성](#deleting-a-configuration-to-reinstate-the-default)을 [삭제할 때 다시 나타납니다. 이 경우 기본값(및 자물쇠 표시기)이 복원됩니다.
 
 ![검색 양식 개요 구성](assets/csf-overview.png)
 
 사용 가능한 기본 구성(알파벳순 목록)은 다음과 같습니다.
 
-* **자산 관리자 검색 레일:**
-
-* **페이지 편집기(문서 검색):**
-
-* **페이지 편집기(경험 조각 검색):**
-
-* **페이지 편집기(이미지 검색):**
-
-* **페이지 편집기(원고 검색):**
-
-* **페이지 편집기(페이지 검색):**
-
-* **페이지 편집기(단락 검색):**
-
-* **페이지 편집기(제품 검색):**
-
-* **페이지 편집기(Scene7 검색)**:
-
-* **페이지 편집기(비디오 검색)**:
-
-* **프로젝트 관리자 검색 레일:**
-
-* **프로젝트 번역 검색 레일:**
-
-* **사이트 관리자 검색 레일**:
-
-* **코드 조각 관리자 검색 레일**:
-
-* **Stock 관리자 검색 레일**:
+* **자산 관리자 검색 레일**
+* **페이지 편집기(문서 검색)**
+* **페이지 편집기(경험 조각 검색)**
+* **페이지 편집기(이미지 검색)**
+* **페이지 편집기(원고 검색)**
+* **페이지 편집기(페이지 검색)**
+* **페이지 편집기(단락 검색)**
+* **페이지 편집기(제품 검색)**
+* **페이지 편집기(Scene7 검색)**
+* **페이지 편집기(비디오 검색)**
+* **프로젝트 관리자 검색 레일**
+* **프로젝트 번역 검색 레일**
+* **사이트 관리자 검색 레일**
+* **코드 조각 관리자 검색 레일**
+* **Stock 관리자 검색 레일**
+* **컨텐츠 조각 모델 검색 레일**
+* **프로젝트 관리자 검색 레일**
+* **프로젝트 번역 검색 레일**
 
 >[!NOTE]
 >
->자산 관련 검색 양식에 대한 자세한 내용은 [자산 - 검색 패싯을 참조하십시오.](/help/assets/search-facets.md)
+>자산 관련 검색 양식에 대한 자세한 내용은 [자산 - 검색 패싯](/help/assets/search-facets.md)을 참조하십시오.
 
 
-## 설명 및 설정 {#predicates-and-their-settings}
+## 예측 및 설정 {#predicates-and-their-settings}
 
-### 예측 {#predicates}
+### {#predicates} 예측
 
 구성에 따라 다음 예측자를 사용할 수 있습니다.
 
@@ -149,7 +136,7 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
   </tr>
   <tr>
    <td>구성 요소</td>
-   <td>작성자가 특정 구성 요소가 있는 페이지를 검색/필터링할 수 있습니다. For example an image gallery.<br /> </td>
+   <td>작성자가 특정 구성 요소가 있는 페이지를 검색/필터링할 수 있습니다. 예: 이미지 갤러리.<br /> </td>
    <td>
     <ul>
      <li>자리 표시자</li>
@@ -270,7 +257,7 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
   </tr>
   <tr>
    <td>옵션</td>
-   <td><p>옵션은 사용자가 만든 컨텐츠 노드입니다.</p> <p>자세한 <a href="#addinganoptionspredicate">내용은 옵션 설명</a> 추가를 참조하십시오.</p> </td>
+   <td><p>옵션은 사용자가 만든 컨텐츠 노드입니다.</p> <p>자세한 내용은 <a href="#addinganoptionspredicate">옵션 설명</a> 추가를 참조하십시오.</p> </td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -494,7 +481,7 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 >일반적인 검색 예측자는
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->이 정보는 참조용이므로 변경할 수 없습니다 `/libs`.
+>이 정보는 참조용이므로 `/libs`을 변경할 수 없습니다.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -521,9 +508,9 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 
 * **속성 이름**
 
-   검색할 속성입니다. 상대 경로를 사용하고 와일드카드는 노드를 기준으로 속성의 깊이를 `*/*/*` `jcr:content` 지정합니다(각 별표는 한 노드 수준을 나타냅니다).
+   검색할 속성입니다. 상대 경로를 사용하고 와일드카드 `*/*/*`는 `jcr:content` 노드에 상대적인 속성의 깊이를 지정합니다(각 별표는 하나의 노드 수준을 나타냅니다).
 
-   노드의 속성이 있는 리소스의 첫 번째 수준 하위 노드에서만 `x` `jcr:content` 검색하려는 경우 `*/jcr:content/x`
+   `jcr:content` 노드에서 `x` 속성이 있는 리소스의 첫 번째 수준 하위 노드에서만 검색하려면 `*/jcr:content/x`
 
 * **속성 깊이**
 
@@ -531,41 +518,44 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 
 * **속성 값**
 
-   절대 문자열 또는 표현식 언어로 된 속성 값예를 들어, `cq:Page` 또는
+   절대 문자열 또는 표현식 언어로 된 속성 값예를 들어 `cq:Page` 또는
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **범위 텍스트**
 
-   날짜 범위 설명 **에 있는 범위 필드의** 레이블입니다.
+   **날짜 범위** 조건자에 있는 범위 필드의 레이블입니다.
 
 * **옵션 경로**
 
-   술어 설정 탭에서 경로 브라우저를 사용하여 경로를 선택할 수 있습니다. After select the **+** icon is used to add the selection to the list of valid options (then the **-** icon to remove if required).
+   술어 설정 탭에서 경로 브라우저를 사용하여 경로를 선택할 수 있습니다. **+** 아이콘을 선택한 후 선택 사항을 유효한 옵션 목록에 추가합니다(필요한 경우 제거하려면 **-** 아이콘).
 
    옵션은 다음 구조를 갖는 사용자가 만든 컨텐츠 노드입니다.
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **옵션 노드 경로**&#x200B;와 
+* **옵션 노드**
+경로 
 **옵션 경로**. 공통 술어 필드에만 있고 다른 술어는 자산에 고유합니다.
 
-* **단일 선택**&#x200B;이 선택된 경우 옵션이 하나의 선택만 허용하는 확인란으로 렌더링됩니다. 실수로 선택한 경우 확인란을 선택 취소할 수 있습니다.
+* **단일**
+선택이 확인란을 선택하면 옵션이 하나의 선택만 허용하는 확인란으로 렌더링됩니다. 실수로 선택한 경우 확인란을 선택 취소할 수 있습니다.
 
-* **게시 및 Live Copy 속성 이름**&#x200B;사이트 특정 술어에 대한 게시 및 Live Copy 확인란의 레이블입니다.
+* **게시 및 Live Copy 속성 이름**
+사이트 특정 술어에 대한 게시 및 Live Copy 확인란의 레이블입니다.
 
-* &amp;ast;설정 **** 탭의 필드 레이블에는 필드가 필수이며 비워 두면 오류 메시지가 표시됩니다.
+* &amp;ast;**설정** 탭의 필드 레이블에는 필드가 필수이며 비워 두면 오류 메시지가 표시됩니다.
 
 ## 검색 Forms 구성 {#configuring-your-search-forms}
 
-### 사용자 지정된 구성 만들기/열기 {#creating-opening-a-customized-configuration}
+### 사용자 지정된 구성 {#creating-opening-a-customized-configuration} 만들기/열기
 
-1. 도구, **일반**, **검색 Forms**&#x200B;로 **이동합니다**.
+1. **도구**, **일반**, **Forms 검색**&#x200B;으로 이동합니다.
 
 1. 사용자 정의할 구성을 선택합니다.
-1. 편집 **** 아이콘을 사용하여 업데이트를 위한 구성을 엽니다.
-1. 새로운 사용자 지정 기능을 사용할 경우 새 설명 필드를 [추가하고 필요에 따라 설정을](#add-edit-a-predicate-field-and-define-field-settings) 정의할 수 있습니다. 기존 사용자 지정 시 기존 필드를 선택하고 설정을 [업데이트할 수 있습니다](#add-edit-a-predicate-field-and-define-field-settings).
-1. Select **Done** to save the configuration. 구성은 다음에 볼 수 있습니다.
+1. **편집** 아이콘을 사용하여 업데이트를 위한 구성을 엽니다.
+1. 새 사용자 지정을 사용하는 경우 [새 설명 필드를 추가하고 필요에 따라 설정](#add-edit-a-predicate-field-and-define-field-settings)을 정의할 수 있습니다. 기존 사용자 지정 시 기존 필드를 선택하고 [설정](#add-edit-a-predicate-field-and-define-field-settings)을 업데이트할 수 있습니다.
+1. **완료**&#x200B;를 선택하여 구성을 저장합니다. 구성은 다음에 볼 수 있습니다.
 
    >[!NOTE]
    >
@@ -579,8 +569,8 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 
 필드를 추가하거나 편집하고 설정을 정의/업데이트할 수 있습니다.
 
-1. [업데이트할 사용자 지정된 구성을](#creating-opening-a-customized-configuration) 엽니다.
-1. 새 필드를 추가하려면 설명 선택 탭 **을** 열고 필요한 술어를 필요한 위치로 드래그합니다. 예를 들어 날짜 범위 **설명**:
+1. [업데이트할 사용자 지정된 ](#creating-opening-a-customized-configuration) 구성을 엽니다.
+1. 새 필드를 추가하려면 **설명 선택** 탭을 열고 필요한 조건자를 필요한 위치로 드래그합니다. 예: **날짜 범위 설명**:
 
    ![설명 추가](assets/csf-add-predicate.png)
 
@@ -588,16 +578,16 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 
    * 새 필드를 추가하고 있습니다.
 
-      조건자를 추가하면 **설정** 탭이 열리고 정의할 수 있는 속성이 표시됩니다.
+      조건자를 추가한 후 **설정** 탭이 열리고 정의할 수 있는 속성이 표시됩니다.
 
    * 기존 조건자를 업데이트하려는 경우:
 
-      설명 필드(오른쪽)를 선택한 다음 설정 **탭을** 엽니다.
-   예를 들어 날짜 범위 설명 **에 대한 설정은 다음과 같습니다**.
+      설명 필드(오른쪽)를 선택한 다음 **설정** 탭을 엽니다.
+   예를 들어 **날짜 범위 설명**&#x200B;에 대한 설정
 
    ![설명 수정](assets/csf-modify-predicate.png)
 
-1. 필요에 따라 변경하고 완료를 **확인합니다**. 구성은 다음에 볼 수 있습니다.
+1. 필요에 따라 변경하고 **Done**&#x200B;으로 확인합니다. 구성은 다음에 볼 수 있습니다.
 
 ### 검색 구성 미리 보기 {#previewing-the-search-configuration}
 
@@ -609,18 +599,18 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 
    ![미리 보기 양식](assets/csf-preview-form.png)
 
-1. **미리 보기를 닫아서** 구성을 다시 시작하고 완료합니다.
+1. **미리** 보기를 닫아서 구성을 다시 시작하고 완료합니다.
 
 ### 설명 필드 삭제 {#deleting-a-predicate-field}
 
-1. [업데이트할 사용자 지정된 구성을](#creating-opening-a-customized-configuration) 엽니다.
+1. [업데이트할 사용자 지정된 ](#creating-opening-a-customized-configuration) 구성을 엽니다.
 1. 설명 필드(오른쪽)를 선택하고 **설정** 탭을 연 다음 **삭제** 아이콘(왼쪽 아래)을 선택합니다.
 
    ![삭제 아이콘](assets/csf-delete-icon.png)
 
 1. 대화 상자가 삭제 작업의 확인을 요청합니다.
 
-1. 완료를 사용하여 이 및 기타 모든 변경 사항을 **확인합니다**.
+1. **Done**&#x200B;으로 이 내용과 다른 변경 사항을 확인합니다.
 
 ### 구성 삭제(기본값 복원) {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -638,7 +628,7 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 
 1. 사용자 지정된 구성이 삭제되고 기본 복원됩니다(콘솔에 자물쇠 기호가 다시 표시됨).
 
-### 옵션 설명 추가 {#adding-options-predicates}
+### 옵션 추가 시 {#adding-options-predicates} 예측
 
 옵션 설명(옵션, 옵션 속성)을 사용하면 검색할 항목을 구성할 수 있습니다. 일반적으로 페이지 바로 아래에서 항목을 검색하는 데 사용됩니다.예를 들어 페이지 노드의 속성입니다.
 
@@ -657,20 +647,20 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
 
    >[!NOTE]
    >
-   >경로 ***에서 어떤 것도 변경하지*** 않아야 `/libs` 합니다.
+   >***은(는) `/libs` 경로에서 아무 것도 변경하지 않아야 합니다.***
    >
-   >이는 다음에 인스턴스를 업그레이드할 때 `/libs` 의 컨텐츠를 덮어쓰고, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있기 때문입니다.
+   >이는 다음 번에 인스턴스를 업그레이드할 때 `/libs`의 콘텐트가 덮어쓰기되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓰기 될 수 있음).
    >
    >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
    >
-   >1. 에 있는 것처럼 아래 `/libs`에서 필요한 항목을 다시 만듭니다 `/apps`. 이 경우:
+   >1. 필요한 항목은 `/libs`의 `/apps`에 존재하므로 다시 만듭니다. 이 경우:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Make any changes within `/apps.`
+   >1. `/apps.` 내에서 변경
 
 
-1. Forms **검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예: **사이트 관리자 검색 레일**. 그런 다음 **편집을 선택합니다**.
+1. **Forms 검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예: **사이트 관리자 검색 레일**. 그런 다음 **편집**&#x200B;을 선택합니다.
 
-1. 구성에 따라 구성에 **옵션** 또는 **옵션 속성** 을 추가합니다.
+1. 구성에 따라 구성에 **Options** 또는 **Options 속성**&#x200B;을 추가합니다.
 1. 특히 필드를 업데이트합니다.
 
    * **속성 이름**
@@ -686,8 +676,8 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![옵션 설명](assets/csf-options-predicate-02.png)
 
-1. Select **Done** to save your configuration.
-1. 적절한 콘솔(이 예: **사이트**)으로 이동하고 **검색 - 필터** 레일을엽니다. 새롭게 정의된 검색 양식과 다양한 옵션이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 확인합니다.
+1. **완료**&#x200B;를 선택하여 구성을 저장합니다.
+1. 해당 콘솔(이 예: **사이트**)으로 이동하고 **검색 - 필터** 레일을 엽니다. 새롭게 정의된 검색 양식과 다양한 옵션이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 확인합니다.
 
    ![사용 중인 옵션](assets/csf-options-usage.png)
 
@@ -706,15 +696,15 @@ Forms **검색**&#x200B;기능을 사용하면 특정 요구 사항에 따라 �
  <tbody>
   <tr>
    <td>편집 </td>
-   <td>읽기, <code>/apps </code>노드에 대한 쓰기 권한</td>
+   <td>읽기, <code>/apps </code>노드에 대한 쓰기 권한.</td>
   </tr>
   <tr>
    <td>삭제</td>
-   <td>노드에서 읽기, 쓰기, 삭제 권한 <code>/apps</code></td>
+   <td><code>/apps</code> 노드에서 읽기, 쓰기, 삭제 권한</td>
   </tr>
   <tr>
    <td>미리 보기</td>
-   <td>노드에서 읽기, 쓰기, 삭제 권한을 <code>/var/dam/content</code> 참조하십시오.<br /> 노드에 대한 읽기, 쓰기 권한 <code>/apps</code> .</td>
+   <td><code>/var/dam/content</code> 노드에서 읽기, 쓰기, 삭제 권한을 수행합니다.<br /> 읽기,  <code>/apps</code> 노드에 대한 쓰기 권한</td>
   </tr>
  </tbody>
 </table>
