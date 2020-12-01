@@ -2,39 +2,77 @@
 title: 컨텐츠 조각을 사용한 작업
 description: Adobe Experience Manager(AEM)에서 Cloud Service으로 컨텐츠 조각을 사용하여 페이지에 영향을 받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
+source-git-commit: 468d6f6a87c9a4794d5187146f7d879433cafa6f
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 88%
+source-wordcount: '1997'
+ht-degree: 77%
 
 ---
 
 
 # 컨텐츠 조각을 사용한 작업{#working-with-content-fragments}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
+<!--
+>[!CAUTION]
+>
+>Certain features for Content Fragments will be released in early 2021.
+>
+>The related documentation is already available for preview purposes.
+>
+>Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
+-->
+
+>[!CAUTION]
+>
+>컨텐츠 조각 전달용 AEM GraphQL API는 2021년 초에 릴리스됩니다.
+>
+>관련 문서는 미리 보기 목적으로 이미 사용 가능합니다.
+
+Adobe Experience Manager(AEM)을 Cloud Service으로 사용하면 컨텐츠 조각을 통해 페이지에 영향을 받지 않는 컨텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md)를 디자인, 제작, 조정 및 게시할 수 있습니다. [ 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
 
 콘텐츠 조각에 구조화된 콘텐츠 포함:
 
-* 결과 조각의 구조를 미리 정의하는 [컨텐츠 조각](/help/assets/content-fragments/content-fragments-models.md)모델을 기반으로 합니다.
+* 결과 조각에 대한 구조를 미리 정의하는 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)을 기반으로 합니다.
+* 구조는 다음 범위 사이에 있습니다.
+   * 기본
+      * 예를 들어, 여러 줄로 된 단일 텍스트 필드
+      * 페이지 작성에서 사용할 간단한 컨텐츠를 준비하는 데 사용할 수 있습니다.
+   * Complex
+      * 텍스트, 숫자, 부울, 데이터 및 시간을 비롯한 다양한 데이터 유형의 여러 필드를 조합합니다.
+      * 페이지 작성을 위해 보다 구조화된 컨텐츠를 준비하거나 애플리케이션에 전달할 때 사용할 수 있습니다.
+
+<!--
+  * Nested
+    * The reference data types available allow you to nest your content.
+    * Tends to be used for delivery to your application.
+-->
 
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 컨텐츠 조각을 JSON 형식으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
 * 구성 요소를 사용하여 게재할 조각의 요소를 관리할 수 있습니다.
 * API 게재에 사용되는 페이지에서 여러 컨텐츠 조각 핵심 구성 요소를 추가하여 벌크 게재를 수행할 수 있습니다.
 
-이 페이지와 다음 페이지에서는 컨텐츠 조각을 생성, 구성 및 유지 관리하는 작업을 다룹니다.
+이 페이지와 다음 페이지에서는 컨텐츠 조각을 생성, 구성, 유지 관리 및 사용하는 작업을 다룹니다.
 
-* [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) - 컨텐츠 조각 만든 후 편집, 게시 및 참조
+* [인스턴스에 대한 컨텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) - 모델 활성화, 생성 및 정의
+* [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) - 컨텐츠 조각 만든 후 편집, 게시 및 참조
 * [변형 - 조각 컨텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md) - 조각 컨텐츠를 작성 및 마스터의 변형 만들기
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - 조각에 Markdown 구문 사용
 * [관련 컨텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md) - 관련 컨텐츠 추가
 * [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
+* GraphQL과 함께 [콘텐츠 조각을 사용하여 응용 프로그램에서 사용할 내용](/help/assets/content-fragments/content-fragments-graphql.md)을 제공하십시오. 이를 돕기 위해 [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md)을 미리 볼 수 있습니다.
 
 >[!NOTE]
 >
->이 페이지들은 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)과 함께 읽어야 합니다.
+>이러한 페이지는 다음과 함께 읽을 수 있습니다.
+>
+>* [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [컨텐츠 조각 사용자 지정 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
+>* [컨텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [AEM Assets HTTP API의 컨텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [컨텐츠 조각에 사용할 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 
 통신 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
@@ -51,7 +89,23 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * 특정 채널에 맞는 컨텐츠 변형을 디자인할 수 있습니다.
 * 자산(혼합 미디어 조각)을 삽입하여 텍스트에 이미지를 추가합니다.
 
+<!--
+* Create nested content to reflect the complexity of your data.
+-->
+
 그런 다음 이러한 컨텐츠 조각을 취합하여 다양한 채널에서 경험을 제공할 수 있습니다.
+
+>[!NOTE]
+>
+>**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
+>* **컨텐츠** 조각은 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있는 편집 컨텐츠입니다. 정의 및 구조가 있지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 순수 컨텐츠입니다.
+>* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
+
+>
+>
+경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
+>
+>자세한 내용은 [AEM의 컨텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)를 참조하십시오.
 
 ## 컨텐츠 조각 및 컨텐츠 서비스 {#content-fragments-and-content-services}
 
@@ -71,15 +125,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 >[!NOTE]
 >
->**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
->* **컨텐츠 조각은** 편집 컨텐츠로 텍스트, 번호, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 정의 및 구조가 있지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 순수 컨텐츠입니다.
->* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
-
->
->
-경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
->
->자세한 내용은 [AEM의 컨텐츠 조각 및 경험 조각 이해](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)를 참조하십시오.
+>AEM Sites에 대한 Cloud Service의 헤드리스 개발 소개를 보려면 [헤드리스 및 AEM](/help/implementing/developing/headless/introduction.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -103,6 +149,8 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 * [컨텐츠 조각 구성 요소(참조 구성 요소)를 통해 페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 사용됩니다.
 
    * **컨텐츠 조각** 구성 요소는 페이지 작성자가 사용할 수 있습니다. 따라서 페이지 작성자가 HTML 또는 JSON 형식으로 필요한 컨텐츠 조각을 참조하고 게재할 수 있습니다.
+
+* [AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)를 사용하여 액세스할 수 있습니다.
 
 컨텐츠 조각은 다음과 같은 컨텐츠 구조입니다.
 
@@ -170,13 +218,13 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
    * 여러 줄 텍스트 요소(임의의 조각 유형)에만 추가할 수 있습니다.
    * 선행하는 텍스트(단락)에 첨부됩니다.
 
-   >[!CAUTION]
-   >
-   >일반 텍스트 형식으로 전환하여 실수로 조각에서 제거할 수 있습니다.
+      >[!CAUTION]
+      >
+      >실수로 일반 텍스트 형식으로 전환하여 조각에서 자산을 제거할 수 있습니다.
 
-   >[!NOTE]
-   >
-   >자산은 페이지에서 조각을 사용할 때 [추가적인(중간적) 컨텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)로도 추가할 수 있습니다. 이때 자산은 관련 컨텐츠를 사용하거나 자산 브라우저의 자산을 사용합니다.
+      >[!NOTE]
+      >
+      >자산은 페이지에서 조각을 사용할 때 [추가적인(중간적) 컨텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)로도 추가할 수 있습니다. 이때 자산은 관련 컨텐츠를 사용하거나 자산 브라우저의 자산을 사용합니다.
 
 * **관련 컨텐츠**
 
@@ -239,17 +287,20 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 ### 조각에 필요 {#required-by-fragments}
 
-컨텐츠 조각을 만들고 편집하고 사용하려면 다음 사항이 필요합니다.
+필요한 컨텐츠 조각을 만들려면:
 
 * **컨텐츠 모델**
 
-   * [활성화한 후 도구를 사용하여 만듭니다](/help/assets/content-fragments/content-fragments-models.md).
-   * Required to [create a fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
+   * 구성 브라우저](/help/assets/content-fragments/content-fragments-configuration-browser.md)을(를) 사용하여 [이(가) 활성화되었습니다.
+   * [은 도구](/help/assets/content-fragments/content-fragments-models.md)를 사용하여 만들어졌습니다.
+   * [조각](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)을(를) 만들어야 합니다.
    * 조각(제목, 컨텐츠 요소, 태그 정의)의 구조를 정의합니다.
-   * 컨텐츠 모델 정의는 제목과 하나의 데이터 요소를 필요로 합니다. 그 외의 모든 것은 선택 사항입니다.
+   * 콘텐츠 모델 정의에 제목 및 데이터 요소가 있어야 합니다.그 외의 모든 것은 선택 사항입니다.
    * 모델은 기본 컨텐트를 정의할 수 있습니다(해당되는 경우).
    * 작성자는 조각 컨텐츠를 작성할 때 정의된 구조를 변경할 수 없습니다.
    * 종속 컨텐츠 조각을 만든 후 모델에 대한 변경 사항은 해당 컨텐츠 조각에 영향을 줄 수 있습니다.
+
+페이지 작성에 컨텐츠 조각을 사용하려면 다음을 수행해야 합니다.
 
 * **컨텐츠 조각 구성 요소**
 
@@ -265,6 +316,6 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 ### WKND 샘플 {#wknd-sample}
 
-WKND [사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 샘플은 AEM에 대해 Cloud Service으로 배우는 데 도움이 됩니다. 여기에는 샘플 조각이 포함되어 있으며 다음과 같이 볼 수 있습니다.
+AEM에 대한 Cloud Service의 학습에 도움이 되도록 [WKND 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 샘플이 제공됩니다. 여기에는 샘플 조각이 포함되어 있으며 다음과 같이 볼 수 있습니다.
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
