@@ -2,10 +2,10 @@
 title: 관련 컨텐츠
 description: 연관된 컨텐츠는 조각이 컨텐츠 페이지에 추가될 때 자산을 조각과 함께 (필요에 따라) 사용할 수 있도록 연결을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 96%
+source-wordcount: '227'
+ht-degree: 81%
 
 ---
 
@@ -26,14 +26,18 @@ ht-degree: 96%
 
    ![관련 컨텐츠](assets/cfm-assoc-content-01.png)
 
-2. **컨텐츠 연결** 또는 **컬렉션 연결**&#x200B;을 선택합니다(컬렉션이 이미 연결되어 있는지 여부에 따라 적절하게).
-3. 필요한 컬렉션을 선택합니다.
+1. 컬렉션이 이미 연결되어 있는지 여부에 따라 다음 중 하나를 선택합니다.
+
+   * **콘텐츠**  연결 - 이 컬렉션은
+   * **컬렉션**  연결 - 관련 컬렉션이 이미 구성되었습니다.
+
+1. 필요한 컬렉션을 선택합니다.
 
    원할 경우 선택한 컬렉션에 조각 자체를 추가할 수도 있습니다. 이렇게 하면 추적에 유용합니다.
 
    ![컬렉션 선택](assets/cfm-assoc-content-02.png)
 
-4. 확인합니다(확인 표시 사용). 컬렉션이 연결된 것으로 표시됩니다.
+1. 확인(**선택**&#x200B;으로) 컬렉션이 연결된 것으로 표시됩니다.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
