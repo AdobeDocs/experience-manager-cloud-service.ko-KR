@@ -5,10 +5,10 @@ breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
+source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 79%
+source-wordcount: '471'
+ht-degree: 73%
 
 ---
 
@@ -55,6 +55,8 @@ ht-degree: 79%
    + [검색 패싯](search-facets.md)
    + [자산 HTTP API](mac-api-assets.md)
    + [ Assets HTTP API의 컨텐츠 조각 지원](content-fragments/assets-api-content-fragments.md)
+   + [컨텐츠 조각용 AEM GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [컨텐츠 조각이 있는 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [연결된 자산](use-assets-across-connected-assets-instances.md)
    + [자산 보고서](asset-reports.md)
    + [계단식 메타데이터](cascading-metadata.md)
@@ -66,13 +68,17 @@ ht-degree: 79%
    + [에셋 게시 대상 [!DNL Brand Portal]](publish-to-brand-portal.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
+   + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 전달](content-fragments/content-fragments-graphql.md)
    + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
+   + [인스턴스에 대한 컨텐츠 조각 기능 활성화](content-fragments/content-fragments-configuration-browser.md)
    + [콘텐츠 조각 모델](content-fragments/content-fragments-models.md)
    + [변형 - 조각 콘텐츠 작성](content-fragments/content-fragments-variations.md)
    + [콘텐츠 조각 관련 콘텐츠](content-fragments/content-fragments-assoc-content.md)
    + [메타데이터 - 조각 속성](content-fragments/content-fragments-metadata.md)
    + [콘텐츠 조각 - 삭제 고려 사항](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [미리 보기 - JSON 표현](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Experience League의 Dynamic Media 뉴스레터](dynamic-media/dynamic-media-newsletter.md)
    + [Dynamic Media 설정](dynamic-media/administering-dynamic-media.md)
