@@ -5,9 +5,9 @@ breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
+source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '436'
 ht-degree: 79%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 79%
    + [Dynamic Media 작업](dynamic-media/dynamic-media.md)
    + [Dynamic Media 구성](dynamic-media/config-dm.md)
    + [Dynamic Media 문제 해결](dynamic-media/troubleshoot-dm.md)
+   + [다이내믹 미디어의 접근성](dynamic-media/accessibility-dm.md)
    + [Dynamic Media 자산 관리](dynamic-media/managing-assets.md)
    + [이미지 품질 최적화 우수 사례](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [파일 관리 우수 사례](dynamic-media/best-practices-for-file-management.md)
