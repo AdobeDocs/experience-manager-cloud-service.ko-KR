@@ -5,15 +5,15 @@ breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '432'
 ht-degree: 79%
 
 ---
 
 
-# [!DNL Assets] 가이드 {#assets}
+# [!DNL Assets] 가이드  {#assets}
 
 + [[!DNL Assets] cloud service](/help/assets/home.md)
 + [개요 및 새로운 기능](overview.md)
@@ -46,7 +46,7 @@ ht-degree: 79%
    + [편집할 자산 체크인 및 체크아웃](check-out-and-submit-assets.md)
    + [자산에 대한 디지털 권한 관리](drm.md)
    + [워터마크 에셋](watermark-assets.md)
-+ Configure, administer and extend [!DNL Assets] {#admin}
++ [!DNL Assets] {#admin} 구성, 관리 및 확장
    + [개발자 문서 및 API 참조](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [이미지 및 비디오 프로파일 사용](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -62,7 +62,7 @@ ht-degree: 79%
    + [MediaLibrary 기능](medialibrary.md)
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
 + 자산 공유 및 분배 {#brand-portal}
-   + [구성 [!DNL Assets] 방법 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [구성  [!DNL Assets] 방법 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [에셋 게시 대상 [!DNL Brand Portal]](publish-to-brand-portal.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
@@ -82,12 +82,15 @@ ht-degree: 79%
    + [Dynamic Media 자산 관리](dynamic-media/managing-assets.md)
    + [이미지 품질 최적화 우수 사례](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [파일 관리 우수 사례](dynamic-media/best-practices-for-file-management.md)
-   + [Dynamic Media 뷰어 사전 설정 관리](dynamic-media/managing-viewer-presets.md)
-   + [Dynamic Media 뷰어 사전 설정 적용](dynamic-media/viewer-presets.md)
-   + [Dynamic Media 이미지 사전 설정 관리](dynamic-media/managing-image-presets.md)
-   + [Dynamic Media 이미지 사전 설정 적용](dynamic-media/image-presets.md)
    + [이미지 프로필](dynamic-media/image-profiles.md)
    + [비디오 프로필](dynamic-media/video-profiles.md)
+   + [Dynamic Media 이미지 사전 설정 관리](dynamic-media/managing-image-presets.md)
+   + [Dynamic Media 이미지 사전 설정 적용](dynamic-media/image-presets.md)
+   + [Dynamic Media 뷰어 사전 설정 관리](dynamic-media/managing-viewer-presets.md)
+   + [Dynamic Media 뷰어 사전 설정 적용](dynamic-media/viewer-presets.md)
+   + [일괄처리 집합 사전 설정](dynamic-media/batch-set-presets-dm.md)
+   + [다이내믹 미디어를 통해 CDN 캐시 무효화](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Dynamic Media Classic을 통해 CDN 캐시 무효화](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [스마트 이미징](dynamic-media/imaging-faq.md)
    + [Dynamic Media 자산 제공](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 79%
    + [규칙 세트를 사용하여 URL 변환](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Dynamic Media에서 선택적 게시 사용](dynamic-media/selective-publishing.md)
-   + [다이내믹 미디어를 통해 CDN 캐시 무효화](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Dynamic Media Classic을 통해 CDN 캐시 무효화](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [선택기를 사용한 작업](dynamic-media/working-with-selectors.md)
    + [DHTML 뷰어 지원 중단 FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 뷰어 지원 중단 알림](dynamic-media/flash-viewers-eol.md)
