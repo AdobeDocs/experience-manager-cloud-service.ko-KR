@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
+source-git-commit: 09b23185663164ffa5a6066b67f8f1fb74872cde
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 81%
+source-wordcount: '546'
+ht-degree: 72%
 
 ---
 
@@ -36,54 +36,79 @@ ht-degree: 81%
    + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service 개발 지침](developing/introduction/development-guidelines.md)
-   + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM UI 구조](developing/introduction/ui-structure.md)
-   + [Sling 커닝 페이퍼](developing/introduction/sling-cheatsheet.md)
-   + [Sling 어댑터 사용](developing/introduction/sling-adapters.md)
-   + [AEM as a Cloud Service에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
-   + [AEM as a Cloud Service에서 오버레이](developing/introduction/overlays.md)
-   + [클라이언트측 라이브러리 사용](developing/introduction/clientlibs.md)
-   + [구성 및 구성 브라우저](developing/introduction/configurations.md)
    + [로깅](developing/introduction/logging.md)
-   + [페이지 비교](/help/implementing/developing/introduction/page-diff.md)
-   + [편집기 제한 사항](/help/implementing/developing/introduction/editor-limitations.md)
-   + [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md)
-   + [AEM 태깅 프레임워크](/help/implementing/developing/introduction/tagging-framework.md)
-   + [AEM 애플리케이션에 Tagging 작성](/help/implementing/developing/introduction/tagging-applications.md)
+   + [구성 및 구성 브라우저](developing/introduction/configurations.md)
    + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
+   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + 전체 스택 AEM 개발 {#full-stack}
+      + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
+      + [AEM UI 구조](developing/introduction/ui-structure.md)
+      + [Sling 커닝 페이퍼](developing/introduction/sling-cheatsheet.md)
+      + [Sling 어댑터 사용](developing/introduction/sling-adapters.md)
+      + [AEM as a Cloud Service에서 Sling 리소스 합병 사용](developing/introduction/sling-resource-merger.md)
+      + [AEM as a Cloud Service에서 오버레이](developing/introduction/overlays.md)
+      + [클라이언트측 라이브러리 사용](developing/introduction/clientlibs.md)
+      + [페이지 비교](/help/implementing/developing/introduction/page-diff.md)
+      + [편집기 제한 사항](/help/implementing/developing/introduction/editor-limitations.md)
+      + [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md)
+      + 구성 요소 및 템플릿 {#components-templates}
+         + [구성 요소 개요](developing/components/overview.md)
+         + [템플릿](developing/components/templates.md)
+         + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
+         + [스타일 시스템](/help/sites-cloud/authoring/features/style-system.md)
+         + [컨텐츠 서비스용 JSON 익스포터](developing/components/json-exporter.md)
+         + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
+         + [이미지 편집기](developing/components/image-editor.md)
+         + [데코레이션 태그](developing/components/decoration-tag.md)
+         + [숨기기 조건 사용](developing/components/hide-conditions.md)
+      + [AEM 태깅 프레임워크](/help/implementing/developing/introduction/tagging-framework.md)
+      + [AEM 애플리케이션에 Tagging 작성](/help/implementing/developing/introduction/tagging-applications.md)
+   + 하이브리드 AEM 개발 {#hybrid}
+      + [AEM이 설치된 하이브리드 및 SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
+      + [SPA 소개 및 연습](developing/hybrid/introduction.md)
+      + [SPA WKND 자습서](developing/hybrid/wknd-tutorial.md)
+      + [반응 사용 시작](developing/hybrid/getting-started-react.md)
+      + [각진 사용 시작](developing/hybrid/getting-started-angular.md)
+      + [SPA 깊이 들어가기](developing/hybrid/deep-dives.md)
+      + [AEM용 SPA 개발](developing/hybrid/developing.md)
+      + [SPA 편집기 개요](developing/hybrid/editor-overview.md)
+      + [SPA 블루프린트](developing/hybrid/blueprint.md)
+      + [SPA 페이지 구성 요소](developing/hybrid/page-component.md)
+      + [동적 모델을 구성 요소 매핑으로](developing/hybrid/model-to-component-mapping.md)
+      + [모델 라우팅](developing/hybrid/routing.md)
+      + [통합 실행](developing/hybrid/launch-integration.md)
+      + [서버측 렌더링](developing/hybrid/ssr.md)
+      + [SPA 참조 문서](developing/hybrid/reference-materials.md)
+   + 헤드리스 환경 관리 {#headless}
+      + [헤드리스 및 AEM](developing/headless/introduction.md)
+      + 시작 안내서 {#getting-started}
+         + [구성 만들기](developing/headless/getting-started/create-configuration.md)
+         + [컨텐츠 조각 모델 만들기](developing/headless/getting-started/create-content-model.md)
+         + [자산 폴더 만들기](developing/headless/getting-started/create-assets-folder.md)
+         + [컨텐츠 조각 만들기](developing/headless/getting-started/create-content-fragment.md)
+         + [컨텐츠 조각 액세스 및 제공](developing/headless/getting-started/create-api-request.md)
+      + 콘텐츠 조각 {#content-fragments}
+         + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 전달](/help/assets/content-fragments/content-fragments-graphql.md)
+         + [콘텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
+         + [인스턴스에 대한 컨텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+         + [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+         + [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
+         + [변형 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
+         + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
+         + [관련 컨텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md)
+         + [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md)
+         + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
+         + [미리 보기 - JSON 표현](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + 배달 API {#delivery-api}
+         + [콘텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
+         + [컨텐츠 조각 그래프QL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+         + [컨텐츠 조각이 있는 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + 개발자 도구 {#developer-tools}
    + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite 사용](/help/implementing/developing/tools/crxde.md)
-+ 구성 요소 및 템플릿 {#components-templates}
-   + [구성 요소 개요](developing/components/overview.md)
-   + [템플릿](developing/components/templates.md)
-   + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-   + [스타일 시스템](/help/sites-cloud/authoring/features/style-system.md)
-   + [컨텐츠 서비스용 JSON 익스포터](developing/components/json-exporter.md)
-   + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
-   + [이미지 편집기](developing/components/image-editor.md)
-   + [데코레이션 태그](developing/components/decoration-tag.md)
-   + [숨기기 조건 사용](developing/components/hide-conditions.md)
-+ 헤드리스 환경 관리 {#headless}
-   + [AEM을 사용한 헤드리스 및 하이브리드](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
-   + SPA(Single Page Applications){#spa}
-      + [SPA 소개 및 연습](developing/spa/introduction.md)
-      + [SPA WKND 자습서](developing/spa/wknd-tutorial.md)
-      + [반응 사용 시작](developing/spa/getting-started-react.md)
-      + [각진 사용 시작](developing/spa/getting-started-angular.md)
-      + [SPA 깊이 들어가기](developing/spa/deep-dives.md)
-      + [AEM용 SPA 개발](developing/spa/developing.md)
-      + [SPA 편집기 개요](developing/spa/editor-overview.md)
-      + [SPA 블루프린트](developing/spa/blueprint.md)
-      + [SPA 페이지 구성 요소](developing/spa/page-component.md)
-      + [동적 모델을 구성 요소 매핑으로](developing/spa/model-to-component-mapping.md)
-      + [모델 라우팅](developing/spa/routing.md)
-      + [통합 실행](developing/spa/launch-integration.md)
-      + [서버측 렌더링](developing/spa/ssr.md)
-      + [SPA 참조 문서](developing/spa/reference-materials.md)
 + 개인화 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub 구성](developing/personalization/configuring-contexthub.md)
