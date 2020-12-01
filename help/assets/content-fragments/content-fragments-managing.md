@@ -2,21 +2,41 @@
 title: 컨텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
 translation-type: tm+mt
-source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
+source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 97%
+source-wordcount: '1473'
+ht-degree: 94%
 
 ---
 
 
 # 컨텐츠 조각 관리{#managing-content-fragments}
 
+<!--
+>[!CAUTION]
+>
+>Certain features for Content Fragments will be released in early 2021.
+>
+>The related documentation is already available for preview purposes.
+>
+>Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
+-->
+
+>[!CAUTION]
+>
+>컨텐츠 조각 전달용 AEM GraphQL API는 2021년 초에 릴리스됩니다.
+>
+>관련 문서는 미리 보기 목적으로 이미 사용 가능합니다.
+
 컨텐츠 조각은 **자산**&#x200B;으로 저장되므로 **자산** 콘솔에서 주로 관리됩니다.
 
 >[!NOTE]
 >
->그런 다음 컨텐츠 조각을 작성 페이지에 사용합니다. [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)을 참조하십시오.
+>컨텐츠 조각을 사용할 수 있습니다.
+>
+>* 페이지를 작성할 때;[컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)을 참조하십시오.
+>* for [GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)의 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달에 사용됩니다.
+
 
 ## 컨텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -32,7 +52,7 @@ ht-degree: 97%
 2. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
 3. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
-   * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 생성하는 데 사용됩니다.예: **Adventure** model
+   * [모델](/help/assets/content-fragments/content-fragments-models.md)  - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다.예를 들어  **** 모험가들
 
       * 사용 가능한 모든 모델이 표시됩니다.
 
@@ -75,6 +95,7 @@ ht-degree: 97%
 
 조각을 선택하여 적용 가능한 작업이 있는 도구 모음을 표시합니다.
 
+* **자산 재처리**
 * **만들기**
 * **다운로드**
 
@@ -89,17 +110,12 @@ ht-degree: 97%
 
    * 요소, 변형, 관련 컨텐츠 및 메타데이터와 함께 [컨텐츠를 편집할 조각을 열](/help/assets/content-fragments/content-fragments-variations.md) 수 있습니다.
 
-* **태그 관리**
-* **대상 컬렉션**
-
-   * 컬렉션에 조각을 추가합니다.
-   * [컬렉션을 조각과 연결](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content)할 때도 이 작업을 수행할 수 있습니다.
-
-* **복사**/**붙여넣기**
-
-* **이동**
 * **빠른 게시**
 * **게시 관리**
+* **태그 관리**
+* **대상 컬렉션**
+* **복사** (및  **붙여넣기**)
+* **이동**
 * **삭제**
 
 >[!NOTE]
@@ -141,6 +157,8 @@ ht-degree: 97%
    * [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [관련 컨텐츠](#associating-content-with-your-fragment)
    * [메타데이터](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   * [미리 보기](/help/assets/content-fragments/content-fragments-json-preview.md)
 
    ![모드](assets/cfm-managing-04.png)
 
@@ -164,7 +182,7 @@ ht-degree: 97%
 
    >[!CAUTION]
    >
-   >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
+   >컨텐츠 조각을 편집하려면 해당 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 필요합니다. [ 문제가 발생하면 시스템 관리자에게 문의하십시오.
 
    >[!NOTE]
    >
