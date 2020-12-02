@@ -2,9 +2,9 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -178,10 +178,6 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 중지]:활성 구성을 종료합니다.
    * [!UICONTROL 작업 상태]:진행 중인 가져오기 작업에 사용되거나 완료된 작업에 사용될 때 구성 상태를 확인합니다.
    * [!UICONTROL 자산 보기]:대상 폴더가 있는 경우 대상 폴더를 봅니다.
-
->[!NOTE]
->
->[!DNL Experience Manager]으로 설정하고 배포할 때 다른 시스템에서 컨텐츠 마이그레이션의 일부로 일괄 업로드하려면 도구의 신중한 계획, 고려 사항 및 선택이 필요합니다. 콘텐츠 마이그레이션 접근 방법에 대한 지침은 [배포 안내서](/help/implementing/deploying/overview.md)를 참조하십시오.
 
 ## 데스크톱 클라이언트를 사용하여 자산 업로드 {#upload-assets-desktop-clients}
 
