@@ -38,7 +38,7 @@ AEM Cloud 서비스에서는 일반적으로 UI를 차단하는 작업이 백그
 * 페이지 이동
 * 롤아웃 페이지
 
-이러한 작업의 개시자는 의 새 UI에서 자신의 상태를 확인할 수 있습니다 `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+이러한 작업의 개시자는 `/mnt/overlay/dam/gui/content/asyncjobs.html`의 새 UI에서 자신의 상태를 확인할 수 있습니다.
 
 >[!NOTE]
 >
@@ -46,13 +46,13 @@ AEM Cloud 서비스에서는 일반적으로 UI를 차단하는 작업이 백그
 
 ## 새 참조 사이트 및 자습서 {#new-reference-site-and-tutorial}
 
-[새로운 AEM 참조 사이트 WKND는 AEM으로 웹 사이트를 구축하는 모범 사례, AEM에서 사용할 수 있는 포괄적인 기능, 구성 요소 및 배포 모델 세트를 반영하기 위해 업데이트 및 게시되었습니다](https://wknd.site/). 새로운 참조 사이트 및 [관련 자습서는](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 Adobe Experience Manager Sites을 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다.
+[새로운 AEM 참조 사이트 WKND는 AEM으로 웹 사이트를 구축하는 모범 사례, AEM에서 사용할 수 있는 포괄적인 기능, 구성 요소 및 배포 모델 세트를 반영하기 위해 업데이트 및 게시되었습니다](https://wknd.site/). 새 참조 사이트 및 [추가 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에서는 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 Adobe Experience Manager Sites을 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다.
 
-이전에는 We.Retail이 기본적으로 AEM과 함께 설치되었습니다(프로덕션 모드에서 시작한 경우 제외).  이제 기본적으로 참조 사이트가 설치되지 않습니다.  대신 [업데이트된 WKND 참조 사이트](https://github.com/adobe/aem-guides-wknd/) 코드와 함께 git 보고서 [및](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 함께 제공되는 자습서가 제공됩니다.
+이전에는 We.Retail이 기본적으로 AEM과 함께 설치되었습니다(프로덕션 모드에서 시작한 경우 제외).  이제 기본적으로 참조 사이트가 설치되지 않습니다.  대신 업데이트된 WKND 참조 사이트 코드와 함께 [git 보고서](https://github.com/adobe/aem-guides-wknd/) 및 [관련 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)가 제공됩니다.
 
-## 실행 시 사용할 수 없는 기능 {#capabilities-not-available-at-runtime}
+## 런타임 {#capabilities-not-available-at-runtime}에서 사용할 수 없는 기능
 
-AEM은 항상 최신 상태로 유지됩니다. 이를 위해서는 불변과 변경 가능한 컨텐츠로 AEM 저장소를 분리하고 런타임 시 불변량 컨텐츠에 대한 액세스를 금지해야 합니다. 변경 가능한 컨텐츠와 변경 불가능한 컨텐츠에 대한 자세한 내용은 저장소의 [변경 가능 영역과 불변경 영역을 참조하십시오](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
+AEM은 항상 최신 상태로 유지됩니다. 이를 위해서는 불변과 변경 가능한 컨텐츠로 AEM 저장소를 분리하고 런타임 시 불변량 컨텐츠에 대한 액세스를 금지해야 합니다. 변경 가능한 컨텐츠와 변경 불가능한 컨텐츠에 대한 자세한 내용은 [변경 및 불변경 영역의 저장소](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable)을 참조하십시오.
 
 런타임 시 변경할 수 없는 컨텐츠에 액세스할 수 없기 때문에 런타임 시 다음 AEM Sites 작업을 사용할 수 없습니다.
 
