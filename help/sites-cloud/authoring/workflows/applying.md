@@ -60,28 +60,28 @@ ht-degree: 81%
 
 ### 사이트 도구 모음에서 워크플로우 시작 {#starting-a-workflow-from-the-sites-toolbar}
 
-You can start a workflow from the toolbar of the **Sites** console:
+**사이트** 콘솔의 도구 모음에서 워크플로우를 시작할 수 있습니다.
 
 1. 필요한 페이지로 이동하여 선택합니다.
 
-1. From the **Create** option in the toolbar you can now select **Workflow**.
+1. 이제 도구 모음의 **만들기** 옵션에서 **워크플로우**&#x200B;를 선택할 수 있습니다.
 
    ![도구 모음에서 워크플로우 만들기](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
 1. **워크플로우 만들기** 마법사는 [워크플로우 세부 사항을 지정](#specifying-workflow-details-in-the-create-workflow-wizard)하는 데 도움이 됩니다.
 
-### 타임라인에서 워크플로우 시작 {#starting-a-workflow-from-the-timeline}
+### 타임라인에서 워크플로우 시작  {#starting-a-workflow-from-the-timeline}
 
 **타임라인**&#x200B;에서는 선택한 리소스에 적용할 워크플로우를 시작할 수 있습니다.
 
-1. [리소스를 선택하고](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) 타임라인 [](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 을 엽니다(또는 타임라인을 연 다음 리소스 선택).
+1. [리소스를 ](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) 선택하고  [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 을 엽니다(또는 타임라인을 연 다음 리소스 선택).
 1. 주석 필드 옆에 있는 화살촉 모양을 사용하여 **워크플로우 시작**&#x200B;을 표시할 수 있습니다.
 
    ![타임라인에서 워크플로우 만들기](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
 1. **워크플로우 만들기** 마법사는 [워크플로우 세부 사항을 지정](#specifying-workflow-details-in-the-create-workflow-wizard)하는 데 도움이 됩니다.
 
-### 워크플로우 만들기 마법사에서 워크플로우 세부 사항 지정 {#specifying-workflow-details-in-the-create-workflow-wizard}
+### 워크플로우 만들기 마법사에서 워크플로우 세부 사항 지정  {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 **워크플로우 만들기** 마법사는 워크플로우를 선택하고 필요한 세부 사항을 지정하는 데 도움이 됩니다.
 
@@ -119,7 +119,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 1. **범위** 단계에서 다음 내용을 선택할 수 있습니다.
 
-   * **컨텐츠** 추가를 통해 [경로 브라우저를](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 열고 추가 리소스를 선택합니다.브라우저에서는 선택을 클릭/탭하여 **워크플로우** 인스턴스에 컨텐츠를 추가합니다.
+   * **콘텐츠** 추가:  [경로 탐색](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 을 열고 추가 리소스를 선택합니다.브라우저에서는 선택을 클릭/ **** 탭하여 워크플로우 인스턴스에 컨텐츠를 추가합니다.
 
    * 추가 작업을 보기 위한 기존 리소스:
 
@@ -140,9 +140,9 @@ You can start a workflow from the toolbar of the **Sites** console:
    >
    >리소스를 더 추가하려는 경우 **뒤로**&#x200B;를 사용하여 **속성** 단계에서 **워크플로우 패키지 유지**&#x200B;에 대한 설정을 조정할 수 있습니다.
 
-1. Use **Create** to close the wizard and create the workflow instance. 알림은 사이트 콘솔에 표시됩니다.
+1. **만들기**&#x200B;를 사용하여 마법사를 닫고 워크플로 인스턴스를 만듭니다. 알림은 사이트 콘솔에 표시됩니다.
 
-## 페이지 편집기에서 워크플로우 시작 {#starting-a-workflow-from-the-page-editor}
+## 페이지 편집기에서 워크플로우 시작  {#starting-a-workflow-from-the-page-editor}
 
 페이지를 편집할 때 도구 모음에서 **페이지 정보**&#x200B;를 선택할 수 있습니다. 드롭다운 메뉴에는 **워크플로우에서 시작** 선택 사항이 있습니다. 이 선택 사항을 선택하면 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
 
