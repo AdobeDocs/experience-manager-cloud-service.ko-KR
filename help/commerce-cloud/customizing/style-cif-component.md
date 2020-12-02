@@ -21,11 +21,11 @@ ht-degree: 2%
 
 # AEM CIF 핵심 구성 요소 스타일 지정 {#style-aem-cif-core-components}
 
-CIF [Venia](https://github.com/adobe/aem-cif-guides-venia) 프로젝트는 [CIF 코어 구성 요소를 사용하기 위한 참조 코드 베이스입니다](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF Core 구성 요소에서 사용되는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. 또한 CSS를 사용하여 새 스타일을 만들어 **제품 티저 구성 요소의 기본 스타일을** 업데이트합니다.
+[CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)은 [CIF Core Components](https://github.com/adobe/aem-core-cif-components)을(를) 사용하기 위한 참조 코드 기반입니다. 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF Core 구성 요소에서 사용되는 CSS 및 JavaScript를 구성하는 방법을 알아봅니다. 또한 CSS를 사용하여 새 스타일을 만들어 **제품 티저** 구성 요소의 기본 스타일을 업데이트합니다.
 
 >[!TIP]
 >
-> 직접 상거래 구현을 시작할 때 [AEM 프로젝트](https://github.com/adobe/aem-project-archetype) 원형 유형을 사용하십시오.
+> 고유한 상거래 구현을 시작할 때 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)을 사용하십시오.
 
 ## 구축 내용
 
@@ -35,15 +35,15 @@ CIF [Venia](https://github.com/adobe/aem-cif-guides-venia) 프로젝트는 [CIF 
 
 ## 전제 조건 {#prerequisites}
 
-이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Magento 인스턴스에 구성 및 연결된 실행 중인 AEM 인스턴스가 포함됩니다. AEM을 Cloud Service SDK로 사용하여 로컬 개발 [을 설정하는 요구 사항과 단계를 검토하십시오](../develop.md).
+이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Magento 인스턴스에 구성 및 연결된 실행 중인 AEM 인스턴스가 포함됩니다. AEM에서 Cloud Service SDK[로 로컬 개발 설정을 위한 요구 사항 및 단계를 검토하십시오.](../develop.md)
 
-## Venia 프로젝트 복제 {#clone-venia-project}
+## Venia 프로젝트 {#clone-venia-project} 복제
 
-Venia Project를 [복제한](https://github.com/adobe/aem-cif-guides-venia) 다음 기본 스타일을 무시합니다.
+[Venia Project](https://github.com/adobe/aem-cif-guides-venia)을 복제한 다음 기본 스타일을 무시합니다.
 
 >[!NOTE]
 >
-> **CIF가 포함된 AEM Project Tranype을 기반으로 기존 프로젝트를** 자유롭게 사용하고 이 섹션을 건너뜁니다.
+> **CIF가 포함된 AEM Project Tranype을 기반으로 기존 프로젝트를**  자유롭게 사용하고 이 섹션을 건너뜁니다.
 
 1. 다음 git 명령을 실행하여 프로젝트를 복제합니다.
 
@@ -60,7 +60,7 @@ Venia Project를 [복제한](https://github.com/adobe/aem-cif-guides-venia) 다�
 
 1. AEM 인스턴스를 Magento 인스턴스에 연결하거나 구성을 새로 만든 프로젝트에 추가하려면 필요한 OSGi 구성을 추가하십시오.
 
-1. 이때 Magento 인스턴스에 연결된 스토어프런트 작업 버전이 있어야 합니다. 다음 위치에서 `US` > `Home` 페이지로 이동합니다. [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. 이때 Magento 인스턴스에 연결된 스토어프런트 작업 버전이 있어야 합니다. 다음 위치에 있는 `US` > `Home` 페이지로 이동합니다.[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    당신은 현재 매점이 베니아 테마를 사용하고 있다는 것을 보아야 합니다. 스토어프런트의 기본 메뉴를 확장하면 연결 Magento이 작동하는지 나타내는 다양한 카테고리가 표시됩니다.
 
@@ -68,31 +68,31 @@ Venia Project를 [복제한](https://github.com/adobe/aem-cif-guides-venia) 다�
 
 ## 클라이언트 라이브러리 및 ui.frontend 모듈 {#introduction-to-client-libraries}
 
-스토어프런트 테마와 스타일을 렌더링하는 책임이 있는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 또는 clientlibs에서 간단하게 관리합니다. 클라이언트 라이브러리는 프로젝트 코드에서 CSS 및 Javascript를 구성한 다음 페이지에 전달하는 메커니즘을 제공합니다.
+스토어프런트의 테마/스타일을 렌더링하는 책임이 있는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 또는 clientlibs에서 간단하게 관리합니다. 클라이언트 라이브러리는 프로젝트 코드에서 CSS 및 Javascript를 구성한 다음 페이지에 전달하는 메커니즘을 제공합니다.
 
 이러한 클라이언트 라이브러리에 의해 관리되는 CSS를 추가하고 대체하여 AEM CIF 핵심 구성 요소에 브랜드 전용 스타일을 적용할 수 있습니다. 클라이언트 라이브러리가 구조화되고 페이지에 포함되는 방법을 이해하는 것이 중요합니다.
 
-ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/uifrontend.html) 는 프로젝트에 대한 모든 프런트 엔드 에셋을 관리하는 전용 [웹 팩](https://webpack.js.org/) 프로젝트입니다. 이를 통해 프런트 엔드 개발자는 [TypeScript](https://www.typescriptlang.org/), Sass 등과 같은 다양한 언어와 기술을 사용할 [수](https://sass-lang.com/) 있습니다.
+[ui.frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/uifrontend.html)은 프로젝트에 대한 모든 프런트 엔드 에셋을 관리하는 전용 [webpack](https://webpack.js.org/) 프로젝트입니다. 이를 통해 프런트 엔드 개발자는 [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) 등과 같은 다양한 언어와 기술을 사용할 수 있습니다.
 
-또한 이 `ui.frontend` 모듈은 Maven 모듈이며 aem-clientlib-generator의 NPM 모듈 [을 사용하여 더 큰 프로젝트와 통합됩니다](https://github.com/wcm-io-frontend/aem-clientlib-generator). 빌드 중에 컴파일된 CSS 및 JavaScript 파일을 모듈의 클라이언트 라이브러리에 `aem-clientlib-generator` `ui.apps` 복사합니다.
+`ui.frontend` 모듈도 Maven 모듈이며 NPM 모듈 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)을(를) 사용하여 더 큰 프로젝트와 통합됩니다. 빌드 동안 `aem-clientlib-generator`은 컴파일된 CSS 및 JavaScript 파일을 `ui.apps` 모듈의 클라이언트 라이브러리에 복사합니다.
 
 ![ui.frontend ui.apps 아키텍처](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*컴파일된 CSS 및 Javascript는 Maven 빌드 동안 `ui.frontend` 모듈에서 클라이언트 라이브러리로 `ui.apps` 모듈로 복사됩니다*
+*컴파일된 CSS 및 Javascript는 Maven 빌드 동안  `ui.frontend` 모듈에서 클라이언트 라이브러리로  `ui.apps` 모듈로 복사됩니다*
 
-## 티저 스타일 업데이트 {#ui-frontend-module}
+## Teaser 스타일 {#ui-frontend-module} 업데이트
 
-다음으로, Teaser 스타일을 변경하여 `ui.frontend` 모듈과 clientlibraries의 작동 방식을 확인합니다. Venia 프로젝트 [를 가져오려면 원하는](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) IDE를 사용하십시오. 사용된 스크린샷은 [Visual Studio 코드 IDE에서 가져온 것입니다](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+다음으로 `ui.frontend` 모듈과 clientlibraries가 어떻게 작동하는지 확인하려면 Teaser 스타일을 약간 변경합니다. Venia 프로젝트를 가져오려면 [원하는 IDE를 사용하십시오. ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) 사용된 스크린샷은 [Visual Studio 코드 IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)에서 가져온 것입니다.
 
-1. ui. **frontend** 모듈을 탐색 및 확장하고 폴더 계층 구조를 다음으로 확장합니다. `ui.frontend/src/main/styles/commerce`:
+1. **ui.frontend** 모듈로 이동하여 확장하고 폴더 계층 구조를 다음과 같이 확장합니다.`ui.frontend/src/main/styles/commerce`:
 
    ![ui.frontend 커머스 폴더](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
    폴더 아래에 여러 개의 Sass(`.scss`) 파일이 있습니다. 이러한 스타일은 각 상거래 구성 요소에 대한 상거래 특정 스타일입니다.
 
-1. Open the file `_productteaser.scss`.
+1. `_productteaser.scss` 파일을 엽니다.
 
-1. 규칙을 `.item__image` 업데이트하고 테두리 규칙을 수정합니다.
+1. `.item__image` 규칙을 업데이트하고 테두리 규칙을 수정합니다.
 
    ```scss
    .item__image {
@@ -130,9 +130,9 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Inspect의 최종 출력. Maven 명령이 여러 개의 NPM 스크립트를 실행했음을 확인할 수 `npm run build`있습니다. 이 `npm run build` 명령은 `package.json` 파일에 정의되며 웹 팩 프로젝트를 컴파일하고 클라이언트 라이브러리 생성을 트리거하는 효과가 있습니다.
+   Inspect의 최종 출력. Maven 명령에서 `npm run build`을(를) 비롯한 여러 NPM 스크립트를 실행했음을 확인할 수 있습니다. `npm run build` 명령은 `package.json` 파일에 정의되며 웹 팩 프로젝트를 컴파일하고 클라이언트 라이브러리 생성을 트리거하는 효과가 있습니다.
 
-1. Inspect `ui.frontend/dist/clientlib-site/site.css`:
+1. Inspect 파일 `ui.frontend/dist/clientlib-site/site.css`:
 
    ![컴파일된 사이트 CSS](../assets/style-cif-component/comiled-site-css.png)
 
@@ -142,7 +142,7 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
    >
    > 이와 같은 파일은 빌드 시간 동안 생성되어야 하므로 소스 컨트롤에서 무시됩니다.
 
-1. 파일을 Inspect으로 `ui.frontend/clientlib.config.js`전송합니다.
+1. Inspect 파일 `ui.frontend/clientlib.config.js`
 
    ```js
    /* clientlib.config.js*/
@@ -161,13 +161,13 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
    ...
    ```
 
-   이 파일은 aem-clientlib-generator [용](https://github.com/wcm-io-frontend/aem-clientlib-generator) 구성 파일이며, 컴파일된 CSS 및 JavaScript가 AEM 클라이언트 라이브러리로 변형되는 위치와 방법을 결정합니다.
+   이 파일은 [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)에 대한 구성 파일이며, 컴파일된 CSS와 JavaScript가 AEM 클라이언트 라이브러리로 변형되는 위치와 방법을 결정합니다.
 
-1. 모듈에서 파일을 `ui.apps` 검사합니다. `ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-site/css/site.css`:
+1. `ui.apps` 모듈에서 파일을 검사합니다.`ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-site/css/site.css`:
 
    ![ui.apps의 컴파일된 사이트 CSS](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   이렇게 하면 복사한 `site.css` 파일이 `ui.apps` 프로젝트에 추가됩니다. 이제 카테고리로 명명된 클라이언트 라이브러리 `clientlib-site` 의 일부입니다 `venia.site`. 파일이 모듈의 일부이면 AEM에 배포할 수 `ui.apps` 있습니다.
+   이렇게 하면 `site.css` 파일이 `ui.apps` 프로젝트에 복사됩니다. 이제 `venia.site` 범주가 있는 `clientlib-site`이라는 클라이언트 라이브러리의 일부입니다. 파일이 `ui.apps` 모듈의 일부이면 AEM에 배포할 수 있습니다.
 
    >[!NOTE]
    >
@@ -179,17 +179,17 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈에서 관리하지 않습니다. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 clientlibraries에 대한 정의는 각 폴더 아래의 `.content.xml` 파일에 있습니다.
 
-   **clientlib-base** - [AEM 코어 구성 요소의 필수 종속성을 간단히 제공하는 빈 클라이언트 라이브러리입니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html). 카테고리가 `venia.base`있습니다.
+   **clientlib-base** -  [AEM 코어 구성 요소의 필수 종속성을 간단히 제공하는 빈 클라이언트 라이브러리입니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html). 카테고리는 `venia.base`입니다.
 
-   **clientlib-cif** - [AEM CIF 핵심 구성 요소의 필수 종속성을 간단히 제공하는 빈 클라이언트 라이브러리입니다](https://github.com/adobe/aem-core-cif-components). 카테고리가 `venia.cif`있습니다.
+   **clientlib-cif** -  [AEM CIF 핵심 구성 요소의 필수 종속성을 간단히 제공하는 빈 클라이언트 라이브러리입니다](https://github.com/adobe/aem-core-cif-components). 카테고리는 `venia.cif`입니다.
 
-   **clientlib-grid** - AEM 응답형 격자 기능을 활성화하는 데 필요한 CSS가 포함됩니다. AEM 그리드를 사용하면 AEM [편집기에서](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configuring-responsive-layout.html#include-the-responsive-css) 레이아웃 모드를 사용할 수 있으며 컨텐츠 작성자에게 구성 요소의 크기를 다시 조정할 수 있는 기능이 제공됩니다. 카테고리는 라이브러리 `venia.grid` 에 `venia.base` 포함되며
+   **clientlib-grid** - AEM 응답형 격자 기능을 활성화하는 데 필요한 CSS가 포함됩니다. AEM 그리드를 사용하면 AEM 편집기에서 [레이아웃 모드](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configuring-responsive-layout.html#include-the-responsive-css)가 활성화되고 컨텐츠 작성자에게 구성 요소의 크기를 다시 조정할 수 있는 기능이 제공됩니다. 카테고리는 `venia.grid`이며 `venia.base` 라이브러리에 포함되어 있습니다.
 
-1. Inspect `customheaderlibs.html` 와 다음 `customfooterlibs.html` 과 `ui.apps/src/main/content/jcr_root/apps/venia/components/page`같이
+1. Inspect `ui.apps/src/main/content/jcr_root/apps/venia/components/page` 아래 `customheaderlibs.html` 및 `customfooterlibs.html` 파일
 
    ![사용자 정의 머리글 및 바닥글 스크립트](../assets/style-cif-component/custom-header-footer-script.png)
 
-   이러한 스크립트에는 모든 페이지의 **일부로** venia.base **및** venia.cif라이브러리가 포함됩니다.
+   이러한 스크립트에는 모든 페이지의 일부로 **venia.base** 및 **venia.cif** 라이브러리가 포함됩니다.
 
    >[!NOTE]
    >
@@ -202,13 +202,13 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-## 제품 티저 작성 {#author-product-teaser}
+## 제품 티저 {#author-product-teaser} 작성
 
 이제 코드 업데이트가 배포되었으므로 AEM 제작 도구를 사용하여 제품 티저 구성 요소의 새 인스턴스를 사이트의 홈 페이지에 추가합니다. 그러면 업데이트된 스타일을 볼 수 있습니다.
 
-1. 새 브라우저 탭을 열고 사이트의 **홈 페이지로** 이동합니다. [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. 새 브라우저 탭을 열고 사이트의 **홈 페이지**&#x200B;로 이동합니다.[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-1. 편집 모드에서 자산 파인더(사이드 레일) **를** 확장합니다. 자산 필터를 **제품으로 전환합니다**.
+1. **편집** 모드에서 자산 파인더(사이드 레일)를 확장합니다. 자산 필터를 **제품**&#x200B;으로 전환합니다.
 
    ![자산 파인더 확장 및 제품별 필터링](../assets/style-cif-component/drag-drop-product-page.png)
 
@@ -218,17 +218,17 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
 
    이제 제품 티저가 이전에 만든 CSS 규칙 변경에 따라 밝은 분홍색 테두리를 표시해야 합니다.
 
-## 페이지에서 클라이언트 라이브러리 확인 {#verify-client-libraries}
+## 페이지 {#verify-client-libraries}에서 클라이언트 라이브러리 확인
 
 다음으로 페이지에 클라이언트 라이브러리 포함을 확인합니다.
 
-1. 사이트의 **홈 페이지로** 이동합니다. [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. 사이트의 **홈 페이지**&#x200B;로 이동합니다.[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-1. 페이지 **정보** 메뉴를 선택하고 **게시됨으로 보기를 클릭합니다**.
+1. **페이지 정보** 메뉴를 선택하고 **게시됨으로 보기**&#x200B;를 클릭합니다.
 
    ![게시됨으로 보기](../assets/style-cif-component/view-as-published.png)
 
-   게시된 사이트에 나타나는 AEM 작성자 javascript가 로드되지 않은 페이지가 열립니다. url에 쿼리 매개 변수가 `?wcmmode=disabled` 추가되어 있습니다. CSS 및 Javascript를 개발할 때는 이 매개 변수를 사용하여 AEM 작성자의 어떤 것이든 사용하여 페이지를 단순화하는 것이 좋습니다.
+   게시된 사이트에 나타나는 AEM 작성자 javascript가 로드되지 않은 페이지가 열립니다. url에 쿼리 매개 변수 `?wcmmode=disabled`이(가) 추가되었습니다. CSS 및 Javascript를 개발할 때는 이 매개 변수를 사용하여 AEM 작성자의 어떤 것이든 사용하여 페이지를 단순화하는 것이 좋습니다.
 
 1. 페이지 소스를 보면 몇 개의 클라이언트 라이브러리가 포함되어 있는지 확인할 수 있습니다.
 
@@ -250,27 +250,27 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
    </html>
    ```
 
-   페이지로 배달될 때 클라이언트 라이브러리는 사전 `/etc.clientlibs` 고정되어 [프록시를 통해](/help/implementing/developing/introduction/clientlibs.md) 제공되므로 `/apps` 또는 `/libs`에서 민감한 내용이 노출되지 않습니다.
+   페이지에 배달될 때 클라이언트 라이브러리는 `/etc.clientlibs`으로 접두사로 추가되고 `/apps` 또는 `/libs`에서 민감한 내용이 노출되지 않도록 [proxy](/help/implementing/developing/introduction/clientlibs.md)를 통해 제공됩니다.
 
-   알림 `venia/clientlibs/clientlib-site.min.css` 및 `venia/clientlibs/clientlib-site.min.js`Adobe 이러한 파일은 `ui.frontend` 모듈에서 파생된 컴파일된 CSS 및 Javascript 파일입니다.
+   `venia/clientlibs/clientlib-site.min.css` 및 `venia/clientlibs/clientlib-site.min.js`에 주의하십시오. 이러한 파일은 `ui.frontend` 모듈에서 파생된 컴파일된 CSS 및 Javascript 파일입니다.
 
-## 페이지 템플릿과 함께 클라이언트 라이브러리 포함 {#client-library-inclusion-pagetemplates}
+## 페이지 템플릿 {#client-library-inclusion-pagetemplates}과(와) 함께 클라이언트 라이브러리 포함
 
-클라이언트측 라이브러리를 포함하는 방법에는 몇 가지 옵션이 있습니다. 그런 다음 페이지 템플릿을 통해 생성된 프로젝트에 `clientlib-site` 라이브러리가 포함되어 있는지 [확인합니다](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html).
+클라이언트측 라이브러리를 포함하는 방법에는 몇 가지 옵션이 있습니다. 그런 다음 생성된 프로젝트에 [페이지 템플릿](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html)을 통해 `clientlib-site` 라이브러리가 포함되는 방법을 검사합니다.
 
-1. AEM Editor 내에서 **사이트의 홈 페이지로** 이동합니다. [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. AEM 편집기 내에서 사이트의 **홈 페이지**&#x200B;로 이동합니다.[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-1. 페이지 **정보** 메뉴를 선택하고 템플릿 **편집을 클릭합니다**.
+1. **페이지 정보** 메뉴를 선택하고 **템플릿 편집**&#x200B;을 클릭합니다.
 
    ![템플릿 편집](../assets/style-cif-component/edit-template.png)
 
-   그러면 **홈** 페이지가 기반으로 하는 랜딩 페이지 **** 템플릿이열립니다.
+   그러면 **홈** 페이지가 기반으로 하는 **랜딩 페이지** 템플릿이 열립니다.
 
    >[!NOTE]
    >
-   > AEM 시작 화면에서 사용 가능한 모든 템플릿을 보려면 **도구** > **일반** > **템플릿으로**&#x200B;이동합니다.
+   > AEM 시작 화면에서 사용 가능한 모든 템플릿을 보려면 **도구** > **일반** > **템플릿**&#x200B;으로 이동합니다.
 
-1. 왼쪽 위 모서리에서 **페이지 정보** 아이콘을 선택하고 **페이지 정책을 클릭합니다**.
+1. 왼쪽 상단에서 **페이지 정보** 아이콘을 선택하고 **페이지 정책**&#x200B;을 클릭합니다.
 
    ![페이지 정책 메뉴 항목](../assets/style-cif-component/page-policy-menu.png)
 
@@ -278,32 +278,32 @@ ui. [frontend](https://docs.adobe.com/content/help/ko-KR/experience-manager-core
 
    ![페이지 정책 - 랜딩 페이지](../assets/style-cif-component/page-policy-properties.png)
 
-   오른쪽에는 이 템플릿을 사용하는 모든 페이지에 포함될 클라이언트 라이브러리 **카테고리** 목록이 표시됩니다.
+   오른쪽에는 이 템플릿을 사용하는 모든 페이지에 포함될 클라이언트 라이브러리 **카테고리**&#x200B;의 목록이 표시됩니다.
 
-   * `venia.dependencies` - 사용하는 모든 공급업체 라이브러리를 `venia.site` 제공합니다.
-   * `venia.site` - 모듈 `clientlib-site` 이 생성하는 `ui.frontend` 카테고리입니다.
+   * `venia.dependencies` -  `venia.site` 의존하는 모든 공급업체 라이브러리를 제공합니다.
+   * `venia.site` -  `clientlib-site` 모듈이 생성하는 카테고리 `ui.frontend` 입니다.
 
-   다른 템플릿은 동일한 정책, **컨텐츠 페이지**, **랜딩 페이지**&#x200B;등을 사용합니다.동일한 정책을 다시 사용하면 동일한 클라이언트 라이브러리가 모든 페이지에 포함되도록 할 수 있습니다.
+   다른 템플릿은 동일한 정책 **콘텐츠 페이지**, **랜딩 페이지** 등을 사용합니다.동일한 정책을 다시 사용하면 동일한 클라이언트 라이브러리가 모든 페이지에 포함되도록 할 수 있습니다.
 
-   템플릿 및 페이지 정책을 사용하여 클라이언트 라이브러리 포함을 관리할 수 있는 이점은 템플릿별 정책을 변경할 수 있다는 것입니다. 예를 들어 동일한 AEM 인스턴스 내에서 두 개의 다른 브랜드를 관리하는 경우가 있습니다. 각 브랜드는 고유한 스타일 또는 *테마를* 가지지만 기본 라이브러리와 코드는 동일합니다. 또 다른 예로, 특정 페이지에만 표시하고 싶은 더 큰 클라이언트 라이브러리가 있는 경우 해당 템플릿에 대해서만 고유한 페이지 정책을 만들 수 있습니다.
+   템플릿 및 페이지 정책을 사용하여 클라이언트 라이브러리 포함을 관리할 수 있는 이점은 템플릿별 정책을 변경할 수 있다는 것입니다. 예를 들어 동일한 AEM 인스턴스 내에서 두 개의 다른 브랜드를 관리하는 경우가 있습니다. 각 브랜드는 고유한 스타일 또는 *테마*&#x200B;를 가지지만 기본 라이브러리와 코드는 동일합니다. 또 다른 예로, 특정 페이지에만 표시하고 싶은 더 큰 클라이언트 라이브러리가 있는 경우 해당 템플릿에 대해서만 고유한 페이지 정책을 만들 수 있습니다.
 
 ## 로컬 웹 팩 개발 {#local-webpack-development}
 
-이전 연습에서는 모듈의 Sass 파일에 대한 업데이트를 `ui.frontend` 수행한 다음 Maven 빌드를 수행한 후 변경 사항이 AEM에 배포되었습니다. 다음으로 프런트 엔드 스타일을 신속하게 개발할 수 있는 웹 팩 개발 서버를 활용합니다.
+이전 연습에서 `ui.frontend` 모듈의 Sass 파일에 대한 업데이트가 수행된 후 Maven 빌드를 수행한 후 변경 사항이 AEM에 배포되었습니다. 다음으로 프런트 엔드 스타일을 신속하게 개발할 수 있는 웹 팩 개발 서버를 활용합니다.
 
-webpack-dev-server는 AEM의 로컬 인스턴스에서 이미지 및 일부 CSS/JavaScript를 프록시하지만 개발자는 모듈에서 스타일과 JavaScript를 수정할 수 `ui.frontend` 있습니다.
+webpack-dev-server는 AEM의 로컬 인스턴스에서 이미지와 일부 CSS/JavaScript를 프록시하지만 개발자는 `ui.frontend` 모듈에서 스타일과 JavaScript를 수정할 수 있습니다.
 
-1. 브라우저에서 **홈** 페이지 및 게시됨으로 **보기**&#x200B;로 이동합니다. [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
+1. 브라우저에서 **홈** 페이지와 **게시됨으로 보기**&#x200B;로 이동합니다.[http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
 
-1. 페이지의 소스를 보고 페이지의 원시 HTML을 **복사합니다** .
+1. 페이지의 소스와 페이지의 원시 HTML을 **복사**&#x200B;합니다.
 
-1. 모듈 아래의 원하는 IDE로 돌아가 파일을 `ui.frontend` 엽니다. `ui.frontend/src/main/static/index.html`
+1. `ui.frontend` 모듈 아래의 원하는 IDE로 돌아가 파일을 엽니다.`ui.frontend/src/main/static/index.html`
 
    ![정적 HTML 파일](../assets/style-cif-component/static-index-html.png)
 
-1. 컨텐츠를 덮어쓰고 이전 단계 `index.html` 에 복사한 HTML을 **붙여** 넣습니다.
+1. 이전 단계에서 복사한 HTML을 `index.html` 및 **붙여넣기**&#x200B;의 내용을 덮어씁니다.
 
-1. 포함을 찾아 `clientlib-site.min.css``clientlib-site.min.js`**제거합니다** .
+1. `clientlib-site.min.css`, `clientlib-site.min.js` 및 **remove**&#x200B;에 대한 포함 사항을 찾습니다.
 
    ```html
    <head>
@@ -318,34 +318,34 @@ webpack-dev-server는 AEM의 로컬 인스턴스에서 이미지 및 일부 CSS/
    </body>
    ```
 
-   이러한 CSS 및 JavaScript는 `ui.frontend` 모듈에서 생성된 컴파일된 버전을 나타내므로 제거됩니다. 다른 클라이언트 라이브러리는 실행 중인 AEM 인스턴스에서 프록시됩니다.
+   이러한 CSS는 `ui.frontend` 모듈에서 생성된 CSS 및 JavaScript의 컴파일된 버전을 나타내므로 제거됩니다. 다른 클라이언트 라이브러리는 실행 중인 AEM 인스턴스에서 프록시됩니다.
 
-1. 새 터미널 창을 열고 `ui.frontend` 폴더로 이동합니다. 명령을 실행합니다 `npm start`.
+1. 새 터미널 창을 열고 `ui.frontend` 폴더로 이동합니다. `npm start` 명령을 실행합니다.
 
    ```shell
    $ cd ui.frontend
    $ npm start
    ```
 
-   http://localhost:8080/에서 webpack-dev-server가 [시작됩니다.](http://localhost:8080/)
+   그러면 [http://localhost:8080/](http://localhost:8080/)에서 webpack-dev-server가 시작됩니다.
 
    >[!CAUTION]
    >
-   > Sass 관련 오류가 발생하는 경우 서버를 중지하고 명령을 실행하고 위 단계 `npm rebuild node-sass` 를 반복합니다. 이 문제는 다른 버전의 `npm` 가 있는 `node` 후 프로젝트에 지정된 경우에 발생할 수 있습니다 `aem-cif-guides-venia/pom.xml`.
+   > Sass 관련 오류가 발생하는 경우 서버를 중지하고 `npm rebuild node-sass` 명령을 실행하고 위 단계를 반복합니다. 이 문제는 프로젝트 `aem-cif-guides-venia/pom.xml`에 다른 버전의 `npm` 및 `node`이 지정된 경우에 발생할 수 있습니다.
 
-1. 로그인한 AEM의 [인스턴스와 동일한 브라우저가 있는 새 탭의 http://localhost:8080/](http://localhost:8080/) 디렉토리로 이동합니다. webpack-dev-server를 통해 Venia 홈 페이지가 표시됩니다.
+1. 로그인한 AEM 인스턴스와 동일한 브라우저가 있는 새 탭에서 [http://localhost:8080/](http://localhost:8080/)로 이동합니다. webpack-dev-server를 통해 Venia 홈 페이지가 표시됩니다.
 
    ![포트 80의 Webpack 개발 서버](../assets/style-cif-component/webpack-dev-server-port80.png)
 
    webpack-dev-server를 실행합니다. 다음 연습에서는 사용할 것입니다.
 
-## 제품 티저에 대한 카드 스타일 구현 {#update-css-product-teaser}
+## 제품 티저 {#update-css-product-teaser}에 대한 카드 스타일 구현
 
 그런 다음 `ui.frontend` 모듈의 Sass 파일을 수정하여 제품 Teaser에 대한 카드 스타일 스타일을 구현합니다. webpack-dev-server는 변경 사항을 신속하게 확인하는 데 사용됩니다.
 
 IDE 및 생성된 프로젝트로 돌아갑니다.
 
-1. ui. **frontend** 모듈에서 파일을 다시 `_productteaser.scss` 엽니다 `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
+1. **ui.frontend** 모듈에서 `ui.frontend/src/main/styles/commerce/_productteaser.scss`에 있는 `_productteaser.scss` 파일을 다시 엽니다.
 
 1. 제품 티저 테두리를 다음과 같이 변경합니다.
 
@@ -417,7 +417,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
        ...
    ```
 
-1. 맨 아래에 있는 미디어 쿼리를 업데이트하여 이름과 가격을 **992px보다 작은 화면으로 스택할 수 있습니다**.
+1. 이름 및 가격을 **992px**&#x200B;보다 작은 화면으로 스택하려면 맨 아래에 미디어 쿼리를 업데이트하십시오.
 
    ```css
    @media (max-width: 992px) {
@@ -436,7 +436,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
    ![Webpack Dev Server Teaser 변경](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   그러나 변경 사항은 아직 AEM에 배포되지 않았습니다. 여기에서 [솔루션 파일을 다운로드할 수 있습니다](../assets/style-cif-component/_productteaser.scss).
+   그러나 변경 사항은 아직 AEM에 배포되지 않았습니다. [솔루션 파일을 여기에서 다운로드할 수 있습니다](../assets/style-cif-component/_productteaser.scss).
 
 1. 명령줄 터미널에서 Maven 기술을 사용하여 AEM에 업데이트를 배포합니다.
 
@@ -446,13 +446,13 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
    ```
 
    >[!NOTE]
-   >전체 Maven 빌드를 수행하지 않고도 프로젝트 파일을 로컬 AEM 인스턴스에 직접 동기화할 수 있는 추가 [IDE 설정](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) 및 도구가 있습니다.
+   >전체 Maven 빌드를 수행하지 않고도 프로젝트 파일을 로컬 AEM 인스턴스에 직접 동기화할 수 있는 추가 [IDE 설치 및 도구](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)가 있습니다.
 
 ## 업데이트된 제품 티저 보기 {#view-updated-product-teaser}
 
 프로젝트의 코드가 AEM에 배포된 후 제품 티저에 대한 변경 사항을 볼 수 있어야 합니다.
 
-1. 브라우저로 돌아가서 홈 페이지를 다시 새로 고칩니다. [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). 업데이트된 제품 티저 스타일이 적용된 것을 확인할 수 있습니다.
+1. 브라우저로 돌아가서 홈 페이지를 다시 새로 고칩니다.[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). 업데이트된 제품 티저 스타일이 적용된 것을 확인할 수 있습니다.
 
    ![업데이트된 제품 티저 스타일](../assets/style-cif-component/product-teaser-new-style.png)
 
@@ -462,19 +462,19 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
 ## 문제 해결 {#troubleshooting}
 
-CRXDE- [Lite에서](http://localhost:4502/crx/de/index.jsp) 업데이트된 CSS 파일이 배포되었는지 확인할 수 있습니다. [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
+[CRXDE-Lite](http://localhost:4502/crx/de/index.jsp)에서 업데이트된 CSS 파일이 배포되었는지 확인할 수 있습니다.[http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
 새 CSS 및/또는 JavaScript 파일을 배포할 때는 브라우저가 부실 파일을 제공하지 않는지 확인하는 것도 중요합니다. 브라우저 캐시를 지우거나 새 브라우저 세션을 시작하여 이 과정을 제거할 수 있습니다.
 
-또한 AEM은 성능을 위해 클라이언트 라이브러리를 캐시하려고 합니다. 가끔 코드 배포 후 이전 파일이 제공됩니다. 클라이언트 라이브러리 다시 [작성 도구를 사용하여 AEM 클라이언트 라이브러리 캐시를 수동으로 무효화할 수 있습니다](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Invalidate Caches는 AEM에서 클라이언트 라이브러리의 이전 버전을 캐시했다고 의심하는 경우 선호하는 방법입니다. 라이브러리 재구축은 비효율적이며 시간이 많이 소요됩니다.*
+또한 AEM은 성능을 위해 클라이언트 라이브러리를 캐시하려고 합니다. 가끔 코드 배포 후 이전 파일이 제공됩니다. [클라이언트 라이브러리 다시 작성 도구](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)를 사용하여 AEM 클라이언트 라이브러리 캐시를 수동으로 무효화할 수 있습니다. *Invalidate Caches는 AEM에서 클라이언트 라이브러리의 이전 버전을 캐시했다고 의심하는 경우 선호하는 방법입니다. 라이브러리를 다시 구성하는 작업은 비효율적이며 시간이 많이 소요됩니다.*
 
-## 축하합니다 {#congratulations}
+## {#congratulations} 축하합니다.
 
 첫 번째 AEM CIF 코어 구성 요소를 스타일이 적용되었으며 웹팩 개발 서버를 사용했습니다.
 
 ## 보너스 챌린지 {#bonus-challenge}
 
-AEM [스타일 시스템을](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html) 사용하여 내용 작성자가 설정/해제할 수 있는 두 가지 스타일을 만들 수 있습니다. [스타일 시스템을](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) 사용한 개발 과정에는 이를 수행하는 방법에 대한 자세한 단계와 정보가 포함되어 있습니다.
+[AEM Style 시스템](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html)을 사용하여 내용 작성자가 설정/해제할 수 있는 두 개의 스타일을 만듭니다. [스타일 시스템을 사용한 개발](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) 에는 이러한 작업을 수행하는 방법에 대한 자세한 단계 및 정보가 포함되어 있습니다.
 
 ![보너스 챌린지 - 스타일 시스템](../assets/style-cif-component/bonus-challenge.png)
 
