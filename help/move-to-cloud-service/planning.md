@@ -46,7 +46,7 @@ Experience Manager as a Cloud Service에서 더 이상 사용되지 않음으로
 
 주요 변경 사항 및 더 이상 사용되지 않는 기능에 대해 현재 AEM 소스 코드에 대한 포괄적인 평가를 수행하여 전환 여정에서 예상되는 작업 수준을 결정해야 합니다.
 
-현재 AEM 버전에서 모범 사례 분석기를 실행하여 평가 단계를 가속화할 수 있습니다. 자세한 내용은 [우수 사례 분석기를 참조하십시오](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+현재 AEM 버전에서 모범 사례 분석기를 실행하여 평가 단계를 가속화할 수 있습니다. 자세한 내용은 [우수 사례 분석기](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)를 참조하십시오.
 
 >[!NOTE]
 >이미 Cloud Manager 및 클라우드 서비스 환경에 액세스할 수 있는 경우에는 Cloud Manager 코드 품질 파이프라인에서 현재 코드를 실행하여 클라우드 서비스와 호환되도록 필요한 코드 변경 사항을 평가하는 것이 좋습니다.
