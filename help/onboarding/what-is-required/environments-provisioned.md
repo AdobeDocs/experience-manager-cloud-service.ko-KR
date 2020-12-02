@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 제공된 환경 {#environments-provisioning}
 
-## 프로비저닝 {#provisioning}
+## {#provisioning} 프로비저닝
 
 고객이 구매한 모든 AEM 클라우드 환경은 Adobe에 의해 자동으로 프로비저닝되며 Cloud Manager의 해당 프로그램에 다시 연결됩니다. 이러한 AEM 클라우드 환경은 모든 Adobe Managed Services 구독에 포함되어 있으며, 대개 한 개 이상의 제작 환경, 한 단계 환경 및 하나 이상의 개발 또는 테스트 환경으로 구성됩니다.
 
