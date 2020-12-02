@@ -14,9 +14,9 @@ ht-degree: 71%
 
 즉시 사용 가능한 프로젝트 워크플로우는 다음과 같습니다.
 
-* **프로젝트 승인 워크플로우** - 이 워크플로우를 통해 사용자에게 컨텐츠를 지정하고 검토한 다음 승인할 수 있습니다.
-* **론치** 요청 - 론치를 요청하는 워크플로우입니다.
-* **랜딩 페이지 요청** - 이 워크플로우는 랜딩 페이지를 요청합니다.
+* **프로젝트 승인 워크플로우**  - 이 워크플로우를 통해 사용자에게 컨텐츠를 지정하고 검토한 다음 승인할 수 있습니다.
+* **론치**  요청 - 론치를 요청하는 워크플로우입니다.
+* **랜딩 페이지 요청**  - 이 워크플로우는 랜딩 페이지를 요청합니다.
 * **요청 이메일** - 이메일을 요청하는 워크플로입니다.
 * **DAM 언어 사본 작성 및 번역과 DAM 언어 사본 작성** - 자산 및 폴더에 대한 번역된 바이너리, 메타데이터 및 태그를 생성합니다.
 
@@ -35,7 +35,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. 자산을 위한 언어 사본 만들기를 참조하십시오.
+>&amp;ast;이러한 워크플로우는 프로젝트의 **워크플로우** 타일에서 시작하지 않습니다. 자산을 위한 언어 사본 만들기를 참조하십시오.
 <!--
 >&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
 -->
@@ -69,7 +69,7 @@ AEM의 워크플로우 작업에 대한 자세한 내용은 다음을 참조하�
 
 프로젝트 승인 워크플로우에서는 사용자에게 컨텐츠를 지정하고 검토한 다음 컨텐츠를 승인합니다.
 
-1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. 단순 프로젝트에서 **워크플로우** 타일의 **`+`** 기호를 선택하고 **프로젝트 승인 워크플로우**&#x200B;를 선택합니다.
 1. 제목을 입력하고 팀 목록에서 지정할 사용자를 선택합니다. 해당하는 경우 설명, 컨텐츠 경로, 작업 우선순위 및 기한을 입력하십시오.
 
    ![승인 요청](/help/sites-cloud/authoring/assets/projects-approval.png)
@@ -87,8 +87,8 @@ AEM의 워크플로우 작업에 대한 자세한 내용은 다음을 참조하�
 
    ![론치 요청](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
+1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. 워크플로가 **워크플로** 목록에 나타납니다(**줄임표 클릭)...이 목록에 액세스하려면**&#x200B;워크플로&#x200B;**타일의**).
 
 ## 자산에 대한 언어 복사 워크플로우 생성(및 번역){#create-and-translate-language-copy-workflow-for-assets}
 
-The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in creating language copies for assets.
+**언어 사본 만들기** 및 **언어 사본 작성 및 번역 워크플로우는 자산에 대한 언어 사본 만들기에 대해 자세히 다룹니다.**
