@@ -11,7 +11,7 @@ ht-degree: 2%
 ---
 
 
-# Introducing AEM Commerce as a Cloud Service {#commerce-intro}
+# AEM Commerce를 Cloud Service {#commerce-intro}으로 소개
 
 Cloud Service의 Experience Manager 커머스는 Magento 및 기타 타사 상거래 솔루션에서 Experience Cloud과 상거래 서비스를 통합하고 확장하는 Adobe의 권장 패턴인 CIF(Commerce Integration Framework)로 구성되어 있습니다. 이를 통해 Adobe 고객은 첨단 기술을 기반으로 매력적이고 개인화된 옴니채널 쇼핑 경험을 제공할 수 있습니다.
 
@@ -32,12 +32,12 @@ Commerce Integration Framework는 Cloud Service의 추가 기능 모듈이며 �
 
 * CIF는 AEM 및 Magento과 같은 Adobe 솔루션과 즉시 통합
 
-## CIF Elements {#cif-elements}
+## CIF 요소 {#cif-elements}
 
 ![CIF Elements](/help/commerce-cloud/assets/cif-overview1.jpg)
 
 
-### 작성 도구용 CIF 추가 기능 {#add-on-authoring-tools}
+### 제작 도구용 CIF 추가 기능 {#add-on-authoring-tools}
 
 CIF Add-On은 작성자를 위한 제품 콘솔, 제품 및 카테고리 선택기 또는 제품 검색과 같은 상거래 저작 도구에 액세스하여 마케팅 및 상거래 컨텐츠가 포함된 풍부한 경험을 만들 수 있도록 합니다. 또한 Add-on은 GraphQL을 통해 Magento(또는 대체 커머스 시스템)에 대한 백엔드 연결을 관리합니다. Add-On이 프로비저닝되면 AEM에 Cloud Service 환경으로 자동으로 배포됩니다.
 
@@ -47,7 +47,7 @@ AEM CIF 핵심 구성 요소는 Magento GraphQL 지원을 통해 서버측 및 �
 
 기본 구성 요소가 제공되며 제품 세부 사항, 제품 목록, 탐색, 검색 등과 같은 상거래 구현 간에 공통으로 제공됩니다. 그대로 사용하거나 확장할 수 있습니다.
 
-AEM [CIF 핵심 구성](https://github.com/adobe/aem-core-cif-components) 요소는 [AEM Sites 핵심 구성 요소와](https://github.com/adobe/aem-core-wcm-components) 같이 작동하지만 상거래 특정 사용 사례에 사용됩니다.
+[AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 [AEM Sites 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components)와 같이 작동하지만 상거래 특정 사용 사례에만 사용됩니다.
 
 이러한 구성 요소의 주요 이점은 다음과 같습니다.
 
@@ -57,11 +57,11 @@ AEM [CIF 핵심 구성](https://github.com/adobe/aem-core-cif-components) 요소
 
 제품 티저 및 제품 회전판과 같은 구성 요소는 AEM 작성자가 마케팅 및 상거래 컨텐츠를 결합하는 AEM에서 경험 페이지를 만들 수 있도록 해줍니다. 이러한 구성 요소는 AEM에서 만든 컨텐츠 페이지로 쉽게 드래그하여 놓을 수 있으며 Cloud Service의 제품 또는 카테고리 선택기와 같은 CIF 작성 도구를 사용하여 특정 제품 또는 카테고리에 연결할 수 있습니다.
 
-모든 구성 요소는 [GitHub에서 오픈 소스로 제공됩니다](https://github.com/adobe/aem-core-cif-components). 이는 진행 중인 변경 사항에 대한 완전한 투명도를 보여주며 최신 버전을 매우 쉽게 얻을 수 있도록 해줍니다. 또한 통합될 수 있는 개선 및 버그 수정을 위한 풀 요청을 제공할 수 있습니다.
+모든 구성 요소는 [GitHub](https://github.com/adobe/aem-core-cif-components)에서 오픈 소싱됩니다. 이는 진행 중인 변경 사항에 대한 완전한 투명도를 보여주며 최신 버전을 매우 쉽게 얻을 수 있도록 해줍니다. 또한 통합될 수 있는 개선 및 버그 수정을 위한 풀 요청을 제공할 수 있습니다.
 
 ### AEM Venia Storefront {#aem-venia-storefront}
 
-AEM [Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) 는 기본적인 B2C 커머스 여정을 소개하는 최신 프로덕션 지원 참조 스토어프런트입니다. AEM, CIF 및 Magento을 사용하여 상거래 프로젝트를 시작하고 프로젝트를 가속화하는 데 사용할 수 있습니다. AEM 및 Magento 통합에 대한 우수 사례를 보여 주고 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 및 [AEM Sites 핵심 구성 요소를 사용하는 방법을 보여 주며 Adobe 상거래 그래프QL 끝점을](https://github.com/adobe/aem-core-wcm-components) 지원합니다. 또한 AEM과 Magento 간의 통합을 시연할 수 있는 참조 사이트가 포함된 사전 판매 사이트도 제공합니다.
+[AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia)는 기본 B2C 커머스 여정을 보여주는 최신 프로덕션 지원 참조 스토어프런트입니다. AEM, CIF 및 Magento을 사용하여 상거래 프로젝트를 시작하고 프로젝트를 가속화하는 데 사용할 수 있습니다. AEM 및 Magento 통합에 대한 우수 사례를 보여 주고 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components) 및 [AEM Sites 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components)를 사용하는 방법을 보여 주며 Adobe 상거래 그래프QL 끝점을 지원합니다. 또한 AEM과 Magento 간의 통합을 시연할 수 있는 참조 사이트가 포함된 사전 판매 사이트도 제공합니다.
 
 AEM Venia Storefront는 AEM이 유리를 소유하고 있고 Magento이 헤드리스 방식으로 상거래 백엔드를 작동시키는 혼합 페이지 애플리케이션입니다. 서버측 렌더링과 클라이언트측 렌더링을 모두 스토어프런트에서 사용합니다. 서버측 렌더링을 사용하여 정적 컨텐츠를 전달하고 클라이언트측 렌더링을 사용하여 동적 컨텐츠를 전달할 수 있습니다.
 
@@ -77,21 +77,21 @@ AEM Venia Storefront는 AEM이 유리를 소유하고 있고 Magento이 헤드�
 
 계정 관리는 Magento에 의해 처리되며 참조 스토어프런트는 클라이언트측 반응 기반 구성 요소를 활용하여 AEM이 다음 기능에 대한 경험을 렌더링할 수 있도록 합니다.계정 만들기, 로그인 및 암호 분실
 
-AEM Venia Storefront 프로젝트는 오픈 소스이며 자세한 내용은 [AEM Venia Storefront를 참조하십시오](https://github.com/adobe/aem-cif-guides-venia).
+AEM Venia Storefront 프로젝트는 오픈 소스이며 자세한 내용은 [AEM Venia Storefront](https://github.com/adobe/aem-cif-guides-venia)를 참조하십시오.
 
 ### AEM 프로젝트 전형 {#aem-project-archtype}
 
-The [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. 선택적으로 [AEM CIF 핵심 구성 요소를](https://github.com/adobe/aem-core-cif-components) 새로 생성된 프로젝트에 포함시킬 수 있습니다.
+[AEM Project Tranype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 사용하여 최소한의 모범 사례 기반 Adobe Experience Manager 프로젝트를 AEM 프로젝트의 시작점으로 만들 수 있습니다. 원할 경우, [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 새로 생성된 프로젝트에 포함할 수 있습니다.
 
-### CIF 익스텐션 레이어 {#cif-extension}
+### CIF 확장 레이어 {#cif-extension}
 
 CIF 확장 레이어는 복잡한 비즈니스 로직을 호스팅하기 위한 중간 레이어입니다. 그것은 Adobe의 서버리스 플랫폼인 Adobe I/O Runtime 플랫폼에서 실행됩니다. 마이크로 서비스 수준에서 비즈니스 및 프로세스 로직을 삽입하여 엔드 투 엔드 서비스 호출을 확장할 수 있습니다. 예를 들어 위치 및 채널을 사용하여 인벤토리 전략을 결정하는 비즈니스 논리가 필요합니다. 프로세스 로직은 예를 들어 개인화된 정보를 검색할 수 있습니다.
 
 ### CIF 통합 레이어 {#cif-integration-layer}
 
-CIF 통합 레이어는 다른 상거래 솔루션과의 통합을 표준화하는 데 사용됩니다. Adobe의 서버를 사용하지 않는 플랫폼인 Adobe I/O Runtime 플랫폼에서 실행되며 Adobe 커머스 API에 대해 타사 API를 매핑하여 마이크로서비스 수준에서 통합을 활성화합니다. AEM와의 타사 통합 구축을 시작하기 위해 Adobe는 Magento이 아닌 상거래 백엔드를 Adobe 상거래 API(Magento GraphQL API)를 통해 통합하는 방법을 보여주는 [참조 구현을](https://github.com/adobe/commerce-cif-graphql-integration-reference) 만들었습니다.
+CIF 통합 레이어는 다른 상거래 솔루션과의 통합을 표준화하는 데 사용됩니다. Adobe의 서버를 사용하지 않는 플랫폼인 Adobe I/O Runtime 플랫폼에서 실행되며 Adobe 커머스 API에 대해 타사 API를 매핑하여 마이크로서비스 수준에서 통합을 활성화합니다. AEM와의 타사 통합 구축을 시작하기 위해, Adobe는 Adobe 상거래 API(Magento GraphQL API)를 통해 비Magento 상거래 백엔드를 통합하는 방법을 보여주는 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)을 만들었습니다.
 
-## AEM Commerce 통합 패턴 {#aem-commerce-integration}
+## AEM 커머스 통합 패턴 {#aem-commerce-integration}
 
 일반적으로 구현되는 AEM Commerce 통합 패턴 중 일부가 아래에 나와 있습니다.
 
