@@ -270,7 +270,7 @@ ht-degree: 100%
 * [편집하려면 구성 요소 대화 상자](#component-edit-dialog)를 엽니다.
 * 자산 브라우저에서 [자산을 끌어다 놓아](#drag-and-drop-assets-into-component) 컨텐츠를 바로 추가합니다.
 
-### 구성 요소 편집 대화 상자 {#component-edit-dialog}
+### 구성 요소 편집 대화 상자  {#component-edit-dialog}
 
 [구성 요소 도구 모음의 편집(연필) 아이콘](#component-toolbar)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
 
@@ -394,7 +394,7 @@ ht-degree: 100%
 
 [열 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) 페이지를 선택할 때 페이지가 기반으로 하는 템플릿을 쉽게 확인할 수 있습니다.
 
-## Live Copy 상태 {#live-copy-status}
+## Live Copy 상태  {#live-copy-status}
 
 [Live Copy 상태 페이지 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 사용하면 live copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
 
@@ -409,7 +409,7 @@ ht-degree: 100%
 
 [주석](/help/sites-cloud/authoring/fundamentals/annotations.md)을 사용하면 검토자와 다른 작성자가 컨텐츠에 대한 피드백을 제공할 수 있습니다. 검토 및 유효성 검사 목적으로도 종종 사용됩니다.
 
-## 페이지 미리 보기 {#previewing-pages}
+## 페이지 미리 보기  {#previewing-pages}
 
 페이지를 미리 볼 수 있는 두 가지 옵션이 있습니다.
 
