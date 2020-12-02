@@ -38,7 +38,7 @@ ht-degree: 97%
 
 텍스트 기반 구성 요소의 경우 ![도구 모음](/help/sites-cloud/authoring/assets/editing-full-screen.png)에서 전체 화면 모드 [RTE 전체 화면 단추](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)를 클릭하여 리치 텍스트 편집기를 열고 나머지 페이지 컨텐츠를 숨깁니다.
 
-전체 화면 모드에서는 작성에 사용할 수 있는 구성된 모든 옵션이 표시됩니다. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
+전체 화면 모드에서는 작성에 사용할 수 있는 구성된 모든 옵션이 표시됩니다. 옵션 [의 사용 가능 여부는 구성](/help/implementing/developing/extending/rich-text-editor.md)에 따라 다릅니다.
 
 ![전체 화면 모드의 RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
