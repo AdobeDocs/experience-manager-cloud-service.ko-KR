@@ -22,7 +22,7 @@ Adobe Experience Manager을 Cloud Service으로 개발하는 일 처음? 최신 
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[WKND 개발자 자습서는 여기에서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 제공되며 최신 기술 및 모범 사례를 사용하여 AEM 프로젝트를 만드는 방법을 안내해 줍니다.
+[WKND 개발자 자습서는 ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 여기에서 제공되며 최신 기술 및 모범 사례를 사용하여 AEM 프로젝트를 만드는 방법을 안내해 드립니다.
 
 ## 핵심 개념 {#core-concepts}
 
