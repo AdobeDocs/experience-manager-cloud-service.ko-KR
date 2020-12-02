@@ -3,9 +3,9 @@ title: 자산 HTTP API
 description: ' [!DNL Adobe Experience Manager Assets]의 HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1473'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 >[!NOTE]
 >
->일반적으로(예: 표현물)의 자산 또는 바이너리를 업로드하거나 업데이트하는 것과 관련된 모든 API 호출은 AEM용으로 Cloud Service 배포용으로 사용됩니다. 바이너리를 업로드하려면 [다이렉트 바이너리 업로드 API](developer-reference-material-apis.md#asset-upload-technical)를 대신 사용하십시오.
+>일반적으로(예: 변환) 자산 또는 이진 파일을 업로드하거나 업데이트하는 것과 관련된 모든 API 호출은 AEM에서 [!DNL Cloud Service] 배포로 더 이상 사용되지 않습니다. 바이너리를 업로드하려면 [다이렉트 바이너리 업로드 API](developer-reference-material-apis.md#asset-upload-technical)를 대신 사용하십시오.
 
 ## 콘텐츠 조각 {#content-fragments}
 
