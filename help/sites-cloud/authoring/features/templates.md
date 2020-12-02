@@ -29,7 +29,7 @@ ht-degree: 98%
 
 이 문서에서는 **템플릿 작성자**&#x200B;가 템플릿 콘솔 및 편집기를 사용하여 편집 가능한 템플릿을 만들고 관리하는 방법을 설명합니다.
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+편집 가능한 템플릿이 기술 수준에서 작동하는 방법에 대한 자세한 내용은 개발자 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ For detailed information about how editable templates work at a technical level,
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
-프로젝트에 프로젝트 특정 템플릿을 포함하려면 템플릿 폴더를 만들어야 합니다. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
+프로젝트에 프로젝트 특정 템플릿을 포함하려면 템플릿 폴더를 만들어야 합니다. 관리자 작업이며 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-folders).—>에 설명되어 있습니다.
 
 ### 새 템플릿 만들기 - 템플릿 작성자 {#creating-a-new-template-template-author}
 
@@ -114,7 +114,7 @@ For detailed information about how editable templates work at a technical level,
 
    >[!NOTE]
    >
-   >템플릿 유형은 사전 정의된 템플릿 레이아웃이며 템플릿의 템플릿으로 간주할 수 있습니다. 이러한 템플릿은 개발자 또는 시스템 관리자가 미리 정의합니다. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
+   >템플릿 유형은 사전 정의된 템플릿 레이아웃이며 템플릿의 템플릿으로 간주할 수 있습니다. 이러한 템플릿은 개발자 또는 시스템 관리자가 미리 정의합니다. 개발자 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-type).—>
 
 1. **템플릿 세부 정보**&#x200B;를 완료합니다.
 
@@ -162,7 +162,7 @@ For detailed information about how editable templates work at a technical level,
    * 결과가 만족스럽지 못할 경우 **지우기**&#x200B;를 클릭하거나 탭하여 다른 이미지를 업로드하거나 썸네일을 다시 생성하십시오.
 1. 썸네일이 만족스러우면 **저장 및 닫기**&#x200B;를 클릭하거나 탭합니다.
 
-### 템플릿 활성화 및 허용 - 템플릿 작성자 {#enabling-and-allowing-a-template-template-author}
+### 템플릿 활성화 및 허용 - 템플릿 작성자  {#enabling-and-allowing-a-template-template-author}
 
 페이지를 작성할 때 템플릿을 사용하려면 다음을 수행해야 합니다.
 
@@ -204,7 +204,7 @@ For detailed information about how editable templates work at a technical level,
    >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
    >
-   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >[템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오. 허용된 템플릿에 대한 원칙은 동일하게 유지됩니다.
 
 1. **저장**&#x200B;을 클릭하여 페이지 속성에 대한 변경 사항을 저장합니다.
 
@@ -221,7 +221,7 @@ For detailed information about how editable templates work at a technical level,
 1. 함께 게시할 **컨텐츠 정책**&#x200B;을 선택합니다.
 1. 도구 모음에서 **게시**&#x200B;를 선택하여 작업을 완료합니다.
 
-## 템플릿 편집 - 템플릿 작성자 {#editing-templates-template-authors}
+## 템플릿 편집 - 템플릿 작성자  {#editing-templates-template-authors}
 
 템플릿을 만들거나 편집할 때 다양한 측면을 정의할 수 있습니다. 템플릿 편집 작업은 페이지 작성과 유사합니다.
 
@@ -527,7 +527,7 @@ For detailed information about how editable templates work at a technical level,
 >
 >초기 컨텐츠는 컨텐츠를 작성하기 위한 시작점으로 사용되는 구성 요소 및 페이지 레이아웃을 준비하기 위한 것입니다. 이는 그대로 남아 있어야 하는 실제 컨텐츠용이 아닙니다. 따라서 초기 컨텐츠를 변환할 수 없습니다.
 >
->머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
+>머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 
