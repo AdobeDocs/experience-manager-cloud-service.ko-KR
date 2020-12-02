@@ -1,11 +1,11 @@
 ---
 title: 액세스 가능성( [!DNL Experience Manager Assets])
-description: 'Cloud Service의 액세서빌러티 기능이 장애가 있는 사용자에게 어떻게 도움이 되는지 알아보십시오. [!DNL Adobe Experience Manager] '
+description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 의 액세서빌러티 기능이 장애가 있는 사용자를 돕는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1dc278c85a1dabdd3e6ac4c0de95271d9da3260c
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1912'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# [!DNL Adobe Experience Manager Assets]의 Cloud Service {#accessibility-in-aem-assets}의 액세스 가능성 기능
+# [!DNL Adobe Experience Manager Assets]에 [!DNL Cloud Service] {#accessibility-in-aem-assets}의 액세스 가능성 기능
 
 [!DNL Adobe Experience Manager] 콘텐츠 제작자와 출판업체는 웹에서 탁월한 경험을 제공할 수 있습니다. Adobe은 [!DNL Experience Manager]의 접근성을 개선하여 장애가 있는 크리에이터가 포함되도록 노력하고 있습니다. 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각, 청각, 이동성 또는 기타 장애가 있는 개인을 포함한 전세계 표준을 준수합니다.
 
