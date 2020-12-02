@@ -2,9 +2,9 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
+source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4082'
 ht-degree: 8%
 
 ---
@@ -382,6 +382,8 @@ Phase 2 finished
 
 1. 이전 섹션의 유효성 검사기를 실행하여 지원되는 지시문만 포함하도록 합니다. 구성이 올바르지 않으면 스크립트가 실패합니다.
 2. Apache httpd를 시작할 수 있도록 구문이 올바른지 테스트하려면 `httpd -t command`을 실행합니다. 성공하면 배포를 위해 구성을 준비해야 합니다.
+
+클라우드 관리자를 배포하는 동안 `httpd -t syntax` 확인도 실행되고 모든 오류가 클라우드 관리자 `Build Images step failure` 로그에 포함됩니다.
 
 ## Apache 및 Dispatcher 구성을 로컬로 테스트 {#testing-apache-and-dispatcher-configuration-locally}
 
