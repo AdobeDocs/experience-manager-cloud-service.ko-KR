@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
+source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '677'
 ht-degree: 3%
 
 ---
@@ -67,6 +67,22 @@ AEM Commerce를 Magento과 연결하려면 다음 단계를 따르십시오.
 >또는 [클라우드 관리자 API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)를 사용하여 클라우드 관리자 변수를 구성할 수도 있습니다.
 
 이제 AEM Commerce를 Cloud Service으로 사용할 준비가 되었으며 Cloud Manager를 통해 프로젝트를 배포할 수 있습니다.
+
+## 단계 카탈로그 기능 사용(선택 사항) {#staging}
+
+>[!NOTE]
+>
+>이 기능은 Magento Enterprise Edition 또는 Magento Cloud에서만 사용할 수 있습니다.
+
+1. Magento에 로그인하고 통합 토큰을 만듭니다. 자세한 내용은 [토큰 기반 인증](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)을 참조하십시오. 통합 토큰에 *만* 리소스에 액세스할 수 있는지 확인하십시오. `Content -> Staging` `Access Token` 값을 복사합니다.
+
+1. 클라우드 관리자에서 `COMMERCE_AUTH_HEADER` 비밀 변수 설정:
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   ```
+
+   Cloud Manager용 Adobe I/O CLI를 구성하는 방법은 [Magento](#magento)와 AEM Commerce 연결을 참조하십시오.
 
 ## 타사 상거래 통합 {#integrations}
 
