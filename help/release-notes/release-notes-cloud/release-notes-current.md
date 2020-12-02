@@ -2,9 +2,9 @@
 title: 'Cloud Service의 현재 릴리스 노트입니다. [!DNL Adobe Experience Manager] '
 description: 'Cloud Service의 현재 릴리스 노트입니다. [!DNL Adobe Experience Manager] '
 translation-type: tm+mt
-source-git-commit: 89f7e60205efc275bbeb97246ccc3add28810cfa
+source-git-commit: 8ee5f7c0c5690dd21291261e5e2ad01599c0c174
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1233'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 릴리스 날짜 {#release-date}
 
-Cloud Service 2020.11.0으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜는 2020년 12월 1일입니다.
+Cloud Service 2020.11.0으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜는 2020년 12월 2일입니다.
 다음 릴리스(2020.12.0)는 2020년 12월 17일에 제공됩니다
 
 ## [!DNL Adobe Experience Manager Sites] cloud service  {#sites}
@@ -25,11 +25,9 @@ Cloud Service 2020.11.0으로 [!DNL Adobe Experience Manager]에 대한 릴리�
 
 * **[계층 관리](/help/sites-cloud/authoring/launches/managing-pages.md)  및  [향후 타임워프](/help/sites-cloud/authoring/launches/preview.md)** 시작:론치 내에서 페이지를 추가/제거하기 위한 새로운 UI와 타임워프가 있는 검색 사이트는 론치에서 향후 상태를 보여줍니다.
 
-* **[확장 컨텐츠 조각 모델 및 편집기](/help/assets/content-fragments/content-fragments-models.md)**:다양한 데이터 유형에 대한 입력 유효성 검사, 새로운 양식 시각화 기능이 추가된 열거형 데이터 유형, 자산 UI에서 컨텐츠 조각 모델 이름이 표시되고 검색 가능해집니다.
+* **롤아웃에 사용할 수 있는 Live Copy 페이지 정렬**:이름,  [!UICONTROL 마지막 수정 날짜] 및  [!UICONTROL 마지막 롤아웃 날짜 속성을 사용하여 롤아웃할 수 있는 Live Copy 페이지를 정렬하는 새로운 ]옵션  입니다. 페이지에 대한 [!UICONTROL 마지막 롤아웃 날짜]는 새 속성이 도입되었습니다.
 
-* **사이트 설치 가능**:사이트를 설치할 수 있고 선택 사항을 오프라인에서 사용할 수 있도록 하는 Progressive Web Application(PWA) 기능을 구성하는 새로운 사이트 속성입니다. 이 기능을 사용하려면 핵심 구성 요소가 필요합니다.
-
-* **[핵심 구성 요소 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**:AEM은 핵심 구성 요소의 최신 릴리스에 대한 자동 업데이트의 Cloud Service으로 제공됩니다. 릴리스 2.12.0에는 [새로운 POST 양식 처리기;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 컨텍스트 인식 구성을 통해 사용자 지정 CSS, Javascript 및 메타데이터 [태그를 포함하는 기능;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 및 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 유틸리티와 같은 커뮤니티에서 제공하는 최신 개선 사항이 포함되어 있습니다. 2.12.0의 [변경 내용 목록](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)을 참조하십시오.
+<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
 
 ## [!DNL Adobe Experience Manager Assets] cloud service  {#assets}
 
@@ -40,11 +38,11 @@ Cloud Service 2020.11.0으로 [!DNL Adobe Experience Manager]에 대한 릴리�
 
    ![벌크 가져오기 구성](/help/assets/assets/bulk-import-config-low-res.png)
 
-* 사용자는 카드 및 열 보기에서 디지털 자산을 정렬할 수 있습니다.
+* 사용자는 이제 카드 및 열 보기에서 디지털 자산을 정렬할 수 있습니다.
 
    ![자산 정렬](/help/assets/assets/asset-sort-options.png)
 
-* 이 릴리스의 [Experience Manager 자산]에서 액세스 가능성에 대해 다음 개선 사항이 수행됩니다. 자세한 내용은  [!DNL Assets]](/help/assets/accessibility.md)의 [액세스 가능성 기능을 참조하십시오.
+* 이 릴리스의 [!DNL Experience Manager Assets]에 있는 액세스 가능성에 대해 다음 개선 사항이 수행됩니다. 자세한 내용은  [!DNL Assets]](/help/assets/accessibility.md)의 [액세스 가능성 기능을 참조하십시오.
 
    * 키보드를 사용하여 타임라인을 탐색할 때 Esc 키는 초점을 그대로 유지하면서 모두 표시 옵션을 축소할 수 있습니다.
    * 키보드 탭 키를 사용하여 탐색할 때 추가된 태그에서 마지막 태그를 제거한 후 태그 필드가 포커스를 유지합니다.
@@ -83,8 +81,6 @@ Cloud Service 2020.11.0으로 [!DNL Adobe Experience Manager]에 대한 릴리�
 
 * GraphQL 클라이언트 구성은 Sling CA 구성에 직접 구성이 지정되지 않았지만 상위 구성 중 하나에서 올바르게 읽히지 않았습니다. 이 문제가 해결되었습니다.
 
-
-
 ## Cloud Manager {#cloud-manager}
 
 ### 릴리스 날짜 {#release-date-cm}
@@ -111,13 +107,17 @@ Cloud Service 2020.11.0으로 [!DNL Adobe Experience Manager]에 대한 릴리�
 
 * 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다. [검색 워크플로 인스턴스](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)를 참조하십시오.
 
-### 사용자 동기화 {#user-sync}
+### 게시 계층 사용자 데이터 동기화 {#user-sync}
 
 * 프로필 속성 및 그룹 멤버십을 비롯한 사용자 데이터는 게시 계층으로 유지될 수 있습니다. [등록, 로그인 및 사용자 프로필 설명서](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)에서 이 기능에 대한 자세한 내용을 살펴보십시오.
 
-### Analyzers {#analyzers}
+### SDK 빌드 분석기 {#analyzers}
 
 Cloud Service SDK Build Analyzer Maven 플러그인으로 AEM은 누락된 종속성을 포함하여, 대규모 프로젝트의 문제를 감지합니다. Cloud Manager를 사용하여 클라우드 환경에 배포하기 전에 개발자는 로컬 개발 중에 문제를 발견할 수 있습니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) 및 [여기](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk) 설명서를 참조하십시오.
+
+### 기타 {#others-foundation}
+
+새 [&quot;httpd -t&quot; 구문](/help/implementing/dispatcher/disp-overview.md#local-validation) Cloud Manager 빌드 중에 실행된 apache 및 dispatcher 구성을 확인합니다. 이 구성 요소는 AEM을 Cloud Service SDK의 Dispatcher 도구로 사용하여 실행할 수도 있습니다.
 
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
