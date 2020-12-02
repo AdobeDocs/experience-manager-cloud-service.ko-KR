@@ -10,7 +10,7 @@ ht-degree: 4%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.11.0 {#release-notes}
+# Cloud Service 2020.11.0인 Adobe Experience Manager의 클라우드 관리자에 대한 릴리스 노트 {#release-notes}
 
 이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2020.11.0으로 간략하게 설명합니다.
 
@@ -22,10 +22,10 @@ ht-degree: 4%
 
 ### 새로운 기능 {#what-is-new}
 
-* 이제 환경 카드 및 환경 요약 페이지의 환경 메뉴 옵션 **에서 사용자가 로컬 로그인을** 사용할 수 있습니다.
-자세한 내용은 [환경](/help/implementing/cloud-manager/manage-environments.md##login-locally) 관리를 참조하십시오.
+* 이제 환경 카드 및 환경 요약 페이지의 환경 메뉴 옵션에서 사용자가 새 메뉴 옵션 **로컬 로그인**을 사용할 수 있습니다.
+자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md##login-locally)를 참조하십시오.
 
-* Cloud **Manager의 학습** 탭이 UI의 새 이미지로 새로 고쳐졌습니다.
+* Cloud Manager의 **학습** 탭이 UI의 새 이미지로 새로 고침되었습니다.
 
 ### 버그 수정 {#bug-fixes-cloud-manager}
 
