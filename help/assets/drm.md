@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Assets]의 Digital Rights Management'
-description: ' [!DNL Experience Manager] 에서 Cloud Service으로 라이선스가 부여된 자산에 대한 자산 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
+description: ' [!DNL Experience Manager] 에서 [!DNL Cloud Service]의 라이선스가 부여된 자산에 대한 에셋 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1345'
 ht-degree: 0%
 
 ---
