@@ -43,7 +43,7 @@ ht-degree: 90%
       + [마법사 사용](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [프로젝트 설정](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [빌드 환경 이해](getting-access-to-aem-in-cloud/build-environment-details.md)
-   + Cloud Manager 릴리스 노트 {#release-notes-cloud-manager}
+   + 클라우드 관리자 {#release-notes-cloud-manager} 릴리스 노트
       + [현재 릴리스 노트(2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [2020.10.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [2020.9.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
