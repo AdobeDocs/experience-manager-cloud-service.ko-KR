@@ -1,10 +1,10 @@
 ---
-title: Cloud Service으로 Experience Manager으로 마이그레이션하기 위한 단일 호출기
-description: Cloud Service으로 Experience Manager으로 마이그레이션하기 위한 단일 호출기
+title: Cloud Service으로 Experience Manager 마이그레이션
+description: Cloud Service으로 Experience Manager 마이그레이션
 translation-type: tm+mt
-source-git-commit: 02e6581ec5a922d71c53e99212a1f8aecc405f6f
+source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2070'
 ht-degree: 8%
 
 ---
@@ -167,7 +167,7 @@ Cloud Manager를 사용하면 조직에서 클라우드에서 자체 Experience 
 1. [클라우드 관리에 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) 배포
 2. [클라우드 관리자 품질 파이프라인을 통해 고객 코드 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
 3. [개발 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**마이그레이션**] 전용 패키지 또는  [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration(CTT)을 사용한 컨텐츠 전송
+4. [**마이그레이션**] 전용 패키지 또는 CTT( [Content Transfer Tool](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md))를 사용한 컨텐츠 전송
 5. 권장되는 테스트 주기 수행(연기, QA 등)
 6. Cloud Manager 프로덕션 파이프라인으로 홍보
 7. 연기 테스트 유효성 검사
