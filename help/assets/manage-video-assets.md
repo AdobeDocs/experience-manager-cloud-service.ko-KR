@@ -3,9 +3,9 @@ title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및  [!DNL Adobe Experience Manager]에 게시할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ## 처리 프로필 {#transcode-video}을(를) 사용하여 트랜스코딩
 
-[!DNL Experience Manager] 를 Cloud Service으로 사용하면 처리 프로필을 사용하여 MP4 비디오 파일을 기본적인 트랜스코딩할 수 있습니다. 이 기능을 사용하면 업로드할 뿐만 아니라 MP4 비디오 파일을 미리 보고 크기를 조절할 수 있습니다.
+[!DNL Experience Manager] 를  [!DNL Cloud Service] 사용하면 처리 프로필을 사용하여 MP4 비디오 파일의 기본 트랜스코딩을 수행할 수 있습니다. 이 기능을 사용하면 업로드할 뿐만 아니라 MP4 비디오 파일을 미리 보고 크기를 조절할 수 있습니다.
 
 ![Experience Manager에서 비디오 트랜스코딩용 처리 프로필 만들기](assets/video-processing-profile-for-mp4.png)
 
