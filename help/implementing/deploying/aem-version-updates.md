@@ -35,7 +35,7 @@ AEM 버전 업데이트는 다음과 같은 두 가지 유형입니다.
 
 AEM 업데이트는 제작 중인 시스템에 서비스를 중단 없이 여러 단계를 거쳐 강력하고 완벽하게 자동화된 제품 인증 과정을 거칩니다. 상태 검사는 응용 프로그램의 상태를 모니터링하는 데 사용됩니다. AEM에서 Cloud Service 업데이트으로 이러한 검사가 실패하는 경우 릴리스가 진행되지 않으며 Adobe에서 업데이트로 인해 예기치 않은 동작이 발생한 이유를 조사합니다.
 
-[제품 업그레이드 및 고객 코드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 푸시가 최신 AEM 버전 업데이트 중에도 제품 테스트 및 제품 기능 테스트를 통해 제품 업그레이드를 막고 제품 개발을 중단하도록 합니다.
+[제품 업그레이드 및 고객 코드 ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 푸시가 AEM 버전 업데이트 중에도 제품 테스트를 실행하고 제품 업그레이드를 방지하며 제품 부하를 방지하는 고객 기능 테스트도 유효하게 됩니다.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ AEM 업데이트는 제작 중인 시스템에 서비스를 중단 없이 여러
 
 ## 복합 노드 저장소 {#composite-node-store}
 
-위에 언급했듯이 대부분의 경우 업데이트로 인해 노드 클러스터인 작성자를 비롯하여 다운타임이 0으로 줄어듭니다. Oak의 *복합 노드 스토어* 기능 때문에 롤링 업데이트가 가능합니다.
+위에 언급했듯이 대부분의 경우 업데이트로 인해 노드 클러스터인 작성자를 비롯하여 다운타임이 0으로 줄어듭니다. Oak의 *복합 노드 저장소* 기능으로 인해 롤링 업데이트가 가능합니다.
 
-이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 순환 배포에서는 기존 Blue AEM 버전과 구별되는 자체(TarMK 기반 변경 가능한 저장소)가 포함되어 있지만, 두 버전은 변경 가능, `/libs` 및 기타 등의 영역이 포함된 공유 DocumentMK 기반 저장소를 참조하고 `/content` `/conf` `/etc` 있습니다. 파란색과 녹색 둘 다 자체 버전이 있으므로 롤링 업데이트 동안 둘 다 활성 상태일 수 `/libs`있으며, 파란색이 완전히 녹색으로 바뀔 때까지 둘 다 트래픽을 수행할 수 있습니다.
+이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 순환 배포에서 새 Green AEM 버전은 고유한 `/libs`(TarMK 기반 변경 가능한 저장소)을 포함하며, 이전 Blue AEM 버전과 구별됩니다. 두 버전은 모두 `/content`, `/conf`, `/etc` 등과 같은 영역을 포함하는 공유 DocumentMK 기반 변경 가능 저장소를 참조합니다. 파란색과 녹색 둘 다 자체 버전의 `/libs`을 가지고 있으므로 롤링 업데이트 동안 둘 다 활성 상태일 수 있습니다. 둘 다 파란색이 완전히 녹색으로 바뀔 때까지 트래픽을 받습니다.
 
