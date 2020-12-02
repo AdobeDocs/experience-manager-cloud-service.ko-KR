@@ -5,19 +5,19 @@ breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 73%
+source-wordcount: '467'
+ht-degree: 74%
 
 ---
 
 
 # [!DNL Assets] 가이드  {#assets}
 
-+ [[!DNL Assets] cloud service](/help/assets/home.md)
++ [[!DNL Assets] as [!DNL Cloud Service]](/help/assets/home.md)
 + [개요 및 새로운 기능](overview.md)
-+ [Cloud Service [!DNL Assets] 로 주목할 만한 변경 사항](assets-cloud-changes.md)
++ [주목할 만한 변경 사항 [!DNL Assets] 을 [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] 아키텍처](architecture.md)
 + [지원되는 파일 형식](file-format-support.md)
 + [자산 마이크로서비스 개요](asset-microservices-overview.md)
