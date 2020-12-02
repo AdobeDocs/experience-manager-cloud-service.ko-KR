@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 빌드 환경 이해 {#understanding-build-environment}
 
-## 빌드 환경 세부 사항 {#build-environment-details}
+## 빌드 환경 세부 정보 {#build-environment-details}
 
 Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하고 테스트합니다. 이 환경에는 다음과 같은 속성이 있습니다.
 
@@ -27,23 +27,23 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
    * imagemagick
    * graphicsmagick
 
-* 다른 패키지는 [아래](#installing-additional-system-packages)설명에 따라 빌드 시간에 설치할 수 있습니다.
+* [below](#installing-additional-system-packages)에 설명된 대로 빌드 시간에 다른 패키지를 설치할 수 있습니다.
 * 모든 빌드는 본래 환경에서 수행됩니다.빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
 * Maven은 항상 다음 세 개의 명령으로 실행됩니다.
 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven은 공개 Adobe Artifact 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 **구성됩니다** . (자세한 내용은 [Adobe Public Maven Repository](https://repo.adobe.com/) 를 참조하십시오.)
+* Maven은 공용 Adobe **Artifact** 리포지토리를 자동으로 포함하는 settings.xml 파일로 시스템 수준에서 구성됩니다. (자세한 내용은 [Adobe Public Maven Repository](https://repo.adobe.com/)를 참조하십시오.)
 
 >[!NOTE]
->Cloud Manager가 특정 버전의 버전을 정의하지는 않지만, 사용된 버전 `jacoco-maven-plugin`은 적어도 같아야 합니다 `0.7.5.201505241946`.
+>Cloud Manager가 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만, 사용된 버전은 `0.7.5.201505241946` 이상이어야 합니다.
 
 ### Java 11 지원 사용 {#using-java-support}
 
 Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로젝트 작성을 지원합니다. 기본적으로 프로젝트는 Java 8을 사용하여 빌드됩니다.
 
-프로젝트에서 Java 11을 사용하려는 고객은 [Apache Maven 도구 체인 플러그인을 사용할 수 있습니다](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+프로젝트에서 Java 11을 사용하려는 고객은 [Apache Maven Toolchain Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/)을 사용할 수 있습니다.
 
 이렇게 하려면 pom.xml 파일에서 다음과 같은 `<plugin>` 항목을 추가합니다.
 
@@ -71,10 +71,10 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
 ```
 
 >[!NOTE]
->지원되는 공급업체 값 `oracle` 은 `sun`and이며 지원되는 버전 값은 `1.8`및 `1.11`입니다 `11`.
+>지원되는 공급업체 값은 `oracle` 및 `sun`이며 지원되는 버전 값은 `1.8`, `1.11` 및 `11`입니다.
 
 >[!NOTE]
->Cloud Manager 프로젝트 빌드는 여전히 Java 8을 사용하여 Maven을 호출하므로, [Apache Maven Enforcer 플러그인과 같은 플러그인을 통해 도구 체인 플러그인에 구성된 Java 버전을](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 확인하거나 적용할 수 없으며 이러한 플러그인을 사용할 수 없습니다.
+>Cloud Manager 프로젝트 빌드는 여전히 Java 8을 사용하여 Maven을 호출하므로, [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)과 같은 플러그인을 통해 툴체인 플러그인에 구성된 Java 버전을 확인하거나 적용할 수 없습니다. 따라서 이러한 플러그인을 사용하지 않아야 합니다.
 
 ## 환경 변수 {#environment-variables}
 
@@ -113,7 +113,7 @@ CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행�
 
 변수 이름에는 영숫자 및 밑줄(_) 문자만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다. 파이프라인당 변수 수는 200자로 제한됩니다. 문자열 유형 변수의 경우 각 이름은 100자 미만이어야 하며, secretString 유형 변수의 경우에는 각 값이 2048자 미만이어야 합니다.
 
-파일 내에서 사용하는 경우 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다. `Maven pom.xml`
+`Maven pom.xml` 파일 내에서 사용할 경우 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다.
 
 ```xml
         <profile>
@@ -131,7 +131,7 @@ CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행�
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-일부 빌드는 완전히 작동하도록 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으므로 적절한 언어 인터프리터를 설치해야 합니다. 이 작업은 APT를 호출하기 위해 [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) 을 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 클라우드 관리자별 Maven 프로필로 둘러싸야 합니다. 예를 들어, python을 설치하려면:
+일부 빌드는 완전히 작동하도록 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으므로 적절한 언어 인터프리터를 설치해야 합니다. 이 작업은 [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/)을 호출하여 APT를 호출하는 방법으로 수행할 수 있습니다. 이 실행은 일반적으로 클라우드 관리자별 Maven 프로필로 둘러싸야 합니다. 예를 들어, python을 설치하려면:
 
 ```xml
         <profile>
@@ -184,7 +184,7 @@ CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행�
         </profile>
 ```
 
-이와 동일한 기술을 사용하여 RubyGems용 또는 Python Packages `gem` 용 언어 관련 패키지를 설치할 수 `pip` 있습니다.
+이와 동일한 기술을 사용하여 언어 특정 패키지(RubyGems의 경우 `gem` 사용, Python 패키지의 경우 `pip` 사용)를 설치할 수 있습니다.
 
 >[!NOTE]
->이러한 방식으로 시스템 패키지를 설치해도 Adobe Experience Manager을 실행하는 데 사용되는 런타임 환경에 설치되지 **않습니다** . AEM 환경에 시스템 패키지를 설치해야 하는 경우 Adobe 담당자에게 문의하십시오.
+>이러한 방식으로 시스템 패키지를 설치하면 Adobe Experience Manager 실행에 사용되는 런타임 환경에 **이(가) 설치되지 않습니다.** AEM 환경에 시스템 패키지를 설치해야 하는 경우 Adobe 담당자에게 문의하십시오.
