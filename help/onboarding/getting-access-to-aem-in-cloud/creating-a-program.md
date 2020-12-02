@@ -16,7 +16,7 @@ ht-degree: 3%
 
 프로그램 만들기 마법사는 특정 고객 또는 조직에서 사용할 수 있는 범위 내에서 프로그램을 만드는 사용자의 목적에 따라 자세한 내용을 제출하도록 요청합니다.
 
-Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 없는 경우 사용자에게 첫 번째 프로그램 **만들기** 화면이 나타납니다. 사용자가 *Esc를* 선택하거나 대화 상자 바깥쪽을 클릭하면 다음 화면이 표시됩니다.
+Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 없는 경우 사용자는 **첫 번째 프로그램 만들기** 화면이 표시됩니다. 사용자가 *Esc*&#x200B;을 선택하거나 대화 상자를 클릭하면 다음 화면이 표시됩니다.
 
 ![](assets/create-program1.png)
 
@@ -28,7 +28,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->프로그램이 이미 존재하는 경우 아래 그림과 같이 **랜딩** 페이지의 오른쪽 상단에 프로그램 추가가 표시됩니다.
+>프로그램이 이미 존재하는 경우 아래 그림과 같이 랜딩 페이지의 오른쪽 상단에 **프로그램 추가**&#x200B;가 표시됩니다.
 
 ![](assets/create-program-add.png)
 
@@ -36,7 +36,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 아래의 단계에 따라 샌드박스 프로그램을 만드십시오.
 
-1. 프로그램 만들기 마법사에서 **샌드박스 설정을 선택합니다**. 사용자가 만들기를 선택하기 전에 프로그램 이름을 **제출합니다**.
+1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;을 선택합니다. 사용자가 **만들기**&#x200B;를 선택하기 전에 프로그램 이름을 제출합니다.
 
    ![](assets/create-sandbox.png)
 
@@ -44,16 +44,16 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
    ![](assets/program-create-setupdemo2.png)
 
-1. 프로그램 설정 및 프로젝트 생성 단계가 완료되면 사용자는 아래 그림과 같이 **Git** 관리 링크에 액세스할 수 있습니다.
+1. 프로그램 설정 및 프로젝트 생성 단계가 완료되면 사용자는 아래 그림과 같이 **Git 관리** 링크에 액세스할 수 있습니다.
 
    ![](assets/create-program4.png)
 
    >[!NOTE]
    >
-   >Cloud Manager UI에서 셀프 서비스 Git 계정 관리를 사용하여 Git 리포지토리에 액세스하고 관리하는 방법에 대한 자세한 내용은 Git 액세스 [를 참조하십시오](/help/implementing/cloud-manager/accessing-git.md).
+   >Cloud Manager UI에서 셀프 서비스 Git 계정 관리를 사용하여 Git 리포지토리에 액세스하고 관리하는 방법에 대한 자세한 내용은 [Git 액세스](/help/implementing/cloud-manager/accessing-git.md)를 참조하십시오.
 
 
-1. 개발 환경이 만들어지면 아래 그림과 같이 사용자는 AEM **** 링크에 액세스할 수 있습니다.
+1. 개발 환경이 만들어지면 사용자는 아래 그림과 같이 **AEM** 링크에 액세스할 수 있습니다.
 
    ![](assets/create-program-5.png)
 
@@ -68,7 +68,7 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 ## 샌드박스 프로그램 삭제 {#delete-sandbox-program}
 
-A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
+클라우드 관리자의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 클라우드 관리자 UI를 통해 프로덕션 및 스테이지 환경 설정을 삭제할 수 있습니다.
 
 >[!NOTE]
 >프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
@@ -79,18 +79,18 @@ A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud
 
 또는,
 
-[ **프로그램 개요** ] **페이지에서 [프로그램** 삭제]를 선택하여 샌드박스 프로그램을 삭제합니다.
+샌드박스 프로그램을 삭제하려면 **프로그램 개요** 페이지에서 **프로그램 삭제**&#x200B;를 선택합니다.
 
 ![](assets/delete-sandbox2.png)
 
 
-## 정규 프로그램 만들기 {#create-regular-program}
+## 정규 프로그램 {#create-regular-program} 만들기
 
-일반 ** 프로그램은 AEM 및 Cloud Manager에 익숙하고 코드를 Production에 배포하기 위한 목적으로 작성, 빌드 및 테스트할 준비가 된 사용자를 위한 것입니다.
+*Regular* 프로그램은 AEM 및 Cloud Manager에 익숙하고 프로덕션 팀에 배포하는 목적에 따라 코드 작성, 작성 및 테스트를 시작할 준비가 된 사용자를 위한 것입니다.
 
 아래 절차에 따라 일반 프로그램을 만드십시오.
 
-1. 프로그램 **만들기** 마법사에서 프로덕션 설정을 선택하여 일반 프로그램을 만듭니다. 사용자는 [계속]을 선택하기 전에 기본 프로그램 이름을 수락하거나 편집할 수 **있습니다**.
+1. 프로그램 만들기 마법사에서 **프로덕션**&#x200B;에 대해 설정을 선택하여 일반 프로그램을 만듭니다. 사용자는 **계속**&#x200B;을 선택하기 전에 기본 프로그램 이름을 수락하거나 편집할 수 있습니다.
 
    ![](assets/create-prod1.png)
 
@@ -104,11 +104,11 @@ A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud
 
    ![](assets/set-up-prod2.png)
 
-1. 솔루션을 선택하고 나면 **만들기를 클릭합니다**.
+1. 솔루션을 선택하고 나면 **만들기**&#x200B;를 클릭합니다.
 
    ![](assets/set-up-prod3.png)
 
-1. 랜딩 페이지에 프로그램 카드가 표시되면, 마우스를 올려 Cloud Manager 아이콘을 선택하여 Cloud Manager **개요** 페이지로 이동합니다.
+1. 랜딩 페이지에 프로그램 카드가 표시되면 마우스를 올려 클라우드 관리자 아이콘을 선택하여 클라우드 관리자 **개요** 페이지로 이동합니다.
 
    ![](assets/set-up-prod4.png)
 
