@@ -10,7 +10,7 @@ ht-degree: 2%
 ---
 
 
-# Structure of the AEM UI {#structure-of-the-aem-ui}
+# AEM UI {#structure-of-the-aem-ui} 구조
 
 AEM UI에는 몇 가지 기본 원칙이 있으며 몇 가지 주요 요소가 있습니다.
 
@@ -65,7 +65,7 @@ AEM은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 맞�
 * **참조**
 * **필터**
 
-기본값은 **컨텐츠 전용** (레일 숨김)입니다.
+기본값은 **Content Only**(레일 숨김)입니다.
 
 ![왼쪽 레일](assets/ui-left-rail.png)
 
@@ -96,13 +96,13 @@ AEM은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 맞�
 
 ### 사이드 패널 {#side-panel}
 
-여기에는 세 개의 기본 탭이 있습니다. [ **자산** ] 및 [ **구성 요소** ] 탭을 사용하여 이러한 요소를 선택하고 패널에서 드래그하여 페이지에 놓을 수 있습니다. [ **컨텐츠 트리** ] 탭에서는 페이지의 컨텐츠 계층을 검사할 수 있습니다.
+여기에는 세 개의 기본 탭이 있습니다. **Assets** 및 **Components** 탭에서는 이러한 요소를 선택하고 패널에서 드래그하여 페이지에 놓을 수 있습니다. **컨텐츠 트리** 탭에서는 페이지의 컨텐츠 계층을 검사할 수 있습니다.
 
 사이드 패널은 기본적으로 숨겨집니다. 이 옵션을 선택하면 왼쪽 측면에 표시될 수도 있고, 창 크기가 1024px보다 작으면 전체 창을 덮기 위해 옆으로 밀릴 수도 있습니다.예를 들어 모바일 디바이스에서 가능합니다.
 
 ![사이드 패널](assets/ui-side-panel.png)
 
-### 사이드 패널 - 에셋 {#side-panel-assets}
+### 사이드 패널 - 자산 {#side-panel-assets}
 
 자산 탭에서 자산 범위에서 선택할 수 있습니다. 특정 용어에 대해 필터링하거나 그룹을 선택할 수도 있습니다.
 
@@ -128,7 +128,7 @@ AEM은 두 가지 스타일을 만들지 않고 모든 화면과 장치에 맞�
 
 ### 오버레이 {#overlays}
 
-이러한 오버레이는 컨텐츠 프레임을 오버레이하며 [레이어에서](#layer) 사용되므로 구성 요소 및 해당 컨텐츠와 상호 작용(완전히 투명하게)하는 방법을 실현할 수 있습니다.
+이러한 오버레이는 컨텐츠 프레임을 오버레이하며 [layers](#layer)에서 구성 요소 및 해당 컨텐츠와 상호 작용(완전히 투명하게)하는 방법에 대한 메커니즘을 실현합니다.
 
 오버레이는 컨텐츠 프레임에 해당 구성 요소를 오버레이하지만 다른 모든 페이지 제작 요소와 함께 편집기 프레임에서 라이브됩니다.
 
@@ -169,4 +169,4 @@ AEM에는 페이지 작성을 위해 이미 구현된 여러 레이어가 포함
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-자세한 기술 정보는 페이지 편집기의 [JS 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) 세트를 참조하십시오.
+자세한 기술 정보는 페이지 편집기의 [JS 설명서 세트](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)를 참조하십시오.
