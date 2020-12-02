@@ -3,9 +3,9 @@ title: '개발자 참조: [!DNL Assets]'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1208'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # [!DNL Assets] API 및 개발자 참조 자료  {#assets-cloud-service-apis}
 
-이 문서에는 Cloud Service으로 [!DNL Assets] 개발자를 위한 참조 자료와 리소스가 포함되어 있습니다. 여기에는 새로운 업로드 방법, API 참조 및 사후 처리 워크플로우에서 제공되는 지원에 대한 정보가 포함됩니다.
+이 문서에는 [!DNL Assets](으)로 개발자를 위한 참조 자료와 리소스가 포함되어 있습니다. [!DNL Cloud Service] 여기에는 새로운 업로드 방법, API 참조 및 사후 처리 워크플로우에서 제공되는 지원에 대한 정보가 포함됩니다.
 
 ## 자산 업로드 {#asset-upload-technical}
 
-[!DNL Experience Manager] as a Cloud Service provides a new method to upload assets to the repository. 사용자는 HTTP API를 사용하여 자산을 클라우드 스토리지에 직접 업로드할 수 있습니다. 이진 파일을 업로드하는 단계는 다음과 같습니다.
+[!DNL Experience Manager] as a  [!DNL Cloud Service] provides a new method to upload assets to the repository. 사용자는 HTTP API를 사용하여 자산을 클라우드 스토리지에 직접 업로드할 수 있습니다. 이진 파일을 업로드하는 단계는 다음과 같습니다.
 
 1. [HTTP 요청을 제출합니다](#initiate-upload). 새 바이너리를 업로드하려는 의도를 [!DNL Experience Manage]에 알려줍니다.
 1. [POST을 사용하여 ](#upload-binary) 초기화 요청에서 제공하는 하나 이상의 URI에 대한 컨텐츠를로 지정합니다.
@@ -118,7 +118,7 @@ HTTP POST 요청을 원하는 폴더에 제출합니다. 이 폴더에 자산이
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-새 업로드 메서드는 Cloud Service으로 [!DNL Adobe Experience Manager]에 대해서만 지원됩니다. [!DNL Adobe Experience Manager] 6.5의 API는 더 이상 사용되지 않습니다. 자산 또는 표현물(바이너리 업로드)의 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
+새 업로드 메서드는 [!DNL Adobe Experience Manager]에 대해서만 [!DNL Cloud Service]으로 지원됩니다. [!DNL Adobe Experience Manager] 6.5의 API는 더 이상 사용되지 않습니다. 자산 또는 표현물(바이너리 업로드)의 업로드 또는 업데이트와 관련된 방법은 다음 API에서 더 이상 사용되지 않습니다.
 
 * [Experience Manager 에셋 HTTP API](mac-api-assets.md)
 * `AssetManager` Java API, 좋아요  `AssetManager.createAsset(..)`
@@ -138,7 +138,7 @@ HTTP POST 요청을 원하는 폴더에 제출합니다. 이 폴더에 자산이
 
 이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 고객은 에셋 마이크로서비스를 사용하여 에셋을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로 서비스는 구성 및 사용이 훨씬 간단합니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다.
 
-[!DNL Experience Manager] as Cloud Service은 다음 워크플로우 단계를 지원합니다.
+[!DNL Experience Manager] 을  [!DNL Cloud Service] 통해 다음 워크플로우 단계를 지원합니다.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -193,5 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Cloud Service SDK로서의 Experience Cloud](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [Experience Cloud [!DNL Cloud Service] 를 SDK로 설정합니다](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
