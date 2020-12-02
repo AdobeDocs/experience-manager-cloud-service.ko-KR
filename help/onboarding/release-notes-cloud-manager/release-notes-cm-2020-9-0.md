@@ -10,7 +10,7 @@ ht-degree: 4%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.9.0 {#release-notes}
+# Cloud Service 2020.9.0인 Adobe Experience Manager의 클라우드 관리자에 대한 릴리스 노트 {#release-notes}
 
 이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2020.9.0으로 간략하게 설명합니다.
 
