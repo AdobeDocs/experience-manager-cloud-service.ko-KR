@@ -4,9 +4,9 @@ description: '메타데이터의 유형과 메타데이터에 따라 자산을 �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1930'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
 
 ## 처리 프로필 {#metadata-compute-service}을(를) 사용한 사용자 지정 메타데이터
 
-Cloud Service으로 에셋은 클라우드 기본 서비스를 사용하여 자산에 대한 사용자 정의 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 처리 프로필[을 사용하는 방법을 참조하십시오.](/help/assets/asset-microservices-configure-and-use.md#use-profiles)
+[!DNL Cloud Service]인 자산은 클라우드 기본 서비스를 사용하여 자산에 대한 사용자 지정 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 처리 프로필[을 사용하는 방법을 참조하십시오.](/help/assets/asset-microservices-configure-and-use.md#use-profiles)
 
 ![처리 프로필의 메타데이터 변환](assets/processing-profile-metadata.png)
 
