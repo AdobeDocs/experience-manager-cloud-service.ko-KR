@@ -66,17 +66,17 @@ ht-degree: 88%
 
       >[!NOTE]
       >
-      > 관련 [자동 복제를 구성하는 방법에 대한 자세한 내용은 설정 및 해제 시간 - 트리거](/help/operations/replication.md#on-and-off-times-trigger-configuration) 구성을 참조하십시오.
+      > 관련 자동 복제를 구성하는 방법에 대한 자세한 내용은 [설정 및 해제 시간 - 트리거 구성](/help/operations/replication.md#on-and-off-times-trigger-configuration)을 참조하십시오.
 
-      * 이미 [게시된 경우(수동)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 이 페이지는 지정된 시간에 렌더링될 때까지 비활성 상태로 유지됩니다.
+      * 이미 [게시된 경우(수동)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)이 페이지는 지정된 시간에 렌더링될 때까지 비활성 상태로 유지됩니다.
       * 게시되지 않고 자동 복제를 위해 구성된 경우 페이지가 자동으로 게시되고 지정된 시간에 렌더링됩니다.
       * 게시되지 않고 자동 복제에 대해 구성되지 않으면 페이지가 자동으로 게시되지 않으므로 페이지에 액세스하려고 하면 404가 표시됩니다.
-   * 페이지를 즉시 게시하고 비활성화될 때까지 게시 환경에서 사용할 수 있도록 하려는 경우(**설정** 및 **해제 시간**)에는 이러한 필드를 비워 둡니다(일반 시나리오).
+   * 페이지를 즉시 게시하고, 페이지가 비활성화될 때까지(일반 시나리오) 게시 환경에서 사용할 수 있도록 하려는 경우, 이 필드(**On Time** 및 **Off Time**)는 비워 두십시오.
 
 * **해제 시간**
 
-   * 시간 **과** 병행하여 게시 환경에서 게시된 페이지를 숨길 시간을 정의합니다.
-   * 페이지를 즉시 게시하고 비활성화될 때까지 게시 환경에서 사용할 수 있도록 하려는 경우(**설정** 및 **해제 시간**)에는 이러한 필드를 비워 둡니다(일반 시나리오).
+   * **On Time**&#x200B;과 병행하여 게시 환경에서 게시된 페이지가 숨겨지는 시간을 정의합니다.
+   * 페이지를 즉시 게시하고, 페이지가 비활성화될 때까지(일반 시나리오) 게시 환경에서 사용할 수 있도록 하려는 경우, 이 필드(**On Time** 및 **Off Time**)는 비워 두십시오.
 
 * **별칭 URL**
 
@@ -129,7 +129,7 @@ ht-degree: 88%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **&lt;path>에서 상속됨**
+* **상속됨  &lt;path>**
 
    * 페이지가 상속되었는지 여부 및 상속된 위치를 나타냅니다.
 
@@ -236,14 +236,14 @@ ht-degree: 88%
    * 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
 
-### Live Copy {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Livecopy**
 
    * 다중 사이트 관리 내에서 Live Copy 페이지에 대한 속성을 정의합니다.<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### 사이트 구조 {#site-structure}
+### 사이트 구조  {#site-structure}
 
 * **등록 페이지**, **오프라인 페이지** 등과 같이 사이트 전체 기능을 제공하는 페이지에 대한 링크를 제공합니다.
 
