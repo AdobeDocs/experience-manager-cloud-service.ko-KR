@@ -35,9 +35,9 @@ ht-degree: 2%
 | 버전 삭제 | Adobe | Adobe이 완전히 소유하지만 향후 고객은 특정 매개 변수를 구성할 수 있습니다. |
 | 감사 로그 삭제 | Adobe | Adobe이 완전히 소유하지만 향후 고객은 특정 매개 변수를 구성할 수 있습니다. |
 | Lucene 바이너리 정리 | Adobe | 사용하지 않고 따라서 Adobe에 의해 비활성화됩니다. |
-| 임시 작업 제거 | 고객 | 기툴빗으로 해야 합니다 <br> 폴더 또는 폴더 아래에 속성을 생성하여 기본 유지 관리 창 구성 노드 `/libs` 를 재정의합니다 `/apps/settings/granite/operations/maintenance/granite_weekly``granite_daily`. 자세한 구성 내용은 아래 유지 관리 창 표를 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 다른 노드를 추가하여 유지 관리 작업 `granite_TaskPurgeTask`을 활성화합니다. <br> OSGI 속성을 구성합니다( [AEM 6.5 유지 관리 작업 설명서 참조)](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 워크플로우 삭제 | 고객 | 기툴빗으로 해야 합니다 <br> 폴더 `/libs` 또는 폴더 아래에 속성을 만들어 기본 유지 관리 창 구성 노드`/apps/settings/granite/operations/maintenance/granite_weekly` 를 재정의합니다 `granite_daily`. 자세한 구성 내용은 아래 유지 관리 창 표를 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 다른 노드를 추가하여 유지 관리 작업 `granite_WorkflowPurgeTask`을 활성화합니다. <br> OSGI 속성을 구성합니다( [AEM 6.5 유지 관리 작업 설명서 참조).](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 프로젝트 삭제 | 고객 | 기툴빗으로 해야 합니다 <br> 폴더 또는 폴더 아래에 속성을 생성하여 기본 유지 관리 창 구성 노드 `/libs` 를 재정의합니다 `/apps/settings/granite/operations/maintenance/granite_weekly``granite_daily`. 자세한 구성 내용은 아래 유지 관리 창 표를 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 노드를 추가하여 유지 관리 작업 `granite_ProjectPurgeTask`을 활성화합니다. <br> OSGI 속성 구성 [AEM 6.5 유지 관리 작업 설명서를 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 임시 작업 제거 | 고객 | 기툴빗으로 해야 합니다 <br> 폴더  `/libs` 또는 폴더 아래에 속성을 생성하여 기본 유지 관리 창 구성 노드 `/apps/settings/granite/operations/maintenance/granite_weekly` 를 재정의합니다 `granite_daily`. 자세한 구성 내용은 아래 유지 관리 창 표를 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 다른 노드를 추가하여 유지 관리 작업 `granite_TaskPurgeTask`을 활성화합니다. <br> OSGI 속성을 구성합니다( [AEM 6.5 유지 관리 작업 설명서 참조)](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 워크플로우 삭제 | 고객 | 기툴빗으로 해야 합니다 <br> 폴더 아래에 속성을 생성하여 기본 유지 관리 창 구성 노드 `/libs` 를 `/apps/settings/granite/operations/maintenance/granite_weekly` 재정의합니다 `granite_daily`. 자세한 구성 내용은 아래 유지 관리 창 표를 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 다른 노드를 추가하여 유지 관리 작업 `granite_WorkflowPurgeTask`을 활성화합니다. <br> OSGI 속성을 구성합니다( [AEM 6.5 유지 관리 작업 설명서 참조).](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 프로젝트 삭제 | 고객 | 기툴빗으로 해야 합니다 <br> 폴더  `/libs` 또는 폴더 아래에 속성을 생성하여 기본 유지 관리 창 구성 노드 `/apps/settings/granite/operations/maintenance/granite_weekly` 를 재정의합니다 `granite_daily`. 자세한 구성 내용은 아래 유지 관리 창 표를 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 노드를 추가하여 유지 관리 작업 `granite_ProjectPurgeTask`을 활성화합니다. <br> OSGI 속성 구성  [AEM 6.5 유지 관리 작업 설명서를 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 고객은 일별, 주별 또는 월별 유지 관리 기간 동안 실행할 워크플로우 삭제, 임시 작업 삭제 및 프로젝트 삭제 유지 관리 작업을 예약할 수 있습니다. 이러한 구성은 소스 제어에서 직접 편집해야 합니다. 아래 표에서는 각 창에 사용할 수 있는 구성 매개 변수에 대해 설명합니다.
 
@@ -58,9 +58,9 @@ ht-degree: 2%
     <td>아래의 코드 샘플 1 참조</td>
    <td>
     <ul>
-    <li><strong>windowSchedule</strong> = 일별(이 값은 변경할 수 없음)</li>
-    <li><strong>windowStartTime</strong> = HH:MM(24시간 시계에 사용) 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</li>
-    <li><strong>windowEndTime</strong> = HH:MM(24시간)으로 사용) 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행을 중지해야 하는 시기를 정의합니다.</li>
+    <li><strong>windowSchedule</strong> = daily(이 값은 변경할 수 없음)</li>
+    <li><strong>windowStartTime</strong> = HH:MM 24시간 분량으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</li>
+    <li><strong>windowEndTime</strong> = HH:MM 24시간 분량으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행을 중지해야 하는 시기를 정의합니다.</li>
     </ul> </td> 
   </tr>
   <tr>
@@ -71,9 +71,9 @@ ht-degree: 2%
     <td>아래의 코드 샘플 2 참조</td>
      <td>
     <ul>
-    <li><strong>windowSchedule</strong> = 주별(이 값은 변경할 수 없음)</li>
-    <li><strong>windowStartTime</strong> = HH:MM(24시간 시계에 사용) 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</li>
-    <li><strong>windowEndTime</strong> = HH:MM(24시간)으로 사용) 주별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행을 중지해야 하는 시기를 정의합니다.</li>
+    <li><strong>windowSchedule</strong> = weekly(이 값은 변경할 수 없음)</li>
+    <li><strong>windowStartTime</strong> = HH:MM 24시간 분량으로 사용 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</li>
+    <li><strong>windowEndTime</strong> = HH:MM 24시간 분량으로 사용 주별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행을 중지해야 하는 시기를 정의합니다.</li>
     <li><strong>windowScheduleWeeks = 1-7에서 2개 값의 배열. 예:[5,5].</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이며 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 windowStartTime과 windowEndTime에 의해 각각 관리됩니다.</li>
     </ul> </td> 
   </tr>
@@ -85,11 +85,11 @@ ht-degree: 2%
     <td>아래의 코드 샘플 3 참조</td>
      <td>
     <ul>
-    <li><strong>windowSchedule</strong> = 일별(이 값은 변경할 수 없음)</li>
-    <li><strong>windowStartTime</strong> = HH:MM(24시간 시계에 사용) 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</li>
-    <li><strong>windowEndTime</strong> = HH:MM(24시간)으로 사용) 아직 완료되지 않은 경우 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 중지해야 하는 시기를 정의합니다.</li>
+    <li><strong>windowSchedule</strong> = daily(이 값은 변경할 수 없음)</li>
+    <li><strong>windowStartTime</strong> = HH:MM 24시간 분량으로 사용 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</li>
+    <li><strong>windowEndTime</strong> = HH:MM 24시간 분량으로 사용 아직 완료되지 않은 경우 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 중지해야 하는 시기를 정의합니다.</li>
     <li><strong>windowScheduleWeeks = 1-7에서 2개 값의 배열. 예:[5,5].</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이며 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 windowStartTime과 windowEndTime에 의해 각각 관리됩니다.</li>
-    <li><strong>windowFirstLastStartDay - 0/1</strong> 0 - 월의 첫 주에 예약하거나 월의 마지막 주에 예약합니다. 값이 없으면 windowScheduleWeeks가 매월 관리하는 것처럼 매일 작업을 효율적으로 예약하게 됩니다.</li>
+    <li><strong>windowFirstLastStartDay - 0/1</strong> 0을 클릭하여 월의 첫 주에 예약하거나 월의 마지막 주에 예약합니다. 값이 없으면 windowScheduleWeeks가 매월 관리하는 것처럼 매일 작업을 효율적으로 예약하게 됩니다.</li>
     </ul> </td> 
   </tr>
 </table>
