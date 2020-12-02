@@ -1,10 +1,10 @@
 ---
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
-description: 디지털 자산을 Cloud Service으로 [!DNL Adobe Experience Manager] 에 추가합니다.
+description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 9c42bd216edd0174c9a4c9b706c0e08ca36428f6
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1972'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,23 @@ ht-degree: 1%
 
 Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지만 일반적으로 사용되는 파일 포맷은 메타데이터 추출 또는 미리 보기/변환 생성과 같은 추가 서비스를 지원합니다. 자세한 내용은 [지원되는 파일 형식](file-format-support.md)을 참조하십시오.
 
-업로드된 자산에 대해 추가 처리를 하도록 선택할 수도 있습니다. 특정 메타데이터, 변환 또는 이미지 처리 서비스를 추가하기 위해 자산을 업로드하는 폴더에 다양한 자산 처리 프로필을 구성할 수 있습니다. 자세한 내용은 아래 [추가 처리](#additional-processing)를 참조하십시오.
+업로드된 자산에 대해 추가 처리를 하도록 선택할 수도 있습니다. 특정 메타데이터, 변환 또는 이미지 처리 서비스를 추가하기 위해 자산을 업로드하는 폴더에 다양한 자산 처리 프로필을 구성할 수 있습니다. 업로드 시 [자산 처리를 참조하십시오](#process-when-uploaded).
 
 >[!NOTE]
 >
->Cloud Service은 직접 이진 업로드라는 새로운 자산 업로드 방식을 활용합니다. 기본적으로 Experience Manager 사용자 인터페이스, Adobe 에셋 링크, Experience Manager 데스크탑 앱 등 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
+>Experience Manager은 자산을 업로드하는 새로운 방법, 즉 직접 바이너리 업로드를 활용합니다. [!DNL Cloud Service] 기본적으로 Experience Manager 사용자 인터페이스, Adobe 에셋 링크, Experience Manager 데스크탑 앱 등 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
 >
 >고객 기술 팀이 사용자 정의하거나 확장한 코드를 업로드하려면 새로운 업로드 API 및 프로토콜을 사용해야 합니다.
+
+[!DNL Cloud Service]인 자산은 다음 업로드 방법을 제공합니다. Adobe은 업로드 옵션을 사용하기 전에 업로드 옵션의 사용 사례와 적용 가능성을 이해하는 것이 좋습니다.
+
+| 업로드 방법 | 사용 시기 | 기본 페르소나 |
+|---------------------|----------------|-----------------|
+| [자산 콘솔 사용자 인터페이스](#upload-assets) | 가끔 업로드, 간편한 인쇄 및 드래그, 파인더 업로드 많은 수의 자산을 업로드하는 데 사용하지 마십시오. | 모든 사용자 |
+| [API 업로드](#upload-using-apis) | 업로드 중 동적 의사 결정을 위해 | 개발자 |
+| [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 볼륨 에셋 수집이 낮지만 마이그레이션입니다. | 관리자, 마케터 |
+| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 크리에이티브 및 마케터가 지원되는 [!DNL Creative Cloud] 데스크탑 앱 내에서 자산을 사용하는 경우 유용합니다. | 크리에이티브, 마케터 |
+| [자산 일괄 인제터](#asset-bulk-ingestor) | 대규모 마이그레이션 및 가끔 대량 가져오기 시 권장됩니다. 지원되는 데이터 저장소에 대해서만 가능합니다. | 관리자, 개발자 |
 
 ## 자산 업로드 {#upload-assets}
 
@@ -100,54 +110,74 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 자산이 이미 존재하는 경우 업로드 처리{#handling-upload-existing-file}
 
-자산을 업로드하고 있는 위치에서 이미 사용할 수 있는 자산의 이름과 동일한 이름의 자산을 업로드하면 경고 대화 상자가 표시됩니다.
+기존 자산과 동일한 경로(이름과 동일한 위치)로 자산을 업로드할 수 있습니다. 그러나 다음 옵션과 함께 경고 대화 상자가 표시됩니다.
 
-기존 자산을 교체하거나, 다른 버전을 만들거나, 업로드된 새 자산의 이름을 변경하여 두 자산을 모두 유지하도록 선택할 수 있습니다. 기존 자산을 대체할 경우, 기존 자산에 대한 메타데이터와 이전 수정(예: 주석, 자르기 등)이 삭제됩니다. 두 자산을 모두 유지하려면 새 자산의 이름이 이름에 추가된 숫자 `1`로 바뀝니다.
+* 기존 자산 바꾸기:기존 자산을 대체할 경우, 기존 자산에 대한 메타데이터와 이전 수정(예: 주석, 자르기 등)이 삭제됩니다.
+* 다른 버전 만들기:저장소에 기존 자산의 새 버전이 만들어집니다. [!UICONTROL 타임라인]에서 두 버전을 볼 수 있으며 필요한 경우 기존 버전으로 되돌릴 수 있습니다.
+* 둘 다 유지:두 자산을 모두 유지하려면 새 자산의 이름이 이름에 추가된 숫자 `1`로 바뀝니다.
 
 >[!NOTE]
 >
 >[!UICONTROL 이름 충돌] 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다.
 >
->자산 통찰력을 사용하여 Adobe Analytics의 노출 횟수/클릭 수를 추적하는 경우 재생성된 자산 ID는 Analytics에서 자산에 대해 캡처된 데이터를 무효화합니다.
+>자산 통찰력이 [!DNL Adobe Analytics]으로 노출 또는 클릭을 추적하도록 활성화된 경우 재생성된 자산 ID는 [!DNL Analytics]에서 자산에 대해 캡처된 데이터를 무효화합니다.
 
 [!DNL Assets]에 중복된 자산을 유지하려면 **[!UICONTROL 유지]**&#x200B;를 클릭합니다. 업로드한 중복 자산을 삭제하려면 **[!UICONTROL 삭제]**&#x200B;를 탭/클릭합니다.
 
 ### 파일 이름 처리 및 금지된 문자 {#filename-handling}
 
-[!DNL Experience Manager Assets] 파일 이름에 금지된 문자가 포함된 에셋을 업로드할 수 없습니다. 허용되지 않은 문자 이상이 포함된 파일 이름의 자산을 업로드하려고 하면, [!DNL Assets]은 경고 메시지를 표시하고 이러한 문자를 제거하거나 허용되는 이름으로 업로드할 때까지 업로드를 중지합니다.
+[!DNL Experience Manager Assets] 파일 이름에 금지된 문자가 포함된 에셋을 업로드하지 않도록 합니다. 허용되지 않은 문자 이상이 포함된 파일 이름의 자산을 업로드하려고 하면, [!DNL Assets]은 경고 메시지를 표시하고 이러한 문자를 제거하거나 허용되는 이름으로 업로드할 때까지 업로드를 중지합니다. 일부 업로드 방법은 파일 이름에 금지된 문자가 있는 자산을 업로드하는 것을 막지 않지만 문자를 `-`으로 바꿉니다.
 
-조직에 대한 특정 파일 이름 지정 규칙에 맞추기 위해 [!UICONTROL 자산 업로드] 대화 상자를 사용하면 업로드하는 파일의 긴 이름을 지정할 수 있습니다.
+조직에 대한 특정 파일 이름 지정 규칙에 맞추기 위해 [!UICONTROL 자산 업로드] 대화 상자를 사용하면 업로드하는 파일의 긴 이름을 지정할 수 있습니다. 다음(공백으로 구분된 목록) 문자는 지원되지 않습니다.
 
-그러나 다음(공백으로 구분된 목록) 문자는 지원되지 않습니다.
-
-* 자산 파일 이름에 `* / : [ \\ ] | # % { } ? &`이(가) 없어야 합니다.
-* 자산 폴더 이름에 `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`이(가) 없어야 합니다.
+* 자산 파일 이름 `* / : [ \\ ] | # % { } ? &`에 대한 잘못된 문자
+* 자산 폴더 이름 `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`에 대한 잘못된 문자
 
 ## 자산 일괄 업로드 {#bulk-upload}
+
+벌크 자산 인제스트는 수천 개의 자산을 효율적으로 처리할 수 있습니다. 그러나 대규모 수집은 단순히 크고 넓은 파일 덤프나 맹목적인 마이그레이션이 아닙니다. 비즈니스 목적에 부합하는 의미 있는 프로젝트라면 자산을 계획 및 조정하면 보다 효율적인 수집이 가능합니다. 미묘한 차이가 있는 저장소 구성 및 비즈니스 요구에 대한 사항을 팩토링하지 않으면 모든 제기가 동일하지 않으며 일반화 작업을 수행할 수 없습니다. 다음은 일괄 처리를 계획하고 실행하기 위한 제안 사항을 무시하는 것입니다.
+
+* 자산 조정:DAM에 필요하지 않은 자산을 제거합니다. 사용하지 않거나 오래된 자산 또는 중복된 자산을 제거하는 것이 좋습니다. 이렇게 하면 데이터 전송 및 인제스트된 에셋이 줄어들어 인제션이 빨라집니다.
+* 자산 구성:파일 크기, 파일 포맷, 사용 사례 또는 우선 순위와 같이 일부 논리적 순서로 컨텐츠를 구성하는 것이 좋습니다. 일반적으로 복잡한 대용량 파일은 더 많은 처리가 필요합니다. 파일 크기 필터링 옵션(아래 설명됨)을 사용하여 대용량 파일을 개별적으로 인제하는 것도 좋습니다.
+* 단계 지정:통합 문제를 여러 일괄 처리 프로젝트로 나누는 것이 좋습니다. 이를 통해 컨텐츠를 더 빨리 보고 필요에 따라 질문을 업데이트할 수 있습니다. 예를 들어, 사용량이 적은 시간 동안 처리량이 많은 에셋을 인제스트하거나 여러 청크에 점진적으로 인제스트할 수 있습니다. 그러나 한 번의 이동으로 많은 처리가 필요하지 않은 작고 간단한 자산을 인제스트할 수 있습니다.
 
 많은 수의 파일을 업로드하려면 다음 방법 중 하나를 사용하십시오. 또한 [사용 사례 및 메서드](#upload-methods-comparison)를 참조하십시오.
 
 * [자산 업로드 API](developer-reference-material-apis.md#asset-upload-technical):필요한 경우 API를 활용하는 사용자 정의 업로드 스크립트 또는 도구를 사용하여 자산의 추가 처리(예: 메타데이터 번역 또는 파일 이름 변경)를 추가합니다.
 * [Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):로컬 파일 시스템에서 에셋을 업로드하는 크리에이티브 전문가와 마케터에게 유용합니다. 로컬에서 사용할 수 있는 중첩된 폴더를 업로드하려면 이 폴더를 사용합니다.
-* [일괄 처리 도구](#bulk-ingestion-tool):배포 시 가끔 또는 초기에 대량의 자산을 수집하는 데 사용합니다 [!DNL Experience Manager].
+* [일괄 처리 도구](#asset-bulk-ingestor):배포 시 가끔 또는 초기에 대량의 자산을 수집하는 데 사용합니다 [!DNL Experience Manager].
 
-### 일괄 자산 처리 도구 {#bulk-ingestion-tool}
+### 자산 벌크 인제터 도구 {#asset-bulk-ingestor}
 
-다음 세부 사항을 추가합니다.
-
-* 이 메서드를 사용할 경우의 사용 사례입니다.
-* 적용 가능한 페르소나
-* 구성 단계
-* 통합 작업을 관리하고 상태를 보는 방법
-* 인제스트할 에셋을 관리 또는 조정하는 것에 대해 기억해야 하는 사항입니다.
+이 도구는 Azure 또는 S3 데이터 저장소의 자산을 대량으로 수집하기 위해 사용되는 관리자 그룹에만 제공됩니다.
 
 도구를 구성하려면 다음 단계를 따르십시오.
 
-1. 벌크 가져오기 구성을 만듭니다.  도구 > 자산 > 일괄 가져오기로 이동하고 만들기 단추를 선택합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 벌크 가져오기]**&#x200B;로 이동합니다. **[!UICONTROL 만들기]** 옵션을 선택합니다.
 
 ![벌크 가져오기 구성](assets/bulk-import-config.png)
 
-1. 적절한 세부 정보를 제공합니다.
+1. [!UICONTROL 벌크 가져오기 구성] 페이지에서 필요한 값을 제공합니다.
+
+   * [!UICONTROL 제목]:설명형 제목입니다.
+   * [!UICONTROL 가져오기 소스]:해당 데이터 소스를 선택합니다.
+   * [!UICONTROL 최소 크기별 필터]:자산의 최소 파일 크기(MB)를 제공합니다.
+   * [!UICONTROL 최대 크기별 필터]:자산의 최대 파일 크기(MB)를 제공합니다.
+   * [!UICONTROL MIME 유형 제외]:섭제에서 제외할 MIME 형식의 쉼표로 구분된 목록. 예, `image/jpeg, image/.*, video/mp4`.
+   * [!UICONTROL MIME 형식 포함]:통합 시 포함할 MIME 형식의 쉼표로 구분된 목록. 지원되는 모든 파일 형식[을 참조하십시오.](/help/assets/file-format-support.md)
+   * [!UICONTROL 가져오기 모드]:건너뛰기, 교체 또는 버전 만들기를 선택합니다. 건너뛰기 모드는 기본값이며 이 모드에서는 자산이 이미 존재하는 경우 인제스트나 가져오기 작업을 건너뜁니다. [바꾸기 및 버전 옵션](#handling-upload-existing-file)의 의미를 참조하십시오.
+   * [!UICONTROL 자산 Target 폴더]:자산을 가져올 DAM의 폴더를 가져옵니다. 예, `/content/dam/imported_assets`
+
+1. 생성된 인제스트나 구성을 사용하여 삭제, 수정, 실행 및 더 많은 작업을 수행할 수 있습니다. 일괄 가져오기 인제스트나 구성을 선택하면 도구 모음에서 다음 옵션을 사용할 수 있습니다.
+
+   * [!UICONTROL 편집]:선택한 구성을 편집합니다.
+   * [!UICONTROL 삭제]:선택한 구성을 삭제합니다.
+   * [!UICONTROL 확인]:데이터 저장소에 대한 연결 유효성을 확인합니다.
+   * [!UICONTROL 연습 실행]:벌크 섭취 테스트 실행을 불러옵니다.
+   * [!UICONTROL 실행]:선택한 구성을 실행합니다.
+   * [!UICONTROL 중지]:활성 구성을 종료합니다.
+   * [!UICONTROL 작업 상태]:진행 중인 가져오기 작업에 사용되거나 완료된 작업에 사용될 때 구성 상태를 확인합니다.
+   * [!UICONTROL 자산 보기]:대상 폴더가 있는 경우 대상 폴더를 봅니다.
 
 >[!NOTE]
 >
@@ -160,18 +190,18 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [Adobe 자산 ](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 링크를 통해 Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션 [!DNL Experience Manager] 의 에셋에 액세스할 수 있습니다. 현재 열려 있는 문서를 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 바로 [!DNL Experience Manager]에 업로드할 수 있습니다.
 * [Experience Manager 데스크탑 ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 앱은 파일 유형이나 이러한 에셋을 처리하는 기본 애플리케이션에 관계없이 데스크탑에서 에셋으로 작업하는 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록만 업로드하므로 로컬 파일 시스템에서 중첩된 폴더 계층 구조의 파일을 업로드하는 것이 특히 유용합니다.
 
-## 추가 처리 {#additional-processing}
+## 업로드 시 자산 처리{#process-when-uploaded}
 
-업로드된 자산에 대해 추가 처리를 수행하려면, 자산이 업로드되는 폴더의 자산 처리 프로필 프로필을 사용할 수 있습니다. 폴더 **[!UICONTROL 속성]** 대화 상자에서 사용할 수 있습니다.
+업로드된 자산에 대한 추가 처리를 위해 업로드 폴더에 처리 프로필을 적용할 수 있습니다. 프로필은 [!DNL Assets]에 있는 폴더의 **[!UICONTROL 속성]** 페이지에서 사용할 수 있습니다.
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-다음 프로필을 사용할 수 있습니다.
+다음 탭을 사용할 수 있습니다.
 
 * [메타데이터 ](metadata-profiles.md) 프로필을 사용하면 해당 폴더에 업로드된 자산에 기본 메타데이터 속성을 적용할 수 있습니다
 * [처리 ](asset-microservices-configure-and-use.md) 프로필을 사용하면 기본적으로 가능한 것보다 더 많은 변환을 생성할 수 있습니다.
 
-또한, 사용자 환경에서 Dynamic Media가 활성화된 경우:
+또한 배포에서 [!DNL Dynamic Media]이(가) 활성화되어 있으면 다음 탭을 사용할 수 있습니다.
 
 * [다이내믹 미디어 이미지 ](dynamic-media/image-profiles.md) 프로필을 사용하면 특정 자르기(**[!UICONTROL 스마트 자르기 및]** 픽셀 자르기)를 적용하고 업로드된 자산에 이미지를 선명하게 할 수 있습니다.
 * [다이내믹 미디어 비디오 ](dynamic-media/video-profiles.md) 프로필을 사용하면 특정 비디오 인코딩 프로필(해상도, 형식, 매개 변수)을 적용할 수 있습니다.
@@ -186,22 +216,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 업로드 API 및 프로토콜의 기술 세부 사항, 오픈 소스 SDK 및 샘플 클라이언트에 대한 링크는 개발자 참조의 [asset upload](developer-reference-material-apis.md#asset-upload-technical) 섹션에 제공됩니다.
 
-## 시나리오 기반 업로드 방법 {#upload-methods-comparison}
-
-| 업로드 방법 | 사용 시기 | 기본 페르소나(관리자, 개발자, 크리에이티브 사용자, 마케터) |
-|---------------------|-------------------------------------------------------------------------------------------|------------|
-| 자산 콘솔/UI | 가끔 업로드, 간편한 인쇄 및 드래그, 파인더 업로드 대량 인제에서는 필요하지 않습니다. | 모든 |
-| API 업로드 | 업로드 중 자산의 동적 의사 결정 | 개발자 |
-| 데스크탑 앱 | 낮은 볼륨 에셋 수집, 마이그레이션 | 관리자, 마케터 |
-| 자산 링크 | 크리에이티브 및 마케터가 지원되는 Creative Cloud 데스크탑 앱 내에서 자산을 공동으로 활용할 수 있습니다. | 크리에이티브, 마케터 |
-| 일괄 처리 도구 | 데이터 저장소에서 자산 일괄 처리  마이그레이션 및 가끔 대량 가져오기 시 권장됩니다. | 관리자, 개발자 |
-
-어떤 방법을 사용해야 하는지 설명합니다.
-
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Adobe Asset Link에 대하여](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe 자산 링크 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [자산 업로드를 위한 기술 참조](developer-reference-material-apis.md#asset-upload-technical)
 
