@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 09b23185663164ffa5a6066b67f8f1fb74872cde
+source-git-commit: 4687054b049263c109591884a0368dfa76346298
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 72%
+source-wordcount: '552'
+ht-degree: 71%
 
 ---
 
@@ -31,6 +31,7 @@ ht-degree: 72%
    + [Maven 프로젝트 버전 처리](cloud-manager/project-version-handling.md)
    + [Git 액세스](cloud-manager/accessing-git.md)
    + [Adobe Cloud Manager와 Git 통합](cloud-manager/integrating-with-git.md)
+   + [여러 소스 Git 리포지토리를 사용한 작업](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + AEM as a Cloud Service를 위한 개발 {#developing}
    + [AEM 프로젝트 구조](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)
