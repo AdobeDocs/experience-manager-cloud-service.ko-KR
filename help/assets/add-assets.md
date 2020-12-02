@@ -2,9 +2,9 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1930'
 ht-degree: 1%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] 리치 메타데이터, 스마트 태그, 변환 및 기타 DAM(Digital Asset Management) 서비스를 사용하여 업로드된 디지털 파일의 바이너리 컨텐츠를 더욱 풍부하게 만들 수 있습니다. 이미지, 문서 및 Raw 이미지 파일과 같은 다양한 유형의 파일을 로컬 폴더 또는 네트워크 드라이브에서 [!DNL Experience Manager Assets]로 업로드할 수 있습니다.
 
-여러 업로드 방법이 제공됩니다. 가장 일반적으로 사용되는 브라우저 업로드 외에도 Adobe 에셋 링크 또는 Experience Manager 데스크탑 앱, 고객이 만드는 업로드 및 통합 스크립트, Experience Manager 익스텐션으로 추가된 자동화된 통합 등 Experience Manager 저장소에 에셋을 추가하는 다른 방법이 있습니다.
+여러 업로드 방법이 제공됩니다. 가장 일반적으로 사용되는 브라우저 업로드 외에도, Adobe 에셋 링크 또는 [!DNL Experience Manager] 데스크탑 앱과 같은 데스크탑 클라이언트, 고객이 만드는 업로드 및 통합 스크립트, 그리고 자동화된 통합 기능이 [!DNL Experience Manager] 익스텐션으로 추가된 것을 포함하여, 에셋을 [!DNL Experience Manager] 저장소에 추가하는 다른 방법이 있습니다.
 
-여기에서 최종 사용자를 위한 업로드 방법에 중점을 두고 Experience Manager API 및 SDK를 사용하여 자산 업로드 및 수집의 기술적 측면을 설명하는 문서에 대한 링크를 제공합니다.
+여기에서 최종 사용자를 위한 업로드 방법에 중점을 두고 [!DNL Experience Manager] API 및 SDK를 사용하여 자산 업로드 및 수집의 기술적 측면을 설명하는 문서에 대한 링크를 제공합니다.
 
-Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지만 일반적으로 사용되는 파일 포맷은 메타데이터 추출 또는 미리 보기/변환 생성과 같은 추가 서비스를 지원합니다. 자세한 내용은 [지원되는 파일 형식](file-format-support.md)을 참조하십시오.
+[!DNL Experience Manager]에서 모든 이진 파일을 업로드 및 관리할 수 있지만 가장 일반적으로 사용되는 파일 포맷은 메타데이터 추출 또는 미리 보기/변환 생성과 같은 추가 서비스를 지원합니다. 자세한 내용은 [지원되는 파일 형식](file-format-support.md)을 참조하십시오.
 
 업로드된 자산에 대해 추가 처리를 하도록 선택할 수도 있습니다. 특정 메타데이터, 변환 또는 이미지 처리 서비스를 추가하기 위해 자산을 업로드하는 폴더에 다양한 자산 처리 프로필을 구성할 수 있습니다. 업로드 시 [자산 처리를 참조하십시오](#process-when-uploaded).
 
 >[!NOTE]
 >
->Experience Manager은 자산을 업로드하는 새로운 방법, 즉 직접 바이너리 업로드를 활용합니다. [!DNL Cloud Service] 기본적으로 Experience Manager 사용자 인터페이스, Adobe 에셋 링크, Experience Manager 데스크탑 앱 등 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자에게 투명하게 표시됩니다.
+>[!DNL Experience Manager] as a a  [!DNL Cloud Service] leaks a new way of upload assets - direct binary upload. 기본적으로 [!DNL Experience Manager] 사용자 인터페이스, [!DNL Adobe Asset Link], [!DNL Experience Manager] 데스크탑 앱과 같은 기본 제품 기능과 클라이언트가 지원되므로 최종 사용자가 편리하게 사용할 수 있습니다.
 >
 >고객 기술 팀이 사용자 정의하거나 확장한 코드를 업로드하려면 새로운 업로드 API 및 프로토콜을 사용해야 합니다.
 
@@ -35,7 +35,7 @@ Experience Manager의 모든 이진 파일을 업로드 및 관리할 수 있지
 | [자산 콘솔 사용자 인터페이스](#upload-assets) | 가끔 업로드, 간편한 인쇄 및 드래그, 파인더 업로드 많은 수의 자산을 업로드하는 데 사용하지 마십시오. | 모든 사용자 |
 | [API 업로드](#upload-using-apis) | 업로드 중 동적 의사 결정을 위해 | 개발자 |
 | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 볼륨 에셋 수집이 낮지만 마이그레이션입니다. | 관리자, 마케터 |
-| [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 크리에이티브 및 마케터가 지원되는 [!DNL Creative Cloud] 데스크탑 앱 내에서 자산을 사용하는 경우 유용합니다. | 크리에이티브, 마케터 |
+| [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 크리에이티브 및 마케터가 지원되는 [!DNL Creative Cloud] 데스크탑 앱 내에서 자산을 사용하는 경우 유용합니다. | 크리에이티브, 마케터 |
 | [자산 일괄 인제터](#asset-bulk-ingestor) | 대규모 마이그레이션 및 가끔 대량 가져오기 시 권장됩니다. 지원되는 데이터 저장소에 대해서만 가능합니다. | 관리자, 개발자 |
 
 ## 자산 업로드 {#upload-assets}
@@ -144,7 +144,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 많은 수의 파일을 업로드하려면 다음 방법 중 하나를 사용하십시오. 또한 [사용 사례 및 메서드](#upload-methods-comparison)를 참조하십시오.
 
 * [자산 업로드 API](developer-reference-material-apis.md#asset-upload-technical):필요한 경우 API를 활용하는 사용자 정의 업로드 스크립트 또는 도구를 사용하여 자산의 추가 처리(예: 메타데이터 번역 또는 파일 이름 변경)를 추가합니다.
-* [Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):로컬 파일 시스템에서 에셋을 업로드하는 크리에이티브 전문가와 마케터에게 유용합니다. 로컬에서 사용할 수 있는 중첩된 폴더를 업로드하려면 이 폴더를 사용합니다.
+* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):로컬 파일 시스템에서 에셋을 업로드하는 크리에이티브 전문가와 마케터에게 유용합니다. 로컬에서 사용할 수 있는 중첩된 폴더를 업로드하려면 이 폴더를 사용합니다.
 * [일괄 처리 도구](#asset-bulk-ingestor):배포 시 가끔 또는 초기에 대량의 자산을 수집하는 데 사용합니다 [!DNL Experience Manager].
 
 ### 자산 벌크 인제터 도구 {#asset-bulk-ingestor}
@@ -181,14 +181,14 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!NOTE]
 >
->Experience Manager으로 설정 및 배포할 때 다른 시스템에서 컨텐츠 마이그레이션의 일부로 일괄 업로드하려면 도구를 신중하게 계획, 고려 및 선택해야 합니다. 콘텐츠 마이그레이션 접근 방법에 대한 지침은 [배포 안내서](/help/implementing/deploying/overview.md)를 참조하십시오.
+>[!DNL Experience Manager]으로 설정하고 배포할 때 다른 시스템에서 컨텐츠 마이그레이션의 일부로 일괄 업로드하려면 도구의 신중한 계획, 고려 사항 및 선택이 필요합니다. 콘텐츠 마이그레이션 접근 방법에 대한 지침은 [배포 안내서](/help/implementing/deploying/overview.md)를 참조하십시오.
 
 ## 데스크톱 클라이언트를 사용하여 자산 업로드 {#upload-assets-desktop-clients}
 
-웹 브라우저 사용자 인터페이스 외에도 Experience Manager은 데스크탑에서 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 환경을 제공합니다.
+웹 브라우저 사용자 인터페이스 외에도 [!DNL Experience Manager]은 데스크탑의 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 환경을 제공합니다.
 
-* [Adobe 자산 ](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 링크를 통해 Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션 [!DNL Experience Manager] 의 에셋에 액세스할 수 있습니다. 현재 열려 있는 문서를 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 바로 [!DNL Experience Manager]에 업로드할 수 있습니다.
-* [Experience Manager 데스크탑 ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 앱은 파일 유형이나 이러한 에셋을 처리하는 기본 애플리케이션에 관계없이 데스크탑에서 에셋으로 작업하는 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록만 업로드하므로 로컬 파일 시스템에서 중첩된 폴더 계층 구조의 파일을 업로드하는 것이 특히 유용합니다.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) adobe photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션 [!DNL Experience Manager] 에서 에셋에 액세스할 수 있습니다. 현재 열려 있는 문서를 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 바로 [!DNL Experience Manager]에 업로드할 수 있습니다.
+* [[!DNL Experience Manager] 데스크탑 ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 앱은 파일 유형이나 이를 처리하는 기본 애플리케이션에 관계없이 데스크탑에서 에셋을 사용한 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록만 업로드하므로 로컬 파일 시스템에서 중첩된 폴더 계층 구조의 파일을 업로드하는 것이 특히 유용합니다.
 
 ## 업로드 시 자산 처리{#process-when-uploaded}
 
@@ -218,8 +218,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link에 대하여](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Adobe 자산 링크 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [[!DNL Adobe Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [정보 [!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [자산 업로드를 위한 기술 참조](developer-reference-material-apis.md#asset-upload-technical)
 
