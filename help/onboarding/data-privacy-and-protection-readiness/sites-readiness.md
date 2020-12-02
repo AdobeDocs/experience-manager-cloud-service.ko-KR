@@ -10,7 +10,7 @@ ht-degree: 48%
 ---
 
 
-# Adobe Experience Manager, 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 사이트 준비 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager, 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 사이트 준비{#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,23 +20,23 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe 개인정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
+>개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe 개인 정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 Adobe Experience Manager Cloud Service 사이트는 고객의 데이터 개인 정보 보호 및 보호 규정 준수 의무를 지원할 준비가 되어 있습니다. 이 페이지에서는 고객이 AEM Sites에서 이러한 요청을 처리할 수 있는 절차를 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.
 
-자세한 내용은 [Adobe 개인 정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
+자세한 내용은 [Adobe 개인 정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 >[!NOTE]
 >
->자세한 내용은 [Adobe Experience Manager을 데이터 보호 및 데이터 개인 정보 보호 규정](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) Cloud Service 준비 기능으로 참조하십시오.
+>자세한 내용은 [Adobe Experience Manager을 데이터 보호를 위한 Cloud Service 준비 및 데이터 개인 정보 보호 규정](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)으로 참조하십시오.
 
 ## AEM 작성 계층 {#aem-author-tier}
 
-User accounts and UGC content on the author server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+작성자 서버의 사용자 계정 및 UGC 컨텐츠는 [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)에서 다룹니다.
 
 ## AEM 게시 계층 {#aem-publish-tier}
 
-User accounts used to authenticate visitors on the site, and UGC content on the publish server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+사이트에서 방문자를 인증하는 데 사용되는 사용자 계정과 게시 서버의 UGC 컨텐츠는 [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)에서 다룹니다.
 
 기본적으로 AEM Sites 구성 요소는 게시 서버에서 방문자가 입력한 양식 데이터를 저장하지 않습니다. 추가적인 처리가 필요하면 데이터를 타사 시스템 또는 Adobe Campaign에 전달하는 것이 좋습니다.
 
@@ -53,9 +53,9 @@ Adobe Experience Manager은 사용자에 대한 옵트인/옵트아웃을 관리
 1. 다음으로 이동:
    [Adobe 개인 정보 보호 센터 - 옵트아웃](https://www.adobe.com/privacy/opt-out.html)
 
-1. 아래로 스크롤하여 **서비스** - **Experience Cloud 서비스 사용 데이터로**&#x200B;이동합니다.
+1. **서비스** - **Experience Cloud 서비스 사용 데이터**&#x200B;로 스크롤합니다.
 
-1. 참조된 링크를 선택합니다.현재 제목이 **여기에 있습니다**.
+1. 참조된 링크를 선택합니다.현재 제목이 **여기**&#x200B;입니다.
 
 1. 옵트아웃 또는 옵트아웃할 수 있는 옵션과 함께 다음과 같은 세부 사항이 표시됩니다.
 
@@ -63,22 +63,22 @@ Adobe Experience Manager은 사용자에 대한 옵트인/옵트아웃을 관리
 
       옵트아웃 쿠키를 삭제하거나 컴퓨터 또는 웹 브라우저를 변경하는 경우 다시 옵트아웃해야 합니다.
 
-      옵트아웃 - 방문자 세션 집계 및 분석에서 나를 `amcglobal.sc.omtrdc.net` 제외합니다(옵트아웃 쿠키 설치) - 여기를 클릭하십시오.
+      옵트아웃 - 방문자 세션 집계 및 분석에서 나를 제외합니다(`amcglobal.sc.omtrdc.net` 옵트아웃 쿠키 설치) - 여기를 클릭하십시오.
 
-      옵트인 - 방문자 세션 집계 및 분석에 나를 `amcglobal.sc.omtrdc.net` 포함합니다(옵트아웃 쿠키 설치 안 함) - 여기를 클릭하십시오.
+      옵트인 - 방문자 세션 집계 및 분석에 나를 포함합니다(`amcglobal.sc.omtrdc.net` 옵트아웃 쿠키 설치 안 함) - 여기를 클릭하십시오.
    위 단계에 따라 실제 링크에 액세스합니다.
 
    >[!NOTE]
    >
-   > 더 자세한 설명은 **2. 개인 정보.** 섹션 [](https://www.adobe.com/legal/terms.html).
+   > **2에 대한 추가 설명이 있습니다. 개인 정보.** 섹션 [ ](https://www.adobe.com/legal/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스 내에서 기능을 사용하는 Analytics Foundation과의 선택 사항 통합이 포함되어 있습니다.
 
-For further information on managing data subject requests related to Adobe Analytics see [Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
+Adobe Analytics과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인 정보](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)를 참조하십시오.
 
-## Target의 개인화 기반 {#personalization-foundation-by-target}
+## 개인화 기반 Target {#personalization-foundation-by-target}
 
 AEM Sites에는 Adobe Target 온디맨드 서비스 내에서 기능을 사용하는 Target의 개인화 기반과의 선택적인 통합이 포함되어 있습니다.
 
