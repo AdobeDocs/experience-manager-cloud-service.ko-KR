@@ -32,4 +32,4 @@ ht-degree: 1%
 
 아래 섹션에서는 CDN 구성 및 캐싱 등 컨텐츠 전달에 대해 더 자세히 설명합니다.
 
-작성자 서비스에서 게시 서비스로의 복제에 대한 정보는 [여기에서 확인할 수 있습니다](/help/operations/replication.md).
+작성자 서비스에서 게시 서비스로의 복제에 대한 정보는 [여기](/help/operations/replication.md)에 있습니다.
