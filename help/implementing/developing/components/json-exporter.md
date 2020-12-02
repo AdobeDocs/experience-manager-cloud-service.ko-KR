@@ -22,7 +22,7 @@ AEM Content Services는 웹 페이지 이외의 AEM에서 컨텐츠의 설명과
 
 구조화된 컨텐츠를 사용하는 컨텐츠 조각을 사용하면 JSON 내보내기 도구를 사용하여 (y) AEM 페이지의 컨텐츠를 JSON 데이터 모델 형식으로 전달하여 컨텐츠 서비스를 제공할 수 있습니다. 그런 다음 사용자 자신의 응용 프로그램에서 사용할 수 있습니다.
 
-## 컨텐츠 조각 핵심 구성 요소를 포함하는 JSON 내보내기 {#json-exporter-with-content-fragment-core-components}
+## 컨텐츠 조각 핵심 구성 요소가 있는 JSON 내보내기 {#json-exporter-with-content-fragment-core-components}
 
 AEM JSON 내보내기 도구를 사용하여 (y) AEM 페이지의 콘텐츠를 JSON 데이터 모델 형식으로 제공할 수 있습니다. 그런 다음 사용자 자신의 응용 프로그램에서 사용할 수 있습니다.
 
@@ -42,7 +42,7 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 배달을 수
 
 구조화된 컨텐츠 조각을 구체적으로 타깃팅하여 컨텐츠를 전달할 수도 있습니다.
 
-이 작업은 조각(를 통해)의 전체 경로를 사용하여 `jcr:content`수행됩니다.예를 들어
+이 작업은 조각에 대한 전체 경로( `jcr:content` 사용)를 사용하여 수행됩니다.예를 들어
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -60,11 +60,11 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 배달을 수
 
    >[!NOTE]
    >
-   >자신의 구성 요소를 [조정하여](enabling-json-exporter.md) 이 데이터에 액세스하고 사용할 수 있습니다.
+   >[자신의 구성 요소](enabling-json-exporter.md)를 조정하여 이 데이터에 액세스하고 사용할 수 있습니다.
 
    >[!NOTE]
    >
-   >표준 구현은 아니지만 [여러 개의 선택기가 지원되지만](enabling-json-exporter.md#multiple-selectors) 첫 번째 `model` 선택기가 되어야 합니다.
+   >표준 구현은 아니지만 [여러 선택기가 지원되지만 ](enabling-json-exporter.md#multiple-selectors)은(는) 첫 번째여야 합니다.`model`
 
 ### 추가 정보 {#further-information}
 
@@ -84,4 +84,4 @@ AEM 내에서 선택기 `model` 및 `.json` 확장을 사용하여 배달을 수
 * [자산 사용 안내서의 컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 및 [컨텐츠 조각 구성 요소](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/content-fragment-component.html)
+* [핵심 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 구성 요소 및  [컨텐츠 조각 구성 요소](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/content-fragment-component.html)
