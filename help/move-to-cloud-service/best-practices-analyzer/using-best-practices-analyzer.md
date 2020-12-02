@@ -10,25 +10,25 @@ ht-degree: 47%
 ---
 
 
-# 모범 사례 분석기 사용 {#using-best-practices-analyzer}
+# 우수 사례 분석기 사용 {#using-best-practices-analyzer}
 
 ## 우수 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
 BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
+* BPA 보고서는 Adobe Experience Manager(AEM) [Pattern Detector](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/deploying/upgrading/pattern-detector.html)의 출력을 사용하여 작성합니다. BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
 
-* BPA may only be run by the **admin** user or a user in the **administrators** group.
+* BPA는 **admin** 사용자 또는 **administrators** 그룹의 사용자만 실행할 수 있습니다.
 
 * BPA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   > AEM 6.1에 BPA를 설치하기 위한 특별한 요구 사항은 [AEM 6.1](#installing-on-aem61)에 설치를 참조하십시오.
 
-* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+* BPA는 모든 환경에서 실행할 수 있지만 *Stage* 환경에서 실행하는 것이 좋습니다.
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. 또는 프로덕션 *작성* 환경의 복제본에서 실행할 수 있습니다.
+   >비즈니스 위험 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 콘텐트 및 사용자 응용 프로그램 영역의 *Production* 환경에 최대한 가까운 *Author* 환경에서 BPA를 실행하는 것이 좋습니다. 또는 프로덕션 *작성* 환경의 복제본에서 실행할 수 있습니다.
 
 * BPA 보고서 컨텐츠를 만드는 데 몇 분에서 몇 시간 정도의 시간이 걸릴 수 있습니다. 필요한 시간은 AEM 저장소 컨텐츠, AEM 버전 및 기타 요소에 따라 크게 달라집니다.
 
@@ -39,7 +39,7 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 모범 사례 분석기는 소프트웨어 배포 포털에서 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html) portal.
+>[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html) 포털에서 우수 사례 분석기를 다운로드합니다.
 
 ## 우수 사례 분석기 보고서 보기 {#viewing-report}
 
@@ -47,11 +47,11 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 
 우수 사례 분석기 보고서를 보는 방법을 알려면 다음 섹션을 따르십시오.
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Adobe Experience Manager을 선택하고 도구 -> **작업** -> **우수 사례 분석기**&#x200B;로 이동합니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. 보고서 **생성을** 클릭하여 우수 사례 분석기를 실행합니다.
+1. 우수 사례 분석기를 실행하려면 **보고서 생성**&#x200B;을 클릭합니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -68,12 +68,12 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. 아래 그림과 같이 **CSV**&#x200B;를 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드하는 옵션이 있습니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >**보고서 새로 고침**&#x200B;을 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -109,7 +109,7 @@ AEM 인스턴스에서 우수 사례 분석기 도구를 실행하면 보고서�
 작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다.
 
 >[!NOTE]
->각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지 카테고리를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지 카테고리](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)를 참조하십시오.
 
 아래 표에 따라 중요도 수준을 파악하십시오.
 
@@ -123,7 +123,7 @@ AEM 인스턴스에서 우수 사례 분석기 도구를 실행하면 보고서�
 
 ## 우수 사례 분석기 CSV 보고서 해석 {#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
+AEM 인스턴스에서 **CSV** 옵션을 클릭하면 우수 사례 분석기 보고서의 CSV 형식이 컨텐츠 캐시에서 만들어지고 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
 
 캐시가 만료되면 CSV 파일을 빌드하고 다운로드하기 전에 보고서가 다시 생성됩니다.
 
@@ -147,7 +147,7 @@ CSV 형식 보고서의 열은 다음과 같습니다.
 
 BPA는 AEM 내의 사용자 인터페이스 대신 사용할 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. BPA 보고서를 생성하여 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다.JSON, CSV 및 탭으로 구분된 값(TSV).
 
-The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+다음 URL은 HTTP 액세스에 사용할 수 있습니다. 여기서 `<host>`은 BPA가 설치된 서버의 호스트 이름이고 필요한 경우 포트입니다.
 * JSON 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.json`
 * CSV 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.csv`
 * TSV 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.tsv`
@@ -173,11 +173,11 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 
 다음 HTTP 쿼리 매개 변수는 HTTP 헤더를 쉽게 사용할 수 없을 때 편리하게 사용할 수 있습니다.
 
-* `max-age` (숫자, 선택 사항):캐시 신선도 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 신선도 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 빈 캐시가 24시간 동안 요청을 처리하는 데 사용되므로 캐시를 다시 생성해야 합니다. 를 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 신선도 수명을 사용하여 캐시를 강제로 지우고 보고서 재생성을 시작합니다. `max-age=0`
-* `respond-async` (부울, 선택 사항):응답이 비동기식으로 제공되도록 지정합니다. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되거나, 곧 만료될 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. 지정된 경우 `may-refresh-cache=true`또는 지정하지 않은 경우 서버는 패턴 탐지기 및 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. 그러면 서버가 새로 고침 작업을 시작하지 않고 캐시가 비어 있거나 오래된 경우 이 경우 보고서가 비어 있게 됩니다. `may-refresh-cache=false` 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
-* `return-minimal` (부울, 선택 사항):서버의 응답에 JSON 형식의 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. 이 경우 응답 본문 `return-minimal=true`은 상태 개체로 제한됩니다. 지정된 경우 `return-minimal=false`또는 지정되지 않은 경우 전체 응답이 제공됩니다.
-* `log-findings` (부울, 선택 사항):서버가 처음 빌드하거나 새로 고칠 때 캐시 내용을 기록하도록 지정합니다. 캐시의 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 요청이 새 캐시 `log-findings=true` 를 생성하는 경우에만 발생합니다.
+* `max-age` (숫자, 선택 사항):캐시 신선도 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 신선도 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 빈 캐시가 24시간 동안 요청을 처리하는 데 사용되므로 캐시를 다시 생성해야 합니다. `max-age=0`을(를) 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 최신 수명을 사용하여 캐시를 강제로 지우고 보고서를 다시 생성합니다.
+* `respond-async` (부울, 선택 사항):응답이 비동기식으로 제공되도록 지정합니다. 캐시가 오래된 경우 `respond-async=true`을 사용하면 서버가 캐시가 새로 고쳐질 때까지 기다리지 않고 보고서가 생성될 때까지 `202 Accepted`의 응답을 반환합니다. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. 기본값은 `false`입니다.이 매개 변수 또는 해당 헤더가 없으면 서버가 동기적으로 응답합니다. 이 경우 상당한 시간이 필요하고 HTTP 클라이언트에 대한 최대 응답 시간을 조정해야 합니다.
+* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되거나, 곧 만료될 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. `may-refresh-cache=true`이(가) 지정되지 않은 경우 서버는 패턴 탐지기 및 캐시를 새로 고칠 백그라운드 작업을 시작할 수 있습니다. `may-refresh-cache=false`이면 서버는 캐시가 비어 있거나 오래된 경우 수행한 새로 고침 작업을 시작하지 않습니다. 이 경우 보고서는 비어 있게 됩니다. 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
+* `return-minimal` (부울, 선택 사항):서버의 응답에 JSON 형식의 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. `return-minimal=true`이면 응답 본문은 상태 개체로 제한됩니다. `return-minimal=false`이(가) 지정되지 않으면 전체 응답이 제공됩니다.
+* `log-findings` (부울, 선택 사항):서버가 처음 빌드하거나 새로 고칠 때 캐시 내용을 기록하도록 지정합니다. 캐시의 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 `log-findings=true` 및 요청이 새 캐시를 생성하는 경우에만 발생합니다.
 
 HTTP 헤더와 해당 쿼리 매개 변수가 모두 있으면 쿼리 매개 변수가 우선시됩니다.
 
@@ -191,8 +191,8 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 다음 응답 값이 가능합니다.
 
 * `200 OK`:응답에 캐시의 최신 수명 내에 생성된 패턴 탐지기 결과가 포함되어 있음을 나타냅니다.
-* `202 Accepted`:캐시가 오래되었음을 나타내는 데 사용됩니다. 이 응답 `respond-async=true` 과 `may-refresh-cache=true` 이 응답은 새로 고침 작업이 진행 중임을 나타냅니다. 이 응답 `may-refresh-cache=false` 은 캐시가 오래되었음을 나타냅니다.
-* `400 Bad Request`: 요청에 오류가 있음을 나타냅니다. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `202 Accepted`:캐시가 오래되었음을 나타내는 데 사용됩니다. `respond-async=true` 및 `may-refresh-cache=true`이 응답은 새로 고침 작업이 진행 중임을 나타냅니다. `may-refresh-cache=false`이 응답은 캐시가 만료되었음을 나타냅니다.
+* `400 Bad Request`: 요청에 오류가 있음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식([RFC 7807](https://tools.ietf.org/html/rfc7807) 참조)의 메시지를 참조하십시오.
 * `401 Unauthorized`:요청이 인증되지 않았음을 나타냅니다.
 * `500 Internal Server Error`: 내부 서버 오류가 발생했음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
 * `503 Service Unavailable`: 서버가 다른 응답으로 사용 중이어서 이 요청을 적시에 처리할 수 없음을 나타냅니다. 이는 동기 요청이 수행된 경우에만 발생합니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
@@ -210,7 +210,7 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 ### AEM 6.1에 설치 {#installing-on-aem61}
 
-BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
+BPA는 `repository-reader-service`이라는 시스템 서비스 사용자 계정을 사용하여 패턴 탐지기 실행 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서는 다음 단계를 수행하여 *BPA를 설치하기 전에 이 계정을*&#x200B;만들어야 합니다.
 
 1. 사용자를 만들려면 [새 서비스 사용자 만들기](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)의 지침을 따르십시오. UserID를 `repository-reader-service`로 설정하고 중간 경로를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
 
