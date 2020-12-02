@@ -25,7 +25,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->단일 론치를 동시에 홍보할 수 없습니다. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 두 개의 홍보 작업이 동시에 실행되면 `Launch could not be promoted` 오류가 발생할 수 있습니다(로그에 충돌 오류와 함께).
 
 >[!CAUTION]
 >
@@ -47,12 +47,12 @@ ht-degree: 83%
 **사이트** 콘솔 또는 **론치** 콘솔에서 론치를 홍보할 수 있습니다.
 
 1. 열기:
-   * The **Sites** console:
-      1. Open the [references rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) and select the required source page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md) (or select and open the references rail, the order is not important). 모든 참조가 표시됩니다.
+   * **사이트** 콘솔:
+      1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 열고 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하여 여는 경우 순서는 중요하지 않습니다). 모든 참조가 표시됩니다.
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
       1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
-   * The **Launches** console:
+   * **론치** 콘솔:
       1. 론치를 선택합니다(썸네일 탭/클릭).
       1. **홍보**&#x200B;를 선택합니다.
 1. 첫 번째 단계에서 다음을 지정할 수 있습니다.
@@ -78,7 +78,7 @@ ht-degree: 83%
 
 1. **홍보**&#x200B;를 선택합니다.
 
-## 편집 시 론치 페이지 홍보 {#promoting-launch-pages-when-editing}
+## 편집 시 론치 페이지 홍보  {#promoting-launch-pages-when-editing}
 
 론치 페이지를 편집할 때 **론치 홍보** 동작을 **페이지 정보**&#x200B;에서도 사용할 수 있습니다. 이 작업을 수행하면 필요한 정보를 수집하기 위한 마법사가 열립니다.
 
@@ -88,7 +88,7 @@ ht-degree: 83%
 >
 >이 마법사는 단일 및 [중첩 론치](#promoting-a-nested-launch)에 사용할 수 있습니다.
 
-## 중첩 론치 홍보 {#promoting-a-nested-launch}
+## 중첩 론치 홍보  {#promoting-a-nested-launch}
 
 중첩 론치를 만든 후에는 루트 소스(프로덕션)를 포함하는 모든 소스에 다시 홍보할 수 있습니다.
 
@@ -98,9 +98,9 @@ ht-degree: 83%
 1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
 1. 다음과 같은 필수 세부 사항을 입력합니다.
    * **타겟**
-      * **프로모션 타겟** - 모든 소스로 홍보할 수 있습니다.
-      * **판촉 행사** 후 론치 삭제 - 선택한 론치를 홍보하면 해당 론치에 중첩된 모든 론치가 삭제됩니다.
-   * **범위** - 전체 론치를 홍보할지 또는 실제로 편집된 페이지만 홍보할지 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
+      * **프로모션 타겟**  - 모든 소스로 홍보할 수 있습니다.
+      * **판촉 행사**  후 론치 삭제 - 선택한 론치를 홍보하면 론치 내에 중첩된 모든 론치가 삭제됩니다.
+   * **범위**  - 전체 론치를 홍보할지 또는 실제로 편집된 페이지만 홍보할지 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
       * **전체 론치 홍보**
       * **수정된 페이지 홍보**
       * **현재 페이지 홍보**
