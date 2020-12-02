@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: f97744f5fb5dec7e13f8600102b7f5aafe7dc343
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 90%
+source-wordcount: '255'
+ht-degree: 86%
 
 ---
 
@@ -61,6 +61,8 @@ ht-degree: 90%
 + 액세스 가능성 {#accessibility}
    + [AEM as a Cloud Service 및 웹 액세스 가능성 지침](accessibility/web-accessibility.md)
    + [WCAG 2.1에 대한 빠른 안내서](accessibility/quick-guide-wcag.md)
++ [마이그레이션 방법론] {#migration-methodology}
+   + [Cloud Service으로 Adobe Experience Manager 마이그레이션](migration-methodology/getting-started.md)
 + 우수 사례 {#best-practices}
    + [SEO 및 URL 관리](best-practices/seo-and-url-management.md)
 + [도구 콘솔 개요](tools-consoles.md)
