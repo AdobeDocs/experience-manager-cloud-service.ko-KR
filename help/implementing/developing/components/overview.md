@@ -12,9 +12,9 @@ ht-degree: 7%
 
 # 구성 요소 개요 {#components-overview}
 
-이 페이지에서는 페이지 작성에 [사용된 것과 같은 Adobe Experience Manager(AEM) 구성 요소에 대한 개요를 제공합니다](/help/sites-cloud/authoring/fundamentals/components.md).
+이 페이지에서는 페이지 작성에 사용되는 [과 같은 Adobe Experience Manager(AEM) 구성 요소에 대한 개요를 제공합니다](/help/sites-cloud/authoring/fundamentals/components.md).
 
-## 구성 요소란? {#what-are-components}
+## 구성 요소란?{#what-are-components}
 
 AEM의 구성 요소는 다음과 같습니다.
 
@@ -27,7 +27,7 @@ AEM의 구성 요소는 다음과 같습니다.
 * 사용자 인터페이스가 표준화되었습니다.
 * 구성할 수 있는 편집 비헤이비어가 있어야 합니다.
 * [MOCK] Use dialog box that are built using sub-elements based on Granite UI components.
-* HTL을 사용하여 [개발됩니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html).
+* [HTL](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)을 사용하여 개발됩니다.
 * 기본 기능을 확장하는 사용자 지정된 구성 요소를 만들기 위해 개발할 수 있습니다.
 
 구성 요소는 모듈이므로 다음을 수행할 수 있습니다.
@@ -45,23 +45,23 @@ AEM의 구성 요소는 다음과 같습니다.
 
 ## AEM 핵심 구성 요소 {#aem-core-components}
 
-[AEM 코어 구성 요소는](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 줄일 수 있도록 AEM용 표준화된 WCM(Web Content Management) 구성 요소 세트입니다.
+[AEM 코어 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 구성 요소는 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 줄일 수 있는 AEM용 표준화된 WCM(Web Content Management) 구성 요소 세트입니다.
 
-핵심 구성 요소는 AEM에 Cloud Service으로 제공되며 [WKND 자습서에서는 구성 요소를 구현하고 사용하는 방법을 설명합니다](/help/implementing/developing/introduction/develop-wknd-tutorial.md) . 구성 요소는 모든 소스 코드와 함께 제공되며, 수정하거나 확장된 구성 요소의 시작점으로 사용할 수 있습니다.
+핵심 구성 요소는 AEM에서 Cloud Service으로 제공되며 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md)에서는 구성 요소를 구현하고 사용하는 방법을 보여 줍니다. 구성 요소는 모든 소스 코드와 함께 제공되며, 수정하거나 확장된 구성 요소의 시작점으로 사용할 수 있습니다.
 
 ### 사용 가능한 구성 요소 보기 {#viewing-available-components}
 
-AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를 보려면 구성 요소 [콘솔을 사용하십시오](/help/sites-cloud/authoring/features/components-console.md).
+AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를 보려면 [구성 요소 콘솔](/help/sites-cloud/authoring/features/components-console.md)을 사용하십시오.
 
 또는 CRXDE Lite을 사용하여 저장소에서 사용 가능한 모든 구성 요소 목록을 가져올 수도 있습니다.
 
-1. CRXDE Lite의 **[!UICONTROL 도구 모음]**&#x200B;에서 도구 **[!UICONTROL 를 선택한 다음]** 쿼리 **[!UICONTROL 를 선택하면]** QueryTab을 **[!UICONTROL 열 수 있습니다]** .
+1. **[!UICONTROL CRXDE Lite]**&#x200B;의 도구 모음에서 **[!UICONTROL 도구]**&#x200B;를 선택한 다음 **[!UICONTROL 쿼리]**&#x200B;를 선택하면 **[!UICONTROL 쿼리]** 탭이 열립니다.
 
-1. [ **[!UICONTROL 쿼리]** ] 탭에서 `XPath` 유형으로 **[!UICONTROL 선택합니다]**.
+1. **[!UICONTROL 쿼리]** 탭에서 `XPath`을 **[!UICONTROL 유형]**&#x200B;으로 선택합니다.
 
 1. **[!UICONTROL 쿼리]** 입력 필드에 다음 문자열을 입력합니다.
 
    `//element(*, cq:Component)`
 
-1. 실행 **[!UICONTROL 을]** 클릭하면 구성 요소가 나열됩니다.
+1. **[!UICONTROL 실행]**&#x200B;을 클릭하면 구성 요소가 나열됩니다.
 
