@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 동적 미디어 {#working-with-three-d-assets-dm}의 액세스 가능성
+# 동적 미디어 의 액세스 가능성 {#working-with-three-d-assets-dm}
 
 Dynamic Media는 저작 사용자 인터페이스 전반에서 JAWS 및 NVDA 화면 판독기와 같은 키보드 제어 및 보조 기술을 지원합니다.
 
@@ -44,7 +44,7 @@ Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## 동적 미디어 {#assistive-technology=support-for-dm}의 보조 기술 지원
+## 동적 미디어 의 보조 기술 지원 {#assistive-technology=support-for-dm}
 
 다이내믹 미디어 사용자 인터페이스 요소는 화면 판독기와 같은 보조 기술과 함께 작동합니다. 예를 들어 키보드 단축키 `D` 또는 키보드 단축키 `R`를 사용하여 랜드마크를 탐색할 때 페이지의 랜드마크를 인식합니다. 제목 키보드 단축키 `H`를 사용하여 탐색할 때 제목 내레이션이 적용됩니다.
 
