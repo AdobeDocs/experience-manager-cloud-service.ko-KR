@@ -20,7 +20,7 @@ ht-degree: 86%
    + [실행](/help/move-to-cloud-service/execution.md)
    + [Go-live 후](/help/move-to-cloud-service/post-go-live.md)
 + 클라우드 전환 도구 {#cloud-migration}
-   + 모범 사례 분석기 {#best-practices-analyzer}
+   + 우수 사례 분석기 {#best-practices-analyzer}
       + [개요](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [모범 사례 분석기 사용](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 컨텐츠 전송 도구 {#content-transfer-tool}
