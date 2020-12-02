@@ -65,7 +65,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이지 환경 세트를 삭제할 수 있습니다. 이제 **프로그램 개요** 페이지와 **환경** 페이지의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다 . 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
 
-   자세한 내용은 [샌드박스 프로그램 삭제](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
+   자세한 내용은 [샌드박스 프로그램 삭제](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
 * 랜딩 페이지의 코치 표시를 사용하여 사용자에게 기본 탐색에 대해 알리고 지시합니다.
 
