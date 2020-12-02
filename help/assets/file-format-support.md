@@ -1,11 +1,11 @@
 ---
 title: 지원되는 파일 포맷 및 MIME 유형
-description: 파일 형식 및 MIME 형식은 Cloud Service으로 [!DNL Experience Manager Assets] 에서 지원합니다.
+description: 파일 형식 및 MIME 유형은 [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]으로 지원합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '783'
 ht-degree: 8%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # [!DNL Assets] 지원되는 파일 포맷  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] cloud service은 포맷과 상관없이 모든 바이너리 파일에 대해 저장, 온라인 메타데이터 관리, 버전 관리, 업로드 및 다운로드 등의 기본적인 컨텐츠 관리 기능을 지원합니다. [!DNL Adobe Experience Manager Assets] 다양한 파일 포맷을 지원하고 각 제품 기능은 서로 다른 포맷을 지원합니다.
+[!DNL Adobe Experience Manager] as a  [!DNL Cloud Service] support basic content management capabilities — storage, managing metadata online, versioning, upload and download 등과 같은 기능이 바이너리 파일의 포맷에 관계없이 사용할 수 있습니다. [!DNL Adobe Experience Manager Assets] 다양한 파일 포맷을 지원하고 각 제품 기능은 서로 다른 포맷을 지원합니다.
 
 또한 [!DNL Experience Manager Assets]은 미리 보기 및 표현물을 생성하고 전체 텍스트 인덱싱을 위한 메타데이터와 텍스트를 추출하는 확장된 지원을 제공합니다. 이 확장 지원은 [asset microservices](asset-microservices-configure-and-use.md)를 사용하여 제공됩니다.
 
@@ -221,7 +221,7 @@ ht-degree: 8%
 
 ## 오디오 형식 {#audio-formats}
 
-[!DNL Assets] cloud service은 AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 포맷에 대한 XMP 메타데이터 추출 지원을 제공합니다.
+[!DNL Assets] as a [!DNL Cloud Service] 는 AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 포맷에 대한 XMP 메타데이터 추출 지원을 제공합니다.
 
 >[!MORELIKETHIS]
 >
