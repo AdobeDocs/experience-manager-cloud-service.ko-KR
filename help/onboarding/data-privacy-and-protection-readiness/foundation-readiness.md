@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Experience Manager, 데이터 보호 및 데이터 개인 정보 보호 규정을 위한 Cloud Service 기반 준비 {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager, 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 기반 준비{#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe 개인정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
+>개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe 개인 정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 ## AEM Foundation 데이터 개인 정보 보호 및 보호 지원 {#aem-foundation-data-privacy-and-protection-support}
 
 AEM Foundation 수준에서 저장된 개인 데이터는 사용자 프로필에 보관됩니다. 따라서 이 문서의 정보에서는 액세스 및 삭제 요청을 각각 처리하기 위해 사용자 프로필에 액세스하고 삭제하는 방법에 대해 다룹니다.
 
-## 사용자 프로필 액세스 {#accessing-a-user-profile}
+## 사용자 프로필 {#accessing-a-user-profile} 액세스
 
 ### 수동 단계 {#manual-steps}
 
-1. 도구 - 보안 - 사용자 **[!UICONTROL 로 이동하거나]** 직접 `https://<serveraddress>:<serverport>/security/users.html`
+1. **[!UICONTROL 도구 - 보안 - 사용자]**&#x200B;로 이동하거나 `https://<serveraddress>:<serverport>/security/users.html`로 직접 이동하여 사용자 관리 콘솔을 엽니다
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -40,7 +40,7 @@ AEM Foundation 수준에서 저장된 개인 데이터는 사용자 프로필에
 
    ![계정 검색](assets/dpp-foundation-01.png)
 
-1. 마지막으로 사용자 프로필을 클릭하여 연 다음 **[!UICONTROL 세부 사항 탭 아래에서]** 확인합니다.
+1. 마지막으로 사용자 프로필을 클릭하여 연 다음 **[!UICONTROL 세부 사항]** 탭에서 확인합니다.
 
    ![사용자 프로필](assets/dpp-foundation-02.png)
 
@@ -77,7 +77,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ## 사용자 비활성화 및 연관된 프로필 삭제 {#disabling-a-user-and-deleting-the-associated-profiles}
 
-### 사용자 비활성화 {#disable-user}
+### 사용자 {#disable-user} 비활성화
 
 1. 위에 설명된 대로 사용자 관리 콘솔을 열고 해당 사용자를 검색합니다.
 2. 사용자 위로 마우스를 가져간 다음 선택 아이콘을 클릭합니다. 프로필이 선택되었음을 나타내는 회색으로 바뀝니다.
@@ -100,7 +100,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### HTTP API {#http-api-1}
 
-다음 절차에서는 `curl` 명령줄 도구를 사용하여 캡처한 사용자를 비활성화하고 기본 위치에서 사용 가능한 프로필을 **[!UICONTROL 삭제하는]** 방법을 `userId` 보여 줍니다.
+다음 절차에서는 `curl` 명령줄 도구를 사용하여 **[!UICONTROL cavery]** `userId`로 사용자를 비활성화하고 기본 위치에서 사용할 수 있는 프로필을 삭제하는 방법을 보여 줍니다.
 
 **사용자 홈 검색:**
 
