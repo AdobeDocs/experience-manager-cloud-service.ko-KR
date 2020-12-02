@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Adobe Cloud Manager와 Git 통합 {#git-integration}
 
-Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 코드를 배포하는 데 사용되는 단일 git 리포지토리를 제공합니다. 고객은 즉시 Cloud Manager의 git 리포지토리를 사용할 수 있습니다. 또한 고객은 온-프레미스 또는 **고객 관리** git 리포지토리를 Cloud Manager와 통합할 수 있습니다.
+Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 코드를 배포하는 데 사용되는 단일 git 리포지토리를 제공합니다. 고객은 즉시 Cloud Manager의 git 리포지토리를 사용할 수 있습니다. 또한 고객은 Cloud Manager와 온-프레미스 또는 **고객 관리** git 리포지토리를 통합하는 옵션을 사용할 수 있습니다.
 
 ## Git 통합 개요 {#git-integration-overview}
 
@@ -26,7 +26,7 @@ Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 �
 * [프로덕션 배포](#production-deployment)
 * [릴리즈 태그 동기화](#sync-tags)
 
-이 비디오 시리즈는 git 및 소스 제어 관리에 대한 기본적인 지식을 갖추고 있습니다. git에 대한 자세한 내용은 아래 [추가 리소스를](#additional-resources) 참조하십시오.
+이 비디오 시리즈는 git 및 소스 제어 관리에 대한 기본적인 지식을 갖추고 있습니다. git에 대한 자세한 내용은 [아래 추가 리소스를 참조하십시오.](#additional-resources)
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
-## 릴리즈 태그 동기화 {#sync-tags}
+## 릴리즈 태그 동기화 중 {#sync-tags}
 
 스테이지 및 프로덕션 환경에 배포된 코드에 대한 가시성을 제공하기 위해 Cloud Manager Git 저장소의 릴리스 태그를 고객이 관리하는 Git 저장소로 동기화합니다.
 
