@@ -14,11 +14,11 @@ ht-degree: 81%
 
 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다. 론치를 만들 때에는 제목과 소스 페이지를 지정합니다:
 
-* The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
+* 제목은 작성자가 액세스하여 작업할 수 있는 [참조](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 레일에 나타납니다.
 * 소스 페이지의 하위 페이지는 기본적으로 론치에 포함됩니다. 원할 경우 소스 페이지만 사용할 수 있습니다.
 * 기본적으로, Live Copy는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 복사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
-필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
+필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **론치 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합하여 작동합니다([론치 구성 편집](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되도록 하려면 둘 다 설정해야 합니다.
 
 ## 론치 만들기 {#creating-a-launch}
 
@@ -81,8 +81,8 @@ ht-degree: 81%
 
    **완료**&#x200B;를 사용하여 콘솔로 돌아가면 다음에서 론치를 보고 액세스할 수 있습니다.
 
-   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * [**시작** 콘솔](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * **사이트** 콘솔](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)의 [**참조**
 
 ### 새 템플릿을 사용하여 론치 만들기 {#create-launch-with-new-template}
 
@@ -107,7 +107,7 @@ ht-degree: 81%
 >
 >이 메커니즘을 사용하면 [기존 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)의 템플릿을 변경할 수 있습니다. 단, 컨텐츠 손실을 고려해야 합니다.
 
-### 중첩 론치 만들기 {#creating-a-nested-launch}
+### 중첩 론치 만들기  {#creating-a-nested-launch}
 
 중첩 론치(론치 내 론치)를 만들면 기존 론치에서 론치를 만들 수 있으므로, 작성자가 각 론치에 대해 동일한 변경을 여러 번 수행하지 않고, 이미 수행된 변경 사항을 활용할 수 있습니다.
 
@@ -117,10 +117,10 @@ ht-degree: 81%
 
 #### 중첩 론치 만들기 - 론치 콘솔 {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+**론치** 콘솔에서 중첩 론치를 만드는 것은 다른 형태의 론치를 만드는 것과 기본적으로 동일하며, 론치 분기 `/content/launches`로 이동해야 합니다.
 
 1. **론치** 콘솔에서 **만들기**&#x200B;를 선택합니다.
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. 필요한 론치를 선택하고 **선택**&#x200B;을 사용하여 확인합니다.
+1. **페이지 추가**&#x200B;를 선택한 다음 필터에서 `/content/launches`를 지정하여 론치 분기로 이동합니다. 필요한 론치를 선택하고 **선택**&#x200B;을 사용하여 확인합니다.
 
    ![중첩 론치 만들기](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
@@ -137,7 +137,7 @@ Creating a nested launch from the **Launches** console is basically the same as 
 1. **론치 제목** 및 기타 필수 세부 정보를 입력합니다(일반 론치의 경우와 같음).
 1. **만들기**&#x200B;를 사용하여 프로세스를 완료하고 새 론치를 만듭니다. 확인 대화 상자를 통해 론치를 즉시 열지 여부를 묻게 됩니다.
 
-If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
+**완료**&#x200B;를 선택하면 **사이트** 콘솔의 **참조** 레일로 돌아갑니다. 적절한 페이지를 선택하면 새 론치가 표시됩니다.
 
 ### 론치 삭제 {#deleting-a-launch}
 
