@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # 코드 배포 {#deploy-your-code}
 
-## Cloud Manager를 사용하여 코드 배포 {#deploying-code-with-cloud-manager}
+## 클라우드 관리자를 사용하여 코드 배포 {#deploying-code-with-cloud-manager}
 
 프로덕션 파이프라인(저장소, 환경 및 테스트 환경)을 구성하면 코드를 배포할 준비가 됩니다.
 
-1. 클라우드 **관리자에서 배포를** 클릭하여 배포 프로세스를 시작합니다.
+1. 배포 프로세스를 시작하려면 클라우드 관리자에서 **배포**&#x200B;를 클릭합니다.
 
    ![](assets/deploy-code1.png)
 
 
-1. 파이프라인 **실행** 화면이 표시됩니다.
+1. **파이프라인 실행** 화면이 표시됩니다.
 
-   작성 **을** 클릭하여 프로세스를 시작합니다.
+   **빌드**&#x200B;를 클릭하여 프로세스를 시작합니다.
 
    ![](assets/deploy-code2.png)
 
@@ -39,25 +39,25 @@ ht-degree: 0%
    >
    >또한 로그를 보거나 결과를 검토하여 테스트 기준에 대한 다양한 배포 프로세스의 단계를 검토할 수 있습니다.
 
-   단계 **배포에는**&#x200B;다음 단계가 포함됩니다.
+   **스테이지 배포**&#x200B;에는 다음 단계가 포함됩니다.
 
    * 유효성 검사:이 단계에서는 파이프라인이 현재 사용 가능한 리소스를 사용하도록 구성되어 있는지 확인합니다. 예를 들어 구성된 분기가 있고 환경을 사용할 수 있습니다.
-   * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스가 실행됩니다. 빌드 [환경에 대한 자세한 내용은](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) 빌드 환경 세부 정보를 참조하십시오.
-   * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [코드](/help/implementing/cloud-manager/code-quality-testing.md) 품질 테스트를 참조하십시오.
+   * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스가 실행됩니다. 빌드 환경에 대한 자세한 내용은 [빌드 환경 세부 정보](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md)를 참조하십시오.
+   * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)를 참조하십시오.
    * 이미지 빌드:이 단계에는 이미지를 만드는 데 사용되는 프로세스의 로그 파일이 있습니다. 이 프로세스는 빌드 단계에서 생성된 컨텐츠 및 디스패처 패키지를 Docker 이미지 및 Kubernetes 구성으로 변환해야 합니다.
    * 스테이지에 배포
 
       ![](assets/stage-deployment.png)
-   단계 **테스트에는**&#x200B;다음 단계가 포함됩니다.
+   **스테이지 테스트**&#x200B;에는 다음 단계가 포함됩니다.
 
    * 제품 기능 테스트:Cloud Manager 파이프라인 실행은 스테이지 환경에 대해 실행되는 테스트 실행을 지원합니다.
-자세한 내용은 [제품 기능 테스트를](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 참조하십시오.
+자세한 내용은 [제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)를 참조하십시오.
 
    * 사용자 지정 기능 테스트:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 그러나 빌드로 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다.\
-      자세한 내용은 [맞춤형 기능 테스트를](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 참조하십시오.
+      자세한 내용은 [사용자 지정 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)를 참조하십시오.
 
    * 경험 감사:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 지정 기능 테스트 후에 경험 감사 단계가 포함됩니다. 구성된 페이지는 서비스로 전송되어 평가됩니다. 이 결과는 정보 제공용이며 사용자가 현재 점수와 이전 점수 사이의 점수 및 변경 사항을 볼 수 있도록 합니다. 이러한 통찰력은 현재 배포에서 발생하는 회귀 여부를 확인하는 데 유용합니다.
-자세한 내용은 [경험 감사 결과](/help/implementing/cloud-manager/experience-audit-testing.md) 이해를 참조하십시오.
+자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
 
       ![](assets/testing-tab.png)
 
@@ -94,7 +94,7 @@ Cloud Manager가 비프로덕션 토폴로지에 배포되는 경우, 가능한 
 
    1. 현재 구성이 백업되어 임시 위치에 복사됩니다.
    1. 변경할 수 없는 파일을 제외하고 모든 구성이 삭제됩니다. 자세한 내용은 발송자 구성 관리를 참조하십시오. 이렇게 하면 고아 파일이 남아 있지 않도록 디렉토리를 지웁니다.
-   1. 아티팩트가 `httpd` 디렉토리에 추출됩니다.  변경 불가능한 파일은 덮어쓰지 않습니다. 배포 시 git 저장소에서 변경할 수 없는 파일을 변경하면 변경 사항이 무시됩니다.  이러한 파일은 AMS 디스패처 프레임워크의 핵심이므로 변경할 수 없습니다.
+   1. 아티팩트가 `httpd` 디렉토리로 추출됩니다.  변경 불가능한 파일은 덮어쓰지 않습니다. 배포 시 git 저장소에서 변경할 수 없는 파일을 변경하면 변경 사항이 무시됩니다.  이러한 파일은 AMS 디스패처 프레임워크의 핵심이므로 변경할 수 없습니다.
    1. Apache가 구성 테스트를 수행합니다. 오류가 없으면 서비스가 다시 로드됩니다. 오류가 발생하면 구성이 백업에서 복원되고 서비스가 다시 로드되며 오류가 다시 Cloud Manager에 보고됩니다.
    1. 파이프라인 구성에 지정된 각 경로는 디스패처 캐시에서 무효화되거나 플러시됩니다.
 
