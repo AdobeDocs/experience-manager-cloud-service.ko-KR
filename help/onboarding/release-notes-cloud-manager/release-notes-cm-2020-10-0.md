@@ -10,7 +10,7 @@ ht-degree: 48%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
+# Cloud Service 2020.10.0인 Adobe Experience Manager의 클라우드 관리자에 대한 릴리스 노트 {#release-notes}
 
 이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2020.10.0으로 간략하게 설명합니다.
 
@@ -30,8 +30,8 @@ ht-degree: 48%
 
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
 
-* 개요 페이지의 환경 카드는 최대 세 개의 환경을 나열합니다. 사용자는 모두 **표시** 단추를 선택하여 환경 요약 페이지로 이동하여 전체 환경 목록이 포함된 테이블을 볼 수 있습니다.
-자세한 내용은 [환경](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 보기를 참조하십시오.
+* 개요 페이지의 환경 카드는 최대 세 개의 환경을 나열합니다. 사용자는 **모두 표시** 단추를 선택하여 환경 요약 페이지로 이동하여 전체 환경 목록이 포함된 테이블을 볼 수 있습니다.
+자세한 내용은 [보기 환경](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)을 참조하십시오.
 
 
 ### 버그 수정 {#bug-fixes-cloud-manager}
