@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# SSL 인증서 업데이트 및 교체 보기  {#view-update-replace-ssl-certificate}
+# SSL 인증서 {#view-update-replace-ssl-certificate} 업데이트 및 교체 보기
 
 ## SSL 인증서 보기 및 업데이트 {#view-update}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. 또는 이 화면에서 인증서를 참조하는 데 사용한 이름을 변경할 수 있습니다. 참고 적절한 권한이 있는 사용자만 업데이트를 할 수 있습니다.
 1. 기존 인증서가 곧 만료됩니다. 사용자가 인증서 제공업체를 통해 인증서를 갱신했으며 곧 만료될 기존 인증서를 바꾸려고 합니다. 참고 적절한 권한이 있는 사용자만 업데이트를 할 수 있습니다.
 
-## SSL 인증서 교체 {#replace-ssl-certificate}
+## SSL 인증서 {#replace-ssl-certificate} 교체
 
 >[!NOTE]
 >Cloud Manager에서 SSL 인증서를 업데이트하거나 교체하려면 사용자가 비즈니스 소유자 또는 배포 관리자 역할에 있어야 합니다.
