@@ -3,9 +3,9 @@ title: 에셋 마이크로서비스를 사용하여 에셋 처리
 description: 클라우드 기반의 확장 가능한 에셋 처리 마이크로서비스를 사용하여 디지털 에셋을 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 자산 마이크로서비스 {#asset-microservices-overview}를 사용한 자산 수집 및 처리 개요
 
-Cloud Service의 Adobe Experience Manager은 Experience Manager 애플리케이션과 기능을 활용할 수 있는 클라우드 기본 방법을 제공합니다. 이 새로운 아키텍처의 핵심 요소 중 하나는 자산 처리 및 처리이며 자산 마이크로 서비스를 기반으로 합니다. 에셋 마이크로서비스는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적으로 처리할 수 있습니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 클라우드 기반의 자산 마이크로 서비스의 주요 이점은 다음과 같습니다.
+Adobe Experience Manager은 [!DNL Cloud Service]으로서 Experience Manager 응용 프로그램과 기능을 활용할 수 있는 클라우드 기본 방법을 제공합니다. 이 새로운 아키텍처의 핵심 요소 중 하나는 자산 처리 및 처리이며 자산 마이크로 서비스를 기반으로 합니다. 에셋 마이크로서비스는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적으로 처리할 수 있습니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 클라우드 기반의 자산 마이크로 서비스의 주요 이점은 다음과 같습니다.
 
 * 리소스를 많이 사용하는 작업을 원활하게 처리할 수 있는 확장 가능한 아키텍처
 * Experience Manager 환경의 성능에 영향을 주지 않는 효율적인 인덱싱 및 텍스트 추출
