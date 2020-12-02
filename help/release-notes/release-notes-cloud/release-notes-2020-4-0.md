@@ -49,8 +49,8 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link에 대하여](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Brand Portal 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Asset Link를 사용하도록 Experience Manager 구성](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Brand Portal 구성](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Asset Link를 사용하도록 Experience Manager 구성](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [자산 마이크로 서비스를 사용하여 Experience Manager에서 워크플로우 만들기](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
