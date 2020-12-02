@@ -18,11 +18,11 @@ Dynamic Media는 확대/축소, 360도 회전, 비디오를 비롯한 대화형 
 
 >[!NOTE]
 >
->Adobe Experience Manager 및 다이내믹 미디어를 사용한 [작업에 대한 커뮤니티 아티클이 제공됩니다](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>커뮤니티 아티클은 [Adobe Experience Manager 및 다이내믹 미디어 작업](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)에서 사용할 수 있습니다.
 
-## 다이내믹 미디어로 가능한 작업 {#what-you-can-do-with-dynamic-media}
+## 다이내믹 미디어 {#what-you-can-do-with-dynamic-media}로 수행할 수 있는 작업
 
-Dynamic Media를 사용하면 자산을 게시하기 전에 자산을 관리할 수 있습니다. 일반적으로 자산을 사용하는 방법은 디지털 자산 [작업에서 자세히 다룹니다](/help/assets/manage-digital-assets.md). 일반적인 주제에는 자산 업로드, 다운로드, 편집 및 게시가 포함됩니다.속성 보기 및 편집, 자산 검색.
+Dynamic Media를 사용하면 자산을 게시하기 전에 자산을 관리할 수 있습니다. 일반적으로 자산을 사용하여 작업하는 방법은 [디지털 자산 작업](/help/assets/manage-digital-assets.md)에서 자세히 다룹니다. 일반적인 주제에는 자산 업로드, 다운로드, 편집 및 게시가 포함됩니다.속성 보기 및 편집, 자산 검색.
 
 다이내믹 미디어 전용 기능은 다음과 같습니다.
 
@@ -39,7 +39,7 @@ Dynamic Media를 사용하면 자산을 게시하기 전에 자산을 관리할 
 * [자산 관리](managing-assets.md)
 * [빠른 보기를 사용하여 사용자 지정 팝업 만들기](custom-pop-ups.md)
 
-다이내믹 미디어 [설정을 참조하십시오](administering-dynamic-media.md).
+[다이내믹 미디어 설정](administering-dynamic-media.md)을 참조하십시오.
 
 <!-- 
 
@@ -50,7 +50,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## 다이내믹 미디어 활성화와 다이내믹 미디어 비활성화 {#dynamic-media-on-versus-dynamic-media-off}
+## 동적 미디어 활성화 대 동적 미디어 비활성화 {#dynamic-media-on-versus-dynamic-media-off}
 
 다음 특성을 사용하여 다이내믹 미디어의 활성화(활성화) 여부를 지정할 수 있습니다.
 
@@ -60,9 +60,9 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 이미지 자산을 클릭할 때 자산의 보기가 Dynamic Media가 활성화되면 달라집니다. Dynamic Media는 주문형 HTML5 뷰어를 사용합니다.
 
-### 동적 표현물 {#dynamic-renditions}
+### 동적 변환 {#dynamic-renditions}
 
-Dynamic Media가 활성화된 경우 이미지 및 뷰어 사전 설정과 같은 **[!UICONTROL 동적]**&#x200B;변환을 사용할 수 있습니다.
+Dynamic Media가 활성화되면 이미지 및 뷰어 사전 설정(**[!UICONTROL Dynamic]** 아래)과 같은 동적 변환을 사용할 수 있습니다.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -74,7 +74,7 @@ Dynamic Media가 활성화된 경우 이미지 및 뷰어 사전 설정과 같�
 
 ### PTIFF 변환 {#ptiff-renditions}
 
-다이내믹 미디어 지원 자산은 포함됩니다 `pyramid.tiffs`.
+다이내믹 미디어 사용 자산은 `pyramid.tiffs`입니다.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
