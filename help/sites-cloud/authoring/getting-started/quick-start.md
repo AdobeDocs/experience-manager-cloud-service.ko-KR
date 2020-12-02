@@ -181,7 +181,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    >
    >컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)를 사용해야 합니다.
 
-### 페이지 속성 편집 {#editing-the-page-properties}
+### 페이지 속성 편집  {#editing-the-page-properties}
 
 [페이지 속성을 편집](/help/sites-cloud/authoring/fundamentals/page-properties.md)하는 방법에는 두 가지(기본) 방법이 있습니다.
 
@@ -233,7 +233,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    자세한 내용은 [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)를 참조하십시오.
 
-### 페이지 이동, 복사 및 붙여넣기 또는 삭제 {#move-copy-and-paste-or-delete-your-page}
+### 페이지 이동, 복사 및 붙여넣기 또는 삭제  {#move-copy-and-paste-or-delete-your-page}
 
 이러한 작업은 모두 다음을 수행하여 트리거할 수 있습니다.
 
@@ -284,7 +284,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고 (해당되는 경우) 추가 작업을 수행합니다.
 
-### 페이지 버전 생성 {#creating-a-version-of-your-page}
+### 페이지 버전 생성  {#creating-a-version-of-your-page}
 
 페이지의 [버전](/help/sites-cloud/authoring/features/page-versions.md)을 생성하려면:
 
