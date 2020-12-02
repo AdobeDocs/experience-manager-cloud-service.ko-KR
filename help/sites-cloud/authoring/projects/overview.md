@@ -12,11 +12,11 @@ ht-degree: 76%
 
 # 프로젝트 {#projects}
 
-프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. 타일에는 [프로젝트 타일에 자세히 설명된 대로 프로젝트 및 팀 정보, 자산, 워크플로우 및 기타 유형의 정보가 포함될 수 있습니다.](#project-tiles)
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on `/home/users` and `/home/groups`. The easiest way to implement this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
+>프로젝트 사용자가 프로젝트 만들기, 작업/워크플로우 만들기, 팀 보기 및 관리와 같은 프로젝트 기능을 사용하는 동안 다른 사용자/그룹을 보려면 해당 사용자는 `/home/users` 및 `/home/groups`에 대한 읽기 권한이 있어야 합니다. 이를 구현하는 가장 쉬운 방법은 **projects-users** 그룹에 `/home/users` 및 `/home/groups`에 대한 읽기 액세스 권한을 제공하는 것입니다.
 
 사용자라면, 다음을 수행할 수 있습니다.
 
@@ -78,7 +78,7 @@ ht-degree: 76%
 
 **컬렉션 추가**&#x200B;를 클릭하고 목록에서 적절한 컬렉션을 선택하여 컬렉션을 추가하십시오.
 
-### 경험 {#experiences}
+### 경험  {#experiences}
 
 **경험** 타일에서는 모바일 앱, 웹 사이트 또는 발행을 프로젝트에 추가할 수 있습니다.
 
@@ -116,7 +116,7 @@ ht-degree: 76%
 
 ![번역 작업](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. 번역 작업 목록에는 자산 메타데이터 및 태그에 대한 항목도 표시됩니다. 이 항목들은 자산의 메타데이터와 태그도 번역됨을 나타냅니다.
+번역 워크플로우에서 자산을 보려면 **번역 작업** 카드의 하단에 있는 줄임표를 클릭합니다. 번역 작업 목록에는 자산 메타데이터 및 태그에 대한 항목도 표시됩니다. 이 항목들은 자산의 메타데이터와 태그도 번역됨을 나타냅니다.
 
 ![번역 작업 세부 사항](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -148,7 +148,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 ### 작업 {#tasks}
 
-작업을 사용하면 워크플로우를 포함하여 프로젝트 관련 작업의 상태를 모니터링할 수 있습니다. Tasks are covered in detail at [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md).
+작업을 사용하면 워크플로우를 포함하여 프로젝트 관련 작업의 상태를 모니터링할 수 있습니다. 작업은 [작업](/help/sites-cloud/authoring/projects/tasks.md)에서 자세히 다룹니다.
 
 ![작업](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -162,7 +162,7 @@ AEM은 다음과 같은 세 가지 서로 다른 템플릿을 제공합니다.
 
 선택하는 템플릿에 따라, 특히 사용자 역할 및 워크플로우와 관련하여 사용할 수 있는 선택 사항들이 다릅니다.
 
-## 프로젝트의 사용자 역할 {#user-roles-in-a-project}
+## 프로젝트의 사용자 역할  {#user-roles-in-a-project}
 
 다양한 사용자 역할이 프로젝트 템플릿에서 설정되며 다음의 두 가지 기본 이유로 사용됩니다.
 
@@ -175,7 +175,7 @@ AEM은 다음과 같은 세 가지 서로 다른 템플릿을 제공합니다.
 |---|---|---|---|
 | 관찰자 | 이 역할의 사용자는 프로젝트 상태를 포함하여 프로젝트 세부 사항을 볼 수 있습니다. | 프로젝트에 대한 읽기 전용 권한 | `workflow-users` 그룹 |
 | 편집자 | 이 역할의 사용자는 프로젝트 컨텐츠를 업로드하고 편집할 수 있습니다. | 프로젝트, 관련 메타데이터 및 관련 자산에 대한 읽기 및 쓰기 액세스촬영 목록 업로드, 사진 촬영, 자산 검토 및 승인 권한/etc/commerce;특정 프로젝트에 대한 권한 수정 | workflow-users 그룹 |
-| 소유자 | 이 역할의 사용자는 프로젝트를 시작할 수 있습니다. 소유자는 프로젝트를 만들고, 프로젝트에서 작업을 시작하고, 승인된 자산을 프로덕션 폴더로 이동할 수도 있습니다. 하지만, 프로젝트의 다른 모든 작업은 소유자가 보고 수행할 수도 있습니다. | 쓰기 권한 `/etc/commerce` | `dam-users` 그룹(프로젝트 만들기) 프로젝트-관리자 그룹(자산 이동 가능) |
+| 소유자 | 이 역할의 사용자는 프로젝트를 시작할 수 있습니다. 소유자는 프로젝트를 만들고, 프로젝트에서 작업을 시작하고, 승인된 자산을 프로덕션 폴더로 이동할 수도 있습니다. 하지만, 프로젝트의 다른 모든 작업은 소유자가 보고 수행할 수도 있습니다. | `/etc/commerce`에 쓰기 권한 | `dam-users` 그룹(프로젝트 만들기) 프로젝트-관리자 그룹(자산 이동 가능) |
 
 >[!NOTE]
 >
