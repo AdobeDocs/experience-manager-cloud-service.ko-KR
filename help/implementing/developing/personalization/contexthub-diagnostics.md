@@ -20,31 +20,31 @@ ContextHub 진단 페이지에서는 생성된 스토어 및 UI 모듈, 로드�
 
 >[!NOTE]
 >
->진단 정보를 반환하려면 디버그 모드를 활성화해야 하고, 진단 페이지가 비어 있게 됩니다. 디버그 모드 활성화 방법에 대한 자세한 내용은 [이 문서를](configuring-contexthub.md#debugging-contexthub) 참조하십시오.
+>진단 정보를 반환하려면 디버그 모드를 활성화해야 하고, 진단 페이지가 비어 있게 됩니다. 디버그 모드를 활성화하는 방법에 대한 자세한 내용은 [이 문서](configuring-contexthub.md#debugging-contexthub)를 참조하십시오.
 
-## 스토어 {#stores}
+## {#stores} 저장
 
 스토어 섹션에는 구성된 모든 ContextHub 스토어가 나열됩니다. 목록의 각 항목은 다음 정보로 구성됩니다.
 
-* **제목:** 스토어가 기반으로 하는 [스토어](sample-stores.md) 유형입니다.
-* **경로:** 구성을 포함하는 저장소 노드의 경로입니다.
+* **제목: 스토어** 가 기반으로 하는  [](sample-stores.md) 서체.
+* **path:** 구성을 포함하는 저장소 노드의 경로입니다.
 * **resourceType:** 저장소 유형이 정의된 저장소 노드의 경로입니다.
-* **clientlibs:** 스토어 유형을 구현하는 클라이언트 라이브러리의 카테고리.
+* **clientlibs:** 저장소 유형을 구현하는 로드된 클라이언트 라이브러리의 범주입니다.
 
 ## 모듈 {#modules}
 
 모듈 섹션에는 구성된 모든 ContextHub UI 모듈이 나열됩니다. 목록의 각 항목은 다음 정보로 구성됩니다.
 
-* **제목:** UI 모듈이 기반으로 하는 [UI 모듈](sample-modules.md) 유형입니다.
-* **경로:** 구성을 포함하는 저장소 노드의 경로입니다.
+* **제목:** UI  [모듈이 ](sample-modules.md) 기반으로 하는 UI 모듈 유형입니다.
+* **path:** 구성을 포함하는 저장소 노드의 경로입니다.
 * **resourceType:** UI 모듈 유형이 정의된 저장소 노드의 경로입니다.
-* **clientlibs:** UI 모듈 유형을 구현하는 로드된 클라이언트 라이브러리의 카테고리.
+* **clientlibs:** UI 모듈 유형을 구현하는 로드된 클라이언트 라이브러리의 범주입니다.
 
 ## Clientlibs {#clientlibs}
 
-Clientlibs 섹션에는 ContextHub가 로드한 모든 [클라이언트 라이브러리 폴더](/help/implementing/developing/introduction/clientlibs.md) 목록이 표시됩니다. 클라이언트 라이브러리는 다음과 같이 분류됩니다.
+Clientlibs 섹션에는 ContextHub가 로드한 [클라이언트 라이브러리 폴더](/help/implementing/developing/introduction/clientlibs.md)이 모두 나열됩니다. 클라이언트 라이브러리는 다음과 같이 분류됩니다.
 
-* **kernel.js:** ContextHub 프레임워크, 세그먼트 엔진 및 스토어 유형을 구현하는 클라이언트 라이브러리
+* **kernel.js:** ContextHub 프레임워크, 세그먼트 엔진 및 스토어 유형을 구현하는 클라이언트 라이브러리.
 * **ui.js:** ContextHub UI 및 UI 모듈 유형을 구현하는 클라이언트 라이브러리
 * **style.css:** 클라이언트 라이브러리에서 로드되는 CSS 파일
 
@@ -52,9 +52,9 @@ Clientlibs 섹션에는 ContextHub가 로드한 모든 [클라이언트 라이�
 
 URL 섹션에는 ContextHub 기능에 대한 링크가 포함되어 있습니다.
 
-* **구성 편집기:** 저장소, [UI 모드 및 UI 모듈을 구성할 수 있는 ContextHub 구성 페이지를](configuring-contexthub.md) 엽니다.
-* **ContextHub 모듈 구성:** ContextHub 저장소 구성의 Javascript 개체 표현이 포함된 `/etc/cloudsettings/default/contexthub.config.kernel.js` 파일을 엽니다.
-* **ContextHub UI 구성:** ContextHub UI 모드 구성의 Javascript 개체 표현이 포함된 `/etc/cloudsettings/default/contexthub.config.ui.js` 파일을 엽니다.
-* **kernel.js:** ContextHub 프레임워크, 세그먼트 엔진 및 스토어 유형을 구현하는 클라이언트 라이브러리의 소스 코드가 들어 있는 파일을 엽니다. `/etc/cloudsettings/default/contexthub.kernel.js`
-* **ui.js:** ContextHub UI 및 UI 모듈 유형을 구현하는 클라이언트 라이브러리의 소스 코드가 들어 있는 파일을 엽니다. `/etc/cloudsettings/default/contexthub.ui.js`
-* **style.css:** ContextHub UI 및 UI 모듈의 CSS 스타일이 들어 있는 파일을 엽니다. `/etc/cloudsettings/default/contexthub.styles.css`
+* **구성 편집기:** 스토어,  [UI 모드 및 UI 모듈을 구성할 수 ](configuring-contexthub.md) 있는 ContextHub 구성 페이지를 엽니다.
+* **ContextHub 모듈 구성:** ContextHub 저장소 구성의 Javascript 개체 표현을 포함하는  `/etc/cloudsettings/default/contexthub.config.kernel.js` 파일을 엽니다.
+* **ContextHub UI 구성:** ContextHub UI 모드 구성의 Javascript 개체 표현을 포함하는  `/etc/cloudsettings/default/contexthub.config.ui.js` 파일을 엽니다.
+* **kernel.js:** ContextHub 프레임워크, 세그먼트 엔진 및 스토어 유형을 구현하는 클라이언트 라이브러리의 소스 코드가 들어 있는  `/etc/cloudsettings/default/contexthub.kernel.js` 파일을 엽니다.
+* **ui.js:** ContextHub UI 및 UI 모듈 유형을 구현하는 클라이언트 라이브러리의 소스 코드가 들어 있는  `/etc/cloudsettings/default/contexthub.ui.js` 파일을 엽니다.
+* **style.css:** ContextHub UI 및 UI 모듈의 CSS 스타일이 들어 있는  `/etc/cloudsettings/default/contexthub.styles.css` 파일을 엽니다.
