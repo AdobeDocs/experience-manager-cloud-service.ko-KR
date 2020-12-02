@@ -3,9 +3,9 @@ title: 자산, 폴더 및 컬렉션을 링크로 공유
 description: 이 문서에서는 Experience Manager 자산 내에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Experience Manager {#share-assets-from-aem}에서 관리되는 에셋 공유 및 배포
 
-Adobe Experience Manager(AEM) 자산을 사용하여 자산, 폴더 및 컬렉션을 조직 구성원 및 파트너 및 벤더를 비롯한 외부 엔티티의 구성원과 공유할 수 있습니다. Experience Manager 자산에서 자산을 Cloud Service으로 공유하려면 다음 방법을 사용합니다.
+Adobe Experience Manager(AEM) 자산을 사용하여 자산, 폴더 및 컬렉션을 조직 구성원 및 파트너 및 벤더를 비롯한 외부 엔티티의 구성원과 공유할 수 있습니다. 다음 방법을 사용하여 Experience Manager 자산의 자산을 [!DNL Cloud Service]으로 공유합니다.
 
 * 링크로 공유
 * 에셋을 다운로드하고 별도로 공유할 수 있습니다.
@@ -187,6 +187,5 @@ Adobe 자산 링크[에 사용할 AEM을 구성하는 방법을 참조하십시�
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
