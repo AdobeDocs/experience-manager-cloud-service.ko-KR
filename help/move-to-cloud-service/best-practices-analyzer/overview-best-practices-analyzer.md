@@ -16,7 +16,7 @@ ht-degree: 35%
 
 이 도구는 AEM as a Cloud Service로의 전환 경로의 첫 번째 단계인 잠재적 리팩터링 영역을 식별하는 보고서를 생성합니다.
 
-## 모범 사례 분석기 보고서 {#bpa-report}
+## 우수 사례 분석기 보고서 {#bpa-report}
 
 모범 사례 분석기 보고서를 통해 일반적인 업그레이드 준비 상태를 세부적으로 파악합니다. 이 보고서는 AEM as a Cloud Service에 성공적으로 배포하기 전에 해결해야 하는 문제 카테고리 내의 검색 결과로 구성됩니다.
 
@@ -33,4 +33,4 @@ ht-degree: 35%
 >[!NOTE]
 >모범 사례 분석기 보고서는 수동으로 수집하고 평가해야 하는 정보를 제공하여 AEM으로 전환하는 데 필요한 시간과 비용을 계산하는 프로세스를 가속화합니다.
 
-AEM 인스턴스에서 모범 사례 분석기 보고서를 다운로드할 수도 있습니다. Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.
+AEM 인스턴스에서 모범 사례 분석기 보고서를 다운로드할 수도 있습니다. 자세한 내용은 [우수 사례 분석기 보고서 보기](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)를 참조하십시오.
