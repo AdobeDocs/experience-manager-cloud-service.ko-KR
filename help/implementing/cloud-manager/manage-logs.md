@@ -14,11 +14,11 @@ ht-degree: 9%
 
 사용자는 환경 카드를 사용하여 선택한 환경에서 사용 가능한 로그 파일 목록에 액세스할 수 있습니다.  사용자는 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
 
-이러한 파일은 UI를 통해 **개요** 페이지에서 다운로드할 수 있습니다.
+이러한 파일은 **개요** 페이지에서 UI를 통해 다운로드할 수 있습니다.
 
 ![](assets/download-logs1.png)
 
-또는 환경 **페이지** :
+또는 **환경** 페이지:
 
 ![](assets/download-logs.png)
 
@@ -28,7 +28,7 @@ ht-degree: 9%
 ![](assets/download-logs2.png)
 
 
-## API를 통한 로그 {#logs-through-api}
+## API {#logs-through-api}를 통해 로그
 
 UI를 통해 로그를 다운로드하는 것 외에도 API와 명령줄 인터페이스를 통해 로그를 사용할 수 있습니다.
 
@@ -68,7 +68,7 @@ Environment Id Service    Name
 ```
 
 >[!NOTE]
->UI와 API를 통해 **로그 다운로드** 기능을 사용할 수 있지만, 로그 **는 API/CLI만** 사용할 수 있습니다.
+>**로그 다운로드**&#x200B;는 UI와 API를 모두 통해 사용할 수 있지만 **로그 추적**&#x200B;은 API/CLI 전용입니다.
 
 ### 추가 리소스 {#resources}
 
