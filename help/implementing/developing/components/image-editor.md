@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ### imageMap 속성 {#imagemap-property}
 
-이미지 맵 좌표는 이미지 편집기에 의해 JCR에 `imageMap` 속성으로 유지됩니다. 다음 형식이 있습니다.
+이미지 맵 좌표는 이미지 편집기에서 `imageMap` 속성으로 JCR에 유지됩니다. 다음 형식이 있습니다.
 
 이 등록 정보에는 다음과 같은 맵 영역이 저장됩니다.
 
@@ -45,13 +45,13 @@ SVG(Scalable Vector Graphics)는 이미지 편집기에서 지원됩니다.
 
 특정 MIME 유형에 대해서는 서버측 처리에서 지원되지 않기 때문에 작성 작업을 제한해야 합니다. 예를 들어 SVG 이미지 편집은 허용되지 않을 수 있습니다.
 
-이미지 편집기의 플러그인은 개별 플러그인의 구성 노드에서 속성을 설정하여 MIME 유형에 따라 선택적으로 활성화할 수 `supportedMimeTypes` 있습니다.
+이미지 편집기의 플러그인은 개별 플러그인의 구성 노드에서 `supportedMimeTypes` 속성을 설정하여 MIME 유형에 따라 선택적으로 활성화할 수 있습니다.
 
 ### 예 {#example}
 
 예를 들어 자르기 기능은 GIF, JPEG, PNG, WEBP 및 TIFF 이미지만 허용됩니다.
 
-그런 다음 이 `supportedMimeTypes` 속성을 이미지 구성 요소의 노드에 있는 플러그인의 구성 노드에서 허용되는 MIME 유형의 문자열 `cq:editConfig` 으로 설정해야 합니다.
+그런 다음 `supportedMimeTypes` 속성을 이미지 구성 요소의 `cq:editConfig` 노드에 있는 플러그인의 구성 노드에서 허용되는 MIME 유형의 문자열로 설정해야 합니다.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 
