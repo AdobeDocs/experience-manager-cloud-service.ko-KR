@@ -16,13 +16,13 @@ ht-degree: 0%
 이 페이지에서는 AEM Engineering의 모범 사례를 기반으로 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대해 설명합니다.
 
 >[!NOTE]
->여기에 제공된 코드 샘플은 실례만을 위한 것입니다. SonarQube [개념](https://docs.sonarqube.org/7.4/user-guide/concepts/) 및 품질 규칙에 대한 자세한 내용은 개념을 참조하십시오.
+>여기에 제공된 코드 샘플은 실례만을 위한 것입니다. SonarQube 개념 및 품질 규칙에 대해 알려면 [개념](https://docs.sonarqube.org/7.4/user-guide/concepts/)을 참조하십시오.
 
 ## SonarQube 규칙 {#sonarqube-rules}
 
 다음 섹션에서는 SonarQube 규칙에 대해 설명합니다.
 
-### 위험한 기능 사용 안 함 {#do-not-use-potentially-dangerous-functions}
+### 잠재적으로 위험한 함수 {#do-not-use-potentially-dangerous-functions} 사용 안 함
 
 **키**:CQRules:CWE-676
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 **이후**:버전 2018.4.0
 
-메서드 ***Thread.stop()*** 및 ***Thread.interrupt()*** 를 사용하면 재현하기 어려운 문제와 보안 취약점이 발생할 수 있습니다. 그들의 사용량은 엄격하게 감시되고 검증되어야 한다. 일반적으로 메시지 전달은 유사한 목표를 달성하는 더 안전한 방법입니다.
+***Thread.stop()*** 및 ***Thread.interrupt()*** 메서드에서 문제를 재현할 수 있으며 경우에 따라 보안 취약점이 발생합니다. 그들의 사용량은 엄격하게 감시되고 검증되어야 한다. 일반적으로 메시지 전달은 유사한 목표를 달성하는 더 안전한 방법입니다.
 
 #### 비호환 코드 {#non-compliant-code}
 
@@ -81,7 +81,7 @@ public class DoThis implements Runnable {
 }
 ```
 
-### 외부에서 제어할 수 있는 형식 문자열을 사용하지 마십시오 {#do-not-use-format-strings-which-may-be-externally-controlled}
+### 외부적으로 제어될 수 있는 형식 문자열을 사용하지 마십시오 {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 **키**:CQRules:CWE-134
 
@@ -103,7 +103,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### HTTP 요청에는 항상 소켓 및 연결 시간 초과가 있어야 합니다. {#http-requests-should-always-have-socket-and-connect-timeouts}
+### HTTP 요청에는 항상 소켓 및 연결 시간 초과가 있어야 합니다 {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 **키**:CQRules:ConnectionTimeoutMechanism
 
@@ -191,11 +191,11 @@ public void orDoThis() {
 
 **이후**:버전 2018.7.0
 
-AEM API에는 사용자 지정 코드로 사용되지만 구현되지 않는 Java 인터페이스 및 클래스가 포함되어 있습니다. 예를 들어 인터페이스 com.day.cq.wcm.api. *Page* 는 ***AEM에서만 구현되도록 디자인되었습니다***.
+AEM API에는 사용자 지정 코드로 사용되지만 구현되지 않는 Java 인터페이스 및 클래스가 포함되어 있습니다. 예를 들어 *com.day.cq.wcm.api.Page* 인터페이스는 ***AEM만***&#x200B;에 의해 구현되도록 디자인되었습니다.
 
-이러한 인터페이스에 새 메서드가 추가되어도 이러한 추가 메서드는 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으므로 이러한 인터페이스에 새 메서드를 추가하는 것은 역호환으로 간주됩니다. 그러나 사용자 지정 코드가 ***이러한 인터페이스 중 하나를 구현하면*** 해당 사용자 지정 코드에서는 고객에게 이전 버전과의 호환성 위험이 발생하게 됩니다.
+이러한 인터페이스에 새 메서드가 추가되어도 이러한 추가 메서드는 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으므로 이러한 인터페이스에 새 메서드를 추가하는 것은 역호환으로 간주됩니다. 그러나 사용자 지정 코드 ***이(가) 이러한 인터페이스 중 하나를 구현하면 해당 사용자 지정 코드가 고객에게 이전 호환성 위험을 야기했습니다.***
 
-AEM에서만 구현되도록 만들어진 인터페이스(및 클래스)에 *org.osgi.annotation.versioning.ProviderType* (또는 유사한 기존 주석 *aQute.bnd.annotation.ProviderType*)으로 주석을 달 수 있습니다. 이 규칙은 인터페이스가 사용자 지정 코드로 구현되거나 클래스가 확장되는 경우를 식별합니다.
+AEM에서만 구현되도록 만들어진 인터페이스(및 클래스)는 *org.osgi.annotation.versioning.ProviderType*(또는 유사한 기존 주석 *aQute.bnd.annotation.ProviderType*)으로 주석을 달 수 있습니다. 이 규칙은 인터페이스가 사용자 지정 코드로 구현되거나 클래스가 확장되는 경우를 식별합니다.
 
 #### 비호환 코드 {#non-compliant-code-3}
 
@@ -207,7 +207,7 @@ public class DontDoThis implements Page {
 }
 ```
 
-### ResourceResolver 개체는 항상 닫아야 합니다. {#resourceresolver-objects-should-always-be-closed}
+### ResourceResolver 개체는 항상 {#resourceresolver-objects-should-always-be-closed} 닫아야 합니다.
 
 **키**:CQRules:CQBP-72
 
@@ -252,7 +252,7 @@ public void orDoThis(Session session) throws Exception {
 }
 ```
 
-### Sling 서블릿 경로를 사용하여 서블릿 등록 안 함 {#do-not-use-sling-servlet-paths-to-register-servlets}
+### Sling 서블릿 경로를 사용하여 서블릿 {#do-not-use-sling-servlet-paths-to-register-servlets} 등록 안 함
 
 **키**:CQRules:CQBP-75
 
@@ -262,7 +262,7 @@ public void orDoThis(Session session) throws Exception {
 
 **이후**:버전 2018.4.0
 
-Sling 설명서에 설명된 대로 [경로별 바인딩](http://sling.apache.org/documentation/the-sling-engine/servlets.html)서비스는 비활성화됩니다. 경로 바인딩된 서블릿은 표준 JCR 액세스 컨트롤을 사용할 수 없으므로 추가 보안 권한이 필요합니다. 경로 바인딩된 서블릿을 사용하는 대신 저장소에서 노드를 만들고 리소스 유형별로 서블릿을 등록하는 것이 좋습니다.
+[Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html)에 설명된 대로 경로별 바인딩 서블릿이 비활성화됩니다. 경로 바인딩된 서블릿은 표준 JCR 액세스 컨트롤을 사용할 수 없으므로 추가 보안 권한이 필요합니다. 경로 바인딩된 서블릿을 사용하는 대신 저장소에서 노드를 만들고 리소스 유형별로 서블릿을 등록하는 것이 좋습니다.
 
 #### 비호환 코드 {#non-compliant-code-5}
 
@@ -275,7 +275,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Catched Exceptions를 기록하거나 throw해야 하지만 둘 다 해서는 안 됩니다. {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Catched Exceptions는 기록되거나 throw되어야 하지만 둘 다 {#caught-exceptions-should-be-logged-or-thrown-but-not-both}이면 안 됩니다.
 
 **키**:CQRules:CQBP-44—CatchAndEitorLogOrThrow
 
@@ -320,7 +320,7 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### 즉시 throw 문이 나오는 로그 문을 사용하지 마십시오 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### 즉시 throw 문 뒤에 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}이 나오는 로그 문을 사용하지 마십시오
 
 **키**:CQRules:CQBP-44—ContinuedLogAndThrow
 
@@ -379,7 +379,7 @@ public void doGet() throws Exception {
 }
 ```
 
-### 로깅 문의 첫 번째 매개 변수로 Exception.getMessage()를 사용하지 마십시오 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
+### 로깅 문 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}의 첫 번째 매개 변수로 Exception.getMessage()를 사용하지 마십시오
 
 **키**:CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
 
@@ -415,7 +415,7 @@ public void doThis() {
 }
 ```
 
-### 캐치 블록에 로그인하는 것은 경고 또는 오류 수준이어야 합니다. {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### 캐치 블록에 로그인하는 것은 WARN 또는 ERROR 수준 {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}이어야 합니다.
 
 **키**:CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
@@ -425,7 +425,7 @@ public void doThis() {
 
 **이후**:버전 2018.4.0
 
-이름에서 알 수 있듯이 Java 예외는 항상 *예외적인* 상황에서 사용해야 합니다. 따라서 예외가 발견되면 로그 메시지가 적절한 수준에서 기록되도록(WARN 또는 ERROR) 해야 합니다. 그러면 해당 메시지가 로그에 올바로 표시됩니다.
+이름에서 알 수 있듯이 Java 예외는 항상 *예외적인* 환경에서 사용해야 합니다. 따라서 예외가 발견되면 로그 메시지가 적절한 수준에서 기록되도록(WARN 또는 ERROR) 해야 합니다. 그러면 해당 메시지가 로그에 올바로 표시됩니다.
 
 #### 비호환 코드 {#non-compliant-code-10}
 
@@ -451,7 +451,7 @@ public void doThis() {
 }
 ```
 
-### 콘솔에 스택 추적을 인쇄하지 않음 {#do-not-print-stack-traces-to-the-console}
+### 콘솔 {#do-not-print-stack-traces-to-the-console}에 스택 추적을 인쇄하지 마십시오.
 
 **키**:CQRules:CQBP-44—ExceptionPrintStackTrace
 
@@ -461,7 +461,7 @@ public void doThis() {
 
 **이후**:버전 2018.4.0
 
-앞에서 언급했듯이, 컨텍스트는 로그 메시지를 이해할 때 중요합니다. Exception.printStackTrace()를 사용하면 **스택 추적만** 표준 오류 스트림으로 출력되므로 모든 컨텍스트가 손실됩니다. 또한 AEM과 같은 다중 스레드 애플리케이션에서 이 방법을 동시에 사용하여 여러 개의 예외가 인쇄되는 경우 스택 추적이 겹칠 수 있으므로 상당한 혼란이 발생할 수 있습니다. 예외 사항은 로깅 프레임워크를 통해서만 기록되어야 합니다.
+앞에서 언급했듯이, 컨텍스트는 로그 메시지를 이해할 때 중요합니다. Exception.printStackTrace()를 사용하면 **만 스택 추적을 표준 오류 스트림으로 출력하여 모든 컨텍스트를 잃게 됩니다.** 또한 AEM과 같은 다중 스레드 애플리케이션에서 이 방법을 동시에 사용하여 여러 개의 예외가 인쇄되는 경우 스택 추적이 겹칠 수 있으므로 상당한 혼란이 발생할 수 있습니다. 예외 사항은 로깅 프레임워크를 통해서만 기록되어야 합니다.
 
 #### 비호환 코드 {#non-compliant-code-11}
 
@@ -487,7 +487,7 @@ public void doThis() {
 }
 ```
 
-### 표준 출력 또는 표준 오류로 출력하지 않음 {#do-not-output-to-standard-output-or-standard-error}
+### 표준 출력 또는 표준 오류 {#do-not-output-to-standard-output-or-standard-error}으로 출력하지 마십시오.
 
 **키**:CQRules:CQBP-44—LogLevelConsolePrinters
 
@@ -523,7 +523,7 @@ public void doThis() {
 }
 ```
 
-### 하드 코딩된 /apps 및 /libs 경로 방지 {#avoid-hardcoded-apps-and-libs-paths}
+### 하드 코딩된 /apps 및 /libs 경로 {#avoid-hardcoded-apps-and-libs-paths} 방지
 
 **키**:CQRules:CQBP-71
 
@@ -563,9 +563,9 @@ public void doThis(Resource resource) {
 
 Sling 스케줄러는 보장된 실행을 필요로 하는 작업에 사용해서는 안 됩니다. Sling Scheduled Jobs는 실행이 보장되며 클러스터된 환경과 비클러스터형 환경 모두에 더 적합합니다.
 
-클러스터 환경에서 Sling [Jobs가 처리되는 방법에 대한 자세한 내용은 Apache Sling Eventing 및](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) Job Handling을 참조하십시오.
+클러스터된 환경에서 Sling 작업이 처리되는 방법에 대한 자세한 내용은 [Apache Sling 이벤트 및 작업 처리](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)를 참조하십시오.
 
-### AEM 더 이상 사용되지 않는 API {#sonarqube-aem-deprecated}
+### AEM 더 이상 사용되지 않는 API는 {#sonarqube-aem-deprecated}
 
 **키**:AMSCORE-553
 
@@ -577,18 +577,18 @@ Sling 스케줄러는 보장된 실행을 필요로 하는 작업에 사용해�
 
 AEM API 표면은 사용이 중단되어 더 이상 사용되지 않는 API를 식별하기 위해 지속적인 개정 하에 있습니다.
 
-대부분의 경우, 이러한 API는 표준 Java *@Deprecated* 주석을 사용하고, 예를 들어, 에 의해 식별된 주석을 사용합니다 `squid:CallToDeprecatedMethod`.
+대부분의 경우, 이러한 API는 표준 Java *@Depreced* 주석과 `squid:CallToDeprecatedMethod`에 의해 식별되는 것과 같이 더 이상 사용되지 않습니다.
 
 그러나 AEM 컨텍스트에서 API가 더 이상 사용되지 않지만 다른 컨텍스트에서 더 이상 사용되지 않는 경우도 있습니다. 이 규칙은 이 두 번째 클래스를 식별합니다.
 
-## OakPAL 컨텐츠 규칙 {#oakpal-rules}
+## OakPAL 콘텐츠 규칙 {#oakpal-rules}
 
 Cloud Manager에서 실행되는 OakPAL 검사 아래에서 확인하십시오.
 
 >[!NOTE]
 >OakPAL은 AEM 파트너(2019년 AEM Rockstar 북미 우승자)가 개발한 프레임워크로 독립형 Oak 저장소를 사용하여 컨텐츠 패키지를 검증합니다.
 
-### 고객 패키지는 /libs 아래에 노드를 생성하거나 수정해서는 안 됩니다. {#oakpal-customer-package}
+### 고객 패키지는 /libs {#oakpal-customer-package} 아래에 노드를 만들거나 수정해서는 안됩니다.
 
 **키**:금지된 경로
 
@@ -598,9 +598,9 @@ Cloud Manager에서 실행되는 OakPAL 검사 아래에서 확인하십시오.
 
 **이후**:버전 2019.6.0
 
-AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으로 간주해야 하는 것은 오랫동안 모범 사례였습니다. 노드 및 속성을 */libs에서* 수정하면 주요 및 경미한 업데이트에 심각한 위험이 발생합니다. 법률 */법률* 수정 사항은 공식 채널을 통해서만 이루어져야 한다.
+AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으로 간주해야 하는 것은 오랫동안 모범 사례였습니다. */libs*&#x200B;에서 노드 및 속성을 수정하면 주요 및 부 업데이트에 심각한 위험이 발생합니다. */libs*&#x200B;을 수정하는 것은 공식 채널을 통해 Adobe에 의해서만 이루어져야 합니다.
 
-### 패키지에 중복된 OSGi 구성이 들어 있으면 안 됩니다. {#oakpal-package-osgi}
+### 패키지에 중복된 OSGi 구성 {#oakpal-package-osgi}이(가) 포함되어 있지 않아야 합니다.
 
 **키**:DuplicateOsgiConfigurations
 
@@ -631,7 +631,7 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### 구성 및 설치 폴더에는 OSGi 노드만 포함되어야 합니다. {#oakpal-config-install}
+### 구성 및 설치 폴더에는 OSGi 노드 {#oakpal-config-install}만 포함되어야 합니다.
 
 **키**:ConfigAndInstallShouldOnlyContainOsgiNodes
 
@@ -641,9 +641,9 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
 
 **이후**:버전 2019.6.0
 
-보안상의 이유로, */config/ 및 /install/* 가 포함된 경로는 AEM의 관리 사용자만 읽을 수 있고 OSGi 구성 및 OSGi 번들에만 사용해야 합니다. 이러한 세그먼트가 들어 있는 경로 아래에 다른 유형의 컨텐츠를 배치하면 행정 및 비관리 사용자 간에 의도치 않게 달라지는 애플리케이션 동작이 발생합니다.
+보안상의 이유로 */config/ 및 /install/*&#x200B;이 포함된 경로는 AEM의 관리 사용자만 읽을 수 있고 OSGi 구성 및 OSGi 번들에만 사용해야 합니다. 이러한 세그먼트가 들어 있는 경로 아래에 다른 유형의 컨텐츠를 배치하면 행정 및 비관리 사용자 간에 의도치 않게 달라지는 애플리케이션 동작이 발생합니다.
 
-일반적인 문제는 구성 요소 대화 상자 `config` 내에 이름이 지정된 노드를 사용하거나 인라인 편집을 위해 리치 텍스트 편집기 구성을 지정할 때 발생합니다. 이 문제를 해결하려면 문제가 있는 노드의 이름을 호환 이름으로 변경해야 합니다. 리치 텍스트 편집기 구성의 경우 노드의 `configPath` 속성을 사용하여 새 위치를 `cq:inplaceEditing` 지정합니다.
+일반적인 문제는 구성 요소 대화 상자 내에 `config`이라는 노드를 사용하거나 인라인 편집을 위해 리치 텍스트 편집기 구성을 지정할 때 발생합니다. 이 문제를 해결하려면 문제가 있는 노드의 이름을 호환 이름으로 변경해야 합니다. 리치 텍스트 편집기 구성의 경우 `cq:inplaceEditing` 노드의 `configPath` 속성을 사용하여 새 위치를 지정합니다.
 
 #### 비호환 코드 {#non-compliant-code-config-install}
 
@@ -664,7 +664,7 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
       + rtePlugins [nt:unstructured]
 ```
 
-### 패키지가 겹치지 않아야 합니다. {#oakpal-no-overlap}
+### 패키지는 {#oakpal-no-overlap}과 겹치지 않아야 합니다.
 
 **키**:PackageOverlays
 
@@ -674,9 +674,9 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
 
 **이후**:버전 2019.6.0
 
-Similar to *Contains Duplicate OSGi Configurations* . Similar this is a common problem on complex projects where the same node path is written to multiple separate content packages. 컨텐츠 패키지 종속성을 사용하여 일관된 결과를 얻을 수 있지만, 완전히 겹치지 않는 것이 좋습니다.
+Similar to the *Packages Should Not Include Duplicate OSGi Configurations* this is a common problem on complex projects where the same node path is written to multiple separate content packages. 컨텐츠 패키지 종속성을 사용하여 일관된 결과를 얻을 수 있지만, 완전히 겹치지 않는 것이 좋습니다.
 
-### 기본 작성 모드는 클래식 UI가 아니어야 합니다. {#oakpal-default-authoring}
+### 기본 작성 모드는 클래식 UI {#oakpal-default-authoring}일 수 없습니다.
 
 **키**:ClassicUIAuthauthoringMode
 
@@ -686,9 +686,9 @@ Similar to *Contains Duplicate OSGi Configurations* . Similar this is a common p
 
 **이후**:버전 2020.5.0
 
-OSGi 구성은 AEM 내의 기본 작성 모드를 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 정의합니다. 클래식 UI는 AEM 6.4부터 사용되지 않으므로 이제 기본 작성 모드가 클래식 UI로 구성되면 문제가 발생합니다.
+OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl`은 AEM 내의 기본 작성 모드를 정의합니다. 클래식 UI는 AEM 6.4부터 사용되지 않으므로 이제 기본 작성 모드가 클래식 UI로 구성되면 문제가 발생합니다.
 
-### 대화 상자가 있는 구성 요소에는 터치 UI 대화 상자가 있어야 합니다. {#oakpal-components-dialogs}
+### 대화 상자가 있는 구성 요소에는 터치 UI 대화 상자 {#oakpal-components-dialogs}가 있어야 합니다.
 
 **키**:ComponentWithOnlyClassicUIDialog
 
@@ -701,12 +701,12 @@ OSGi 구성은 AEM 내의 기본 작성 모드를 `com.day.cq.wcm.core.impl.Auth
 클래식 UI 대화 상자가 있는 AEM 구성 요소에는 최적의 작성 환경을 제공하고 클래식 UI가 지원되지 않는 Cloud Service 배포 모델과 호환되도록 항상 해당 터치 UI 대화 상자가 있어야 합니다. 이 규칙은 다음 시나리오를 확인합니다.
 
 * 클래식 UI 대화 상자가 있는 구성 요소(즉, 대화 상자 하위 노드)에는 해당 터치 UI 대화 상자(즉, `cq:dialog` 하위 노드)가 있어야 합니다.
-* 클래식 UI 디자인 대화 상자(즉, design_dialog 노드)가 있는 구성 요소에는 해당 터치 UI 디자인 대화 상자(즉, 하위 노드)가 있어야 `cq:design_dialog` 합니다.
+* 클래식 UI 디자인 대화 상자가 있는 구성 요소(즉, design_dialog 노드)에는 해당 터치 UI 디자인 대화 상자(즉, `cq:design_dialog` 하위 노드)가 있어야 합니다.
 * 클래식 UI 대화 상자와 클래식 UI 디자인 대화 상자를 모두 포함하는 구성 요소에는 해당 터치 UI 대화 상자와 해당 터치 UI 디자인 대화 상자가 모두 있어야 합니다.
 
-AEM 현대화 도구 설명서는 클래식 UI에서 터치 UI로 구성 요소를 변환하는 방법에 대한 설명서 및 도구를 제공합니다. 자세한 [내용은 AEM Modern](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) Tools를 참조하십시오.
+AEM 현대화 도구 설명서는 클래식 UI에서 터치 UI로 구성 요소를 변환하는 방법에 대한 설명서 및 도구를 제공합니다. 자세한 내용은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html)를 참조하십시오.
 
-### 패키지는 변경 가능한 컨텐츠와 불변경 컨텐츠를 혼합하지 않아야 합니다. {#oakpal-packages-immutable}
+### 패키지는 변경 가능한 컨텐츠와 불변경 컨텐츠 {#oakpal-packages-immutable}를 혼합하지 않아야 합니다.
 
 **키**:MutableMutableMixedPackage
 
@@ -716,9 +716,9 @@ AEM 현대화 도구 설명서는 클래식 UI에서 터치 UI로 구성 요소�
 
 **이후**:버전 2020.5.0
 
-Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저장소의 불변경 영역에 대한 컨텐츠(즉, 고객 코드로 수정해서는 안 `/apps and /libs, although /libs` 되며 별도의 위반이 발생함) 또는 변경 영역(즉, 다른 모든 것)은 포함하되 둘 다 포함해서는 안 됩니다. 예를 들어, 두 패키지 모두 `/apps/myco/components/text and /etc/clientlibs/myco` 가 Cloud Service과 호환되지 않고 문제가 보고됩니다.
+Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저장소의 불변경 영역에 대한 컨텐츠(즉, `/apps and /libs, although /libs`은 고객 코드로 수정해서는 안 되며 별도의 위반이 발생함) 또는 변경 영역(즉, 다른 모든 것)은 포함하되 둘 다 포함해서는 안 됩니다. 예를 들어 `/apps/myco/components/text and /etc/clientlibs/myco`을(를) 모두 포함하는 패키지는 Cloud Service과 호환되지 않으므로 문제가 보고됩니다.
 
-Refer to [AEM Project Structure](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
+자세한 내용은 [AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)를 참조하십시오.
 
 ### 역방향 복제 에이전트를 사용할 수 없습니다. {#oakpal-reverse-replication}
 
@@ -730,7 +730,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/ko-KR/exper
 
 **이후**:버전 2020.5.0
 
-릴리스 노트에 설명된 대로 Cloud Service 배포에서는 역 복제 지원을 사용할 [수 없습니다.복제 에이전트 제거](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+[릴리스 노트에 설명된 대로 Cloud Service 배포에서는 역 복제 지원을 사용할 수 없습니다.복제 에이전트 제거](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 역방향 복제를 사용하는 고객은 대체 솔루션에 대해 Adobe에 문의해야 합니다.
 
