@@ -12,42 +12,42 @@ ht-degree: 2%
 ---
 
 
-# Manage assets {#manage-assets}
+# 자산 관리 {#manage-assets}
 
-이 문서에서는 Adobe Experience Manager 자산의 자산을 관리하고 편집하는 방법에 대해 설명합니다. 컨텐츠 조각을 관리하려면 컨텐츠 조각 [자산을](content-fragments/content-fragments.md) 참조하십시오.
+이 문서에서는 Adobe Experience Manager 자산의 자산을 관리하고 편집하는 방법에 대해 설명합니다. 컨텐츠 조각을 관리하려면 [컨텐츠 조각](content-fragments/content-fragments.md) 자산을 참조하십시오.
 
-## 폴더 만들기 {#creating-folders}
+## {#creating-folders} 폴더 만들기
 
-모든 이미지 등 자산 컬렉션을 구성할 때 폴더를 만들어 함께 유지할 수 `Nature` 있습니다. 폴더를 사용하여 자산을 분류하고 구성할 수 있습니다. AEM Assets은 보다 효과적으로 작업하기 위해 폴더에서 자산을 구성할 필요가 없습니다.
+모든 `Nature` 이미지 등 자산 컬렉션을 구성할 때 폴더를 만들어 함께 유지할 수 있습니다. 폴더를 사용하여 자산을 분류하고 구성할 수 있습니다. AEM Assets은 보다 효과적으로 작업하기 위해 폴더에서 자산을 구성할 필요가 없습니다.
 
 >[!NOTE]
 >
->* Marketing Cloud에 공유할 때는 해당 유형의 자산 폴더 `sling:OrderedFolder`를 공유할 수 없습니다. 폴더를 공유하려면 폴더를 만들 때 [ [!UICONTROL 순서] ]를 선택하지 마십시오.
->* Experience Manager에서는 폴더 이름으로 `subassets` 단어를 사용할 수 없습니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다.
+>* `sling:OrderedFolder` 유형의 자산 폴더 공유는 Marketing Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL Ordered]을 선택하지 마십시오.
+>* Experience Manager에서는 `subassets` 단어를 폴더 이름으로 사용할 수 없습니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다.
 
 
-1. 새 폴더를 만들 디지털 자산 폴더의 위치로 이동합니다. 메뉴에서 만들기를 **[!UICONTROL 클릭합니다]**. [새 **[!UICONTROL 폴더]를 선택합니다]**.
-1. [ **[!UICONTROL 제목]** ] 필드에 폴더 이름을 입력합니다. 기본적으로 DAM은 폴더 이름으로 제공한 제목을 사용합니다. 폴더가 만들어지면 기본값을 무시하고 다른 폴더 이름을 지정할 수 있습니다.
+1. 새 폴더를 만들 디지털 자산 폴더의 위치로 이동합니다. 메뉴에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 새 폴더]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 제목]** 필드에 폴더 이름을 입력합니다. 기본적으로 DAM은 폴더 이름으로 제공한 제목을 사용합니다. 폴더가 만들어지면 기본값을 무시하고 다른 폴더 이름을 지정할 수 있습니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 디지털 자산 폴더에 폴더가 표시됩니다.
 
 다음(공백으로 구분된 목록) 문자는 지원되지 않습니다.
 
-* 자산 파일 이름에는 다음 문자를 사용할 수 없습니다. `* / : [ \\ ] | # % { } ? &`
-* 자산 폴더 이름에는 다음 문자를 사용할 수 없습니다. `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 자산 파일 이름에는 다음 문자를 사용할 수 없습니다.`* / : [ \\ ] | # % { } ? &`
+* 자산 폴더 이름에는 다음 문자를 사용할 수 없습니다.`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Upload assets {#uploading-assets}
+## 자산 업로드 {#uploading-assets}
 
-Experience Manager에 디지털 자산 [추가를 참조하십시오](add-assets.md).
+[Experience Manager](add-assets.md)에 디지털 자산 추가를 참조하십시오.
 
-## 중복 에셋 검색 {#detect-duplicate-assets}
+## 중복된 자산 {#detect-duplicate-assets} 감지
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드하는 경우, 중복을 [!DNL Experience Manager] 감지하여 사용자에게 알립니다. 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 중복 감지는 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL Adobe AEM Cloud Asset Duplicator를 구성합니다]. OSGi 구성 [방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)보기 중복 검색은 에 저장된 고유 `dam:sha1` 값을 기반으로 합니다 `jcr:content/metadata/dam:sha1`. 즉, 파일 이름이 다른 경우에도 중복된 자산이 검색됩니다.
+DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드하는 경우, [!DNL Experience Manager]은 복제를 감지하여 사용자에게 알립니다. 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 중복 감지는 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL Adobe AEM Cloud Asset Duplicator]를 구성합니다. [OSGi 구성 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)을 참조하십시오. 복제 감지는 `jcr:content/metadata/dam:sha1`에 저장된 고유한 `dam:sha1` 값을 기반으로 합니다. 즉, 파일 이름이 다른 경우에도 중복된 자산이 검색됩니다.
 
 ![중복 자산 OSGi 구성 감지](assets/duplicate-detection.png)
 
-사용자 지정 코드 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 에서 구성 파일을 추가할 수 있으며 파일에는 다음이 포함될 수 있습니다.
+사용자 지정 코드에 구성 파일 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json`을(를) 추가할 수 있으며 파일에는 다음이 포함될 수 있습니다.
 
 ```json
 {
@@ -60,50 +60,50 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 
 ![중복 자산에 대한 받은 편지함 알림](assets/duplicate-detect-inbox-notification.png)
 
-## 에셋 미리 보기 {#previewing-assets}
+## 자산 미리 보기 {#previewing-assets}
 
 자산을 미리 보려면 다음 단계를 따르십시오.
 
 1. 자산 사용자 인터페이스에서 미리 보려는 자산의 위치로 이동합니다.
 1. 원하는 자산을 눌러 엽니다.
 
-1. 미리 보기 모드에서는 [지원되는 이미지 유형](/help/assets/file-format-support.md) (대화형 편집 포함)에 대해 확대/축소 옵션을 사용할 수 있습니다.
+1. 미리 보기 모드에서는 [지원되는 이미지 유형](/help/assets/file-format-support.md)(대화형 편집 포함)에 대해 확대/축소 옵션을 사용할 수 있습니다.
 
-   자산을 확대하려면 자산을 탭/ `+` 클릭합니다(또는 자산에서 돋보기를 탭/클릭). 축소하려면 탭/클릭합니다 `-`. 확대하면 패닝하여 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표를 클릭하면 원래 보기로 돌아갑니다.
+   자산을 확대하려면 `+`을 탭/클릭합니다(또는 자산에서 돋보기를 탭/클릭합니다). 축소하려면 `-`을 탭/클릭합니다. 확대하면 패닝하여 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표를 클릭하면 원래 보기로 돌아갑니다.
 
-   재설정 **[!UICONTROL 을]** 눌러 뷰를 원래 크기로 재설정합니다.
+   보기를 원래 크기로 재설정하려면 **[!UICONTROL 재설정]**&#x200B;을 누릅니다.
 
 ## 속성 편집 {#editing-properties}
 
 1. 편집할 메타데이터가 있는 자산의 위치로 이동합니다.
 
-1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 속성]** 을 탭/클릭하여 자산 속성을 봅니다. 또는 자산 카드에서 **[!UICONTROL 속성]** 빠른 작업을 선택합니다.
+1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 탭/클릭하여 자산 속성을 봅니다. 또는 자산 카드에서 **[!UICONTROL 속성]** 빠른 작업을 선택합니다.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. 속성 [!UICONTROL 페이지에서] 다양한 탭에서 메타데이터 속성을 편집합니다. 예를 들어 **[!UICONTROL 기본]** 탭 아래에서 제목, 설명 등을 편집합니다.
+1. [!UICONTROL 속성] 페이지에서 다양한 탭에서 메타데이터 속성을 편집합니다. 예를 들어 **[!UICONTROL 기본]** 탭에서 제목, 설명 등을 편집합니다.
 
    >[!NOTE]
    >
-   >속성 [!UICONTROL 페이지] 및 사용 가능한 메타데이터 속성은 기본 메타데이터 스키마에 따라 다릅니다. 속성 페이지의 레이아웃을 수정하는 방법에 대해 [!UICONTROL 알려면] [메타데이터 스키마를](/help/assets/metadata-schemas.md)참조하십시오.
+   >[!UICONTROL 속성] 페이지의 레이아웃 및 사용 가능한 메타데이터 속성은 기본 메타데이터 스키마에 따라 다릅니다. [!UICONTROL 속성] 페이지의 레이아웃을 수정하는 방법을 알려면 [메타데이터 스키마](/help/assets/metadata-schemas.md)를 참조하십시오.
 
-1. 자산의 활성화를 위해 특정 날짜/시간을 예약하려면 설정 시간 필드 옆에 있는 날짜 **[!UICONTROL 선택기를]** 사용하십시오.
+1. 자산의 활성화를 위해 특정 날짜/시간을 예약하려면 **[!UICONTROL 설정 시간]** 필드 옆에 있는 날짜 선택기를 사용하십시오.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 특정 기간 후에 자산을 비활성화하려면 해제 시간 필드 옆에 있는 날짜 선택기에서 비활성화 날짜/시간 **[!UICONTROL 을]** 선택합니다. 비활성화 날짜는 자산의 활성화 날짜보다 나아야 합니다. 해제 [!UICONTROL 시간]후에는 자산 웹 인터페이스 또는 HTTP API를 통해 자산 및 해당 변환을 사용할 수 없습니다.
+1. 특정 기간 후에 자산을 비활성화하려면 **[!UICONTROL 해제 시간]** 필드 옆에 있는 날짜 선택기에서 비활성화 날짜/시간을 선택합니다. 비활성화 날짜는 자산의 활성화 날짜보다 나아야 합니다. [!UICONTROL 해제 시간] 이후에는 자산 웹 인터페이스 또는 HTTP API를 통해 자산 및 해당 변환을 사용할 수 없습니다.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. [ **[!UICONTROL 태그]** ] 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 Enter 키를 누릅니다. 새 태그가 AEM에 저장됩니다.
+1. **[!UICONTROL 태그]** 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 Enter 키를 누릅니다. 새 태그가 AEM에 저장됩니다.
 
    YouTube를 게시하려면 태그가 필요하며 YouTube에 대한 링크가 있어야 합니다(적절한 링크를 찾을 수 있는 경우).
 
    >[!NOTE]
    >
-   >태그를 만들려면 CRX 저장소의 `/content/cq:tags/default` 경로에 쓰기 권한이 있어야 합니다.
+   >태그를 만들려면 CRX 저장소의 `/content/cq:tags/default` 경로에서 쓰기 권한이 있어야 합니다.
 
-1. 자산에 대한 사용량 통계를 보려면 인사이트 **[!UICONTROL 탭을 클릭/탭합니다]** .
+1. 자산에 대한 사용 통계를 보려면 **[!UICONTROL Insights]** 탭을 클릭/탭합니다.
 
    사용 통계에는 다음이 포함됩니다.
 
@@ -111,9 +111,9 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
    * 자산이 사용된 채널/장치
    * 자산이 최근 사용된 크리에이티브 솔루션
 
-   자세한 내용은 자산 [인사이트를 참조하십시오](assets-insights.md).
+   자세한 내용은 [자산 인사이트](assets-insights.md)를 참조하십시오.
 
-1. Tap/click **[!UICONTROL Save &amp; Close]**.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭/클릭합니다.
 
 1. 자산 사용자 인터페이스로 이동합니다. 제목, 설명 및 태그를 비롯한 편집된 메타데이터 속성이 카드 보기의 자산 카드 및 목록 보기의 관련 열 아래에 표시됩니다.
 
@@ -123,65 +123,65 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 
 자산의 특정 사본에 고유한 몇 가지 속성은 전달되지 않습니다. 몇 가지 예는 다음과 같습니다.
 
-* 자산 ID, 작성 날짜 및 시간, 버전 및 버전 내역. 이러한 속성 중 일부는 속성, `jcr:uuid`및 `jcr:created`으로 표시됩니다 `cq:name`.
+* 자산 ID, 작성 날짜 및 시간, 버전 및 버전 내역. 이러한 속성 중 일부는 `jcr:uuid`, `jcr:created` 및 `cq:name` 속성으로 표시됩니다.
 
 * 제작 시간 및 참조된 경로는 각 자산과 각 자산에 대해 고유합니다.
 
 다른 속성과 메타데이터 정보는 그대로 유지됩니다. 자산을 복사할 때 부분 복사본이 만들어지지 않습니다.
 
-1. 자산 UI에서 하나 이상의 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 복사]** 아이콘을 탭/클릭합니다. 또는 자산 카드에서 **[!UICONTROL 복사]** _ ![아이콘](assets/copy_icon.png) 빠른 작업을 선택합니다.
+1. 자산 UI에서 하나 이상의 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 복사]** 아이콘을 탭/클릭합니다. 또는 자산 카드에서 **[!UICONTROL 복사]** ![copy_icon](assets/copy_icon.png) 빠른 작업을 선택합니다.
 
    >[!NOTE]
    >
-   >빠른 [!UICONTROL 복사] 작업을 사용하는 경우 한 번에 하나의 자산만 복사할 수 있습니다.
+   >[!UICONTROL 복사] 빠른 작업을 사용하는 경우 한 번에 하나의 자산만 복사할 수 있습니다.
 
 1. 자산을 복사할 위치로 이동합니다.
 
    >[!NOTE]
    >
-   >동일한 위치에서 자산을 복사하면 AEM은 변형된 이름을 자동으로 생성합니다. 예를 들어 제목이 지정된 자산을 복사하면 AEM `Square`은 자동으로 복사본 제목을 생성합니다 `Square1`.
+   >동일한 위치에서 자산을 복사하면 AEM은 변형된 이름을 자동으로 생성합니다. 예를 들어 `Square`이라는 이름의 자산을 복사하면 AEM은 자동으로 복사본 제목을 `Square1`으로 생성합니다.
 
-1. 도구 모음에서 **[!UICONTROL 자산]** 붙여넣기 아이콘을 클릭합니다. 자산이 이 위치에 복사됩니다.
+1. 도구 모음에서 **[!UICONTROL 붙여넣기]** 자산 아이콘을 클릭합니다. 자산이 이 위치에 복사됩니다.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
    >[!NOTE]
    >
-   >붙여넣기 **** 아이콘은 붙여넣기 작업이 완료될 때까지 도구 모음에서 사용할 수 있습니다.
+   >붙여넣기 작업이 완료될 때까지 도구 모음에서 **[!UICONTROL 붙여넣기]** 아이콘을 사용할 수 있습니다.
 
-### 자산 이동 또는 이름 바꾸기 {#moving-or-renaming-assets}
+### 자산 {#moving-or-renaming-assets} 이동 또는 이름 바꾸기
 
 1. 이동할 자산의 위치로 이동합니다.
 
-1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 이동]** 아이콘 ![move](assets/move_icon.png) _icon을 탭/클릭합니다.
+1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 이동]** 아이콘 ![move_icon](assets/move_icon.png)을 탭/클릭합니다.
 
 1. 자산 이동 마법사에서 다음 중 하나를 수행합니다.
 
-   * 자산을 이동한 후 자산의 이름을 지정합니다. 그런 다음 다음을 탭/ **[!UICONTROL 클릭하여]** 계속 진행합니다.
+   * 자산을 이동한 후 자산의 이름을 지정합니다. 그런 다음 **[!UICONTROL 다음]**&#x200B;을 탭/클릭하여 계속 진행합니다.
 
-   * 취소를 탭/ **[!UICONTROL 클릭하여]** 프로세스를 중지합니다.
+   * **[!UICONTROL 취소]**&#x200B;를 탭/클릭하여 프로세스를 중지합니다.
    >[!NOTE]
    >
    >* 새 위치에 해당 이름의 자산이 없는 경우 자산에 대해 동일한 이름을 지정할 수 있습니다. 하지만 자산을 같은 이름의 자산이 있는 위치로 이동하는 경우 다른 이름을 사용해야 합니다. 같은 이름을 사용하면 변형된 이름이 자동으로 생성됩니다. 예를 들어 자산의 이름이 Square인 경우 시스템에서는 해당 사본에 대해 Square1이라는 이름을 생성합니다.
    >* 이름을 바꿀 때는 파일 이름에 공백을 사용할 수 없습니다.
 
 
-1. [대상 **[!UICONTROL 선택]** ] 대화 상자에서 다음 중 하나를 수행합니다.
+1. **[!UICONTROL 대상 선택]** 대화 상자에서 다음 중 하나를 수행합니다.
 
-   * 자산의 새 위치로 이동한 다음 다음을 탭/ **[!UICONTROL 클릭하여]** 계속 진행합니다.
+   * 자산의 새 위치로 이동한 다음 **[!UICONTROL 다음]**&#x200B;을 탭/클릭하여 계속 진행합니다.
 
-   * 뒤로를 탭/ **[!UICONTROL 클릭하여 이름]** 변경 **[!UICONTROL 화면으로]** 돌아갑니다.
+   * **[!UICONTROL 뒤로]**&#x200B;를 탭/클릭하여 **[!UICONTROL 이름 바꾸기]** 화면으로 돌아갑니다.
 
-1. 이동하는 자산에 참조 페이지, 자산 또는 컬렉션이 있으면 대상 선택 탭 옆에 참조 **[!UICONTROL 조정]** 탭이 **[!UICONTROL 나타납니다]** .
+1. 이동하는 자산에 참조 페이지, 자산 또는 컬렉션이 있으면 **[!UICONTROL 참조 조정]** 탭이 **[!UICONTROL 대상 선택]** 탭 옆에 나타납니다.
 
-   참조 **[!UICONTROL 조정 화면에서 다음 중 하나를]** 수행합니다.
+   **[!UICONTROL 참조 조정]** 화면에서 다음 중 하나를 수행합니다.
 
-   * 새로운 세부 사항을 기반으로 조정할 참조를 지정한 다음 이동을 탭/ **[!UICONTROL 클릭하여]** 진행하십시오.
+   * 새 세부 사항에 따라 조정할 참조를 지정한 다음 **[!UICONTROL 이동]**&#x200B;을 탭/클릭하여 진행하십시오.
 
-   * 조정 **[!UICONTROL 열에서]** 자산에 대한 참조를 선택하거나 선택 취소합니다.
-   * 뒤로를 탭/ **[!UICONTROL 클릭하여]** 대상 **[!UICONTROL 선택 화면으로]** 돌아갑니다.
+   * **[!UICONTROL 조정]** 열에서 자산에 대한 참조를 선택/선택 취소합니다.
+   * **[!UICONTROL 뒤로]**&#x200B;를 탭/클릭하여 **[!UICONTROL 대상 선택]** 화면으로 돌아갑니다.
 
-   * 취소를 탭/ **[!UICONTROL 클릭하여]** 이동 작업을 중지합니다.
+   * **[!UICONTROL 취소]**&#x200B;를 탭/클릭하여 이동 작업을 중지합니다.
 
    참조를 업데이트하지 않으면 자산의 이전 경로를 계속 가리킵니다. 참조를 조정하면 새 자산 경로로 업데이트됩니다.
 
@@ -193,11 +193,11 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. 글로벌 탐색 아이콘을 탭/클릭하고 목록에서 **[!UICONTROL 표현물]** 을 선택합니다.
+1. GlobalNav 아이콘을 탭/클릭하고 목록에서 **[!UICONTROL 표현물]**&#x200B;을 선택합니다.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. 표현물 **** 패널에서 자산에 대해 생성된 표현물 목록을 봅니다.
+1. **[!UICONTROL 표현물]** 패널에서 자산에 대해 생성된 표현물의 목록을 봅니다.
 
    ![renditions_panel](assets/renditions_panel.png)
 
@@ -209,35 +209,35 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 
    **변환 삭제**
 
-   표현물 **[!UICONTROL 패널에서]** 변환을 선택한 다음 도구 모음에서 **[!UICONTROL 표현물]** 삭제 아이콘을 탭/클릭합니다. 자산 처리가 완료된 후에는 변환을 일괄 삭제할 수 없습니다. 개별 자산의 경우 사용자 인터페이스에서 변환을 수동으로 제거할 수 있습니다. 여러 자산의 경우 특정 표현물 [!DNL Experience Manager] 을 삭제하거나 자산을 삭제한 후 삭제된 자산을 다시 업로드하도록 사용자 지정할 수 있습니다.
+   **[!UICONTROL 변환]** 패널에서 변환을 선택한 다음 도구 모음에서 **[!UICONTROL 변환 삭제]** 아이콘을 탭/클릭합니다. 자산 처리가 완료된 후에는 변환을 일괄 삭제할 수 없습니다. 개별 자산의 경우 사용자 인터페이스에서 변환을 수동으로 제거할 수 있습니다. 여러 자산의 경우 [!DNL Experience Manager]을(를) 사용자 지정하여 특정 표현물을 삭제하거나 자산을 삭제하고 삭제된 자산을 다시 업로드할 수 있습니다.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **새 변환 업로드**
 
-   자산에 대한 자산 세부 사항 페이지로 이동하고, 도구 모음에서 **[!UICONTROL 변환]** 추가 아이콘을 탭/클릭하여 자산에 대한 새 변환을 업로드합니다.
+   자산에 대한 자산 세부 사항 페이지로 이동하고 도구 모음에서 **[!UICONTROL 변환 추가]** 아이콘을 탭/클릭하여 자산에 대한 새 변환을 업로드합니다.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
    >[!NOTE]
    >
-   >표현물 패널에서 변환을 선택하면 **[!UICONTROL 도구 모음이]** 컨텍스트를 변경하고 표현물과 관련된 작업만 표시합니다. 변환 업로드 아이콘과 같은 옵션은 표시되지 않습니다. 도구 모음에서 이러한 옵션을 보려면 자산의 세부 사항 페이지로 이동합니다.
+   >**[!UICONTROL 표현물]** 패널에서 변환을 선택하면 도구 모음이 컨텍스트를 변경하고 변환과 관련된 작업만 표시합니다. 변환 업로드 아이콘과 같은 옵션은 표시되지 않습니다. 도구 모음에서 이러한 옵션을 보려면 자산의 세부 사항 페이지로 이동합니다.
 
    이미지나 비디오 자산의 세부 정보 페이지에 표시할 변환의 크기를 구성할 수 있습니다. 지정한 차원에 따라 Facebook은 정확한 크기 또는 가장 가까운 크기로 표현물을 표시합니다.
 
-   이미지의 변환 크기를 자산 세부 사항 수준에서 구성하려면 노드( `renditionpicker` )를`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`오버레이하고 width 속성의 값을 구성합니다. 속성 **[!UICONTROL 크기(길이)를 너비 대신]** KB로 구성하여 이미지 크기에 따라 자산 세부 사항 페이지의 변환을 사용자 정의합니다. 크기 기반 맞춤화의 경우, 일치하는 변환의 크기가 원본보다 큰 경우 속성이 원본에 환경 설정을 `preferOriginal` 할당합니다.
+   이미지의 변환 크기를 자산 세부 정보 수준에서 구성하려면 `renditionpicker` 노드(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)를 오버레이하고 width 속성의 값을 구성합니다. 이미지 크기에 따라 자산 세부 정보 페이지에서 변환을 사용자 정의하려면 속성 **[!UICONTROL 크기(Long)를 KB]**&#x200B;로 구성합니다. 크기 기반 맞춤화의 경우, 일치하는 변환의 크기가 원본보다 큰 경우 속성 `preferOriginal`은 원본에 환경 설정을 할당합니다.
 
-   마찬가지로 오버레이하여 주석 페이지 이미지를 사용자 정의할 수 있습니다 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   마찬가지로 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`을(를) 오버레이하여 주석 페이지 이미지를 사용자 정의할 수 있습니다.
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   비디오 자산에 대한 변환 크기를 구성하려면 해당 위치의 CRX 저장소의 `videopicker` 노드로 이동한 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`후 해당 속성을 편집합니다.
+   비디오 자산에 대한 변환 크기를 구성하려면 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker` 위치의 CRX 저장소의 `videopicker` 노드로 이동한 다음 해당 속성을 편집합니다.
 
    >[!NOTE]
    >
    >비디오 주석은 HTML5 호환 비디오 포맷이 있는 브라우저에서만 지원됩니다. 또한 브라우저에 따라 다른 비디오 포맷이 지원됩니다.
 
-## Delete assets {#delete-assets}
+## 자산 {#delete-assets} 삭제
 
 다른 페이지에서 들어오는 참조를 해결하거나 제거하려면 자산을 삭제하기 전에 관련 참조를 업데이트하십시오.
 
@@ -251,11 +251,11 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 
 1. 확인 대화 상자에서 다음을 클릭합니다.
 
-   * **[!UICONTROL 작업을 중지하려면]** 취소
+   * **[!UICONTROL 작업]** 을 중지하려면 취소됨
    * 해당 작업을 승인하려면 **[!UICONTROL 삭제]**
 
       * 자산에 참조가 없으면 자산이 삭제됩니다.
-      * 자산에 참조가 있으면, 오류 메시지가 하나 **이상의 자산이 참조되었다고 알려줍니다.** **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
+      * 자산에 참조가 있으면, 오류 메시지가 **하나 이상의 자산이 참조되었다고 표시됩니다.** **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
 
    >[!NOTE]
    >
@@ -270,9 +270,9 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 
 ## 자산 다운로드 {#download-assets}
 
-See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
+AEM](/help/assets/download-assets-from-aem.md)에서 자산 다운로드를 참조하십시오.[
 
-## Publish assets {#publish-assets}
+## 자산 게시 {#publish-assets}
 
 <!--
 >[!NOTE]
@@ -282,7 +282,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. 게시할 자산/폴더의 위치로 이동합니다.
 
-1. 자산 카드에서 **[!UICONTROL 빠른 게시]** 작업을 선택하거나 자산을 선택하고 도구 모음에서 **[!UICONTROL 빠른 게시]** 아이콘을 탭/클릭합니다.
+1. 자산 카드에서 **[!UICONTROL 게시]** 빠른 작업을 선택하거나, 자산을 선택하고 도구 모음에서 **[!UICONTROL 빠른 게시]** 아이콘을 탭/클릭합니다.
 1. 자산이 다른 자산을 참조하는 경우 해당 참조가 마법사에 나열됩니다. 게시 취소 또는 수정된 참조만 마지막 게시/게시 취소된 후 표시됩니다. 게시할 참조를 선택합니다.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -291,48 +291,48 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
    >
    >게시할 폴더에 빈 폴더가 포함되어 있으면 빈 폴더가 게시되지 않습니다.
 
-1. 게시를 탭/ **[!UICONTROL 클릭하여]** 자산에 대한 활성화를 확인합니다.
+1. **[!UICONTROL 게시]**&#x200B;를 탭/클릭하여 자산에 대한 활성화를 확인합니다.
 
 >[!CAUTION]
 >
 >처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 변환이 없습니다. 처리가 완료될 때까지 기다렸다가 자산을 게시하거나 처리가 완료되면 다시 게시하십시오.
 
-## 자산 게시 취소 {#unpublishing-assets}
+## 자산 {#unpublishing-assets} 게시 취소
 
 1. 게시 환경에서 제거할 자산/자산 폴더의 위치로 이동합니다(게시 취소).
 
-1. 게시를 취소할 자산/폴더를 선택하고 도구 모음에서 게시 **[!UICONTROL 관리]** 아이콘을 탭/클릭합니다.
+1. 게시를 취소할 자산/폴더를 선택하고 도구 모음에서 **[!UICONTROL 발행물 관리]** 아이콘을 탭/클릭합니다.
 
    ![manage_publication](assets/manage_publication.png)
 
-1. 목록에서 **[!UICONTROL 게시]** 취소 작업을 선택합니다.
+1. 목록에서 **[!UICONTROL 게시 취소]** 작업을 선택합니다.
 
    ![unpublish_action](assets/unpublish_action.png)
 
-1. 나중에 자산을 게시 취소하려면 나중에 게시 **[!UICONTROL 취소]**&#x200B;를 선택한 다음 자산을 게시 취소할 날짜를 선택합니다.
+1. 나중에 자산을 게시 취소하려면 **[!UICONTROL 나중에 게시 취소]**&#x200B;를 선택한 다음 자산을 게시 취소할 날짜를 선택합니다.
 1. 게시 환경에서 자산을 사용할 수 없는 날짜를 예약합니다.
-1. 자산이 다른 자산을 참조하는 경우 게시 취소할 참조를 선택합니다. 게시 취소를 탭/ **[!UICONTROL 클릭합니다]**.
+1. 자산이 다른 자산을 참조하는 경우 게시 취소할 참조를 선택합니다. **[!UICONTROL 게시 취소]**&#x200B;를 탭/클릭합니다.
 1. 확인 대화 상자에서 다음을 탭/클릭합니다.
 
-   * **[!UICONTROL 작업을 중지하려면]** 취소
-   * **[!UICONTROL 게시]** 취소를 클릭하여 지정된 날짜에 자산 게시 취소(더 이상 게시 환경에서 사용할 수 없음)가 되었는지 확인합니다.
+   * **[!UICONTROL 작업]** 을 중지하려면 취소됨
+   * **[!UICONTROL 게시]** 취소하여 지정된 날짜에 자산 게시 취소(더 이상 게시 환경에서 사용할 수 없음)가 되었는지 확인합니다.
 
    >[!NOTE]
    >
    >복잡한 자산을 게시 취소할 때는 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조를 게시 취소하지 마십시오.
 
-## Closed user group {#closed-user-group}
+## 닫힌 사용자 그룹 {#closed-user-group}
 
 CUG(폐쇄된 사용자 그룹)는 AEM에서 게시한 특정 자산 폴더에 대한 액세스를 제한하는 데 사용됩니다. 폴더에 대한 CUG를 만드는 경우 폴더(폴더 자산 및 하위 폴더 포함)에 대한 액세스 권한은 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
 
 CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴더에 대한 로그인 페이지를 구성할 수도 있습니다.
 
 1. 자산 UI에서 폴더를 선택하고 도구 모음에서 속성 아이콘을 탭/클릭하여 속성 페이지를 표시합니다.
-1. [ **[!UICONTROL 권한]** ] 탭에서 [폐쇄된 사용자 그룹] 아래에 **[!UICONTROL 구성원 또는 그룹을 추가합니다]**.
+1. **[!UICONTROL 권한]** 탭에서 **[!UICONTROL 닫힌 사용자 그룹]**&#x200B;에 구성원 또는 그룹을 추가합니다.
 
    ![add_user](assets/add_user.png)
 
-1. 사용자가 폴더에 액세스할 때 로그인 화면을 표시하려면 [사용] **[!UICONTROL 옵션을]** 선택합니다. 그런 다음 AEM에서 로그인 페이지의 경로를 선택하고 변경 내용을 저장합니다.
+1. 사용자가 폴더에 액세스할 때 로그인 화면을 표시하려면 **[!UICONTROL 활성화]** 옵션을 선택합니다. 그런 다음 AEM에서 로그인 페이지의 경로를 선택하고 변경 내용을 저장합니다.
 
    ![login_page](assets/login_page.png)
 
@@ -347,7 +347,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
 자산 검색은 크리에이티브한 사람들이 더 많이 사용할 수 있도록 하거나, 비즈니스 사용자와 마케터가 자산을 안전하게 관리하거나, DAM 관리자가 관리하는 데 중요한 역할을 하는 디지털 자산 관리 시스템의 용도로만 사용할 수 있습니다.
 
-가장 적절한 자산을 검색 및 사용하기 위한 단순, 고급 및 사용자 정의 검색에 대해서는 AEM에서 [자산 검색을 참조하십시오](/help/assets/search-assets.md).
+가장 적절한 자산을 검색하고 사용하기 위한 단순, 고급 및 사용자 지정 검색은 AEM](/help/assets/search-assets.md)에서 [자산 검색을 참조하십시오.
 
 ## 빠른 작업 {#quick-actions}
 
@@ -367,25 +367,25 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 1. 편집 모드에서 자산을 열려면 다음 중 하나를 수행합니다.
 
    * 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭/탭합니다.
-   * 카드 보기에서 자산에 나타나는 **[!UICONTROL 편집]** 아이콘을 탭/클릭합니다.
+   * 카드 보기의 자산에 표시되는 **[!UICONTROL 편집]** 아이콘을 탭/클릭합니다.
    * 자산 페이지의 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 탭/클릭합니다.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. 이미지를 자르려면 자르기 아이콘을 탭/ **클릭합니다** .
+1. 이미지를 자르려면 **자르기** 아이콘을 탭/클릭합니다.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. 목록에서 원하는 옵션을 선택합니다. 자르기 영역은 선택한 옵션에 따라 이미지에 나타납니다. [ **손** 무료] 옵션을 사용하면 종횡비 제한 없이 이미지를 자를 수 있습니다.
+1. 목록에서 원하는 옵션을 선택합니다. 자르기 영역은 선택한 옵션에 따라 이미지에 나타납니다. **Free Hand** 옵션을 사용하면 종횡비 제한 없이 이미지를 자를 수 있습니다.
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. 잘라낼 영역을 선택하고 이미지에서 크기를 조정하거나 위치를 변경합니다.
-1. 마침 **아이콘** (오른쪽 상단)을 사용하여 이미지를 자릅니다. 마침 **아이콘을** 클릭하면 표현물의 재재생도 트리거됩니다.
+1. **Finish** 아이콘(오른쪽 상단)을 사용하여 이미지를 자릅니다. **마침** 아이콘을 클릭하면 변환의 재생성도 트리거됩니다.
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
-1. 오른쪽 위에 있는 **실행** **취소** 및재실행아이콘을 사용하여 잘리지 않은 이미지로 되돌리거나 잘린 이미지를 각각 유지합니다.
+1. 오른쪽 위에 있는 **실행 취소** 및 **다시 실행** 아이콘을 사용하여 잘리지 않은 이미지로 되돌리거나 잘린 이미지를 각각 유지합니다.
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -397,7 +397,7 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. 마침 아이콘을 탭/ **클릭하여** 변경 사항을 저장합니다.
+1. **마침** 아이콘을 탭/클릭하여 변경 내용을 저장합니다.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -409,21 +409,22 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 >[!NOTE]
 >
->TXT 파일을 편집하려면 구성 관리자에서 **Day CQ Link Externalizer를** 설정합니다.
+>TXT 파일을 편집하려면 Configuration Manager에서 **일 CQ 링크 외부라이저**&#x200B;를 설정합니다.
 
 ## 타임라인 {#timeline}
 
 타임라인을 사용하면 자산, 댓글/주석, 활동 로그 및 버전에 대한 활성 워크플로우 등 선택한 항목에 대한 다양한 이벤트를 볼 수 있습니다.
 
-![자산에 대한 타임라인 항목](assets/sort_timeline.gif)정렬&#x200B;*그림:자산에 대한 타임라인 항목 정렬*
+![자산에 대한 타임라인 항목 ](assets/sort_timeline.gif)
+*정렬그림:자산에 대한 타임라인 항목 정렬*
 
 >[!NOTE]
 >
->컬렉션 [콘솔에서](/help/assets/manage-collections.md#navigate-the-collections-console)모두 **[!UICONTROL 표시]** 목록은 댓글 및 워크플로우만 볼 수 있는 옵션을 제공합니다. 또한 타임라인은 콘솔에 나열된 최상위 수준의 컬렉션에 대해서만 표시됩니다. 컬렉션 내에서 탐색하는 경우에는 표시되지 않습니다.
+>[컬렉션 콘솔](/help/assets/manage-collections.md#navigate-the-collections-console)에서 **[!UICONTROL 모두 표시]** 목록은 댓글 및 워크플로우만 볼 수 있는 옵션을 제공합니다. 또한 타임라인은 콘솔에 나열된 최상위 수준의 컬렉션에 대해서만 표시됩니다. 컬렉션 내에서 탐색하는 경우에는 표시되지 않습니다.
 
 >[!NOTE]
 >
->타임라인에는 컨텐츠 조각에 관련된 몇 가지 [옵션이 포함되어 있습니다](content-fragments/content-fragments.md).
+>타임라인에는 컨텐츠 조각](content-fragments/content-fragments.md)에 관련된 여러 [개의 옵션이 포함되어 있습니다.
 
 ## 주석 달기 {#annotating}
 
@@ -433,17 +434,17 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 >[!NOTE]
 >
->컨텐츠 조각의 경우 [주석이 조각 편집기에서 생성됩니다](content-fragments/content-fragments.md).
+>컨텐츠 조각의 경우 [주석은 조각 편집기](content-fragments/content-fragments.md)에 생성됩니다.
 
 1. 주석을 추가할 자산의 위치로 이동합니다.
-1. 다음 중 하나에서 주석 **** 아이콘을 탭/클릭합니다.
+1. 다음 중 하나에서 **[!UICONTROL 주석]** 아이콘을 탭/클릭합니다.
 
    * [빠른 작업](#quick-actions)
    * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
-1. 타임라인 아래쪽에 있는 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는, 이미지에서 영역을 마크업하고 주석 **[!UICONTROL 추가 대화 상자에 주석을]** 추가합니다.
+1. 타임라인 아래쪽에 있는 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는 이미지의 영역을 마크업하고 **[!UICONTROL 주석 추가]** 대화 상자에 주석을 추가합니다.
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -453,11 +454,11 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 >[!NOTE]
 >
->관리자가 아닌 사용자의 경우 CRXDE에서 사용자에게 읽기 권한이 있는 경우에만 제안 `/home` 이 표시됩니다.
+>관리자가 아닌 사용자의 경우 CRXDE의 `/home`에서 사용자에게 읽기 권한이 있는 경우에만 제안이 표시됩니다.
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. 주석을 추가한 후 **[!UICONTROL 추가를]** 클릭하여 저장합니다. 주석에 대한 알림이 Aaron에게 전송됩니다.
+1. 주석을 추가한 후 **[!UICONTROL 추가]**&#x200B;를 클릭하여 저장합니다. 주석에 대한 알림이 Aaron에게 전송됩니다.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -465,18 +466,18 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
    >
    >여러 개의 주석을 저장할 수 있습니다.
 
-1. 닫기를 탭/ **[!UICONTROL 클릭하여]** 주석 모드에서 종료합니다.
-1. 알림을 보려면 Aaron MacDonald의 자격 증명으로 AEM Assets에 로그인한 다음 **[!UICONTROL 알림]** 아이콘을 클릭하여 알림을 확인합니다.
+1. **[!UICONTROL 닫기]**&#x200B;를 탭/클릭하여 주석 모드에서 종료합니다.
+1. 알림을 보려면 Aaron MacDonald의 자격 증명으로 AEM Assets에 로그인하고 **[!UICONTROL 알림]** 아이콘을 클릭하여 알림을 확인합니다.
 
    >[!NOTE]
    >
-   >비디오 자산에 주석을 추가할 수도 있습니다. 비디오에 주석을 추가하는 동안 플레이어는 프레임에 주석을 달 수 있도록 일시 중지됩니다. 자세한 내용은 비디오 자산 [관리를 참조하십시오](manage-video-assets.md).
+   >비디오 자산에 주석을 추가할 수도 있습니다. 비디오에 주석을 추가하는 동안 플레이어는 프레임에 주석을 달 수 있도록 일시 중지됩니다. 자세한 내용은 [비디오 자산 관리](manage-video-assets.md)를 참조하십시오.
 
-1. 다른 색상을 선택하여 사용자를 구별하려면 프로필 아이콘을 클릭/탭하고 **[!UICONTROL 내 환경 설정을 클릭/탭합니다]**.
+1. 다른 색상을 선택하여 사용자를 구별하려면 프로필 아이콘을 클릭/탭하고 **[!UICONTROL 내 기본 설정]**&#x200B;을 클릭/탭합니다.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   [주석 색상] **[!UICONTROL 상자에서 원하는 색상을]** 지정한 다음 [ **[!UICONTROL 승인]**]을 클릭/탭합니다.
+   **[!UICONTROL 주석 색상]** 상자에 원하는 색상을 지정한 다음 **[!UICONTROL 수락]**&#x200B;을 클릭/탭합니다.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -488,33 +489,33 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 1. 자산에 대해 저장된 주석을 보려면 자산의 위치로 이동하고 자산의 자산 페이지를 엽니다.
 
-1. 전역 탐색 아이콘을 탭/클릭하고 목록에서 **[!UICONTROL 타임라인]** 을 선택합니다.
+1. GlobalNav 아이콘을 탭/클릭하고 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. 타임라인의 **[!UICONTROL 모두]** 표시 목록에서 **[!UICONTROL 주석을]** 기준으로 결과를 필터링하려면 주석을 선택합니다.
+1. 타임라인의 **[!UICONTROL 모두 표시]** 목록에서 **[!UICONTROL 댓글]**&#x200B;을 선택하여 주석을 기준으로 결과를 필터링합니다.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   [ **[!UICONTROL 타임라인]]** 패널에서 주석을 탭/클릭하여 이미지에 해당하는 주석을 봅니다.
+   이미지에 해당하는 주석을 보려면 **[!UICONTROL 타임라인]** 패널에서 주석을 탭/클릭합니다.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   특정 주석을 삭제하려면 삭제 **[!UICONTROL 를]**&#x200B;탭/클릭합니다.
+   특정 주석을 삭제하려면 **[!UICONTROL 삭제]**&#x200B;를 탭/클릭합니다.
 
-### 주석 인쇄 {#printing-annotations}
+### 인쇄 주석 {#printing-annotations}
 
 자산에 주석이 있거나 검토 워크플로우가 있을 경우 오프라인 검토를 위해 주석 및 검토 상태와 함께 자산을 PDF 파일로 인쇄할 수 있습니다.
 
 주석만 인쇄하거나 상태를 검토하도록 선택할 수도 있습니다.
 
-주석을 인쇄하고 상태를 검토하려면 **[!UICONTROL 인쇄]** 아이콘을 탭/클릭하고 마법사의 지침을 따릅니다. 인쇄 **** 아이콘은 자산에 하나 이상의 주석 또는 검토 상태가 할당된 경우에만 도구 모음에 표시됩니다.
+주석을 인쇄하고 상태를 검토하려면 **[!UICONTROL 인쇄]** 아이콘을 탭/클릭하고 마법사의 지침을 따릅니다. **[!UICONTROL 인쇄]** 아이콘은 자산에 하나 이상의 주석 또는 검토 상태가 할당된 경우에만 도구 모음에 표시됩니다.
 
 1. 자산 UI에서 자산의 미리 보기 페이지를 엽니다.
 1. 다음 중 하나를 수행하십시오.
 
    * 모든 주석과 검토 상태를 인쇄하려면 3단계를 건너뛰고 4단계로 바로 이동합니다.
-   * 특정 주석을 인쇄하고 상태를 검토하려면 [타임라인을](/help/assets/manage-digital-assets.md#timeline) 연 다음 3단계로 이동합니다.
+   * 특정 주석을 인쇄하고 상태를 검토하려면 [타임라인](/help/assets/manage-digital-assets.md#timeline)을 연 다음 3단계로 이동합니다.
 
 1. 특정 주석을 인쇄하려면 타임라인에서 주석을 선택합니다.
 
@@ -524,7 +525,7 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
-1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
+1. 도구 모음에서 **[!UICONTROL 인쇄]** 아이콘을 탭/클릭합니다.
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
@@ -532,13 +533,13 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   인쇄 PDF에 주석/상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. 인쇄된 자산과 별개인 페이지에 주석/상태를 표시하려면 [ **[!UICONTROL 다음 페이지]를 선택합니다]**.
+   인쇄 PDF에 주석/상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. 인쇄된 자산과 별개인 페이지에 주석/상태를 표시하려면 **[!UICONTROL 다음 페이지]**&#x200B;를 선택합니다.
 
    >[!NOTE]
    >
    >긴 주석이 PDF 파일에서 제대로 렌더링되지 않을 수 있습니다. 렌더링을 최적화하려면 주석을 50단어로 제한하는 것이 좋습니다.
 
-1. 인쇄를 탭/ **[!UICONTROL 클릭합니다]**. 2단계에서 선택한 옵션에 따라, 생성된 PDF에 지정된 위치에 주석/상태가 표시됩니다. 예를 들어 왼쪽 **위** 설정을 사용하여 주석과 검토 상태를 모두 인쇄하도록 선택하면 생성된 출력이 여기에 설명된 PDF 파일과 유사합니다.
+1. **[!UICONTROL 인쇄]**&#x200B;를 탭/클릭합니다. 2단계에서 선택한 옵션에 따라, 생성된 PDF에 지정된 위치에 주석/상태가 표시됩니다. 예를 들어 **왼쪽 위** 설정을 사용하여 주석과 검토 상태를 모두 인쇄하도록 선택한 경우 생성된 출력물은 여기에 설명된 PDF 파일과 유사합니다.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -546,13 +547,13 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   글꼴 색상, 크기 및 스타일, 주석과 상태에 대한 배경색 등 렌더링된 PDF 파일의 모양을 수정하려면 Configuration Manager에서 **[!UICONTROL 주석 PDF 구성을]** 열고 원하는 옵션을 수정합니다. 예를 들어, 승인된 상태의 표시 색상을 변경하려면 해당 필드에서 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 주석 달기를 [참조하십시오](/help/assets/manage-digital-assets.md#annotating).
+   글꼴 색상, 크기 및 스타일, 주석과 상태에 대한 배경색 등 렌더링된 PDF 파일의 모양을 수정하려면 Configuration Manager에서 **[!UICONTROL 주석 PDF 구성]**&#x200B;을 열고 원하는 옵션을 수정합니다. 예를 들어, 승인된 상태의 표시 색상을 변경하려면 해당 필드에서 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 [주석 달기](/help/assets/manage-digital-assets.md#annotating)를 참조하십시오.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    렌더링된 PDF 파일로 돌아가 새로 고칩니다. 새로 고친 PDF는 변경 사항을 반영합니다.
 
-## 에셋 버전 관리 {#asset-versioning}
+## 자산 버전 관리 {#asset-versioning}
 
 버전 매기기를 통해 특정 시점의 디지털 자산 스냅샷을 만들 수 있습니다. 버전 관리를 통해 나중에 에셋을 이전 상태로 복원할 수 있습니다. 예를 들어, 자산에 대한 변경 사항을 취소하려는 경우 편집되지 않은 버전의 자산을 복원합니다.
 
@@ -572,23 +573,23 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 1. 버전을 만들 자산의 위치로 이동하고, 자산을 탭/클릭하여 자산 페이지를 엽니다.
 
-1. 전역 탐색 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인]** 선택
+1. GlobalNav 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
 
    ![타임라인](assets/timeline.png)
 
-1. 하단에 있는 **[!UICONTROL 작업]** (화살표) 아이콘을 탭/클릭하여 자산에 대해 수행할 수 있는 사용 가능한 작업을 확인합니다.
+1. 하단에 있는 **[!UICONTROL 작업]**(화살표) 아이콘을 탭/클릭하여 자산에 대해 수행할 수 있는 사용 가능한 작업을 봅니다.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. 버전으로 **[!UICONTROL 저장을 탭/클릭하여]** 자산의 버전을 만듭니다.
+1. **[!UICONTROL 다른 버전으로 저장]**&#x200B;을 탭/클릭하여 자산의 버전을 만듭니다.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. 레이블과 주석을 추가한 다음 **[!UICONTROL 만들기를]** 클릭하여 버전을 만듭니다. 또는 취소를 탭/ **클릭하여** 작업을 종료합니다.
+1. 레이블과 주석을 추가한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭하여 버전을 만듭니다. 또는 **취소**&#x200B;를 탭/클릭하여 작업을 종료합니다.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. 새 버전을 보려면, 자산 세부 사항 페이지 또는 자산 UI에서 **[!UICONTROL 타임라인에서 모두]** 표시 목록을 열고 **[!UICONTROL 버전을 선택합니다]**. 자산에 대해 만들어진 모든 버전은 타임라인 탭 아래에 나열됩니다. 드롭다운 화살표를 클릭하고 목록에서 버전 **[!UICONTROL 을 선택하여 버전을]** 표시하도록 목록을 필터링할 수 있습니다.
+1. 새 버전을 보려면 자산 세부 사항 페이지 또는 자산 UI에서 타임라인에 **[!UICONTROL 모두 표시]** 목록을 열고 **[!UICONTROL 버전]**&#x200B;을 선택합니다. 자산에 대해 만들어진 모든 버전은 타임라인 탭 아래에 나열됩니다. 드롭다운 화살표를 클릭하고 목록에서 **[!UICONTROL 버전]**&#x200B;을 선택하여 버전을 표시하도록 목록을 필터링할 수 있습니다.
 
    ![versions_option](assets/versions_option.png)
 
@@ -600,8 +601,8 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![save_version](assets/save_version.png)
 
-1. 버전에 대한 미리 보기를 생성하려면 버전 미리 보기를 탭/ **[!UICONTROL 클릭합니다]**.
-1. 자산 UI에서 이 버전을 표시하려면 이 버전으로 **[!UICONTROL 되돌리기를 선택합니다]**.
+1. 버전에 대한 미리 보기를 생성하려면 **[!UICONTROL 버전 미리 보기]**&#x200B;를 탭/클릭합니다.
+1. 자산 UI에 이 버전을 표시하려면 **[!UICONTROL 이 버전으로 되돌리기]**&#x200B;를 선택합니다.
 1. 두 버전 간에 비교하려면 자산의 자산 페이지로 이동하고 현재 버전과 비교할 버전을 탭/클릭합니다.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
@@ -610,22 +611,22 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![compare_versions](assets/compare_versions.png)
 
-### 자산에 대한 워크플로우 시작 {#starting-a-workflow-on-an-asset}
+### 자산 {#starting-a-workflow-on-an-asset}에서 워크플로우 시작
 
 1. 워크플로우를 시작할 자산의 위치로 이동하고 자산을 탭/클릭하여 자산 페이지를 엽니다.
-1. 전역 탐색 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인]** 선택 을 선택하여 타임라인을 표시합니다.
+1. 전역 탐색 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인]**&#x200B;을 선택하여 타임라인을 표시합니다.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. 하단에 있는 **[!UICONTROL 작업]** (화살표) 아이콘을 탭/클릭하여 자산에 사용할 수 있는 작업 목록을 엽니다.
+1. 하단에 있는 **[!UICONTROL 작업]**(화살표) 아이콘을 탭/클릭하여 자산에 사용할 수 있는 작업 목록을 엽니다.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. 목록에서 **[!UICONTROL 워크플로우]** 시작을 탭/클릭합니다.
+1. 목록에서 **[!UICONTROL 워크플로우 시작]**&#x200B;을 탭/클릭합니다.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. 워크플로우 **[!UICONTROL 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
+1. **[!UICONTROL 워크플로우 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -633,7 +634,7 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 시작을 탭/ **[!UICONTROL 클릭한]** 다음 대화 상자 **[!UICONTROL 에서 진행]** 을 탭/클릭하여 확인합니다. 각 워크플로우 단계가 이벤트로 타임라인에 표시됩니다.
+1. **[!UICONTROL 시작]**&#x200B;을 탭/클릭한 다음 대화 상자에서 **[!UICONTROL 계속]**&#x200B;을 탭/클릭하여 확인합니다. 각 워크플로우 단계가 이벤트로 타임라인에 표시됩니다.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -644,4 +645,4 @@ AEM Assets 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 * 컬렉션은 이러한 자산에 대한 참조만 포함되기 때문에 다른 위치의 자산을 포함할 수 있습니다. 각 컬렉션은 자산의 참조 무결성을 유지합니다.
 * 편집, 보기 등 다양한 권한 수준을 가진 여러 사용자와 컬렉션을 공유할 수 있습니다.
 
-컬렉션 [관리에](/help/assets/manage-collections.md) 대한 자세한 내용은 컬렉션 관리를 참조하십시오.
+컬렉션 관리에 대한 자세한 내용은 [컬렉션 관리](/help/assets/manage-collections.md)를 참조하십시오.
