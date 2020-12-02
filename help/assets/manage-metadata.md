@@ -1,6 +1,6 @@
 ---
 title: 디지털 자산의 메타데이터 관리
-description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
+description: '메타데이터의 유형과 메타데이터에 따라 자산을 자동으로 구성하고 처리하는 방법을 알아봅니다. [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] '
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 디지털 자산의 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
-[!DNL Adobe Experience Manager Assets] 모든 에셋에 대한 메타데이터를 유지합니다. 또한 보다 쉽게 에셋을 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다. 메타데이터 관리는 업로드된 파일에서 메타데이터를 추출하는 기능 [!DNL Experience Manager Assets]을 통해 크리에이티브 워크플로우와 통합됩니다. 자산을 사용하여 메타데이터를 유지 및 관리할 수 있으므로 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 모든 에셋에 대한 메타데이터를 유지합니다. 또한 보다 쉽게 에셋을 분류하고 구성할 수 있으며 특정 에셋을 찾는 사용자에게 도움이 됩니다. 메타데이터 관리는 [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 크리에이티브 워크플로우와 통합됩니다. 자산을 사용하여 메타데이터를 유지 및 관리할 수 있으므로 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
 
 >[!MORELIKETHIS]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 * [Metadata Schemata Reference](meta-ref.md)
 -->
 
-## 메타데이터가 필요한 이유 {#why-metadata}
+## 메타데이터 {#why-metadata}가 필요한 이유
 
 메타데이터는 데이터에 대한 데이터를 의미합니다. 이러한 점에서 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 에셋 관리를 위해 중요합니다.
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 * 포함된 폴더의 이름입니다.
 * 관련 자산 또는 적용된 태그
 
-위의 메타데이터 속성은 자산에 대해 관리할 [!DNL Experience Manager] 수 있으며, 이를 통해 사용자는 모든 자산을 볼 수 있습니다. 예를 들어, 마지막 수정 날짜별로 자산을 정렬하는 것은 최근에 추가된 자산을 검색하려고 할 때 유용합니다.
+위의 메타데이터 속성은 사용자가 모든 자산을 볼 수 있도록 하는 자산에 대해 [!DNL Experience Manager]에서 관리할 수 있는 기본 메타데이터 속성입니다. 예를 들어, 마지막 수정 날짜별로 자산을 정렬하는 것은 최근에 추가된 자산을 검색하려고 할 때 유용합니다.
 
 디지털 자산에 더 많은 고급 데이터를 추가할 수 있습니다. 예:
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 * 관리가 간편함 - 동일한 속성 세트를 사용하여 보다 손쉽게 에셋을 찾을 수 있고 변경 사항을 적용할 수 있습니다.
 * 전체 - 더 많은 메타데이터가 포함된 추가 정보 및 컨텍스트를 자산에 전달합니다.
 
-이러한 이유로 디지털 자산에 대한 메타데이터를 만들고, 관리하고, 교환할 수 있는 적절한 방법을 제공합니다. [!DNL Assets]
+이러한 이유로, [!DNL Assets]은 디지털 자산에 대한 메타데이터를 만들고, 관리하고 교환하는 적절한 방법을 제공합니다.
 
 ## 메타데이터 유형 {#types-of-metadata}
 
@@ -77,14 +77,14 @@ ht-degree: 0%
 
 파일에 메타데이터를 임베드하는 다양한 방법이 있습니다. 다양한 인코딩 표준이 지원됩니다.
 
-* XMP:추출된 메타데이터 [!DNL Assets] 를 저장소 내에 저장하는 데 사용됩니다.
+* XMP:추출된 메타데이터를 저장소 내에 저장하는 데 사용됩니다.[!DNL Assets]
 * ID3:for audio and video files.
 * Exif:for image files.
-* 기타/레거시:출처 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]등
+* 기타/레거시:from [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)은 모든 메타데이터 관리에 사용되는 개방형 표준 [!DNL Experience Manager Assets] 입니다. 표준은 모든 파일 포맷에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe과 다른 회사는 리치 컨텐츠 모델을 제공하면서 XMP standard를 지원합니다. XMP 표준과 PC 사용자는 강력한 플랫폼을 [!DNL Experience Manager Assets] 갖추고 있으며 자세한 내용은 [XMP을 참조하십시오](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP)은 모든 메타데이터 관리에 사용되는 개방형 표준 [!DNL Experience Manager Assets] 입니다. 표준은 모든 파일 포맷에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe과 다른 회사는 리치 컨텐츠 모델을 제공하면서 XMP standard를 지원합니다. XMP 표준 및 [!DNL Experience Manager Assets] 사용자는 강력한 플랫폼을 사용하여 구축할 수 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html)을 참조하십시오.
 
 ### ID3 {#id}
 
@@ -100,27 +100,27 @@ ID3 태그는 MP3 파일 포맷용으로 설계되었습니다. 형식에 대한
 
 ### Exif {#exif}
 
-Exif(Exchange) 는 디지털 사진 분야에서 가장 널리 사용되는 메타데이터 포맷입니다. JPEG, TIFF, RIFF 및 WAV와 같은 다양한 파일 포맷으로 메타데이터 속성의 고정된 용어를 임베드하는 방법을 제공합니다. Exif는 메타데이터를 메타데이터 이름 및 메타데이터 값의 쌍으로 저장합니다. 이러한 메타데이터 이름-값-쌍은 태그라고도 합니다. 태깅과 혼동하지 마십시오 [!DNL Experience Manager]. 최신 디지털 카메라는 Exif 메타데이터와 이를 지원하는 최신 그래픽 소프트웨어를 제작합니다. Exif 형식은 특히 이미지에 대한 메타데이터 관리를 위한 가장 일반적인 분모입니다.
+Exif(Exchange) 는 디지털 사진 분야에서 가장 널리 사용되는 메타데이터 포맷입니다. JPEG, TIFF, RIFF 및 WAV와 같은 다양한 파일 포맷으로 메타데이터 속성의 고정된 용어를 임베드하는 방법을 제공합니다. Exif는 메타데이터를 메타데이터 이름 및 메타데이터 값의 쌍으로 저장합니다. 이러한 메타데이터 이름-값-쌍은 태그라고도 합니다. [!DNL Experience Manager]의 태깅과 혼동하지 않도록 합니다. 최신 디지털 카메라는 Exif 메타데이터와 이를 지원하는 최신 그래픽 소프트웨어를 제작합니다. Exif 형식은 특히 이미지에 대한 메타데이터 관리를 위한 가장 일반적인 분모입니다.
 
 Exif의 주요 제한 사항은 BMP, GIF 또는 PNG와 같이 널리 사용되는 몇 가지 이미지 파일 형식이 지원되지 않는다는 것입니다.
 
-Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항이며 수사적 메타데이터 관리를 위해 제한된 용도로 사용됩니다. 이러한 이유로, Exif 속성을 [!DNL Experience Manager Assets] 일반적인 메타데이터 스키마 [](metadata-schemas.md) 및 XMP에 매핑하는 기능을 제공합니다.
+Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항이며 수사적 메타데이터 관리를 위해 제한된 용도로 사용됩니다. 이러한 이유로 [!DNL Experience Manager Assets]은 Exif 속성의 매핑을 [공통 메타데이터 스키마](metadata-schemas.md)와 XMP에 제공합니다.
 
 #### 기타 메타데이터 {#other-metadata}
 
-파일에서 임베드할 수 있는 기타 메타데이터에는 [!DNL Microsoft Word][!DNL PowerPoint], [!DNL Excel]등이 포함됩니다.
+파일에서 포함할 수 있는 기타 메타데이터에는 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등이 있습니다.
 
 ## 디지털 자산의 메타데이터 관리 {#manage-assets-metadata}
 
-Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 동시에 편집할 수 있으므로 일반적인 메타데이터 변경 사항을 자산에 일괄적으로 신속하게 전파할 수 있습니다. 속성  페이지를 사용하여 메타데이터 속성을 일반 값으로 변경하거나 태그를 추가하거나 수정할 수 있습니다. 메타데이터 속성 추가, 수정, 삭제 등 메타데이터 속성 페이지를 사용자 정의하려면 스키마 편집기를 사용합니다.
+Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 동시에 편집할 수 있으므로 일반적인 메타데이터 변경 사항을 자산에 일괄적으로 신속하게 전파할 수 있습니다. 메타데이터 속성을 일반 값으로 변경하거나 태그를 추가하거나 수정하려면 [!UICONTROL 속성] 페이지를 사용합니다. 메타데이터 속성 추가, 수정, 삭제 등 메타데이터 속성 페이지를 사용자 정의하려면 스키마 편집기를 사용합니다.
 
 >[!NOTE]
 >
->벌크 편집 방법은 폴더 또는 컬렉션에서 사용할 수 있는 자산에 대해 작동합니다. 여러 폴더에서 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 검색 후 메타데이터를 [일괄 업데이트할 수 있습니다](/help/assets/search-assets.md#metadataupdates).
+>벌크 편집 방법은 폴더 또는 컬렉션에서 사용할 수 있는 자산에 대해 작동합니다. 폴더 간에 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 [검색 후 메타데이터를 일괄 업데이트할 수 있습니다](/help/assets/search-assets.md#metadataupdates).
 
 1. 편집할 자산의 위치로 이동합니다.
 1. 공통 속성을 편집할 자산을 선택합니다.
-1. 도구 모음에서 속성 **[!UICONTROL 을 탭/클릭하여]** 선택한 자산에 대한 [!UICONTROL 속성] 페이지를 엽니다.
+1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 탭/클릭하여 선택한 자산에 대한 [!UICONTROL 속성] 페이지를 엽니다.
 
    >[!NOTE]
    >
@@ -131,20 +131,20 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
 
    >[!NOTE]
    >
-   >* [ [!UICONTROL 속성] ] 페이지에서 자산의 선택을 취소하여 자산 목록에서 자산을 제거할 수 있습니다. 자산 목록에는 기본적으로 모든 자산이 선택되어 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
-   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 근처의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
+   >* [!UICONTROL 속성] 페이지에서 자산을 선택 취소하여 자산 목록에서 자산을 제거할 수 있습니다. 자산 목록에는 기본적으로 모든 자산이 선택되어 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
+   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 옆의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
 
 
-1. 자산에 대해 다른 메타데이터 스키마를 선택하려면 도구 모음에서 **[!UICONTROL 설정을]** 탭/클릭하고 원하는 스키마를 선택합니다. 변경 사항을 저장합니다.
-1. 여러 값이 들어 있는 필드에 기존 메타데이터와 함께 새 메타데이터를 추가하려면 추가 모드 **[!UICONTROL 를 선택합니다]**. 이 옵션을 선택하지 않으면 새 메타데이터가 필드에 있는 기존 메타데이터를 대체합니다. 제출을 탭/ **[!UICONTROL 클릭합니다]**.
+1. 자산에 대해 다른 메타데이터 스키마를 선택하려면 도구 모음에서 **[!UICONTROL 설정]**&#x200B;을 탭/클릭하고 원하는 스키마를 선택합니다. 변경 사항을 저장합니다.
+1. 여러 값이 포함된 필드의 기존 메타데이터와 함께 새 메타데이터를 추가하려면 **[!UICONTROL 추가 모드]**&#x200B;를 선택합니다. 이 옵션을 선택하지 않으면 새 메타데이터가 필드에 있는 기존 메타데이터를 대체합니다. **[!UICONTROL 제출]**&#x200B;을 탭/클릭합니다.
 
    >[!CAUTION]
    >
-   >단일 값 필드의 경우 추가 모드를 선택하더라도 새 메타데이터는 필드의 기존 값에 추가되지 **[!UICONTROL 않습니다]**.
+   >단일 값 필드의 경우 **[!UICONTROL 추가 모드]**&#x200B;를 선택하더라도 새 메타데이터는 필드의 기존 값에 추가되지 않습니다.
 
-## 처리 프로필을 사용한 사용자 지정 메타데이터 {#metadata-compute-service}
+## 처리 프로필 {#metadata-compute-service}을(를) 사용한 사용자 지정 메타데이터
 
-Cloud Service으로 에셋은 클라우드 기본 서비스를 사용하여 자산에 대한 사용자 정의 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 처리 프로필 [사용 방법을 참조하십시오](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Cloud Service으로 에셋은 클라우드 기본 서비스를 사용하여 자산에 대한 사용자 정의 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 처리 프로필[을 사용하는 방법을 참조하십시오.](/help/assets/asset-microservices-configure-and-use.md#use-profiles)
 
 ![처리 프로필의 메타데이터 변환](assets/processing-profile-metadata.png)
 
@@ -152,13 +152,13 @@ Cloud Service으로 에셋은 클라우드 기본 서비스를 사용하여 자�
 >
 >하나의 처리 프로필만 폴더에 적용할 수 있습니다. 한 폴더의 자산에 여러 처리를 적용하려면 단일 처리 프로필에 더 많은 옵션을 추가하십시오. 예를 들어 단일 프로필에서는 표현물을 생성하고, 자산을 트랜스코딩하고, 사용자 지정 메타데이터를 생성하는 등의 작업을 할 수 있습니다. 각 작업에 대해 MIME 유형 필터를 적용하여 필요한 파일 형식에 대해 적절한 작업이 트리거되도록 할 수 있습니다.
 
-## 일괄 메타데이터 업데이트에 대한 제한 구성 {#configlimit}
+## 벌크 메타데이터 업데이트 {#configlimit} 제한 구성
 
 AEM은 DOS와 같은 상황을 방지하기 위해 Sling 요청에서 지원되는 매개 변수의 수를 제한합니다. 한 번에 많은 자산의 메타데이터를 업데이트할 때 한도에 도달해도 메타데이터가 더 많은 자산에 대해 업데이트되지 않습니다. AEM은 로그에 다음 경고를 생성합니다.
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-제한을 변경하려면 웹 콘솔( **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**)에 액세스하고 최대 POST 매개 변수 **[!UICONTROL 변경Maximum의 값 변경]** **** Apache Apache Sling 요청 매개 변수 처리OSGi 구성에 액세스합니다.
+제한을 변경하려면 웹 콘솔( **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**)에 액세스하고 **[!UICONTROL Apache Sling 요청 매개 변수 처리]**&#x200B;의 최대 POST 매개 변수&#x200B;]**의 값을 변경합니다. 구성**[!UICONTROL 
 
 ## 메타데이터 스키마 {#metadata-schemata}
 
@@ -170,40 +170,40 @@ AEM은 DOS와 같은 상황을 방지하기 위해 Sling 요청에서 지원되�
 
 ### 표준 메타데이터 {#standard-metadata}
 
-* DC - [!DNL Dublin Core] 중요하며 널리 사용되는 메타데이터 세트입니다.
+* DC - [!DNL Dublin Core]은 중요하며 널리 사용되는 메타데이터 세트입니다.
 * DICOM - 의료 분야의 디지털 이미징 및 커뮤니케이션
-* `Iptc4xmpCore` 및 `iptc4xmpExt` - International Press Communications Standard에는 많은 분야별 메타데이터가 포함되어 있습니다.
+* `Iptc4xmpCore` 및  `iptc4xmpExt` - International Press Communications Standard에는 많은 분야별 메타데이터가 포함되어 있습니다.
 * RDF - Resource Description Framework - for generic semantic web metadata.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - 기본 작업 티켓.
 
-### 애플리케이션별 메타데이터 {#application-specific-metadata}
+### 응용 프로그램 특정 메타데이터 {#application-specific-metadata}
 
-애플리케이션별 메타데이터에는 기술 및 설명 메타데이터가 포함됩니다. 이러한 메타데이터를 사용하는 경우 다른 애플리케이션에서 메타데이터를 사용할 수 없을 수도 있습니다. 예를 들어, 다른 이미지 렌더링 응용 프로그램이 메타데이터에 액세스할 수 없을 수도 [!DNL Adobe Photoshop] 있습니다. 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
+애플리케이션별 메타데이터에는 기술 및 설명 메타데이터가 포함됩니다. 이러한 메타데이터를 사용하는 경우 다른 애플리케이션에서 메타데이터를 사용할 수 없을 수도 있습니다. 예를 들어 다른 이미지 렌더링 응용 프로그램이 [!DNL Adobe Photoshop] 메타데이터에 액세스할 수 없을 수 있습니다. 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
 
-* ACDSee - 프로그램에서 관리하는 [!DNL ACDSee] 메타데이터입니다. www.acdsee.com [를 참조하십시오](https://www.acdsee.com/).
+* ACDSee - [!DNL ACDSee] 프로그램에서 관리하는 메타데이터입니다. [www.acdsee.com/](https://www.acdsee.com/)을 참조하십시오.
 * 앨범 - [!DNL Adobe Photoshop Album].
-* CQ - 사용됨 [!DNL Experience Manager Assets].
-* DAM - 사용 [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description 탐색기는](http://www.optimasc.com/products/dex/index.html) Windows 운영 체제용 메타데이터 및 파일 관리를 위한 도구 모음입니다.
+* CQ - [!DNL Experience Manager Assets]에서 사용됩니다.
+* DAM - [!DNL Experience Manager Assets]에서 사용됩니다.
+* DEX - [Optima SC Description 탐색기](http://www.optimasc.com/products/dex/index.html)는 Windows 운영 체제에 대한 메타데이터 및 파일 관리를 위한 도구 모음입니다.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * Microsoft Photo 및 MP - Microsoft Photo.
 * PDF 및 PDF/X.
-* Photoshop 및 psAux - [!DNL Adobe Photoshop].
+* Photoshop 및 psAux - [!DNL Adobe Photoshop]
 
 ### Digital Rights Management 메타데이터 {#digital-rights-management-metadata}
 
 * 참조 - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS - [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.idealliance.org/prism-metadata)사항.
+* PRISM - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.idealliance.org/prism-metadata).
 * PRL - 프리즘 권한 언어.
 * PUR - 프리즘 사용 권한.
 * `xmpPlus` - PLUS와 XMP 통합
 
-### 사진별 메타데이터 {#photography-specific-metadata}
+### 포토그래피 특정 메타데이터 {#photography-specific-metadata}
 
 * Exif - GPS 위치를 비롯한 카메라의 기술 정보.
 * CRS - [!DNL Camera Raw] 스키마.
@@ -213,7 +213,7 @@ AEM은 DOS와 같은 상황을 방지하기 위해 Sling 요청에서 지원되�
 ### 인쇄 관련 메타데이터 {#print-specific-metadata}
 
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션
-* PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.idealliance.org/prism-metadata)사항.
+* PRISM - [업계 표준 메타데이터에 대한 게시 요구 사항](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - 페이지 텍스트를 위한 XMP 메타데이터
 
@@ -222,7 +222,7 @@ AEM은 DOS와 같은 상황을 방지하기 위해 Sling 요청에서 지원되�
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - 미디어 관리.
 
-## 메타데이터 기반의 워크플로우 {#metadata-driven-workflows}
+## 메타데이터 중심의 워크플로우 {#metadata-driven-workflows}
 
 메타데이터 기반의 워크플로우를 사용하면 일부 프로세스를 자동화하여 효율성을 향상시킬 수 있습니다. 메타데이터 중심의 워크플로우에서 워크플로우 관리 시스템은 워크플로우를 읽고 그 결과 사전 정의된 작업을 수행합니다. 예를 들어 메타데이터 중심의 워크플로우를 사용할 수 있는 방법 중 몇 가지를 있습니다.
 
