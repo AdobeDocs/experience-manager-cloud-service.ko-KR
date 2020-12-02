@@ -55,7 +55,7 @@ Adobe Experience Manager(AEM)에서 Cloud Service으로 작업할 때 게시와 
 
 >[!NOTE]
 >
-> 추가 가능성 **은 페이지 속성** 의 **기본 탭에서 시간** 및 [해제 시간을참조하십시오.](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> 추가 가능성을 보려면 페이지 속성의 [기본 탭에서 **On Time** 및 **Off Time**&#x200B;을 참조하십시오.](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### 편집기에서 게시 {#publishing-from-the-editor}
 
@@ -144,7 +144,7 @@ Adobe Experience Manager(AEM)에서 Cloud Service으로 작업할 때 게시와 
 
    컨텐츠 추가 단추를 클릭하면 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
+   필요한 페이지를 선택한 다음 **선택**&#x200B;을 클릭하여 마법사에 컨텐츠를 추가하거나 **취소**&#x200B;를 클릭하여 선택을 취소하고 마법사로 돌아갑니다.
 
    마법사로 돌아가 목록에서 항목을 선택한 뒤 다음과 같은 추가 옵션을 구성할 수 있습니다.
 
@@ -216,7 +216,7 @@ Adobe Experience Manager(AEM)에서 Cloud Service으로 작업할 때 게시와 
 
 페이지를 편집할 때 해당 페이지의 게시를 취소하려는 경우 [페이지를 게시](#publishing-from-the-editor)한 만큼 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
 
-### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
+### 콘솔에서 게시 취소  {#unpublishing-from-the-console}
 
 [게시하기 위해 게시 관리를 사용](#manage-publication)하는 것과 같은 방식으로 게시 취소할 수 있습니다.
 
