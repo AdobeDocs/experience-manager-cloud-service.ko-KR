@@ -35,13 +35,13 @@ AEM Dispatcher Converter는 기존 온-프레미스 또는 Adobe Managed Service
 
 ## AEM Dispatcher 변환기 사용 {#using-dispatcher-converter}
 
-* Adobe I/O CLI 사용:AEM Dispatcher Converter를 통해 `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/O CLI용 Cloud Service 코드 리팩토링 플러그인으로 AEM을 사용하는 것이 좋습니다.)
+* Adobe I/O CLI 사용:AEM Dispatcher Converter는 `aio-cli-plugin-aem-cloud-service-migration`(AEM은 Adobe I/O CLI용 Cloud Service 코드 리팩토링 플러그인으로 사용)을 통해 사용하는 것이 좋습니다.
 
-   Git 리소스 **[를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** to learn how to install and use the plugin.
+   **[Git 리소스를 참조하십시오.플러그인을 설치하고 사용하는 방법을 학습하는 aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)**
 
 * 독립형 유틸리티로,AEM Dispatcher Converter 도구를 독립형 유틸리티로 실행할 수도 있습니다.
 
-   Refer to **[Git Resource: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** to learn about the usage and troubleshooting for this tool.
+   **[Git 리소스를 참조하십시오.AEM Cloud Service 디스패처 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)**&#x200B;에서 이 도구의 사용 및 문제 해결에 대해 알아보십시오.
 
 >[!IMPORTANT]
 >AEM Dispatcher Converter는 NodeJS를 사용하여 개발되었습니다. NodeJS 10.0+을 설치하는 것이 좋습니다.
