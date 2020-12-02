@@ -71,7 +71,7 @@ AEM을 Cloud Service으로 사용할 수 있는 환경에는 세 가지 유형�
 
 * **개발 환경**: 개발자가 스테이지 및 프로덕션 환경과 동일한 런타임 조건으로 AEM 애플리케이션을 구현할 수 있도록 해줍니다.
 
-   자세한 내용은 [환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) 관리를 참조하십시오.
+   자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager)를 참조하십시오.
 
 ## 프로그램 {#programs}
 
