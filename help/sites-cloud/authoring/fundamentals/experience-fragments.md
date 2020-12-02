@@ -351,7 +351,7 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 표
 >
 >브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 타사 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 컨텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
-## 경험 조각 내보내기 {#exporting-experience-fragments}
+## 경험 조각 내보내기  {#exporting-experience-fragments}
 
 기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 타사 채널에서 모두 동일하게 사용할 수 있습니다.
 
