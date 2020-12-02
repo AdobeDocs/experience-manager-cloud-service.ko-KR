@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Adobe은 모든 상거래 관련 데이터에 대한 공식 상거래 API로 Magento GraphQL API를 채택했습니다. 따라서 AEM은 GraphQL을 사용하여 전자 메일 런타임(I/O Runtime)을 통해 Magento 및 모든 상거래 엔진과 상거래 데이터를 교환합니다.
 
-## 2. Adobe 입출력이 어떻게 이루어집니까? AEM이 Magento과 직접 통화하나요?
+## 2. Adobe I/O은 어떻게 경기하는가? AEM이 Magento과 직접 통화하나요?
 
-AEM은 I/O 런타임 레이어 없이 Magento에 직접 연결할 수 있습니다. Magento이 아닌 상거래 백엔드(타사 솔루션)를 AEM과 통합해야 하는 경우 I/O 런타임 플랫폼을 사용하여 매핑 레이어를 호스팅하여 Magento GraphQL API를 타사 솔루션 API에 연결할 수 있습니다. 자세한 내용은 이 [참조 구현을 참조하십시오](https://github.com/adobe/commerce-cif-graphql-integration-reference). Magento이 아닌 솔루션의 경우 AEM이 I/O 런타임 끝점을 가리키도록 구성됩니다.
+AEM은 I/O 런타임 레이어 없이 Magento에 직접 연결할 수 있습니다. Magento이 아닌 상거래 백엔드(타사 솔루션)를 AEM과 통합해야 하는 경우 I/O 런타임 플랫폼을 사용하여 매핑 레이어를 호스팅하여 Magento GraphQL API를 타사 솔루션 API에 연결할 수 있습니다. 자세한 내용은 이 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)을 참조하십시오. Magento이 아닌 솔루션의 경우 AEM이 I/O 런타임 끝점을 가리키도록 구성됩니다.
 
 또한 I/O 런타임 플랫폼을 사용하여 커머스 서비스를 확장하거나 사용자 정의할 수 있습니다. 이 사용 사례의 경우 I/O 런타임 종단점을 호출하면 해당 서비스의 사용자 지정된 구현을 호스팅하게 됩니다. 통합 및 확장 사용 사례를 결합할 수 있습니다.
 
@@ -41,7 +41,7 @@ Magento이 배포되는 위치와 상관없습니다. 통합 및 새로운 AEM V
 
 ## 7. AEM Dispatcher의 캐시 무효화는 AEM-Magento과 어떻게 작동합니까?
 
-Dispatcher에 캐시되는 페이지에 대해 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 재고 등의 동적 정보는 클라이언트측에서 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [AEM Dispatcher를 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+Dispatcher에 캐시되는 페이지에 대해 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 재고 등의 동적 정보는 클라이언트측에서 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)를 참조하십시오.
 
 ## 8. We.Retail을 사용하지 않는 이유는 무엇입니까?
 
@@ -65,7 +65,7 @@ CIF는 검색 막대 및 검색 결과 구성 요소를 제공합니다. 검색 
 
 ## 13. CIF는 다른 상거래 플랫폼과 어떻게 연동됩니까?
 
-다른 상거래 솔루션(비Magento)과 같은 타사 솔루션과의 통합은 I/O 런타임 플랫폼을 통해 이루어집니다.  이러한 작업을 수행하는 방법을 [시연하기](https://github.com/adobe/commerce-cif-graphql-integration-reference) 위해 참조 구현을 구축했습니다. 이렇게 하면 타사 상거래 플랫폼 위에 있는 Magento GraphQL [API를 노출하여](https://github.com/adobe/commerce-cif-connector) AEM CIF 클라우드 커넥터 [및](https://github.com/adobe/aem-core-cif-components) AEM CIF 핵심 구성 요소를 재사용할 수 있습니다. 최고의 유연성과 확장성을 제공하기 위해 이 통합 레이어는 서버를 사용하지 않는 [Adobe I/O Runtime 플랫폼에 배포됩니다](https://www.adobe.io/apis/experienceplatform/runtime.html).
+다른 상거래 솔루션(비Magento)과 같은 타사 솔루션과의 통합은 I/O 런타임 플랫폼을 통해 이루어집니다.  이 작업을 수행하는 방법을 보여주기 위해 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)을(를) 만들었습니다. 이렇게 하면 타사 상거래 플랫폼 위에 있는 Magento GraphQL API를 노출하여 [AEM CIF 클라우드 커넥터](https://github.com/adobe/commerce-cif-connector) 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 다시 사용할 수 있습니다. 최고의 유연성과 확장성을 제공하기 위해 이 통합 레이어는 서버를 사용하지 않는 [Adobe I/O Runtime 플랫폼](https://www.adobe.io/apis/experienceplatform/runtime.html)에 배포됩니다.
 
 ## 14. 상업용 텍스트로 제품 데이터를 향상시키는 방법이 있습니까? 어디서 하는 거야? AEM 또는 Magento에서?
 
@@ -93,7 +93,7 @@ AMS 및 Magento 클라우드 배포에서 AEM을 사용하는 경우 추상적�
 
 ## 20. I/O 런타임 시험버전 라이선스를 어떻게 요청합니까?
 
-I/O 런타임을 사용하려면 [여기에서 시험버전 라이선스를 요청할 수 있습니다](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md).
+I/O 런타임 [여기](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md)를 사용하도록 시험버전 라이선스를 요청할 수 있습니다.
 
 
 
