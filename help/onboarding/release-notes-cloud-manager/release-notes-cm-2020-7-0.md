@@ -10,7 +10,7 @@ ht-degree: 73%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
+# Cloud Service 2020.7.0인 Adobe Experience Manager의 클라우드 관리자에 대한 릴리스 노트 {#release-notes}
 
 이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2020.7.0으로 간략하게 설명합니다.
 
@@ -33,7 +33,7 @@ ht-degree: 73%
 * 이제 인증 바인딩된 개인 마웬 리포지토리가 지원됩니다.
 
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
-자세한 내용은 [Java 11 지원](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 사용을 참조하십시오.
+자세한 내용은 [Java 11 지원 사용](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cm}
 
