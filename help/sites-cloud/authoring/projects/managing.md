@@ -32,11 +32,11 @@ ht-degree: 78%
 프로젝트 작성 절차는 프로젝트 간에 동일합니다. 프로젝트 유형 간의 차이에는 사용 가능한 [사용자 역할](/help/sites-cloud/authoring/projects/overview.md)과 [워크플로우](/help/sites-cloud/authoring/projects/workflows.md)가 포함됩니다.  새 프로젝트를 작성하려면 다음을 수행하십시오.
 
 1. **프로젝트**&#x200B;에서 **만들기**&#x200B;를 탭/클릭하여 **프로젝트 만들기** 마법사를 엽니다.
-1. 템플릿을 선택하고 다음을 **클릭합니다**.
+1. 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
 
    ![프로젝트 만들기](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. 사용자와 사용자가 속한 그룹을 추가하거나 삭제할 수도 있습니다. 또한 **고급**&#x200B;을 클릭하여 URL에 사용된 이름을 추가합니다.
+1. **제목** 및 **설명**&#x200B;을 정의하고 필요한 경우 **축소판** 이미지를 추가합니다. 사용자와 사용자가 속한 그룹을 추가하거나 삭제할 수도 있습니다. 또한 **고급**&#x200B;을 클릭하여 URL에 사용된 이름을 추가합니다.
 
    ![프로젝트 세부 사항 추가](/help/sites-cloud/authoring/assets/projects-title.png)
 
@@ -83,7 +83,7 @@ ht-degree: 78%
 
 타일에 항목을 추가하려면 다음을 수행하십시오.
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. **프로젝트**&#x200B;에서 프로젝트로 이동하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
 
    ![타일에 항목 추가](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
@@ -107,19 +107,19 @@ ht-degree: 78%
 
 ## 프로젝트 통계 보기 {#viewing-project-statistics}
 
-프로젝트 통계를 보려면 **프로젝트** 콘솔에서 **통계 보기 표시**&#x200B;를 클릭하십시오. 각 프로젝트에 대한 완료 수준이 표시됩니다. Click **Show Statistics View** again to go to the **Projects** console.
+프로젝트 통계를 보려면 **프로젝트** 콘솔에서 **통계 보기 표시**&#x200B;를 클릭하십시오. 각 프로젝트에 대한 완료 수준이 표시됩니다. **통계 보기 표시**&#x200B;를 다시 클릭하여 **프로젝트** 콘솔로 이동합니다.
 
 ![프로젝트 통계](/help/sites-cloud/authoring/assets/projects-stats.png)
 
 ### 프로젝트 타임라인 보기 {#viewing-a-project-timeline}
 
-프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. 자산은 왼쪽 창에 표시됩니다. Click/tap **Timeline** to return to the **Projects** console.
+프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드를 시작하고 프로젝트를 선택합니다. 자산은 왼쪽 창에 표시됩니다. **타임라인**&#x200B;을 클릭/탭하여 **프로젝트** 콘솔로 돌아갑니다.
 
 ![프로젝트 타임라인](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### 활성/비활성 프로젝트 보기 {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트가 표시됩니다.
+활성 프로젝트와 비활성 프로젝트 간에 전환하려면 **프로젝트** 콘솔에서 **활성 프로젝트 전환**&#x200B;을 클릭합니다. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트가 표시됩니다.
 
 ![활성 프로젝트 전환 단추](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -138,7 +138,7 @@ To toggle between your active and inactive projects, in the **Projects** console
    >[!NOTE]
    프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
 
-1. Tap/click **Edit**.
+1. **편집**&#x200B;을 탭/클릭합니다.
 1. 선택기를 **활성**&#x200B;에서 **비활성**(또는 그 반대)으로 변경합니다.
 
    ![프로젝트 활성화](/help/sites-cloud/authoring/assets/projects-activate.png)
