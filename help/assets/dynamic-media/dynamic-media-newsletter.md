@@ -18,7 +18,7 @@ Experience League의 월별 다이내믹 미디어 뉴스레터는 Dynamic Media
 
 ## 영감 얻기 최신 정보
 
-[Dynamic Media Newsletter를 받은 편지함에서 매월 수신하려면 등록하십시오](https://www.adobe.com/subscription/dynamic-media-newsletter.html) .
+[Dynamic ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) Media Newsletter를 매월 받은 편지함에서 수신합니다.
 
 ## Dynamic Media 뉴스레터 문제가 누락되었습니까?
 
@@ -50,7 +50,7 @@ Experience League의 월별 다이내믹 미디어 뉴스레터는 Dynamic Media
 
    >[!IMPORTANT]
    >
-   >Adobe는 Dynamic Media 뉴스레터를 수신하려는 사람에게만 발송하고 있는지 확인합니다. 이 문제 이후 뉴스레터를 계속 수신하려면 [여기에서 등록하십시오](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
+   >Adobe는 Dynamic Media 뉴스레터를 수신하려는 사람에게만 발송하고 있는지 확인합니다. 이 문제 이후 뉴스레터를 계속 수신하려면 [여기](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)에 등록하십시오.
 
 * **[2020년 2월, 발행물 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
