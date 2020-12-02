@@ -61,7 +61,7 @@ AEM Maven 프로젝트가 AEM as a Cloud Service와 호환되도록 하려면 �
 
 AEM as a Cloud Service를 개발할 때 알고 있어야 할 몇 가지 추가 개발 지침이 있습니다. 자세한 내용은 [AEM as a Cloud Service 개발 지침](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/development-guidelines.html)을 참조하십시오.
 
-계획 단계에서 클라우드 서비스와 호환되도록 리팩터링해야 하는 영역 목록이 있어야 합니다. 또한 [개발 지침](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/development-guidelines.html)에서 클라우드 서비스로 이동하기 위해 코드를 리팩터링 및 최적화하는 방법에 대한 자세한 내용을 검토해야 합니다.
+계획 단계에서 클라우드 서비스와 호환되도록 리팩터링해야 하는 영역 목록이 있어야 합니다. 또한 [개발 지침](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)에서 클라우드 서비스로 이동하기 위해 코드를 리팩터링 및 최적화하는 방법에 대한 자세한 내용을 검토해야 합니다.
 
 코드 리팩터링 작업 중 일부를 가속화하기 위해 다음 도구를 사용할 수 있습니다.
 
