@@ -36,9 +36,9 @@ ht-degree: 0%
 * [유동 격자](#developing-a-fluid-grid)
 * [적응형 이미지](#using-adaptive-images)
 
-디자인 시 에뮬레이터 **** 도구 모음을 사용하여 다양한 화면 크기에 맞게 페이지를 미리 볼 수 있습니다.
+디자인할 때 **에뮬레이터** 도구 모음을 사용하여 다양한 화면 크기에 맞게 페이지를 미리 봅니다.
 
-## 개발 전 {#before-you-develop}
+## {#before-you-develop} 개발 전
 
 웹 페이지를 지원하는 AEM 애플리케이션을 개발하기 전에 몇 가지 디자인 결정을 내려야 합니다. 예를 들어 다음 정보가 필요합니다.
 
@@ -46,29 +46,29 @@ ht-degree: 0%
 * 대상 뷰포트 크기
 * 타깃팅된 각 뷰포트 크기에 대한 페이지 레이아웃
 
-### 애플리케이션 구조 {#application-structure}
+### 응용 프로그램 구조 {#application-structure}
 
 일반적인 AEM 애플리케이션 구조는 모든 반응형 디자인 구현을 지원합니다.
 
-* 페이지 구성 요소는 아래에 있습니다. `/apps/<application_name>/components`
-* 아래의 템플릿 `/apps/<application_name>/templates`
+* 페이지 구성 요소는 `/apps/<application_name>/components` 아래에 있습니다.
+* 템플릿은 `/apps/<application_name>/templates` 아래에 있습니다.
 
 ## 미디어 쿼리 사용 {#using-media-queries}
 
 미디어 쿼리를 사용하면 페이지 렌더링을 위해 CSS 스타일을 선택적으로 사용할 수 있습니다. AEM 개발 툴과 기능을 사용하면 애플리케이션에서 미디어 쿼리를 효과적이고 효율적으로 구현할 수 있습니다.
 
-W3C 그룹은 이 CSS3 기능과 구문을 설명하는 [미디어 쿼리](https://www.w3.org/TR/css3-mediaqueries/) 권장 사항을 제공합니다.
+W3C 그룹은 이 CSS3 기능 및 구문을 설명하는 [미디어 쿼리](https://www.w3.org/TR/css3-mediaqueries/) 권장 사항을 제공합니다.
 
-### CSS 파일 만들기 {#creating-the-css-file}
+### CSS 파일 {#creating-the-css-file} 만들기
 
 CSS 파일에서 타깃팅하는 장치의 속성을 기반으로 미디어 쿼리를 정의합니다. 다음 구현 전략은 각 미디어 쿼리에 대한 스타일을 관리하는 데 효과적입니다.
 
-* 클라이언트 [라이브러리 폴더를](clientlibs.md) 사용하여 페이지가 렌더링될 때 어셈블되는 CSS를 정의할 수 있습니다.
+* [클라이언트 라이브러리 폴더](clientlibs.md)를 사용하여 페이지가 렌더링될 때 어셈블되는 CSS를 정의합니다.
 * 각 미디어 쿼리 및 관련 스타일을 별도의 CSS 파일로 정의할 수 있습니다. 미디어 쿼리의 장치 기능을 나타내는 파일 이름을 사용하는 것이 유용합니다.
 * 별도의 CSS 파일에서 모든 디바이스에서 공통으로 사용되는 스타일을 정의할 수 있습니다.
 * 클라이언트 라이브러리 폴더의 css.txt 파일에서 어셈블된 CSS 파일에 필요한 CSS 파일 목록을 정렬합니다.
 
-WKND [자습서에서는](develop-wknd-tutorial.md) 이 전략을 사용하여 사이트 디자인에서 스타일을 정의합니다. WKND에서 사용하는 CSS 파일은 에 있습니다 `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+[WKND 자습서](develop-wknd-tutorial.md)는 이 전략을 사용하여 사이트 디자인에서 스타일을 정의합니다. WKND에서 사용하는 CSS 파일은 `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`에 있습니다.
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
