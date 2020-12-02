@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 매개 변수 {#parameters}
 
-![Target HTTP](assets/httpwindow.png "WindowTarget HTTP 창")
+![Target HTTP ](assets/httpwindow.png "WindowTarget HTTP 창")
 
 창에는 다음과 같은 구성 가능한 매개 변수가 포함되어 있습니다.
 
