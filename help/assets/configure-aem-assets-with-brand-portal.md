@@ -1,23 +1,23 @@
 ---
-title: 브랜드 포털에서 Cloud Service으로 AEM Assets 구성
+title: 브랜드 포털에서 AEM Assets을 [!DNL Cloud Service] 으로 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1629'
 ht-degree: 32%
 
 ---
 
 
-# 브랜드 포털이 {#configure-aem-assets-with-brand-portal}인 Cloud Service으로 AEM Assets 구성
+# 브랜드 포털이 {#configure-aem-assets-with-brand-portal}인 [!DNL Cloud Service]으로 AEM Assets 구성
 
-Adobe Experience Manager 자산 브랜드 포털을 구성하면 승인된 브랜드 자산을 Adobe Experience Manager 인스턴스로 Cloud Service 자산에서 브랜드 포털에 게시하고 브랜드 포털 사용자에게 배포할 수 있습니다.
+Adobe Experience Manager 자산 브랜드 포털을 구성하면 승인된 브랜드 자산을 Adobe Experience Manager 자산에서 [!DNL Cloud Service] 인스턴스로 게시하여 브랜드 포털 사용자에게 배포할 수 있습니다.
 
 **구성 워크플로우**
 
-Cloud Service으로 AEM Assets은 브랜드 포털 테넌트의 승인을 위해 Adobe Identity Management 서비스(IMS) 계정 토큰을 구입하는 Adobe 개발자 콘솔을 통해 브랜드 포털로 구성됩니다. 여기에는 Adobe 개발자 콘솔뿐만 아니라 AEM Assets에 구성이 필요합니다.
+[!DNL Cloud Service]인 AEM Assets은 브랜드 포털 임차인의 인증을 위해 Adobe Identity Management 서비스(IMS) 계정 토큰을 구입하는 Adobe 개발자 콘솔을 통해 브랜드 포털로 구성됩니다. 여기에는 Adobe 개발자 콘솔뿐만 아니라 AEM Assets에 구성이 필요합니다.
 
 1. AEM Assets에서 IMS 계정을 만들고 공개 키(인증서)를 생성합니다.
 1. Adobe 개발자 콘솔에서 Brand Portal 테넌트(조직)에 대한 프로젝트를 만듭니다.
@@ -29,13 +29,13 @@ Cloud Service으로 AEM Assets은 브랜드 포털 테넌트의 승인을 위해
 
 >[!NOTE]
 >
->Cloud Service 인스턴스로 AEM Assets은 하나의 브랜드 포털 테넌트로 구성되어야 합니다.
+>[!DNL Cloud Service] 인스턴스로 AEM Assets은 하나의 브랜드 포털 테넌트로 구성되어야 합니다.
 
 ## 전제 조건 {#prerequisites}
 
 Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필요합니다.
 
-* Cloud Service 인스턴스로 AEM Assets 실행
+* [!DNL Cloud Service] 인스턴스로 AEM Assets 실행
 * 브랜드 포털 테넌트 URL
 * Brand Portal 임차인의 IMS 조직에 대한 시스템 관리자 권한이 있는 사용자
 
@@ -51,7 +51,7 @@ Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필�
 
 ### IMS 구성 만들기 {#create-ims-configuration}
 
-IMS 구성은 브랜드 포털 테넌트가 있는 Cloud Service 인스턴스로 AEM Assets을 인증합니다.
+IMS 구성은 브랜드 포털 테넌트가 있는 [!DNL Cloud Service] 인스턴스로 AEM Assets을 인증합니다.
 
 IMS 구성에는 두 단계가 포함됩니다.
 
@@ -231,7 +231,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
 1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 만들어집니다.
 
-   이제 Cloud Service 인스턴스로 AEM Assets이 브랜드 포털 테넌트로 구성됩니다.
+   이제 [!DNL Cloud Service] 인스턴스로 AEM Assets이 브랜드 포털 테넌트로 구성됩니다.
 
 ### 구성 테스트 {#test-configuration}
 
@@ -262,7 +262,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
    ![](assets/test-bpconfig3.png)
 
-1. Cloud Service과 브랜드 포털로 AEM Assets 간의 연결을 확인하려면 **[!UICONTROL 연결 테스트]** 아이콘을 클릭합니다.
+1. AEM Assets 간의 연결을 [!DNL Cloud Service] 및 브랜드 포털로 확인하려면 **[!UICONTROL 연결 테스트]** 아이콘을 클릭합니다.
 
    ![](assets/test-bpconfig4.png)
 
