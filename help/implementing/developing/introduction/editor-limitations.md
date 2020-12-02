@@ -14,19 +14,19 @@ ht-degree: 1%
 
 터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 포함된 컨텐츠와 상호 작용합니다. 이러한 상호 작용으로 편집기와 개발자를 위한 두 가지 사용 모두에서 몇 가지 제한 사항이 발생합니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 솔루션이나 해결 방법을 제공합니다.
 
-## 기능 제한 사항 {#functional-limitations}
+## 기능 제한 {#functional-limitations}
 
 작성자는 편집기를 사용하여 페이지를 작성할 때 다음과 같은 기능 제한 사항이 있을 수 있습니다.
 
 ### 링크가 활성화되지 않음 {#links-not-active}
 
-페이지를 [편집할](/help/sites-cloud/authoring/fundamentals/editing-content.md)때 링크가 활성화되지 않습니다.
+[페이지](/help/sites-cloud/authoring/fundamentals/editing-content.md)를 편집하면 링크가 활성화되지 않습니다.
 
-* [미리 **보기** 모드로](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) 전환하여 컨텐츠의 링크를 사용하여 탐색할 수 있습니다.
+* [미리  **** ](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) 보기 모드로 전환하여 컨텐츠의 링크를 사용하여 탐색합니다.
 
 ### 구조 페이지 {#structure-pages}
 
-페이지 이름을 지정할 수 없습니다 `structure`. 이름이 지정된 페이지는 페이지 편집기에서 편집할 수 `structure` 없습니다.
+페이지 이름은 `structure`으로 지정할 수 없습니다. 페이지 편집기에서 `structure`이라는 페이지를 편집할 수 없습니다.
 
 ## CSS 제한 사항 {#css-limitations}
 
@@ -42,13 +42,13 @@ ht-degree: 1%
 
 `vh` iframe 높이는 AEM에서 자동으로 조정되어야 하므로 단위가 지원되지 않습니다.
 
-### 배경 이미지 수정 {#fixed-background-images}
+### 배경 이미지 {#fixed-background-images} 수정
 
 배경 이미지가 iframe 내에 포함되어 있기 때문에 스크롤 시 고정된 배경 이미지가 고정으로 표시되지 않을 수 있습니다.
 
-* 헤더 **막대** 작업에서 페이지를 게시됨으로 보기를 선택하면 페이지가 제대로 표시됩니다.
+* 헤더 막대 작업에서 **게시됨으로 페이지 보기**&#x200B;를 선택하면 페이지가 제대로 표시됩니다.
 
-### 100% Height {#height}
+### 100% 높이 {#height}
 
 100% 높이는 페이지의 본문 요소에서 지원되지 않습니다.
 
