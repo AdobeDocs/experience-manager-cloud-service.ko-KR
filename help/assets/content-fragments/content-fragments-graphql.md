@@ -2,9 +2,9 @@
 title: GraphQL을 사용한 컨텐츠 조각을 사용한 헤드리스 컨텐츠 전달
 description: 헤드리스 컨텐츠 전달을 위해 GraphQL을 사용하는 Cloud Service으로 Adobe Experience Manager(AEM)의 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -129,3 +129,7 @@ AEM GraphQL API 구현은 [GraphQL Java 라이브러리](https://graphql.org/cod
 ## AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
 AEM GraphQL API 사용에 대한 자세한 내용은 [AEM에서 GraphQL을 사용하는 학습 - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)을 참조하십시오.
+
+## 자습서 - AEM 헤드리스 및 GraphQL 시작하기
+
+실습 위주의 튜토리얼을 찾고 계십니까? 헤드가 없는 CMS 시나리오에서 AEM GraphQL API를 사용하여 컨텐츠를 작성하고 노출하는 방법을 소개하는 [AEM 헤드리스 시작하기 및 GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) 엔드 투 엔드 튜토리얼을 확인하십시오.
