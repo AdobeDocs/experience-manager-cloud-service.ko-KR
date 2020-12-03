@@ -3,9 +3,9 @@ title: 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는  [!DNL Adobe Experience Manager Assets] 의 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '928'
 ht-degree: 2%
 
 ---
@@ -48,17 +48,19 @@ ht-degree: 2%
 
    ![보고서 유형 선택](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
-   >**[!UICONTROL 자산 다운로드됨]** 보고서를 생성하기 전에 자산 다운로드 서비스가 활성화되어 있는지 확인하십시오. 웹 콘솔(`https://[aem_server]:[port]/system/console/configMgr`)에서 **[!UICONTROL Day CQ DAM 이벤트 레코더]** 구성을 열고 아직 선택되지 않은 경우 이벤트 유형에서 **[!UICONTROL 자산 다운로드(DOWNLOADED)]** 옵션을 선택합니다.
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
-   >[!NOTE]
-   >
-   >기본적으로 콘텐츠 조각 및 링크 공유는 자산 [!UICONTROL 다운로드] 보고서에 포함됩니다. 링크 공유 보고서를 만들거나 콘텐트 조각을 다운로드 보고서에서 제외하려면 적절한 옵션을 선택합니다.
+>[!NOTE]
+>
+>기본적으로 콘텐츠 조각 및 링크 공유는 자산 [!UICONTROL 다운로드] 보고서에 포함됩니다. 링크 공유 보고서를 만들거나 콘텐트 조각을 다운로드 보고서에서 제외하려면 적절한 옵션을 선택합니다.
 
-   >[!NOTE]
-   >
-   >[!UICONTROL 다운로드] 보고서에는 개별적으로 선택한 후 다운로드되거나 빠른 작업을 사용하여 다운로드한 자산에 대한 세부 정보만 표시됩니다. 그러나 다운로드한 폴더에 있는 자산의 세부 사항은 포함되지 않습니다.
+>[!NOTE]
+>
+>[!UICONTROL 다운로드] 보고서에는 개별적으로 선택한 후 다운로드되거나 빠른 작업을 사용하여 다운로드한 자산에 대한 세부 정보만 표시됩니다. 그러나 다운로드한 폴더에 있는 자산의 세부 사항은 포함되지 않습니다.
 
 1. 보고서가 저장되는 CRX 저장소의 제목, 설명, 축소판 및 폴더 경로와 같은 보고서 세부 사항을 구성합니다. 기본적으로 폴더 경로는 `/content/dam`입니다. 다른 경로를 지정할 수 있습니다.
 
@@ -139,11 +141,18 @@ ht-degree: 2%
 
 1. 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 
-## 제거 서비스 {#configure-purging-service} 구성
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
-더 이상 필요하지 않은 보고서를 제거하려면 웹 콘솔에서 DAM 보고서 삭제 서비스를 구성하여 해당 수량 및 연령을 기준으로 기존 보고서를 삭제합니다.
+## Configure purging service {#configure-purging-service}
 
-1. `https://[aem_server]:[port]/system/console/configMgr`에서 웹 콘솔(구성 관리자)에 액세스합니다.
-1. **[!UICONTROL DAM 보고서 삭제 서비스]** 구성을 엽니다.
-1. `scheduler.expression.name` 필드에서 제거 서비스의 빈도(시간 간격)를 지정합니다. 보고서에 대한 연령 및 수량 임계값을 구성할 수도 있습니다.
-1. 변경 사항을 저장합니다.
+To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
+
+1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
+1. Save the changes.
+-->
+
+## 문제 해결 정보, 팁 및 제한 사항 {#best-practices-and-limitations}
+
+* 디스크 사용량 보고서가 생성되지 않고 [!DNL Dynamic Media]을 사용하고 있는 경우 모든 자산이 올바르게 진행되는지 확인하십시오. 해결하려면 자산을 재처리한 후 보고서를 다시 생성합니다.
