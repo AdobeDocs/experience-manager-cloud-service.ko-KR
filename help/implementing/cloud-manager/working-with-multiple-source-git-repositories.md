@@ -2,9 +2,9 @@
 title: 여러 소스 Git 리포지토리를 사용한 작업
 description: 여러 소스 Git 리포지토리를 사용한 작업 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
+source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 1. Cloud Manager Git 저장소의 루트 Maven 포m의 새 디렉토리에 대한 참조를 추가합니다.
 
 
-## 부록 A:샘플 GitHub 작업 {#sample-github-action}
+## 샘플 GitHub 작업 {#sample-github-action}
 
 기본 분기에 푸시를 한 다음 Cloud Manager의 Git 저장소의 하위 디렉토리에 푸시하여 트리거되는 샘플 GitHub 작업입니다. Cloud Manager의 Git 리포지토리에 연결하고 푸시할 수 있으려면 GitHub 작업에 `MAIN_USER` 및 `MAIN_PASSWORD` 두 개의 비밀이 제공되어야 합니다.
 
@@ -117,7 +117,7 @@ jobs:
 >[!NOTE]
 >위의 스크립트에서는 `git add`을(를) 사용하여 제거가 포함되어 있다고 가정하는 저장소를 업데이트합니다. 이 작업은 Git의 기본 구성에 따라 `git add --all`로 대체되어야 합니다.
 
-## 부록 B:샘플 젠킨스 작업 {#sample-jenkins-job}
+## 샘플 젠킨스 작업 {#sample-jenkins-job}
 
 이 스크립트는 Jenkins 작업 또는 유사한 작업에서 사용할 수 있는 샘플 스크립트입니다. Git 저장소의 변경으로 트리거됩니다. Jenkins 작업은 해당 프로젝트 또는 분기의 최신 상태를 확인한 다음 이 스크립트를 트리거합니다.
 
