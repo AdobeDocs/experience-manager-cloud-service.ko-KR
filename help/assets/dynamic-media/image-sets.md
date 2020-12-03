@@ -2,9 +2,9 @@
 title: 이미지 세트
 description: Dynamic Media에서 이미지 세트로 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2070'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,9 @@ ht-degree: 0%
 
 세트를 만드는 데 문제가 있는 경우 [다이내믹 미디어 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)의 이미지 및 세트를 참조하십시오.
 
-## 이미지 세트에서 자산 업로드 {#uploading-assets-in-image-sets}
+## 이미지 세트에 대한 자산 업로드 {#uploading-assets-in-image-sets}
 
-먼저 이미지 세트에 대한 이미지를 업로드합니다. 이미지 세트 뷰어에서 이미지를 확대/축소할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 확대/축소 세부 사항을 최적화하려면 이미지가 가장 큰 차원에서 2000픽셀 이상이어야 합니다. Dynamic Media는 각 이미지를 최대 25메가픽셀까지 렌더링할 수 있습니다. 예를 들어 5000 x 5000메가픽셀 이미지 또는 최대 25메가픽셀의 기타 크기 조합을 사용할 수 있습니다.
+먼저 이미지 세트에 대한 이미지 자산을 업로드합니다. 이미지 세트 뷰어에서 이미지를 확대/축소할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 확대/축소 세부 사항을 최적화하려면 이미지가 가장 큰 차원에서 2000픽셀 이상이어야 합니다. Dynamic Media는 각 이미지를 최대 25메가픽셀까지 렌더링할 수 있습니다. 예를 들어 5000 x 5000메가픽셀 이미지 또는 최대 25메가픽셀의 기타 크기 조합을 사용할 수 있습니다.
 
 이미지 세트는 많은 이미지 파일 포맷을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
 
