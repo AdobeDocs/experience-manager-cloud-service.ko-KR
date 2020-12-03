@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 4687054b049263c109591884a0368dfa76346298
+source-git-commit: 737c7473e97279a524cbb5809634c2c2dcfc8826
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '554'
 ht-degree: 71%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 71%
       + [사용자 지정 코드 품질 규칙](cloud-manager/custom-code-quality-rules.md)
       + [기능 테스트](/help/implementing/cloud-manager/functional-testing.md)
       + [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
+      + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
    + [로그 액세스 및 관리](cloud-manager/manage-logs.md)
    + [알림 이해](cloud-manager/notifications.md)
 + 코드 관리 {#managing-code}
