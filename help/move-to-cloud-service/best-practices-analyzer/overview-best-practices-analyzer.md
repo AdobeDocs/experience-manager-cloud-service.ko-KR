@@ -2,15 +2,20 @@
 title: 모범 사례 분석기 개요
 description: 모범 사례 분석기 개요
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # 개요 {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="모범 사례 분석기 개요"
+>abstract="모범 사례 분석기는 AEM 우수 사례를 따르지 않는 영역을 지정하여 현재 AEM 구현에 대한 평가를 제공합니다. 또한 AEM 모범 사례를 채택하기 위한 다음 단계에 대한 지침을 제공합니다. 또한 기존 Adobe Experience Manager(AEM) 배포에서 AEM으로 Cloud Service으로 전환할 준비를 평가하는 프로세스를 가속화할 수 있습니다."
 
 모범 사례 분석기는 AEM 우수 사례를 따르지 않는 영역을 지정하여 현재 AEM 구현에 대한 평가를 제공합니다. 또한 AEM 모범 사례를 채택하기 위한 다음 단계에 대한 지침을 제공합니다. 또한 기존 Adobe Experience Manager(AEM) 배포에서 AEM으로 Cloud Service으로 전환할 준비를 평가하는 프로세스를 가속화할 수 있습니다.
 
