@@ -2,9 +2,9 @@
 title: 스핀 세트
 description: Dynamic Media에서 스핀 세트를 사용하여 작업하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ## 스핀 세트에 대한 자산 업로드 {#uploading-assets-for-spin-sets}
 
-1차원 스핀 세트의 경우 최소 8-12개의 샷과 2차원 스핀 세트의 경우 16-24개의 샷이 필요합니다. 항목이 회전하고 뒤집어지고 있다는 인상을 주기 위해 샷을 정기적으로 촬영해야 합니다. 예를 들어 1차원 회전 집합에 12개의 샷이 있는 경우 각 샷에 대해 30도(360/12)를 회전합니다.
+1차원 스핀 세트에 필요한 최소 8-12개의 샷이 필요합니다. 항목이 회전하고 뒤집어지고 있다는 인상을 주기 위해 샷을 정기적으로 촬영해야 합니다. 예를 들어 1차원 회전 집합에 12개의 샷이 있는 경우 각 샷에 대해 30도(360/12)를 회전합니다.
 
 [AEM Assets의 다른 자산을 업로드하듯이 회전 집합에 대한 이미지를 업로드할 수 있습니다](/help/assets/manage-digital-assets.md).
 
