@@ -2,7 +2,7 @@
 title: SPA 블루프린트
 description: 본 문서에서는 SPA 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 AEM 프레임워크에서 충족해야 하는 프레임워크에 영향을 받지 않는 일반적인 계약을 설명합니다.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
