@@ -1,25 +1,25 @@
 ---
 title: 폴더 메타데이터 스키마
-description: AEM Assets에서 자산 폴더에 대한 메타데이터 스키마를 만드는 방법 살펴보기
+description: ' [!DNL Experience Manager Assets]에서 자산 폴더의 메타데이터 스키마를 만드는 방법에 대해 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dc5cec192a70413e0ebcc27eb5e58577079ae93b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 2%
+source-wordcount: '1029'
+ht-degree: 4%
 
 ---
 
 
 # 폴더 메타데이터 스키마 {#folder-metadata-schema}
 
-Adobe Experience Manager(AEM) 자산을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더의 메타데이터 스키마를 생성할 수 있습니다.
+[!DNL Adobe Experience Manager Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 
 
 ## {#add-a-folder-metadata-schema-form} 폴더 메타데이터 스키마 추가
 
 폴더 메타데이터 스키마 Forms 편집기를 사용하여 폴더의 메타데이터 스키마를 만들고 편집할 수 있습니다.
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 폴더 메타데이터 스키마]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 폴더 메타데이터 스키마]**&#x200B;로 이동합니다.
 1. 폴더 메타데이터 스키마 Forms 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 탭/클릭합니다.
 1. 양식의 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 탭/클릭합니다. 새 스키마 양식이 스키마 Forms 페이지에 나열됩니다.
 
@@ -138,7 +138,7 @@ Adobe Experience Manager(AEM) 자산을 사용하면 폴더 속성 페이지에 
 
 ### 폴더 메타데이터 스키마 페이지 {#assign-to-a-schema-from-the-folder-metadata-schema-page}에서 스키마에 할당
 
-1. AEM 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** **[!UICONTROL 폴더 메타데이터 스키마]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** **[!UICONTROL 폴더 메타데이터 스키마]**&#x200B;로 이동합니다.
 1. 폴더 메타데이터 스키마 Forms 페이지에서 폴더에 적용할 스키마 양식을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 폴더에 적용]**&#x200B;을 탭/클릭합니다.
 
@@ -155,7 +155,7 @@ Adobe Experience Manager(AEM) 자산을 사용하면 폴더 속성 페이지에 
 
 폴더를 만들 때 폴더 메타데이터 스키마를 할당할 수 있습니다. 시스템에 폴더 메타데이터 스키마가 하나 이상 있으면 **[!UICONTROL 폴더 만들기]** 대화 상자에 추가 목록이 표시됩니다. 원하는 스키마를 선택할 수 있습니다. 기본적으로 스키마가 선택되지 않습니다.
 
-1. AEM Assets 사용자 인터페이스에서 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 탭/클릭합니다.
+1. [!DNL Experience Manager Assets] 사용자 인터페이스에서 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 탭/클릭합니다.
 1. 폴더의 제목과 이름을 지정합니다.
 1. 폴더 메타데이터 스키마 목록에서 원하는 스키마를 선택합니다. 그런 다음 **[!UICONTROL 만들기]**&#x200B;를 탭/클릭합니다.
 
