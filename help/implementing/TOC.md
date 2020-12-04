@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 737c7473e97279a524cbb5809634c2c2dcfc8826
+source-git-commit: fd3ab969d9fb433ca2db68a5919fd0a0e9181e14
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 71%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,6 +65,10 @@ ht-degree: 71%
          + [숨기기 조건 사용](developing/components/hide-conditions.md)
       + [AEM 태깅 프레임워크](/help/implementing/developing/introduction/tagging-framework.md)
       + [AEM 애플리케이션에 Tagging 작성](/help/implementing/developing/introduction/tagging-applications.md)
+      + 검색 {#search}
+         + [Query Builder API](/help/implementing/developing/introduction/query-builder-api.md)
+         + [Query Builder 설명 참조](/help/implementing/developing/introduction/query-builder-predicates.md)
+         + [사용자 지정 설명 평가기 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
    + 하이브리드 AEM 개발 {#hybrid}
       + [AEM이 설치된 하이브리드 및 SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
