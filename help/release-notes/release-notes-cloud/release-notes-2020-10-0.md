@@ -2,13 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 사용하십시오.'
 translation-type: tm+mt
-source-git-commit: 841069f35539a49c6ee67699bf3a476cf1c9da41
+source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1044'
 ht-degree: 17%
 
 ---
-
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 릴리스 노트 {#release-notes}
@@ -32,8 +31,6 @@ Cloud Service 2020.10.0으로 [!DNL Adobe Experience Manager]에 대한 릴리�
 
 ## [!DNL Adobe Experience Manager Assets] cloud service  {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
-
 * **[!DNL Adobe Sensei]강력한 비디오 스마트 태그 지정**:DAM 사용자는 AI 모델을 활용하여 객체 및 특정 태그의 비디오 컨텐츠를 분석함으로써 태그를 추가하는 데 걸리는 시간을 줄이고 다양한 정보를 활용하여 고객에게 최적의 경험을 전달할 수 있습니다. [스마트 태그 비디오 자산](/help/assets/smart-tags-video-assets.md)을 참조하십시오.
 
 * **향상된 브랜드 포털**:다음 새로운 기능 등을 에서 사용할 수 있습니다 [!DNL Brand Portal]. 자세한 내용은 [[!DNL Brand Portal] 릴리스 노트](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)를 참조하십시오.
@@ -45,13 +42,7 @@ Cloud Service 2020.10.0으로 [!DNL Adobe Experience Manager]에 대한 릴리�
 
 * **[!DNL Adobe Asset Link]버전 2.1**:새 버전의  [Adobe 에셋 ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 링크 익스텐션 [!DNL Adobe Photoshop]을 사용할 수  [!DNL Adobe Illustrator]있으며 사용할 수  [!DNL Adobe InDesign] 있습니다. 2020년 10월에 릴리스된 최신 [!DNL Adobe Creative Cloud] 응용 프로그램과 호환성이 추가됩니다.
 
-* **[!DNL Assets]WebP 파일 지원**: [!DNL Assets] 이제 Cloud Service에서 WebP 이미지 형식을 지원합니다. WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별할 수 없으며 파일 크기가 훨씬 작습니다. 자산의 파일 크기가 낮아지면 페이지 로드 시간이 단축되고 컨텐츠 작성자가 보다 빠른 웹 경험을 제공할 수 있습니다.
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]WebP 파일 지원**: [!DNL Assets] 이제 Cloud Service에서 WebP 이미지 형식을 지원합니다. WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별할 수 없으며 파일 크기가 훨씬 작습니다. 자산의 파일 크기가 낮아지면 페이지 로드 시간이 단축되고 컨텐츠 작성자가 보다 빠른 웹 경험을 제공할 수 있습니다. 처리 프로필[에서 WebP를 사용하는 방법을 참조하십시오.](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)
 
 ## Adobe Experience Manager 커머스를 Cloud Service {#cloud-services-commerce}
 
@@ -80,7 +71,6 @@ Content to come
 * 최대 절전 모드인 환경에서 이제 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
 
 * 이제 클라우드 관리자 빌드 컨테이너는 Java 8 또는 Java 11을 사용하여 프로젝트를 컴파일할 수 있습니다. Java 11에 대한 지원은 Maven 툴체인 시스템에서 제공합니다.
-
 
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
 
@@ -122,4 +112,3 @@ Content to come
 ### 버그 수정 {#ctt-bug-fixes}
 
 * 마이그레이션 세트에 부분적으로 유사한 파일 이름이 있는 경로가 포함된 경우 컨텐츠 전송 도구가 콘텐트 파일을 건너뛰었습니다. 이 문제가 해결되었습니다.
-
