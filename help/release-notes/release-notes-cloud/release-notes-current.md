@@ -2,9 +2,9 @@
 title: 'Cloud Service의 현재 릴리스 노트입니다. [!DNL Adobe Experience Manager] '
 description: 'Cloud Service의 현재 릴리스 노트입니다. [!DNL Adobe Experience Manager] '
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1269'
 ht-degree: 3%
 
 ---
@@ -25,9 +25,9 @@ Cloud Service 2020.11.0으로 [!DNL Adobe Experience Manager]에 대한 릴리�
 
 * **[계층 관리](/help/sites-cloud/authoring/launches/managing-pages.md)  및  [향후 타임워프](/help/sites-cloud/authoring/launches/preview.md)** 시작:론치 내에서 페이지를 추가/제거하기 위한 새로운 UI와 타임워프가 있는 검색 사이트는 론치에서 향후 상태를 보여줍니다.
 
-* **롤아웃에 사용할 수 있는 Live Copy 페이지 정렬**:이름,  [!UICONTROL 마지막 수정 날짜] 및  [!UICONTROL 마지막 롤아웃 날짜 속성을 사용하여 롤아웃할 수 있는 Live Copy 페이지를 정렬하는 새로운 ]옵션  입니다. 페이지에 대한 [!UICONTROL 마지막 롤아웃 날짜]는 새 속성이 도입되었습니다.
+* **[확장 컨텐츠 조각 모델 및 편집기](/help/assets/content-fragments/content-fragments-models.md)**:다양한 데이터 유형에 대한 입력 유효성 검사, 새로운 양식 시각화 기능이 추가된 열거형 데이터 유형, 자산 UI에서 컨텐츠 조각 모델 이름이 표시되고 검색 가능해집니다.
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **롤아웃에 사용할 수 있는 Live Copy 페이지 정렬**:이름,  [!UICONTROL 마지막 수정 날짜] 및  [!UICONTROL 마지막 롤아웃 날짜 속성을 사용하여 롤아웃할 수 있는 Live Copy 페이지를 정렬하는 새로운 ]옵션  입니다. 페이지에 대한 [!UICONTROL 마지막 롤아웃 날짜]는 새 속성이 도입되었습니다.
 
 ## [!DNL Adobe Experience Manager Assets] cloud service  {#assets}
 
