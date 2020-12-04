@@ -3,9 +3,9 @@ title: 자산, 폴더 및 컬렉션을 링크로 공유
 description: 이 문서에서는 Experience Manager 자산 내에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '734'
 ht-degree: 1%
 
 ---
@@ -152,14 +152,16 @@ Before you can share assets as links, configure the email service.
 1. Click/tap **[!UICONTROL Save]**.
 -->
 
-### 최대 데이터 크기 {#maxdatasize} 구성
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+### Configure maximum data size {#maxdatasize}
 
-링크 공유 기능을 사용하여 공유된 링크에서 자산을 다운로드할 때 AEM은 저장소의 자산 계층 구조를 압축한 다음 ZIP 파일의 자산을 반환합니다. 그러나 ZIP 파일에서 압축할 수 있는 데이터 양에 대한 제한이 없는 경우 엄청난 양의 데이터가 압축될 수 있으므로 JVM에서 메모리 오류가 발생하지 않습니다. 이러한 상황에서 시스템을 잠재적 서비스 거부 공격으로부터 보호하려면 다운로드된 파일의 최대 크기를 구성할 수 있습니다. 압축되지 않은 자산 크기가 구성된 값을 초과하는 경우 자산 다운로드 요청이 거부됩니다. 기본값은 100MB입니다.
+When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. AEM 로고를 클릭/탭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;으로 이동합니다.
-1. 웹 콘솔에서 **[!UICONTROL 일 CQ DAM 애드혹 자산 공유 프록시 서블릿]** 구성을 찾습니다.
-1. 편집 모드에서 구성을 열고 **[!UICONTROL 최대 컨텐트 크기(압축되지 않음)]** 매개 변수의 값을 수정합니다.
-1. 변경 사항을 저장합니다.
+1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
+1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. Save the changes.
+-->
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
