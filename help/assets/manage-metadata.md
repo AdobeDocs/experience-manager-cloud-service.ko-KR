@@ -4,9 +4,9 @@ description: '메타데이터의 유형과 메타데이터에 따라 자산을 �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1850'
 ht-degree: 0%
 
 ---
@@ -152,13 +152,16 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
 >
 >하나의 처리 프로필만 폴더에 적용할 수 있습니다. 한 폴더의 자산에 여러 처리를 적용하려면 단일 처리 프로필에 더 많은 옵션을 추가하십시오. 예를 들어 단일 프로필에서는 표현물을 생성하고, 자산을 트랜스코딩하고, 사용자 지정 메타데이터를 생성하는 등의 작업을 할 수 있습니다. 각 작업에 대해 MIME 유형 필터를 적용하여 필요한 파일 형식에 대해 적절한 작업이 트리거되도록 할 수 있습니다.
 
-## 벌크 메타데이터 업데이트 {#configlimit} 제한 구성
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-AEM은 DOS와 같은 상황을 방지하기 위해 Sling 요청에서 지원되는 매개 변수의 수를 제한합니다. 한 번에 많은 자산의 메타데이터를 업데이트할 때 한도에 도달해도 메타데이터가 더 많은 자산에 대해 업데이트되지 않습니다. AEM은 로그에 다음 경고를 생성합니다.
+## Configure limit for bulk metadata update {#configlimit}
+
+To prevent DOS-like situation, [!DNL Experience Manager] limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. [!DNL Experience Manager] generates the following warning in the logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-제한을 변경하려면 웹 콘솔( **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**)에 액세스하고 **[!UICONTROL Apache Sling 요청 매개 변수 처리]**&#x200B;의 최대 POST 매개 변수&#x200B;]**의 값을 변경합니다. 구성**[!UICONTROL 
+To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+-->
 
 ## 메타데이터 스키마 {#metadata-schemata}
 
