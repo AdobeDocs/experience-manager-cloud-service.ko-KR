@@ -3,9 +3,9 @@ title: 자산 통찰력
 description: 자산 인사이트 기능을 사용하여 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '799'
 ht-degree: 1%
 
 ---
@@ -70,44 +70,47 @@ ht-degree: 1%
 1. 도구 모음에서 레이아웃 아이콘을 탭/클릭한 다음 **[!UICONTROL 인사이트 보기]**&#x200B;를 선택합니다.
 1. 이 페이지에는 자산의 사용 점수가 표시됩니다. 다양한 자산의 등급을 비교하고 인사이트를 도출할 수 있습니다.
 
-## 백그라운드 작업 예약 {#scheduling-background-job}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-자산 인사이트는 주기적으로 Adobe Analytics 보고서 세트의 자산 사용 데이터를 가져옵니다. 기본적으로 자산 통찰력은 오전 2시에 백그라운드 작업을 실행하여 데이터를 가져옵니다. 그러나 웹 콘솔에서 **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스를 구성하여 빈도와 시간을 모두 수정할 수 있습니다.
+## Schedule background job {#scheduling-background-job}
 
-1. AEM 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;으로 이동합니다.
-1. **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스 구성을 엽니다.
+Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. 속성 스케줄러 식에서 원하는 스케줄러 빈도와 작업에 대한 시작 시간을 지정합니다. 변경 사항을 저장합니다.
+1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
+-->
 
 ## 자산 인사이트 구성 {#configure-asset-insights}
 
-Adobe Experience Manager(AEM) 자산은 Adobe Analytics의 타사 웹 사이트에서 사용하는 AEM 자산에 대한 사용 데이터를 가져옵니다. 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 Adobe Analytics과 통합되도록 기능을 구성합니다.
+[!DNL Experience Manager Assets] 타사 웹 사이트에서 사용되는 디지털 자산에 대한 사용 데이터를 가져옵니다 [!DNL Adobe Analytics]. 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 [!DNL Adobe Analytics]과(와) 통합되도록 기능을 구성하십시오.
 
 >[!NOTE]
 >
 >인사이트는 이미지만 지원되고 제공됩니다.
 
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]**&#x200B;을 클릭합니다.
+1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]**&#x200B;을 클릭합니다.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. **[!UICONTROL 인사이트 구성]** 카드를 클릭합니다.
 1. 마법사에서 데이터 센터를 선택하고 조직의 이름, 사용자 이름 및 공유 암호를 비롯한 자격 증명을 제공합니다.
 
-   ![AEM에서 자산 통찰력에 대한 Adobe Analytics 구성](assets/insights_config2.png)
+   ![자산 통찰력에 대한 Adobe Analytics 구성  [!DNL Experience Manager]](assets/insights_config2.png)
 
-   *그림:AEM에서 자산 통찰력에 대한 Adobe Analytics 구성*
+   *그림:자산 통찰력에 대한 Adobe Analytics 구성[!DNL Experience Manager]*
 
-1. **[!UICONTROL 인증]**&#x200B;을 클릭/탭합니다. AEM에서 자격 증명을 인증한 후, **[!UICONTROL 보고서 세트]** 목록에서 자산 통찰력으로 데이터를 가져올 Adobe Analytics 보고서 세트를 선택합니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
-1. AEM에서 보고서 세트를 설정한 후 **[!UICONTROL Done]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 인증]**&#x200B;을 클릭/탭합니다. [!DNL Experience Manager] 자격 증명을 인증한 후 **[!UICONTROL 보고서 세트]** 목록에서 자산 통찰력을 가져올 Adobe Analytics 보고서 세트를 선택합니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. [!DNL Experience Manager]이 보고서 세트를 설정한 후 **[!UICONTROL Done]**&#x200B;을 탭합니다.
 
 ### 페이지 추적기 {#page-tracker}
 
-Adobe Analytics 계정을 구성하면 페이지 추적기 코드가 자동으로 생성됩니다. 자산 인사이트를 사용하여 타사 웹 사이트에서 사용되는 AEM 자산을 추적하려면 웹 사이트 코드에 페이지 추적기 코드를 포함시키십시오. AEM Assets의 페이지 추적기 유틸리티를 사용하여 페이지 추적기 코드를 생성합니다.<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Adobe Analytics 계정을 구성하면 페이지 추적기 코드가 자동으로 생성됩니다. 자산 통찰력이 타사 웹 사이트에서 사용되는 [!DNL Experience Manager] 자산을 추적하도록 하려면 웹 사이트 코드에 페이지 추적기 코드를 포함시키십시오. 자산의 페이지 추적기 유틸리티를 사용하여 페이지 추적기 코드를 생성합니다.<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]**&#x200B;을 클릭합니다.
+1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]**&#x200B;을 클릭합니다.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -121,7 +124,7 @@ Adobe Analytics 계정을 구성하면 페이지 추적기 코드가 자동으�
 Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
 
 1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
-1. Download the sample AEM Assets package from below and install the package from CRXDE package manager.
+1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
 
@@ -137,6 +140,6 @@ Using the demo package, you can enable Adobe Asset Insights to capture data from
 
    >[!NOTE]
    >
-   >The external web page can be in AEM itself.
+   >The external web page can be in [!DNL Experience Manager] itself.
 
 -->
