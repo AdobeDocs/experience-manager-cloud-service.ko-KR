@@ -3,9 +3,9 @@ title: 자산 다운로드
 description: ' [!DNL Adobe Experience Manager Assets] 에서 에셋을 다운로드하고 다운로드 기능을 활성화하거나 비활성화합니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 4%
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## AEM 인터페이스 {#download-in-aem}을(를) 사용하여 에셋 다운로드
+## [!DNL Experience Manager] 인터페이스 {#download-in-aem}를 사용하여 에셋 다운로드
 
 비동기 다운로드 서비스는 대규모 자산을 매끄럽게 다운로드하는 프레임워크를 제공합니다. 더 작은 파일은 유저 인터페이스에서 실시간으로 다운로드됩니다. 대용량 파일은 비동기적으로 다운로드되며 사용자는 받은 편지함의 Experience Manager 알림을 통해 완료 사실을 알 수 있습니다. [Experience Manager 받은 편지함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)에 대한 이해를 참조하십시오.
 
