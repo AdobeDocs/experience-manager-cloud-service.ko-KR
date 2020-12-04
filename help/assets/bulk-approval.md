@@ -3,9 +3,9 @@ title: 폴더 및 컬렉션의 자산 검토
 description: 폴더 또는 컬렉션 내의 에셋에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 얻을 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '793'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 폴더 및 컬렉션의 자산 검토 {#review-folder-assets-and-collections}
 
-Adobe Experience Manager(AEM) 자산을 사용하여 폴더 또는 컬렉션에 있는 자산에 대한 임시 검토 워크플로우를 설정할 수 있습니다. 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 요청할 수 있습니다. 검토 워크플로우를 프로젝트와 연결하거나 독립적인 검토 작업을 만들 수 있습니다.
+Adobe Experience Manager 자산을 사용하여 폴더 또는 컬렉션에 있는 자산에 대한 임시 검토 워크플로우를 설정할 수 있습니다. 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 요청할 수 있습니다. 검토 워크플로우를 프로젝트와 연결하거나 독립적인 검토 작업을 만들 수 있습니다.
 
 자산을 공유하면 검토자가 이를 승인하거나 거부할 수 있습니다. 알림은 다양한 작업 완료와 관련하여 의도한 수신자에게 통보하기 위해 워크플로우의 다양한 단계에서 전송됩니다. 예를 들어, 폴더 또는 컬렉션을 공유하면 검토자는 검토용으로 폴더/컬렉션이 공유되었다는 알림을 받습니다.
 
@@ -47,7 +47,7 @@ Adobe Experience Manager(AEM) 자산을 사용하여 폴더 또는 컬렉션에 
    ![review_name](assets/review_name.png)
 
 1. **[!UICONTROL 제출]**&#x200B;을 탭/클릭한 다음 **[!UICONTROL 완료]**&#x200B;를 탭/클릭하여 확인 메시지를 닫습니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
-1. AEM Assets에 승인자로 로그인하고 자산 UI로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 클릭/탭한 다음 목록에서 검토 작업을 선택합니다.
+1. [!DNL Experience Manager Assets]에 승인자로 로그인하고 자산 UI로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 클릭/탭한 다음 목록에서 검토 작업을 선택합니다.
 
    ![알림](assets/notification.png)
 
@@ -91,7 +91,7 @@ Adobe Experience Manager(AEM) 자산을 사용하여 폴더 또는 컬렉션에 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. **[!UICONTROL 제출]**&#x200B;을 탭/클릭한 다음 **[!UICONTROL 완료]**&#x200B;를 탭/클릭하여 확인 메시지를 닫습니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
-1. AEM Assets에 승인자로 로그인하고 자산 콘솔로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 탭/클릭한 다음 목록에서 검토 작업을 선택합니다.
+1. [!DNL Experience Manager Assets]에 승인자로 로그인하고 자산 콘솔로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림]** 아이콘을 탭/클릭한 다음 목록에서 검토 작업을 선택합니다.
 1. **[!UICONTROL 검토 작업]** 페이지에서 검토 작업의 세부 사항을 검토한 다음 **[!UICONTROL 검토]**&#x200B;를 탭/클릭합니다.
 1. 컬렉션의 모든 에셋이 검토 페이지에 표시됩니다. 자산을 선택하고 **[!UICONTROL 승인/거부]** 아이콘을 탭/클릭하여 자산을 적절히 승인하거나 거부합니다.
 
