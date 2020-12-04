@@ -3,7 +3,7 @@ title: 일괄처리 집합 사전 설정
 description: Dynamic Media에서 일괄 세트 사전 설정을 사용하여 이미지 세트 및 스핀 세트 생성을 자동화하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 1. 배치 세트 사전 설정을 만듭니다. 이미지 세트 또는 스핀 세트[에 대한 배치 집합 사전 설정 만들기를 참조하십시오.](#creating-bsp)
 1. 새 자산 폴더를 만들거나 기존 자산 폴더를 사용하고 [!DNL Dynamic Media]에 동기화되었는지 확인합니다. [폴더 만들기](/help/assets/manage-digital-assets.md#creating-folders)를 참조하십시오.
 1. 자산 폴더에 배치 세트 사전 설정을 적용합니다. 폴더[에 배치 집합 사전 설정 적용 정보를 참조하십시오.](#apply-bsp)
-1. 자산 폴더에 이미지를 업로드합니다. [이미지 세트에 대한 자산 업로드](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [스핀 세트에 대한 자산 업로드](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) 또는 [Adobe Experience Manager에 디지털 자산 추가](#add-assets-to-experience-manager)를 참조하십시오.
+1. 자산 폴더에 이미지를 업로드합니다. [이미지 세트에 대한 자산 업로드](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [스핀 세트에 대한 자산 업로드](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) 또는 [Adobe Experience Manager에 디지털 자산 추가](/help/assets/add-assets.md#add-assets-to-experience-manager)를 참조하십시오.
 1. 이미지 세트 또는 스핀 세트를 만듭니다. [이미지 세트](/help/assets/dynamic-media/image-sets.md) 또는 [스핀 세트](/help/assets/dynamic-media/spin-sets.md)를 참조하십시오.
 1. 이미지 세트 또는 스핀 세트를 게시합니다. [다이내믹 미디어 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
@@ -157,7 +157,7 @@ ht-degree: 1%
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. **[!UICONTROL 배치 집합 사전 설정]**&#x200B;의 **[!UICONTROL 사전 설정 이름]** 드롭다운 목록 상자에서 적용할 배치 집합 사전 설정의 이름을 선택합니다. 위의 스크린샷은 두 개의 일괄 세트 사전 설정이 폴더에 적용되었음을 보여줍니다.
+1. **[!UICONTROL 배치 집합 사전 설정]**&#x200B;의 **[!UICONTROL 사전 설정 이름]** 드롭다운 목록 상자에서 적용할 배치 집합 사전 설정의 이름을 선택합니다. 위 스크린샷은 두 개의 일괄 세트 사전 설정이 폴더에 적용되었음을 보여줍니다.
 
    **[!UICONTROL 사전 설정 이름]** 드롭다운 목록 상자에 일괄 세트 사전 설정 이름이 없는 경우, 아직 배치 집합 사전 설정을 만들지 않았음을 의미합니다. 이미지 세트 또는 스핀 세트[에 대한 배치 집합 사전 설정 만들기를 참조하십시오.](#creating-bsp)
 
