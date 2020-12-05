@@ -1,11 +1,11 @@
 ---
 title: 메타데이터를 편집하거나 추가하는 방법
-description: 자산 메타데이터를 편집할 수 있는 다양한 방법으로 AEM Assets의 자산 메타데이터에 대해 알아봅니다.
+description: 에셋 메타데이터를 편집할 수 있는 다양한 방법으로 [!DNL Experience Manager Assets] 의 에셋 메타데이터에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '422'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 메타데이터는 검색할 수 있는 자산에 대한 추가 정보입니다. 이미지를 업로드할 때 자동으로 압축이 해제됩니다. 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
 
-기업은 제어 및 안정적인 메타데이터 어휘가 필요하기 때문에 AEM Assets은 새로운 메타데이터 속성을 임시 추가하는 것을 허용하지 않습니다. 작성자는 에셋에 대한 새 메타데이터 필드를 추가할 수 없지만 개발자는 이를 수행할 수 있습니다. [자산](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
+회사는 제어 및 안정적인 메타데이터 어휘가 필요하므로 [!DNL Experience Manager Assets]은(는) 새로운 메타데이터 속성을 임시 추가하는 것을 허용하지 않습니다. 작성자는 에셋에 대한 새 메타데이터 필드를 추가할 수 없지만 개발자는 이를 수행할 수 있습니다. [자산](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
 
 ## 자산 {#editing-metadata-for-an-asset} 메타데이터 편집
 
