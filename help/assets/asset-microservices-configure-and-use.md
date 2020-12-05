@@ -3,9 +3,9 @@ title: 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 자산 마이크로 서비스를 구성 및 사용하여 자산을 규모에 맞게 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 처리 프로필을 사용하여 얻을 수 없는 자산의 추가 처리가 필요한 경우 추가 사후 처리 워크플로우를 구성에 추가할 수 있습니다. 이를 통해 자산 마이크로 서비스를 사용하여 구성 가능한 처리 위에 완전히 사용자 정의된 처리를 추가할 수 있습니다.
 
-사후 처리 워크플로우는 마이크로서비스 처리가 끝난 후 AEM에서 자동으로 실행됩니다(구성된 경우). 워크플로우 런터을 수동으로 추가하여 트리거할 필요가 없습니다. 이러한 예는 다음과 같습니다.
+사후 처리 워크플로우는 마이크로서비스 처리가 끝난 후 [!DNL Experience Manager]에 의해 자동으로 실행됩니다(구성된 경우). 워크플로우 런터을 수동으로 추가하여 트리거할 필요가 없습니다. 이러한 예는 다음과 같습니다.
 
 * 자산을 처리하는 사용자 정의 워크플로우 단계
 * 제품 또는 프로세스 정보 등 외부 시스템의 자산에 메타데이터 또는 속성을 추가하는 통합
@@ -195,7 +195,7 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 
 ### 사후 처리 워크플로우 모델 만들기 {#create-post-processing-workflow-models}
 
-사후 처리 워크플로우 모델은 일반적인 AEM 워크플로우 모델입니다. 다른 저장소 위치 또는 자산 유형에 대해 다른 처리가 필요한 경우 다른 모델을 생성합니다.
+사후 처리 워크플로우 모델은 일반 [!DNL Experience Manager] 워크플로우 모델입니다. 다른 저장소 위치 또는 자산 유형에 대해 다른 처리가 필요한 경우 다른 모델을 생성합니다.
 
 필요에 따라 처리 단계를 추가해야 합니다. 지원되는 모든 단계와 사용자 요구에 맞게 구현된 워크플로우 단계를 사용할 수 있습니다.
 
@@ -213,7 +213,7 @@ Experience Manager에 사후 처리 워크플로우 구성 추가는 다음 단�
 >[!NOTE]
 >
 >사용자 지정 워크플로우 러너의 구성은 OSGi 서비스의 구성입니다. OSGi 구성을 배포하는 방법에 대한 자세한 내용은 [Experience Manager에 배포](/help/implementing/deploying/overview.md)를 참조하십시오.
->AEM의 온프레미스 및 관리 서비스 배포와 달리 OSGi 웹 콘솔은 클라우드 서비스 배포에서 직접 사용할 수 없습니다.
+>[!DNL Experience Manager]의 온-프레미스 및 관리 서비스 배포와 달리 OSGi 웹 콘솔은 클라우드 서비스 배포에서 직접 사용할 수 없습니다.
 
 사후 처리 워크플로우에서 사용할 수 있는 표준 워크플로우 단계에 대한 자세한 내용은 개발자 참조에서 [후처리 워크플로우 단계](developer-reference-material-apis.md#post-processing-workflows-steps)를 참조하십시오.
 
