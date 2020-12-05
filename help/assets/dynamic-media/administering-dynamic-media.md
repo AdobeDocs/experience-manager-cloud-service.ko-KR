@@ -2,9 +2,9 @@
 title: 다이내믹 미디어 설정
 description: 다이내믹 미디어를 설정하려면 다이내믹 미디어를 구성하고 이미지 및 뷰어 사전 설정을 관리해야 합니다
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '175'
 ht-degree: 21%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into AEM. If you are using Dynamic Media Classic (previously called Scene7) integrated into AEM, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use AEM integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -40,4 +40,4 @@ ht-degree: 21%
 >
 >**업그레이드 중인 경우:**
 >
->* AEM을 실행하고 나면 업로드하는 모든 자산은 자동으로 활성화됩니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). AEM의 업그레이드된 인스턴스이고 Dynamic Media를 처음 사용하는 경우 자산을 재처리하여 Dynamic Media를 사용하도록 설정해야 할 수도 있습니다.
+>* Experience Manager을 설정하고 실행한 후 업로드하는 모든 자산은 자동으로 활성화됩니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). Experience Manager의 업그레이드된 인스턴스이고 Dynamic Media를 처음 사용하는 경우 자산을 재처리하여 Dynamic Media가 활성화되도록 해야 할 수 있습니다.
