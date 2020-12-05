@@ -5,21 +5,21 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
 
 
-# 동적 미디어 의 액세스 가능성 {#working-with-three-d-assets-dm}
+# 동적 미디어 {#working-with-three-d-assets-dm}의 액세스 가능성
 
 Dynamic Media는 저작 사용자 인터페이스 전반에서 JAWS 및 NVDA 화면 판독기와 같은 키보드 제어 및 보조 기술을 지원합니다.
 
 ## Dynamic Media의 키보드 액세스 지원
 
-Dynamic Media는 AEM Assets에 대한 플러그인이므로 대부분의 키보드 제어 동작은 AEM Assets과 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 버튼은 AEM Assets과 동일한 초점 강조 표시를 가지며, AEM Assets에서와 마찬가지로 `Spacebar` 키에 응답합니다. 자산](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키를 참조하십시오.
+Dynamic Media는 Experience Manager 에셋에 대한 플러그인이므로 대부분의 키보드 제어 동작은 Experience Manager 에셋의 경우와 동일합니다. 예를 들어, 다이내믹 미디어의 `Cancel` 버튼은 Experience Manager 자산과 동일한 초점 강조 표시를 가지며 Experience Manager 자산에서와 마찬가지로 `Spacebar` 키에 응답합니다. 자산](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키를 참조하십시오.
 
 Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 쉽게 찾을 수 있습니다. Dynamic Media의 키보드 제어는 다음과 같습니다.
 
@@ -44,7 +44,7 @@ Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## 동적 미디어 의 보조 기술 지원 {#assistive-technology=support-for-dm}
+## 동적 미디어 {#assistive-technology=support-for-dm}의 보조 기술 지원
 
 다이내믹 미디어 사용자 인터페이스 요소는 화면 판독기와 같은 보조 기술과 함께 작동합니다. 예를 들어 키보드 단축키 `D` 또는 키보드 단축키 `R`를 사용하여 랜드마크를 탐색할 때 페이지의 랜드마크를 인식합니다. 제목 키보드 단축키 `H`를 사용하여 탐색할 때 제목 내레이션이 적용됩니다.
 
