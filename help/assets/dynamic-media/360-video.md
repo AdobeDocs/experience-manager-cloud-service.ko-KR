@@ -2,9 +2,9 @@
 title: 360/VR 비디오
 description: 다이내믹 미디어에서 360 및 VR(Virtual Reality) 비디오로 작업하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Adobe Premiere Pro를 사용하여 360/VR 영상을 보고 편집할 수 있습�
 
 ## 360 비디오 뷰어와 함께 사용할 에셋 업로드 {#uploading-assets-for-use-with-the-video-viewer}
 
-AEM에 업로드된 360개의 비디오 자산은 일반적인 비디오 자산과 유사하게 자산 페이지에서 **멀티미디어**&#x200B;로 레이블이 지정됩니다.
+Experience Manager에 업로드된 360개의 비디오 에셋은 일반 비디오 에셋과 유사하게 자산 페이지에서 **멀티미디어**&#x200B;로 레이블이 지정됩니다.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selecttopreview카드 보기에 표시된 업로드된 360개의 비디오 에셋입니다. 자산에 멀티미디어로 레이블이 지정됩니다.*
@@ -98,7 +98,7 @@ Start by uploading 360 Videos.
 360 비디오가 마음에 들면 게시할 수 있습니다.
 
 웹 페이지에 [비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
-[웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+[웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 지원되지 않습니다.
 [페이지에 다이내믹 미디어 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **360개의 비디오를 미리 보려면**
@@ -135,5 +135,5 @@ Start by uploading 360 Videos.
 360 비디오를 게시하는 방법에 대한 자세한 내용은 [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 [
-웹 응용 프로그램](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)에 URL 연결을 참조하십시오. [ 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+웹 응용 프로그램](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)에 URL 연결을 참조하십시오. [ 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 지원되지 않습니다.
 [페이지에 다이내믹 미디어 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
