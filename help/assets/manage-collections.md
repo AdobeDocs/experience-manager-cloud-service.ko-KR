@@ -4,9 +4,9 @@ description: Adobe Experience Manager 자산의 컬렉션 개념을 이해합니
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 ### 컬렉션 검색 {#search-collections}
 
-컬렉션 콘솔에서 컬렉션을 검색할 수 있습니다. Omnisearch 상자에서 키워드로 검색할 때 AEM Assets은 컬렉션에 추가된 컬렉션 이름, 메타데이터 및 태그를 검색합니다.
+컬렉션 콘솔에서 컬렉션을 검색할 수 있습니다. Omnisearch 상자에서 키워드로 검색할 때 [!DNL Experience Manager Assets]은 컬렉션 이름, 메타데이터 및 컬렉션에 추가된 태그를 검색합니다.
 
 최상위 수준에서 컬렉션을 검색하면 개별 컬렉션만 검색 결과에 반환됩니다. 컬렉션 내의 자산 또는 폴더는 제외됩니다. 다른 모든 경우(예: 개별 컬렉션 또는 폴더 계층 구조) 모든 관련 자산, 폴더 및 컬렉션이 반환됩니다.
 
@@ -148,7 +148,7 @@ ht-degree: 0%
 
 컬렉션 콘솔에서 컬렉션을 탭/클릭하여 엽니다.
 
-컬렉션 내에서 AEM 자산 검색은 보고 있는 컬렉션 내의 자산(및 해당 태그 및 메타데이터)으로 제한됩니다. 폴더 내에서 검색하면 현재 폴더 내에서 일치하는 모든 자산 및 하위 폴더가 반환됩니다. 컬렉션 내에서 검색하면 컬렉션의 직접 구성원인 일치하는 자산, 폴더 및 기타 컬렉션만 반환됩니다.
+컬렉션 내에서 [!DNL Experience Manager] 검색은 보고 있는 컬렉션 내의 자산(및 해당 태그 및 메타데이터)으로 제한됩니다. 폴더 내에서 검색하면 현재 폴더 내에서 일치하는 모든 자산 및 하위 폴더가 반환됩니다. 컬렉션 내에서 검색하면 컬렉션의 직접 구성원인 일치하는 자산, 폴더 및 기타 컬렉션만 반환됩니다.
 
 ## 컬렉션 설정 편집 {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ ht-degree: 0%
 
 ## 여러 컬렉션의 메타데이터 속성 편집 {#editing-metadata-properties-of-multiple-collections}
 
-Adobe Enterprise Manager(AEM) 자산을 사용하면 많은 컬렉션의 메타데이터를 일괄 편집할 수 있습니다. [!UICONTROL 속성] 페이지에서 여러 컬렉션에 대한 메타데이터 변경 작업을 수행할 수 있습니다. 예를 들어 메타데이터 속성을 일반 값으로 변경하거나 태그를 추가하거나 수정할 수 있습니다.
+Adobe Enterprise Manager 자산을 사용하면 많은 컬렉션의 메타데이터를 일괄 편집할 수 있습니다. [!UICONTROL 속성] 페이지에서 여러 컬렉션에 대한 메타데이터 변경 작업을 수행할 수 있습니다. 예를 들어 메타데이터 속성을 일반 값으로 변경하거나 태그를 추가하거나 수정할 수 있습니다.
 
 메타데이터 속성 추가, 수정, 삭제를 포함하여 메타데이터 [!UICONTROL 속성] 페이지를 사용자 정의하려면 스키마 편집기를 사용합니다.
 
