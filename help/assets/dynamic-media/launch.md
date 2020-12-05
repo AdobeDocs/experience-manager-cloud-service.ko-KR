@@ -2,7 +2,7 @@
 title: Adobe Analytics 및 Adobe Launch와 Dynamic Media Viewer 통합
 description: Dynamic Media Viewers 5.13 릴리스와 함께 Adobe Launch용 Dynamic Media Viewers 확장을 사용하면 Dynamic Media, Adobe Analytics 및 Adobe Launch 고객은 Adobe Launch 구성에서 Dynamic Media Viewer에 고유한 이벤트 및 데이터를 사용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
 source-wordcount: '6647'
 ht-degree: 2%
@@ -646,7 +646,7 @@ Adobe 시작 환경에 대한 자세한 내용은 [환경](https://docs.adobe.co
 
 ## 통합 {#configuring-adobe-experience-manager-for-the-integration}에 대한 Adobe Experience Manager 구성
 
-<!-- Prerequisites lost below should be verified by Sasha -->
+<!-- Prerequisites list below should be verified by Sasha -->
 
 전제 조건:
 
