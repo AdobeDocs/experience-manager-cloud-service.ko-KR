@@ -2,9 +2,9 @@
 title: Dynamic Media 이미지 프로필
 description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 다이내믹 미디어 이미지 프로필을 만든 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2753'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 4%
   <tr>
    <td>색상 및 이미지 견본</td>
    <td>각 이미지에 대한 이미지 견본을 벌크 생성합니다.</td>
-   <td><p><strong>참고</strong>:스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>제품 이미지에서 색상 또는 텍스처를 보여주는 고품질의 색상 견본을 자동으로 찾아 생성할 수 있습니다.</p> <p>색상 및 이미지 견본을 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong>를 선택한 다음 색상 및 이미지 견본 오른쪽에 있는 기능을 활성화(켜기)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 자르기는 [변환] 레일에서 사용할 수 있지만 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트의 견본을 렌더링하려면 고유한 보기 구성 요소를 사용해야 합니다. 회전판 배너만 예외입니다. Dynamic Media는 캐러셀 배너에 사용되는 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 견본 사용</strong></p> <p>이미지 견본용 URL은 간단합니다. 이것은 다음과 같습니다.</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code>은 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음을 사용하여 <code>req=userdata</code> 요청을 수행합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic(Scene7)의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>다음은 견본 자산의 해당 <code>req=userdata</code> URL입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p><code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>참고</strong>:스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>제품 이미지에서 색상 또는 텍스처를 보여주는 고품질의 색상 견본을 자동으로 찾아 생성할 수 있습니다.</p> <p>색상 및 이미지 견본을 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong>를 선택한 다음 색상 및 이미지 견본 오른쪽에 있는 기능을 활성화(켜기)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 자르기는 [변환] 레일에서 사용할 수 있지만 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트의 견본을 렌더링하려면 고유한 보기 구성 요소를 사용해야 합니다. 회전판 배너만 예외입니다. Dynamic Media는 캐러셀 배너에 사용되는 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 견본 사용</strong></p> <p>이미지 견본용 URL은 간단합니다. 이것은 다음과 같습니다.</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code>은 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음을 사용하여 <code>req=userdata</code> 요청을 수행합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>다음은 견본 자산의 해당 <code>req=userdata</code> URL입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p><code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
