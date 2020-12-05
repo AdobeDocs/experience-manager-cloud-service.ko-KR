@@ -2,9 +2,9 @@
 title: 다이내믹 미디어 이미지 프로필 및 비디오 프로필 정보
 description: 이미지 프로필 또는 비디오 프로필은 폴더에 업로드하는 자산에 적용할 옵션을 만드는 레서피입니다. 예를 들어 업로드하는 Dynamic Media 비디오 자산에 적용할 비디오 인코딩을 지정할 수 있습니다. 또는 Dynamic Media 이미지 자산에 적용할 이미지 프로필로 제대로 잘립니다.
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Dynamic Media에서는 다음 링크에서 자세히 다루는 두 가지 유형
 
 >[!NOTE]
 >
->Dynamic Media Classic에서 AEM으로 자산의 대량 마이그레이션을 수행하는 경우 Dynamic Media 서버에서 마이그레이션 복제 에이전트를 활성화해야 합니다. 마이그레이션이 완료되면 에이전트를 비활성화해야 합니다.
+>Dynamic Media Classic에서 Experience Manager으로 자산의 대량 마이그레이션을 수행하는 경우 Dynamic Media 서버에서 마이그레이션 복제 에이전트를 활성화해야 합니다. 마이그레이션이 완료되면 에이전트를 비활성화해야 합니다.
 >
 >Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성화해야 재처리 워크플로가 예상대로 작동됩니다.
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **폴더에서 Dynamic Media 자산을 재처리하려면 다음을 수행하십시오**.
-1. AEM의 [자산] 페이지에서 이미지 프로필 또는 비디오 프로필이 할당된 Dynamic Media 자산의 폴더로 이동하여 **Scene7을 적용할 폴더로 이동합니다.자산 재처리** 워크플로,
+1. Adobe Experience Manager의 자산 페이지에서 이미지 프로필 또는 비디오 프로필이 할당된 다이내믹 미디어 자산의 폴더로 이동하고 **Scene7을 적용할 폴더로 이동합니다.자산 재처리** 워크플로,
 
    이미지 프로필 또는 비디오 프로필이 이미 할당된 폴더는 카드 보기에서 폴더 이름 바로 아래에 프로필 이름을 표시하여 나타냅니다.
 
@@ -81,11 +81,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. **[!UICONTROL 시작]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-   워크플로우를 모니터링하거나 진행 상황을 확인하려면 AEM 주 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로]**&#x200B;를 클릭합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 작업 내역 열기]**&#x200B;를 클릭합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
+   워크플로우를 모니터링하거나 진행 상황을 확인하려면 Experience Manager 기본 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로]**&#x200B;를 클릭합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 작업 내역 열기]**&#x200B;를 클릭합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
 
 ### 재처리 워크플로우의 일괄 처리 크기 조정 {#adjusting-load}
 
-(선택 사항) 재처리 워크플로우의 기본 일괄 처리 크기는 작업당 50개의 자산입니다. 이 최적의 일괄 처리 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 관리됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있게 됩니다. 따라서 처리 배너는 AEM 에셋에 더 오랫동안 남아 있습니다. 그러나 평균 파일 크기가 1MB 이하일 경우 값을 수백 개로 높이되, 1000을 넘지 않는 것이 좋습니다. 평균 파일 크기가 수백 MB 이상인 경우 일괄 처리 크기를 최대 10개까지 줄이는 것이 좋습니다.
+(선택 사항) 재처리 워크플로우의 기본 일괄 처리 크기는 작업당 50개의 자산입니다. 이 최적의 일괄 처리 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 관리됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있게 됩니다. 따라서 처리 배너는 긴 시간 동안 Experience Manager 에셋에 유지됩니다. 그러나 평균 파일 크기가 1MB 이하일 경우 값을 수백 개로 높이되, 1000을 넘지 않는 것이 좋습니다. 평균 파일 크기가 수백 MB 이상인 경우 일괄 처리 크기를 최대 10개까지 줄이는 것이 좋습니다.
 
 **재처리 워크플로우의 일괄 처리 크기를 선택적으로 조정하려면**
 
@@ -137,7 +137,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
