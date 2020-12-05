@@ -1,11 +1,11 @@
 ---
 title: 페이지에 Dynamic Media 자산 추가
-description: AEM의 페이지에 Dynamic Media 구성 요소를 추가하는 방법
+description: Experience Manager의 페이지에 Dynamic Media 구성 요소를 추가하는 방법
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 29%
+source-wordcount: '3134'
+ht-degree: 28%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 29%
 
 웹 사이트에서 사용하는 자산에 다이내믹 미디어 기능을 추가하려면 페이지에 직접 **다이내믹 미디어**, **대화형 미디어**, **파노라마 미디어** 또는 **비디오 360 미디어** 구성 요소를 추가할 수 있습니다. 이렇게 하려면 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 구성 요소는 편리하게도 이미지나 비디오를 추가하는지 여부와 그에 따라 사용 가능한 구성 옵션이 달라집니다.
 
-AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가합니다. WCM에 대해 서드 파티를 사용하는 경우, [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/dynamic-media/embed-code.md) 자산을 사용하십시오. 응답형 타사 웹 사이트의 경우 응답형 사이트[에 최적화된 이미지 배달을 참조하십시오.](/help/assets/dynamic-media/responsive-site.md)
+WCM으로 Experience Manager을 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가합니다. WCM에 대해 서드 파티를 사용하는 경우, [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/dynamic-media/embed-code.md) 자산을 사용하십시오. 응답형 타사 웹 사이트의 경우 응답형 사이트[에 최적화된 이미지 배달을 참조하십시오.](/help/assets/dynamic-media/responsive-site.md)
 
 >[!NOTE]
 >
->AEM의 페이지에 자산을 추가하려면 먼저 자산을 게시해야 합니다. [다이내믹 미디어 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
+>Experience Manager의 페이지에 자산을 추가하려면 먼저 자산을 게시해야 합니다. [다이내믹 미디어 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 ## 페이지에 Dynamic Media 구성 요소 추가 {#adding-a-dynamic-media-component-to-a-page}
 
@@ -26,7 +26,7 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
 **페이지에 Dynamic Media 구성 요소 추가**
 
-1. AEM에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
+1. Experience Manager에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
 1. 왼쪽 창에서 **[!UICONTROL 구성 요소]** 아이콘을 누른 다음 동적 미디어에 대해 필터링합니다.
 
    사용할 수 있는 다이내믹 미디어 구성 요소 목록이 없는 경우 사용할 다이내믹 미디어 구성 요소를 활성화해야 합니다. [다이내믹 미디어 구성 요소 활성화](#enabling-dynamic-media-components)를 참조하십시오.
@@ -53,7 +53,7 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
 페이지에 추가할 수 있는 Dynamic Media 구성 요소가 없는 경우 먼저 사용할 구성 요소를 활성화해야 합니다.
 
-1. AEM에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
+1. Experience Manager에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
 1. 페이지 상단 근처에 있는 도구 모음 왼쪽의 페이지 정보 아이콘을 누른 다음 드롭다운 목록에서 **[!UICONTROL 템플릿 편집]**&#x200B;을 누릅니다.
 
    ![편집 템플릿](/help/assets/assets-dm/edit-template.png)
@@ -103,7 +103,7 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
 >[!NOTE]
 >
->이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 템플릿 편집기를 통해 사용할 수 있어야 합니다. 템플릿 편집기에서 사용할 수 있게 되면 다른 AEM 구성 요소처럼 페이지에 구성 요소를 추가할 수 있습니다.
+>이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 템플릿 편집기를 통해 사용할 수 있어야 합니다. 템플릿 편집기에서 사용할 수 있게 되면 다른 Experience Manager 구성 요소처럼 페이지에 구성 요소를 추가할 수 있습니다.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -210,7 +210,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
 Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기 이미지 자산을 추가합니다. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 설정된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
 
-[AEM Assets Dynamic Media에서 스마트 자르기 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)을 참조하십시오.
+참조 [Experience Manager 자산에 스마트 자르기 사용 동적 미디어](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 [이미지 프로필](/help/assets/dynamic-media/image-profiles.md)도 참조하십시오.
 
@@ -337,10 +337,10 @@ Dynamic Media 계정으로 HTTP/2 사용을 시작하는 방법에 대한 자세
 
 >[!MORELIKETHIS]
 >
->* [AEM Dynamic Media에서 비디오 플레이어 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [AEM Dynamic Media에서 대화형 비디오 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [AEM Dynamic Media를 사용한 자산 뷰어 이해](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [AEM Dynamic Media에서 사용자 정의 비디오 축소판 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [AEM Dynamic Media를 통한 색상 관리 이해](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [AEM Dynamic Media에서 이미지 선명하게 하기 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Experience Manager 다이내믹 미디어에서 비디오 플레이어 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Experience Manager 동적 미디어와 대화형 비디오 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Experience Manager 다이내믹 미디어를 사용한 자산 뷰어 이해](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Experience Manager Dynamic Media에서 사용자 정의 비디오 축소판 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Experience Manager 다이내믹 미디어를 사용한 색상 관리 이해](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
