@@ -2,9 +2,9 @@
 title: 이미지 사전 설정 관리
 description: 이미지 사전 설정을 이해하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3608'
 ht-degree: 3%
 
 ---
@@ -401,7 +401,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조</a>에서 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">이미지 서버 프로토콜 명령 참조</a>에서 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령:<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
      <li>현지화 명령:<code>locale=</code> 및 <code>req=xlate</code></li>
@@ -418,7 +418,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
 
 ### 이미지 수정자 {#defining-image-preset-options-with-image-modifiers}를 사용하여 이미지 사전 설정 옵션 정의
 
-[기본] 및 [고급] 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Scene7 이미지 렌더링 API에 의존하며 [HTTP 프로토콜 참조](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html)에 자세히 정의됩니다.
+[기본] 및 [고급] 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 다이내믹 미디어 이미지 렌더링 API에 의존하며 [HTTP 프로토콜 참조](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)에 자세히 정의됩니다.
 
 다음은 이미지 수정자로 수행할 수 있는 작업의 몇 가지 기본 예입니다.
 
@@ -426,7 +426,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
 >
 >일부 이미지 수정자는 AEM[에서 사용할 수 없습니다.](#advanced-tab-options)
 
-* [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html)  - 네거티브 이미지 효과를 위해 각 색상 구성 요소를 반전합니다.
+* [op_invert](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - 네거티브 이미지 효과를 위해 각 색상 구성 요소를 반전합니다.
 
    ```xml
    &op_invert=1
@@ -434,7 +434,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html)  - 흐림 필터를 이미지에 적용합니다.
+* [op_blur](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html)  - 흐림 필터를 이미지에 적용합니다.
 
    ```xml
    &op_blur=7
@@ -450,7 +450,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html)  - 밝기를 줄이거나 늘립니다.
+* [op_brightness](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  - 밝기를 줄이거나 늘립니다.
 
    ```xml
    &op_brightness=58
@@ -458,7 +458,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html)  - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
+* [opac](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
 
    ```xml
    opac=29
