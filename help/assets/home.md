@@ -2,10 +2,10 @@
 title: Assets as a [!DNL Cloud Service] Guide
 description: Adobe Experience Manager 자산( [!DNL Cloud Service] 자체 도움말 리소스 및 설명서 링크)
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 26%
+source-wordcount: '305'
+ht-degree: 25%
 
 ---
 
@@ -36,7 +36,7 @@ Experience Manager 자산에 대한 자체 도움말 리소스는 [!DNL Cloud Se
 | [구현 사용 안내서](/help/implementing/home.md) | Experience Manager을 [!DNL Cloud Service]으로 사용자 정의하고, 개발하고, 배포합니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | 커넥터를 Experience Manager에 [!DNL Cloud Service]으로 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 및 유지 관리 작업과 같이 Experience Manager의 백엔드 작업에 대해 [!DNL Cloud Service]으로 알아봅니다. |
-| [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM에서 [!DNL Cloud Service]으로 커머스 통합 프레임워크에 대해 알아보십시오. |
+| [상거래 사용 안내서](/help/commerce-cloud/home.md) | [!DNL Experience Manager]에서 [!DNL Cloud Service]의 커머스 통합 프레임워크에 대해 알아보십시오. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
@@ -48,4 +48,4 @@ Experience Manager 자산에 대한 자체 도움말 리소스는 [!DNL Cloud Se
 * [GDPR 준비 완료](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager [!DNL Cloud Service] 의 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
-* [AEM 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [[!DNL Experience Manager] 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
