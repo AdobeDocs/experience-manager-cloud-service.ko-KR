@@ -2,9 +2,9 @@
 title: Dynamic Media 뷰어 사전 설정 적용
 description: Dynamic Media에서 뷰어 사전 설정을 적용하는 방법 살펴보기
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets)도 참조하십시오.
 
 사용 중인 게시 모드에 따라 뷰어 사전 설정을 게시할 필요가 없을 수도 있습니다.
-뷰어 사전 설정과 관련된 문제는 [다이내믹 미디어 문제 해결 - Scene7](troubleshoot-dm.md#viewers)을 참조하십시오.
+뷰어 사전 설정과 관련된 문제는 [다이내믹 미디어 문제 해결](troubleshoot-dm.md#viewers)을 참조하십시오.
 
 ## 자산 {#applying-a-viewer-preset-to-an-asset}에 Dynamic Media 뷰어 사전 설정 적용
 
