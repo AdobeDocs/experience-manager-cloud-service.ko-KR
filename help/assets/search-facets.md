@@ -2,7 +2,7 @@
 title: 검색 패싯.
 description: 이 문서에서는 AEM에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 2%
@@ -33,9 +33,9 @@ ht-degree: 2%
 
 1. [검색 Forms 편집] 페이지에서 **[!UICONTROL 설명 선택]** 탭에서 조건자를 주 창으로 드래그합니다. 예를 들어 **[!UICONTROL 속성 설명]**&#x200B;을 드래그합니다.
 
-   ![조건자를 눌러 이동하여 검색 필터를 사용자 정의합니다.](assets/drag_predicate.png)
+   ![설명 선택 및 이동을 통해 검색 필터 사용자 정의](assets/drag_predicate.png)
 
-   *그림:조건자를 누르고 이동하여 검색 필터를 사용자 정의합니다.*
+   *그림:조건자를 선택 및 이동하여 검색 필터를 사용자 정의합니다.*
 
 1. 설정 탭에서 설명 필드 레이블, 자리 표시자 텍스트 및 설명을 입력합니다. 조건자와 연결할 메타데이터 속성의 올바른 이름을 지정합니다. 설정 탭의 헤더 레이블은 선택한 술어의 유형을 식별합니다.
 
