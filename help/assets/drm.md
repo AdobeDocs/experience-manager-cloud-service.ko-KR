@@ -3,9 +3,9 @@ title: ' [!DNL Assets]의 Digital Rights Management'
 description: ' [!DNL Experience Manager] 에서 [!DNL Cloud Service]의 라이선스가 부여된 자산에 대한 에셋 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 자산 만료 {#asset-expiration}
 
-에셋 만료는 에셋에 대한 라이선스 요구 사항을 적용하는 효과적인 방법입니다. 이렇게 하면 게시된 자산이 만료될 때 게시 취소되어 라이선스 위반의 가능성을 방지할 수 있습니다. 관리자 권한이 없는 사용자는 만료된 자산을 편집, 복사, 이동, 게시 및 다운로드할 수 없습니다.
+에셋 만료는 에셋에 대한 라이선스 요구 사항을 적용하는 효과적인 방법입니다. 또한 게시된 자산이 만료될 때 게시 취소되어 라이선스 위반의 가능성을 확인합니다. 관리자 권한이 없는 사용자는 만료된 자산을 편집, 복사, 이동, 게시 및 다운로드할 수 없습니다.
 
 다음 위치에서 자산의 만료 상태를 볼 수 있습니다.
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. [!DNL Assets] 콘솔에서 도구 모음에서 **[!UICONTROL 검색]**&#x200B;을 클릭하여 Omnisearch 상자를 표시합니다.
 
-1. Omnisearch 상자에 커서를 놓고 Enter 키를 눌러 검색 결과 페이지를 표시합니다.
+1. Omnisearch 상자에 커서를 두고 `Enter` 키를 선택하여 검색 결과 페이지를 표시합니다.
 
 1. 글로벌 탐색 아이콘을 클릭하여 검색 패널을 표시합니다.
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 1. 상태를 기준으로 자산을 검색하려면 **[!UICONTROL 검색]**&#x200B;을 클릭하여 Omnisearch 막대를 표시합니다.
 
-1. Return 키를 누르고 [!DNL Experience Manager]을 클릭하여 검색 패널을 표시합니다.
+1. `Return`을 선택하고 [!DNL Experience Manager]을 클릭하여 검색 패널을 표시합니다.
 1. 검색 패널에서 **[!UICONTROL 게시 상태]**&#x200B;를 클릭하고 **[!UICONTROL 게시된]**&#x200B;을 선택하여 [!DNL Assets]에서 게시된 자산을 검색합니다.
 
 1. **[!UICONTROL 승인 상태]**&#x200B;를 클릭하고 적절한 옵션을 클릭하여 승인되거나 거부된 자산을 검색합니다.
