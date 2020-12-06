@@ -4,9 +4,9 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '4408'
+source-wordcount: '4407'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. **[!UICONTROL 태그]** 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 Enter 키를 누릅니다. 새 태그가 [!DNL Experience Manager]에 저장됩니다.
+1. **[!UICONTROL 태그]** 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 `Enter` 키를 선택합니다. 새 태그가 [!DNL Experience Manager]에 저장됩니다.
 
    YouTube를 게시하려면 태그가 필요하며 YouTube에 대한 링크가 있어야 합니다(적절한 링크를 찾을 수 있는 경우).
 
