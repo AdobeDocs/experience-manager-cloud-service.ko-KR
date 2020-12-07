@@ -2,10 +2,10 @@
 title: 검색
 description: 포괄적인 검색으로 신속하게 컨텐츠 찾기
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 검색은 맨 위 도구 모음에서 사용할 수 있습니다.
 
-![검색 단추](/help/sites-cloud/authoring/assets/search-button.png)
+![검색 아이콘](/help/sites-cloud/authoring/assets/search-icon.png)
 
 검색 레일을 사용하면 다음 작업을 할 수 있습니다.
 
