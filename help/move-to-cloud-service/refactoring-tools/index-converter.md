@@ -2,9 +2,9 @@
 title: 색인 변환기
 description: 색인 변환기
 translation-type: tm+mt
-source-git-commit: adfc453729b88a9cc457783806eb7b4d69150b21
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
@@ -34,5 +34,5 @@ Index Converter는 AEM으로 Cloud Service으로 이동할 준비를 하면서 �
 >[!NOTE]
 >소스 마이그레이션](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)에 대해 [AIO CLI 플러그인을 통해 Index Converter 도구를 사용하는 것이 좋지만, 독립적으로 실행될 수도 있습니다.
 
-**[Git 리소스를 참조하십시오.aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)** 플러그인을 설치하고 사용하는 방법에 대해 학습합니다.
+**[Git 리소스를 참조하십시오.aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 플러그인을 설치하고 사용하는 방법에 대해 학습합니다.
 
