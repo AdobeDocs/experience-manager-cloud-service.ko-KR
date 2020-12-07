@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 * [검색](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![검색 단추](/help/sites-cloud/authoring/assets/search-button.png)
+   ![검색 아이콘](/help/sites-cloud/authoring/assets/search-icon.png)
 
    [단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
