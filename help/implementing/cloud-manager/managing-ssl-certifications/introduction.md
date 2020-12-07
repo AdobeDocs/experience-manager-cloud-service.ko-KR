@@ -2,9 +2,9 @@
 title: 소개 - SSL 인증서 관리
 description: 소개 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 74cc587874c4d0a0ef9b542549801198d4f2d7a5
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Cloud Manager는 고객에게 Cloud Manager UI를 통해 SSL 인증서를 설치
 
 Cloud Manager는 다음과 같은 고객 SSL 인증서 요구 사항을 지원합니다.
 
-* 여러 환경에서 SSL 인증서를 사용할 수 있습니다. 한 번 추가하고 여러 번 사용하십시오.
+* SSL 인증서는 여러 환경에서 사용할 수 있습니다. 즉, 한 번 추가하고 여러 번 사용할 수 있습니다.
 * 각 클라우드 관리자 환경에서는 여러 인증서를 사용할 수 있습니다.
 * 개인 키는 여러 SSL 인증서를 발급할 수 있습니다.
 * 각 인증서에는 일반적으로 여러 개의 도메인이 포함됩니다.
@@ -30,6 +30,8 @@ Cloud Manager는 다음과 같은 고객 SSL 인증서 요구 사항을 지원�
 
 권한을 가진 사용자는 Cloud Manager UI SSL 인증서 페이지를 사용하여 프로그램에 대한 SSL 인증서를 관리하기 위해 몇 가지 작업을 수행할 수 있습니다.
 
-* SSL 인증서 추가.
-* SSL 인증서 보기, 업데이트 또는 바꾸기 이러한 작업을 통해 세부 사항을 보거나 만료될 인증서를 바꿀 수 있습니다.
+* SSL 인증서 추가
+* SSL 인증서 보기, 업데이트 또는 교체
+   >[!NOTE]
+   >이러한 작업을 통해 세부 사항을 보거나 만료될 인증서를 바꿀 수 있습니다.
 * SSL 인증서 삭제
