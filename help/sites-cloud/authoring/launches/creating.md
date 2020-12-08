@@ -2,10 +2,10 @@
 title: 론치 만들기
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 81%
+source-wordcount: '998'
+ht-degree: 80%
 
 ---
 
@@ -120,13 +120,15 @@ ht-degree: 81%
 **론치** 콘솔에서 중첩 론치를 만드는 것은 다른 형태의 론치를 만드는 것과 기본적으로 동일하며, 론치 분기 `/content/launches`로 이동해야 합니다.
 
 1. **론치** 콘솔에서 **만들기**&#x200B;를 선택합니다.
-1. **페이지 추가**&#x200B;를 선택한 다음 필터에서 `/content/launches`를 지정하여 론치 분기로 이동합니다. 필요한 론치를 선택하고 **선택**&#x200B;을 사용하여 확인합니다.
+1. **페이지 추가**&#x200B;를 선택한 다음 **필터** 레일에 `/content/launches`를 지정하여 론치 분기로 이동합니다. 필요한 론치를 선택하고 **선택**&#x200B;을 사용하여 확인합니다.
 
    ![중첩 론치 만들기](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. **다음**&#x200B;을 클릭하여 계속 진행하고 다른 론치와 마찬가지로 **속성**&#x200B;을 완료합니다.
+1. **다음**&#x200B;을 선택하여 계속 진행합니다.
 
-   ![중첩 론치의 소스 선택](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. 다른 실행과 마찬가지로 **속성**&#x200B;을 완료합니다.
+
+1. **Create**&#x200B;으로 완료합니다.
 
 #### 중첩 론치 만들기 - 사이트 콘솔 {#creating-a-nested-launch-sites-console}
 
