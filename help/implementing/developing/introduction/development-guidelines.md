@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 translation-type: tm+mt
-source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
+source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2239'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ property to debug. 로그를 많은 로그를 생성하므로 로그를 필요 �
 
 클라우드 환경의 스레드 덤프는 지속적으로 수집되지만 지금은 셀프 서비스 방식으로 다운로드할 수 없습니다. 한편 문제를 디버깅하는 데 스레드 덤프가 필요한 경우 정확한 시간 창을 지정하여 AEM 지원에 문의하십시오.
 
-## CRX/DE Lite 및 시스템 콘솔 {#crxde-lite-and-system-console}
+## CRX/DE Lite 및 개발자 콘솔 {#crxde-lite-and-developer-console}
 
 ### 로컬 개발 {#local-development}
 
@@ -132,7 +132,7 @@ property to debug. 로그를 많은 로그를 생성하므로 로그를 필요 �
 
 ### AEM(Cloud Service 개발 도구 {#aem-as-a-cloud-service-development-tools})
 
-고객은 개발 환경에서 CRXDE lite에 액세스할 수 있지만 스테이지나 프로덕션은 액세스할 수 없습니다. 변경 불가능한 저장소(`/libs`, `/apps`)는 런타임에 쓸 수 없으므로 작성하려고 하면 오류가 발생합니다.
+고객은 작성자 계층의 개발 환경에서 CRXDE lite에 액세스할 수 있지만 스테이지나 프로덕션은 액세스할 수 없습니다. 변경 불가능한 저장소(`/libs`, `/apps`)는 런타임에 쓸 수 없으므로 작성하려고 하면 오류가 발생합니다.
 
 개발, 준비 및 프로덕션 환경을 위해 개발자 콘솔에서 AEM을 Cloud Service 개발자 환경으로 디버깅하는 도구 세트를 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
 
