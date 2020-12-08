@@ -2,10 +2,10 @@
 title: 론치
 description: 론치를 사용하여 향후 릴리스용 컨텐츠를 효율적으로 개발할 수 있습니다. 현재 페이지를 유지 관리하면서 나중에 게시할 수 있도록 변경할 수도 있습니다.
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 90%
+source-wordcount: '878'
+ht-degree: 83%
 
 ---
 
@@ -84,22 +84,31 @@ ht-degree: 90%
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
-### 론치 콘솔 {#the-launches-console}
-
-론치 콘솔은 론치에 대한 개요를 제공하며, 나열된 론치에 대해 작업을 수행할 수 있도록 합니다. 이 콘솔은 다음 방법으로 액세스할 수 있습니다.
-
-* **도구** 콘솔: **도구**, **사이트**, **론치**.
-
-* 또는 `https://<host>:<port>/libs/launches/content/launches.html`과 직접
-
 ## 참조의 론치(사이트 콘솔) {#launches-in-references-sites-console}
 
 1. **사이트** 콘솔에서 론치의 소스로 이동합니다.
 1. **참조** 레일을 열고 소스 페이지를 선택합니다.
-1. **론치**&#x200B;를 선택합니다. 그러면 기존 론치가 나열됩니다.
+1. **론치**&#x200B;를 선택하면 기존 론치가 나열되고 **론치 콘솔**&#x200B;에 액세스할 수 있습니다.
 
    ![사이트 콘솔의 론치 참조](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 적절한 론치를 탭/클릭합니다. 가능한 작업 목록이 표시됩니다.
 
    ![사이트 콘솔에서 실행할 작업](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## 론치 콘솔 {#the-launches-console}
+
+론치 콘솔은 론치에 대한 개요를 제공하며, 나열된 론치에 대해 작업을 수행할 수 있도록 합니다. 이 콘솔은 다음 방법으로 액세스할 수 있습니다.
+
+* **도구** 콘솔: **도구**, **사이트**, **론치**.
+
+* **론치** 콘솔 **** 에서 소스 컨텐츠를 탐색할 때  **** 참조 레일의 론치 맨 아래에 콘솔이 표시됩니다.
+
+   ![사이트 콘솔의 론치 참조의 론치 콘솔](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* 사이트 콘솔에서 론치 컨텐츠를 탐색할 때 오른쪽 상단에 있는 **론치** 단추:
+
+   ![사이트 콘솔의 론치 옵션](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* 또는 직접for example:
+   `https://<host>:<port>/libs/launches/content/launches.html`
