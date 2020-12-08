@@ -2,9 +2,9 @@
 title: 론치의 페이지 관리
 description: '론치 내에서 새 페이지를 만들 수 있습니다. 원하지 않는 페이지를 삭제할 수도 있습니다. '
 translation-type: tm+mt
-source-git-commit: 1a753aa9132a6de73e093caa1f682a78f29348c4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,8 @@ ht-degree: 1%
 * 기존 페이지를 선택하고 작업을 수행합니다.예: **편집**, **속성**, **잠금**, **복사**, **붙여넣기** 및 **삭제**
 
    ![컨텐츠 관리의 사이트 콘솔에서 론치 탐색](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* **참조** 레일을 사용하여 **론치 소스** 페이지로 돌아갑니다.
+   ![사이트 콘솔 - 론치 소스](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## 론치에 페이지 추가 {#add-pages-to-launch}
 
