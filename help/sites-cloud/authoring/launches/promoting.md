@@ -2,10 +2,10 @@
 title: 론치 홍보
 description: '게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 83%
+source-wordcount: '799'
+ht-degree: 80%
 
 ---
 
@@ -47,11 +47,14 @@ ht-degree: 83%
 **사이트** 콘솔 또는 **론치** 콘솔에서 론치를 홍보할 수 있습니다.
 
 1. 열기:
-   * **사이트** 콘솔:
+   * 소스 페이지를 탐색할 때 **사이트** 콘솔:
       1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 열고 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하여 여는 경우 순서는 중요하지 않습니다). 모든 참조가 표시됩니다.
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
       1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
+   * 시작 페이지를 탐색할 때 **사이트** 콘솔:
+      1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 시작 페이지를 선택합니다.
+      1. **홍보** 작업은 도구 모음에서 사용할 수 있습니다.
    * **론치** 콘솔:
       1. 론치를 선택합니다(썸네일 탭/클릭).
       1. **홍보**&#x200B;를 선택합니다.
