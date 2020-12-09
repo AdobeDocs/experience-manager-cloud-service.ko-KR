@@ -1,8 +1,8 @@
 ---
 title: URL을 웹 애플리케이션에 연결
-description: 다이내믹 미디어에서 웹 애플리케이션에 URL을 연결하는 방법
+description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # URL을 웹 애플리케이션에 연결 {#linking-urls-to-your-web-application}
 
-웹 사이트와 애플리케이션은 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 자산을 게시하면, Dynamic Media는 자산을 참조하는 URL 문자열을 활성화합니다. 이러한 URL을 웹 브라우저에 붙여넣어 테스트할 수 있습니다.
+웹 사이트와 애플리케이션은 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 자산을 게시하면 Dynamic Media에서 자산을 참조하는 URL 문자열을 활성화합니다. 이러한 URL을 웹 브라우저에 붙여넣어 테스트할 수 있습니다.
 
 AEM을 WCM으로 사용하지 않는 *인 경우에만 URL에 연결합니다.* 연결 대 포함-은 비디오 플레이어를 팝업 또는 모달 창으로 제공하려는 경우에 사용됩니다. AEM을 WCM으로 사용하는 경우 [페이지에서 바로 자산을 추가합니다.](adding-dynamic-media-assets-to-pages.md)
 
@@ -82,7 +82,7 @@ URL 문자열을 얻는 방법에는 여러 가지가 있습니다. 그러나 �
 
 ## 정적 자산 {#obtaining-a-url-for-a-static-asset}에 대한 URL 얻기
 
-Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미지와 비디오를 넘어 추가 자산입니다. 배달을 위해 지원되는 정적 자산 형식은 다음과 같습니다.
+Dynamic Media은 정적인 에셋 전달을 지원하며, 이는 이미지와 비디오를 넘어 추가적인 에셋입니다. 배달을 위해 지원되는 정적 자산 형식은 다음과 같습니다.
 
 * 3D 파일
 * 애니메이션 GIF
@@ -117,10 +117,10 @@ Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미�
 ## 게시된 비디오 변환 {#obtaining-a-video-url-for-a-published-video-rendition}에 대한 비디오 URL 얻기
 
 1. AEM에서 **[!UICONTROL 도구 > 배포 > 클라우드 > Cloud Services]**&#x200B;으로 이동합니다.
-1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL 다이내믹 미디어 Cloud Services]** 제목으로 스크롤 다운한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 누릅니다.
+1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 제목으로 스크롤 다운한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 누릅니다.
 
-1. **[!UICONTROL Dynamic Media Cloud 설정]** 페이지의 **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 나중에 단계에 복사한 URL 경로가 필요합니다.
+1. **[!UICONTROL Dynamic Media 클라우드 설정]** 페이지의 **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 나중에 단계에 복사한 URL 경로가 필요합니다.
 
    예를 들어 URL 경로는 다음과 유사하게 나타날 수 있습니다.
 
@@ -154,9 +154,9 @@ Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미�
 ## 응용 스트리밍(HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}에 대한 비디오 URL 얻기
 
 1. AEM에서 **[!UICONTROL 도구 > 배포 > 클라우드 > Cloud Services]**&#x200B;으로 이동합니다.
-1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL 다이내믹 미디어 Cloud Services]** 제목으로 스크롤 다운한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 누릅니다.
+1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 제목으로 스크롤 다운한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 누릅니다.
-1. **[!UICONTROL 다이내믹 미디어 Cloud Services 설정]** 페이지에서 다음을 수행합니다.
+1. **[!UICONTROL Dynamic Media Cloud Services 설정]** 페이지에서 다음을 수행합니다.
 
    * **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 이 단계 후반부에 복사된 URL 경로가 필요합니다. 예를 들어 URL 경로는 다음과 유사하게 나타날 수 있습니다.
 
@@ -188,7 +188,7 @@ Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미�
     </tbody>
    </table>
 
-1. Dynamic Media에서 처리하는 대로 AEM의 전체 비디오 자산 경로를 복사합니다. 이 비디오 자산 경로는 이 단계 후반부에서 복사해야 합니다.
+1. Dynamic Media에서 처리한 대로 AEM의 전체 비디오 자산 경로를 복사합니다. 이 비디오 자산 경로는 이 단계 후반부에서 복사해야 합니다.
 
    예:
 
@@ -206,8 +206,8 @@ Dynamic Media는 정적 자산 전달을 지원하며, 이는 단순히 이미�
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## HTTP/2를 사용하여 동적 미디어 자산 {#using-http-to-deliver-your-dynamic-media-assets} 전달
+## HTTP/2를 사용하여 Dynamic Media 자산 {#using-http-to-deliver-your-dynamic-media-assets} 전달
 
-HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. HTTP/2를 통해 다이내믹 미디어 에셋을 전달할 수 있으므로 응답 및 로드 시간이 향상됩니다.
+HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 에셋 배달을 HTTP/2를 통해 더 나은 응답 및 로드 시간을 제공할 수 있습니다.
 
-Dynamic Media 계정으로 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 [HTTP2 콘텐츠 배달](http2faq.md)을 참조하십시오.
+Dynamic Media 계정에서 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 [HTTP2 콘텐츠 배달](http2faq.md)을 참조하십시오.
