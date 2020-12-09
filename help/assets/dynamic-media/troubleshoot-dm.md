@@ -1,10 +1,10 @@
 ---
 title: Dynamic Media 문제 해결
-description: Dynamic Media 문제 해결.
+description: Dynamic Media 사용 시 문제 해결 팁
 translation-type: tm+mt
-source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '998'
 ht-degree: 2%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 2%
 
 # Dynamic Media 문제 해결 {#troubleshooting-dynamic-media-scene-mode}
 
-다음 항목에서는 다이내믹 미디어 문제 해결에 대해 설명합니다.
+다음 항목에서는 Dynamic Media 문제 해결에 대해 설명합니다.
 
-## 새 동적 미디어 구성 {#new-dm-config}
+## 새 Dynamic Media 구성 {#new-dm-config}
 
-[새 다이내믹 미디어 구성 문제 해결을 참조하십시오.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+[새 Dynamic Media 구성 문제 해결을 참조하십시오.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## 일반(모든 자산) {#general-all-assets}
 
@@ -24,12 +24,12 @@ ht-degree: 2%
 
 ### 자산 동기화 상태 속성 {#asset-synchronization-status-properties}
 
-다음 자산 속성을 CRXDE Lite에서 검토하여 AEM에서 다이내믹 미디어로 자산의 성공적인 동기화를 확인할 수 있습니다.
+다음 자산 속성을 CRXDE Lite에서 검토하여 AEM에서 Dynamic Media으로 자산의 성공적인 동기화를 확인할 수 있습니다.
 
 | **속성** | **예** | **설명** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | 노드가 Dynamic Media에 연결되어 있다는 일반 표시기. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** 또는 오류 텍스트 | 다이내믹 미디어에 자산 업로드의 상태입니다. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** 또는 오류 텍스트 | Dynamic Media에 자산 업로드 상태입니다. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media의 원격 자산에 대한 URL을 생성하려면 채워야 합니다. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **** 후임자가  **실패했습니다.`<error text>`** | 세트(스핀 세트, 이미지 세트 등), 이미지 사전 설정, 뷰어 사전 설정, 자산에 대한 이미지 맵 업데이트 또는 편집된 이미지의 동기화 상태입니다. |
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 ### 버전 제어 {#version-control}
 
-기존 Dynamic Media 자산(동일한 이름 및 위치)을 바꿀 때 자산을 유지하거나 버전을 교체/만들 수 있습니다.
+기존 Dynamic Media 자산(이름과 위치)을 바꿀 때 자산을 유지하거나 버전을 바꾸거나 만들 수 있습니다.
 
 * 두 가지 모두를 유지하면 게시된 자산 URL에 대한 고유한 이름이 있는 새 자산이 만들어집니다. 예를 들어 `image.jpg`은 원래 자산이고 `image1.jpg`은 새로 업로드된 자산입니다.
 
@@ -78,7 +78,7 @@ ht-degree: 2%
    <td><p>회전판에 동일한 크기의 이미지만 사용합니다.</p> </td>
   </tr>
   <tr>
-   <td>Dynamic Media 뷰어로 이미지가 미리 표시되지 않음</td>
+   <td>이미지가 Dynamic Media 뷰어에서 미리 볼 수 없음</td>
    <td><p>자산에 메타데이터 속성(CRXDE Lite)에 <code>dam:scene7File</code>이 포함되어 있는지 확인</p> </td>
    <td><p>모든 자산의 처리가 완료되었는지 확인하십시오.</p> </td>
   </tr>
@@ -124,7 +124,7 @@ ht-degree: 2%
      <li>폴더에 비디오 프로필을 할당합니다.</li>
      <li>둘 이상의 인코딩 사전 설정을 포함하도록 비디오 프로필을 편집합니다.</li>
      <li>비디오가 처리를 완료할 때까지 기다립니다.</li>
-     <li>비디오를 다시 로드하려면 다이내믹 미디어 인코딩 비디오 워크플로우가 실행되고 있지 않은지 확인하십시오.<br/> </li>
+     <li>비디오를 다시 로드하려면 Dynamic Media 비디오 인코딩 작업 과정이 실행되고 있지 않은지 확인하십시오.<br/> </li>
      <li>비디오를 다시 업로드합니다.</li>
     </ol> </td>
   </tr>
@@ -137,7 +137,7 @@ ht-degree: 2%
     </ul> </td>
    <td>
     <ol>
-     <li>Cloud Services 아래의 다이내믹 미디어 구성이 올바르게 설정되었는지 확인하십시오.</li>
+     <li>Cloud Services 아래의 Dynamic Media 구성이 올바르게 설정되었는지 확인하십시오.</li>
      <li>폴더에 비디오 프로필이 있는지 확인합니다. 또한 비디오 프로필을 확인하십시오.</li>
     </ol> </td>
   </tr>
@@ -194,7 +194,7 @@ ht-degree: 2%
      <li>Dynamic Media 동기화 폴더 내의 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> 폴더로 이동합니다(예: <code>/content/dam/_CSS/_OOTB</code>).</li>
      <li>문제가 있는 자산의 메타데이터 노드를 찾습니다(예: <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
      <li><code>dam:scene7*</code> 속성이 있는지 확인합니다. 자산이 성공적으로 동기화되고 게시되면 <code>dam:scene7FileStatus</code> 세트가 <strong>PublishComplete</strong>로 표시됩니다.</li>
-     <li>다음 속성 및 문자열 리터럴의 값을 연결하여 Dynamic Media에서 바로 아트웍을 요청하려고 합니다
+     <li>다음 속성 및 문자열 리터럴의 값을 연결하여 Dynamic Media에서 직접 아트웍을 요청하려고 합니다
       <ul>
        <li><code>dam:scene7Domain</code></li>
        <li><code>"is/content"</code></li>
