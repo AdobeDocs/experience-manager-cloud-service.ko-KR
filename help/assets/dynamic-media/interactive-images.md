@@ -1,8 +1,8 @@
 ---
 title: 대화형 이미지
-description: Dynamic Media에서 인터랙티브한 이미지를 사용하여 작업하는 방법 살펴보기
+description: Dynamic Media에서 인터랙티브한 이미지를 사용하여 작업하는 방법을 살펴봅니다.
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '4253'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 대화형 이미지 단계:
 
-1. **(선택 사항) 핫스팟 변수**  식별 - AEM Assets 및 Dynamic Media 독립 실행형 버전을 사용하는 경우, 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있도록 기존 Quickview 구현에서 사용되는 동적 변수를 식별하여 시작합니다. 핫스팟 변수](#optional-identifying-hotspot-variables)를 식별하는 [(선택 사항)을 참조하십시오.
+1. **(선택 사항) 핫스팟 변수**  식별 - AEM Assets 및 Dynamic Media 독립 실행형 항목을 사용하는 경우, 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있도록 기존 Quickview 구현에서 사용되는 동적 변수를 식별하여 시작합니다. 핫스팟 변수](#optional-identifying-hotspot-variables)를 식별하는 [(선택 사항)을 참조하십시오.
 그러나 AEM Sites, AEM eCommerce 또는 두 가지 모두를 사용하는 경우에는 이 단계가 필요하지 않습니다.
 
 1. **(선택 사항) 대화형 이미지 뷰어 사전 설정**  만들기 - 핫스팟을 나타내는 데 사용되는 그래픽 이미지를 사용자 정의합니다. `Shoppable_Banner`이라는 기본 대화형 이미지 뷰어 사전 설정을 대신 사용하려면 자신만의 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다.
@@ -52,8 +52,8 @@ ht-degree: 0%
 대화형 이미지 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하십시오.
 
 1. **AEMI를 사용하는 경우, AEM Sites, AEM eCommerce 또는**
-두 가지 모두를 사용하여 웹 사이트 또는 웹 사이트에 대화형 이미지를 추가하고, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. [페이지에 다이내믹 미디어 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-AEM Assets 및 다이내믹 미디어 독립 실행형 제품을 사용하는 경우 웹 사이트에 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. [웹 사이트](#integrating-an-interactive-image-with-your-website)와 대화형 이미지 통합을 참조하십시오.
+두 가지 모두를 사용하여 웹 사이트 또는 웹 사이트에 대화형 이미지를 추가하고, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. 페이지에 Dynamic Media 자산 추가를 참조하십시오.[](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+AEM Assets 및 Dynamic Media 독립 실행형 제품을 사용하는 경우 웹 사이트에 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. [웹 사이트](#integrating-an-interactive-image-with-your-website)와 대화형 이미지 통합을 참조하십시오.
 타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. [기존 Quickview](#integrating-an-interactive-image-with-an-existing-quickview)와 대화형 이미지 통합을 참조하십시오.
 
 ## (선택 사항) 핫스팟 변수 {#optional-identifying-hotspot-variables} 식별
@@ -316,7 +316,7 @@ AEM Assets과 함께 제공되는 `Shoppable_Banner`이라는 기본 대화형 �
 인터랙티브한 이미지가 마음에 들면 게시할 수 있습니다.
 웹 페이지에 [비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
-[페이지에 다이내믹 미디어 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+[페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **대화형 이미지를 미리 보려면**
 
@@ -333,7 +333,7 @@ AEM Assets과 함께 제공되는 `Shoppable_Banner`이라는 기본 대화형 �
 
 배너 이미지를 업로드하고, 이미지에 핫스팟을 추가하고, 대화형 이미지를 게시하면 이제 웹 사이트 페이지에 추가할 준비가 됩니다.
 
-AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 이미지를 추가할 수 있습니다. [페이지에 다이내믹 미디어 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 이미지를 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 독립형 AEM Assets 고객인 경우 이 섹션에 설명된 대로 웹 사이트에 대화형 이미지를 수동으로 추가할 수 있습니다.
 
