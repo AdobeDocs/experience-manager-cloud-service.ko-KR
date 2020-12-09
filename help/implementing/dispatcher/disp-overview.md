@@ -2,7 +2,7 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: ee53d400627fe2fd97d5cbdea8ddd38e00af191f
+source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 8%
@@ -17,12 +17,7 @@ ht-degree: 8%
 이 섹션에서는 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 Cloud 환경에 배포하기 전에 이를 로컬로 검증하고 실행하는 방법에 대해 설명합니다. 또한 클라우드 환경의 디버깅에 대해 설명합니다. Dispatcher에 대한 자세한 내용은 [AEM Dispatcher 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)를 참조하십시오.
 
 >[!NOTE]
->
 >Windows 사용자는 Windows 10 Professional 또는 Docker를 지원하는 기타 배포를 사용해야 합니다. 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 사전 요구 사항입니다. 아래 섹션에는 Mac 또는 Linux 버전의 SDK를 사용하는 명령이 포함되어 있지만 Windows SDK는 유사한 방식으로 사용할 수 있습니다.
-<!--
->[!WARNING]
->
->Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility. Alexandru note: removed at the request of Brian C -->
 
 ## 발송자 도구 {#dispatcher-sdk}
 
