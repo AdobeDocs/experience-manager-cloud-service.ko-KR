@@ -2,7 +2,7 @@
 title: 이미지 사전 설정 관리
 description: 이미지 사전 설정을 이해하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '3608'
 ht-degree: 3%
@@ -67,7 +67,7 @@ Adobe Illustrator의 파일 포맷은 PDF의 변형입니다. AEM Assets의 맥�
 
 자산을 열고 콘텐츠 메뉴를 누른 다음 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지]**&#x200B;를 선택합니다. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소로 추출됩니다. 그런 다음 기본 자산 아래에 `page1.pdf`, `page2.pdf` 등으로 저장됩니다. 저장된 후에는 `DAM Update Asset` 워크플로우가 처리합니다.
 
-Dynamic Media를 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
+AI, EPS 또는 PDF 파일에 대한 동적 변환을 미리 보고 생성하려면 다음 처리 단계가 필요합니다.
 
 1. `DAM Update Asset` 워크플로우에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소는 구성된 해상도를 사용하여 원본 자산의 첫 페이지를 `cqdam.preview.png` 변환으로 래스터화합니다.
 
@@ -173,9 +173,9 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 ### 이미지 축소판 크기 {#configuring-image-thumbnail-size} 구성
 
-**[!UICONTROL DAM 자산 업데이트]** 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 구성할 수 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. 정적 축소판 생성을 위해 하나(**[!UICONTROL Dynamic Media Process Image Assets]**)가 동적 이미지 자산과 다른 (**[!UICONTROL Process Thumbnails]**) 프로세스가 사용되거나 다른 모든 프로세스에서 축소판을 생성하지 못하는 경우, *모두*&#x200B;의 설정이 같아야 합니다.
+**[!UICONTROL DAM 자산 업데이트]** 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 구성할 수 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. 정적 축소판 생성을 위해 하나(**[!UICONTROL Dynamic Media 프로세스 이미지 자산]**)와 다른(**[!UICONTROL 프로세스 축소판]**)를 사용하는 경우나 다른 모든 프로세스가 축소판을 생성하지 못하는 경우 *모두 동일한 설정을 가져야 합니다.*
 
-**[!UICONTROL Dynamic Media Process Image Assets]** 단계에서는 이미지 서버에서 축소판을 생성하며 이 구성은 **[!UICONTROL Process Thumbnails]** 단계에 적용된 구성과 독립적입니다. 축소판을 만드는 가장 느리고 메모리 사용량이 많은 방법은 **[!UICONTROL 축소판 처리]** 단계를 통해 축소판을 생성하는 것입니다.
+**[!UICONTROL Dynamic Media 프로세스 이미지 자산]** 단계에서는 이미지 서버에서 축소판을 생성하며 이 구성은 **[!UICONTROL 축소판 처리]** 단계에 적용된 구성과 독립적입니다. 축소판을 만드는 가장 느리고 메모리 사용량이 많은 방법은 **[!UICONTROL 축소판 처리]** 단계를 통해 축소판을 생성하는 것입니다.
 
 축소판 크기 조정은 다음 형식으로 정의됩니다.**[!UICONTROL width:height:center]**(예: *80:80:false*) 너비와 높이는 축소판의 크기(픽셀 단위)를 결정합니다.center 값은 false 또는 true이고, true로 설정된 경우 축소판 이미지의 크기가 구성에 지정된 대로 정확하게 지정됩니다. 크기가 조정된 이미지가 더 작은 경우 축소판 내에서 가운데에 표시됩니다.
 
@@ -193,7 +193,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 **이미지 축소판 크기를 구성하려면**
 
 1. **[!UICONTROL 도구 > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집]**&#x200B;을 누릅니다.
-1. **[!UICONTROL 다이내믹 미디어 프로세스 이미지 자산]** 단계를 누르고 **[!UICONTROL 축소판]** 탭을 누릅니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL OK]**&#x200B;을 누릅니다.
+1. **[!UICONTROL Dynamic Media 프로세스 이미지 자산]** 단계를 누르고 **[!UICONTROL 축소판]** 탭을 누릅니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL OK]**&#x200B;을 누릅니다.
 
    ![6_5_dynamicmediaprocesseassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -201,7 +201,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
    >[!NOTE]
    >
-   >**[!UICONTROL Process Thumbnails]** 단계의 thumbnails 인수 값은 **[!UICONTROL Dynamic Media Process Image Assets]** 단계의 축소판 인수와 일치해야 합니다.
+   >**[!UICONTROL Process Thumbnails]** 단계의 thumbnails 인수 값은 **[!UICONTROL Dynamic Media 프로세스 이미지 자산]** 단계의 축소판 인수와 일치해야 합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 눌러 워크플로우에 대한 변경 사항을 저장합니다.
 
@@ -401,7 +401,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">이미지 서버 프로토콜 명령 참조</a>에서 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도, Dynamic Media은 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">이미지 서버 프로토콜 명령 참조</a>에서 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령:<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
      <li>현지화 명령:<code>locale=</code> 및 <code>req=xlate</code></li>
@@ -410,7 +410,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>비코어 다이내믹 미디어 서비스:SVG, 이미지 렌더링 및 Web-to-Print</li>
+     <li>비코어 Dynamic Media 서비스:SVG, 이미지 렌더링 및 Web-to-Print</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -418,7 +418,7 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
 
 ### 이미지 수정자 {#defining-image-preset-options-with-image-modifiers}를 사용하여 이미지 사전 설정 옵션 정의
 
-[기본] 및 [고급] 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 다이내믹 미디어 이미지 렌더링 API에 의존하며 [HTTP 프로토콜 참조](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)에 자세히 정의됩니다.
+[기본] 및 [고급] 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Dynamic Media 이미지 렌더링 API에 의존하며 [HTTP 프로토콜 참조](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)에 자세히 정의됩니다.
 
 다음은 이미지 수정자로 수행할 수 있는 작업의 몇 가지 기본 예입니다.
 
@@ -482,4 +482,4 @@ AI, PDF 및 EPS 파일의 통합 기능을 지원하기 위해 이러한 파일 
 ### 이미지 사전 설정 삭제 중 {#deleting-image-presets}
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산 > 이미지 사전 설정]**&#x200B;으로 이동합니다.
-1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다. Dynamic Media에서 삭제를 확인합니다. **[!UICONTROL 삭제]**&#x200B;를 눌러 삭제하거나 **[!UICONTROL 취소]**&#x200B;를 눌러 중단합니다.
+1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다. Dynamic Media에서 삭제할 것임을 확인합니다. **[!UICONTROL 삭제]**&#x200B;를 눌러 삭제하거나 **[!UICONTROL 취소]**&#x200B;를 눌러 중단합니다.
