@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media 자산 제공
-description: 다이내믹 미디어 에셋을 제공하는 방법 학습
+description: Dynamic Media 에셋을 제공하는 방법을 살펴보십시오.
 translation-type: tm+mt
-source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 26%
@@ -12,7 +12,7 @@ ht-degree: 26%
 
 # Dynamic Media 자산 제공{#delivering-dynamic-media-assets}
 
-비디오와 이미지 모두 다이내믹 미디어 자산을 제공하는 방법은 웹 사이트 구현 방법에 따라 달라집니다.
+동영상 및 이미지 등 Dynamic Media 자산을 제공하는 방법은 웹 사이트 구현 방법에 따라 다릅니다.
 
 Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
@@ -35,12 +35,12 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 * [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [반응형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)
 * [콘텐츠의 HTTP2 전달](/help/assets/dynamic-media/http2faq.md)
-* [다이내믹 미디어를 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [Dynamic Media Classic을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [규칙 세트를 사용하여 URL 변환](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## 다이내믹 미디어 자산의 HTTP/2 배달 {#http-delivery-of-dynamic-media-assets}
+## Dynamic Media 자산의 HTTP/2 배달 {#http-delivery-of-dynamic-media-assets}
 
-AEM은 이제 HTTP/2를 통해 모든 다이내믹 미디어 컨텐츠(이미지 및 비디오)의 배달을 지원합니다. 즉, 이미지나 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 그런 다음 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킵니다.
+AEM은 이제 HTTP/2를 통해 모든 Dynamic Media 컨텐츠(이미지 및 비디오)의 배달을 지원합니다. 즉, 이미지나 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 그런 다음 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 방식의 전달 방식은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 에셋에 대한 응답 및 로드 시간을 향상시킵니다.
 
 자세한 내용은 [HTTP/2 FAQ 배달](/help/assets/dynamic-media/http2faq.md)을 참조하십시오.
