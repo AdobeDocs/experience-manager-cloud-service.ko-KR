@@ -1,8 +1,8 @@
 ---
 title: 혼합 미디어 세트
-description: Dynamic Media에서 혼합 미디어 세트로 작업하는 방법 살펴보기
+description: Dynamic Media에서 다양한 미디어를 사용한 작업 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 1%
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->세트를 만드는 데 문제가 있는 경우 [다이내믹 미디어 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md)을 참조하십시오.
+>세트를 만드는 데 문제가 있으면 [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md)을 참조하십시오.
 
 ## 자산 업로드 {#uploading-assets}
 
