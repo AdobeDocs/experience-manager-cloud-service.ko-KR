@@ -1,8 +1,8 @@
 ---
 title: 스핀 세트
-description: Dynamic Media에서 스핀 세트를 사용하여 작업하는 방법 살펴보기
+description: Dynamic Media에서 스핀 세트를 사용하여 작업하는 방법을 살펴봅니다.
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 회전 세트는 개체를 돌려 검사하는 실제 동작을 시뮬레이션합니다. 회전 집합을 사용하면 모든 각도에서 항목을 볼 수 있으므로 모든 각도에서 주요 시각적 세부 사항을 얻을 수 있습니다.
 
-스핀 세트는 360도 보기 환경을 시뮬레이션합니다. 동적 미디어는 사용자가 항목을 회전할 수 있는 단일 축 회전 집합을 제공합니다. 또한 사용자는 몇 번의 마우스 클릭만으로 모든 보기를 &quot;자유로운 형식&quot;으로 확대/축소하고 이동할 수 있습니다. 이러한 방식으로 사용자는 특정 관점에서 항목을 더 자세히 검사할 수 있습니다.
+스핀 세트는 360도 보기 환경을 시뮬레이션합니다. Dynamic Media은 사용자가 항목을 회전할 수 있는 단일 축 회전 집합을 제공합니다. 또한 사용자는 몇 번의 마우스 클릭만으로 모든 보기를 &quot;자유로운 형식&quot;으로 확대/축소하고 이동할 수 있습니다. 이러한 방식으로 사용자는 특정 관점에서 항목을 더 자세히 검사할 수 있습니다.
 
 스핀 세트는 **[!UICONTROL SPINSET]**&#x200B;이라는 단어가 있는 배너에 의해 지정됩니다. 또한 스핀 세트가 게시되면 **[!UICONTROL 연필]** 아이콘으로 표시된 마지막 수정 날짜와 함께 배너에 **[!UICONTROL 월드]** 아이콘으로 표시된 게시 날짜가 표시됩니다.
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 >
 >[일괄 세트 사전 설정](/help/assets/dynamic-media/config-dm.md)을 통해 자동으로 스핀 세트를 만들 수도 있습니다. **중요:** 일괄 처리 세트는 자산 수집의 일부로 IPS(Image Production System)에 의해 만들어집니다.
 >
->[다이내믹 미디어 구성](/help/assets/dynamic-media/config-dm.md)에서 &quot;이미지 세트 및 스핀 세트를 자동으로 생성하기 위한 배치 집합 사전 설정 만들기&quot;를 참조하십시오.
+>[Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md)에서 &quot;이미지 세트 및 스핀 세트를 자동으로 생성하기 위한 배치 집합 사전 설정 만들기&quot;를 참조하십시오.
 
 >[!NOTE]
 >
@@ -165,7 +165,7 @@ ht-degree: 0%
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
-1. 검색에서 **[!UICONTROL 필터]**&#x200B;를 선택한 다음 **[!UICONTROL 다이내믹 미디어]**&#x200B;를 확장하고 **[!UICONTROL 세트]**&#x200B;를 선택할 수 있습니다.
+1. 검색에서 **[!UICONTROL 필터]**&#x200B;를 선택한 다음 **[!UICONTROL Dynamic Media]**&#x200B;을 확장하고 **[!UICONTROL 세트]**&#x200B;를 선택할 수 있습니다.
 
    검색은 UI에서 수동으로 만들거나 배치 집합 사전 설정을 통해 자동으로 생성된 일치 집합을 반환합니다. 자동화된 세트의 경우 `Starts with` 검색 기준을 사용하는 AEM 검색과 다른 검색 기준을 사용하여 검색 쿼리를 수행합니다. `Contains` 필터를 **[!UICONTROL Sets]**&#x200B;로 설정하는 것은 자동화된 집합을 검색하는 유일한 방법입니다.
 
