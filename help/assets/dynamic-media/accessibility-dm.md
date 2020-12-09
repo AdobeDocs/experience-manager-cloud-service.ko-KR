@@ -1,11 +1,11 @@
 ---
 title: 액세스 가능성( [!DNL Dynamic Media])
-description: 다이내믹 미디어 및 다이내믹 미디어 뷰어의 액세스 가능성에 대해 알아봅니다.
+description: Dynamic Media 및 Dynamic Media 뷰어의 액세스 가능성에 대해 알아봅니다.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 ---
 
 
-# 동적 미디어 {#working-with-three-d-assets-dm}의 액세스 가능성
+# Dynamic Media {#working-with-three-d-assets-dm}의 액세스 가능성
 
-Dynamic Media는 저작 사용자 인터페이스 전반에서 JAWS 및 NVDA 화면 판독기와 같은 키보드 제어 및 보조 기술을 지원합니다.
+Dynamic Media은 저작 유저 인터페이스에서 JAWS 및 NVDA 화면 판독기와 같은 키보드 제어 및 보조 기술을 지원합니다.
 
-## Dynamic Media의 키보드 액세스 지원
+## Dynamic Media의 키보드 접근성 지원
 
-Dynamic Media는 Experience Manager 에셋에 대한 플러그인이므로 대부분의 키보드 제어 동작은 Experience Manager 에셋의 경우와 동일합니다. 예를 들어, 다이내믹 미디어의 `Cancel` 버튼은 Experience Manager 자산과 동일한 초점 강조 표시를 가지며 Experience Manager 자산에서와 마찬가지로 `Spacebar` 키에 응답합니다. 자산](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키를 참조하십시오.
+Dynamic Media은 Experience Manager 에셋에 대한 플러그인이므로 대부분의 키보드 제어 동작은 Experience Manager 에셋과 정확히 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 단추는 Experience Manager 자산과 동일한 초점 강조 표시를 가지며 Experience Manager 자산에서와 마찬가지로 `Spacebar` 키에 응답합니다. 자산](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키를 참조하십시오.
 
-Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 쉽게 찾을 수 있습니다. Dynamic Media의 키보드 제어는 다음과 같습니다.
+Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 거의 명확하고 쉽게 찾을 수 있습니다. Dynamic Media의 키보드 제어는 다음과 같습니다.
 
 * 페이지의 대화형 요소 간을 탐색하기 위해 `Tab` 및 `Shift+Tab` 키 입력을 사용하는 기능
 `Tab`을 사용하면 입력 포커스를 탭 순서의 다음 사용자 인터페이스 요소로 이동합니다.`Shift+Tab`을(를) 사용하면 입력 포커스가 이전 사용자 인터페이스 요소로 돌아갑니다.
@@ -44,20 +44,20 @@ Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## 동적 미디어 의 보조 기술 지원 {#assistive-technology=support-for-dm}
+## Dynamic Media {#assistive-technology=support-for-dm}의 보조 기술 지원
 
-다이내믹 미디어 사용자 인터페이스 요소는 화면 판독기와 같은 보조 기술과 함께 작동합니다. 예를 들어 키보드 단축키 `D` 또는 키보드 단축키 `R`를 사용하여 랜드마크를 탐색할 때 페이지의 랜드마크를 인식합니다. 제목 키보드 단축키 `H`를 사용하여 탐색할 때 제목 내레이션이 적용됩니다.
+Dynamic Media 유저 인터페이스 요소는 화면 판독기와 같은 보조 기술과 연동됩니다. 예를 들어 키보드 단축키 `D` 또는 키보드 단축키 `R`를 사용하여 랜드마크를 탐색할 때 페이지의 랜드마크를 인식합니다. 제목 키보드 단축키 `H`를 사용하여 탐색할 때 제목 내레이션이 적용됩니다.
 
-## 다이내믹 미디어 뷰어에서 키보드 접근성 지원 {#keyboard-accessibility-for-dm-viewers}
+## Dynamic Media 뷰어에서 키보드 접근성 지원 {#keyboard-accessibility-for-dm-viewers}
 
-즉시 사용 가능한 모든 다이내믹 미디어 뷰어 구성 요소는 고객의 키보드 접근성을 지원합니다.
+즉시 사용 가능한 모든 Dynamic Media 뷰어 구성 요소는 고객의 키보드 접근성을 지원합니다.
 
-다이내믹 미디어 뷰어 참조 안내서의 [키보드 액세스 및 내비게이션](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 [키보드 액세스 및 탐색](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
 
-## 동적 미디어 뷰어에서 보조 기술 지원 {#assistive-technology=support-for-dm-viewers}
+## Dynamic Media 뷰어에서 보조 기술 지원 {#assistive-technology=support-for-dm-viewers}
 
-모든 Dynamic Media 뷰어 구성 요소는 ARIA(Accessible Rich Internet Application) 역할 및 속성을 지원하여 화면 판독기와 같은 보조 기술과의 통합을 향상시킵니다.
-Dynamic Media Viewers Reference Guide의 사용자 정의 뷰어 항목에 있는 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html), 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)을 참조하십시오.
+모든 Dynamic Media 뷰어 구성 요소는 화면 판독기와 같은 보조 기술과의 통합을 개선하기 위해 ARIA(액세스 가능한 리치 인터넷 애플리케이션) 역할 및 속성을 지원합니다.
+Dynamic Media 뷰어 참조 안내서의 사용자 정의 뷰어 항목에 있는 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html), 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)을 참조하십시오.
 
 >[!MORELIKETHIS]
 >
