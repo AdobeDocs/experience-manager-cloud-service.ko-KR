@@ -1,18 +1,18 @@
 ---
 title: Dynamic Media 자산 제공
-description: Dynamic Media에는 다이내믹 미디어 자산(비디오와 이미지 모두)을 웹 사이트에 제공할 수 있는 선택 사항이 몇 가지 있습니다.
+description: Dynamic Media을 사용하면 비디오와 이미지 모두 Dynamic Media 에셋을 웹 사이트에 전달할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 81%
+ht-degree: 62%
 
 ---
 
 
 # Dynamic Media 자산 제공{#delivering-dynamic-media-assets}
 
-비디오와 이미지 모두 Dynamic Media 자산을 제공하는 방법은 웹 사이트를 구현하는 방법에 따라 다릅니다.
+비디오 및 이미지 모두 Dynamic Media 자산을 제공하는 방법은 웹 사이트 구현 방법에 따라 다릅니다.
 
 Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
