@@ -1,8 +1,8 @@
 ---
 title: 비디오
-description: Dynamic Media에서 비디오를 사용하여 작업하는 방법 살펴보기
+description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '10081'
 ht-degree: 1%
@@ -16,13 +16,13 @@ ht-degree: 1%
 
 ## 빠른 시작:비디오 {#quick-start-videos}
 
-다음 단계별 워크플로우 설명은 Dynamic Media에서 적응형 비디오 세트를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다. 각 단계 후에는 주제 제목에 대한 상호 참조가 있습니다. 여기에서 자세한 내용을 찾을 수 있습니다.
+다음 단계별 워크플로우 설명은 Dynamic Media의 적응형 비디오 세트를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다. 각 단계 후에는 주제 제목에 대한 상호 참조가 있습니다. 여기에서 자세한 내용을 찾을 수 있습니다.
 
 >[!NOTE]
 >
->Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 이미 Dynamic Media Cloud Services을 활성화하고 구성했는지 확인하십시오.
+>Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 이미 Dynamic Media Cloud Services을 사용하도록 설정했는지 확인하십시오.
 >
->* 동적 미디어 구성 및 [다이내믹 미디어 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md)에서 [다이내믹 미디어 Cloud Services 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
+>* Dynamic Media 구성 및 [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md)에서 [Dynamic Media Cloud Services 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
 
 >
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 1. **다음을 수행하여 Dynamic Media** 비디오를 업로드합니다.
 
-   * 고유한 비디오 인코딩 프로필을 만듭니다. 또는 다이내믹 미디어와 함께 제공되는 사전 정의된 _응용 비디오 인코딩_ 프로필을 사용하면 됩니다.
+   * 고유한 비디오 인코딩 프로필을 만듭니다. 또는 Dynamic Media과 함께 제공되는 사전 정의된 _응용 비디오 인코딩_ 프로필을 사용하면 됩니다.
 
       * [비디오 인코딩 프로필](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 만들기
       * [비디오 인코딩 우수 사례](#best-practices-for-encoding-videos)에 대해 자세히 알아보십시오.
@@ -117,13 +117,13 @@ ht-degree: 1%
 
 
 
-## 동적 미디어 {#working-with-video-in-dynamic-media}에서 비디오 작업
+## Dynamic Media {#working-with-video-in-dynamic-media}의 비디오 작업
 
 Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows 모바일 디바이스 등 다양한 화면에서 스트리밍할 수 있는 고품질의 적응형 비디오를 손쉽게 퍼블리싱할 수 있는 엔드 투 엔드 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치에서 사용 가능한 대역폭을 감지합니다.
 
 예를 들어 iOS 모바일 장치에서 3G, 4G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음 응용 비디오 세트 내의 다양한 비디오 비트 전송률 중에서 올바른 인코딩된 비디오를 자동으로 선택합니다. 이 비디오는 데스크톱, 모바일 장치 또는 태블릿으로 스트리밍됩니다.
 
-또한 데스크탑 또는 모바일 디바이스에서 네트워크 상태가 변경되면 비디오 품질이 동적으로 전환됩니다. 또한 고객이 데스크탑에서 전체 화면 모드로 전환하면 응용 비디오 세트는 더 나은 해상도를 사용하여 응답하므로 고객의 보기 환경이 개선됩니다. 응용 비디오 세트를 사용하면 다양한 화면과 디바이스에서 Dynamic Media 비디오를 재생하는 고객에게 최상의 재생이 가능합니다.
+또한 데스크탑 또는 모바일 디바이스에서 네트워크 상태가 변경되면 비디오 품질이 동적으로 전환됩니다. 또한 고객이 데스크탑에서 전체 화면 모드로 전환하면 응용 비디오 세트는 더 나은 해상도를 사용하여 응답하므로 고객의 보기 환경이 개선됩니다. 적응형 비디오 세트를 사용하면 다양한 화면 및 디바이스에서 Dynamic Media 비디오를 재생하는 고객에게 최상의 재생 효과를 제공할 수 있습니다.
 
 비디오 플레이어에서 재생할 인코딩된 비디오를 결정하거나 재생 중에 선택할 인코딩된 비디오를 결정하는 로직은 다음 알고리즘을 기반으로 합니다.
 
@@ -146,13 +146,13 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows �
 * 비디오 에셋을 효율적으로 관리할 수 있는 완벽한 메타데이터 지원을 통해 비디오를 구성, 검색 및 검색할 수 있습니다.
 * 응용 비디오 세트를 웹뿐만 아니라 iPhone, iPad, Android, Blackberry 및 Windows 폰을 비롯한 데스크탑 및 모바일 장치에 제공합니다.
 
-적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [다이내믹 미디어 뷰어 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)를 참조하십시오.
+적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)를 참조하십시오.
 
-Dynamic Media는 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다.[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
+Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다.[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
 
 다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다.[Windows Phone에서 지원되는 비디오 형식](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* 다음을 포함한 Dynamic Media Video Viewer 사전 설정을 사용하여 비디오를 재생합니다.
+* 다음을 포함한 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
    * 단일 비디오 뷰어
    * 비디오와 이미지 컨텐츠를 모두 결합하는 혼합 미디어 뷰어.
@@ -162,7 +162,7 @@ Dynamic Media는 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 [동적 비디오 재생](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 샘플을 참조하십시오.
 
-](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)다이내믹 미디어 뷰어 참조 안내서[에서 AEM Assets 및 Dynamic Media Classic[용 뷰어 및 ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)AEM Assets용 뷰어는 [만 참조하십시오.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
+](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)Dynamic Media 뷰어 참조 안내서[에서 AEM Assets 및 Dynamic Media Classic[용 뷰어 및 ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)AEM Assets용 뷰어[를 참조하십시오.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
 
 ## 모범 사례:HTML5 비디오 뷰어 {#best-practice-using-the-html-video-viewer} 사용
 
@@ -174,7 +174,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하고 내장된 재생을 제공하며 브라우저 기능에 따라 적응형 및 점진적 스트리밍을 사용하는 단일 플레이어로 통합함으로써 리치 미디어 컨텐츠의 범위를 데스크탑 및 모바일 사용자 모두로 확대하고 간소화된 비디오 경험을 제공할 수 있습니다.
 
-[다이내믹 미디어 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)에서 AEM Assets용 뷰어만 [을 참조하십시오.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)
+[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)에서 AEM Assets용 뷰어만 [을 참조하십시오.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)
 
 ### HTML5 비디오 뷰어 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}를 사용하여 데스크톱 컴퓨터와 모바일 장치에서 비디오 재생
 
@@ -263,9 +263,9 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
  </tbody>
 </table>
 
-## 다이내믹 미디어 비디오 솔루션 {#architecture-of-dynamic-media-video-solution} 아키텍처
+## Dynamic Media 비디오 솔루션 아키텍처 {#architecture-of-dynamic-media-video-solution}
 
-다음 그래픽은 DMGateway(Dynamic Media Hybrid 모드)를 통해 업로드 및 인코딩된 비디오의 전체 제작 워크플로우를 보여줍니다.
+다음 그래픽은 DMGateway(Dynamic Media 하이브리드 모드)를 통해 업로드 및 인코딩되고 공개 소비에 사용할 수 있도록 만들어진 비디오의 전체 제작 워크플로우를 보여줍니다.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -275,7 +275,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 ## 비디오 인코딩 우수 사례 {#best-practices-for-encoding-videos}
 
-동적 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 **다이내믹 미디어 인코딩 비디오** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 모니터링 및 YouTube 게시 진행률](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL 다이내믹 미디어 인코딩 비디오]** 워크플로우가 자동으로 적용됩니다. 동적 미디어를 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.
+동적 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 **Dynamic Media 비디오 인코딩** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 모니터링 및 YouTube 게시 진행률](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. 동적 미디어를 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.
 
 다음은 소스 비디오 파일을 인코딩하기 위한 우수 사례 팁입니다.
 
@@ -409,7 +409,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 ### 인코딩된 비디오 파일 형식 {#encoded-video-file-format}
 
-Dynamic Media는 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것이 좋습니다. MP4 파일은 H.264 비디오 코덱을 사용하기 때문에 고품질 비디오를 제공하지만 압축된 파일 크기로 제공합니다.
+Dynamic Media은 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것이 좋습니다. MP4 파일은 H.264 비디오 코덱을 사용하기 때문에 고품질 비디오를 제공하지만 압축된 파일 크기로 제공합니다.
 
 ## YouTube {#publishing-videos-to-youtube}에 비디오 게시
 
@@ -417,9 +417,9 @@ AEM Assets에서 관리되는 비디오 자산을 이전에 만든 YouTube 채�
 
 비디오 자산을 YouTube에 게시하려면 AEM Assets의 비디오 자산에 태그를 태그로 지정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
 
-YouTube는 자체 인코딩을 수행합니다. 따라서 AEM에 업로드된 원본 비디오 파일은 Dynamic Media 인코딩이 생성된 모든 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media를 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 비디오를 처리할 필요가 있습니다.
+YouTube는 자체 인코딩을 수행합니다. 따라서 AEM에 업로드된 원본 비디오 파일은 Dynamic Media 인코딩이 생성된 모든 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 처리할 것입니다.
 
-비디오 처리 프로필을 무시하고 YouTube에 직접 게시하는 경우 간단히 말해 AEM Asset의 비디오 에셋에 볼 수 있는 축소판이 없을 수 있습니다. 또한 인코딩되지 않은 비디오는 어떤 Dynamic Media 자산 유형에서도 작동하지 않습니다.
+비디오 처리 프로필을 무시하고 YouTube에 직접 게시하는 경우 간단히 말해 AEM Asset의 비디오 에셋에 볼 수 있는 축소판이 없을 수 있습니다. 또한 인코딩되지 않은 비디오는 어떤 Dynamic Media 에셋 유형에서도 작동하지 않습니다.
 
 YouTube 서버에 비디오 에셋을 게시하려면 YouTube를 통해 안전하고 안전한 서버 간 인증을 보장하기 위해 다음 작업을 완료해야 합니다.
 
@@ -589,7 +589,7 @@ AEM 6.4부터 AEM에서 YouTube 게시를 설정하는 새로운 터치 사용�
 
 #### AEM 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
 
-1. Dynamic Media 인스턴스에 관리자로 로그인해야 합니다.
+1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube 게시 구성]**&#x200B;을 누릅니다.
 1. **[!UICONTROL global]**&#x200B;을 누릅니다(선택하지 않음).
 
@@ -636,7 +636,7 @@ YouTube 구성 만들기 페이지를 엽니다.잠시 후에 다시 돌아오�
 
 #### 6.4 {#setting-up-youtube-in-aem-before} 이전에 AEM에서 YouTube 설정
 
-1. Dynamic Media 인스턴스에 관리자로 로그인해야 합니다.
+1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**&#x200B;을 누릅니다.
 1. 타사 서비스 머리글 아래의 YouTube에서 **[!UICONTROL 지금 구성]**&#x200B;을 탭합니다.
@@ -749,9 +749,9 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 
 >[!NOTE]
 >
->즉시 게시해도 YouTube에 자동으로 게시되지는 않습니다. Dynamic Media를 설정하면 두 가지 게시 옵션을 선택할 수 있습니다.**[!UICONTROL 즉시]** 또는 **[!UICONTROL 활성화 시]**
+>즉시 게시해도 YouTube에 자동으로 게시되지는 않습니다. Dynamic Media이 설정되면 다음 두 가지 게시 옵션 중에서 선택할 수 있습니다.**[!UICONTROL 즉시]** 또는 **[!UICONTROL 활성화 시]**
 >
->**[!UICONTROL 즉시 게시]** 는 업로드된 자산이 IPS와 동기화된 후 배달 시스템에 자동으로 게시됨을 의미합니다. 이는 다이내믹 미디어에 해당되지만 YouTube에서는 그렇지 않습니다. YouTube에 게시하려면 AEM 작성자 방식으로 게시해야 합니다.
+>**[!UICONTROL 즉시 게시]** 는 업로드된 자산이 IPS와 동기화된 후 배달 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media에게 이것은 사실이지만, 유튜브에는 사실이 아니다. YouTube에 게시하려면 AEM 작성자 방식으로 게시해야 합니다.
 
 >[!NOTE]
 AEM은 YouTube에서 콘텐츠를 게시하기 위해 진행 상황을 모니터링하고 오류 정보를 볼 수 있는 **[!UICONTROL Publish to YouTube에 게시 워크플로우를 사용합니다.]**
@@ -788,7 +788,7 @@ AEM은 YouTube에서 콘텐츠를 게시하기 위해 진행 상황을 모니터
 
 ### 웹 응용 프로그램 {#linking-youtube-urls-to-your-web-application}에 YouTube URL 연결
 
-비디오를 게시한 후 Dynamic Media에서 생성된 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 배치되므로 필요에 따라 웹 사이트나 애플리케이션의 페이지에 붙여넣을 수 있습니다.
+비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 배치되므로 필요에 따라 웹 사이트나 애플리케이션의 페이지에 붙여넣을 수 있습니다.
 
 >[!NOTE]
 YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 수 없습니다.
@@ -945,7 +945,7 @@ For YouTube publishing jobs, do the following:
 ## 비디오 보고서 보기 {#viewing-video-reports}
 
 >[!NOTE]
-비디오 보고서는 다이내믹 미디어 - 하이브리드 모드를 실행할 때만 사용할 수 있습니다.
+비디오 보고서는 Dynamic Media - 하이브리드 모드를 실행할 때만 사용할 수 있습니다.
 
 비디오 보고서에는 지정된 기간 동안 여러 개의 집계 지표가 표시되므로 *게시된 *개별 비디오와 집계 비디오가 예상대로 수행되고 있음을 모니터링할 수 있습니다. 다음 상위 지표 데이터는 전체 웹 사이트에서 게시된 모든 비디오에 대해 집계됩니다.
 
@@ -959,14 +959,14 @@ For YouTube publishing jobs, do the following:
 
 목록에서 비디오 이름을 누르면 라인 차트 형식으로 비디오의 대상 유지(드롭다운) 보고서가 표시됩니다. 차트에는 비디오 재생 중 특정 시간에 대한 보기 수가 표시됩니다. 비디오를 재생하면 세로 막대가 플레이어의 시간 표시기와 동기화되어 추적됩니다. 라인 차트 데이터의 드롭은 대상이 관심 없는 곳을 나타냅니다.
 
-비디오가 Adobe Experience Manager 동적 미디어 외부에서 인코딩된 경우 테이블의 대상 유지(드롭다운) 차트와 재생 백분율 데이터를 사용할 수 없습니다.
+비디오가 Adobe Experience Manager Dynamic Media 외부에 인코딩된 경우 대상 유지(드롭다운) 차트와 테이블의 재생 백분율 데이터를 사용할 수 없습니다.
 
 >[!NOTE]
 추적 및 보고 데이터는 Dynamic Media의 자체 비디오 플레이어 및 관련 비디오 플레이어 사전 설정을 사용하는 경우에만 적용됩니다. 따라서 다른 비디오 플레이어로 재생되는 비디오를 추적하고 보고할 수 없습니다.
 
 기본적으로 비디오 보고서를 처음 입력할 때 보고서는 현재 월의 첫 부분에서 시작하여 현재 월의 날짜에 끝나는 비디오 데이터를 표시합니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 무시할 수 있습니다. 다음 번에 비디오 보고서를 입력하면 지정한 날짜 범위가 사용됩니다.
 
-비디오 보고서가 올바르게 작동하려면 다이내믹 미디어 Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능을 사용할 수 있습니다. 그러나 게시 서버가 이미 설정되어 있어야 합니다. 게시 서버가 설정되어 있지 않으면 여전히 게시하여 비디오 보고서를 볼 수 있지만, Dynamic Media Cloud 구성으로 돌아가 **[!UICONTROL OK]**&#x200B;을 탭해야 합니다.
+비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능을 사용할 수 있습니다. 그러나 게시 서버가 이미 설정되어 있어야 합니다. 게시 서버가 설정되어 있지 않으면 여전히 게시하여 비디오 보고서를 볼 수 있지만, Dynamic Media 클라우드 구성으로 돌아가 **[!UICONTROL OK]**&#x200B;을 탭해야 합니다.
 
 비디오 보고서를 보려면:
 
@@ -985,11 +985,11 @@ For YouTube publishing jobs, do the following:
 
 ### Dynamic Media HTML5 뷰어 SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기
 
-Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 Dynamic Media HTML5 Viewer SDK를 기반으로 자체 비디오 뷰어를 만든 경우 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서로 보내고 있는지 확인합니다.
+Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 Dynamic Media HTML5 뷰어 SDK를 기반으로 자체 비디오 뷰어를 만든 경우, 다음 단계에 따라 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서로 전송하도록 하십시오.
 
-다이내믹 미디어 뷰어 참조 및 다이내믹 미디어 HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
+Dynamic Media 뷰어 참조 및 Dynamic Media HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
-[다이내믹 미디어 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en)를 참조하십시오.
+[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en)를 참조하십시오.
 
 <!-- 
 
@@ -1059,7 +1059,7 @@ to attach the component to the trackingManager. 한 페이지에서 여러 뷰�
 >[!NOTE]
 사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
 
-Dynamic Media는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능을 제공합니다. 이러한 전환은 JSON 텍스트를 숨김과 전체 비디오 스크립트로 웹 페이지에 포함시킬 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링 및 색인화하여 비디오를 보다 손쉽게 검색할 수 있도록 하고 비디오 컨텐츠에 대한 추가 정보를 고객에게 제공할 수 있습니다.
+Dynamic Media은 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환할 수 있는 기능을 갖추고 있습니다. 이러한 전환은 JSON 텍스트를 숨김과 전체 비디오 스크립트로 웹 페이지에 포함시킬 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링 및 색인화하여 비디오를 보다 손쉽게 검색할 수 있도록 하고 비디오 컨텐츠에 대한 추가 정보를 고객에게 제공할 수 있습니다.
 
 URL에서 JSON 함수 사용에 대한 자세한 내용은 [정적(이미지가 아님) 컨텐츠 제공](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)을 참조하십시오.
 
@@ -1112,7 +1112,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 [정적(이미지가 
 장 마커를 단일 비디오 또는 응용 비디오 세트에 추가하여 긴 양식 비디오를 보다 손쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생하면 비디오 타임라인에서 장 마커(비디오 스크러버)를 클릭하여 관심 영역으로 손쉽게 이동하거나 새로운 컨텐츠, 데모, 자습서 등으로 바로 이동할 수 있습니다.
 
 >[!NOTE]
-사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. 다이내믹 미디어 비디오 플레이어는 장 마커를 지원하지만 타사 비디오 플레이어를 사용하는 경우에는 지원하지 않을 수 있습니다.
+사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장(chapter) 마커를 지원하지만 타사 비디오 플레이어를 사용하는 것은 그렇지 않을 수 있습니다.
 
 원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 사용하여 자신만의 HTML5 뷰어를 만드는 방법에 대한 지침은 HTML5용 Adobe Scene7 뷰어 SDK 안내서에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;수정자를 사용하여 동작 사용자 정의&quot; 머리글을 참조하십시오. Adobe Scene7 뷰어 SDK는 [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)에서 다운로드할 수 있습니다.
 
