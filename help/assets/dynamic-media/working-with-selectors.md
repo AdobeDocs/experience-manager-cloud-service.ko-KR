@@ -1,16 +1,16 @@
 ---
 title: 선택기를 사용한 작업
-description: 인터랙티브한 이미지, 인터랙티브한 비디오 및 회전판 배너용 에셋 선택
+description: Dynamic Media에서 인터랙티브한 이미지, 인터랙티브한 비디오 및 회전판 배너에 사용할 에셋을 선택하는 데 사용할 수 있는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '748'
 ht-degree: 2%
 
 ---
 
 
-# 동적 미디어 {#working-with-selectors}에서 선택기 작업
+# Dynamic Media {#working-with-selectors}에서 선택기 작업
 
 대화형 이미지, 대화형 비디오 또는 회전 배너를 사용하여 작업할 때 자산을 선택하고 핫스팟과 연결할 이미지 맵의 사이트 및 제품을 선택합니다. 이미지 세트, 스핀 세트 및 멀티미디어 세트로 작업하는 경우 자산 선택기로 자산을 선택합니다.
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 핫스팟 또는 이미지 맵이 있는 위치를 선택(수동으로 입력하는 대신)하면 선택기를 사용합니다. 사이트 선택기는 AEM Sites 고객인 경우에만 작동합니다. 제품 선택기에는 AEM Commerce도 필요합니다.
 
-## 다이내믹 미디어 {#selecting-products}에서 제품 선택
+## Dynamic Media {#selecting-products}에서 제품 선택
 
 제품 선택기를 사용하여 핫스팟 또는 이미지 맵에서 제품 카탈로그의 특정 제품에 대한 빠른 보기를 제공할 제품을 선택합니다.
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 동적 미디어 {#selecting-sites}에서 사이트 선택
+## Dynamic Media {#selecting-sites}에서 사이트 선택
 
 AEM 사이트에서 관리되는 웹 페이지에 핫스팟 또는 이미지 맵을 연결하려는 경우 사이트 선택기를 사용하여 웹 페이지를 선택합니다.
 
@@ -82,7 +82,7 @@ AEM 사이트에서 관리되는 웹 페이지에 핫스팟 또는 이미지 맵
 
 1. 핫스팟 또는 이미지 맵을 누르는 경우 **[!UICONTROL 미리 보기]** 모드에서는 지정한 AEM 사이트 페이지로 이동합니다.
 
-## 다이내믹 미디어 {#selecting-assets}에서 자산 선택
+## Dynamic Media {#selecting-assets}에서 자산 선택
 
 회전판 배너, 대화형 비디오, 이미지 세트, 혼합 미디어 집합 및 스핀 집합에 사용할 이미지를 선택하려면 이 선택기를 사용합니다. 대화형 비디오에서는 **[!UICONTROL 콘텐츠]** 탭에서 **[!UICONTROL 자산 선택]**&#x200B;을 탭하면 자산 선택기를 사용할 수 있습니다. 회전판 세트에서 새 슬라이드를 만들 때 자산 선택기를 사용할 수 있습니다. 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 새 이미지 세트, 혼합 미디어 세트 또는 스핀 세트를 각각 만들 때 자산 선택기를 사용할 수 있습니다.
 
