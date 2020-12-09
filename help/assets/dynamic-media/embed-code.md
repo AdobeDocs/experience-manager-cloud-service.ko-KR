@@ -1,16 +1,16 @@
 ---
 title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
-description: 웹 페이지에 Dynamic Media 비디오 또는 이미지를 임베드하는 방법 학습
+description: 웹 페이지에 Dynamic Media 비디오 또는 이미지 에셋을 포함하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
 
 
-# 웹 페이지 {#embedding-the-video-or-image-viewer-on-a-web-page}에 Dynamic Media Video, Image Viewer 또는 Dimension 뷰어 포함
+# 웹 페이지 {#embedding-the-video-or-image-viewer-on-a-web-page}에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함
 
 비디오를 재생하거나 웹 페이지에 포함된 자산을 보려면 **[!UICONTROL 포함 코드]** 기능을 사용하십시오. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. **[!UICONTROL 포함 코드]** 대화 상자에서 코드 편집이 허용되지 않습니다.
 
@@ -48,8 +48,8 @@ AEM을 WCM으로 사용하는 경우 _이 아닌 경우에만 URL을 포함합�
 1. **[!UICONTROL 포함 코드]** 대화 상자에서 전체 코드를 클립보드로 복사한 다음 **[!UICONTROL 닫기]**&#x200B;를 누릅니다.
 1. 포함 코드를 웹 페이지에 붙여넣습니다.
 
-## HTTP/2를 사용하여 동적 미디어 자산 {#using-http-to-deliver-your-dynamic-media-assets} 전달
+## HTTP/2를 사용하여 Dynamic Media 자산 {#using-http-to-deliver-your-dynamic-media-assets} 전달
 
-HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. HTTP/2를 통해 다이내믹 미디어 에셋을 전달할 수 있으므로 응답 및 로드 시간이 향상됩니다.
+HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 에셋 배달을 HTTP/2를 통해 더 나은 응답 및 로드 시간을 제공할 수 있습니다.
 
-Dynamic Media 계정으로 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 [HTTP2 콘텐츠 배달](http2faq.md)을 참조하십시오.
+Dynamic Media 계정에서 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 [HTTP2 콘텐츠 배달](http2faq.md)을 참조하십시오.
