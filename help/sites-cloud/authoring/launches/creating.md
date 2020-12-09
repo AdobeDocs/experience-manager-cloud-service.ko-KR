@@ -2,10 +2,10 @@
 title: 론치 만들기
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 80%
+source-wordcount: '1045'
+ht-degree: 76%
 
 ---
 
@@ -19,6 +19,18 @@ ht-degree: 80%
 * 기본적으로, Live Copy는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 복사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **론치 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합하여 작동합니다([론치 구성 편집](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되도록 하려면 둘 다 설정해야 합니다.
+
+>[!NOTE]
+>
+>론치를 만들 때 계층 구조의 상위 페이지는 소스 페이지의 복사본이 아닙니다. 템플릿은 템플릿으로 만든 자리 표시자입니다.
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+이러한 페이지는 편집할 수 없습니다. 다음과 같은 메시지가 표시됩니다.
+>
+>* **이 페이지는 론치의 일부가 아닙니다.프로덕션 페이지로 이동**
+
 
 ## 론치 만들기 {#creating-a-launch}
 
