@@ -1,10 +1,10 @@
 ---
 title: 반응형 사이트에 최적화된 이미지 제공
-description: 반응형 코드 기능을 사용하여 최적화된 이미지를 전달하는 방법
+description: 반응형 코드 기능을 사용하여 Dynamic Media에서 최적화된 이미지를 전달하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '322'
 ht-degree: 3%
 
 ---
@@ -43,8 +43,8 @@ ht-degree: 3%
 1. **[!UICONTROL 응답형 이미지 포함]** 대화 상자에서 응답형 코드 텍스트를 선택하고 복사하여 웹 사이트에 붙여 넣어 응답형 자산에 액세스합니다.
 1. 포함 코드의 기본 중단점을 코드에서 직접 응답형 웹 사이트의 중단점과 일치하도록 편집합니다. 또한 다양한 페이지 중단점에서 제공되는 다양한 이미지 해상도를 테스트할 수 있습니다.
 
-## HTTP/2를 사용하여 다이내믹 미디어 자산 {#using-http-to-delivery-your-dynamic-media-assets} 전달
+## HTTP/2를 사용하여 Dynamic Media 에셋 {#using-http-to-delivery-your-dynamic-media-assets} 전달
 
-HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 더 나은 응답 및 로드 시간을 제공하는 HTTP/2를 사용하여 다이내믹 미디어 에셋 배달을 지원합니다.
+HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 더 나은 응답 및 로드 시간을 제공하는 HTTP/2를 사용하여 Dynamic Media 에셋 배달을 지원합니다.
 
-Dynamic Media 계정으로 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 [HTTP2 콘텐츠 배달](http2faq.md)을 참조하십시오.
+Dynamic Media 계정에서 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 [HTTP2 콘텐츠 배달](http2faq.md)을 참조하십시오.
