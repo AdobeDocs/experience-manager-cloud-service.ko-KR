@@ -2,7 +2,7 @@
 title: 색인 변환기
 description: 색인 변환기
 translation-type: tm+mt
-source-git-commit: 1117f03b2eff37f8b25726c3dc60d5a3fe98a5d1
+source-git-commit: 3fe19282f9e96d503f4e8be05553c6f48a6f19b6
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -37,11 +37,11 @@ Index Converter는 AEM으로 이동할 때 Cloud Service으로 이동할 준비�
 
 * Adobe I/O CLI 사용:`aio-cli-plugin-aem-cloud-service-migration`(AEM은 Adobe I/O CLI용 Cloud Service 코드 리팩토링 플러그인으로 사용)을 통해 색인 변환기를 사용하는 것이 좋습니다.
 
-**[Git 리소스를 참조하십시오.플러그인을 설치하고 사용하는 방법을 학습하는 aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)**
+   **[Git 리소스를 참조하십시오.플러그인을 설치하고 사용하는 방법을 학습하는 aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)**
 
 * 독립형 유틸리티로,색인 변환기는 독립형 유틸리티로 실행될 수도 있습니다.
 
-**[Git 리소스를 참조하십시오.이 도구를 사용하는 방법에 대해 학습하는 aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)**
+   **[Git 리소스를 참조하십시오.이 도구를 사용하는 방법에 대해 학습하는 aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)**
 
 
 
