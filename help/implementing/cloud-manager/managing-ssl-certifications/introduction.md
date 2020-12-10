@@ -2,7 +2,7 @@
 title: 소개 - SSL 인증서 관리
 description: 소개 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 소개 {#introduction}
 
-Cloud Manager는 고객에게 Cloud Manager UI를 통해 SSL 인증서를 설치하는 셀프 서비스 기능을 제공합니다. Cloud Manager는 Platform TLS 서비스를 사용하여 고객이 소유하고 일반적으로 타사 인증 당국으로부터 입수한 SSL 인증서 및 개인 키를 관리합니다(예: 암호화 허용).
+Cloud Manager는 고객에게 Cloud Manager UI를 통해 SSL 인증서를 설치하는 셀프 서비스 기능을 제공합니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하고 일반적으로 타사 인증 당국으로부터 입수한 SSL 인증서 및 개인 키를 관리합니다(예: *암호화*).
 
 ## 중요 고려 사항 {#important-considerations}
 
