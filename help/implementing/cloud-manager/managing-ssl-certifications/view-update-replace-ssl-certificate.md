@@ -2,15 +2,15 @@
 title: 'SSL 인증서 업데이트 및 교체 보기 - SSL 관리 '
 description: SSL 인증서 업데이트 및 교체 보기 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
 
-# SSL 인증서 {#view-update-replace-ssl-certificate} 업데이트 및 교체 보기
+# SSL 인증서 보기 및 업데이트 및 교체 {#view-update-replace-ssl-certificate}
 
 ## SSL 인증서 보기 및 업데이트 {#view-update}
 
