@@ -2,9 +2,9 @@
 title: Cloud Service 릴리스 2020.12.0으로서 AEM의 Cloud Manager에 대한 릴리스 노트
 description: Cloud Service 릴리스 2020.12.0으로서 AEM의 Cloud Manager에 대한 릴리스 노트
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 * [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 및 [사용자 지정 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/introduction.md)의 셀프 서비스 관리
 
-* [IP Allow-Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)의 셀프 서비스 관리
+* [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)의 셀프 서비스 관리
 
 * 업데이트된 **환경** 세부 정보 페이지에서 사용자가 사용자 지정 도메인 이름 및 IP 허용 목록을 관리할 수 있습니다.
 
