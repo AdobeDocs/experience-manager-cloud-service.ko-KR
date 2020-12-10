@@ -2,7 +2,7 @@
 title: 사용자 지정 도메인 이름 삭제
 description: 사용자 지정 도메인 이름 삭제
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -12,15 +12,16 @@ ht-degree: 0%
 
 # 사용자 지정 도메인 이름 {#deleting-cdn} 삭제
 
->[!NOTE]
->Cloud Manager에서 사용자 지정 도메인 이름을 삭제하려면 사용자가 비즈니스 소유자 또는 배포 관리자 역할에 속해야 합니다.
+Cloud Manager에서 사용자 지정 도메인 이름을 삭제하려면 사용자가 비즈니스 소유자 또는 배포 관리자 역할에 속해야 합니다.
 
 ## 모든 관련 환경에서 사용자 지정 도메인 이름 삭제 {#delete-cdn-all}
 
-1. 환경 화면에서 도메인 설정 페이지로 이동합니다.
+1. **환경** 화면에서 **도메인 설정** 페이지로 이동합니다.
 1. 삭제할 사용자 지정 도메인 이름이 나열되는 행을 식별합니다.
 1. **선택...행의 맨 오른쪽 끝에 있는** 메뉴
-1. 삭제 옵션을 선택합니다.
+1. **삭제** 옵션을 선택합니다.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 1. 제출 여부를 확인합니다.
 
 
