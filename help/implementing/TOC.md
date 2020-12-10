@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
+source-git-commit: b19dfdd33ae789e56a56edc7a3d7ea960ba46d91
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 58%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 58%
       + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [SSL 인증서 보기 및 업데이트 또는 교체](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [SSL 인증서 보기 및 업데이트 및 바꾸기](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [SSL 인증서 상태 확인](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [SSL 인증서 삭제](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + 사용자 지정 도메인 이름 관리 {#custom-domain-names}
