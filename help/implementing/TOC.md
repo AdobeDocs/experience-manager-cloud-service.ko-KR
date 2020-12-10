@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 59%
+source-wordcount: '693'
+ht-degree: 58%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 59%
       + [사용자 지정 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
       + [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [사용자 지정 도메인 이름 보기 및 업데이트](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [사용자 지정 도메인 이름 보기 및 업데이트 및 바꾸기](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [사용자 지정 도메인 이름의 SSL 인증서 업데이트](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [사용자 지정 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + IP 허용 목록 관리 {#ip-allow-lists}
