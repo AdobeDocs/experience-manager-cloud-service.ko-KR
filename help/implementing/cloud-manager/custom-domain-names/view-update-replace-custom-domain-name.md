@@ -2,9 +2,9 @@
 title: 사용자 지정 도메인 이름 업데이트 및 바꾸기 보기
 description: 사용자 지정 도메인 이름 업데이트 및 바꾸기 보기
 translation-type: tm+mt
-source-git-commit: 14218246d9f34ab48a2215e1274d210293ae3f1b
+source-git-commit: d557abb4234322e8a1fef15ac4c7088c64d782bf
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
@@ -18,14 +18,4 @@ ht-degree: 0%
 >[!NOTE]
 >SSL 인증서는 유효해야 하며 사용자 지정 도메인 이름을 포함해야 합니다.
 
-## 사용자 지정 도메인 이름 {#update-ssl-certificate-cdn}의 SSL 인증서 업데이트
-
-업데이트 작업은 UI의 서로 다른 두 위치에서 수행할 수 있습니다.
-
-1. 환경 화면에서 도메인 설정 페이지로 이동합니다.
-1. 또는 환경 화면에서 특정 환경 세부 사항 페이지로 이동하여 도메인 이름 테이블로 이동합니다.
-보기/업데이트하려는 사용자 지정 도메인 이름이 나열되는 행을 식별합니다
-1. **선택...행의 맨 오른쪽 끝에 있는** 메뉴
-1. 보기 및 업데이트 옵션 선택
-1. 필요에 따라 SSL 인증서를 변경하고 제출 확인
 
