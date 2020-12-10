@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 5e81e6ed9c44956384ff248bb28cebc861cf0b76
+source-git-commit: f836254f6c4874621d4772758b29c6b22aff0ed6
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 86%
+source-wordcount: '357'
+ht-degree: 62%
 
 ---
 
@@ -43,6 +43,32 @@ ht-degree: 86%
       + [마법사 사용](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [프로젝트 설정](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [빌드 환경 이해](getting-access-to-aem-in-cloud/build-environment-details.md)
+   + SSL 인증서 관리 {#manage-ssl-certificates}
+      + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [SSL 인증서 보기 및 업데이트 또는 교체](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [SSL 인증서 상태 확인](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [SSL 인증서 삭제](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + 사용자 지정 도메인 이름 {#custom-domain-names}
+      + [소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [사용자 지정 도메인 이름 가져오기](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [사용자 지정 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [사용자 지정 도메인 이름 보기 및 업데이트](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [사용자 지정 도메인 이름의 SSL 인증서 업데이트](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [사용자 지정 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + IP 허용-목록 {#ip-allow-lists}
+      + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [IP 허용 목록 보기 및 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [IP 허용 목록 적용](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [IP 허용 목록 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [IP 허용 목록 삭제](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [IP 허용 목록 상태 확인](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + 클라우드 관리자 {#release-notes-cloud-manager} 릴리스 노트
       + [현재 릴리스 노트(2020.11.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [2020.10.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
