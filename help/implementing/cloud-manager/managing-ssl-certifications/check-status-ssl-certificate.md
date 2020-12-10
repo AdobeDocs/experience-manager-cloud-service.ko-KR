@@ -2,9 +2,9 @@
 title: SSL 인증서 상태 확인 - SSL 인증서 관리
 description: SSL 인증서 상태 확인 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # SSL 인증서 상태 확인 중 {#checking-status-an-ssl-certificate}
 
-SSL 인증서 상태는 SSL 인증서 페이지 또는 환경 세부 정보 페이지에서 한 눈에 알 수 있습니다.
+SSL 인증서 페이지는 SSL 인증서의 상태를 한 눈에 파악할 수 있습니다.
 
 다음 색상 구성표에서 SSL 인증서의 상태를 식별할 수 있습니다.
 
