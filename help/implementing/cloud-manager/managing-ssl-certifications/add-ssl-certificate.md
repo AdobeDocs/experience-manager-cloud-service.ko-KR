@@ -2,9 +2,9 @@
 title: SSL 인증서 추가 - SSL 인증서 관리
 description: SSL 인증서 추가 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 
 아래 절차에 따라 SSL 파일의 형식을 PEM으로 변환하십시오.
 
-1. PFX를 PEM으로 변환
+* PFX를 PEM으로 변환
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. P7B를 PEM으로 변환
+* P7B를 PEM으로 변환
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. DER를 PEM으로 변환
+* DER를 PEM으로 변환
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## 중요 고려 사항 {#important-considerations}
 
@@ -50,9 +50,11 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 1. 왼쪽 탐색 메뉴에서 **SSL 인증서**&#x200B;를 클릭합니다. 기존 SSL 인증서에 대한 세부 정보가 있는 표가 이 화면에 표시됩니다.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. **인증서 추가** 단추를 선택하여 **SSL 인증서 추가** 대화 상자를 엽니다.
+
+1. **SSL 인증서 추가**&#x200B;를 클릭하여 **SSL 인증서 추가** 대화 상자를 엽니다.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. **인증서 이름**&#x200B;에 인증서 이름을 입력합니다. 인증서를 쉽게 참조할 수 있는 이름이 될 수 있습니다.
    1. **인증서**, **개인 키** 및 **인증서 체인**을 해당 필드에 붙여 넣습니다. 입력 상자 오른쪽에 있는 붙여넣기 아이콘을 사용합니다.
 세 필드 모두 선택 사항이 아니므로 포함되어야 합니다.
@@ -84,6 +86,4 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 
 ### 인증서 유효 날짜 {#certificate-validity-dates}
 
-Cloud Manager에서는 SSL 인증서가 향후 90일 동안 유효할 것으로 예상하고 있습니다
-
-인증서 체인의 유효성을 확인합니다.
+Cloud Manager에서는 SSL 인증서가 향후 90일 이상 유효할 것으로 예상하고 있습니다. 인증서 체인의 유효성을 확인해야 합니다.
