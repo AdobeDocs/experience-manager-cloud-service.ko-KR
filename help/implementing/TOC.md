@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: c1485dabe9c31b355a0b06b96c69a11e31ea9962
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '683'
 ht-degree: 59%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 59%
       + [SSL 인증서 보기 및 업데이트 또는 교체](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [SSL 인증서 상태 확인](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [SSL 인증서 삭제](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-   + 사용자 지정 도메인 이름 {#custom-domain-names}
+   + 사용자 지정 도메인 이름 관리 {#custom-domain-names}
       + [소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [사용자 지정 도메인 이름 가져오기](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -46,7 +46,7 @@ ht-degree: 59%
       + [사용자 지정 도메인 이름 보기 및 업데이트](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [사용자 지정 도메인 이름의 SSL 인증서 업데이트](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [사용자 지정 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + IP 허용-목록 {#ip-allow-lists}
+   + IP 허용 목록 관리 {#ip-allow-lists}
       + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [IP 허용 목록 보기 및 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
