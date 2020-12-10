@@ -2,9 +2,9 @@
 title: SSL 인증서 추가 - SSL 인증서 관리
 description: SSL 인증서 추가 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # SSL 인증서 {#adding-an-ssl-certificate} 추가
 
 >[!NOTE]
->AEM은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 인증서만 받습니다. DV(도메인 유효성 검사) 인증서가 허용되지 않습니다.
+>AEM은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 인증서만 받습니다. DV(도메인 유효성 검사) 인증서가 허용되지 않습니다. 또한 모든 인증서는 2048비트 RSA 개인 키가 일치하는 신뢰할 수 있는 인증 기관(CA)의 X.509 TLS 인증서여야 합니다.
 
 인증서를 프로비저닝하는 데 며칠이 소요되며 인증서를 몇 개월 전에 프로비저닝하는 것이 좋습니다. 자세한 내용은 [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)를 참조하십시오.
 
@@ -59,11 +59,12 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
    1. **인증서**, **개인 키** 및 **인증서 체인**을 해당 필드에 붙여 넣습니다. 입력 상자 오른쪽에 있는 붙여넣기 아이콘을 사용합니다.
 세 필드 모두 선택 사항이 아니므로 포함되어야 합니다.
 
+      >[!NOTE]
+      >검색된 모든 오류가 표시됩니다. 인증서를 저장하려면 모든 오류를 해결해야 합니다. 일반적인 오류 해결에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하십시오.
+
 1. 인증서를 제출하려면 **저장**&#x200B;을 클릭합니다. 표에 새 행으로 표시되는 것을 확인할 수 있습니다.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-   >[!NOTE]
-   >검색된 모든 오류가 표시됩니다. 인증서를 저장하려면 모든 오류를 해결해야 합니다. 일반적인 오류 해결에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하십시오.
 
 ## 인증서 오류 {#certificate-errors}
 
