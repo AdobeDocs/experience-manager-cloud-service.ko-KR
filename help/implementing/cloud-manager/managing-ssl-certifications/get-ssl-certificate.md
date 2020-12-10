@@ -2,9 +2,9 @@
 title: SSL 인증서 가져오기 - SSL 인증서 관리
 description: SSL 인증서 가져오기 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >AEM은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 인증서만 받습니다. DV(도메인 유효성 검사) 또는 자체 서명된 인증서는 허용되지 않습니다. OV 및 EV 인증서는 사용자에게 웹 사이트의 소유자, 이메일 보낸 사람, 실행 코드 또는 PDF 문서의 디지털 서명인이 신뢰할 수 있는지 여부를 결정하는 데 사용할 수 있는 추가적인 인증 정보를 제공합니다. DV 인증서는 일반적이고 저렴합니다. 그러나 소유권 확인은 허용하지 않습니다.
+>또한 모든 인증서는 2048비트 RSA 개인 키가 일치하는 신뢰할 수 있는 인증 기관(CA)의 X.509 TLS 인증서여야 합니다.
 
