@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: b927992107d7e7e4df5511a366c71449ff73ec93
+source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 70%
+source-wordcount: '579'
+ht-degree: 69%
 
 ---
 
@@ -63,6 +63,7 @@ ht-degree: 70%
          + [이미지 편집기](developing/components/image-editor.md)
          + [데코레이션 태그](developing/components/decoration-tag.md)
          + [숨기기 조건 사용](developing/components/hide-conditions.md)
+         + [구성 요소 참조 안내서](developing/components/reference.md)
       + [AEM 태깅 프레임워크](/help/implementing/developing/introduction/tagging-framework.md)
       + [AEM 애플리케이션에 Tagging 작성](/help/implementing/developing/introduction/tagging-applications.md)
       + 검색 {#search}
