@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 translation-type: tm+mt
-source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 4%
+source-wordcount: '462'
+ht-degree: 7%
 
 ---
 
@@ -18,21 +18,16 @@ AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만�
 
 ## AEM 관리 CDN {#aem-managed-cdn}
 
-Adobe의 특별 CDN을 사용하여 컨텐츠 전달을 준비하려면 다음을 수행합니다.
+아래의 섹션에 따라 Cloud Manager 셀프 서비스 UI를 사용하여 Adobe의 기본 CDN을 사용하여 컨텐츠 전달을 준비하십시오.
 
-1. 이 정보가 들어 있는 보안 양식에 대한 링크를 공유하여 서명된 SSL 인증서와 비밀 키를 Adobe에 제공합니다. 이 작업에 대한 고객 지원 부서에 문의하십시오. Adobe은 프로그램에 대해 최대 10개의 SSL 인증서를 지원합니다.
-   **참고: Cloud Service** 로 Aem은 DV(도메인 유효성 검사) 인증서를 지원하지 않습니다. 또한 2048비트 RSA 개인 키가 일치하는 신뢰할 수 있는 인증 기관(CA)의 X.509 TLS 인증서여야 합니다.
-1. 고객 지원에 알림:
-   * 프로그램 id 및 환경 id로 정의된 대로 지정된 환경과 연결해야 하는 사용자 지정 도메인이 지정된 환경에서 최대 100개의 도메인이 지원되며 도메인은 와일드카드를 포함할 수 없습니다. 작성자 측의 사용자 지정 도메인은 지원되지 않습니다.
-   * 지정된 환경으로 트래픽을 제한하기 위해 IP 허용 목록에 추가가 필요한 경우
-1. DNS 레코드에 필요한 변경 타이밍에 대한 고객 지원과 조정합니다. 지침은 에이펙스 레코드가 필요한지 여부를 기준으로 다릅니다.
-   * apex 레코드가 필요하지 않은 경우 고객은 FQDN을 `cdn.adobeaemcloud.com`으로 가리키도록 CNAME DNS 레코드를 설정해야 합니다.
-   * apex 레코드가 필요한 경우 다음 IP를 가리키는 A 레코드를 만듭니다.151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. 원하는 FQDN이 DNS Apex와 일치하는 경우 고객 레코드가 필요합니다 zone. 출력 SOA 값이 도메인과 일치하는지 확인하기 위해 Unix dig 명령을 사용하여 이 값을 테스트할 수 있습니다. 예를 들어 `dig anything.dev.adobeaemcloud.com` 명령은 `dev.adobeaemcloud.com`의 SOA(Start of Authority, 즉 영역)를 반환하여 APEX 레코드가 아닌 반면 `dig dev.adobeaemcloud.com`는 `dev.adobeaemcloud.com`의 SOA를 반환하므로 이 SOA는 Apex 레코드입니다.
-1. SSL 인증서가 만료되면 알림을 받게 되므로 새 SSL 인증서를 다시 제출할 수 있습니다.
+1. [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [사용자 지정 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **트래픽 제한**
 
-기본적으로 Adobe 관리 CDN 설정의 경우 모든 공용 트래픽은 프로덕션 및 비프로덕션(개발 및 스테이지) 환경 모두에 대해 게시 서비스로 갈 수 있습니다. 지정된 환경에 대한 게시 서비스로 트래픽을 제한하려는 경우(예: IP 주소 범위에 따라 스테이징을 제한하는 경우) 고객 지원 센터에서 이러한 제한을 구성해야 합니다.
+기본적으로 Adobe 관리 CDN 설정의 경우 모든 공용 트래픽은 프로덕션 및 비프로덕션(개발 및 스테이지) 환경 모두에 대해 게시 서비스로 갈 수 있습니다. 지정된 환경에 대한 게시 서비스로 트래픽을 제한하려는 경우(예: IP 주소 범위로 스테이징을 제한하는 경우) Cloud Manager UI를 통해 셀프 서비스 방식으로 이 작업을 수행할 수 있습니다.
+
+자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)를 참조하십시오.
 
 ## 고객 CDN은 AEM Managed CDN {#point-to-point-CDN}을 가리킵니다.
 
