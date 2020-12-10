@@ -2,9 +2,9 @@
 title: SSL 인증서 추가 - SSL 인증서 관리
 description: SSL 인증서 추가 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 88ef9265b40f64f2229e37e5f8ca02959e8d9ce2
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,13 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 
 `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## 인증서 {#adding-certificate} 추가
+## 중요 고려 사항 {#important-considerations}
 
->[!NOTE]
->* 클라우드 관리자에서 SSL 인증서를 설치하려면 사용자가 비즈니스 소유자 또는 배포 관리자 역할에 있어야 합니다.
->* Cloud Manager는 인증서가 만료되더라도 프로그램 전체에서 하나 이상의 환경과 연결할 수 있는 최대 10개의 SSL 인증서를 허용합니다. 그러나 Cloud Manager UI에서는 이 제한 사항이 있는 프로그램에 최대 50개의 SSL 인증서를 설치할 수 있습니다.
+* 클라우드 관리자에서 SSL 인증서를 설치하려면 사용자가 비즈니스 소유자 또는 배포 관리자 역할에 있어야 합니다.
 
+* Cloud Manager는 인증서가 만료되더라도 프로그램 전체에서 하나 이상의 환경과 연결할 수 있는 최대 10개의 SSL 인증서를 허용합니다. 그러나 Cloud Manager UI에서는 이 제한 사항이 있는 프로그램에 최대 50개의 SSL 인증서를 설치할 수 있습니다.
+
+## 인증서 {#adding-a-cert} 추가
 
 아래 절차에 따라 인증서를 추가하십시오.
 
@@ -51,13 +52,14 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 1. **인증서 추가** 단추를 선택하여 **SSL 인증서 추가** 대화 상자를 엽니다.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
    1. **인증서 이름**&#x200B;에 인증서 이름을 입력합니다. 인증서를 쉽게 참조할 수 있는 이름이 될 수 있습니다.
-   1. **인증서**, **개인 키** 및 **인증서 체인**&#x200B;을 해당 필드에 붙여 넣습니다. 입력 상자 오른쪽에 있는 붙여넣기 아이콘을 사용합니다.
+   1. **인증서**, **개인 키** 및 **인증서 체인**을 해당 필드에 붙여 넣습니다. 입력 상자 오른쪽에 있는 붙여넣기 아이콘을 사용합니다.
+세 필드 모두 선택 사항이 아니므로 포함되어야 합니다.
 
-      >[!NOTE]
-      >세 필드 모두 선택 사항이 아니므로 포함되어야 합니다.
 1. 인증서를 제출하려면 **저장**&#x200B;을 클릭합니다. 표에 새 행으로 표시되는 것을 확인할 수 있습니다.
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
    >[!NOTE]
    >검색된 모든 오류가 표시됩니다. 인증서를 저장하려면 모든 오류를 해결해야 합니다. 일반적인 오류 해결에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하십시오.
 
