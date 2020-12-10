@@ -3,17 +3,65 @@ title: '개발자 참조: [!DNL Assets]'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 1%
+source-wordcount: '1400'
+ht-degree: 3%
 
 ---
 
 
-# [!DNL Assets] API 및 개발자 참조 자료  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] API 및 개발자 참조 자료  {#assets-cloud-service-apis}
 
-이 문서에는 [!DNL Assets](으)로 개발자를 위한 참조 자료와 리소스가 포함되어 있습니다. [!DNL Cloud Service] 여기에는 새로운 업로드 방법, API 참조 및 사후 처리 워크플로우에서 제공되는 지원에 대한 정보가 포함됩니다.
+이 문서에는 [!DNL Assets](으)로 개발자를 위한 권장 사항, 참조 자료 및 리소스가 포함되어 있습니다. [!DNL Cloud Service] 여기에는 새로운 에셋 업로드 모듈, API 참조 및 사후 처리 워크플로우에서 제공되는 지원에 대한 정보가 포함됩니다.
+
+## [!DNL Experience Manager Assets] API 및 작업  {#use-cases-and-apis}
+
+[!DNL Assets] as a [!DNL Cloud Service] 는 프로그래밍 방식으로 디지털 자산과 인터랙션할 수 있는 여러 API를 제공합니다. 각 API는 아래 표에 나와 있는 바와 같이 특정 사용 사례를 지원합니다. [!DNL Assets] 사용자 인터페이스, [!DNL Experience Manager] 데스크탑 앱 및 [!DNL Adobe Asset Link]은 모든 작업 또는 일부 작업을 지원합니다.
+
+>[!CAUTION]
+>
+>일부 API는 계속 존재하지만 적극적으로 지원되지 않습니다(× 표시).
+
+| 지원 수준 | 설명 |
+| ------------- | --------------------------- |
+| ✓ | 지원됨 |
+| x | 지원되지 않음. 사용하지 마십시오. |
+| - | 사용할 수 없음 |
+
+| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 저장 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(미리 보기)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **원본 이진** |  |  |  |  |  |  |
+| 원본 만들기 | ✓ | x | - | x | x | - |
+| 원본 읽기 | - | x | ✓ | ✓ | ✓ | - |
+| 원본 업데이트 | ✓ | x | ✓ | x | x | - |
+| 원본 삭제 | - | ✓ | - | ✓ | ✓ | - |
+| 원본 복사 | - | ✓ | - | ✓ | ✓ | - |
+| 원본 이동 | - | ✓ | - | ✓ | ✓ | - |
+| **메타데이터** |  |  |  |  |  |  |
+| 메타데이터 만들기 | - | ✓ | ✓ | ✓ | ✓ | - |
+| 메타데이터 읽기 | - | ✓ | - | ✓ | ✓ | - |
+| 메타데이터 업데이트 | - | ✓ | ✓ | ✓ | ✓ | - |
+| 메타데이터 삭제 | - | ✓ | ✓ | ✓ | ✓ | - |
+| 메타데이터 복사 | - | ✓ | - | ✓ | ✓ | - |
+| 메타데이터 이동 | - | ✓ | - | ✓ | ✓ | - |
+| **컨텐츠 조각(CF)** |  |  |  |  |  |  |
+| CF 만들기 | - | ✓ | - | ✓ | - | - |
+| CF 읽기 | - | ✓ | - | ✓ | - | ✓ |
+| CF 업데이트 | - | ✓ | - | ✓ | - | - |
+| CF 삭제 | - | ✓ | - | ✓ | - | - |
+| CF 복사 | - | ✓ | - | ✓ | - | - |
+| CF 이동 | - | ✓ | - | ✓ | - | - |
+| **버전** |  |  |  |  |  |  |
+| 버전 만들기 | ✓ | ✓ | - | - | - | - |
+| 버전 읽기 | - | ✓ | - | - | - | - |
+| 버전 삭제 | - | ✓ | - | - | - | - |
+| **폴더** |  |  |  |  |  |  |
+| 폴더 만들기 | ✓ | ✓ | - | ✓ | - | - |
+| 폴더 읽기 | - | ✓ | - | ✓ | - | - |
+| 폴더 삭제 | ✓ | ✓ | - | ✓ | - | - |
+| 폴더 복사 | ✓ | ✓ | - | ✓ | - | - |
+| 폴더 이동 | ✓ | ✓ | - | ✓ | - | - |
 
 ## 자산 업로드 {#asset-upload-technical}
 
@@ -31,8 +79,7 @@ ht-degree: 1%
 * 바이너리 클라우드 스토리지는 CDN(Content Delivery Network) 또는 Edge 네트워크와 연동됩니다. CDN은 클라이언트에 가까운 업로드 끝점을 선택합니다. 특히 지리적으로 분산된 팀의 경우 데이터가 가까운 종단점으로 이동하는 경우 업로드 성능 및 사용자 경험이 향상됩니다.
 
 >[!NOTE]
->
->이 접근 방식을 오픈 소스 [aem-upload 라이브러리](https://github.com/adobe/aem-upload)에서 구현하려면 클라이언트 코드를 참조하십시오.
+이 접근 방식을 오픈 소스 [aem-upload 라이브러리](https://github.com/adobe/aem-upload)에서 구현하려면 클라이언트 코드를 참조하십시오.
 
 ### 업로드 시작 {#initiate-upload}
 
