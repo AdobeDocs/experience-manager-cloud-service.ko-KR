@@ -2,7 +2,7 @@
 title: DNS 레코드 상태 확인
 description: DNS 레코드 상태 확인
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 [도메인 설정] 페이지의 [환경] 테이블에서 DNS 레코드의 상태 아이콘을 클릭하여 도메인 이름이 Cloud Service 웹 사이트로 올바르게 확인되는지 여부를 확인할 수 있습니다.
 
->[!NOTE]
->사용자 지정 도메인 이름을 확인하고 배포하면 클라우드 관리자가 DNS 조회를 자동으로 트리거합니다. 이후 시도의 경우 상태 옆에 있는 **resolve again** 아이콘을 적극적으로 선택해야 합니다.
+사용자 지정 도메인 이름을 확인하고 배포하면 클라우드 관리자가 DNS 조회를 자동으로 트리거합니다. 이후 시도의 경우 상태 옆에 있는 **resolve again** 아이콘을 적극적으로 선택해야 합니다.
 
 클라우드 관리자가 도메인 이름에 대한 DNS 조회를 수행하고 다음 상태 메시지 중 하나를 표시합니다.
 
