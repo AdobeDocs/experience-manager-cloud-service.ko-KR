@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
+source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -146,4 +146,45 @@ ht-degree: 2%
 또한 **환경** 요약 페이지에서 로컬로 로그인할 수도 있습니다.
 
 ![](assets/environ-login-locally-2.png)
+
+## 사용자 지정 도메인 이름 관리 {#manage-cdn}
+
+환경 요약 페이지에서 환경 세부 사항 페이지로 이동합니다.
+
+아래의 설명에 따라 환경에 대한 게시 서비스에서 다음 작업을 수행할 수 있습니다.
+
+1. **사용자 지정 도메인 이름 추가**:사용자  [지정 도메인 이름 추가를 참조하십시오.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+
+1. **사용자 지정 도메인 이름 보기 및 업데이트**:사용자  [정의 도메인 이름 및 SSL 인증서 보기 및 업데이트 참조](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+
+1. **사용자 지정 도메인 이름 삭제**:사용자  [정의 도메인 이름 및 SSL 인증서 삭제를 참조하십시오.](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+## IP 허용 목록 관리 {#manage-ip-allow-lists}
+
+환경 요약 페이지에서 환경 세부 사항 페이지로 이동합니다. 게시 및/또는 작성자 서비스에서 사용자 환경에 대해 다음 작업을 수행할 수 있습니다.
+
+### IP 허용 목록 적용 {#apply-ip-allow-list}
+
+IP 허용 목록 적용은 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자 또는 게시 서비스와 연관되는 프로세스입니다. IP 허용 목록을 적용하려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
+
+>[!NOTE]
+>IP 허용 목록을 환경 서비스에 적용하려면 Cloud Manager에 있어야 합니다. Cloud Manager의 IP 허용 목록에 대해 자세히 알아보려면 Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)에서 [IP 허용 목록 소개를 탐색합니다.
+
+아래 단계를 따르십시오.
+
+1. 환경 화면에서 특정 환경 세부 사항 페이지로 이동하여 IP 허용 목록 테이블로 이동합니다.
+1. IP 허용 목록 테이블 상단에 있는 입력 필드를 사용하여 적용할 IP 허용 목록 및 작성자 또는 게시 서비스를 선택합니다.
+1. 그런 다음 적용을 선택하고 제출을 확인합니다.
+
+### IP 허용 목록 {#unapply-ip-allow-list} 적용 취소
+
+IP 허용 목록 적용 취소는 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자/또는 게시자 서비스와 연관되지 않는 프로세스입니다.  IP 허용 목록을 적용 취소할 수 있으려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
+
+아래 단계를 따르십시오.
+
+1. 환경 화면에서 특정 환경 세부 사항 페이지로 이동하여 IP 허용 목록 테이블로 이동합니다.
+1. 적용하지 않을 IP 허용 목록 규칙이 나열되는 행을 식별합니다.
+1. **선택...행의 맨 오른쪽 끝에 있는** 메뉴
+1. 적용 취소 옵션을 선택하고 제출을 확인합니다.
+
 
