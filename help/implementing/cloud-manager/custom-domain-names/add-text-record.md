@@ -2,7 +2,7 @@
 title: TXT 레코드 추가
 description: 사용자 지정 도메인 이름 추가
 translation-type: tm+mt
-source-git-commit: 8d97bedc8c473c13e3378849741104b2c85492e2
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
