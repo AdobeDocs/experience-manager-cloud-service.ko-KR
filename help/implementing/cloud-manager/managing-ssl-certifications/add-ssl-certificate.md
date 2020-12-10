@@ -2,7 +2,7 @@
 title: SSL 인증서 추가 - SSL 인증서 관리
 description: SSL 인증서 추가 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
+source-git-commit: 1e7855661220f69038edf35d4c45b7d45b5c6bce
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -53,11 +53,12 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 
 1. **SSL 인증서 추가**&#x200B;를 클릭하여 **SSL 인증서 추가** 대화 상자를 엽니다.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
-
-   1. **인증서 이름**&#x200B;에 인증서 이름을 입력합니다. 인증서를 쉽게 참조할 수 있는 이름이 될 수 있습니다.
-   1. **인증서**, **개인 키** 및 **인증서 체인**을 해당 필드에 붙여 넣습니다. 입력 상자 오른쪽에 있는 붙여넣기 아이콘을 사용합니다.
+   * **인증서 이름**&#x200B;에 인증서 이름을 입력합니다. 인증서를 쉽게 참조할 수 있는 이름이 될 수 있습니다.
+   * **인증서**, **개인 키** 및 **인증서 체인**을 해당 필드에 붙여 넣습니다. 입력 상자 오른쪽에 있는 붙여넣기 아이콘을 사용합니다.
 세 필드 모두 선택 사항이 아니므로 포함되어야 합니다.
+
+      ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
 
       >[!NOTE]
       >검색된 모든 오류가 표시됩니다. 인증서를 저장하려면 모든 오류를 해결해야 합니다. 일반적인 오류 해결에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하십시오.
