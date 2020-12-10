@@ -2,7 +2,7 @@
 title: 'SSL 인증서 업데이트 및 교체 보기 - SSL 관리 '
 description: SSL 인증서 업데이트 및 교체 보기 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 54171b90f99a14fd43c4dc01308264b9a954b927
+source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -19,14 +19,12 @@ Cloud Manager UI에서 다음 옵션을 사용해야 하는 경우:
 * 기존 인증서가 곧 만료됩니다. 사용자가 인증서 제공업체를 통해 인증서를 갱신했으며 곧 만료될 기존 인증서를 바꾸려고 합니다. 참고 적절한 권한이 있는 사용자만 업데이트를 할 수 있습니다.
 * **보기 및 업데이트** 메뉴를 사용하여 SSL 인증서 세부 사항을 확인합니다.
 * 또는 이 화면에서 인증서를 참조하는 데 사용한 이름을 변경할 수 있습니다.
-   >[!NOTE]
-   >해당 권한이 있는 사용자만 업데이트를 할 수 있습니다.
+* 해당 권한이 있는 사용자만 업데이트를 할 수 있습니다.
 
 
 ## 만료될 SSL 인증서 업데이트 {#update-ssl-certificate}
 
->[!NOTE]
->인증서가 만료되면 만료된 인증서와 함께 사용 중인 모든 도메인이 더 이상 작동하지 않습니다. 만료된 인증서를 업데이트하려면 아래 나열된 단계를 따라야 합니다. 이렇게 하면 도메인이 원하는 대로 계속 작동합니다. 새 인증서를 추가하려면 도메인 이름이 새 인증서로 업데이트되어야 도메인이 원하는 대로 작동합니다. 자세한 내용은 [사용자 지정 도메인 이름 보기 및 업데이트 및 바꾸기](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)를 참조하십시오.
+인증서가 만료되면 만료된 인증서와 함께 사용 중인 모든 도메인이 더 이상 작동하지 않습니다. 만료된 인증서를 업데이트하려면 아래 나열된 단계를 따라야 합니다. 이렇게 하면 도메인이 원하는 대로 계속 작동합니다. 새 인증서를 추가하려면 도메인 이름이 새 인증서로 업데이트되어야 도메인이 원하는 대로 작동합니다. 자세한 내용은 [사용자 지정 도메인 이름 보기 및 업데이트 및 바꾸기](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)를 참조하십시오.
 
 아래 절차에 따라 SSL 인증서를 업데이트하십시오.
 
