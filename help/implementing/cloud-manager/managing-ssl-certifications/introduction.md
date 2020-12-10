@@ -2,9 +2,9 @@
 title: 소개 - SSL 인증서 관리
 description: 소개 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
+source-git-commit: 5ebe94c8562b952521effa3b67267c3eab925d16
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Cloud Manager는 고객에게 Cloud Manager UI를 통해 SSL 인증서를 설치하는 셀프 서비스 기능을 제공합니다. Cloud Manager는 Platform TLS 서비스를 사용하여 고객이 소유하고 일반적으로 타사 인증 당국으로부터 입수한 SSL 인증서 및 개인 키를 관리합니다(예: 암호화 허용).
 
 >[!IMPORTANT]
->클라우드 관리자는 SSL 인증서 또는 개인 키를 제공하지 않습니다. 제3자 인증 기관에서 받아야 합니다. 자세한 내용은 SSL 인증서를 얻는 방법을 참조하십시오. 링크 삽입
+>클라우드 관리자는 SSL 인증서 또는 개인 키를 제공하지 않습니다. 제3자 인증 기관에서 받아야 합니다. 자세한 내용은 [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)를 참조하십시오.
 
 >[!NOTE]
 >CLOUD SERVICE으로 AEM은 보안 https 사이트만 지원합니다. 여러 사용자 지정 도메인을 가진 고객은 도메인을 추가할 때마다 인증서를 업로드하지 않습니다. 따라서 여러 도메인이 있는 하나의 인증서를 가져오는 것이 좋습니다.
