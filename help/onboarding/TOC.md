@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '380'
 ht-degree: 59%
 
 ---
