@@ -2,7 +2,7 @@
 title: SSL 인증서 추가 - SSL 인증서 관리
 description: SSL 인증서 추가 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 1e7855661220f69038edf35d4c45b7d45b5c6bce
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
