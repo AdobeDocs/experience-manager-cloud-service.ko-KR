@@ -2,9 +2,9 @@
 title: 소개 - 사용자 지정 도메인 이름
 description: 소개 - 사용자 지정 도메인 이름
 translation-type: tm+mt
-source-git-commit: 7704c19e440b1fedc651ce0115eb5e5ecf1eba1c
+source-git-commit: f40f87cb61d5f66ca5773d1fd1cfee6fb623201d
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ Cloud Manager를 사용하면 UI를 통해 셀프 서비스 방식으로 고유�
 
 권한이 있는 사용자는 클라우드 관리자 UI 도메인 설정 페이지 또는 환경 세부 사항 페이지를 사용하여 다음과 같은 사용자 정의 도메인 이름을 관리하기 위해 여러 작업을 수행할 수 있습니다.
 
-* 사용자 지정 도메인 이름 추가
-* 사용자가 세부 사항을 보거나 만료될 인증서를 바꿀 수 있는 사용자 지정 도메인 이름 보기 또는 업데이트
-* 사용자 지정 도메인 이름을 삭제하는 중입니다.
+* [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* [사용자가 세부 사항을 ](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) 보거나 만료될 인증서를 바꿀 수 있는 사용자 지정 도메인 이름 보기 또는 업데이트
+* [사용자 지정 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
