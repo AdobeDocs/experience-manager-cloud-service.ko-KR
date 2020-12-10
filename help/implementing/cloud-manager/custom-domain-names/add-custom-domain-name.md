@@ -2,9 +2,9 @@
 title: 사용자 지정 도메인 이름 추가
 description: 사용자 지정 도메인 이름 추가
 translation-type: tm+mt
-source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
+source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,8 @@ ht-degree: 0%
 제공된 지침에 따라 환경에 대한 도메인 소유권을 증명하십시오.
 
 1. **만들기**&#x200B;를 클릭합니다.
-1. CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합니다. 이것은 상태 **확인됨 및 배포됨**&#x200B;으로 표시됩니다.
-1. 사용자 지정 도메인 이름 상태 확인으로 이동하여 다양한 상태 및 주소 방법에 대해 자세히 알아보십시오.
+1. CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합니다. 이것은 상태 **확인됨 및 배포됨**으로 표시됩니다.
+다양한 상태 및 주소 방법에 대한 자세한 내용을 보려면 [사용자 지정 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)으로 이동합니다.
 
    >[!NOTE]
    >DNS 전파 지연으로 인해 DNS 확인을 완료하는 데 몇 시간이 걸릴 수 있습니다. 클라우드 관리자는 소유권을 확인하고 도메인 설정 테이블에 표시될 수 있는 상태를 업데이트합니다. 자세한 내용은 도메인 이름 상태 확인을 참조하십시오.
@@ -60,14 +60,31 @@ ht-degree: 0%
 ## 환경에서 사용자 지정 도메인 이름 추가 페이지 {#adding-cdn-environments}
 
 1. 관심 환경을 위한 환경 세부 사항 페이지로 이동합니다.
-1. 도메인 이름 테이블 상단에 있는 입력 필드를 사용하여 사용자 정의 도메인 이름, SSL 인증서를 제출합니다. 다음으로 추가를 선택합니다.
-1. 이렇게 하면 환경 이름이 미리 채워진 사용자 지정 도메인 이름 추가 마법사가 시작됩니다.
-1. 사용자 지정 도메인 이름을 입력합니다. 참고:도메인에 들어올 때는 `http://`, `https://` 또는 공백을 포함하지 마십시오. 계속을 선택합니다.
-1. 그러면 환경 도메인 이름 확인 화면이 표시됩니다. 자세한 내용은 [도메인 확인](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)을 참조하십시오. 제공된 지침에 따라 환경에 대한 도메인 소유권을 증명하십시오.
-1. **계속**&#x200B;을 선택합니다.
-1. CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합니다. 이것은 상태 **확인됨 및 배포됨**&#x200B;으로 표시됩니다.
 
-이때 사용자 지정 도메인 이름은 테스트할 준비가 되었으며 이 이름을 가리키는 `CNAME` 입니다. 다양한 상태 및 주소 방법에 대한 자세한 내용은 도메인 이름 상태를 참조하십시오.
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
+
+1. 도메인 이름 테이블 상단에 있는 입력 필드를 사용하여 사용자 정의 도메인 이름을 제출하고 드롭다운 목록에서 SSL 인증서를 선택합니다. **+ 추가**&#x200B;를 클릭합니다.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+
+1. **도메인 이름 추가** 대화 상자에서 필드를 선택하고 **계속**&#x200B;을 클릭합니다.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+
+   >[!NOTE]
+   >도메인에 들어올 때는 `http://`, `https://` 또는 공백을 포함하지 마십시오.
+
+1. 사용자 환경 화면에 대한 도메인 이름 확인 화면이 표시됩니다.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
+
+   자세한 내용은 [도메인 확인](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)을 참조하십시오. 제공된 지침에 따라 환경에 대한 도메인 소유권을 증명하십시오.
+
+1. **만들기**&#x200B;를 클릭합니다.
+
+1. 사용자 지정 도메인 이름 배포를 위해서는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합니다. 이것은 상태 **확인됨 및 배포됨**&#x200B;으로 표시됩니다.
+
+이때 사용자 지정 도메인 이름은 테스트할 준비가 되었으며 이 이름을 가리키는 `CNAME` 입니다. 다양한 상태 및 주소 방법에 대한 자세한 내용은 [도메인 이름 상태](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)를 참조하십시오.
 
 >[!NOTE]
 >DNS 전파 지연으로 인해 DNS 확인을 완료하는 데 몇 시간이 걸릴 수 있습니다. 클라우드 관리자는 소유권을 확인하고 도메인 설정 테이블에 표시될 수 있는 상태를 업데이트합니다. 자세한 내용은 도메인 이름 상태 확인을 참조하십시오.
