@@ -2,9 +2,9 @@
 title: 소개 - Could Manager의 IP 허용 목록
 description: 소개 - Could Manager의 IP 허용 목록
 translation-type: tm+mt
-source-git-commit: ef7d8c340d4c6c47ede89552e6c4bfab49251d79
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
