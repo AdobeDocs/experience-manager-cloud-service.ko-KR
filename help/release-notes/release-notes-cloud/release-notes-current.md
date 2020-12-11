@@ -2,9 +2,9 @@
 title: 'Cloud Service의 현재 릴리스 노트입니다. [!DNL Adobe Experience Manager] '
 description: 'Cloud Service의 현재 릴리스 노트입니다. [!DNL Adobe Experience Manager] '
 translation-type: tm+mt
-source-git-commit: 3aff98256eb26176bca52a49286bf2853290b5ef
+source-git-commit: d115f5ce463257af54ae0ff48749df455b863dfd
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1194'
 ht-degree: 2%
 
 ---
@@ -123,9 +123,10 @@ Cloud Service SDK Build Analyzer Maven 플러그인으로 AEM은 누락된 종�
 
 ### [!DNL Code Refactoring Tools] {#what-is-new-crt}의 새로운 기능
 
-* AIO-CLI 플러그인의 새 버전이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새로운 유틸리티인 Index Converter도 지원합니다. 이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)을 참조하십시오.
+* AIO-CLI 플러그인의 새 버전이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새로운 유틸리티인 Index Converter도 지원합니다.
+이 플러그인에 대한 자세한 내용은 [통합 경험](/help/move-to-cloud-service/unified-experience.md)을 참조하십시오.
 
-* 색인 변환기는 고객의 사용자 지정 OAK 색인 정의를 Cloud Service 호환 OAK 색인 정의로 AEM으로 변환하는 데 사용할 수 있는 유틸리티입니다.
+* [색인 ](/help/move-to-cloud-service/refactoring-tools/index-converter.md) 변환기는 고객의 사용자 지정 OAK 색인 정의를 Cloud Service 호환 OAK 색인 정의로 AEM으로 변환하는 데 사용할 수 있는 유틸리티입니다.
 자세한 내용은 [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)를 참조하십시오.
 
 * 모든 OSGi 구성을 포함하는 별도의 패키지 `ui.config`을 만드는 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)에 새로운 기능이 추가되었습니다.
