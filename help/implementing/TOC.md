@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: b19dfdd33ae789e56a56edc7a3d7ea960ba46d91
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '701'
 ht-degree: 58%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 58%
       + [IP 허용 목록 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [IP 허용 목록 삭제](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP 허용 목록 상태 확인](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 + 코드 관리 {#managing-code}
    + [Maven 프로젝트 버전 처리](cloud-manager/project-version-handling.md)
    + [Git 액세스](cloud-manager/accessing-git.md)
