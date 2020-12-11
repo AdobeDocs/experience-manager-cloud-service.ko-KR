@@ -2,10 +2,10 @@
 title: 'Cloud Service의 현재 릴리스 노트입니다. [!DNL Adobe Experience Manager] '
 description: 'Cloud Service의 현재 릴리스 노트입니다. [!DNL Adobe Experience Manager] '
 translation-type: tm+mt
-source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
+source-git-commit: 3aff98256eb26176bca52a49286bf2853290b5ef
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 3%
+source-wordcount: '1205'
+ht-degree: 2%
 
 ---
 
@@ -85,21 +85,21 @@ Cloud Service 2020.11.0으로 [!DNL Adobe Experience Manager]에 대한 릴리�
 
 ### 릴리스 날짜 {#release-date-cm}
 
-2020.11.0 Cloud Service으로 AEM의 Cloud Manager에 대한 릴리스 날짜는 2020년 11월 12일입니다.
+2020.12.0 Cloud Service으로 AEM의 Cloud Manager에 대한 릴리스 날짜는 2020년 12월 10일입니다.
 
 ### [!DNL Cloud Manager] {#what-is-new-cm}의 새로운 기능
 
-* 이제 **환경** 카드 및 **환경** 요약 페이지의 환경 메뉴 옵션에서 사용자가 새 메뉴 옵션 **로컬 로그인**을 사용할 수 있습니다.
-자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md##login-locally)를 참조하십시오.
+* [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 및 [사용자 지정 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/introduction.md)의 셀프 서비스 관리
 
-* Cloud Manager의 **학습** 탭이 UI의 새 이미지로 새로 고침되었습니다.
+* [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)의 셀프 서비스 관리
+
+* 업데이트된 **환경** 세부 정보 페이지에서 사용자가 해당 환경의 사용자 지정 도메인 이름 및 IP 허용 목록을 관리할 수 있습니다.
 
 ### 버그 수정 {#bug-fixes-cloud-manager}
 
-* 빌드 실행 전에 수행된 종속성 로딩은 Maven 플러그인을 다운로드해야 합니다.
-* 이제 언어를 선택하는 Cloud Manager 바닥글의 링크가 올바른 위치로 이동합니다.
-* 경우에 따라 코드 검색 중 SonarQube 프로세스가 시작되지 않습니다. 이제 자동으로 감지되고 다시 시작하려고 합니다.
-* 모든 기존 프로덕션 파이프라인은 경험 감사 단계를 통해 자동으로 활성화됩니다.
+* 결과를 제공하지 않고 코드 스캔 단계에서 오류가 발생하는 경우가 있습니다.
+
+* 환경 카드가 **추가** 단추를 일관되게 표시하지 않았습니다.
 
 ## Adobe Experience Manager as a Cloud Service 기반 {#cloud-service-foundation}
 
@@ -119,30 +119,18 @@ Cloud Service SDK Build Analyzer Maven 플러그인으로 AEM은 누락된 종�
 
 새 [&quot;httpd -t&quot; 구문](/help/implementing/dispatcher/disp-overview.md#local-validation) Cloud Manager 빌드 중에 실행된 apache 및 dispatcher 구성을 확인합니다. 이 구성 요소는 AEM을 Cloud Service SDK의 Dispatcher 도구로 사용하여 실행할 수도 있습니다.
 
-## 컨텐츠 전송 도구 {#content-transfer-tool}
+## 코드 리팩터링 도구 {#code-refactoring-tools}
 
-이 섹션에 따라 새로운 기능과 [컨텐츠 전송 도구](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 릴리스 v1.1.12에 대한 업데이트에 대해 알아보십시오.
+### [!DNL Code Refactoring Tools] {#what-is-new-crt}의 새로운 기능
 
-### 새로운 기능 {#what-is-new-ctt}
+* AIO-CLI 플러그인의 새 버전이 출시되었습니다. 이 플러그인의 최신 버전에는 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정이 포함되어 있으며 새로운 유틸리티인 Index Converter도 지원합니다. 이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)을 참조하십시오.
 
-* 로그에 대한 사용자 경험이 개선되었습니다. 추출 및 통합 로그에 타임스탬프가 추가되었습니다. 로그가 비어 있는지를 나타내는 메시지가 추가되었습니다.
+* 색인 변환기는 고객의 사용자 지정 OAK 색인 정의를 Cloud Service 호환 OAK 색인 정의로 AEM으로 변환하는 데 사용할 수 있는 유틸리티입니다.
+자세한 내용은 [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)를 참조하십시오.
 
-### 버그 수정 {#ctt-bug-fixes}
+* 모든 OSGi 구성을 포함하는 별도의 패키지 `ui.config`을 만드는 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)에 새로운 기능이 추가되었습니다.
 
-* 마이그레이션 세트에 부분적으로 유사한 파일 이름이 있는 경로가 포함된 경우 컨텐츠 전송 도구가 콘텐트 파일을 건너뛰었습니다. 이 문제가 해결되었습니다.
+### 버그 수정 {#crt-bug-fixes}
 
-## 우수 사례 분석기 {#best-practices-analyzer}
-
-### 릴리스 날짜 {#release-date-bpa}
-
-우수 사례 분석기의 릴리스 날짜는 2020년 11월 13일입니다.
-
-### [!DNL Best Practices Analyzer] {#what-is-new-bpa}의 새로운 기능
-
-* Cloud Readance Analyzer는 이제 BPA(Best Practices Analyzer)입니다. BPA는 현재 AEM 구현에 대한 모범 사례 평가를 제공하고 기존 AEM 인스턴스에서 AEM으로 Cloud Service으로 전환할 준비를 평가합니다.
-
-* AEM에서 Cloud Service으로 사용하는 경우 문제를 일으킬 수 있는 `java.io.InputStream`의 사용을 감지하기 위해 새로운 탐지기 기능을 추가했습니다.
-
-### 버그 수정 {#bpa-bug-fixes}
-
-* *textfield foundation* 구성 요소와 관련된 양의 원인이 수정되었습니다.
+* AEM Dispatcher Converter 및 Repository Modermizer 도구에서 수행한 몇 가지 버그 수정
+[AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 및 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)를 참조하십시오.
