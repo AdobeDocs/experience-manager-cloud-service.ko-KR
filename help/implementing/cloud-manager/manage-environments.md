@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 1%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 1%
 IP 허용 목록 적용은 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자 또는 게시 서비스와 연관되는 프로세스입니다. IP 허용 목록을 적용하려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
 
 >[!NOTE]
->IP 허용 목록을 환경 서비스에 적용하려면 Cloud Manager에 있어야 합니다. Cloud Manager의 IP 허용 목록에 대해 자세히 알아보려면 Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)에서 [IP 허용 목록 소개으로 이동합니다.
+>IP 허용 목록을 환경 서비스에 적용하려면 Cloud Manager에 있어야 합니다. Cloud Manager의 IP 허용 목록에 대한 자세한 내용은 Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)의 [IP 허용 목록 소개를 참조하십시오.
 
 아래 절차에 따라 IP 허용 목록을 적용합니다.
 
