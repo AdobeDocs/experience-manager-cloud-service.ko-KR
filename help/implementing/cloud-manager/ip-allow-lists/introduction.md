@@ -2,9 +2,9 @@
 title: 소개 - Could Manager의 IP 허용 목록
 description: 소개 - Could Manager의 IP 허용 목록
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ IP 허용 목록은 한 번 추가할 수 있으며 한 환경에서 작성자 �
 
 권한이 있는 사용자는 클라우드 관리자 UI IP 허용 목록 페이지 또는 환경 세부 정보 페이지를 사용하여 다음과 같은 환경을 위한 IP 허용 목록을 관리하는 몇 가지 작업을 수행할 수 있습니다.
 
-* IP 허용 목록 추가
+* [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > 한 번 추가하여 프로그램의 환경 서비스 간에 규칙을 여러 번 재사용하거나 적용할 수 있습니다.
-* IP 허용 목록 보기 또는 업데이트
-* IP 허용 목록 적용 또는 적용 취소
-* IP 허용 목록 삭제
+* [IP 허용 목록 보기 또는 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+* [IP 허용 목록 적용 또는 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+* [IP 허용 목록 삭제](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
