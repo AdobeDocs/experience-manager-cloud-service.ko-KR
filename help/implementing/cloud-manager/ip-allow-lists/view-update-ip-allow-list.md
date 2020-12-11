@@ -2,15 +2,15 @@
 title: 보기 및 업데이트 - Could Manager의 IP 허용 목록
 description: 보기 및 업데이트 - Could Manager의 IP 허용 목록
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 
-# IP 허용 목록 보기 및 업데이트 {#view-update}
+# IP 허용 목록 {#view-update} 보기 및 업데이트
 
 다음 시나리오에서 IP 허용 목록을 보고 업데이트할 수 있습니다.
 
