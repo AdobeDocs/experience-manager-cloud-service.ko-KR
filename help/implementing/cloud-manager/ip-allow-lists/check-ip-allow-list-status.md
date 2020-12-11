@@ -2,7 +2,7 @@
 title: IP 허용 목록 상태 확인
 description: IP 허용 목록 상태 확인
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ IP 허용 목록에 대한 업데이트 상태를 확인하려면 아래 단계�
 
 * **삭제**:삭제 요청이 진행 중입니다. 여기에는 모든 서비스의 미적용이 포함됩니다. 각 미적용은 시작 안 함/진행 중/완료 또는 실패와 함께 나열됩니다.
 삭제 작업이 완료되면 IP 허용 목록은 다음과 같이 됩니다.
-   * IP 허용 목록 표에 더 이상 표시되지 않음 * Cloud Manager의 프로그램의 모든 서비스에 더 이상 적용되지 않음
+   * IP 허용 목록 테이블에 더 이상 나타나지 않습니다.
+   * Cloud Manager의 프로그램에서 더 이상 어떤 서비스에도 적용되지 않습니다.
 
 * **삭제 실패**:삭제 작업에서 하나 이상의 적용 취소 프로세스가 실패했습니다. 각 적용 취소는 완료 또는 실패와 함께 나열됩니다.
 
