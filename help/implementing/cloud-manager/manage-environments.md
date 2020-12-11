@@ -2,10 +2,10 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 2%
+source-wordcount: '1248'
+ht-degree: 1%
 
 ---
 
@@ -153,45 +153,38 @@ ht-degree: 2%
 
 아래의 설명에 따라 환경에 대한 게시 서비스에서 다음 작업을 수행할 수 있습니다.
 
-1. **사용자 지정 도메인**
-이름 추가사용자 지정 도메인 이름  [추가를 참조하십시오.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [사용자 지정 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **사용자 지정 도메인 이름 및 SSL 인증서**
-보기 및 업데이트참조:
-   * [사용자 지정 도메인 이름 보기 및 업데이트](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-   * [SSL 인증서 보기 및 업데이트](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+1. [사용자 지정 도메인 이름 보기 및 업데이트](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. **사용자 지정 도메인 이름 및 SSL**
-인증서 삭제참조:
-   * [사용자 지정 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   * [SSL 인증서](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [사용자 지정 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## IP 허용 목록 관리 {#manage-ip-allow-lists}
 
 환경 요약 페이지에서 환경 세부 사항 페이지로 이동합니다. 게시 및/또는 작성자 서비스에서 사용자 환경에 대해 다음 작업을 수행할 수 있습니다.
 
-### IP 허용 목록 적용 {#apply-ip-allow-list}
+### IP 허용 목록 {#apply-ip-allow-list} 적용
 
 IP 허용 목록 적용은 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자 또는 게시 서비스와 연관되는 프로세스입니다. IP 허용 목록을 적용하려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
 
 >[!NOTE]
->IP 허용 목록을 환경 서비스에 적용하려면 Cloud Manager에 있어야 합니다. Cloud Manager의 IP 허용 목록에 대해 자세히 알아보려면 Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)에서 [IP 허용 목록 소개를 탐색합니다.
+>IP 허용 목록을 환경 서비스에 적용하려면 Cloud Manager에 있어야 합니다. Cloud Manager의 IP 허용 목록에 대해 자세히 알아보려면 Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)에서 [IP 허용 목록 소개으로 이동합니다.
 
-아래 단계를 따르십시오.
+아래 절차에 따라 IP 허용 목록을 적용합니다.
 
-1. 환경 화면에서 특정 환경 세부 사항 페이지로 이동하여 IP 허용 목록 테이블로 이동합니다.
+1. **환경** 세부 정보 페이지에서 특정 환경으로 이동하고 **IP 허용 목록** 테이블로 이동합니다.
 1. IP 허용 목록 테이블 상단에 있는 입력 필드를 사용하여 적용할 IP 허용 목록 및 작성자 또는 게시 서비스를 선택합니다.
-1. 그런 다음 적용을 선택하고 제출을 확인합니다.
+1. **적용**&#x200B;을 클릭하고 제출을 확인합니다.
 
 ### IP 허용 목록 {#unapply-ip-allow-list} 적용 취소
 
-IP 허용 목록 적용 취소는 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자/또는 게시자 서비스와 연관되지 않는 프로세스입니다.  IP 허용 목록을 적용 취소할 수 있으려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
+IP 허용 목록 적용 취소는 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자 또는 게시자 서비스와 연관되지 않는 프로세스입니다. IP 허용 목록을 적용 취소할 수 있으려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
 
-아래 단계를 따르십시오.
+IP 허용 목록의 적용을 취소하려면 아래 절차를 따르십시오.
 
-1. 환경 화면에서 특정 환경 세부 사항 페이지로 이동하여 IP 허용 목록 테이블로 이동합니다.
+1. 환경 화면에서 특정 **환경** 세부 정보 페이지로 이동하여 **IP 허용 목록** 테이블로 이동합니다.
 1. 적용하지 않을 IP 허용 목록 규칙이 나열되는 행을 식별합니다.
 1. **선택...행의 맨 오른쪽 끝에 있는** 메뉴
-1. 적용 취소 옵션을 선택하고 제출을 확인합니다.
+1. **적용 취소** 옵션을 선택하고 제출을 확인합니다.
 
 
