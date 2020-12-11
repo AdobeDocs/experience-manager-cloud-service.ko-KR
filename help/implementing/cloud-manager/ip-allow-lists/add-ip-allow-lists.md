@@ -2,7 +2,7 @@
 title: 'IP 허용 목록 추가 '
 description: IP 허용 목록 추가
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -10,11 +10,9 @@ ht-degree: 0%
 ---
 
 
-# 소개 {#introduction}
+# IP 허용 목록 {#add-ip-allow-list} 추가
 
 IP 허용 목록을 추가하려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
-
-## IP 허용 목록 {#add-ip-allow-list} 추가
 
 아래 절차에 따라 IP 허용 목록을 추가하십시오.
 
