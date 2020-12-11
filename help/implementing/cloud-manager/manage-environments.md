@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1264'
 ht-degree: 2%
 
 ---
@@ -149,15 +149,22 @@ ht-degree: 2%
 
 ## 사용자 지정 도메인 이름 관리 {#manage-cdn}
 
-환경 요약 페이지에서 환경 세부 사항 페이지로 이동합니다.
+환경 요약 페이지에서 **환경** 세부 정보 페이지로 이동합니다.
 
 아래의 설명에 따라 환경에 대한 게시 서비스에서 다음 작업을 수행할 수 있습니다.
 
-1. **사용자 지정 도메인 이름 추가**:사용자  [지정 도메인 이름 추가를 참조하십시오.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **사용자 지정 도메인**
+이름 추가사용자 지정 도메인 이름  [추가를 참조하십시오.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **사용자 지정 도메인 이름 보기 및 업데이트**:사용자  [정의 도메인 이름 및 SSL 인증서 보기 및 업데이트 참조](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **사용자 지정 도메인 이름 및 SSL 인증서**
+보기 및 업데이트참조:
+   * [사용자 지정 도메인 이름 보기 및 업데이트](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [SSL 인증서 보기 및 업데이트](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **사용자 지정 도메인 이름 삭제**:사용자  [정의 도메인 이름 및 SSL 인증서 삭제를 참조하십시오.](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **사용자 지정 도메인 이름 및 SSL**
+인증서 삭제참조:
+   * [사용자 지정 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [SSL 인증서](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## IP 허용 목록 관리 {#manage-ip-allow-lists}
 
