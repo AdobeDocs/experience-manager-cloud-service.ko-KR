@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: da1ca193b38657f78ff3e5e0cfffef0ab9e8a9a0
+source-git-commit: c82622ad26fecd547c12fff6994713488b9759df
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '694'
 ht-degree: 58%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 58%
       + [동적 모델을 구성 요소 매핑으로](developing/hybrid/model-to-component-mapping.md)
       + [모델 라우팅](developing/hybrid/routing.md)
       + [통합 실행](developing/hybrid/launch-integration.md)
-      + [서버측 렌더링](developing/hybrid/ssr.md)
+      + [서버 측 렌더링](developing/hybrid/ssr.md)
       + [SPA 참조 문서](developing/hybrid/reference-materials.md)
    + 헤드리스 환경 관리 {#headless}
       + [헤드리스 및 AEM](developing/headless/introduction.md)
@@ -137,7 +137,7 @@ ht-degree: 58%
          + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
          + [미리 보기 - JSON 표현](/help/assets/content-fragments/content-fragments-json-preview.md)
       + 배달 API {#delivery-api}
-         + [콘텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
+         + [컨텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
          + [컨텐츠 조각 그래프QL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
          + [컨텐츠 조각이 있는 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + 개발자 도구 {#developer-tools}
@@ -149,13 +149,13 @@ ht-degree: 58%
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub 구성](developing/personalization/configuring-contexthub.md)
    + [페이지에 ContextHub 추가](developing/personalization/adding-contexthub.md)
-   + [샘플 스토어 후보생](developing/personalization/sample-stores.md)
+   + [샘플 스토어 후보자](developing/personalization/sample-stores.md)
    + [샘플 스토어 모듈](developing/personalization/sample-modules.md)
    + [ContextHub 진단](developing/personalization/contexthub-diagnostics.md)
    + [ContextHub 확장](developing/personalization/extending-contexthub.md)
    + [ContextHub API](developing/personalization/contexthub-api.md)
    + [Adobe Target과 통합](/help/sites-cloud/integrating/adobe-target.md)
-   + [ContextHub로 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   + [ContextHub을 사용하여 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
    + [컨텐츠 조각 사용자 지정 및 확장](developing/extending/content-fragments-customizing.md)
