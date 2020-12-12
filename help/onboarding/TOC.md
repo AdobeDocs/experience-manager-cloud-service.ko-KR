@@ -47,7 +47,7 @@ ht-degree: 60%
       + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [SSL 인증서 보기 및 업데이트 또는 교체](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [SSL 인증서 보기 및 업데이트 또는 바꾸기](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [SSL 인증서 상태 확인](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [SSL 인증서 삭제](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + 사용자 지정 도메인 이름 관리 {#custom-domain-names}
@@ -89,7 +89,7 @@ ht-degree: 60%
    + [AEM as a Cloud Service 및 웹 액세스 가능성 지침](accessibility/web-accessibility.md)
    + [WCAG 2.1에 대한 빠른 안내서](accessibility/quick-guide-wcag.md)
 + 마이그레이션 방법론 {#migration-methodology}
-   + [Cloud Service으로 Adobe Experience Manager 마이그레이션](migration-methodology/getting-started.md)
+   + [Cloud Service으로 Adobe Experience Manager으로 마이그레이션](migration-methodology/getting-started.md)
 + 우수 사례 {#best-practices}
    + [SEO 및 URL 관리](best-practices/seo-and-url-management.md)
 + [도구 콘솔 개요](tools-consoles.md)
