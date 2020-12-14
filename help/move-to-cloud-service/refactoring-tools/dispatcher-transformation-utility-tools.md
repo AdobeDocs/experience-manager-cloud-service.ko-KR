@@ -12,7 +12,7 @@ ht-degree: 53%
 
 # AEM Dispatcher 변환기 {#introduction}
 
-Adobe Experience Manager Dispatcher Converter는 기존 AEM 디스패처 구성을 Cloud Service 디스패처 구성으로 AEM으로 변환합니다.
+Adobe Experience Manager Dispatcher Converter는 기존 AEM Dispatcher 구성을 Cloud Service Dispatcher 구성으로 AEM으로 변환합니다.
 
 ## Dispatcher 소개 {#introduction-dispatcher}
 
@@ -31,18 +31,18 @@ Dispatcher는 Adobe Experience Manager의 캐싱 및/또는 로드 밸런싱 도
 
 ## AEM Dispatcher 변환기 {#aem-dispatcher-converter}
 
-AEM Dispatcher Converter는 기존 온-프레미스 또는 Adobe Managed Services Dispatcher 구성을 Cloud Service 호환 Dispatcher 구성으로 AEM으로 리팩토링하는 기능을 제공합니다.
+AEM Dispatcher Converter는 기존 온-프레미스 또는 Adobe Managed Services Dispatcher 구성을 Cloud Service 호환 Dispatcher 구성으로 AEM에 리팩토링 기능을 제공합니다.
 
 ## AEM Dispatcher 변환기 사용 {#using-dispatcher-converter}
 
-* Adobe I/O CLI 사용:AEM Dispatcher Converter는 `aio-cli-plugin-aem-cloud-service-migration`(AEM은 Adobe I/O CLI용 Cloud Service 코드 리팩토링 플러그인으로 사용)을 통해 사용하는 것이 좋습니다.
+* Adobe I/O CLI 사용:`aio-cli-plugin-aem-cloud-service-migration`(Adobe I/O CLI용 Cloud Service 코드 리팩토링 플러그인으로 AEM)을 통해 AEM Dispatcher Converter를 사용하는 것이 좋습니다.
 
-   **[Git 리소스를 참조하십시오.플러그인을 설치하고 사용하는 방법을 학습하는 aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)**
+   **[Git 리소스를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 플러그인을 설치하고 사용하는 방법에 대해 학습합니다.
 
-* 독립형 유틸리티로,AEM Dispatcher Converter 도구를 독립형 유틸리티로 실행할 수도 있습니다.
+* 독립 실행형 유틸리티로:AEM Dispatcher Converter 도구를 독립형 유틸리티로 실행할 수도 있습니다.
 
    **[Git 리소스를 참조하십시오.AEM Cloud Service 디스패처 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)**&#x200B;에서 이 도구의 사용 및 문제 해결에 대해 알아보십시오.
 
 >[!IMPORTANT]
->AEM Dispatcher Converter는 NodeJS를 사용하여 개발되었습니다. NodeJS 10.0+을 설치하는 것이 좋습니다.
+>AEM Dispatcher Converter는 NodeJS를 사용하여 개발되었습니다. NodeJS 10.0+를 설치하는 것이 좋습니다.
 
