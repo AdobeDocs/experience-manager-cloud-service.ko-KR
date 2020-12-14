@@ -40,7 +40,7 @@ ht-degree: 73%
       * 왼쪽/오른쪽 화살표를 사용하여 다양한 워크플로우의 상태 정보를 탐색할 수 있습니다.
       * 실제 숫자를 클릭/탭하여 적용 가능한 모든 워크플로우가 있는 드롭다운 목록을 연 다음, 상태 표시줄에 표시할 워크플로우를 선택할 수 있습니다.
 
-   ![다양한 워크플로우가 있는 페이지](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+   ![여러 워크플로우가 있는 페이지](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
    >
@@ -67,7 +67,7 @@ ht-degree: 73%
 * [받은 편지함](#completing-a-participant-step-inbox)
 * [페이지 편집기](#completing-a-participant-step-page-editor)
 * [타임라인](#completing-a-participant-step-timeline)
-* [세부 사항](#opening-a-workflow-item-to-view-details-and-take-actions)을 보기 위해 워크플로우 항목을 여는 경우
+* [워크플로우 항목을 열어 세부 사항](#opening-a-workflow-item-to-view-details-and-take-actions)을 볼 때
 
 #### 참가자 단계 완료 - 받은 편지함 {#completing-a-participant-step-inbox}
 
@@ -126,7 +126,7 @@ ht-degree: 73%
 * [받은 편지함](#delegating-a-participant-step-inbox)
 * [페이지 편집기](#delegating-a-participant-step-page-editor)
 * [타임라인](#delegating-a-participant-step-timeline)
-* [세부 사항](#opening-a-workflow-item-to-view-details-and-take-actions)을 보기 위해 워크플로우 항목을 여는 경우
+* [워크플로우 항목을 열어 세부 사항](#opening-a-workflow-item-to-view-details-and-take-actions)을 볼 때
 
 #### 참가자 단계 위임 - 받은 편지함 {#delegating-a-participant-step-inbox}
 
@@ -135,7 +135,7 @@ ht-degree: 73%
 1. **[AEM 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
 1. 도구 모음에서 **위임**&#x200B;을 선택합니다.
-1. 대화 상자가 열립니다. 드롭다운 선택기에서 **사용자**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
+1. 대화 상자가 열립니다. 드롭다운 선택기에서 **사용자**(그룹일 수도 있음)를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
 1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
 #### 참가자 단계 위임 - 페이지 편집기 {#delegating-a-participant-step-page-editor}
@@ -144,7 +144,7 @@ ht-degree: 73%
 
 1. [편집할 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)를 엽니다.
 1. 맨 위의 상태 표시줄에서 **위임**&#x200B;을 선택합니다.
-1. 대화 상자가 열립니다. 드롭다운 선택기에서 **사용자**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
+1. 대화 상자가 열립니다. 드롭다운 선택기에서 **사용자**(그룹일 수도 있음)를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
 1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
 #### 참가자 단계 위임 - 타임라인 {#delegating-a-participant-step-timeline}
@@ -176,7 +176,7 @@ ht-degree: 73%
 * [받은 편지함](#performing-step-back-on-a-participant-step-inbox)
 * [페이지 편집기](#performing-step-back-on-a-participant-step-page-editor)
 * [타임라인](#performing-step-back-on-a-participant-step-timeline)
-* [세부 사항](#opening-a-workflow-item-to-view-details-and-take-actions)을 보기 위해 워크플로우 항목을 여는 경우
+* [워크플로우 항목을 열어 세부 사항](#opening-a-workflow-item-to-view-details-and-take-actions)을 볼 때
 
 #### 참가자 단계에서 뒤로 이동 수행 - 받은 편지함 {#performing-step-back-on-a-participant-step-inbox}
 
@@ -193,7 +193,7 @@ ht-degree: 73%
 다음 절차를 사용하여 뒤 단계로 이동하십시오.
 
 1. [편집할 페이지](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)를 엽니다.
-1. 맨 위의 상태 표시줄에서 **뒤로**&#x200B;를 선택합니다.
+1. 맨 위의 상태 표시줄에서 **뒤로 이동**&#x200B;을 선택합니다.
 1. **이전 단계**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
 1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
@@ -226,7 +226,7 @@ ht-degree: 73%
 
    ![워크플로우 탭](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   모델에 대해 워크플로우 단계가 구성된 경우 다음 내용에 따라 진행 상태를 볼 수 있습니다.<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+   모델에 대해 워크플로우 단계가 구성된 경우 다음과 같이 진행 상태를 볼 수 있습니다.<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
    ![워크플로우 단계](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
