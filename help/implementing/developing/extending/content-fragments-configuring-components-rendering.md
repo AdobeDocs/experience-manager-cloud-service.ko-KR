@@ -12,9 +12,9 @@ ht-degree: 6%
 
 # 컨텐츠 조각 렌더링용 구성 요소 구성{#content-fragments-configuring-components-for-rendering}
 
-콘텐츠 조각 렌더링과 관련된 [고급 서비스](#definition-of-advanced-services-that-need-configuration)가 여러 개 있습니다. 이러한 서비스를 사용하려면 이러한 구성 요소의 리소스 유형이 컨텐츠 조각 프레임워크에 대해 알고 있어야 합니다.
+콘텐츠 조각 렌더링과 관련된 [고급 서비스](#definition-of-advanced-services-that-need-configuration)가 여러 개 있습니다. 이러한 서비스를 사용하려면 이러한 구성 요소의 리소스 유형이 컨텐츠 조각 프레임워크에 대해 자신을 인식해야 합니다.
 
-이 작업은 [OSGi 서비스 - 컨텐츠 조각 구성 요소 구성](#osgi-service-content-fragment-component-configuration)을 구성하여 수행됩니다.
+이 작업은 [OSGi 서비스 - 컨텐츠 조각 구성 요소 구성](#osgi-service-content-fragment-component-configuration)을 구성하여 수행합니다.
 
 이 정보는 다음과 같은 경우에 필요합니다.
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 >* **아래에 설명된  [고급](#definition-of-advanced-services-that-need-configuration)** 서비스가 필요하지 않은 경우 이 구성을 무시할 수 있습니다.
    >
    >
-* **기본 구성 요소를 확장하거나 사용하는 경우** OSGi 구성을 변경하지 않는 것이 좋습니다.
+* **기본 구성 요소를 확장하거나 사용하는 경우** OSGi 구성을 변경하는 것이 좋습니다.
    >
    >
 * **컨텐츠 조각 API만 사용하는 구성 요소를 처음부터 작성할 수 있습니다(고급 서비스** 없음). 그러나 이러한 경우 적절한 처리를 처리하도록 구성 요소를 개발해야 합니다.
@@ -40,18 +40,18 @@ ht-degree: 6%
 
 구성 요소를 등록해야 하는 서비스는 다음과 같습니다.
 
-* 게시 중에 올바르게 종속성 결정(즉, 조각 및 모델이 마지막 게시 이후 변경된 경우 페이지와 함께 자동으로 게시되도록 확인).
-* 전체 텍스트 검색에서 컨텐츠 조각 지원.
-* *중간 컨텐츠의 관리/처리.*
+* 게시 중 올바르게 종속성을 결정합니다(즉, 조각 및 모델이 마지막 게시 이후 변경된 경우 페이지를 사용하여 자동으로 게시할 수 있는지 확인합니다).
+* 전체 텍스트 검색에서 컨텐츠 조각을 지원합니다.
+* *중간 컨텐츠의 관리/처리입니다.*
 * *혼합 미디어 자산의 관리/처리.*
 * 참조된 조각에 대한 디스패처가 플러시됩니다(조각을 포함하는 페이지가 다시 게시되는 경우).
 * 단락 기반 렌더링 사용
 
-이러한 기능 중 하나 이상이 필요한 경우(일반적으로) 기본 고급 서비스를 처음부터 개발하는 대신 사용하는 것이 더 쉽습니다.
+이러한 기능 중 하나 이상이 필요한 경우(일반적으로) 처음부터 새로 개발하는 대신 바로 사용 가능한 고급 서비스를 사용하는 것이 더 쉽습니다.
 
 ## OSGi 서비스 - 컨텐츠 조각 구성 요소 구성 {#osgi-service-content-fragment-component-configuration}
 
-구성은 OSGi 서비스 **컨텐츠 조각 구성 요소 구성**&#x200B;에 바인딩되어야 합니다.
+구성은 OSGi 서비스 **컨텐츠 조각 구성 요소 구성**&#x200B;에 바인딩해야 합니다.
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
@@ -82,7 +82,7 @@ OSGi 구성은 다음과 같습니다.
   <tr>
    <td><strong>참조 속성</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>조각에 대한 참조를 포함하는 속성의 이름예:<code>fragmentPath</code> 또는 <code>fileReference</code></td>
+   <td>조각의 참조를 포함하는 속성의 이름;예:<code>fragmentPath</code> 또는 <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>요소 속성</strong></td>
@@ -97,7 +97,7 @@ OSGi 구성은 다음과 같습니다.
  </tbody>
 </table>
 
-일부 기능의 경우 구성 요소는 사전 정의된 규칙을 준수해야 합니다. 다음 표에서는 각 단락(예:서비스가 이를 정확하게 감지하고 처리할 수 있도록 `jcr:paragraph`).
+일부 기능의 경우 구성 요소는 사전 정의된 규칙을 준수해야 합니다. 다음 표에서는 각 단락(예:서비스가 이를 정확하게 감지하고 처리할 수 있도록 `jcr:paragraph` 각 구성 요소 인스턴스에 대해
 
 <table>
  <thead>
@@ -131,7 +131,7 @@ OSGi 구성은 다음과 같습니다.
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>머리글(예: <code>h1</code>, <code>h2</code>, <code>h3</code>)이 단락(<code>true</code>)으로 계산되거나(<code>false</code>)으로 계산되지 않으면 정의하는 부울 속성입니다.</td>
+   <td>머리글(예: <code>h1</code>, <code>h2</code>, <code>h3</code>)이 단락(<code>true</code>)으로 계산되거나(<code>false</code>)이 계산되지 않으면 정의하는 부울 속성입니다.</td>
   </tr>
  </tbody>
 </table>
