@@ -24,7 +24,7 @@ ht-degree: 59%
 + [AEM Cloud Service SDK로 개발](develop.md)
 + 구성 {#configure}
    + [다중 템플릿 사용](configuring/multi-template-usage.md)
-   + [다중 스토어 설정](configuring/multi-store-setup.md)
+   + [다중 저장소 설정](configuring/multi-store-setup.md)
    + [SEO에 대한 URL 구성](configuring/advanced-url-configuration.md)
    + [캐싱 옵션](configuring/caching.md)
 + 사용자 지정 {#customize}
