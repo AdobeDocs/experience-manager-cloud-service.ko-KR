@@ -2,9 +2,9 @@
 title: SPA 소개 및 연습
 description: 이 문서에서는 SPA의 개념을 소개하고 기본적인 SPA 응용 프로그램을 저작하기 위해 사용하며 기본 AEM SPA Editor와 관련된 방식을 설명합니다.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1933'
 ht-degree: 1%
 
 ---
@@ -153,7 +153,7 @@ SPA이 최종 사용자를 위해 동작하고 SPA 페이지를 검사하는 방
 
 ### SPA 응용 프로그램 로드 중 {#loading-a-spa-application}
 
-1. 아직 로드되지 않은 경우, We.Retail 저널 애플리케이션을 게시 서버에 로드하거나 페이지 편집기의 **페이지 정보** 메뉴에서 **게시됨으로 보기** 옵션을 사용하여 로드합니다.
+1. 아직 로드되지 않은 경우 WKND SPA Project 앱을 게시 서버에 로드하거나 페이지 편집기의 **페이지 정보** 메뉴에서 **게시됨으로 보기** 옵션을 사용하여 로드합니다.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -254,7 +254,7 @@ SPA이 최종 사용자를 위해 동작하고 SPA 페이지를 검사하는 방
 
 1. 또한 모델은 동기적으로 로드되도록 페이지를 그룹화하여 필요한 페이지 다시 로드 수를 줄일 수도 있습니다.
 
-   We.Retail 저널의 예에서 방문자는 일반적으로 모든 페이지를 방문하므로 `home`, `page-1`, `page-2` 및 `page-3` 페이지가 동기식으로 로드됩니다.
+   WKND SPA Project 앱의 예에서 방문자는 일반적으로 모든 페이지를 방문하기 때문에 `home`, `page-1`, `page-2` 및 `page-3` 페이지가 동기식으로 로드됩니다.
 
    이 동작은 필수가 아니며 완전히 정의할 수 있습니다.
 
