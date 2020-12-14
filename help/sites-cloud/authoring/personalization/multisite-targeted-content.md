@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '2900'
-ht-degree: 84%
+ht-degree: 87%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 84%
 
 영역에서는 해당 영역에 연결된 활동만 Live Copy에 푸시됩니다. 기본적으로 [마스터 영역]이 선택됩니다. 추가 영역을 만든 후 만들어진 영역을 사이트나 페이지에 연결하여 푸시되는 타깃팅된 컨텐츠를 가리킬 수 있습니다.
 
-사이트나 Live Copy는 해당 사이트나 Live Copy에서 사용 가능해야 하는 활동을 포함하는 영역에 연결합니다. 기본적으로 사이트나 Live Copy는 마스터 영역에 연결되지만 마스터 영역 이외의 다른 영역도 연결할 수 있습니다.
+사이트나 Live Copy는 해당 사이트나 Live Copy에서 사용 가능해야 하는 활동을 포함하는 영역에 연결합니다. 기본적으로 사이트나 Live Copy는 마스터 영역에 연결되지만 마스터 영역 외에 다른 영역도 연결할 수 있습니다.
 
 >[!NOTE]
 >
@@ -59,19 +59,19 @@ ht-degree: 84%
 
 ## 사용 사례  {#use-cases}
 
-사용 사례에 따라 다양한 방법으로 타깃팅된 컨텐츠에 대한 다중 사이트 지원을 설정할 수 있습니다. 이 섹션에서는 이 지원이 어떻게 하나의 브랜드에 이론적으로 실행되는지를 설명합니다. 또한 [예:지리적 위치를 기반으로 컨텐츠 타깃팅](#example-targeting-content-based-on-geography), 여러 사이트에서 컨텐츠를 타깃팅하는 실제 애플리케이션을 볼 수 있습니다.
+사용 사례에 따라 다양한 방법으로 타깃팅된 컨텐츠에 대한 다중 사이트 지원을 설정할 수 있습니다. 이 섹션에서는 이 지원이 어떻게 하나의 브랜드에 이론적으로 실행되는지를 설명합니다. 또한 [예:지리적 위치를 기반으로 컨텐츠 타깃팅](#example-targeting-content-based-on-geography), 여러 사이트에서 컨텐츠를 타깃팅하는 실제 애플리케이션이 표시될 수 있습니다.
 
 타깃팅된 컨텐츠는 사이트 또는 페이지의 범위를 정의하는 이른 바 영역이란 것으로 둘러싸여 있습니다. 이러한 영역은 브랜드 수준에서 정의되며, 하나의 브랜드는 여러 영역을 포함할 수 있습니다. 영역은 브랜드 간에 구별될 수 있습니다. 하나의 브랜드는 마스터 영역만 포함할 수도 있고 따라서 모든 브랜드에서 공유되는 반면, 또 다른 브랜드는 여러 브랜드(예를 들어, 영역별로)를 포함할 수도 있습니다. 따라서 브랜드는 브랜드 간에 영역 세트를 미러링할 필요가 없습니다.
 
 타깃팅된 컨텐츠에 대한 다중 사이트 지원 시 다음 컨텐츠 세트 중 하나가 있는 두 개(또는 이상) 사이트가 있고 이 사이트들이 **하나**&#x200B;의 브랜드를 사용하는 경우가 있을 수 있습니다.
 
-* 완전히 *분리된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집해도 다른 사이트에 영향을 주지 않습니다. 개별 영역에 연결하는 사이트는 구성된 영역에 읽고 씁니다. 예:
+* 완전히 *분리된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집해도 다른 사이트에 영향을 주지 않습니다. 분리된 영역에 연결하는 사이트들은 해당 사이트만의 구성된 영역에 읽고 씁니다. 예:
    * 사이트 A는 영역 X에 연결합니다.
    * 사이트 B는 영역 Y에 연결합니다.
-* *공유된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집하면 두 사이트 모두가 직접적인 영향을 받습니다. 두 사이트가 동일한 영역을 참조하도록 함으로써 이렇게 설정할 수 있습니다. 동일한 영역에 연결하는 사이트는 이 영역 내에서 타깃팅된 컨텐츠를 공유합니다. 예:
+* *공유된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집하면 두 사이트 모두가 직접적인 영향을 받습니다. 두 사이트가 동일한 영역을 참조하도록 함으로써 이렇게 설정할 수 있습니다. 동일한 영역에 연결하는 사이트들은 이 영역 내의 타깃팅된 컨텐츠를 공유합니다. 예:
    * 사이트 A는 영역 X에 연결합니다.
    * 사이트 B는 영역 X에 연결합니다.
-* MSM을 통해 다른 사이트에서 상속된 타깃팅된 컨텐츠 *의 개별 세트 - 컨텐츠는 마스터에서 Live Copy로 단방향 롤아웃될 수 있습니다.* 예:
+* MSM을 통해 다른 사이트로부터 타깃팅된 컨텐츠 세트 *상속된* - 컨텐츠를 마스터에서 Live Copy로 단방향 롤아웃할 수 있습니다. 예:
    * 사이트 A는 영역 X에 연결합니다.
    * 사이트 B는 영역 Y(영역 X의 Live Copy)에 연결합니다.
 
@@ -81,7 +81,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->이 기능에 대한 자세한 내용은 [타깃팅된 컨텐츠에 대한 다중 사이트 관리가 구조화된 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)을 참조하십시오.
+>이 기능에 대한 자세한 내용은 [타깃팅된 컨텐츠에 대한 다중 사이트 관리가 구조화되어 있는 방법](/help/sites-cloud/authoring/personalization/multisite-structure.md)을 참조하십시오.
 
 ## 예: 지역을 기반으로 하는 컨텐츠 타깃팅 {#example-targeting-content-based-on-geography}
 
@@ -92,7 +92,7 @@ ht-degree: 84%
 * **미국** 사이트는 왼쪽 위 모서리에 있으며 마스터 사이트입니다. 이 예에서는 타깃팅 모드로 열려 있습니다.
 * 이 사이트의 다른 세 버전은 **캐나다**, **영국** 및 **오스트레일리아**&#x200B;이며, 모두 Live Copy입니다. 이 사이트들은 미리 보기 모드로 열려 있습니다.
 
-![다중 사이트 버전](/help/sites-cloud/authoring/assets/multisite-versions.png)
+![여러 사이트 버전](/help/sites-cloud/authoring/assets/multisite-versions.png)
 
 각 사이트는 지리적으로 서로 다른 지역에서 개인화된 컨텐츠를 공유합니다.
 
@@ -106,11 +106,11 @@ ht-degree: 84%
 
 ![미국 버전](/help/sites-cloud/authoring/assets/multisite-us.png)
 
-탭을 새로 고치면 캐나다 사이트는 우리 쪽에서 아무런 작업을 하지 않아도 새 이미지로 변경됩니다. 이는 캐나다가 미국과 마스터 영역을 공유하기 때문입니다. 영국과 호주 사이트에서는 이미지가 바뀌지 않는다.
+탭을 새로 고치면 캐나다 사이트는 우리 쪽에서 아무런 작업을 하지 않아도 새 이미지로 변경됩니다. 이는 캐나다가 미국과 마스터 영역을 공유하기 때문입니다. 영국과 호주 지역에선 이미지가 바뀌지 않는다.
 
 ![버전 변경](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-마케터는 유럽 지역에 이러한 변경 사항을 롤아웃하려 할 것이고 **페이지 롤아웃**&#x200B;을 탭하거나 클릭하여 Live Copy를 롤아웃합니다. 탭을 새로 고치면 유럽 영역이 마스터 영역에서 상속되므로(롤아웃 후) 영국 사이트에 새 이미지가 생깁니다.<!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+마케터는 유럽 지역에 이러한 변경 사항을 롤아웃하려 할 것이고 **페이지 롤아웃**&#x200B;을 탭하거나 클릭하여 Live Copy를 롤아웃합니다. 탭을 새로 고치면 유럽 영역이 마스터 영역에서 상속을 받으므로(롤아웃 후) 영국 사이트에 새 이미지가 포함됩니다.<!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
 
 ![Live Copy 롤아웃](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -122,7 +122,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->이 기능에 대한 자세한 내용은 [타깃팅된 컨텐츠에 대한 다중 사이트 관리가 구조화된 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)을 참조하십시오.
+>이 기능에 대한 자세한 내용은 [타깃팅된 컨텐츠에 대한 다중 사이트 관리가 구조화되어 있는 방법](/help/sites-cloud/authoring/personalization/multisite-structure.md)을 참조하십시오.
 
 ### 새 영역 만들기와 새 영역을 Live Copy로 만들기 비교 {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -155,7 +155,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 새 영역을 만들려면 다음을 수행하십시오.
 
-1. **개인화** > **활동** 또는 **오퍼**&#x200B;로 이동한 다음 브랜드로 이동합니다.
+1. **개인화** > **활동** 또는 **오퍼** 또는 브랜드로 이동한 다음
 1. **영역 만들기**&#x200B;를 탭하거나 클릭합니다.
 
    ![영역 만들기](/help/sites-cloud/authoring/assets/multisite-create-area.png)
@@ -195,7 +195,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
    >[!NOTE]
    >
-   >페이지가 Live Copy로 롤아웃되고 블루프린트 페이지에 대해 구성된 영역도 페이지 Live Copy에 대해 구성된 영역에 대한 블루프린트일 때, LiveAction **personalizationContentRollout**&#x200B;은(는) **표준 롤아웃 구성**&#x200B;의 일부인 동기 subRollout을 트리거합니다.
+   >페이지가 Live Copy에 롤아웃되고 블루프린트 페이지에 대해 구성된 영역도 페이지 Live Copy에 대해 구성된 영역의 블루프린트라면 LiveAction **personalizationContentRollout**&#x200B;은 **표준 롤아웃 구성**&#x200B;의 일부인 동기 subRollout을 트리거합니다.
 
 1. **만들기**&#x200B;를 탭하거나 클릭합니다.
 
@@ -211,7 +211,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 >[!NOTE]
 >
->동일한 영역을 참조하는 페이지나 사이트는 동일한 *활동, 경험 및 오퍼의 공유 집합을 사용하고 있습니다.* 여러 사이트에서 공유하는 활동, 경험 또는 오퍼를 편집하는 것은 모든 사이트에 영향을 줍니다.
+>동일한 영역을 참조하는 페이지나 사이트는 *동일한* 활동, 경험 및 오퍼의 공유 세트를 사용합니다. 여러 사이트에서 공유하는 활동, 경험 또는 오퍼를 편집하는 것은 모든 사이트에 영향을 줍니다.
 
 사이트를 영역에 연결하려면 다음을 수행하십시오.
 
@@ -232,7 +232,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나중에 상속을 복원할 수 있습니다. Live Copy를 분리하면 상속이 영구적으로 중단됩니다.
 
-활동에서 상속을 복원하여 타깃팅된 컨텐츠의 상속을 일시 중단하거나 분리할 수 있습니다. 페이지나 사이트가 Live Copy인 영역에 연결하는 경우 활동의 상속 상태를 볼 수 있습니다.
+활동에서 상속을 복원하여 타깃팅된 컨텐츠의 상속을 일시 중단하거나 분리할 수 있습니다. 페이지나 사이트가 Live Copy인 영역에 연결하는 경우, 활동의 상속 상태를 확인할 수 있습니다.
 
 다른 사이트에서 상속받는 활동은 활동 이름 옆에 녹색으로 표시됩니다. 일시 중단된 상속은 빨간색으로 표시되고 로컬로 만들어진 활동에는 아무 아이콘도 없습니다.
 
@@ -283,7 +283,7 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 1. **타깃팅 시작**&#x200B;을 탭하거나 클릭합니다.
 1. 도구 모음의 드롭다운 메뉴에서 **Live Copy 다시 시작**&#x200B;을 선택합니다.
 
-   ![Live Copy 재개](/help/sites-cloud/authoring/assets/multisite-resume.png)
+   ![Live Copy 다시 시작](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
 1. **다시 시작**&#x200B;을 탭하거나 클릭하여 Live Copy 상속을 다시 시작할 것임을 확인합니다. 상속을 다시 시작하는 경우 현재 활동에 대한 수정 사항은 모두 잃게 됩니다.
 
