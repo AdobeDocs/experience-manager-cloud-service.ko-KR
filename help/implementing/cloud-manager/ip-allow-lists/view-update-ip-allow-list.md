@@ -1,10 +1,10 @@
 ---
-title: 보기 및 업데이트 - Could Manager의 IP 허용 목록
-description: 보기 및 업데이트 - Could Manager의 IP 허용 목록
+title: 보기 및 업데이트 - Cloud Manager의 IP 허용 목록
+description: 보기 및 업데이트 - Cloud Manager의 IP 허용 목록
 translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+source-git-commit: 7fdfa626147a72f3d7fb98b89a19a871fc7a13ca
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
