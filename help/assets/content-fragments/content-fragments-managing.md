@@ -34,8 +34,8 @@ ht-degree: 94%
 >
 >컨텐츠 조각을 사용할 수 있습니다.
 >
->* 페이지를 작성할 때;[컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)을 참조하십시오.
->* for [GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)의 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달에 사용됩니다.
+>* 페이지 작성 시[컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)을 참조하십시오.
+>* GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)의 컨텐츠 조각을 사용하여 [헤드리스 컨텐츠 전달의 경우
 
 
 ## 컨텐츠 조각 만들기 {#creating-content-fragments}
@@ -52,7 +52,7 @@ ht-degree: 94%
 2. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
 3. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
-   * [모델](/help/assets/content-fragments/content-fragments-models.md)  - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다.예를 들어  **** 모험가들
+   * [모델](/help/assets/content-fragments/content-fragments-models.md)  - 구조화된 컨텐츠가 필요한 조각을 생성하는 데 사용됩니다.예를 들어  **** &lt;모험가>
 
       * 사용 가능한 모든 모델이 표시됩니다.
 
@@ -182,7 +182,7 @@ ht-degree: 94%
 
    >[!CAUTION]
    >
-   >컨텐츠 조각을 편집하려면 해당 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 필요합니다. [ 문제가 발생하면 시스템 관리자에게 문의하십시오.
+   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 필요합니다. 문제가 발생하면 시스템 관리자에게 문의하십시오.
 
    >[!NOTE]
    >
