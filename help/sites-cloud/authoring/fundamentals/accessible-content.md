@@ -26,7 +26,7 @@ ht-degree: 99%
 
 * [WCAG 2.1에 대한 빠른 안내서](/help/onboarding/accessibility/quick-guide-wcag.md).
 * [Adobe 솔루션에 대한 액세서빌러티 적합성 보고서](https://www.adobe.com/accessibility/compliance.html).
-* [자산의 액세서빌러티](/help/assets/accessibility.md)
+* [자산의 액세스 가능성](/help/assets/accessibility.md)
 * [액세스 가능한 컨텐츠를 만들려면 리치 텍스트 편집기 구성 참조](/help/implementing/developing/extending/rte-accessible-content.md)
 
 이러한 적합성 수준에 따라 레벨 A(가장 낮음), 레벨 AA 및 레벨 AAA(가장 높음)로 지침의 등급이 지정됩니다. 이러한 등급을 간단히 정의하면 다음과 같습니다.
