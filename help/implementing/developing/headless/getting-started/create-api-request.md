@@ -4,7 +4,7 @@ description: 자산 REST API를 사용하면 컨텐츠 조각을 관리할 수 �
 translation-type: tm+mt
 source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
