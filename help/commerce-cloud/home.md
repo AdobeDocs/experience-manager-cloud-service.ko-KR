@@ -12,12 +12,12 @@ ht-degree: 85%
 
 # AEM Commerce as a Cloud Service {#commerce-guide}
 
-이 페이지에는 AEM Commerce와 관련된 자가 도움말 리소스가 Cloud Service으로 나열됩니다.
+이 페이지에는 AEM Commerce와 관련된 자가 도움말 리소스를 Cloud Service으로 나열합니다.
 
 ## 주요 상거래 문서 {#key-articles}
 
 * [Cloud Service으로 AEM Commerce 소개](overview.md)
-* [Cloud Service의 AEM Commerce 건축](architecture/magento.md)
+* [Cloud Service의 AEM 상거래 구조](architecture/magento.md)
 * [시작하기](getting-started.md)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
