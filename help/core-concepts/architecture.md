@@ -63,7 +63,7 @@ AEM as a Cloud Service은 다음과 같은 작업을 수행하는 오케스트�
 
 AEM as a Cloud Service는 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다.
 
-AEM을 Cloud Service으로 사용할 수 있는 환경에는 세 가지 유형이 있습니다.
+AEM을 Cloud Service으로 사용할 수 있는 환경에는 3가지 유형이 있습니다.
 
 * **프로덕션 환경**: 비즈니스 전문가를 위한 애플리케이션을 호스팅합니다.
 
