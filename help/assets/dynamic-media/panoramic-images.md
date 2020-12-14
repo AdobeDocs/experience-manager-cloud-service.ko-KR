@@ -12,25 +12,25 @@ ht-degree: 2%
 
 # 파노라마 이미지{#panoramic-images}
 
-이 섹션에서는 [파노라마 이미지] 뷰어를 사용하여 회의실, 속성, 위치 또는 조경의 몰입형 360° 보기 경험을 위해 구형 파노라마 이미지를 렌더링하는 작업에 대해 설명합니다.
+이 섹션에서는 [파노라마 이미지] 뷰어를 사용하여 회의실, 속성, 위치 또는 조경을 실감할 수 있도록 구형 파노라마 이미지를 렌더링하는 작업에 대해 설명합니다.
 
 [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)도 참조하십시오.
 
-![panoramic-image2](assets/panoramic-image2.png)
+![panasonic-image2](assets/panoramic-image2.png)
 
 ## 파노라마 이미지 뷰어에 사용할 자산 업로드 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
-업로드된 자산이 파노라마 이미지 뷰어와 함께 사용할 구형 파노라마 이미지로 자격을 갖추려면 자산에 다음 중 하나 또는 둘 다가 있어야 합니다.
+업로드된 에셋이 파노라마 이미지 뷰어와 함께 사용할 구형 파노라마 이미지로 자격을 갖추려면 에셋에 다음 중 하나 또는 둘 다가 있어야 합니다.
 
-* 2 종횡비
+* 2 종횡비.
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* `equirectangular` 또는 `spherical`와 `panorama`, 또는 `spherical` 및 `panoramic` 키워드로 태그되었습니다. [태그 사용](/help/sites-cloud/authoring/features/tags.md)을 참조하십시오.
+* `equirectangular` 또는 `spherical` 및 `panorama` 또는 `spherical` 및 `panoramic` 키워드로 태그가 지정됩니다. [태그 사용](/help/sites-cloud/authoring/features/tags.md)을 참조하십시오.
 
-종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 `Panoramic Media` WCM 구성 요소의 파노라마 에셋에 적용됩니다.
+종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 `Panoramic Media` WCM 구성 요소에 대한 파노라마 자산에 적용됩니다.
 
-파노라마 이미지 뷰어에 사용할 에셋을 업로드하려면 [에셋 업로드](/help/assets/manage-digital-assets.md#uploading-assets)를 참조하십시오.
+파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 [자산 업로드](/help/assets/manage-digital-assets.md#uploading-assets)를 참조하십시오.
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
