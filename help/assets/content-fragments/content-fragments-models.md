@@ -32,9 +32,9 @@ ht-degree: 44%
 
 컨텐츠 조각 모델을 사용하려면 다음을 수행합니다.
 
-1. [인스턴스에 대해 컨텐츠 조각 모델 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-1. [컨텐츠 조각 모델](#creating-a-content-fragment-model) 생성  [및](#defining-your-content-fragment-model) 구성
-1. [컨텐츠 조각을 만들 때 사용할 컨텐츠 조각](#enabling-disabling-a-content-fragment-model) 을 만들 때 사용할 컨텐츠 조각 모델을 활성화합니다.
+1. [인스턴스에 대한 컨텐츠 조각 모델 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+1. [컨텐츠 조각 모델 생성](#creating-a-content-fragment-model) 및  [구성](#defining-your-content-fragment-model)
+1. [컨텐츠 조각을 ](#enabling-disabling-a-content-fragment-model) 만들 때 사용할 컨텐츠 조각을 만들 때 사용할 컨텐츠 조각 모델을 활성화합니다.
 
 ## 컨텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
 
@@ -54,7 +54,7 @@ ht-degree: 44%
 
 ## 컨텐츠 조각 모델 정의 {#defining-your-content-fragment-model}
 
-컨텐츠 조각 모델은 **[데이터 유형](#data-types)**&#x200B;의 선택을 사용하여 결과 컨텐츠 조각 구조를 효과적으로 정의합니다. 모델 편집기를 사용하여 데이터 유형의 인스턴스를 추가한 다음 필요한 필드를 만들도록 구성할 수 있습니다.
+컨텐츠 조각 모델은 **[데이터 유형](#data-types)** 선택을 사용하여 결과 컨텐츠 조각 구조를 효과적으로 정의합니다. 모델 편집기를 사용하여 데이터 유형의 인스턴스를 추가한 다음 이를 구성하여 필수 필드를 만들 수 있습니다.
 
 >[!CAUTION]
 >
@@ -85,7 +85,7 @@ ht-degree: 44%
 
    필요한 필드를 선택한 후 휴지통 아이콘을 클릭/탭합니다. 작업을 확인하는 메시지가 나타납니다.
 
-1. 필요한 필드를 모두 추가하고 필요에 따라 관련 속성을 정의합니다.
+1. 필요한 모든 필드를 추가하고 필요에 따라 관련 속성을 정의합니다.
 
 1. **저장**&#x200B;을 선택하여 정의를 유지합니다.
 
@@ -141,14 +141,14 @@ The content fragment model effectively defines the structure of the resulting co
 
 ## 데이터 유형 {#data-types}
 
-모델을 정의하는 데 사용할 수 있는 데이터 유형 선택:
+모델을 정의하는 데 사용할 수 있는 데이터 유형은 다음과 같습니다.
 
 * **한 줄 텍스트**
-   * 한 줄의 텍스트 필드를 하나 이상 추가합니다.최대 길이를 정의할 수 있습니다.
+   * 단일 텍스트 줄의 필드를 하나 이상 추가합니다.최대 길이를 정의할 수 있습니다.
 * **여러 줄 텍스트**
    * 서식 있는 텍스트, 일반 텍스트 또는 마크다운일 수 있는 텍스트 영역
 * **번호**
-   * 하나 이상의 숫자 필드 추가
+   * 숫자 필드를 하나 이상 추가합니다.
 * **부울**
    * 부울 확인란 추가
 * **날짜 및 시간**
@@ -158,7 +158,7 @@ The content fragment model effectively defines the structure of the resulting co
 * **태그**
    * 조각 작성자가 태그 영역에 액세스하고 선택할 수 있습니다.
 * **컨텐츠 참조**
-   * 모든 유형의 기타 컨텐츠를 참조합니다.은(는) [중첩된 콘텐츠 만들기](#using-references-to-form-nested-content)에 사용할 수 있습니다.
+   * 모든 유형의 다른 컨텐츠를 참조합니다.은(는) [중첩 컨텐트 만들기](#using-references-to-form-nested-content)에 사용할 수 있습니다.
 
 <!--
 * **Fragment Reference**
@@ -175,17 +175,17 @@ The content fragment model effectively defines the structure of the resulting co
 
 ## 속성 {#properties}
 
-많은 속성은 자체 설명이며 특정 속성에 대한 자세한 내용은 아래에 나와 있습니다.
+많은 속성이 자체 설명이므로 특정 속성에 대한 자세한 내용은 다음과 같습니다.
 
-* **렌더링**
-조각에서 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 종종 이렇게 하면 작성자가 필드의 단일 인스턴스를 표시할지 또는 여러 인스턴스를 만들 수 있도록 허용될지를 정의할 수 있습니다.
+* **렌더링조각**
+에서 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 종종 이 기능을 사용하면 작성자가 필드의 단일 인스턴스를 표시할지 또는 여러 인스턴스를 만들 수 있는지 정의할 수 있습니다.
 
 * **필드**
-레이블입력 
-**필드** 레이블은  **속성 이름을** 자동으로 생성하며, 이 이름은 필요한 경우 수동으로 업데이트할 수 있습니다.
+레이블에 
+**필드** 레이블은 속성  **이름을** 자동으로 생성하며, 필요한 경우 수동으로 업데이트할 수 있습니다.
 
 * **ValidationBasic**
-유효성 검사는 Requirements 속성과 같은 메커니즘에 의해  **** 사용할 수 있습니다. 일부 데이터 유형에는 추가 유효성 검사 필드가 있습니다. 자세한 내용은 [유효성 검사](#validation)를 참조하십시오.
+유효성 검사는 Requirements 속성과 같은 메커니즘에 의해  **** 제공됩니다. 일부 데이터 유형에는 추가 유효성 검사 필드가 있습니다. 자세한 내용은 [유효성 검사](#validation)를 참조하십시오.
 
 * 데이터 유형 **여러 줄 텍스트**&#x200B;의 경우 **기본 유형**&#x200B;을 다음 중 하나로 정의할 수 있습니다.
 
@@ -209,10 +209,10 @@ The content fragment model effectively defines the structure of the resulting co
 
 ## 유효성 검사 {#validation}
 
-이제 다양한 데이터 유형에는 결과 조각에 컨텐츠를 입력할 때 유효성 검사 요구 사항을 정의할 수 있는 가능성이 포함됩니다.
+이제 다양한 데이터 유형에는 결과 조각에서 컨텐츠를 입력할 때 유효성 검사 요구 사항을 정의할 수 있는 가능성이 포함됩니다.
 
 * **한 줄 텍스트**
-   * 미리 정의된 regex와 비교할 수 있습니다.
+   * 미리 정의된 regex와 비교합니다.
 * **번호**
    * 특정 값을 확인합니다.
 
@@ -338,7 +338,7 @@ In addition to standard properties you can define:
 
 ## 컨텐츠 조각 모델 {#enabling-disabling-a-content-fragment-model} 활성화 또는 비활성화
 
-컨텐츠 조각 모델의 사용을 완전히 제어하려면 사용자가 설정할 수 있는 상태가 있습니다.
+컨텐츠 조각 모델의 사용을 완벽하게 제어하기 위해 설정할 수 있는 상태가 있습니다.
 
 ### 컨텐츠 조각 모델 {#enabling-a-content-fragment-model} 활성화
 
@@ -348,29 +348,29 @@ In addition to standard properties you can define:
 * 컨텐츠 조각 모델 내에서 참조할 수 있습니다.
 * GraphQL에서 사용할 수 있습니다.따라서 스키마가 생성됩니다.
 
-다음 중 하나로 플래그가 지정된 모델을 활성화하려면
+다음 중 하나로 플래그가 지정된 모델을 활성화하려면:
 
-* **초안** :mew(활성화되지 않음)
-* **비활성화됨** :이 특별히 비활성화되어 있습니다.
+* **초안** :mew(활성화되지 않음).
+* **사용 안 함** :이 특별히 비활성화되어 있습니다.
 
 다음 중 하나에서 **Enable** 옵션을 사용합니다.
 
 * 필수 모델이 선택되면 상단 도구 모음입니다.
 * 해당 빠른 작업(필요한 모델 위에 마우스 놓기)입니다.
 
-![초안 또는 비활성화된 모델 활성화](assets/cfm-status-enable.png)
+![초안 또는 사용 불가능한 모델 활성화](assets/cfm-status-enable.png)
 
 ### 컨텐츠 조각 모델 {#disabling-a-content-fragment-model} 비활성화
 
 다음과 같은 방법으로 모델을 비활성화할 수도 있습니다.
 
-* 이 모델은 더 이상 *new* 컨텐츠 조각을 만드는 기준으로 사용할 수 없습니다.
+* 모델은 더 이상 *new* 컨텐츠 조각을 만드는 기준으로 사용할 수 없습니다.
 * 하지만:
-   * GraphQL 스키마는 계속 생성되며 쿼리 가능합니다(JSON API에 영향을 주지 않기 위해).
-   * 모델의 컨텐츠 조각은 GraphQL 종단점에서 쿼리하여 반환할 수 있습니다.
-* 모델을 더 이상 참조할 수 없지만 기존 참조는 그대로 유지되므로 GraphQL 종단점에서 쿼리하여 반환할 수 있습니다.
+   * GraphQL 스키마는 계속 생성되며 여전히 쿼리할 수 있습니다(JSON API에 영향을 주지 않기 위해).
+   * 모델의 모든 컨텐츠 조각은 GraphQL 끝점에서 쿼리하여 반환할 수 있습니다.
+* 모델을 더 이상 참조할 수 없지만 기존 참조는 그대로 유지되며 GraphQL 끝점에서 쿼리하여 반환할 수 있습니다.
 
-**Enabled**&#x200B;로 플래그가 지정된 모델을 비활성화하려면 다음 중 하나에서 **Disable** 옵션을 사용합니다.
+**활성화됨**&#x200B;으로 플래그가 지정된 모델을 비활성화하려면 다음 중 하나에서 **비활성화** 옵션을 사용합니다.
 
 * 필수 모델이 선택되면 상단 도구 모음입니다.
 * 해당 빠른 작업(필요한 모델 위에 마우스 놓기)입니다.
