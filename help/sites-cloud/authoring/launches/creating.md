@@ -18,11 +18,11 @@ ht-degree: 76%
 * 소스 페이지의 하위 페이지는 기본적으로 론치에 포함됩니다. 원할 경우 소스 페이지만 사용할 수 있습니다.
 * 기본적으로, Live Copy는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 복사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
-필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **론치 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합하여 작동합니다([론치 구성 편집](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되도록 하려면 둘 다 설정해야 합니다.
+필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **시작 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합으로만 작동합니다([론치 구성 편집](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되도록 하려면 둘 다 설정해야 합니다.
 
 >[!NOTE]
 >
->론치를 만들 때 계층 구조의 상위 페이지는 소스 페이지의 복사본이 아닙니다. 템플릿은 템플릿으로 만든 자리 표시자입니다.
+>론치를 만들 때 계층 구조의 상위 페이지는 소스 페이지의 복사본이 아닙니다. 템플릿으로 만든 자리 표시자입니다.
 >
 >* `/libs/launches/templates/outofscope`
 >
@@ -87,7 +87,7 @@ ht-degree: 76%
    * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면, 소스 페이지가 변경될 때 론치 페이지 내용이 자동으로 업데이트됩니다. 이 옵션은 론치를 Live Copy로 만들어 이를 수행합니다. 기본적으로 이 옵션은 선택되어 있습니다. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름) [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)를 참조하십시오.
 
-   ![속성 실행](/help/sites-cloud/authoring/assets/launches-properties.png)
+   ![속성 시작](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. **만들기**&#x200B;를 사용하여 프로세스를 완료하고 새 론치를 만듭니다. 확인 대화 상자를 통해 론치를 즉시 열지 여부를 묻게 됩니다.
 
@@ -140,7 +140,7 @@ ht-degree: 76%
 
 1. 다른 실행과 마찬가지로 **속성**&#x200B;을 완료합니다.
 
-1. **Create**&#x200B;으로 완료합니다.
+1. **만들기**&#x200B;로 완료합니다.
 
 #### 중첩 론치 만들기 - 사이트 콘솔 {#creating-a-nested-launch-sites-console}
 
@@ -151,7 +151,7 @@ ht-degree: 76%
 1. **론치 제목** 및 기타 필수 세부 정보를 입력합니다(일반 론치의 경우와 같음).
 1. **만들기**&#x200B;를 사용하여 프로세스를 완료하고 새 론치를 만듭니다. 확인 대화 상자를 통해 론치를 즉시 열지 여부를 묻게 됩니다.
 
-**완료**&#x200B;를 선택하면 **사이트** 콘솔의 **참조** 레일로 돌아갑니다. 적절한 페이지를 선택하면 새 론치가 표시됩니다.
+**완료**&#x200B;를 선택하면 **사이트** 콘솔의 **참조** 레일로 돌아갑니다. 해당 페이지를 선택하면 새 론치가 표시됩니다.
 
 ### 론치 삭제 {#deleting-a-launch}
 
