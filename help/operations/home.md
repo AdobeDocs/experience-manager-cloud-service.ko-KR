@@ -35,7 +35,7 @@ ht-degree: 93%
 | [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
-| [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM에서 Cloud Service으로 제공하는 커머스 통합 프레임워크에 대해 자세히 알아보십시오. |
+| [상거래 사용 안내서](/help/commerce-cloud/home.md) | Cloud Service으로 AEM 기반의 Commerce Integration Framework에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
