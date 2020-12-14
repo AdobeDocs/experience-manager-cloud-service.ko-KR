@@ -13,15 +13,15 @@ ht-degree: 0%
 # SSL 인증서 {#adding-an-ssl-certificate} 추가
 
 >[!NOTE]
->AEM은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 인증서만 받습니다. DV(도메인 유효성 검사) 인증서가 허용되지 않습니다. 또한 모든 인증서는 2048비트 RSA 개인 키가 일치하는 신뢰할 수 있는 인증 기관(CA)의 X.509 TLS 인증서여야 합니다.
+>CLOUD SERVICE의 AEM은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 인증서만 받습니다. DV(도메인 유효성 검사) 인증서가 허용되지 않습니다. 또한 인증서가 일치하는 2048비트 RSA 개인 키가 있는 신뢰할 수 있는 인증 기관(CA)의 X.509 TLS 인증서여야 합니다.
 
-인증서를 프로비저닝하는 데 며칠이 소요되며 인증서를 몇 개월 전에 프로비저닝하는 것이 좋습니다. 자세한 내용은 [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)를 참조하십시오.
+인증서를 프로비저닝하는 데 며칠이 걸리기 때문에 몇 개월 전에 인증서를 프로비저닝하는 것이 좋습니다. 자세한 내용은 [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)를 참조하십시오.
 
 ## 인증서 형식 {#certificate-format}
 
-Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PEM 형식 내에 있는 일반적인 파일 확장자는 `.pem,`입니다.`crt`, `.cer`, 및 `.cert`.
+Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PEM 형식 내에 있는 일반적인 파일 확장에는 `.pem,`이 있습니다.`crt`, `.cer`, 및 `.cert`.
 
-아래 절차에 따라 SSL 파일의 형식을 PEM으로 변환하십시오.
+아래 절차에 따라 SSL 파일의 형식을 PEM으로 변환합니다.
 
 * PFX를 PEM으로 변환
 
@@ -37,9 +37,9 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 
 ## 중요 고려 사항 {#important-considerations}
 
-* 클라우드 관리자에서 SSL 인증서를 설치하려면 사용자가 비즈니스 소유자 또는 배포 관리자 역할에 있어야 합니다.
+* Cloud Manager에서 SSL 인증서를 설치하려면 사용자가 비즈니스 소유자 또는 배포 관리자 역할에 있어야 합니다.
 
-* Cloud Manager는 인증서가 만료되더라도 프로그램 전체에서 하나 이상의 환경과 연결할 수 있는 최대 10개의 SSL 인증서를 허용합니다. 그러나 Cloud Manager UI에서는 이 제한 사항이 있는 프로그램에 최대 50개의 SSL 인증서를 설치할 수 있습니다.
+* 지정된 시간에 Cloud Manager는 인증서가 만료되더라도 프로그램 전체에서 하나 이상의 환경과 연관될 수 있는 최대 10개의 SSL 인증서를 허용합니다. 그러나 Cloud Manager UI에서는 이 제약 조건으로 프로그램에 최대 50개의 SSL 인증서를 설치할 수 있도록 허용합니다.
 
 ## 인증서 {#adding-a-cert} 추가
 
@@ -53,7 +53,7 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 
 1. **SSL 인증서 추가**&#x200B;를 클릭하여 **SSL 인증서 추가** 대화 상자를 엽니다.
 
-   * **인증서 이름**&#x200B;에 인증서 이름을 입력합니다. 인증서를 쉽게 참조할 수 있는 이름이 될 수 있습니다.
+   * **인증서 이름**&#x200B;에 인증서 이름을 입력합니다. 인증서를 쉽게 참조할 수 있도록 이 이름을 지정할 수 있습니다.
    * **인증서**, **개인 키** 및 **인증서 체인**을 해당 필드에 붙여 넣습니다. 입력 상자 오른쪽에 있는 붙여넣기 아이콘을 사용합니다.
 세 필드 모두 선택 사항이 아니므로 포함되어야 합니다.
 
@@ -61,9 +61,9 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 
 
       >[!NOTE]
-      >검색된 모든 오류가 표시됩니다. 인증서를 저장하려면 모든 오류를 해결해야 합니다. 일반적인 오류 해결에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하십시오.
+      >검색된 모든 오류가 표시됩니다. 인증서를 저장하려면 먼저 모든 오류를 해결해야 합니다. 일반적인 오류 해결에 대한 자세한 내용은 [인증서 오류](#certificate-errors)를 참조하십시오.
 
-1. 인증서를 제출하려면 **저장**&#x200B;을 클릭합니다. 표에 새 행으로 표시되는 것을 확인할 수 있습니다.
+1. **저장**&#x200B;을 클릭하여 인증서를 제출합니다. 표에 새 행으로 표시되는 것을 확인할 수 있습니다.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
@@ -84,8 +84,8 @@ Cloud Manager에 설치하려면 SSL 파일이 PEM 형식이어야 합니다. PE
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->이 두 명령의 출력은 정확하게 동일해야 합니다. `main/server` 인증서에 일치하는 개인 키를 찾을 수 없는 경우, 새 CSR을 생성하고 SSL 공급자로부터 업데이트된 인증서를 요청하여 인증서를 다시 키워야 합니다.
+>이 두 명령의 출력은 정확하게 동일해야 합니다. `main/server` 인증서에 일치하는 개인 키를 찾을 수 없는 경우 새 CSR을 생성하고 SSL 공급자로부터 업데이트된 인증서를 요청하여 인증서를 다시 키가 있어야 합니다.
 
-### 인증서 유효 날짜 {#certificate-validity-dates}
+### 인증서 유효성 날짜 {#certificate-validity-dates}
 
 Cloud Manager에서는 SSL 인증서가 향후 90일 이상 유효할 것으로 예상하고 있습니다. 인증서 체인의 유효성을 확인해야 합니다.
