@@ -121,7 +121,6 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
 
 구성 요소가 구성되면 페이지 작성자가 구성한 스타일이 AEM을 통해 데코레이션 요소에 자동으로 삽입됩니다. AEM은 이러한 스타일을 편집 가능한 모든 구성 요소에 자동으로 래핑합니다. 구성 요소 자체는 이를 위해 어떤 작업도 수행할 필요가 없습니다.
@@ -136,7 +135,6 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >이는 [Sling 리소스 합병](/help/implementing/developing/introduction/overlays.md)을 통해 [오버레이](/help/implementing/developing/introduction/sling-resource-merger.md)를 사용합니다.
 
 >[!NOTE]
@@ -158,6 +156,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 >1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
 >1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
+
 >
 
 
