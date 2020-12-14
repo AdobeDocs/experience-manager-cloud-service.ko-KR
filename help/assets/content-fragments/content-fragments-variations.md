@@ -28,7 +28,7 @@ ht-degree: 87%
 
 * 조각에 사용할 [컨텐츠 입력](#authoring-your-content),
 * [마스터](#managing-variations) 컨텐츠의 **변형 만들기 및 관리,**
-* 조각을 만드는 데 사용한 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)의 이름을 참조하십시오.을 표시합니다.
+* 조각을 만드는 데 사용한 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)의 이름을 참조하십시오.위쪽 도구 모음에서 조각 이름 아래에 표시됩니다.
 
 편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예를 들면 다음과 같습니다.
 
@@ -50,15 +50,15 @@ ht-degree: 87%
 
 ## 컨텐츠 작성 {#authoring-your-content}
 
-편집할 컨텐츠 조각을 열면 기본적으로 **변형** 탭이 열립니다. 보유하고 있는 마스터 또는 변형에 사용할 컨텐츠를 여기에서 작성할 수 있습니다. 구조화된 조각은 컨텐츠 모델에서 정의된 다양한 데이터 유형의 다양한 필드를 포함합니다.
+편집할 컨텐츠 조각을 열면 기본적으로 **변형** 탭이 열립니다. 보유하고 있는 마스터 또는 변형에 사용할 컨텐츠를 여기에서 작성할 수 있습니다. 구조화된 조각에는 컨텐츠 모델에서 정의된 다양한 데이터 유형의 다양한 필드가 포함되어 있습니다.
 
 다음을 작업을 수행할 수 있습니다.
 
 * **변형** 탭에서 바로 편집
 
-   * 각 데이터 유형은 서로 다른 편집 옵션을 제공합니다
+   * 각 데이터 유형은 서로 다른 편집 옵션을 제공합니다.
 
-* **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)을(를) 열 수도 있습니다.
+* **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음을 수행할 수도 있습니다.
 
    * [형식](#formats) 선택
    * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
@@ -72,7 +72,7 @@ For example:
 
 ### 전체 화면 편집기 {#full-screen-editor}
 
-여러 줄로 된 텍스트 필드를 편집할 때 전체 화면 편집기를 열 수 있습니다.실제 텍스트 내에서 을 탭하거나 클릭한 다음, 다음 작업 아이콘을 선택합니다.
+여러 줄로 된 텍스트 필드를 편집할 때 전체 화면 편집기를 열 수 있습니다.실제 텍스트 내부를 탭하거나 클릭한 다음, 다음 작업 아이콘을 선택합니다.
 
 ![전체 화면 편집기 아이콘](assets/cfm-variations-03.png)
 
@@ -231,7 +231,7 @@ You will then be able to create a new fragment by:
 
 >[!CAUTION]
 영어는 즉시 이용 가능합니다.
-기타 언어는 패키지 공유의 언어 모델 패키지로 사용할 수 있습니다.
+다른 언어는 패키지 공유에서 언어 모델 패키지로 사용할 수 있습니다.
 * [프랑스어(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [독일어(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [이탈리아어(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
@@ -275,17 +275,17 @@ You will then be able to create a new fragment by:
 
 1. 대화 상자가 열립니다. 여기에서 주석을 입력할 수 있습니다.
 
-   ![주석](assets/cfm-variations-07a.png)
+   ![주석 달기](assets/cfm-variations-07a.png)
 
 1. 대화 상자에서 **적용**&#x200B;을 선택합니다.
 
-   ![주석](assets/cfm-variations-annotations-apply-icon.png)
+   ![주석 달기](assets/cfm-variations-annotations-apply-icon.png)
 
-   주석을 선택한 텍스트에 적용하면 해당 텍스트가 강조 표시된 상태로 유지됩니다.
+   선택한 텍스트에 주석을 적용한 경우 해당 텍스트가 강조 표시된 상태로 유지됩니다.
 
-   ![주석](assets/cfm-variations-07b.png)
+   ![주석 달기](assets/cfm-variations-07b.png)
 
-1. 전체 화면 편집기를 닫아도 주석은 여전히 강조 표시됩니다. 이 옵션을 선택하면 주석을 더 편집할 수 있도록 대화 상자가 열립니다.
+1. 전체 화면 편집기를 닫아도 주석은 여전히 강조 표시됩니다. 이 옵션을 선택하면 주석을 추가로 편집할 수 있도록 대화 상자가 열립니다.
 
 1. **저장**&#x200B;을 선택합니다.
 
