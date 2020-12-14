@@ -10,9 +10,9 @@ ht-degree: 21%
 ---
 
 
-# Dynamic Media 설정 {#setting-up-dynamic-media}
+# Dynamic Media {#setting-up-dynamic-media} 설정
 
-[다이내믹 미디어](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) 를 사용하면 웹, 모바일 및 소셜 사이트에서 사용하도록 자동으로 크기가 조정되는 다양한 시각적 머천다이징 및 마케팅 자산을 On-Demand로 제공하여 자산을 관리할 수 있습니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
+[Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media는 웹, 모바일 및 소셜 사이트에서 사용할 수 있도록 자동으로 크기가 조정되는 풍부한 시각적 머천다이징 및 마케팅 자산을 On-Demand로 전달하여 자산을 관리할 수 있도록 도와줍니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -38,6 +38,6 @@ Dynamic Media을 관리하는 경우 다음 항목에 관심이 있습니다.
 
 >[!NOTE]
 >
->**업그레이드 중인 경우:**
+>**업그레이드하는 경우:**
 >
->* Experience Manager을 설정하고 실행한 후 업로드한 모든 자산은 자동으로 Dynamic Media이 활성화됩니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). Experience Manager의 업그레이드된 인스턴스를 사용하고 있고 Dynamic Media을 처음 사용하는 경우 자산을 재처리하여 Dynamic Media을 사용하도록 설정해야 할 수 있습니다.
+>* Experience Manager을 설정하고 실행한 후 업로드하는 모든 자산은 자동으로 Dynamic Media이 활성화됩니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). Experience Manager의 업그레이드된 인스턴스이고 Dynamic Media을 처음 사용하는 경우 자산을 재처리하여 Dynamic Media을 활성화할 수 있습니다.
