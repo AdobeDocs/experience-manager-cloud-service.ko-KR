@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -28,7 +28,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 활동은 또한 페이지에서 사용하는 [타깃팅 엔진](#targeting-engine)을 식별합니다.
 
-[활동 콘솔](/help/sites-cloud/authoring/personalization/activities.md)을 사용하여 브랜드의 활동을 만들고 관리합니다. [타깃팅된 콘텐츠](/help/sites-cloud/authoring/personalization/targeted-content.md)를 작성하면서 활동을 만들 수도 있습니다.
+[활동 콘솔](/help/sites-cloud/authoring/personalization/activities.md)을 사용하여 브랜드의 활동을 만들고 관리합니다. [타깃팅된 컨텐츠를 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)할 때 활동을 만들 수도 있습니다.
 
 ## 경험 {#experiences}
 
@@ -36,7 +36,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 대상은 AEM이나 Adobe Target에서 만들어진 마케팅 세그먼트를 기반으로 합니다. 방문자가 웹 페이지를 열면 페이지의 논리 시스템은 방문자가 속한 대상을 판별하고 해당 대상을 위해 만든 컨텐츠를 표시합니다.
 
-예를 들어, 한 활동은 30세 이상의 여성과 30세 미만의 여성, 이렇게 두 개의 서로 다른 대상을 위한 경험들을 정의하며, 웹 사이트의 여성 페이지에 각 경험에 대해 다른 제품이 표시될 수 있습니다.
+예를 들어, 한 활동은 30세 이상의 여성과 30세 미만의 여성, 이렇게 두 개의 서로 다른 대상을 위한 경험들을 정의하며, 웹 사이트의 여성 페이지에 각 경험에 대해 서로 다른 제품이 표시될 수 있습니다.
 
 활동을 위한 경험을 정의합니다. [활동 콘솔](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console)이나 [타깃팅 모드](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode)를 사용하여 활동에 경험을 추가할 수 있습니다.
 
@@ -44,7 +44,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 오퍼는 경험을 위한 페이지에서 위치에 나타나는 컨텐츠입니다. 서로 다른 경험에 대해 서로 다른 오퍼를 사용하여 대상을 위한 컨텐츠의 효과를 극대화하십시오.
 
-예를 들어 샘플 웹 사이트의 여성 페이지에서는 페이지 상단에 나타나는 티저 이미지로 오퍼를 사용할 수 있습니다. 다른 오퍼가 30 이상 여성 경험과 30 미만 여성 경험을 위한 티저로 사용될 수 있습니다.
+예를 들어 샘플 웹 사이트의 여성 페이지에서는 페이지 맨 위에 나타나는 티저 이미지로 오퍼를 사용할 수 있습니다. 다른 오퍼가 30 이상 여성 경험과 30 미만 여성 경험을 위한 티저로 사용될 수 있습니다.
 
 [오퍼 콘솔](/help/sites-cloud/authoring/personalization/offers.md)을 사용하여 여러 경험에서 사용할 수 있는 오퍼를 만드십시오. [타깃팅된 컨텐츠를 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)할 때 단일 사용 오퍼를 만들거나 오퍼 라이브러리의 오퍼를 추가하십시오.
 
@@ -63,4 +63,4 @@ Adobe Target 타깃팅 엔진을 사용하면 페이지 방문에서 수집된 �
 * 이 타깃팅 엔진을 사용하는 경우, Adobe Target에서 가져오는 세그먼트를 사용하여 경험의 대상을 정의합니다.
 * Adobe Target 엔진을 사용하는 활동은 [Target에 동기화](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)됩니다.
 
-Adobe Target과 통합하면 이 엔진을 사용할 수 있습니다<!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
+Adobe Target과 통합하면 이 엔진을 사용할 수 있습니다.<!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
