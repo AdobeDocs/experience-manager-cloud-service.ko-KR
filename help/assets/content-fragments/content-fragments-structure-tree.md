@@ -16,6 +16,6 @@ ht-degree: 0%
 
 ![컨텐츠 조각 구조 트리](assets/cfm-structuretree-01.png)
 
-이렇게 하면 왼쪽 창에 조각 구조의 표현이 열립니다.
+이렇게 하면 왼쪽 창에서 조각 구조의 표현이 열립니다.
 
 ![컨텐츠 조각 구조 트리](assets/cfm-structuretree-02.png)
