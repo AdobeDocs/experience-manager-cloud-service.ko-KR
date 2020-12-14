@@ -1,6 +1,6 @@
 ---
-title: AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리
-description: AEM에서 GraphQL 사용 방법 학습 - 컨텐츠 및 쿼리 샘플
+title: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
+description: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 translation-type: tm+mt
 source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
 workflow-type: tm+mt
@@ -18,17 +18,17 @@ ht-degree: 6%
 >
 >관련 문서는 미리 보기 목적으로 이미 사용 가능합니다.
 
-GraphQL 질의와 AEM 컨텐츠 조각으로 작업하는 방식을 살펴보려면 몇 가지 실용적인 예를 참조하십시오.
+GraphQL 쿼리 및 AEM 컨텐츠 조각으로 작업하는 방식을 살펴보려면 몇 가지 실용적인 예를 참조하십시오.
 
 이 문제를 해결하려면 다음을 참조하십시오.
 
 * [샘플 컨텐츠 조각 구조](#content-fragment-structure-graphql)
 
-* 일부 [샘플 GraphQL 질의](#graphql-sample-queries)는 샘플 컨텐츠 조각 구조(컨텐츠 조각 모델 및 관련 컨텐츠 조각)를 기반으로 합니다.
+* 일부 [샘플 GraphQL 쿼리는 샘플 컨텐츠 조각 구조(컨텐츠 조각 모델 및 관련 컨텐츠 조각)를 기반으로 합니다.](#graphql-sample-queries)
 
-## AEM용 GraphQL - 일부 익스텐션 {#graphql-some-extensions}
+## AEM용 GraphQL - 일부 확장 {#graphql-some-extensions}
 
-AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM과 함께 GraphQL 질의에는 다음과 같은 몇 가지 확장이 있습니다.
+AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM과 함께 GraphQL 쿼리에 사용할 수 있는 확장 기능은 다음과 같습니다.
 
 * 단일 결과가 필요한 경우:
    * 모델 이름 사용;eg city
@@ -41,31 +41,31 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
 
 * 논리 AND도 존재하지만 (종종) 암시적
 
-* 컨텐츠 조각 모델 내의 필드에 해당하는 필드 이름에 대해 질의할 수 있습니다
+* 컨텐츠 조각 모델 내의 필드에 해당하는 필드 이름을 쿼리할 수 있습니다
 
-* 모델의 필드 외에도 몇 가지 시스템 생성 필드가 있습니다(밑줄로 선행).
+* 모델의 필드 외에도 몇 가지 시스템에서 생성된 필드(밑줄 우선)가 있습니다.
 
-   * 컨텐츠:
+   * 컨텐츠의 경우:
 
-      * `_locale` :언어를 표시하기 위해;Language Manager 기반
+      * `_locale` :언어를 공개하려면;Language Manager 기반
 
       * `_metadata` :조각에 대한 메타데이터를 표시하려면
 
       * `_path` :저장소 내 컨텐츠 관리에 대한 경로
 
-      * `_references` :참조를 표시합니다.리치 텍스트 편집기의 인라인 참조 포함
+      * `_references` :참조를 표시합니다.리치 텍스트 편집기에서 인라인 참조 포함
 
       * `_variations` :컨텐츠 조각 내에서 특정 변형을 표시하려면
-   * 및 작업:
+   * 작업:
 
-      * `_operator` :특정 연산자 적용; `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,
+      * `_operator` :특정 연산자 적용 `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`, `CONTAINS`
 
-      * `_apply` :특정 조건을 적용하는 경우예를 들면   `AT_LEAST_ONCE`
+      * `_apply` :특정 조건을 적용하는 경우예를 들어   `AT_LEAST_ONCE`
 
       * `_ignoreCase` :쿼리 시 대/소문자를 무시하려면
 
 
-* GraphQL 결합 유형이 지원됩니다.
+* GraphQL 결합 유형은 다음과 같이 지원됩니다.
 
    * `...on` 사용
 
@@ -76,15 +76,15 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
 
 * 하나 이상의 [샘플 컨텐츠 조각 모델](#sample-content-fragment-models-schemas) - GraphQL 스키마 기반
 
-* [위 모델](#sample-content-fragments) 을 기반으로 하는 샘플 컨텐츠 조각
+* [위 ](#sample-content-fragments) 모델을 기반으로 하는 샘플 컨텐츠 조각
 
 ### 샘플 컨텐츠 조각 모델(스키마) {#sample-content-fragment-models-schemas}
 
-샘플 쿼리는 다음 컨텐트 모델과 상호 관계(참조 ->)를 사용합니다.
+샘플 쿼리는 다음 컨텐트 모델 및 상호 관계(참조 ->)를 사용합니다.
 
 * [회사](#model-company)
-->  [사람](#model-person)
-    ->  [상](#model-award)
+->  [Person](#model-person)
+    ->  [수상](#model-award)
 
 * [도시](#model-city)
 
@@ -100,7 +100,7 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
 
 #### 개인 {#model-person}
 
-개인을 정의하는 필드로서 직원이 될 수도 있습니다.
+개인을 정의하는 필드로서 사원이 될 수도 있습니다.
 
 | 필드 이름 | 데이터 유형 | 참조 |
 |--- |--- |--- |
@@ -136,8 +136,8 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
 
 | 회사 이름 | CEO | 직원 |
 |--- |--- |--- |
-| Apple | 스티브 잡스 | 듀크 마쉬<br>맥스 콜필드 |
-|  리틀 포니 | 애덤 스미스 | Lara Croft<br>Cutter Slade |
+| Apple | 스티브 잡스 | 듀크 마시<br>Max Caulfield |
+|  리틀 포니 | 아담 스미스 | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | 스티브 잡스 | Joe Smith<br>Abe Lincoln |
 
 #### 개인 {#fragment-person}
@@ -146,19 +146,19 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
 |--- |--- |--- |
 | 링컨 |  아베 |  |
 | 스미스 | Adam |   |
-| 슬라드 |  커터 |  Gamblitz<br>Gamestar |
+| Slade |  커터 |  Gameblitz<br>Gamestar |
 | 마시 |  듀크 |   |   |
 |  스미스 |  조 |   |
-| 크로프트 |  라라 | 가메스타르 |
+| 크로프트 |  라라 | Gamestar |
 | 콜필드 |  최대 |  게임블리츠 |
-|  작업 |  스티브 |   |
+|  작업 |  Steve |   |
 
 #### 수상 {#fragment-award}
 
 | 단축키/ID | 제목 |
 |--- |--- |
 | GB | 게임블리츠 |
-|  GS | 가메스타르 |
+|  GS | Gamestar |
 |  OSC | 오스카 |
 
 #### 도시 {#fragment-city}
@@ -167,25 +167,25 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
 |--- |--- |--- |--- |
 | Basel | 스위스 | 172258 | 도시:emea |
 | 베를린 | 독일 | 3669491 | city:capital<br>city:emea |
-| 부쿠레슈티 | 루마니아 | 1821000 |  city:capital<br>city:emea |
+| 부카레스트 | 루마니아 | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  미국 |  883306 |  city:beach<br>city:na |
 | 산 호세 |  미국 |  102635 |  city:na |
-| 슈투트가르트 |  독일 |  634830 |  도시:emea |
+| 슈투트가르트 |  독일 |  6348.30 |  도시:emea |
 |  쥬리히 |  스위스 |  415367 |  city:capital<br>city:emea |
 
-## GraphQL - 샘플 컨텐츠 조각 구조를 사용한 샘플 쿼리 {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL - 샘플 컨텐츠 조각 구조를 사용하는 샘플 쿼리 {#graphql-sample-queries-sample-content-fragment-structure}
 
 샘플 결과와 함께 쿼리 만들기 일러스트레이션에 대한 샘플 쿼리를 참조하십시오.
 
 >[!NOTE]
 >
->인스턴스에 따라 쿼리 제출 및 테스트를 위해 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)에 포함된 [그래프&#x200B;*i* QL 인터페이스에 직접 액세스할 수 있습니다.
+>인스턴스에 따라 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)에 포함된 [그래프&#x200B;*i* QL 인터페이스에 직접 액세스하여 쿼리를 제출하고 테스트할 수 있습니다.
 >
 >예를 들어,`http://localhost:4502/content/graphiql.html`
 
 ### 샘플 쿼리 - 사용 가능한 모든 스키마 및 데이터 유형 {#sample-all-schemes-datatypes}
 
-사용 가능한 모든 스키마에 대한 모든 유형이 반환됩니다.
+사용 가능한 모든 스키마에 대한 모든 유형을 반환합니다.
 
 **샘플 쿼리**
 
@@ -276,7 +276,7 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
 }
 ```
 
-### 샘플 쿼리 - 회사 CEO 및 직원의 전체 세부 정보 {#sample-full-details-company-ceos-employees}
+### 샘플 쿼리 - 회사의 CEO 및 직원의 전체 세부 정보 {#sample-full-details-company-ceos-employees}
 
 이 쿼리는 중첩된 단편의 구조를 사용하여 회사 CEO와 모든 직원의 전체 세부 정보를 반환합니다.
 
@@ -489,7 +489,7 @@ query {
 
 ### 샘플 쿼리 - 모든 도시의 이름 {#sample-names-all-cities}
 
-이 쿼리는 `city`스키마에 있는 모든 항목의 `name`을 반환하는 간단한 쿼리입니다.
+이것은 `city`스키마에 있는 모든 항목의 `name`을 반환하기 위한 간단한 쿼리입니다.
 
 **샘플 쿼리**
 
@@ -580,7 +580,7 @@ query {
 
 ### 샘플 쿼리 - 명명된 변화가 있는 모든 도시 {#sample-cities-named-variation}
 
-`city` 베를린에 대해 &quot;Berlin Center&quot;(`berlin_centre`)라는 새 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
+`city` 베를린에서 &quot;Berlin Center&quot;(`berlin_centre`)라는 새 변형을 만드는 경우 쿼리를 사용하여 변형에 대한 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
@@ -621,9 +621,9 @@ query {
 }
 ```
 
-### 샘플 쿼리 - &quot;Jobs&quot; 또는 &quot;Smith&quot; {#sample-all-persons-jobs-smith}의 이름을 가진 모든 사람
+### 샘플 쿼리 - &quot;Job&quot; 또는 &quot;Smith&quot; {#sample-all-persons-jobs-smith} 이름을 가진 모든 사람
 
-이름 `Jobs`이나 `Smith`이 있는 모든 항목에 대해 모든 `persons`이 필터링됩니다.
+이름이 `Jobs` 또는 `Smith`인 모든 `persons`을 필터링합니다.
 
 **샘플 쿼리**
 
@@ -675,9 +675,9 @@ query {
 }
 ```
 
-### 샘플 쿼리 - &quot;Jobs&quot; {#sample-all-persons-not-jobs} 이름이 없는 모든 사람
+### 샘플 쿼리 - &quot;작업&quot; {#sample-all-persons-not-jobs} 이름이 없는 모든 사람
 
-이름 `Jobs`이나 `Smith`이 있는 모든 항목에 대해 모든 `persons`이 필터링됩니다.
+이름이 `Jobs` 또는 `Smith`인 모든 `persons`을 필터링합니다.
 
 **샘플 쿼리**
 
@@ -742,9 +742,9 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 40000에서 999999 사이의 인구를 가진 독일 또는 스위스에 있는 모든 도시{#sample-all-cities-d-ch-population}
+### 샘플 쿼리 - 40000에서 9999999 사이의 인구를 가진 독일 또는 스위스에 있는 모든 도시 {#sample-all-cities-d-ch-population}
 
-여기에서 필드 조합이 필터링됩니다. `AND`(암시적)은 `population`범위를 선택하는 데 사용되고 `OR`(명시적)은 필요한 도시를 선택하는 데 사용됩니다.
+여기에서 필드 조합이 필터링됩니다. `AND`(암시적)은 `population`범위를 선택하는 데 사용되지만 `OR`(명시적)은 필요한 도시를 선택하는 데 사용됩니다.
 
 **샘플 쿼리**
 
@@ -805,9 +805,9 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 이름에 SAN이 있는 모든 도시(예: {#sample-all-cities-san-ignore-case})
+### 샘플 쿼리 - 이름에 SAN이 있는 모든 도시(예: {#sample-all-cities-san-ignore-case})와 관계없이)
 
-이 쿼리는 대소문자 구분을 불문하고 이름에 `SAN`이 있는 모든 도시에 대해 교환됩니다.
+이 쿼리는 대소문자가 관계없이 이름에 `SAN`이 있는 모든 도시에 대해 교환됩니다.
 
 **샘플 쿼리**
 
@@ -856,9 +856,9 @@ query {
 }
 ```
 
-### 샘플 쿼리 - 최소 한 번 {#sample-array-item-occur-at-least-once}에 발생해야 하는 항목이 있는 배열에 대해 필터링합니다.
+### 샘플 쿼리 - {#sample-array-item-occur-at-least-once} 최소 한 번 발생해야 하는 항목이 있는 배열에 대해 필터링합니다.
 
-이 쿼리는 하나 이상 발생해야 하는 항목(`city:na`)이 있는 배열에서 필터링합니다.
+이 쿼리는 적어도 한 번 일어나야 하는 항목(`city:na`)이 있는 배열에서 필터링합니다.
 
 **샘플 쿼리**
 
@@ -968,7 +968,7 @@ query {
 
 ### 중첩 컨텐츠 조각에 대한 샘플 쿼리 - &quot;Smith&quot; {#sample-companies-employee-smith} 이름을 가진 직원이 하나 이상 있는 모든 회사
 
-이 쿼리는 `name` &quot;Smith&quot;의 모든 `person`에 대한 필터링을 보여 주며, 두 개의 중첩된 조각(`company` 및 `employee`에서 정보를 반환합니다.
+이 쿼리는 `name` &quot;Smith&quot;의 모든 `person`에 대한 필터링을 보여주고 두 개의 중첩된 조각(`company` 및 `employee`에서 정보를 반환합니다.
 
 **샘플 쿼리**
 
@@ -1032,9 +1032,9 @@ query {
 }
 ```
 
-### 중첩된 컨텐츠 조각에 대한 샘플 쿼리 - 모든 직원이 &quot;Gamestar&quot; award {#sample-all-companies-employee-gamestar-award} 수상(으)로 우승한 모든 회사
+### 중첩된 컨텐츠 조각에 대한 샘플 쿼리 - 모든 직원이 &quot;Gamestar&quot; award {#sample-all-companies-employee-gamestar-award} 수상
 
-이 쿼리는 세 개의 중첩된 조각(`company`, `employee` 및 `award`에 대한 필터링을 보여 줍니다.
+이 쿼리는 세 개의 중첩된 조각( `company`, `employee` 및 `award`)에 대한 필터링을 보여 줍니다.
 
 **샘플 쿼리**
 
@@ -1124,9 +1124,9 @@ query {
 }
 ```
 
-### 메타데이터에 대한 샘플 쿼리 - GB {#sample-metadata-awards-gb} 제목이 있는 시상식의 메타데이터 목록
+### 메타데이터에 대한 샘플 쿼리 - GB {#sample-metadata-awards-gb} 제목이 있는 시상식에 대한 메타데이터를 나열합니다.
 
-이 쿼리는 세 개의 중첩된 조각(`company`, `employee` 및 `award`에 대한 필터링을 보여 줍니다.
+이 쿼리는 세 개의 중첩된 조각( `company`, `employee` 및 `award`)에 대한 필터링을 보여 줍니다.
 
 **샘플 쿼리**
 
@@ -1184,20 +1184,20 @@ query {
 }
 ```
 
-## WKND 프로젝트 {#sample-queries-using-wknd-project}를 사용한 샘플 쿼리
+## WKND 프로젝트 {#sample-queries-using-wknd-project}를 사용하는 샘플 쿼리
 
 이러한 샘플 쿼리는 WKND 프로젝트를 기반으로 합니다.
 
 >[!NOTE]
 >
->결과는 광범위할 수 있기 때문에 그들은 이곳에서 재생되지 않는다.
+>결과가 광범위할 수 있기 때문에 그들은 이곳에서 재생되지 않는다.
 
 ### 지정된 속성이 {#sample-wknd-all-model-properties}인 특정 모델의 모든 컨텐츠 조각에 대한 샘플 쿼리
 
-이 샘플 쿼리 상호 작용:
+이 샘플 쿼리 인터페이스:
 
-* for all content Fragments of type `article`
-* with the `path`and `author` properties.
+* `article` 유형의 모든 컨텐츠 조각에 대해
+* 를 추가합니다.`path``author`
 
 **샘플 쿼리**
 
@@ -1214,9 +1214,9 @@ query {
 
 ### 메타데이터 {#sample-wknd-metadata} 샘플 쿼리
 
-이 쿼리는 다음과 같습니다.
+이 쿼리 상호 작용:
 
-* for all content Fragments of type `adventure`
+* `adventure` 유형의 모든 컨텐츠 조각에 대해
 * 메타데이터
 
 **샘플 쿼리**
@@ -1275,10 +1275,10 @@ query {
 
 ### 지정된 모델 {#sample-wknd-single-content-fragment-of-given-model}의 단일 컨텐츠 조각에 대한 샘플 쿼리
 
-이 샘플 쿼리 상호 작용:
+이 샘플 쿼리 인터페이스:
 
 * (주어진 모델의 단일 컨텐츠 조각)
-* for all formats content:
+* 모든 형식의 컨텐츠에 대해:
    * HTML
    * Markdown
    * 일반 텍스트
@@ -1376,7 +1376,7 @@ query {
 }
 ```
 
-### 프리페치된 참조 {#sample-wknd-multiple-fragments-prefetched-references}이(가) 있는 여러 컨텐츠 조각에 대한 샘플 쿼리
+### 프리페치된 참조가 {#sample-wknd-multiple-fragments-prefetched-references}인 여러 컨텐츠 조각에 대한 샘플 쿼리
 
 ```xml
 {
@@ -1428,7 +1428,7 @@ query {
 }
 ```
 
-### 지정된 로케일 {#sample-wknd-multiple-fragments-given-locale}의 여러 콘텐츠 조각에 대한 샘플 쿼리
+### 지정된 로케일의 여러 컨텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-multiple-fragments-given-locale}
 
 **샘플 쿼리**
 
@@ -1449,7 +1449,7 @@ query {
 }
 ```
 
-### RTE 인라인 참조인 {#sample-wknd-single-fragment-rte-inline-reference}이(가) 있는 단일 컨텐츠 조각에 대한 샘플 쿼리
+### RTE 인라인 참조 {#sample-wknd-single-fragment-rte-inline-reference}이(가) 있는 단일 컨텐츠 조각에 대한 샘플 쿼리
 
 **샘플 쿼리**
 
@@ -1486,7 +1486,7 @@ query {
 }
 ```
 
-### 지정된 모델 {#sample-wknd-variation-multiple-fragment-given-model}의 여러 컨텐츠 조각에 대한 명명된 변형에 대한 샘플 쿼리
+### 지정된 모델 {#sample-wknd-variation-multiple-fragment-given-model}의 여러 컨텐트 조각의 명명된 변형에 대한 샘플 쿼리
 
 **샘플 쿼리**
 
