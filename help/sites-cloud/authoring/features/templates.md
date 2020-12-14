@@ -96,7 +96,7 @@ ht-degree: 98%
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
-프로젝트에 프로젝트 특정 템플릿을 포함하려면 템플릿 폴더를 만들어야 합니다. 관리자 작업이며 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-folders).—>에 설명되어 있습니다.
+프로젝트에 프로젝트 특정 템플릿을 포함하려면 템플릿 폴더를 만들어야 합니다. 관리자 작업이며 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-folders) 문서에 설명되어 있습니다.—>
 
 ### 새 템플릿 만들기 - 템플릿 작성자 {#creating-a-new-template-template-author}
 
@@ -204,7 +204,7 @@ ht-degree: 98%
    >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
    >
-   >[템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오. 허용된 템플릿에 대한 원칙은 동일하게 유지됩니다.
+   >[템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오. 허용되는 템플릿에 대한 원칙은 동일하게 유지됩니다.
 
 1. **저장**&#x200B;을 클릭하여 페이지 속성에 대한 변경 사항을 저장합니다.
 
