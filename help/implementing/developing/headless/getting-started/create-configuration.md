@@ -4,8 +4,8 @@ description: AEM에서 Cloud Service으로 헤드리스를 시작하기 위한 �
 translation-type: tm+mt
 source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
