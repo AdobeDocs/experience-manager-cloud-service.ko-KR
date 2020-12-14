@@ -23,8 +23,8 @@ ht-degree: 81%
 
 다음을 작업도 수행할 수 있습니다.
 
-* 론치 분기의 컨텐츠 탐색필요에 따라 페이지 추가 또는 제거
-* 게시된 컨텐츠가 미래의 특정 날짜/모습을 어떻게 보일지 미리 볼 수 있습니다.
+* 론치 분기에서 컨텐츠 탐색;필요에 따라 페이지를 추가하거나 제거합니다.
+* 게시된 컨텐츠가 미래의 특정 날짜/모습을 어떻게 보이는지 미리 볼 수 있습니다.
 
 다음 분기가 되면 소스 페이지(업데이트된 컨텐츠 보관 중)를 게시할 수 있도록 론치 페이지를 홍보합니다. 모든 페이지를 홍보하거나 수정한 페이지만 홍보할 수 있습니다.
 
@@ -33,7 +33,7 @@ ht-degree: 81%
 * 다중 루트 분기용으로 만들 수도 있습니다. 전체 사이트용으로 론치를 만들 수는 있지만(그리고 거기에서 변경을 수행할 수는 있지만) 전체 사이트를 복사해야 하므로 터무니없는 일입니다. 수백 또는 수천 개의 페이지가 관련되어 있는 경우, 시스템 요구 사항과 성능이 복사 작업과 홍보에 필요한 향후의 비교 작업 모두에 영향을 받습니다.
 * 기존 론치에서 론치를 만들 수 있도록 중첩(론치 내 론치)할 수 있으므로, 작성자는 각 론치에 대해 동일한 변경을 여러 번 수행하지 않고 이미 수행된 변경 사항을 이용할 수 있습니다.
 
-이 섹션에서는 사이트 콘솔 또는 [론치 콘솔](#the-launches-console)에서 론치 페이지를 만들고, 편집하고, 홍보하는 방법(필요한 경우 [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch))에 대해 설명합니다.
+이 섹션에서는 사이트 콘솔 또는 [론치 콘솔](#the-launches-console)에서 론치 페이지를 만들고 편집하고 홍보(필요한 경우 [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch))하는 방법에 대해 설명합니다.
 
 * [론치 만들기](/help/sites-cloud/authoring/launches/creating.md)
 * [론치 편집](/help/sites-cloud/authoring/launches/editing.md)
@@ -93,13 +93,13 @@ ht-degree: 81%
 
 1. **사이트** 콘솔에서 론치의 소스로 이동합니다.
 1. **참조** 레일을 열고 소스 페이지를 선택합니다.
-1. **론치**&#x200B;를 선택하면 기존 론치가 나열되고 **론치 콘솔**&#x200B;에 액세스할 수 있습니다.
+1. **론치**&#x200B;를 선택하면 기존 론치가 표시되고 **론치 콘솔**&#x200B;에 액세스할 수 있습니다.
 
-   ![사이트 콘솔의 론치 참조](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![사이트 콘솔에서 론치 참조](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 적절한 론치를 탭/클릭합니다. 가능한 작업 목록이 표시됩니다.
 
-   ![사이트 콘솔에서 실행할 작업](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+   ![사이트 콘솔에서 론치를 수행할 작업](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## 론치 콘솔 {#the-launches-console}
 
@@ -107,13 +107,13 @@ ht-degree: 81%
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**.
 
-* **론치** 콘솔 **** 에서 소스 컨텐츠를 탐색할 때  **** 참조 레일의 론치 맨 아래에 콘솔이 표시됩니다.
+* **론치** 콘솔은 사이트 콘솔에서 소스 컨텐츠를  **** 탐색할  **** 때 참조 레일의 론치 맨 아래에 있습니다.
 
-   ![사이트 콘솔의 론치 참조의 론치 콘솔](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![사이트 콘솔에서 론치 참조의 론치 콘솔 시작](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* 사이트 콘솔에서 론치 컨텐츠를 탐색할 때 오른쪽 상단에 있는 **론치** 단추:
+* 사이트 콘솔에서 론치 컨텐츠를 탐색할 때 오른쪽 상단의 **론치** 단추:
 
-   ![사이트 콘솔의 론치 옵션](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+   ![사이트 콘솔의 시작 옵션](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
-* 또는 직접for example:
+* 또는 직접;예를 들어 다음 포함:
    `https://<host>:<port>/libs/launches/content/launches.html`
