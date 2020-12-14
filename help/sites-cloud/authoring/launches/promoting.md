@@ -25,7 +25,7 @@ ht-degree: 76%
 
 >[!CAUTION]
 >
->단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 두 개의 홍보 작업이 동시에 실행되면 `Launch could not be promoted` 오류가 발생할 수 있습니다(로그에 충돌 오류와 함께).
+>단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 동시에 두 개의 홍보 작업을 수행하면 오류 `Launch could not be promoted`(로그의 충돌 오류와 함께)가 발생할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -48,14 +48,14 @@ ht-degree: 76%
 
 1. 열기:
    * 소스 페이지를 탐색할 때 **사이트** 콘솔:
-      1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 열고 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하여 여는 경우 순서는 중요하지 않습니다). 모든 참조가 표시됩니다.
+      1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 열고 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 또는 참조 레일을 선택하고 열면 순서는 중요하지 않습니다. 모든 참조가 표시됩니다.
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
       1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
    * 시작 페이지를 탐색할 때 **사이트** 콘솔:
       1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 시작 페이지를 선택합니다.
       1. **홍보** 작업은 도구 모음에서 사용할 수 있습니다.
-   * **론치** 콘솔:
+   * **시작** 콘솔:
       1. 론치를 선택합니다(썸네일 탭/클릭).
       1. **홍보**&#x200B;를 선택합니다.
 1. 첫 번째 단계에서 다음을 지정할 수 있습니다.
@@ -70,7 +70,7 @@ ht-degree: 76%
 
       예를 들어, 수정된 페이지만 홍보하도록 선택하는 경우:
 
-      ![출시 홍보](/help/sites-cloud/authoring/assets/launches-promote.png)
+      ![출시 프로모션](/help/sites-cloud/authoring/assets/launches-promote.png)
 
       >[!NOTE]
       >
@@ -102,8 +102,8 @@ ht-degree: 76%
 1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
 1. 다음과 같은 필수 세부 사항을 입력합니다.
    * **타겟**
-      * **프로모션 타겟**  - 모든 소스로 홍보할 수 있습니다.
-      * **판촉 행사**  후 론치 삭제 - 선택한 론치를 홍보하면 론치 내에 중첩된 모든 론치가 삭제됩니다.
+      * **프로모션 타겟**  - 모든 소스로 승격할 수 있습니다.
+      * **판촉 행사**  후 론치 삭제 - 선택한 론치를 승격 후에는 해당 론치에 중첩된 론치가 삭제됩니다.
    * **범위**  - 전체 론치를 홍보할지 또는 실제로 편집된 페이지만 홍보할지 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
       * **전체 론치 홍보**
       * **수정된 페이지 홍보**
