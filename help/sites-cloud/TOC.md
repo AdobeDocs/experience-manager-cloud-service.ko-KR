@@ -58,7 +58,7 @@ ht-degree: 91%
    + 론치 {#launches}
       + [론치를 사용한 작업](authoring/launches/overview.md)
       + [론치 만들기](authoring/launches/creating.md)
-      + [론치의 페이지 관리](authoring/launches/managing-pages.md)
+      + [론치에서 페이지 관리](authoring/launches/managing-pages.md)
       + [론치 편집](authoring/launches/editing.md)
       + [타임워프를 사용하여 론치 미리 보기](authoring/launches/preview.md)
       + [론치 홍보](authoring/launches/promoting.md)
@@ -76,7 +76,7 @@ ht-degree: 91%
       + [대상자 관리](authoring/personalization/audiences.md)
       + [오퍼 생성 및 관리](authoring/personalization/offers.md)
       + [세그멘테이션 이해](authoring/personalization/segmentation.md)
-      + [ContextHub로 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+      + [ContextHub을 사용하여 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 관리 {#administering}
    + [워크플로우 관리](administering/workflows-administering.md)
