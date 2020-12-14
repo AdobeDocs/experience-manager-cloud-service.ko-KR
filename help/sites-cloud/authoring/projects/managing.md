@@ -1,11 +1,11 @@
 ---
 title: 프로젝트 관리
-description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
+description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 리소스들을 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 78%
    >
    >프로젝트와 연결할 수 있는 프로젝트 타일은 [프로젝트 타일](/help/sites-cloud/authoring/projects/overview.md#project-tiles)에 자세히 설명되어 있습니다.
 
-1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되어 있으므로 이제부터 프로젝트에서 리소스에 액세스할 수 있습니다.
+1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되며, 이제부터 프로젝트에서 이 리소스에 액세스할 수 있습니다.
 
 ### 프로젝트 또는 리소스 링크 삭제 {#deleting-a-project-or-resource-link}
 
@@ -83,7 +83,7 @@ ht-degree: 78%
 
 타일에 항목을 추가하려면 다음을 수행하십시오.
 
-1. **프로젝트**&#x200B;에서 프로젝트로 이동하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
+1. **프로젝트**&#x200B;에서 프로젝트를 탐색하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
 
    ![타일에 항목 추가](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
@@ -103,7 +103,7 @@ ht-degree: 78%
 
 1. 해당 타일에 있는 항목이 나열됩니다. 선택 모드에 들어가 항목을 수정하거나 삭제할 수 있습니다.
 
-   ![타일 열림](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![열린 타일](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
 ## 프로젝트 통계 보기 {#viewing-project-statistics}
 
@@ -113,7 +113,7 @@ ht-degree: 78%
 
 ### 프로젝트 타임라인 보기 {#viewing-a-project-timeline}
 
-프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드를 시작하고 프로젝트를 선택합니다. 자산은 왼쪽 창에 표시됩니다. **타임라인**&#x200B;을 클릭/탭하여 **프로젝트** 콘솔로 돌아갑니다.
+프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드를 시작하고 프로젝트를 선택합니다. 자산은 왼쪽 창에 표시됩니다. **프로젝트** 콘솔로 돌아가려면 **타임라인**&#x200B;을 클릭/탭합니다.
 
 ![프로젝트 타임라인](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -121,11 +121,11 @@ ht-degree: 78%
 
 활성 프로젝트와 비활성 프로젝트 간에 전환하려면 **프로젝트** 콘솔에서 **활성 프로젝트 전환**&#x200B;을 클릭합니다. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트가 표시됩니다.
 
-![활성 프로젝트 전환 단추](/help/sites-cloud/authoring/assets/projects-active.png)
+![활성 프로젝트 켜기/끄기 단추](/help/sites-cloud/authoring/assets/projects-active.png)
 
 아이콘 옆에 확인 x가 있으면 비활성 프로젝트를 표시 중입니다.
 
-![비활성 프로젝트 전환 단추](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![비활성 프로젝트 켜기/끄기 단추](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## 프로젝트 비활성화 또는 활성화 {#making-projects-inactive-or-active}
 
