@@ -3,9 +3,9 @@ title: AEM Assets와 AEM MediaLibrary
 description: AEM Assets 및 관련 FAQ AEM Media Library에 포함되어 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '694'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ AEM Assets 고객에게만 제공되는 고유한 기능은 다음과 같습니�
 
 ## 내 웹 사이트에서 카테고리 조건자를 사용하고 싶다. AEM Assets이 필요합니까?{#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-예. Geometrixx 보도 센터에서 사용되는 기타 모든 구성 요소와 함께 카테고리 조건자는 AEM Assets의 일부이며 AEM Assets 라이선스가 필요합니다.
+예. 카테고리 조건자는 다른 모든 구성 요소와 함께 AEM Assets의 일부이며 AEM Assets 라이선스가 필요합니다.
 
 ## 가져올 때 이미지 크기를 자동으로 조정하려고 합니다. AEM Assets이 필요합니까?{#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
