@@ -30,7 +30,7 @@ ht-degree: 46%
 * `UNNECESSARY`:기능은 Cloud Service [!DNL Experience Manager Assets] 로 필요하지 않습니다.
 * `NUI_OOTB`:asset compute 서비스에서 제공하는  [기능입니다](/help/assets/asset-microservices-configure-and-use.md).
 * `DMS7_OOTB`:기본 커넥터에서 제공하는  [!DNL Dynamic Media] 기능입니다.
-* `NUI_MIGRATED`:asset compute 서비스의  [처리 프로필로 마이그레이션되었습니다](/help/assets/asset-microservices-configure-and-use.md).
+* `NUI_MIGRATED`:asset compute 서비스에 대한  [처리 프로필로 마이그레이션되었습니다](/help/assets/asset-microservices-configure-and-use.md).
 * `UNSUPPORTED`:현재 Cloud Service [!DNL Experience Manager Assets] 로 지원되지 않습니다.
 
 ## 자산 워크플로우 마이그레이션 도구 설치 {#installing-tool}
