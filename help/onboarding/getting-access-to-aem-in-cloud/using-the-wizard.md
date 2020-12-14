@@ -12,12 +12,12 @@ ht-degree: 0%
 
 # 마법사 {#using-wizard-to-create-an-aem-application-project} 사용
 
-새로운 고객을 위한 Cloud Manager의 시작점으로 최소한의 AEM 프로젝트를 제작할 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)을 기반으로 합니다.
+신규 고객을 유치하기 위해 Cloud Manager는 이제 최소한의 AEM 프로젝트를 시작점으로 만들 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)을 기반으로 합니다.
 
 
-아래 절차에 따라 마법사를 사용하여 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만드십시오.
+마법사를 사용하여 Cloud Manager에서 AEM 응용 프로그램 프로젝트를 만들려면 아래 절차를 따르십시오.
 
-1. Cloud Manager에 로그인하고 기본 프로그램 설정이 완료되면 저장소가 비어 있는 경우 작업 카드 호출이 **개요** 화면에 표시됩니다.
+1. Cloud Manager에 로그인하고 기본 프로그램 설정이 완료되면 저장소가 비어 있으면 **개요** 화면에 특수 작업 카드 호출이 표시됩니다.
 
    ![](assets/create-wizard1.png)
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    ![](assets/create-wizard3.png)
 
-1. 프로그램 생성이 완료되면 **환경 추가** 타일이 *프로그램 개요* 페이지에 나타납니다.
+1. 프로그램 만들기가 완료되면 **환경 추가** 타일이 *프로그램 개요* 페이지에 나타납니다.
    ![](assets/create-wizard4.png)
 
    환경을 추가 또는 관리하는 방법에 대해 알려면 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
