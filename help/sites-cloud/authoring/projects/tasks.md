@@ -48,7 +48,7 @@ ht-degree: 88%
 
 #### 작업 세부 사항 {#task-details}
 
-특정 작업에 대한 자세한 내용을 보려면 작업 목록에서 작업을 탭/클릭하고 **작업 세부 정보 **open.
+특정 작업에 대한 자세한 내용을 보려면 작업 목록에서 작업을 탭/클릭하고 **작업 세부 사항 **을 엽니다.
 
 ![작업 세부 사항](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
