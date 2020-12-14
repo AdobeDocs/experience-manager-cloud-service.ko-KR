@@ -19,7 +19,7 @@ ht-degree: 81%
 1. [참조의 론치(사이트 콘솔)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)에 액세스하여 사용 가능한 동작을 표시합니다.
 1. **페이지로 이동**&#x200B;을 선택하여 편집할 페이지를 엽니다.
 
-페이지를 편집할 때 위쪽 도구 모음에는 **Leave** 및 **Navigate** 옵션과 함께 표시됩니다.
+페이지를 편집할 때 위쪽 도구 모음에는 **Leave** 및 **탐색** 옵션과 함께 표시가 나타납니다.
 
 ![페이지 편집기에서 시작 및 탐색](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
@@ -43,11 +43,11 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 
 수행한 변경 작업을 추적하기 위해 **참조**&#x200B;에서 론치를 보고 론치 페이지를 소스 페이지와 비교할 수 있습니다.
 
-1. **사이트** 콘솔에서 [론치의 소스 페이지로 이동하고 하나](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)을 선택합니다.
+1. **사이트** 콘솔에서 [론치의 소스 페이지로 이동하여 하나](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)를 선택합니다.
 1. **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 패널을 열고 **론치**&#x200B;를 선택합니다.
 1. 특정 론치를 선택한 다음, **소스와 비교**&#x200B;를 선택합니다.
 
-   ![론치와 소스 비교](/help/sites-cloud/authoring/assets/launches-compare.png)
+   ![론치를 소스와 비교](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. 두 페이지(론치와 소스)가 나란히 열립니다.
 
