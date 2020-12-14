@@ -2,7 +2,7 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기초로 사용할 페이지를 만들 때 사용됩니다
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 8%
@@ -555,7 +555,7 @@ On the
 
 * `T`에 비어 있지 않은 `allowedPaths` 속성이 있지만 값이 `P` 경로와 일치하지 않으면 `T`이(가) 거부됩니다.
 
-* 위의 두 속성이 모두 비어 있거나 존재하지 않는 경우 `T`은(는) `P`과(와) 동일한 응용 프로그램에 속하지 않는 한 거부됩니다. `T` 는  `P` if와 동일한 응용 프로그램에 속하며, 경로의 두 번째 수준 이름 `T` 이 경로의 두 번째 수준 이름과 같은 경우에만  `P`속합니다. 예를 들어 템플릿 `/apps/geometrixx/templates/foo`은(는) 페이지 `/content/geometrixx`과(와) 동일한 애플리케이션에 속합니다.
+* 위의 두 속성이 모두 비어 있거나 존재하지 않는 경우 `T`은(는) `P`과(와) 동일한 응용 프로그램에 속하지 않는 한 거부됩니다. `T` 는  `P` if와 동일한 응용 프로그램에 속하며, 경로의 두 번째 수준 이름 `T` 이 경로의 두 번째 수준 이름과 같은 경우에만  `P`속합니다. 예를 들어 템플릿 `/apps/wknd/templates/foo`은(는) 페이지 `/content/wknd`과(와) 동일한 애플리케이션에 속합니다.
 
 * `T`에 비어 있지 않은 `allowedParents` 속성이 있지만 값이 `P` 경로와 일치하지 않으면 `T`이(가) 거부됩니다.
 
