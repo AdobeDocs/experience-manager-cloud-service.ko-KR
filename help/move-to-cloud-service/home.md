@@ -15,7 +15,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_overview"
 >title="Cloud Acceleration Manager 정보"
->abstract="Cloud Acceleration Manager는 Cloud Service으로 AEM으로 전환하는 모든 프로세스를 진행하는 동안 개인화된 가이드입니다."
+>abstract="Cloud Acceleration Manager는 Cloud Service으로 AEM으로 전환하는 모든 프로세스를 진행하는 동안 나만의 개인 가이드입니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="AEM Sites as a Cloud Service에 대한 주요 변경 사항"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#how-to-use" text="CI/CD 파이프라인 구성"
 
@@ -57,7 +57,7 @@ AEM as a Cloud Service를 사용하면 팀이 제품 업그레이드를 계획�
 | [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
-| [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM에서 Cloud Service으로 제공하는 커머스 통합 프레임워크에 대해 자세히 알아보십시오. |
+| [상거래 사용 안내서](/help/commerce-cloud/home.md) | Cloud Service으로 AEM 기반의 Commerce Integration Framework에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
