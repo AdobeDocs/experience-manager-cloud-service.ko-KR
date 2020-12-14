@@ -14,7 +14,7 @@ ht-degree: 1%
 
 시스템 관리자가 Cloud Manager에 대한 액세스 권한을 부여하면 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)을(를) 통해서도 액세스할 수 있는 Cloud Manager 로그인 페이지로 안내하는 이메일을 받게 됩니다.
 
-로그인이 성공하면 아래와 같이 Cloud Manager의 랜딩 페이지로 이동합니다.
+로그인하면 아래와 같이 Cloud Manager의 랜딩 페이지로 이동합니다.
 
 ![](assets/first_timelogin1.png)
 
@@ -29,7 +29,7 @@ SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 �
 프로필에 사용자를 추가하는 방법에 대한 자세한 내용은 [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager)를 참조하십시오.
 
 >[!NOTE]
->2020년 1월 이전에 Cloud Service으로 AEM에 액세스한 일부 조직의 경우 Adobe Admin Console으로 이동되고 제품 및 환경 제품 프로필을 선택해야 합니다.
+>2020년 1월 이전에 Cloud Service으로 AEM에 대한 액세스 권한을 받은 일부 조직의 경우 Adobe Admin Console으로 이동하여 제품 및 환경 제품 프로필을 선택해야 합니다.
 
 1. 클라우드 관리자의 랜딩 페이지로 이동하고 **액세스 관리**&#x200B;를 클릭합니다.
 
@@ -39,12 +39,12 @@ SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 �
 
    ![](assets/sys-admin1.png)
 
-### 작성자 인스턴스에 대한 액세스 관리 {#manage-access-aem}
+### 작성자 인스턴스 {#manage-access-aem}에 대한 액세스 관리
 
 SysAdmin 역할의 사용자는 작성자 인스턴스로 직접 이동하고 액세스를 관리할 수 있는 **Admin Console**&#x200B;에 대한 한 번의 클릭으로 액세스할 수 있습니다.
 
 >[!NOTE]
->2020년 1월 이전에 Cloud Service으로 AEM에 액세스한 일부 조직의 경우 Adobe Admin Console으로 이동되고 제품 및 환경 제품 프로필을 선택해야 합니다.
+>2020년 1월 이전에 Cloud Service으로 AEM에 대한 액세스 권한을 받은 일부 조직의 경우 Adobe Admin Console으로 이동하여 제품 및 환경 제품 프로필을 선택해야 합니다.
 
 자세한 내용은 [AEM에서 인스턴스 액세스를 Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service)로 참조하십시오.
 
@@ -54,7 +54,7 @@ SysAdmin 역할의 사용자는 작성자 인스턴스로 직접 이동하고 �
 
    또는,
 
-   **액세스** 관리 **** 는 환경 **** 에서 세부 사항 **** 을 클릭하면 관리 단추에서도 사용할 수있습니다.
+   **환경** 에서 세부 사항 **** 을 클릭하면 관리 단추에서 액세스  **** 관리를 사용할 수  **** 있습니다.
 
    ![](assets/sys-admin4.png)
 
@@ -68,11 +68,11 @@ SysAdmin 역할의 사용자는 작성자 인스턴스로 직접 이동하고 �
 
 **프로그램 추가** 단추가 보이지 않고 Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
 
-자세한 내용은 [기존 프로그램](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program)과 함께 Cloud Service에 새 프로그램 추가를 참조하십시오.
+자세한 내용은 [Cloud Service에서 기존 프로그램](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program)과 함께 새 프로그램 추가를 참조하십시오.
 
 ## 새 Cloud Service 고객의 경우 {#new-cloud-services}
 
 새 Cloud Service 고객인 경우 빈 랜딩 페이지의 오른쪽 상단 모서리에 **프로그램 추가** 단추가 표시됩니다. Cloud Service에 새 프로그램을 추가하려고 합니다.
 
-자세한 내용은 [기존 프로그램 없이 Cloud Service에 새 프로그램 추가](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program)를 참조하십시오.
+자세한 내용은 [기존 프로그램 없이 Cloud Service에서 새 프로그램 추가](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program)를 참조하십시오.
 
