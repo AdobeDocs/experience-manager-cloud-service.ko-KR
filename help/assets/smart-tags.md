@@ -3,9 +3,9 @@ title: AI에서 생성된 태그가 있는 이미지 자동 태그 지정
 description: ' [!DNL Adobe Sensei] 서비스를 사용하여 문맥 및 설명 비즈니스 태그를 적용하는 지능적인 서비스를 사용하여 이미지에 태그를 지정할 수 있습니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
+source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2431'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 스마트 태그 지정을 사용하려면 다음 작업을 완료하십시오.
 
-* [Adobe 개발자 콘솔과 Experience Manager 통합](#integrate-aem-with-aio).
+* [ [!DNL Adobe Experience Manager] Adobe 개발자 콘솔과 통합](#integrate-aem-with-aio).
 * [태그 모델 및 지침을 이해합니다](#understand-tag-models-guidelines).
 * [모델](#train-model) 트레이닝
 * [디지털 에셋에 태그를 지정할 수 있습니다](#tag-assets).
@@ -105,6 +105,9 @@ ht-degree: 1%
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 제목]**, **[!UICONTROL 설명]**&#x200B;을 제공합니다.
 1. 모델을 교육할 `cq:tags`의 기존 태그에서 태그를 찾아 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 자산 선택]** 대화 상자에서 각 태그에 대해 **[!UICONTROL 자산 추가]**&#x200B;를 클릭합니다. DAM 저장소에서 검색하거나 저장소를 검색하여 최소 10개 및 최대 50개의 이미지를 선택할 수 있습니다. 폴더가 아닌 에셋을 선택합니다. 이미지를 선택하고 나면 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
+
+   ![교육 상태 보기](assets/smart-tags-training-status.png)
+
 1. 선택한 이미지의 축소판을 미리 보려면 태그 앞에 있는 아코디언을 클릭합니다. **[!UICONTROL 자산 추가]**&#x200B;를 클릭하여 선택 항목을 수정할 수 있습니다. 선택 내용에 만족하면 **[!UICONTROL 제출]**&#x200B;을 클릭합니다. 사용자 인터페이스에서는 페이지 하단에 교육이 시작되었음을 나타내는 알림을 표시합니다.
 1. 각 태그 모델의 **[!UICONTROL 상태]** 열에서 교육 상태를 확인합니다. 가능한 상태는 [!UICONTROL 보류 중], [!UICONTROL 훈련됨] 및 [!UICONTROL 실패]입니다.
 
@@ -116,13 +119,13 @@ ht-degree: 1%
 
 스마트 태그 서비스가 자산 교육 세트의 태그에 대해 교육 받았는지 확인하려면 보고서 콘솔에서 교육 워크플로우 보고서를 검토하십시오.
 
-1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구 > 자산 > 보고서]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구] > **[!UICONTROL 자산] > **[!UICONTROL 보고서]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 자산 보고서]** 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 스마트 태그 교육]** 보고서를 선택한 다음 도구 모음에서 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 보고서의 제목과 설명을 지정합니다. **[!UICONTROL 보고서 예약]**&#x200B;에서 **[!UICONTROL 지금]** 옵션을 선택한 상태로 두십시오. 나중에 보고서를 예약하려면 **[!UICONTROL 나중에]**&#x200B;를 선택하고 날짜와 시간을 지정합니다. 그런 다음 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 자산 보고서]** 페이지에서 생성한 보고서를 선택합니다. 보고서를 보려면 도구 모음에서 **[!UICONTROL 보기]**&#x200B;를 클릭합니다.
 1. 보고서의 세부 사항을 검토합니다. 보고서에는 교육 받은 태그에 대한 교육 상태가 표시됩니다. **[!UICONTROL 교육 상태]** 열의 녹색 색상은 스마트 태그 서비스가 태그에 대해 훈련되었음을 나타냅니다. 노란색 색상은 서비스가 특정 태그에 대해 완전히 훈련되지 않음을 나타냅니다. 이 경우 특정 태그로 이미지를 더 추가하고 교육 워크플로우를 실행하여 태그에서 서비스를 완전히 교육할 수 있습니다. 이 보고서에 태그가 표시되지 않으면 이러한 태그에 대해 교육 워크플로우를 다시 실행하십시오.태그
-1. 보고서를 다운로드하려면 목록에서 보고서를 선택하고 도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. 보고서가 Microsoft Excel 스프레드시트로 다운로드됩니다.
+1. 보고서를 다운로드하려면 목록에서 보고서를 선택하고 도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. 보고서는 [!DNL Microsoft Excel] 스프레드시트로 다운로드됩니다.
 
 ## 자산 {#tag-assets} 태그 지정
 
