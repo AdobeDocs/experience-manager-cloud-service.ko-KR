@@ -3,9 +3,9 @@ title: 에셋 마이크로서비스를 사용하여 에셋 처리
 description: 클라우드 기반의 확장 가능한 에셋 처리 마이크로서비스를 사용하여 디지털 에셋을 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Manager은 [!DNL Cloud Service]으로 Experience Manager 응용
 * 해당하는 경우 기본 Adobe 파일 처리 서비스가 사용되므로 Adobe 독점 포맷의 효율적인 처리 및 높은 품질의 출력을 제공합니다[.](file-format-support.md)
 * 사용자 특정 작업 및 통합을 추가하기 위해 사후 처리 작업 과정을 구성할 수 있습니다.
 
-에셋 마이크로서비스는 일반적인 파일 유형에 즉시 사용 가능한 기능을 제공하면서 타사 렌더링 도구와 방법(예: ImageMagick 및 FFmpeg 트랜스코딩)이 필요하지 않고 구성을 단순화하는 데 도움이 됩니다.
+에셋 마이크로서비스는 기본적으로 일반적인 파일 유형에 대한 기본 기능을 제공하면서 제3자 렌더링 도구와 방법(예: ImageMagick 및 FFmpeg 트랜스코딩)이 필요하지 않고 구성을 단순화하는 데 도움이 됩니다.
 
 ## 상위 수준 아키텍처 {#asset-microservices-architecture}
 
