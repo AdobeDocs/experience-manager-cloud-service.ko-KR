@@ -2,19 +2,19 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service을 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3853'
 ht-degree: 1%
 
 ---
 
 
-# Dynamic Media Cloud Service {#configuring-dynamic-media-scene-mode} 구성 정보
+# Dynamic Media Cloud Service {#configuring-dynamic-media} 구성 정보
 
 개발 환경, 스테이징용 환경 및 라이브 프로덕션용 환경 등 서로 다른 환경에 대해 Adobe Experience Manager 설정을 사용하는 경우 해당 환경 각각에 대해 Dynamic Media Cloud Services을 구성해야 합니다.
 
-## Dynamic Media {#architecture-diagram-of-dynamic-media-scene-mode}의 아키텍처 다이어그램
+## Dynamic Media {#architecture-diagram-of-dynamic-media}의 아키텍처 다이어그램
 
 다음 아키텍처 다이어그램에서는 Dynamic Media 작동 방식을 설명합니다.
 
@@ -98,7 +98,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    >[!IMPORTANT]
    >
-   >새로운 Dynamic Media 구성이 설정을 완료하면 AEM 받은 편지함 내에서 상태 알림을 받게 됩니다.
+   >새 Dynamic Media 구성이 설정을 완료하면 AEM 받은 편지함 내에서 상태 알림을 받게 됩니다.
    >
    >이 받은 편지함 알림은 구성이 성공했는지 여부를 알려줍니다.
    > 자세한 내용은 [새 Dynamic Media 구성 문제 해결](#troubleshoot-dm-config) 및 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)을 참조하십시오.
@@ -184,9 +184,9 @@ Dynamic Media의 구성 및 설정을 추가로 사용자 정의하거나 성능
 
 ### (선택 사항) Dynamic Media 설정 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings} 설정 및 구성
 
-Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 Dynamic Media 설정을 변경합니다.
+Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media 설정을 변경합니다.
 
-위의 작업 중 일부는 여기에서 Dynamic Media Classic(Scene7)에 로그인해야 합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+위의 작업 중 일부는 여기에서 Dynamic Media Classic에 로그인해야 합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 설정 및 구성 작업은 다음과 같습니다.
 
