@@ -3,10 +3,10 @@ title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및  [!DNL Adobe Experience Manager]에 게시할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
 
@@ -28,17 +28,17 @@ ht-degree: 1%
 
 ## 비디오 자산 {#publish-video-assets} 게시
 
-게시 후 웹 페이지에 비디오 자산을 URL로 포함하거나 자산을 직접 포함할 수 있습니다. 자세한 내용은 [Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
+게시 후 웹 페이지에 비디오 자산을 URL로 포함하거나 자산을 직접 포함할 수 있습니다. 자세한 내용은 [게시 [!DNL Dynamic Media] 자산](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하십시오.
 
 ## 처리 프로필 {#transcode-video}을(를) 사용하여 코드 변환
 
 [!DNL Experience Manager] 를  [!DNL Cloud Service] 사용하면 처리 프로필을 사용하여 MP4 비디오 파일을 기본적으로 트랜스코딩할 수 있습니다. 이 기능을 사용하면 업로드뿐만 아니라 MP4 비디오 파일을 미리 보고 크기를 조절할 수 있습니다.
 
-![Experience Manager에서 비디오 트랜스코딩에 대한 처리 프로필 만들기](assets/video-processing-profile-for-mp4.png)
+![비디오 트랜스코딩에 대한 처리 프로필 만들기  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *그림:비디오 트랜스코딩에 대한 처리 프로필 [!DNL Experience Manager].*
 
-너비만 또는 높이만 제공하고 다른 필드를 비워 두면 변환이 종횡비를 유지합니다. 현재 코드 변환에는 h264 코덱만 사용할 수 있습니다.
+너비만 또는 높이만 제공하고 다른 필드를 비워 두면 변환이 종횡비를 유지합니다. H.264 비디오 코덱은 트랜스코딩에 사용할 수 있습니다.
 
 처리 프로필을 사용하여 자산을 처리하려면 폴더에 프로필을 추가합니다. [처리 프로필 사용하여 자산](/help/assets/asset-microservices-configure-and-use.md#use-profiles)을(를) 처리할 수 있습니다.
 
@@ -52,8 +52,18 @@ ht-degree: 1%
 
 ## 우수 사례 및 제한 사항 {#tips-limitations}
 
-* Dynamic Media 라이선스가 없으면 처리 프로필을 사용하여 MP4 파일만 처리할 수 있습니다.
-* 기본 코드 변환의 경우
+* [!DNL Dynamic Media] 라이센스가 없으면 처리 프로필을 사용하여 MP4 파일만 처리할 수 있습니다.
+* 처리 프로필을 사용하여 MP4 파일을 트랜스코딩할 때 다음 지침 및 제한 사항이 적용됩니다.
+
+   * Apple ProRes 파일은 최대 해상도 1080p로만 트랜스코딩할 수 있습니다.
+   * 소스 파일의 비트 전송률이 200Mbps를 초과하는 경우 최대 해상도인 1080p로만 코드를 변환할 수 있습니다.
+   * 소스 프레임 속도 >= 60fps이면 사용할 수 있는 최대 소스 파일 크기는 다음과 같습니다.
+
+      * 4k 트랜스코딩의 경우 400MB
+      * 1080p 트랜스코딩의 경우 800MB
+      * 720p 트랜스코딩의 경우 8GB
+   * 4K 해상도로 트랜스코딩할 수 있는 최대 파일 크기는 4K 해상도의 2.55GB MP4 파일, 12Mbps 비트 속도 및 23fps입니다.
+
 
 >[!MORELIKETHIS]
 >
