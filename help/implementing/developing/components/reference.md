@@ -2,9 +2,9 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 가이드
 translation-type: tm+mt
-source-git-commit: 3f31ced24ab8af942b848a8c9ac6bd53ceb5f3b1
+source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3464'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,6 @@ WKND 튜토리얼은 대부분의 사용 사례를 다룹니다. 본 문서는 �
 * Java 사용 - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. 이렇게 하면 Java 코드를 사용하여 구성 요소 컨텐츠를 선택하고 구성하는 논리를 구현할 수 있습니다.
 * JavaScript 사용 - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)를 사용하면 HTML 파일이 JavaScript로 작성된 헬퍼 코드에 액세스할 수 있습니다. 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 컨텐츠를 선택하고 구성하기 위한 논리를 구현할 수 있습니다.
 * 클라이언트측 라이브러리 사용 - 최신 웹 사이트에서는 복잡한 JavaScript 및 CSS 코드를 기반으로 하는 클라이언트측 처리에 상당히 의존합니다. 자세한 내용은 [AEM에서 클라이언트측 라이브러리를 Cloud Service](/help/implementing/developing/introduction/clientlibs.md)로 사용을 참조하십시오.
-
-### 자신의 구성 요소 개발 {#developing-your-own-components}
-
-여기에서 개발 컨텐츠를 제공합니까?
 
 ## 구성 요소 구조 {#structure}
 
@@ -409,6 +405,14 @@ AEM에는 기존 구성이 많습니다. **CRXDE Lite**&#x200B;에서 쿼리 도
 ### 필드 유효성 검사 {#field-validation}
 
 Granite UI 및 Granite UI 위젯의 필드 유효성 검사는 `foundation-validation` API를 사용하여 수행됩니다. 자세한 내용은 [`foundation-valdiation` Granite documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)을 참조하십시오.
+
+### 대화 상자 {#dialog-ready}의 가용성 감지
+
+대화 상자를 사용할 수 있고 사용할 준비가 되었을 때만 실행되어야 하는 사용자 지정 JavaScript가 있는 경우 `dialog-ready` 이벤트를 수신해야 합니다.
+
+이 이벤트는 대화 상자가 로드되거나 다시 로드될 때마다 트리거되며 사용할 준비가 되어 대화 상자의 DOM에 변경(만들기/업데이트)이 있을 때마다 발생합니다.
+
+`dialog-ready` 대화 상자 내부 필드나 유사한 작업 내의 필드에 대한 사용자 지정을 수행하는 JavaScript 사용자 지정 코드를 연결하는 데 사용할 수 있습니다.
 
 ## 미리 보기 동작 {#preview-behavior}
 
