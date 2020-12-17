@@ -2,7 +2,7 @@
 title: DHTML 뷰어 사용 종료
 description: 2014년 1월 31일부터 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다.
 translation-type: tm+mt
-source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 지원되는 최신 뷰어에 대해서는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
-<!-- **What is the change?**
+<!-- OBSOLETE CONTENT **What is the change?**
 
 Effective January 31, 2014, Scene7 will officially end-of-life support for the DHTML viewer platform.
 
