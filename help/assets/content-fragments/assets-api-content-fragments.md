@@ -2,9 +2,9 @@
 title: 자산 HTTP API에서 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager
 description: 자산 HTTP API의 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -66,6 +66,7 @@ Assets REST API는 최신 Adobe Experience Manager을 Cloud Service 버전으로
 
 >[!NOTE]
 >액세스 권한:
+>
 >* `/api/assets` **을** 사용하지 않아도  `.model` 됩니다.
 >* `/content/path/to/page` **선택기** 를 사용해야  `.model` 합니다.
 
@@ -306,32 +307,27 @@ AEM 작성자 환경을 사용하는지 게시 환경을 사용하는지에 따�
 
 몇 가지 제한 사항이 있습니다.
 
-* **변형은 작성하고 업데이트할 수 없습니다.** 이러한 변형이 페이로드에 추가되면(예: 업데이트) 무시됩니다. 그러나 변형은 배달( `GET`)을 통해 제공됩니다.
-
 * **컨텐츠 조각 모델은 현재 지원되지 않습니다**.읽거나 만들 수 없습니다. 새 컨텐츠를 만들거나 기존 컨텐츠 조각을 업데이트하려면 개발자는 컨텐츠 조각 모델의 올바른 경로를 알아야 합니다. 현재 이러한 UI의 개요를 얻는 유일한 방법은 관리 UI를 이용하는 것입니다.
 * **참조는 무시됩니다**. 현재 기존 컨텐츠 조각이 참조되는지 여부를 확인할 수 없습니다. 예를 들어 컨텐츠 조각을 삭제하면 삭제된 컨텐츠 조각에 대한 참조가 포함된 페이지에 문제가 발생할 수 있습니다.
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## 상태 코드 및 오류 메시지 {#status-codes-and-error-messages}
 
 관련 상황에서는 다음 상태 코드를 볼 수 있습니다.
 
-* **200** (확인)
-
-   다음 경우에 반환:
+* **200** (확인) 다음 경우에 반환:
 
    * `GET`을(를) 통해 컨텐츠 조각 요청
-
    * `PUT`을(를) 통해 컨텐츠 조각을 성공적으로 업데이트
 
-* **201** (작성일)
-
-   다음 경우에 반환:
+* **201** (작성일) 다음 경우에 반환:
 
    * `POST`을(를) 통해 컨텐츠 조각을 성공적으로 만들기
 
-* **404** (찾을 수 없음)
-
-   다음 경우에 반환:
+* **404** (찾을 수 없음) 다음 경우에 반환:
 
    * 요청한 컨텐츠 조각이 존재하지 않습니다.
 
@@ -341,8 +337,8 @@ AEM 작성자 환경을 사용하는지 게시 환경을 사용하는지에 따�
    >
    >이 오류가 반환됩니다.
    >
-   >    * 특정 코드로 식별할 수 없는 오류가 발생한 경우
-   >    * 지정된 페이로드가 유효하지 않은 시기
+   >* 특정 코드로 식별할 수 없는 오류가 발생한 경우
+   >* 지정된 페이로드가 유효하지 않은 시기
 
 
    다음은 이 오류 상태가 반환되는 일반적인 시나리오와 생성된 오류 메시지(모노스페이스)를 함께 나열합니다.
@@ -384,6 +380,7 @@ AEM 작성자 환경을 사용하는지 게시 환경을 사용하는지에 따�
 ## API 참조 {#api-reference}
 
 자세한 API 참조는 여기를 참조하십시오.
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
