@@ -2,7 +2,7 @@
 title: Dynamic Media 이미지 프로필
 description: 언샵 마스크, 스마트 자르기, 스마트 견본 또는 둘 다에 대한 설정이 포함된 Dynamic Media 이미지 프로필을 만든 다음 이미지 에셋 폴더에 프로필을 적용합니다.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
 source-wordcount: '2753'
 ht-degree: 4%
@@ -93,7 +93,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-선명하게 하기는 [이미지 선명하게 하기에 설명되어 있습니다.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+선명하게 하기는 [이미지 선명하게 하기에 설명되어 있습니다.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
 
 ## Dynamic Media 이미지 프로필 만들기 {#creating-image-profiles}
 
@@ -101,7 +101,7 @@ ht-degree: 4%
 
 [Dynamic Media 이미지 프로필 및 비디오 프로필 정보](/help/assets/dynamic-media/about-image-video-profiles.md)를 참조하십시오.
 
-처리 프로필 사용](/help/assets/dynamic-media/best-practices-for-file-management.md)에 대한 디지털 자산 구성을 위한 우수 사례를 참조하십시오.[
+처리 프로필 사용[에 대한 디지털 자산 구성을 위한 우수 사례를 참조하십시오.](/help/assets/dynamic-media/best-practices-for-file-management.md)
 
 **Dynamic Media 이미지 프로필을 만들려면**
 
