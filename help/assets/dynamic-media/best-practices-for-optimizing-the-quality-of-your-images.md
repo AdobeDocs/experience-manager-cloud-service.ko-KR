@@ -2,9 +2,9 @@
 title: 이미지 품질 최적화 우수 사례
 description: Dynamic Media에서 이미지 에셋의 품질을 최적화하는 데 사용할 수 있는 모범 사례를 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1475'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ AEM에는 이미지를 조정 및 최적화하고 결과를 렌더링하기 위�
 
 이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 데 가장 복잡한 측면이며 오류가 많이 발생하는 영역입니다. 다음과 같은 유용한 리소스를 참고하여 AEM에서 선명하게 하기 및 언샵 마스크가 작동하는 방식을 자세히 살펴볼 수 있습니다.
 
-우수 사례 백서 [Adobe Scene7 Publishing System 및 이미지 서버에서 이미지 선명하게 하기](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)도 AEM에 적용됩니다.
+모범 사례 백서 [Adobe Dynamic Media Classic의 이미지 선명하게 하기](/help/assets/dynamic-media/assets/sharpening_images.pdf)도 AEM에 적용됩니다.
 
 Adobe TV에서 [선명한 마스크](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)를 사용하여 이미지 선명 효과를 시청하십시오.
 
@@ -65,7 +65,7 @@ AEM을 사용하면 섭취, 전달 시 또는 두 가지 모두를 통해 이미
 
       이미지 선명 효과에 대한 AEM 도움말 항목입니다.
 
-      우수 사례 백서 [Adobe Scene7 Publishing System 및 이미지 서버에서 이미지 선명하게 하기](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+      우수 사례 백서 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
    * AEM에서는 네 번째 매개 변수를 제어할 수도 있습니다.단색(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 개별적으로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지를 결정합니다.
 
@@ -117,7 +117,7 @@ JPG 이미지를 메모리가 제한된 장치에 제공하는 경우 `&jpegSize
 
 여러 가지를 실험하면서 워크플로우를 최적화하는 데 유용한 다음과 같은 일반적인 제안을 찾을 수도 있습니다.
 
-* 실시간으로 조정 작업을 미리 볼 수 있는 Scene7 Publishing System의 이미지 조정 기능을 사용하거나 URL에 직접 여러 매개 변수를 테스트해 봅니다.
+* URL에서 바로 다양한 매개 변수를 실시간으로 테스트해 보십시오.
 * Dynamic Media 이미지 제공 명령을 이미지 사전 설정으로 그룹화할 수 있는 것이 좋습니다. 이미지 사전 설정은 기본적으로 `$thumb_low$` 및 `&product_high$` 등의 사용자 정의 사전 설정 이름을 가진 URL 명령 매크로입니다. URL 경로에 있는 사용자 정의 사전 설정 이름을 사용하면 이러한 사전 설정을 호출할 수 있습니다. 이러한 기능은 웹 사이트에서 이미지의 다양한 사용 패턴에 대한 명령 및 품질 설정을 관리하고 URL의 전체 길이를 줄이는 데 도움이 됩니다.
 * 또한 AEM은 통합 시 선명하게 하기 이미지를 적용하는 등 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 보다 세부적으로 조정하고 최적화하는 옵션일 수 있는 고급 사용 사례의 경우, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)은(는) 사용자 정의된 통찰력과 최상의 작업 방법을 도울 수 있습니다.
 
