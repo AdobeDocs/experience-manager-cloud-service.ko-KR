@@ -2,9 +2,9 @@
 title: 콘텐츠의 HTTP2 전달 FAQ
 description: HTTP2 컨텐츠 전달에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ HTTP/2는 브라우저 및 서버의 통신 방식을 개선하여 정보를 신
 
 ## 컨텐츠 전달을 위해 HTTP/2로 전환하면 어떤 이점이 있습니까?{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-성능 향상은 웹 사이트 코드, Scene7 사용 방법, 소비자의 디바이스, 화면 및 위치 등과 같은 요인에 따라 다릅니다.
+성능 향상은 웹 사이트 코드, Dynamic Media 사용 방법, 소비자의 디바이스, 화면 및 위치 등과 같은 요인에 따라 다릅니다.
 
 Adobe 자체 테스트 결과:
 
@@ -41,13 +41,13 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 * 리치 미디어 요청에 안전한 HTTPS를 사용하십시오.
 * Dynamic Media Classic 라이선스의 일부로 Adobe 번들 CDN(컨텐츠 전달 네트워크)을 사용합니다.
-* 일반 Dynamic Media Classic 도메인(즉, `s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`)을 사용합니다.
+* 일반 Dynamic Media 도메인(즉, `s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`)을 사용합니다.
 
-   도메인을 찾으려면 각 회사 계정에 대해 [Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 인스턴스에 로그인합니다.
+   도메인을 찾으려면 각 회사 계정에 대해 [Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 인스턴스에 로그인합니다.
 
-   **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **게시된 서버 이름**&#x200B;이라는 레이블이 있는 필드를 찾습니다. 현재 일반 Scene7 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+   **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **게시된 서버 이름**&#x200B;이라는 레이블이 있는 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
-## Dynamic Media Classic 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까?{#what-is-the-process-for-enabling-http-for-my-scene-account}
+## Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까?{#what-is-the-process-for-enabling-http-for-my-dm-account}
 
 지원 사례](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)를 만들고 HTTP/2로 전환할 것을 요청하려면 [Admin Console을 사용해야 합니다.자동으로 수행되지 않습니다.
 
@@ -56,17 +56,17 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
    * 기본 연락처 이름, 이메일 및 전화 번호
    * HTTP2로 전환할 모든 도메인. 즉, `images.company.com` 또는 `mycompany.scene7.com`입니다.
 
-   도메인을 찾으려면 각 회사 계정에 대해 [Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 인스턴스에 로그인합니다.
+   도메인을 찾으려면 각 회사 계정에 대해 [Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 인스턴스에 로그인합니다.
 
    **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 있는 필드를 찾습니다.
 
    * 리치 미디어 요청에 보안 HTTPS를 사용하는지 확인합니다.
    * Adobe을 통해 CDN을 사용하고 있고 직접 관계로 관리되지 않는지 확인합니다.
-   * 전용 도메인을 사용하고 있는지 확인합니다. 즉, `images.company.com` 또는 `mycompany.scene7.com`은(는) `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`와 같은 일반 Scene7 도메인이 아닙니다.
+   * 전용 도메인을 사용하고 있는지 확인합니다. 즉, `images.company.com` 또는 `mycompany.scene7.com`은(는) `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`와 같은 일반 Dynamic Media 도메인이 아닙니다.
 
-   도메인을 찾으려면 각 회사 계정에 대해 [Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 인스턴스에 로그인합니다.
+   도메인을 찾으려면 각 회사 계정에 대해 [Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 인스턴스에 로그인합니다.
 
-   **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 있는 필드를 찾습니다. 현재 일반 Scene7 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+   **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 있는 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
    1. 기술 지원에서는 요청을 제출한 순서에 따라 HTTP/2 고객 대기 목록에 사용자를 추가합니다.
    1. Adobe이 요청을 처리할 준비가 되면 지원 담당자가 전환을 조정하고 대상 날짜를 설정하도록 사용자에게 연락합니다.
@@ -86,7 +86,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 HTTP/2로의 전환은 새 CDN 구성으로 이동하는 것을 포함하므로 CDN의 캐시를 지웁니다.
 
-캐시되지 않은 콘텐츠는 캐시를 다시 작성할 때까지 Adobe의 원본 서버를 직접 히트합니다. 이러한 이유로 Adobe은 한 번에 몇 개의 고객 전환을 처리하여 원본 고객의 요청을 가져올 때 허용되는 성능을 유지할 수 있도록 합니다.
+캐시되지 않은 콘텐츠는 캐시가 다시 빌드될 때까지 Adobe의 원본 서버를 직접 히트 시킵니다. 이러한 이유로 Adobe은 한 번에 몇 개의 고객 전환을 처리하여 원본 고객의 요청을 가져올 때 허용되는 성능을 유지할 수 있도록 합니다.
 
 ## URL 또는 웹 사이트가 HTTP/2로 활성화되었는지 어떻게 확인할 수 있습니까?{#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
