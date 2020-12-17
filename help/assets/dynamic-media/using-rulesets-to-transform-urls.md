@@ -2,9 +2,9 @@
 title: 규칙 세트를 사용하여 URL 변형
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다.'
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 * MIME 유형 접미사를 추가하는 중입니다. 대부분의 서비스 및 웹 사이트에는 URL에 `.jpg`을 추가하는 등 이미지 접미어가 필요합니다.
 * SEO용 URL의 폴더 경로 만들기(검색 엔진 최적화) 목적으로.
 
-   [Dynamic Media Classic에서 SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
+   [Adobe Dynamic Media Classic이 SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * SEO(검색 엔진 최적화)를 위해 URL에 메타데이터를 추가합니다.
 
-   [Dynamic Media Classic에서 SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
+   [Adobe Dynamic Media Classic이 SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * 다운로드를 트리거하도록 컨텐츠 처리를 설정합니다.
 * 개인화를 위해 이미지 제공 템플릿 URL을 간소화할 수 있습니다. 예를 들어 `rgb{XX,YY,ZZ}`을(를) RTF용 `\redXX\greenYY\blueZZ`으로 바꿉니다.
@@ -45,9 +45,11 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정
 또한 먼저 라이브 프로덕션 환경에 영향을 주지 않는 스테이징 환경에서 규칙 세트를 테스트해야 합니다.
 프로덕션 환경과 스테이징 환경은 일반적으로 서로 다른 로그인을 필요로 합니다.
 
-* **NA 준비** 환경 로그인 페이지: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **EMEA 스테이징** 환경 로그인 페이지: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC 스테이징** 환경 로그인 페이지: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+로그인 정보](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)에 대해서는 [Adobe Dynamic Media Classic 데스크톱 응용 프로그램을 참조하십시오.
+
+<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 규칙 세트[에서 &#39;is&#39; 이미지 대신 &#39;asset&#39; 사용을 참조하십시오.](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)
 
