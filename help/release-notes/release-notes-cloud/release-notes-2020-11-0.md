@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 2020.11.0.'
 translation-type: tm+mt
-source-git-commit: 70974ad7762bd07f68ee883756708799a79cf85f
+source-git-commit: 66374fe5a9126ba92e12c0128d5f60e0f0d09cb6
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 4%
@@ -34,7 +34,8 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 ### [!DNL Assets] 및 [!DNL Dynamic Media] {#what-is-new-assets}의 새로운 기능
 
 * **자산 일괄 처리**:자산 마이크로 서비스를 비롯한 Cloud Service 아키텍처로 활용하는 확장 가능한 클라우드 기반 통합 서비스 [!DNL Experience Manager] 를 고객에게 제공합니다. 주요 활용 사례로는 모니터링, 보고 및 예약을 통해 일괄적으로 수집하며 일반적인 클라우드 업로드 툴을 사용하여 자산을 클라우드 데이터 스토어로 처음 전송할 수 있습니다. [자산 벌크 인제스트 또는 도구](/help/assets/add-assets.md#asset-bulk-ingestor)를 참조하십시오.
-이 도구는 시스템 관리자, 컨설턴트 또는 구현 파트너 개인 전용입니다. 이 기능을 사용하면 대규모 섭취 작업을 수행할 수 있으며 초기 섭취 또는 경우에 따라 대규모 섭취 중에 가장 적합합니다. 더 작은 통합 작업의 경우 자산 사용자 인터페이스](/help/assets/add-assets.md#upload-assets)을 사용하여 [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 또는 [업로드를 사용하십시오.
+
+   이 도구는 시스템 관리자, 컨설턴트 또는 구현 파트너 개인 전용입니다. 이 기능을 사용하면 대규모 섭취 작업을 수행할 수 있으며 초기 섭취 또는 경우에 따라 대규모 섭취 중에 가장 적합합니다. 더 작은 통합 작업의 경우 자산 사용자 인터페이스](/help/assets/add-assets.md#upload-assets)을 사용하여 [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 또는 [업로드를 사용하십시오.
 
    ![대량 가져오기 구성](/help/assets/assets/bulk-import-config-low-res.png)
 
