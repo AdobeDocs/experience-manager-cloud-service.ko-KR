@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 984914c6147d0ee96575c93496cbdfc4bb9bc094
+source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '553'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 4%
 
 Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜는 2020년 12월 17일입니다.
 다음 릴리스(2021.1.0)은 2020년 1월 28일에 제공됩니다.
+
+## [!DNL Adobe Experience Manager Sites] cloud service  {#sites}
+
+* **[컨텐츠 조각 HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:HTTP API를 사용하여 컨텐츠 조각 변형을 추가/업데이트 및 삭제하는 기능을 추가합니다.
 
 ## [!DNL Adobe Experience Manager Assets] as  [!DNL Cloud Service] {#assets}
 
