@@ -2,9 +2,9 @@
 title: 이미지 사전 설정 관리
 description: 이미지 사전 설정을 이해하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3607'
 ht-degree: 3%
 
 ---
@@ -381,7 +381,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
     </ul>
     <div>
       선명하게 하기는
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">이미지 선명하게 하기</a>.
+     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">이미지 선명하게 하기</a>.
     </div> </td>
   </tr>
   <tr>
