@@ -2,9 +2,9 @@
 title: Dynamic Media Classic을 통해 CDN 캐시 무효화
 description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
+source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Dynamic Media 에셋은 빠른 전달을 위해 CDN에서 캐시됩니다. 그�
 >
 >이 단계는 AEM 6.5, 서비스 팩 5 또는 이전 버전의 Dynamic Media에만 적용됩니다.<!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
-Dynamic Media Classic(Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)의 [캐시 개요를 참조하십시오.
+Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)의 [캐시 개요를 참조하십시오.
 
 **Dynamic Media Classic을 통해 CDN 캐시를 무효화하려면:**
 
