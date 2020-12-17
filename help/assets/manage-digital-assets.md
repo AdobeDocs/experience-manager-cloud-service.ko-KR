@@ -4,9 +4,9 @@ description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
 workflow-type: tm+mt
-source-wordcount: '4407'
+source-wordcount: '4358'
 ht-degree: 2%
 
 ---
@@ -103,19 +103,25 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
    >
    >태그를 만들려면 CRX 저장소의 `/content/cq:tags/default` 경로에 쓰기 권한이 있어야 합니다.
 
-1. 자산에 대한 사용량 통계를 보려면 **[!UICONTROL 인사이트]** 탭을 클릭/탭합니다.
-
-   사용 통계에는 다음이 포함됩니다.
-
-   * 자산을 보거나 다운로드한 횟수
-   * 자산이 사용된 채널/장치
-   * 자산이 최근 사용된 크리에이티브 솔루션
-
-   자세한 내용은 [자산 인사이트](assets-insights.md)를 참조하십시오.
-
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭/클릭합니다.
 
 1. 자산 사용자 인터페이스로 이동합니다. 제목, 설명 및 태그를 비롯한 편집된 메타데이터 속성은 카드 보기의 자산 카드 및 목록 보기의 관련 열 아래에 표시됩니다.
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+## View asset usage and references {#usage-and-references}
+
+[!DNL Experience Manager] lets you track statistics about usage of a digital asset. The usage statistics include the following:
+
+    * Number of times the asset was viewed or downloaded
+    * Channels/devices through which the asset was used
+    * Creative solutions where the asset was recently used
+
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
+
+-->
 
 ## 자산 복사 {#copying-assets}
 
