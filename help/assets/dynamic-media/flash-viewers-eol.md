@@ -1,19 +1,17 @@
 ---
 title: Flash 뷰어 지원 중단 알림
-description: '2017년 1월 31일부로 Adobe Scene7의 Flash 뷰어 플랫폼에 대한 지원이 공식적으로 종료됩니다. '
+description: 2017년 1월 31일부터 Flash 뷰어 플랫폼에 대한 지원은 공식적으로 종료됩니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 61%
+source-wordcount: '47'
+ht-degree: 8%
 
 ---
 
 
-# Flash 뷰어 지원 중단 알림{#flash-viewers-end-of-life-notice}
+# Flash 뷰어 종단 {#flash-viewers-end-of-life-notice}
 
-*2017년 1월 31일부터 Adobe Dynamic Media Classic(Scene7)이 Flash 뷰어 플랫폼에 대한 지원을 공식적으로 종료했습니다.*
+2017년 1월 31일부터 Flash 뷰어 플랫폼에 대한 지원은 공식적으로 종료됩니다.
 
-*이 중요한 변경 사항에 대한 자세한 내용은 다음 FAQ 웹 사이트를 참조하십시오.*
-
-[https://docs.adobe.com/content/docs/kr/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/kr/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+지원되는 최신 뷰어에 대해서는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
