@@ -2,9 +2,9 @@
 title: 규칙 세트를 사용하여 URL 변형
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다.'
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 * MIME 유형 접미사를 추가하는 중입니다. 대부분의 서비스 및 웹 사이트에는 URL에 `.jpg`을 추가하는 등 이미지 접미어가 필요합니다.
 * SEO용 URL의 폴더 경로 만들기(검색 엔진 최적화) 목적으로.
 
-   [Adobe Scene7 Publishing System이 SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
+   [Dynamic Media Classic에서 SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * SEO(검색 엔진 최적화)를 위해 URL에 메타데이터를 추가합니다.
 
-   [Adobe Scene7 Publishing System이 SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
+   [Dynamic Media Classic에서 SEO](/help/assets/dynamic-media/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * 다운로드를 트리거하도록 컨텐츠 처리를 설정합니다.
 * 개인화를 위해 이미지 제공 템플릿 URL을 간소화할 수 있습니다. 예를 들어 `rgb{XX,YY,ZZ}`을(를) RTF용 `\redXX\greenYY\blueZZ`으로 바꿉니다.
