@@ -2,9 +2,9 @@
 title: 서버측 API에 대한 액세스 토큰 생성
 description: 안전한 JWT 토큰을 생성하여 제3자 서버와 AEM 간의 Cloud Service으로 원활한 커뮤니케이션을 제공하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 9a4cb6d981fdf5eea4d1b9c7ae9e3c99947d9745
+source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### JWT 전달자 토큰 {#generating-the-jwt-bearer-token} 생성
 
-조직에 대한 관리자 역할을 가진 사용자는 주어진 환경에 대한 개발자 콘솔의 통합 탭과 두 개의 단추를 볼 수 있습니다. **서비스 자격 증명 가져오기** 단추를 클릭하면 개인 키, 인증서 및 구성이 생성됩니다.
+조직에 대한 관리자 역할을 가진 사용자는 주어진 환경에 대한 개발자 콘솔의 통합 탭과 두 개의 단추를 볼 수 있습니다. **서비스 자격 증명 가져오기** 단추를 클릭하면 창 선택에 상관없이 환경의 작성 및 게시 계층에 대한 개인 키, 인증서 및 구성이 생성됩니다.
 
 ![JWT 생성](assets/JWTtoken3.png)
 
