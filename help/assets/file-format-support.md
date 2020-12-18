@@ -3,9 +3,9 @@ title: 지원되는 파일 형식 및 MIME 형식
 description: 파일 형식 및 MIME 유형은  [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]으로 지원합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '807'
 ht-degree: 8%
 
 ---
@@ -222,6 +222,10 @@ Dynamic Media에서 [3D 자산 작업을 참조하십시오.](/help/assets/dynam
 ## 오디오 형식 {#audio-formats}
 
 [!DNL Assets] as a는 AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 포맷에 대한 XMP 메타데이터 추출 지원을  [!DNL Cloud Service] 제공합니다.
+
+## 팁 및 제한 사항 {#limitations-and-tips}
+
+* 현재 메타데이터 추출을 위한 파일 크기 제한은 약 10GB입니다. 매우 큰 자산을 업로드할 때 메타데이터 추출 작업이 실패하는 경우가 있습니다.
 
 >[!MORELIKETHIS]
 >
