@@ -2,9 +2,9 @@
 title: 빠른 보기를 사용하여 사용자 지정 팝업 만들기
 description: 기본 Quickview는 제품 정보와 함께 팝업이 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 사용자 정의 컨텐츠가 팝업에 표시되도록 트리거할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1009'
 ht-degree: 2%
 
 ---
@@ -100,8 +100,8 @@ ht-degree: 2%
 
    다음 위치에서 `setHandlers()` 메서드에 대해 자세히 알아보십시오.
 
-   * 대화형 이미지 뷰어:[구독자](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * 대화형 비디오 뷰어:[구독자](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * 대화형 이미지 뷰어:[구독자](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * 대화형 비디오 뷰어:[구독자](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. 이제 `quickViewActivate` 처리기를 구성해야 합니다.
 
@@ -132,9 +132,9 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
 
    다음 위치에서 `quickViewActivate` 메서드에 대해 자세히 알아보십시오.
 
-   * 대화형 이미지 뷰어 - [이벤트 콜백](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * 대화형 비디오 뷰어 - [이벤트 콜백](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * 대화형 비디오 뷰어에서 대화형 데이터 지원 - [대화형 데이터 지원](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * 대화형 이미지 뷰어 - [이벤트 콜백](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * 대화형 비디오 뷰어 - [이벤트 콜백](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * 대화형 비디오 뷰어에서 대화형 데이터 지원 - [대화형 데이터 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. 다음을 수행합니다.
 
@@ -210,8 +210,8 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
 
    다음 위치에서 `init()` 메서드에 대해 자세히 알아보십시오.
 
-   * 대화형 이미지 뷰어 - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-   * 대화형 비디오 뷰어 - [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+   * 대화형 이미지 뷰어 - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * 대화형 비디오 뷰어 - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. 이전 단계에 설명된 팝업을 뷰어에 첨부하려면 다음 코드를 사용합니다.
 
