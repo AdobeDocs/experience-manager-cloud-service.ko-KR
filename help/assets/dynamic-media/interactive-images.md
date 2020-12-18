@@ -2,9 +2,9 @@
 title: 대화형 이미지
 description: Dynamic Media에서 대화형 이미지를 사용하여 작업하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '4253'
+source-wordcount: '4249'
 ht-degree: 0%
 
 ---
@@ -358,9 +358,9 @@ AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드
 
 응답형 환경에 대한 쇼퍼블 대화형 이미지에 &quot;자르기&quot;를 적용하려면 경로에 대화형 이미지 구성 속성 `ZoomView.iscommand`을 포함할 수 있습니다. 여기서 `ZoomView`은 호출할 구성 요소이고 `iscommand`는 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
 
-[ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 구성 특성을 참조하십시오.
+[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 구성 특성을 참조하십시오.
 
-[자르기](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) 이미지 제공 명령을 참조하십시오.
+[자르기](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) 이미지 제공 명령을 참조하십시오.
 
 이제 대화형 이미지를 웹 사이트의 기존 Quickview와 통합할 준비가 되었습니다.
 
@@ -388,11 +388,11 @@ AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드
 
 이러한 이벤트 핸들러에서 프런트 엔드 코드는 다음을 수행합니다.
 
-* 쇼퍼블 인터랙티브 이미지가 제공한 이벤트를 수신합니다.
-* 핫스팟 데이터를 기반으로 빠른 보기 URL을 생성합니다.
-* 백엔드에서 Quickview를 로드하고 표시하기 위해 화면에 렌더링하는 프로세스를 트리거합니다.
+* 쇼퍼블 인터랙티브한 이미지가 발산하는 이벤트를 수신합니다.
+* 핫스팟 데이터를 기반으로 Quickview URL을 구성합니다.
+* 백엔드에서 Quickview 로드 프로세스를 트리거하고 화면에 표시하여 표시합니다.
 
-AEM Assets에서 반환되는 포함 코드에는 이미 다음 강조 표시된 코드 조각에서 보듯이, 주석으로 처리되는 즉시 사용할 수 있는 이벤트 핸들러가 있습니다.
+AEM Assets에서 반환되는 embed 코드에는 이미 다음과 같이 강조 표시된 다음 코드 조각에서 볼 수 있는 사용 가능한 이벤트 핸들러가 있습니다.
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
@@ -416,13 +416,13 @@ AEM Assets에서 반환되는 포함 코드에는 이미 다음 강조 표시된
         s7interactiveimageviewer.init();
 ```
 
-따라서 코드의 주석을 해제하고 더미 핸들러 본문을 특정 웹 페이지에 맞는 코드로 교체해야 합니다.
+따라서 코드의 주석 처리를 해제하고 더미 핸들러 본문을 특정 웹 페이지에 고유한 코드로 바꿔야 합니다.
 
-Quickview URL을 구성하는 프로세스는 기본적으로 앞에서 설명한 핫스팟 변수를 식별하는 데 사용되는 프로세스와 반대됩니다.
+Quickview URL을 작성하는 프로세스는 기본적으로 앞에서 설명한 핫스팟 변수를 식별하는 데 사용되는 프로세스와 다릅니다.
 
-[핫스팟 변수 확인](#optional-identifying-hotspot-variables)을 참조하십시오.
+[핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오.
 
-이전 Quickview URL 예를 사용하면 다음 예에서 각 케이스에서 Quickview URL이 구성되는 방식을 확인할 수 있습니다.
+이전 Quickview URL 예제를 사용하여 다음 예제에서는 각 경우에 Quickview URL이 어떻게 구성되었는지 확인할 수 있습니다.
 
 <table>
  <tbody>
@@ -443,7 +443,7 @@ Quickview URL을 구성하는 프로세스는 기본적으로 앞에서 설명�
       });</code></td>
   </tr>
   <tr>
-   <td><p>쿼리 문자열의 SKU 및 카테고리 ID</p> </td>
+   <td><p>쿼리 문자열의 SKU 및 범주 ID</p> </td>
    <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
@@ -453,15 +453,15 @@ Quickview URL을 구성하는 프로세스는 기본적으로 앞에서 설명�
  </tbody>
 </table>
 
-Quickview URL을 트리거하고 Quickview 패널을 활성화하는 마지막 단계는 IT 부서의 프런트 엔드 IT 담당자의 지원이 필요합니다. 바로 사용할 수 있는 Quickview URL을 사용하여 적절한 단계에서 Quickview 구현을 정확하게 트리거하는 방법을 잘 알고 있습니다.
+Quickview URL을 트리거하고 Quickview 패널을 활성화하는 마지막 단계는 IT 부서의 프런트 엔드 IT 담당자의 지원을 필요로 합니다. 바로 사용할 수 있는 Quickview URL을 사용하여 적절한 단계에서 Quickview 구현을 정확하게 트리거하는 방법을 가장 잘 알고 있습니다.
 
-이러한 단계가 데모 웹 사이트에 어떻게 적용되었는지 확인하여 쇼퍼블 인터랙티브한 이미지를 Quickview 코드와 완벽하게 통합할 수 있습니다. 이전에는 빠른 보기 URL의 구조가 다음과 같이 식별되었습니다.
+이러한 단계가 데모 웹 사이트에 어떻게 적용되어 Quickview 코드와 쇼퍼블 인터랙티브한 이미지를 완전히 통합할 수 있는지 확인할 수 있습니다. 이전에는 Quickview URL의 구조가 다음과 같이 식별되었습니다.
 
 ```xml
 /datafeed/$categoryId$-$SKU$.json
 ```
 
-`quickViewActivate` 핸들러 내에서 이 URL을 재구성하려면 뷰어의 코드로 핸들러로 전달되는 `inData` 개체에서 사용할 수 있는 `categoryId` 및 `SKU` 필드를 사용할 수 있습니다.
+`quickViewActivate` 핸들러 내에서 이 URL을 재구성하려면 뷰어의 코드로 핸들러에 전달되는 `categoryId` 및 `SKU` 객체에서 사용할 수 있는 필드를 사용합니다.`inData`
 
 ```xml
 var sku=inData.sku;
@@ -469,7 +469,7 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-데모 웹 사이트에서 간단한 `loadQuickView()` 함수 호출을 사용하여 빠른 보기 대화 상자를 트리거합니다. 이 함수는 Quickview 데이터 URL인 하나의 인수만 사용합니다. 따라서 쇼퍼블 인터랙티브 이미지를 통합하는 데 필요한 마지막 단계는 다음 코드 행을 `quickViewActivate` 핸들러에 추가하는 것입니다.
+데모 웹 사이트에서 간단한 `loadQuickView()` 함수 호출을 사용하여 Quickview 대화 상자를 트리거합니다. 이 함수는 Quickview 데이터 URL인 인수를 하나만 사용합니다. 따라서 상업적 사용이 가능한 대화형 이미지를 통합하는 데 필요한 마지막 단계는 다음 코드 행을 `quickViewActivate` 핸들러에 추가하는 것입니다.
 
 ```xml
 loadQuickView(quickViewUrl);
@@ -497,7 +497,7 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-완벽하게 통합된 대화형 이미지](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)이 있는 [최종 데모 웹 사이트.
+완벽하게 통합된 대화형 이미지가 있는 [최종 데모 웹 사이트](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html).
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
