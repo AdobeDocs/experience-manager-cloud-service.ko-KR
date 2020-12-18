@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -52,12 +52,12 @@ Dynamic Media 유저 인터페이스 요소는 화면 판독기와 같은 보조
 
 즉시 사용 가능한 모든 Dynamic Media 뷰어 구성 요소는 고객의 키보드 액세스 가능성을 지원합니다.
 
-Dynamic Media 뷰어 참조 안내서의 [키보드 액세스 및 탐색](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 [키보드 액세스 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
 
 ## Dynamic Media 뷰어에서 보조 기술 지원 {#assistive-technology=support-for-dm-viewers}
 
 모든 Dynamic Media 뷰어 구성 요소는 ARIA(Accessible Rich Internet Application) 역할 및 속성을 지원하여 화면 판독기와 같은 보조 기술과의 통합을 향상시킵니다.
-Dynamic Media 뷰어 참조 안내서의 사용자 정의 뷰어 항목의 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) 또는 대화형 이미지 뷰어의 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 사용자 정의 뷰어 항목의 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) 또는 대화형 이미지 뷰어의 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)을 참조하십시오.
 
 >[!MORELIKETHIS]
 >
