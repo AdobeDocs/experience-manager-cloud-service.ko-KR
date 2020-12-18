@@ -2,10 +2,10 @@
 title: 뷰어 사전 설정 관리
 description: Dynamic Media에서 뷰어 사전 설정을 만들고 관리하는 방법입니다.
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '4261'
-ht-degree: 2%
+source-wordcount: '4246'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-[Adobe 뷰어 참조 안내서](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html)도 참조하십시오.
+[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)도 참조하십시오.
 
 이 섹션에서는 뷰어 사전 설정을 만들고, 편집하고, 관리하는 방법에 대해 설명합니다. 미리 볼 때마다 자산에 뷰어 사전 설정을 적용할 수 있습니다. [뷰어 사전 설정 적용](#applying-a-viewer-preset-to-an-asset)을 참조하십시오.
 
@@ -35,7 +35,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 모든 기본 뷰어는 키보드 접근성을 지원합니다.
 
-[키보드 액세스 및 탐색](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)도 참조하십시오.
+[키보드 액세스 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)도 참조하십시오.
 
 ## 뷰어 사전 설정 관리 {#managing-viewer-presets-1}
 
@@ -154,7 +154,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 뷰어에 대해 지원되는 웹 브라우저 및 운영 체제 버전에 대한 자세한 내용은 뷰어 릴리스 정보를 검토할 수 있습니다.
 
-[뷰어 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)의 목차 중 &quot;뷰어 릴리스 노트&quot;를 참조하십시오.
+[뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 목차 중 &quot;뷰어 릴리스 노트&quot;를 참조하십시오.
 
 >[!NOTE]
 >
@@ -419,13 +419,13 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
       시각적 편집기를 사용하면 특정 속성이 스타일에 어떤 영향을 주는지 확인할 수 있습니다. 편집기의 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있도록 속성을 설정하거나 조정하기만 하면 됩니다.
 
-      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 [뷰어 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)의 &quot;Customizing *`<viewer name>`* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 `Mixed_Media` 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록과 설명은 [혼합 미디어 뷰어 사용자 정의](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)를 참조하십시오.
+      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 &quot;Customizing *`<viewer name>`* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 `Mixed_Media` 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록과 설명은 [혼합 미디어 뷰어 사용자 정의](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)를 참조하십시오.
 
    * 별도의 CSS 파일에 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면 **[!UICONTROL 선택한 유형]** 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS 가져오기]**&#x200B;를 탭합니다(시각적 편집기를 위로 스크롤하여 보려면 해당 파일을 확인해야 할 수 있음).
 
       CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 뷰어 클래스 이름 `.s7mixedmediaviewer`을 사용하여 정의해야 합니다.
 
-      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 손으로 만든 CSS를 가져올 수 있습니다. (CSS 마커는 [뷰어 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)의 &quot;Customizing *&lt;viewer name>* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 확대/축소 뷰어의 CSS 마커에 대해 읽으려면 [확대/축소 뷰어 사용자 정의](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)를 참조하십시오.) 그러나 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
+      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 손으로 만든 CSS를 가져올 수 있습니다. (CSS 마커는 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 &quot;Customizing *&lt;viewer name>* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 확대/축소 뷰어의 CSS 마커에 대해 읽으려면 [확대/축소 뷰어 사용자 정의](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)를 참조하십시오.) 그러나 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
    >[!NOTE]
    >
    >CSS를 Raw 형식으로 직접 편집하려면 선택한 유형 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS 표시/숨기기]**를 누릅니다(보기 위해 시각적 편집기를 위로 스크롤해야 할 수 있음).
@@ -441,7 +441,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
    시각적 편집기의 많은 구성 요소에는 관련된 자세한 설명이 있습니다. 이러한 설명은 구성 요소를 확장하여 연관된 매개 변수를 표시할 때 파란색 상자에 표시됩니다.
 
-   일부 뷰어 유형에는 **[!UICONTROL IS 명령]** 텍스트 필드에서 이미지 제공 명령을 지정할 수 있는 구성 요소가 있습니다. 사용할 수 있는 명령 목록은 [이미지 제공 API 참조](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)를 참조하십시오.
+   일부 뷰어 유형에는 **[!UICONTROL IS 명령]** 텍스트 필드에서 이미지 제공 명령을 지정할 수 있는 구성 요소가 있습니다. 사용할 수 있는 명령 목록은 [이미지 제공 API 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)를 참조하십시오.
 
    >[!NOTE]
    >
