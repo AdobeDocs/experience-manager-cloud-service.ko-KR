@@ -2,7 +2,7 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 1%
@@ -150,6 +150,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 ### 에셋 벌크 인제스트 또는 도구 {#asset-bulk-ingestor}
 
 도구는 Azure 또는 S3 데이터 저장소에서 자산을 대량으로 수집하기 위해 사용할 수 있도록 관리자 그룹에만 제공됩니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 도구를 구성하려면 다음 단계를 수행합니다.
 
