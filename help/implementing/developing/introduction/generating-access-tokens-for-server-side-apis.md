@@ -2,9 +2,9 @@
 title: 서버측 API에 대한 액세스 토큰 생성
 description: 안전한 JWT 토큰을 생성하여 제3자 서버와 AEM 간의 Cloud Service으로 원활한 커뮤니케이션을 제공하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
+source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,18 @@ ht-degree: 0%
 
 ## 서버 간 흐름 {#the-server-to-server-flow}
 
-관리자 역할을 가진 사용자는 JWT 전달자 토큰을 생성할 수 있습니다. 이 토큰은 서버에 설치되어야 하며 이를 비밀 키로 신중하게 취급해야 합니다. JWT 전달자 토큰은 IMS와 액세스 토큰으로 교환되어야 하며, 이것은 AEM에 Cloud Service으로 요청서에 포함되어야 합니다.
+관리자 역할을 가진 사용자는 AEM을 Cloud Service 자격 증명으로 생성할 수 있으며, 자격 증명은 서버에 설치해야 하며 비밀 키로 신중하게 취급해야 합니다. 이 JSON 형식 파일에는 Cloud Service API로 AEM과 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 IMS 액세스 토큰과 교환되는 서명된 JWT 토큰을 만드는 데 사용됩니다. 그런 다음 이 액세스 토큰을 베어러 인증 토큰으로 사용하여 AEM에 Cloud Service으로 요청을 할 수 있습니다.
 
 서버 간 흐름에는 다음 단계가 포함됩니다.
 
-* 개발자 콘솔에서 JWT 전달자 토큰을 생성합니다.
-* AEM 호출을 수행하는 AEM이 아닌 서버에 토큰을 설치합니다.
-* Adobe IMS API를 사용하여 액세스 토큰으로 JWT 전달자 토큰을 교환합니다.
-* AEM API 호출
+* 개발자 콘솔에서 AEM을 Cloud Service 자격 증명으로 가져오기
+* AEM 호출을 수행하는 AEM 서버가 아닌 서버에 AEM을 Cloud Service 자격 증명으로 설치합니다.
+* JWT 토큰을 생성하고 Adobe의 IMS API를 사용하여 액세스 토큰에 대해 해당 토큰을 교환합니다.
+* 액세스 토큰이 있는 AEM API를 Bearer 인증 토큰으로 호출
 
-### JWT 전달자 토큰 {#generating-the-jwt-bearer-token} 생성
+### AEM을 Cloud Service 자격 증명 {#fetch-the-aem-as-a-cloud-service-credentials}으로 가져오기
 
-조직에 대한 관리자 역할을 가진 사용자는 주어진 환경에 대한 개발자 콘솔의 통합 탭과 두 개의 단추를 볼 수 있습니다. **서비스 자격 증명 가져오기** 단추를 클릭하면 창 선택에 상관없이 환경의 작성 및 게시 계층에 대한 개인 키, 인증서 및 구성이 생성됩니다.
+IMS 조직에 대한 관리자 역할을 가진 사용자는 주어진 환경에 대한 개발자 콘솔의 통합 탭과 두 개의 단추를 볼 수 있습니다. **서비스 자격 증명 가져오기** 단추를 클릭하면 서비스 자격 증명 json이 생성되며, 이 JSON에는 창 선택에 상관없이 클라이언트 ID, 클라이언트 암호, 개인 키, 인증서, 환경 작성자 및 게시 계층에 대한 구성 등 비 AEM 서버에 필요한 모든 정보가 포함됩니다.
 
 ![JWT 생성](assets/JWTtoken3.png)
 
@@ -59,21 +59,45 @@ ht-degree: 0%
 }
 ```
 
-### AEM이 아닌 서버 {#install-the-token-on-a-non-aem-server}에 토큰 설치
+### AEM 서버가 아닌 서버에 AEM 서비스 자격 증명 설치 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-AEM에 대한 호출을 하지 않는 응용 프로그램은 JWT 전달자 토큰을 설치하여 이를 암호로 취급해야 합니다.
+AEM을 호출하지 않는 응용 프로그램은 AEM을 Cloud Service 자격 증명으로 액세스하여 암호로 처리할 수 있어야 합니다.
 
-### 액세스 토큰 {#exchange-the-jwt-token-for-an-access-token}에 대한 JWT 토큰 교환
+### JWT 토큰을 생성하고 액세스 토큰{#generate-a-jwt-token-and-exchange-it-for-an-access-token}에 대해 교환
 
-24시간 동안 유효한 액세스 토큰을 검색하기 위해 Adobe IMS 서비스 호출에 JWT 토큰을 포함합니다.
+24시간 동안 유효한 액세스 토큰을 검색하기 위해 자격 증명을 사용하여 Adobe IMS 서비스 호출 시 JWT 토큰을 만듭니다.
+
+AEM-CS 서비스 자격 증명은 이러한 목적으로 설계된 클라이언트 라이브러리를 사용하여 액세스 토큰으로 교환될 수 있습니다. 클라이언트 라이브러리는 보다 자세한 지침 및 최신 정보가 포함된 [Adobe의 공용 GitHub 저장소](https://github.com/adobe/aemcs-api-client-lib)에서 사용할 수 있습니다.
+
+```
+/*jshint node:true */
+"use strict";
+
+const fs = require('fs');
+const exchange = require("@adobe/aemcs-api-client-lib");
+
+const jsonfile = "aemcs-service-credentials.json";
+
+var config = JSON.parse(fs.readFileSync(jsonfile, 'utf8'));
+exchange(config).then(accessToken => {
+    // output the access token in json form including when it will expire.
+    console.log(JSON.stringify(accessToken,null,2));
+}).catch(e => {
+    console.log("Failed to exchange for access token ",e);
+});
+```
+
+서명된 JWT 토큰을 올바른 형식으로 생성하고 IMS 토큰 교환 API를 호출할 수 있는 모든 언어로 동일한 교환을 수행할 수 있습니다.
+
+액세스 토큰은 만료될 시기를 정의합니다(일반적으로 12일). git 리포지토리에 액세스 토큰을 관리하고 만료되기 전에 새로 고치는 샘플 코드가 있습니다.
 
 ### AEM API {#calling-the-aem-api} 호출
 
-헤더의 액세스 토큰을 포함하여 AEM에 대한 적절한 서버 간 API 호출을 Cloud Service 환경으로 만듭니다. 따라서 &quot;인증&quot; 헤더의 경우 `"Bearer <access_token>"` 값을 사용합니다.
+헤더의 액세스 토큰을 포함하여 AEM에 대한 적절한 서버 간 API 호출을 Cloud Service 환경으로 만듭니다. 따라서 &quot;인증&quot; 헤더의 경우 `"Bearer <access_token>"` 값을 사용합니다. 예를 들어 `curl` 사용:
 
-<!-- ### Code Samples {#code-samples}
-
-https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL will change to public git repo before we publish) contains client libraries written in node.js that will exchange the JSON outputted by the developer console for an access token. -->
+```curlc
+curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
+```
 
 ## 개발자 흐름 {#developer-flow}
 
@@ -100,6 +124,6 @@ https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL wil
 
 헤더에 있는 액세스 토큰을 포함하여 AEM이 아닌 응용 프로그램에서 AEM으로 적절한 서버 간 API 호출을 Cloud Service 환경으로 만듭니다. 따라서 &quot;인증&quot; 헤더의 경우 `"Bearer <access_token>"` 값을 사용합니다.
 
-## JWT 베어러 토큰 해지 {#jwt-bearer-token-revocation}
+## 서비스 자격 증명 해지 {#service-credentials-revocation}
 
 JWT 전달자 토큰을 취소해야 하는 경우 고객 지원에 요청을 제출하십시오.
