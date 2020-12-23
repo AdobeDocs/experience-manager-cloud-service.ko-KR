@@ -2,9 +2,9 @@
 title: 자산 HTTP API에서 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager
 description: 자산 HTTP API의 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
+source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1914'
 ht-degree: 2%
 
 ---
@@ -82,9 +82,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 >
 >요청 본문 및/또는 URL 매개 변수를 사용하여 이러한 작업 중 일부를 구성할 수 있습니다.예를 들어 **POST** 요청에 의해 폴더 또는 자산을 만들어야 함을 정의합니다.
 
-<!--
-The exact format of supported requests is defined in the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) documentation.
--->
+지원되는 요청의 정확한 형식은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) 설명서에 정의되어 있습니다.
 
 ### 트랜잭션 동작 {#transactional-behavior}
 
@@ -256,11 +254,9 @@ AEM 작성자 환경을 사용하는지 게시 환경을 사용하는지에 따�
 >
 >AEM 클라우드 인스턴스의 디스패처 구성은 `/api`에 대한 액세스를 차단할 수 있습니다.
 
-<!--
 >[!NOTE]
 >
->For further details, see the [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). In particular, [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html). 
--->
+>자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 콘텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### 읽기/배달 {#read-delivery}
 
@@ -309,10 +305,6 @@ AEM 작성자 환경을 사용하는지 게시 환경을 사용하는지에 따�
 
 * **컨텐츠 조각 모델은 현재 지원되지 않습니다**.읽거나 만들 수 없습니다. 새 컨텐츠를 만들거나 기존 컨텐츠 조각을 업데이트하려면 개발자는 컨텐츠 조각 모델의 올바른 경로를 알아야 합니다. 현재 이러한 UI의 개요를 얻는 유일한 방법은 관리 UI를 이용하는 것입니다.
 * **참조는 무시됩니다**. 현재 기존 컨텐츠 조각이 참조되는지 여부를 확인할 수 없습니다. 예를 들어 컨텐츠 조각을 삭제하면 삭제된 컨텐츠 조각에 대한 참조가 포함된 페이지에 문제가 발생할 수 있습니다.
-
-<!--
-* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
--->
 
 ## 상태 코드 및 오류 메시지 {#status-codes-and-error-messages}
 
