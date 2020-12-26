@@ -2,9 +2,9 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1903'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 자산 일괄 업로드 {#bulk-upload}
 
-일괄 자산 인제스트나 수천 개의 에셋을 효율적으로 처리할 수 있습니다. 그러나 대규모 수집은 단순히 크고 넓은 파일 덤프 또는 숨은 마이그레이션이 아닙니다. 비즈니스 목적에 부합하는 의미 있는 프로젝트라면 자산을 계획 및 관리하여 보다 효율적으로 수집해야 합니다. 미묘한 차이가 있는 저장소 구성 및 비즈니스 요구에 대한 사항을 팩토링하지 않으면 모든 제약이 동일하지 않으며 일반화를 생성할 수 없습니다. 다음은 일괄 구매를 계획하고 실행하기 위한 초과 제안 사항입니다.
+벌크 자산 인제스트는 매우 많은 수의 자산을 효율적으로 처리할 수 있습니다. 그러나 대규모 수집은 광범위한 파일 덤프 또는 캐주얼 마이그레이션이 아닙니다. 대규모 인제스트는 비즈니스 목적에 부합하고 효율적인 효과적인 프로젝트이므로 마이그레이션을 계획하고 자산 조직을 조정하십시오. 모든 인제션은 생성하는 대신 미묘한 리포지토리 구성 및 비즈니스 요구에 영향을 주는 다른 방식으로 다릅니다. 다음은 대량 수집을 계획 및 실행하기 위한 몇 가지 중요한 제안입니다.
 
 * 자산 조정:DAM에 필요하지 않은 에셋을 제거합니다. 사용하지 않거나 오래된 자산 또는 중복된 자산을 제거하는 것이 좋습니다. 이렇게 하면 데이터 전송 및 인제스트된 에셋이 줄어들어 인제션이 빨라집니다.
 * 자산 구성:파일 크기, 파일 형식, 사용 사례 또는 우선 순위와 같이 적절한 순서로 컨텐츠를 구성하는 것이 좋습니다. 일반적으로 복잡한 대용량 파일은 더 많은 처리가 필요합니다. 파일 크기 필터링 옵션(아래 설명됨)을 사용하여 대용량 파일을 별도로 인제스트하는 것도 좋습니다.
@@ -149,7 +149,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 에셋 벌크 인제스트 또는 도구 {#asset-bulk-ingestor}
 
-도구는 Azure 또는 S3 데이터 저장소에서 자산을 대량으로 수집하기 위해 사용할 수 있도록 관리자 그룹에만 제공됩니다.
+도구는 Azure 또는 S3 데이터 저장소에서 자산을 대량으로 수집하기 위해 사용할 수 있도록 관리자 그룹에만 제공됩니다. 구성 및 섭취 관련 비디오 개요를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
