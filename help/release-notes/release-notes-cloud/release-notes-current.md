@@ -2,7 +2,7 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
+source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 4%
