@@ -305,4 +305,4 @@ SPA이 최종 사용자를 위해 동작하고 SPA 페이지를 검사하는 방
 * [Reactact를 사용하여 AEM에서 SPA으로 시작하는 방법](getting-started-react.md) 은 React를 사용하여 AEM에서 SPA Editor에서 작동하는 기본 SPA을 어떻게 구축하는지 보여줍니다
 * [Angularageusing AEM에서 SPA 시작하기](getting-started-angular.md) 는 Angular를 사용하여 AEM에서 SPA 편집기로 작업할 기본 SPA을 빌드하는 방법을 보여줍니다
 * [SPA ](editor-overview.md) Editor Overview를 통해 AEM과 SPA 간의 통신 모델에 대해 더 자세히 살펴봅니다.
-* [AEM용 SPA 개발](developing.md) 은 AEM용 SPA을 개발하기 위해 프런트 엔드 개발자의 참여를 유도하는 방법뿐만 아니라 SPA과 AEM 아키텍처가 어떻게 상호 작용하는지 설명합니다.
+* [AEM용 SPA 개발](developing.md) 은 AEM용 SPA을 개발하기 위해 프런트 엔드 개발자의 참여를 유도하는 방법뿐만 아니라 SPA과 AEM 아키텍처가 어떻게 상호작용하는지를 설명합니다.
