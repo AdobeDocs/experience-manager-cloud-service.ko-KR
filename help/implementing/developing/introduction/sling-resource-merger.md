@@ -18,7 +18,7 @@ Sling Resource Combination은 리소스에 액세스하고 병합하는 서비�
 
 * **[](/help/implementing/developing/introduction/overlays.md)** 검색  [경로를 사용한 리소스 ](/help/implementing/developing/introduction/overlays.md#search-paths)오버레이입니다.
 
-* **터치** 지원 UI(`cq:dialog`)에 대한 구성 요소 대화 상자의 개요(속성 `sling:resourceSuperType`을 통해) 리소스 유형 계층 구조를 사용합니다.
+* **터치** 지원 UI(`cq:dialog`)에 대한 구성 요소 대화 상자의 개요(속성을 통해) `sling:resourceSuperType`를 사용합니다.
 
 Sling 리소스 합병에서 오버레이/재정의 리소스 및/또는 속성은 원래 리소스/속성과 병합됩니다.
 
