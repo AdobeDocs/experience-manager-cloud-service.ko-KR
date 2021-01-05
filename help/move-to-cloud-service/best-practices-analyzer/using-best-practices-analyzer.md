@@ -16,7 +16,7 @@ ht-degree: 46%
 >id="aemcloud_bpa_using"
 >title="우수 사례 분석기 사용"
 >abstract="모범 사례 분석기(이전 Cloud Ready Analyzer)를 사용하는 방법과 생성된 보고서를 검토합니다. 모범 사례 분석기 보고서를 통해 일반적인 업그레이드 준비 상태에 대한 수준 높은 이해를 얻을 수 있습니다."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 우수 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
