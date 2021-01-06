@@ -48,12 +48,10 @@ AEM에서 Sling 리소스 합병을 사용하는 목표는 다음과 같습니�
 >이는 인스턴스에 업그레이드가 적용될 때마다 `/libs` 내용을 덮어쓸 수 있기 때문입니다.
 >
 >* 오버레이는 [검색 경로](/help/implementing/developing/introduction/overlays.md#search-paths)에 따라 다릅니다.
-   >
-   >
-* 오버라이드는 검색 경로에 종속되지 않으며 `sling:resourceSuperType` 속성을 사용하여 연결을 만듭니다.
 >
+>* 오버라이드는 검색 경로에 종속되지 않으며 `sling:resourceSuperType` 속성을 사용하여 연결을 만듭니다.
 >
-그러나 Cloud Service의 가장 좋은 방법은 `/apps`;에 사용자 지정을 정의하는 것이므로 오버라이드는 종종 `/apps`에 정의됩니다.이것은 `/libs` 아래의 항목을 변경할 수 없기 때문입니다.
+>그러나 Cloud Service의 가장 좋은 방법은 `/apps`;에 사용자 지정을 정의하는 것이므로 오버라이드는 종종 `/apps`에 정의됩니다.이것은 `/libs` 아래의 항목을 변경할 수 없기 때문입니다.
 
 ### 속성 {#properties}
 
@@ -81,7 +79,7 @@ AEM에서 Sling 리소스 합병을 사용하는 목표는 다음과 같습니�
 
 이러한 속성은 오버레이/override(종종 `/apps`에 있음)에 해당/원래 리소스/속성(`/libs`에서)이 사용되는 방식에 영향을 줍니다.
 
-### {#creating-the-structure} 구조 만들기
+### 구조 만들기{#creating-the-structure}
 
 오버레이 또는 오버라이드를 만들려면 대상(일반적으로 `/apps`) 아래에 동일한 구조로 원래 노드를 다시 만들어야 합니다. 예:
 
@@ -217,7 +215,7 @@ AEM에서 Sling 리소스 합병을 사용하는 목표는 다음과 같습니�
          * 유형: `String`
          * 정렬 단추: `<before-SiblingName>`
 
-### 코드 {#invoking-the-sling-resource-merger-from-your-code}에서 Sling 리소스 합병 호출
+### 코드에서 Sling 리소스 합병 호출 {#invoking-the-sling-resource-merger-from-your-code}
 
 Sling 리소스 합병에는 2개의 사용자 지정 리소스 공급자(오버레이용 공급자 및 오버라이드에 대한 사용자 지정 리소스 공급자)가 포함됩니다. 마운트 지점을 사용하여 코드 내에서 각 코드를 호출할 수 있습니다.
 

@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# AEM에서 클라이언트측 라이브러리를 Cloud Service {#using-client-side-libraries}으로 사용
+# AEM에서 클라이언트측 라이브러리를 Cloud Service으로 사용 {#using-client-side-libraries}
 
 디지털 경험은 복잡한 JavaScript 및 CSS 코드를 기반으로 하는 클라이언트측 처리에 상당히 의존합니다. AEM 클라이언트측 라이브러리(clientlibs)를 사용하면 이러한 클라이언트측 라이브러리를 저장소 내에서 구성하고 중앙에서 저장할 수 있습니다. AEM 프로젝트 전형의 [프런트 엔드 빌드 프로세스와 결합하여 AEM 프로젝트에 대한 프런트 엔드 코드를 관리하는 것은 간단해집니다.](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/uifrontend.html)
 
@@ -33,7 +33,7 @@ Clientlibs는 AEM에서 CSS 및 Javascript를 전달하기 위한 내장된 솔�
 
 AEM에서는 사이트의 CSS 및 Javascript를 중앙 위치에 있는 단일 파일로 수집하여 모든 리소스 중 하나만 HTML 출력에 포함되도록 합니다. 이렇게 하면 전달의 효율성을 최대화하고 프록시를 통해 이러한 리소스를 저장소에서 중앙 집중식으로 관리할 수 있으므로 액세스를 안전하게 유지할 수 있습니다.
 
-## AEM용 프런트엔드 개발(Cloud Service {#fed-for-aemaacs})
+## AEM용 프런트엔드 개발(Cloud Service) {#fed-for-aemaacs}
 
 모든 JavaScript, CSS 및 기타 프런트 엔드 에셋은 AEM 프로젝트 원형형의 [ui.frontend 모듈에서 유지 관리되어야 합니다.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) 원형의 유연성은 이러한 리소스를 생성 및 관리하기 위해 원하는 최신 웹 툴을 사용할 수 있도록 해줍니다.
 
@@ -117,7 +117,7 @@ AEM에서는 사이트의 CSS 및 Javascript를 중앙 위치에 있는 단일 �
 * j`/etc.clientlibs/myprojects/clientlibs/foo.js`을(를) 통해 clientlib
 * `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`을(를) 통한 정적 이미지
 
-### HTL {#loading-via-htl}을 통해 클라이언트 라이브러리 로드
+### HTL을 통해 클라이언트 라이브러리 로드 {#loading-via-htl}
 
 클라이언트 라이브러리 폴더에 저장되고 관리되면 HTL을 통해 액세스할 수 있습니다.
 
@@ -139,7 +139,7 @@ AEM 게시 인스턴스에는 대부분의 clientlibs가 필요합니다. 즉, �
 
 그러나 작성 환경을 사용자 지정하기 위해 클라이언트 라이브러리가 필요할 수도 있습니다. 예를 들어 대화 상자를 사용자 정의하려면 AEM 제작 인스턴스에 작은 CSS 또는 JS를 배포해야 할 수 있습니다.
 
-### 작성자 {#clientlibs-on-author}에서 클라이언트 라이브러리 관리
+### 작성자에서 클라이언트 라이브러리 관리 {#clientlibs-on-author}
 
 작성자에서 클라이언트 라이브러리를 사용해야 하는 경우, 게시 방식과 동일한 방법을 사용하여 `/apps` 아래에 클라이언트 라이브러리를 만들 수 있지만, 전체 프로젝트를 관리하는 대신 `/apps/.../clientlibs/foo` 아래에 직접 작성할 수 있습니다.
 
@@ -157,7 +157,7 @@ AEM은 클라이언트 라이브러리 폴더를 디버깅하고 테스트하는
 
 이 정보에는 라이브러리 경로 및 유형(CSS 또는 JS), 범주 및 종속성 등의 라이브러리 속성 값이 포함됩니다. 페이지의 다음 표는 각 카테고리와 채널의 라이브러리를 보여줍니다.
 
-### 생성된 출력 {#see-generated-output} 참조
+### 생성된 출력참조 {#see-generated-output}
 
 `dumplibs` 구성 요소에는 `ui:includeClientLib` 태그에 대해 생성된 소스 코드를 표시하는 테스트 선택기가 포함되어 있습니다. 페이지에는 다양한 js, css 및 테마 속성 조합에 대한 코드가 포함되어 있습니다.
 
@@ -187,7 +187,7 @@ AEM의 클라이언트 라이브러리 폴더에서 지원하는 기타 많은 �
 * `dependencies`:이 라이브러리 폴더가 종속된 다른 클라이언트 라이브러리 카테고리 목록입니다. 예를 들어, 2개의 `cq:ClientLibraryFolder` 노드 `F` 및 `G`가 지정된 경우 `F`의 파일에 제대로 기능하기 위해 `G`의 다른 파일이 필요한 경우, `G`의 `categories` 중 적어도 하나가 `F`의 `dependencies`에 있어야 합니다.
 * `embed`:다른 라이브러리의 코드를 포함하는 데 사용됩니다. 노드 `F`에 노드 `G` 및 `H`가 포함된 경우 결과 HTML은 노드 `G` 및 `H`의 컨텐츠의 연결입니다.
 
-### 종속성 {#linking-to-dependencies} 연결
+### 종속성연결 {#linking-to-dependencies}
 
 클라이언트 라이브러리 폴더의 코드가 다른 라이브러리를 참조하는 경우 다른 라이브러리를 종속성으로 식별합니다. 클라이언트 라이브러리 폴더를 참조하는 `ui:includeClientLib` 태그로 인해 HTML 코드가 생성된 라이브러리 파일에 대한 링크 및 종속성을 포함하도록 합니다.
 
@@ -252,7 +252,7 @@ body {
 }
 ```
 
-#### HTML 출력 {#see-embedded-files}에 포함된 파일 참조
+#### HTML 출력에 포함된 파일 참조 {#see-embedded-files}
 
 포함된 코드의 원점을 추적하거나 포함된 클라이언트 라이브러리에서 예상 결과를 산출하는지 확인하려면 런타임에 포함된 파일의 이름을 볼 수 있습니다. 파일 이름을 보려면 웹 페이지의 URL에 `debugClientLibs=true` 매개 변수를 추가합니다. 생성된 라이브러리에는 포함된 코드 대신 `@import` 문이 포함되어 있습니다.
 
@@ -313,14 +313,14 @@ options := ";" option;
 option := name "=" value;
 ```
 
-##### JS {#yui-compressor-for-css-minification-and-gcc-for-js}용 CSS 미니폴리션을 위한 YUI 압축기 및 GCC
+##### JS용 CSS 미니폴리션을 위한 YUI 압축기 및 GCC {#yui-compressor-for-css-minification-and-gcc-for-js}
 
 ```javascript
 cssProcessor: ["default:none", "min:yui"]
 jsProcessor: ["default:none", "min:gcc;compilationLevel=advanced"]
 ```
 
-##### Typescript를 Preprocess로 보낸 다음 GCC에서 {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate} 축소 및 난독화
+##### Typescript를 Preprocess로 보낸 다음 GCC에서축소 및 난독화 {#typescript-to-preprocess-and-then-gcc-to-minify-and-obfuscate}
 
 ```javascript
 jsProcessor: [
@@ -341,7 +341,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 GCC 옵션에 대한 자세한 내용은 [GCC 설명서](https://developers.google.com/closure/compiler/docs/compilation_levels)를 참조하십시오.
 
-#### 시스템 기본 미니표시자 {#set-system-default-minifier} 설정
+#### 시스템 기본 미니표시자설정 {#set-system-default-minifier}
 
 AEM에서 YUI가 기본 미니에이치로 설정됩니다. GCC로 변경하려면 다음 단계를 수행합니다.
 

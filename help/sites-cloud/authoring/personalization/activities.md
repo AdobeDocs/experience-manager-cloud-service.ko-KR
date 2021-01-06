@@ -39,12 +39,10 @@ ht-degree: 93%
 >사용 가능한 활동 유형은 다음 방법으로 결정됩니다.
 >
 >* Adobe Target에 연결하기 위해 AEM 측에 사용된 Adobe Target 임차인(clientcode)에서 `xt_only` 선택 사항이 활성화되면, AEM에서 XT 활동&#x200B;**만** 만들 수 있습니다.
-   >
-   >
-* Adobe Target 임차인(clientcode)에서 `xt_only` 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
 >
+>* Adobe Target 임차인(clientcode)에서 `xt_only` 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
 >
-**추가 참고:** 이  `xt_only` 옵션은 특정 Target 임차인(clientcode)에 적용된 설정이며 Adobe Target에서만 직접 수정할 수 있습니다. 이 선택 사항은 AEM에서 활성하거나 비활성화할 수 없습니다.
+>**추가 참고:** 이  `xt_only` 옵션은 특정 Target 임차인(clientcode)에 적용된 설정이며 Adobe Target에서만 직접 수정할 수 있습니다. 이 선택 사항은 AEM에서 활성하거나 비활성화할 수 없습니다.
 
 >[!CAUTION]
 >

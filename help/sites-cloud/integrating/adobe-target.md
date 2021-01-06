@@ -53,7 +53,6 @@ Target과 통합하려면 다음 작업을 수행합니다.
 >
 >* 3.x는 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)로 구성됩니다.
 >* 4.x는 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성됩니다.
-
 >
 
 
@@ -86,7 +85,6 @@ AEM을 Adobe Target과 Cloud Service으로 통합하려면 Adobe Target, AEM 활
 >* 2,000개 경험
 >* 50개 지표
 >* 세그먼트 50개 보고
-
 >
 
 

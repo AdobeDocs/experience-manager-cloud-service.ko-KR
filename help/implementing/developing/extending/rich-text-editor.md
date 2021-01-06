@@ -74,7 +74,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인](/help/sites
 
 *그림:대화 상자 편집 모드.*
 
-## RTE 플러그인 및 관련 기능 {#aboutplugins} 정보
+## RTE 플러그인 및 관련 기능정보 {#aboutplugins}
 
 이 기능은 다음과 같이 일련의 플러그인을 통해 사용할 수 있습니다.
 
@@ -115,7 +115,7 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인](/help/sites
 >
 >전체 화면 플러그인은 대화 상자에서 지원되지 않습니다. `dialogFullScreen` 설정을 사용하여 전체 화면 모드로 도구 모음을 구성합니다.
 
-## 구성 경로 및 위치 {#understand-the-configuration-paths-and-locations} 이해
+## 구성 경로 및 위치이해 {#understand-the-configuration-paths-and-locations}
 
 [RTE 플러그인](configure-rich-text-editor-plug-ins.md#activateplugin)을 활성화할 때 작성자를 위해 제공하는 [RTE 편집의 모드 및 인터페이스](#editingmodes)에서 구성 세부 사항의 위치를 결정합니다. 위치는 다음과 같습니다.
 
@@ -131,10 +131,8 @@ RTE 인터페이스는 작성 환경을 위한 [반응형 디자인](/help/sites
 >* **이름**: `configPath`
 >* **유형**: `String`
 >* **값**:실제 구성을 포함하는 노드의 경로
-
 >
->
-RTE 구성 노드의 이름을 `config`으로 지정하지 마십시오. 그렇지 않은 경우 RTE 구성은 관리자에게만 적용되고 `content-author` 그룹의 사용자에 대해서는 적용되지 않습니다.
+>RTE 구성 노드의 이름을 `config`으로 지정하지 마십시오. 그렇지 않은 경우 RTE 구성은 관리자에게만 적용되고 `content-author` 그룹의 사용자에 대해서는 적용되지 않습니다.
 
 대화 상자 편집 모드에 적용되는 다음 속성을 구성합니다.
 
@@ -146,7 +144,7 @@ RTE 구성 노드의 이름을 `config`으로 지정하지 마십시오. 그렇�
 
 터치 지원 대화 상자에서 RTE를 사용하는 경우 문제를 방지하려면 `useFixedInlineToolbar` 속성을 `true`으로 설정합니다.
 
-## 플러그인 {#enable-rte-functionalities-by-activating-plug-ins}을(를) 활성화하여 RTE 기능 활성화
+## 플러그인을(를) 활성화하여 RTE 기능 활성화 {#enable-rte-functionalities-by-activating-plug-ins}
 
 RTE 기능은 여러 플러그인을 통해 제공되며 각각 기능 속성이 있습니다. 각 플러그인의 다양한 기능을 활성화하거나 비활성화하도록 기능 속성을 구성할 수 있습니다.
 
@@ -161,12 +159,10 @@ RTE 플러그인의 자세한 구성에 대해서는 [RTE 플러그인 활성화
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
->
-고유한 텍스트 구성 요소를 만들려면 이러한 구성 요소를 편집하는 대신 위의 구성 요소를 복사하십시오.
+>고유한 텍스트 구성 요소를 만들려면 이러한 구성 요소를 편집하는 대신 위의 구성 요소를 복사하십시오.
 
-## RTE 도구 모음 {#dialogfullscreen} 구성
+## RTE 도구 모음구성 {#dialogfullscreen}
 
 [!DNL Experience Manager] 다양한 편집 모드에 대해 리치 텍스트 편집기의 인터페이스를 다르게 구성할 수 있습니다. 기본 설정은 아래에 제공됩니다. 요구 사항에 따라 이러한 기본값을 재정의할 수 있습니다. 작성자에게 제공할 도구 모음 기능만 사용자 정의합니다. 도구 모음 구성을 모두 지정할 필요는 없습니다.
 
@@ -233,7 +229,7 @@ RTE 플러그인의 자세한 구성에 대해서는 [RTE 플러그인 활성화
 
 예를 들어 [텍스트 코어 구성 요소 설명서](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
 
-## 도구 모음 아이콘과 명령 {#iconstoolbar} 간의 매핑을 사용자 정의합니다.
+## 도구 모음 아이콘과 명령간의 매핑을 사용자 정의합니다. {#iconstoolbar}
 
 RTE 도구 모음에 표시된 Coral 아이콘과 사용 가능한 명령 간의 매핑을 사용자 지정할 수 있습니다. Coral 아이콘 외에는 다른 아이콘을 사용할 수 없습니다.
 

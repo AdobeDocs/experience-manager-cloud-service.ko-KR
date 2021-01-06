@@ -31,9 +31,8 @@ ht-degree: 14%
    >[!NOTE]
    >
    >* 정적 표현물은 창의 위쪽 절반에 나타납니다. 동적 표현물은 하단에서 나타납니다. 다이내믹 표현물만 있는 경우 URL을 사용하여 이미지를 표시할 수 있습니다. **[!UICONTROL URL]** 단추는 동적 변환을 선택하는 경우에만 나타납니다. **[!UICONTROL RESS]** 단추는 응답형 이미지 사전 설정을 선택하는 경우에만 나타납니다.
-      >
-      >
-   * 자산의 세부 사항 보기에서 **[!UICONTROL 표현물]**&#x200B;을 선택하면 시스템은 다양한 표현물을 보여줍니다. 표시되는 사전 설정 수를 늘릴 수 있습니다. [표시](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)되는 이미지 사전 설정 수 증가를 참조하십시오.
+   >
+   >* 자산의 세부 사항 보기에서 **[!UICONTROL 표현물]**&#x200B;을 선택하면 시스템은 다양한 표현물을 보여줍니다. 표시되는 사전 설정 수를 늘릴 수 있습니다. [표시](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)되는 이미지 사전 설정 수 증가를 참조하십시오.
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
