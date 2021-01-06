@@ -3,9 +3,9 @@ title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
+source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2704'
 ht-degree: 28%
 
 ---
@@ -105,6 +105,10 @@ ht-degree: 28%
    >작성자가 자산을 가져올 때 원격 배포에서 사용할 수 있는 모든 렌디션을 가져옵니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 트리거되어 더 많은 변환을 만듭니다. 이러한 변환은 로컬 [!DNL Sites] 배포에서만 사용할 수 있으며 원격 DAM 배포에서는 사용할 수 없습니다.
 
 1. [!DNL Sites] 배포를 [!DNL Assets] 배포의 CORS 구성에서 허용된 원본으로 추가합니다. 자세한 내용은 [CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) 이해를 참조하십시오.
+
+구성된 [!DNL Sites] 배포와 [!DNL Assets] 배포 간의 연결을 확인할 수 있습니다.
+
+![구성된 연결된 에셋의 연결 테스트  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
