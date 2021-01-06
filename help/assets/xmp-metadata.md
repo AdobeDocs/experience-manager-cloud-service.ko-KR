@@ -3,9 +3,9 @@ title: XMP 메타데이터
 description: 메타데이터 관리를 위한 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. AEM에서 메타데이터를 생성, 처리 및 교환하기 위한 표준화된 형식으로 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
+source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '899'
 ht-degree: 1%
 
 ---
@@ -72,11 +72,11 @@ XMP에서는 텍스트 언어를 지정하기 위해 텍스트 속성에 `xml:la
 
 ## 표현물로 XMP 원본에 쓰기 {#xmp-writeback-to-renditions}
 
-AEM(Adobe Experience Manager) Assets의 이 XMP 쓰기 되돌리기 기능은 자산 변환에 대한 자산 메타데이터 변경 내용을 복제합니다.
+AEM(Adobe Experience Manager) Assets의 이 XMP 원본에 쓰기 기능은 자산 변환에 대한 자산 메타데이터 변경 내용을 복제합니다.
 
 AEM Assets 내에서 또는 자산을 업로드하는 동안 에셋에 대한 메타데이터를 변경하면 변경 내용이 처음에 CRXDE의 에셋 노드 내에 저장됩니다.
 
-XMP 쓰기 되돌리기 기능은 메타데이터 변경 사항을 자산의 모든 또는 특정 표현물에 전파합니다.
+XMP 쓰기 저장(writeback) 기능은 메타데이터 변경 내용을 자산의 모든 또는 특정 표현물에 전파합니다.
 
 `Classic Leather`라는 제목의 자산의 [!UICONTROL 제목] 속성을 `Nylon`으로 수정하는 시나리오를 생각해 보십시오.
 
@@ -88,39 +88,43 @@ XMP 쓰기 되돌리기 기능은 메타데이터 변경 사항을 자산의 모
 
 그러나 AEM Assets은 자산의 변환에 메타데이터 변경 사항을 자동으로 전파하지 않습니다.
 
-XMP 쓰기 되돌리기 기능을 사용하면 에셋의 모든 또는 특정 표현물에 메타데이터 변경 내용을 적용할 수 있습니다. 하지만 변경 사항은 자산 계층의 메타데이터 노드 아래에 저장되지 않습니다. 대신 이 기능은 변환에 대한 바이너리 파일의 변경 사항을 포함합니다.
+XMP 쓰기 저장(writeback) 기능을 사용하여 자산의 모든 또는 특정 표현물에 메타데이터 변경 내용을 전파할 수 있습니다. 하지만 변경 사항은 자산 계층의 메타데이터 노드 아래에 저장되지 않습니다. 대신 이 기능은 변환에 대한 바이너리 파일의 변경 사항을 포함합니다.
 
-### XMP 다시 쓰기 활성화 {#enable-xmp-writeback}
+<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes.
+### Enable XMP writeback {#enable-xmp-writeback}
 -->
 
-메타데이터 변경 내용을 업로드할 때 자산의 변환에 전파되도록 하려면 Configuration Manager에서 **[!UICONTROL Adobe CQ DAM Rendition Maker]** 구성을 수정합니다.
+<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
 
-1. 구성 관리자를 열려면 `https://[aem_server]:[port]/system/console/configMgr`에 액세스하십시오.
-1. **[!UICONTROL Adobe CQ DAM Rendition Maker]** 구성을 엽니다.
-1. **[!UICONTROL XMP]** 전파 옵션을 선택한 다음 변경 내용을 저장합니다.
+<!-- 
+To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
-### 특정 변환에 대해 XMP 쓰기 되돌리기 사용 {#enable-xmp-writeback-for-specific-renditions}
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
+1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
 
-XMP 쓰기 되돌리기 기능이 일부 변환에 대한 메타데이터 변경 사항을 전파하도록 하려면 DAM 메타데이터 쓰기 뒤로 워크플로우의 [!UICONTROL XMP 쓰기 저장 프로세스] 워크플로우 단계에 이러한 변환을 지정합니다. 기본적으로 이 단계는 원래 변환으로 구성됩니다.
+### Enable XMP write-back for specific renditions {#enable-xmp-writeback-for-specific-renditions}
 
-XMP 쓰기 되돌리기 기능이 변환 축소판 140.100.png 및 319.319.png에 메타데이터를 전파하려면 다음 단계를 수행합니다.
+To let the XMP write-back feature propagate metadata changes to select renditions, specify these renditions to the [!UICONTROL XMP Writeback Process] workflow step of DAM Metadata WriteBack workflow. By default, this step is configured with the original rendition.
 
-1. AEM 로고를 탭/클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;으로 이동합니다.
-1. 모델 페이지에서 **[!UICONTROL DAM 메타데이터 쓰기 저장]** 워크플로우 모델을 엽니다.
-1. **[!UICONTROL DAM 메타데이터 쓰기 저장]** 속성 페이지에서 **[!UICONTROL XMP 쓰기 저장 프로세스]** 단계를 엽니다.
-1. **[!UICONTROL 단계 속성]** 대화 상자에서 **[!UICONTROL 프로세스]** 탭을 탭/클릭합니다.
-1. **[!UICONTROL 인수]** 상자에서 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`를 추가한 다음 **[!UICONTROL 확인]**&#x200B;을 탭/클릭합니다.
+For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
+
+1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
+1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
+1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
+1. In the **[!UICONTROL Arguments]** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, and then tap/click **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. 변경 사항을 저장합니다.
-1. 새 특성을 사용하여 Dynamic Media 이미지에 대한 PTIFF(Pyramid TIFF) 변환을 다시 생성하려면 DAM 메타데이터 쓰기 되돌리기 워크플로에 **[!UICONTROL Dynamic Media 프로세스 이미지 자산]** 단계를 추가하십시오. PTIFF 변환은 Dynamic Media Hybrid 구현에서만 로컬에 만들어지고 저장됩니다.
+1. Save the changes.
+1. To regenerate the Pyramid TIFF (PTIFF) renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata write-back workflow. PTIFF renditions are only created and stored locally in a Dynamic Media Hybrid implementation.
 
-1. 워크플로우를 저장합니다.
+1. Save the workflow.
 
-메타데이터 변경 사항은 에셋의 변환 축소판.140.100.png 및 thumbnail.319.319.png로 전파되며 다른 사항은 전파되지 않습니다.
+The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
+-->
 
 >[!MORELIKETHIS]
 >
