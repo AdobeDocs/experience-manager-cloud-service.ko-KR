@@ -2,9 +2,9 @@
 title: 소개 - 사용자 정의 도메인 이름
 description: 소개 - 사용자 정의 도메인 이름
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 677a5d65bb15c9579f19b0b4e8ef03d1201e4a94
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 소개 {#introduction}
 
-Cloud Manager를 사용하면 UI를 통해 셀프 서비스 방식으로 고유한 브랜드 이름으로 사이트를 식별하는 사용자 정의 도메인을 추가할 수 있습니다. AEMaaCS가 `*.adobeaemcloud.com`으로 끝나는 기본 도메인 이름으로 제공됩니다. 사용자 지정 도메인 이름을 웹 사이트에 첨부한 후에도 이 기본 도메인 이름은 유지됩니다
+Cloud Manager를 사용하면 UI를 통해 셀프 서비스 방식으로 고유한 브랜드 이름으로 사이트를 식별하는 사용자 정의 도메인을 추가할 수 있습니다. Cloud Service으로 Adobe Experience Manager이 제공된 경우 기본 도메인 이름이 `*.adobeaemcloud.com`으로 끝납니다. 이 기본 도메인 이름은 사용자 정의 도메인 이름을 웹 사이트에 첨부한 후에도 그대로 유지됩니다.
 
 >[!NOTE]
 >사용자 지정 도메인 이름은 Cloud Manager for Sites 프로그램(게시 서비스)에서만 지원됩니다. 각 Cloud Manager 환경에서는 환경당 최대 100개의 사용자 지정 도메인을 호스팅할 수 있습니다.
