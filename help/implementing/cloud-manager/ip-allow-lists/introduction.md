@@ -1,10 +1,10 @@
 ---
-title: 소개 - Could Manager의 IP 허용 목록
-description: 소개 - Could Manager의 IP 허용 목록
+title: 소개 - Cloud Manager의 IP 허용 목록
+description: 소개 - Cloud Manager의 IP 허용 목록
 translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
