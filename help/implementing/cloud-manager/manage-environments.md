@@ -2,10 +2,10 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
+source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -168,7 +168,7 @@ Adobe Experience Manager에 로컬로 로그인하려면 **환경** 카드의 �
 IP 허용 목록 적용은 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자 또는 게시 서비스와 연결된 프로세스입니다. IP 허용 목록을 적용하려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
 
 >[!NOTE]
->IP 허용 목록을 환경 서비스에 적용하려면 Cloud Manager에 있어야 합니다. Cloud Manager의 IP 허용 목록에 대한 자세한 내용은 Could Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)의 [IP 허용 목록 소개으로 이동합니다.
+>IP 허용 목록을 환경 서비스에 적용하려면 Cloud Manager에 있어야 합니다. Cloud Manager의 IP 허용 목록에 대한 자세한 내용은 Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)의 [IP 허용 목록 소개으로 이동합니다.
 
 IP 허용 목록을 적용하려면 아래 단계를 따르십시오.
 
