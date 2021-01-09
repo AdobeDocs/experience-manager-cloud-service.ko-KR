@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 66%
+source-wordcount: '1915'
+ht-degree: 64%
 
 ---
 
@@ -257,12 +257,6 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 ### UI 동작 {#ui-behavior}
 
 사용자는 컨텐츠 전송 도구에 대한 UI(사용자 인터페이스)에서 다음과 같은 동작 변경 사항을 볼 수 있습니다.
-
-* 사용자는 작성자 URL(개발/스테이지/프로덕션)에 대한 마이그레이션 세트를 만들고 추출 및 수집을 성공적으로 수행합니다.
-
-* 그런 다음 동일한 작성자 URL에 대한 새 마이그레이션 세트를 만들고 새 마이그레이션 세트에 대해 추출 및 수집을 수행합니다. UI에 첫 번째 마이그레이션 세트의 수집 상태가 **실패**&#x200B;로 변경되고 로그를 사용할 수 없다고 표시됩니다.
-
-* 이는 첫 번째 마이그레이션 세트에 대한 수집이 실패했음을 의미하지 않습니다. 이 동작은 새로운 수집 작업이 시작되면 이전 수집 작업이 삭제되기 때문에 표시되는 것입니다. 따라서 첫 번째 마이그레이션 세트의 변경 상태는 무시해도 됩니다.
 
 * 컨텐츠 전송 도구 UI의 아이콘이 이 안내서에 표시된 스크린샷과 다르거나 소스 AEM 인스턴스의 버전에 따라 전혀 표시되지 않을 수 있습니다.
 
