@@ -2,9 +2,9 @@
 title: 사용자 지정 도메인 이름 추가
 description: 사용자 지정 도메인 이름 추가
 translation-type: tm+mt
-source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
+source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 ## 중요 고려 사항 {#important-considerations}
 
 * 사용자 정의 도메인 이름을 추가하기 전에 사용자 정의 도메인 이름을 포함하는 유효한 SSL 인증서를 프로그램에 설치해야 합니다. 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
+
+* 현재 실행 중인 파이프라인이 해당 환경에 연결된 경우 도메인 이름을 환경에 추가할 수 없습니다.
 
 * 한 번에 하나의 도메인 이름만 추가할 수 있습니다. 하지만 도메인은 와일드카드를 포함할 수 없습니다. 작성자 측의 사용자 지정 도메인은 지원되지 않습니다.
 
