@@ -2,7 +2,7 @@
 title: 사용자 지정 도메인 이름 추가
 description: 사용자 지정 도메인 이름 추가
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ ht-degree: 0%
 1. 드롭다운에서 **도메인 SSL 인증서**&#x200B;를 선택하고 **계속**&#x200B;을 선택합니다.
 
 1. **도메인 이름 추가** 대화 상자가 나타납니다. 그러면 [환경에 대한 도메인 이름 확인] 화면이 표시됩니다. 자세한 내용은 [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)를 참조하십시오.
-제공된 지침에 따라 환경에 대한 도메인 소유권을 증명하십시오.
+
+   제공된 지침에 따라 환경에 대한 도메인 소유권을 증명하십시오.
 
 1. **만들기**&#x200B;를 클릭합니다.
 1. CDN 배포에는 유효한 SSL 인증서와 성공적인 TXT 확인이 필요합니다. 이것은 **확인됨 및 배포됨** 상태로 표시됩니다.
