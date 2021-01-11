@@ -3,7 +3,7 @@ title: 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 자산 마이크로 서비스를 구성 및 사용하여 자산을 규모에 맞게 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Experience Manager에서는 다음 수준의 처리를 허용합니다.
 
 ### 표준 프로필 {#create-standard-profile} 만들기
 
-표준 처리 프로파일을 만들려면 다음 단계를 수행합니다.
+표준 처리 프로필을 만들려면 다음 단계를 수행합니다.
 
 1. 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**&#x200B;에 액세스합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 폴더에 적용할 때 프로파일을 고유하게 식별하는 데 도움이 되는 이름을 제공합니다.
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 이미지, 비디오, 문서 및 기타 파일 형식을 축소판, 추출된 텍스트 및 메타데이터, 보관 파일 등 다양한 변환으로 변환할 수 있습니다.
 
-개발자는 [!DNL Asset Compute Service]을 사용하여 지원되는 사용 사례를 처리하는 사용자 정의 응용 프로그램](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)을 만들 수 있습니다. [ [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 응용 프로그램을 호출할 수 있습니다. [!DNL Asset Compute Service] 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
+개발자는 [!DNL Asset Compute Service]을 사용하여 지원되는 사용 사례에 대해 사용자 정의 응용 프로그램](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)을 만들 수 있습니다. [ [!DNL Experience Manager] 관리자가 구성하는 사용자 지정 프로필을 사용하여 사용자 인터페이스에서 이러한 사용자 지정 응용 프로그램을 호출할 수 있습니다. [!DNL Asset Compute Service] 외부 서비스를 호출하는 다음 사용 사례를 지원합니다.
 
 * [!DNL Adobe Photoshop]의 [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout)를 사용하고 결과를 변환으로 저장합니다.
 * PIM 시스템 등 데이터를 업데이트하려면 제3자 시스템에 문의하십시오.
@@ -123,7 +123,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 사용자 지정 프로필을 만들려면 다음 단계를 수행합니다.
 
-1. 관리자는 **[!UICONTROL 도구 > 자산 > 처리 프로필]**&#x200B;에 액세스합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**&#x200B;에 액세스합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 사용자 지정]** 탭을 클릭합니다. **[!UICONTROL 새로 추가]**&#x200B;를 클릭합니다. 변환의 원하는 파일 이름을 입력합니다.
 1. 다음 정보를 제공합니다.
 
@@ -145,6 +145,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 사용자 지정 프로필의 사용을 설명하기 위해 캠페인 이미지에 일부 사용자 지정 텍스트를 적용하는 사용 사례를 생각해 보겠습니다. Photoshop API를 활용하여 이미지를 편집하는 처리 프로필을 만들 수 있습니다.
 
 asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서비스 매개 변수] 필드를 사용하여 이러한 매개 변수를 사용자 정의 응용 프로그램에 전달할 수 있습니다. 그런 다음 사용자 지정 응용 프로그램은 Photoshop API를 호출하고 이러한 값을 API에 전달합니다. 예를 들어 글꼴 이름, 텍스트 색상, 텍스트 두께 및 텍스트 크기를 전달하여 캠페인 이미지에 사용자 정의 텍스트를 추가할 수 있습니다.
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
