@@ -2,9 +2,9 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -44,17 +44,13 @@ ht-degree: 1%
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -97,7 +93,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -190,23 +186,23 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 업로드 시 자산 처리 {#process-when-uploaded}
 
-업로드된 자산에 대한 추가 처리를 수행하려면 업로드 폴더에 처리 프로필을 적용할 수 있습니다. 프로필은 [!DNL Assets]에 있는 폴더의 **[!UICONTROL 속성]** 페이지에서 사용할 수 있습니다.
+업로드된 자산에 대한 추가 처리를 수행하려면 업로드 폴더에 처리 프로필을 적용할 수 있습니다. 프로필은 [!DNL Assets]에 있는 폴더의 **[!UICONTROL 속성]** 페이지에서 사용할 수 있습니다. 확장자가 없거나 확장이 잘못된 디지털 자산은 원하는 대로 처리되지 않습니다. 예를 들어, 이러한 자산을 업로드할 때 아무런 반응이 없거나 잘못된 처리 프로필이 자산에 적용될 수 있습니다. 사용자는 DAM에 이진 파일을 저장할 수 있습니다.
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![처리 프로필을 추가하는 옵션이 있는 자산 폴더의 속성](assets/assets-folder-properties.png)
 
 다음 탭을 사용할 수 있습니다.
 
-* [메타데이터 ](metadata-profiles.md) 프로필을 사용하면 해당 폴더에 업로드된 자산에 기본 메타데이터 속성을 적용할 수 있습니다
+* [메타데이터 ](metadata-profiles.md) 프로필을 사용하면 해당 폴더에 업로드된 자산에 기본 메타데이터 속성을 적용할 수 있습니다.
 * [처리 ](asset-microservices-configure-and-use.md) 프로필을 사용하여 기본적으로 가능한 것보다 많은 변환을 생성할 수 있습니다.
 
 또한 배포에서 [!DNL Dynamic Media]이(가) 활성화된 경우 다음 탭을 사용할 수 있습니다.
 
-* [Dynamic Media 이미지 ](dynamic-media/image-profiles.md) 프로필을 사용하면 특정 자르기(**[!UICONTROL 스마트 자르기]** 및 픽셀 자르기) 및 선명하게 하기 구성을 업로드된 자산에 적용할 수 있습니다.
-* [Dynamic Media 비디오 ](dynamic-media/video-profiles.md) 프로필을 사용하면 특정 비디오 인코딩 프로필(해상도, 형식, 매개 변수)을 적용할 수 있습니다.
+* [[!DNL Dynamic Media] 이미지 ](dynamic-media/image-profiles.md) 프로필을 사용하면 특정 자르기(**[!UICONTROL 스마트 자르기]** 및 픽셀 자르기)와 선명하게 하기 구성을 업로드된 자산에 적용할 수 있습니다.
+* [[!DNL Dynamic Media] 비디오 ](dynamic-media/video-profiles.md) 프로필을 사용하면 특정 비디오 인코딩 프로필(해상도, 형식, 매개 변수)을 적용할 수 있습니다.
 
 >[!NOTE]
 >
->자산에 대한 Dynamic Media 자르기 및 기타 작업은 파괴적이지 않습니다. 즉, 업로드된 원본이 변경되지 않고 자산 전달 시 수행할 자르기 또는 미디어 변형을 위한 매개 변수를 제공하는 것입니다
+>[!DNL Dynamic Media] 자산에서 자르기 및 기타 작업은 원본을 훼손하지 않습니다. 즉, 작업이 업로드된 원본을 변경하지 않습니다. 대신 에셋을 전달할 때 자르거나 변형할 매개 변수를 제공합니다.
 
 처리 프로필이 할당된 폴더의 경우 카드 보기의 축소판에 프로필 이름이 나타납니다. 목록 보기에서 프로필 이름이 **[!UICONTROL 처리 프로필]** 열에 나타납니다.
 
