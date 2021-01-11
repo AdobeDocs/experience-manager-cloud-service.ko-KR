@@ -3,7 +3,7 @@ title: ' [!DNL Assets]에서  [!DNL Adobe Stock] 자산을 관리합니다.'
 description: ' [!DNL Adobe Experience Manager] 내에서  [!DNL Adobe Stock] 자산을 검색, 가져오기, 라이센스 부여 및 관리합니다. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 3%
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[!DNL Adobe Stock] 구성이 여러 개 있는 경우 [사용자 환경 설정] 패널에서 원하는 구성을 선택합니다. Experience Manager 홈 페이지에서 패널에 액세스하려면 사용자 아이콘을 클릭한 다음 **[!UICONTROL 사용자 환경 설정]** > **[!UICONTROL Stock 구성]**)을 클릭합니다.
+>[!DNL Adobe Stock] 구성이 여러 개 있는 경우 [사용자 환경 설정] 패널에서 원하는 구성을 선택합니다. Experience Manager 홈 페이지에서 패널에 액세스하려면 사용자 아이콘을 클릭한 다음 **[!UICONTROL 사용자 환경 설정]** > **[!UICONTROL Stock 구성]**&#x200B;을 클릭합니다.
 
 ## [!DNL Experience Manager] {#usemanage}에서 [!DNL Adobe Stock] 에셋 사용 및 관리
 
