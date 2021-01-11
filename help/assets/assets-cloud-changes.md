@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager Assets의 주목할 만한 변경 사항( [!DNL Cloud Service])
-description: Adobe Experience Manager 6.5와 비교하여 Experience Manager [!DNL Cloud Service] 의 Adobe Experience Manager 자산에 대한 주목할 만한 변경 사항.
+title: ' [!DNL Adobe Experience Manager Assets] 에  [!DNL Cloud Service]의 주목할 만한 변경 사항'
+description: '[!DNL Adobe Experience Manager 6.5와 비교하여  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 에 대한 주목할 만한 변경 사항.'
 translation-type: tm+mt
-source-git-commit: 0838f384b31c59fe95087e1a71741656eedcd13b
+source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '605'
 ht-degree: 3%
 
 ---
 
 
-# Experience Manager 자산에 대한 주목할 만한 변경 사항(예: [!DNL Cloud Service] {#notable-changes})
+# [!DNL Experience Manager Assets] [!DNL Cloud Service](으)로 주목할 만한 변경 사항{#notable-changes}
 
-Adobe Experience Manager은 [!DNL Cloud Service]으로 Experience Manager 프로젝트를 관리할 수 있는 새로운 기능과 여러 가지 기능을 제공합니다. [!DNL Experience Manager]과(와) [!DNL Cloud Service]의 비교할 때 온-프레미스 또는 Adobe 관리 서비스로 호스팅되는 Experience Manager 자산 간에는 많은 차이가 있습니다. 이 문서에서는 [!DNL Assets] 기능에 대한 중요한 차이점을 설명합니다.
+[!DNL Adobe Experience Manager] as a는  [!DNL Cloud Service] Experience Manager 프로젝트를 관리할 수 있는 새로운 기능과 다양한 기능을 제공합니다. [!DNL Experience Manager Assets]과 [!DNL Experience Manager]의 비교할 때 온프레미스 또는 Adobe 관리 서비스로 호스팅되는 데는 많은 차이가 있습니다. [!DNL Cloud Service] 이 문서에서는 [!DNL Assets] 기능에 대한 중요한 차이점을 설명합니다.
 
 [Experience Manager] 6.5와 비교할 때의 주요 차이점은 다음 영역에 있습니다.
 
@@ -22,16 +22,17 @@ Adobe Experience Manager은 [!DNL Cloud Service]으로 Experience Manager 프로
 
 ## 자산 수집 및 처리 {#asset-ingestion}
 
-자산 업로드는 자산 수집에 대한 크기 조정, 업로드 시간 단축, 마이크로 서비스를 사용한 처리 시간 단축, 일괄 처리 등의 작업을 원활히 수행할 수 있도록 함으로써 효율성을 위해 최적화되었습니다. 제품 기능(웹 사용자 인터페이스, 데스크탑 클라이언트)이 업데이트되었습니다. 그러나 이는 일부 기존 사용자 정의에 영향을 줄 수 있습니다.
+자산 업로드는 통합 크기 조정, 업로드 시간 단축, 마이크로 서비스를 사용한 처리 시간 단축, 일괄 처리 등의 작업을 효율적으로 수행할 수 있도록 최적화되어 있습니다. 제품 기능(웹 사용자 인터페이스, 데스크탑 클라이언트)이 업데이트됩니다. 또한 기존 사용자 지정 사항에도 영향을 줄 수 있습니다.
 
-* Experience Manager은 자산 처리를 위해 업로드 및 다운로드 및 자산 마이크로서비스에 직접 이진 액세스 원칙을 사용합니다. 자산 통합](/help/assets/asset-microservices-overview.md)에 대한 [개요를 참조하십시오.
+* [!DNL Experience Manager] 직접 이진 액세스 원칙을 사용하여 자산을 업로드 및 다운로드하고 자산 마이크로 서비스를 사용하여 자산을 처리합니다. [마이크로서비스 개요](/help/assets/asset-microservices-overview.md)를 참조하십시오.
    * 자산 업로드 [에 직접 이진 액세스](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)가 있습니다.
    * 자세한 내용은 [직접 이진 업로드 프로토콜 및 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오.
    * 기본 CRUD 작업에 사용할 수 있는 API 메서드를 비교하려면 [API 및 자산 작업](/help/assets/developer-reference-material-apis.md#use-cases-and-apis)을 참조하십시오.
 * 이전 버전의 기본 워크플로우 **[!UICONTROL DAM 자산 업데이트]**&#x200B;는 이제 사용할 수 없습니다. [!DNL Experience Manager] 대신 에셋 마이크로서비스는 대부분의 기본 에셋 처리(변환, 메타데이터 추출 및 색인화를 위한 텍스트 추출)를 포괄하는 확장 가능하고 쉽게 사용할 수 있는 서비스를 제공합니다.
    * [자산 마이크로서비스 구성 및 사용](/help/assets/asset-microservices-configure-and-use.md) 참조
    * 처리에서 사용자 지정된 워크플로우 단계를 수행하려면 [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용할 수 있습니다.
-* 패키지 관리자를 통해 들어오는 자산은 자산 인터페이스에서 **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동 재처리가 필요합니다.
+* 패키지 관리자를 사용하여 업로드한 자산은 [!DNL Assets] 인터페이스에서 **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동 재처리가 필요합니다.
+* 확장자가 없거나 확장이 잘못된 디지털 자산은 원하는 대로 처리되지 않습니다. 예를 들어, 이러한 자산을 업로드할 때 아무런 반응이 없거나 잘못된 처리 프로필이 자산에 적용될 수 있습니다. 사용자는 DAM에 이진 파일을 저장할 수 있습니다.
 
 자산 마이크로서비스로 생성된 표준 변환은 자산 저장소 노드(동일한 이름 지정 규칙)에서 역호환이 가능한 방식으로 저장됩니다.
 
