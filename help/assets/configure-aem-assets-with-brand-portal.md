@@ -3,7 +3,7 @@ title: 브랜드 포털에서 AEM Assets을  [!DNL Cloud Service] 으로 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 32%
@@ -71,7 +71,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
    ![인증서 만들기](assets/ims-config2.png)
 
-1. **[!UICONTROL 공개 키 다운로드]** 아이콘을 클릭하고 컴퓨터에 공개 키(.crt) 파일을 저장합니다.
+1. **[!UICONTROL 공개 키 다운로드]** 아이콘을 클릭하고 컴퓨터에 공개 키(CRT) 파일을 저장합니다.
 
    공개 키는 나중에 브랜드 포털 테넌트에 대한 API를 구성하고 Adobe 개발자 콘솔에서 서비스 계정 자격 증명을 생성하는 데 사용됩니다.
 
