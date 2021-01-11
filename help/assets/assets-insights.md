@@ -3,7 +3,7 @@ title: 자산 통찰력
 description: 자산 인사이트 기능을 사용하여 제3자 웹사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적할 수 있는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 1%
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
-1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
