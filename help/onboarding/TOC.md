@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: da1ca193b38657f78ff3e5e0cfffef0ab9e8a9a0
+source-git-commit: 064ef219702e45695413dad21388b513627a3cf5
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 60%
+source-wordcount: '379'
+ht-degree: 61%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 60%
    + [사용자 및 역할 추가](what-is-required/add-users-roles.md)
    + [역할 기반 권한](what-is-required/role-based-permissions.md)
    + [소스 코드 저장소](what-is-required/source-code-repository.md)
++ 전환 여정 단계 {#phases}
+   + [계획](/help/move-to-cloud-service/planning.md)
+   + [실행](/help/move-to-cloud-service/execution.md)
+   + [Go-live 후](/help/move-to-cloud-service/post-go-live.md)
 + 클라우드에서 AEM에 액세스 {#getting-access}
    + [Experience Manager as a Cloud Service 액세스](getting-access-to-aem-in-cloud/navigation.md)
    + 클라우드 서비스 프로그램 {#cloud-service-programs}
