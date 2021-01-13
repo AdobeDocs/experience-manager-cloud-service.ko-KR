@@ -2,9 +2,9 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 가이드
 translation-type: tm+mt
-source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
+source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -315,6 +315,39 @@ AEM 내의 구성 요소는 **리소스 유형 계층**&#x200B;의 적용을 받
    * `cq:listeners` (노드 유형  `cq:EditListenersConfig`):구성 요소에서 작업이 발생하기 전이나 후에 수행되는 작업을 정의합니다.
 
 AEM에는 기존 구성이 많습니다. **CRXDE Lite**&#x200B;에서 쿼리 도구를 사용하여 특정 속성 또는 하위 노드를 쉽게 검색할 수 있습니다.
+
+### 구성 요소 자리 표시자 {#component-placeholders}
+
+구성 요소에 컨텐츠가 없는 경우에도 구성 요소는 항상 작성자가 볼 수 있는 일부 HTML을 렌더링해야 합니다. 그렇지 않으면 편집기의 인터페이스에서 시각적으로 사라져서 기술적으로 표시되지만 페이지 및 편집기에는 표시되지 않을 수 있습니다. 이 경우 작성자는 빈 구성 요소를 선택하고 상호 작용할 수 없습니다.
+
+이러한 이유로, 페이지가 페이지 편집기에서 렌더링될 때(WCM 모드가 `edit` 또는 `preview`인 경우) 구성 요소는 표시되는 출력을 렌더링하지 않는 한 자리 표시자를 렌더링해야 합니다.
+자리 표시자에 대한 일반적인 HTML 마크업은 다음과 같습니다.
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+위의 자리 표시자 HTML을 렌더링하는 일반적인 HTL 스크립트는 다음과 같습니다.
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+이전 예에서 `isEmpty`은 구성 요소에 컨텐츠가 없고 작성자에게 표시되지 않을 때만 true인 변수입니다.
+
+반복을 방지하기 위해 Adobe에서는 구성 요소 구현자가 코어 구성 요소에서 제공하는 템플릿과 마찬가지로 [이 자리 표시자에 대해 HTL 템플릿을 사용하는 것이 좋습니다.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+그런 다음 이전 링크의 템플릿 사용은 다음 HTL 행으로 수행됩니다.
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+이전 예에서 `model.text`은 컨텐츠에 컨텐츠가 있고 볼 수 있을 때만 true인 변수입니다.
+
+이 템플릿의 사용 예는 제목 구성 요소와 같이 핵심 구성 요소인 [에서 볼 수 있습니다.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### cq:EditConfig 하위 노드를 사용하여 구성 {#configuring-with-cq-editconfig-child-nodes}
 
