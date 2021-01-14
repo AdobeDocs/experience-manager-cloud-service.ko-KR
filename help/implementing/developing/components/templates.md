@@ -2,17 +2,17 @@
 title: 페이지 템플릿
 description: 페이지 템플릿은 새 페이지의 기초로 사용할 페이지를 만들 때 사용됩니다
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 8%
+source-wordcount: '3296'
+ht-degree: 7%
 
 ---
 
 
 # 페이지 템플릿 {#page-templates}
 
-페이지를 만들 때 템플릿을 선택해야 합니다. 페이지 템플릿은 새 페이지의 기초로 사용됩니다. 템플릿은 결과 페이지의 구조, 초기 컨텐츠 및 사용할 수 있는 구성 요소(디자인 속성)를 정의합니다. 다음과 같은 몇 가지 이점을 제공합니다.
+페이지를 만들 때 템플릿을 선택해야 합니다. 페이지 템플릿은 새 페이지의 기초로 사용됩니다. 템플릿은 결과 페이지의 구조, 초기 컨텐츠 및 사용할 수 있는 구성 요소(디자인 속성)를 정의합니다. 다음과 같은 이점이 있습니다.
 
 * 페이지 템플릿을 사용하면 전문 작성자가 [템플릿을 만들고 편집할 수 있습니다](/help/sites-cloud/authoring/features/templates.md).
    * 이러한 전문 작성자를 **템플릿 작성자**&#x200B;라고 합니다.
@@ -61,7 +61,7 @@ ht-degree: 8%
 
    템플릿 작성자가 구조를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author)를 참조하십시오.
 
-   구조에 대한 기술 세부 정보는 이 문서의 [구조](#structure)를 참조하십시오.
+   구조에 대한 기술적인 자세한 내용은 이 문서의 [구조](#structure)를 참조하십시오.
 
    **정책**
 
@@ -72,7 +72,7 @@ ht-degree: 8%
 
    템플릿 작성자가 정책을 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author)를 참조하십시오.
 
-   정책 기술 세부 정보는 이 문서의 [콘텐츠 정책](#content-policies)을 참조하십시오.
+   정책에 대한 기술적인 자세한 내용은 이 문서의 [콘텐츠 정책](#content-policies)을 참조하십시오.
 
    **초기 컨텐츠**
 
@@ -99,7 +99,7 @@ ht-degree: 8%
 
    템플릿 작성자가 템플릿을 활성화하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author)를 참조하십시오.
 
-   템플릿 활성화에 대한 기술적인 설명은 이 문서의 [Adobe](#enabling-and-allowing-a-template-for-use)e용 템플릿 활성화 및 허용을 참조하십시오.
+   템플릿 활성화에 대한 자세한 내용은 이 문서의 [Adobe](#enabling-and-allowing-a-template-for-use)에 대한 템플릿 활성화 및 허용을 참조하십시오.
 
 1. 컨텐츠 페이지를 만드는 데 사용합니다.
 
@@ -110,6 +110,16 @@ ht-degree: 8%
 
    편집 가능한 템플릿으로 페이지를 만드는 방법에 대한 자세한 내용은 이 문서의 [결과 컨텐트 페이지](#resultant-content-pages)를 참조하십시오.
 
+>[!TIP]
+>
+>국제화해야 하는 정보는 템플릿에 입력하지 마십시오. 내부화를 위해 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 [현지화 기능이 권장됩니다.
+
+>[!NOTE]
+>
+>템플릿은 페이지 작성 워크플로우를 간소화하기 위한 강력한 도구입니다. 그러나 너무 많은 템플릿이 작성자를 압도하고 페이지 생성을 혼동시킬 수 있습니다. 템플릿의 수를 100개 미만으로 유지하는 것이 효과적인 경험입니다.
+>
+>잠재적인 성능 영향 때문에 Adobe에서는 1,000개 이상의 템플릿을 사용하는 것이 권장되지 않습니다.
+
 >[!NOTE]
 >
 >편집기 클라이언트 라이브러리는 컨텐츠 페이지에 `cq.shared` 네임스페이스가 있다고 가정하고, 없는 경우 JavaScript 오류 `Uncaught TypeError: Cannot read property 'shared' of undefined`이(가) 발생합니다.
@@ -118,9 +128,7 @@ ht-degree: 8%
 >
 >자세한 내용은 [클라이언트측 라이브러리 사용](/help/implementing/developing/introduction/clientlibs.md)을 참조하십시오.
 
->[!CAUTION]
->
->국제화해야 하는 정보는 템플릿에 입력하지 마십시오.
+
 
 ## 템플릿 폴더 {#template-folders}
 
@@ -581,7 +589,7 @@ On the
 >
 예를 보려면 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 내용을 참조하십시오.`/content/wknd/jcr:content`
 >
->속성 `allowedPaths`, `allowedParents` 및 `allowedChildren`도 템플릿에 배치하여 보다 정교한 규칙을 정의할 수 있습니다. 그러나 가능한 경우, 허용되는 템플릿을 추가로 제한할 필요가 있는 경우 사이트의 하위 섹션에서 *속성을 더 정의하는 것이 훨씬 간단합니다.*`cq:allowedTemplates`
+>속성 `allowedPaths`, `allowedParents` 및 `allowedChildren`도 템플릿에 배치하여 보다 정교한 규칙을 정의할 수 있습니다. 그러나 가능한 경우, 허용되는 템플릿을 추가로 제한할 필요가 있는 경우 사이트의 하위 섹션에서 `cq:allowedTemplates` 속성을 더 정의하는 것이 훨씬 간단합니다.**
 >
 >또 다른 이점은 **페이지 속성**&#x200B;의 **고급** 탭에서 작성자가 `cq:allowedTemplates` 속성을 업데이트할 수 있다는 것입니다. 다른 템플릿 속성은 (표준) UI를 사용하여 업데이트할 수 없으므로 변경 사항에 대한 규칙과 코드 배포를 유지하기 위해 개발자가 필요합니다.
 
