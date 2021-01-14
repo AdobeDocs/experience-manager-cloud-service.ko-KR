@@ -2,7 +2,7 @@
 title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.1.0
 description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.1.0
 translation-type: tm+mt
-source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
+source-git-commit: 05f539c41ea3caa0f754c0cdced4c795f8b6afb9
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
