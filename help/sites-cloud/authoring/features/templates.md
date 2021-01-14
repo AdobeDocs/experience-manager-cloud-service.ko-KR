@@ -2,10 +2,10 @@
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 98%
+source-wordcount: '4600'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 98%
 >
 >**허용된 템플릿**&#x200B;은 주로 웹 사이트가 처음 설정될 때 미리 정의됩니다.
 
->[!CAUTION]
+>[!TIP]
 >
 >국제화해야 하는 정보는 템플릿에 입력하지 마십시오. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -127,6 +127,12 @@ ht-degree: 98%
    >
    >새 템플릿이 작성되면 콘솔에서 **초안**&#x200B;으로 표시되어 페이지 작성자가 아직 사용할 수 없음을 나타냅니다.
 
+>[!NOTE]
+>
+>템플릿은 페이지 작성 워크플로우를 간소화하기 위한 강력한 도구입니다. 그러나 너무 많은 템플릿이 작성자를 압도하고 페이지 생성을 혼동시킬 수 있습니다. 템플릿의 수를 100개 미만으로 유지하는 것이 효과적인 경험입니다.
+>
+>잠재적인 성능 영향 때문에 Adobe에서는 1,000개 이상의 템플릿을 사용하는 것이 권장되지 않습니다.
+
 ### 템플릿 속성 정의 - 템플릿 작성자 {#defining-template-properties-template-author}
 
 템플릿에는 다음 속성을 지정할 수 있습니다.
@@ -162,7 +168,7 @@ ht-degree: 98%
    * 결과가 만족스럽지 못할 경우 **지우기**&#x200B;를 클릭하거나 탭하여 다른 이미지를 업로드하거나 썸네일을 다시 생성하십시오.
 1. 썸네일이 만족스러우면 **저장 및 닫기**&#x200B;를 클릭하거나 탭합니다.
 
-### 템플릿 활성화 및 허용 - 템플릿 작성자  {#enabling-and-allowing-a-template-template-author}
+### 템플릿 활성화 및 허용 - 템플릿 작성자 {#enabling-and-allowing-a-template-template-author}
 
 페이지를 작성할 때 템플릿을 사용하려면 다음을 수행해야 합니다.
 
