@@ -2,7 +2,7 @@
 title: 변형 - 조각 컨텐츠 작성
 description: 변형을 사용하면 조각에 대한 컨텐츠를 작성한 다음 목적에 따라 해당 컨텐츠의 변형을 만들 수 있습니다(필요한 경우).
 translation-type: tm+mt
-source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 87%
@@ -11,16 +11,6 @@ ht-degree: 87%
 
 
 # 변형 - 조각 컨텐츠 작성{#variations-authoring-fragment-content}
-
-<!--
->[!CAUTION]
->
->Certain features for Content Fragments will be released in early 2021.
->
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
 
 [변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)을 사용하면 특정 채널 및/또는 시나리오에서 사용할 마스터 컨텐츠의 사본을 만들고 편집할 수 있으므로 변형은 컨텐츠 조각의 중요한 기능입니다.
 
