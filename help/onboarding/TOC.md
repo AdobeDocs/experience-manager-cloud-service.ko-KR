@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 064ef219702e45695413dad21388b513627a3cf5
+source-git-commit: af15539007e264fc473d35529f0f8c41276ec01d
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 61%
+source-wordcount: '382'
+ht-degree: 62%
 
 ---
 
@@ -74,7 +74,8 @@ ht-degree: 61%
       + [IP 허용 목록 삭제](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP 허용 목록 상태 확인](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + 클라우드 관리자 {#release-notes-cloud-manager} 릴리스 노트
-      + [현재 릴리스 노트(2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [현재 릴리스 노트(2021.1.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [2020.12.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [2020.11.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
       + [2020.10.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [2020.9.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
