@@ -2,9 +2,9 @@
 title: 컨텐츠 조각을 사용한 작업
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 Cloud Service으로 사용하여 페이지에 구애받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 468d6f6a87c9a4794d5187146f7d879433cafa6f
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '2012'
 ht-degree: 77%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 77%
 
 # 컨텐츠 조각을 사용한 작업{#working-with-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->컨텐츠 조각 전달용 AEM GraphQL API는 2021년 초에 릴리스됩니다.
->
->관련 문서는 미리 보기 목적으로 이미 사용 가능합니다.
+>AEM용 API를 Cloud Service 프로그램으로 활성화하려면 [Adobe 지원](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)에 문의하십시오.
 
 AEM(Adobe Experience Manager)을 Cloud Service으로 사용하면 컨텐츠 조각을 통해 페이지에 구애받지 않는 컨텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md)를 디자인, 작성, 조정 및 게시할 수 있습니다. [ 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
 
