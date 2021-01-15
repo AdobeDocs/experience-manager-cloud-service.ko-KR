@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 translation-type: tm+mt
-source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
+source-git-commit: a3d940765796e6a4d8e16d8fe31343074358ebc3
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -222,8 +222,8 @@ CLOUD SERVICE으로 AEM을 사용하려면 아웃바운드 메일을 암호화�
 기본적으로 아웃바운드 이메일은 비활성화됩니다. 정품 인증을 받으려면 다음을 사용하여 지원 티켓을 제출하십시오.
 
 1. 메일 서버의 정규화된 도메인 이름(예: `smtp.sendgrid.net`)
-1. 사용할 포트입니다. 메일 서버에서 지원하는 경우 포트 465여야 하며, 그렇지 않은 경우 포트 587 포트 587은 메일 서버가 해당 포트에 TLS를 사용하고 적용하는 경우에만 사용할 수 있습니다
-1. 발송할 환경에 대한 프로그램 ID 및 환경 ID
+1. 사용할 포트입니다. 메일 서버에서 지원하는 경우 포트 465이고, 그렇지 않은 경우 포트 587이어야 합니다. 포트 587은 메일 서버가 해당 포트에 TLS를 사용하고 적용하는 경우에만 사용할 수 있습니다
+1. 메일 발송할 환경에 대한 프로그램 ID 및 환경 ID
 1. 작성자, 게시 또는 둘 다에 SMTP 액세스 필요 여부.
 
 ### 이메일 보내기 {#sending-emails}
@@ -240,16 +240,16 @@ AEM CS는 포트 465를 통해 메일을 보내야 합니다. 메일 서버에�
 
 AEM의 이메일은 [Day CQ Mail Service OSGi 서비스](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하여 보내야 합니다.
 
-이메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html)를 참조하십시오. AEM CS의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스를 다음과 같이 조정해야 합니다.
+이메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html)를 참조하십시오. Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스를 다음과 같이 조정해야 합니다.
 
 포트 465가 요청된 경우:
 
 * `smtp.port`을(를) `465`로 설정
 * `smtp.ssl`을(를) `true`로 설정
-* `smtp.starttls`을(를) `false`로 설정
 
 포트 587이 요청된 경우(메일 서버가 포트 465를 지원하지 않는 경우에만 허용됨):
 
 * `smtp.port`을(를) `587`로 설정
 * `smtp.ssl`을(를) `false`로 설정
-* `smtp.starttls`을(를) `true`로 설정
+
+`smtp.starttls` 속성은 런타임에 Cloud Service으로 AEM에 의해 적절한 값으로 자동 설정됩니다. 포트 465의 경우 `false`이고 포트 587의 경우 `true`입니다. 이것은 OSGI 구성에 설정된 `smtp.starttls` 값에 상관없이 동일합니다.
