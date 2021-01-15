@@ -2,7 +2,7 @@
 title: 서버측 API에 대한 액세스 토큰 생성
 description: 안전한 JWT 토큰을 생성하여 제3자 서버와 AEM 간의 Cloud Service으로 원활한 커뮤니케이션을 제공하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 개발자 흐름 {#developer-flow}
 
-개발자는 Cloud Service 개발 환경으로 개발 AEM에 요청을 하는 AEM 애플리케이션이 아닌 애플리케이션의 개발 인스턴스(랩탑에서 실행 또는 호스팅)를 사용하여 테스트할 수 있습니다. 그러나, 개발자는 Cloud Service 개발 환경으로 AEM에 대한 관리자 역할 액세스 권한이 반드시 없는 경우, 일반 서버간 흐름에 설명된 JWT 전달자를 생성할 수 있다고 간주할 수 없습니다. 따라서, 개발자가 액세스 권한이 있는 Cloud Service 환경으로 AEM 요청에 사용할 수 있는 액세스 토큰을 직접 생성할 수 있는 메커니즘을 제공합니다. AEM을 Cloud Service 개발자 콘솔로 사용하는 데 필요한 권한에 대한 자세한 내용은 [개발자 지침 문서](/help/implementing/developing/introduction/development-guidelines.md)를 참조하십시오.
+개발자는 Cloud Service 개발 환경으로 개발 AEM에 요청을 하는 AEM 애플리케이션이 아닌 애플리케이션의 개발 인스턴스(랩탑에서 실행 또는 호스팅)를 사용하여 테스트할 수 있습니다. 그러나, 개발자는 Cloud Service 개발 환경으로 AEM에 대한 관리자 역할 액세스 권한이 반드시 없는 경우, 일반 서버간 흐름에 설명된 JWT 전달자를 생성할 수 있다고 간주할 수 없습니다. 따라서, 개발자가 액세스 권한이 있는 Cloud Service 환경으로 AEM 요청에 사용할 수 있는 액세스 토큰을 직접 생성할 수 있는 메커니즘을 제공합니다.
+
+AEM을 Cloud Service 개발자 콘솔로 사용하는 데 필요한 권한에 대한 자세한 내용은 [개발자 지침 문서](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)를 참조하십시오.
 
 >[!NOTE]
 >
