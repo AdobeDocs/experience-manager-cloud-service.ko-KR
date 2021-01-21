@@ -2,7 +2,7 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
+source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 4%
@@ -23,7 +23,7 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 * **[컨텐츠 조각 HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:HTTP API를 사용하여 컨텐츠 조각 변형을 추가/업데이트 및 삭제하는 기능을 추가합니다.
 
-## [!DNL Adobe Experience Manager Assets] as  [!DNL Cloud Service] {#assets}
+## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Assets] {#assets}
 
 * 이제 [!DNL Adobe InDesign Server]과의 통합을 [!DNL Cloud Service](으)로 사용할 수 있습니다. [!DNL Experience Manager] [!DNL Adobe InDesign Server] 스크립팅을 사용하여 [!DNL Adobe InDesign] 파일을 자동으로 처리할 수 있으며 사용자가 [!DNL Assets] 템플릿 사용자 인터페이스를 사용하여 브로셔 또는 광고를 만들 수 있습니다. [!DNL Adobe Managed Services]에서 호스팅하는 [!DNL InDesign Server]만 [!DNL Experience Manager as a Cloud Service]에 대해 지원됩니다. <!-- TBD: Add link to article. -->
 
@@ -84,4 +84,3 @@ AEM의 Cloud Service 2021.1.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 * 마이그레이션 세트에 대한 CTT(Content Transfer Tool) 사용자 인터페이스 상태가 비활성 기간 후 지속되거나 변경되지 않았습니다. 이 문제가 수정되었습니다.
 * 로그를 사용할 수 없는 경우 로그 보기 옵션을 사용할 수 없었습니다. 로그가 누락된 이유를 사용자에게 알리기 위해 메시지가 추가되었습니다.
 * 콘텐트 전송 도구 사용자 인터페이스 상태가 사용자가 수집을 중지했을 때 [실패]로 표시되었습니다. 대신 *STOPPED*&#x200B;을(를) 표시하도록 수정했습니다.
-
