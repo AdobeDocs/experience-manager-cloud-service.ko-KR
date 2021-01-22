@@ -2,9 +2,9 @@
 title: Dynamic Media Classic을 통해 CDN 캐시 무효화
 description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,9 @@ Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base
 
 **Dynamic Media Classic을 통해 CDN 캐시를 무효화하려면:**
 
-1. 다음 중 하나를 수행하십시오.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다.
 
-   * 웹 브라우저에서 Dynamic Media Classic 계정에 로그온합니다.
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
-
-   * Dynamic Media Classic 응용 프로그램을 연 다음 계정에 로그인합니다.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다.
 1. [응용 프로그램 일반 설정] 페이지의 [서버] 그룹 머리글 아래에서 **[!UICONTROL CDN 무효화 템플릿]** 텍스트 상자를 찾습니다.
