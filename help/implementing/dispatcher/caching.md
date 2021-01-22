@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 translation-type: tm+mt
-source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
+source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1535'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,15 @@ ht-degree: 1%
 
 ### HTML/텍스트 {#html-text}
 
-* 기본적으로 apache 레이어에서 방출한 cache-control 헤더를 기반으로, 브라우저가 5분 동안 캐시합니다. CDN도 이 값을 준수합니다.
+* 기본적으로 apache 레이어에서 방출한 `cache-control` 헤더를 기반으로, 브라우저가 5분 동안 캐시합니다. CDN도 이 값을 준수합니다.
+* `global.vars`에서 `DISABLE_DEFAULT_CACHING` 변수를 정의하여 기본 HTML/텍스트 캐싱 설정을 비활성화할 수 있습니다.
+
+```
+Define DISABLE_DEFAULT_CACHING
+```
+
+이 기능은 기본적으로 연령 헤더가 0으로 설정되므로 비즈니스 논리에서 연령 헤더(달력을 기준으로 값)를 세밀하게 조정해야 하는 경우에 유용합니다. 즉, **기본 캐싱을 끌 때는 주의하십시오.**
+
 * aem을 Cloud Service SDK Dispatcher 도구로 사용하여 `global.vars`에서 `EXPIRATION_TIME` 변수를 정의하여 모든 HTML/Text 컨텐츠에 대해 재정의할 수 있습니다.
 * 다음과 같은 apache mod_headers 지시문으로 더 세부적으로 분류된 수준에서 재정의할 수 있습니다.
 
