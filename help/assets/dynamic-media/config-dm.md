@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service을 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3869'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## Cloud Services {#configuring-dynamic-media-cloud-services}에 새 Dynamic Media 구성 만들기
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
 1. 콘솔 왼쪽에서 도구 아이콘을 누른 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;을 누릅니다.
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 AEM 작성자 인스턴스를 &quot;허용 목록에 추가하다&quot;해야 합니다. 이를 설정하려면 다음을 수행합니다.
 
-   * Dynamic Media Classic 계정에 로그온합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). 프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   * [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
    * 페이지 오른쪽 상단의 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다.
 
    * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**&#x200B;을 선택합니다.
@@ -186,7 +186,7 @@ Dynamic Media의 구성 및 설정을 추가로 사용자 정의하거나 성능
 
 Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media 설정을 변경합니다.
 
-위의 작업 중 일부는 여기에서 Dynamic Media Classic에 로그인해야 합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+위의 작업 중 일부는 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 계정에 로그인해야 합니다.
 
 설정 및 구성 작업은 다음과 같습니다.
 
@@ -231,7 +231,8 @@ Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media �
 
 이미지를 요청할 때 색상 보정을 사용하도록 기본 색상 속성을 구성하려면 다음을 수행하십시오.
 
-1. [프로비저닝 동안 제공된 자격 ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 증명을 사용하여 Dynamic Media Classicics에 로그인합니다. **[!UICONTROL 설정 > 응용 프로그램 설정]**&#x200B;으로 이동합니다.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 프로비저닝 동안 제공된 자격 증명을 사용하여 계정에 로그인합니다.
+1. **[!UICONTROL 설정 > 응용 프로그램 설정]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 제작 설정]** 영역을 확장하고 **[!UICONTROL 이미지 서버]**&#x200B;를 선택합니다. 게시 인스턴스의 기본값을 설정할 때 **[!UICONTROL 게시 컨텍스트]**&#x200B;를 **[!UICONTROL 이미지 제공]**&#x200B;으로 설정합니다.
 1. 변경해야 할 속성(예: **[!UICONTROL 색상 관리 속성]** 영역의 속성)으로 스크롤합니다.
 다음 색상 교정 속성을 설정할 수 있습니다.
