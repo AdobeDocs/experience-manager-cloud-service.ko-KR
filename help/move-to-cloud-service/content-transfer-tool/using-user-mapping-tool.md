@@ -2,10 +2,10 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 translation-type: tm+mt
-source-git-commit: 664c278494a5ac88362b994946060ab3baa846d8
+source-git-commit: 410b7900981596590fa80b286b40a965700f108e
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '750'
+ht-degree: 1%
 
 ---
 
@@ -42,3 +42,39 @@ Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하
 1. 키 쌍 생성 또는 공개 키 업로드(rsa가 좋지 않음)
 1. 액세스 토큰(또는 JWT 토큰 또는 무기명 토큰)을 생성합니다.
 1. 이 모든 정보(클라이언트 ID, 클라이언트 암호, 기술 계정 ID, 기술 계정 이메일, 조직 ID, 액세스 토큰)를 안전한 장소에 저장합니다.
+
+## 사용자 인터페이스 {#user-interface}
+
+사용자 매핑 도구는 내용 전송 도구에 통합됩니다. 소프트웨어 배포 포털에서 컨텐츠 전송 툴을 다운로드할 수 있습니다. 최신 버전에 대한 자세한 내용은 릴리스 노트를 참조하십시오.
+
+1. Adobe Experience Manager 선택을 선택하고 도구 -> **작업** -> **컨텐트 전송**&#x200B;으로 이동합니다.
+1. **사용자 매핑 구성 만들기**&#x200B;를 클릭합니다.
+
+   >[!NOTE]
+   >이 단계를 건너뛰면 추출 단계 동안 사용자 및 그룹 매핑을 건너뜁니다.
+
+   아래 설명에 따라 사용자 관리 API 구성의 필드를 채웁니다.
+
+   * **조직 ID**:사용자가 마이그레이션되는 조직의 IMS 조직 ID를 입력합니다.
+
+      >[!NOTE]
+      >조직 ID를 가져오려면 [Admin Console](https://adminconsole.adobe.com/)에 로그인하고 둘 이상의 조직에 속해 있는 경우 조직을 선택합니다. 조직 ID는 해당 페이지의 URL(예: `xx@AdobeOrg` 형식)에 있으며 여기서 xx는 IMS 조직 ID입니다.  또는 액세스 토큰을 생성하는 [Adobe 개발자 콘솔](https://console.adobe.io) 페이지에서 조직 ID를 찾을 수 있습니다.
+
+   * **클라이언트 ID**:설정 단계에서 저장한 클라이언트 ID 입력
+
+   * **액세스 토큰**:설정 단계에서 저장한 액세스 토큰을 입력합니다
+
+      >[!NOTE]
+      >액세스 토큰은 24시간마다 만료되며 새로 만들어야 합니다. 새 토큰을 만들려면 [Adobe 개발자 콘솔](https://console.adobe.io)로 돌아가 프로젝트를 선택하고 사용자 관리 API를 클릭한 다음 동일한 개인 키를 상자에 붙여 넣습니다.
+
+1. 위의 정보를 입력한 후 저장을 클릭합니다.
+
+1. 마이그레이션 세트 만들기를 클릭하고 필드를 채운 다음 저장을 클릭하여 마이그레이션 세트를 만듭니다. 자세한 내용은 컨텐츠 전송 도구 실행을 참조하십시오.
+
+   >[!NOTE]
+   >IMS에서 사용자 매핑(Mapping Users from IMS) 포함 전환 스위치는 기본적으로 켜져 있습니다. 이 설정을 사용하면 이 마이그레이션 세트에서 추출을 수행하면 사용자 매핑 도구가 추출 단계의 일부로 실행됩니다. 컨텐츠 전송 도구의 추출 단계를 실행하는 것이 좋습니다. 이 토글이 꺼져 있고/또는 사용자 매핑 구성이 생성되지 않으면 추출 단계 동안 사용자 및 그룹 매핑을 건너뜁니다.
+
+1. 추출 단계를 실행하려면 [내용 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)을 참조하십시오.
+
+
+
