@@ -3,9 +3,9 @@ title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및  [!DNL Adobe Experience Manager]에 게시할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 
    * Apple ProRes 파일은 최대 해상도 1080p로만 트랜스코딩할 수 있습니다.
    * 소스 파일의 비트 전송률이 200Mbps를 초과하는 경우 최대 해상도인 1080p로만 코드를 변환할 수 있습니다.
-   * 소스 프레임 속도 >= 60fps이면 사용할 수 있는 최대 소스 파일 크기는 다음과 같습니다.
+   * 소스 프레임 속도 >=60fps이면 사용할 수 있는 소스 파일의 최대 크기는 다음과 같습니다.
 
       * 4k 트랜스코딩의 경우 400MB
       * 1080p 트랜스코딩의 경우 800MB
