@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 7%
+source-wordcount: '567'
+ht-degree: 5%
 
 ---
 
@@ -51,3 +51,24 @@ Adobe의 기본 CDN을 사용하여 Cloud Manager 셀프 서비스 UI를 사용�
 고객 CDN에서 Adobe의 관리 CDN으로의 고동이 효율적일 수 있지만, 추가 홉으로 인해 작은 성능 히트가 발생할 수 있습니다.
 
 이 고객 CDN 구성은 제작 계층에 대해 지원되지만 작성자 계층 앞에는 지원되지 않습니다.
+
+## 지리적 위치 헤더 {#geo-headers}
+
+Adobe 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다.
+
+* 국가 코드:`x-aem-client-country`
+* 대륙 코드:`x-aem-client-continent`
+
+국가 코드의 값은 [여기](https://en.wikipedia.org/wiki/ISO_3166-1)에 설명된 Alpha-2 코드입니다.
+
+대륙 코드의 값은 다음과 같습니다.
+
+* AF 아프리카
+* 남극 대륙
+* AS 아시아
+* EU 유럽
+* 북미
+* OC 오세아니아
+* SA 남아메리카
+
+이 정보는 요청의 원본(국가)을 기반으로 다른 URL로 리디렉션하는 등의 사용 경우에 유용할 수 있습니다. 그러나 이러한 특정 사용 사례에서는 리디렉션이 다르므로 캐싱하지 않아야 합니다. 필요한 경우 `Cache-Control: private`을(를) 사용하여 캐싱을 방지할 수 있습니다. [캐싱](/help/implementing/dispatcher/caching.md#html-text)도 참조하십시오.
