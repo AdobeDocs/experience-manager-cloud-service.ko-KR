@@ -2,7 +2,7 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
+source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 8%
@@ -195,15 +195,15 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 유효성 검사 도구는 `bin/validator`의 SDK에서 Mac OS, Linux 또는 Windows 바이너리로 사용할 수 있으므로 고객은 릴리스를 빌드하고 배포하는 동안 Cloud Manager가 수행하는 동일한 유효성 검사를 실행할 수 있습니다.
 
-다음과 같이 호출됩니다.`validator full [-d folder] [-w whitelist] zip-file | src folder`
+다음과 같이 호출됩니다.`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
 이 도구는 패턴 `conf.d/enabled_vhosts/*.vhost`이 있는 모든 파일을 스캔하여 디스패처 구성이 AEM에서 지원하는 적절한 지시문을 클라우드 서비스로 사용하고 있는지 확인합니다. Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 명령을 실행하여 나열할 수 허용 목록에 추가하다 있습니다.
 
 ```
-$ validator whitelist
+$ validator allowlist
 Cloud manager validator 2.0.4
  
-Whitelisted directives:
+Allowlisted directives:
   <Directory>
   ...
   
@@ -249,7 +249,7 @@ maven 가공물 또는 `dispatcher/src` 하위 디렉토리에 대해 실행하�
 ```
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
-2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
+2019/06/19 15:41:37 Apache configuration uses non-allowlisted directives:
   conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
