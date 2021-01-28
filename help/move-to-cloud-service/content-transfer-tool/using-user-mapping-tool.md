@@ -2,9 +2,9 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 translation-type: tm+mt
-source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
+source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-Cloud Service에서 AEM으로 전환 여정의 일부로, 사용자와 그룹을 기존 AEM 시스템에서 AEM으로 Cloud Service으로 이동시켜야 합니다. 이는 컨텐츠 전송 도구에 의해 수행됩니다.
+Cloud Service으로 Adobe Experience Manager(AEM)으로 전환 여정의 일부로서 사용자 및 그룹을 Cloud Service으로 기존 AEM 시스템에서 AEM으로 이동시켜야 합니다. 이는 컨텐츠 전송 도구에 의해 수행됩니다.
 
 Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하기 위해 Adobe ID를 완벽하게 통합하는 것입니다.  이렇게 하려면 사용자 및 사용자 그룹을 관리하기 위해 Adobe Admin Console을 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 Single Sign-On을 제공하는 Adobe Identity Management System(IMS)에 중앙 집중화되어 있습니다. 자세한 내용은 Identity Management을 참조하십시오. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 사용자와 그룹이 중복되지 않도록 기존 사용자 및 그룹을 IMS ID에 매핑해야 합니다.
 
@@ -22,17 +22,17 @@ Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하
 
 고려해야 할 몇 가지 예외적인 사례가 있다. 다음 특정 사례가 기록되고 해당 사용자나 그룹이 매핑되지 않습니다.
 
-1. 사용자에게 jcr 노드의 `profile/email` 필드에 이메일 주소가 없는 경우.
+1. 사용자에게 *jcr* 노드의 `profile/email` 필드에 이메일 주소가 없는 경우.
 
-1. 사용된 조직 ID에 대한 IMS 시스템에서 지정된 이메일을 찾을 수 없는 경우(또는 다른 이유로 IMS ID를 검색할 수 없는 경우)
+1. 사용된 조직 ID에 대한 IMS(Adobe Identity Management System) 시스템에서 지정된 이메일을 찾을 수 없는 경우(또는 다른 이유로 IMS ID를 검색할 수 없는 경우)
 
-1. 사용자가 현재 비활성화되어 있으면 비활성화되어 있지 않은 것처럼 처리됩니다.  매핑되고 정상적으로 마이그레이션되며 클라우드 인스턴스에서 비활성화된 상태로 유지됩니다.
+1. 사용자가 현재 비활성화되어 있으면 비활성화되어 있지 않은 것처럼 처리됩니다. 매핑되고 정상적으로 마이그레이션되며 클라우드 인스턴스에서 비활성화된 상태로 유지됩니다.
 
 ## 사용자 매핑 도구 {#using-user-mapping-tool} 사용
 
-사용자 매핑 도구는 IMS 사용자를 이메일로 조회하고 IMS ID를 반환할 수 있도록 해주는 API를 사용합니다. 이 API를 사용하려면 사용자가 조직의 클라이언트 ID, 클라이언트 암호 및 액세스 토큰/전달자 토큰을 만들어야 합니다.
+사용자 매핑 도구는 전자 메일로 IMS(Adobe Identity Management System) 사용자를 조회하고 IMS ID를 반환할 수 있는 API를 사용합니다. 이 API를 사용하려면 사용자가 조직의 클라이언트 ID, 클라이언트 암호, 액세스 또는 전달자 토큰을 만들도록 해야 합니다.
 
-다음 단계에 따라 설정합니다.
+아래 절차에 따라 이 설정을 수행하십시오.
 
 1. Adobe ID을 사용하여 [Adobe 개발자 콘솔](https://console.adobe.io)로 이동합니다.
 1. 새 프로젝트를 만들거나 기존 프로젝트를 엽니다.
@@ -59,31 +59,31 @@ Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
-   * **조직 ID**:사용자가 마이그레이션되는 조직의 IMS 조직 ID를 입력합니다.
+   * **조직 ID**:사용자가 마이그레이션되는 조직의 Adobe Identity Management 시스템(IMS) 조직 ID를 입력합니다.
 
       >[!NOTE]
       >조직 ID를 가져오려면 [Admin Console](https://adminconsole.adobe.com/)에 로그인하고 둘 이상의 조직에 속해 있는 경우 조직을 선택합니다. 조직 ID는 해당 페이지의 URL(예: `xx@AdobeOrg` 형식)에 있으며 여기서 xx는 IMS 조직 ID입니다.  또는 액세스 토큰을 생성하는 [Adobe 개발자 콘솔](https://console.adobe.io) 페이지에서 조직 ID를 찾을 수 있습니다.
 
-   * **클라이언트 ID**:설정 단계에서 저장한 클라이언트 ID 입력
+   * **클라이언트 ID**:설정 단계에서 저장한 클라이언트 ID를 입력합니다.
 
-   * **액세스 토큰**:설정 단계에서 저장한 액세스 토큰을 입력합니다
+   * **액세스 토큰**:설정 단계에서 저장한 액세스 토큰을 입력합니다.
 
       >[!NOTE]
-      >액세스 토큰은 24시간마다 만료되며 새로 만들어야 합니다. 새 토큰을 만들려면 [Adobe 개발자 콘솔](https://console.adobe.io)로 돌아가 프로젝트를 선택하고 사용자 관리 API를 클릭한 다음 동일한 개인 키를 상자에 붙여 넣습니다.
+      >액세스 토큰은 24시간마다 만료되며 새로 만들어야 합니다. 새 토큰을 만들려면 [Adobe 개발자 콘솔](https://console.adobe.io)로 돌아가 프로젝트를 선택하고 **사용자 관리 API**&#x200B;를 클릭한 다음 동일한 개인 키를 상자에 붙여 넣습니다.
 
 1. 위 정보를 입력한 후 **저장**&#x200B;을 클릭합니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
 
 
-1. **마이그레이션 세트 만들기**&#x200B;를 클릭하고 필드를 채운 다음 **저장**&#x200B;을 클릭하여 마이그레이션 세트를 만듭니다. 자세한 내용은 컨텐츠 전송 도구 실행을 참조하십시오.
+1. **마이그레이션 세트 만들기**&#x200B;를 클릭하고 필드를 채운 다음 **저장**&#x200B;을 클릭하여 마이그레이션 세트를 만듭니다. 자세한 내용은 [내용 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)을 참조하십시오.
 
    >[!NOTE]
    >IMS에서 사용자 매핑(Mapping Users from IMS) 포함 전환 스위치는 기본적으로 켜져 있습니다. 이 설정을 사용하면 이 마이그레이션 세트에서 추출을 수행하면 사용자 매핑 도구가 추출 단계의 일부로 실행됩니다. 컨텐츠 전송 도구의 추출 단계를 실행하는 것이 좋습니다. 이 토글이 꺼져 있고/또는 사용자 매핑 구성이 생성되지 않으면 추출 단계 동안 사용자 및 그룹 매핑을 건너뜁니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
-1. 추출 단계를 실행하려면 [내용 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)을 참조하십시오.
+1. 추출 단계를 실행하려면 [내용 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)을 참조하십시오.
 
 
 
