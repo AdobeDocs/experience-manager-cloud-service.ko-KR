@@ -2,9 +2,9 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 translation-type: tm+mt
-source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
+source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
-source-wordcount: '4050'
+source-wordcount: '4119'
 ht-degree: 8%
 
 ---
@@ -376,7 +376,8 @@ Phase 2 finished
 스크립트는 다음을 수행합니다.
 
 1. 지원되는 지시문만 포함되도록 이전 섹션의 유효성 검사기를 실행합니다. 구성이 올바르지 않으면 스크립트가 실패합니다.
-2. Apache httpd를 시작할 수 있도록 구문이 올바른지 테스트하려면 `httpd -t command`을 실행합니다. 성공적으로 작업이 수행되면 구성을 배포할 준비가 완료되어야 합니다.
+2. Apache httpd를 시작할 수 있도록 구문이 올바른지 테스트하려면 `httpd -t command`을 실행합니다. 성공하면 배포를 위해 구성을 준비해야 합니다.
+3. [파일 구조 섹션](#file-structure)에 설명된 대로 변경할 수 없도록 만들어진 디스패처 SDK 구성 파일의 하위 세트가 수정되지 않았는지 확인합니다. 이 검사는 AEM SDK 버전 v2021.1.4738에 도입되어 Dispatcher 도구 버전 2.0.36을 포함하고 있는 새로운 검사입니다. 이 업데이트 전에 고객은 변경할 수 없는 파일의 모든 로컬 SDK 수정 내용이 Cloud 환경에도 적용된다고 잘못 간주할 수 있습니다.
 
 Cloud Manager 배포 동안 `httpd -t syntax` 확인도 실행되고 모든 오류가 클라우드 관리자 `Build Images step failure` 로그에 포함됩니다.
 
