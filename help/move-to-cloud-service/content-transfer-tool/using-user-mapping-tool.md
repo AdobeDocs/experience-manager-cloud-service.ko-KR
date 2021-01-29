@@ -2,10 +2,10 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '783'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Cloud Service으로 Adobe Experience Manager(AEM)으로 전환 여정의 일부로서 사용자 및 그룹을 Cloud Service으로 기존 AEM 시스템에서 AEM으로 이동시켜야 합니다. 이는 컨텐츠 전송 도구에 의해 수행됩니다.
 
-Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하기 위해 Adobe ID를 완벽하게 통합하는 것입니다.  이렇게 하려면 사용자 및 사용자 그룹을 관리하기 위해 Adobe Admin Console을 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 Single Sign-On을 제공하는 Adobe Identity Management System(IMS)에 중앙 집중화되어 있습니다. 자세한 내용은 Identity Management을 참조하십시오. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 사용자와 그룹이 중복되지 않도록 기존 사용자 및 그룹을 IMS ID에 매핑해야 합니다.
+Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하기 위해 Adobe ID를 완벽하게 통합하는 것입니다.  이렇게 하려면 사용자 및 사용자 그룹을 관리하기 위해 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 Single Sign-On을 제공하는 Adobe Identity Management System(IMS)에 중앙 집중화되어 있습니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)을 참조하십시오. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 사용자와 그룹이 중복되지 않도록 기존 사용자 및 그룹을 IMS ID에 매핑해야 합니다.
 
 ## 중요 고려 사항 {#important-considerations}
 
@@ -45,7 +45,7 @@ Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하
 
 ## 사용자 인터페이스 {#user-interface}
 
-사용자 매핑 도구는 내용 전송 도구에 통합됩니다. 소프트웨어 배포 포털에서 컨텐츠 전송 툴을 다운로드할 수 있습니다. 최신 버전에 대한 자세한 내용은 [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
+사용자 매핑 도구는 내용 전송 도구에 통합됩니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 컨텐트 전송 도구를 다운로드할 수 있습니다. 최신 버전에 대한 자세한 내용은 [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
 1. Adobe Experience Manager 선택을 선택하고 도구 -> **작업** -> **컨텐트 전송**&#x200B;으로 이동합니다.
 1. **사용자 매핑 구성 만들기**&#x200B;를 클릭합니다.
