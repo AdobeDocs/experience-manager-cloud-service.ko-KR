@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '649'
 ht-degree: 4%
 
 ---
@@ -73,14 +73,10 @@ AEM의 Cloud Service 2021.1.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 
 ### 릴리스 날짜 {#release-date-ctt}
 
-내용 전송 도구 v1.1.20 릴리스 날짜는 2021년 1월 8일입니다.
+내용 전송 도구 v1.2.20 릴리스 날짜는 2021년 2월 1일입니다.
 
 ### [!DNL Content Transfer Tool] {#what-is-new-ctt}의 새로운 기능
 
-* 이제 사용자는 CTT(Content Transfer Tool) 사용자 인터페이스의 상태 아이콘을 마우스로 가리키면 액세스 토큰이 만료되었는지를 알 수 있습니다. 또한 마이그레이션 세트 세부 사항 UI에서 Cloud Service 인스턴스에 연결할 수 없다는 알림을 받게 됩니다.
-
-### 버그 수정 {#ctt-bug-fixes}
-
-* 마이그레이션 세트에 대한 CTT(Content Transfer Tool) 사용자 인터페이스 상태가 비활성 기간 후 지속되거나 변경되지 않았습니다. 이 문제가 수정되었습니다.
-* 로그를 사용할 수 없는 경우 로그 보기 옵션을 사용할 수 없었습니다. 로그가 누락된 이유를 사용자에게 알리기 위해 메시지가 추가되었습니다.
-* 콘텐트 전송 도구 사용자 인터페이스 상태가 사용자가 수집을 중지했을 때 [실패]로 표시되었습니다. 대신 *STOPPED*&#x200B;을(를) 표시하도록 수정했습니다.
+* 컨텐츠 전송 도구 - 사용자 매핑 도구에 추가된 새 기능 및 UI. 이 기능은 컨텐츠 마이그레이션 작업의 일부로 기존 사용자 및 그룹을 Adobe Identity Management 시스템 ID에 자동으로 매핑합니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)을 참조하십시오.
+* 이제 콘텐츠 전송 도구가 하위 항목을 포함하여 마이그레이션 세트에서 참조하는 모든 그룹 및 사용자를 마이그레이션합니다.
+* 사용자는 마이그레이션 세트를 만들 때 `/etc` 아래에서 특정 경로를 선택할 수 있습니다.
