@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1906'
 ht-degree: 64%
 
 ---
@@ -28,9 +28,7 @@ ht-degree: 64%
 
 * 액세스 토큰은 특정 기간 후 또는 Cloud Service 환경이 업그레이드된 후 정기적으로 만료될 수 있습니다. 액세스 토큰이 만료되면 Cloud Service 인스턴스에 연결할 수 없으며 새 액세스 토큰을 검색해야 합니다. 기존 마이그레이션 세트와 연관된 상태 아이콘은 빨간색 클라우드로 변경되며 마우스로 가리키면 메시지가 표시됩니다.
 
-* 현재 Cloud Service 작성자 인스턴스로서 AEM의 기본 MongoDB 크기는 32GB입니다. 20GB를 초과하는 세그먼트 저장소 크기의 경우 MongoDB 크기를 늘리기 위해 지원 티켓을 제출해야 합니다.
-
-* 컨텐츠 전송 도구를 통해 전송된 사용자 및 그룹은 권한을 충족하기 위해 컨텐트에 필요한 사용자만 사용할 수 있습니다. *추출* 프로세스는 전체 `/home`를 마이그레이션 세트로 복사하고 *통합* 프로세스는 마이그레이션된 콘텐츠 ACL에서 참조하는 모든 사용자 및 그룹을 복사합니다.
+* 컨텐츠 전송 도구를 통해 전송된 사용자 및 그룹은 권한을 충족하기 위해 컨텐트에 필요한 사용자만 사용할 수 있습니다. *추출* 프로세스는 전체 `/home`를 마이그레이션 세트로 복사하고 *통합* 프로세스는 마이그레이션된 콘텐츠 ACL에서 참조하는 모든 사용자 및 그룹을 복사합니다. 기존 사용자 및 그룹을 IMS ID에 자동으로 매핑하려면 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)을 참조하십시오.
 
 * 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
