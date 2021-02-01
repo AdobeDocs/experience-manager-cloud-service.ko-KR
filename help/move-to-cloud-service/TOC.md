@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service로 이동
 breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 translation-type: tm+mt
-source-git-commit: 81e84ae3993321c210de917a9a9bcd17d32b2040
+source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 84%
+source-wordcount: '87'
+ht-degree: 80%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 84%
       + [우수 사례 분석기 사용](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 컨텐츠 전송 도구 {#content-transfer-tool}
       + [개요](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
+      + [사용자 매핑 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 코드 리팩터링 도구 {#refactoring-tools}
    + [일관된 경험](/help/move-to-cloud-service/unified-experience.md)
