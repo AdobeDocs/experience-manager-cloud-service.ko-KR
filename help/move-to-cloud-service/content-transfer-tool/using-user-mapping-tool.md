@@ -2,10 +2,10 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '782'
+ht-degree: 4%
 
 ---
 
@@ -47,7 +47,7 @@ Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하
 
 사용자 매핑 도구는 내용 전송 도구에 통합됩니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 컨텐트 전송 도구를 다운로드할 수 있습니다. 최신 버전에 대한 자세한 내용은 [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-1. Adobe Experience Manager 선택을 선택하고 도구 -> **작업** -> **컨텐트 전송**&#x200B;으로 이동합니다.
+1. Adobe Experience Manager를 선택하고 도구 -> **작업** -> **컨텐츠 전송**&#x200B;으로 이동합니다.
 1. **사용자 매핑 구성 만들기**&#x200B;를 클릭합니다.
 
    >[!NOTE]
