@@ -2,9 +2,9 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -43,8 +43,7 @@ Target 구성을 편집하려면 다음 단계를 수행합니다.
 
 1. 기존 구성을 선택하고 **속성**&#x200B;을 클릭합니다.
 2. 속성을 편집합니다.
-3. **Adobe Target에 다시 연결**을 선택합니다.
-   ![다시 ](assets/edit_config_page1.png "연결다시 연결")
+3. **Adobe Target에 다시 연결**&#x200B;을 선택합니다.
 4. **저장 후 닫기**&#x200B;를 선택합니다.
 
 ### 사이트 {#add-configuration}에 구성 추가
