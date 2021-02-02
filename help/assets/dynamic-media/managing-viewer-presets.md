@@ -2,7 +2,7 @@
 title: 뷰어 사전 설정 관리
 description: Dynamic Media에서 뷰어 사전 설정을 만들고 관리하는 방법입니다.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '4246'
 ht-degree: 1%
@@ -51,7 +51,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 웹 페이지마다 요구 사항이 다릅니다. 예를 들어 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지가 필요할 수 있습니다. 다른 경우 호스팅 페이지에 HTML5 뷰어를 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 &quot;반응형&quot;일 수 있으며 다른 장치 또는 다른 브라우저 창 크기에 대해 다르게 표시됩니다. 이러한 요구 사항을 충족하기 위해 Dynamic Media과 함께 제공되는 미리 정의된 즉시 사용 가능한 모든 HTML5 뷰어는 정적 웹 페이지와 반응형 디자인 웹 페이지를 모두 지원합니다.
 
-웹 페이지에 응답형 뷰어를 포함하는 방법에 대한 자세한 내용은 *Dynamic Media 이미지 제공 및 렌더링 API 도움말*&#x200B;의 [응답형 정적 이미지 라이브러리](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)를 참조하십시오.
+웹 페이지에 응답형 뷰어를 포함하는 방법에 대한 자세한 내용은 *Dynamic Media 이미지 제공 및 렌더링 API 도움말*&#x200B;의 [응답형 정적 이미지 라이브러리](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -393,9 +393,9 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 일부 뷰어 사전 설정에는 뷰어의 사용 및 전반적인 비헤이비어에 영향을 줄 수 있는 전용 설정이 있습니다. 만드는 뷰어 사전 설정에 따라 이러한 특별한 고려 사항을 알고 싶을 수 있습니다.
 
-대화형 뷰어 사전 설정[을 만들기 위한 특별한 고려 사항을 참조하십시오.](#special-considerations-for-creating-an-interactive-viewer-preset)
+대화형 뷰어 사전 설정](#special-considerations-for-creating-an-interactive-viewer-preset)을 만들기 위한 특별한 고려 사항을 참조하십시오.[
 
-회전판 배너 뷰어 사전 설정[을 만들기 위한 특별한 고려 사항을 참조하십시오.](#special-considerations-for-creating-a-carousel-banner-viewer-preset)
+회전판 배너 뷰어 사전 설정](#special-considerations-for-creating-a-carousel-banner-viewer-preset)을 만들기 위한 특별한 고려 사항을 참조하십시오.[
 
 **뷰어 사전 설정을 만들려면**
 
@@ -595,6 +595,6 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 ## 뷰어 사전 설정 {#delivering-assets-with-viewer-presets}을(를) 사용하여 에셋 제공
 
-뷰어 사전 설정에 대한 URL을 가져오려면 [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 웹 페이지에 비디오 뷰어 포함[을 참조하십시오.](/help/assets/dynamic-media/embed-code.md)
+뷰어 사전 설정에 대한 URL을 가져오려면 [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 웹 페이지에 비디오 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.[
 
 AEM을 WCM으로 사용하는 경우 페이지에 있는 뷰어 사전 설정을 사용하여 자산을 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
