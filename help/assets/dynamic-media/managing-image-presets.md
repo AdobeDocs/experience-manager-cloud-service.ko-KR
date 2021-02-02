@@ -2,7 +2,7 @@
 title: 이미지 사전 설정 관리
 description: 이미지 사전 설정을 이해하고 이미지 사전 설정을 생성, 수정 및 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3607'
 ht-degree: 3%
@@ -401,7 +401,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media은 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">이미지 서버 프로토콜 명령 참조</a>에 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media은 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">이미지 서버 프로토콜 명령 참조</a>에 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령:<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
      <li>현지화 명령:<code>locale=</code> 및 <code>req=xlate</code></li>
@@ -418,15 +418,15 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 ### 이미지 수정자가 있는 이미지 사전 설정 옵션 정의 {#defining-image-preset-options-with-image-modifiers}
 
-[기본] 및 [고급] 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 추가 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Dynamic Media 이미지 렌더링 API를 사용하며 [HTTP 프로토콜 참조](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)에 자세히 정의됩니다.
+[기본] 및 [고급] 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 추가 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Dynamic Media 이미지 렌더링 API를 사용하며 [HTTP 프로토콜 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)에 자세히 정의됩니다.
 
 다음은 이미지 수정자로 수행할 수 있는 작업의 몇 가지 기본적인 예입니다.
 
 >[!NOTE]
 >
->AEM[에서 일부 이미지 수정자를 사용할 수 없습니다.](#advanced-tab-options)
+>AEM](#advanced-tab-options)에서 일부 이미지 수정자를 사용할 수 없습니다.[
 
-* [op_invert](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - 네거티브 이미지 효과에 대한 각 색상 구성 요소를 반전합니다.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - 네거티브 이미지 효과에 대한 각 색상 구성 요소를 반전합니다.
 
    ```xml
    &op_invert=1
@@ -434,7 +434,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html)  - 이미지에 흐림 효과 필터를 적용합니다.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html)  - 이미지에 흐림 효과 필터를 적용합니다.
 
    ```xml
    &op_blur=7
@@ -450,7 +450,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  - 밝기를 줄이거나 늘립니다.
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  - 밝기를 줄이거나 늘립니다.
 
    ```xml
    &op_brightness=58
@@ -458,7 +458,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
 
    ```xml
    opac=29
