@@ -2,7 +2,7 @@
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '9536'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 >
 >Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 이미 Dynamic Media Cloud Services을 사용 가능하게 만들고 구성했는지 확인하십시오.
 >
->* Dynamic Media 구성에서 Dynamic Media Cloud Services[ 구성 및 ](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)Dynamic Media 문제 해결[을 참조하십시오.](/help/assets/dynamic-media/troubleshoot-dm.md)
+>* Dynamic Media 구성에서 Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) 구성 및 [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md)을 참조하십시오.[
 
 >
 
@@ -37,7 +37,7 @@ ht-degree: 1%
    * 기본 소스 비디오를 업로드할 하나 이상의 폴더에 비디오 처리 프로필을 연결합니다.
 
       * [폴더에 비디오 프로필 적용](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-      * 처리 프로필 사용[에 대한 디지털 자산을 구성하기 위한 모범 사례에 대해 자세히 알아보십시오.](/help/assets/dynamic-media/best-practices-for-file-management.md)
+      * 처리 프로필 사용](/help/assets/dynamic-media/best-practices-for-file-management.md)에 대한 디지털 자산을 구성하기 위한 모범 사례에 대해 자세히 알아보십시오.[
       * [디지털 자산 구성](/help/assets/organize-assets.md)에 대해 자세히 알아보십시오.
    * 기본 소스 비디오를 폴더에 업로드합니다. 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다. 폴더에 비디오를 추가하면 폴더에 할당된 비디오 처리 프로필에 따라 인코딩됩니다.
 
@@ -162,7 +162,7 @@ Dynamic Media은 MP4 H.264 비디오에 대한 모바일 비디오 재생을 지
 
 [동적 비디오 재생](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 샘플을 참조하십시오.
 
-](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)Dynamic Media 뷰어 참조 안내서[에서 AEM Assets 및 Dynamic Media Classic[용 뷰어 및 ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)AEM Assets 전용 뷰어[를 참조하십시오.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
+[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)에서 AEM Assets 및 Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)용 뷰어 및 [AEM Assets 전용 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)를 참조하십시오.[
 
 ## 모범 사례:HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
@@ -402,9 +402,9 @@ VBR 대 CBR을 선택하는 경우에는 미디어 파일에 VBR을 사용하는
 
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920x1080 | 1 | 1 |
+| 소스 | 1920x1080 | 1 | 3 |
 | 인코딩됨 | 960 x 540 | 2 | 2 |
-| 인코딩됨 | 640 x 360 | 3 | 1 |
+| 인코딩됨 | 640 x 360 | 3 | 3 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
 
 ### 인코딩된 비디오 파일 형식 {#encoded-video-file-format}
@@ -1058,7 +1058,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이러한 전환은 JSON 텍스트를 숨김이지만 비디오 전체 스크립트로 웹 페이지에 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링하고 색인화하여 비디오를 보다 손쉽게 검색할 수 있게 하고 비디오 컨텐츠에 대한 추가 세부 정보를 고객에게 제공할 수 있습니다.
 
-URL에서 JSON 함수 사용에 대한 자세한 내용은 [정적(이미지가 아님) 컨텐츠 제공](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)을 참조하십시오.
+URL에서 JSON 함수 사용에 대한 자세한 내용은 [정적(이미지가 아님) 컨텐츠 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)을 참조하십시오.
 
 **비디오에 캡션 또는 자막을 추가하려면:**
 
