@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service을 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 1%
@@ -212,7 +212,7 @@ Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media �
 **[!UICONTROL 카탈로그 필드의 기본값]** - 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 **[!UICONTROL 색상 관리 속성]**  - 이 설정에 따라 사용되는 ICC 색상 프로파일이 결정됩니다.
 **[!UICONTROL 호환성 속성]**  - 이 설정을 사용하면 텍스트 레이어의 맨 앞 및 뒤에 있는 단락이 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리됩니다.
-**[!UICONTROL 현지화 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. **[!UICONTROL 현지화 지원]** 설정에 대한 자세한 내용은 자산 현지화 설정 시 [고려 사항](https://experienceleague.corp.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)을 참조하십시오.
+**[!UICONTROL 현지화 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. **[!UICONTROL 현지화 지원]** 설정에 대한 자세한 내용은 자산 현지화 설정 시 [고려 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)을 참조하십시오.
 
 #### 응용 프로그램 일반 설정 구성 중 {#configuring-application-general-settings}
 
