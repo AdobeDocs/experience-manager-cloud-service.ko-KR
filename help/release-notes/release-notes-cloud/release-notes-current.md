@@ -2,7 +2,7 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
+source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 4%
@@ -73,7 +73,7 @@ AEM의 Cloud Service 2021.1.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 
 ### 릴리스 날짜 {#release-date-ctt}
 
-내용 전송 도구 v1.2.20 릴리스 날짜는 2021년 2월 1일입니다.
+내용 전송 도구 v1.2.2 릴리스 날짜는 2021년 2월 1일입니다.
 
 ### [!DNL Content Transfer Tool] {#what-is-new-ctt}의 새로운 기능
 
