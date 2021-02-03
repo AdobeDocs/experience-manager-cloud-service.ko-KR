@@ -1,29 +1,54 @@
 ---
-title: AI에서 생성된 태그가 있는 이미지 자동 태그 지정
-description: ' [!DNL Adobe Sensei] 서비스를 사용하여 문맥 및 설명 비즈니스 태그를 적용하는 지능적인 서비스를 사용하여 이미지에 태그를 지정할 수 있습니다.'
+title: AI에서 생성된 태그를 사용하여 에셋에 자동 태그 지정
+description: ' [!DNL Adobe Sensei] 서비스를 사용하여 문맥 및 설명 비즈니스 태그를 적용하는 인공적인 지능형 서비스를 사용하여 자산에 태그를 지정합니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2557'
 ht-degree: 1%
 
 ---
 
 
-# 스마트 콘텐츠 서비스 트레이닝 및 이미지 자동 태그 지정 {#train-service-tag-assets}
+# 자산에 스마트 태그를 추가하여 빠른 검색 {#smart-tag-assets-for-faster-search}
 
-디지털 자산을 다루는 조직은 자산 메타데이터에 분류 제어 용어를 점점 더 사용하고 있습니다. 기본적으로 직원, 파트너 및 고객이 디지털 자산을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록이 포함되어 있습니다. 분류 제어 어휘를 사용하여 자산에 태그를 지정하면 태그 기반 검색으로 자산을 쉽게 식별하고 검색할 수 있습니다.
+디지털 자산을 다루는 조직은 자산 메타데이터에 분류 제어 용어를 점점 더 사용하고 있습니다. 기본적으로 직원, 파트너 및 고객이 디지털 자산을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록이 포함되어 있습니다. 분류법이 제어되는 어휘로 자산에 태그를 지정하면 검색에서 자산을 쉽게 식별하고 검색할 수 있습니다.
 
 자연어 어휘와 비교하여 비즈니스 분류 방식을 기반으로 태그를 지정하면 자산을 회사의 비즈니스에 맞게 정렬하고 가장 관련성이 높은 자산이 검색에 표시되는지 확인할 수 있습니다. 예를 들어 자동차 제조업체는 자동차 이미지에 모델 이름을 태그로 지정할 수 있으므로 판촉 캠페인을 디자인하기 위해 검색할 때 관련 이미지만 표시됩니다.
 
-배경에서 스마트 태그는 [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html)의 인공 지능 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
+백그라운드에서 스마트 태그는 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육하기 위해 [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html)의 인공적인 지능형 프레임워크를 사용합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-스마트 태그 지정을 사용하려면 다음 작업을 완료하십시오.
+## 지원되는 자산 유형 {#smart-tags-supported-file-formats}
+
+스마트 태그는 JPG 및 PNG 형식의 변환을 생성하는 지원되는 파일 유형에만 적용됩니다. 이 기능은 다음 유형의 자산에 대해 지원됩니다.
+
+| 이미지(MIME 유형) | 텍스트 기반 에셋(파일 형식) | 비디오 에셋(파일 포맷 및 코덱스) |
+|----|-----|------|
+| image/jpeg | TXT | MP4(H264/AVC) |
+| image/tiff | RTF | MKV(H264/AVC) |
+| image/png | DITA | MOV(H264/AVC, 모션 JPEG) |
+| image/bmp | XML | AVI(indeo4) |
+| image/gif | JSON | FLV(H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV(WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| image/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpimap | SRT |  |
+| image/x-icon |  |  |
+| 이미지/photoshop |  |  |
+| image/x-photoshop |  |  |
+| 이미지/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] 기본적으로 스마트 태그를 텍스트 기반 자산과 비디오에 자동으로 추가합니다. 이미지에 스마트 태그를 자동으로 추가하려면 다음 작업을 완료하십시오.
 
 * [ [!DNL Adobe Experience Manager] Adobe 개발자 콘솔과 통합](#integrate-aem-with-aio).
 * [태그 모델 및 지침을 이해합니다](#understand-tag-models-guidelines).
@@ -31,7 +56,9 @@ ht-degree: 1%
 * [디지털 에셋에 태그를 지정할 수 있습니다](#tag-assets).
 * [태그 및 검색을 관리합니다](#manage-smart-tags-and-searches).
 
-스마트 태그는 [!DNL Adobe Experience Manager Assets] 고객에만 적용됩니다. 스마트 태그는 [!DNL Experience Manager]의 추가 기능으로 구매할 수 있습니다.
+>[!TIP]
+>
+>스마트 태그는 [!DNL Adobe Experience Manager Assets] 고객에만 적용됩니다. 스마트 태그는 [!DNL Experience Manager]의 추가 기능으로 구매할 수 있습니다.
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ ht-degree: 1%
    * 2019년과 2020년에 출시된 자동차 모델을 포함하는 태그 모델.
    * 동일한 몇 개의 자동차 모델을 포함하는 여러 태그 모델.
 
-**교육에 사용되는 이미지**:동일한 이미지를 사용하여 다른 태그 모델을 교육할 수 있습니다. 그러나 태그 모델에서 이미지를 두 개 이상의 태그와 연결하지 마십시오. 따라서 동일한 이미지에 다른 태그 모델에 속하는 다른 태그를 지정할 수 있습니다.
+**교육에 사용되는 이미지**:동일한 이미지를 사용하여 다른 태그 모델을 교육할 수 있습니다. 그러나 태그 모델에서 둘 이상의 태그와 이미지를 연결하지 마십시오. 동일한 이미지에 다른 태그 모델에 속하는 다른 태그를 지정할 수 있습니다.
 
 교육은 실행 취소할 수 없습니다. 위의 지침은 트레이닝할 이미지를 선택하는 데 도움이 됩니다.
 
@@ -158,11 +185,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->후속 태그 지정 주기에서 새로 훈련된 태그로 수정된 자산만 다시 태그됩니다. 하지만 태그 지정 워크플로에 대한 마지막 태그 주기와 현재 태그 지정 주기 사이의 간격이 24시간이 넘는 경우에도 변경되지 않은 자산도 태그됩니다. 주기적인 태그 지정 워크플로우의 경우 시간 간격이 6개월이 되면 변경되지 않은 자산에 태그가 지정됩니다.
+>후속 태그 지정 주기 동안 새로 훈련된 태그로 수정된 자산에만 다시 태그가 지정됩니다. 하지만 태그 지정 작업 과정에 대한 마지막 태그 주기와 현재 태그 지정 주기 사이의 간격이 24시간이 넘는 경우에도 변경되지 않은 자산도 태그로 지정됩니다. 주기적인 태그 지정 워크플로우의 경우 시간 간격이 6개월이 되면 변경되지 않은 자산에 태그가 지정됩니다.
 
 ### 업로드된 자산 {#tag-uploaded-assets} 태그 지정
 
-Experience Manager은 사용자가 DAM에 업로드한 자산에 자동으로 태그를 지정할 수 있습니다. 이를 위해 관리자는 스마트 태그 자산에 사용 가능한 단계를 추가하는 워크플로우를 구성합니다. 업로드된 자산[에 대해 스마트 태그 지정을 활성화하는 방법을 참조하십시오.](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)
+Experience Manager은 사용자가 DAM에 업로드한 자산에 자동으로 태그를 지정할 수 있습니다. 이를 위해 관리자는 스마트 태그 자산에 사용 가능한 단계를 추가하는 워크플로우를 구성합니다. 업로드된 자산](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)에 대해 스마트 태그 지정을 활성화하는 방법을 참조하십시오.[
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## 스마트 태그 및 자산 검색 관리 {#manage-smart-tags-and-searches}
 
@@ -190,7 +219,7 @@ Experience Manager은 사용자가 DAM에 업로드한 자산에 자동으로 �
 
 ### 스마트 태그 {#understandsearch}를 사용하여 AEM 검색 결과 이해
 
-기본적으로 AEM 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 적용 스마트 태그의 검색어 중 하나를 찾기 위해 추가 `OR` 절이 추가됩니다. 예를 들어 `woman running` 검색을 고려해 보십시오. 메타데이터에 `woman`만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 그러나 스마트 태그를 사용하여 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 검색 결과는
+기본적으로 AEM 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 적용된 스마트 태그의 검색어 중 하나를 찾기 위해 추가 `OR` 절이 추가됩니다. 예를 들어 `woman running` 검색을 고려해 보십시오. 메타데이터에 `woman`만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 그러나 스마트 태그를 사용하여 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 검색 결과는
 
 * 메타데이터에 `woman` 및 `running` 키워드가 있는 자산.
 
@@ -209,6 +238,8 @@ Experience Manager은 사용자가 DAM에 업로드한 자산에 자동으로 �
 * 이미지의 미묘한 차이를 인식하지 못함 예를 들어, 슬림형 셔츠와 보통 맞춤 셔츠입니다.
 * 이미지의 작은 패턴/부분을 기반으로 태그를 식별하지 못함 예를 들어 T-shirts의 로고가 있습니다.
 * 태깅은 Experience Manager에서 지원하는 언어에서 지원됩니다. 언어 목록은 [스마트 콘텐츠 서비스 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)를 참조하십시오.
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 스마트 태그가 있는 에셋을 검색하려면(일반 또는 향상된) 에셋 검색(전체 텍스트 검색)을 사용합니다. 스마트 태그에 대한 별도의 검색 조건자가 없습니다.
 
