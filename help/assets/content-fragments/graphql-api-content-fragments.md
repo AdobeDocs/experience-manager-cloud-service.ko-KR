@@ -1,22 +1,16 @@
 ---
-title: Cloud Service GraphQL API로 Adobe Experience Manager에서 컨텐츠 조각을 사용하여 컨텐츠 전달
+title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 헤드리스 컨텐츠 전달을 위한 AEM GraphQL API를 사용하여 Cloud Service으로 사용하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '3192'
 ht-degree: 1%
 
 ---
 
 
 # 컨텐츠 조각에 사용할 AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
-
->[!CAUTION]
->
->요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
->
->AEM용 API를 Cloud Service 프로그램으로 활성화하려면 [Adobe 지원](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)에 문의하십시오.
 
 컨텐츠 조각에 사용되는 Cloud Service(AEM) GraphQL API로 Adobe Experience Manager은 오픈 소스 GraphQL API를 기반으로 하는 것이 중요합니다.
 
@@ -28,7 +22,23 @@ AEM에서 GraphQL API를 사용하면 헤드리스 CMS 구현에서 컨텐츠 �
 
 ## GraphQL API {#graphql-api}
 
-*&quot;GraphQL은 2015년 공개적으로 오픈 소스로 제공되기 전에 Facebook에서 내부적으로 개발한 데이터 쿼리 언어 및 사양입니다. 개발자 생산성을 높이고 데이터 전송 양을 최소화하기 위해 REST 기반 아키텍처에 대한 대체 요소를 제공합니다. GraphQL은 모든 크기의 수백 조직에서 제작...&quot;* [GraphQL Foundation](https://foundation.graphql.org/)을 참조하십시오.
+GraphQL:
+
+* &quot;*...API에 대한 쿼리 언어 및 기존 데이터와 관련 쿼리를 충족하는 런타임입니다. GraphQL은 API에 있는 데이터에 대한 완벽하고 이해할 수 있는 설명을 제공하며 고객에게 필요한 것과 더 이상 필요한 것을 정확하게 요청할 수 있는 기능을 제공하고 시간이 지남에 따라 API를 보다 쉽게 발전시켜 주며 강력한 개발자 도구를 활성화합니다.*&quot;
+
+   [GraphQL.org](https://graphql.org) 참조
+
+* &quot;*...유연한 API 레이어의 개방형 사양입니다. GraphQL을 기존 백엔드에 배치하여 보다 신속하게 제품을 구축할 수 있습니다..*&quot;
+
+   [GraphQL 탐색](https://www.graphql.com)을 참조하십시오.
+
+* *&quot;...데이터 쿼리 언어 및 사양은 2015년 공개적으로 오픈 소스로 배포되기 전에 Facebook에서 내부적으로 개발한 것으로, 개발자 생산성을 높이고 데이터 전송 양을 최소화하기 위해 REST 기반 아키텍처에 대한 대체 요소를 제공합니다. GraphQL은 모든 규모의 수백 개의 조직에서 프로덕션에 사용됩니다...*
+
+   [GraphQL Foundation](https://foundation.graphql.org/)을 참조하십시오.
+
+<!--
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+-->
 
 GraphQL API에 대한 자세한 내용은 다음 섹션(다른 많은 리소스 중)을 참조하십시오.
 
@@ -42,7 +52,7 @@ GraphQL API에 대한 자세한 내용은 다음 섹션(다른 많은 리소스 
 
    * [안내선](https://www.graphql.com/guides/)
 
-   * [튜토리얼](https://www.graphql.com/tutorials/)
+   * [자습서](https://www.graphql.com/tutorials/)
 
    * [사례 연구](https://www.graphql.com/case-studies/)
 
@@ -52,9 +62,149 @@ AEM용 GraphQL 구현은 표준 GraphQL Java 라이브러리를 기반으로 합
 
 * [GitHub에서 GraphQL Java](https://github.com/graphql-java)
 
+### GraphQL 용어 {#graphql-terminology}
+
+GraphQL은 다음을 사용합니다.
+
+* **[쿼리](https://graphql.org/learn/queries/)**
+
+* **[스키마 및 유형](https://graphql.org/learn/schema/)**:
+
+   * 스키마가 컨텐츠 조각 모델을 기반으로 AEM에 의해 생성됩니다.
+   * GraphQL은 스키마를 사용하여 AEM 구현을 위해 GraphQL에 허용된 유형과 작업을 표시합니다.
+
+* **[필드](https://graphql.org/learn/queries/#fields)**
+
+* **[GraphQL 끝점](#graphql-aem-endpoint)**
+   * GraphQL 쿼리에 응답하고 GraphQL 스키마에 대한 액세스를 제공하는 AEM의 경로입니다.
+
+   * 자세한 내용은 [GraphQL 끝점 활성화](#enabling-graphql-endpoint)를 참조하십시오.
+
+[우수 사례](https://graphql.org/learn/best-practices/)를 비롯한 자세한 내용은 [(GraphQL.org) GraphQL 소개](https://graphql.org/learn/)을 참조하십시오.
+
+### GraphQL 쿼리 유형 {#graphql-query-types}
+
+GraphQL을 사용하면 다음 중 하나를 반환하기 위해 쿼리를 수행할 수 있습니다.
+
+* **단일 항목**
+
+* **[항목 목록](https://graphql.org/learn/schema/#lists-and-non-null)**
+
+다음을 수행할 수도 있습니다.
+
+* [캐시된 지속적인 쿼리](#persisted-queries-caching)
+
+## AEM 끝점에 대한 GraphQL {#graphql-aem-endpoint}
+
+끝점은 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 이 경로를 사용하여(또는 앱) 다음 작업을 수행할 수 있습니다.
+
+* GraphQL 스키마 액세스,
+* GraphQL 쿼리 보내기,
+* GraphQL 쿼리에 대한 응답을 받습니다.
+
+AEM 끝점에 대한 GraphQL의 저장소 경로는 다음과 같습니다.
+
+`/content/cq:graphql/global/endpoint`
+
+앱이 요청 URL에 다음 경로를 사용할 수 있습니다.
+
+`/content/_cq_graphql/global/endpoint.json`
+
+AEM용 GraphQL의 끝점을 활성화하려면 다음을 수행해야 합니다.
+
+>[!CAUTION]
+>
+>이러한 단계는 가까운 미래에 변경될 수 있습니다.
+
+* [GraphQL 끝점 사용](#enabling-graphql-endpoint)
+* [추가 구성 수행](#additional-configurations-graphql-endpoint)
+
+### GraphQL 끝점 활성화 {#enabling-graphql-endpoint}
+
+>[!NOTE]
+>
+>이러한 단계를 간소화하는 데 도움이 되는 패키지에 대한 자세한 내용은 [지원 패키지](#supporting-packages)을 참조하십시오.
+
+AEM에서 GraphQL 쿼리를 활성화하려면 `/content/cq:graphql/global/endpoint`에서 끝점을 만듭니다.
+
+* 노드 `cq:graphql` 및 `global`은(는) `sling:Folder` 유형이어야 합니다.
+* 노드 `endpoint`은(는) `nt:unstructured` 유형이어야 하며 `graphql/sites/components/endpoint`의 `sling:resourceType`를 포함해야 합니다.
+
+>[!CAUTION]
+>
+>끝점에 현재 알려진 문제가 있습니다.
+>
+>* `cq:graphql` 항목은 **사이트** 콘솔에 표시됩니다.를 클릭합니다.
+   >  이것은 사용하지 않아야 합니다.
+
+
+>[!CAUTION]
+>
+>모든 사람이 끝점에 액세스할 수 있습니다. GraphQL 쿼리는 서버에 무거운 로드를 부과할 수 있으므로 특히 게시 인스턴스에서 보안상의 문제가 될 수 있습니다.
+>
+>종단점에서 사용 사례에 적합한 ACL을 설정할 수 있습니다.
+
+>[!NOTE]
+>
+>종점이 곧바로 작동하지 않습니다. GraphQL 끝점](#additional-configurations-graphql-endpoint)에 대해 [추가 구성을 별도로 제공해야 합니다.
+
+>[!NOTE]
+>또한 [GraphiQL IDE](#graphiql-interface)를 사용하여 GraphQL 쿼리를 테스트하고 디버깅할 수 있습니다.
+
+### GraphQL 끝점에 대한 추가 구성 {#additional-configurations-graphql-endpoint}
+
+>[!NOTE]
+>
+>이러한 단계를 간소화하는 데 도움이 되는 패키지에 대한 자세한 내용은 [지원 패키지](#supporting-packages)을 참조하십시오.
+
+추가 구성이 필요합니다.
+
+* Dispatcher:
+   * 필수 URL을 허용하려면
+   * 필수
+* 별칭 URL:
+   * 끝점에 대해 간소화된 URL을 할당하려면
+   * 선택 사항입니다
+* OSGi 구성:
+   * GraphQL 서블릿 구성:
+      * 끝점에 대한 요청을 처리합니다.
+      * 구성 이름은 `org.apache.sling.graphql.core.GraphQLServlet`입니다. OSGi 팩토리 구성으로 제공해야 합니다.
+      * `sling.servlet.extensions` 을(를)  `[json]`
+      * `sling.servlet.methods` 을(를)  `[GET,POST]`
+      * `sling.servlet.resourceTypes` 을(를)  `[graphql/sites/components/endpoint]`
+      * 필수
+   * 스키마 서블릿 구성:
+      * GraphQL 스키마 만들기
+      * 구성 이름은 `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`입니다. OSGi 팩토리 구성으로 제공해야 합니다.
+      * `sling.servlet.extensions` 을(를)  `[GQLschema]`
+      * `sling.servlet.methods` 을(를)  `[GET]`
+      * `sling.servlet.resourceTypes` 을(를)  `[graphql/sites/components/endpoint]`
+      * 필수
+   * CSRF 구성:
+      * 끝점에 대한 보안 보호
+      * 구성 이름은 `com.adobe.granite.csrf.impl.CSRFFilter`입니다.
+      * 제외된 경로의 기존 목록에 `/content/cq:graphql/global/endpoint`을(를) 추가합니다(`filter.excluded.paths`).
+      * 필수
+
+### 지원 패키지 {#supporting-packages}
+
+GraphQL 끝점의 설정을 간소화하기 위해 Adobe은 [GraphQL 샘플 프로젝트](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) 패키지를 제공합니다.
+
+이 아카이브는 필요한 추가 구성](#additional-configurations-graphql-endpoint) 및 [GraphQL 끝점](#enabling-graphql-endpoint)을(를) 모두 포함합니다. [ 일반 AEM 인스턴스에 설치된 경우 `/content/cq:graphql/global/endpoint`에 완전히 작동하는 GraphQL 끝점이 표시됩니다.
+
+이 패키지는 GraphQL 프로젝트에 대한 청사진입니다. 패키지 사용 방법에 대한 자세한 내용은 **README** 패키지를 참조하십시오.
+
+필요한 구성을 수동으로 만들려면 Adobe에서 전용 [GraphQL 끝점 콘텐츠 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip)도 제공합니다. 이 콘텐츠 패키지에는 구성이 없는 GraphQL 끝점만 들어 있습니다.
+
 ## 그래픽 QL 인터페이스 {#graphiql-interface}
 
-AEM 그래프 API에는 표준 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) 인터페이스의 구현이 포함되어 있습니다. 이렇게 하면 쿼리를 직접 입력하고 테스트할 수 있습니다.
+<!--
+AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
+-->
+
+AEM GraphQL에서 표준 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) 인터페이스의 구현을 사용할 수 있습니다. AEM](#installing-graphiql-interface)과 함께 [설치할 수 있습니다.
+
+이 인터페이스를 사용하면 쿼리를 직접 입력하고 테스트할 수 있습니다.
 
 예:
 
@@ -63,6 +213,12 @@ AEM 그래프 API에는 표준 [GraphiQL](https://graphql.org/learn/serving-over
 여기에는 내역 및 온라인 설명서와 함께 구문 강조, 자동 완성, 자동 제안 등의 기능이 제공됩니다.
 
 ![GraphiQL ](assets/cfm-graphiql-interface.png "인터페이스 그래픽QL 인터페이스")
+
+### AEM GraphiQL 인터페이스 {#installing-graphiql-interface} 설치
+
+GraphiQL 사용자 인터페이스는 전용 패키지와 함께 AEM에 설치할 수 있습니다.[GraphiQL 컨텐츠 패키지 v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip) 패키지.
+
+자세한 내용은 **README** 패키지를 참조하십시오.다양한 시나리오에서 AEM 인스턴스에 설치하는 방법에 대한 자세한 내용을 제공합니다.
 
 ## 작성 및 게시 환경에 대한 사용 사례 {#use-cases-author-publish-environments}
 
@@ -76,13 +232,23 @@ AEM 그래프 API에는 표준 [GraphiQL](https://graphql.org/learn/serving-over
       * Cloud Service으로 AEM의 GraphQL은 현재 읽기 전용 API입니다.
       * REST API는 CR(u)D 작업에 사용할 수 있습니다.
 
+## 권한 {#permission}
+
+권한은 자산에 액세스하는 데 필요한 권한입니다.
+
 ## 스키마 생성 {#schema-generation}
 
 GraphQL은 강력한 형식의 API로, 데이터를 유형별로 명확히 구조화하고 구성해야 합니다.
 
 GraphQL 사양에서는 특정 인스턴스에서 데이터를 심문하기 위한 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트는 쿼리에 필요한 모든 유형을 포함하는 [스키마](#schema-generation)를 반입해야 합니다.
 
-컨텐츠 조각의 경우 GraphQL 스키마(구조 및 유형)는 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) 및 해당 데이터 유형을 기반으로 합니다.
+컨텐츠 조각의 경우 GraphQL 스키마(구조 및 유형)는 **Enabled** [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) 및 해당 데이터 유형을 기반으로 합니다.
+
+>[!CAUTION]
+>
+>모든 GraphQL 스키마(**Enabled**&#x200B;인 컨텐츠 조각 모델에서 파생됨)는 GraphQL 끝점을 통해 읽을 수 있습니다.
+>
+>즉, 민감한 데이터가 이러한 방식으로 누설될 수 있으므로 사용할 수 없도록 해야 합니다.예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
 
 예를 들어 사용자가 `Article`이라는 컨텐츠 조각 모델을 만든 경우 AEM은 `ArticleModel` 유형의 `article` 객체를 생성합니다. 이 유형의 필드는 모델에 정의된 필드 및 데이터 유형에 해당합니다.
 
@@ -95,7 +261,7 @@ GraphQL 사양에서는 특정 인스턴스에서 데이터를 심문하기 위�
 
    생성된 유형 `ArticleModel`에 여러 개의 [필드](#fields)가 포함되어 있음을 보여줍니다.
 
-   * 이 중 3개는 사용자가 제어했습니다.`author`, `main` 및 `linked_article`.
+   * 이 중 3개는 사용자가 제어했습니다.`author`, `main` 및 `referencearticle`.
 
    * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 컨텐츠 조각에 대한 정보를 제공하는 유용한 방법을 나타냅니다.이 예에서 `_path`, `_metadata`, `_variations`입니다. 이러한 [도우미 필드](#helper-fields)는 사용자가 정의한 항목과 자동 생성된 항목을 구별하기 위해 선행 `_`으로 표시됩니다.
 
@@ -121,7 +287,7 @@ Sites GraphQL 서비스는 컨텐츠 조각 모델에 대한 수정 사항에 �
 >
 >REST api를 통해 컨텐츠 조각 모델에 대해 벌크 업데이트를 수행하거나, 그렇지 않을 경우 주의하는 것이 중요합니다.
 
-스키마는 GraphQL 쿼리와 동일한 종단점을 통해 제공되며, 클라이언트는 확장명 `GQLschema`과(와) 함께 스키마를 호출한다는 사실을 처리합니다. 예를 들어 `/content/graphql/endpoint.GQLschema`에서 간단한 `GET` 요청을 수행하면 Content-type이 있는 스키마 출력이 발생합니다.`text/x-graphql-schema;charset=iso-8859-1`.
+스키마는 GraphQL 쿼리와 동일한 종단점을 통해 제공되며, 클라이언트는 확장명 `GQLschema`과(와) 함께 스키마를 호출한다는 사실을 처리합니다. 예를 들어 `/content/cq:graphql/global/endpoint.GQLschema`에서 간단한 `GET` 요청을 수행하면 Content-type이 있는 스키마 출력이 발생합니다.`text/x-graphql-schema;charset=iso-8859-1`.
 
 ## 필드 {#fields}
 
@@ -168,7 +334,7 @@ AEM용 GraphQL은 사용자 생성 필드에 대한 데이터 유형 외에도 �
 
 ```xml
 {
-  persons {
+  personList {
     items {
       _path
     }
@@ -180,15 +346,17 @@ AEM용 GraphQL은 사용자 생성 필드에 대한 데이터 유형 외에도 �
 
 ```xml
 {
-    person(_path="/content/dam/path/to/fragment/john-doe") {
-        _path
-        name
-        first-name
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      firstName
+      name
     }
+  }
 }
 ```
 
-[샘플 쿼리 - 단일 도시 조각](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-city-fragment)을 참조하십시오.
+[샘플 쿼리 - 단일 특정 도시 조각](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)을 참조하십시오.
 
 #### 메타데이터 {#metadata}
 
@@ -217,12 +385,14 @@ GraphQL을 통해 AEM은 컨텐츠 조각의 메타데이터도 표시합니다.
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _path
-    _metadata {
-      stringMetadata {
-        name
-        value
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      _metadata {
+        stringMetadata {
+          name
+          value
+        }
       }
     }
   }
@@ -246,8 +416,10 @@ GraphQL을 통해 AEM은 컨텐츠 조각의 메타데이터도 표시합니다.
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _variations
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _variations
+    }
   }
 }
 ```
@@ -269,7 +441,7 @@ GraphQL은 쿼리에 변수를 배치할 수 있도록 허용합니다. 자세�
 ```xml
 ### query
 query GetArticlesByVariation($variation: String!) {
-    articles(variation: $variation) {
+    articleList(variation: $variation) {
         items {
             _path
             author
@@ -292,10 +464,11 @@ GraphQL에서는 GraphQL 지시문이라는 변수를 기반으로 쿼리를 변
 ![GraphQL ](assets/cfm-graphqlapi-04.png "지시어GraphQL 지시문")
 
 ```xml
-query getAdventureByType($includePrice: Boolean!) {
-  adventures {
+### query
+query GetAdventureByType($includePrice: Boolean!) {
+  adventureList {
     items {
-      adventureType
+      adventureTitle
       adventurePrice @include(if: $includePrice)
     }
   }
@@ -306,6 +479,47 @@ query getAdventureByType($includePrice: Boolean!) {
     "includePrice": true
 }
 ```
+
+## {#filtering} 필터링
+
+GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수도 있습니다.
+
+필터링은 논리 연산자 및 표현식을 기반으로 하는 구문을 사용합니다.
+
+예를 들어 다음(기본) 쿼리는 `Jobs` 또는 `Smith` 이름을 가진 모든 사람을 필터링합니다.
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _logOp: OR
+      _expressions: [
+        {
+          value: "Jobs"
+        },
+        {
+          value: "Smith"
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+자세한 예는 다음을 참조하십시오.
+
+* aem 확장의 [GraphQL 세부 사항](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+
+* [이 샘플 컨텐츠 및 구조를 사용한 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
+
+   * 그리고 샘플 쿼리에 사용할 수 있도록 준비된 [샘플 컨텐트 및 구조](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+
+* [WKND 프로젝트를 기반으로 하는 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
 ## 지속적인 쿼리(캐싱) {#persisted-queries-caching}
 
@@ -511,7 +725,7 @@ POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 �
 
    * alloworiin:[도메인] 또는 alloworiinregexp:[도메인 regex]
    * supportedmethods:[POST]
-   * 할당 패스:[&quot;/apps/graphql-enablement/content/endpoint.gql(/persistent)?&quot;]
+   * 할당 패스:[&quot;/content/graphql/global/endpoint.json&quot;]
 
 * GraphQL 지속적인 쿼리 끝점에 액세스:
 
@@ -524,41 +738,19 @@ POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 �
 >다음은 고객의 책임입니다.
 >
 >* 신뢰할 수 있는 도메인에 대한 액세스 권한만 부여할 수 있습니다.
->* 와일드카드 [*] 구문을 사용하지 않음;GraphQL 끝점을 전체 세계에 노출합니다.
+>* 중요한 정보가 노출되지 않도록 합니다.
+>* 와일드카드 [*] 구문을 사용하지 않음;이렇게 하면 GraphQL 끝점에 대한 인증된 액세스가 모두 비활성화되고 이를 전체 세계에 노출할 수 있습니다.
 
 
+>[!CAUTION]
+>
+>모든 GraphQL [스키마](#schema-generation)(**Enabled**&#x200B;인 컨텐츠 조각 모델에서 파생됨)는 GraphQL 끝점을 통해 읽을 수 있습니다.
+>
+>즉, 민감한 데이터가 이러한 방식으로 누설될 수 있으므로 사용할 수 없도록 해야 합니다.예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
 
-## {#filtering} 필터링
+## 인증 {#authentication}
 
-GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수도 있습니다.
-
-필터링은 논리 연산자 및 표현식을 기반으로 하는 구문을 사용합니다.
-
-예를 보려면 다음을 참조하십시오.
-
-* aem 확장의 [GraphQL 세부 사항](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-some-extensions)
-
-* [샘플 쿼리에서 사용할 ](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) 수 있도록 준비된 샘플 컨텐츠 및 구조
-
-* [이 샘플 컨텐츠 및 구조를 사용한 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
-
-* [WKND 프로젝트를 기반으로 하는 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
-
-## 권한 {#permission}
-
-권한은 자산에 액세스하는 데 필요한 권한입니다.
-
-<!-- to be addressed later -->
-
-<!-- 
-## Authentication {#authentication}
--->
-
-<!-- to be addressed later -->
-
-<!-- 
-## Caching {#caching}
--->
+내용 조각에 대한 [원격 AEM GraphQL 쿼리](/help/assets/content-fragments/graphql-authentication-content-fragments.md)를 참조하십시오.
 
 <!-- to be addressed later -->
 
@@ -571,54 +763,6 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 <!--
 ## Paging {#paging}
 -->
-
-## 끝점 {#end-points}
-
-끝점은 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 이 경로를 사용하여(또는 앱) 다음 작업을 수행할 수 있습니다.
-
-* GraphQL 스키마 액세스,
-* GraphQL 쿼리 보내기,
-* GraphQL 쿼리에 대한 응답을 받습니다.
-
-AEM에서 GraphQL 서버에 액세스하려면 끝점을 구성해야 합니다. 여기에는 2개의 OSGi 구성도 포함됩니다.
-
-1. GraphQL 스키마 검색 요청에 응답하는 Sling 스키마 서블릿:
-
-   ![AEM Sites GraphQL 스키마 서블릿](assets/cfm-endpoint-01.png)
-
-   * **선택기** (`sling.servlet.selectors`)는 비워 두어야 합니다.
-
-   * **리소스 유형** (`sling.servlet.resourceTypes`) GraphQL 서블릿이 수신해야 하는 리소스 유형을 정의합니다.
-예:
-      `graphql-enablement/components/endpoint`.
-
-   * **메서드** (&#39;sling.servlet.methods^)
-
-      서블릿이 수신해야 하는 HTTP 메서드;보통 `GET`입니다.
-
-   * **확장** (`sling.servlet.extensions`)
-
-      스키마 서블릿이 응답할 확장을 지정합니다. 이 경우 GraphQL 사양과 호환되는 것은 `GQLschema`입니다.
-
-2. graphql 요청에 응답하는 서블릿:
-
-   ![Apache Sling GraphQL 서블릿](assets/cfm-endpoint-02.png)
-
-   * **선택기** (`sling.servlet.selectors`)는 비워 두어야 합니다.
-
-   * **리소스 유형** (`sling.servlet.resourceTypes`) GraphQL 서블릿이 응답해야 하는 리소스 유형입니다.
-예, `graphql-enablement/components/endpoint`.
-
-   * **메서드** (`sling.servlet.methods`) GraphQL 서블릿이 응답해야 하는 HTTP 메서드(일반적으로  `GET` 및  `POST`)입니다.
-
-   * **확장** (`sling.servlet.extensions`) 일반적으로 GraphQL 요청에 대해 수신되는 확장입니다 `gql`.
-
-3. 이제 이러한 구성에 정의된 sling:resourceType의 노드인 끝점을 만들어야 합니다.
-예를 들어 GraphQL 스키마 검색을 위한 끝점을 만들려면 `/apps/<my-site>/graphql` 아래에 새 노드를 만듭니다.
-
-   * 이름: `endpoint`
-   * 기본 유형:`nt:unstructured`
-   * sling:resourceType: `graphql-enablement/components/endpoint`
 
 ## FAQ {#faqs}
 
