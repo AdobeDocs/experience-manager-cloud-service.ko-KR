@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 translation-type: tm+mt
-source-git-commit: 8125d78d4751f22bcc5dd22acbdfd21ce62fc53d
+source-git-commit: a01a55f85639613e5febd2588c9c55590f888124
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2284'
 ht-degree: 1%
 
 ---
@@ -246,10 +246,10 @@ AEM의 이메일은 [Day CQ Mail Service OSGi 서비스](https://docs.adobe.com/
 
 * `smtp.port`을(를) `465`로 설정
 * `smtp.ssl`을(를) `true`로 설정
-* `smtp.starttls`을(를) `false`로 설정
 
 포트 587이 요청된 경우(메일 서버가 포트 465를 지원하지 않는 경우에만 허용됨):
 
 * `smtp.port`을(를) `587`로 설정
 * `smtp.ssl`을(를) `false`로 설정
-* `smtp.starttls`을(를) `true`로 설정
+
+`smtp.starttls` 속성은 런타임에 Cloud Service으로 AEM에 의해 적절한 값으로 자동 설정됩니다. 따라서 `smtp.tls`이 true로 설정된 경우 `smtp.startls`은 무시됩니다. `smtp.ssl`이(가) false로 설정된 경우 `smtp.starttls`이(가) true로 설정됩니다. 이것은 OSGI 구성에 설정된 `smtp.starttls` 값에 상관없이 동일합니다.
