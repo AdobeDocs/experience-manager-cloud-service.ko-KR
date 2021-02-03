@@ -1,10 +1,10 @@
 ---
 title: 스마트 태그 지정 비디오 에셋
-description: 스마트 태그 지정 비디오 에셋은 Adobe Sensei 서비스를 사용하여 컨텍스트 및 설명 태그를 적용하여 에셋 태그를 자동화합니다.
+description: Experience Manager은  [!DNL Adobe Sensei]을(를) 사용하여 상황에 맞는 및 설명형 스마트 태그를 비디오에 자동으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 스마트 태그 지정 비디오 자산 {#video-smart-tags}
 
-매력적인 디지털 경험을 신속하게 제공하기 위해 수동으로 작업해야 하는 번거로운 작업을 줄일 수 있는 새로운 컨텐츠의 필요성이 점차 증가하고 있습니다. [!DNL Adobe Experience Manager] 는 인공 지능을 기반으로 비디오 에셋의 자동 태그 지정을  [!DNL Cloud Service] 지원합니다. 비디오에 수동으로 태그를 지정하면 시간이 많이 걸릴 수 있습니다. 그러나 Adobe Sensei 기반의 동영상 스마트 태그 지정 기능은 인공 지능 모델을 사용하여 비디오 컨텐츠를 분석하고 비디오 에셋에 태그를 추가합니다. DAM 사용자가 고객에게 풍부한 경험을 제공하는 데 걸리는 시간을 줄일 수 있습니다. Adobe의 기계 학습 서비스는 비디오에 대해 두 개의 태그 세트를 생성합니다. 반면에 한 세트는 해당 비디오의 개체, 장면 및 속성에 해당합니다.다른 세트는 음주, 달리기, 조깅과 같은 행동과 관련이 있다.
+매력적인 디지털 경험을 신속하게 제공하기 위해 수동으로 작업해야 하는 번거로운 작업을 줄일 수 있는 새로운 컨텐츠의 필요성이 점차 증가하고 있습니다. [!DNL Adobe Experience Manager] 는 인공 지능을 사용하여 비디오 에셋의 자동 태그 지정을  [!DNL Cloud Service] 지원합니다. 비디오에 수동으로 태그를 지정하면 시간이 많이 걸릴 수 있습니다. 그러나, [!DNL Adobe Sensei] 제공 비디오 스마트 태그 지정 기능은 인공 지능 모델을 사용하여 비디오 컨텐츠를 분석하고 비디오 에셋에 태그를 추가합니다. DAM 사용자가 고객에게 풍부한 경험을 제공하는 데 걸리는 시간을 줄일 수 있습니다. Adobe의 기계 학습 서비스는 비디오에 대해 두 개의 태그 세트를 생성합니다. 반면에 한 세트는 해당 비디오의 개체, 장면 및 속성에 해당합니다.다른 세트는 음주, 달리기, 조깅과 같은 행동과 관련이 있다.
 
-스마트 태깅에 지원되는 비디오 파일 형식(및 해당 코덱은 MP4(H264/AVC), MKV(H264/AVC), MOV(H264/AVC, 모션 JPEG), AVI(indo4), FLV(H2 64/AVC, vp6f) 및 WMV(WMV2). 또한 이 기능을 사용하면 최대 300MB의 비디오에 태그를 지정할 수 있습니다. 비디오 에셋의 자동화된 태깅은 비디오가 업로드된 후 또는 재처리가 트리거된 후에 표준 에셋 처리(축소판 만들기 및 메타데이터 추출 포함)로 이루어집니다. 스마트 태그는 자산 [!UICONTROL 속성]에서 [신뢰 점수](#confidence-score-video-tag)의 내림차순으로 표시됩니다. 비디오 태그 지정은 기본적으로 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service](으)로 활성화됩니다. 그러나 폴더에서 [비디오 스마트 태그 지정 수신 거부](#opt-out-video-smart-tagging)할 수 있습니다.
+비디오 에셋의 자동 태그 지정은 비디오가 업로드된 후 또는 재처리가 트리거될 때 축소판 만들기 및 메타데이터 추출과 함께 표준 에셋 처리 시 발생합니다. 스마트 태그는 자산 [!UICONTROL 속성]에서 [신뢰 점수](#confidence-score-video-tag)의 내림차순으로 표시됩니다. 비디오 태그 지정은 기본적으로 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service](으)로 활성화됩니다. 그러나 폴더에서 [비디오 스마트 태그 지정 수신 거부](#opt-out-video-smart-tagging)할 수 있습니다.
 
 ## 업로드 시 스마트 태그 지정 비디오{#smart-tag-assets-on-ingestion}
 
-[비디오 에셋](add-assets.md#upload-assets)을 [!DNL Cloud Service]으로 업로드하면 비디오는 ![처리](assets/do-not-localize/assetprocessing.png)됩니다. [!DNL Adobe Experience Manager] 처리가 완료되면 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그] 아래의 비디오에 자동으로 추가됩니다. asset compute 서비스는 Adobe Sensei을 활용하여 이러한 스마트 태그를 만듭니다.
+[비디오 자산](add-assets.md#upload-assets)을 [!DNL Cloud Service]으로 업로드하면 비디오가 처리됩니다. [!DNL Adobe Experience Manager] 처리가 완료되면 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭을 참조하십시오. 스마트 태그는 [!UICONTROL 스마트 태그] 아래의 비디오에 자동으로 추가됩니다. 자산 마이크로서비스는 [!DNL Adobe Sensei]을 활용하여 이러한 스마트 태그를 만듭니다.
 
 ![스마트 태그가 비디오에 추가되고 자산 속성의 기본 탭에 표시됩니다.](assets/smart-tags-added-to-videos.png)
 
@@ -43,6 +43,8 @@ DAM에 있는 기존 비디오 에셋은 자동으로 태그가 지정되지 않
 1. 전체 폴더 또는 특정 비디오 에셋을 선택합니다.
 
 1. ![자산 재처리 아이콘](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 자산 재처리] 아이콘을 선택하고 [!UICONTROL 전체 프로세스] 옵션을 선택합니다.
+
+<!-- TBD: Limit size -->
 
 ![자산을 재처리하여 기존 DAM 저장소에 태그 추가](assets/reprocess.gif)
 
@@ -123,13 +125,13 @@ DAM에 있는 기존 비디오 에셋은 자동으로 태그가 지정되지 않
 
 ## 제한 사항 {#video-smart-tagging-limitations}
 
-* 비디오 자산 태깅을 위한 스마트 태그 서비스(또는 향상된 스마트 태그) 교육은 아직 지원되지 않습니다.
+* 특정 비디오를 사용하여 비디오에 스마트 태그를 적용하는 서비스를 교육할 수 없습니다. 기본 [!DNL Adobe Sensei] 설정에서 작동합니다.
 
 * 태그 지정 진행 상태가 표시되지 않습니다.
 
-* 300MB 이하의 비디오만 태깅에 적합합니다. Adobe Sensei 서비스 스마트 기능은 이 기준을 충족하는 비디오에 태그를 지정하고 폴더의 다른 비디오에 태그 지정을 건너뜁니다.
+* 파일 크기가 300MB보다 작은 비디오만 자동 태그가 지정됩니다. [!DNL Adobe Sensei] 서비스는 크기가 큰 비디오 파일을 건너뜁니다.
 
-* 이러한 파일 형식(지원되는 코덱과 MP4), MKV(H264/AVC), MKV(H264/AVC), MOV(H264/AVC, 모션 JPEG), AVI(indo4), FLV(H222 64/AVC, vp6f) 및 WMV(WMV2)에 태그를 지정할 수 있습니다.
+* [스마트 태그](/help/assets/smart-tags.md#smart-tags-supported-file-formats)에 언급된 파일 형식의 비디오와 지원되는 코덱만 태그가 지정됩니다.
 
 >[!MORELIKETHIS]
 >
