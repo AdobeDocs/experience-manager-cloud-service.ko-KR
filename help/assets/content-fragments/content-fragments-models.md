@@ -2,21 +2,15 @@
 title: 컨텐츠 조각 모델
 description: 컨텐츠 조각 모델은 구조화된 컨텐츠와 함께 컨텐츠 조각을 생성하는 데 사용됩니다.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 43%
+source-wordcount: '2156'
+ht-degree: 26%
 
 ---
 
 
 # 컨텐츠 조각 모델 {#content-fragment-models}
-
->[!CAUTION]
->
->요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
->
->AEM용 API를 Cloud Service 프로그램으로 활성화하려면 [Adobe 지원](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)에 문의하십시오.
 
 컨텐츠 조각 모델은 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)에 대한 컨텐츠 구조를 정의합니다.
 
@@ -25,6 +19,7 @@ ht-degree: 43%
 1. [인스턴스에 대한 컨텐츠 조각 모델 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [컨텐츠 조각 모델 생성](#creating-a-content-fragment-model) 및  [구성](#defining-your-content-fragment-model)
 1. [컨텐츠 조각을 ](#enabling-disabling-a-content-fragment-model) 만들 때 사용할 컨텐츠 조각을 만들 때 사용할 컨텐츠 조각 모델을 활성화합니다.
+1. [정책을 구성하여 필요한 자산 폴더의 컨텐츠 조각 ](#allowing-content-fragment-models-assets-folder) 모델을  **허용합니다**.
 
 ## 컨텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
 
@@ -36,7 +31,7 @@ ht-degree: 43%
    >
    >[컨텐츠 조각 모델 사용이 활성화되지 않은](/help/assets/content-fragments/content-fragments-configuration-browser.md) 경우 **만들기** 옵션을 사용할 수 없습니다.
 
-1. **모델 제목**&#x200B;을 지정합니다. **태그**&#x200B;와 필요한 경우 **설명**&#x200B;을 추가할 수도 있습니다.
+1. **모델 제목**&#x200B;을 지정합니다. **태그**, **설명**&#x200B;을 추가하고 필요한 경우 **모델** 활성화를 선택하여 모델](#enabling-disabling-a-content-fragment-model)을 활성화할 수 있습니다.[
 
    ![제목 및 설명](assets/cfm-models-02.png)
 
@@ -64,70 +59,35 @@ ht-degree: 43%
    >
    >필드가 **필수**&#x200B;이면 왼쪽 창에 표시되는 **레이블**&#x200B;이 지정된 레이블은 별표(*****)로 표시됩니다.
 
+   ![속성](assets/cfm-models-03.png)
+
 1. **필드를 추가하려면**
 
    * 필수 데이터 유형을 필드에 필요한 위치로 드래그합니다.
 
-   * 모델에 필드가 추가되면 오른쪽 패널에 그 특정 데이터 유형에 대해 정의할 수 있는 **속성**이 표시됩니다. 여기에서 해당 필드에 필요한 사항을 정의할 수 있습니다.
-많은 속성은 자체 설명이므로 자세한 내용은 [속성](#properties)을 참조하십시오.
+      ![필드에 대한 데이터 유형](assets/cfm-models-04.png)
+
+   * 모델에 필드가 추가되면 오른쪽 패널에 그 특정 데이터 유형에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 해당 필드에 필요한 사항을 정의할 수 있습니다.
+
+      * 많은 속성은 자체 설명이므로 자세한 내용은 [속성](#properties)을 참조하십시오.
+      * **필드 레이블**&#x200B;을 입력하면 **속성 이름**(비어 있는 경우)이 자동으로 완료되고 이후 수동으로 업데이트할 수 있습니다.
+
+      예:
+
+      ![필드 속성](assets/cfm-models-05.png)
+
 
 1. **필드를 제거하려면**
 
    필요한 필드를 선택한 후 휴지통 아이콘을 클릭/탭합니다. 작업을 확인하는 메시지가 나타납니다.
 
-1. 필요한 모든 필드를 추가하고 필요에 따라 관련 속성을 정의합니다.
+   ![제거](assets/cfm-models-06.png)
 
-1. **저장**&#x200B;을 선택하여 정의를 유지합니다.
-
-<!--
-## Defining your Content Fragment Model {#defining-your-content-fragment-model}
-
-The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
-
->[!CAUTION]
->
->Editing an existing content fragment model can impact dependent fragments.
-
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your content fragment model.
-1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
-
-   Once open the model editor shows:
-
-    * left: fields already defined
-    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
-
-   >[!NOTE]
-   >
-   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
-
-   ![properties](assets/cfm-models-03.png)
-
-1. **To Add a Field**
-
-    * Drag a required data type to the required location for a field:
-
-      ![data type to field](assets/cfm-models-04.png)
-
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
-      For example:
-
-      ![field properties](assets/cfm-models-05.png)
-
-1. **To Remove a Field**
-
-   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
-
-   ![remove](assets/cfm-models-06.png)
-
-1. Add all required fields, and define the related properties, as required. For example:
+1. 필요한 모든 필드를 추가하고 필요에 따라 관련 속성을 정의합니다. 예:
 
    ![save](assets/cfm-models-07.png)
 
-1. Select **Save** to persist the definition.
--->
+1. **저장**&#x200B;을 선택하여 정의를 유지합니다.
 
 ## 데이터 유형 {#data-types}
 
@@ -149,19 +109,16 @@ The content fragment model effectively defines the structure of the resulting co
    * 조각 작성자가 태그 영역에 액세스하고 선택할 수 있습니다.
 * **컨텐츠 참조**
    * 모든 유형의 다른 컨텐츠를 참조합니다.은(는) [중첩 컨텐트 만들기](#using-references-to-form-nested-content)에 사용할 수 있습니다.
-
-<!--
-* **Fragment Reference**
-  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
-  * The data type can be configured to allow fragment authors to:
-    * Edit the referenced fragment directly.
-    * Create a new content fragment, based on the appropriate model  
-* **JSON Object**
-  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
-    * To allow AEM to store direct JSON that you have copy/pasted from another service.
-    * The JSON will be passed through, and output as JSON in GraphQL.
-    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
--->
+* **조각 참조**
+   * 기타 컨텐츠 조각 참조은(는) [중첩 컨텐트 만들기](#using-references-to-form-nested-content)에 사용할 수 있습니다.
+   * 조각 작성자가 다음을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
+      * 참조된 조각을 직접 편집합니다.
+      * 적절한 모델을 기반으로 새 컨텐츠 조각 만들기
+* **JSON 개체**
+   * 컨텐츠 조각 작성자가 조각의 해당 요소에 JSON 구문을 입력할 수 있습니다.
+      * 다른 서비스에서 복사/붙여 넣은 JSON을 AEM에 저장하도록 허용하려면.
+      * JSON은 전달되고 GraphQL에서 JSON으로 출력됩니다.
+      * 컨텐츠 조각 편집기에 JSON 구문 강조, 자동 완성 및 오류 강조 표시가 포함되어 있습니다.
 
 ## 속성 {#properties}
 
@@ -187,15 +144,26 @@ The content fragment model effectively defines the structure of the resulting co
 
    컨텐츠 조각 모델의 **기본 유형** 변경은 해당 조각을 편집기에서 열고 저장한 후에 기존 관련 컨텐츠 조각에만 적용됩니다.
 
-<!--
-* **Translatable**
-  Checking the "Translatable" checkbox on a field in CF model editor will
+* ****
+UniqueContent(특정 필드의 경우)는 현재 모델에서 생성된 모든 컨텐츠 조각에서 고유해야 합니다.
 
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+   컨텐츠 작성자가 동일한 모델의 다른 조각에 이미 추가된 컨텐츠를 반복할 수 없도록 하는 데 사용됩니다.
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
--->
+   예를 들어 컨텐츠 조각 모델의 `Country`라는 단일 행 텍스트&#x200B;**필드는 두 개의 종속 컨텐츠 조각에 있는 `Japan` 값을 가질 수 없습니다.** 두 번째 인스턴스를 시도하면 경고가 표시됩니다.
+
+   >[!NOTE]
+   언어 루트별로 고유성이 보장됩니다.
+
+   >[!NOTE]
+   변형은 동일한 조각의 변형과 동일한 *고유* 값을 가질 수 있지만 다른 조각의 변형에 사용된 값과 동일한 값을 가질 수는 없습니다.
+
+* **번역**
+가능 CF 모델 편집기의 필드에서 &quot;번역 가능&quot; 체크 상자를 선택하면
+
+   * 아직 없는 경우 필드의 속성 이름이 번역 구성 `/content/dam/<tenant>` 컨텍스트에 추가되어 있는지 확인합니다.
+   * GraphQL의 경우:[컨텐츠 조각] 필드의 `<translatable>` 속성을 `yes`로 설정하여 번역 가능한 컨텐츠만 포함하는 JSON 출력에 대해 GraphQL 쿼리 필터를 허용합니다.
+
+* 특정 데이터 유형 및 해당 속성에 대한 자세한 내용은 **[조각 참조(중첩된 조각)](#fragment-reference-nested-fragments)**&#x200B;을 참조하십시오.
 
 ## 유효성 검사 {#validation}
 
@@ -205,72 +173,65 @@ The content fragment model effectively defines the structure of the resulting co
    * 미리 정의된 regex와 비교합니다.
 * **번호**
    * 특정 값을 확인합니다.
+* **컨텐츠 참조**
+   * 특정 유형의 컨텐츠를 테스트합니다.
+   * 지정된 파일 크기 이하의 자산만 참조할 수 있습니다.
+   * 미리 정의된 폭 및/또는 높이 범위(픽셀 단위) 내의 이미지만 참조할 수 있습니다.
+* **조각 참조**
+   * 특정 컨텐츠 조각 모델을 테스트합니다.
 
 <!--
-* **Content Reference**
-  * Test for specific types of content.
-  * Only images within a predefined range of width and height (in pixels) can be referenced. 
-  * Only assets of specified file size or smaller can be referenced. 
   * Only predefined file types can be referenced.
   * No more than the predefined number of assets can be referenced. 
   * No more than the predefined number of fragments can be referenced.
-* **Fragment Reference**
-  * Test for a specific content fragment model.
 -->
 
-<!--
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## 참조 기능을 사용하여 중첩 컨텐트 {#using-references-to-form-nested-content} 만들기
 
-Content Fragments can form nested content, using either of the following data types:
+컨텐츠 조각은 다음 데이터 유형 중 하나를 사용하여 중첩된 컨텐츠를 만들 수 있습니다.
 
-* **[Content Reference](#content-reference)**
-  * Provides a simple reference to other content; of any type.
-  * Can be configured for a one or multiple references (in the resulting fragment).
+* **[컨텐츠 참조](#content-reference)**
+   * 다른 콘텐트에 대한 간단한 참조를 제공합니다.모든 유형의
+   * 하나 이상의 참조(결과 조각에서)에 대해 구성할 수 있습니다.
 
-* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
-  * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
-    >[!NOTE]
-    >
-    >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-  * Can be configured for one or multiple references (in the resulting fragment)..
+* **[조각 참조](#fragment-reference-nested-fragments)** (중첩된 조각)
+   * 지정된 특정 모델에 따라 다른 조각을 참조합니다.
+   * 구조화된 데이터를 포함/검색할 수 있습니다.
+
+      >[!NOTE]
+      이 방법은 GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)과 함께 내용 조각을 사용하여 [헤드리스 컨텐츠 전달과 함께 특히 유용합니다.
+   * 하나 이상의 참조(결과 조각에서)에 대해 구성할 수 있습니다.
 
 >[!NOTE]
->
->AEM has a recurrence protection for:
->
->* Content References
->  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
->
->* Fragment References in GraphQL 
->  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+AEM은 다음과 같은 경우에 재발을 보호할 수 있습니다.
+* 컨텐츠 참조
+이렇게 하면 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 생길 수 있습니다.
 
-### Content Reference {#content-reference}
+* GraphQL의 조각 참조
+서로 참조하는 여러 개의 컨텐츠 조각을 반환하는 딥 쿼리를 만들면 처음 발생할 때 null을 반환합니다.
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
 
-In addition to standard properties you can specify:
+### 컨텐츠 참조 {#content-reference}
 
-* The **Root Path** for any referenced content.
-* The content types that can be referenced.
-* Limitations for file sizes.
-* Image restraints.
--->
+컨텐츠 참조를 사용하면 다른 소스의 컨텐츠를 렌더링할 수 있습니다.예: 이미지 또는 컨텐츠 조각.
 
-<!-- Check screenshot - might need update
+표준 속성 외에 다음을 지정할 수 있습니다.
 
-   ![Content Reference](assets/cfm-content-reference.png)
--->
+* 참조된 콘텐츠에 대한 **루트 경로**.
+* 참조할 수 있는 컨텐츠 유형입니다.
+* 파일 크기에 대한 제한 사항.
+* 이미지 제한.
+   <!-- Check screenshot - might need update -->
+   ![컨텐츠 참조](assets/cfm-content-reference.png)
 
-<!--
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### 조각 참조(중첩된 조각) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+조각 참조는 하나 이상의 컨텐츠 조각을 참조합니다. 여러 레이어로 구조화된 데이터를 검색할 수 있으므로 앱에서 사용할 콘텐츠를 검색할 때 특히 관심 있는 기능입니다.
 
-For example:
+예:
 
-* A model defining details for an employee; these include:
-  * A reference to the model that defines the employer (company)
+* 사원의 상세내역을 정의하는 모델다음과 같습니다.
+   * 고용주(회사)를 정의하는 모델에 대한 참조
 
 ```xml
 type EmployeeModel {
@@ -287,44 +248,34 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->This is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+이는 GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)의 컨텐츠 조각을 사용하여 [헤드리스 컨텐츠 제공과 함께 특히 유용합니다.
 
-In addition to standard properties you can define:
+표준 속성 외에 다음을 정의할 수 있습니다.
 
-* **Render As**:
+* **렌더링 형식**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+   * **멀티필드**  - 조각 작성자가 여러 개의 개별 참조를 만들 수 있습니다.
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+   * **fragmentreference**  - 조각 작성자가 조각 단일 참조를 선택할 수 있습니다.
 
-* **Model Type**
-  Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
+* **모델**
+유형여러 모델을 선택할 수 있습니다. 컨텐츠 조각을 작성할 때 참조된 조각은 이러한 모델을 사용하여 만들어야 합니다.
 
-* **Root Path**
-  This specifies a root path for any fragments referenced.
+* **루트**
+경로참조된 모든 조각의 루트 경로를 지정합니다.
 
-* **Allow Fragment Creation**
+* **조각 생성 허용**
 
-  This will allow the fragment author to create a new fragment based on the appropriate model.
--->
+   그러면 조각 작성자가 적절한 모델을 기반으로 새 조각을 만들 수 있습니다.
 
-<!--
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
--->
+   * **fragmentreferencomposite**  - 조각 작성자가 여러 조각을 선택하여 합성을 작성할 수 있습니다.
 
-<!-- Check screenshot - might need update
+   <!-- Check screenshot - might need update -->
+   ![조각 참조](assets/cfm-fragment-reference.png)
 
-   ![Fragment Reference](assets/cfm-fragment-reference.png)
--->
-
-<!--
 >[!NOTE]
->
->A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
->
->There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
--->
+재발방지 장치가 마련되었다. 따라서 사용자는 조각 참조에서 현재 컨텐츠 조각을 선택할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 생길 수 있습니다.
+또한 GraphQL의 조각 참조에 대한 반복 보호가 있습니다. 서로 참조하는 두 개의 컨텐츠 조각에 대해 전체 쿼리를 만들면 null이 반환됩니다.
 
 ## 컨텐츠 조각 모델 {#enabling-disabling-a-content-fragment-model} 활성화 또는 비활성화
 
@@ -366,6 +317,40 @@ In addition to standard properties you can define:
 * 해당 빠른 작업(필요한 모델 위에 마우스 놓기)입니다.
 
 ![활성화된 모델 비활성화](assets/cfm-status-disable.png)
+
+## 자산 폴더 {#allowing-content-fragment-models-assets-folder}에 컨텐츠 조각 모델 허용
+
+컨텐츠 거버넌스를 구현하려면 자산 폴더에 **정책**&#x200B;을 구성하여 해당 폴더의 조각 만들기에 허용되는 컨텐츠 조각 모델을 제어할 수 있습니다.
+
+>[!NOTE]
+이 메커니즘은 페이지의 고급 속성에서 페이지 템플릿](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)과 해당 하위 페이지를 허용하는 [과 유사합니다.
+
+**허용된 컨텐츠 조각 모델**&#x200B;에 대한 **정책**&#x200B;을 구성하려면:
+
+1. 필요한 자산 폴더에 대해 **속성**&#x200B;을 탐색하고 엽니다.
+
+1. 다음 항목을 구성할 수 있는 **정책** 탭을 엽니다.
+
+   * **상속 위치`<folder>`**
+
+      정책은 새 하위 폴더를 만들 때 자동으로 상속됩니다.하위 폴더가 상위 폴더와 다른 모델을 허용해야 하는 경우 정책을 다시 구성할 수 있습니다(및 상속은 손상됨).
+
+   * **경로에서 허용된 컨텐츠 조각 모델**
+
+      여러 모델을 사용할 수 있습니다.
+
+   * **태그로 허용된 컨텐츠 조각 모델**
+
+      여러 모델을 사용할 수 있습니다.
+   ![컨텐츠 조각 모델 정책](assets/cfm-model-policy-assets-folder.png)
+
+1. **변경** 사항을 저장합니다.
+
+폴더에 대해 허용되는 컨텐츠 조각 모델은 다음과 같이 해결됩니다.
+* **허용된 컨텐츠 조각 모델**&#x200B;에 대한 **정책**.
+* 비어 있으면 상속 규칙을 사용하여 정책을 결정하십시오.
+* 상속 체인이 결과를 전달하지 않는 경우 해당 폴더에 대한 **Cloud Services** 구성(먼저 직접 그리고 상속을 통해)을 확인합니다.
+* 위 항목 중 어떤 결과도 제공하지 않으면 해당 폴더에 대해 허용되는 모델이 없습니다.
 
 ## 컨텐츠 조각 모델 삭제 {#deleting-a-content-fragment-model}
 
