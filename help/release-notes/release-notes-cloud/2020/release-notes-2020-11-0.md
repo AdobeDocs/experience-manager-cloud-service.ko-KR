@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 2020.11.0.'
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 4%
@@ -91,7 +91,7 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 ### [!DNL Cloud Manager] {#what-is-new-cm}의 새로운 기능
 
 * 이제 **환경** 카드 및 **환경** 요약 페이지의 환경 메뉴 옵션에서 사용자가 새 메뉴 옵션 **로컬 로그인**을 사용할 수 있습니다.
-자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md##login-locally)를 참조하십시오.
+자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#login-locally)를 참조하십시오.
 
 * Cloud Manager의 **학습** 탭이 UI의 새 이미지로 새로 고침되었습니다.
 
