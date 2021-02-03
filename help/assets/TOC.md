@@ -5,17 +5,17 @@ breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 74%
+source-wordcount: '476'
+ht-degree: 75%
 
 ---
 
 
 # [!DNL Assets] 가이드  {#assets}
 
-+ [[!DNL Assets] as [!DNL Cloud Service]](/help/assets/home.md)
++ [[!DNL Assets] 로서의  [!DNL Cloud Service]](/help/assets/home.md) 
 + [개요 및 새로운 기능](overview.md)
 + [다음으로  [!DNL Assets] 주목할 만한 변경 사항 [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] 아키텍처](architecture.md)
@@ -56,6 +56,7 @@ ht-degree: 74%
    + [자산 HTTP API](mac-api-assets.md)
    + [ Assets HTTP API의 컨텐츠 조각 지원](content-fragments/assets-api-content-fragments.md)
    + [컨텐츠 조각에 대한 AEM GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](content-fragments/graphql-authentication-content-fragments.md)
    + [컨텐츠 조각이 있는 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [연결된 자산](use-assets-across-connected-assets-instances.md)
    + [자산 보고서](asset-reports.md)
@@ -120,7 +121,7 @@ ht-degree: 74%
    + [URL을 웹 애플리케이션에 연결](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Dynamic Media에서 선택적 게시 작업](dynamic-media/selective-publishing.md)
+   + [Dynamic Media의 선택적 게시 작업](dynamic-media/selective-publishing.md)
    + [선택기를 사용한 작업](dynamic-media/working-with-selectors.md)
    + [DHTML 뷰어 지원 중단 FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash 뷰어 지원 중단 알림](dynamic-media/flash-viewers-eol.md)
