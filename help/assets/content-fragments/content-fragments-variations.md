@@ -2,10 +2,10 @@
 title: 변형 - 조각 컨텐츠 작성
 description: 변형을 사용하면 조각에 대한 컨텐츠를 작성한 다음 목적에 따라 해당 컨텐츠의 변형을 만들 수 있습니다(필요한 경우).
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1742'
-ht-degree: 87%
+source-wordcount: '2186'
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 87%
 
 * 조각에 사용할 [컨텐츠 입력](#authoring-your-content),
 * [마스터](#managing-variations) 컨텐츠의 **변형 만들기 및 관리,**
-* 조각을 만드는 데 사용한 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)의 이름을 참조하십시오.위쪽 도구 모음에서 조각 이름 아래에 표시됩니다.
 
 편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예를 들면 다음과 같습니다.
 
@@ -54,11 +53,9 @@ ht-degree: 87%
    * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
    * 다양한 [작업](#actions) 액세스
 
-<!--
-For example:
+예:
 
-![full screen editor](assets/cfm-variations-02.png)
--->
+![전체 화면 편집기](assets/cfm-variations-02.png)
 
 ### 전체 화면 편집기 {#full-screen-editor}
 
@@ -66,11 +63,9 @@ For example:
 
 ![전체 화면 편집기 아이콘](assets/cfm-variations-03.png)
 
-<!--
-This will open the full screen text editor:
+그러면 전체 화면 텍스트 편집기가 열립니다.
 
-![full screen editor icon](assets/cfm-variations-fullscreentexteditor.png)
--->
+![전체 화면 편집기](assets/cfm-variations-fullscreentexteditor.png)
 
 전체 화면 텍스트 편집기에서는 다음을 제공합니다.
 
@@ -122,10 +117,7 @@ This will open the full screen text editor:
    * 찾기/바꾸기
    * 맞춤법 검사기
    * [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-
-<!--
-* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment)
--->
+* [컨텐츠 조각](#inserting-content-fragment-into-your-fragment) 삽입;다중  **라인 텍스트 필드가** 조각 참조  **허용으로 구성된 경우 사용할 수 있습니다**.
 
 [작업](#actions)은 전체 화면 편집기에서 액세스할 수도 있습니다.
 
@@ -161,35 +153,33 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 >
 >**리치 텍스트**&#x200B;와 **Markdown** 간을 전환하는 경우 이 두 형식은 처리 방식에 차이가 있을 수 있으므로, 블록 인용과 코드 블록 사용과 관련하여 예기치 않은 효과가 발생할 수 있습니다.
 
-<!--
-### Fragment References {#fragment-references}
+### 조각 참조 {#fragment-references}
 
-If the Content Fragment Model contains Fragment References, your fragment authors may have additional options:
+컨텐츠 조각 모델에 조각 참조가 포함되어 있으면 조각 작성자는 추가 옵션을 사용할 수 있습니다.
 
-* [Edit Content Fragment](#fragment-references-edit-content-fragment)
-* [New Content Fragment](#fragment-references-new-content-fragment)
+* [컨텐츠 조각 편집](#fragment-references-edit-content-fragment)
+* [새 컨텐츠 조각](#fragment-references-new-content-fragment)
 
-![Fragment References](assets/cfm-variations-12.png)
+![조각 참조](assets/cfm-variations-12.png)
 
-#### Edit Content Fragment {#fragment-references-edit-content-fragment}
+#### 컨텐츠 조각 편집 {#fragment-references-edit-content-fragment}
 
-The option **Edit Content Fragment** will open
-a new browser tab, with the content fragment open in the content fragment editor.
+**컨텐츠 조각 편집** 옵션이 열립니다.
+컨텐츠 조각 편집기에서 컨텐츠 조각을 열어 새 브라우저 탭.
 
-#### New Content Fragment {#fragment-references-new-content-fragment}
+#### 새 컨텐츠 조각 {#fragment-references-new-content-fragment}
 
-The option **New Content Fragment** will allow you to create a completely new fragment. To achieve this a variation of the create content fragment wizard will open in the editor. 
+**새 컨텐츠 조각** 옵션을 사용하면 완전히 새로운 조각을 만들 수 있습니다. 이를 위해 컨텐츠 조각 만들기 마법사의 변화가 편집기에서 열립니다.
 
-You will then be able to create a new fragment by:
+다음을 통해 새 조각을 생성할 수 있습니다.
 
-1. Navigating to, and selecting the required folder.
-1. Selecting **Next**.
-1. Specifying properties; for example **Title**.
-1. Selecting **Create**.
-1. Finally:
-   1. **Done** will return (to the original fragment) and reference the new fragment.
-   1. **Open** will reference the new fragment as well as opening the new fragment, for editing, in a new browser tab.
--->
+1. 필요한 폴더로 이동 및 선택합니다.
+1. **다음**&#x200B;을 선택합니다.
+1. 속성 지정;예: **제목**.
+1. **만들기**&#x200B;를 선택합니다.
+1. 마지막으로:
+   1. **원본** 조각으로 반환되고 새 조각을 참조합니다.
+   1. **** Open은 새 조각을 참조하고 새 조각을 열어 편집할 수 있으며 새 브라우저 탭에서 참조합니다.
 
 ### 주요 통계 보기 {#viewing-key-statistics}
 
@@ -245,23 +235,25 @@ You will then be able to create a new fragment by:
 
 1. **Summarize**&#x200B;를 선택하여 변경 사항을 확인합니다.
 
-<!--
-1. The original text is displayed side-by-side with the proposed summarization:
+1. 원래 텍스트는 제안된 요약과 나란히 표시됩니다.
 
-    * Any sentences to be eliminated are highlighted in red, with strike-through.
-    * Click on any highlighted sentence to keep it in the summarized content.
-    * Click on any non-highlighted sentence to have it eliminated.
+   * 제거할 문장은 빨간색으로 강조 표시되며 취소선이 그어져 있습니다.
+   * 요약된 컨텐츠로 유지하려면 강조 표시된 문장을 클릭하십시오.
+   * 제거하려면 강조 표시되지 않은 문장을 클릭하십시오.
 
-   ![summarization comparison](assets/cfm-variations-06.png)
--->
+   ![요약 비교](assets/cfm-variations-06.png)
 
 ### 컨텐츠 조각에 주석 달기 {#annotating-a-content-fragment}
 
 조각에 주석을 달려면
 
 1. **마스터** 또는 필요한 변형을 선택합니다.
+
 1. 전체 화면 편집기를 엽니다.
+
 1. 상단 도구 모음에서 **주석** 아이콘을 사용할 수 있습니다. 필요한 경우 텍스트를 선택할 수 있습니다.
+
+   ![주석 달기](assets/cfm-variations-07.png)
 
 1. 대화 상자가 열립니다. 여기에서 주석을 입력할 수 있습니다.
 
@@ -279,18 +271,9 @@ You will then be able to create a new fragment by:
 
 1. **저장**&#x200B;을 선택합니다.
 
-<!--
-1. The **Annotate** icon is available in the top toolbar. You can seelect some text if required.
+1. 전체 화면 편집기를 닫아도 주석은 여전히 강조 표시됩니다. 이 옵션을 선택하면 주석을 추가로 편집할 수 있도록 대화 상자가 열립니다.
 
-   ![annotate](assets/cfm-variations-07.png)
--->
-
-<!--
-1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog will open so that you can edit the annotation further.
-
-   ![annotate](assets/cfm-variations-07c.png)
-
--->
+   ![주석 달기](assets/cfm-variations-07c.png)
 
 ### 주석 보기, 편집, 삭제 {#viewing-editing-deleting-annotations}
 
@@ -305,13 +288,9 @@ You will then be able to create a new fragment by:
 
 * 조각 편집기에서 **주석** 탭을 선택하여 나열하거나 삭제할 수 있습니다.
 
+   ![주석](assets/cfm-variations-08.png)
+
 * 선택한 조각에 대한 [타임라인](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 보고 삭제할 수 있습니다.
-
-<!--
-* Can be listed, and deleted, by selecting the **Annotations** tab in the fragment editor.
-
-  ![annotations](assets/cfm-variations-08.png)
--->
 
 ### 조각에 자산 삽입 {#inserting-assets-into-your-fragment}
 
@@ -346,47 +325,41 @@ You will then be able to create a new fragment by:
    * **Markdown**: 자산이 표시되진 않지만 **리치 텍스트**&#x200B;로 돌아가면 여전히 남아 있습니다.
 
 
-<!--
-### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
+### 조각 {#inserting-content-fragment-into-your-fragment}에 컨텐츠 조각 삽입
 
-To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
+컨텐츠 조각을 작성하는 프로세스를 간소화하려면 조각에 다른 컨텐츠 조각을 추가할 수도 있습니다.
 
-They will be added as a reference, in your current location in your fragment.
--->
-
-<!--
->[!CAUTION]
->
->These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
->
->However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+조각의 현재 위치에 참조로 추가됩니다.
 
 >[!NOTE]
->
->There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
--->
+이 옵션은 **여러 줄 텍스트**&#x200B;이 **조각 참조 허용**&#x200B;으로 구성된 경우에 사용할 수 있습니다.
 
-<!--
-1. Position the cursor at the position you want to add the fragment.
-1. Use the **Insert Content Fragment** icon to open the search dialog.
+>[!CAUTION]
+참조하는 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
+그러나 자산의 형식 지정(예: 크기)은 [페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 수행해야 합니다. 조각 편집기의 자산 표현은 순전히 컨텐츠 흐름을 작성하기 위한 것입니다.
 
-   ![insert Content Fragment icon](assets/cfm-variations-13.png)
+>[!NOTE]
+[이미지](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
 
-1. In the dialog you can either:
+1. 조각을 추가할 위치에 커서를 놓습니다.
+1. **컨텐츠 조각 삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
 
-    * navigate to the required fragment in the Assets folder
-    * search for the fragment
+   ![컨텐츠 조각 삽입 아이콘](assets/cfm-variations-13.png)
 
-   Once located, select the required fragment by clicking on the thumbnail.
+1. 대화 상자에서 다음 작업 중 하나를 수행할 수 있습니다.
 
-1. Use **Select** to add a reference to the selected Content Fragment to your current content fragment (at the current location).
+   * 자산 폴더의 필수 조각으로 이동합니다.
+   * 조각 검색
+
+   일단 찾은 경우 축소판을 클릭하여 필요한 조각을 선택합니다.
+
+1. **선택**&#x200B;을 사용하여 선택한 컨텐츠 조각에 대한 참조를 현재 위치(현재 위치)에 추가합니다.
 
    >[!CAUTION]
-   >
-   >If, after adding an reference to another fragment, you change format to:
-   >* **Plain Text**: the reference will be completely lost from the fragment.
-   >* **Markdown**: the reference will remain.
--->
+   다른 조각에 대한 참조를 추가한 후 형식을 다음으로 변경합니다.
+   * **일반 텍스트**:조각에서 참조가 완전히 손실됩니다.
+   * **마크다운**:참조는 그대로 유지됩니다.
+
 
 ## 변형 관리 {#managing-variations}
 
@@ -455,9 +428,12 @@ They will be added as a reference, in your current location in your fragment.
 *변형의 변경 내용을&#x200B;**마스터***에 전송하는 선택은 할 수 없습니다.
 
 1. 조각 편집기에서 컨텐츠 조각을 엽니다. **마스터**&#x200B;가 편집되었는지 확인합니다.
+
 1. 특정 변형을 선택한 후, 다음 중 하나에서 적절한 동기화 작업을 선택합니다.
 
    * **작업** 드롭다운 선택기 - **현재 요소를 마스터와 동기화**
+
+      ![마스터와 동기화](assets/cfm-variations-11a.png)
 
    * 전체 화면 편집기의 도구 모음 - **마스터와 동기화**
 
@@ -472,26 +448,3 @@ They will be added as a reference, in your current location in your fragment.
    ![마스터와 동기화](assets/cfm-variations-11c.png)
 
 1. **동기화**&#x200B;를 선택합니다. 변형이 업데이트되고 표시됩니다.
-
-<!--
-1. Select a specific variation, then the appropriate synchronization action from either:
-
-   * the **Actions** drop down selector - **Sync current element with master**
-
-      ![synchronizing with master](assets/cfm-variations-11a.png)
-
-   * the toolbar of the full-screen editor - **Sync with master**
-
-      ![synchronizing with master](assets/cfm-variations-11b.png)
-
-1. Master and the variation will be shown side-by-side:
-
-   * green indicates content added (to the variation)
-   * red indicates content removed (from the variation)
-   * blue indicates replaced text
-
-   ![synchronizing with master](assets/cfm-variations-11c.png)
-
-1. Select **Synchronize**, the variation will updated and shown.
-
--->
