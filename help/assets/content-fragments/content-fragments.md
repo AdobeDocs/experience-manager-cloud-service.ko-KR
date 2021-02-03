@@ -2,21 +2,15 @@
 title: 컨텐츠 조각을 사용한 작업
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 Cloud Service으로 사용하여 페이지에 구애받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2027'
 ht-degree: 77%
 
 ---
 
 
 # 컨텐츠 조각을 사용한 작업{#working-with-content-fragments}
-
->[!CAUTION]
->
->요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
->
->AEM용 API를 Cloud Service 프로그램으로 활성화하려면 [Adobe 지원](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)에 문의하십시오.
 
 AEM(Adobe Experience Manager)을 Cloud Service으로 사용하면 컨텐츠 조각을 통해 페이지에 구애받지 않는 컨텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md)를 디자인, 작성, 조정 및 게시할 수 있습니다. [ 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
 
@@ -30,12 +24,9 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하면 컨텐츠 조�
    * 복잡한 기능
       * 텍스트, 숫자, 부울, 데이터 및 시간을 비롯한 다양한 데이터 유형의 여러 필드를 조합합니다.
       * 페이지 작성을 위해 보다 구조화된 컨텐츠를 준비하거나 애플리케이션에 전달할 때 사용할 수 있습니다.
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * 중첩
+      * 사용 가능한 참조 데이터 유형을 사용하여 컨텐츠를 중첩할 수 있습니다.
+      * 응용 프로그램에 배달하는 데 사용되는 경향이 있습니다.
 
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 컨텐츠 조각을 JSON 형식으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
@@ -78,10 +69,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * 다양한 채널을 위한 컨텐츠 풀을 구축할 수 있습니다.
 * 특정 채널에 맞는 컨텐츠 변형을 디자인할 수 있습니다.
 * 자산(혼합 미디어 조각)을 삽입하여 텍스트에 이미지를 추가합니다.
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* 데이터의 복잡성을 반영하도록 중첩 컨텐츠를 만듭니다.
 
 그런 다음 이러한 컨텐츠 조각을 취합하여 다양한 채널에서 경험을 제공할 수 있습니다.
 
@@ -121,11 +109,9 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 >
 >AEM은 조각 컨텐츠 번역도 지원합니다.
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM은 조각 컨텐츠 번역도 지원합니다. 자세한 내용은 [자산 번역](/help/assets/translate-assets.md)을 참조하십시오.
 
 ## 컨텐츠 유형 {#content-type}
 
@@ -306,6 +292,12 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 ### WKND 샘플 {#wknd-sample}
 
-AEM에 대한 Cloud Service에 대한 자세한 내용을 보려면 [WKND 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 샘플이 제공됩니다. 샘플 단편이 포함되어 있으며 다음과 같이 볼 수 있습니다.
+AEM에 대한 Cloud Service에 대한 자세한 내용을 보려면 [WKND 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 샘플이 제공됩니다.
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+WKND 프로젝트에는 다음이 포함됩니다.
+
+* 컨텐츠 조각 모델:
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* 다음 아래에서 사용할 수 있는 컨텐츠 조각(및 기타 컨텐츠)
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
