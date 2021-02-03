@@ -2,21 +2,15 @@
 title: 컨텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 93%
+source-wordcount: '1593'
+ht-degree: 85%
 
 ---
 
 
 # 컨텐츠 조각 관리{#managing-content-fragments}
-
->[!CAUTION]
->
->요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
->
->AEM용 API를 Cloud Service 프로그램으로 활성화하려면 [Adobe 지원](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)에 문의하십시오.
 
 컨텐츠 조각은 **자산**&#x200B;으로 저장되므로 **자산** 콘솔에서 주로 관리됩니다.
 
@@ -39,8 +33,8 @@ ht-degree: 93%
 컨텐츠 조각을 만드는 방법은 다음과 같습니다.
 
 1. 조각을 만들려는 **자산** 폴더로 이동합니다.
-2. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
-3. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
+1. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
+1. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
    * [모델](/help/assets/content-fragments/content-fragments-models.md)  - 구조화된 컨텐츠가 필요한 조각을 생성하는 데 사용됩니다.예를 들어  **** &lt;모험가>
 
@@ -50,7 +44,7 @@ ht-degree: 93%
 
    ![조각](assets/cfm-managing-01.png)
 
-4. **속성** 단계에서 다음 사항을 지정합니다.
+1. **속성** 단계에서 다음 사항을 지정합니다.
 
    * **기본**
 
@@ -72,9 +66,12 @@ ht-degree: 93%
          필수는 제목에서 자동으로 파생되지만 업데이트할 수 있습니다.
 
 
-5. **만들기**&#x200B;를 선택하여 작업을 완료한 후 편집할 조각을 **열거나** **완료**&#x200B;를 사용하여 콘솔로 돌아갑니다.
+1. **만들기**&#x200B;를 선택하여 작업을 완료한 후 편집할 조각을 **열거나** **완료**&#x200B;를 사용하여 콘솔로 돌아갑니다.
 
-## 컨텐츠 조각 작업 {#actions-for-a-content-fragment}
+   >[!NOTE]
+   >콘솔의 **목록** 모드에서 **설정 보기**&#x200B;를 업데이트하여 **컨텐츠 조각 모델** 열을 활성화할 수 있습니다.
+
+## 자산 콘솔 {#actions-for-a-content-fragment-assets-console}의 컨텐츠 조각에 대한 작업
 
 **자산** 콘솔에서 컨텐츠 조각에 다양한 작업을 사용할 수 있습니다.
 
@@ -125,7 +122,7 @@ ht-degree: 93%
 >컨텐츠 조각을 편집하려면 적절한 권한이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
 1. **자산** 콘솔을 사용하여 컨텐츠 조각의 위치로 이동합니다.
-2. 다음 방법 중 하나를 사용하여 편집할 조각을 엽니다.
+1. 다음 방법 중 하나를 사용하여 편집할 조각을 엽니다.
 
    * 조각 또는 조각 링크를 클릭/탭합니다(콘솔 보기에 따라 다름).
    * 조각을 선택한 후 도구 모음에서 **편집**&#x200B;을 선택합니다.
@@ -140,23 +137,49 @@ ht-degree: 93%
    >2. 사이드 패널은 **사이드 패널 전환** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
 
 
-3. 사이드 패널의 아이콘을 사용하여 세 가지 모드를 탐색합니다.
-
-   * 변형: [컨텐츠 편집](#editing-the-content-of-your-fragment) 및 [변형 관리](#creating-and-managing-variations-within-your-fragment)
-
-   * [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-   * [관련 컨텐츠](#associating-content-with-your-fragment)
-   * [메타데이터](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-   * [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   * [미리 보기](/help/assets/content-fragments/content-fragments-json-preview.md)
-
-   ![모드](assets/cfm-managing-04.png)
-
-4. 변경 후 필요에 따라 **저장** 또는 **취소**&#x200B;를 사용하십시오.
+1. 변경 후 필요에 따라 **저장** 또는 **취소**&#x200B;를 사용하십시오.
 
    >[!NOTE]
    >
    >**저장**&#x200B;과 **취소**&#x200B;를 사용하면 모두 편집기가 종료됩니다. 두 옵션이 컨텐츠 조각에 대해 작동하는 자세한 방법에 대해서는 [저장, 취소 및 버전](#save-cancel-and-versions)을 참조하십시오.
+
+## 컨텐츠 조각 편집기의 모드 및 작업 {#modes-actions-content-fragment-editor}
+
+컨텐츠 조각 편집기에서 사용할 수 있는 다양한 모드 및 작업이 있습니다.
+
+### 컨텐츠 조각 편집기의 모드 {#modes-in-the-content-fragment-editor}
+
+사이드 패널의 아이콘을 사용하여 다양한 모드를 탐색합니다.
+
+* 변형: [컨텐츠 편집](#editing-the-content-of-your-fragment) 및 [변형 관리](#creating-and-managing-variations-within-your-fragment)
+
+* [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [관련 컨텐츠](#associating-content-with-your-fragment)
+* [메타데이터](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [미리 보기](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![모드](assets/cfm-managing-04.png)
+
+### 컨텐츠 조각 편집기의 도구 모음 작업 {#toolbar-actions-in-the-content-fragment-editor}
+
+상단 도구 모음의 일부 기능은 다음과 같은 여러 모드에서 사용할 수 있습니다.
+
+![모드](assets/cfm-managing-top-toolbar.png)
+
+* 조각 이름 아래에 현재 조각을 만드는 데 사용되는 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)의 이름이 표시됩니다.
+
+   * 이름은 모델 편집기를 여는 링크이기도 합니다.
+
+* 조각 상태를 확인합니다.예를 들어, 언제 만들었는지, 수정하거나 게시했는지에 대한 정보입니다. 상태도 색상으로 구분됩니다.
+
+   * 새로운 기능:회색
+   * 초안:파란색
+   * 게시됨:녹색
+   * 수정됨:주황
+   * 비활성화됨:red
+
+* **[조각](#publishing-and-referencing-a-fragment)** 을 게시합니다.
 
 ## 저장, 취소 및 버전 {#save-cancel-and-versions}
 
@@ -304,7 +327,8 @@ ht-degree: 93%
 
 게시 환경에서 사용하려면 컨텐츠 조각을 게시해야 합니다. 게시할 수 있는 시점:
 
-* 작성 후. **자산** 콘솔에서 게시할 수 있습니다.
+* 생성 후;자산 콘솔](#actions-for-a-content-fragment-assets-console)에서 사용할 수 있는 [작업 사용
+* [컨텐츠 조각 편집기](#toolbar-actions-in-the-content-fragment-editor)에서.
 * [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)할 때. 페이지 참조에 조각이 나열됩니다.
 
 >[!CAUTION]
