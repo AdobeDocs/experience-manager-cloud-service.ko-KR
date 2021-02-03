@@ -2,7 +2,7 @@
 title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.11.0
 description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.11.0
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 79af82d1589108e7a8953e29a5d0f0169920585c
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 4%
@@ -23,7 +23,7 @@ ht-degree: 4%
 ### 새로운 기능 {#what-is-new}
 
 * 이제 환경 카드 및 환경 요약 페이지의 환경 메뉴 옵션에서 사용자가 새 메뉴 옵션 **로컬 로그인**을 사용할 수 있습니다.
-자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md##login-locally)를 참조하십시오.
+자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#login-locally)를 참조하십시오.
 
 * Cloud Manager의 **학습** 탭이 UI의 새 이미지로 새로 고침되었습니다.
 
