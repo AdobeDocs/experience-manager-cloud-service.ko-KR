@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: d8c4c49b158077393aac66bcb87a52236115551f
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 58%
+source-wordcount: '710'
+ht-degree: 57%
 
 ---
 
@@ -140,6 +140,7 @@ ht-degree: 58%
       + 배달 API {#delivery-api}
          + [컨텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
          + [컨텐츠 조각 그래프QL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+         + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
          + [컨텐츠 조각이 있는 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + 개발자 도구 {#developer-tools}
    + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
