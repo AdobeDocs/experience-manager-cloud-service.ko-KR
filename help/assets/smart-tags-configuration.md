@@ -3,9 +3,9 @@ title: 향상된 스마트 태그
 description: Adobe Sensei의 AI 및 ML 서비스를 사용하여 컨텍스트 기반의 상황적 및 설명적 비즈니스 태그를 적용하여 자산 검색과 컨텐츠 제작 시간을 향상할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->새 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console]과 통합됩니다. 이렇게 하면 스마트 태그 기능을 보다 신속하게 구성할 수 있습니다. 기존 배포에서 관리자는 다음 단계에 따라 구성합니다.
+>새 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console]과 통합됩니다. 이렇게 하면 스마트 태그 기능을 보다 신속하게 구성할 수 있습니다. 기존 배포에서 관리자는 다음 단계에 따라 통합을 구성합니다.
 
 ## Adobe 개발자 콘솔과 통합 {#aio-integration}
 
