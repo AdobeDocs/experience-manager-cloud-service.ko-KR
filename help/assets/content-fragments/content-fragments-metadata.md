@@ -2,10 +2,10 @@
 title: 메타데이터 - 조각 속성
 description: 컨텐츠 조각의 메타데이터(속성)를 보고 편집할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 89%
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 89%
 2. 다음 중 하나를 선택합니다.
 
    * [**속성 보기**&#x200B;를 선택하여 대화 상자를 엽니다](/help/assets/manage-digital-assets.md#editing-properties). 볼 수도 있도록 열리면 편집할 수도 있습니다.
-   * [편집할 컨텐츠 조각](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)을 연 후 사이드 패널에서 **메타데이터**&#x200B;를 선택합니다.
+   * 편집할 컨텐츠 조각을 연 다음 사이드 패널에서 **메타데이터**&#x200B;를 선택합니다.
 
    ![메타데이터](assets/cfm-metadata-01.png)
 
