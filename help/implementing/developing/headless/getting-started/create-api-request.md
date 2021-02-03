@@ -2,9 +2,9 @@
 title: 머리글 없는 컨텐츠 조각 액세스 및 제공 빠른 시작 안내서
 description: 자산 REST API를 사용하면 컨텐츠 조각을 관리할 수 있으며 GraphQL API를 사용하면 컨텐츠 조각 컨텐츠를 헤드리스(headless) 방식으로 간단하게 전달할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,14 @@ ht-degree: 0%
 
 정보 설계자는 컨텐츠를 제공하기 위해 채널 끝점에 대한 쿼리를 설계해야 합니다. 이러한 쿼리는 일반적으로 모델당 종단점당 한 번만 고려되어야 합니다. 이 시작 안내서의 목적을 위해 Adobe는 안내선을 하나만 만들어야 합니다.
 
-1. AEM에 Cloud Service으로 로그인하고 주 메뉴에서 **도구 -> 자산 -> GraphQL**&#x200B;을 선택합니다.
-   * 또는 `https://<host>:<port>/content/graphiql.html`에서 직접 페이지를 엽니다.
+<!-- Not in the UI yet - will need updating when it is -->
+<!--
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
+   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+-->
+
+1. AEM에 Cloud Service으로 로그인하고 GraphiQL 인터페이스에 액세스합니다.
+   * 예: `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL은 GraphQL에 대한 브라우저 내 쿼리 편집기입니다. 쿼리를 작성하여 콘텐츠 조각을 JSON으로 간편하게 전달할 수 있습니다.
    * 왼쪽 패널에서 쿼리를 작성할 수 있습니다.
@@ -39,8 +45,9 @@ ht-degree: 0%
 1. 생성된 모델을 `person`, `firstName`, `lastName` 및 `position` 필드와 함께 호출했다고 가정할 경우, 간단한 쿼리를 작성하여 컨텐츠 조각의 컨텐츠를 검색할 수 있습니다.
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
