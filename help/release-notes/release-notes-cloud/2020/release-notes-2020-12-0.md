@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 6ea94126d29a470820ee1dc39b239bb10951afac
+source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '691'
 ht-degree: 4%
 
 ---
@@ -74,3 +74,17 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 ### 버그 수정 {#crt-bug-fixes}
 
 * AEM Dispatcher Converter 및 Repository Modernizer 도구에서 수행한 몇 가지 버그 수정. [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 및 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)를 참조하십시오.
+
+### 릴리스 날짜 {#release-date-ctt}
+
+내용 전송 도구 v1.1.20 릴리스 날짜는 2021년 1월 8일입니다.
+
+### [!DNL Content Transfer Tool] {#what-is-new-ctt}의 새로운 기능
+
+* 이제 사용자는 CTT(Content Transfer Tool) 사용자 인터페이스의 상태 아이콘을 마우스로 가리키면 액세스 토큰이 만료되었는지를 알 수 있습니다. 또한 마이그레이션 세트 세부 사항 UI에서 Cloud Service 인스턴스에 연결할 수 없다는 알림을 받게 됩니다.
+
+### 버그 수정 {#ctt-bug-fixes}
+
+* 마이그레이션 세트에 대한 CTT(Content Transfer Tool) 사용자 인터페이스 상태가 비활성 기간 후 지속되거나 변경되지 않았습니다. 이 문제가 수정되었습니다.
+* 로그를 사용할 수 없는 경우 로그 보기 옵션을 사용할 수 없었습니다. 로그가 누락된 이유를 사용자에게 알리기 위해 메시지가 추가되었습니다.
+* 콘텐트 전송 도구 사용자 인터페이스 상태에 사용자가 전송을 중지했을 때 *FAILED*&#x200B;가 표시되었습니다. 대신 *STOPPED*&#x200B;을(를) 표시하도록 수정했습니다.
