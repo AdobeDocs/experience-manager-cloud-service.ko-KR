@@ -2,21 +2,15 @@
 title: 컨텐츠 조각 - 구성 브라우저
 description: 구성 브라우저에서 특정 컨텐츠 조각 기능을 활성화하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 29%
+source-wordcount: '241'
+ht-degree: 33%
 
 ---
 
 
 # 콘텐츠 조각 - 구성 브라우저{#content-fragments-configuration-browser}
-
->[!CAUTION]
->
->요청에 따라 컨텐츠 조각 전달용 AEM GraphQL API를 사용할 수 있습니다.
->
->AEM용 API를 Cloud Service 프로그램으로 활성화하려면 [Adobe 지원](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)에 문의하십시오.
 
 ## 인스턴스 {#enable-content-fragment-functionality-instance}에 대한 컨텐츠 조각 기능 활성화
 
