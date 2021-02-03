@@ -2,9 +2,9 @@
 title: 자산 HTTP API에서 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager
 description: 자산 HTTP API의 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
+source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1931'
 ht-degree: 2%
 
 ---
@@ -305,6 +305,7 @@ AEM 작성자 환경을 사용하는지 게시 환경을 사용하는지에 따�
 
 * **컨텐츠 조각 모델은 현재 지원되지 않습니다**.읽거나 만들 수 없습니다. 새 컨텐츠를 만들거나 기존 컨텐츠 조각을 업데이트하려면 개발자는 컨텐츠 조각 모델의 올바른 경로를 알아야 합니다. 현재 이러한 UI의 개요를 얻는 유일한 방법은 관리 UI를 이용하는 것입니다.
 * **참조는 무시됩니다**. 현재 기존 컨텐츠 조각이 참조되는지 여부를 확인할 수 없습니다. 예를 들어 컨텐츠 조각을 삭제하면 삭제된 컨텐츠 조각에 대한 참조가 포함된 페이지에 문제가 발생할 수 있습니다.
+* **JSON 데이터** 유형JSON 데이터 유형의  *REST API 출력* 은 현재  *문자열 기반 출력입니다*.
 
 ## 상태 코드 및 오류 메시지 {#status-codes-and-error-messages}
 
