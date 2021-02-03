@@ -2,10 +2,10 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
+source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 3%
+source-wordcount: '678'
+ht-degree: 4%
 
 ---
 
@@ -20,8 +20,6 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 다음 릴리스(2021.2.0)은 2021년 2월 25일에 제공됩니다.
 
 ## [!DNL Adobe Experience Manager Sites] cloud service  {#sites}
-
-* **[컨텐츠 조각 HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:HTTP API를 사용하여 컨텐츠 조각 변형을 추가/업데이트 및 삭제하는 기능을 추가합니다.
 
 * **[컨텐츠 조각 전달용 GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:JSON 형식으로 출력하기 위해 GraphQL 구문을 사용하고 컨텐츠 조각 모델을 기반으로 하는 스키마를 사용하여 컨텐츠 조각을 쿼리하는 기능
 
@@ -69,20 +67,6 @@ AEM의 Cloud Service 2021.1.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 * Cloud Manager에서 절전 모드 해제(hibernate)를 트리거할 때, 절전 모드를 성공적으로 시작해도 오류 메시지가 표시되는 경우가 있습니다.
 
 * 환경 만들기 또는 삭제에서 발생한 드문 실패 사례가 해결되었습니다.
-
-## 코드 리팩터링 도구 {#code-refactoring-tools}
-
-### [!DNL Code Refactoring Tools] {#what-is-new-crt}의 새로운 기능
-
-* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전은 AEM Dispatcher Converter 및 Repository Modernizer에 대한 버그 수정을 포함하며 새로운 유틸리티인 Index Converter를 지원합니다. 이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)을 참조하십시오.
-
-* 색인 변환기는 고객의 사용자 정의 OAK 색인 정의를 Cloud Service 호환 OAK 색인 정의로 AEM으로 변환하는 데 사용할 수 있는 유틸리티입니다. 자세한 내용은 [색인 변환기](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)를 참조하십시오.
-
-* 모든 OSGi 구성을 포함하는 별도의 패키지 `ui.config`을 만드는 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)에 새 기능이 추가되었습니다.
-
-### 버그 수정 {#crt-bug-fixes}
-
-* AEM Dispatcher Converter 및 Repository Modernizer 도구에서 수행한 몇 가지 버그 수정. [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) 및 [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)를 참조하십시오.
 
 ## AEM을 Cloud Service 기반 {#aem-as-a-cloud-service-foundation}
 
