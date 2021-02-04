@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 6be2ed60f4e672b99a85b55f833b8ae2f1b952b0
+source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '967'
 ht-degree: 8%
 
 ---
@@ -83,9 +83,9 @@ Cloud Service SDK로 AEM을 사용하는 로컬 CIF Add-on 개발의 경우 다�
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   이 변수는 Cloud Service 환경으로서 AEM용으로 설정해야 합니다.
+   이 변수는 AEM에서 상거래 시스템에 연결하는 데 사용됩니다. 또한 CIF Add-on에는 로컬 역방향 프록시가 포함되어 Magento GraphQL 끝점을 로컬로 사용할 수 있습니다. CIF 작성 도구(제품 콘솔 및 피커)와 직접 GraphQL 호출을 수행하는 CIF 클라이언트측 구성 요소에 사용됩니다.
 
-   변수에 대한 자세한 내용은 [AEM용 OSGi를 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)로 구성을 참조하십시오.
+   이 변수는 Cloud Service 환경으로서 AEM용으로 설정해야 합니다. 변수에 대한 자세한 내용은 [AEM용 OSGi를 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)로 구성을 참조하십시오.
 
 1. (선택 사항) 단계 카탈로그 기능을 사용하려면 Magento 인스턴스에 대한 통합 토큰을 만들어야 합니다. 토큰을 만들려면 [시작하기](./getting-started.md#staging)의 단계를 따르십시오.
 
@@ -98,35 +98,6 @@ Cloud Service SDK로 AEM을 사용하는 로컬 CIF Add-on 개발의 경우 다�
    비밀에 대한 자세한 내용은 [AEM용 OSGi를 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)로 구성을 참조하십시오.
 
 1. Cloud Service SDK로 AEM 시작
-
-1. 로컬 GraphQL 프록시 서버 시작
-
-   Magento GraphQL 끝점을 CIF Add-on 및 CIF 구성 요소에서 로컬로 사용할 수 있게 하려면 다음 명령을 사용합니다. GraphQL 끝점은 `http://localhost:3002/graphql`에서 사용할 수 있습니다.
-Mac OSX 예:
-
-   ```bash
-   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
-   ```
-
-   예제 Windows:
-
-   ```bash
-   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
-   ```
-
-   인수 `--proxyPartial`은(는) 빈 문자열을 받아야 합니다.
-
-   GraphQL 쿼리 도구를 `http://localhost:3002/graphql`에 가리키면 로컬 GraphQL 프록시를 테스트하고 몇 개의 쿼리를 테스트할 수 있습니다.
-
-1. AEM SDK에 로그인하고 로컬 GraphQL 프록시 서버를 사용하도록 CIF를 구성합니다.
-
-   CIF Cloud Service 구성으로 이동합니다(도구 > Cloud Services > CIF 구성). 프로젝트에서 사용하는 구성의 속성 보기를 엽니다.
-
-   `GraphQL Proxy Path` 속성에 대해 로컬 프록시 서버 끝점 `http://localhost:3002/graphql`을(를) 사용합니다. 구성을 저장합니다.
-
->[!NOTE]
->
->8단계의 구성을 프로젝트 보고서에 푸시하지 마십시오. 이 구성은 로컬 개발 설정에 대해서만 필요합니다. CLOUD SERVICE 환경으로 AEM은 온보드 중에 GraphQL 프록시로 이미 설정되어 있습니다.
 
 OSGI 콘솔을 통해 설정을 확인합니다. `http://localhost:4502/system/console/osgi-installer`. 목록에 피쳐 모델 파일에 정의된 대로 CIF 추가 기능 관련 번들, 컨텐츠 패키지 및 OSGI 구성이 포함되어야 합니다.
 
