@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service로 이동
 description: Adobe Experience Manager as a Cloud Service를 클라우드 서비스로서의 AEM 셀프 헬프 리소스 및 설명서 링크로 이동
 translation-type: tm+mt
-source-git-commit: 80aa4881bf3e6ee01e84eb4096d24fcb749419c6
+source-git-commit: f275b9f8a1c6cbc188e75be435a4efc9394fa140
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 89%
+source-wordcount: '565'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 89%
 >title="Cloud Acceleration Manager 정보"
 >abstract="Cloud Acceleration Manager는 Cloud Service으로 AEM으로 전환하는 모든 프로세스를 진행하는 동안 나만의 개인 가이드입니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="AEM Sites as a Cloud Service에 대한 주요 변경 사항"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#how-to-use" text="CI/CD 파이프라인 구성"
 
 ## AEM as a Cloud Service로 이동하여 얻을 수 있는 이점 {#benefits-aem-moving-to-aem-guide}
 
