@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '719'
 ht-degree: 4%
 
 ---
@@ -21,9 +21,13 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 ## [!DNL Adobe Experience Manager Sites] cloud service  {#sites}
 
+### 헤드리스 컨텐츠 관리 {#headless}
+
 * **[컨텐츠 조각 전달용 GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:JSON 형식으로 출력하기 위해 GraphQL 구문을 사용하고 컨텐츠 조각 모델을 기반으로 하는 스키마를 사용하여 컨텐츠 조각을 쿼리하는 기능
 
 * **[GraphQL API 요청에 대한 인증 지원](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:서버측 API에 대한 액세스 토큰을 사용하여 GraphQL API 요청을 인증할 수 있습니다.
+
+* [RemotePage 구성 요소](/help/implementing/developing/hybrid/remote-page.md) 는 AEM 내에서 외부 SPA을 보고 편집할 수 있도록 지원합니다.
 
 * JSON 포맷 및 로캘로 리치 텍스트를 출력하는 기능을 포함하여 GraphQL API에서 향상된 JSON 출력
 
@@ -37,6 +41,9 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 * 컨텐츠 조각 편집기에서 직접 JSON 출력을 미리 볼 수 있습니다.
 
+### 점진적 웹 앱(PWA) {#pwa}
+
+* [이제 간단한 구성을 통해 ](/help/sites-cloud/authoring/features/enable-pwa.md)  사이트의 점진적 웹 앱(PWA) 버전을 프로젝트 수준에서 사용할 수 있습니다.
 
 ## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Assets] {#assets}
 
