@@ -2,17 +2,17 @@
 title: SPA 소개 및 연습
 description: 이 문서에서는 SPA의 개념을 소개하고 기본적인 SPA 응용 프로그램을 저작하기 위해 사용하며 기본 AEM SPA Editor와 관련된 방식을 설명합니다.
 translation-type: tm+mt
-source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '1933'
-ht-degree: 1%
+source-wordcount: '1986'
+ht-degree: 2%
 
 ---
 
 
 # SPA 소개 및 연습 {#spa-introduction}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 이러한 프레임워크를 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
+SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 이러한 프레임워크를 사용하여 구축된 사이트에서 AEM의 컨텐츠를 매끄럽게 편집하고자 합니다.
 
 SPA Editor는 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 저작에 기본 SPA 응용 프로그램을 사용하는 과정을 소개하고 기본 AEM SPA 편집기와 관련된 방법을 설명합니다.
 
@@ -24,7 +24,7 @@ SPA Editor는 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공
 
 이 소개 및 연습의 목적은 AEM 개발자에게 SPA이 연관성 있는 이유,가 일반적으로 작동하는 방식, AEM SPA 편집기에서 SPA을 처리하는 방법 및 표준 AEM 애플리케이션과 어떻게 다른지 시연하는 것입니다.
 
-이 연습은 표준 AEM 기능과 샘플 WKND SPA Project 앱을 기반으로 합니다. 팔로우하려면 GitHub에서 샘플 WKND SPA 프로젝트 앱을 다운로드하여 설치하십시오.[](https://github.com/adobe/aem-guides-wknd-spa)
+이 연습은 표준 AEM 기능과 샘플 WKND SPA Project 앱을 기반으로 합니다. 팔로우하려면 GitHub에서 샘플 WKND SPA 프로젝트 앱을 다운로드하여 설치하십시오.](https://github.com/adobe/aem-guides-wknd-spa)[
 
 >[!CAUTION]
 >
@@ -161,74 +161,8 @@ SPA이 최종 사용자를 위해 동작하고 SPA 페이지를 검사하는 방
 
 1. 브라우저의 내장된 도구를 사용하여 페이지의 소스를 봅니다.
 1. 소스의 컨텐츠는 제한되어 있습니다.
-
-   ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>WKND SPA React Home Page</title>
-   
-        <meta name="template" content="spa-page-template"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-base.min.css" type="text/css">
-   
-    <meta name="theme-color" content="#000000"/>
-    <link rel="icon" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/favicon.ico"/>
-    <link rel="apple-touch-icon" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/logo192.png"/>
-    <link rel="manifest" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react/resources/manifest.json"/>
-   
-    <!-- AEM page model -->
-    <meta property="cq:pagemodel_root_url" content="/content/wknd-spa-react/us/en.model.json"/>
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Asar&display=swap" rel="stylesheet"/>
-    <meta property="cq:datatype" content="JSON"/>
-    <meta property="cq:wcmmode" content="edit"/>
-   
-    <link rel="stylesheet" href="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.min.css" type="text/css">
-    <link rel="stylesheet" href="/etc.clientlibs/wcm/foundation/clientlibs/main.min.css" type="text/css">
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/messaging.min.js"></script>
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/utils.min.js"></script>
-    <script type="text/javascript" src="/libs/granite/author/deviceemulator/clientlibs.min.js"></script>
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/page.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/wcm/foundation/clientlibs/main.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
-   
-    <!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/header","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-header","structurePath":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-header","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/header/header.html","totalTime":2,"selfTime":2}-->
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react.min.css" type="text/css">
-   
-    </head>
-   
-    <body class="page basicpage">
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="spa-root"></div>
-   
-    <script type="text/javascript" src="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-react.min.js"></script>
-   
-    <script type="text/javascript" src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.min.js"></script>
-    <script type="text/javascript" src="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-base.min.js"></script>
-   
-    <script type="text/javascript" src="/libs/cq/gui/components/authoring/editors/clientlibs/internal/pagemodel/messaging.min.js"></script>
-   
-    <link rel="stylesheet" href="/etc.clientlibs/wknd-spa-react/clientlibs/clientlib-author.min.css" type="text/css">
-   
-    <!--cq{"decorated":true,"type":"cq/cloudserviceconfigs/components/servicecomponents","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudservices","selectors":null,"servlet":"Script /libs/cq/cloudserviceconfigs/components/servicecomponents/servicecomponents.jsp","totalTime":2,"selfTime":2}-->
-   
-    <!--cq{"decorated":false,"type":"cq/cloudconfig/components/scripttags/footer","path":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-footer","structurePath":"/content/wknd-spa-react/us/en/home/jcr:content/cloudconfig-footer","selectors":null,"servlet":"Script /libs/cq/cloudconfig/components/scripttags/footer/footer.html","totalTime":2,"selfTime":2}-->
-   
-    </body>
-    </html>
-    <!--cq{"decorated":false,"type":"wknd-spa-react/components/page","path":"/content/wknd-spa-react/us/en/home/jcr:content","selectors":null,"servlet":"Script /apps/spa-project-core/components/page/page.html","totalTime":39,"selfTime":33}-->
-   ```
-
-   페이지에 본문 내에 내용이 없습니다. 주로 스타일 시트 및 `clientlib-react.min.js`와 같은 다양한 스크립트에 대한 호출로 구성됩니다.
-
-   이러한 스크립트는 이 애플리케이션의 기본 드라이버이며 모든 컨텐츠를 렌더링하는 작업을 수행합니다.
+   * 페이지에 본문 내에 내용이 없습니다. 주로 스타일 시트 및 `clientlib-react.min.js`와 같은 다양한 스크립트에 대한 호출로 구성됩니다.
+   * 이러한 스크립트는 이 애플리케이션의 기본 드라이버이며 모든 컨텐츠를 렌더링하는 작업을 수행합니다.
 
 1. 브라우저에 내장된 툴을 사용하여 페이지를 검사할 수 있습니다. 완전히 로드된 DOM의 컨텐츠를 확인합니다.
 
@@ -297,6 +231,14 @@ SPA이 최종 사용자를 위해 동작하고 SPA 페이지를 검사하는 방
    >이 동작은 편집 가능한 각 구성 요소에 대해 `cq` 요소가 삽입된 AEM의 서버측 렌더링된 페이지와 다릅니다.
    >
    >SPA Editor에서 이 방법을 사용하면 사용자 정의 요소를 주입할 필요가 없고 추가 데이터 속성만 의존하므로 마크업이 프런트 엔드 개발자에게 더 간편해집니다.
+
+## AEM {#headful-headless}의 헤드리스 및 헤드리스
+
+SPA은 AEM 외부에서 개발 및 유지 관리하는 SPA 등 AEM에서 유연한 수준의 통합을 통해 활성화할 수 있습니다. 또한 AEM 내에서 SPA을 활용하여 추가 엔드포인트에 콘텐츠를 헤드없이 전달할 수도 있습니다.
+
+>[!TIP]
+>
+>자세한 내용은 AEM](/help/implementing/developing/headful-headless.md)의 [헤드라인 및 헤드리스 문서를 참조하십시오.
 
 ## 다음 단계 {#next-steps}
 
