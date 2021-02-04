@@ -2,9 +2,9 @@
 title: 서버측 API에 대한 액세스 토큰 생성
 description: 안전한 JWT 토큰을 생성하여 제3자 서버와 AEM 간의 Cloud Service으로 원활한 커뮤니케이션을 제공하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
+source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 소개 {#introduction}
 
->[!IMPORTANT]
->
->이 기능은 아직 사용할 수 없습니다. 최신 기능 목록은 [릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
-
 일부 아키텍처에서는 AEM에 대한 호출을 AEM 인프라 외부의 서버에 호스팅된 애플리케이션의 Cloud Service으로 사용합니다. 예를 들어 서버를 호출한 다음 API가 AEM에 Cloud Service으로 요청을 하는 모바일 응용 프로그램입니다.
 
 서버 간 흐름은 개발을 위한 간소화된 흐름과 함께 아래에 설명되어 있습니다. Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console)(으)로 AEM은 인증 프로세스에 필요한 토큰을 생성하는 데 사용됩니다.
+
+>[!NOTE]
+>
+>이 설명서 외에 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)으로서 AEM에 대한 [토큰 기반 인증의 자습서를 참조할 수도 있습니다.
 
 ## 서버 간 흐름 {#the-server-to-server-flow}
 
