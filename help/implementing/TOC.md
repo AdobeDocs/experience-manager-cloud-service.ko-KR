@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
+source-git-commit: 769b45e2546b06edba24c5cd33ad3e4547b3b54c
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 56%
+source-wordcount: '869'
+ht-degree: 47%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 56%
          + [구성 요소 개요](developing/components/overview.md)
          + [템플릿](developing/components/templates.md)
          + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-         + [스타일 시스템](/help/sites-cloud/authoring/features/style-system.md)
+         + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [컨텐츠 서비스용 JSON 익스포터](developing/components/json-exporter.md)
          + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
          + [이미지 편집기](developing/components/image-editor.md)
@@ -103,6 +103,7 @@ ht-degree: 56%
       + [Java API 지침](/help/implementing/developing/introduction/java-api-guidelines.md)
    + 하이브리드 AEM 개발 {#hybrid}
       + [AEM이 설치된 하이브리드 및 SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [SPA 소개 및 연습](developing/hybrid/introduction.md)
       + [SPA WKND 자습서](developing/hybrid/wknd-tutorial.md)
       + [반응 사용 시작](developing/hybrid/getting-started-react.md)
@@ -117,7 +118,7 @@ ht-degree: 56%
       + [RemotePage 구성 요소](developing/hybrid/remote-page.md)
       + [AEM 내에서 외부 SPA 편집](developing/hybrid/editing-external-spa.md)
       + [서버 측 렌더링](developing/hybrid/ssr.md)
-      + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
+      + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [통합 실행](developing/hybrid/launch-integration.md)
       + [SPA 참조 문서](developing/hybrid/reference-materials.md)
    + 헤드리스 환경 관리 {#headless}
@@ -129,22 +130,22 @@ ht-degree: 56%
          + [컨텐츠 조각 만들기](developing/headless/getting-started/create-content-fragment.md)
          + [컨텐츠 조각 액세스 및 제공](developing/headless/getting-started/create-api-request.md)
       + 콘텐츠 조각 {#content-fragments}
-         + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 전달](/help/assets/content-fragments/content-fragments-graphql.md)
-         + [콘텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
-         + [인스턴스에 대한 컨텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-         + [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
-         + [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
-         + [변형 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
-         + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
-         + [관련 컨텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md)
-         + [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md)
-         + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
-         + [미리 보기 - JSON 표현](/help/assets/content-fragments/content-fragments-json-preview.md)
+         + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 전달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+         + [콘텐츠 조각을 사용한 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+         + [인스턴스에 대한 컨텐츠 조각 기능 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
+         + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
+         + [콘텐츠 조각 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+         + [변형 - 조각 콘텐츠 작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
+         + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
+         + [관련 컨텐츠 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
+         + [메타데이터 - 조각 속성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+         + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+         + [미리 보기 - JSON 표현](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
       + 배달 API {#delivery-api}
-         + [컨텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
-         + [컨텐츠 조각 그래프QL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
-         + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-         + [컨텐츠 조각이 있는 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+         + [컨텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+         + [컨텐츠 조각 그래프QL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
+         + [컨텐츠 조각이 있는 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+         + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/graphql-authentication-content-fragments.md)
 + 개발자 도구 {#developer-tools}
    + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
@@ -160,7 +161,7 @@ ht-degree: 56%
    + [ContextHub 확장](developing/personalization/extending-contexthub.md)
    + [ContextHub API](developing/personalization/contexthub-api.md)
    + [Adobe Target과 통합](/help/sites-cloud/integrating/adobe-target.md)
-   + [ContextHub을 사용하여 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   + [ContextHub을 사용하여 세그멘테이션 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
    + [컨텐츠 조각 사용자 지정 및 확장](developing/extending/content-fragments-customizing.md)
