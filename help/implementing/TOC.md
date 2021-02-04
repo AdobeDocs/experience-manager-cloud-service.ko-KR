@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 57%
+source-wordcount: '724'
+ht-degree: 56%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 57%
    + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [서버측 API에 대한 액세스 토큰 생성](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [AEM의 헤드라인 및 헤드리스](developing/headful-headless.md)
    + 전체 스택 AEM 개발 {#full-stack}
       + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
       + [AEM UI 구조](developing/introduction/ui-structure.md)
@@ -102,7 +103,6 @@ ht-degree: 57%
       + [Java API 지침](/help/implementing/developing/introduction/java-api-guidelines.md)
    + 하이브리드 AEM 개발 {#hybrid}
       + [AEM이 설치된 하이브리드 및 SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
       + [SPA 소개 및 연습](developing/hybrid/introduction.md)
       + [SPA WKND 자습서](developing/hybrid/wknd-tutorial.md)
       + [반응 사용 시작](developing/hybrid/getting-started-react.md)
@@ -114,8 +114,11 @@ ht-degree: 57%
       + [SPA 페이지 구성 요소](developing/hybrid/page-component.md)
       + [동적 모델을 구성 요소 매핑으로](developing/hybrid/model-to-component-mapping.md)
       + [모델 라우팅](developing/hybrid/routing.md)
-      + [통합 실행](developing/hybrid/launch-integration.md)
+      + [RemotePage 구성 요소](developing/hybrid/remote-page.md)
+      + [AEM 내에서 외부 SPA 편집](developing/hybrid/editing-external-spa.md)
       + [서버 측 렌더링](developing/hybrid/ssr.md)
+      + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
+      + [통합 실행](developing/hybrid/launch-integration.md)
       + [SPA 참조 문서](developing/hybrid/reference-materials.md)
    + 헤드리스 환경 관리 {#headless}
       + [헤드리스 및 AEM](developing/headless/introduction.md)
