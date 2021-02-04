@@ -4,7 +4,7 @@ user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 769b45e2546b06edba24c5cd33ad3e4547b3b54c
+source-git-commit: 85c802029f8499ef1d97bc40e2cce5015f19c49b
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 47%
@@ -145,7 +145,7 @@ ht-degree: 47%
          + [컨텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
          + [컨텐츠 조각 그래프QL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [컨텐츠 조각이 있는 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
-         + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/graphql-authentication-content-fragments.md)
+         + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
 + 개발자 도구 {#developer-tools}
    + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
