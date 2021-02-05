@@ -3,10 +3,10 @@ title: 향상된 스마트 태그
 description: Adobe Sensei의 AI 및 ML 서비스를 사용하여 컨텍스트 기반의 상황적 및 설명적 비즈니스 태그를 적용하여 자산 검색과 컨텐츠 제작 시간을 향상할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 97%
+source-wordcount: '1040'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->새 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console]과 통합됩니다. 이렇게 하면 스마트 태그 기능을 보다 신속하게 구성할 수 있습니다. 기존 배포에서 관리자는 다음 단계에 따라 통합을 구성합니다.
+>[!DNL Experience Manager Assets] 2020년  [8월 출시 이후에 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) 생성된 배포는 기본적으로 [!DNL Adobe Developer Console] 와 통합됩니다. 이렇게 하면 스마트 태그 기능을 보다 신속하게 구성할 수 있습니다. 이전 배포에서 관리자는 다음 단계에 따라 통합을 구성할 수 있습니다.
 
 ## Adobe 개발자 콘솔과 통합 {#aio-integration}
 
@@ -109,7 +109,7 @@ SCS를 사용하여 이미지에 태그를 지정하려면 Adobe 개발자 콘�
 
 1. [https://console.adobe.io](https://console.adobe.io)에 액세스하여 프로젝트의 기존 서비스로 이동합니다. 새 인증서를 업로드하고 구성합니다. 구성에 대한 자세한 내용은 [Adobe 개발자 콘솔 통합 만들기](#create-aio-integration)의 지침을 참조하십시오.
 
-## 새로 업로드한 자산에 대한 스마트 태그 지정 사용(선택 사항) {#enable-smart-tagging-for-uploaded-assets}
+## 자산을 업로드할 때 자동 태그 지정 사용(선택 사항) {#enable-smart-tagging-for-uploaded-assets}
 
 1. [!DNL Experience Manager]에서 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 워크플로우 모델]** 페이지에서 **[!UICONTROL DAM 자산 업데이트]** 워크플로우 모델을 선택합니다.
