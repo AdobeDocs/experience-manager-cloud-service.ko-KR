@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 translation-type: tm+mt
-source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
+source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '607'
 ht-degree: 5%
 
 ---
@@ -18,14 +18,14 @@ AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만�
 
 ## AEM 관리 CDN {#aem-managed-cdn}
 
-Adobe의 기본 CDN을 사용하여 Cloud Manager 셀프 서비스 UI를 사용하여 컨텐츠 전달을 준비하려면 아래 섹션을 따르십시오.
+기본 AEM CDN을 사용하여 Cloud Manager 셀프 서비스 UI를 사용하여 컨텐츠 전달을 준비하려면 아래 섹션을 따르십시오.
 
 1. [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [사용자 지정 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **트래픽 제한**
 
-기본적으로 Adobe 관리 CDN 설정의 경우 모든 공개 트래픽이 프로덕션 및 비프로덕션(개발 및 스테이지) 환경에 대해 게시 서비스로 갈 수 있습니다. 특정 환경에 대한 게시 서비스로 트래픽을 제한하려는 경우(예: IP 주소 범위에 따라 스테이징을 제한하는 경우) Cloud Manager UI를 통해 셀프 서비스 방식으로 이 작업을 수행할 수 있습니다.
+기본적으로 AEM 관리 CDN 설정의 경우 모든 공개 트래픽이 프로덕션 및 비프로덕션(개발 및 스테이지) 환경에 대해 게시 서비스로 갈 수 있습니다. 특정 환경에 대한 게시 서비스로 트래픽을 제한하려는 경우(예: IP 주소 범위에 따라 스테이징을 제한하는 경우) Cloud Manager UI를 통해 셀프 서비스 방식으로 이 작업을 수행할 수 있습니다.
 
 자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)를 참조하십시오.
 
@@ -35,7 +35,7 @@ Adobe의 기본 CDN을 사용하여 Cloud Manager 셀프 서비스 UI를 사용�
 
 ## 고객 CDN은 AEM 관리 CDN {#point-to-point-CDN}을 가리킵니다.
 
-고객은 기존 CDN을 사용해야 하는 경우, 다음을 충족하면 해당 CDN을 관리하고 Adobe의 관리 CDN을 가리킬 수 있습니다.
+고객은 기존 CDN을 사용해야 하는 경우, 다음을 만족시키는 경우 이를 관리하고 AEM 관리 CDN을 가리킬 수 있습니다.
 
 * 고객은 교체해야 하는 기존 CDN이 있어야 합니다.
 * 고객은 이를 관리해야 합니다.
@@ -46,19 +46,19 @@ Adobe의 기본 CDN을 사용하여 Cloud Manager 셀프 서비스 UI를 사용�
 구성 지침:
 
 1. 도메인 이름으로 `X-Forwarded-Host` 헤더를 설정합니다.
-1. Adobe의 CDN 수신 도메인인 원본 도메인으로 호스트 헤더를 설정합니다. 값은 Adobe에서 와야 합니다.
+1. 호스트 헤더를 AEM CDN의 수신인 원본 도메인으로 설정합니다. 값은 Adobe에서 와야 합니다.
 1. SNI 헤더를 원본으로 보냅니다. 호스트 헤더와 마찬가지로 sni 헤더는 원본 도메인이어야 합니다.
 1. 트래픽을 AEM 서버로 올바르게 라우팅하는 데 필요한 `X-Edge-Key`을 설정합니다. 값은 Adobe에서 와야 합니다.
 
 라이브 트래픽을 수락하기 전에 엔드 투 엔드 트래픽 라우팅이 올바르게 작동하는지 Adobe 고객 지원으로 확인해야 합니다.
 
-고객 CDN에서 Adobe의 관리 CDN으로의 고동이 효율적일 수 있지만, 추가 홉으로 인해 작은 성능 히트가 발생할 수 있습니다.
+고객 CDN에서 AEM 관리 CDN으로의 홉이 효율적일 수 있지만, 추가 홉으로 인해 작은 성능 히트가 발생할 수 있습니다.
 
 이 고객 CDN 구성은 제작 계층에 대해 지원되지만 작성자 계층 앞에는 지원되지 않습니다.
 
 ## 지리적 위치 헤더 {#geo-headers}
 
-Adobe 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다.
+AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다.
 
 * 국가 코드:`x-aem-client-country`
 * 대륙 코드:`x-aem-client-continent`
