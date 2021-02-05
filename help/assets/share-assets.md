@@ -3,9 +3,9 @@ title: 자산, 폴더 및 컬렉션을 링크로 공유
 description: 이 문서에서는  [!DNL Experience Manager Assets] 에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >* 링크로 공유할 폴더 또는 자산에 대한 ACL 편집 권한이 필요합니다.
->* 사용자와 링크를 공유하기 전에 요일 CQ 메일 서비스가 구성되어 있는지 확인합니다. 그렇지 않으면 오류가 발생합니다.
+>* 사용자와 링크를 공유하기 전에 [아웃바운드 이메일이 활성화되어 있는지](/help/implementing/developing/introduction/development-guidelines.md#sending-email) 확인하십시오. 그렇지 않으면 오류가 발생합니다.
 
 
 1. [!DNL Assets] 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
@@ -169,7 +169,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 데스크톱 앱 {#desktop-actions}에 사용할 데스크톱 작업 활성화
 
-브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 데스크톱 응용 프로그램에서 편집할 자산을 열 수 있습니다. 이러한 옵션은 데스크톱 작업이라고 하며 이를 활성화하려면 AEM 웹 인터페이스에서 데스크톱 작업 활성화[를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 데스크톱 응용 프로그램에서 편집할 자산을 열 수 있습니다. 이러한 옵션은 데스크톱 작업이라고 하며 이를 활성화하려면 AEM 웹 인터페이스에서 데스크톱 작업 활성화](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)를 참조하십시오.[
 
 ![데스크탑 앱 작업 시 바로 가기 기능을 사용할 수 있도록 데스크탑 작업 활성화](assets/enable_desktop_actions.png)
 
