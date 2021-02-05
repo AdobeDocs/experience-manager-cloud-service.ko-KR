@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 translation-type: tm+mt
-source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
+source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '604'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,10 @@ Adobe의 기본 CDN을 사용하여 Cloud Manager 셀프 서비스 UI를 사용�
 기본적으로 Adobe 관리 CDN 설정의 경우 모든 공개 트래픽이 프로덕션 및 비프로덕션(개발 및 스테이지) 환경에 대해 게시 서비스로 갈 수 있습니다. 특정 환경에 대한 게시 서비스로 트래픽을 제한하려는 경우(예: IP 주소 범위에 따라 스테이징을 제한하는 경우) Cloud Manager UI를 통해 셀프 서비스 방식으로 이 작업을 수행할 수 있습니다.
 
 자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)를 참조하십시오.
+
+>[!CAUTION]
+>
+>허용된 IP의 요청만 AEM 관리 CDN에서 제공됩니다. 자신의 CDN을 AEM 관리 CDN으로 가리킬 경우 CDN의 IP가에 포함되어 있는지 허용 목록에 추가하다 확인합니다.
 
 ## 고객 CDN은 AEM 관리 CDN {#point-to-point-CDN}을 가리킵니다.
 
