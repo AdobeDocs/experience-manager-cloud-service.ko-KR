@@ -2,9 +2,9 @@
 title: 스마트 태그 지정 비디오 에셋
 description: Experience Manager은  [!DNL Adobe Sensei]을(를) 사용하여 상황에 맞는 및 설명형 스마트 태그를 비디오에 자동으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 매력적인 디지털 경험을 신속하게 제공하기 위해 수동으로 작업해야 하는 번거로운 작업을 줄일 수 있는 새로운 컨텐츠의 필요성이 점차 증가하고 있습니다. [!DNL Adobe Experience Manager] 는 인공 지능을 사용하여 비디오 에셋의 자동 태그 지정을  [!DNL Cloud Service] 지원합니다. 비디오에 수동으로 태그를 지정하면 시간이 많이 걸릴 수 있습니다. 그러나, [!DNL Adobe Sensei] 제공 비디오 스마트 태그 지정 기능은 인공 지능 모델을 사용하여 비디오 컨텐츠를 분석하고 비디오 에셋에 태그를 추가합니다. DAM 사용자가 고객에게 풍부한 경험을 제공하는 데 걸리는 시간을 줄일 수 있습니다. Adobe의 기계 학습 서비스는 비디오에 대해 두 개의 태그 세트를 생성합니다. 반면에 한 세트는 해당 비디오의 개체, 장면 및 속성에 해당합니다.다른 세트는 음주, 달리기, 조깅과 같은 행동과 관련이 있다.
 
-비디오 에셋의 자동 태그 지정은 비디오가 업로드된 후 또는 재처리가 트리거될 때 축소판 만들기 및 메타데이터 추출과 함께 표준 에셋 처리 시 발생합니다. 스마트 태그는 자산 [!UICONTROL 속성]에서 [신뢰 점수](#confidence-score-video-tag)의 내림차순으로 표시됩니다. 비디오 태그 지정은 기본적으로 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service](으)로 활성화됩니다. 그러나 폴더에서 [비디오 스마트 태그 지정 수신 거부](#opt-out-video-smart-tagging)할 수 있습니다.
+비디오 태그 지정은 기본적으로 [!DNL Adobe Experience Manager]에서 [!DNL Cloud Service](으)로 활성화됩니다. 그러나 폴더에서 [비디오 스마트 태그 지정 수신 거부](#opt-out-video-smart-tagging)할 수 있습니다. 새 비디오를 업로드하거나 기존 비디오를 다시 처리할 때 비디오에 자동 태그가 지정됩니다. [!DNL Experience Manager] 또한 비디오 파일의 축소판을 만들고 메타데이터를 추출합니다. 스마트 태그는 자산 [!UICONTROL 속성]에서 [신뢰 점수](#confidence-score-video-tag)의 내림차순으로 표시됩니다.
 
 ## 업로드 시 스마트 태그 지정 비디오{#smart-tag-assets-on-ingestion}
 
