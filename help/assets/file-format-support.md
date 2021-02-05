@@ -3,10 +3,10 @@ title: 지원되는 파일 형식 및 MIME 형식
 description: 파일 형식 및 MIME 유형은  [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]으로 지원합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 8%
+source-wordcount: '818'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 또한 [!DNL Experience Manager Assets]은 미리 보기 및 표현물을 생성하고 전체 텍스트 인덱싱을 위한 메타데이터와 텍스트를 추출할 수 있도록 확장된 지원을 제공합니다. 이 확장 지원은 [에셋 마이크로서비스](asset-microservices-configure-and-use.md)를 사용하여 제공됩니다.
 
-자산 마이크로서비스를 사용한 자산 전환의 주요 내용은 다음과 같습니다.
+에셋 마이크로서비스를 사용하여 에셋 전환을 위한 주요 이점은 다음과 같습니다.
 
 * [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] 및 [!DNL Adobe Acrobat] 또는 PDF를 비롯한 Adobe 응용 프로그램 및 서비스에서 생성된 [ Adobe 파일 형식](#adobe-formats)을 키 지정합니다.
 * [이미징 파일 형식](#image-formats)을(를) 키 지정합니다.
@@ -25,7 +25,7 @@ ht-degree: 8%
 * 일반 [문서 형식](#document-formats)(Microsoft Office 및 Open Document 형식 포함)
 * 광범위한 [video](#video-formats) 및 [audio](#audio-formats) 형식.
 
-다음 범례에서는 지원 수준을 설명합니다.
+다음 범례에서는 각 형식에 대한 지원 수준에 대해 설명합니다.
 
 | 지원 수준 | 설명 |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ Dynamic Media에서 [3D 자산 작업을 참조하십시오.](/help/assets/dynam
 >[!MORELIKETHIS]
 >
 >* [에셋 마이크로서비스를 사용한 에셋 처리](asset-microservices-overview.md)
+>* [텍스트 기반 에셋의 스마트 태그 지정을 위한 지원되는 파일 형식](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
