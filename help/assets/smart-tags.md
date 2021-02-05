@@ -3,9 +3,9 @@ title: AI에서 생성된 태그를 사용하여 에셋에 자동 태그 지정
 description: ' [!DNL Adobe Sensei] 서비스를 사용하여 문맥 및 설명 비즈니스 태그를 적용하는 인공적인 지능형 서비스를 사용하여 자산에 태그를 지정합니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 * **이미지**:다양한 형식의 이미지는 Adobe Sensei의 스마트 콘텐츠 서비스를 사용하여 태그로 지정됩니다. [교육 모델](#train-model)을 만든 다음 [이미지에 스마트 태그](#tag-assets)를 적용합니다.
 * **비디오 에셋**:비디오 태그 지정은 기본적으로  [!DNL Adobe Experience Manager] 로 활성화되어  [!DNL Cloud Service]있습니다. [새 비디오를 ](/help/assets/smart-tags-video-assets.md) 업로드하거나 기존 비디오를 다시 처리할 때 비디오는 자동으로 태깅됩니다.
-* **텍스트 기반 에셋**: [!DNL Experience Manager Assets] 업로드되면 지원되는 텍스트 기반 자산에 자동으로 태그를 지정합니다.
+* **텍스트 기반 에셋**: [!DNL Experience Manager Assets] 업로드되면 지원되는 텍스트 기반 자산에 자동으로 태그를 지정합니다. 텍스트 기반 자산](#smart-tag-text-based-assets)의 스마트 태그 지정에 대해 자세히 알아보십시오.[
 
 ## 지원되는 자산 유형 {#smart-tags-supported-file-formats}
 
