@@ -3,15 +3,15 @@ title: AI에서 생성된 태그를 사용하여 에셋에 자동 태그 지정
 description: ' [!DNL Adobe Sensei] 서비스를 사용하여 문맥 및 설명 비즈니스 태그를 적용하는 인공적인 지능형 서비스를 사용하여 자산에 태그를 지정합니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
+source-wordcount: '2799'
 ht-degree: 1%
 
 ---
 
 
-# 자산에 스마트 태그를 추가하여 빠른 검색 {#smart-tag-assets-for-faster-search}
+# 자산에 스마트 태그를 추가하여 검색 경험 {#smart-tag-assets-for-faster-search} 향상
 
 디지털 자산을 다루는 조직은 자산 메타데이터에 분류 제어 용어를 점점 더 사용하고 있습니다. 기본적으로 직원, 파트너 및 고객이 디지털 자산을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록이 포함되어 있습니다. 분류법이 제어되는 어휘로 자산에 태그를 지정하면 검색에서 자산을 쉽게 식별하고 검색할 수 있습니다.
 
@@ -23,25 +23,31 @@ ht-degree: 1%
 ![flowchart](assets/flowchart.gif) 
 -->
 
+다음 유형의 자산에 태그를 지정할 수 있습니다.
+
+* **이미지**:다양한 형식의 이미지는 Adobe Sensei의 스마트 콘텐츠 서비스를 사용하여 태그로 지정됩니다. [교육 모델](#train-model)을 만든 다음 [이미지에 스마트 태그](#tag-assets)를 적용합니다.
+* **비디오 에셋**:비디오 태그 지정은 기본적으로  [!DNL Adobe Experience Manager] 로 활성화되어  [!DNL Cloud Service]있습니다. [새 비디오를 ](/help/assets/smart-tags-video-assets.md) 업로드하거나 기존 비디오를 다시 처리할 때 비디오는 자동으로 태깅됩니다.
+* **텍스트 기반 에셋**: [!DNL Experience Manager Assets] 업로드되면 지원되는 텍스트 기반 자산에 자동으로 태그를 지정합니다.
+
 ## 지원되는 자산 유형 {#smart-tags-supported-file-formats}
 
-스마트 태그는 JPG 및 PNG 형식의 변환을 생성하는 지원되는 파일 유형에만 적용됩니다. 이 기능은 다음 유형의 자산에 대해 지원됩니다.
+스마트 태그는 JPG 및 PNG 형식의 변환을 생성하는 지원되는 파일 유형에 적용됩니다. 이 기능은 다음 유형의 자산에 대해 지원됩니다.
 
 | 이미지(MIME 유형) | 텍스트 기반 에셋(파일 형식) | 비디오 에셋(파일 포맷 및 코덱스) |
 |----|-----|------|
-| image/jpeg | TXT | MP4(H264/AVC) |
-| image/tiff | RTF | MKV(H264/AVC) |
-| image/png | DITA | MOV(H264/AVC, 모션 JPEG) |
-| image/bmp | XML | AVI(indeo4) |
+| image/jpeg | CSV | MP4(H264/AVC) |
+| image/tiff | DOC | MKV(H264/AVC) |
+| image/png | DOCX | MOV(H264/AVC, 모션 JPEG) |
+| image/bmp | HTML | AVI(indeo4) |
 | image/gif | JSON | FLV(H264/AVC, vp6f) |
-| image/pjpeg | DOC | WMV(WMV2) |
-| image/x-portable-anymap | DOCX |  |
-| image/x-portable-bitmap | PDF |  |
-| image/x-portable-graymap | CSV |  |
-| image/x-portable-pixmap | PPT |  |
-| image/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV(WMV2) |
+| image/x-portable-anymap | PPT |  |
+| image/x-portable-bitmap | PPTX |  |
+| image/x-portable-graymap | RTF |  |
+| image/x-portable-pixmap | SRT |  |
+| image/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpimap | SRT |  |
+| image/x-xpimap | XML |  |
 | image/x-icon |  |  |
 | 이미지/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ ht-degree: 1%
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## 텍스트 기반 자산 {#smart-tag-text-based-assets} 스마트 태그 지정
+
+지원되는 텍스트 기반 자산은 업로드할 때 [!DNL Experience Manager Assets]에 의해 자동으로 태그가 지정됩니다. 기본적으로 활성화되어 있습니다. 스마트 태그의 효력은 에셋의 텍스트 양보다는 에셋 텍스트에 있는 관련 키워드 또는 엔티티에 따라 달라집니다. 텍스트 기반 자산의 경우 스마트 태그는 텍스트에 나타나는 키워드이지만 자산을 가장 잘 설명하는 키워드입니다. 지원되는 에셋의 경우 [!DNL Experience Manager]은(는) 이미 텍스트를 추출하여 색인화된 다음 에셋을 검색하는 데 사용됩니다. 그러나 텍스트의 키워드를 기반으로 하는 스마트 태그는 전체 검색 색인과 비교하여 자산 검색을 향상시키는 데 사용되는 전용, 구조화된, 높은 우선 순위 검색 패싯을 제공합니다.
+
+반면 이미지 및 비디오의 경우 스마트 태그는 시각적 측면을 기반으로 파생됩니다.
+
 ## [!DNL Experience Manager]을(를) Adobe 개발자 콘솔 {#integrate-aem-with-aio}과 통합
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ ht-degree: 1%
 
 ## 태그 모델 및 지침 이해 {#understand-tag-models-guidelines}
 
-태그 모델은 이미지의 시각적 측면을 기준으로 하는 관련 태그 그룹입니다. 예를 들어 shoes 컬렉션에는 다른 태그가 있을 수 있지만 모든 태그가 shoes와 관련되어 있고 동일한 태그 모델에 속할 수 있습니다. 태그는 이미지의 뚜렷한 시각적 측면만 연결할 수 있습니다. 교육 모델의 내용 표현을 [!DNL Experience Manager]에서 이해하려면 교육 모델을 수동으로 추가한 태그 그룹과 각 태그에 대한 예제 이미지로 구성된 최상위 엔티티로 시각화합니다. 각 태그는 이미지에 단독으로 적용할 수 있습니다.
-
-현실적으로 처리할 수 없는 태그는 다음과 관련되어 있습니다.
-
-* 제품 출시 연도 또는 계절과 같이 비시각적이고 추상적인 측면을 이미지에 의해 분위기 또는 감정을 유발합니다.
-* 제품에 임베드되어 있는 콜라어 및 무색 셔츠나 작은 제품 로고 같은 제품의 시각적 차이를 세밀하게 조정할 수 있습니다.
+태그 모델은 태그 지정된 이미지의 다양한 시각적 측면과 연결된 관련 태그 그룹입니다. 태그는 이미지의 완전히 다른 시각적 측면과 관련되므로 태그를 적용하면 특정 유형의 이미지를 검색하는 데 도움이 됩니다. 예를 들어 shoes 컬렉션에는 다른 태그가 있을 수 있지만 모든 태그가 shoes와 관련되어 있고 동일한 태그 모델에 속할 수 있습니다. 태그를 적용하면 색상, 디자인 또는 용도별 등 다양한 유형의 신발을 찾을 수 있습니다. 교육 모델의 내용 표현을 [!DNL Experience Manager]에서 이해하려면 교육 모델을 수동으로 추가한 태그 그룹과 각 태그에 대한 예제 이미지로 구성된 최상위 엔티티로 시각화합니다. 각 태그는 이미지에 단독으로 적용할 수 있습니다.
 
 태그 모델을 만들고 서비스를 교육하기 전에 비즈니스 컨텍스트에서 이미지의 개체를 가장 잘 설명하는 고유한 태그 집합을 식별합니다. 선별된 세트의 자산이 [교육 지침](#training-guidelines)에 부합하는지 확인합니다.
 
@@ -189,9 +196,7 @@ ht-degree: 1%
 
 ### 업로드된 자산 {#tag-uploaded-assets} 태그 지정
 
-Experience Manager은 사용자가 DAM에 업로드한 자산에 자동으로 태그를 지정할 수 있습니다. 이를 위해 관리자는 스마트 태그 자산에 사용 가능한 단계를 추가하는 워크플로우를 구성합니다. 업로드된 자산](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)에 대해 스마트 태그 지정을 활성화하는 방법을 참조하십시오.[
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] 사용자가 DAM에 업로드한 자산에 자동으로 태그를 지정할 수 있습니다. 이를 위해 관리자는 스마트 태그 자산에 사용 가능한 단계를 추가하는 워크플로우를 구성합니다. 업로드된 자산](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)에 대해 스마트 태그 지정을 활성화하는 방법을 참조하십시오.[
 
 ## 스마트 태그 및 자산 검색 관리 {#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ Experience Manager은 사용자가 DAM에 업로드한 자산에 자동으로 �
 1. 스마트 태그의 `woman running`과 일치합니다.
 1. 스마트 태그의 `woman` 또는 `running`과 일치합니다.
 
-### 태깅 제한 사항 {#limitations}
+## 태그 지정 제한 사항 및 우수 사례 {#limitations}
 
-향상된 스마트 태그는 브랜드 이미지와 해당 태그의 학습 모델을 기반으로 합니다. 이러한 모델이 태그를 식별하기에 완벽한 것은 아닙니다. 스마트 태그의 현재 버전에서는 다음과 같은 제한이 있습니다.
+고급 태그 지정은 이미지 및 태그 학습 모델을 기반으로 합니다. 이러한 모델이 태그를 식별하기에 완벽한 것은 아닙니다. 스마트 태그의 현재 버전에서는 다음과 같은 제한이 있습니다.
 
 * 이미지의 미묘한 차이를 인식하지 못함 예를 들어, 슬림형 셔츠와 보통 맞춤 셔츠입니다.
 * 이미지의 작은 패턴/부분을 기반으로 태그를 식별하지 못함 예를 들어 T-shirts의 로고가 있습니다.
-* 태깅은 Experience Manager에서 지원하는 언어에서 지원됩니다. 언어 목록은 [스마트 콘텐츠 서비스 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)를 참조하십시오.
+* 태깅은 [!DNL Experience Manager]에서 지원하는 언어에서 지원됩니다. 언어 목록은 [스마트 콘텐츠 서비스 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)를 참조하십시오.
+* 현실적으로 처리되지 않는 태그는 다음과 관련되어 있습니다.
+
+   * 제품의 출시 년도, 출시 시기, 이미지의 분위기 또는 감정 등 비시각적이고 추상적인 측면과 비디오의 주관적인 어휘 등이 자극합니다.
+   * 제품에 임베드되어 있는 콜라어 및 무색 셔츠나 작은 제품 로고 같은 제품의 시각적 차이를 세밀하게 조정할 수 있습니다.
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-스마트 태그가 있는 에셋을 검색하려면(일반 또는 향상된) 에셋 검색(전체 텍스트 검색)을 사용합니다. 스마트 태그에 대한 별도의 검색 조건자가 없습니다.
+스마트 태그가 있는 에셋을 검색하려면(일반 또는 향상된 기능) [!DNL Assets] Omnisearch(전체 텍스트 검색)를 사용합니다. 스마트 태그에 대한 별도의 검색 조건자가 없습니다.
 
 >[!NOTE]
 >
