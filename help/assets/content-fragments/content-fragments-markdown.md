@@ -2,9 +2,9 @@
 title: Markdown
 description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 100%
 
 ---
@@ -188,7 +188,7 @@ ht-degree: 100%
 
     `\ backslash`
 
-    ` 억음 악센트
+    `` ` backtick``
 
     `* asterisk`
 
