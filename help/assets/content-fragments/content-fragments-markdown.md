@@ -2,7 +2,7 @@
 title: Markdown
 description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
+source-git-commit: 05e2ccd53749fe7b0ac516688a1d205d46fc3492
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 100%
@@ -186,24 +186,24 @@ ht-degree: 100%
 
 백슬래시 이스케이스는 다음 문자에 사용할 수 있습니다.
 
-    `\ backslash`
+    ` \ backslash`
 
     `` ` backtick``
 
-    `* asterisk`
+    ` * asterisk`
 
-    `_ underscore`
+    ` _ underscore`
 
-    `{} curly braces`
+    ` {} curly braces`
 
-    `[] square brackets`
+    ` [] square brackets`
 
-    `() parentheses`
+    ` () parentheses`
 
-    `# hash mark`
+    ` # hash mark`
 
-    `+ plus sign`
+    ` + plus sign`
 
-    `- minus sign (hyphen)`
+    ` - minus sign (hyphen)`
 
-    `. dot`
+    ` . dot`
