@@ -3,9 +3,9 @@ title: 여러 언어로 디지털 에셋 제작 및 관리
 description: 이진 파일, 메타데이터 및 태그를 여러 언어로 번역하는 워크플로우를 자동화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
+source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2587'
 ht-degree: 3%
 
 ---
@@ -168,7 +168,7 @@ Adobe Experience Manager(AEM) 자산에서 다국어 자산은 폴더에 포함�
 
 ### 임시 언어 사본 만들기 {#creating-temporary-language-copies}
 
-번역 워크플로우를 실행하여 원본 자산의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 자산을 승인할 때까지 기존 언어 복사본이 유지됩니다. AEM Assets은 새로 번역된 에셋을 임시 위치에 저장하고 사용자가 에셋을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
+번역 워크플로우를 실행하여 원본 에셋의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 에셋을 승인할 때까지 기존 언어 복사본이 유지됩니다. AEM Assets은 새로 번역된 에셋을 임시 위치에 저장하고 사용자가 에셋을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
 
 1. 이미 언어 사본을 만든 **[!UICONTROL 언어 사본]**&#x200B;에 있는 소스 루트 폴더를 클릭/탭한 다음 **[!UICONTROL 자산]**&#x200B;에 표시를 클릭/탭하여 AEM Assets에서 폴더를 엽니다.
 1. 자산 UI에서 이미 번역한 자산을 선택하고 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭/탭하여 편집 모드에서 자산을 엽니다.
@@ -186,7 +186,10 @@ Adobe Experience Manager(AEM) 자산에서 다국어 자산은 폴더에 포함�
 
 1. 자산 콘솔로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
-에셋의 메타데이터를 효율적으로 번역하는 방법에 대한 팁은 메타데이터](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)를 효율적으로 번역하는 [5 단계를 참조하십시오.
+<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+
+For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
+-->
 
 ## 번역 프로젝트 만들기 {#creating-translation-projects}
 
