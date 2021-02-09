@@ -2,10 +2,10 @@
 title: 다중 사이트에서 타깃팅된 컨텐츠 작업
 description: 사이트 간 활동, 경험 및 오퍼와 같은 타깃팅된 컨텐츠를 관리해야 하는 경우 타깃팅된 컨텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 87%
+source-wordcount: '2915'
+ht-degree: 86%
 
 ---
 
@@ -52,6 +52,7 @@ ht-degree: 87%
 >
 >* 롤아웃이나 Live Copy를 사용하는 경우 MSM 라이센스가 있어야 합니다.
 >* Adobe Target에 대한 동기화를 사용하는 경우 Adobe Target 라이센스가 있어야 합니다.
+
 >
 
 
@@ -188,9 +189,9 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 1. **롤아웃 구성** 드롭다운 메뉴에서 적절한 구성을 선택합니다.
 
-   각 선택 사항에 대해서는 설치된 롤아웃 구성을 참조하십시오. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   각 선택 사항에 대해서는 [설치된 롤아웃 구성](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations)을 참조하십시오.
 
-   Live Copy에 대한 자세한 내용은 Live Copy 만들기 및 동기화를 참조하십시오. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   Live Copy에 대한 자세한 내용은 [Live Copy 만들기 및 동기화](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html)를 참조하십시오.
 
    >[!NOTE]
    >
@@ -239,6 +240,7 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 >
 >* 활동에서는 Live Copy만 일시 중단하거나 분리할 수 있습니다.
 >* 상속된 활동을 확장하기 위해 Live Copy를 일시 중단하거나 분리할 필요는 없습니다. 항상 해당 활동에 대한 **새** 로컬 경험과 오퍼를 만들 수 있습니다. 기존 활동을 수정하려면 상속을 일시 중단해야 합니다.
+
 >
 
 
