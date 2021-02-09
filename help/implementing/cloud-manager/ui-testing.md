@@ -2,9 +2,9 @@
 title: UI 테스트 - Cloud Services
 description: UI 테스트 - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf3fb5178bc2ae72e19ecc1de82b08fac5089ecf
+source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -12,12 +12,11 @@ ht-degree: 0%
 
 # UI 테스트 {#ui-testing}
 
->[!CAUTION]
->
->이 기능은 아직 일반적으로 사용할 수 없습니다.
-
-
 UI 테스트는 Selenium 기반 테스트로, Java 및 Maven, Node 및 WebDriver.io와 같은 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 광범위한 선택을 할 수 있도록 Docker 이미지에 패키지되어 있습니다. Docker 이미지는 표준 도구로 만들 수 있지만 실행 중에는 특정 규칙을 준수해야 합니다. Docker 이미지를 실행하면 Selenium 서버가 자동으로 프로비저닝됩니다. 아래에 설명된 런타임 규칙을 통해 테스트 코드가 Selenium 서버와 테스트 중인 AEM 인스턴스 모두에 액세스할 수 있습니다.
+
+>[!NOTE]
+> 이 페이지에 설명된 대로 UI 테스트를 사용하려면 2021년 2월 10일 이전에 만들어진 스테이지 및 프로덕션 파이프라인을 업데이트해야 합니다.
+> 파이프라인 구성에 대한 자세한 내용은 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md)을 참조하십시오.
 
 ## UI 테스트 작성 중 {#building-ui-tests}
 
