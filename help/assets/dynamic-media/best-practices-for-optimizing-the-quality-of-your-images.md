@@ -2,9 +2,9 @@
 title: 이미지 품질 최적화 우수 사례
 description: Dynamic Media에서 이미지 에셋의 품질을 최적화하는 데 사용할 수 있는 모범 사례를 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 1%
 
 ---
@@ -40,9 +40,9 @@ AEM에는 이미지를 조정 및 최적화하고 결과를 렌더링하기 위�
 
 이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 데 가장 복잡한 측면이며 오류가 많이 발생하는 영역입니다. 다음과 같은 유용한 리소스를 참고하여 AEM에서 선명하게 하기 및 언샵 마스크가 작동하는 방식을 자세히 살펴볼 수 있습니다.
 
-모범 사례 백서 [Adobe Dynamic Media Classic의 이미지 선명하게 하기](/help/assets/dynamic-media/assets/sharpening_images.pdf)도 AEM에 적용됩니다.
+* 모범 사례 백서 [Adobe Dynamic Media Classic의 이미지 선명하게 하기](/help/assets/dynamic-media/assets/sharpening_images.pdf)도 AEM에 적용됩니다.
 
-Adobe TV에서 [선명한 마스크](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)를 사용하여 이미지 선명 효과를 시청하십시오.
+* AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)에서 이미지 선명하게 하기 사용 을 시청하십시오.[
 
 AEM을 사용하면 섭취, 전달 시 또는 두 가지 모두를 통해 이미지를 선명하게 만들 수 있습니다. 그러나 대부분의 경우 한 가지 방법 또는 다른 방법을 사용하여 이미지를 선명하게 해야 하지만 두 방법 모두 선명하게 해야 합니다. 배달 시 URL에서 이미지를 선명하게 하면 최상의 결과를 얻을 수 있습니다.
 
