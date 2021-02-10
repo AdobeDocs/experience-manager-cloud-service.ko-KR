@@ -2,9 +2,9 @@
 title: 대화형 비디오
 description: Dynamic Media에서 인터랙티브한 비디오 및 쇼퍼블 비디오를 사용하여 작업하는 방법을 살펴봅니다.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6017'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 축소판을 클릭하여 비디오를 일시 중지하고 제품의 빠른 보기를 엽니다. 예를 들어 비디오에서 KitchenAid 축소판 이미지를 클릭하여 믹서의 360도 회전 보기를 경험하거나 확대하면서 믹서의 세부 사항을 확인할 수 있습니다.
 
-Dynamic Media[에서 대화형 비디오 사용 참조](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)에서 대화형 비디오 사용 참조[
 
 <!-- 
 
@@ -58,7 +58,7 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) 웨비�
 
 다음 단계별 워크플로우 설명은 Dynamic Media에서 인터랙티브한 비디오를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다.
 
-빠른 시작 작업 중 일부 내에서 **Example** 머리글을 찾습니다. 여기에는 *이(가) 아직](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)에 상호 작용이 추가되지 않은 &lt;a1/>데모 웹 페이지 시작을 기반으로 하는 간단한 자습서가 포함되어 있습니다.[*
+빠른 시작 작업 중 일부 내에서 **Example** 머리글을 찾습니다. 여기에는 *이(가) 아직](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)에 상호 작용이 추가되지 않은 [데모 웹 페이지 시작을 기반으로 하는 간단한 자습서가 포함되어 있습니다.*
 
 자신의 웹 사이트에서 대화형 비디오를 통합하는 단계를 보여주는 **Examples** 도움말입니다.
 
@@ -91,13 +91,12 @@ AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) 웨비�
 제3자 WCM(Web Content Manager)을 사용하는 경우 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. [기존 Quickview](#integrating-an-interactive-video-with-an-existing-quickview)와 대화형 비디오 통합을 참조하십시오.
    [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-## (선택 사항) Quickview 변수확인 {#optional-identifying-quickview-variables}
+## (선택 사항) Quickview 변수 {#optional-identifying-quickview-variables} 확인
 
 >[!NOTE]
->
->이 작업은 다음 내용이 참인 경우에만 필요합니다.
->* Quickviews에 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
->* AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.<!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->*
+이 작업은 다음 내용이 참인 경우에만 필요합니다.
+* Quickviews에 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
+* AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.<!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->*
 
 AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -234,7 +233,7 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
 
 자신의 대화형 비디오 뷰어 사전 설정을 만들려면 [새 뷰어 사전 설정 만들기](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
 
-## 비디오 및 관련 축소판 에셋업로드 {#uploading-a-video-and-its-associated-thumbnail-assets}
+## 비디오와 관련 썸네일 자산 업그레이드 {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 비디오 및 축소판 에셋을 이미 업로드한 경우 [비디오에 상호 작용 추가](#adding-interactivity-to-your-video)로 진행합니다.
 
@@ -249,7 +248,7 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
 
    이제 비디오에 인터랙티브한 요소를 추가할 수 있습니다.
 
-## 비디오에 인터랙티브한 요소 추가 {#adding-interactivity-to-your-video}
+## 비디오 {#adding-interactivity-to-your-video}에 인터랙티브한 요소 추가
 
 [대화형 비디오 만들기] 페이지의 즉석 시각 편집기를 사용하여 타임라인 세그먼트를 비디오에 추가합니다.
 
@@ -258,12 +257,10 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)을 참조하십시오.
 
 >[!NOTE]
->
->경험 조각에 뷰어를 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하여 경험 조각에 성공적으로 포함할 수 있습니다.
+경험 조각에 뷰어를 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하여 경험 조각에 성공적으로 포함할 수 있습니다.
 
 >[!NOTE]
->
->인터랙티브한 컨텐츠에 상대 URL, 특히 AEM Sites 페이지로 연결되는 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+인터랙티브한 컨텐츠에 상대 URL, 특히 AEM Sites 페이지로 연결되는 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 
 현재 작성/편집 세션 동안 페이지의 오른쪽 위 모서리 근처에 있는 실행 취소 및 재실행 옵션이 지원됩니다.
 
@@ -484,8 +481,7 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
    완료되면 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
 
    >[!NOTE]
-   >
-   >대화형 비디오를 저장할 때 연결된 `.vtt` 파일이 해당 비디오와 함께 자동으로 저장됩니다. `.vtt` 파일은 **[!UICONTROL Assets]**&#x200B;의 루트에 있는 `_VTT` 폴더에 저장됩니다. 웹 사이트에서 대화형 비디오를 올바르게 재생하려면 파일과 폴더가 필요합니다. 따라서 `_VTT` 폴더 또는 해당 컨텐츠를 이동, 편집 또는 삭제하지 마십시오.
+   대화형 비디오를 저장할 때 연결된 `.vtt` 파일이 해당 비디오와 함께 자동으로 저장됩니다. `.vtt` 파일은 **[!UICONTROL Assets]**&#x200B;의 루트에 있는 `_VTT` 폴더에 저장됩니다. 웹 사이트에서 대화형 비디오를 올바르게 재생하려면 파일과 폴더가 필요합니다. 따라서 `_VTT` 폴더 또는 해당 컨텐츠를 이동, 편집 또는 삭제하지 마십시오.
 
 1. 대화형 비디오를 게시합니다. 게시를 사용하면 웹 사이트 경험에 최종적으로 복사하고 붙여넣을 포함 코드나 URL이 만들어집니다.
 
@@ -494,8 +490,7 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
    [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
    >[!NOTE]
-   >
-   >Quickviews를 사용하여 쇼퍼블 비디오를 게시하려면 상거래 영역에서 각 비디오의 관련 이미지 에셋을 별도로 게시해야 합니다.
+   Quickviews를 사용하여 쇼퍼블 비디오를 게시하려면 상거래 영역에서 각 비디오의 관련 이미지 에셋을 별도로 게시해야 합니다.
 
    타임라인 세그먼트를 추가하고 대화형 비디오를 게시한 후 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. [웹 사이트와 대화형 비디오 통합을 참조하십시오.](#integrating-an-interactive-video-with-your-website)
 
@@ -503,7 +498,7 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
 
 대화형 비디오 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)을 참조하십시오.
 
-## 대화형 비디오를 웹 사이트와 통합 {#integrating-an-interactive-video-with-your-website}
+## 대화형 비디오를 웹 사이트 {#integrating-an-interactive-video-with-your-website}와 통합
 
 비디오를 업로드하고 타임라인 세그먼트를 추가하고 대화형 비디오를 게시한 후 이제 기존 웹 사이트에 추가할 준비가 되었습니다.
 
@@ -520,9 +515,8 @@ Quickviews를 사용하여 인터랙티브한 요소를 추가한 경우 포함 
 복사된 포함 코드는 응답형 환경에 맞게 설정되므로 정적 비디오에 이전에 사용된 영역에 자동으로 맞게 지정됩니다.
 
 >[!NOTE]
->
->따라서 하이퍼링크된 웹 페이지로만 대화형 작업을 추가하면 됩니다.
->그러나 Quickview를 트리거하는 대화형 기능을 추가한 경우 대화형 비디오에 인접한 축소판은 표시 목적으로만 사용됩니다.아직 기존 Quickviews와 통합되지 않았습니다. 이러한 경우 이제 대화형 비디오를 웹 사이트의 기존 Quickviews와 통합해야 합니다.
+따라서 하이퍼링크된 웹 페이지로만 대화형 작업을 추가하면 됩니다.
+그러나 Quickview를 트리거하는 대화형 기능을 추가한 경우 대화형 비디오에 인접한 축소판은 표시 목적으로만 사용됩니다.아직 기존 Quickviews와 통합되지 않았습니다. 이러한 경우 이제 대화형 비디오를 웹 사이트의 기존 Quickviews와 통합해야 합니다.
 
 **예**
 
@@ -561,11 +555,10 @@ Quickviews를 사용하여 인터랙티브한 요소를 추가한 경우 포함 
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
-## 대화형 비디오를 기존 Quickview과 통합 {#integrating-an-interactive-video-with-an-existing-quickview}
+## 대화형 비디오를 기존 Quickview {#integrating-an-interactive-video-with-an-existing-quickview}과 통합
 
 >[!NOTE]
->
->이 작업은 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
+이 작업은 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 웹 사이트에서 사용되는 기존 Quickview 구현과 대화형 비디오를 통합하는 것입니다. 모든 경우에 적용되는 통합에 대한 해결 방법이 없습니다. 모든 Quickview 구현은 고유합니다. 따라서 프런트 엔드 IT 담당자의 지원을 필요로 하는 특정 접근 방식이 필요합니다.
 
