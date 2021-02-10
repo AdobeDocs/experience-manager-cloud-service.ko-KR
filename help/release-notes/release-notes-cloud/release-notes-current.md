@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '721'
 ht-degree: 4%
 
 ---
@@ -43,9 +43,11 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 * 컨텐츠 조각 편집기에서 직접 JSON 출력을 미리 볼 수 있습니다.
 
-### 점진적 웹 앱(PWA) {#pwa}
+<!--
+### Progressive Web Apps (PWAs) {#pwa}
 
-* [이제 간단한 구성을 통해 ](/help/sites-cloud/authoring/features/enable-pwa.md)  사이트의 점진적 웹 앱(PWA) 버전을 프로젝트 수준에서 사용할 수 있습니다.
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Assets] {#assets}
 
