@@ -2,19 +2,19 @@
 title: 페이지에 Dynamic Media 자산 추가
 description: Dynamic Media 구성 요소를 Cloud Service으로 Adobe Experience Manager의 페이지에 추가하는 방법입니다.
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: d1f2315de6b96a912b38d4b81f5ea0a672f6c168
 workflow-type: tm+mt
-source-wordcount: '3128'
-ht-degree: 28%
+source-wordcount: '3123'
+ht-degree: 27%
 
 ---
 
 
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하려면 페이지에 직접 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **비디오 360 미디어** 구성 요소를 추가할 수 있습니다. 이렇게 하려면 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 그에 따라 사용 가능한 구성 옵션이 달라집니다.
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하려면 페이지에 직접 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **비디오 360 미디어** 구성 요소를 추가할 수 있습니다. 레이아웃 모드를 시작하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음 이러한 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가합니다. Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 그에 따라 사용 가능한 구성 옵션이 달라집니다.
 
-Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가합니다. WCM에 제3자를 사용하는 경우 [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/dynamic-media/embed-code.md) 에셋을 참조하십시오. 응답형 제3자 웹 사이트는 응답형 사이트](/help/assets/dynamic-media/responsive-site.md)에 최적화된 이미지 제공을 참조하십시오.[
+Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가합니다. WCM에 제3자를 사용하는 경우 [링크](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 또는 [에셋 포함](/help/assets/dynamic-media/embed-code.md). 응답형 제3자 웹 사이트는 응답형 사이트](/help/assets/dynamic-media/responsive-site.md)에 최적화된 이미지 제공을 참조하십시오.[
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Dynamic Media 구성 요소는 스마트합니다.이미지를 추가하는지 �
 
 Dynamic Media 구성 요소를 추가하고 **[!UICONTROL Dynamic Media 설정]**&#x200B;이 비어 있거나 자산을 제대로 추가할 수 없는 경우, 다음을 확인하십시오.
 
-* 이미지에 피라미드형 tiff 파일이 있습니다. 다이내믹 미디어를 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
+* 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media이 활성화되기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
 
 #### 이미지 작업 시 {#when-working-with-images}
 
@@ -317,7 +317,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 **[!UICONTROL Video 360 Media]** 구성 요소를 사용하여 회의실, 속성, 위치, 가로 또는 의료 절차의 매력적인 보기 경험을 위해 웹 페이지에 동일한 사각형 비디오를 렌더링합니다.
 
-평면 디스플레이에서 재생하는 동안 사용자가 보기 각도를 제어할 수 있습니다.모바일 디바이스에서 재생하는 경우 일반적으로 내장된 자이로스코프 컨트롤을 활용할 수 있습니다.
+평면 디스플레이에서 재생하는 동안 사용자가 보기 각도를 제어할 수 있습니다.모바일 디바이스에서 재생은 일반적으로 내장된 자이로스코프 컨트롤을 활용합니다.
 
 뷰어에는 360개의 비디오 에셋 전달에 대한 기본 지원이 포함되어 있습니다. 기본적으로 보거나 재생하는 데 추가 구성이 필요하지 않습니다. .mp4, .mkv 및 .mov와 같은 표준 비디오 확장을 사용하여 360개의 비디오를 제공할 수 있습니다. 가장 일반적인 코덱은 H.264입니다.
 
