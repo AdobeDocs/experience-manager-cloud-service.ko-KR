@@ -2,10 +2,10 @@
 title: Dynamic Media 작업
 description: Dynamic Media을 사용하여 웹, 모바일 및 소셜 사이트에서 사용할 에셋을 제공하는 방법을 살펴봅니다.
 translation-type: tm+mt
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 31%
+source-wordcount: '395'
+ht-degree: 33%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 31%
 
 Dynamic Media는 확대/축소, 360도 회전, 비디오를 비롯한 대화형 보기 환경을 제공합니다. Dynamic Media는 Adobe Experience Manager 디지털 자산 관리(Assets) 솔루션의 워크플로우를 고유하게 통합하여 디지털 캠페인 관리 프로세스를 단순화하고 간소화합니다.
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->커뮤니티 아티클은 [Adobe Experience Manager 및 Dynamic Media 작업](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)에서 사용할 수 있습니다.
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Dynamic Media {#what-you-can-do-with-dynamic-media}로 수행할 수 있는 작업
 
