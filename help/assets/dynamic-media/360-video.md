@@ -2,9 +2,9 @@
 title: 360/VR 비디오
 description: Dynamic Media에서 360 및 VR(Virtual Reality) 비디오로 작업하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dynamic Media에는 360개의 비디오 에셋 전달에 대한 기본 지원이
 
 공간 오디오는 현재 지원되지 않습니다.오디오가 스테레오로 혼합되어 있는 경우 고객이 카메라 보기 각도를 변경해도 균형(L/R)이 변경되지 않습니다.
 
-AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)에서 [Dynamic Media 360 비디오 및 사용자 정의 비디오 축소판 사용을 참조하십시오.
+AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)에서 [Dynamic Media 360 비디오 및 사용자 정의 비디오 축소판 사용을 참조하십시오.
 
 [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)도 참조하십시오.
 
