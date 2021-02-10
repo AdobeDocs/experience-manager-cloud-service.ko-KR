@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 translation-type: tm+mt
-source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
+source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Define DISABLE_DEFAULT_CACHING
 * 다음과 같은 apache mod_headers 지시문으로 더 세부적으로 분류된 수준에서 재정의할 수 있습니다.
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -43,7 +43,7 @@ Define DISABLE_DEFAULT_CACHING
    전역 캐시 제어 헤더나 와이드 정규식과 일치하는 헤더를 설정할 때는 주의를 기울여 비공개로 유지하려는 내용에 적용되지 않도록 합니다. 여러 지시문을 사용하여 규칙이 세부적으로 적용되도록 하십시오. 이와 함께, Cloud Service으로 AEM은 디스패처 설명서에 설명된 대로 디스패처가 사용할 수 없는 것으로 감지된 대상에 적용되었음을 감지하면 캐시 헤더를 제거합니다. AEM에서 항상 캐시를 적용하려면 다음과 같이 &quot;always&quot; 옵션을 추가할 수 있습니다.
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -59,7 +59,7 @@ Define DISABLE_DEFAULT_CACHING
 * 특정 콘텐츠가 캐시되지 않도록 하려면 Cache-Control 헤더를 *private*&#x200B;으로 설정합니다. 예를 들어, 다음 예제에서는 **myfolder** 디렉토리의 html 콘텐츠가 캐시되지 않도록 합니다.
 
    ```
-      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
       Header set Cache-Control “private”
      </LocationMatch>
    ```
@@ -78,7 +78,7 @@ Define DISABLE_DEFAULT_CACHING
 * 다음 apache `mod_headers` 지시문으로 더 세분화된 수준에서 설정할 수 있습니다.
 
    ```
-      <LocationMatch "^\.*.(jpeg|jpg)$">
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
         Header set Cache-Control "max-age=222"
         Header set Age 0
       </LocationMatch>
