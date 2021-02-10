@@ -1,25 +1,25 @@
 ---
-title: ' [!DNL Dynamic Media]의 액세스 가능성'
+title: Dynamic Media의 액세스 가능성
 description: Dynamic Media 및 Dynamic Media 뷰어의 액세스 가능성에 대해 알아봅니다.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 0%
+source-wordcount: '613'
+ht-degree: 1%
 
 ---
 
 
-# Dynamic Media {#working-with-three-d-assets-dm}의 액세스 가능성
+# Dynamic Media의 액세스 가능성 {#accessibility-in-dm}
 
 Dynamic Media은 저작 유저 인터페이스에서 JAWS 및 NVDA 화면 판독기와 같은 키보드 제어 및 보조 기술을 지원합니다.
 
-## Dynamic Media의 키보드 접근성 지원
+## Dynamic Media {#keyboard-support-in-dm}의 키보드 접근성 지원
 
-Dynamic Media은 Experience Manager 에셋에 대한 플러그인이기 때문에 대부분의 키보드 제어 동작은 Experience Manager 에셋에서와 정확히 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 버튼은 Experience Manager 자산과 동일한 초점 강조 표시를 가지며 Experience Manager 자산에서와 마찬가지로 `Spacebar` 키에 응답합니다. 에셋](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키를 참조하십시오.
+Dynamic Media은 Experience Manager 에셋에 대한 플러그인이므로 대부분의 키보드 제어 동작은 Experience Manager 에셋과 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 버튼은 Experience Manager 자산에서와 동일한 초점 강조 표시를 갖습니다. 또한 Experience Manager 자산에서와 마찬가지로 `Spacebar` 키에 응답합니다. 에셋](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키를 참조하십시오.
 
 Dynamic Media의 개별 유저 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 쉽게 찾을 수 있습니다. Dynamic Media의 키보드 제어는 다음과 같습니다.
 
@@ -27,12 +27,12 @@ Dynamic Media의 개별 유저 인터페이스 요소에서 지원하는 키 입
 `Tab`을 사용하면 입력 포커스를 탭 순서의 다음 사용자 인터페이스 요소로 이동합니다.`Shift+Tab`을(를) 사용하면 입력 포커스가 이전 사용자 인터페이스 요소로 돌아갑니다.
 초점 순차는 화면의 자연스러운 유저 인터페이스 요소 위치를 따르며 왼쪽에서 오른쪽, 위에서 아래로 이동합니다. 또한 필드에 오류가 있으면 `Tab`을 눌러 포커스를 이동할 수 있습니다.
 * `Spacebar` 및 `Enter` 키를 사용하여 단추, 드롭다운 목록 등과 같은 표준 사용자 인터페이스 요소를 활성화할 수 있습니다.
-* 활성 요소에서 키보드 포커스를 강조 표시하는 기능을 확인할 수 있습니다. 입력 포커스가 있는 사용자 인터페이스 요소는 사용자 인터페이스 요소 주위에 렌더링된 테두리로 시각적 포커스를 받을 수 있습니다.
+* 활성 요소에서 키보드 포커스를 강조 표시하는 기능을 확인할 수 있습니다. 입력 포커스가 있는 사용자 인터페이스 요소는 사용자 인터페이스 요소 주위에 렌더링되는 테두리로 시각적 포커스를 받았습니다.
 * 핫스팟 편집기에서 화살표 키와 같은 사용자 정의 키 입력을 사용하여 복잡한 사용자 인터페이스 요소와 상호 작용하여 핫스팟의 위치를 변경할 수 있습니다.
 * 대화형 비디오 편집기에서 `Spacebar`을 사용하여 이미지를 선택하고 세그먼트에 추가할 수 있습니다. 또한 `Backspace` 키를 사용하여 **[!UICONTROL 컨텐트]** 탭에서 선택한 항목을 삭제할 수 있습니다. 또한 `Tab`을 누르면 페이지에서 대화형 요소 간을 탐색할 수 있습니다.
 * 이미지 자르기/스마트 자르기 편집기에서 다음을 수행할 수 있습니다.
-   * 화살표 키를 사용하여 프레임 크기를 자르거나 이미지를 다시 배치하거나 두 가지 모두 배치할 수 있습니다.
-   * 첫 번째 `Tab` 중지는 전체 이미지 프레임을 강조 표시합니다. 키보드의 화살표 키를 사용하여 프레임의 위치를 다시 지정할 수 있습니다.
+   * 화살표 키를 사용하여 프레임 크기를 자르거나 이미지의 위치를 변경하거나 둘 다 배치할 수 있습니다.
+   * 첫 번째 `Tab` 중지는 전체 이미지 프레임을 강조 표시합니다. 키보드에서 화살표 키를 사용하여 프레임의 위치를 변경할 수 있습니다.
    * 다음 4개의 `Tab` 정지는 프레임의 4개 모퉁이입니다. 프레임 모서리에 포커스가 있으면 모퉁이가 강조 표시됩니다. 키보드의 화살표 키를 사용하여 포커스가 있는 모퉁이를 이동할 수 있습니다.
 자세한 내용은 [단일 이미지의 스마트 자르기 또는 스마트 견본 편집](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image) 참조
 
@@ -52,7 +52,7 @@ Dynamic Media 유저 인터페이스 요소는 화면 판독기와 같은 보조
 
 즉시 사용 가능한 모든 Dynamic Media 뷰어 구성 요소는 고객의 키보드 액세스 가능성을 지원합니다.
 
-Dynamic Media 뷰어 참조 안내서의 [키보드 액세스 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 [키보드 액세스 가능성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
 
 ## Dynamic Media 뷰어에서 보조 기술 지원 {#assistive-technology=support-for-dm-viewers}
 
