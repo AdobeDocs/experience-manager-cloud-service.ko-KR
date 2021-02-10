@@ -2,9 +2,9 @@
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '9536'
+source-wordcount: '9537'
 ht-degree: 1%
 
 ---
@@ -404,7 +404,7 @@ VBR 대 CBR을 선택하는 경우에는 미디어 파일에 VBR을 사용하는
 |--- |--- |--- |--- |
 | 소스 | 1920x1080 | 1 | 3 |
 | 인코딩됨 | 960 x 540 | 2 | 2 |
-| 인코딩됨 | 640 x 360 | 3 | 3 |
+| 인코딩됨 | 640 x 360 | 3 | 1 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
 
 ### 인코딩된 비디오 파일 형식 {#encoded-video-file-format}
@@ -772,7 +772,7 @@ YouTube에서 콘텐츠를 게시하기 위해 AEM에서는 진행 상황을 모
 1. 비디오 속성 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
 1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭합니다.
 
-   AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html)에서 게시 관리 사용을 참조하십시오.[
+   AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)에서 게시 관리 사용을 참조하십시오.[
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
@@ -983,7 +983,7 @@ For YouTube publishing jobs, do the following:
 
 1. 상위 게시된 비디오를 나열하는 표에서 비디오 이름을 눌러 비디오를 재생하고 비디오의 대상자 유지(드롭다운) 보고서를 확인합니다.
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT SDK ONLY AVAILABLE INTERNALLY NOW 
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
