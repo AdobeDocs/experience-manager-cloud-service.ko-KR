@@ -2,9 +2,9 @@
 title: Adobe Analytics 및 Adobe Launch와 Dynamic Media Viewer 통합
 description: Dynamic Media Viewers 5.13 릴리스와 함께 Adobe Launch용 Dynamic Media Viewers 확장을 사용하면 Dynamic Media, Adobe Analytics 및 Adobe Launch 고객은 Adobe Launch 구성에서 Dynamic Media Viewer에 고유한 이벤트 및 데이터를 사용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6628'
+source-wordcount: '6626'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,11 @@ Adobe Viewers 5.13의 최신 릴리스와 함께 새로운 Dynamic Media Viewers
 
 Adobe Launch와의 통합을 위한 주요 사용 사례는 AEM Assets과 AEM Sites을 모두 사용하는 고객입니다. 이러한 시나리오에서 AEM 작성자 노드와 Adobe Launch 간의 표준 통합을 설정한 다음 사이트 인스턴스를 Adobe 시작 속성과 연결할 수 있습니다. 이후에는 사이트 페이지에 추가된 모든 Dynamic Media WCM 구성 요소가 뷰어의 데이터 및 이벤트를 추적합니다.
 
-AEM Sites[에서 Dynamic Media 뷰어 추적 정보를 참조하십시오.](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)
+AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)에서 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
 
 통합이 지원하는 보조 사용 사례는 AEM Assets 전용 또는 Dynamic Media Classic을 사용하는 고객입니다. 이러한 경우 뷰어용 포함 코드를 입수하여 웹 사이트 페이지에 추가합니다. 그런 다음 Adobe Launch에서 Adobe Launch 라이브러리 제작 URL을 가져와 웹 페이지 코드에 수동으로 추가합니다.
 
-포함 코드[를 사용하여 Dynamic Media 뷰어 추적 정보를 참조하십시오.](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)
+포함 코드](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)를 사용하여 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
 
 ## 통합 {#how-data-and-event-tracking-works-in-the-integration}에서 데이터 및 이벤트 추적이 작동하는 방식
 
@@ -134,7 +134,7 @@ AEM Sites에서 Dynamic Media 뷰어를 추적하려면 [모든 통합 부분 �
 
 적절한 구성을 따르면 Dynamic Media에서 지원하는 WCM 구성 요소를 사용하여 사이트 페이지에 추가하는 모든 Dynamic Media 뷰어는 Adobe Analytics 또는 비디오용 Adobe Analytics 또는 두 가지 모두에 대한 데이터를 자동으로 추적합니다.
 
-Adobe 사이트[를 사용하여 페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Adobe 사이트](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 사용하여 페이지에 Dynamic Media 자산 추가를 참조하십시오.[
 
 ### 포함 코드 {#tracking-dynamic-media-viewers-using-embed-code}을(를) 사용하여 Dynamic Media 뷰어 추적
 
@@ -553,7 +553,7 @@ Adobe Launch에서 사용할 수 있는 모든 확장이 **[!UICONTROL 확장 > 
 
 다른 모든 필드는 선택 사항입니다.
 
-오디오 및 비디오 확장[에 대한 Adobe 미디어 분석을 참조하십시오.](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref)
+오디오 및 비디오 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref)에 대한 Adobe 미디어 분석을 참조하십시오.[
 
 * (필수) *Dynamic Media 뷰어* 확장
 
@@ -835,4 +835,4 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
 위의 AEM 게시에 대한 Adobe Launch Cloud 구성에서 Adobe 시작 라이브러리의 개발 또는 스테이징 URL을 지정하여 이 제한 사항을 해결할 수 있습니다. 이렇게 하면 AEM 게시 노드가 Adobe 시작 라이브러리의 개발 또는 스테이징 버전을 사용하게 됩니다.
 
-Adobe Launch Cloud 구성 설정에 대한 자세한 내용은 [Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)을 통해 AEM을 Adobe을 실행하고 통합을 참조하십시오.
+Adobe 실행 클라우드 구성 설정에 대한 자세한 내용은 [Experience Platform Launch 및 AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations)을 참조하십시오.
