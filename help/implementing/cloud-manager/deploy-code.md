@@ -2,7 +2,7 @@
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
    * 경험 감사:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 지정 기능 테스트 후에 경험 감사 단계가 포함됩니다. 구성된 페이지는 서비스로 전송되어 평가됩니다. 결과는 정보 제공용이며 사용자가 현재 점수와 이전 점수 사이의 점수 및 변경 사항을 볼 수 있도록 합니다. 이 통찰력은 현재 배포에서 발생하는 회귀 여부를 확인하는 데 유용합니다.
 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
 
-      ![](assets/testing-tab.png)
+      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
