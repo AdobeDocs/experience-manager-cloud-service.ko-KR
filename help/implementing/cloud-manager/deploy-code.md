@@ -2,9 +2,9 @@
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
 translation-type: tm+mt
-source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
+source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,9 @@ ht-degree: 0%
 
    * 사용자 지정 기능 테스트:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 그러나 빌드로 생성된 테스트 JAR가 없으면 기본적으로 테스트가 전달됩니다.\
       자세한 내용은 [사용자 지정 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)를 참조하십시오.
+
+   * 사용자 정의 UI 테스트:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 맞춤형 UI 테스트를 작성하고 고객이 테스트 자동화 세트를 신속하게 구축하여 AEM 기반의 웹 및 모바일 앱을 확인할 수 있습니다.
+자세한 내용은 [사용자 지정 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)를 참조하십시오.
 
    * 경험 감사:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 지정 기능 테스트 후에 경험 감사 단계가 포함됩니다. 구성된 페이지는 서비스로 전송되어 평가됩니다. 결과는 정보 제공용이며 사용자가 현재 점수와 이전 점수 사이의 점수 및 변경 사항을 볼 수 있도록 합니다. 이 통찰력은 현재 배포에서 발생하는 회귀 여부를 확인하는 데 유용합니다.
 자세한 내용은 [경험 감사 결과 이해](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
