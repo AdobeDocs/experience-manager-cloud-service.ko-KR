@@ -2,7 +2,7 @@
 title: 차이점 및 새로운 기능 - Cloud Service의 Adobe Experience Manager
 description: 'Cloud Service의 차이점과 새로운 기능 - Adobe Experience Manager(AEM)입니다. '
 translation-type: tm+mt
-source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
+source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 10%
@@ -262,7 +262,7 @@ Adobe Experience Manager Sites은 Cloud Service으로 AEM 콘텐츠 관리 시�
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Library는 클라우드 기반의 SaaS 솔루션을 제공하므로 기업은 디지털 에셋 관리 및 Dynamic Media 작업을 신속하고 효율적으로 수행할 수 있을 뿐만 아니라 항상 최신 정보이고 항상 사용할 수 있으며 항상 학습을 지원하는 시스템에서 AI/ML과 같은 차세대 스마트 기능을 사용할 수 있습니다.
+Cloud Service의 Adobe Experience Manager Assets는 클라우드 기반의 PaaS 솔루션을 제공하므로 기업은 디지털 에셋 관리 및 Dynamic Media 작업을 신속하고 효율적으로 수행할 수 있을 뿐만 아니라 항상 최신 방식으로 사용할 수 있고 항상 사용할 수 있는 시스템에서 AI/ML과 같은 차세대 스마트 기능을 사용할 수 있습니다.
 
 자산 서비스에는 클라우드의 차세대 에셋 처리 및 고성능 에셋 수집 및 검색이 포함됩니다.
 
