@@ -2,9 +2,9 @@
 title: 사용자 지정 코드 품질 규칙 - Cloud Services
 description: 사용자 지정 코드 품질 규칙 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 901a660424f5e1fded654ddb09f3d872b7cd01b7
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '3221'
 ht-degree: 0%
 
 ---
@@ -733,4 +733,187 @@ Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저
 [릴리스 노트에 설명된 대로 Cloud Service 배포에서는 역방향 복제 지원을 사용할 수 없습니다.복제 에이전트 제거](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 역방향 복제를 사용하는 고객은 대체 솔루션에 대해 Adobe에 문의해야 합니다.
+
+### OakPAL - 프록시 사용 클라이언트 라이브러리에 포함된 리소스는 리소스 {#oakpal-resources-proxy} 폴더에 있어야 합니다.
+
+**키**:ClientlibProxyResource
+
+**유형**:버그
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+AEM 클라이언트 라이브러리에는 이미지 및 글꼴과 같은 정적 리소스가 포함될 수 있습니다. [프리프로세서 사용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)에 설명된 대로, 프록시 클라이언트 라이브러리를 사용할 때에는 정적 리소스를 리소스라는 하위 폴더에 포함해야 게시 인스턴스에서 효과적으로 참조됩니다.
+
+#### 호환되지 않는 코드 {#non-compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + images
+        + myimage.jpg
+```
+
+#### 호환 코드 {#compliant-proxy-enabled}
+
+```
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + resources
+        + myimage.jpg
+```
+
+### OakPAL - 호환되지 않는 Cloud Service 워크플로 프로세스 사용 {#oakpal-usage-cloud-service}
+
+**키**:CloudServiceIncompatibleWorkflowProcess
+
+**유형**:버그
+
+**심각도**:주요
+
+**이후**:버전 2021.2.0
+
+AEM Cloud Service에서 자산 처리를 위해 Asset Micro-services로 이동하면 AEM의 온-프레미스 및 AMS 버전에서 사용된 여러 워크플로우 프로세스가 지원되지 않거나 불필요하게 되었습니다. [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)의 마이그레이션 도구를 사용하여 AEM Cloud Service 마이그레이션 동안 워크플로우 모델을 업데이트할 수 있습니다.
+
+### OakPAL - 편집 가능한 템플릿 대신 정적 템플릿 사용 안 함 {#oakpal-static-template}
+
+**키**:StaticTemplateUsage
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+정적 템플릿은 AEM 프로젝트에서 일반적으로 사용되지만 편집 가능한 템플릿은 가장 유연하게 제공하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 권장됩니다. 자세한 내용은 [페이지 템플릿 - 편집 가능](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)에 있습니다. 정적 템플릿부터 편집 가능한 템플릿으로 마이그레이션하려면 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 대체로 자동화할 수 있습니다.
+
+### OakPAL - 레거시 기초 구성 요소의 사용이 거부됨 {#oakpal-usage-legacy}
+
+**키**:LegacyFoundationComponentUsage
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+이전 기본 구성 요소(즉, `/libs/foundation` 아래의 구성 요소)는 WCM 핵심 구성 요소를 선호하는 여러 AEM 릴리스에서 더 이상 사용되지 않습니다. 오버레이 또는 상속을 통해 사용자 지정 구성 요소의 기초로 기존 기본 구성 요소를 사용하는 것은 거절되며 해당 핵심 구성 요소로 변환해야 합니다. 이 변환은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)에서 용이하게 할 수 있습니다.
+
+### OakPAL - 지원되는 런타임 모드 이름 및 주문만 {#oakpal-supported-runmodes} 사용
+
+**키**:SupportedRunmode
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+AEM Cloud Service은 런타임 모드 이름에 대해 엄격한 이름 지정 정책을 적용하고 이러한 런타임 모드에 대해서는 엄격한 순서를 따릅니다. 지원되는 런타임 모드 목록은 [Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes)에서 찾을 수 있으며, 이와 다른 부분은 문제로 식별됩니다.
+
+### OakPAL - 사용자 정의 검색 색인 정의 노드는 /oak:index {#oakpal-custom-search}의 직접 자식이어야 합니다.
+
+**키**:OakIndexLocation
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+AEM Cloud Service에서는 사용자 정의 검색 색인 정의(예: oak:QueryIndexDefinition 유형의 노드)가 `/oak:index`의 직접 하위 노드여야 합니다. 다른 위치의 색인은 AEM Cloud Service과 호환되도록 이동해야 합니다. 검색 색인에 대한 자세한 내용은 [콘텐츠 검색 및 인덱싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)을 참조하십시오.
+
+### OakPAL - 사용자 지정 검색 색인 정의 노드에는 2의 comatVersion {#oakpal-custom-search-compatVersion}이(가) 있어야 합니다.
+
+**키**:IndexCompatVersion
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+AEM Cloud Service에서는 사용자 정의 검색 색인 정의(예: oak:QueryIndexDefinition 유형의 노드)에 comatVersion 속성이 2로 설정되어 있어야 합니다. 다른 값은 AEM Cloud Service에서 지원되지 않습니다. 검색 색인에 대한 자세한 내용은 [콘텐츠 검색 및 인덱싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)을 참조하십시오.
+
+### OakPAL - 사용자 지정 검색 인덱스 정의 노드의 하위 노드는 nt:unstructured {#oakpal-descendent-nodes} 유형이어야 합니다.
+
+**키**:IndexDescendantNodeType
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+사용자 지정 검색 색인 정의 노드에 순서가 없는 하위 노드가 있으면 문제를 해결하기 어려울 수 있습니다. 이를 방지하려면 `oak:QueryIndexDefinition` 노드의 모든 하위 노드 유형이 nt:unstructured인 것이 좋습니다.
+
+### OakPAL - 사용자 지정 검색 색인 정의 노드에는 {#oakpal-custom-search-index} 하위 노드가 있는 indexRules라는 하위 노드가 있어야 합니다.
+
+**키**:IndexRulesNode
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+올바르게 정의된 사용자 지정 검색 색인 정의 노드에는 indexRules라는 하위 노드가 있어야 하며, 그 다음 노드에는 1개 이상의 하위 노드가 있어야 합니다. 자세한 내용은 [Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html)에서 확인할 수 있습니다.
+
+### OakPAL - 사용자 지정 검색 색인 정의 노드는 이름 지정 규칙 {#oakpal-custom-search-definitions}을 따라야 합니다.
+
+**키**:IndexName
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+AEM Cloud Service은 사용자 정의 검색 색인 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)를 [컨텐트 검색 및 인덱싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)에 설명된 특정 패턴에 따라 이름을 지정해야 합니다.
+
+### OakPAL - 사용자 지정 검색 색인 정의 노드는 인덱스 유형 lucene {#oakpal-index-type-lucene} 을 사용해야 합니다.
+
+**키**:IndexType
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+AEM Cloud Service에는 사용자 정의 검색 색인 정의(예: oak:QueryIndexDefinition 유형의 노드)에 값이 **lucene**&#x200B;으로 설정된 type 속성이 있어야 합니다. AEM Cloud Service으로 마이그레이션하기 전에 기존 색인 유형을 사용한 인덱싱을 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 인덱싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)을 참조하십시오.
+
+### OakPAL - 사용자 지정 검색 색인 정의 노드에는 시드 {#oakpal-property-name-seed}이라는 속성을 포함할 수 없습니다.
+
+**키**:IndexSeedProperty
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+AEM Cloud Service에서는 사용자 정의 검색 색인 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)가 seed라는 속성을 포함하지 못하도록 합니다. AEM Cloud Service으로 마이그레이션하기 전에 이 속성을 사용한 인덱싱을 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 인덱싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)을 참조하십시오.
+
+### OakPAL - 사용자 지정 검색 색인 정의 노드에는 reindex {#oakpal-reindex-property}이라는 속성이 포함되지 않아야 합니다.
+
+**키**:IndexReindexProperty
+
+**유형**:코드 냄새
+
+**심각도**:마이너
+
+**이후**:버전 2021.2.0
+
+AEM Cloud Service에서는 사용자 정의 검색 색인 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)가 reindex라는 속성을 포함하지 못하도록 합니다. AEM Cloud Service으로 마이그레이션하기 전에 이 속성을 사용한 인덱싱을 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 인덱싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)을 참조하십시오.
+
+
+
+
+
 
