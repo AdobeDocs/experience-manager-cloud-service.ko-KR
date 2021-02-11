@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
+source-git-commit: 801f1df5ceaa24289e2d88ecfe187a7a1497a6fe
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1108'
 ht-degree: 3%
 
 ---
@@ -120,9 +120,17 @@ Cloud Service SDK Build Analyzer Maven 플러그인으로서 AEM은 누락된 �
 
 자세한 내용은 설명서 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)를 참조하십시오.
 
-## 클라우드 전환 도구 {#code-transition-tools}
+## 컨텐츠 전송 도구 {#content-transfer-tool}
 
 ### 릴리스 날짜 {#release-date-ctt}
+
+내용 전송 도구 v1.2.4 릴리스 날짜는 2021년 2월 10일입니다.
+
+### 버그 수정 {#bug-fixes-ctt}
+
+* 여러 사용자를 매핑할 때 일부 사용자의 IMS ID가 잘못 매핑되었습니다. 이 문제가 수정되었습니다.
+
+### 릴리스 날짜 {#release-date-ctt-feb}
 
 내용 전송 도구 v1.2.2 릴리스 날짜는 2021년 2월 1일입니다.
 
@@ -131,3 +139,24 @@ Cloud Service SDK Build Analyzer Maven 플러그인으로서 AEM은 누락된 �
 * 컨텐츠 전송 도구 - 사용자 매핑 도구에 추가된 새 기능 및 UI. 이 기능은 컨텐츠 마이그레이션 작업의 일부로 기존 사용자 및 그룹을 Adobe Identity Management 시스템 ID에 자동으로 매핑합니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)을 참조하십시오.
 * 이제 콘텐츠 전송 도구가 하위 항목을 포함하여 마이그레이션 세트에서 참조하는 모든 그룹 및 사용자를 마이그레이션합니다.
 * 사용자는 마이그레이션 세트를 만들 때 `/etc` 아래에서 특정 경로를 선택할 수 있습니다.
+
+## 우수 사례 분석기 {#best-practices-analyzer}
+
+### 릴리스 날짜 {#release-date-bpa}
+
+우수 사례 분석기 v2.1.0 릴리스 날짜는 2021년 2월 11일입니다.
+
+### [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}의 새로운 기능
+
+* AEM Forms 및 AEM Forms 구현 기능을 감지하고 Cloud Service으로 AEM Forms으로 마이그레이션하는 것과 관련된 영역을 나타낼 수 있습니다.
+* 사용자 지정 구성 요소 및 템플릿의 사용 및 카운트를 감지하고 보고할 수 있습니다.
+* 사용된 노드 저장소 및 데이터 저장소 유형을 검색하는 기능입니다.
+* Dynamic Media 사용 감지 기능
+* 사용된 Java 버전을 검색하는 기능
+
+
+
+
+
+
+
