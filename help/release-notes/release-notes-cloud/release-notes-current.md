@@ -2,10 +2,10 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 4%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -69,15 +69,37 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 ### 릴리스 날짜 {#release-date-cm}
 
-AEM의 Cloud Service 2021.1.0 Cloud Manager에 대한 릴리스 날짜는 2021년 1월 14일입니다.
+AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021년 2월 11일입니다.
+
+### 새로운 기능 {#what-is-new-cloud-manager}
+
+* 이제 Cloud Manager Production 파이프라인에 사용자 정의 UI 테스트 기능이 포함됩니다.
+
+* 이제 자산 고객은 Cloud Manager UI를 통해 셀프 서비스 방식으로 브랜드 포털 인스턴스를 배포할 시기와 위치를 선택할 수 있습니다. 자산 솔루션이 있는 일반(샌드박스 아님) 프로그램의 경우 이제 프로덕션 환경에서 브랜드 포털을 프로비저닝할 수 있습니다. 프로비저닝은 프로덕션 환경에서 한 번만 수행할 수 있습니다.
+
+* 프로젝트 및 샌드박스 제작에서 사용되는 AEM 프로젝트 원형이 버전 25로 업데이트되었습니다.
+
+* 코드 스캔 중에 식별된 가치 없는 API 목록은 최신 Cloud Service SDK 릴리스에서 사용되지 않는 추가 클래스 및 메서드를 포함하도록 개선되었습니다.
+
+* Cloud Manager용 SonarQube 프로필이 Sonar 규칙 squid:S2142를 제거하도록 업데이트되었습니다. 더 이상 스레드 중단 검사와 충돌하지 않습니다.
+
+* Cloud Manager UI는 연결된 환경에 연결된 실행 중인 파이프라인이 있거나 현재 승인 단계를 기다리는 중이므로 도메인 이름을 일시적으로 추가/업데이트할 수 없는 사용자에게 알립니다.
+
+* Sonar로 접두사가 추가된 고객 `pom.xml` 파일에 설정된 속성은 이제 빌드 및 품질 스캔 오류를 방지하기 위해 동적으로 제거됩니다.
+
+* Cloud Manager UI는 현재 배포 중인 도메인 이름으로 사용 중인 경우 일시적으로 SSL 인증서를 선택할 수 없는 사용자에게 알립니다.
 
 ### 버그 수정 {#bug-fixes-cloud-manager}
 
-* Assets Production 인스턴스는 사용자가 어떤 조치를 취할 수 없도록 **환경** 세부 정보 페이지에 브랜드 포털 상태를 *보류 중*&#x200B;으로 표시할 수 있습니다.
+* 도메인 이름과 SSL 인증서를 일치시키는 것이 더 이상 대소문자를 구분하지 않습니다.
 
-* Cloud Manager에서 절전 모드 해제(hibernate)를 트리거할 때, 절전 모드를 성공적으로 시작해도 오류 메시지가 표시되는 경우가 있습니다.
+* 이제 인증서 개인 키가 적절한 오류 메시지와 함께 2048비트 제한에 도달하지 않는 경우 Cloud Manager UI는 사용자에게 알립니다.
 
-* 환경 만들기 또는 삭제에서 발생한 드문 실패 사례가 해결되었습니다.
+* Cloud Manager UI는 현재 배포 중인 도메인 이름으로 사용 중인 경우 일시적으로 SSL 인증서를 선택할 수 없는 사용자에게 알립니다.
+
+* 경우에 따라 내부 문제로 인해 환경 삭제가 중단될 수 있습니다.
+
+* 일부 파이프라인 오류가 파이프라인 오류로 잘못 보고되었습니다.
 
 ## AEM을 Cloud Service 기반 {#aem-as-a-cloud-service-foundation}
 
