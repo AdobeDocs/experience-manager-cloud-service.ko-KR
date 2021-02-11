@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
+source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '991'
 ht-degree: 3%
 
 ---
@@ -88,6 +88,8 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 * 음파 탐지 접두사가 있는 고객 `pom.xml` 파일에 설정된 속성이 이제 빌드 및 품질 스캔 오류를 방지하기 위해 동적으로 제거됩니다.
 
 * Cloud Manager UI는 현재 배포 중인 도메인 이름으로 사용 중인 경우 일시적으로 SSL 인증서를 선택할 수 없는 사용자에게 알립니다.
+
+* Cloud Service 호환성 문제를 다루는 추가 코드 품질 규칙이 추가되었습니다.
 
 ### 버그 수정 {#bug-fixes-cloud-manager}
 
