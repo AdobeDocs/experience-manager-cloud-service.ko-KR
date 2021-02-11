@@ -1,11 +1,12 @@
 ---
 title: Dynamic Media 설정
 description: Dynamic Media을 설정하려면 Dynamic Media을 구성하고 이미지 및 뷰어 사전 설정을 관리해야 합니다.
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 21%
+source-wordcount: '179'
+ht-degree: 24%
 
 ---
 
@@ -40,4 +41,4 @@ Dynamic Media을 관리하는 경우 다음 항목에 관심이 있습니다.
 >
 >**업그레이드하는 경우:**
 >
->* Experience Manager을 설정하고 실행한 후 업로드하는 모든 자산은 자동으로 Dynamic Media이 활성화됩니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). Experience Manager의 업그레이드된 인스턴스이고 Dynamic Media을 처음 사용하는 경우 자산을 재처리하여 Dynamic Media을 활성화할 수 있습니다.
+>* Experience Manager을 설정하고 실행한 후 업로드하는 모든 자산은 자동으로 Dynamic Media이 활성화됩니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). Experience Manager의 업그레이드된 인스턴스를 사용하고 Dynamic Media을 처음 사용하는 경우 자산을 재처리하여 Dynamic Media을 활성화하도록 해야 합니다. [폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
