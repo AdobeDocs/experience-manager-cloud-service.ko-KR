@@ -4,10 +4,10 @@ description: 모범 사례는 Experience Manager 배포를 Adobe Creative Cloud�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 1%
+source-wordcount: '3294'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Creative Cloud은 크리에이티브 팀에게 디지털 에셋을 만드�
 | 비즈니스 사용자는 간단하게 에셋 열기 및 사용, AEM에 대한 변경 사항 편집 및 업로드, 데스크탑 환경에서 AEM에 새 파일을 업로드할 수 있습니다. 이들은 범용 통합을 사용하여 Adobe이 아닌 에셋 유형을 비롯하여 기본 데스크탑 애플리케이션에서 에셋 유형을 엽니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Win 및 Mac 데스크탑용 AEM 데스크탑 앱 |
 | 마케터와 비즈니스 사용자는 AEM에서 Adobe Stock 에셋을 검색, 미리 보기, 라이선스 부여 및 저장 및 관리할 수 있습니다. 라이선스가 부여된 에셋과 저장된 에셋은 보다 효과적인 관리를 위해 일부 Adobe Stock 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | AEM 웹 인터페이스 |
 
-이 문서에서는 주로 공동 작업이 필요한 첫 2가지 측면에 초점을 맞춥니다. 사용 사례로는 규모에 따라 자산의 분배 및 소싱이 간단히 언급됩니다. 이러한 필수 솔루션에 대해서는 Adobe 브랜드 포털 또는 에셋 공유 공유세를 고려하십시오. [AEM Assets 브랜드 포털](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html)과 같은 대체 솔루션, [자산 공유 commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 구성 요소, [링크 공유](share-assets.md)를 기반으로 구축할 수 있는 솔루션, [AEM Assets 웹 UI](/help/assets/manage-digital-assets.md)을(를) 사용하여 특정 요구 사항에 따라 검토해야 합니다.
+이 문서에서는 주로 공동 작업이 필요한 첫 2가지 측면에 초점을 맞춥니다. 사용 사례로는 규모에 따라 자산의 분배 및 소싱이 간단히 언급됩니다. 이러한 필수 솔루션에 대해서는 Adobe 브랜드 포털 또는 에셋 공유 공유세를 고려하십시오. [AEM Assets 브랜드 포털](https://helpx.adobe.com/kr/experience-manager/brand-portal/user-guide.html)과 같은 대체 솔루션, [자산 공유 commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) 구성 요소, [링크 공유](share-assets.md)를 기반으로 구축할 수 있는 솔루션, [AEM Assets 웹 UI](/help/assets/manage-digital-assets.md)을(를) 사용하여 특정 요구 사항에 따라 검토해야 합니다.
 
 ![AEM용 Creative Cloud 연결:사용할 기능 결정](assets/creative-connections-aem.png)
 
@@ -70,7 +70,7 @@ Adobe Creative Cloud은 크리에이티브 팀에게 디지털 에셋을 만드�
 
 자산 배포 사용 사례를 지원하려면 다른 솔루션을 고려해야 합니다.
 
-* [AEM Assets 브랜드 ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) 포트폴리오를 참조하십시오.
+* [자산](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) 을 게시할 구성 가능한 자산에 대한 추가 기능을 위한 AEM Assets 브랜드 포트폴리오입니다.
 
 * 사용자 지정 솔루션은 [자산 공유 공유물](https://adobe-marketing-cloud.github.io/asset-share-commons/) 코드 베이스를 기반으로 만들어집니다.
 * AEM [링크 공유](/help/assets/share-assets.md)를 클릭하여 링크를 사용하여 자산을 애드혹 공유할 수 있습니다.
