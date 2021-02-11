@@ -2,7 +2,7 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
+source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 3%
@@ -146,7 +146,7 @@ Cloud Service SDK Build Analyzer Maven 플러그인으로서 AEM은 누락된 �
 
 우수 사례 분석기 v2.1.0 릴리스 날짜는 2021년 2월 11일입니다.
 
-### [!DNL Best-Practices-Analyzer] {#what-is-new-bpa}의 새로운 기능
+### [!DNL Best Practices Analyzer] {#what-is-new-bpa}의 새로운 기능
 
 * AEM Forms 및 AEM Forms 구현 기능을 감지하고 Cloud Service으로 AEM Forms으로 마이그레이션하는 것과 관련된 영역을 나타낼 수 있습니다.
 * 사용자 지정 구성 요소 및 템플릿의 사용 및 카운트를 감지하고 보고할 수 있습니다.
