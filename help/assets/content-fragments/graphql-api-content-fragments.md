@@ -2,9 +2,9 @@
 title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 헤드리스 컨텐츠 전달을 위한 AEM GraphQL API를 사용하여 Cloud Service으로 사용하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
+source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
 workflow-type: tm+mt
-source-wordcount: '3220'
+source-wordcount: '3228'
 ht-degree: 1%
 
 ---
@@ -140,9 +140,9 @@ AEM에서 GraphQL 쿼리를 활성화하려면 `/content/cq:graphql/global/endpo
 
 >[!CAUTION]
 >
->끝점에 현재 알려진 문제가 있습니다.
+>특정 릴리스에서는 끝점에 대해 현재 알려진 문제가 있습니다.
 >
->* `cq:graphql` 항목은 **사이트** 콘솔에 표시됩니다.를 클릭합니다.
+>* 사용된 릴리스에 따라 `cq:graphql` 항목이 **사이트** 콘솔에 표시됩니다.를 클릭합니다.
    >  이것은 사용하지 않아야 합니다.
 
 
