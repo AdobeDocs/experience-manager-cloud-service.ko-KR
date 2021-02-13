@@ -3,9 +3,9 @@ title: AEM Assets와 AEM MediaLibrary
 description: AEM Assets 및 관련 FAQ AEM Media Library에 포함되어 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 4%
 
 ---
@@ -27,10 +27,10 @@ AEM 미디어 라이브러리는 이미지와 기타 공유 리소스가 저장�
 
 AEM Assets 고객에게만 제공되는 고유한 기능은 다음과 같습니다.
 
-1. 제목, 태그 및 설명 이외의 메타데이터를 추출하고 편집할 수 있습니다.
-1. siteadmin 옆에 있는 두 번째 단추를 클릭하여 시작 화면에서 사용할 수 있는 AEM Assets 관리자.
+1. 제목, 태그 및 설명 이외의 메타데이터를 추출하고 편집할 수 있는 기능
+1. 시작 화면에서 `siteadmin`에 인접한 두 번째 옵션을 클릭하여 사용할 수 있는 AEM Assets 관리자.
 1. AEM Assets 통합, AEM Assets 삭제, AEM Assets 하위 자산 처리, AEM Assets 메타데이터 추출 등 디지털 자산 관리와 관련된 모든 워크플로우 단계
-1. &quot;dam&quot; im 패키지 공간을 포함한 라이브러리.
+1. 패키지 공간에 &quot;dam&quot;을 포함하는 라이브러리.
 
 이러한 기능을 사용하려면 유효한 AEM Assets 라이선스가 필요합니다.
 
@@ -60,7 +60,7 @@ AEM에서 모든 AEM Assets 관련 워크플로우, 구성 요소, 분류 체계
 
 ## 페이지에 이미지를 추가하고 이 이미지를 자르고 크기를 조정하려고 합니다. AEM Assets이 필요합니까?{#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
-이러한 경우 AEM Assets을 구입할 필요가 없습니다. 스마트 이미지 구성 요소로 페이지에 직접 이미지를 업로드할 수 있으므로 웹 사이트에서 이미지를 사용할 필요가 없습니다.
+이 경우 AEM Assets을 구입할 필요가 없습니다. 스마트 이미지 구성 요소로 페이지에 직접 이미지를 업로드할 수 있으므로 웹 사이트에서 이미지를 사용할 필요가 없습니다.
 
 ## AEM Assets과 미디어 라이브러리에서 사용할 수 있는 기능의 세부 목록 {#listoffeatures}
 
@@ -76,7 +76,7 @@ AEM에서 모든 AEM Assets 관련 워크플로우, 구성 요소, 분류 체계
 * Adobe Photoshop, Illustrator 및 InDesign 연결 자산
 * 다국어 자산 관리
 * PIM 통합
-* Rights Management
+* 권한 관리
 * Camera Raw 지원
 * 검색 패싯 관리 및 구성
 * 미리 만들어진 DAM 워크플로우(예: 사진 촬영)
