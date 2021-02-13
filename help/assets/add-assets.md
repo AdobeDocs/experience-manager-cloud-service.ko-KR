@@ -2,7 +2,7 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 1%
@@ -46,7 +46,7 @@ ht-degree: 1%
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
-   The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
+   The [!UICONTROL Pause] option does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** option appears.
 
    To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
@@ -181,7 +181,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 웹 브라우저 사용자 인터페이스 외에도 [!DNL Experience Manager]은 데스크탑의 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 환경을 제공합니다.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) adobe photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션 [!DNL Experience Manager] 에서 에셋에 액세스할 수 있습니다. 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 바로 현재 열려 있는 문서를 [!DNL Experience Manager]에 업로드할 수 있습니다.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션 [!DNL Experience Manager] 에서 에셋에 액세스할 수 있습니다. 이러한 데스크톱 응용 프로그램 내에서 Adobe Asset Link 사용자 인터페이스에서 바로 현재 열려 있는 문서를 [!DNL Experience Manager]에 업로드할 수 있습니다.
 * [[!DNL Experience Manager] 데스크탑 ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 앱을 사용하면 파일 유형이나 이를 처리하는 기본 애플리케이션에 상관없이 데스크탑에서 에셋을 사용한 작업을 간소화할 수 있습니다. 브라우저 업로드는 플랫 파일 목록 업로드만 지원하기 때문에 로컬 파일 시스템에서 중첩된 폴더 계층 구조의 파일을 업로드하는 것이 특히 유용합니다.
 
 ## 업로드 시 자산 처리 {#process-when-uploaded}
