@@ -3,7 +3,7 @@ title: ' [!DNL Assets] 및 미디어 라이브러리 제품 비교'
 description: ' [!DNL Experience Manager Assets] 과 미디어 라이브러리 기능을 비교하고 차이점을 파악합니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3a7af5fa5889c74eb74e12dead1df0494c2c6386
+source-git-commit: 93735a59dac1a0d674c0292ce268a8662f3b0b91
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 2%
@@ -106,4 +106,5 @@ ht-degree: 2%
 
 >[!MORELIKETHIS]
 >
->*[Cloud Service 제품 설명으로 Experience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [Cloud Service 제품 설명으로 Experience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+
