@@ -2,9 +2,9 @@
 title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 헤드리스 컨텐츠 전달을 위한 AEM GraphQL API를 사용하여 Cloud Service으로 사용하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 1%
 
 ---
@@ -337,7 +337,7 @@ AEM용 GraphQL은 사용자 생성 필드에 대한 데이터 유형 외에도 �
 
 경로 필드는 GraphQL에서 식별자로 사용됩니다. AEM 저장소 내의 컨텐츠 조각 자산의 경로를 나타냅니다. 다음 이유로 컨텐츠 조각 식별자로 선택했습니다.
 
-* aem 내에서 고유하며
+* AEM 내에서 고유하며
 * 간편하게 가져올 수 있습니다.
 
 다음 코드에는 컨텐츠 조각 모델 `Person`을(를) 기반으로 생성된 모든 컨텐츠 조각 경로가 표시됩니다.
@@ -523,7 +523,7 @@ query {
 
 자세한 예는 다음을 참조하십시오.
 
-* aem 확장의 [GraphQL 세부 사항](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+* AEM 확장의 [GraphQL 세부 사항](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
 
 * [이 샘플 컨텐츠 및 구조를 사용한 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
@@ -725,23 +725,90 @@ POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 �
 
 ## 외부 웹 사이트 {#query-graphql-endpoint-from-external-website}에서 GraphQL 끝점을 쿼리하는 중
 
+외부 웹 사이트에서 GraphQL 끝점에 액세스하려면 다음을 구성해야 합니다.
+
+* [CORS 필터](#cors-filter)
+* [레퍼러 필터](#referrer-filter)
+
+### CORS 필터 {#cors-filter}
+
 >[!NOTE]
 >
 >AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(교차 도메인 리소스 공유)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
 
-제3자 웹 사이트에서 JSON 출력을 사용하도록 허용하려면 고객 Git 리포지토리에 CORS 정책을 구성해야 합니다. 이 작업은 원하는 종단점에 대해 적절한 OSGi CORS 구성 파일을 추가하여 수행합니다. 이 구성은 액세스 권한을 부여할 신뢰할 수 있는 웹 사이트 이름(또는 regex)을 지정해야 합니다.
+GraphQL 끝점에 액세스하려면 고객 Git 리포지토리에 CORS 정책을 구성해야 합니다. 이 작업은 원하는 끝점에 대해 적절한 OSGi CORS 구성 파일을 추가하여 수행합니다.
 
-* GraphQL 끝점에 액세스:
+이 구성은 액세스 권한을 부여해야 하는 신뢰할 수 있는 웹 사이트 원본 `alloworigin` 또는 `alloworiginregexp`을 지정해야 합니다.
 
-   * alloworiin:[도메인] 또는 alloworiinregexp:[도메인 regex]
-   * supportedmethods:[POST]
-   * 할당 패스:[&quot;/content/graphql/global/endpoint.json&quot;]
+예를 들어 GraphQL 끝점과 `https://my.domain`에 대한 지속적인 쿼리 끝점에 대한 액세스 권한을 부여하려면 다음을 사용할 수 있습니다.
 
-* GraphQL 지속적인 쿼리 끝점에 액세스:
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * alloworiin:[도메인] 또는 alloworiinregexp:[도메인 regex]
-   * supportedmethods:[GET]
-   * 할당 패스:[&quot;/graphql/execute.json/.*&quot;]
+끝점에 대한 별칭 경로를 구성한 경우 `allowedpaths`에서도 사용할 수 있습니다.
+
+### 레퍼러 필터 {#referrer-filter}
+
+CORS 구성 외에도 레퍼러 필터를 구성하여 제3자 호스트에 대한 액세스를 허용해야 합니다.
+
+이 작업은 다음과 같은 적절한 OSGi 레퍼러 필터 구성 파일을 추가하여 수행합니다.
+
+* 신뢰할 수 있는 웹 사이트 호스트 이름을 지정합니다.`allow.hosts` 또는 `allow.hosts.regexp`,
+* 이 호스트 이름에 대한 액세스 권한을 부여합니다.
+
+예를 들어 레퍼러 `my.domain`의 요청에 대한 액세스 권한을 부여하려면 다음을 수행할 수 있습니다.
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
