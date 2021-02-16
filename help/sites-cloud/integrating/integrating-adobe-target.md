@@ -2,9 +2,9 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
+source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 필드를 구�
 
 >[!NOTE]
 >
-> 이미 기존 Target 구성을 편집하려면:
+> 기존 Target 구성을 변경하려는 경우:
 >
 > 1. 테넌트 ID를 다시 입력합니다.
 > 2. Target에 다시 연결합니다.
