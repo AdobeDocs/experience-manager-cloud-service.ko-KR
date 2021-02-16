@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager Assets] 에  [!DNL Cloud Service]의 주목할 만한 변경 사항'
 description: '[!DNL Adobe Experience Manager 6.5와 비교하여  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 에 대한 주목할 만한 변경 사항.'
 translation-type: tm+mt
-source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
+source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 3%
+source-wordcount: '697'
+ht-degree: 4%
 
 ---
 
 
-# [!DNL Experience Manager Assets] [!DNL Cloud Service](으)로 주목할 만한 변경 사항{#notable-changes}
+# [!DNL Cloud Service] {#notable-changes}(으)로 주목할 만한 변경 사항[!DNL Experience Manager Assets]
 
-[!DNL Adobe Experience Manager] as a는  [!DNL Cloud Service] Experience Manager 프로젝트를 관리할 수 있는 새로운 기능과 다양한 기능을 제공합니다. [!DNL Experience Manager Assets]과 [!DNL Experience Manager]의 비교할 때 온프레미스 또는 Adobe 관리 서비스로 호스팅되는 데는 많은 차이가 있습니다. [!DNL Cloud Service] 이 문서에서는 [!DNL Assets] 기능에 대한 중요한 차이점을 설명합니다.
+[!DNL Adobe Experience Manager] as a는  [!DNL Cloud Service] Experience Manager 프로젝트를 관리할 수 있는 새로운 기능과 다양한 기능을 제공합니다. [!DNL Experience Manager]과 [!DNL Cloud Service]의 비교할 때 온프레미스 또는 Adobe 관리 서비스로 호스팅되는 데는 많은 차이가 있습니다. [!DNL Experience Manager Assets] 이 문서에서는 [!DNL Assets] 기능에 대한 중요한 차이점을 설명합니다.
 
 [Experience Manager] 6.5와 비교할 때의 주요 차이점은 다음 영역에 있습니다.
 
@@ -31,10 +31,14 @@ ht-degree: 3%
 * 이전 버전의 기본 워크플로우 **[!UICONTROL DAM 자산 업데이트]**&#x200B;는 이제 사용할 수 없습니다. [!DNL Experience Manager] 대신 에셋 마이크로서비스는 대부분의 기본 에셋 처리(변환, 메타데이터 추출 및 색인화를 위한 텍스트 추출)를 포괄하는 확장 가능하고 쉽게 사용할 수 있는 서비스를 제공합니다.
    * [자산 마이크로서비스 구성 및 사용](/help/assets/asset-microservices-configure-and-use.md) 참조
    * 처리에서 사용자 지정된 워크플로우 단계를 수행하려면 [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용할 수 있습니다.
+* 메타데이터 원본에 쓸 수 없습니다.
 * 패키지 관리자를 사용하여 업로드한 자산은 [!DNL Assets] 인터페이스에서 **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동 재처리가 필요합니다.
-* 확장자가 없거나 확장이 잘못된 디지털 자산은 원하는 대로 처리되지 않습니다. 예를 들어, 이러한 자산을 업로드할 때 아무런 반응이 없거나 잘못된 처리 프로필이 자산에 적용될 수 있습니다. 사용자는 DAM에 이진 파일을 저장할 수 있습니다.
+* 확장자가 없거나 확장이 잘못된 디지털 자산은 원하는 대로 처리되지 않습니다. [자동 MIME 유형 ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) 선택을 사용할 수 없습니다. 예를 들어, 이러한 자산을 업로드할 때 아무런 반응이 없거나 잘못된 처리 프로필이 자산에 적용될 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다.
+* [[!DNL Assets] 홈 페이지 ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) 경험을 사용할 수 없습니다.
+* 중복 자산 감지는 Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)에서 작동하는 방식과 비교하여 [다르게 작동합니다.
+* 배치만(FPO) 변환은 이전 [!DNL Experience Manager] 버전에서 작동하는 방식과 비교하여 다르게 생성됩니다. Experience Manager에 대한 [FPO 변환을 Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)로 참조하십시오.
 
-자산 마이크로서비스로 생성된 표준 변환은 자산 저장소 노드(동일한 이름 지정 규칙)에서 역호환이 가능한 방식으로 저장됩니다.
+자산 마이크로서비스로 생성된 표준 변환은 동일한 이름 지정 규칙을 사용하여 자산 저장소 노드에서 호환되는 방법으로 저장됩니다.
 
 ## 에셋 마이크로서비스 개발 및 테스트 {#asset-microservices}
 
@@ -55,5 +59,5 @@ Asset Microservices는 Cloud Manager에서 관리되는 고객 프로그램 및 
 >* [!DNL Experience Manager]의 [아키텍처](/help/core-concepts/architecture.md)([!DNL Cloud Service])
 >* [다음으로  [!DNL Experience Manager] 주목할 만한 변경 사항 [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
 >* [다음으로  [!DNL Experience Manager Sites] 주목할 만한 변경 사항 [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
