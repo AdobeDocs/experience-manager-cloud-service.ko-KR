@@ -2,9 +2,9 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
+source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '1048'
 ht-degree: 2%
 
 ---
@@ -33,9 +33,33 @@ Adobe 실행은 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target
 4. 세부 사항을 채우고(아래 참조) **Connect**를 선택합니다.
    ![](assets/open_screen1.png "Connect")
 
-### IMS 구성
+### IMS 구성 {#ims-configuration}
 
 Target을 AEM 및 Launch와 올바르게 통합하려면 론치와 Target 모두에 대한 IMS 구성이 필요합니다. Launch에 대한 IMS 구성이 AEM에서 Cloud Service으로 미리 구성되지만 Target IMS 구성이 생성되어야 합니다(Target이 프로비저닝된 후). Target IMS 구성을 만드는 방법에 대해 알려면 [이 비디오](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) 및 [이 페이지](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)를 참조하십시오.
+
+### Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 {#tenant-client}
+
+Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 필드를 구성할 때 다음 사항을 주의하십시오.
+
+1. 대부분의 고객에게 테넌트 ID와 클라이언트 코드가 동일합니다. 즉, 두 필드 모두 동일한 정보를 포함하고 있으며 동일합니다. 두 필드 모두에 테넌트 ID를 입력해야 합니다.
+2. 기존 목적으로 테넌트 ID 및 클라이언트 코드 필드에 다른 값을 입력할 수도 있습니다.
+
+두 경우 모두 다음 사항에 유의하십시오.
+
+* 기본적으로 클라이언트 코드(처음 추가된 경우)도 테넌트 ID 필드에 자동으로 복사됩니다.
+* 기본 테넌트 ID 세트를 변경할 수 있는 옵션이 있습니다.
+* 따라서 Target에 대한 백엔드 호출은 테넌트 ID를 기반으로 하며 Target에 대한 클라이언트 측 호출은 클라이언트 코드를 기반으로 합니다.
+
+앞서 설명한 바와 같이 첫 번째 케이스는 Cloud Service의 경우 AEM에서 가장 일반적으로 사용됩니다. 어느 방법으로든 요구 사항에 따라 **모두** 필드에 올바른 정보가 들어 있는지 확인합니다.
+
+>[!NOTE]
+>
+> 이미 기존 Target 구성을 편집하려면:
+>
+> 1. 테넌트 ID를 다시 입력합니다.
+> 2. Target에 다시 연결합니다.
+> 3. 구성을 저장합니다.
+
 
 ### Target 구성 편집 {#edit-target-configuration}
 
