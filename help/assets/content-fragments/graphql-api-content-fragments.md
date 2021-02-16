@@ -2,9 +2,9 @@
 title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 헤드리스 컨텐츠 전달을 위한 AEM GraphQL API를 사용하여 Cloud Service으로 사용하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
+source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '2935'
 ht-degree: 1%
 
 ---
@@ -98,9 +98,11 @@ GraphQL을 사용하면 다음 중 하나를 반환하기 위해 쿼리를 수�
 
 * **[항목 목록](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-다음을 수행할 수도 있습니다.
+<!--
+You can also perform:
 
-* [캐시된 지속적인 쿼리](#persisted-queries-caching)
+* [Persisted Queries, that are cached](#persisted-queries-caching)
+-->
 
 ## AEM 끝점에 대한 GraphQL {#graphql-aem-endpoint}
 
@@ -531,20 +533,21 @@ query {
 
 * [WKND 프로젝트를 기반으로 하는 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## 지속적인 쿼리(캐싱) {#persisted-queries-caching}
+<!--
+## Persisted Queries (Caching) {#persisted-queries-caching}
 
-POST 요청을 사용하여 쿼리를 준비한 후 HTTP 캐시 또는 CDN을 통해 캐싱할 수 있는 GET 요청을 사용하여 실행할 수 있습니다.
+After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
-POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 매개 변수로 사용하는 경우 매개 변수가 HTTP 서비스 및 중계기에 너무 많이 사용되면 위험합니다.
+This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-지정된 쿼리를 유지하는 데 필요한 단계는 다음과 같습니다.
+Here are the steps required to persist a given query:
 
 >[!NOTE]
->이 전에 적절한 구성을 위해 **GraphQL 지속성 쿼리**&#x200B;를 활성화해야 합니다. 자세한 내용은 [구성 브라우저에서 컨텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)를 참조하십시오.
+>Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 
-1. 새 끝점 URL `/graphql/persist.json/<config>/<persisted-label>`에 PUT을 사용하여 쿼리를 준비합니다.
+1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
-   예를 들어 지속적인 쿼리를 만듭니다.
+   For example, create a persisted query:
 
    ```xml
    $ curl -X PUT \
@@ -565,32 +568,32 @@ POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 �
    }'
    ```
 
-1. 이 시점에서 응답을 확인하십시오.
+1. At this point, check the response.
 
-   예를 들어 성공 여부를 확인합니다.
+   For example, check for success:
 
-   ```xml
-   {
-     "action": "create",
-     "configurationName": "wknd",
-     "name": "plain-article-query",
-     "shortPath": "/wknd/plain-article-query",
-     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-   }
-   ```
+     ```xml
+     {
+       "action": "create",
+       "configurationName": "wknd",
+       "name": "plain-article-query",
+       "shortPath": "/wknd/plain-article-query",
+       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+     }
+     ```
 
-1. 그런 다음 URL `/graphql/execute.json/<shortPath>`을(를) 사용하여 지속적인 쿼리를 다시 재생할 수 있습니다.
+1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
 
-   예를 들어, 지속적인 쿼리를 사용합니다.
+   For example, use the persisted query:
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. POST를 통해 기존 쿼리 경로로 지속적인 쿼리를 업데이트합니다.
+1. Update a persisted query by POSTing to an already existing query path.
 
-   예를 들어, 지속적인 쿼리를 사용합니다.
+   For example, use the persisted query:
 
    ```xml
    $ curl -X POST \
@@ -614,9 +617,9 @@ POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 �
    }'
    ```
 
-1. 래핑된 일반 쿼리를 만듭니다.
+1. Create a wrapped plain query.
 
-   예:
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -627,9 +630,9 @@ POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 �
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. 캐시 컨트롤을 사용하여 래핑된 일반 쿼리를 만듭니다.
+1. Create a wrapped plain query with cache control.
 
-   예:
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -640,9 +643,9 @@ POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 �
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. 매개 변수를 사용하여 지속적인 쿼리를 만듭니다.
+1. Create a persisted query with parameters:
 
-   예:
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -666,62 +669,62 @@ POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 �
      }'
    ```
 
-1. 매개 변수를 사용하여 쿼리 실행
+1. Executing a query with parameters.
 
-   예:
+   For example:
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
+
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. 게시를 통해 쿼리를 실행하려면 관련 영구 트리가 복제되어야 합니다
+1. To execute the query on publish, the related persist tree need to replicated
 
-   * 복제에 POST 사용:
+   * Using a POST for replication:
 
-      ```xml
-      $curl -X POST   http://localhost:4502/bin/replicate.json \
-        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-        -F cmd=activate
-      ```
+     ```xml
+     $curl -X POST   http://localhost:4502/bin/replicate.json \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+       -F cmd=activate
+     ```
 
-   * 패키지 사용:
-      1. 새 패키지 정의를 만듭니다.
-      1. 구성을 포함합니다(예: `/conf/wknd/settings/graphql/persistentQueries`).
-      1. 패키지를 빌드합니다.
-      1. 패키지를 복제합니다.
-   * 복제/배포 도구 사용
-      1. 배포 도구로 이동합니다.
-      1. 구성에 대한 트리 활성화를 선택합니다(예: `/conf/wknd/settings/graphql/persistentQueries`).
-   * 워크플로우 사용(워크플로우 실행 구성 사용):
-      1. 다른 이벤트(예: 작성, 수정 등)에서 구성을 복제하는 워크플로우 모델을 실행하기 위한 워크플로우 실행 규칙을 정의합니다.
+   * Using a package:
+     1. Create a new package definition.
+     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
+     1. Build the package.
+     1. Replicate the package.
 
+   * Using replication/distribution tool.
+     1. Go to the Distribution tool.
+     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
+   * Using a workflow (via workflow launcher configuration):
+     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. 쿼리 구성이 게시되면 게시 끝점을 사용하기만 해도 동일한 원칙이 적용됩니다.
-
-   >[!NOTE]
-   >
-   >익명 액세스의 경우 시스템은 ACL이 &quot;모든 사용자&quot;에게 쿼리 구성에 대한 액세스 권한을 허용한다고 가정합니다.
-   >
-   >그렇지 않으면 실행할 수 없습니다.
+1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
 
    >[!NOTE]
    >
-   >URL의 모든 세미콜론(&quot;;&quot;)을 인코딩해야 합니다.
+   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
    >
-   >예를 들어, 지속적인 쿼리 실행 요청에서와 같이
+   >If that is not the case it will not be able to execute.
+
+   >[!NOTE]
    >
+   >Any semicolons (";") in the URLs need to be encoded.
    >
-   ```xml
+   >For example, as in the request to Execute a persisted query:
+   >
+   >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
+-->
 
 ## 외부 웹 사이트 {#query-graphql-endpoint-from-external-website}에서 GraphQL 끝점을 쿼리하는 중
 
@@ -740,8 +743,13 @@ GraphQL 끝점에 액세스하려면 고객 Git 리포지토리에 CORS 정책�
 
 이 구성은 액세스 권한을 부여해야 하는 신뢰할 수 있는 웹 사이트 원본 `alloworigin` 또는 `alloworiginregexp`을 지정해야 합니다.
 
-예를 들어 GraphQL 끝점과 `https://my.domain`에 대한 지속적인 쿼리 끝점에 대한 액세스 권한을 부여하려면 다음을 사용할 수 있습니다.
+<!--
+For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
+-->
 
+예를 들어 `https://my.domain`에 대한 GraphQL 끝점에 대한 액세스 권한을 부여하려면 다음을 사용할 수 있습니다.
+
+<!--
 ```xml
 {
   "supportscredentials":true,
@@ -771,6 +779,39 @@ GraphQL 끝점에 액세스하려면 고객 Git 리포지토리에 CORS 정책�
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
+  ]
+}
+```
+-->
+
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
