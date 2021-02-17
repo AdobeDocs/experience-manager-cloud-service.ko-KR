@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service을 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
 workflow-type: tm+mt
-source-wordcount: '3869'
+source-wordcount: '3868'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Cloud Services {#configuring-dynamic-media-cloud-services}에 새 Dynamic Media 구성 만들기
+## Cloud Services {#configuring-dynamic-media-cloud-services}에서 Dynamic Media 구성 만들기
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
@@ -113,7 +113,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    * 주소를 활성화(켜기)하려면 확인란을 선택한 다음 AEM 작성자 인스턴스의 IP 주소(발송자 IP 아님)를 입력합니다.
    * **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-이제 기본 구성으로 완료되었습니다.dynamic media을 사용할 준비가 되었습니다.
+이제 기본 구성으로 완료되었습니다.Dynamic Media을 사용할 준비가 되었습니다.
 
 구성을 추가로 사용자 정의하려면 Dynamic Media](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)에서 [고급 설정 구성 아래의 작업을 선택적으로 완료할 수 있습니다.
 
@@ -202,7 +202,7 @@ Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media �
 
 제작 설정 설정은 Dynamic Media에서 기본적으로 자산을 제공하는 방법을 결정합니다. 설정이 지정되지 않은 경우 Dynamic Media은 제작 설정에 정의된 기본 설정에 따라 자산을 제공합니다. 예를 들어 해상도 특성을 포함하지 않는 이미지를 전달하도록 요청하면 기본 개체 해상도 설정이 있는 이미지가 생성됩니다.
 
-게시 설정을 구성하려면:dynamic media Classic에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다.
+게시 설정을 구성하려면:Dynamic Media Classic에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다.
 
 [이미지 서버] 화면은 이미지 전달을 위한 기본 설정을 설정합니다. 각 설정에 대한 설명은 UI 화면을 참조하십시오.
 
