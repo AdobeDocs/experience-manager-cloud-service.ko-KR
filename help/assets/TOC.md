@@ -5,10 +5,10 @@ breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 75%
+source-wordcount: '474'
+ht-degree: 74%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 75%
    + [이미지를 위한 스마트 태그](smart-tags.md)
    + [스마트 태그 지정 비디오 에셋](smart-tags-video-assets.md)
    + [자산 구성 방법](organize-assets.md)
-   + [aem [!DNL Adobe Stock] 에서 에셋 사용](aem-assets-adobe-stock.md)
+   + [AEM [!DNL Adobe Stock] 에서 에셋 사용](aem-assets-adobe-stock.md)
    + [컬렉션 관리](manage-collections.md)
    + [메타데이터 개요](manage-metadata.md)
    + [통합: [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -123,6 +123,6 @@ ht-degree: 75%
    + [Dynamic Media 자산 게시](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Dynamic Media의 선택적 게시 작업](dynamic-media/selective-publishing.md)
    + [선택기를 사용한 작업](dynamic-media/working-with-selectors.md)
-   + [DHTML 뷰어 지원 중단 FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + [Flash 뷰어 지원 중단 알림](dynamic-media/flash-viewers-eol.md)
    + [콘텐츠의 HTTP2 전달 FAQ](dynamic-media/http2faq.md)
+   + [Flash 뷰어 사용 종료](dynamic-media/flash-viewers-eol.md)
+   + [DHTML 뷰어 사용 종료](dynamic-media/dhtml-viewer-endoflifefaqs.md)
