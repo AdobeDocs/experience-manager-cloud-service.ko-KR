@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
+source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1178'
 ht-degree: 3%
 
 ---
@@ -144,7 +144,7 @@ Cloud Service SDK Build Analyzer Maven 플러그인으로서 AEM은 누락된 �
 
 ### 릴리스 날짜 {#release-date-bpa}
 
-우수 사례 분석기 v2.1.0 릴리스 날짜는 2021년 2월 11일입니다.
+우수 사례 분석기 v2.1.2 릴리스 날짜는 2021년 2월 18일입니다.
 
 ### 우수 사례 분석기 {#what-is-new-bpa}의 새로운 기능
 
@@ -153,6 +153,19 @@ Cloud Service SDK Build Analyzer Maven 플러그인으로서 AEM은 누락된 �
 * 사용된 노드 저장소 및 데이터 저장소 유형을 검색하는 기능입니다.
 * Dynamic Media 사용 감지 기능
 * 사용된 Java 버전을 검색하는 기능
+
+## 코드 리팩터링 도구 {#code-refactoring-tools}
+
+### 코드 리팩토링 도구 {#what-is-new-crt}의 새로운 기능
+
+* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 Repository Modernizer에 대한 몇 가지 버그 수정이 포함되어 있습니다.
+이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)을 참조하십시오.
+
+### 버그 수정 {#bug-fixes-crt}
+
+* Repository Modernizer에서 수행한 몇 가지 버그 수정.
+[GitHub 리소스를 참조하십시오.자세한 내용은 aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)을 참조하십시오.
+
 
 
 
