@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager Assets] 에  [!DNL Cloud Service]의 주목할 만한 변경 사항'
 description: '[!DNL Adobe Experience Manager 6.5와 비교하여  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 에 대한 주목할 만한 변경 사항.'
 translation-type: tm+mt
-source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
+source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '743'
 ht-degree: 4%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 4%
 * [!DNL Assets] 홈 페이지 환경을 사용할 수 없습니다. [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)을(를) 참조하십시오.
 * 중복된 자산 감지는 [이(가) [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)에서 작동하는 방식과 다른 방식으로 작동합니다.
 * 배치만(FPO) 변환은 이전 [!DNL Experience Manager] 버전과 다르게 생성됩니다.  [!DNL Experience Manager] 에 대한 [FPO 변환을  [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)로 참조하십시오.
+* ZIP 아카이브가 업로드되면 [!DNL Experience Manager]은(는) 보관 파일에 번들로 포함된 에셋을 추출하지 않습니다. [!DNL Cloud Service]  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)에서 [ZIP 추출을 참조하십시오.
 
 자산 마이크로서비스로 생성된 표준 변환은 동일한 이름 지정 규칙을 사용하여 자산 저장소 노드에서 역호환이 가능한 방식으로 저장됩니다.
 
