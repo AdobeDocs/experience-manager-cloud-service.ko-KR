@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
+source-git-commit: 39c7679e390067b520f36c4053133caeb9541875
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 36%
+source-wordcount: '673'
+ht-degree: 35%
 
 ---
 
@@ -98,4 +98,7 @@ ht-degree: 36%
    + [Cloud Service으로 Adobe Experience Manager으로 마이그레이션](migration-methodology/getting-started.md)
 + 우수 사례 {#best-practices}
    + [SEO 및 URL 관리](best-practices/seo-and-url-management.md)
+   + [KPI 평가](best-practices/assessing-kpis.md)
+   + [KPI 정렬](best-practices/aligning-kpis.md)
+   + [적합한 팀 선택](best-practices/choose-right-team.md)
 + [도구 콘솔 개요](tools-consoles.md)
