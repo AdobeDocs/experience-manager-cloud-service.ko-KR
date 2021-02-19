@@ -2,9 +2,9 @@
 title: KPI 정렬
 description: KPI 정렬
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,13 @@ ht-degree: 0%
 
 
 # 적합한 KPI를 선택하려면 비즈니스 목표에 도달합니다.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_alignkpis"
+>title="KPI 정렬"
+>abstract="디지털 환경에서 거의 모든 것을 측정할 수 있습니다. Adobe Experience Manager 구현에 적합한 KPI를 선택하면 팀은 가장 중요한 부분에 집중할 수 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPI 평가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="적합한 팀 선택"
 
 디지털 환경에서 거의 모든 것을 측정할 수 있습니다. Adobe Experience Manager 구현을 위한 3개의 KPI를 선택하면 팀은 가장 중요한 부분에 집중할 수 있습니다.
 
