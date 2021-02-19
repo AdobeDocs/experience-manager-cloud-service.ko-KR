@@ -2,9 +2,9 @@
 title: 로깅
 description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2314'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # 로깅 {#logging}
 
-CLOUD SERVICE은 고객이 고객층마다 고유한 경험을 만들 수 있도록 사용자 정의 코드를 포함하는 플랫폼입니다. 이러한 점을 염두에 두고 로깅은 로컬 개발 및 클라우드 환경에서 코드 실행을 디버깅하고 이해하기 위한 중요한 기능이며, 특히 Cloud Service의 개발 환경인 AEM도 이 기능을 사용합니다.
+Cloud Service은 고객이 고객층마다 고유한 경험을 만들 수 있도록 사용자 정의 코드를 포함하는 플랫폼입니다. 이러한 점을 염두에 두고 로깅은 로컬 개발 및 클라우드 환경에서 코드 실행을 디버깅하고 이해하기 위한 중요한 기능이며, 특히 Cloud Service의 개발 환경인 AEM도 이 기능을 사용합니다.
 
 AEM 로깅 및 로그 수준은 Git에서 AEM 프로젝트의 일부로 저장되어 Cloud Manager를 통해 AEM 프로젝트의 일부로 배포되는 구성 파일에서 관리됩니다. Cloud Service으로 AEM에 로그인하면 두 개의 논리 세트로 나눌 수 있습니다.
 
@@ -116,7 +116,7 @@ AEM 로그 수준은 OSGi 구성을 통해 환경 유형별로 설정되며, 이
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
-<td>CLOUD SERVICE 노드 ID로 AEM</td>
+<td>Cloud Service 노드 ID로 AEM</td>
 <td>[cm-p1234-e5678-aem-author-5955cb5b8-q7l9s]</td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ AEM은 Cloud Service의 HTTP 요청 로깅으로 AEM에 대한 HTTP 요청과 �
 </td>
 </tr>
 <tr>
-<td>CLOUD SERVICE 노드 ID로 AEM</td>
+<td>Cloud Service 노드 ID로 AEM</td>
 <td>[cm-p1234-e5678-aem-author-5955cb5b8-q7l9s]</td>
 </tr>
 </tbody>
@@ -259,7 +259,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <table>
 <tbody>
 <tr>
-<td>CLOUD SERVICE 노드 ID로 AEM</td>
+<td>Cloud Service 노드 ID로 AEM</td>
 <td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
 </tr>
 <tr>
@@ -492,7 +492,7 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>기간</td>
-<td>1949밀리초</td>
+<td>1949ms</td>
 </tr>
 <tr>
 <td>농장</td>
@@ -598,6 +598,12 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 >[!NOTE]
 >
 >샌드박스 프로그램 환경에 대한 스플렁크 포워딩은 지원되지 않습니다.
+
+초기 요청에는 단계/prod 환경 외에 활성화해야 하는 모든 개발 환경이 포함되어야 합니다.
+
+초기 요청 후에 생성된 새 개발 환경에서 Splunk 전달을 수행하려고 했으나 이를 활성화하지 않은 경우 추가 요청을 해야 합니다.
+
+개발 환경이 요청되면 요청에 없는 다른 개발 환경이나 샌드박스 환경에서도 Splunk 포워딩을 사용하도록 설정하고 Splunk 인덱스를 공유할 수 있습니다. 고객은 `aem_env_id` 필드를 사용하여 이러한 환경을 구분할 수 있습니다.
 
 아래에서 샘플 고객 지원 요청을 확인할 수 있습니다.
 
