@@ -2,15 +2,22 @@
 title: KPI 액세스
 description: KPI 액세스
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
 
 # 당신은 가장 중요한 것들을 측정하고 있습니까?
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assesskpis"
+>title="KPI 평가"
+>abstract="Adobe Experience Manager 출시를 시작하기 전에 프로젝트에 이해관계가 있는 모든 사람이 상위 3개의 KPI가 무엇이고 이들이 중요한 이유를 알아야 합니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="적합한 팀 선택"
 
 Adobe Experience Manager 출시를 시작하기 전에 프로젝트에 이해관계가 있는 모든 사람이 상위 3개의 KPI가 무엇이고 이들이 중요한 이유를 알아야 합니다.
 
