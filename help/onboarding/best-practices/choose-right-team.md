@@ -2,15 +2,22 @@
 title: 올바른 사용자, 올바른 역할
 description: 올바른 사용자, 올바른 역할
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 
 # **우선 올바른 사람을 올바른 역할로 끌어오기**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="적합한 팀 선택"
+>abstract="Adobe Experience Manager 배포를 성공적으로 진행하기 위해 적합한 업무에 적합한 인물을 활용할 수 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPI 정렬"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPI 평가"
 
 조직의 경우 여러 부서에서 디지털 경험의 서로 다른 측면을 갖고 있을 수 있습니다. 거버넌스 없는 무대는 끝없는 논쟁, 내분, 그리고 혼란을 위한 무대다.
 
