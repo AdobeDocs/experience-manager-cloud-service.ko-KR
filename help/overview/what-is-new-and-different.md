@@ -2,7 +2,7 @@
 title: 차이점 및 새로운 기능 - Cloud Service의 Adobe Experience Manager
 description: 'Cloud Service의 차이점과 새로운 기능 - Adobe Experience Manager(AEM)입니다. '
 translation-type: tm+mt
-source-git-commit: 938f2b45a99e8884c166656694424d2123121369
+source-git-commit: 4f43736ae80eeb57efe7d480993efd9a7ad193bf
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 10%
@@ -121,7 +121,7 @@ Cloud Manager는 Cloud Service의 기본 구성 요소를 만들고 구성할 �
 
 * 이러한 구성 요소에 대한 중요한 라이프사이클 이벤트(예: 제품 업데이트)에 대한 알림을 받습니다.
 
-Cloud Manager는 다양한 지역에 걸쳐 데이터 센터에 환경을 생성하여 글로벌 지원 서비스를 제공합니다. PoP(CDN Point of Presence)는 전 세계 고객을 위해 낮은 지연 시간 컨텐츠 전달을 보장합니다.
+Cloud Manager는 다양한 지역에 걸쳐 데이터 센터에 환경을 생성하여 글로벌 지원 서비스를 제공합니다. PoPs(CDN Points of Presence)는 전 세계 고객을 위해 낮은 지연 시간 컨텐츠 전달을 보장합니다.
 
 >[!NOTE]
 >AEM에서 Cloud Manager를 Cloud Service으로 시작하려면 [Cloud Service](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md)으로 Experience Manager 액세스를 참조하십시오.
