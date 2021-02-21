@@ -2,10 +2,10 @@
 title: Dynamic Media 자산 제공
 description: Dynamic Media 에셋을 제공하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 26%
+ht-degree: 14%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 26%
 
 비디오 및 이미지 등 Dynamic Media 자산을 제공하는 방법은 웹 사이트 구현 방법에 따라 다릅니다.
 
-Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
+Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 
 * 웹 사이트가 AEM에서 호스팅된다면, 다이내믹 미디어 자산을 페이지에 바로 추가할 수 있습니다.
 * 웹 사이트가 AEM에 없다면 다음 중 하나를 선택할 수 있습니다.
@@ -25,7 +25,7 @@ Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
 >[!NOTE]
 >
->스마트 이미징은 기존 이미지 사전 설정에서 작동하며 마지막 전달 순간에 인텔리전스를 사용하여 브라우저 또는 네트워크 연결 속도에 따라 이미지 파일 크기를 더 줄입니다. 자세한 내용은 [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)을 참조하십시오.
+>스마트 이미징은 기존 이미지 사전 설정과 연동됩니다. 전달 마지막 순간에 지능적인 기능을 사용하여 브라우저 또는 네트워크 연결 속도에 따라 이미지 파일 크기를 추가로 줄일 수 있습니다. 자세한 내용은 [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)을 참조하십시오.
 
 자세한 내용은 다음 항목을 참조하십시오.
 
