@@ -2,9 +2,9 @@
 title: Dynamic Media에서 핫링크 보호 활성화
 description: Dynamic Media에서 핫링크 보호를 활성화하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '170'
 ht-degree: 7%
 
 ---
@@ -12,8 +12,8 @@ ht-degree: 7%
 
 # Dynamic Media에서 핫링크 보호 활성화 {#activating-hotlink-protection-in-dynamic-media}
 
-핫링크는 타사 웹 사이트에서 HTML 코드를 사용하여 웹 사이트의 이미지를 표시할 때 사용됩니다. 방문자의 브라우저가 서버에서 직접 그림을 액세스하고 있으므로 사진이 요청될 때마다 대역폭을 사용합니다. Hotlink *protection*&#x200B;은 다른 웹 사이트에서 웹 페이지의 사진, css 또는 javascript에 직접 연결할 수 없도록 하는 방법입니다. 이러한 유형의 방패드는 Dynamic Media 계정에서 불필요한 대역폭 사용을 줄이는 데 도움이 됩니다.
+핫 링크는 타사 웹 사이트에서 HTML 코드를 사용하여 웹 사이트의 이미지를 표시할 때 사용됩니다. 방문자의 브라우저가 서버에서 직접 그림을 액세스하고 있으므로 사진이 요청될 때마다 대역폭을 사용합니다. Hotlink *protection*&#x200B;은 다른 웹 사이트에서 웹 페이지의 사진, CSS 또는 JavaScript에 직접 연결할 수 없도록 하는 방법입니다. 이러한 유형의 방패드는 Dynamic Media 계정에서 불필요한 대역폭 사용을 줄이는 데 도움이 됩니다.
 
-[Adobe ](https://helpx.adobe.com/support.html) 지원도메인 허용 웹 사이트 목록의 웹 사이트에만 Dynamic Media 컨텐츠가 제공되도록 CDN 수준에서 레퍼러 필터를 구성할 수 있습니다.
+[Adobe 고객 ](https://helpx.adobe.com/support.html) 지원 센터는 CDN 수준에서 레퍼러 필터를 구성할 수 있습니다. 이렇게 하면 도메인에 대해 허용되는 웹 사이트 목록의 웹 사이트에만 Dynamic Media 컨텐츠가 제공됩니다.
 
 핫링크 보호를 사용하려면 Adobe 번들로 제공되는 CDN을 사용해야 합니다. 핫링크 보호를 활성화하려면 관리자가 지원 티켓을 만들어 Dynamic Media 계정에 구성 변경을 요청해야 합니다. 핫링크 보호를 활성화하기 위한 추가 비용은 없습니다.
