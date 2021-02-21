@@ -2,7 +2,7 @@
 title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
 description: 웹 페이지에 Dynamic Media 비디오 또는 이미지 에셋을 포함하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -42,7 +42,7 @@ AEM을 WCM으로 사용하는 _이 아닌_&#x200B;인 경우에만 URL을 포함
 
    [이미지 사전 설정 게시](managing-image-presets.md#publishing-image-presets)를 참조하십시오.
 
-1. 왼쪽 레일에서 드롭다운 메뉴를 선택하고 **[!UICONTROL 뷰어]**&#x200B;를 누릅니다.
+1. 왼쪽 레일에서 드롭다운 목록을 선택하고 **[!UICONTROL 뷰어]**&#x200B;를 누릅니다.
 1. 왼쪽 레일에서 뷰어 사전 설정 이름을 누릅니다. 뷰어 사전 설정이 자산에 적용됩니다.
 1. **[!UICONTROL 포함]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 포함 코드]** 대화 상자에서 전체 코드를 클립보드로 복사한 다음 **[!UICONTROL 닫기]**&#x200B;를 누릅니다.
