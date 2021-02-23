@@ -1,38 +1,38 @@
 ---
-title: 빠른 보기를 사용하여 사용자 지정 팝업 만들기
-description: 기본 Quickview는 제품 정보와 함께 팝업이 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 사용자 정의 컨텐츠가 팝업에 표시되도록 트리거할 수 있습니다.
+title: 빠른 보기를 사용하여 사용자 정의 팝업 만들기
+description: 기본 빠른 보기는 전자 상거래 경험에 사용되므로 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 사용자 정의 컨텐츠가 팝업에 표시되도록 트리거할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 2%
+source-wordcount: '1023'
+ht-degree: 1%
 
 ---
 
 
-# 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
+# 빠른 보기를 사용하여 사용자 정의 팝업 창 {#using-quickviews-to-create-custom-pop-ups} 만들기
 
-기본 Quickview는 제품 정보와 함께 팝업이 표시되어 구매를 유도하는 전자 상거래 경험에 사용됩니다. 그러나 사용자 정의 컨텐츠가 팝업에 표시되도록 트리거할 수 있습니다. 사용 중인 뷰어에 따라 이 기능을 사용하면 사용자가 핫스팟, 축소판 이미지 또는 이미지 맵을 클릭하여 정보 또는 관련 컨텐츠를 볼 수 있습니다.
+기본 빠른 보기는 전자 상거래 경험에 사용되므로 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠가 팝업에 표시되도록 트리거할 수 있습니다. 사용하는 뷰어에 따라 고객은 핫스팟, 축소판 이미지 또는 이미지 맵을 탭하여 정보 또는 관련 컨텐츠를 볼 수 있습니다.
 
-빠른 보기는 Dynamic Media에서 다음 뷰어에서 지원됩니다.
+빠른 보기는 Dynamic Media의 다음 뷰어에서 지원됩니다.
 
 * 대화형 이미지(클릭 가능한 핫스팟)
 * 인터랙티브한 비디오(비디오 재생 중에 클릭 가능한 축소판 이미지)
 * 회전판 배너(클릭 가능한 핫스팟 또는 이미지 맵)
 
-각 뷰어의 기능은 다르지만 빠른 보기를 만드는 프로세스는 지원되는 3개 뷰어 모두에서 동일합니다.
+각 뷰어의 기능은 다르지만 빠른 보기를 만드는 프로세스는 지원되는 세 뷰어 모두에서 동일합니다.
 
-**빠른 보기를 사용하여 사용자 정의 팝업 만들기**
+**빠른 보기를 사용하여 사용자 정의 팝업 창을 만들려면**
 
 1. 업로드된 자산에 대한 빠른 보기를 만듭니다.
 
-   일반적으로 사용 중인 뷰어에 사용할 자산을 편집할 때와 동일한 시간에 빠른 보기를 만듭니다.
+   일반적으로 사용 중인 뷰어와 함께 사용할 자산을 편집할 때 [빠른 보기]를 만듭니다.
 
    <table>
     <tbody>
     <tr>
     <td><strong>사용 중인 뷰어</strong></td>
-    <td><strong>빠른 보기를 만들려면 다음 단계를 완료합니다.</strong></td>
+    <td><strong>빠른 보기를 만들려면 다음 단계를 완료하십시오.</strong></td>
     </tr>
     <tr>
     <td>대화형 이미지</td>
@@ -55,7 +55,7 @@ ht-degree: 2%
     <tbody>
     <tr>
     <td><strong>사용 중인 뷰어</strong><br /> </td>
-    <td><strong>뷰어를 웹 사이트와 통합하려면 다음 단계를 완료하십시오.</strong></td>
+    <td><strong>뷰어를 웹 사이트와 통합하려면 다음 단계를 완료하십시오</strong></td>
     </tr>
     <tr>
     <td>인터랙티브한 이미지</td>
@@ -72,9 +72,9 @@ ht-degree: 2%
     </tbody>
    </table>
 
-1. 이제 사용 중인 뷰어에서 Quickview 사용 방법을 알아야 합니다.
+1. 사용하는 뷰어는 [빠른 보기]를 사용하는 방법을 알아야 합니다.
 
-   이렇게 하려면 뷰어에서 `QuickViewActive`이라는 핸들러를 사용합니다.
+   뷰어는 `QuickViewActive`이라는 핸들러를 사용합니다.
 
    **예**
 웹 페이지에 다음과 같은 샘플 포함 코드를 대화형 이미지에 사용한다고 가정해 보십시오.
@@ -85,7 +85,7 @@ ht-degree: 2%
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **위의 샘플 포함 코드 예제를 사용하여 다음과 같은 코드가 있습니다.**
+   **위의 샘플 포함 코드 예제를 사용하면 다음 코드가 있습니다.**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -103,12 +103,12 @@ ht-degree: 2%
    * 대화형 이미지 뷰어:[구독자](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 대화형 비디오 뷰어:[구독자](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 이제 `quickViewActivate` 처리기를 구성해야 합니다.
+1. 이제 `quickViewActivate` 핸들러를 구성합니다.
 
-   `quickViewActivate` 핸들러는 뷰어의 빠른 보기를 제어합니다. 처리기에는 Quickview에서 사용하기 위한 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 Quickview에 설정된 SKU 변수에 대한 매핑과 샘플 `loadQuickView` 함수 호출을 제공합니다.
+   `quickViewActivate` 핸들러는 뷰어의 빠른 보기를 제어합니다. 처리기에는 빠른 보기에서 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 빠른 보기에 설정된 SKU 변수에 대한 매핑을 제공합니다. 또한 샘플 `loadQuickView` 함수 호출을 만듭니다.
 
    **변수**
-mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 포함된 일반 변수에 매핑:
+mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 빠른 보기에 포함된 일반 변수에 매핑:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -116,7 +116,7 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
 
    `var sku=inData.sku`
 
-   다음과 같이 Quickview에서 추가 변수를 매핑합니다.
+   다음과 같이 빠른 보기에서 다른 변수를 매핑합니다.
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -124,7 +124,7 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
    ```
 
    **함수**
-호출핸들러는 Quickview가 작동하려면 함수 호출이 필요합니다. 이 함수는 호스트 페이지에서 액세스할 수 있다고 가정합니다. 포함 코드는 샘플 함수 호출을 제공합니다.
+호출핸들러는 빠른 보기를 작동하기 위해 함수 호출을 필요로 합니다. 이 함수는 호스트 페이지에서 액세스할 수 있다고 가정합니다. 포함 코드는 샘플 함수 호출을 제공합니다.
 
    `loadQuickView(sku)`
 
@@ -139,12 +139,12 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
 1. 다음을 수행합니다.
 
    * 포함 코드의 setHandlers 섹션의 주석을 해제합니다.
-   * Quickview에 포함된 추가 변수를 매핑합니다.
+   * 빠른 보기에 포함된 추가 변수를 매핑합니다.
 
-      * 추가 변수를 추가하는 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트하십시오.
+      * 변수를 더 추가할 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트하십시오.
    * 뷰어 바깥의 페이지에 간단한 `loadQuickView`() 함수를 만듭니다.
 
-      예를 들어, 다음 예제에서는 sku 값을 브라우저 콘솔에 씁니다.
+      예를 들어, 다음 예제에서는 SKU 값을 브라우저 콘솔에 씁니다.
 
    ```xml
    function loadQuickView(sku){
@@ -154,12 +154,12 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
 
    * 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다.
 
-      Quickview의 변수가 매핑되고 함수 호출이 제자리에 배치되면 브라우저 콘솔은 제공된 샘플 함수를 사용하여 변수 값을 브라우저 콘솔에 기록합니다.
+      빠른 보기의 변수가 매핑됩니다. 함수 호출이 제자리에 있습니다. 브라우저 콘솔은 변수 값을 브라우저 콘솔에 씁니다. 제공된 샘플 함수를 사용하여 이 작업을 수행합니다.
 
 
 
-1. 이제 함수를 사용하여 Quickview에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 팝업에 `DIV`을 사용합니다.
-1. 다음 방식으로 팝업 `DIV`의 스타일을 지정합니다. 원하는 대로 자신만의 스타일을 추가할 수 있습니다.
+1. 이제 함수를 사용하여 [빠른] 보기에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 팝업에 `DIV`을 사용합니다.
+1. 다음 방식으로 팝업 `DIV`의 스타일을 지정합니다. 원하는 대로 추가 스타일을 추가합니다.
 
    ```xml
    <style type="text/css">
@@ -173,7 +173,7 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
 
 1. HTML 페이지의 본문에 팝업 `DIV`을 배치합니다.
 
-   요소 중 하나가 사용자가 빠른 보기를 호출할 때 sku 값으로 업데이트된 ID로 설정됩니다. 이 예에는 팝업이 표시된 후 다시 숨길 수 있는 간단한 단추도 포함되어 있습니다.
+   요소 중 하나가 사용자가 빠른 보기를 호출할 때 SKU 값으로 업데이트되는 ID로 설정됩니다. 이 예에는 팝업이 표시된 후 다시 숨길 수 있는 간단한 단추도 포함되어 있습니다.
 
    ```xml
    <div id="quickview_div" >
@@ -184,7 +184,7 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
    </div>
    ```
 
-1. 팝업에서 sku 값을 업데이트하는 함수를 추가합니다.5단계에서 만든 간단한 함수를 교체하여 팝업을 표시합니다. 를 다음과 같이 설정합니다.
+1. 팝업 창에서 SKU 값을 업데이트하려면 함수를 추가합니다. 5단계에서 만든 간단한 함수를 다음과 같이 교체하여 팝업 창을 표시합니다.
 
    ```xml
    <script type="text/javascript">
@@ -195,14 +195,14 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
    </script>
    ```
 
-1. 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다. 사용자가 Quickview를 호출할 때 뷰어에 팝업 `DIV`이 표시됩니다.
-1. **전체 화면 모드에서 사용자 정의 팝업을 표시하는 방법**
+1. 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다. 사용자가 [빠른 보기]를 호출할 때 뷰어에 팝업 `DIV`이 표시됩니다.
+1. **전체 화면 모드에서 사용자 정의 팝업 창을 표시하는 방법**
 
    대화형 비디오 뷰어와 같은 일부 뷰어는 전체 화면 모드로 표시됩니다. 그러나 이전 단계에 설명된 대로 팝업을 사용하면 전체 화면 모드에서 뷰어 뒤에 표시됩니다.
 
-   팝업을 표준 모드와 전체 화면 모드 모두에서 표시하려면 해당 팝업을 뷰어 컨테이너에 첨부합니다. 이를 수행하려면 두 번째 핸들러 메서드 `initComplete`를 사용할 수 있습니다.
+   팝업 창을 표준 및 전체 화면 모드로 표시하려면 팝업 창을 뷰어 컨테이너에 연결합니다. 이 경우 두 번째 처리기 메서드 `initComplete`을 사용합니다.
 
-   뷰어가 초기화된 후 `initComplete` 핸더가 호출됩니다.
+   뷰어가 초기화되면 `initComplete` 핸들러가 호출됩니다.
 
    ```xml
    "initComplete":function() { code block }
@@ -225,14 +225,14 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
    }
    ```
 
-   위의 코드에서 다음을 수행했습니다.
+   위의 코드에서는 다음을 수행합니다.
 
-   * 사용자 지정 팝업을 확인했습니다.
+   * 사용자 정의 팝업 창을 식별했습니다.
    * DOM에서 제거했습니다.
    * 뷰어 컨테이너를 확인했습니다.
    * 뷰어 컨테이너에 팝업을 첨부했습니다.
 
-1. 이제 전체 setHandlers 코드는 다음과 유사해야 합니다(대화형 비디오 뷰어가 사용됨).
+1. 전체 setHandlers 코드는 다음과 유사합니다(대화형 비디오 뷰어가 사용됨).
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -260,5 +260,5 @@ mappingMap 변수를 사용하여 웹 페이지에서 SKU 값 및 Quickview에 �
 
    `s7interactiveimageviewer.init()`
 
-   뷰어를 호스트 페이지에 포함시킨 후 뷰어 인스턴스가 생성되었고 뷰어가 호출되기 전에 `init()`을(를) 사용하여 핸들러가 로드되었는지 확인합니다.
+   뷰어를 호스트 페이지에 포함시킨 후 뷰어 인스턴스가 만들어졌는지 확인합니다. 또한 `init()`을(를) 사용하여 뷰어를 호출하기 전에 핸들러를 로드해야 합니다.
 
