@@ -2,7 +2,7 @@
 title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 헤드리스 컨텐츠 전달을 위한 AEM GraphQL API를 사용하여 Cloud Service으로 사용하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
+source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 1%
@@ -60,7 +60,7 @@ GraphQL API에 대한 자세한 내용은 다음 섹션(다른 많은 리소스 
 
    * [안내선](https://www.graphql.com/guides/)
 
-   * [자습서](https://www.graphql.com/tutorials/)
+   * [튜토리얼](https://www.graphql.com/tutorials/)
 
    * [사례 연구](https://www.graphql.com/case-studies/)
 
@@ -268,14 +268,14 @@ GraphQL 사양에서는 특정 인스턴스에서 데이터를 심문하기 위�
 
    ![GraphQL에 사용할 ](assets/cfm-graphqlapi-01.png "GraphQLContent 조각 모델과 함께 사용할 컨텐츠 조각 모델")
 
-1. 해당 GraphQL 스키마(GraphiQL 자동 문서에서 출력):
+1. 해당 GraphQL 스키마(GraphiQL 자동 설명서에서 출력):
    ![컨텐츠 조각 모델을 기반으로 하는 GraphQL ](assets/cfm-graphqlapi-02.png "스키마 컨텐츠 조각 모델 기반 QL 스키마")
 
    생성된 유형 `ArticleModel`에 여러 개의 [필드](#fields)가 포함되어 있음을 보여줍니다.
 
    * 이 중 3개는 사용자가 제어했습니다.`author`, `main` 및 `referencearticle`.
 
-   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 컨텐츠 조각에 대한 정보를 제공하는 유용한 방법을 나타냅니다.이 예에서 `_path`, `_metadata`, `_variations`입니다. 이러한 [도우미 필드](#helper-fields)는 사용자가 정의한 항목과 자동 생성된 항목을 구별하기 위해 선행 `_`으로 표시됩니다.
+   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 컨텐츠 조각에 대한 정보를 제공하는 유용한 방법을 나타냅니다.이 예에서 `_path`, `_metadata`, `_variations`입니다. 이러한 [도우미 필드](#helper-fields)는 사용자가 정의한 항목과 자동 생성된 항목을 구별하기 위해 이전 `_`으로 표시됩니다.
 
 1. 사용자가 아티클 모델을 기반으로 컨텐츠 조각을 만든 후 GraphQL을 통해 질문할 수 있습니다. 예를 들어 [샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)(GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)에 사용할 [샘플 컨텐츠 조각 구조 기준)을 참조하십시오.
 
