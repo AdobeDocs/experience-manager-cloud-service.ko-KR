@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 translation-type: tm+mt
-source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
+source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '634'
 ht-degree: 5%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # AEM as a Cloud Service에서 CDN {#cdn}
 
-CLOUD SERVICE으로 AEM은 내장된 CDN과 함께 제공됩니다. 이 기능은 브라우저 근처 가장자리에 있는 CDN 노드에서 캐시 가능한 컨텐츠를 전달하여 지연을 줄이는 데 주된 목적이 있습니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
+Cloud Service으로 AEM은 내장된 CDN과 함께 제공됩니다. 이 기능은 브라우저 근처 가장자리에 있는 CDN 노드에서 캐시 가능한 컨텐츠를 전달하여 지연을 줄이는 데 주된 목적이 있습니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
 
 AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만족합니다. 게시 티어의 경우, 고객은 선택적으로 관리해야 하는 자체 CDN에서 해당 CDN을 가리킬 수 있습니다. 포기하기 어려운 기존 CDN 벤더와의 통합을 비롯하여, 이에 제한되지 않고, 특정 사전 요구 사항을 충족하는 것을 기준으로, 케이스별로 허용됩니다.
 
@@ -48,7 +48,7 @@ AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만�
 1. 도메인 이름으로 `X-Forwarded-Host` 헤더를 설정합니다.
 1. 호스트 헤더를 AEM CDN의 수신인 원본 도메인으로 설정합니다. 값은 Adobe에서 와야 합니다.
 1. SNI 헤더를 원본으로 보냅니다. 호스트 헤더와 마찬가지로 sni 헤더는 원본 도메인이어야 합니다.
-1. 트래픽을 AEM 서버로 올바르게 라우팅하는 데 필요한 `X-Edge-Key`을 설정합니다. 값은 Adobe에서 와야 합니다.
+1. 트래픽을 AEM 서버로 올바르게 라우팅하는 데 필요한 `X-Edge-Key` 또는 `X-AEM-Edge-Key`(CDN이 X-Edge-*를 제거하는 경우)을 설정합니다. 값은 Adobe에서 와야 합니다. Adobe CDN의 수신(`X-Edge-Key`이(가) 없을 때 차단됨)에 직접 액세스하려면 Adobe에 알려주십시오.
 
 라이브 트래픽을 수락하기 전에 엔드 투 엔드 트래픽 라우팅이 올바르게 작동하는지 Adobe 고객 지원으로 확인해야 합니다.
 
