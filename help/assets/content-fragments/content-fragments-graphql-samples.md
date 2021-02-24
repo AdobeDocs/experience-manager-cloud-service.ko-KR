@@ -2,9 +2,9 @@
 title: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 description: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1707'
 ht-degree: 5%
 
 ---
@@ -49,7 +49,7 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
 * 컨텐츠 조각 모델 내의 필드에 해당하는 필드 이름을 쿼리할 수 있습니다
    * [샘플 쿼리 - 회사의 CEO 및 직원의 전체 세부 정보](#sample-full-details-company-ceos-employees)를 참조하십시오.
 
-* 모델의 필드 외에도 몇 가지 시스템에서 생성된 필드(밑줄 우선)가 있습니다.
+* 모델의 필드 외에도 몇 가지 시스템 생성 필드가 있습니다(앞에 밑줄 표시).
 
    * 컨텐츠의 경우:
 
@@ -59,7 +59,7 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
          * [메타데이터에 대한 샘플 쿼리 - 제목이 GB](#sample-metadata-awards-gb)인 시상식에 대한 메타데이터 목록을 참조하십시오.
       * `_model` :컨텐츠 조각 모델 쿼리 허용(경로 및 제목)
          * 모델](#sample-wknd-content-fragment-model-from-model)의 컨텐츠 조각 모델에 대한 [샘플 쿼리를 참조하십시오.
-      * `_path` :저장소 내 컨텐츠 관리에 대한 경로
+      * `_path` :저장소 내 컨텐츠 조각 경로
          * [샘플 쿼리 - 단일 특정 도시 조각](#sample-single-specific-city-fragment) 참조
       * `_reference` :참조를 표시합니다.리치 텍스트 편집기에서 인라인 참조 포함
          * 프리페치된 참조](#sample-wknd-multiple-fragments-prefetched-references)가 있는 여러 컨텐츠 조각에 대한 샘플 쿼리를 참조하십시오.[
