@@ -2,9 +2,9 @@
 title: Dynamic Media을 통해 CDN 캐시 무효화
 description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1305'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 Dynamic Media 에셋은 고객에게 신속하게 전달하기 위해 CDN(Content Delivery Network)에 의해 캐시됩니다. 그러나 이러한 자산을 업데이트할 때 해당 변경 사항이 웹 사이트에서 즉시 적용되도록 할 수 있습니다. CDN 캐시를 지우거나 무효화하면 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다. TTL(Time To Live) 값(기본값은 10시간)을 사용하여 캐시가 만료될 때까지 기다리는 대신 Dynamic Media 사용자 인터페이스에서 몇 분 내에 캐시가 만료되도록 요청을 보낼 수 있습니다.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->이 기능을 사용하려면 AEM Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다.다른 모든 사용자 지정 CDN은 지원되지 않습니다.<!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)의 [캐싱 개요를 참조하십시오.
 
@@ -52,7 +52,7 @@ Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching
 
    >[!NOTE]
    >
-   >CDN ****&#x200B;및&#x200B;**&#x200B;템플릿&#x200B;**[!UICONTROL 을 기준으로 무효화 옵션을 선택하지 않으면 선택한 자산의 기본 URL이 무효화되도록 만들어집니다.]** 이미지만 이 옵션 배열을 사용해야 합니다.
+   >CDN ]***및***[!UICONTROL &#x200B;템플릿&#x200B;]**을 기준으로 무효화 옵션을 선택하지 않으면 선택한 자산의 기본 URL이 무효화되도록 만들어집니다.**[!UICONTROL  이미지만 이 옵션 배열을 사용해야 합니다.
 
 
    | 옵션 | 설명 |
