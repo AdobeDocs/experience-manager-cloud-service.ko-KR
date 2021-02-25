@@ -2,9 +2,9 @@
 title: 콘텐츠의 HTTP2 전달 FAQ
 description: HTTP2 컨텐츠 전달에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 1%
 # 콘텐츠의 HTTP2 전달 FAQ{#http-delivery-of-content-faq}
 
 Adobe은 HTTP/2 컨텐츠 전달 가용성을 발표하게 되어 매우 기쁩니다. HTTP/2를 사용하는 경우 전반적인 성능 증가가 경험됩니다.
+
+>[!NOTE]
+>
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 ## HTTP/2 소개{#what-is-http}
 
@@ -40,7 +44,7 @@ Adobe 자체 테스트 결과:
 HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 * 리치 미디어 요청을 위해 안전한 HTTPS를 사용합니다.
-* Dynamic Media Classic 라이선스의 일부로 Adobe 번들 CDN(컨텐츠 전달 네트워크)을 사용합니다.
+* Dynamic Media Classic 라이선스의 일부로 Adobe 번들 CDN(Content Delivery Network)을 사용합니다.
 * 일반 Dynamic Media 도메인(즉, `s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`)을 사용합니다.
 
    도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 계정에 로그인합니다.
