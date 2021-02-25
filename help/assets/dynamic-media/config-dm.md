@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service을 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
-source-wordcount: '3893'
+source-wordcount: '3883'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,6 @@ ht-degree: 1%
 >* [캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [핫링크 보호](/help/assets/dynamic-media/hotlink-protection.md)
 >* [컨텐츠의 HTTP/2 전달](/help/assets/dynamic-media/http2faq.md)
->* [Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch 통합](/help/assets/dynamic-media/launch.md)
 >* CDN 수준에서 URL 리디렉션
 >* Akamai ChinaCDN(중국에서 최적의 전달을 위해)
 
