@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service을 구성하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3893'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,26 @@ ht-degree: 1%
 
 다음 아키텍처 다이어그램에서는 Dynamic Media 작동 방식을 설명합니다.
 
-새로운 아키텍처에서는 AEM이 기본 소스 에셋을 담당하고 에셋 처리 및 게시를 위해 Dynamic Media과 동기화합니다.
+새로운 아키텍처에서는 Experience Manager이 기본 소스 에셋을 담당하고 에셋 처리 및 게시를 위해 Dynamic Media과 동기화합니다.
 
 1. 기본 소스 에셋이 AEM에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 에셋 처리 및 변환 생성을 처리합니다.
 1. 변환이 생성되면 AEM은 안전하게 원격 Dynamic Media 변환에 액세스하고 미리 볼 수 있습니다(이진 파일은 AEM 인스턴스로 다시 전송되지 않음).
 1. 컨텐츠를 게시 및 승인할 준비가 되면, Dynamic Media 서비스가 컨텐츠를 전달 서버로 푸시하고 CDN의 컨텐츠를 캐시하도록 트리거합니다.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
+
+>[!NOTE]
+>
+>다음 기능 목록을 사용하려면 Adobe Experience Manager - Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이러한 기능에서 지원되지 않습니다.
+>
+>* [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
+>* [캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [핫링크 보호](/help/assets/dynamic-media/hotlink-protection.md)
+>* [컨텐츠의 HTTP/2 전달](/help/assets/dynamic-media/http2faq.md)
+>* [Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch 통합](/help/assets/dynamic-media/launch.md)
+>* CDN 수준에서 URL 리디렉션
+>* Akamai ChinaCDN(중국에서 최적의 전달을 위해)
+
 
 <!-- OBSOLETE CONTENT
 
