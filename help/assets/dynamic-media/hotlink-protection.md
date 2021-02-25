@@ -2,10 +2,10 @@
 title: Dynamic Media에서 핫링크 보호 활성화
 description: Dynamic Media에서 핫링크 보호를 활성화하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 7%
+source-wordcount: '191'
+ht-degree: 6%
 
 ---
 
@@ -16,4 +16,8 @@ ht-degree: 7%
 
 [Adobe 고객 ](https://helpx.adobe.com/support.html) 지원 센터는 CDN 수준에서 레퍼러 필터를 구성할 수 있습니다. 이렇게 하면 도메인에 대해 허용되는 웹 사이트 목록의 웹 사이트에만 Dynamic Media 컨텐츠가 제공됩니다.
 
-핫링크 보호를 사용하려면 Adobe 번들로 제공되는 CDN을 사용해야 합니다. 핫링크 보호를 활성화하려면 관리자가 지원 티켓을 만들어 Dynamic Media 계정에 구성 변경을 요청해야 합니다. 핫링크 보호를 활성화하기 위한 추가 비용은 없습니다.
+>[!NOTE]
+>
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
+
+핫 링크 보호를 활성화하려면 관리자가 지원 티켓을 만들어 Dynamic Media 계정에 구성 변경을 요청해야 합니다. 핫 링크 보호 활성화를 위한 추가 비용은 없습니다.
