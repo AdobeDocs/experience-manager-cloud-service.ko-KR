@@ -2,9 +2,9 @@
 title: 스마트 이미징
 description: 스마트 이미징은 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 올바른 이미지를 자동으로 제공하여 향상된 성능과 참여를 유도합니다.
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1856'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ## &quot;스마트 이미징&quot;이란 무엇입니까?{#what-is-smart-imaging}
 
 스마트 이미징 기술은 Adobe Sensei AI 기능을 적용하고 기존의 &quot;이미지 사전 설정&quot;과 연동됩니다. 클라이언트 브라우저 기능을 기반으로 이미지 포맷, 크기 및 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시킬 수 있습니다.
+
+>[!NOTE]
+>
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 스마트 이미징은 또한 Adobe의 최고급 프리미엄 CDN(Content Delivery Network) 서비스와 완벽하게 통합되는 향상된 성능 증대의 이점을 제공합니다. 이 서비스는 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾습니다. 인터넷에서 기본 경로를 단순히 사용하는 것이 아니라 가장 낮은 지연 또는 가장 낮은 패킷 손실률을 보거나 둘 다를 봅니다.
 
