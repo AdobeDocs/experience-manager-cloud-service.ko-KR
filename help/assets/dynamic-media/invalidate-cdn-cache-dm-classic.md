@@ -2,9 +2,9 @@
 title: Dynamic Media Classic을 통해 CDN 캐시 무효화
 description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 # Dynamic Media Classic {#invalidating-your-cdn-cached-content}을(를) 통해 CDN 캐시를 무효화합니다.
 
-Dynamic Media 에셋은 빠른 전달을 위해 CDN에서 캐시됩니다. 그러나 자산을 업데이트할 때 이러한 변경 사항을 즉시 적용할 수 있습니다. CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다.
+Dynamic Media 에셋은 빠른 전달을 위해 CDN(Content Delivery Network)에 의해 캐시됩니다. 그러나 자산을 업데이트할 때 이러한 변경 사항을 즉시 적용할 수 있습니다. CDN 캐시된 컨텐츠를 무효화하면 캐시가 만료될 때까지 대기하지 않고 Dynamic Media에서 제공하는 에셋을 신속하게 업데이트할 수 있습니다.
+
+>[!NOTE]
+>
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 >[!IMPORTANT]
 >
