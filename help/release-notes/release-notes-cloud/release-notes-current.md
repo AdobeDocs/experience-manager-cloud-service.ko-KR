@@ -2,10 +2,10 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
+source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 3%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 3%
 
 ## 릴리스 날짜 {#release-date}
 
-Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜는 2021년 2월 3일입니다.
-다음 릴리스(2021.2.0)은 2021년 2월 25일에 제공됩니다.
+Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜는 2021년 2월 25일입니다.
+다음 릴리스(2021.3.0)은 2021년 3월 25일에 제공됩니다.
 
 ## [!DNL Adobe Experience Manager Sites] Cloud Service  {#sites}
 
@@ -51,19 +51,24 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 ## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Assets] {#assets}
 
-* [!DNL Experience Manager] 는 텍스트 기반 자산에서 키워드 및 엔티티의 식별을 지원하기 위해 스마트 태그 기능을  [!DNL Cloud Service] 확장합니다. 텍스트는 식별되고 인덱싱되며, 아무 구성 없이 검색 환경을 개선하기 위해 메타데이터로 사용할 수 있습니다. [스마트 태그](/help/assets/smart-tags.md)를 참조하십시오.
+## [!DNL Assets] {#what-is-new-assets}의 새로운 기능
 
-* 이제 MXF 파일 형식이 지원됩니다. [지원되는 파일 형식](/help/assets/file-format-support.md#video-formats)을 참조하십시오.
+* 자산은 [!DNL Experience Manager Assets Brand Portal]을(를) 사용하여 소싱할 수 있습니다. 새로운 마케팅 캠페인, 사진 및 프로젝트를 위해 에이전시 사용자의 자산을 소스를 만들 수 있습니다.
 
-## Adobe Experience Manager 상거래를 Cloud Service {#cloud-services-commerce}
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-### 새로운 기능 {#what-is-new-commerce}
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-* 제품 경험 관리:자산 및 경험 조각에 대한 새 &#39;상거래&#39; 속성 탭. 이 탭에서는 제품/카테고리를 자산 및 경험 조각에 연결할 수 있습니다. 이 탭에는 연결된 제품/카테고리에 대한 실시간 데이터와 제품 콘솔에 세부 사항을 보여주는 링크가 표시됩니다.
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-* 최신 CIF 코어 구성 요소 버전 v1.7.0을 포함하는 CIF Venia 참조 사이트 - 2021.02.02. 자세한 내용은 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02)를 참조하십시오.
+Ability to select a root path. select if a minimum number of tags is required. 
 
-* CIF 코어 구성 요소 v1.7.0 릴리스되었습니다. 자세한 내용은 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0)를 참조하십시오.
+Add a Boolean or radio widget type to metadata schema setup. -->
+
+## [!DNL Assets] {#bug-fixes-assets}의 버그 수정
+
+* 이름 지정 충돌을 해결한 후 기존 자산의 새 버전을 만들면 원래 자산의 메타데이터를 덮어씁니다. (CQ-4313594)
+* 긴 주석 텍스트가 있는 에셋을 인쇄하면 공간이 있어도 주석 텍스트가 트림됩니다. (CQ-4314101)
 
 ## Cloud Manager {#cloud-manager}
 
@@ -101,23 +106,6 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 * 경우에 따라 내부 문제로 인해 환경 삭제가 중단될 수 있습니다.
 
 * 일부 파이프라인 오류가 파이프라인 오류로 잘못 보고되었습니다.
-
-## AEM을 Cloud Service 기반 {#aem-as-a-cloud-service-foundation}
-
-### 새로운 기능 {#what-is-new-foundation}
-
-* 서버 간 인증된 API 호출 - 외부 애플리케이션과 AEM 간에 인증된 서버 간 API 호출을 Cloud Service 환경으로 만드는 적절한 액세스 토큰을 생성합니다. [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)를 읽거나 [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)을 참조하여 자세한 내용을 알아보십시오.
-
-### SDK 빌드 분석기 {#sdk-build-analyzers}
-
-Cloud Service SDK Build Analyzer Maven 플러그인으로서 AEM은 누락된 종속성을 포함하여 주요 프로젝트에서 문제를 감지합니다. Cloud Manager를 사용하여 클라우드 환경에 배포하기 전에 개발자는 로컬 개발 중에 문제를 발견할 수 있습니다.
-
-이번 릴리스에 2개의 새로운 분석기가 추가되었습니다.
-
-* 포인터 분석기
-* bundle-nativecode
-
-자세한 내용은 설명서 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)를 참조하십시오.
 
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
