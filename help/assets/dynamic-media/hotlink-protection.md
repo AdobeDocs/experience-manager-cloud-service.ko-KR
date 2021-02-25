@@ -2,7 +2,7 @@
 title: Dynamic Media에서 핫링크 보호 활성화
 description: Dynamic Media에서 핫링크 보호를 활성화하는 방법에 대한 정보입니다.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 5c221505c6a56411b17b52c70ce941258993bfb3
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 6%
@@ -18,6 +18,4 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
-
-핫 링크 보호를 활성화하려면 관리자가 지원 티켓을 만들어 Dynamic Media 계정에 구성 변경을 요청해야 합니다. 핫 링크 보호 활성화를 위한 추가 비용은 없습니다.
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다. 핫 링크 보호를 활성화하려면 관리자가 지원 티켓을 만들어 Dynamic Media 계정에 구성 변경을 요청해야 합니다. 핫 링크 보호 활성화를 위한 추가 비용은 없습니다.
