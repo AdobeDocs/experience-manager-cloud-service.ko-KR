@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service 릴리스 노트
 breadcrumb-title: 릴리스 노트
 user-guide-description: 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다.
 translation-type: tm+mt
-source-git-commit: 137d8f6c432e4d5dea744c96e01782e81bd4cfee
+source-git-commit: fe26fe183c437d6ffe18e1db7fcdb74ad9448982
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '107'
 ht-degree: 100%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 100%
 + [릴리스 정보](/help/release-notes/home.md)
 + 릴리스 노트 {#release-notes}
    + [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + 2021년 {#2021}
+      + [2021.1.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020 {#2020}
       + [2020.12.0 릴리스 노트](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
       + [2020.11.0 릴리스 노트](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
