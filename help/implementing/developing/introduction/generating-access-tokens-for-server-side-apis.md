@@ -2,9 +2,9 @@
 title: 서버측 API에 대한 액세스 토큰 생성
 description: 안전한 JWT 토큰을 생성하여 제3자 서버와 AEM 간의 Cloud Service으로 원활한 커뮤니케이션을 제공하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
+source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -141,4 +141,11 @@ AEM을 Cloud Service 개발자 콘솔로 사용하는 데 필요한 권한에 �
 
 ## 서비스 자격 증명 해지 {#service-credentials-revocation}
 
-JWT 전달자 토큰을 취소해야 하는 경우 고객 지원에 요청을 제출하십시오.
+자격 증명을 취소해야 하는 경우 다음 단계를 사용하여 고객 지원에 요청을 제출해야 합니다.
+
+1. 사용자 인터페이스에서 Adobe Admin Console에 대한 기술 계정 사용자를 비활성화합니다.
+   * 클라우드 관리자에서 **..환경 옆에 있는** 단추. 제품 프로필 페이지가 열립니다.
+   * 이제 **AEM 사용자** 프로필을 클릭하여 사용자 목록을 표시합니다.
+   * **API 자격 증명** 탭을 클릭한 다음 해당 기술 계정 사용자를 찾아 삭제합니다.
+2. 고객 지원에 문의하여 특정 환경에 대한 서비스 자격 증명을 삭제하도록 요청하십시오.
+3. 마지막으로 이 설명서에 설명된 대로 자격 증명을 다시 생성할 수 있습니다. 또한 만들어진 새 기술 계정 사용자에게 적절한 권한이 있는지 확인하십시오.
