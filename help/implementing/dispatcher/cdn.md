@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 translation-type: tm+mt
-source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
+source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 5%
 
 ---
@@ -75,4 +75,4 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 * OC 오세아니아
 * SA 남아메리카
 
-이 정보는 요청의 원본(국가)을 기반으로 다른 URL로 리디렉션하는 등의 사용 경우에 유용할 수 있습니다. 그러나 이러한 특정 사용 사례에서는 리디렉션이 다르므로 캐싱하지 않아야 합니다. 필요한 경우 `Cache-Control: private`을(를) 사용하여 캐싱을 방지할 수 있습니다. [캐싱](/help/implementing/dispatcher/caching.md#html-text)도 참조하십시오.
+이 정보는 요청의 원본(국가)을 기반으로 다른 URL로 리디렉션하는 등의 사용 경우에 유용할 수 있습니다. 지역 정보에 따라 응답을 캐시하려면 Vary 헤더를 사용하십시오. 예를 들어 특정 국가 랜딩 페이지로 리디렉션하는 경우 항상 `Vary: x-aem-client-country`이 포함되어야 합니다. 필요한 경우 `Cache-Control: private`을(를) 사용하여 캐싱을 방지할 수 있습니다. [캐싱](/help/implementing/dispatcher/caching.md#html-text)도 참조하십시오.
