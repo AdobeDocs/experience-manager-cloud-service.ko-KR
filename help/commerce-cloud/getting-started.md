@@ -2,16 +2,16 @@
 title: Cloud Service으로 AEM Commerce 시작하기
 description: 상거래 기반의 AEM 프로젝트를 Cloud 서비스 환경으로 실행 중인 AEM에 배포하는 방법에 대해 학습합니다. Adobe Cloud Manager와 CI/CD 파이프라인의 기능을 사용하여 Venia 참조 스토어를 실행 중인 환경에 구축할 수 있습니다.
 topics: Commerce
-feature: Commerce Integration Framework, Cloud Manager
+feature: Cloud Manager, Commerce Integration Framework
 version: cloud-service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
+source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Service으로 AEM Commerce에 대한 온보딩은 2단계 프로세스입�
 1. AEM Commerce를 Cloud Service이 활성화되고 제공된 CIF Add-On으로 사용
 2. Magento 환경에 Cloud Service으로 AEM Commerce 연결
 
-첫 번째 단계는 Adobe에 의해 행해진다. IMS 조직, Magento 환경의 GraphQL 끝점 URL 등과 같은 정보를 제공해야 합니다. 를 프로비저닝 프로세스의 일부로 사용할 수 있습니다. 가격 및 제공 정보에 대한 자세한 내용은 세일즈 담당자에게 문의해야 합니다.
+첫 번째 온보딩 단계는 Adobe에 의해 행해진다. 가격 및 프로비저닝에 대한 자세한 내용은 해당 세일즈 담당자에게 문의해야 합니다.
 
 CIF Add-On을 제공받으면 기존 Cloud Manager 프로그램에 적용됩니다. Cloud Manager 프로그램이 없는 경우 새로 만들어야 합니다. 자세한 내용은 [프로그램 설정](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)을 참조하십시오.
 
@@ -44,7 +44,7 @@ AEM Commerce를 Magento과 연결하려면 다음 단계를 따르십시오.
 
 1. Cloud Manager 플러그인을 사용하여 Adobe I/O CLI 가져오기
 
-   [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager)과 함께 [Adobe I/O CLI](https://github.com/adobe/aio-cli)를 다운로드하고 설치하고 사용하는 방법에 대한 [Adobe Cloud Manager 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 확인하십시오.
+   [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager)과 함께 [Adobe I/O CLI](https://github.com/adobe/aio-cli)을 다운로드, 설정 및 사용하는 방법에 대한 [Adobe Cloud Manager 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 확인하십시오.
 
 2. Cloud Service 프로그램으로 AEM을 사용하여 CLI 인증
 
