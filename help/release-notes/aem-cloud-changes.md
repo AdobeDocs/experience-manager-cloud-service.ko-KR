@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 96%
+source-wordcount: '832'
+ht-degree: 90%
 
 ---
 
@@ -65,11 +65,10 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 
 ## 게시 리포지토리에 대한 변경이 허용되지 않습니다 {#changes-to-publish-repo}
 
-AEM 클라우드 서비스에서는 게시 리포지토리에 대한 직접 변경을 수행할 수 없습니다. 이전 버전의 온프레미스 AEM 또는 AMS의 AEM에서는 사용자를 생성하고 사용자 프로필을 업데이트하며 노드를 만드는 등의 작업을 위해 게시 리포지토리에서 바로 코드를 변경할 수 있었습니다. 이러한 작업은 이제 불가능하고 다음 방법으로 보완할 수 있습니다.
+게시 계층의 `/home` 폴더 아래의 변경 사항 외에, AEM Cloud Service에서는 게시 리포지토리에 대한 직접 변경 내용을 사용할 수 없습니다. AMS에 있는 온프레미스 AEM 또는 AEM의 이전 버전에서 코드를 직접 게시 저장소로 변경할 수 있습니다. 다음과 같은 방법으로 일부 제한 사항을 완화시킬 수 있습니다.
 
 * 컨텐츠 및 컨텐츠 기반 구성의 경우: 작성 인스턴스에서 변경 작업을 수행한 다음 게시합니다.
 * 코드 및 구성의 경우: GIT 리포지토리에서 변경 작업을 수행한 다음, CI/CD 파이프라인을 실행하여 롤아웃합니다.
-* 양식 제출 또는 프로필 데이터와 같은 사용자 관련 데이터의 경우: Experience Cloud Platform이나 기타 타사 세션 인식 스토어의 통합 프로필 서비스를 사용합니다.
 
 ## 사용자 지정 실행 모드가 허용되지 않습니다 {#custom-runmodes}
 
