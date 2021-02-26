@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1017'
 ht-degree: 4%
 
 ---
@@ -53,22 +53,18 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 ## [!DNL Assets] {#what-is-new-assets}의 새로운 기능
 
-* 자산은 [!DNL Experience Manager Assets Brand Portal]을(를) 사용하여 소싱할 수 있습니다. 새로운 마케팅 캠페인, 사진 및 프로젝트를 위해 에이전시 사용자의 자산을 소스를 만들 수 있습니다.
+* [!DNL Brand Portal]에서 폴더, 컬렉션 등을 다운로드할 때 각 자산에 대해 별도의 폴더를 만들 수 있는 새로운 다운로드 설정이 도입되었습니다. [다운로드 설정](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)을 참조하십시오.
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## [!DNL Assets] {#bug-fixes-assets}의 버그 수정
 
 * 이름 지정 충돌을 해결한 후 기존 자산의 새 버전을 만들면 원래 자산의 메타데이터를 덮어씁니다. (CQ-4313594)
 * 긴 주석 텍스트가 있는 에셋을 인쇄하면 공간이 있어도 주석 텍스트가 트림됩니다. (CQ-4314101)
+* 속성을 업데이트하기 위해 여러 자산을 선택하면 오류가 발생하거나 선택 취소된 자산의 속성이 업데이트되는 경우가 있습니다. (CQ-4316532)
+* [!UICONTROL 자산 관리자 검색 레일]을 열려고 하면 페이지가 비어 있는 상태로 남아 있고 [!UICONTROL 편집] > [!UICONTROL 설정]을 클릭하면 오류가 발생합니다. (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
