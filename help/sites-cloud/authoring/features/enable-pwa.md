@@ -4,9 +4,9 @@ description: 컨텐츠 작성자는 AEM Sites을 사용하여 코딩 대신 간�
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
+source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 >
 이 기능을 사용하기 전에 개발 팀과 이 문제를 논의하여 프로젝트에 활용할 수 있는 최상의 방법을 정의하는 것이 좋습니다.
 
+>[!NOTE]
+>
+>이 문서에 설명된 기능은 AEM의 [2021년 3월 릴리스를 Cloud Service으로 사용할 수 있도록 예정되어 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+
 ## 소개 {#introduction}
 
 [점진적 웹 앱(PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) 을 사용하면 AEM 사이트에 매력적인 앱과 같은 경험을 통해 로컬에 사용자 시스템에 저장하고 오프라인으로 액세스할 수 있습니다. 이동 중에도 인터넷 연결을 끊더라도 사용자가 사이트를 검색할 수 있습니다. PWA은 네트워크가 손실되거나 불안정하더라도 완벽한 경험을 제공합니다.
@@ -36,7 +40,7 @@ ht-degree: 0%
 컨텐츠 작성자는 사이트를 다시 코딩할 필요 없이 사이트의 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)에서 PWA 속성을 추가 탭으로 구성할 수 있습니다.
 
 * 이 구성은 저장 또는 게시할 때 사이트에서 PWA 기능을 활성화하는 [매니페스트 파일](https://developer.mozilla.org/en-US/docs/Web/Manifest) 및 [서비스 작업자](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)를 기록하는 이벤트 핸들러를 트리거합니다.
-* 매니페스트 및 서비스 워커는 사이트에 적용할 수 있는 [컨텍스트 인식 구성](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html)에 저장됩니다. 또한 서비스 워커가 응용 프로그램 루트에서 제공되어 앱 내에서 오프라인 기능을 허용하는 콘텐츠를 프록시할 수 있도록 하도록 하기 위해 슬링 매핑도 유지됩니다.
+* 또한 서비스 워커가 응용 프로그램 루트에서 제공되어 앱 내에서 오프라인 기능을 허용하는 콘텐츠를 프록시할 수 있도록 하도록 하기 위해 슬링 매핑도 유지됩니다.
 
 사용자는 PWA을 통해 로컬 사이트 사본을 볼 수 있으므로 인터넷에 연결하지 않고도 앱과 같은 경험을 할 수 있습니다.
 
@@ -48,22 +52,28 @@ ht-degree: 0%
 
 사이트에 PWA 기능을 사용하려면 프로젝트 환경에 다음과 같은 두 가지 요구 사항이 있습니다.
 
-1. [구성 요소](#adjust-components) 를 조정하여 이 기능 활성화
+1. [핵심 ](#adjust-components) 구성 요소를 사용하여 이 기능 활용
 1. [필요한 ](#adjust-dispatcher) 파일을 표시하도록 디스패처 규칙을 조정합니다.
 
 이러한 단계는 작성자가 개발 팀과 협력해야 하는 기술적 단계입니다. 이러한 단계는 사이트당 한 번만 필요합니다.
 
-### 구성 요소 조정 {#adjust-components}
+### 코어 구성 요소 사용 {#adjust-components}
 
-구성 요소에는 PWA 기능을 지원하는 [매니페스트 파일](https://developer.mozilla.org/en-US/docs/Web/Manifest) 및 [서비스 작업자](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)가 포함되어야 합니다.
+핵심 구성 요소 릴리스 2.15.0 이상 버전은 AEM 사이트의 PWA 기능을 완벽하게 지원합니다. AEMaaCS는 항상 최신 버전의 핵심 구성 요소를 포함하므로 즉시 PWA 기능을 활용할 수 있습니다. AEM AaCS 프로젝트는 자동으로 이 요구 사항을 충족합니다.
 
-이렇게 하려면 개발자는 페이지 구성 요소의 `customheaderlibs.html` 파일에 다음 링크를 추가해야 합니다.
+>[!NOTE]
+>
+>Adobe에서는 추가 구성 요소에서 확장되지 않은 [사용자 지정 구성 요소 또는 구성 요소에 PWA 기능을 사용하는 것이 권장되지 않습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+<!--
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
+
+ To do this, the developer will need to add the following link to the `customheaderlibs.html` file of your page component.
 
 ```xml
 <link rel="manifest" href="/content/<projectName>/manifest.webmanifest" crossorigin="use-credentials"/>
 ```
 
-또한 개발자는 페이지 구성 요소의 `customfooterlibs.html` 파일에 다음 링크를 추가해야 합니다.
+The developer will also need to add the following link to the `customfooterlibs.html` file of your page component.
 
 ```xml
 <script>
@@ -77,10 +87,7 @@ ht-degree: 0%
         }
 </script>
 ```
-
->[!NOTE]
->
->[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 향후 버전은 이러한 기능을 자동으로 포함합니다. 그러나 핵심 구성 요소 대신 사용자 지정 구성 요소를 사용하는 경우에는 이러한 조정이 항상 필요합니다.
+-->
 
 ### 디스패처 {#adjust-dispatcher} 조정
 
@@ -93,9 +100,11 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
->[!NOTE]
->
->[AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en#developing)의 향후 버전에는 이 구성이 포함됩니다.
+프로젝트에 따라 다시 작성 규칙에 서로 다른 유형의 확장을 포함할 수 있습니다. `webmanifest` 확장은 요청을 숨기거나 `/content/<projectName>`로 리디렉션하는 규칙을 소개할 때 다시 작성 조건에 포함하는 데 유용합니다.
+
+```text
+RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
+```
 
 ## 사이트 {#enabling-pwa-for-your-site}에 대한 PWA 활성화
 
@@ -133,8 +142,8 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 이제 [이(가) PWA을 지원하도록 사이트를 구성했으므로](#enabling-pwa-for-your-site)을(를) 직접 경험할 수 있습니다.
 
 1. [지원되는 브라우저에서 사이트에 액세스합니다.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
-1. 브라우저의 주소 표시줄에 사이트가 로컬 앱으로 설치될 수 있음을 나타내는 `+` 아이콘이 표시됩니다.
-   * 브라우저에 따라 로컬 앱으로 설치할 수 있음을 나타내는 알림(배너 또는 대화 상자 등)을 표시할 수도 있습니다.
+1. 브라우저의 주소 표시줄에 사이트를 로컬 앱으로 설치할 수 있음을 나타내는 새 아이콘이 표시됩니다.
+   * 브라우저에 따라 아이콘이 달라질 수 있으며, 브라우저에는 로컬 앱으로 설치할 수 있다는 알림(배너 또는 대화 상자 등)이 표시될 수도 있습니다.
 1. 앱을 설치합니다.
 1. 앱이 장치의 홈 화면에 설치됩니다.
 1. 앱을 열고 페이지를 탐색한 다음 오프라인에서 사용할 수 있는지 확인합니다.
@@ -187,17 +196,40 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
       * 이 설정을 사용하면 앱이 먼저 네트워크를 통해 최신 콘텐츠를 검색하고, 사용하지 못할 경우 로컬 캐시로 돌아갑니다.
    * **드물게** - 참조 페이지와 같이 거의 정적인 사이트에 해당됩니다.
       * 이 설정을 사용하면 앱은 먼저 캐시에서 콘텐츠를 검색하고, 사용할 수 없는 경우 다시 네트워크로 가져와 검색합니다.
-* **파일 사전 캐싱**  - AEM에서 호스팅되는 파일은 서비스 워커가 설치되고 사용되기 전에 로컬 브라우저 캐시에 저장됩니다. 이렇게 하면 오프라인에서도 웹 앱이 모든 기능을 사용할 수 있습니다.
+* **파일 사전 캐싱**  - AEM에서 호스팅되는 파일은 서비스 워커가 설치되고 사용되기 전에 로컬 브라우저 캐시에 저장됩니다. 이렇게 하면 오프라인에서는 웹 앱이 완전히 기능할 수 있습니다.
 * **경로 포함**  - 정의된 경로에 대한 네트워크 요청은 차단되고 캐시된 컨텐츠는 구성된  **캐싱 전략 및 컨텐츠 새로 고침 빈도에 따라 반환됩니다**.
-* **캐시 제외**  - 이러한 파일은 파일  **사전** 캐시 및  **경로** 포함에 있는 설정과 관계없이 캐시되지 않습니다.
+* **캐시 제외**  - 이러한 파일은 파일  **사전** 캐시 및  **경로** 포함에 있는 설정에 관계없이 캐시되지 않습니다.
 
 >[!TIP]
 >
 >개발자 팀은 오프라인 구성을 설정하는 방법에 대한 중요한 의견을 가지고 있을 수 있습니다.
 
-## 제한 사항 {#limitations}
+## 제한 사항 및 Recommendations {#limitations-recommendations}
 
 일부 PWA 기능은 AEM Sites에 사용할 수 없습니다. 몇 가지 주목할 만한 제한 사항입니다.
 
 * 사용자는 페이지를 오프라인으로 캐시하기 전에 최소한 한 번 페이지를 검색해야 합니다.
 * 사용자가 앱을 사용하지 않는 경우 페이지가 자동으로 동기화되거나 업데이트되지 않습니다.
+
+또한 PWA을 구현할 때 Adobe에서 다음 권장 사항을 만듭니다.
+
+### 사전 캐시할 리소스 수를 최소화합니다.{#minimize-precache}
+
+Adobe은 페이지 수를 사전 캐시로 제한할 것을 권장합니다.
+
+* 라이브러리를 포함하여 사전 캐싱 시 관리할 항목 수를 줄입니다.
+* 이미지 변형 수를 사전 캐시로 제한합니다.
+
+### 프로젝트 스크립트 및 스타일시트가 안정화된 후 PWA을 활성화합니다.{#pwa-stabilized}
+
+클라이언트 라이브러리는 다음 패턴 `lc-<checksumHash>-lc`을 준수하는 캐시 선택기가 추가된 상태로 제공됩니다. 라이브러리를 구성하는 파일(및 종속성) 중 하나가 변경될 때마다 이 선택기가 변경됩니다. 서비스 근로자가 미리 캐싱할 클라이언트-라이브러리를 나열하고 새 버전을 참조하려는 경우 수동으로 항목을 검색하고 업데이트합니다. 따라서 프로젝트 스크립트 및 스타일 시트가 안정화된 후 사이트를 PWA으로 구성하는 것이 좋습니다.
+
+### 이미지 변형 수를 최소화할 수 있습니다.{#minimize-variations}
+
+AEM 코어 구성 요소의 이미지 구성 요소는 가져올 최상의 변환의 프런트 엔드를 결정합니다. 이 메커니즘에는 해당 리소스의 마지막 수정 시간에 해당하는 타임스탬프도 포함됩니다. 이 메커니즘은 PWA 사전 캐시 구성을 복잡하게 합니다.
+
+사전 캐시를 구성할 때 사용자는 가져올 수 있는 모든 경로 변형을 나열해야 합니다. 이러한 변형은 품질과 폭과 같은 매개 변수로 구성됩니다. 이러한 변형의 수를 최대 3개(소형, 중간, 큼)로 줄이는 것이 좋습니다. 이 작업은 [이미지 구성 요소의 콘텐츠 정책 대화 상자를 통해 수행할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)
+
+신중하게 구성하지 않으면 메모리 및 네트워크 사용이 PWA 성능에 심각한 영향을 줄 수 있습니다. 이미지를 50개, 이미지당 3개 폭을 미리 캐시하려는 경우 사이트를 유지 관리하는 사용자는 페이지 속성의 PWA 사전 캐시 섹션에 최대 150개 항목 목록을 유지 관리해야 합니다.
+
+또한 Adobe에서는 이미지 작업이 안정화된 후 사이트를 PWA으로 구성할 것을 권장합니다.
