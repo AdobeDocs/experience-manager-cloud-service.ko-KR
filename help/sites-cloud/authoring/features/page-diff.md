@@ -2,7 +2,7 @@
 title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 서로 다른 점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
@@ -29,9 +29,9 @@ ht-degree: 97%
 이러한 병렬 비교에서 비교할 수 있는 내용은 다음과 같습니다.
 
 * [버전](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - 페이지의 이전 버전과 현재 상태
-* Live Copy - Live Copy와 블루프린트 <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy와 블루프린트
 * [론치](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - 론치와 소스
-* 언어 사본 - (재)번역 전후 페이지 <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)언어 사본 - (재)번역 전후 페이지
 
 해당 컨텍스트 내에서 비교를 시작하는 방법에 대한 각 주제를 참조하십시오.
 
