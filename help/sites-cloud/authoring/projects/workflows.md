@@ -2,7 +2,7 @@
 title: 프로젝트 워크플로우 작업
 description: 다양한 프로젝트 워크플로우를 즉시 사용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 71%
@@ -35,10 +35,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->&amp;ast;이러한 워크플로우는 프로젝트의 **워크플로우** 타일에서 시작하지 않습니다. 자산을 위한 언어 사본 만들기를 참조하십시오.
-<!--
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
--->
+>&amp;ast;이러한 워크플로우는 프로젝트의 **워크플로우** 타일에서 시작하지 않습니다. [자산을 위한 언어 사본 만들기](/help/sites-cloud/administering/translation/managing-projects.md)를 참조하십시오.
 
 워크플로우 시작 및 완료 단계는 선택하는 워크플로우와 상관없이 동일합니다. 단계만 변경됩니다.
 
@@ -48,7 +45,7 @@ AEM에서 워크플로우를 사용한 작업에 대한 자세한 내용은 다�
 
 * [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)
 * [페이지에 워크플로우 적용](/help/sites-cloud/authoring/workflows/applying.md)
-* 워크플로우 구성 <!--* [Configuring workflows](/help/sites-administering/workflows.md)-->
+* [워크플로우 구성](/help/sites-cloud/administering/workflows-administering.md)
 
 이 섹션에서는 [프로젝트]에 사용 가능한 워크플로우에 대해 설명합니다.
 
