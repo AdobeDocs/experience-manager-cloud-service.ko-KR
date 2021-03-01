@@ -6,14 +6,14 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: 전자 상거래 통합 프레임워크
 kt: 3046
 thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 1%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
@@ -59,4 +59,4 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 * [Magento 웹 사이트, 스토어 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF 핵심 구성 요소 - 멀티 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [컨텐츠 재활용:다중 사이트 관리자 및 Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [컨텐츠 재활용:다중 사이트 관리자 및 Live Copy](/help/sites-cloud/administering/msm/overview.md)
