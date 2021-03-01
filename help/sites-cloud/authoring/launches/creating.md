@@ -2,7 +2,7 @@
 title: 론치 만들기
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 76%
@@ -16,7 +16,7 @@ ht-degree: 76%
 
 * 제목은 작성자가 액세스하여 작업할 수 있는 [참조](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 레일에 나타납니다.
 * 소스 페이지의 하위 페이지는 기본적으로 론치에 포함됩니다. 원할 경우 소스 페이지만 사용할 수 있습니다.
-* 기본적으로, Live Copy는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 복사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* 기본적으로, [Live Copy](/help/sites-cloud/administering/msm/overview.md)는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 복사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다.
 
 필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **시작 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합으로만 작동합니다([론치 구성 편집](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되도록 하려면 둘 다 설정해야 합니다.
 
@@ -84,7 +84,7 @@ ht-degree: 76%
    * **론치 제목**: 론치의 이름입니다. 작성자에게 의미가 있는 이름이어야 합니다.
    * **기존 컨텐츠 사용**: 원래 컨텐츠가 론치를 만드는 데 사용됩니다.
    * **새 템플릿을 사용하여 페이지 바꾸기**: 자세한 내용은 [새 템플릿을 사용하여 론치 만들기](#create-launch-with-new-template)를 참조하십시오.
-   * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면, 소스 페이지가 변경될 때 론치 페이지 내용이 자동으로 업데이트됩니다. 이 옵션은 론치를 Live Copy로 만들어 이를 수행합니다. 기본적으로 이 옵션은 선택되어 있습니다. <!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+   * **소스 페이지의 라이브 데이터 상속**: 이 옵션을 선택하면, 소스 페이지가 변경될 때 론치 페이지 내용이 자동으로 업데이트됩니다. 이 옵션은 [Live Copy](/help/sites-cloud/administering/msm/overview.md)를 시작함으로써 이러한 작업을 수행합니다. 기본적으로 이 옵션은 선택되어 있습니다.-->
    * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름) [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)를 참조하십시오.
 
    ![속성 시작](/help/sites-cloud/authoring/assets/launches-properties.png)
