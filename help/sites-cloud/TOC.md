@@ -5,10 +5,10 @@ user-guide-title: AEM as a Cloud Service에서 컨텐츠 작성
 breadcrumb-title: 작성 안내서
 user-guide-description: Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다.
 translation-type: tm+mt
-source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
+source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 90%
+source-wordcount: '307'
+ht-degree: 73%
 
 ---
 
@@ -81,6 +81,25 @@ ht-degree: 90%
       + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 관리 {#administering}
    + [워크플로우 관리](administering/workflows-administering.md)
+   + 내용 다시 사용 {#reusing-content}
+      + [MSM 및 번역](administering/msm-and-translation.md)
+      + 다중 사이트 관리자 {#msm}
+         + [MSM 및 Live Copy 개요](administering/msm/overview.md)
+         + [Live Copy 동기화 구성](administering/msm/live-copy-sync-config.md)
+         + [Live Copy 만들기 및 동기화](administering/msm/creating-live-copies.md)
+         + [Live Copy 개요 콘솔](administering/msm/live-copy-overview.md)
+         + [롤아웃 충돌](administering/msm/rollout-conflicts.md)
+         + [MSM 우수 사례](administering/msm/best-practices.md)
+         + [문제 해결 및 FAQ](administering/msm/troubleshooting.md)
+      + 번역 {#translation}
+         + [다국어 사이트의 컨텐츠 번역](administering/translation/overview.md)
+         + [번역 컨텐츠 준비](administering/translation/preparation.md)
+         + [번역 프로젝트 관리](administering/translation/managing-projects.md)
+         + [언어 복사 마법사](administering/translation/wizard.md)
+         + [변환할 컨텐츠 식별](administering/translation/rules.md)
+         + [번역 통합 프레임워크 구성](administering/translation/integration-framework.md)
+         + [Microsoft Translator에 연결](administering/translation/connect-ms-translator.md)
+         + [번역 우수 사례](administering/translation/best-practices.md)
 + AEM as a Cloud Service와 통합 {#integrations}
    + [Adobe Analytics와 통합](integrating/integrating-adobe-analytics.md)
    + [Adobe Target과 통합](integrating/integrating-adobe-target.md)
