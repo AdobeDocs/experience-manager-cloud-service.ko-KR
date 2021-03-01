@@ -2,10 +2,10 @@
 title: 다중 사이트에서 타깃팅된 컨텐츠 작업
 description: 사이트 간 활동, 경험 및 오퍼와 같은 타깃팅된 컨텐츠를 관리해야 하는 경우 타깃팅된 컨텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2915'
-ht-degree: 86%
+source-wordcount: '2900'
+ht-degree: 88%
 
 ---
 
@@ -16,10 +16,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->타깃팅된 컨텐츠에 대한 다중 사이트 작업 지원은 고급 기능입니다. 이 기능을 사용하려면 다중 사이트 관리자와 AEM에 통합된 Adobe Target에 익숙해야 합니다.
-<!--
->Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
--->
+>타깃팅된 컨텐츠에 대한 다중 사이트 작업 지원은 고급 기능입니다. 이 기능을 사용하려면 [다중 사이트 관리자](/help/sites-cloud/administering/msm/overview.md)와 AEM에 [통합된 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)에 익숙해야 합니다.
 
 이 문서에서는 다음 사항에 대해 설명합니다.
 
@@ -110,7 +107,7 @@ ht-degree: 86%
 
 ![버전 변경](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-마케터는 유럽 지역에 이러한 변경 사항을 롤아웃하려 할 것이고 **페이지 롤아웃**&#x200B;을 탭하거나 클릭하여 Live Copy를 롤아웃합니다. 탭을 새로 고치면 유럽 영역이 마스터 영역에서 상속을 받으므로(롤아웃 후) 영국 사이트에 새 이미지가 포함됩니다.<!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+마케터는 유럽 지역에 이러한 변경 사항을 롤아웃하려 할 것이고 **페이지 롤아웃**&#x200B;을 탭하거나 클릭하여 [Live Copy를 롤아웃](/help/sites-cloud/administering/msm/creating-live-copies.md)합니다. 탭을 새로 고치면 유럽 영역이 마스터 영역에서 상속을 받으므로(롤아웃 후) 영국 사이트에 새 이미지가 사용됩니다.
 
 ![Live Copy 롤아웃](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -189,9 +186,9 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 1. **롤아웃 구성** 드롭다운 메뉴에서 적절한 구성을 선택합니다.
 
-   각 선택 사항에 대해서는 [설치된 롤아웃 구성](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations)을 참조하십시오.
+   각 선택 사항에 대해서는 [설치된 롤아웃 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations)을 참조하십시오.
 
-   Live Copy에 대한 자세한 내용은 [Live Copy 만들기 및 동기화](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html)를 참조하십시오.
+   Live Copy에 대한 자세한 내용은 [Live Copy 만들기 및 동기화](/help/sites-cloud/administering/msm/creating-live-copies.md)를 참조하십시오.
 
    >[!NOTE]
    >
