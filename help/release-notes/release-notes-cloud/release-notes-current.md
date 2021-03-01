@@ -2,17 +2,24 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
+source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 4%
+source-wordcount: '1064'
+ht-degree: 3%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트 {#release-notes}
+# [!DNL Adobe Experience Manager] Cloud Service {#release-notes}의 현재 릴리스 노트
 
-다음 섹션에서는 Cloud Service으로 [!DNL Experience Manager]에 대한 일반적인 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 Cloud Service의 현재(최신) 버전 [!DNL Experience Manager]에 대한 일반적인 릴리스 노트에 대해 간략하게 설명합니다.
+
+>[!NOTE]
+>여기에서 이전 버전의 릴리스 노트를 탐색할 수 있습니다.예를 들어, 2020, 2021 등에 있는 경우
+
+>[!NOTE]
+>
+>릴리스와 직접 관련이 없는 설명서 업데이트에 대한 자세한 내용은 [최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
