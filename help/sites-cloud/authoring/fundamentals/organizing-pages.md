@@ -2,7 +2,7 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 99%
@@ -130,10 +130,7 @@ ht-degree: 99%
 >
 >언어 루트가 아닌 경우 ISO-639-1에 따라 페이지 이름으로 정의된 두 문자 코드를 사용할 수 없습니다.
 >
->자세한 내용은 컨텐츠 번역 준비를 참조하십시오.
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>자세한 내용은 [컨텐츠 번역 준비](/help/sites-cloud/administering/translation/preparation.md)를 참조하십시오.
 
 ### 템플릿 {#templates}
 
