@@ -1,24 +1,25 @@
 ---
 product: adobe experience manager
+description: AEM AaCS 설명서 페이지에 필요한 메타데이터입니다.
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.ko-KR
 index: y
-type: Documentation
+type: 설명서
 solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: 시작하기
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
-tutorials-title: 튜토리얼
+tutorials-title: 자습서
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 10%
+source-wordcount: '120'
+ht-degree: 19%
 
 ---
 
 
-# 내부용 메타데이터
+# 내부 사용을 위한 메타데이터
 
 GitHub 저작 시스템의 메타데이터는 계층적이며 다음과 같은 선례 수준 증가를 정의합니다.
 
@@ -51,4 +52,4 @@ ToCs
 
 * `title`
 * `description`
-* `contentOwner` (핵심 자산 컨텐츠에만 해당 `/help/assets`)
+* `contentOwner` (아래에서 핵심 자산 컨텐츠에만 해당 `/help/assets`)
