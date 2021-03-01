@@ -2,7 +2,7 @@
 title: 페이지 컨텐츠 편집
 description: 페이지를 생성하면 컨텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -367,7 +367,7 @@ ht-degree: 100%
 
 상속은 컨텐츠를 한 구성 요소에서 다른 구성 요소로 자동으로 푸시할 수 있는 메커니즘입니다. 상속된 구성 요소는 다음을 포함하여 다양한 시나리오의 제품일 수 있습니다.
 
-* 다중 사이트 관리 <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [다중 사이트 관리](/help/sites-cloud/administering/msm/overview.md)
 * [Launch](/help/sites-cloud/authoring/launches/overview.md)(live copy을 기반으로 할 때).
 
 상속을 취소(그런 다음 다시 활성화)할 수 있습니다. 구성 요소에 따라 구성 요소가 Live Copy 또는 론치(Live Copy 기반)의 일부인 페이지에 있는 경우 구성 요소 도구 모음에서 상속을 사용할 수 있습니다.
