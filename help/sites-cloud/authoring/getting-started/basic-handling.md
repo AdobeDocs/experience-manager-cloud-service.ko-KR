@@ -2,7 +2,7 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 99%
@@ -450,8 +450,8 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 **참조**&#x200B;에는 선택한 리소스에 대한 모든 연결 내용이 표시됩니다. 예를 들어, 페이지의 **사이트** 콘솔 [참조](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)는 다음과 같은 정보를 표시합니다.
 
 * [론치](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* Live copy<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* 언어 복사<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [Live copy](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [언어 복사](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * 컨텐츠 참조:
 
    * 다른 페이지에서 선택한 페이지로의 링크
