@@ -2,10 +2,10 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2152'
+ht-degree: 99%
 
 ---
 
@@ -193,7 +193,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
    ![컨텐츠 트리 편집 단추](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* 구성 요소가 다른 페이지에서 상속되는 LiveCopy의 일부인 페이지에는 상속 옵션을 비롯한 옵션들이 축소된 모음이 표시됩니다. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* 구성 요소가 다른 페이지에서 상속되는 [livecopy](/help/sites-cloud/administering/msm/overview.md)의 일부인 페이지.
 
 >[!NOTE]
 >
@@ -227,9 +227,9 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * **수신 링크**: 페이지를 참조하는 페이지 목록과 함께, 특정 링크를 선택할 때 그러한 페이지 중 하나를 **편집**&#x200B;하기 위해 직접 액세스할 수 있는 권한 제공
 * **참조** 구성 요소를 사용하여 빌린 컨텐츠와 빌려준 컨텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 * [론치](/help/sites-cloud/authoring/launches/overview.md): 관련 론치에 대한 액세스 권한 제공
-* LiveCopy: 선택한 리소스를 기반으로 하는 모든 LiveCopy 경로 표시 <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* 블루프린트: 세부 사항 및 여러 작업 제공 <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* 언어 사본: 세부 사항 및 여러 작업 제공 <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [](/help/sites-cloud/administering/msm/overview.md)LiveCopy: 선택한 리소스를 기반으로 하는 모든 LiveCopy 경로 표시 
+* [세부](/help/sites-cloud/administering/msm/best-practices.md) 사항과 다양한 작업을 제공하는 블루프린트
+* [언어 사본](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel): 세부 사항 및 여러 작업 제공
 
 ## 이벤트 - 타임라인 {#events-timeline}
 
@@ -250,7 +250,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 ![페이지 정보 옵션](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [속성 열기](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* 페이지 롤아웃 <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [페이지 롤아웃](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [워크플로우 시작](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [페이지 잠금](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -285,6 +285,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 >* 일부 모드에 액세스하려면 적절한 권한이 필요합니다.
 >* 공간 제약으로 인해 [개발자 모드]는 모바일 장치에서 사용할 수 없습니다.
 >* [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)(`Ctrl-Shift-M`)를 사용하여 **미리 보기**&#x200B;와 현재 선택한 모드(예: **편집**, **레이아웃** 등) 간에 전환합니다.
+
 >
 
 
