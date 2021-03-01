@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 translation-type: tm+mt
-source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
+source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 60%
+source-wordcount: '1909'
+ht-degree: 59%
 
 ---
 
@@ -192,11 +192,10 @@ ht-degree: 60%
 
 ### 블루프린트 {#blueprint}
 
-이 탭은 Blueprint로 사용되는 페이지에만 표시됩니다.
+이 탭은 Blueprint로 사용되는 페이지에만 표시됩니다. Live Copy의 기반이 되는 Blueprint는 [다중 사이트 관리의 일부입니다.](/help/sites-cloud/administering/msm/overview.md)
 
 * **현재 Live Copy**  - 이 블루프린트 페이지를 기반으로(즉, Live Copy)하는 페이지를 나열합니다.
 
-   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 * **롤아웃 구성**  - 수정 내용이 Live Copy에 전파되는 상황을 제어합니다.
 
 ### Live Copy {#live-copy}
