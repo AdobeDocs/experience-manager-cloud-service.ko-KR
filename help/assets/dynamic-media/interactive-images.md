@@ -2,9 +2,9 @@
 title: 대화형 이미지
 description: Dynamic Media에서 대화형 이미지를 사용하여 작업하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
-source-wordcount: '4246'
+source-wordcount: '4245'
 ht-degree: 0%
 
 ---
@@ -256,7 +256,7 @@ AEM Assets과 함께 제공되는 `Shoppable_Banner`이라는 기본 기본 대�
    1. [핫스팟 관리] 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 핫스팟]**&#x200B;을 탭합니다.
    1. 이미지에서 핫스팟을 표시할 위치를 누릅니다. 필요한 경우 핫스팟을 드래그하여 위치를 조정합니다. 또는 키보드 화살표 키를 사용하여 선택한 핫스팟의 위치를 제어할 수 있습니다.
    1. a 및 b 단계를 반복하여 필요에 따라 핫스팟을 더 추가합니다.
-   1. (선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선택한 다음 **[!UICONTROL 핫스팟]** 머리글 아래에 있는 **[!UICONTROL 삭제]**(가비지 can 아이콘)를 누릅니다.
+   1. (선택 사항) 핫스팟을 삭제하려면 이미지에서 핫스팟을 선택한 다음 **[!UICONTROL 핫스팟]** 머리글 아래에 있는 **[!UICONTROL 삭제]**(휴지통 아이콘)를 누릅니다.
 
 1. 이름 텍스트 필드에 핫스팟 이름을 입력합니다. 이 이름은 선택한 핫스팟 드롭다운 목록에도 나타납니다.
 1. 다음 중 하나를 수행하십시오.
@@ -338,7 +338,7 @@ AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드
 
 **예**
 
-[데모 웹 사이트를 예제](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)로 사용하면 세 사람의 사진이 정적 `IMG` 태그임을 알 수 있습니다.
+[데모 웹 사이트를 예제](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)로 사용하면 3명의 개인 사진이 정적 `IMG` 태그임을 알 수 있습니다.
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
