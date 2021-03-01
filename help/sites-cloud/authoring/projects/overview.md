@@ -2,10 +2,10 @@
 title: 프로젝트
 description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화하여 공통, 공유 환경에서 프로젝트를 쉽게 관리할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 4f52c08674148776c29c0a3130c60a34f6ed30cd
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 81%
+ht-degree: 80%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 81%
 * 론치
 * 작업
 
-### 자산 {#assets}
+### 에셋 {#assets}
 
 **자산** 타일에서는 특정 프로젝트에 사용하는 모든 자산을 수집할 수 있습니다.
 
@@ -158,7 +158,7 @@ AEM은 다음과 같이 특별한 세 개의 템플릿과 함께 제공됩니다
 
 * 간단한 프로젝트 - 다른 카테고리에 맞지 않는 모든 프로젝트에 대한 참조 샘플입니다(모두 포함). 여기에는 세 개의 기본 역할(소유자, 편집자 및 옵저버)과 네 개의 워크플로우(프로젝트 승인, 론치 요청, 랜딩 페이지 요청 및 이메일 요청)가 포함됩니다.
 * 미디어 프로젝트 - 미디어 관련 활동을 위한 참조 샘플 프로젝트입니다. 여기에는 몇 가지의 미디어 관련 프로젝트 역할(사진사, 편집자, 카피라이터, 디자이너, 소유자 및 옵저버)이 포함되며, 미디어 컨텐츠와 관련된 두 가지 워크플로우인 사본 요청(텍스트 요청 및 검토용) 워크플로우와 제품 사진 촬영(제품 관련 사진 관리용) 워크플로우도 포함되어 있습니다.
-* 번역 프로젝트 - 번역 관련 활동을 관리하기 위한 참조 샘플입니다. 여기에는 세 개의 기본 역할(소유자, 편집자 및 옵저버)이 포함됩니다. 또한 워크플로우 사용자 인터페이스에서 액세스하는 두 개의 워크플로우도 포함됩니다. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* [번역 프로젝트](/help/sites-cloud/administering/translation/overview.md) - 번역 관련 활동을 관리하기 위한 참조 샘플입니다. 여기에는 세 개의 기본 역할(소유자, 편집자 및 옵저버)이 포함됩니다. 또한 워크플로우 사용자 인터페이스에서 액세스하는 두 개의 워크플로우도 포함됩니다.
 
 선택하는 템플릿에 따라, 특히 사용자 역할 및 워크플로우와 관련하여 사용할 수 있는 선택 사항들이 다릅니다.
 
