@@ -2,7 +2,7 @@
 title: 론치 편집
 description: '페이지(또는 페이지 세트)에 대한 론치를 만들면 페이지의 론치 카피에서 컨텐츠를 편집할 수 있습니다. '
 translation-type: tm+mt
-source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 81%
@@ -25,7 +25,7 @@ ht-degree: 81%
 
 ### Live Copy에 따른 론치 페이지 편집 {#editing-launch-pages-subject-to-a-live-copy}
 
-론치가 live copy를 기반으로 하는 경우 다음을 수행합니다.<!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+론치가 [Live Copy](/help/sites-cloud/administering/msm/overview.md)를 기반으로 하는 경우 다음을 수행합니다.
 
 * 구성 요소(컨텐츠 및/또는 속성)를 편집할 때 잠금 기호(작은 자물쇠)를 참조하십시오.
 * **페이지 속성**&#x200B;의 **Live Copy** 탭을 참조하십시오.
@@ -37,9 +37,9 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 * 닫힌 자물쇠를 클릭하면 이 동기화가 중단되고 론치에서 컨텐츠를 새로 업데이트할 수 있습니다. 잠금 해제되면(열려 있는 자물쇠) 사용자가 수행한 변경 내용을 소스 분기 내의 동일한 위치에 수행된 변경 내용이 덮어쓰지 않습니다.
 * **특정 페이지에 대한 상속을 일시 중단** (및  **다시 시작**)합니다.
 
-자세한 내용은 Live Copy 컨텐츠 변경을 참조하십시오. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+자세한 내용은 [Live Copy 컨텐츠 변경](/help/sites-cloud/administering/msm/creating-live-copies.md)을 참조하십시오.
 
-## 론치 페이지를 소스 페이지에 비교 {#comparing-a-launch-page-to-its-source-page}
+## 론치 페이지를 소스 페이지에 비교  {#comparing-a-launch-page-to-its-source-page}
 
 수행한 변경 작업을 추적하기 위해 **참조**&#x200B;에서 론치를 보고 론치 페이지를 소스 페이지와 비교할 수 있습니다.
 
