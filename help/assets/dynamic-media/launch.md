@@ -1,10 +1,10 @@
 ---
 title: Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch 통합
-description: Dynamic Media Viewers 5.13 릴리스와 함께 Adobe Experience Platform Launch용 Dynamic Media 뷰어 익스텐션을 사용하면 Dynamic Media, Adobe Analytics 및 Experience Platform Launch 고객은 Experience Platform Launch 구성에서 Dynamic Media 뷰어별 이벤트 및 데이터를 사용할 수 있습니다.
+description: platform launch 및 Dynamic Media Viewers 5.13용 Dynamic Media 뷰어 익스텐션을 사용하면 Adobe Analytics 및 Platform launch 고객은 Platform launch 구성에서 뷰어 관련 이벤트와 데이터를 사용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
-source-wordcount: '6727'
+source-wordcount: '6684'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 ## Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch의 통합은 무엇입니까?{#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-Dynamic Media Viewers 5.13의 최신 릴리스와 함께 새로운 Experience Platform Launch용 *Dynamic Media Viewers* 확장을 사용하면 Dynamic Media, Adobe Analytics 및 Experience Platform Launch 고객이 Experience Platform Launch 구성에서 Dynamic Media 뷰어별 이벤트 및 데이터를 사용할 수 있습니다.
+platform launch 및 Dynamic Media 뷰어 5.13용 새 *Dynamic Media 뷰어* 확장을 사용하면 Adobe Analytics 및 Platform launch 고객은 Platform launch 구성에 있는 뷰어별 이벤트와 데이터를 사용할 수 있습니다.
 
-이러한 통합은 Adobe Analytics을 사용하여 웹 사이트에서 Dynamic Media 뷰어의 사용을 추적할 수 있음을 의미합니다. 동시에 Adobe 또는 제3자로부터 제공되는 기타 Launch 확장 프로그램과 함께 뷰어에서 노출되는 이벤트와 데이터를 사용할 수 있습니다.
+이러한 통합은 Adobe Analytics을 사용하여 웹 사이트에서 Dynamic Media 뷰어의 사용을 추적할 수 있음을 의미합니다. 동시에 Adobe 또는 제3자로부터 제공되는 기타 Platform launch 확장 프로그램과 함께 뷰어에 의해 노출된 이벤트와 데이터를 사용할 수 있습니다.
 
-확장에 대한 자세한 내용은 Experience Platform Launch 사용 안내서의 [Adobe 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension)을 참조하십시오.
+확장 기능에 대한 자세한 내용은 Experience Platform Launch 사용 안내서의 [Adobe 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension)을 참조하십시오.
 
-**이 설명서를 읽어야 하는 사람:** 사이트 관리자, AEM 플랫폼의 개발자, 그리고 운영 부서의 개발자.
+**이 항목은** 사이트 관리자, Adobe Experience Manager 플랫폼의 개발자 및 운영 인력을 대상으로 합니다.
 
 ### 통합 제한 사항 {#limitations-of-the-integration}
 
-* Dynamic Media 뷰어에 대한 Experience Platform Launch 통합은 AEM 작성자 노드에서 작동하지 않습니다. WCM 페이지가 게시될 때까지 추적 내용을 볼 수 없습니다.
+* Dynamic Media 뷰어에 대한 Experience Platform Launch 통합은 Experience Manager 작성자 노드에서 작동하지 않습니다. WCM 페이지가 게시될 때까지 추적 내용을 볼 수 없습니다.
 * Dynamic Media 뷰어에 대한 Experience Platform Launch 통합은 &quot;팝업&quot; 작업 모드에서 지원되지 않습니다. 여기서 [자산 세부 사항] 페이지의 &quot;URL&quot; 단추를 사용하여 뷰어 URL을 가져옵니다.
 * Experience Platform Launch 통합은 이전 뷰어 Analytics 통합과 동시에 사용할 수 없습니다(`config2=` 매개 변수).
 * 비디오 추적 지원은 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events)에 설명된 대로 핵심 재생 추적으로만 제한됩니다. 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
@@ -32,11 +32,11 @@ Dynamic Media Viewers 5.13의 최신 릴리스와 함께 새로운 Experience Pl
 
 ### 통합 {#use-cases-for-the-integration} 사용 사례
 
-Experience Platform Launch 통합을 위한 주요 사용 사례는 AEM Assets과 AEM Sites을 모두 사용하는 고객입니다. 이러한 시나리오에서는 AEM 작성자 노드와 Experience Platform Launch 간의 표준 통합을 설정한 다음 사이트 인스턴스를 Experience Platform Launch 속성과 연결할 수 있습니다. 이후에는 사이트 페이지에 추가된 모든 Dynamic Media WCM 구성 요소가 뷰어의 데이터 및 이벤트를 추적합니다.
+Experience Platform Launch과의 통합에 대한 주요 사용 사례는 Experience Manager 자산 및 Experience Manager 사이트를 모두 사용하는 고객입니다. 이러한 시나리오에서는 Experience Manager 작성자 노드와 Experience Platform Launch 간의 표준 통합을 설정한 다음 사이트 인스턴스를 Experience Platform Launch 속성과 연결할 수 있습니다. 이후에는 사이트 페이지에 추가된 모든 Dynamic Media WCM 구성 요소가 뷰어의 데이터 및 이벤트를 추적합니다.
 
-AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)에서 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
+Experience Manager 사이트](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)의 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
 
-통합이 지원하는 보조 사용 사례는 AEM Assets 전용 또는 Dynamic Media Classic을 사용하는 고객입니다. 이러한 경우 뷰어용 포함 코드를 입수하여 웹 사이트 페이지에 추가합니다. 그런 다음 Experience Platform Launch에서 Experience Platform Launch 라이브러리 프로덕션 URL을 가져와 웹 페이지 코드에 수동으로 추가합니다.
+통합이 지원하는 보조 사용 사례는 Experience Manager 자산만 사용하는 고객이나 Dynamic Media Classic을 사용하는 고객입니다. 이러한 경우 뷰어용 포함 코드를 입수하여 웹 사이트 페이지에 추가합니다. 그런 다음 Experience Platform Launch에서 Experience Platform Launch 라이브러리 프로덕션 URL을 가져와 웹 페이지 코드에 수동으로 추가합니다.
 
 포함 코드](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)를 사용하여 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
 
@@ -46,7 +46,7 @@ AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+i
 
 ### Adobe Analytics {#about-tracking-using-adobe-analytics} 사용 추적 정보
 
-Adobe Analytics을 사용하면 최종 사용자가 웹 사이트에서 Dynamic Media 뷰어와 상호 작용할 때 수행되는 작업을 추적할 수 있습니다. 또한 Adobe Analytics을 사용하여 뷰어별 데이터를 추적할 수 있습니다. 예를 들어 자산 이름, 발생한 확대/축소 작업, 비디오 재생 작업 등과 함께 보기 로드 이벤트를 추적하고 기록할 수 있습니다.
+Adobe Analytics을 사용하면 최종 사용자가 웹 사이트에서 Dynamic Media 뷰어와 상호 작용할 때 수행되는 작업을 추적할 수 있습니다. 또한 Adobe Analytics을 사용하여 뷰어별 데이터를 추적할 수 있습니다. 예를 들어 자산 이름, 발생한 확대/축소 작업 및 비디오 재생 작업과 함께 보기 로드 이벤트를 추적하고 기록할 수 있습니다.
 
 Experience Platform Launch에서 *데이터 요소* 및 *규칙*&#x200B;의 개념이 함께 작동하여 Adobe Analytics 추적을 활성화합니다.
 
@@ -56,30 +56,30 @@ Experience Platform Launch의 데이터 요소는 값이 정적으로 정의되�
 
 데이터 요소 정의에 사용할 수 있는 옵션은 Experience Platform Launch 속성에 설치된 확장 목록에 따라 다릅니다. &quot;코어&quot; 익스텐션은 사전 설치되어 있으며 모든 구성에서 즉시 사용할 수 있습니다. 이 &quot;코어&quot; 확장을 사용하면 쿠키, JavaScript 코드, 쿼리 문자열 및 기타 많은 소스에서 나오는 값을 데이터 요소를 정의할 수 있습니다.
 
-Adobe Analytics 추적을 수행하려면 [확장 설치 및 설정](#installing-and-setup-of-extensions)에 설명된 대로 몇 개의 추가 확장을 설치해야 합니다. Dynamic Media 뷰어 확장은 Dynamic Viewer 이벤트의 인수인 데이터 요소를 정의하는 기능을 추가합니다. 예를 들어 로드 시 뷰어에서 보고한 뷰어 유형 또는 자산 이름, 최종 사용자가 확대/축소하면 보고되는 확대/축소 수준 등을 참조할 수 있습니다.
+Adobe Analytics 추적의 경우 [Extension 설치 및 설정](#installing-and-setup-of-extensions)에 설명된 대로 다른 여러 확장을 설치해야 합니다. Dynamic Media 뷰어 확장은 Dynamic Viewer 이벤트의 인수인 데이터 요소를 정의하는 기능을 추가합니다. 예를 들어 로드 시 뷰어에서 보고한 뷰어 유형 또는 자산 이름, 최종 사용자가 확대/축소하면 보고되는 확대/축소 수준 등을 참조할 수 있습니다.
 
 Dynamic Media 뷰어 확장은 자동으로 데이터 요소의 값을 최신 상태로 유지합니다.
 
-데이터 요소를 정의한 후에는 데이터 요소 선택기 위젯을 사용하여 Experience Platform Launch UI의 다른 위치에서 데이터 요소를 사용할 수 있습니다. 특히, Dynamic Media 뷰어 추적의 목적으로 정의된 데이터 요소는 규칙의 Adobe Analytics 확장 프로그램의 변수 설정 동작에서 참조됩니다(아래 참조).
+데이터 요소를 정의한 후에는 데이터 요소 선택기 위젯을 사용하여 Experience Platform Launch UI의 다른 위치에서 데이터 요소를 사용할 수 있습니다. 특히, Dynamic Media 뷰어 추적의 목적으로 정의된 데이터 요소는 규칙에서 Adobe Analytics 확장 프로그램의 변수 설정 동작에 의해 참조됩니다(아래 참조).
 
-자세한 내용은 Experience Platform Launch 사용 안내서의 [데이터 요소](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference)를 참조하십시오.
+Experience Platform Launch 사용 안내서의 [데이터 요소](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference)를 참조하십시오.
 
 #### Experience Platform Launch {#about-rules-in-adobe-launch}의 규칙 정보
 
 Experience Platform Launch의 규칙은 규칙을 구성하는 3개의 영역을 정의하는 독립적인 구성입니다.*이벤트*, *조건* 및 *액션*:
 
 * *이벤트* (if)는 규칙을 트리거할 시기를 Experience Platform Launch에 알립니다.
-* *조건* (if)은 규칙을 트리거할 때 허용하거나 허용하지 않을 추가적인 제한 사항을 Experience Platform Launch에 알립니다.
+* *조건* (if)은 규칙을 트리거할 때 허용하거나 허용하지 않을 다른 제한 사항을 Experience Platform Launch에 알립니다.
 * *작업* (그런 다음)은 규칙이 트리거될 때 수행할 작업을 Experience Platform Launch에 알려줍니다.
 
-이벤트, 조건 및 작업 섹션에서 사용할 수 있는 옵션은 Experience Platform Launch 속성에 설치된 확장에 따라 다릅니다. *Core* 확장이 사전 설치되어 있으며 모든 구성에서 즉시 사용할 수 있습니다. 익스텐션은 포커스 변경, 키 누르기, 양식 제출 등을 포함하는 기본 브라우저 수준 동작과 같은 이벤트에 대한 여러 옵션을 제공합니다. 또한 쿠키 값, 브라우저 유형 등과 같은 조건에 대한 옵션도 포함되어 있습니다. 작업의 경우 사용자 지정 코드 옵션만 사용할 수 있습니다.
+이벤트, 조건 및 작업 섹션에서 사용할 수 있는 옵션은 Experience Platform Launch 속성에 설치된 확장에 따라 다릅니다. *Core* 확장이 사전 설치되어 있으며 모든 구성에서 즉시 사용할 수 있습니다. 익스텐션은 포커스 변경, 키 누르기 및 양식 제출 등을 포함하는 기본 브라우저 수준 동작과 같은 이벤트에 대한 여러 옵션을 제공합니다. 또한 쿠키 값, 브라우저 유형 등과 같은 조건에 대한 옵션도 포함되어 있습니다. 작업의 경우 사용자 지정 코드 옵션만 사용할 수 있습니다.
 
-Adobe Analytics 추적을 수행하려면 [Extension 설치 및 설정](#installing-and-setup-of-extensions)에 설명된 대로 몇 개의 추가 확장을 설치해야 합니다. 구체적으로:
+Adobe Analytics 추적을 수행하려면 [Extension 설치 및 설정](#installing-and-setup-of-extensions)에 설명된 대로 다른 확장 기능을 설치해야 합니다. 구체적으로:
 
 * Dynamic Media 뷰어 익스텐션은 지원되는 이벤트 목록을 뷰어 로드, 에셋 교체, 확대 및 비디오 재생과 같은 Dynamic Media 뷰어 전용으로 확장되는 이벤트로 확장합니다.
 * Adobe Analytics 익스텐션은 데이터를 추적 서버로 전송하는 데 필요한 2가지 작업으로 지원되는 작업 목록을 확장합니다.*변수* 및 *비콘 보내기*&#x200B;를 설정합니다.
 
-Dynamic Media 뷰어를 추적하려면 다음 유형의 모든 유형을 사용할 수 있습니다.
+Dynamic Media 뷰어를 추적하기 위해 다음 유형의 항목을 사용할 수 있습니다.
 
 * Dynamic Media 뷰어 확장, 코어 확장 또는 기타 확장 프로그램의 이벤트입니다.
 * 규칙 정의의 조건. 또는 조건 영역을 비워 둘 수 있습니다.
@@ -88,7 +88,7 @@ Dynamic Media 뷰어를 추적하려면 다음 유형의 모든 유형을 사용
 
 *변수 설정* 액션 뒤에 *비콘 보내기* 작업이 와야 합니다. *비콘 보내기* 작업은 실제로 데이터를 분석 추적 서버로 보냅니다. 두 작업 모두, *변수 설정* 및 *비콘 전송*&#x200B;은 Adobe Analytics 확장 프로그램에서 가져옵니다.
 
-자세한 내용은 Experience Platform Launch 사용 안내서의 [규칙](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference)을 참조하십시오.
+Experience Platform Launch 사용 안내서의 [규칙](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference)을 참조하십시오.
 
 #### 샘플 구성 {#sample-configuration}
 
@@ -126,11 +126,11 @@ Experience Cloud 계정이 오디오 및 비디오에 Adobe Analytics 사용을 
 
 ## Dynamic Media 뷰어 확장 사용 {#using-the-dynamic-media-viewers-extension}
 
-[통합 사용 사례](#use-cases-for-the-integration)에 언급된 바와 같이, AEM Sites의 새 Experience Platform Launch 통합으로 Dynamic Media 뷰어를 추적하고 포함 코드를 사용하여 추적할 수 있습니다.
+[통합 사용 사례](#use-cases-for-the-integration)에 언급된 대로, Experience Manager 사이트의 새 Experience Platform Launch 통합으로 Dynamic Media 뷰어를 추적하고 포함 코드를 사용할 수 있습니다.
 
-### AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}에서 Dynamic Media 뷰어 추적
+### Experience Manager 사이트에서 Dynamic Media 뷰어 추적 {#tracking-dynamic-media-viewers-in-aem-sites}
 
-AEM Sites에서 Dynamic Media 뷰어를 추적하려면 [모든 통합 부분 구성](#configuring-all-the-integration-pieces) 섹션 아래에 나열된 모든 단계를 수행해야 합니다. 특히 IMS 구성과 Experience Platform Launch 클라우드 구성을 만들어야 합니다.
+Experience Manager 사이트에서 Dynamic Media 뷰어를 추적하려면 [모든 통합 부분 구성](#configuring-all-the-integration-pieces) 섹션 아래에 나열된 모든 단계를 수행해야 합니다. 특히 IMS 구성과 Experience Platform Launch 클라우드 구성을 만들어야 합니다.
 
 적절한 구성을 따르면 Dynamic Media에서 지원하는 WCM 구성 요소를 사용하여 사이트 페이지에 추가하는 모든 Dynamic Media 뷰어는 Adobe Analytics 또는 비디오용 Adobe Analytics 또는 두 가지 모두에 대한 데이터를 자동으로 추적합니다.
 
@@ -138,17 +138,17 @@ Adobe 사이트](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages
 
 ### 포함 코드 {#tracking-dynamic-media-viewers-using-embed-code}을(를) 사용하여 Dynamic Media 뷰어 추적
 
-AEM Sites을 사용하지 않거나 Dynamic Media 뷰어를 AEM Sites 외부의 웹 페이지에 포함시키거나 둘 다 Experience Platform Launch 통합을 사용할 수 있습니다.
+Experience Manager 사이트를 사용하지 않거나 Dynamic Media 뷰어를 Experience Manager 사이트 외부의 웹 페이지에 포함시키거나 둘 다 Experience Platform Launch 통합을 사용할 수 있습니다.
 
-[Adobe Analytics](#configuring-adobe-analytics-for-the-integration) 구성 및 [Experience Platform Launch](#configuring-adobe-launch-for-the-integration) 구성 섹션에서 구성 단계를 완료해야 합니다. 그러나 AEM 관련 구성 단계는 필요하지 않습니다.
+[Adobe Analytics](#configuring-adobe-analytics-for-the-integration) 구성 및 [Experience Platform Launch 구성](#configuring-adobe-launch-for-the-integration) 섹션에서 구성 단계를 완료합니다. 그러나 Experience Manager 관련 구성 단계는 필요하지 않습니다.
 
 적절한 구성을 따르면 Dynamic Media 뷰어가 있는 웹 페이지에 Experience Platform Launch 지원을 추가할 수 있습니다.
 
-Experience Platform Launch 라이브러리 포함 코드 사용 방법에 대한 자세한 내용은 [시작 포함 코드 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch)를 참조하십시오.
+Experience Platform Launch 라이브러리 포함 코드 사용 방법에 대한 자세한 내용은 [Experience Platform Launch 포함 코드 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch)를 참조하십시오.
 
-AEM Dynamic Media의 포함 코드 기능을 사용하는 방법에 대한 자세한 내용은 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
+Experience Manager Dynamic Media의 포함 코드 기능을 사용하는 방법에 대한 자세한 내용은 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 
-**포함 코드를 사용하여 Dynamic Media 뷰어를 추적하려면**
+**포함 코드를 사용하여 Dynamic Media 뷰어를 추적하려면**:
 
 1. Dynamic Media 뷰어를 포함할 준비가 된 웹 페이지를 만듭니다.
 1. Experience Platform Launch에 먼저 로그인하여 Experience Platform Launch 라이브러리에 대한 포함 코드를 얻습니다([Experience Platform Launch 구성](#configuring-adobe-launch-for-the-integration) 참조).
@@ -160,7 +160,7 @@ AEM Dynamic Media의 포함 코드 기능을 사용하는 방법에 대한 자�
 
 ### Dynamic Media 뷰어 구성 정보 {#about-the-dynamic-media-viewers-configuration}
 
-아래 조건이 모두 참이면 Dynamic Media Viewer Extension은 Experience Platform Launch 라이브러리와 자동으로 통합됩니다.
+아래 조건이 true이면 Dynamic Media Viewer Extension이 Experience Platform Launch 라이브러리와 자동으로 통합됩니다.
 
 * Experience Platform Launch 라이브러리 글로벌 개체( `_satellite`)가 페이지에 있습니다.
 * Dynamic Media 뷰어 확장 함수 `_dmviewers_v001()`이(가) `_satellite`에 정의되어 있습니다.
@@ -173,9 +173,9 @@ AEM Dynamic Media의 포함 코드 기능을 사용하는 방법에 대한 자�
 
 Dynamic Media 뷰어 확장 기능에 대한 유일한 구성 옵션은 **[!UICONTROL 오디오 및 비디오에 대한 Adobe Medium 분석 활성화]**&#x200B;입니다.
 
-이 옵션을 선택(활성화 또는 &quot;켜기&quot;)하고, Adobe Medium Analytics for Audio 및 비디오 확장 기능이 설치 및 올바르게 구성된 경우, 비디오 재생 지표가 오디오 및 비디오용 Adobe Analytics 솔루션으로 전송됩니다. 이 옵션을 비활성화하면 비디오 추적이 꺼집니다.
+이 옵션을 선택(활성화)하고 오디오 및 비디오용 Adobe Medium Analytics 확장 기능이 설치 및 구성되면 비디오 재생 지표가 오디오 및 비디오용 Adobe Analytics 솔루션으로 전송됩니다. 이 옵션을 비활성화하면 비디오 추적이 꺼집니다.
 
-오디오 및 비디오용 Adobe Medium Analytics 확장을 설치하지 않고 *이 옵션을 활성화하면 이 옵션이 아무런 영향을 주지 않습니다.*
+오디오 및 비디오용 Adobe Medium Analytics 확장 프로그램을 설치하지 않고 *이(가) 옵션을 활성화하면 옵션이 아무런 영향을 주지 않습니다.*
 
 ![image2019-7-22_12-4-23](assets/image2019-7-22_12-4-23.png)
 
@@ -192,17 +192,17 @@ Dynamic Media 뷰어 확장이 제공하는 데이터 요소 유형은 **[!UICON
 
 각 뷰어 유형별로 지원되는 이벤트 목록은 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)를 참조하십시오.특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 클릭합니다. 현재 Dynamic Media 뷰어 참조 안내서는 이벤트 인수를 문서화하지 않습니다.
 
-이제 Dynamic Media 뷰어 *데이터 요소*&#x200B;의 라이프사이클을 고려하겠습니다. 이러한 데이터 요소의 값은 해당 Dynamic Media 뷰어 이벤트가 페이지에서 발생한 후에 채워집니다. 예를 들어 데이터 요소가 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리키는 경우, 뷰어가 처음으로 LOAD 이벤트를 실행한 후 해당 데이터 요소의 값이 유효한 데이터를 받게 됩니다. 데이터 요소가 **[!UICONTROL ZOOM]** 이벤트와 그 &quot;scale&quot; 인수를 가리키면 뷰어가 처음으로 **[!UICONTROL ZOOM]** 이벤트를 보낼 때까지 해당 데이터 요소의 값은 비어 있게 됩니다.
+이제 Dynamic Media 뷰어 *데이터 요소*&#x200B;의 라이프사이클을 고려하겠습니다. 이러한 데이터 요소의 값은 해당 Dynamic Media 뷰어 이벤트가 페이지에서 발생한 후에 채워집니다. 예를 들어 데이터 요소가 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리키면 됩니다. 이러한 데이터 요소의 값은 뷰어가 처음으로 LOAD 이벤트를 실행한 후 유효한 데이터를 받습니다. 데이터 요소가 **[!UICONTROL ZOOM]** 이벤트와 그 &quot;scale&quot; 인수를 가리키는 경우 뷰어가 처음으로 **[!UICONTROL ZOOM]** 이벤트를 보낼 때까지 해당 데이터 요소의 값은 비어 있습니다.
 
-마찬가지로 뷰어가 페이지에서 해당 이벤트를 전송하면 데이터 요소 값이 자동으로 업데이트됩니다. 값 업데이트는 규칙 구성에 특정 이벤트가 지정되지 않은 경우에도 발생합니다. 예를 들어 데이터 요소 **[!UICONTROL ZoomScale]**&#x200B;이 ZOOM 이벤트의 &quot;scale&quot; 매개 변수에 대해 정의되어 있지만 규칙 구성에 있는 유일한 규칙이 **[!UICONTROL LOAD]** 이벤트에 의해 트리거되는 경우 사용자가 뷰어 내에서 확대/축소를 실행할 때마다 **[!UICONTROL ZoomScale]**&#x200B;의 값이 계속 업데이트됩니다.
+마찬가지로 뷰어가 페이지에서 해당 이벤트를 전송하면 데이터 요소 값이 자동으로 업데이트됩니다. 값 업데이트는 규칙 구성에 특정 이벤트가 지정되지 않은 경우에도 발생합니다. 예를 들어 데이터 요소 **[!UICONTROL ZoomScale]**&#x200B;이 ZOOM 이벤트의 &quot;scale&quot; 매개 변수에 대해 정의되어 있다고 가정합니다. 하지만 규칙 구성에 있는 유일한 규칙은 **[!UICONTROL LOAD]** 이벤트에 의해 트리거됩니다. 사용자가 뷰어 내에서 확대/축소를 실행할 때마다 **[!UICONTROL ZoomScale]** 값이 계속 업데이트됩니다.
 
-모든 Dynamic Media 뷰어는 웹 페이지에 고유한 식별자를 가집니다. 데이터 요소는 값 자체와 값을 채운 뷰어를 추적합니다. 즉, 동일한 페이지에 여러 뷰어가 있고 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리키는 **[!UICONTROL AssetName]** 데이터 요소가 있는 경우 **[!UICONTROL AssetName]** 데이터 요소는 페이지에 로드된 각 뷰어와 연결된 에셋 이름 컬렉션을 유지합니다.
+모든 Dynamic Media 뷰어는 웹 페이지에 고유한 식별자를 가집니다. 데이터 요소는 값 자체를 추적하고 값을 채운 뷰어를 추적합니다. 예를 들어 동일한 페이지에 여러 뷰어가 있고 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리키는 **[!UICONTROL AssetName]** 데이터 요소가 있다고 가정합니다. **[!UICONTROL AssetName]** 데이터 요소는 페이지에 로드된 각 뷰어와 연결된 에셋 이름 컬렉션을 유지합니다.
 
-데이터 요소에서 반환되는 정확한 값은 컨텍스트에 따라 다릅니다. Dynamic Media 뷰어 이벤트에 의해 트리거된 규칙에서 데이터 요소가 요청되면 규칙을 시작한 뷰어에 대해 데이터 요소 값이 반환됩니다. 또한 데이터 요소가 다른 Experience Platform Launch 확장에서 이벤트에 의해 트리거된 규칙에서 요청되는 경우 데이터 요소의 값은 이 데이터 요소를 마지막으로 업데이트하는 뷰어의 값입니다.
+데이터 요소에서 반환되는 정확한 값은 컨텍스트에 따라 다릅니다. Dynamic Media 뷰어 이벤트에 의해 트리거된 규칙에서 데이터 요소가 요청되면 규칙을 시작한 뷰어에 대해 데이터 요소 값이 반환됩니다. 또한 데이터 요소는 다른 Platform launch 확장의 이벤트로 트리거된 규칙에서 요청됩니다. 이때 데이터 요소의 값은 이 데이터 요소를 마지막으로 업데이트한 뷰어에서 가져옵니다.
 
 **다음 샘플 설정을 고려해 보십시오**.
 
-* 2개의 Dynamic Media 확대/축소 뷰어가 있는 웹 페이지;이 설명서는 *viewer1* 및 *viewer2*&#x200B;로 참조합니다.
+* 2개의 Dynamic Media 확대/축소 뷰어가 있는 웹 페이지:*viewer1* 및 *viewer2*.
 
 * **[!UICONTROL ZoomScaleData]** 요소는 ZOOMevent 및  **** &quot;scale&quot; 인수를 가리킵니다.
 * **[!UICONTROL 다음]** 과 함께 TrackPanRule:
@@ -219,10 +219,10 @@ Dynamic Media 뷰어 확장이 제공하는 데이터 요소 유형은 **[!UICON
 
 최종 사용자의 활동은 Adobe Analytics에 대해 다음과 같은 2개의 추적 호출을 만듭니다.
 
-* 첫 번째 호출은 사용자가 *viewer1*&#x200B;에서 이동할 때 **[!UICONTROL TrackPan]** 규칙이 트리거되기 때문에 발생합니다. 데이터 요소는 규칙이 *viewer1*&#x200B;에 의해 트리거되고 해당 크기 조절 값을 가져오게 되므로 해당 호출은 **[!UICONTROL ZoomScale]** 데이터 요소의 값으로 50%를 전송합니다.
+* 첫 번째 호출은 사용자가 *viewer1*&#x200B;에서 이동할 때 **[!UICONTROL TrackPan]** 규칙이 트리거되기 때문에 발생합니다. 데이터 요소는 규칙이 *viewer1*&#x200B;에 의해 트리거되고 해당 크기 조절 값을 가져오기 때문에 해당 호출은 **[!UICONTROL ZoomScale]** 데이터 요소의 값으로 50%를 전송합니다.
 * 두 번째 호출은 사용자가 키보드에서 키를 누를 때 **[!UICONTROL TrackKey]** 규칙이 트리거되기 때문에 발생합니다. 규칙이 뷰어에 의해 트리거되지 않았으므로 이 호출은 **[!UICONTROL ZoomScale]** 데이터 요소의 값으로 25%를 전송합니다. 따라서 데이터 요소는 최신 값을 반환합니다.
 
-위에 설정된 샘플 세트는 데이터 요소 값의 수명 부분에도 영향을 줍니다. Dynamic Media 뷰어에서 관리하는 데이터 요소의 값은 뷰어 자체가 웹 페이지에서 삭제된 후에도 Experience Platform Launch 라이브러리 코드에 저장됩니다. 즉, Dynamic Media이 아닌 뷰어 확장에서 트리거되고 이러한 데이터 요소를 참조하는 규칙이 있으면 뷰어가 웹 페이지에 더 이상 없는 경우에도 데이터 요소는 마지막으로 알려진 값을 반환합니다.
+위에 설정된 샘플 세트는 데이터 요소 값의 수명 부분에도 영향을 줍니다. Dynamic Media 뷰어에서 관리하는 데이터 요소의 값은 뷰어 자체가 웹 페이지에서 삭제된 후에도 Experience Platform Launch 라이브러리 코드에 저장됩니다. 이 기능은 Dynamic Media 뷰어가 아닌 확장명으로 트리거되는 규칙이 있고 이러한 데이터 요소를 참조하는 경우 데이터 요소는 마지막으로 알려진 값을 반환합니다. 뷰어가 웹 페이지에 더 이상 존재하지 않는 경우에도.
 
 어떤 경우에도 Dynamic Media 뷰어에서 파생된 데이터 요소의 값은 로컬 저장소 또는 서버에 저장되지 않습니다.대신 클라이언트측 Experience Platform Launch 라이브러리에만 보관됩니다. 이러한 데이터 요소의 값은 웹 페이지가 다시 로드될 때 사라집니다.
 
@@ -230,11 +230,11 @@ Dynamic Media 뷰어 확장이 제공하는 데이터 요소 유형은 **[!UICON
 
 ### Dynamic Media 뷰어 확장 {#about-rules-in-the-dynamic-media-viewers-extension}의 규칙 정보
 
-규칙 편집기에서 확장 프로그램은 이벤트 편집기에 대한 새 구성 옵션을 추가합니다. 또한 에서는 미리 구성된 데이터 요소를 사용하는 대신 작업 편집기에서 이벤트 매개 변수를 간단한 옵션으로 수동으로 참조하는 옵션을 제공합니다.
+규칙 편집기에서 확장 프로그램은 이벤트 편집기에 대한 새 구성 옵션을 추가합니다. 또한 편집기에서는 미리 구성된 데이터 요소를 사용하는 대신 작업 편집기에서 이벤트 매개 변수를 간단한 옵션으로 수동으로 참조하는 옵션을 제공합니다.
 
 #### 이벤트 편집기 {#about-the-events-editor} 정보
 
-이벤트 편집기에서 Dynamic Media 뷰어 확장이 **[!UICONTROL 뷰어 이벤트]**&#x200B;라는 새 **[!UICONTROL 이벤트 유형]**&#x200B;을 추가합니다.
+이벤트 편집기에서 Dynamic Media 뷰어 확장이 **[!UICONTROL 뷰어 이벤트]**&#x200B;라는 **[!UICONTROL 이벤트 유형]**&#x200B;을 추가합니다.
 
 이 옵션을 선택하면 이벤트 편집기가 드롭다운 **[!UICONTROL Dynamic Media 뷰어 이벤트]**&#x200B;를 렌더링하여 Dynamic Media 뷰어에서 지원하는 모든 사용 가능한 이벤트를 나열합니다.
 
@@ -251,13 +251,13 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-그러나 대체 방법을 사용하고 데이터 요소 생성을 무시할 수 있습니다. 퍼센트(%) 기호로 둘러싸인 Analytics 변수 할당의 **[!UICONTROL value]** 입력 필드에 이벤트 인수의 정규화된 이름을 입력하여 Dynamic Media Viewer 이벤트의 인수를 직접 참조할 수 있습니다. 예,
+그러나 대체 방법을 사용하고 데이터 요소 생성을 무시할 수 있습니다. Dynamic Media 뷰어 이벤트의 인수를 직접 참조할 수 있습니다. Analytics 변수 할당의 **[!UICONTROL value]** 입력 필드에 이벤트 인수의 정규화된 이름을 입력합니다. 퍼센트(%) 기호를 둘러싸야 합니다. 예,
 
 `%event.detail.dm.LOAD.asset%`
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-데이터 요소 사용과 직접 이벤트 인수 참조 간에는 중요한 차이가 있습니다. 데이터 요소의 경우, 변수 설정 작업을 트리거하는 이벤트와 상관 없이, 규칙을 트리거하는 이벤트는 동적 뷰어와 관련되지 않을 수 있습니다(핵심 확장명의 웹 페이지에서 마우스 클릭처럼). 그러나 직접 인수를 사용할 때는 규칙을 트리거하는 이벤트가 참조하는 이벤트 인수와 일치하는지 확인하는 것이 중요합니다.
+데이터 요소 사용과 직접 이벤트 인수 참조 간에는 중요한 차이가 있습니다. 데이터 요소의 경우 변수 설정 작업을 트리거하는 이벤트는 중요하지 않습니다. 규칙을 트리거하는 이벤트는 Dynamic Viewer와 무관할 수 있습니다(예: Core Extension에서 웹 페이지 클릭). 그러나 직접 인수를 사용할 때는 규칙을 트리거하는 이벤트가 참조하는 이벤트 인수와 일치하는지 확인하는 것이 중요합니다.
 
 예를 들어, Dynamic Media Viewer 확장의 **[!UICONTROL LOAD]** 이벤트에 의해 규칙이 트리거되는 경우 `%event.detail.dm.LOAD.asset%`을 참조하면 올바른 에셋 이름을 반환합니다. 그러나 다른 이벤트에 대해 빈 값을 반환합니다.
 
@@ -396,19 +396,19 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 **시작하기 전에**
 
-아직 설치하지 않은 경우, 완전한 통합을 이해하도록 이 섹션 앞에 있는 모든 설명서를 철저히 검토할 것을 Adobe이 권장합니다.
+Adobe은 전체 통합을 이해하도록 이 섹션 전에 모든 설명서를 철저히 검토할 것을 권장합니다.
 
 이 섹션에서는 오디오 및 비디오용 Adobe Analytics 및 Adobe Analytics과 Dynamic Media 뷰어를 통합하는 데 필요한 구성 단계를 설명합니다. Experience Platform Launch에서 다른 목적으로 Dynamic Media 뷰어 확장 기능을 사용할 수는 있지만 이러한 시나리오는 이 설명서에서 다루지 않습니다.
 
-다음 Adobe 제품에서 통합을 구성합니다.
+다음 Adobe 제품을 사용하여 통합을 구성합니다.
 
-* Adobe Analytics - 추적 변수 및 보고서를 구성합니다.
-* Experience Platform Launch - 속성, 하나 이상의 규칙 및 하나 이상의 데이터 요소를 정의하여 뷰어 추적을 활성화합니다.
+* Adobe Analytics - 추적 변수 및 보고서를 구성하는 데 사용됩니다.
+* Experience Platform Launch - 속성, 하나 이상의 규칙 및 하나 이상의 데이터 요소를 정의하여 뷰어 추적을 활성화하는 데 사용됩니다.
 
-또한 이 통합 솔루션이 AEM Sites과 함께 사용되는 경우 다음 구성도 수행해야 합니다.
+또한 이 통합 솔루션이 Experience Manager 사이트에서 사용되는 경우 다음 구성을 수행해야 합니다.
 
 * Adobe I/O 콘솔 - Experience Platform Launch에 대한 통합이 생성됩니다.
-* AEM 작성자 노드 - IMS 구성 및 Experience Platform Launch 클라우드 구성
+* Experience Manager 작성자 노드 - IMS 구성 및 Experience Platform Launch 클라우드 구성
 
 구성의 일부로 Adobe Analytics 및 Experience Platform Launch이 이미 활성화된 Adobe Experience Cloud의 회사에 대한 액세스 권한이 있어야 합니다.
 
@@ -434,7 +434,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
 1. Adobe Analytics 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보고서 검색]** 필드 오른쪽의 드롭다운 목록에서 올바른 보고서 세트를 선택합니다. 사용할 수 있는 보고서 세트가 여러 개 있고 사용할 보고서 세트가 확실치 않은 경우에는 사용할 보고서 세트를 선택하는 데 도움이 되는 Adobe Analytics 관리자에게 문의하십시오.
 
-   아래 그림에서 사용자가 *DynamicMediaViewersExtensionDoc*&#x200B;이라는 보고서 세트를 만들고 드롭다운 목록에서 이 보고서 세트를 선택했습니다. 보고서 세트 이름은 일러스트레이션용으로만 사용됩니다.최종적으로 선택하는 보고서 세트의 이름은 다릅니다.
+   아래 그림에서 사용자가 *DynamicMediaViewersExtensionDoc*&#x200B;이라는 보고서 세트를 만들고 드롭다운 목록에서 이 보고서 세트를 선택했습니다. 보고서 세트 이름은 일러스트레이션용으로만 사용됩니다. 최종적으로 선택하는 보고서 세트의 이름은 사용자에게 달려 있습니다.
 
    사용할 수 있는 보고서 세트가 없는 경우, 사용자나 Adobe Analytics 관리자가 보고서 세트를 먼저 만든 후 구성을 계속 진행할 수 있습니다.
 
@@ -448,9 +448,9 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
 ### Adobe Analytics 변수 {#setting-up-adobe-analytics-variables} 설정
 
-1. 이제 웹 페이지에서 Dynamic Media 뷰어 동작을 추적하는 데 사용할 하나 이상의 Adobe Analytics 변수를 지정합니다.
+1. 웹 페이지에서 Dynamic Media 뷰어 동작을 추적하는 데 사용할 하나 이상의 Adobe Analytics 변수를 지정합니다.
 
-   Adobe Analytics에서 지원하는 모든 유형의 변수를 사용할 수 있습니다. 변수 유형(예: 사용자 지정 트래픽 [prop], 전환 [eVar])에 대한 결정은 Analytics 구현의 특정 요구 사항에 의해 파생되어야 합니다.
+   Adobe Analytics에서 지원하는 모든 유형의 변수를 사용할 수 있습니다. 변수 유형(예: 사용자 지정 트래픽 [prop], 전환 [eVar])에 대한 결정은 Analytics 구현의 특정 요구 사항에 의해 결정됩니다.
 
    [prop 및 eVar 개요](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars)를 참조하십시오.
 
@@ -471,7 +471,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
 1. 일반적으로 Adobe Analytics에서 보고서를 설정하는 것은 특정 프로젝트 요구에 의해 수행됩니다. 따라서 세부 보고서 설정은 이 통합의 범위를 벗어납니다.
 
-   그러나 **[Adobe Analytics 변수 설정](#setting-up-adobe-analytics-variables)**&#x200B;에서 사용자 지정 트래픽 변수를 설정한 후 Adobe Analytics에서 사용자 지정 트래픽 보고서를 자동으로 사용할 수 있게 되는 것은 충분합니다.
+   그러나 **[Adobe Analytics 변수 설정](#setting-up-adobe-analytics-variables)**&#x200B;에서 사용자 지정 트래픽 변수를 설정한 후 Adobe Analytics에서 사용자 지정 트래픽 보고서를 자동으로 사용할 수 있게 되는 것을 알기에 충분합니다.
 
    예를 들어 **[!UICONTROL 뷰어 에셋(prop 30)]** 변수에 대한 보고서는 **[!UICONTROL 사용자 지정 트래픽 > 사용자 지정 트래픽 21-30 > 뷰어 에셋(prop 30)]**&#x200B;의 보고서 메뉴에서 사용할 수 있습니다.
 
@@ -529,7 +529,7 @@ Experience Platform Launch에서 사용 가능한 모든 확장이 **[!UICONTROL
 
 * (필수) *Adobe Analytics* 확장
 
-이 확장을 구성하려면 먼저 Adobe Analytics에서 **[!UICONTROL 관리 > 보고서 세트]**&#x200B;의 **[!UICONTROL 보고서 세트 ID]** 열 헤더 아래에 있는 보고서 세트 ID가 필요합니다.
+이 확장을 구성하려면 **[!UICONTROL 관리 > 보고서 세트]** 아래의 Adobe Analytics에서 **[!UICONTROL 보고서 세트 ID]** 열 헤더 아래에 있는 보고서 세트 ID가 필요합니다.
 
 (데모용으로만 사용하려면 다음 스크린샷에서 **[!UICONTROL DynamicMediaViewersExtensionDoc]** 보고서 세트의 보고서 세트 ID가 사용됩니다. 이 ID는 [보고서 세트 선택](#selecting-a-report-suite) 이전 버전에서 만들고 사용되었습니다.)
 
@@ -559,7 +559,7 @@ Experience Platform Launch에서 사용 가능한 모든 확장이 **[!UICONTROL
 
 비디오 하트비트 추적을 활성화(켜기)하려면 **[!UICONTROL 비디오용 Adobe Analytics 활성화]**&#x200B;를 선택합니다.
 
-이 작성 시점에서 개발을 위해 Experience Platform Launch 속성을 만든 경우에만 *Dynamic Media 뷰어* 확장을 사용할 수 있습니다.
+이 문서의 일부로, 개발을 위해 Experience Platform Launch 속성을 만든 경우에만 *Dynamic Media 뷰어* 확장을 사용할 수 있습니다.
 
 [Experience Platform Launch](#creating-a-property-in-adobe-launch)에서 속성 만들기를 참조하십시오.
 
@@ -579,16 +579,16 @@ Experience Platform Launch에 대한 추적 개요를 보려면 [통합](#how-da
 
 ### 라이브러리 {#publishing-a-library} 게시
 
-Experience Platform Launch 구성(속성, 확장, 규칙 및 데이터 요소 설정 포함)을 변경하려면 *게시*&#x200B;해야 합니다. Experience Platform Launch에 게시하는 작업은 속성 구성 아래의 게시 탭에서 수행됩니다.
+Experience Platform Launch 구성(설정된 속성, 확장, 규칙 및 데이터 요소 포함)을 변경하려면 *게시*&#x200B;해야 합니다. Experience Platform Launch에 게시하는 작업은 속성 구성 아래의 게시 탭에서 수행됩니다.
 
-Experience Platform Launch에는 여러 개발 환경, 스테이징 환경 및 프로덕션 환경 하나가 있을 수 있습니다. 기본적으로 AEM의 Experience Platform Launch 클라우드 구성은 AEM 작성자 노드를 Experience Platform Launch의 스테이지 환경으로 가리키고, AEM 게시 노드는 Experience Platform Launch의 프로덕션 환경에 해당합니다. 이 정렬은 기본 AEM 설정을 사용할 경우 Experience Platform Launch 라이브러리를 스테이징 환경에 게시하여 AEM 작성자에서 사용한 다음 AEM 게시에서 사용할 수 있도록 프로덕션 환경에 게시해야 함을 의미합니다.
+platform launch에는 여러 개발 환경, 스테이징 환경 및 프로덕션 환경 하나가 포함될 수 있습니다. 기본적으로 Experience Manager의 Platform launch 클라우드 구성은 Experience Manager 작성자 노드를 Platform launch의 스테이지 환경으로 가리킵니다. Experience Manager 게시 노드는 Platform launch의 제작 환경을 가리킵니다. 즉, 기본 Experience Manager 설정을 사용할 때는 Platform launch 라이브러리를 스테이징 환경에 게시해야 합니다. 이렇게 하면 Experience Manager 작성자에서 사용할 수 있습니다. 그런 다음 Experience Manager 게시에서 사용할 수 있도록 프로덕션 환경에 게시할 수 있습니다.
 
 Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types)을 참조하십시오.
 
 라이브러리를 게시하려면 다음 2단계를 수행해야 합니다.
 
 * 필요한 모든 변경 사항(새 내용 및 업데이트)을 라이브러리에 추가하여 새 라이브러리를 추가하고 만듭니다.
-* 다른 환경 수준(개발에서 스테이징 및 프로덕션으로)을 통해 라이브러리 이동
+* 개발에서 스테이징 및 프로덕션에 이르는 다양한 환경 수준을 통해 라이브러리를 이동합니다.
 
 #### 새 라이브러리 {#adding-and-building-a-new-library} 추가 및 구성
 
@@ -608,7 +608,7 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 개발용으로 저장 및 빌드]**&#x200B;를 클릭합니다.
 
-   몇 분 안에 라이브러리가 만들어지고 사용할 준비가 되었습니다.
+   몇 분 후에 라이브러리가 만들어지고 사용할 준비가 됩니다.
 
    ![image2019-7-15_15-3-34](assets/image2019-7-15_15-3-34.png)
 
@@ -619,9 +619,9 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
    >
    >라이브러리 게시 화면에서 **[!UICONTROL 변경된 모든 리소스 추가]**&#x200B;를 클릭한 다음 **[!UICONTROL 개발용으로 저장 및 빌드]**&#x200B;를 클릭합니다.
 
-#### 환경 수준 {#moving-a-library-up-through-environment-levels}을 통해 라이브러리 위로 이동
+#### 환경 수준 {#moving-a-library-up-through-environment-levels}을 통해 라이브러리 이동
 
-1. 새 라이브러리가 추가되면 처음에는 개발 환경에 배치됩니다. 스테이징 환경 수준(제출된 열에 해당)으로 이동하려면 라이브러리의 드롭다운 메뉴에서 **[!UICONTROL 승인을 위해 제출]**&#x200B;을 클릭합니다.
+1. 새 라이브러리가 추가되면 개발 환경에 해당 라이브러리가 있습니다. 스테이징 환경 수준(제출된 열에 해당)으로 이동하려면 라이브러리의 드롭다운 메뉴에서 **[!UICONTROL 승인을 위해 제출]**&#x200B;을 클릭합니다.
 
    ![image2019-7-15_15-52-37](assets/image2019-7-15_15-52-37.png)
 
@@ -631,7 +631,7 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
-1. 유사한 프로세스를 수행하여 라이브러리를 스테이징 환경에서 프로덕션 환경(게시된 열)으로 이동합니다.
+1. 스테이징 환경에서 프로덕션 환경(게시된 열)으로 라이브러리를 이동하려면 유사한 프로세스를 따릅니다.
 
    먼저 드롭다운 메뉴에서 **[!UICONTROL 게시 승인]**&#x200B;을 클릭합니다.
 
@@ -649,18 +649,18 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
 
 전제 조건:
 
-* AEM에서는 작성자 및 게시 인스턴스를 모두 실행합니다.
-* AEM 작성자 노드가 Dynamic Media에 설정되어 있습니다.<!-- Scene7 run mode (dynamicmedia_s7) -->
-* Dynamic Media WCM 구성 요소는 AEM Sites에서 활성화됩니다.
+* Experience Manager은 작성자 및 게시 인스턴스를 모두 실행합니다.
+* Experience Manager 작성자 노드가 Dynamic Media에 설정되어 있습니다.<!-- Scene7 run mode (dynamicmedia_s7) -->
+* Dynamic Media WCM 구성 요소는 Experience Manager 사이트에서 활성화됩니다.
 
-AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
+Experience Manager 구성은 다음 2가지 주요 단계로 구성됩니다.
 
-* AEM IMS 구성
+* Experience Manager IMS 구성
 * Experience Platform Launch 클라우드 구성
 
-### AEM IMS 구성 중. {#configuring-aem-ims}
+### Experience Manager IMS를 구성하는 중입니다. {#configuring-aem-ims}
 
-1. AEM 작성자에서 도구 아이콘(망치)을 클릭한 다음 **[!UICONTROL 보안 > Adobe IMS 구성]**&#x200B;을 클릭합니다.
+1. Experience Manager 작성자에서 도구 아이콘(망치)을 클릭한 다음 **[!UICONTROL 보안 > Adobe IMS 구성]**&#x200B;을 클릭합니다.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
@@ -670,7 +670,7 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
    다음 정보 메시지가 표시됩니다.
 
-   *유효한 액세스 토큰을 검색하려면 새 인증서의 공개 키를 Adobe I/O의 기술 계정에 추가해야 합니다!*.
+   *유효한 액세스 토큰을 검색하려면 새 인증서의 공개 키를 Adobe I/O의 기술 계정에 추가해야 합니다.*
 
    정보 대화 상자를 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
@@ -680,7 +680,7 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
    >[!NOTE]
    >
-   >이 시점에서 ***Adobe IMS 열기***&#x200B;를 종료합니다. 기술 계정 구성&#x200B;]**페이지;***페이지를 닫지 말고******다음을 클릭하지 마십시오.**[!UICONTROL *** 이 페이지는 나중에 단계에서 다시 표시됩니다.
+   >이 시점에서 ***Adobe IMS 열기***&#x200B;를 종료합니다. 기술 계정 구성&#x200B;]**페이지;***페이지를 닫지 말고******다음을 클릭하지 마십시오.**[!UICONTROL *** 이 페이지는 나중에 단계에서 다시 시작합니다.
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
@@ -725,7 +725,7 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
 1. 이전에 열어 둔 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지로 돌아갑니다. 페이지 오른쪽 맨 위에서 **[!UICONTROL 다음]**&#x200B;을 클릭하여 **[!UICONTROL Adobe IMS. 기술 계정 구성]** 창의 **[!UICONTROL 계정]** 페이지를 엽니다.
 
-   (실수로 이전 페이지를 닫은 경우 AEM 작성자로 돌아가서 **[!UICONTROL 도구 > 보안 > Adobe IMS 구성]**&#x200B;을 클릭합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform Launch]**&#x200B;을 선택합니다. **[!UICONTROL 인증서]** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.
+   (이전 페이지를 닫은 경우 Experience Manager 작성자로 돌아간 다음 **[!UICONTROL 도구 > 보안 > Adobe IMS 구성]**&#x200B;을 클릭합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform Launch]**&#x200B;을 선택합니다. **[!UICONTROL 인증서]** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _Adobe IMS 기술 계정 구성 - 인증서 페이지_
@@ -771,17 +771,17 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
 1. **[!UICONTROL 계정]** 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   AEM IMS가 구성된 경우 이제 **[!UICONTROL Adobe IMS 구성]** 아래에 새 IMSAccount가 나열됩니다.
+   Experience Manager IMS가 구성된 경우 이제 **[!UICONTROL Adobe IMS 구성]** 아래에 새 IMSAccount가 나열됩니다.
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
 ## 통합 {#configuring-adobe-launch-cloud-for-the-integration}에 대한 Experience Platform Launch 클라우드 구성
 
-1. AEM 작성자의 왼쪽 위 모서리 근처에 있는 도구 아이콘(망치)을 클릭한 다음 **[!UICONTROL Cloud Services > Experience Platform Launch 구성]**&#x200B;을 클릭합니다.
+1. Experience Manager 작성자의 왼쪽 위 모서리 근처에 있는 도구 아이콘(망치)을 클릭한 다음 **[!UICONTROL Cloud Services > Experience Platform Launch 구성]**&#x200B;을 클릭합니다.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
-1. **[!UICONTROL Experience Platform Launch 구성]** 페이지의 왼쪽 패널에서 Experience Platform Launch 구성을 적용할 AEM 사이트를 선택합니다.
+1. **[!UICONTROL Experience Platform Launch 구성]** 페이지의 왼쪽 패널에서 Experience Platform Launch 구성을 적용할 Experience Manager 사이트를 선택합니다.
 
    일러스트레이션만을 위해 아래 스크린샷에서 **[!UICONTROL We.Retail]** 사이트가 선택됩니다.
 
@@ -792,7 +792,7 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
    * **[!UICONTROL 제목]**  - 설명 구성 제목을 입력합니다. 예, `We.Retail Launch cloud configuration`.
 
-   * **[!UICONTROL 연결된 Adobe IMS 구성]**  - AEM IMS 구성에서 이전에 만든  [IMS 구성을 선택합니다.](#configuring-aem-ims).
+   * **[!UICONTROL 연결된 Adobe IMS 구성]**  - Experience Manager IMS 구성에서 이전에 만든  [IMS 구성을 선택합니다.](#configuring-aem-ims).
 
    * **[!UICONTROL 회사]**  -  **** 회사 드롭다운 목록에서 Experience Cloud 회사를 선택합니다. 목록이 자동으로 채워집니다.
 
@@ -804,9 +804,9 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 1. 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL Experience Platform Launch 구성 만들기]** 창의 **[!UICONTROL 스테이징]** 페이지(2/3페이지)에서 다음 필드를 채웁니다.
 
-   **[!UICONTROL 라이브러리 URI]** 필드에서 Experience Platform Launch 라이브러리의 스테이징 버전의 위치를 확인합니다. AEM에서 이 필드를 자동으로 채웁니다.
+   **[!UICONTROL 라이브러리 URI]** 필드에서 Experience Platform Launch 라이브러리의 스테이징 버전의 위치를 확인합니다. Experience Manager은 이 필드를 자동으로 채웁니다.
 
-   일러스트레이션만을 위해 이 단계에서는 Adobe CDN에 배포된 Experience Platform Launch 라이브러리를 사용합니다.
+   일러스트레이션 목적으로만 이 단계는 Adobe CDN에 배포된 Experience Platform Launch 라이브러리를 사용합니다.
 
    >[!NOTE]
    >
@@ -815,7 +815,7 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
    >
    >예: `//assets.adobetm.com/launch-xxxx`.
 
-   **[!UICONTROL 스테이징]** 페이지는 다음과 비슷해야 합니다. **[!UICONTROL 보관]** 및 **[!UICONTROL 비동기식으로 라이브러리 로드]** 옵션은 ***설정된*** 세트가 아닙니다.
+   **[!UICONTROL 스테이징]** 페이지가 다음과 유사한 것 같습니다. **[!UICONTROL 보관]** 및 **[!UICONTROL 비동기식으로 라이브러리 불러오기]** 옵션은 ***설정되지 않음***:
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
@@ -829,10 +829,10 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
-현재 AEM 작성자는 Experience Platform Launch과 Dynamic Media 뷰어 통합을 지원하지 않습니다.
+현재 Experience Manager 작성자는 Experience Platform Launch과 Dynamic Media 뷰어 통합을 지원하지 않습니다.
 
-하지만 AEM 게시 노드에서 지원됩니다. AEM 게시에서는 Experience Platform Launch 클라우드 구성의 기본 설정을 사용하여 Experience Platform Launch의 제작 환경을 사용합니다. 따라서 테스트 중에 매번 개발 환경에서 프로덕션 환경으로 Experience Platform Launch 라이브러리 업데이트를 푸시해야 합니다.
+그러나 Experience Manager 게시 노드에서 지원됩니다. Experience Platform Launch 클라우드 구성의 기본 설정을 사용하여 Experience Manager 게시는 Experience Platform Launch의 제작 환경을 사용합니다. 따라서 테스트 중에 매번 개발 환경에서 프로덕션 환경으로 Experience Platform Launch 라이브러리 업데이트를 푸시해야 합니다.
 
-위의 AEM 게시를 위한 Experience Platform Launch 클라우드 구성에서 Experience Platform Launch 라이브러리의 개발 또는 스테이징 URL을 지정하여 이 제한을 해결할 수 있습니다. 이렇게 하면 AEM 게시 노드가 Experience Platform Launch 라이브러리의 개발 또는 스테이징 버전을 사용하게 됩니다.
+이 제한 사항을 해결할 수 있습니다. 위의 Experience Manager 게시를 위한 Experience Platform Launch 클라우드 구성에서 Experience Platform Launch 라이브러리의 개발 또는 스테이징 URL을 지정합니다. 이렇게 하면 Experience Manager 게시 노드가 Experience Platform Launch 라이브러리의 개발 또는 스테이징 버전을 사용하도록 됩니다.
 
 Experience Platform Launch 클라우드 구성 설정에 대한 자세한 내용은 [Experience Platform Launch 및 Experience Manager 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations)을 참조하십시오.
