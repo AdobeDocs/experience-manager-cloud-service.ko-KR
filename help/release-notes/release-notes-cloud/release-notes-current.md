@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
+source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1078'
 ht-degree: 3%
 
 ---
@@ -28,27 +28,9 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 ## [!DNL Adobe Experience Manager Sites] Cloud Service  {#sites}
 
-### 헤드리스 컨텐츠 관리 {#headless}
-
-* **[컨텐츠 조각 전달용 GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**:JSON 형식으로 출력하기 위해 GraphQL 구문을 사용하고 컨텐츠 조각 모델을 기반으로 하는 스키마를 사용하여 컨텐츠 조각을 쿼리하는 기능
-
-* **[GraphQL API 요청에 대한 인증 지원](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:서버측 API에 대한 액세스 토큰을 사용하여 GraphQL API 요청을 인증할 수 있습니다.
-
 * **[RemotePage 구성 요소](/help/implementing/developing/hybrid/remote-page.md)**:AEM 내에서 외부 SPA을 보고 편집할 수 있는 지원이 추가되었습니다.
 
 * **[AEM에서 외부 SPA 편집](/help/implementing/developing/hybrid/editing-external-spa.md)**:독립형 단일 페이지 애플리케이션을 AEM 인스턴스에 업로드하고 편집 가능한 컨텐츠 섹션을 추가하고 작성을 활성화하는 기능을 추가했습니다.
-
-* JSON 포맷 및 로캘로 리치 텍스트를 출력하는 기능을 포함하여 GraphQL API에서 향상된 JSON 출력
-
-* 여러 행 텍스트 필드의 전용 컨텐츠 조각 참조 데이터 유형 또는 컨텐츠 조각 참조 인라인을 통해 중첩된 컨텐츠 조각 구조를 만들 수 있도록 컨텐츠 조각 모델을 중첩할 수 있습니다.
-
-* &quot;고유&quot;, &quot;필수&quot; 및 &quot;번역 가능한&quot; 등 컨텐츠 조각 모델 데이터 유형에서 사용할 수 있는 추가 유효성 검사 규칙입니다.
-
-* 컨텐츠 조각 모델에 태그를 지정하고 태그 또는 경로별 정책이 있는 폴더에서 컨텐츠 조각을 작성할 수 있도록 합니다.
-
-* 조각 기반 모델의 게시 작업 및 표시 등 컨텐츠 조각 편집기의 유용성 향상
-
-* 컨텐츠 조각 편집기에서 직접 JSON 출력을 미리 볼 수 있습니다.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -76,6 +58,18 @@ Customers using the Connected Assets feature can now easily view and track asset
 * 긴 주석 텍스트가 있는 에셋을 인쇄하면 공간이 있어도 주석 텍스트가 트림됩니다. (CQ-4314101)
 * 속성을 업데이트하기 위해 여러 자산을 선택하면 오류가 발생하거나 선택 취소된 자산의 속성이 업데이트되는 경우가 있습니다. (CQ-4316532)
 * [!UICONTROL 자산 관리자 검색 레일]을 열려고 하면 페이지가 비어 있는 상태로 남아 있고 [!UICONTROL 편집] > [!UICONTROL 설정]을 클릭하면 오류가 발생합니다. (CQ-4315079)
+
+## Adobe Experience Manager 상거래를 Cloud Service {#cloud-services-commerce}
+
+### 새로운 기능 {#what-is-new-commerce}
+
+* 제품 경험 관리:경험 조각으로 제품 카탈로그 페이지를 개별적으로 보완합니다.
+
+* 연결된 컨텐츠로 신속하게 이동하는 작업을 포함하여 연결된 자산 및 경험 조각을 표시하도록 확장된 제품 콘솔 속성입니다.
+
+* 최신 CIF 코어 구성 요소 버전 v1.8.0을 포함하는 CIF Venia 참조 사이트 - 2021.02.24. 자세한 내용은 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24)를 참조하십시오.
+
+* CIF 코어 구성 요소 v1.8.0 릴리스되었습니다. 자세한 내용은 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)를 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 
