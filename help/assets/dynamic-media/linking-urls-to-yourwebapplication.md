@@ -2,9 +2,9 @@
 title: URL을 웹 애플리케이션에 연결
 description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법입니다.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: dce527d5798ef003dc499baec97b169debab445a
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ URL 문자열을 얻는 방법에는 여러 가지가 있습니다. 그러나 �
 
    * 이미지를 선택한 경우 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
 
-      **[!UICONTROL 동적]** 머리글 아래에서 사전 설정 이름을 탭하여 오른쪽 프레임에서 해당 변환을 봅니다. 동적 제목을 보려면 표현물 목록을 스크롤해야 할 수도 있습니다.
+      **[!UICONTROL 동적]** 머리글 아래에서 사전 설정 이름을 탭하여 오른쪽 프레임에서 해당 변환을 봅니다. 필요한 경우 표현물 목록을 스크롤하여 동적 제목을 확인합니다.
 
       왼쪽 레일 하단에서 **[!UICONTROL URL]**&#x200B;을 탭합니다.
 
@@ -76,13 +76,13 @@ URL 문자열을 얻는 방법에는 여러 가지가 있습니다. 그러나 �
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. 웹 브라우저에 텍스트를 선택하여 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
+1. 자산을 미리 보거나 웹 컨텐츠 페이지에 추가하려면 텍스트를 선택하고 웹 브라우저에 복사합니다.
 
    URL 창을 종료하려면 **[!UICONTROL X]**&#x200B;을 탭하거나 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
 ## 정적 자산 {#obtaining-a-url-for-a-static-asset}에 대한 URL 얻기
 
-Dynamic Media은 이미지 및 비디오를 넘어 추가 자산인 정적 에셋 전달을 지원합니다. 배달할 수 있도록 지원되는 정적 자산 형식은 다음과 같습니다.
+Dynamic Media은 이미지 및 비디오를 넘어 다른 자산인 정적 에셋 전달을 지원합니다. 배달할 수 있도록 지원되는 정적 자산 형식은 다음과 같습니다.
 
 * 3D 파일
 * 애니메이션 GIF
@@ -141,7 +141,7 @@ Dynamic Media은 이미지 및 비디오를 넘어 추가 자산인 정적 에�
 
    (위 경로는 그림 용도로만 사용됩니다.복사하는 실제 경로가 아닙니다.)
 
-1. 복사된 정보를 다음 순서로 배열하여 전체 URL 경로를 형성합니다.
+1. 전체 URL 경로를 만들려면 복사된 정보를 다음 순서로 정렬합니다.
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -149,7 +149,7 @@ Dynamic Media은 이미지 및 비디오를 넘어 추가 자산인 정적 에�
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   게시된 비디오 변환에 대한 전체 비디오 URL입니다.
+   이 경로는 게시된 비디오 변환에 대한 전체 비디오 URL입니다.
 
 ## 응용 스트리밍(HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}에 대한 비디오 URL 얻기
 
@@ -188,7 +188,7 @@ Dynamic Media은 이미지 및 비디오를 넘어 추가 자산인 정적 에�
     </tbody>
    </table>
 
-1. Dynamic Media에서 처리하는 대로 AEM의 전체 비디오 자산 경로를 복사합니다. 이 복사한 비디오 자산 경로는 다음 단계에서 나중에 필요합니다.
+1. Dynamic Media에서 처리하는 대로 AEM의 전체 비디오 자산 경로를 복사합니다. 이 비디오 자산 경로는 이 단계 후반부에서 복사해야 합니다.
 
    예:
 
@@ -196,7 +196,7 @@ Dynamic Media은 이미지 및 비디오를 넘어 추가 자산인 정적 에�
 
 1. 이전에 복사한 모든 조각을 결합하여 다음 순서로 문자열을 생성합니다.
 
-   &lt;>>&lt;>>&lt;>>&lt;>>`video asset path``video service URL``protocol selector``customer name`
+   &lt;>>&lt;>>&lt;>>&lt;>>`video service URL``protocol selector``customer name``video asset path`
 
    예를 들어, 이러한 단계의 예에서 복사한 정보를 사용하면 다음과 같이 문자열이 표시됩니다.
 
