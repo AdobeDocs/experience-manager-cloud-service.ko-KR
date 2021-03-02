@@ -5,10 +5,10 @@ breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
+source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 74%
+source-wordcount: '487'
+ht-degree: 72%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 74%
 + 자산 공유 및 분배 {#brand-portal}
    + [구성  [!DNL Assets] 방법 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [에셋 게시 대상 [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [다음에서 자산  [!DNL Brand Portal] 게시 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 전달](content-fragments/content-fragments-graphql.md)
