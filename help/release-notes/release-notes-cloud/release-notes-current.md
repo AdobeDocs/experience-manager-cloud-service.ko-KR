@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 7c9eea58b8e42902842f5e9658f0fa677f1dc51d
+source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1142'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,10 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 ## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Assets] {#assets}
 
 ## [!DNL Assets] {#what-is-new-assets}의 새로운 기능
+
+* 이제 기업은 [!DNL Brand Portal]을(를) 사용하여 에셋을 소싱할 수 있습니다. 자산 소싱 기능은 [!DNL Brand Portal]을 활용하여 고객이 에이전시 사용자와 교류하여 새로운 마케팅 캠페인, 사진 및 프로젝트에 대한 소스 자산을 활용할 수 있도록 도와줍니다.  [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)에서 [자산 소싱을 참조하십시오.
+
+* 이제 [!DNL Brand Portal] 사용량 보고서에 활성 사용자만 표시됩니다. 비활성 사용자는 지금 표시되지 않습니다. 활성 사용자는 [!DNL Admin Console]에서 제품 프로필에 계정을 할당받은 사용자입니다. [[!DNL Brand Portal] 보고서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)를 참조하십시오.
 
 * [!DNL Brand Portal]에서 폴더, 컬렉션 등을 다운로드할 때 각 자산에 대해 별도의 폴더를 만들 수 있는 새로운 다운로드 설정이 도입되었습니다. [다운로드 설정](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)을 참조하십시오.
 
