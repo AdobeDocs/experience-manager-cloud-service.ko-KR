@@ -2,9 +2,9 @@
 title: 뷰어 사전 설정 관리
 description: Dynamic Media에서 뷰어 사전 설정을 만들고 관리하는 방법입니다.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: dce527d5798ef003dc499baec97b169debab445a
 workflow-type: tm+mt
-source-wordcount: '4246'
+source-wordcount: '4239'
 ht-degree: 1%
 
 ---
@@ -29,17 +29,17 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 >[!NOTE]
 >
->기본적으로 제공되는 *사전 정의된 뷰어 사전 설정*&#x200B;을 편집하면 지원되는 시나리오가 아닙니다. 즉시 사용 가능한 뷰어 사전 설정을 편집하려고 하면 새 이름을 사용하여 뷰어 사전 설정을 저장하라는 메시지가 표시됩니다.
+>*사전 정의된 즉시 사용 가능한 뷰어 사전 설정*&#x200B;을 편집하는 것은 지원되지 않는 시나리오입니다. 즉시 사용 가능한 뷰어 사전 설정을 편집하려고 하면 새 이름을 사용하여 뷰어 사전 설정을 저장하라는 메시지가 표시됩니다.
 
 ## 뷰어에 대한 키보드 액세스 가능성 {#keyboard-accessibility-for-viewers}
 
 모든 기본 뷰어는 키보드 접근성을 지원합니다.
 
-[키보드 액세스 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)도 참조하십시오.
+[키보드 액세스 가능성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)도 참조하십시오.
 
 ## 뷰어 사전 설정 관리 {#managing-viewer-presets-1}
 
-**[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 탭하여 AEM에서 뷰어 사전 설정을 추가, 편집, 삭제, 게시, 게시 취소 및 미리 볼 수 있습니다.
+Adobe Experience Manager에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 탭하여 뷰어 사전 설정을 추가, 편집, 삭제, 게시, 게시 취소 및 미리 볼 수 있습니다.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -49,13 +49,13 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ### 반응형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
 
-웹 페이지마다 요구 사항이 다릅니다. 예를 들어 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지가 필요할 수 있습니다. 다른 경우 호스팅 페이지에 HTML5 뷰어를 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 &quot;반응형&quot;일 수 있으며 다른 장치 또는 다른 브라우저 창 크기에 대해 다르게 표시됩니다. 이러한 요구 사항을 충족하기 위해 Dynamic Media과 함께 제공되는 미리 정의된 즉시 사용 가능한 모든 HTML5 뷰어는 정적 웹 페이지와 반응형 디자인 웹 페이지를 모두 지원합니다.
+웹 페이지마다 요구 사항이 다릅니다. 예를 들어 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지가 필요할 수 있습니다. 다른 경우에는 HTML5 뷰어를 호스팅 페이지에 직접 포함해야 합니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있습니다. 또는 &quot;응답형&quot;이며 다른 장치 또는 다른 브라우저 창 크기에 대해 다르게 표시됩니다. 이러한 요구 사항을 충족하기 위해 Dynamic Media과 함께 제공되는 미리 정의된 즉시 사용 가능한 모든 HTML5 뷰어는 정적 웹 페이지와 반응형 디자인 웹 페이지를 모두 지원합니다.
 
 웹 페이지에 응답형 뷰어를 포함하는 방법에 대한 자세한 내용은 *Dynamic Media 이미지 제공 및 렌더링 API 도움말*&#x200B;의 [응답형 정적 이미지 라이브러리](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)를 참조하십시오.
 
 >[!NOTE]
 >
->처음 사용하기 전에 모든 기본 뷰어를 게시해야 합니다.
+>처음 사용하기 전에 모든 기본 뷰어를 게시합니다.
 >[뷰어 사전 설정 게시를 참조하십시오.](#publishing-viewer-presets)
 
 ### 뷰어 사전 설정 시스템 호환성 {#viewer-preset-system-compatibility}
@@ -67,17 +67,17 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 * Apple iPad
 * Android 스마트폰
 * Android 태블릿
-* 비디오의 경우 [Blackberry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) 및 [Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)에 대한 추가 MP4 재생 지원이 제공됩니다.
+* 비디오의 경우 [BlackBerry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) 및 [Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)에 대한 MP4 재생에 대한 추가 지원이 제공됩니다.
 
 ### 뷰어 사전 설정에 대한 리치 미디어 유형 {#rich-media-types-for-viewer-presets}
 
-관리자는 새 뷰어 사전 설정을 만들 때 다음과 같은 리치 미디어 유형을 추가하고 사용자 정의할 수 있습니다.
+관리자는 뷰어 사전 설정을 만들 때 다음과 같은 리치 미디어 유형을 추가하고 사용자 정의할 수 있습니다.
 
 <table>
  <tbody>
   <tr>
    <td><strong>회전 메뉴 세트</strong><br /> </td>
-   <td><p>핫스팟, 이미지 맵 또는 둘 다 여러 개의 이미지에 추가됩니다. 고객은 이미지를 왼쪽 또는 오른쪽으로 이동시킨 다음 추가 정보를 위해 또는 웹 사이트의 카테고리, 홈 또는 랜딩 페이지에서 직접 구매할 때 이미지의 핫스팟을 클릭할 수 있습니다.</p> </td>
+   <td><p>핫스팟, 이미지 맵 또는 둘 다 여러 개의 이미지에 추가됩니다. 고객은 이미지를 왼쪽 또는 오른쪽으로 이동한 다음 이미지의 핫스팟을 클릭하여 자세한 내용을 확인하거나 웹 사이트의 카테고리, 홈 또는 랜딩 페이지에서 직접 구매할 수 있습니다.</p> </td>
   </tr>
     <tr>
    <td><strong>차원</strong><br /> </td>
@@ -101,7 +101,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>대화형 비디오</strong></td>
-   <td>축소판은 비디오의 타임라인 세그먼트에 추가되며, 고객이 추가 세부 사항을 클릭하거나 웹 사이트의 카테고리, 홈 또는 랜딩 페이지에서 직접 구매할 수 있습니다.</td>
+   <td>축소판은 비디오의 타임라인 세그먼트에 추가되며 고객이 자세한 내용을 살펴보거나 웹 사이트의 카테고리, 홈 또는 랜딩 페이지에서 직접 구매할 수 있습니다.</td>
   </tr>
   <tr>
    <td><strong>혼합 미디어</strong></td>
@@ -125,7 +125,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>360 비디오</strong></td>
-   <td><p>360/VR 비디오 뷰어를 사용하여 등장방형 비디오를 렌더링하여 룸, 재산, 위치, 가로 또는 의료 절차의 몰입형 보기 환경을 구현할 수 있습니다.</p> <p>평면 디스플레이에서 재생하는 동안 사용자가 보기 각도를 제어할 수 있습니다.모바일 디바이스에서 재생하는 경우 일반적으로 내장된 자이로스코프 컨트롤을 활용할 수 있습니다.</p> <p>뷰어에는 360개의 비디오 에셋 전달에 대한 기본 지원이 포함되어 있습니다. 기본적으로 보거나 재생하는 데 추가 구성이 필요하지 않습니다. .mp4, .mkv 및 .mov와 같은 표준 비디오 확장을 사용하여 360개의 비디오를 제공할 수 있습니다. 가장 일반적인 코덱은 H.264입니다.</p> </td>
+   <td><p>360/VR 비디오 뷰어를 사용하여 등장방형 비디오를 렌더링하여 룸, 재산, 위치, 가로 또는 의료 절차의 몰입형 보기 환경을 구현할 수 있습니다.</p> <p>평면 디스플레이에서 재생하는 동안 사용자가 보기 각도를 제어할 수 있습니다. 모바일 디바이스에서 재생은 내장된 자이로스코프 컨트롤을 사용합니다.</p> <p>뷰어에는 360개의 비디오 에셋 전달에 대한 기본 지원이 포함되어 있습니다. 기본적으로 보거나 재생하는 데 추가 구성이 필요하지 않습니다. .mp4, .mkv 및 .mov와 같은 표준 비디오 확장을 사용하여 360개의 비디오를 제공할 수 있습니다. 가장 일반적인 코덱은 H.264입니다.</p> </td>
   </tr>
   <tr>
    <td><strong>비디오</strong></td>
@@ -135,7 +135,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
    <td><strong>세로 확대/축소</strong></td>
    <td><p>세로 확대/축소 뷰어를 사용하면 제품 이미지를 최대화하여 제품을 가장 잘 표현할 수 있습니다. 색상 견본의 수직 위치는 다음과 같습니다.</p>
     <ul>
-     <li>견본이 "접힌 항목 위"에 있는지 확인합니다.<br/> 가로 색상 견본을 사용하면 사용자의 데스크탑 화면 크기에 따라 사용자가 페이지를 스크롤할 때까지 색상 견본을 볼 수 없었습니다. 뷰어에 색상 견본을 세로로 배치하면 사용자의 화면 크기와 상관없이 견본이 표시되도록 할 수 있습니다.</li>
+     <li>견본이 "접힌 항목 위"에 있는지 확인합니다.<br/> 가로 색상 견본을 사용하면 사용자의 데스크탑 화면 크기에 따라 사용자가 페이지를 아래로 스크롤할 때까지 색상 견본이 표시되지 않습니다. 뷰어에 색상 견본을 세로로 배치하면 사용자의 화면 크기와 상관없이 견본이 표시되도록 할 수 있습니다.</li>
      <li>기본 이미지 크기를 최대화합니다.<br /> 가로 색상 견본을 사용하면 페이지의 공간이 표시되는지 확인해야 합니다. 이 위치 지정은 기본 이미지의 크기를 줄여줍니다. 그러나 세로 견본 레이아웃에서는 이 공간을 할당할 필요가 없습니다. 따라서 기본 이미지 크기를 최대화할 수 있습니다.</li>
     </ul> </td>
   </tr>
@@ -158,7 +158,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 >[!NOTE]
 >
->Dynamic Media의 모든 즉시 사용 가능한 뷰어 사전 설정이 이미 활성화(켜짐)되었지만 게시해야 합니다.
+>Dynamic Media의 모든 즉시 사용 가능한 뷰어 사전 설정이 활성화(켜기)되지만 게시해야 합니다.
 >[게시 뷰어 사전 설정](#publishing-viewer-presets)을 참조하십시오.
 >
 >만들고 추가하는 모든 새로운 뷰어 사전 설정은 활성화되어야 하며 *게시되어야 합니다.
@@ -368,9 +368,9 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 ## {#increasing-the-number-of-viewer-presets-that-display}을(를) 표시하는 뷰어 사전 설정 수 증가
 
-AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을 볼 때 다양한 뷰어 사전 설정을 표시합니다. 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
+Experience Manager은 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산을 볼 때 다양한 뷰어 사전 설정을 표시합니다. 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
 
-**표시되는 뷰어 사전 설정 수를 늘리려면**
+**표시되는 뷰어 사전 설정 수를 늘리려면**:
 
 1. CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))로 이동합니다.
 1. `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`의 뷰어 사전 설정 목록 노드로 이동합니다.
@@ -387,9 +387,9 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 ## 뷰어 사전 설정 만들기 {#creating-a-new-viewer-preset}
 
-뷰어 사전 설정을 만들면 다양한 설정을 적용하여 자산을 보고 상호 작용할 수 있습니다. 그러나 새 뷰어 사전 설정을 만들 필요는 없습니다. 원하는 경우 AEM Assets에 이미 포함되어 있는 기본 즉시 사용 가능한 뷰어 사전 설정을 사용할 수 있습니다.
+뷰어 사전 설정을 만들면 다양한 설정을 적용하여 자산을 보고 상호 작용할 수 있습니다. 그러나 뷰어 사전 설정을 만들 필요는 없습니다. 원하는 경우 Experience Manager 에셋에 이미 포함되어 있는 기본 기본 기본 기본 기본 특별 뷰어 사전 설정을 사용할 수 있습니다.
 
-새 뷰어 사전 설정을 만들도록 선택하는 경우, 저장한 후 [뷰어 사전 설정] 페이지에서 뷰어 상태가 자동으로 활성화됩니다(**[!UICONTROL On]**&#x200B;으로 설정). 이 상태는 Dynamic Media 구성 요소 및 대화형 미디어 구성 요소에서 그리고 이미지나 비디오를 미리 볼 때마다 표시되도록 합니다.
+뷰어 사전 설정을 만들도록 선택하는 경우, 저장한 후 뷰어 사전 설정 페이지에서 뷰어 상태가 자동으로 활성화됩니다(설정된 경우 **[!UICONTROL On]**). 이 상태는 Dynamic Media 구성 요소 및 대화형 미디어 구성 요소에서 그리고 이미지나 비디오를 미리 볼 때마다 표시되도록 합니다.
 
 일부 뷰어 사전 설정에는 뷰어의 사용 및 전반적인 비헤이비어에 영향을 줄 수 있는 전용 설정이 있습니다. 만드는 뷰어 사전 설정에 따라 이러한 특별한 고려 사항을 알고 싶을 수 있습니다.
 
@@ -397,9 +397,9 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 회전판 배너 뷰어 사전 설정](#special-considerations-for-creating-a-carousel-banner-viewer-preset)을 만들기 위한 특별한 고려 사항을 참조하십시오.[
 
-**뷰어 사전 설정을 만들려면**
+**뷰어 사전 설정을 만들려면**:
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -417,23 +417,23 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
    * **[!UICONTROL 선택한 유형]** 풀다운 메뉴에서 시각 디자인을 사용자 정의할 구성 요소를 선택합니다. 또는 뷰어에서 시각적 요소를 탭하거나 클릭하여 구성할 수 있습니다.
 
-      시각적 편집기를 사용하면 특정 속성이 스타일에 어떤 영향을 주는지 확인할 수 있습니다. 편집기의 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있도록 속성을 설정하거나 조정하기만 하면 됩니다.
+      시각적 편집기를 사용하면 특정 속성이 스타일에 어떤 영향을 주는지 확인할 수 있습니다. 편집기의 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있도록 속성을 설정하거나 조정합니다.
 
       각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 &quot;Customizing *`<viewer name>`* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 `Mixed_Media` 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록과 설명은 [혼합 미디어 뷰어 사용자 정의](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)를 참조하십시오.
 
-   * 별도의 CSS 파일에 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면 **[!UICONTROL 선택한 유형]** 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS 가져오기]**&#x200B;를 탭합니다(시각적 편집기를 위로 스크롤하여 보려면 해당 파일을 확인해야 할 수 있음).
+   * 별도의 CSS 파일에 스타일 설정을 정의한 경우 CSS 파일을 Experience Manager 자산에 업로드할 수 있습니다. 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면 **[!UICONTROL 선택한 유형]** 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS 가져오기]**&#x200B;를 누릅니다(필요한 경우 시각적 편집기를 위로 스크롤하여 확인합니다).
 
       CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 뷰어 클래스 이름 `.s7mixedmediaviewer`을 사용하여 정의해야 합니다.
 
-      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 손으로 만든 CSS를 가져올 수 있습니다. (CSS 마커는 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 &quot;Customizing *&lt;viewer name>* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 확대/축소 뷰어의 CSS 마커에 대해 읽으려면 [확대/축소 뷰어 사용자 정의](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)를 참조하십시오.) 그러나 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
+      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 손으로 만든 CSS를 가져올 수 있습니다. (CSS 마커는 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 &quot;Customizing *&lt;viewer name>* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 확대/축소 뷰어의 CSS 마커에 대해 읽으려면 [확대/축소 뷰어 사용자 정의](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)를 참조하십시오.) 하지만 시각적 편집기가 일부 CSS 값을 이해하지 못할 수 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
    >[!NOTE]
    >
-   >CSS를 Raw 형식으로 직접 편집하려면 선택한 유형 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS 표시/숨기기]**를 누릅니다(보기 위해 시각적 편집기를 위로 스크롤해야 할 수 있음).
-   >시각적 편집기와 마찬가지로 CSS에서 바로 속성을 변경하면 뷰어 샘플에 어떤 영향이 있는지 즉시 확인할 수 있습니다. 시각적 편집기에서 동일한 속성이 동시에 자동으로 업데이트됩니다. 이처럼 원시 CSS 편집기 또는 시각적 편집기를 사용하거나 두 가지 모두를 혼용하여 사용할 수 있습니다.
+   >CSS를 원시 형식으로 직접 편집하려면 [선택한 유형] 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS 표시/숨기기]**를 누릅니다(필요한 경우 시각적 편집기를 위로 스크롤하여 확인합니다).
+   >시각적 편집기와 같이 CSS에서 바로 속성을 변경하면 뷰어 샘플에 어떤 영향이 있는지 즉시 확인할 수 있습니다. 시각적 편집기에서 동일한 속성이 동시에 자동으로 업데이트됩니다. 이처럼 원시 CSS 편집기 또는 시각적 편집기를 사용하거나 두 가지 모두를 혼용하여 사용할 수 있습니다.
 
    >[!NOTE]
    >
-   >버튼 아트웍의 경우 2x 이미지를 선택하고 고해상도 아트웍을 업로드합니다. 인터랙티브한 이미지 및 쇼퍼블 배너를 사용하여 작업할 때 즉시 사용 가능한 다양한 핫스팟 단추에서 선택할 수도 있습니다.
+   >단추 아트웍의 경우 2x 이미지를 선택하고 고해상도 아트웍을 업로드합니다. 인터랙티브한 이미지 및 쇼퍼블 배너를 사용하여 작업할 때 즉시 사용 가능한 다양한 핫스팟 단추 중에서 선택할 수도 있습니다.
 
 1. (선택 사항) [뷰어 사전 설정 편집] 페이지의 위쪽 근처에 있는 **[!UICONTROL 데스크톱]**, **[!UICONTROL 태블릿]** 또는 **[!UICONTROL 전화]**&#x200B;를 탭하여 다른 장치 및 화면 유형에 대한 시각적 스타일을 고유하게 정의합니다.
 1. 뷰어 사전 설정 편집기 페이지에서 **[!UICONTROL 비헤이비어]** 탭을 누릅니다. 또는 뷰어에서 시각적 요소를 탭하거나 클릭하여 구성할 수 있습니다.
@@ -457,9 +457,9 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 ### 대화형 뷰어 사전 설정 {#special-considerations-for-creating-an-interactive-viewer-preset}을(를) 만들기 위한 특수 고려 사항
 
-**패널의 이미지 축소판의 표시 모드 정보**
+**패널의 이미지 축소판의 표시 모드 정보**:
 
-대화형 비디오 뷰어 사전 설정을 만들거나 편집할 때 **[!UICONTROL 동작]** 탭 아래의 **[!UICONTROL 선택한 구성 요소]** 풀다운 메뉴에서 `InteractiveSwatches`을 선택하면 사용할 표시 모드 설정을 선택할 수 있습니다. 선택한 표시 모드는 비디오가 재생되는 동안 축소판이 표시되는 방법과 시기에 영향을 줍니다. `segment`표시 모드(기본값) 또는 `continuous` 표시 모드를 선택할 수 있습니다.
+대화형 비디오 뷰어 사전 설정을 만들거나 편집할 때 사용할 [표시 모드] 설정을 선택할 수 있습니다. 이 선택 사항은 **[!UICONTROL 동작]** 탭 아래의 **[!UICONTROL 선택한 구성 요소]** 풀다운 메뉴에서 `InteractiveSwatches`을 선택하면 발생합니다. 선택한 표시 모드는 비디오가 재생되는 동안 축소판이 표시되는 방법과 시기에 영향을 줍니다. `segment`표시 모드(기본값) 또는 `continuous` 표시 모드를 선택할 수 있습니다.
 
 <table>
  <tbody>
@@ -469,16 +469,16 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
   </tr>
   <tr>
    <td>세그먼트</td>
-   <td><p><code>Segment </code>은 사용자가 직접 만드는 기본 대화형 비디오 뷰어 사전 설정 <code>Shoppable_Video_light</code> 및 <code>Shoppable_Video_dark</code> 및 모든 대화형 비디오 뷰어 사전 설정에 대한 기본 표시 모드입니다.</p> <p>이 모드에서는 표시 패널에 표시된 별점의 수보다 비디오 세그먼트에 할당된 축소판이 더 적으면 다음 또는 이전 하위 세그먼트의 축소판은 패널의 빈 지점을 채우기 위해 </i>가져오지 <i>않습니다. 즉, 특정 비디오 세그먼트에 할당된 색상 견본의 표시를 유지합니다.</i></p> </td>
+   <td><p><code>Segment </code>은 사용자가 직접 만드는 기본 대화형 비디오 뷰어 사전 설정 <code>Shoppable_Video_light</code> 및 <code>Shoppable_Video_dark</code> 및 모든 대화형 비디오 뷰어 사전 설정에 대한 기본 표시 모드입니다.</p> <p>이 모드에서 표시 패널에 표시된 별점의 수보다 비디오 세그먼트에 할당된 축소판이 적다고 가정합니다. 이 경우 다음 또는 이전 하위 세그먼트의 축소판은 패널의 빈 지점을 채우기 위해 </i>가져오지 않은 <i>입니다. 즉, 특정 비디오 세그먼트에 할당된 색상 견본의 표시를 유지합니다.</i></p> </td>
   </tr>
   <tr>
    <td>연속</td>
-   <td><p><code>continuous </code>표시 모드에서 세그먼트에 있는 축소판 수가 패널에 표시되는 축소판 수보다 적은 경우 뷰어는 마지막 축소판이 표시되는 경우 다음 세그먼트 또는 이전 세그먼트의 축소판 표시를 자동으로 포함합니다.</p> <p>이 항목</a>의 <a href="/help/assets/dynamic-media/interactive-videos.md">비디오는 <code>continuous </code>표시 모드의 예입니다.</a></p> </td>
+   <td><p><code>continuous </code>표시 모드에서 세그먼트의 축소판 수가 패널에 표시되는 수보다 적다고 가정합니다. 이러한 경우 뷰어는 마지막 축소판이 표시되는 이전 세그먼트 또는 다음 세그먼트의 축소판을 자동으로 표시합니다.</p> <p>이 항목</a>의 <a href="/help/assets/dynamic-media/interactive-videos.md">비디오는 <code>continuous </code>표시 모드의 예입니다.</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-**대화형 비디오 뷰어의 자동 스크롤 동작 정보**
+**대화형 비디오 뷰어의 자동 스크롤 동작 정보**:
 
 대화형 비디오 뷰어에서 축소판의 자동 스크롤 동작은 선택한 표시 모드와 독립적으로 작동합니다.
 
@@ -500,11 +500,11 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 사용 가능한 위치의 수에 따라 뷰어에서 패널에 표시되는 축소판 수에 대해 사용하는 논리는 다음과 같습니다.
 
-* 하위 세그먼트 수 = 다음 하위 세그먼트로 반올림합니다(브라우저 창 크기에 따라 축소판 수 / 축소판 패널에 표시되는 슬롯 수).
-위의 표에서 예제를 사용하면, 9개의 축소판 / 4개의 슬롯 = 2.25가 됩니다.뷰어 논리는 최대 3개의 하위 세그먼트로 반올림합니다.
+* 하위 세그먼트 수 = 다음 하위 세그먼트로 반올림합니다(브라우저 창 크기에 따라 축소판 수/축소판 패널에 표시되는 슬롯 수).
+위의 표에서 예제를 사용하면, 9개의 축소판 / 4개의 슬롯 = 2.25가 됩니다.뷰어 논리는 최대 3개의 하위 세그먼트를 반올림합니다.
 
 * 축소판 수 = 다음 축소판(축소판 수 / 비디오 하위 세그먼트 수)로 둥글게 표시됩니다.
-위의 표에 나온 예제를 사용하여, 9개의 축소판 / 3개의 비디오 하위 세그먼트 = 3개의 축소판을 사용합니다.
+위의 표에 나온 예를 사용하면, 9개의 축소판 / 3개의 비디오 하위 세그먼트 = 3개의 축소판이 있습니다.
 
 * 하위 세그먼트 지속 시간 = 총 비디오 지속 시간/비디오 하위 세그먼트 수입니다.
 위의 표에 나온 예제를 사용하여 30초 / 3개의 비디오 하위 세그먼트 = 각 비디오 하위 세그먼트의 10초 표시
@@ -519,11 +519,11 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 ## 뷰어 사전 설정 활성화 또는 비활성화 {#activating-or-deactivating-viewer-presets}
 
-사용자 인터페이스에서 사용할 수 있는 뷰어 사전 설정은 작성자 모드에서 활성 상태인 설정에 따라 달라집니다. 기본적으로 뷰어 사전 설정은 만든 후 &quot;켜기&quot;입니다. 사전 설정을 끄면 [작성자] 모드에서 사전 설정이 표시되지 않습니다. 사전 설정이 게시된 경우 켜지거나 꺼지든 상관없이 항상 게시됩니다. 목록이 너무 복잡하거나 뷰어 사전 설정을 사용할 수 없도록 하려는 경우 뷰어 사전 설정을 비활성화할 수 있습니다.
+사용자 인터페이스에서 사용할 수 있는 뷰어 사전 설정은 작성자 모드에서 활성 상태인 설정에 따라 달라집니다. 기본적으로 뷰어 사전 설정은 만든 후 &quot;켜기&quot;입니다. 사전 설정을 끄면 [작성자] 모드에서 사전 설정이 표시되지 않습니다. 사전 설정이 게시되면 설정 또는 해제 여부에 관계없이 항상 게시됩니다. 목록이 너무 복잡하거나 뷰어 사전 설정을 사용할 수 없도록 하려면 뷰어 사전 설정을 비활성화합니다.
 
-**뷰어 사전 설정을 활성화 또는 비활성화하려면**
+**뷰어 사전 설정을 활성화 또는 비활성화하려면**:
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
 1. 뷰어 사전 설정 페이지의 **[!UICONTROL 상태]** 열 헤더 아래에서 토글을 눌러 뷰어 사전 설정을 활성화하거나 비활성화합니다.
 
    활성화되는 뷰어 사전 설정은 파란색 상자 내에 전환을 오른쪽에 표시합니다.비활성화된 뷰어 사전 설정에는 밝은 회색 상자 안에 토글이 표시됩니다.
@@ -532,33 +532,33 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 뷰어 사전 설정의 상태를 활성화(또는 &quot;켜기&quot;)하는 것은 Dynamic Media 구성 요소, Interactive Media 구성 요소에서 그리고 자산을 볼 때마다 해당 사전 설정이 표시된다는 것을 의미합니다.
 
-그러나 뷰어 사전 설정이 있는 에셋을 제공하려면 뷰어 사전 설정도 게시해야 합니다.* 자산에 대한 URL 또는 포함 코드를 얻으려면 모든 뷰어 사전 설정을 활성화하거나 *게시해야 합니다. Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정을 활성화하고 게시해야 합니다. 만들고 추가하는 사용자 정의 뷰어 사전 설정은 자동 활성화되지만 게시되어야 합니다.
+그러나 뷰어 사전 설정이 있는 자산을 *제공*&#x200B;하려면 뷰어 사전 설정도 게시해야 합니다. URL 또는 에셋의 포함 코드를 얻으려면 모든 뷰어 사전 설정을 *및*&#x200B;으로 활성화해야 합니다. Dynamic Media과 함께 제공되는 즉시 사용 가능한 모든 뷰어 사전 설정을 활성화하고 게시할 수 있습니다. 만들고 추가하는 사용자 정의 뷰어 사전 설정은 자동 활성화되지만 게시되어야 합니다.
 
 [뷰어 사전 설정 활성화 또는 비활성화](#activating-or-deactivating-viewer-presets)를 참조하십시오.
 
 [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)를 참조하십시오.
 
-**뷰어 사전 설정을 게시하려면**
+**뷰어 사전 설정을 게시하려면**:
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
 1. 게시할 뷰어 사전 설정을 하나 이상 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 게시]** 아이콘을 누릅니다.
 
 ## 뷰어 사전 설정 정렬 {#sorting-viewer-presets}
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 사전 설정 제목]**, **[!UICONTROL 유형]**, **[!UICONTROL 게시된]** 또는 **[!UICONTROL 상태]**&#x200B;을 클릭하여 해당 열 제목을 기준으로 정렬합니다. 예를 들어 **[!UICONTROL 유형]**&#x200B;을 클릭하여 뷰어 사전 설정 유형을 알파벳 순 또는 역 알파벳순으로 정렬합니다.
 
 ## 뷰어 사전 설정 편집 {#editing-viewer-presets}
 
-기본적으로 제공되는 *사전 정의된 뷰어 사전 설정*&#x200B;을 편집하면 지원되는 시나리오가 아닙니다. 즉시 사용 가능한 뷰어 사전 설정을 편집하는 경우 새 이름으로 저장하라는 메시지가 표시됩니다.
+*사전 정의된 즉시 사용 가능한 뷰어 사전 설정*&#x200B;을 편집하는 것은 지원되지 않는 시나리오입니다. 즉시 사용 가능한 뷰어 사전 설정을 편집하는 경우 새 이름으로 저장하라는 메시지가 표시됩니다.
 
-**뷰어 사전 설정을 편집하려면**
+**뷰어 사전 설정을 편집하려면**:
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
 1. 뷰어 사전 설정 제목 왼쪽에 있는 상자를 선택하여 사전 설정을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 누릅니다.
-1. **[!UICONTROL 뷰어 사전 설정 편집기]** 페이지에서 **[!UICONTROL 모양]** 및 **[!UICONTROL 동작]** 탭에 있는 옵션을 사용하여 뷰어 사전 설정에 대한 변경 작업을 수행합니다.
+1. **[!UICONTROL 뷰어 사전 설정 편집기]** 페이지에서 **[!UICONTROL 모양]** 및 **[!UICONTROL 비헤이비어]** 탭에 있는 옵션을 사용하여 뷰어 사전 설정을 변경합니다.
 
    [뷰어 사전 설정 편집기] 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모양]** 탭에서 **[!UICONTROL 데스크톱]**, **[!UICONTROL 태블릿]** 또는 **[!UICONTROL Phone]**&#x200B;을 탭하여 자산의 프레젠테이션 모드를 변경합니다.
 
@@ -571,9 +571,9 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 만들고 Dynamic Media에 추가한 뷰어 사전 설정을 삭제할 수 있습니다.
 
-**사용자 정의 뷰어 사전 설정을 삭제하려면**
+**사용자 정의 뷰어 사전 설정을 삭제하려면 다음을 수행하십시오**.
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
 1. [뷰어 사전 설정] 페이지에서 사전 설정 제목을 선택한 다음 **[!UICONTROL 휴지통]** 아이콘을 누릅니다.
 1. **[!UICONTROL 삭제]**&#x200B;를 누릅니다.
 
@@ -581,7 +581,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 자산과 선택한 뷰어를 모두 이미 게시한 경우 뷰어 사전 설정을 선택하면 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 단추가 표시됩니다.
 
-**자산에 뷰어 사전 설정을 적용하려면**
+**자산에 뷰어 사전 설정을 적용하려면**:
 
 1. 자산을 열고 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 메뉴를 누른 다음 **[!UICONTROL 뷰어]**&#x200B;를 선택합니다.
 
@@ -589,7 +589,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
    >
    >자산과 선택한 뷰어를 모두 이미 게시한 경우 뷰어 사전 설정을 선택하면 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 단추가 표시됩니다.
 
-1. 왼쪽 창에서 뷰어 사전 설정을 선택하여 자산에 적용합니다.
+1. 자산에 적용하려면 왼쪽 창에서 뷰어 사전 설정을 선택합니다.
 
    [URL을 복사하여 다른 사용자와](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을(를) 공유할 수 있습니다.
 
@@ -597,4 +597,4 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;의 자산을
 
 뷰어 사전 설정에 대한 URL을 가져오려면 [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 웹 페이지에 비디오 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.[
 
-AEM을 WCM으로 사용하는 경우 페이지에 있는 뷰어 사전 설정을 사용하여 자산을 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+Experience Manager을 WCM으로 사용하는 경우 페이지에 있는 뷰어 사전 설정을 사용하여 자산을 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
