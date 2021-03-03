@@ -2,9 +2,9 @@
 title: SPA 및 서버측 렌더링
 description: SPA에서 SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 클라이언트에 추가 렌더링을 전달할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ SSR을 사용할 때 AEM의 [구성 요소 상호 작용 워크플로](introduct
    <th><strong>단점</strong></th>
   </tr>
   <tr>
-   <th><strong>aem</strong><br /> </th>
+   <th><strong>AEM</strong><br /> </th>
    <td>
     <ul>
      <li>AEM, 필요한 경우 라이브러리 삽입 관리</li>
@@ -111,7 +111,7 @@ SSR을 사용할 때 AEM의 [구성 요소 상호 작용 워크플로](introduct
     </ul> </td>
   </tr>
   <tr>
-   <th><strong>adobe i/o runtime<br /> </strong></th>
+   <th><strong>Adobe I/O Runtime<br /> </strong></th>
    <td>
     <ul>
      <li>SPA 개발자에게 보다 친숙한 <br /> </li>
@@ -142,7 +142,7 @@ SSR을 활용하려면 코드를 AEM뿐만 아니라 서버측 렌더링을 담�
 
 AEM의 SPA용 SSR을 사용하려면 Adobe I/O Runtime이 필요합니다. 이 SSR은 앱 콘텐츠 서버 쪽의 렌더링에 대해 호출됩니다. 앱의 HTL 내에서 콘텐츠를 렌더링하기 위해 Adobe I/O Runtime의 리소스가 호출됩니다.
 
-AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원하는 것과 마찬가지로 서버측 렌더링도 Angular 및 Reimate 앱에 대해 지원됩니다. 자세한 내용은 두 프레임워크에 대한 NPM 설명서를 참조하십시오.
+AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원하는 것처럼 Angular 및 Response 앱에 대해 서버측 렌더링도 지원됩니다. 자세한 내용은 두 프레임워크에 대한 NPM 설명서를 참조하십시오.
 
 ## 원격 컨텐츠 렌더러 {#remote-content-renderer}
 
@@ -150,7 +150,7 @@ AEM에서 SPA과 함께 SSR을 사용하는 데 필요한 [원격 컨텐츠 렌�
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` 는 Adobe I/O과 같이 원격 서버에서 렌더링된 내용을 검색하기 위한 OSGi 서비스입니다.원격 서버로 보낸 내용은 전달된 요청 매개 변수를 기반으로 합니다.
+`RemoteContentRenderingService` 는 Adobe I/O과 같이 원격 서버에서 렌더링된 내용을 검색하는 OSGi 서비스입니다.원격 서버로 보낸 내용은 전달된 요청 매개 변수를 기반으로 합니다.
 
 `RemoteContentRenderingService` 추가 컨텐츠 조작이 필요할 때 종속성 전환을 통해 사용자 지정 Sling 모델이나 서블릿에 삽입할 수 있습니다.
 
