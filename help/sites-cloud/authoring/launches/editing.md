@@ -2,10 +2,10 @@
 title: 론치 편집
 description: '페이지(또는 페이지 세트)에 대한 론치를 만들면 페이지의 론치 카피에서 컨텐츠를 편집할 수 있습니다. '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 81%
+source-wordcount: '555'
+ht-degree: 76%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 81%
 페이지를 편집할 때 위쪽 도구 모음에는 **Leave** 및 **탐색** 옵션과 함께 표시가 나타납니다.
 
 ![페이지 편집기에서 시작 및 탐색](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>론치 내에서 페이지를 이동할 수 없습니다. 이 작업을 시도하면 경고 메시지가 트리거됩니다.
+>
+>* 경고:이 페이지는 론치의 소스입니다. 페이지를 이동할 수 없습니다.
+
 
 ### Live Copy에 따른 론치 페이지 편집 {#editing-launch-pages-subject-to-a-live-copy}
 
