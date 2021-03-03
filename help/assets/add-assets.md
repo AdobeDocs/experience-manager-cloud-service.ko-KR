@@ -2,9 +2,9 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
+source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1951'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 |---------------------|----------------|-----------------|
 | [자산 콘솔 사용자 인터페이스](#upload-assets) | 가끔 업로드, 간편한 누르기 및 드래그, 파인더 업로드. 많은 수의 자산을 업로드하는 데 사용하지 마십시오. | 모든 사용자 |
 | [API 업로드](#upload-using-apis) | 업로드하는 동안 다이내믹한 결정을 내릴 수 있습니다. | 개발자 |
-| [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 볼륨 에셋 수집이 낮지만 마이그레이션입니다. | 관리자, 마케터 |
+| [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 볼륨 자산 수집이 낮지만 마이그레이션이 아닙니다. | 관리자, 마케터 |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 크리에이티브 및 마케터가 지원되는 [!DNL Creative Cloud] 데스크탑 앱 내에서 자산을 작업하는 경우에 유용합니다. | 크리에이티브, 마케터 |
 | [자산 일괄 인제스트 또는](#asset-bulk-ingestor) | 대규모 마이그레이션 및 때때로 대량 인제스트 시 권장됩니다. 지원되는 데이터 저장소에 대해서만 가능합니다. | 관리자, 개발자 |
 
