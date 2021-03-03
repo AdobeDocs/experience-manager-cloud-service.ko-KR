@@ -3,9 +3,9 @@ title: 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는  [!DNL Adobe Experience Manager Assets] 의 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
+source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 보고서 관리 인터페이스는 직관적이며, 보관된 보고서에 액세스하고 보고서 실행 상태(성공, 실패 및 큐에 있음)를 볼 수 있도록 세부적으로 분류된 옵션과 컨트롤을 포함합니다.
 
-보고서가 생성되면 <!-- through an email (optional) and -->의 받은 편지함 알림을 받게 됩니다. 이전에 생성한 모든 보고서가 표시되는 보고서 목록 페이지에서 보고서를 보거나, 다운로드하거나, 삭제할 수 있습니다.
+보고서가 생성되면 <!-- through an email (optional) and --> 받은 편지함 알림을 통해 사용자에게 알립니다. 이전에 생성한 모든 보고서가 표시되는 보고서 목록 페이지에서 보고서를 보거나, 다운로드하거나, 삭제할 수 있습니다.
 
 ## 보고서 생성 {#generate-reports}
 
@@ -66,9 +66,7 @@ ht-degree: 2%
 
    ![보고서 세부 사항을 추가할 페이지](assets/report_configuration.png)
 
-   보고서의 날짜 범위를 선택합니다.
-
-   지금 또는 미래 날짜와 시간에 보고서를 생성하도록 선택할 수 있습니다.
+   보고서의 날짜 범위를 선택합니다. 지금 또는 미래 날짜와 시간에 보고서를 생성하도록 선택할 수 있습니다.
 
    >[!NOTE]
    >
@@ -109,7 +107,7 @@ ht-degree: 2%
 
    도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 CSV 형식으로 보고서를 다운로드합니다.
 
-## 사용자 지정 열 추가 {#add-custom-columns}
+## 보고서 {#add-custom-columns}에 사용자 지정 열 추가
 
 다음 보고서에 사용자 지정 열을 추가하여 사용자 지정 요구 사항에 대한 데이터를 더 많이 표시할 수 있습니다.
 
@@ -126,10 +124,11 @@ ht-degree: 2%
 1. [!DNL Manager interface]에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 보고서]**&#x200B;를 클릭합니다.
 1. [!UICONTROL 자산 보고서] 페이지의 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL 보고서 만들기]** 페이지에서 만들 보고서를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 제목, 설명, 축소판, 폴더 경로 및 해당되는 날짜 범위와 같은 보고서 세부 사항을 구성합니다.
+1. **[!UICONTROL 보고서 만들기]** 페이지에서 만들 보고서를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. 사용자 지정 열을 표시하려면 **[!UICONTROL 사용자 지정 열]** 아래에 열 이름을 지정합니다.
+1. 제목, 설명, 축소판, 폴더 경로 및 해당되는 날짜 범위와 같은 보고서 세부 사항을 구성합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+
+1. **[!UICONTROL 기본 열]** 목록에서 해당 정보를 선택합니다. 사용자 지정 열을 표시하려면 **[!UICONTROL 사용자 지정 열]** 아래에 열 이름을 지정합니다.
 
    ![보고서의 사용자 지정 열 이름 지정](assets/custom_columns-1.png)
 
@@ -137,7 +136,7 @@ ht-degree: 2%
 
    ![jcr:content의 경로에서 속성 경로를 매핑합니다.](assets/property_picker.png)
 
-   사용자 지정 열을 더 추가하려면 **[!UICONTROL 추가]**&#x200B;를 클릭하고 5 및 6단계를 반복합니다.
+   사용자 지정 열을 더 추가하려면 **[!UICONTROL 추가]**&#x200B;를 클릭하고 위 단계를 반복합니다.
 
 1. 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 
@@ -153,6 +152,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## 문제 해결 정보, 팁 및 제한 사항 {#best-practices-and-limitations}
+## 문제 해결 정보 및 팁 {#tips-troubleshoot}
 
-* 디스크 사용량 보고서가 생성되지 않고 [!DNL Dynamic Media]을 사용하고 있는 경우 모든 에셋이 올바르게 진행되는지 확인하십시오. 해결하려면 자산을 재처리한 후 보고서를 다시 생성합니다.
+* [!UICONTROL 디스크 사용량 보고서]이 생성되지 않고 [!DNL Dynamic Media]를 사용하는 경우 모든 에셋이 올바르게 진행되는지 확인하십시오. 해결하려면 자산을 재처리하고 보고서를 다시 생성합니다.
