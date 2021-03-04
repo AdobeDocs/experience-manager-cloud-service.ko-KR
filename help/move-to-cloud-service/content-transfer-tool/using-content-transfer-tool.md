@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
+source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 58%
@@ -178,7 +178,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >통합&#x200B;**옵션이 활성화되기 전에**&#x200B;클라우드 인스턴스에서 기존 컨텐츠를 지우면 기존 저장소 전체가 삭제되고 컨텐츠를 인제스트할 새 저장소가 만들어집니다. 즉, 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정이 재설정됨을 의미합니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
 
 
 1. 인제스트가 완료되면 **PUBLISH INGESTION** 필드의 상태가 **FINISHED**&#x200B;으로 업데이트됩니다.
