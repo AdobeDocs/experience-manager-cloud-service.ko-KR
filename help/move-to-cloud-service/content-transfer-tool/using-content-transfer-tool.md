@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 62%
+source-wordcount: '2055'
+ht-degree: 58%
 
 ---
 
@@ -65,16 +65,23 @@ ht-degree: 62%
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. 아래의 콘솔은 첫 번째 마이그레이션 세트를 만들 때 나타납니다. **마이그레이션 세트 만들기**&#x200B;를 클릭하여 새 마이그레이션 세트를 만듭니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >기존 마이그레이션 세트가 있는 경우 콘솔에 현재 상태의 기존 마이그레이션 세트 목록이 표시됩니다.
 
-1. 아래 설명된 대로 **컨텐츠 마이그레이션 세트 세부 정보 화면**&#x200B;의 필드를 채웁니다.
+   또한 **사용자 매핑 구성 만들기**&#x200B;를 클릭하여 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)에 액세스합니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. 아래 설명에 따라 **콘텐츠 마이그레이션 세트** 화면에서 필드를 채웁니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >위 그림에 표시된 대로 **IMS의 매핑 포함**&#x200B;을 선택합니다. 자세한 내용은 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)를 참조하십시오.
 
 
    1. **이름**: 마이그레이션 세트의 이름을 입력합니다.
@@ -119,7 +126,6 @@ ht-degree: 62%
    * *노란색 아이콘*&#x200B;은 기존 마이그레이션 세트를 만들지 않았으며, 특정 마이그레이션은 동일한 인스턴스에 있는 다른 사용자가 작성했음을 나타냅니다.
 
 1. 개요 페이지에서 마이그레이션 세트를 선택하고 **속성**&#x200B;을 클릭하여 마이그레이션 세트 속성을 보거나 편집합니다. 속성을 편집하는 동안 컨테이너 이름 또는 서비스 URL을 변경할 수 없습니다.
-
 
 
 ### 컨텐츠 전송의 추출 프로세스 {#extraction-process}
@@ -174,6 +180,7 @@ ht-degree: 62%
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. 인제스트가 완료되면 **PUBLISH INGESTION** 필드의 상태가 **FINISHED**&#x200B;으로 업데이트됩니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -190,11 +197,13 @@ ht-degree: 62%
 
 1. *개요* 페이지로 이동하고 추가 수집을 수행할 마이그레이션 세트를 선택합니다. **수집**&#x200B;을 클릭하여 추가 추출을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
 
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+
    >[!IMPORTANT]
    >
    >기존 통합 활동에서 기존 콘텐츠를 삭제하지 않으려면 통합&#x200B;**전에 클라우드 인스턴스에서 기존 콘텐츠를 지우십시오.**&#x200B;옵션을 비활성화해야 합니다.
-   >
-   >![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   또한 고객 지원 티켓에 추가하는 방법에 대해 알려면 [콘텐츠 전송 도구 사용 시 중요한 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)을 참조하십시오.
 
 ### 마이그레이션 세트에 대한 로그 보기 {#viewing-logs-migration-set}
 
