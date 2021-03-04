@@ -2,9 +2,9 @@
 title: Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch 통합
 description: platform launch 및 Dynamic Media Viewers 5.13용 Dynamic Media 뷰어 익스텐션을 사용하면 Adobe Analytics 및 Platform launch 고객은 Platform launch 구성에서 뷰어 관련 이벤트와 데이터를 사용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
 workflow-type: tm+mt
-source-wordcount: '6684'
+source-wordcount: '6658'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,11 @@ platform launch 및 Dynamic Media 뷰어 5.13용 새 *Dynamic Media 뷰어* 확�
 
 Experience Platform Launch과의 통합에 대한 주요 사용 사례는 Experience Manager 자산 및 Experience Manager 사이트를 모두 사용하는 고객입니다. 이러한 시나리오에서는 Experience Manager 작성자 노드와 Experience Platform Launch 간의 표준 통합을 설정한 다음 사이트 인스턴스를 Experience Platform Launch 속성과 연결할 수 있습니다. 이후에는 사이트 페이지에 추가된 모든 Dynamic Media WCM 구성 요소가 뷰어의 데이터 및 이벤트를 추적합니다.
 
-Experience Manager 사이트](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)의 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
+Experience Manager 사이트](#tracking-dynamic-media-viewers-in-aem-sites)에서 Dynamic Media 뷰어 추적을 참조하십시오.[
 
 통합이 지원하는 보조 사용 사례는 Experience Manager 자산만 사용하는 고객이나 Dynamic Media Classic을 사용하는 고객입니다. 이러한 경우 뷰어용 포함 코드를 입수하여 웹 사이트 페이지에 추가합니다. 그런 다음 Experience Platform Launch에서 Experience Platform Launch 라이브러리 프로덕션 URL을 가져와 웹 페이지 코드에 수동으로 추가합니다.
 
-포함 코드](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)를 사용하여 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
+포함 코드](#tracking-dynamic-media-viewers-using-embed-code)를 사용하여 Dynamic Media 뷰어 추적을 참조하십시오.[
 
 ## 통합 {#how-data-and-event-tracking-works-in-the-integration}에서 데이터 및 이벤트 추적이 작동하는 방식
 
