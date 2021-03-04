@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
+source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 58%
 
 ---
@@ -203,7 +203,7 @@ ht-degree: 58%
    >
    >기존 통합 활동에서 기존 콘텐츠를 삭제하지 않으려면 통합&#x200B;**전에 클라우드 인스턴스에서 기존 콘텐츠를 지우십시오.**&#x200B;옵션을 비활성화해야 합니다.
 
-   또한 고객 지원 티켓에 추가하는 방법에 대해 알려면 [콘텐츠 전송 도구 사용 시 중요한 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)을 참조하십시오.
+   또한 고객 지원 티켓에 추가하는 방법에 대해 알려면 [컨텐츠 전송 도구 사용 시 중요한 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)을 참조하십시오.
 
 ### 마이그레이션 세트에 대한 로그 보기 {#viewing-logs-migration-set}
 
