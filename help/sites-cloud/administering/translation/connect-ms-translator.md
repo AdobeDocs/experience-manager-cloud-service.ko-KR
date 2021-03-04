@@ -2,9 +2,9 @@
 title: Microsoft Translator에 연결
 description: 번역 워크플로우를 자동화하기 위해 AEM과 Microsoft Translator를 즉시 연결하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 1%
 
 # Microsoft Translator {#connecting-to-microsoft-translator}에 연결하는 중
 
-AEM 페이지 콘텐츠, 커뮤니티 콘텐츠 또는 자산을 번역하기 위해 Microsoft 번역 계정을 사용하려면 [Microsoft Translator](https://hub.microsofttranslator.com) 클라우드 서비스에 대한 구성을 만드십시오.
+AEM 페이지 콘텐츠 또는 자산을 번역하기 위해 Microsoft 번역 계정을 사용하려면 [Microsoft Translator](https://hub.microsofttranslator.com) 클라우드 서비스에 대한 구성을 만드십시오.
+
+>[!NOTE]
+>
+>AEM은 월간 최대 2000,000개의 무료 번역 문자를 허용하는 시험버전 Microsoft Translation 계정을 제공합니다. 프로덕션 시스템에 적합한 계정 구독을 얻으려면 [Microsoft Translator 시험버전 라이센스 구성 업그레이드](#upgrading-the-microsoft-translator-trial-license-configuration)를 참조하십시오.
 
 | 속성 | 설명 |
 |---|---|
