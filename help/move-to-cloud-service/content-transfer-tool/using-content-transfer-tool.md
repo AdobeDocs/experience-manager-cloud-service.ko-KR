@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
+source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 64%
+source-wordcount: '1916'
+ht-degree: 63%
 
 ---
 
@@ -55,9 +55,13 @@ ht-degree: 64%
 
 이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service(작성자/게시)에 마이그레이션하는 방법을 알아보십시오.
 
-1. Adobe Experience Manager를 선택하고 도구 -> **작업** -> **컨텐츠 전송**&#x200B;으로 이동합니다.
+1. Adobe Experience Manager을 선택하고 도구 -> **작업** -> **컨텐트 마이그레이션**&#x200B;으로 이동합니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+
+1. **컨텐트 마이그레이션** 마법사에서 **컨텐트 전송** 옵션을 선택합니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
 1. 아래의 콘솔은 첫 번째 마이그레이션 세트를 만들 때 나타납니다. **마이그레이션 세트 만들기**&#x200B;를 클릭하여 새 마이그레이션 세트를 만듭니다.
 
