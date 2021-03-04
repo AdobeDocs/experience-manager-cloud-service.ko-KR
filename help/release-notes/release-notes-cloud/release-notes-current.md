@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
+source-git-commit: aadfc38f62a1e3543810447e91910cf71fa93583
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1167'
 ht-degree: 3%
 
 ---
@@ -109,6 +109,20 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 * 일부 파이프라인 오류가 파이프라인 오류로 잘못 보고되었습니다.
 
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
+
+### 릴리스 날짜 {#release-date-ctt-march}
+
+내용 전송 도구 v1.3.0 릴리스 날짜는 2021년 3월 4일입니다.
+
+### 내용 전송 도구 {#what-is-new-ctt-march}의 새로운 기능
+
+* 이제 특정 페이지에 대한 브라우저 책갈피가 더 이상 유효하지 않을 수 있는 대신 `/libs` 대신 `/apps`에 CTT가 설치됩니다.
+* CTT가 설치되면 사용자는 컨텐츠 전송 페이지로 이동하려면 추가 수준을 탐색해야 합니다. 자세한 내용은 [내용 전송 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)을 참조하십시오.
+
+### 버그 수정 {#bug-fixes-ctt-march}
+
+* 특정 경로에서 컨텐츠를 마이그레이션할 때 CTT는 관련 없는 리소스를 검색하고 있었습니다. 이 문제가 해결되었습니다.
+
 
 ### 릴리스 날짜 {#release-date-ctt}
 
