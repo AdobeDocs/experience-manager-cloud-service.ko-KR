@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2049'
+ht-degree: 59%
 
 ---
 
@@ -76,13 +76,9 @@ ht-degree: 58%
 
    또한 **사용자 매핑 구성 만들기**&#x200B;를 클릭하여 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)에 액세스합니다.
 
-1. 아래 설명에 따라 **콘텐츠 마이그레이션 세트** 화면에서 필드를 채웁니다.
+1. 아래 설명에 따라 **마이그레이션 세트 만들기** 화면에서 필드를 채웁니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >위 그림에 표시된 대로 **IMS의 매핑 포함**&#x200B;을 선택합니다. 자세한 내용은 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)를 참조하십시오.
-
 
    1. **이름**: 마이그레이션 세트의 이름을 입력합니다.
       >[!NOTE]
@@ -102,6 +98,8 @@ ht-degree: 58%
    1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
       1. **버전 포함**: 필요에 따라 선택합니다.
+
+      1. **IMS 사용자 및 그룹의 매핑 포함**:옵션을 선택합니다. 자세한 내용은 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)를 참조하십시오.
 
       1. **포함할 경로**: 경로 브라우저를 사용하여 마이그레이션해야 하는 경로를 선택합니다. 경로 선택기는 입력 또는 선택을 통해 입력을 허용합니다.
 
@@ -178,7 +176,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >통합&#x200B;**옵션이 활성화되기 전에**&#x200B;클라우드 인스턴스에서 기존 컨텐츠를 지우면 기존 저장소 전체가 삭제되고 컨텐츠를 인제스트할 새 저장소가 만들어집니다. 즉, 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정이 재설정됨을 의미합니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. 인제스트가 완료되면 **PUBLISH INGESTION** 필드의 상태가 **FINISHED**&#x200B;으로 업데이트됩니다.
