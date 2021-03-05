@@ -2,10 +2,10 @@
 title: RemotePage 구성 요소
 description: RemotePage 구성 요소는 AEM 내에서 원격 반응 SPA을 편집하기 위한 사용자 지정 페이지 구성 요소입니다.
 translation-type: tm+mt
-source-git-commit: 6a88b93a4005b858eec222fd7ae15df9db269d31
+source-git-commit: 9a1048f6d185d2d3229bab05b8e827845444d11c
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 1%
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,12 @@ ht-degree: 1%
 ## 개요 {#overview}
 
 RemotePage 구성 요소는 애플리케이션에서 생성된 `asset-manifest.json`에서 필요한 모든 에셋을 가져오고 AEM 내에서 SPA을 렌더링하는 데 사용합니다.
+
+* RemotePage를 사용하면 SPA의 스크립트 및 스타일 시트를 AEM 페이지 구성 요소 본문에 삽입할 수 있습니다.
+* 가상 프런트 엔드 구성 요소를 사용하면 AEM SPA 편집기에서 섹션을 편집 가능한 것으로 표시할 수 있습니다.
+* 서로 다른 도메인에 호스팅된 SPA을 AEM에서 편집할 수 있습니다.
+
+AEM에서 편집 가능한 외부 SPA에 대한 자세한 내용은 SPA에서 외부을 편집하는 문서 [AEM 내 외부 편집을 참조하십시오.](editing-external-spa.md)
 
 ## 요구 사항 {#requirements}
 
