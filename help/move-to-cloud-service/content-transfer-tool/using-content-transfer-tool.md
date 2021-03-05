@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
+source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 59%
+source-wordcount: '2057'
+ht-degree: 58%
 
 ---
 
@@ -99,7 +99,8 @@ ht-degree: 59%
 
       1. **버전 포함**: 필요에 따라 선택합니다.
 
-      1. **IMS 사용자 및 그룹의 매핑 포함**:옵션을 선택합니다. 자세한 내용은 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)를 참조하십시오.
+      1. **IMS 사용자 및 그룹의 매핑 포함**:IMS 사용자 및 그룹의 매핑을 포함하려면 옵션을 선택합니다.
+자세한 내용은 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)를 참조하십시오.
 
       1. **포함할 경로**: 경로 브라우저를 사용하여 마이그레이션해야 하는 경로를 선택합니다. 경로 선택기는 입력 또는 선택을 통해 입력을 허용합니다.
 
