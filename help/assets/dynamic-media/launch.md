@@ -2,7 +2,7 @@
 title: Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch 통합
 description: platform launch 및 Dynamic Media Viewers 5.13용 Dynamic Media 뷰어 익스텐션을 사용하면 Adobe Analytics 및 Platform launch 고객은 Platform launch 구성에서 뷰어 관련 이벤트와 데이터를 사용할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
+source-git-commit: 0f20bf7de87fb3635f77a45f532c3ffe2f361adf
 workflow-type: tm+mt
 source-wordcount: '6658'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 # Dynamic Media 뷰어를 Adobe Analytics 및 Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}과 통합
 
 ## Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch의 통합은 무엇입니까?{#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
 
 platform launch 및 Dynamic Media 뷰어 5.13용 새 *Dynamic Media 뷰어* 확장을 사용하면 Adobe Analytics 및 Platform launch 고객은 Platform launch 구성에 있는 뷰어별 이벤트와 데이터를 사용할 수 있습니다.
 
