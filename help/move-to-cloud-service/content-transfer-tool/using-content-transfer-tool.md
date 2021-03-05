@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -112,7 +112,7 @@ ht-degree: 57%
          >* `/etc` (일부  `/etc` 경로는 CTT에서 선택할 수 있음)
 
 
-1. **컨텐츠 마이그레이션 세트 세부 사항** 화면에서 모든 필드를 채운 후 **저장**&#x200B;을 클릭합니다.
+1. **마이그레이션 세트 만들기** 세부 정보 화면에서 모든 필드를 채운 후 **저장**&#x200B;을 클릭합니다.
 
 1. 마이그레이션 세트는 *개요* 페이지에 표시됩니다.
 
