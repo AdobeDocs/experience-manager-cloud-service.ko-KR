@@ -2,7 +2,7 @@
 title: SPA 및 서버측 렌더링
 description: SPA에서 SSR(서버측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 클라이언트에 추가 렌더링을 전달할 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
