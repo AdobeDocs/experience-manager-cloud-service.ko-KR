@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
+source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2068'
+ht-degree: 57%
 
 ---
 
@@ -177,7 +177,7 @@ ht-degree: 58%
    >[!IMPORTANT]
    >통합&#x200B;**옵션이 활성화되기 전에**&#x200B;클라우드 인스턴스에서 기존 컨텐츠를 지우면 기존 저장소 전체가 삭제되고 컨텐츠를 인제스트할 새 저장소가 만들어집니다. 즉, 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정이 재설정됨을 의미합니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    또한 위 그림과 같이 **고객 지원 센터**&#x200B;를 클릭하여 티켓을 기록합니다. 또한 자세한 내용은 [내용 전송 도구 사용에 대한 중요 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)을 참조하십시오.
 
@@ -200,7 +200,7 @@ ht-degree: 58%
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >기존 통합 활동에서 기존 콘텐츠를 삭제하지 않으려면 통합&#x200B;**전에 클라우드 인스턴스에서 기존 콘텐츠를 지우십시오.**&#x200B;옵션을 비활성화해야 합니다.
+   >기존 통합 활동에서 기존 콘텐츠를 삭제하지 않으려면 통합&#x200B;**전에 클라우드 인스턴스에서 기존 콘텐츠를 지우십시오.**&#x200B;옵션을 비활성화해야 합니다. 또한 **고객 지원 센터**&#x200B;를 클릭하여 이전 그림에 표시된 표를 기록합니다.
 
 
 ### 마이그레이션 세트에 대한 로그 보기 {#viewing-logs-migration-set}
