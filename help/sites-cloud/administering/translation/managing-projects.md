@@ -2,9 +2,9 @@
 title: 번역 프로젝트 관리
 description: AEM에서 기계 및 인간 번역 프로젝트를 모두 제작 및 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '3799'
+source-wordcount: '3825'
 ht-degree: 1%
 
 ---
@@ -52,6 +52,10 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 선택한 페이지의 하위 페이지도 선택되도록 지정할 수 있습니다. 이 경우 하위 페이지의 복사본이 번역되도록 각 프로젝트에 추가됩니다. 하위 페이지가 다른 번역 통합 프레임워크 구성과 연결되어 있으면 AEM에서 추가 프로젝트를 만듭니다.
 
 번역 프로젝트](#creating-a-translation-project-using-the-projects-console)를 수동으로 만들 수도 있습니다.[
+
+>[!NOTE]
+>
+>프로젝트를 만들려면 계정이 `project-administrators` 그룹의 구성원이어야 합니다.
 
 ### 초기 번역 및 번역 업데이트 {#initial-and-updating}
 
@@ -208,6 +212,10 @@ AEM의 번역 프로젝트는 표준 [AEM 프로젝트 콘솔을 사용합니다
 ### 프로젝트 콘솔을 사용하여 번역 프로젝트 만들기 {#creating-a-translation-project-using-the-projects-console}
 
 사이트 콘솔 대신 프로젝트 콘솔을 사용하려면 번역 프로젝트를 수동으로 만들 수 있습니다.
+
+>[!NOTE]
+>
+>프로젝트를 만들려면 계정이 `project-administrators` 그룹의 구성원이어야 합니다.
 
 번역 프로젝트를 수동으로 만들 때는 [기본 속성](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 외에 다음 번역 관련 속성에 대한 값을 제공해야 합니다.
 
