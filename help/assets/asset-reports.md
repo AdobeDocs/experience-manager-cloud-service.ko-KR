@@ -3,9 +3,9 @@ title: 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는  [!DNL Adobe Experience Manager Assets] 의 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '945'
 ht-degree: 2%
 
 ---
@@ -92,13 +92,13 @@ ht-degree: 2%
 
 1. 도구 모음에서 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL 열 구성]** 페이지에서 일부 열이 기본적으로 보고서에 표시되도록 선택됩니다. 열을 더 선택할 수 있습니다. 보고서에서 제외하려면 선택한 열을 선택 취소합니다.
+1. **[!UICONTROL 열 구성]** 페이지에서 일부 열이 기본적으로 보고서에 표시되도록 선택됩니다. 열을 더 선택할 수 있습니다. 보고서에서 제외시킬 열 선택을 취소합니다.
 
-   ![보고서 열 선택 또는 선택 취소](assets/configure_columns.png)
+   ![보고서 열 선택 또는 취소](assets/configure_columns.png)
 
    사용자 지정 열 이름 또는 속성 경로를 표시하려면 CRX의 `jcr:content` 노드 아래에 에셋 바이너리의 속성을 구성합니다. 또는 속성 경로 선택기를 통해 추가합니다.
 
-   ![보고서 열 선택 또는 선택 취소](assets/custom_columns.png)
+   ![보고서 열 선택 또는 취소](assets/custom_columns.png)
 
 1. 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 1. [!UICONTROL 자산 보고서] 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태를 기반으로 합니다(예: [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 큐에 대기] 또는 [!UICONTROL 예약]). 동일한 상태가 알림 받은 편지함에 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기]**&#x200B;를 클릭합니다.
