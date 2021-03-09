@@ -4,9 +4,9 @@ description: '메타데이터 유형에 대해 알아보고, 메타데이터에 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '1850'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
@@ -127,11 +127,11 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
    >여러 자산을 선택하면 자산에 대해 가장 낮은 공통 상위 양식이 선택됩니다. 즉, [!UICONTROL 속성] 페이지에는 모든 개별 자산의 [!UICONTROL 속성] 페이지에 공통되는 메타데이터 필드만 표시됩니다.
 
 1. 다양한 탭에서 선택한 자산에 대한 메타데이터 속성을 수정합니다.
-1. 특정 자산에 대한 메타데이터 편집기를 보려면 목록에서 나머지 자산을 선택 취소합니다. 메타데이터 편집기 필드는 특정 자산에 대한 메타데이터로 채워집니다.
+1. 특정 자산에 대한 메타데이터 편집기를 보려면 목록에서 나머지 에셋 선택을 취소합니다. 메타데이터 편집기 필드는 특정 자산에 대한 메타데이터로 채워집니다.
 
    >[!NOTE]
    >
-   >* [!UICONTROL 속성] 페이지에서 자산을 선택 취소하여 자산 목록에서 자산을 제거할 수 있습니다. 자산 목록에는 기본적으로 선택된 모든 자산이 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
+   >* [!UICONTROL 속성] 페이지에서 선택을 취소하여 자산 목록에서 자산을 제거할 수 있습니다. 자산 목록에는 기본적으로 선택된 모든 자산이 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
    >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 옆의 확인란을 선택하여 자산을 선택하고 목록을 지우는 간을 전환합니다.
 
 
@@ -144,7 +144,7 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
 
 ## 처리 프로필 {#metadata-compute-service}을(를) 사용한 사용자 지정 메타데이터
 
-[!DNL Cloud Service]인 자산은 클라우드 기본 서비스를 사용하여 자산에 대한 사용자 지정 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 처리 프로필[을 사용하는 방법을 참조하십시오.](/help/assets/asset-microservices-configure-and-use.md#use-profiles)
+[!DNL Cloud Service]인 자산은 클라우드 기본 서비스를 사용하여 자산에 대한 사용자 지정 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 처리 프로필](/help/assets/asset-microservices-configure-and-use.md#use-profiles)을 사용하는 방법을 참조하십시오.[
 
 ![처리 프로필의 메타데이터 변환](assets/processing-profile-metadata.png)
 
