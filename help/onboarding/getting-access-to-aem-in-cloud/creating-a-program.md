@@ -2,9 +2,9 @@
 title: 프로그램 만들기 - Cloud Service
 description: 프로그램 만들기 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
+source-git-commit: d85c0e9035ee09cf86aeea1cae20d545823eaca0
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '607'
 ht-degree: 3%
 
 ---
@@ -27,10 +27,6 @@ Cloud Manager에 처음으로 액세스하거나 테넌트에 프로그램이 �
 
 ![](assets/create-sandbox.png)
 
->[!NOTE]
->프로그램이 이미 있는 경우 아래 그림과 같이 랜딩 페이지의 오른쪽 위에 **프로그램 추가**&#x200B;가 표시됩니다.
-
-![](assets/create-program-add.png)
 
 ## 샌드박스 프로그램 만들기 {#create-sandbox-program}
 
