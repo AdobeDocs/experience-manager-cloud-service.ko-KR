@@ -46,7 +46,7 @@ ht-degree: 7%
 
 ### 2. Adobe Admin Console에 대한 가입 조직:
 
->   ![processoverview2.jpg](./assets/processOverview2.jpg)
+ >   ![processoverview2.jpg](./assets/processOverview2.jpg)
 * 시스템 관리자:
    * AEM 프로그램 및 환경 제공
    * 관리 작업을 위한 Admin Console으로 이동합니다.
