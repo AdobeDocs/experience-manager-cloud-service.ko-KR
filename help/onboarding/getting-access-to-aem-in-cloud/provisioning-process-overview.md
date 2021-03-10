@@ -1,11 +1,15 @@
 ---
-source-git-commit: d2a24f55d5b89f1abe64702d5f1ad39f793429d5
-workflow-type: tm+mt
+title: 프로비저닝 프로세스 - 개요
+description: 프로비저닝 프로세스 - 개요
 translation-type: tm+mt
-source-wordcount: '334'
-ht-degree: 7%
+source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
+
 # AEM의 Cloud Service:온보딩 및 액세스
 
 이 페이지에는 Cloud Service의 프로비저닝 프로세스에 대한 자체 도움말 리소스가 나열됩니다.
@@ -46,7 +50,7 @@ ht-degree: 7%
 
 ### 2. Adobe Admin Console에 대한 가입 조직:
 
- >   ![processoverview2.jpg](./assets/processOverview2.jpg)
+>   ![processoverview2.jpg](./assets/processOverview2.jpg)
 * 시스템 관리자:
    * AEM 프로그램 및 환경 제공
    * 관리 작업을 위한 Admin Console으로 이동합니다.
@@ -70,5 +74,5 @@ ht-degree: 7%
 
 ## 도움말 및 리소스
 
-[처음 로그인 - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)\
-[AEM에 대한 액세스를 Cloud Service으로 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [처음 로그인 - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
+* [AEM에 대한 액세스를 Cloud Service으로 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
