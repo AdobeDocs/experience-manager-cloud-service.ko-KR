@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 4482fe36339db0c544b0b550e0bd414b2a47809e
+source-git-commit: 0c5eac38ca9da8c0a3bd00fe1dd0472710dd3866
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '684'
 ht-degree: 35%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 35%
    + [실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
    + [Go-live 후](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + 클라우드에서 AEM에 액세스 {#getting-access}
-   + [AEM의 Cloud Service:프로비저닝 프로세스 개요](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
+   + [프로비저닝 프로세스 개요](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Experience Manager as a Cloud Service 액세스](getting-access-to-aem-in-cloud/navigation.md)
    + 클라우드 서비스 프로그램 {#cloud-service-programs}
       + [프로그램 액세스](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -88,7 +88,8 @@ ht-degree: 35%
       + [2020.4.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [2020.3.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [2020.2.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-   + [역할 및 책임 이해](getting-access-to-aem-in-cloud/roles-responsibilities.md)
+   + 역할 및 책임 이해 {#getting-access-to-aem-in-cloud}
+      + [역할 및 책임 이해](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + 데이터 개인 정보 보호 및 보호 준비 완료 {#data-privacy}
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
    + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 기초 준비 완료](data-privacy-and-protection-readiness/foundation-readiness.md)
