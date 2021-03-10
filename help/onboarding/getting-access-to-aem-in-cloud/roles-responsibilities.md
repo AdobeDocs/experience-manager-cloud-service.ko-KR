@@ -1,13 +1,16 @@
 ---
-source-git-commit: 8d15605dd696f0163229a677b57aa0837dc11704
-workflow-type: tm+mt
+title: 역할 및 책임
+description: 역할 및 책임
 translation-type: tm+mt
-source-wordcount: '417'
+source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 18%
 
 ---
 
-# Adobe Experience Manager을 Cloud Service으로 사용:역할 및 책임
+
+# Adobe Experience Manager을 Cloud Service으로 사용:역할 및 책임 {#roles-responsibilities}
 
 <br></br>
 Adobe은 Experience Manager의 프로비저닝, 개발, 스테이징 및 프로덕션에 대한 일련의 서비스를 Cloud Service으로 제공합니다. 솔루션을 효율적으로 개발 및 배포하려면 아래 설명된 바와 같이 고객과 고객이 자신의 역할을 이해하고 이행해야 합니다.
@@ -49,5 +52,8 @@ Adobe은 Experience Manager의 프로비저닝, 개발, 스테이징 및 프로�
 | 프로덕션 | Cloud Service 애플리케이션으로 AEM 업데이트 |  |  | 소유자 |  |
 | 프로덕션 | 운영 백업 및 재해 복구 |  |  | 소유자 |  |
 
-<br></br>
-위의 내용에서는 Premier Support이 포함되어 있다고 가정합니다. 고객과 고객 간의 합의에 따라 테이블이 변경될 수 있습니다. 상기에 명시된 사항에 대해 명확히 해야 하는 경우 Adobe 세일즈 및 맞춤화 팀과 함께 작업하는 것이 좋습니다. 사용자 정의 작업을 직접 처리하지 않으려는 고객은 Adobe의 전문 서비스 팀 또는 Experience Manager 파트너의 서비스를 받아야 합니다. 높은 품질을 유지하기 위해 Adobe은 Cloud Service 개발 프로젝트로 Experience Manager에 관여하는 파트너에게 Experience Manager 소프트웨어에 대한 고급 개발자 인증을 받은 개인 인력이 적어도 1명 이상 채워져야 합니다.
+>[!NOTE]
+>
+> 위의 내용에서는 Premier Support이 포함되어 있다고 가정합니다. 고객과 고객 간의 합의에 따라 테이블이 변경될 수 있습니다. 상기에 명시된 사항에 대해 명확히 해야 하는 경우 Adobe 세일즈 및 맞춤화 팀과 함께 작업하는 것이 좋습니다.
+> 사용자 정의 작업을 직접 처리하지 않으려는 고객은 Adobe의 전문 서비스 팀 또는 Experience Manager 파트너의 서비스를 받아야 합니다.
+>높은 품질을 유지하기 위해 Adobe은 Cloud Service 개발 프로젝트로 Experience Manager에 관여하는 파트너에게 Experience Manager 소프트웨어에 대한 고급 개발자 인증을 받은 개인 인력이 적어도 1명 이상 채워져야 합니다.
