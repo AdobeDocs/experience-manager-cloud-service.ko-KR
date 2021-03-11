@@ -2,9 +2,9 @@
 title: Cloud Manager 홈 페이지
 description: Cloud Manager 홈 페이지
 translation-type: tm+mt
-source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
+source-git-commit: 2f5b15a4fcd46114f923a387fa71da22d143dfc1
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,10 @@ Cloud Manager에 액세스하려면 아래 절차를 따르십시오.
 [!UICONTROL 클라우드 관리자]에 성공적으로 로그인하면 랜딩 페이지에 조직에 있는 기존 프로그램의 카드가 표시됩니다.
 
 >[!NOTE]
->
->Cloud Service에 있는 프로그램은 아래와 같이 자막 **Experience Manager 클라우드**(AMS 프로그램의 경우 **Experience Manager**&#x200B;와는 반대)로 표시됩니다.
+>Cloud Service에 있는 프로그램은 자막 **Experience Manager 클라우드**&#x200B;로 표시됩니다(AMS 프로그램의 경우 **Experience Manager**와는 반대).
+>예를 들어 아래 그림에서 **We.Retail Global**&#x200B;은 AMS 프로그램이고, **We.Retail-Prod Program - Prod**&#x200B;는 Cloud Service을 통해 사용할 수 있는 프로그램입니다.
 
 ![](assets/first_timelogin1.png)
-
 
 환경에 따라 두 옵션 중 하나가 표시됩니다.
 
@@ -54,9 +53,6 @@ Cloud Manager에 액세스하려면 아래 절차를 따르십시오.
 
 ![](assets/first_timelogin1.png)
 
->[!NOTE]
->Cloud Service에 있는 프로그램은 자막 **Experience Manager 클라우드**&#x200B;로 표시됩니다(AMS 프로그램의 경우 **Experience Manager**와는 반대).
->예를 들어 위의 그림에서 **We.Retail Global**&#x200B;은 AMS 프로그램이고, **We.Retail-Prod Program - Prod**&#x200B;는 Cloud Service을 통해 사용할 수 있는 프로그램입니다.
 
 Cloud Manager에서 프로그램을 추가하는 방법에 대해 알아보려면 다음을 참조하십시오.
 
