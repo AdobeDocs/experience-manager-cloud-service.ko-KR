@@ -2,9 +2,9 @@
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
       자세한 내용은 [사용자 지정 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)를 참조하십시오.
 
    * **사용자 정의 UI 테스트**:이 단계는 고객이 애플리케이션에 대한 UI 테스트를 생성하고 자동으로 실행할 수 있는 선택 기능입니다. UI 테스트는 Selenium 기반 테스트로, Java 및 Maven, Node 및 WebDriver.io와 같은 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 광범위한 선택을 할 수 있도록 Docker 이미지에 패키지되어 있습니다.
-자세한 내용은 사용자 정의 UI 테스트를 참조하십시오.
+자세한 내용은 [사용자 지정 UI 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing)를 참조하십시오.
 
 
    * **경험 감사**:파이프라인의 이 단계는 항상 존재하며 건너뛸 수 없습니다. 프로덕션 파이프라인이 실행되면 검사를 실행하는 사용자 지정 기능 테스트 후에 경험 감사 단계가 포함됩니다. 구성된 페이지는 서비스로 전송되어 평가됩니다. 결과는 정보 제공용이며 사용자가 현재 점수와 이전 점수 사이의 점수 및 변경 사항을 볼 수 있도록 합니다. 이 통찰력은 현재 배포에서 발생하는 회귀 여부를 확인하는 데 유용합니다.
