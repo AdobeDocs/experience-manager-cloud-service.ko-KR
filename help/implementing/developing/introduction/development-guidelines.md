@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 translation-type: tm+mt
-source-git-commit: a01a55f85639613e5febd2588c9c55590f888124
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '2284'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Cloud Service으로 AEM을 업데이트하는 동안 이전 코드와 새 코드
 
 ## 백그라운드 작업 및 긴 실행 작업 {#background-tasks-and-long-running-jobs}
 
-백그라운드 작업으로 실행되는 코드는 실행 중인 인스턴스를 언제든지 중단할 수 있다고 간주해야 합니다. 따라서 코드는 복원력이 있어야 하며 대부분의 가져오기 다시 시작 가능 해야 합니다. 즉, 코드가 다시 실행될 경우 처음부터 다시 시작하지 않고 코드가 종료되는 지점으로부터 코드 가동이 다시 시작되어야 합니다. 이러한 유형의 코드에 대한 새로운 요구 사항은 아니지만, Cloud Service의 경우 인스턴스가 삭제될 가능성이 높습니다.
+백그라운드 작업으로 실행되는 코드는 실행 중인 인스턴스를 언제든지 중단할 수 있다고 간주해야 합니다. 따라서 코드는 복원력이 있어야 하며 대부분의 가져오기 다시 시작 가능 해야 합니다. 즉, 코드가 다시 실행될 경우 처음부터 다시 시작하지 않고 코드가 종료되는 지점으로부터 코드 가동이 다시 시작되어야 합니다. 이러한 유형의 코드에 대한 새로운 요구 사항은 아니지만, Cloud Service의 경우 인스턴스가 삭제될 가능성이 더 높습니다.
 
 이를 최소화하려면 장기간에 걸친 작업은 가급적 뒤로 하고 최소한 재개는 수 있도록 해야 한다. 이러한 작업을 실행하는 경우, 적어도 한 번 이상 보증할 수 있으며 중단되는 경우 가능한 한 빨리 다시 실행됩니다. 그러나 처음부터 다시 시작해서는 안 될 것이다. 이러한 작업을 예약하려면 [Sling 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 스케줄러를 다시 한 번 이상 실행하는 것이 가장 좋습니다.
 
@@ -62,7 +62,7 @@ Adobe에서는 HTTP 연결을 만들려면 제공된 [Apache HttpComponents Clie
 
 ## 클래식 UI 사용자 지정 없음 {#no-classic-ui-customizations}
 
-CLOUD SERVICE으로 AEM은 타사 고객 코드에 대한 터치 UI만 지원합니다. 클래식 UI는 사용자 정의에 사용할 수 없습니다.
+Cloud Service으로 AEM은 타사 고객 코드에 대한 터치 UI만 지원합니다. 클래식 UI는 사용자 정의에 사용할 수 없습니다.
 
 ## 기본 이진 파일 방지 {#avoid-native-binaries}
 
@@ -160,7 +160,7 @@ DEBUG 로그 수준을 활성화하려면
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-일반 프로그램의 경우, 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되고, 샌드박스 프로그램의 경우 개발자 콘솔을 모든 사용자가 AEM에 대한 Cloud Service에 액세스할 수 있는 제품 프로필을 사용할 수 있습니다. 모든 프로그램의 경우, 두 서비스의 상태 덤프 데이터를 보려면 &quot;Cloud Manager - Developer Role&quot;이 필요하며 작성자 및 게시 서비스 모두에서 AEM 사용자 또는 AEM 관리자 제품 프로필에 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [클라우드 관리자 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하십시오.
+프로덕션 프로그램의 경우, 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되고, 샌드박스 프로그램의 경우 개발자 콘솔을 모든 사용자가 AEM에 대한 Cloud Service에 액세스할 수 있는 제품 프로필을 사용할 수 있습니다. 모든 프로그램의 경우, 두 서비스의 상태 덤프 데이터를 보려면 &quot;Cloud Manager - Developer Role&quot;이 필요하며 작성자 및 게시 서비스 모두에서 AEM 사용자 또는 AEM 관리자 제품 프로필에 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [클라우드 관리자 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하십시오.
 
 
 ### AEM 스테이징 및 프로덕션 서비스 {#aem-staging-and-production-service}
@@ -215,7 +215,7 @@ HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 HTTP/1.1뿐만 아니라 
 
 ## 이메일 {#sending-email} 보내기
 
-CLOUD SERVICE으로 AEM을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 아래 섹션에서는 이메일을 요청, 구성 및 보내는 방법에 대해 설명합니다.
+Cloud Service으로 AEM을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 아래 섹션에서는 이메일을 요청, 구성 및 보내는 방법에 대해 설명합니다.
 
 ### 액세스 요청 {#requesting-access}
 
