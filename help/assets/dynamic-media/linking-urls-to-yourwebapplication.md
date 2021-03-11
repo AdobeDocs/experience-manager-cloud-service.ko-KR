@@ -2,7 +2,7 @@
 title: URL을 웹 애플리케이션에 연결
 description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법입니다.
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 1%
@@ -20,7 +20,7 @@ AEM을 WCM으로 사용하는 *이 아닌*&#x200B;인 경우에만 URL에 연결
 
 >[!NOTE]
 >
->URL 문자열은 자산의 동적 변환에만 사용할 수 있습니다. 현재 다이내믹 미디어 서버가 아니라 DAM에 있는 정적 자산에는 사용할 수 없습니다. 정적인 변환에는 URL 단추가 표시되지 않습니다.
+>URL 문자열은 자산의 동적 변환에만 사용할 수 있습니다. 현재 Dynamic Media 서버가 아닌 DAM에 있는 정적 자산에는 사용할 수 없습니다. 정적인 변환에는 URL 단추가 표시되지 않습니다.
 
 웹 페이지에 비디오 또는 이미지 뷰어 포함](embed-code.md)을 참조하십시오.[
 
