@@ -2,10 +2,10 @@
 title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.3.0
 description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.3.0
 translation-type: tm+mt
-source-git-commit: 238ce5ea4327947694851bd0fae5be84614501c9
+source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 2%
+source-wordcount: '404'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021
 
 ### 새로운 기능 {#what-is-new}
 
-* IP 허용 목록, SSL 인증서 및 사용자 정의 도메인 이름에 대해 기존의 CDN 구성을 가진 환경을 보유한 고객은 다음 메시지를 보게 되며, UI를 통해 자가 서비스를 제공할 수 있습니다.
+* IP 허용 목록, SSL 인증서 및 사용자 정의 도메인 이름에 대해 기존의 CDN 구성을 가진 환경을 보유한 고객은 기존 구성에 대한 메시지를 보게 되며, UI를 통해 자가 서비스를 제공할 수 있습니다.
 
 * 이제 필요한 권한이 있는 사용자가 셀프 서비스 방식으로 다음을 수행할 수 있도록 프로그램을 편집할 수 있습니다.
 
