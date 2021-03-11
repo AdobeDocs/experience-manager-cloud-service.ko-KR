@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service에 온보딩
 breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 translation-type: tm+mt
-source-git-commit: 4e1f06e38fd968f8bcf240a5a30cf3362e562294
+source-git-commit: 6bbcbb75076a537a78b92415549f631842f028ce
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 35%
+source-wordcount: '691'
+ht-degree: 32%
 
 ---
 
@@ -15,19 +15,26 @@ ht-degree: 35%
 # 온보딩 {#onboarding}
 
 + [AEM as a Cloud Service 온보딩](/help/onboarding/home.md)
-+ 필수 사항 {#what-is-required}
++ Cloud Service {#what-is-required}으로 AEM 시작하기
    + [부여된 액세스 권한](what-is-required/access-rights-granted.md)
    + [사용자 및 역할 추가](what-is-required/add-users-roles.md)
    + [역할 기반 권한](what-is-required/role-based-permissions.md)
    + [소스 코드 저장소](what-is-required/source-code-repository.md)
 + 클라우드에서 AEM에 액세스 {#getting-access}
-   + [프로비저닝 프로세스 개요](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
-   + [Experience Manager as a Cloud Service 액세스](getting-access-to-aem-in-cloud/navigation.md)
+   + [Cloud Service으로 AEM용 Cloud Manager 액세스](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Manager 액세스 {#cloud-service-programs}
       + [Cloud Manager 홈 페이지](getting-access-to-aem-in-cloud/first-time-login.md)
       + [프로그램 및 프로그램 유형 이해](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + [프로그램 만들기](getting-access-to-aem-in-cloud/creating-a-program.md)
-      + [샌드박스 프로그램](getting-access-to-aem-in-cloud/sandbox-programs.md)
+      + 프로덕션 프로그램 {#production-programs}
+         + [소개](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [프로덕션 프로그램 만들기](getting-access-to-aem-in-cloud/creating-production-program.md)
+         + [프로덕션 프로그램 편집](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+      + 샌드박스 프로그램 {#sandbox-programs}
+         + [소개](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [샌드박스 프로그램 만들기](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+         + [샌드박스 프로그램 편집](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+         + [샌드박스 프로그램 삭제](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+         + [동면작업 및 동면제거 샌드박스 환경](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Cloud Manager 사용 {#using-cloud-manager}
       + [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
       + [CI/CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
@@ -71,7 +78,8 @@ ht-degree: 35%
       + [IP 허용 목록 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [IP 허용 목록 상태 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + 클라우드 관리자 {#release-notes-cloud-manager} 릴리스 노트
-      + [현재 릴리스 노트(2021.2.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [현재 릴리스 노트(2021.3.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [2021.2.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [2021.1.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [2020.12.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [2020.11.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
