@@ -2,9 +2,9 @@
 title: '프로덕션 프로그램 편집 '
 description: '프로덕션 프로그램 편집 '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,8 @@ ht-degree: 0%
 
 프로덕션 프로그램을 편집하려면 아래 절차를 따르십시오.
 
-1. **프로그램 편집** 페이지로 이동합니다.
+1. 
+   1. 클라우드 관리자의 *개요* 페이지에서 **프로그램 편집** 페이지로 이동합니다.
 
 1. **프로그램 편집** 페이지에는 프로덕션 및 샌드박스 프로그램 모두에 대한 2개의 탭(일반 및 솔루션)이 표시됩니다.
 
