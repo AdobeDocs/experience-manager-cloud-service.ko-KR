@@ -2,7 +2,7 @@
 title: Dynamic Media 비디오 프로필
 description: Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이미 포함되어 있습니다. 이 기본 프로필의 설정은 최상의 보기 환경을 고객에게 제공하기 위해 최적화되어 있습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '3680'
 ht-degree: 3%
@@ -26,11 +26,11 @@ Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이
 
 [비디오 인코딩 우수 사례](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)를 참조하십시오.
 
-처리 프로필 사용[에 대한 디지털 자산 구성을 위한 우수 사례를 참조하십시오.](/help/assets/dynamic-media/best-practices-for-file-management.md)
+처리 프로필 사용](/help/assets/dynamic-media/best-practices-for-file-management.md)에 대한 디지털 자산 구성을 위한 우수 사례를 참조하십시오.[
 
 >[!NOTE]
 >
->비디오의 메타데이터와 관련 비디오 이미지 축소판을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. AEM에서, 동적 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 **[!UICONTROL Dynamic Media Encode Video]** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행 모니터링](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. 동적 미디어를 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.
+>비디오의 메타데이터와 관련 비디오 이미지 축소판을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. AEM에서, Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행 모니터링](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 >
 >메타데이터는 자산을 검색할 때 유용합니다. 축소판은 인코딩 중에 생성된 정적 비디오 이미지입니다. AEM 시스템이 필요하며 사용자 인터페이스에서 카드 보기, 검색 결과 보기 및 자산 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 됩니다. 인코딩된 비디오의 표현물 아이콘(페인터의 팔레트)을 누르면 생성된 축소판이 표시됩니다.
 
@@ -38,7 +38,7 @@ Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이
 
 다른 자산 유형에 대한 고급 처리 매개 변수를 정의하려면 [자산 처리 구성](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)을 참조하십시오.
 
-메타데이터, 이미지 및 비디오 처리를 위한 프로필[도 참조하십시오.](/help/assets/dynamic-media/about-image-video-profiles.md)
+메타데이터, 이미지 및 비디오 처리를 위한 프로필](/help/assets/dynamic-media/about-image-video-profiles.md)도 참조하십시오.[
 
 ## 응용 비디오 인코딩 사전 설정 {#adaptive-video-encoding-presets}
 
@@ -142,7 +142,7 @@ Dynamic Media에는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.
 
 값이 동일하지 않으면 프로파일을 그대로 계속 만들 수 있습니다. 그러나 적응형 스트리밍은 가능하지 않습니다. 대신 단일 비트 전송률 스트리밍을 경험할 수 있습니다. 프로필의 개별 인코딩 사전 설정에서 동일한 값을 사용하도록 인코딩 설정을 편집하는 것이 좋습니다. (응용 스트리밍을 위해 인코딩&quot;이 활성화된 경우 비디오 프로필/사전 설정 편집기는 응용 비디오 인코딩 설정의 패리티를 적용해야 합니다.)
 
-점진적 스트리밍을 위한 비디오 인코딩 프로필 만들기[를 참조하십시오.](#creating-a-video-encoding-profile-for-progressive-streaming)
+점진적 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-progressive-streaming)를 참조하십시오.[
 
 [비디오 인코딩에 대한 우수 사례](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)도 참조하십시오.
 
@@ -192,7 +192,7 @@ Dynamic Media에는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.
 
 지원되는 비디오 형식 코덱은 H.264(.mp4) 및 WebM입니다.
 
-응용 스트리밍을 위한 비디오 인코딩 프로필 만들기[를 참조하십시오.](#creating-a-video-encoding-profile-for-adaptive-streaming)
+응용 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-adaptive-streaming)를 참조하십시오.[
 
 [비디오 인코딩에 대한 우수 사례](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)도 참조하십시오.
 
@@ -239,7 +239,7 @@ Dynamic Media에는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.
 
 이제 비디오가 포함된 폴더에 프로필을 적용할 수 있습니다. [폴더](#applying-a-video-profile-to-folders) 또는 [전역적으로 비디오 프로필 적용](#applying-a-video-profile-globally)을 참조하십시오.
 
-## 사용자 정의 추가 비디오 인코딩 매개 변수 {#using-custom-added-video-encoding-parameters} 사용
+## 사용자가 추가한 비디오 인코딩 매개 변수 사용 {#using-custom-added-video-encoding-parameters}
 
 AEM에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페이스에 없는 고급 비디오 인코딩 매개 변수를 활용하려면 기존 비디오 인코딩 프로필을 편집할 수 있습니다. custom은 minBitrate 및 maxBitrate와 같은 하나 이상의 고급 매개 변수를 기존 프로파일에 추가합니다.
 
@@ -276,13 +276,13 @@ AEM에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페�
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
-   <td><p>가변 비트 전송률 인코딩을 허용하는 최소 비트 전송률(Kbps/초당 킬로비트)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 [고급] 탭에서 [상수 비트 전송률 사용<strong>]이 선택 해제된 경우에만 적용됩니다.</strong></p> <p><a href="/help/assets/dynamic-media/video.md#bitrate">비트 전송률</a>도 참조하십시오.</p> </td>
+   <td><p>가변 비트 전송률 인코딩을 허용하는 최소 비트 전송률(Kbps/초당 킬로비트)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 [고급] 탭에서 [상수 비트 전송률 사용</strong>]이 선택 해제된 경우에만 적용됩니다.<strong></strong></p> <p><a href="/help/assets/dynamic-media/video.md#bitrate">비트 전송률</a>도 참조하십시오.</p> </td>
    <td><code>String</code></td>
    <td><p>양수입니다(Kbps).</p> <p>기본값이 없습니다.</p> </td>
   </tr>
   <tr>
    <td><code>maxBitrate</code></td>
-   <td><p>가변 비트 전송률 인코딩을 허용하는 최대 비트 전송률(Kbps)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 [고급] 탭에서 [상수 비트 전송률 사용<strong>]이 선택 해제된 경우에만 적용됩니다.</strong></p> <p><a href="/help/assets/dynamic-media/video.md#bitrate">비트 전송률</a>도 참조하십시오.</p> </td>
+   <td><p>가변 비트 전송률 인코딩을 허용하는 최대 비트 전송률(Kbps)입니다.</p> <p>이 매개 변수는 비디오 인코딩 프로필을 만들거나 편집할 때 [고급] 탭에서 [상수 비트 전송률 사용</strong>]이 선택 해제된 경우에만 적용됩니다.<strong></strong></p> <p><a href="/help/assets/dynamic-media/video.md#bitrate">비트 전송률</a>도 참조하십시오.</p> </td>
    <td><code>String</code></td>
    <td><p>양수입니다(Kbps).</p> <p>기본값이 없습니다. 그러나 인코딩 비트 전송률의 최대 2배까지 권장되는 값입니다.</p> </td>
   </tr>
@@ -363,7 +363,7 @@ AEM에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페�
 
 특정 폴더에 비디오 프로필을 적용하거나 모든 자산에 전역적으로 적용할 수 있습니다.
 
-나중에 변경한 기존 비디오 프로필이 이미 있는 폴더의 에셋을 다시 처리할 수 있습니다. [폴더](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)에서 자산 재처리를 참조하십시오.
+나중에 변경한 기존 비디오 프로필이 이미 있는 폴더의 에셋을 다시 처리할 수 있습니다. [폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
 
 ### 특정 폴더 {#applying-video-profiles-to-specific-folders}에 비디오 프로필 적용
 
