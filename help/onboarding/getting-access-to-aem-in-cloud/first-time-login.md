@@ -1,26 +1,34 @@
 ---
-title: 처음 로그인 - Cloud Service
-description: 처음 로그인 - Cloud Service
+title: Cloud Manager 홈 페이지
+description: Cloud Manager 홈 페이지
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 
-# 프로그램 액세스 {#first-time-login}
+# Cloud Manager 홈 페이지 {#first-time-login}
 
+클라우드 관리자에 액세스하려면:
+
+1. Adobe ID을 사용하여 [Experience Cloud](https://experience.adobe.com/)으로 이동합니다.
+1. **Experience Manager**을 선택합니다.
+   ![](assets/landing-page1.png)
+
+1. 클라우드 관리자 카드의 **시작**을 클릭합니다.
 [!UICONTROL 클라우드 관리자]에 로그인하면 사용자 인터페이스(UI)를 사용할 수 있습니다.
+   ![](assets/landing-page2.png)
 
->[!NOTE]
->
->[!UICONTROL 클라우드 관리자]에 할당된 역할 및 응용 프로그램 상태에 따라 [!UICONTROL 클라우드 관리자] UI를 사용하는 동안 다른 화면이 표시됩니다.
+   >[!NOTE]
+   >
+   >[!UICONTROL 클라우드 관리자]에 할당된 역할 및 응용 프로그램 상태에 따라 [!UICONTROL 클라우드 관리자] UI를 사용하는 동안 다른 화면이 표시됩니다.
 
 ## 클라우드 관리자 랜딩 페이지 {#landing-page}
 
-[!UICONTROL 클라우드 관리자]에 로그인하면 아래 그림과 같이 랜딩 페이지가 표시됩니다.
+[!UICONTROL 클라우드 관리자]에 성공적으로 로그인하면 랜딩 페이지에 조직에 있는 기존 프로그램의 카드가 표시됩니다.
 
 >[!NOTE]
 >
@@ -34,6 +42,7 @@ ht-degree: 0%
 * **Cloud Manager에 프로그램이 없습니다.**
 
 * **프로그램이 Cloud Manager에 이미 있습니다.**
+
 
 ## 기존 프로그램 {#no-program} 없이 Cloud Service에 새 프로그램 추가
 
@@ -54,6 +63,9 @@ ht-degree: 0%
    >[!NOTE]
    >예를 들어 위의 그림에서 **We.Retail Global**&#x200B;은 AMS 프로그램이고, **We.Retail-Prod Program - Prod**&#x200B;는 Cloud Service을 통해 사용할 수 있는 프로그램입니다.
 
-1. **프로그램 및 제품** 화면에서 프로그램을 추가하여 Cloud Service에서 새 프로그램을 만드는 방법에 대해 알아보려면 [프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)를 참조하십시오.
+1. Cloud Service에서 새 프로그램을 만들기 위해 **프로그램 및 제품** 화면에서 프로그램을 추가하는 방법을 알아보려면 다음을 참조하십시오.
+
+   * [프로덕션 프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+   * [샌드박스 프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
 
