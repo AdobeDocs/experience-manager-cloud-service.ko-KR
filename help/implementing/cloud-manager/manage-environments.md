@@ -2,10 +2,10 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1249'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >환경을 만들 때 Adobe I/O에서 하나 이상의 *통합*&#x200B;이(가) 만들어집니다.이러한 속성은 Adobe I/O 콘솔에 액세스할 수 있는 고객 사용자에게 표시되며 삭제할 수 없습니다. Adobe I/O 콘솔의 설명에서 이러한 내용이 표시되지 않습니다.
+   >환경을 만들 때 Adobe I/O에서 하나 이상의 *통합*&#x200B;이(가) 만들어집니다.Adobe I/O 콘솔에 액세스할 수 있는 고객 사용자에게 표시되며 삭제할 수 없습니다. Adobe I/O 콘솔의 설명에서 이러한 내용이 표시되지 않습니다.
 
    ![](assets/add-environment-image1.png)
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 기능은 프로덕션 목적으로 설정된 일반 프로그램에 설정된 프로덕션/스테이지 환경에 사용할 수 없습니다. 하지만 이 기능은 샌드박스 프로그램의 프로덕션/스테이지 환경에 사용할 수 있습니다.
+>이 기능은 프로덕션 목적으로 설정된 프로덕션/스테이지 환경에서 설정할 수 없습니다. 하지만 이 기능은 샌드박스 프로그램의 프로덕션/스테이지 환경에 사용할 수 있습니다.
 
 ## 액세스 관리 {#managing-access}
 
