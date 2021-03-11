@@ -2,9 +2,9 @@
 title: 기능 테스트 - Cloud Services
 description: 기능 테스트 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
+source-git-commit: 765334cff443d56e37f578647af4bcd133509481
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 기능 테스트 {#functional-testing}
 
-기능 테스트는 두 가지 유형으로 분류됩니다.
+기능 테스트는 다음 3가지 유형으로 분류됩니다.
 
 * 제품 기능 테스트
 * 사용자 정의 기능 테스트
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 AEM은 애플리케이션을 원활하게 업데이트할 수 있도록 고객에게 Cloud Manager 품질 게이트의 통합 세트를 제공합니다. 특히 IT 테스트 게이트를 통해 이미 고객은 AEM API를 사용하는 자체 테스트를 작성하고 자동화할 수 있습니다.
 
-사용자 정의 UI 테스트 기능은 고객이 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택 기능입니다. UI 테스트는 Selenium 기반 테스트로, Java 및 Maven, Node 및 WebDriver.io와 같은 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 광범위한 선택을 할 수 있도록 Docker 이미지에 패키지되어 있습니다. 여기에서 UI를 빌드하고 UI 테스트를 작성하는 방법에 대해 자세히 알아볼 수 있습니다. 또한 AEM 프로젝트 원형을 사용하여 UI 테스트 프로젝트를 손쉽게 생성할 수 있습니다.
+사용자 지정 UI 테스트 기능은 고객이 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있도록 하는 선택적 기능 [고객 옵트인](#customer-opt-in)입니다. UI 테스트는 Selenium 기반 테스트로, Java 및 Maven, Node 및 WebDriver.io와 같은 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 광범위한 선택을 할 수 있도록 Docker 이미지에 패키지되어 있습니다. 여기에서 UI를 빌드하고 UI 테스트를 작성하는 방법에 대해 자세히 알아볼 수 있습니다. 또한 AEM 프로젝트 원형을 사용하여 UI 테스트 프로젝트를 손쉽게 생성할 수 있습니다.
 
 고객은 GIT을 통해 맞춤형 테스트와 UI용 테스트 세트를 만들 수 있습니다. UI 테스트는 특정 단계 및 피드백 정보와 함께 각 Cloud Manager 파이프라인에 대한 특정 품질 게이트의 일부로 실행됩니다. 회귀 및 새 기능을 비롯한 모든 UI 테스트를 통해 고객 컨텍스트 내에서 오류를 감지하고 보고할 수 있습니다.
 
