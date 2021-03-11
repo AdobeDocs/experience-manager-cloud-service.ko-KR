@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: aadfc38f62a1e3543810447e91910cf71fa93583
+source-git-commit: 137be7fd0fe89429c0d1f028d81e54ce69cc4ef1
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1528'
 ht-degree: 3%
 
 ---
@@ -72,6 +72,52 @@ Customers using the Connected Assets feature can now easily view and track asset
 * CIF 코어 구성 요소 v1.8.0 릴리스되었습니다. 자세한 내용은 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)를 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
+
+이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2021.3.0으로 간략하게 설명합니다.
+
+## 릴리스 날짜 {#release-date-cm-march}
+
+AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021년 3월 11일입니다.
+
+
+### 새로운 기능 {#what-is-new-march}
+
+* IP 허용 목록, SSL 인증서 및 사용자 정의 도메인 이름에 대해 기존의 CDN 구성을 가진 환경을 보유한 고객은 다음 메시지를 보게 되며, UI를 통해 자가 서비스를 제공할 수 있습니다.
+
+* 이제 필요한 권한이 있는 사용자가 셀프 서비스 방식으로 다음을 수행할 수 있도록 프로그램을 편집할 수 있습니다.
+
+* 이제 파이프라인 실행 및 활동 화면 모두에 대해 AEM 푸시 업데이트&quot; 레이블이 표시됩니다.
+
+* 환경이 최대 절전 모드이지만 AEM 업데이트도 사용 가능한 경우 &quot;사용 가능한 업데이트&quot;보다 &quot;최대 절전 모드&quot; 상태가 우선합니다.
+
+* 이제 사용자는 통합 셸의 사용자 프로필 아이콘(오른쪽 상단)으로 이동한 후 &#39;클라우드 관리자 역할 보기&#39; 옵션을 선택하여 클라우드 관리자 역할을 볼 수 있습니다.
+
+* &quot;승인 신청&quot;이라는 레이블이 &quot;생산 승인&quot;으로 대체되어 명확성을 높였습니다.
+
+* &quot;버전&quot; 레이블이 프로덕션 파이프라인 실행 화면에서 &quot;Git 태그&quot;로 다시 설정되었습니다.
+
+* 중요한 지표가 정의된 임계값에 맞지 않을 때 동작을 정의하는 레이블의 실제 비헤이비어(즉시 취소 및 즉시 승인)를 반영하도록 레이블이 재설정되었습니다.
+
+* 클래스 및 메서드 사용 중단 목록은 AEM Cloud Service SDK의 `2021.3.4997.20210303T022849Z-210225` 버전을 기준으로 업데이트되었습니다.
+
+* 이제 Cloud Manager Production 파이프라인에 사용자 정의 UI 테스트 기능이 포함됩니다.
+
+### 버그 수정 {#bug-fixes-cm-march}
+
+* AEM 푸시 업그레이드 중에 일부의 경우 패키지 버전 관리를 건너뛰었습니다.
+
+* 패키지가 다른 패키지에 포함된 경우 일부 품질 문제를 제대로 찾지 못했습니다.
+
+* 프로그램 추가 대화 상자를 열 때 생성된 기본 프로그램 이름이 기존 프로그램 이름과 중복될 수 있습니다.
+
+* 때때로 사용자가 파이프라인을 시작한 직후 파이프라인 실행 페이지를 벗어나는 경우 작업이 실패했지만 실제로 실행이 시작된다는 오류 메시지가 표시됩니다.
+
+* 고객 빌드로 인해 잘못된 패키지가 발생했을 때 빌드 단계가 불필요하게 다시 시작되었습니다.
+
+* 경우에 따라 해당 구성이 배포되지 허용 목록에 추가하다 않았더라도 IP 옆에 녹색 &quot;활성&quot; 상태가 표시될 수 있습니다.
+
+* 모든 기존 프로덕션 파이프라인은 경험 감사 단계를 통해 자동으로 활성화됩니다.
+
 
 ### 릴리스 날짜 {#release-date-cm}
 
