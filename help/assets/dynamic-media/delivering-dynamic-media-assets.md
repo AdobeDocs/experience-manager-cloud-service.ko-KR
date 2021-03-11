@@ -2,10 +2,10 @@
 title: Dynamic Media 자산 제공
 description: Dynamic Media 에셋을 제공하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 14%
+ht-degree: 7%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 14%
 
 Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 
-* 웹 사이트가 AEM에서 호스팅된다면, 다이내믹 미디어 자산을 페이지에 바로 추가할 수 있습니다.
+* 웹 사이트가 AEM에서 호스팅되는 경우 Dynamic Media 자산을 페이지에 직접 추가할 수 있습니다.
 * 웹 사이트가 AEM에 없다면 다음 중 하나를 선택할 수 있습니다.
 
    * 웹 사이트에 비디오 또는 이미지 임베드
