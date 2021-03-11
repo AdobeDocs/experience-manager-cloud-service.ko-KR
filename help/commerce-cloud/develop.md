@@ -2,16 +2,16 @@
 title: Cloud Service으로 AEM용 AEM Commerce 개발
 description: AEM 프로젝트 원형형을 사용하여 상거래 기반의 AEM 프로젝트를 생성하는 방법을 살펴볼 수 있습니다. AEM을 Cloud Service SDK로 사용하여 프로젝트를 구축 및 로컬 개발 환경에 배포하는 방법을 살펴봅니다.
 topics: Commerce, Development
-feature: Commerce Integration Framework
+feature: 전자 상거래 통합 프레임워크
 version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
+source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 8%
+source-wordcount: '969'
+ht-degree: 9%
 
 ---
 
@@ -28,7 +28,7 @@ Cloud Service으로 AEM용 CIF(Commerce Integration Framework)를 기반으로 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-CIF 프로젝트 작업을 수행하려면 로컬 개발 환경을 사용하는 것이 좋습니다. Cloud Service 환경으로 AEM용으로 제공되는 CIF Add-On은 로컬 개발에도 사용할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 다운로드할 수 있습니다.
+CIF 프로젝트 작업을 수행하려면 로컬 개발 환경을 사용하는 것이 좋습니다. AEM용으로 제공되는 CIF Add-On을 Cloud Service으로 로컬 개발에도 사용할 수 있습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 다운로드할 수 있습니다.
 
 CIF Add-On은 Sling 기능 아카이브로 제공됩니다. Software Distribution portal에서 사용할 수 있는 zip 파일에는 두 개의 Sling Feature Archive 파일(AEM 작성자용 파일, AEM 게시 인스턴스용 파일) 1개가 있습니다.
 
@@ -38,7 +38,7 @@ CIF Add-On은 Sling 기능 아카이브로 제공됩니다. Software Distributio
 
 다음은 로컬에 설치해야 합니다.
 
-- [CLOUD SERVICE SDK로 AEM 사용](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [Cloud Service SDK로 AEM 사용](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
 - [Node.js v10+](https://nodejs.org/en/)
@@ -137,6 +137,12 @@ CIF 핵심 구성 요소는 제공된 `all` 패키지를 포함하거나 CIF 컨
 <dependency>
     <groupId>com.adobe.commerce.cif</groupId>
     <artifactId>core-cif-components-apps</artifactId>
+    <type>zip</type>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>core-cif-components-config</artifactId>
     <type>zip</type>
     <version>x.y.z</version>
 </dependency>
