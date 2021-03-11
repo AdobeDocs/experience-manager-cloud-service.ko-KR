@@ -2,7 +2,7 @@
 title: '동면작업 및 동면제거 샌드박스 환경 '
 description: '동면작업 및 동면제거 샌드박스 환경 '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 샌드박스 프로그램 환경은 특정 기간 동안 활동이 감지되지 않는 경우 *최대 절전 모드*&#x200B;를 입력합니다.
 
 >[!NOTE]
->최대 절전 모드는 샌드박스 프로그램 환경에만 적용됩니다. 일반 프로그램 환경에서는 절전 모드를 사용하지 않습니다.
+>최대 절전 모드는 샌드박스 프로그램 환경에만 적용됩니다. 프로덕션 프로그램 환경은 최대 절전 모드를 사용하지 않습니다.
 
 ## 최대 절전 모드 {#hibernation-introduction}
 
