@@ -1,16 +1,16 @@
 ---
-title: 탐색
-description: 탐색 - Cloud Service
+title: Cloud Service으로 AEM용 Cloud Manager 액세스
+description: Cloud Service으로 AEM용 Cloud Manager 액세스
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
 
-# Experience Manager as a Cloud Service 액세스 {#navigation}
+# AEM용 Cloud Manager에 Cloud Service {#navigation}(으)로 액세스
 
 시스템 관리자가 Cloud Manager에 대한 액세스 권한을 부여하면 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)을(를) 통해서도 액세스할 수 있는 Cloud Manager 로그인 페이지로 안내하는 이메일을 받게 됩니다.
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## SysAdmin 작업 {#sysadmin-tasks}
 
-이제 SysAdmin 역할의 사용자는 Admin Console에 직접 액세스하여 역할 및 권한 및 AEM 인스턴스에 대한 액세스를 관리할 수 있습니다.
+SysAdmin 역할의 사용자는 **액세스 관리**&#x200B;를 선택하여 Admin Console에 직접 액세스하여 역할 및 권한 및 AEM 인스턴스에 대한 액세스를 관리할 수 있습니다.
 
 ### 역할 관리 {#manage-roles}
 
