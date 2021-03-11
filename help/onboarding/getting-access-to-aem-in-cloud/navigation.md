@@ -2,9 +2,9 @@
 title: Cloud Service으로 AEM용 Cloud Manager 액세스
 description: Cloud Service으로 AEM용 Cloud Manager 액세스
 translation-type: tm+mt
-source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
+source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,10 @@ SysAdmin 역할의 사용자는 작성자 인스턴스로 직접 이동하고 �
 
 **프로그램 추가** 단추가 보이지 않고 Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하십시오.
 
-자세한 내용은 [Cloud Service에서 기존 프로그램](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program)과 함께 새 프로그램 추가를 참조하십시오.
-
 ## 새 Cloud Service 고객의 경우 {#new-cloud-services}
 
 새 Cloud Service 고객인 경우 빈 랜딩 페이지의 오른쪽 상단 모서리에 **프로그램 추가** 단추가 표시됩니다. Cloud Service에 새 프로그램을 추가하려고 합니다.
 
-자세한 내용은 [기존 프로그램 없이 Cloud Service에서 새 프로그램 추가](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program)를 참조하십시오.
-
+Cloud Manager에서 프로그램을 추가하는 방법에 대해 알아보려면 다음을 참조하십시오.
+* [프로덕션 프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [샌드박스 프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
