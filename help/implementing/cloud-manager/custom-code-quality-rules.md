@@ -2,9 +2,9 @@
 title: 사용자 지정 코드 품질 규칙 - Cloud Services
 description: 사용자 지정 코드 품질 규칙 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 901a660424f5e1fded654ddb09f3d872b7cd01b7
+source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3299'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,7 @@ public class DontDoThis implements Page {
 
 ResourceResolverFactory에서 얻은 ResourceResolver 개체는 시스템 리소스를 사용합니다. ResourceResolver를 더 이상 사용하지 않을 때 이러한 리소스를 다시 회수하기 위한 조치가 있지만 close() 메서드를 호출하여 열려 있는 모든 ResourceResolver 객체를 명시적으로 닫는 것이 더 효율적입니다.
 
-한 가지 비교적 일반적인 오해는 기존 JCR 세션을 사용하여 만든 ResourceResolver 객체를 명시적으로 닫지 말아야 하거나 닫으면 기본 JCR 세션이 닫힐 수 있다는 것입니다. ResourceResolver를 연 방법에 관계없이 더 이상 사용하지 않을 때 닫아야 합니다. ResourceResolver는 Closeable 인터페이스를 구현하므로 명시적으로 close()를 호출하지 않고 Try-with-resources 구문을 사용할 수도 있습니다.
+한 가지 비교적 일반적인 오해는 기존 JCR 세션을 사용하여 만든 ResourceResolver 객체를 명시적으로 닫지 말아야 하거나 닫으면 기본 JCR 세션이 닫힐 수 있다는 것입니다. ResourceResolver를 연 방법에 관계없이 더 이상 사용하지 않을 때 닫아야 합니다. ResourceResolver는 Closeable 인터페이스를 구현하므로 명시적으로 close()를 호출하지 않고 try-with-resources 구문을 사용할 수도 있습니다.
 
 #### 호환되지 않는 코드 {#non-compliant-code-4}
 
@@ -611,6 +611,9 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
 **이후**:버전 2019.6.0
 
 복잡한 프로젝트에서 발생하는 일반적인 문제는 동일한 OSGi 구성 요소가 여러 번 구성되는 것입니다. 따라서 작동 가능한 구성에 대한 모호성이 만들어집니다. 이 규칙은 동일한 런타임 모드(또는 런타임 모드 조합)에서 동일한 구성 요소가 여러 번 구성되는 문제를 식별한다는 점에서 &quot;실행 모드 인식&quot;입니다.
+
+>[!NOTE]
+>이 규칙은 동일한 경로에서 동일한 구성이 여러 패키지에서 정의되는 문제를 발생시킵니다. 예를 들어 동일한 패키지가 전체 기본 패키지 목록에 중복되는 경우도 있습니다. 예를 들어 빌드가 `com.myco:com.myco.ui.apps` 및 `com.myco:com.myco.all`이라는 패키지를 생성하는 경우 `com.myco:com.myco.all`에 `com.myco:com.myco.ui.apps`이(가) 포함된 경우 `com.myco:com.myco.ui.apps` 내의 모든 구성이 중복으로 보고됩니다. 이는 일반적으로 [컨텐트 패키지 구조 지침](/help/implementing/developing/aem-project-content-package-structure.md);을 따르지 않는 경우입니다.이 예제에서 패키지 `com.myco:com.myco.ui.apps`에 `<cloudManagerTarget>none</cloudManagerTarget>` 속성이 없습니다.
 
 #### 호환되지 않는 코드 {#non-compliant-code-osgi}
 
