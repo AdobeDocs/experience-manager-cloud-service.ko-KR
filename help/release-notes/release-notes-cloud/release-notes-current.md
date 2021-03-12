@@ -2,7 +2,7 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
+source-git-commit: 612885895dda73afb3406f73e59ef3eec6202f5d
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 2%
@@ -73,7 +73,7 @@ Customers using the Connected Assets feature can now easily view and track asset
 
 ## Cloud Manager {#cloud-manager}
 
-이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2021.3.0으로 간략하게 설명합니다.
+이 섹션에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2021.3.0으로 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date-cm-march}
 
