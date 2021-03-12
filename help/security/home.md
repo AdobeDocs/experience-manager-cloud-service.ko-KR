@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 보안
 description: Adobe Experience Manager as a Cloud Service 보안 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: c0a66239e949ee4b460142e392d61e22938896bc
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 91%
+source-wordcount: '406'
+ht-degree: 89%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 91%
 
 * [Cloud Service의 AEM 보안 개요](/help/security/cloud-service-security-overview.md)
 * [AEM as a Cloud Service를 위한 IMS 지원](ims-support.md)
+* [Cloud Service과 AEM에 대한 동일한 사이트 쿠키 지원](same-site-cookie-support.md)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
