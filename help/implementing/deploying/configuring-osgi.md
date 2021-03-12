@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service에 대한 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 1%
@@ -180,7 +180,7 @@ OSGi 구성 팩토리 파일 이름은  `<PID>-<factory-name>.cfg.json` 이름 �
 1. 변경 내용을 새 `.cfg.json` 파일에 저장합니다.
 1. 새로운 OSGi 구성 파일을 Git에 추가 및 커밋
 
-### AEM SDK Quickstart {#generating-osgi-configuratuions-using-the-aem-sdk-quickstart}을(를) 사용하여 OSGi 구성 생성
+### AEM SDK Quickstart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}을(를) 사용하여 OSGi 구성 생성
 
 AEM SDK Quickstart Jar의 AEM 웹 콘솔을 사용하여 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM 웹 콘솔의 구성 UI를 사용하면 `.cfg.json` 파일이 저장소에 작성되므로 AEM 프로젝트 정의 OSGi 구성이 생성된 구성과 다를 수 있으므로 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하기 위해 이 점을 주의하십시오.
 
