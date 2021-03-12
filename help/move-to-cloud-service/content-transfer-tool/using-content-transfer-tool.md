@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 translation-type: tm+mt
-source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
+source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2307'
 ht-degree: 51%
 
 ---
@@ -209,6 +209,8 @@ ht-degree: 51%
 
 ### 마이그레이션 세트에 대한 로그 보기 {#viewing-logs-migration-set}
 
+각 단계가 완료되면(추출 및 통합) 로그를 확인하고 오류를 찾습니다.  보고된 문제를 처리하거나 Adobe 지원에 문의하여 오류를 즉시 해결해야 합니다.
+
 *개요* 페이지에서 기존 마이그레이션 세트에 대한 로그를 볼 수 있습니다.
 아래 단계를 따르십시오.
 
@@ -268,6 +270,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 자세한 내용은 [Oak 실행 가능 Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)를 참조하십시오.
 
 일관성을 위해 위에 지정된 *OUT_DIR*&#x200B;에 생성된 파일에서 경로에 바이너리가 누락되고, 백업에서 복원, 경로 삭제, 색인 재지정 등과 같은 적절한 조치를 취했는지 확인할 수 있습니다. 
+
 
 ### UI 동작 {#ui-behavior}
 
