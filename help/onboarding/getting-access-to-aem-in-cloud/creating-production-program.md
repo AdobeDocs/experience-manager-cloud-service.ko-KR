@@ -2,9 +2,9 @@
 title: '프로덕션 프로그램 만들기 '
 description: '프로덕션 프로그램 만들기 '
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,13 @@ ht-degree: 0%
 *프로덕션* 프로그램은 AEM 및 Cloud Manager에 익숙하고 프로덕션 환경에 코드 작성을 수행하는 목적에 따라 코드를 작성하고 빌드하고 테스트할 준비가 된 사용자를 위해 제작되었습니다.
 
 프로덕션 프로그램을 만들려면 아래 절차를 따르십시오.
+
+1. Cloud Manager의 랜딩 페이지를 실행하고 화면 오른쪽 상단 모서리에서 **프로그램 추가**&#x200B;를 클릭합니다.
+
+   ![](assets/first_timelogin1.png)
+
+   >[!NOTE]
+   >Cloud Manager에 액세스하는 방법에 대한 자세한 내용은 [Cloud Manager 랜딩 페이지](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md)를 참조하십시오.
 
 1. 프로덕션 프로그램을 만들려면 프로그램 만들기 마법사에서 **프로덕션**&#x200B;에 대해 설정을 선택합니다. 사용자는 **계속**&#x200B;을 선택하기 전에 기본 프로그램 이름을 허용하거나 편집할 수 있습니다.
 
