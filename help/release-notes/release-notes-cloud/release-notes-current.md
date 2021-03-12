@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
+source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1667'
 ht-degree: 2%
 
 ---
@@ -210,13 +210,20 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 
 ### 코드 리팩토링 도구 {#what-is-new-crt}의 새로운 기능
 
-* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 Repository Modernizer에 대한 몇 가지 버그 수정이 포함되어 있습니다.
-이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)을 참조하십시오.
+* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 Repository Modernizer 및 Dispatcher Converter에 대한 몇 가지 새로운 기능과 버그 수정이 포함되어 있습니다.    이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)을 참조하십시오.
 
-### 버그 수정 {#bug-fixes-crt}
+* Repository Modernizer의 새로운 기능 및 향상된 기능 [GitHub 리소스를 참조하십시오.저장소 현대화 프로그램](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)을(를) 최신 버전으로 사용할 수 있습니다.
+   * OSGi 구성을 기본 설정 .cfg.json 형식으로 정규화합니다(RepoInit 구성 제외).
+   * OSGi 구성 폴더의 이름을 지정된 형식으로 변경합니다.
+   * ui.apps.structure 프로젝트를 생성합니다.
+   * 분석 모듈을 만듭니다.
 
-* Repository Modernizer에서 수행한 몇 가지 버그 수정.
-[GitHub 리소스를 참조하십시오.자세한 내용은 aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)을 참조하십시오.
+* Dispatcher Converter의 새로운 기능 및 개선 사항. [GitHub 리소스를 참조하십시오.Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+   * 컨텐츠를 줄이지 않고 다른 포함을 위한 개별 파일 만들기
+   * 호스트 파일의 폴더 경로와 호스트 파일의 경로를 모두 처리할 수 있습니다.
+   * 600개 이상의 대규모 고객 구성을 갖는 팜 파일 생성
+
+
 
 
 
