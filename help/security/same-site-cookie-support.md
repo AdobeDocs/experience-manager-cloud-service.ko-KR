@@ -2,9 +2,9 @@
 title: Cloud Service과 동일한 Adobe Experience Manager 사이트 쿠키 지원
 description: Cloud Service과 동일한 Adobe Experience Manager 사이트 쿠키 지원
 translation-type: tm+mt
-source-git-commit: e51d9c3e4691fb58f3c4b6a2565cc8cad2a1acb0
+source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ ht-degree: 0%
 1. 저장을 클릭합니다
 1. AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)를 사용하여 OSGi 구성 생성에서 설명한 단계를 따라 이 특정 설정에 대한 JSON 형식 구성을 생성합니다.[
 1. 속성 설정](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi 설명서의 [클라우드 관리자 API 형식 단계에 따라 설정을 적용합니다.
+
+이 설정이 업데이트되고 사용자가 로그아웃되어 다시 로그인하면 `login-token` 쿠키는 `None` 속성 집합을 가지며 교차 사이트 요청에 포함됩니다.
