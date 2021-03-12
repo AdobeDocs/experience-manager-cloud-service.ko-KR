@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 translation-type: tm+mt
-source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
+source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 5%
+source-wordcount: '696'
+ht-degree: 4%
 
 ---
 
@@ -51,6 +51,10 @@ AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만�
 1. 트래픽을 AEM 서버로 올바르게 라우팅하는 데 필요한 `X-Edge-Key` 또는 `X-AEM-Edge-Key`(CDN이 X-Edge-*를 제거하는 경우)을 설정합니다. 값은 Adobe에서 와야 합니다. Adobe CDN의 수신(`X-Edge-Key`이(가) 없을 때 차단됨)에 직접 액세스하려면 Adobe에 알려주십시오.
 
 라이브 트래픽을 수락하기 전에 엔드 투 엔드 트래픽 라우팅이 올바르게 작동하는지 Adobe 고객 지원으로 확인해야 합니다.
+
+>[!NOTE]
+>
+>자체 CDN을 관리하는 고객은 AEM CDN으로 전송되는 헤더의 무결성을 보장해야 합니다. 예를 들어 고객이 모든 `X-Forwarded-*` 헤더를 지우고 알려진 제어 값으로 설정하는 것이 좋습니다. 예를 들어 `X-Forwarded-For`은 클라이언트의 IP 주소를 포함하고 `X-Forwarded-Host`은 사이트의 호스트를 포함해야 합니다.
 
 고객 CDN에서 AEM 관리 CDN으로의 홉이 효율적일 수 있지만, 추가 홉으로 인해 작은 성능 히트가 발생할 수 있습니다.
 
