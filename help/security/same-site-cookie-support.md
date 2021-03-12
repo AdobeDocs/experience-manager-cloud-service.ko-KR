@@ -2,7 +2,7 @@
 title: Cloud Service과 동일한 Adobe Experience Manager 사이트 쿠키 지원
 description: Cloud Service으로 Adobe Experience Manager에 대한 ISame 사이트 쿠키 지원
 translation-type: tm+mt
-source-git-commit: d9a7836034134fac91529a1996c8f05a48a5f4fd
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -26,5 +26,5 @@ ht-degree: 0%
 1. 아래 이미지에 표시된 것처럼 로그인 토큰 쿠키&#x200B;**에 대한** SameSite 특성을 `None`로 설정합니다.
    ![사마새](/help/security/assets/samesite1.png)
 1. 저장을 클릭합니다
-1. AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configuratuions-using-the-aem-sdk-quickstart)를 사용하여 OSGi 구성 생성에서 설명한 단계를 따라 이 특정 설정에 대한 JSON 형식 구성을 생성합니다.[
+1. AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)를 사용하여 OSGi 구성 생성에서 설명한 단계를 따라 이 특정 설정에 대한 JSON 형식 구성을 생성합니다.[
 1. 속성 설정](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi 설명서의 [클라우드 관리자 API 형식 단계에 따라 설정을 적용합니다.
