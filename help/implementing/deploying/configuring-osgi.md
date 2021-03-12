@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service에 대한 OSGi 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 translation-type: tm+mt
-source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
+source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 1%
@@ -52,7 +52,7 @@ cfg.json OSGi 구성 형식을 따릅니다.
 
 동일한 PID에 대해 여러 구성을 적용할 경우 일치하는 실행 모드가 가장 많은 구성이 적용됩니다.
 
-이 규칙의 세부기간은 PID 수준입니다. 즉, 동일한 PID에 대해 `/apps/example/config.author/`에서 동일한 PID에 대해 일부 속성을 정의할 수 없으며, 같은 PID에 대해 `/apps/example/config.author.dev/`에 있는 보다 구체적인 속성을 정의할 수 없습니다.  가장 많은 수의 일치 실행 모드를 가진 구성은 전체 PID에 대해 효과적입니다.
+이 규칙의 세부기간은 PID 수준입니다. 즉, 동일한 PID에 대해 `/apps/example/config.author/` 및 `/apps/example/config.author.dev/`의 보다 구체적인 속성을 정의할 수 없습니다.  가장 많은 수의 일치 실행 모드를 가진 구성은 전체 PID에 대해 효과적입니다.
 
 로컬에서 개발할 때 런타임 모드 시작 매개 변수를 전달하여 사용할 런타임 모드 OSGI 구성을 지정할 수 있습니다.
 
@@ -123,9 +123,9 @@ OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하면 사용 �
 
 ### 보안 환경별 구성 값 {#when-to-use-secret-environment-specific-configuration-values} 사용 시기
 
-CLOUD SERVICE의 경우 암호, 개인 API 키 또는 보안상의 이유로 Git에 저장할 수 없는 기타 모든 값과 같은 모든 비밀 OSGi 구성 값에 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
+Cloud Service의 경우 암호, 개인 API 키 또는 보안상의 이유로 Git에 저장할 수 없는 기타 모든 값과 같은 모든 비밀 OSGi 구성 값에 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
 
-보안 환경별 구성을 사용하여 스테이지 및 프로덕션 등 Cloud Service 환경에서 모든 AEM에 기밀의 가치를 저장할 수 있습니다.
+보안 환경별 구성을 사용하여 스테이지 및 프로덕션 등 Cloud Service 환경에서 모든 AEM에 기밀에 대한 가치를 저장할 수 있습니다.
 
 <!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
@@ -164,11 +164,11 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## OSGi 구성 만들기
+## OSGi 구성 만들기 {#creating-sogi-configurations}
 
 아래에 설명된 바와 같이 새 OSGi 구성을 만드는 방법은 두 가지가 있습니다. 이전 방법은 일반적으로 개발자에 의한 잘 알려진 OSGi 속성과 값을 갖는 사용자 지정 OSGi 구성 요소 및 AEM 제공 OSGi 구성 요소에 대한 후자를 구성하는 데 사용됩니다.
 
-### OSGi 구성 작성
+### OSGi 구성 작성 중 {#writing-osgi-configurations}
 
 JSON 형식 OSGi 구성 파일은 AEM 프로젝트에서 직접 직접 작성할 수 있습니다. 널리 알려진 OSGi 구성 요소 및 구성을 정의하는 동일한 개발자에 의해 설계되고 개발된 맞춤형 OSGi 구성 요소에 대한 OSGi 구성을 만드는 가장 빠른 방법입니다. 또한 이 방법을 사용하여 다양한 런타임 모드 폴더에 있는 동일한 OSGi 구성 요소에 대한 구성을 복사/붙여 넣고 업데이트할 수 있습니다.
 
@@ -180,7 +180,7 @@ OSGi 구성 팩토리 파일 이름은  `<PID>-<factory-name>.cfg.json` 이름 �
 1. 변경 내용을 새 `.cfg.json` 파일에 저장합니다.
 1. 새로운 OSGi 구성 파일을 Git에 추가 및 커밋
 
-### AEM SDK Quickstart를 사용하여 OSGi 구성 생성
+### AEM SDK Quickstart {#generating-osgi-configuratuions-using-the-aem-sdk-quickstart}을(를) 사용하여 OSGi 구성 생성
 
 AEM SDK Quickstart Jar의 AEM 웹 콘솔을 사용하여 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 기능은 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다. AEM 웹 콘솔의 구성 UI를 사용하면 `.cfg.json` 파일이 저장소에 작성되므로 AEM 프로젝트 정의 OSGi 구성이 생성된 구성과 다를 수 있으므로 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하기 위해 이 점을 주의하십시오.
 
@@ -203,7 +203,7 @@ AEM SDK Quickstart Jar의 AEM 웹 콘솔을 사용하여 OSGi 구성 요소를 �
 1. 새로운 OSGi 구성 파일을 Git에 추가하고 커밋합니다.
 
 
-## OSGi 구성 속성 형식
+## OSGi 구성 속성 형식 {#osgi-configuration-property-formats}
 
 ### 인라인 값 {#inline-values}
 
@@ -225,7 +225,7 @@ OSGi 구성은 환경에 따라 정의될 변수의 자리 표시자를 지정�
 use $[env:ENV_VAR_NAME]
 ```
 
-고객은 사용자 지정 코드와 관련된 OSGI 구성 속성에만 이 기술을 사용해야 합니다.adobe 정의 OSGI 구성을 재정의하는 데 사용해서는 안 됩니다.
+고객은 사용자 지정 코드와 관련된 OSGI 구성 속성에만 이 기술을 사용해야 합니다.Adobe 정의 OSGI 구성을 재정의하는 데 사용해서는 안 됩니다.
 
 ### 비밀 구성 값 {#secret-configuration-values}
 
@@ -546,7 +546,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->Adobe I/O CLI용 Cloud Manager 플러그인을 사용하여 값을 구성하는 방법에 대한 자세한 내용은 [이 페이지](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)을 참조하십시오.
+>Adobe I/O CLI용 클라우드 관리자 플러그인을 사용하여 값을 구성하는 방법에 대한 자세한 내용은 [이 페이지](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)를 참조하십시오.
 
 ### 변수 수 {#number-of-variables}
 
