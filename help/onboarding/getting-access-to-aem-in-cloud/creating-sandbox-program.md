@@ -2,9 +2,9 @@
 title: '샌드박스 프로그램 만들기 '
 description: '샌드박스 프로그램 만들기 '
 translation-type: tm+mt
-source-git-commit: 5773683a75254855687266929a3e1876c8f06e61
+source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,13 @@ ht-degree: 0%
 # 샌드박스 프로그램 만들기 {#create-sandbox-program}
 
 아래의 단계에 따라 샌드박스 프로그램을 만드십시오.
+
+1. Cloud Manager의 랜딩 페이지를 실행하고 화면 오른쪽 상단 모서리에서 **프로그램 추가**&#x200B;를 클릭합니다.
+
+   ![](assets/first_timelogin1.png)
+
+   >[!NOTE]
+   >Cloud Manager에 액세스하는 방법에 대한 자세한 내용은 [Cloud Manager 랜딩 페이지](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md)를 참조하십시오.
 
 1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;을 선택합니다. 사용자가 **만들기**&#x200B;를 선택하기 전에 프로그램 이름을 제출합니다.
 
