@@ -3,10 +3,10 @@ title: 브랜드 포털에서 AEM Assets을  [!DNL Cloud Service] 으로 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
+source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 32%
+source-wordcount: '2248'
+ht-degree: 23%
 
 ---
 
@@ -15,9 +15,162 @@ ht-degree: 32%
 
 Adobe Experience Manager Assets 브랜드 포털을 구성하면 Adobe Experience Manager Assets에서 승인된 브랜드 자산을 [!DNL Cloud Service] 인스턴스로 브랜드 포털에 게시하고 브랜드 포털 사용자에게 배포할 수 있습니다.
 
-**구성 워크플로우**
+## 클라우드 관리자 {#activate-brand-portal}를 사용하여 브랜드 포털 활성화
 
-AEM Assets은 [!DNL Cloud Service]으로 브랜드 포털 임차인의 인증을 위해 IMS(Adobe Identity Management Services) 계정 토큰을 조달하는 Adobe 개발자 콘솔을 통해 브랜드 포털에 구성됩니다. AEM Assets뿐만 아니라 Adobe 개발자 콘솔에도 구성이 필요합니다.
+Cloud Manager 사용자는 AEM Assets에 대한 브랜드 포털을 [!DNL Cloud Service] 인스턴스로 활성화합니다. 활성화 워크플로우는 필요한 구성(인증 토큰, IMS 구성 및 브랜드 포털 클라우드 서비스)을 백 엔드에 만들고 Cloud Manager의 브랜드 포털 임차인의 상태를 반영합니다.
+
+**전제 조건**
+
+AEM Assets에서 [!DNL Cloud Service] 인스턴스로 브랜드 포털을 활성화하려면 다음 정보가 필요합니다.
+
+* AEM Assets을 [!DNL Cloud Service] 인스턴스로 가동 및 실행합니다.
+* Cloud Manager 제품의 프로필에 할당된 클라우드 관리자에 액세스할 수 있는 사용자입니다. 자세한 내용은 [클라우드 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#accessing-cloud-manager)에 액세스를 참조하십시오.
+
+>[!NOTE]
+>
+>[!DNL Cloud Service] 인스턴스로 AEM Assets은 하나의 브랜드 포털 임차인만 연결할 수 있습니다. 한 환경에서만 브랜드 포털이 활성화된 [!DNL Cloud Service] 인스턴스로 AEM Assets용 여러 환경(개발, 프로덕션 및 스테이지)을 만들 수 있습니다.
+
+**브랜드 포털 활성화 절차**
+
+AEM Assets 환경을 [!DNL Cloud Service] 인스턴스로 만들거나 별도로 만들 때 브랜드 포털을 활성화할 수 있습니다. 환경이 이미 만들어졌고 이제 브랜드 포털을 활성화해야 한다고 가정합니다.
+
+1. Adobe Cloud Manager에 로그인하고 **[!UICONTROL 환경]**&#x200B;으로 이동합니다.
+
+   **[!UICONTROL 환경]** 페이지에는 모든 기존 환경의 목록이 표시됩니다.
+
+1. 환경 세부 사항을 보려면 목록에서 환경(하나씩)을 선택합니다.
+
+   브랜드 포털은 사용 가능한 환경 중 하나를 사용할 수 있으며 **[!UICONTROL 환경 정보]**&#x200B;에 반영됩니다.
+
+   브랜드 포털과 연관된 환경이 발견되면 **[!UICONTROL 브랜드 포털 활성화]** 버튼을 클릭하여 활성화 워크플로우를 시작합니다.
+
+   ![브랜드 포털 활성화](assets/create-environment4.png)
+
+1. 활성화 워크플로가 백 엔드에서 필요한 구성을 생성하므로 브랜드 포털 테넌트를 활성화하는 데 몇 분 정도 걸릴 수 있습니다. 브랜드 포털 테넌트가 활성화되면 상태가 활성화됨으로 변경됩니다.
+
+   ![상태 보기](assets/create-environment5.png)
+
+**참고 항목**:
+* [AEM Assets에서 Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+
+* [Cloud Manager의 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
+
+
+**브랜드 포털 테넌트에 로그인**:
+
+Cloud Manager에서 브랜드 포털 테넌트를 활성화한 후 Admin Console에서 또는 테넌트 URL을 직접 사용하여 브랜드 포털에 로그인할 수 있습니다.
+
+브랜드 포털 테넌트의 기본 URL은 다음과 같습니다.`https://<tenant-id>.brand-portal.adobe.com/`.
+
+브랜드 포털 URL을 잘 모를 경우 다음 단계를 수행하십시오.
+
+1. [Admin Console](http://adminconsole.adobe.com/)에 로그인하고 **[!UICONTROL 제품]**&#x200B;으로 이동합니다.
+1. 왼쪽 레일에서 **[!UICONTROL Adobe Experience Manager 브랜드 포털 - 브랜드 포털]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 브랜드 포털로 이동]**&#x200B;을 클릭하여 브라우저에서 브랜드 포털을 직접 엽니다.
+
+   또는 브랜드 포털 임차인 URL을 복사하여 브라우저에 붙여 넣어 브랜드 포털 인터페이스를 엽니다.
+
+   ![브랜드 포털 액세스](assets/access-bp-on-cloud.png)
+
+
+**연결 테스트**
+
+다음 단계를 수행하여 AEM Assets 간 연결을 [!DNL Cloud Service] 인스턴스와 브랜드 포털 임차인으로 확인합니다.
+
+1. AEM Assets에 로그인합니다.
+
+1. **도구** 패널에서 **[!UICONTROL 배포]** > **[!UICONTROL 배포]**&#x200B;로 이동합니다.
+
+   ![](assets/test-bpconfig1.png)
+
+   브랜드 포털 배포 에이전트(**[!UICONTROL bdistribution-agent0]**)가 **[!UICONTROL 브랜드 포털에 게시]**&#x200B;에 만들어집니다.
+
+   ![](assets/test-bpconfig2.png)
+
+
+1. 배포 에이전트를 열려면 **[!UICONTROL 브랜드 포털에 게시]**&#x200B;를 클릭합니다.
+
+   **[!UICONTROL 상태]** 탭 아래에서 배포 대기열을 볼 수 있습니다.
+
+   분배 에이전트에는 두 개의 큐가 있습니다.
+   * **처리 대기열**:브랜드 포털에 자산을 배포하기 위해.
+
+   * **오류 큐**:배포가 실패한 자산에 대해.
+   >[!NOTE]
+   >
+   >오류를 검토하고 **error-queue**&#x200B;을 정기적으로 지우는 것이 좋습니다.
+
+   ![](assets/test-bpconfig3.png)
+
+1. AEM Assets을 [!DNL Cloud Service] 및 브랜드 포털로 연결하려면 **[!UICONTROL 연결 테스트]** 아이콘을 클릭합니다.
+
+   ![](assets/test-bpconfig4.png)
+
+   *테스트 패키지가*&#x200B;에 성공적으로 전달되었다는 메시지가 나타납니다.
+
+   >[!NOTE]
+   >
+   >자산 분배(큐에서 실행)가 실패하는 원인이 될 수 있으므로 분배 에이전트를 비활성화하지 마십시오.
+
+AEM Assets 간 연결을 [!DNL Cloud Service] 인스턴스와 브랜드 포털 임차인으로 확인하려면 AEM Assets에서 브랜드 포털에 자산을 게시하십시오. 연결이 성공하면 게시된 자산이 브랜드 포털 인터페이스에 표시됩니다.
+
+
+이제 다음을 수행할 수 있습니다.
+
+* [AEM Assets에서 Brand Portal에 자산 게시](publish-to-brand-portal.md)
+* [AEM Assets의 폴더를 Brand Portal에 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [AEM Assets의 컬렉션을 Brand Portal에 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [브랜드 포털에서 AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - 브랜드 포털의 자산 소싱에 자산 게시
+* [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [태그를 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+자세한 내용은 [브랜드 포털 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html)를 참조하십시오.
+
+**분배 로그**
+
+자산 게시 워크플로우에 대한 배포 에이전트 로그를 모니터링할 수 있습니다.
+
+예를 들어 구성을 확인하기 위해 AEM Assets에서 브랜드 포털에 자산을 게시했습니다.
+
+1. [Test Configuration](#test-configuration) 섹션에 나와 있는 단계(1에서 4)를 따라 배포 에이전트 페이지로 이동합니다.
+1. 처리 및 오류 로그를 보려면 **[!UICONTROL 로그]**&#x200B;를 클릭합니다.
+
+   ![](assets/test-bpconfig5.png)
+
+배포 에이전트가 다음 로그를 생성했습니다.
+
+* 정보:배포 에이전트의 성공적인 구성을 트리거하는 시스템 생성 로그입니다.
+* DSTRQ1(요청 1):테스트 연결에 대해 트리거합니다.
+
+자산을 게시할 때 다음 요청 및 응답 로그가 생성됩니다.
+
+**분배 에이전트 요청**:
+
+* DSTRQ2(요청 2): 자산 게시 요청이 트리거됩니다.
+* DSTRQ3(요청 3):시스템은 에셋이 있는 AEM Assets 폴더를 게시하고 브랜드 포털의 폴더를 복제하는 다른 요청을 트리거합니다.
+
+**분배 에이전트 응답**:
+
+* queue-bpdistributionagent0(DSTRQ2): 자산이 Brand Portal에 게시됩니다.
+* queue-bdistribution-agent0(DSTRQ3):시스템이 브랜드 포털에서 AEM Assets 폴더(자산 포함)를 복제합니다.
+
+위의 예에서 추가적인 요청 및 응답이 트리거됩니다. 자산이 처음으로 게시되었기 때문에 시스템이 브랜드 포털에서 상위 폴더(경로 추가)를 찾을 수 없으므로 자산이 게시된 브랜드 포털에서 동일한 이름의 상위 폴더를 만들기 위한 추가 요청을 트리거했습니다.
+
+>[!NOTE]
+>
+>상위 폴더가 브랜드 포털에 없거나 AEM Assets에서 수정된 경우에 대한 추가 요청이 생성됩니다.
+
+AEM Assets에서 브랜드 포털을 [!DNL Cloud Service]으로 활성화하는 자동화 워크플로우와 함께, 더 이상 권장되지 않는 Adobe 개발자 콘솔을 사용하여 브랜드 포털에서 AEM Assets을 [!DNL Cloud Service]으로 수동으로 구성하는 또 다른 방법이 있습니다.
+
+>[!NOTE]
+>
+>브랜드 포털 테넌트를 활성화하는 동안 문제가 발생하면 Adobe 지원에 문의해야 합니다.
+
+## Adobe 개발자 콘솔을 사용한 수동 구성 {#manual-configuration}
+
+다음 섹션에서는 Adobe 개발자 콘솔을 사용하여 브랜드 포털에서 AEM Assets을 [!DNL Cloud Service]으로 수동으로 구성하는 방법에 대해 설명합니다.
+
+이전에는 AEM Assets이 [!DNL Cloud Service]으로 Adobe 개발자 콘솔을 통해 브랜드 포털로 수동으로 구성되었으며, 이 콘솔에서 IMS(Adobe Identity Management Services) 계정 토큰을 구매하여 브랜드 포털 임차인의 인증을 받았습니다. AEM Assets뿐만 아니라 Adobe 개발자 콘솔에도 구성이 필요합니다.
 
 1. AEM Assets에서 IMS 계정을 만들고 공개 키(인증서)를 생성합니다.
 1. Adobe 개발자 콘솔에서 Brand Portal 테넌트(조직)에 대한 프로젝트를 만듭니다.
@@ -31,7 +184,7 @@ AEM Assets은 [!DNL Cloud Service]으로 브랜드 포털 임차인의 인증을
 >
 >[!DNL Cloud Service] 인스턴스로 AEM Assets은 하나의 브랜드 포털 테넌트로 구성되어야 합니다.
 
-## 전제 조건 {#prerequisites}
+**전제 조건**
 
 Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필요합니다.
 
@@ -47,7 +200,6 @@ Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필�
 1. [서비스 계정(JWT) 연결 만들기](#createnewintegration)
 1. [IMS 계정 구성](#create-ims-account-configuration)
 1. [클라우드 서비스 구성](#configure-the-cloud-service)
-1. [구성 테스트](#test-configuration)
 
 ### IMS 구성 만들기 {#create-ims-configuration}
 
@@ -233,89 +385,94 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
    이제 AEM Assets이 [!DNL Cloud Service] 인스턴스로 브랜드 포털 테넌트로 구성됩니다.
 
-### 구성 테스트 {#test-configuration}
+이제 배포 에이전트를 확인하고 브랜드 포털에 자산을 게시하여 구성을 테스트할 수 있습니다.
 
-다음 단계를 수행하여 구성을 확인합니다.
+<!--
+### Test configuration {#test-configuration}
 
-1. AEM Assets에 로그인합니다.
+Perform the following steps to validate the configuration:
 
-1. **도구** 패널에서 **[!UICONTROL 배포]** > **[!UICONTROL 배포]**&#x200B;로 이동합니다.
+1. Log in to AEM Assets.
 
-   ![](assets/test-bpconfig1.png)
+1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-   브랜드 포털 배포 에이전트(**[!UICONTROL bdistribution-agent0]**)가 **[!UICONTROL 브랜드 포털에 게시]**&#x200B;에 만들어집니다.
+    ![](assets/test-bpconfig1.png)
+
+   A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
    ![](assets/test-bpconfig2.png)
 
 
-1. 배포 에이전트를 열려면 **[!UICONTROL 브랜드 포털에 게시]**&#x200B;를 클릭합니다.
+1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
 
-   **[!UICONTROL 상태]** 탭 아래에서 배포 대기열을 볼 수 있습니다.
+   You can see the distribution queues under the **[!UICONTROL Status]** tab. 
+   
+   A distribution agent contains two queues: 
+   * **processing-queue**: for the distribution of assets to Brand Portal. 
 
-   분배 에이전트에는 두 개의 큐가 있습니다.
-   * **처리 대기열**:브랜드 포털에 자산을 배포하기 위해.
-
-   * **오류 큐**:배포가 실패한 자산에 대해.
+   * **error-queue**: for the assets where distribution has failed. 
+   
    >[!NOTE]
    >
-   >오류를 검토하고 **error-queue**&#x200B;을 정기적으로 지우는 것이 좋습니다.
+   >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
    ![](assets/test-bpconfig3.png)
 
-1. AEM Assets을 [!DNL Cloud Service] 및 브랜드 포털로 연결하려면 **[!UICONTROL 연결 테스트]** 아이콘을 클릭합니다.
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
    ![](assets/test-bpconfig4.png)
 
-   *테스트 패키지가*&#x200B;에 성공적으로 전달되었다는 메시지가 나타납니다.
+   A message appears that your *test package is successfully delivered*.
 
    >[!NOTE]
    >
-   >자산 분배(큐에서 실행)가 실패하는 원인이 될 수 있으므로 분배 에이전트를 비활성화하지 마십시오.
+   >Avoid disabling the distribution agent, as it can cause the distribution of the assets (running-in-queue) to fail.
 
-이제 다음을 수행할 수 있습니다.
+You can now:
 
-* [AEM Assets에서 Brand Portal에 자산 게시](publish-to-brand-portal.md)
-* [AEM Assets의 폴더를 Brand Portal에 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [AEM Assets의 컬렉션을 Brand Portal에 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [브랜드 포털에서 AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - 브랜드 포털의 자산 소싱에 자산 게시
-* [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [태그를 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
+* [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
+* [Publish presets, schemas, and facets to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-자세한 내용은 [브랜드 포털 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html)를 참조하십시오.
+See [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
-## 분배 로그 {#distribution-logs}
+## Distribution logs {#distribution-logs}
 
-자산 게시 워크플로우에 대한 배포 에이전트 로그를 모니터링할 수 있습니다.
+You can monitor the distribution agent logs for the asset publishing workflow. 
 
-예를 들어 구성을 확인하기 위해 AEM Assets에서 브랜드 포털에 자산을 게시했습니다.
+For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
 
-1. [Test Configuration](#test-configuration) 섹션에 나와 있는 단계(1에서 4)를 따라 배포 에이전트 페이지로 이동합니다.
-1. 처리 및 오류 로그를 보려면 **[!UICONTROL 로그]**&#x200B;를 클릭합니다.
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
+1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
    ![](assets/test-bpconfig5.png)
 
-배포 에이전트가 다음 로그를 생성했습니다.
+The distribution agent has generated the following logs:
 
-* 정보:배포 에이전트의 성공적인 구성을 트리거하는 시스템 생성 로그입니다.
-* DSTRQ1(요청 1):테스트 연결에 대해 트리거합니다.
+* INFO: This is a system-generated log that triggers on successful configuration of the distribution agent. 
+* DSTRQ1 (Request 1): Triggers on test connection.
 
-자산을 게시할 때 다음 요청 및 응답 로그가 생성됩니다.
+On publishing the asset, the following request and response logs are generated:
 
-**분배 에이전트 요청**:
+**Distribution agent request**:
 
-* DSTRQ2(요청 2): 자산 게시 요청이 트리거됩니다.
-* DSTRQ3(요청 3):시스템은 에셋이 있는 AEM Assets 폴더를 게시하고 브랜드 포털의 폴더를 복제하는 다른 요청을 트리거합니다.
+* DSTRQ2 (Request 2): The asset publishing request is triggered.
+* DSTRQ3 (Request 3): The system triggers another request to publish the AEM Assets folder (in which the asset exists) and replicates the folder in Brand Portal.
 
-**분배 에이전트 응답**:
+**Distribution agent response**:
 
-* queue-bpdistributionagent0(DSTRQ2): 자산이 Brand Portal에 게시됩니다.
-* queue-bdistribution-agent0(DSTRQ3):시스템이 브랜드 포털에서 AEM Assets 폴더(자산 포함)를 복제합니다.
+* queue-bpdistributionagent0 (DSTRQ2): The asset is published to Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ3): The system replicates the AEM Assets folder (containing the asset) in Brand Portal.
 
-위의 예에서 추가적인 요청 및 응답이 트리거됩니다. 자산이 처음으로 게시되었기 때문에 시스템이 브랜드 포털에서 상위 폴더(경로 추가)를 찾을 수 없으므로 자산이 게시된 브랜드 포털에서 동일한 이름의 상위 폴더를 만들기 위한 추가 요청을 트리거했습니다.
+In the above example, an additional request and response is triggered. The system could not find the parent folder (Add Path) in Brand Portal because the asset was published for the first time, therefore, it triggered an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
 >
->상위 폴더가 브랜드 포털에 없거나 AEM Assets에서 수정된 경우에 대한 추가 요청이 생성됩니다.
+>Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets. 
+-->
 
 <!--
 
