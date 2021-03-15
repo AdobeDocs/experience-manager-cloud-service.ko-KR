@@ -2,7 +2,7 @@
 title: IP 허용 목록 상태 확인
 description: IP 허용 목록 상태 확인
 translation-type: tm+mt
-source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
