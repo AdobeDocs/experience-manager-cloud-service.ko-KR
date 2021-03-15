@@ -3,10 +3,10 @@ title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
+source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 28%
+source-wordcount: '2707'
+ht-degree: 29%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 28%
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포에서 적절한 사용자 그룹의 일부입니다.
-* [!DNL Adobe Experience Manager] 배포 유형의 경우 지원되는 기준 중 하나가 충족됩니다. 이 기능이 [!DNL Experience Manager] 6.5에서 작동하는 방식에 대한 자세한 내용은 [Experience Manager 6.5 에셋](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)에서 연결된 에셋을 참조하십시오.
+* [!DNL Adobe Experience Manager] 배포 유형의 경우 지원되는 기준 중 하나가 충족됩니다. 이 기능이 [!DNL Experience Manager] 6.5에서 작동하는 방식에 대한 자세한 내용은 [연결된 에셋( [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)에서)을 참조하십시오.
 
-   |  | [!DNL Sites] as  [!DNL Cloud Service] | [!DNL Experience Manager] 6.5( [!DNL Sites] AMS) | [!DNL Experience Manager] 6.5  [!DNL Sites] 온-프레미스 |
+   |  | [!DNL Sites]로서의 [!DNL Cloud Service]  | [!DNL Experience Manager] 6.5( [!DNL Sites] AMS) | [!DNL Experience Manager] 6.5  [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
+   | **[!DNL Experience Manager Assets]로서의[!DNL Cloud Service]**  | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5( [!DNL Assets] AMS)** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
@@ -45,7 +45,7 @@ ht-degree: 28%
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
 
-기능 및 해당 사용자 그룹을 구성하고 사용하는 데 관련된 여러 가지 역할이 아래에 설명되어 있습니다. 로컬 범위는 작성자가 웹 페이지를 만드는 사용 사례에 사용됩니다. 원격 범위는 DAM 배포에 사용됩니다. [!DNL Sites] 작성자는 이러한 원격 자산을 가져옵니다.
+기능 및 해당 사용자 그룹을 구성하고 사용하는 데 관련된 여러 가지 역할이 아래에 설명되어 있습니다. 로컬 범위는 작성자가 웹 페이지를 만드는 사용 사례에 사용됩니다. 원격 범위는 필요한 자산을 호스팅하는 DAM 배포에 사용됩니다. [!DNL Sites] 작성자는 이러한 원격 자산을 가져옵니다.
 
 | 역할 | 범위 | 사용자 그룹 | 연습의 사용자 이름 | 요구 사항 |
 |------|--------|-----------|-----|----------|
@@ -69,7 +69,7 @@ ht-degree: 28%
 
 1. 적절한 범위의 사용자 및 역할이 AMS의 [!DNL Sites] 배포 및 [!DNL Assets] 배포에 있는지 확인합니다. [!DNL Assets] 배포에 기술 사용자를 만들고 [에 언급된 사용자 및 그룹](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved)에 추가합니다.
 
-1. `https://[sites_servername]:port`의 로컬 [!DNL Sites] 배포에 액세스합니다. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 연결된 자산 구성]**&#x200B;을 클릭합니다.다음 값을 제공합니다.
+1. `https://[sites_servername]:port`의 로컬 [!DNL Sites] 배포에 액세스합니다. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 연결된 자산 구성]**&#x200B;을 클릭하고 다음 값을 제공합니다.
 
    1. 구성의 **[!UICONTROL 제목]**&#x200B;입니다.
    1. **[!UICONTROL 원격 DAM]** URL은 형식의  [!DNL Assets] 위치 URL입니다 `https://[assets_servername]:[port]`.
@@ -84,7 +84,7 @@ ht-degree: 28%
 
    *그림:연결된 에셋 기능에 대한 일반적인 구성입니다.*
 
-1. [!DNL Assets] 배포의 기존 디지털 자산은 이미 처리되고 변환이 생성됩니다. 이러한 변환은 이 기능을 사용하여 가져와서 변환을 다시 생성할 필요가 없습니다. 표현물의 재재생성을 방지하기 위해 워크플로우 릴리스를 비활성화합니다. ([!DNL Sites]) 배포의 launcher 구성을 조정하여 `connectedassets` 폴더를 제외합니다(이 폴더에 에셋이 반입됨).
+1. [!DNL Assets] 배포의 기존 디지털 자산은 이미 처리되고 변환이 생성됩니다. 이러한 변환은 이 기능을 사용하여 가져오므로 변환을 다시 생성할 필요가 없습니다. 표현물의 재재생성을 방지하기 위해 워크플로우 릴리스를 비활성화합니다. ([!DNL Sites]) 배포의 launcher 구성을 조정하여 `connectedassets` 폴더를 제외합니다(이 폴더에 에셋이 반입됨).
 
    1. [!DNL Sites] 배포에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로]** > **[!UICONTROL 방사기]**&#x200B;를 클릭합니다.
 
@@ -95,7 +95,7 @@ ht-degree: 28%
    1. [!UICONTROL 속성] 마법사에서 **[!UICONTROL 경로]** 필드를 다음 매핑으로 변경하여 마운트 지점 **[!UICONTROL connectedassets]**&#x200B;을 제외하도록 일반 표현식을 업데이트합니다.
 
    | 이전 | 이후 |
-   | ------------------------------------------------------- | -------------------------------------------------------------------------- |
+   | ------ | ------------ |
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
    | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
    | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
