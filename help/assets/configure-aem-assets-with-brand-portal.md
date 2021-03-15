@@ -3,10 +3,10 @@ title: 브랜드 포털에서 AEM Assets을  [!DNL Cloud Service] 으로 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
+source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 23%
+source-wordcount: '2411'
+ht-degree: 21%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manager Assets 브랜드 포털을 구성하면 Adobe Experienc
 
 ## 클라우드 관리자 {#activate-brand-portal}를 사용하여 브랜드 포털 활성화
 
-Cloud Manager 사용자는 AEM Assets에 대한 브랜드 포털을 [!DNL Cloud Service] 인스턴스로 활성화합니다. 활성화 워크플로우는 필요한 구성(인증 토큰, IMS 구성 및 브랜드 포털 클라우드 서비스)을 백 엔드에 만들고 Cloud Manager의 브랜드 포털 임차인의 상태를 반영합니다.
+Cloud Manager 사용자는 AEM Assets에 대한 브랜드 포털을 [!DNL Cloud Service] 인스턴스로 활성화합니다. 활성화 워크플로우는 필요한 구성(인증 토큰, IMS 구성 및 브랜드 포털 클라우드 서비스)을 백 엔드에 만들고 Cloud Manager의 브랜드 포털 임차인의 상태를 반영합니다. 브랜드 포털을 활성화하면 AEM Assets 사용자는 에셋을 브랜드 포털에 게시하고 브랜드 포털 사용자에게 배포할 수 있습니다.
 
 **전제 조건**
 
@@ -28,7 +28,7 @@ AEM Assets에서 [!DNL Cloud Service] 인스턴스로 브랜드 포털을 활성
 
 >[!NOTE]
 >
->[!DNL Cloud Service] 인스턴스로 AEM Assets은 하나의 브랜드 포털 임차인만 연결할 수 있습니다. 한 환경에서만 브랜드 포털이 활성화된 [!DNL Cloud Service] 인스턴스로 AEM Assets용 여러 환경(개발, 프로덕션 및 스테이지)을 만들 수 있습니다.
+>[!DNL Cloud Service] 인스턴스로 AEM Assets은 하나의 브랜드 포털 테넌트와 연결할 수 있습니다. 한 환경에서 브랜드 포털이 활성화된 [!DNL Cloud Service] 인스턴스로 AEM Assets에 대해 여러 환경(개발, 프로덕션 및 스테이지)을 가질 수 있습니다.
 
 **브랜드 포털 활성화 절차**
 
@@ -46,9 +46,18 @@ AEM Assets 환경을 [!DNL Cloud Service] 인스턴스로 만들거나 별도로
 
    ![브랜드 포털 활성화](assets/create-environment4.png)
 
-1. 활성화 워크플로가 백 엔드에서 필요한 구성을 생성하므로 브랜드 포털 테넌트를 활성화하는 데 몇 분 정도 걸릴 수 있습니다. 브랜드 포털 테넌트가 활성화되면 상태가 활성화됨으로 변경됩니다.
+1. 활성화 워크플로가 백 엔드에서 필수 구성을 생성하므로 브랜드 포털 테넌트를 활성화하는 데 몇 분이 소요됩니다. 브랜드 포털 테넌트가 활성화되면 상태가 활성화됨으로 변경됩니다.
 
    ![상태 보기](assets/create-environment5.png)
+
+
+>[!NOTE]
+>
+>브랜드 포털은 [!DNL Cloud Service] 인스턴스와 AEM Assets의 동일한 IMS 조직에서 활성화해야 합니다.
+>
+>IMS 조직(org1-existing)에 대한 기존 브랜드 포털 클라우드 구성([Adobe 개발자 콘솔](#manual-configuration))을 사용하여 수동으로 구성했고 AEM Assets이 다른 IMS 조직(org2-new)에 대해 구성된 [!DNL Cloud Service] 인스턴스로 구성된 경우, 클라우드 관리자에서 브랜드 포털을 활성화하면 브랜드 포털 IMS 조직이 &lt;a로 재설정됩니다. a3/>. `org2-new` `org1-existing`에 수동으로 구성된 클라우드 구성은 AEM Assets 작성자 인스턴스에서 볼 수 있지만 클라우드 관리자에서 브랜드 포털을 활성화한 후에는 더 이상 사용할 수 없습니다.
+>
+>기존 브랜드 포털 클라우드 구성과 [!DNL Cloud Service] 인스턴스로 AEM Assets이 동일한 IMS 조직(org1)을 사용하는 경우 클라우드 관리자에서 브랜드 포털만 활성화해야 합니다.
 
 **참고 항목**:
 * [AEM Assets에서 Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
@@ -62,13 +71,15 @@ Cloud Manager에서 브랜드 포털 테넌트를 활성화한 후 Admin Console
 
 브랜드 포털 테넌트의 기본 URL은 다음과 같습니다.`https://<tenant-id>.brand-portal.adobe.com/`.
 
+임차인 ID는 IMS 조직입니다.
+
 브랜드 포털 URL을 잘 모를 경우 다음 단계를 수행하십시오.
 
 1. [Admin Console](http://adminconsole.adobe.com/)에 로그인하고 **[!UICONTROL 제품]**&#x200B;으로 이동합니다.
 1. 왼쪽 레일에서 **[!UICONTROL Adobe Experience Manager 브랜드 포털 - 브랜드 포털]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 브랜드 포털로 이동]**&#x200B;을 클릭하여 브라우저에서 브랜드 포털을 직접 엽니다.
 
-   또는 브랜드 포털 임차인 URL을 복사하여 브라우저에 붙여 넣어 브랜드 포털 인터페이스를 엽니다.
+   또는 **[!UICONTROL 브랜드 포털로 이동]** 링크에서 브랜드 포털 임차인 URL을 복사하여 브라우저에 붙여 넣어 브랜드 포털 인터페이스를 엽니다.
 
    ![브랜드 포털 액세스](assets/access-bp-on-cloud.png)
 
@@ -130,9 +141,9 @@ AEM Assets 간 연결을 [!DNL Cloud Service] 인스턴스와 브랜드 포털 �
 
 자산 게시 워크플로우에 대한 배포 에이전트 로그를 모니터링할 수 있습니다.
 
-예를 들어 구성을 확인하기 위해 AEM Assets에서 브랜드 포털에 자산을 게시했습니다.
+이제 AEM Assets에서 브랜드 포털에 에셋을 게시하고 로그를 보도록 하겠습니다.
 
-1. [Test Configuration](#test-configuration) 섹션에 나와 있는 단계(1에서 4)를 따라 배포 에이전트 페이지로 이동합니다.
+1. **연결 테스트** 섹션에 나와 있는 단계(1에서 4)를 따라 배포 에이전트 페이지로 이동합니다.
 1. 처리 및 오류 로그를 보려면 **[!UICONTROL 로그]**&#x200B;를 클릭합니다.
 
    ![](assets/test-bpconfig5.png)
@@ -154,7 +165,7 @@ AEM Assets 간 연결을 [!DNL Cloud Service] 인스턴스와 브랜드 포털 �
 * queue-bpdistributionagent0(DSTRQ2): 자산이 Brand Portal에 게시됩니다.
 * queue-bdistribution-agent0(DSTRQ3):시스템이 브랜드 포털에서 AEM Assets 폴더(자산 포함)를 복제합니다.
 
-위의 예에서 추가적인 요청 및 응답이 트리거됩니다. 자산이 처음으로 게시되었기 때문에 시스템이 브랜드 포털에서 상위 폴더(경로 추가)를 찾을 수 없으므로 자산이 게시된 브랜드 포털에서 동일한 이름의 상위 폴더를 만들기 위한 추가 요청을 트리거했습니다.
+위의 예에서 추가 요청 및 응답이 트리거됩니다. 자산이 처음으로 게시되었기 때문에 시스템이 브랜드 포털에서 상위 폴더(경로 추가)를 찾을 수 없으므로 자산이 게시된 브랜드 포털에서 동일한 이름의 상위 폴더를 만들기 위한 추가 요청을 트리거했습니다.
 
 >[!NOTE]
 >
@@ -164,7 +175,7 @@ AEM Assets에서 브랜드 포털을 [!DNL Cloud Service]으로 활성화하는 
 
 >[!NOTE]
 >
->브랜드 포털 테넌트를 활성화하는 동안 문제가 발생하면 Adobe 지원에 문의해야 합니다.
+>브랜드 포털 테넌트를 활성화하는 동안 문제가 발생하면 Adobe 지원 센터에 문의하십시오.
 
 ## Adobe 개발자 콘솔을 사용한 수동 구성 {#manual-configuration}
 
