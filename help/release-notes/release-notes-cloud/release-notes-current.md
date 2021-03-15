@@ -2,7 +2,7 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 2%
@@ -101,11 +101,11 @@ AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021
 
 * **버전** 레이블은 프로덕션 파이프라인 실행 화면에서 **Git 태그**&#x200B;에 다시 표시되었습니다.
 
-* 중요한 지표가 정의된 임계값에 맞지 않을 때 동작을 정의하는 레이블의 실제 비헤이비어를 반영하도록 레이블이 다시 지정되어 있습니다. **즉시 취소** 및 **즉시 승인**.
+* 중요한 지표가 정의된 임계값에 도달하지 못할 때 동작을 정의하는 레이블의 실제 행동을 반영하도록 레이블을 재정의했습니다.**즉시 취소** 및 **즉시 승인**.
 
 * 클래스 및 메서드 사용 중단 목록은 AEM Cloud Service SDK의 `2021.3.4997.20210303T022849Z-210225` 버전을 기준으로 업데이트되었습니다.
 
-* 이제 Cloud Manager Production 파이프라인에 사용자 정의 UI 테스트 기능이 포함됩니다.
+* 이제 클라우드 관리자 프로덕션 파이프라인에 [사용자 지정 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 기능이 포함됩니다.
 
 ### 버그 수정 {#bug-fixes-cm-march}
 
