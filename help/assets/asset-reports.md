@@ -3,9 +3,9 @@ title: 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는  [!DNL Adobe Experience Manager Assets] 의 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: dc6823d9a0dabcc4fe1537073d90ca53da205556
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '869'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 자산 보고서 {#asset-reports}
 
-자산 보고를 통해 [!DNL Adobe Experience Manager Assets] 배포의 유틸리티를 평가할 수 있습니다. [!DNL Assets]을 사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 이 보고서는 시스템 사용량, 사용자가 자산과 상호 작용하는 방법, 다운로드 및 공유되는 자산에 대한 유용한 정보를 제공합니다.
+자산 보고를 통해 [!DNL Adobe Experience Manager Assets] 배포의 유틸리티를 평가할 수 있습니다. [!DNL Assets]을 사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 이 보고서는 시스템 사용량, 사용자가 자산과 상호 작용하는 방법 및 <!-- downloaded and --> 공유 자산에 대한 유용한 정보를 제공합니다.
 
 보고서의 정보를 사용하여 기업 내 및 고객별 [!DNL Assets] 채택을 측정하는 주요 성공 지표를 추출합니다.
 
@@ -28,7 +28,6 @@ ht-degree: 2%
 [!DNL Experience Manager Assets] 다음과 같은 표준 보고서를 생성합니다.
 
 * 업로드
-* 다운로드
 * 만료
 * 수정
 * 게시
@@ -36,6 +35,18 @@ ht-degree: 2%
 * 디스크 사용량
 * 파일
 * 공유 링크
+
+<!-- Removed download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Disk Usage
+* Files
+* Link Share
+-->
 
 [!DNL Adobe Experience Manager] 관리자는 구현을 위해 이러한 보고서를 쉽게 생성하고 사용자 정의할 수 있습니다. 관리자는 다음 단계에 따라 보고서를 생성할 수 있습니다.
 
@@ -47,20 +58,6 @@ ht-degree: 2%
 1. **[!UICONTROL 보고서 만들기]** 페이지에서 만들 보고서를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    ![보고서 유형 선택](assets/choose_report.png)
-
-<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
-   >[!NOTE]
-   >
-   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
--->
-
->[!NOTE]
->
->기본적으로 컨텐츠 조각 및 링크 공유는 자산 [!UICONTROL 다운로드] 보고서에 포함됩니다. 링크 공유 보고서를 만들거나 콘텐트 조각을 다운로드 보고서에서 제외하려면 적절한 옵션을 선택합니다.
-
->[!NOTE]
->
->[!UICONTROL 다운로드] 보고서에는 개별적으로 선택한 후 다운로드되거나 빠른 작업을 사용하여 다운로드한 자산에 대한 세부 정보만 표시됩니다. 그러나 다운로드한 폴더 내에 있는 에셋의 세부 사항은 포함되지 않습니다.
 
 1. 보고서가 저장되는 CRX 저장소에서 제목, 설명, 축소판 및 폴더 경로와 같은 보고서 세부 사항을 구성합니다. 기본적으로 폴더 경로는 `/content/dam`입니다. 다른 경로를 지정할 수 있습니다.
 
@@ -111,6 +108,16 @@ ht-degree: 2%
 
 다음 보고서에 사용자 지정 열을 추가하여 사용자 지정 요구 사항에 대한 데이터를 더 많이 표시할 수 있습니다.
 
+<!-- Remove download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Files
+-->
+
 * 업로드
 * 다운로드
 * 만료
@@ -152,6 +159,24 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## 문제 해결 정보 및 팁 {#tips-troubleshoot}
+## 문제 해결 정보 {#tips-troubleshoot}
 
 * [!UICONTROL 디스크 사용량 보고서]이 생성되지 않고 [!DNL Dynamic Media]를 사용하는 경우 모든 에셋이 올바르게 진행되는지 확인하십시오. 해결하려면 자산을 재처리하고 보고서를 다시 생성합니다.
+
+<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+
+TBD: How do enable this in CS now? Is it done using some OSGi config now?
+   >[!NOTE]
+   >
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
+
+<!-- Removed download report.
+   >[!NOTE]
+   >
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
+
+   >[!NOTE]
+   >
+   >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
+-->
