@@ -2,9 +2,9 @@
 title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.3.0
 description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.3.0
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '456'
 ht-degree: 1%
 
 ---
@@ -17,12 +17,16 @@ ht-degree: 1%
 ## 릴리스 날짜 {#release-date}
 
 AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021년 3월 11일입니다.
+다음 릴리스는 2021년 4월 8일에 예정되어 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
 ### 새로운 기능 {#what-is-new}
 
-* IP 허용 목록, SSL 인증서 및 사용자 정의 도메인 이름에 대해 기존의 CDN 구성을 가진 환경을 보유한 고객은 기존 구성에 대한 메시지를 보게 되며, UI를 통해 자가 서비스를 제공할 수 있습니다.
+* [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) 및 [사용자 정의 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)에 대해 기존 사용자 정의 도메인 이름 구성을 가진 환경을 사용하는 고객은 기존 구성에 대한 메시지를 볼 수 있으며 UI를 통해 직접 제공할 수 있습니다. 이제 사용자는 다음을 수행할 수 있습니다.
+   * 자산(또는 그 반대로)이 있는 기존 프로그램에 사이트 솔루션을 추가합니다.
+   * 사이트 및 자산을 모두 포함하는 기존 프로그램에서 사이트(또는 자산)를 제거합니다.
+   * 기존 프로그램 또는 새 프로그램으로 사용하지 않은 두 번째 솔루션 권한을 추가합니다.
 
 * 이제 필요한 권한이 있는 사용자가 셀프 서비스 방식으로 다음을 수행할 수 있도록 프로그램을 편집할 수 있습니다.
 
