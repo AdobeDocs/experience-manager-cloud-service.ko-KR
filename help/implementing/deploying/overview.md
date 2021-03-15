@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 translation-type: tm+mt
-source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
+source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3229'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ Cloud Service 애플리케이션으로 AEM용으로 작성된 컨텐츠 패키�
 Blue-Green 배포 패턴으로 인해 애플리케이션이 변경되므로 서비스 사용자, ACL, 노드 유형 및 인덱스 정의 변경을 제외하고 변경 가능 저장소의 변경 사항에 따라 변경할 수 없습니다.
 
 기존 코드 베이스를 사용하는 고객의 경우 AEM 설명서에 설명된 리포지토리 재조정 연습을 통해 이전에 /etc 아래에 있던 컨텐츠가 올바른 위치로 이동되도록 하는 것이 중요합니다.
+
+이러한 코드 패키지에 대해 일부 추가 제한 사항이 적용됩니다. 예를 들어 [install hook](http://jackrabbit.apache.org/filevault/installhooks.html)은(는) 지원되지 않습니다.
 
 ## OSGI 구성 {#osgi-configuration}
 
@@ -261,7 +263,7 @@ Cloud Ready AEM quickstart를 사용하여 복제를 개발 및 테스트하려�
 
 ### 색인 변경 내용 {#index-changes}
 
-색인에 대한 변경 사항이 있는 경우 Blue 버전은 종료될 때까지 색인을 계속 사용하고 Green 버전은 자체 수정된 인덱스 세트를 사용합니다. 개발자는 이 문서[에서 설명한 인덱스 관리 기술을 따라야 합니다.](/help/operations/indexing.md)
+색인에 대한 변경 사항이 있는 경우 Blue 버전은 종료될 때까지 색인을 계속 사용하고 Green 버전은 자체 수정된 인덱스 세트를 사용합니다. 개발자는 이 문서](/help/operations/indexing.md)에서 설명한 인덱스 관리 기술을 따라야 합니다.[
 
 ### 롤백 시 보수적인 코딩 {#conservative-coding-for-rollbacks}
 
@@ -273,7 +275,7 @@ Cloud Ready AEM quickstart를 사용하여 복제를 개발 및 테스트하려�
 
 반면 Cloud Service은 사용 가능한 실행 모드와 OSGI 번들 및 OSGI 구성을 이러한 모드에 매핑하는 방법에 대해 보다 명확한 의견을 가지고 있습니다.
 
-* OSGI 구성 실행 모드는 개발, 단계, 환경에 대한 제품 또는 작성자를 참조해야 하며 서비스에 대해 게시해야 합니다. `<service>.<environment_type>`의 조합이 지원되지만 이러한 조합은 이 특정 순서(예: `author.dev` 또는 `publish.prod`)에서 사용해야 합니다. OSGI 토큰은 런타임에 `environment_type`을 더 이상 포함하지 않는 `getRunModes` 메서드를 사용하는 대신 코드에서 직접 참조되어야 합니다. 자세한 내용은 [AEM용 OSGi를 Cloud Service](/help/implementing/deploying/configuring-osgi.md)으로 구성을 참조하십시오.
+* OSGI 구성 실행 모드는 개발, 단계, 환경에 대한 제품 또는 작성자를 참조해야 하며 서비스에 대해 게시해야 합니다. `<service>.<environment_type>`의 조합이 지원되지만 이러한 조합은 이 특정 순서(예: `author.dev` 또는 `publish.prod`)에서 사용해야 합니다. OSGI 토큰은 런타임에 `environment_type`을 더 이상 포함하지 않는 `getRunModes` 메서드를 사용하지 않고 코드에서 직접 참조되어야 합니다. 자세한 내용은 [AEM용 OSGi를 Cloud Service](/help/implementing/deploying/configuring-osgi.md)으로 구성을 참조하십시오.
 * OSGI 번들 실행 모드는 서비스로 제한됩니다(작성자, 게시). 실행당 모드 OSGI 번들은 `install/author` 또는 `install/publish` 아래의 컨텐츠 패키지에서 설치해야 합니다.
 
 기존 AEM 솔루션과 마찬가지로 실행 모드를 사용하여 특정 환경 또는 서비스에 맞는 컨텐츠만 설치할 수 없습니다. 스테이지나 프로덕션에 없는 데이터 또는 HTML을 사용하여 개발 환경을 시드하고 싶은 경우 패키지 관리자를 사용할 수 있습니다.
