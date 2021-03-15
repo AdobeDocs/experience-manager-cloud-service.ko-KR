@@ -2,9 +2,9 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
+source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2850'
 ht-degree: 2%
 
 ---
@@ -87,6 +87,7 @@ Oak 인덱스(`/oak:index`)는 Cloud Service 배포 프로세스로 AEM에서 �
          + 그룹
          + ACL(권한)
 
+
 ### 콘텐츠 패키지
 
 + `ui.content` 패키지에는 모든 내용 및 구성이 들어 있습니다. 컨텐트 패키지에는 `ui.apps` 또는 `ui.config` 패키지에 없는 모든 노드 정의가 들어 있고, 즉 `/apps` 또는 `/oak:index`에 없는 모든 노드 정의가 들어 있습니다. `ui.content` 패키지의 일반적인 요소에는 다음이 포함되지만 이에 국한되지 않습니다.
@@ -128,9 +129,9 @@ Oak 인덱스(`/oak:index`)는 Cloud Service 배포 프로세스로 AEM에서 �
 
 + `all` 컨텐츠 패키지에는 단일 배포 아티팩트를 만들기 위해 다음 패키지가 포함됩니다.
    + `core` AEM 응용 프로그램에 필요한 OSGi 번들 Jar
-   + `ui.apps` aem 응용 프로그램에 필요한 코드를 배포합니다.
-   + `ui.config` aem 응용 프로그램에 필요한 OSGi 구성 배포
-   + `ui.content` aem 응용 프로그램에 필요한 컨텐트 및 구성 배포
+   + `ui.apps` AEM 응용 프로그램에 필요한 코드를 배포합니다.
+   + `ui.config` AEM 응용 프로그램에 필요한 OSGi 구성 배포
+   + `ui.content` AEM 응용 프로그램에 필요한 컨텐트 및 구성 배포
    + `vendor-x.all` 공급업체 X 애플리케이션에서 필요한 모든 것(코드 및 컨텐츠)을 배포합니다.
    + `vendor-y.all` 공급업체 Y 애플리케이션에서 필요한 모든 것(코드 및 컨텐츠)을 배포합니다.
 
@@ -138,9 +139,10 @@ Oak 인덱스(`/oak:index`)는 Cloud Service 배포 프로세스로 AEM에서 �
 
 패키지는 선언된 패키지 유형으로 표시됩니다.
 
-+ 컨테이너 패키지는 `packageType`을 `container`로 설정해야 합니다.
++ 컨테이너 패키지는 `packageType`을 `container`로 설정해야 합니다. 컨테이너 패키지에는 OSGi 번들, OSGi 구성이 직접 포함되지 않아야 하며 [설치 후크](http://jackrabbit.apache.org/filevault/installhooks.html)를 사용할 수 없습니다.
 + 코드(변경할 수 없음) 패키지는 `packageType`을 `application`로 설정해야 합니다.
 + 내용(변경 가능) 패키지는 `packageType`을 `content`로 설정해야 합니다.
+
 
 자세한 내용은 [Apache Jackrabbit FileVault - Package Maven 플러그인 설명서](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) 및 아래의 [FileVault Maven 구성 조각](#marking-packages-for-deployment-by-adoube-cloud-manager)을 참조하십시오.
 
@@ -236,13 +238,13 @@ AEM 작성자, AEM 게시 또는 둘 다를 대상으로 하려면 패키지가 
 이 폴더 이름은 포함된 패키지의 [패키지 유형](#package-types)에 해당합니다.
 + 4번째 수준 폴더에는 하위 패키지가 들어 있으며 다음 중 하나여야 합니다.
    + `install` AEM 작성자 및 AEM  **** 게시 모두에 설치하려면
-   + `install.author` aem  **** 제작자에게만 설치
+   + `install.author` AEM  **** 제작자에게만 설치
    + `install.publish` 를  **** AEM 게시에만 설치하려면 지원되 `install.author` 는 타겟만  `install.publish` 참조하십시오. 다른 실행 모드 **은(는)**&#x200B;이(가) 지원되지 않습니다.
 
 예를 들어 AEM 작성자 및 게시 특정 패키지가 포함된 배포는 다음과 같을 수 있습니다.
 
 + `all` 컨테이너 패키지에는 단일 배포 아티팩트를 만들기 위해 다음 패키지가 포함됩니다.
-   + `ui.apps` aem  `/apps/my-app-packages/application/install` 작성자 및 AEM 게시에 배포 코드 포함
+   + `ui.apps` AEM  `/apps/my-app-packages/application/install` 작성자 및 AEM 게시에 배포 코드 포함
    + `ui.apps.author` 배포 코드를 AEM  `/apps/my-app-packages/application/install.author` 제작자에게만 포함
    + `ui.content` 컨텐츠를  `/apps/my-app-packages/content/install` 배포하고 구성을 AEM 작성자 및 AEM 게시에 포함함
    + `ui.content.publish` 컨텐츠를  `/apps/my-app-packages/content/install.publish` 배포하고 구성을 AEM 게시에만 포함
