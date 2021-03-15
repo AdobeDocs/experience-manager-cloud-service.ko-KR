@@ -3,9 +3,9 @@ title: XMP 메타데이터
 description: 메타데이터 관리를 위한 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. AEM에서 메타데이터를 생성, 처리 및 교환하기 위한 표준화된 형식으로 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
+source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1003'
 ht-degree: 1%
 
 ---
@@ -72,21 +72,19 @@ XMP에서는 텍스트 언어를 지정하기 위해 텍스트 속성에 `xml:la
 
 ## 표현물로 XMP 원본에 쓰기 {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 원래 자산의 변환에 대한 메타데이터 변경 내용을 복제합니다. [!DNL Assets] 내에서 또는 자산을 업로드하는 동안 에셋에 대한 메타데이터를 변경하면 변경 내용이 처음에 저장소의 자산 노드 내에 저장됩니다. XMP 쓰기 저장(writeback) 기능은 메타데이터 변경 내용을 자산의 모든 또는 특정 표현물에 전파합니다.
+[!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 원래 자산의 변환에 대한 메타데이터 변경 내용을 복제합니다. [!DNL Assets] 내에서 또는 자산을 업로드하는 동안 에셋에 대한 메타데이터를 변경하면 변경 내용이 처음에 저장소의 자산 노드 내에 저장됩니다. 그러나 [!DNL Assets]은(는) 에셋 변환에 메타데이터 변경 사항을 자동으로 전파하지 않습니다. XMP 쓰기 저장(writeback) 기능을 사용하여 자산의 모든 또는 특정 표현물에 메타데이터 변경 내용을 전파할 수 있습니다. 업데이트는 자산 계층의 메타데이터 노드에 저장됩니다. 이 기능은 표현물의 바이너리 파일에도 업데이트를 포함하고 있습니다. 이 기능은 `jcr` 네임스페이스를 사용하는 메타데이터 속성만 다시 기록합니다.
 
-`Classic Leather`라는 제목의 자산의 [!UICONTROL 제목] 속성을 `Nylon`으로 수정하는 시나리오를 생각해 보십시오.
+예를 들어 `Classic Leather`라는 제목의 자산의 [!UICONTROL Title] 속성을 `Nylon`로 수정하는 시나리오를 생각해 보십시오.
 
 ![메타데이터](assets/metadata.png)
 
 이 경우 [!DNL Assets]은 자산 계층 구조에 저장된 자산 메타데이터의 `dc:title` 매개 변수에 **[!UICONTROL Title]** 속성에 대한 변경 내용을 저장합니다.
 
-![metadata_stored](assets/metadata_stored.png)
+![저장소의 자산 노드에 저장된 메타데이터](assets/metadata_stored.png)
 
-그러나 [!DNL Assets]은(는) 에셋 변환에 메타데이터 변경 사항을 자동으로 전파하지 않습니다.
-
-XMP 쓰기 저장(writeback) 기능을 사용하여 자산의 모든 또는 특정 표현물에 메타데이터 변경 내용을 전파할 수 있습니다. 하지만 변경 사항은 자산 계층의 메타데이터 노드 아래에 저장되지 않습니다. 대신 이 기능에는 변환의 바이너리 파일에 변경 사항이 포함됩니다.
-
-쓰기 저장(writeback) 기능은 기본적으로 [!DNL Assets]에서 활성화되지 않습니다. [메타데이터 쓰기 저장 활성화 방법](#enable-xmp-writeback)을 참조하십시오.
+>[!NOTE]
+>
+>쓰기 저장(writeback) 기능은 기본적으로 [!DNL Assets]에서 활성화되지 않습니다. [메타데이터 쓰기 저장 활성화 방법](#enable-xmp-writeback)을 참조하십시오.
 
 ### XMP writeback 사용 {#enable-xmp-writeback}
 
@@ -95,11 +93,11 @@ XMP 쓰기 저장(writeback) 기능을 사용하여 자산의 모든 또는 특�
 1. 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 방사포]**&#x200B;에 액세스합니다.
 1. [!UICONTROL Launcher]을 선택합니다. **[!UICONTROL Workflow]** 열에 **[!UICONTROL DAM MetaData Writeback]**&#x200B;이 표시됩니다. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 
-   ![DAM 메타데이터 쓰기 완료 관리자를 선택하여 속성을 수정하고 활성화합니다.](assets/launcher-properties-metadata-writeback1.png)
+   ![속성을 수정하고 활성화하려면 DAM 메타데이터 쓰기 실행 관리자를 선택합니다.](assets/launcher-properties-metadata-writeback1.png)
 
-1. [!UICONTROL 론처 속성] 페이지에서 **[!UICONTROL 활성화]**&#x200B;를 선택합니다. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 론처 속성]** 페이지에서 **[!UICONTROL 활성화]**&#x200B;를 선택합니다. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
 
-이 워크플로우를 자산에 한 번만 적용하려면 왼쪽 레일에서 [!UICONTROL DAM 메타데이터 쓰기 저장] 작업 과정을 적용합니다. 업로드된 자산에 워크플로우를 적용하려면 워크플로우를 사후 처리 프로필에 추가합니다.
+이 워크플로우를 자산에 한 번만 적용하려면 왼쪽 레일에서 [!UICONTROL DAM 메타데이터 쓰기 저장] 작업 과정을 적용합니다. 업로드된 모든 자산에 워크플로우를 적용하려면 워크플로우를 사후 처리 프로필에 추가합니다.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
