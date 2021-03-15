@@ -2,9 +2,9 @@
 title: SSL 인증서 상태 확인 - SSL 인증서 관리
 description: SSL 인증서 상태 확인 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -24,3 +24,14 @@ SSL 인증서 페이지의 SSL 인증서 상태를 한 눈에 파악할 수 있�
 
 * **빨간색**
 여러 알림을 받았더라도 SSL 인증서가 만료되었음을 나타냅니다.
+
+## IP 허용 목록 {#pre-existing-cdn}에 대한 기존 CDN 구성
+
+IP 허용 목록, SSL 인증서 또는 사용자 정의 도메인 이름에 대한 기존 CDN 구성을 포함하는 환경을 보유한 고객은 **IP 허용 목록** 및 **환경** 세부 정보 페이지에 다음 메시지를 보게 됩니다.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>기존 구성을 보고 관리하려면 아래 그림과 같이 UI를 통해 해당 구성을 추가해야 합니다.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
