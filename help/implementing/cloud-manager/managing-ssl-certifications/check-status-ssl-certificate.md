@@ -2,9 +2,9 @@
 title: SSL 인증서 상태 확인 - SSL 인증서 관리
 description: SSL 인증서 상태 확인 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ SSL 인증서 페이지의 SSL 인증서 상태를 한 눈에 파악할 수 있�
 
 ## IP 허용 목록 {#pre-existing-cdn}에 대한 기존 CDN 구성
 
-IP 허용 목록, SSL 인증서 또는 사용자 정의 도메인 이름에 대한 기존 CDN 구성을 포함하는 환경을 보유한 고객은 **IP 허용 목록** 및 **환경** 세부 정보 페이지에 다음 메시지를 보게 됩니다.
+IP 허용 목록, SSL 인증서 또는 사용자 정의 도메인 이름에 대한 기존 CDN 구성을 포함하는 환경을 보유한 고객은 **IP 허용 목록** 및 **환경** 세부 정보 페이지에 다음 메시지를 보게 됩니다. 고객이 UI를 통해 기존의 모든 환경 구성을 완전히 마이그레이션한 후 UI에 표시되는 메시지는 사라지고 메시지가 사라지는 데 영업일 기준 1-2일이 걸릴 수 있습니다.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
