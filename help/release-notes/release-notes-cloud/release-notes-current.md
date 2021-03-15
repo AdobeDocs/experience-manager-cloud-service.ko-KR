@@ -2,7 +2,7 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 2%
@@ -87,8 +87,8 @@ AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021
 
 * 이제 필요한 권한을 가진 사용자는 셀프 서비스 방식으로 프로그램을 편집할 수 있습니다.
 
-   * 자산(또는 그 반대로)이 있는 기존 프로그램에 사이트 솔루션을 추가합니다.
-   * 사이트 및 자산을 모두 포함하는 기존 프로그램에서 사이트(또는 자산)를 제거합니다.
+   * 자산을 사용하여 기존 프로그램에 사이트 솔루션을 추가하거나 그 반대로 기존 프로그램에 사이트 솔루션을 추가할 수 있습니다.
+   * 사이트와 자산이 모두 포함된 기존 프로그램에서 사이트 또는 자산을 제거합니다.
    * 기존 프로그램 또는 새 프로그램으로 사용하지 않은 두 번째 솔루션 권한을 추가합니다.
 
 * **이제** 파이프라인 실행 스크린과 Activityscreens 모두에 대해 AEM 푸시  ** Updatelable이  ** 표시됩니다.
