@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
+source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1704'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,8 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 ## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Assets] {#assets}
 
 ## [!DNL Assets] {#what-is-new-assets}의 새로운 기능
+
+* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 는 사전 구성된 인스턴스를 가질 수  [!DNL Brand Portal] 있습니다. [!DNL Cloud Manager] 사용자는 [!DNL Experience Manager Assets]의 [!DNL Brand Portal]을(를) [!DNL Cloud Service](으)로 활성화할 수 있습니다. [브랜드 포털 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en)를 참조하십시오.
 
 * 이제 기업은 [!DNL Brand Portal]을(를) 사용하여 에셋을 소싱할 수 있습니다. 자산 소싱 기능은 [!DNL Brand Portal]을 활용하여 고객이 에이전시 사용자와 교류하여 새로운 마케팅 캠페인, 사진 및 프로젝트에 대한 소스 자산을 활용할 수 있도록 도와줍니다.  [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)에서 [자산 소싱을 참조하십시오.
 
