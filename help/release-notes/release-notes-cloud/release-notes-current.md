@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 64106e167270271c84b9f68a2babdf09f79aae86
+source-git-commit: 7736f2d4d283ebab5e2f9254dd1a093f7b90056c
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1759'
 ht-degree: 2%
 
 ---
@@ -231,7 +231,7 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 
 ### 알려진 문제 {#known-issues-foundation}
 
-**로컬 빌드 분석기 플러그인의 문제로 인해 일부 로컬 빌드가 실패할 수 있습니다.**
+**로컬 빌드 분석기 플러그인의 문제로 인해 일부 빌드가 실패할 수 있습니다.**
 
 경우에 따라 `aemanalyser-maven-plugin`을(를) 실행하는 동안 다음 오류 메시지와 함께 프로젝트 빌드가 실패할 수 있습니다.
 
