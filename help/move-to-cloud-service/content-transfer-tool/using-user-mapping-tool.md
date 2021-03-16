@@ -2,10 +2,10 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 translation-type: tm+mt
-source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
+source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 4%
+source-wordcount: '1104'
+ht-degree: 3%
 
 ---
 
@@ -16,21 +16,39 @@ ht-degree: 4%
 
 Cloud Service으로 Adobe Experience Manager(AEM)으로 전환 여정의 일부로서 사용자 및 그룹을 Cloud Service으로 기존 AEM 시스템에서 AEM으로 이동시켜야 합니다. 이는 컨텐츠 전송 도구에 의해 수행됩니다.
 
-Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하기 위해 Adobe ID를 완벽하게 통합하는 것입니다.  이렇게 하려면 사용자 및 사용자 그룹을 관리하기 위해 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 Single Sign-On을 제공하는 Adobe Identity Management System(IMS)에 중앙 집중화되어 있습니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)을 참조하십시오. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 사용자와 그룹이 중복되지 않도록 기존 사용자 및 그룹을 IMS ID에 매핑해야 합니다.
+Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하기 위해 Adobe ID를 완벽하게 통합하는 것입니다.  이렇게 하려면 사용자 및 사용자 그룹을 관리하기 위해 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보는 모든 Adobe 클라우드 애플리케이션에서 Single Sign-On을 제공하는 Adobe Identity Management System(IMS)에 중앙 집중화되어 있습니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)을 참조하십시오. 이러한 변경 사항으로 인해 Cloud Service 작성자 인스턴스에서 사용자와 그룹이 중복되지 않도록 기존 사용자와 그룹을 IMS ID에 매핑해야 합니다.
 
 ## 중요 고려 사항 {#important-considerations}
 
-고려해야 할 몇 가지 예외적인 사례가 있다. 다음 특정 사례가 기록되고 해당 사용자나 그룹이 매핑되지 않습니다.
+### 예외 사례 {#exceptional-cases}
 
-1. 사용자에게 *jcr* 노드의 `profile/email` 필드에 이메일 주소가 없는 경우.
+다음 특정 사례가 기록됩니다.
 
-1. 사용된 조직 ID에 대한 IMS(Adobe Identity Management System) 시스템에서 지정된 이메일을 찾을 수 없는 경우(또는 다른 이유로 IMS ID를 검색할 수 없는 경우)
+1. 사용자에게 *jcr* 노드의 `profile/email` 필드에 이메일 주소가 없는 경우 해당 사용자 또는 그룹은 마이그레이션되지만 매핑되지 않습니다.
+
+1. 지정된 이메일이 사용된 조직 ID에 대한 IMS(Adobe Identity Management System) 시스템에 없는 경우(또는 다른 이유로 IMS ID를 검색할 수 없는 경우) 해당 사용자 또는 그룹은 마이그레이션되지만 매핑되지 않습니다.
 
 1. 사용자가 현재 비활성화되어 있으면 비활성화되어 있지 않은 것처럼 처리됩니다. 매핑되고 정상적으로 마이그레이션되며 클라우드 인스턴스에서 비활성화된 상태로 유지됩니다.
 
+1. 사용자가 소스 AEM 인스턴스의 사용자 이름(rep:principalName)과 동일한 사용자 이름을 가진 대상 AEM Cloud Service 인스턴스에 있는 경우 해당 사용자 또는 그룹은 마이그레이션되지 않습니다.
+
+### 추가 고려 사항 {#additional-considerations}
+
+* 통합&#x200B;**설정이 설정되기 전에**&#x200B;클라우드 인스턴스에서 기존 컨텐츠를 지우는 경우, Cloud Service 인스턴스에 이미 전송된 사용자가 전체 기존 리포지토리와 함께 삭제되고 컨텐츠를 인제스트하는 새 저장소가 만들어집니다. 또한 대상 Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정이 재설정되며 **administrators** 그룹에 추가된 관리자 사용자에 대해 true입니다. CTT에 대한 액세스 토큰을 검색하려면 관리자 사용자를 **administrators** 그룹에 다시 추가해야 합니다.
+
+* 사용자 매핑으로 CTT를 실행하기 전에 대상 Cloud Service AEM 인스턴스에서 기존 사용자를 제거하는 것이 좋습니다. 소스 AEM 인스턴스에서 대상 AEM 인스턴스로 사용자를 마이그레이션하는 것 간의 충돌을 방지하기 위한 것입니다. 소스 AEM 인스턴스와 대상 AEM 인스턴스에 동일한 사용자가 있는 경우 통합 중에 충돌이 발생합니다.
+
+* 컨텐츠 최상위 관리가 수행될 때 이전 양도 이후 변경되지 않아 컨텐츠가 전송되지 않는 경우 그 동안 사용자와 그룹이 변경되더라도 해당 컨텐츠와 연관된 사용자 및 그룹이 전송되지 않습니다. 이는 사용자와 그룹이 연결된 콘텐츠와 함께 마이그레이션되기 때문입니다.
+
+* 인제스트는 다음 시나리오에서 실패합니다.
+
+1. 대상 AEM Cloud Service 인스턴스에 다른 사용자 이름이 있지만 원본 AEM 인스턴스의 사용자 중 하나와 동일한 이메일 주소를 가진 사용자가 있는 경우.
+
+1. 소스 AEM 인스턴스에 다른 사용자 이름과 동일한 이메일 주소를 갖는 두 명의 사용자가 있는 경우. Cloud Service의 AEM에서는 두 명의 사용자가 동일한 이메일 주소를 사용할 수 없습니다.
+
 ## 사용자 매핑 도구 {#using-user-mapping-tool} 사용
 
-사용자 매핑 도구는 전자 메일로 IMS(Adobe Identity Management System) 사용자를 조회하고 IMS ID를 반환할 수 있는 API를 사용합니다. 이 API를 사용하려면 사용자가 조직의 클라이언트 ID, 클라이언트 암호, 액세스 또는 전달자 토큰을 만들도록 해야 합니다.
+사용자 매핑 도구는 전자 메일로 IMS(Identity Management System) 사용자를 조회하고 IMS ID를 반환할 수 있는 API를 사용합니다. 이 API를 사용하려면 사용자가 조직의 클라이언트 ID, 클라이언트 암호, 액세스 또는 전달자 토큰을 만들도록 해야 합니다.
 
 아래 절차에 따라 이 설정을 수행하십시오.
 
@@ -84,6 +102,4 @@ Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. 추출 단계를 실행하려면 [내용 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)을 참조하십시오.
-
-
 
