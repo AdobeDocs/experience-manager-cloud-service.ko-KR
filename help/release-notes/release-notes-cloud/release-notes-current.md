@@ -2,9 +2,9 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
+source-git-commit: bd0efdcea679fa8dc312b17309a5ef0a3c27efc9
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1748'
 ht-degree: 2%
 
 ---
@@ -227,12 +227,29 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
    * 호스트 파일의 폴더 경로와 호스트 파일의 경로를 모두 처리할 수 있습니다.
    * 600개 이상의 대규모 고객 구성을 갖는 팜 파일 생성
 
+## [!DNL Adobe Experience Manager] Cloud Service 기반  {#aem-as-a-cloud-service-foundation}
 
+### 알려진 문제 {#known-issues-foundation}
 
+**문제 설명**
 
+경우에 따라 `aemanalyser-maven-plugin`을(를) 실행하는 동안 다음 오류 메시지와 함께 로컬 프로젝트 빌드가 실패할 수 있습니다.
 
+```
+[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
+ 
+Was expecting one of:
+ 
+     
+ 
+[ERROR] Analyser detected errors on feature
+```
 
+**해결 방법**
 
+이 문제를 해결하려면 상위 `pom.xml` 파일에서 최신 버전의 `aemanalyser-maven-plugin`을 선택합니다.
 
-
+```xml
+<aemanalyser.version>0.9.2</aemanalyser.version>
+```
 
