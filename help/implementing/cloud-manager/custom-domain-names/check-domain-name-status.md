@@ -2,9 +2,9 @@
 title: 도메인 이름 상태 확인
 description: 도메인 이름 상태 확인
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: dbf64ec2b4b7e5c549ef5942b1c7bd0ca75eb66f
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ FailedTXT 확인이 성공했습니다. 그러나 CDN 배포는 실패했습니�
 
 IP 허용 목록, SSL 인증서 또는 사용자 정의 도메인 이름에 대한 기존 CDN 구성을 포함하는 환경을 보유한 고객은 **IP 허용 목록** 및 **환경** 세부 정보 페이지에 다음 메시지를 보게 됩니다. 고객이 UI를 통해 기존의 모든 환경 구성을 완전히 마이그레이션한 후 UI에 표시되는 메시지는 사라지고 메시지가 사라지는 데 영업일 기준 1-2일이 걸릴 수 있습니다.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
-
 >[!NOTE]
->기존 구성을 보고 관리하려면 아래 그림과 같이 UI를 통해 해당 구성을 추가해야 합니다.
+>기존 구성을 보고 관리하려면 UI를 통해 해당 구성을 추가해야 합니다. 자세한 내용은 [사용자 지정 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 추가를 참조하십시오.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
