@@ -2,7 +2,7 @@
 title: 도메인 이름 상태 확인
 description: 도메인 이름 상태 확인
 translation-type: tm+mt
-source-git-commit: f3df4b23dc4542e7a194c979a7894bda1b728572
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -49,6 +49,6 @@ IP 허용 목록, SSL 인증서 또는 사용자 정의 도메인 이름에 대�
 >[!NOTE]
 >기존 구성을 보고 관리하려면 UI를 통해 해당 구성을 추가해야 합니다. 자세한 내용은 [사용자 지정 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) 추가를 참조하십시오.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
