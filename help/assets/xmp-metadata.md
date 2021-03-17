@@ -3,9 +3,9 @@ title: XMP 메타데이터
 description: 메타데이터 관리를 위한 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. AEM에서 메타데이터를 생성, 처리 및 교환하기 위한 표준화된 형식으로 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '979'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,10 @@ XMP에서는 텍스트 언어를 지정하기 위해 텍스트 속성에 `xml:la
 
 ## 표현물로 XMP 원본에 쓰기 {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 원래 자산의 변환에 대한 메타데이터 변경 내용을 복제합니다. [!DNL Assets] 내에서 또는 자산을 업로드하는 동안 에셋에 대한 메타데이터를 변경하면 변경 내용이 처음에 저장소의 자산 노드 내에 저장됩니다. 그러나 [!DNL Assets]은(는) 에셋 변환에 메타데이터 변경 사항을 자동으로 전파하지 않습니다. XMP 쓰기 저장(writeback) 기능을 사용하여 자산의 모든 또는 특정 표현물에 메타데이터 변경 내용을 전파할 수 있습니다. 업데이트는 자산 계층의 메타데이터 노드에 저장됩니다. 이 기능은 표현물의 바이너리 파일에도 업데이트를 포함하고 있습니다. 이 기능은 `jcr` 네임스페이스를 사용하는 메타데이터 속성만 다시 기록합니다.
+[!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 원래 자산의 변환에 대한 메타데이터 변경 내용을 복제합니다.
+자산 내에서 또는 자산을 업로드하는 동안 자산에 대한 메타데이터를 변경하면 변경 내용이 처음에 자산 계층의 메타데이터 노드에 저장됩니다.
+
+XMP 쓰기 저장(writeback) 기능을 사용하여 자산의 모든 또는 특정 표현물에 메타데이터 변경 내용을 전파할 수 있습니다. 이 기능은 `jcr` 네임스페이스를 사용하는 메타데이터 속성만 다시 기록합니다. 즉, `dc:title` 속성은 다시 기록되지만 `mytitle` 속성은 기록되지 않습니다.
 
 예를 들어 `Classic Leather`라는 제목의 자산의 [!UICONTROL Title] 속성을 `Nylon`로 수정하는 시나리오를 생각해 보십시오.
 
