@@ -2,7 +2,7 @@
 title: SSL 인증서 상태 확인 - SSL 인증서 관리
 description: SSL 인증서 상태 확인 - SSL 인증서 관리
 translation-type: tm+mt
-source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -32,6 +32,6 @@ IP 허용 목록, SSL 인증서 또는 사용자 정의 도메인 이름에 대�
 >[!NOTE]
 >기존 구성을 보고 관리하려면 UI를 통해 해당 구성을 추가해야 합니다. 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
