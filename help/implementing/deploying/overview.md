@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 translation-type: tm+mt
-source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3246'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Cloud Manager에서 제공하는 컨텐츠를 변경 가능한 저장소, 변경
    * 컨텍스트 인식 구성(`/conf` 아래의 모든 것)(추가, 수정, 제거)
    * 스크립트(패키지 생성 시 패키지 설치 과정의 다양한 단계에서 설치 후크를 트리거할 수 있음)
 
-`/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 포함하여 변경 가능한 컨텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 권장 프로젝트 구조 조정에 대한 자세한 내용은 [AEM 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)에서 확인할 수 있습니다.
+`/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 포함하여 변경 가능한 컨텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 이 분리를 반영하기 위한 재구조화는 AEM 6.5에서 수행되었으며 권장 프로젝트 재조정에 대한 세부 사항은 [AEM 6.5 설명서에서 확인할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >컨텐츠 패키지는 모든 환경 유형(dev, stage, prod)에 배포됩니다. 특정 환경으로 배포를 제한할 수 없습니다. 이 제한은 자동화된 실행을 위한 테스트 실행 옵션을 보장하기 위해 적용됩니다. 환경에 적합한 콘텐트를 사용하려면 패키지 관리자를 통해 수동으로 설치해야 합니다.
@@ -111,7 +111,7 @@ Cloud Manager에서 제공하는 컨텐츠를 변경 가능한 저장소, 변경
 
 포함된 제3자 패키지는 Cloud Service 서비스 호환 시 AEM으로 확인되어야 하며, 그렇지 않으면 배포 오류가 발생합니다.
 
-위에서 설명한 바와 같이 기존 코드 베이스를 사용하는 고객은 [AEM 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)에 설명된 저장소 재구성 연습을 따라야 합니다.
+위에서 설명한 바와 같이 기존 코드 베이스를 사용하는 고객은 [AEM 6.5 설명서에 설명된 6.5 리포지토리 변경 사항으로 필요한 리포지토리 재구성 연습을 따라야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## {#repoinit} 참조
 
