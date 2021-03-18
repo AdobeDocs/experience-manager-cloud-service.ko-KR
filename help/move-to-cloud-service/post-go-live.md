@@ -2,9 +2,9 @@
 title: Go-live 후 단계
 description: Go-live 후 단계
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '233'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 방법은 개발자 �
 >[!IMPORTANT]
 >런타임 시 `/libs` 및 `/apps` 같은 변경할 수 없는 저장소에 쓸 경우 오류가 발생합니다. 또한 고객은 스테이징 및 프로덕션 환경을 위한 개발자 도구에 액세스할 수 없습니다.
 
-CRX/DE Lite를 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 알아보려면 [CRX/DE Lite를 사용한 개발](https://docs.adobe.com/help/ko-KR/experience-manager-65/developing/devtools/developing-with-crxde-lite.html)을 참조하십시오.
+CRX/DE Lite를 사용하여 AEM 애플리케이션을 개발하는 방법에 대해 알아보려면 [CRX/DE Lite를 사용한 개발](/help/implementing/developing/tools/crxde.md)을 참조하십시오.
 
 ## 로그 관리 {#managing-logs}
 
