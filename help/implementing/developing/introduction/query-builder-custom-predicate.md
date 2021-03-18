@@ -2,10 +2,10 @@
 title: Query Builder의 사용자 지정 설명 평가기 구현
 description: AEM의 Query Builder는 컨텐츠 저장소를 쿼리하는 간편하고 사용자 지정 가능한 방법을 제공합니다
 translation-type: tm+mt
-source-git-commit: 21a0e6967a17ea30435d0343c4aa497f54134cda
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->`PredicateEvaluator` 및 `com.day.cq.search` 패키지에 대한 자세한 내용은 [Java 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html)를 참조하십시오.
+>`PredicateEvaluator` 및 `com.day.cq.search` 패키지에 대한 자세한 내용은 [Java 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html)를 참조하십시오.
 
 ### 복제 메타데이터 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}에 대한 사용자 지정 설명 평가기 구현
 
@@ -132,7 +132,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 표현식을 작성하는 방법에 대해 설명합니다. 다른 옵션은 행 기준으로 데이터를 선택하는 `includes` 메서드를 구현하는 것입니다. 자세한 내용은 [Java 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)를 참조하십시오.
+>다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 표현식을 작성하는 방법에 대해 설명합니다. 다른 옵션은 행 기준으로 데이터를 선택하는 `includes` 메서드를 구현하는 것입니다. 자세한 내용은 [Java 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 참조하십시오.
 
 1. `com.day.cq.search.eval.AbstractPredicateEvaluator`을(를) 확장하는 새 Java 클래스 만들기
 1. [통합된 diff 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)에서 코드 조각과 같은 `@Component`으로 클래스에 주석을 답니다.
@@ -159,7 +159,7 @@ replic.action=Activate
    >
    >`PredicateEvaluator`의 이름은 쿼리를 작성할 때 사용되는 조건자 이름입니다.
 
-1. 재정의:
+1. 오버라이드:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
