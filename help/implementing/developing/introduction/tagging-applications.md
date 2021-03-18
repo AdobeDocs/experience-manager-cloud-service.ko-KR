@@ -2,9 +2,9 @@
 title: AEM 애플리케이션에 Tagging 작성
 description: 사용자 정의 AEM 응용 프로그램 내에서 태그를 사용하여 프로그래밍 방식으로 작업하거나 태그를 확장합니다.
 translation-type: tm+mt
-source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 이 문서에서는 사용자 정의 AEM 응용 프로그램 내에서 태그를 프로그래밍 방식으로 사용하거나 태그를 확장하기 위해
 
-* [태그 지정 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
+* [태그 지정 API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
 
 그리고
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 태깅 API {#overview-of-the-tagging-api} 개요
 
-AEM에서 [태깅 프레임워크](tagging-framework.md)을 구현하면 JCR API를 사용하여 태그 및 태그 컨텐츠를 관리할 수 있습니다. `TagManager` 문자열 배열 속성에 값으로 입력한 태그가 중복되지 않도록  `cq:tags` 하며, 이동되거나 병합된 태그에  `TagID`대한 비기존 태그를 가리키는 태그를 제거하고 업데이트 `TagID`를 제거합니다. `TagManager` 는 잘못된 변경 사항을 되돌리는 JCR 관측 수신기를 사용합니다. 기본 클래스는 [com.day.cq.tagreging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지에 있습니다.
+AEM에서 [태깅 프레임워크](tagging-framework.md)을 구현하면 JCR API를 사용하여 태그 및 태그 컨텐츠를 관리할 수 있습니다. `TagManager` 문자열 배열 속성에 값으로 입력한 태그가 중복되지 않도록  `cq:tags` 하며, 이동되거나 병합된 태그에  `TagID`대한 비기존 태그를 가리키는 태그를 제거하고 업데이트 `TagID`를 제거합니다. `TagManager` 는 잘못된 변경 사항을 되돌리는 JCR 관측 수신기를 사용합니다. 기본 클래스는 [com.day.cq.tagreging](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html) 패키지에 있습니다.
 
 * `JcrTagManagerFactory` - 의 JCR 기반 구현을 반환합니다 `TagManager`. Tagging API의 참조 구현입니다.
 * `TagManager` - 경로 및 이름별로 태그를 확인하고 만들 수 있습니다.
@@ -143,13 +143,13 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 서버측 API에서 `title` 관련 메서드를 지역화했습니다.
 
-* [`com.day.cq.tagging.Tag`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
    * `getLocalizedTitlePaths()`
    * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
    * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
