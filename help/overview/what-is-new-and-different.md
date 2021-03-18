@@ -2,10 +2,10 @@
 title: 차이점 및 새로운 기능 - Cloud Service의 Adobe Experience Manager
 description: 'Cloud Service의 차이점과 새로운 기능 - Adobe Experience Manager(AEM)입니다. '
 translation-type: tm+mt
-source-git-commit: 4f43736ae80eeb57efe7d480993efd9a7ad193bf
+source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->온-프레미스 및 관리 서비스 버전에 대한 자세한 내용은 [AEM 6.5](https://helpx.adobe.com/kr/support/experience-manager/6-5.html)에 대한 설명서를 참조하십시오.
+>온-프레미스 및 관리 서비스 버전에 대한 자세한 내용은 [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html)에 대한 설명서를 참조하십시오.
 
 ## 아키텍처 {#architecture}
 
