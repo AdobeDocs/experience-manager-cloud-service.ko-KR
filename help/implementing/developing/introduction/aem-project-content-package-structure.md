@@ -2,9 +2,9 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2836'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->이 문서가 이러한 학습 및 개념을 바탕으로 작성되므로 기본 [AEM Project Tranype 사용](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) 및 [FileVault Content Maven 플러그인](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)에 익숙해지십시오.
+>이 문서가 이러한 학습 및 개념을 바탕으로 작성되므로 기본 [AEM Project Tranype 사용](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) 및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)에 익숙해지십시오.
 
 이 문서에서는 Adobe Experience Manager Maven 프로젝트가 변경 및 변경 불가능한 컨텐츠의 분할을 준수하도록 하고, 상충성이 없는 배포 생성을 위해 종속성을 설정하며, 배포 가능한 구조로 패키징되도록 하여 Cloud Service으로 호환하는 데 필요한 변경 사항에 대해 설명합니다.
 
@@ -619,5 +619,5 @@ scripts=["
 
 ## 추가 리소스 {#additional-resources}
 
-+ [Maven을 사용한 패키지 관리](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
++ [Maven을 사용한 패키지 관리](/help/implementing/developing/tools/maven-plugin.md)
 + [FileVault 컨텐츠 패키지 Maven 플러그인](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
