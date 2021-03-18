@@ -2,9 +2,9 @@
 title: Query Builder 설명 참조
 description: 쿼리 빌더 API에 대한 설명 참조입니다.
 translation-type: tm+mt
-source-git-commit: 90b635cb31af910e08bdee7925cec0c7beb05318
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2219'
 ht-degree: 2%
 
 ---
@@ -202,7 +202,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-이 조건자는 특정 [sling 리소스 컬렉션](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)의 멤버인 항목을 찾습니다.
+이 조건자는 특정 [sling 리소스 컬렉션](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html)의 멤버인 항목을 찾습니다.
 
 필터링 전용 조건자이며 검색 색인을 활용할 수 없습니다.
 
@@ -292,7 +292,7 @@ group.2_group.type=dam:Asset
 
 ### relativedaterange {#relativedaterange}
 
-이 조건자는 현재 서버 시간을 기준으로 시간 오프셋을 사용하여 날짜/시간 간격에 대해 `JCR DATE` 속성을 일치시킵니다. 밀리 값 또는 `lowerBound` 버그질라 구문 `1s 2m 3h 4d 5w 6M 7y`(1초, 2분, 3시간, 4일, 5주, 6개월, 7년)을 사용하여 &lt;a0/> 및 `upperBound`을 지정할 수 있습니다. 현재 시간 이전의 음수 오프셋을 나타내는 접두사는 `-`입니다. `lowerBound` 또는 `upperBound`만 지정하면 다른 하나는 기본적으로 `0`로 설정되며 현재 시간은 표시됩니다.
+이 조건자는 현재 서버 시간을 기준으로 시간 오프셋을 사용하여 날짜/시간 간격에 대해 `JCR DATE` 속성을 일치시킵니다. 밀리 값 또는 `lowerBound` 버그질라 구문 `1s 2m 3h 4d 5w 6M 7y`(1초, 2분, 3시간, 4일, 5주, 6개월, 7년)을 사용하여  및 `upperBound`을 지정할 수 있습니다. 현재 시간 이전의 음수 오프셋을 나타내는 접두사는 `-`입니다. `lowerBound` 또는 `upperBound`만 지정하면 다른 하나는 기본적으로 `0`로 설정되며 현재 시간은 표시됩니다.
 
 예:
 
