@@ -2,10 +2,10 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 가이드
 translation-type: tm+mt
-source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '3720'
-ht-degree: 0%
+source-wordcount: '3675'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >이 문서를 참조하기 전에 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md)를 완료했는지 확인하십시오. 그러므로 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [AEM 프로젝트 전형.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
-WKND 튜토리얼은 대부분의 사용 사례를 다룹니다. 본 문서는 이러한 리소스에 대한 보충 내용으로만 사용하기 위함입니다. 이 가이드는 구성 요소가 AEM에서 구조화되고 구성되어 있으며 시작하기 안내서로 의도하지 않은 방법에 대한 자세한 기술 설명을 제공합니다.
+WKND 튜토리얼은 대부분의 사용 사례를 다룹니다. 이 문서는 이러한 리소스에 대한 보충 내용으로만 사용하기 위함입니다. 이 가이드는 구성 요소가 AEM에서 구조화되고 구성되어 있으며 시작하기 안내서로 의도하지 않은 방법에 대한 자세한 기술 설명을 제공합니다.
 
 ## 개요 {#overview}
 
@@ -118,7 +118,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 
 구성 요소의 아이콘 또는 약어는 개발자가 구성 요소를 만들 때 구성 요소의 JCR 속성을 통해 정의됩니다. 이러한 속성은 다음 순서로 평가되며 발견된 첫 번째 유효한 속성이 사용됩니다.
 
-1. `cq:icon` - 구성 요소 브라우저에 표시할  [Coral UI ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 라이브러리의 표준 아이콘을 가리키는 문자열 속성
+1. `cq:icon` - 구성 요소 브라우저에 표시할  [Coral UI ](https://opensource.adobe.com/coral-spectrum/examples/#icon) 라이브러리의 표준 아이콘을 가리키는 문자열 속성
    * Coral 아이콘의 HTML 속성 값을 사용합니다.
 1. `abbreviation` - 구성 요소 브라우저에서 구성 요소 이름의 약어를 사용자 지정하는 문자열 속성
    * 약어는 2자로 제한되어야 합니다.
@@ -230,15 +230,13 @@ AEM 구성 요소에 대한 대화 상자:
 
 Coral UI 및 Granite UI는 AEM의 모양과 느낌을 정의합니다.
 
-* [Coral ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) UI모든 클라우드 솔루션에서 일관된 UI를 제공합니다.
+* [Coral ](https://opensource.adobe.com/coral-spectrum/documentation/) UI모든 클라우드 솔루션에서 일관된 UI를 제공합니다.
 * [Granite ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) UI는 UI 콘솔 및 대화 상자를 작성하기 위해 Sling 구성 요소에 래핑된 Coral UI 마크업을 제공합니다.
 
 Granite UI는 작성 환경에서 대화 상자를 만드는 데 필요한 다양한 기본 위젯을 제공합니다. 필요한 경우 이 선택 영역을 확장하고 자신만의 위젯을 만들 수 있습니다.
 
 자세한 내용은 다음 리소스를 참조하십시오.
 
-* [Coral UI 안내서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Granite UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [AEM UI 구조](/help/implementing/developing/introduction/ui-structure.md)
 
 ### 대화 상자 필드 사용자 지정 {#customizing-dialog-fields}
@@ -389,7 +387,7 @@ AEM에는 기존 구성이 많습니다. **CRXDE Lite**&#x200B;에서 쿼리 도
 * 필드를 지정된 CSS 클래스(후크)로 표시하십시오.
 * 클라이언트 라이브러리에서 해당 CSS 클래스 이름에 연결된 JS 리스너를 정의합니다. 이렇게 하면 사용자 지정 로직의 범위가 필드에만 적용되며 동일한 유형의 다른 필드에 영향을 주지 않습니다.
 
-상호 작용하려는 기본 위젯 라이브러리에 대해 알아야 합니다. [반응할 이벤트를 ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 식별하려면 Coral UI 문서를 참조하십시오.
+상호 작용하려는 기본 위젯 라이브러리에 대해 알아야 합니다. [반응할 이벤트를 ](https://opensource.adobe.com/coral-spectrum/documentation/) 식별하려면 Coral UI 문서를 참조하십시오.
 
 `cq:listeners` 노드(노드 유형 `cq:EditListenersConfig`)는 구성 요소에 대한 작업 전후에 발생하는 상황을 정의합니다. 다음 표에서는 가능한 속성을 정의합니다.
 
@@ -449,7 +447,7 @@ Granite UI 및 Granite UI 위젯의 필드 유효성 검사는 `foundation-valid
 
 ## 미리 보기 동작 {#preview-behavior}
 
-페이지를 새로 고치지 않아도 미리 보기 모드로 전환할 때 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키가 설정됩니다.
+페이지를 새로 고치지 않아도 미리 보기 모드로 전환할 때 [WCM 모드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키가 설정됩니다.
 
 WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별히 새로 고친 다음 쿠키의 값을 사용해야 합니다.
 
