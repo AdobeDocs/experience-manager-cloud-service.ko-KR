@@ -2,10 +2,10 @@
 title: 이름 지정 규칙
 description: 저장소의 노드는 Java 컨텐츠 저장소의 이름 지정 규칙을 따릅니다
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 16%
 
 ### JCR 유틸리티 {#jcr-utilities}
 
-[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) JcrUtilities는 JCR 유틸리티의 AEM 구현을 나열합니다. 이름의 유효성을 확인하는 데 특히 관심 있는 것은 이름이 제어하는 문자 매핑과 다음 유효성 검사입니다.
+[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtilities는 JCR 유틸리티의 AEM 구현을 나열합니다. 이름의 유효성을 확인하는 데 특히 관심 있는 것은 이름이 제어하는 문자 매핑과 다음 유효성 검사입니다.
 
 * `isValidName`
    * 이름이 비어 있지 않고 유효한 문자만 포함되어 있는지 확인합니다.
@@ -35,7 +35,7 @@ ht-degree: 16%
 
 ### 페이지 관리자 {#page-manager}
 
-[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 는 JCRUtil을 기반으로 페이지 수준 작업 방법 [을 제공합니다](#jcr-utilities).
+[PageManager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) 는 JCRUtil을 기반으로 페이지 수준 작업 방법 [을 제공합니다](#jcr-utilities).
 
 ### AEM UI 동작 {#ui-behavior}
 
