@@ -2,9 +2,9 @@
 title: 사용자 지정 코드 품질 규칙 - Cloud Services
 description: 사용자 지정 코드 품질 규칙 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3278'
 ht-degree: 0%
 
 ---
@@ -747,7 +747,7 @@ Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저
 
 **이후**:버전 2021.2.0
 
-AEM 클라이언트 라이브러리에는 이미지 및 글꼴과 같은 정적 리소스가 포함될 수 있습니다. [프리프로세서 사용](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)에 설명된 대로, 프록시 클라이언트 라이브러리를 사용할 때에는 정적 리소스를 리소스라는 하위 폴더에 포함해야 게시 인스턴스에서 효과적으로 참조됩니다.
+AEM 클라이언트 라이브러리에는 이미지 및 글꼴과 같은 정적 리소스가 포함될 수 있습니다. [프리프로세서 사용](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)에 설명된 대로, 프록시 클라이언트 라이브러리를 사용할 때에는 정적 리소스를 리소스라는 하위 폴더에 포함해야 게시 인스턴스에서 효과적으로 참조됩니다.
 
 #### 호환되지 않는 코드 {#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset Micro-services로 이동�
 
 **이후**:버전 2021.2.0
 
-정적 템플릿은 AEM 프로젝트에서 일반적으로 사용되지만 편집 가능한 템플릿은 가장 유연하게 제공하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 권장됩니다. 자세한 내용은 [페이지 템플릿 - 편집 가능](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)에 있습니다. 정적 템플릿부터 편집 가능한 템플릿으로 마이그레이션하려면 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 대체로 자동화할 수 있습니다.
+정적 템플릿은 AEM 프로젝트에서 일반적으로 사용되지만 편집 가능한 템플릿은 가장 유연하게 제공하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 권장됩니다. 자세한 내용은 [페이지 템플릿을 참조하십시오.](/help/implementing/developing/components/templates.md) 정적인 템플릿과 편집 가능한 템플릿에 대한 마이그레이션은  [AEM 현대화 툴을 사용하여 대부분 자동화할 수 있습니다](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### OakPAL - 레거시 기초 구성 요소의 사용이 거부됨 {#oakpal-usage-legacy}
 
