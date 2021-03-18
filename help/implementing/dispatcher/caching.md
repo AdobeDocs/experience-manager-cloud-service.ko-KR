@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 translation-type: tm+mt
-source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Define DISABLE_DEFAULT_CACHING
 
 이 기능은 기본적으로 연령 헤더가 0으로 설정되므로 비즈니스 논리에서 연령 헤더(달력을 기준으로 값)를 세밀하게 조정해야 하는 경우에 유용합니다. 즉, **기본 캐싱을 끌 때는 주의하십시오.**
 
-* aem을 Cloud Service SDK Dispatcher 도구로 사용하여 `global.vars`에서 `EXPIRATION_TIME` 변수를 정의하여 모든 HTML/Text 컨텐츠에 대해 재정의할 수 있습니다.
+* AEM을 Cloud Service SDK Dispatcher 도구로 사용하여 `global.vars`에서 `EXPIRATION_TIME` 변수를 정의하여 모든 HTML/Text 컨텐츠에 대해 재정의할 수 있습니다.
 * 다음과 같은 apache mod_headers 지시문으로 더 세부적으로 분류된 수준에서 재정의할 수 있습니다.
 
    ```
@@ -69,7 +69,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
-* aem 클라이언트측 라이브러리 프레임워크를 사용하면 모든 변경 사항이 고유한 경로를 갖는 새 파일로 매니페스트되므로 브라우저에서 무기한 캐시할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다.  즉, 클라이언트 라이브러리를 참조하는 HTML이 필요에 따라 생성되므로 고객이 새 컨텐츠를 게시한 즉시 경험할 수 있습니다. &quot;변경할 수 없는&quot; 값을 준수하지 않는 이전 브라우저의 경우 캐시 컨트롤은 &quot;변경할 수 없음&quot; 또는 30일로 설정됩니다.
+* AEM 클라이언트측 라이브러리 프레임워크를 사용하면 모든 변경 사항이 고유한 경로를 갖는 새 파일로 매니페스트되므로 브라우저에서 무기한 캐시할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다.  즉, 클라이언트 라이브러리를 참조하는 HTML이 필요에 따라 생성되므로 고객이 새 컨텐츠를 게시한 즉시 경험할 수 있습니다. &quot;변경할 수 없는&quot; 값을 준수하지 않는 이전 브라우저의 경우 캐시 컨트롤은 &quot;변경할 수 없음&quot; 또는 30일로 설정됩니다.
 * 자세한 내용은 [클라이언트측 라이브러리 및 버전 일관성](#content-consistency) 섹션을 참조하십시오.
 
 ### Blob 저장소 {#images}에 저장할 수 있을 만큼 큰 이미지 및 컨텐츠
@@ -123,8 +123,8 @@ AEM에서 Cloud Service으로 사용하기 전에는 디스패처 캐시를 무�
 1. 게시 디스패처 플러시 에이전트를 지정하여 복제 에이전트를 호출합니다.
 2. `invalidate.cache` API를 직접 호출(예: `POST /dispatcher/invalidate.cache`)
 
-디스패처의 `invalidate.cache` API 접근 방식은 특정 디스패처 노드만 해결하므로 더 이상 지원되지 않습니다. CLOUD SERVICE은 개별 노드 수준이 아니라 서비스 수준에서 작동하므로 [AEM에서 캐시된 페이지 무효화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) 페이지의 무효화 지침은 더 이상 AEM에서 Cloud Service으로 유효하지 않습니다.
-대신 복제 플러시 에이전트를 사용해야 합니다. 복제 API를 사용하여 수행할 수 있습니다. 복제 API 설명서는 [여기](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html)에서 사용할 수 있으며 캐시 플러싱의 예를 보려면 [API 예제 페이지](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) 특히 `CustomStep` 예제는 ACTIVATE 유형의 복제 작업을 사용 가능한 모든 에이전트에 실행하는 방법을 참조하십시오. 플러시 에이전트 끝점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하도록 사전 구성되어 있습니다. 일반적으로 플러시 에이전트는 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
+디스패처의 `invalidate.cache` API 접근 방식은 특정 디스패처 노드만 해결하므로 더 이상 지원되지 않습니다. Cloud Service은 개별 노드 수준이 아니라 서비스 수준에서 작동하므로 [AEM에서 캐시된 페이지 무효화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) 페이지의 무효화 지침은 더 이상 AEM에서 Cloud Service으로 유효하지 않습니다.
+대신 복제 플러시 에이전트를 사용해야 합니다. 복제 API를 사용하여 수행할 수 있습니다. 복제 API 설명서는 [여기](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)에서 사용할 수 있으며 캐시 플러싱의 예를 보려면 [API 예제 페이지](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) 특히 `CustomStep` 예제는 ACTIVATE 유형의 복제 작업을 사용 가능한 모든 에이전트에 실행하는 방법을 참조하십시오. 플러시 에이전트 끝점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하도록 사전 구성되어 있습니다. 일반적으로 플러시 에이전트는 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
 
 아래 다이어그램은 이를 보여 줍니다.
 
