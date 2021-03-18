@@ -2,9 +2,9 @@
 title: 번역 통합 프레임워크 구성
 description: 제3자 번역 서비스와 통합되도록 번역 통합 프레임워크를 구성하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1381'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,6 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 * [스마트링](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [알트랑](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 커넥터 패키지를 설치한 후 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스로 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터에 대한 클라우드 구성 추가에 대한 자세한 내용은 [Microsoft Translator와 통합](connect-ms-translator.md)을 참조하십시오.
 
