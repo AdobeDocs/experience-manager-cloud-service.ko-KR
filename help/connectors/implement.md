@@ -2,9 +2,9 @@
 title: AEM 커넥터 구현
 description: AEM 커넥터 구현
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ Cloud Service [설명서](../overview/introduction.md) Experience Manager은 AEM
 
 또한 Adobe만 `/libs`에 코드를 작성해야 하며, 고객과 파트너가 `/apps`에 기록됩니다.
 
-또한 `/etc`을(를) 다른 최상위 폴더(예: `/conf`)로 배치했을 수 있는 구성을 이동하려면 기존 커넥터를 리팩토링해야 합니다. 이 내용은 [AEM 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)에 설명되어 있습니다.
+또한 `/etc`을(를) 다른 최상위 폴더(예: `/conf`)로 배치했을 수 있는 구성을 이동하려면 기존 커넥터를 리팩토링해야 합니다. 이 재구조화는 AEM 6.5의 일부로 수행되었으며 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)에 설명되어 있습니다.
 
 커넥터가 여러 개 있는 고객을 위해 전체 저장소 구조를 홍보하려면 대부분의 커넥터 코드를 `/apps/connectors/<vendor>` 아래에 배치하는 것이 좋습니다.
 
