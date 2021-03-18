@@ -7,13 +7,13 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: 전자 상거래 통합 프레임워크
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2566'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 ## 클라이언트 라이브러리 및 ui.frontend 모듈 {#introduction-to-client-libraries}
 
-스토어프런트 테마/스타일을 렌더링하는 책임을 지는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 또는 clientlibs를 통해 AEM에서 관리됩니다. 클라이언트 라이브러리는 프로젝트의 코드에 CSS 및 Javascript를 구성하고 페이지에 전달하는 메커니즘을 제공합니다.
+스토어프런트 테마/스타일을 렌더링하는 책임을 지는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 또는 clientlibs를 통해 AEM에서 관리됩니다. 클라이언트 라이브러리는 프로젝트 코드에서 CSS 및 Javascript를 구성한 다음 페이지에 전달하는 메커니즘을 제공합니다.
 
 이러한 클라이언트 라이브러리에서 관리되는 CSS를 추가 및 재정의하여 브랜드별 스타일을 AEM CIF 핵심 구성 요소에 적용할 수 있습니다. 클라이언트 라이브러리가 구조화되어 페이지에 포함되는 방법을 이해하는 것이 중요합니다.
 
@@ -183,7 +183,7 @@ ht-degree: 2%
 
    **clientlib-cif** -  [AEM CIF 핵심 구성 요소의 필수 종속성을 간단히 포함하는 빈 클라이언트 라이브러리입니다](https://github.com/adobe/aem-core-cif-components). 범주는 `venia.cif`입니다.
 
-   **clientlib-grid** - AEM 응답형 격자 기능을 활성화하는 데 필요한 CSS가 포함됩니다. AEM 격자를 사용하면 AEM 편집기에서 [레이아웃 모드](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configuring-responsive-layout.html#include-the-responsive-css)를 사용할 수 있으며 컨텐츠 작성자에게 구성 요소의 크기를 다시 조정할 수 있는 기능을 제공합니다. 범주는 `venia.grid`이며 `venia.base` 라이브러리에 포함되어 있습니다.
+   **clientlib-grid** - AEM 응답형 격자 기능을 활성화하는 데 필요한 CSS가 포함됩니다. AEM 격자를 사용하면 AEM 편집기에서 [레이아웃 모드](/help/sites-cloud/authoring/features/responsive-layout.md)를 사용할 수 있으며 컨텐츠 작성자에게 구성 요소의 크기를 다시 조정할 수 있는 기능을 제공합니다. 범주는 `venia.grid`이며 `venia.base` 라이브러리에 포함되어 있습니다.
 
 1. Inspect `ui.apps/src/main/content/jcr_root/apps/venia/components/page` 아래의 `customheaderlibs.html` 및 `customfooterlibs.html` 파일:
 
@@ -256,7 +256,7 @@ ht-degree: 2%
 
 ## 페이지 템플릿 {#client-library-inclusion-pagetemplates}과(와) 함께 클라이언트 라이브러리 포함
 
-클라이언트측 라이브러리를 포함하는 방법에는 몇 가지 옵션이 있습니다. 그런 다음 생성된 프로젝트에 [페이지 템플릿](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html)을 통해 `clientlib-site` 라이브러리가 포함된 방법을 검사합니다.
+클라이언트측 라이브러리를 포함하는 방법에는 몇 가지 옵션이 있습니다. 그런 다음 생성된 프로젝트에 [페이지 템플릿](/help/implementing/developing/components/templates.md)을 통해 `clientlib-site` 라이브러리가 포함된 방법을 검사합니다.
 
 1. AEM 편집기 내에서 사이트의 **홈 페이지**&#x200B;로 이동합니다.[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -474,7 +474,7 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 
 ## 보너스 챌린지 {#bonus-challenge}
 
-[AEM 스타일 시스템](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html)을 사용하여 내용 작성자가 설정/해제할 수 있는 두 개의 스타일을 만듭니다. [스타일 시스템을 사용한 개발](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) 에는 이를 수행하는 방법에 대한 자세한 단계 및 정보가 포함되어 있습니다.
+[AEM 스타일 시스템](/help/sites-cloud/authoring/features/style-system.md)을 사용하여 내용 작성자가 설정/해제할 수 있는 두 개의 스타일을 만듭니다. [스타일 시스템을 사용한 개발](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) 에는 이를 수행하는 방법에 대한 자세한 단계 및 정보가 포함되어 있습니다.
 
 ![Plus Challenge - 스타일 시스템](../assets/style-cif-component/bonus-challenge.png)
 
