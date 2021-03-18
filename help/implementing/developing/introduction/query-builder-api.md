@@ -2,9 +2,9 @@
 title: Query Builder API
 description: 자산 공유 쿼리 빌더의 기능은 Java API 및 REST API를 통해 노출됩니다.
 translation-type: tm+mt
-source-git-commit: cfd54f0cd84cef72b6f2fad1a85132c312a19348
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 쿼리 빌더는 AEM의 컨텐츠 저장소를 쉽게 쿼리하는 방법을 제공합니다. 이 기능은 Java API 및 REST API를 통해 노출됩니다. 이 문서에서는 이러한 API에 대해 설명합니다.
 
-서버측 쿼리 빌더([`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html))는 쿼리 설명을 적용하고, XPath 쿼리를 만들어 실행하고, 선택적으로 결과 세트를 필터링하고, 원하는 경우 패싯을 추출합니다.
+서버측 쿼리 빌더([`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html))는 쿼리 설명을 적용하고, XPath 쿼리를 만들어 실행하고, 선택적으로 결과 세트를 필터링하고, 원하는 경우 패싯을 추출합니다.
 
-쿼리 설명은 단순히 설명 집합([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html))입니다. 예에는 XPath의 `jcr:contains()` 함수에 해당하는 전체 텍스트 술어가 포함됩니다.
+쿼리 설명은 단순히 설명 집합([`Predicate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html))입니다. 예에는 XPath의 `jcr:contains()` 함수에 해당하는 전체 텍스트 술어가 포함됩니다.
 
-각 조건자 유형에 대해 XPath, 필터링 및 패싯 추출에 대한 특정 조건자를 처리하는 방법을 알고 있는 평가기 구성 요소([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))가 있습니다. OSGi 구성 요소 런타임을 통해 연결되는 사용자 정의 평가기를 만드는 것은 매우 쉽습니다.
+각 조건자 유형에 대해 XPath, 필터링 및 패싯 추출에 대한 특정 조건자를 처리하는 방법을 알고 있는 평가기 구성 요소([`PredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html))가 있습니다. OSGi 구성 요소 런타임을 통해 연결되는 사용자 정의 평가기를 만드는 것은 매우 쉽습니다.
 
 REST API는 JSON에서 보내는 응답과 함께 HTTP를 통해 정확히 동일한 기능에 대한 액세스 권한을 제공합니다.
 
@@ -126,7 +126,7 @@ orderby=path
 
 예를 들어 UI는 다음 방법을 적용할 수 있습니다.
 
-* 총 히트 수([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) 또는 `querybuilder.json` 응답의 합계)가 100개 미만이거나 같습니다.
+* 총 히트 수([SearchResult.getTotalMatches()](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 또는 `querybuilder.json` 응답의 합계)가 100개 미만이거나 같습니다.
 * 쿼리 빌더를 호출하면서 `guessTotal`을 100으로 설정합니다.
 
 * 응답에는 다음 결과가 있을 수 있습니다.
@@ -348,9 +348,9 @@ p.nodedepth=5
 
 추가 설명을 보려면 [쿼리 빌더 설명 참조 페이지](query-builder-predicates.md)를 참조하십시오.
 
-[Javadoc에서 `PredicateEvaluator` 클래스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 확인할 수도 있습니다. 이러한 클래스의 Java에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
+[Javadoc에서 `PredicateEvaluator` 클래스](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 확인할 수도 있습니다. 이러한 클래스의 Java에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
 
-클래스 이름의 접두어(예: [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)의 `similar`)는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에 사용할 조건자 이름이기도 합니다(소문자 구분).
+클래스 이름의 접두어(예: [`SimilarityPredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)의 `similar`)는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에 사용할 조건자 이름이기도 합니다(소문자 구분).
 
 이러한 주체 속성의 경우 쿼리를 줄이고 정규화된 변형 `similar.similar=/content/en` 대신 `similar=/content/en`을 사용할 수 있습니다. 정규화된 양식은 클래스의 모든 비주체 속성에 사용해야 합니다.
 
@@ -422,13 +422,13 @@ JSON(Query Builder) 서블릿을 사용하여 HTTP를 통해 실행되는 동일
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-[`QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession) 메서드를 사용할 때 주어진 `Query`이 `createFile` 인수 값에 따라 보관소에 파일이나 속성으로 저장됩니다. 다음 예제에서는 `Query`을 경로 `/mypath/getfiles`에 파일로 저장하는 방법을 보여 줍니다.
+[`QueryBuilder#storeQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) 메서드를 사용할 때 주어진 `Query`이 `createFile` 인수 값에 따라 보관소에 파일이나 속성으로 저장됩니다. 다음 예제에서는 `Query`을 경로 `/mypath/getfiles`에 파일로 저장하는 방법을 보여 줍니다.
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-이전에 저장한 모든 쿼리는 [`QueryBuilder#loadQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession) 메서드를 사용하여 저장소에서 로드할 수 있습니다.
+이전에 저장한 모든 쿼리는 [`QueryBuilder#loadQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) 메서드를 사용하여 저장소에서 로드할 수 있습니다.
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -522,10 +522,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **설명** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | 기본 쿼리 빌더 및 쿼리 API |
-| [com.day.cq.search.result](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | 결과 API |
-| [com.day.cq.search.facets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | 패싯 |
-| [com.day.cq.search.facets.bucks](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 버킷(패싯 내에 포함) |
-| [com.day.cq.search.eval](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) | 설명 평가자 |
-| [com.day.cq.search.facets.extractor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | 패싯 추출기(평가자용) |
-| [com.day.cq.search.writer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | 쿼리 빌더 서블릿용 JSON 결과 히트 기록기(`/bin/querybuilder.json`) |
+| [com.day.cq.search](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/package-summary.html) | 기본 쿼리 빌더 및 쿼리 API |
+| [com.day.cq.search.result](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/package-summary.html) | 결과 API |
+| [com.day.cq.search.facets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/package-summary.html) | 패싯 |
+| [com.day.cq.search.facets.bucks](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 버킷(패싯 내에 포함) |
+| [com.day.cq.search.eval](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | 설명 평가자 |
+| [com.day.cq.search.facets.extractor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | 패싯 추출기(평가자용) |
+| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | 쿼리 빌더 서블릿용 JSON 결과 히트 기록기(`/bin/querybuilder.json`) |
