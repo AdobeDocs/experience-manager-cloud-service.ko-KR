@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁
+topic: '"관리자,비즈니스 전문가"'
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1001'
 ht-degree: 2%
 
 ---
@@ -43,7 +44,7 @@ ht-degree: 2%
 
 * 두 가지 모두를 유지하면 게시된 자산 URL에 대한 고유한 이름을 가진 새 자산이 만들어집니다. 예를 들어 `image.jpg`은 원래 자산이고 `image1.jpg`은 새로 업로드된 자산입니다.
 
-* Dynamic Media에서는 버전 만들기가 지원되지 않습니다. 새 버전은 배달되는 기존 자산을 대체합니다.
+* Dynamic Media에서는 버전 만들기가 지원되지 않습니다. 새 버전은 전달에 있는 기존 자산을 대체합니다.
 
 ## 이미지 및 세트 {#images-and-sets}
 
