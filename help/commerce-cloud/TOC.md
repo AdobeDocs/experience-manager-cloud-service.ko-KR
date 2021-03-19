@@ -3,8 +3,9 @@ sub-product: AEM Commerce as a Cloud Service
 user-guide-title: Cloud Service으로 AEM Commerce
 breadcrumb-title: Commerce 안내서
 user-guide-description: Experience Manager Commerce as a Cloud Service로 사용하고 관리하는 방법을 이해합니다.
+feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 59%
