@@ -4,17 +4,12 @@ description: AEM AaCS 설명서 페이지에 필요한 메타데이터입니다.
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.ko-KR
 index: y
 type: 설명서
-solution-title: Adobe Experience Manager as a Cloud Service
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
-getting-started-title: 시작하기
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
-tutorials-title: 자습서
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
+solution: Experience Manager
 translation-type: tm+mt
-source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 19%
+source-wordcount: '92'
+ht-degree: 7%
 
 ---
 
