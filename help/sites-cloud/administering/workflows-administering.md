@@ -1,16 +1,18 @@
 ---
 title: 워크플로우 인스턴스 관리
 description: 워크플로우 인스턴스 관리 방법 알아보기
+feature: 관리
+role: 관리자
 translation-type: tm+mt
-source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 0%
+source-wordcount: '936'
+ht-degree: 1%
 
 ---
 
 
-# 워크플로 인스턴스 관리 {#administering-workflow-instances}
+# 워크플로우 인스턴스 관리 {#administering-workflow-instances}
 
 워크플로우 콘솔은 워크플로우 인스턴스가 예상대로 실행되는지 확인하기 위해 워크플로우 인스턴스를 관리하기 위한 여러 도구를 제공합니다.
 
