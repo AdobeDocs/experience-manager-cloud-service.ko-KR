@@ -1,10 +1,12 @@
 ---
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
+feature: 비디오 프로필
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '9537'
+source-wordcount: '9541'
 ht-degree: 1%
 
 ---
@@ -402,7 +404,7 @@ VBR 대 CBR을 선택하는 경우에는 미디어 파일에 VBR을 사용하는
 
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920x1080 | 1 | 1 |
+| 소스 | 1920x1080 | 1 | 3 |
 | 인코딩됨 | 960 x 540 | 2 | 2 |
 | 인코딩됨 | 640 x 360 | 3 | 3 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
