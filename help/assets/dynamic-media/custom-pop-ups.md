@@ -1,10 +1,11 @@
 ---
 title: 빠른 보기를 사용하여 사용자 정의 팝업 만들기
-description: 기본 빠른 보기는 전자 상거래 경험에 사용되므로 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 사용자 정의 컨텐츠가 팝업에 표시되도록 트리거할 수 있습니다.
+description: '"기본 빠른 보기가 전자 상거래 경험에 어떻게 사용되는지 알아보십시오. 제품 정보와 함께 팝업 창을 표시하여 구매를 유도합니다. 사용자 정의 컨텐츠가 팝업 창에 표시되도록 트리거할 수 있습니다."'
+topic: '"개발자,관리자,비즈니스 전문가"'
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
