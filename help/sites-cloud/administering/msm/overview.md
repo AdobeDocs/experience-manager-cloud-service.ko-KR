@@ -1,10 +1,12 @@
 ---
 title: 컨텐츠 재활용 - 다중 사이트 관리자 및 Live Copy
 description: AEM의 강력한 Live Copy 및 Multi Site Manager 기능을 사용하여 컨텐츠를 재활용하는 방법을 소개합니다.
+feature: 다중 사이트 관리자
+role: 관리자
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2686'
 ht-degree: 1%
 
 ---
@@ -196,139 +198,139 @@ MSM Live Copy는 원래 소스와의 라이브 관계가 유지 관리되는 특
 >
 >이 섹션의 다이어그램과 설명은 잠재적인 Live Copy 스냅샷을 나타냅니다. 포괄적이지는 않지만 특정 특성을 강조하는 개요를 제공합니다.
 
-Live Copy를 처음 만들 때 선택한 소스 페이지가 Live Copy에 1:1로 반영됩니다. 이후에는 Live Copy 내에서 직접 새 리소스(페이지 및/또는 단락)를 만들 수 있으므로 이러한 변형과 변경 사항이 동기화에 미치는 영향을 파악하는 것이 유용합니다. 가능한 컴포지션은 다음과 같습니다.
+Live Copy를 처음 만들면 선택한 소스 페이지가 Live Copy에 1:1로 반영됩니다. 이후 새 리소스(페이지 및/또는 단락)도 Live Copy에서 직접 만들 수 있으므로 이러한 변형이 동기화에 미치는 영향을 파악하는 것이 유용합니다. 가능한 컴포지션에는 다음이 포함됩니다.
 
-* [Live Copy 이외의 페이지가 포함된 Live Copy](#live-copy-with-non-live-copy-pages)
-* [중첩된 Live Copy](#nested-live-copies)
+* [Live-Copy 페이지가 아닌 Live Copy](#live-copy-with-non-live-copy-pages)
+* [중첩 라이브 복사본](#nested-live-copies)
 
 Live Copy의 기본 양식은 다음과 같습니다.
 
 * 선택한 소스 페이지를 1:1로 반영하는 Live Copy 페이지.
-* 하나의 구성 정의.
+* 하나의 구성 정의입니다.
 * 모든 리소스에 대해 정의된 라이브 관계:
-   * Live Copy 리소스를 블루프린트/소스와 연결합니다.
+   * Live Copy 리소스를 청사진/소스와 연결합니다.
    * 상속과 롤아웃을 구현할 때 사용됩니다.
 
-변경 사항은 요구 사항에 따라 [동기화된](creating-live-copies.md#synchronizing-your-live-copy)일 수 있습니다.
+요구 사항에 따라 변경 내용이 동기화된 [일 수 있습니다.](creating-live-copies.md#synchronizing-your-live-copy)
 
-![Live Copy 구성 개요](../assets/live-copy-composition.png)
+![Live Copy 컴포지션 개요](../assets/live-copy-composition.png)
 
-#### Live Copy 이외의 페이지가 있는 Live Copy {#live-copy-with-non-live-copy-pages}
+#### Live-Copy가 아닌 페이지 {#live-copy-with-non-live-copy-pages} 포함 Live Copy
 
-AEM에서 Live Copy를 만들 때 Live Copy 분기를 통해 보고 탐색할 수 있으며 Live Copy 분기에서 일반적인 AEM 기능을 사용할 수 있습니다. 즉, Live Copy 내에서 새 리소스(페이지 및/또는 단락)를 만들 수 있습니다. 예: 특정 지역 또는 국가의 제품.
+AEM에서 Live Copy를 만들 때 Live Copy 브랜치를 보고 탐색하고 Live Copy 브랜치에서 일반 AEM 기능을 사용할 수 있습니다. 즉, 사용자나 프로세스가 Live Copy 내에서 새 리소스(페이지 및/또는 단락)를 만들 수 있습니다. 예를 들어 특정 지역 또는 국가에 대한 제품입니다.
 
-* 이러한 리소스는 소스/블루프린트 페이지와 라이브 관계가 없으며 동기화되지 않습니다.
-* MSM이 특수 케이스로 처리하는 시나리오가 발생할 수 있습니다. 예를 들어 소스/블루프린트와 Live Copy 분기 모두에서 위치와 이름이 동일한 페이지를 만들 때(또는 프로세스). 이러한 상황에서는 [MSM 롤아웃 충돌](rollout-conflicts.md)을 참조하십시오.
+* 이러한 리소스는 소스/청사진 페이지와 라이브 관계가 없으며 동기화되지 않습니다.
+* MSM이 특수한 경우에 처리할 수 있는 시나리오가 발생할 수 있습니다. 예를 들어, 소스/청사진 및 Live Copy 브랜치에서 위치와 이름이 같은 페이지를 만드는 경우(또는 프로세스) 이러한 상황에 대한 자세한 내용은 [MSM 롤아웃 충돌](rollout-conflicts.md)을 참조하십시오.
 
-![Live Copy 이외의 페이지가 포함된 Live Copy](../assets/live-copy-with-non-live-copy-pages.png)
+![Live Copy가 아닌 페이지가 있는 Live Copy](../assets/live-copy-with-non-live-copy-pages.png)
 
-#### 중첩된 Live Copy {#nested-live-copies}
+#### 중첩 라이브 복사본 {#nested-live-copies}
 
-기존 Live Copy](#live-copy-with-non-live-copy-pages) 내에 [새 페이지를 만들 때 이 새 페이지를 다른 블루프린트의 Live Copy로 설정할 수도 있습니다. 이를 중첩된 Live Copy라고 합니다. 중첩된 Live Copy에서 두 번째 또는 내부 Live Copy의 동작은 다음 방법으로 첫 번째 또는 외부 Live Copy의 영향을 받습니다.
+기존 Live Copy에서 [새 페이지를 만드는 경우 이 새 페이지를 다른 청사진의 라이브 사본으로 설정할 수도 있습니다. ](#live-copy-with-non-live-copy-pages) 이를 중첩된 라이브 사본이라고 합니다. 중첩된 라이브 사본에서 두 번째 또는 내부 라이브 복사의 비헤이비어는 다음과 같은 방법으로 첫 번째 또는 외부 Live Copy의 영향을 받습니다.
 
-* 최상위 Live Copy에 대해 트리거된 딥 롤아웃을 중첩된 Live Copy에 계속할 수 있습니다.
-* 소스 사이의 모든 링크는 Live Copy 내에 다시 작성됩니다.
+* 최상위 Live Copy에 대해 트리거된 전체 롤아웃은 중첩된 Live Copy에 계속 적용할 수 있습니다.
+* 소스 간의 모든 링크는 라이브 복사본 내에 다시 작성됩니다.
 
-예를 들어, 두 번째에서 첫 번째 청사진 사이의 링크는 중첩된/두 번째 Live Copy를 가리키는 링크로 다시 작성됩니다.
+예를 들어, 두 번째에서 첫 번째 청사진까지 가리키는 링크는 중첩/두 번째 Live Copy에서 첫 번째 Live Copy로 연결되는 링크로 다시 작성됩니다.
 
-![중첩된 Live Copy](../assets/live-copy-nested.png)
+![중첩 라이브 복사본](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->Live Copy 분기 내에서 페이지를 이동하거나 이름을 변경하는 경우, 이 작업은 AEM에서 관계를 추적할 수 있도록 중첩 Live Copy로 처리됩니다.
+>Live Copy 분기 내에서 페이지를 이동하거나 이름을 바꾸면 AEM에서 관계를 추적할 수 있도록 중첩된 Live Copy로 처리됩니다.
 
 #### 누적 Live Copy {#stacked-live-copies}
 
-Live Copy가 얕은 Live Copy의 자식으로 만들어지면 Live Copy를 누적 Live Copy라고 합니다. 이것은 [중첩된 Live Copy](#nested-live-copies)와 동일한 방식으로 동작합니다.
+라이브 복사는 단순 라이브 복사의 자식으로 만들어질 때 누적 라이브 사본이라고 합니다. 중첩된 라이브 복사본](#nested-live-copies)과 동일한 방식으로 작동합니다.[
 
-### 소스, 블루프린트 및 블루프린트 구성 {#source-blueprints-and-blueprint-configurations}
+### 소스, 청사진 및 청사진 구성 {#source-blueprints-and-blueprint-configurations}
 
-모든 페이지 또는 페이지 분기를 Live Copy 소스로 사용할 수 있습니다. 그러나 MSM에서는 소스 경로를 지정하는 블루프린트 구성을 정의할 수도 있습니다. 블루프린트 구성을 사용하면 다음과 같은 이점이 있습니다.
+페이지의 모든 페이지 또는 분기를 라이브 복사의 소스로 사용할 수 있습니다. 그러나 MSM에서는 소스 경로를 지정하는 청사진 구성을 정의할 수도 있습니다. 청사진 구성을 사용하면 다음과 같은 이점이 있습니다.
 
-* 작성자가 블루프린트에서 **롤아웃** 옵션을 사용할 수 있도록 허용합니다. 즉, 이 블루프린트에서 상속되는 Live Copy 수정 사항을 명시적으로 푸시합니다.
-* 작성자가 **사이트 만들기**&#x200B;를 사용하도록 허용합니다. 따라서 사용자는 손쉽게 언어를 선택하고 Live Copy 구조를 구성할 수 있습니다.
-* 블루프린트와 관계가 있는 Live Copy에 대한 기본 롤아웃 구성을 정의합니다.
+* 작성자가 청사진에 **롤아웃** 옵션을 사용하도록 허용합니다. 즉, 이 블루프린트에서 상속되는 라이브 사본으로 수정 사항을 명시적으로 푸시합니다.
+* 작성자가 **사이트 만들기**&#x200B;를 사용하도록 허용합니다. 이를 통해 사용자는 쉽게 언어를 선택하고 Live Copy의 구조를 구성할 수 있습니다.
+* 청사진과 관련된 라이브 사본에 대한 기본 롤아웃 구성을 정의합니다.
 
-Live Copy의 소스는 일반 페이지 또는 블루프린트 구성으로 둘러싸인 페이지일 수 있습니다. 두 가지 모두 유효한 사용 사례입니다.
+Live Copy의 소스는 일반 페이지이거나 청사진 구성에 포함된 페이지일 수 있습니다. 두 가지 모두 유효한 사용 사례입니다.
 
-소스는 Live Copy의 청사진을 구성합니다. 다음과 같은 경우 청사진이 정의됩니다.
+소스는 Live Copy의 청사진을 구성합니다. 청사진은 다음과 같은 경우에 정의됩니다.
 
-* [블루프린트 구성](creating-live-copies.md#creating-a-blueprint-configuration)  만들기 - 구성은 Live Copy를 만드는 데 사용할 페이지를 미리 정의합니다.
-* [페이지의 Live Copy 만들기](creating-live-copies.md#creating-a-live-copy-of-a-page)  - Live Copy를 만드는 데 사용되는 페이지(소스 페이지)는 블루프린트 페이지입니다. 소스 페이지가 블루프린트 구성에서 참조되거나 참조되지 않을 수 있습니다.
+* [Blueprint 구성](creating-live-copies.md#creating-a-blueprint-configuration)  만들기 - Live Copy를 만드는 데 사용할 페이지를 미리 정의합니다.
+* [페이지의](creating-live-copies.md#creating-a-live-copy-of-a-page)  라이브 사본 만들기 - 라이브 복사본을 만드는 데 사용되는 페이지(소스 페이지)는 청사진 페이지입니다. 소스 페이지가 청사진 구성에서 참조되거나 참조되지 않을 수 있습니다.
 
 ### 롤아웃 및 동기화 {#rollout-and-synchronize}
 
-롤아웃은 Live Copy를 소스와 동기화하는 중앙 MSM 동작입니다. 수동으로 롤아웃을 수행하거나 자동으로 수행할 수 있습니다.
+롤아웃은 라이브 복사본을 소스와 동기화하는 중앙 MSM 작업입니다. 수동으로 롤오버를 수행하거나 자동으로 수행할 수 있습니다.
 
-* [롤아웃 구성](#rollout-configurations)을 정의하여 특정 [events](live-copy-sync-config.md#rollout-triggers)이 자동으로 롤아웃될 수 있습니다.
-* 블루프린트 페이지를 작성할 때 **[롤아웃](creating-live-copies.md#rolling-out-a-blueprint)** 명령을 사용하여 변경 내용을 Live Copy에 푸시할 수 있습니다.
-   * 블루프린트 구성에서 참조하는 블루프린트 페이지에서 **롤아웃** 명령을 사용할 수 있습니다.
+* 특정 [이벤트](live-copy-sync-config.md#rollout-triggers)로 인해 롤아웃이 자동으로 발생할 수 있도록 [롤아웃 구성](#rollout-configurations)을 정의할 수 있습니다.
+* 청사진 페이지를 작성할 때 **[롤아웃](creating-live-copies.md#rolling-out-a-blueprint)** 명령을 사용하여 변경 내용을 라이브 복사에 푸시할 수 있습니다.
+   * **롤아웃** 명령은 청사진 구성에서 참조하는 청사진 페이지에서 사용할 수 있습니다.
 
    ![롤아웃](../assets/live-copy-rollout.png)
 
-* Live Copy 페이지를 작성할 때 **[동기화](creating-live-copies.md#synchronizing-a-live-copy)** 명령을 사용하여 소스에서 Live Copy로 변경 내용을 가져올 수 있습니다.
-   * 소스/블루프린트 페이지가 블루프린트 구성으로 포함되었는지 여부에 관계없이 Live Copy 페이지에서 **동기화** 명령을 항상 사용할 수 있습니다.
+* Live Copy 페이지를 제작할 때 **[동기화](creating-live-copies.md#synchronizing-a-live-copy)** 명령을 사용하여 소스의 변경 내용을 라이브 사본으로 가져올 수 있습니다.
+   * 소스/청사진 페이지가 청사진 구성에 포함되었는지 여부에 관계없이 **동기화** 명령은 항상 Live Copy 페이지에서 사용할 수 있습니다.
 
    ![동기화](../assets/live-copy-synchronize.png)
 
 ### 롤아웃 구성 {#rollout-configurations}
 
-롤아웃 구성은 Live Copy가 소스 컨텐츠와 동기화되는 시기 및 방법을 정의합니다. 롤아웃 구성은 트리거 및 하나 이상의 동기화 작업으로 구성됩니다.
+롤아웃 구성은 Live Copy가 소스 내용과 동기화되는 시기 및 방법을 정의합니다. 롤아웃 구성은 트리거 및 하나 이상의 동기화 작업으로 구성됩니다.
 
-* **트리거**  - 트리거는 소스 페이지의 활성화와 같이 라이브 작업 동기화를 발생시키는 이벤트입니다. MSM은 사용할 수 있는 트리거를 정의합니다.
-* **동기화 작업**  - 동기화 작업은 Live Copy에서 수행되어 소스와 동기화됩니다. 예제 작업은 컨텐츠 복사, 하위 노드 순서 지정 및 Live Copy 페이지 활성화입니다. MSM은 여러 동기화 작업을 제공합니다.
+* **트리거**  - 트리거는 소스 페이지의 활성화와 같이 라이브 액션 동기화가 발생하는 이벤트입니다. MSM은 사용할 수 있는 트리거를 정의합니다.
+* **동기화 작업**  - 동기화 작업은 Live Copy에서 수행되어 소스와 동기화됩니다. 예를 들어, 내용 복사, 자식 노드 순서 지정 및 Live Copy 페이지 활성화가 있습니다. MSM에서는 여러 동기화 작업을 제공합니다.
 
 >[!NOTE]
 >
->Java API를 사용하여 인스턴스에 대한 사용자 정의 동작을 만들 수 있습니다.
+>Java API를 사용하여 인스턴스에 대한 사용자 정의 액션을 만들 수 있습니다.
 
-롤아웃 구성을 다시 사용할 수 있으므로 둘 이상의 Live Copy에서 동일한 롤아웃 구성을 사용할 수 있습니다. 표준 설치에는 일부 [롤아웃 구성](live-copy-sync-config.md#installed-rollout-configurations)이 포함됩니다.
+롤아웃 구성을 다시 사용할 수 있으므로 둘 이상의 Live Copy에서 동일한 롤아웃 구성을 사용할 수 있습니다. 표준 설치에는 여러 [롤아웃 구성](live-copy-sync-config.md#installed-rollout-configurations)이 포함됩니다.
 
 ### 롤아웃 충돌 {#rollout-conflicts}
 
-특히 작성자가 소스와 Live Copy 모두에서 컨텐츠를 편집하는 경우 롤아웃이 복잡해질 수 있습니다. 따라서 롤아웃 중에 발생할 수 있는 모든 [충돌을 AEM에서 처리하는 방법을 이해하는 것이 유용합니다.](rollout-conflicts.md)
+특히 제작자가 소스와 Live Copy 모두에서 내용을 편집하는 경우 롤아웃이 복잡해질 수 있습니다. 따라서 AEM에서 롤아웃 중에 발생할 수 있는 모든 [충돌을 처리하는 방법을 알고 있으면 유용합니다.](rollout-conflicts.md)
 
 ### 상속 및 동기화 일시 중단 및 취소 {#suspending-and-cancelling-inheritance-and-synchronization}
 
-Live Copy의 각 페이지 및 구성 요소는 라이브 관계를 통해 소스 페이지 및 구성 요소와 연결됩니다. 라이브 관계는 소스의 Live Copy 컨텐츠 동기화를 구성합니다.
+Live Copy의 각 페이지 및 구성 요소는 라이브 관계를 통해 소스 페이지 및 구성 요소와 연결됩니다. 라이브 관계는 소스에서 Live Copy 내용의 동기화를 구성합니다.
 
-페이지 속성 및 구성 요소를 변경할 수 있도록 Live Copy 페이지에 대한 **Live Copy 상속을 일시 중단할 수 있습니다**. 상속을 일시 중단하면 페이지 속성 및 구성 요소가 더 이상 소스와 동기화되지 않습니다.
+페이지 속성과 구성 요소를 변경할 수 있도록 Live Copy 페이지의 Live Copy 상속 **을 일시 중지할 수 있습니다.** 상속을 일시 중단하면 페이지 속성 및 구성 요소가 더 이상 소스와 동기화되지 않습니다.
 
-개별 페이지를 편집할 때 작성자는 구성 요소에 대해 **상속 취소**&#x200B;할 수 있습니다. 상속이 취소되면 라이브 관계가 일시 중단되고 해당 구성 요소에 대한 동기화가 발생하지 않습니다. 상속과 동기화 취소는 내용의 하위 섹션을 사용자 정의해야 하는 경우에 유용합니다.
+개별 페이지를 편집할 때 작성자는 구성 요소에 대해 **상속 취소**&#x200B;를 할 수 있습니다. 상속을 취소하면 라이브 관계가 일시 중단되고 해당 구성 요소에 대한 동기화가 발생하지 않습니다. 상속 및 동기화를 취소하면 내용의 하위 섹션을 사용자 정의해야 할 때 유용합니다.
 
-### Live Copy 분리 {#detaching-a-live-copy}
+### 라이브 복사본 분리 {#detaching-a-live-copy}
 
-모든 연결을 제거하기 위해 블루프린트에서 [Live Copy](creating-live-copies.md#detaching-a-live-copy)를 분리할 수도 있습니다.
+모든 연결을 제거하려면 해당 청사진에서 ](creating-live-copies.md#detaching-a-live-copy)의 Live Copy를 분리할 수도 있습니다.[
 
 >[!CAUTION]
 >
 >분리 동작은 영구적이며 되돌릴 수 없습니다.
 
-분리 작업은 Live Copy와 블루프린트 페이지 간의 라이브 관계를 영구적으로 제거합니다. 모든 MSM 관련 속성은 Live Copy에서 제거되고 Live Copy 페이지는 독립형 복사본이 됩니다.
+분리 작업은 Live Copy와 해당 청사진 페이지 간의 라이브 관계를 영구적으로 제거합니다. 모든 MSM 관련 속성이 Live Copy에서 제거되고 Live Copy 페이지가 독립형 사본으로 바뀝니다.
 
 >[!TIP]
 >
->하위 및 상위 페이지에 대한 관련 영향을 비롯한 자세한 내용은 [Live Copy 분리](creating-live-copies.md#detaching-a-live-copy)를 참조하십시오.
+>하위 및 상위 페이지에 대한 관련 영향을 포함하여 전체 세부 사항은 [라이브 사본 분리](creating-live-copies.md#detaching-a-live-copy)를 참조하십시오.
 
 ## MSM {#standard-steps-for-using-msm} 사용을 위한 표준 단계
 
-다음 단계에서는 MSM을 사용하여 컨텐츠를 재사용하고 변경 사항을 Live Copy에 동기화하는 표준 절차를 설명합니다.
+다음 단계에서는 MSM을 사용하여 내용을 재사용하고 변경 내용을 라이브 복사본으로 동기화하는 표준 절차를 설명합니다.
 
-1. 소스 사이트의 컨텐츠를 개발합니다.
+1. 소스 사이트의 내용을 개발합니다.
 1. 사용할 롤아웃 구성을 결정합니다.
 
-   1. MSM [에서는 여러 사용 사례를 충족할 수 있는 몇 개의 롤아웃 구성](live-copy-sync-config.md#installed-rollout-configurations)을 설치합니다.
+   1. MSM [은 여러 사용 사례를 충족할 수 있는 여러 롤아웃 구성](live-copy-sync-config.md#installed-rollout-configurations)을 설치합니다.
    1. 필요한 경우 [롤아웃 구성](live-copy-sync-config.md#creating-a-rollout-configuration)을 만들 수도 있습니다.
 
-1. [롤아웃 구성을 지정하여](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)을(를) 사용하고 필요에 따라 구성해야 하는 위치를 결정합니다.
-1. 필요한 경우 [Live Copy의 소스 컨텐츠를 식별하는 블루프린트 구성](creating-live-copies.md#creating-a-blueprint-configuration)을 만듭니다.
-1. [Live Copy 만들기를 참조하십시오.](creating-live-copies.md#creating-a-live-copy)
-1. 필요에 따라 소스 컨텐츠를 변경합니다. 조직에서 설정한 일반적인 컨텐츠 검토 및 승인 프로세스를 사용해야 합니다.
-1. [블루프린트](creating-live-copies.md#rolling-out-a-blueprint) 를 롤아웃하거나  [라이브 카피를 변경 ](creating-live-copies.md#synchronizing-a-live-copy) 사항과 동기화합니다.
+1. [사용할 롤아웃 구성을 지정하고 필요에 따라 구성합니다.](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)
+1. 필요한 경우 Live Copy의 소스 내용을 식별하는 청사진 구성](creating-live-copies.md#creating-a-blueprint-configuration)을 만듭니다.[
+1. [Live Copy를 만듭니다.](creating-live-copies.md#creating-a-live-copy)
+1. 필요에 따라 소스 내용을 변경합니다. 조직에서 수립한 일반적인 컨텐츠 검토 및 승인 프로세스를 사용해야 합니다.
+1. [청사진](creating-live-copies.md#rolling-out-a-blueprint) 을 롤아웃하거나  [라이브 카피라이브와 변경 내용](creating-live-copies.md#synchronizing-a-live-copy) 을 동기화합니다.
 
-## MSM {#customizing-msm} 사용자 지정
+## MSM {#customizing-msm} 사용자 정의
 
-MSM은 콘텐츠를 공유할 때 발생할 수 있는 매우 복잡한 복잡성에 맞게 구현될 수 있도록 도구를 제공합니다.
+MSM은 콘텐츠를 공유할 때 발생할 수 있는 매우 복잡한 요소에 구현할 수 있도록 도구를 제공합니다.
 
 * **사용자 지정 롤아웃 구성**   [- 설치된 ](live-copy-sync-config.md#creating-a-rollout-configuration) 롤아웃 구성이 요구 사항을 충족하지 않을 때 롤아웃 구성을 만듭니다. 사용 가능한 롤아웃 트리거 및 동기화 작업을 사용할 수 있습니다.
 
@@ -338,4 +340,4 @@ MSM은 콘텐츠를 공유할 때 발생할 수 있는 매우 복잡한 복잡�
 
 ## 우수 사례 {#best-practices}
 
-[MSM 우수 사례](best-practices.md) 페이지에는 구현과 관련된 중요한 정보가 포함되어 있습니다.
+[MSM 모범 사례](best-practices.md) 페이지에는 구현과 관련된 중요한 정보가 포함되어 있습니다.
