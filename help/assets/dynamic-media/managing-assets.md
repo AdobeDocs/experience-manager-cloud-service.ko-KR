@@ -1,10 +1,12 @@
 ---
 title: Dynamic Media 자산 관리 정보
 description: Dynamic Media 에셋을 사용하여 작업하는 방법을 알아봅니다.
+feature: 자산 관리
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '123'
 ht-degree: 13%
 
 ---
