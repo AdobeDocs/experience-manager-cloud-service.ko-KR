@@ -1,10 +1,12 @@
 ---
 title: 번역 통합 프레임워크 구성
 description: 제3자 번역 서비스와 통합되도록 번역 통합 프레임워크를 구성하는 방법을 알아봅니다.
+feature: 언어 복사
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1384'
 ht-degree: 1%
 
 ---
