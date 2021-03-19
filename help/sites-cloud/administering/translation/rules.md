@@ -1,10 +1,12 @@
 ---
 title: 변환할 컨텐츠 식별
 description: 번역 규칙이 번역해야 하는 컨텐츠를 식별하는 방법을 알아봅니다.
+feature: 언어 복사
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
