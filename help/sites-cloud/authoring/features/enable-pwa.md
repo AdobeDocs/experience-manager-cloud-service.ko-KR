@@ -4,9 +4,9 @@ description: 컨텐츠 작성자는 AEM Sites을 사용하여 코딩 대신 간�
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
+source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    1. **PWA 활성화** 옵션을 선택합니다.
    1. **시작 URL**&#x200B;을 정의합니다.
 
-      ![PWA 사용](../assets/pwa-enable.png)
+      ![PWA(점진적 웹 앱) 사용](../assets/pwa-enable.png)
 
    1. 512x512 png 아이콘을 DAM에 업로드하고 이를 앱의 아이콘으로 참조합니다.
 
@@ -208,7 +208,6 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 일부 PWA 기능은 AEM Sites에 사용할 수 없습니다. 몇 가지 주목할 만한 제한 사항입니다.
 
-* 사용자는 페이지를 오프라인으로 캐시하기 전에 최소한 한 번 페이지를 검색해야 합니다.
 * 사용자가 앱을 사용하지 않는 경우 페이지가 자동으로 동기화되거나 업데이트되지 않습니다.
 
 또한 PWA을 구현할 때 Adobe에서 다음 권장 사항을 만듭니다.
