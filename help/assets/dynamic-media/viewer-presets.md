@@ -1,10 +1,12 @@
 ---
 title: Dynamic Media 뷰어 사전 설정 적용
 description: Dynamic Media에서 뷰어 사전 설정을 적용하는 방법을 알아봅니다.
+feature: 뷰어 사전 설정,뷰어
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
