@@ -1,10 +1,12 @@
 ---
 title: 응답형 사이트에 최적화된 이미지 제공
 description: 반응형 코드 기능을 사용하여 Dynamic Media에서 최적화된 이미지를 제공하는 방법을 살펴봅니다.
+feature: 자산 관리
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '326'
 ht-degree: 3%
 
 ---
@@ -16,7 +18,7 @@ ht-degree: 3%
 
 이 기능은 웹 사이트가 타사 WCM에 있는 경우에 사용하는 것이 적절합니다. 그러나 웹 사이트가 AEM에 있는 경우에는 오프사이트 이미지 서버가 이미지를 렌더링하여 웹 페이지에 제공합니다.
 
-웹 페이지에 비디오 뷰어 포함을 참조하십시오.[](embed-code.md)
+웹 페이지에 비디오 뷰어 포함을 참조하십시오.](embed-code.md)[
 
 [웹 응용 프로그램에 URL 연결을 참조하십시오.](linking-urls-to-yourwebapplication.md)
 
