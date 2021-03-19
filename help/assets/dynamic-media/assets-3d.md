@@ -5,10 +5,12 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
+feature: 3D 자산
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2274'
 ht-degree: 3%
 
 ---
@@ -98,13 +100,13 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
 
 ## 자산 세부 사항 페이지 {#viewing-three-d-assets-from-asset-details-page}에서 3D 자산 보기 및 상호 작용
 
-소프트웨어 인터페이스를 사용하여 자산 미리 보기를 참조하십시오.[](/help/assets/dynamic-media/previewing-assets.md)
+소프트웨어 인터페이스를 사용하여 자산 미리 보기를 참조하십시오.](/help/assets/dynamic-media/previewing-assets.md)[
 
 **자산 세부 사항 페이지에서 3D 자산을 보고 상호 작용하려면**
 
 1. 3D 자산을 Experience Manager에 업로드했는지 확인합니다.
 
-   Dynamic Media에서 사용할 3D 자산 업로드를 참조하십시오.[](/help/assets/add-assets.md#upload-assets)
+   Dynamic Media에서 사용할 3D 자산 업로드를 참조하십시오.](/help/assets/add-assets.md#upload-assets)[
 
 1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 파일]**&#x200B;을 탭합니다.
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보기]** 드롭다운 목록에서 **[!UICONTROL 카드 보기]**&#x200B;를 탭합니다.
@@ -137,7 +139,7 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
 >
 >3D 미디어 구성 요소를 웹 페이지에 추가하고 3D 자산을 구성 요소에 할당한 후에만 이 작업을 수행할 수 있습니다. [웹 페이지에 3D 미디어 구성 요소 추가](#adding-the-three-d-media-component-to-a-web-page) 및 [3D 미디어 구성 요소에 3D 자산 할당을 참조하십시오.](#assigning-a-three-d-asset-to-the-component)
 
-소프트웨어 인터페이스를 사용하여 자산 미리 보기를 참조하십시오.[](/help/assets/dynamic-media/previewing-assets.md)
+소프트웨어 인터페이스를 사용하여 자산 미리 보기를 참조하십시오.](/help/assets/dynamic-media/previewing-assets.md)[
 
 **3D 미디어 구성 요소 내에서 3D 자산을 보고 상호 작용하려면**
 
@@ -181,7 +183,7 @@ Dynamic Media에는 웹 페이지에서 3D 모델을 인터랙티브하게 볼 �
 1. **[!UICONTROL 도구 > 일반 > 템플릿]**&#x200B;으로 이동합니다.
 1. 에서 3D 구성 요소를 활성화할 페이지 템플릿으로 이동하여 템플릿을 선택합니다.
 1. **[!UICONTROL 편집]**&#x200B;을 눌러 템플릿을 엽니다.
-1. 페이지의 오른쪽 위 근처에 있는 드롭다운 메뉴에서 **[!UICONTROL 구조]** 모드가 아직 활성 상태가 아니면 &lt;a0/>를 선택합니다.
+1. 페이지의 오른쪽 위 근처에 있는 드롭다운 메뉴에서 **[!UICONTROL 구조]** 모드가 아직 활성 상태가 아니면 를 선택합니다.
 
    ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
