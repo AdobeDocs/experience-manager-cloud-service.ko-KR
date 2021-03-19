@@ -1,10 +1,12 @@
 ---
 title: 회전 배너
 description: Dynamic Media에서 캐러셀 배너를 사용하여 작업하는 방법을 알아봅니다.
+feature: 회전 배너
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 3391045d867cdfc21ab9784e20c6893d38bc78f0
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4561'
+source-wordcount: '4565'
 ht-degree: 0%
 
 ---
