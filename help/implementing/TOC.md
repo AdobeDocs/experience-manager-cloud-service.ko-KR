@@ -3,10 +3,13 @@ sub-product: AEM as a Cloud Service용 구현
 user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
+feature-set: Experience Manager
+feature: 개발자 도구
+role: 개발자, 건축가
 translation-type: tm+mt
-source-git-commit: 7b17605ceb794969b079c21a639dd145f8e028af
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '876'
 ht-degree: 47%
 
 ---
