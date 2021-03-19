@@ -1,11 +1,13 @@
 ---
 title: Dynamic Media 이미지 프로필 또는 비디오 프로필 사용을 위한 디지털 자산을 구성하기 위한 모범 사례
-description: Dynamic Media 이미지 및 비디오 자산 파일의 이름 지정, 구성 및 관리에 대한 팁 및 모범 사례
+description: '"Dynamic Media 이미지 파일 및 비디오 에셋 파일의 이름 지정, 구성 및 관리를 위한 팁 및 모범 사례"'
 contentOwner: Rick Brough
+feature: 자산 관리, 이미지 프로필, 비디오 프로필
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: a64a7274f0037789be1a5e2f7427aba551f14ed7
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
