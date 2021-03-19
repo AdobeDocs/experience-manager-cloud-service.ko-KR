@@ -2,9 +2,9 @@
 title: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 description: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 translation-type: tm+mt
-source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
+source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1742'
 ht-degree: 5%
 
 ---
@@ -67,12 +67,14 @@ AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양�
          * [샘플 쿼리 - 명명된 변화가 있는 모든 도시](#sample-cities-named-variation)를 참조하십시오.
    * 작업:
 
-      * `_operator` :특정 연산자 적용 `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
+      * `_operator` :특정 연산자 적용 `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`, `CONTAINS`  `STARTS_WITH`
          * [샘플 쿼리 - &quot;작업&quot; 이름이 없는 모든 사람](#sample-all-persons-not-jobs)을 참조하십시오.
+         * `_path`이(가) 특정 접두어](#sample-wknd-all-adventures-cycling-path-filter)로 시작하는 [샘플 쿼리 - 모든 모험을 참조하십시오.
       * `_apply` :특정 조건을 적용하는 경우예를 들어   `AT_LEAST_ONCE`
          * [샘플 쿼리 - 하나 이상 발생해야 하는 항목이 있는 배열에 대해 필터를 참조하십시오](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` :쿼리 시 대/소문자를 무시하려면
          * [샘플 쿼리 - 대소문자](#sample-all-cities-san-ignore-case)에 관계없이 이름에 SAN이 있는 모든 도시 참조
+
 
 
 
@@ -653,6 +655,51 @@ query {
         {
           "name": "Caulfield",
           "firstName": "Max"
+        }
+      ]
+    }
+  }
+}
+```
+
+### 샘플 쿼리 - `_path`이(가) 특정 접두사 {#sample-wknd-all-adventures-cycling-path-filter}로 시작하는 모든 모험
+
+`_path`이(가) 특정 접두사(`/content/dam/wknd/en/adventures/cycling`)로 시작하는 모든 `adventures`.
+
+**샘플 쿼리**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**샘플 결과**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
         }
       ]
     }
