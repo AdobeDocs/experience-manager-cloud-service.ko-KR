@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2283'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ DEBUG 로그 수준을 활성화하려면
 
 로컬 개발의 경우 개발자는 CRXDE Lite(`/crx/de`) 및 AEM 웹 콘솔(`/system/console`)에 대한 모든 액세스 권한을 가집니다.
 
-로컬 개발 시(클라우드 지원 빠른 시작 사용), `/apps` 및 `/libs`은(는) 직접 작성할 수 있습니다. 이는 최상위 폴더를 변경할 수 없는 클라우드 환경과 다릅니다.
+로컬 개발(SDK 사용)에서 `/apps` 및 `/libs`은(는) 직접 작성할 수 있으며, 이는 최상위 폴더를 변경할 수 없는 클라우드 환경과 다릅니다.
 
 ### AEM을 Cloud Service 개발 도구로 사용 {#aem-as-a-cloud-service-development-tools}
 
