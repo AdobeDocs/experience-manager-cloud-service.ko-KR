@@ -1,10 +1,12 @@
 ---
 title: MSM 문제 해결 및 FAQ
 description: 가장 일반적인 MSM 관련 문제를 해결하고 가장 일반적인 MSM 관련 질문에 대한 답변을 얻을 수 있는 방법을 알아봅니다.
+feature: 다중 사이트 관리자
+role: 관리자
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
