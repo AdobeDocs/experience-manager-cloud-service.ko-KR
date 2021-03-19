@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 translation-type: tm+mt
-source-git-commit: c915580247e1b99db8a9f5228eec8cffece8a003
+source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1738'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 ## AEM에서 Cloud Service {#changes-in-aem-as-a-cloud-service}으로 변경
 
-Cloud Service으로 AEM을 사용하는 Adobe은 Cloud Manager에서 CI/CD 파이프라인을 통해 제어되는 n-x AEM Containers를 사용하여 AEM 인스턴스 중심 모델에서 서비스 기반 보기로 전환되고 있습니다. 단일 AEM 인스턴스에서 인덱스를 구성하고 유지 관리하는 대신 배포 전에 색인 구성을 지정해야 합니다. 제작 과정의 구성 변화는 분명히 CI/CD 정책을 위반하는 것이다. 색인 변경 사항에도 동일하게 적용됩니다. 왜냐하면 색인 변경 사항이 지정되지 않은 경우 시스템 안정성 및 성능에 영향을 줄 수 있기 때문입니다.
+Cloud Service으로 AEM을 사용하는 Adobe은 Cloud Manager에서 CI/CD 파이프라인을 통해 제어되는 n-x AEM Containers를 사용하여 AEM 인스턴스 중심의 모델에서 서비스 기반의 보기로 전환하고 있습니다. 단일 AEM 인스턴스에서 인덱스를 구성하고 유지 관리하는 대신 배포 전에 색인 구성을 지정해야 합니다. 제작 과정의 구성 변화는 분명히 CI/CD 정책을 위반하는 것이다. 색인 변경 사항에도 동일하게 적용됩니다. 왜냐하면 색인 변경 사항은 프로덕션으로 가져오기 전에 테스트 및 재색인을 지정하지 않은 경우 시스템 안정성과 성능에 영향을 줄 수 있기 때문입니다.
 
 다음은 AEM 6.5 및 이전 버전과 비교하여 주요 변경 사항 목록입니다.
 
@@ -40,7 +40,7 @@ Cloud Service으로 AEM을 사용하는 Adobe은 Cloud Manager에서 CI/CD 파�
 
 ## 사용 방법 {#how-to-use}
 
-인덱스를 정의하는 것은 3가지 사용 사례들 중 하나로 구성될 수 있습니다.
+색인을 정의하는 것은 다음 3가지 사용 사례 중 하나로 구성될 수 있습니다.
 
 1. 새 고객 색인 정의 추가
 1. 기존 색인 정의를 업데이트하는 중입니다. 이는 기존 색인 정의의 새 버전을 추가하는 것을 의미합니다
@@ -124,7 +124,7 @@ Cloud Service으로 AEM을 사용하는 Adobe은 Cloud Manager에서 CI/CD 파�
 | /oak:index/acme.product-custom-2 | 아니오 | 아니오 | 예 |
 | /oak:index/cqPageLucene | 예 | 예 | 예 |
 
-색인이 변경될 때마다 버전 번호가 증가합니다. 사용자 정의 색인 이름이 제품 자체의 색인 이름과 충돌하지 않도록 하려면 사용자 정의 색인 및 기본 색인에 대한 변경 내용이 `-custom-<number>`으로 끝나야 합니다.
+색인이 변경될 때마다 버전 번호가 증가합니다. 사용자 정의 인덱스 이름이 제품 자체의 인덱스 이름과 충돌하지 않도록 하려면 사용자 정의 인덱스와 기본 인덱스의 변경 사항은 `-custom-<number>`로 끝나야 합니다.
 
 ### 기본 색인 변경 사항 {#changes-to-out-of-the-box-indexes}
 
@@ -137,17 +137,13 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 | /oak:index/cqPageLucene | 예 | 예 | 아니오 |
 | /oak:index/cqPageLucene-2 | 예 | 아니오 | 예 |
 
-### 제한 사항 {#limitations}
+### 현재 제한 사항 {#current-limitations}
 
 인덱스 관리는 현재 `lucene` 유형의 색인에만 지원됩니다.
 
-### 인덱스 {#removing-an-index} 제거
-
-응용 프로그램의 이후 버전에서 인덱스를 제거하려는 경우 새 이름으로 빈 인덱스(색인화할 데이터가 없는 인덱스)를 정의할 수 있습니다. 예를 들어 `/oak:index/acme.product-custom-3` 이름을 지정할 수 있습니다. 인덱스 `/oak:index/acme.product-custom-2`을 대체합니다. 시스템에서 `/oak:index/acme.product-custom-2`을(를) 제거했으면 빈 인덱스 `/oak:index/acme.product-custom-3`도 제거할 수 있습니다.
-
 ### 인덱스 {#adding-an-index} 추가
 
-응용 프로그램의 새 버전 이상에서 사용할 &quot;/oak:index/acme.product-custom-1&quot;이라는 인덱스를 추가하려면 다음과 같이 인덱스를 구성해야 합니다.
+응용 프로그램의 새 버전 이상에서 사용할 `/oak:index/acme.product-custom-1`이라는 인덱스를 추가하려면 다음과 같이 인덱스를 구성해야 합니다.
 
 `acme.product-1-custom-1`
 
@@ -157,7 +153,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 ### 인덱스 {#changing-an-index} 변경
 
-기존 색인이 변경되면 변경된 색인 정의와 함께 새 인덱스를 추가해야 합니다. 예를 들어 기존 인덱스 &quot;/oak:index/acme.product-custom-1&quot;이 변경되었다고 가정합니다. 이전 인덱스는 `/oak:index/acme.product-custom-1` 아래에 저장되고 새 인덱스는 `/oak:index/acme.product-custom-2` 아래에 저장됩니다.
+기존 색인이 변경되면 변경된 색인 정의와 함께 새 인덱스를 추가해야 합니다. 예를 들어 기존 인덱스 `/oak:index/acme.product-custom-1`이(가) 변경되었다고 가정합니다. 이전 인덱스는 `/oak:index/acme.product-custom-1` 아래에 저장되고 새 인덱스는 `/oak:index/acme.product-custom-2` 아래에 저장됩니다.
 
 이전 버전의 응용 프로그램은 다음 구성을 사용합니다.
 
@@ -167,6 +163,43 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 `/oak:index/acme.product-custom-2`
 
-### 인덱스 가용성/내결함성 {#index-availability}
+>[!NOTE]
+>
+>Cloud Service의 인덱스 정의가 로컬 개발 인스턴스의 인덱스 정의와 완전히 일치하지 않을 수 있습니다. 개발 인스턴스에는 Tika 구성이 없지만 Cloud Service 인스턴스에는 Tika 구성이 있습니다. Tika 구성을 사용하여 인덱스를 사용자 지정하는 경우 Tika 구성을 유지하십시오.
 
-색인 손상이나 그러한 예상치 못한 이벤트의 경우 쿼리에 응답할 수 있는 대체 색인이 있으므로 매우 중요한 기능에 대한 중복 색인을 만드는 것이 좋습니다(위에 언급된 색인의 이름 지정 규칙에 주의함).
+### 변경 {#undoing-a-change} 취소
+
+경우에 따라 색인 정의의 변경 사항을 되돌려야 합니다. 그 이유는 실수로 변경되었거나 더 이상 변경이 필요하지 않기 때문일 수 있습니다. 예를 들어 인덱스 정의 `damAssetAssetLucene-8-custom-3`이(가) 실수로 만들어졌고 이미 배포되었습니다. 그 때문에 이전 색인 정의 `damAssetAssetLucene-8-custom-2`으로 되돌릴 수 있습니다. 이렇게 하려면 이전 인덱스 `damAssetAssetLucene-8-custom-2`의 정의가 포함된 `damAssetAssetLucene-8-custom-4`이라는 새 인덱스를 추가해야 합니다.
+
+### 인덱스 {#removing-an-index} 제거
+
+다음은 사용자 정의 색인에만 적용됩니다. 제품 색인은 AEM에서 사용되므로 제거할 수 없습니다.
+
+응용 프로그램의 이후 버전에서 인덱스를 제거하려는 경우 새 이름으로 빈 인덱스(사용되지 않고 데이터를 포함하지 않는 빈 인덱스)를 정의할 수 있습니다. 이 예제의 목적을 위해 이름을 `/oak:index/acme.product-custom-3`으로 지정할 수 있습니다. 인덱스 `/oak:index/acme.product-custom-2`을 대체합니다. 시스템에서 `/oak:index/acme.product-custom-2`을(를) 제거했으면 빈 인덱스 `/oak:index/acme.product-custom-3`도 제거할 수 있습니다. 이러한 빈 인덱스의 예는 다음과 같습니다.
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+    </acme.product-custom-3>
+```
+
+기본 색인을 사용자 지정할 필요가 없는 경우 기본 색인 정의를 복사해야 합니다. 예를 들어 이미 `damAssetAssetLucene-8-custom-3`을(를) 배포했지만 더 이상 사용자 정의가 필요하지 않고 기본 `damAssetAssetLucene-8` 인덱스로 다시 전환하려는 경우 `damAssetAssetLucene-8`의 인덱스 정의가 포함된 `damAssetAssetLucene-8-custom-4` 인덱스를 추가해야 합니다.
+
+### 인덱스 가용성 및 내결함성 {#index-availability-and-fault-tolerance}
+
+색인 손상이나 그러한 예상치 못한 이벤트의 경우 중요한 기능에 대한 중복 인덱스를 만드는 것이 좋습니다(위에 언급된 색인에 대한 이름 지정 규칙 준수).
