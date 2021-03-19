@@ -1,10 +1,12 @@
 ---
 title: Dynamic Media 이미지 사전 설정 적용
 description: Dynamic Media에서 이미지 사전 설정을 적용하는 방법을 알아봅니다.
+feature: 이미지 사전 설정,뷰어,표현물
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '311'
 ht-degree: 5%
 
 ---
