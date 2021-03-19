@@ -1,11 +1,13 @@
 ---
 title: 다국어 사이트의 컨텐츠 번역
 description: 다국어 사이트의 콘텐츠를 번역하는 방법에 대한 개요를 살펴보십시오.
+feature: 언어 복사
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 0%
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
