@@ -1,10 +1,12 @@
 ---
 title: Dynamic Media 뉴스레터
 description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스레터입니다. 이 플러그인은 Dynamic Media 및 Dynamic Media Classic을 빠르게 사용할 수 있도록 설계되어 있으므로 즉시 가치를 실현할 수 있습니다. 유용한 지식 구축 리소스를 원스톱 스토어 뉴스레터에서 확인할 수 있습니다. 예를 들어 방법 비디오 및 솔루션 개요가 있습니다. 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 주요 기능 중 일부를 살펴볼 수 있습니다. '
+feature: 자산 관리
+topic: '"관리자,비즈니스 전문가"'
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
