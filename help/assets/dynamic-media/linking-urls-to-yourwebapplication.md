@@ -1,10 +1,11 @@
 ---
 title: URL을 웹 애플리케이션에 연결
-description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법입니다.
+description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법을 알아봅니다.
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1268'
 ht-degree: 1%
 
 ---
