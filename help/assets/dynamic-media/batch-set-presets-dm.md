@@ -2,10 +2,12 @@
 title: 일괄처리 집합 사전 설정
 description: Dynamic Media에서 일괄처리 집합 사전 설정을 사용하여 이미지 세트 및 스핀 세트 생성을 자동화하는 방법을 알아봅니다.
 contentOwner: Rick Brough
+feature: 이미지 사전 설정,뷰어 사전 설정
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3433'
 ht-degree: 1%
 
 ---
