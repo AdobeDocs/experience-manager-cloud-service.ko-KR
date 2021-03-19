@@ -2,9 +2,9 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 translation-type: tm+mt
-source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
+source-git-commit: 2e40a5a1cfe3919d678abeef2726fbc303c2e6b2
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1042'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ Target 구성을 편집하려면 다음 단계를 수행합니다.
 
 ## Adobe 시작 {#integrate-target-launch}을 사용하여 AEM 사이트에서 Adobe Target 통합
 
-AEM은 Experience Platform Launch과 즉시 통합할 수 있는 기능을 제공합니다. Experience Platform Launch에 Adobe Target 확장을 추가하면 AEM 웹 페이지에서 Adobe Target의 기능을 사용할 수 있습니다.Target 라이브러리는 론치를 사용해서만 렌더링됩니다.
+AEM은 Experience Platform Launch과 즉시 통합할 수 있는 기능을 제공합니다. Experience Platform Launch에 Adobe Target 확장을 추가하면 AEM 웹 페이지에서 Adobe Target의 기능을 사용할 수 있습니다. Target 라이브러리는 론치를 사용해야만 렌더링됩니다.
 
 >[!NOTE]
 >
@@ -92,11 +92,11 @@ AEM은 Experience Platform Launch과 즉시 통합할 수 있는 기능을 제�
 
 ### 시작 속성 {#create-property} 만들기
 
-속성은 확장명, 규칙, 데이터 요소로 채워지는 컨테이너입니다.
+속성은 확장, 규칙, 데이터 요소로 채워진 컨테이너입니다.
 
 1. **새 속성** 단추를 선택합니다.
 2. 속성의 이름을 입력합니다.
-3. 도메인은 론치 라이브러리를 로드할 IP/호스트를 입력합니다.
+3. 도메인으로 론치 라이브러리를 로드할 IP/호스트를 입력합니다.
 4. **저장** 단추를 선택합니다.
    ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
@@ -124,7 +124,7 @@ AEM은 Experience Platform Launch과 즉시 통합할 수 있는 기능을 제�
 
 ### 페이지 규칙 만들기 {#page-rule}
 
-**규칙**&#x200B;에서는 타깃팅을 수행하기 위해 사이트에서 실행될 일련의 작업을 정의하고 순서를 지정합니다.
+**규칙**&#x200B;에서는 타깃팅을 수행하기 위해 사이트에서 실행되는 일련의 작업을 정의하고 순서를 지정합니다.
 
 1. 스크린샷에 예시된 액션 세트를 추가합니다.
    ![작업 ](assets/rules1.png "동작")
@@ -139,8 +139,8 @@ AEM은 Experience Platform Launch과 즉시 통합할 수 있는 기능을 제�
 
 | **변경** | **클래식 UI 구성** | **터치 UI 구성** | **결과** |
 |---|---|---|---|
-| Target 구성의 위치입니다. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | 이전 여러 구성이 /etc/cloudservices/testandtarget 아래에 있지만 이제 단일 구성이 임차인 아래에 있게 됩니다. |
+| Target 구성의 위치입니다. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | 이전 여러 구성이 /etc/cloudservices/testandtarget 아래에 있지만 이제 단일 구성이 임차인 아래에 있습니다. |
 
 >[!NOTE]
 >
->기존 구성은 기존 고객을 위해 계속 지원됩니다(신규 고객을 편집하거나 생성하는 옵션이 없음). 기존 구성은 VSTS를 사용하여 고객이 업로드한 컨텐츠 패키지의 일부가 됩니다.
+>기존 구성은 기존 고객을 위해 계속 지원됩니다(신규 고객을 편집하거나 생성하는 옵션이 없음). 기존 구성은 VSTS를 사용하는 고객이 업로드한 컨텐츠 패키지의 일부가 됩니다.
