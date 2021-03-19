@@ -1,10 +1,12 @@
 ---
 title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
 description: 웹 페이지에 Dynamic Media 비디오 또는 이미지 에셋을 포함하는 방법을 알아봅니다.
+feature: 자산 관리
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
