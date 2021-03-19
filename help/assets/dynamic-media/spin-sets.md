@@ -1,10 +1,12 @@
 ---
 title: 스핀 세트
 description: Dynamic Media에서 스핀 세트를 사용하여 작업하는 방법을 알아봅니다.
+feature: 스핀 세트
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
