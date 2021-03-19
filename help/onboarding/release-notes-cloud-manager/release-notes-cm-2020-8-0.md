@@ -1,11 +1,12 @@
 ---
 title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.8.0
 description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.8.0
+feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 1%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
