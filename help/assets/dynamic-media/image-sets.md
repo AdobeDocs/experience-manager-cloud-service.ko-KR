@@ -1,10 +1,12 @@
 ---
 title: 이미지 세트
 description: Dynamic Media에서 이미지 세트로 작업하는 방법을 알아봅니다.
+feature: 이미지 세트
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2051'
 ht-degree: 0%
 
 ---
@@ -125,7 +127,7 @@ ht-degree: 0%
 **이미지 세트를 만들려면**
 
 1. Adobe Experience Manager에서 Experience Manager 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
-1. **[!UICONTROL 탐색 > 자산]**&#x200B;을 누릅니다. 이미지 세트를 만들 위치로 이동한 다음 **[!UICONTROL 만들기 > 이미지 세트]**&#x200B;를 눌러 이미지 세트 편집기 페이지를 엽니다.
+1. **[!UICONTROL 탐색 > 자산]**&#x200B;을 탭합니다. 이미지 세트를 만들 위치로 이동한 다음 **[!UICONTROL 만들기 > 이미지 세트]**&#x200B;를 눌러 이미지 세트 편집기 페이지를 엽니다.
 
    에셋이 포함된 폴더 내에서 세트를 만들 수도 있습니다.
 
