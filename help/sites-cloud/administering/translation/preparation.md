@@ -1,10 +1,12 @@
 ---
 title: 번역 컨텐츠 준비
 description: 번역 콘텐츠를 준비하는 방법을 알아봅니다.
+feature: 언어 복사
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
