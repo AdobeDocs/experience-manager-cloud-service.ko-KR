@@ -2,9 +2,9 @@
 title: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 description: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 translation-type: tm+mt
-source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1741'
 ht-degree: 5%
 
 ---
@@ -664,7 +664,7 @@ query {
 
 ### 샘플 쿼리 - `_path`이(가) 특정 접두사 {#sample-wknd-all-adventures-cycling-path-filter}로 시작하는 모든 모험
 
-`_path`이(가) 특정 접두사(`/content/dam/wknd/en/adventures/cycling`)로 시작하는 모든 `adventures`.
+`_path`이 특정 접두어(`/content/dam/wknd/en/adventures/cycling`)로 시작되는 모든 `adventures`.
 
 **샘플 쿼리**
 
