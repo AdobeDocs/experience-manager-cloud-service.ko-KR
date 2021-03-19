@@ -1,10 +1,12 @@
 ---
 title: 롤아웃 충돌
 description: 다중 사이트 관리자 롤아웃 충돌을 관리하고 해결하는 방법을 알아봅니다.
+feature: 다중 사이트 관리자
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '927'
 ht-degree: 2%
 
 ---
