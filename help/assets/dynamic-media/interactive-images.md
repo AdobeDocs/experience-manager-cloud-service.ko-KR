@@ -1,10 +1,12 @@
 ---
 title: 대화형 이미지
 description: Dynamic Media에서 대화형 이미지를 사용하여 작업하는 방법을 알아봅니다.
+feature: 대화형 이미지
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4245'
+source-wordcount: '4249'
 ht-degree: 0%
 
 ---
