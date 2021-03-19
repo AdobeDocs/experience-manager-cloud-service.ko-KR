@@ -3,11 +3,14 @@ sub-product: AEM as a Cloud Service 개요
 user-guide-title: AEM as a Cloud Service 개요
 breadcrumb-title: 개요 안내서
 user-guide-description: Experience Manager as a Cloud Service 소개, 용어 등 개요를 알려면 여기에서 시작하십시오.
+feature-set: Experience Manager
+feature: 릴리스 정보
+role: 리더, 건축가, 개발자, 데이터 아키텍트, 데이터 엔지니어, 관리자, 비즈니스 관리자
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 100%
+source-wordcount: '72'
+ht-degree: 86%
 
 ---
 
