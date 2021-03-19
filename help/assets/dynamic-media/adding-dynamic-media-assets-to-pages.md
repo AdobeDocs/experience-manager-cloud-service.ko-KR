@@ -1,11 +1,13 @@
 ---
 title: 페이지에 Dynamic Media 자산 추가
-description: Dynamic Media 구성 요소를 Cloud Service으로 Adobe Experience Manager의 페이지에 추가하는 방법입니다.
+description: Dynamic Media 구성 요소를 Cloud Service으로 Adobe Experience Manager의 페이지에 추가하는 방법을 알아봅니다.
 contentOwner: Rick Brough
+feature: 자산 관리
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3087'
 ht-degree: 21%
 
 ---
@@ -327,7 +329,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 구성 요소에서 **[!UICONTROL 구성]**&#x200B;을 탭하여 다음 설정을 편집할 수 있습니다.
 
-* **[!UICONTROL 뷰어 사전]** 설정 - 뷰어 사전 설정 드롭다운 목록에서 기존 뷰어를 선택합니다. 가상 현실 안경을 사용하는 최종 사용자를 위해 Video360VR을 사용합니다. 기본 비디오 재생 컨트롤과 소셜 미디어 기능이 포함되어 있습니다. 기본 비디오 재생 컨트롤이 포함된 Video360_social을 사용합니다. 비디오 렌더링은 스테레오 모드에서 수행됩니다. 수동 관점제어 기능은 꺼져 있지만 자이로스코프 제어 기능은 켜져 있습니다. 소셜 미디어 기능이 없습니다.
+* **[!UICONTROL 뷰어 사전]** 설정 - 뷰어 사전 설정 드롭다운 목록에서 기존 뷰어를 선택합니다. 가상 현실 안경을 사용하는 최종 사용자를 위해 Video360VR을 사용합니다. 기본 비디오 재생 컨트롤과 소셜 미디어 기능이 포함되어 있습니다. 기본 비디오 재생 컨트롤이 포함된 Video360_social을 사용합니다. 비디오 렌더링은 스테레오 모드에서 수행됩니다. 수동 관점제어 기능은 꺼져 있지만 자이로스코프 제어 기능이 켜져 있습니다. 소셜 미디어 기능이 없습니다.
 
 찾고 있는 뷰어 사전 설정이 표시되지 않는 경우 게시되었는지 확인하십시오. 뷰어 사전 설정을 사용하기 전에 게시합니다. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오. 
 
