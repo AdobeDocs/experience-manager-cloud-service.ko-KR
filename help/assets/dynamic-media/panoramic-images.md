@@ -1,11 +1,13 @@
 ---
 title: 파노라마 이미지
 description: Dynamic Media에서 파노라마 이미지를 사용하여 작업하는 방법을 알아봅니다.
+feature: 파노라마 이미지
+topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 2%
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
