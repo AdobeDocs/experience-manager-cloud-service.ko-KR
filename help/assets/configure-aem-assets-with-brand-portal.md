@@ -2,10 +2,12 @@
 title: 브랜드 포털에서 AEM Assets을  [!DNL Cloud Service] 으로 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
+feature: Brand Portal
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: '2414'
 ht-degree: 21%
 
 ---
