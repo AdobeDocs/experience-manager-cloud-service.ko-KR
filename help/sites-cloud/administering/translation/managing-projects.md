@@ -1,10 +1,12 @@
 ---
 title: 번역 프로젝트 관리
 description: AEM에서 기계 및 인간 번역 프로젝트를 모두 제작 및 관리하는 방법을 알아봅니다.
+feature: 언어 복사
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3828'
 ht-degree: 1%
 
 ---
@@ -115,7 +117,7 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 
 번역 프로젝트에 페이지를 추가하면 페이지가 새 번역 작업에 포함됩니다. 기존 작업](#adding-pages-assets-to-a-translation-job)에 페이지를 추가할 수도 있습니다.[
 
-새 프로젝트를 만들 때와 마찬가지로 페이지를 추가할 때 기존 언어 사본을 덮어쓰지 않기 위해 필요한 경우 페이지 복사본이 론치에 추가됩니다. ([기존 언어 복사본에 대한 번역 프로젝트 만들기](#performing-initial-translations-and-updating-existing-translations)를 참조하십시오.)
+새 프로젝트를 만들 때와 마찬가지로 페이지를 추가할 때 기존 언어 사본을 덮어쓰지 않기 위해 필요할 때 페이지 복사본이 론치에 추가됩니다. ([기존 언어 복사본에 대한 번역 프로젝트 만들기](#performing-initial-translations-and-updating-existing-translations)를 참조하십시오.)
 
 1. 사이트 콘솔을 사용하여 번역 프로젝트에 추가할 페이지를 선택합니다.
 
