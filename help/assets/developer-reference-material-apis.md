@@ -3,7 +3,7 @@ title: ' [!DNL Assets]에 대한 개발자 참조'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
+source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 3%
@@ -145,7 +145,7 @@ HTTP POST 요청을 원하는 폴더에 제출합니다. 이 폴더에 에셋이
 | `versionComment` | 문자열 | 선택 사항입니다 | 새 버전이 만들어지면 버전과 연결된 댓글이 표시됩니다. |
 | `replace` | 부울 | 선택 사항입니다 | `True` 및 지정된 이름의 자산이 있는 경우 [!DNL Experience Manager]은 자산을 삭제한 다음 다시 만듭니다. |
 
->!![NOTE]
+>[!NOTE]
 자산이 존재하고 `createVersion` 또는 `replace`이 지정되지 않은 경우 [!DNL Experience Manager]는 자산의 현재 버전을 새 바이너리로 업데이트합니다.
 
 시작 프로세스와 마찬가지로 전체 요청 데이터에는 둘 이상의 파일에 대한 정보가 포함될 수 있습니다.
