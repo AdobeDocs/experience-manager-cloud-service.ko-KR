@@ -2,10 +2,10 @@
 title: 우수 사례 분석기 사용
 description: 우수 사례 분석기 사용
 translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+source-git-commit: 3d1aa714bacc74f77672ce2d7265da5239a6c6ff
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 46%
+source-wordcount: '2512'
+ht-degree: 43%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 46%
 >id="aemcloud_bpa_using"
 >title="우수 사례 분석기 사용"
 >abstract="모범 사례 분석기(이전 Cloud Ready Analyzer)를 사용하는 방법과 생성된 보고서를 검토합니다. 모범 사례 분석기 보고서를 통해 일반적인 업그레이드 준비 상태에 대한 수준 높은 이해를 얻을 수 있습니다."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 우수 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
@@ -79,7 +79,7 @@ abstract="모범 사례 분석기는 소프트웨어 배포 포털에서 zip 파
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. 아래 그림과 같이 **CSV**&#x200B;을 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드하는 옵션이 있습니다.
+1. 아래 그림과 같이 **CSV로 내보내기**&#x200B;를 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드하는 옵션이 있습니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -92,6 +92,25 @@ abstract="모범 사례 분석기는 소프트웨어 배포 포털에서 zip 파
 보고서를 다시 생성하는 동안 아래 이미지에 표시된 대로 완료된 백분율로 진행 상태를 표시합니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+
+#### 우수 사례 분석기 보고서에서 필터 사용 {#bpa-filters}
+
+[ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)와 관련된 결과를 필터링하려면 아래 단계를 따르십시오.
+
+1. 페이지의 왼쪽에 있는 왼쪽 레일 아이콘을 클릭합니다. 그러면 **ACS 공유자 필터**&#x200B;가 표시됩니다. **ACS 공유물 필터**&#x200B;를 클릭하여 아래 이미지에 표시된 대화형 확인란을 표시합니다.
+
+   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+
+   >[!NOTE]
+왼쪽 레일 아이콘은 BPA가 ACS 공유지의 사용을 감지하는 경우에만 나타납니다.
+
+1. ACS 공유물과 관련된 모든 결과를 필터링하려면 상자를 선택 취소합니다. 아래 이미지에 표시된 대로 보고서에 **필터링된 검색 수**&#x200B;가 표시됩니다. 필터를 쉼표 구분 값(CSV) 형식으로 내보낼 때도 보고서에 적용됩니다.
+
+   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+
+   >[!NOTE]
+ACS 공유지의 발견은 무시되어서는 안 된다. AEM과의 Cloud Service 호환성을 확인하려면 [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)를 참조하십시오.
 
 
 ### Adobe Experience Manager 6.2 및 6.1 {#aem-specific-versions}
@@ -192,7 +211,7 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 
 * `max-age` (숫자, 선택 사항):캐시 신선도 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 신선도 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 새 캐시가 24시간 동안 요청을 제공하는 데 사용되므로 캐시를 다시 생성해야 합니다. `max-age=0`을(를) 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 신선도 수명을 사용하여 캐시를 강제로 지우고 보고서를 다시 생성합니다.
 * `respond-async` (부울, 선택 사항):응답이 비동기적으로 제공되도록 지정합니다. 캐시가 오래된 경우 `respond-async=true`을 사용하면 캐시가 새로 고쳐질 때까지 기다리지 않고 보고서가 생성될 때까지 서버가 `202 Accepted`의 응답을 반환합니다. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. 기본값은 `false`입니다.이 매개 변수 또는 해당 헤더가 없으면 서버가 동기적으로 응답합니다. 이 경우 상당한 시간이 필요하고 HTTP 클라이언트에 대한 최대 응답 시간을 조정해야 합니다.
-* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되거나, 곧 만료될 경우 요청에 응답하여 서버가 캐시를 새로 고칠 수 있도록 지정합니다. `may-refresh-cache=true`이(가) 지정되지 않은 경우 서버는 패턴 탐지기 를 호출하고 캐시를 새로 고칠 백그라운드 작업을 시작할 수 있습니다. `may-refresh-cache=false`이면 서버가 새로 고침 작업을 시작하지 않습니다. 이 경우 캐시가 비어 있거나 오래된 경우 보고서가 비어 있게 됩니다. 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
+* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나, 오래되거나, 곧 만료될 경우 요청에 응답하여 서버가 캐시를 새로 고칠 수 있도록 지정합니다. `may-refresh-cache=true`이(가) 지정되지 않은 경우 서버는 패턴 탐지기 를 호출하고 캐시를 새로 고칠 백그라운드 작업을 시작할 수 있습니다. `may-refresh-cache=false`이면 서버가 새로 고침 작업을 시작하지 않고 캐시가 비어 있거나 오래된 경우 이 경우 보고서가 비어 있게 됩니다. 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
 * `return-minimal` (부울, 선택 사항):서버의 응답에 JSON 형식의 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. `return-minimal=true`이면 응답 본문은 상태 개체로 제한됩니다. `return-minimal=false`이(가) 지정되지 않으면 완전한 응답이 제공됩니다.
 * `log-findings` (부울, 선택 사항):서버가 처음 빌드하거나 새로 고칠 때 캐시 내용을 기록하도록 지정합니다. 캐시에서 찾은 각 항목은 JSON 문자열로 기록됩니다. 이 로깅은 `log-findings=true` 및 요청이 새 캐시를 생성하는 경우에만 발생합니다.
 
