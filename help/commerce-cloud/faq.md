@@ -2,9 +2,9 @@
 title: AEM - Commerce Integration Framework FAQ
 description: AEM - Commerce Integration Framework FAQ
 translation-type: tm+mt
-source-git-commit: 903a78d98082b937128073d5edce23dc70b01a1d
+source-git-commit: ad831b2cc3657666678662eeff0eaf371ce4da49
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ AEM Cloud Service과 함께 사용되는 CIF Add-On을 사용하면 상거래 �
 
 ## 7. CIF를 지원하는 AEM의 카탈로그 크기는 어느 정도입니까?
 
-제품 데이터 및 카탈로그 페이지가 동적으로 만들어지고 캐시되면 수정 크기 제한이 없습니다. 그러나 카탈로그 크기는 고려해야 할 하나의 측면입니다. 캐시 비율, 동시 데이터 요청 및 페이지 생성은 모두 확장성 및 성능에 영향을 줄 수 있습니다.
+고려해야 할 몇 가지 추가 사항에 따라 다릅니다. 카탈로그 데이터 및 페이지의 캐시 비율은 어떻게 됩니까? 피크 시간 동안 얼마나 많은 동시 요청이 예상됩니까? 상거래 솔루션의 API는 얼마나 확장 가능합니까?
 
 ## 8. PIM은 이 프레임워크에 어떻게 구현됩니까?
 
