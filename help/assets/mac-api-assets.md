@@ -3,9 +3,9 @@ title: 자산 HTTP API
 description: ' [!DNL Experience Manager Assets]의 HTTP API를 사용하여 디지털 에셋을 만들고, 읽고, 업데이트하고, 삭제하고, 관리할 수 있습니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
+source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1489'
 ht-degree: 1%
 
 ---
@@ -267,7 +267,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 * [!UICONTROL 해제 시간] 이후에는 [!DNL Assets] 웹 인터페이스와 HTTP API를 통해 에셋 및 해당 변환을 사용할 수 없습니다. [!UICONTROL On Time]이(가) 미래 또는 [!UICONTROL Off Time]이(가) 과거이면 API는 404 오류 메시지를 반환합니다.
 
-* `/adobe`을(를) URL 또는 JCR 경로로 사용하지 마십시오. 이 트리 아래에 서비스를 등록하지 않거나 JCR에서 콘텐트를 만들지 마십시오.
+* API를 사용하여 업데이트할 때 폴더 또는 자산의 일부 속성이 다른 접두어로 매핑됩니다. `jcr:title`, `jcr:description` 및 `jcr:language`의 `jcr` 접두어가 `dc` 접두어로 바뀝니다. 따라서 반환된 JSON에서 `dc:title` 및 `dc:description`은 각각 `jcr:title` 및 `jcr:description`의 값을 포함합니다.
 
 >[!MORELIKETHIS]
 >
