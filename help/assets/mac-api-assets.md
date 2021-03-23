@@ -3,9 +3,9 @@ title: 자산 HTTP API
 description: ' [!DNL Experience Manager Assets]의 HTTP API를 사용하여 디지털 에셋을 만들고, 읽고, 업데이트하고, 삭제하고, 관리할 수 있습니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1fa095c7c89be89ed02ebdf14dcc0a4b9f542b1
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1474'
 ht-degree: 1%
 
 ---
@@ -24,11 +24,9 @@ API에 액세스하려면:
 
 API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형에 대한 응답 코드입니다. JSON 응답은 선택 사항이며 PDF 파일 등의 경우 사용할 수 없습니다. 추가 분석 또는 작업을 위해 응답 코드를 사용합니다.
 
-[!UICONTROL 해제 시간] 이후에는 [!DNL Assets] 웹 인터페이스와 HTTP API를 통해 에셋 및 해당 변환을 사용할 수 없습니다. [!UICONTROL On Time]이(가) 미래 또는 [!UICONTROL Off Time]이(가) 과거이면 API는 404 오류 메시지를 반환합니다.
-
 >[!NOTE]
 >
->일반적으로(예: 표현물) 자산 또는 이진 파일을 업로드하거나 업데이트하는 것과 관련된 모든 API 호출은 AEM에서 [!DNL Cloud Service] 배포로 사용되지 않습니다. 바이너리를 업로드하려면 대신 [직접 이진 업로드 API](developer-reference-material-apis.md#asset-upload-technical)를 사용하십시오.
+>일반적으로(예: 표현물) 자산 또는 이진 파일을 업로드 또는 업데이트하는 것과 관련된 모든 API 호출은 [!DNL Experience Manager]에 대해 [!DNL Cloud Service] 배포로 사용되지 않습니다. 바이너리를 업로드하려면 대신 [직접 이진 업로드 API](developer-reference-material-apis.md#asset-upload-technical)를 사용하십시오.
 
 ## 콘텐츠 조각 {#content-fragments}
 
@@ -42,7 +40,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ### 폴더 {#folders}
 
-폴더는 기존 파일 시스템의 디렉토리와 같습니다. 다른 폴더 또는 어설션의 컨테이너입니다. 폴더에는 다음 구성 요소가 있습니다.
+폴더는 일반적인 파일 시스템에서와 마찬가지로 디렉토리입니다. 폴더에는 자산, 폴더 또는 폴더 및 자산만 포함할 수 있습니다. 폴더에는 다음 구성 요소가 있습니다.
 
 **개체**:폴더 엔티티는 폴더 및 자산일 수 있는 하위 요소입니다.
 
@@ -61,12 +59,13 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 * `parent`:상위 폴더에 연결합니다.
 * `thumbnail`:(선택 사항) 폴더 축소판 이미지에 연결합니다.
 
-### 자산 {#assets}
+### 에셋 {#assets}
 
 [!DNL Experience Manager]에서 자산은 다음 요소를 포함합니다.
 
 * 자산의 속성 및 메타데이터입니다.
-* 원본 변환(원래 업로드된 에셋), 축소판 및 다양한 기타 표현물과 같은 여러 표현물. 추가 변환은 서로 다른 크기의 이미지, 다른 비디오 인코딩 또는 PDF 또는 Adobe InDesign 파일에서 추출된 페이지일 수 있습니다.
+* 원래 자산의 이진 파일을 업로드했습니다.
+* 구성된 다중 변환. 이러한 이미지는 서로 다른 크기의 이미지, 서로 다른 인코딩의 비디오 또는 PDF 또는 [!DNL Adobe InDesign] 파일에서 추출된 페이지일 수 있습니다.
 * 선택적 주석.
 
 컨텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager 에셋 HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)의 컨텐츠 조각 지원을 참조하십시오.[
@@ -95,7 +94,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 >[!NOTE]
 >
->쉽게 읽을 수 있도록 다음 예제에서는 전체 cURL 표기법을 생략합니다. 사실상 표기법은 `cURL`의 스크립트 래퍼인 [Resty](https://github.com/micha/resty)과 상호 연관됩니다.
+>쉽게 읽을 수 있도록 다음 예제에서는 전체 cURL 표기법을 생략합니다. 표기법은 cURL의 스크립트 래퍼인 [Resty](https://github.com/micha/resty)과 관련되어 있습니다.
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -122,9 +121,14 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ## 폴더를 만듭니다 {#create-a-folder}
 
-새 `sling`을(를) 만듭니다.지정된 경로에서 `OrderedFolder`. 노드 이름 대신 `*`이 제공되면 서블릿은 매개 변수 이름을 노드 이름으로 사용합니다. 요청 데이터는 새 폴더의 사이렌 표시 또는 `application/www-form-urlencoded` 또는 `multipart`/ `form`- `data`(으)로 인코딩된 이름-값 쌍 집합으로 수락되며 HTML 양식에서 직접 폴더를 만드는 데 유용합니다. 또한 폴더의 속성은 URL 쿼리 매개 변수로 지정할 수 있습니다.
+`sling`을(를) 만듭니다.지정된 경로에서 `OrderedFolder`. 노드 이름 대신 `*`이 제공되면 서블릿은 매개 변수 이름을 노드 이름으로 사용합니다. 요청은 다음 중 하나를 수락합니다.
 
-제공된 경로의 상위 노드가 없는 경우 API 호출이 `500` 응답 코드와 함께 실패합니다. 폴더가 이미 있는 경우 호출에서 응답 코드 `409`을 반환합니다.
+* 새 폴더의 사이렌 표시
+* `application/www-form-urlencoded` 또는 `multipart`/ `form`- `data`로 인코딩된 이름-값 쌍 집합. HTML 양식에서 직접 폴더를 만드는 데 유용합니다.
+
+또한 폴더의 속성은 URL 쿼리 매개 변수로 지정할 수 있습니다.
+
+제공된 경로의 상위 노드가 없는 경우 API 호출이 `500` 응답 코드와 함께 실패합니다. 폴더가 있는 경우 호출에서 응답 코드 `409`을 반환합니다.
 
 **매개 변수**: `name` 은 폴더 이름입니다.
 
@@ -136,7 +140,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 **응답 코드**:응답 코드는 다음과 같습니다.
 
 * 201 - 생성됨 - 만들기 성공 시
-* 409 - CONFLICT - 폴더가 이미 있는 경우
+* 409 - CONFLICT - 폴더가 있는 경우
 * 412 - 사전 조건 실패 - 루트 컬렉션을 찾을 수 없거나 액세스할 수 없는 경우
 * 500 - 내부 서버 오류 - 다른 문제가 있는 경우
 
@@ -163,7 +167,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ## 자산 변환 만들기 {#create-an-asset-rendition}
 
-자산에 대한 새 자산 변환을 만듭니다. 요청 매개 변수 이름을 제공하지 않으면 파일 이름이 변환 이름으로 사용됩니다.
+자산에 대한 변환을 만듭니다. 요청 매개 변수 이름을 제공하지 않으면 파일 이름이 변환 이름으로 사용됩니다.
 
 **매개 변수**:매개 변수 `name` 는 변환의 이름과 파일 참조 `file` 로 사용됩니다.
 
@@ -181,7 +185,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 ## 자산 변환 {#update-an-asset-rendition} 업데이트
 
-업데이트는 각각 에셋 변환을 새 이진 데이터로 대체합니다.
+업데이트는 각각 자산 변환을 새로운 이진 데이터로 바꿉니다.
 
 **요청**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
@@ -193,8 +197,6 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 * 500 - 내부 서버 오류 - 다른 문제가 있는 경우
 
 ## 자산 {#create-an-asset-comment}에 주석 추가
-
-새 자산 주석을 만듭니다.
 
 **매개 변수**:매개 변수 `message` 는 주석의 메시지 본문과 JSON 형식 `annotationData` 의 주석 데이터에 대한 것입니다.
 
@@ -234,7 +236,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 * `X-Destination` - 리소스를 복사할 API 솔루션 범위 내의 새 대상 URI입니다.
 * `X-Depth` -  `infinity` 또는 `0`. `0`을(를) 사용하면 리소스와 해당 속성만 복사되며 하위 항목은 복사하지 않습니다.
-* `X-Overwrite` - 기존 리소스 `T` 를 강제로 삭제하거나 기존 리소스 `F` 를 덮어쓰지 않도록 하려면 다음 중 하나를 사용합니다.
+* `X-Overwrite` - 기존 리소스 `T` 를 강제로 삭제하거나 기존 리소스 `F` 를 덮어쓰지 않도록 하려면 이 중 하나를 사용합니다.
 
 **요청**:  `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
@@ -260,6 +262,12 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 * 200 - 확인 - 폴더가 성공적으로 삭제된 경우
 * 412 - 사전 조건 실패 - 루트 컬렉션을 찾을 수 없거나 액세스할 수 없는 경우
 * 500 - 내부 서버 오류 - 다른 문제가 있는 경우
+
+## 팁, 우수 사례 및 제한 사항 {#tips-limitations}
+
+* [!UICONTROL 해제 시간] 이후에는 [!DNL Assets] 웹 인터페이스와 HTTP API를 통해 에셋 및 해당 변환을 사용할 수 없습니다. [!UICONTROL On Time]이(가) 미래 또는 [!UICONTROL Off Time]이(가) 과거이면 API는 404 오류 메시지를 반환합니다.
+
+* `/adobe`을(를) URL 또는 JCR 경로로 사용하지 마십시오. 이 트리 아래에 서비스를 등록하지 않거나 JCR에서 콘텐트를 만들지 마십시오.
 
 >[!MORELIKETHIS]
 >
