@@ -3,9 +3,9 @@ title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁
 topic: '"관리자,비즈니스 전문가"'
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 ### 자산 동기화 상태 속성 {#asset-synchronization-status-properties}
 
-다음 에셋 속성을 CRXDE Lite에서 검토하여 AEM에서 Dynamic Media으로 에셋을 성공적으로 동기화할 수 있습니다.
+다음 자산 속성을 CRXDE Lite에서 검토하여 Adobe Experience Manager에서 Dynamic Media으로 자산의 성공적인 동기화를 확인할 수 있습니다.
 
 | **속성** | **예** | **설명** |
 |---|---|---|
@@ -36,13 +36,13 @@ ht-degree: 2%
 
 ### 동기화 로깅 {#synchronization-logging}
 
-동기화 오류 및 문제가 `error.log`(AEM 서버 디렉토리 `/crx-quickstart/logs/`)에 기록됩니다. 대부분의 문제의 근본 원인을 결정하기에 충분한 로깅을 사용할 수 있지만 추가 정보를 수집하기 위해 Sling 콘솔([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
+동기화 오류 및 문제가 `error.log`(Experience Manager 서버 디렉토리 `/crx-quickstart/logs/`)에 기록됩니다. 대부분의 문제의 근본 원인을 결정하기에 충분한 로깅을 사용할 수 있지만 추가 정보를 수집하기 위해 Sling 콘솔([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
 
 ### 버전 제어 {#version-control}
 
 기존 Dynamic Media 자산(이름과 위치)을 바꿀 때 자산을 유지하거나 버전을 교체/만들 수 있습니다.
 
-* 두 가지 모두를 유지하면 게시된 자산 URL에 대한 고유한 이름을 가진 새 자산이 만들어집니다. 예를 들어 `image.jpg`은 원래 자산이고 `image1.jpg`은 새로 업로드된 자산입니다.
+* 두 가지 모두를 유지하면 게시된 자산 URL에 대한 고유한 이름이 있는 자산이 만들어집니다. 예를 들어 `image.jpg`은 원래 자산이고 `image1.jpg`은 새로 업로드된 자산입니다.
 
 * Dynamic Media에서는 버전 만들기가 지원되지 않습니다. 새 버전은 전달에 있는 기존 자산을 대체합니다.
 
@@ -63,11 +63,11 @@ ht-degree: 2%
     <ol>
      <li><p>CRX/DE로 이동:</p>
       <ul>
-       <li>JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>의 사전 설정이 정의되었는지 확인합니다. 이 위치는 AEM 6.x에서 6.4로 업그레이드하고 마이그레이션 해제를 선택한 경우에 적용됩니다. 또는 위치는 <code>/conf/global/settings/dam/dm/presets/viewer</code>입니다.</li>
+       <li>JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>의 사전 설정이 정의되었는지 확인합니다. 이 위치는 Experience Manager 6.x에서 6.4로 업그레이드하고 마이그레이션 해제를 선택한 경우에 적용됩니다. 그렇지 않은 경우 위치는 <code>/conf/global/settings/dam/dm/presets/viewer</code>입니다.</li>
        <li>JCR의 자산이 메타데이터 아래에 <code>PublishComplete</code>로 표시된 <code>dam:scene7FileStatus</code><strong> </strong>에 있는지 확인합니다.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>페이지 새로 고침/다른 페이지로 이동한 후 돌아오십시오(사이드 레일 JSP를 다시 컴파일해야 함).</p> <p>효과가 없는 경우:</p>
+   <td><p>페이지 새로 고침/다른 페이지로 이동한 후 돌아오십시오(사이드 레일 JSP는 재컴파일되어야 함).</p> <p>효과가 없는 경우:</p>
     <ul>
      <li>자산을 게시합니다.</li>
      <li>자산을 다시 업로드하고 게시합니다.</li>
@@ -125,7 +125,7 @@ ht-degree: 2%
      <li>폴더에 비디오 프로필을 할당합니다.</li>
      <li>둘 이상의 인코딩 사전 설정을 포함하도록 비디오 프로필을 편집합니다.</li>
      <li>비디오가 처리를 완료할 때까지 기다립니다.</li>
-     <li>비디오를 다시 로드하려면 Dynamic Media 비디오 인코딩 작업 과정이 실행되고 있지 않은지 확인하십시오.<br/> </li>
+     <li>비디오를 다시 로드하기 전에 Dynamic Media 비디오 인코딩 작업 과정이 실행되고 있지 않은지 확인하십시오.<br/> </li>
      <li>비디오를 다시 업로드합니다.</li>
     </ol> </td>
   </tr>
@@ -133,7 +133,7 @@ ht-degree: 2%
    <td>비디오가 인코딩되지 않음</td>
    <td>
     <ul>
-     <li>Dynamic Media 클라우드 서비스가 구성되어 있는지 확인합니다.</li>
+     <li>Dynamic Media Cloud Service이 구성되어 있는지 확인합니다.</li>
      <li>비디오 프로필이 업로드 폴더와 연관되어 있는지 확인합니다.</li>
     </ul> </td>
    <td>
@@ -214,7 +214,7 @@ ht-degree: 2%
        <li>사전 설정 폴더 삭제(<code>/conf</code> 아래).
        <li>DM 설치 비동기 작업을 트리거합니다.</li>
       </ol> </li>
-     <li>AEM 받은 편지함에서 성공적으로 동기화되었다는 알림을 받을 때까지 기다립니다.
+     <li>Experience Manager 받은 편지함에서 성공적으로 동기화된 알림을 받을 때까지 기다립니다.
      </li>
     </ol> </td>
   </tr>
