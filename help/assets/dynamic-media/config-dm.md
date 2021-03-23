@@ -3,9 +3,9 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service으로 Dynamic Media을 구성하는 방법을 알아봅니다.
 topic: 관리자
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: eb00eb6edaebc4dd0a16a99e1223bb806fa7abd9
 workflow-type: tm+mt
-source-wordcount: '3883'
+source-wordcount: '4017'
 ht-degree: 1%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 1%
 
 새로운 아키텍처에서는 Experience Manager이 기본 소스 에셋을 담당하고 에셋 처리 및 게시를 위해 Dynamic Media과 동기화합니다.
 
-1. 기본 소스 에셋이 AEM에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 에셋 처리 및 변환 생성을 처리합니다.
-1. 변환이 생성되면 AEM은 안전하게 원격 Dynamic Media 변환에 액세스하고 미리 볼 수 있습니다(이진 파일은 AEM 인스턴스로 다시 전송되지 않음).
+1. 기본 소스 에셋이 Cloud Service으로 Adobe Experience Manager에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 에셋 처리 및 변환 생성을 처리합니다.
+1. 변환이 생성되면 Cloud Service의 Experience Manager이 원격 Dynamic Media 변환에 안전하게 액세스하고 미리 볼 수 있습니다(Cloud Service 인스턴스로 Experience Manager으로 다시 보내지지 않음).
 1. 컨텐츠를 게시 및 승인할 준비가 되면, Dynamic Media 서비스가 컨텐츠를 전달 서버로 푸시하고 CDN의 컨텐츠를 캐시하도록 트리거합니다.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
@@ -43,11 +43,11 @@ ht-degree: 1%
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-If you are upgrading AEM Dynamic Media from 6.3 to 6.4 or 6.5 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
+If you are upgrading Experience Manager as a Cloud Service Dynamic Media from 6.3 to 6.4 or 6.5 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
 >[!NOTE]
 >
->If you run your AEM instance in compatibility mode--that is, you have the compatibility packaged installed--you do not need to run these commands.
+>If you run your Experience Manager as a Cloud Service instance in compatibility mode--that is, you have the compatibility packaged installed--you do not need to run these commands.
 
 For all upgrades, either with or without the compatibility package, you can copy the default, out-of-the-box viewer presets that originally came with Dynamic Media by running the following Linux curl command:
 
@@ -63,7 +63,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
+1. Experience Manager에서 Cloud Service 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
 1. 콘솔 왼쪽에서 도구 아이콘을 누른 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;을 누릅니다.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**(**[!UICONTROL global]**&#x200B;의 왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 마십시오.) 그런 다음 **[!UICONTROL 만들기]**&#x200B;를 누릅니다.
 1. **[!UICONTROL Dynamic Media 구성 만들기]** 페이지에서 제목, Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. 이 정보는 Adobe이 제공 이메일에서 제공합니다. 이 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
@@ -93,8 +93,8 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | 회사 | Dynamic Media 계정의 이름입니다. 서로 다른 하위 브랜드, 사업부 또는 스테이징/프로덕션 환경에 대해 여러 Dynamic Media 계정이 있을 수 있습니다. |
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
-   | 자산 게시 | 다음 옵션 중 하나를 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**.자산이 업로드되면 시스템은 자산을 인제스트하고 URL/포함을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입은 없습니다.<br>**[!UICONTROL 활성화 시]**:URL/포함 링크를 제공하려면 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**:에셋은 보안 미리 보기만을 위해 자동으로 게시됩니다. 또한 공개 도메인에 제공하기 위해 DMS7에 게시하지 않고도 AEM에 명시적으로 게시할 수 있습니다. 나중에 이 옵션을 사용하면 AEM에 에셋을 게시하고 Dynamic Media에 에셋을 게시할 수 있으며 서로 배타적으로 사용됩니다. 즉, 스마트 자르기 또는 동적 표현물과 같은 기능을 사용할 수 있도록 자산을 DMS7에 게시할 수 있습니다. 또는 미리 보기 전용 AEM에서만 에셋을 게시할 수 있습니다.동일한 에셋은 공용 도메인에 전달되기 위해 DMS7에 게시되지 않습니다. |
-   | 보안 미리 보기 서버 | 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM은 원격 Dynamic Media 변환에 안전하게 액세스하고 미리 볼 수 있습니다(이진 파일은 AEM 인스턴스로 다시 전송되지 않음).<br>회사 서버 또는 특수 서버를 사용하기 위해 특별한 일정이 없으면 이 설정을 지정한 대로 유지하는 것이 좋습니다. |
+   | 자산 게시 | 다음 옵션 중 하나를 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**.자산이 업로드되면 시스템은 자산을 인제스트하고 URL/포함을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입은 없습니다.<br>**[!UICONTROL 활성화 시]**:URL/포함 링크를 제공하려면 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**:에셋은 보안 미리 보기만을 위해 자동으로 게시됩니다. 또한 공개 도메인에 제공하기 위해 DMS7에 게시하지 않고도 Cloud Service에 명시적으로 게시할 수 있습니다. 나중에 이 옵션은 자산을 Experience Manager에 Cloud Service으로 게시하고 상호 배타적인 Dynamic Media에 자산을 게시하려고 합니다. 즉, 스마트 자르기 또는 동적 표현물과 같은 기능을 사용할 수 있도록 자산을 DMS7에 게시할 수 있습니다. 또는 미리 보기를 위한 Cloud Service으로 Experience Manager에서만 자산을 게시할 수 있습니다.동일한 에셋은 공용 도메인에 전달되기 위해 DMS7에 게시되지 않습니다. |
+   | 보안 미리 보기 서버 | 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 Cloud Service으로 Experience Manager을 통해 원격 Dynamic Media 변환에 안전하게 액세스하고 미리 볼 수 있습니다(Cloud Service 인스턴스로 Experience Manager으로 다시 바이너리가 전송되지 않음).<br>회사 서버 또는 특수 서버를 사용하기 위해 특별한 일정이 없으면 이 설정을 지정한 대로 유지하는 것이 좋습니다. |
    | 모든 컨텐츠 동기화 | 기본적으로 선택됩니다. Dynamic Media에 대한 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드:<br>**[!UICONTROL Dynamic Media 동기화 모드]**<br>**[!UICONTROL 기본적으로 활성화&#x200B;]**에서 선택할 수 있습니다.특별히 제외하도록 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]**:Dynamic Media에 동기화할 선택한 폴더를 명시적으로 표시할 때까지 해당 구성은 어떤 폴더에도 적용되지 않습니다.<br>Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 속성을  **[!UICONTROL 탭합니다]**. **[!UICONTROL 세부 사항]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 3가지 옵션 중에서 선택합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 탭합니다. *기억:이 3가지 옵션은 [모든 내용&#x200B;**동기화]를 선택한 경우 사용할 수**없습니다.* Dynamic Media [의 폴더 수준에서 선택적 게시로 작업을 참조하십시오.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 상속됨&#x200B;]**:폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 쇼의 세부 상태입니다.<br>**[!UICONTROL 하위 폴더에 대해 활성화]**:Dynamic Media에 동기화할 모든 항목을 이 하위 트리에 포함합니다. 폴더 특정 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 비활성화됨&#x200B;]**:이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다. |
 
    >[!NOTE]
@@ -111,19 +111,18 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    >[!IMPORTANT]
    >
-   >새 Dynamic Media 구성이 설정을 완료하면 AEM 받은 편지함 내에서 상태 알림을 받게 됩니다.
+   >새 Dynamic Media 구성이 설정을 완료하면 Experience Manager 내에 Cloud Service의 받은 편지함으로 상태 알림을 받게 됩니다.
    >
    >이 받은 편지함 알림은 구성이 성공했는지 여부를 알려줍니다.
    > 자세한 내용은 [새 Dynamic Media 구성 문제 해결](#troubleshoot-dm-config) 및 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)을 참조하십시오.
 
-1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 AEM 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다해야 합니다. 이 작업을 설정하려면 다음을 수행합니다.
+1. Dynamic Media 콘텐츠를 게시하기 전에 안전하게 미리 보려면 Cloud Service에서 기본적으로 토큰 기반 인증을 사용합니다. 그러나 사용자에게 안전하게 컨텐츠를 미리 볼 수 있는 액세스 권한을 제공하기 위해 더 많은 허용 목록에 추가하다 IP를 &quot;&quot;할 수도 있습니다. 이 작업을 설정하려면 다음을 수행합니다.<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
-   * 페이지 오른쪽 상단 근처의 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다.
-
-   * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**&#x200B;을 선택합니다.
+   * [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
+   * 페이지 오른쪽 위 모서리 근처의 내비게이션 막대에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 제작 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 탭합니다.
+   * 이미지 서버 게시 페이지의 **[!UICONTROL 게시 컨텍스트]** 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**&#x200B;을 선택합니다.
    * 클라이언트 주소 필터의 경우 **[!UICONTROL 추가]**&#x200B;를 누릅니다.
-   * 주소를 활성화(켜기)하려면 확인란을 선택한 다음 AEM 작성자 인스턴스의 IP 주소(발송자 IP가 아님)를 입력합니다.
+   * 주소를 활성화(켜기)하려면 확인란을 선택한 다음 Experience Manager 작성자 인스턴스(발송자 IP 아님)의 IP 주소를 입력합니다.
    * **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 이제 기본 구성으로 완료되었습니다.Dynamic Media을 사용할 준비가 되었습니다.
@@ -132,7 +131,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ### 새 Dynamic Media 구성 문제 해결 {#troubleshoot-dm-config}
 
-새 Dynamic Media 구성이 설정을 완료하면 AEM 받은 편지함 내에서 상태 알림을 받게 됩니다. 이 알림은 구성이 성공했는지 여부를 받은 편지함의 다음 이미지와 같이 알려줍니다.
+새 Dynamic Media 구성이 설정을 완료하면 Experience Manager 내에 Cloud Service의 받은 편지함으로 상태 알림을 받게 됩니다. 이 알림은 구성이 성공했는지 여부를 받은 편지함의 다음 이미지와 같이 알려줍니다.
 
 ![Experience Manager 받은 편지함 성공](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
 
@@ -142,7 +141,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 **새 Dynamic Media 구성 문제를 해결하려면**
 
-1. AEM 페이지의 오른쪽 위 모서리 근처에 있는 벨 아이콘을 탭한 다음 **[!UICONTROL 모두 보기]**&#x200B;를 탭합니다.
+1. Cloud Service 페이지로 Experience Manager의 오른쪽 위 모서리 근처에 있는 벨 아이콘을 탭한 다음 **[!UICONTROL 모두 보기]**&#x200B;를 탭합니다.
 1. 받은 편지함 페이지에서 성공 알림을 탭하여 구성의 상태 및 로그에 대한 개요를 읽습니다.
 
    구성에 실패하면 다음 스크린샷과 유사한 실패 알림을 탭합니다.
@@ -168,7 +167,7 @@ Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 
 
 변경된 암호는 **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 오른쪽 위 모서리에 있는 **[!UICONTROL 저장]**&#x200B;을 탭하면 저장됩니다.
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
+1. Experience Manager에서 Cloud Service 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
 1. 콘솔 왼쪽에서 도구 아이콘을 누른 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성을 누릅니다.]**
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**&#x200B;을 탭합니다. **[!UICONTROL global]**&#x200B;의 왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 마십시오. 그런 다음 **[!UICONTROL 편집을 누릅니다.]**
 1. **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 **[!UICONTROL 암호]** 필드 바로 아래에 있는 **[!UICONTROL 암호 변경을 탭합니다.]**
@@ -231,9 +230,9 @@ Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media �
 
 [응용 프로그램 일반 설정] 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
 
-**[!UICONTROL 서버]**  - Dynamic Media은 계정을 프로비저닝할 때 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램의 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. AEM 지원에 의해 명시적으로 지시하지 않는 한 서버 이름을 변경하지 마십시오.
+**[!UICONTROL 서버]**  - Dynamic Media은 계정을 프로비저닝할 때 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램의 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. Cloud Service 지원으로 Experience Manager에서 명시적으로 지시하지 않는 한 서버 이름을 변경하지 마십시오.
 **[!UICONTROL 이미지]**  덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 파일을 허용하지 않습니다. 각 항목의 URL ID(파일 이름은 확장자를 뺀 값)는 고유해야 합니다. 다음 옵션은 대체 자산을 업로드하는 방법을 지정합니다.원본을 바꾸거나 복제할 것인지 여부입니다. 중복 에셋은 &quot;-1&quot;으로 이름이 바뀝니다. 예를 들어 chair.tif는 chair-1.tif로 이름이 변경되었습니다. 이러한 옵션은 원본과 다른 폴더에 업로드된 자산이나 원본과 다른 파일 확장명을 가진 자산에 영향을 줍니다.
-**[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장명]**  - 이 옵션은 바꿀 수 있는 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 원본과 동일한 파일 확장명을 가져야 합니다. 이러한 요구 사항이 충족되지 않으면 복사본이 만들어집니다. AEM와의 일관성을 유지하려면 항상 현재 폴더에 **[!UICONTROL 덮어쓰기를 선택합니다(동일한 기본 이미지 이름/확장명]**).
+**[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장명]**  - 이 옵션은 바꿀 수 있는 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 원본과 동일한 파일 확장명을 가져야 합니다. 이러한 요구 사항이 충족되지 않으면 복사본이 만들어집니다. Cloud Service과 일관성을 유지하려면 항상 현재 폴더에서 **[!UICONTROL 덮어쓰기를 선택합니다(동일한 기본 이미지 이름/확장명]**).
 **[!UICONTROL 모든 폴더에 덮어쓰기, 동일한 기본 자산 이름/확장명]**  - 대체 이미지의 파일 확장명이 원본 이미지와 같아야 합니다. 예를 들어 chair.jpg는 chair.tif가 아닌 chair.jpg를 대체해야 합니다. 그러나 교체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.파일을 원래 위치에서 더 이상 찾을 수 없습니다.
 **[!UICONTROL 확장명에 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기]**  - 이 옵션은 가장 포괄적인 교체 규칙입니다. 교체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자로 파일을 업로드하고, 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 **[!UICONTROL 기본 색상 프로필]**  - 자세한  [내용은 ](#configuring-color-management) 색상관리 구성을 참조하십시오. 자산의 세부 정보 보기에서 **[!UICONTROL 뷰어]**&#x200B;를 선택하면 기본적으로 시스템은 **[!UICONTROL 표현물]** 및 15개의 뷰어 사전 설정을 선택할 때 15개의 표현물을 표시합니다. 이 한도를 늘릴 수 있습니다. [표시](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 이미지 사전 설정 수 증가 또는 감소](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)를 참조하십시오.
@@ -282,7 +281,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 **지원되는 형식에 대해 MIME 형식을 편집하려면**
 
-1. AEM에서 AEM 로고를 클릭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 일반 > CRXDE Lite]**&#x200B;을 클릭합니다.
+1. Experience Manager에서 Cloud Service 로고를 클릭하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 일반 > CRXDE Lite]**&#x200B;을 클릭합니다.
 1. 왼쪽 레일에서 다음 항목으로 이동합니다.
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -300,7 +299,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
    * 3-4단계를 반복하여 MIME 형식을 더 편집합니다.
    * CRXDE Lite 페이지의 메뉴 모음에서 **[!UICONTROL 모두 저장을 클릭합니다.]**
 
-1. 페이지의 왼쪽 위 모서리에서 **[!UICONTROL CRXDE Lite]**&#x200B;을 눌러 AEM으로 돌아갑니다.
+1. 페이지의 왼쪽 위 모서리에서 **[!UICONTROL CRXDE Lite]**&#x200B;을 탭하여 Experience Manager으로 돌아갑니다.
 
 #### 지원되지 않는 형식 {#adding-mime-types-for-unsupported-formats}에 대한 MIME 형식을 추가하는 중
 
@@ -308,7 +307,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대해 사용자 �
 
 **지원되지 않는 형식에 대해 MIME 형식을 추가하려면**
 
-1. AEM에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 누릅니다.]**
+1. Cloud Service에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 누릅니다.]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -334,8 +333,8 @@ Experience Manager 자산에서 지원되지 않는 형식에 대해 사용자 �
 
    이때 열린 Adobe Experience Manager 웹 콘솔 구성 페이지가 있는 브라우저 탭을 닫을 수 있습니다.
 
-1. 열린 AEM 콘솔이 있는 브라우저 탭으로 돌아갑니다.
-1. AEM에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;을 탭합니다.
+1. 열린 Experience Manager이 있는 브라우저 탭으로 돌아가 Cloud Service 콘솔으로 돌아갑니다.
+1. Experience Manager에서 Cloud Service으로 **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;을 탭합니다.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -448,11 +447,11 @@ Scene7 업로드 연결을 업데이트하려면:
 
 ### (Optional) Filtering assets for replication {#optional-filtering-assets-for-replication}
 
-In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your AEM author environment to the AEM publish node. This workflow is necessary because the AEM publish servers also deliver the assets.
+In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your Experience Manager as a Cloud Service author environment to the Experience Manager as a Cloud Service publish node. This workflow is necessary because the Experience Manager as a Cloud Service publish servers also deliver the assets.
 
-However, in Dynamic Media deployments, because assets are delivered by way of the cloud service, there is no need to replicate those same assets to AEM publish nodes. Such a "hybrid publishing" workflow avoids extra storage costs and longer processing times to replicate assets. Other content, such as Site pages, continue to be served from the AEM publish nodes.
+However, in Dynamic Media deployments, because assets are delivered by way of the cloud service, there is no need to replicate those same assets to Experience Manager as a Cloud Service publish nodes. Such a "hybrid publishing" workflow avoids extra storage costs and longer processing times to replicate assets. Other content, such as Site pages, continue to be served from the Experience Manager as a Cloud Service publish nodes.
 
-The filters provide a way for you to *exclude* assets from being replicated to the AEM publish node.
+The filters provide a way for you to *exclude* assets from being replicated to the Experience Manager as a Cloud Service publish node.
 
 #### Using default asset filters for replication {#using-default-asset-filters-for-replication}
 
@@ -493,7 +492,7 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
 
 #### Customizing asset filters for replication {#customizing-asset-filters-for-replication}
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap the **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In Experience Manager as a Cloud Service, tap the Experience Manager as a Cloud Service logo to access the global navigation console and tap the **[!UICONTROL Tools > General > CRXDE Lite]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` to review the filters.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
