@@ -7,9 +7,9 @@ feature-set: Experience Manager
 feature: 개발자 도구
 role: 개발자, 건축가
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: d4aacc8d5f0b355cae9f79c10de496f26b3e395a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '880'
 ht-degree: 47%
 
 ---
@@ -121,6 +121,7 @@ ht-degree: 47%
       + [모델 라우팅](developing/hybrid/routing.md)
       + [RemotePage 구성 요소](developing/hybrid/remote-page.md)
       + [AEM 내에서 외부 SPA 편집](developing/hybrid/editing-external-spa.md)
+      + [SPA의 합성 구성 요소](developing/hybrid/composite-components.md)
       + [서버 측 렌더링](developing/hybrid/ssr.md)
       + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [통합 실행](developing/hybrid/launch-integration.md)
