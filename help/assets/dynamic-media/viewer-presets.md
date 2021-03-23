@@ -2,9 +2,9 @@
 title: Dynamic Media 뷰어 사전 설정 적용
 description: Dynamic Media에서 뷰어 사전 설정을 적용하는 방법을 알아봅니다.
 feature: 뷰어 사전 설정,뷰어
-topic: 비즈니스 전문가
+topic: 관리자,비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 뷰어 사전 설정은 사용자가 컴퓨터 화면 및 모바일 장치에서 리치 미디어 자산을 보는 방법을 결정하는 설정 모음입니다. 관리자가 만든 뷰어 사전 설정을 자산에 적용할 수 있습니다.
 
-관리자로서 뷰어 사전 설정을 관리, 만들기, 정렬 및 삭제해야 하는 경우 [뷰어 사전 설정 관리](managing-viewer-presets.md)를 참조하십시오.
+관리자이고 뷰어 사전 설정을 관리, 만들기, 정렬 및 삭제해야 하는 경우 [뷰어 사전 설정 관리](managing-viewer-presets.md)를 참조하십시오.
 
 [Publishing Viewer 사전 설정](managing-viewer-presets.md#publishing-viewer-presets)도 참조하십시오.
 
