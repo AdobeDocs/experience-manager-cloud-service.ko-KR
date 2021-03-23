@@ -2,9 +2,9 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service] 가이드'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] 자체 도움말 리소스 및 설명서 링크'
 translation-type: tm+mt
-source-git-commit: 58d99c33105b132570d0ca133ffa164373f53ad7
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 35%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 35%
 
 # [!DNL Assets] 를  [!DNL Cloud Service] 안내서로  {#aem-assets-guide}
 
-[!DNL Experience Manager Assets]에 대한 자체 도움말 리소스를 [!DNL Cloud Service](으)로 사용하십시오.
+[!DNL Experience Manager Assets]에 [!DNL Cloud Service](으)로 다음 자가 도움말 리소스를 사용할 수 있습니다.
 
 ## [!DNL Assets] 아티클 {#key-articles} 키
 
