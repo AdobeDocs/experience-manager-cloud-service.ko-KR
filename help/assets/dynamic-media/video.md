@@ -4,7 +4,7 @@ description: Dynamic Media에서 비디오를 사용하여 작업하는 방법�
 feature: 비디오 프로필
 topic: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9512'
 ht-degree: 1%
@@ -404,7 +404,7 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920x1080 | 1 | 3 |
+| 소스 | 1920x1080 | 1 | 1 |
 | 인코딩됨 | 960 x 540 | 2 | 2 |
 | 인코딩됨 | 640 x 360 | 3 | 1 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
@@ -551,9 +551,9 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 YouTube 채널을 만들려면:
 
 1. [https://www.youtube.com](https://www.youtube.com/)로 이동하여 Google 계정 자격 증명을 사용하여 로그인합니다.
-1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진을 클릭합니다(단색 원 내에 문자로 나타날 수도 있음). 그런 다음 **[!UICONTROL YouTube 설정]** (원형 톱니바퀴 아이콘)을 클릭합니다.
+1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진(단색 원 내에 문자로 나타날 수도 있음)을 클릭한 다음 **[!UICONTROL YouTube 설정]**(둥근 톱니바퀴 아이콘)을 누릅니다.
 1. 개요 페이지의 추가 기능 머리글 아래에서 **[!UICONTROL 내 채널을 모두 보거나 새 채널]**&#x200B;을 만듭니다.
-1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 클릭합니다.
+1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 탭합니다.
 1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시할 위치를 선택하는 회사 이름이나 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    Experience Manager에서 YouTube를 설정할 때 다시 입력해야 하므로 여기에 입력한 이름을 기억하십시오.
