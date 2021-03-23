@@ -3,9 +3,9 @@ title: ' [!DNL Assets]에 대한 개발자 참조'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1388'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->일부 API는 계속 존재하지만 적극적으로 지원되지 않습니다(×로 표시). 사용할 수 없습니다.
+>일부 API는 계속 존재하지만 적극적으로 지원되지 않습니다(×로 표시됨). 가능한 한 이러한 API를 사용하지 마십시오.
 
 | 지원 수준 | 설명 |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ ht-degree: 3%
 
 ## 자산 업로드 {#asset-upload-technical}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] 는 자산을 저장소에 업로드하는 새로운 방법을 제공합니다. 사용자는 HTTP API를 사용하여 자산을 클라우드 스토리지에 직접 업로드할 수 있습니다. 이진 파일을 업로드하는 단계는 다음과 같습니다.
+[!DNL Experience Manager]에서 [!DNL Cloud Service]로 HTTP API를 사용하여 자산을 클라우드 스토리지에 직접 업로드할 수 있습니다. 이진 파일을 업로드하는 단계는 다음과 같습니다.
 
 1. [HTTP 요청을 제출합니다](#initiate-upload). 새 바이너리를 업로드하려는 의도를 [!DNL Experience Manage]r 배포에 알려줍니다.
 1. [초기화 요청에서 제공하는 ](#upload-binary) 하나 이상의 URI에 바이너리의 컨텐츠를 POST합니다.
@@ -116,8 +116,8 @@ HTTP POST 요청을 원하는 폴더에 제출합니다. 이 폴더에 에셋이
 * `mimeType` (문자열):시작 요청에 제공된 해당 바이너리의 MIME 유형입니다. 이 값은 전체 요청에 포함되어야 합니다.
 * `uploadToken` (문자열):해당 바이너리에 대한 업로드 토큰입니다. 이 값은 전체 요청에 포함되어야 합니다.
 * `uploadURIs` (배열):값이 바이너리의 콘텐츠를 업로드해야 하는 전체 URI인 문자열 목록입니다(이진  [업로드](#upload-binary) 참조).
-* `minPartSize` (숫자):둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최소 길이(바이트)입니다.
-* `maxPartSize` (숫자):둘 이상의 URI가 있는 경우 uploadURI 중 하나에 제공할 수 있는 데이터의 최대 길이(바이트)입니다.
+* `minPartSize` (숫자):둘 이상의 URI가 있는 경우 모든 URL에 제공할 수 있는 데이터의 최소 길이(바이트) `uploadURIs`입니다.
+* `maxPartSize` (숫자):둘 이상의 URI가 있는 경우 모든 URI에 제공할 수 있는 데이터의 최대 길이(바이트) `uploadURIs`입니다.
 
 ### 이진 {#upload-binary} 업로드
 
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Experience Cloud [!DNL Cloud Service] 를 SDK로 사용합니다](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
