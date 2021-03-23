@@ -4,10 +4,10 @@ description: 필터 패널을 사용하여 [!DNL Adobe Experience Manager] 에�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: 0e5d49b8781ebe0c5785a14800bcaec223da809c
 workflow-type: tm+mt
-source-wordcount: '4741'
-ht-degree: 1%
+source-wordcount: '4755'
+ht-degree: 0%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 1%
 
 [!DNL Experience Manager Assets] 에서는 다음 사용 사례를 지원하며 이 문서에서는 이러한 사용 사례에 대한 사용, 개념, 구성, 제한 사항 및 문제 해결에 대해 설명합니다.
 
-| 자산 검색 | 구성 및 관리 | 검색 결과를 사용한 작업 |
+| 자산 검색 | 검색 기능 구성 및 관리 | 검색 결과를 사용한 작업 |
 |---|---|---|
 | [기본 검색](#searchbasics) | [검색 색인](#searchindex) | [결과 정렬](#sort) |
-| [검색 UI 이해](#searchui) |  | [자산의 속성 및 메타데이터 확인](#checkinfo) |
+| [검색 UI 이해](#searchui) | [텍스트 추출](#extracttextupload) | [자산의 속성 및 메타데이터 확인](#checkinfo) |
 | [검색 제안](#searchsuggestions) | [필수 메타데이터](#mandatorymetadata) | [다운로드](#download) |
 | [검색 결과 및 행동 이해](#searchbehavior) | [검색 패싯 수정](#searchfacets) | [일괄 메타데이터 업데이트](#metadataupdates) |
-| [검색 등급 및 향상](#searchrank) | [텍스트 추출](#extracttextupload) | [스마트 컬렉션](#collections) |
-| [고급 검색:검색 필터링 및 범위](#scope) | [사용자 정의 설명](#custompredicates) | [예상치 못한 결과 이해 및 문제 해결](#unexpectedresults) |
-| [다른 솔루션 및 앱에서 검색](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager 데스크탑 앱](#desktopapp)</li><li>[Adobe Stock 이미지](#adobestock)</li><li>[Dynamic Media 에셋](#dynamicmedia)</li></ul> |  |  |
+| [검색 등급 및 향상](#searchrank) | [사용자 정의 설명](#custompredicates) | [스마트 컬렉션](#collections) |
+| [고급 검색:검색 필터링 및 범위](#scope) |  | [예상치 못한 결과 이해 및 문제 해결](#unexpectedresults) |
+| [다른 솔루션 및 앱에서 검색](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager 데스크탑 앱](#desktop-app)</li><li>[Adobe Stock 이미지](#adobe-stock)</li><li>[Dynamic Media 에셋](#search-dynamic-media-assets)</li></ul> |  |  |
 | [자산 선택기](#assetselector) |  |  |
 | [제한 ](#tips) 사항 및  [팁](#limitations) |  |  |
 | [예시](#samples) |  |  |
@@ -139,7 +139,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 *Figure: Find similar images using the option in the card view*
 -->
 
-### Adobe Stock 이미지 {#adobestock}
+### Adobe Stock 이미지 {#adobe-stock}
 
 AEM 사용자 인터페이스 내에서 사용자는 [Adobe Stock 에셋](/help/assets/aem-assets-adobe-stock.md)을 검색하고 필요한 에셋에 라이선스를 부여할 수 있습니다. Omnisearch 막대에 `Location: Adobe Stock`을 추가합니다. 필터 패널을 사용하여 라이선스되거나 라이선스가 부여되지 않은 모든 에셋을 찾거나 Adobe Stock 파일 번호를 사용하여 특정 에셋을 검색할 수도 있습니다.
 
@@ -147,9 +147,9 @@ AEM 사용자 인터페이스 내에서 사용자는 [Adobe Stock 에셋](/help/
 
 **[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media > 세트]**&#x200B;를 선택하여 Dynamic Media 이미지를 필터링할 수 있습니다. 이미지 세트, Carousel, 혼합 미디어 세트 및 스핀 세트와 같은 에셋을 필터링하고 표시합니다.
 
-### 메타데이터 필드 {#gqlsearch}에서 특정 값을 사용하여 검색
+### 메타데이터 필드 {#gql-search}에서 특정 값을 사용하여 GQL 검색
 
-제목, 설명 및 작성자와 같은 특정 메타데이터 필드의 정확한 값을 기반으로 자산을 사용할 수 있습니다. GQL 전체 텍스트 검색 기능은 메타데이터 값이 검색 쿼리와 정확히 일치하는 자산만 가져옵니다. 속성 이름(예: 작성자, 제목 등)과 값은 대/소문자를 구분합니다.
+제목, 설명 및 작성자와 같은 메타데이터 필드의 정확한 값을 기반으로 자산을 검색할 수 있습니다. GQL 전체 텍스트 검색 기능은 메타데이터 값이 검색 쿼리와 정확히 일치하는 자산만 가져옵니다. 속성 이름(작성자, 제목 등)과 값은 대/소문자를 구분합니다.
 
 | 메타데이터 필드 | 패싯 값 및 사용 |
 |---|---|
@@ -175,7 +175,10 @@ AEM 사용자 인터페이스 내에서 사용자는 [Adobe Stock 에셋](/help/
 | 이미지 높이 | height:lower bound.주행 |
 | 개인 | 사람:John |
 
-속성 경로, 제한, 크기 및 orderby는 다른 속성과 함께 OR을 사용할 수 없습니다.
+`path`, `limit`, `size` 및 `orderby` 속성은 다른 속성과 함께 ORed일 수 없습니다.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 사용자 생성 속성의 키워드는 속성 편집기의 필드 레이블이며 공백을 제거합니다.
 
@@ -197,19 +200,19 @@ AEM(Adobe Experience Manager)은 DAM 저장소를 다른 다양한 AEM 솔루션
 
 이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 AEM Assets에 저장되어 있는 컨텐츠에 액세스할 수 있습니다. 크리에이티브 전문가는 Creative Cloud 앱에서 인앱 패널을 사용하여 에셋을 원활하게 검색하고 체크 아웃하고 체크 인할 수 있습니다.Photoshop, Illustrator 및 InDesign 또한 에셋 링크를 사용하면 시각적으로 비슷한 결과를 검색할 수 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 머신 러닝 알고리즘에 의해 구현되며 미적으로 유사한 이미지를 찾는 데 도움이 됩니다. Adobe 자산 링크를 사용하여 [자산 검색 및 찾아보기](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)를 참조하십시오.
 
-### AEM 데스크톱 앱 {#desktopapp}에서 에셋 검색
+### Experience Manager 데스크톱 앱 {#desktop-app}에서 에셋 검색
 
 크리에이티브 전문가는 데스크탑 앱을 사용하여 로컬 데스크탑(Win 또는 Mac)에서 검색 및 이용할 수 있는 AEM Assets을 손쉽게 만들 수 있습니다. 크리에이티브 전문가는 Mac Finder 또는 Windows 탐색기에서 원하는 에셋을 쉽게 표시할 수 있고, 데스크탑 애플리케이션에서 열었으며 로컬에서 변경된 내용은 저장소에서 만든 새로운 버전으로 AEM에 다시 저장됩니다. 응용 프로그램은 하나 이상의 키워드 * 및 ? 와일드카드 및 AND 연산자가 있습니다. 데스크톱 앱의 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오.
 
-### 브랜드 포털에서 자산 검색 {#brandportal}
+### 브랜드 포털에서 자산 검색 {#brand-portal}
 
 사업 부문의 사용자 및 마케터는 승인된 디지털 자산을 확장 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유하기 위해 브랜드 포털을 사용합니다. 브랜드 포털](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)에서 [자산 검색을 참조하십시오.
 
-### Adobe Stock 이미지 검색 {#adobestock-1}
+### Adobe Stock 이미지 검색 {#adobe-stock2}
 
 AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock 자산을 검색하고 필요한 자산에 라이선스를 부여할 수 있습니다. Omnisearch 필드에 `Location: Adobe Stock`을 추가합니다. 또한 **[!UICONTROL 필터]** 패널을 사용하여 라이선스되거나 라이선스가 부여되지 않은 모든 에셋을 찾거나 Adobe Stock 파일 번호를 사용하여 특정 에셋을 검색할 수도 있습니다. AEM](/help/assets/aem-assets-adobe-stock.md#usemanage)에서 [Adobe Stock 이미지 관리를 참조하십시오.
 
-### Dynamic Media 자산 검색 {#dynamicmedia}
+### Dynamic Media 자산 검색 {#search-dynamic-media-assets}
 
 **[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하여 Dynamic Media 이미지를 필터링할 수 있습니다. 이미지 세트, Carousel, 혼합 미디어 세트 및 스핀 세트와 같은 에셋을 필터링하고 표시합니다. 작성자는 웹 페이지를 작성하는 동안 컨텐츠 파인더 내에서 세트를 검색할 수 있습니다. 세트 필터는 팝업 메뉴에서 사용할 수 있습니다.
 
@@ -237,7 +240,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 | 리소스 접미어(B) | URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html)에 있는 리소스 접미어로 폴더 경로 | 선택한 특정 폴더(예: /content/dam/we-retail/en/activities 폴더)를 사용하여 자산 선택기를 실행하려면, URL은 다음 형식이어야 합니다.[https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미어로 전달합니다. |
 | mode | 단일, 다중 | [https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=multiplehttps://localhost:4502/aem/assetpicker.html?mode=single) | 여러 모드에서 자산 선택기를 사용하여 여러 자산을 동시에 선택할 수 있습니다. |
 | mimetype | 에셋의 mimetype(`/jcr:content/metadata/dc:format`)(와일드카드가 지원됨) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png)</li></ul> | MIME 유형에 따라 자산을 필터링하는 데 사용합니다. |
-| 문제가 발생합니다 | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [화강암 대화 상자]로 엽니다. 이 옵션은 [granite Path Field]를 통해 자산 선택기를 실행하고 pickerSrc URL로 구성하는 경우에만 적용됩니다. |
+| 사용할 수 없게 됩니다 | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [화강암 대화 상자]로 엽니다. 이 옵션은 [granite Path Field]를 통해 자산 선택기를 실행하고 pickerSrc URL로 구성하는 경우에만 적용됩니다. |
 | assettype(S) | 이미지, 문서, 멀티미디어, 아카이브 | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | 전달된 값을 기준으로 자산 유형을 필터링하려면 이 옵션을 사용합니다. |
 | 루트 | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | 자산 선택기의 루트 폴더를 지정하려면 이 옵션을 사용합니다. 이 경우 자산 선택기를 사용하여 루트 폴더 아래에서 하위 자산(직접/간접)만 선택할 수 있습니다. |
 
@@ -255,6 +258,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 * [!DNL Experience Manager] 검색된 결과에서 자산의 속성을 선택한 다음 검색을 취소한 후에도 검색어를 계속 표시할 수 있습니다.  <!-- (CQ-4273540) -->
 * 폴더 또는 파일 및 폴더를 검색할 때 검색 결과를 매개 변수에 따라 정렬할 수 없습니다.
 * Omnisearch 막대에 입력하지 않고 `Return`을 선택하면 [!DNL Experience Manager]은 폴더가 아닌 파일 전용 목록을 반환합니다. 키워드를 사용하지 않고 폴더를 특히 검색할 경우 [!DNL Experience Manager]은 결과를 반환하지 않습니다.
+* 폴더에서 전체 텍스트를 검색할 수 있습니다. 검색할 검색어를 지정합니다.
 
 시각적 검색 또는 유사성 검색에는 다음과 같은 제한이 있습니다.
 
@@ -437,7 +441,7 @@ You can search for digital assets based on one or more of the following properti
 
 여러 자산의 공통 메타데이터 필드를 일괄 업데이트할 수 있습니다. 검색 결과에서 하나 이상의 자산을 선택합니다. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭하고 필요에 따라 메타데이터를 업데이트합니다. 완료되면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 업데이트된 필드에 있는 이전 기존 메타데이터를 덮어씁니다.
 
-단일 폴더 또는 컬렉션에서 사용할 수 있는 에셋의 경우 검색 기능을 사용하지 않고 메타데이터를 대량[으로 업데이트하는 것이 더 쉽습니다. ](/help/assets/manage-metadata.md#manage-assets-metadata) 여러 폴더에서 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 검색을 통해 메타데이터를 일괄 업데이트하는 것이 더 빠릅니다.
+단일 폴더 또는 컬렉션에서 사용할 수 있는 에셋의 경우 검색 기능을 사용하지 않고 메타데이터를 대량](/help/assets/manage-metadata.md#manage-assets-metadata)으로 업데이트하는 것이 더 쉽습니다. [ 여러 폴더에서 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 검색을 통해 메타데이터를 일괄 업데이트하는 것이 더 빠릅니다.
 
 ### 스마트 컬렉션 {#collections-1}
 
@@ -458,7 +462,7 @@ You can search for digital assets based on one or more of the following properti
 |---|---|---|
 | 누락된 메타데이터가 있는 자산을 검색할 때 결과가 잘못되었습니다. | 필수 메타데이터가 없는 에셋을 검색할 때 [!DNL Experience Manager]에 유효한 메타데이터가 있는 일부 에셋이 표시될 수 있습니다. 결과는 인덱스 메타데이터 속성을 기반으로 합니다. | 메타데이터가 업데이트된 후 자산 메타데이터의 올바른 상태를 반영하려면 다시 색인화가 필요합니다. [필수 메타데이터](metadata-schemas.md#define-mandatory-metadata)를 참조하십시오. |
 | 검색 결과가 너무 많습니다. | 광범위한 검색 매개 변수. | [검색 범위 제한(](#scope))을 고려합니다. 스마트 태그를 사용하면 예상보다 검색 결과를 더 많이 얻을 수 있습니다. 스마트 태그](#withsmarttags)의 [검색 비헤이비어를 참조하십시오. |
-| 관련되지 않았거나 부분적으로 관련된 검색 결과. | 스마트 태깅을 통해 검색 동작이 변경됩니다. | 스마트 태그 지정[ 후 검색이 변경되는 방법을 이해합니다.](#withsmarttags) |
+| 관련되지 않았거나 부분적으로 관련된 검색 결과. | 스마트 태깅을 통해 검색 동작이 변경됩니다. | 스마트 태그 지정](#withsmarttags) 후 검색이 변경되는 방법을 이해합니다.[ |
 | 자산에 대한 자동 완성 제안이 없습니다. | 새로 업로드된 에셋은 아직 색인이 없습니다. Omniture 막대에서 검색 키워드를 입력하기 시작하면 메타데이터를 제안으로 즉시 사용할 수 없습니다. | [!DNL Assets] 백그라운드 작업을 실행하기 전에 시간 제한 기간이 만료될 때까지(기본적으로 1시간) 기다렸다가 새로 업로드되거나 업데이트된 모든 자산에 대한 메타데이터를 색인화한 다음 메타데이터를 제안 목록에 추가합니다. |
 | 검색 결과 없음. | <ul><li>쿼리와 일치하는 에셋이 없습니다. </li><li> 검색 쿼리 앞에 공백이 추가되었습니다. </li><li> 지원되지 않는 메타데이터 필드에 검색한 키워드가 포함되어 있습니다.</li><li> 자산의 비정기 동안 검색을 수행했습니다. </li></ul> | <ul><li>다른 키워드를 사용하여 검색합니다. 또는 스마트 태그 지정 또는 유사 검색을 사용하여 검색 결과를 향상시킬 수 있습니다. </li><li>[알려진 제한](#limitations).</li><li>모든 메타데이터 필드는 검색으로 간주되지 않습니다. [범위](#scope)를 참조하십시오.</li><li>나중에 검색하거나 필요한 자산에 대한 설정 및 해제 시간을 수정합니다.</li></ul> |
 | 검색 필터 또는 조건자를 사용할 수 없습니다. | <ul><li>검색 필터가 구성되지 않았습니다.</li><li>로그인에는 사용할 수 없습니다.</li><li>(거의 발생하지 않음) 사용 중인 배포에서 검색 옵션이 사용자 지정되지 않습니다.</li></ul> | <ul><li>검색 사용자 지정 설정이 사용 가능한지 확인하려면 관리자에게 문의하십시오.</li><li>계정에 사용자 지정을 사용할 수 있는 권한/권한이 있는지 확인하려면 관리자에게 문의하십시오.</li><li>관리자에게 문의하여 사용 중인 [!DNL Assets] 배포에 대한 사용 가능한 사용자 지정을 확인하십시오.</li></ul> |
