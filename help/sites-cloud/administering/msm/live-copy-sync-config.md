@@ -4,9 +4,9 @@ description: 사용 가능한 강력한 Live Copy 동기화 옵션과 프로젝�
 feature: 다중 사이트 관리자
 role: 관리자
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2340'
 ht-degree: 31%
 
 ---
@@ -43,7 +43,11 @@ Adobe Experience Manager은 즉시 사용 가능한 다양한 동기화 구성�
 
 ### 롤아웃 구성 {#rollout-configurations}
 
-다음 표는 AEM에 기본적으로 제공되는 롤아웃 구성을 보여줍니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항을 충족하지 않는 경우 [새 롤아웃 구성을 생성](#creating-a-rollout-configuration)할 수 있습니다.
+다음 표는 AEM에 기본적으로 제공되는 롤아웃 구성을 보여줍니다. 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다.
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | 이름 | 설명 | 트리거 | [동기화 작업](#synchronization-actions) |
 |---|---|---|---|
