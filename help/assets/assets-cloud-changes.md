@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] 에  [!DNL Cloud Service]의 주목할 만한 변경 사항'
 description: '[!DNL Adobe Experience Manager 6.5와 비교하여  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 에 대한 주목할 만한 변경 사항.'
 translation-type: tm+mt
-source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
+source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '757'
+ht-degree: 5%
 
 ---
 
@@ -31,14 +31,6 @@ ht-degree: 4%
 * 이전 버전의 기본 워크플로우 **[!UICONTROL DAM 자산 업데이트]**&#x200B;는 이제 사용할 수 없습니다. [!DNL Experience Manager] 대신 에셋 마이크로서비스는 대부분의 기본 에셋 처리(변환, 메타데이터 추출 및 색인화를 위한 텍스트 추출)를 포괄하는 확장 가능하고 쉽게 사용할 수 있는 서비스를 제공합니다.
    * [자산 마이크로서비스 구성 및 사용](/help/assets/asset-microservices-configure-and-use.md) 참조
    * 처리에서 사용자 지정된 워크플로우 단계를 수행하려면 [사후 처리 워크플로](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용할 수 있습니다.
-* 메타데이터 원본에 쓸 수 없습니다. [메타데이터 쓰기 저장( [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)에 있음)을 참조하십시오.
-* 패키지 관리자를 사용하여 업로드한 자산은 [!DNL Assets] 사용자 인터페이스에서 **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동 재처리가 필요합니다.
-* [!DNL Assets] 은 업로드된 자산의 MIME 형식을 자동으로 감지하지 않습니다. 확장자가 없거나 확장이 잘못된 디지털 자산은 원하는 대로 처리되지 않습니다. 예를 들어, 이러한 자산을 업로드할 때 아무런 반응이 없거나 잘못된 처리 프로필이 자산에 적용될 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)에서 [MIME 유형 감지를 참조하십시오.
-* [!DNL Experience Manager] 를  [!DNL Cloud Service] 사용하면 복합 자산에 대한 하위 자산이 생성되지 않습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 생성을 참조하십시오.
-* [!DNL Assets] 홈 페이지 환경을 사용할 수 없습니다. [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)을(를) 참조하십시오.
-* 중복된 자산 감지는 [이(가) [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)에서 작동하는 방식과 다른 방식으로 작동합니다.
-* 배치만(FPO) 변환은 이전 [!DNL Experience Manager] 버전과 다르게 생성됩니다.  [!DNL Experience Manager] 에 대한 [FPO 변환을  [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)로 참조하십시오.
-* ZIP 아카이브가 업로드되면 [!DNL Experience Manager]은(는) 보관 파일에 번들로 포함된 에셋을 추출하지 않습니다. [!DNL Cloud Service]  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)에서 [ZIP 추출을 참조하십시오.
 
 자산 마이크로서비스로 생성된 표준 변환은 동일한 이름 지정 규칙을 사용하여 자산 저장소 노드에서 역호환이 가능한 방식으로 저장됩니다.
 
@@ -50,9 +42,22 @@ Asset Microservices는 클라우드 관리자에서 관리되는 고객 프로�
 
 자산 통합 및 처리를 포함한 코드 및 프로세스에 대한 엔드 투 엔드 유효성 검사를 수행하려면 [파이프라인](/help/implementing/cloud-manager/configure-pipeline.md)을 사용하여 코드 변경 사항을 클라우드 개발 환경에 배포하고 자산 마이크로서비스 처리를 완전히 실행하여 테스트합니다.
 
-## 클래식 UI 제거 {#classic-ui}
 
-클래식 UI는 [!DNL Experience Manager]에서 [!DNL Cloud Service](으)로 더 이상 사용할 수 없습니다. 터치 활성화 UI만 사용할 수 있습니다.
+## [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}의 기능 패리티
+
+[!DNL Experience Manager] as a는 기존  [!DNL Cloud Service] 기능을 사용할 수 있는 많은 새로운 기능과 더 많은 성능을 제공합니다. 그러나 [!DNL Experience Manager] 6.5에서 [!DNL Experience Manager]으로 이동할 때 일부 기능이 다르게 작동하거나, 사용할 수 없거나, 부분적으로 사용할 수 있다는 것을 알 수 있습니다. [!DNL Cloud Service] 다음은 이러한 기능 목록입니다.
+
+| 기능 또는 사용 사례 | [!DNL Experience Manager]의 상태( [!DNL Cloud Service]) | 댓글 |
+|-----|-----|-----|
+| [중복된 자산 감지](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 다른 방식으로 작동합니다. | [이(가) [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)에서 어떻게 작동되었는지 참조하십시오. |
+| [배치만(FPO) 변환의 경우](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 다른 방식으로 작업 |  |
+| 메타데이터 원본에 쓰기 | 지원되지 않음. | [메타데이터 쓰기 저장( [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html))을 참조하십시오. |
+| 패키지 관리자를 사용하여 업로드된 자산 처리 | 수동으로 개입해야 합니다. | **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동으로 다시 처리합니다. |
+| MIME 유형 감지 | 지원되지 않음. | 확장 없이 또는 잘못된 확장자로 디지털 자산을 업로드하는 경우, 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)에서 [MIME 유형 감지를 참조하십시오. |
+| 복합 자산에 대한 하위 자산 생성 | 지원되지 않음. | 종속 사용 사례는 처리되지 않습니다. 예를 들어 여러 페이지로 된 PDF 파일의 주석에 영향을 줍니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 생성을 참조하십시오. |
+| 홈 페이지 | 지원되지 않음. | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) 참조 |
+| ZIP 보관에서 에셋 추출 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)에서 [ZIP 추출을 참조하십시오. |
+| 클래식 UI | 지원되지 않음. | 터치 활성화 UI만 사용할 수 있습니다. |
 
 >[!MORELIKETHIS]
 >
