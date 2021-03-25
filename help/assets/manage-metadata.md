@@ -4,7 +4,7 @@ description: '메타데이터 유형에 대해 알아보고, 메타데이터에 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '1854'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Enterprise Manager 자산을 사용하면 여러 자산의 메타데이터를 �
 
 >[!NOTE]
 >
->벌크 편집 방법은 폴더 또는 컬렉션에서 사용할 수 있는 자산에 대해 작동합니다. 폴더 간에 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 [검색 후 메타데이터를 일괄 업데이트하는 것이 가능합니다.](/help/assets/search-assets.md#metadataupdates)
+>벌크 편집 방법은 폴더 또는 컬렉션에서 사용할 수 있는 자산에 대해 작동합니다. 폴더 간에 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 [검색 후 메타데이터를 일괄 업데이트하는 것이 가능합니다.](/help/assets/search-assets.md#metadata-updates)
 
 1. 편집할 자산의 위치로 이동합니다.
 1. 공통 속성을 편집할 자산을 선택합니다.
