@@ -2,10 +2,10 @@
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 5d3a183efcd1355c1c5dc34519fbabee34e87578
+source-git-commit: 3a21441f11d59a8d2a706bda8e1676aa072650b3
 workflow-type: tm+mt
-source-wordcount: '1837'
-ht-degree: 2%
+source-wordcount: '1318'
+ht-degree: 3%
 
 ---
 
@@ -23,51 +23,62 @@ ht-degree: 2%
 
 ## 릴리스 날짜 {#release-date}
 
-Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜는 2021년 2월 25일입니다.
-다음 릴리스(2021.3.0)은 2021년 3월 25일에 제공됩니다.
+Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜는 2021년 3월 25일입니다.
+다음 릴리스(2021.4.0)은 2021년 4월 29일에 제공됩니다.
 
 ## [!DNL Adobe Experience Manager Sites] Cloud Service  {#sites}
 
-* **[RemotePage 구성 요소](/help/implementing/developing/hybrid/remote-page.md)**:AEM 내에서 외부 SPA을 보고 편집할 수 있는 지원이 추가되었습니다.
-
-* **[AEM에서 외부 SPA 편집](/help/implementing/developing/hybrid/editing-external-spa.md)**:독립형 단일 페이지 애플리케이션을 AEM 인스턴스에 업로드하고 편집 가능한 컨텐츠 섹션을 추가하고 작성을 활성화하는 기능을 추가했습니다.
-
-<!--
-### Progressive Web Apps (PWAs) {#pwa}
-
-* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
--->
+* [이제 간단한 구성을 통해 ](/help/sites-cloud/authoring/features/enable-pwa.md) 사이트의 점진적 웹 앱(PWA) 버전을 프로젝트 수준에서 사용할 수 있습니다.
+* 컨텐츠 조각 모델 확장 - 이제 여러 줄 텍스트 데이터 유형을 다중 필드 목록으로 정의할 수 있습니다.
+* 컨텐츠 조각 편집기 UX 개선 사항 - 중첩된 하위 조각이 이제 브레드크럼에 표시되고 게시, 저장 및 저장 및 종료 작업의 향상된 보기
 
 ## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Assets] {#assets}
 
-## [!DNL Assets] {#what-is-new-assets}의 새로운 기능
+### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
 
-* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 는 사전 구성된 인스턴스를 가질 수  [!DNL Brand Portal] 있습니다. [!DNL Cloud Manager] 사용자는 [!DNL Experience Manager Assets]의 [!DNL Brand Portal]을(를) [!DNL Cloud Service](으)로 활성화할 수 있습니다. [브랜드 포털 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en)를 참조하십시오.
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-* 이제 기업은 [!DNL Brand Portal]을(를) 사용하여 에셋을 소싱할 수 있습니다. 자산 소싱 기능은 [!DNL Brand Portal]을 활용하여 고객이 에이전시 사용자와 교류하여 새로운 마케팅 캠페인, 사진 및 프로젝트에 대한 소스 자산을 활용할 수 있도록 도와줍니다.  [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)에서 [자산 소싱을 참조하십시오.
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-* 이제 [!DNL Brand Portal] 사용량 보고서에 활성 사용자만 표시됩니다. 비활성 사용자는 지금 표시되지 않습니다. 활성 사용자는 [!DNL Admin Console]에서 제품 프로필에 계정을 할당받은 사용자입니다. [[!DNL Brand Portal] 보고서](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)를 참조하십시오.
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-* [!DNL Brand Portal]에서 폴더, 컬렉션 등을 다운로드할 때 각 자산에 대해 별도의 폴더를 만들 수 있는 새로운 다운로드 설정이 도입되었습니다. [다운로드 설정](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)을 참조하십시오.
+Ability to select a root path. select if a minimum number of tags is required. 
 
-## [!DNL Assets] {#bug-fixes-assets}의 버그 수정
+Add a Boolean or radio widget type to metadata schema setup. -->
 
-* 이름 지정 충돌을 해결한 후 기존 자산의 새 버전을 만들면 원래 자산의 메타데이터를 덮어씁니다. (CQ-4313594)
-* 긴 주석 텍스트가 있는 에셋을 인쇄하면 공간이 있어도 주석 텍스트가 트림됩니다. (CQ-4314101)
-* 속성을 업데이트하기 위해 여러 자산을 선택하면 오류가 발생하거나 선택 취소된 자산의 속성이 업데이트되는 경우가 있습니다. (CQ-4316532)
-* [!UICONTROL 자산 관리자 검색 레일]을 열려고 하면 페이지가 비어 있는 상태로 남아 있고 [!UICONTROL 편집] > [!UICONTROL 설정]을 클릭하면 오류가 발생합니다. (CQ-4315079)
+* [!DNL Experience Manager] 지원되는 핵심 구성 요소에서 이미지 사용을 지원하기 위해 연결된  [!DNL Dynamic Media] 자산 기능을 확장합니다. [연결된 자산 사용](/help/assets/use-assets-across-connected-assets-instances.md)을 참조하십시오.
+* Experience Manager 관리자는 특정 날짜 또는 시간에 일괄 자산 지정을 예약할 수 있습니다. 또한 관리자는 날짜 및 시간을 기반으로 반복되는 작업을 예약할 수 있습니다. [일괄 자산 통합](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
+
+### [!DNL Assets] {#bug-fixes-assets}의 버그 수정
+
+* 여러 권한 관리 자산을 다운로드하려고 하면 저작권 페이지가 표시되지 않습니다. (CQ-4314403)
+* INDD 파일을 편집하도록 선택하면 해상도가 예기치 않게 변경됩니다. (CQ-4317376)
+* PDF 변환에는 InDesign 템플릿의 마지막 페이지만 있습니다. (CQ-4317305)
+* 선택기가 복잡한 메타데이터 스키마의 일부인 경우 태그 선택기를 여는 데 시간이 오래 걸립니다. (CQ-4316426)
+* 기존 파일 이름과 동일한 파일 이름으로 에셋을 업로드할 때 사용자에게 버전을 만들라는 메시지를 표시하는 이름 충돌 대화 상자가 표시되지 않습니다. (CQ-4315424)
+* 폴더 메타데이터 속성은 폴더의 속성 페이지의 팝업 메뉴에서 설정하고 저장할 수 있습니다. 선택 영역이 저장소에 저장되면 폴더 메타데이터 속성을 다시 열 때 표시되지 않습니다. (CQ-4314429)
+* 파일 이름에 공백 또는 특수 문자가 포함된 에셋이 브라우저를 사용하여 업로드됩니다. (CQ-4318381)
+
+## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Forms] {#forms}
+
+AEM Forms은 많은 조직에서 수년간 탁월한 온보딩 및 등록 경험을 제공할 수 있도록 도움을 주었습니다. 이러한 경험을 통해 기업은 리드를 매출로 전환하고 캡처한 고객 데이터를 처리하며 고객 프로파일을 기반으로 반응형 경험을 제공하는 등 다양한 이점을 얻을 수 있습니다. 이제 AEM Forms은 클라우드 서비스로 제공됩니다.
+
+[AEM Forms을 Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)으로 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, 양식을 Adobe Sign과 통합하여 양식에 전자 서명을 추가하고, 문서 기록(DoR)을 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 또한 서비스는 기존 PDF forms을 디지털 양식으로 변환할 수 있습니다. 표준 AEM Forms 기능 외에도 자동 크기 조절, 업그레이드 중단 시간 제로, 클라우드 기본 개발 환경과 같은 클라우드 기본 기능을 제공합니다. Cloud Service의 AEM Forms 기능 및 기능에 대해 알아보려면 [이 블로그 게시물](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)을 읽어 보십시오.
+
+데모 또는 서비스 등록을 위해 Adobe 담당자에게 문의할 수 있습니다.
 
 ## Adobe Experience Manager 상거래를 Cloud Service {#cloud-services-commerce}
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-* 제품 경험 관리:경험 조각으로 제품 카탈로그 페이지를 개별적으로 보완합니다.
+* Magento 2.4.2 지원
 
-* 연결된 컨텐츠로 신속하게 이동하는 작업을 포함하여 연결된 자산 및 경험 조각을 표시하도록 확장된 제품 콘솔 속성입니다.
+* 이제 모든 컨텐츠 페이지에서 제품 세부 사항 구성 요소를 사용하고 구성할 수 있습니다.
 
-* 최신 CIF 코어 구성 요소 버전 v1.8.0을 포함하는 CIF Venia 참조 사이트 - 2021.02.24. 자세한 내용은 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24)를 참조하십시오.
+* 최신 CIF 코어 구성 요소 버전 v1.9.0을 포함하는 CIF Venia 참조 사이트 - 2021.03.25. 자세한 내용은 [CIF Venia 참조 사이트](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)를 참조하십시오.
 
-* CIF 코어 구성 요소 v1.8.0 릴리스되었습니다. 자세한 내용은 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)를 참조하십시오.
+* CIF 코어 구성 요소 v1.9.0 릴리스되었습니다. 자세한 내용은 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)를 참조하십시오.
+
 
 ## Cloud Manager {#cloud-manager}
 
@@ -77,7 +88,6 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 
 AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021년 3월 11일입니다.
 다음 릴리스는 2021년 4월 8일에 예정되어 있습니다.
-
 
 ### 새로운 기능 {#what-is-new-march}
 
@@ -121,42 +131,6 @@ AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021
 
 * 모든 기존 프로덕션 파이프라인은 경험 감사 단계를 통해 자동으로 활성화됩니다.
 
-
-### 릴리스 날짜 {#release-date-cm}
-
-AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021년 2월 11일입니다.
-
-### 새로운 기능 {#what-is-new-cloud-manager}
-
-
-* 이제 자산 고객은 Cloud Manager UI를 통해 셀프 서비스 방식으로 브랜드 포털 인스턴스를 배포할 시기와 위치를 선택할 수 있습니다. 자산 솔루션이 있는 일반(샌드박스 아님) 프로그램의 경우 이제 프로덕션 환경에서 브랜드 포털을 프로비저닝할 수 있습니다. 프로비저닝은 프로덕션 환경에서 한 번만 수행할 수 있습니다.
-
-* 프로젝트 및 샌드박스 제작에서 사용되는 AEM 프로젝트 원형이 버전 25로 업데이트되었습니다.
-
-* 코드 스캔 중에 식별된 가치 없는 API 목록은 최신 Cloud Service SDK 릴리스에서 사용되지 않는 추가 클래스 및 메서드를 포함하도록 개선되었습니다.
-
-* Cloud Manager용 SonarQube 프로필이 Sonar 규칙 squid:S2142를 제거하도록 업데이트되었습니다. 더 이상 스레드 중단 검사와 충돌하지 않습니다.
-
-* Cloud Manager UI는 연결된 환경에 연결된 실행 중인 파이프라인이 있거나 현재 승인 단계를 기다리는 중이므로 도메인 이름을 일시적으로 추가/업데이트할 수 없는 사용자에게 알립니다.
-
-* 음파 탐지 접두사가 있는 고객 `pom.xml` 파일에 설정된 속성은 이제 빌드 및 품질 스캔 오류를 방지하기 위해 동적으로 제거됩니다.
-
-* Cloud Manager UI는 현재 배포 중인 도메인 이름으로 사용 중인 경우 일시적으로 SSL 인증서를 선택할 수 없는 사용자에게 알립니다.
-
-* Cloud Service 호환성 문제를 다루는 추가 코드 품질 규칙이 추가되었습니다.
-
-### 버그 수정 {#bug-fixes-cloud-manager}
-
-* 도메인 이름과 SSL 인증서를 일치시키는 것이 더 이상 대소문자를 구분하지 않습니다.
-
-* 이제 인증서 개인 키가 적절한 오류 메시지와 함께 2048비트 제한에 도달하지 않는 경우 Cloud Manager UI는 사용자에게 알립니다.
-
-* Cloud Manager UI는 현재 배포 중인 도메인 이름으로 사용 중인 경우 일시적으로 SSL 인증서를 선택할 수 없는 사용자에게 알립니다.
-
-* 경우에 따라 내부 문제로 인해 환경 삭제가 중단될 수 있습니다.
-
-* 일부 파이프라인 오류가 파이프라인 오류로 잘못 보고되었습니다.
-
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
 ### 릴리스 날짜 {#release-date-ctt}
@@ -166,7 +140,6 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 ### 버그 수정 {#bug-fixes-ctt}
 
 * 이름이 같지만 이름에 하이픈이 있는 폴더에서 내용을 건너뛰었습니다. 이 문제가 수정되었습니다.
-
 
 ### 릴리스 날짜 {#release-date-ctt-march}
 
@@ -181,53 +154,19 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 
 * 특정 경로에서 컨텐츠를 마이그레이션할 때 CTT는 관련 없는 리소스를 검색하고 있었습니다. 이 문제가 해결되었습니다.
 
-
-### 릴리스 날짜 {#release-date-ctt-feb}
-
-내용 전송 도구 v1.2.4 릴리스 날짜는 2021년 2월 10일입니다.
-
-### 버그 수정 {#bug-fixes-ctt-feb}
-
-* 여러 사용자를 매핑할 때 일부 사용자의 IMS ID가 잘못 매핑되었습니다. 이 문제가 수정되었습니다.
-
-### 릴리스 날짜 {#release-date-ctt-feb01}
-
-내용 전송 도구 v1.2.2 릴리스 날짜는 2021년 2월 1일입니다.
-
-### 내용 전송 도구 {#what-is-new-ctt}의 새로운 기능
-
-* 컨텐츠 전송 도구 - 사용자 매핑 도구에 추가된 새 기능 및 UI. 이 기능은 컨텐츠 마이그레이션 작업의 일부로 기존 사용자 및 그룹을 Adobe Identity Management 시스템 ID에 자동으로 매핑합니다.
-자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)을 참조하십시오.
-* 이제 콘텐츠 전송 도구가 하위 항목을 포함하여 마이그레이션 세트에서 참조하는 모든 그룹 및 사용자를 마이그레이션합니다.
-* 사용자는 마이그레이션 세트를 만들 때 `/etc` 아래에서 특정 경로를 선택할 수 있습니다.
-
 ## 우수 사례 분석기 {#best-practices-analyzer}
-
-### 릴리스 날짜 {#release-date-bpa-march}
-
-우수 사례 분석기 v2.1.8 릴리스 날짜는 2021년 3월 22일입니다.
-
-### 우수 사례 분석기 {#what-is-new-bpa-march}의 새로운 기능
-
-* CSV 파일로 내보낸 보고서뿐만 아니라 UI의 BPA 보고서로부터 ACS 공유물 결과를 필터링하는 기능.
 
 ### 릴리스 날짜 {#release-date-bpa}
 
-우수 사례 분석기 v2.1.2 릴리스 날짜는 2021년 2월 18일입니다.
+우수 사례 분석기 v2.1.8 릴리스 날짜는 2021년 3월 22일입니다.
 
 ### 우수 사례 분석기 {#what-is-new-bpa}의 새로운 기능
 
-* AEM Forms 및 AEM Forms 구현 기능을 감지하고 Cloud Service으로 AEM Forms으로 마이그레이션하는 것과 관련된 영역을 나타낼 수 있습니다.
-* 사용자 지정 구성 요소 및 템플릿의 사용 및 카운트를 감지하고 보고할 수 있습니다.
-* 사용된 노드 저장소 및 데이터 저장소 유형을 검색하는 기능입니다.
-* Dynamic Media 사용 감지 기능
-* 사용된 Java 버전을 검색하는 기능
+* CSV 파일로 내보낸 보고서뿐만 아니라 UI의 BPA 보고서로부터 ACS 공유물 결과를 필터링하는 기능.
 
 ## 코드 리팩터링 도구 {#code-refactoring-tools}
 
 ### 코드 리팩토링 도구 {#what-is-new-crt}의 새로운 기능
-
-* 새로운 버전의 AIO-CLI 플러그인이 출시되었습니다. 이 플러그인의 최신 버전에는 Repository Modernizer 및 Dispatcher Converter에 대한 몇 가지 새로운 기능과 버그 수정이 포함되어 있습니다.    이 플러그인에 대한 자세한 내용은 [통합 경험](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)을 참조하십시오.
 
 * Repository Modernizer의 새로운 기능 및 향상된 기능 [GitHub 리소스를 참조하십시오.저장소 현대화 프로그램](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)을(를) 최신 버전으로 사용할 수 있습니다.
    * OSGi 구성을 기본 설정 .cfg.json 형식으로 정규화합니다(RepoInit 구성 제외).
@@ -239,30 +178,3 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
    * 컨텐츠를 줄이지 않고 다른 포함을 위한 개별 파일 만들기
    * 호스트 파일의 폴더 경로와 호스트 파일의 경로를 모두 처리할 수 있습니다.
    * 600개 이상의 대규모 고객 구성을 갖는 팜 파일 생성
-
-## [!DNL Adobe Experience Manager] Cloud Service 기반  {#aem-as-a-cloud-service-foundation}
-
-### 알려진 문제 {#known-issues-foundation}
-
-**빌드 분석기 플러그인의 문제로 인해 일부 빌드가 실패할 수 있습니다.**
-
-경우에 따라 `aemanalyser-maven-plugin`을(를) 실행하는 동안 다음 오류 메시지와 함께 프로젝트 빌드가 실패할 수 있습니다.
-
-```
-[ERROR] repoinit: Parsing error in repoinit from extension : Encountered "" at line 15, column 37.
- 
-Was expecting one of:
- 
-     
- 
-[ERROR] Analyser detected errors on feature
-```
-
-**해결 방법**
-
-이 문제를 해결하려면 상위 `pom.xml` 파일에서 최신 버전의 `aemanalyser-maven-plugin`을 선택합니다.
-
-```xml
-<aemanalyser.version>0.9.2</aemanalyser.version>
-```
-
