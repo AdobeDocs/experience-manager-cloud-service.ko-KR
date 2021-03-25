@@ -6,7 +6,7 @@ user-guide-description: Experience Manager Assets as a Cloud Service를 사용 �
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 72%
@@ -72,9 +72,9 @@ ht-degree: 72%
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 전달](content-fragments/content-fragments-graphql.md)
-   + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
    + [인스턴스에 대한 컨텐츠 조각 기능 활성화](content-fragments/content-fragments-configuration-browser.md)
    + [콘텐츠 조각 모델](content-fragments/content-fragments-models.md)
+   + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
    + [변형 - 조각 콘텐츠 작성](content-fragments/content-fragments-variations.md)
    + [콘텐츠 조각 관련 콘텐츠](content-fragments/content-fragments-assoc-content.md)
    + [메타데이터 - 조각 속성](content-fragments/content-fragments-metadata.md)
