@@ -4,7 +4,7 @@ description: Adobe Experience Manager Assets의 컬렉션 개념을 이해하십
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Adobe Enterprise Manager 자산을 사용하여 많은 컬렉션의 메타데이
 
 >[!NOTE]
 >
->벌크 편집 방법은 컬렉션에 있는 자산에 대해 작동합니다. 폴더 간에 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 [검색 후 메타데이터를 일괄 업데이트하는 것이 가능합니다.](/help/assets/search-assets.md#metadataupdates)
+>벌크 편집 방법은 컬렉션에 있는 자산에 대해 작동합니다. 폴더 간에 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 [검색 후 메타데이터를 일괄 업데이트하는 것이 가능합니다.](/help/assets/search-assets.md#metadata-updates)
 
 1. 컬렉션 콘솔에서 편집할 컬렉션을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 탭/클릭하여 선택한 컬렉션에 대한 [!UICONTROL 속성] 페이지를 엽니다.
