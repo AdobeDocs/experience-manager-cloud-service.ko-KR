@@ -7,9 +7,9 @@ feature-set: Experience Manager
 feature: 릴리스 정보
 role: 리더, 건축가, 개발자, 데이터 아키텍트, 데이터 엔지니어, 관리자, 비즈니스 관리자
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 1d64fe00e9694721073fa6a47a9b2cbd82e5b8ae
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '122'
 ht-degree: 91%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 91%
 + 릴리스 노트 {#release-notes}
    + [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021년 {#2021}
+      + [2021.2.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [2021.1.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020 {#2020}
       + [2020.12.0 릴리스 노트](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
