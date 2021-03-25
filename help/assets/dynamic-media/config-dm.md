@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service으로 Dynamic Media을 구성하는 방법을 알아봅니다.
 topic: 관리자
 translation-type: tm+mt
-source-git-commit: 5772a62c52af9db3cf94f4a2fff66f540b43d010
+source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4054'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 1. 기본 소스 에셋이 Cloud Service으로 Adobe Experience Manager에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 에셋 처리 및 변환 생성을 처리합니다.
 1. 변환이 생성되면 Cloud Service의 Experience Manager이 원격 Dynamic Media 변환에 안전하게 액세스하고 미리 볼 수 있습니다(Cloud Service 인스턴스로 Experience Manager으로 다시 보내지지 않음).
-1. 컨텐츠를 게시 및 승인할 준비가 되면, Dynamic Media 서비스가 컨텐츠를 전달 서버로 푸시하고 CDN의 컨텐츠를 캐시하도록 트리거합니다.
+1. 컨텐츠를 게시 및 승인할 준비가 되면, Dynamic Media 서비스가 컨텐츠를 전달 서버로 푸시하고 CDN(Content Delivery Network)의 컨텐츠를 캐시하도록 트리거합니다.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -382,7 +382,9 @@ Adobe은 PDF, PostScript® 및 PSD 파일에 대해 다음과 같은 &quot;조�
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+이러한 매개 변수를 업데이트하려면 [지원되는 형식](#editing-mime-types-for-supported-formats)에 대한 MIME 유형 편집을 참조하십시오.
+
+지원되지 않는 형식](#adding-mime-types-for-unsupported-formats)에 대해 [MIME 형식 추가도 참조하십시오.
 
 #### Granite Tranent Workflow 큐 {#updating-the-granite-transient-workflow-queue} 업데이트
 
