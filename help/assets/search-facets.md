@@ -2,9 +2,9 @@
 title: 검색 패싯.
 description: 이 문서에서는 AEM에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2376'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ AEM(Adobe Experience Manager) 자산의 전사적 배포는 많은 자산을 저
 
 전체 텍스트 검색의 경우 양식에 `Fulltext` 조건자를 추가합니다. 속성 조건자를 사용하여 지정한 단일 속성과 일치하는 자산을 검색합니다. 옵션 조건자를 사용하여 특정 속성에 대해 하나 이상의 값과 일치하는 자산을 검색합니다. 날짜 범위 조건자를 지정된 날짜 범위 내에 만든 검색 자산에 추가합니다.
 
-1. AEM 로고를 탭/클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**&#x200B;으로 이동합니다.
+1. AEM 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**&#x200B;으로 이동합니다.
 1. Forms 검색 페이지에서 **[!UICONTROL 자산 관리자 검색 레일]**&#x200B;을 선택한 다음 **편집** ![aemassets_edit](assets/aemassets_edit.png)을 탭합니다.
 
    ![자산 관리자 검색 레일을 찾아 선택합니다.](assets/assets_admin_searchrail.png)
