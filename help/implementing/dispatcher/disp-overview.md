@@ -3,10 +3,10 @@ title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
 workflow-type: tm+mt
-source-wordcount: '4120'
-ht-degree: 8%
+source-wordcount: '4113'
+ht-degree: 5%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 8%
 
 Dispatcher 도구는 Cloud Service SDK로서 전체 AEM의 일부이며 다음을 제공합니다.
 
-* 디스패처용 마스터 프로젝트에 포함할 구성 파일이 포함된 바닐라 파일 구조입니다.
+* Dispatcher용 고급 프로젝트에 포함할 구성 파일이 포함된 바닐라 파일 구조입니다.
 * 고객이 디스패처 구성에 Cloud Service 지원 지시문으로 AEM만 포함되는지 확인할 수 있도록 도구를 제공합니다.        또한 Apache를 성공적으로 시작할 수 있도록 구문이 올바른지 확인합니다.
-* 발송자를 로컬로 표시하는 Docker 이미지.
+* Dispatcher를 로컬로 표시하는 Docker 이미지.
 
 ## {#extracting-the-sdk} 도구 다운로드 및 추출
 
-[AEM에 Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)로 포함된 디스패처 도구는 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 다운로드할 수 있습니다. 새 디스패처 도구 버전에서 사용할 수 있는 모든 새 구성을 Cloud 이상에서 해당 버전의 AEM을 실행하는 클라우드 환경에 배포하는 데 사용할 수 있습니다.
+[AEM에 Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)로 포함된 디스패처 도구는 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 다운로드할 수 있습니다. 새 Dispatcher 도구 버전에서 사용할 수 있는 모든 새 구성을 Cloud 이상에서 해당 버전의 AEM을 실행하는 클라우드 환경에 배포하는 데 사용할 수 있습니다.
 
 macOS/Linux 및 Windows용 디스패처 도구를 번들로 제공하는 SDK의 압축을 해제합니다.
 
-**macOS/Linux**&#x200B;의 경우 디스패처 도구를 가공물로 만들고 실행합니다. 저장한 디렉터리 아래에 있는 디스패처 도구 파일을 자동으로 추출합니다(여기서 `version`은(는) 디스패처 도구 버전임).
+**macOS/Linux**&#x200B;의 경우 Dispatcher 도구를 가공물로 만들고 실행합니다. 저장한 디렉토리 아래에 있는 Dispatcher 도구 파일을 자동으로 추출합니다(여기서 `version`은 Dispatcher Tools 버전임).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -47,7 +47,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## 파일 구조 {#file-structure}
 
-프로젝트 디스패처 하위 폴더의 구조는 아래에 설명되어 있으며 maven project dispatcher 폴더에 복사해야 합니다.
+프로젝트의 Dispatcher 하위 폴더 구조는 아래에 설명되어 있으며 maven project Dispatcher 폴더에 복사해야 합니다.
 
 ```bash
 ./
@@ -104,7 +104,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 >[!NOTE]
 >
->지금은 사이트별 파일이 아닌 하나의 다시 작성 파일을 사용해야 합니다. 파일 크기는 1MB 미만이어야 합니다.
+>현재 사이트에 따라 파일이 아닌 단일 다시 작성 파일을 사용해야 합니다. 일반적으로 사용자 정의 가능한 파일의 내용 합계는 1MB 미만이어야 합니다.
 
 * `conf.d/variables/custom.vars`
 
@@ -116,7 +116,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-이러한 파일 중 하나 이상을 보유할 수 있으며 팜이 들어 있어 호스트 이름과 일치시키고 디스패처 모듈이 서로 다른 규칙을 사용하여 각 팜을 처리할 수 있습니다. 파일은 `available_farms` 디렉토리에 생성되며 `enabled_farms` 디렉토리의 심볼 링크를 사용하여 활성화됩니다. `.farm` 파일에서 필터, 캐시 규칙 및 기타 파일과 같은 다른 파일이 포함됩니다.
+이러한 파일 중 하나 이상을 보유할 수 있으며 팜이 포함된 팜을 사용하여 호스트 이름을 일치시키고 Dispatcher 모듈에서 서로 다른 규칙으로 각 팜을 처리할 수 있습니다. 파일은 `available_farms` 디렉토리에 생성되며 `enabled_farms` 디렉토리의 심볼 링크를 사용하여 활성화됩니다. `.farm` 파일에서 필터, 캐시 규칙 및 기타 파일과 같은 다른 파일이 포함됩니다.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -134,13 +134,13 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 이 파일은 `.farm` 파일 내에서 포함됩니다. 글로벌 일치와 일치할 호스트 이름 또는 URI 경로 목록이 있습니다. 요청을 제공하기 위해 사용할 백 엔드를 결정합니다.
 
-위 파일은 아래 나열된 변경할 수 없는 구성 파일을 참조합니다. 변경할 수 없는 파일에 대한 변경 사항은 클라우드 환경에서 디스패처가 처리하지 않습니다.
+위 파일은 아래 나열된 변경할 수 없는 구성 파일을 참조합니다. 변경할 수 없는 파일에 대한 변경 사항은 클라우드 환경에서 Dispatcher가 처리하지 않습니다.
 
 **변경 불가능한 구성 파일**
 
 이러한 파일은 기본 프레임워크의 일부이며 표준 및 최상의 작업 방법을 적용합니다. 파일을 로컬에서 수정하거나 삭제해도 Cloud 인스턴스로 전송되지 않으므로 파일은 해당 배포에 영향을 주지 않으므로 변경할 수 없는 것으로 간주됩니다.
 
-위의 파일은 아래 나열된 변경할 수 없는 파일을 참조한 다음 추가 문 또는 오버라이드를 참조하는 것이 좋습니다. 디스패처 구성이 클라우드 환경에 배포되면 로컬 개발에 사용된 버전에 상관없이 변경 불가능한 파일의 최신 버전이 사용됩니다.
+위의 파일은 아래 나열된 변경할 수 없는 파일을 참조한 다음 추가 문 또는 오버라이드를 참조하는 것이 좋습니다. Dispatcher 구성이 클라우드 환경에 배포되면 로컬 개발에 사용된 버전에 상관없이 변경 불가능한 파일의 최신 버전이 사용됩니다.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -156,7 +156,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-샘플 디스패처 팜을 포함합니다. 자신의 팜에 대해 이 파일의 복사본을 만들고 사용자 지정한 다음 `conf.d/enabled_farms`으로 이동하여 사용자 지정된 복사본에 대한 상징적 링크를 만듭니다.
+샘플 Dispatcher 팜을 포함합니다. 자신의 팜에 대해 이 파일의 복사본을 만들고 사용자 지정한 다음 `conf.d/enabled_farms`으로 이동하여 사용자 지정된 복사본에 대한 상징적 링크를 만듭니다.
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
@@ -172,7 +172,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.dispatcher.d/dispatcher.any`
 
-디스패처 팜이 포함된 방법을 보여주는 데 사용되는 기본 프레임워크의 일부입니다.
+Dispatcher 팜이 포함된 방법을 보여주는 데 사용되는 기본 프레임워크의 일부입니다.
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
@@ -188,7 +188,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 >[!NOTE]
 >
->Cloud Service 전문가(CMO)로서 AEM은 동일한 발송자 구성 파일 구조를 생성합니다.
+>Cloud Service 전문가(CMO)로서 AEM은 동일한 Dispatcher 구성 파일 구조를 생성합니다.
 
 아래 섹션에서는 내부 릴리스를 배포할 때 Cloud Manager에서 관련 품질 게이트를 전달할 수 있도록 구성을 로컬로 검증하는 방법에 대해 설명합니다.
 
@@ -198,7 +198,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 다음과 같이 호출됩니다.`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-이 도구는 패턴 `conf.d/enabled_vhosts/*.vhost`이 있는 모든 파일을 스캔하여 디스패처 구성이 AEM에서 지원하는 적절한 지시문을 클라우드 서비스로 사용하고 있는지 확인합니다. Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 명령을 실행하여 나열할 수 허용 목록에 추가하다 있습니다.
+이 도구는 패턴 `conf.d/enabled_vhosts/*.vhost`이 있는 모든 파일을 스캔하여 Dispatcher 구성이 AEM에서 지원하는 적절한 지시문을 Cloud 서비스로 사용하고 있는지 확인합니다. Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 명령을 실행하여 나열할 수 허용 목록에 추가하다 있습니다.
 
 ```
 $ validator allowlist
@@ -347,9 +347,9 @@ Apache 가상 호스트 구성에는 다음과 같이 지정할 수 있는 두 �
 
 이 메시지는 구성에 더 이상 사용되지 않는 버전 1 레이아웃이 있으며, 완전한
 Apache 구성 및 `ams_` 접두어가 있는 파일. 이전 버전에서 계속 지원되지만
-호환을 받으려면 새 레이아웃으로 전환해야 합니다.
+호환되므로 새 레이아웃으로 전환해야 합니다.
 
-## apache httpd가 {#local-validation}을(를) 시작할 수 있도록 발송자 구성 구문의 로컬 유효성 검사
+## apache httpd가 {#local-validation}을(를) 시작할 수 있도록 Dispatcher 구성 구문의 로컬 유효성 검사
 
 Dispatcher 모듈 구성에 지원되는 지시문만 포함되도록 설정했으면 구문이 올바른지 확인하여 Apache를 시작할 수 있습니다. 이를 테스트하려면 문서를 로컬에 설치해야 합니다. AEM이 실행되는 것은 아닙니다.
 
@@ -378,7 +378,7 @@ Phase 2 finished
 
 1. 지원되는 지시문만 포함되도록 이전 섹션의 유효성 검사기를 실행합니다. 구성이 올바르지 않으면 스크립트가 실패합니다.
 2. Apache httpd를 시작할 수 있도록 구문이 올바른지 테스트하려면 `httpd -t command`을 실행합니다. 성공하면 배포를 위해 구성을 준비해야 합니다.
-3. [파일 구조 섹션](#file-structure)에 설명된 대로 변경할 수 없도록 만들어진 디스패처 SDK 구성 파일의 하위 세트가 수정되지 않았는지 확인합니다. 이 검사는 AEM SDK 버전 v2021.1.4738에 도입되어 Dispatcher 도구 버전 2.0.36을 포함하고 있는 새로운 검사입니다. 이 업데이트 전에 고객은 변경할 수 없는 파일의 모든 로컬 SDK 수정 내용이 Cloud 환경에도 적용된다고 잘못 간주할 수 있습니다.
+3. [파일 구조 섹션](#file-structure)에 설명된 대로 변경할 수 없는 Dispatcher SDK 구성 파일의 하위 세트가 수정되지 않았는지 확인합니다. 이 검사는 AEM SDK 버전 v2021.1.4738에 도입되어 Dispatcher 도구 버전 2.0.36을 포함하고 있는 새로운 검사입니다. 이 업데이트 전에 고객은 변경할 수 없는 파일의 모든 로컬 SDK 수정 내용이 Cloud 환경에도 적용된다고 잘못 간주할 수 있습니다.
 
 Cloud Manager 배포 동안 `httpd -t syntax` 확인도 실행되고 모든 오류가 클라우드 관리자 `Build Images step failure` 로그에 포함됩니다.
 
@@ -386,7 +386,7 @@ Cloud Manager 배포 동안 `httpd -t syntax` 확인도 실행되고 모든 오�
 
 Apache 및 Dispatcher 구성을 로컬로 테스트할 수도 있습니다. 위 설명에 따라 문서를 로컬로 설치하고 구성을 통해 유효성 검사를 전달해야 합니다.
 
-모든 발송자 구성 파일로 폴더를 출력하는 `-d` 매개 변수를 사용하여 유효성 검사기 도구를 실행합니다(앞서 언급한 `validator.sh`과 다릅니다). 그런 다음 `docker_run.sh` 스크립트를 실행하여 해당 폴더를 인수로 전달합니다. 포트 번호를 제공하여(여기:8080)을 사용하여 디스패처 끝점을 노출하면 Docker 컨테이너가 시작되어 구성에서 디스패처가 실행됩니다.
+모든 Dispatcher 구성 파일로 폴더를 출력하는 `-d` 매개 변수를 사용하여 유효성 검사기 도구를 실행합니다(앞서 언급한 `validator.sh`과 다릅니다). 그런 다음 `docker_run.sh` 스크립트를 실행하여 해당 폴더를 인수로 전달합니다. 포트 번호를 제공하여(여기:8080)을 사용하여 Dispatcher 끝점을 노출하면 Docker 컨테이너가 시작되어 구성에서 Dispatcher가 실행됩니다.
 
 ```
 $ validator full -d out src/dispatcher
@@ -401,11 +401,11 @@ Starting httpd server
 ...
 ```
 
-이렇게 하면 포트 4503에서 로컬 Mac OS 시스템에서 실행 중인 AEM 인스턴스를 가리키는 백 엔드가 있는 컨테이너의 디스패처가 시작됩니다.
+이렇게 하면 포트 4503의 로컬 Mac OS 시스템에서 실행 중인 AEM 인스턴스를 가리키는 백 엔드가 있는 컨테이너의 Dispatcher가 시작됩니다.
 
 ## Apache 및 Dispatcher 구성 디버깅 {#debugging-apache-and-dispatcher-configuration}
 
-다음 전략을 사용하여 디스패처 모듈에 대한 로그 출력을 높이고 로컬 및 클라우드 환경 모두에서 `RewriteRule` 평가 결과를 볼 수 있습니다.
+다음 전략을 사용하여 Dispatcher 모듈의 로그 출력을 높이고 로컬 및 클라우드 환경에서 `RewriteRule` 평가 결과를 볼 수 있습니다.
 
 이러한 모듈의 로그 수준은 `DISP_LOG_LEVEL` 및 `REWRITE_LOG_LEVEL` 변수에 의해 정의됩니다. `conf.d/variables/global.vars` 파일에서 설정할 수 있습니다. 관련 부분은 다음과 같습니다.
 
@@ -431,13 +431,13 @@ Starting httpd server
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-디스패처를 로컬로 실행할 때 로그는 터미널 출력에 직접 인쇄됩니다. 대부분의 경우 이러한 로그가 DEBUG에 있어야 하며 Docker를 실행할 때 디버그 수준을 매개 변수로 전달하여 수행할 수 있습니다. 예: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Dispatcher를 로컬로 실행하면 로그가 터미널 출력에 직접 인쇄됩니다. 대부분의 경우 이러한 로그가 DEBUG에 있어야 하며 Docker를 실행할 때 디버그 수준을 매개 변수로 전달하여 수행할 수 있습니다. 예: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
 
 클라우드 환경에 대한 로그는 Cloud Manager에서 사용할 수 있는 로깅 서비스를 통해 노출됩니다.
 
 ## 환경당 다른 Dispatcher 구성 {#different-dispatcher-configurations-per-environment}
 
-현재 동일한 디스패처 구성이 Cloud Service 환경으로 모든 AEM에 적용됩니다. 런타임에는 정의 및 현재 실행 모드(dev, stage 또는 prod)를 포함하는 환경 변수 `ENVIRONMENT_TYPE`이 있습니다. 정의는 `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` 또는 `ENVIRONMENT_PROD`일 수 있습니다. Apache 구성에서 변수를 표현식에서 직접 사용할 수 있습니다. 또는 정의를 사용하여 논리를 작성할 수 있습니다.
+현재 동일한 Dispatcher 구성이 Cloud Service 환경으로 모든 AEM에 적용됩니다. 런타임에는 정의 및 현재 실행 모드(dev, stage 또는 prod)를 포함하는 환경 변수 `ENVIRONMENT_TYPE`이 있습니다. 정의는 `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` 또는 `ENVIRONMENT_PROD`일 수 있습니다. Apache 구성에서 변수를 표현식에서 직접 사용할 수 있습니다. 또는 정의를 사용하여 논리를 작성할 수 있습니다.
 
 ```
 # Simple usage of the environment variable
@@ -504,19 +504,19 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Cloud Service으로 AMS에서 AEM으로 디스패처 구성을 마이그레이션하는 지침
 
-디스패처 구성 구조는 Cloud Service으로 Managed Services과 AEM 간에 다릅니다. 아래에 제시된 것은 Cloud Service으로 AMS Dispatcher 구성 버전 2에서 AEM으로 마이그레이션하는 방법에 대한 단계별 가이드입니다.
+Dispatcher 구성 구조는 Cloud Service으로 Managed Services과 AEM 간에 차이가 있습니다. 아래에 제시된 것은 Cloud Service으로 AMS Dispatcher 구성 버전 2에서 AEM으로 마이그레이션하는 방법에 대한 단계별 가이드입니다.
 
-## AMS를 클라우드 서비스 디스패처 구성으로 AEM으로 변환하는 방법
+## AMS를 클라우드 서비스 발송자 구성으로 AEM으로 변환하는 방법
 
 다음 섹션에서는 AMS 구성을 변환하는 방법에 대한 단계별 지침을 제공합니다. 이 경우
-[Cloud Manager 디스패처 구성에 설명된 구조와 유사한 구조를 갖는 보관 파일이 있는 경우](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+[Cloud Manager Dispatcher 구성에 설명된 구조와 유사한 구조가 있는 보관 파일이 있는 경우](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### 아카이브 추출 및 최종 접두사 제거
 
 아카이브를 폴더에 추출하고, 바로 하위 폴더가 `conf`, `conf.d`,
 `conf.dispatcher.d` 및 `conf.modules.d`. 그렇지 않으면 계층 구조에서 위로 이동합니다.
 
-### 사용하지 않는 하위 폴더와 파일 제거
+### 사용되지 않은 하위 폴더 및 파일 제거
 
 하위 폴더 `conf` 및 `conf.modules.d` 및 `conf.d/*.conf`와 일치하는 파일을 제거합니다.
 
@@ -528,7 +528,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ### 포트 80을 참조하지 않는 가상 호스트 섹션 제거 또는 주석 달기
 
-가상 호스트 파일에 포트 80 이외의 다른 포트만 참조하는 섹션이 있는 경우
+포트 80이 아닌 다른 포트만을 참조하는 가상 호스트 파일에 섹션이 여전히 있는 경우, 예:
 
 ```
 <VirtualHost *:443>
@@ -548,7 +548,7 @@ $ docker exec d75fbd23b29 httpd-test
 이제 `conf.d/rewrites`에 단일 파일이 포함되어 있으면 `rewrite.rules`(으)로 이름을 바꾸어야 하며
 가상 호스트 파일에서 해당 파일을 참조하는 `Include` 명령문을 적용하는 것을 잊으십시오.
 
-그러나 폴더에 여러 개의 가상 호스트 특정 파일이 포함되어 있으면 해당 콘텐트는
+그러나 폴더에 여러 개의 가상 호스트별 파일이 포함되어 있으면 해당 콘텐트는
 가상 호스트 파일에서 해당 파일을 참조하는 `Include` 문에 복사되었습니다.
 
 ### 변수 확인
@@ -561,7 +561,7 @@ $ docker exec d75fbd23b29 httpd-test
 이제 `conf.d/variables`에 단일 파일이 포함되어 있으면 `custom.vars`(으)로 이름을 바꾸어야 하며
 가상 호스트 파일에서 해당 파일을 참조하는 `Include` 명령문을 적용하는 것을 잊으십시오.
 
-그러나 폴더에 여러 개의 가상 호스트 특정 파일이 포함되어 있으면 해당 콘텐트는
+그러나 폴더에 여러 개의 가상 호스트별 파일이 포함되어 있으면 해당 콘텐트는
 가상 호스트 파일에서 해당 파일을 참조하는 `Include` 문에 복사되었습니다.
 
 ### 허용 목록 제거
@@ -578,7 +578,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ### 검사기를 실행하여 상태 확인
 
-`httpd` 하위 명령을 사용하여 디렉토리에서 디스패처 유효성 검사기를 실행합니다.
+`httpd` 하위 명령을 사용하여 디렉토리에서 Dispatcher 유효성 검사기를 실행합니다.
 
 ```
 $ validator httpd .
@@ -606,7 +606,7 @@ Apache 지시문이 표시되지 않으면 허용 목록에추가된 이를 제�
 `ams_` 접두어가 있는 파일을 모두 제거합니다.
 
 `conf.dispatcher.d/cache`이(가) 이제 비어 있으면 `conf.dispatcher.d/cache/rules.any` 파일을 복사합니다.
-표준 디스패처 구성에서 이 폴더로 이동합니다. 표준 디스패처
+표준 발송자 구성에서 이 폴더로 이동합니다. 표준 디스패처
 구성은 이 SDK의 `src` 폴더에서 찾을 수 있습니다. Adobe ID를
 팜 파일의 `ams_*_cache.any` 규칙 파일을 참조하는 `$include` 문
 또한 가능합니다.
@@ -615,7 +615,7 @@ Apache 지시문이 표시되지 않으면 허용 목록에추가된 이를 제�
 `rules.any`로 이름을 변경해야 하며 `$include` 문을 적용하는 것을 잊지 마십시오
 팜 파일에서도 해당 파일을 참조합니다.
 
-그러나 폴더에 해당 패턴이 있는 팜 특정 파일이 여러 개 포함되어 있으면 해당 파일의 내용이 표시됩니다
+그러나 폴더에 해당 패턴의 팜별 파일이 여러 개 포함된 경우 해당 파일의 내용은
 팜 파일에서 해당 항목을 참조하는 `$include` 문에 복사해야 합니다.
 
 접미사 `_invalidate_allowed.any`이(가) 있는 파일을 제거합니다.
@@ -640,13 +640,13 @@ $include "../cache/default_invalidate.any"
 `clientheaders.any`로 이름을 변경해야 하며 `$include` 문을 적용하는 것을 잊지 마십시오
 팜 파일에서도 해당 파일을 참조합니다.
 
-그러나 폴더에 해당 패턴이 있는 팜 특정 파일이 여러 개 포함되어 있으면 해당 파일의 내용이 표시됩니다
+그러나 폴더에 해당 패턴의 팜별 파일이 여러 개 포함된 경우 해당 파일의 내용은
 팜 파일에서 해당 항목을 참조하는 `$include` 문에 복사해야 합니다.
 
 기본값에서 `conf.dispatcher/clientheaders/default_clientheaders.any` 파일 복사
 AEM을 해당 위치에 대한 Cloud Service 디스패처 구성으로 추가했습니다.
 
-각 팜 파일에서 다음과 같은 clientheader 포함 문을
+각 팜 파일에서 다음과 같이 보이는 클라이언트 헤더 포함 문을 바꿉니다.
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
@@ -669,13 +669,13 @@ $include "../clientheaders/default_clientheaders.any"
 `filters.any` 및
 파일을 팜 파일에도 저장합니다.`$include`
 
-그러나 폴더에 해당 패턴이 있는 팜 특정 파일이 여러 개 포함되어 있으면 해당 파일의 내용이 표시됩니다
+그러나 폴더에 해당 패턴의 팜별 파일이 여러 개 포함된 경우 해당 파일의 내용은
 팜 파일에서 해당 항목을 참조하는 `$include` 문에 복사해야 합니다.
 
 기본값에서 `conf.dispatcher/filters/default_filters.any` 파일 복사
 AEM을 해당 위치에 대한 Cloud Service 디스패처 구성으로 추가했습니다.
 
-각 팜 파일에서 다음과 같은 filter 포함 문을
+각 팜 파일에서 필터에는 다음과 같이 보이는 명령문이 포함됩니다.
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
@@ -713,13 +713,13 @@ $include "../renders/default_renders.any"
 `virtualhosts.any` 및
 파일을 팜 파일에도 저장합니다.`$include`
 
-그러나 폴더에 해당 패턴이 있는 팜 특정 파일이 여러 개 포함되어 있으면 해당 파일의 내용이 표시됩니다
+그러나 폴더에 해당 패턴의 팜별 파일이 여러 개 포함된 경우 해당 파일의 내용은
 팜 파일에서 해당 항목을 참조하는 `$include` 문에 복사해야 합니다.
 
 기본값에서 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 파일 복사
 AEM을 해당 위치에 대한 Cloud Service 디스패처 구성으로 추가했습니다.
 
-각 팜 파일에서 다음과 같은 filter 포함 문을
+각 팜 파일에서 필터에는 다음과 같이 보이는 명령문이 포함됩니다.
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
@@ -759,9 +759,10 @@ validator full -d out .
 
 전체 구성을 검증하고 `out`에서 배포 정보를 생성합니다.
 
-### 2단계:해당 배포 정보로 문서 관리자 이미지에서 디스패처를 시작합니다.
+### 2단계:해당 배포 정보로 문서 관리자 이미지에서 Dispatcher 시작
 
-macOS 컴퓨터에서 실행 중인 AEM 게시 서버를 사용하여 포트 4503에서 수신 대기하면 다음과 같이 해당 서버 앞에서 Dispatcher를 시작할 수 있습니다.
+AEM 게시 서버가 macOS 컴퓨터에서 실행되고 포트 4503에서 수신 대기
+다음과 같이 해당 서버 앞에서 Dispatcher를 시작할 수 있습니다.
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -769,7 +770,7 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 그러면 컨테이너가 시작되고 로컬 포트 8080에 Apache가 표시됩니다.
 
-### 새 발송자 구성 사용
+### 새 Dispatcher 구성 사용
 
 축하합니다! 유효성 검사기가 더 이상 문제를 보고하지 않고
 도커 컨테이너는 어떠한 오류나 경고도 없이 시작됩니다.
