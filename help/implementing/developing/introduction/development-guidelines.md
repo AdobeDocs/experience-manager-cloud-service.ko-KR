@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 translation-type: tm+mt
-source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
+source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 1%
@@ -161,7 +161,6 @@ DEBUG 로그 수준을 활성화하려면
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
 프로덕션 프로그램의 경우, 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;클라우드 관리자 - 개발자 역할&quot;에 의해 정의되고, 샌드박스 프로그램의 경우 개발자 콘솔을 모든 사용자가 AEM에 대한 Cloud Service에 액세스할 수 있는 제품 프로필을 사용할 수 있습니다. 모든 프로그램의 경우, 두 서비스의 상태 덤프 데이터를 보려면 &quot;Cloud Manager - Developer Role&quot;이 필요하며 작성자 및 게시 서비스 모두에서 AEM 사용자 또는 AEM 관리자 제품 프로필에 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [클라우드 관리자 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하십시오.
-
 
 ### AEM 스테이징 및 프로덕션 서비스 {#aem-staging-and-production-service}
 
