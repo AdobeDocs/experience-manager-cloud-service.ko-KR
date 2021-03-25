@@ -2,9 +2,9 @@
 title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 헤드리스 컨텐츠 전달을 위한 AEM GraphQL API를 사용하여 Cloud Service으로 사용하는 방법에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
+source-git-commit: b0bfcacb35f520045ee6ed6d427467490e012912
 workflow-type: tm+mt
-source-wordcount: '2901'
+source-wordcount: '3233'
 ht-degree: 1%
 
 ---
@@ -167,30 +167,10 @@ AEM에서 GraphQL 쿼리를 활성화하려면 `/content/cq:graphql/global/endpo
 * 별칭 URL:
    * 끝점에 대해 간소화된 URL을 할당하려면
    * 선택 사항입니다
-* OSGi 구성:
-   * GraphQL 서블릿 구성:
-      * 끝점에 대한 요청을 처리합니다.
-      * 구성 이름은 `org.apache.sling.graphql.core.GraphQLServlet`입니다. OSGi 팩토리 구성으로 제공해야 합니다.
-      * `sling.servlet.extensions` 을(를)  `[json]`
-      * `sling.servlet.methods` 을(를)  `[GET,POST]`
-      * `sling.servlet.resourceTypes` 을(를)  `[graphql/sites/components/endpoint]`
-      * 필수
-   * 스키마 서블릿 구성:
-      * GraphQL 스키마 만들기
-      * 구성 이름은 `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`입니다. OSGi 팩토리 구성으로 제공해야 합니다.
-      * `sling.servlet.extensions` 을(를)  `[GQLschema]`
-      * `sling.servlet.methods` 을(를)  `[GET]`
-      * `sling.servlet.resourceTypes` 을(를)  `[graphql/sites/components/endpoint]`
-      * 필수
-   * CSRF 구성:
-      * 끝점에 대한 보안 보호
-      * 구성 이름은 `com.adobe.granite.csrf.impl.CSRFFilter`입니다.
-      * 제외된 경로의 기존 목록에 `/content/cq:graphql/global/endpoint`을(를) 추가합니다(`filter.excluded.paths`).
-      * 필수
 
 ### 지원 패키지 {#supporting-packages}
 
-GraphQL 끝점의 설정을 간소화하기 위해 Adobe은 [GraphQL 샘플 프로젝트](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip) 패키지를 제공합니다.
+GraphQL 끝점의 설정을 간소화하기 위해 Adobe은 [GraphQL 샘플 프로젝트(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip) 패키지를 제공합니다.
 
 이 아카이브는 필요한 추가 구성](#additional-configurations-graphql-endpoint) 및 [GraphQL 끝점](#enabling-graphql-endpoint)을(를) 모두 포함합니다. [ 일반 AEM 인스턴스에 설치된 경우 `/content/cq:graphql/global/endpoint`에 완전히 작동하는 GraphQL 끝점이 표시됩니다.
 
@@ -218,7 +198,7 @@ AEM GraphQL에서 표준 [GraphiQL](https://graphql.org/learn/serving-over-http/
 
 ### AEM GraphiQL 인터페이스 {#installing-graphiql-interface} 설치
 
-GraphiQL 사용자 인터페이스는 전용 패키지와 함께 AEM에 설치할 수 있습니다.[GraphiQL 컨텐츠 패키지 v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip) 패키지.
+GraphiQL 사용자 인터페이스는 전용 패키지와 함께 AEM에 설치할 수 있습니다.[GraphiQL 콘텐츠 패키지 v0.0.6(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) 패키지.
 
 <!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
@@ -273,6 +253,14 @@ GraphQL 사양에서는 특정 인스턴스에서 데이터를 심문하기 위�
 
 AEM용 GraphQL에서 스키마는 유연합니다. 즉, 컨텐츠 조각 모델이 생성, 업데이트 또는 삭제될 때마다 매번 자동으로 생성됩니다. 컨텐츠 조각 모델을 업데이트할 때 데이터 스키마 캐시도 새로 고쳐집니다.
 
+<!--
+>[!NOTE]
+>
+>AEM does not use the concept of namespacing for Content Fragment Models. 
+>
+>If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
+-->
+
 Sites GraphQL 서비스는 컨텐츠 조각 모델에 대한 수정 사항에 대해(백그라운드)을 수신합니다. 업데이트가 감지되면 스키마의 부분만 다시 생성됩니다. 이 최적화는 시간을 절약하고 안정성을 제공합니다.
 
 예를 들어,
@@ -292,6 +280,16 @@ Sites GraphQL 서비스는 컨텐츠 조각 모델에 대한 수정 사항에 �
 >REST api를 통해 컨텐츠 조각 모델에 대해 벌크 업데이트를 수행하거나, 그렇지 않을 경우 주의하는 것이 중요합니다.
 
 스키마는 GraphQL 쿼리와 동일한 종단점을 통해 제공되며, 클라이언트는 확장명 `GQLschema`과(와) 함께 스키마를 호출한다는 사실을 처리합니다. 예를 들어 `/content/cq:graphql/global/endpoint.GQLschema`에서 간단한 `GET` 요청을 수행하면 Content-type이 있는 스키마 출력이 발생합니다.`text/x-graphql-schema;charset=iso-8859-1`.
+
+### 스키마 생성 - 게시되지 않은 모델 {#schema-generation-unpublished-models}
+
+컨텐츠 조각이 중첩되면 상위 컨텐츠 조각 모델이 게시되지만 참조된 모델은 게시되지 않을 수 있습니다.
+
+>[!NOTE]
+>
+>AEM UI는 이러한 문제를 방지하지만 게시가 프로그래밍 방식으로 또는 콘텐츠 패키지로 이루어진 경우에는 발생할 수 있습니다.
+
+이 경우 AEM은 상위 컨텐츠 조각 모델에 대한 *불완전한* 스키마를 생성합니다. 즉, 게시되지 않은 모델에 종속된 조각 참조가 스키마에서 제거됩니다.
 
 ## 필드 {#fields}
 
@@ -313,7 +311,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 컨텐�
 
 | 컨텐츠 조각 모델 - 데이터 유형 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
-| 한 줄 텍스트 | 문자열, [String] |  작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됩니다. |
+| 단일 행 텍스트 | 문자열, [String] |  작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됩니다. |
 | 여러 줄 텍스트 | 문자열 |  아티클의 본문과 같은 텍스트를 출력하는 데 사용됩니다. |
 | 번호 |  부동, [부동] | 부동 소수점 번호와 일반 숫자를 표시하는 데 사용됩니다. |
 | 부울 |  부울 |  확인란→ 단순한 true/false 문을 표시하는 데 사용됩니다. |
@@ -517,13 +515,73 @@ query {
 
 자세한 예는 다음을 참조하십시오.
 
-* AEM 확장의 [GraphQL 세부 사항](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+* AEM 확장의 [GraphQL 세부 사항](#graphql-extensions)
 
 * [이 샘플 컨텐츠 및 구조를 사용한 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
    * 그리고 샘플 쿼리에 사용할 수 있도록 준비된 [샘플 컨텐트 및 구조](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 
 * [WKND 프로젝트를 기반으로 하는 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+
+## AEM용 GraphQL - 익스텐션 요약 {#graphql-extensions}
+
+AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM과 함께 GraphQL 쿼리에 사용할 수 있는 확장 기능은 다음과 같습니다.
+
+* 단일 결과가 필요한 경우:
+   * 모델 이름 사용;eg city
+
+* 결과 목록이 필요한 경우:
+   * 모델 이름에 `List` 추가;예를 들어 `cityList`
+   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](#sample-all-information-all-cities)를 참조하십시오.
+
+* 논리 OR을 사용하려면:
+   * ` _logOp: OR` 사용
+   * [샘플 쿼리 - &quot;Job&quot; 또는 &quot;Smith&quot;](#sample-all-persons-jobs-smith)의 이름을 가진 모든 사람을 참조하십시오.
+
+* 논리 AND도 존재하지만 (종종) 암시적
+
+* 컨텐츠 조각 모델 내의 필드에 해당하는 필드 이름을 쿼리할 수 있습니다
+   * [샘플 쿼리 - 회사의 CEO 및 직원의 전체 세부 정보](#sample-full-details-company-ceos-employees)를 참조하십시오.
+
+* 모델의 필드 외에도 몇 가지 시스템 생성 필드가 있습니다(앞에 밑줄 표시).
+
+   * 컨텐츠의 경우:
+
+      * `_locale` :언어를 공개하려면;Language Manager 기반
+         * 지정된 로케일의 여러 콘텐츠 조각에 대한 [샘플 쿼리를 참조하십시오](#sample-wknd-multiple-fragments-given-locale)
+      * `_metadata` :조각에 대한 메타데이터를 표시하려면
+         * [메타데이터에 대한 샘플 쿼리 - 제목이 GB](#sample-metadata-awards-gb)인 시상식에 대한 메타데이터 목록을 참조하십시오.
+      * `_model` :컨텐츠 조각 모델 쿼리 허용(경로 및 제목)
+         * 모델](#sample-wknd-content-fragment-model-from-model)의 컨텐츠 조각 모델에 대한 [샘플 쿼리를 참조하십시오.
+      * `_path` :저장소 내 컨텐츠 조각 경로
+         * [샘플 쿼리 - 단일 특정 도시 조각](#sample-single-specific-city-fragment) 참조
+      * `_reference` :참조를 표시합니다.리치 텍스트 편집기에서 인라인 참조 포함
+         * 프리페치된 참조](#sample-wknd-multiple-fragments-prefetched-references)가 있는 여러 컨텐츠 조각에 대한 샘플 쿼리를 참조하십시오.[
+      * `_variation` :컨텐츠 조각 내에서 특정 변형을 표시하려면
+         * [샘플 쿼리 - 명명된 변화가 있는 모든 도시](#sample-cities-named-variation)를 참조하십시오.
+   * 작업:
+
+      * `_operator` :특정 연산자 적용 `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`, `CONTAINS`  `STARTS_WITH`
+         * [샘플 쿼리 - &quot;작업&quot; 이름이 없는 모든 사람](#sample-all-persons-not-jobs)을 참조하십시오.
+         * `_path`이(가) 특정 접두어](#sample-wknd-all-adventures-cycling-path-filter)로 시작하는 [샘플 쿼리 - 모든 모험을 참조하십시오.
+      * `_apply` :특정 조건을 적용하는 경우예를 들어   `AT_LEAST_ONCE`
+         * [샘플 쿼리 - 하나 이상 발생해야 하는 항목이 있는 배열에 대해 필터를 참조하십시오](#sample-array-item-occur-at-least-once)
+      * `_ignoreCase` :쿼리 시 대/소문자를 무시하려면
+         * [샘플 쿼리 - 대소문자](#sample-all-cities-san-ignore-case)에 관계없이 이름에 SAN이 있는 모든 도시 참조
+
+
+
+
+
+
+
+
+
+
+* GraphQL 결합 유형은 다음과 같이 지원됩니다.
+
+   * `... on` 사용
+      * 내용 참조가 있는 특정 모델의 컨텐츠 조각에 대한 [샘플 쿼리를 참조하십시오](#sample-wknd-fragment-specific-model-content-reference)
 
 <!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
