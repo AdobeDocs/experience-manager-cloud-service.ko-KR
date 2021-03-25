@@ -3,9 +3,9 @@ title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
+source-wordcount: '4169'
 ht-degree: 5%
 
 ---
@@ -198,7 +198,21 @@ Dispatcher 팜이 포함된 방법을 보여주는 데 사용되는 기본 프�
 
 다음과 같이 호출됩니다.`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-이 도구는 패턴 `conf.d/enabled_vhosts/*.vhost`이 있는 모든 파일을 스캔하여 Dispatcher 구성이 AEM에서 지원하는 적절한 지시문을 Cloud 서비스로 사용하고 있는지 확인합니다. Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 명령을 실행하여 나열할 수 허용 목록에 추가하다 있습니다.
+이 도구는 패턴 `conf.d/enabled_vhosts/*.vhost`이 있는 모든 파일을 스캔하여 Dispatcher 구성이 AEM에서 지원하는 적절한 지시문을 Cloud 서비스로 사용하고 있는지 확인합니다.
+
+Windows의 경우 디스패처 유효성 검사기는 대/소문자를 구분합니다. 이와 같이 구성이 있는 경로의 대/소문자화를 고려하지 않으면 구성을 검증하지 못할 수 있습니다. 예를 들면 다음과 같습니다.
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 `cd` 명령을 사용하여 명령 프롬프트에서 해당 경로에 붙여넣어 이 오류를 방지합니다.
+
+Apache 구성 파일에 허용되는 지시어는 유효성 검사기의 명령을 실행하여 나열할 수 허용 목록에 추가하다 있습니다.
 
 ```
 $ validator allowlist
