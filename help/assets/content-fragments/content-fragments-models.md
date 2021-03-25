@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 모델
 description: 컨텐츠 조각 모델은 구조화된 컨텐츠와 함께 컨텐츠 조각을 생성하는 데 사용됩니다.
 translation-type: tm+mt
-source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
+source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2177'
 ht-degree: 26%
 
 ---
@@ -122,7 +122,7 @@ ht-degree: 26%
 
 ## 속성 {#properties}
 
-많은 속성이 자체 설명이므로 특정 속성에 대한 자세한 내용은 다음과 같습니다.
+많은 속성은 자체 설명이며 특정 속성에 대한 추가 세부 정보는 다음과 같습니다.
 
 * **렌더링조각**
 에서 필드를 구현하거나 렌더링하기 위한 다양한 옵션입니다. 종종 이 기능을 사용하면 작성자가 필드의 단일 인스턴스를 표시할지 또는 여러 인스턴스를 만들 수 있는지 정의할 수 있습니다.
@@ -393,3 +393,27 @@ type CompanyModel {
 1. 컨텐츠 조각 모델을 포함하는 폴더로 이동합니다.
 1. 모델을 선택하고 도구 모음에서 **게시 취소**를 선택합니다.
 게시된 상태가 콘솔에 표시됩니다.
+
+## 컨텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
+
+컨텐츠 조각 모델의 **속성**&#x200B;을 편집할 수 있습니다.
+
+* **기본**
+   * **모델 제목**
+   * **태그**
+   * **설명**
+   * **이미지 업로드**
+
+<!--
+* **GraphQL**
+  
+  >[!CAUTION]
+  >
+  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
+  >
+  >Updating these properties can impact dependent applications.
+
+  * **API Name**
+  * **Single Query Field Name**
+  * **Multiple Query Field Name**
+-->
