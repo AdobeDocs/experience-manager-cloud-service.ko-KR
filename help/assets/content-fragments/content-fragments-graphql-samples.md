@@ -2,10 +2,10 @@
 title: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 description: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 5%
+source-wordcount: '1396'
+ht-degree: 6%
 
 ---
 
@@ -29,65 +29,6 @@ GraphQL 쿼리 및 AEM 컨텐츠 조각으로 작업하는 방식을 살펴보�
 
 * 일부 [샘플 GraphQL 쿼리는 샘플 컨텐츠 조각 구조(컨텐츠 조각 모델 및 관련 컨텐츠 조각)를 기반으로 합니다.](#graphql-sample-queries)
 
-## AEM용 GraphQL - 익스텐션 요약 {#graphql-extensions}
-
-AEM용 GraphQL을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM과 함께 GraphQL 쿼리에 사용할 수 있는 확장 기능은 다음과 같습니다.
-
-* 단일 결과가 필요한 경우:
-   * 모델 이름 사용;eg city
-
-* 결과 목록이 필요한 경우:
-   * 모델 이름에 `List` 추가;예를 들어 `cityList`
-   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](#sample-all-information-all-cities)를 참조하십시오.
-
-* 논리 OR을 사용하려면:
-   * ` _logOp: OR` 사용
-   * [샘플 쿼리 - &quot;Job&quot; 또는 &quot;Smith&quot;](#sample-all-persons-jobs-smith)의 이름을 가진 모든 사람을 참조하십시오.
-
-* 논리 AND도 존재하지만 (종종) 암시적
-
-* 컨텐츠 조각 모델 내의 필드에 해당하는 필드 이름을 쿼리할 수 있습니다
-   * [샘플 쿼리 - 회사의 CEO 및 직원의 전체 세부 정보](#sample-full-details-company-ceos-employees)를 참조하십시오.
-
-* 모델의 필드 외에도 몇 가지 시스템 생성 필드가 있습니다(앞에 밑줄 표시).
-
-   * 컨텐츠의 경우:
-
-      * `_locale` :언어를 공개하려면;Language Manager 기반
-         * 지정된 로케일의 여러 콘텐츠 조각에 대한 [샘플 쿼리를 참조하십시오](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` :조각에 대한 메타데이터를 표시하려면
-         * [메타데이터에 대한 샘플 쿼리 - 제목이 GB](#sample-metadata-awards-gb)인 시상식에 대한 메타데이터 목록을 참조하십시오.
-      * `_model` :컨텐츠 조각 모델 쿼리 허용(경로 및 제목)
-         * 모델](#sample-wknd-content-fragment-model-from-model)의 컨텐츠 조각 모델에 대한 [샘플 쿼리를 참조하십시오.
-      * `_path` :저장소 내 컨텐츠 조각 경로
-         * [샘플 쿼리 - 단일 특정 도시 조각](#sample-single-specific-city-fragment) 참조
-      * `_reference` :참조를 표시합니다.리치 텍스트 편집기에서 인라인 참조 포함
-         * 프리페치된 참조](#sample-wknd-multiple-fragments-prefetched-references)가 있는 여러 컨텐츠 조각에 대한 샘플 쿼리를 참조하십시오.[
-      * `_variation` :컨텐츠 조각 내에서 특정 변형을 표시하려면
-         * [샘플 쿼리 - 명명된 변화가 있는 모든 도시](#sample-cities-named-variation)를 참조하십시오.
-   * 작업:
-
-      * `_operator` :특정 연산자 적용 `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`, `CONTAINS`  `STARTS_WITH`
-         * [샘플 쿼리 - &quot;작업&quot; 이름이 없는 모든 사람](#sample-all-persons-not-jobs)을 참조하십시오.
-         * `_path`이(가) 특정 접두어](#sample-wknd-all-adventures-cycling-path-filter)로 시작하는 [샘플 쿼리 - 모든 모험을 참조하십시오.
-      * `_apply` :특정 조건을 적용하는 경우예를 들어   `AT_LEAST_ONCE`
-         * [샘플 쿼리 - 하나 이상 발생해야 하는 항목이 있는 배열에 대해 필터를 참조하십시오](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` :쿼리 시 대/소문자를 무시하려면
-         * [샘플 쿼리 - 대소문자](#sample-all-cities-san-ignore-case)에 관계없이 이름에 SAN이 있는 모든 도시 참조
-
-
-
-
-
-
-
-
-
-
-* GraphQL 결합 유형은 다음과 같이 지원됩니다.
-
-   * `... on` 사용
-      * 내용 참조가 있는 특정 모델의 컨텐츠 조각에 대한 [샘플 쿼리를 참조하십시오](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL - 샘플 컨텐츠 조각 구조를 사용하는 샘플 쿼리 {#graphql-sample-queries-sample-content-fragment-structure}
 
