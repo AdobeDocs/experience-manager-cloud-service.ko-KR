@@ -3,9 +3,9 @@ title: Adobe Experience Manager용 OSGi를 Cloud Service으로 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
 feature: 배포
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ OSGi의 일반적인 경우 인라인 OSGi 구성 값을 사용합니다. 환경
 * 값은 코드 배포에 암시적으로 연결되어 있습니다.
 * 추가 배포 고려 사항 또는 조정이 필요하지 않습니다.
 
-OSGi 구성 값을 정의할 때마다 인라인 값으로 시작합니다. 사용 사례에 필요한 경우 비밀 또는 환경별 구성만 선택합니다.
+OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하고 사용 사례에 필요한 경우 비밀 또는 환경별 구성만 선택합니다.
 
 ### 비비밀 환경별 구성 값을 사용하는 경우 {#when-to-use-non-secret-environment-specific-configuration-values}
 
@@ -194,6 +194,10 @@ use $[env:ENV_VAR_NAME]
 ```
 
 고객은 사용자 지정 코드와 관련된 OSGI 구성 속성에만 이 기술을 사용해야 합니다.Adobe 정의 OSGI 구성을 재정의하는 데 사용해서는 안 됩니다.
+
+>[!NOTE]
+>
+>자리 표시자는 [repoinit 문](/help/implementing/deploying/overview.md#repoinit)에 사용할 수 없습니다.
 
 ### 비밀 구성 값 {#secret-configuration-values}
 
