@@ -2,9 +2,9 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -174,8 +174,20 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 드라이 런]:일괄 수주에 대한 테스트 실행을 호출합니다.
    * [!UICONTROL 실행]:선택한 구성을 실행합니다.
    * [!UICONTROL 중지]:활성 구성을 종료합니다.
+   * [!UICONTROL 일정]:자산을 인제스트하려면 1회 또는 반복 일정을 설정합니다.
    * [!UICONTROL 작업 상태]:진행 중인 가져오기 작업에 사용되거나 완료된 작업에 사용될 경우 구성 상태를 확인합니다.
+   * [!UICONTROL 작업 내역]:작업의 이전 인스턴스입니다.
    * [!UICONTROL 자산 보기]:대상 폴더가 있는 경우 대상 폴더를 봅니다.
+
+   ![인제스트 또는 구성을 위한 툴바 옵션](assets/bulk-ingest-toolbar-options.png)
+
+1회 또는 반복 대량 가져오기를 예약하려면 다음 단계를 수행합니다.
+
+1. 대량 가져오기 구성을 만듭니다.
+1. 구성을 선택하고 도구 모음에서 **[!UICONTROL 예약]**&#x200B;을 선택합니다.
+1. 1회 수거를 설정하거나 시간별, 일별 또는 주별 일정을 예약합니다. **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
+
+   ![일괄 인제스트 또는 작업 예약](assets/bulk-ingest-schedule1.png)
 
 ## 데스크톱 클라이언트 {#upload-assets-desktop-clients}을(를) 사용하여 에셋 업로드
 
