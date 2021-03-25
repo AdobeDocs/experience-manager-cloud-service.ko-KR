@@ -3,10 +3,10 @@ title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
+source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 29%
+source-wordcount: '2898'
+ht-degree: 27%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 29%
 
 작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용합니다. 문서는 `Download` 구성 요소에 추가되고 이미지는 `Image` 구성 요소에 추가됩니다. 작성자는 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 [!DNL Experience Manager] 구성 요소에 원격 자산을 추가합니다. 지원되는 형식은 다음과 같습니다.
 
-* **이미지 형식**:이미지 구성 요소가 지원하는  [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
+* **이미지 형식**:이미지 구성 요소가 지원하는  [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 형식입니다.
 * **문서 형식**:지원되는  [문서 형식을 참조하십시오](file-format-support.md#document-formats).
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
@@ -111,6 +111,23 @@ ht-degree: 29%
 ![구성된 연결된 에셋의 연결 테스트  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
+
+## [!DNL Sites]과 [!DNL Dynamic Media] 배포 사이의 연결 구성 {#sites-dynamic-media-connected-assets}
+
+웹 페이지 작성자가 웹 페이지에서 [!DNL Dynamic Media] 이미지를 사용할 수 있도록 하는 [!DNL Sites] 배포와 [!DNL Dynamic Media] 배포 간의 연결을 구성할 수 있습니다. 웹 페이지를 작성하는 동안 원격 자산 및 원격 [!DNL Dynamic Media] 배포를 사용하는 경험은 그대로 유지됩니다. 이렇게 하면 연결된 자산 기능(예: 스마트 자르기 및 이미지 사전 설정)을 통해 [!DNL Dynamic Media] 기능을 활용할 수 있습니다.
+
+이 연결을 구성하려면 다음 단계를 따르십시오.
+
+1. 위에 설명된 대로 연결된 자산 구성을 만듭니다. 대화 상자에서 [!DNL Dynamic Media] 연결된 자산&#x200B;]**에 대한 원래 변환 가져오기 확인란을 선택합니다.**[!UICONTROL 
+
+1. 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포에 대해 [!DNL Dynamic Media]을(를) 구성합니다. [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services)의 지침을 따릅니다.
+
+   * 모든 구성에서 동일한 회사 이름을 사용합니다.
+   * 로컬 [!DNL Sites]의 [!UICONTROL Dynamic Media 동기화 모드]에서 기본적으로 **[!UICONTROL 비활성화됨]**&#x200B;을 선택합니다. 사이트 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스만 필요합니다.
+   * 로컬 [!DNL Sites]자산 게시&#x200B;]**옵션에서**[!UICONTROL &#x200B;선택적 게시&#x200B;]**를 선택합니다.**[!UICONTROL  **[!UICONTROL 모든 콘텐트 동기화]**&#x200B;를 선택하지 마십시오.
+   * 원격 [!DNL Assets] 배포의 경우 [!UICONTROL Dynamic Media 동기화 모드]에서 기본적으로 **[!UICONTROL 활성화됨]**&#x200B;을 선택합니다.
+
+1. 이미지 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)에서 [[!DNL Dynamic Media] 지원을 활성화합니다. 이 기능을 사용하면 로컬 [!DNL Sites] 배포의 웹 페이지 작성자가 [!DNL Dynamic Media] 이미지를 사용할 때 기본 이미지 구성 요소가 [!DNL Dynamic Media] 이미지를 표시할 수 있습니다.
 
 ## 원격 자산 사용 {#use-remote-assets}
 
@@ -184,7 +201,7 @@ ht-degree: 29%
 * 로컬 자산은 원격 배포의 원본 자산과 동기화되지 않습니다. DAM 배포에 대한 권한 편집, 삭제 또는 취소는 다운스트림으로 전파되지 않습니다.
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
-* 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Dynamic Media] 자산, 콘텐츠 조각 및 경험 구성요소는 지원되지 않습니다.
+* 이미지 및 나열된 문서 형식만 지원됩니다. 컨텐츠 조각 및 경험 조각은 지원되지 않습니다.
 * [!DNL Experience Manager] 은 메타데이터 스키마를 가져오지 않습니다. 이것은 가져온 모든 메타데이터가 표시되지 않을 수 있음을 의미합니다. 스키마가 별도로 업데이트되면 모든 속성이 표시됩니다.
 * 작성자가 원격 DAM 배포에 액세스할 수 없는 경우에도 모든 [!DNL Sites] 작성자는 가져온 복사본에 대한 읽기 권한을 가집니다.
 * 통합을 사용자 지정할 수 있는 API 지원이 없습니다.
