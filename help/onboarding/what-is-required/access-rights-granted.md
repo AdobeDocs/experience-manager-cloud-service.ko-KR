@@ -2,9 +2,9 @@
 title: 액세스 권한 부여됨 - 필요한 사항
 description: 액세스 권한 부여됨 - 필요한 사항
 translation-type: tm+mt
-source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
+source-git-commit: 8259bf4e7f2004d76fd985ec7ad7c416b6f8d491
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -41,8 +41,6 @@ Adobe이 회사의 조직을 만든 후 지정된 관리자가 이 조직의 첫
 
 이러한 권한이 부여된 상태에서 관리자는 이제 단일 사인온(Adobe ID 사용)으로 설정하여 [!UICONTROL Experience Cloud] 서비스에 액세스하고, AEM 클라우드 환경에 로그인하고 [!UICONTROL Cloud Manager]를 사용합니다.
 
-## 사용자 및 역할 {#users-roles}
-
 [!UICONTROL Cloud Manager]의 많은 기능을 사용하려면 특정 권한이 필요합니다.
 
 [!UICONTROL 클라우드 ] 관리자는 현재 특정 기능의 가용성을 제어하는 4가지 역할을 정의합니다.
@@ -53,7 +51,6 @@ Adobe이 회사의 조직을 만든 후 지정된 관리자가 이 조직의 첫
 * 개발자
 
 >[!CAUTION]
->
 >[!UICONTROL Cloud Manager]를 사용하려면 Adobe ID 및 Adobe Experience Manager이 Cloud Service 제품 컨텍스트로 있어야 합니다.
 
 ### 역할 정의 {#role-definitions}
