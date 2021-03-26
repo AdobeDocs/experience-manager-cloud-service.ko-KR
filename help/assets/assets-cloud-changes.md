@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager Assets] 에  [!DNL Cloud Service]의 주목할 만한 변경 사항'
 description: '[!DNL Adobe Experience Manager 6.5와 비교하여  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 에 대한 주목할 만한 변경 사항.'
 translation-type: tm+mt
-source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
+source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 5%
@@ -56,7 +56,7 @@ Asset Microservices는 클라우드 관리자에서 관리되는 고객 프로�
 | MIME 유형 감지 | 지원되지 않음. | 확장 없이 또는 잘못된 확장자로 디지털 자산을 업로드하는 경우, 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)에서 [MIME 유형 감지를 참조하십시오. |
 | 복합 자산에 대한 하위 자산 생성 | 지원되지 않음. | 종속 사용 사례는 처리되지 않습니다. 예를 들어 여러 페이지로 된 PDF 파일의 주석에 영향을 줍니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 생성을 참조하십시오. |
 | 홈 페이지 | 지원되지 않음. | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) 참조 |
-| ZIP 보관에서 에셋 추출 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)에서 [ZIP 추출을 참조하십시오. |
+| ZIP 보관에서 에셋 추출 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)에서 [ZIP 추출을 참조하십시오. |
 | 클래식 UI | 지원되지 않음. | 터치 활성화 UI만 사용할 수 있습니다. |
 
 >[!MORELIKETHIS]
