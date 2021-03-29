@@ -1,18 +1,18 @@
 ---
 title: 관련 컨텐츠
-description: 연관된 컨텐츠는 조각이 컨텐츠 페이지에 추가될 때 자산을 조각과 함께 (필요에 따라) 사용할 수 있도록 연결을 제공합니다.
+description: AEM 관련 컨텐츠 기능을 통해 헤드리스 컨텐츠 전달에 추가 유연성을 추가하여 자산을 컨텐츠 페이지에 추가할 때 조각과 함께 선택적으로 사용할 수 있도록 연결을 제공하는 방법을 이해합니다.
 translation-type: tm+mt
-source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 81%
+source-wordcount: '244'
+ht-degree: 43%
 
 ---
 
 
 # 관련 컨텐츠{#associated-content}
 
-연관된 컨텐츠는 조각이 컨텐츠 페이지에 추가될 때 자산(즉, 이미지)을 조각과 함께 필요에 따라 사용할 수 있도록 연결을 제공합니다. 이렇게 하면 [페이지에서 컨텐츠 조각을 사용할 때 액세스할 수 있는 다양한 자산을 제공](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)하는 동시에 적절한 자산을 검색하는 데 필요한 시간을 줄일 수 있으므로 유연성을 높일 수 있습니다.
+AEM 관련 컨텐츠 기능은 컨텐츠 페이지에 추가될 때 선택적으로 조각에 자산을 사용할 수 있도록 연결을 제공합니다. 이 기능은 [에서 페이지의 컨텐츠 조각을 사용할 때 액세스할 자산 범위를 제공하는 동시에](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)에서 헤드리스 컨텐츠 전달을 유연하게 할 수 있으며 적절한 자산을 검색하는 데 필요한 시간도 줄일 수 있습니다.
 
 ## 연결된 컨텐츠 추가 {#adding-associated-content}
 
