@@ -1,10 +1,10 @@
 ---
 title: 머리글 없는 컨텐츠 조각 액세스 및 제공 빠른 시작 안내서
-description: 자산 REST API를 사용하면 컨텐츠 조각을 관리할 수 있으며 GraphQL API를 사용하면 컨텐츠 조각 컨텐츠를 헤드리스(headless) 방식으로 간단하게 전달할 수 있습니다.
+description: AEM Assets REST API를 사용하여 콘텐츠 조각 및 GraphQL API를 관리하여 콘텐츠 조각 콘텐츠의 헤드리스를 제공하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 컨텐츠 조각 액세스 및 전달 헤드리스 빠른 시작 안내서 {#accessing-delivering-content-fragments}
 
-자산 REST API를 사용하면 컨텐츠 조각을 관리할 수 있으며 GraphQL API를 사용하면 컨텐츠 조각 컨텐츠를 헤드리스(headless) 방식으로 간단하게 전달할 수 있습니다.
+AEM Assets REST API를 사용하여 콘텐츠 조각 및 GraphQL API를 관리하여 콘텐츠 조각 콘텐츠의 헤드리스를 제공하는 방법을 알아봅니다.
 
 ## GraphQL 및 자산 REST API란 무엇입니까?{#what-are-the-apis}
 
