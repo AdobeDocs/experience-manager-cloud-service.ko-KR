@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증
-description: 원격 AEM GraphQL 쿼리에 필요한 인증에 대해 알아보십시오.
+description: 헤드리스 컨텐츠 전달을 보호하기 위해 원격 AEM GraphQL 쿼리에 필요한 인증을 파악합니다.
 translation-type: tm+mt
-source-git-commit: 42ca0c70f7018a6e3c9be68ef13adefafc987864
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 원격 AEM GraphQL 인증에 대한 컨텐츠 조각 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-컨텐츠 조각 전달용 [Adobe Experience Manager을 Cloud Service(AEM) GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)으로 사용하는 기본 사용 사례는 타사 응용 프로그램 또는 서비스에서 원격 쿼리를 받는 것입니다.  이러한 원격 쿼리는 인증된 API 액세스가 필요할 수 있습니다.
+컨텐츠 조각 전달용 [Adobe Experience Manager을 Cloud Service(AEM) GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)으로 사용하는 기본 사용 사례는 타사 응용 프로그램 또는 서비스에서 원격 쿼리를 받는 것입니다. 이러한 원격 쿼리는 헤드리스 컨텐츠 전달을 보호하기 위해 인증된 API 액세스가 필요할 수 있습니다.
 
 >[!NOTE]
 >
 >테스트 및 개발의 경우 [GraphiQL 인터페이스](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) 인터페이스를 사용하여 AEM GraphQL API에 직접 액세스할 수도 있습니다.
 
-인증을 위해 제3자 서비스는 [액세스 토큰](#access-token)을 사용해야 합니다. 이 토큰은 GraphQL 요청](#use-access-token-in-graphql-request)에 사용될 수 있습니다.[
+인증을 위해 제3자 서비스는 [액세스 토큰](#access-token)을 사용해야 합니다. 이 토큰은 GraphQL 요청](#use-access-token-in-graphql-request)에서 [사용될 수 있습니다.
 
 ## 액세스 토큰 {#retrieving-access-token} 검색
 
