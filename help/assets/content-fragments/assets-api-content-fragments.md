@@ -1,18 +1,20 @@
 ---
 title: 자산 HTTP API에서 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager
-description: 자산 HTTP API의 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager에 대해 알아보십시오.
+description: AEM 헤드리스 전달 기능의 중요한 부분인 자산 HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1953'
 ht-degree: 2%
 
 ---
 
 
-# AEM Assets HTTP API의 컨텐츠 조각 지원{#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API의 컨텐츠 조각 지원 {#content-fragments-support-in-aem-assets-http-api}
 
 ## 개요 {#overview}
+
+AEM 헤드리스 전달 기능의 중요한 부분인 자산 HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
 
 >[!NOTE]
 >
@@ -206,7 +208,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 >
 >하위 자산 및 폴더의 자산 유형에 따라 하위 엔티티 목록에 해당 하위 엔티티를 정의하는 전체 속성 세트가 이미 포함되어 있을 수 있습니다. 또는 이 자식 엔티티 목록의 엔티티에 대해 축소된 속성 세트만 노출될 수 있습니다.
 
-### 자산 {#assets}
+### 에셋 {#assets}
 
 자산이 요청되면 응답에서 해당 메타데이터를 반환합니다.제목, 이름 및 해당 자산 스키마에 의해 정의된 기타 정보 등.
 
