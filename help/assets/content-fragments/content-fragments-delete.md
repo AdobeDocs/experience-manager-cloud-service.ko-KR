@@ -1,16 +1,18 @@
 ---
 title: 컨텐츠 조각 - 삭제 고려 사항
-description: 컨텐츠 조각 - 삭제 고려 사항
+description: AEM에서 컨텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 사항을 검토하십시오. 컨텐츠 조각은 헤드리스 컨텐츠를 전달하기 위한 강력한 툴로, 이를 삭제하는 데 따르는 의미를 신중하게 고려해야 합니다.
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 96%
+source-wordcount: '470'
+ht-degree: 83%
 
 ---
 
 
-# 컨텐츠 조각 - 삭제 고려 사항{#content-fragments-delete-considerations}
+# 컨텐츠 조각 - 삭제 고려 사항 {#content-fragments-delete-considerations}
+
+AEM에서 컨텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 사항을 검토하십시오. 컨텐츠 조각은 헤드리스 컨텐츠를 전달하기 위한 강력한 툴로, 이를 삭제하는 데 따르는 의미를 신중하게 고려해야 합니다.
 
 ## 권한 - 삭제 또는 삭제 안 함 {#permissions-delete-or-not-delete}
 
