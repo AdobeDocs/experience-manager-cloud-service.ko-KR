@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: 배포
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
 workflow-type: tm+mt
 source-wordcount: '3247'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 고객은 Cloud Manager를 통해 클라우드 환경에 맞춤형 코드를 배포합니다. Cloud Manager는 로컬에 어셈블된 컨텐츠 패키지를 Sling 기능 모델을 준수하는 가공물로 변환한다는 점을 주의해야 합니다. 이 객체는 클라우드 환경에서 실행할 때 AEM이 Cloud Service 애플리케이션으로 설명되는 방법입니다. 따라서 클라우드 환경의 패키지 관리자에서 패키지를 볼 때 이름이 &quot;cp2fm&quot;이고 변형된 패키지에 모든 메타데이터가 제거됩니다. 상호 작용을 할 수 없으므로 다운로드, 복제 또는 열 수 없습니다. 변환기에 대한 자세한 설명서는 [여기에서 찾을 수 있습니다](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
-Cloud Service 애플리케이션으로 AEM용으로 작성된 컨텐츠 패키지는 변경할 수 없는 컨텐츠와 변경할 수 없는 컨텐츠 간의 명확한 분리를 포함해야 하며 Cloud Manager는 빌드하지 않고 다음과 같은 메시지를 게시함으로써 이를 적용합니다.
+Cloud Service 애플리케이션으로 AEM용으로 작성된 컨텐츠 패키지는 변경할 수 없는 컨텐츠와 변경할 수 없는 컨텐츠 간에 완전히 분리되어야 하며 Cloud Manager는 변경할 수 있는 컨텐츠만 설치하고 다음과 같은 메시지를 출력합니다.
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
