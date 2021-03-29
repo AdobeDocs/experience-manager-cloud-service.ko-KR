@@ -1,18 +1,18 @@
 ---
 title: 자산 폴더 헤드리스 빠른 시작 안내서 만들기
-description: 컨텐츠 조각 모델은 컨텐츠 조각 구조를 정의합니다. 컨텐츠 조각은 자산 폴더에 저장됩니다.
+description: AEM 컨텐츠 조각 모델을 사용하여 헤드리스 컨텐츠의 기반인 컨텐츠 조각 구조를 정의합니다.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 
-# 자산 폴더 헤드리스 빠른 시작 안내서 만들기{#creating-an-assets-folder}
+# 자산 폴더 헤드리스 빠른 시작 안내서 만들기 {#creating-an-assets-folder}
 
-컨텐츠 조각 모델은 컨텐츠 조각 구조를 정의합니다. 컨텐츠 조각은 자산 폴더에 저장됩니다.
+AEM 컨텐츠 조각 모델을 사용하여 헤드리스 컨텐츠의 기반인 컨텐츠 조각 구조를 정의합니다. 컨텐츠 조각은 자산 폴더에 저장됩니다.
 
 ##  자산 폴더란?{#what-is-an-assets-folder}
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 그러나 먼저 에셋 폴더를 저장할 에셋 폴더를 만들어야 합니다.
 
-자산 폴더는 컨텐츠 조각뿐만 아니라 이미지 및 비디오와 같은 기존 컨텐츠 자산[을 구성하는 데 사용됩니다.](/help/assets/manage-digital-assets.md)
+자산 폴더는 컨텐츠 조각뿐만 아니라 이미지 및 비디오와 같은 기존 컨텐츠 자산](/help/assets/manage-digital-assets.md)을 구성하는 데 사용됩니다.[
 
 ## 자산 폴더 {#how-to-create-an-assets-folder}를 만드는 방법
 
