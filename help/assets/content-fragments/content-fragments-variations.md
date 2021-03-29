@@ -1,18 +1,18 @@
 ---
 title: 변형 - 조각 컨텐츠 작성
-description: 변형을 사용하면 조각에 대한 컨텐츠를 작성한 다음 목적에 따라 해당 컨텐츠의 변형을 만들 수 있습니다(필요한 경우).
+description: 변형을 통해 조각을 위한 컨텐츠를 작성한 다음 목적에 따라 해당 컨텐츠의 변형을 만들 수 있으므로 AEM에서 헤드리스 컨텐츠를 보다 유연하게 만들 수 있는 방법을 이해합니다.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 72%
+source-wordcount: '2255'
+ht-degree: 69%
 
 ---
 
 
 # 변형 - 조각 컨텐츠 작성{#variations-authoring-fragment-content}
 
-[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)을 사용하면 특정 채널 및/또는 시나리오에서 사용할 마스터 컨텐츠의 사본을 만들고 편집할 수 있으므로 변형은 컨텐츠 조각의 중요한 기능입니다.
+[변수](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 는 특정 채널 및/또는 시나리오에서 사용할 마스터 컨텐츠의 사본을 만들고 편집할 수 있어 헤드리스 컨텐츠를 보다 유연하게 전달할 수 있으므로 AEM 컨텐츠 조각의 중요한 기능입니다.
 
 **변형** 탭에서는 다음 작업을 수행할 수 있습니다.
 
