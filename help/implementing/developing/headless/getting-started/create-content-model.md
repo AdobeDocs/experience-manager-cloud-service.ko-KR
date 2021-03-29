@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 조각 모델 생성 헤드리스 빠른 시작 안내서
-description: 컨텐츠 조각 모델은 AEM 헤드리스 기능을 사용하여 만들고 제공할 컨텐츠의 구조를 정의합니다.
+description: 컨텐츠 조각 모델을 사용하여 만들고 AEM 헤드리스 기능을 사용하여 제공할 컨텐츠의 구조를 정의합니다.
 translation-type: tm+mt
-source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 컨텐츠 조각 모델 만들기 헤드리스 빠른 시작 안내서 {#creating-content-fragment-models}
 
-컨텐츠 조각 모델은 AEM 헤드리스 기능을 사용하여 만들고 제공할 컨텐츠의 구조를 정의합니다.
+컨텐츠 조각 모델을 사용하여 만들고 AEM 헤드리스 기능을 사용하여 제공할 컨텐츠의 구조를 정의합니다.
 
 ## 컨텐츠 조각 모델이란 무엇입니까?{#what-are-content-fragment-models}
 
