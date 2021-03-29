@@ -1,18 +1,18 @@
 ---
 title: 미리 보기 - JSON 표현
-description: 조각의 JSON 표현 미리 보기
+description: AEM 헤드리스 솔루션을 구현할 때 컨텐츠 조각의 JSON 표현을 손쉽게 미리 보는 방법을 살펴봅니다.
 translation-type: tm+mt
-source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 2%
+source-wordcount: '113'
+ht-degree: 1%
 
 ---
 
 
 # 미리 보기 - JSON 표현 {#preview-json-representation}
 
-컨텐츠 조각에 대한 모델을 개발할 때 모델을 기반으로 컨텐츠 조각에 대한 샘플 JSON 출력을 볼 수 있습니다. 예를 들어 최종 출력이 어떻게 표시될지 알 수 있습니다. 이것은 모델 JSON 구조의 유효성을 검사할 때 유용할 수 있으며 데이터 유형별로 기본 샘플 콘텐츠가 있을 수 있습니다.
+AEM 헤드리스 구현의 일부로 컨텐츠 조각에 대한 모델을 개발할 때 모델에 따라 컨텐츠 조각에 대한 샘플 JSON 출력을 볼 수 있습니다. 예를 들어 최종 출력이 어떻게 표시될지 알 수 있습니다. 이것은 모델 JSON 구조의 유효성을 검사할 때 유용할 수 있으며 데이터 유형별로 기본 샘플 콘텐츠가 있을 수 있습니다.
 
 **미리 보기** 아이콘 사용:
 
