@@ -1,16 +1,18 @@
 ---
 title: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
-description: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
+description: 샘플 컨텐츠 및 쿼리를 살펴보면서 AEM과 함께 GraphQL을 사용하여 컨텐츠를 헤드없이 제공하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1418'
 ht-degree: 6%
 
 ---
 
 
 # AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
+
+샘플 컨텐츠 및 쿼리를 살펴보면서 AEM과 함께 GraphQL을 사용하여 컨텐츠를 헤드없이 제공하는 방법을 살펴볼 수 있습니다.
 
 >[!NOTE]
 >
