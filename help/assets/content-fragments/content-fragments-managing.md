@@ -1,16 +1,18 @@
 ---
 title: 컨텐츠 조각 관리
-description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
+description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 80%
+source-wordcount: '1640'
+ht-degree: 78%
 
 ---
 
 
-# 컨텐츠 조각 관리{#managing-content-fragments}
+# 컨텐츠 조각 관리 {#managing-content-fragments}
+
+자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
 
 컨텐츠 조각은 **자산**&#x200B;으로 저장되므로 **자산** 콘솔에서 주로 관리됩니다.
 
