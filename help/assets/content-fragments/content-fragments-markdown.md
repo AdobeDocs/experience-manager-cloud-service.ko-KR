@@ -1,18 +1,18 @@
 ---
 title: Markdown
-description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
+description: 컨텐츠 조각 편집기에서 헤드리스 컨텐츠를 쉽게 만들 수 있도록 마크다운 구문을 사용하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 05e2ccd53749fe7b0ac516688a1d205d46fc3492
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 
-# Markdown{#markdown}
+# Markdown {#markdown}
 
-[작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) 시 컨텐츠 조각 편집기에서는 *Markdown* 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
+[authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)인 경우, 컨텐츠 조각 편집기는 *markdown* 구문을 사용하여 헤드리스 컨텐츠를 쉽게 작성할 수 있도록 해줍니다.
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
