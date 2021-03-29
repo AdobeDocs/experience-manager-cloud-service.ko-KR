@@ -1,18 +1,18 @@
 ---
 title: 컨텐츠 조각을 사용한 작업
-description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 Cloud Service으로 사용하여 페이지에 구애받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
+description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 Cloud Service으로 사용하여 헤드리스 전달에 적합한 페이지에 구애받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 77%
+source-wordcount: '2035'
+ht-degree: 75%
 
 ---
 
 
-# 컨텐츠 조각을 사용한 작업{#working-with-content-fragments}
+# 컨텐츠 조각을 사용한 작업 {#working-with-content-fragments}
 
-AEM(Adobe Experience Manager)을 Cloud Service으로 사용하면 컨텐츠 조각을 통해 페이지에 구애받지 않는 컨텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md)를 디자인, 작성, 조정 및 게시할 수 있습니다. [ 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
+AEM(Adobe Experience Manager)을 Cloud Service으로 사용하면 컨텐츠 조각을 통해 페이지에 구애받지 않는 컨텐츠 디자인, 만들기, 조정 및 [게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 헤드리스 전달에 이상적인 여러 위치/여러 채널에서 사용할 수 있도록 컨텐츠를 준비할 수 있습니다.
 
 컨텐츠 조각에는 구조화된 컨텐츠가 포함되어 있습니다.
 
