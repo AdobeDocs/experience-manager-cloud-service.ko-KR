@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 조각 만들기 헤드리스 빠른 시작 안내서
-description: 컨텐츠 조각을 사용하면 AEM에서 헤드없이 전달할 수 있는 페이지 독립적인 컨텐츠를 디자인, 제작, 조정 및 사용할 수 있습니다.
+description: 헤드리스 전달을 위해 AEM 컨텐츠 조각을 사용하여 페이지에 구애받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴봅니다.
 translation-type: tm+mt
-source-git-commit: fa2fee3139acd60ea96222752785cf397978a2bc
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 콘텐츠 조각 만들기 헤드리스 빠른 시작 안내서 {#creating-content-fragments}
 
-컨텐츠 조각을 사용하면 AEM에서 헤드없이 전달할 수 있는 페이지 독립적인 컨텐츠를 디자인, 제작, 조정 및 사용할 수 있습니다.
+헤드리스 전달을 위해 AEM 컨텐츠 조각을 사용하여 페이지에 구애받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴봅니다.
 
 ## 컨텐츠 조각이란 무엇입니까?{#what-are-content-fragments}
 
