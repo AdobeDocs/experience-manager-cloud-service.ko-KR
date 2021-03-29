@@ -1,10 +1,10 @@
 ---
 title: Cloud Service의 헤드리스 개발
-description: AEM은 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 강력한 기능을 Cloud Service으로 사용하여 중앙에서 경험을 관리하고 다양한 채널에 제공할 수 있습니다.
+description: 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 Cloud Service의 강력한 헤드리스 기능인 AEM을 사용하여 중앙에서 경험을 관리하고 다양한 채널에 전달하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '583'
 ht-degree: 4%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # AEM Sites {#headless-development}으로 Cloud Service에 대한 헤드리스 개발
 
-AEM은 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 강력한 기능을 Cloud Service으로 사용하여 중앙에서 경험을 관리하고 다양한 채널에 제공할 수 있습니다.
+컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 Cloud Service의 강력한 헤드리스 기능인 AEM을 사용하여 중앙에서 경험을 관리하고 다양한 채널에 전달하는 방법을 살펴볼 수 있습니다.
 
 ## 개요 {#overview}
 
@@ -32,7 +32,7 @@ AEM은 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 강력한 �
 
 ## AEM을 Cloud Service으로 사용하고 헤드리스 {#aem-headless}
 
-CLOUD SERVICE의 AEM은 3개의 강력한 서비스를 제공하여 헤드리스 구현 모델을 위한 유연한 툴입니다.
+Cloud Service의 AEM은 3개의 강력한 서비스를 제공하여 헤드리스 구현 모델을 위한 유연한 툴입니다.
 
 1. 컨텐츠 모델
    * 컨텐츠 모델은 컨텐츠의 구조화된 표현입니다.
