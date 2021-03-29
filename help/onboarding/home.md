@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -19,10 +19,14 @@ ht-degree: 92%
 이 섹션에서는 다음 사항에 초점을 둔 주요 문서를 다룹니다.
 
 * Cloud Service으로 AEM 시작하기
-* 특정 기능의 가용성을 제어하는 사용자 역할 이해
-* Cloud Manager git 저장소 설정
+
+* 특정 기능의 가용성을 제어하는 사용자의 역할 이해
+
+* Cloud Manager의 git 리포지토리 설정
+
 * Experience Manager as a Cloud Service 액세스
-* 데이터 보호 및 개인 정보 보호 규정의 기초 사항
+
+* 데이터 보호 및 개인 정보 보호 규정의 기초
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
