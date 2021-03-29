@@ -1,10 +1,10 @@
 ---
 title: 구성 헤드리스 빠른 시작 안내서 만들기
-description: AEM에서 Cloud Service으로 헤드리스를 시작하기 위한 첫 번째 단계로 구성을 만들어야 합니다.
+description: AEM에서 헤드리스를 Cloud Service으로 시작하기 위한 첫 번째 단계로 구성을 만듭니다.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '333'
 ht-degree: 2%
 
 ---
