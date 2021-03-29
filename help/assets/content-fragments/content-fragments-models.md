@@ -1,18 +1,18 @@
 ---
 title: 컨텐츠 조각 모델
-description: 컨텐츠 조각 모델은 구조화된 컨텐츠와 함께 컨텐츠 조각을 생성하는 데 사용됩니다.
+description: 컨텐츠 조각 모델이 AEM에서 헤드리스 컨텐츠의 기초로 사용되는 방식과 구조화된 컨텐츠가 포함된 컨텐츠 조각을 생성하는 방법을 살펴볼 수 있습니다.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
-ht-degree: 26%
+source-wordcount: '2199'
+ht-degree: 25%
 
 ---
 
 
 # 컨텐츠 조각 모델 {#content-fragment-models}
 
-컨텐츠 조각 모델은 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)에 대한 컨텐츠 구조를 정의합니다.
+AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초 역할을 하는 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)에 대한 컨텐츠 구조를 정의합니다.
 
 컨텐츠 조각 모델을 사용하려면 다음을 수행합니다.
 
