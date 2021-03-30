@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: 배포
 role: 건축가, 개발자
 translation-type: tm+mt
-source-git-commit: 974c7d20d7896b749e07b05d0149ed16dc7e0cd5
+source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 31%
+source-wordcount: '672'
+ht-degree: 29%
 
 ---
 
@@ -19,24 +19,22 @@ ht-degree: 31%
 
 + [AEM as a Cloud Service 온보딩](/help/onboarding/home.md)
 + Cloud Service {#what-is-required}으로 AEM 시작하기
-   + [부여된 액세스 권한](what-is-required/access-rights-granted.md)
-   + [역할 기반 권한](what-is-required/role-based-permissions.md)
-   + [소스 코드 저장소](what-is-required/source-code-repository.md)
-+ 클라우드에서 AEM에 액세스 {#getting-access}
-   + [Cloud Service으로 AEM용 Cloud Manager 액세스](getting-access-to-aem-in-cloud/navigation.md)
-   + Cloud Manager 액세스 {#cloud-service-programs}
-      + [Cloud Manager 랜딩 페이지](getting-access-to-aem-in-cloud/first-time-login.md)
-      + [프로그램 및 프로그램 유형 이해](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + 프로덕션 프로그램 {#production-programs}
-         + [소개](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [프로덕션 프로그램 만들기](getting-access-to-aem-in-cloud/creating-production-program.md)
-         + [프로덕션 프로그램 편집](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + 샌드박스 프로그램 {#sandbox-programs}
-         + [소개](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [샌드박스 프로그램 만들기](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-         + [샌드박스 프로그램 편집](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-         + [샌드박스 프로그램 삭제](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-         + [동면작업 및 동면제거 샌드박스 환경](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + [Adobe ID 다운로드](what-is-required/get-your-adobe-id.md)
+   + [사용자 추가 및 클라우드 관리자 역할에 할당](what-is-required/add-users-assign-cm-roles.md)
+   + [클라우드 관리자로 이동](what-is-required/navigate-to-cloud-manager.md)
+   + [AEM 인스턴스 액세스](/help/onboarding/what-is-required/accessing-aem-instance.md)
++ 클라우드 관리자 프로그램 {#getting-access}
+   + [프로그램 및 프로그램 유형 이해](getting-access-to-aem-in-cloud/understand-program-types.md)
+   + 프로덕션 프로그램 {#production-programs}
+      + [소개](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [프로덕션 프로그램 만들기](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [프로덕션 프로그램 편집](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + 샌드박스 프로그램 {#sandbox-programs}
+      + [소개](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [샌드박스 프로그램 만들기](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [샌드박스 프로그램 편집](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [샌드박스 프로그램 삭제](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [동면작업 및 동면제거 샌드박스 환경](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Cloud Manager 사용 {#using-cloud-manager}
       + [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
       + [CI/CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
