@@ -2,31 +2,46 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 86%
+source-wordcount: '642'
+ht-degree: 51%
 
 ---
 
 
 # Experience Manager as a Cloud Service에 온보딩{#aem-onboarding-guide}
 
-이 페이지에는 Experience Manager as a Cloud Service에 대한 온보딩용 자습 리소스들이 나열됩니다.
+Cloud Service으로 AEM을 사용해 주셔서 감사합니다! 새 응용 프로그램을 배포하거나 기존 응용 프로그램을 마이그레이션하는 것과 상관없이 이 안내서는 응용 프로그램이 Cloud Service에 맞게 최적화되어 성공할 수 있도록 도와주는 시작 지점 역할을 합니다.
 
 ## 주요 온보딩 문서 {#key-articles}
 
-이 섹션에서는 다음 사항에 초점을 둔 주요 문서를 다룹니다.
+이 섹션에서는 Cloud Service으로 AEM을 시작할 때 여정에 초점을 맞춘 주요 아티클을 다룹니다.
 
-* Cloud Service으로 AEM 시작하기
+**온보딩 작업 시 예상되는 사항**
 
-* 특정 기능의 가용성을 제어하는 사용자의 역할 이해
+계약이 체결되면 다음 이벤트가 발생합니다.
 
-* Cloud Manager의 git 리포지토리 설정
+1. 조직의 시스템 관리자는 시작 이메일을 수신하게 되므로 사용자를 추가하고 역할에 할당하여 해당 Cloud Manager에 대한 액세스 권한을 제공하는 [관리자 작업](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)을(를) 수행할 수 있습니다.
 
-* Experience Manager as a Cloud Service 액세스
+1. 그러면 시스템 관리자가 추가한 사용자가 클라우드 관리자에 액세스할 수 있음을 알리는 환영 이메일을 받게 됩니다. 이제 사용자는 여기에서 Cloud Manager를 사용하여 여정을 시작할 수 있습니다.
 
-* 데이터 보호 및 개인 정보 보호 규정의 기초
+1. 개발용으로 AEM 인스턴스](/help/onboarding/what-is-required/accessing-aem-instance.md)에 대한 액세스 권한을 추가로 사용자에게 부여할 수 있습니다.[
+
+**팀, 역할 및 권한**
+
+시스템 관리자는 사용자를 추가하고 Cloud Manager 역할에 할당할 수 있습니다. 이 섹션에서는 *클라우드 관리자 역할*&#x200B;이(가) 무엇인지, 시작하기 전에 역할과 연관된 권한을 이해하는 데 도움이 됩니다.
+
+**시스템 관리자 작업**
+
+시스템 관리자는 액세스 권한에서부터 사용 권한에 이르기까지 사용자의 모든 측면을 관리합니다. 다음 설명서 페이지에는 [사용자 추가 및 Cloud Manager 역할 및 권한에 사용자 할당](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) 등의 기본적인 조직 작업을 설명하는 정보가 포함되어 있습니다.
+
+
+**클라우드 관리자로 이동**
+
+Cloud Manager에 액세스하여 AEM에서 클라우드 여정을 시작할 수 있습니다. 사용자로 추가되고 클라우드 관리자 역할에 할당되었으므로 프로그램 만들기, 환경 추가, Git 관리, 파이프라인 구성, 코드 배포 등 다양한 작업을 수행할 수 있습니다.
+
+**AEM 인스턴스 액세스**
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
