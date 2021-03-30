@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 1%
@@ -119,7 +119,7 @@ ht-degree: 1%
 
 **환경** 카드의 드롭다운 메뉴에서 **액세스 관리**&#x200B;를 선택합니다. 작성 인스턴스로 직접 이동하고 환경에 대한 액세스를 관리할 수 있습니다.
 
-자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem)를 참조하십시오.
+자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](/help/onboarding/what-is-required/accessing-aem-instance.md)를 참조하십시오.
 
 ![](assets/environ-access.png)
 
