@@ -7,9 +7,9 @@ feature-set: Experience Manager Sites
 feature: 배포
 role: 건축가, 개발자
 translation-type: tm+mt
-source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '671'
 ht-degree: 29%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 29%
 + [AEM as a Cloud Service 온보딩](/help/onboarding/home.md)
 + Cloud Service {#what-is-required}으로 AEM 시작하기
    + [Adobe ID 다운로드](what-is-required/get-your-adobe-id.md)
-   + [사용자 추가 및 클라우드 관리자 역할에 할당](what-is-required/add-users-assign-cm-roles.md)
+   + [사용자 역할 및 권한](what-is-required/user-roles-permissions.md)
+   + [시스템 관리자 작업](what-is-required/add-users-assign-cm-roles.md)
    + [클라우드 관리자로 이동](what-is-required/navigate-to-cloud-manager.md)
    + [AEM 인스턴스 액세스](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + 클라우드 관리자 프로그램 {#getting-access}
