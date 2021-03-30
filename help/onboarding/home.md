@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: d6721940f2260cf61c83f01106fa2781e2f35b1f
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 49%
+source-wordcount: '695'
+ht-degree: 47%
 
 ---
 
@@ -30,20 +30,19 @@ Cloud Service으로 AEM을 사용해 주셔서 감사합니다! 새 응용 프�
 
 **[팀, 역할 및 권한](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
-시스템 관리자는 사용자를 추가하고 Cloud Manager 역할에 할당할 수 있습니다. 이 섹션에서는 시작하기 전에 [클라우드 관리자 역할](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles)과 역할에 연결된 [권한](/help/onboarding/what-is-required/user-roles-permissions.md#permissions)을 이해하는 데 도움이 됩니다.
+시스템 관리자는 사용자를 추가하고 Cloud Manager 역할에 할당할 수 있습니다. 이 섹션은 시작하기 전에 역할과 연관된 [클라우드 관리자 역할](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles)과 [권한](/help/onboarding/what-is-required/user-roles-permissions.md#permissions)을 이해하는 데 도움이 됩니다.
 
 **[시스템 관리자 작업](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
 시스템 관리자는 액세스 권한에서부터 사용 권한에 이르기까지 사용자의 모든 측면을 관리합니다. 다음 설명서 페이지에는 [사용자 추가 및 Cloud Manager 역할 및 권한에 사용자 할당](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) 등의 기본적인 조직 작업을 설명하는 정보가 포함되어 있습니다.
 
-
 **[클라우드 관리자로 이동](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Cloud Manager에 액세스하여 AEM에서 클라우드 여정을 시작할 수 있습니다. 사용자로 추가되고 클라우드 관리자 역할에 할당되었으므로 프로그램](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [환경](/help/implementing/cloud-manager/manage-environments.md) 추가, [Git](/help/implementing/cloud-manager/accessing-git.md) 액세스, [파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md) 및 [코드 배포](/help/implementing/cloud-manager/deploy-code.md)와 같은 다양한 작업을 수행할 수 있습니다.[
+AEM에서 Cloud 여정을 시작하려면 이 섹션을 따르십시오. 사용자로 추가되고 클라우드 관리자 역할에 할당되었으므로 프로그램](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [환경 추가](/help/implementing/cloud-manager/manage-environments.md), [Git](/help/implementing/cloud-manager/accessing-git.md) 액세스, [파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md) 및 [코드 배포](/help/implementing/cloud-manager/deploy-code.md)와 같은 다양한 작업을 수행할 수 있습니다.[
 
-**[AEM 인스턴스 액세스](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+**[AEM 인스턴스에 대한 사용자 액세스 권한 부여](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-시스템 관리자는 사용자에게 Cloud Manager UI 또는 Admin Console에서 AEM 인스턴스에 대한 액세스 권한을 부여할 수 있습니다.
+시스템 관리자가 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여하거나 환경을 만든 사용자가 다른 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여할 수 있는 방법을 알아보려면 이 섹션을 따르십시오.
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
