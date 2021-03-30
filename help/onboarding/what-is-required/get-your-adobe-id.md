@@ -2,7 +2,7 @@
 title: Adobe ID 다운로드
 description: Adobe ID 다운로드
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe ID {#adobe-id} 가져오기
+# Adobe ID {#adobe-id} 다운로드
 
 이 가이드는 사용자와 팀이 Cloud Manager를 신속하게 시작할 수 있는 체크리스트를 제공합니다. Cloud Manager에 지정된 역할(Admin Console의 제품 프로필이라고 함) 및 관련 권한에 사용자를 추가하려면 Adobe ID 및 시스템 관리자의 도움이 필요합니다. 시스템 관리자가 Admin Console을 통해 이 작업을 수행하는 방법에 대한 지침은 설명합니다.
 
