@@ -2,10 +2,10 @@
 title: 사용자 역할 및 권한
 description: 이 페이지에서는 사용자 역할 및 권한을 설명합니다. 사용자를 추가하고 Cloud Manager 역할에 할당하는 방법을 알려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: f09b688db23024d59f39b53766060b6f3b14e564
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 7%
+source-wordcount: '624'
+ht-degree: 6%
 
 ---
 
@@ -18,6 +18,10 @@ Adobe은 IMS(Adobe Identity Management System)에서 회사에 대한 **조직**
 
 Cloud Manager의 많은 기능을 사용하려면 특정 권한이 필요합니다.
 
+Cloud Manager의 많은 기능은 특정 권한을 필요로 하며, 할당된 역할 및 권한에 따라 사용자 인터페이스에서 수행하는 작업을 제한합니다. 경우에 따라 작업을 수행할 권한이 없으면 인터페이스 컨트롤이 있지만 비활성화됩니다.
+
+수행할 작업이 있지만 수행할 수 없는 경우에는 역할 정의](#permissions)에 연결된 [권한을 확인하십시오. 목표에 따라 시스템 관리자에게 연락하여 필요한 역할을 요청할 수 있습니다.
+
 Cloud Manager는 현재 특정 기능의 가용성을 제어하는 4개의 역할을 정의합니다.
 
 * 비즈니스 소유자
@@ -28,6 +32,8 @@ Cloud Manager는 현재 특정 기능의 가용성을 제어하는 4개의 역�
 >[!NOTE]
 >Admin Console의 개발자 모습은 [!UICONTROL 클라우드 관리자]의 개발자 역할과 관련이 없습니다.
 
+## 역할 정의 {#role-definitions}
+
 다음 표에 역할이 요약되어 있습니다.
 
 | [!UICONTROL 클라우드 ] 관리자 역할 | 설명 |
@@ -37,6 +43,12 @@ Cloud Manager는 현재 특정 기능의 가용성을 제어하는 4개의 역�
 | 배포 관리자 | 배포 작업을 관리합니다. [!UICONTROL 클라우드 관리자]를 사용하여 스테이지/프로덕션 배포를 실행합니다. CI/CD 파이프라인을 편집할 수 있습니다. 중요한 3-계층 오류를 승인할 수 있습니다. Git 리포지토리에 액세스할 수 있습니다. |
 | 개발자 | 사용자 정의 응용 프로그램 코드를 개발하고 테스트합니다. 주로 [!UICONTROL 클라우드 관리자]를 사용하여 상태를 봅니다. 코드 커밋을 위해 Git 리포지토리에 액세스할 수 있습니다. |
 | 컨텐츠 작성자 | 일반적으로 [!UICONTROL 클라우드 관리자]와 상호 작용하지 않습니다. [!UICONTROL 클라우드 관리자] 프로그램 전환기([!UICONTROL Experience Cloud]에서 이동)를 사용하여 AEM에 액세스할 수 있습니다. |
+
+### 역할 보기 {#view-roles}
+
+Cloud Manager에서 역할을 보려면 Cloud Manager UI에 로그인하고 오른쪽 상단 모서리에서 프로필 아이콘을 선택하고 아래 그림과 같이 **사용자 역할**&#x200B;을 선택합니다.
+
+![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### 통합 제품 프로필 {#integration-product-profile}
 
