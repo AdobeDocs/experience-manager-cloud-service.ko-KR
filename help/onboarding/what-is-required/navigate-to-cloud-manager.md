@@ -2,7 +2,7 @@
 title: 클라우드 관리자로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: e77fb8bc94d8be2d8613075f4b1638aab1d2fcbe
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 클라우드 관리자 {#cloud-manager} 탐색
+# 클라우드 관리자 {#cloud-manager}로 이동합니다.
 
 시스템 관리자가 Cloud Manager에 대한 액세스 권한을 부여하면 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)을(를) 통해서도 액세스할 수 있는 Cloud Manager 로그인 페이지로 안내하는 이메일을 받게 됩니다.
 
