@@ -2,7 +2,7 @@
 title: 클라우드 관리자로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
+source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-여기서 클라우드 관리자의 비즈니스 소유자 역할 등 권한이 부여된 사용자는 **프로그램 추가**&#x200B;를 선택하여 마법사를 시작할 수 있습니다.
+여기서 클라우드 관리자의 비즈니스 소유자 역할 등 권한이 부여된 사용자는 **프로그램 추가**&#x200B;를 선택하여 [마법사](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md)를 시작할 수 있습니다.
 
 Cloud Manager에서 프로그램을 추가하는 방법에 대해 알아보려면 다음을 참조하십시오.
 
