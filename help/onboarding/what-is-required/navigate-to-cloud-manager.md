@@ -1,0 +1,62 @@
+---
+title: 클라우드 관리자로 이동
+description: Cloud Manager 랜딩 페이지로 이동하는 방법을 알려면 이 페이지를 따르십시오
+translation-type: tm+mt
+source-git-commit: e77fb8bc94d8be2d8613075f4b1638aab1d2fcbe
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 0%
+
+---
+
+
+# 클라우드 관리자 {#cloud-manager} 탐색
+
+시스템 관리자가 Cloud Manager에 대한 액세스 권한을 부여하면 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)을(를) 통해서도 액세스할 수 있는 Cloud Manager 로그인 페이지로 안내하는 이메일을 받게 됩니다.
+
+>[!NOTE]
+>사용자로 추가되고 시스템 관리자가 클라우드 관리자 역할(Admin Console의 제품 프로필)에 할당해야 합니다.
+
+1. 시작 이메일에서 **시작하기**&#x200B;를 선택하거나 [클라우드 관리자](https://experience.adobe.com)로 이동하여 Adobe ID을 사용하여 로그인합니다.
+
+1. **Experience Manager**을 선택합니다.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+
+1. 클라우드 관리자 카드의 **시작**을 클릭합니다.
+[!UICONTROL 클라우드 관리자]에 로그인하면 사용자 인터페이스(UI)를 사용할 수 있습니다.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+
+
+## 클라우드 관리자 랜딩 페이지 {#cloud-manager-landing}
+
+로그인하면 Cloud Manager의 랜딩 페이지로 이동합니다.
+
+>[!NOTE]
+>[!UICONTROL 클라우드 관리자]에 할당된 역할 및 응용 프로그램 상태에 따라 [!UICONTROL 클라우드 관리자] UI를 사용하는 동안 다른 화면이 표시됩니다.
+
+아래 설명된 3가지 옵션 중 하나가 표시됩니다.
+
+* **Cloud Manager에 프로그램 없음**
+
+   조직에 프로그램이 없는 경우 아래 그림과 같이 랜딩 페이지에서 첫 번째 프로그램을 만들 수 있습니다.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+* **Cloud Manager에 프로그램이 이미 있는 경우**
+
+   조직에 프로그램이 이미 존재하는 경우 랜딩 페이지에서 다른 프로그램을 추가하고 아래 그림과 같이 기존의 모든 프로그램을 표시합니다.
+
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+* **프로그램이 존재하며 사용자가 시스템 관리자인 경우**
+
+   조직에 프로그램이 이미 있고 사용자가 시스템 관리자인 경우 아래 그림과 같이 랜딩 페이지에 **프로그램 추가** 옵션과 함께 **액세스 관리** 단추가 표시됩니다.
+
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+여기서 클라우드 관리자의 비즈니스 소유자 역할 등 권한이 부여된 사용자는 **프로그램 추가**&#x200B;를 선택하여 마법사를 시작할 수 있습니다.
+
+Cloud Manager에서 프로그램을 추가하는 방법에 대해 알아보려면 다음을 참조하십시오.
+
+* [프로덕션 프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+
+* [샌드박스 프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
