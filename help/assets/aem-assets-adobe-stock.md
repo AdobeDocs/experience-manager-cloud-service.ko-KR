@@ -2,10 +2,12 @@
 title: ' [!DNL Assets]에서  [!DNL Adobe Stock] 자산을 관리합니다.'
 description: ' [!DNL Adobe Experience Manager] 내에서  [!DNL Adobe Stock] 자산을 검색, 가져오기, 라이센스 부여 및 관리합니다. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.'
 contentOwner: AG
+feature: 검색,Adobe Stock
+role: 관리자,비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '990'
 ht-degree: 3%
 
 ---
@@ -114,7 +116,7 @@ ht-degree: 3%
 
 * **잘못된 라이센스 유형이 표시됩니다**.에셋에 대해 잘못된 라이선스 유형 [!DNL Experience Manager] 이 표시될 수 있습니다. 사용자는 [!DNL Adobe Stock] 웹 사이트에 로그인하여 라이센스 유형을 확인할 수 있습니다.
 
-* **참조 필드 및 메타데이터는 동기화되지** 않습니다.사용자가 라이센스 참조 필드를 업데이트하면 라이센스 참조 정보가 웹 사이트 [!DNL Experience Manager] 에서 업데이트되지만  [!DNL Adobe Stock] 웹 사이트에서는 업데이트되지 않습니다. 마찬가지로 사용자가 [!DNL Adobe Stock] 웹 사이트의 참조 필드를 업데이트하면 업데이트가 [!DNL Experience Manager]에서 동기화되지 않습니다.
+* **참조 필드 및 메타데이터는 동기화되지** 않습니다.사용자가 라이센스 참조 필드를 업데이트하면 라이센스 참조 정보가 웹 사이트 [!DNL Experience Manager] 에서 업데이트되지만 웹 사이트에서는 업데이트되지  [!DNL Adobe Stock] 않습니다. 마찬가지로 사용자가 [!DNL Adobe Stock] 웹 사이트의 참조 필드를 업데이트하면 업데이트가 [!DNL Experience Manager]에서 동기화되지 않습니다.
 
 >[!MORELIKETHIS]
 >
