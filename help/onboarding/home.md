@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 39%
+source-wordcount: '924'
+ht-degree: 38%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 39%
 
 Cloud Service으로 AEM을 사용해 주셔서 감사합니다! 새 응용 프로그램을 배포하거나 기존 응용 프로그램을 마이그레이션하는 것과 상관없이 이 안내서는 응용 프로그램이 Cloud Service에 맞게 최적화되어 성공을 이룰 수 있도록 도와주는 시작 지점 역할을 합니다.
 
-이 가이드는 사용자와 팀이 Cloud Manager를 신속하게 시작할 수 있는 체크리스트를 제공합니다. Cloud Manager에 사용자가 할당된 역할(Admin Console의 제품 프로필이라고 함) 및 관련 권한에 추가하도록 하려면 Adobe ID 및 시스템 관리자의 도움이 필요합니다. 시스템 관리자가 Admin Console을 통해 이 작업을 수행하는 방법에 대한 지침은 [여기](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)에 설명되어 있습니다. Admin Console에서 제품 프로필이라고 하는 클라우드 관리자 역할 목록과 관련 권한은 조직의 다양한 사용자에게 어떤 역할이 필요한지 결정할 수 있도록 자세히 설명되어 있습니다.
+이 가이드는 사용자와 팀이 Cloud Manager를 신속하게 시작하는 데 도움이 됩니다. Cloud Manager에 사용자가 할당된 역할(Admin Console의 제품 프로필이라고 함) 및 관련 권한에 추가하도록 하려면 Adobe ID 및 시스템 관리자의 도움이 필요합니다. 시스템 관리자가 Admin Console을 통해 이 작업을 수행하는 방법에 대한 지침은 설명합니다. Admin Console에서 제품 프로필이라고 하는 클라우드 관리자 역할 목록과 관련 권한은 조직의 다양한 사용자에게 어떤 역할이 필요한지 결정할 수 있도록 자세히 설명되어 있습니다.
 
-다음 이미지는 온보딩 여정을 보여주고, 시스템 관리자가 받은 환영 이메일을 시작으로 AEM용 Cloud Manager를 Cloud Service으로 액세스하는 사용자에게 그 절정에 이릅니다.
+다음 이미지는 온보딩 여정을 보여주고, 시스템 관리자가 받은 환영 이메일을 시작으로 AEM용 Cloud Manager를 Cloud Service으로 액세스하는 사용자에게 그 취지를 알리는 것입니다.
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
@@ -28,12 +28,15 @@ Cloud Service으로 AEM을 사용해 주셔서 감사합니다! 새 응용 프�
 
 계약이 체결되면 다음 이벤트가 발생합니다.
 
-1. Adobe은 조직의 시스템 관리자가 시작 이메일을 수신하여 사용자를 추가하고, 사용자를 역할에 할당하여 해당 [Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)에 대한 액세스 권한을 제공하는 [시스템 관리자 작업](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)을(를) 수행할 수 있도록 합니다.
+1. Adobe은 조직의 시스템 관리자가 시작 이메일을 통해 [시스템 관리자 작업](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)에 사용자를 추가하고, 사용자를 역할에 할당하고, 적절한 [Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)에 대한 액세스 권한을 부여할 수 있도록 합니다.
 
-1. 그러면 시스템 관리자가 추가한 사용자가 클라우드 관리자](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)에 대한 액세스 권한이 있음을 알리는 환영 이메일을 받게 됩니다. [ 이제 사용자는 자신의 [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)을(를) 사용하여 로그인하고 여기에서 Cloud Manager로 여정을 시작할 수 있습니다.
+1. 그러면 시스템 관리자가 추가한 사용자가 시작 이메일을 수신하게 되므로 [클라우드 관리자](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)로 이동할 수 있습니다. 이제 사용자는 Adobe ID을 사용하여 여기에서 Cloud Manager로 로그인하고 여정을 시작할 수 있습니다.
 
+1. 시스템 관리자는 개발용으로 [사용자에게 AEM 인스턴스](/help/onboarding/what-is-required/accessing-aem-instance.md)에 대한 액세스 권한을 부여할 수 있습니다.
 
-1. 개발용으로 AEM 인스턴스](/help/onboarding/what-is-required/accessing-aem-instance.md)에 대한 액세스 권한을 추가로 사용자에게 부여할 수 있습니다.[
+**[Adobe ID 다운로드](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+
+Cloud Manager에 사용자가 할당된 역할에 추가하도록 하려면 Adobe ID 및 시스템 관리자의 도움이 필요합니다.
 
 **[사용자 역할 및 권한](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
