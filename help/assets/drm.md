@@ -2,10 +2,12 @@
 title: ' [!DNL Assets]의 Digital Rights Management'
 description: ' [!DNL Experience Manager] 에서 [!DNL Cloud Service]의 라이선스가 부여된 자산에 대한 에셋 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
+feature: 자산 관리,DRM
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -93,7 +95,7 @@ ht-degree: 0%
 1. 검토 작업의 자산을 검토 및 승인/거부하고 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 1. 검토 작업을 만든 폴더로 이동합니다. 승인/거부를 수행한 자산의 상태는 카드 보기의 맨 아래에 표시됩니다. 목록 보기에서는 승인 및 만료 상태가 적절한 열에 표시됩니다.
 
-1. 상태를 기반으로 자산을 검색하려면 **[!UICONTROL 검색]**&#x200B;을 클릭하여 Omniture 막대를 표시합니다.
+1. 상태를 기준으로 자산을 검색하려면 **[!UICONTROL 검색]**&#x200B;을 클릭하여 Omniture 막대를 표시합니다.
 
 1. `Return`을 선택하고 [!DNL Experience Manager]을 클릭하여 검색 패널을 표시합니다.
 1. 검색 패널에서 **[!UICONTROL 게시 상태]**&#x200B;를 클릭하고 **[!UICONTROL 게시된]**&#x200B;을 선택하여 [!DNL Assets]에서 게시된 자산을 검색합니다.
