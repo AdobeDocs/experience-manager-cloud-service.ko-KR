@@ -1,11 +1,13 @@
 ---
 title: 메타데이터 - 조각 속성
 description: AEM에서 컨텐츠 조각에 대한 메타데이터 속성을 보고 편집하여 헤드리스 컨텐츠를 조정하는 방법을 살펴봅니다.
+feature: 콘텐츠 조각
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 53%
+source-wordcount: '144'
+ht-degree: 54%
 
 ---
 
