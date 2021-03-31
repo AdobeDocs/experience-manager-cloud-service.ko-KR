@@ -1,10 +1,11 @@
 ---
 title: 컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증
 description: 헤드리스 컨텐츠 전달을 보호하기 위해 원격 AEM GraphQL 쿼리에 필요한 인증을 파악합니다.
+feature: 컨텐츠 조각,GraphQL API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
