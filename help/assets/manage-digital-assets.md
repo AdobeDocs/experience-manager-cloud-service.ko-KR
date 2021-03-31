@@ -3,10 +3,12 @@ title: 디지털 자산을 관리합니다
 description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
+feature: 자산 관리,게시,공동 작업,자산 처리
+role: 비즈니스 전문가,건축가,관리자
 translation-type: tm+mt
-source-git-commit: 61e3f77b7d503b252a00178cebe654038ac6df83
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '4336'
+source-wordcount: '4346'
 ht-degree: 2%
 
 ---
@@ -555,7 +557,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
    렌더링된 PDF 파일로 돌아가 새로 고칩니다. 새로 고친 PDF는 변경한 내용을 반영합니다.
 
-## 자산 버전 관리 {#asset-versioning}
+## 에셋 버전 관리 {#asset-versioning}
 
 버전 매기기를 통해 특정 시점의 디지털 자산 스냅샷을 만들 수 있습니다. 버전 관리를 통해 나중에 에셋을 이전 상태로 복원할 수 있습니다. 예를 들어, 자산에 대한 변경 내용을 취소하려는 경우 편집되지 않은 버전의 자산을 복원합니다.
 
