@@ -1,11 +1,13 @@
 ---
 title: 컨텐츠 조각을 사용한 작업
 description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 Cloud Service으로 사용하여 헤드리스 전달에 적합한 페이지에 구애받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴볼 수 있습니다.
+feature: 콘텐츠 조각
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 75%
+source-wordcount: '2039'
+ht-degree: 76%
 
 ---
 
