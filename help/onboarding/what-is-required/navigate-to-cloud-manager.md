@@ -2,15 +2,17 @@
 title: 클라우드 관리자로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 7%
 
 ---
 
 
 # 클라우드 관리자 {#cloud-manager}로 이동합니다.
+
+Cloud Manager는 Cloud Service에서 AEM의 중요한 부분입니다. 이를 통해 조직은 클라우드에서 Experience Manager을 직접 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다. 사용자 인터페이스를 사용하여 CI/CD 파이프라인을 구성하고 시작할 수 있습니다.
 
 시스템 관리자가 Cloud Manager에 대한 액세스 권한을 부여하면 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)을(를) 통해서도 액세스할 수 있는 Cloud Manager 로그인 페이지로 안내하는 이메일을 받게 됩니다.
 
