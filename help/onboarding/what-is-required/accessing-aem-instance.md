@@ -2,9 +2,9 @@
 title: 'AEM 인스턴스에 대한 사용자 액세스 권한 부여 '
 description: 시스템 관리자가 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여하는 방법에 대해 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 1. Cloud Manager로 이동하고 아래와 같이 **환경** 카드의 **액세스 관리** 단추를 클릭합니다.
 
    >[!NOTE]
-   >Admin Console에서 사용자를 추가할 수 있으려면 시스템 관리자나 환경을 만든 사용자여야 합니다. 비즈니스 소유자 또는 배포 관리자 역할에만 환경을 만들 수 있는 권한이 있습니다. 역할 및 관련 권한에 대한 자세한 내용은 [사용자 추가 및 클라우드 관리자 역할 할당](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)을 참조하십시오.
+   >Admin Console에서 사용자를 추가할 수 있으려면 시스템 관리자나 환경을 만든 사용자여야 합니다. 비즈니스 소유자 또는 배포 관리자 역할에만 환경을 만들 수 있는 권한이 있습니다. 역할 및 관련 권한에 대한 자세한 내용은 [사용자 역할 및 권한](/help/onboarding/what-is-required/user-roles-permissions.md)을 참조하십시오. 또한 환경에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
