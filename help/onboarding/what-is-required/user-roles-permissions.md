@@ -2,7 +2,7 @@
 title: 사용자 역할 및 권한
 description: 이 페이지에서는 사용자 역할 및 권한을 설명합니다. 사용자를 추가하고 Cloud Manager 역할에 할당하는 방법을 알려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 6%
@@ -44,7 +44,7 @@ Cloud Manager는 현재 특정 기능의 가용성을 제어하는 4개의 역�
 | 개발자 | 사용자 정의 응용 프로그램 코드를 개발하고 테스트합니다. 주로 [!UICONTROL 클라우드 관리자]를 사용하여 상태를 봅니다. 코드 커밋을 위해 Git 리포지토리에 액세스할 수 있습니다. |
 | 컨텐츠 작성자 | 일반적으로 [!UICONTROL 클라우드 관리자]와 상호 작용하지 않습니다. [!UICONTROL 클라우드 관리자] 프로그램 전환기([!UICONTROL Experience Cloud]에서 이동)를 사용하여 AEM에 액세스할 수 있습니다. |
 
-### 역할 보기 {#view-roles}
+## 역할 보기 {#view-roles}
 
 Cloud Manager에서 역할을 보려면 Cloud Manager UI에 로그인하고 오른쪽 상단 모서리에서 프로필 아이콘을 선택하고 아래 그림과 같이 **사용자 역할**&#x200B;을 선택합니다.
 
