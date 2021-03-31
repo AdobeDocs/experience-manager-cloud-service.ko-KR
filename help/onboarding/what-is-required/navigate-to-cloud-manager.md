@@ -2,10 +2,10 @@
 title: 클라우드 관리자로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
+source-git-commit: eeee28ac5889f18ae147d390e6dc8c2d7cb96591
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 7%
 
 ---
 
@@ -19,15 +19,19 @@ Cloud Manager는 Cloud Service에서 AEM의 중요한 부분입니다. 이를 �
 >[!NOTE]
 >사용자로 추가되고 시스템 관리자가 클라우드 관리자 역할(Admin Console의 제품 프로필)에 할당해야 합니다.
 
-1. 시작 이메일에서 아래 그림에 표시된 대로 **시작하기**&#x200B;를 클릭하거나 [클라우드 관리자](https://experience.adobe.com)로 이동하고 Adobe ID을 사용하여 로그인합니다.\
+1. 시작 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-1. **Experience Manager**을 선택합니다.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   또는,
 
-1. 클라우드 관리자 카드의 **시작**을 클릭합니다.
+   1. [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)에서 Cloud Manager 로그인 페이지로 이동
+
+   1. **Experience Manager**을 선택합니다.
+      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+
+   1. 클라우드 관리자 카드의 **시작**을 클릭합니다.
 [!UICONTROL 클라우드 관리자]에 로그인하면 사용자 인터페이스(UI)를 사용할 수 있습니다.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## 클라우드 관리자 랜딩 페이지 {#cloud-manager-landing}
