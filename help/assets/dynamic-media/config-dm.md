@@ -2,10 +2,11 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service으로 Dynamic Media을 구성하는 방법을 알아봅니다.
 topic: 관리자
+role: 관리자,비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4057'
 ht-degree: 1%
 
 ---
