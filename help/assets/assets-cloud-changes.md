@@ -1,11 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 에  [!DNL Cloud Service]의 주목할 만한 변경 사항'
 description: '[!DNL Adobe Experience Manager 6.5와 비교하여  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 에 대한 주목할 만한 변경 사항.'
+feature: 릴리스 정보
+role: 비즈니스 전문가,리더,건축가,관리자
 translation-type: tm+mt
-source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 5%
+source-wordcount: '764'
+ht-degree: 6%
 
 ---
 
