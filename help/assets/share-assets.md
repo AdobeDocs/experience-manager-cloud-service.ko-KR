@@ -2,10 +2,12 @@
 title: 자산, 폴더 및 컬렉션을 링크로 공유
 description: 이 문서에서는  [!DNL Experience Manager Assets] 에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
+feature: 자산 관리,공동 작업,자산 배포
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
