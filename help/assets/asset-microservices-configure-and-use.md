@@ -2,10 +2,12 @@
 title: 에셋 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 자산 마이크로 서비스를 구성 및 사용하여 자산을 규모에 맞게 처리할 수 있습니다.
 contentOwner: AG
+feature: asset compute Microservices,워크플로,자산 처리
+role: 건축가,관리자
 translation-type: tm+mt
-source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2584'
 ht-degree: 1%
 
 ---
@@ -100,7 +102,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 사용자 지정 프로필 및 사용 사례 {#custom-config}
 
-[!DNL Asset Compute Service]은 기본 처리, Photoshop 파일과 같은 Adobe 관련 형식 처리, 사용자 지정 또는 조직별 처리 구현 등의 다양한 사용 사례를 지원합니다. 이전에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 처리되거나 처리 프로필 구성을 통해 처리됩니다. 이러한 처리 옵션에 의해 비즈니스 요구 사항이 충족되지 않는 경우 기본 기능을 확장하려면 [!DNL Asset Compute Service]을(를) 개발 및 사용하는 것이 좋습니다. 개요를 보려면 [확장 기능 이해 및 언제 이 기능을 사용해야 하는지 ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)를 참조하십시오.
+[!DNL Asset Compute Service]은 기본 처리, Photoshop 파일과 같은 Adobe 관련 형식 처리, 사용자 지정 또는 조직별 처리 구현 등 다양한 사용 사례를 지원합니다. 이전에 필요한 DAM 자산 업데이트 워크플로우 사용자 지정은 자동으로 처리되거나 처리 프로필 구성을 통해 처리됩니다. 이러한 처리 옵션에 의해 비즈니스 요구 사항이 충족되지 않는 경우 기본 기능을 확장하려면 [!DNL Asset Compute Service]을(를) 개발 및 사용하는 것이 좋습니다. 개요를 보려면 [확장 기능 이해 및 언제 이 기능을 사용해야 하는지 ](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)를 참조하십시오.
 
 >[!NOTE]
 >
