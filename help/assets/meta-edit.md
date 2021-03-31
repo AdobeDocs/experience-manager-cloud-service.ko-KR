@@ -2,10 +2,12 @@
 title: 메타데이터를 편집하거나 추가하는 방법
 description: 에셋 메타데이터를 편집할 수 있는 다양한 방법으로 에셋 메타데이터를 [!DNL Experience Manager Assets] 에 대해 알아봅니다.
 contentOwner: AG
+feature: 메타데이터
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '426'
 ht-degree: 1%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 메타데이터는 검색할 수 있는 자산에 대한 추가 정보입니다. 이미지를 업로드할 때 자동으로 압축이 해제됩니다. 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
 
-회사는 제어 및 안정적인 메타데이터 어휘가 필요하기 때문에 [!DNL Experience Manager Assets]은(는) 새 메타데이터 속성을 임시로 추가할 수 없습니다. 작성자가 에셋에 대한 새 메타데이터 필드를 추가할 수는 없지만 개발자는 추가할 수 있습니다. [자산](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
+회사는 제어 및 안정적인 메타데이터 어휘가 필요하기 때문에 [!DNL Experience Manager Assets]은(는) 새 메타데이터 속성을 임시로 추가할 수 없습니다. 작성자가 에셋에 대한 새 메타데이터 필드를 추가할 수는 없지만 개발자는 이를 수행할 수 있습니다. [자산](meta-edit.md#editing-metadata-schema)에 대한 새 메타데이터 속성 만들기를 참조하십시오.
 
 ## 자산 {#editing-metadata-for-an-asset} 메타데이터 편집
 
