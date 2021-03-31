@@ -4,11 +4,12 @@ description: Dynamic Media 에셋을 게시하는 방법에 대해 알아봅니�
 contentOwner: Rick Brough
 feature: 자산 관리
 topic: 비즈니스 전문가
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
