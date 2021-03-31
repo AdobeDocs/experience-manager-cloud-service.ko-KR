@@ -2,9 +2,9 @@
 title: 'AEM 인스턴스에 대한 사용자 액세스 권한 부여 '
 description: 시스템 관리자가 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여하는 방법에 대해 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AEM 인스턴스 {#accessing-aem-instance}에 대한 사용자 액세스 권한 부여
 
-시스템 관리자는 아래 절차에 따라 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여합니다.
+시스템 관리자는 아래 절차에 따라 AEM 인스턴스에 대한 사용자 액세스 권한을 부여하십시오.
 
 1. Cloud Manager로 이동하고 아래와 같이 **환경** 카드의 **액세스 관리** 단추를 클릭합니다.
 
