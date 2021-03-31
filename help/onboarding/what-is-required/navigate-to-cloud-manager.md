@@ -2,10 +2,10 @@
 title: 클라우드 관리자로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 7%
+source-wordcount: '445'
+ht-degree: 6%
 
 ---
 
@@ -14,24 +14,22 @@ ht-degree: 7%
 
 Cloud Manager는 Cloud Service에서 AEM의 중요한 부분입니다. 이를 통해 조직은 클라우드에서 Experience Manager을 직접 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다. 사용자 인터페이스를 사용하여 CI/CD 파이프라인을 구성하고 시작할 수 있습니다.
 
-시스템 관리자가 Cloud Manager에 대한 액세스 권한을 부여하면 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)을(를) 통해서도 액세스할 수 있는 Cloud Manager 로그인 페이지로 안내하는 이메일을 받게 됩니다.
+시스템 관리자가 Cloud Manager에 대한 액세스 권한을 부여하면 [Adobe Experience Cloud](https://experience.adobe.com) 홈 페이지로 안내하는 이메일을 받게 됩니다.
 
 >[!NOTE]
->사용자로 추가되고 시스템 관리자가 클라우드 관리자 역할(Admin Console의 제품 프로필)에 할당해야 합니다.
+>사용자로 추가되어야 하며 시스템 관리자가 하나 이상의 클라우드 관리자 역할(Admin Console의 제품 프로필)에 할당해야 합니다.
 
 1. 시작 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   또는,
+   >[!NOTE]
+   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager 로그인 페이지로 바로 이동할 수도 있습니다. [!UICONTROL 클라우드 관리자]에 할당된 역할 및 응용 프로그램 상태에 따라 [!UICONTROL 클라우드 관리자] UI를 사용하는 동안 다른 화면이 표시됩니다. 자세한 내용은 아래 섹션 [클라우드 관리자 랜딩 페이지](#cloud-manager-landing)를 참조하십시오.
 
-   1. [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)에서 Cloud Manager 로그인 페이지로 이동합니다.
+1. **Experience Manager**을 선택합니다.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
-   1. **Experience Manager**을 선택합니다.
-      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
-
-   1. 클라우드 관리자 카드의 **시작**을 클릭합니다.
-[!UICONTROL 클라우드 관리자]에 로그인하면 사용자 인터페이스(UI)를 사용할 수 있습니다.
-      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+1. 클라우드 관리자 카드의 **시작**&#x200B;을 클릭합니다. [!UICONTROL 클라우드 관리자]에 로그인하면 사용자 인터페이스(UI)를 사용할 수 있습니다.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## 클라우드 관리자 랜딩 페이지 {#cloud-manager-landing}
