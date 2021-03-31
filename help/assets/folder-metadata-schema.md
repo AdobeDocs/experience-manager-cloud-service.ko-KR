@@ -2,10 +2,12 @@
 title: 폴더 메타데이터 스키마
 description: ' [!DNL Experience Manager Assets]에서 자산 폴더의 메타데이터 스키마를 만드는 방법에 대해 알아봅니다.'
 contentOwner: AG
+feature: 메타데이터
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1033'
 ht-degree: 4%
 
 ---
