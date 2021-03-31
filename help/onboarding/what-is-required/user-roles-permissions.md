@@ -2,7 +2,7 @@
 title: 사용자 역할 및 권한
 description: 이 페이지에서는 사용자 역할 및 권한을 설명합니다. 사용자를 추가하고 Cloud Manager 역할에 할당하는 방법을 알려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 6%
@@ -12,7 +12,7 @@ ht-degree: 6%
 
 # 사용자 역할 및 권한 {#user-roles-permissions}
 
-Adobe은 IMS(Adobe Identity Management System)에서 회사에 대한 **조직** 식별자를 만들어 모든 사용자와 해당 권한을 관리할 수 있습니다. 이 조직의 구성원이 되어야 하고 [!UICONTROL Experience Cloud] 서비스에 대한 액세스 권한을 받는 각 사용자는 자신의 **Adobe ID**&#x200B;을(를) 가지고 있어야 합니다.
+Adobe은 IMS(Adobe Identity Management System)에서 회사에 대한 **조직** 식별자를 만들어 모든 사용자와 해당 권한을 관리할 수 있습니다. 이 조직의 구성원이 되어야 하고 [!UICONTROL Experience Cloud] 서비스에 대한 액세스 권한을 받는 각 사용자는 자신의 **[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**&#x200B;을(를) 가지고 있어야 합니다.
 
 ## 사용자 역할 {#user-roles}
 
