@@ -3,10 +3,12 @@ title: ' [!DNL Adobe Creative Cloud]과(와) 통합하는 우수 사례'
 description: 모범 사례는 Experience Manager 배포를 Adobe Creative Cloud과 통합하여 에셋 전송 워크플로우를 간소화하고 효율성을 극대화합니다.
 contentOwner: AG
 mini-toc-levels: 1
+feature: 공동 작업,Adobe 에셋 링크,Experience Manager 데스크탑 앱
+role: 건축가,비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '3294'
+source-wordcount: '3306'
 ht-degree: 2%
 
 ---
@@ -149,7 +151,7 @@ DAM에 에셋을 저장하면 손쉽게 액세스할 수 있고 검색할 수 �
 
 일반적으로 다음 클래스 에셋은 DAM에 저장됩니다.
 
-* 특정 성숙도에 도달했고 공유할 준비가 된 것으로 간주되는 에셋
+* 특정 성숙도에 도달했고 공유할 준비가 된 것으로 간주되는 자산
 * 크리에이티브 팀이 미리 선택한 에셋
 * 특정 계약이나 계약에 따라 사용 또는 요구하는 특정 에셋 포맷(예: RAW 파일에서 변환된 JPG 파일, TIFF/PSD 원본 이미지)
 
