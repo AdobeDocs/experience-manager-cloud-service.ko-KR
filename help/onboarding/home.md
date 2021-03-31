@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: 175cddb9e36422b3896efc76ac58183829b364b3
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 38%
@@ -28,7 +28,7 @@ Cloud Service으로 AEM을 사용해 주셔서 감사합니다! 새 응용 프�
 
 계약이 체결되면 다음 이벤트가 발생합니다.
 
-1. Adobe은 조직의 시스템 관리자가 시작 이메일을 통해 [시스템 관리자 작업](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)에 사용자를 추가하고, 사용자를 역할에 할당하고, 적절한 [Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)에 대한 액세스 권한을 부여할 수 있도록 합니다.
+1. Adobe은 조직의 시스템 관리자가 환영 이메일을 받아 사용자를 추가하고, 사용자를 역할에 할당하고, Cloud Manager에 적절한 액세스 권한을 부여하는 등 [시스템 관리자 작업](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)을 수행할 수 있는 환영 이메일을 수신하게 됩니다.
 
 1. 그러면 시스템 관리자가 추가한 사용자가 시작 이메일을 수신하게 되므로 [클라우드 관리자](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)로 이동할 수 있습니다. 이제 사용자는 Adobe ID을 사용하여 여기에서 Cloud Manager로 로그인하고 여정을 시작할 수 있습니다.
 
