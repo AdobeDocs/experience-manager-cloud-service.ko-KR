@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
+source-git-commit: d1727601bb5d70bea9920aa1d680284fb3d25bf0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '657'
+ht-degree: 3%
 
 ---
 
@@ -79,7 +79,7 @@ AEM Commerce를 Magento과 연결하려면 다음 단계를 따르십시오.
 1. 클라우드 관리자에서 `COMMERCE_AUTH_HEADER` 비밀 변수 설정:
 
    ```bash
-   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
    ```
 
    Cloud Manager용 Adobe I/O CLI를 구성하는 방법은 [Magento](#magento)에 AEM Commerce 연결을 참조하십시오.
