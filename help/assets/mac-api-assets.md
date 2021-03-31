@@ -2,10 +2,12 @@
 title: 자산 HTTP API
 description: ' [!DNL Experience Manager Assets]의 HTTP API를 사용하여 디지털 에셋을 만들고, 읽고, 업데이트하고, 삭제하고, 관리할 수 있습니다.'
 contentOwner: AG
+feature: 자산 HTTP API,API
+role: 개발자,아키텍트,관리자
 translation-type: tm+mt
-source-git-commit: c9a7dc74e3fc7c637825606a1a92cbe46d86283f
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1496'
 ht-degree: 1%
 
 ---
