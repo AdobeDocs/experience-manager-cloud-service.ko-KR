@@ -2,10 +2,10 @@
 title: 클라우드 관리자로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Cloud Manager는 Cloud Service에서 AEM의 중요한 부분입니다. 이를 �
 
 1. 클라우드 관리자 카드의 **시작**을 클릭합니다.
 [!UICONTROL 클라우드 관리자]에 로그인하면 사용자 인터페이스(UI)를 사용할 수 있습니다.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## 클라우드 관리자 랜딩 페이지 {#cloud-manager-landing}
