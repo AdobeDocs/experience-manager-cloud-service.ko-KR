@@ -2,15 +2,21 @@
 title: '시스템 관리자 작업 '
 description: 사용자를 추가하고 시스템 관리자로 Cloud Manager 역할에 할당하는 방법을 알아보려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 
 # 시스템 관리자 작업 {#add-users-assign}
+
+시스템 관리자는 액세스 권한에서부터 사용 권한에 이르기까지 사용자의 모든 측면을 관리합니다. 이 사용자는 Admin Console 및 Cloud Manager 내에서 작업을 시작할 수 있는 첫 번째 액세스 권한이 있습니다.
+시스템 관리자는 다음 조직 작업을 수행합니다.
+
+* 사용자 추가
+* Cloud Manager 역할 및 권한에 사용자 할당
 
 ## 사용자 {#add-users} 추가
 
