@@ -2,17 +2,15 @@
 title: 사용자 역할 및 권한
 description: 이 페이지에서는 사용자 역할 및 권한을 설명합니다. 사용자를 추가하고 Cloud Manager 역할에 할당하는 방법을 알려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
+source-git-commit: 683e660bace4bf2d21ab6b373c75f78e306f5206
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 6%
+source-wordcount: '445'
+ht-degree: 8%
 
 ---
 
 
 # 사용자 역할 및 권한 {#user-roles-permissions}
-
-Adobe은 IMS(Adobe Identity Management System)에서 회사에 대한 **조직** 식별자를 만들어 모든 사용자와 해당 권한을 관리할 수 있습니다. 이 조직의 구성원이 되어야 하고 [!UICONTROL Experience Cloud] 서비스에 대한 액세스 권한을 받는 각 사용자는 자신의 **[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**&#x200B;을(를) 가지고 있어야 합니다.
 
 ## 사용자 역할 {#user-roles}
 
@@ -32,18 +30,6 @@ Cloud Manager는 현재 특정 기능의 가용성을 제어하는 4개의 역�
 >[!NOTE]
 >Admin Console의 개발자 모습은 [!UICONTROL 클라우드 관리자]의 개발자 역할과 관련이 없습니다.
 
-## 역할 정의 {#role-definitions}
-
-다음 표에 역할이 요약되어 있습니다.
-
-| [!UICONTROL 클라우드 ] 관리자 역할 | 설명 |
-|--- |--- |
-| 비즈니스 소유자 | KPI 정의, 제작 배포 승인 및 중요한 3-계층 오류 덮어쓰기에 대한 책임입니다. |
-| 프로그램 관리자 | [!UICONTROL 클라우드 관리자]를 사용하여 팀 설정을 수행하고, 상태를 검토하고 KPI를 봅니다. 중요한 3-계층 오류를 승인할 수 있습니다. |
-| 배포 관리자 | 배포 작업을 관리합니다. [!UICONTROL 클라우드 관리자]를 사용하여 스테이지/프로덕션 배포를 실행합니다. CI/CD 파이프라인을 편집할 수 있습니다. 중요한 3-계층 오류를 승인할 수 있습니다. Git 리포지토리에 액세스할 수 있습니다. |
-| 개발자 | 사용자 정의 응용 프로그램 코드를 개발하고 테스트합니다. 주로 [!UICONTROL 클라우드 관리자]를 사용하여 상태를 봅니다. 코드 커밋을 위해 Git 리포지토리에 액세스할 수 있습니다. |
-| 컨텐츠 작성자 | 일반적으로 [!UICONTROL 클라우드 관리자]와 상호 작용하지 않습니다. [!UICONTROL 클라우드 관리자] 프로그램 전환기([!UICONTROL Experience Cloud]에서 이동)를 사용하여 AEM에 액세스할 수 있습니다. |
-
 ## 역할 보기 {#view-roles}
 
 Cloud Manager에서 역할을 보려면 Cloud Manager UI에 로그인하고 오른쪽 상단 모서리에서 프로필 아이콘을 선택하고 아래 그림과 같이 **사용자 역할**&#x200B;을 선택합니다.
@@ -57,8 +43,7 @@ Cloud Manager에서 역할을 보려면 Cloud Manager UI에 로그인하고 오�
 
 ## 역할 정의와 연결된 권한 {#permissions}
 
-[!UICONTROL Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. ] 예를 들어 개발자는 코드를 개발하고 **Git 리포지토리**&#x200B;에 코드를 푸시할 권한이 있습니다. 또는 비즈니스 소유자는 KPI(Key Performance Indicator)를 정의하고 배포를 승인할 수 있는 다양한 권한을 갖습니다.
-
+[!UICONTROL Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. ] 예를 들어 개발자는 코드를 개발하고 **Git 리포지토리**&#x200B;에 코드를 푸시할 권한이 있습니다. 또는 비즈니스 소유자는 프로그램을 추가 및 편집하고 환경을 추가하고 배포를 승인할 수 있는 다양한 권한을 가집니다.
 
 각 역할에는 각 역할과 연관된 특정 권한이 있습니다. 다음 표는 역할을 요약하고 사용 가능한 함수 및 함수를 실행할 수 있는 역할을 나열합니다.
 
