@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: 7271f8146af09dc340a608f1e48f7b9f59dbb5ad
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 47%
+source-wordcount: '770'
+ht-degree: 46%
 
 ---
 
@@ -37,18 +37,20 @@ Cloud Service으로 AEM을 사용해 주셔서 감사합니다! 새 응용 프�
 
 **[시스템 관리자 작업](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-시스템 관리자는 액세스 권한에서부터 사용 권한에 이르기까지 사용자의 모든 측면을 관리합니다. 다음 설명서에는 다음과 같은 기본적인 조직 작업을 설명하는 정보가 포함되어 있습니다.
+시스템 관리자는 액세스 권한에서부터 사용 권한에 이르기까지 사용자의 모든 측면을 관리합니다. 이 사용자는 Admin Console 및 Cloud Manager 내에서 작업을 시작할 수 있는 첫 번째 액세스 권한이 있습니다.
+다음 설명서 페이지에는 기본적인 조직 작업을 설명하는 정보가 포함되어 있습니다.
 
 * 사용자 추가
 * Cloud Manager 역할 및 권한에 사용자 할당
 
 **[클라우드 관리자로 이동](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Cloud Manager에 액세스하여 AEM에서 클라우드 여정을 시작할 수 있습니다. 사용자로 추가되고 클라우드 관리자 역할에 할당되었으므로 프로그램](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [환경 추가](/help/implementing/cloud-manager/manage-environments.md), [Git](/help/implementing/cloud-manager/accessing-git.md) 액세스, [파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md) 및 [코드 배포](/help/implementing/cloud-manager/deploy-code.md)와 같은 다양한 작업을 수행할 수 있습니다.[
+사용자로 추가되고 Cloud Manager 역할에 할당되었으므로 Cloud Manager에 액세스하여 AEM에서 클라우드 여정을 시작할 수 있습니다. 사용자는 [프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [환경](/help/implementing/cloud-manager/manage-environments.md) 추가, [Git](/help/implementing/cloud-manager/accessing-git.md) 액세스, [파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md) 및 [코드](/help/implementing/cloud-manager/deploy-code.md) 배포와 같은 다양한 작업을 수행할 준비가 되었습니다.
+Cloud Manager는 Cloud Service에서 AEM의 중요한 부분입니다. 이를 통해 조직은 클라우드에서 Experience Manager을 직접 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다. 사용자 인터페이스를 사용하여 CI/CD 파이프라인을 구성하고 시작할 수 있습니다.
 
 **[AEM 인스턴스에 대한 사용자 액세스 권한 부여](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-시스템 관리자가 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여하거나 환경을 만든 사용자가 다른 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여할 수 있는 방법에 대해 알아보려면 이 섹션을 따르십시오.
+시스템 관리자 또는 환경을 만든 사용자가 AEM 인스턴스에 대한 액세스 권한을 다른 사용자에게 부여할 수 있는 방법을 알아보려면 이 섹션을 따르십시오.
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
