@@ -3,10 +3,12 @@ title: 디지털 자산 컬렉션 관리
 description: Adobe Experience Manager Assets의 컬렉션 개념을 이해하십시오. 다른 사용자와 컬렉션, 관리, 편집 및 컬렉션 사용 방법에 대해 알아보십시오.
 contentOwner: AG
 mini-toc-levels: 1
+feature: 컬렉션,자산 관리
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2402'
 ht-degree: 0%
 
 ---
