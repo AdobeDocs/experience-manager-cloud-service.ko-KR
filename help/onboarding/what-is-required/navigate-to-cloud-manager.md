@@ -2,9 +2,9 @@
 title: 클라우드 관리자로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '458'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Cloud Manager는 Cloud Service에서 AEM의 중요한 부분입니다. 이를 �
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-여기서 클라우드 관리자의 비즈니스 소유자 역할 등 권한이 부여된 사용자는 **프로그램 추가**&#x200B;를 선택하여 [마법사](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md)를 시작할 수 있습니다.
+여기서 클라우드 관리자의 비즈니스 소유자 역할 등 권한이 부여된 사용자는 **프로그램 추가**&#x200B;를 선택하여 [프로그램 추가 마법사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)를 시작할 수 있습니다.
 
 Cloud Manager에서 프로그램을 추가하는 방법에 대해 알아보려면 다음을 참조하십시오.
 
