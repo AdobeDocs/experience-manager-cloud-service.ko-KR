@@ -1,11 +1,13 @@
 ---
 title: 미리 보기 - JSON 표현
 description: AEM 헤드리스 솔루션을 구현할 때 컨텐츠 조각의 JSON 표현을 손쉽게 미리 보는 방법을 살펴봅니다.
+feature: 콘텐츠 조각
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 1%
+source-wordcount: '117'
+ht-degree: 5%
 
 ---
 
