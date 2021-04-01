@@ -1,10 +1,10 @@
 ---
-title: 사용자 역할 및 권한
+title: 클라우드 관리자 역할
 description: 이 페이지에서는 사용자 역할 및 권한을 설명합니다. 사용자를 추가하고 Cloud Manager 역할에 할당하는 방법을 알려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 6%
 
 ---
