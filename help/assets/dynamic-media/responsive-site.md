@@ -3,11 +3,12 @@ title: 응답형 사이트에 최적화된 이미지 제공
 description: 반응형 코드 기능을 사용하여 Dynamic Media에서 최적화된 이미지를 제공하는 방법을 살펴봅니다.
 feature: 자산 관리
 topic: 비즈니스 전문가
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 3%
+source-wordcount: '328'
+ht-degree: 4%
 
 ---
 
