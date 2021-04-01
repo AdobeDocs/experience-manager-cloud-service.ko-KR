@@ -2,10 +2,12 @@
 title: 지원되는 파일 형식 및 MIME 형식
 description: 파일 형식 및 MIME 유형은  [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]으로 지원합니다.
 contentOwner: AG
+feature: 자산 관리,표현물
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '824'
 ht-degree: 7%
 
 ---
