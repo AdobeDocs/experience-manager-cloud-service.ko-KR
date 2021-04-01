@@ -2,7 +2,7 @@
 title: 클라우드 관리자 역할
 description: 이 페이지에서는 사용자 역할 및 권한을 설명합니다. 사용자를 추가하고 Cloud Manager 역할에 할당하는 방법을 알려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 6%
@@ -65,7 +65,7 @@ Cloud Manager에서 역할을 보려면 Cloud Manager UI에 로그인하고 오�
 | 프로그램 추가<br>프로그램 편집 | 새 프로그램 추가를 참조하십시오.<br>프로그램 편집 - 솔루션 추가 또는 제거 또는 추가 기능 | x |  |  |  |
 | 환경 만들기 | Prod+Stage, Dev, Environment를 작성합니다. | x | x |  |  |
 | 환경 업데이트 | Prod+Stage, Dev, 환경을 업데이트합니다. | x | x |  |  |
-| 환경 삭제 | 비제품, 개발, 환경 삭제를 참조하십시오. | x | x |  |  |
+| 개발 환경 삭제 | 개발 환경 삭제를 참조하십시오. | x | x |  |  |
 | 파이프라인 설정 | 파이프라인 설정 또는 편집을 참조하십시오. |  | x |  |  |
 | 파이프라인 실행 | 파이프라인을 시작합니다. | x | x |  |  |
 | 파이프라인 실행 | 중요한 3계층 오류 거부/승인 | x | x | x |  |
