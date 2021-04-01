@@ -2,10 +2,12 @@
 title: XMP 메타데이터
 description: 메타데이터 관리를 위한 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. AEM에서 메타데이터를 생성, 처리 및 교환하기 위한 표준화된 형식으로 사용합니다.
 contentOwner: AG
+feature: 메타데이터
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '983'
 ht-degree: 1%
 
 ---
