@@ -3,10 +3,12 @@ title: ' [!DNL Adobe Experience Manager]에서 디지털 자산 및 이미지 �
 description: 필터 패널을 사용하여 [!DNL Adobe Experience Manager] 에서 필요한 에셋을 찾는 방법과 검색에 표시되는 에셋을 사용하는 방법을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
+feature: 검색,메타데이터,자산 배포
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: c2c453bf8e3b7cf23a9b31cbc4feac117e11a695
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '4912'
+source-wordcount: '4919'
 ht-degree: 1%
 
 ---
