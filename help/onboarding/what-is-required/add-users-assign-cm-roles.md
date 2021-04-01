@@ -2,9 +2,9 @@
 title: '시스템 관리자 작업 '
 description: 사용자를 추가하고 시스템 관리자로 Cloud Manager 역할에 할당하는 방법을 알아보려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ ht-degree: 0%
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >**Admin Console**&#x200B;에서 오른쪽 사용자에게 올바른 역할이 할당되었는지 확인하려면 [사용자 역할 및 권한](#user-roles) 및 역할 정의와 연결된 [권한](#permissions)을 참조하십시오.
+   >**Admin Console**&#x200B;에서 올바른 사용자에게 올바른 역할이 할당되었는지 확인하려면 [사용자 역할 및 권한](#user-roles) 및 역할 정의와 연결된 [권한](#permissions)을 참조하십시오.
 
    이제 사용자가 Cloud Service 제품 컨텍스트로 Adobe Experience Manager에 추가되었으며 올바른 역할 또는 제품 프로필로 설정됩니다.
 
-   예를 들어 다음 역할의 경우
-
-   * ***비즈니스 소유자는 새 프로그램 추가*** 또는 프로그램 편집, 환경을 추가 또는 업데이트, 파이프라인을 추가/편집/삭제 및 실행하고 코드를 AEM 환경 또는 코드 품질에 배포할 수 있는 권한이 있습니다.
-
-   * ***배포 관리자는*** 환경을 추가 또는 업데이트하고 파이프라인을 실행하며 코드를 AEM 환경 또는 코드 품질에 배포할 수 있는 권한이 있습니다.
-
-   * ***개발자***, Git에 액세스할 수 있는 개인 액세스 토큰을 생성할 권한이 있습니다.
-
-      >[!NOTE]
-      > 사용자를 여러 역할에 할당할 수 있습니다. 예를 들어 사용자에게 비즈니스 소유자와 배포 관리자 역할을 모두 할당하면 이러한 권한의 조합이나 합계에 도움을 줍니다.
