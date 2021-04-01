@@ -2,11 +2,13 @@
 title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및  [!DNL Adobe Experience Manager]에 게시할 수 있습니다.
 contentOwner: AG
+feature: 자산 관리,게시,공동 작업,비디오
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 0%
+source-wordcount: '626'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +42,7 @@ ht-degree: 0%
 
 너비만 또는 높이만 제공하고 다른 필드를 비워 두면 변환이 종횡비를 유지합니다. H.264 비디오 코덱은 트랜스코딩에 사용할 수 있습니다.
 
-처리 프로필을 사용하여 자산을 처리하려면 폴더에 프로필을 추가합니다. [처리 프로필 사용하여 자산](/help/assets/asset-microservices-configure-and-use.md#use-profiles)을(를) 처리할 수 있습니다.
+처리 프로필을 사용하여 자산을 처리하려면 폴더에 프로필을 추가합니다. 자산](/help/assets/asset-microservices-configure-and-use.md#use-profiles)을 처리하기 위해 처리 프로필 사용을 참조하십시오.[
 
 ## 비디오 자산 {#annotate-video-assets}에 주석 추가
 
