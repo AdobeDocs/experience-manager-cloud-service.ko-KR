@@ -1,10 +1,12 @@
 ---
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
+feature: 자산 관리,업로드
+role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
