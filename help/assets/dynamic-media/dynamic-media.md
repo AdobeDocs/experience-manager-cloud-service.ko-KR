@@ -2,11 +2,12 @@
 title: Dynamic Media 작업
 description: Dynamic Media을 사용하여 웹, 모바일 및 소셜 사이트에서 사용할 에셋을 제공하는 방법을 살펴봅니다.
 topic: '"관리자,비즈니스 전문가"'
+role: 관리자,비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 22%
+source-wordcount: '403'
+ht-degree: 21%
 
 ---
 
