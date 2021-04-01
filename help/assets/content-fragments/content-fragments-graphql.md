@@ -1,11 +1,13 @@
 ---
 title: GraphQL이 있는 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달
 description: 헤드리스 컨텐츠 전달을 위해 GraphQL과 함께 AEM 컨텐츠 조각을 사용하는 방법을 알아봅니다.
+feature: 콘텐츠 조각
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 0%
+source-wordcount: '720'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +70,7 @@ AEM GraphQL API 구현은 [GraphQL Java 라이브러리](https://graphql.org/cod
 
 ### 콘텐츠 조각 {#content-fragments}
 
-컨텐츠 조각:
+콘텐츠 조각:
 
 * 구조화된 컨텐츠를 포함합니다.
 
