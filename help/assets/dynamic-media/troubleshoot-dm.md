@@ -2,10 +2,11 @@
 title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁
 topic: '"관리자,비즈니스 전문가"'
+role: 관리자,비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '996'
 ht-degree: 2%
 
 ---
