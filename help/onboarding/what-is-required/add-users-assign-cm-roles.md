@@ -2,9 +2,9 @@
 title: '시스템 관리자 작업 '
 description: 사용자를 추가하고 시스템 관리자로 Cloud Manager 역할에 할당하는 방법을 알아보려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >**Admin Console**&#x200B;에서 올바른 사용자에게 올바른 역할이 할당되었는지 확인하려면 [사용자 역할 및 권한](#user-roles) 및 역할 정의와 연결된 [권한](#permissions)을 참조하십시오.
+   >Cloud Manager에서 제공되는 역할 및 권한에 대한 자세한 내용은 [Cloud Manager 역할](/help/onboarding/what-is-required/user-roles-permissions.md)을 참조하십시오.
 
    이제 사용자가 Cloud Service 제품 컨텍스트로 Adobe Experience Manager에 추가되었으며 올바른 역할 또는 제품 프로필로 설정됩니다.
 
