@@ -2,10 +2,12 @@
 title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
+feature: 자산 관리,연결된 자산,자산 배포
+role: 관리자,비즈니스 전문가,건축가
 translation-type: tm+mt
-source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '2908'
 ht-degree: 27%
 
 ---
