@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 자산 관리,공동 작업,자산 배포
 role: 비즈니스 전문가,관리자
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 1%
+source-wordcount: '758'
+ht-degree: 2%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 1%
 [!DNL Adobe Experience Manager Assets] 자산, 폴더 및 컬렉션을 조직 및 외부 개체의 구성원(파트너 및 공급업체 포함)과 공유할 수 있습니다. 다음 방법을 사용하여 [!DNL Experience Manager Assets]의 자산을 [!DNL Cloud Service](으)로 공유합니다.
 
 * 링크로 공유합니다.
-* 에셋을 다운로드하고 별도로 공유할 수 있습니다.
-* AEM 데스크탑 앱을 통해 공유할 수 있습니다.
-* Adobe 자산 링크를 통해 공유합니다.
-* (예정된 기능) 브랜드 포털을 사용하여 공유합니다.
+* [에셋](/help/assets/download-assets-from-aem.md) 을 다운로드하여 별도로 공유할 수 있습니다.
+* [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)을 사용하여 공유합니다.
+* [[!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)을(를) 사용하여 공유합니다.
+* [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)을(를) 사용하여 공유합니다.
 
 ## 링크로 자산 공유 {#sharelink}
 
