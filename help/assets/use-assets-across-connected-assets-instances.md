@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 자산 관리,연결된 자산,자산 배포
 role: 관리자,비즈니스 전문가,건축가
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2902'
 ht-degree: 27%
 
 ---
@@ -120,9 +120,9 @@ ht-degree: 27%
 
 이 연결을 구성하려면 다음 단계를 따르십시오.
 
-1. 위에 설명된 대로 연결된 자산 구성을 만듭니다. 대화 상자에서 [!DNL Dynamic Media] 연결된 자산&#x200B;]**에 대한 원래 변환 가져오기 확인란을 선택합니다.**[!UICONTROL 
+1. 위에 설명된 대로 연결된 자산 구성을 만듭니다. 기능을 구성할 때 **[!UICONTROL Dynamic Media 연결된 에셋에 대한 원래 변환 가져오기]** 옵션을 선택합니다.
 
-1. 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포에 대해 [!DNL Dynamic Media]을(를) 구성합니다. [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services)의 지침을 따릅니다.
+1. 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포에 대해 [!DNL Dynamic Media]을(를) 구성합니다. [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)의 지침을 따릅니다.
 
    * 모든 구성에서 동일한 회사 이름을 사용합니다.
    * 로컬 [!DNL Sites]의 [!UICONTROL Dynamic Media 동기화 모드]에서 기본적으로 **[!UICONTROL 비활성화됨]**&#x200B;을 선택합니다. 사이트 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스만 필요합니다.
