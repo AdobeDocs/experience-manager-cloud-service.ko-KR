@@ -5,15 +5,15 @@ contentOwner: AG
 feature: API,자산 HTTP API
 role: 개발자,아키텍트,관리자
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1397'
 ht-degree: 3%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] API 및 개발자 참조 자료  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] 개발자 사용 사례, API 및 참조 자료  {#assets-cloud-service-apis}
 
 이 문서에서는 [!DNL Assets](으)로 개발자를 위한 권장 사항, 참조 자료 및 리소스를 제공합니다. [!DNL Cloud Service] 여기에는 새로운 에셋 업로드 모듈, API 참조 및 사후 처리 워크플로우에서 제공되는 지원에 대한 정보가 포함되어 있습니다.
 
