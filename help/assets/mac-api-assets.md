@@ -4,14 +4,14 @@ description: ' [!DNL Experience Manager Assets]의 HTTP API를 사용하여 디�
 contentOwner: AG
 feature: 자산 HTTP API,API
 role: 개발자,아키텍트,관리자
+exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1522'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
 
@@ -268,6 +268,8 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 ## 팁, 우수 사례 및 제한 사항 {#tips-limitations}
 
 * [!UICONTROL 해제 시간] 이후에는 [!DNL Assets] 웹 인터페이스와 HTTP API를 통해 에셋 및 해당 변환을 사용할 수 없습니다. [!UICONTROL On Time]이(가) 미래 또는 [!UICONTROL Off Time]이(가) 과거이면 API는 404 오류 메시지를 반환합니다.
+
+* 자산 HTTP API는 전체 메타데이터를 반환하지 않습니다. 네임스페이스는 하드 코딩되며 이러한 네임스페이스만 반환됩니다. 전체 메타데이터의 경우 자산 경로 `/jcr_content/metadata.json`을(를) 참조하십시오.
 
 * API를 사용하여 업데이트할 때 폴더 또는 자산의 일부 속성이 다른 접두어로 매핑됩니다. `jcr:title`, `jcr:description` 및 `jcr:language`의 `jcr` 접두어가 `dc` 접두어로 바뀝니다. 따라서 반환된 JSON에서 `dc:title` 및 `dc:description`은 각각 `jcr:title` 및 `jcr:description`의 값을 포함합니다.
 
