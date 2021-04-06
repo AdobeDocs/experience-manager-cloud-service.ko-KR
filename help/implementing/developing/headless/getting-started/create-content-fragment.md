@@ -1,14 +1,14 @@
 ---
 title: 컨텐츠 조각 만들기 헤드리스 빠른 시작 안내서
 description: 헤드리스 전달을 위해 AEM 컨텐츠 조각을 사용하여 페이지에 구애받지 않는 컨텐츠를 디자인, 제작, 조정 및 사용하는 방법을 살펴봅니다.
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
-
 
 # 콘텐츠 조각 만들기 헤드리스 빠른 시작 안내서 {#creating-content-fragments}
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 1. 컨텐츠 조각 편집기에서 컨텐츠 조각에 대한 세부 정보를 제공합니다.
 
    ![컨텐츠 조각 편집기](../assets/content-fragment-edit.png)
-1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
+1. **저장** 또는 **저장 후**&#x200B;을 탭하거나 클릭합니다.
 
 컨텐츠 조각은 다른 컨텐츠 조각을 참조할 수 있으므로 필요한 경우 중첩된 컨텐츠 구조를 사용할 수 있습니다.
 
