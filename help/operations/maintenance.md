@@ -1,14 +1,14 @@
 ---
 title: Cloud Service의 유지 관리 작업
-description: 'Cloud Service의 유지 관리 작업 '
+description: Cloud Service의 유지 관리 작업
+exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
+source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
-
 
 # Cloud Service의 유지 관리 작업
 
@@ -54,8 +54,8 @@ ht-degree: 2%
     <td>일별</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
-    <td>아래의 코드 샘플 1 참조</td>
+    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
+    <td>코드 샘플 1 벨 참조</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily(이 값은 변경할 수 없음)</li>
