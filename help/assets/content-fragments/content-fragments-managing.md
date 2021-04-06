@@ -3,20 +3,30 @@ title: 컨텐츠 조각 관리
 description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
 feature: 콘텐츠 조각
 role: 비즈니스 전문가
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 78%
+source-wordcount: '1748'
+ht-degree: 66%
 
 ---
-
 
 # 컨텐츠 조각 관리 {#managing-content-fragments}
 
 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
 
-컨텐츠 조각은 **자산**&#x200B;으로 저장되므로 **자산** 콘솔에서 주로 관리됩니다.
+[컨텐츠 조각 모델](#creating-a-content-model)을 정의한 후 이를 사용하여 [컨텐츠 조각](#creating-a-content-fragment)을 만들 수 있습니다.
+
+[컨텐츠 조각 편집기](#opening-the-fragment-editor)는 다음과 같은 작업을 수행할 수 있도록 다양한 [모드](#modes-in-the-content-fragment-editor)를 제공합니다.
+
+* [컨텐츠 ](#editing-the-content-of-your-fragment) 편집 및  [변형 관리](#creating-and-managing-variations-within-your-fragment)
+* [조각에 주석 추가](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [컨텐츠를 조각과 연결](#associating-content-with-your-fragment)
+* [메타데이터 구성](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [구조 트리 보기](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [JSON 표현 미리 보기](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ ht-degree: 78%
 >* 페이지 작성 시[컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)을 참조하십시오.
 >* GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)의 컨텐츠 조각을 사용하여 [헤드리스 컨텐츠 전달의 경우
 
+
+>[!NOTE]
+>
+>컨텐츠 조각은 **자산**&#x200B;으로 저장되므로 **자산** 콘솔에서 주로 관리됩니다.
 
 ## 컨텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -135,11 +149,15 @@ ht-degree: 78%
 
    ![조각 편집기](assets/cfm-managing-03.png)
 
-1. 변경한 후 **저장 및 닫기** 또는 **취소**&#x200B;를 필요에 따라 사용하십시오.
+1. 변경 후에는 필요에 따라 **저장**, **저장 및 닫기** 또는 **닫기**&#x200B;를 사용합니다.
 
    >[!NOTE]
    >
-   >두 옵션이 모두 컨텐츠 조각에 대해 작동하는 방식에 대한 자세한 내용은 **저장 및 닫기** 및 **취소**&#x200B;모두 편집기를 종료합니다. [저장, 취소 및 버전](#save-cancel-and-versions)을 참조하십시오.
+   >**저장 및** 닫기는 저장 분류를 통해 사용할 수  **** 있습니다.
+
+   >[!NOTE]
+   >
+   >**저장 및 닫기** 및 **닫기** 모두 편집기를 종료합니다. 다양한 옵션이 컨텐츠 조각에 대해 작동하는 방법에 대한 자세한 내용은 [저장, 닫기 및 버전](#save-close-and-versions)을 참조하십시오.
 
 ## 컨텐츠 조각 편집기의 모드 및 작업 {#modes-actions-content-fragment-editor}
 
@@ -181,42 +199,49 @@ ht-degree: 78%
    * **수정됨**:주황
    * **비활성화됨**:red
 
+* **저장** 기능을 사용하면  **저장 및** 닫기 옵션에 액세스할 수 있습니다.
+
 * 세 점(**..**) 드롭다운에서 추가 작업에 액세스할 수 있습니다.
+   * **페이지 참조 업데이트**
+      * 이렇게 하면 모든 페이지 참조가 업데이트됩니다.
    * **[빠른 게시](#publishing-and-referencing-a-fragment)**
    * **[게시 관리](#publishing-and-referencing-a-fragment)**
 
-## 저장, 취소 및 버전 {#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## 저장, 닫기 및 버전 {#save-close-and-versions}
 
 >[!NOTE]
 >
 >버전은 [타임라인에서 만들고, 비교하고, 되돌릴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 수도 있습니다.
 
-편집기에는 다음 두 가지 옵션이 있습니다.
+편집기에는 다양한 옵션이 있습니다.
 
-* **저장**
+* **저장** 및  **저장 및 닫기**
 
-   최신 변경 내용을 저장하고 편집기를 종료합니다.
+   * **저장** 은 최신 변경 내용을 저장하고 편집기에 그대로 남습니다.
+   * **저장 및** 닫기를 수행하면 최신 변경 내용이 저장되고 편집기가 종료됩니다.
 
    >[!CAUTION]
    >
-   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 필요합니다. 문제가 발생하면 시스템 관리자에게 문의하십시오.
+   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
    >[!NOTE]
    >
-   >**저장**&#x200B;을 선택하기 전에 편집기에 남아서 일련의 변경 작업을 수행할 수 있습니다.
+   >저장하기 전에 편집기에 계속 변경 작업을 수행할 수 있습니다.
 
    >[!CAUTION]
    >
-   >변경 내용을 간단히 저장할 수 있을 뿐만 아니라 **저장**&#x200B;도 모든 참조를 업데이트하고 필요에 따라 디스패처가 플러시되도록 합니다. 이러한 변경 사항은 처리에 시간이 걸릴 수 있습니다. 이로 인해 대형/복합/부하가 큰 시스템의 성능에 영향이 있을 수 있습니다.
+   >작업은 변경 내용을 저장하는 것 외에도 모든 참조를 업데이트하고 필요에 따라 디스패처가 플러시되도록 합니다. 이러한 변경 사항은 처리에 시간이 걸릴 수 있습니다. 이로 인해 대형/복합/부하가 큰 시스템의 성능에 영향이 있을 수 있습니다.
    >
-   >
-   >**저장**&#x200B;을 사용할 때 이것을 염두에 두고 조각 편집기를 신속하게 다시 입력하여 추가 변경 작업을 수행하고 저장하십시오.
+   >**저장 및 닫기**&#x200B;를 사용한 다음 조각 편집기를 빠르게 다시 입력하여 추가 변경을 수행하고 저장할 때 이 점을 염두에 두십시오.
 
-* **취소**
+* **닫기**
 
-   최신 변경 사항을 저장하지 않고 편집기를 종료합니다.
+   최신 변경 내용을 저장하지 않고 편집기를 종료합니다(즉, 마지막 **저장** 이후).
 
-컨텐츠 조각을 편집하는 동안 AEM은 변경 사항을 **취소**&#x200B;할 경우 이전 컨텐츠를 복원할 수 있도록 자동으로 버전을 생성합니다.
+컨텐츠 조각 AEM을 편집하는 동안 변경 내용을 취소할 경우 이전 컨텐츠를 복원할 수 있도록 버전을 자동으로 만듭니다(저장하지 않고 **Close** 사용).
 
 1. 편집하기 위해 컨텐츠 조각을 열면 AEM에서는 *편집 세션*&#x200B;이 존재하는지 여부를 나타내는 쿠키 기반 토큰이 있는지 확인합니다.
 
@@ -232,7 +257,7 @@ ht-degree: 78%
    >기본값을 알려면 다음을 참조하십시오.
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. 사용자가 편집을 **취소**&#x200B;하도록 선택하면 편집 세션이 시작될 때 만들어진 버전이 복원되고 토큰이 제거되어 편집 세션이 종료됩니다.
+3. 사용자가 편집을 취소하면 편집 세션 시작 시 만들어진 버전이 복원되고 토큰이 제거되어 편집 세션이 종료됩니다.
 4. 사용자가 편집 내용을 **저장**&#x200B;하도록 선택하면 업데이트된 요소/변형이 유지되고 토큰이 제거되어 편집 세션이 종료됩니다.
 
 ## 조각의 컨텐츠 편집 {#editing-the-content-of-your-fragment}
@@ -296,7 +321,7 @@ ht-degree: 78%
 
 * 선택한 버전 **v&lt;*x.y*>**(오른쪽)
 
-이 버전들은 나란히 표시되며, 여기에서
+그들은 다음 위치에서 나란히 표시될 것입니다.
 
 * 다른 곳들은 모두 강조 표시됩니다.
 
