@@ -1,14 +1,14 @@
 ---
 title: 컨텐츠 조각 사용자 지정 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
+exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 3%
 
 ---
-
 
 # 컨텐츠 조각 사용자 지정 및 확장{#customizing-and-extending-content-fragments}
 
@@ -296,7 +296,7 @@ CFM(Content Fragment Management)은 다음과 같은 AEM Assets의 일부입니�
 기술적으로, 모든 편집은 다른 모든 AEM 편집과 마찬가지로 *라이브* 컨텐츠에서 수행됩니다. 편집 세션이 시작되면 편집되지 않은 현재 상태의 버전이 만들어집니다. 사용자가 편집을 취소하면 해당 버전이 복원됩니다. 사용자가 **저장**&#x200B;을 클릭하는 경우, 모든 편집이 *live* 콘텐트에서 실행되므로 모든 변경 내용이 이미 유지됩니다. 또한 **저장**&#x200B;을 클릭하면 일부 백그라운드 처리가 트리거됩니다(전체 텍스트 검색 정보 만들기 및/또는 혼합 미디어 자산 처리).
 
 첨단 케이스에 대한 몇 가지 안전 조치가 있습니다.예를 들어 사용자가 편집 세션을 저장하거나 취소하지 않고 편집기를 떠나려고 할 경우 또한 주기적인 자동 저장을 사용하여 데이터 손실을 방지할 수 있습니다.
-두 사용자는 동일한 컨텐츠 조각을 동시에 편집할 수 있으므로 다른 변경 사항을 덮어쓸 수 있습니다. 이를 방지하려면 조각에 DAM 관리의 *체크아웃* 작업을 적용하여 컨텐츠 조각을 잠가야 합니다.
+두 사용자는 동일한 컨텐츠 조각을 동시에 편집할 수 있으므로 서로의 변경 사항을 덮어쓸 수 있습니다. 이를 방지하려면 조각에 DAM 관리의 *체크아웃* 작업을 적용하여 컨텐츠 조각을 잠가야 합니다.
 
 ## 예 {#examples}
 
@@ -333,7 +333,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 예:자동 저장 간격 지정 {#example-specifying-the-auto-save-interval}
 
-구성 관리자(ConfMgr)를 사용하여 [자동 저장 간격](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions)(초 단위)을 정의할 수 있습니다.
+구성 관리자(ConfMgr)를 사용하여 [자동 저장 간격](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions)(초 단위)을 정의할 수 있습니다.
 
 * 노드:`<conf-root>/settings/dam/cfm/jcr:content`
 * 속성 이름: `autoSaveInterval`
