@@ -3,9 +3,9 @@ title: Cloud Service의 유지 관리 작업
 description: Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
+source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -54,8 +54,8 @@ ht-degree: 2%
     <td>일별</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
-    <td>코드 샘플 1 벨 참조</td>
+    <td>아래 위치 1 참조</td>
+    <td>아래의 코드 샘플 1 참조</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily(이 값은 변경할 수 없음)</li>
@@ -67,7 +67,7 @@ ht-degree: 2%
     <td>매주</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
+    <td>아래 위치 2 참조</td>
     <td>아래의 코드 샘플 2를 참조하십시오.</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ ht-degree: 2%
     <td>매월</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
+    <td>아래 위치 3 참조</td>
     <td>아래의 코드 샘플 3 참조</td>
      <td>
     <ul>
@@ -93,6 +93,14 @@ ht-degree: 2%
     </ul> </td> 
   </tr>
 </table>
+
+위치:
+
+1. /apps/settings/granite/operations/maintenance/granite_daily
+2. /apps/settings/granite/operations/maintenance/granite_weekly
+3. /apps/settings/granite/operations/maintenance/granite_monthly
+
+코드 샘플:
 
 코드 샘플 1
 
