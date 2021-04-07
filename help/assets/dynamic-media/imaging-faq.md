@@ -3,15 +3,15 @@ title: 스마트 이미징
 description: '"스마트 이미징이 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 올바른 이미지를 자동으로 제공하여 성능과 참여를 높이는 방법을 살펴볼 수 있습니다."'
 feature: 자산 관리,표현물
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1926'
 ht-degree: 1%
 
 ---
-
 
 # 스마트 이미징 {#smart-imaging}
 
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN(Content Delivery Network)을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
-스마트 이미징은 또한 Adobe의 최고급 프리미엄 CDN(Content Delivery Network) 서비스와 완벽하게 통합되는 향상된 성능 증대의 이점을 제공합니다. 이 서비스는 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾습니다. 인터넷에서 기본 경로를 단순히 사용하는 것이 아니라 가장 낮은 지연 또는 가장 낮은 패킷 손실률을 보거나 둘 다를 봅니다.
+스마트 이미징은 또한 Adobe의 최고급 프리미엄 CDN(Content Delivery Network) 서비스와 완벽하게 통합되는 향상된 성능 증대의 이점을 제공합니다. 이 서비스는 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾습니다. 인터넷에서 기본 라우트를 사용하는 대신 지연 시간과 패킷 손실 비율이 가장 낮은 경로를 찾습니다.
 
 다음 이미지 자산 예는 추가된 스마트 이미징 최적화를 보여줍니다.
 
@@ -43,6 +43,7 @@ ht-degree: 1%
 
 스마트 이미징 최신 버전의 향상된 기능:
 
+* 최신 스마트 이미징을 활용하여 웹 페이지에 대한 Google SEO 등급을 개선했습니다.
 * 런타임 시 최적화된 콘텐츠를 즉시 제공합니다.
 * Adobe Sensei 기술을 사용하여 이미지 요청에 지정된 품질(qlt)에 따라 변환합니다.
 * &quot;bfc&quot; URL 매개 변수를 사용하여 스마트 이미징을 끌 수 있습니다.
@@ -58,25 +59,26 @@ ht-degree: 1%
 >
 >Dynamic Media - 하이브리드 고객은 스마트 이미징을 사용할 수 없습니다.
 
-
 ## 스마트 이미징은 어떻게 작동합니까?{#how-does-smart-imaging-work}
 
-소비자가 이미지를 요청하면 Smart Imaging은 사용자 특성을 확인합니다. 그런 다음 사용 중인 브라우저를 기반으로 적절한 이미지 형식으로 변환합니다. 이러한 형식 변환은 시각적 품질을 저하시키지 않는 방식으로 수행됩니다. 스마트 이미징은 브라우저 기능을 기반으로 이미지를 다른 형식으로 자동으로 변환합니다.
+소비자가 이미지를 요청하면 Smart Imaging은 사용자 특성을 확인하여 사용 중인 브라우저를 기반으로 적절한 이미지 형식으로 변환합니다. 이러한 형식 변환은 시각적 품질을 저하시키지 않는 방식으로 수행됩니다. 스마트 이미징은 브라우저 기능을 기반으로 이미지를 다른 형식으로 자동으로 변환합니다.
+
+<!--   * Safari 14.0 +
+    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
 
 * 다음 브라우저를 위해 WebP로 자동 변환:
    * Chrome
    * Firefox
-   * Microsoft Edge
-   * Safari 14.0 +
-      * iOS 14.0 이상 및 macOS BigSur 이상이 설치된 Safari 14 전용
-   * Android
+   * Microsoft® Edge
+   * Safari(iOS, macOS, iPadOS 간), 브라우저 및 OS 버전 지원 WebP 제공
+   * Android™
    * Opera
 * 다음에 대한 기존 브라우저 지원:
 
    | 브라우저 | 브라우저/OS 버전 | 형식 |
    | --- | --- | --- |
-   | Safari | iOS 14.0 이전 버전 | JPEG2000 |
-   | Edge | 18 이하 | JPEGXR |
+   | Safari | iOS/iPad 14.0 또는 macOS BigSur 이전 버전 | JPEG2000 |
+   | Edge | 18 이전 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
@@ -85,6 +87,7 @@ ht-degree: 1%
 ## 지원되는 이미지 형식은 무엇입니까?{#what-image-formats-are-supported}
 
 스마트 이미징에 대해 다음 이미지 형식이 지원됩니다.
+
 * JPEG
 * PNG
 
@@ -97,17 +100,17 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 스마트 이미징은 이미 사용 중인 기존 이미지 사전 설정과 어떻게 작동합니까?{#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-스마트 이미징은 기존의 &quot;이미지 사전 설정&quot;과 연동됩니다. 요청한 파일 형식이 JPEG 또는 PNG인 경우 품질(qlt) 및 형식(fmt)을 제외한 모든 이미지 설정을 준수합니다. 형식 변환의 경우 스마트 이미징은 이미지 사전 설정 설정에 정의된 대로 전체 시각적 품질을 유지하지만 파일 크기는 작습니다. 원본 이미지 크기가 스마트 이미징에서 만드는 크기보다 작은 경우 원본 이미지가 제공됩니다.
+스마트 이미징은 기존의 &quot;이미지 사전 설정&quot;과 연동됩니다. 요청한 파일 형식이 JPEG 또는 PNG인 경우 품질(`qlt`) 및 형식(`fmt`)을 제외한 모든 이미지 설정을 준수합니다. 형식 변환의 경우 스마트 이미징은 이미지 사전 설정 설정에 정의된 대로 전체 시각적 품질을 유지하지만 파일 크기는 작습니다. 원본 이미지 크기가 스마트 이미징에서 만드는 크기보다 작은 경우 원본 이미지가 제공됩니다.
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## URL, 이미지 사전 설정을 변경하거나 Smart Imaging을 위해 내 사이트에 새로운 코드를 배포해야 합니까?{#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-스마트 이미징은 기존 사용자 정의 도메인에 스마트 이미징을 구성하는 경우 기존 이미지 URL 및 이미지 사전 설정과 원활하게 작동합니다. 또한 Smart Imaging에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 모든 기능은 자동으로 처리됩니다.
+스마트 이미징은 기존 사용자 정의 도메인에 스마트 이미징을 구성하는 경우 기존 이미지 URL 및 이미지 사전 설정과 원활하게 작동합니다. 또한 Smart Imaging에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 모두 자동으로 처리됩니다.
 
 스마트 이미징을 사용하도록 새 사용자 지정 도메인을 구성해야 하는 경우 이 사용자 지정 도메인을 반영하도록 URL을 업데이트해야 합니다.
 
-스마트 이미징의 사전 요구 사항을 이해하려면 [스마트 이미징을 사용할 수 있습니까?](#am-i-eligible-to-use-smart-imaging)를 참조하십시오.
+스마트 이미징의 사전 요구 사항을 이해하려면 [스마트 이미징을 사용할 수 있습니까?](#am-i-eligible-to-use-smart-imaging)
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -124,7 +127,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * Adobe 번들 CDN(Content Delivery Network)을 라이선스의 일부로 사용할 수 있습니다.
 * 일반 도메인이 아닌 전용 도메인(예: `images.company.com` 또는 `mycompany.scene7.com`)을 사용합니다(예: `s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`).
 
-도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
+도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다.
 
 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 탭합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 있는 필드를 찾습니다. 현재 범용 도메인을 사용하고 있는 경우 사용자 지정 도메인으로 이동하도록 요청할 수 있습니다. 기술 지원 티켓을 제출할 때 이 전환 요청을 하십시오.
 
@@ -140,7 +143,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
    1. 기본 연락처 이름, 이메일, 전화.
    1. 스마트 이미징을 사용하도록 설정할 모든 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`).
 
-      도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
+      도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다.
 
       **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다.
 
@@ -148,7 +151,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
    1. Adobe을 통해 CDN을 사용하고 있고 직접 관계로 관리되지 않는지 확인합니다.
    1. `images.company.com` 또는 `mycompany.scene7.com`과 같은 전용 도메인을 사용하고 있고 `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` 등의 일반 도메인이 아닌지 확인합니다.
 
-      도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
+      도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다.
 
       **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다.
 
@@ -166,10 +169,11 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 스마트 이미징으로 계정을 활성화할 수 있는 시기는 언제입니까?{#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-요청은 대기 목록에 따라 기술 지원 센터에서 수신한 순서대로 처리됩니다.
+요청은 대기 목록에 따라 고객 지원 센터에서 수신한 순서대로 처리됩니다.
 
 >[!NOTE]
-스마트 이미징을 활성화하면 Adobe이 캐시를 지우므로 리드 타임이 길어지는 경우도 있습니다. 따라서 지정된 시간에 일부 고객 전환만 처리할 수 있습니다.
+>
+>스마트 이미징을 활성화하면 Adobe이 캐시를 지우므로 리드 타임이 길어질 수 있습니다. 따라서 지정된 시간에 일부 고객 전환만 처리할 수 있습니다.
 
 ## 스마트 이미징을 사용하도록 전환하면 어떤 위험이 있습니까?{#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -179,19 +183,20 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 스마트 이미징이 예상대로 작동하는지 확인하려면 어떻게 해야 합니까?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. 계정이 스마트 이미징으로 구성된 후 브라우저에서 Dynamic Media Classic(Scene7)/Dynamic Media 이미지 URL을 로드합니다.
+1. 계정을 스마트 이미징으로 구성한 후 브라우저에서 Dynamic Media Classic 또는 Adobe Experience Manager - Dynamic Media 이미지 URL을 로드합니다.
 1. 브라우저에서 **[!UICONTROL 보기 > 개발자 > 개발자 도구]**&#x200B;를 클릭하여 크롬 개발자 창을 엽니다. 또는 원하는 브라우저 개발자 도구를 선택합니다.
 
 1. 개발자 도구가 열려 있을 때 캐시가 비활성화되었는지 확인합니다.
 
-   * Windows의 경우 - 개발자 도구 창의 설정으로 이동한 다음 **[!UICONTROL 캐시 비활성화(장치 도구가 열려 있는 경우)]** 확인란을 선택합니다.
-   * Mac - 개발자 창의 **[!UICONTROL 네트워크]** 탭에서 **[!UICONTROL 캐시 비활성화]**&#x200B;를 선택합니다.
+   * Windows®의 경우 개발자 도구 창의 설정으로 이동한 다음 **[!UICONTROL 캐시 비활성화(장치 도구가 열려 있는 동안)]** 확인란을 선택합니다.
+   * macOS의 개발자 창의 **[!UICONTROL 네트워크]** 탭에서 **[!UICONTROL 캐시 비활성화]**&#x200B;를 선택합니다.
 
 1. 컨텐트 유형이 적절한 형식으로 변형됨을 확인합니다. 다음 스크린샷은 Chrome에서 WebP로 동적으로 변환되는 PNG 이미지를 보여줍니다.
 1. 다른 브라우저 및 사용자 조건에서 이 테스트를 반복합니다.
 
 >[!NOTE]
-일부 이미지는 변환되지 않습니다. 스마트 이미징에서는 성능을 개선하기 위해 변환이 필요한지 여부를 결정합니다. 경우에 따라 성능 증가가 예상되지 않거나 형식이 JPEG 또는 PNG가 아닌 이미지는 변환되지 않습니다.
+>
+>일부 이미지는 변환되지 않습니다. 스마트 이미징에서는 전환이 성능을 향상시킬 수 있는지 여부를 결정합니다. 경우에 따라 성능 증가가 예상되지 않거나 형식이 JPEG 또는 PNG가 아닌 이미지는 변환되지 않습니다.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
