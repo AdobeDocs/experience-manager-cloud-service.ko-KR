@@ -6,9 +6,9 @@ topic: 비즈니스 전문가
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
+source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1924'
 ht-degree: 1%
 
 ---
@@ -45,11 +45,11 @@ ht-degree: 1%
 
 * 최신 스마트 이미징을 활용하여 웹 페이지에 대한 Google SEO 등급을 개선했습니다.
 * 런타임 시 최적화된 콘텐츠를 즉시 제공합니다.
-* Adobe Sensei 기술을 사용하여 이미지 요청에 지정된 품질(qlt)에 따라 변환합니다.
-* &quot;bfc&quot; URL 매개 변수를 사용하여 스마트 이미징을 끌 수 있습니다.
+* Adobe Sensei 기술을 사용하여 이미지 요청에 지정된 품질(`qlt`)에 따라 변환합니다.
+* 스마트 이미징은 `bfc` URL 매개 변수를 사용하여 끌 수 있습니다.
 * TTL(Time To Live) 독립적입니다. 이전에는, 스마트 이미징이 작동하려면 최소 TTL이 12시간이다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 Smart Imaging에서는 파생 항목만 캐시되므로 단일 단계 캐시 무효화 프로세스를 사용할 수 있습니다.
-* 규칙 세트에 사용자 지정 헤더를 사용하는 고객. 예를 들어 [이미지 응답에 사용자 정의 헤더 값을 추가하는 경우|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html))에 제안된 &quot;타이밍 오리진 허용&quot;, &quot;X-Robot&quot;는 최신 스마트 이미징의 이점을 제공합니다. 이러한 헤더는 이전 버전의 스마트 이미징과 달리 차단되지 않습니다.
+* 규칙 세트에 사용자 지정 헤더를 사용하는 고객은 이전 버전의 Smart Imaging과 달리 헤더가 차단되지 않으므로 최신 스마트 이미징 기능을 사용할 수 있습니다. 예: [이미지 응답에 사용자 정의 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)에 제시된 &quot;타이밍 오리진 허용&quot;, &quot;X-Robot&quot;.
 
 ## 스마트 이미징과 관련된 라이선스 비용이 있습니까?{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
