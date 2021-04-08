@@ -3,7 +3,7 @@ title: '프로덕션 프로그램 만들기 '
 description: 프로덕션 프로그램 만들기
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -23,18 +23,17 @@ ht-degree: 0%
    >[!NOTE]
    >Cloud Manager에 액세스하는 방법에 대한 자세한 내용은 [Cloud Manager 랜딩 페이지](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)를 참조하십시오.
 
-1. 프로덕션 프로그램을 만들려면 프로그램 만들기 마법사에서 **프로덕션**&#x200B;에 대해 설정을 선택합니다. 사용자는 **계속**&#x200B;을 선택하기 전에 기본 프로그램 이름을 허용하거나 편집할 수 있습니다.
+1. 프로덕션 프로그램을 만들려면 프로그램 만들기 마법사에서 **프로덕션**&#x200B;에 대해 설정을 선택합니다. 사용자는 **만들기**&#x200B;를 선택하기 전에 기본 프로그램 이름을 허용하거나 편집할 수 있습니다.
 
    ![](assets/create-prod1.png)
 
 1. 사용자는 위의 화면 다음에 표시될 화면에서 프로그램에 포함될 솔루션을 선택합니다.
 
 
-   ![](assets/set-up-prod2.png)
+   ![](assets/set-up-prod-2.png)
 
 1. 솔루션을 선택하고 나면 **만들기**&#x200B;를 클릭합니다.
 
-   ![](assets/set-up-prod3.png)
 
 1. 랜딩 페이지에 프로그램 카드가 표시되면 마우스를 올려 Cloud Manager 아이콘을 선택하여 클라우드 관리자 **개요** 페이지로 이동합니다.
 
@@ -45,5 +44,4 @@ ht-degree: 0%
 
 
    >[!NOTE]
-   >
    >프로덕션 프로그램에는 **자동 설정** 기능이 없습니다.
