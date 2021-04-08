@@ -1,14 +1,14 @@
 ---
 title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
+exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8331ecb0797f878067a4f83d97e6ec2f62bb551a
+source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 3%
+source-wordcount: '1585'
+ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] Cloud Service {#release-notes}의 현재 릴리스 노트
 
@@ -82,12 +82,49 @@ AEM Forms은 많은 조직에서 수년간 탁월한 온보딩 및 등록 경험
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2021.3.0으로 간략하게 설명합니다.
+이 섹션에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2021.4.0 및 2021.3.0으로 간략하게 설명합니다.
+
+### 릴리스 날짜 {#release-date-cm-april}
+
+Cloud Service 2021.4.0인 AEM의 Cloud Manager에 대한 릴리스 날짜는 2021년 4월 08일입니다.
+다음 릴리스는 2021년 5월 6일에 예정되어 있습니다.
+
+### 새로운 기능 {#what-is-new-april}
+
+* 프로그램 추가 및 편집 워크플로우에 대한 UI 업데이트를 통해 보다 직관적으로 만들 수 있습니다.
+
+* 이제 필요한 권한을 가진 사용자는 UI를 통해 상거래 끝점을 제출할 수 있습니다.
+
+* 이제 환경 변수의 범위가 작성자 또는 게시와 같은 특정 서비스로 지정될 수 있습니다. AEM 버전 `2021.03.5104.20210328T185548Z` 이상이 필요합니다.
+
+* 파이프라인이 구성되지 않은 경우에도 **Git** 관리 단추가 파이프라인 카드에 표시됩니다.
+
+* Cloud Manager에서 사용하는 AEM 프로젝트 원형 버전이 버전 27로 업데이트되었습니다.
+
+* Cloud Manager에서 만든 Adobe I/O 개발자 콘솔의 프로젝트는 더 이상 의도치 않게 편집하거나 삭제할 수 없습니다.
+
+* 사용자가 새 환경을 추가하면 환경을 만들면 다른 영역으로 이동할 수 없다는 메시지가 표시됩니다.
+
+* 이제 환경 변수의 범위가 작성자 또는 게시와 같은 특정 서비스로 지정될 수 있습니다. AEM 버전 2021.03.5104.20210328T185548Z 이상이 필요합니다.
+
+* 환경이 삭제되었을 때 파이프라인을 시작할 때의 오류 메시지가 명확해졌습니다.
+
+* 이제 Eclipse 프로젝트에서 제공하는 OSGi 번들은 규칙 `CQBP-84--dependencies`에서 제외됩니다.
+
+### 버그 수정 {#bug-fixes-cm-april}
+
+* 파이프라인의 경험 감사 페이지를 편집할 때 슬래시(`( / )`)로 시작하는 입력 경로가 더 이상 보류 중인 상태로 돌아가지 않습니다.
+
+* 새 프로덕션 파이프라인이 생성되면 사용자가 컨텐츠 감사 재정의를 추가하지 않은 경우 기본 홈 페이지가 감사되지 않았습니다.
+
+* 다운로드 가능한 문제 CSV 파일에서 `CloudServiceIncompatibleWorkflowProcess` 문제의 심각도가 잘못되었습니다.
+
+* `Runmode` 검사가 비폴더 노드에서 잘못된 양수를 생성하고 있었습니다.
+
 
 ### 릴리스 날짜 {#release-date-cm-march}
 
 AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021년 3월 11일입니다.
-다음 릴리스는 2021년 4월 8일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-march}
 
