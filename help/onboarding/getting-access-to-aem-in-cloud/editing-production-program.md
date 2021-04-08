@@ -3,7 +3,7 @@ title: '프로덕션 프로그램 편집 '
 description: 프로덕션 프로그램 편집
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 9de1b85f8909709c08cb7358414c18c813aac684
+source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
    >[!NOTE]
    >프로그램에 대해 하나 이상의 솔루션을 선택해야 합니다. 즉, 프로그램 편집 워크플로우 동안 사용자가 모든 솔루션을 선택 해제할 수 없습니다.
 
-1. 편집 프로그램 작업 과정을 완료하려면 **저장**&#x200B;을 클릭합니다.
+1. **저장**&#x200B;을 클릭하여 편집 프로그램 워크플로우를 완료합니다.
 
 
 ## 프로그램 {#considerations-editing} 편집 시 고려 사항
