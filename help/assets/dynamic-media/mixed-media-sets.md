@@ -3,15 +3,15 @@ title: 혼합 미디어 세트
 description: Dynamic Media에서 혼합 미디어 세트로 작업하는 방법을 알아봅니다.
 feature: 혼합 미디어 세트
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1469'
 ht-degree: 1%
 
 ---
-
 
 # 혼합 미디어 세트{#mixed-media-sets}
 
@@ -33,11 +33,11 @@ ht-degree: 1%
 
    먼저 혼합 미디어 세트에 대한 이미지와 비디오를 업로드합니다. 필요한 경우 [이미지 세트](/help/assets/dynamic-media/image-sets.md) 및 [스핀 세트](/help/assets/dynamic-media/spin-sets.md)를 만듭니다. 혼합 미디어 집합 뷰어에서 이미지를 확대/축소할 수 있으므로 이미지를 선택할 때 확대/축소를 고려하십시오. 이미지가 가장 큰 치수의 2,000픽셀 이상이어야 합니다.
 
-1. [혼합 미디어 집합 만들기.](#creating-mixed-media-sets)
+1. [혼합 미디어 집합](#creating-mixed-media-sets) 만들기.
 
    혼합 미디어 집합을 만들려면 자산 페이지에서 **[!UICONTROL 만들기 > 혼합 미디어 집합]**&#x200B;을 탭한 다음 세트의 이름을 지정하고 자산을 선택하고 이미지가 표시되는 순서를 선택합니다.
 
-   [선택기 작업을 참조하십시오.](/help/assets/dynamic-media/working-with-selectors.md)
+   [선택기 작업](/help/assets/dynamic-media/working-with-selectors.md)을 참조하십시오.
 
 1. 필요에 따라 [혼합 미디어 뷰어 사전 설정](/help/assets/dynamic-media/managing-viewer-presets.md)을 설정합니다.
 
@@ -45,13 +45,13 @@ ht-degree: 1%
 
    뷰어 사전 설정을 만들거나 편집하려면 **[!UICONTROL 도구 > 자산 > 뷰어 사전 설정]**&#x200B;을 참조하십시오.
 
-   [뷰어 사전 설정 추가 및 편집을 참조하십시오.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   [뷰어 사전 설정 추가 및 편집](/help/assets/dynamic-media/managing-viewer-presets.md)을 참조하십시오.
 
-1. [혼합 미디어 집합 미리 보기를 참조하십시오.](#previewing-mixed-media-sets)
+1. [혼합 미디어 집합 미리 보기를 참조하십시오](#previewing-mixed-media-sets).
 
    혼합 미디어 집합을 선택하면 미리 볼 수 있습니다. 선택한 뷰어에서 혼합 미디어 집합을 검사하려면 축소판 아이콘을 클릭합니다. 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있는 **[!UICONTROL 뷰어]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [혼합 미디어 집합 게시를 참조하십시오.](#publishing-mixed-media-sets)
+1. [혼합 미디어 집합 게시를 참조하십시오](#publishing-mixed-media-sets).
 
    혼합 미디어 집합 게시를 사용하면 URL 및 포함 문자열이 활성화됩니다. 또한 [뷰어 사전 설정](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)을 게시해야 합니다.
 
@@ -174,4 +174,3 @@ Assets](/help/assets/manage-digital-assets.md)의 모든 자산처럼 사용자 
 >[!NOTE]
 >
 >혼합 미디어 세트가 처음 게시할 때 배달 서비스에서 완전히 종료되지 않는 경우 혼합 미디어 집합을 두 번째로 게시합니다.
-
