@@ -3,15 +3,15 @@ title: 지원되는 파일 형식 및 MIME 형식
 description: 파일 형식 및 MIME 유형은  [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]으로 지원합니다.
 contentOwner: AG
 feature: 자산 관리,표현물
-role: 비즈니스 전문가,관리자
+role: Business Practitioner,Administrator
+exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '821'
 ht-degree: 7%
 
 ---
-
 
 # [!DNL Assets] 지원되는 파일 형식  {#supported-file-formats}
 
@@ -96,7 +96,7 @@ ht-degree: 7%
 
 다음 3D 형식이 지원됩니다.
 
-Dynamic Media에서 [3D 자산 작업을 참조하십시오.](/help/assets/dynamic-media/assets-3d.md)
+Dynamic Media](/help/assets/dynamic-media/assets-3d.md)에서 [3D 자산 작업을 참조하십시오.
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
