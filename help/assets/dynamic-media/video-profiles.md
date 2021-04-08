@@ -3,15 +3,15 @@ title: Dynamic Media 비디오 프로필
 description: Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이미 포함되어 있습니다. 이 기본 프로필의 설정은 최상의 보기 환경을 고객에게 제공하기 위해 최적화되어 있습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
 feature: 자산 관리,비디오 프로필,표현물
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 2%
 
 ---
-
 
 # Dynamic Media 비디오 프로필{#video-profiles}
 
@@ -37,7 +37,7 @@ Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이
 >
 >메타데이터는 자산을 검색할 때 유용합니다. 축소판은 인코딩 중에 생성된 정적 비디오 이미지입니다. Experience Manager 시스템이 필요하며 사용자 인터페이스에서 카드 보기, 검색 결과 보기 및 자산 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 되는 데 사용됩니다. 인코딩된 비디오의 표현물 아이콘(페인터의 팔레트)을 누르면 생성된 축소판이 표시됩니다.
 
-비디오 프로필 작성을 마쳤으면 폴더 또는 여러 폴더에 적용합니다. [폴더에 비디오 프로필 적용을 참조하십시오.](#applying-a-video-profile-to-folders)
+비디오 프로필 작성을 마쳤으면 폴더 또는 여러 폴더에 적용합니다. [폴더에 비디오 프로필 적용](#applying-a-video-profile-to-folders)을 참조하십시오.
 
 다른 자산 유형에 대한 고급 처리 매개 변수를 정의하려면 [자산 처리 구성](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)을 참조하십시오.
 
@@ -429,4 +429,3 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
 1. Experience Manager 로고를 탭하거나 클릭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 비디오 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 탭하거나 클릭하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]**&#x200B;을 선택하고 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 프로파일이 이미 할당된 폴더가 폴더 이름 바로 아래에 프로파일 이름이 표시되어 표시됩니다.
-
