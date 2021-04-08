@@ -3,15 +3,15 @@ title: Dynamic Media 이미지 프로필
 description: '"언샵 마스크, 스마트 자르기, 스마트 견본 또는 두 가지 모두에 대한 설정이 포함된 Dynamic Media 이미지 프로필을 만드는 방법을 알아보십시오. 그런 다음 이미지 에셋 폴더에 프로필을 적용하십시오."'
 feature: 자산 관리,이미지 프로필,표현물
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2705'
 ht-degree: 4%
 
 ---
-
 
 # Dynamic Media 이미지 프로필 {#image-profiles}
 
@@ -96,7 +96,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-선명하게 하기는 [이미지 선명하게 하기에 설명되어 있습니다.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+선명하게 하기는 [이미지 선명하게 하기](/help/assets/dynamic-media/assets/sharpening_images.pdf)에 설명되어 있습니다.
 
 ## Dynamic Media 이미지 프로필 만들기 {#creating-image-profiles}
 
@@ -248,7 +248,7 @@ ht-degree: 4%
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있으면 자르기 상자의 모퉁이 핸들을 드래그합니다. 자르기에서 볼 수 있는 영역의 크기를 조정합니다.
       * 이미지에 스마트 자르기 및 스마트 색상 견본이 모두 있으면 자르기 상자의 모퉁이 핸들을 드래그합니다. 자르기에서 볼 수 있는 영역의 크기를 조정합니다. 또는 이미지 아래의 스마트 견본을 누른 다음(색상 견본은 정적임) 자르기 상자의 모퉁이 핸들을 드래그합니다. 견본의 표시 가능한 영역의 크기를 조정합니다.
 
-      ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png)
+      ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png).
 
    * 스마트 자르기 상자를 이동합니다. 다음 중 하나를 수행합니다.
 
