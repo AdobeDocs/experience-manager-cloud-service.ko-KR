@@ -2,15 +2,15 @@
 title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager에서 Cloud Service으로 Dynamic Media을 구성하는 방법을 알아봅니다.
 topic: 관리자
-role: 관리자,비즈니스 전문가
+role: Administrator,Business Practitioner
+exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '4054'
 ht-degree: 1%
 
 ---
-
 
 # Dynamic Media Cloud Service {#configuring-dynamic-media} 구성 정보
 
@@ -80,7 +80,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    필요한 경우 암호 눈 아이콘을 눌러 입력하거나 다시 입력한 암호의 맞춤법을 확인하여 암호를 표시할 수 있습니다. 암호를 숨기려면 아이콘을 다시 누릅니다.
 
-1. **[!UICONTROL 반복 암호]** 필드에서 새 암호를 다시 입력한 다음 **[!UICONTROL 완료를 누릅니다.]**
+1. **[!UICONTROL 반복 암호]** 필드에서 새 암호를 다시 입력한 다음 **[!UICONTROL 완료]**&#x200B;를 누릅니다.
 
    **[!UICONTROL Dynamic Media 구성 만들기]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 탭하면 새 암호가 저장됩니다.
 
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
    | 자산 게시 | 다음 옵션 중 하나를 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**.자산이 업로드되면 시스템은 자산을 인제스트하고 URL/포함을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입은 없습니다.<br>**[!UICONTROL 활성화 시]**:URL/포함 링크를 제공하려면 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**:에셋은 보안 미리 보기만을 위해 자동으로 게시됩니다. 또한 공개 도메인에 제공하기 위해 DMS7에 게시하지 않고도 Cloud Service에 명시적으로 게시할 수 있습니다. 나중에 이 옵션은 자산을 Experience Manager에 Cloud Service으로 게시하고 상호 배타적인 Dynamic Media에 자산을 게시하려고 합니다. 즉, 스마트 자르기 또는 동적 표현물과 같은 기능을 사용할 수 있도록 자산을 DMS7에 게시할 수 있습니다. 또는 미리 보기를 위한 Cloud Service으로 Experience Manager에서만 자산을 게시할 수 있습니다.동일한 에셋은 공용 도메인에 전달되기 위해 DMS7에 게시되지 않습니다. |
    | 보안 미리 보기 서버 | 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 Cloud Service으로 Experience Manager을 통해 원격 Dynamic Media 변환에 안전하게 액세스하고 미리 볼 수 있습니다(Cloud Service 인스턴스로 Experience Manager으로 다시 바이너리가 전송되지 않음).<br>회사 서버 또는 특수 서버를 사용하기 위해 특별한 일정이 없으면 이 설정을 지정한 대로 유지하는 것이 좋습니다. |
-   | 모든 컨텐츠 동기화 | 기본적으로 선택됩니다. Dynamic Media에 대한 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드:<br>**[!UICONTROL Dynamic Media 동기화 모드]**<br>**[!UICONTROL 기본적으로 활성화&#x200B;]**에서 선택할 수 있습니다.특별히 제외하도록 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]**:Dynamic Media에 동기화할 선택한 폴더를 명시적으로 표시할 때까지 해당 구성은 어떤 폴더에도 적용되지 않습니다.<br>Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 속성을  **[!UICONTROL 탭합니다]**. **[!UICONTROL 세부 사항]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 3가지 옵션 중에서 선택합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 탭합니다. *기억:이 3가지 옵션은 [모든 내용&#x200B;**동기화]를 선택한 경우 사용할 수**없습니다.* Dynamic Media [의 폴더 수준에서 선택적 게시로 작업을 참조하십시오.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 상속됨&#x200B;]**:폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 쇼의 세부 상태입니다.<br>**[!UICONTROL 하위 폴더에 대해 활성화]**:Dynamic Media에 동기화할 모든 항목을 이 하위 트리에 포함합니다. 폴더 특정 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 비활성화됨&#x200B;]**:이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다. |
+   | 모든 컨텐츠 동기화 | 기본적으로 선택됩니다. Dynamic Media에 대한 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드:<br>**[!UICONTROL Dynamic Media 동기화 모드]**<br>**[!UICONTROL 기본적으로 활성화&#x200B;]**에서 선택할 수 있습니다.특별히 제외하도록 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]**:Dynamic Media에 동기화할 선택한 폴더를 명시적으로 표시할 때까지 해당 구성은 어떤 폴더에도 적용되지 않습니다.<br>Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 속성을  **[!UICONTROL 탭합니다]**. **[!UICONTROL 세부 사항]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 3가지 옵션 중에서 선택합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 탭합니다. *기억:이 3가지 옵션은 [모든 내용&#x200B;**동기화]를 선택한 경우 사용할 수**없습니다.* Dynamic Media [의 폴더 수준에서 선택적 게시로 작업을 참조하십시오](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL 상속됨&#x200B;]**:폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 쇼의 세부 상태입니다.<br>**[!UICONTROL 하위 폴더에 대해 활성화]**:Dynamic Media에 동기화할 모든 항목을 이 하위 트리에 포함합니다. 폴더 특정 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 비활성화됨&#x200B;]**:이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다. |
 
    >[!NOTE]
    >
@@ -169,18 +169,18 @@ Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 
 변경된 암호는 **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 오른쪽 위 모서리에 있는 **[!UICONTROL 저장]**&#x200B;을 탭하면 저장됩니다.
 
 1. Experience Manager에서 Cloud Service 로고를 눌러 글로벌 탐색 콘솔에 액세스합니다.
-1. 콘솔 왼쪽에서 도구 아이콘을 누른 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성을 누릅니다.]**
-1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**&#x200B;을 탭합니다. **[!UICONTROL global]**&#x200B;의 왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 마십시오. 그런 다음 **[!UICONTROL 편집을 누릅니다.]**
-1. **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 **[!UICONTROL 암호]** 필드 바로 아래에 있는 **[!UICONTROL 암호 변경을 탭합니다.]**
+1. 콘솔 왼쪽에서 도구 아이콘을 누른 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;을 누릅니다.
+1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**&#x200B;을 탭합니다. **[!UICONTROL global]**&#x200B;의 왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 마십시오. 그런 다음 **[!UICONTROL 편집]**&#x200B;을 누릅니다.
+1. **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 **[!UICONTROL 암호]** 필드 바로 아래에 있는 **[!UICONTROL 암호 변경]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 암호 변경]** 대화 상자에서 다음을 수행합니다.
 
    * **[!UICONTROL 새 암호]** 필드에 새 암호를 입력합니다.
 
       **[!UICONTROL 현재 암호]** 필드는 상호 작용에서 의도적으로 미리 채워지고 숨겨집니다.
 
-   * **[!UICONTROL 반복 암호]** 필드에서 새 암호를 다시 입력한 다음 **[!UICONTROL 완료를 누릅니다.]**
+   * **[!UICONTROL 반복 암호]** 필드에서 새 암호를 다시 입력한 다음 **[!UICONTROL 완료]**&#x200B;를 누릅니다.
 
-1. **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 누른 다음 **[!UICONTROL 확인을 누릅니다.]**
+1. **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 탭한 다음 **[!UICONTROL 확인]**&#x200B;을 탭합니다.
 
 ## (선택 사항) Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}에서 고급 설정 구성
 
@@ -229,7 +229,7 @@ Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media �
 
 #### 응용 프로그램 일반 설정 구성 중 {#configuring-application-general-settings}
 
-[응용 프로그램 일반 설정] 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
+[응용 프로그램 일반 설정] 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다.
 
 **[!UICONTROL 서버]**  - Dynamic Media은 계정을 프로비저닝할 때 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램의 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. Cloud Service 지원으로 Experience Manager에서 명시적으로 지시하지 않는 한 서버 이름을 변경하지 마십시오.
 **[!UICONTROL 이미지]**  덮어쓰기 - Dynamic Media에서는 두 파일의 이름이 같은 파일을 허용하지 않습니다. 각 항목의 URL ID(파일 이름은 확장자를 뺀 값)는 고유해야 합니다. 다음 옵션은 대체 자산을 업로드하는 방법을 지정합니다.원본을 바꾸거나 복제할 것인지 여부입니다. 중복 에셋은 &quot;-1&quot;으로 이름이 바뀝니다. 예를 들어 chair.tif는 chair-1.tif로 이름이 변경되었습니다. 이러한 옵션은 원본과 다른 폴더에 업로드된 자산이나 원본과 다른 파일 확장명을 가진 자산에 영향을 줍니다.
@@ -255,7 +255,7 @@ Dynamic Media 색상 관리를 사용하면 에셋의 색상을 교정할 수 �
    | CMYK 기본 색상 공간 | 기본 CMYK 색상 프로파일의 이름입니다. |
    | 회색 음영 기본 색상 공간 | 기본 회색 색상 프로파일의 이름입니다. |
    | RGB 기본 색상 공간 | 기본 RGB 색상 프로필의 이름입니다. |
-   | 색상 변환 렌더링 의도 | 렌더링 의도를 지정합니다. 사용할 수 있는 값은 다음과 같습니다.**[!UICONTROL perceptual]**, **[!UICONTROL 상대 colorometric]**, **[!UICONTROL 채도]**, **[!UICONTROL 절대 열 도표.]** Adobe에서는  **** 기본적으로 관계를 권장합니다. |
+   | 색상 변환 렌더링 의도 | 렌더링 의도를 지정합니다. 사용할 수 있는 값은 다음과 같습니다.**[!UICONTROL perceptual]**, **[!UICONTROL 상대 colorometric]**, **[!UICONTROL 채도]**, **[!UICONTROL 절대 colometric]**. Adobe은 **[!UICONTROL relative]**&#x200B;을 기본값으로 권장합니다. |
 
 1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
@@ -298,7 +298,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 1. 다음 중 하나를 수행하십시오.
    * 3-4단계를 반복하여 MIME 형식을 더 편집합니다.
-   * CRXDE Lite 페이지의 메뉴 모음에서 **[!UICONTROL 모두 저장을 클릭합니다.]**
+   * CRXDE Lite 페이지의 메뉴 모음에서 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 1. 페이지의 왼쪽 위 모서리에서 **[!UICONTROL CRXDE Lite]**&#x200B;을 탭하여 Experience Manager으로 돌아갑니다.
 
@@ -308,7 +308,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대해 사용자 �
 
 **지원되지 않는 형식에 대해 MIME 형식을 추가하려면**
 
-1. Cloud Service에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 누릅니다.]**
+1. Experience Manager에서 Cloud Service으로 **[!UICONTROL 도구 > 작업 > 웹 콘솔]**&#x200B;을 탭합니다.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -450,7 +450,7 @@ Scene7 업로드 연결을 업데이트하려면:
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. **[!UICONTROL 저장을 탭합니다.]**
+1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
@@ -554,4 +554,3 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    If you only wanted to replicate the original, then you would enter `+original`.
 
    -->
-
