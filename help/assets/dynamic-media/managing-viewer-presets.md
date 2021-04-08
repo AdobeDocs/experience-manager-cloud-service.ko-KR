@@ -3,15 +3,15 @@ title: 뷰어 사전 설정 관리
 description: Dynamic Media에서 뷰어 사전 설정을 만들고 관리하는 방법을 알아봅니다.
 feature: 뷰어 사전 설정,뷰어
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4245'
 ht-degree: 1%
 
 ---
-
 
 # 뷰어 사전 설정 관리{#managing-viewer-presets}
 
@@ -59,7 +59,7 @@ Adobe Experience Manager에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!U
 >[!NOTE]
 >
 >처음 사용하기 전에 모든 기본 뷰어를 게시합니다.
->[뷰어 사전 설정 게시를 참조하십시오.](#publishing-viewer-presets)
+>[게시 뷰어 사전 설정](#publishing-viewer-presets)을 참조하십시오.
 
 ### 뷰어 사전 설정 시스템 호환성 {#viewer-preset-system-compatibility}
 
