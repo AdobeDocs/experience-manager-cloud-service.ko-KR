@@ -3,9 +3,9 @@ title: '프로덕션 프로그램 만들기 '
 description: 프로덕션 프로그램 만들기
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,14 @@ ht-degree: 0%
 
    ![](assets/create-prod1.png)
 
-1. 사용자는 위의 화면 다음에 표시될 화면에서 프로그램에 포함될 솔루션을 선택합니다.
+1. 사용자는 위의 화면 다음에 표시될 화면에서 프로그램에 포함될 솔루션을 선택합니다. 필요한 솔루션 또는 솔루션을 선택한 후 **만들기**&#x200B;를 클릭합니다.
 
 
-   ![](assets/set-up-prod-2.png)
+   ![](assets/setup-prod-select.png)
 
-1. 솔루션을 선택하고 나면 **만들기**&#x200B;를 클릭합니다.
+   또한 아래 그림과 같이 **사이트**&#x200B;에서 **상거래** 추가 기능 옵션을 선택하고 **만들기**&#x200B;를 클릭할 수 있습니다.
 
+   ![](assets/setup-prod-commerce.png)
 
 1. 랜딩 페이지에 프로그램 카드가 표시되면 마우스를 올려 Cloud Manager 아이콘을 선택하여 클라우드 관리자 **개요** 페이지로 이동합니다.
 
