@@ -3,25 +3,25 @@ title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
 description: 웹 페이지에 Dynamic Media 비디오 또는 이미지 에셋을 포함하는 방법을 알아봅니다.
 feature: 자산 관리
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '376'
 ht-degree: 1%
 
 ---
-
 
 # 웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함 {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 비디오를 재생하거나 웹 페이지에 포함된 자산을 보려면 **[!UICONTROL 포함 코드]** 기능을 사용합니다. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. **[!UICONTROL 포함 코드]** 대화 상자에서 코드 편집이 허용되지 않습니다.
 
-AEM을 WCM으로 사용하는 _이 아닌_&#x200B;인 경우에만 URL을 포함합니다. AEM을 WCM으로 사용하는 경우 [페이지에서 직접 자산을 추가합니다.](adding-dynamic-media-assets-to-pages.md)
+AEM을 WCM으로 사용하는 _이 아닌_&#x200B;인 경우에만 URL을 포함합니다. AEM을 WCM으로 사용하는 경우 [페이지](adding-dynamic-media-assets-to-pages.md)에 직접 자산을 추가합니다.
 
-[웹 응용 프로그램에 URL 연결을 참조하십시오.](linking-urls-to-yourwebapplication.md)
+[웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
 
-[응답형 사이트에 대해 최적화된 이미지 제공을 참조하십시오.](responsive-site.md)
+응답형 사이트](responsive-site.md)에 대해 최적화된 이미지 제공을 참조하십시오.[
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ AEM을 WCM으로 사용하는 _이 아닌_&#x200B;인 경우에만 URL을 포함
 
    *게시된*&#x200B;에셋을 *이후*&#x200B;만 복사할 수 있습니다. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
 
-   [자산 게시를 참조하십시오.](publishing-dynamicmedia-assets.md)
+   [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
    [게시 뷰어 사전 설정](managing-viewer-presets.md#publishing-viewer-presets)을 참조하십시오.
 
