@@ -5,11 +5,11 @@ breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 feature-set: Experience Manager Sites
 feature: 배포
-role: 건축가, 개발자
+role: Architect, Developer
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '674'
 ht-degree: 29%
 
 ---
@@ -79,7 +79,8 @@ ht-degree: 29%
       + [IP 허용 목록 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [IP 허용 목록 상태 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + 클라우드 관리자 {#release-notes-cloud-manager} 릴리스 노트
-      + [현재 릴리스 노트(2021.3.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [현재 릴리스 노트(2021.4.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [2021.3.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
       + [2021.2.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [2021.1.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [2020.12.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
