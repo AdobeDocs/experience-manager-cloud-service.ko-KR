@@ -7,15 +7,15 @@ topic-tags: introduction
 content-type: reference
 feature: 3D 자산
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2271'
 ht-degree: 2%
 
 ---
-
 
 # Dynamic Media {#working-with-three-d-assets-dm}에서 3D 자산 작업
 
@@ -29,7 +29,7 @@ Dynamic Media에서 3D 자산을 사용하는 데 필요한 추가 설치는 없
 
 ![3d 신발](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
-<!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
+<!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
 ## Dynamic Media {#supported-three-d-file-formats-in-dm}에서 지원되는 3D 형식
 
@@ -50,7 +50,7 @@ Dynamic Media은 다음 3D 파일 형식을 지원합니다.
 
 Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관리자가 이미 Dynamic Media Cloud Services을 사용하도록 설정해 구성했는지 확인하십시오.
 
-[Dynamic Media Cloud Services 구성을 참조하십시오.](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
+[Dynamic Media Cloud Services 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
 
 1. **3D 자산 업로드**
 
@@ -97,17 +97,17 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
 >
 >먼저 3D 파일을 업로드하지 않고도 뷰어 사전 설정 편집기에서 차원 뷰어 사전 설정을 열어 3D 자산 탐색을 실습할 수 있습니다. 차원 뷰어 사전 설정에는 상호 작용할 수 있는 내장 3D 자산이 있습니다.
 >
->[뷰어 사전 설정 관리를 참조하십시오.](/help/assets/dynamic-media/managing-viewer-presets.md)
+>[뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오.
 
 ## 자산 세부 사항 페이지 {#viewing-three-d-assets-from-asset-details-page}에서 3D 자산 보기 및 상호 작용
 
-소프트웨어 인터페이스를 사용하여 자산 미리 보기를 참조하십시오.](/help/assets/dynamic-media/previewing-assets.md)[
+소프트웨어 인터페이스](/help/assets/dynamic-media/previewing-assets.md)를 사용하여 자산 미리 보기를 참조하십시오.[
 
 **자산 세부 사항 페이지에서 3D 자산을 보고 상호 작용하려면**
 
 1. 3D 자산을 Experience Manager에 업로드했는지 확인합니다.
 
-   Dynamic Media에서 사용할 3D 자산 업로드를 참조하십시오.](/help/assets/add-assets.md#upload-assets)[
+   Dynamic Media](/help/assets/add-assets.md#upload-assets)에서 사용할 3D 자산 업로드를 참조하십시오.[
 
 1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 파일]**&#x200B;을 탭합니다.
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보기]** 드롭다운 목록에서 **[!UICONTROL 카드 보기]**&#x200B;를 탭합니다.
@@ -138,9 +138,9 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
 
 >[!IMPORTANT]
 >
->3D 미디어 구성 요소를 웹 페이지에 추가하고 3D 자산을 구성 요소에 할당한 후에만 이 작업을 수행할 수 있습니다. [웹 페이지에 3D 미디어 구성 요소 추가](#adding-the-three-d-media-component-to-a-web-page) 및 [3D 미디어 구성 요소에 3D 자산 할당을 참조하십시오.](#assigning-a-three-d-asset-to-the-component)
+>3D 미디어 구성 요소를 웹 페이지에 추가하고 3D 자산을 구성 요소에 할당한 후에만 이 작업을 수행할 수 있습니다. [웹 페이지에 3D 미디어 구성 요소 추가](#adding-the-three-d-media-component-to-a-web-page) 및 [3D 미디어 구성 요소](#assigning-a-three-d-asset-to-the-component)에 3D 자산 할당을 참조하십시오.
 
-소프트웨어 인터페이스를 사용하여 자산 미리 보기를 참조하십시오.](/help/assets/dynamic-media/previewing-assets.md)[
+소프트웨어 인터페이스](/help/assets/dynamic-media/previewing-assets.md)를 사용하여 자산 미리 보기를 참조하십시오.[
 
 **3D 미디어 구성 요소 내에서 3D 자산을 보고 상호 작용하려면**
 
@@ -199,7 +199,7 @@ Dynamic Media에는 웹 페이지에서 3D 모델을 인터랙티브하게 볼 �
 
 Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 3D 미디어 구성 요소를 통해 웹 페이지에 3D 자산을 추가할 수 있습니다.
 
-[페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+[페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 1. Experience Manager 사이트를 열고 Dynamic Media 3D 미디어 구성 요소를 추가할 웹 페이지를 선택합니다.
 1. 페이지를 페이지 편집기로 열려면 **[!UICONTROL 편집]**(연필) 아이콘을 누릅니다. **[!UICONTROL 편집]** 모드가 페이지의 오른쪽 위 근처에 선택되어 있는지 확인합니다.
@@ -235,7 +235,7 @@ Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 3
 
 웹 페이지에 3D 미디어 구성 요소를 추가한 후 3D 자산을 해당 구성 요소에 할당할 수 있습니다.
 
-[웹 페이지에 3D 미디어 구성 요소 추가를 참조하십시오.](#adding-the-three-d-media-component-to-a-web-page)
+[웹 페이지에 3D 미디어 구성 요소 추가](#adding-the-three-d-media-component-to-a-web-page)를 참조하십시오.
 
 1. Experience Manager 사이트 페이지 편집기에서 **[!UICONTROL 자산]** 아이콘을 클릭하여 사이드 패널에서 **[!UICONTROL 자산]**&#x200B;을 엽니다.
 1. 드롭다운 목록에서 **[!UICONTROL 3D]**&#x200B;을 선택하여 3D 자산 파일 유형만 표시합니다.
@@ -252,15 +252,15 @@ Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 3
 
 Dynamic Media은 Dynamic Media에서 *정적 컨텐츠*&#x200B;로 지원되는 다양한 3D 파일 형식을 허용합니다. 정적 컨텐츠는 3D 자산을 업로드 및 게시할 수 있지만, 3D 자산과 연결된 *dynamic* 이미징 또는 이미지 리핑에 대한 지원이 없음을 의미합니다. Dynamic Media Imaging Server가 3D 형식을 인식하지 않기 때문입니다. 이와 같이 Dynamic Media에서 3D 자산을 게시하면 복사할 수 있는 인스턴트 URL이 있습니다. 3D 자산에 대한 URL은 일반적인 Dynamic Media URL 구조를 따릅니다. 하지만 Dynamic Media의 기존 이미지 자산과 달리 에셋의 URL에서 매개 변수를 편집할 수는 없습니다.
 
-정적 자산에 대한 [URL 얻기를 참조하십시오.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
+정적 자산](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)에 대한 URL 얻기를 참조하십시오.[
 
 **[!UICONTROL 카드 보기]**&#x200B;에서 작은 지구 아이콘이 자산 이름 바로 아래에 나타나고 자산 이름 및 날짜/시간 왼쪽에 표시되어 게시되었음을 나타냅니다. **[!UICONTROL 목록 보기]**&#x200B;에서 **[!UICONTROL 게시된]** 열은 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
 Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용하여 웹 페이지에 직접 Dynamic Media 3D 자산을 추가합니다.
 
-[Dynamic Media 자산 게시를 참조하십시오.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+[Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)도 참조하십시오.
 
-[페이지 게시를 참조하십시오.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
+[페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)도 참조하십시오.
 
 **정적 Dynamic Media 3D 자산을 게시하려면**
 
@@ -289,8 +289,8 @@ Experience Manager을 WCM으로 사용하는 *이(가) 아닌 경우 Dynamic Med
 
 * **[!UICONTROL URL]**  - 제3자 웹 컨텐츠 관리 시스템을 사용하고 D 뷰어를 사용하여 Dynamic Media 3D 자산을 웹 페이지에 연결하려면  **** URL을 사용합니다.
 
-   [웹 응용 프로그램에 URL 연결을 참조하십시오.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
+   [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)을 참조하십시오.
 
 * **[!UICONTROL 포함]**  -  **** 차원 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려면 [포함]을 사용합니다. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. **[!UICONTROL 포함]** 대화 상자에서 코드 편집이 허용되지 않습니다.
 
-   웹 페이지에 [Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함을 참조하십시오.](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
+   웹 페이지에 [Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함을 참조하십시오](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
