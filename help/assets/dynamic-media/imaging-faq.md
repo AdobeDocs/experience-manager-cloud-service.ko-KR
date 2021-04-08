@@ -6,7 +6,7 @@ topic: 비즈니스 전문가
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 1%
@@ -137,7 +137,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 스마트 이미징 사용을 요청하는 것입니다.자동으로 활성화되지 않습니다.
 
-1. [Admin Console을 사용하여 지원 사례를 만듭니다.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. 지원 케이스에 다음 정보를 제공합니다.
 
    1. 기본 연락처 이름, 이메일, 전화.
