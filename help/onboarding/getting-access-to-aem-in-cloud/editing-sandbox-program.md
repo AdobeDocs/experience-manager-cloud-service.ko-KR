@@ -3,9 +3,9 @@ title: '샌드박스 프로그램 편집 '
 description: 샌드박스 프로그램 편집
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
+source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,6 @@ ht-degree: 0%
 
 프로그램을 편집하는 동안 고려해야 할 사항은 거의 없습니다.
 
-* 프로그램에 대해 하나 이상의 솔루션을 선택해야 합니다. 즉, 프로그램 편집 워크플로우 동안 사용 시 모든 솔루션을 선택 해제할 수 없습니다.
+* 프로그램에 대해 하나 이상의 솔루션을 선택해야 합니다. 즉, 사용자가 프로그램 편집 워크플로우 동안 모든 솔루션을 선택 해제할 수 없습니다.
 
 * **저장** 단추를 클릭하면 선택한 솔루션이 변경된 경우 다음 배포 후 환경에 대한 솔루션 업데이트가 적용됩니다.
