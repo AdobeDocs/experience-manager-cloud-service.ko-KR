@@ -4,15 +4,15 @@ description: '"Dynamic Media 이미지 파일 및 비디오 에셋 파일의 이
 contentOwner: Rick Brough
 feature: 자산 관리, 이미지 프로필, 비디오 프로필
 topic: 비즈니스 전문가
-role: 관리자,비즈니스 전문가
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # 이미지 프로필 또는 비디오 프로필 사용을 위한 디지털 자산을 구성하기 위한 우수 사례{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,7 +26,7 @@ Dynamic Media 이미지 프로필 또는 비디오 프로필 사용과 관련된
 
 * 파일이 있는 폴더 대신 파일에 추가하는 메타데이터를 기반으로 파일을 구성할 수 있습니다. 메타데이터 프로파일을 추가하면 이러한 과정을 수행할 수 있습니다.
 
-   * [메타데이터 프로필을 참조하십시오.](/help/assets/metadata-profiles.md)
+   * [메타데이터 프로필](/help/assets/metadata-profiles.md)을 참조하십시오.
    * [디지털 자산 관리를 위한 메타데이터](/help/assets/manage-metadata.md)를 참조하십시오.
 
 * 일반적으로 디지털 에셋의 컬렉션은 지속적으로 증가하고 있습니다. 따라서 업로드된 모든 에셋 간의 메타데이터 사용, 폴더 구조 및 파일 이름 지정 방식을 공식화하는 것이 중요합니다. 이러한 내용을 표준화하면 디지털 자산 풀이 증가함에 따라 보다 정확하고 일관되게 처리 프로필을 폴더에 적용할 수 있습니다.
@@ -44,4 +44,3 @@ Dynamic Media 이미지 프로필 또는 비디오 프로필 사용과 관련된
 
 * 할당된 프로필이 손상되지 않도록 변경되지 않을 폴더의 디렉토리를 만듭니다.
 * 자산이 이미 게시된 경우 Adobe Experience Manager을 사용하여 자산을 다른 폴더로 이동하고 새 위치에서 다시 게시한다고 가정합니다. 새로 게시된 자산과 함께 원래 게시된 자산 위치를 계속 사용할 수 있습니다. 그러나 원래 게시된 자산은 Experience Manager에 &quot;손실&quot;이며 게시 취소할 수 없습니다. 따라서 다른 폴더로 이동하기 전에 먼저 에셋을 게시 취소하는 것이 좋습니다.
-
