@@ -1,14 +1,14 @@
 ---
 title: '샌드박스 프로그램 편집 '
-description: '샌드박스 프로그램 편집 '
+description: 샌드박스 프로그램 편집
+exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
-
 
 # 샌드박스 프로그램 편집 {#create-sandbox-program}
 
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 1. 클라우드 관리자의 *개요* 페이지에서 **프로그램 편집** 페이지로 이동합니다.
 
-1. **프로그램 편집** 페이지에는 프로덕션 및 샌드박스 프로그램 모두에 대한 2개의 탭(일반 및 솔루션)이 표시됩니다.
-   ![](assets/edit-program.png)
+1. **프로그램 편집** 페이지에는 프로덕션 및 샌드박스 프로그램 모두에 대한 3개의 옵션(**사이트**, **커머스** 및 **자산**)이 표시됩니다.
+   ![](assets/edit-prg.png)
 
 
 ## 프로그램 {#considerations-editing} 편집 시 고려 사항
