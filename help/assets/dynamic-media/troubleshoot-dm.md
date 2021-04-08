@@ -2,15 +2,15 @@
 title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁
 topic: '"관리자,비즈니스 전문가"'
-role: 관리자,비즈니스 전문가
+role: Administrator,Business Practitioner
+exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
-
 
 # Dynamic Media 문제 해결 {#troubleshooting-dynamic-media-scene-mode}
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## 새 Dynamic Media 구성 {#new-dm-config}
 
-[새 Dynamic Media 구성 문제 해결을 참조하십시오.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+[새 Dynamic Media 구성 문제 해결](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)을 참조하십시오.
 
 ## 일반(모든 자산) {#general-all-assets}
 
@@ -221,4 +221,3 @@ ht-degree: 2%
   </tr>
  </tbody>
 </table>
-
