@@ -1,14 +1,14 @@
 ---
 title: '프로덕션 프로그램 편집 '
-description: '프로덕션 프로그램 편집 '
+description: 프로덕션 프로그램 편집
+exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # 프로덕션 프로그램 편집 {#create-production-program}
 
@@ -25,12 +25,10 @@ ht-degree: 0%
 
 1. 클라우드 관리자의 *개요* 페이지에서 **프로그램 편집** 페이지로 이동합니다.
 
-1. **프로그램 편집** 페이지에는 프로덕션 및 샌드박스 프로그램 모두에 대한 2개의 탭(일반 및 솔루션)이 표시됩니다.
+1. **프로그램 편집** 페이지에는 프로덕션 및 샌드박스 프로그램 모두에 대한 3개의 옵션(**사이트**, **커머스** 및 **자산**)이 표시됩니다.
 
-   ![](assets/edit-program.png)
+   ![](assets/edit-prg.png)
 
-   >[!NOTE]
-   >사이트와 자산이 모두 표시되지만, 구매 및 사용하지 않은 항목에 따라 사이트 및 자산 중 하나를 비활성화할 수 있습니다. 특히, 조직에 특정 솔루션에 대해 사용하지 않은 권한 부여가 없는 경우 해당 솔루션이 표시되지만 비활성화됩니다.
 
 ## 프로그램 {#considerations-editing} 편집 시 고려 사항
 
