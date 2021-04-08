@@ -3,15 +3,15 @@ title: 스핀 세트
 description: Dynamic Media에서 스핀 세트를 사용하여 작업하는 방법을 알아봅니다.
 feature: 스핀 세트
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
-
 
 # 스핀 세트{#spin-sets}
 
@@ -39,11 +39,11 @@ ht-degree: 0%
    >
    >배치 세트는 자산 수집에 따라 IPS(이미지 생산 시스템)에 의해 생성됩니다.
 
-1. [여러 보기에 사용할 이미지를 업로드합니다.](#uploading-assets-for-spin-sets)
+1. [여러 보기를 위해 이미지를 업로드합니다](#uploading-assets-for-spin-sets).
 
    1차원 회전 집합에는 8-12개의 샷이 필요하고 2차원 회전 집합에는 16-24개의 샷이 필요합니다. 항목이 회전하고 뒤집어지고 있다는 인상을 주기 위해 샷을 정기적으로 촬영해야 합니다. 예를 들어 1차원 회전 집합에 12개의 샷이 있는 경우 각 샷에 대해 30°(360/12) 항목을 회전합니다.
 
-1. [스핀 세트를 만듭니다.](#creating-spin-sets)
+1. [스핀 세트 만들기를 참조하십시오](#creating-spin-sets).
 
    회전 집합을 만들려면 **[!UICONTROL 만들기 > 회전 집합]**&#x200B;을 선택한 다음 세트의 이름을 지정하고 자산을 선택한 다음 이미지가 나타나는 순서를 선택합니다.
 
@@ -55,15 +55,15 @@ ht-degree: 0%
 
    뷰어 사전 설정을 만들거나 편집하려면 **[!UICONTROL 도구 > 자산 > 뷰어 사전 설정]**&#x200B;을 참조하십시오.
 
-   [뷰어 사전 설정 추가 및 편집을 참조하십시오.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   [뷰어 사전 설정 추가 및 편집](/help/assets/dynamic-media/managing-viewer-presets.md)을 참조하십시오.
 
    세 가지 다른 방법으로 일괄 세트 사전 설정을 통해 만든 세트를 보고 액세스할 수 있습니다. (일괄 처리 집합 사전 설정을 사용하여 만든 집합은 사용자 인터페이스에 *이 표시되지 않도록*&#x200B;하십시오.)
 
-1. [회전 집합 미리 보기를 참조하십시오.](/help/assets/dynamic-media/previewing-assets.md)
+1. [회전 집합 미리 보기를 참조하십시오](/help/assets/dynamic-media/previewing-assets.md).
 
    회전 집합을 선택하면 미리 볼 수 있습니다. 회전 집합을 회전합니다. 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있는 **[!UICONTROL 뷰어]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [스핀 세트 게시를 참조하십시오.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [스핀 세트 게시를 참조하십시오](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    회전 집합 게시를 사용하면 URL 및 포함 문자열이 활성화됩니다. 또한 [뷰어 사전 설정](/help/assets/dynamic-media/managing-viewer-presets.md)을 게시해야 합니다.
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
    필요한 경우 자산의 순서 변경 아이콘을 자산 파일 이름의 오른쪽으로 드래그하여 이미지 순서를 세트 목록의 위나 아래로 조정합니다.
 
-   ![회전 집합에서 프레임 11을 새 위치로 드래그하여 순서를 변경합니다.](assets/6_5_spinset-reorderassets.png)
+   ![회전 집합에서 프레임 11을 새 위치로 드래그하여 순서 변경](assets/6_5_spinset-reorderassets.png)
 
    회전 집합에서 프레임 11을 새 위치로 드래그하여 순서를 변경합니다.
 
