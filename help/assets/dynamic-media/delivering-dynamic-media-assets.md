@@ -3,15 +3,15 @@ title: Dynamic Media 자산 제공
 description: Dynamic Media 에셋을 제공하는 방법을 알아봅니다.
 feature: 자산 관리
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 9%
+source-wordcount: '319'
+ht-degree: 8%
 
 ---
-
 
 # Dynamic Media 자산 제공{#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 
    * 웹 사이트에 비디오 또는 이미지 임베드
    * 웹 응용 프로그램에 URL을 연결합니다. 비디오 플레이어를 팝업 또는 모달 창으로 제공하려는 경우 링크를 사용합니다.
-   * 사이트가 응답형인 경우 [최적화된 이미지를 제공할 수 있습니다.](/help/assets/dynamic-media/responsive-site.md)
+   * 사이트가 응답형인 경우 [최적화된 이미지](/help/assets/dynamic-media/responsive-site.md)를 제공할 수 있습니다.
 
 >[!NOTE]
 >
