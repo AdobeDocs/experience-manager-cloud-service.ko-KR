@@ -3,15 +3,15 @@ title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
 feature: 비디오 프로필
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '9514'
+source-wordcount: '9512'
 ht-degree: 1%
 
 ---
-
 
 # 비디오{#video}
 
@@ -405,7 +405,7 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920x1080 | 1 | 3 |
+| 소스 | 1920x1080 | 1 | 1 |
 | 인코딩됨 | 960 x 540 | 2 | 2 |
 | 인코딩됨 | 640 x 360 | 3 | 1 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
@@ -1091,7 +1091,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 [정적(이미지가 
 
    URL은 *after* 다음에 *게시된*&#x200B;만 복사할 수 있습니다.
 
-   [자산 게시를 참조하십시오.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 1. 다음 중 하나를 수행하십시오.
 
@@ -1295,7 +1295,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 1. Tap **[!UICONTROL OK]** to return to the Properties tab.
 1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
 
-   See [Adding a video thumbnail.](#adding-a-video-thumbnail)
+   See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 -->
 
