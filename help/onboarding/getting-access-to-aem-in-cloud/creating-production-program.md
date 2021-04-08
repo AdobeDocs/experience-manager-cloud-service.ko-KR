@@ -1,14 +1,14 @@
 ---
 title: '프로덕션 프로그램 만들기 '
-description: '프로덕션 프로그램 만들기 '
+description: 프로덕션 프로그램 만들기
+exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # 프로덕션 프로그램 만들기 {#create-production-program}
 
@@ -29,11 +29,6 @@ ht-degree: 0%
 
 1. 사용자는 위의 화면 다음에 표시될 화면에서 프로그램에 포함될 솔루션을 선택합니다.
 
-
-
-   >[!NOTE]
-   >
-   >아래 화면은 두 개 이상의 솔루션을 구매한 고객 세그먼트에 대해서만 표시됩니다. 하나의 솔루션만 구매한 고객의 경우 아래의 솔루션 선택 화면이 표시되지 않습니다.
 
    ![](assets/set-up-prod2.png)
 
