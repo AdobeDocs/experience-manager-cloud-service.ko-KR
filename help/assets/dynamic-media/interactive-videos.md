@@ -3,15 +3,15 @@ title: 대화형 비디오
 description: Dynamic Media에서 인터랙티브한 비디오 및 쇼퍼블 비디오를 사용하여 작업하는 방법을 살펴봅니다.
 feature: 대화형 비디오
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '6068'
+source-wordcount: '6066'
 ht-degree: 0%
 
 ---
-
 
 # 대화형 비디오{#interactive-videos}
 
@@ -87,7 +87,7 @@ Experience Manager 에셋](https://adobecustomersuccess.adobeconnect.com/p1yxzdo
 대화형 비디오 에셋을 게시하여 마칩니다. 게시를 사용하면 나중에 복사하고 웹 사이트 랜딩 페이지에 적용하는 임베드 코드 또는 URL이 만들어집니다. [비디오에 상호 작용 추가](#adding-interactivity-to-your-video)를 참조하십시오.
 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-1. **Experience Manager**  내의 웹 사이트 또는 웹 사이트에 대화형 비디오 추가 - Experience Manager 사이트, Experience Manager eCommerce 또는 두 가지 모두를 사용하는 경우, Experience Manager의 웹 페이지에 직접 대화형 비디오를 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **Experience Manager**  내의 웹 사이트 또는 웹 사이트에 대화형 비디오 추가 - Experience Manager 사이트, Experience Manager eCommerce 또는 두 가지 모두를 사용하는 경우, Experience Manager의 웹 페이지에 직접 대화형 비디오를 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 임베드 코드 또는 URL을 사용하여 인터랙티브한 비디오를 웹 사이트 경험과 통합할 수 있습니다. [웹 사이트](#integrating-an-interactive-video-with-your-website)와 대화형 비디오 통합을 참조하십시오.
 타사 WCM(Web Content Manager)을 사용하는 경우 새 대화형 비디오를 웹 사이트에서 사용되는 기존 빠른 보기 구현과 통합해야 합니다. [기존 빠른 보기](#integrating-an-interactive-video-with-an-existing-quickview)와 대화형 비디오 통합을 참조하십시오.
    [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -493,7 +493,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
    >[!NOTE]
    빠른 보기를 통해 쇼퍼블 비디오를 게시하려면 상거래 영역에서 각 비디오의 관련 이미지 에셋을 별도로 게시해야 합니다.
 
-   타임라인 세그먼트를 추가하고 대화형 비디오를 게시한 후 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. [웹 사이트와 대화형 비디오 통합을 참조하십시오.](#integrating-an-interactive-video-with-your-website)
+   타임라인 세그먼트를 추가하고 대화형 비디오를 게시한 후 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. [웹 사이트](#integrating-an-interactive-video-with-your-website)와 대화형 비디오 통합을 참조하십시오.
 
 ## 대화형 비디오 자산 게시 중 {#publishing-interactive-video-assets}
 
@@ -503,7 +503,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 
 비디오를 업로드하고 타임라인 세그먼트를 추가하고 대화형 비디오를 게시한 후 이제 기존 웹 사이트에 추가할 준비가 되었습니다.
 
-Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 비디오를 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 비디오를 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 독립형 Experience Manager 자산 고객인 경우 이 섹션에 설명된 대로 대화형 비디오를 웹 사이트에 수동으로 추가할 수 있습니다.
 
