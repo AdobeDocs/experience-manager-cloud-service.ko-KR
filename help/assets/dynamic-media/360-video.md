@@ -3,15 +3,15 @@ title: 360/VR 비디오
 description: Dynamic Media에서 360 및 VR(Virtual Reality) 비디오로 작업하는 방법을 알아봅니다.
 feature: 360 VR 비디오
 topic: 비즈니스 전문가
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
-
 
 # 360/VR 비디오 {#vr-video}
 
@@ -102,7 +102,7 @@ Start by uploading 360 Videos.
 
 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
-[페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+[페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 **360 비디오를 미리 보려면**
 
@@ -139,4 +139,4 @@ Start by uploading 360 Videos.
 웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 [
 웹 응용 프로그램](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)에 URL 연결을 참조하십시오. [ 대화형 컨텐츠에 상대 URL, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
-[페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+[페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
