@@ -7,9 +7,9 @@ feature: 자산 관리,게시,공동 작업,자산 처리
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e12638fdda7da178e8dc22163d5ffb822bd980bf
 workflow-type: tm+mt
-source-wordcount: '4342'
+source-wordcount: '4362'
 ht-degree: 2%
 
 ---
@@ -280,54 +280,29 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 [자산 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)에서 다운로드를 참조하십시오.
 
-## 자산 게시 {#publish-assets}
+## 자산 {#publish-assets} 게시 또는 게시 취소
 
-<!--
->[!NOTE]
->
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
--->
+1. 게시할 자산 또는 자산 폴더의 위치 또는 게시 환경에서 제거할 자산 폴더(게시 취소)로 이동합니다.
 
-1. 게시할 자산/폴더의 위치로 이동합니다.
+1. 게시 또는 게시 취소할 에셋 또는 폴더를 선택하고 도구 모음에서 **[!UICONTROL 발행물 관리]** ![발행물 관리 옵션](assets/do-not-localize/globe-publication.png) 옵션을 선택합니다. 또는 빠르게 게시하려면 도구 모음에서 **[!UICONTROL 빠른 게시]** 옵션을 선택합니다. 게시할 폴더에 빈 폴더가 포함되어 있으면 빈 폴더가 게시되지 않습니다.
 
-1. 자산 카드에서 **[!UICONTROL 게시]** 빠른 작업을 선택하거나, 자산을 선택하고 도구 모음에서 **[!UICONTROL 빠른 게시]** 아이콘을 탭/클릭합니다.
-1. 자산이 다른 자산을 참조하는 경우 해당 참조가 마법사에 나열됩니다. 게시되지 않았거나 마지막으로 게시됨/게시 취소된 참조만 표시됩니다. 게시할 참조를 선택합니다.
+1. 필요에 따라 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]** 옵션을 선택합니다.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![게시 취소 작업](assets/unpublish_action.png)
+   *그림:게시 및 게시 취소 옵션과 예약 옵션을 사용합니다.*
 
-   >[!NOTE]
-   >
-   >게시할 폴더에 빈 폴더가 포함되어 있으면 빈 폴더가 게시되지 않습니다.
+1. **[!UICONTROL 지금]**&#x200B;을 선택하여 에셋에 즉시 작업을 수행하거나 **[!UICONTROL 나중에]**&#x200B;를 선택하여 작업을 예약합니다. **[!UICONTROL 나중에]** 옵션을 선택하는 경우 날짜 및 시간을 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL 게시]**&#x200B;를 탭/클릭하여 자산에 대한 활성화를 확인합니다.
+1. 자산을 게시할 때 자산이 다른 자산을 참조하는 경우 해당 참조가 마법사에 나열됩니다. 마지막 게시 이후 게시 취소되거나 수정된 참조만 표시됩니다. 게시할 참조를 선택합니다.
 
->[!CAUTION]
->
->처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 변환이 없습니다. 처리가 완료될 때까지 기다린 다음 처리가 완료되면 자산을 게시하거나 다시 게시하십시오.
+1. 게시를 취소할 때 자산이 다른 자산을 참조하는 경우 게시를 취소할 참조를 선택합니다. **[!UICONTROL 게시 취소]**&#x200B;를 클릭합니다. 확인 대화 상자에서 **[!UICONTROL 취소]**&#x200B;를 클릭하여 작업을 중지하거나 **[!UICONTROL 게시 취소]**&#x200B;를 클릭하여 지정된 날짜에 에셋의 게시를 취소할지 확인합니다.
 
-## 자산 {#unpublishing-assets} 게시 취소
+자산 또는 폴더 게시 또는 게시 취소와 관련된 다음 제한 사항과 팁을 이해합니다.
 
-1. 게시 환경(게시 취소)에서 제거할 자산/자산 폴더의 위치로 이동합니다.
-
-1. 게시를 취소할 자산/폴더를 선택하고 도구 모음에서 **[!UICONTROL 발행물 관리]** 아이콘을 탭/클릭합니다.
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. 목록에서 **[!UICONTROL 게시 취소]** 작업을 선택합니다.
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. 나중에 자산을 게시 취소하려면 **[!UICONTROL 나중에 게시 취소]**&#x200B;를 선택한 다음 자산을 게시 취소할 날짜를 선택합니다.
-1. 게시 환경에서 자산을 사용할 수 없는 날짜를 예약합니다.
-1. 자산이 다른 자산을 참조하는 경우 게시를 취소할 참조를 선택합니다. **[!UICONTROL 게시 취소]**&#x200B;를 탭/클릭합니다.
-1. 확인 대화 상자에서 다음을 탭/클릭합니다.
-
-   * **[!UICONTROL 작업]** 을 중지하려면 취소됨
-   * **[!UICONTROL 게시 취소]** 를 클릭하여 지정된 날짜에 자산 게시 취소(더 이상 게시 환경에서 사용할 수 없음)가 되었는지 확인합니다.
-
-   >[!NOTE]
-   >
-   >복잡한 자산을 게시 취소할 때는 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 자료를 게시 취소하지 마십시오.
+* [!UICONTROL 게시 관리] 옵션은 복제 권한이 있는 사용자 계정에서만 사용할 수 있습니다.
+* 복잡한 자산을 게시 취소하는 동안 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 자료의 게시를 취소하지 마십시오.
+* 빈 폴더가 게시되지 않습니다.
+* 처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 변환이 없습니다. 처리가 완료될 때까지 기다린 다음 처리가 완료되면 자산을 게시하거나 다시 게시하십시오.
 
 ## 닫힌 사용자 그룹 {#closed-user-group}
 
