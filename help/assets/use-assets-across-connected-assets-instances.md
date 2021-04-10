@@ -3,15 +3,15 @@ title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 feature: 자산 관리,연결된 자산,자산 배포
-role: 관리자,비즈니스 전문가,건축가
+role: Administrator,Business Practitioner,Architect
+exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2922'
 ht-degree: 27%
 
 ---
-
 
 # 연결된 에셋을 사용하여 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}에서 DAM 에셋 공유
 
@@ -108,9 +108,12 @@ ht-degree: 27%
 
 1. [!DNL Sites] 배포를 [!DNL Assets] 배포의 CORS 구성에서 허용된 원본으로 추가합니다. 자세한 내용은 [CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) 이해를 참조하십시오.
 
+1. [동일한 사이트 쿠키 지원](/help/security/same-site-cookie-support.md)을 구성합니다.
+
 구성된 [!DNL Sites] 배포와 [!DNL Assets] 배포 간의 연결을 확인할 수 있습니다.
 
-![구성된 연결된 에셋의 연결 테스트  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+![연결된 에셋의 연결 테스트 구성  [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*그림:구성된 연결된 자산의 연결 테스트 [!DNL Sites].*
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
@@ -129,7 +132,7 @@ ht-degree: 27%
    * 로컬 [!DNL Sites]자산 게시&#x200B;]**옵션에서**[!UICONTROL &#x200B;선택적 게시&#x200B;]**를 선택합니다.**[!UICONTROL  **[!UICONTROL 모든 콘텐트 동기화]**&#x200B;를 선택하지 마십시오.
    * 원격 [!DNL Assets] 배포의 경우 [!UICONTROL Dynamic Media 동기화 모드]에서 기본적으로 **[!UICONTROL 활성화됨]**&#x200B;을 선택합니다.
 
-1. 이미지 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)에서 [[!DNL Dynamic Media] 지원을 활성화합니다. 이 기능을 사용하면 로컬 [!DNL Sites] 배포의 웹 페이지 작성자가 [!DNL Dynamic Media] 이미지를 사용할 때 기본 이미지 구성 요소가 [!DNL Dynamic Media] 이미지를 표시할 수 있습니다.
+1. 이미지 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)에서 [[!DNL Dynamic Media] 지원을 활성화합니다. 이 기능을 사용하면 로컬 [!DNL Sites] 배포의 웹 페이지 작성자가 [!DNL Dynamic Media] 이미지를 사용할 때 기본 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html)의 이미지가 [!DNL Dynamic Media] 이미지를 표시할 수 있습니다.
 
 ## 원격 자산 사용 {#use-remote-assets}
 
@@ -231,11 +234,13 @@ ht-degree: 27%
 일반적인 오류를 해결하려면 다음 단계를 수행합니다.
 
 * [!UICONTROL Content Finder]에서 원격 자산을 검색할 수 없는 경우 필요한 역할 및 권한이 적절한지 확인합니다.
-* 원격 dam에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 없거나, 해당 서버에 가져올 권한이 없거나, 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 에셋이 제거되지 않았는지 확인합니다. 적절한 권한이 적절하고 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/operations/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
-* 로컬 [!DNL Sites] 배포에서 원격 DAM 배포에 액세스할 수 없는 경우 사이트 간 쿠키가 허용되는지 확인하십시오. 사이트 간 쿠키가 차단된 경우 [!DNL Experience Manager]의 2개 배포가 인증되지 않을 수 있습니다. 예를 들어, Incognito 모드의 [!DNL Google Chrome]는 제3자 쿠키를 차단할 수 있습니다. [!DNL Chrome] 브라우저에서 쿠키를 허용하려면 주소 표시줄에서 &#39;눈&#39; 아이콘을 클릭하고 [작동하지 않음] > [차단됨]으로 이동한 다음 원격 DAM URL을 선택하고 로그인 토큰 쿠키를 허용합니다. 또는 [타사 쿠키 사용 방법](https://support.google.com/chrome/answer/95647)에 대한 도움말을 참조하십시오.
 
-   ![Uncognito 모드의 Chrome에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
+* 원격 DAM에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 없거나, 해당 서버에 가져올 권한이 없거나, 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 에셋이 제거되지 않았는지 확인합니다. 적절한 권한이 적절하고 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/operations/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
 
-* 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 사이트 배포를 사용할 수 있는지 확인하고 네트워크 연결 문제를 확인합니다. 확인을 위해 나중에 다시 시도하십시오. [!DNL Assets] 배포는 배포와 연결되도록 두 번 시도한  [!DNL Sites] 후 오류를 보고합니다.
+* 로컬 [!DNL Sites] 배포에서 원격 DAM 배포에 액세스할 수 없는 경우 사이트 간 쿠키가 허용되고 [동일한 사이트 쿠키 지원](/help/security/same-site-cookie-support.md)이(가) 구성되어 있는지 확인하십시오. 사이트 간 쿠키가 차단된 경우 [!DNL Experience Manager] 배포는 인증할 수 없습니다. 예를 들어, Incognito 모드의 [!DNL Google Chrome]는 제3자 쿠키를 차단할 수 있습니다. [!DNL Chrome] 브라우저에서 쿠키를 허용하려면 주소 표시줄에서 &#39;눈&#39; 아이콘을 클릭하고 **사이트가 작동하지 않음** > **차단됨**&#x200B;으로 이동하여 원격 DAM URL을 선택하고 로그인 토큰 쿠키를 허용합니다. 또는 [타사 쿠키 활성화 방법](https://support.google.com/chrome/answer/95647)을 참조하십시오.
+
+   ![Uncognito 모드의 Chrome 브라우저에서 쿠키 오류](assets/chrome-cookies-incognito-dialog.png)
+
+* 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 [!DNL Sites] 배포를 사용할 수 있는지 확인하고 네트워크 연결 문제를 확인합니다. 확인을 위해 나중에 다시 시도하십시오. [!DNL Assets] 배포는 배포와 연결되도록 두 번 시도한  [!DNL Sites] 후 오류를 보고합니다.
 
 ![자산 원격 참조를 다시 시도하지 못했습니다.](assets/reference-report-failure.png)
