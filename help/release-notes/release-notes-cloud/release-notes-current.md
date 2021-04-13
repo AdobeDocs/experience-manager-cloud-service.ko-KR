@@ -3,10 +3,10 @@ title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
+source-git-commit: b412ec6b554684b9b41fe6c8991124bc76e200af
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 2%
+source-wordcount: '1588'
+ht-degree: 3%
 
 ---
 
@@ -195,11 +195,13 @@ AEM에서 Cloud Service 2021.3.0으로 Cloud Manager의 릴리스 날짜는 2021
 
 ### 릴리스 날짜 {#release-date-bpa}
 
-우수 사례 분석기 v2.1.8 릴리스 날짜는 2021년 3월 22일입니다.
+우수 사례 분석기 v2.1.12 릴리스 날짜는 2021년 4월 12일입니다.
 
-### 우수 사례 분석기 {#what-is-new-bpa}의 새로운 기능
+### 버그 수정 {#bug-fixes-bpa-april}
 
-* CSV 파일로 내보낸 보고서뿐만 아니라 UI의 BPA 보고서로부터 ACS 공유물 결과를 필터링하는 기능.
+* BPA에서 중복 행이 확인되었습니다. 이 문제가 수정되었습니다.
+* AEM 버전 6.4.2의 BPA UI에서 [보고서 생성] 단추를 비활성화하는 JS 오류가 발생했습니다. 이 문제가 해결되었습니다.
+
 
 ## 코드 리팩터링 도구 {#code-refactoring-tools}
 
