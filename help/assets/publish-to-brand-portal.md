@@ -2,16 +2,16 @@
 title: Brand Portal에 자산, 폴더 및 컬렉션 게시
 description: Brand Portal에 자산, 폴더 및 컬렉션을 게시합니다.
 contentOwner: Vishabh Gupta
-feature: Brand Portal
-role: 비즈니스 전문가
+feature: 브랜드 포털,자산 배포,구성
+role: Business Practitioner
+exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1165'
 ht-degree: 99%
 
 ---
-
 
 # 자산을 Brand Portal에 게시 {#publish-assets-to-brand-portal}
 
