@@ -2,14 +2,14 @@
 title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
-feature: 자산 관리,연결된 자산,자산 배포
+feature: 자산 관리,연결된 자산,자산 배포,사용자 및 그룹
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: 88f2a5d71513feb9a8198402dda491bcc978bff6
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '2922'
-ht-degree: 27%
+source-wordcount: '2932'
+ht-degree: 26%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 27%
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포에서 적절한 사용자 그룹의 일부입니다.
-* [!DNL Adobe Experience Manager] 배포 유형의 경우 지원되는 기준 중 하나가 충족됩니다. 이 기능이 [!DNL Experience Manager] 6.5에서 작동하는 방식에 대한 자세한 내용은 [연결된 에셋( [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)에서)을 참조하십시오.
+* [!DNL Adobe Experience Manager] 배포 유형의 경우 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] Cloud Service은  [!DNL Assets] 6.5에서  [!DNL Experience Manager] 작동합니다.  [!DNL Experience Manager] 6.5에서 이 기능이 작동하는 방법에 대한 자세한 내용은  [ [!DNL Experience Manager] 6.5에서  [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)연결된 자산을 참조하십시오.
 
    |  | [!DNL Sites]로서의 [!DNL Cloud Service]  | [!DNL Experience Manager] 6.5( [!DNL Sites] AMS) | [!DNL Experience Manager] 6.5  [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
@@ -42,7 +42,7 @@ ht-degree: 27%
 
 작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용합니다. 문서는 `Download` 구성 요소에 추가되고 이미지는 `Image` 구성 요소에 추가됩니다. 작성자는 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 [!DNL Experience Manager] 구성 요소에 원격 자산을 추가합니다. 지원되는 형식은 다음과 같습니다.
 
-* **이미지 형식**:이미지 구성 요소가 지원하는  [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 형식입니다.
+* **이미지 형식**:이미지 구성 요소가 지원하는  [](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 형식입니다.
 * **문서 형식**:지원되는  [문서 형식을 참조하십시오](file-format-support.md#document-formats).
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
@@ -189,7 +189,7 @@ ht-degree: 27%
 1. [!DNL Assets] 콘솔에서 자산을 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 참조]** 탭을 클릭합니다. [!DNL Assets] 배포에서 자산을 사용하려면 **[!UICONTROL 로컬 참조]**&#x200B;를 참조하십시오. 연결된 자산 기능을 사용하여 에셋을 가져온 [!DNL Sites] 배포에서 에셋을 사용하려면 **[!UICONTROL 원격 참조]을 참조하십시오.
 
-   ![자산 속성의 원격 참조](assets/connected-assets-remote-reference.png)
+   ![자산 속성 페이지의 원격 참조](assets/connected-assets-remote-reference.png)
 
 1. [!DNL Sites] 페이지에 대한 참조는 각 로컬 [!DNL Sites]에 대한 총 참조 수를 표시합니다. 모든 참조를 찾고 총 참조 수를 표시하는 데 시간이 걸릴 수 있습니다.
 1. 참조 목록은 대화형이고 DAM 사용자가 참조를 클릭하여 참조하는 페이지를 열 수 있습니다. 어떤 이유로 원격 참조를 가져올 수 없는 경우 사용자에게 실패를 알리는 알림이 표시됩니다.
@@ -243,4 +243,4 @@ ht-degree: 27%
 
 * 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 [!DNL Sites] 배포를 사용할 수 있는지 확인하고 네트워크 연결 문제를 확인합니다. 확인을 위해 나중에 다시 시도하십시오. [!DNL Assets] 배포는 배포와 연결되도록 두 번 시도한  [!DNL Sites] 후 오류를 보고합니다.
 
-![자산 원격 참조를 다시 시도하지 못했습니다.](assets/reference-report-failure.png)
+   ![에셋 원격 참조를 검색하지 못했습니다.](assets/reference-report-failure.png)
