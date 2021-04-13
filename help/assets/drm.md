@@ -3,15 +3,15 @@ title: ' [!DNL Assets]의 Digital Rights Management'
 description: ' [!DNL Experience Manager] 에서 [!DNL Cloud Service]의 라이선스가 부여된 자산에 대한 에셋 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
 feature: 자산 관리,DRM
-role: 비즈니스 전문가,관리자
+role: Business Practitioner,Administrator
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1345'
 ht-degree: 0%
 
 ---
-
 
 # 자산 Digital Rights Management {#digital-rights-management-in-assets}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 검색 패널에서 만료된 하위 자산을 포함하여 만료된 에셋을 검색할 수 있습니다.
 
-1. [!DNL Assets] 콘솔에서 도구 모음의 **[!UICONTROL 검색]**&#x200B;을 클릭하여 Omniture 상자를 표시합니다.
+1. [!DNL Assets] 콘솔에서 도구 모음의 **[!UICONTROL 검색]**&#x200B;을 클릭하여 [!DNL Experience Manager] 검색 상자를 표시합니다.
 
 1. Omnisearch 상자에 커서를 두고 `Enter` 키를 선택하여 검색 결과 페이지를 표시합니다.
 
