@@ -5,12 +5,12 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature-set: Experience Manager
 feature: 개발자 도구
-role: 개발자, 건축가
+role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: d4aacc8d5f0b355cae9f79c10de496f26b3e395a
+source-git-commit: cef4c40a0a4af7b3cc7cbe696ceb1a197bbef56a
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 47%
+source-wordcount: '888'
+ht-degree: 46%
 
 ---
 
@@ -63,6 +63,7 @@ ht-degree: 47%
    + [Git 액세스](cloud-manager/accessing-git.md)
    + [Adobe Cloud Manager와 Git 통합](cloud-manager/integrating-with-git.md)
    + [여러 소스 Git 리포지토리를 사용한 작업](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+   + [AEM용 엔터프라이즈 팀 개발 설정(Cloud Service)](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + AEM as a Cloud Service를 위한 개발 {#developing}
    + [AEM 프로젝트 구조](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)
@@ -88,7 +89,7 @@ ht-degree: 47%
       + 구성 요소 및 템플릿 {#components-templates}
          + [구성 요소 개요](developing/components/overview.md)
          + [템플릿](developing/components/templates.md)
-         + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
+         + [코어 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
          + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [컨텐츠 서비스용 JSON 익스포터](developing/components/json-exporter.md)
          + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
