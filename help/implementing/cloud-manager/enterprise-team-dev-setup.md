@@ -2,9 +2,9 @@
 title: 엔터프라이즈 팀 개발 설정 - Cloud Services
 description: 엔터프라이즈 팀 개발 설정에 대한 자세한 내용은 이 페이지를 참조하십시오.
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager는 기업의 요구 사항에 맞게 조정할 수 있는 유연�
 
 각 기업은 서로 다른 팀 설정, 프로세스 및 개발 워크플로우를 포함하여 서로 다른 요구 사항을 가지고 있습니다. 아래 설명된 설정은 Adobe에서 AEM 위에 Cloud Service으로 경험을 제공하는 여러 프로젝트에 사용합니다.
 
-예를 들어 Adobe Photoshop 또는 Adobe Illustrator과 같은 Adobe Creative Cloud 애플리케이션에는 최종 사용자가 사용할 수 있는 자습서, 샘플 및 안내서와 같은 컨텐츠 리소스가 포함되어 있습니다. 이 컨텐츠는 클라이언트 애플리케이션에서 AEM을 *헤드리스* 방식의 Cloud Service으로 사용하고, AEM Cloud 게시 계층에 API를 호출하여 구조화된 컨텐츠를 JSON 스트림으로 검색하고, AEM Cloud Service CDN을 활용하여 최적의 성능을 갖춘 구조화된 컨텐츠와 구조화되지 않은 컨텐츠를 모두 제공합니다.
+예를 들어 Adobe Photoshop 또는 Adobe Illustrator과 같은 Adobe Creative Cloud 애플리케이션에는 최종 사용자가 사용할 수 있는 자습서, 샘플 및 안내서와 같은 컨텐츠 리소스가 포함되어 있습니다. 이 컨텐츠는 클라이언트 애플리케이션이 AEM을 *헤드리스* 방식의 Cloud Service으로 사용하고, AEM Cloud 게시 계층에 API를 호출하여 구조화된 컨텐츠를 JSON 스트림으로 검색하고, AEM에 [CDN(Content Delivery Network)을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=en#content-delivery)으로 활용하여 최적의 성능을 가진 구조화된 컨텐츠와 구조화되지 않은 컨텐츠를 모두 제공합니다.
 
 이 프로젝트에 참여하는 팀은 이후 설명된 프로세스를 따릅니다.
 
@@ -68,13 +68,13 @@ Cloud Manager의 git 리포지토리에 있는 설정에는 다음 두 개의 �
 * 모든 팀의 프로덕션 코드를 포함하는 *안정된 릴리스 분기*
 * 모든 팀의 개발 코드를 포함하는 *개발 분기*
 
-개발 또는 안정적인 분기에서 팀의 git 리포지토리에 푸시할 때마다 [github 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)이 트리거됩니다. 모든 프로젝트는 안정적인 분기에 대해 동일한 설정을 따릅니다. 프로젝트의 안정적인 분기 푸시가 Cloud Manager의 git 리포지토리의 안정된 브랜치로 자동 푸시됩니다. Cloud Manager의 프로덕션 파이프라인은 안정적인 분기로의 푸시에 의해 트리거되도록 구성됩니다. 따라서 프로덕션 파이프라인은 모든 팀의 각 푸시에 의해 안정적인 분기에 의해 실행되며 모든 품질 게이트가 전달되면 프로덕션 배포가 업데이트됩니다.
+개발 또는 안정적인 분기에서 팀의 git 리포지토리에 푸시할 때마다 [github 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)이 트리거됩니다. 모든 프로젝트는 안정적인 분기에 대해 동일한 설정을 따릅니다. 프로젝트의 안정적인 브랜치에 대한 푸시가 Cloud Manager의 git 리포지토리의 안정된 브랜치로 자동 푸시됩니다. Cloud Manager의 프로덕션 파이프라인은 안정적인 분기로의 푸시에 의해 트리거되도록 구성됩니다. 따라서 프로덕션 파이프라인은 모든 팀의 각 푸시에 의해 안정적인 분기에 의해 실행되며 모든 품질 게이트가 전달되면 프로덕션 배포가 업데이트됩니다.
 
 ![](assets/team-setup2.png)
 
 개발 지점으로 푸시하는 작업은 다르게 처리됩니다. 팀의 git 리포지토리에서 개발자 브랜치에 대한 푸시가 github 액션을 트리거하며 코드가 Cloud Manager의 git 리포지토리의 개발 브랜치로 자동 푸시되는 동안 비프로덕션 파이프라인은 코드 푸시에 의해 자동으로 트리거되지 않습니다. Cloud Manager의 api에 대한 호출로 트리거됩니다.
 프로덕션 파이프라인을 실행하면 제공된 품질 게이트를 통해 모든 팀의 코드를 확인하는 작업이 포함됩니다. 코드가 스테이지에 배포되면 테스트 및 감사가 실행되어 모든 것이 예상대로 작동됩니다. 모든 게이트가 통과되면 중단이나 작업 중단 시간 없이 변경 사항을 프로덕션 환경에 적용할 수 있습니다.
-로컬 개발의 경우 Cloud Service용 SDK가 사용됩니다. SDK에서는 로컬 작성자, 게시 및 디스패처를 설정할 수 있습니다. 이를 통해 오프라인 개발과 신속한 작업 시간을 단축할 수 있습니다. 개발에는 작성자만 사용되지만, 신속하게 디스패처 설정 및 게시를 사용하면 git 리포지토리로 푸시하기 전에 모든 것을 로컬로 테스트할 수 있습니다. 각 팀의 구성원은 일반적으로 고유한 프로젝트 코드뿐만 아니라 공유 git에서 코드를 체크아웃합니다. 프로젝트가 독립적이므로 다른 프로젝트를 체크 아웃할 필요가 없습니다.
+로컬 개발의 경우 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)으로 AEM용 [SDK가 사용됩니다. SDK에서는 로컬 작성자, 게시 및 디스패처를 설정할 수 있습니다. 이를 통해 오프라인 개발과 신속한 작업 시간을 단축할 수 있습니다. 개발에는 작성자만 사용되지만, 신속하게 디스패처 설정 및 게시를 사용하면 git 리포지토리로 푸시하기 전에 모든 것을 로컬로 테스트할 수 있습니다. 각 팀의 구성원은 일반적으로 고유한 프로젝트 코드뿐만 아니라 공유 git에서 코드를 체크아웃합니다. 프로젝트가 독립적이므로 다른 프로젝트를 체크 아웃할 필요가 없습니다.
 
 ![](assets/team-setup3.png)
 
