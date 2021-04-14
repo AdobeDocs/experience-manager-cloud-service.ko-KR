@@ -1,14 +1,14 @@
 ---
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아보십시오.
+exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2873'
 ht-degree: 2%
 
 ---
-
 
 # AEM 프로젝트 구조
 
@@ -61,7 +61,7 @@ Oak 인덱스(`/oak:index`)는 Cloud Service 배포 프로세스로 AEM에서 �
 + OSGi 번들 Jar 파일이 생성되어 모든 프로젝트에 직접 포함됩니다.
 
 + `ui.apps` 패키지에는 배포할 모든 코드가 들어 있으며 `/apps`에만 배포됩니다. `ui.apps` 패키지의 일반적인 요소에는 다음이 포함되지만 이에 국한되지 않습니다.
-   + [구성 요소 정의 및 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) HTLscripts
+   + [구성 요소 정의 및 ](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html) HTLscripts
       + `/apps/my-app/components`
    + JavaScript 및 CSS([클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md)를 통해)
       + `/apps/my-app/clientlibs`
@@ -86,6 +86,10 @@ Oak 인덱스(`/oak:index`)는 Cloud Service 배포 프로세스로 AEM에서 �
          + 서비스 사용자
          + 그룹
          + ACL(권한)
+
+>[!NOTE]
+>
+>동일한 코드를 모든 환경에 배포해야 합니다. 단계 환경에서의 신뢰 유효성 검사도 제작 중에 있는지 확인하기 위해 필요합니다. 자세한 내용은 [롤백 시 보수적 코딩](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks)을 참조하십시오.
 
 
 ### 콘텐츠 패키지
