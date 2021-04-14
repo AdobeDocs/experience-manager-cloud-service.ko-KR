@@ -7,27 +7,25 @@ version: cloud-service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
+exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 translation-type: tm+mt
-source-git-commit: d1727601bb5d70bea9920aa1d680284fb3d25bf0
+source-git-commit: e34592d24c8f6c17e6959db1d5c513feaf6381c8
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
 
-
 # Cloud Service {#start}으로 AEM Commerce 시작하기
 
 Cloud Service으로 AEM Commerce를 시작하려면 Experience Manager Cloud Service에 CEF(Commerce Integration Framework) 추가 기능이 제공되어야 합니다. CIF Add-on은 Cloud Service](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/sites/home.html)으로 [AEM Sites 위에 있는 추가 모듈입니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## 온보딩 {#onboarding}
 
 Cloud Service으로 AEM Commerce에 대한 온보딩은 2단계 프로세스입니다.
 
 1. AEM Commerce를 Cloud Service이 활성화되고 제공된 CIF Add-On으로 사용
-2. Magento 환경에 Cloud Service으로 AEM Commerce 연결
+2. 전자 상거래 솔루션과 Cloud Service으로 AEM Commerce 연결
 
 첫 번째 온보딩 단계는 Adobe에 의해 행해진다. 가격 및 프로비저닝에 대한 자세한 내용은 해당 세일즈 담당자에게 문의해야 합니다.
 
@@ -35,18 +33,38 @@ CIF Add-On을 제공받으면 기존 Cloud Manager 프로그램에 적용됩니�
 
 두 번째 단계는 Cloud Service 환경으로서 각 AEM에 대한 셀프 서비스입니다. CIF Add-On의 초기 프로비저닝 후 수행해야 하는 추가 구성이 있습니다.
 
-## Magento {#magento}에 AEM Commerce 연결
+## 전자 상거래 솔루션 {#magento}에 AEM 연결
 
-CIF Add-on 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 Magento 환경에 연결하려면 Cloud Manager 환경 변수를 통해 Magento GraphQL 끝점 URL을 제공해야 합니다. 변수 이름은 `COMMERCE_ENDPOINT`입니다. HTTPS를 통한 보안 연결을 구성해야 합니다.
-서로 다른 Magento GraphQL 끝점 URL은 Cloud Service 환경으로 각 AEM에 사용할 수 있습니다. 이렇게 하면 프로젝트가 Magento 스테이징 시스템 및 AEM 프로덕션 환경을 AEM 스테이징 환경에서 Magento 프로덕션 시스템에 연결할 수 있습니다. Magento GraphQL 끝점은 공개적으로 사용할 수 있어야 하며 개인 VPN 또는 로컬 연결은 지원되지 않습니다.
+CIF 추가 기능과 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 상거래 솔루션과 연결하려면 클라우드 관리자 환경 변수를 통해 GraphQL 끝점 URL을 제공해야 합니다. 변수 이름은 `COMMERCE_ENDPOINT`입니다. HTTPS를 통한 보안 연결을 구성해야 합니다.
+다른 GraphQL 끝점 URL은 Cloud Service 환경으로 각 AEM에 사용할 수 있습니다. 이렇게 프로젝트를 통해 AEM 스테이징 환경과 커머스 스테이징 시스템 및 AEM 프로덕션 환경을 커머스 프로덕션 시스템에 연결할 수 있습니다. GraphQL 끝점은 공개적으로 사용할 수 있어야 하며 개인 VPN 또는 로컬 연결은 지원되지 않습니다. 인증이 필요한 추가 CIF 기능을 사용하기 위해 인증 헤더를 제공할 수도 있습니다.
 
-AEM Commerce를 Magento과 연결하려면 다음 단계를 따르십시오.
+끝점을 구성하는 두 가지 옵션이 있습니다.
+
+### 1) Cloud Manager UI 사용(기본값)
+
+환경 세부 사항 페이지의 대화 상자를 사용하여 수행할 수 있습니다. 상거래 지원 프로그램에 대해 이 페이지를 볼 때 종단점이 현재 구성되지 않은 경우 단추가 표시됩니다.
+
+![친환경 배지 최종 구현](/help/commerce-cloud/assets/commerce-cmui.png)
+
+이 단추를 클릭하면 대화 상자가 열립니다.
+
+![친환경 배지 최종 구현](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+
+끝점(및 선택적으로 토큰)이 설정되면 끝점이 세부 정보 페이지에 표시됩니다. 편집 아이콘을 클릭하면 필요한 경우 끝점을 수정할 수 있는 동일한 대화 상자가 열립니다.
+
+![친환경 배지 최종 구현](/help/commerce-cloud/assets/commerce-cmui-done.png)
+
+### 2) Adobe I/O CLI를 통해
+
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+
+Adobe I/O CLI를 통해 전자 상거래 솔루션과 AEM을 연결하려면 다음 단계를 수행합니다.
 
 1. Cloud Manager 플러그인을 사용하여 Adobe I/O CLI 가져오기
 
    [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager)과 함께 [Adobe I/O CLI](https://github.com/adobe/aio-cli)을 다운로드, 설정 및 사용하는 방법에 대한 [Adobe Cloud Manager 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 확인하십시오.
 
-2. Cloud Service 프로그램으로 AEM을 사용하여 CLI 인증
+2. Cloud Service 프로그램으로 AEM에서 Adobe I/O CLI 인증
 
 3. 클라우드 관리자에서 `COMMERCE_ENDPOINT` 변수 설정
 
@@ -56,19 +74,15 @@ AEM Commerce를 Magento과 연결하려면 다음 단계를 따르십시오.
 
    자세한 내용은 [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)을 참조하십시오.
 
-   Magento GraphQL 끝점 URL은 Magento의 GraphQl 서비스를 가리키고 보안 HTTPS 연결을 사용해야 합니다. 예: `https://demo.magentosite.cloud/graphql`.
+   상거래 GraphQL 끝점 URL은 상거래의 GraphQl 서비스를 가리키고 보안 HTTPS 연결을 사용해야 합니다. 예: `https://demo.magentosite.cloud/graphql`.
 
 >[!TIP]
 >
 >다음 명령을 사용하여 모든 Cloud Manager 변수를 나열하여 다시 확인할 수 있습니다.`aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
->[!NOTE]
->
->또는 [클라우드 관리자 API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)를 사용하여 클라우드 관리자 변수를 구성할 수도 있습니다.
-
 이제 Cloud Service으로 AEM Commerce를 사용할 준비가 되었으며 Cloud Manager를 통해 프로젝트를 배포할 수 있습니다.
 
-## 단계 카탈로그 기능 사용(선택 사항) {#staging}
+## 인증이 필요한 기능 활성화(옵션) {#staging}
 
 >[!NOTE]
 >
