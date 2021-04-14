@@ -2,9 +2,9 @@
 title: 엔터프라이즈 팀 개발 설정 - Cloud Services
 description: 엔터프라이즈 팀 개발 설정에 대한 자세한 내용은 이 페이지를 참조하십시오.
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -63,12 +63,12 @@ Cloud Manager는 기업의 요구 사항에 맞게 조정할 수 있는 유연�
 
 피쳐 분기에서 개발이 수행되면 해당 기능이 개발 분기에 병합됩니다. 완료되고 확인된 기능은 개발 분기에서 선택되고 안정된 분기로 병합됩니다. 모든 변경 사항은 PR(Pull Request)을 통해 수행됩니다. 각 PR은 품질 게이트로 자동으로 확인됩니다. Sonar는 코드 품질 확인에 사용되며 테스트 세트 세트는 새 코드가 회귀를 표시하지 않도록 하기 위해 실행됩니다.
 
-Cloud Manager git 리포지토리의 설정에는 다음 두 개의 분기가 있습니다.
+Cloud Manager의 git 리포지토리에 있는 설정에는 다음 두 개의 분기가 있습니다.
 
 * 모든 팀의 프로덕션 코드를 포함하는 *안정된 릴리스 분기*
 * 모든 팀의 개발 코드를 포함하는 *개발 분기*
 
-개발 또는 안정적인 분기에서 팀의 git 리포지토리에 푸시할 때마다 [github 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)이 트리거됩니다. 모든 프로젝트는 안정적인 분기에 대해 동일한 설정을 따릅니다.프로젝트의 안정적인 분기를 푸시하면 Cloud Managers git 리포지토리의 안정된 분기로 자동으로 푸시됩니다. Cloud Manager의 프로덕션 파이프라인은 안정적인 분기로의 푸시에 의해 트리거되도록 구성됩니다. 따라서 프로덕션 파이프라인은 모든 팀의 각 푸시에 의해 안정적인 분기에 의해 실행되며 모든 품질 게이트가 전달되면 프로덕션 배포가 업데이트됩니다.
+개발 또는 안정적인 분기에서 팀의 git 리포지토리에 푸시할 때마다 [github 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)이 트리거됩니다. 모든 프로젝트는 안정적인 분기에 대해 동일한 설정을 따릅니다. 프로젝트의 안정적인 분기에 대한 푸시가 Cloud Managers git 리포지토리의 안정된 브랜치로 자동 푸시됩니다. Cloud Manager의 프로덕션 파이프라인은 안정적인 분기로의 푸시에 의해 트리거되도록 구성됩니다. 따라서 프로덕션 파이프라인은 모든 팀의 각 푸시에 의해 안정적인 분기에 의해 실행되며 모든 품질 게이트가 전달되면 프로덕션 배포가 업데이트됩니다.
 
 ![](assets/team-setup2.png)
 
