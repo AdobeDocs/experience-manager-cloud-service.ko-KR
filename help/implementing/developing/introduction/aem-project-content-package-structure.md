@@ -3,7 +3,7 @@ title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아보십시오.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
+source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
 ht-degree: 2%
@@ -89,7 +89,7 @@ Oak 인덱스(`/oak:index`)는 Cloud Service 배포 프로세스로 AEM에서 �
 
 >[!NOTE]
 >
->동일한 코드를 모든 환경에 배포해야 합니다. 단계 환경에서의 신뢰 유효성 검사도 제작 중에 있는지 확인하기 위해 필요합니다. 자세한 내용은 [롤백 시 보수적 코딩](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks)을 참조하십시오.
+>동일한 코드를 모든 환경에 배포해야 합니다. 단계 환경에서의 신뢰 유효성 검사도 제작 중에 있는지 확인하기 위해 필요합니다. 자세한 내용은 [Runmodes](/help/implementing/deploying/overview.md#runmodes)의 섹션을 참조하십시오.
 
 
 ### 콘텐츠 패키지
