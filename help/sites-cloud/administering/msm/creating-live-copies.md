@@ -2,15 +2,15 @@
 title: Live Copy 만들기 및 동기화
 description: Live Copy를 만들고 동기화하여 사이트 전체에 컨텐츠를 재사용하는 방법을 살펴볼 수 있습니다.
 feature: 다중 사이트 관리자
-role: 관리자
+role: Administrator
+exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
 workflow-type: tm+mt
 source-wordcount: '4192'
 ht-degree: 1%
 
 ---
-
 
 # Live Copy 만들기 및 동기화 {#creating-and-synchronizing-live-copies}
 
@@ -238,7 +238,7 @@ Live Copy에 컨텐츠 변경 사항을 푸시할 블루프린트 페이지를 �
 
 #### 참조 레일 {#roll-out-a-blueprint-from-the-reference-rail}에서 블루프린트를 롤아웃합니다.
 
-1. **사이트** 콘솔에서 블루프린트에서 페이지를 선택하고 도구 모음에서 **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 패널을 엽니다(도구 모음).
+1. **사이트** 콘솔에서 Live Copy의 페이지를 선택하고 도구 모음에서 **[참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** 패널을 엽니다.
 1. 이 페이지와 관련된 청사진을 표시하려면 목록에서 **블루프린트** 옵션을 선택합니다.
 1. 목록에서 필요한 블루프린트를 선택합니다.
 1. **롤아웃**&#x200B;을 클릭하거나 탭합니다.
