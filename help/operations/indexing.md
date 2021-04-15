@@ -1,14 +1,14 @@
 ---
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
+source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 2%
 
 ---
-
 
 # 콘텐츠 검색 및 색인 지정 {#indexing}
 
@@ -169,7 +169,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 ### 변경 {#undoing-a-change} 취소
 
-경우에 따라 색인 정의의 변경 사항을 되돌려야 합니다. 그 이유는 실수로 변경되었거나 더 이상 변경이 필요하지 않기 때문일 수 있습니다. 예를 들어 인덱스 정의 `damAssetAssetLucene-8-custom-3`이(가) 실수로 만들어졌고 이미 배포되었습니다. 그 때문에 이전 색인 정의 `damAssetAssetLucene-8-custom-2`으로 되돌릴 수 있습니다. 이렇게 하려면 이전 인덱스 `damAssetAssetLucene-8-custom-2`의 정의가 포함된 `damAssetAssetLucene-8-custom-4`이라는 새 인덱스를 추가해야 합니다.
+경우에 따라 색인 정의의 변경 사항을 되돌려야 합니다. 그 이유는 실수로 변경되었거나 더 이상 변경이 필요하지 않기 때문일 수 있습니다. 예를 들어 인덱스 정의 `damAssetLucene-8-custom-3`이(가) 실수로 만들어졌고 이미 배포되었습니다. 그 때문에 이전 색인 정의 `damAssetLucene-8-custom-2`으로 되돌릴 수 있습니다. 이렇게 하려면 이전 인덱스 `damAssetLucene-8-custom-2`의 정의가 포함된 `damAssetLucene-8-custom-4`이라는 새 인덱스를 추가해야 합니다.
 
 ### 인덱스 {#removing-an-index} 제거
 
@@ -198,7 +198,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
     </acme.product-custom-3>
 ```
 
-기본 색인을 사용자 지정할 필요가 없는 경우 기본 색인 정의를 복사해야 합니다. 예를 들어 이미 `damAssetAssetLucene-8-custom-3`을(를) 배포했지만 더 이상 사용자 정의가 필요하지 않고 기본 `damAssetAssetLucene-8` 인덱스로 다시 전환하려는 경우 `damAssetAssetLucene-8`의 인덱스 정의가 포함된 `damAssetAssetLucene-8-custom-4` 인덱스를 추가해야 합니다.
+기본 색인을 사용자 지정할 필요가 없는 경우 기본 색인 정의를 복사해야 합니다. 예를 들어 이미 `damAssetLucene-8-custom-3`을(를) 배포했지만 더 이상 사용자 정의가 필요하지 않고 기본 `damAssetLucene-8` 인덱스로 다시 전환하려는 경우 `damAssetLucene-8`의 인덱스 정의가 포함된 `damAssetLucene-8-custom-4` 인덱스를 추가해야 합니다.
 
 ### 인덱스 가용성 및 내결함성 {#index-availability-and-fault-tolerance}
 
