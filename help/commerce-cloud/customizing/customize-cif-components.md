@@ -7,14 +7,15 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: 전자 상거래 통합 프레임워크
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 1%
+source-wordcount: '2554'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +40,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
 또한 코드 샘플 및 자습서를 실행하려면 [GraphiQL](https://github.com/graphql/graphiql) 또는 브라우저 익스텐션과 같은 GraphQL IDE가 필요합니다. 브라우저 확장을 설치하는 경우 요청 헤더를 설정하는 기능이 있는지 확인하십시오. Google Chrome에서 [Alt GraphQL 클라이언트](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja)은(는) 작업을 수행할 수 있는 하나의 확장 기능입니다.
 
-## Venia 프로젝트 {#clone-venia-project} 복제
+## 베니아 프로젝트 복제 {#clone-venia-project}
 
 [Venia Project](https://github.com/adobe/aem-cif-guides-venia)을 복제한 다음 기본 스타일을 무시합니다.
 
@@ -84,7 +85,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
    >[!NOTE]
    >
-   > 참고, 대화 상자를 사용하여 구성 요소를 구성하여 표시된 제품을 구성할 수도 있습니다(*렌치* 아이콘 클릭).
+   > 참고, 대화 상자를 사용하여 구성 요소를 구성하여 표시된 제품을 구성할 수도 있습니다(_렌치_ 아이콘 클릭).
 
 4. 이제 제품 Teaser에 표시되는 제품이 표시됩니다. 제품의 이름과 가격은 표시되는 기본 속성입니다.
 
@@ -96,7 +97,7 @@ AEM에 표시되는 제품 및 제품 데이터는 Magento에 저장됩니다. �
 
 >[!TIP]
 >
-> 제품 특성 세트의 일부로 사용자 지정 **Yes/No** 특성이 이미 있습니까? 자유롭게 사용하고 이 부분은 건너뛰세요.
+> 제품 속성 세트의 일부로 사용자 지정 **Yes/No** 특성이 이미 있습니까? 자유롭게 사용하고 이 부분은 건너뛰세요.
 
 1. Magento 인스턴스에 로그인합니다.
 1. **카탈로그** > **제품**&#x200B;으로 이동합니다.
@@ -108,7 +109,7 @@ AEM에 표시되는 제품 및 제품 데이터는 Magento에 저장됩니다. �
 1. 다음 값으로 **새 특성** 양식을 채웁니다(다른 값에 대한 기본 설정 유지).
 
    | 필드 세트 | 필드 레이블 | 값 |
-   |-----------|-------------|---------|
+   | ----------------------------- | ------------------ | ---------------- |
    | 속성 속성 | 속성 레이블 | **친환경** |
    | 속성 속성 | 카탈로그 입력 유형 | **예/아니요** |
    | 고급 속성 속성 | 속성 코드 | **eco_friendly** |
@@ -163,17 +164,17 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [Magento GraphQL](
 
    ```json
    {
-   "data": {
+     "data": {
        "products": {
-           "items": [
-               {
-               "name": "Valeria Two-Layer Tank",
-               "sku": "VT11",
-               "eco_friendly": 1
-               }
-           ]
+         "items": [
+           {
+             "name": "Valeria Two-Layer Tank",
+             "sku": "VT11",
+             "eco_friendly": 1
            }
+         ]
        }
+     }
    }
    ```
 
@@ -331,9 +332,9 @@ Venia 프로젝트를 가져오려면 [원하는 IDE를 사용합니다](https:/
 
    이제 슬링 모델이 업데이트되었으므로 Sling 모델을 기반으로 **Eco Friendly**&#x200B;의 표시기를 실제로 표시하려면 구성 요소 마크업을 업데이트해야 합니다.
 
-## 제품 티저 {#customize-markup-product-teaser} 마크업 사용자 정의
+## 제품 티저 마크업 사용자 지정 {#customize-markup-product-teaser}
 
-AEM 구성 요소의 일반적인 확장 기능은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 구성 요소가 마크업을 렌더링하는 데 사용하는 [HTL 스크립트](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)를 재정의하여 수행됩니다. HTML 템플릿 언어(HTL)는 AEM 구성 요소가 제작된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 경량의 템플릿 언어로서 구성 요소를 다시 사용할 수 있도록 합니다. 예를 들어 제품 티저를 여러 번 다시 사용하여 다른 제품을 표시할 수 있습니다.
+AEM 구성 요소의 일반적인 확장 기능은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 구성 요소가 마크업을 렌더링하는 데 사용하는 [HTL 스크립트](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html)를 재정의하여 수행됩니다. HTML 템플릿 언어(HTL)는 AEM 구성 요소가 제작된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 경량의 템플릿 언어로서 구성 요소를 다시 사용할 수 있도록 합니다. 예를 들어 제품 티저를 여러 번 다시 사용하여 다른 제품을 표시할 수 있습니다.
 
 이 경우 사용자 지정 속성을 기반으로 제품이 &quot;친환경&quot;임을 나타내는 배너를 Teaser 위에 렌더링합니다. 구성 요소의 [마크업](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)을(를) 사용자 지정하는 디자인 패턴은 실제로 AEM CIF 핵심 구성 요소뿐만 아니라 모든 AEM 구성 요소에 대한 표준입니다.
 
@@ -357,11 +358,13 @@ AEM 구성 요소의 일반적인 확장 기능은 구성 요소에서 생성한
 
    ```html
    <!--/* productteaser.html */-->
-   <sly data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
-       data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-       data-sly-use.actionsTpl="actions.html"
-       data-sly-test.isConfigured="${properties.selection}"
-       data-sly-test.hasProduct="${product.url}">
+   <sly
+     data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.actionsTpl="actions.html"
+     data-sly-test.isConfigured="${properties.selection}"
+     data-sly-test.hasProduct="${product.url}"
+   ></sly>
    ```
 
    `MyProductTeaser`에 대한 Sling 모델이 사용되어 `product` 변수에 할당됩니다.
@@ -370,15 +373,21 @@ AEM 구성 요소의 일반적인 확장 기능은 구성 요소에서 생성한
 
    ```html
    ...
-   <div data-sly-test="${isConfigured && hasProduct}" class="item__root" data-cmp-is="productteaser" data-virtual="${product.virtualProduct}">
-       <div data-sly-test="${product.showBadge}" class="item__badge">
-           <span>${properties.text || 'New'}</span>
-       </div>
-       <!--/* Insert call to Eco Friendly here */-->
-       <div data-sly-test="${product.ecoFriendly}" class="item__eco">
-           <span>Eco Friendly</span>
-       </div>
-   ...
+   <div
+     data-sly-test="${isConfigured && hasProduct}"
+     class="item__root"
+     data-cmp-is="productteaser"
+     data-virtual="${product.virtualProduct}"
+   >
+     <div data-sly-test="${product.showBadge}" class="item__badge">
+       <span>${properties.text || 'New'}</span>
+     </div>
+     <!--/* Insert call to Eco Friendly here */-->
+     <div data-sly-test="${product.ecoFriendly}" class="item__eco">
+       <span>Eco Friendly</span>
+     </div>
+     ...
+   </div>
    ```
 
    HTL에서 Sling 모델 메서드를 호출할 때 메서드의 `get` 및 `is` 부분이 삭제되고 첫 번째 문자가 소문자로 바뀝니다. 따라서 `isShowBadge()`은 `.showBadge`이 되고 `isEcoFriendly`는 `.ecoFriendly`이 됩니다. `.isEcoFriendly()`에서 반환되는 부울 값을 기준으로 `<span>Eco Friendly</span>`이(가) 표시되는지 확인합니다.
@@ -423,7 +432,7 @@ AEM 구성 요소의 일반적인 확장 기능은 구성 요소에서 생성한
    >
    > Teaser에 사용된 제품에 속성 세트의 일부로 `eco_friendly` 속성이 없으면 일부 스택 추적이 표시될 수도 있습니다.
 
-## 환경 친화적인 배지 {#add-styles} 스타일 추가
+## 환경 친화적인 배지 {#add-styles}에 대한 스타일 추가
 
 이 시점에서 **Eco Friendly** 배지가 표시되는 시점의 논리가 작동하고 있지만 일반 텍스트에서는 일부 스타일을 사용할 수 있습니다. 그런 다음 `ui.frontend` 모듈에 아이콘 및 스타일을 추가하여 구현을 완료합니다.
 
@@ -453,7 +462,7 @@ AEM 구성 요소의 일반적인 확장 기능은 구성 요소에서 생성한
            width: 45px;
            height: 45px;
            text-indent: -9999px;
-           background: no-repeat center center url('../resources/images/eco_friendly.svg'); 
+           background: no-repeat center center url('../resources/images/eco_friendly.svg');
            }
        }
    ...
@@ -487,8 +496,8 @@ AEM 구성 요소의 일반적인 확장 기능은 구성 요소에서 생성한
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM 원형](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
-* [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
-* [AEM CIF 핵심 구성 요소 사용자 정의](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-* [핵심 구성 요소 사용자 정의](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-* [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [AEM 원형](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
+- [AEM CIF 핵심 구성 요소 사용자 정의](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
+- [핵심 구성 요소 사용자 정의](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
+- [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
