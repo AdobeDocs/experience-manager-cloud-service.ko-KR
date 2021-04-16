@@ -1,24 +1,24 @@
 ---
-title: AEM Commerce as a Cloud Service
-description: CLOUD SERVICE 자가 도움말 리소스 및 설명서 링크로 AEM Commerce
+title: AEM 컨텐츠 및 상거래
+description: AEM 컨텐츠 및 커머스 자가 도움말 리소스 및 설명서 링크
+exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 85%
+source-wordcount: '356'
+ht-degree: 82%
 
 ---
 
+# AEM 컨텐트 및 상거래 {#commerce-guide}
 
-# AEM Commerce as a Cloud Service {#commerce-guide}
+이 페이지에는 AEM 컨텐츠 및 상거래에 대한 자가 도움말 리소스가 나열됩니다.
 
-이 페이지에는 AEM Commerce와 관련된 자가 도움말 리소스를 Cloud Service으로 나열합니다.
+## 주요 내용 및 상거래 문서 {#key-articles}
 
-## 주요 상거래 문서 {#key-articles}
-
-* [Cloud Service으로 AEM Commerce 소개](overview.md)
-* [Cloud Service의 AEM 상거래 구조](architecture/magento.md)
-* [시작하기](getting-started.md)
+* [AEM 컨텐츠 및 상거래 소개](introduction.md)
+* [AEM 컨텐츠 및 상거래 시작하기](/help/commerce-cloud/getting-started.md)
+* [AEM 컨텐츠 및 상거래 개발](/help/commerce-cloud/develop.md)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
