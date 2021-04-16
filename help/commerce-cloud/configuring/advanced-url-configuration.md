@@ -6,17 +6,17 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: 전자 상거래 통합 프레임워크
 kt: 4933
 thumbnail: 34350.jpg
+exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '792'
 ht-degree: 3%
 
 ---
-
 
 # 고급 URL 구성 {#url}
 
@@ -38,7 +38,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 &quot;CIF
 
 * **제품 URL 템플릿**:자리표시자 집합을 사용하여 URL의 형식을 정의합니다. 기본값은 `{{page}}.{{url_key}}.html#{{variant_sku}}`입니다. 여기서 `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange`와 같이 URL을 생성합니다.
    * `{{page}}` 다음으로 대체됨  `/content/venia/us/en/products/product-page`
-   * `{{url_key}}` magento의 제품  `url_key` 자산으로 대체되었습니다.  `chaz-kangeroo-hoodie`
+   * `{{url_key}}` Magento의 제품  `url_key` 자산으로 대체되었습니다.  `chaz-kangeroo-hoodie`
    * `{{variant_sku}}` 는 현재 선택한 변형으로 대체되었습니다.  `MH01-M-Orange`
 * **제품 식별자 위치**:제품 데이터를 가져오는 데 사용할 식별자 위치를 정의합니다. 기본값은 `SELECTOR`이고, 다른 가능한 값은 `SUFFIX`입니다. 이전 예제 URL에서 이것은 `chaz-kangeroo-hoodie` 식별자가 제품 데이터를 가져오는 데 사용됨을 의미합니다.
 * **제품 식별자 유형**:제품 데이터를 가져올 때 사용할 식별자 유형을 정의합니다. 기본값은 `URL_KEY`이고, 다른 가능한 값은 `SKU`입니다. 이전 예제 URL에서 이것은 제품 데이터를 `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`과 같은 Magento GraphQL 필터로 가져옵니다.
