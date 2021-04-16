@@ -10,9 +10,9 @@ audience: developer
 feature: 전자 상거래 통합 프레임워크
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
+source-git-commit: 7adef41690044067ef4fe6af31fcb2f6ea222d83
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 2%
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 ## 클라이언트 라이브러리 및 ui.frontend 모듈 {#introduction-to-client-libraries}
 
-스토어프런트 테마/스타일을 렌더링하는 책임을 지는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 또는 clientlibs를 통해 AEM에서 관리됩니다. 클라이언트 라이브러리는 프로젝트 코드에서 CSS 및 Javascript를 구성한 다음 페이지에 전달하는 메커니즘을 제공합니다.
+스토어프런트 테마/스타일을 렌더링하는 책임을 지는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md) 또는 clientlibs를 통해 AEM에서 관리됩니다. 클라이언트 라이브러리는 프로젝트의 코드에 CSS 및 Javascript를 구성하고 페이지에 전달하는 메커니즘을 제공합니다.
 
 이러한 클라이언트 라이브러리에서 관리되는 CSS를 추가 및 재정의하여 브랜드별 스타일을 AEM CIF 핵심 구성 요소에 적용할 수 있습니다. 클라이언트 라이브러리가 구조화되어 페이지에 포함되는 방법을 이해하는 것이 중요합니다.
 
