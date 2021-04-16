@@ -1,18 +1,18 @@
 ---
 title: 캐싱 및 성능
 description: GraphQL 및 컨텐츠 캐싱을 사용하여 상거래 구현 성능을 최적화하는 데 사용할 수 있는 다양한 구성에 대해 알아봅니다.
+exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 2%
 
 ---
 
-
 # 캐싱 및 성능 {#caching}
 
-## 구성 요소 및 GraphQL 응답 캐싱 {#graphql}
+## 구성 요소 및 그래프QL 응답 캐싱 {#graphql}
 
 AEM CIF 핵심 구성 요소는 이미 개별 구성 요소에 대한 GraphQL 응답 캐싱에 대한 내장된 지원을 제공합니다. 이 기능을 사용하여 GraphQL 백엔드 호출 수를 큰 요인으로 줄일 수 있습니다. 탐색 구성 요소에 대한 카테고리 트리 검색 또는 제품 검색 및 카테고리 페이지에 표시된 모든 사용 가능한 집계/패싯 값을 가져오는 것과 같은 반복 질의에 대해 효과적인 캐싱을 수행할 수 있습니다.
 
@@ -46,7 +46,7 @@ venia/components/structure/navigation:true:10:600
 
 다른 구성 요소에 대한 캐싱은 일반적으로 발송자 수준에서 구성된 캐싱과 함께 프로젝트 기준으로 정의해야 합니다. 이러한 캐시의 활성 무효화가 없으므로 캐싱 기간을 신중하게 설정해야 합니다. 가능한 모든 프로젝트 및 사용 사례와 일치하는 &quot;모든 프로젝트에 맞는 하나의&quot; 값이 없습니다. 프로젝트의 요구 사항에 가장 적합한 프로젝트 수준에서 캐싱 전략을 정의해야 합니다.
 
-## 디스패처 캐싱 {#dispatcher}
+## 발송자 캐싱 {#dispatcher}
 
 AEM 페이지 또는 조각을 [AEM Dispatcher](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)에 캐시하는 것은 모든 AEM 프로젝트에 가장 좋은 방법입니다. 일반적으로 AEM에서 변경된 컨텐츠가 디스패처에서 올바르게 업데이트되도록 하는 무효화 기술에 의존합니다. 이는 AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
 
