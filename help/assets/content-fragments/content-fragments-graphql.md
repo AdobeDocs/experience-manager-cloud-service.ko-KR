@@ -2,15 +2,15 @@
 title: GraphQL이 있는 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달
 description: 헤드리스 컨텐츠 전달을 위해 GraphQL과 함께 AEM 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: 콘텐츠 조각
-role: 비즈니스 전문가
+role: Business Practitioner
+exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
-
 
 # GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}의 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 배달
 
@@ -24,7 +24,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하면 AEM GraphQL AP
 >
 >GraphQL은 현재 AEM(Adobe Experience Manager)의 두 가지(별도) 시나리오에서 Cloud Service으로 사용됩니다.
 >
->* [AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다](/help/commerce-cloud/architecture/magento.md).
+>* [AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다](/help/commerce-cloud/integrating/magento.md).
 >* [AEM 컨텐츠 조각은 AEM GraphQL API(표준 GraphQL을 기반으로 사용자 정의된 구현)와 함께 작동하여 애플리케이션에서 사용할 수 있도록 구조화된 컨텐츠를 제공합니다](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 
