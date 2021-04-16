@@ -10,14 +10,14 @@ audience: developer
 feature: 전자 상거래 통합 프레임워크
 kt: 3456
 thumbnail: 3456-style-cif.jpg
+exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 2%
 
 ---
-
 
 # AEM CIF 핵심 구성 요소 스타일 지정 {#style-aem-cif-core-components}
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. Magento 인스턴스로 구성되고 연결된 AEM의 실행 인스턴스가 포함됩니다. AEM을 사용하여 로컬 개발을 Cloud Service SDK](../develop.md)로 설정하는 [에 대한 요구 사항과 단계를 검토하십시오.
 
-## Venia 프로젝트 {#clone-venia-project} 복제
+## 베니아 프로젝트 복제 {#clone-venia-project}
 
 [Venia Project](https://github.com/adobe/aem-cif-guides-venia)을 복제한 다음 기본 스타일을 무시합니다.
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 ## 티저 스타일 {#ui-frontend-module} 업데이트
 
-다음으로 `ui.frontend` 모듈 및 clientlibraries의 작동 방식을 보려면 Teaser 스타일을 약간 변경합니다. Venia 프로젝트를 가져오려면 [원하는 IDE를 사용합니다](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide). 사용된 스크린샷은 [Visual Studio 코드 IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)에 있습니다.
+다음으로 Teaser 스타일을 조금 변경하여 `ui.frontend` 모듈과 클라이언트 라이브러리가 어떻게 작동하는지 확인합니다. Venia 프로젝트를 가져오려면 [원하는 IDE를 사용합니다](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide). 사용된 스크린샷은 [Visual Studio 코드 IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)에 있습니다.
 
 1. **ui.frontend** 모듈을 탐색 및 확장하고 폴더 계층 구조를 다음과 같이 확장합니다.`ui.frontend/src/main/styles/commerce`:
 
@@ -136,7 +136,7 @@ ht-degree: 2%
 
    ![컴파일된 사이트 CSS](../assets/style-cif-component/comiled-site-css.png)
 
-   파일은 프로젝트에 있는 모든 Sass 파일의 작성 및 축소 버전입니다.
+   파일은 프로젝트에 있는 모든 Sass 파일의 컴파일되고 축소 버전입니다.
 
    >[!NOTE]
    >
@@ -179,7 +179,7 @@ ht-degree: 2%
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈에서 관리하지 않습니다. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 clientlibraries에 대한 정의는 각 폴더 아래의 `.content.xml` 파일에 있습니다.
 
-   **clientlib-base** -  [AEM 코어 구성 요소의 필수 종속성을 간단히 포함하는 빈 클라이언트 라이브러리입니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html). 범주는 `venia.base`입니다.
+   **clientlib-base** -  [AEM 코어 구성 요소의 필수 종속성을 간단히 포함하는 빈 클라이언트 라이브러리입니다](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html). 범주는 `venia.base`입니다.
 
    **clientlib-cif** -  [AEM CIF 핵심 구성 요소의 필수 종속성을 간단히 포함하는 빈 클라이언트 라이브러리입니다](https://github.com/adobe/aem-core-cif-components). 범주는 `venia.cif`입니다.
 
@@ -254,7 +254,7 @@ ht-degree: 2%
 
    `venia/clientlibs/clientlib-site.min.css` 및 `venia/clientlibs/clientlib-site.min.js`에 주목하십시오. 이러한 파일은 `ui.frontend` 모듈에서 파생된 컴파일된 CSS 및 Javascript 파일입니다.
 
-## 페이지 템플릿 {#client-library-inclusion-pagetemplates}과(와) 함께 클라이언트 라이브러리 포함
+## 클라이언트 라이브러리 포함 페이지 템플릿 {#client-library-inclusion-pagetemplates}
 
 클라이언트측 라이브러리를 포함하는 방법에는 몇 가지 옵션이 있습니다. 그런 다음 생성된 프로젝트에 [페이지 템플릿](/help/implementing/developing/components/templates.md)을 통해 `clientlib-site` 라이브러리가 포함된 방법을 검사합니다.
 
