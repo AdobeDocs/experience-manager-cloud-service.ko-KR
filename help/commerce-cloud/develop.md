@@ -7,14 +7,14 @@ version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
+exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 translation-type: tm+mt
-source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 9%
+source-wordcount: '1011'
+ht-degree: 8%
 
 ---
-
 
 # AEM Commerce for AEM을 Cloud Service {#develop}으로 개발
 
@@ -83,7 +83,7 @@ Cloud Service SDK로 AEM을 사용하는 로컬 CIF Add-on 개발의 경우 다�
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   이 변수는 AEM에서 상거래 시스템에 연결하는 데 사용됩니다. 또한 CIF Add-on에는 로컬 역방향 프록시가 포함되어 Magento GraphQL 끝점을 로컬로 사용할 수 있습니다. CIF 작성 도구(제품 콘솔 및 피커)와 직접 GraphQL 호출을 수행하는 CIF 클라이언트측 구성 요소에 사용됩니다.
+   이 변수는 AEM에서 상거래 시스템에 연결하는 데 사용됩니다. 또한 CIF Add-on에는 로컬 역방향 프록시가 포함되어 Commerce GraphQL 끝점을 로컬로 사용할 수 있습니다. CIF 작성 도구(제품 콘솔 및 피커)와 직접 GraphQL 호출을 수행하는 CIF 클라이언트측 구성 요소에 사용됩니다.
 
    이 변수는 Cloud Service 환경으로서 AEM용으로 설정해야 합니다. 변수에 대한 자세한 내용은 [AEM용 OSGi를 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)로 구성을 참조하십시오.
 
@@ -98,6 +98,10 @@ Cloud Service SDK로 AEM을 사용하는 로컬 CIF Add-on 개발의 경우 다�
    비밀에 대한 자세한 내용은 [AEM용 OSGi를 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)로 구성을 참조하십시오.
 
 1. Cloud Service SDK로 AEM 시작
+
+>[!NOTE]
+>
+>5단계에서 환경 변수가 설정된 동일한 터미널 창에서 AEM을 Cloud Service SDK로 시작해야 합니다. 별도의 터미널 창에서 시작하거나 .jar 파일을 두 번 클릭하여 환경 변수가 표시되는지 확인합니다.
 
 OSGI 콘솔을 통해 설정을 확인합니다. `http://localhost:4502/system/console/osgi-installer`. 목록에 피쳐 모델 파일에 정의된 대로 CIF 추가 기능 관련 번들, 컨텐츠 패키지 및 OSGI 구성이 포함되어야 합니다.
 
@@ -131,7 +135,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIF 핵심 구성 요소는 제공된 `all` 패키지를 포함하거나 CIF 컨텐츠 패키지 및 관련 OSGI 분판을 개별적으로 사용하여 모든 프로젝트에서 사용할 수 있습니다. 프로젝트에 CIF 핵심 구성 요소를 수동으로 추가하려면 다음 종속성을 사용합니다.
+CIF 핵심 구성 요소는 제공된 `all` 패키지를 포함하거나 CIF 컨텐츠 패키지 및 관련 OSGI 번들을 사용하여 개별적으로 프로젝트에 사용할 수 있습니다. 프로젝트에 CIF 핵심 구성 요소를 수동으로 추가하려면 다음 종속성을 사용합니다.
 
 ```java
 <dependency>
@@ -165,7 +169,7 @@ CIF 핵심 구성 요소는 제공된 `all` 패키지를 포함하거나 CIF 컨
 
 ### AEM Venia Reference Store 사용
 
-CIF 프로젝트를 시작하는 두 번째 옵션은 [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)를 복제하여 사용하는 것입니다. AEM Venia Reference Store는 AEM용 CIF Core Components의 사용을 보여 주는 샘플 참조 스토어프런트 응용 프로그램입니다. 사용자 고유의 기능을 개발할 수 있는 잠재적 시작점뿐만 아니라 모범 사례 세트로 사용하기 위한 것입니다.
+CIF 프로젝트를 시작하는 두 번째 옵션은 [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)를 복제하여 사용하는 것입니다. AEM Venia Reference Store는 AEM용 CIF Core Components의 사용을 보여 주는 샘플 참조 스토어프런트 응용 프로그램입니다. 이 프레임워크는 모범 사례 세트 및 고유한 기능을 개발할 수 있는 잠재적 시작점으로 고안되었습니다.
 
 Venia Reference Store를 시작하려면 Git 리포지토리를 복제하고 필요에 따라 프로젝트를 사용자 정의하기만 하면 됩니다.
 
