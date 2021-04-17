@@ -3,16 +3,16 @@ title: ' [!DNL Adobe Creative Cloud]과(와) 통합하는 우수 사례'
 description: 모범 사례는 Experience Manager 배포를 Adobe Creative Cloud과 통합하여 에셋 전송 워크플로우를 간소화하고 효율성을 극대화합니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: 공동 작업,Adobe 에셋 링크,Experience Manager 데스크탑 앱
-role: 건축가,비즈니스 전문가,관리자
+feature: 공동 작업,Adobe 에셋 링크,데스크탑 앱
+role: Architect,Business Practitioner,Administrator
+exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3300'
 ht-degree: 2%
 
 ---
-
 
 # AEM 및 Creative Cloud 통합 우수 사례 {#aem-and-creative-cloud-integration-best-practices}
 
