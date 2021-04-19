@@ -2,15 +2,15 @@
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
 feature: 자산 관리,업로드
-role: 비즈니스 전문가,관리자
+role: Business Practitioner,Administrator
+exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2059'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager {#add-assets-to-experience-manager}에 디지털 에셋 추가
 
@@ -223,6 +223,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 ## API {#upload-using-apis}를 사용하여 에셋 업로드 또는 인제스트
 
 업로드 API 및 프로토콜의 기술 세부 사항, 오픈 소스 SDK 및 샘플 클라이언트에 대한 링크는 개발자 참조의 [asset upload](developer-reference-material-apis.md#asset-upload-technical) 섹션에 제공됩니다.
+
+## 팁, 우수 사례 및 제한 사항 {#tips-limitations}
+
+* Adobe은 [!DNL Experience Manager Assets]의 각 폴더에 최대 1000개의 에셋을 추가하는 것이 좋습니다. 폴더에 에셋을 더 추가할 수 있지만, 이러한 폴더에 대한 탐색 속도가 느려지는 등의 성능 문제가 표시될 수 있습니다.
 
 >[!MORELIKETHIS]
 >
