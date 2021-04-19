@@ -7,9 +7,9 @@ feature: 자산 관리,게시,공동 작업,자산 처리
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4505'
 ht-degree: 2%
 
 ---
@@ -47,8 +47,6 @@ ht-degree: 2%
 
 DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드하는 경우, [!DNL Experience Manager]은(는) 중복을 감지하여 사용자에게 알립니다. 중복 감지는 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL Adobe AEM Cloud Asset Duplicator]를 구성합니다. [OSGi 구성 작업 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)을 참조하십시오. 복제 감지는 `jcr:content/metadata/dam:sha1`에 저장된 고유한 `dam:sha1` 값을 기반으로 합니다. 파일 이름이 다르더라도 중복 에셋이 검색됨을 의미합니다.
 
-![중복된 자산 OSGi 구성 감지](assets/duplicate-detection.png)
-
 사용자 지정 코드에 구성 파일 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json`을 추가할 수 있으며 파일에는 다음이 포함될 수 있습니다.
 
 ```json
@@ -58,7 +56,7 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 }
 ```
 
-활성화되면 Experience Manager은 중복 에셋의 알림을 받은 편지함으로 보냅니다. 여러 중복에 대해 집계된 결과입니다. 사용자는 결과에 따라 자산을 제거하도록 선택할 수 있습니다.
+활성화되면 Experience Manager은 중복 에셋의 알림을 Experience Manager 받은 편지함으로 보냅니다. 여러 중복에 대해 집계된 결과입니다. 사용자는 결과에 따라 자산을 제거하도록 선택할 수 있습니다.
 
 ![중복 자산에 대한 받은 편지함 알림](assets/duplicate-detect-inbox-notification.png)
 
