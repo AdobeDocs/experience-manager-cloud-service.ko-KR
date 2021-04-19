@@ -1,9 +1,9 @@
 ---
 title: CIF(Commerce Integration Framework) Add-On의 주목할 만한 변경 사항
 description: 이전 CIF 버전과 비교하여 CIF(Commerce Integration Framework)가 눈에 띄게 변경되었습니다.
-exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
+exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: 7a52e4b62f5a18f9c68e5afb0d464bd11be732d2
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Adobe Experience Manager은 Cloud Service으로 AEM 프로젝트를 관리할 수 있는 새로운 기능과 다양한 기능을 제공합니다. 이러한 기능에 대한 자세한 내용은 Cloud Service](/help/release-notes/aem-cloud-changes.md)에 대한 [변경 사항 링크를 참조하십시오.
 
-이 문서에서는 주로 CIF Open-source의 CIF Classic(Quickstart)로 알려진 CEF(Commerce Integration Framework) Add-on 버전과 이전 CIF 버전 간의 중요한 차이점을 강조 표시합니다.
+이 문서에서는 주로 CIF Classic(Quickstart)과 CIF Open-source로 알려진 CEF(Commerce Integration Framework) Add-on 버전과 이전 CIF 버전 간의 중요한 차이점을 강조 표시합니다.
 
 ## 설치 및 업데이트
 
