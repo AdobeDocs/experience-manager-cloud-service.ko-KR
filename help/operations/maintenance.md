@@ -3,7 +3,7 @@ title: Cloud Service의 유지 관리 작업
 description: Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -57,11 +57,10 @@ ht-degree: 2%
     <td>아래 위치 1 참조</td>
     <td>아래의 코드 샘플 1 참조</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily(이 값은 변경할 수 없음)</li>
-    <li><strong>windowStartTime</strong> = HH:MM을 24시간 시간으로 사용합니다. 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</li>
-    <li><strong>windowEndTime</strong> = HH:MM을 24시간 시간으로 사용합니다. 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다.</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily(이 값은 변경할 수 없음) windowStartTime
+    <strong> </strong> = HH:MM(24시간)을 사용합니다. 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.
+    <strong>windowEndTime</strong> = HH:MM을 24시간 시간으로 사용합니다. 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다.
+    </td> 
   </tr>
   <tr>
     <td>매주</td>
