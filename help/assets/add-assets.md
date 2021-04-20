@@ -5,32 +5,26 @@ feature: 자산 관리,업로드
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2065'
 ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager {#add-assets-to-experience-manager}에 디지털 에셋 추가
+# [!DNL Adobe Experience Manager]에 [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager} 디지털 에셋을 추가합니다.
+
+[!DNL Adobe Experience Manager Assets] 다양한 소스의 다양한 디지털 에셋을 사용할 수 있습니다. 이진 파일 및 생성된 표현물을 저장하며 다양한 작업 과정과 [!DNL Adobe Sensei] 서비스를 사용하여 자산 처리를 수행할 수 있습니다. 이 기능을 사용하면 여러 표면에서 여러 채널을 통해 배포할 수 있습니다.
 
 [!DNL Adobe Experience Manager] 리치 메타데이터, 스마트 태그, 표현물 및 기타 DAM(Digital Asset Management) 서비스를 사용하여 업로드된 디지털 파일의 이진 컨텐츠를 더욱 풍부하게 볼 수 있습니다. 로컬 폴더 또는 네트워크 드라이브에서 이미지, 문서 및 Raw 이미지 파일과 같은 다양한 유형의 파일을 [!DNL Experience Manager Assets]으로 업로드할 수 있습니다.
 
-여러 업로드 방법이 제공됩니다. 가장 일반적으로 사용되는 브라우저 업로드 외에도, Adobe 에셋 링크 또는 [!DNL Experience Manager] 데스크탑 앱과 같은 데스크탑 클라이언트, 고객이 만드는 업로드 및 통합 스크립트, 자동 통합 통합 기능이 [!DNL Experience Manager] 익스텐션으로 추가되는 것을 포함하여 [!DNL Experience Manager] 저장소에 에셋을 추가하는 다른 방법이 있습니다.
-
-여기에서 최종 사용자를 위한 업로드 방법에 중점을 두고 [!DNL Experience Manager] API 및 SDK를 사용하여 자산 업로드 및 수집의 기술적 측면을 설명하는 문서에 대한 링크를 제공합니다.
+가장 일반적으로 사용되는 브라우저 업로드 외에도, Adobe 에셋 링크 또는 [!DNL Experience Manager] 데스크탑 앱과 같은 데스크탑 클라이언트, 고객이 만드는 업로드 및 통합 스크립트, 자동 통합 통합 기능이 [!DNL Experience Manager] 익스텐션으로 추가되는 것을 포함하여 [!DNL Experience Manager] 저장소에 에셋을 추가하는 다른 방법이 있습니다.
 
 [!DNL Experience Manager]에서 모든 이진 파일을 업로드 및 관리할 수 있지만 가장 일반적으로 사용되는 파일 포맷은 메타데이터 추출 또는 미리 보기/변환 생성과 같은 추가 서비스를 지원합니다. 자세한 내용은 [지원되는 파일 형식](file-format-support.md)을 참조하십시오.
 
 업로드된 자산에 대해 추가 처리를 하도록 선택할 수도 있습니다. 특정 메타데이터, 변환 또는 이미지 처리 서비스를 추가하기 위해 자산을 업로드할 폴더에 다양한 자산 처리 프로필을 구성할 수 있습니다. 업로드 시 [자산 처리를 참조하십시오](#process-when-uploaded).
 
->[!NOTE]
->
->[!DNL Experience Manager] as a  [!DNL Cloud Service] 는 새로운 자산 업로드 방법(직접 이진 업로드)을 활용합니다. 기본적으로 [!DNL Experience Manager] 사용자 인터페이스, [!DNL Adobe Asset Link], [!DNL Experience Manager] 데스크탑 앱과 같은 즉시 사용 가능한 제품 기능과 클라이언트에서 지원되므로 최종 사용자에게 투명하게 표시됩니다.
->
->고객 기술 팀이 사용자 정의하거나 확장한 코드를 업로드하려면 새로운 업로드 API 및 프로토콜을 사용해야 합니다.
-
-[!DNL Cloud Service]인 자산은 다음 업로드 방법을 제공합니다. Adobe은 업로드 옵션을 사용하기 전에 업로드 옵션의 사용 사례와 적용 가능성을 이해하는 것이 좋습니다.
+[!DNL Assets] 에서는 다음 업로드 방법을 제공합니다. Adobe은 업로드 옵션을 사용하기 전에 업로드 옵션의 사용 사례와 적용 가능성을 이해하는 것이 좋습니다.
 
 | 업로드 방법 | 언제 사용합니까? | 기본 페르소나 |
 |---------------------|----------------|-----------------|
@@ -112,19 +106,13 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * 기존 자산 바꾸기:기존 자산을 교체할 경우, 기존 자산에 대한 메타데이터와 기존 자산에 대한 이전 수정(예: 주석, 자르기 등)이 삭제됩니다.
 * 다른 버전 만들기:저장소에 기존 자산의 새 버전이 만들어집니다. [!UICONTROL 타임라인]에서 두 버전을 볼 수 있으며 필요한 경우 이전에 기존 버전으로 되돌릴 수 있습니다.
-* 둘 다 유지:두 자산을 모두 유지하도록 선택하면 새 자산의 이름이 이름에 추가된 숫자 `1`로 바뀝니다.
-
->[!NOTE]
->
->[!UICONTROL 이름 충돌] 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다.
->
->에셋 인사이트가 [!DNL Adobe Analytics]으로 노출 또는 클릭을 추적하도록 활성화된 경우 재생성된 에셋 ID는 [!DNL Analytics]에서 에셋에 대해 캡처된 데이터를 무효화합니다.
+* 둘 다 유지:두 자산을 모두 유지하도록 선택하면 새 자산의 이름이 바뀝니다.
 
 [!DNL Assets]에 중복된 자산을 유지하려면 **[!UICONTROL 유지]**&#x200B;를 클릭합니다. 업로드한 중복 자산을 삭제하려면 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다.
 
 ### 파일 이름 처리 및 금지된 문자 {#filename-handling}
 
-[!DNL Experience Manager Assets] 파일 이름에 금지된 문자가 포함된 에셋을 업로드하지 못하도록 합니다. 허용되지 않은 문자 이상이 포함된 파일 이름의 자산을 업로드하려고 하면, [!DNL Assets]은 경고 메시지를 표시하고 이러한 문자를 제거하거나 허용되는 이름으로 업로드할 때까지 업로드를 중지합니다. 일부 업로드 메서드는 파일 이름에 금지된 문자가 있는 에셋을 업로드하는 것을 막지 않지만, 문자를 `-`으로 바꿉니다.
+[!DNL Experience Manager Assets] 파일 이름에 금지된 문자가 포함된 에셋을 업로드하지 못하도록 합니다. 허용되지 않은 문자 이상이 포함된 파일 이름의 자산을 업로드하려고 하면, [!DNL Assets]은 경고 메시지를 표시하고 이러한 문자를 제거하거나 허용되는 이름으로 업로드할 때까지 업로드를 중지합니다.
 
 조직에 대한 특정 파일 이름 지정 규칙에 맞도록 [!UICONTROL 자산 업로드] 대화 상자를 사용하여 업로드하는 파일의 긴 이름을 지정할 수 있습니다. 다음(공백으로 구분된 목록) 문자는 지원되지 않습니다.
 
@@ -226,7 +214,18 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## 팁, 우수 사례 및 제한 사항 {#tips-limitations}
 
+* 직접 이진 업로드는 자산을 업로드하는 새로운 방법입니다. 기본적으로 [!DNL Experience Manager] 사용자 인터페이스, [!DNL Adobe Asset Link] 및 [!DNL Experience Manager] 데스크탑 앱과 같은 제품 기능과 클라이언트가 지원합니다. 고객 기술 팀이 사용자 정의하거나 확장한 모든 사용자 지정 코드는 새 업로드 API 및 프로토콜을 사용해야 합니다.
+
 * Adobe은 [!DNL Experience Manager Assets]의 각 폴더에 최대 1000개의 에셋을 추가하는 것이 좋습니다. 폴더에 에셋을 더 추가할 수 있지만, 이러한 폴더에 대한 탐색 속도가 느려지는 등의 성능 문제가 표시될 수 있습니다.
+
+* [!UICONTROL 이름 충돌] 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다. [자산 인사이트](/help/assets/assets-insights.md)가 [!DNL Adobe Analytics]로 노출 횟수 또는 클릭 수를 추적하도록 활성화된 경우 재생성된 자산 ID는 [!DNL Analytics]에서 자산에 대해 캡처된 데이터를 무효화합니다.
+
+* 일부 업로드 메서드는 파일 이름에 [금지된 문자](#filename-handling)가 포함된 에셋을 업로드하는 것을 막지 않습니다. 문자는 `-` 기호로 바뀝니다.
+
+* 브라우저를 사용하여 에셋을 업로드하면 기본 파일 목록만 지원되며 중첩된 폴더 계층 구조는 지원되지 않습니다. 중첩된 폴더 내의 모든 에셋을 업로드하려면 [데스크탑 앱](#upload-assets-desktop-clients)을 사용해 보십시오.
+
+<!-- TBD: Link to file name handling in DA docs when it is documented. 
+-->
 
 >[!MORELIKETHIS]
 >
