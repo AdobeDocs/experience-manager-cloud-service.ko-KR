@@ -3,9 +3,9 @@ title: Cloud Service의 유지 관리 작업
 description: Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 7700ad89b1c2a3009c4b64c1af899a0130708a32
+source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 2%
     <td>아래 위치 1 참조</td>
     <td>아래의 코드 샘플 1 참조</td>
   <td>
-  <strong>windowSchedule</strong> = daily(이 값은 변경할 수 없음) windowStartTime
-  <strong> </strong> = HH:MM(24시간)을 사용합니다. 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.
-  <strong>windowEndTime</strong> = HH:MM을 24시간 시간으로 사용합니다. 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다.
+  <strong>windowSchedule= daily</strong> (이 값은 변경할 수 없습니다) windowStartTime= HH:
+  <strong> </strong> MM을 24시간 시경으로 사용합니다. 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.
+  <strong>windowEndTime= HH:</strong> MM을 24시간 시간으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다.
   </td> 
   </tr>
   <tr>
@@ -69,10 +69,10 @@ ht-degree: 2%
     <td>아래 위치 2 참조</td>
     <td>아래의 코드 샘플 2를 참조하십시오.</td>
     <td>
-    <strong>windowSchedule</strong> = weekly(이 값은 변경할 수 없음) windowStartTime
-    <strong> </strong> = HH:MM을 24시간 시경으로 사용합니다. 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.
-    <strong>windowEndTime</strong> = HH:MM을 24시간 시간으로 사용합니다. 아직 완료되지 않은 경우 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 중지해야 하는 시기를 정의합니다.
-    <strong>windowScheduleWeeks = 1-7에서 2개 값의 배열입니다. 예:[5,5].</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이며 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime의 영향을 받습니다.
+    <strong>windowSchedule= weekly</strong> (이 값은 변경할 수 없음) windowStartTime= HH:
+    <strong> </strong> Mm24시간 시경으로 사용 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.
+    <strong>windowEndTime= HH:</strong> MM을 24시간 시간으로 사용 아직 완료되지 않은 경우 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 중지해야 하는 시기를 정의합니다.
+    <strong>windowScheduleWeeks= 1-7(예:[5,5])</strong> 배열의 첫 번째 값은 작업이 예약된 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime의 영향을 받습니다.
     </td> 
   </tr>
   <tr>
@@ -82,11 +82,11 @@ ht-degree: 2%
     <td>아래 위치 3 참조</td>
     <td>아래의 코드 샘플 3 참조</td>
     <td>
-    <strong>windowSchedule</strong> = daily(이 값은 변경할 수 없음) windowStartTime
-    <strong> </strong> = HH:MM(24시간)을 사용합니다. 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.
-    <strong>windowEndTime</strong> = HH:MM을 24시간 시간으로 사용합니다. 아직 완료되지 않은 경우 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 중지해야 하는 시기를 정의합니다.
-    <strong>windowScheduleWeeks = 1-7에서 2개 값의 배열입니다. 예:[5,5].</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이며 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime의 영향을 받습니다.
-    <strong>windowFirstLastStartDay - 0/10</strong> 을 사용하여 월의 첫 번째 주에 예약하거나 월의 마지막 주에 예약합니다. 값이 없으면 windowScheduleWeeks가 매월 관리하는 것처럼 매일 작업을 효과적으로 예약할 수 있습니다.
+    <strong>windowSchedule= daily</strong> (이 값은 변경할 수 없습니다) windowStartTime= HH:
+    <strong> </strong> MM을 24시간 시경으로 사용합니다. 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.
+    <strong>windowEndTime= HH:</strong> MM을 24시간 시간으로 사용 아직 완료되지 않은 경우 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 중지해야 하는 시기를 정의합니다.
+    <strong>windowScheduleWeeks = 1-7(예:[5,5])</strong> 배열의 첫 번째 값은 작업이 예약된 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime의 영향을 받습니다.
+    <strong>windowFirstLastStartDay= 0/10</strong> 을 사용하여 월의 첫 번째 주에 예약하거나 월의 마지막 주에 예약합니다. 값이 없으면 windowScheduleWeeks가 매월 관리하는 것처럼 매일 작업을 효과적으로 예약할 수 있습니다.
     </td> 
     </tr>
 </table>
@@ -144,9 +144,3 @@ ht-degree: 2%
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
-
-| 유지 관리 창 구성 | 구성을 소유하는 사용자 | 구성 유형 | 위치 | 예 | 매개 변수 |
-|---|---|---|---|---|---|
-| 일별 | 고객 | JCR 노드 정의 | 아래 위치 1 참조 | 아래의 코드 샘플 1 참조 | **windowSchedule= daily** (이 값은 변경할 수 없습니다.)  <br> **windowStartTime= HH:** Mm24시간 시경으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.<br> **windowEndTime= HH:** MM을 24시간 시간으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다. |
-| 매주 | 고객 | JCR 노드 정의 | 아래 위치 2 참조 | 아래의 코드 샘플 2를 참조하십시오. | **windowSchedule= weekly** (이 값은 변경할 수 없습니다.)  <br> **windowStartTime= HH:** Mm24시간 시경으로 사용 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.<br> **windowEndTime= HH:** MM을 24시간 시간으로 사용 아직 완료되지 않은 경우 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 중지해야 하는 시기를 정의합니다.<br> **windowScheduleWeekle= 1-7** (예:  [5,5])부터 2개의 값 배열. 배열의 첫 번째 값은 작업이 예약되는 시작일이며 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime의 영향을 받습니다. |
-
