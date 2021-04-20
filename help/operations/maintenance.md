@@ -3,7 +3,7 @@ title: Cloud Service의 유지 관리 작업
 description: Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 65df5f3fa9db0a37fa3ed10f952c811e1177eafe
+source-git-commit: 8adead735a5c3c0a03ee6f81372c1714634932ec
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 2%
@@ -147,4 +147,4 @@ ht-degree: 2%
 
 | 유지 관리 창 구성 | 구성을 소유하는 사용자 | 구성 유형 | 위치 | 예 | 매개 변수 |
 |---|---|---|---|---|---|
-| 일별 | 고객 | JCR 노드 정의 | 아래 위치 2 참조 | 아래의 코드 샘플 2를 참조하십시오. | **windowSchedule=daily** (이 값은 변경할 수 없습니다.)  <br> **windowStartTime=HH:** 24시간 시경으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.<br> **windowEndTime= HH:** MM을 24시간 시간으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다. |
+| 일별 | 고객 | JCR 노드 정의 | 아래 위치 2 참조 | 아래의 코드 샘플 2를 참조하십시오. | **windowSchedule= daily** (이 값은 변경할 수 없습니다.)  <br> **windowStartTime= HH:** Mm24시간 시경으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.<br> **windowEndTime= HH:** MM을 24시간 시간으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다. |
