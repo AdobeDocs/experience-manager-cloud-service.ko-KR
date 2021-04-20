@@ -1,8 +1,8 @@
 ---
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
-feature: 관리
-role: 관리자
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

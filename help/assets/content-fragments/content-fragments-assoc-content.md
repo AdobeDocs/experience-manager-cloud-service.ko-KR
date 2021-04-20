@@ -1,8 +1,8 @@
 ---
 title: 관련 컨텐츠
 description: AEM 관련 컨텐츠 기능을 통해 헤드리스 컨텐츠 전달에 추가 유연성을 추가하여 자산을 컨텐츠 페이지에 추가할 때 조각과 함께 선택적으로 사용할 수 있도록 연결을 제공하는 방법을 이해합니다.
-feature: 콘텐츠 조각
-role: 비즈니스 전문가
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

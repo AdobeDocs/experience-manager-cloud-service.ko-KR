@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media에서 핫링크 보호 활성화
 description: Dynamic Media에서 핫링크 보호를 활성화하는 방법을 알아봅니다.
-feature: 자산 관리
-topic: 비즈니스 전문가
-role: 비즈니스 전문가
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

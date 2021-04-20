@@ -1,8 +1,8 @@
 ---
 title: 360/VR 비디오
 description: Dynamic Media에서 360 및 VR(Virtual Reality) 비디오로 작업하는 방법을 알아봅니다.
-feature: 360 VR 비디오
-topic: 비즈니스 전문가
+feature: 360 VR Video
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt

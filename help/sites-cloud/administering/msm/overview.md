@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 재활용 - 다중 사이트 관리자 및 Live Copy
 description: AEM의 강력한 Live Copy 및 Multi Site Manager 기능을 사용하여 컨텐츠를 재활용하는 방법을 소개합니다.
-feature: 다중 사이트 관리자
-role: 관리자
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

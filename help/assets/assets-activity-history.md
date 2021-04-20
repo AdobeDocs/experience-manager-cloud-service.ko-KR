@@ -2,8 +2,8 @@
 title: 타임라인의 활동 스트림
 description: 이 문서에서는 타임라인에서 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다.
 contentOwner: AG
-feature: 자산 보고서,자산 관리
-role: 관리자,비즈니스 전문가
+feature: Asset Reports,Asset Management
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

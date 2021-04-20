@@ -2,8 +2,8 @@
 title: AI에서 생성된 태그를 사용하여 에셋에 자동 태그 지정
 description: ' [!DNL Adobe Sensei] 서비스를 사용하여 문맥 및 설명 비즈니스 태그를 적용하는 인공적인 지능형 서비스를 사용하여 자산에 태그를 지정합니다.'
 contentOwner: AG
-feature: 스마트 태그,태그 지정
-role: 관리자,비즈니스 전문가
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

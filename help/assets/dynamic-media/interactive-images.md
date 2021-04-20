@@ -1,8 +1,8 @@
 ---
 title: 대화형 이미지
 description: Dynamic Media에서 대화형 이미지를 사용하여 작업하는 방법을 알아봅니다.
-feature: 대화형 이미지
-topic: 비즈니스 전문가
+feature: Interactive Images
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt

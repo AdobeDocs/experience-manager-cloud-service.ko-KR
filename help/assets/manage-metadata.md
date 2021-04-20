@@ -3,8 +3,8 @@ title: 디지털 에셋의 메타데이터 관리
 description: '메타데이터 유형에 대해 알아보고, 메타데이터에 따라 자산을 자동으로 구성하고 처리하는 방법을 알아봅니다. [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] '
 contentOwner: AG
 mini-toc-levels: 1
-feature: 자산 관리,메타데이터
-role: 비즈니스 전문가,건축가,관리자
+feature: Asset Management,Metadata
+role: Business Practitioner,Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

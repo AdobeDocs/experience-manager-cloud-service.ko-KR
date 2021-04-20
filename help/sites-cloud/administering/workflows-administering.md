@@ -1,8 +1,8 @@
 ---
 title: 워크플로우 인스턴스 관리
 description: 워크플로우 인스턴스 관리 방법 알아보기
-feature: 관리
-role: 관리자
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

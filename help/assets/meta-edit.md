@@ -2,8 +2,8 @@
 title: 메타데이터를 편집하거나 추가하는 방법
 description: 에셋 메타데이터를 편집할 수 있는 다양한 방법으로 에셋 메타데이터를 [!DNL Experience Manager Assets] 에 대해 알아봅니다.
 contentOwner: AG
-feature: 메타데이터
-role: 비즈니스 전문가,관리자
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

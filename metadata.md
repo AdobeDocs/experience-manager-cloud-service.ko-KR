@@ -3,7 +3,7 @@ product: adobe experience manager
 description: Adobe Experience Manager을 Cloud Service 문서로 제공합니다.
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.ko-KR
 index: y
-type: 설명서
+type: Documentation
 solution: Experience Manager
 version: Cloud Service
 cloud: Experience Cloud

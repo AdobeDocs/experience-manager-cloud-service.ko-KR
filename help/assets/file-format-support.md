@@ -2,7 +2,7 @@
 title: 지원되는 파일 형식 및 MIME 형식
 description: 파일 형식 및 MIME 유형은  [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]으로 지원합니다.
 contentOwner: AG
-feature: 자산 관리,표현물
+feature: Asset Management,Renditions
 role: Business Practitioner,Administrator
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 translation-type: tm+mt

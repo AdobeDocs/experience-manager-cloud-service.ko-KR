@@ -1,8 +1,8 @@
 ---
 title: 이미지 사전 설정 관리
 description: '"이미지 사전 설정과 이미지 사전 설정을 만들고, 수정하고, 관리하는 방법에 대해 알아보십시오."'
-feature: 이미지 사전 설정,뷰어,표현물
-topic: 비즈니스 전문가
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Markdown
 description: 컨텐츠 조각 편집기에서 헤드리스 컨텐츠를 쉽게 만들 수 있도록 마크다운 구문을 사용하는 방법을 알아봅니다.
-feature: 콘텐츠 조각
-role: 비즈니스 전문가
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

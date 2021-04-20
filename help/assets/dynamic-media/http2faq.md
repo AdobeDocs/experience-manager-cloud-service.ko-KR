@@ -1,8 +1,8 @@
 ---
 title: 콘텐츠의 HTTP2 전달 FAQ
 description: HTTP2 컨텐츠 전달에 대해 알아봅니다.
-topic: '"관리자,비즈니스 전문가"'
-role: 관리자,비즈니스 전문가
+topic: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

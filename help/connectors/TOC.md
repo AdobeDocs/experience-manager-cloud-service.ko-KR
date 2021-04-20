@@ -4,8 +4,8 @@ user-guide-title: AEM as a Cloud Service용 커넥터
 breadcrumb-title: Connectors 안내서
 user-guide-description: Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다.
 feature-set: Experience Manager
-feature: 개발자 도구
-role: 개발자
+feature: Developer Tools
+role: Developer
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

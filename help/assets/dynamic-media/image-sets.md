@@ -1,8 +1,8 @@
 ---
 title: 이미지 세트
 description: Dynamic Media에서 이미지 세트로 작업하는 방법을 알아봅니다.
-feature: 이미지 세트
-topic: 비즈니스 전문가
+feature: Image Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt

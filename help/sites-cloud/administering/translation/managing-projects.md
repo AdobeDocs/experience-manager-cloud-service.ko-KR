@@ -1,8 +1,8 @@
 ---
 title: 번역 프로젝트 관리
 description: AEM에서 기계 및 인간 번역 프로젝트를 모두 제작 및 관리하는 방법을 알아봅니다.
-feature: 언어 복사
-role: 관리자
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

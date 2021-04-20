@@ -1,8 +1,8 @@
 ---
 title: 혼합 미디어 세트
 description: Dynamic Media에서 혼합 미디어 세트로 작업하는 방법을 알아봅니다.
-feature: 혼합 미디어 세트
-topic: 비즈니스 전문가
+feature: Mixed Media Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt

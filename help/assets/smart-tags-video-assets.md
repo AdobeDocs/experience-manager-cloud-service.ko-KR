@@ -1,8 +1,8 @@
 ---
 title: 스마트 태그 지정 비디오 에셋
 description: Experience Manager은  [!DNL Adobe Sensei]을(를) 사용하여 상황에 맞는 및 설명형 스마트 태그를 비디오에 자동으로 추가합니다.
-feature: 스마트 태그,태그 지정
-role: 관리자,비즈니스 전문가
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

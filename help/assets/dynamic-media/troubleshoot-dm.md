@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁
-topic: '"관리자,비즈니스 전문가"'
+topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt

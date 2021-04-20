@@ -2,9 +2,9 @@
 title: 이미지 품질 최적화 우수 사례
 description: Dynamic Media에서 이미지 에셋의 품질을 최적화하는 데 사용할 수 있는 모범 사례를 살펴볼 수 있습니다.
 contentOwner: Rick Brough
-feature: 자산 관리
-topic: 비즈니스 전문가
-role: 비즈니스 전문가
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

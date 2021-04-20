@@ -2,8 +2,8 @@
 title: 디지털 자산 구성
 description: Adobe Experience Manager Assets에서 제공하는 다양한 방법을 사용하여 디지털 자산을 구성합니다.
 contentOwner: AG
-feature: 자산 관리,태그 지정,자산 배포
-role: 비즈니스 전문가
+feature: Asset Management,Tagging,Asset Distribution
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

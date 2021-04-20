@@ -6,7 +6,7 @@ topics: Development
 version: cloud-service
 activity: develop
 audience: developer
-feature: 전자 상거래 통합 프레임워크
+feature: Commerce Integration Framework
 translation-type: tm+mt
 source-git-commit: 0f2747190523613d2fa1f4710dee1c28d4a5148f
 workflow-type: tm+mt

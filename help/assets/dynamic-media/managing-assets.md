@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media 자산 관리 정보
 description: Dynamic Media 에셋을 사용하여 작업하는 방법을 알아봅니다.
-feature: 자산 관리
-topic: 비즈니스 전문가
-role: 관리자,비즈니스 전문가
+feature: Asset Management
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

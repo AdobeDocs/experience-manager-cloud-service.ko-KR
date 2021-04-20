@@ -1,8 +1,8 @@
 ---
 title: 스핀 세트
 description: Dynamic Media에서 스핀 세트를 사용하여 작업하는 방법을 알아봅니다.
-feature: 스핀 세트
-topic: 비즈니스 전문가
+feature: Spin Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt

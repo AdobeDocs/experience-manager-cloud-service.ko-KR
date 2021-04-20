@@ -3,7 +3,7 @@ title: 디지털 자산을 관리합니다
 description: 다양한 에셋 관리 및 편집 방법에 대해 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: 자산 관리,게시,공동 작업,자산 처리
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 다중 사이트 관리자 및 번역
 description: 프로젝트에서 컨텐츠를 재사용하고 AEM에서 다국어 웹 사이트를 관리하는 방법을 살펴봅니다.
-feature: 관리
-role: 관리자
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

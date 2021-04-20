@@ -1,7 +1,7 @@
 ---
 title: 자산 HTTP API에서 Cloud Service 컨텐츠 조각 지원으로서 Adobe Experience Manager
 description: AEM 헤드리스 전달 기능의 중요한 부분인 자산 HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
-feature: 컨텐츠 조각,자산 HTTP API
+feature: Content Fragments,Assets HTTP API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

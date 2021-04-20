@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각 모델
 description: 컨텐츠 조각 모델이 AEM에서 헤드리스 컨텐츠의 기초로 사용되는 방식과 구조화된 컨텐츠가 포함된 컨텐츠 조각을 생성하는 방법을 살펴볼 수 있습니다.
-feature: 콘텐츠 조각
-role: 비즈니스 전문가
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

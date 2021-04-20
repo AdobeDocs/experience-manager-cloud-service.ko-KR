@@ -2,7 +2,7 @@
 title: ' [!DNL Assets]에서  [!DNL Adobe Stock] 자산을 관리합니다.'
 description: ' [!DNL Adobe Experience Manager] 내에서  [!DNL Adobe Stock] 자산을 검색, 가져오기, 라이센스 부여 및 관리합니다. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.'
 contentOwner: AG
-feature: 검색,Adobe Stock
+feature: Search,Adobe Stock
 role: Administrator,Business Practitioner
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
 translation-type: tm+mt

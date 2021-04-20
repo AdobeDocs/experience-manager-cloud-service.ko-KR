@@ -2,8 +2,8 @@
 title: 향상된 스마트 태그
 description: Adobe Sensei의 AI 및 ML 서비스를 사용하여 컨텍스트 기반의 상황적 및 설명적 비즈니스 태그를 적용하여 자산 검색과 컨텐츠 제작 시간을 향상할 수 있습니다.
 contentOwner: AG
-feature: 스마트 태그, 태그 지정
-role: 관리자
+feature: Smart Tags, Tagging
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

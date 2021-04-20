@@ -1,8 +1,8 @@
 ---
 title: 선택기를 사용한 작업
 description: Dynamic Media에서 대화형 이미지, 대화형 비디오 및 회전 배너용 에셋을 선택하는 데 사용할 수 있는 방법에 대해 알아보십시오.
-topic: 비즈니스 전문가
-role: 비즈니스 전문가
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

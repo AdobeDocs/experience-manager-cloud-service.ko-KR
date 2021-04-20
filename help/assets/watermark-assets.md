@@ -2,8 +2,8 @@
 title: 에셋에 워터마크 표시
 description: 디지털 자산에 워터마크를 추가합니다.
 contentOwner: AG
-feature: 자산 관리,게시
-role: 비즈니스 전문가,관리자
+feature: Asset Management,Publishing
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

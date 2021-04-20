@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각 구조 트리
 description: 헤드리스 컨텐츠를 더 잘 이해하려면 AEM의 컨텐츠 조각 편집기의 구조 트리 기능을 사용합니다.
-feature: 콘텐츠 조각
-role: 비즈니스 전문가
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: MSM 우수 사례
 description: AEM 멀티 사이트 관리자를 시작하고 실행하는 데 도움이 되는 Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 최상의 작업 방법을 알아봅니다.
-feature: 다중 사이트 관리자
-role: 관리자
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

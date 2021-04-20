@@ -1,7 +1,7 @@
 ---
 title: GraphQL이 있는 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달
 description: 헤드리스 컨텐츠 전달을 위해 GraphQL과 함께 AEM 컨텐츠 조각을 사용하는 방법을 알아봅니다.
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: Business Practitioner
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt

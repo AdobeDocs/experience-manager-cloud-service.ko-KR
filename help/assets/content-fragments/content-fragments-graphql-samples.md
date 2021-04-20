@@ -1,7 +1,7 @@
 ---
 title: AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리
 description: 샘플 컨텐츠 및 쿼리를 살펴보면서 AEM과 함께 GraphQL을 사용하여 컨텐츠를 헤드없이 제공하는 방법을 살펴볼 수 있습니다.
-feature: 컨텐츠 조각,GraphQL API
+feature: Content Fragments,GraphQL API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

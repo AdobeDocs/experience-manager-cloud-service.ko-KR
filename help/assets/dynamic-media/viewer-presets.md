@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media 뷰어 사전 설정 적용
 description: Dynamic Media에서 뷰어 사전 설정을 적용하는 방법을 알아봅니다.
-feature: 뷰어 사전 설정,뷰어
-topic: 관리자,비즈니스 전문가
-role: 비즈니스 전문가
+feature: Viewer Presets,Viewers
+topic: Administrator,Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

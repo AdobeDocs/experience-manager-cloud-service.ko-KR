@@ -2,8 +2,8 @@
 title: 파일 체크 인 및 체크 아웃( [!DNL Assets])
 description: 편집할 에셋을 체크 아웃하고 변경 사항이 완료된 후 다시 체크 인하는 방법을 살펴봅니다.
 contentOwner: AG
-feature: 자산 관리
-role: 비즈니스 전문가
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

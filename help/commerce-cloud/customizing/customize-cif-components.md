@@ -7,7 +7,7 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: 전자 상거래 통합 프레임워크
+feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91

@@ -1,8 +1,8 @@
 ---
 title: 언어 복사 마법사
 description: AEM에서 언어 복사 마법사 사용에 대해 알아봅니다.
-feature: 언어 복사
-role: 관리자
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

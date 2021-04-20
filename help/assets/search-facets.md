@@ -1,8 +1,8 @@
 ---
 title: 검색 패싯.
 description: 이 문서에서는 AEM에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
-feature: 검색,메타데이터
-role: 비즈니스 전문가,관리자
+feature: Search,Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

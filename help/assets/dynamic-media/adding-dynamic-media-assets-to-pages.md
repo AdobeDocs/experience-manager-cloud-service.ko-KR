@@ -2,9 +2,9 @@
 title: 페이지에 Dynamic Media 자산 추가
 description: Dynamic Media 구성 요소를 Cloud Service으로 Adobe Experience Manager의 페이지에 추가하는 방법을 알아봅니다.
 contentOwner: Rick Brough
-feature: 자산 관리
-topic: 비즈니스 전문가
-role: 비즈니스 전문가
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

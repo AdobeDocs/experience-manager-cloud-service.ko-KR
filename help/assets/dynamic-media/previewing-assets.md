@@ -1,9 +1,9 @@
 ---
 title: 자산 미리 보기
 description: Dynamic Media에서 자산을 미리 보는 방법을 알아봅니다.
-feature: 자산 관리
-topic: 비즈니스 전문가
-role: 비즈니스 전문가
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 sub-product: Adobe Experience Manager as a Cloud Service 도움말
 user-guide-title: Adobe Experience Manager as a Cloud Service 도움말
 feature-set: Experience Manager
-feature: 릴리스 정보
-role: 리더, 건축가, 개발자, 데이터 아키텍트, 데이터 엔지니어, 관리자, 비즈니스 관리자
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

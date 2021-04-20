@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media 비디오 프로필
 description: Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이미 포함되어 있습니다. 이 기본 프로필의 설정은 최상의 보기 환경을 고객에게 제공하기 위해 최적화되어 있습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
-feature: 자산 관리,비디오 프로필,표현물
-topic: 비즈니스 전문가
+feature: Asset Management,Video Profiles,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt

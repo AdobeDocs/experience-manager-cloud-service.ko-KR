@@ -1,8 +1,8 @@
 ---
 title: 뷰어 사전 설정 관리
 description: Dynamic Media에서 뷰어 사전 설정을 만들고 관리하는 방법을 알아봅니다.
-feature: 뷰어 사전 설정,뷰어
-topic: 비즈니스 전문가
+feature: Viewer Presets,Viewers
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt

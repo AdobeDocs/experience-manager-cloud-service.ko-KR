@@ -1,8 +1,8 @@
 ---
 title: 규칙 세트를 사용하여 URL 변형
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환하는 방법을 알아봅니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript™)으로 작성된 지침 세트입니다.'
-topic: 비즈니스 전문가
-role: 비즈니스 전문가
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

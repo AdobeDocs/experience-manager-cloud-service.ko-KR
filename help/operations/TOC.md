@@ -4,8 +4,8 @@ user-guide-title: AEM as a Cloud Service 작업 및 유지 관리
 breadcrumb-title: Operations 안내서
 user-guide-description: 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다.
 feature-set: Experience Manager Sites
-feature: 구성
-role: 관리자
+feature: Configuring
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Brand Portal에 자산, 폴더 및 컬렉션 게시
 description: Brand Portal에 자산, 폴더 및 컬렉션을 게시합니다.
 contentOwner: Vishabh Gupta
-feature: 브랜드 포털,자산 배포,구성
+feature: Brand Portal,Asset Distribution,Configuration
 role: Business Practitioner
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 translation-type: tm+mt

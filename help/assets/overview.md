@@ -2,8 +2,8 @@
 title: 에셋 소개( [!DNL Cloud Service])
 description: ' [!DNL Cloud Service]으로 자산에서 새로운 기능'
 contentOwner: AG
-feature: 자산 관리
-role: 비즈니스 전문가,리더,건축가
+feature: Asset Management
+role: Business Practitioner,Leader,Architect
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

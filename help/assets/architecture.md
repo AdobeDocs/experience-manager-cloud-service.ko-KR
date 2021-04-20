@@ -2,8 +2,8 @@
 title: ' [!DNL Assets]의 아키텍처'
 description: Adobe Experience Manager 자산의 아키텍처( [!DNL Cloud Service])
 contentOwner: AG
-feature: 자산 관리,Asset compute Microservices
-role: 건축가
+feature: Asset Management,Asset Compute Microservices
+role: Architect
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
-feature: 비디오 프로필
-topic: 비즈니스 전문가
+feature: Video Profiles
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt

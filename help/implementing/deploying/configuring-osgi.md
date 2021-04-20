@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager용 OSGi를 Cloud Service으로 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
-feature: 배포
+feature: Deploying
 translation-type: tm+mt
 source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt

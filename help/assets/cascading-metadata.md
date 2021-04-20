@@ -2,8 +2,8 @@
 title: 계단식 메타데이터
 description: 이 문서에서는 자산에 대한 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
-feature: 메타데이터
-role: 비즈니스 전문가,관리자
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

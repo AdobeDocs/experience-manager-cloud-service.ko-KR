@@ -1,8 +1,8 @@
 ---
 title: Live Copy 개요 콘솔
 description: 컨텐츠를 동기화하기 위해 Live Copy의 상태를 신속하게 파악할 수 있는 Live Copy 개요 콘솔의 기본 사항에 대해 알아봅니다.
-feature: 다중 사이트 관리자
-role: 관리자
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

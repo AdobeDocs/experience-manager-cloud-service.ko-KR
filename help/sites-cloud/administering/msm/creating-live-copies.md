@@ -1,7 +1,7 @@
 ---
 title: Live Copy 만들기 및 동기화
 description: Live Copy를 만들고 동기화하여 사이트 전체에 컨텐츠를 재사용하는 방법을 살펴볼 수 있습니다.
-feature: 다중 사이트 관리자
+feature: Multi Site Manager
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt

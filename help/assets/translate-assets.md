@@ -2,8 +2,8 @@
 title: 여러 언어로 디지털 에셋 제작 및 관리
 description: 이진 파일, 메타데이터 및 태그를 여러 언어로 번역하는 워크플로우를 자동화하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 자산 관리,번역
-role: 관리자,비즈니스 전문가
+feature: Asset Management,Translation
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

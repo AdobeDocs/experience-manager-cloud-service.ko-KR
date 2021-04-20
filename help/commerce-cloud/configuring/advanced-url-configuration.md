@@ -6,7 +6,7 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: 전자 상거래 통합 프레임워크
+feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f

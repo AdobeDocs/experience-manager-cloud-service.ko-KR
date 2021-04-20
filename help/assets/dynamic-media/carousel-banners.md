@@ -1,8 +1,8 @@
 ---
 title: 회전 배너
 description: Dynamic Media에서 캐러셀 배너를 사용하여 작업하는 방법을 알아봅니다.
-feature: 회전 배너
-topic: 비즈니스 전문가
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt

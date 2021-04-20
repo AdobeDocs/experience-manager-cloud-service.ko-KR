@@ -1,9 +1,9 @@
 ---
 title: 빠른 보기를 사용하여 사용자 정의 팝업 만들기
 description: '"기본 빠른 보기가 전자 상거래 경험에 어떻게 사용되는지 알아보십시오. 제품 정보와 함께 팝업 창을 표시하여 구매를 유도합니다. 사용자 정의 컨텐츠가 팝업 창에 표시되도록 트리거할 수 있습니다."'
-topic: '"개발자,관리자,비즈니스 전문가"'
-feature: 대화형 이미지,대화형 비디오,회전 배너
-role: 관리자,비즈니스 전문가
+topic: "Developer,Administrator,Business Practitioner"
+feature: Interactive Images,Interactive Videos,Carousel Banners
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

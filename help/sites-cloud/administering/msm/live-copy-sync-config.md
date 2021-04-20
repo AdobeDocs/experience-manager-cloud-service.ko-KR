@@ -1,8 +1,8 @@
 ---
 title: Live Copy 동기화 구성
 description: 사용 가능한 강력한 Live Copy 동기화 옵션과 프로젝트 요구 사항에 맞게 구성 및 사용자 정의하는 방법에 대해 알아봅니다.
-feature: 다중 사이트 관리자
-role: 관리자
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 에셋 마이크로서비스를 사용하여 에셋 처리
 description: 클라우드 기반의 확장 가능한 에셋 처리 마이크로서비스를 사용하여 디지털 에셋을 처리할 수 있습니다.
 contentOwner: AG
-feature: asset compute Microservices,워크플로,릴리스 정보,자산 처리
-role: 건축가,관리자
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

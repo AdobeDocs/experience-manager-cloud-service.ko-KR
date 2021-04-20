@@ -2,8 +2,8 @@
 title: 폴더 및 컬렉션에서 에셋 검토
 description: 폴더 또는 컬렉션 내의 에셋에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 요청할 수 있습니다.
 contentOwner: AG
-feature: 컬렉션,공동 작업
-role: 비즈니스 전문가
+feature: Collections,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

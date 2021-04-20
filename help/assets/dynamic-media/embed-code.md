@@ -1,8 +1,8 @@
 ---
 title: 웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어 포함
 description: 웹 페이지에 Dynamic Media 비디오 또는 이미지 에셋을 포함하는 방법을 알아봅니다.
-feature: 자산 관리
-topic: 비즈니스 전문가
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt

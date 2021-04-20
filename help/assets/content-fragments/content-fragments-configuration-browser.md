@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각 - 구성 브라우저
 description: AEM의 강력한 헤드리스 전달 기능을 활용할 수 있도록 구성 브라우저에서 특정 컨텐츠 조각 기능을 활성화하는 방법을 알아봅니다.
-feature: 콘텐츠 조각
-role: 비즈니스 전문가
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch 통합
 description: platform launch 및 Dynamic Media 뷰어 5.13용 Dynamic Media 뷰어 확장 기능에 대해 알아보십시오. Adobe Analytics 및 Platform launch 고객은 Platform launch 구성에서 뷰어 관련 이벤트와 데이터를 사용할 수 있습니다.
-feature: 자산 보고서
-topic: '"데이터 엔지니어, 관리자, 비즈니스 전문가"'
-role: 관리자,비즈니스 전문가
+feature: Asset Reports
+topic: "Data Engineer,Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media 이미지 프로필 및 비디오 프로필 정보
 description: 이미지 프로필 또는 비디오 프로필은 폴더에 업로드하는 자산에 적용할 옵션을 만드는 레서피입니다. 예를 들어 업로드하는 Dynamic Media 비디오 자산에 적용할 비디오 인코딩을 지정할 수 있습니다. 또는 Dynamic Media 이미지 에셋에 적용할 이미지 프로필을 무엇으로 제대로 잘렸는지 확인합니다.
-feature: 자산 관리, 이미지 프로필, 비디오 프로필
-role: 관리자,비즈니스 전문가
+feature: Asset Management,Image Profiles,Video Profiles
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

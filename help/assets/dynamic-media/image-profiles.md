@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media 이미지 프로필
 description: '"언샵 마스크, 스마트 자르기, 스마트 견본 또는 두 가지 모두에 대한 설정이 포함된 Dynamic Media 이미지 프로필을 만드는 방법을 알아보십시오. 그런 다음 이미지 에셋 폴더에 프로필을 적용하십시오."'
-feature: 자산 관리,이미지 프로필,표현물
-topic: 비즈니스 전문가
+feature: Asset Management,Image Profiles,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
