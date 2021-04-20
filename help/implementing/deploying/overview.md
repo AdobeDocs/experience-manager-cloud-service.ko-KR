@@ -2,14 +2,14 @@
 title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: 배포
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
+source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3266'
 ht-degree: 0%
 
 ---
-
 
 # AEM as a Cloud Service에 배포 {#deploying-to-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ Cloud Manager에서 제공하는 컨텐츠를 변경 가능한 저장소, 변경
    * 폴더(추가, 수정, 제거)
    * 편집 가능한 템플릿(추가, 수정, 제거)
    * 컨텍스트 인식 구성(`/conf` 아래의 모든 것)(추가, 수정, 제거)
-   * 스크립트(패키지 생성 시 패키지 설치 과정의 다양한 단계에서 설치 후크를 트리거할 수 있음)
+   * 스크립트(패키지)는 패키지 설치 과정의 다양한 단계에서 설치 후크를 트리거할 수 있습니다. 설치 후크에 대한 [Jackrabbit filerabbit 설명서](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)(사용자가 해당 파일을 실행할 수 있도록 허용된 연결 포함)를 참조하십시오.
 
 `/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 포함하여 변경 가능한 컨텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 이 분리를 반영하기 위한 재구조화는 AEM 6.5에서 수행되었으며 권장 프로젝트 재조정에 대한 세부 사항은 [AEM 6.5 설명서에서 확인할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
