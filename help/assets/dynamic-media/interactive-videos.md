@@ -1,14 +1,13 @@
 ---
 title: 대화형 비디오
 description: Dynamic Media에서 인터랙티브한 비디오 및 쇼퍼블 비디오를 사용하여 작업하는 방법을 살펴봅니다.
-feature: Interactive Videos
-topic: Business Practitioner
+feature: 대화형 비디오
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 0%
 
 ---
