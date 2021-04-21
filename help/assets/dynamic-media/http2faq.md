@@ -1,16 +1,15 @@
 ---
 title: 콘텐츠의 HTTP2 전달 FAQ
 description: HTTP2 컨텐츠 전달에 대해 알아봅니다.
-topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
+exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
-
 
 # 콘텐츠의 HTTP2 전달 FAQ{#http-delivery-of-content-faq}
 
