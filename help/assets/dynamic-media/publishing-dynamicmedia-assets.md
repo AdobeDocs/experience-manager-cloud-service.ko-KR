@@ -2,14 +2,13 @@
 title: Dynamic Media 자산 게시
 description: Dynamic Media 에셋을 게시하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: 자산 관리
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
