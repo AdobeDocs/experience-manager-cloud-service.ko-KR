@@ -1,15 +1,14 @@
 ---
 title: Dynamic Media 자산 제공
 description: Dynamic Media 에셋을 제공하는 방법을 알아봅니다.
-feature: Asset Management
-topic: Business Practitioner
+feature: 자산 관리
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 8%
+source-wordcount: '317'
+ht-degree: 7%
 
 ---
 
