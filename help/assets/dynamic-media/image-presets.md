@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media 이미지 사전 설정 적용
 description: Dynamic Media에서 이미지 사전 설정을 적용하는 방법을 알아봅니다.
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: 이미지 사전 설정,뷰어,표현물
 role: Business Practitioner
+exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 6%
+source-wordcount: '309'
+ht-degree: 5%
 
 ---
-
 
 # Dynamic Media 이미지 사전 설정 적용 {#applying-image-presets}
 
@@ -51,4 +50,3 @@ ht-degree: 6%
    >에셋 *및*&#x200B;이 이미지 사전 설정이 아직 게시되지 않은 경우 **[!UICONTROL URL]** 단추(또는 해당하는 경우 URL 및 RESS 단추)를 사용할 수 없습니다.
    >
    >또한 이미지 사전 설정은 Dynamic Media S7 서버에 자동으로 게시됩니다.
-
