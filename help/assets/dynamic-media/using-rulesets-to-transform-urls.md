@@ -1,16 +1,15 @@
 ---
 title: 규칙 세트를 사용하여 URL 변형
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환하는 방법을 알아봅니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript™)으로 작성된 지침 세트입니다.'
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
-
 
 # 규칙 세트를 사용하여 URL {#using-rulesets-to-transform-urls} 변환
 
@@ -28,7 +27,7 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 * 다운로드를 트리거하도록 컨텐츠 처리를 설정합니다.
 * 개인화를 위해 이미지 제공 템플릿 URL을 간소화할 수 있습니다. 예를 들어 `rgb{XX,YY,ZZ}`을(를) RTF용 `\redXX\greenYY\blueZZ`으로 바꿉니다.
 
-* `$`, `{` 및 `}` 등의 인코딩할 특정 문자와 ImageServer로 디코딩할 특정 문자를 요청합니다. 예를 들어 Facebook은 특수 문자가 포함된 URL과 잘 작동하지 않습니다.
+* `$`, `{` 및 `}` 등의 인코딩할 특정 문자와 ImageServer로 디코딩할 특정 문자를 요청합니다. 예를 들어, Facebook은 특수 문자가 포함된 URL과 잘 작동하지 않습니다.
 
    URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)에서 특수 문자 제거를 참조하십시오.[
 
@@ -81,4 +80,3 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정
    규칙 세트 조건은 라이브 Dynamic Media 이미지 서버에 대한 요청에 적용됩니다.
 
    규칙 세트 파일을 변경하면 업데이트된 규칙 세트 파일을 다시 업로드하고 다시 게시할 때 변경 내용이 즉시 적용됩니다.
-
