@@ -1,14 +1,13 @@
 ---
 title: 이미지 세트
 description: Dynamic Media에서 이미지 세트로 작업하는 방법을 알아봅니다.
-feature: Image Sets
-topic: Business Practitioner
+feature: 이미지 세트
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2049'
 ht-degree: 0%
 
 ---
