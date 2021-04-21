@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media 자산 관리 정보
 description: Dynamic Media 에셋을 사용하여 작업하는 방법을 알아봅니다.
-feature: Asset Management
-topic: Business Practitioner
+feature: 자산 관리
 role: Administrator,Business Practitioner
+exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 14%
+source-wordcount: '121'
+ht-degree: 13%
 
 ---
-
 
 # Dynamic Media 자산 관리 정보 {#managing-assets}
 
@@ -27,4 +26,3 @@ ht-degree: 14%
 * [Dynamic Media 자산 미리 보기](previewing-assets.md)
 * [Dynamic Media 자산 게시](publishing-dynamicmedia-assets.md)
 * [선택기를 사용한 작업](working-with-selectors.md)
-
