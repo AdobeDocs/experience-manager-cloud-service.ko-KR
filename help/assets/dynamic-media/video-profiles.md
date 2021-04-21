@@ -1,14 +1,13 @@
 ---
 title: Dynamic Media 비디오 프로필
 description: Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이미 포함되어 있습니다. 이 기본 프로필의 설정은 최상의 보기 환경을 고객에게 제공하기 위해 최적화되어 있습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
-feature: Asset Management,Video Profiles,Renditions
-topic: Business Practitioner
+feature: 자산 관리,비디오 프로필,표현물
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '3666'
+source-wordcount: '3664'
 ht-degree: 2%
 
 ---
@@ -33,7 +32,7 @@ Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이
 
 >[!NOTE]
 >
->비디오의 메타데이터와 관련 비디오 이미지 축소판을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. Adobe Experience Manager에서 Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행 모니터링](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
+>비디오의 메타데이터와 관련 비디오 이미지 축소판을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. Adobe Experience Manager에서 Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 모니터링 및 YouTube 게시 진행](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 >
 >메타데이터는 자산을 검색할 때 유용합니다. 축소판은 인코딩 중에 생성된 정적 비디오 이미지입니다. Experience Manager 시스템이 필요하며 사용자 인터페이스에서 카드 보기, 검색 결과 보기 및 자산 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 되는 데 사용됩니다. 인코딩된 비디오의 표현물 아이콘(페인터의 팔레트)을 누르면 생성된 축소판이 표시됩니다.
 
