@@ -2,16 +2,16 @@
 title: 메타데이터 프로필
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
-feature: Metadata
+feature: 메타데이터
 role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1236'
 ht-degree: 1%
 
 ---
-
 
 # 메타데이터 프로필 {#metadata-profiles}
 
@@ -63,13 +63,11 @@ ht-degree: 1%
 
 ## {#applying-a-metadata-profile-to-folders} 폴더에 메타데이터 프로필 적용
 
-메타데이터 프로필을 폴더에 할당하면 모든 하위 폴더는 해당 상위 폴더의 프로필을 자동으로 상속합니다. 즉, 하나의 메타데이터 프로필만 폴더에 할당할 수 있습니다. 따라서 에셋을 업로드, 저장, 사용 및 보관하는 폴더 구조를 주의 깊게 고려합니다.
+메타데이터 프로필을 폴더에 할당하면 모든 하위 폴더는 해당 상위 폴더의 프로필을 자동으로 상속합니다. 다른 프로필이 하위 폴더에 적용되면 상속이 중지됩니다. 하나의 메타데이터 프로필만 폴더에 할당할 수 있습니다. 따라서 에셋을 업로드, 저장, 사용 및 보관하는 폴더 구조를 주의 깊게 고려합니다.
 
-폴더에 다른 메타데이터 프로필을 할당하면 새 프로필이 이전 프로필을 무시합니다. 이전 기존 폴더 자산은 변경되지 않습니다. 새 프로필이 나중에 폴더에 추가되는 자산에 적용됩니다.
+폴더에 다른 메타데이터 프로필을 할당하면 새 프로필이 이전 프로필을 무시합니다. 이전 기존 폴더 자산은 변경되지 않습니다. 새 프로필은 변경 후 폴더에 추가되는 자산에 적용됩니다. 메타데이터 프로필을 특정 폴더에 적용하거나 모든 자산에 전역적으로 적용할 수 있습니다.
 
 프로필이 할당된 폴더는 카드 이름에 나타나는 프로필의 이름으로 사용자 인터페이스에 표시됩니다.
-
-메타데이터 프로필을 특정 폴더에 적용하거나 모든 자산에 전역적으로 적용할 수 있습니다.
 
 나중에 변경한 기존 메타데이터 프로필이 이미 있는 폴더의 자산을 재처리할 수 있습니다.<!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
