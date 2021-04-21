@@ -1,16 +1,15 @@
 ---
 title: Flash 뷰어 지원 중단 알림
 description: 2017년 1월 31일부터 Flash 뷰어 플랫폼에 대한 지원은 공식적으로 종료됩니다.
-topic: Business Practitioner
 role: Administrator,Business Practitioner
+exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 11%
+source-wordcount: '47'
+ht-degree: 8%
 
 ---
-
 
 # Flash 뷰어 종단 {#flash-viewers-end-of-life-notice}
 
