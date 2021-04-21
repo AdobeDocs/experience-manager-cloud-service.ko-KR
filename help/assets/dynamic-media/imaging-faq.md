@@ -1,14 +1,13 @@
 ---
 title: 스마트 이미징
 description: '"스마트 이미징이 각 사용자의 고유한 보기 특성을 적용하여 경험에 최적화된 올바른 이미지를 자동으로 제공하여 성능과 참여를 높이는 방법을 살펴볼 수 있습니다."'
-feature: Asset Management,Renditions
-topic: Business Practitioner
+feature: 자산 관리,표현물
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
