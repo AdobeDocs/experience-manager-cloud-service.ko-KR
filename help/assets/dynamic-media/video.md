@@ -1,14 +1,13 @@
 ---
 title: 비디오
 description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
-feature: Video Profiles
-topic: Business Practitioner
+feature: 비디오 프로필
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9510'
 ht-degree: 1%
 
 ---
@@ -113,7 +112,7 @@ ht-degree: 1%
 
       * 웹 페이지의 포함 코드를 사용하여 비디오 통합:
          [웹 페이지에 비디오 뷰어를 포함합니다](/help/assets/dynamic-media/embed-code.md).
-   * [YouTube에 비디오 게시를 참조하십시오](#publishing-videos-to-youtube).
+   * [YouTube에 비디오 게시](#publishing-videos-to-youtube).
    * [비디오 보고서](#viewing-video-reports) 생성
 
    * [비디오에 캡션 추가](#adding-captions-to-video).
@@ -278,7 +277,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 ## 비디오 인코딩 우수 사례 {#best-practices-for-encoding-videos}
 
-Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 **Dynamic Media 비디오 인코딩** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
+Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 **Dynamic Media 비디오 인코딩** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 모니터링 및 YouTube 게시 진행](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 
 다음은 소스 비디오 파일을 인코딩하기 위한 우수 사례 팁입니다.
 
@@ -418,13 +417,13 @@ Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하�
 
 Experience Manager 자산에서 관리되는 비디오 자산을 이전에 만든 YouTube 채널에 직접 게시할 수 있습니다.
 
-비디오 자산을 YouTube에 게시하려면 Experience Manager 자산에 있는 비디오 자산에 태그를 태그로 지정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
+비디오 자산을 YouTube에 게시하려면 Experience Manager 자산에 있는 비디오 자산에 태그를 태그로 지정합니다. 이러한 태그를 YouTube 채널과 연관시킵니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
 
-YouTube는 자체 인코딩을 수행합니다. 따라서 Dynamic Media의 인코딩이 만들어진 비디오 변환 대신 Experience Manager에 업로드된 원본 비디오 파일이 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 비디오를 처리할 필요가 있습니다.
+YouTube은 자체 인코딩을 수행합니다. 따라서 Dynamic Media의 인코딩이 만들어진 비디오 변환 대신 Experience Manager에 업로드된 원본 비디오 파일이 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 비디오를 처리할 필요가 있습니다.
 
-비디오 처리 프로필을 무시하고 YouTube에 직접 게시하는 경우 간단히 Experience Manager Asset의 비디오 에셋에 볼 수 있는 축소판이 없습니다. 또한 인코딩되지 않은 비디오는 Dynamic Media 에셋 유형에서 작동하지 않습니다.
+비디오 처리 프로필을 무시하고 YouTube에 직접 게시하는 경우 Experience Manager 에셋의 비디오 에셋에 볼 수 있는 축소판이 표시되지 않는다는 의미입니다. 또한 인코딩되지 않은 비디오는 Dynamic Media 에셋 유형에서 작동하지 않습니다.
 
-YouTube 서버에 비디오 에셋을 게시하려면 YouTube를 통해 안전하고 보안이 적용된 서버 간 인증을 보장하기 위해 다음 작업을 완료해야 합니다.
+YouTube 서버에 비디오 에셋을 게시하려면 YouTube을 사용하여 안전하고 보안이 철저한 서버 간 인증을 위해 다음 작업을 완료해야 합니다.
 
 1. [Google 클라우드 설정 구성](#configuring-google-cloud-settings)
 1. [YouTube 채널 만들기](#creating-a-youtube-channel)
@@ -432,18 +431,18 @@ YouTube 서버에 비디오 에셋을 게시하려면 YouTube를 통해 안전�
 1. [Experience Manager에서 YouTube 설정](#setting-up-youtube-in-aem)
 1. [(선택 사항) 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다.](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [YouTube 채널에 비디오 게시](#publishing-videos-to-your-youtube-channel)
-1. [(선택 사항) 게시된 비디오를 YouTube에서 확인](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
-1. [YouTube URL을 웹 응용 프로그램에 연결](#linking-youtube-urls-to-your-web-application)
+1. [(선택 사항) YouTube에서 게시된 비디오 확인](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
+1. [웹 응용 프로그램에 YouTube URL 연결](#linking-youtube-urls-to-your-web-application)
 
-[비디오를 게시 취소하여 YouTube](#unpublishing-videos-to-remove-them-from-youtube)에서 제거할 수도 있습니다.
+또한 [비디오를 게시 취소하여 YouTube](#unpublishing-videos-to-remove-them-from-youtube)에서 제거할 수도 있습니다.
 
 ### Google 클라우드 설정 구성 중 {#configuring-google-cloud-settings}
 
-YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있는 경우, 이미 Google 계정을 가지고 있습니다.Google 계정이 없는 경우 계정을 쉽게 만들 수 있습니다. YouTube에 비디오 자산을 게시하려면 자격 증명이 필요하므로 계정이 필요합니다. 이미 만든 계정이 있는 경우 이 작업을 건너뛰고 [Creating a YouTube 채널](#creating-a-youtube-channel)으로 바로 진행합니다.
+YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있는 경우, 이미 Google 계정을 가지고 있습니다.Google 계정이 없는 경우 계정을 쉽게 만들 수 있습니다. YouTube에 비디오 자산을 게시하려면 자격 증명이 필요하므로 계정이 필요합니다. 이미 만든 계정이 있는 경우 이 작업을 건너뛰고 바로 [YouTube 채널 만들기](#creating-a-youtube-channel)로 진행합니다.
 
-Google Cloud와 YouTube에 사용되는 Google 계정과 같은 계정이 같을 필요는 없습니다.
+Google Cloud와 YouTube에 사용된 Google 계정에 사용된 계정이 동일할 필요는 없습니다.
 
-Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라서 비디오를 YouTube에 게시하는 단계는 아래 문서화된 것과 약간 다를 수 있습니다. 이 경고는 비디오가 업로드되었는지 확인하려고 할 때 YouTube에도 적용됩니다.
+Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라서 YouTube에 비디오를 게시하는 단계는 아래에 설명된 방법과 약간 다를 수 있습니다. 이 경보는 비디오가 업로드되었는지 확인하려고 할 때도 YouTube에 적용됩니다.
 
 >[!NOTE]
 >
@@ -468,7 +467,7 @@ Google 클라우드 설정을 구성하려면:
 
 1. 새 프로젝트 대화 상자의 프로젝트 이름 필드에 새 프로젝트의 이름을 입력합니다.
 
-   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 Experience Manager에서 YouTube를 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 그러므로 그것을 적어 놓으세요.
+   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 Experience Manager에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 그러므로 그것을 적어 놓으세요.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -480,7 +479,7 @@ Google 클라우드 설정을 구성하려면:
    ![6_5_googleaccount-api-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. API 및 서비스 페이지의 상단 근처에 있는 **[!UICONTROL API 및 서비스 활성화]**&#x200B;를 탭합니다.
-1. API 라이브러리 페이지의 왼쪽에 있는 **[!UICONTROL 범주]** 아래에서 **[!UICONTROL YouTube]**&#x200B;을(를) 탭합니다. 페이지 오른쪽에서 **[!UICONTROL YouTube 데이터 API]**&#x200B;를 탭합니다.
+1. API 라이브러리 페이지의 왼쪽의 **[!UICONTROL 범주]** 아래에서 **[!UICONTROL YouTube]**&#x200B;을(를) 탭합니다. 페이지 오른쪽에서 **[!UICONTROL YouTube 데이터 API]**&#x200B;를 탭합니다.
 1. YouTube 데이터 API v3 페이지에서 **[!UICONTROL 활성화]**&#x200B;를 탭합니다.
 
    ![6_5_googleaccount-api-enable3](assets/6_5_googleaccount-apis-enable3.png)
@@ -526,7 +525,7 @@ Google 클라우드 설정을 구성하려면:
 
 1. **[!UICONTROL 사용자에게 표시되는 제품 이름]** 머리글의 텍스트 필드에 동의 화면에 표시할 항목을 입력합니다.
 
-   Experience Manager 관리자가 YouTube에 인증할 때 동의 화면이 표시됩니다. Experience Manager은 YouTube에 권한을 연결합니다.
+   YouTube에 인증할 때 Experience Manager 관리자에게 동의 화면이 표시됩니다. Experience Manager은 YouTube에 권한을 요청합니다.
 
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 프로젝트 페이지에 자격 증명 추가 페이지의 4단계에서 **[!UICONTROL 자격 증명 다운로드]** 머리글 아래에서 **[!UICONTROL 다운로드]**&#x200B;를 누릅니다.
@@ -535,7 +534,7 @@ Google 클라우드 설정을 구성하려면:
 
 1. `client_id.json` 파일을 저장합니다.
 
-   나중에 Adobe Experience Manager에서 YouTube를 설정할 때 다운로드한 json 파일이 필요합니다.
+   나중에 Adobe Experience Manager에서 YouTube을 설정할 때 다운로드한 json 파일이 필요합니다.
 
 1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
@@ -547,17 +546,17 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 >[!CAUTION]
 >
->Experience Manager의 YouTube 설정 아래에 채널을 추가하기 전에 YouTube *에 채널을 하나 이상 설정해야 합니다([Experience Manager](#setting-up-youtube-in-aem)에서 YouTube 설정 참조).* 채널을 설정하지 않으면 기존 채널이 없다는 경고가 표시되지 않습니다. 그러나 채널을 추가할 때도 Google 인증이 계속 수행되지만 비디오를 전송할 채널을 선택할 수 있는 옵션은 없습니다.
+>Experience Manager의 YouTube 설정 아래에 채널을 추가하기 전에 YouTube *에 채널을 하나 이상 설정했는지 확인하십시오(아래 Experience Manager](#setting-up-youtube-in-aem)에서 YouTube 설정 참조).*[ 채널을 설정하지 않으면 기존 채널이 없다는 경고가 표시되지 않습니다. 그러나 채널을 추가할 때도 Google 인증이 계속 수행되지만 비디오를 전송할 채널을 선택할 수 있는 옵션은 없습니다.
 
 YouTube 채널을 만들려면:
 
 1. [https://www.youtube.com](https://www.youtube.com/)로 이동하여 Google 계정 자격 증명을 사용하여 로그인합니다.
-1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진(단색 원 내에 문자로 나타날 수도 있음)을 클릭한 다음 **[!UICONTROL YouTube 설정]**(둥근 톱니바퀴 아이콘)을 누릅니다.
+1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진을 클릭합니다(단색 원 내에 문자로 나타날 수도 있음). 그런 다음 **[!UICONTROL YouTube 설정]**(둥근 톱니바퀴 아이콘)을 누릅니다.
 1. 개요 페이지의 추가 기능 머리글 아래에서 **[!UICONTROL 내 채널을 모두 보거나 새 채널]**&#x200B;을 만듭니다.
 1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 탭합니다.
 1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시할 위치를 선택하는 회사 이름이나 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   Experience Manager에서 YouTube를 설정할 때 다시 입력해야 하므로 여기에 입력한 이름을 기억하십시오.
+   Experience Manager에서 YouTube을 설정할 때 다시 입력해야 하므로 여기에 입력한 이름을 기억하십시오.
 
 1. (선택 사항) 필요한 경우 채널을 더 추가합니다.
 
@@ -565,9 +564,9 @@ YouTube 채널을 만들려면:
 
 ### {#adding-tags-for-publishing} 게시를 위한 태그 추가
 
-비디오를 YouTube에 게시하려면 Experience Manager에서 하나 이상의 YouTube 채널에 태그를 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-cloud/authoring/features/tags.md)를 참조하십시오.
+비디오를 YouTube에 게시하려면 Experience Manager이 하나 이상의 YouTube 채널에 태그를 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-cloud/authoring/features/tags.md)를 참조하십시오.
 
-또는 Experience Manager에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 Experience Manager](#setting-up-youtube-in-aem)에서 [Setup YouTube로 이동할 수 있습니다.
+또는 Experience Manager에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 [Experience Manager](#setting-up-youtube-in-aem)에서 YouTube 설정으로 이동할 수 있습니다.
 
 >[!NOTE]
 >
@@ -587,8 +586,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 Experience Manager 6.4부터 Experience Manager에서 YouTube 게시를 설정하는 새로운 터치 사용자 인터페이스 방법이 도입되었습니다. 사용 중인 Experience Manager의 설치된 인스턴스를 기준으로 다음 중 하나를 수행합니다.
 
-* 6.4 이전에 Experience Manager에서 YouTube를 구성하려면 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before) 이전에 [Experience Manager에서 YouTube 설정을 참조하십시오.
-* Experience Manager 6.4 이상에서 YouTube를 구성하려면 [Experience Manager 6.4 이상에서 YouTube 설정](#setting-up-youtube-in-aem-and-later)을 참조하십시오.
+* 6.4 이전 Experience Manager에서 YouTube을 구성하려면 [6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before) 이전 Experience Manager에서 YouTube 설정을 참조하십시오.
+* Experience Manager 6.4 이상에서 YouTube을 구성하려면 [Experience Manager 6.4 이상에서 YouTube 설정](#setting-up-youtube-in-aem-and-later)을 참조하십시오.
 
 #### Experience Manager 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
 
@@ -597,10 +596,10 @@ Experience Manager 6.4부터 Experience Manager에서 YouTube 게시를 설정�
 1. **[!UICONTROL global]**&#x200B;을(를) 누릅니다(선택하지 않음).
 
 1. 글로벌 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
-1. YouTube 구성 만들기 페이지의 Google 클라우드 플랫폼 설정 아래의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
+1. YouTube 구성 만들기 페이지의 Google Cloud 플랫폼 설정 아래의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
 
    처음에 Google 클라우드 설정을 처음 구성할 때 프로젝트 ID를 지정했습니다.
-YouTube 구성 만들기 페이지를 열어 둡니다.잠시 후에 다시 찾아가세요
+YouTube 구성 만들기 페이지를 엽니다.잠시 후에 다시 찾아가세요
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -637,12 +636,12 @@ YouTube 구성 만들기 페이지를 열어 둡니다.잠시 후에 다시 찾�
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
-#### 6.4 이전 Experience Manager에서 YouTube 설정 {#setting-up-youtube-in-aem-before}
+#### 6.4 {#setting-up-youtube-in-aem-before} 이전 Experience Manager에서 YouTube 설정
 
 1. Dynamic Media 인스턴스에 관리자로 로그인해야 합니다.
 
 1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**&#x200B;을 누릅니다.
-1. 타사 서비스 머리글 아래의 YouTube에서 **[!UICONTROL 지금 구성]**&#x200B;을 탭합니다.
+1. 타사 서비스 머리글 아래의 YouTube 아래에서 **[!UICONTROL 지금 구성]**&#x200B;을 탭합니다.
 1. 구성 만들기 대화 상자의 각 필드에 제목(필수)과 이름(선택 사항)을 입력합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 누릅니다.
 1. YouTube 계정 설정 대화 상자의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
@@ -658,7 +657,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 찾
    이제 Experience Manager에서 YouTube 채널을 설정합니다.
 
 1. **[!UICONTROL 사용 가능한 채널]**&#x200B;의 오른쪽에서 **+**(더하기 기호 아이콘)을 누릅니다.
-1. [YouTube 채널 설정] 대화 상자의 [제목] 필드에 **[!UICONTROL YouTube]** 이전 버전에 하나 이상의 채널을 추가하는 작업에서 만든 채널의 이름을 입력합니다.
+1. [YouTube 채널 설정] 대화 상자의 [제목] 필드에 **[!UICONTROL YouTube]** 이전 버전에 하나 이상의 채널 추가 작업에서 만든 채널의 이름을 입력합니다.
 
    원할 경우 선택적으로 설명을 추가할 수 있습니다.
 
@@ -687,7 +686,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 찾
 
 선택적으로 비디오를 업로드할 때 YouTube 속성 설정을 자동화할 수 있습니다. Experience Manager에서 메타데이터 처리 프로필을 만듭니다.
 
-메타데이터 처리 프로필을 만들려면 먼저 **[!UICONTROL 필드 레이블]**, **[!UICONTROL 속성]**&#x200B;에 매핑 및 **[!UICONTROL Choices]** 필드에서 비디오를 위한 메타데이터 스키마에 있는 값을 복사합니다. 그런 다음 해당 값을 YouTube 비디오 메타데이터 처리 프로필에 추가하여 프로필을 만듭니다.
+메타데이터 처리 프로필을 만들려면 먼저 **[!UICONTROL 필드 레이블]**, **[!UICONTROL 속성]**&#x200B;에 매핑 및 **[!UICONTROL Choices]** 필드에서 비디오를 위한 메타데이터 스키마에 있는 값을 복사합니다. 그런 다음 해당 값을 YouTube 비디오 메타데이터 처리 프로파일에 추가하여 비디오 메타데이터 처리 프로필을 만듭니다.
 
 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화하려면:
 
@@ -704,7 +703,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 찾
    * **[!UICONTROL 선택 항목]**에서 사용할 기본값(예: 사람 및 블로그, 과학 및 기술)을 선택하고 복사합니다.
 복사한 값을 열려 있는 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 엽니다.
 
-1. YouTube 게시 머리글에서 **[!UICONTROL YouTube 개인 정보]**&#x200B;를 클릭합니다.
+1. YouTube 게시 머리글에서 **[!UICONTROL YouTube 개인 정보 보호]**&#x200B;를 클릭합니다.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
@@ -719,27 +718,27 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 찾
 1. 페이지의 오른쪽 위 모서리 근처에 있는 메타데이터 프로필 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 메타데이터 프로필 추가 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 이름 `YouTube Video`을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 메타데이터 프로필 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 클릭합니다.
-1. 다음을 수행하여 복사한 YouTube 게시 값을 프로필에 추가합니다.
+1. 다음을 수행하여 복사된 YouTube 게시 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 클릭합니다.
    * (선택 사항) **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그하여 양식 영역에 놓습니다.
    * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
    * (선택 사항) 페이지 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Publishing`을 입력합니다.
-   * **[!UICONTROL 빌드 양식]** 탭을 클릭한 다음 **[!UICONTROL 복수 값 텍스트]**&#x200B;라는 구성 요소를 드래그하여 만든 **[!UICONTROL YouTube 게시]** 머리글 아래에 놓습니다.
+   * **[!UICONTROL 빌드 양식]** 탭을 클릭한 다음 **[!UICONTROL 복수 값 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 만든 **[!UICONTROL YouTube 게시]** 머리글 아래에 놓습니다.
 
    * 구성 요소를 선택하려면 **[!UICONTROL 필드 레이블]**&#x200B;을 클릭합니다.
-   * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
+   * 페이지의 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
 
-1. 다음을 수행하여 복사한 YouTube 개인 정보 값을 프로필에 추가합니다.
+1. 다음을 수행하여 복사된 YouTube 개인 정보 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 클릭합니다.
    * (선택 사항) **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그하여 양식 영역에 놓습니다.
    * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
    * (선택 사항) 페이지 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Privacy`을 입력합니다.
-   * **[!UICONTROL 빌드 양식]** 탭을 클릭한 다음 **[!UICONTROL 복수 값 텍스트]**&#x200B;라는 구성 요소를 드래그하여 만든 **[!UICONTROL YouTube 개인 정보 보호]** 머리글 아래에 놓습니다.
+   * **[!UICONTROL 양식 작성]** 탭을 클릭한 다음 **[!UICONTROL 복수 값 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 만든 **[!UICONTROL YouTube 개인 정보 보호]** 머리글 아래에 놓습니다.
 
    * 구성 요소를 선택하려면 **[!UICONTROL 필드 레이블]**&#x200B;을 클릭합니다.
-   * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
+   * 페이지의 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. 비디오를 업로드할 폴더에 YouTube 게시 메타데이터 프로필을 적용합니다. 메타데이터 프로필과 비디오 프로필 세트를 모두 가지고 있어야 합니다.
@@ -754,14 +753,14 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 찾
 >
 >즉시 게시해도 YouTube에 자동으로 게시되지 않습니다. Dynamic Media이 설정되면 다음 두 가지 게시 옵션 중에서 선택할 수 있습니다.**[!UICONTROL 즉시]** 또는 **[!UICONTROL 활성화 시]**.
 >
->**[!UICONTROL 즉시 게시]** 는 업로드된 자산이 IPS와 동기화된 후 배달 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media의 경우에는 그렇지만 YouTube에서는 그렇지 않습니다. YouTube에 게시하려면 Experience Manager 작성자 방식으로 게시해야 합니다.
+>**[!UICONTROL 즉시 게시]** 는 업로드된 자산이 IPS와 동기화된 후 배달 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media의 경우에는 그렇지만 YouTube의 경우에는 그렇지 않습니다. YouTube에 게시하려면 Experience Manager 작성자 방식으로 게시해야 합니다.
 
 >[!NOTE]
-YouTube에서 콘텐츠를 게시하려면 Experience Manager에서 **[!UICONTROL YouTube에 게시]** 작업 흐름을 사용하여 진행 상황을 모니터링하고 실패 정보를 볼 수 있습니다.
-[비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
-자세한 진행 정보를 보려면 복제 아래의 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스가 필요합니다.
+YouTube에서 콘텐츠를 게시하기 위해 Experience Manager은 진행 상황을 모니터링하고 실패 정보를 볼 수 있는 **[!UICONTROL YouTube에 게시]** 작업 과정을 사용합니다.
+[비디오 인코딩 모니터링 및 YouTube 게시 진행](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+자세한 진행 정보를 보려면 복제 중인 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스가 필요합니다.
 
-**비디오를 YouTube 채널에 게시하려면 다음을 수행하십시오**.
+**YouTube 채널에 비디오를 게시하려면 다음을 수행하십시오**.
 
 1. Experience Manager에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
 1. 비디오 자산(응용 비디오 세트)을 선택합니다.
@@ -779,11 +778,11 @@ YouTube에서 콘텐츠를 게시하려면 Experience Manager에서 **[!UICONTRO
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
-### (선택 사항) 게시된 비디오를 YouTube {#optional-verifying-the-published-video-on-youtube}에서 확인
+### (선택 사항) YouTube {#optional-verifying-the-published-video-on-youtube}에서 게시된 비디오를 확인하는 중
 
 선택적으로 YouTube 게시(또는 게시 취소)의 진행 상태를 모니터링할 수 있습니다.
 
-[비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+[비디오 인코딩 모니터링 및 YouTube 게시 진행](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
 게시 시간은 기본 소스 비디오 형식, 파일 크기 및 업로드 트래픽을 포함하는 다양한 요소에 따라 크게 다를 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷은 훨씬 더 느리게 렌더링됩니다. 예를 들어 720p 및 1080p는 480p보다 표시되는 데 더 오래 걸립니다.
 
@@ -791,31 +790,31 @@ YouTube에서 콘텐츠를 게시하려면 Experience Manager에서 **[!UICONTRO
 
 ### YouTube URL을 웹 응용 프로그램 {#linking-youtube-urls-to-your-web-application}에 연결
 
-비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 배치되므로 필요에 따라 웹 사이트 또는 애플리케이션의 페이지에 붙여넣을 수 있습니다.
+비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 보관되므로 필요에 따라 웹 사이트 또는 애플리케이션의 페이지에 붙여넣을 수 있습니다.
 
 >[!NOTE]
-YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 수 없습니다.
+비디오 에셋을 YouTube에 게시해야만 YouTube URL을 복사할 수 있습니다.
 
-YouTube URL을 웹 애플리케이션에 연결하려면:
+YouTube URL을 웹 응용 프로그램에 연결하려면:
 
 1. 복사할 URL이 있는 *YouTube 게시된* 비디오 자산으로 이동한 다음 선택합니다.
 
-   YouTube URL은 *after*&#x200B;을(를) 복사하여 *게시된*&#x200B;만 YouTube에 사용할 수 있습니다.
+   YouTube URL은 *after*&#x200B;을(를) 복사할 때만 사용할 수 있습니다. 먼저 *게시된*&#x200B;을(를) YouTube에 게시했습니다.
 
 1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 고급]** 탭을 클릭합니다.
-1. YouTube 게시 머리글의 YouTube URL 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
+1. YouTube Publishing 머리글 아래의 YouTube URL 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
 
-### 비디오를 게시 취소하여 YouTube {#unpublishing-videos-to-remove-them-from-youtube}에서 제거
+### YouTube {#unpublishing-videos-to-remove-them-from-youtube}에서 제거할 비디오 게시 취소
 
-Experience Manager에서 비디오 에셋을 게시 취소하면 동영상이 YouTube에서 제거됩니다.
+Experience Manager에서 비디오 에셋을 게시 취소하면 해당 비디오가 YouTube에서 제거됩니다.
 
 >[!CAUTION]
-YouTube에서 바로 비디오를 제거하면 Experience Manager은 이를 알지 못하고 비디오가 YouTube에 아직 게시되는 것처럼 계속 동작합니다. 항상 Experience Manager을 통해 YouTube에서 비디오 에셋을 게시 취소합니다.
+YouTube 내에서 직접 비디오를 제거하면 Experience Manager은 이를 알지 못하고 비디오가 YouTube에 아직 게시된 것처럼 계속 동작합니다. 항상 Experience Manager을 통해 YouTube에서 비디오 에셋을 게시 취소합니다.
 
 >[!NOTE]
-YouTube에서 콘텐트를 제거하려면 Experience Manager에서 **[!UICONTROL YouTube에서 게시 취소]** 작업 과정을 사용하여 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
-[비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+YouTube에서 콘텐트를 제거하려면 Experience Manager에서 **[!UICONTROL YouTube]** 워크플로우에서 게시 취소 워크플로우를 사용합니다. 이 워크플로우를 통해 진행 상황을 모니터링하고 오류 정보를 볼 수 있습니다.
+[비디오 인코딩 모니터링 및 YouTube 게시 진행](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
 YouTube에서 제거할 비디오를 게시 취소하려면 다음을 수행하십시오.
 
@@ -828,7 +827,7 @@ YouTube에서 제거할 비디오를 게시 취소하려면 다음을 수행하�
 
 ## 비디오 인코딩 및 YouTube 게시 진행 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-비디오 인코딩이 적용된 폴더에 새 비디오를 업로드하거나 YouTube에 비디오를 게시하면 비디오 인코딩/Youtube 게시 진행(또는 실패)을 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그를 통해서만 사용할 수 있습니다. 그러나 실패하든 성공하든 관계없이 다음 절차에 설명된 다른 방법으로 나열됩니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받게 됩니다.
+비디오 인코딩이 적용된 폴더에 새 비디오를 업로드하거나 YouTube에 비디오를 게시하면 비디오 인코딩/Youtube 게시가 진행 중인(또는 실패)를 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그를 통해서만 사용할 수 있습니다. 그러나 실패하든 성공하든 관계없이 다음 절차에 설명된 다른 방법으로 나열됩니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받게 됩니다.
 
 ### 진행률 모니터링 {#monitoring-progress}
 
@@ -848,11 +847,11 @@ YouTube에서 제거할 비디오를 게시 취소하려면 다음을 수행하�
 
    ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
-1. 자산 세부 사항에서 진행 상황을 봅니다. 자산을 탭하거나 클릭하면 드롭다운 메뉴를 열고 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다. 인코딩 또는 YouTube 게시와 같은 워크플로우 활동으로 범위를 좁히려면 **[!UICONTROL 워크플로]**&#x200B;를 선택합니다.
+1. 자산 세부 사항에서 진행 상황을 봅니다. 자산을 탭하거나 클릭하면 드롭다운 메뉴를 열고 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다. 인코딩 또는 YouTube 게시과 같은 워크플로우 활동으로 범위를 좁히려면 **[!UICONTROL 워크플로우]**&#x200B;를 선택합니다.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   인코딩 등 모든 워크플로우 정보가 타임라인에 표시됩니다. YouTube 게시를 위한 워크플로우 타임라인에는 YouTube 채널 이름과 YouTube 비디오 URL도 포함되어 있습니다. 또한 게시가 완료된 후 워크플로우 타임라인에 오류 알림이 표시됩니다.
+   인코딩 등 모든 워크플로우 정보가 타임라인에 표시됩니다. YouTube 게시의 경우 워크플로우 타임라인에는 YouTube 채널의 이름과 YouTube 비디오 URL도 포함됩니다. 또한 게시가 완료된 후 워크플로우 타임라인에 오류 알림이 표시됩니다.
 
    >[!NOTE]
    다음과 같이 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)에서 **[!UICONTROL retries]**, **[!UICONTROL 재시도 지연]** 및 **[!UICONTROL 시간 초과]**&#x200B;에 대한 여러 워크플로우 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다.
