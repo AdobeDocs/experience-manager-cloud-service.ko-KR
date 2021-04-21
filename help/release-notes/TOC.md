@@ -3,14 +3,13 @@ sub-product: AEM as a Cloud Service 릴리스 노트
 user-guide-title: AEM as a Cloud Service 릴리스 노트
 breadcrumb-title: 릴리스 노트
 user-guide-description: 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다.
-feature-set: Experience Manager
-feature: Release Information
+feature: 릴리스 정보
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1d64fe00e9694721073fa6a47a9b2cbd82e5b8ae
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 91%
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
 
