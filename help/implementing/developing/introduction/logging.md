@@ -1,16 +1,16 @@
 ---
-title: 로깅
-description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 알아봅니다.
+title: Cloud Service으로 AEM 로깅
+description: 중앙 로깅 서비스에 대한 전역 매개 변수, 개별 서비스에 대한 특정 설정 또는 AEM에서 Cloud Service으로 데이터 로깅을 요청하는 방법을 알아봅니다.
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 translation-type: tm+mt
-source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
+source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 3%
+source-wordcount: '2332'
+ht-degree: 2%
 
 ---
 
-
-# 로깅 {#logging}
+# AEM에 대해 Cloud Service {#logging-for-aem-as-a-cloud-service}으로 로깅
 
 Cloud Service은 고객이 고객층마다 고유한 경험을 만들 수 있도록 사용자 정의 코드를 포함하는 플랫폼입니다. 이러한 점을 염두에 두고 로깅은 로컬 개발 및 클라우드 환경에서 코드 실행을 디버깅하고 이해하기 위한 중요한 기능이며, 특히 Cloud Service의 개발 환경인 AEM도 이 기능을 사용합니다.
 
@@ -538,7 +538,7 @@ Define DISP_LOG_LEVEL Debug
 
 ### 클라우드 환경 {#cloud-environments}
 
-클라우드 서비스에 대한 Cloud Service 로그인 AEM은 Cloud Manager 인터페이스를 통해 다운로드하거나 Adobe I/O 명령줄 인터페이스를 사용하여 명령줄에서 로그를 밀어서 액세스할 수 있습니다. 자세한 내용은 [클라우드 관리자 로깅 설명서](/help/implementing/cloud-manager/manage-logs.md)를 참조하십시오.
+AEM은 Cloud Manager 인터페이스를 통해 다운로드하거나 Adobe I/O 명령줄 인터페이스를 사용하여 명령줄에서 로그를 밀어서 클라우드 서비스에 대한 Cloud Service 로그에 액세스할 수 있습니다. 자세한 내용은 [클라우드 관리자 로깅 설명서](/help/implementing/cloud-manager/manage-logs.md)를 참조하십시오.
 
 ### 로컬 SDK {#local-sdk}
 
