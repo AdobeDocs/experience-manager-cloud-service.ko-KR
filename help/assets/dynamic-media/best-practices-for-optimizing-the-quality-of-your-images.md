@@ -2,17 +2,16 @@
 title: 이미지 품질 최적화 우수 사례
 description: Dynamic Media에서 이미지 에셋의 품질을 최적화하는 데 사용할 수 있는 모범 사례를 살펴볼 수 있습니다.
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: 자산 관리
 role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 1%
 
 ---
-
 
 # 이미지 품질 최적화 우수 사례 {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -125,4 +124,3 @@ JPG 이미지를 메모리가 제한된 장치에 제공하는 경우 `&jpegSize
 * URL에서 바로 다양한 매개 변수를 실시간으로 테스트해 보십시오.
 * Dynamic Media 이미지 제공 명령을 이미지 사전 설정으로 그룹화할 수 있는 것이 좋습니다. 이미지 사전 설정은 기본적으로 `$thumb_low$` 및 `&product_high$` 등의 사용자 정의 사전 설정 이름을 가진 URL 명령 매크로입니다. URL 경로의 사용자 정의 사전 설정 이름은 이러한 사전 설정을 호출합니다. 이러한 기능은 웹 사이트에서 이미지의 다양한 사용 패턴에 대한 명령 및 품질 설정을 관리하고 URL의 전체 길이를 줄이는 데 도움이 됩니다.
 * 또한 Experience Manager은 통합 시 선명하게 하기 이미지를 적용하는 등 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하기 위해 [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)은(는) 사용자 정의된 통찰력과 최상의 작업 방법을 도울 수 있습니다.
-
