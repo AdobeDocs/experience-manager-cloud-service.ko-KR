@@ -1,16 +1,15 @@
 ---
 title: URL을 웹 애플리케이션에 연결
 description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법을 알아봅니다.
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 2%
+source-wordcount: '1266'
+ht-degree: 1%
 
 ---
-
 
 # URL을 웹 애플리케이션에 연결 {#linking-urls-to-your-web-application}
 
@@ -26,7 +25,7 @@ AEM을 WCM으로 사용하는 *이 아닌*&#x200B;인 경우에만 URL에 연결
 
 웹 페이지에 비디오 또는 이미지 뷰어 포함](embed-code.md)을 참조하십시오.[
 
-[웹 응용 프로그램에 YouTube URL 연결](video.md)을 참조하십시오.
+YouTube URL을 웹 응용 프로그램에 연결](video.md)을 참조하십시오.[
 
 [응답형 사이트에 대해 최적화된 이미지 제공](responsive-site.md)을 참조하십시오.
 
