@@ -3,9 +3,8 @@ sub-product: Cloud Service의 AEM 컨텐츠 및 상거래
 user-guide-title: Cloud Service의 AEM 컨텐츠 및 상거래
 breadcrumb-title: AEM 컨텐츠 및 상거래 가이드
 user-guide-description: Experience Manager 컨텐츠 및 상거래를 Cloud Service으로 사용하고 관리하는 방법을 이해합니다.
-feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 4b4741926381818e44b2293f9bed86782e689c49
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 5%
