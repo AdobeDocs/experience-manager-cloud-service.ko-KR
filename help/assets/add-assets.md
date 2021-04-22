@@ -1,13 +1,13 @@
 ---
 title: 디지털 자산을  [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을  [!DNL Adobe Experience Manager] 에  [!DNL Cloud Service]으로 추가합니다.
-feature: Asset Management,Upload
+feature: 자산 관리,업로드
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
+source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2067'
 ht-degree: 1%
 
 ---
@@ -216,7 +216,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * 직접 이진 업로드는 자산을 업로드하는 새로운 방법입니다. 기본적으로 [!DNL Experience Manager] 사용자 인터페이스, [!DNL Adobe Asset Link] 및 [!DNL Experience Manager] 데스크탑 앱과 같은 제품 기능과 클라이언트가 지원합니다. 고객 기술 팀이 사용자 정의하거나 확장한 모든 사용자 지정 코드는 새 업로드 API 및 프로토콜을 사용해야 합니다.
 
-* Adobe은 [!DNL Experience Manager Assets]의 각 폴더에 최대 1000개의 에셋을 추가하는 것이 좋습니다. 폴더에 에셋을 더 추가할 수 있지만, 이러한 폴더에 대한 탐색 속도가 느려지는 등의 성능 문제가 표시될 수 있습니다.
+* Adobe은 [!DNL Experience Manager Assets]의 각 폴더에 1000개 이하의 자산을 추가하는 것이 좋습니다. 폴더에 에셋을 더 추가할 수 있지만, 이러한 폴더에 대한 탐색 속도가 느려지는 등의 성능 문제가 발생할 수 있습니다.
 
 * [!UICONTROL 이름 충돌] 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다. [자산 인사이트](/help/assets/assets-insights.md)가 [!DNL Adobe Analytics]로 노출 횟수 또는 클릭 수를 추적하도록 활성화된 경우 재생성된 자산 ID는 [!DNL Analytics]에서 자산에 대해 캡처된 데이터를 무효화합니다.
 
