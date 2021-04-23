@@ -3,9 +3,9 @@ title: Cloud Service의 유지 관리 작업
 description: Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '914'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,7 @@ ht-degree: 2%
 고객은 일별, 주별 또는 월별 유지 관리 기간 동안 실행할 워크플로우 삭제, 임시 태스크 삭제 및 프로젝트 삭제 유지 관리 작업을 각각 예약할 수 있습니다. 이러한 구성은 소스 제어에서 직접 편집해야 합니다. 아래 표에서는 각 창에 사용할 수 있는 구성 매개 변수에 대해 설명합니다.
 
 <table>
+ <tbody>
   <tr>
     <th>유지 관리 창 구성</th>
     <th>구성을 소유하는 사용자</th>
@@ -54,12 +55,11 @@ ht-degree: 2%
     <td>일별</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td>아래 위치 1 참조</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>아래의 코드 샘플 1 참조</td>
-  <td>
-  <strong>windowSchedule= daily</strong> (이 값은 변경할 수 없습니다) windowStartTime= HH:
-  <strong> </strong> MM을 24시간 시경으로 사용합니다. 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.
-  <strong>windowEndTime= HH:</strong> MM을 24시간 시간으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다.
+  <td><p><code>windowSchedule= daily</code></p> (이 값은 변경할 수 없습니다.)
+  <p><code>windowStartTime= HH:MM</code> 24시간 사용. 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
+  <p><code>windowEndTime= HH:MM</code> 24시간 사용. 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다.</p>
   </td> 
   </tr>
   <tr>
@@ -89,6 +89,7 @@ ht-degree: 2%
     <strong>windowFirstLastStartDay= 0/10</strong> 을 사용하여 월의 첫 번째 주에 예약하거나 월의 마지막 주에 예약합니다. 값이 없으면 windowScheduleWeeks가 매월 관리하는 것처럼 매일 작업을 효과적으로 예약할 수 있습니다.
     </td> 
     </tr>
+    </tbody>
 </table>
 
 위치:
