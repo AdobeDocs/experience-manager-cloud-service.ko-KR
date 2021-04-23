@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-[AEM 헤드리스 개발자 여정의 연속(선택 사항)에서, AEM이 헤드리스 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법, AEM Editor 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법, 그리고 외부 SPA을 통합하여 편집 기능을 필요한 경우 활성화하는 방법에 대해 알아봅니다.](#overview.md)
+[AEM 헤드리스 개발자 여정의 연속(선택 사항)에서, AEM이 헤드리스 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법, AEM Editor 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법, 그리고 외부 SPA을 통합하여 편집 기능을 필요한 경우 활성화하는 방법에 대해 알아봅니다.](overview.md)
 
 ## 지금까지 스토리 {#story-so-far}
 
