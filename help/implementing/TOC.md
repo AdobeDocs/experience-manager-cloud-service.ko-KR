@@ -6,10 +6,10 @@ user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager
 feature: 개발자 도구
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 46%
+source-wordcount: '969'
+ht-degree: 42%
 
 ---
 
@@ -73,6 +73,18 @@ ht-degree: 46%
    + [AEM Technical Foundations](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [서버측 API에 대한 액세스 토큰 생성](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + 헤드리스 개발자 여정 {#headless-journey}
+      + [AEM에서 헤드리스 이해](developing/headless-journey/overview.md)
+      + [CMS 헤드리스 개발에 대한 자세한 내용](developing/headless-journey/learn-about.md)
+      + [Cloud Service으로 AEM 헤드리스 시작하기](developing/headless-journey/getting-started.md)
+      + [AEM 헤드리스를 사용한 첫 번째 경험 경로](developing/headless-journey/path-to-first-experience.md)
+      + [컨텐츠를 AEM 컨텐츠 모델로 모델링하는 방법](developing/headless-journey/model-your-content.md)
+      + [AEM 전달 API를 통해 컨텐츠에 액세스하는 방법](developing/headless-journey/access-your-content.md)
+      + [AEM 자산 API를 통해 콘텐츠를 업데이트하는 방법](developing/headless-journey/update-your-content.md)
+      + [모든 것을 통합하는 방법](developing/headless-journey/put-it-all-together.md)
+      + [헤드리스 애플리케이션을 사용하여 라이브하는 방법](developing/headless-journey/go-live.md)
+      + [론치 게시](developing/headless-journey/post-launch.md)
+      + [옵션 - AEM을 사용하여 단일 페이지 애플리케이션을 만드는 방법](developing/headless-journey/create-spa.md)
    + [AEM의 헤드라인 및 헤드리스](developing/headful-headless.md)
    + 전체 스택 AEM 개발 {#full-stack}
       + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
