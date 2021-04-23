@@ -3,9 +3,9 @@ title: Cloud Service의 유지 관리 작업
 description: Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
+source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 | 워크플로우 삭제 | 고객 | github로 해야 합니다. <br> 폴더 아래에 속성을 생성하여 기본 유지 관리 창 구성 노드 `/libs` 를 `/apps/settings/granite/operations/maintenance/granite_weekly` 재정의합니다 `granite_daily`. 자세한 구성 내용은 아래 유지 관리 창 테이블을 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 다른 노드를 추가(이름을 지정) `granite_WorkflowPurgeTask`하여 유지 관리 작업을 활성화합니다. <br> OSGI 속성 구성을 참조하십시오.  [AEM 6.5 유지 관리 작업 설명서](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | 프로젝트 삭제 | 고객 | github로 해야 합니다. <br> 폴더 또는 폴더 아래에 속성을  `/libs` 생성하여 기본 유지 관리 창 구성 노드를  `/apps/settings/granite/operations/maintenance/granite_weekly` 재정의합니다 `granite_daily`. 자세한 구성 내용은 아래 유지 관리 창 테이블을 참조하십시오. <br> 적절한 속성을 사용하여 위의 노드 아래에 노드를 추가(이름을 지정) `granite_ProjectPurgeTask`하여 유지 관리 작업을 활성화합니다. <br> OSGI 속성 구성  [AEM 6.5 유지 관리 작업 설명서를 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-고객은 일별, 주별 또는 월별 유지 관리 기간 동안 실행할 워크플로우 삭제, 임시 태스크 삭제 및 프로젝트 삭제 유지 관리 작업을 각각 예약할 수 있습니다. 이러한 구성은 소스 제어에서 직접 편집해야 합니다. 아래 표에서는 각 창에 사용할 수 있는 구성 매개 변수에 대해 설명합니다.
+고객은 일별, 주별 또는 월별 유지 관리 기간 동안 실행할 워크플로우 삭제, 임시 태스크 삭제 및 프로젝트 삭제 유지 관리 작업을 각각 예약할 수 있습니다. 이러한 구성은 소스 제어에서 직접 편집해야 합니다. 아래 표에서는 각 창에 사용할 수 있는 구성 매개 변수에 대해 설명합니다. 또한 표 뒤에 제공된 위치 및 코드 샘플을 참조하십시오.
 
 <table>
  <tbody>
@@ -85,15 +85,15 @@ ht-degree: 1%
     </tbody>
 </table>
 
-위치:
+**위치**:
 
-1. /apps/settings/granite/operations/maintenance/granite_daily
-2. /apps/settings/granite/operations/maintenance/granite_weekly
-3. /apps/settings/granite/operations/maintenance/granite_monthly
+* 일별 - /apps/settings/granite/operations/maintenance/granite_daily
+* 주별 - /apps/settings/granite/operations/maintenance/granite_weekly
+* 월별 - /apps/settings/granite/operations/maintenance/granite_monthly
 
-코드 샘플:
+**코드 샘플**:
 
-코드 샘플 1
+코드 샘플 1(일별)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ ht-degree: 1%
  />
 ```
 
-코드 샘플 2
+코드 샘플 2(주별)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +123,7 @@ ht-degree: 1%
    windowStartTime="14:30"/>
 ```
 
-코드 샘플 3
+코드 샘플 3(월별)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
