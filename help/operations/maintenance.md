@@ -3,10 +3,10 @@ title: Cloud Service의 유지 관리 작업
 description: Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
+source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 2%
+source-wordcount: '902'
+ht-degree: 1%
 
 ---
 
@@ -47,16 +47,12 @@ ht-degree: 2%
     <th>유지 관리 창 구성</th>
     <th>구성을 소유하는 사용자</th>
     <th>구성 유형</th>
-    <th>위치</th>
-    <th>예</th>
     <th>매개 변수</th>
   </tr>
   <tr>
     <td>일별</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td>1</td>
-    <td>1</td>
   <td>
   <p><strong>windowSchedule= daily</strong> (이 값은 변경할 수 없습니다.)</p>
   <p><strong>windowStartTime= HH:</strong> Mm24시간 시경으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
@@ -67,8 +63,6 @@ ht-degree: 2%
     <td>매주</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td>아래 위치 2 참조</td>
-    <td>아래의 코드 샘플 2를 참조하십시오.</td>
     <td>
     <p><strong>windowSchedule= weekly</strong> (이 값은 변경할 수 없음)</p>
     <p><strong>windowStartTime= HH:</strong> Mm24시간 시경으로 사용 주별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
@@ -80,8 +74,6 @@ ht-degree: 2%
     <td>매월</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td>아래 위치 3 참조</td>
-    <td>아래의 코드 샘플 3 참조</td>
     <td>
     <p><strong>windowSchedule= daily</strong> (이 값은 변경할 수 없습니다.)</p>
     <p><strong>windowStartTime= HH:</strong> Mm24시간 시경으로 사용 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
