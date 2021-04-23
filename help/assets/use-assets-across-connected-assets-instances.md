@@ -2,11 +2,11 @@
 title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
+feature: 자산 관리,연결된 자산,자산 배포,사용자 및 그룹
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
 workflow-type: tm+mt
 source-wordcount: '2932'
 ht-degree: 26%
@@ -15,7 +15,7 @@ ht-degree: 26%
 
 # 연결된 에셋을 사용하여 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}에서 DAM 에셋 공유
 
-대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 동시에 작업하는 데 필요한 기존 배포가 지리적으로 분산되어 있는 이유 중 하나가 있습니다. 또 다른 이유는 모회사가 함께 사용하고자 하는 이기종 인프라를 유도하기 위한 인수입니다.
+대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 하나의 이유는 서로 연동해야 하는 기존 배포가 지리적으로 분산될 수 있기 때문입니다. 또 다른 이유는 모회사가 함께 사용하고자 하는 이기종 인프라를 유도하기 위한 인수입니다.
 
 사용자는 [!DNL Experience Manager Sites]에서 웹 페이지를 만들 수 있습니다. [!DNL Experience Manager Assets] 는 웹 사이트에 필요한 자산을 제공하는 디지털 자산 관리(DAM) 시스템입니다. [!DNL Experience Manager]는 이제 [!DNL Sites] 및 [!DNL Assets]을 통합하여 위의 사용 사례를 지원합니다. 
 
@@ -53,7 +53,7 @@ ht-degree: 26%
 |------|--------|-----------|-----|----------|
 | [!DNL Sites] administrator | 로컬 | [!DNL Experience Manager] `administrators` | `admin` | [!DNL Experience Manager]을 설정하고 원격 [!DNL Assets] 배포와의 통합을 구성합니다. |
 | DAM 사용자 | 로컬 | `Authors` | `ksaner` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
-| [!DNL Sites] 작성자 | 로컬 | <ul><li>`Authors` (원격 DAM에 대한 읽기 액세스 및 로컬에 대한 작성자 액세스  [!DNL Sites]사용) </li> <li>`dam-users` 로컬  [!DNL Sites]</li></ul> | `ksaner` | 최종 사용자는 컨텐트 속도를 개선하기 위해 이 통합을 사용하는 작성자입니다. [!DNL Sites] 작성자는 [!UICONTROL 컨텐츠 파인더]를 사용하여 원격 DAM에서 자산을 검색하고 로컬 웹 페이지에서 필요한 이미지를 사용합니다. `ksaner` DAM 사용자의 자격 증명이 사용됩니다. |
+| [!DNL Sites] 작성자 | 로컬 | <ul><li>`Authors` (원격 DAM에 대한 읽기 액세스 및 로컬에 대한 작성자 액세스  [!DNL Sites]사용) </li> <li>`dam-users` 로컬  [!DNL Sites]</li></ul> | `ksaner` | 최종 사용자는 컨텐트 속도를 개선하기 위해 이 통합을 사용하는 작성자입니다. [!DNL Sites] 작성자는 [!UICONTROL Content Finder]를 사용하여 원격 DAM에서 자산을 검색하고 로컬 웹 페이지에서 필요한 이미지를 사용할 수 있습니다. `ksaner` DAM 사용자의 자격 증명이 사용됩니다. |
 | [!DNL Assets] administrator | 원격 | [!DNL Experience Manager] `administrators` | `admin` 원격  [!DNL Experience Manager] | CORS(원본 간 리소스 공유)를 구성합니다. |
 | DAM 사용자 | 원격 | `Authors` | `ksaner` 원격  [!DNL Experience Manager] | 원격 [!DNL Experience Manager] 배포의 작성자 역할. [!UICONTROL Content Finder]를 사용하여 연결된 자산에서 자산을 검색하고 찾아봅니다. |
 | DAM 배포자(기술 사용자) | 원격 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 원격  [!DNL Experience Manager] | 원격 배포에 있는 이 사용자는 [!DNL Sites] 작성자 역할이 아닌 [!DNL Experience Manager] 로컬 서버에서 원격 자산을 가져오기 위해 [!DNL Sites] 작성자를 대신하여 사용됩니다. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
@@ -119,7 +119,7 @@ ht-degree: 26%
 
 ## [!DNL Sites]과 [!DNL Dynamic Media] 배포 사이의 연결 구성 {#sites-dynamic-media-connected-assets}
 
-웹 페이지 작성자가 웹 페이지에서 [!DNL Dynamic Media] 이미지를 사용할 수 있도록 하는 [!DNL Sites] 배포와 [!DNL Dynamic Media] 배포 간의 연결을 구성할 수 있습니다. 웹 페이지를 작성하는 동안 원격 자산 및 원격 [!DNL Dynamic Media] 배포를 사용하는 경험은 그대로 유지됩니다. 이렇게 하면 연결된 자산 기능(예: 스마트 자르기 및 이미지 사전 설정)을 통해 [!DNL Dynamic Media] 기능을 활용할 수 있습니다.
+웹 페이지 작성자가 웹 페이지에서 [!DNL Dynamic Media] 이미지를 사용할 수 있도록 하는 [!DNL Sites] 배포와 [!DNL Dynamic Media] 배포 간의 연결을 구성할 수 있습니다. 웹 페이지를 작성하는 동안 원격 자산 및 원격 [!DNL Dynamic Media] 배포를 사용하는 경험은 동일하게 유지됩니다. 이렇게 하면 연결된 자산 기능(예: 스마트 자르기 및 이미지 사전 설정)을 통해 [!DNL Dynamic Media] 기능을 활용할 수 있습니다.
 
 이 연결을 구성하려면 다음 단계를 따르십시오.
 
@@ -148,7 +148,7 @@ ht-degree: 26%
 
 1. [!DNL Experience Manager] 작업 영역의 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;에 액세스하여 원격 배포의 [!DNL Assets] 인터페이스로 이동합니다. 또는 브라우저에서 `https://[assets_servername_ams]:[port]/assets.html/content/dam`에 액세스합니다. 선택한 자산을 업로드합니다.
 1. [!DNL Sites] 배포의 오른쪽 위 모서리에 있는 프로필 활동자에서 **[!UICONTROL 가장 대상]**&#x200B;을 클릭합니다. `ksaner`를 사용자 이름으로 지정하고 제공된 옵션을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 사이트]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;에서 We.Retail 웹 사이트 페이지를 엽니다. 페이지를 편집합니다. 또는 브라우저에서 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`에 액세스하여 페이지를 편집합니다.
+1. **[!UICONTROL 사이트]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;에서 `We.Retail` 웹 사이트 페이지를 엽니다. 페이지를 편집합니다. 또는 브라우저에서 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`에 액세스하여 페이지를 편집합니다.
 
    페이지의 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널 전환]**&#x200B;을 클릭합니다.
 
@@ -182,7 +182,7 @@ ht-degree: 26%
 
 ### 웹 페이지 {#asset-usage-references} 전체에서 에셋 사용 확인
 
-[!DNL Experience Manager] DAM 사용자가 자산에 대한 모든 참조를 확인할 수 있도록 합니다. 원격 [!DNL Sites] 및 복합 자산에서 에셋의 사용을 이해하고 관리하는 데 도움이 됩니다. [!DNL Experience Manager Sites] 배포의 웹 페이지의 많은 작성자는 다른 웹 페이지의 원격 [!DNL Assets]에 있는 자산을 사용할 수 있습니다. 에셋 관리를 간소화하고 잘못된 참조를 유도하지 않도록 DAM 사용자가 로컬 및 원격 웹 페이지에서 에셋 사용을 확인하는 것이 중요합니다. 자산의 [!UICONTROL 속성] 페이지에 있는 [!UICONTROL 참조] 탭에는 자산의 로컬 및 원격 참조가 나열됩니다.
+[!DNL Experience Manager] DAM 사용자가 자산에 대한 모든 참조를 확인할 수 있도록 합니다. 원격 [!DNL Sites] 및 복합 자산에서 에셋의 사용을 이해하고 관리하는 데 도움이 됩니다. [!DNL Experience Manager Sites] 배포의 웹 페이지의 많은 작성자는 다른 웹 페이지에서 원격 DAM의 자산을 사용할 수 있습니다. 에셋 관리를 간소화하고 잘못된 참조를 유도하지 않도록 DAM 사용자가 로컬 및 원격 웹 페이지에서 에셋 사용을 확인하는 것이 중요합니다. 자산의 [!UICONTROL 속성] 페이지에 있는 [!UICONTROL 참조] 탭에는 자산의 로컬 및 원격 참조가 나열됩니다.
 
 [!DNL Assets] 배포에서 참조를 보고 관리하려면 다음 단계를 수행합니다.
 
@@ -191,7 +191,7 @@ ht-degree: 26%
 
    ![자산 속성 페이지의 원격 참조](assets/connected-assets-remote-reference.png)
 
-1. [!DNL Sites] 페이지에 대한 참조는 각 로컬 [!DNL Sites]에 대한 총 참조 수를 표시합니다. 모든 참조를 찾고 총 참조 수를 표시하는 데 시간이 걸릴 수 있습니다.
+1. [!DNL Sites] 페이지에 대한 참조에는 각 로컬 [!DNL Sites]에 대한 총 참조 수가 표시됩니다. 모든 참조를 찾고 총 참조 수를 표시하는 데 시간이 걸릴 수 있습니다.
 1. 참조 목록은 대화형이고 DAM 사용자가 참조를 클릭하여 참조하는 페이지를 열 수 있습니다. 어떤 이유로 원격 참조를 가져올 수 없는 경우 사용자에게 실패를 알리는 알림이 표시됩니다.
 1. 사용자는 자산을 이동하거나 삭제할 수 있습니다. 자산을 이동하거나 삭제할 때 선택한 모든 자산/폴더의 총 참조 수가 경고 대화 상자에 표시됩니다. 참조가 아직 표시되지 않은 자산을 삭제하면 경고 대화 상자가 표시됩니다.
 
@@ -227,7 +227,7 @@ ht-degree: 26%
 *  `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 * 자산을 다시 반입하는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. 업데이트할 에셋을 다시 가져오는 API 지원 또는 다른 방법이 없습니다.
 * DAM에서 자산이 해체된 경우 해당 자산은 [!DNL Sites] 페이지에서 계속 사용 중입니다.
-* 자산의 원격 참조 항목은 비동기적으로 가져옵니다. 참조 및 총 개수는 실시간으로 표시되지 않으며 사이트 작성자가 DAM 사용자가 참조를 보는 동안 자산을 사용하는 경우 약간의 차이가 있을 수 있습니다. DAM 사용자는 페이지를 새로 고치고 몇 분 후에 다시 시도하여 총 개수를 가져올 수 있습니다.
+* 자산의 원격 참조 항목은 비동기적으로 가져옵니다. 참조 및 총 개수가 실시간으로 표시되지 않고 DAM 사용자가 참조를 보는 동안 [!DNL Sites] 작성자가 자산을 사용하는 경우 약간의 차이가 있을 수 있습니다. DAM 사용자는 페이지를 새로 고치고 몇 분 후에 다시 시도하여 총 개수를 가져올 수 있습니다.
 
 ## 문제 해결 {#troubleshoot}
 
