@@ -3,9 +3,9 @@ title: Cloud Service의 유지 관리 작업
 description: Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -55,11 +55,11 @@ ht-degree: 2%
     <td>일별</td>
     <td>고객</td>
     <td>JCR 노드 정의</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>아래 위치 1 참조</td>
     <td>아래의 코드 샘플 1 참조</td>
-  <td><p><code>windowSchedule= daily</code></p> (이 값은 변경할 수 없습니다.)
-  <p><code>windowStartTime= HH:MM</code> 24시간 사용. 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
-  <p><code>windowEndTime= HH:MM</code> 24시간 사용. 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다.</p>
+  <td><p><strong>windowSchedule= daily</strong></p> (이 값은 변경할 수 없습니다.)
+  <p><strong>windowStartTime= HH:</strong> Mm24시간 시경으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
+  <p><strong>windowEndTime= HH:</strong> MM을 24시간 시간으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행이 중지되는 시기를 정의합니다.</p>
   </td> 
   </tr>
   <tr>
