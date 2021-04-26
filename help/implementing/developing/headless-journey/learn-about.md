@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-[AEM 헤드리스 개발자 여정의 이 부분에서는 헤드리스 기술에 대한 내용과 헤드리스 기술을 사용하는 이유를 알아봅니다.](#overview.md)
+[AEM 헤드리스 개발자 여정의 이 부분에서는 헤드리스 기술에 대한 내용과 헤드리스 기술을 사용하는 이유를 알아봅니다.](overview.md)
 
 ## 목표 {#objective}
 
