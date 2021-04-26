@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-[AEM 헤드리스 개발자 여정의 이 부분에서 ](#overview.md) GraphQL 쿼리를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 알아봅니다.
+[AEM 헤드리스 개발자 여정의 이 부분에서 ](overview.md) GraphQL 쿼리를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 알아봅니다.
 
 ## 지금까지 스토리 {#story-so-far}
 
