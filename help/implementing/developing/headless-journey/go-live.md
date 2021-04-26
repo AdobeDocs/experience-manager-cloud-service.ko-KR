@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-[AEM 헤드리스 개발자 여정의 이 부분에서 Git에서 로컬 코드를 가져와서 CI/CD 파이프라인을 위해 Cloud Manager Git으로 이동하여 헤드리스 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.](#overview.md)
+[AEM 헤드리스 개발자 여정의 이 부분에서 Git에서 로컬 코드를 가져와서 CI/CD 파이프라인을 위해 Cloud Manager Git으로 이동하여 헤드리스 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.](overview.md)
 
 ## 지금까지 스토리 {#story-so-far}
 
