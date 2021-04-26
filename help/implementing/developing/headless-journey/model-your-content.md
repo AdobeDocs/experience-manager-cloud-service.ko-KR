@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-[AEM 헤드리스 개발자 여정](#overview.md)의 이 부분에서는 컨텐트 구조를 모델링하는 방법을 배울 수 있습니다. 그런 다음 컨텐츠 조각 모델 및 컨텐츠 조각을 사용하여 모든 채널에서 재사용할 수 있는 Adobe Experience Manager(AEM)의 구조를 확인합니다.
+[AEM 헤드리스 개발자 여정](overview.md)의 이 부분에서는 컨텐트 구조를 모델링하는 방법을 배울 수 있습니다. 그런 다음 컨텐츠 조각 모델 및 컨텐츠 조각을 사용하여 모든 채널에서 재사용할 수 있는 Adobe Experience Manager(AEM)의 구조를 확인합니다.
 
 ## 지금까지 스토리 {#story-so-far}
 
