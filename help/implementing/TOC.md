@@ -6,9 +6,9 @@ user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager
 feature: 개발자 도구
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
+source-git-commit: f0357bb2b19d7d44066bf868c3ea3ce0dcf42461
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 42%
 
 ---
@@ -168,6 +168,7 @@ ht-degree: 42%
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite 사용](/help/implementing/developing/tools/crxde.md)
+   + [링크 외부라이저](/help/implementing/developing/tools/externalizer.md)
 + 개인화 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub 구성](developing/personalization/configuring-contexthub.md)
