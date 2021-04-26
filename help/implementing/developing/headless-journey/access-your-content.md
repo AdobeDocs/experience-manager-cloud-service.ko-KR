@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '764'
 ht-degree: 2%
 
 ---
@@ -130,6 +130,7 @@ AEM GraphQL API를 사용하면 컨텐츠 조각에 대해 (복잡한) 쿼리를
 
 ## 추가 리소스 {#additional-resources}
 
+* [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - 데이터 모델링 및 GraphQL을 비롯한 AEM 헤드리스 기능 사용에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.
 * [GraphQL.org](https://graphql.org)
    * [스키마](https://graphql.org/learn/schema/)
    * [GraphQL Java 라이브러리](https://graphql.org/code/#java)
