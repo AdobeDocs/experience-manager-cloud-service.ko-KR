@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-[AEM 헤드리스 개발자 여정의 이 부분에서는 자체 프로젝트를 AEM 헤드리스로 시작하는 데 필요한 사항에 대해 알아봅니다.](#overview.md)
+[AEM 헤드리스 개발자 여정의 이 부분에서는 자체 프로젝트를 AEM 헤드리스로 시작하는 데 필요한 사항에 대해 알아봅니다.](overview.md)
 
 ## 지금까지 스토리 {#story-so-far}
 
