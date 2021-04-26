@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 5fd190b50f52a3182365a31e1539c5864f42afb4
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 2%
+source-wordcount: '1671'
+ht-degree: 1%
 
 ---
 
@@ -244,6 +244,7 @@ tbc...
 
 ## 추가 리소스 {#additional-resources}
 
+* [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - 데이터 모델링 및 GraphQL을 비롯한 AEM 헤드리스 기능 사용에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.
 * [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)  작업 - 컨텐츠 조각에 대한 안내 페이지
    * [구성 브라우저의 컨텐츠 조각](/help/assets/content-fragments/content-fragments-configuration-browser.md)  - 구성 브라우저에서 컨텐츠 조각 기능을 활성화합니다.
    * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)  - 컨텐츠 조각 모델 생성 및 편집
