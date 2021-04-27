@@ -1,18 +1,26 @@
 ---
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1185'
 ht-degree: 3%
 
 ---
 
-
 # 사용자 매핑 도구 사용 {#user-mapping-tool}
 
 ## 개요 {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="사용자 매핑 도구"
+>abstract="컨텐츠 전송 도구는 사용자 및 그룹을 기존 AEM 시스템에서 AEM으로 Cloud Service으로 이동하는 데 도움이 됩니다. Cloud Service 작성 인스턴스에서 사용자와 그룹이 중복되지 않도록 기존 사용자 및 그룹을 IMS ID에 매핑해야 합니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="사용자 매핑 도구 사용에 대한 중요 고려 사항"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="사용자 매핑 도구 사용"
+
 
 Cloud Service으로 Adobe Experience Manager(AEM)으로 전환 여정의 일부로서 사용자 및 그룹을 Cloud Service으로 기존 AEM 시스템에서 AEM으로 이동시켜야 합니다. 이는 컨텐츠 전송 도구에 의해 수행됩니다.
 
@@ -102,4 +110,3 @@ Cloud Service로서 AEM의 주요 변경 사항은 작성 계층에 액세스하
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. 추출 단계를 실행하려면 [내용 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)을 참조하십시오.
-
