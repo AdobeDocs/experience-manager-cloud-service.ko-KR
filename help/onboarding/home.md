@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 translation-type: tm+mt
-source-git-commit: 486e60c0287d6693de028b8b5457814e36b32185
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 36%
+source-wordcount: '1003'
+ht-degree: 35%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 36%
 >id="aemcloud_onboarding_overview"
 >title="온보딩 개요"
 >abstract="새 응용 프로그램을 배포하거나 기존 응용 프로그램을 마이그레이션하는 것과 상관없이 이 안내서는 응용 프로그램이 Cloud Service에 맞게 최적화되어 성공을 이룰 수 있도록 도와주는 시작 지점 역할을 합니다. Cloud Manager에 사용자가 지정된 역할 및 관련 권한에 추가하도록 하려면 Adobe ID 및 시스템 관리자의 도움이 필요합니다."
+>additional-url="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/SLAExhibit-AEMCloudService-2019DEC12.pdf" text="서비스 수준 전시회 - Cloud Service으로 AEM"
 
 Cloud Service으로 AEM을 사용해 주셔서 감사합니다! 새 응용 프로그램을 배포하거나 기존 응용 프로그램을 마이그레이션하는 것과 상관없이 이 안내서는 응용 프로그램이 Cloud Service에 맞게 최적화되어 성공을 이룰 수 있도록 도와주는 시작 지점 역할을 합니다.
 
