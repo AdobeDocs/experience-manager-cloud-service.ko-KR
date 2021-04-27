@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
-feature: Deploying
+feature: 배포
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3334'
 ht-degree: 0%
 
 ---
@@ -163,6 +163,12 @@ Cloud Manager는 응용 프로그램을 배포하면 콘텐츠 패키지 설치�
 above appears to be internal, to confirm with Brian -->
 
 ### 변경 가능한 컨텐츠 패키지 {#package-manager-oneoffs-for-mutable-content-packages}에 대한 패키지 관리자 &quot;1 오프&quot;
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="패키지 관리자 - 변경 가능한 컨텐츠 패키지 마이그레이션"
+>abstract="제작 문제를 디버깅하기 위해 제작 단계에서 스테이징으로 특정 컨텐츠를 가져오는 행위, 사내 환경에서 AEM Cloud 환경으로 작은 컨텐츠 패키지를 전송하는 행위 등을 포함하는 컨텐츠 패키지를 &quot;일회성&quot;으로 설치해야 하는 사용 사례를 살펴보십시오."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="컨텐츠 전송 도구"
 
 컨텐츠 패키지를 &quot;일회성&quot;으로 설치해야 하는 경우도 있습니다. 예를 들어 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 컨텐츠를 가져오는 경우입니다. 이러한 시나리오의 경우, 패키지 관리자를 Cloud Service 환경으로 AEM에서 사용할 수 있습니다.
 
