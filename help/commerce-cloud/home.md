@@ -3,16 +3,21 @@ title: AEM 컨텐츠 및 상거래
 description: AEM 컨텐츠 및 커머스 자가 도움말 리소스 및 설명서 링크
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
+source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 82%
+source-wordcount: '377'
+ht-degree: 78%
 
 ---
 
 # AEM 컨텐트 및 상거래 {#commerce-guide}
 
 이 페이지에는 AEM 컨텐츠 및 상거래에 대한 자가 도움말 리소스가 나열됩니다.
+
+>[!NOTE]
+>
+>AEM 6.5 및 클래식 CIF가 있는 AEM 내용 및 상거래의 경우 [AEM 6.5 내용 및 상거래](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)를 참조하십시오.
+
 
 ## 주요 내용 및 상거래 문서 {#key-articles}
 
