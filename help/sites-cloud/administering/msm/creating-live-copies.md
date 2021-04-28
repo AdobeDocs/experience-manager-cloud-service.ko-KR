@@ -1,13 +1,13 @@
 ---
 title: Live Copy 만들기 및 동기화
 description: Live Copy를 만들고 동기화하여 사이트 전체에 컨텐츠를 재사용하는 방법을 살펴볼 수 있습니다.
-feature: Multi Site Manager
+feature: 다중 사이트 관리자
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
+source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4277'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,15 @@ ht-degree: 1%
 
 블루프린트 구성을 사용할 때 소스/블루프린트의 Live Copy 동기화 방법을 결정하는 롤아웃 구성에 블루프린트 구성을 연결할 수 있습니다. [사용할 롤아웃 구성 지정을 참조하십시오](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### 블루프린트 구성 만들기 {#creating-a-blueprint-configuration}
+### 블루프린트 구성 만들기 및 편집 {#creating-editing-blueprint-configurations}
+
+블루프린트 구성은 변경할 수 없는 데이터로 간주되므로 런타임 시 편집할 수 없습니다. 이러한 이유로 구성 변경 사항은 CI/CD 파이프라인을 사용하여 Git을 통해 배포해야 합니다.
+
+자세한 내용은 [AEM(Adobe Experience Manager)에 대한 중요 변경 사항(Cloud Service)을 참조하십시오.](/help/release-notes/aem-cloud-changes.md)
+
+다음 단계는 로컬 개발 인스턴스에서 관리자가 테스트 및 개발 목적으로만 사용할 수 있습니다. 이러한 옵션은 AEMACS 클라우드 인스턴스에서 사용할 수 없습니다.
+
+#### 로컬에서 블루프린트 구성 만들기 {#creating-a-blueprint-configuration}
 
 블루프린트 구성을 만들려면
 
@@ -61,7 +69,7 @@ ht-degree: 1%
 
 1. **Createdone** 은 사양을 기반으로 블루프린트 구성을 만듭니다.
 
-### 블루프린트 구성 편집 또는 삭제 {#editing-or-deleting-a-blueprint-configuration}
+### 블루프린트 구성을 로컬로 편집 또는 삭제{#editing-or-deleting-a-blueprint-configuration}
 
 기존 블루프린트 구성을 편집하거나 삭제할 수 있습니다.
 
