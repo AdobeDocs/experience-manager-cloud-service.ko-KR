@@ -1,14 +1,14 @@
 ---
 title: Adobe Content Package Maven Plugin
 description: Content Package Maven 플러그인을 사용하여 AEM 응용 프로그램을 배포합니다.
+exl-id: d631d6df-7507-4752-862b-9094af9759a0
 translation-type: tm+mt
-source-git-commit: 2cdbbe9b8f6608cbdd299889be515d421e3d9ad3
+source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1855'
 ht-degree: 7%
 
 ---
-
 
 # Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
 
@@ -30,7 +30,7 @@ AEM에 구성된 패키지 배포는 Adobe Content Package Maven 플러그인에
 
 ## 패키지 및 AEM 프로젝트 구조 {#aem-project-structure}
 
-AEM 6.5는 온-프레미스 및 AMS 구현 모두에 대해 최신 AEM Project Lianype에서 구현되는 패키지 관리 및 프로젝트 구조에 대한 최신 모범 사례를 준수합니다.
+Cloud Service은 최신 AEM Project Tranype에 의해 구현된 패키지 관리 및 프로젝트 구조에 대한 최신 모범 사례를 준수합니다.
 
 >[!TIP]
 >
@@ -179,7 +179,7 @@ rm 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 
 | `outputDirectory` | `java.io.File` | 예 | Maven 프로젝트에 정의된 빌드 디렉터리 | 컨텐츠 패키지가 저장되는 로컬 디렉토리 |
 | `prefix` | `java.lang.String` | 아니오 | 없음 |  |
 | `project` | `org.apache.maven.project.MavenProject` | 예 | 없음 | 마벤 프로젝트 |
-| `properties` | `java.util.Map` | 아니오 | 없음 | 이러한 매개 변수는 `properties.xml` 파일에서 설정할 수 있는 추가 속성을 정의합니다. 이러한 속성은 다음 사전 정의된 속성을 덮어쓸 수 없습니다.`group`(설정할 `group` 매개 변수 사용), `name`(설정할 `name` 매개 변수 사용), `version`(설정할 `version` 매개 변수 사용), `description`(프로젝트 설명에 따라 설정), `groupId`(`groupId`(마비되는 프로젝트 설명자의 &lt;a8/>), `artifactId`(`artifactId` 마스터 프로젝트 설명자), `dependencies`(설정할 `dependencies` 매개 변수 사용), `createdBy`(`user.name` 시스템 속성의 값), `created`(현재 시스템 시간), `requiresRoot`(설정할 `requiresRoot` 매개 변수 사용), `packagePath`(그룹 및 패키지 이름에서 자동으로 생성됨) |
+| `properties` | `java.util.Map` | 아니오 | 없음 | 이러한 매개 변수는 `properties.xml` 파일에서 설정할 수 있는 추가 속성을 정의합니다. 이러한 속성은 다음 사전 정의된 속성을 덮어쓸 수 없습니다.`group`(설정할 `group` 매개 변수 사용), `name`(설정할 `name` 매개 변수 사용), `version`(설정할 `version` 매개 변수 사용), `description`(프로젝트 설명에 따라 설정), `groupId`(`groupId`(마비되는 프로젝트 설명자의 ), `artifactId`(`artifactId` 마스터 프로젝트 설명자), `dependencies`(설정할 `dependencies` 매개 변수 사용), `createdBy`(`user.name` 시스템 속성의 값), `created`(현재 시스템 시간), `requiresRoot`(설정할 `requiresRoot` 매개 변수 사용), `packagePath`(그룹 및 패키지 이름에서 자동으로 생성됨) |
 | `requiresRoot` | `boolean` | 예 | false | 패키지에 루트가 필요한지 여부를 정의합니다. 이 속성은 `properties.xml` 파일의 `requiresRoot` 속성이 됩니다. |
 | `subPackages` | `java.util.List` | 아니오 | 없음 |  |
 | `version` | `java.lang.String` | 예 | Maven 프로젝트에 정의된 버전 | 콘텐츠 패키지의 버전 |
@@ -228,7 +228,7 @@ rm 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 
 
 ## 패키지 {#including-a-thumbnail-image-or-properties-file-in-the-package}에 축소판 이미지 또는 속성 파일 포함
 
-기본 패키지 구성 파일을 교체하여 패키지 속성을 사용자 정의합니다. 예를 들어 축소판 이미지를 포함시켜 패키지 관리자와 패키지 공유에서 패키지를 구별할 수 있습니다.
+기본 패키지 구성 파일을 교체하여 패키지 속성을 사용자 정의합니다. 예를 들어, 축소판 이미지를 포함시켜 패키지 관리자와 패키지 공유에서 패키지를 구별할 수 있습니다.
 
 소스 파일은 파일 시스템의 모든 위치에 위치할 수 있습니다. POM 파일에서 소스 파일을 `target/vault-work/META-INF`에 복사하여 패키지에 포함할 빌드 리소스를 정의합니다.
 
