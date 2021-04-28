@@ -1,13 +1,14 @@
 ---
-title: AI에서 생성된 태그를 사용하여 에셋에 자동 태그 지정
-description: ' [!DNL Adobe Sensei] 서비스를 사용하여 문맥 및 설명 비즈니스 태그를 적용하는 인공적인 지능형 서비스를 사용하여 자산에 태그를 지정합니다.'
+title: ' [!DNL Adobe Sensei] 스마트 서비스가 있는 에셋 자동 태그 지정'
+description: 상황에 맞는 설명형 비즈니스 태그를 적용하는 지능적인 서비스를 통해 에셋에 태그를 지정할 수 있습니다.
 contentOwner: AG
-feature: Smart Tags,Tagging
+feature: 스마트 태그,태그 지정
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2709'
 ht-degree: 1%
 
 ---
@@ -19,21 +20,19 @@ ht-degree: 1%
 
 자연어 어휘와 비교하여 비즈니스 분류 방식을 기반으로 태그를 지정하면 자산을 회사의 비즈니스에 맞게 정렬하고 가장 관련성이 높은 자산이 검색에 표시되는지 확인할 수 있습니다. 예를 들어 자동차 제조업체는 자동차 이미지에 모델 이름을 태그로 지정할 수 있으므로 판촉 캠페인을 디자인하기 위해 검색할 때 관련 이미지만 표시됩니다.
 
-백그라운드에서 이 기능은 인위적으로 지능적인 [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html)의 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
+백그라운드에서 이 기능은 인위적으로 지능적인 [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html)의 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다. 새 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console]과 통합됩니다. 이렇게 하면 스마트 태그 기능을 보다 신속하게 구성할 수 있습니다. 이전 배포에서는 관리자가 수동으로 [스마트 태그 통합](/help/assets/smart-tags-configuration.md#aio-integration)을 구성할 수 있습니다.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-다음 유형의 자산에 태그를 지정할 수 있습니다.
-
-* **이미지**:다양한 형식의 이미지는 Adobe Sensei의 스마트 콘텐츠 서비스를 사용하여 태그로 지정됩니다. [교육 모델](#train-model)을 만든 다음 [이미지에 스마트 태그](#tag-assets)를 적용합니다.
-* **비디오 에셋**:비디오 태그 지정은 기본적으로  [!DNL Adobe Experience Manager] 로 활성화되어  [!DNL Cloud Service]있습니다. [새 비디오를 ](/help/assets/smart-tags-video-assets.md) 업로드하거나 기존 비디오를 재처리할 때 비디오는 자동으로 태깅됩니다.
-* **텍스트 기반 에셋**: [!DNL Experience Manager Assets] 업로드되면 지원되는 텍스트 기반 자산에 자동으로 태그를 지정합니다. 텍스트 기반 자산](#smart-tag-text-based-assets)에 태그를 지정하는 방법에 대해 자세히 알아보십시오.[
-
 ## 지원되는 자산 유형 {#smart-tags-supported-file-formats}
 
-스마트 태그는 JPG 및 PNG 형식의 변환을 생성하는 지원되는 파일 유형에 적용됩니다. 이 기능은 다음 유형의 자산에 대해 지원됩니다.
+다음 유형의 자산에 태그를 지정할 수 있습니다.
+
+* **이미지**:다양한 형식의 이미지는 Adobe Sensei의 스마트 콘텐츠 서비스를 사용하여 태그로 지정됩니다. [교육 모델](#train-model)을 만든 다음 [이미지에 스마트 태그](#tag-assets)를 적용합니다. 스마트 태그는 JPG 및 PNG 형식의 변환을 생성하는 지원되는 파일 유형에 적용됩니다.
+* **텍스트 기반 에셋**: [!DNL Experience Manager Assets] 업로드되면 지원되는 텍스트 기반 자산에 자동으로 태그를 지정합니다. 텍스트 기반 자산](#smart-tag-text-based-assets)에 태그를 지정하는 방법에 대해 자세히 알아보십시오.[
+* **비디오 에셋**:비디오 태그 지정은 기본적으로  [!DNL Adobe Experience Manager] 로 활성화되어  [!DNL Cloud Service]있습니다. [새 비디오를 ](/help/assets/smart-tags-video-assets.md) 업로드하거나 기존 비디오를 재처리할 때 비디오는 자동으로 태깅됩니다.
 
 | 이미지(MIME 유형) | 텍스트 기반 에셋(파일 형식) | 비디오 에셋(파일 포맷 및 코덱스) |
 |----|-----|------|
@@ -58,15 +57,10 @@ ht-degree: 1%
 
 [!DNL Experience Manager] 기본적으로 스마트 태그를 텍스트 기반 자산과 비디오에 자동으로 추가합니다. 이미지에 스마트 태그를 자동으로 추가하려면 다음 작업을 완료하십시오.
 
-* [ [!DNL Adobe Experience Manager] Adobe 개발자 콘솔과 통합](#integrate-aem-with-aio).
 * [태그 모델 및 지침을 이해합니다](#understand-tag-models-guidelines).
 * [모델](#train-model) 트레이닝
 * [디지털 에셋에 태그를 지정할 수 있습니다](#tag-assets).
 * [태그 및 검색을 관리합니다](#manage-smart-tags-and-searches).
-
->[!TIP]
->
->스마트 태그는 [!DNL Adobe Experience Manager Assets] 고객에만 적용됩니다. 스마트 태그는 [!DNL Experience Manager]의 추가 기능으로 구매할 수 있습니다.
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -75,14 +69,6 @@ ht-degree: 1%
 지원되는 텍스트 기반 자산은 업로드할 때 [!DNL Experience Manager Assets]에 의해 자동으로 태그가 지정됩니다. 기본적으로 활성화되어 있습니다. 스마트 태그의 효력은 에셋의 텍스트 양보다는 에셋 텍스트에 있는 관련 키워드 또는 엔티티에 따라 달라집니다. 텍스트 기반 자산의 경우 스마트 태그는 텍스트에 나타나는 키워드이지만 자산을 가장 잘 설명하는 키워드입니다. 지원되는 에셋의 경우 [!DNL Experience Manager]은(는) 이미 텍스트를 추출하여 색인화된 다음 에셋을 검색하는 데 사용됩니다. 그러나 텍스트의 키워드를 기반으로 하는 스마트 태그는 전체 검색 색인과 비교하여 자산 검색을 향상시키는 데 사용되는 전용, 구조화된, 높은 우선 순위 검색 패싯을 제공합니다.
 
 반면 이미지 및 비디오의 경우 스마트 태그는 시각적 측면을 기반으로 파생됩니다.
-
-## [!DNL Experience Manager]을(를) Adobe 개발자 콘솔 {#integrate-aem-with-aio}과 통합
-
->[!IMPORTANT]
->
->새 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console]과 통합됩니다. 이렇게 하면 스마트 태그 기능을 보다 신속하게 구성할 수 있습니다. 이전 배포에서는 관리자가 수동으로 [스마트 태그 통합](/help/assets/smart-tags-configuration.md#aio-integration)을 구성할 수 있습니다.
-
-[!DNL Adobe Developer Console]을(를) 사용하여 스마트 태그와 [!DNL Adobe Experience Manager]을 통합할 수 있습니다. 이 구성을 사용하여 [!DNL Experience Manager] 내에서 스마트 태그 서비스에 액세스합니다. 스마트 태그를 구성하는 작업에 대해서는 [구성 [!DNL Experience Manager] 에셋 ](smart-tags-configuration.md)에 태그를 지정합니다. 백엔드 시, [!DNL Experience Manager] 서버는 스마트 태그 서비스로 요청을 전달하기 전에 Adobe 개발자 콘솔 게이트웨이로 서비스 자격 증명을 인증합니다.
 
 ## 태그 모델 및 지침 이해 {#understand-tag-models-guidelines}
 
@@ -155,7 +141,7 @@ ht-degree: 1%
 
 스마트 태그 서비스가 자산 교육 세트의 태그에 대해 교육 받았는지 확인하려면 보고서 콘솔에서 교육 워크플로우 보고서를 검토하십시오.
 
-1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구] > **[!UICONTROL 자산] > **[!UICONTROL 보고서]**&#x200B;로 이동합니다.
+1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 보고서]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 자산 보고서]** 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 스마트 태그 교육]** 보고서를 선택한 다음 도구 모음에서 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 보고서의 제목과 설명을 지정합니다. **[!UICONTROL 보고서 예약]**&#x200B;에서 **[!UICONTROL 지금]** 옵션을 선택한 상태로 두십시오. 나중에 보고서를 예약하려면 **[!UICONTROL 나중에]**&#x200B;를 선택하고 날짜와 시간을 지정합니다. 그런 다음 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
@@ -165,7 +151,7 @@ ht-degree: 1%
 
 ## 자산 {#tag-assets} 태그 지정
 
-스마트 태그 서비스를 교육한 후 다른 유사한 자산 세트에 적절한 태그를 자동으로 적용하도록 태그 지정 워크플로우를 트리거할 수 있습니다. 정기적으로 또는 필요할 때마다 태그 지정 워크플로우를 적용할 수 있습니다. 태그 지정 워크플로우는 자산 및 폴더 모두에 적용됩니다.
+스마트 태그 서비스를 교육한 후 다른 자산 세트에 태그를 자동으로 적용하도록 태그 지정 워크플로우를 트리거할 수 있습니다. On-Demand로 태그 지정 워크플로우를 적용하거나 정기적으로 실행하도록 예약할 수 있습니다. 태그 지정 워크플로우는 자산 및 폴더 모두에 적용됩니다.
 
 ### 워크플로우 콘솔 {#tagging-assets-from-the-workflow-console}에서 에셋에 태그 지정
 
@@ -224,7 +210,7 @@ ht-degree: 1%
 
 1. 자산에 대한 [!UICONTROL 속성] 페이지로 이동합니다. 홍보한 태그가 높은 연관성을 지정되므로 검색 결과에 더 높은 것으로 나타납니다.
 
-### 스마트 태그 {#understandsearch}를 사용하여 AEM 검색 결과 이해
+### 스마트 태그 {#understand-search}를 사용하여 AEM 검색 결과 이해
 
 기본적으로 AEM 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 `OR` 절이 추가되어 적용된 스마트 태그에서 검색어를 찾습니다. 예를 들어 `woman running`을(를) 검색하는 것이 좋습니다. 메타데이터에 `woman`만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 그러나 스마트 태그를 사용하여 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 검색 결과는
 
