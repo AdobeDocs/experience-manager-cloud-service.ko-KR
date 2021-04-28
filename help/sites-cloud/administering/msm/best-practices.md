@@ -1,16 +1,16 @@
 ---
 title: MSM 우수 사례
 description: AEM 멀티 사이트 관리자를 시작하고 실행하는 데 도움이 되는 Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 최상의 작업 방법을 알아봅니다.
-feature: Multi Site Manager
+feature: 다중 사이트 관리자
 role: Administrator
+exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
-
 
 # MSM 우수 사례 {#msm-best-practices}
 
@@ -37,6 +37,10 @@ MSM은 콘텐츠 배포를 자동화하기 위한 구성 가능한 프레임워�
 블루프린트 구성이 참조되지 않는 경우 롤아웃은 Live Copy 자체에서만 시작할 수 있으므로 기본적으로 소스에서 컨텐츠를 가져올 수 있습니다.
 
 Live Copy를 사용하여 새 사이트를 만들 때 전체 MSM 기능 세트를 사용할 수 있도록 블루프린트 구성을 만드는 것이 좋습니다.
+
+>[!NOTE]
+>
+> 권한 탭의 CUG는 Blueprint에서 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이 사항에 대해 계획하십시오.
 
 ## 구성 요소 및 컨테이너 동기화 {#components-and-container-synchronization}
 
