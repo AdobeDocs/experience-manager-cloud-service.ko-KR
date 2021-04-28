@@ -1,16 +1,16 @@
 ---
 title: 스마트 태그 지정 비디오 에셋
 description: Experience Manager은  [!DNL Adobe Sensei]을(를) 사용하여 상황에 맞는 및 설명형 스마트 태그를 비디오에 자동으로 추가합니다.
-feature: Smart Tags,Tagging
+feature: 스마트 태그,태그 지정
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
-
 
 # 스마트 태그 지정 비디오 자산 {#video-smart-tags}
 
@@ -64,7 +64,7 @@ DAM에 있는 기존 비디오 에셋은 자동으로 태그가 지정되지 않
 
 지정한 태그를 기준으로 검색 결과에 비디오 자산이 표시됩니다.
 
-검색 결과는 메타데이터에 검색된 키워드와 검색된 키워드로 태그가 지정된 스마트 비디오 자산의 조합입니다. 하지만 메타데이터 필드의 모든 검색어와 일치하는 검색 결과가 먼저 표시되고 스마트 태그의 검색어와 일치하는 검색 결과가 표시됩니다. 자세한 내용은 [스마트 태그 [!DNL Experience Manager] 검색 결과 이해](smart-tags.md#understandsearch)를 참조하십시오.
+검색 결과는 메타데이터에 검색된 키워드와 검색된 키워드로 태그가 지정된 스마트 비디오 자산의 조합입니다. 하지만 메타데이터 필드의 모든 검색어와 일치하는 검색 결과가 먼저 표시되고 스마트 태그의 검색어와 일치하는 검색 결과가 표시됩니다. 자세한 내용은 [스마트 태그 [!DNL Experience Manager] 검색 결과 이해](smart-tags.md#understand-search)를 참조하십시오.
 
 ## 비디오 스마트 태그 {#moderate-video-smart-tags} 중재
 
