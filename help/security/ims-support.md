@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
+source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 95%
+source-wordcount: '2009'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 95%
 * AEM as a Cloud Service에는 AEM 인스턴스 및 Adobe IMS(Identity Management System) 기반 인증을 위한 Admin Console 지원이 포함되어 있습니다.
 * 관리자는 Admin Console을 사용하여 모든 Experience Cloud 사용자를 중앙에서 관리할 수 있습니다.
 * 사용자 및 그룹을 AEM as a Cloud Service 인스턴스와 연결된 제품 프로필에 지정하여 해당 인스턴스에 로그인할 수 있도록 할 수 있습니다.
+
+>[!TIP]
+>
+>사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM에 대한 Adobe IMS를 Cloud Service으로 인증하는 방법과 Adobe IMS에 대한 방법에 대한 자세한 내용은 Experience League 강좌 [관리자용 AEM 액세스 권한 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)을 참조하십시오. 사용자, 사용자 그룹 및 제품 프로필은 AEM 및 해당 기능에 대한 액세스를 제어하는 데 사용됩니다. Adobe ID이 필요합니다.
 
 ## 주요 특징 {#key-highlights}
 
