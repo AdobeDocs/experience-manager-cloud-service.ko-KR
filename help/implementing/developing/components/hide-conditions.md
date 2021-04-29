@@ -1,14 +1,14 @@
 ---
 title: 숨기기 조건 사용
 description: 숨기기 조건을 사용하여 구성 요소 리소스가 렌더링되었는지 확인할 수 있습니다.
+exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 5%
 
 ---
-
 
 # 숨기기 조건 사용 {#using-hide-conditions}
 
@@ -50,7 +50,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 예 {#example}
 
-숨기기 조건의 예제는 AEM 및 [핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)에서 찾을 수 있습니다. 예를 들어 [목록 핵심 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)는 [WKND 자습서에 구현된 것으로 간주합니다.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+숨기기 조건의 예제는 AEM 및 [핵심 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)에서 찾을 수 있습니다. 예를 들어 [목록 핵심 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)는 [WKND 자습서에 구현된 것으로 간주합니다.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 [템플릿](/help/sites-cloud/authoring/features/templates.md) 작성자는 템플릿 편집기를 사용하여 페이지 작성자가 사용할 수 있는 목록 구성 요소의 옵션을 디자인 대화 상자에서 정의할 수 있습니다. 목록을 정적 목록으로 허용할지 여부, 하위 페이지 목록, 태그 있는 페이지 목록 등과 같은 옵션. 활성화 또는 비활성화할 수 있습니다.
 
@@ -72,7 +72,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
    ![숨기기 조건 평가](assets/hide-conditions-evaluation.png)
 
-1. `disableChildren`의 값이 디자인 구성에서 가져오며 `${cdDesign.disableChildren}` 식이 `false`로 평가됩니다. 즉, 옵션이 구성 요소의 일부로 렌더링되지 않습니다.
+1. `disableChildren`의 값이 디자인 구성에서 가져오며 `${cqDesign.disableChildren}` 식이 `false`로 평가됩니다. 즉, 옵션이 구성 요소의 일부로 렌더링되지 않습니다.
 
 1. 목록 구성 요소를 사용할 때 **하위 페이지** 옵션이 더 이상 페이지 작성자에 대해 렌더링되지 않습니다.
 
