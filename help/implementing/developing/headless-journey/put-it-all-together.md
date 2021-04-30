@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ AEM 헤드리스 여정의 이전 문서에서, [AEM Assets API를 통해 컨텐
 
 ## 목표 {#objective}
 
+* AEM의 로컬 개발 워크플로우란 무엇입니까?
 * AEM SDK를 설치하여 컨텐츠를 테스트하는 데 사용할 수 있는 로컬 개발 런타임을
-* 필요한 개발 툴에 대한 자세한 내용
-* 라이브하기 전에 로컬로 코드 및 컨텐츠 테스트
+* 로컬 개발 런타임 외에 작업하는 데 필요한 개발 툴에 대해 알아봅니다.
 
 ## 로컬 개발 워크플로 {#the-local-development-workflow}
 
