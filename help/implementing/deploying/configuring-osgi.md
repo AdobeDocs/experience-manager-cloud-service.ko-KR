@@ -1,15 +1,15 @@
 ---
 title: Adobe Experience Manager용 OSGi를 Cloud Service으로 구성
 description: '비밀 값 및 환경별 값이 있는 OSGi 구성 '
-feature: Deploying
+feature: 배포
+exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 translation-type: tm+mt
-source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
+source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Experience Manager에 대한 OSGi를 Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}으로 구성
 
@@ -219,6 +219,10 @@ use $[secret:SECRET_VAR_NAME]
 
 변수의 값은 2048자를 초과할 수 없습니다.
 
+>[!NOTE]
+>
+>변수 이름에 `INTERNAL_` 접두어가 붙은 이름은 Adobe에서 예약합니다. 이 접두사로 시작하는 모든 고객 세트 변수는 무시됩니다.
+
 ### 기본값 {#default-values}
 
 다음은 환경별 및 비밀 구성 값 모두에 적용됩니다.
@@ -252,7 +256,10 @@ AEM을 시작하기 전에 구성에 사용된 환경 변수를 설정하고 이
 OSGI 속성에 작성자와 게시에 서로 다른 값이 필요한 경우:
 
 * [런타임 모드 해상도 섹션](#runmode-resolution)에 설명된 대로 별도의 `config.author` 및 `config.publish` OSGi 폴더를 사용해야 합니다.
-* 독립적인 변수 이름을 사용해야 합니다. 변수 이름이 동일한 `author_<variablename>` 및 `publish_<variablename>` 접두어를 사용하는 것이 좋습니다.
+* 사용해야 하는 독립 변수 이름을 만드는 두 가지 옵션이 있습니다.
+   * 첫 번째 옵션인 권장 사항:다른 값을 정의하도록 선언된 모든 OSGI 폴더(예: `config.author` 및 `config.publish`)에서 동일한 변수 이름을 사용하십시오. 예
+      `$[env:ENV_VAR_NAME;default=<value>]`, 여기서 기본값은 해당 계층의 기본값(작성자 또는 게시)에 해당합니다. [클라우드 관리자 API](#cloud-manager-api-format-for-setting-properties) 또는 클라이언트를 통해 환경 변수를 설정할 때 이 [API 참조 설명서](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)에 설명된 대로 &quot;service&quot; 매개 변수를 사용하여 계층을 구별합니다. &quot;service&quot; 매개 변수는 변수 값을 적절한 OSGI 계층에 바인딩합니다.
+   * 두 번째 옵션 - `author_<samevariablename>` 및 `publish_<samevariablename>` 등의 접두어를 사용하여 서로 다른 변수를 선언하는 옵션
 
 ### 구성 예 {#configuration-examples}
 
