@@ -4,14 +4,14 @@ description: AEM 헤드리스 개발자 여정의 이 부분에서 Git에서 로
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-
 
 # 헤드리스 응용 프로그램 {#go-live}을 사용하여 라이브하는 방법
 
@@ -63,6 +63,8 @@ AEM 헤드리스 응용 프로그램의 가장 일반적인 배포 패턴은 AEM
 3. 캐싱 및 확장성 구성
 
 ## 프로덕션 {#deploy-to-production}에 배포
+
+모든 코드와 컨텐츠를 로컬로 테스트한 후 이제 AEM을 사용하여 프로덕션 배포를 시작할 준비가 되었습니다.
 
 ### 모델 구조와 GraphQL 출력 비교 {#structure-vs-output}
 
