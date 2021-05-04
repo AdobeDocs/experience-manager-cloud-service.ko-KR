@@ -3,10 +3,10 @@ title: 컨텐츠 전송 도구 개요
 description: 컨텐츠 전송 도구 개요
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 79%
+source-wordcount: '803'
+ht-degree: 81%
 
 ---
 
@@ -57,11 +57,12 @@ ht-degree: 79%
 
 ## 지침 및 우수 사례 {#best-practices}
 
->id=&quot;aemcloud_ctt_guidelines&quot;
->title=&quot;지침 및 우수 사례&quot;
->abstract=&quot;수정 정리 작업, 디스크 공간 고려 사항 등 컨텐츠 전송 도구를 사용하기 위한 검토 지침 및 모범 사례&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;내용 전송 도구 사용에 대한 중요 고려 사항&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;사용자 매핑 도구 사용에 대한 중요 고려 사항&quot;
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_guidelines"
+>title="지침 및 우수 사례"
+>abstract="수정 정리 작업, 디스크 공간 고려 사항 등 컨텐츠 전송 툴을 사용하기 위한 지침과 모범 사례를 검토합니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="컨텐츠 전송 도구 사용에 대한 중요 고려 사항"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="사용자 매핑 도구 사용에 대한 중요 고려 사항"
 
 컨텐츠 전송 도구를 사용하기 위한 지침과 우수 사례를 이해하려면 아래 섹션을 따르십시오.
 
