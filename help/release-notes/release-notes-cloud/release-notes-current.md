@@ -3,7 +3,7 @@ title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 9743b5a80a8554e375561093e8554455b3a6b8f5
+source-git-commit: 9a2b52a873e4e0662da252bba2af6ac2a46cd08e
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 3%
@@ -80,7 +80,7 @@ AEM Forms은 많은 조직에서 수년간 탁월한 온보딩 및 등록 경험
 * CIF 코어 구성 요소 v1.9.0 릴리스되었습니다. 자세한 내용은 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)를 참조하십시오.
 
 
-## Cloud Manager {#c-manager}
+## Cloud Manager {#cloud-manager}
 
 이 섹션에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2021.4.0 및 2021.3.0으로 간략하게 설명합니다.
 
