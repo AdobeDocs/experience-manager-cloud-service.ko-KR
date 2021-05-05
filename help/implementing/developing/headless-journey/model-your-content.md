@@ -4,14 +4,14 @@ description: AEM 헤드리스 개발자 여정의 이 부분에서 컨텐츠 조
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
 
 ---
-
 
 # 컨텐트 모델링하는 방법 {#model-your-content}
 
@@ -51,7 +51,7 @@ AEM 헤드리스 여정의 이전 문서인 [AEM 헤드리스를 사용하여 �
 
 ## 데이터 모델링 {#data-modeling}
 
-*밖은 아주 나쁜 세상입니다*.
+*밖은* 크고 나쁜 세상입니다.
 
 아닐 수도 있지만, 분명히 큰 ***복잡한*** 세계이며 데이터 모델링은 특정 목적에 필요한 특정 정보를 사용하여 매우 작은 하위 섹션의 간단한 표현을 정의하는 데 사용됩니다.
 
@@ -244,10 +244,10 @@ tbc...
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - 데이터 모델링 및 GraphQL을 비롯한 AEM 헤드리스 기능 사용에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.
 * [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)  작업 - 컨텐츠 조각에 대한 안내 페이지
    * [구성 브라우저의 컨텐츠 조각](/help/assets/content-fragments/content-fragments-configuration-browser.md)  - 구성 브라우저에서 컨텐츠 조각 기능을 활성화합니다.
    * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)  - 컨텐츠 조각 모델 생성 및 편집
    * [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)  - 컨텐츠 조각 만들기 및 작성이 페이지에서는 다른 세부 섹션으로 연결됩니다.
 * [AEM GraphQL 스키마](/help/implementing/developing/headless-journey/access-your-content.md)  - GraphQL이 모델을 인식하는 방법
 * [샘플 컨텐츠 조각 구조](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - 데이터 모델링 및 GraphQL을 비롯한 AEM 헤드리스 기능 사용에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.
