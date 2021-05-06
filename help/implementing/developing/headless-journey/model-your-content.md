@@ -1,14 +1,14 @@
 ---
 title: 컨텐트 모델링 방법
-description: AEM 헤드리스 개발자 여정의 이 부분에서 컨텐츠 조각 모델 및 컨텐츠 조각으로 데이터 모델링을 사용하여 AEM 헤드리스 전달용 컨텐츠를 모델링하는 방법을 살펴볼 수 있습니다.
+description: AEM 헤드리스 개발자 여정의 이 부분에서 컨텐츠 조각 모델 및 컨텐츠 조각으로 컨텐츠 모델링을 사용하여 AEM 헤드리스 전달을 위한 컨텐츠를 모델링하는 방법을 살펴볼 수 있습니다.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 1%
 
 ---
@@ -38,10 +38,10 @@ AEM 헤드리스 여정의 이전 문서인 [AEM 헤드리스를 사용하여 �
 
 * **대상**:초급
 * **목표**:컨텐츠 구조를 모델링한 다음 AEM 컨텐츠 조각 모델 및 컨텐츠 조각을 사용하여 해당 구조를 실현하는 방법을 살펴볼 수 있습니다.
-   * [데이터 모델링](#data-modeling)과 관련된 개념과 용어를 소개합니다.
-   * 헤드리스 컨텐츠 전달](#data-modeling-for-aem-headless)에 데이터 모델링이 필요한 이유를 알아봅니다.[
-   * AEM 컨텐츠 조각 모델](#create-structure-content-fragment-models)(및 [컨텐츠 조각](#use-content-to-author-content)을 사용하여 컨텐츠를 작성하는 방법에 대해 [학습합니다.)
-   * [컨텐트 모델 지정 방법 학습](#getting-started-examples);기본 견본과 원칙.
+   * 데이터/컨텐츠 모델링과 관련된 개념과 용어를 소개합니다.
+   * 헤드리스 컨텐츠 전달을 위해 컨텐츠 모델링이 필요한 이유를 살펴볼 수 있습니다.
+   * AEM 컨텐츠 조각 모델을 사용하여 이 구조를 실현하는 방법(및 컨텐츠 조각으로 컨텐츠를 작성함)을 알아봅니다.
+   * 콘텐츠를 모델링하는 방법 학습기본 견본과 원칙.
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ AEM 헤드리스 여정의 이전 문서인 [AEM 헤드리스를 사용하여 �
 >
 >AEM 헤드리스에서 사용하기 위해 데이터를 모델링할 때만 관심 있는 측면을 고려합니다.
 
-## 데이터 모델링 {#data-modeling}
+## 컨텐트 모델링 {#content-modeling}
 
 *밖은* 크고 나쁜 세상입니다.
 
 아닐 수도 있지만, 분명히 큰 ***복잡한*** 세계이며 데이터 모델링은 특정 목적에 필요한 특정 정보를 사용하여 매우 작은 하위 섹션의 간단한 표현을 정의하는 데 사용됩니다.
+
+>[!NOTE]
+>
+>AEM에서 컨텐츠를 처리할 때 데이터 모델링을 컨텐츠 모델링이라고 합니다.
 
 예:
 
@@ -91,7 +95,7 @@ AEM 헤드리스 여정의 이전 문서인 [AEM 헤드리스를 사용하여 �
 
 그런 다음 엔티티 간에 다양한 **관계**&#x200B;가 있습니다. 예를 들어, 보통 학교에는 한 명의 수석선생님만 있고, 많은 선생님들(그리고 보통 수석선생님은 선생님도 선생님이기도 합니다.)
 
-이 정보를 분석 및 정의하는 프로세스는 이러한 정보 사이의 관계와 함께 **데이터 모델링**&#x200B;이라고 합니다.
+이 정보를 분석 및 정의하는 프로세스는 이러한 정보 사이의 관계와 함께 **컨텐트 모델링**&#x200B;이라고 합니다.
 
 ### 기본 사항 {#basics}
 
@@ -128,9 +132,9 @@ AEM 헤드리스 여정의 이전 문서인 [AEM 헤드리스를 사용하여 �
 
 * 쿼리가 필요한 컨텐츠를 검색하기 위해 여러 중첩(참조된) 컨텐츠 조각에 액세스해야 하는 경우 성능에 심각한 영향을 줍니다.
 
-## AEM 헤드리스 {#data-modeling-for-aem-headless} 데이터 모델링
+## AEM 헤드리스 {#content-modeling-for-aem-headless} 컨텐츠 모델링
 
-데이터 모델링은 기존의 기술 집합이며, 관계 데이터베이스를 개발할 때 자주 사용되므로 AEM 헤드리스의 경우 어떤 의미가 있습니까?
+데이터 모델링은 기존의 일련의 기술이며, 관계 데이터베이스를 개발할 때 주로 사용되므로, AEM 헤드리스의 경우 컨텐트 모델링이 의미하는 것은 무엇입니까?
 
 ### 왜?{#why}
 
@@ -142,7 +146,7 @@ AEM 헤드리스 여정의 이전 문서인 [AEM 헤드리스를 사용하여 �
 
 AEM은 컨텐츠 조각을 사용하여 컨텐츠를 애플리케이션에 헤드리스 전달에 필요한 구조를 제공합니다.
 
-데이터 모델의 구조는 다음과 같습니다.
+컨텐트 모델의 구조는 다음과 같습니다.
 
 * 컨텐츠 조각 모델의 정의로 실현된 다음
 * 컨텐츠 생성에 사용되는 컨텐츠 조각의 기초로 사용됩니다.
@@ -173,7 +177,7 @@ AEM은 컨텐츠 조각을 사용하여 컨텐츠를 애플리케이션에 헤�
 1. **데이터** 유형을 사용하여 개별 속성을 정의할 수 있습니다.
 예를 들어 교사 이름을 포함하는 필드를 **Text**&#x200B;로 정의하고 해당 근무 연한을 **Number**&#x200B;로 정의합니다.
 1. 데이터 유형 **컨텐트 참조** 및 **조각 참조**&#x200B;를 사용하면 AEM 내의 다른 컨텐츠에 대한 관계를 만들 수 있습니다.
-1. **조각 참조** 데이터 유형을 사용하면 모델 유형에 따라 컨텐츠 조각을 중첩하여 여러 수준의 구조를 실현할 수 있습니다. 이는 데이터 모델링에 중요합니다.
+1. **조각 참조** 데이터 유형을 사용하면 모델 유형에 따라 컨텐츠 조각을 중첩하여 여러 수준의 구조를 실현할 수 있습니다. 이것은 컨텐트 모델링에 중요합니다.
 
 예:
 ![컨텐트 조각으로 컨텐트 모델링](assets/headless-modeling-01.png "컨텐트 조각을 사용하여 컨텐트 모델링")
@@ -250,4 +254,4 @@ tbc...
    * [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)  - 컨텐츠 조각 만들기 및 작성이 페이지에서는 다른 세부 섹션으로 연결됩니다.
 * [AEM GraphQL 스키마](/help/implementing/developing/headless-journey/access-your-content.md)  - GraphQL이 모델을 인식하는 방법
 * [샘플 컨텐츠 조각 구조](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - 데이터 모델링 및 GraphQL을 비롯한 AEM 헤드리스 기능 사용에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.
+* [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - 컨텐트 모델링 및 GraphQL을 비롯한 AEM 헤드리스 기능 사용에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.
