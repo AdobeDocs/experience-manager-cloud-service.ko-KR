@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 861ef15a0060d51fd32e2d056871d1679f77a21e
+source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 0%
+source-wordcount: '2181'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-[AEM 헤드리스 개발자 여정의 이 부분에서는 GraphQL 쿼리를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하는 방법을 알 수 있습니다.](overview.md)
+[AEM 헤드리스 개발자 여정의 이 부분에서는 GraphQL 쿼리를 사용하여 콘텐츠 조각의 콘텐츠에 액세스하고 이를 앱에 피드(헤드리스 배달)하는 방법을 배울 수 있습니다.](overview.md)
 
 ## 지금까지 스토리 {#story-so-far}
 
@@ -135,8 +135,6 @@ AEM GraphQL API의 사용 사례는 Cloud Service 환경으로 AEM의 유형에 
 
 **조각 참조**:
 
-* GraphQL과 함께 사용하는 경우에 특히 유용합니다.
-
 * 컨텐츠 조각 모델을 정의할 때 사용할 수 있는 특정 데이터 유형입니다.
 
 * 특정 컨텐츠 조각 모델에 따라 다른 조각을 참조합니다.
@@ -148,6 +146,24 @@ AEM GraphQL API의 사용 사례는 Cloud Service 환경으로 AEM의 유형에 
 ### JSON 미리 보기 {#json-preview}
 
 컨텐츠 조각 모델을 디자인하고 개발하는 데 도움이 되도록 컨텐츠 조각 편집기에서 JSON 출력을 미리 볼 수 있습니다.
+
+### 컨텐츠 조각 모델 및 컨텐츠 조각 만들기 {#creating-content-fragment-models-and-content-fragments}
+
+먼저 컨텐츠 조각 모델이 사이트에 대해 활성화되면 구성 브라우저에서 수행됩니다.
+
+![구성 정의](assets/cfm-configuration.png)
+
+그런 다음 컨텐츠 조각 모델을 모델링할 수 있습니다.
+
+![컨텐츠 조각 모델](assets/cfm-model.png)
+
+적절한 모델을 선택하면 컨텐츠 조각 편집기에서 편집을 위해 컨텐츠 조각이 열립니다.
+
+![컨텐츠 조각 편집기](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>컨텐츠 조각 작업을 참조하십시오.
 
 ## 컨텐츠 조각에서 GraphQL 스키마 생성 {#graphql-schema-generation-content-fragments}
 
@@ -239,9 +255,98 @@ AEM GraphQL에서 표준 GraphiQL 인터페이스를 구현하면 쿼리를 직�
 
 ![GraphiQL ](assets/graphiql-interface.png "인터페이스 그래픽QL 인터페이스")
 
-## AEM GraphQL API 사용 {#using-aem-graphiql}
+## 실제로 AEM GraphQL API {#actually-using-aem-graphiql} 사용
 
-AEM GraphQL API 사용에 대한 자세한 내용과 필요한 요소를 구성하는 방법은 다음을 참조할 수 있습니다.
+실제로 쿼리에 AEM GraphQL API를 사용하려면 두 가지 기본 컨텐츠 조각 모델 구조를 사용할 수 있습니다.
+
+* 회사
+   * 이름
+   * CEO(개인)
+   * 직원(개인)
+* 개인
+   * 이름
+   * 이름
+
+보시다시피 CEO 및 직원 필드는 개인 조각을 참조합니다.
+
+조각 모델이 사용됩니다.
+
+* 컨텐츠 조각 편집기에서 컨텐츠를 작성할 때
+* 쿼리할 GraphQL 스키마를 생성하려면
+
+GraphiQL 인터페이스에서 쿼리를 입력할 수 있습니다. 예를 들면 다음과 같습니다.
+
+* `http://localhost:4502/content/graphiql.html `
+
+간단한 쿼리는 회사 스키마에 있는 모든 항목의 이름을 반환하는 것입니다. 여기에서 모든 회사 이름 목록을 요청합니다.
+
+```xml
+query {
+  companyList {
+    items {
+      name
+    }
+  }
+}
+```
+
+약간 더 복잡한 쿼리는 &quot;Job&quot;이라는 이름이 없는 모든 사람을 선택하는 것입니다. 이렇게 하면 Job이라는 이름이 없는 모든 사용자에 대해 필터링됩니다. EQUALS_NOT 연산자로 수행할 수 있습니다(더 많은 항목이 있음).
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+보다 복잡한 쿼리를 작성할 수도 있습니다. 예를 들어 &quot;Smith&quot;라는 이름의 직원이 한 명 이상 있는 모든 회사에 대해 질의합니다. 이 쿼리는 &quot;Smith&quot;라는 이름의 모든 사용자에 대한 필터링을 보여주고 중첩된 단편에서 정보를 반환합니다.
+
+```xml
+query {
+  companyList(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    items {
+      name
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- need code / curl / cli examples-->
+
+AEM GraphQL API 사용에 대한 자세한 내용과 필요한 요소를 구성하는 방법은 다음을 참조하십시오.
 
 * AEM에서 GraphQL 사용 방법 학습
 * 샘플 컨텐츠 조각 구조
