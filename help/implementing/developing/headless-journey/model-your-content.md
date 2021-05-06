@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 1%
+source-wordcount: '1752'
+ht-degree: 2%
 
 ---
 
@@ -212,6 +212,20 @@ AEM에서는 컨텐츠를 모델링할 수 있도록 다음과 같은 데이터 
    * 참조된 조각을 직접 편집합니다.
    * 적절한 모델을 기반으로 새 컨텐츠 조각 만들기
 
+### 컨텐츠 조각 모델 {#creating-content-fragment-models} 만들기
+
+먼저 컨텐츠 조각 모델이 사이트에 대해 활성화되면 구성 브라우저에서 수행됩니다.
+
+![구성 정의](assets/cfm-configuration.png)
+
+그런 다음 컨텐츠 조각 모델을 모델링할 수 있습니다.
+
+![컨텐츠 조각 모델](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>컨텐츠 조각 작업을 참조하십시오.
+
 ## 모델을 사용하여 컨텐츠 조각 {#use-content-to-author-content}과(와) 함께 컨텐츠 작성
 
 컨텐츠 조각은 항상 컨텐츠 조각 모델을 기반으로 합니다. 모델은 구조를 제공하며 조각은 컨텐츠를 보유합니다.
@@ -231,6 +245,16 @@ AEM에서는 컨텐츠를 모델링할 수 있도록 다음과 같은 데이터 
 * 메타데이터를 편집합니다.
 * 트리 구조를 표시합니다.
 * JSON 표현을 미리 봅니다.
+
+### 컨텐츠 조각 만들기 {#creating-content-fragments}
+
+적절한 모델을 선택하면 컨텐츠 조각 편집기에서 편집을 위해 컨텐츠 조각이 열립니다.
+
+![컨텐츠 조각 편집기](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>컨텐츠 조각 작업을 참조하십시오.
 
 ## 일부 예 시작하기 {#getting-started-examples}
 
