@@ -1,16 +1,16 @@
 ---
 title: 컨텐츠 조각 모델
 description: 컨텐츠 조각 모델이 AEM에서 헤드리스 컨텐츠의 기초로 사용되는 방식과 구조화된 컨텐츠가 포함된 컨텐츠 조각을 생성하는 방법을 살펴볼 수 있습니다.
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 25%
+source-wordcount: '2309'
+ht-degree: 24%
 
 ---
-
 
 # 컨텐츠 조각 모델 {#content-fragment-models}
 
@@ -61,7 +61,7 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초 역할을 하
    >
    >필드가 **필수**&#x200B;이면 왼쪽 창에 표시되는 **레이블**&#x200B;이 지정된 레이블은 별표(*****)로 표시됩니다.
 
-   ![속성](assets/cfm-models-03.png)
+![속성](assets/cfm-models-03.png)
 
 1. **필드를 추가하려면**
 
@@ -111,6 +111,7 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초 역할을 하
    * 조각 작성자가 태그 영역에 액세스하고 선택할 수 있습니다.
 * **컨텐츠 참조**
    * 모든 유형의 다른 컨텐츠를 참조합니다.은(는) [중첩 컨텐트 만들기](#using-references-to-form-nested-content)에 사용할 수 있습니다.
+   * 이미지가 참조된 경우 축소판을 표시하도록 선택할 수 있습니다
 * **조각 참조**
    * 기타 컨텐츠 조각 참조은(는) [중첩 컨텐트 만들기](#using-references-to-form-nested-content)에 사용할 수 있습니다.
    * 조각 작성자가 다음을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
@@ -121,6 +122,13 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초 역할을 하
       * 다른 서비스에서 복사/붙여 넣은 JSON을 AEM에 저장하도록 허용하려면.
       * JSON은 전달되고 GraphQL에서 JSON으로 출력됩니다.
       * 컨텐츠 조각 편집기에 JSON 구문 강조, 자동 완성 및 오류 강조 표시가 포함되어 있습니다.
+* **탭 플레이스홀더**
+   * 컨텐츠 조각 컨텐츠를 편집할 때 사용할 탭을 소개합니다.
+콘텐츠 데이터 유형 목록 섹션을 구분하면서 모델 편집기에서 구분선으로 표시됩니다. 각 인스턴스는 새 탭의 시작을 나타냅니다.
+조각 편집기에서 각 인스턴스가 탭으로 나타납니다.
+
+      >[!NOTE]
+      이 데이터 유형은 서식에 순전히 사용되며 AEM GraphQL 스키마에서 무시됩니다.
 
 ## 속성 {#properties}
 
@@ -165,6 +173,8 @@ UniqueContent(특정 필드의 경우)는 현재 모델에서 생성된 모든 �
    * 아직 없는 경우 필드의 속성 이름이 번역 구성 `/content/dam/<tenant>` 컨텍스트에 추가되어 있는지 확인합니다.
    * GraphQL의 경우:[컨텐츠 조각] 필드의 `<translatable>` 속성을 `yes`로 설정하여 번역 가능한 컨텐츠만 포함하는 JSON 출력에 대해 GraphQL 쿼리 필터를 허용합니다.
 
+* 특정 데이터 유형 및 해당 속성에 대한 자세한 내용은 **[내용 참조](#content-reference)**&#x200B;를 참조하십시오.
+
 * 특정 데이터 유형 및 해당 속성에 대한 자세한 내용은 **[조각 참조(중첩된 조각)](#fragment-reference-nested-fragments)**&#x200B;을 참조하십시오.
 
 ## 유효성 검사 {#validation}
@@ -181,12 +191,6 @@ UniqueContent(특정 필드의 경우)는 현재 모델에서 생성된 모든 �
    * 미리 정의된 폭 및/또는 높이 범위(픽셀 단위) 내의 이미지만 참조할 수 있습니다.
 * **조각 참조**
    * 특정 컨텐츠 조각 모델을 테스트합니다.
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## 참조 기능을 사용하여 중첩 컨텐트 {#using-references-to-form-nested-content} 만들기
 
@@ -219,12 +223,14 @@ AEM은 다음과 같은 경우에 재발을 보호할 수 있습니다.
 
 표준 속성 외에 다음을 지정할 수 있습니다.
 
-* 참조된 콘텐츠에 대한 **루트 경로**.
-* 참조할 수 있는 컨텐츠 유형입니다.
-* 파일 크기에 대한 제한 사항.
-* 이미지 제한.
-   <!-- Check screenshot - might need update -->
-   ![컨텐츠 참조](assets/cfm-content-reference.png)
+* 참조된 콘텐츠에 대한 **루트 경로**
+* 참조할 수 있는 컨텐츠 유형
+* 파일 크기에 대한 제한 사항
+* 이미지가 참조된 경우:
+   * 썸네일 표시
+   * 높이 및 너비의 이미지 제한
+
+![컨텐츠 참조](assets/cfm-content-reference.png)
 
 ### 조각 참조(중첩된 조각) {#fragment-reference-nested-fragments}
 
@@ -272,7 +278,6 @@ type CompanyModel {
 
    * **fragmentreferencomposite**  - 조각 작성자가 여러 조각을 선택하여 합성을 작성할 수 있습니다.
 
-   <!-- Check screenshot - might need update -->
    ![조각 참조](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -405,17 +410,3 @@ type CompanyModel {
    * **태그**
    * **설명**
    * **이미지 업로드**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
