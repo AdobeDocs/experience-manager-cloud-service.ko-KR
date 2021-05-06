@@ -1,15 +1,15 @@
 ---
 title: 컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증
 description: 헤드리스 컨텐츠 전달을 보호하기 위해 원격 AEM GraphQL 쿼리에 필요한 인증을 파악합니다.
-feature: Content Fragments,GraphQL API
+feature: 컨텐츠 조각,GraphQL API
+exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # 원격 AEM GraphQL 인증에 대한 컨텐츠 조각 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >테스트 및 개발의 경우 [GraphiQL 인터페이스](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) 인터페이스를 사용하여 AEM GraphQL API에 직접 액세스할 수도 있습니다.
 
-인증을 위해 제3자 서비스는 [액세스 토큰](#access-token)을 사용해야 합니다. 이 토큰은 GraphQL 요청](#use-access-token-in-graphql-request)에서 [사용될 수 있습니다.
+인증을 위해 제3자 서비스는 [액세스 토큰](#retrieving-access-token)을 검색해야 합니다. 이 토큰은 GraphQL 요청](#use-access-token-in-graphql-request)에서 [사용될 수 있습니다.
 
 ## 액세스 토큰 {#retrieving-access-token} 검색
 
