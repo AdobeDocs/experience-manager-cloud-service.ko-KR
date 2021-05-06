@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 2021.2.0.'
+exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 translation-type: tm+mt
-source-git-commit: 2920ab75fca1eaa3b8e3b1f75e9126632a026b6b
+source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 4%
 
 ---
-
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 릴리스 노트 {#release-notes}
@@ -166,4 +166,3 @@ AEM의 Cloud Service 2021.2.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 
 * Repository Modernizer에서 수행한 몇 가지 버그 수정.
 [GitHub 리소스를 참조하십시오.자세한 내용은 aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)을 참조하십시오.
-
