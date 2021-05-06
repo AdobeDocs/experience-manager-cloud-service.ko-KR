@@ -6,10 +6,10 @@ user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데�
 feature: 배포
 role: Architect, Developer
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 29%
+source-wordcount: '677'
+ht-degree: 30%
 
 ---
 
@@ -78,7 +78,8 @@ ht-degree: 29%
       + [IP 허용 목록 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [IP 허용 목록 상태 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + 클라우드 관리자 {#release-notes-cloud-manager} 릴리스 노트
-      + [현재 릴리스 노트(2021.4.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [현재 릴리스 노트(2021.5.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [2021.4.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [2021.3.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
       + [2021.2.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [2021.1.0 릴리스 노트](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
