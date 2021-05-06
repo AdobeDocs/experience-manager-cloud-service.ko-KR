@@ -3,10 +3,10 @@ title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.5.0
 description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.5.0
 feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: 8428c46295020c40d62311a86e1691b08fd8a00d
+source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '386'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +35,11 @@ AEM의 Cloud Service 2021.5.0 Cloud Manager에 대한 릴리스 날짜는 2021�
 
 * 이제 코드 추가 기능은 편집 프로그램 워크플로우 동안 샌드박스 프로그램에 적용할 수 있습니다.
 
-* 편집 프로그램 환경이 새로 고침되었습니다.
+* *편집 프로그램* 환경이 새로 고침되었습니다.
 
 * 환경 세부 사항 페이지의 도메인 이름 테이블에는 페이지 매김을 통해 최대 250개의 도메인 이름이 표시됩니다.
 
-* 프로그램 추가 및 프로그램 편집 워크플로우에 있는 솔루션 탭은 솔루션에 대해 하나만 사용할 수 있는 경우에도 솔루션을 표시합니다.
+* **프로그램 추가** 및 **프로그램 편집** 워크플로우에 있는 **솔루션 및 추가 기능** 탭은 솔루션에 대해 하나만 사용할 수 있는 경우에도 표시됩니다.
 
 * 빌드에서 배포된 콘텐츠 패키지를 생성하지 않았을 때의 빌드 단계 로그의 오류 메시지가 명확하지 않았습니다.
 
