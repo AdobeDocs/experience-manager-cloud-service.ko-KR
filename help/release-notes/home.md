@@ -1,20 +1,20 @@
 ---
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
-description: 'Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트. '
+description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
+exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 translation-type: tm+mt
-source-git-commit: ba80e5753b3b761c15805d8caf8ed9f87fc551dd
+source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
 
 ---
 
-
 # 릴리스 정보 {#release-information}
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2021.03.0 |
+| 버전 | 2021.04.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
