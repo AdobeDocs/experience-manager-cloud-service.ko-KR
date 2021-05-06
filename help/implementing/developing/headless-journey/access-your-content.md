@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2120'
 ht-degree: 1%
 
 ---
@@ -146,24 +146,6 @@ AEM GraphQL API의 사용 사례는 Cloud Service 환경으로 AEM의 유형에 
 ### JSON 미리 보기 {#json-preview}
 
 컨텐츠 조각 모델을 디자인하고 개발하는 데 도움이 되도록 컨텐츠 조각 편집기에서 JSON 출력을 미리 볼 수 있습니다.
-
-### 컨텐츠 조각 모델 및 컨텐츠 조각 만들기 {#creating-content-fragment-models-and-content-fragments}
-
-먼저 컨텐츠 조각 모델이 사이트에 대해 활성화되면 구성 브라우저에서 수행됩니다.
-
-![구성 정의](assets/cfm-configuration.png)
-
-그런 다음 컨텐츠 조각 모델을 모델링할 수 있습니다.
-
-![컨텐츠 조각 모델](assets/cfm-model.png)
-
-적절한 모델을 선택하면 컨텐츠 조각 편집기에서 편집을 위해 컨텐츠 조각이 열립니다.
-
-![컨텐츠 조각 편집기](assets/cfm-editor.png)
-
->[!NOTE]
->
->컨텐츠 조각 작업을 참조하십시오.
 
 ## 컨텐츠 조각에서 GraphQL 스키마 생성 {#graphql-schema-generation-content-fragments}
 
