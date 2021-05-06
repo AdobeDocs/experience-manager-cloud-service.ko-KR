@@ -3,10 +3,10 @@ title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.5.0
 description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2021.5.0
 feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
+source-git-commit: 8428c46295020c40d62311a86e1691b08fd8a00d
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,6 +14,9 @@ ht-degree: 2%
 # Adobe Experience Manager에서 Cloud Service 2021.5.0 {#release-notes}으로 Cloud Manager에 대한 릴리스 노트
 
 이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2021.5.0으로 간략하게 설명합니다.
+
+>[!NOTE]
+>Adobe Experience Manager의 현재 릴리스 노트를 Cloud Service으로 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 클릭하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
