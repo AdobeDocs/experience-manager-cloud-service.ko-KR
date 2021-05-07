@@ -2,16 +2,21 @@
 title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 feature: Dispatcher
+exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 translation-type: tm+mt
-source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '4169'
+source-wordcount: '4211'
 ht-degree: 5%
 
 ---
 
-
 # 클라우드의 디스패처 {#Dispatcher-in-the-cloud}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_dispoverview"
+>title="클라우드의 디스패처"
+>abstract="이 섹션에서는 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 Cloud 환경에 배포하기 전에 이를 로컬로 확인하고 실행하는 방법에 대해 설명합니다. 또한 클라우드 환경의 디버깅에 대해서도 설명합니다."
 
 ## Apache 및 Dispatcher 구성 및 테스트 {#apache-and-dispatcher-configuration-and-testing}
 
