@@ -1,14 +1,14 @@
 ---
 title: 저장소 현대화 프로그램
 description: 저장소 현대화 프로그램
+exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 0ed18aad48f33fb0504d59a5f583b5a3dbea59f6
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 4%
 
 ---
-
 
 # 저장소 현대화 프로그램 {#repo-modernizer}
 
@@ -22,7 +22,7 @@ Repository Modernizer는 다음 배포 구조를 생성하여 호환되는 AEM C
 
 * `ui.apps` 패키지 배포  `/apps` 및 모든 코드 포함
 
-* `ui.content` 런타임 쓰기 가능 영역에 패키지 배포(예: `/content`,  `/conf`또는  `/home`  `/apps`기타)를 포함하고 모든 컨텐트 및 구성을 포함합니다.
+* `ui.content` 패키지는 런타임 쓰기 가능 영역(예: `/content`,  `/conf`또는  `/home`  `/apps`기타)를 포함하고 모든 컨텐트 및 구성을 포함합니다.
 
 * `all` package는 하위 패키지 `ui.apps` 와 `ui.content`를 포함하는 컨테이너 패키지입니다.
 
@@ -31,7 +31,9 @@ Repository Modernizer는 다음 배포 구조를 생성하여 호환되는 AEM C
 
 ## 저장소 현대화 사용 {#using-repo-modernizer}
 
-* Adobe I/O CLI 사용:Repository Modernizer를 `aio-cli-plugin-aem-cloud-service-migration`(Adobe I/O CLI용 Cloud Service 코드 리팩토링 플러그인으로 AEM)을 통해 사용하는 것이 좋습니다.
+>[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+
+* Adobe I/O CLI를 통해:`aio-cli-plugin-aem-cloud-service-migration`(Adobe I/O CLI용 Cloud Service 코드 리팩토링 플러그인으로 AEM)을 통해 Repository Modernizer를 사용하는 것이 좋습니다.
 
    **[Git 리소스를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 플러그인을 설치하고 사용하는 방법에 대해 학습합니다.
 
