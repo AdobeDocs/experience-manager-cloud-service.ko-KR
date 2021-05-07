@@ -4,16 +4,23 @@ description: AEM as a Cloud Service에서 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 3d0f58754aaff3a0c505f60a9c24b4712c2e4c30
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 7%
+source-wordcount: '808'
+ht-degree: 9%
 
 ---
 
 # AEM as a Cloud Service에서 CDN {#cdn}
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_cdn"
+>title="AEM as a Cloud Service에서 CDN"
+>abstract="Cloud Service으로 AEM은 내장된 CDN과 함께 제공됩니다. 이 기능은 브라우저 근처 가장자리에 있는 CDN 노드에서 캐시 가능한 컨텐츠를 전달하여 지연을 줄이는 데 주된 목적이 있습니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다."
+
 Cloud Service으로 AEM은 내장된 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 컨텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
+
 
 AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 만족합니다. 게시 티어의 경우, 고객은 선택적으로 관리해야 하는 자체 CDN에서 해당 CDN을 가리킬 수 있습니다. 포기하기 어려운 기존 CDN 벤더와의 통합을 비롯하여, 이에 제한되지 않고, 특정 사전 요구 사항을 충족하는 것을 기준으로, 케이스별로 허용됩니다.
 
