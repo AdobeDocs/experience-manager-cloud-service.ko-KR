@@ -3,15 +3,19 @@ title: 사용자 지정 코드 품질 규칙 - Cloud Services
 description: 사용자 지정 코드 품질 규칙 - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '3278'
+source-wordcount: '3302'
 ht-degree: 0%
 
 ---
 
 # 사용자 지정 코드 품질 규칙 {#custom-code-quality-rules}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_customcodequalityrules"
+>title="사용자 지정 코드 품질 규칙"
+>abstract="이 페이지에서는 AEM Engineering의 우수 사례를 기반으로 만들어진 Cloud Manager가 실행하는 사용자 지정 코드 품질 규칙에 대해 설명합니다."
 
 이 페이지에서는 AEM Engineering의 우수 사례를 기반으로 만들어진 Cloud Manager가 실행하는 사용자 지정 코드 품질 규칙에 대해 설명합니다.
 
