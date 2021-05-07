@@ -1,16 +1,21 @@
 ---
 title: UI 테스트 - Cloud Services
 description: UI 테스트 - Cloud Services
+exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 translation-type: tm+mt
-source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
-
 # UI 테스트 {#ui-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_uitesting"
+>title="UI 테스트"
+>abstract="UI 테스트는 Selenium 기반 테스트로, Java 및 Maven, Node 및 WebDriver.io와 같은 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 광범위한 선택을 할 수 있도록 Docker 이미지에 패키지되어 있습니다. Docker 이미지는 표준 도구로 만들 수 있지만 실행 중에는 특정 규칙을 준수해야 합니다. Docker 이미지를 실행하면 Selenium 서버가 자동으로 프로비저닝됩니다. 아래에 설명된 런타임 규칙을 통해 테스트 코드가 Selenium 서버와 테스트 중인 AEM 인스턴스 모두에 액세스할 수 있습니다."
 
 UI 테스트는 Selenium 기반 테스트로, Java 및 Maven, Node 및 WebDriver.io와 같은 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)에서 광범위한 선택을 할 수 있도록 Docker 이미지에 패키지되어 있습니다. Docker 이미지는 표준 도구로 만들 수 있지만 실행 중에는 특정 규칙을 준수해야 합니다. Docker 이미지를 실행하면 Selenium 서버가 자동으로 프로비저닝됩니다. 아래에 설명된 런타임 규칙을 통해 테스트 코드가 Selenium 서버와 테스트 중인 AEM 인스턴스 모두에 액세스할 수 있습니다.
 
