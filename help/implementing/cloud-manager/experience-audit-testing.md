@@ -1,16 +1,21 @@
 ---
 title: 경험 감사 테스트 - Cloud Services
 description: 경험 감사 테스트 - Cloud Services
+exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 translation-type: tm+mt
-source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 
-
 # 경험 감사 테스트 {#experience-audit-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_expaudittesting"
+>title="경험 감사 테스트"
+>abstract="경험 감사는 Google의 오픈 소스 툴인 Google Lighthouse를 기반으로 하는 Cloud Manager Sites Production 파이프라인에서 사용할 수 있는 기능입니다. 이 기능은 모든 Cloud Manager 프로덕션 파이프라인에서 활성화됩니다."
 
 경험 감사는 Google의 오픈 소스 툴인 Google Lighthouse를 기반으로 하는 Cloud Manager Sites Production 파이프라인에서 사용할 수 있는 기능입니다. 이 기능은 모든 Cloud Manager 프로덕션 파이프라인에서 활성화됩니다.
 
@@ -61,4 +66,3 @@ Cloud Manager의 경험 감사에서는 사이트의 최종 사용자가 디지�
 개별 페이지의 세부 사항을 클릭하면 평가된 페이지 요소에 대한 정보와 개선 기회가 감지된 경우 문제를 수정하는 지침을 제공합니다. 테스트 및 관련 지침의 세부 사항은 Google Lighthouse에서 제공합니다.
 
 ![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
-
