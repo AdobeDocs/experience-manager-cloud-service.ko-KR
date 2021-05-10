@@ -3,9 +3,9 @@ title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -57,6 +57,12 @@ Cloud Service으로 AEM을 사용하는 Adobe은 Cloud Manager에서 CI/CD 파�
 그러면 `ui.apps/src/main/content/jcr_root` 아래로 이동해야 합니다. 현재 하위 루트 폴더는 지원되지 않습니다.
 
 위 샘플의 패키지는 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`으로 빌드됩니다.
+
+>[!NOTE]
+>
+>색인 정의를 포함하는 모든 콘텐츠 패키지는 `/META-INF/vault/properties.xml`에 있는 콘텐츠 패키지의 속성 파일에 다음 속성을 설정해야 합니다.
+>
+>`noIntermediateSaves=true`
 
 ### 인덱스 정의 배포 {#deploying-index-definitions}
 
