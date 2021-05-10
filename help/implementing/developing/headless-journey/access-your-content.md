@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2155'
 ht-degree: 1%
 
 ---
@@ -239,6 +239,14 @@ AEM GraphQL에서 표준 GraphiQL 인터페이스를 구현하면 쿼리를 직�
 
 ## 실제로 AEM GraphQL API {#actually-using-aem-graphiql} 사용
 
+콘텐츠에 대한 쿼리를 시작하기 전에 다음 작업을 수행해야 합니다.
+
+* 끝점 사용
+   * 도구 사용 -> 사이트 -> GraphQL
+
+* GraphiQL 설치(필요한 경우)
+   * 전용 패키지로 설치
+
 실제로 쿼리에 AEM GraphQL API를 사용하려면 두 가지 기본 컨텐츠 조각 모델 구조를 사용할 수 있습니다.
 
 * 회사
@@ -346,6 +354,8 @@ AEM GraphQL API 사용에 대한 자세한 내용과 필요한 요소를 구성�
    * [GraphQL Java 라이브러리](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [AEM에서 GraphQL 사용 방법 학습](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [GraphQL 끝점 활성화](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [AEM GraphiQL 인터페이스 설치](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [샘플 컨텐츠 조각 구조](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEM에서 GraphQL 사용 방법 학습 - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    * [샘플 쿼리 - 단일 특정 도시 조각](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
