@@ -5,9 +5,9 @@ feature: 360 VR 비디오
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/ass
 
 ## 360 비디오 실행 중 {#video-in-action}
 
-[Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)을 눌러 브라우저 창을 열고 360도 비디오를 보십시오. 비디오를 재생하는 동안 포인터를 새 위치로 드래그하여 보기 각도를 변경합니다.
+[Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)을 눌러 브라우저 창을 열고 360도 비디오를 보십시오. 비디오를 재생하는 동안 포인터를 새 위치로 드래그하여 보기 각도를 변경합니다.
 
 ![360 비디오 ](assets/6_5_360videoiss_simplified.png)
 *샘플스페이스 스테이션 360의 비디오 프레임*
@@ -93,7 +93,7 @@ Start by uploading 360 Videos.
 
 ## 360 비디오 미리 보기 {#previewing-video}
 
-미리 보기를 사용하여 360 비디오가 고객에게 어떤 모습인지 보고 예상대로 작동하는지 확인할 수 있습니다.
+미리 보기를 사용하여 360 비디오가 고객에게 어떻게 표시되고 예상대로 작동하는지 확인할 수 있습니다.
 
 [뷰어 사전 설정 편집](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets)을 참조하십시오.
 
