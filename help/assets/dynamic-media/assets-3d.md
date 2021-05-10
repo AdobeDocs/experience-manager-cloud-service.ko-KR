@@ -9,9 +9,9 @@ feature: 3D 자산
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2248'
 ht-degree: 4%
 
 ---
@@ -250,8 +250,8 @@ Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용�
 
 **정적 Dynamic Media 3D 자산을 게시하려면:**
 
-1. 3D 자산(GLB, OBJ 또는 STL 파일 형식)을 열어 세부 정보 페이지에서 볼 수 있습니다.
-1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 누릅니다.
+1. 3D 에셋(GLB, OBJ 또는 STL 파일 형식)을 엽니다.
+1. 세부 사항 페이지의 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 탭합니다.
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
