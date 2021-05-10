@@ -6,9 +6,9 @@ feature: 이미지 사전 설정,뷰어 사전 설정
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3435'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ ht-degree: 1%
 
 [!DNL Dynamic Media]의 **[!UICONTROL 일괄 세트 사전 설정]** 페이지에서 일괄 세트 사전 설정을 생성, 편집 또는 삭제하고, 일괄 처리 집합 사전 설정을 자산 폴더에 적용하거나 자산 폴더에서 제거할 수 있습니다. 양식 필드 드롭다운 목록을 사용하여 일괄 처리 세트 사전 설정을 정의하거나 일반 표현식 구문을 입력할 수 있는 **[!UICONTROL 원시 코드]** 필드를 사용할 수 있습니다.
 
-필요한 만큼 일괄 세트 사전 설정을 만들어 필요한 모든 에셋 인제스트 작업을 처리할 수 있습니다.
+필요한 모든 자산 인제스트 작업을 덮도록 일괄 세트 사전 설정을 여러 개 만들 수 있습니다.
 
-**자산 이름 지정 규칙 정보**
+### 자산 이름 지정 규칙 정보
 
 **[!UICONTROL 일괄 세트 사전 설정]** 페이지의 **[!UICONTROL 자산 이름 지정 규칙]** 영역에는 일괄 세트 사전 설정을 정의하는 데 사용할 수 있는 두 개의 요소가 있습니다.**[!UICONTROL 일치]** 및 **[!UICONTROL 기본 이름]**&#x200B;입니다. 이러한 요소를 사용하면 이름 지정 규칙을 정의하고 해당 규칙이 포함된 세트의 이름을 지정하는 데 사용되는 규칙의 일부를 식별할 수 있습니다.<!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 `(\w+)-\w+-\w+`
 
-**시퀀스 순서 정보**
+### 시퀀스 순서 정보
 
 이미지 세트 또는 스핀 세트가 [!DNL Dynamic Media]으로 그룹화된 후 이미지가 표시되는 순서를 선택적으로 정의할 수 있습니다. 기본적으로 자산은 영숫자 순서로 정렬됩니다. 그러나, 정규 표현식의 쉼표로 구분된 목록을 사용하여 순서를 정의할 수 있습니다.
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 **이미지 세트 또는 스핀 세트에 대한 일괄 세트 사전 설정을 만들려면:**
 
-1. Adobe Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 배치 집합 사전 설정]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 일괄 세트 사전 설정]**&#x200B;으로 이동합니다.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ ht-degree: 1%
 | 파생된 자산 포함 | 선택 사항입니다. [!DNL Dynamic Media]의 IPS(이미지 프로덕션 시스템)에 스핀 세트 또는 이미지 세트와 함께 생성 또는 &quot;파생&quot; 이미지가 포함되게 하려면 **[!UICONTROL Yes]**(기본값)을 선택합니다. 파생된 자산은 사용자가 직접 업로드하지 않은 이미지입니다. 대신, 마스터 자산이 업로드될 때 IPS에 의해 자산이 생성되었습니다. 예를 들어 PDF가 [!DNL Dynamic Media]에 업로드될 때 PDF의 페이지에서 IPS가 생성된 이미지 자산은 파생된 자산으로 간주됩니다. |
 | 대상 폴더 | 선택 사항입니다. 많은 수의 이미지 세트 또는 스핀 세트를 정의할 경우 Adobe은 이러한 세트를 자산 자체가 포함된 폴더와 구분하도록 권장합니다. 이와 같이 이미지 세트 또는 스핀 세트 폴더를 만들고 응용 프로그램을 리디렉션하여 여기에서 생성된 일괄 세트 세트를 배치합니다.<br>이러한 경우 Experience Manager 자산 폴더 구조(`/content/dam`)에 일괄 세트 사전 설정이 활성 상태인 폴더를 지정합니다. 폴더가 대상 폴더로 허용하도록 [!DNL Dynamic Media] 동기화를 활성화해야 합니다. Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)의 폴더 수준에서 [선택적 게시 구성을 참조하십시오.<br>폴더의 속성을 통해 사전 설정을 적용하는 경우 두 개 이상의 폴더에 주어진 일괄 세트 사전 설정이 할당될 수  **[!UICONTROL 있습니다]**. 자산 폴더의 속성 페이지](#apply-bsp-to-folders-via-properties)에서 배치 집합 사전 설정 적용을 참조하십시오.[<br>폴더를 지정하지 않으면 업로드한 자산 폴더와 동일한 폴더에 일괄 세트 사전 설정 생성 이미지 세트 또는 스핀 세트가 만들어집니다. |
 | **[!UICONTROL 명명 규칙 설정]** |  |
-| 접두어<br>또는<br>접미어 | 선택 사항입니다. 각 필드에 접두어, 접미어 또는 두 가지 모두를 입력합니다.<br>접두어 및 접미어 필드를 사용하면 특정 컨텐츠 세트에 대한 대체 사용자 정의 파일 이름 지정 규칙을 사용하여 일괄 세트 사전 설정을 여러 개 만들 수 있습니다. 이 방법은 회사의 정의된 기본 이름 지정 체계에 대한 예외가 있는 경우에 특히 유용합니다.<br>접두어나 접미어는 [에셋 이름 지정]  **** 규칙에서 정의하는  **[!UICONTROL 기준 이름에]** 추가됩니다. 접두어나 접미어를 추가하면 이미지 세트 또는 스핀 세트가 다른 자산과 독립적으로 단독 및 만들어지도록 할 수 있습니다. 또한 다른 사람이 파일 유형을 파악하는 데 도움이 될 수 있습니다. 예를 들어 사용된 색상 모드를 결정하려면 접두어 또는 접미어 `rgb` 또는 `cmyk`로 추가할 수 있습니다.<br>배치 집합 사전 설정 기능을 사용하는 데 집합 이름 지정 규칙을 지정할 필요는 없지만 세트 이름 지정 규칙을 사용하는 것이 좋습니다. 이 방법을 사용하면 묶음 세트 생성을 간소화하기 위해 세트로 그룹화할 이름 지정 규칙의 요소를 수만큼 정의할 수 있습니다. |
+| 접두어<br>또는<br>접미어 | 선택 사항입니다. 각 필드에 접두어, 접미어 또는 두 가지 모두를 입력합니다.<br>접두어 및 접미어 필드를 사용하면 특정 컨텐츠 세트에 대한 대체 사용자 정의 파일 이름 지정 규칙을 사용하여 많은 일괄 세트 사전 설정을 만들 수 있습니다. 이 방법은 회사의 정의된 기본 이름 지정 체계에 대한 예외가 있는 경우에 특히 유용합니다.<br>접두어나 접미어는 [에셋 이름 지정]  **** 규칙에서 정의하는  **[!UICONTROL 기준 이름에]** 추가됩니다. 접두어나 접미어를 추가하면 이미지 세트 또는 스핀 세트가 다른 자산과 독립적으로 단독 및 만들어지도록 할 수 있습니다. 또한 다른 사람이 파일 유형을 파악하는 데 도움이 될 수 있습니다. 예를 들어 사용된 색상 모드를 결정하려면 접두어 또는 접미어 `rgb` 또는 `cmyk`로 추가할 수 있습니다.<br>배치 집합 사전 설정 기능을 사용하는 데 집합 이름 지정 규칙을 지정할 필요는 없지만 세트 이름 지정 규칙을 사용하는 것이 좋습니다. 이 방법을 사용하면 묶음 세트 생성을 간소화하기 위해 세트로 그룹화할 이름 지정 규칙의 요소를 수만큼 정의할 수 있습니다. |
 | **[!UICONTROL 규칙 결과 - RegX]** |  |
 | 자산 이름 지정 규칙 - 일치 | 읽기 전용. 선택한 일치 양식 옵션 또는 입력한 원시 코드를 기반으로 정규 표현식 구문을 표시합니다. |
 | 자산 이름 지정 규칙 - 기본 이름 | 읽기 전용. 선택한 기본 이름 양식 옵션 또는 입력한 원시 코드를 기반으로 정규 표현식 구문을 표시합니다. |
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 ### 배치 집합 사전 설정 페이지 {#apply-bsp-to-folders-via-bsp-page}에서 자산 폴더에 일괄 집합 사전 설정 적용
 
-1. Adobe Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 배치 집합 사전 설정]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 일괄 세트 사전 설정]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 일괄 세트 사전 설정]** 페이지의 **[!UICONTROL 사전 설정 이름]** 열 왼쪽에 있는 폴더에 적용할 각 일괄 세트 사전 설정의 확인란을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 폴더]**&#x200B;에 배치 사전 설정 적용을 누릅니다.
 1. **[!UICONTROL 폴더 선택]** 페이지에서 일괄 세트 사전 설정을 적용할 각 폴더의 확인란을 선택합니다.
@@ -151,7 +151,7 @@ ht-degree: 1%
 
 ### 자산 폴더의 속성 페이지 {#apply-bsp-to-folders-via-properties}에서 일괄 세트 사전 설정 적용
 
-1. Adobe Experience Manager 로고를 누르고 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;으로 이동합니다.
 1. 하나 이상의 일괄 세트 사전 설정을 적용할 폴더로 이동합니다.
 1. 페이지에서 **[!UICONTROL 이름]** 열의 왼쪽에 있는 폴더의 확인란을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 탭합니다.
@@ -159,7 +159,7 @@ ht-degree: 1%
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. **[!UICONTROL 배치 집합 사전 설정]**&#x200B;의 **[!UICONTROL 사전 설정 이름]** 드롭다운 목록 상자에서 적용할 일괄 처리 집합 사전 설정의 이름을 선택합니다. 위의 스크린샷은 자산 폴더에 적용된 두 개의 선택한 일괄 세트 사전 설정을 보여줍니다.
+1. **[!UICONTROL 배치 집합 사전 설정]**&#x200B;의 **[!UICONTROL 사전 설정 이름]** 드롭다운 목록 상자에서 적용할 일괄 처리 집합 사전 설정의 이름을 선택합니다. 위의 스크린샷은 자산 폴더에 적용되는 두 개의 선택한 일괄 세트 사전 설정을 보여줍니다.
 
    **[!UICONTROL 사전 설정 이름]** 드롭다운 목록 상자에 일괄 세트 사전 설정 이름이 없는 경우, 아직 일괄 세트 사전 설정을 만들지 않았음을 의미합니다. 이미지 세트 또는 스핀 세트](#creating-bsp)에 대한 배치 집합 사전 설정 만들기를 참조하십시오.[
 
@@ -179,7 +179,7 @@ ht-degree: 1%
 
 **배치 집합 사전 설정을 편집하려면:**
 
-1. Adobe Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 배치 집합 사전 설정]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 일괄 세트 사전 설정]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 일괄 세트 사전 설정]** 페이지의 **[!UICONTROL 사전 설정 이름]** 열 왼쪽에 있는 변경 세트 사전 설정을 확인합니다.
 1. 도구 모음에서 **[!UICONTROL 일괄 세트 사전 설정 편집]**&#x200B;을 누릅니다.
 1. 필요에 따라 사전 설정을 편집합니다.
@@ -193,7 +193,7 @@ ht-degree: 1%
 
 **기존 배치 집합 사전 설정을 복사하려면:**
 
-1. Adobe Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 배치 집합 사전 설정]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 일괄 세트 사전 설정]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 배치 집합 사전 설정]** 페이지의 **[!UICONTROL 사전 설정 이름]** 열 왼쪽에 있는 복사할 배치 집합 사전 설정의 확인란을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 복사]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 배치 집합 사전 설정 복사]** 대화 상자의 **[!UICONTROL 제목]** 텍스트 상자에 사전 설정의 새 이름을 입력합니다.
@@ -215,7 +215,7 @@ ht-degree: 1%
 
 ### 배치 집합 사전 설정 페이지 {#remove-bsp-from-folders-via-bsp-page}을(를) 통해 폴더에서 배치 집합 사전 설정 제거
 
-1. Adobe Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 배치 집합 사전 설정]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 일괄 세트 사전 설정]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 일괄 세트 사전 설정]** 페이지의 **[!UICONTROL 사전 설정 이름]** 열 왼쪽에 있는 하나 이상의 폴더에서 제거할 하나 이상의 일괄 세트 사전 설정의 확인란을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 폴더에서 일괄 처리 사전 설정 제거]**&#x200B;를 누릅니다.
 
@@ -228,7 +228,7 @@ ht-degree: 1%
 
 ### 폴더의 속성 페이지 {#remove-bsp-from-folders-via-properties}에서 일괄 세트 사전 설정 제거
 
-1. Adobe Experience Manager 로고를 누르고 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;으로 이동합니다.
 1. 하나 이상의 일괄 세트 사전 설정을 제거할 폴더로 이동합니다.
 1. 페이지에서 **[!UICONTROL 이름]** 열의 왼쪽에 있는 폴더의 확인란을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 탭합니다.
@@ -250,7 +250,7 @@ ht-degree: 1%
 
 **배치 집합 사전 설정을 삭제하려면 다음을 수행하십시오.**
 
-1. Adobe Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 배치 집합 사전 설정]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 일괄 세트 사전 설정]**&#x200B;으로 이동합니다.
 1. **[!UICONTROL 일괄 세트 사전 설정]** 페이지의 **[!UICONTROL 사전 설정 이름]** 열 왼쪽에 있는 삭제할 하나 이상의 일괄 세트 사전 설정의 확인란을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 일괄 세트 사전 설정 삭제]**&#x200B;를 누릅니다.
 
