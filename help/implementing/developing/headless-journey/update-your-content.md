@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 3%
+source-wordcount: '1668'
+ht-degree: 2%
 
 ---
 
@@ -51,6 +51,8 @@ AEM 헤드리스 여정의 이전 문서에서 AEM 전달 API를 통해 콘텐�
 
 자산 HTTP API를 사용하면 **Read**&#x200B;컨텐츠를 볼 수 있지만, GraphQL API에서는 사용할 수 없는 작업(**,**&#x200B;업데이트&#x200B;**및**&#x200B;내용 삭제&#x200B;**)도 가능합니다.**
 
+Assets REST API는 최신 Adobe Experience Manager을 Cloud Service 버전으로 즉시 설치할 때마다 사용할 수 있습니다.
+
 ## 자산 HTTP API {#assets-http-api}
 
 [자산 HTTP API](/help/assets/mac-api-assets.md)은 다음을 포함합니다.
@@ -62,28 +64,16 @@ AEM 헤드리스 여정의 이전 문서에서 AEM 전달 API를 통해 콘텐�
 
 Assets REST API를 통해 Adobe Experience Manager 개발자는 Cloud Service으로 HTTP API를 통해 **CRUD** 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 컨텐츠(AEM에 저장)에 액세스할 수 있습니다.
 
-API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager을 헤드리스 CMS(Content Management System)로 Cloud Service으로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다.
-
-예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 정의 등은 API를 통해 제공된 컨텐츠가 필요합니다(주로 JSON 형식).
-
-AEM 코어 구성 요소는 이러한 목적으로 필요한 읽기 작업을 제공할 수 있고 JSON 출력을 사용자 정의할 수 있는 매우 포괄적이고 유연하며 사용자 정의 가능한 API를 제공하지만 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅되어야 하는 AEM WCM(Web Content Management) 구현에 대한 노하우가 필요합니다. 모든 SPA 개발 조직은 이러한 지식을 직접 이용하고 있지는 않습니다.
-
-이것은 자산 REST API를 사용할 수 있는 때입니다. 이를 통해 개발자는 페이지에 먼저 에셋(예: 이미지 및 컨텐츠 조각)을 임베드하여 컨텐츠를 직렬화된 JSON 포맷으로 제공할 필요 없이 바로 에셋에 액세스할 수 있습니다.
+이러한 작업을 수행할 때 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager을 헤드리스 CMS(Content Management System)로 Cloud Service으로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 정의 등은 API를 통해 제공된 컨텐츠가 필요합니다(주로 JSON 형식).
 
 >[!NOTE]
 >
 >자산 REST API에서 JSON 출력을 사용자 지정할 수 없습니다.
 
-또한 에셋 REST API를 사용하면 개발자는 기존 에셋, 컨텐츠 조각 및 폴더를 새로 만들거나 업데이트하거나 삭제하여 컨텐츠를 수정할 수 있습니다.
-
 자산 REST API:
 
 * HATEOAS 원칙을 따릅니다
 * 사이렌 형식을 구현합니다.
-
-## 전제 조건 {#prerequisites}
-
-Assets REST API는 최신 Adobe Experience Manager을 Cloud Service 버전으로 즉시 설치할 때마다 사용할 수 있습니다.
 
 ## 주요 개념 {#key-concepts}
 
@@ -124,53 +114,6 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 즉, 후속(`write`) 요청은 단일 엔티티로 성공하거나 실패할 수 있는 단일 트랜잭션으로 결합할 수 없습니다.
 
-### AEM(자산) REST API와 AEM 구성 요소 {#aem-assets-rest-api-versus-aem-components}
-
-<table>
- <thead>
-  <tr>
-   <td>Aspect</td>
-   <td>자산 REST API<br/> </td>
-   <td>AEM 구성 요소<br/>(Sling 모델을 사용하는 구성 요소)</td>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>지원되는 사용 사례</td>
-   <td>일반적인 목적.</td>
-   <td><p>단일 페이지 애플리케이션(SPA) 또는 기타(컨텐츠 소비) 컨텍스트에서의 소비를 위해 최적화되었습니다.</p> <p>레이아웃 정보를 포함할 수도 있습니다.</p> </td>
-  </tr>
-  <tr>
-   <td>지원되는 작업</td>
-   <td><p>만들기, 읽기, 업데이트, 삭제</p> <p>엔티티 유형에 따라 추가 작업이 제공됩니다.</p> </td>
-   <td>읽기 전용.</td>
-  </tr>
-  <tr>
-   <td>액세스</td>
-   <td><p>직접 액세스할 수 있습니다.</p> <p>저장소에서 <code>/content/dam</code>에 매핑된 <code>/api/assets </code>끝점을 사용합니다.</p> 
-   <p>예제 경로는 다음과 같습니다. <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
-   </td>
-    <td><p>AEM 페이지의 AEM 구성 요소를 통해 참조되어야 합니다.</p> <p><code>.model</code> 선택기를 사용하여 JSON 표현을 만듭니다.</p> <p>예제 경로는 다음과 같습니다.<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
-   </td>
-  </tr>
-  <tr>
-   <td>보안</td>
-   <td><p>여러 옵션이 가능합니다.</p> <p>OAuth가 제안됨;표준 설정과 별도로 구성할 수 있습니다.</p> </td>
-   <td>AEM 표준 설정을 사용합니다.</td>
-  </tr>
-  <tr>
-   <td>건축주의</td>
-   <td><p>쓰기 액세스는 일반적으로 작성자 인스턴스의 주소를 지정합니다.</p> <p>또한 읽기가 게시 인스턴스로 연결될 수도 있습니다.</p> </td>
-   <td>이 방법은 읽기 전용이므로 일반적으로 게시 인스턴스에 사용됩니다.</td>
-  </tr>
-  <tr>
-   <td>출력</td>
-   <td>JSON 기반 사이렌 출력:자세한 정보를 제공하고 강력합니다. 컨텐츠 내에서 탐색할 수 있습니다.</td>
-   <td>JSON 기반의 독점 출력;Sling 모델을 통해 구성할 수 있습니다. 컨텐츠 구조를 탐색하는 것은 구현하기가 어렵지만 꼭 불가능한 것은 아닙니다.</td>
-  </tr>
- </tbody>
-</table>
-
 ### 보안 {#security}
 
 특정 인증 요구 사항이 없는 환경에서 자산 REST API를 사용하는 경우 AEM CORS 필터를 올바르게 구성해야 합니다.
@@ -182,9 +125,6 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 >* CORS/AEM 설명
 >* 비디오 - AEM을 사용한 CORS 개발
 
->
-
-
 
 특정 인증 요구 사항이 있는 환경에서는 OAuth가 권장됩니다.
 
@@ -194,7 +134,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음을 참조하십시오.
 
-* 자산 REST API
+* 자산 REST API(추가 리소스)
 * 엔티티 유형 - 지원되는 각 유형(컨텐츠 조각과 관련)에 대한 기능이 설명됩니다.
 
 ### {#paging} 호출
@@ -275,16 +215,74 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 ## 자산 REST API 사용 {#using-aem-assets-rest-api}
 
+AEM 작성자 환경을 사용하는지 게시 환경을 사용하는지에 따라 특정 사용 사례와 함께 사용법이 다를 수 있습니다.
+
+* 만들기는 작성자 인스턴스([에 바인딩되며 현재 이 API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations))를 사용하여 게시할 조각을 복제할 방법이 없습니다.
+* AEM은 요청된 컨텐츠를 JSON 형식으로만 제공하므로 두 가지 방식 모두에서 전달할 수 있습니다.
+
+   * AEM 작성 인스턴스에서 저장 및 전달하면 방화벽 뒤의 미디어 라이브러리 애플리케이션에 충분해야 합니다.
+
+   * 라이브 웹 전달의 경우 AEM 게시 인스턴스가 권장됩니다.
+
+>[!CAUTION]
+>
+>AEM 클라우드 인스턴스의 디스패처 구성은 `/api`에 대한 액세스를 차단할 수 있습니다.
+
+>[!NOTE]
+>
+>자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 콘텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+
+### 읽기/배달 {#read-delivery}
+
+사용 방법:
+
+`GET /{cfParentPath}/{cfName}.json`
+
+예:
+
+`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
+
+응답은 컨텐츠 조각에서와 같이 구조화된 컨텐츠와 함께 JSON에 직렬화됩니다. 참조는 참조 URL로 제공됩니다.
+
+두 가지 유형의 읽기 작업이 가능합니다.
+
+* 경로별로 특정 컨텐츠 조각을 읽으면 컨텐츠 조각의 JSON 표현을 반환합니다.
+* 경로별로 컨텐츠 조각 폴더 읽기:폴더 내의 모든 컨텐츠 조각에 대한 JSON 표현을 반환합니다.
+
+### 만들기 {#create}
+
+사용 방법:
+
+`POST /{cfParentPath}/{cfName}`
+
+본문에는 컨텐츠 조각 요소에 설정되어야 하는 초기 컨텐츠를 포함하여 작성할 컨텐츠 조각에 대한 JSON 표현이 포함되어야 합니다. `cq:model` 속성을 설정해야 하며 올바른 컨텐츠 조각 모델을 가리켜야 합니다. 그렇게 하지 않으면 오류가 발생합니다. 또한 `application/json`으로 설정된 헤더 `Content-Type`을 추가해야 합니다.
+
+### 업데이트 {#update}
+
+사용 방법은
+
+`PUT /{cfParentPath}/{cfName}`
+
+본문에는 주어진 컨텐츠 조각에 대해 업데이트할 JSON 표현을 포함해야 합니다.
+
+컨텐츠 조각 또는 단일 요소 또는 모든 요소 값 및/또는 메타데이터의 제목 또는 설명일 수 있습니다.
+
+### 삭제 {#delete}
+
+사용 방법:
+
+`DELETE /{cfParentPath}/{cfName}`
+
 AEM Assets REST API 사용에 대한 자세한 내용은 다음을 참조할 수 있습니다.
 
-* Adobe Experience Manager Assets HTTP API
-* AEM Assets HTTP API의 컨텐츠 조각 지원
+* Adobe Experience Manager Assets HTTP API(추가 리소스)
+* AEM Assets HTTP API의 컨텐츠 조각 지원(추가 리소스)
 
 ## 다음 {#whats-next} 소개
 
 AEM 헤드리스 개발자 여정의 이 부분을 완료하셨다면 다음을 수행해야 합니다.
 
-* AEM Assets HTTP API를 이해합니다.
+* AEM Assets HTTP API의 기본 사항을 이해합니다.
 * 이 API에서 컨텐츠 조각이 지원되는 방식을 이해합니다.
 
 <!--
