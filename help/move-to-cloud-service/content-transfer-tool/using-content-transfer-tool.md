@@ -3,10 +3,10 @@ title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: d55eb86afd9973e428c8738db181f79dcd55accb
+source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 47%
+source-wordcount: '2731'
+ht-degree: 46%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 47%
 
 * 작성자에 대한 *수집 단계*&#x200B;는 전체 작성자 배포를 축소합니다. 즉, 전체 수집 프로세스 중에 작성자 AEM을 사용할 수 없습니다. 또한 *통합* 단계를 실행하는 동안 Cloud Manager 파이프라인이 실행되지 않았는지 확인하십시오.
 
+* 소스 AEM 시스템의 데이터 저장소로 `Amazon S3` 또는 `Azure`을 사용하는 경우 저장된 오버레이를 삭제할 수 없도록 데이터 저장소를 구성해야 합니다(가비지 수집). 색인 데이터의 무결성을 보장하기 위한 것입니다. 이렇게 구성하지 않으면 이 인덱스 데이터의 무결성으로 인해 추출이 실패할 수 있습니다.
 
 ## 사용 가능 {#availability}
 
