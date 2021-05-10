@@ -3,10 +3,10 @@ title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
+source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1879'
+ht-degree: 2%
 
 ---
 
@@ -90,6 +90,8 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 ## [!DNL Cloud Service]로서의 [!DNL Adobe Experience Manager Forms] {#forms}
 
 ### [!DNL Forms] {#what-is-new-forms}의 새로운 기능
+
+[AEM Forms을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)으로 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, 양식을 Adobe Sign과 통합하여 양식에 전자 서명을 추가하고, 문서 기록(DoR)을 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 또한 서비스는 기존 PDF forms을 디지털 양식으로 변환할 수 있습니다. 표준 AEM Forms 기능 외에도 자동 크기 조절, 업그레이드 중단 시간 제로, 클라우드 기본 개발 환경과 같은 클라우드 기본 기능을 제공합니다. Cloud Service의 AEM Forms 기능 및 기능에 대해 알아보려면 [이 블로그 게시물](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)을 읽어 보십시오.
 
 * **Adaptive Forms이 활성화된 Adobe Sign에서 정부 기관 ID 인증 방법 사용**
 
