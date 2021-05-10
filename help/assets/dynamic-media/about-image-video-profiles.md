@@ -1,16 +1,16 @@
 ---
 title: Dynamic Media 이미지 프로필 및 비디오 프로필 정보
 description: 이미지 프로필 또는 비디오 프로필은 폴더에 업로드하는 자산에 적용할 옵션을 만드는 레서피입니다. 예를 들어 업로드하는 Dynamic Media 비디오 자산에 적용할 비디오 인코딩을 지정할 수 있습니다. 또는 Dynamic Media 이미지 에셋에 적용할 이미지 프로필을 무엇으로 제대로 잘렸는지 확인합니다.
-feature: Asset Management,Image Profiles,Video Profiles
+feature: 자산 관리, 이미지 프로필, 비디오 프로필
 role: Administrator,Business Practitioner
+exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
-
 
 # Dynamic Media 이미지 프로필 및 비디오 프로필 정보{#about-dm-image-video-profiles}
 
@@ -43,7 +43,7 @@ Dynamic Media 이미지 프로필 또는 Dynamic Media 비디오 프로필을 �
 
 처리를 처음으로 실패한 자산에 대해 재처리 워크플로우를 실행할 수 있습니다. 이미지 프로필 또는 비디오 프로필을 편집하지 않았거나 이미 이미지 프로필 또는 비디오 프로필을 적용한 경우에도 언제든지 자산 폴더에서 재처리 작업 과정을 실행할 수 있습니다.
 
-선택적으로 최대 1,000개의 자산까지 기본 50개의 자산에서 재처리 워크플로우의 일괄 처리 크기를 조정할 수 있습니다. _Scene7을 실행할 때:폴더에서 자산_ 워크플로우를 재처리하면 자산은 일괄로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후 전체 배치 세트에 있는 각 자산의 메타데이터는 AEM에서 업데이트됩니다. 배치 크기가 큰 경우 처리 지연이 발생할 수 있습니다. 또는 일괄 처리 크기가 너무 작을 경우 Dynamic Media 서버에 대한 양방향 이동이 너무 많을 수 있습니다.
+선택적으로 최대 1,000개의 자산까지 기본 50개의 자산에서 재처리 워크플로우의 일괄 처리 크기를 조정할 수 있습니다. _Scene7을 실행할 때:폴더에서 자산_ 워크플로우를 재처리하면 자산은 일괄로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후 전체 배치 세트에 있는 각 자산의 메타데이터는 Adobe Experience Manager에서 업데이트됩니다. 배치 크기가 큰 경우 처리 지연이 발생할 수 있습니다. 또는 일괄 처리 크기가 너무 작을 경우 Dynamic Media 서버에 대한 양방향 이동이 너무 많을 수 있습니다.
 
 재처리 작업 과정](#adjusting-load)의 일괄 처리 크기 조정을 참조하십시오.[
 
@@ -59,8 +59,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**폴더에서 Dynamic Media 자산을 재처리하려면**:
-1. Adobe Experience Manager의 [에셋] 페이지에서 이미지 프로필 또는 비디오 프로필이 할당된 Dynamic Media 에셋의 폴더로 이동하여 **Scene7:자산 재처리** 워크플로,
+**폴더에서 Dynamic Media 자산을 재처리하려면:**
+1. Experience Manager의 자산 페이지에서 이미지 프로필 또는 비디오 프로필이 할당된 자산 폴더 또는 **Scene7:자산** 작업 과정을 재처리합니다.
 
    이미지 프로필 또는 비디오 프로필이 할당된 폴더가 카드 보기의 폴더 이름 바로 아래에 표시됩니다.
 
@@ -87,7 +87,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### 재처리 작업 과정 {#adjusting-load} 일괄 처리 크기 조정
 
-(선택 사항) 재처리 워크플로우의 기본 일괄 처리 크기는 작업당 50개의 자산입니다. 이 최적의 일괄 처리 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있습니다. 따라서 처리 배너는 긴 시간 동안 Experience Manager 에셋에 유지됩니다. 그러나 평균 파일 크기가 1MB 이하일 경우 값을 수백 MB로 늘리되, 1000을 넘지 않는 것이 좋습니다. 평균 파일 크기가 수백 MB 이상인 경우 일괄 처리 크기를 최대 10개까지 줄이는 것이 좋습니다.
+(선택 사항) 재처리 워크플로우의 기본 일괄 처리 크기는 작업당 50개의 자산입니다. 이 최적의 일괄 처리 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있습니다. 따라서 처리 배너는 긴 시간 동안 Experience Manager 에셋에 유지됩니다. 그러나 평균 파일 크기가 1MB 이하일 경우 값을 100개 이상 증가시키는 것이 좋지만 1000을 넘지 않는 것이 좋습니다. 평균 파일 크기가 수백 MB인 경우 일괄 처리 크기를 최대 10개까지 줄이는 것이 좋습니다.
 
 **재처리 워크플로우의 일괄 처리 크기를 선택적으로 조정하려면**:
 
