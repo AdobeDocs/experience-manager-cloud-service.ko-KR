@@ -1,14 +1,14 @@
 ---
 title: 이미지 품질 최적화 우수 사례
-description: Dynamic Media에서 이미지 에셋의 품질을 최적화하는 데 사용할 수 있는 모범 사례를 살펴볼 수 있습니다.
+description: Dynamic Media을 사용하여 이미지 에셋의 품질을 최적화하는 모범 사례를 살펴볼 수 있습니다.
 contentOwner: Rick Brough
 feature: 자산 관리
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1478'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 허용되는 결과를 렌더링하는 데 많은 요소가 기여하므로 이미지 품질을 최적화하는 것은 시간이 많이 걸릴 수 있습니다. 그 결과는 부분적으로 주관적이다. 왜냐하면 개인은 이미지의 질을 다르게 인식하기 때문이다. 구조화된 실험이 핵심입니다.
 
-AEM에는 이미지를 조정 및 최적화하고 결과를 렌더링하기 위한 100개 이상의 Dynamic Media 이미지 제공 명령이 포함되어 있습니다. 다음 지침은 몇 가지 필수 명령 및 우수 사례를 사용하여 프로세스를 간소화하고 좋은 결과를 신속하게 얻을 수 있도록 도와줍니다.
+Adobe Experience Manager에는 이미지를 조정 및 최적화하고 결과를 렌더링하기 위한 100개 이상의 Dynamic Media 이미지 제공 명령이 포함되어 있습니다. 다음 지침은 몇 가지 필수 명령 및 우수 사례를 사용하여 프로세스를 간소화하고 좋은 결과를 신속하게 얻을 수 있도록 도와줍니다.
 
 ## 이미지 형식(`&fmt=`) {#best-practices-for-image-format-fmt} 우수 사례
 
@@ -41,13 +41,13 @@ AEM에는 이미지를 조정 및 최적화하고 결과를 렌더링하기 위�
 
 ## 이미지 선명하게 하기 {#best-practices-for-image-sharpening} 우수 사례
 
-이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 데 가장 복잡한 측면이며 오류가 많이 발생하는 영역입니다. 다음과 같은 유용한 리소스를 참고하여 AEM에서 선명하게 하기 및 언샵 마스크가 작동하는 방식을 자세히 살펴볼 수 있습니다.
+이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 데 가장 복잡한 측면이며 오류가 많이 발생하는 영역입니다. 다음과 같은 유용한 리소스를 참고하여 Experience Manager에서 선명하게 하기 및 언샵 마스킹이 작동하는 방식을 자세히 살펴볼 수 있습니다.
 
-* 모범 사례 백서 [Adobe Dynamic Media Classic의 이미지 선명하게 하기](/help/assets/dynamic-media/assets/sharpening_images.pdf)도 AEM에 적용됩니다.
+* 우수 사례 백서 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례](/help/assets/dynamic-media/assets/sharpening_images.pdf)도 Experience Manager에 적용됩니다.
 
-* AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)에서 이미지 선명하게 하기 사용 을 시청하십시오.[
+* [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)을 시청하십시오.
 
-AEM을 사용하면 섭취, 전달 시 또는 두 가지 모두를 통해 이미지를 선명하게 만들 수 있습니다. 그러나 일반적으로 한 가지 방식이나 다른 방법만을 사용하여 이미지를 선명하게 하는 것이 가장 좋지만 두 방법 모두 선명하게 하는 것은 아닙니다. 배달 시 URL에서 이미지를 선명하게 하면 최상의 결과를 얻을 수 있습니다.
+Experience Manager을 사용하면 섭취, 전달 시 또는 두 가지 모두를 통해 이미지를 선명하게 만들 수 있습니다. 그러나 일반적으로 한 가지 방식이나 다른 방법만을 사용하여 이미지를 선명하게 하는 것이 가장 좋지만 두 방법 모두 선명하게 하는 것은 아닙니다. 배달 시 URL에서 이미지를 선명하게 하면 최상의 결과를 얻을 수 있습니다.
 
 다음 두 가지 이미지 선명하게 하기 방법을 사용할 수 있습니다.
 
@@ -66,11 +66,11 @@ AEM을 사용하면 섭취, 전달 시 또는 두 가지 모두를 통해 이미
 
       필터와 함께 사용하는 모범 사례를 비롯하여 이러한 3개의 매개 변수를 설정하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
-      이미지 선명 효과에 대한 AEM 도움말 항목입니다.
+      * 우수 사례 백서 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례](/help/assets/dynamic-media/assets/sharpening_images.pdf)도 Experience Manager에 적용됩니다.
 
-      우수 사례 백서 [Adobe Dynamic Media Classic 이미지 품질 및 선명하게 하기 우수 사례](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+      * [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)을 시청하십시오.
 
-      * AEM에서는 네 번째 매개 변수를 제어할 수도 있습니다.단색(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 개별적으로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지를 결정합니다.
+      * 또한 Experience Manager을 사용하여 네 번째 매개 변수를 제어할 수 있습니다.단색(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 언샵 마스킹을 개별적으로 적용할지 또는 값 1을 사용하여 이미지 밝기/강도에 적용할지를 결정합니다.
 
 
 
@@ -100,7 +100,7 @@ JPG 압축에 대한 우수 사례로 `&qlt=85,0`을 사용합니다.
 
 ## JPEG 크기 조정(`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize} 우수 사례
 
-`jpegSize` 은 메모리가 제한된 장치에 이미지를 배달하기 위한 특정 크기를 초과하지 않도록 보장하기 위해 유용한 매개 변수입니다.
+`jpegSize` 매개 변수는 이미지가 메모리가 제한된 장치에 배달할 특정 크기를 초과하지 않도록 보장하기 위해 유용합니다.
 
 * 이 매개 변수는 KB(`jpegSize=&lt;size_in_kilobytes&gt;`)로 설정됩니다. 이미지 전달에 허용되는 최대 크기를 정의합니다.
 * `&jpegSize=` JPG 압축 매개 변수와 상호 작용합니다 `&qlt=`. 지정된 JPG 압축 매개 변수(`&qlt=`)의 JPG 응답이 jpegSize 값을 초과하지 않으면 정의된 대로 `&qlt=` 이미지가 반환됩니다. 그렇지 않은 경우 이미지가 최대 허용 크기로 맞춰질 때까지 또는 시스템에 맞지 않거나 오류가 반환될 수 없다고 판단될 때까지 `&qlt=`이(가) 점진적으로 감소됩니다.
@@ -123,4 +123,4 @@ JPG 이미지를 메모리가 제한된 장치에 제공하는 경우 `&jpegSize
 
 * URL에서 바로 다양한 매개 변수를 실시간으로 테스트해 보십시오.
 * Dynamic Media 이미지 제공 명령을 이미지 사전 설정으로 그룹화할 수 있는 것이 좋습니다. 이미지 사전 설정은 기본적으로 `$thumb_low$` 및 `&product_high$` 등의 사용자 정의 사전 설정 이름을 가진 URL 명령 매크로입니다. URL 경로의 사용자 정의 사전 설정 이름은 이러한 사전 설정을 호출합니다. 이러한 기능은 웹 사이트에서 이미지의 다양한 사용 패턴에 대한 명령 및 품질 설정을 관리하고 URL의 전체 길이를 줄이는 데 도움이 됩니다.
-* 또한 Experience Manager은 통합 시 선명하게 하기 이미지를 적용하는 등 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하기 위해 [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)은(는) 사용자 정의된 통찰력과 최상의 작업 방법을 도울 수 있습니다.
+* 또한 Experience Manager은 통합 시 선명하게 하기 이미지를 적용하는 등 이미지 품질을 조정하는 고급 방법을 제공합니다. 렌더링 결과를 조정하고 최적화하기 위해 [Adobe 컨설팅 서비스](https://business.adobe.com/customers/consulting-services/main.html)는 맞춤화된 통찰력과 최상의 작업 방법을 제공할 수 있도록 도와줍니다.
