@@ -6,9 +6,9 @@ feature: 스마트 태그,태그 지정
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
+source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2401'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 자연어 어휘와 비교하여 비즈니스 분류 방식을 기반으로 태그를 지정하면 자산을 회사의 비즈니스에 맞게 정렬하고 가장 관련성이 높은 자산이 검색에 표시되는지 확인할 수 있습니다. 예를 들어 자동차 제조업체는 자동차 이미지에 모델 이름을 태그로 지정할 수 있으므로 판촉 캠페인을 디자인하기 위해 검색할 때 관련 이미지만 표시됩니다.
 
-백그라운드에서 이 기능은 인위적으로 지능적인 [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html)의 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다. 새 [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console]과 통합됩니다. 이렇게 하면 스마트 태그 기능을 보다 신속하게 구성할 수 있습니다. 이전 배포에서는 관리자가 수동으로 [스마트 태그 통합](/help/assets/smart-tags-configuration.md#aio-integration)을 구성할 수 있습니다.
+백그라운드에서 이 기능은 인위적으로 지능적인 [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html)의 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다. [!DNL Experience Manager Assets] 배포는 기본적으로 [!DNL Adobe Developer Console] 와 통합됩니다.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -151,40 +151,42 @@ ht-degree: 1%
 
 ## 자산 {#tag-assets} 태그 지정
 
-스마트 태그 서비스를 교육한 후 다른 자산 세트에 태그를 자동으로 적용하도록 태그 지정 워크플로우를 트리거할 수 있습니다. On-Demand로 태그 지정 워크플로우를 적용하거나 정기적으로 실행하도록 예약할 수 있습니다. 태그 지정 워크플로우는 자산 및 폴더 모두에 적용됩니다.
+스마트 태그 서비스를 교육하면 업로드된 자산에 자동으로 태그가 지정됩니다. [!DNL Experience Manager] 적절한 태그를 거의 실시간으로 적용합니다. On-Demand로 태그 지정 워크플로우를 적용하거나 정기적으로 실행하도록 예약할 수 있습니다. 태그 지정 워크플로우는 자산 및 폴더 모두에 적용됩니다.
 
-### 워크플로우 콘솔 {#tagging-assets-from-the-workflow-console}에서 에셋에 태그 지정
+<!--
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;으로 이동합니다.
-1. **[!UICONTROL 워크플로우 모델]** 페이지에서 **[!UICONTROL DAM 스마트 태그 자산]** 작업 과정을 선택한 다음 도구 모음에서 **[!UICONTROL 워크플로우 시작]**&#x200B;을 클릭합니다.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. **[!UICONTROL 워크플로우 실행]** 대화 상자에서 태그를 자동으로 적용할 에셋이 포함된 페이로드 폴더를 찾습니다.
-1. 워크플로우의 제목과 선택적 주석을 지정합니다. **[!UICONTROL 실행]**&#x200B;을 클릭합니다.
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   *그림:자산 폴더로 이동하고 태그를 검토하여 에셋에 태그가 제대로 지정되어 있는지 확인합니다. 자세한 내용은 [스마트 태그 관리](#manage-smart-tags-and-searches)를 참조하십시오.*
+   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
 
-### 타임라인 {#tagging-assets-from-the-timeline}에서 에셋에 태그 지정
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. [!DNL Assets] 사용자 인터페이스에서 스마트 태그를 적용할 에셋 또는 특정 에셋이 포함된 폴더를 선택합니다.
-1. 왼쪽 위 모서리에서 **[!UICONTROL 타임라인]**&#x200B;을 엽니다.
-1. 왼쪽 세로 막대의 맨 아래에서 작업을 열고 **[!UICONTROL 워크플로우 시작]**&#x200B;을 클릭합니다.
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From upper-left corner, open the **[!UICONTROL Timeline]**.
+1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. **[!UICONTROL DAM 스마트 태그 자산]** 작업 과정을 선택하고 작업 과정의 제목을 지정합니다.
-1. **[!UICONTROL 시작]**&#x200B;을 클릭합니다. 워크플로우는 자산에 태그를 적용합니다. 자산 폴더로 이동하고 태그를 검토하여 에셋에 태그가 제대로 지정되어 있는지 확인합니다. 자세한 내용은 [스마트 태그 관리](#manage-smart-tags-and-searches)를 참조하십시오.
+1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->후속 태그 지정 주기 동안 새로 훈련된 태그로 수정된 자산에만 다시 태그가 지정됩니다. 하지만 태그 지정 작업 과정에 대한 마지막 태그 주기와 현재 태그 지정 주기 사이의 간격이 24시간이 넘는 경우에도 변경되지 않은 자산도 태그로 지정됩니다. 주기적인 태그 지정 워크플로우의 경우, 시간 간격이 6개월이 되면 변경되지 않은 자산에 태그가 지정됩니다.
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
-### 업로드된 자산 {#tag-uploaded-assets} 태그 지정
+### Tag uploaded assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] 사용자가 DAM에 업로드한 자산에 자동으로 태그를 지정할 수 있습니다. 이를 위해 관리자는 에셋에 태그를 지정하는 사용 가능한 단계를 추가하는 워크플로우를 구성합니다. 업로드된 자산](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)에 대해 스마트 태그를 활성화하는 방법을 참조하십시오.[
+[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+-->
 
 ## 스마트 태그 및 자산 검색 관리 {#manage-smart-tags-and-searches}
 
@@ -247,7 +249,6 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* [스마트  [!DNL Experience Manager] 태그 지정 구성](smart-tags-configuration.md)
 >* [스마트 태그를 사용하여 에셋을 관리하는 방법 이해](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [스마트 태그 지정 비디오 에셋](smart-tags-video-assets.md)
 
