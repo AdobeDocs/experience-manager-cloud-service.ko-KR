@@ -4,9 +4,9 @@ description: HTTP2 컨텐츠 전달에 대해 알아봅니다.
 role: Administrator,Business Practitioner
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -17,15 +17,13 @@ Adobe은 HTTP/2 컨텐츠 전달 가용성을 발표하게 되어 매우 기쁩�
 
 >[!NOTE]
 >
->이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
+>이 기능을 사용하려면 Adobe Experience Manager - Dynamic Media에 번들로 제공되는 즉시 사용 가능한 컨텐츠 전달 네트워크를 사용해야 합니다. 다른 모든 사용자 지정 컨텐츠 전달 네트워크는 이 기능에서 지원되지 않습니다.
 
 ## HTTP/2 소개{#what-is-http}
 
 HTTP/2는 브라우저 및 서버의 통신 방식을 개선하여 정보를 신속하게 전송하고 필요한 처리 능력을 감소시킵니다.
 
-다음 웹 사이트에서는 HTTP/2 및 HTTP의 이점에 대해 간단하고 간단하게 설명합니다.
-
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+웹 사이트 문서 [HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)에 대해 알아야 하는 내용은 HTTP/2와 그 이점에 대해 간단하고 간단한 방법으로 설명합니다.
 
 ## 컨텐츠 전달을 위해 HTTP/2로 전환하면 어떤 이점이 있습니까?{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
