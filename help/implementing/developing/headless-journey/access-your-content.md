@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 1%
+source-wordcount: '846'
+ht-degree: 2%
 
 ---
 
@@ -50,194 +50,198 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하면 AEM GraphQL AP
 >
 >AEM GraphQL API는 표준 GraphQL API 사양에 따라 맞춤화된 구현입니다.
 
-## GraphQL - 소개 {#graphql-introduction}
+<!--
+## GraphQL - An Introduction {#graphql-introduction}
 
-GraphQL은 다음을 제공하는 오픈 소스 사양입니다.
+GraphQL is an open-source specification that provides:
 
-* 구조화된 오브젝트에서 특정 컨텐츠를 선택할 수 있는 쿼리 언어
-* 구조화된 컨텐츠로 이러한 쿼리를 충족하는 런타임입니다.
+* a query language that enables you to select specific content from structured objects.
+* a runtime to fulfill these queries with your structured content.
 
-GraphQL은 *강력하게* 입력된 API입니다. 즉, GraphQL *은(는)*&#x200B;모든&#x200B;*컨텐츠가 유형별로 명확히 구조화되고 정리되어야 GraphQL*&#x200B;이(가) 액세스해야 하는 내용과 방법을 파악할 수 있습니다. 데이터 필드는 컨텐츠 객체의 구조를 정의하는 GraphQL 스키마 내에 정의됩니다.
+GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects. 
 
-GraphQL 끝점은 GraphQL 쿼리에 응답하는 경로를 제공합니다.
+GraphQL endpoints then provide the paths that respond to the GraphQL queries.
 
-즉, AEM과 함께 사용할 때 필요한 콘텐츠만 정확하고 안전하게 효율적으로 선택할 수 있습니다.
-
->[!NOTE]
->
->*GraphQL*.org 및 *GraphQL*.com을 참조하십시오.
-
-## AEM 및 GraphQL {#aem-graphql}
-
-GraphQL은 AEM의 다양한 위치에 사용됩니다.예를 들면 다음과 같습니다.
-
-* 콘텐츠 조각
-   * 이 사용 사례(앱에 헤드리스 게재)에 대해 사용자 지정된 API가 개발되었습니다.
-      * AEM GraphQL API입니다.
-* 상거래
-   * AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다.
-   * AEM과 다양한 타사 상거래 솔루션 간에 GraphQL 통합이 있으며, CIF 핵심 구성 요소에서 제공하는 확장 호크에 사용됩니다.
-      * AEM GraphQL API는 사용하지 않습니다.
+All this means that your app can accurately, reliably and efficiently select the content that it needs - just what you need when used with AEM.
 
 >[!NOTE]
 >
->헤드리스 여정의 이 단계는 AEM GraphQL API 및 컨텐츠 조각에만 적용됩니다.
+>See *GraphQL*.org and *GraphQL*.com.
+
+## AEM and GraphQL {#aem-graphql}
+
+GraphQL is used in various locations in AEM; for example:
+
+* Content Fragments
+  * A customized API has been developed for this use-case (Headless Delivery to your app).
+    * This is the AEM GraphQL API.
+* Commerce
+  * AEM Commerce consumes data from a Commerce platform via GraphQL.
+  * There are GraphQL integrations between AEM and various third-party commerce solutions, used with the extension hooks provided by the CIF Core Components.
+    * This does not use the AEM GraphQL API.
+
+>[!NOTE]
+>
+>This step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-AEM GraphQL API는 컨텐츠 조각에 대한 (복잡한) 쿼리를 수행할 수 있도록 특별히 구성된 표준 GraphQL API 사양을 기반으로 하는 사용자 정의된 버전입니다.
+The AEM GraphQL API is a customized version based on the standard GraphQL API specification, specially configured to allow you to perform (complex) queries on your Content Fragments.
 
-컨텐츠 조각은 컨텐츠가 컨텐츠 조각 모델에 따라 구조화되어 사용됩니다. GraphQL의 기본 요구 사항을 충족합니다.
+Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
 
-* 컨텐츠 조각 모델은 하나 이상의 필드로 구성됩니다.
-   * 각 필드는 데이터 유형에 따라 정의됩니다.
-* 컨텐츠 조각 모델은 해당 AEM GraphQL 스키마를 생성하는 데 사용됩니다.
+* A Content Fragment Model is built up of one, or more, fields. 
+  * Each field is defined according to a Data Type.
+* Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
 
-AEM(및 내용)용 GraphQL에 실제로 액세스하려면 끝점을 사용하여 액세스 경로를 제공합니다.
+To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path. 
 
-AEM GraphQL API를 통해 반환된 컨텐츠는 애플리케이션에서 사용할 수 있습니다.
+The content returned, via the AEM GraphQL API, can then be used by your applications. 
 
 >[!NOTE]
 >
->AEM GraphQL API 구현은 GraphQL Java 라이브러리를 기반으로 합니다.
+>The AEM GraphQL API implementation is based on the GraphQL Java libraries.
 
-### 작성 및 게시 환경에 대한 사용 사례 {#use-cases-author-publish-environments}
+### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
-AEM GraphQL API의 사용 사례는 Cloud Service 환경으로 AEM의 유형에 따라 달라질 수 있습니다.
+The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud Service environment:
 
-* 게시 환경;다음 작업에 사용됩니다.
-   * JS 응용 프로그램에 대한 콘텐츠 쿼리(표준 사용 사례)
+* Publish environment; used to: 
+  * Query content for JS application (standard use-case)
 
-* 작성 환경;다음 작업에 사용됩니다.
-   * &quot;콘텐츠 관리 목적&quot;을 위해 콘텐츠 쿼리:
-      * Cloud Service으로 AEM의 GraphQL은 현재 읽기 전용 API입니다.
-      * REST API는 CR(u)D 작업에 사용할 수 있습니다.
+* Author environment; used to: 
+  * Query content for "content management purposes":
+    * GraphQL in AEM as a Cloud Service is currently a read-only API.
+    * The REST API can be used for CR(u)D operations.
 
-## AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}에 사용할 컨텐츠 조각
+## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
 
-컨텐츠 조각은 다음과 같이 AEM 스키마 및 쿼리에 대한 GraphQL의 기초로 사용할 수 있습니다.
+Content Fragments can be used as a basis for GraphQL for AEM schemas and queries as:
 
-* 페이지와 독립된 컨텐츠를 디자인, 제작, 조정 및 게시할 수 있습니다.
-* 정의된 데이터 유형을 통해 결과 조각의 구조를 미리 정의하는 컨텐츠 조각 모델을 기반으로 합니다.
-* 모델을 정의할 때 사용할 수 있는 조각 참조 데이터 유형을 사용하여 구조의 추가 레이어를 만들 수 있습니다.
+* They enable you to design, create, curate and publish page-independent content.
+* They are based on a Content Fragment Model, which pre-defines the structure for the resulting fragment by means of defined data types.
+* Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
+ 
+### Content Fragment Models {#content-fragments-models}
 
-### 컨텐츠 조각 모델 {#content-fragments-models}
+These Content Fragment Models:
 
-다음 컨텐츠 조각 모델:
+* Are used to generate the Schemas, once **Enabled**.
 
-* 스키마를 생성하는 데 사용됩니다(**Enabled**).
+* Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
 
-* GraphQL에 필요한 데이터 유형과 필드를 제공합니다. 응용 프로그램이 가능한 것만 요청하고 예상대로 수신하도록 합니다.
+* The data type **Fragment References** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
 
-* 데이터 유형 **조각 참조**&#x200B;는 모델에서 다른 컨텐츠 조각을 참조하기 위해 사용할 수 있으므로 추가 구조 수준을 활용할 수 있습니다.
+### Fragment References {#fragment-references}
 
-### 조각 참조 {#fragment-references}
+The **Fragment Reference**:
 
-**조각 참조**:
+* Is a specific data type available when defining a Content Fragment Model.
 
-* 컨텐츠 조각 모델을 정의할 때 사용할 수 있는 특정 데이터 유형입니다.
+* References another fragment, dependent on a specific Content Fragment Model.
 
-* 특정 컨텐츠 조각 모델에 따라 다른 조각을 참조합니다.
+* Allows you to create, and then retrieve, structured data.
 
-* 구조화된 데이터를 만들고 검색할 수 있습니다.
+  * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
-   * **다중 피드**&#x200B;로 정의되면 여러 하위 조각을 기본 조각의 참조(검색)할 수 있습니다.
+### JSON Preview {#json-preview}
 
-### JSON 미리 보기 {#json-preview}
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
-컨텐츠 조각 모델을 디자인하고 개발하는 데 도움이 되도록 컨텐츠 조각 편집기에서 JSON 출력을 미리 볼 수 있습니다.
+## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-## 컨텐츠 조각에서 GraphQL 스키마 생성 {#graphql-schema-generation-content-fragments}
+GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
 
-GraphQL은 강력한 형식의 API로, 콘텐츠는 유형별로 명확히 구조화되고 구성되어야 합니다. GraphQL 사양에서는 특정 인스턴스에서 컨텐츠를 질문하기 위한 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트는 쿼리에 필요한 모든 유형을 포함하는 스키마를 반입해야 합니다.
-
-컨텐츠 조각의 경우 GraphQL 스키마(구조 및 유형)는 **Enabled** 컨텐츠 조각 모델 및 해당 데이터 유형을 기반으로 합니다.
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 
 >[!CAUTION]
 >
->모든 GraphQL 스키마(**Enabled**&#x200B;인 컨텐츠 조각 모델에서 파생됨)는 GraphQL 끝점을 통해 읽을 수 있습니다.
+>All the GraphQL schemas (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
 >
->즉, 민감한 데이터가 GraphQL 끝점을 통해 노출되지 않도록 하려면 중요한 콘텐츠를 사용할 수 없도록 해야 합니다.예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
+>This means that you need to ensure that no sensitive content is available, to ensure that no sensitive data is exposed via GraphQL endpoints; for example, this includes information that could be present as field names in the model definition.
 
-예를 들어 사용자가 `Article`이라는 컨텐츠 조각 모델을 만든 경우 AEM은 `ArticleModel` 유형의 `article` 객체를 생성합니다. 이 유형의 필드는 모델에 정의된 필드 및 데이터 유형에 해당합니다.
+For example, if a user created a Content Fragment Model called `Article`, then AEM generates the object `article` that is of a type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model.
 
-1. 컨텐츠 조각 모델:
+1. A Content Fragment Model:
 
-   ![GraphQL에 사용할 ](assets/graphqlapi-cfmodel.png "GraphQLContent 조각 모델과 함께 사용할 컨텐츠 조각 모델")
+   ![Content Fragment Model for use with GraphQL](assets/graphqlapi-cfmodel.png "Content Fragment Model for use with GraphQL")
 
-1. 해당 GraphQL 스키마(GraphiQL 자동 설명서에서 출력):
-   ![컨텐츠 조각 모델을 기반으로 하는 GraphQL ](assets/graphqlapi-cfm-schema.png "스키마 컨텐츠 조각 모델 기반 QL 스키마")
+1. The corresponding GraphQL schema (output from GraphiQL automatic documentation):
+   ![GraphQL Schema based on Content Fragment Model](assets/graphqlapi-cfm-schema.png "GraphQL Schema based on Content Fragment Model")
 
-   생성된 유형 `ArticleModel`에 여러 개의 [필드](#fields)가 포함되어 있음을 보여줍니다.
+   This shows that the generated type `ArticleModel` contains several [fields](#fields). 
+   
+   * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
 
-   * 이 중 3개는 사용자가 제어했습니다.`author`, `main` 및 `referencearticle`.
+   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
-   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 컨텐츠 조각에 대한 정보를 제공하는 유용한 방법을 나타냅니다.이 예에서 `_path`, `_metadata`, `_variations`입니다. 이러한 [도우미 필드](#helper-fields)는 사용자가 정의한 항목과 자동 생성된 항목을 구별하기 위해 이전 `_`으로 표시됩니다.
+1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the Sample Queries.md#graphql-sample-queries) (based on a sample Content Fragment structure for use with GraphQL.
 
-1. 사용자가 아티클 모델을 기반으로 컨텐츠 조각을 만든 후 GraphQL을 통해 질문할 수 있습니다. 예를 들어 GraphQL에 사용할 수 있는 샘플 컨텐츠 조각 구조를 기반으로 Sample Queries.md#graphql-sample-queries)를 참조하십시오.
+In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
-AEM용 GraphQL에서 스키마는 유연합니다. 즉, 컨텐츠 조각 모델이 생성, 업데이트 또는 삭제될 때마다 매번 자동으로 생성됩니다. 컨텐츠 조각 모델을 업데이트할 때 데이터 스키마 캐시도 새로 고쳐집니다.
+The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
 
-Sites GraphQL 서비스는 컨텐츠 조각 모델에 대한 수정 사항에 대해(백그라운드)을 수신합니다. 업데이트가 감지되면 스키마의 부분만 다시 생성됩니다. 이 최적화는 시간을 절약하고 안정성을 제공합니다.
+So for example, if you:
 
-예를 들어,
+1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
+ 
+   1. GraphQL types for `Model-1` and `Model-2` will be generated.
 
-1. `Content-Fragment-Model-1` 및 `Content-Fragment-Model-2`이(가) 포함된 패키지를 설치합니다.
+1. Then modify `Content-Fragment-Model-2`:
 
-   1. `Model-1` 및 `Model-2`에 대한 GraphQL 유형이 생성됩니다.
+   1. Only the `Model-2` GraphQL type will get updated.
 
-1. 그런 다음 `Content-Fragment-Model-2`을(를) 수정합니다.
-
-   1. `Model-2` GraphQL 유형만 업데이트됩니다.
-
-   1. 반면에 `Model-1`은(는) 동일하게 유지됩니다.
+   1. Whereas `Model-1` will remain the same. 
 
 >[!NOTE]
 >
->REST api를 통해 컨텐츠 조각 모델에 대해 벌크 업데이트를 수행하거나, 그렇지 않을 경우 주의하는 것이 중요합니다.
+>This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
 
-스키마는 GraphQL 쿼리와 동일한 종단점을 통해 제공되며, 클라이언트는 확장명 `GQLschema`과(와) 함께 스키마를 호출한다는 사실을 처리합니다. 예를 들어 `/content/cq:graphql/global/endpoint.GQLschema`에서 간단한 `GET` 요청을 수행하면 Content-type이 있는 스키마 출력이 발생합니다.`text/x-graphql-schema;charset=iso-8859-1`.
+The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
 
-### 스키마 생성 - 게시되지 않은 모델 {#schema-generation-unpublished-models}
+### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
 
-컨텐츠 조각이 중첩되면 상위 컨텐츠 조각 모델이 게시되지만 참조된 모델은 게시되지 않을 수 있습니다.
+When Content Fragments are nested it can happen that a parent Content Fragment Model is published, but a referenced model is not.
 
 >[!NOTE]
 >
->AEM UI는 이러한 문제를 방지하지만 게시가 프로그래밍 방식으로 또는 콘텐츠 패키지로 이루어진 경우에는 발생할 수 있습니다.
+>The AEM UI prevents this happening, but if publishing is made programmatically, or with content packages, it can occur.
 
-이 경우 AEM은 상위 컨텐츠 조각 모델에 대한 *불완전한* 스키마를 생성합니다. 즉, 게시되지 않은 모델에 종속된 조각 참조가 스키마에서 제거됩니다.
+When this happens, AEM generates an *incomplete* Schema for the parent Content Fragment Model. This means that the Fragment Reference, which is dependent on the unpublished model, is removed from the schema.
 
-## AEM GraphQL 끝점 {#aem-graphql-endpoints}
+## AEM GraphQL Endpoints {#aem-graphql-endpoints}
 
-<!--
-need details/examples
+An endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
+
+* access the GraphQL schemas,
+* send your GraphQL queries,
+* receive the responses (to your GraphQL queries).
+
+AEM allows for:
+
+* A global endpoint - available for use by all sites.
+* Endpoints for specific Sites configurations - that you can configure (in the Configuration Browser), specific to a specified site/project.
+
+## Permissions {#permissions}
+
+The permissions are those required for accessing Assets.
+
+## The AEM GraphiQL Interface {#aem-graphiql-interface}
+
+To help you directly input, and test queries, an implementation of the standard GraphiQL interface is available for use with AEM GraphQL. This can be installed with AEM.
+
+>[!NOTE]
+>
+>GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
+
+It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
+
+![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 -->
 
-끝점은 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 이 경로를 사용하여(또는 앱) 다음 작업을 수행할 수 있습니다.
-
-* GraphQL 스키마 액세스,
-* GraphQL 쿼리 보내기,
-* GraphQL 쿼리에 대한 응답을 받습니다.
-
-AEM에서 허용하는 조건:
-
-* 전역 끝점 - 모든 사이트에서 사용할 수 있습니다.
-* 테넌트 끝점 - 지정한 사이트/프로젝트에만 따라 구성할 수 있습니다.
-
-## 권한 {#permissions}
-
-권한은 자산에 액세스하는 데 필요한 권한입니다.
-
-## AEM GraphiQL 인터페이스 {#aem-graphiql-interface}
-
-AEM GraphQL에서 표준 GraphiQL 인터페이스를 구현하면 쿼리를 직접 입력하고 테스트할 수 있습니다. AEM과 함께 설치할 수 있습니다.
-
-구문 강조, 자동 완성, 자동 제안 등의 기능과 기록 및 온라인 설명서를 함께 제공합니다.
-
-![GraphiQL ](assets/graphiql-interface.png "인터페이스 그래픽QL 인터페이스")
-
 ## 실제로 AEM GraphQL API {#actually-using-aem-graphiql} 사용
+
+### 초기 설정 {#initial-setup}
 
 콘텐츠에 대한 쿼리를 시작하기 전에 다음 작업을 수행해야 합니다.
 
@@ -246,6 +250,8 @@ AEM GraphQL에서 표준 GraphiQL 인터페이스를 구현하면 쿼리를 직�
 
 * GraphiQL 설치(필요한 경우)
    * 전용 패키지로 설치
+
+### 샘플 구조 {#sample-structure}
 
 실제로 쿼리에 AEM GraphQL API를 사용하려면 두 가지 기본 컨텐츠 조각 모델 구조를 사용할 수 있습니다.
 
@@ -264,9 +270,13 @@ AEM GraphQL에서 표준 GraphiQL 인터페이스를 구현하면 쿼리를 직�
 * 컨텐츠 조각 편집기에서 컨텐츠를 작성할 때
 * 쿼리할 GraphQL 스키마를 생성하려면
 
+### 쿼리 테스트 위치 {#where-to-test-your-queries}
+
 GraphiQL 인터페이스에서 쿼리를 입력할 수 있습니다. 예를 들면 다음과 같습니다.
 
 * `http://localhost:4502/content/graphiql.html `
+
+### 쿼리 시작 {#getting-Started-with-queries}
 
 간단한 쿼리는 회사 스키마에 있는 모든 항목의 이름을 반환하는 것입니다. 여기에서 모든 회사 이름 목록을 요청합니다.
 
