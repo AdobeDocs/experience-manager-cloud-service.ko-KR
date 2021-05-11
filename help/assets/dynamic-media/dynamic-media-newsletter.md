@@ -5,9 +5,9 @@ feature: 자산 관리
 role: Business Practitioner
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 0%
    * Dynamic Media 팀이 일반 방문자 트래픽보다 높은 하루 일정을 준비하는 데 도움이 되는 방법을 확인하십시오.
    * 최근 2개의 Skill Builder 웨비나를 볼 수 있는 두 번째 기회.
    * 불법 복제로부터 디지털 자산을 보호하는 On-Demand 웨비나를 시청하십시오.
-   * Adobe Experience Manager Assets 선임 제품 마케팅 관리자인 Brigal Roman을 만나보십시오.
+   * Experience Manager 에셋 부문 선임 제품 마케팅 관리자인 Brigal Roman을 만나보십시오.
    * Experience League에서 Dynamic Media 및 Dynamic Media Classic을 빠르게 실행할 수 있습니다.
 
 * **[2019년 8월, 2008년](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
@@ -112,7 +112,7 @@ ht-degree: 0%
    이 문제:
 
    * Dynamic Media으로 업그레이드할 때에만 사용할 수 있는 중요한 기능을 살펴보십시오.
-   * Adobe Experience Manager 에셋 및 Dynamic Media을 빠르게 익힐 수 있도록 고안된 웨비나 시리즈에 대해 살펴보십시오.
+   * Experience Manager 에셋 및 Dynamic Media을 빠르게 익힐 수 있도록 고안된 웨비나 시리즈에 대해 살펴보십시오.
    * Experience League에서 Dynamic Media을 통해 가치를 창출하는 여정을 시작할 수 있습니다.
    * 방문자가 리치 미디어와 어떻게 상호 작용하는지 분석할 수 있는 이번 9월 이후의 강력한 통합을 미리 보십시오.
    * Dynamic Media 기술 지원의 귀재인 PieterJan Pieper를 만나보십시오.
@@ -124,7 +124,7 @@ ht-degree: 0%
    * 고부가가치 자산을 적절히 관리할 수 있는 리소스와 정보를 통해 방문자가 다시 방문하도록 경험을 안전하게 전달할 수 있습니다.
    * 디지털 자산 보호에 대한 웨비나에 대해 자세히 알아보십시오.
    * 정보가 가득한 Adobe 인사이더 투어에서 다음 정거장을 마친다.
-   * Adobe Experience Manager Assets(AEM Assets)에 Dynamic Media이 있는 경우 사용할 수 있는 흥미로운 기능입니다.
+   * Experience Manager 에셋(AEM Assets)에 Dynamic Media이 있는 경우 사용할 수 있는 흥미로운 기능입니다.
    * 웹 사이트에 360도 비디오와 사용자 정의 비디오 축소판 추가
    * AEM Assets에서 Dynamic Media의 주요 솔루션 컨설턴트인 Andrew 해서웨이를 만나보십시오.
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
    이 문제:
 
-   * 블로그 게시물에서 Dynamic Media Classic의 10가지 숨겨진 기능을 살펴보십시오.
+   * 블로그 게시물에서 Dynamic Media Classic의 10가지 숨겨진 기능을 살펴볼 수 있습니다.
    * Experience League에서 사용 방법 비디오를 시청하십시오.
    * 예정된 Adobe 인사이더 투어에 대해 알아봅니다.
    * 리치 미디어 전략을 업데이트하려면 3파트로 된 블로그 시리즈를 읽으십시오.
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 * **[2019년 4월, 2014년 4월](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Dynamic Media 뉴스레터의 취임 발행물에 오신 것을 환영합니다. Adobe의 새로운 월별 뉴스레터는 뉴스, 이벤트 및 리소스로 채워집니다. 이 컨텐츠는 Adobe Experience Manager Assets 및 Adobe Dynamic Media Classic 내에서 Dynamic Media 사용자를 위한 것입니다.
+   Dynamic Media 뉴스레터의 취임 발행물에 오신 것을 환영합니다. Adobe의 새로운 월별 뉴스레터는 뉴스, 이벤트 및 리소스로 채워집니다. 이 컨텐츠는 Experience Manager 자산 및 Adobe Dynamic Media Classic 내에서 Dynamic Media 사용자를 위한 것입니다.
 
    이 문제:
 
