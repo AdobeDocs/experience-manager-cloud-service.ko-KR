@@ -5,10 +5,10 @@ breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 72%
+source-wordcount: '482'
+ht-degree: 73%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 72%
    + [개발자 문서 및 API 참조](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [이미지 및 비디오 프로필을 사용한 작업](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [이미지의 스마트 태그 지정 구성](smart-tags-configuration.md)
    + [다국어 자산 및 번역](translate-assets.md)
    + [검색 패싯](search-facets.md)
    + [자산 HTTP API](mac-api-assets.md)
