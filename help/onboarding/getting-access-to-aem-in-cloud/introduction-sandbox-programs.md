@@ -1,14 +1,14 @@
 ---
 title: '샌드박스 프로그램 소개 '
-description: '샌드박스 프로그램 소개 '
+description: 샌드박스 프로그램 소개
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # 샌드박스 프로그램 소개 {#sandbox-programs}
 
@@ -38,5 +38,7 @@ ht-degree: 0%
 1. **AEM 업데이트:** AEM 업데이트는 샌드박스 프로그램의 환경에 수동으로 적용할 수 있으며 자동으로 푸시되지 않습니다.
 자세한 내용은 [AEM 샌드박스 환경의 업데이트](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox)를 참조하십시오.
 
-1. **최대 절전 모드:** 일정 기간 동안 활동이 감지되지 않으면 샌드박스 프로그램의 환경이 자동으로 동면됩니다. 최대 절전 모드 환경에서는 수동으로 동면되는 상태를 해제할 수 있습니다.
+1. **최대 절전 모드:** 일정 기간 동안 활동이 감지되지 않으면 샌드박스 프로그램의 환경이 자동으로 동면됩니다. 샌드박스는 8시간 동안 활동하지 않으면 최대 절전 모드 상태에 놓이고 그 후 최대 절전 모드 해제 상태로 전환됩니다. 최대 절전 모드 환경에서는 수동으로 동면되는 상태를 해제할 수 있습니다.
 자세한 내용은 [최대 절전 모드 해제 및 최대 절전 모드 해제 환경](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)을 참조하십시오.
+
+1. **삭제**:샌드박스는 연속적인 최대 절전 모드 실행 후 6개월 후 삭제되며 그 후 다시 만들 수 있습니다.
