@@ -5,9 +5,9 @@ feature: 자산 관리
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 비디오를 재생하거나 웹 페이지에 포함된 자산을 보려면 **[!UICONTROL 포함 코드]** 기능을 사용합니다. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. **[!UICONTROL 포함 코드]** 대화 상자에서 코드 편집이 허용되지 않습니다.
 
-AEM을 WCM으로 사용하는 _이 아닌_&#x200B;인 경우에만 URL을 포함합니다. AEM을 WCM으로 사용하는 경우 [페이지](adding-dynamic-media-assets-to-pages.md)에 직접 자산을 추가합니다.
+Adobe Experience Manager을 WCM으로 사용하는 _이 아닌_&#x200B;인 경우에만 URL을 포함합니다. Experience Manager을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다](adding-dynamic-media-assets-to-pages.md).
 
 [웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
 
@@ -32,7 +32,7 @@ AEM을 WCM으로 사용하는 _이 아닌_&#x200B;인 경우에만 URL을 포함
 >
 >[이미지 사전 설정 게시](managing-image-presets.md#publishing-image-presets)를 참조하십시오.
 
-**웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어를 포함하려면**
+**웹 페이지에 Dynamic Media 비디오 또는 이미지 뷰어를 포함하려면:**
 
 1. 포함 코드를 복사하려는 *게시된* 비디오 또는 이미지 자산으로 이동합니다.
 
