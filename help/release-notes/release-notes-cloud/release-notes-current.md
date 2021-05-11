@@ -3,9 +3,9 @@ title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '2002'
 ht-degree: 2%
 
 ---
@@ -223,6 +223,22 @@ Cloud Service 2021.4.0인 AEM의 Cloud Manager에 대한 릴리스 날짜는 202
 * 다운로드 가능한 문제 CSV 파일에서 `CloudServiceIncompatibleWorkflowProcess` 문제의 심각도가 잘못되었습니다.
 
 * `Runmode` 검사가 비폴더 노드에서 잘못된 양수를 생성하고 있었습니다.
+
+## 컨텐츠 전송 도구 {#content-transfer-tool}
+
+### 릴리스 날짜 {#release-date-ctt}
+
+내용 전송 도구 v1.4.0 릴리스 날짜는 2021년 5월 11일입니다.
+
+### 새로운 기능 {#what-is-new-ctt-may}
+
+* 이 버전의 콘텐츠 전송 도구는 Cloud Service으로 마이그레이션되는 자산에 대한 텍스트 변환을 만듭니다. 인제스트된 자산에서 전체 텍스트 검색을 지원하려면 텍스트 표현물이 필요합니다.
+* 사용자가 만들 수 있는 최대 내용 전송 도구 마이그레이션 수가 4개에서 10개로 증가했습니다.
+
+### 버그 수정 {#bug-fixes-ctt-may}
+
+* 컨텐츠 전송 도구 UI의 자동 새로 고침 기능과 관련된 여러 버그 수정.
+* `wipe=true`이(가) 있는 콘텐츠 전송 도구가 타겟에 잘못된 카운터 색인을 가져왔습니다. 이 문제가 수정되었습니다.
 
 ## 우수 사례 분석기 {#best-practices-analyzer}
 
