@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -324,11 +324,10 @@ AEM 헤드리스 개발자 여정의 이 부분을 완료하셨다면 다음을 
 
 AEM 헤드리스 프로젝트를 사용하고 라이브할 준비를 하는 방법을 배울 수 있는 AEM Headless](put-it-all-together.md) 문서의 [모두 함께 놓는 방법 - 앱과 귀하의 컨텐츠를 차례로 검토하여 AEM 헤드리스 여정을 계속 진행해야 합니다.
 
+[AEM을 사용하여 단일 페이지 애플리케이션(SPA)을 만드는 방법](create-spa.md) 은 AEM Editor 프레임워크를 사용하여 편집 가능한 SPA을 만들고 외부 SPA을 통합하여 필요에 따라 편집 기능을 활성화하는 방법을 보여줍니다.
+
 ## 추가 리소스 {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [HATEOAS 원칙](https://en.wikipedia.org/wiki/HATEOAS)
-* [사이렌 형식](https://github.com/kevinswiber/siren)
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
 * [컨텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
