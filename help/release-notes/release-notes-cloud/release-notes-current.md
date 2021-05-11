@@ -3,9 +3,9 @@ title: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴
 description: Cloud Service으로 [!DNL Adobe Experience Manager] 에 대한 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
+source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1906'
 ht-degree: 2%
 
 ---
@@ -72,6 +72,8 @@ Cloud Service으로 [!DNL Adobe Experience Manager]에 대한 릴리스 날짜�
 * 열 보기에서 자산을 검색할 때 시각적 표시기에 각 자산의 승인됨 또는 거부됨 상태가 표시됩니다.
 
 * 열 보기에서 자산을 검색할 때 만료된 자산에 대한 시각적 표시기가 표시됩니다.
+
+* 텍스트 영역 데이터 유형은 [!DNL Assets] 메타데이터 편집기에서 사용할 수 있습니다. 이 옵션을 사용하여 사용자가 자유형 텍스트 필드에 메타데이터를 입력할 수 있습니다.
 
 ### [!DNL Assets] {#bug-fixes-assets}의 버그 수정
 
