@@ -5,9 +5,9 @@ feature: 콘텐츠 조각
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 22%
 
 ---
@@ -28,7 +28,7 @@ AEM의 강력한 헤드리스 전달 기능을 활용할 수 있도록 구성 �
 >**컨텐츠 조각 모델**&#x200B;을(를) 활성화하지 않는 경우:
 >
 >* **만들기** 옵션은 새 모델을 만드는 데 사용할 수 없습니다.
->* [테넌트를 선택하여 관련 끝점](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)을(를) 만들 수 없습니다.
+>* [사이트 구성을 선택하여 관련 끝점](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)을(를) 만들 수 없습니다.
 
 
 컨텐츠 조각 기능을 활성화하려면 다음을 수행해야 합니다.
