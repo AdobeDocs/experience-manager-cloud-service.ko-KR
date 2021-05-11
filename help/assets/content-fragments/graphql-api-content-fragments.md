@@ -4,9 +4,9 @@ description: AEM(Adobe Experience Manager)의 컨텐츠 조각을 헤드리스 �
 feature: 컨텐츠 조각,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 2%
 
 ---
@@ -121,20 +121,20 @@ AEM에는 두 가지 유형의 끝점이 있습니다.
 
 * 전역
    * 모든 사이트에서 사용할 수 있습니다.
-   * 이 끝점은 모든 테넌트의 모든 콘텐츠 조각 모델을 사용할 수 있습니다.
-   * 테넌트 간에 공유해야 하는 컨텐츠 조각 모델이 있는 경우 글로벌 테넌트 아래에 만들어야 합니다.
-* 임차인:
-   * [구성 브라우저](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)에 정의된 테넌트 구성에 해당합니다.
+   * 이 끝점은 모든 사이트 구성([구성 브라우저](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)에 정의됨)의 모든 컨텐츠 조각 모델을 사용할 수 있습니다.
+   * 사이트 구성 간에 공유해야 하는 컨텐츠 조각 모델이 있는 경우 글로벌 사이트 구성 아래에 만들어야 합니다.
+* 사이트 구성:
+   * [구성 브라우저](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)에 정의된 사이트 구성에 해당합니다.
    * 지정된 사이트/프로젝트에 따라 다릅니다.
-   * 테넌트 특정 끝점은 글로벌 테넌트의 콘텐츠와 함께 특정 테넌트의 콘텐츠 조각 모델을 사용합니다.
+   * 사이트 구성 특정 끝점은 글로벌 사이트 구성의 컨텐츠 조각 모델과 함께 특정 사이트 구성의 컨텐츠 조각 모델을 사용합니다.
 
 >[!CAUTION]
 >
->컨텐츠 조각 편집기는 특정 테넌트의 컨텐츠 조각이 정책을 통해 다른 테넌트의 컨텐츠 조각을 참조하도록 허용할 수 있습니다.
+>컨텐츠 조각 편집기는 특정 사이트 구성의 컨텐츠 조각이 정책을 통해 다른 사이트 구성의 컨텐츠 조각을 참조하도록 허용할 수 있습니다.
 >
->이러한 경우 테넌트 특정 끝점을 사용하여 모든 콘텐츠를 검색할 수 없습니다.
+>이러한 경우 사이트 구성 특정 끝점을 사용하여 모든 콘텐츠를 검색할 수 없습니다.
 >
->컨텐츠 작성자는 이 시나리오를 제어해야 합니다.예를 들어 글로벌 테넌트에 공유 컨텐츠 조각 모델을 배치하는 것이 유용할 수 있습니다.
+>컨텐츠 작성자는 이 시나리오를 제어해야 합니다.예를 들어 글로벌 사이트 구성 아래에 공유 컨텐츠 조각 모델을 배치하는 것이 유용할 수 있습니다.
 
 AEM 전역 끝점에 대한 GraphQL의 리포지토리 경로는 다음과 같습니다.
 
@@ -196,6 +196,10 @@ GraphQL 끝점을 활성화하려면 먼저 적절한 구성이 있어야 합니
 ## 그래픽 QL 인터페이스 {#graphiql-interface}
 
 AEM GraphQL에서 표준 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) 인터페이스의 구현을 사용할 수 있습니다. AEM](#installing-graphiql-interface)과 함께 [설치할 수 있습니다.
+
+>[!NOTE]
+>
+>GraphiQL은 전역 끝점에 바인딩되며 특정 사이트 구성에 대한 다른 끝점에서는 작동하지 않습니다.
 
 이 인터페이스를 사용하면 쿼리를 직접 입력하고 테스트할 수 있습니다.
 
@@ -587,21 +591,21 @@ POST 요청을 사용하여 쿼리를 준비한 후 HTTP 캐시 또는 CDN을 �
 
 POST 쿼리는 일반적으로 캐시되지 않으며, 쿼리와 함께 GET을 매개 변수로 사용하는 경우 매개 변수가 HTTP 서비스 및 중계기에 너무 많이 사용되면 위험합니다.
 
-지속적인 쿼리는 항상 [적절한(테넌트) 구성](#graphql-aem-endpoint);과 관련된 끝점을 사용해야 합니다.둘 중 하나 또는 둘 다를 사용할 수 있습니다.
+지속적인 쿼리는 항상 [해당 사이트 구성](#graphql-aem-endpoint);과 관련된 끝점을 사용해야 합니다.둘 중 하나 또는 둘 다를 사용할 수 있습니다.
 
 * 전역 구성 및 끝점
 쿼리는 모든 컨텐츠 조각 모델에 액세스할 수 있습니다.
-* 특정 테넌트 구성 및 끝점
-특정 테넌트 구성에 대해 지속적인 쿼리를 만들려면 해당 임차인 특정 끝점이 필요합니다(관련 컨텐츠 조각 모델에 대한 액세스 제공).
-예를 들어 WKND 테넌트에 대한 지속적인 쿼리를 만들려면 해당 WKND 관련 테넌트 구성과 WKND 특정 끝점을 미리 만들어야 합니다.
+* 특정 사이트 구성 및 끝점
+특정 사이트 구성에 대해 지속적인 쿼리를 만들려면 해당 사이트 구성 특정 끝점이 필요합니다(관련 컨텐츠 조각 모델에 대한 액세스 제공).
+예를 들어 WKND 사이트 구성을 위해 특별히 지속적인 쿼리를 만들려면 해당 WKND 관련 사이트 구성 및 WKND 특정 끝점을 미리 만들어야 합니다.
 
 >[!NOTE]
 >
 >자세한 내용은 [구성 브라우저에서 컨텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)를 참조하십시오.
 >
->해당 테넌트 구성에 대해 **GraphQL 지속성 쿼리**&#x200B;를 활성화해야 합니다.
+>해당 사이트 구성에 대해 **GraphQL 지속성 쿼리**&#x200B;를 활성화해야 합니다.
 
-예를 들어 테넌트 구성 `my-conf`의 모델 `my-model`을 사용하는 `my-query`이라는 특정 쿼리가 있는 경우:
+예를 들어 사이트 구성 `my-conf`의 모델 `my-model`을 사용하는 `my-query`이라는 특정 쿼리가 있는 경우:
 
 * `my-conf` 특정 끝점을 사용하여 쿼리를 만들면 쿼리는 다음과 같이 저장됩니다.
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
