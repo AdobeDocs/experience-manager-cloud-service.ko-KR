@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0용 릴리스 노트
 description: Experience Manager 2020.6.0용 릴리스 노트
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 99%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
-
 
 # AEM as a Cloud Service 2020.6.0 릴리스 노트 {#release-notes}
 
@@ -110,7 +110,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 고급 스마트 태그를 사용하면 일반 스마트 태그 외에도 고급 태그 모델 기반의 이미지를 인식할 수 있도록 고급 태그 지정 모델을 교육할 수 있습니다.
 
 이번 릴리스에는 고객별 태그의 세트에 대한 스마트 태그 교육을 설정하고, 자산에 대한 교육을 제공하는 가이드 방식의 새로운 사용자 경험이 포함되어 있으며, 이를 인식하여 향후 태그를 지정해야 합니다. 이제 경험이 보다 직관적이 됩니다.
-고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. [자산에 스마트 태그를 추가](/help/assets/smart-tags.md)하고 [스마트 태그 지정을 구성하는 방법](/help/assets/smart-tags-configuration.md)을 참조하십시오.
+고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. 자산](/help/assets/smart-tags.md)에 스마트 태그를 추가하는 방법을 참조하십시오.[
 
 **3D 컨텐츠 수집, 미리 보기 및 전달 지원**
 
