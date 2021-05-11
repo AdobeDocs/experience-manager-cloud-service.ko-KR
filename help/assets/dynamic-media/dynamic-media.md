@@ -4,16 +4,16 @@ description: Dynamic Media을 사용하여 웹, 모바일 및 소셜 사이트�
 role: Administrator,Business Practitioner
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 22%
+source-wordcount: '399'
+ht-degree: 20%
 
 ---
 
 # Dynamic Media 작업 {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 제공하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 제공하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
 
 Dynamic Media은 확대/축소, 360도 회전, 비디오 등 인터랙티브한 보기 경험을 제공합니다. Dynamic Media은 Adobe Experience Manager 디지털 에셋 관리(Assets) 솔루션의 워크플로우를 고유하게 통합하여 디지털 캠페인 관리 프로세스를 간소화합니다.
 
@@ -38,7 +38,7 @@ Dynamic Media 전용 기능은 다음과 같습니다.
 * [비디오](video.md)
 * [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
 * [자산 관리](managing-assets.md)
-* [빠른 보기를 사용하여 사용자 정의 팝업 창 만들기](custom-pop-ups.md)
+* [빠른 보기를 사용하여 사용자 정의 팝업 Windows® 만들기](custom-pop-ups.md)
 
 [Dynamic Media](administering-dynamic-media.md) 설정을 참조하십시오.
 
@@ -81,7 +81,7 @@ Dynamic Media이 활성화된 자산은 `pyramid.tiffs`입니다.
 
 ### 자산 보기 변경: {#asset-views-change}
 
-Dynamic Media이 활성화되면 `+` 및 `-` 단추를 클릭하여 확대/축소할 수 있습니다. 클릭/탭하여 특정 영역을 확대할 수도 있습니다. [되돌리기]를 선택하면 원래 버전으로 이동하며 대각선 화살표를 클릭하여 이미지를 전체 화면으로 만들 수 있습니다. Dynamic Media에서 활성화한 모습은 다음과 같습니다.
+Dynamic Media이 활성화되면 `+` 및 `-` 단추를 클릭하여 확대/축소할 수 있습니다. 클릭/탭하여 특정 영역을 확대할 수도 있습니다. [되돌리기]를 선택하면 원래 버전으로 이동하며 대각선 화살표를 클릭하여 이미지를 전체 화면으로 만들 수 있습니다. Dynamic Media이 활성화되어 있으면 다음과 같이 표시됩니다.
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
