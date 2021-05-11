@@ -5,9 +5,9 @@ feature: 자산 관리
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '321'
 ht-degree: 7%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 7%
 
 Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 
-* 웹 사이트가 AEM에서 호스팅되는 경우 Dynamic Media 자산을 페이지에 직접 추가할 수 있습니다.
-* 웹 사이트가 AEM에 없다면 다음 중 하나를 선택할 수 있습니다.
+* 웹 사이트가 Adobe Experience Manager에서 호스팅되는 경우 Dynamic Media 자산을 페이지에 직접 추가할 수 있습니다.
+* 웹 사이트가 Experience Manager에 없는 경우 다음 중 하나를 선택합니다.
 
    * 웹 사이트에 비디오 또는 이미지 임베드
    * 웹 응용 프로그램에 URL을 연결합니다. 비디오 플레이어를 팝업 또는 모달 창으로 제공하려는 경우 링크를 사용합니다.
@@ -43,6 +43,6 @@ Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 
 ## Dynamic Media 에셋 {#http-delivery-of-dynamic-media-assets} HTTP/2 전달
 
-AEM은 이제 HTTP/2를 통해 모든 Dynamic Media 컨텐츠(이미지 및 비디오)를 전달할 수 있습니다. 즉, 이미지 또는 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 이렇게 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 방식의 전달은 브라우저 및 서버의 통신 방식을 개선하여 모든 Dynamic Media 에셋에 대한 응답 및 로드 시간을 향상시킵니다.
+이제 Experience Manager은 HTTP/2를 통해 모든 Dynamic Media 컨텐츠(이미지 및 비디오)를 전달할 수 있습니다. 즉, 이미지 또는 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 이렇게 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 방식의 전달은 브라우저 및 서버의 통신 방식을 개선하여 모든 Dynamic Media 에셋에 대한 응답 및 로드 시간을 향상시킵니다.
 
 자세한 내용은 [HTTP/2 FAQ 배달](/help/assets/dynamic-media/http2faq.md)을 참조하십시오.
