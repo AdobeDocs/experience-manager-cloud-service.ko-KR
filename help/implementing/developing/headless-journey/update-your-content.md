@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1115'
 ht-degree: 2%
 
 ---
@@ -190,26 +190,28 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 컨텐츠 조각은 헤드리스 전달에 사용되며 컨텐츠 조각은 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용됩니다.
 
-*standard* 자산(예: 이미지 또는 오디오)에 차이가 여러 개 있으므로 처리 시 일부 추가 규칙이 적용됩니다.
+<!--
+As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
-### 표현 {#representation}
+### Representation {#representation}
 
-컨텐츠 조각:
+Content fragments:
 
-* 이진 데이터를 노출하지 마십시오.
-* JSON 출력(`properties` 속성 내)에 완전히 포함됩니다.
+* Do not expose any binary data.
+* Are completely contained in the JSON output (within the `properties` property).
 
-* 요소 및 변형을 원자성으로 간주합니다. 즉, 요소 및 변형을 링크 또는 하위 엔티티보다 조각 속성의 일부로 노출됩니다. 이렇게 하면 조각의 페이로드에 대한 효율적인 액세스를 할 수 있습니다.
+* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
-### 컨텐트 모델 및 컨텐츠 조각 {#content-models-and-content-fragments}
+### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-현재 컨텐츠 조각 구조를 정의하는 모델은 HTTP API를 통해 노출되지 않습니다. 따라서 대부분의 정보를 페이로드에서 유추할 수 있지만, *consumer*&#x200B;는 조각 모델에 대해 알아야 합니다(최소 최소).데이터 유형 등에 는 정의의 일부입니다.
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-새 컨텐츠 조각을 만들려면 모델의 (내부 저장소) 경로를 제공해야 합니다.
+To create a new content fragment, the (internal repository) path of the model has to be provided.
 
-### 관련 컨텐츠 {#associated-content}
+### Associated Content {#associated-content}
 
-연관된 컨텐츠는 현재 노출되지 않습니다.
+Associated content is currently not exposed.
+-->
 
 ## 자산 REST API 사용 {#using-aem-assets-rest-api}
 
