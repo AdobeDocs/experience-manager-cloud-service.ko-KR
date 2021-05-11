@@ -1,14 +1,14 @@
 ---
 title: '동면작업 및 동면제거 샌드박스 환경 '
-description: '동면작업 및 동면제거 샌드박스 환경 '
+description: 동면작업 및 동면제거 샌드박스 환경
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
-
 
 # 최대 절전 모드 해제 및 최대 절전 모드 해제 환경 {#hibernating-introduction}
 
@@ -121,8 +121,12 @@ Cloud Service으로 AEM에 액세스할 수 있는 제품 프로필을 보유한
 
 * AEM 업그레이드는 최대 절전 모드 상태에 적용할 수 있으며 고객이 Cloud Manager에서 수동으로 시작할 수 있습니다. 이 환경은 동면기를 유지할 것이며 새로운 릴리스는 일단 동면기를 제거한 후에 환경에 나타날 것이다.
 
->[!NOTE]
->현재 Cloud Manager는 환경에서 동면하는 상태를 나타내지 않습니다.
+* 샌드박스는 8시간 동안 활동하지 않으면 최대 절전 모드 상태에 놓이고 그 후 최대 절전 모드 해제 상태로 전환됩니다.
+
+* 샌드박스는 연속적인 최대 절전 모드 실행 후 6개월 후 삭제되며 그 후 다시 만들 수 있습니다.
+
+   >[!NOTE]
+   >현재 Cloud Manager는 환경에서 동면하는 상태를 나타내지 않습니다.
 
 ## 샌드박스 환경에 대한 AEM 업데이트 {#aem-updates-sandbox}
 
@@ -135,9 +139,4 @@ Cloud Service으로 AEM에 액세스할 수 있는 제품 프로필을 보유한
 >[!NOTE]
 >* 수동 업데이트는 타깃팅된 환경에 제대로 구성된 파이프라인이 있는 경우에만 실행할 수 있습니다.
 >* *Production* 또는 *Stage* 환경에 대한 수동 업데이트는 다른 내용을 자동으로 업데이트합니다. Production+Stage 환경 설정은 동일한 AEM 릴리스에 있어야 합니다.
-
-
-
-
-
 
