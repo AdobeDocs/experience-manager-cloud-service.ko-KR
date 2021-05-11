@@ -1,21 +1,21 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 2020.8.0.'
+exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 5%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 릴리스 노트 {#release-notes}
 
 다음 섹션에서는 Experience Manager as a Cloud Service 2020.8.0 일반 릴리스 노트를 간략하게 설명합니다.
 
 
-## [!DNL Adobe Experience Manager Sites] cloud service  {#sites}
+## [!DNL Adobe Experience Manager Sites] Cloud Service  {#sites}
 
 ### [!DNL Sites] {#what-is-new-sites}의 새로운 기능
 
@@ -24,13 +24,13 @@ ht-degree: 5%
 * AEM [SPA 편집기에서 [론치](/help/sites-cloud/authoring/launches/overview.md)를 만들 수 있습니다.](/help/implementing/developing/hybrid/introduction.md)
 
 
-## [!DNL Adobe Experience Manager Assets] cloud service  {#assets}
+## [!DNL Adobe Experience Manager Assets] Cloud Service  {#assets}
 
 ### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
 
 * 이제 에셋 마이크로서비스에서 비디오 트랜스코딩이 지원됩니다. [!UICONTROL 처리 프로필] 구성의 새 섹션을 사용하여 비디오 비트 전송률과 크기를 설정할 수 있습니다. 출력 형식은 H.264 코덱이 있는 MP4입니다. 자세한 내용은 [비디오 자산 관리](/help/assets/manage-video-assets.md#transcode-video)를 참조하십시오. 더 많은 트랜스코딩 옵션과 비디오 전달을 위해서는 [!DNL Dynamic Media] 추가 기능을 사용하십시오.
 
-* 새 [!DNL Experience Manager Assets] 배포에서는 이제 스마트 태그 지정 기능이 기본적으로 구성됩니다. 수동으로 [!DNL Adobe Developer Console]과 통합할 필요가 없습니다. 기존 배포에서 관리자는 [스마트 태그 통합](/help/assets/smart-tags-configuration.md#aio-integration)을(를) 이전처럼 구성합니다.
+* 새 [!DNL Experience Manager Assets] 배포에서는 이제 스마트 태그 지정 기능이 기본적으로 구성됩니다. 수동으로 [!DNL Adobe Developer Console]과 통합할 필요가 없습니다. 기존 배포에서 관리자는 스마트 태그 통합을 이전과 같이 구성합니다.
 
 * 새 [자산 다운로드 경험](/help/assets/download-assets-from-aem.md)에서
 
