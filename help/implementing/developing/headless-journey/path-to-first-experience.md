@@ -4,14 +4,14 @@ description: AEM 헤드리스 개발자 여정의 이 부분에서 계획 고려
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # AEM 헤드리스 {#path-to-first-experience}을(를) 사용하여 첫 번째 경험의 경로
 
@@ -137,7 +137,14 @@ AEM 헤드리스 개발자 여정의 이 부분을 완료하셨다면 다음을 
 * 필요한 툴과 AEM 구성이 무엇인지 파악합니다.
 * 헤드리스 여정을 매끄럽게 만들고 콘텐츠를 효율적으로 생성하며 콘텐츠를 신속하게 전달하는 모범 사례를 소개합니다.
 
-AEM에서 컨텐트 구조를 모델링하는 방법을 배우는 AEM 컨텐트 모델](model-your-content.md) 문서 [컨텐츠를 AEM 컨텐트 모델로 모델링하는 방법을 다시 검토하여 헤드리스 여정을 계속 진행해야 합니다.
+이 기본 지식을 바탕으로 AEM 헤드리스의 기능과 유연성을 완벽하게 이해하여 프로젝트에 활용할 수 있도록 해 주십시오. 이를 위해서는 선택 사항이 있습니다.
+
+### 나만의 모험 선택 {#choose-your-path}
+
+학습 스타일에 상관없이 Adobe은 AEM 헤드리스 프로젝트를 성공적으로 시작하길 원합니다.
+
+* **헤드리스 개념 및 AEM 헤드리스 기술**&#x200B;에 대해 계속 배우고자 하는 경우, AEM에서 컨텐트 구조를 모델링하는 방법을 학습하는 다음 [컨텐츠를 AEM 컨텐트 모델로 모델링하는 방법](model-your-content.md) 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다.
+* **학습(**)을 원하는 경우 [AEM 헤드리스 실습 위주의 시작하기 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)로 바로 이동하여 AEM 헤드리스 컨텐츠를 노출하기 위한 간단한 프로젝트를 구현하여 AEM 헤드리스 개발 기능으로 바로 이동할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
