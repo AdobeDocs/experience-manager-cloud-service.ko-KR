@@ -2,10 +2,9 @@
 title: 기능 테스트 - Cloud Services
 description: 기능 테스트 - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="기능 테스트"
->abstract="기능 테스트는 3가지 유형으로 분류됩니다: 제품 기능 테스트, 사용자 정의 기능 테스트, 사용자 정의 UI 테스트"
+>abstract="기능 테스트는 다음 3가지 유형으로 분류됩니다.제품 기능 테스트, 사용자 정의 기능 테스트 및 사용자 정의 UI 테스트"
 
 기능 테스트는 다음 3가지 유형으로 분류됩니다.
 
