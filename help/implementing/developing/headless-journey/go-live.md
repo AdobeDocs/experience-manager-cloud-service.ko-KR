@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
+source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1836'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,8 @@ AEM 헤드리스 개발자 여정의 이 부분을 완료하셨다면 다음을 
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM 헤드리스 제작 배포 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Cloud Service으로 AEM에 배포 개요](/help/implementing/deploying/overview.md)
 * [로컬 AEM 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Cloud Service SDK로서 AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Cloud Service으로 AEM에 배포 개요](/help/implementing/deploying/overview.md)
 * [Cloud Manager를 사용하여 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Cloud Manager Git 리포지토리를 외부 Git 리포지토리와 통합하고 프로젝트를 AEM에 Cloud Service으로 배포](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
