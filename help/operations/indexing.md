@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
+source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1780'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,3 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 ```
 
 기본 색인을 사용자 지정할 필요가 없는 경우 기본 색인 정의를 복사해야 합니다. 예를 들어 이미 `damAssetLucene-8-custom-3`을(를) 배포했지만 더 이상 사용자 정의가 필요하지 않고 기본 `damAssetLucene-8` 인덱스로 다시 전환하려는 경우 `damAssetLucene-8`의 인덱스 정의가 포함된 `damAssetLucene-8-custom-4` 인덱스를 추가해야 합니다.
-
-### 인덱스 가용성 및 내결함성 {#index-availability-and-fault-tolerance}
-
-색인 손상이나 그러한 예상치 못한 이벤트의 경우 중요한 기능에 대한 중복 인덱스를 만드는 것이 좋습니다(위에 언급된 색인에 대한 이름 지정 규칙 준수).
