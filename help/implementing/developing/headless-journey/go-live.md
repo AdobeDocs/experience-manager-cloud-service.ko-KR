@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -33,38 +32,97 @@ AEM 헤드리스 여정의 이전 문서에서, [모두 함께 놓는 방법 - �
 
 이 문서는 AEM 헤드리스 게시 파이프라인과 애플리케이션을 라이브하기 전에 알아야 할 성능 고려 사항을 이해하는 데 도움이 됩니다.
 
+* AEM SDK 및 필요한 개발 도구에 대해 자세히 알아보기
+* 라이브되기 전에 컨텐츠를 시뮬레이션하도록 로컬 개발 런타임을 설정합니다.
 * AEM 컨텐츠 복제 및 캐싱 기본 사항 이해
-* 헤드리스 응용 프로그램에 대해 라이브로 시뮬레이트하는 데 필요한 도구 구성
 * 실행 전에 애플리케이션 보안 및 확장
 * 성능 및 디버그 문제 모니터링
 
-## 컨텐츠 복제 및 캐싱 기본 사항 {#content-replication-and-caching}
+## AEM SDK {#the-aem-sdk}
 
-전체 AEM 환경은 작성자, 게시 및 발송자로 구성됩니다.
+여기에는 다음과 같은 가공물이 포함됩니다.
+
+* 빠른 시작 jar - 작성자 및 게시 인스턴스를 모두 설정하는 데 사용할 수 있는 실행 jar 파일입니다
+* Dispatcher 도구 - Windows 및 UNIX 기반 시스템에 대한 Dispatcher 모듈 및 해당 종속성
+* Java API Jar - AEM에서 개발하는 데 사용할 수 있는 모든 허용되는 Java API를 표시하는 Java Jar/Maven 종속성
+* Javadoc jar - Java API jar용 javadocs
+
+## 개발 도구 {#development-tools}
+
+AEM SDK 외에도 자신의 코드와 컨텐츠를 로컬에서 개발 및 테스트할 수 있는 추가 툴이 필요합니다.
+
+* Java
+* AEM SDK
+* Git
+* Apache Maven
+* Node.js 라이브러리
+* 원하는 IDE
+
+AEM은 Java 애플리케이션이므로 Java 및 Java SDK를 설치하여 Cloud Service으로 AEM 개발을 지원해야 합니다.
+
+AEM SDK는 사용자 지정 코드를 빌드하고 배포하는 데 사용됩니다. 라이브하기 전에 헤드리스 애플리케이션을 테스트하기 위해 필요한 주요 툴입니다.
+
+Git은 소스 제어를 관리하고 Cloud Manager의 변경 사항을 체크 인한 다음 프로덕션 인스턴스에 배포하는 데 사용할 수 있습니다.
+
+AEM은 Apache Maven을 사용하여 AEM Maven Project 원형에서 생성된 프로젝트를 제작합니다. 모든 주요 IDE는 Maven에 대한 통합 지원을 제공합니다.
+
+Node.js는 AEM 프로젝트의 ui.frontend 하위 프로젝트의 프런트 엔드 에셋을 사용하여 작업하는 데 사용되는 JavaScript 런타임 환경입니다. Node.js는 사실상의 Node.js 패키지 관리자로서 JavaScript 종속성을 관리하는 데 사용됩니다.
+
+## AEM 시스템 구성 요소 개요 {#components-of-an-aem-system-at-a-glance}
+
+전체 AEM 환경은 작성자, 게시 및 발송자로 구성됩니다. 이러한 동일한 구성 요소는 라이브되기 전에 코드와 컨텐츠를 보다 쉽게 미리 볼 수 있도록 로컬 개발 런타임에서 사용할 수 있습니다.
 
 * **작성자** 서비스는 내부 사용자가 컨텐츠를 만들고, 관리하고 미리 보는 서비스입니다.
 
-* **게시 서비스** 는 &quot;라이브&quot; 환경으로 간주되며 일반적으로 최종 사용자가 상호 작용하는 부분입니다. 작성 서비스에서 편집 및 승인된 컨텐츠는 게시 서비스로 배포됩니다.
+* **게시 서비스** 는 &quot;라이브&quot; 환경으로 간주되며 일반적으로 최종 사용자가 상호 작용하는 부분입니다. 작성 서비스에서 편집 및 승인된 컨텐츠는 게시 서비스로 배포됩니다. AEM 헤드리스 응용 프로그램의 가장 일반적인 배포 패턴은 AEM 게시 서비스에 응용 프로그램의 제작 버전을 연결하는 것입니다.
 
 * **Dispatcher** 는 AEM 디스패처 모듈로 보강된 정적 웹 서버입니다. 게시 인스턴스에서 생성한 웹 페이지를 캐시하여 성능을 향상시킵니다.
 
-AEM 헤드리스 응용 프로그램의 가장 일반적인 배포 패턴은 AEM 게시 서비스에 응용 프로그램의 제작 버전을 연결하는 것입니다.
+## 로컬 개발 워크플로 {#the-local-development-workflow}
 
-## 요구 사항 및 구성 {#requirements-and-configuration}
+로컬 개발 프로젝트는 Apache Maven을 기반으로 구축되었으며 소스 제어에 Git을 사용합니다. 프로젝트를 업데이트하기 위해 개발자는 Eclipse, Visual Studio 코드 또는 IntelliJ와 같은 선호하는 통합 개발 환경을 다른 개발 환경에서 사용할 수 있습니다.
 
-1. [AEM을 클라우드 서비스 SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)로 사용하여 [로컬 런타임](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#install-java)을 설정합니다.
-2. [WKND 샘플 내용](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 및 후속 GraphQL 끝점을 설치합니다.
-3. [정적 노드 서버](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/production-deployment.html?lang=en#static-server)를 배포하고 구성합니다.
+헤드리스 애플리케이션에서 인제스트할 코드 또는 컨텐츠 업데이트를 테스트하려면 AEM 작성자 및 게시 서비스의 로컬 인스턴스가 포함된 로컬 AEM 런타임에 업데이트를 배포해야 합니다.
 
-## {#secure-and-scale-before-launch} 실행 전에 헤드리스 응용 프로그램의 보안 및 크기 조절
+업데이트 내용이 가장 중요한 위치를 테스트하는 것이 중요하므로 로컬 AEM 런타임에서 각 구성 요소 간의 차이를 주목하십시오. 예를 들어 제작 시 컨텐츠 업데이트를 테스트하거나 게시 인스턴스에서 새 코드를 테스트합니다.
 
-1. [토큰 기반 인증 구성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-2. 안전한 웹 후크
-3. 캐싱 및 확장성 구성
+프로덕션 시스템에서 디스패처와 http Apache 서버는 항상 AEM 게시 인스턴스 앞에 배치됩니다. AEM 시스템을 위한 캐싱 및 서비스 서비스를 제공하므로 디스패처에 대한 코드와 컨텐츠 업데이트를 테스트하는 것도 중요합니다.
+
+모든 것이 테스트되고 제대로 작동하는지 확인한 다음 Cloud Manager의 중앙 Git 리포지토리로 코드 업데이트를 푸시할 수 있습니다.
+
+업데이트를 Cloud Manager에 업로드한 후 Cloud Manager의 CI/CD 파이프라인을 사용하여 Cloud Service으로 AEM에 배포할 수 있습니다.
+
+## 로컬 개발 환경 {#previewing-your-code-and-content-locally-with-the-local-development-environment}을(를) 사용하여 로컬로 코드 및 컨텐츠 미리 보기
+
+AEM 헤드가 없는 프로젝트를 시작할 수 있도록 준비하려면 프로젝트의 모든 구성 요소가 제대로 작동하는지 확인해야 합니다.
+
+그러기 위해서는 모든 것을 함께 결합해야 합니다.코드, 컨텐츠 및 구성을 확인하고 로컬 개발 환경에서 테스트하여 라이브할 수 있도록 합니다.
+
+로컬 개발 환경은 3개의 주요 영역으로 구성됩니다.
+
+1. AEM 프로젝트 - AEM 개발자가 작업하려는 모든 사용자 정의 코드, 구성 및 컨텐츠를 포함합니다.
+1. AEM 프로젝트에서 코드를 배포하는 데 사용되는 AEM 작성자 및 게시 서비스의 로컬 버전 로컬 AEM 런타임
+1. Local Dispatcher 런타임 - Dispatcher 모듈을 포함하는 Apache httpd 웹 서버의 로컬 버전입니다.
+
+로컬 개발 환경이 설정되면 정적 노드 서버를 로컬로 배포하여 Response 앱에 제공하는 컨텐츠를 시뮬레이션할 수 있습니다.
+
+로컬 개발 환경 설정 및 콘텐츠 미리 보기에 필요한 모든 종속성을 자세히 살펴보려면 [AEM 게시 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)와 함께 프로덕션 배포를 참조하십시오.
 
 ## 프로덕션 {#deploy-to-production}에 배포
 
-모든 코드와 컨텐츠를 로컬로 테스트한 후 이제 AEM을 사용하여 프로덕션 배포를 시작할 준비가 되었습니다.
+모든 코드와 컨텐츠를 로컬로 테스트한 후 AEM을 통해 프로덕션 배포를 시작할 수 있습니다.
+
+Cloud Manager CI/CD 파이프라인을 활용하여 코드 배포를 시작할 수 있습니다. 파이프라인은 대부분 [여기](/help/implementing/deploying/overview.md)에 포함되어 있습니다.
+
+## AEM 헤드리스 응용 프로그램을 Go-Live {#prepare-your-aem-headless-application-for-golive} 준비합니다.
+
+이제 아래에 설명된 모범 사례에 따라 AEM 헤드리스 애플리케이션을 시작할 준비가 되었습니다.
+
+### {#secure-and-scale-before-launch} 실행 전에 헤드리스 응용 프로그램의 보안 및 크기 조절
+
+1. [토큰 기반 인증 구성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+1. 안전한 웹 후크
+1. 캐싱 및 확장성 구성
 
 ### 모델 구조와 GraphQL 출력 비교 {#structure-vs-output}
 
@@ -89,9 +147,9 @@ AEM 헤드리스 응용 프로그램의 가장 일반적인 배포 패턴은 AEM
 * `Last-modified-since`을 활용하여 리소스를 새로 고칩니다.
 * 전체 JSON 파일을 구문 분석할 필요 없이 JSON 파일에서 `_reference` 출력을 사용하여 에셋 다운로드를 시작합니다.
 
-## 모니터링 {#monitoring}
+## 성능 모니터링 {#performance-monitoring}
 
-### 전체 성능을 확인하는 방법 {#check-overall-performance}
+사용자가 AEM 헤드리스 애플리케이션을 사용할 때 최상의 경험을 얻으려면 아래 설명에 따라 주요 성능 지표를 모니터링해야 합니다.
 
 * 앱의 미리 보기 및 제작 버전 확인
 * 현재 서비스 가용성 상태에 대한 AEM 상태 페이지 확인
@@ -111,7 +169,7 @@ AEM 헤드리스 응용 프로그램의 가장 일반적인 배포 패턴은 AEM
 
 ### 디버깅 {#debugging}
 
-응용 프로그램을 실행하기 전에 응용 프로그램이 제대로 작동하는지 확인하려면 일반적인 디버깅 방법으로 다음 단계를 수행하는 것이 좋습니다.
+디버깅에 대한 일반적인 방법으로 다음 우수 사례를 따르십시오.
 
 * 애플리케이션의 미리 보기 버전을 사용하여 기능 및 성능 확인
 * 애플리케이션의 제작 버전을 사용하여 기능 및 성능 확인
@@ -140,3 +198,8 @@ AEM 헤드리스 개발자 여정의 이 부분을 완료하셨다면 다음을 
 헤드리스 경험을 유지 관리하는 방법에 대해 학습하는 문서 [론치 게시](post-launch.md)를 다시 검토하여 AEM 헤드리스 여정을 계속 진행해야 합니다.
 
 ## 추가 리소스 {#additional-resources}
+
+* [AEM 헤드리스 제작 배포 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Cloud Service으로 AEM에 배포 개요](/help/implementing/deploying/overview.md)
+* [로컬 AEM 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Cloud Manager를 사용하여 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
