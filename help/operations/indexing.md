@@ -2,10 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-translation-type: tm+mt
-source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
+source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -49,6 +48,10 @@ Cloud Service으로 AEM을 사용하는 Adobe은 Cloud Manager에서 CI/CD 파�
 위의 두 포인트 1 및 2의 경우, 각각의 Cloud Manager 릴리스 일정에 사용자 지정 코드 베이스의 일부로 새 색인 정의를 만들어야 합니다. 자세한 내용은 [Cloud Service 문서로 AEM에 배포를 참조하십시오](/help/implementing/deploying/overview.md).
 
 ### 새 색인 정의 준비 중 {#preparing-the-new-index-definition}
+
+>[!NOTE]
+>
+>기본 색인을 사용자 지정하는 경우(예: `damAssetLucene-6`) *Cloud Service 환경*&#x200B;에서 최신 기본 색인 정의를 복사하고 사용자 지정을 맨 위에 추가하십시오. 이렇게 하면 필요한 구성이 실수로 제거되지 않습니다. 예를 들어 `/oak:index/damAssetLucene-6/tika` 아래의 `tika` 노드는 필수 노드이며 사용자 지정된 인덱스의 일부여야 하며 클라우드 SDK에 존재하지 않습니다.
 
 다음 이름 지정 패턴을 따라 실제 색인 정의를 포함하는 새 인덱스 정의 패키지를 준비해야 합니다.
 
