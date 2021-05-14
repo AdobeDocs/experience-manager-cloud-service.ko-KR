@@ -4,10 +4,9 @@ description: 반응형 코드 기능을 사용하여 Dynamic Media에서 최적�
 feature: 자산 관리
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '328'
 ht-degree: 3%
 
 ---
@@ -16,13 +15,13 @@ ht-degree: 3%
 
 웹 개발자와 반응형 서비스를 위해 코드를 공유하려는 경우 응답형 코드 기능을 사용합니다. 반응형(**[!UICONTROL RESS]**) 코드를 클립보드에 복사하여 웹 개발자와 공유할 수 있습니다.
 
-이 기능은 웹 사이트가 타사 WCM에 있는 경우에 사용하는 것이 적절합니다. 그러나 웹 사이트가 AEM에 있는 경우에는 오프사이트 이미지 서버가 이미지를 렌더링하여 웹 페이지에 제공합니다.
+이 기능은 웹 사이트가 타사 WCM에 있는 경우에 사용하는 것이 적절합니다. 그러나 웹 사이트가 대신 Adobe Experience Manager에 있는 경우 오프사이트 이미지 서버는 이미지를 렌더링하여 웹 페이지에 제공합니다.
 
 웹 페이지에 비디오 뷰어 포함](embed-code.md)을 참조하십시오.[
 
 [웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
 
-**반응형 사이트에 최적화된 이미지를 제공하려면 다음을 수행합니다**.
+**반응형 사이트에 최적화된 이미지를 제공하려면:**
 
 1. 응답형 코드를 제공하려는 이미지로 이동하고 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
 
@@ -43,7 +42,7 @@ ht-degree: 3%
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. **[!UICONTROL 응답형 이미지 포함]** 대화 상자에서 응답형 코드 텍스트를 선택하고 복사하여 웹 사이트에 붙여넣어 응답형 자산에 액세스합니다.
-1. 포함 코드의 기본 중단점을 코드에서 직접 반응형 웹 사이트의 중단점과 일치하도록 편집합니다. 또한 다른 페이지 중단점에서 제공되는 다양한 이미지 해상도를 테스트합니다.
+1. 포함 코드의 기본 중단점을 편집하여 코드에 직접 응답형 웹 사이트에 있는 중단점과 일치시킵니다. 또한 다른 페이지 중단점에서 제공되는 다양한 이미지 해상도를 테스트합니다.
 
 ## HTTP/2를 사용하여 Dynamic Media 에셋 {#using-http-to-delivery-your-dynamic-media-assets} 전달
 
