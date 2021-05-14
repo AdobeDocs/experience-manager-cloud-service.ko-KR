@@ -4,17 +4,16 @@ description: Dynamic Media에서 이미지 사전 설정을 적용하는 방법�
 feature: 이미지 사전 설정,뷰어,표현물
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '306'
 ht-degree: 5%
 
 ---
 
 # Dynamic Media 이미지 사전 설정 적용 {#applying-image-presets}
 
-이미지 사전 설정을 사용하면 다양한 크기, 서로 다른 형식 또는 동적으로 생성된 기타 이미지 속성이 있는 이미지를 동적으로 제공할 수 있습니다. 이미지를 내보낼 때 사전 설정을 선택할 수 있으며, 관리자가 지정한 사양에 맞게 이미지를 다시 포맷합니다.
+이미지 사전 설정을 사용하면 다양한 크기, 서로 다른 형식 또는 동적으로 생성된 기타 이미지 속성이 있는 이미지를 동적으로 제공할 수 있습니다. 관리자가 설명한 사양에 맞게 이미지를 다시 포맷하도록 내보낼 때 사전 설정을 선택할 수 있습니다.
 
 또한 응답성이 높은 이미지 사전 설정을 선택할 수 있습니다(선택한 후 **[!UICONTROL RESS]** 단추로 지정됨).
 
@@ -26,7 +25,7 @@ ht-degree: 5%
 
 미리 볼 때 언제든지 이미지에 이미지 사전 설정을 적용할 수 있습니다.
 
-**Dynamic Media 이미지 사전 설정을 적용하려면**
+**Dynamic Media 이미지 사전 설정을 적용하려면:**
 
 1. 자산을 열고 왼쪽 레일에서 드롭다운 목록을 누른 다음 **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
 
