@@ -4,10 +4,9 @@ description: '"이미지 사전 설정과 이미지 사전 설정을 만들고, 
 feature: 이미지 사전 설정,뷰어,표현물
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3653'
 ht-degree: 2%
 
 ---
@@ -38,7 +37,7 @@ ht-degree: 2%
 
 ## 이미지 사전 설정 관리 {#managing-image-presets-1}
 
-Experience Manager 로고를 탭하거나 클릭하여 글로벌 탐색 콘솔에 액세스한 다음, 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산 > 이미지 사전 설정]**&#x200B;으로 이동하여 Experience Manager에서 이미지 사전 설정을 관리합니다.
+Experience Manager 로고를 탭하거나 클릭하여 글로벌 탐색 콘솔에 액세스한 다음, 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동하여 Experience Manager에서 이미지 사전 설정을 관리합니다.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -63,7 +62,7 @@ Adobe Illustrator의 파일 형식은 PDF의 변수입니다. Experience Manager
 * Adobe Illustrator 문서는 여러 레이어가 있는 단일 페이지로 구성됩니다. 각 레이어는 기본 Illustrator 에셋 아래의 PNG 하위 에셋으로 추출됩니다.
 * PDF 문서는 하나 이상의 페이지로 구성됩니다. 각 페이지는 여러 페이지로 구성된 기본 PDF 문서 아래에 단일 페이지 PDF 하위 자산으로 추출됩니다.
 
-하위 자산은 전체 `DAM Update Asset` 워크플로 내에서 `Create Sub Asset process` 구성 요소에 의해 만들어집니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구 > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집]**&#x200B;을 탭합니다.
+하위 자산은 전체 `DAM Update Asset` 워크플로 내에서 `Create Sub Asset process` 구성 요소에 의해 만들어집니다. 워크플로우 내의 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**&#x200B;을 탭합니다.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -88,7 +87,7 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 
 `DAM Update Asset` 작업 과정을 통해 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소 옵션에 액세스합니다.
 
-왼쪽 상단에 있는 Adobe Experience Manager을 탭하고 **[!UICONTROL 도구 > 워크플로우 > 모델]**&#x200B;으로 이동합니다. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 탭합니다. DAM 자산 업데이트 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 눌러 [단계 속성] 대화 상자를 엽니다.
+왼쪽 상단에 있는 Adobe Experience Manager을 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;으로 이동합니다. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 탭합니다. DAM 자산 업데이트 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 눌러 [단계 속성] 대화 상자를 엽니다.
 
 #### PDF/AI 이미지 미리 보기 변환 옵션 래스터화 {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -96,41 +95,18 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 
 PDF 또는 AI 작업 과정 래스터화를 위한 인수
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>프로세스 인수</strong></td>
-   <td><strong>기본 설정</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td>MIME 유형</td>
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
-   <td>PDF 또는 Illustrator 문서로 간주되는 문서 MIME 형식 목록입니다.<br /> </td>
-  </tr>
-  <tr>
-   <td>최대 너비</td>
-   <td>2048년</td>
-   <td>생성된 미리 보기 변환의 최대 폭(픽셀 단위)입니다.<br /> </td>
-  </tr>
-  <tr>
-   <td>최대 높이</td>
-   <td>2048년</td>
-   <td>생성된 미리 보기 변환의 최대 높이(픽셀 단위)입니다.<br /> </td>
-  </tr>
-  <tr>
-   <td>해상도</td>
-   <td>72</td>
-   <td>첫 번째 페이지를 래스터화하는 해상도(ppi(인치당 픽셀 수).</td>
-  </tr>
- </tbody>
-</table>
+| 프로세스 인수 | 기본 설정 | 설명 |
+|---|---|---|
+| MIME 유형 | application/pdf<br>application/postscript<br>application/illustrator | PDF 또는 Illustrator 문서로 간주되는 문서 MIME 유형 목록입니다. |
+| 최대 너비 | 2048년 | 생성된 미리 보기 변환의 최대 폭(픽셀 단위)입니다. |
+| 최대 높이 | 2048년 | 생성된 미리 보기 변환의 최대 높이(픽셀 단위)입니다. |
+| 해상도 | 72 | 첫 번째 페이지를 래스터화하는 해상도(ppi(인치당 픽셀 수). |
 
 기본 프로세스 인수를 사용하여 PDF/AI 문서의 첫 번째 페이지는 72ppi로 래스터화되며 생성된 미리 보기 이미지의 크기는 2048 x 2048픽셀입니다. 일반적인 배포의 경우 해상도를 최소 150ppi 이상으로 늘릴 수 있습니다. 예를 들어 미국 문자 크기 문서(300ppi)의 경우 각각 2550 x 3300픽셀의 최대 너비와 높이가 필요합니다.
 
 [최대 폭] 및 [최대 높이]는 래스터화할 해상도를 제한합니다. 예를 들어 최대값이 변경되지 않고 해상도가 300ppi로 설정된 경우 미국 문자 문서는 186ppi로 래스터화됩니다. 즉, 문서는 1581 x 2046 픽셀입니다.
 
-`Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소에는 메모리에 지나치게 큰 이미지를 만들지 않도록 정의된 최대값이 있습니다. 이러한 큰 이미지는 JVM(Java Virtual Machine)에 제공된 메모리를 오버플로할 수 있습니다. 구성된 최대 크기의 이미지를 생성할 가능성이 있는 각 병렬 워크플로우를 관리할 수 있도록 JVM에 충분한 메모리를 제공해야 합니다.
+`Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소에는 메모리에 지나치게 큰 이미지를 만들지 않도록 정의된 최대값이 있습니다. 이러한 큰 이미지는 JVM(Java™ Virtual Machine)에 제공된 메모리를 오버플로할 수 있습니다. 구성된 최대 크기의 이미지를 생성할 가능성이 있는 각 병렬 워크플로우를 관리할 수 있도록 JVM에 충분한 메모리를 제공해야 합니다.
 
 ### InDesign(INDD) 파일 형식 {#indesign-indd-file-format}
 
@@ -148,30 +124,12 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 다음 스크립트는 Dynamic Media 통합에서 사용됩니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>ExtendScript 이름</strong></td>
-   <td><strong>기본값</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td>ThumbnailExport.jsx</td>
-   <td>예</td>
-   <td>최적화된 300ppi <code>thumbnail.jpg</code> 변환을 생성하여 <code>Dynamic Media Process Image Assets</code> 프로세스 구성 요소에 의해 PTIFF 변환으로 변환합니다.<br /> </td>
-  </tr>
-  <tr>
-   <td>JPEGPagesExport.jsx</td>
-   <td>예</td>
-   <td>각 페이지에 대해 300ppi JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화되어 <code>DAM Update Asset</code> 작업 과정에 의해 PTIFF로 전환됩니다.<br /> </td>
-  </tr>
-  <tr>
-   <td>PDFPagesExport.jsx</td>
-   <td>아니오</td>
-   <td>각 페이지에 대한 PDF 하위 자산을 생성합니다. PDF 하위 자산은 앞서 설명한 대로 처리됩니다. PDF에는 단일 페이지만 포함되어 있으므로 하위 에셋이 생성되지 않습니다.<br /> </td>
-  </tr>
- </tbody>
-</table>
+
+| ExtendScript 이름 | 기본값 | 설명 |
+|---|---|---|
+| ThumbnailExport.jsx | 예 | 최적화된 300ppi `thumbnail.jpg` 변환을 생성하여 `Dynamic Media Process Image Assets` 프로세스 구성 요소에 의해 PTIFF 변환으로 변환합니다. |
+| JPEGPagesExport.jsx | 예 | 각 페이지에 대해 300ppi JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화되어 `DAM Update Asset` 워크플로우에서 PTIFF로 전환됩니다. |
+| PDFPagesExport.jsx | 아니오 | 각 페이지에 대한 PDF 하위 자산을 생성합니다. PDF 하위 자산은 앞서 설명한 대로 처리됩니다. PDF에는 단일 페이지만 포함되어 있으므로 하위 에셋이 생성되지 않습니다. |
 
 ### 이미지 축소판 크기 {#configuring-image-thumbnail-size} 구성
 
@@ -194,7 +152,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 **이미지 축소판 크기를 구성하려면**
 
-1. **[!UICONTROL 도구 > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집]**&#x200B;을 탭합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**&#x200B;을 탭합니다.
 1. **[!UICONTROL Dynamic Media Process Image Assets]** 단계를 누르고 **[!UICONTROL 축소판]** 탭을 누릅니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
    ![6_5_dynamicmediaprocesseassets-thumbnailastab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -211,7 +169,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 만든 이미지 사전 설정은 자산을 미리 볼 때 다이내믹 표현물로 사용할 수 있습니다. Experience Manager은 **[!UICONTROL 세부 사항 보기 > 표현물]**&#x200B;에서 자산을 볼 때 다양한 동적 표현물을 보여줍니다. 표시되는 표현물의 제한을 늘리거나 줄일 수 있습니다.
 
-**표시되는 이미지 사전 설정 수를 늘리거나 줄이려면 다음을 수행합니다**.
+**표시되는 이미지 사전 설정 수를 늘리거나 줄이려면:**
 
 1. CRXDE Lite([https://localhost:4502/crx/de](https://localhost:4502/crx/de))로 이동합니다.
 1. `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`의 이미지 사전 설정 목록 노드로 이동합니다.
@@ -239,11 +197,12 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 [Adobe Illustrator(AI), PostScript®(EPS) 및 PDF 파일 형식](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)을 참조하십시오.
 
 이 파일 형식의 동적 변환을 생성할 수 있도록 INDD 파일 전송을 지원하려는 경우 이미지 사전 설정을 만들기 전에 다음 정보를 검토하십시오.
+
 [InDesign(INDD) 파일 형식](#indesign-indd-file-format)을 참조하십시오.
 
-**이미지 사전 설정을 만들려면**:
+**이미지 사전 설정을 만들려면:**
 
-1. Experience Manager에서 Experience Manager 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 자산 > 이미지 사전 설정]**&#x200B;을 누릅니다.
+1. Experience Manager에서 Experience Manager 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 이미지 사전 설정 편집]** 창이 열립니다.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -471,7 +430,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 ### 이미지 사전 설정 편집 {#modifying-image-presets}
 
-1. Experience Manager에서 Experience Manager 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 자산 > 이미지 사전 설정]**&#x200B;을 누릅니다.
+1. Experience Manager에서 Experience Manager 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;을 탭합니다.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -484,5 +443,5 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 ### 이미지 사전 설정 삭제 중 {#deleting-image-presets}
 
-1. Experience Manager에서 Experience Manager 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산 > 이미지 사전 설정]**&#x200B;으로 이동합니다.
+1. Experience Manager에서 Experience Manager 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동합니다.
 1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다. Dynamic Media에서 삭제할 것임을 확인합니다. **[!UICONTROL 삭제]**&#x200B;를 눌러 **[!UICONTROL 취소]**&#x200B;를 삭제하거나 탭하면 중단됩니다.
