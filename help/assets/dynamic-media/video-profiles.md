@@ -4,10 +4,9 @@ description: Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프
 feature: 자산 관리,비디오 프로필,표현물
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3664'
+source-wordcount: '3665'
 ht-degree: 2%
 
 ---
@@ -101,7 +100,7 @@ Dynamic Media에는 미리 정의된 응용 비디오 인코딩 프로필이 이
 
 * 5분 동안입니다.
 * 초당 30프레임(FPS).
-* 300MB 파일 크기.
+* 파일 크기는 300MB입니다.
 
 Adobe Sensei은 9,000프레임으로 제한됩니다. 즉, 30FPS로 5분 정도 소요됩니다. 비디오에 FPS가 더 높은 경우 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 60FPS 비디오는 Adobe Sensei 및 스마트 자르기에서 지원되려면 2분 30초 분이어야 합니다.
 
@@ -211,7 +210,7 @@ Dynamic Media에는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.
 1. 다음을 수행합니다.
    * **[!UICONTROL 너비]** 필드에 **[!UICONTROL 자동]**&#x200B;을 입력합니다.
    * **[!UICONTROL 높이]** 필드에 값을 픽셀 단위로 입력합니다.
-비디오 크기를 시각화하는 데 도움이 되도록 [높이]의 정보 아이콘을 눌러 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지를 사용하여 원하는 비디오 차원(파란색 상자)을 추가로 설정합니다. 완료되면 대화 상자의 오른쪽 위 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 누릅니다.
+비디오 크기를 시각화하는 데 도움이 되도록 [높이]의 정보 아이콘을 눌러 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지를 사용하여 원하는 비디오 크기(파란색 상자)를 추가로 설정합니다. 완료되면 대화 상자의 오른쪽 위 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 누릅니다.
 1. (선택 사항) 다음 중 하나를 수행합니다.
 
    * **[!UICONTROL 고급]** 탭을 누르고 **[!UICONTROL 기본값 사용]** 확인란이 선택되어 있는지 확인합니다(권장).
@@ -244,7 +243,7 @@ Dynamic Media에는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.
 
 Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페이스에 없는 고급 비디오 인코딩 매개 변수를 활용하려면 기존 비디오 인코딩 프로필을 편집할 수 있습니다. minBitrate 및 maxBitrate와 같은 하나 이상의 고급 매개 변수를 기존 프로필에 사용자 정의할 수 있습니다.
 
-**사용자 정의 추가 비디오 인코딩 매개 변수를 사용하려면 다음을 수행하십시오**.
+**사용자 정의 추가 비디오 인코딩 매개 변수를 사용하려면 다음을 수행하십시오.**
 
 1. Experience Manager 로고를 누른 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;으로 이동합니다.
 1. CRXDE Lite 페이지의 왼쪽에 있는 탐색기 패널에서 다음 페이지로 이동합니다.
@@ -271,7 +270,7 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>키프레임 사이의 대상 프레임 수입니다. 이 값을 계산하여 2-10초마다 키프레임을 생성합니다. 예를 들어 초당 30프레임인 경우 키프레임 간격은 60-300입니다.<br /> <br /> 키프레임 간격을 줄여 적응 비디오 인코딩에 대한 스트림 검색 및 스트림 전환 동작을 향상시킬 수 있고 모션이 많은 비디오의 품질을 향상시킬 수 있습니다. 그러나 키프레임은 파일 크기를 증가하므로 키프레임 간격이 작으면 지정된 비트 전송률로 전반적인 비디오 품질이 낮아집니다.</td>
+   <td>키프레임 사이의 대상 프레임 수입니다. 2-10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임인 경우 키프레임 간격은 60-300입니다.<br /> <br /> 키프레임 간격을 줄여 적응 비디오 인코딩에 대한 스트림 검색 및 스트림 전환 동작을 향상시킬 수 있고 모션이 많은 비디오의 품질을 향상시킬 수 있습니다. 그러나 키프레임은 파일 크기를 증가하므로 키프레임 간격이 작으면 지정된 비트 전송률로 전반적인 비디오 품질이 낮아집니다.</td>
    <td><code>String</code></td>
    <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>HLS(HTTP Live Streaming)에 대한 권장 값은 60-90입니다.</p> </td>
   </tr>
@@ -316,7 +315,7 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
 
 다른 자산 유형에 대한 고급 처리 매개 변수를 정의하려면 [자산 처리 구성](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)을 참조하십시오.
 
-**비디오 프로필을 편집하려면 다음을 수행하십시오**.
+**비디오 프로필을 편집하려면:**
 
 1. Experience Manager 로고를 누르고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;으로 이동합니다.
 1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 선택합니다.
@@ -383,7 +382,7 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
 
 #### 속성 {#applying-video-profiles-to-folders-from-properties}의 폴더에 비디오 프로필 적용
 
-1. Experience Manager 로고를 탭하거나 클릭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 비디오 프로필을 적용할 폴더로 이동합니다.
+1. Experience Manager 로고를 누르고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 비디오 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택하고 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 프로파일이 이미 할당된 폴더가 폴더 이름 바로 아래에 프로파일 이름이 표시되어 표시됩니다.
 
@@ -396,7 +395,7 @@ Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사�
 
 [폴더](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)의 자산 재처리를 참조하십시오.
 
-**비디오 프로필을 전역적으로 적용하려면**,
+**비디오 프로필을 전역적으로 적용하려면:**
 
 * 다음 노드로 CRXDE Lite으로 이동합니다.`/content/dam/jcr:content`. `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
 
