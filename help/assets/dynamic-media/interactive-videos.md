@@ -4,10 +4,9 @@ description: Dynamic Media에서 인터랙티브한 비디오 및 쇼퍼블 비�
 feature: 대화형 비디오
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '6064'
+source-wordcount: '6051'
 ht-degree: 0%
 
 ---
@@ -49,7 +48,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### 대화형 비디오를 만드는 방법 보기 {#watch-how-interactive-videos-are-created}
 
-[대화형 비디오를 만드는 방법에 대한 7분 30초 연습](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA)을 보십시오.
+[대화형 비디오를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)(7분 30초)에 대한 연습을 시청하십시오.
 (비디오 연습은 Assets on Demand로 브랜딩되지만, 원칙과 단계는 Adobe Experience Manager Assets의 대화형 비디오에 계속 적용됩니다.)
 
 ### Adobe 고객 성공 웨비나 {#adobe-customer-success-webinar}
@@ -71,8 +70,10 @@ Experience Manager 에셋](https://adobecustomersuccess.adobeconnect.com/p1yxzdo
 인터랙티브한 비디오 단계:
 
 1. **(선택 사항) 빠른 보기 변수**  식별 - 기존 빠른 보기 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 대화형 비디오를 만들 때 변수를 사용하여 제품 축소판을 해당 제품에 매핑합니다. 빠른 보기를 사용합니다. [(선택 사항) 빠른 보기 변수 확인](#optional-identifying-quickview-variables)을 참조하십시오.
-   **이 단계는 다음 내용이 모두 참인 경우에만 필요합니다**.・ 빠른 보기를 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
-・ Experience Manager 구현은 IBM WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.*
+   **이 단계는 다음 내용이 모두 참인 경우에만 필요합니다.**
+ [빠른 보기]・으로 트리거하여 비디오에 상호 작용을 추가하려고 합니다.
+・ Experience Manager 구현은 
+*IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지* 않습니다.
 
 1. **(선택 사항) 대화형 비디오 뷰어 사전**  설정 만들기 - 비디오 스크러버 및 대화형 축소판과 같은 플레이어를 구성하는 다양한 구성 요소의 모양과 동작을 사용자 정의합니다.
 바로 사용 가능한 대화형 비디오 뷰어 사전 설정 `Shoppable_Video_Light` 또는 `Shoppable_Video_Dark`을 대신 사용하려는 경우에는 자신의 대화형 비디오 뷰어 사전 설정을 만들 필요가 없습니다.
@@ -86,7 +87,7 @@ Experience Manager 에셋](https://adobecustomersuccess.adobeconnect.com/p1yxzdo
 대화형 비디오 에셋을 게시하여 마칩니다. 게시를 사용하면 나중에 복사하고 웹 사이트 랜딩 페이지에 적용하는 임베드 코드 또는 URL이 만들어집니다. [비디오에 상호 작용 추가](#adding-interactivity-to-your-video)를 참조하십시오.
 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-1. **Experience Manager**  내의 웹 사이트 또는 웹 사이트에 대화형 비디오 추가 - Experience Manager 사이트, Experience Manager eCommerce 또는 두 가지 모두를 사용하는 경우, Experience Manager의 웹 페이지에 직접 대화형 비디오를 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+1. **Experience Manager의 웹 사이트 또는 웹 사이트에 대화형 비디오 추가**  - Experience Manager 사이트, eCommerce 또는 두 가지 모두를 사용하는 경우에는 Experience Manager의 웹 페이지에 대화형 비디오를 추가하십시오. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 임베드 코드 또는 URL을 사용하여 인터랙티브한 비디오를 웹 사이트 경험과 통합할 수 있습니다. [웹 사이트](#integrating-an-interactive-video-with-your-website)와 대화형 비디오 통합을 참조하십시오.
 타사 WCM(Web Content Manager)을 사용하는 경우 새 대화형 비디오를 웹 사이트에서 사용되는 기존 빠른 보기 구현과 통합해야 합니다. [기존 빠른 보기](#integrating-an-interactive-video-with-an-existing-quickview)와 대화형 비디오 통합을 참조하십시오.
    [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -96,7 +97,7 @@ Experience Manager 에셋](https://adobecustomersuccess.adobeconnect.com/p1yxzdo
 >[!NOTE]
 이 작업은 다음 내용이 참인 경우에만 필요합니다.
 * 빠른 보기를 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
-* Experience Manager 구현은 IBM WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->*
+* Experience Manager 구현은 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->*
 
 Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -115,13 +116,13 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 * [빠른 보기] 데이터는 웹 페이지에서 렌더링할 준비를 위해 컨텐츠로 변환됩니다.
 * 마지막으로 프런트 엔드 코드는 이러한 컨텐츠를 화면에 시각적으로 렌더링합니다.
 
-따라서 빠른 보기가 구현되는 기존 웹 사이트의 다양한 영역을 방문하는 것이 접근 방식입니다. 그런 다음 빠른 보기를 트리거하고, 빠른 보기 데이터 또는 컨텐츠를 로드하기 위해 웹 페이지에서 보낸 Ajax URL을 캡처합니다.
+따라서 빠른 보기가 구현되는 기존 웹 사이트의 다양한 영역을 방문하는 것이 접근 방식입니다. 그런 다음 빠른 보기를 트리거하고, 빠른 보기 데이터 또는 컨텐츠를 로드하기 위해 웹 페이지에서 보낸 Ajax URL을 가져옵니다.
 
 일반적으로 전문적인 디버깅 도구를 사용할 필요가 없습니다. 최신 웹 브라우저는 적절한 작업을 수행하는 웹 관리자를 제공합니다. 다음은 웹 관리자를 포함하는 웹 브라우저의 몇 가지 예입니다.
 
-* Google Chrome에서 나가는 HTTP 요청을 모두 보려면 **F12**(Windows) 또는 **Command+Options+I**(Mac)을 눌러 개발자 도구 패널을 연 다음 **네트워크** 탭을 클릭합니다.
+* Google Chrome에서 나가는 HTTP 요청을 모두 보려면 **F12**(Windows®) 또는 **Command+Options+I**(Mac)을 눌러 개발자 도구 패널을 연 다음 **네트워크** 탭을 클릭합니다.
 
-* Firefox에서는 **F12**(Windows) 또는 **Command+Option+I**(Mac)를 눌러 Firebug 플러그인을 활성화하고 **[!UICONTROL Net]** 탭을 사용하거나 내장된 검사기 도구 및 해당 네트워크 탭을 사용할 수 있습니다.
+* Firefox에서는 **F12**(Windows®) 또는 **Command+Option+I**(Mac)을 눌러 Firebug 플러그인을 활성화하고 **[!UICONTROL Net]** 탭을 사용하거나 내장된 검사기 도구 및 해당 네트워크 탭을 사용할 수 있습니다.
 
 * Internet Explorer에서 **F12**&#x200B;를 눌러 디버거 도구를 활성화합니다.
 
@@ -266,7 +267,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 
 대화형 비디오를 저장하면 비디오가 미리 보기로 즉시 열립니다. 이 비디오에서 대화형 비디오 뷰어 사전 설정을 선택하고 재생하여 고객에게 표시되는 모양을 대략적으로 확인할 수 있습니다.
 
-**비디오에 인터랙티브한 기능을 추가하려면 다음을 수행하십시오**.
+**비디오에 인터랙티브한 요소를 추가하려면:**
 
 1. 자산 보기에서 업로드한 비디오로 이동하여 대화형으로 만들 비디오로 이동합니다.
 1. 다음 중 하나를 수행하십시오.
@@ -434,10 +435,10 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
       </tr> 
       <tr> 
       <td>축소판 이미지의 텍스트 레이블을 변경하려면</td> 
-      <td><p>기본적으로 텍스트 레이블은 축소판 이미지의 <code>Title</code> 메타데이터 필드를 사용합니다. <code>Title</code>이(가) 없는 경우 축소판 이미지의 파일 이름이 대신 사용되지만 확장명은 없습니다.</p> <p>축소판 이미지의 텍스트 레이블을 변경하려면 <strong>작업 </strong> 탭의 표시되는 이미지 자산 바로 아래에 원하는 텍스트를 입력합니다. 아래 그림을 참조하십시오.</p> <p>새 텍스트 레이블은 비디오 플레이어 자체와 타임라인 세그먼트에 표시되는 축소판 텍스트에서만 사용됩니다. 레이블 변경은 축소판 이미지의 [제목] 메타데이터 필드나 해당 파일 이름에 영향을 주지 않습니다.</p> </td> 
+      <td><p>기본적으로 텍스트 레이블은 축소판 이미지의 <code>Title</code> 메타데이터 필드를 사용합니다. <code>Title</code>이(가) 없는 경우 축소판 이미지의 파일 이름이 대신 사용되지만 확장명은 없습니다.</p> <p>축소판 이미지의 텍스트 레이블을 변경하려면 <strong>작업 </strong> 탭의 표시되는 이미지 자산 바로 아래에 원하는 텍스트를 입력합니다. 아래 이미지를 참조하십시오.</p> <p>새 텍스트 레이블은 비디오 플레이어 자체와 타임라인 세그먼트에 표시되는 축소판 텍스트에서만 사용됩니다. 레이블 변경은 축소판 이미지의 [제목] 메타데이터 필드나 해당 파일 이름에 영향을 주지 않습니다.</p> </td> 
       </tr> 
       <tr> 
-      <td>변경한 내용을 되돌리려면</td> 
+      <td>변경 내용을 되돌리려면</td> 
       <td>페이지의 오른쪽 위 모서리 근처에 있는 <strong>실행 취소</strong> 또는 <strong>재실행</strong>을 탭합니다.</td> 
       </tr> 
     </tbody> 
@@ -456,7 +457,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 
    * **[!UICONTROL 세그먼트]**  병합 - 인접한 두 세그먼트(제품 축소판이 지정되거나 지정되지 않은 경우)를 하나의 세그먼트로 결합할 수 있습니다.
 
-      타임라인에서 하나로 병합할 두 개 이상의 인접한 세그먼트를 누릅니다. 아래 그림에서 선택한 두 세그먼트에 파란색 타원 드래그 핸들이 없습니다.
+      타임라인에서 하나로 병합할 두 개 이상의 인접한 세그먼트를 누릅니다. 아래 이미지에서 선택한 두 세그먼트에 파란색 타원 드래그 핸들이 없습니다.
 
       도구 모음에서 **[!UICONTROL 세그먼트 병합]**&#x200B;을 탭합니다.
    ![chlimage_1-134](assets/chlimage_1-134.png)
@@ -688,7 +689,7 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 loadQuickView(quickViewUrl);
 ```
 
-마지막으로 [빠른 보기] 대화 상자가 뷰어의 컨테이너 요소에 연결되어 있는지 확인합니다. 기본 포함 코드는 이 기능을 수행하는 샘플 단계를 제공합니다. 뷰어의 컨테이너 요소에 대한 참조를 얻으려면 다음 코드 줄을 사용할 수 있습니다.
+마지막으로 [빠른 보기] 대화 상자가 뷰어의 컨테이너 요소에 연결되어 있는지 확인합니다. 포함 코드 기본값은 이 기능을 수행하기 위한 샘플 단계를 제공합니다. 뷰어의 컨테이너 요소에 대한 참조를 얻으려면 다음 코드 줄을 사용할 수 있습니다.
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -750,11 +751,11 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 </script>
 ```
 
-완전히 통합된 대화형 비디오가 포함된 최종 데모 웹 사이트는 다음과 같습니다.
+완전히 통합된 대화형 비디오가 포함된 최종 데모 웹 사이트는 다음과 같이 표시됩니다.
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
-## 빠른 보기를 사용하여 사용자 정의 팝업 창 {#using-quickviews-to-create-custom-pop-ups} 만들기
+## 빠른 보기를 사용하여 사용자 정의 팝업 Windows® {#using-quickviews-to-create-custom-pop-ups} 만들기
 
-[빠른 보기를 사용하여 사용자 정의 팝업 창 만들기](/help/assets/dynamic-media/custom-pop-ups.md)를 참조하십시오.
+[빠른 보기를 사용하여 사용자 정의 팝업 Windows® 만들기](/help/assets/dynamic-media/custom-pop-ups.md)를 참조하십시오.
 —>
