@@ -3,8 +3,7 @@ title: 규칙 세트를 사용하여 URL 변형
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환하는 방법을 알아봅니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript™)으로 작성된 지침 세트입니다.'
 role: Business Practitioner
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
@@ -31,7 +30,7 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 
    URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)에서 특수 문자 제거를 참조하십시오.[
 
-Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정보를 관리하는 웹 사이트는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋을 제공하는 사전 처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media과 통합된 시스템의 비즈니스 로직을 충족하기 위해 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
+Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정보를 관리하는 웹 사이트는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋을 제공하는 사전 처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media과 통합된 시스템의 회사 로직을 충족하기 위해 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
 
 >[!CAUTION]
 >
@@ -71,7 +70,7 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정
    * 페이지 오른쪽 아래 모서리에서 **[!UICONTROL 업로드 제출]**&#x200B;을 클릭합니다.
    * 글로벌 탐색 막대에서 **[!UICONTROL 작업]**&#x200B;을 클릭하여 업로드 작업의 상태를 확인합니다. **[!UICONTROL 작업]** 페이지의 **[!UICONTROL 상태]** 열에 [업로드 완료]가 나타나면 다음 단계로 진행합니다.
 
-1. 페이지 상단 근처의 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다.
+1. 페이지 상단 근처의 탐색 막대에서 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 제작 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 이미지 서버 게시]** 페이지의 **[!UICONTROL 카탈로그 관리]** 그룹에서 **[!UICONTROL 규칙 세트 정의 파일 경로]**&#x200B;를 찾은 다음 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 규칙 세트 정의 파일(XML) 선택]** 페이지에서 규칙 세트 파일을 찾은 다음 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
 1. 설정 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
