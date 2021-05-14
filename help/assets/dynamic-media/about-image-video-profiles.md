@@ -4,8 +4,7 @@ description: 이미지 프로필 또는 비디오 프로필은 폴더에 업로�
 feature: 자산 관리, 이미지 프로필, 비디오 프로필
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 0%
@@ -89,7 +88,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 (선택 사항) 재처리 워크플로우의 기본 일괄 처리 크기는 작업당 50개의 자산입니다. 이 최적의 일괄 처리 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있습니다. 따라서 처리 배너는 긴 시간 동안 Experience Manager 에셋에 유지됩니다. 그러나 평균 파일 크기가 1MB 이하일 경우 값을 100개 이상 증가시키는 것이 좋지만 1000을 넘지 않는 것이 좋습니다. 평균 파일 크기가 수백 MB인 경우 일괄 처리 크기를 최대 10개까지 줄이는 것이 좋습니다.
 
-**재처리 워크플로우의 일괄 처리 크기를 선택적으로 조정하려면**:
+**재처리 워크플로우의 일괄 처리 크기를 선택적으로 조정하려면**
 
 1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]**(망치) 아이콘 > **[!UICONTROL 워크플로우 > 모델]**&#x200B;을 탭합니다.
 1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7:자산]**&#x200B;을(를) 재처리합니다.
