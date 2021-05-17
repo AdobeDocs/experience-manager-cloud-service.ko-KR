@@ -4,14 +4,13 @@ description: AEM의 강력하고 유연한 기능, 그리고 첫 번째 개발 �
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
-
 
 # AEM 헤드리스 개발자 여정 {#aem-headless-developer-journey}
 
@@ -19,7 +18,7 @@ ht-degree: 2%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-AEM의 강력하고 유연한 기능, 그리고 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내 가능한 여정을 살펴보십시오.
+AEM의 강력하고 유연한 헤드리스 기능, 그리고 헤드리스 개발 프로젝트에서 헤드리스 없는 기능을 활용하는 방법을 통해 가이드 방식의 여정을 살펴보십시오.
 
 ## 소개 {#introduction}
 
@@ -52,3 +51,14 @@ AEM의 강력하고 유연한 기능, 그리고 첫 번째 개발 프로젝트�
 | 8 | [헤드리스 애플리케이션을 사용하여 라이브하는 방법](go-live.md) | 애플리케이션을 라이브로 배포하고 Git에서 로컬 코드를 가져와 CI/CD 파이프라인을 위해 Cloud Manager Git으로 이동하는 방법을 살펴봅니다. |
 | 9 | [론치 게시](post-launch.md) | 헤드리스 경험을 유지 관리하는 방법을 살펴봅니다. |
 | 10 | [옵션 - AEM을 사용하여 단일 페이지 애플리케이션(SPA)을 만드는 방법](create-spa.md) | AEM 헤드리스 기능을 이해한 후 헤드리스 전달 방식을 다각적이고 신속하게 결합하고 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 제작하는 방법을 살펴볼 수 있습니다. |
+
+## 다음 {#what-is-next} 소개
+
+이제 Adobe 헤드리스 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 이동하여 [CMS 헤드리스 개발에 대해 알아보기](learn-about.md) 문서를 읽어 보시기 바랍니다.
+
+### 나만의 모험 선택 {#choose-your-path}
+
+그러나 Adobe은 학습 스타일에 상관없이 AEM 헤드리스 프로젝트를 시작할 때 성공하기를 원합니다. 따라서 이 두 가지 옵션을 고려하십시오.
+
+* **헤드리스 개념 및 AEM 헤드리스 기술**&#x200B;에 대해 계속 배우려면 AEM 헤드리스 여정을 계속 진행해야 합니다. 이는 AEM에서 컨텐트 구조를 모델링하는 방법을 배우는 [AEM 컨텐트 모델로 컨텐트를 모델링하는 방법](model-your-content.md) 문서를 검토할 때 권장됩니다.
+* **학습(**)을 원하는 경우 [AEM 헤드리스 실습 위주의 시작하기 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)로 바로 이동하여 AEM 헤드리스 컨텐츠를 노출하기 위한 간단한 프로젝트를 구현하여 AEM 헤드리스 개발 기능으로 바로 이동할 수 있습니다.
