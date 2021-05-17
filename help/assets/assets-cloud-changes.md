@@ -1,16 +1,15 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] 에  [!DNL Cloud Service]의 주목할 만한 변경 사항'
 description: '[!DNL Adobe Experience Manager 6.5와 비교하여  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] 에 대한 주목할 만한 변경 사항.'
-feature: Release Information
+feature: 릴리스 정보
 role: Business Practitioner,Leader,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
+source-git-commit: bcb747517595943e1ed65d19424f002136877903
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # [!DNL Cloud Service] {#notable-changes}(으)로 주목할 만한 변경 사항[!DNL Experience Manager Assets]
 
@@ -53,7 +52,7 @@ Asset Microservices는 클라우드 관리자에서 관리되는 고객 프로�
 |-----|-----|-----|
 | [중복된 자산 감지](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 다른 방식으로 작동합니다. | [이(가) [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)에서 어떻게 작동되었는지 참조하십시오. |
 | [배치만(FPO) 변환의 경우](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 다른 방식으로 작업 |  |
-| 메타데이터 원본에 쓰기 | 지원되지 않음. | [메타데이터 쓰기 저장( [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html))을 참조하십시오. |
+| 메타데이터 원본에 쓰기 | 다른 방식으로 작업 | 기본적으로 비활성화됨. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 원본에 대해서는 자산 마이크로 서비스에 의해 처리됩니다. |
 | 패키지 관리자를 사용하여 업로드된 자산 처리 | 수동으로 개입해야 합니다. | **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동으로 다시 처리합니다. |
 | MIME 유형 감지 | 지원되지 않음. | 확장 없이 또는 잘못된 확장자로 디지털 자산을 업로드하는 경우, 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)에서 [MIME 유형 감지를 참조하십시오. |
 | 복합 자산에 대한 하위 자산 생성 | 지원되지 않음. | 종속 사용 사례는 처리되지 않습니다. 예를 들어 여러 페이지로 된 PDF 파일의 주석에 영향을 줍니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 생성을 참조하십시오. |
@@ -66,10 +65,10 @@ Asset Microservices는 클라우드 관리자에서 관리되는 고객 프로�
 >[!DNL Experience Manager]에 [!DNL Cloud Service] 리소스를 사용할 수 있습니다.
 >
 >* [사용 중단되거나 제거된 기능 목록](/help/release-notes/deprecated-removed-features.md)
->* [소개](/help/overview/introduction.md)
->* [새로운 기능 및 차이점](/help/overview/what-is-new-and-different.md)
->* [아키텍처](/help/core-concepts/architecture.md)
->* [주목할 만한 변경 사항](/help/release-notes/aem-cloud-changes.md)
->* [주목할 만한 변경 사항 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [소개](/help/overview/introduction.md)
+* [새로운 기능 및 차이점](/help/overview/what-is-new-and-different.md)
+* [아키텍처](/help/core-concepts/architecture.md)
+* [주목할 만한 변경 사항](/help/release-notes/aem-cloud-changes.md)
+* [주목할 만한 변경 사항 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+* [비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
