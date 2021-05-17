@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
+source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 43%
    1. **클라우드 서비스 구성**: 대상 AEM as a Cloud Service 작성자 URL로 입력합니다.
 
       >[!NOTE]
-      >컨텐츠 전송 작업 중에 한 번에 최대 4개의 마이그레이션 세트를 만들고 유지 관리할 수 있습니다.
+      >컨텐츠 전송 작업 중에 한 번에 최대 10개의 마이그레이션 세트를 만들고 유지 관리할 수 있습니다.
       >또한 특정 환경 - *단계*, *개발* 또는 *프로덕션*&#x200B;마다 개별적으로 마이그레이션을 만들어야 합니다.
 
    1. **액세스 토큰**: 액세스 토큰을 입력합니다.
