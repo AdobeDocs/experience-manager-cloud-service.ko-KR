@@ -1,18 +1,17 @@
 ---
 title: 코드 배포 - Cloud Services
 description: 코드 배포 - Cloud Services
-translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
 
-
 # 코드 배포 {#deploy-your-code}
 
-## 클라우드 관리자를 사용하여 코드 배포 {#deploying-code-with-cloud-manager}
+## AEM에서 Cloud Manager를 사용하여 코드를 Cloud Service {#deploying-code-with-cloud-manager}으로 배포
 
 프로덕션 파이프라인(저장소, 환경 및 테스트 환경)을 구성하면 코드를 배포할 준비가 됩니다.
 
@@ -126,5 +125,3 @@ Cloud Manager가 비프로덕션 토폴로지에 배포되는 경우 가능한 �
 1. publish2에 AEM 패키지를 배포하고 디스패처 패키지를 dispatcher2에 배포하고, 플러시 디스패처 캐시를 배포합니다.
 1. dispatcher2를 다시 로드 밸런서에 넣습니다.
 배포가 토폴로지의 모든 게시자 및 디스패처에 도달할 때까지 이 프로세스가 계속됩니다.
-
-
