@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -122,7 +121,7 @@ AEM에서 헤드리스를 시작하기 전에 필요한 모든 기능이 활성�
 * 다른 컨텐츠 제작자를 초대하여 컨텐츠를 검토하고 주석과 의견을 추가할 수 있습니다. 이러한 주석을 컨텐츠 조각 편집기 내에서 사용할 수 있고 컨텐츠 조각 관리 콘솔에서 전체 조각에 대해 전체적으로 확인할 수 있습니다.
 * 필수 요소를 최대한 활용하여 작업을 계속 진행할 수 있습니다. 필수 요소는 워크플로우를 차단할 수 있습니다.
 
-### 글로벌 콘텐츠 작성 {#localization}
+### 글로벌 컨텐츠 작성 {#localization}
 
 * 컨텐츠 번역 규칙과 거버넌스를 설정합니다. 시스템 부하를 줄이려면 평행 이동을 더 긴 간격으로 실행할 수 있는 비동기 프로세스로 설정합니다. 로컬라이제이션 품질을 제어하고 버그를 수정하는 데 걸리는 시간을 허용합니다.
 * 번역 메모리와 같은 AEM과 통합할 수 있는 번역 기술 시스템에서 제공하는 모든 기능을 활용할 수 있습니다.
@@ -141,9 +140,9 @@ AEM 헤드리스 개발자 여정의 이 부분을 완료하셨다면 다음을 
 
 ### 나만의 모험 선택 {#choose-your-path}
 
-학습 스타일에 상관없이 Adobe은 AEM 헤드리스 프로젝트를 성공적으로 시작하길 원합니다.
+학습 스타일에 상관없이 Adobe은 AEM 헤드리스 프로젝트를 시작할 때 성공하기를 원합니다.
 
-* **헤드리스 개념 및 AEM 헤드리스 기술**&#x200B;에 대해 계속 배우고자 하는 경우, AEM에서 컨텐트 구조를 모델링하는 방법을 학습하는 다음 [컨텐츠를 AEM 컨텐트 모델로 모델링하는 방법](model-your-content.md) 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다.
+* **헤드리스 개념 및 AEM 헤드리스 기술**&#x200B;에 대해 계속 배우려면, AEM에서 컨텐트 구조를 모델링하는 방법을 학습하는 다음 [컨텐츠를 AEM 컨텐트 모델로 모델링하는 방법](model-your-content.md) 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다.
 * **학습(**)을 원하는 경우 [AEM 헤드리스 실습 위주의 시작하기 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)로 바로 이동하여 AEM 헤드리스 컨텐츠를 노출하기 위한 간단한 프로젝트를 구현하여 AEM 헤드리스 개발 기능으로 바로 이동할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
