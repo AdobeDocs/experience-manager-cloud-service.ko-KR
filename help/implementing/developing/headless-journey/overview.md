@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -55,8 +55,7 @@ AEM의 강력하고 유연한 헤드리스 기능, 그리고 헤드리스 개발
 | 6 | [AEM 자산 API를 통해 콘텐츠를 업데이트하는 방법](update-your-content.md) | REST API를 사용하여 콘텐츠 조각 콘텐츠에 액세스하고 업데이트하는 방법을 알아봅니다. |
 | 7 | [AEM 헤드리스에서 앱과 콘텐츠를 모두 연결하는 방법](put-it-all-together.md) | 컨텐츠 조각, GraphQL 호출, REST API 호출 및 애플리케이션을 비롯한 AEM 프로젝트를 가져와 라이브할 수 있도록 준비하는 방법을 살펴봅니다. |
 | 8 | [헤드리스 애플리케이션을 사용하여 라이브하는 방법](go-live.md) | 애플리케이션을 라이브로 배포하고 Git에서 로컬 코드를 가져와 CI/CD 파이프라인을 위해 Cloud Manager Git으로 이동하는 방법을 살펴봅니다. |
-| 9 | [론치 게시](post-launch.md) | 헤드리스 경험을 유지 관리하는 방법을 살펴봅니다. |
-| 10 | [옵션 - AEM을 사용하여 단일 페이지 애플리케이션(SPA)을 만드는 방법](create-spa.md) | AEM 헤드리스 기능을 이해한 후 헤드리스 전달 방식을 다각적이고 신속하게 결합하고 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 제작하는 방법을 살펴볼 수 있습니다. |
+| 9 | [옵션 - AEM을 사용하여 단일 페이지 애플리케이션(SPA)을 만드는 방법](create-spa.md) | AEM 헤드리스 기능을 이해한 후 헤드리스 전달 방식을 다각적이고 신속하게 결합하고 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 제작하는 방법을 살펴볼 수 있습니다. |
 
 ## 다음 {#what-is-next} 소개
 
