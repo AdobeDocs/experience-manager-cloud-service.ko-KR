@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >진행 중인 작업 - 이 문서의 작성은 진행 중이며 완전한 또는 최종적인 것으로 해석되거나 제작 목적으로 사용되어서는 안 됩니다.
 
-[AEM 헤드리스 개발자 여정의 이 부분에서 Git에서 로컬 코드를 가져와서 CI/CD 파이프라인을 위해 Cloud Manager Git으로 이동하여 헤드리스 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.](overview.md)
+[AEM 헤드리스 개발자 여정](overview.md)의 이 부분에서 로컬 코드를 Git에서 가져와 CI/CD 파이프라인을 위해 Cloud Manager Git으로 이동하여 헤드리스 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 
 ## 지금까지 스토리 {#story-so-far}
 
@@ -40,19 +40,18 @@ AEM 헤드리스 여정의 이전 문서에서, [모두 함께 놓는 방법 - �
 
 ## AEM SDK {#the-aem-sdk}
 
-여기에는 다음과 같은 가공물이 포함됩니다.
+AEM SDK는 사용자 지정 코드를 빌드하고 배포하는 데 사용됩니다. 라이브하기 전에 헤드리스 애플리케이션을 개발 및 테스트하기 위해 필요한 주요 툴입니다. 여기에는 다음과 같은 가공물이 포함됩니다.
 
 * 빠른 시작 jar - 작성자 및 게시 인스턴스를 모두 설정하는 데 사용할 수 있는 실행 jar 파일입니다
 * Dispatcher 도구 - Windows 및 UNIX 기반 시스템에 대한 Dispatcher 모듈 및 해당 종속성
 * Java API Jar - AEM에서 개발하는 데 사용할 수 있는 모든 허용되는 Java API를 표시하는 Java Jar/Maven 종속성
 * Javadoc jar - Java API jar용 javadocs
 
-## 개발 도구 {#development-tools}
+## 추가 개발 도구 {#additional-development-tools}
 
 AEM SDK 외에도 자신의 코드와 컨텐츠를 로컬에서 개발 및 테스트할 수 있는 추가 툴이 필요합니다.
 
 * Java
-* AEM SDK
 * Git
 * Apache Maven
 * Node.js 라이브러리
@@ -60,15 +59,15 @@ AEM SDK 외에도 자신의 코드와 컨텐츠를 로컬에서 개발 및 테�
 
 AEM은 Java 애플리케이션이므로 Java 및 Java SDK를 설치하여 Cloud Service으로 AEM 개발을 지원해야 합니다.
 
-AEM SDK는 사용자 지정 코드를 빌드하고 배포하는 데 사용됩니다. 라이브하기 전에 헤드리스 애플리케이션을 테스트하기 위해 필요한 주요 툴입니다.
-
 Git은 소스 제어를 관리하고 Cloud Manager의 변경 사항을 체크 인한 다음 프로덕션 인스턴스에 배포하는 데 사용할 수 있습니다.
 
 AEM은 Apache Maven을 사용하여 AEM Maven Project 원형에서 생성된 프로젝트를 제작합니다. 모든 주요 IDE는 Maven에 대한 통합 지원을 제공합니다.
 
-Node.js는 AEM 프로젝트의 ui.frontend 하위 프로젝트의 프런트 엔드 에셋을 사용하여 작업하는 데 사용되는 JavaScript 런타임 환경입니다. Node.js는 사실상의 Node.js 패키지 관리자로서 JavaScript 종속성을 관리하는 데 사용됩니다.
+Node.js는 AEM 프로젝트의 `ui.frontend` 하위 프로젝트의 프런트 엔드 에셋을 사용하여 작업하는 데 사용되는 JavaScript 런타임 환경입니다. Node.js는 사실상의 Node.js 패키지 관리자로서 JavaScript 종속성을 관리하는 데 사용됩니다.
 
 ## AEM 시스템 구성 요소 개요 {#components-of-an-aem-system-at-a-glance}
+
+다음으로 AEM 환경의 구성 부분을 살펴보겠습니다.
 
 전체 AEM 환경은 작성자, 게시 및 발송자로 구성됩니다. 이러한 동일한 구성 요소는 라이브되기 전에 코드와 컨텐츠를 보다 쉽게 미리 볼 수 있도록 로컬 개발 런타임에서 사용할 수 있습니다.
 
@@ -88,10 +87,6 @@ Node.js는 AEM 프로젝트의 ui.frontend 하위 프로젝트의 프런트 엔�
 
 프로덕션 시스템에서 디스패처와 http Apache 서버는 항상 AEM 게시 인스턴스 앞에 배치됩니다. AEM 시스템을 위한 캐싱 및 서비스 서비스를 제공하므로 디스패처에 대한 코드와 컨텐츠 업데이트를 테스트하는 것도 중요합니다.
 
-모든 것이 테스트되고 제대로 작동하는지 확인한 다음 Cloud Manager의 중앙 Git 리포지토리로 코드 업데이트를 푸시할 수 있습니다.
-
-업데이트를 Cloud Manager에 업로드한 후 Cloud Manager의 CI/CD 파이프라인을 사용하여 Cloud Service으로 AEM에 배포할 수 있습니다.
-
 ## 로컬 개발 환경 {#previewing-your-code-and-content-locally-with-the-local-development-environment}을(를) 사용하여 로컬로 코드 및 컨텐츠 미리 보기
 
 AEM 헤드가 없는 프로젝트를 시작할 수 있도록 준비하려면 프로젝트의 모든 구성 요소가 제대로 작동하는지 확인해야 합니다.
@@ -106,23 +101,16 @@ AEM 헤드가 없는 프로젝트를 시작할 수 있도록 준비하려면 프
 
 로컬 개발 환경이 설정되면 정적 노드 서버를 로컬로 배포하여 Response 앱에 제공하는 컨텐츠를 시뮬레이션할 수 있습니다.
 
-로컬 개발 환경 설정 및 콘텐츠 미리 보기에 필요한 모든 종속성을 자세히 살펴보려면 [AEM 게시 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)와 함께 프로덕션 배포를 참조하십시오.
-
-## 프로덕션 {#deploy-to-production}에 배포
-
-모든 코드와 컨텐츠를 로컬로 테스트한 후 AEM을 통해 프로덕션 배포를 시작할 수 있습니다.
-
-Cloud Manager CI/CD 파이프라인을 활용하여 코드 배포를 시작할 수 있습니다. 파이프라인은 대부분 [여기](/help/implementing/deploying/overview.md)에 포함되어 있습니다.
+로컬 개발 환경 설정 및 컨텐츠 미리 보기에 필요한 모든 종속성을 자세히 살펴보려면 [프로덕션 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)를 참조하십시오.
 
 ## AEM 헤드리스 응용 프로그램을 Go-Live {#prepare-your-aem-headless-application-for-golive} 준비합니다.
 
-이제 아래에 설명된 모범 사례에 따라 AEM 헤드리스 애플리케이션을 시작할 준비가 되었습니다.
+이제 아래에 설명된 모범 사례를 따라 AEM 헤드리스 애플리케이션을 시작할 준비가 되었습니다.
 
 ### {#secure-and-scale-before-launch} 실행 전에 헤드리스 응용 프로그램의 보안 및 크기 조절
 
-1. [토큰 기반 인증 구성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-1. 안전한 웹 후크
-1. 캐싱 및 확장성 구성
+1. GraphQL 요청으로 [토큰 기반 인증](/help/assets/content-fragments/graphql-authentication-content-fragments.md)을 구성합니다.
+1. [캐싱](/help/implementing/dispatcher/caching.md)을 구성합니다.
 
 ### 모델 구조와 GraphQL 출력 비교 {#structure-vs-output}
 
@@ -133,8 +121,8 @@ Cloud Manager CI/CD 파이프라인을 활용하여 코드 배포를 시작할 �
 ### CDN 캐시 히트 비율 최대화 {#maximize-cdn}
 
 * 표면으로부터 라이브 컨텐츠를 요청하지 않는 한 직접 GraphQL 쿼리를 사용하지 마십시오.
-   * 대신 지속적인 쿼리를 사용하십시오.
-   * CDN이 캐시할 수 있도록 600초 이상의 CDN TTL을 제공합니다.
+   * 가능하면 지속적인 쿼리를 사용하십시오.
+   * CDN이 TTL을 캐시하려면 600초 이상의 CDN TTL을 제공합니다.
    * AEM은 기존 쿼리에 대한 모델 변경 영향을 계산할 수 있습니다.
 * 클라이언트 트래픽을 CDN으로 줄이고 높은 TTL을 할당하기 위해 낮은 및 높은 컨텐츠 변경률 간에 JSON 파일/GraphQL 쿼리를 분할할 수 있습니다. 이렇게 하면 원본 서버와 JSON의 유효성을 다시 검사하는 CDN이 최소화됩니다.
 * CDN에서 컨텐츠를 능동적으로 무효화하려면 소프트 숙지를 사용합니다. 이를 통해 CDN은 캐시 오류를 발생시키지 않고 컨텐츠를 다시 다운로드할 수 있습니다.
@@ -146,6 +134,14 @@ Cloud Manager CI/CD 파이프라인을 활용하여 코드 배포를 시작할 �
 * JSON 및 참조된 아티팩트를 호스트하는 데 사용되는 도메인 수를 최소화합니다.
 * `Last-modified-since`을 활용하여 리소스를 새로 고칩니다.
 * 전체 JSON 파일을 구문 분석할 필요 없이 JSON 파일에서 `_reference` 출력을 사용하여 에셋 다운로드를 시작합니다.
+
+## 프로덕션 {#deploy-to-production}에 배포
+
+모든 것이 테스트되고 제대로 작동하는지 확인한 후 코드 업데이트를 Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)의 중앙 Git 리포지토리로 푸시할 준비가 되었습니다.[
+
+업데이트를 Cloud Manager에 업로드한 후 [Cloud Manager의 CI/CD 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)을(를) 사용하여 Cloud Service으로 AEM에 배포할 수 있습니다.
+
+Cloud Manager CI/CD 파이프라인을 활용하여 코드 배포를 시작할 수 있습니다. 파이프라인은 대부분 [여기](/help/implementing/deploying/overview.md)에 포함되어 있습니다.
 
 ## 성능 모니터링 {#performance-monitoring}
 
@@ -207,16 +203,10 @@ AEM 헤드리스 개발자 여정의 이 부분을 완료하셨다면 다음을 
 * AEM 헤드리스 프로젝트를 라이브하는 방법
 * 라이브하고 나면 어떻게 하죠?
 
-첫 번째 AEM Headless 프로젝트를 이미 시작했거나 이제 필요한 모든 것을 갖추고 있습니다. 잘했어요!
-
-AEM의 헤드리스 스토어는 여기서 멈출 필요가 없습니다. [여정 시작 부분](getting-started.md#integration-levels)에서 AEM이 헤드리스 전달 및 기존의 전체 스택 모델을 지원할 뿐만 아니라 두 제품의 장점을 결합하는 하이브리드 모델을 지원할 수 있는 방법을 간략하게 살펴보았습니다.
-
-이러한 종류의 유연성이 프로젝트에 필요한 것이라면 AEM을 사용하여 여정의 추가 부분인 [단일 페이지 응용 프로그램을 만드는 방법(SPA)을 계속 사용하십시오.](create-spa.md)
-
 ## 추가 리소스 {#additional-resources}
 
-* [로컬 AEM 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Cloud Service SDK로서 AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [Cloud Service으로 AEM에 배포 개요](/help/implementing/deploying/overview.md)
+* [Cloud Service SDK로서 AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [로컬 AEM 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [Cloud Manager를 사용하여 코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Cloud Manager Git 리포지토리를 외부 Git 리포지토리와 통합하고 프로젝트를 AEM에 Cloud Service으로 배포](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
+* [Cloud Manager Git 리포지토리를 외부 Git 리포지토리와 통합하고 프로젝트를 AEM에 Cloud Service으로 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
