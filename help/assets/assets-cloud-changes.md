@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager 6.5와 비교하여  [!DNL Adobe Ex
 feature: 릴리스 정보
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bcb747517595943e1ed65d19424f002136877903
+source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '778'
 ht-degree: 6%
 
 ---
@@ -46,7 +46,7 @@ Asset Microservices는 클라우드 관리자에서 관리되는 고객 프로�
 
 ## [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}의 기능 패리티
 
-[!DNL Experience Manager] as a는 기존  [!DNL Cloud Service] 기능을 사용할 수 있는 많은 새로운 기능과 더 많은 성능을 제공합니다. 그러나 [!DNL Experience Manager] 6.5에서 [!DNL Experience Manager]으로 이동할 때 일부 기능이 다르게 작동하거나, 사용할 수 없거나, 부분적으로 사용할 수 있다는 것을 알 수 있습니다. [!DNL Cloud Service] 다음은 이러한 기능 목록입니다.
+[!DNL Experience Manager] as a는 기존  [!DNL Cloud Service] 기능을 사용할 수 있는 많은 새로운 기능과 더 많은 성능을 제공합니다. 그러나 [!DNL Experience Manager] 6.5에서 [!DNL Experience Manager]으로 이동할 때 일부 기능이 다르게 작동하거나, 사용할 수 없거나, 부분적으로 사용할 수 있다는 것을 알 수 있습니다. [!DNL Cloud Service] 다음은 이러한 기능의 목록입니다. 또한 [사용되지 않음 및 제거된 기능](/help/release-notes/deprecated-removed-features.md)을 참조하십시오.
 
 | 기능 또는 사용 사례 | [!DNL Experience Manager]의 상태( [!DNL Cloud Service]) | 댓글 |
 |-----|-----|-----|
