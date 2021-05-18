@@ -3,26 +3,19 @@ title: 디지털 에셋의 메타데이터 관리
 description: '메타데이터 유형에 대해 알아보고, 메타데이터에 따라 자산을 자동으로 구성하고 처리하는 방법을 알아봅니다. [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] '
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
+feature: 자산 관리,메타데이터
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
 
-
 # 디지털 자산 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] 모든 에셋에 대한 메타데이터를 유지합니다. 또한 보다 쉽게 에셋을 분류하고 구성할 수 있으며 특정 에셋을 찾는 사람에게 도움이 됩니다. 메타데이터 관리는 [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 크리에이티브 워크플로우와 통합됩니다. 에셋으로 메타데이터를 유지 및 관리할 수 있으므로 메타데이터를 기반으로 에셋을 자동으로 구성하고 처리할 수 있습니다.
-
->[!MORELIKETHIS]
->
->* [XMP 메타데이터](xmp-metadata.md)
->* [메타데이터를 편집하거나 추가하는 방법](meta-edit.md)
-
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -234,3 +227,9 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 워크플로우는 이미지에 제목이 있는지 여부를 확인할 수 있습니다. 그렇지 않으면 제목 추가에 알립니다.
 * 워크플로우는 자산에 대한 저작권 공지가 배포를 허용하는지 여부를 확인할 수 있습니다. 따라서, 시스템은 자산을 한 서버나 다른 서버로 보냅니다.
 * 워크플로우는 사전 정의된 필수 메타데이터 또는 *잘못된* 메타데이터가 있는 자산이 없는 자산을 확인할 수 있습니다.
+
+>[!MORELIKETHIS]
+>
+>* [XMP 메타데이터](xmp-metadata.md)
+* [메타데이터를 편집하거나 추가하는 방법](meta-edit.md)
+
