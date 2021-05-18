@@ -4,14 +4,13 @@ description: AEM 헤드리스 개발자 여정의 이 부분에서 AEM 헤드리
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
 
 ---
-
 
 # Cloud Service {#getting-started}으로 AEM 헤드리스 시작하기
 
@@ -63,7 +62,8 @@ AEM 내에서 헤드리스 프로젝트를 정의하려면 먼저 몇 가지 기
 가장 간단한 수준에서 AEM에서 디지털 경험을 만들려면 다음 단계가 필요합니다.
 
 1. 컨텐츠 작성자가 작성 인스턴스에서 헤드리스 컨텐츠를 만듭니다.
-1. 이 콘텐트가 준비되면 게시 인스턴스에 복제됩니다. 그런 다음 API를 호출하여 이 컨텐츠를 검색할 수 있습니다.
+1. 이 콘텐트가 준비되면 게시 인스턴스에 복제됩니다.
+1. 그런 다음 API를 호출하여 이 컨텐츠를 검색할 수 있습니다.
 
 AEM 헤드리스(Headless)는 다음 섹션에 설명된 [헤드리스 컨텐츠를 관리하는 강력한 도구를 제공하여 이 기술 기반을 바탕으로 구축됩니다.](#aem-headless-basics)
 
