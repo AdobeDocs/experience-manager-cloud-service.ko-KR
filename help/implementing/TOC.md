@@ -5,10 +5,9 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: 개발자 도구
 role: Developer, Architect
-translation-type: tm+mt
-source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 42%
 
 ---
@@ -83,7 +82,6 @@ ht-degree: 42%
       + [AEM 자산 API를 통해 콘텐츠를 업데이트하는 방법](developing/headless-journey/update-your-content.md)
       + [모든 것을 통합하는 방법](developing/headless-journey/put-it-all-together.md)
       + [헤드리스 애플리케이션을 사용하여 라이브하는 방법](developing/headless-journey/go-live.md)
-      + [론치 게시](developing/headless-journey/post-launch.md)
       + [옵션 - AEM을 사용하여 단일 페이지 애플리케이션을 만드는 방법](developing/headless-journey/create-spa.md)
    + [AEM의 헤드라인 및 헤드리스](developing/headful-headless.md)
    + 전체 스택 AEM 개발 {#full-stack}
