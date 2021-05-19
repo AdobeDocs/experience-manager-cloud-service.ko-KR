@@ -5,13 +5,13 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
-source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
+source-git-commit: 58617913f967abbab31054ea9cdb691a9b29415f
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
 # AEM 헤드리스 SDK - 제공 예정 {#coming-soon}
 
-이 페이지는 새로운 AEM 헤드리스 SDK를 사용하여 로컬 개발 프로젝트를 설정하는 방법에 대한 지침을 제공하기 위해 마련되었습니다. SDK의 첫 번째 릴리스를 공개적으로 사용할 수 있게 되면 업데이트됩니다.
+이 페이지는 새로운 AEM 헤드리스 SDK를 사용하여 로컬 개발 프로젝트를 설정하는 방법에 대한 지침을 제공하기 위해 마련되었습니다. SDK를 공개적으로 사용할 수 있게 되면 더 많은 컨텐츠에 대한 최신 정보를 얻을 수 있습니다.
