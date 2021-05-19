@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -322,7 +321,11 @@ AEM 헤드리스 개발자 여정의 이 부분을 완료하셨다면 다음을 
 * Have experience with sample code and know how the API works in practice.
 -->
 
-AEM 헤드리스 프로젝트를 사용하고 라이브할 준비를 하는 방법을 배울 수 있는 AEM Headless](put-it-all-together.md) 문서의 [모두 함께 놓는 방법 - 앱과 귀하의 컨텐츠를 차례로 검토하여 AEM 헤드리스 여정을 계속 진행해야 합니다.
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+AEM 헤드리스 프로젝트를 라이브로 촬영하는 [헤드리스 응용 프로그램을 사용하여 라이브하는 방법](go-live.md) 문서를 다시 검토하여 AEM 헤드리스 여정을 계속 진행해야 합니다!
 
 [AEM을 사용하여 단일 페이지 애플리케이션(SPA)을 만드는 방법](create-spa.md) 은 AEM Editor 프레임워크를 사용하여 편집 가능한 SPA을 만들고 외부 SPA을 통합하여 필요에 따라 편집 기능을 활성화하는 방법을 보여줍니다.
 
@@ -332,7 +335,7 @@ AEM 헤드리스 프로젝트를 사용하고 라이브할 준비를 하는 방�
 * [컨텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - 콘텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
-* [콘텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
+* [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
 * [AEM 핵심 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [비디오 - AEM을 사용한 CORS 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
