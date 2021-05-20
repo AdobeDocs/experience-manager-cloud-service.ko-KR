@@ -1,14 +1,13 @@
 ---
 title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 서로 다른 점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
 
 ---
-
 
 # 페이지 비교 {#page-diff}
 
@@ -89,7 +88,7 @@ ht-degree: 97%
 페이지 비교 시 차이점이 예상대로 감지되지 않을 수 있습니다.
 
 * 버전과 론치를 비교할 때, 탐색 표시, 메뉴, 제품 목록 또는 로고(컨텐츠를 렌더링하기 위해 사이트 구조에 의존하는 구성 요소)와 같은 동적 구성 요소는 고려되지 않습니다.
-* 버전의 경우 비교 시 액세스 제어 정책 및 Live Copy 관계는 다시 만들어지지 않습니다.
+* 버전 비교 시 액세스 제어 정책 및 Live Copy 관계가 다시 만들어지지 않습니다.
 * 페이지가 이동되면 이동 전에 만든 버전으로 더 이상 다른 작업을 수행할 수 없습니다.
    * 차이에 문제가 발생한 경우 페이지에 대한 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)에서 페이지가 이동되었는지 확인합니다.
 
