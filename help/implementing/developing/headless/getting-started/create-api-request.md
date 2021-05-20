@@ -1,31 +1,30 @@
 ---
-title: 머리글 없는 컨텐츠 조각 액세스 및 제공 빠른 시작 안내서
-description: AEM Assets REST API를 사용하여 콘텐츠 조각 및 GraphQL API를 관리하여 콘텐츠 조각 콘텐츠의 헤드리스를 제공하는 방법을 알아봅니다.
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+title: 컨텐츠 조각 액세스 및 제공 헤드리스 빠른 시작 안내서
+description: 컨텐츠 조각 컨텐츠의 헤드리스 전달을 위해 AEM Assets REST API를 사용하여 컨텐츠 조각과 GraphQL API를 관리하는 방법을 알아봅니다.
+exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
+# 컨텐츠 조각 액세스 및 제공 헤드리스 빠른 시작 안내서 {#accessing-delivering-content-fragments}
 
-# 컨텐츠 조각 액세스 및 전달 헤드리스 빠른 시작 안내서 {#accessing-delivering-content-fragments}
+컨텐츠 조각 컨텐츠의 헤드리스 전달을 위해 AEM Assets REST API를 사용하여 컨텐츠 조각과 GraphQL API를 관리하는 방법을 알아봅니다.
 
-AEM Assets REST API를 사용하여 콘텐츠 조각 및 GraphQL API를 관리하여 콘텐츠 조각 콘텐츠의 헤드리스를 제공하는 방법을 알아봅니다.
+## GraphQL 및 Assets REST API란 무엇입니까?{#what-are-the-apis}
 
-## GraphQL 및 자산 REST API란 무엇입니까?{#what-are-the-apis}
-
-[일부 컨텐츠 조각을 만들었으므로 이제 AEM API를 사용하여 ](create-content-fragment.md) 컨텐츠를 헤드없이 전달할 수 있습니다.
+[일부 컨텐츠 조각을 만들었으므로 이제 ](create-content-fragment.md) AEM API를 사용하여 헤드리도록 할 수 있습니다.
 
 * [GraphQL ](/help/assets/content-fragments/graphql-api-content-fragments.md) API를 사용하면 컨텐츠 조각에 액세스하고 전달할 요청을 만들 수 있습니다.
-* [자산 REST ](/help/assets/content-fragments/assets-api-content-fragments.md) API를 사용하여 컨텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
+* [자산 REST ](/help/assets/content-fragments/assets-api-content-fragments.md) API를 사용하면 컨텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
-이 안내서의 나머지 부분에서는 GraphQL 액세스 및 컨텐츠 조각 전달에 중점을 둡니다.
+이 안내서의 나머지 부분은 GraphQL 액세스 및 컨텐츠 조각 전달에 중점을 둡니다.
 
 ## GraphQL {#how-to-deliver-a-content-fragment}을 사용하여 컨텐츠 조각을 제공하는 방법
 
-정보 설계자는 컨텐츠를 제공하기 위해 채널 끝점에 대한 쿼리를 설계해야 합니다. 이러한 쿼리는 일반적으로 모델당 종단점당 한 번만 고려되어야 합니다. 이 시작 안내서의 목적을 위해 Adobe는 안내선을 하나만 만들어야 합니다.
+정보 설계자는 컨텐츠를 게재하기 위해 채널 종단점에 대한 쿼리를 설계해야 합니다. 이러한 쿼리는 일반적으로 모델당 종단점당 한 번만 고려되어야 합니다. 이 시작 안내서를 위해 작성만 하면 됩니다.
 
 <!-- Not in the UI yet - will need updating when it is -->
 <!--
@@ -33,16 +32,16 @@ AEM Assets REST API를 사용하여 콘텐츠 조각 및 GraphQL API를 관리�
    * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
 -->
 
-1. AEM에 Cloud Service으로 로그인하고 GraphiQL 인터페이스에 액세스합니다.
+1. AEM as a Cloud Service에 로그인하고 GraphiQL 인터페이스에 액세스합니다.
    * 예: `https://<host>:<port>/content/graphiql.html`.
 
-1. GraphiQL은 GraphQL에 대한 브라우저 내 쿼리 편집기입니다. 쿼리를 작성하여 콘텐츠 조각을 JSON으로 간편하게 전달할 수 있습니다.
+1. GraphiQL은 GraphQL용 브라우저 내 쿼리 편집기입니다. 이 쿼리를 사용하여 콘텐츠 조각을 검색하여 JSON으로 헤더하여 제공할 수 있습니다.
    * 왼쪽 패널에서 쿼리를 작성할 수 있습니다.
    * 오른쪽 패널에 결과가 표시됩니다.
-   * 쿼리 편집기는 쿼리를 쉽게 실행할 수 있는 코드 완성 및 핫키를 제공합니다.
+   * 쿼리 편집기는 쿼리를 쉽게 실행할 수 있는 코드 완료와 핫키를 제공합니다.
       ![GraphiQL 편집기](../assets/graphiql.png)
 
-1. 생성된 모델을 `person`, `firstName`, `lastName` 및 `position` 필드와 함께 호출했다고 가정할 경우, 간단한 쿼리를 작성하여 컨텐츠 조각의 컨텐츠를 검색할 수 있습니다.
+1. 우리가 만든 모델이 필드 `firstName`, `lastName` 및 `position`와 함께 `person`이라고 가정할 경우, 간단한 쿼리를 작성하여 컨텐츠 조각의 컨텐츠를 검색할 수 있습니다.
 
    ```text
    query 
@@ -61,21 +60,21 @@ AEM Assets REST API를 사용하여 콘텐츠 조각 및 GraphQL API를 관리�
 1. 왼쪽 패널에 쿼리를 입력합니다.
    ![GraphiQL 쿼리](../assets/graphiql-query.png)
 
-1. **쿼리 실행** 단추를 클릭하거나 `Ctrl-Enter` 핫키를 사용하면 결과가 오른쪽 패널에 JSON으로 표시됩니다.
+1. **Execute Query** 단추를 클릭하거나 `Ctrl-Enter` 핫키를 사용하면 결과가 오른쪽 패널에 JSON으로 표시됩니다.
    ![GraphiQL 결과](../assets/graphiql-results.png)
 
-1. 페이지 오른쪽 상단에 있는 **Docs** 링크를 클릭하여 자체 모델에 맞는 쿼리를 작성할 수 있는 컨텍스트 내 설명서를 표시합니다.
+1. 페이지 오른쪽 상단에 있는 **Docs** 링크를 클릭하여 상황에 맞는 설명서를 작성하여 모델에 맞는 쿼리를 만들 수 있습니다.
    ![GraphiQL 설명서](../assets/graphiql-documentation.png)
 
-GraphQL은 특정 데이터 세트 또는 개별 데이터 객체뿐만 아니라 객체의 특정 요소, 중첩된 결과, 쿼리 변수에 대한 지원 제공 등을 제공할 수 있는 구조화된 쿼리를 활성화합니다.
+GraphQL은 특정 데이터 세트 또는 개별 데이터 객체뿐만 아니라 개체의 특정 요소, 중첩된 결과, 쿼리 변수에 대한 지원 등을 제공할 수 있는 구조화된 쿼리를 활성화합니다.
 
-GraphQL은 반복적인 API 요청과 과잉 전달을 방지할 수 있으며 대신 단일 API 쿼리에 대한 응답으로 렌더링에 필요한 내용을 정확하게 일괄적으로 제공할 수 있습니다. 결과 JSON을 사용하여 데이터를 다른 사이트 또는 앱에 전달할 수 있습니다.
+GraphQL은 반복 API 요청과 초과 전달을 방지할 수 있으며 대신 단일 API 쿼리에 대한 응답으로 렌더링하는 데 필요한 정확한 내용을 대량 게재할 수 있습니다. 결과 JSON을 사용하여 다른 사이트 또는 앱에 데이터를 제공할 수 있습니다.
 
 ## 다음 단계 {#next-steps}
 
-바로 그거야! 이제 AEM에서 헤드리스 콘텐츠 관리에 대한 기본적인 이해가 필요합니다. 물론 이용 가능한 기능에 대한 포괄적인 이해를 위해 더 자세히 살펴볼 수 있는 다양한 리소스가 있습니다.
+됐습니다. 이제 AEM에서 헤드리스 컨텐츠 관리에 대한 기본 사항을 알 수 있습니다. 물론 사용 가능한 기능에 대한 포괄적인 이해를 위해 더 깊이 이해할 수 있는 리소스는 많습니다.
 
-* **구성 브라우저**  - AEM 구성 브라우저에 대한 자세한 정보
-* **[컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)**  - 컨텐츠 조각 만들기 및 관리에 대한 자세한 정보
-* **[AEM Assets HTTP API의 컨텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)**  - CRUD 작업을 통해 HTTP API를 통해 직접 AEM 컨텐츠에 액세스하는 방법에 대한 자세한 내용(만들기, 읽기, 업데이트, 삭제)
-* **[GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**  - 컨텐츠 조각을 헤드없이 제공하는 방법에 대한 자세한 내용
+* **구성 브라우저**  - AEM 구성 브라우저에 대한 세부 정보
+* **[컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)**  - 컨텐츠 조각 만들기 및 관리에 대한 자세한 내용
+* **[AEM Assets HTTP API의 컨텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)**  - CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 AEM 컨텐츠에 액세스하는 방법에 대한 자세한 내용
+* **[GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**  - 컨텐츠 조각을 헤더없이 제공하는 방법에 대한 자세한 내용
