@@ -1,14 +1,13 @@
 ---
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
-translation-type: tm+mt
-source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4600'
 ht-degree: 97%
 
 ---
-
 
 # 페이지 템플릿 만들기 {#creating-page-templates}
 
@@ -114,7 +113,7 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >템플릿 유형은 사전 정의된 템플릿 레이아웃이며 템플릿의 템플릿으로 간주할 수 있습니다. 이러한 템플릿은 개발자 또는 시스템 관리자가 미리 정의합니다. 개발자 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-type).—>
+   >템플릿 유형은 사전 정의된 템플릿 레이아웃이며 템플릿의 템플릿으로 간주할 수 있습니다. 이러한 템플릿은 개발자 또는 시스템 관리자가 미리 정의합니다. 개발자 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-type).—>에서 자세한 내용을 확인할 수 있습니다.
 
 1. **템플릿 세부 정보**&#x200B;를 완료합니다.
 
@@ -129,9 +128,9 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->템플릿은 페이지 작성 워크플로우를 간소화하기 위한 강력한 도구입니다. 그러나 너무 많은 템플릿이 작성자를 압도하고 페이지 생성을 혼동시킬 수 있습니다. 템플릿의 수를 100개 미만으로 유지하는 것이 효과적인 경험입니다.
+>템플릿은 페이지 작성 워크플로우를 간소화하는 강력한 도구입니다. 그러나 너무 많은 템플릿이 작성자를 압도하고 페이지 생성을 혼동시킬 수 있습니다. 경험상 좋은 방법은 서식 파일의 수를 100개 미만으로 유지하는 것입니다.
 >
->잠재적인 성능 영향 때문에 Adobe에서는 1,000개 이상의 템플릿을 사용하는 것이 권장되지 않습니다.
+>Adobe은 성능에 영향을 줄 수 있으므로 1,000개 이상의 템플릿을 사용하지 않는 것이 좋습니다.
 
 ### 템플릿 속성 정의 - 템플릿 작성자 {#defining-template-properties-template-author}
 
@@ -210,7 +209,7 @@ ht-degree: 97%
    >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
    >
-   >[템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오. 허용되는 템플릿에 대한 원칙은 동일하게 유지됩니다.
+   >[템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오. 허용된 템플릿에 대한 원칙은 동일하게 유지됩니다.
 
 1. **저장**&#x200B;을 클릭하여 페이지 속성에 대한 변경 사항을 저장합니다.
 
