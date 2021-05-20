@@ -1,14 +1,13 @@
 ---
 title: 페이지 컨텐츠 편집
 description: 페이지를 생성하면 컨텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
 
 ---
-
 
 # 페이지 컨텐츠 편집{#editing-page-content}
 
