@@ -1,8 +1,8 @@
 ---
 title: '사용자 지정 도메인 이름의 SSL 인증서 업데이트 '
 description: 사용자 지정 도메인 이름의 SSL 인증서 업데이트
-translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+exl-id: 652f7568-dc6a-4ac6-b06f-4ea1540498fa
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -11,10 +11,10 @@ ht-degree: 0%
 
 # 사용자 지정 도메인 이름의 SSL 인증서 {#update-ssl-certificate-cdn} 업데이트
 
-업데이트 작업은 UI의 두 다른 위치에서 수행할 수 있습니다.
+업데이트 작업은 UI의 두 위치에서 수행할 수 있습니다.
 
 1. 환경 화면에서 **도메인 설정** 페이지로 이동합니다.
-1. 또는 **환경** 화면에서 특정 환경 세부 사항 페이지로 이동하여 도메인 이름 테이블로 이동합니다.
+1. 또는 **환경** 화면에서 특정 환경 세부 정보 페이지로 이동하여 도메인 이름 테이블로 이동합니다.
    >[!NOTE]
    >보거나 업데이트할 사용자 지정 도메인 이름이 나열되는 행을 식별합니다.
 1. **선택...행의 맨 오른쪽 끝에 있는** 메뉴
