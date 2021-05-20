@@ -1,14 +1,13 @@
 ---
 title: 워크플로우 작업
 description: AEM의 워크플로우에서는 페이지나 자산에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 
 ---
-
 
 # 워크플로우 작업 {#working-with-workflows}
 
