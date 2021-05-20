@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
-translation-type: tm+mt
-source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 90%
 
 ---
-
 
 # Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항 {#notable-changes-aem-cloud}
 
@@ -18,17 +17,17 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 >이 문서에서는 전반적인 AEM에 대한 주요 변경 사항을 조명합니다. 자세한 내용 및 솔루션별 변경 사항은 다음을 참조하십시오.
 >
 >* [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
->* Adobe Experience Manager as a Cloud Service와 이전 버전 간의 [새로운 기능과 차이점](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service [아키텍처](/help/core-concepts/architecture.md)
->* [ AEM Sites as a Cloud Service에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
->* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
+* Adobe Experience Manager as a Cloud Service와 이전 버전 간의 [새로운 기능과 차이점](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager as a Cloud Service [아키텍처](/help/core-concepts/architecture.md)
+* [ AEM Sites as a Cloud Service에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 
 
 기본 차이점은 다음 영역에서 찾을 수 있습니다.
 
-* [런타임 시 /apps 및 /libs를 변경할 수 없습니다](#apps-libs-immutable)
+* [런타임 시 /apps 및 /libs를 변경할 수 없습니다 ](#apps-libs-immutable)
 
-* [OSGi 번들 및 설정은 리포지토리 기반이어야 합니다](#osgi)
+* [OSGi 번들 및 설정은 리포지토리 기반이어야 합니다. ](#osgi)
 
 * [게시 리포지토리에 대한 변경이 허용되지 않습니다](#changes-to-publish-repo)
 
@@ -56,7 +55,7 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 * MSM 블루프린트 및 사용자 지정 MSM 롤아웃 구성은 CI/CD 파이프라인을 통해 Git에서 설치해야 합니다.
 * I18n 번역 변경 사항은 CI/CD 파이프라인을 통해 Git에서 가져와야 합니다.
 
-## OSGi 번들 및 설정은 리포지토리 기반이어야 합니다. {#osgi}
+## OSGi 번들 및 설정은 리포지토리 기반이어야 합니다.  {#osgi}
 
 이전 AEM 버전에서 OSGi 설정을 변경하는 데 사용되는 웹 콘솔을 AEM 클라우드 서비스에서는 사용할 수 없습니다. 따라서 OSGi에 대한 변경 사항은 CI/CD 파이프라인을 통해 가져와야 합니다.
 
@@ -65,7 +64,7 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 
 ## 게시 리포지토리에 대한 변경이 허용되지 않습니다 {#changes-to-publish-repo}
 
-게시 계층의 `/home` 폴더 아래의 변경 사항 외에, AEM Cloud Service에서는 게시 리포지토리에 대한 직접 변경 내용을 사용할 수 없습니다. AMS에 있는 온프레미스 AEM 또는 AEM의 이전 버전에서 코드를 직접 게시 저장소로 변경할 수 있습니다. 다음과 같은 방법으로 일부 제한 사항을 완화시킬 수 있습니다.
+게시 계층의 `/home` 폴더 변경 사항 외에 AEM Cloud Service에서는 게시 리포지토리에 대한 직접 변경을 수행할 수 없습니다. 이전 버전의 온프레미스 AEM 또는 AMS의 AEM에서는 코드 변경 사항이 게시 리포지토리에 직접 수행될 수 있습니다. 일부 제한 사항은 다음과 같은 방법으로 완화될 수 있습니다.
 
 * 컨텐츠 및 컨텐츠 기반 구성의 경우: 작성 인스턴스에서 변경 작업을 수행한 다음 게시합니다.
 * 코드 및 구성의 경우: GIT 리포지토리에서 변경 작업을 수행한 다음, CI/CD 파이프라인을 실행하여 롤아웃합니다.
@@ -108,7 +107,7 @@ AMS 또는 온프레미스 설치에서 프로젝트 전환의 경우에는 AEM 
 
 ## 자산 처리 및 제공 {#asset-handling}
 
-에셋 업로드, 처리 및 다운로드는 보다 효율적인 크기 조정을 통해 업로드 및 다운로드를 보다 빠르게 할 수 있도록 Cloud Service으로 에셋에서 최적화되었습니다. 그러나 이는 일부 기존 사용자 지정 코드에 영향을 줄 수 있습니다.
+자산 업로드, 처리 및 다운로드가 보다 효율적으로 수행되도록 Assets에 Cloud Service으로 최적화되었기 때문에 더욱 효율적인 크기 조절과 더 빠른 업로드 및 다운로드가 가능합니다. 그러나 이는 일부 기존 사용자 지정 코드에 영향을 줄 수 있습니다.
 
 * 이전 AEM 버전의 기본 워크플로우 **DAM 자산 업데이트**&#x200B;는 이제 사용할 수 없습니다.
 * **변환하지 않은** 바이너리를 제공하는 웹 사이트 구성 요소는 직접 다운로드를 사용해야 합니다.
