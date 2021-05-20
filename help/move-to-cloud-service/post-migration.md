@@ -1,7 +1,6 @@
 ---
 title: 마이그레이션 후 단계
 description: 마이그레이션 후 단계
-translation-type: tm+mt
 source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
 source-wordcount: '226'
