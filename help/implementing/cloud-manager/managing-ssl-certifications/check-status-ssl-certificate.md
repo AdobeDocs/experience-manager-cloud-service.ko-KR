@@ -1,36 +1,35 @@
 ---
 title: SSL 인증서 상태 확인 - SSL 인증서 관리
 description: SSL 인증서 상태 확인 - SSL 인증서 관리
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: 59d81356-2fa9-43db-bfa5-c2896c530eaa
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
+# SSL 인증서 상태 확인 {#checking-status-an-ssl-certificate}
 
-# SSL 인증서 상태 확인 중 {#checking-status-an-ssl-certificate}
+SSL 인증서 상태는 SSL 인증서 페이지에서 한 눈에 알 수 있습니다.
 
-SSL 인증서 페이지의 SSL 인증서 상태를 한 눈에 파악할 수 있습니다.
+다음 색상 구성표에서 SSL 인증서 상태를 식별할 수 있습니다.
 
-다음 색상 구성표에서 SSL 인증서의 상태를 식별할 수 있습니다.
+* ****
+녹색인증서가 향후 60일 이상 유효함을 나타냅니다.
 
-* **녹색**
-인증서가 향후 60일 동안 유효함을 나타냅니다.
+* ****
+주황색: 인증서가 60일 이내에 만료됨을 나타냅니다. 가능한 사이트 액세스 또는 정전을 방지하기 위해 인증서를 갱신하고 Cloud Manager UI를 통해 교체할 계획이 있는지 확인해야 합니다. Cloud Manager는 UI에서 정기적인 알림을 전송하여 임박한 인증서 만료를 알려줍니다.
 
-* **주황색**
-인증서가 60일 이내에 만료됨을 나타냅니다. 사이트 액세스나 정전이 발생하지 않도록 Cloud Manager UI를 통해 인증서를 갱신하고 대체할 계획이 있는지 확인해야 합니다. Cloud Manager는 UI에 정기적인 알림을 전송하여 인증서 만료 예정임을 알립니다.
-
-* **빨간색**
-여러 알림을 받았더라도 SSL 인증서가 만료되었음을 나타냅니다.
+* ****
+빨간색: 여러 알림에도 불구하고 SSL 인증서가 만료되었음을 나타냅니다.
 
 ## IP 허용 목록 {#pre-existing-cdn}에 대한 기존 CDN 구성
 
-IP 허용 목록, SSL 인증서 또는 사용자 정의 도메인 이름에 대한 기존 CDN 구성을 포함하는 환경을 보유한 고객은 **IP 허용 목록** 및 **환경** 세부 정보 페이지에 다음 메시지를 보게 됩니다. 고객이 UI를 통해 기존의 모든 환경 구성을 완전히 마이그레이션한 후 UI에 표시되는 메시지는 사라지고 메시지가 사라지는 데 영업일 기준 1-2일이 걸릴 수 있습니다.
+IP 허용 목록, SSL 인증서 또는 사용자 지정 도메인 이름에 대한 기존 CDN 구성을 포함하는 환경을 사용하는 고객은 **IP 허용 목록** 및 **환경** 세부 정보 페이지에 다음 메시지가 표시됩니다. 고객이 UI를 통해 기존 환경 구성을 모두 마이그레이션한 후 UI에 표시되는 메시지는 사라지며, 메시지가 사라지려면 영업일 기준으로 1~2일이 걸릴 수 있습니다.
 
 >[!NOTE]
->기존 구성을 보고 관리하려면 UI를 통해 해당 구성을 추가해야 합니다. 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
+>기존 구성을 보고 관리하려면 UI를 통해 구성을 추가해야 합니다. 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
