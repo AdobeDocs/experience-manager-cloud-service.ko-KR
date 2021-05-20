@@ -2,9 +2,9 @@
 title: SSL 인증서 추가 - SSL 인증서 관리
 description: SSL 인증서 추가 - SSL 인증서 관리
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 # SSL 인증서 추가 {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 인증서만 허용합니다. DV(도메인 유효성 검사) 인증서가 허용되지 않습니다. 또한 모든 인증서는 2048비트 RSA 개인 키가 일치하는 신뢰할 수 있는 CA(인증 기관)의 X.509 TLS 인증서여야 합니다.
+>AEM as a Cloud Service은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 인증서만 허용합니다. DV(도메인 유효성 검사) 인증서가 허용되지 않습니다. 또한 모든 인증서는 2048비트 RSA 개인 키가 일치하는 신뢰할 수 있는 CA(인증 기관)의 X.509 TLS 인증서여야 합니다. AEM as a Cloud Service은 도메인에 대한 와일드카드 SSL 인증서를 허용합니다.
 
 인증서를 프로비저닝하는 데 며칠이 걸리며, 몇 개월 전에 인증서를 프로비저닝하는 것이 좋습니다. 자세한 내용은 [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)를 참조하십시오.
 
