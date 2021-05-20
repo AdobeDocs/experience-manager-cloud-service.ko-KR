@@ -1,14 +1,13 @@
 ---
 title: 페이지 편집을 위한 키보드 단축키
 description: 페이지 편집을 위한 일부를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
 ---
-
 
 # 페이지 편집을 위한 키보드 단축키 {#keyboard-shortcuts-when-editing-pages}
 
