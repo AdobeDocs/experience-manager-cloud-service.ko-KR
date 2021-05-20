@@ -1,14 +1,13 @@
 ---
 title: 응답형 레이아웃
 description: AEM에서는 페이지에 대한 응답형 레이아웃을 실현할 수 있습니다.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 99%
 
 ---
-
 
 # 응답형 레이아웃 {#responsive-layout}
 
@@ -232,8 +231,8 @@ AEM을 사용하면 장치의 너비에 따라 레이아웃을 정의할 수 있
    >위의 예에서 이동 및 숨기기 동작은 레이아웃 컨테이너가 상위 레이아웃 컨테이너 내에서 중첩되기 때문에 가능한 것입니다.
 
    * **구성**
-요소 숨김 취소상위 구성 요소를 선택하여 
-**숨겨진 구성 요소** 표시 옵션을 표시합니다. 이 예시에는 두 개의 구성 요소가 숨겨져 있습니다.
+요소 숨김 취소상위 구성 요소를 선택하여 작업 도구 모음을 
+**숨겨진 구성** 요소 표시 선택 사항. 이 예시에는 두 개의 구성 요소가 숨겨져 있습니다.
 
       ![구성 요소 숨기기 취소](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    **숨겨진 구성 요소 표시** 옵션을 선택하면 원래 위치에서 현재 숨겨진 구성 요소가 파란색으로 표시됩니다.
