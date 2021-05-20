@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 개요
 description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
-translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+exl-id: d346ad01-af00-48a1-96a4-e742369defff
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 93%
+source-wordcount: '412'
+ht-degree: 84%
 
 ---
-
 
 # Experience Manager as a Cloud Service 개요 {#aem-overview-guide}
 
@@ -32,10 +31,11 @@ ht-degree: 93%
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
 | [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
 | [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
-| [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다. |
+| [구현 사용 안내서](/help/implementing/home.md) | 이러한 개발 및 배포 항목을 탐색하여 AEM의 강력한 기능을 사용하여 경험을 만들고 사용자 지정하는 방법을 이해합니다. |
+| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 헤드리스 기능을 통해 안내식 여정을 탐색하여 첫 번째 헤드리스 프로젝트를 준비할 수 있습니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
-| [상거래 사용 안내서](/help/commerce-cloud/home.md) | Cloud Service으로 AEM 기반의 Commerce Integration Framework에 대해 알아봅니다. |
+| [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM as a Cloud Service에서 Commerce Integration Framework에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
