@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 구현
 description: Adobe Experience Manager as a Cloud Service 구현 자습 리소스 및 설명서 링크
-translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 94%
+source-wordcount: '454'
+ht-degree: 86%
 
 ---
-
 
 # AEM as a Cloud Service용 애플리케이션 구현 {#aem-implementation-guide}
 
@@ -19,6 +18,7 @@ ht-degree: 94%
 * [Cloud Manager를 사용한 환경 관리](cloud-manager/manage-environments.md)
 * [AEM as a Cloud Service 배포](deploying/overview.md)
 * [AEM as a Cloud Service를 위한 개발](developing/introduction/development-guidelines.md)
+* [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md)
 * [AEM as a Cloud Service에 대한 디스패처](dispatcher/overview.md)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
@@ -33,10 +33,12 @@ ht-degree: 94%
 | [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
 | [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
+| [구현 사용 안내서](/help/implementing/home.md) | AEM의 강력한 기능을 사용하여 경험을 구축하고 사용자 지정하는 방법을 이해합니다. |
+| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 헤드리스 기능을 통해 안내식 여정을 탐색하여 첫 번째 헤드리스 프로젝트를 준비할 수 있습니다. |
 | [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
-| [상거래 사용 안내서](/help/commerce-cloud/home.md) | Cloud Service으로 AEM 기반의 Commerce Integration Framework에 대해 알아봅니다. |
+| [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM as a Cloud Service에서 Commerce Integration Framework에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
