@@ -14,9 +14,9 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="개요"
->abstract="컨텐츠 전송 도구는 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용할 수 있는 Adobe에서 개발한 도구입니다. 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다."
+>abstract="컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용할 수 있습니다. 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="추출 프로세스"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="통합 프로세스"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="수집 프로세스"
 
 컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM 클라우드 서비스 인스턴스로 이동하는 데 사용할 수 있습니다.
 
@@ -60,9 +60,9 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="지침 및 우수 사례"
->abstract="수정 정리 작업, 디스크 공간 고려 사항 등 컨텐츠 전송 툴을 사용하기 위한 지침과 모범 사례를 검토합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="컨텐츠 전송 도구 사용에 대한 중요 고려 사항"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="사용자 매핑 도구 사용에 대한 중요 고려 사항"
+>abstract="수정 정리 작업, 디스크 공간 고려 사항 등을 비롯하여 컨텐츠 전송 도구를 사용하기 위한 지침과 모범 사례를 검토하십시오."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="컨텐츠 전송 도구 사용에 대한 중요한 고려 사항"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="사용자 매핑 도구 사용에 대한 중요한 고려 사항"
 
 컨텐츠 전송 도구를 사용하기 위한 지침과 우수 사례를 이해하려면 아래 섹션을 따르십시오.
 
@@ -82,4 +82,4 @@ ht-degree: 73%
    * *노드 저장소 크기*: 세그먼트 저장소 디렉토리 크기 또는 MongoDB 데이터베이스 크기입니다.
 따라서 세그먼트 저장소 크기가 20GB인 경우 필요한 여유 디스크 공간은 94GB입니다.
 
-* 컨텐츠 맨 위를 지원하기 위해 컨텐츠 전송 활동 전반에서 마이그레이션 세트를 유지 관리해야 합니다. 컨텐츠 전송 작업 중에 한 번에 최대 10개의 마이그레이션 세트를 만들고 유지 관리할 수 있으므로, 그에 따라 컨텐츠 저장소를 분리하여 마이그레이션 세트가 부족하지 않도록 하는 것이 좋습니다.
+* 컨텐츠 추가를 지원하려면 컨텐츠 전송 활동 전체에서 마이그레이션 세트를 유지 관리해야 합니다. 컨텐츠 전송 작업 중에 한 번에 최대 10개의 마이그레이션 세트를 만들고 유지 관리할 수 있으므로 마이그레이션 세트가 부족하지 않도록 컨텐츠 저장소를 그에 따라 분류하는 것이 좋습니다.
