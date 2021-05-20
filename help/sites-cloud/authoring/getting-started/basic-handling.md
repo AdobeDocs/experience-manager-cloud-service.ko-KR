@@ -1,14 +1,13 @@
 ---
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 99%
 
 ---
-
 
 # 기본 처리 {#basic-handling}
 
@@ -203,7 +202,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    >모든 키보드 단축키에 대한 개요는 다음 문서를 참조하십시오.
    >
    >* [페이지 편집을 위한 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## 작업 도구 모음 {#actions-toolbar}
@@ -223,8 +222,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 ![추가적인 옵션](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
->
->사용할 수 있는 개별 아이콘은 적절한 콘솔/기능/시나리오와 관련하여 문서화되어 있습니다.
+사용할 수 있는 개별 아이콘은 적절한 콘솔/기능/시나리오와 관련하여 문서화되어 있습니다.
 
 ## 빠른 작업  {#quick-actions}
 
@@ -245,8 +243,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 * [목록 보기](#list-view)
 
 >[!NOTE]
->
->기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
+기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
 
 ### 리소스 선택  {#selecting-resources}
 
@@ -376,8 +373,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 * 목록에서 각 항목의 맨 오른쪽에 있는 점선 세로 막대를 사용하여 항목 순서를 변경합니다.
 
    >[!NOTE]
-   >
-   >순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
+   순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
 
    ![열 순서](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -396,8 +392,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 컨텐츠만을 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
 
 >[!NOTE]
->
->[키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 사용하면 레일 디스플레이 옵션 간을 빠르게 전환할 수 있습니다.
+[키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 사용하면 레일 디스플레이 옵션 간을 빠르게 전환할 수 있습니다.
 
 ### 컨텐츠 트리 {#content-tree}
 
@@ -408,10 +403,8 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 ![컨텐츠 트리](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
->
->계층 구조 보기에서 항목을 선택한 후에는 화살표 키를 사용하여 계층 구조를 빠르게 탐색할 수 있습니다.
->
->자세한 내용은 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 참조하십시오.
+계층 구조 보기에서 항목을 선택한 후에는 화살표 키를 사용하여 계층 구조를 빠르게 탐색할 수 있습니다.
+자세한 내용은 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 참조하십시오.
 
 ### 타임라인 {#timeline}
 
