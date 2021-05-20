@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 메타데이터
 role: Business Practitioner,Administrator
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1016'
 ht-degree: 1%
 
 ---
@@ -84,9 +84,9 @@ XMP에서는 텍스트 언어를 지정하기 위해 텍스트 속성에 `xml:la
 
 ![저장소의 자산 노드에 저장된 메타데이터](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->쓰기 저장(writeback) 기능은 기본적으로 [!DNL Assets]에서 활성화되지 않습니다. [메타데이터 쓰기 저장 활성화 방법](#enable-xmp-writeback)을 참조하십시오.
+>쓰기 저장(writeback) 기능은 기본적으로 [!DNL Assets]에서 활성화되지 않습니다. [메타데이터 쓰기 저장 활성화 방법](#enable-xmp-writeback)을 참조하십시오. 디지털 자산에 대한 MSM은 메타데이터 원본에 쓰기 기능이 활성화된 상태에서 작동하지 않습니다. 서면으로 되돌아가면 상속은 끊어진다.
 
 ### XMP writeback 사용 {#enable-xmp-writeback}
 
