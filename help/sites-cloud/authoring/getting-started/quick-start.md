@@ -1,14 +1,13 @@
 ---
 title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 컨텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 
 ---
-
 
 # 페이지 작성에 대한 빠른 시작 안내서{#quick-guide-to-authoring-pages}
 
@@ -52,7 +51,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 >작성 작업을 더 쉽게 해줄 수 있는 다양한 키보드 단축키가 있습니다.
 >
 >* [페이지 편집 시 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
->* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### 페이지 찾기 {#finding-your-page}
@@ -161,8 +160,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
    >[!NOTE]
-   >
-   >같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
+   같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
 
    * 구성 요소 [삭제:](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
@@ -178,8 +176,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
 
    >[!NOTE]
-   >
-   >컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)를 사용해야 합니다.
+   컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)를 사용해야 합니다.
 
 ### 페이지 속성 편집  {#editing-the-page-properties}
 
@@ -255,8 +252,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 작업을 확인하는 메시지가 나타납니다.
    >[!NOTE]
-   >
-   >삭제는 빠른 작업으로 사용할 수 없습니다.
+   삭제는 빠른 작업으로 사용할 수 없습니다.
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
