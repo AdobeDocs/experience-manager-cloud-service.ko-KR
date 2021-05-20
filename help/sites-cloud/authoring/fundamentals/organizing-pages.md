@@ -1,14 +1,13 @@
 ---
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 99%
 
 ---
-
 
 # 페이지 생성 및 구성 {#creating-and-organizing-pages}
 
@@ -93,7 +92,7 @@ ht-degree: 99%
 >
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 
-새 페이지를 만들 때 AEM은 AEM 및 JCR에서 지정한 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 페이지 이름을 확인합니다.[
+새 페이지를 생성할 때 AEM은 [AEM 및 JCR에서 지정한 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 페이지 이름을 확인합니다.
 
 허용되는 최소 문자는 다음과 같습니다.
 
