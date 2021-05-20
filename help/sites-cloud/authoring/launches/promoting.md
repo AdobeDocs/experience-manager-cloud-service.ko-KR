@@ -1,14 +1,13 @@
 ---
 title: 론치 홍보
-description: '게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. '
-translation-type: tm+mt
-source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
+description: 게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다.
+exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 76%
 
 ---
-
 
 # 론치 홍보 {#promoting-launches}
 
@@ -25,7 +24,7 @@ ht-degree: 76%
 
 >[!CAUTION]
 >
->단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 동시에 두 개의 홍보 작업을 수행하면 오류 `Launch could not be promoted`(로그의 충돌 오류와 함께)가 발생할 수 있습니다.
+>단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 두 개의 프로모트 작업을 동시에 수행하면 오류 `Launch could not be promoted` (로그에 충돌 오류와 함께 발생될 수 있습니다.)
 
 >[!CAUTION]
 >
@@ -47,14 +46,14 @@ ht-degree: 76%
 **사이트** 콘솔 또는 **론치** 콘솔에서 론치를 홍보할 수 있습니다.
 
 1. 열기:
-   * 소스 페이지를 탐색할 때 **사이트** 콘솔:
-      1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 열고 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 또는 참조 레일을 선택하고 열면 순서는 중요하지 않습니다. 모든 참조가 표시됩니다.
+   * 소스 페이지를 탐색할 때 **Sites** 콘솔:
+      1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 열고 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하고 열면 순서는 중요하지 않음). 모든 참조가 표시됩니다.
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
       1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
-   * 시작 페이지를 탐색할 때 **사이트** 콘솔:
-      1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 시작 페이지를 선택합니다.
-      1. **홍보** 작업은 도구 모음에서 사용할 수 있습니다.
+   * 시작 페이지를 탐색할 때 **Sites** 콘솔:
+      1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 론치 페이지를 선택합니다.
+      1. **Promote** 작업은 도구 모음에서 사용할 수 있습니다.
    * **시작** 콘솔:
       1. 론치를 선택합니다(썸네일 탭/클릭).
       1. **홍보**&#x200B;를 선택합니다.
@@ -64,13 +63,13 @@ ht-degree: 76%
    * **범위**
       * **전체 론치 홍보**
       * **수정된 페이지 홍보**
-      * **승인된 페이지**  홍보 - 론치 승인 워크플로우에 따라 다름
+      * **승인된 페이지 홍보**  - 론치 승인 워크플로우에 따라 다름
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
 
       예를 들어, 수정된 페이지만 홍보하도록 선택하는 경우:
 
-      ![출시 프로모션](/help/sites-cloud/authoring/assets/launches-promote.png)
+      ![시작 프로모션](/help/sites-cloud/authoring/assets/launches-promote.png)
 
       >[!NOTE]
       >
@@ -103,11 +102,11 @@ ht-degree: 76%
 1. 다음과 같은 필수 세부 사항을 입력합니다.
    * **타겟**
       * **프로모션 타겟**  - 모든 소스로 승격할 수 있습니다.
-      * **판촉 행사**  후 론치 삭제 - 선택한 론치를 승격 후에는 해당 론치에 중첩된 론치가 삭제됩니다.
-   * **범위**  - 전체 론치를 홍보할지 또는 실제로 편집된 페이지만 홍보할지 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
+      * **승격 후 론치 삭제**  - 승격 후 선택한 론치와 론치 내에 중첩된 론치가 모두 삭제됩니다.
+   * **범위**  - 여기서는 전체 론치를 홍보할지, 실제로 편집된 페이지만 홍보할지 여부를 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
       * **전체 론치 홍보**
       * **수정된 페이지 홍보**
-      * **승인된 페이지**  홍보 - 론치 승인 워크플로우에 따라 다름
+      * **승인된 페이지 홍보**  - 론치 승인 워크플로우에 따라 다름
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
 
