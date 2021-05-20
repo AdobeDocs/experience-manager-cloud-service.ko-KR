@@ -1,14 +1,13 @@
 ---
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 99%
 
 ---
-
 
 # 작성 환경 및 도구 {#authoring-the-environment-and-tools}
 
@@ -228,7 +227,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * **참조** 구성 요소를 사용하여 빌린 컨텐츠와 빌려준 컨텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 * [론치](/help/sites-cloud/authoring/launches/overview.md): 관련 론치에 대한 액세스 권한 제공
 * [](/help/sites-cloud/administering/msm/overview.md)LiveCopy: 선택한 리소스를 기반으로 하는 모든 LiveCopy 경로 표시 
-* [세부](/help/sites-cloud/administering/msm/best-practices.md) 사항과 다양한 작업을 제공하는 블루프린트
+* [블루프린트](/help/sites-cloud/administering/msm/best-practices.md): 세부 사항 및 여러 작업 제공
 * [언어 사본](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel): 세부 사항 및 여러 작업 제공
 
 ## 이벤트 - 타임라인 {#events-timeline}
