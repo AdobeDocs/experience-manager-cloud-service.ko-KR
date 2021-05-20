@@ -1,14 +1,13 @@
 ---
 title: 프로젝트 관리
-description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 리소스들을 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 리소스를 그룹화하여 프로젝트를 구성할 수 있습니다
+exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 80%
 
 ---
-
 
 # 프로젝트 관리 {#managing-projects}
 
@@ -83,7 +82,7 @@ ht-degree: 80%
 
 타일에 항목을 추가하려면 다음을 수행하십시오.
 
-1. **프로젝트**&#x200B;에서 프로젝트를 탐색하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
+1. **프로젝트**&#x200B;에서 프로젝트로 이동하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
 
    ![타일에 항목 추가](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
@@ -113,19 +112,19 @@ ht-degree: 80%
 
 ### 프로젝트 타임라인 보기 {#viewing-a-project-timeline}
 
-프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드를 시작하고 프로젝트를 선택합니다. 자산은 왼쪽 창에 표시됩니다. **프로젝트** 콘솔로 돌아가려면 **타임라인**&#x200B;을 클릭/탭합니다.
+프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드로 전환하고 프로젝트를 선택하십시오. 자산은 왼쪽 창에 표시됩니다. **타임라인**&#x200B;을 클릭/탭하여 **프로젝트** 콘솔로 돌아갑니다.
 
 ![프로젝트 타임라인](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### 활성/비활성 프로젝트 보기 {#viewing-active-inactive-projects}
 
-활성 프로젝트와 비활성 프로젝트 간에 전환하려면 **프로젝트** 콘솔에서 **활성 프로젝트 전환**&#x200B;을 클릭합니다. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트가 표시됩니다.
+활성 프로젝트와 비활성 프로젝트 간에 전환하려면 **프로젝트** 콘솔에서 **활성 프로젝트 전환**&#x200B;을 클릭하십시오. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트가 표시됩니다.
 
-![활성 프로젝트 켜기/끄기 단추](/help/sites-cloud/authoring/assets/projects-active.png)
+![활성 프로젝트 전환 단추](/help/sites-cloud/authoring/assets/projects-active.png)
 
 아이콘 옆에 확인 x가 있으면 비활성 프로젝트를 표시 중입니다.
 
-![비활성 프로젝트 켜기/끄기 단추](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![비활성 프로젝트 전환 단추](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## 프로젝트 비활성화 또는 활성화 {#making-projects-inactive-or-active}
 
@@ -136,8 +135,7 @@ ht-degree: 80%
 1. **프로젝트** 콘솔에서 프로젝트를 열고 **프로젝트 정보** 타일을 찾습니다.
 
    >[!NOTE]
-   >
-   >프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
+   프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
 
 1. **편집**&#x200B;을 탭/클릭합니다.
 1. 선택기를 **활성**&#x200B;에서 **비활성**(또는 그 반대)으로 변경합니다.
