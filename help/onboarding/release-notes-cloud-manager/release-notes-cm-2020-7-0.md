@@ -1,23 +1,22 @@
 ---
-title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.7.0
-description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.7.0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+title: AEM as a Cloud Service 릴리스 2020.7.0의 Cloud Manager 릴리스 노트
+description: AEM as a Cloud Service 릴리스 2020.7.0의 Cloud Manager 릴리스 노트
+feature: 릴리스 정보
+exl-id: b5ac4dd4-18c6-4867-b2df-53711555007f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 73%
 
 ---
 
+# Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes} 의 Cloud Manager 릴리스 노트
 
-# Adobe Experience Manager에서 Cloud Service 2020.7.0 {#release-notes}으로 Cloud Manager에 대한 릴리스 노트
-
-이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2020.7.0으로 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2020.7.0 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-2020년 7월 9일 Cloud Service으로 AEM의 Cloud Manager에 대한 릴리스 날짜는 2020.7.0.
+AEM as a Cloud Service 2020.7.0의 Cloud Manager 릴리스 날짜는 2020년 7월 9일입니다.
 
 ## 새로운 기능 {#whats-new-cloud-manager}
 
@@ -31,7 +30,7 @@ ht-degree: 73%
 
    자세한 내용은 [파이프라인 변수](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)를 참조하십시오.
 
-* 이제 인증 바인딩된 개인 정보 저장소가 지원됩니다.
+* 이제 인증 바인딩된 Private Maven 리포지토리가 지원됩니다.
 
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
 자세한 내용은 [Java 11 지원 사용](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)을 참조하십시오.
