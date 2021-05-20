@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Node.js는 AEM 프로젝트의 `ui.frontend` 하위 프로젝트의 프런트 �
 
 * **작성** 서비스는 내부 사용자가 컨텐츠를 만들고, 관리하고, 미리 보는 서비스입니다.
 
-* **게시 서비스** 는 &quot;라이브&quot; 환경으로 간주되며 일반적으로 최종 사용자가 상호 작용하는 것입니다. 작성 서비스에서 편집하고 승인되면 컨텐츠가 게시 서비스에 배포됩니다. AEM 헤드리스 애플리케이션을 사용하는 가장 일반적인 배포 패턴은 애플리케이션의 프로덕션 버전이 AEM Publish 서비스에 연결되어 있는 것입니다.
+* **게시 서비스** 는 &quot;라이브&quot; 환경으로 간주되며 일반적으로 최종 사용자가 상호 작용하는 것입니다. 컨텐츠는 작성 서비스에서 편집되고 적용된 후 게시 서비스에 배포됩니다. AEM 헤드리스 애플리케이션을 사용하는 가장 일반적인 배포 패턴은 애플리케이션의 프로덕션 버전이 AEM Publish 서비스에 연결되어 있는 것입니다.
 
 * **Dispatcher** 는 AEM Dispatcher 모듈을 사용하여 증강된 정적 웹 서버입니다. 성능을 개선하기 위해 게시 인스턴스에서 생성한 웹 페이지를 캐시합니다.
 
@@ -99,11 +99,11 @@ AEM 헤드리스 프로젝트를 시작할 수 있도록 준비하려면 프로�
 1. AEM 프로젝트에서 코드를 배포하는 데 사용할 AEM 작성자 및 게시 서비스의 로컬 버전 로컬 AEM 런타임
 1. Local Dispatcher 런타임 - Dispatcher 모듈을 포함하는 Apache httpd 웹 서버의 로컬 버전입니다.
 
-로컬 개발 환경이 설정되면 정적 노드 서버를 로컬로 배포하여 React 앱에 대한 콘텐츠 서비스를 시뮬레이션할 수 있습니다.
+로컬 개발 환경이 설정되면 정적 노드 서버를 로컬로 배포하여 React 응용 프로그램에 대한 컨텐츠 제공을 시뮬레이션할 수 있습니다.
 
 자세한 내용은 로컬 개발 환경 설정 및 컨텐츠 미리 보기에 필요한 모든 종속성을 보려면 [프로덕션 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites) 를 참조하십시오.
 
-## AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive} 준비
+## AEM Headless 애플리케이션에서 Go-Live {#prepare-your-aem-headless-application-for-golive} 준비
 
 이제 아래에 요약된 우수 사례를 따라 AEM 헤드리스 애플리케이션을 시작할 준비가 되었습니다.
 
@@ -147,7 +147,7 @@ AEM 헤드리스 프로젝트를 시작할 수 있도록 준비하려면 프로�
 
 사용자가 AEM 헤드리스 애플리케이션을 사용할 때 최상의 경험을 얻으려면 아래에 자세히 설명된 대로 주요 성능 지표를 모니터링하는 것이 중요합니다.
 
-* 앱의 미리 보기 및 프로덕션 버전 확인
+* 응용 프로그램의 미리 보기 및 프로덕션 버전 유효성 검사
 * 현재 서비스 가용성 상태에 대한 AEM 상태 페이지 확인
 * 성능 보고서 액세스
    * 게재 성능
@@ -155,10 +155,10 @@ AEM 헤드리스 프로젝트를 시작할 수 있도록 준비하려면 프로�
       * 원본 서버 - 호출 수, 오류율, CPU 로드, 페이로드 트래픽
    * 작성자 성능
       * 사용자 수, 요청 및 로드 확인
-* 앱 및 공간별 성능 보고서 액세스
-   * 서버가 작동하면 일반 지표가 녹색/주황색/빨간색 인지 확인한 다음 특정 앱 문제를 식별합니다
-   * 앱 또는 공간으로 필터링된 위에서 동일한 보고서 열기(예: Photoshop 데스크탑, 페이월)
-   * Splunk 로그 API를 사용하여 서비스 및 응용 프로그램 성능에 액세스합니다
+* 응용 프로그램 및 공간별 성능 보고서 액세스
+   * 서버가 작동되면 일반 지표가 녹색/주황색/빨간색 인지 확인한 다음 특정 애플리케이션 문제를 확인합니다
+   * 위에 언급된 보고서를 열지만 애플리케이션이나 공간으로 필터링합니다(예: Photoshop 데스크탑, 페이월)
+   * [Splunk 로그 ](/help/implementing/developing/introduction/logging.md#splunk-logs) API를 사용하여 서비스 및 애플리케이션 성능 액세스
    * 다른 문제가 있을 경우 고객 지원 센터에 문의하십시오.
 
 ## 문제 해결 {#troubleshooting}
@@ -169,7 +169,7 @@ AEM 헤드리스 프로젝트를 시작할 수 있도록 준비하려면 프로�
 
 * 응용 프로그램의 미리 보기 버전을 사용하여 기능 및 성능 유효성 검사
 * 애플리케이션의 프로덕션 버전을 사용하여 기능 및 성능 확인
-* 컨텐츠 조각 편집기의 JSON 미리 보기를 사용하여 유효성 검사
+* 컨텐츠 조각 편집기의 [JSON 미리 보기](/help/assets/content-fragments/content-fragments-json-preview.md)를 사용하여 유효성 검사
 * 클라이언트 애플리케이션의 JSON을 Inspect하여 클라이언트 애플리케이션 또는 배달 문제가 있는지 확인합니다
 * GraphQL을 사용하여 JSON을 Inspect에서 캐시된 컨텐츠 또는 AEM과 관련된 문제가 있는지 확인합니다
 
@@ -180,7 +180,7 @@ AEM 헤드리스 프로젝트를 시작할 수 있도록 준비하려면 프로�
 * 필요한 경우 문제 스크린샷을 수행합니다
 * 문제를 재현할 수 있는 방법을 문서화합니다.
 * 문제가 재현되는 내용을 문서화합니다.
-* AEM 지원 포털을 통해 적절한 우선 순위로 문제 기록
+* AEM 지원 포털을 통해 응용 프로그램 우선 순위를 사용하여 문제 기록
 
 ## 여정이 끝나요? 아니면 끝나요?{#journey-ends}
 
