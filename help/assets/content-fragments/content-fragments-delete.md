@@ -1,26 +1,25 @@
 ---
 title: 컨텐츠 조각 - 삭제 고려 사항
-description: AEM에서 컨텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 사항을 검토하십시오. 컨텐츠 조각은 헤드리스 컨텐츠를 전달하기 위한 강력한 툴로, 이를 삭제하는 데 따르는 의미를 신중하게 고려해야 합니다.
-feature: Content Fragments
+description: AEM에서 컨텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 고려 사항을 검토하십시오. 컨텐츠 조각은 헤드리스 컨텐츠를 제공하기 위한 강력한 도구이며 컨텐츠 조각을 삭제하기 위한 의미를 신중하게 고려해야 합니다.
+feature: 콘텐츠 조각
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '472'
 ht-degree: 83%
 
 ---
 
-
 # 컨텐츠 조각 - 삭제 고려 사항 {#content-fragments-delete-considerations}
 
-AEM에서 컨텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 사항을 검토하십시오. 컨텐츠 조각은 헤드리스 컨텐츠를 전달하기 위한 강력한 툴로, 이를 삭제하는 데 따르는 의미를 신중하게 고려해야 합니다.
+AEM에서 컨텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 고려 사항을 검토하십시오. 컨텐츠 조각은 헤드리스 컨텐츠를 제공하기 위한 강력한 도구이며 컨텐츠 조각을 삭제하기 위한 의미를 신중하게 고려해야 합니다.
 
 ## 권한 - 삭제 또는 삭제 안 함 {#permissions-delete-or-not-delete}
 
 컨텐츠 삭제 기능은 강력하지만, 이러한 권한이 배포되는 방식을 제한하고 제어해야 하는 많은 업계에서는 민감할 수 있습니다.
 
-삭제 권한과 관련하여 컨텐츠 조각은 두 가지 수준으로 간주해야 합니다.
+삭제 권한과 관련하여 컨텐츠 조각은 두 가지 수준에서 고려되어야 합니다.
 
 1. **단일 엔티티로서의 컨텐츠 조각.**
 
