@@ -1,14 +1,13 @@
 ---
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
-translation-type: tm+mt
-source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 100%
 
 ---
-
 
 # 경험 조각 {#experience-fragments}
 
@@ -77,7 +76,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
    >
    >경험 조각의 구조를 사이트의 페이지 구조에 일치시킬 필요는 없습니다.
 
-* [폴더 수준에서 허용된 템플릿을 할당할 수 있습니다](#configure-allowed-templates-folder).
+* [폴더 수준에서 허용된 템플릿을 할당할 수 있습니다.](#configure-allowed-templates-folder)
 
    >[!NOTE]
    >
@@ -343,9 +342,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    * **소셜 미디어 상태**
       * 소셜 미디어 변형의 세부 사항입니다
 
-## 일반 HTML 표현물 {#the-plain-html-rendition}
+## 일반 HTML 렌디션 {#the-plain-html-rendition}
 
-URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 표현물에 액세스할 수 있습니다.
+
+URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌디션에 액세스할 수 있습니다.
 
 >[!NOTE]
 >
