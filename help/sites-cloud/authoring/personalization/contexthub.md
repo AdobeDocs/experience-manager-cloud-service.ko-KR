@@ -1,14 +1,13 @@
 ---
 title: ContextHub 데이터를 사용하여 페이지 미리 보기
 description: ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해주며 컨텐츠를 미리 보는 데 유용합니다.
-translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 89%
 
 ---
-
 
 # ContextHub 데이터를 사용하여 페이지 미리 보기  {#previewing-pages-using-contexthub-data}
 
@@ -43,7 +42,7 @@ ContextHub 도구 모음은 미리 보기 모드에서 사용할 수 있습니�
 
 UI 모듈은 도구 모음에 있는 하나 이상의 ContextHub 저장소에서 가져온 데이터를 표시할 수 있습니다. UI 모듈은 아이콘 및 제목을 사용하여 자신을 식별합니다.
 
-![ContextHub 개인 정보](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
+![ContextHub 가상 사용자](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
 
 ### 팝업 컨텐츠 {#popup-content}
 
