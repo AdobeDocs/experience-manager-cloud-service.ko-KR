@@ -327,6 +327,6 @@ AEM Headless 여정을 계속 진행하려면 다음 문서 [How to Go Live with
    * [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
-* [AEM 핵심 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
+* [AEM 핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [비디오 - AEM을 사용한 CORS용 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
