@@ -1,7 +1,6 @@
 ---
 title: 엔터프라이즈 DevOps
 description: 배포를 지우고 공동 작업을 간소화하는 데 필요한 프로세스, 방법 및 커뮤니케이션에 대해 알아봅니다.
-translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
 workflow-type: tm+mt
 source-wordcount: '1001'
