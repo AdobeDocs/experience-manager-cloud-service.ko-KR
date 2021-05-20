@@ -1,18 +1,17 @@
 ---
 title: AEM 현대화 도구
-description: 'AEM 현대화 도구 '
-translation-type: tm+mt
-source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
+description: AEM 현대화 도구
+exl-id: bc6efab1-cea0-4808-9bd4-495cd871bd75
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '131'
+ht-degree: 77%
 
 ---
 
-
 # AEM 현대화 도구 {#aem-moderization-tools}
 
-AEM 현대화 도구는 레거시 AEM 기능을 Cloud Service으로 AEM의 최신 지원 기능으로 변환하는 데 사용할 수 있는 일련의 유틸리티를 제공합니다.
+AEM 현대화 도구는 레거시 AEM 기능을 AEM as a Cloud Service의 최신 및 지원되는 기능으로 변환하는 데 사용할 수 있는 유틸리티 세트를 제공합니다.
 
 
 ## 소개 {#introduction}
@@ -32,4 +31,3 @@ AEM 현대화 도구를 사용하여 다음과 같이 쉽게 변환할 수 있�
 ## AEM 현대화 도구 세트 설치 및 구현 {#installing-implementing}
 
 **[Git 리소스: AEM 현대화 도구 세트](https://github.com/adobe/aem-modernize-tools)**&#x200B;를 참조하여 설치 및 구현에 대해 자세히 알아보십시오.
-
