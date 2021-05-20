@@ -2,7 +2,6 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-translation-type: tm+mt
 source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
 workflow-type: tm+mt
 source-wordcount: '2009'
@@ -20,7 +19,7 @@ ht-degree: 92%
 
 >[!TIP]
 >
->사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM에 대한 Adobe IMS를 Cloud Service으로 인증하는 방법과 Adobe IMS에 대한 방법에 대한 자세한 내용은 Experience League 강좌 [관리자용 AEM 액세스 권한 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)을 참조하십시오. 사용자, 사용자 그룹 및 제품 프로필은 AEM 및 해당 기능에 대한 액세스를 제어하는 데 사용됩니다. Adobe ID이 필요합니다.
+>사용자가 AEM에 대한 Adobe IMS를 Cloud Service으로 사용하여에 인증하는 방법과 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM과 해당 기능에 대한 액세스를 제어하는 방법에 대한 소개는 Experience League 교육 과정 [관리자용 AEM 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) 을 참조하십시오. Adobe ID이 필요합니다.
 
 ## 주요 특징 {#key-highlights}
 
@@ -129,7 +128,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ### Admin Console에서 제품 및 사용자 액세스 관리 {#managing-products-and-user-access-in-admin-console}
 
-제품 관리자가 Admin Console에 로그인하면 아래와 같이 AEM의 여러 인스턴스가 Cloud Service 제품 컨텍스트로 표시됩니다. 예를 들어 **개요** 페이지에서 제품을 선택합니다.
+제품 관리자가 Admin Console에 로그인하면, 아래와 같이 AEM의 여러 인스턴스가 Cloud Service 제품 컨텍스트로 표시됩니다. 예를 들어 **개요** 페이지에서 제품을 선택합니다.
 
 ![인스턴스 로그인](/help/security/assets/ims6.png)
 
@@ -137,7 +136,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ![인스턴스 로그인2](/help/security/assets/ims7.png)
 
-각 제품 컨텍스트 인스턴스에는 제작, 스테이지 또는 개발 환경에서 작성자 또는 게시 서비스를 아우르는 인스턴스가 있습니다. 각 인스턴스는 제품 프로필 또는 클라우드 관리자 역할에 연결됩니다. 이러한 제품 프로필은 필요한 권한을 가진 사용자 및 그룹에 대한 액세스 권한을 할당하는 데 사용됩니다.
+각 제품 컨텍스트 인스턴스에는 프로덕션, 스테이지 또는 개발 환경에서 작성자 또는 게시 서비스에 걸쳐 인스턴스가 있습니다. 각 인스턴스는 제품 프로필 또는 Cloud Manager 역할과 연결됩니다. 이러한 제품 프로필은 필요한 권한을 가진 사용자 및 그룹에 대한 액세스 권한을 지정하는 데 사용됩니다.
 
 **Administrator_xxx** 프로필은 연결된 AEM 인스턴스에서 관리자 권한을 부여하는 데 사용되고 **User_xxx** 프로필은 일반 사용자를 추가하는 데 사용됩니다.
 
