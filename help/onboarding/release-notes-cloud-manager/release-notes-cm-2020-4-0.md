@@ -1,23 +1,22 @@
 ---
-title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.4.0
-description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.4.0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+title: AEM as a Cloud Service 릴리스 2020.4.0의 Cloud Manager 릴리스 노트
+description: AEM as a Cloud Service 릴리스 2020.4.0의 Cloud Manager 릴리스 노트
+feature: 릴리스 정보
+exl-id: 15665fb5-9444-416b-938a-45c31fdce5cf
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 77%
 
 ---
 
+# Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes} 의 Cloud Manager 릴리스 노트
 
-# Adobe Experience Manager에서 Cloud Service 2020.4.0 {#release-notes}으로 Cloud Manager에 대한 릴리스 노트
-
-이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2020.4.0으로 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2020.4.0 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-2020년 4월 9일에 Cloud Service으로 AEM의 Cloud Manager에 대한 릴리스 날짜가 2020.4.0.
+AEM as a Cloud Service 2020.4.0의 Cloud Manager 릴리스 날짜는 2020년 4월 9일입니다.
 
 ## 새로운 기능 {#whats-new-cloud-manager}
 
@@ -38,4 +37,3 @@ ht-degree: 77%
 * 일부 경우, 이미지 작성 단계에서 고객 패키지를 제대로 다운로드하지 못했습니다.
 * 드물게 발생하는 특정 조건으로 인해 환경이 삭제되지 않는 경우가 있습니다.
 * Experience Cloud 알림이 일관되게 수신되지 않았습니다.
-
