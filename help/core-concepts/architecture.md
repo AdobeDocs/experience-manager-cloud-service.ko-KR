@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
-description: 'Adobe Experience Manager as a Cloud Service 아키텍처 소개. '
-translation-type: tm+mt
-source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
+exl-id: fb169e85-ac19-4962-93d9-abaed812f948
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 98%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service 아키텍처 소개 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
@@ -63,7 +62,7 @@ AEM as a Cloud Service은 다음과 같은 작업을 수행하는 오케스트�
 
 AEM as a Cloud Service는 개별 인스턴스로서 사용할 수 있게 되었으며, 이때 각 인스턴스는 전체 AEM 환경을 나타냅니다.
 
-AEM을 Cloud Service으로 사용할 수 있는 환경에는 3가지 유형이 있습니다.
+AEM as a Cloud Service에 사용할 수 있는 환경에는 세 가지 유형이 있습니다.
 
 * **프로덕션 환경**: 비즈니스 전문가를 위한 애플리케이션을 호스팅합니다.
 
@@ -82,7 +81,7 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
 |  프로그램 요소 |  번호 |
 |--- |--- |
 | 코드 리포지토리(Git) |  1 |
-| 기준 이미지(사이트 또는 자산) |  1 |
+| 기준 이미지(사이트 또는 자산) |  3 |
 | 스테이지 및 프로덕션 환경 세트(1:1) | 0 또는 1 |
 | 비프로덕션 환경(개발 또는 데모) | 0 ~ N |
 | 각 환경을 위한 파이프라인 | 0 또는 1 |
