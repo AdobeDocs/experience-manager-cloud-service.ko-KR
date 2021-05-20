@@ -1,44 +1,43 @@
 ---
-title: 자산, 폴더 및 컬렉션을 링크로 공유
-description: 이 문서에서는  [!DNL Experience Manager Assets] 에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
+title: 링크로 자산, 폴더 및 컬렉션 공유
+description: 이 문서에서는 [!DNL Experience Manager Assets] 에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
+feature: 자산 관리,공동 작업,자산 분배
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '755'
 ht-degree: 2%
 
 ---
 
+# [!DNL Experience Manager] {#share-assets-from-aem}에서 관리되는 자산 공유 및 배포
 
-# [!DNL Experience Manager] {#share-assets-from-aem}에서 관리되는 에셋 공유 및 배포
+[!DNL Adobe Experience Manager Assets] 자산, 폴더 및 컬렉션을 조직 및 외부 엔티티(파트너 및 공급업체 등)의 멤버와 공유할 수 있습니다. 다음 메서드를 사용하여 [!DNL Experience Manager Assets]의 자산을 [!DNL Cloud Service](으)로 공유하십시오.
 
-[!DNL Adobe Experience Manager Assets] 자산, 폴더 및 컬렉션을 조직 및 외부 개체의 구성원(파트너 및 공급업체 포함)과 공유할 수 있습니다. 다음 방법을 사용하여 [!DNL Experience Manager Assets]의 자산을 [!DNL Cloud Service](으)로 공유합니다.
-
-* 링크로 공유합니다.
-* [에셋](/help/assets/download-assets-from-aem.md) 을 다운로드하여 별도로 공유할 수 있습니다.
-* [[!DNL Experience Manager] 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)을 사용하여 공유합니다.
-* [[!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)을(를) 사용하여 공유합니다.
-* [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)을(를) 사용하여 공유합니다.
+* 링크로 공유.
+* [자산](/help/assets/download-assets-from-aem.md) 을 다운로드하여 별도로 공유할 수 있습니다.
+* [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)을 사용하여 공유합니다.
+* [[!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)을 사용하여 공유합니다.
+* [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)을 사용하여 공유합니다.
 
 ## 링크로 자산 공유 {#sharelink}
 
-사용자와 공유할 에셋의 URL을 생성하려면 [링크 공유] 대화 상자를 사용합니다. 관리자 권한이 있거나 `/var/dam/share` 위치에서 읽기 권한이 있는 사용자는 자신과 공유된 링크를 볼 수 있습니다. 링크를 통해 자산을 공유하는 것은 먼저 [!DNL Assets]에 로그인하지 않고도 외부 당사자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다.
+사용자와 공유할 자산의 URL을 생성하려면 링크 공유 대화 상자를 사용합니다. 관리자 권한이 있거나 `/var/dam/share` 위치에 읽기 권한이 있는 사용자는 자신과 공유된 링크를 볼 수 있습니다. 링크를 통해 자산을 공유하는 것은 먼저 [!DNL Assets]에 로그인하지 않고도 외부 당사자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다.
 
 >[!NOTE]
 >
 >* 링크로 공유할 폴더 또는 자산에 대한 ACL 편집 권한이 필요합니다.
->* 사용자와 링크를 공유하기 전에 [아웃바운드 이메일이 활성화되어 있는지](/help/implementing/developing/introduction/development-guidelines.md#sending-email) 확인하십시오. 그렇지 않으면 오류가 발생합니다.
+>* 사용자와 링크를 공유하기 전에 [아웃바운드 이메일이 활성화](/help/implementing/developing/introduction/development-guidelines.md#sending-email)되었는지 확인하십시오. 그렇지 않으면 오류가 발생합니다.
 
 
 1. [!DNL Assets] 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 링크 공유]**&#x200B;를 클릭합니다. 자산 링크가 **[!UICONTROL 링크 공유]** 필드에 자동으로 만들어집니다. 이 링크를 복사하고 사용자와 공유합니다. 링크에 대한 기본 만료 시간은 하루입니다.
+1. 도구 모음에서 **[!UICONTROL 링크 공유]**&#x200B;를 클릭합니다. **[!UICONTROL 링크 공유]** 필드에 자산 링크가 자동으로 만들어집니다. 이 링크를 복사하여 사용자와 공유합니다. 링크의 기본 만료 시간은 하루입니다.
 
    >[!NOTE]
    >
-   >공유 에셋이 다른 위치로 이동되면 해당 링크가 작동하지 않습니다. 링크를 다시 만들고 사용자와 다시 공유합니다.
+   >공유 자산이 다른 위치로 이동되면 해당 링크가 작동하지 않습니다. 링크를 다시 만들고 사용자와 다시 공유합니다.
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -107,27 +106,27 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## 에셋 다운로드 및 공유 {#download-and-share-assets}
+## 자산 다운로드 및 공유 {#download-and-share-assets}
 
-사용자는 필요한 에셋을 다운로드하고 [!DNL Experience Manager] 외부에서 공유할 수 있습니다. 자세한 내용은 [자산 검색 방법](/help/assets/search-assets.md), [자산 다운로드 방법](/help/assets/download-assets-from-aem.md) 및 [컬렉션 다운로드 방법](manage-collections.md#download-a-collection)을 참조하십시오.
+사용자는 필요한 자산을 다운로드하고 이러한 자산을 [!DNL Experience Manager] 외부에서 공유할 수 있습니다. 자세한 내용은 [자산을 검색하는 방법](/help/assets/search-assets.md), [자산을 다운로드하는 방법](/help/assets/download-assets-from-aem.md) 및 [컬렉션을 다운로드하는 방법](manage-collections.md#download-a-collection)을 참조하십시오
 
-## 크리에이티브 전문가와 에셋 공유 {#share-with-creatives}
+## 크리에이티브 전문가와 자산 공유 {#share-with-creatives}
 
-마케터와 업무 부문 사용자는
+마케터와 사업 부문 사용자는
 
-* **Experience Manager 데스크탑 앱**:이 앱은 Windows 및 Mac에서 작동합니다. [데스크탑 앱 개요](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)를 참조하십시오. 권한이 있는 데스크톱 사용자가 공유 에셋에 쉽게 액세스할 수 있는 방법을 알아보려면 [에셋 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오. 데스크탑 사용자는 새 이미지를 업로드하여 에셋을 만들고 AEM 사용자인 다른 사용자와 다시 공유할 수 있습니다. 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)을 사용하여 [자산 업로드를 참조하십시오.
+* **Experience Manager 데스크탑 앱**:이 앱은 Windows와 Mac에서 작동합니다. [데스크탑 앱 개요](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)를 참조하십시오. 권한이 있는 데스크톱 사용자가 공유 자산에 쉽게 액세스할 수 있는 방법을 알아보려면 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오. 데스크탑 사용자는 새 이미지를 업로드하여 자산을 만들고 AEM 사용자인 사용자와 다시 공유할 수 있습니다. 데스크탑 앱을 사용하여 자산 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)를 참조하십시오.[
 
-* **Adobe 자산 링크**:크리에이티브 전문가는 에셋을 검색하고 사용할 수  [!DNL Adobe InDesign]있습니다.  [!DNL Adobe Illustrator]및  [!DNL Adobe Photoshop].
+* **Adobe 자산 링크**:크리에이티브 전문가가  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator]및  [!DNL Adobe Photoshop] 내에서 직접 자산을 검색하고 사용할 수 있습니다.
 
 ## 자산 공유 구성 {#configure-sharing}
 
-자산을 공유하기 위한 여러 가지 옵션은 특정 구성이 필요하며 특정 사전 요구 사항을 갖습니다.
+자산을 공유하는 다른 옵션은 특정 구성이 필요하며 특정 사전 요구 사항이 있습니다.
 
 ### 자산 링크 공유 구성 {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-사용자와 공유할 에셋의 URL을 생성하려면 [링크 공유] 대화 상자를 사용합니다. 관리자 권한이 있거나 `/var/dam/share` 위치에서 읽기 권한이 있는 사용자는 자신과 공유된 링크를 볼 수 있습니다. 링크를 통해 자산을 공유하는 것은 먼저 [!DNL Assets]에 로그인하지 않고도 외부 당사자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다.
+사용자와 공유할 자산의 URL을 생성하려면 링크 공유 대화 상자를 사용합니다. 관리자 권한이 있거나 `/var/dam/share` 위치에 읽기 권한이 있는 사용자는 자신과 공유된 링크를 볼 수 있습니다. 링크를 통해 자산을 공유하는 것은 먼저 [!DNL Assets]에 로그인하지 않고도 외부 당사자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다.
 
 >[!NOTE]
 >
@@ -169,24 +168,24 @@ When you download assets from the link shared using the Link Sharing feature, AE
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### 데스크톱 앱 {#desktop-actions}에 사용할 데스크톱 작업 활성화
+### 데스크탑 앱에서 사용할 데스크톱 작업 활성화 {#desktop-actions}
 
-브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 데스크톱 응용 프로그램에서 편집할 자산을 열 수 있습니다. 이러한 옵션은 데스크톱 작업이라고 하며 이를 활성화하려면 [웹 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)에서 데스크톱 작업 활성화를 참조하십시오. [!DNL Assets] 
+브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 데스크탑 애플리케이션에서 편집할 자산을 열 수 있습니다. 이러한 옵션을 데스크탑 작업이라고 하며 이를 활성화하려면 [웹 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)에서 데스크톱 작업 활성화 를 참조하십시오. [!DNL Assets] 
 
-![데스크탑 앱 작업 시 바로 가기 기능을 사용할 수 있도록 데스크탑 작업 활성화](assets/enable_desktop_actions.png)
+![데스크탑 앱을 사용할 때 바로 가기로 사용할 데스크탑 작업 활성화](assets/enable_desktop_actions.png)
 
-### [!DNL Adobe Asset Link] {#configure-asset-link} 사용 구성
+### [!DNL Adobe Asset Link] {#configure-asset-link} 을 사용하도록 구성
 
-Adobe Asset Link를 사용하면 컨텐츠 제작 과정에서 크리에이티브 전문가와 마케터 간의 공동 작업을 간소화할 수 있습니다. [!DNL Adobe Experience Manager Assets]을(를) [!DNL Creative Cloud] 데스크탑 앱 [!DNL Adobe InDesign], [!DNL Adobe Photoshop] 및 [!DNL Adobe Illustrator]에 연결합니다. [!DNL Adobe Asset Link] 패널에서는 크리에이티브 전문가가 가장 익숙한 크리에이티브 앱을 종료하지 않고도 [!DNL Assets]에 저장된 컨텐츠를 액세스하고 수정할 수 있습니다.
+Adobe 자산 링크를 사용하면 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 간소화할 수 있습니다. [!DNL Adobe Experience Manager Assets]을 [!DNL Creative Cloud] 데스크탑 앱 [!DNL Adobe InDesign], [!DNL Adobe Photoshop] 및 [!DNL Adobe Illustrator]와 연결합니다. [!DNL Adobe Asset Link] 패널을 사용하면 크리에이티브가 가장 익숙한 크리에이티브 앱을 종료하지 않고도 [!DNL Assets]에 저장된 컨텐츠에 액세스하고 수정할 수 있습니다.
 
-[구성 방법 [!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html)에서 사용하도록  [!DNL Assets] 을 참조하십시오.
+[구성 방법 [!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html)을 참조하십시오. [!DNL Assets] 
 
 ## 우수 사례 및 문제 해결 {#bestpractices}
 
 * 이름에 공백이 포함된 자산 폴더 또는 컬렉션은 공유되지 않을 수 있습니다.
-* 사용자가 공유 에셋을 다운로드할 수 없는 경우 AEM 관리자에게 [다운로드 제한](#maxdatasize)이 무엇인지 문의하십시오.
-* 사용자가 링크 공유를 사용하여 공유하는 비디오를 미리 보려면 저장소에 있는 비디오 노드의 `/jcr:content/renditions` 위치에서 사용할 수 있는 정적 비디오 변환이 있어야 합니다. 미리 보기는 [!DNL Dynamic Media] 변환의 가용성에 종속되지 않습니다.
-* 링크 공유를 통해 비디오 자산을 다운로드할 때, [!DNL Dynamic Media] 표현물은 다운로드한 보관소에 포함되지 않습니다.
+* 사용자가 공유 자산을 다운로드할 수 없는 경우 AEM 관리자에게 [다운로드 제한](#maxdatasize)이 무엇인지 문의하십시오.
+* 사용자가 링크 공유를 사용하여 공유되는 비디오를 미리 보려면 비디오에 저장소의 비디오 노드에서 사용할 수 있는 정적 비디오 표현물이 있어야 합니다. `/jcr:content/renditions` 미리 보기는 [!DNL Dynamic Media] 표현물의 가용성에 따라 달라지지 않습니다.
+* 링크 공유를 통해 비디오 자산을 다운로드할 때 [!DNL Dynamic Media] 표현물은 다운로드한 보관소에 포함되지 않습니다.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
