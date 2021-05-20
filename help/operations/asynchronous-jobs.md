@@ -1,14 +1,13 @@
 ---
 title: 비동기 작업
 description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 비동기식으로 완료하여 성능을 최적화합니다.
-translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
 ---
-
 
 # 비동기 작업 {#asynchronous-operations}
 
@@ -144,6 +143,6 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 >[!MORELIKETHIS]
 >
 >* [페이지 생성 및 구성](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
->* [자산 메타데이터 일괄적으로 가져오거나 내보냅니다](/help/assets/metadata-import-export.md).
->* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).
+* [자산 메타데이터 일괄적으로 가져오거나 내보냅니다](/help/assets/metadata-import-export.md).
+* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).
 
