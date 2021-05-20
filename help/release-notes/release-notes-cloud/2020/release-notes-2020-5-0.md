@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.5.0용 릴리스 노트
 description: Experience Manager 2020.5.0용 릴리스 노트
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service 2020.5.0 릴리스 노트 {#release-notes}
 
@@ -49,5 +48,3 @@ AEM as a Cloud Service 릴리스 2020.5.0에 있는 Cloud Manager의 새로운 �
 * Safari에서 환경 만들기 대화 상자가 올바르게 렌더링되지 않았습니다.
 * 개요 페이지의 특정 카드에 개체 이름이 올바로 표시되지 않았습니다.
 * 일부 경우, 이미지 작성에서 고객 패키지를 제대로 다운로드하지 못했습니다.
-
-
