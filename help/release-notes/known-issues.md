@@ -1,14 +1,13 @@
 ---
 title: 알려진 문제
 description: Adobe Experience Manager as a Cloud Service의 알려진 문제와 관련된 릴리스 노트
-translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
 
 ---
-
 
 # 알려진 문제 {#known-issues}
 
@@ -44,6 +43,6 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [AEM의 주요 변경 사항](aem-cloud-changes.md)
->* [이제 사용되지 않는 기능과 제거된 기능](deprecated-removed-features.md)
->* [릴리스 노트](home.md)
+* [이제 사용되지 않는 기능과 제거된 기능](deprecated-removed-features.md)
+* [릴리스 노트](home.md)
 
