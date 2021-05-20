@@ -98,7 +98,7 @@ ht-degree: 42%
       + 구성 요소 및 템플릿 {#components-templates}
          + [구성 요소 개요](developing/components/overview.md)
          + [템플릿](developing/components/templates.md)
-         + [코어 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
+         + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
          + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [컨텐츠 서비스용 JSON 익스포터](developing/components/json-exporter.md)
          + [구성 요소에 대해 JSON 내보내기 활성화](developing/components/enabling-json-exporter.md)
