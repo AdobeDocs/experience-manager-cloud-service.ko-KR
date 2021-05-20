@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service에 대한 액세스 가능한 컨텐츠 만들기(WCAG 2.1 준수)
 description: 장애가 있는 사용자가 액세스하여 사용할 수 있는 웹 컨텐츠를 만드는 데 도움이 되는 AEM as a Cloud Service 사용
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '14060'
 ht-degree: 99%
 
 ---
-
 
 # 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성) {#creating-accessible-content-wcag-conformance}
 
@@ -26,7 +25,7 @@ ht-degree: 99%
 
 * [WCAG 2.1에 대한 빠른 안내서](/help/onboarding/accessibility/quick-guide-wcag.md).
 * [Adobe 솔루션에 대한 액세서빌러티 적합성 보고서](https://www.adobe.com/accessibility/compliance.html).
-* [자산의 액세스 가능성](/help/assets/accessibility.md)
+* [Assets의 액세스 가능성](/help/assets/accessibility.md)
 * [액세스 가능한 컨텐츠를 만들려면 리치 텍스트 편집기 구성 참조](/help/implementing/developing/extending/rte-accessible-content.md)
 
 이러한 적합성 수준에 따라 레벨 A(가장 낮음), 레벨 AA 및 레벨 AAA(가장 높음)로 지침의 등급이 지정됩니다. 이러한 등급을 간단히 정의하면 다음과 같습니다.
@@ -292,7 +291,7 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 * [성공 기준 이해 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [성공 기준을 충족하는 방법 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### 적응성(1.3)  {#adaptable}
+### 적응성(1.3) {#adaptable}
 
 [지침 1.3 적응성: 정보나 구조의 손상 없이 다양한 방식으로 보여줄 수 있는 컨텐츠(예: 간단한 레이아웃)를 만드십시오.](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -465,7 +464,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 * [성공 기준 이해 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [성공 기준을 충족하는 방법 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### 구별 가능성(1.4)  {#distinguishable}
+### 구별 가능성(1.4) {#distinguishable}
 
 [지침 1.4 구별 가능성: 배경에서 전경을 구별하는 것을 포함하여 사용자가 컨텐츠를 더 쉽게 보고 들을 수 있도록 하십시오.](https://www.w3.org/TR/WCAG/#distinguishable)
 
