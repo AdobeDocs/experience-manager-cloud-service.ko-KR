@@ -1,14 +1,13 @@
 ---
 title: 릴리스 2020.2.0 릴리스 노트
 description: 릴리스 2020.2.0 릴리스 노트
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service 2020.2.0의 릴리스 노트 {#release-notes}
 
