@@ -1,14 +1,13 @@
 ---
 title: 릴리스 2020.3.0 릴리스 노트
 description: 릴리스 2020.3.0 릴리스 노트
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service 2020.3.0의 릴리스 노트 {#release-notes}
 
@@ -36,4 +35,3 @@ AEM as a Cloud Service 릴리스 2020.3.0에 있는 Cloud Manager의 새로운 �
 * 동일한 클라우드 서비스 프로그램에서 개발 환경을 동시에 만들면 하나만 성공적으로 만들 수 있는 조건이 발생할 수 있습니다.
 * 클라우드 서비스 프로그램에 대한 Experience Cloud 알림을 일관되게 받지 못했습니다.
 * 특정 프로젝트에서 *ResourceResolver 개체를 항상 닫으면* Null 포인터 예외가 발생하지만, 파이프라인 실행에는 영향을 주지 않았습니다.
-
