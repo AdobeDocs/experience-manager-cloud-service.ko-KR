@@ -1,14 +1,13 @@
 ---
 title: 페이지 주석 추가
 description: 컨텐츠와 직접 관련된 많은 구성 요소를 사용하여 주석을 추가할 수 있습니다.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 100%
 
 ---
-
 
 # 페이지 주석 추가 {#adding-page-annotations}
 
