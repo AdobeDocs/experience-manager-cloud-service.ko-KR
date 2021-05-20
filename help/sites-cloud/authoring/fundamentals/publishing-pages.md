@@ -1,14 +1,13 @@
 ---
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
-translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 96%
 
 ---
-
 
 # 페이지 게시 {#publishing-pages}
 
@@ -20,7 +19,7 @@ ht-degree: 96%
 
 ## 용어 {#terminology}
 
-AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 게시와 관련된 다른 용어가 있을 수 있습니다.
+AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 게시와 관련된 다양한 용어가 있을 수 있습니다.
 
 * **게시/게시 취소**
    * 이 용어는 컨텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
@@ -55,7 +54,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
 >[!NOTE]
 >
-> 추가 가능성은 페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)의 [기본 탭에서 **On Time** 및 **Off Time**&#x200B;을 참조하십시오.
+> 추가 가능성에 대해서는 페이지 속성의 [기본 탭에서 **On Time** 및 **Off Time**&#x200B;을 참조하십시오](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### 편집기에서 게시 {#publishing-from-the-editor}
 
@@ -144,7 +143,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
    컨텐츠 추가 단추를 클릭하면 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
 
-   필요한 페이지를 선택한 다음 **선택**&#x200B;을 클릭하여 마법사에 컨텐츠를 추가하거나 **취소**&#x200B;를 클릭하여 선택 항목을 취소하고 마법사로 돌아갑니다.
+   필요한 페이지를 선택한 다음 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**&#x200B;를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
 
    마법사로 돌아가 목록에서 항목을 선택한 뒤 다음과 같은 추가 옵션을 구성할 수 있습니다.
 
@@ -216,7 +215,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
 페이지를 편집할 때 해당 페이지의 게시를 취소하려는 경우 [페이지를 게시](#publishing-from-the-editor)한 만큼 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
 
-### 콘솔에서 게시 취소  {#unpublishing-from-the-console}
+### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
 
 [게시하기 위해 게시 관리를 사용](#manage-publication)하는 것과 같은 방식으로 게시 취소할 수 있습니다.
 
