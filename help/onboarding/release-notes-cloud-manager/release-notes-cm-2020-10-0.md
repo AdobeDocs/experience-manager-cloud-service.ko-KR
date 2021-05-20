@@ -1,23 +1,22 @@
 ---
-title: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.10.0
-description: Cloud Service 릴리스로 AEM의 Cloud Manager 릴리스 노트 2020.10.0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+title: AEM as a Cloud Service 릴리스 2020.10.0의 Cloud Manager 릴리스 노트
+description: AEM as a Cloud Service 릴리스 2020.10.0의 Cloud Manager 릴리스 노트
+feature: 릴리스 정보
+exl-id: 129d0dd8-3d6e-4cf0-b42e-5526f5cf0836
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 48%
 
 ---
 
+# Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes} 의 Cloud Manager 릴리스 노트
 
-# Adobe Experience Manager에서 Cloud Service 2020.10.0 {#release-notes}으로 Cloud Manager에 대한 릴리스 노트
-
-이 페이지에서는 AEM의 Cloud Manager 릴리스 노트를 Cloud Service 2020.10.0으로 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2020.10.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-2020년 10월 1일 Cloud Service으로 AEM의 Cloud Manager에 대한 릴리스 날짜가 2020.10.0.
+AEM as a Cloud Service 2020.10.0에 있는 Cloud Manager의 릴리스 날짜는 2020년 10월 1일입니다.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -27,11 +26,11 @@ ht-degree: 48%
 
 * 최대 절전 모드인 환경에서 이제 최대 절전 모드일 경우 Cloud Manager에서 개별 상태를 볼 수 있습니다.
 
-* 이제 클라우드 관리자 빌드 컨테이너가 Java 8 또는 Java 11을 사용하여 프로젝트를 컴파일할 수 있습니다. Java 11에 대한 지원은 Maven 툴체인 시스템에서 제공합니다.
+* 이제 Cloud Manager 빌드 컨테이너가 Java 8 또는 Java 11을 사용하여 프로젝트 컴파일링을 지원합니다. Java 11에 대한 지원은 Maven 도구 체인 시스템에서 제공합니다.
 
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
 
-* 개요 페이지의 환경 카드는 이제 최대 3개의 환경을 나열합니다. 사용자는 **모두 표시** 단추를 선택하여 환경 요약 페이지로 이동하여 전체 환경 목록이 포함된 테이블을 볼 수 있습니다.
+* 이제 개요 페이지의 환경 카드에 최대 3개의 환경이 나열됩니다. 사용자는 **모두 표시** 단추를 선택하여 환경 요약 페이지로 이동하여 전체 환경 목록이 있는 테이블을 볼 수 있습니다.
 자세한 내용은 [환경 보기](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)를 참조하십시오.
 
 
