@@ -1,14 +1,13 @@
 ---
 title: 구성 요소 콘솔
 description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
 ---
-
 
 # 구성 요소 콘솔 {#components-console}
 
