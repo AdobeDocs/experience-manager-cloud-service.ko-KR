@@ -1,23 +1,22 @@
 ---
 title: 마법사 사용
 description: 마법사 사용 - Cloud Services
-translation-type: tm+mt
-source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
+exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
+# 마법사 사용 {#using-wizard-to-create-an-aem-application-project}
 
-# 마법사 {#using-wizard-to-create-an-aem-application-project} 사용
-
-신규 고객을 유치하기 위해 Cloud Manager는 이제 최소한의 AEM 프로젝트를 시작점으로 만들 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)을 기반으로 합니다.
+새로운 고객을 시작할 수 있도록 이제 Cloud Manager에서 최소한의 AEM 프로젝트를 시작점으로 만들 수 있습니다. 이 프로세스는 [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)를 기반으로 합니다.
 
 
-마법사를 사용하여 Cloud Manager에서 AEM 응용 프로그램 프로젝트를 만들려면 아래 절차를 따르십시오.
+마법사를 사용하여 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 절차를 따르십시오.
 
-1. Cloud Manager에 로그인하고 기본 프로그램 설정이 완료되면 저장소가 비어 있으면 **개요** 화면에 특수 작업 카드 호출이 표시됩니다.
+1. Cloud Manager에 로그인하고 기본 프로그램 설정이 완료되면 저장소가 비어 있는 경우 작업 카드에 대한 특수 호출이 **개요** 화면에 표시됩니다.
 
    ![](assets/create-wizard1.png)
 
@@ -25,11 +24,11 @@ ht-degree: 0%
 
    ![](assets/create-wizard2.png)
 
-1. **진행 중인 프로젝트 만들기** 타일은 *프로그램 개요* 화면에 표시됩니다.
+1. **프로젝트 생성 진행 중** 타일이 *프로그램 개요* 화면에 표시됩니다.
 
    ![](assets/create-wizard3.png)
 
 1. 프로그램 만들기가 완료되면 **환경 추가** 타일이 *프로그램 개요* 페이지에 나타납니다.
    ![](assets/create-wizard4.png)
 
-   환경을 추가 또는 관리하는 방법에 대해 알려면 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
+   환경을 추가하거나 관리하는 방법에 대해 알아보려면 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
