@@ -2,9 +2,9 @@
 title: 사용자 지정 도메인 이름 추가
 description: 사용자 지정 도메인 이름 추가
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ Cloud Manager에서 사용자 지정 도메인 이름을 추가하려면 사용�
 * 해당 환경에 연결된 현재 실행 중인 파이프라인이 있는 동안에는 도메인 이름을 환경에 추가할 수 없습니다.
 
 * 한 번에 하나의 도메인 이름만 추가할 수 있습니다. 하지만 도메인은 와일드카드를 포함할 수 없습니다. 작성자 측의 사용자 지정 도메인은 지원되지 않습니다.
+
+* AEM as a Cloud Service은 와일드카드 도메인을 지원하지 않습니다.
 
 * 각 Cloud Manager 환경은 환경당 최대 100개의 사용자 지정 도메인을 호스팅할 수 있습니다.
 
