@@ -1,14 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
-description: '[!DNL Adobe Experience Manager] 를 Cloud Service 릴리스 노트로 2020.7.0.'
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+description: '[!DNL Adobe Experience Manager] as a 2020.7.0 Cloud Service 릴리스 노트'
+exl-id: 75d354a3-6987-4de0-aec8-24043461c516
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 80%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스 노트 {#release-notes}
 
@@ -30,11 +29,11 @@ ht-degree: 80%
 
 * 이제 구성이 Experience Manager 저장소의 `/etc/cloudsettings`가 아닌 `/conf`에 저장됩니다.
 
-## [!DNL Adobe Experience Manager Assets] cloud service  {#assets}
+## [!DNL Adobe Experience Manager Assets] 로서의 Cloud Service {#assets}
 
 ### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
 
-* [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 [!DNL Experience Manager]을(를) 구성하여 [!DNL Asset Compute Service]을(를) 사용하여 만든 사용자 정의 응용 프로그램을 호출할 수 있습니다. 개발자는 이 서비스를 사용하여 복잡한 사용 사례를 처리하는 전문 맞춤형 애플리케이션을 제작할 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 축소판을 생성하고, Adobe 파일 포맷의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터를 추출하고, 색인화를 위한 사전 설정으로 전체 텍스트를 추출하고, 사용 가능한 모든 [!DNL Sensei] 서비스를 통해 에셋을 실행할 수 있습니다. [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md)을 참조하십시오.
+* [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 [!DNL Asset Compute Service]을(를) 사용하여 만든 사용자 정의 응용 프로그램을 호출하도록 [!DNL Experience Manager]을 구성할 수 있습니다. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 맞춤형 애플리케이션을 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 축소판 생성, Adobe 파일 형식의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인을 생성하기 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 [!DNL Sensei] 서비스를 통한 자산 실행 등의 작업을 수행할 수 있습니다. [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md)을 참조하십시오.
 
 * [!DNL Experience Manager] as a Cloud Service에서 [!DNL Dynamic Media]의 초기 구성이 더욱 강력하게 개선되었습니다. 이제 관리자에게 프로세스 진행 상황을 제공합니다.
 
@@ -42,21 +41,21 @@ ht-degree: 80%
 
 * 클라우드 서비스 배포와 호환되지 않는 워크플로우 단계에는 이제 [!UICONTROL 워크플로우 모델] 편집기에서 경고가 표시됩니다. 또한 클라우드 서비스 환경에서 기존 워크플로우를 실행할 때 호환되지 않는 워크플로우 단계를 건너뜁니다.
 
-* [!DNL Cloud Manager]의 환경과 관련된 Git 프로젝트에서 `/conf/global`에 배포된 고객이 만든 워크플로우 모델은 자동으로 `/var`에 배포되므로 [!DNL Experience Manager]에서 사용할 수 있습니다. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
+* 고객이 생성하여 [!DNL Cloud Manager]의 환경과 연결된 Git 프로젝트의 `/conf/global`에 배포되는 워크플로우 모델은 자동으로 `/var`에 배포되어 [!DNL Experience Manager]에서 사용할 수 있습니다. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
 
 ### 버그 수정 {#assets-bugs-fixed}
 
 * 자산 이동 마법사가 컬렉션에 포함된 자산에 대해 예상대로 로드되지 않습니다. (CQ-4296756)
-* `dam:size` 및 `dam:sha1`의 값은 XMP writeback에서 제외됩니다. (CQ-4237355)
-* 자산을 일괄적으로 게시 취소하는 경우 요청 URI가 너무 길다는 오류 메시지가 표시됩니다. [!DNL Brand Portal] (CQ-4299474)
+* `dam:size` 및 `dam:sha1` 값은 XMP 원본에 쓰기 작업에서 제외됩니다. (CQ-4237355)
+* 자산을 일괄적으로 게시 취소할 때 요청 URI가 너무 길음을 제안하는 오류가 발생합니다. [!DNL Brand Portal] (CQ-4299474)
 
-## Adobe Experience Manager 상거래를 Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 새로운 기능 {#what-is-new-commerce}
 
-이제 Cloud Service에서 AEM 상거래를 사용할 수 있습니다.
+이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
 
-자세한 내용은 [Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)으로 AEM Commerce 시작을 참조하십시오.
+자세한 내용은 [Cloud Service으로 AEM Commerce 시작하기](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)를 참조하십시오.
 
 ## 코어 구성 요소 {#core-components}
 
@@ -91,7 +90,7 @@ ht-degree: 80%
 
    자세한 내용은 [파이프라인 변수](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)를 참조하십시오.
 
-* 이제 인증 바인딩된 개인 정보 저장소가 지원됩니다.
+* 이제 인증 바인딩된 Private Maven 리포지토리가 지원됩니다.
 
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
 자세한 내용은 [Java 11 지원 사용](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)을 참조하십시오.
