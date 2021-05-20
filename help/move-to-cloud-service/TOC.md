@@ -5,7 +5,6 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: 배포
 role: Architect, Developer
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '88'
@@ -30,9 +29,9 @@ ht-degree: 79%
       + [사용자 매핑 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 코드 리팩터링 도구 {#refactoring-tools}
-   + [일관된 경험](/help/move-to-cloud-service/unified-experience.md)
-   + [저장소 현대화 프로그램](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
-   + [색인 변환기](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
+   + [통합 경험](/help/move-to-cloud-service/unified-experience.md)
+   + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
+   + [인덱스 변환기](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [자산 워크플로우 마이그레이션](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher 변환기](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM 현대화 도구](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
