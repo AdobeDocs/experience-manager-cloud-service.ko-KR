@@ -1,14 +1,13 @@
 ---
 title: 활동 관리
 description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
-translation-type: tm+mt
-source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
+exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 93%
 
 ---
-
 
 # 활동 관리 {#managing-activities}
 
@@ -30,7 +29,7 @@ ht-degree: 93%
 
 * XT - Adobe Target 경험 타깃팅
 * A/B - Adobe Target A/B 테스트
-* AEM - Adobe Experience Manager 타깃팅(예: ContextHub 기반)
+* AEM - Adobe Experience Manager 타깃팅(즉, ContextHub 기반)
 
 ![활동 유형](/help/sites-cloud/authoring/assets/activities-types.png)
 
@@ -39,10 +38,12 @@ ht-degree: 93%
 >사용 가능한 활동 유형은 다음 방법으로 결정됩니다.
 >
 >* Adobe Target에 연결하기 위해 AEM 측에 사용된 Adobe Target 임차인(clientcode)에서 `xt_only` 선택 사항이 활성화되면, AEM에서 XT 활동&#x200B;**만** 만들 수 있습니다.
+   >
+   >
+* Adobe Target 임차인(clientcode)에서 `xt_only` 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
 >
->* Adobe Target 임차인(clientcode)에서 `xt_only` 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
 >
->**추가 참고:** 이  `xt_only` 옵션은 특정 Target 임차인(clientcode)에 적용된 설정이며 Adobe Target에서만 직접 수정할 수 있습니다. 이 선택 사항은 AEM에서 활성하거나 비활성화할 수 없습니다.
+**추가 참고:** 이  `xt_only` 옵션은 특정 Target 테넌트(clientcode)에 적용되는 설정이며 Adobe Target에서 직접 수정할 수만 있습니다. 이 선택 사항은 AEM에서 활성하거나 비활성화할 수 없습니다.
 
 >[!CAUTION]
 >
@@ -61,7 +62,7 @@ ht-degree: 93%
 
 1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **활동**&#x200B;을 클릭하거나 탭합니다.
 
-   ![활동 탐색](/help/sites-cloud/authoring/assets/activities-navigation.png)
+   ![활동으로 이동](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
 1. 활동 콘솔에서 **만들기**&#x200B;와 **브랜드 만들기**&#x200B;를 차례로 클릭하거나 탭합니다.
 1. 브랜드 템플릿을 선택하고 **다음**&#x200B;을 클릭하거나 탭합니다.
@@ -91,7 +92,7 @@ ht-degree: 93%
 
 활동을 추가하려면 다음을 수행하십시오.
 
-1. 활동을 만들 브랜드를 클릭하거나 탭한 다음, **만들기**, **활동 만들기**&#x200B;를 클릭하거나 탭합니다. 편집하는 경우 [영역] 화면기본에서 활동을 선택하고 **활동 편집**&#x200B;을 클릭하거나 탭합니다.
+1. 활동을 만들 브랜드를 클릭하거나 탭한 다음, **만들기**, **활동 만들기**&#x200B;를 클릭하거나 탭합니다. 편집할 경우 기본 영역 화면에서 활동을 선택하고 **활동 편집**&#x200B;을 클릭하거나 탭합니다.
 1. 다음 정보를 제공한 후, **다음**&#x200B;을 클릭하거나 탭합니다.
    * 활동의 이름.
    * 사용할 타깃팅 엔진. 기본적으로 ContextHub(AEM)가 선택되어 있습니다. Adobe Target을 사용해야 한다면, 타깃팅된 컨텐츠 편집기에서 활동을 만드십시오.
@@ -100,7 +101,7 @@ ht-degree: 93%
    * 활동 유형을 선택하십시오.
 1. 활동에 하나 이상의 경험을 추가합니다. **경험 추가**&#x200B;를 클릭하거나 탭합니다.
 1. AEM 타깃팅 또는 Adobe Target 경험 타깃팅을 사용하는 경우:
-   1. **대상자 선택**&#x200B;을 클릭하거나 탭하고 경험이 타깃팅하는 세그먼트를 선택합니다.
+   1. **대상 선택**&#x200B;을 클릭하거나 탭하고 경험이 타깃팅하는 세그먼트를 선택합니다.
    1. **경험 추가**&#x200B;를 클릭하거나 탭하고 이름을 입력한 다음, **확인**&#x200B;을 클릭하거나 탭합니다.
    1. **다음**을 클릭하거나 탭합니다.
 Adobe Target A/B 테스트를 사용하는 경우:
@@ -188,7 +189,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동은 Adobe Target 캠페인�
 
 ![Adobe Target과 동기화](/help/sites-cloud/authoring/assets/activities-synch.png)
 
-활동이 수정되면 작성자 활동이 즉시 동기화됩니다. 즉각적인 동기화를 통해 ContextHub을 사용한 활동 시뮬레이션을 수행할 수 있습니다.
+작성 활동은 활동을 수정할 때 즉시 동기화됩니다. 즉각적인 동기화를 통해 ContextHub를 사용한 활동 시뮬레이션을 사용할 수 있습니다.
 
 게시 활동은 활동이 AEM 게시 인스턴스에 게시되면 동기화됩니다.
 
