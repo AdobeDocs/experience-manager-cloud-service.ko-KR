@@ -1,14 +1,13 @@
 ---
 title: 계획 단계
 description: 계획 단계
-translation-type: tm+mt
-source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 91%
 
 ---
-
 
 # 계획 {#planning-phase}
 
@@ -60,4 +59,3 @@ Cloud Service로 이동하는 데 필요한 작업 수준을 예측했으면 리
 이전에 KPI(주요 성과 지표)를 설정하지 않은 경우 AEM(Adobe Experience Manager) 구현에 대한 KPI를 설정하여 팀이 가장 중요한 사항에 집중할 수 있도록 하는 것이 좋습니다.
 
 비즈니스 목표에 적합한 KPI를 선택하는 방법은 [KPI 개발](https://guided.adobe.com/welcome/aem/part6.html)을 참조하십시오.
-
