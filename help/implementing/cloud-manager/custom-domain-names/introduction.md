@@ -2,9 +2,9 @@
 title: 소개 - 사용자 지정 도메인 이름
 description: 소개 - 사용자 지정 도메인 이름
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Cloud Manager를 사용하면 UI를 통해 셀프 서비스 방식으로 고유한 브랜드 이름으로 사이트를 식별하는 사용자 지정 도메인을 추가할 수 있습니다. Cloud Service으로 Adobe Experience Manager에 기본 도메인 이름이 제공되어 `*.adobeaemcloud.com`으로 끝납니다. 이 기본 도메인 이름은 사용자 지정 도메인 이름을 웹 사이트에 첨부한 후에도 그대로 유지됩니다.
 
 >[!NOTE]
->사용자 지정 도메인 이름은 Cloud Manager for Sites 프로그램(게시 서비스)에서만 지원됩니다. 각 Cloud Manager 환경은 환경당 최대 250개의 사용자 지정 도메인을 호스팅할 수 있습니다.
+>사용자 지정 도메인 이름은 Cloud Manager for Sites 프로그램(게시 서비스)에서만 지원됩니다. 각 Cloud Manager 환경은 환경당 최대 250개의 사용자 지정 도메인을 호스팅할 수 있습니다. AEM as a Cloud Service은 와일드카드 도메인을 지원하지 않습니다.
 
 권한이 있는 사용자는 Cloud Manager UI 도메인 설정 페이지 또는 환경 세부 사항 페이지를 사용하여 다음을 포함하여 환경에 대한 사용자 지정 도메인 이름을 관리하기 위해 여러 작업을 수행할 수 있습니다.
 
