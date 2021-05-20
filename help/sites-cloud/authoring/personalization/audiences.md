@@ -1,23 +1,22 @@
 ---
 title: 대상자 관리
-description: 대상 콘솔을 사용하면 Adobe Target 계정의 대상을 생성, 구성 및 관리하거나 ContextHub용 세그먼트를 관리할 수 있습니다
-translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+description: 대상자 콘솔을 사용하면 Adobe Target 계정용 대상자를 생성, 구성 및 관리하거나 ContextHub용 세그먼트를 관리할 수 있습니다.
+exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 85%
 
 ---
 
-
 # 대상자 관리{#managing-audiences}
 
-대상 콘솔을 사용하면 Adobe Target 계정의 대상을 생성, 구성 및 관리하거나 ContextHub용 세그먼트를 관리할 수 있습니다.
+대상자 콘솔을 사용하면 Adobe Target 계정용 대상자를 생성, 구성 및 관리하거나 ContextHub용 세그먼트를 관리할 수 있습니다.
 
 * 대상자 추가 - Adobe Target 대상 또는 ContextHub 세그먼트 중 하나.
 * 대상자 관리.
 
-ContextHub에서 *세그먼트*&#x200B;이라고 하는 대상은 특정 기준에 의해 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사람을 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 새 대상을 만들 수 있습니다.
+ContextHub에서 *세그먼트*&#x200B;라고 하는 대상자는 특정 기준에 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사용자를 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 새 대상을 만들 수 있습니다.
 
 대상 콘솔에서 대상은 브랜드별로 구성됩니다.
 
@@ -57,7 +56,7 @@ ContextHub을 사용하여 세그먼트를 만드는 방법에 대한 자세히 
 
 >[!NOTE]
 >
->**만들기** 메뉴에 **타겟 대상자 만들기**&#x200B;가 표시되지 않으면 대상을 만드는 데 필요한 권한이 없는 것입니다. 대상을 만들 수 있으려면 `/etc/segmentation` 아래에 쓰기 권한이 있어야 합니다. content-authors 그룹에는 기본적으로 쓰기 권한이 있습니다.
+>**만들기** 메뉴에 **타겟 대상자 만들기**&#x200B;가 표시되지 않으면 대상을 만드는 데 필요한 권한이 없는 것입니다. 대상자를 만들 수 있으려면 `/etc/segmentation` 아래에 쓰기 권한이 있어야 합니다. content-authors 그룹에는 기본적으로 쓰기 권한이 있습니다.
 
 Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 
@@ -67,7 +66,7 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 
 1. 대상 콘솔에서 **만들기**&#x200B;와 **타겟 대상자 만들기**&#x200B;를 차례로 클릭하거나 탭합니다.
 
-   ![Target 대상 만들기](/help/sites-cloud/authoring/assets/audiences-create-target.png)
+   ![Target 대상자 만들기](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
 1. **Adobe Target 구성** 대화 상자에서 타겟 구성을 선택하고 **확인**&#x200B;을 탭하거나 클릭합니다.
 1. 규칙#1 영역에서 속성 유형을 탭하거나 클릭하고 사용 가능한 필드에 특성 정보를 입력합니다. 끝나면 속성의 오른쪽에 있는 확인 표시를 선택하여 저장하십시오. 모든 속성에 대해 알려면 [속성 및 속성 선택 사항](#attributes-and-their-options)을 참조하십시오.
@@ -96,8 +95,8 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 >
 >편집 중인 것과 동일한 AEM 인스턴스에서 만들어진 Adobe Target 대상만 편집할 수 있습니다. 다른 AEM 환경에서 만들어진 타겟 대상은 편집할 수 없습니다.
 
-대상 콘솔에서 모든 ContextHub 대상을 편집할 수 있습니다. Adobe Target 대상을 편집할 수도 있지만 AEM에서 만든 대상만 편집할 수 있습니다.
+대상자 콘솔에서 모든 ContextHub 대상자를 편집할 수 있습니다. Adobe Target 대상을 편집할 수도 있지만 AEM에서 만들어진 대상만 편집할 수 있습니다.
 
 1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **대상자**&#x200B;를 클릭하거나 탭합니다.
-1. 편집할 ContextHub 세그먼트 옆에 있는 아이콘을 탭하거나 클릭하고 **편집**&#x200B;을 탭하거나 클릭합니다.
-1. 세그먼트 편집기에서 편집을 수행합니다. 자세한 내용은 ContextHub 설명서를 참조하십시오.<!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->
+1. 편집할 ContextHub 세그먼트 옆의 아이콘을 탭하거나 클릭하고 **편집**&#x200B;을 탭하거나 클릭합니다.
+1. 세그먼트 편집기에서 편집을 수행합니다. 자세한 내용은 ContextHub 설명서 를 참조하십시오.<!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->
