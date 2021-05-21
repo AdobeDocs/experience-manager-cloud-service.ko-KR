@@ -51,7 +51,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 >작성 작업을 더 쉽게 해줄 수 있는 다양한 키보드 단축키가 있습니다.
 >
 >* [페이지 편집 시 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+>* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### 페이지 찾기 {#finding-your-page}
@@ -159,8 +159,10 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
+
    >[!NOTE]
-   같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
+   >
+   >같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
 
    * 구성 요소 [삭제:](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
@@ -176,7 +178,8 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
 
    >[!NOTE]
-   컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)를 사용해야 합니다.
+   >
+   >컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)를 사용해야 합니다.
 
 ### 페이지 속성 편집  {#editing-the-page-properties}
 
@@ -251,8 +254,10 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 삭제:
 
       * 작업을 확인하는 메시지가 나타납니다.
+
    >[!NOTE]
-   삭제는 빠른 작업으로 사용할 수 없습니다.
+   >
+   >삭제는 빠른 작업으로 사용할 수 없습니다.
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
