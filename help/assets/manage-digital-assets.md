@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 자산 관리,게시,공동 작업,자산 처리
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4505'
+source-wordcount: '4502'
 ht-degree: 2%
 
 ---
@@ -250,9 +250,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 삭제할 자산의 위치로 이동합니다.
 
-1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 삭제]** 아이콘을 탭/클릭합니다.
-
-   ![delete_icon](assets/delete_icon.png)
+1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 삭제]** ![delete_icon](assets/do-not-localize/delete-icon.png)을 클릭합니다.
 
 1. 확인 대화 상자에서 다음을 클릭합니다.
 
@@ -260,7 +258,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * 해당 작업을 승인하려면 **[!UICONTROL 삭제]**
 
       * 자산에 참조가 없으면, 자산이 삭제됩니다.
-      * 자산에 참조가 있으면, 오류 메시지에 **하나 이상의 자산이 참조되었다 고 표시됩니다.** **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
+      * 자산에 참조가 있으면, 오류 메시지에 **[!UICONTROL 하나 이상의 자산이 참조되었습니다]**&#x200B;라고 표시됩니다. **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
 
    >[!NOTE]
    >
@@ -268,10 +266,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >다른 페이지에서 들어오는 참조를 해결하거나 제거하려면 자산을 삭제하기 전에 관련 참조를 업데이트하십시오.
-   >
-   >
-   >또한 오버레이를 사용하여 강제 삭제 단추를 비활성화하여 사용자가 참조된 자산을 삭제하고 끊어진 링크를 떠나지 못하도록 합니다.
+   >다른 페이지에서 들어오는 참조를 해결하거나 제거하려면 자산을 삭제하기 전에 관련 참조를 업데이트하십시오. 참조된 자산을 삭제하면 링크가 끊어지기 때문에 삭제를 취소할 수 없습니다. 오버레이를 사용하여 강제 삭제 단추를 비활성화합니다.
 
 ## 자산 다운로드 {#download-assets}
 
