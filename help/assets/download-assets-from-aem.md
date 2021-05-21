@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 자산 관리
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
+source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '921'
 ht-degree: 4%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 4%
 
 다음 방법을 사용하여 Experience Manager 자산을 다운로드할 수 있습니다.
 
-* [Experience Manager 사용자 인터페이스](#download-in-aem)
+* [Experience Manager 사용자 인터페이스](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## [!DNL Experience Manager] 인터페이스를 사용하여 자산 다운로드 {#download-in-aem}
+## [!DNL Experience Manager] 인터페이스를 사용하여 자산 다운로드 {#download-assets}
 
-비동기 다운로드 서비스는 대형 자산을 원활하게 다운로드할 수 있는 프레임워크를 제공합니다. 사용자 인터페이스에서 작은 파일이 실시간으로 다운로드됩니다. 큰 파일은 비동기식으로 다운로드되고 사용자는 받은 편지함의 Experience Manager 알림을 통해 완료 알림을 받게 됩니다. [Experience Manager 받은 편지함 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)를 참조하십시오.
+비동기 다운로드 서비스는 대형 자산을 원활하게 다운로드할 수 있는 프레임워크를 제공합니다. 사용자 인터페이스에서 작은 파일이 실시간으로 다운로드됩니다. [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 기능을 사용하면 더 빨리 다운로드할 수 있습니다. 대용량 파일은 비동기식으로 다운로드되고 [!DNL Experience Manager]은 받은 편지함의 알림을 통해 완료를 알려줍니다. [이해 [!DNL Experience Manager] 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)을 참조하십시오.
 
 ![다운로드 알림](assets/download-notification.png)
 
