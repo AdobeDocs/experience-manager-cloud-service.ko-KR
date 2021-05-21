@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 1%
@@ -62,7 +62,7 @@ ht-degree: 1%
    >비프로덕션 파이프라인을 아직 설정하지 않은 경우 *개요* 화면에는 비프로덕션 파이프라인을 생성할 수 있는 카드가 표시됩니다.
 
 
-## 보기 환경 {#viewing-environment}
+## 환경 세부 정보 {#viewing-environment}
 
 개요 페이지의 **환경** 카드는 최대 3개의 환경을 나열합니다.
 
@@ -111,7 +111,6 @@ ht-degree: 1%
 
 
 >[!NOTE]
->
 >이 기능은 프로덕션 목적으로 설정된 프로덕션 프로그램의 프로덕션/스테이지 환경 설정에는 사용할 수 없습니다. 하지만 이 기능은 샌드박스 프로그램의 프로덕션/스테이지 환경에 사용할 수 있습니다.
 
 ## 액세스 관리 {#managing-access}
