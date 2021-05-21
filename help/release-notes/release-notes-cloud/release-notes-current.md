@@ -2,9 +2,9 @@
 title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 2%
 
 ---
@@ -54,19 +54,17 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 ### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
 
-* [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 개선 사항을 통해 더 빨리 다운로드할 수 있습니다.
+* [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 개선 사항을 통해 더 빨리 다운로드할 수 있습니다. [자산 다운로드](/help/assets/download-assets-from-aem.md)를 참조하십시오.
 
-* linkshare 옵션을 통해 자산이 다운로드되면 이제 변환을 다운로드하도록 선택하거나 다운로드하지 않도록 선택할 수 있습니다. 이전에는 모든 자산 표현물이 다운로드되었습니다.
-
-* 관리자는 벌크 자산 처리를 수행한 후 자산의 소스를 삭제하도록 [!DNL Experience Manager]을 구성할 수 있습니다. [일괄 자산 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
+* linkshare 옵션을 통해 자산을 다운로드할 때 렌디션을 다운로드하도록 선택하거나 다운로드하지 않도록 선택할 수 있습니다. 이전에는 모든 자산 표현물이 다운로드되었습니다. [다운로드 옵션](/help/assets/download-assets-from-aem.md)을 참조하십시오.
 
 * 상태 검사를 실행하여 자산을 일괄적으로 가져올 때 이제 Experience Manager에서 실패 이유에 대한 자세한 정보를 제공합니다. [일괄 자산 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
 
 * 벌크 가져오기 도구를 사용하여 자산을 가져올 때 이제 관리자는 가져오기가 성공하면 소스 파일을 삭제할 수 있습니다. [일괄 자산 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
 
-* 메타데이터 스키마를 편집할 때 새로운 루트 경로 선택기 필드를 사용하면 관리자가 빠르고 쉽게 선택할 수 있으므로 구성 시간이 줄어듭니다.
+* 메타데이터 스키마를 편집할 때 새로운 루트 경로 선택기 필드를 사용하면 관리자가 빠르고 쉽게 선택할 수 있습니다. 이 개선 사항을 통해 메타데이터 구성 시간을 줄일 수 있습니다.
 
-* 많은 자산의 메타데이터를 CSV 파일을 사용하여 일괄적으로 가져올 수 있으며 CSV 파일로 내보낼 수 있습니다. 기본 날짜 형식은 이제 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`입니다. 열 헤더를 업데이트하여 다른 형식을 활용할 수 있습니다. 예를 들어 `Date` 라는 단어 대신 CSV 파일의 열 헤더로 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 을 추가합니다.
+* 많은 자산의 메타데이터를 CSV 파일을 사용하여 일괄적으로 가져올 수 있으며 CSV 파일로 내보낼 수 있습니다. 기본 날짜 형식은 이제 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`입니다. 열 헤더를 업데이트하여 다른 형식을 활용할 수 있습니다. 예를 들어 `Date` 라는 단어 대신 CSV 파일의 열 헤더로 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 을 추가합니다. [메타데이터 가져오기](/help/assets/metadata-import-export.md)를 참조하십시오.
 
 * 열 보기에서 자산을 검색할 때 시각적 표시기에 각 자산의 승인 또는 거부 상태가 표시됩니다.
 
