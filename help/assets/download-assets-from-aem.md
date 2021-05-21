@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 자산 관리
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
+source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 4%
 다음 방법을 사용하여 Experience Manager 자산을 다운로드할 수 있습니다.
 
 * [Experience Manager 사용자 인터페이스](#download-in-aem)
-* Asset Link 공유 사용자 인터페이스
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
