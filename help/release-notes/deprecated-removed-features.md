@@ -2,10 +2,10 @@
 title: 이제 사용되지 않는 기능과 제거된 기능
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 사용 중단되거나 제거된 기능에 관한 릴리스 노트입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 45%
+source-wordcount: '448'
+ht-degree: 44%
 
 ---
 
@@ -43,4 +43,4 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Dynamic Media] | [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) 및 [Dynamic Media Hybrid 모드](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic)와의 이전 통합은 [!DNL Experience Manager]에서 [!DNL Cloud Service]로 사용할 수 없습니다. | [!DNL Experience Manager]와 함께 제공된 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)을 [!DNL Cloud Service]로 사용하십시오. |
 | [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이러한 기능은 [!DNL Experience Manager] 6.4에서 더 이상 사용되지 않으며, 이제 [!DNL Experience Manager]에서 제거되었습니다. |
 | [!DNL Sites] | 디자인 가져오기 | 런타임 시 [!DNL Experience Manager] 리포지토리의 변경할 수 없는 섹션을 액세스할 수 없어서 이 기능은 제거되었습니다. |
-| [!DNL Assets] | [[!DNL Assets] Marketing Cloud 자산 핵심 서비스 및 Creative Cloud 서비스와 공유하는 ](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html)를 사용할 수 없습니다. | [!DNL Adobe Creative Cloud]과 통합하려면 [자산 링크 Adobe](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 사용하십시오. |
+| [!DNL Assets] | [!DNL Assets]Marketing Cloud 자산 핵심 서비스 및 Creative Cloud 서비스와 공유하는 를 사용할 수 없습니다. | [!DNL Adobe Creative Cloud]과 통합하려면 [자산 링크 Adobe](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 사용하십시오. |
