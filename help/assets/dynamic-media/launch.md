@@ -4,9 +4,9 @@ description: platform launch 및 Dynamic Media Viewers 5.13용 Dynamic Media Vie
 feature: 자산 보고서
 role: Administrator,Business Practitioner
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 2fa40e8ee71f881df68337c99ccdb3437d50a0f3
 workflow-type: tm+mt
-source-wordcount: '6661'
+source-wordcount: '6662'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 ## Adobe Analytics 및 Experience Platform Launch과 Dynamic Media Viewer 통합이란 무엇입니까?{#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
+
+name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
 
 새 *Dynamic Media Viewers* 확장(Platform launch 및 Dynamic Media Viewers 5.13용)을 사용하면 Adobe Analytics 및 Platform launch 고객이 Platform launch 구성에서 뷰어에 대한 특정 이벤트와 데이터를 사용할 수 있습니다.
 
@@ -668,7 +670,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. Adobe IMC 구성 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. **[!UICONTROL IMS 기술 계정 구성 Adobe]** 페이지의 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform Launch]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL IMS 기술 계정 구성 Adobe]** 페이지의 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform 데이터 수집]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 새 인증서 만들기]**&#x200B;를 활성화한 다음 텍스트 필드에 인증서에 대한 의미 있는 값을 입력합니다. 예: *AdobeLaunchIMSCert* **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다.
 
    다음 정보 메시지가 표시됩니다.
