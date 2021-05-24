@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 자산 관리
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 20%
+source-wordcount: '3242'
+ht-degree: 19%
 
 ---
 
@@ -165,6 +165,17 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
    구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 탭하여 다음 고급 설정을 편집할 수 있습니다.
 
+* **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
+
+   [장치 픽셀 비율 최적화 정보](/help/assets/dynamic-media/imaging-faq.md#dpr)를 참조하십시오.
+
+   모든 Adobe Experience Manager Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
+
+   **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
+   * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;가 선택됩니다.
+
+   ![이미지 사전 설정에 대한 장치 픽셀 비율 설정](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL 제목]**  - 이미지의 제목을 변경합니다.
 
 * **[!UICONTROL 대체 텍스트]**  - 그래픽이 꺼진 사용자의 이미지에 제목을 추가합니다.
@@ -178,7 +189,6 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 * **[!UICONTROL 너비]**  - 이미지의 크기를 고정하려면 값을 픽셀 단위로 입력하십시오. 이 값을 공백으로 두면 자산이 적응형으로 설정됩니다.
 
 * **[!UICONTROL 높이]**  - 이미지의 크기를 고정하려면 값을 픽셀 단위로 입력하십시오. 이 값을 공백으로 두면 자산이 적응형으로 설정됩니다.
-
 
 #### 비디오 작업 시 {#when-working-with-video}
 
@@ -232,6 +242,18 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
    구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 고급 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 비율 일치 활성화]**  - Dynamic Media에서 원본 이미지의 비율과 가장 일치하는 종횡비로 스마트 자르기 렌디션을 선택하도록 하려면 이 옵션을 선택합니다.
+
+* **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
+
+   [장치 픽셀 비율 최적화 정보](/help/assets/dynamic-media/imaging-faq.md#dpr)를 참조하십시오.
+
+   모든 Adobe Experience Manager Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
+
+   **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
+
+   * 사전 설정 유형에서 **[!UICONTROL 스마트 자르기]** 옵션이 선택됩니다.
+
+   ![스마트 자르기의 장치 픽셀 비율 설정](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL 제목]**  - 스마트 자르기 이미지의 제목을 변경합니다.
 
