@@ -4,7 +4,7 @@ description: Adobe Sensei AI를 사용한 스마트 이미징이 각 사용자�
 feature: 자산 관리,표현물
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
+source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
@@ -98,7 +98,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 
 ## 스마트 이미징과 관련된 라이센스 비용이 있습니까?{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-아니오. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager Dynamic Media(온-프레미스, AMS 및 Experience Manager as a Cloud Service)에 대해 적용됩니다.
+아니오. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(온-프레미스, AMS 및 Experience Manager as a Cloud Service)에 대해 적용됩니다.
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정 또는 계정에 로그인합니다.
 
-**[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 누릅니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 도메인을 사용하는 경우 사용자 지정 도메인으로 이동을 요청할 수 있습니다. 기술 지원 티켓을 제출할 때 이 전환 요청을 수행합니다.
+**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL 일반 설정]**&#x200B;을 누릅니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 도메인을 사용하는 경우 사용자 지정 도메인으로 이동을 요청할 수 있습니다. 기술 지원 티켓을 제출할 때 이 전환 요청을 수행합니다.
 
 첫 번째 사용자 지정 도메인은 Dynamic Media 라이센스를 통해 추가 비용이 들지 않습니다.
 
