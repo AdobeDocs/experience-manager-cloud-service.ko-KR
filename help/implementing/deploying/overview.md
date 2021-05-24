@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: 배포
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3350'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Cloud Manager에서 가변 저장소, 변경 가능한 컨텐츠 패키지 및 �
    * 폴더(추가, 수정, 제거)
    * 편집 가능한 템플릿(추가, 수정, 제거)
    * 컨텍스트 인식 구성(`/conf` 아래의 모든 항목)(추가, 수정, 제거)
-   * 스크립트(패키지)는 패키지 설치 프로세스의 다양한 단계에서 설치 후크를 트리거할 수 있습니다. 설치 후크에 대한 [Jackrabbit filerabbit 설명서](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)를 참조하십시오(여기에서 사용자가 이 파일을 실행할 수 있음).
+   * 스크립트(패키지)는 패키지 설치 프로세스의 다양한 단계에서 설치 후크를 트리거할 수 있습니다. 설치 후크에 대해서는 [Jackrabbit filerabbit 설명서](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) 를 참조하십시오. AEM CS는 현재 Filerabault 버전 3.4.0을 사용하여 관리자 사용자, 시스템 사용자 및 관리자 그룹의 구성원에게 설치 후크를 제한합니다.)
 
 `/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 포함하여 가변 컨텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 이러한 분리를 반영하도록 재구성한 것은 AEM 6.5에서 수행되었으며 권장되는 프로젝트 재구성에 대한 자세한 내용은 [AEM 6.5 설명서에서 확인할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
