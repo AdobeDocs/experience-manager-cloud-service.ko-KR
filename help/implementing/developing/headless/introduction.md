@@ -2,7 +2,7 @@
 title: AEM Sites as a Cloud Service을 위한 헤드리스 개발
 description: 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 Cloud Service의 강력한 헤드리스 기능으로서 AEM을 사용하여 경험을 중앙에서 관리하고 여러 채널에서 제공하는 방법을 살펴볼 수 있습니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -53,6 +53,6 @@ AEM 헤드리스 기능을 시작할 수 있는 리소스는 많습니다. 이 �
 
 | 리소스 | 설명 | 유형 | 속성을 확인하는 | 설정. 시간 |
 |---|---|---|---|---|
-| [헤드리스 개발자 여정](/help/implementing/developing/headless-journey/overview.md) | 첫 번째 헤드리스 프로젝트에서 라이브로 전환하여 헤드리스 이론에서 AEM 헤드리스 기능에 대한 포괄적인 개요를 살펴보려면 여기에서 시작하십시오. | 안내서 | 개발자 | 1시간 |
+| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | 첫 번째 헤드리스 프로젝트에서 라이브로 전환하여 헤드리스 이론에서 AEM 헤드리스 기능에 대한 포괄적인 개요를 살펴보려면 여기에서 시작하십시오. | 안내서 | 개발자 | 1시간 |
 | [헤드리스 시작 안내서](/help/implementing/developing/headless/getting-started/introduction.md) | 주요 AEM 헤드리스 기능에 대한 간단한 요약을 보려면 이 빠른 시작 개요를 확인하십시오. | 빠른 시작 | 개발자, 관리자 | 20분 |
 | [AEM Headless 실습 자습서 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | 실습 방법을 선호하는 경우 이 자습서에서는 간단한 헤드리스 프로젝트를 만들기 위해 직접 자세히 설명합니다. | 자습서 | 개발자 | 2시간 |
