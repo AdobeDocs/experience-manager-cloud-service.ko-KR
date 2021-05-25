@@ -2,9 +2,9 @@
 title: URL 표면화
 description: Externalizer는 리소스 경로를 프로그래밍 방식으로 외부 및 절대 URL로 변환할 수 있는 OSGi 서비스입니다.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Cloud Service 인스턴스로서의 AEM은 외부에 표시되는 URL을 알 수
 
 ## Externalizer의 기본 동작 및 How to Override {#default-behavior}
 
-기본적으로 Externalizer 서비스에는 개입이 없이 AEM as a Cloud Service이 사용자 지정 도메인을 사용하도록 `author-p12345-e6789.adobeaemcloud.com` 및 `publish-p12345-e6789.adobeaemcloud.com` 등의 값이 이미 설정되어 있습니다.
+기본적으로 Externalizer 서비스에는 `author-p12345-e6789.adobeaemcloud.com` 및 `publish-p12345-e6789.adobeaemcloud.com` 등의 값이 있습니다.
 
 이러한 값을 무시하려면 문서 [AEM에 대한 OSGi 구성](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)에 설명된 대로 Cloud Manager 환경 변수를 사용하고, 사전 정의된 `AEM_CDN_DOMAIN_AUTHOR` 및 `AEM_CDN_DOMAIN_PUBLISH` 변수를 설정합니다.
 
