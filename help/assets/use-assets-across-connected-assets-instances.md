@@ -5,18 +5,18 @@ contentOwner: AG
 feature: 자산 관리,연결된 자산,자산 분배,사용자 및 그룹
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
+source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
 workflow-type: tm+mt
-source-wordcount: '2932'
-ht-degree: 26%
+source-wordcount: '2966'
+ht-degree: 25%
 
 ---
 
 # 연결된 자산을 사용하여 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}에서 DAM 자산 공유
 
-대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 함께 작업하는 데 필요한 기존 배포를 지리적으로 배포할 수 있습니다. 또 다른 이유는 모회사가 함께 사용하려는 이기종 인프라를 인수하는 것입니다.
+대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 함께 작업하는 데 필요한 기존 배포를 지리적으로 배포할 수 있습니다. 또 다른 이유는 모회사가 함께 사용하려는 다른 [!DNL Experience Manager] 버전을 포함하여 이기종 인프라를 인수하는 것입니다.
 
-사용자는 [!DNL Experience Manager Sites]에서 웹 페이지를 만들 수 있습니다. [!DNL Experience Manager Assets] 는 웹 사이트에 필요한 자산을 제공하는 DAM(디지털 자산 관리) 시스템입니다. [!DNL Experience Manager]는 이제 [!DNL Sites] 및 [!DNL Assets]을 통합하여 위의 사용 사례를 지원합니다. 
+연결된 자산 기능은 [!DNL Experience Manager Sites] 및 [!DNL Experience Manager Assets]을 통합하여 위의 사용 사례를 지원합니다. 사용자는 별도의 [!DNL Assets] 배포에서 디지털 자산을 사용하는 [!DNL Sites]에 웹 페이지를 만들 수 있습니다.
 
 ## 연결된 자산 개요 {#overview-of-connected-assets}
 
@@ -127,7 +127,7 @@ ht-degree: 26%
 1. 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포에 [!DNL Dynamic Media]을 구성합니다. 다음 지침에 따라 [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * 모든 구성에서 동일한 회사 이름을 사용합니다.
-   * 로컬 [!DNL Sites]Dynamic Media 동기화 모드]에서 기본적으로 **[!UICONTROL 비활성화됨]**&#x200B;을 선택합니다. [!UICONTROL  사이트 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한만 필요합니다.
+   * 로컬 [!DNL Sites]Dynamic Media 동기화 모드]에서 기본적으로 **[!UICONTROL 비활성화됨]**&#x200B;을 선택합니다. [!UICONTROL  [!DNL Sites] 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한만 필요합니다.
    * 로컬 [!DNL Sites]자산 게시&#x200B;]**옵션에서**[!UICONTROL &#x200B;선택적 게시&#x200B;]**를 선택합니다.**[!UICONTROL  **[!UICONTROL 모든 컨텐츠 동기화]**&#x200B;를 선택하지 마십시오.
    * 원격 [!DNL Assets] 배포의 [!UICONTROL Dynamic Media 동기화 모드]에서 기본적으로 **[!UICONTROL 활성화됨]**&#x200B;을 선택합니다.
 
@@ -205,8 +205,9 @@ ht-degree: 26%
 * 로컬 자산은 원격 배포의 원본 자산과 동기화되지 않습니다. DAM 배포에 대한 권한 편집, 삭제 또는 취소는 다운스트림으로 전파되지 않습니다.
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
-* 이미지 및 나열된 문서 형식만 지원됩니다. 컨텐츠 조각 및 경험 조각은 지원되지 않습니다.
-* [!DNL Experience Manager] 메타데이터 스키마를 가져오지 않습니다. 가져온 모든 메타데이터가 표시되지 않을 수 있음을 의미합니다. 스키마를 별도로 업데이트하면 모든 속성이 표시됩니다.
+* [!DNL Sites] 페이지에서 [!DNL Dynamic Media]을 사용하는 경우 원본 자산을 가져오지 않고 로컬 배포에 저장됩니다. [!DNL Assets] 배포에서 생성한 `dam:Asset` 노드, 메타데이터 및 표현물은 모두 [!DNL Sites] 배포에서 가져옵니다.
+* 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Content Fragments] 및  [!DNL Experience Fragments] 은 지원되지 않습니다.
+* [!DNL Experience Manager] 메타데이터 스키마를 가져오지 않습니다. 가져온 모든 메타데이터가 표시되지 않을 수 있음을 의미합니다. [!DNL Sites] 배포에서 스키마가 별도로 업데이트되면 모든 메타데이터 속성이 표시됩니다.
 * 작성자가 원격 DAM 배포에 액세스할 수 없는 경우에도 모든 [!DNL Sites] 작성자는 가져온 복사본에 대한 읽기 권한을 갖습니다.
 * 통합을 사용자 지정할 수 있는 API 지원이 없습니다.
 * 이 기능을 통해 원격 자산을 원활하게 검색하고 사용할 수 있습니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 마이그레이션하는 것이 좋습니다.
@@ -216,8 +217,8 @@ ht-degree: 26%
 
 * [!DNL Assets] 배포 [!DNL Adobe Managed Services] 가 지원됩니다.
 * [!DNL Sites] 한 번에 하나의 저장소 [!DNL Assets] 에 연결할 수 있습니다.
-* 원격 저장소로 작동하는 [!DNL Assets] 라이선스.
-* 로컬 작성 배포로 작동하는 [!DNL Sites] 의 하나 이상의 라이선스.
+* 원격 저장소로 작동하는 [!DNL Assets] 라이센스가 필요합니다.
+* 로컬 작성 배포로 작동하는 [!DNL Sites] 의 라이센스가 하나 이상 필요합니다.
 
 ### 사용량 {#usage}
 
