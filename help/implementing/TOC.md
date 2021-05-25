@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
+source-git-commit: b625eb8a7f293df8022bc24fae66fe1b6825c375
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 42%
+source-wordcount: '904'
+ht-degree: 46%
 
 ---
 
@@ -72,17 +72,6 @@ ht-degree: 42%
    + [AEM 기술 기반](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [서버 측 API에 대한 액세스 토큰 생성](developing/introduction/generating-access-tokens-for-server-side-apis.md)
-   + 헤드리스 개발자 여정 {#headless-journey}
-      + [AEM의 헤드리스 이해](developing/headless-journey/overview.md)
-      + [CMS Headless 개발에 대해 알아보기](developing/headless-journey/learn-about.md)
-      + [Cloud Service으로 AEM Headless 시작하기](developing/headless-journey/getting-started.md)
-      + [AEM Headless를 사용하여 첫 번째 경험의 경로](developing/headless-journey/path-to-first-experience.md)
-      + [컨텐츠를 AEM 컨텐츠 모델로 모델링하는 방법](developing/headless-journey/model-your-content.md)
-      + [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](developing/headless-journey/access-your-content.md)
-      + [AEM 자산 API를 통해 컨텐츠를 업데이트하는 방법](developing/headless-journey/update-your-content.md)
-      + [모두 합치는 방법](developing/headless-journey/put-it-all-together.md)
-      + [헤드리스 애플리케이션을 사용하여 라이브로 전환하는 방법](developing/headless-journey/go-live.md)
-      + [선택 사항 - AEM을 사용하여 단일 페이지 애플리케이션을 만드는 방법](developing/headless-journey/create-spa.md)
    + [AEM의 헤드리스 및 헤드리스](developing/headful-headless.md)
    + 전체 스택 AEM 개발 {#full-stack}
       + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
@@ -115,27 +104,6 @@ ht-degree: 42%
       + [사용자 지정 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
       + [Java API 지침](/help/implementing/developing/introduction/java-api-guidelines.md)
-   + 하이브리드 AEM 개발 {#hybrid}
-      + [AEM을 사용한 하이브리드 및 SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
-      + [SPA 소개 및 연습](developing/hybrid/introduction.md)
-      + [SPA WKND 자습서](developing/hybrid/wknd-tutorial.md)
-      + [React 사용 시작](developing/hybrid/getting-started-react.md)
-      + [angular 사용 시작](developing/hybrid/getting-started-angular.md)
-      + [SPA 깊이 들어가기](developing/hybrid/deep-dives.md)
-      + [AEM용 SPA 개발](developing/hybrid/developing.md)
-      + [SPA 편집기 개요](developing/hybrid/editor-overview.md)
-      + [SPA 블루프린트](developing/hybrid/blueprint.md)
-      + [SPA 페이지 구성 요소](developing/hybrid/page-component.md)
-      + [동적 모델과 구성 요소 간 매핑](developing/hybrid/model-to-component-mapping.md)
-      + [모델 라우팅](developing/hybrid/routing.md)
-      + [RemotePage 구성 요소](developing/hybrid/remote-page.md)
-      + [AEM 내에서 외부 SPA 편집](developing/hybrid/editing-external-spa.md)
-      + [SPA의 복합 구성 요소](developing/hybrid/composite-components.md)
-      + [서버 측 렌더링](developing/hybrid/ssr.md)
-      + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
-      + [Launch 통합](developing/hybrid/launch-integration.md)
-      + [SPA 참조 문서](developing/hybrid/reference-materials.md)
    + 헤드리스 환경 관리 {#headless}
       + [헤드리스 및 AEM](developing/headless/introduction.md)
       + [헤드리스 개발자 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
@@ -163,6 +131,27 @@ ht-degree: 42%
          + [컨텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [컨텐츠 조각을 사용한 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+   + 하이브리드 및 SPA AEM 개발 {#hybrid}
+      + [AEM을 사용한 하이브리드 및 SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [SPA 소개 및 연습](developing/hybrid/introduction.md)
+      + [SPA WKND 자습서](developing/hybrid/wknd-tutorial.md)
+      + [React 사용 시작](developing/hybrid/getting-started-react.md)
+      + [angular 사용 시작](developing/hybrid/getting-started-angular.md)
+      + [SPA 깊이 들어가기](developing/hybrid/deep-dives.md)
+      + [AEM용 SPA 개발](developing/hybrid/developing.md)
+      + [SPA 편집기 개요](developing/hybrid/editor-overview.md)
+      + [SPA 블루프린트](developing/hybrid/blueprint.md)
+      + [SPA 페이지 구성 요소](developing/hybrid/page-component.md)
+      + [동적 모델과 구성 요소 간 매핑](developing/hybrid/model-to-component-mapping.md)
+      + [모델 라우팅](developing/hybrid/routing.md)
+      + [RemotePage 구성 요소](developing/hybrid/remote-page.md)
+      + [AEM 내에서 외부 SPA 편집](developing/hybrid/editing-external-spa.md)
+      + [SPA의 복합 구성 요소](developing/hybrid/composite-components.md)
+      + [서버 측 렌더링](developing/hybrid/ssr.md)
+      + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+      + [Launch 통합](developing/hybrid/launch-integration.md)
+      + [SPA 참조 문서](developing/hybrid/reference-materials.md)
 + 개발자 도구 {#developer-tools}
    + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)
