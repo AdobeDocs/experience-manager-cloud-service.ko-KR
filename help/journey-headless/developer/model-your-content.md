@@ -1,7 +1,7 @@
 ---
 title: 컨텐츠를 모델링하는 방법
 description: AEM Headless 개발자 여정의 이 부분에서 컨텐츠 조각 모델 및 컨텐츠 조각으로 컨텐츠 모델링을 사용하여 AEM Headless 게재에 대한 컨텐츠를 모델링하는 방법을 알아봅니다.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 시작 [CMS Headless Development](learn-about.md)에서 헤드리스 컨텐츠 전달과 이를 사용해야 하는 이유를 알아봅니다. 그런 다음 [Cloud Service](getting-started.md)로 AEM Headless 시작하기 가 프로젝트 컨텍스트에서 AEM Headless를 설명합니다
 
-AEM 헤드리스 여정의 이전 문서, [AEM Headless](/help/implementing/developing/headless-journey/path-to-first-experience.md)를 사용하여 첫 번째 경험에 대한 경로 에서는 첫 번째 프로젝트를 구현하는 데 필요한 단계를 알아보았습니다. 읽고 나면 다음을 수행해야 합니다.
+AEM 헤드리스 여정의 이전 문서, [AEM Headless](path-to-first-experience.md)를 사용하여 첫 번째 경험에 대한 경로 에서는 첫 번째 프로젝트를 구현하는 데 필요한 단계를 알아보았습니다. 읽고 나면 다음을 수행해야 합니다.
 
 * 콘텐츠 디자인을 위한 중요한 계획 고려 사항 이해
 * 통합 수준 요구 사항에 따라 헤드리스를 구현하는 단계를 이해합니다.
@@ -274,6 +274,6 @@ tbc...
    * [구성 브라우저의 컨텐츠 조각](/help/assets/content-fragments/content-fragments-configuration-browser.md)  - 구성 브라우저에서 컨텐츠 조각 기능을 활성화합니다
    * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)  - 컨텐츠 조각 모델 만들기 및 편집
    * [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)  - 컨텐츠 조각 만들기 및 작성이 페이지에서는 다른 세부 섹션으로 연결됩니다.
-* [AEM GraphQL 스키마](/help/implementing/developing/headless-journey/access-your-content.md)  - GraphQL에서 모델을 구현하는 방법
+* [AEM GraphQL 스키마](access-your-content.md)  - GraphQL에서 모델을 구현하는 방법
 * [샘플 컨텐츠 조각 구조](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEM 헤드리스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)  - 컨텐츠 모델링 및 GraphQL을 포함하여 AEM 헤드리스 기능을 사용하는 방법에 대한 개요를 제공하는 짧은 비디오 튜토리얼 시리즈입니다
