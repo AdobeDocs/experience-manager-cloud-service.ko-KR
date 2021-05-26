@@ -3,9 +3,9 @@ title: 선택기를 사용한 작업
 description: Dynamic Media에서 대화형 이미지, 대화형 비디오 및 회전 배너용 자산을 선택하는 데 사용할 수 있는 방법에 대해 알아봅니다.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '731'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-핫스팟이나 이미지 맵이 있는 위치를 수동으로 입력하지 않고 선택하면 선택기를 사용합니다. 사이트 선택기는 Adobe Experience Manager Sites 고객인 경우에만 작동합니다. 제품 선택기에도 Experience Manager 상거래가 필요합니다.
+핫스팟이나 이미지 맵이 있는 위치를 수동으로 입력하지 않고 선택하면 선택기를 사용합니다. 사이트 선택기는 [!DNL Adobe Experience Manager Sites] 고객인 경우에만 작동합니다. 제품 선택기에는 [!DNL Experience Manager Commerce]도 필요합니다.
 
 ## Dynamic Media {#selecting-products}에서 제품 선택
 
@@ -42,11 +42,11 @@ ht-degree: 2%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   **[!UICONTROL 찾아보기]**&#x200B;를 탭하고 다른 폴더로 이동하여 Experience Manager이 제품 데이터를 탐색하는 위치를 변경할 수 있습니다.
+   **[!UICONTROL 찾아보기]**&#x200B;를 탭하고 다른 폴더로 이동하여 [!DNL Experience Manager]에서 제품 데이터를 탐색하는 위치를 변경할 수 있습니다.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   **[!UICONTROL 정렬 기준]**&#x200B;을 탭하여 Experience Manager이 가장 최근 항목부터 가장 오래된 항목순으로 정렬하는지, 가장 오래된 항목순으로 정렬하는지 또는 가장 오래된 항목순으로 정렬하는지 여부를 변경합니다.
+   **[!UICONTROL 정렬 기준]**&#x200B;을 탭하여 [!DNL Experience Manager]이 가장 최근 항목부터 가장 오래된 항목순으로 정렬하는지 또는 가장 오래된 항목순으로 정렬하는지 여부를 변경합니다.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ## Dynamic Media에서 사이트 선택 {#selecting-sites}
 
-Experience Manager 사이트 내에서 관리되는 웹 페이지에 핫스팟이나 이미지 맵을 연결하려는 경우 사이트 선택기를 사용하여 웹 페이지를 선택합니다.
+핫스팟 또는 이미지 맵이 [!DNL Experience Manager] 사이트 내에서 관리되는 웹 페이지에 연결되도록 하려면 사이트 선택기를 사용하여 웹 페이지를 선택합니다.
 
 1. 회전 메뉴 세트, 대화형 이미지 또는 대화형 비디오로 이동하고 **[!UICONTROL 작업]** 탭을 탭합니다(핫스팟이나 이미지 맵을 정의한 경우에만 사용 가능).
 
@@ -72,7 +72,7 @@ Experience Manager 사이트 내에서 관리되는 웹 페이지에 핫스팟�
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. **[!UICONTROL 사이트 선택기]** 아이콘(돋보기가 있는 폴더)을 탭하고 핫스팟이나 이미지 맵을 연결할 Experience Manager 사이트의 페이지로 이동합니다.
+1. **[!UICONTROL 사이트 선택기]** 아이콘(돋보기가 있는 폴더)을 탭하고 핫스팟이나 이미지 맵을 연결할 [!DNL Experience Manager] 사이트의 페이지로 이동합니다.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ Experience Manager 사이트 내에서 관리되는 웹 페이지에 핫스팟�
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 핫스팟 또는 이미지 맵을 탭하는 경우 **[!UICONTROL 미리 보기]** 모드에서는 지정한 Experience Manager 사이트 페이지로 이동합니다.
+1. 핫스팟 또는 이미지 맵을 탭하는 경우 **[!UICONTROL 미리 보기]** 모드에서는 지정한 [!DNL Experience Manager] 사이트 페이지로 이동합니다.
 
 ## Dynamic Media {#selecting-assets}에서 자산 선택
 
@@ -97,7 +97,7 @@ Experience Manager 사이트 내에서 관리되는 웹 페이지에 핫스팟�
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Experience Manager이 **[!UICONTROL 경로]** 필드의 다른 폴더로 이동하여 자산을 탐색하는 위치를 변경할 수 있습니다.
+   **[!UICONTROL 경로]** 필드의 다른 폴더로 이동하여 [!DNL Experience Manager]에서 자산을 탐색하는 위치를 변경할 수 있습니다.
 
    **[!UICONTROL 컬렉션]**&#x200B;을 탭하여 컬렉션 내에서 자산만 검색합니다.
 
