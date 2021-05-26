@@ -6,9 +6,9 @@ topic-tags: introduction
 content-type: reference
 feature: 접근성
 role: Administrator,Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Dynamic Media은 작성 사용자 인터페이스에서 키보드 제어와 JAWS
 
 ## Dynamic Media {#keyboard-support-in-dm}에서 키보드 액세스 가능성 지원
 
-Dynamic Media은 Assets Experience Manager 플러그인이므로 키보드 제어 동작의 대부분은 Experience Manager Assets와 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 단추에는 Experience Manager 자산과 동일한 포커스 강조 표시가 있습니다. 또한 Experience Manager 자산에서와 마찬가지로 `Spacebar` 키에도 반응합니다. Assets](/help/assets/accessibility.md#keyboard-shortcuts)에서 [키보드 단축키를 참조하십시오.
+Dynamic Media은 [!DNL Experience Manager Assets]의 플러그인이므로 대부분의 키보드 제어 동작은 [!DNL Experience Manager Assets]과 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 단추에는 [!DNL Experience Manager Assets]에서와 동일한 포커스 강조 표시가 있습니다. 또한 [!DNL Experience Manager Assets]에서와 같이 `Spacebar` 키에 반응합니다. Assets](/help/assets/accessibility.md#keyboard-shortcuts)에서 [키보드 단축키를 참조하십시오.
 
 Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 찾기 쉽습니다. Dynamic Media의 키보드 제어는 다음과 같습니다.
 
