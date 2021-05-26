@@ -4,9 +4,9 @@ description: Dynamic Media에서 360 및 VR(Virtual Reality) 비디오로 작업
 feature: 360 VR 비디오
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobe Premier Pro를 사용하여 360/VR 푸티지를 보고 편집할 수 있�
 
 ## 360 비디오 뷰어 {#uploading-assets-for-use-with-the-video-viewer}에서 사용할 자산 업로드
 
-Experience Manager에 업로드된 360개의 비디오 자산은 자산 페이지에서 **멀티미디어**&#x200B;로 레이블이 지정되며, 일반적인 비디오 자산과 유사합니다.
+[!DNL Experience Manager]에 업로드된 360개의 비디오 자산은 자산 페이지에서 **멀티미디어**&#x200B;로 레이블이 지정되며, 일반적인 비디오 자산과 유사합니다.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selecttopreview카드 보기에 표시된 업로드된 360 비디오 자산입니다. 자산은 Multimedia로 레이블이 지정됩니다.*
@@ -100,7 +100,7 @@ Start by uploading 360 Videos.
 
 웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 [
-[URL을 웹 애플리케이션에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
+[URL을 웹 애플리케이션에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 [!DNL Experience Manager Sites] 페이지에 연결된 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 **360개의 비디오를 미리 보려면**
@@ -136,5 +136,5 @@ Start by uploading 360 Videos.
 
 360 비디오를 게시하는 방법에 대한 자세한 내용은 [Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 를 참조하십시오.
 또한 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
-또한 [URL을 웹 애플리케이션에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
+또한 [URL을 웹 애플리케이션에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 [!DNL Experience Manager Sites] 페이지에 연결된 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 또한 [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
