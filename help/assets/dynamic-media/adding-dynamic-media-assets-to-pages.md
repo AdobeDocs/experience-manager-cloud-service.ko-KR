@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 자산 관리
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '3242'
-ht-degree: 19%
+source-wordcount: '3226'
+ht-degree: 20%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 19%
 
 웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하려면 페이지에 직접 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **비디오 360 미디어** 구성 요소를 추가할 수 있습니다. 레이아웃 모드를 시작하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음 이러한 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가합니다. Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 그에 따라 사용 가능한 구성 옵션이 변경될 수 있습니다.
 
-Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic Media 자산을 직접 추가합니다. WCM에 타사 항목을 사용하는 경우 [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/dynamic-media/embed-code.md) 자산을 사용합니다. 응답형 타사 웹 사이트의 경우 [응답형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)을 참조하십시오.
+[!DNL Adobe Experience Manager] 을 WCM으로 사용하는 경우에는 Dynamic Media 자산을 페이지에 직접 추가합니다. WCM에 타사 항목을 사용하는 경우 [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/dynamic-media/embed-code.md) 자산을 사용합니다. 응답형 타사 웹 사이트의 경우 [응답형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)을 참조하십시오.
 
 >[!NOTE]
 >
->Experience Manager의 페이지에 자산을 추가하기 전에 자산을 게시해야 합니다. [Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
+>자산을 [!DNL Experience Manager]의 페이지에 추가하기 전에 반드시 자산을 게시하십시오. [Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 ## 페이지에 Dynamic Media 구성 요소 추가 {#adding-a-dynamic-media-component-to-a-page}
 
@@ -28,7 +28,7 @@ Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic Media �
 
 **페이지에 Dynamic Media 구성 요소를 추가하려면:**
 
-1. Experience Manager에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
+1. [!DNL Experience Manager]에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
 1. 왼쪽 창에서 **[!UICONTROL 구성 요소]** 아이콘을 탭한 다음, Dynamic Media으로 필터링합니다.
 
    사용 가능한 Dynamic Media 구성 요소 목록이 없는 경우 사용할 Dynamic Media 구성 요소를 활성화해야 합니다. [Dynamic Media 구성 요소 활성화](#enabling-dynamic-media-components)를 참조하십시오.
@@ -55,7 +55,7 @@ Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic Media �
 
 페이지에 추가할 수 있는 Dynamic Media 구성 요소가 없다면 사용할 구성 요소를 활성화해야 합니다.
 
-1. Experience Manager에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
+1. [!DNL Experience Manager]에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
 1. 페이지 상단 근처에 있는 도구 모음 왼쪽에서 페이지 정보 아이콘을 탭한 다음, 드롭다운 목록에서 **[!UICONTROL 템플릿 편집]**&#x200B;을 누릅니다.
 
    ![편집 템플릿](/help/assets/assets-dm/edit-template.png)
@@ -106,7 +106,7 @@ Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 탭�
 
 >[!NOTE]
 >
->이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 템플릿 편집기를 사용하여 사용 가능해야 합니다. 템플릿 편집기에서 사용할 수 있게 되면 다른 Experience Manager 구성 요소처럼 페이지에 구성 요소를 추가할 수 있습니다.
+>이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 템플릿 편집기를 사용하여 사용 가능해야 합니다. 템플릿 편집기에서 사용할 수 있게 되면 다른 [!DNL Experience Manager] 구성 요소에서처럼 페이지에 구성 요소를 추가할 수 있습니다.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -169,7 +169,7 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
    [장치 픽셀 비율 최적화 정보](/help/assets/dynamic-media/imaging-faq.md#dpr)를 참조하십시오.
 
-   모든 Adobe Experience Manager Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
+   모든 [!DNL Experience Manager] Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
 
    **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
    * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;가 선택됩니다.
@@ -247,7 +247,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
    [장치 픽셀 비율 최적화 정보](/help/assets/dynamic-media/imaging-faq.md#dpr)를 참조하십시오.
 
-   모든 Adobe Experience Manager Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
+   모든 [!DNL Experience Manager] Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
 
    **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
 
