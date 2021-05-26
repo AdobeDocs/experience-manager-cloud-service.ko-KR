@@ -2,14 +2,20 @@
 title: 이제 사용되지 않는 기능과 제거된 기능
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 사용 중단되거나 제거된 기능에 관한 릴리스 노트입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
+source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 44%
+source-wordcount: '484'
+ht-degree: 41%
 
 ---
 
 # 이제 사용되지 않는 기능과 제거된 기능 {#deprecated-and-removed-features}
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_deprecated_features"
+>title="AEM as a Cloud Service에서 사용이 중단되거나 제거된 기능"
+>abstract="AEM as a Cloud Service에는 클라우드 기반의 배포 모델이 있습니다. 특정 기능과 기능은 클라우드 기반의 대응 기능으로 개선되었으며 이 탭에는 해당 기능이 표시됩니다."
+
 
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다. 또한 [!DNL Adobe Experience Manager] 은(는) 클라우드 기반의 배포 모델을 제공하므로 특정 기능과 기능은 클라우드 기반의 대응 기능으로 대체되었습니다.[!DNL Cloud Service]
 
