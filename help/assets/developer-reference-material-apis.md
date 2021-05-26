@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,자산 HTTP API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
+source-git-commit: 5243b02a8168da82674989b9f5abb65af6613096
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1420'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 2%
 
 ## 자산 업로드 {#asset-upload}
 
-[!DNL Experience Manager]에서 [!DNL Cloud Service] HTTP API를 사용하여 자산을 클라우드 저장소에 직접 업로드할 수 있습니다. 이진 파일을 업로드하는 단계는 다음과 같습니다.
+[!DNL Experience Manager]에서 [!DNL Cloud Service] HTTP API를 사용하여 자산을 클라우드 저장소에 직접 업로드할 수 있습니다. 이진 파일을 업로드하는 단계는 다음과 같습니다. [!DNL Experience Manager] JVM이 아닌 외부 애플리케이션에서 이러한 단계를 실행합니다.
 
 1. [HTTP 요청을 제출합니다](#initiate-upload). 새 바이너리를 업로드하려면 [!DNL Experience Manage]에 대한 배포를 알려 줍니다.
 1. [상기 초기화 요청](#upload-binary) 에서 제공하는 하나 이상의 URI에 상기 바이너리의 컨텐츠를 POST.
