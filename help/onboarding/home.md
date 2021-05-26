@@ -2,14 +2,14 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 33%
+source-wordcount: '962'
+ht-degree: 19%
 
 ---
 
-# Experience Manager as a Cloud Service에 온보딩{#aem-onboarding-guide}
+# [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}에 온보딩
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
@@ -58,31 +58,31 @@ Cloud Manager에 추가된 사용자를 할당된 역할에 가져오려면 Adob
 **[Cloud Manager로 이동](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
 사용자로 추가되고 Cloud Manager 역할에 할당되었으므로 Cloud Manager에 액세스하여 AEM에서 클라우드 여정을 시작할 수 있습니다. 사용자는 [프로그램 만들기](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [환경 추가](/help/implementing/cloud-manager/manage-environments.md), [Git](/help/implementing/cloud-manager/accessing-git.md) 액세스, [파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md) 및 [코드 배포](/help/implementing/cloud-manager/deploy-code.md)와 같은 다양한 작업을 수행할 준비가 되어 있습니다.
-Cloud Manager는 AEM as a Cloud Service의 중요한 부분입니다. 조직에서 자체적으로 클라우드에서 Experience Manager을 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다. 사용자 인터페이스를 사용하여 CI/CD 파이프라인을 구성하고 시작할 수 있습니다.
+Cloud Manager는 AEM as a Cloud Service의 중요한 부분입니다. 조직에서 자체적으로 클라우드에서 [!DNL Experience Manager]을 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다. 사용자 인터페이스를 사용하여 CI/CD 파이프라인을 구성하고 시작할 수 있습니다.
 
 **[AEM 인스턴스에 사용자 액세스 권한 부여](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 시스템 관리자 또는 환경을 만든 사용자가 다른 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여할 수 있는 방법을 알려면 이 섹션을 따르십시오.
 
-## Experience Manager as a Cloud Service 안내서 {#aem-guides}
+## [!DNL Experience Manager as a Cloud Service] 안내서  {#aem-guides}
 
 | 사용 안내서 | 설명 |
 |---|---|
 | [Experience Manager as a Cloud Service 홈](/help/landing/home.md) | Experience Manager as a Cloud Service 설명서에 대한 개요를 살펴보려면 여기에서 시작하십시오. |
-| [개요](/help/overview/home.md) | 이 안내서에서는 Experience Manager as a Cloud Service 소개, 용어 등 개요를 제공합니다. |
-| [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다. |
-| [핵심 개념](/help/core-concepts/home.md) | 이 안내서에서는 이 새로운 서비스의 아키텍처를 포함하여 Experience Manager as a Cloud Service의 핵심 개념을 소개합니다. |
-| [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다. |
-| [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
-| [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
+| [개요](/help/overview/home.md) | 이 안내서에서는 [!DNL Experience Manager as a Cloud Service] 소개, 용어 등 개요를 제공합니다. |
+| [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 [!DNL Experience Manager as a Cloud Service] 의 최신 릴리스에 대한 중요 정보를 제공합니다. |
+| [핵심 개념](/help/core-concepts/home.md) | 이 안내서에서는 새 서비스의 아키텍처를 포함하여 [!DNL Experience Manager as a Cloud Service]의 핵심 개념을 소개합니다. |
+| [보안 사용 안내서](/help/security/home.md) | [!DNL Experience Manager as a Cloud Service]에 대한 중요한 보안 항목에 대해 알아봅니다. |
+| [사이트 사용 안내서](/help/sites-cloud/home.md) | [!DNL Experience Manager Sites] 을 Cloud Service으로 작성하고 관리하는 방법을 이해합니다. |
+| [자산 사용 안내서](/help/assets/home.md) | [!DNL Experience Manager Assets as a Cloud Service] 사용 및 관리 방법을 이해합니다. |
 | [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다 |
 | [구현 사용 안내서](/help/implementing/home.md) | 이러한 개발 및 배포 항목을 탐색하여 AEM의 강력한 기능을 사용하여 경험을 만들고 사용자 지정하는 방법을 이해합니다. |
 | [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 헤드리스 기능을 통해 안내식 여정을 탐색하여 첫 번째 헤드리스 프로젝트를 준비할 수 있습니다. |
-| [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
-| [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
-| [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM as a Cloud Service에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [커넥터 사용 안내서](/help/connectors/home.md) | 커넥터를 [!DNL Experience Manager as a Cloud Service]에 통합하는 방법을 알아봅니다. |
+| [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 [!DNL Experience Manager as a Cloud Service] 의 백엔드 작업에 대해 알아봅니다. |
+| [상거래 사용 안내서](/help/commerce-cloud/home.md) | [!DNL Experience Manager as a Cloud Service]의 Commerce Integration Framework에 대해 알아봅니다. |
 
-## 기타 Experience Manager 리소스 {#other-resources}
+## 기타 [!DNL Experience Manager] 리소스 {#other-resources}
 
 * [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
