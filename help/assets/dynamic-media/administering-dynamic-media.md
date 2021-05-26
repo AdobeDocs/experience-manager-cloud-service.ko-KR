@@ -4,10 +4,10 @@ description: Dynamic Media을 설정하려면 Dynamic Media을 구성하고 이�
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 20%
+source-wordcount: '177'
+ht-degree: 21%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->This documentation describes Dynamic Media capabilites, which are integrated directly into Experience Manager. If you are using Dynamic Media Classic (previously called Scene7) integrated into Experience Manager, see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
+>This documentation describes Dynamic Media capabilites, which are integrated directly into [!DNL Experience Manager]. If you are using Dynamic Media Classic (previously called Scene7) integrated into [!DNL Experience Manager], see [Dynamic Media Classic integration documentation](/help/sites-cloud/administering/integrating-scene7.md).
 >
->See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use Experience Manager integrated with Dynamic Media Classic along with Dynamic Media.
+>See [Dual Use Scenario](/help/sites-cloud/administering/integrating-scene7.md#dual-use-scenario) for times when you may want to use [!DNL Experience Manager] integrated with Dynamic Media Classic along with Dynamic Media.
 
 -->
 
@@ -41,5 +41,5 @@ Dynamic Media을 관리하는 경우 다음 항목이 관심사로 표시됩니�
 >
 >**업그레이드하는 경우:**
 >
->* Adobe Experience Manager을 실행 중이면 업로드하는 모든 자산이 자동으로 Dynamic Media을 활성화합니다(시스템 관리자가 명시적으로 비활성화한 경우 제외). Experience Manager의 업그레이드된 인스턴스에 있고 Dynamic Media으로 새로 시작하는 경우 자산을 재처리하여 Dynamic Media을 사용하도록 설정해야 할 가능성이 있습니다. [폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
+>* Adobe [!DNL Experience Manager]을(를) 실행 중이면 업로드하는 모든 자산에서 Dynamic Media이 자동으로 활성화됩니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). [!DNL Experience Manager] 의 업그레이드된 인스턴스이고 Dynamic Media을 처음 사용하는 경우 자산을 재처리하여 Dynamic Media을 사용하도록 설정해야 할 것입니다. [폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
 
