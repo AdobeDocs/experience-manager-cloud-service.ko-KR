@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,자산 HTTP API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1407'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 2%
 ![직접 이진 업로드 프로토콜 개요](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-[!DNL Experience Manager] JVM이 아닌 외부 애플리케이션에서 이러한 단계를 실행합니다.
+[!DNL Experience Manager] JVM이 아닌 외부 애플리케이션에서 위의 단계를 실행합니다.
 
 이 접근 방법에서는 자산 업로드를 보다 확장 가능하고 성능적으로 처리할 수 있습니다. [!DNL Experience Manager] 6.5와 비교한 차이점은 다음과 같습니다.
 
