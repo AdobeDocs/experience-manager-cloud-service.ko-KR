@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 자산 HTTP API,API
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
@@ -27,7 +27,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 >[!NOTE]
 >
->일반적으로 자산 또는 바이너리 업로드 또는 업데이트와 관련된 모든 API 호출은 [!DNL Experience Manager] 배포에 대해 [!DNL Cloud Service] 배포로 더 이상 사용되지 않습니다. 바이너리를 업로드하려면 [다이렉트 이진 업로드 API](developer-reference-material-apis.md#asset-upload-technical)를 대신 사용하십시오.
+>일반적으로 자산 또는 바이너리 업로드 또는 업데이트와 관련된 모든 API 호출은 [!DNL Experience Manager] 배포에 대해 [!DNL Cloud Service] 배포로 더 이상 사용되지 않습니다. 바이너리를 업로드하려면 [다이렉트 이진 업로드 API](developer-reference-material-apis.md#asset-upload)를 대신 사용하십시오.
 
 ## 콘텐츠 조각 {#content-fragments}
 
