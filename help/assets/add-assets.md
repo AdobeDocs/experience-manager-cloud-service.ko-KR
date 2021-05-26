@@ -4,7 +4,7 @@ description: 디지털 자산을 [!DNL Adobe Experience Manager] 에 [!DNL Cloud
 feature: 자산 관리,업로드
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -128,7 +128,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 더 많은 파일을 업로드하려면 다음 방법 중 하나를 사용합니다. 또한 [사용 사례 및 메서드](#upload-methods-comparison)를 참조하십시오
 
-* [자산 업로드 API](developer-reference-material-apis.md#asset-upload-technical):필요한 경우 API를 활용하는 사용자 지정 업로드 스크립트 또는 도구를 사용하여 자산을 추가로 처리(예: 메타데이터 번역 또는 파일 이름 변경)합니다.
+* [자산 업로드 API](developer-reference-material-apis.md#asset-upload):필요한 경우 API를 활용하는 사용자 지정 업로드 스크립트 또는 도구를 사용하여 자산을 추가로 처리(예: 메타데이터 번역 또는 파일 이름 변경)합니다.
 * [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):로컬 파일 시스템에서 자산을 업로드하는 크리에이티브 전문가 및 마케터에게 유용합니다. 로컬에서 사용할 수 있는 중첩된 폴더를 업로드하려면 이 방법을 사용합니다.
 * [대량 수집 도구](#asset-bulk-ingestor):자산을 배포할 때 가끔 또는 처음에 대량의 자산을 섭취할 때 사용합니다 [!DNL Experience Manager].
 
@@ -209,7 +209,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## API {#upload-using-apis}를 사용하여 자산 업로드 또는 수집
 
-업로드 API 및 프로토콜에 대한 기술 세부 사항, 오픈 소스 SDK 및 샘플 클라이언트에 대한 링크는 개발자 참조의 [자산 업로드](developer-reference-material-apis.md#asset-upload-technical) 섹션에 제공됩니다.
+업로드 API 및 프로토콜에 대한 기술 세부 사항, 오픈 소스 SDK 및 샘플 클라이언트에 대한 링크는 개발자 참조의 [자산 업로드](developer-reference-material-apis.md#asset-upload) 섹션에 제공됩니다.
 
 ## 팁, 우수 사례 및 제한 사항 {#tips-limitations}
 
@@ -231,5 +231,5 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >* [[!DNL Adobe Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [정보 [!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [자산 업로드에 대한 기술 참조](developer-reference-material-apis.md#asset-upload-technical)
+>* [자산 업로드에 대한 기술 참조](developer-reference-material-apis.md#asset-upload)
 
