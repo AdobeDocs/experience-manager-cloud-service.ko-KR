@@ -2,10 +2,10 @@
 title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 37e431d70bc7e11097b9d59faed4b654b9087656
+source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '947'
+ht-degree: 3%
 
 ---
 
@@ -43,12 +43,6 @@ ht-degree: 0%
 * 곧 새 [미리 보기 계층](/help/sites-cloud/authoring/fundamentals/previewing-content.md)에서 콘텐츠를 확인하여 게시 계층에서 수행한 최종 경험 모양과 느낌을 시뮬레이션할 수 있습니다. 이 기능은 AEM Sites 관리 게시 마법사에서 활성화됩니다. 이 마법사를 사용하면 이제 게시 또는 미리 보기 간에 게시 대상을 선택할 수 있습니다. 그런 다음 미리 보기에서 경험에 전용 URL을 통해 액세스할 수 있습니다. 미리 보기에서 유효성 검사 후 평소대로 컨텐츠를 작성자에서 게시로 게시할 수 있습니다. AEM에서 Cloud Service 환경으로 미리 보기 서비스를 활성화하는 것은 다음 몇 주 후에 점진적으로 롤아웃됩니다.
 
 ## [!DNL Adobe Experience Manager Assets]로서의 [!DNL Cloud Service]  {#assets}
-
-### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
-
-* 링크 공유 기능을 사용하여 공유된 자산을 다운로드할 수 있습니다. 이제 이 다운로드에서는 매우 큰 다운로드에서도 빠르고 중단되지 않은 다운로드를 제공하는 비동기 서비스를 사용합니다. [자산 다운로드](/help/assets/download-assets-from-aem.md#link-share-download)를 참조하십시오.
-
-   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
 
 ### 사전 릴리스 채널 {#what-is-new-assets-prerelease}에서 사용할 수 있는 새로운 기능
 
