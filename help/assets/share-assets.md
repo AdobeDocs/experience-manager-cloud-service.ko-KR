@@ -1,14 +1,14 @@
 ---
-title: 링크로 자산, 폴더 및 컬렉션 공유
-description: 이 문서에서는 [!DNL Experience Manager Assets] 에서 자산, 폴더 및 컬렉션을 하이퍼링크로 공유하는 방법에 대해 설명합니다.
+title: 자산, 폴더 및 컬렉션 분배 및 공유
+description: 링크로 공유, 다운로드 및 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]을 통해 공유와 같은 방법을 사용하여 디지털 자산을 배포합니다.
 contentOwner: AG
 feature: 자산 관리,공동 작업,자산 분배
 role: Business Practitioner,Administrator
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager Assets] 자산, 폴더 및 컬렉션을 조직 및 외부 엔티티(파트너 및 공급업체 등)의 멤버와 공유할 수 있습니다. 다음 메서드를 사용하여 [!DNL Experience Manager Assets]의 자산을 [!DNL Cloud Service](으)로 공유하십시오.
 
-* 링크로 공유.
+* [링크로 공유](#sharelink).
 * [자산](/help/assets/download-assets-from-aem.md) 을 다운로드하여 별도로 공유할 수 있습니다.
 * [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)을 사용하여 공유합니다.
 * [[!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)을 사용하여 공유합니다.
@@ -26,10 +26,12 @@ ht-degree: 2%
 
 사용자와 공유할 자산의 URL을 생성하려면 링크 공유 대화 상자를 사용합니다. 관리자 권한이 있거나 `/var/dam/share` 위치에 읽기 권한이 있는 사용자는 자신과 공유된 링크를 볼 수 있습니다. 링크를 통해 자산을 공유하는 것은 먼저 [!DNL Assets]에 로그인하지 않고도 외부 당사자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다.
 
+![링크 공유 대화 상자](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* 링크로 공유할 폴더 또는 자산에 대한 ACL 편집 권한이 필요합니다.
->* 사용자와 링크를 공유하기 전에 [아웃바운드 이메일이 활성화](/help/implementing/developing/introduction/development-guidelines.md#sending-email)되었는지 확인하십시오. 그렇지 않으면 오류가 발생합니다.
+>* 사용자와 링크를 공유하기 전에 [아웃바운드 이메일](/help/implementing/developing/introduction/development-guidelines.md#sending-email)을 활성화합니다. 그렇지 않으면 오류가 발생합니다.
 
 
 1. [!DNL Assets] 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
