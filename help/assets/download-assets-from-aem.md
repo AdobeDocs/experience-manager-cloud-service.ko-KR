@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 자산 관리
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -24,8 +24,9 @@ ht-degree: 0%
 
 다음 방법을 사용하여 Experience Manager 자산을 다운로드할 수 있습니다.
 
+<!-- * [Link Share](#link-share-download) -->
+
 * [Experience Manager 사용자 인터페이스](#download-assets)
-* [공유 링크](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -65,15 +66,17 @@ ht-degree: 0%
 
 1. 대화 상자에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
-## 링크 공유 {#link-share-download}를 사용하여 공유된 자산 다운로드
+<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
+## Download assets shared using link sharing {#link-share-download}
 
-링크를 사용하여 자산을 공유하는 것은 관심 있는 사람이 [!DNL Assets]에 처음 로그인하지 않고도 이용할 수 있도록 하는 편리한 방법입니다. 자산을 공유할 URL을 생성하려면 [링크 공유 기능](/help/assets/share-assets.md#sharelink)을 사용하십시오.
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
-사용자가 공유 링크에서 자산을 다운로드할 때 [!DNL Assets]은(는) 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 매우 큰 다운로드의 경우 다운로드가 100GB의 파일로 청크됩니다.
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
 
-받은 편지함은 각 아카이브의 처리 상태를 표시합니다. 처리가 완료되면 받은 편지함에서 아카이브를 다운로드할 수 있습니다.
+The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
-![받은 편지함 다운로드](assets/download-inbox.png)
+![Download inbox](assets/download-inbox.png)
+-->
 
 ## 자산 다운로드 서블릿 {#enable-asset-download-servlet} 활성화
 
