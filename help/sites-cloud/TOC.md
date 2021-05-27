@@ -6,10 +6,10 @@ breadcrumb-title: 작성 안내서
 user-guide-description: Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다.
 feature: 작성
 role: Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 74%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 74%
       + [페이지 컨텐츠 편집](authoring/fundamentals/editing-content.md)
       + [리치 텍스트 편집기](authoring/fundamentals/rich-text-editor.md)
       + [페이지 속성](authoring/fundamentals/page-properties.md)
+      + [컨텐츠 미리 보기](authoring/fundamentals/previewing-content.md)
       + [페이지 게시](authoring/fundamentals/publishing-pages.md)
       + [콘텐츠 조각](authoring/fundamentals/content-fragments.md)
       + [경험 구성요소](authoring/fundamentals/experience-fragments.md)
