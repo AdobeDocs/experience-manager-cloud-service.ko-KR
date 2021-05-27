@@ -5,16 +5,16 @@ contentOwner: AG
 feature: 자산 관리
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Experience Manager] {#download-assets-from-aem}에서 자산 다운로드
 
-정적 및 동적 표현물을 포함한 자산을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 자산에 대한 링크가 있는 이메일을 보낼 수 있습니다. 다운로드한 자산은 ZIP 파일에 번들로 제공됩니다. 압축 ZIP 파일의 최대 파일 크기는 내보내기 작업의 1GB입니다. 내보내기 작업당 최대 500개의 총 자산이 허용됩니다.
+정적 및 동적 표현물을 포함한 자산을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 자산에 대한 링크가 있는 이메일을 보낼 수 있습니다. 다운로드한 자산은 ZIP 파일에 번들로 제공됩니다.<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ ht-degree: 4%
 다음 방법을 사용하여 Experience Manager 자산을 다운로드할 수 있습니다.
 
 * [Experience Manager 사용자 인터페이스](#download-assets)
+* [공유 링크](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -63,6 +64,16 @@ ht-degree: 4%
    | **[!UICONTROL 동적 렌디션]** | 일련의 대체 표현물을 실시간으로 생성하려면 이 옵션을 선택합니다. 이 옵션을 선택하는 경우 [이미지 사전 설정](/help/assets/dynamic-media/image-presets.md) 목록에서 선택하여 동적으로 만들 표현물도 선택합니다. <br>또한 측정 크기 및 단위, 형식, 색상 공간, 해상도 및 이미지 반전 등의 선택적 이미지 수정자를 선택할 수 있습니다. 이 옵션은 [!DNL Dynamic Media] 이 활성화된 경우에만 사용할 수 있습니다. |
 
 1. 대화 상자에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
+
+## 링크 공유 {#link-share-download}를 사용하여 공유된 자산 다운로드
+
+링크를 사용하여 자산을 공유하는 것은 관심 있는 사람이 [!DNL Assets]에 처음 로그인하지 않고도 이용할 수 있도록 하는 편리한 방법입니다. 자산을 공유할 URL을 생성하려면 [링크 공유 기능](/help/assets/share-assets.md#sharelink)을 사용하십시오.
+
+사용자가 공유 링크에서 자산을 다운로드할 때 [!DNL Assets]은(는) 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 매우 큰 다운로드의 경우 다운로드가 100GB의 파일로 청크됩니다.
+
+받은 편지함은 각 아카이브의 처리 상태를 표시합니다. 처리가 완료되면 받은 편지함에서 아카이브를 다운로드할 수 있습니다.
+
+![받은 편지함 다운로드](assets/download-inbox.png)
 
 ## 자산 다운로드 서블릿 {#enable-asset-download-servlet} 활성화
 
