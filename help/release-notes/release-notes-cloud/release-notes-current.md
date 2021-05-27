@@ -2,9 +2,9 @@
 title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -61,9 +61,9 @@ ht-degree: 3%
 * 매우 큰 파일을 업로드하면 [!DNL Experience Manager desktop app]에 충돌이 발생합니다. (CQ-4320942)
 * 도구 모음 옵션은 폴더 내에서 동일한 컬렉션을 선택하고 검색 결과에서 선택되면 다릅니다. (CQ-4321406)
 
-#### Dynamic Media {#what-is-new-dm}의 새로운 기능
+#### [!DNL Dynamic Media] {#what-is-new-dm}의 새로운 기능
 
-* 스마트 이미징 DPR(Device Pixel Ratio) 및 네트워크 대역폭 최적화를 사용하면 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 고품질 이미지를 효율적으로 제공할 수 있습니다. 자세한 내용은 [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md)를 참조하십시오.
+* DPR(Smart Imaging Device Pixel Ratio) 및 네트워크 대역폭 최적화를 사용하면 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 최상의 품질의 이미지를 효율적으로 제공할 수 있습니다. [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md)를 참조하십시오.
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ ht-degree: 3%
    * 아시아 태평양 2021년 7월 19일
 
 
-* Dynamic Media 게재에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다(fmt URL 수정자).
+* [!DNL Dynamic Media] 게재에서 다음 세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다(fmt URL 수정자).
 
    >[!NOTE]
    >
