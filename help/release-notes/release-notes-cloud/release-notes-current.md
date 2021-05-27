@@ -2,10 +2,10 @@
 title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
+source-git-commit: 37e431d70bc7e11097b9d59faed4b654b9087656
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,128 +23,85 @@ ht-degree: 2%
 
 ## 릴리스 날짜 {#release-date}
 
-Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 2021년 5월 6일입니다.
-다음 릴리스(2021.5.0)는 2021년 5월 27일에 제공됩니다.
+[!DNL Adobe Experience Manager] as a 2021.5.0 Cloud Service의 출시일은 2021년 5월 27일입니다.
+다음 릴리스(2021.6.0)는 2021년 6월 24일에 있습니다.
 
-## AEM as a Cloud Service 기반{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service 기반 {#foundation}
 
-### 새로운 기능 {#what-is-new-foundation}
+### AEM as a Cloud Service 기초 {#what-is-new-foundation} 의 새로운 기능
 
-* [컨텐츠 트리 게시 워크플로우](/help/operations/replication.md#publish-content-tree-workflow)  - 새로운 워크플로우 모델 및 단계는 컨텐츠 계층 구조를 게시할 때 향상된 성능을 제공합니다.
+* [사전 릴리스 채널](/help/release-notes/prerelease.md):프로덕션에서 라이브로 전환되기 전에 한 달 동안 예정된 기능을 미리 봅니다!
+
+* [API 사용 중단](/help/release-notes/deprecated-apis.md):더 이상 사용되지 않는 최신 AEM as a Cloud Service 목록 을 사용할 수 있습니다.
+
+* [AEM as a Cloud Service SDK Build Analyzer Maven 플러그인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html):더 이상 사용되지 않는 Java API 확인 및 기타 개선 사항이 포함된 전문 프로젝트를 최신 버전으로 업데이트합니다.
 
 ## [!DNL Adobe Experience Manager Sites]로서의 [!DNL Cloud Service]  {#sites}
 
 ### [!DNL Sites] {#what-is-new-sites}의 새로운 기능
 
-* GraphQL 엔드포인트 - 이제 개별 AEM Sites 구성에 대해 AEM GraphQL API를 활성화하고 새 GraphQL 콘솔 UI를 사용하여 해당 구성에 대한 사용자 지정 GraphQL 엔드포인트를 만들 수 있습니다. 또한 UI에서 GraphQL 엔드포인트를 관리할 수 있습니다.
-
-* 컨텐츠 모델, 향상된 날짜 및 시간 데이터 유형 - 이제 날짜 및 시간 날짜 유형만 작성하여 날짜, 시간 또는 날짜 및 시간 정보만 작성할 수 있도록 구성할 수 있습니다.
-
-* 컨텐츠 모델, 향상된 태그 데이터 유형 - 이제 태그 데이터 유형을 구성하여 단일 또는 여러 태그를 작성할 수 있습니다.
-
-* 컨텐츠 모델, 새 탭 자리 표시자 데이터 유형 - 새 탭 자리 표시자 데이터 유형을 컨텐츠 조각 편집기에서 탭 아래에 렌더링될 섹션으로 그룹화할 수 있습니다.
-
-### [!DNL Sites] {#bug-fixes-sites}에 버그 수정
-
-* 컨텐츠 조각 - 이제 컨텐츠 조각 또는 폴더를 이동하면 조각 내의 중첩된 참조가 업데이트됩니다(CQ-4320815)
-
-* GraphQL - 지속된 쿼리는 이제 AEM Sites 구성에만 적용되는 사용자 정의 종단점을 지원합니다(CQ-4315928)
+* 곧 새 [미리 보기 계층](/help/sites-cloud/authoring/fundamentals/previewing-content.md)에서 콘텐츠를 확인하여 게시 계층에서 수행한 최종 경험 모양과 느낌을 시뮬레이션할 수 있습니다. 이 기능은 AEM Sites 관리 게시 마법사에서 활성화됩니다. 이 마법사를 사용하면 이제 게시 또는 미리 보기 간에 게시 대상을 선택할 수 있습니다. 그런 다음 미리 보기에서 경험에 전용 URL을 통해 액세스할 수 있습니다. 미리 보기에서 유효성 검사 후 평소대로 컨텐츠를 작성자에서 게시로 게시할 수 있습니다. AEM에서 Cloud Service 환경으로 미리 보기 서비스를 활성화하는 것은 다음 몇 주 후에 점진적으로 롤아웃됩니다.
 
 ## [!DNL Adobe Experience Manager Assets]로서의 [!DNL Cloud Service]  {#assets}
 
 ### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
 
-* [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 개선 사항을 통해 더 빨리 다운로드할 수 있습니다. [자산 다운로드](/help/assets/download-assets-from-aem.md)를 참조하십시오.
+* 링크 공유 기능을 사용하여 공유된 자산을 다운로드할 수 있습니다. 이제 이 다운로드에서는 매우 큰 다운로드에서도 빠르고 중단되지 않은 다운로드를 제공하는 비동기 서비스를 사용합니다. [자산 다운로드](/help/assets/download-assets-from-aem.md#link-share-download)를 참조하십시오.
 
-* linkshare 옵션을 통해 자산을 다운로드할 때 렌디션을 다운로드하도록 선택하거나 다운로드하지 않도록 선택할 수 있습니다. 이전에는 모든 자산 표현물이 다운로드되었습니다. [다운로드 옵션](/help/assets/download-assets-from-aem.md)을 참조하십시오.
+   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
 
-* 상태 검사를 실행하여 자산을 일괄적으로 가져올 때 이제 Experience Manager에서 실패 이유에 대한 자세한 정보를 제공합니다. [일괄 자산 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
+### 사전 릴리스 채널 {#what-is-new-assets-prerelease}에서 사용할 수 있는 새로운 기능
 
-* 벌크 가져오기 도구를 사용하여 자산을 가져올 때 이제 관리자는 가져오기가 성공하면 소스 파일을 삭제할 수 있습니다. [일괄 자산 수집](/help/assets/add-assets.md#asset-bulk-ingestor)을 참조하십시오.
+* 메타데이터 스키마는 폴더 속성에 직접 적용할 수 있습니다.
 
-* 메타데이터 스키마를 편집할 때 새로운 루트 경로 선택기 필드를 사용하면 관리자가 빠르고 쉽게 선택할 수 있습니다. 이 개선 사항을 통해 메타데이터 구성 시간을 줄일 수 있습니다.
+   ![폴더 속성에서 메타데이터 스키마 추가](/help/assets/assets/metadata-schema-folder-properties.png)
 
-* 많은 자산의 메타데이터를 CSV 파일을 사용하여 일괄적으로 가져올 수 있으며 CSV 파일로 내보낼 수 있습니다. 기본 날짜 형식은 이제 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`입니다. 열 헤더를 업데이트하여 다른 형식을 활용할 수 있습니다. 예를 들어 `Date` 라는 단어 대신 CSV 파일의 열 헤더로 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 을 추가합니다. [메타데이터 가져오기](/help/assets/metadata-import-export.md)를 참조하십시오.
+* 자산 일괄 수집 도구를 사용하여 일괄 수집 중에 메타데이터를 추가할 수 있습니다.
 
-* 열 보기에서 자산을 검색할 때 시각적 표시기에 각 자산의 승인 또는 거부 상태가 표시됩니다.
+* 사용자 경험 개선 사항은 폴더에 있는 자산 수를 표시합니다. 폴더에 있는 자산이 1000개 이상인 경우 [!DNL Assets]에 1000 이상이 표시됩니다.
 
-* 열 보기에서 자산을 검색할 때 만료된 자산에 대해 시각적 표시기가 표시됩니다.
+   ![인터페이스에 폴더의 자산 수가 표시됩니다](/help/assets/assets/browse-folder-number-of-assets.png)
 
-* [!DNL Assets] 메타데이터 편집기에서 텍스트 영역 데이터 유형을 사용할 수 있습니다. 이 옵션을 사용하여 사용자가 자유 형식 텍스트 필드에 메타데이터를 입력할 수 있습니다.
+### [!DNL Assets] {#assets-bugs-fixed}에 수정된 버그
 
-### [!DNL Assets] {#bug-fixes-assets}에 버그 수정
+* 매우 큰 파일을 업로드하면 [!DNL Experience Manager desktop app]에 충돌이 발생합니다. (CQ-4320942)
+* 도구 모음 옵션은 폴더 내에서 동일한 컬렉션을 선택하고 검색 결과에서 선택되면 다릅니다. (CQ-4321406)
 
-* 여러 자산 또는 폴더를 이동하려고 하면 콘솔에 오류가 기록되고 이동 작업이 완료되지 않습니다. 제목을 업데이트할 수 없으면 이동 작업이 실패합니다. (CQ-4322080)
+#### Dynamic Media {#what-is-new-dm}의 새로운 기능
 
-* 사전 정의된 조건이 충족될 경우 메타데이터가 필수가 되지 않도록 규칙에 따라 메타데이터 필드를 숨길 수 있습니다. 그러나 이러한 숨겨진 메타데이터 필드는 필수 필드로 표시됩니다. (CQ-4321285)
+* 스마트 이미징 DPR(Device Pixel Ratio) 및 네트워크 대역폭 최적화를 사용하면 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 고품질 이미지를 효율적으로 제공할 수 있습니다. 자세한 내용은 [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md)를 참조하십시오.
 
-* 잘못된 날짜 포맷으로 인해 대량 메타데이터 가져오기에 실패합니다. (CQ-4319014)
+   >[!NOTE]
+   >
+   >위의 스마트 이미징 개선 사항에 대한 릴리스 타임라인은 다음과 같습니다.
+   >
+   >* 2021년 5월 24일 NA,
+      >
+      >
+   * 유럽, 중동 및 아프리카 2021년 6월 25일
+      >
+      >
+   * 아시아 태평양 2021년 7월 19일
 
-* 속성 페이지에서 메타데이터를 업데이트하도록 선택하면 스키마에 의해 제공되는 옵션이 많을 때 인터페이스가 느리게 응답합니다. (CQ-4318538)
 
-* 단일 행 텍스트 필드에 메타데이터 값을 업데이트하고 저장하는 동안 드롭다운 메뉴에서 편집이 비활성화된 경우에도 드롭다운 메뉴의 값이 삭제됩니다. (CQ-4317077)
+* Dynamic Media 게재에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다(fmt URL 수정자).
 
-* 생략 부호를 주석으로 사용하여 자산을 검토할 수 있습니다. 작은 타원을 사용하면 타원이 인쇄 버전의 주석 수와 겹칩니다. (CQ-4316792)
-
-## [!DNL Adobe Experience Manager Forms]로서의 [!DNL Cloud Service]  {#forms}
-
-### [!DNL Forms] {#what-is-new-forms}의 새로운 기능
-
-[AEM Forms을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)로 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, 양식을 Adobe Sign과 통합하여 양식에 전자 서명을 추가하고, Document of Record(DoR)를 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 이 서비스는 기존 PDF forms을 디지털 양식으로 전환할 수도 있습니다. 이 서비스는 표준 AEM Forms 기능 외에도 자동 크기 조정, 업그레이드에 대한 다운타임 없음, 클라우드 기반의 개발 환경과 같은 클라우드 기반의 다양한 기능을 제공합니다. AEM Forms as a Cloud Service의 기능 및 기능에 대해 알아보려면 [이 블로그 게시물](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)을 읽어 보십시오.
-
-* **Adobe Sign에서 활성화된 응용 Forms에서 정부 ID 인증 방법 사용**
-
-   고급 기계 학습 알고리즘을 기반으로 하는 Adobe Sign의 정부 ID 프로세스는 전 세계 기업을 대상으로 수신자의 ID에 대한 고품질 인증을 획득하는 기능을 제공합니다. 이제 Adobe Sign이 활성화된 적응형 Forms에서 정부 기관 ID 인증 방법을 사용할 수 있습니다.
-
-   정부 ID는 수신자에게 [정부 발급 ID 문서(운전면허증, 국가 ID, passport)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)의 이미지를 업로드하도록 지시하고, 해당 문서가 진짜인지 확인하기 위해 해당 문서를 평가하는 프리미엄 ID 인증 방법입니다.
-
-* **비동기 적응형 양식 제출을 위해 양식 서명 환경을 사용하도록 지원**
-
-   이제 비동기 적응형 양식 제출에 양식 서명 경험을 사용할 수 있습니다. 적응형 양식을 [!DNL Experience Manager Sites] 페이지에 포함하고 적응형 양식 제출을 위해 양식 서명 경험을 사용할 수도 있습니다.
-
-* **작업 할당 단계에서 적응형 양식을 미리 채우는 동안 변수를 사용하여 첨부 파일을 지정할 수 있도록 지원합니다**
-
-   작업 지정 단계에 대해 적응형 양식을 미리 채우는 동안 이제 문서 유형 변수를 사용하여 적응형 양식에 대한 입력 첨부 파일을 선택할 수 있습니다.
-
-* **리터럴 옵션을 사용하여 JSON 유형 변수에 대한 값을 설정할 수 있도록 지원합니다**
-
-   AEM Workflow의 설정 변수 단계에서 리터럴 옵션을 사용하여 JSON 유형 변수의 값을 설정할 수 있습니다. 리터럴 옵션을 사용하면 문자열 형태로 JSON을 지정할 수 있습니다.
-
-* **로컬 개발 환경을 사용하여 기록 문서(DoR) 작성**
-
-   XDP를 Cloud Service 인스턴스에서 기록 문서로 사용하고 AEM Forms을 Cloud Service SDK(로컬 개발 환경)로 사용할 수 있습니다. 이전에는 지원이 Cloud Service 인스턴스로만 제한되었습니다.
-
-### [!DNL Forms] {#bug-fixes-forms}에 버그 수정
-
-* 기록 문서를 생성하지 않도록 구성된 적응형 양식을 기록 문서를 생성하도록 구성된 AEM Workflow에 제출하면 오류 메시지가 표시되지 않고 작업을 제출할 수 없습니다.
-
-### 기타 업데이트 {#misc-2021-04-0-forms}
-
-* 컨텐츠를 더 쉽게 인식할 수 있도록 이제 서비스에서 XDP, Dynamic PDF 및 스키마 파일에 대한 라이브 축소판 그림을 생성합니다.
-* PDF 파일을 AEM Forms UI에 배치된 폴더로 이동하는 기능을 추가합니다.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### 새로운 기능 {#what-is-new-commerce}
-
-* 카테고리 UID 지원 - 카테고리 ID에 문자열을 사용하는 시스템에 대한 타사 상거래 통합을 잠금 해제합니다
-
-* PWA Studio에 대한 AEM 확장 예제 통합
-
-* WCM 탐색 코어 구성 요소를 확장하는 새 CIF 탐색 코어 구성 요소
-
-* AEM storefront의 스테이지된 카탈로그 데이터에 대한 시각적 표시기
-
-* 이제 Cloud Manager UI를 통해 상거래 종단점을 구성할 수 있습니다
-
-### 버그 수정 {#bug-fixes-commerce}
-
-* 카테고리 페이지의 페이지 속성에 있는 상거래 탭 아래에 루트 카테고리 필드가 표시되지 않았습니다
+   >[!NOTE]
+   >
+   >AVIF 지원을 위한 릴리스 타임라인은 다음과 같습니다.
+   >
+   >* 북미 2021년 5월 10일
+      >
+      >
+   * 2021년 5월 24일 유럽, 중동, 아프리카
+      >
+      >
+   * 아시아 태평양 2021년 6월 24일.
 
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.5.0 및 2021.4.0 의 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.5.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 ### 릴리스 날짜 {#release-date-cm-may}
 
@@ -185,42 +142,6 @@ AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 날짜는 2021년 5�
 
 * 샌드박스 프로그램 설정 중에 샘플 코드가 있는 프로젝트가 성공적으로 만들어지면 개요 페이지에서 Git 관리 가 대표 카드의 링크로 표시됩니다.
 
-### 릴리스 날짜 {#release-date-cm-april}
-
-AEM as a Cloud Service 2021.4.0의 Cloud Manager 릴리스 날짜는 2021년 4월 8일입니다.
-
-### 새로운 기능 {#what-is-new-april}
-
-* 프로그램 추가 및 편집 워크플로우에 대한 UI를 업데이트하여 보다 직관적으로 사용할 수 있습니다.
-
-* 이제 필요한 권한이 있는 사용자는 UI를 통해 상거래 종료 지점을 제출할 수 있습니다.
-
-* 이제 환경 변수 범위를 특정 서비스(작성자 또는 게시)로 지정할 수 있습니다. AEM 버전 `2021.03.5104.20210328T185548Z` 이상이 필요합니다.
-
-* 파이프라인이 구성되지 않은 경우에도 **Git** 관리 단추가 파이프라인 카드에 표시됩니다.
-
-* Cloud Manager에서 사용하는 AEM 프로젝트 원형 버전이 버전 27로 업데이트되었습니다.
-
-* Cloud Manager에서 만든 Adobe I/O 개발자 콘솔의 프로젝트는 더 이상 실수로 편집하거나 삭제할 수 없습니다.
-
-* 사용자가 새 환경을 추가하면 환경이 만들어지면 다른 지역으로 이동할 수 없다는 메시지가 표시됩니다.
-
-* 이제 환경 변수 범위를 특정 서비스(작성자 또는 게시)로 지정할 수 있습니다. AEM 버전 2021.03.5104.20210328T185548Z 이상이 필요합니다.
-
-* 환경이 삭제되었을 때 파이프라인을 시작할 때 오류 메시지가 명확해졌습니다.
-
-* Eclipse 프로젝트에서 제공하는 OSGi 번들은 이제 규칙 `CQBP-84--dependencies`에서 제외됩니다.
-
-### 버그 수정 {#bug-fixes-cm-april}
-
-* 파이프라인의 경험 감사 페이지를 편집할 때 슬래시 `( / )`으로 시작하는 입력 경로는 더 이상 단계가 보류 중인 상태로 고정되지 않습니다.
-
-* 새 프로덕션 파이프라인이 생성될 때 사용자가 컨텐츠 감사 무시를 추가하지 않으면 기본 홈 페이지가 감사되지 않습니다.
-
-* 다운로드 가능한 문제 CSV 파일에서 `CloudServiceIncompatibleWorkflowProcess`에 대한 문제에 잘못된 심각도가 있었습니다.
-
-* `Runmode` 검사에서 비폴더 노드에서 긍정 오류(false positive)가 발생했습니다.
-
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
 ### 릴리스 날짜 {#release-date-ctt}
@@ -237,14 +158,14 @@ AEM as a Cloud Service 2021.4.0의 Cloud Manager 릴리스 날짜는 2021년 4�
 * 컨텐츠 전송 도구 UI의 자동 새로 고침 기능과 관련된 여러 버그 수정.
 * `wipe=true`이 있는 컨텐츠 전송 도구가 타겟에 잘못된 카운터 인덱스를 만들었습니다. 이 문제가 수정되었습니다.
 
-## 우수 사례 분석기 {#best-practices-analyzer}
+## 상거래 추가 기능 {#cloud-services-commerce}
 
-### 릴리스 날짜 {#release-date-bpa}
+### 새로운 기능 {#what-is-new-commerce}
 
-Best Practices Analyzer v2.1.12 릴리스 날짜는 2021년 4월 12일입니다.
+* 제품 콘솔 속성의 관련 콘텐츠에 대한 페이지 매김 지원
 
-### 버그 수정 {#bug-fixes-bpa-april}
+### 버그 수정 {#bug-fixes-commerce}
 
-* 보고된 BPA에 중복 행이 발견되었습니다. 이 문제가 수정되었습니다.
-* AEM 버전 6.4.2의 BPA UI에서 보고서 생성 단추를 비활성화하는 JS 오류가 발생했습니다. 이 문제가 해결되었습니다
+* 제품 속성의 자산 탭에 자산 축소판이 표시되지 않음
 
+* 탐색 표시 는 제품 콘솔에서 미리 보기 데이터를 재설정합니다
