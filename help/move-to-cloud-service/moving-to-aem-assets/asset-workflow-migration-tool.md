@@ -2,10 +2,10 @@
 title: 자산 워크플로우 마이그레이션 도구
 description: 자산 워크플로우 마이그레이션 도구
 exl-id: 18490295-ead6-4691-8983-a6d4054e4264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 46%
+source-wordcount: '276'
+ht-degree: 29%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 46%
 * `NUI_MIGRATED`:asset compute 서비스의  [처리 프로필로 마이그레이션되었습니다](/help/assets/asset-microservices-configure-and-use.md).
 * `UNSUPPORTED`:현재 은 Cloud Service [!DNL Experience Manager Assets] 로 지원되지 않습니다.
 
-## 자산 워크플로우 마이그레이션 도구 설치 {#installing-tool}
+## 자산 워크플로우 마이그레이션 도구 사용 {#use-workflow-migrator}
 
-**[Git 리소스: AEM Assets as a Cloud Service - 워크플로우 마이그레이션](https://github.com/adobe/aem-cloud-migration)**&#x200B;을 참조하여 소스에서 코드 설치 및 빌드에 대해 알아보십시오.
+* **[!DNL Adobe I/O]CLI**:Adobe은 를 통해  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] CLI용  [!DNL Cloud Service] 코드 리팩터링 플러그인 [!DNL Adobe I/O] 으로) 자산 워크플로우 마이그레이션 도구를 사용하는 것을 권장합니다. 플러그인을 설치하고 사용하는 방법에 대해 알아보려면 [Git 리소스 를 참조하십시오.aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
+
+* **독립형 유틸리티**:자산 워크플로우 마이그레이션 도구는 독립형 유틸리티로 실행할 수도 있습니다. 소스에서 코드 설치 및 빌드에 대한 자세한 내용은 **[Git 리소스: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - 워크플로우 마이그레이션](https://github.com/adobe/aem-cloud-migration)**&#x200B;을 참조하십시오.
