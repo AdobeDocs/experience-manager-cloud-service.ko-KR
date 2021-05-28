@@ -4,7 +4,7 @@ description: 디지털 자산을 [!DNL Adobe Experience Manager] 에 [!DNL Cloud
 feature: 자산 관리,업로드
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -217,7 +217,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * Adobe은 [!DNL Experience Manager Assets]의 각 폴더에 1000개 이하의 자산을 추가할 것을 권장합니다. 폴더에 자산을 더 추가할 수 있지만, 해당 폴더에 대한 탐색 속도가 느려지는 등의 성능 문제가 발생할 수 있습니다.
 
-* [!UICONTROL 이름 충돌] 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다. [자산 통찰력](/help/assets/assets-insights.md)이 활성화되어 [!DNL Adobe Analytics]로 노출 또는 클릭을 추적하는 경우, 재생성된 자산 ID는 [!DNL Analytics]에서 자산에 대해 캡처된 데이터를 무효화합니다.
+* [!UICONTROL 이름 충돌] 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다. [Assets Insights](/help/assets/assets-insights.md)가 [!DNL Adobe Analytics]로 노출 또는 클릭을 추적하도록 활성화된 경우, 재생성된 자산 ID는 [!DNL Analytics]에서 자산에 대해 캡처된 데이터를 무효화합니다.
 
 * 일부 업로드 방법에서는 파일 이름에 [사용할 수 없는 문자](#filename-handling)가 있는 자산을 업로드하는 것을 중지하지 않습니다. 문자는 `-` 기호로 바뀝니다.
 
