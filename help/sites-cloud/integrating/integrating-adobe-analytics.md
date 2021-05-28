@@ -4,9 +4,9 @@ description: 'Adobe Analytics와 통합 '
 feature: 관리
 role: Administrator
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '532'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 Adobe Analytics과 AEM as a Cloud Service을 통합하여 웹 페이지 활동을 추적할 수 있습니다. 통합에는 다음이 필요합니다.
 
 * touch UI를 사용하여 AEM as a Cloud Service에서 Analytics 구성을 만듭니다.
-* [Adobe Launch](#analytics-launch)에서 Adobe Analytics을 확장으로 추가하고 구성하는 중입니다. Launch에 대한 자세한 내용은 [이 페이지](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)를 참조하십시오.
+* [Adobe Launch](#analytics-launch)에서 Adobe Analytics을 확장으로 추가하고 구성하는 중입니다. Launch에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)를 참조하십시오.
 
 이전 AEM 버전과 비교하여 프레임워크 지원이 AEM의 Analytics 구성에서 Cloud Service으로 제공되지 않습니다. 대신 이제 Analytics 기능(JS 라이브러리)을 사용하여 AEM 사이트를 계측하는 사실상의 도구인 Adobe Launch를 통해 수행됩니다. Launch에서 Adobe Analytics 확장을 구성할 수 있고 Adobe Analytics에 데이터를 보내기 위한 규칙을 만드는 속성이 만들어집니다. Adobe Launch가 sitecatalyst에서 제공하는 analytics 작업을 대체했습니다.
 
@@ -44,7 +44,7 @@ Adobe Analytics 구성 창에 있는 구성 필드는 다음과 같습니다.
 | 사용자 이름 | Adobe Analytics API 사용 |
 | 암호 | 인증에 사용되는 Adobe Analytics 암호 |
 | 데이터 센터 | 계정이 연결된 Adobe Analytics 데이터 센터(예: San Jose, London) |
-| 세그먼트 | 현재 보고 세트에 정의된 Analytics 세그먼트를 사용하는 옵션. Analytics 보고서는 세그먼트를 기반으로 필터링됩니다. 자세한 내용은 [이 페이지](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-overview.html)를 참조하십시오. |
+| 세그먼트 | 현재 보고 세트에 정의된 Analytics 세그먼트를 사용하는 옵션. Analytics 보고서는 세그먼트를 기반으로 필터링됩니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)를 참조하십시오. |
 | 보고서 세트 | 데이터를 보내고 보고서를 가져오는 저장소입니다. 보고서 세트 는 선택한 웹 사이트, 웹 사이트 집합 또는 웹 사이트 페이지의 하위 집합에 대한 전체적이고 독립적인 보고를 정의합니다. 단일 보고서 세트에서 가져온 보고서를 볼 수 있으며, 요구 사항에 따라 언제든지 구성에서 이 필드를 편집할 수 있습니다. |
 
 ### 사이트 {#add-configuration}에 구성 추가
@@ -55,9 +55,9 @@ Adobe Analytics 구성 창에 있는 구성 필드는 다음과 같습니다.
 
 Adobe Analytics은 Launch 속성에서 확장으로 추가할 수 있습니다. Adobe Analytics에 대한 매핑 및 사후 호출을 수행하도록 규칙을 정의할 수 있습니다.
 
-* 기본 사이트에 대한 Launch에서 Analytics 확장을 구성하는 방법을 알려면 [이 비디오](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)를 시청하십시오.
+* 기본 사이트에 대한 Launch에서 Analytics 확장을 구성하는 방법을 알려면 [이 비디오](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)를 시청하십시오.
 
-* 규칙을 만들고 Adobe Analytics으로 데이터를 보내는 방법에 대한 자세한 내용은 [이 페이지](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)을 참조하십시오.
+* 규칙을 만들고 Adobe Analytics으로 데이터를 보내는 방법에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)을 참조하십시오.
 
 >[!NOTE]
 >
