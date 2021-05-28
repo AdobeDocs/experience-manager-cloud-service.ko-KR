@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 개요
 description: 컨텐츠 전송 도구 개요
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 73%
+source-wordcount: '858'
+ht-degree: 72%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 73%
 
 컨텐츠 전송 도구를 사용하기 위한 지침과 우수 사례를 이해하려면 아래 섹션을 따르십시오.
 
-* 잠재적인 문제를 식별하고 저장소의 크기를 줄이기 위해 [소스](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/deploying/deploying/revision-cleanup.html) 저장소에서 [수정 정리](https://helpx.adobe.com/kr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) 및 **데이터 저장소 일관성 검사**&#x200B;를 실행하는 것이 좋습니다.
+* 잠재적인 문제를 식별하고 저장소의 크기를 줄이기 위해 [소스](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 저장소에서 [수정 정리](https://helpx.adobe.com/kr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) 및 **데이터 저장소 일관성 검사**&#x200B;를 실행하는 것이 좋습니다.
 
 * AEM 클라우드 작성자 CDN(Content Delivery Network) 구성이 IP의 허용 목록을 포함하도록 구성된 경우 소스 환경과 AEM 클라우드 환경이 서로 통신할 수 있도록 소스 환경 IP가 허용 목록에도 추가되도록 해야 합니다.
 
