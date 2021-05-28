@@ -2,10 +2,10 @@
 title: Adobe 컨텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 응용 프로그램을 배포합니다.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 7%
+source-wordcount: '1847'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service은 최신 AEM Project Archetype에 의해 구현된 패�
 
 >[!TIP]
 >
->자세한 내용은 Cloud Service 설명서로서 AEM의 [AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 문서와 [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에서 완전히 지원됩니다.
+>자세한 내용은 Cloud Service 설명서로서 AEM의 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 문서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에서 완전히 지원됩니다.
 
 ## Content Package Maven 플러그인 가져오기 {#obtaining-the-content-package-maven-plugin}
 
@@ -265,4 +265,4 @@ rm 목표의 모든 매개 변수는 [일반 매개 변수](#common-parameters) 
 
 >[!TIP]
 >
->자세한 내용은 Cloud Service 설명서로서 AEM의 [AEM 프로젝트 구조](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 문서와 [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에서 완전히 지원됩니다.
+>자세한 내용은 Cloud Service 설명서로서 AEM의 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 문서와 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 설명서를 참조하십시오. 둘 다 AEM 6.5에서 완전히 지원됩니다.
