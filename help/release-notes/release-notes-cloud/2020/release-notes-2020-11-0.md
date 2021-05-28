@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 는 2020.11.0용 Cloud Service 릴리스 노트입니다.'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1265'
 ht-degree: 4%
 
 ---
@@ -105,7 +105,7 @@ AEM as a Cloud Service 2020.11.0에 있는 Cloud Manager의 릴리스 날짜는 
 
 ### 워크플로우 {#workflows}
 
-* 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다. [검색 워크플로우 인스턴스](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)를 참조하십시오.
+* 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다. [검색 워크플로우 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html)를 참조하십시오.
 
 ### 게시 계층 사용자 데이터 동기화 {#user-sync}
 
@@ -121,7 +121,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속
 
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
-이 섹션을 통해 [컨텐츠 전송 도구](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 릴리스 v1.1.12에 대한 새로운 기능 및 업데이트를 알아보십시오.
+이 섹션을 통해 [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 릴리스 v1.1.12에 대한 새로운 기능 및 업데이트를 알아보십시오.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
