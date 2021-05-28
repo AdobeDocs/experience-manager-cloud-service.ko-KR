@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 8%
+source-wordcount: '1001'
+ht-degree: 6%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 8%
 
 Cloud Service으로 AEM용 CIF(Commerce Integration Framework) 기반의 AEM Commerce Projects를 개발하는 과정에서도 Cloud Service으로 AEM의 다른 AEM 프로젝트와 동일한 규칙 및 우수 사례를 따릅니다. 다음 사항을 먼저 검토하십시오.
 
-- [AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
-- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service 개발 지침](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
+- [AEM as a Cloud Service 개발 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## AEM as a Cloud Service SDK를 사용한 로컬 개발 {#local}
 
@@ -31,13 +31,13 @@ CIF 프로젝트에서 작업하려면 로컬 개발 환경을 사용하는 것�
 
 CIF 추가 기능은 Sling 기능 아카이브로 제공됩니다. 소프트웨어 배포 포털에서 사용할 수 있는 zip 파일에는 AEM 작성자 및 AEM 게시 인스턴스용, 이렇게 두 개의 Sling 기능 아카이브 파일이 포함되어 있습니다.
 
-**AEM as a Cloud Service을 처음 사용하십니까?** AEM as  [a Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하는 방법에 대한 자세한 안내서를 확인하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**AEM as a Cloud Service을 처음 사용하십니까?** AEM as  [a Cloud Service SDK로 사용하여 로컬 개발 환경을 설정하는 방법에 대한 자세한 안내서를 확인하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
 ### 필수 소프트웨어
 
 로컬에 설치해야 합니다.
 
-- [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
 - [Node.js v10+](https://nodejs.org/en/)
