@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 로컬 개발의 경우 로그 항목이 `/crx-quickstart/logs` 폴더의 로컬 파일에 기록됩니다.
 
-클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다.<!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다.<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **로그 수준 설정**
 
@@ -159,7 +159,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개�
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-프로덕션 프로그램의 경우 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 개발자 콘솔을 Cloud Service으로 AEM에 대한 액세스 권한을 제공하는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에는 &quot;Cloud Manager - 개발자 역할&quot;이 필요하며, 두 서비스에서 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하십시오.
+프로덕션 프로그램의 경우 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 개발자 콘솔을 Cloud Service으로 AEM에 대한 액세스 권한을 제공하는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에는 &quot;Cloud Manager - 개발자 역할&quot;이 필요하며, 두 서비스에서 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하십시오.
 
 ### AEM 스테이징 및 프로덕션 서비스 {#aem-staging-and-production-service}
 
@@ -226,7 +226,7 @@ AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해
 
 ### 전자 메일 보내기 {#sending-emails}
 
-[일 CQ Mail Service OSGI 서비스](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하고 이메일을 수신자에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
+[일 CQ Mail Service OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하고 이메일을 수신자에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
 
 AEM CS는 포트 465를 통해 메일을 전송해야 합니다. 메일 서버가 포트 465를 지원하지 않는 경우 TLS 옵션이 활성화되어 있는 한 포트 587을 사용할 수 있습니다.
 
@@ -236,9 +236,9 @@ AEM CS는 포트 465를 통해 메일을 전송해야 합니다. 메일 서버�
 
 ### 구성 {#email-configuration}
 
-AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하여 전송해야 합니다.
+AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하여 전송해야 합니다.
 
-전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) 를 참조하십시오. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스를 다음과 같이 조정해야 합니다.
+전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) 를 참조하십시오. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스를 다음과 같이 조정해야 합니다.
 
 포트 465가 요청된 경우:
 
