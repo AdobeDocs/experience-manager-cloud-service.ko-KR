@@ -3,9 +3,9 @@ title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4211'
+source-wordcount: '4207'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Apache 및 Dispatcher 구성과 테스트 {#apache-and-dispatcher-configuration-and-testing}
 
-이 섹션에서는 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 클라우드 환경에 배포하기 전에 로컬로 확인하고 실행하는 방법에 대해 설명합니다. 클라우드 환경에서의 디버깅에도 대해 설명합니다. Dispatcher에 대한 자세한 내용은 [AEM Dispatcher 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)를 참조하십시오.
+이 섹션에서는 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 클라우드 환경에 배포하기 전에 로컬로 확인하고 실행하는 방법에 대해 설명합니다. 클라우드 환경에서의 디버깅에도 대해 설명합니다. Dispatcher에 대한 자세한 내용은 [AEM Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)를 참조하십시오.
 
 >[!NOTE]
 >Windows 사용자는 Windows 10 Professional이나 Docker를 지원하는 다른 배포를 사용해야 합니다. 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 전제 조건입니다. 아래 섹션에는 SDK의 Mac 또는 Linux 버전을 사용하는 명령이 포함되어 있지만 Windows SDK는 유사한 방식으로 사용할 수 있습니다.
@@ -527,7 +527,7 @@ Dispatcher 구성 구조는 Managed Services과 AEM as a Cloud Service 간에 �
 ## AMS를 AEM as a Cloud Service Dispatcher 구성으로 변환하는 방법
 
 다음 섹션에서는 AMS 구성을 변환하는 방법에 대한 단계별 지침을 제공합니다. 이 경우
-[Cloud Manager Dispatcher 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)에 설명된 것과 유사한 구조를 갖는 보관 파일이 있어야 합니다.
+[Cloud Manager Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)에 설명된 것과 유사한 구조를 갖는 보관 파일이 있어야 합니다.
 
 ### 아카이브 추출 및 최종 접두사 제거
 
