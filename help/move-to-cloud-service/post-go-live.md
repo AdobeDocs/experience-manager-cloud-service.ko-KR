@@ -2,10 +2,10 @@
 title: Go-live 후 단계
 description: Go-live 후 단계
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 73%
+source-wordcount: '314'
+ht-degree: 63%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 73%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 문제 해결"
 >abstract="개발자 콘솔 및 CRXDE Lite과 같은 도구와 함께 지속적인 개발에 대한 우수 사례를 검토하고 로그를 관리하여 AEM의 문제 해결을 지원합니다"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
 
 
 Go-live 후 단계에서는 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
@@ -32,7 +32,7 @@ Go-live 후 단계에서는 임시 파일을 정리하고, 지속적인 개발�
 
 AEM as a Cloud Service 개발자 환경을 디버깅하는 방법은 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다.
 
-개발 도구에 대한 자세한 내용은 [AEM as a Cloud Service 구현](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)을 참조하십시오.
+개발 도구에 대한 자세한 내용은 [AEM as a Cloud Service 구현](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)을 참조하십시오.
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ CRX/DE Lite를 사용하여 AEM 애플리케이션을 개발하는 방법에 대
 
 사용자는 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
 
-UI를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 관리하는 방법에 대해 알아보려면 [로그 액세스 및 관리](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)를 참조하십시오.
+UI를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 관리하는 방법에 대해 알아보려면 [로그 액세스 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)를 참조하십시오.
 
 ### 추가 지원 {#additional-support}
 
