@@ -2,14 +2,21 @@
 title: 소개 - 사용자 지정 도메인 이름
 description: 소개 - 사용자 지정 도메인 이름
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # 소개 {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_domains"
+>title="사용자 지정 도메인 이름 관리"
+>abstract="Cloud Manager를 사용하면 UI를 통해 셀프 서비스 방식으로 고유한 브랜드 이름으로 사이트를 식별하는 사용자 지정 도메인을 추가할 수 있습니다. Adobe Experience Manager as a Cloud Service이 기본 도메인 이름으로 제공되어 *.adobeaemcloud.com으로 끝납니다. 이 기본 도메인 이름은 사용자 지정 도메인 이름을 웹 사이트에 첨부한 후에도 그대로 유지됩니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="사용자 지정 도메인 이름 추가"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="사용자 지정 도메인 이름 보기 및 업데이트"
 
 Cloud Manager를 사용하면 UI를 통해 셀프 서비스 방식으로 고유한 브랜드 이름으로 사이트를 식별하는 사용자 지정 도메인을 추가할 수 있습니다. Cloud Service으로 Adobe Experience Manager에 기본 도메인 이름이 제공되어 `*.adobeaemcloud.com`으로 끝납니다. 이 기본 도메인 이름은 사용자 지정 도메인 이름을 웹 사이트에 첨부한 후에도 그대로 유지됩니다.
 
