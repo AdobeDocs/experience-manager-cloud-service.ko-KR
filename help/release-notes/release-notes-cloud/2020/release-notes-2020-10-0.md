@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 는 2020.10.0용 Cloud Service 릴리스 노트입니다.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 28%
+source-wordcount: '1032'
+ht-degree: 25%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 28%
 
 * **[!DNL Adobe Sensei]powered video smart tagging**:DAM 사용자는 AI 모델을 활용하여 개체 및 작업 관련 태그의 비디오 컨텐츠를 분석함으로써 태그를 추가하는 데 걸리는 시간을 줄이고 풍부한 정보를 활용하여 고객에게 최적의 경험을 제공할 수 있습니다. [스마트 태그 비디오 자산](/help/assets/smart-tags-video-assets.md)을 참조하십시오.
 
-* **Brand Portal 개선 사항**:다음 새 기능은에서 사용할 수 있습니다  [!DNL Brand Portal]. 자세한 내용은 [[!DNL Brand Portal] 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)를 참조하십시오.
+* **Brand Portal 개선 사항**:다음 새 기능은에서 사용할 수 있습니다  [!DNL Brand Portal]. 자세한 내용은 [[!DNL Brand Portal] 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)를 참조하십시오.
 
-   * [간소화된 빠른 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) 다운로드를 위해 다운로드 경험을 개선했습니다 . 사용자와 비즈니스의 요구사항에 적합한 경험을 제공하기 위한 추가 다운로드 구성은 관리자가 구성할 수 있습니다.
-   * 이제 모든 페이지에서 한 번 클릭으로 파일, [컬렉션](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/share/brand-portal-share-collection.html), 공유 링크를 탐색할 수 있습니다.
-   * 사용자는 [특정 렌디션을 선택하여 다운로드](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)할 수 있습니다. 새 렌디션 다운로드 옵션이 에셋 세부 사항 페이지의 렌디션 패널에 제공됩니다.
+   * [간소화된 빠른 ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) 다운로드를 위해 다운로드 경험을 개선했습니다 . 사용자와 비즈니스의 요구사항에 적합한 경험을 제공하기 위한 추가 다운로드 구성은 관리자가 구성할 수 있습니다.
+   * 이제 모든 페이지에서 한 번 클릭으로 파일, [컬렉션](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html), 공유 링크를 탐색할 수 있습니다.
+   * 사용자는 [특정 렌디션을 선택하여 다운로드](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)할 수 있습니다. 새 렌디션 다운로드 옵션이 에셋 세부 사항 페이지의 렌디션 패널에 제공됩니다.
    * 게스트 사용자 세션에 15분의 시간 제한을 적용하여 모든 동시 사용자에게 더 나은 경험을 제공할 수 있습니다.
 
 * **[!DNL Adobe Asset Link]버전 2.1**:, 및에 대한  [Adobe 자산 ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 링크  [!DNL Adobe Photoshop]확장 [!DNL Adobe Illustrator]의 새 버전 [!DNL Adobe InDesign] 을 사용할 수 있습니다. 또한 2020년 10월에 릴리스된 버전 2021의 최신 [!DNL Adobe Creative Cloud] 애플리케이션과의 호환성을 추가합니다.
@@ -98,11 +98,11 @@ AEM as a Cloud Service 2020.10.0에 있는 Cloud Manager의 릴리스 날짜는 
 
 ### 워크플로우 {#workflows}
 
-* 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다. [검색 워크플로우 인스턴스](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/administering/workflows-administering.html)를 참조하십시오.
+* 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다. [검색 워크플로우 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html)를 참조하십시오.
 
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
-이 섹션을 통해 [컨텐츠 전송 도구](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 릴리스 v1.1.12에 대한 새로운 기능 및 업데이트를 알아보십시오.
+이 섹션을 통해 [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 릴리스 v1.1.12에 대한 새로운 기능 및 업데이트를 알아보십시오.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
