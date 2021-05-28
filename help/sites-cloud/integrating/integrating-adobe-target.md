@@ -4,9 +4,9 @@ description: 'Adobe Target과 통합 '
 feature: 관리
 role: Administrator
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1037'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 Adobe Target은 Adobe Marketing Cloud의 일부로서 모든 채널에서 타깃팅과 측정을 통해 컨텐츠 관련성을 높일 수 있습니다. Adobe Target과 AEM as a Cloud Service을 통합하려면 다음 작업이 필요합니다.
 
 * touch UI를 사용하여 AEM에서 Cloud Service(IMS 구성 필요)로 Target 구성을 만듭니다.
-* [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)에서 Adobe Target을 확장으로 추가하고 구성하는 중입니다.
+* [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)에서 Adobe Target을 확장으로 추가하고 구성하는 중입니다.
 
 Launch는 AEM 페이지(JS 라이브러리/태그)에서 Analytics와 Target 모두에 대한 클라이언트측 속성을 관리하는 데 필요합니다. 즉, 경험 타깃팅을 위해 Launch와의 통합이 필요합니다. Target으로 경험 조각 내보내기의 경우 Adobe Target 구성 및 IMS만 있으면 됩니다.
 
@@ -36,7 +36,7 @@ Launch는 AEM 페이지(JS 라이브러리/태그)에서 Analytics와 Target 모
 
 ### IMS 구성 {#ims-configuration}
 
-Target을 AEM 및 Launch와 제대로 통합하려면 Launch 및 Target 둘 다에 대한 IMS 구성이 필요합니다. Launch에 대한 IMS 구성은 AEM에서 Cloud Service으로 미리 구성되어 있지만 Target IMS 구성을 만들어야 합니다(Target이 프로비저닝된 후). Target IMS 구성을 만드는 방법에 대해 알아보려면 [이 비디오](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) 및 [이 페이지](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)를 참조하십시오.
+Target을 AEM 및 Launch와 제대로 통합하려면 Launch 및 Target 둘 다에 대한 IMS 구성이 필요합니다. Launch에 대한 IMS 구성은 AEM에서 Cloud Service으로 미리 구성되어 있지만 Target IMS 구성을 만들어야 합니다(Target이 프로비저닝된 후). Target IMS 구성을 만드는 방법에 대해 알아보려면 [이 비디오](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) 및 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)를 참조하십시오.
 
 ### Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 {#tenant-client}
 
@@ -134,7 +134,7 @@ AEM에서는 Experience Platform Launch과 즉시 통합할 수 있습니다. Ad
 
 ### 빌드 및 게시 {#build-publish}
 
-빌드 및 게시 방법에 대한 자세한 내용은 이 [page](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)을 참조하십시오.
+빌드 및 게시 방법에 대한 자세한 내용은 이 [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)을 참조하십시오.
 
 ## 클래식 UI와 Touch UI 구성 간의 컨텐츠 구조 변경 {#changes-content-structure}
 
