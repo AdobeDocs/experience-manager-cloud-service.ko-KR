@@ -2,10 +2,10 @@
 title: AEM Sites as a Cloud Service을 위한 헤드리스 개발
 description: 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 Cloud Service의 강력한 헤드리스 기능으로서 AEM을 사용하여 경험을 중앙에서 관리하고 여러 채널에서 제공하는 방법을 살펴볼 수 있습니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 4%
+source-wordcount: '487'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service은 세 가지 강력한 서비스를 제공하여 헤드�
 1. 게재용 컨텐츠 API
    * AEM GraphQL API는 컨텐츠 조각 전달을 지원합니다.
    * AEM Assets REST API는 컨텐츠 조각 CRUD 작업을 지원합니다.
-   * 직접 컨텐츠 전달은 [컨텐츠 조각 코어 구성 요소의 JSON 내보내기도 사용할 수 있습니다.](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/content-fragment-component.html)
+   * 직접 컨텐츠 전달은 [컨텐츠 조각 코어 구성 요소의 JSON 내보내기도 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 ## AEM Headless {#first-steps}를 사용하는 첫 번째 단계
 
