@@ -2,10 +2,10 @@
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2554'
-ht-degree: 99%
+source-wordcount: '2552'
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 99%
 
 웹 사이트의 구조는 컨텐츠 페이지를 담는 트리로 생각할 수 있습니다. 이 컨텐츠 페이지의 이름은 URL을 구성하는 데 사용됩니다. 반면에 제목은 페이지 컨텐츠가 표시될 때 표시됩니다.
 
-다음은 [WKND 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 사이트에서 스케이트보드장(`la-skateparks`)에 대한 문서에 액세스하는 예를 보여 줍니다.
+다음은 [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 사이트에서 스케이트보드장(`la-skateparks`)에 대한 문서에 액세스하는 예를 보여 줍니다.
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
