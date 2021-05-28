@@ -1,10 +1,10 @@
 ---
 title: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
 description: AMS를 Adobe Experience Manager as a Cloud Service Dispatcher 구성으로 변환
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 100%
+source-wordcount: '1340'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 이 섹션에서는 AMS 구성을 변환하는 방법에 대한 단계별 지침을 제공합니다.
 
 >[!NOTE]
->이 섹션에서는 사용자가 [Dispatcher 구성 관리](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)에 설명된 것과 유사한 구조를 갖는 아카이브를 사용한다고 가정합니다.
+>이 섹션에서는 사용자가 [Dispatcher 구성 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)에 설명된 것과 유사한 구조를 갖는 아카이브를 사용한다고 가정합니다.
 
 ## AMS를 AEM as a Cloud Service Dispatcher 구성으로 변환하는 단계
 
