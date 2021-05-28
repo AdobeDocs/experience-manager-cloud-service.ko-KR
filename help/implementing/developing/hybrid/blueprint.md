@@ -2,9 +2,9 @@
 title: SPA 블루프린트
 description: 이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크이 수행해야 하는 일반적인 프레임워크에 대해 설명합니다.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2056'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ SPA 구성 요소는 페이지 모델과 동기화 상태여야 하며 그에 �
 * `:itemsOrder`:하위 항목의 순서가 지정된 목록입니다. JSON 맵 개체는 해당 필드의 순서를 보증하지 않습니다. 맵과 현재 배열을 모두 사용하므로 API의 소비자에게는 두 구조의 이점이 있습니다
 * `:path`:항목의 컨텐츠 경로(페이지를 나타내는 항목에 있음)
 
-[AEM Content Services 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)도 참조하십시오.
+[AEM Content Services 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)도 참조하십시오.
 
 ### 프레임워크별 모듈 {#framework-specific-module}
 
