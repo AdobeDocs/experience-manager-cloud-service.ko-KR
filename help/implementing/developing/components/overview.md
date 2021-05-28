@@ -2,10 +2,10 @@
 title: 구성 요소 개요
 description: 구성 요소는 웹 사이트에 컨텐츠를 제공하는 특정 기능을 구현하는 모듈식 유닛입니다
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 7%
+source-wordcount: '387'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ AEM의 구성 요소는 다음과 같습니다.
 * 표준화된 사용자 인터페이스를 사용합니다.
 * 구성할 수 있는 편집 동작이 있습니다.
 * Granite UI 구성 요소를 기반으로 하위 요소를 사용하여 빌드된 대화 상자를 사용합니다.
-* [HTL](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)을 사용하여 개발됩니다.
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)을 사용하여 개발됩니다.
 * 기본 기능을 확장하는 사용자 지정된 구성 요소를 만들기 위해 개발할 수 있습니다.
 
 구성 요소는 모듈이므로 다음 작업을 수행할 수 있습니다.
@@ -44,7 +44,7 @@ AEM의 구성 요소는 다음과 같습니다.
 
 ## AEM 핵심 구성 요소 {#aem-core-components}
 
-[AEM 핵심 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 구성 요소는 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감할 수 있도록 AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소 세트입니다.
+[AEM 핵심 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 구성 요소는 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감할 수 있도록 AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소 세트입니다.
 
 핵심 구성 요소는 Cloud Service으로 AEM과 함께 제공되며, [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md)는 구성 요소를 구현하고 사용하는 방법을 보여줍니다. 구성 요소는 모든 소스 코드와 함께 제공되며 수정 또는 확장 구성 요소의 시작점으로 사용하거나 그대로 사용할 수 있습니다.
 
