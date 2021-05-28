@@ -2,7 +2,7 @@
 title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
+source-git-commit: dc66eca7b789cf3be1aeae3d63935362ab6f918a
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 3%
@@ -100,7 +100,7 @@ ht-degree: 3%
 ### 릴리스 날짜 {#release-date-cm-may}
 
 AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 날짜는 2021년 5월 6일입니다.
-다음 릴리스는 2021년 6월 3일에 예정되어 있습니다.
+다음 릴리스는 2021년 6월 10일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-may}
 
