@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 9%
+source-wordcount: '882'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 
 >[!CONTEXTUALHELP]
->id="aemcloud_nonbpa_cdn"
+>id="aemcloud_golive_cdn"
 >title="AEM as a Cloud Service에서 CDN"
 >abstract="Cloud Service으로 AEM이 기본 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 컨텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다."
 
@@ -41,6 +41,11 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 >허용되는 IP의 요청만 AEM 관리 CDN에 의해 제공됩니다. 고유한 CDN을 AEM 관리 CDN에 연결하는 경우 CDN의 IP가에 포함되어 있는지 허용 목록에 추가하다 확인합니다.
 
 ## 고객 CDN은 AEM Managed CDN {#point-to-point-CDN}을 가리킵니다
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_byocdn"
+>title="고객 CDN은 AEM Managed CDN을 가리킵니다"
+>abstract="AEM as Cloud Service은 고객이 기존 CDN을 사용할 수 있는 옵션을 제공합니다. 게시 계층의 경우 고객이 선택적으로 자신의 CDN에서 가리키도록 할 수 있으며, 이를 관리해야 합니다. 중단하기 어려운 CDN 공급업체와 레거시 통합을 보유한 고객을 포함한 특정 전제 조건을 충족하는 것에 제한되지 않고, 이를 기반으로 케이스별로 허용됩니다."
 
 고객이 기존 CDN을 사용해야 하는 경우 다음을 충족하는 것을 제공하여 고객이 CDN을 관리하고 AEM 관리 CDN을 가리킬 수 있습니다.
 
