@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 액세스 가능한 컨텐츠 만들기(WCAG 2.1 준수)
 description: 장애가 있는 사용자가 액세스하여 사용할 수 있는 웹 컨텐츠를 만드는 데 도움이 되는 AEM as a Cloud Service 사용
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
+source-wordcount: '14050'
 ht-degree: 99%
 
 ---
@@ -68,15 +68,15 @@ ht-degree: 99%
 
 #### 충족 방법 - 텍스트가 아닌 컨텐츠(1.1.1)  {#how-to-meet-non-text-content}
 
-정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 **대체 텍스트** 필드에서 수행할 수 있습니다. 예를 들어 핵심 구성 요소 **[이미지](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)**&#x200B;를 참조하십시오.
+정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 **대체 텍스트** 필드에서 수행할 수 있습니다. 예를 들어 핵심 구성 요소 **[이미지](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**&#x200B;를 참조하십시오.
 
 >[!NOTE]
 >
->전체 구성 요소에 대해&#x200B;**[레이블](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)** 필드(**액세서빌러티** 탭)가 있더라도 **회전 메뉴** 등 일부 핵심 구성 요소는 대체 텍스트 설명을 개별 이미지에 추가하는 데 **[대체 텍스트](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;를 제공하지 않습니다.
+>전체 구성 요소에 대해&#x200B;**[레이블](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** 필드(**액세서빌러티** 탭)가 있더라도 **회전 메뉴** 등 일부 핵심 구성 요소는 대체 텍스트 설명을 개별 이미지에 추가하는 데 **[대체 텍스트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**&#x200B;를 제공하지 않습니다.
 >
 >AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt` 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조).
 >
->전체 구성 요소에 대해 **[레이블](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** 필드(**액세서빌러티** 탭)가 있더라도 **회전 슬라이드** 등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위해 **[대체 텍스트](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** 필드를 제공하지 않습니다.
+>전체 구성 요소에 대해 **[레이블](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** 필드(**액세서빌러티** 탭)가 있더라도 **회전 슬라이드** 등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위해 **[대체 텍스트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** 필드를 제공하지 않습니다.
 >
 >AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt`[ 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
