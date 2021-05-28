@@ -2,9 +2,9 @@
 title: Adobe Target과 통합
 description: Adobe Target과 통합
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '723'
 ht-degree: 8%
 
 ---
@@ -27,12 +27,12 @@ AEM 사이트를 Adobe Target과 통합하여 페이지에서 콘텐츠를 개�
 
 Target과 통합하려면 다음 작업을 수행합니다.
 
-* [전제 조건 작업 수행](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html):Adobe Target에 등록하고 AEM 작성자 인스턴스의 특정 측면을 구성합니다. Adobe Target 계정에는 최소 **승인자** 수준 권한이 있어야 합니다. 또한 사용자가 액세스할 수 없도록 게시 노드에서 활동 설정을 보호해야 합니다.
+* [전제 조건 작업 수행](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html):Adobe Target에 등록하고 AEM 작성자 인스턴스의 특정 측면을 구성합니다. Adobe Target 계정에는 최소 **승인자** 수준 권한이 있어야 합니다. 또한 사용자가 액세스할 수 없도록 게시 노드에서 활동 설정을 보호해야 합니다.
 
 * Launch by Adobe은 Target 기능(JS 라이브러리)을 사용하여 AEM 사이트를 계측하는 사실상의 도구입니다. 따라서 AEM as a Cloud Service과 Launch 및 Adobe Target을 통합하면 바로 사용이 가능합니다(아래 링크 참조).
 
-   * [Adobe I/O을 사용하여 Adobe Target과 통합](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
-   * [Launch by Adobe 통합](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+   * [Adobe I/O을 사용하여 Adobe Target과 통합](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
+   * [Launch by Adobe 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
    * [Adobe I/O을 통해 AEM과 Adobe Launch 통합](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [Launch by Adobe, Analytics 및 Target과 AEM 통합 이해](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
@@ -40,7 +40,7 @@ Target과 통합하려면 다음 작업을 수행합니다.
 >
 >Launch by Adobe에 대한 IMS 구성(기술 계정)은 AEM에서 Cloud Service으로 미리 구성되어 있습니다. 사용자는 이 구성을 만들 필요가 없습니다.
 
-1. [활동 구성](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html):활동을 Target 클라우드 구성과 연결합니다.
+1. [활동 구성](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html):활동을 Target 클라우드 구성과 연결합니다.
 
 >[!CAUTION]
 >
@@ -61,9 +61,9 @@ Target과 통합하려면 다음 작업을 수행합니다.
 >
 >일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호해야 합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스만 액세스할 수 있어야 합니다.
 >
->자세한 내용은 [Adobe Target과 통합하기 위한 전제 조건](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node)을 참조하십시오.
+>자세한 내용은 [Adobe Target과 통합하기 위한 전제 조건](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node)을 참조하십시오.
 
-통합이 완료되면 Adobe Target에 방문자 데이터를 보내는 [타깃팅된 컨텐츠](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html)를 작성할 수 있습니다. 페이지 구성 요소에는 컨텐츠 타깃팅을 사용하려면 특정 코드가 필요합니다. ([타깃팅된 컨텐츠에 대한 개발](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html)을 참조하십시오.)
+통합이 완료되면 Adobe Target에 방문자 데이터를 보내는 [타깃팅된 컨텐츠](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html)를 작성할 수 있습니다. 페이지 구성 요소에는 컨텐츠 타깃팅을 사용하려면 특정 코드가 필요합니다. ([타깃팅된 컨텐츠에 대한 개발](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html)을 참조하십시오.)
 
 >[!NOTE]
 >
@@ -73,9 +73,9 @@ Target과 통합하려면 다음 작업을 수행합니다.
 
 AEM as a Cloud Service과 Adobe Target을 통합하려면 Adobe Target, AEM 활동 관리 및 AEM 대상 관리에 대한 지식이 필요합니다. 다음 정보를 숙지해야 합니다.
 
-* Adobe Target([Adobe Target 설명서](https://docs.adobe.com/content/help/en/target/using/target-home.html) 참조).
-* AEM 활동 콘솔([활동 관리](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)를 참조하십시오.
-* AEM 대상([대상 관리](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html)를 참조하십시오.
+* Adobe Target([Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/target-home.html) 참조).
+* AEM 활동 콘솔([활동 관리](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)를 참조하십시오.
+* AEM 대상([대상 관리](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)를 참조하십시오.
 
 >[!NOTE]
 >
