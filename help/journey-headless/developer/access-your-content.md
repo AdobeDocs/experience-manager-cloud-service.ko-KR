@@ -1,7 +1,7 @@
 ---
 title: AEM 배달 API를 통해 콘텐츠에 액세스하는 방법
 description: AEM 헤드리스 개발자 여정의 이 부분에서 GraphQL 쿼리를 사용하여 컨텐츠 조각 컨텐츠에 액세스하는 방법을 알아봅니다.
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 컨텐츠에 대한 쿼리를 시작하기 전에 다음을 수행해야 합니다.
 
 * 엔드포인트 활성화
-   * 도구 -> 사이트 -> GraphQL 사용
+   * 도구 -> 자산 -> GraphQL 사용
    * [GraphQL 끝점 활성화](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * GraphiQL 설치(필요한 경우)
