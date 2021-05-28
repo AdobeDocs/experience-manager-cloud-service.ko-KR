@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Experience Manager] Cloud Service 사전 릴리스 채널로'
 description: '[!DNL Adobe Experience Manager] Cloud Service 사전 릴리스 채널로'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] as a Cloud Service은  [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)의 일정에 따라 월별 케이던스에 새로운 기능을 제공합니다. 다음 달에 출시될 예정인 기능을 잘 알고 있으려면 표준 프로그램 개발 환경 또는 샌드박스 프로그램 환경에서 적절히 구성하여 사전 릴리스 채널에 가입할 수 있습니다. 고객은 사이트 콘솔의 변경 사항을 미리 볼 수 있을 뿐만 아니라 새로운 사전 릴리스 API에 대한 빌드 코드를 미리 볼 수 있습니다.
 
 지정된 월의 사전 릴리스 기능 목록은 [월별 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md) 내에 게시됩니다.
+
+>[비디오](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## 사전 릴리스 {#enable-prerelease} 를 활성화하는 방법
 
@@ -110,8 +112,7 @@ Javadocs가 Maven Central에 게시됩니다.
 1. 로컬에서 예상대로 작동하므로 문제가 해결되면 개발 분기에 코드를 커밋하고 Cloud Manager 비프로덕션 파이프라인을 사용하여 사전 릴리스 채널에 가입한 환경에 배포합니다
 
 >[!CAUTION]
-> 
-> Stage 또는 Production에 배포할 때에는 `aem-prerelease-sdk-api` artifactId를 사용하지 않아야 합니다. 프로덕션 파이프라인을 통해 배포할 때에는 항상 aem-sdk-api를 사용합니다. 마찬가지로 사전 릴리스 API를 참조하는 코드는 프로덕션 파이프라인을 통해 배포하지 않아야 합니다.
+Stage 또는 Production에 배포할 때에는 `aem-prerelease-sdk-api` artifactId를 사용하지 않아야 합니다. 프로덕션 파이프라인을 통해 배포할 때에는 항상 aem-sdk-api를 사용합니다. 마찬가지로 사전 릴리스 API를 참조하는 코드는 프로덕션 파이프라인을 통해 배포하지 않아야 합니다.
 
 [AEM CS SDK Build Analyzer maven 플러그인 v1.0 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)은(는) 종속성을 검사하여 프리릴리스 api가 프로젝트에서 사용되는지 감지합니다. 분석기가 찾으면 시험판 sdk api를 사용하여 프로젝트를 분석합니다.
 
