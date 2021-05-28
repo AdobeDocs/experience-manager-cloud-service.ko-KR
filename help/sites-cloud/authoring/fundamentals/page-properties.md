@@ -2,9 +2,9 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1907'
 ht-degree: 59%
 
 ---
@@ -148,7 +148,7 @@ ht-degree: 59%
 
 * **소셜 미디어 공유**
 
-   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
+   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
 
    * **Facebook에 대한 사용자 공유 활성화**
    * **Pinterest에 대한 사용자 공유 활성화**
