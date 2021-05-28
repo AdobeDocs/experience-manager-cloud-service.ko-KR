@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Define DISABLE_DEFAULT_CACHING
 
 이전 AEM 버전과 마찬가지로 페이지를 게시하거나 게시 취소하면 Dispatcher 캐시에서 콘텐츠가 지워집니다. 캐싱 문제가 의심되는 경우 고객은 해당 페이지를 다시 게시해야 합니다.
 
-게시 인스턴스가 작성자로부터 페이지 또는 자산의 새 버전을 받으면 초기화 에이전트를 사용하여 해당 디스패처에서 적절한 경로를 무효화합니다. 업데이트된 경로가 해당 상위 항목과 함께 디스패처 캐시에서 제거되어 최대 수준([statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)을 사용하여 구성할 수 있습니다.)
+게시 인스턴스가 작성자로부터 페이지 또는 자산의 새 버전을 받으면 초기화 에이전트를 사용하여 해당 디스패처에서 적절한 경로를 무효화합니다. 업데이트된 경로가 해당 상위 항목과 함께 디스패처 캐시에서 제거되어 최대 수준([statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)을 사용하여 구성할 수 있습니다.)
 
 ### 명시적 디스패처 캐시 무효화 {#explicit-invalidation}
 
@@ -123,8 +123,8 @@ AEM as a Cloud Service 이전에는 디스패처 캐시를 무효화하는 두 �
 1. 게시 디스패처 초기화 에이전트를 지정하여 복제 에이전트를 호출합니다
 2. `invalidate.cache` API를 직접 호출합니다(예: `POST /dispatcher/invalidate.cache`).
 
-디스패처의 `invalidate.cache` API 접근 방식은 특정 디스패처 노드만 처리하므로 더 이상 지원되지 않습니다. AEM as a Cloud Service은 개별 노드 수준이 아니라 서비스 수준에서 작동하므로 [AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html)에서 캐시된 페이지 무효화 페이지의 무효화 지침은 AEM에서 Cloud Service으로 더 이상 유효하지 않습니다.
-대신 복제 초기화 에이전트를 사용해야 합니다. 이 작업은 복제 API를 사용하여 수행할 수 있습니다. 복제 API 설명서는 [여기](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)에서 사용할 수 있으며, 캐시 플러싱의 예는 [API 예제 페이지](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) 특히 사용 가능한 모든 에이전트에 ACTIVATE 유형의 복제 작업을 실행하는 `CustomStep` 예를 참조하십시오. 플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하면서 디스패처를 가리키도록 사전 구성되어 있습니다. 플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
+디스패처의 `invalidate.cache` API 접근 방식은 특정 디스패처 노드만 처리하므로 더 이상 지원되지 않습니다. AEM as a Cloud Service은 개별 노드 수준이 아니라 서비스 수준에서 작동하므로 [AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html)에서 캐시된 페이지 무효화 페이지의 무효화 지침은 AEM에서 Cloud Service으로 더 이상 유효하지 않습니다.
+대신 복제 초기화 에이전트를 사용해야 합니다. 이 작업은 복제 API를 사용하여 수행할 수 있습니다. 복제 API 설명서는 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)에서 사용할 수 있으며, 캐시 플러싱의 예는 [API 예제 페이지](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) 특히 사용 가능한 모든 에이전트에 ACTIVATE 유형의 복제 작업을 실행하는 `CustomStep` 예를 참조하십시오. 플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하면서 디스패처를 가리키도록 사전 구성되어 있습니다. 플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
 
 아래 표시된 다이어그램은 이를 보여줍니다.
 
