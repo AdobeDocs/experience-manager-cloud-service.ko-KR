@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: 배포
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,10 @@ ht-degree: 0%
 
 이 문서의 나머지 부분에서는 개발자가 AEM as a Cloud Service 버전 업데이트 및 고객 업데이트로 모두 작동하도록 하는 방법을 설명합니다.
 
+<!--
 >[!NOTE]
->기존 코드 베이스를 사용하는 고객은 [AEM 설명서](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)에 설명된 저장소 구조 변경 연습을 수행하는 것이 좋습니다.
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## 고객 릴리스 {#customer-releases}
 
@@ -40,8 +42,10 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->기존 코드 베이스를 사용하는 고객은 [AEM 설명서](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)에 설명된 저장소 구조 변경 연습을 수행하는 것이 좋습니다.
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Cloud Manager 및 패키지 관리자를 통해 컨텐츠 패키지 배포 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -102,7 +106,7 @@ Cloud Manager에서 가변 저장소, 변경 가능한 컨텐츠 패키지 및 �
    * 컨텍스트 인식 구성(`/conf` 아래의 모든 항목)(추가, 수정, 제거)
    * 스크립트(패키지)는 패키지 설치 프로세스의 다양한 단계에서 설치 후크를 트리거할 수 있습니다. 설치 후크에 대해서는 [Jackrabbit filerabbit 설명서](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) 를 참조하십시오. AEM CS는 현재 Filerabault 버전 3.4.0을 사용하여 관리자 사용자, 시스템 사용자 및 관리자 그룹의 구성원에게 설치 후크를 제한합니다.)
 
-`/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 포함하여 가변 컨텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 이러한 분리를 반영하도록 재구성한 것은 AEM 6.5에서 수행되었으며 권장되는 프로젝트 재구성에 대한 자세한 내용은 [AEM 6.5 설명서에서 확인할 수 있습니다.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+`/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 포함하여 가변 컨텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. 이러한 분리를 반영하도록 재구성한 것은 AEM 6.5에서 수행되었으며 권장되는 프로젝트 재구성에 대한 자세한 내용은 [AEM 6.5 설명서에서 확인할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >컨텐츠 패키지는 모든 환경 유형(dev, stage, prod)에 배포됩니다. 배포를 특정 환경으로 제한할 수 없습니다. 이 제한은 자동 실행을 테스트하는 옵션을 보장하기 위해 적용됩니다. 환경에 고유한 컨텐츠는 패키지 관리자를 통해 수동으로 설치해야 합니다.
