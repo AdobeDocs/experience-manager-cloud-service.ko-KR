@@ -2,9 +2,9 @@
 title: AEM 기술 기반
 description: AEM이 JCR, Sling 및 OSGi와 같은 구조화되고 기본적인 기술을 제공하는 방법을 포함하여 AEM의 기술 기반에 대한 개요입니다.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ AEM은 최신 컨텐츠 관리 시스템으로 표준 웹 기술을 사용합니
 
 JCR(Java Content Repository) 표준 [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) 은 컨텐츠 리포지토리 내의 세부 수준에서 양방향 컨텐츠에 액세스할 수 있도록 공급업체에 독립적이고 구현에 독립적인 방법을 지정합니다. 사양 리드는 Adobe 리서치(스위스) AG에 의해 소유됩니다.
 
-[JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, `javax.jcr.*`는 저장소 컨텐츠의 직접 액세스 및 조작에 사용됩니다.
+[JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, `javax.jcr.*`는 저장소 컨텐츠의 직접 액세스 및 조작에 사용됩니다.
 
 AEM은 JCR을 기반으로 구축됩니다.
 
