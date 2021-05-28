@@ -2,10 +2,10 @@
 title: AEM CIF(Commerce Integration Framework) 추가 기능으로 마이그레이션
 description: 이전 버전에서 CIF(AEM Commerce Integration Framework) 추가 기능으로 마이그레이션하는 방법
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 4%
+source-wordcount: '489'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.co
 
 ## 프로젝트 구조
 
-[AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 및 AEM의 Cloud Service 특성을 알아봅니다. 프로젝트 설정을 AEM as a Cloud Service 레이아웃으로 조정하십시오.
+[AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 및 AEM의 Cloud Service 특성을 알아봅니다. 프로젝트 설정을 AEM as a Cloud Service 레이아웃으로 조정하십시오.
 AEM 6.5 배포에 비해 다음과 같은 두 가지 주요 차이점이 있습니다.
 
 * GraphQL 클라이언트 OSGI 번들 **은(는) 더 이상 AEM 프로젝트에 포함되지 않아야 하며 CIF 추가 기능을 통해 배포됩니다**
