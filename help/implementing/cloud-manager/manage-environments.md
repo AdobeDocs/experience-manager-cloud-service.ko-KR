@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 개발자 역할의 사용자만 **개발자 콘솔**&#x200B;에 액세스할 수 있습니다. 단, Cloud Manager 샌드박스 프로그램에 액세스할 수 있는 모든 사용자가 **개발자 콘솔**&#x200B;에 액세스할 수 있는 샌드박스 프로그램에 대한 예외입니다.
 
-자세한 내용은 [최대 절전 모드 및 최대 절전 모드 해제 샌드박스 환경](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)을 참조하십시오.
+자세한 내용은 [최대 절전 모드 및 최대 절전 모드 해제 샌드박스 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)을 참조하십시오.
 
 
 ![](assets/environ-devconsole.png)
