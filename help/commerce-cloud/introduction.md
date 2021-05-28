@@ -3,10 +3,10 @@ title: 소개 및 개요
 description: 컨텐츠 및 상거래 소개 및 개요. CIF(Experience Manager Commerce Integration Framework)는 Magento 및 기타 타사 상거래 솔루션에서 Experience Cloud을 사용하여 상거래 서비스를 통합 및 확장하는 Adobe의 권장 패턴입니다.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '874'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +58,7 @@ AEM의 강력한 CIF 도구를 사용하면 컨텐츠 작성자는 확장 가능
 
 ### 가치 실현 시간(TTV)
 
-[AEM 코어 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) 및 PWA(헤드리스 컨텐츠 및 상거래)의 통합 패턴으로 프로젝트 개발을 가속화합니다.
+[AEM 코어 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 PWA(헤드리스 컨텐츠 및 상거래)의 통합 패턴으로 프로젝트 개발을 가속화합니다.
 
 CIF는 항상 최신 추가 기능을 사용하여 지속적인 혁신을 위해 구축되어 고객이 새롭고 향상된 기능에 액세스할 수 있도록 해줍니다.
 
