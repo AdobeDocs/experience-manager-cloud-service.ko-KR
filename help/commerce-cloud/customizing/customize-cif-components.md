@@ -11,10 +11,10 @@ feature: 전자 상거래 통합 프레임워크
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '2554'
-ht-degree: 2%
+source-wordcount: '2536'
+ht-degree: 1%
 
 ---
 
@@ -190,7 +190,7 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [Magento GraphQL](
 
 Sling 모델은 Java로 구현되며 생성된 프로젝트의 **core** 모듈에서 찾을 수 있습니다.
 
-선택한 IDE의 [IDE를 사용하여 Venia 프로젝트를 가져옵니다. ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) 사용된 스크린샷은 [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)에서 가져옵니다.
+선택한 IDE의 [IDE를 사용하여 Venia 프로젝트를 가져옵니다. ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) 사용된 스크린샷은 [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)에서 가져옵니다.
 
 1. IDE에서 **core** 모듈 아래에서 다음 위치로 이동합니다.`core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`
 
@@ -332,9 +332,9 @@ Sling 모델은 Java로 구현되며 생성된 프로젝트의 **core** 모듈�
 
 ## 제품 티저 {#customize-markup-product-teaser} 마크업 사용자 정의
 
-AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 구성 요소가 태그를 렌더링하는 데 사용하는 [HTL 스크립트](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)를 재정의하여 수행됩니다. HTL(HTML Template Language)은 AEM 구성 요소가 작성된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어로서 구성 요소를 다시 사용할 수 있도록 합니다. 예를 들어 제품 티저를 반복해서 사용하여 서로 다른 제품을 표시할 수 있습니다.
+AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 구성 요소가 태그를 렌더링하는 데 사용하는 [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)를 재정의하여 수행됩니다. HTL(HTML Template Language)은 AEM 구성 요소가 작성된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어로서 구성 요소를 다시 사용할 수 있도록 합니다. 예를 들어 제품 티저를 반복해서 사용하여 서로 다른 제품을 표시할 수 있습니다.
 
-이 경우 티저 위에 배너를 렌더링하여 제품이 사용자 지정 속성에 따라 &quot;친환경&quot;임을 표시하려고 합니다. 구성 요소의 [마크업](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)에 대한 디자인 패턴은 AEM CIF 코어 구성 요소뿐만 아니라 모든 AEM 구성 요소에 실제로 표준입니다.
+이 경우 티저 위에 배너를 렌더링하여 제품이 사용자 지정 속성에 따라 &quot;친환경&quot;임을 표시하려고 합니다. 구성 요소의 [마크업](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)에 대한 디자인 패턴은 AEM CIF 코어 구성 요소뿐만 아니라 모든 AEM 구성 요소에 실제로 표준입니다.
 
 1. IDE에서 `ui.apps` 모듈을 탐색하고 확장하고 폴더 계층 구조를 다음으로 확장합니다.`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 및 `.content.xml` 파일을 검사합니다.
 
@@ -350,7 +350,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
        componentGroup="Venia - Commerce"/>
    ```
 
-   이상은 프로젝트의 제품 티저 구성 요소에 대한 구성 요소 정의입니다. `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` 속성을 확인합니다. [프록시 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html#create-proxy-components)를 만드는 예입니다. AEM CIF 코어 구성 요소에서 모든 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 `sling:resourceSuperType` 을 사용하여 모든 기능을 상속할 수 있습니다.
+   이상은 프로젝트의 제품 티저 구성 요소에 대한 구성 요소 정의입니다. `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` 속성을 확인합니다. [프록시 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components)를 만드는 예입니다. AEM CIF 코어 구성 요소에서 모든 제품 티저 HTL 스크립트를 복사하여 붙여넣는 대신 `sling:resourceSuperType` 을 사용하여 모든 기능을 상속할 수 있습니다.
 
 1. `productteaser.html` 파일을 엽니다. [CIF 제품 티저](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)의 `productteaser.html` 파일 사본입니다.
 
@@ -390,7 +390,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 
    HTL에서 Sling Model 메서드를 호출할 때 메서드의 `get` 및 `is` 부분이 삭제되고 첫 번째 문자가 소문자로 표시됩니다. 따라서 `isShowBadge()`은 `.showBadge`이 되고 `isEcoFriendly`는 `.ecoFriendly`이 됩니다. `.isEcoFriendly()`에서 반환된 부울 값을 기반으로 하여 `<span>Eco Friendly</span>`이 표시되는지 확인합니다.
 
-   `data-sly-test` 및 기타 [HTL 블록 문에 대한 자세한 내용은 여기](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/block-statements.html#test)에서 확인할 수 있습니다.
+   `data-sly-test` 및 기타 [HTL 블록 문에 대한 자세한 내용은 여기](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/block-statements.html#test)에서 확인할 수 있습니다.
 
 1. 명령줄 터미널에서 Maven 기술을 사용하여 변경 사항을 저장하고 AEM에 업데이트를 배포합니다.
 
@@ -494,8 +494,8 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 
 ## 추가 리소스 {#additional-resources}
 
-- [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components)
 - [AEM CIF 핵심 구성 요소 사용자 정의](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [핵심 구성 요소 사용자 정의](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-- [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
