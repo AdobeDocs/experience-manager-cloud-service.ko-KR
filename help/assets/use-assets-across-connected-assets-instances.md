@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 자산 관리,연결된 자산,자산 분배,사용자 및 그룹
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2966'
 ht-degree: 25%
@@ -198,7 +198,7 @@ ht-degree: 25%
 
 ## 제한 사항 및 우수 사례 {#tip-and-limitations}
 
-* 자산 사용에 대한 통찰력을 얻으려면 [!DNL Sites] 인스턴스에서 [자산 통찰력](/help/assets/assets-insights.md) 기능을 구성하십시오.
+* 자산 사용에 대한 통찰력을 얻으려면 [!DNL Sites] 인스턴스에서 [Assets Insight](/help/assets/assets-insights.md) 기능을 구성하십시오.
 
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
