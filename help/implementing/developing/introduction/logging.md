@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: 중앙 로깅 서비스에 대한 글로벌 매개 변수를 구성하는 방법, 개별 서비스에 대한 특정 설정 또는 AEM에서 Cloud Service으로 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
+source-wordcount: '2330'
 ht-degree: 2%
 
 ---
@@ -549,7 +549,7 @@ AEM 로그는 다음 로그를 볼 수 있는 폴더 `crx-quickstart/logs`에 �
 * AEM HTTP 요청 로그:`request.log`
 * AEM HTTP 액세스 로그:`access.log`
 
-디스패처를 포함한 Apache 레이어 로그는 Dispatcher를 포함하는 Docker 컨테이너에 있습니다. Dispatcher를 시작하는 방법에 대한 자세한 내용은 [Dispatcher 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)를 참조하십시오.
+디스패처를 포함한 Apache 레이어 로그는 Dispatcher를 포함하는 Docker 컨테이너에 있습니다. Dispatcher를 시작하는 방법에 대한 자세한 내용은 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)를 참조하십시오.
 
 로그를 검색하려면 다음을 수행하십시오.
 
