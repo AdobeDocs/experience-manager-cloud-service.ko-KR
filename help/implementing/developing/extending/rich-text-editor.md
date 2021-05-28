@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] 에서 컨텐츠를 Cloud Service으로
 description: ' [!DNL Adobe Experience Manager] 에서 컨텐츠를 Cloud Service으로 작성하도록 리치 텍스트 편집기를 구성합니다.'
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '1969'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ RTE 플러그인의 자세한 구성은 [RTE 플러그인을 활성화하고 구
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[코어 구성 요소 텍스트 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 사용하면 템플릿 편집기에서 사용자 인터페이스를 컨텐츠 정책으로 사용하여 많은 RTE 플러그인을 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 컨텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 사용할 수 있습니다. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)를 참조하십시오.
+[코어 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 사용하면 템플릿 편집기에서 사용자 인터페이스를 컨텐츠 정책으로 사용하여 많은 RTE 플러그인을 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 컨텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 사용할 수 있습니다. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-cloud/authoring/features/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)를 참조하십시오.
 
 >참조용으로 기본 텍스트 구성 요소(표준 설치의 일부로 제공됨)는 다음 위치에서 찾을 수 있습니다.
 >
@@ -230,7 +230,7 @@ RTE 플러그인의 자세한 구성은 [RTE 플러그인을 활성화하고 구
 * RTE의 사용자 인터페이스 구성이 제거되었거나 항목을 활성화하지 않으면 컨텐츠 정책에서 구성할 수 없습니다.
 * 작성자는 사용자 인터페이스 구성 및 컨텐츠 정책에 의해 사용 가능한 기능에만 액세스할 수 있습니다.
 
-예를 들어 [텍스트 코어 구성 요소 설명서](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)가 표시됩니다.
+예를 들어 [텍스트 코어 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)가 표시됩니다.
 
 ## 도구 모음 아이콘과 명령 간 매핑 사용자 정의 {#iconstoolbar}
 
