@@ -2,10 +2,10 @@
 title: SPA 소개 및 연습
 description: 이 문서에서는 SPA의 개념을 소개하고 기본 SPA 응용 프로그램을 사용하여 기본 AEM SPA 편집기와 관련된 방법을 설명합니다.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 2%
+source-wordcount: '1984'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ SPA 편집기는 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제
 
 >[!TIP]
 >
->모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
 ### SPA란?{#what-is-a-spa}
 
