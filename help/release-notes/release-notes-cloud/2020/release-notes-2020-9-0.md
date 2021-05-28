@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] as a 2020.9.0용 Cloud Service 릴리스 노트'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 12%
+source-wordcount: '724'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 12%
    * 선택적 게시 - 이제 마케팅 팀이 [!DNL Dynamic Media] 스마트 자르기 이미지 및 동적 변환에 액세스할 수 있으므로 전역 전송을 위해 [!DNL Dynamic Media]에 이러한 자산을 게시하지 않고도 홍보 자료를 만들 수 있습니다. [!DNL Dynamic Media] [!DNL Experience Manager] 게시 [!DNL Dynamic Media] 는 분리되며 이를 위해 별도로 발생할 수 있습니다. [선택적 게시](/help/assets/dynamic-media/selective-publishing.md)를 참조하십시오.
    * 이제 관리자는 프로비저닝 시 받은 [!DNL Dynamic Media] Cloud Service 암호를 재설정할 수 있습니다. 재설정은 [!DNL Dynamic Media Classic] 데스크탑 앱을 사용하지 않고도 [!DNL Experience Manager] 사용자 인터페이스에서 수행할 수 있습니다.
 
-* 다음 개선 사항에 대해 알아보려면 [Brand Portal의 새로운 기능](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하십시오.
+* 다음 개선 사항에 대해 알아보려면 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)을 참조하십시오.
 
    * Adobe Document Cloud 보기 SDK 통합을 통해 향상된 PDF 미리 보기
    * 한 번의 클릭으로 다운로드 기능을 사용할 수 있습니다.
