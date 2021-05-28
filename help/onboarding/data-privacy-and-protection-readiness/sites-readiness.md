@@ -2,10 +2,10 @@
 title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Adobe Experience Manager as a Cloud Service 사이트 준비 완료
 description: 다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 사이트 지원으로서 Adobe Experience Manager에 대해 알아보십시오.에는 유럽 연합 개인 정보 보호 규정(GDPR), 캘리포니아 소비자 개인 정보 보호법 및 새 AEM을 Cloud Service 프로젝트로 구현할 때 준수하는 방법이 포함되어 있습니다.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 49%
+source-wordcount: '1032'
+ht-degree: 48%
 
 ---
 
@@ -75,13 +75,13 @@ Adobe Experience Manager은 사용자에 대한 옵트인/옵트아웃을 관리
 
 AEM Sites에는 Adobe Analytics 온디맨드 서비스 내에서 기능을 사용하는 Analytics Foundation과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Analytics과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인 정보 보호](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html) 를 참조하십시오.
+Adobe Analytics과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Analytics 및 데이터 개인 정보 보호](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html) 를 참조하십시오.
 
 ## Target {#personalization-foundation-by-target} 별 개인화 기반
 
 AEM Sites에는 Adobe Target 온디맨드 서비스 내에서 기능을 사용하는 Target의 개인화 기반과의 선택적 통합이 포함되어 있습니다.
 
-Adobe Target과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정](https://docs.adobe.com/content/help/ko-KR/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)을 참조하십시오.
+Adobe Target과 관련된 데이터 주체 요청 관리에 대한 자세한 내용은 [Adobe Target - 개인 정보 보호 및 일반 데이터 보호 규정](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)을 참조하십시오.
 
 ## ContextHub {#contexthub}
 
