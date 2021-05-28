@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 3%
+source-wordcount: '1065'
+ht-degree: 2%
 
 ---
 
 # Cloud Service으로 AEM Commerce 시작하기 {#start}
 
-Cloud Service으로 AEM Commerce를 시작하려면 Experience Manager Cloud Service에 CIF(Commerce Integration Framework) 추가 기능이 제공되어야 합니다. CIF 추가 기능은 [AEM Sites의 Cloud Service](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/sites/home.html)에 있는 추가 모듈입니다.
+Cloud Service으로 AEM Commerce를 시작하려면 Experience Manager Cloud Service에 CIF(Commerce Integration Framework) 추가 기능이 제공되어야 합니다. CIF 추가 기능은 [AEM Sites의 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html)에 있는 추가 모듈입니다.
 
 ## 온보딩 {#onboarding}
 
@@ -28,7 +28,7 @@ AEM Commerce as a Cloud Service에 대한 온보딩은 두 단계로 진행되�
 
 첫 번째 온보딩 단계는 Adobe에 의해 수행됩니다. 가격 및 프로비저닝에 대한 자세한 내용은 영업 담당자에게 문의해야 합니다.
 
-CIF 추가 기능이 제공되면 기존 Cloud Manager 프로그램에 적용됩니다. Cloud Manager 프로그램이 없는 경우 새 프로그램을 만들어야 합니다. 자세한 내용은 [프로그램 설정](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)을 참조하십시오.
+CIF 추가 기능이 제공되면 기존 Cloud Manager 프로그램에 적용됩니다. Cloud Manager 프로그램이 없는 경우 새 프로그램을 만들어야 합니다. 자세한 내용은 [프로그램 설정](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)을 참조하십시오.
 
 두 번째 단계는 각 AEM as a Cloud Service 환경에 대한 셀프 서비스입니다. CIF 추가 기능의 초기 프로비저닝 후에 수행해야 하는 몇 가지 추가 구성이 있습니다.
 
@@ -69,7 +69,7 @@ Adobe I/O CLI를 통해 AEM과 상거래 솔루션을 연결하려면 다음 단
 
 1. Cloud Manager 플러그인을 사용하여 Adobe I/O CLI 가져오기
 
-   [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager)과 함께 [Adobe I/O CLI](https://github.com/adobe/aio-cli)를 다운로드, 설정 및 사용하는 방법에 대해서는 [Cloud Manager 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 확인하십시오.
+   [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager)과 함께 [Adobe I/O CLI](https://github.com/adobe/aio-cli)를 다운로드, 설정 및 사용하는 방법에 대해서는 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)를 확인하십시오.
 
 2. AEM as a Cloud Service 프로그램으로 Adobe I/O CLI 인증
 
