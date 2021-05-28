@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] as a 2021.3.0용 Cloud Service 릴리스 노트'
-source-git-commit: 63b7c11683425cc20851ee5a16ee099511429b17
+source-git-commit: 3ff105507f4d42f5858a7e3a4c703d9135b36e5b
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 3%
@@ -62,7 +62,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms은 여러 해에 걸쳐 많은 조직이 뛰어난 온보딩 및 등록 경험을 제공할 수 있도록 지원했습니다. 이러한 경험은 조직에서 리드를 판매로 전환하고 캡처된 고객 데이터를 처리하며 대상 프로필에 따른 반응형 경험을 전달하는 데 도움이 되었습니다. 이제 AEM Forms을 클라우드 서비스로 사용할 수 있습니다.
 
-[AEM Forms을 Cloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)로 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, 양식을 Adobe Sign과 통합하여 양식에 전자 서명을 추가하고, Document of Record(DoR)를 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 이 서비스는 기존 PDF forms을 디지털 양식으로 전환할 수도 있습니다. 이 서비스는 표준 AEM Forms 기능 외에도 자동 크기 조정, 업그레이드에 대한 다운타임 없음, 클라우드 기반의 개발 환경과 같은 클라우드 기반의 다양한 기능을 제공합니다. AEM Forms as a Cloud Service의 기능 및 기능에 대해 알아보려면 [이 블로그 게시물](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)을 읽어 보십시오.
+[AEM Forms을 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)로 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, 양식을 Adobe Sign과 통합하여 양식에 전자 서명을 추가하고, Document of Record(DoR)를 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 이 서비스는 기존 PDF forms을 디지털 양식으로 전환할 수도 있습니다. 이 서비스는 표준 AEM Forms 기능 외에도 자동 크기 조정, 업그레이드에 대한 다운타임 없음, 클라우드 기반의 개발 환경과 같은 클라우드 기반의 다양한 기능을 제공합니다. AEM Forms as a Cloud Service의 기능 및 기능에 대해 알아보려면 [이 블로그 게시물](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)을 읽어 보십시오.
 
 데모를 위해 Adobe 담당자에게 문의하거나 서비스에 등록할 수 있습니다.
 
