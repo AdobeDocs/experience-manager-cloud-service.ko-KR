@@ -2,14 +2,20 @@
 title: AEM에서 Cloud Service으로 백업 및 복원
 description: AEM에서 Cloud Service으로 백업 및 복원
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
 # AEM에서 Cloud Service으로 백업 및 복원
+
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_backuprestore"
+>title="백업 및 복원"
+>abstract="AEM as a Cloud Service은 고객의 전체 애플리케이션(코드 및 컨텐츠)을 지난 7일 동안 소정의 시간으로 복원하여 프로덕션에 있던 내용을 바꿀 수 있습니다. 이 기능은 코드 또는 컨텐츠에 심각한 문제가 있는 경우에만 사용해야 합니다. 복원된 백업 시간과 현재 시간 사이의 최근 데이터가 손실됩니다. 스테이징이 이전 버전으로 복원됩니다."
 
 컨텐츠나 데이터가 손상될 경우 AEM as a Cloud Service은 지난 7일 동안 고객의 전체 애플리케이션(코드 및 컨텐츠)을 특정 시간, 특정 횟수로 복원하여 프로덕션에 있던 내용을 대체할 수 있습니다.
 고객의 배포 시 배포된 응용 프로그램 코드가 손상되었거나 버그되어 있는 경우 백업에서 복원하지 않고 새 릴리스로 롤포워드하는 것이 좋습니다. 백업은 애플리케이션의 런타임 성능에 영향을 주지 않는 방식으로 수행됩니다.
