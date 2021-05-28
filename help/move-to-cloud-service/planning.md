@@ -2,10 +2,10 @@
 title: 계획 단계
 description: 계획 단계
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 91%
+source-wordcount: '470'
+ht-degree: 88%
 
 ---
 
@@ -25,13 +25,13 @@ AEM as a Cloud Service는 AEM 프로젝트 관리를 위한 많은 새로운 기
 
 그러나 AEM 온프레미스 또는 Adobe Managed Service에는 AEM as a Cloud Service에 비해 많은 차이점이 있습니다.
 
-중요한 차이점을 파악하려면 [AEM 클라우드 서비스의 주요 변경 사항](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/release-notes/aem-cloud-changes.html)을 참조하십시오.
+중요한 차이점을 파악하려면 [AEM 클라우드 서비스의 주요 변경 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html)을 참조하십시오.
 
 ## 더 이상 사용되지 않는 기능 {#deprecated-features}
 
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
 
-Experience Manager as a Cloud Service에서 더 이상 사용되지 않음으로 표시된 기능에 대한 자세한 내용은 [더 이상 사용되지 않는 기능](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)을 참조하십시오.
+Experience Manager as a Cloud Service에서 더 이상 사용되지 않음으로 표시된 기능에 대한 자세한 내용은 [더 이상 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)을 참조하십시오.
 
 ## 계획 단계 이해 {#introduction}
 
