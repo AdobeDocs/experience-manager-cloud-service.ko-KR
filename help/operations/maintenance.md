@@ -2,14 +2,21 @@
 title: AEM as a Cloud Service의 유지 관리 작업
 description: AEM as a Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
+source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 1%
+source-wordcount: '992'
+ht-degree: 2%
 
 ---
 
 # AEM as a Cloud Service의 유지 관리 작업
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_maintenance"
+>title="유지 관리 작업"
+>abstract="유지 관리 작업은 저장소를 최적화하기 위해 일정에 따라 실행되는 프로세스입니다. AEM을 Cloud Service으로 사용하면 고객이 유지 관리 작업의 운영 속성을 구성할 필요가 최소화됩니다. 고객은 애플리케이션 수준의 문제에 집중할 수 있으므로 인프라 운영을 Adobe에 집중할 수 있습니다."
+>additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="AEM 유지 관리 안내서"
+>additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="작업 대시보드 유지 관리 작업"
 
 유지 관리 작업은 저장소를 최적화하기 위해 일정에 따라 실행되는 프로세스입니다. AEM을 Cloud Service으로 사용하면 고객이 유지 관리 작업의 운영 속성을 구성할 필요가 최소화됩니다. 고객은 애플리케이션 수준의 문제에 집중할 수 있으므로 인프라 운영을 Adobe에 집중할 수 있습니다.
 
