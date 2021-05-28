@@ -2,10 +2,10 @@
 title: CIF(Commerce Integration Framework) 추가 기능의 주요 변경 사항
 description: 이전 CIF 버전과 비교하여 CIF(Commerce Integration Framework)의 주요 변경 사항입니다.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
-source-git-commit: 7a52e4b62f5a18f9c68e5afb0d464bd11be732d2
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 5%
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
 
@@ -38,12 +38,12 @@ AEM CIF 추가 기능은 Cloud Manager를 통해 설치됩니다. 크레딧이 �
 
 ## CIF Venia Project 배포
 
-[Cloud Manager Git 리포지토리(](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)에서 사용 가능하고 [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/deploying/overview.html)를 통해 배포됩니다.
+[Cloud Manager Git 리포지토리(](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)에서 사용 가능하고 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)를 통해 배포됩니다.
 
 **이전 CIF 버전**
 
 * CIF Classic:AEM 패키지 설치를 통해
-* CIF 오픈 소스:[Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 통해
+* CIF 오픈 소스:[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)를 통해
 
 ## 제품 카탈로그 데이터
 
