@@ -2,9 +2,9 @@
 title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Adobe Experience Manager as a Cloud Service 준비 완료
 description: 다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Cloud Service 지원으로서 Adobe Experience Manager에 대해 알아보십시오.에는 유럽 연합 개인 정보 보호 규정(GDPR), 캘리포니아 소비자 개인 정보 보호법 및 새 AEM을 Cloud Service 프로젝트로 구현할 때 준수하는 방법이 포함되어 있습니다.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '729'
 ht-degree: 2%
 
 ---
@@ -94,6 +94,6 @@ AEM as a Cloud Service의 제품 영역에 대한 규정 설명서는 아래 섹
 이러한 Adobe Experience Manager as a Cloud Service 통합은 데이터 보호 및 개인 정보 보호(예: GDPR) 지원 서비스와 통합됩니다. Adobe Target 또는 Adobe Analytics의 개인 데이터는 통합과 관련하여 AEM에 저장되지 않습니다.
 자세한 내용은 다음을 참조하십시오.
 
-* [Adobe Target - 개인 정보 보호 개요](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target - 개인 정보 보호 개요](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html)
 
-* [Adobe Analytics 데이터 개인 정보 보호 워크플로우](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)
+* [Adobe Analytics 데이터 개인 정보 보호 워크플로우](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html)
