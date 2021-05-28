@@ -2,9 +2,9 @@
 title: 사용자 지정 코드 품질 규칙 - Cloud Services
 description: 사용자 지정 코드 품질 규칙 - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3298'
 ht-degree: 0%
 
 ---
@@ -724,7 +724,7 @@ AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 Touch UI�
 
 Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저장소의 변경할 수 없는 영역에 대한 컨텐츠가 포함되어야 합니다(즉, `/apps and /libs, although /libs`은 고객 코드로 수정하면 안 됨) 또는 가변 영역(즉, 다른 모든 것)이 포함되지만 둘 다 포함되지는 않습니다. 예를 들어, `/apps/myco/components/text and /etc/clientlibs/myco`을 모두 포함하는 패키지는 Cloud Service과 호환되지 않으므로 문제가 보고됩니다.
 
-자세한 내용은 [AEM 프로젝트 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 를 참조하십시오.
+자세한 내용은 [AEM 프로젝트 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 를 참조하십시오.
 
 ### 역방향 복제 에이전트는 {#oakpal-reverse-replication} 사용할 수 없습니다.
 
@@ -736,7 +736,7 @@ Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저
 
 **다음** 이후:버전 2020.5.0
 
-[릴리스 노트에 설명된 대로 역방향 복제에 대한 지원은 Cloud Service 배포에서 사용할 수 없습니다.복제 에이전트 제거](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+[릴리스 노트에 설명된 대로 역방향 복제에 대한 지원은 Cloud Service 배포에서 사용할 수 없습니다.복제 에이전트 제거](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 역방향 복제를 사용하는 고객은 대체 솔루션을 사용하려면 Adobe에 문의해야 합니다.
 
