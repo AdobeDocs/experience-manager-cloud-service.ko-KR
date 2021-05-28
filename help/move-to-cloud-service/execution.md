@@ -2,10 +2,10 @@
 title: 실행 단계
 description: 실행 단계
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 96%
+source-wordcount: '1028'
+ht-degree: 87%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 96%
 
 자세한 내용은 아래 리소스를 참조하십시오.
 
-* [Experience Manager as a Cloud Service에 온보딩](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/onboarding/home.html): Experience Manager as a Cloud Service에 온보딩에 대한 셀프 헬프 리소스를 이해합니다.
+* [Experience Manager as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html): Experience Manager as a Cloud Service에 온보딩에 대한 셀프 헬프 리소스를 이해합니다.
 
-* [Git와 Adobe Cloud Manager 통합](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html): 단일 Git 저장소를 사용하여 코드 배포에 대해 자세히 알아봅니다.
+* [Git와 Adobe Cloud Manager 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html): 단일 Git 저장소를 사용하여 코드 배포에 대해 자세히 알아봅니다.
 
-* [Adobe Experience as a Cloud Service 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/security/ims-support.html#aem-configuration): Admin Console에서 제품 및 사용자 액세스 관리에 대해 알아봅니다.
+* [Adobe Experience as a Cloud Service 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration): Admin Console에서 제품 및 사용자 액세스 관리에 대해 알아봅니다.
 
 
 ## 소개 {#introduction}
@@ -56,11 +56,11 @@ AEM Maven 프로젝트가 AEM as a Cloud Service와 호환되도록 하려면 �
 
 * 저장소에서 `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp` 등은 모두 변경할 수 있는 영역입니다. 즉, 런타임 시 변경될 수 있습니다.
 
-자세한 내용은 [권장 패키지 구조](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)를 참조하십시오.
+자세한 내용은 [권장 패키지 구조](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)를 참조하십시오.
 
-AEM as a Cloud Service를 개발할 때 알고 있어야 할 몇 가지 추가 개발 지침이 있습니다. 자세한 내용은 [AEM as a Cloud Service 개발 지침](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/development-guidelines.html)을 참조하십시오.
+AEM as a Cloud Service를 개발할 때 알고 있어야 할 몇 가지 추가 개발 지침이 있습니다. 자세한 내용은 [AEM as a Cloud Service 개발 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)을 참조하십시오.
 
-계획 단계에서 클라우드 서비스와 호환되도록 리팩터링해야 하는 영역 목록이 있어야 합니다. 또한 [개발 지침](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)에서 클라우드 서비스로 이동하기 위해 코드를 리팩터링 및 최적화하는 방법에 대한 자세한 내용을 검토해야 합니다.
+계획 단계에서 클라우드 서비스와 호환되도록 리팩터링해야 하는 영역 목록이 있어야 합니다. 또한 [개발 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)에서 클라우드 서비스로 이동하기 위해 코드를 리팩터링 및 최적화하는 방법에 대한 자세한 내용을 검토해야 합니다.
 
 코드 리팩터링 작업 중 일부를 가속화하기 위해 다음 도구를 사용할 수 있습니다.
 
@@ -70,7 +70,7 @@ AEM as a Cloud Service를 개발할 때 알고 있어야 할 몇 가지 추가 �
 
 Cloud Manager Git을 통해 코드를 클라우드 서비스 환경에 푸시하기 전에 로컬로 리팩터링하고 테스트하는 것이 좋습니다.
 
-자세한 내용은 [AEM SDK](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) 설명서를 참조하십시오.
+자세한 내용은 [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) 설명서를 참조하십시오.
 
 다음은 몇 가지 추가 리소스입니다.
 
@@ -82,7 +82,7 @@ Cloud Manager Git을 통해 코드를 클라우드 서비스 환경에 푸시하
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* [로컬 개발 설정](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) 설명서를 검토하여 로컬 개발 환경을 설정하는 방법을 알아보십시오.
+* [로컬 개발 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) 설명서를 검토하여 로컬 개발 환경을 설정하는 방법을 알아보십시오.
 
 
 전환 여정의 일부로 코드 리팩터링 작업과 함께 활성 AEM에서 진행 중인 코드 개발을 관리하려면, AEM as a Cloud Service와 호환되도록 Maven 프로젝트 재구성을 완료할 때까지 코드 동결 기간을 예약하는 것이 좋습니다.
@@ -96,19 +96,19 @@ Cloud Manager Git을 통해 코드를 클라우드 서비스 환경에 푸시하
 
 클라우드 서비스에 대한 Cloud Manager 파이프라인 실행은 스테이지 환경에서 실행되는 테스트 실행을 지원합니다.
 
-테스트 스크립트 작성 및 최소 50%의 권장 적용 범위에 대해 알아보려면 [코드 품질 테스트](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)를 참조하십시오.
+테스트 스크립트 작성 및 최소 50%의 권장 적용 범위에 대해 알아보려면 [코드 품질 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)를 참조하십시오.
 
-또한 AEM Engineering의 우수 사례를 기반으로 작성된 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대한 자세한 내용은 [사용자 지정 코드 품질 규칙 이해](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)를 참조하십시오.
+또한 AEM Engineering의 우수 사례를 기반으로 작성된 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대한 자세한 내용은 [사용자 지정 코드 품질 규칙 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)를 참조하십시오.
 
 Cloud Manager 사용은 클라우드 서비스 환경에 코드를 배포하는 유일한 메커니즘입니다.
 
 아래 리소스를 참조하여 Cloud Manager를 사용하여 코드를 관리하고 배포하는 방법을 알아보십시오.
 
-* [환경 관리](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+* [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
 
-* [CI-CD 파이프라인 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+* [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
 
-* [코드 배포](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
+* [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
 ## Go-Live 준비 우수 사례 {#go-live}
 
