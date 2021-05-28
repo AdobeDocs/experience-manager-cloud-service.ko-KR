@@ -2,9 +2,9 @@
 title: AEM용 SPA 개발
 description: 이 문서에서는 프런트 엔드 개발자에게 AEM for AEM을 개발하도록 권유할 때 고려해야 할 중요한 질문을 제시하며, SPA에 개발한 SPA을 배포할 때 염두에 둘 수 있도록 SPA과 관련된 AEM 아키텍처에 대한 개요를 제공합니다.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2076'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ SPA은 컨텐츠의 동적 렌더링만 사용해야 합니다. 이는 AEM이 �
 
 ## AEM 프로젝트 전형 {#aem-project-archetype}
 
-모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
 ## SPA 디자인 모델 {#spa-design-models}
 
