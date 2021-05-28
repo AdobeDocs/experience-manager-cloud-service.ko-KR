@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Assets HTTP API에서 Cloud Service 컨텐�
 description: AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: 컨텐츠 조각,자산 HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1952'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 
 
 예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정 환경에서는 HTTP API를 통해 제공되는 컨텐츠(일반적으로 JSON 형식)가 필요합니다.
 
-[AEM 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)는 이 목적에 필요한 읽기 작업을 제공할 수 있고 JSON 출력을 사용자 지정할 수 있는 매우 포괄적이고 유연한 사용자 지정 가능한 API를 제공하지만, 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 AEM WCM(Web Content Management) 구현에 대한 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)는 이 목적에 필요한 읽기 작업을 제공할 수 있고 JSON 출력을 사용자 지정할 수 있는 매우 포괄적이고 유연한 사용자 지정 가능한 API를 제공하지만, 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 AEM WCM(Web Content Management) 구현에 대한 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 먼저 포함할 필요 없이 자산(예: 이미지 및 컨텐츠 조각)에 직접 액세스하여 직렬화된 JSON 형식으로 콘텐츠를 제공할 수 있습니다.
 
@@ -258,7 +258,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 
 >[!NOTE]
 >
->자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### 읽기/전달 {#read-delivery}
 
@@ -376,7 +376,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 
 자세한 API 참조는 다음을 참조하십시오.
 
-* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
 
