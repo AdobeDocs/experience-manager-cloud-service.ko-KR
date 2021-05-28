@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 소개
 description: Adobe Experience Manager (AEM) as a Cloud Service 소개.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '516'
 ht-degree: 100%
 
 ---
@@ -79,4 +79,4 @@ AEM은 최신 클라우드 서비스의 주요 특성을 채택하여 다음과 
 * [ AEM Sites as a Cloud Service에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service 소개](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
