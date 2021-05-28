@@ -2,10 +2,10 @@
 title: 컨텐츠 서비스용 JSON 익스포터
 description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 게재할 수 있습니다.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 31%
+source-wordcount: '409'
+ht-degree: 29%
 
 ---
 
@@ -83,4 +83,4 @@ AEM 내에서는 선택기 `model` 및 `.json` 확장을 사용하여 게재를 
 * [자산 사용 안내서의 컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)
 * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [핵심 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 구성 요소 및  [컨텐츠 조각 구성 요소](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/content-fragment-component.html)
+* [핵심 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 구성 요소 및  [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
