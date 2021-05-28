@@ -2,10 +2,10 @@
 title: AEM 클라우드 서비스의 AEM 사이트에 대한 주요 변경 사항
 description: AEM 클라우드 서비스의 AEM 사이트에 대한 주요 변경 사항
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 21%
+source-wordcount: '532'
+ht-degree: 17%
 
 ---
 
@@ -22,7 +22,7 @@ AEM Sites as a Cloud Service은 클라우드 기반의 AEM as a Cloud Service �
 * [AEM as a Cloud Service에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 자습서](https://docs.adobe.com/content/help/ko-KR/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 Cloud Service 로서 AEM Sites의 변경 사항 및 추가 사항은 다음과 같습니다.
@@ -44,9 +44,9 @@ AEM 클라우드 서비스에서는 일반적으로 UI를 차단한 작업이 �
 
 ## 새 참조 사이트 및 자습서 {#new-reference-site-and-tutorial}
 
-[새 AEM 참조 사이트인](https://wknd.site/) WKND가 AEM으로 웹 사이트를 구축하는 모범 사례와 AEM에서 사용할 수 있는 포괄적인 기능, 구성 요소 및 배포 모델 세트를 반영하도록 업데이트 및 게시되었습니다. 새 참조 사이트 및 [추가 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에서는 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 Adobe Experience Manager Sites을 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다.
+[새 AEM 참조 사이트인](https://wknd.site/) WKND가 AEM으로 웹 사이트를 구축하는 모범 사례와 AEM에서 사용할 수 있는 포괄적인 기능, 구성 요소 및 배포 모델 세트를 반영하도록 업데이트 및 게시되었습니다. 새 참조 사이트 및 [추가 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에서는 프로젝트 설정, 핵심 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 Adobe Experience Manager Sites을 사용한 구성 요소 개발과 같은 기본 주제를 다룹니다.
 
-이전에는 AEM에서 기본적으로 We.Retail을 설치했지만(프로덕션 모드에서 시작하는 경우 제외)  이제 참조 사이트는 기본적으로 앞으로 설치되지 않습니다.  대신 업데이트된 WKND 참조 사이트 코드와 함께 [git repo](https://github.com/adobe/aem-guides-wknd/) 및 [함께 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)가 제공됩니다.
+이전에는 AEM에서 기본적으로 We.Retail을 설치했지만(프로덕션 모드에서 시작하는 경우 제외)  이제 참조 사이트는 기본적으로 앞으로 설치되지 않습니다.  대신 업데이트된 WKND 참조 사이트 코드와 함께 [git repo](https://github.com/adobe/aem-guides-wknd/) 및 [함께 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)가 제공됩니다.
 
 ## 런타임 {#capabilities-not-available-at-runtime}에서 기능을 사용할 수 없습니다.
 
