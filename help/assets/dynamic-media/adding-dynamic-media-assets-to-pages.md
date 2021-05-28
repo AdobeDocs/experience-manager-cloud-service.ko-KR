@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 자산 관리
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
 workflow-type: tm+mt
-source-wordcount: '3226'
+source-wordcount: '3084'
 ht-degree: 20%
 
 ---
@@ -112,7 +112,7 @@ Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 탭�
 
 ### 구성 요소:Dynamic Media {#dynamic-media-component}
 
-Dynamic Media 구성 요소는 편리합니다.이미지를 추가하는지 아니면 비디오를 추가하는지에 따라 다양한 선택 사항이 제공됩니다. 이 구성 요소는 이미지 사전 설정, 이미지 세트와 같은 이미지 기반 뷰어, 스핀 세트, 혼합 미디어 세트 및 비디오를 지원합니다. 또한 뷰어는 응답형이며 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
+Dynamic Media 구성 요소는 편리합니다.이미지를 추가하든 비디오를 추가하든 다양한 선택 사항이 표시됩니다. 이 구성 요소는 이미지 사전 설정, 이미지 세트와 같은 이미지 기반 뷰어, 스핀 세트, 혼합 미디어 세트 및 비디오를 지원합니다. 또한 뷰어는 응답형이며 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
 
 >[!NOTE]
 >
@@ -165,16 +165,16 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
    구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 탭하여 다음 고급 설정을 편집할 수 있습니다.
 
-* **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   [장치 픽셀 비율 최적화 정보](/help/assets/dynamic-media/imaging-faq.md#dpr)를 참조하십시오.
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   모든 [!DNL Experience Manager] Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
-   * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;가 선택됩니다.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![이미지 사전 설정에 대한 장치 픽셀 비율 설정](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
 
 * **[!UICONTROL 제목]**  - 이미지의 제목을 변경합니다.
 
@@ -243,17 +243,17 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 * **[!UICONTROL 비율 일치 활성화]**  - Dynamic Media에서 원본 이미지의 비율과 가장 일치하는 종횡비로 스마트 자르기 렌디션을 선택하도록 하려면 이 옵션을 선택합니다.
 
-* **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   [장치 픽셀 비율 최적화 정보](/help/assets/dynamic-media/imaging-faq.md#dpr)를 참조하십시오.
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   모든 [!DNL Experience Manager] Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * 사전 설정 유형에서 **[!UICONTROL 스마트 자르기]** 옵션이 선택됩니다.
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![스마트 자르기의 장치 픽셀 비율 설정](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
 
 * **[!UICONTROL 제목]**  - 스마트 자르기 이미지의 제목을 변경합니다.
 
@@ -273,7 +273,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 대화형 미디어 구성 요소는 핫스팟이나 이미지 맵과 같은 상호 작용이 있는 자산을 위한 것입니다. 대화형 이미지, 대화형 비디오 또는 회전 배너가 있는 경우 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용하십시오.
 
-대화형 미디어 구성 요소는 편리하게도이미지를 추가하는지 아니면 비디오를 추가하는지에 따라 다양한 선택 사항이 제공됩니다. 또한 뷰어는 응답형입니다. 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
+대화형 미디어 구성 요소는 편리하게도이미지를 추가하든 비디오를 추가하든 다양한 선택 사항이 표시됩니다. 또한 뷰어는 응답형입니다. 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
 
 >[!NOTE]
 >
