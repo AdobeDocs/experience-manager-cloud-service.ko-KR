@@ -3,7 +3,7 @@ title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: 헤드리스 컨텐츠 전달을 위해 AEM GraphQL API를 사용하는 Cloud Service으로 Adobe Experience Manager(AEM)의 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: 컨텐츠 조각,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 2%
@@ -158,7 +158,7 @@ GraphQL 종단점을 사용하려면 먼저 적절한 구성이 있어야 합니
 
 해당 끝점을 활성화하려면
 
-1. **도구**, **사이트**&#x200B;로 이동한 다음 **GraphQL**&#x200B;을 선택합니다.
+1. **도구**, **자산**&#x200B;으로 이동한 다음 **GraphQL**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택합니다.
 1. **새 GraphQL 끝점 만들기** 대화 상자가 열립니다. 여기에서 다음을 지정할 수 있습니다.
    * **이름**:끝점의 이름;텍스트를 입력할 수 있습니다.
