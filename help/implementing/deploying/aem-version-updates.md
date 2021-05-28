@@ -3,9 +3,9 @@ title: AEM 버전 업데이트
 description: 'AEM 버전 업데이트 '
 feature: 배포
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ AEM 버전 업데이트는 다음 두 가지 유형으로 제공됩니다.
 
 AEM 업데이트는 프로덕션 시스템에서 서비스를 중단하지 않도록 여러 단계를 포함하는 강력하고 완전히 자동화된 제품 유효성 검사 파이프라인을 따릅니다. 상태 검사는 응용 프로그램의 상태를 모니터링하는 데 사용됩니다. AEM as a Cloud Service 업데이트 중에 이러한 확인이 실패하면 릴리스가 진행되지 않고 Adobe에서 업데이트로 인해 이 예기치 않은 동작이 발생한 이유를 조사합니다.
 
-[AEM 버전 업데이트 ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 중에 제품 업그레이드 및 고객 코드 푸시가 프로덕션을 중단하지 않도록 하는 제품 테스트 및 고객 기능 테스트도 검증됩니다.
+[AEM 버전 업데이트 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 중에 제품 업그레이드 및 고객 코드 푸시가 프로덕션을 중단하지 않도록 하는 제품 테스트 및 고객 기능 테스트도 검증됩니다.
 
 >[!NOTE]
 >
