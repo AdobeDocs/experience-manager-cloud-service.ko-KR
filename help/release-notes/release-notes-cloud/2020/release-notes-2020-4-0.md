@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.4.0용 릴리스 노트
 description: Experience Manager 2020.4.0용 릴리스 노트
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 100%
+source-wordcount: '646'
+ht-degree: 95%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 현재 릴리스에 있는 [!DNL Experience Manager Assets] 및 [!DNL Dynamic Media]의 새로운 기능, 개선 사항 및 버그 수정에 대해 알아보십시오.
 
-* [Brand Portal](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html)은 Experience Manager Assets에 대한 자산 분배 사용 사례를 지원합니다. [!DNL Brand Portal]은 승인된 브랜드 및 제품 자산을 외부 에이전시, 파트너, 내부 팀 및 리셀러에게 다운로드하도록 안전하게 분배하여 조직의 마케팅 요구 사항을 충족할 수 있도록 지원합니다.
-   * [!DNL Brand Portal] 구성은 [!DNL Adobe I/O] 콘솔을 통해 완료됩니다. [Brand Portal 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)을 참조하십시오.
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)은 Experience Manager Assets에 대한 자산 분배 사용 사례를 지원합니다. [!DNL Brand Portal]은 승인된 브랜드 및 제품 자산을 외부 에이전시, 파트너, 내부 팀 및 리셀러에게 다운로드하도록 안전하게 분배하여 조직의 마케팅 요구 사항을 충족할 수 있도록 지원합니다.
+   * [!DNL Brand Portal] 구성은 [!DNL Adobe I/O] 콘솔을 통해 완료됩니다. [Brand Portal 구성](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)을 참조하십시오.
    * [!DNL Brand Portal]의 Asset 소싱은 아직 [!DNL Experience Manager] as a Cloud Service에서 지원되지 않습니다.
 
 * [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) v2.0은 [!DNL Experience Manager] as a Cloud Service에서 작동합니다. [!DNL Adobe Asset Link]는 인앱 [!DNL Asset Link] 패널을 통해 [!DNL Experience Manager Assets]을 [!DNL Creative Cloud] 데스크탑 앱인 [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]과 연결하여 컨텐츠 제작 프로세스에서 크리에이티브와 마케터 간의 협업을 간소화합니다.
@@ -48,9 +48,9 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link에 대하여](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Brand Portal 구성](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Brand Portal 구성](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Asset Link를 사용하도록 Experience Manager 구성](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [자산 마이크로 서비스를 사용하여 Experience Manager에서 워크플로우 만들기](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [자산 마이크로 서비스를 사용하여 Experience Manager에서 워크플로우 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Cloud Manager의 새로운 기능 {#whats-new-cloud-manager}
