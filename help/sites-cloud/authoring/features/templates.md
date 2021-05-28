@@ -2,9 +2,9 @@
 title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4596'
 ht-degree: 97%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 97%
 >
 >국제화해야 하는 정보는 템플릿에 입력하지 마십시오. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->로컬라이제이션해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/get-started/localization.html)을 활용하십시오.
+>로컬라이제이션해야 하는 머리글 및 바닥글과 같은 템플릿 요소의 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 활용하십시오.
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
@@ -532,7 +532,7 @@ ht-degree: 97%
 >
 >초기 컨텐츠는 컨텐츠를 작성하기 위한 시작점으로 사용되는 구성 요소 및 페이지 레이아웃을 준비하기 위한 것입니다. 이는 그대로 남아 있어야 하는 실제 컨텐츠용이 아닙니다. 따라서 초기 컨텐츠를 변환할 수 없습니다.
 >
->머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
+>머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 로컬라이제이션 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 
