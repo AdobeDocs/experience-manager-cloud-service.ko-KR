@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] as a 2020.7.0 Cloud Service 릴리스 노트'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 80%
+source-wordcount: '1038'
+ht-degree: 76%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 80%
 
 * 새 사용자 인터페이스 구현으로 클래식 UI 기반의 구현을 대체합니다.
 
-* 변수 매핑과 기타 구성을 위한 프레임워크 생성 작업을 [!DNL Adobe Launch]로 넘기면서 사용자 인터페이스 대화 상자가 간단해졌습니다. [Adobe Analytics 통합](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 및 [Adobe Target 통합](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)을 참조하십시오.
+* 변수 매핑과 기타 구성을 위한 프레임워크 생성 작업을 [!DNL Adobe Launch]로 넘기면서 사용자 인터페이스 대화 상자가 간단해졌습니다. [Adobe Analytics 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 및 [Adobe Target 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)을 참조하십시오.
 
 * 이제 구성이 Experience Manager 저장소의 `/etc/cloudsettings`가 아닌 `/conf`에 저장됩니다.
 
@@ -55,20 +55,20 @@ ht-degree: 80%
 
 이제 Cloud Service에서 AEM Commerce를 사용할 수 있습니다.
 
-자세한 내용은 [Cloud Service으로 AEM Commerce 시작하기](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)를 참조하십시오.
+자세한 내용은 [Cloud Service으로 AEM Commerce 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html)를 참조하십시오.
 
 ## 코어 구성 요소 {#core-components}
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[AEM 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * 새로운 [PDF 뷰어 구성 요소](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html) 소개
 
 * 이제 코어 구성 요소에 대한 AMP(Accelerated Mobile Page) 지원을 사용할 수 있습니다. Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 더 빠른 고객 경험을 제공하고 사용자 참여도와 SEO를 향상합니다.
-자세한 내용은 [코어 구성 요소에 대한 AMP 지원](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/amp.html)을 참조하십시오.
+자세한 내용은 [코어 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)을 참조하십시오.
 
-* [Adobe 클라이언트 데이터 레이어](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/data-layer/overview.html) 버전 1.0.2와의 호환성.
+* [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 버전 1.0.2와의 호환성.
 
 * 버그 수정 및 코드 품질 개선
 
@@ -137,7 +137,7 @@ ht-degree: 80%
 
 * AEM(Adobe Experience Manager) 6.1에서 이전 버전의 CRA를 실행할 수 없습니다. 관리자 그룹의 사용자를 허용하는 명시적 지원이 추가되었습니다.
 
-   자세한 내용은 [AEM 6.1에 CRA 설치](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
+   자세한 내용은 [AEM 6.1에 CRA 설치](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)를 참조하십시오.
 
 * 요약 보고서에 표시되는 만료 타임스탬프가 잘못되었습니다.
 
