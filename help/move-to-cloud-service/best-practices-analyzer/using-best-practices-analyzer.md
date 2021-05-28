@@ -2,10 +2,10 @@
 title: 우수 사례 분석기 사용
 description: 우수 사례 분석기 사용
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 43%
+source-wordcount: '2506'
+ht-degree: 42%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 43%
 >id="aemcloud_bpa_using"
 >title="모범 사례 분석기 사용"
 >abstract="모범 사례 분석기(이전 클라우드 준비 분석기)를 사용하기 위한 설명서 및 생성된 보고서를 검토하십시오. 모범 사례 분석기 보고서는 일반적인 업그레이드 준비 상태를 세부적으로 파악하는 데 사용됩니다."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 모범 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
 BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
-* BPA 보고서는 Adobe Experience Manager (AEM) [패턴 탐지기](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/deploying/upgrading/pattern-detector.html)의 출력을 사용하여 작성됩니다. BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
+* BPA 보고서는 Adobe Experience Manager (AEM) [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)의 출력을 사용하여 작성됩니다. BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
 
 * BPA는 **admin** 사용자 또는 **administrators** 그룹의 사용자만 실행할 수 있습니다.
 
@@ -49,7 +49,7 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
 
 >[!NOTE]
-소프트웨어 배포 포털에서 모범 사례  [분석기를 ](https://experience.adobe.com/#/downloads/content/software-distribution/kr/aemcloud.html) 다운로드합니다.
+소프트웨어 배포 포털에서 모범 사례  [분석기를 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 다운로드합니다.
 
 ## 모범 사례 분석기 보고서 보기 {#viewing-report}
 
@@ -247,8 +247,8 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 BPA는 `repository-reader-service`라는 시스템 서비스 사용자 계정을 사용하여 패턴 탐지기를 실행합니다. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서 이 계정은 BPA를 설치하기 전에 *다음 단계를 수행하여 만들어야 합니다.*
 
-1. 사용자를 만들려면 [새 서비스 사용자 만들기](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)의 지침을 따르십시오. UserID를 `repository-reader-service`로 설정하고 중간 경로를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
+1. 사용자를 만들려면 [새 서비스 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)의 지침을 따르십시오. UserID를 `repository-reader-service`로 설정하고 중간 경로를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
 
-2. [사용자 및 그룹 관리](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/security/security.html#managing-users-and-groups)의 지침, 특히 그룹에 사용자 추가 지침을 따라 `repository-reader-service` 사용자를 `administrators` 그룹에 추가합니다.
+2. [사용자 및 그룹 관리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)의 지침, 특히 그룹에 사용자 추가 지침을 따라 `repository-reader-service` 사용자를 `administrators` 그룹에 추가합니다.
 
 3. 소스 AEM 인스턴스에 패키지 관리자를 통해 BPA 패키지를 설치합니다. (`repository-reader-service` 시스템 서비스 사용자에 대한 ServiceUserMapper 구성에 필요한 구성 수정을 추가합니다.)
