@@ -2,10 +2,10 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 2%
+source-wordcount: '2869'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->이 문서가 이러한 학습 및 개념을 기반으로 작성되므로 기본 [AEM Project Archetype 사용](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) 및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)에 대해 숙지하십시오.
+>이 문서가 이러한 학습 및 개념을 기반으로 작성되므로 기본 [AEM Project Archetype 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)에 대해 숙지하십시오.
 
 이 문서에서는 변경 가능한 컨텐츠와 변경할 수 없는 컨텐츠 분리를 사용하여 Adobe Experience Manager Maven 프로젝트에 필요한 변경 사항을 설명하고, 상충되는 배포가 없도록 종속성을 설정하고, 배포 가능한 구조로 패키지되어 있다는 점을 확인하여 호환되는 Cloud Service으로 AEM에 필요한 변경 사항을 설명합니다.
 
@@ -60,7 +60,7 @@ Oak 인덱스(`/oak:index`)는 특별히 AEM에서 Cloud Service 배포 프로�
 + OSGi 번들 Jar 파일이 생성되어 모든 프로젝트에 직접 포함됩니다.
 
 + `ui.apps` 패키지에는 배포할 모든 코드가 포함되어 있으며 `/apps`에만 배포됩니다. `ui.apps` 패키지의 일반적인 요소는 포함되지만 다음 항목에 제한되지 않습니다.
-   + [구성 요소 정의 및 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) HTLscripts
+   + [구성 요소 정의 및 ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) HTLscripts
       + `/apps/my-app/components`
    + JavaScript 및 CSS([클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md)를 통해)
       + `/apps/my-app/clientlibs`
