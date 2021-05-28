@@ -2,10 +2,10 @@
 title: 구성 요소에 대해 JSON 내보내기 활성화
 description: 구성 요소를 모델러 프레임워크를 기반으로 해당 컨텐츠의 JSON 내보내기를 생성하도록 조정할 수 있습니다.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 9%
+source-wordcount: '478'
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ JSON 내보내기는 [Sling Models](https://sling.apache.org/documentation/bundl
 
 >[!NOTE]
 >
->Sling 모델을 사용하는 예는 문서 [AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)에서 Sling 모델 내보내기 개발 을 참조하십시오.
+>Sling 모델을 사용하는 예는 문서 [AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)에서 Sling 모델 내보내기 개발 을 참조하십시오.
 
 Sling 모델 구현 클래스에 다음과 같은 주석을 달아야 합니다.
 
@@ -70,7 +70,7 @@ JSON Exporter 프레임워크에서 고려하려면 모델 인터페이스가 `C
 
 ## 예 {#example}
 
-[핵심 구성 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 요소는 JSON 내보내기를 지원하며 참조로 사용할 수 있습니다.
+[핵심 구성 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 요소는 JSON 내보내기를 지원하며 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 코어 구성 요소의 Sling 모델 구현과 주석으로 구성된 인터페이스를 참조하십시오.
 
@@ -81,4 +81,4 @@ JSON Exporter 프레임워크에서 고려하려면 모델 인터페이스가 `C
 * [자산 사용 안내서의 컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)
 * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [핵심 ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 구성 요소 및  [컨텐츠 조각 구성 요소](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/content-fragment-component.html)
+* [핵심 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 구성 요소 및  [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
