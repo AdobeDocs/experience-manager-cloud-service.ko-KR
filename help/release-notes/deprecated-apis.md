@@ -1,10 +1,10 @@
 ---
 title: 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] 에서 사용 중단되거나 제거된 API에 관한 릴리스 노트입니다.  [!DNL Cloud Service]'
-source-git-commit: 3c4b8f8d9b252cfc90823c475a4e21eefd1dfcf7
+source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 7%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 0%
     <td>org.apache.sling.settings</td>
     <td>AEM as a Cloud Service은 런타임 시 실행 모드나 파일 시스템 액세스를 지원하지 않습니다. </td>
     <td>10/5/20</td>
-    <td>6/1/21</td>
+    <td>2021년 말</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
