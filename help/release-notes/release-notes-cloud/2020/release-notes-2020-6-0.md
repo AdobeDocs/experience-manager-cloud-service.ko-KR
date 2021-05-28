@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0용 릴리스 노트
 description: Experience Manager 2020.6.0용 릴리스 노트
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 98%
+source-wordcount: '1941'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기�
 
 ### 새로운 기능 {#whats-new-2020.6.0}
 
-[핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer)와 핵심 구성 요소 간의 통합
 * 모든 구성 요소에 대해 구성 가능한 HTML ID 속성
@@ -60,11 +60,11 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * Cloud Manager의 *비즈니스 소유자* 역할의 사용자는 이제 랜딩 페이지(프로그램 카드의 빠른 작업 단추)나 프로그램 내에서 샌드박스 프로그램을 삭제할 수 있습니다.
 
-   자세한 내용은 [샌드박스 프로그램 삭제](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
+   자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
 * Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이지 환경 세트를 삭제할 수 있습니다. 이제 **프로그램 개요** 페이지와 **환경** 페이지의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다 . 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
 
-   자세한 내용은 [샌드박스 프로그램 삭제](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
+   자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
 * 랜딩 페이지의 코치 표시를 사용하여 사용자에게 기본 탐색에 대해 알리고 지시합니다.
 
@@ -76,11 +76,11 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * 이제 SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 권한을 관리할 수 있는 Admin Console의 위치에 클릭 한 번으로 액세스할 수 있습니다. 이제 **액세스 관리** 단추를 **프로그램 추가** 단추 옆에 있는 랜딩 페이지에서 사용할 수 있습니다.
 
-   자세한 내용은 [SysAdmin 작업](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)을 참조하십시오.
+   자세한 내용은 [SysAdmin 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)을 참조하십시오.
 
 * 이제 SysAdmin 역할의 사용자는 Cloud Manager에서 직접 작성자 인스턴스에 한 번의 클릭으로 액세스할 수 있습니다.
 
-   자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)를 참조하십시오.
+   자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)를 참조하십시오.
 
 * 이제 빌드 로그에는 생략된 컨텐츠 패키지를 포함하여 검색된 객체 목록이 포함됩니다.
 
