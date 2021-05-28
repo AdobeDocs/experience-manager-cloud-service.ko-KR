@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] as a 2020.8.0 Cloud Service 릴리스 노트'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1046'
 ht-degree: 5%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 5%
 
 * 처리 프로필을 사용하여 계산 서비스를 사용하여 사용자 지정 메타데이터를 생성합니다. 처리 프로필](/help/assets/manage-metadata.md#metadata-compute-service)을 사용하여 사용자 지정 메타데이터 를 참조하십시오.[
 
-* 관리자가 구성할 수 있는 Brand Portal 사용자를 위한 간단한 다운로드 경험입니다. [경험 개요 다운로드](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)를 참조하십시오.
+* 관리자가 구성할 수 있는 Brand Portal 사용자를 위한 간단한 다운로드 경험입니다. [경험 개요 다운로드](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)를 참조하십시오.
 
-* 이제 Brand Portal에서 기본 및 고화질 PDF 문서 미리 보기를 사용할 수 있습니다. [문서 뷰어 개요](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)를 참조하십시오.
+* 이제 Brand Portal에서 기본 및 고화질 PDF 문서 미리 보기를 사용할 수 있습니다. [문서 뷰어 개요](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)를 참조하십시오.
 
 * 이제 CDN(Content Delivery Network) 캐시를 AEM의 [!DNL Dynamic Media]에서 Cloud Service으로 직접 무효화할 수 있습니다( [!DNL Dynamic Media Classic] 사용 시와 반대임). 이렇게 하면 몇 시간이 아닌 몇 분 내에 최신 자산을 제공할 수 있습니다. [Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)을 통해 CDN 캐시 무효화하기 를 참조하십시오.
 
