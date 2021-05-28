@@ -2,9 +2,9 @@
 title: 구성 요소
 description: 구성 요소는 AEM에서 컨텐츠 페이지의 기본적인 작성 빌딩 블록입니다.
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 ## 코어 구성 요소 {#core-components}
 
-[코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)는 페이지를 작성하는 데 필요한 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
+[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)는 페이지를 작성하는 데 필요한 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
 이 구성 요소는 AEM 우수 사례를 사용하여 빌드하며 AEM 작성 환경의 기반입니다. 코어 구성 요소는 특정 프로젝트 요구 사항을 충족하도록 개발자가 쉽게 확장할 수 있습니다.
 
