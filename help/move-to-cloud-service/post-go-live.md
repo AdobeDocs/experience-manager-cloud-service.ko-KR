@@ -2,14 +2,22 @@
 title: Go-live 후 단계
 description: Go-live 후 단계
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 73%
 
 ---
 
 # Go-live 후 {#post-go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="AEM 문제 해결"
+>abstract="개발자 콘솔 및 CRXDE Lite과 같은 도구와 함께 지속적인 개발에 대한 우수 사례를 검토하고 로그를 관리하여 AEM의 문제 해결을 지원합니다"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
+
 
 Go-live 후 단계에서는 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
@@ -43,4 +51,10 @@ UI를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 
 
 ### 추가 지원 {#additional-support}
 
-클라우드 서비스 액세스에 대한 질문이 있는 경우 Adobe 담당자 또는 Adobe AEM CQ 지원 포털에 문의하십시오.
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="도움말 및 지원"
+>abstract="AEM 지원 팀에 문의하여 명확히 하거나 문제를 해결할 수 있습니다."
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
+
+Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자 또는 [Experience Cloud 지원](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)에 문의하여 자세한 내용을 확인하십시오.
