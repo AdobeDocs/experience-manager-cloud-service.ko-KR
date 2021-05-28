@@ -2,9 +2,9 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3675'
+source-wordcount: '3657'
 ht-degree: 1%
 
 ---
@@ -240,9 +240,13 @@ Granite UI는 작성 환경에서 대화 상자를 만드는 데 필요한 다�
 
 ### 대화 상자 필드 사용자 지정 {#customizing-dialog-fields}
 
+<!--
+Content not found
+
 >[!TIP]
 >
->대화 상자 필드 사용자 지정에 대해서는 [AEM Gems 세션](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)을 참조하십시오.
+>See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
+-->
 
 구성 요소 대화 상자에서 사용할 새 위젯을 만들려면 새로운 Granite UI 필드 구성 요소를 만들어야 합니다.
 
@@ -446,7 +450,7 @@ Granite UI 및 Granite UI 위젯의 필드 유효성 검사는 `foundation-valid
 
 ## 미리 보기 동작 {#preview-behavior}
 
-페이지를 새로 고치지 않아도 미리 보기 모드로 전환할 때 [WCM 모드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키가 설정됩니다.
+페이지를 새로 고치지 않아도 미리 보기 모드로 전환할 때 [WCM 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키가 설정됩니다.
 
 WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별히 새로 고친 다음, 쿠키의 값에 의존하도록 정의해야 합니다.
 
