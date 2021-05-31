@@ -2,16 +2,16 @@
 title: angular을 사용하여 AEM에서 SPA 시작하기
 description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하며 이 응용 프로그램을 구성하는 방법을 설명하고 Angular 프레임워크을 사용하여 신속하게 자체 SPA을 사용하여 실행 및 실행할 수 있도록 해줍니다.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 3%
+source-wordcount: '993'
+ht-degree: 2%
 
 ---
 
 # angular {#getting-started-with-spas-in-aem-using-angular}을 사용하여 AEM에서 SPA 시작하기
 
-SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 작성하려고 하며 작성자는 SPA 프레임워크을 사용하여 작성된 사이트의 AEM 내에서 컨텐츠를 원활하게 편집하려고 합니다.
+Single page applications (SPAs) can offer compelling experiences for website users. 개발자는 SPA 프레임워크을 사용하여 사이트를 작성하려고 하며 작성자는 SPA 프레임워크을 사용하여 작성된 사이트의 AEM 내에서 컨텐츠를 원활하게 편집하려고 합니다.
 
 SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 Angular 프레임워크에 간소화된 SPA 애플리케이션을 제공하며 이 애플리케이션을 구성하는 방법을 설명하므로 SPA을 빠르게 시작하고 실행할 수 있습니다.
 
@@ -19,15 +19,15 @@ SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을
 >
 >이 문서는 Angular 프레임워크을 기반으로 합니다. React 프레임워크에 대한 해당 문서는 [AEM에서 SPA 시작하기 - React](getting-started-react.md)를 참조하십시오.
 
-## 소개 {#introduction}
+## Introduction {#introduction}
 
 이 문서에서는 간단한 SPA의 기본 기능과 최소 기능을 사용하여 실행할 수 있도록 합니다.
 
 AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-* [SPA 소개 및 연습](introduction.md)
-* [SPA 편집기 개요](editor-overview.md)
-* [SPA 블루프린트](blueprint.md)
+* [SPA Introduction and Walkthrough](introduction.md)
+* [SPA Editor Overview](editor-overview.md)
+* [SPA Blueprint](blueprint.md)
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 예상되는 Angular 종속성 외에, 샘플 SPA은 추가 라이브러리를 활용하여 SPA을 보다 효율적으로 만들 수 있습니다.
 
-### 종속성 {#dependencies}
+### Dependencies {#dependencies}
 
 `package.json` 파일은 전체 SPA 패키지의 요구 사항을 정의합니다. 필요한 최소 AEM 종속성은 여기에 나열됩니다.
 
@@ -96,9 +96,9 @@ module.exports = {
 
 완료되면 패키지를 AEM 인스턴스에 업로드할 수 있습니다.
 
-### AEM 프로젝트 전형 {#aem-project-archetype}
+### AEM Project Archetype {#aem-project-archetype}
 
-모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
 ## 응용 프로그램 구조 {#application-structure}
 
