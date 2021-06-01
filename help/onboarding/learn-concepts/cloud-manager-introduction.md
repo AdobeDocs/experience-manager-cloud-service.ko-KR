@@ -1,7 +1,7 @@
 ---
 title: Cloud Manager란?
 description: Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알려면 이 페이지를 따르십시오.
-source-git-commit: 58d4626da9fccd405cbc32d4a562641359352157
+source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Cloud Manager 프로그램은 비즈니스 이니셔티브의 논리적 집합�
 클라우드 환경은 Cloud Manager를 통해 생성, 액세스 및 표시됩니다. 프로덕션 환경, 스테이지 환경 또는 개발 환경일 수 있습니다. 다른 환경은 서로 다른 목적을 지원하며 서로 다른 CI/CD 파이프라인을 사용하여 참여할 수 있습니다. 환경은 다음과 같은 서비스로 구성됩니다.
 
 * [AEM 작성자 서비스](#author-services)
-* [AEM 게시 서비스](publish-services)
+* [AEM 게시 서비스](#publish-services)
 * [Dispatcher 서비스](#dispatcher-services)
 
    >[!NOTE]
