@@ -2,9 +2,9 @@
 title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
+source-git-commit: 40897b9194de56251da73cbea8718845882f98af
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1093'
 ht-degree: 3%
 
 ---
@@ -142,7 +142,23 @@ AEM as a Cloud Service 2021.5.0의 Cloud Manager 릴리스 날짜는 2021년 5�
 
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
-### 릴리스 날짜 {#release-date-ctt}
+### 릴리스 날짜 {#release-date-ctt-latest}
+
+컨텐츠 전송 도구 v1.4.6의 릴리스 날짜는 2021년 5월 27일입니다.
+
+### 새로운 기능 {#what-is-new-ctt-latest}
+
+* 사용자에게 Java 실행 파일에 대한 실행 권한이 없는 경우 빠른 시작의 오류 로그에 새 로깅 문이 추가되었습니다.
+
+* 사용자가 추출이 수행된 CTT UI에서 마이그레이션 세트를 삭제하면 해당 마이그레이션 세트에 연결된 `tmp` 폴더가 삭제되어 공간을 저장합니다.
+
+### 버그 수정 {#bug-fixes-ctt-latest}
+
+* 마이그레이션 세트를 삭제할 때 간혹 CTT UI에 도움이 되지 않는 오류 메시지가 표시됩니다. 이 문제가 수정되었습니다.
+
+* 사용자 매핑을 실행하는 동안 사용자에게 타겟 및 호스트에 동일한 이메일 주소가 있지만 다른 사용자 이름이 있는 경우 전체 수집이 실패합니다. 이 문제가 수정되었습니다. 이러한 충돌하는 시나리오에서는 사용자/그룹을 건너뛰고 로그 파일에서 충돌로 기록됩니다.
+
+### 릴리스 날짜 {#release-date-ctt-may}
 
 컨텐츠 전송 도구 v1.4.0의 릴리스 날짜는 2021년 5월 11일입니다.
 
