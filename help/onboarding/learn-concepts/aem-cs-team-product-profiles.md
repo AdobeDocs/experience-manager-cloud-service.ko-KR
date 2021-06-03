@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service 팀 및 제품 프로필
 description: AEM as a Cloud Service 팀 및 제품 프로필에 대해 알려면 이 페이지를 따르십시오.
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 제품 프로필 {#profiles}
 
-특정 Adobe 솔루션에 대한 사용자 액세스 권한을 부여할 때 반드시 전체 액세스 권한을 부여할 필요는 없습니다. 제품 프로필을 사용하면 각 솔루션에 고유한 사용자 권한 세트를 가질 수 있습니다. Adobe Admin Console을 통해 사용 및 액세스할 수 있습니다.
+특정 Adobe 솔루션에 대한 사용자 액세스 권한을 부여할 때 반드시 전체 액세스 권한을 부여할 필요는 없습니다. 제품 프로필을 사용하면 각 솔루션에 고유한 사용자 권한 세트를 가질 수 있습니다. 이러한 속성은 [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md)을 통해 사용 가능하고 액세스할 수 있습니다.
 
 [AEM as a Cloud Service 제품 프로필](#aem-product-profiles) 및 [Cloud Manager 제품 프로필](#cloud-manager-product-profiles)에 대해 자세히 알아보십시오.
 
@@ -40,13 +40,13 @@ Cloud Manager에는 미리 구성된 제품 프로필 또는 보다 간단한 �
 
 각 제품 프로필에는 연관된 특정 권한이 있습니다. 예를 들어 다음 역할의 경우:
 
-* **비즈니스 소유자** 는 새 프로그램 추가 또는 프로그램 편집, 환경 추가 또는 업데이트, 파이프라인의 추가/편집/삭제, 파이프라인 실행, AEM 환경 또는 코드 품질에 코드 배포 등의 권한이 있습니다.
+* **비즈니스 소유자** 는 새 프로그램을 추가하거나 프로그램을 편집하고, 환경을 추가 또는 업데이트하고, 파이프라인을 추가/편집/삭제하고, 파이프라인을 실행하고, 코드를 AEM 환경 또는 코드 품질에 배포할 수 있는 권한이 있습니다.
 
 * **배포 관리자** 는 환경을 추가 또는 업데이트하고, 파이프라인을 실행하고, 코드를 AEM 환경 또는 코드 품질에 배포할 수 있는 권한이 있습니다.
 
 * **개발자**, Git에 액세스하기 위해 개인 액세스 토큰을 생성할 수 있는 권한이 있습니다.
 
-* **프로그램 관리자**. Git에 액세스할 수 있는 권한이 있습니다.
+* **프로그램 관리자** 는 파이프라인을 예약하고, 3 계층 품질 게이트를 재정의하고, 프로덕션 승인을 제공할 권한이 있습니다.
 
 사용자는 여러 제품 프로필에 할당할 수 있습니다. 예를 들어, 사용자에게 비즈니스 소유자 및 배포 관리자 역할을 모두 할당하면 이러한 권한의 조합이나 합계가 제공됩니다.
 
@@ -57,4 +57,4 @@ Cloud Manager 팀에는 적어도 다음이 포함됩니다.
 * 하나의 개발자
 
    >[!NOTE]
-   >AEM에 대한 Cloud Service 액세스 권한을 부여하려면 사용자가 두 제품 프로필 `AEM Users-xxx` 또는 `AEM Administrators-xxx` 중 하나에 속해야 하며, 인스턴스에 대한 사용 권한이 있어야 합니다. 연관된 Cloud Manager 관리 권한으로는 충분하지 않습니다.
+   >AEM에 대한 Cloud Service 액세스 권한을 부여하려면 사용자가 `AEM Users` 또는 `AEM Administrators` 등의 두 제품 프로필 중 하나에 속해야 합니다. 인스턴스에 대한 권한을 부여해야 하며, 연결된 Cloud Manager를 관리할 수 있는 권한으로는 충분하지 않습니다.
