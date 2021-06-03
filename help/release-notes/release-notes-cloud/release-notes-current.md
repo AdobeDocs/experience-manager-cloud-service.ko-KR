@@ -2,10 +2,10 @@
 title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 3%
+source-wordcount: '1349'
+ht-degree: 2%
 
 ---
 
@@ -96,6 +96,29 @@ ht-degree: 3%
       >
    * 아시아 태평양 2021년 6월 24일.
 
+
+## [!DNL Adobe Experience Manager Forms]로서의 [!DNL Cloud Service]  {#forms}
+
+### [!DNL Forms] {#what-is-new-forms}의 새로운 기능
+
+* **상황별 도움말**:작성자가 다양한 편집기의 기능을 더 잘 이해할 수 있도록 적응형 양식 편집기, 템플릿 편집기 및 테마 편집기에 대한 상황별 도움말을 추가했습니다.
+* **속성 브라우저의 오류 메시지**:응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
+
+### [!DNL Forms] {#what-is-new-forms-prerelease}의 예정된 베타 기능
+
+클라우드 서비스로 출력:출력 서비스를 사용하면 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기식 및 비동기식 배치 모드로 문서를 생성할 수 있습니다. 출력 서비스를 통해 다음을 수행할 수 있는 응용 프로그램을 만들 수 있습니다.
+
+* XML 데이터로 템플릿 파일을 채워서 최종 양식 문서를 생성합니다.
+* 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
+* XFA 양식 PDF에서 인쇄 PDF를 생성합니다.
+
+formscsbeta@adobe.com에 편지를 보내 베타 프로그램에 등록할 수 있습니다.
+
+### [!DNL Forms] {#forms-bugs-fixed}에 수정된 버그
+
+* AEM Forms Workflows의 작업 할당 단계에서 작업 단추의 기본 아이콘을 coral 아이콘으로 바꾸면 워크플로우가 작동하지 않고 예외가 기록됩니다. 워크플로우는 기본 아이콘을 사용할 때 예상대로 수행됩니다.
+* 레이아웃 레이어에서 열 수를 변경하고 편집 레이어를 열고 패널에서 일부 구성 요소를 드래그하면 적응형 양식 편집기의 콘텐츠 영역에 파란색 사각형 상자가 나타나고 편집기가 응답하지 않습니다.
+* 적응형 또는 외부 자산의 URL 제공과 관련된 규칙 편집기 옵션의 오류 메시지가 너무 길며 사용자에게 친절하지 않습니다.
 
 ## Cloud Manager {#cloud-manager}
 
