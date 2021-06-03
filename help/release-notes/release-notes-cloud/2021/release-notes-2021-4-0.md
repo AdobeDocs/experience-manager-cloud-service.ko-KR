@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 릴리스의 릴리스 노트'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 릴리스의 릴리스 노트'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1496'
+ht-degree: 3%
 
 ---
 
@@ -85,6 +85,8 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 * 단일 행 텍스트 필드에 메타데이터 값을 업데이트하고 저장하는 동안 드롭다운 메뉴에서 편집이 비활성화된 경우에도 드롭다운 메뉴의 값이 삭제됩니다. (CQ-4317077)
 
 * 생략 부호를 주석으로 사용하여 자산을 검토할 수 있습니다. 작은 타원을 사용하면 타원이 인쇄 버전의 주석 수와 겹칩니다. (CQ-4316792)
+
+* 자산을 검색한 후 검색 결과에서 자산을 선택하면 빠른 게시 옵션이 표시되지 않습니다. (CQ-4317748)
 
 ## [!DNL Adobe Experience Manager Forms]로서의 [!DNL Cloud Service]  {#forms}
 
