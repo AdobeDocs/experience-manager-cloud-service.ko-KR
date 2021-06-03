@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service 팀 및 제품 프로필
 description: AEM as a Cloud Service 팀 및 제품 프로필에 대해 알려면 이 페이지를 따르십시오.
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -11,14 +11,17 @@ ht-degree: 0%
 
 # AEM as a Cloud Service 팀 및 제품 프로필 {#product-profiles}
 
-AEM as a Cloud Service은 AEM as a service를 제공하는 완전히 클라우드 기반의 서비스입니다. 항상 켜져 있고 항상 최신 상태이며 항상 안전하며 규모에 맞게 항상 새로운 특성을 사용하여 AEM을 클라우드 기반의 방식으로 전달합니다. 동시에 AEM에서 고객에게 맞춤형 플랫폼으로 제공하는 주요 가치 제안을 유지하고 엔터프라이즈급 팀이 개발 및 제공 절차에 통합할 수 있도록 지원합니다. AEM as a Cloud Service에 대해 자세히 알려면 [Adobe Experience Manager as a Cloud Service 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en)를 참조하십시오.
+## 제품 프로필 {#profiles}
 
-AEM as a Cloud Service 팀 구성원은 온보딩 중에 Admin Console을 통해 다음 제품 프로필 중 하나 이상에 추가되고 할당됩니다.
+특정 Adobe 솔루션에 대한 사용자 액세스 권한을 부여할 때 반드시 전체 액세스 권한을 부여할 필요는 없습니다. 제품 프로필을 사용하면 각 솔루션에 고유한 사용자 권한 세트를 가질 수 있습니다. Adobe Admin Console을 통해 사용 및 액세스할 수 있습니다.
 
+[AEM as a Cloud Service 제품 프로필](#aem-product-profiles) 및 [Cloud Manager 제품 프로필](#cloud-manager-product-profiles)에 대해 자세히 알아보십시오.
 
 ## AEM as a Cloud Service 제품 프로필 {#aem-product-profiles}
 
-다음 제품 프로필을 AEM as a Cloud Service 팀으로 사용할 수 있습니다.
+AEM as a Cloud Service은 AEM as a service를 제공하는 완전히 클라우드 기반의 서비스입니다. 항상 켜져 있고 항상 최신 상태이며 항상 안전하며 규모에 맞게 항상 새로운 특성을 사용하여 AEM을 클라우드 기반의 방식으로 전달합니다. 동시에 AEM에서 고객에게 맞춤형 플랫폼으로 제공하는 주요 가치 제안을 유지하고 엔터프라이즈급 팀이 개발 및 제공 절차에 통합할 수 있도록 지원합니다. AEM as a Cloud Service에 대해 자세히 알려면 [Adobe Experience Manager as a Cloud Service 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=en)를 참조하십시오.
+
+AEM as a Cloud Service 팀 구성원은 온보딩 중에 Admin Console을 통해 다음 제품 프로필 중 하나 이상에 추가되고 할당됩니다.
 
 * **AEM 관리자**:AEM 관리자는 일반적으로 개발자나, 특히 개발 환경과 같은 환경에 액세스할 수 있어야 하는 개발자에게 할당됩니다. AEM Administrators 제품 프로필은 연결된 AEM 인스턴스에서 관리자 권한을 부여하는 데 사용됩니다.
 
@@ -52,4 +55,4 @@ Cloud Manager 팀에는 적어도 다음이 포함됩니다.
 * 하나의 개발자
 
    >[!NOTE]
-   >AEM에 대한 Cloud Service 액세스 권한을 부여받으려면 사용자가 두 제품 프로필 `AEM Users-xxx` 또는 `AEM Administrators-xxx` 중 하나에 속해야 합니다. 인스턴스에 대한 권한이 있어야 합니다. 연관된 Cloud Manager 관리 권한으로는 충분하지 않습니다.
+   >AEM에 대한 Cloud Service 액세스 권한을 부여하려면 사용자가 두 제품 프로필 `AEM Users-xxx` 또는 `AEM Administrators-xxx` 중 하나에 속해야 하며, 인스턴스에 대한 사용 권한이 있어야 합니다. 연관된 Cloud Manager 관리 권한으로는 충분하지 않습니다.
