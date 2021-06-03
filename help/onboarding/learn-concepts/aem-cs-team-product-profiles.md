@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service 팀 및 제품 프로필
 description: AEM as a Cloud Service 팀 및 제품 프로필에 대해 알려면 이 페이지를 따르십시오.
-source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
+source-git-commit: 5c74c3f011ed8d77fc20b7a802603d37b67d2e7c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -26,6 +26,8 @@ AEM as a Cloud Service 팀 구성원은 온보딩 중에 Admin Console을 통해
 * **AEM 관리자**:AEM 관리자는 일반적으로 개발자나, 특히 개발 환경과 같은 환경에 액세스할 수 있어야 하는 개발자에게 할당됩니다. AEM Administrators 제품 프로필은 연결된 AEM 인스턴스에서 관리자 권한을 부여하는 데 사용됩니다.
 
 * **AEM 사용자**:AEM 사용자는 Adobe과의 계약의 일부로서 AEM을 Cloud Service으로 사용하는 조직의 사용자입니다. 이러한 구성원은 작업을 수행하려면 AEM에 액세스해야 합니다. AEM 사용자 제품 프로필은 일반적으로 컨텐츠를 만들고 검토하는 AEM 컨텐츠 작성자에게 할당됩니다(몇 가지 유형일 수 있습니다.예를 들어, 페이지, 자산, 게시물 등이 웹 사이트에 게시되기 전에 게시됩니다. 아래 표시된 AEM Users 제품 프로필은 이러한 구성원에게 지정됩니다.
+
+   ![](/help/onboarding/learn-concepts/assets/admin-console-profiles.png)
 
    >[!NOTE]
    >Cloud Service 제품 프로필로 AEM에 지정된 모든 사용자는 Cloud Manager에 대한 액세스 권한이 있습니다(읽기 전용).
