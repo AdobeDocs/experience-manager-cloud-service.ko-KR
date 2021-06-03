@@ -1,9 +1,9 @@
 ---
 title: Adobe ID
 description: 이 페이지에서는 Adobe ID에 대한 소개 정보를 설명합니다.
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: d8e4635bba1b8a3e825e70c921a5d0c5aff52990
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '291'
 ht-degree: 1%
 
 ---
@@ -11,11 +11,9 @@ ht-degree: 1%
 
 # Adobe ID {#adobe-id}
 
-Adobe ID은 이메일 주소일 뿐이며, AEM을 Cloud Service 또는 Adobe 솔루션으로 로그인하고 액세스하는 데 사용합니다. 이 주소는 시스템 관리자가 조직이 소유한 모든 Adobe 솔루션에 액세스할 수 있도록 사용하는 [identity]((https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)과 연결된 이메일 주소입니다.
+Adobe ID은 Cloud Service 또는 Adobe 솔루션으로 AEM에 로그인하고 액세스하는 데 사용할 이메일입니다. 팀을 설정하는 동안 시스템 관리자가 사용하는 이메일 ID입니다. Adobe ID을 사용하면 모든 Adobe 계획과 제품을 단일 계정과 연결된 상태로 유지할 수 있습니다. Adobe 애플리케이션 및 서비스를 통해 안전하고 개인화된 경험을 제공하려면 Adobe ID이 필수적입니다.
 
->[!IMPORTANT]
->Adobe ID은 Adobe 애플리케이션 및 서비스를 통해 안전하고 개인화된 경험에 필수적이며 Adobe 제품을 구매하려면 필요합니다. Adobe ID을 사용하면 모든 Adobe 계획 및 제품을 단일 계정과 연결된 상태로 유지합니다. 자세한 내용은 [Adobe ID 만들기 또는 업데이트](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID)를 참조하십시오.
-
+자세한 내용은 [Adobe ID 만들기 또는 업데이트](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID)를 참조하십시오.
 
 Adobe ID에는 다음 세 가지 유형이 있습니다.
 
