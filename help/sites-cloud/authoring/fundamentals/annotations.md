@@ -2,7 +2,7 @@
 title: 페이지 주석 추가
 description: 스티커 노트를 사용하여 컨텐츠 검토 프로세스를 지원하는 것처럼 주석 및 스케치를 페이지에 그대로 두려면 주석 모드를 사용합니다
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 35%
@@ -45,7 +45,7 @@ ht-degree: 35%
 
 1. 주석을 클릭하거나 탭하여 주석 대화 상자를 열고 주석 세부 사항을 봅니다.
 
-   ![주석 세부 정보](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![주석 세부 정보](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. 주석 모드를 종료하고 이전에 사용한 모드로 돌아가려면 상단 도구 모음 오른쪽에 있는 x 버튼을 탭/클릭합니다.
 
