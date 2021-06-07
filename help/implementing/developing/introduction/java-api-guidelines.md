@@ -2,9 +2,9 @@
 title: Java API 지침
 description: AEM은 사용할 많은 Java API를 표시하는 풍부한 오픈 소스 소프트웨어 스택을 기반으로 구축됩니다.
 exl-id: 0be33ec9-a4c3-4400-99d3-ed8366c5b5f9
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ AEM(Adobe Experience Manager)은 개발 중에 사용할 많은 Java API를 표�
 
 AEM은 다음 네 개의 기본 Java API 세트를 기본 설정의 내림차순으로 기반으로 구축됩니다.
 
-1. **[Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html)**  - 페이지, 자산, 워크플로우 등과 같은 제품 추상
+1. **[Adobe Experience Manager (AEM)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)**  - 페이지, 자산, 워크플로우 등과 같은 제품 추상
 1. **[Apache Sling Web Framework](https://sling.apache.org/apidocs/sling11/)**  - 리소스, 값 맵 및 HTTP 요청과 같은 REST 및 리소스 기반 추상입니다.
 1. **[JCR(Apache Jackrabbit Oak)](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)**  - 노드, 속성 및 세션과 같은 데이터 및 컨텐츠 추상.
 1. **[OSGi(Apache Felix)](https://felix.apache.org)**  - 서비스 및 (OSGi) 구성 요소와 같은 OSGi 애플리케이션 컨테이너 추상을 생성합니다.
