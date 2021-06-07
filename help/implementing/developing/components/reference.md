@@ -2,9 +2,9 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3659'
 ht-degree: 1%
 
 ---
@@ -450,7 +450,7 @@ Granite UI 및 Granite UI 위젯의 필드 유효성 검사는 `foundation-valid
 
 ## 미리 보기 동작 {#preview-behavior}
 
-페이지를 새로 고치지 않아도 미리 보기 모드로 전환할 때 [WCM 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키가 설정됩니다.
+페이지를 새로 고치지 않아도 미리 보기 모드로 전환할 때 [WCM 모드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키가 설정됩니다.
 
 WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별히 새로 고친 다음, 쿠키의 값에 의존하도록 정의해야 합니다.
 
