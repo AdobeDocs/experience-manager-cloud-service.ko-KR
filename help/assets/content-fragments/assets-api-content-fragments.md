@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Assets HTTP API에서 Cloud Service 컨텐�
 description: AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: 컨텐츠 조각,자산 HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1956'
 ht-degree: 2%
 
 ---
@@ -258,7 +258,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 
 >[!NOTE]
 >
->자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### 읽기/전달 {#read-delivery}
 
@@ -376,7 +376,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 
 자세한 API 참조는 다음을 참조하십시오.
 
-* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
 
