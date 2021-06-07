@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: AEM as a Cloud Service 소프트웨어 개발 키트 개요
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1179'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ AEM as a Cloud Service SDK는 사용자 지정 코드를 작성하고 배포하�
 
 SDK를 자주(예: 2주별) 업데이트하고 실수로 응용 프로그램의 상태 저장 데이터에 의존하지 않도록 전체 로컬 상태를 매일 삭제하는 것이 좋습니다.
 
-CryptoSupport([CryptoSupport에 따라 Cloudservices의 자격 증명을 구성하거나 AEM에서 SMTP Mail 서비스를 구성하거나 응용 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)에서 CryptoSupport API를 사용하여 종속되는 경우, 암호화된 속성은 AEM 환경의 첫 번째 시작 시 자동 생성된 키로 암호화됩니다. cloudsetup에서는 환경별 CryptoKey를 자동으로 재사용하는 동안 로컬 개발 환경에 암호키를 주입해야 합니다.
+CryptoSupport([CryptoSupport에 따라 Cloudservices의 자격 증명을 구성하거나 AEM에서 SMTP Mail 서비스를 구성하거나 응용 프로그램](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)에서 CryptoSupport API를 사용하여 종속되는 경우, 암호화된 속성은 AEM 환경의 첫 번째 시작 시 자동 생성된 키로 암호화됩니다. cloudsetup에서는 환경별 CryptoKey를 자동으로 재사용하는 동안 로컬 개발 환경에 암호키를 주입해야 합니다.
 
 기본적으로 AEM은 폴더의 데이터 폴더 내에 키 데이터를 저장하도록 구성되지만 개발 시 보다 쉽게 재사용할 수 있도록 &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;을 사용하여 첫 번째 시작 시 AEM 프로세스를 초기화할 수 있습니다. 이렇게 하면 &quot;`/etc/key`&quot;에서 암호화 데이터가 생성됩니다.
 
