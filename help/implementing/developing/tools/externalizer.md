@@ -2,9 +2,9 @@
 title: URL 표면화
 description: Externalizer는 리소스 경로를 프로그래밍 방식으로 외부 및 절대 URL로 변환할 수 있는 OSGi 서비스입니다.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ AEM에서 **Externalizer**&#x200B;는 프로그래밍 방식으로 리소스 경
 
 Cloud Service 인스턴스로서의 AEM은 외부에 표시되는 URL을 알 수 없으며, 경우에 따라 요청 범위 외부에서 링크를 만들어야 하기 때문에 이 서비스는 이러한 외부 URL을 구성하고 빌드하기 위한 중앙 위치를 제공합니다.
 
-이 문서에서는 Externalizer 서비스를 구성하는 방법 및 이를 사용하는 방법에 대해 설명합니다. 서비스에 대한 자세한 내용은 [Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)를 참조하십시오.
+이 문서에서는 Externalizer 서비스를 구성하는 방법 및 이를 사용하는 방법에 대해 설명합니다. 서비스에 대한 자세한 내용은 [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)를 참조하십시오.
 
 ## Externalizer의 기본 동작 및 How to Override {#default-behavior}
 
@@ -125,4 +125,4 @@ Externalizer 서비스에 대한 도메인 매핑을 정의하려면
 
 >[!TIP]
 >
->[Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)에서 더 많은 예를 찾을 수 있습니다.
+>[Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)에서 더 많은 예를 찾을 수 있습니다.
