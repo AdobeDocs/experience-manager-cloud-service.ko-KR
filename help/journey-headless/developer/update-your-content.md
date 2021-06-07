@@ -1,9 +1,9 @@
 ---
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: AEM Headless Developer 여정의 이 부분에서 REST API를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다.
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1053'
 ht-degree: 2%
 
 ---
@@ -255,7 +255,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 >[!NOTE]
 >
->자세한 내용은 API 참조를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>자세한 내용은 API 참조를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### 읽기/전달 {#read-delivery}
 
@@ -325,7 +325,7 @@ AEM Headless 여정을 계속 진행하려면 다음 문서 [How to Go Live with
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
 * [컨텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
 * [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
