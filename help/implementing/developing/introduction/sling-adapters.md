@@ -2,9 +2,9 @@
 title: Sling 어댑터 사용
 description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 간편하게 번역합니다
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '2130'
+source-wordcount: '2232'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 내부 컨텍스트 개체를 전달해야 하는 개체의 바로 가기 만들기
 
-   예를 들어 JCR 기반 [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)은 요청의 [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)에 대한 참조를 보유하며, 이 참조는 [`PageManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) 또는 [`UserManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)과 같이 해당 요청 세션을 기반으로 작동하는 많은 개체에 필요합니다.
+   예를 들어 JCR 기반 [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)은 요청의 [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)에 대한 참조를 보유하며, 이 참조는 [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) 또는 [`UserManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)과 같이 해당 요청 세션을 기반으로 작동하는 많은 개체에 필요합니다.
 
 * 서비스에 대한 바로 가기.
 
@@ -63,7 +63,7 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
 * 개체 자체에 의해;메서드 자체를 구현하고 특정 객체에 매핑합니다.
 * 임의의 개체를 매핑할 수 있는 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)에 의해 결정됩니다.
 
-   개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며, [`SlingAdaptable`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/adapter/SlingAdaptable.html)(`adaptTo` 호출을 중앙 어댑터 관리자에 전달)를 확장해야 합니다.
+   개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며, [`SlingAdaptable`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/adapter/SlingAdaptable.html)(`adaptTo` 호출을 중앙 어댑터 관리자에 전달)를 확장해야 합니다.
 
    이렇게 하면 `Resource` 등의 기존 클래스에 대한 `adaptTo` 메커니즘에 후크를 사용할 수 있습니다.
 
@@ -75,7 +75,7 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
 
 ### 슬링 {#sling}
 
-[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) 리소스는 다음과 같습니다.
+[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) 리소스는 다음과 같습니다.
 
 <table>
  <tbody>
@@ -96,16 +96,16 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
    <td>JCR 노드 기반 리소스(또는 기타 리소스 지원 값 맵)인 경우 속성 맵을 반환합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>JCR 노드 기반 리소스(또는 기타 리소스 지원 값 맵)인 경우 속성의 사용하기 쉬운 맵을 반환합니다. <br /> <code><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code>(null 케이스 등을 처리)를 사용하여 (보다 간단하게) 구현할 수도 있습니다.</td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
+   <td>JCR 노드 기반 리소스(또는 기타 리소스 지원 값 맵)인 경우 속성의 사용하기 쉬운 맵을 반환합니다. <br /> <code><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code>(null 케이스 등을 처리)를 사용하여 (보다 간단하게) 구현할 수도 있습니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">상속 값 맵</a></td>
-   <td>속성을 찾을 때 리소스 계층 구조를 고려할 수 있는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>의 확장입니다.</td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">상속 값 맵</a></td>
+   <td>속성을 찾을 때 리소스 계층 구조를 고려할 수 있는 <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>의 확장입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">수정 가능한 값 맵</a></td>
-   <td>해당 노드의 속성을 수정할 수 있는 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>의 확장입니다.</td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">수정 가능한 값 맵</a></td>
+   <td>해당 노드의 속성을 수정할 수 있는 <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>의 확장입니다.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">입력 스트림</a></td>
@@ -132,81 +132,81 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
    <td>JCR 속성 기반 리소스인 경우 값을 반환합니다(및 값이 일치함).</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>JCR 노드 기반 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">페이지</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">페이지</a></td>
    <td>JCR 노드 기반 리소스이고 노드가 <code>cq:Page</code>(또는 <code>cq:PseudoPage</code>)인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">구성 요소</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">구성 요소</a></td>
    <td><code>cq:Component</code> 노드 리소스인 경우</td>
   </tr>  
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">디자인</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">디자인</a></td>
    <td>디자인 노드인 경우(<code>cq:Page</code>).</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">템플릿</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">템플릿</a></td>
    <td><code>cq:Template</code> 노드 리소스인 경우</td>
   </tr>  
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/msm/api/Blueprint.html">블루프린트</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/msm/api/Blueprint.html">블루프린트</a></td>
    <td><code>cq:Template</code> 노드 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Asset.html">자산</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Asset.html">자산</a></td>
    <td>dam:Asset 노드 리소스입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">렌디션</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">렌디션</a></td>
    <td>dam:Asset 렌디션인 경우 dam:Assert의 렌디션 폴더 아래에 nt:file</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html">태그</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html">태그</a></td>
    <td><code>cq:Tag</code> 노드 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
    <td>JCR 기반 리소스이고 사용자가 UserManager에 액세스할 권한이 있는 경우 JCR 세션을 기반으로 합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능 대상</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능 대상</a></td>
    <td>Authorizable은 사용자 및 그룹의 공통 기본 인터페이스입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a></td>
    <td>사용자는 인증 및 가장할 수 있는 특별한 승인 가능 사용자입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
    <td>JCR 기반 리소스인 경우 리소스 아래에서 검색합니다(또는 setSearchIn()).</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
    <td>지정된 페이지/워크플로우 페이로드 노드에 대한 워크플로우 상태입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html">복제 상태</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html">복제 상태</a></td>
    <td>지정된 리소스 또는 jcr:content 하위 노드에 대한 복제 상태(먼저 선택됨).</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
    <td>JCR 노드 기반 리소스인 경우 특정 유형에 맞게 조정된 커넥터 리소스를 반환합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">구성</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">구성</a></td>
    <td><code>cq:ContentSyncConfig</code> 노드 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
    <td>이 값이 <code>cq:ContentSyncConfig</code> 노드 리소스 미만이면</td>
   </tr>
  </tbody>
 </table>
 
-[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceResolver.html) ResourceResolver는 다음에 맞게 조정됩니다.
+[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/ResourceResolver.html) ResourceResolver는 다음에 맞게 조정됩니다.
 
 <table>
  <tbody>
@@ -215,54 +215,54 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
    <td>JCR 기반 리소스 확인자(기본값)인 경우 요청의 JCR 세션입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Designer.html">디자이너</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Designer.html">디자이너</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
    <td>JCR 기반 리소스 확인자인 경우 JCR 세션을 기반으로 합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
    <td>JCR 기반 리소스 확인자인 경우 JCR 세션을 기반으로 합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
    <td>UserManager는 사용자 및 그룹과 같은 권한 있는 개체를 유지 관리할 수 있는 액세스 및 수단을 제공합니다. UserManager가 특정 세션에 바인딩되어 있습니다.
    </td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능 대상</a> </td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능 대상</a> </td>
    <td>현재 사용자입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a><br /> </td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a><br /> </td>
    <td>현재 사용자입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html">외부 도우미</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html">외부 도우미</a></td>
    <td>절대 URL을 표면화하기 위해, 요청 개체가 있더라도<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletRequest.html) SlingHttpServletRequestions는 다음에 적용됩니다.
+[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletRequest.html) SlingHttpServletRequestions는 다음에 적용됩니다.
 
 대상이 아직 없지만 Adaptable을 구현하고 사용자 지정 AdapterFactory에서 소스로 사용할 수 있습니다.
 
-[****](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletResponse.html) SlingHttpServletResponsets는 다음에 적용됩니다.
+[****](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/SlingHttpServletResponse.html) SlingHttpServletResponsets는 다음에 적용됩니다.
 
 <table>
  <tbody>
@@ -275,16 +275,16 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
 
 #### WCM {#wcm}
 
-**[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** 페이지는 다음 항목에 맞게 조정됩니다.
+**[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** 페이지는 다음 항목에 맞게 조정됩니다.
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><br /> </td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><br /> </td>
    <td>페이지의 리소스.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>레이블이 지정된 리소스(==).</td>
   </tr>
   <tr>
@@ -298,24 +298,24 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
  </tbody>
 </table>
 
-**[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html)** 구성 요소는 다음과 같습니다.
+**[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html)** 구성 요소는 다음과 같습니다.
 
-| [리소스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 구성 요소의 리소스입니다. |
+| [리소스](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 구성 요소의 리소스입니다. |
 |---|---|
-| [LabeledResource](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | 레이블이 지정된 리소스(==). |
+| [LabeledResource](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html) | 레이블이 지정된 리소스(==). |
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 구성 요소의 노드입니다. |
 | ... | 구성 요소의 리소스에 적용할 수 있는 모든 것입니다. |
 
-**[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html)** 템플릿은 다음과 같습니다.
+**[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html)** 템플릿은 다음과 같습니다.
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>템플릿의 리소스입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>레이블이 지정된 리소스(==).</td>
   </tr>
   <tr>
@@ -335,13 +335,13 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
 
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 사용자/그룹 홈 노드를 반환합니다. |
 |---|---|
-| [복제 상태](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | 사용자/그룹 홈 노드에 대한 복제 상태를 반환합니다. |
+| [복제 상태](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | 사용자/그룹 홈 노드에 대한 복제 상태를 반환합니다. |
 
 #### DAM {#dam}
 
 **** 자산은 다음과 같습니다.
 
-| [리소스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 자산의 리소스입니다. |
+| [리소스](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 자산의 리소스입니다. |
 |---|---|
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 자산의 노드입니다. |
 | ... | 자산의 리소스를 조정할 수 있는 모든 것입니다. |
@@ -350,7 +350,7 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
 
 **** 태그는 다음 항목에 맞게 조정됩니다.
 
-| [리소스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 태그의 리소스. |
+| [리소스](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/api/resource/Resource.html) | 태그의 리소스. |
 |---|---|
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 태그의 노드입니다. |
 | ... | 태그의 리소스에 적용할 수 있는 모든 것입니다. |
