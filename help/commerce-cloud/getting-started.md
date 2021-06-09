@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 2%
@@ -81,7 +81,7 @@ Adobe I/O CLI를 통해 AEM과 상거래 솔루션을 연결하려면 다음 단
 
    자세한 내용은 [CLI 문서](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)를 참조하십시오.
 
-   상거래 GraphQL 끝점 URL은 상거래 GraphQl 서비스를 가리키고 보안 HTTPS 연결을 사용해야 합니다. 예: `https://demo.magentosite.cloud/graphql`.
+   상거래 GraphQL 끝점 URL은 상거래 GraphQl 서비스를 가리키고 보안 HTTPS 연결을 사용해야 합니다. 예: `https://<yourmagentosystem>/graphql`.
 
 4. 인증이 필요한 준비된 카탈로그 기능 활성화(선택 사항)
 
