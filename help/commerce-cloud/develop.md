@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 6%
@@ -73,13 +73,13 @@ AEM을 Cloud Service SDK로 사용하여 로컬 CIF 추가 기능 개발에 사�
    예 Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    예제 Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    이 변수는 AEM에서 상거래 시스템에 연결하는 데 사용됩니다. 또한, CIF 추가 기능에는 Commerce GraphQL 끝점을 로컬에서 사용할 수 있도록 하는 로컬 역방향 프록시가 포함되어 있습니다. CIF 작성 도구(제품 콘솔 및 선택기)와 직접 GraphQL 호출을 수행하는 CIF 클라이언트측 구성 요소에 사용됩니다.
