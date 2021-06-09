@@ -4,7 +4,7 @@ description: 이 페이지에서는 Screens에서 Cloud Service으로 채널을 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 4%
@@ -33,7 +33,11 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 아래 절차에 따라 Screens에서 Cloud Service으로 새 시퀀스 채널을 만드십시오.
 
 1. 스크린 컨텐츠 제공업체로 이동합니다.
-1. SanJoseCafe와 같은 AEM Screens 프로젝트로 이동합니다.
+
+1. *FirstDigitalExperience* 등의 AEM Screens 프로젝트로 이동합니다.
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. 프로젝트에서 **채널** 폴더(예: SanJoseCafe —> 채널)를 선택합니다.
 1. 작업 표시줄에서 **만들기**&#x200B;를 클릭합니다.
 1. **만들기** 마법사에서 **시퀀스 채널**&#x200B;과 같은 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
