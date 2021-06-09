@@ -2,18 +2,18 @@
 title: AEM as a Cloud Service에 대한 로깅
 description: 중앙 로깅 서비스에 대한 글로벌 매개 변수를 구성하는 방법, 개별 서비스에 대한 특정 설정 또는 AEM에서 Cloud Service으로 데이터 로깅을 요청하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2333'
 ht-degree: 2%
 
 ---
 
 # AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service} 의 로깅
 
-AEM as a Cloud Service은 고객이 고객 기반에 대한 고유한 경험을 만들기 위해 사용자 지정 코드를 포함할 수 있는 플랫폼입니다. 이를 위해 로깅은 로컬 개발 및 클라우드 환경, 특히 AEM as a Cloud Service의 개발 환경에서 코드 실행을 디버깅하고 이해하는 데 중요한 기능입니다.
+AEM as a Cloud Service은 고객이 고객 기반에 대한 고유한 경험을 만들기 위해 사용자 지정 코드를 포함할 수 있는 플랫폼입니다. 이를 염두에 두고, 로깅 서비스는 로컬 개발 및 클라우드 환경, 특히 AEM as a Cloud Service의 개발 환경에서 코드 실행을 디버깅하고 이해하기 위한 중요한 기능입니다.
 
-AEM 로깅 및 로그 수준은 Git에서 AEM 프로젝트의 일부로 저장되고 Cloud Manager를 통해 AEM 프로젝트의 일부로 배포되는 구성 파일에서 관리됩니다. AEM as a Cloud Service에 로그인하는 것은 두 개의 논리 세트로 나눌 수 있습니다.
+AEM 로깅 설정 및 로그 수준은 Git에서 AEM 프로젝트의 일부로 저장되고 Cloud Manager를 통해 AEM 프로젝트의 일부로 배포되는 구성 파일에서 관리됩니다. AEM as a Cloud Service에 로그인하는 것은 두 개의 논리 세트로 나눌 수 있습니다.
 
 * AEM 애플리케이션 수준에서 로깅을 수행하는 AEM 로깅
 * 게시 계층에서 웹 서버 및 Dispatcher에 대한 로깅을 수행하는 Apache HTTPD 웹 서버/Dispatcher 로깅.
