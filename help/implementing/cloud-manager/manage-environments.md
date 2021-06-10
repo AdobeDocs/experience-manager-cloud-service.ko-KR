@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8e8764dd39e2bc664a577c863a04a7e4c5e99fd0
+source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1648'
 ht-degree: 1%
 
 ---
@@ -89,9 +89,14 @@ ht-degree: 1%
 
 1. **AEM 버전**:환경은 AEM 버전  `2021.5.5343.20210542T070738Z` 이상이어야 합니다. 이 작업을 수행하려면 업데이트 파이프라인이 사용자 환경에서 성공적으로 실행되었는지 확인하십시오.
 
-1. **기본 IP 허용 목록 잠금**:처음 생성 시 액세스 권한을 활성화하려면 환경의 미리 보기 서비스에서 기본 IP 허용 목록을 적극적으로 적용 취소해야 합니다.
+1. **기본 IP 허용 목록 잠금**:생성 시 미리 보기 서비스 에는 아래 그림과 같이 레이블이  `Preview Default [Env ID]`지정된 기본 IP 허용 목록이 적용됩니다.
 
-   *잠금 해제* 액세스를 사용하여 미리 보기 서비스를 제공하고 원하는 액세스를 제공하려면 필요한 권한을 가진 사용자가 다음 중 하나를 수행해야 합니다.
+   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+
+   >[!NOTE]
+   >처음 생성 시 액세스 권한을 활성화하려면 환경의 미리 보기 서비스에서 기본 IP 허용 목록을 적극적으로 적용 취소해야 합니다.
+
+   *미리 보기 서비스에 대한 잠금을 해제하고 원하는 액세스를 제공하려면 필수 권한을 가진 사용자가 다음 중 하나를 수행해야 합니다.*
 
    * 적절한 IP 허용 목록을 만들어 미리 보기 서비스에 적용합니다. 미리 보기 서비스에서 `Preview Default [Env ID] IP Allow List`을(를) 적용 취소하여 즉시 이 작업을 수행합니다.
 
