@@ -2,10 +2,10 @@
 title: 로그 관리 - Cloud Service
 description: 로그 관리 - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 9%
+source-wordcount: '264'
+ht-degree: 7%
 
 ---
 
@@ -25,6 +25,21 @@ ht-degree: 9%
 >열려 있는 위치에 관계없이 동일한 대화 상자가 표시되고 개별 로그 파일을 다운로드할 수 있습니다.
 
 ![](assets/download-logs2.png)
+
+## 미리 보기 서비스 {#download-preview-service}에 대한 로그 다운로드
+
+사용자는 미리 보기 서비스에 대한 로그를 다운로드할 수 있습니다
+
+1. Cloud Manager의 **개요** 페이지에서 **환경** 카드로 이동합니다.
+
+1. ... 메뉴에서 다운로드 로그를 선택합니다.
+
+1. 서비스 드롭다운 옵션에서 **미리 보기** 또는 **Dispatcher 미리 보기**&#x200B;를 선택한 후 다운로드 아이콘을 클릭합니다.
+
+   >[!NOTE]
+   >이 작업은 환경 세부 사항 페이지에서 수행할 수도 있습니다.
+
+   ![](assets/download-preview.png)
 
 
 ## API {#logs-through-api}를 통해 로그
