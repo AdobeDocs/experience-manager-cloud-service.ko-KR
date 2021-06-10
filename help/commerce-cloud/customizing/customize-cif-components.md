@@ -11,9 +11,9 @@ feature: 전자 상거래 통합 프레임워크
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 73822fb3b74472d48a3db59267ed133fc1a40ad6
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2582'
 ht-degree: 1%
 
 ---
@@ -336,6 +336,10 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 
 이 경우 티저 위에 배너를 렌더링하여 제품이 사용자 지정 속성에 따라 &quot;친환경&quot;임을 표시하려고 합니다. 구성 요소의 [마크업](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)에 대한 디자인 패턴은 AEM CIF 코어 구성 요소뿐만 아니라 모든 AEM 구성 요소에 실제로 표준입니다.
 
+>[!NOTE]
+>
+> 이 제품 티저 또는 CIF 페이지 구성 요소와 같은 CIF 제품 및 카테고리 선택기를 사용하여 구성 요소를 사용자 지정하는 경우 구성 요소 대화 상자에 필요한 `cif.shell.picker` clientlib을 포함해야 합니다. 자세한 내용은 [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)을 참조하십시오.
+
 1. IDE에서 `ui.apps` 모듈을 탐색하고 확장하고 폴더 계층 구조를 다음으로 확장합니다.`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 및 `.content.xml` 파일을 검사합니다.
 
    ![제품 티저 ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
@@ -499,3 +503,4 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 - [AEM CIF 핵심 구성 요소 사용자 정의](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)
