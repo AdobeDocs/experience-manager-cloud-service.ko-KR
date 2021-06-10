@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1620'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,6 @@ ht-degree: 1%
    >[!NOTE]
    >비프로덕션 파이프라인을 아직 설정하지 않은 경우 *개요* 화면에는 비프로덕션 파이프라인을 생성할 수 있는 카드가 표시됩니다.
 
-
 ## 환경 세부 정보 {#viewing-environment}
 
 개요 페이지의 **환경** 카드는 최대 3개의 환경을 나열합니다.
@@ -76,8 +75,36 @@ ht-degree: 1%
 
 1. 목록에서 환경을 선택하여 환경 세부 사항을 확인합니다.
 
-   ![](assets/environment-view-3.png)
+   >[!NOTE]
+   >미리 보기 서비스는 모든 프로그램에 롤링 기반으로 배포됩니다. 미리 보기 서비스에 대해 프로그램이 활성화되면 고객에게 제품 내 알림을 보냅니다. 자세한 내용은 [미리 보기 서비스 액세스](#access-preview-service) 섹션을 참조하십시오.
 
+   ![](assets/environ-preview1.png)
+
+
+### 미리 보기 서비스 {#access-preview-service}에 액세스
+
+미리 보기 서비스 기능은 Cloud Manager를 통해 각 AEM as a Cloud Service 환경으로 추가 미리 보기(게시) 서비스를 제공합니다.
+
+웹 사이트가 게시 환경에 도달하기 전에 웹 사이트의 최종 경험을 미리 보고 공개적으로 사용할 수 있습니다. 미리 보기 서비스를 보고 사용하기 전에 다음 몇 가지 포인터를 볼 수 있습니다.
+
+1. **AEM 버전**:환경은 AEM 버전  `2021.5.5343.20210542T070738Z` 이상이어야 합니다. 이 작업을 수행하려면 업데이트 파이프라인이 사용자 환경에서 성공적으로 실행되었는지 확인하십시오.
+
+1. **기본 IP 허용 목록 잠금**:처음 생성 시 액세스 권한을 활성화하려면 환경의 미리 보기 서비스에서 기본 IP 허용 목록을 적극적으로 적용 취소해야 합니다.
+
+1. **미리 보기에 컨텐츠 게시**:AEM 내의 게시 관리 UI를 사용하여 미리 보기 서비스에 컨텐츠를 게시할 수 있습니다. 자세한 내용은 [컨텐츠 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en)를 참조하십시오.
+
+*잠금 해제* 액세스를 사용하여 미리 보기 서비스를 제공하고 원하는 액세스를 제공하려면 필요한 권한을 가진 사용자가 다음 중 하나를 수행해야 합니다.
+
+1. 적절한 IP 허용 목록을 만들어 미리 보기 서비스에 적용합니다. 미리 보기 서비스에서 `Preview Default [Env ID] IP Allow List`을(를) 적용 취소하여 즉시 이 작업을 수행합니다.
+
+   또는,
+
+1. IP 허용 목록 업데이트 워크플로우를 사용하여 기본 IP를 제거하고 IP를 적절하게 추가합니다. 자세한 내용은 [IP 허용 목록 보기 및 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)를 참조하십시오.
+
+   >[!NOTE]
+   >팀의 적절한 구성원이 미리 보기 URL에 액세스할 수 있도록 미리 보기 서비스 URL을 팀과 공유하기 전에 위의 단계를 수행해야 합니다.
+
+   미리 보기 서비스에 대한 액세스 잠금이 해제되면 잠금 아이콘이 더 이상 표시되지 않습니다.
 
 ## 환경 업데이트 중 {#updating-dev-environment}
 
@@ -145,9 +172,13 @@ ht-degree: 1%
 
 ![](assets/environ-login-locally-2.png)
 
+
 ## 사용자 지정 도메인 이름 관리 {#manage-cdn}
 
 환경 요약 페이지에서 **환경** 세부 정보 페이지로 이동합니다.
+
+>[!NOTE]
+>이제 사용자 지정 도메인 이름이 게시 및 미리 보기 서비스 모두에 대한 사이트 프로그램의 Cloud Manager에서 지원됩니다. 각 Cloud Manager 환경은 환경당 최대 250개의 사용자 지정 도메인을 호스팅할 수 있습니다.
 
 아래 설명된 대로 사용자 환경의 게시 서비스에서 다음 작업을 수행할 수 있습니다.
 
@@ -161,9 +192,13 @@ ht-degree: 1%
 
 1. [IP 허용 목록 상태 확인](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+
 ## IP 허용 목록 관리 {#manage-ip-allow-lists}
 
 환경 요약 페이지에서 환경 세부 사항 페이지로 이동합니다. 여기에 있는 환경에 대한 게시 및/또는 작성 서비스에서 다음 작업을 수행할 수 있습니다.
+
+>[!NOTE]
+>이제 IP 허용 목록 기능은 Cloud Manager for Author, Publish 및 Preview Services(사이트 프로그램에서 사용 가능)에서 지원됩니다.
 
 ### IP 허용 목록 {#apply-ip-allow-list} 적용
 
