@@ -2,9 +2,9 @@
 title: 사용자 지정 도메인 이름 추가
 description: 사용자 지정 도메인 이름 추가
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Cloud Manager에서 사용자 지정 도메인 이름을 추가하려면 사용�
 
 * AEM as a Cloud Service은 와일드카드 도메인을 지원하지 않습니다.
 
-* 각 Cloud Manager 환경은 환경당 최대 100개의 사용자 지정 도메인을 호스팅할 수 있습니다.
+* 각 Cloud Manager 환경은 환경당 최대 250개의 사용자 지정 도메인을 호스팅할 수 있습니다.
 
 * 두 개 이상의 환경에서 동일한 도메인 이름을 사용할 수 없습니다.
 
@@ -39,7 +39,7 @@ Cloud Manager에서 사용자 지정 도메인 이름을 추가하려면 사용�
 
 1. **도메인 추가** 단추를 클릭하여 **도메인 이름 추가** 대화 상자를 엽니다.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. **도메인 이름**&#x200B;에 사용자 지정 도메인 이름을 입력합니다.
 
@@ -47,6 +47,11 @@ Cloud Manager에서 사용자 지정 도메인 이름을 추가하려면 사용�
    >도메인에 을 입력할 때 `http://`, `https://` 또는 공백을 포함해서는 안 됩니다.
 
 1. 게시 서비스가 도메인 이름과 연결될 **환경**&#x200B;을 선택합니다.
+
+1. 서비스를 **게시** 또는 **미리 보기**&#x200B;로 선택합니다.
+
+   >[!NOTE]
+   >이제 사용자 지정 도메인 이름이 게시 및 미리 보기 서비스 모두에 대한 사이트 프로그램의 Cloud Manager에서 지원됩니다. 각 Cloud Manager 환경은 환경당 최대 250개의 사용자 지정 도메인을 호스팅할 수 있습니다. 미리 보기 서비스에 대한 자세한 내용은 [미리 보기 서비스](/help/implementing/cloud-manager/manage-environments.md#preview-service)를 참조하십시오.
 
 1. 드롭다운에서 **도메인 SSL 인증서**&#x200B;를 선택하고 **계속**&#x200B;을 선택합니다.
 
