@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2785'
 ht-degree: 42%
 
 ---
@@ -12,12 +12,6 @@ ht-degree: 42%
 # 컨텐츠 전송 도구 사용 {#using-content-transfer-tool}
 
 ## 컨텐츠 전송 도구 사용에 대한 중요한 고려 사항 {#pre-reqs}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_prereqs"
->title="컨텐츠 전송 도구 사용에 대한 중요한 고려 사항"
->abstract="Java 및 AEM 버전, 지원되는 데이터 저장소 유형, 사용자 그룹 고려 사항 등을 포함한 컨텐츠 전송 도구를 사용하기 위한 중요한 고려 사항을 검토하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="우수 사례 및 지침"
 
 아래 섹션을 따라 수행하여 컨텐츠 전송 도구를 실행하는 동안 중요한 고려 사항을 이해하십시오.
 
