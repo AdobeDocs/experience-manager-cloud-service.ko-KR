@@ -2,7 +2,7 @@
 title: '샌드박스 프로그램 편집 '
 description: 샌드박스 프로그램 편집
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
    프로그램 설명을 편집하려면 **일반** 탭으로 이동합니다.
 
-   ![](assets/edit-program-general.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    **솔루션 및 추가 기능** 탭에는 프로덕션 및 샌드박스 프로그램 모두에 대한 **사이트** 및 **자산**&#x200B;과 같은 두 옵션이 표시됩니다. 또한 아래 그림과 같이 **사이트**&#x200B;에서 사용할 수 있는 **상거래** 추가 기능 옵션을 선택할 수 있습니다.
 
@@ -39,7 +39,7 @@ ht-degree: 0%
    >[!NOTE]
    >프로그램에 대해 하나 이상의 솔루션을 선택해야 합니다. 즉, 사용자가 프로그램 편집 워크플로우 동안 모든 솔루션을 선택 취소할 수 없습니다.
 
-1. **저장**&#x200B;을 클릭하여 편집 프로그램 워크플로우를 완료합니다.
+1. **업데이트**&#x200B;를 클릭하여 편집 프로그램 워크플로우를 완료합니다.
 
 
 ## 프로그램 {#considerations-editing} 편집 중 고려 사항
