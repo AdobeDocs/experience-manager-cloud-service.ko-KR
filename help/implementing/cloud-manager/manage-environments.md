@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
+source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 1%
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 웹 사이트가 게시 환경에 도달하기 전에 웹 사이트의 최종 경험을 미리 보고 공개적으로 사용할 수 있습니다. 미리 보기 서비스를 보고 사용하기 전에 다음 몇 가지 포인터를 볼 수 있습니다.
 
-1. **AEM 버전**:환경은 AEM 버전  `2021.5.5343.20210542T070738Z` 이상이어야 합니다. 이 작업을 수행하려면 업데이트 파이프라인이 사용자 환경에서 성공적으로 실행되었는지 확인하십시오.
+1. **AEM 버전**:환경은 AEM 버전  `2021.05.5368.20210529T101701Z` 이상이어야 합니다. 이 작업을 수행하려면 업데이트 파이프라인이 사용자 환경에서 성공적으로 실행되었는지 확인하십시오.
 
 1. **기본 IP 허용 목록 잠금**:생성 시 미리 보기 서비스에는 기본 IP 허용 목록이 적용되며, 여기에 레이블이  `Preview Default [Env ID]`지정됩니다.
 
