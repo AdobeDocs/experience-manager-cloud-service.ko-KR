@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
+source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1623'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,9 @@ ht-degree: 1%
    >[!NOTE]
    >팀의 적절한 구성원이 미리 보기 URL에 액세스할 수 있도록 미리 보기 서비스 URL을 팀과 공유하기 전에 위의 단계를 수행해야 합니다.
 
-   미리 보기 서비스에 대한 액세스 잠금이 해제되면 잠금 아이콘이 더 이상 표시되지 않습니다.
+   미리 보기 서비스에 대한 액세스 잠금이 해제되면, 아래와 같이 잠금 아이콘이 더 이상 표시되지 않습니다.
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## 환경 업데이트 중 {#updating-dev-environment}
 
