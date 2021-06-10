@@ -2,9 +2,9 @@
 title: 사용자 지정 코드 품질 규칙 - Cloud Services
 description: 사용자 지정 코드 품질 규칙 - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: bd9cb35016b91e247f14a851ad195a48ac30fda0
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3403'
 ht-degree: 0%
 
 ---
@@ -181,32 +181,6 @@ public void orDoThis() {
   }
  
   in.close();
-}
-```
-
-### @ProviderType으로 주석 처리된 제품 API는 고객이 구현하거나 확장하면 안 됩니다 {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
-
-**키**:CQBP-84, CQBP-84-종속성
-
-**유형**:버그
-
-**심각도**:중요
-
-**다음** 이후:버전 2018.7.0
-
-AEM API에는 사용자 지정 코드에 의해서만 사용되지만 구현되지 않는 Java 인터페이스 및 클래스가 포함되어 있습니다. 예를 들어 *com.day.cq.wcm.api.Page* 인터페이스는 ***AEM 전용***&#x200B;에 의해 구현되도록 디자인되었습니다.
-
-이러한 인터페이스에 새 메서드를 추가하면 이러한 추가 메서드가 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으므로 이러한 인터페이스에 새 메서드를 추가하는 것은 이전 버전과 호환되는 것으로 간주됩니다. 그러나 사용자 지정 코드 ***이 이러한 인터페이스 중 하나를 구현하는 경우 해당 사용자 지정 코드가 고객에게 이전 버전과의 호환성 위험을 초래했습니다.***
-
-AEM에서 구현하기 위한 인터페이스(및 클래스)에 *org.osgi.annotation.versioning.ProviderType*(또는 경우에 따라 유사한 이전 주석 *aQute.bnd.annotation.ProviderType*)이 주석 처리되었습니다. 이 규칙은 사용자 지정 코드에 의해 인터페이스가 구현되거나 클래스가 확장된 경우를 식별합니다.
-
-#### 비호환 코드 {#non-compliant-code-3}
-
-```java
-import com.day.cq.wcm.api.Page;
-
-public class DontDoThis implements Page {
-// implementation here
 }
 ```
 
@@ -584,12 +558,85 @@ AEM API 서피스는 사용이 중단되어 더 이상 사용되지 않는 API�
 
 그러나 API는 AEM 컨텍스트에서 더 이상 사용되지 않지만 다른 컨텍스트에서 더 이상 사용되지 않는 경우가 있습니다. 이 규칙은 이 두 번째 클래스를 식별합니다.
 
+
 ## OakPAL 컨텐츠 규칙 {#oakpal-rules}
 
 Cloud Manager에서 실행되는 OakPAL 검사 아래에 있습니다.
 
 >[!NOTE]
 >OakPAL은 AEM 파트너(및 2019 AEM Rockstar North America)에서 개발한 프레임워크로서 독립형 Oak 저장소를 사용하여 컨텐츠 패키지를 검증합니다.
+
+### @ProviderType으로 주석 처리된 제품 API는 고객이 구현하거나 확장하면 안 됩니다 {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+
+**키**:CQBP-84
+
+**유형**:버그
+
+**심각도**:중요
+
+**다음** 이후:버전 2018.7.0
+
+AEM API에는 사용자 지정 코드에 의해서만 사용되지만 구현되지 않는 Java 인터페이스 및 클래스가 포함되어 있습니다. 예를 들어 *com.day.cq.wcm.api.Page* 인터페이스는 ***AEM 전용***&#x200B;에 의해 구현되도록 디자인되었습니다.
+
+이러한 인터페이스에 새 메서드를 추가하면 이러한 추가 메서드가 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으므로 이러한 인터페이스에 새 메서드를 추가하는 것은 이전 버전과 호환되는 것으로 간주됩니다. 그러나 사용자 지정 코드 ***이 이러한 인터페이스 중 하나를 구현하는 경우 해당 사용자 지정 코드가 고객에게 이전 버전과의 호환성 위험을 초래했습니다.***
+
+AEM에서 구현하기 위한 인터페이스(및 클래스)에 *org.osgi.annotation.versioning.ProviderType*(또는 경우에 따라 유사한 이전 주석 *aQute.bnd.annotation.ProviderType*)이 주석 처리되었습니다. 이 규칙은 사용자 지정 코드에 의해 인터페이스가 구현되거나 클래스가 확장된 경우를 식별합니다.
+
+#### 비호환 코드 {#non-compliant-code-3}
+
+```java
+import com.day.cq.wcm.api.Page;
+
+public class DontDoThis implements Page {
+// implementation here
+}
+```
+
+### 사용자 지정 DAM 자산 Lucene Oak 인덱스가 올바르게 구조화되어 있습니다. {#oakpal-damAssetLucene-sanity-check}
+
+**키**:IndexDamAssetLucene
+
+**유형**:버그
+
+**심각도**:차단기
+
+**다음** 이후:2021.6.0
+
+자산 검색이 AEM Assets에서 올바르게 작동하려면 `damAssetLucene` Oak 색인이 일련의 지침을 따라야 합니다. 이 규칙은 이름이 `damAssetLucene`인 인덱스에 대해 특별히 다음 패턴을 확인합니다.
+
+이름은 여기에 설명된 인덱스 정의 사용자 정의 지침을 따라야 합니다.
+
+* 특히 이름은 `damAssetLucene-<indexNumber>-custom-<customerVersionNumber>` 패턴을 따라야 합니다.
+
+* 인덱스 정의에는 `visualSimilaritySearch` 값을 포함하는 태그라는 여러 값이 있는 속성이 있어야 합니다.
+
+* 인덱스 정의에는 `tika` 하위 노드가 있어야 하며 해당 하위 노드에는 config.xml 이라는 하위 노드가 있어야 합니다.
+
+#### 비호환 코드 {#non-compliant-code-damAssetLucene}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+```
+
+#### 호환 코드 {#compliant-code-damAssetLucene}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - reindexCount: -6952249853801250000
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
 
 ### 고객 패키지는 /libs {#oakpal-customer-package} 아래에 노드를 만들거나 수정해서는 안 됩니다.
 
