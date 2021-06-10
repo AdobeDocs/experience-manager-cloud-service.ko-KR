@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: 전자 상거래 통합 프레임워크
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 764d70db8026bad1683fffdb44092f1d2a8e8d28
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,9 @@ AEM Content &amp; Commerce Authoring은 AEM 작성자와 마케터가 상거래 
 
 또한 `name`, `fieldLabel` 또는 `fieldDescription`와 같은 표준 진단 필드 속성도 지원됩니다.
 
-`cifproductfield` 구성 요소에는 cif.shell.picker clientlib이 필요합니다. clientlib을 대화 상자에 추가하려면 extraClientlibs 속성을 사용할 수 있습니다.
+>[!CAUTION]
+>
+>`cifproductfield` 구성 요소에는 `cif.shell.picker` clientlib이 필요합니다. clientlib을 대화 상자에 추가하려면 extraClientlibs 속성을 사용할 수 있습니다.
 
 `cifproductfield` 의 전체 작업 예는 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) 프로젝트에서 찾을 수 있습니다. AEM 코어 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)을 참조하십시오.
 
@@ -69,6 +71,8 @@ cq:dialog 구성에서 다음 코드 조각을 사용할 수 있습니다.
 
 또한 `name`, `fieldLabel` 또는 `fieldDescription`와 같은 표준 진단 필드 속성도 지원됩니다.
 
-`cifproductfield` 구성 요소와 동일한 `cifcategoryfield` 구성 요소에도 cif.shell.picker clientlib이 필요합니다. clientlib을 대화 상자에 추가하려면 `extraClientlibs` 속성을 사용할 수 있습니다. AEM 코어 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)을 참조하십시오.
+>[!CAUTION]
+>
+>`cifproductfield` 구성 요소와 동일한 `cifcategoryfield` 구성 요소에도 `cif.shell.picker` clientlib이 필요합니다. clientlib을 대화 상자에 추가하려면 `extraClientlibs` 속성을 사용할 수 있습니다. AEM 코어 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)을 참조하십시오.
 
 `cifcategoryfield` 의 전체 작업 예는 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) 프로젝트에서 찾을 수 있습니다.
