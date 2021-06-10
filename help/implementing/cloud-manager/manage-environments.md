@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
+source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 1%
@@ -91,22 +91,22 @@ ht-degree: 1%
 
 1. **기본 IP 허용 목록 잠금**:처음 생성 시 액세스 권한을 활성화하려면 환경의 미리 보기 서비스에서 기본 IP 허용 목록을 적극적으로 적용 취소해야 합니다.
 
+   *잠금 해제* 액세스를 사용하여 미리 보기 서비스를 제공하고 원하는 액세스를 제공하려면 필요한 권한을 가진 사용자가 다음 중 하나를 수행해야 합니다.
+
+   1. 적절한 IP 허용 목록을 만들어 미리 보기 서비스에 적용합니다. 미리 보기 서비스에서 `Preview Default [Env ID] IP Allow List`을(를) 적용 취소하여 즉시 이 작업을 수행합니다.
+
+      또는,
+
+   1. IP 허용 목록 업데이트 워크플로우를 사용하여 기본 IP를 제거하고 IP를 적절하게 추가합니다. 자세한 내용은 [IP 허용 목록 보기 및 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)를 참조하십시오.
+
+      >[!NOTE]
+      >팀의 적절한 구성원이 미리 보기 URL에 액세스할 수 있도록 미리 보기 서비스 URL을 팀과 공유하기 전에 위의 단계를 수행해야 합니다.
+
+      미리 보기 서비스에 대한 액세스 잠금이 해제되면, 아래와 같이 잠금 아이콘이 더 이상 표시되지 않습니다.
+
+      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **미리 보기에 컨텐츠 게시**:AEM 내의 게시 관리 UI를 사용하여 미리 보기 서비스에 컨텐츠를 게시할 수 있습니다. 자세한 내용은 [컨텐츠 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en)를 참조하십시오.
-
-*잠금 해제* 액세스를 사용하여 미리 보기 서비스를 제공하고 원하는 액세스를 제공하려면 필요한 권한을 가진 사용자가 다음 중 하나를 수행해야 합니다.
-
-1. 적절한 IP 허용 목록을 만들어 미리 보기 서비스에 적용합니다. 미리 보기 서비스에서 `Preview Default [Env ID] IP Allow List`을(를) 적용 취소하여 즉시 이 작업을 수행합니다.
-
-   또는,
-
-1. IP 허용 목록 업데이트 워크플로우를 사용하여 기본 IP를 제거하고 IP를 적절하게 추가합니다. 자세한 내용은 [IP 허용 목록 보기 및 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)를 참조하십시오.
-
-   >[!NOTE]
-   >팀의 적절한 구성원이 미리 보기 URL에 액세스할 수 있도록 미리 보기 서비스 URL을 팀과 공유하기 전에 위의 단계를 수행해야 합니다.
-
-   미리 보기 서비스에 대한 액세스 잠금이 해제되면, 아래와 같이 잠금 아이콘이 더 이상 표시되지 않습니다.
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## 환경 업데이트 중 {#updating-dev-environment}
 
