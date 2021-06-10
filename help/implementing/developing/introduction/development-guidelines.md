@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -215,6 +215,10 @@ HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 HTTP/1.1과 암호화 시
 
 AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 아래 섹션에서는 이메일을 요청, 구성 및 전송하는 방법을 설명합니다.
 
+>[!NOTE]
+>
+>메일 서비스는 OAuth2 지원을 사용하여 구성할 수 있습니다. 자세한 내용은 메일 서비스에 대한 [OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)을 참조하십시오.
+
 ### 액세스 요청 {#requesting-access}
 
 기본적으로 아웃바운드 이메일은 비활성화되어 있습니다. 이 기능을 활성화하려면 지원 티켓을 제출하십시오.
@@ -238,7 +242,7 @@ AEM CS는 포트 465를 통해 메일을 전송해야 합니다. 메일 서버�
 
 AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하여 전송해야 합니다.
 
-전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) 를 참조하십시오. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스를 다음과 같이 조정해야 합니다.
+전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)를 참조하십시오. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스를 다음과 같이 조정해야 합니다.
 
 포트 465가 요청된 경우:
 
