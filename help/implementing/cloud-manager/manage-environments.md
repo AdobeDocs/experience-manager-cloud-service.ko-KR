@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
+source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 1%
@@ -93,11 +93,11 @@ ht-degree: 1%
 
    *잠금 해제* 액세스를 사용하여 미리 보기 서비스를 제공하고 원하는 액세스를 제공하려면 필요한 권한을 가진 사용자가 다음 중 하나를 수행해야 합니다.
 
-   1. 적절한 IP 허용 목록을 만들어 미리 보기 서비스에 적용합니다. 미리 보기 서비스에서 `Preview Default [Env ID] IP Allow List`을(를) 적용 취소하여 즉시 이 작업을 수행합니다.
+   * 적절한 IP 허용 목록을 만들어 미리 보기 서비스에 적용합니다. 미리 보기 서비스에서 `Preview Default [Env ID] IP Allow List`을(를) 적용 취소하여 즉시 이 작업을 수행합니다.
 
-      또는,
+      *또는*,
 
-   1. IP 허용 목록 업데이트 워크플로우를 사용하여 기본 IP를 제거하고 IP를 적절하게 추가합니다. 자세한 내용은 [IP 허용 목록 보기 및 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)를 참조하십시오.
+   * IP 허용 목록 업데이트 워크플로우를 사용하여 기본 IP를 제거하고 IP를 적절하게 추가합니다. 자세한 내용은 [IP 허용 목록 보기 및 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)를 참조하십시오.
 
       >[!NOTE]
       >팀의 적절한 구성원이 미리 보기 URL에 액세스할 수 있도록 미리 보기 서비스 URL을 팀과 공유하기 전에 위의 단계를 수행해야 합니다.
