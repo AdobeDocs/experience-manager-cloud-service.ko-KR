@@ -2,7 +2,7 @@
 title: 코드 품질 테스트 - Cloud Services
 description: 코드 품질 테스트 - Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 코드 품질 테스트에서 소스 코드가 특정 품질 기준을 충족하는지 검사합니다. 현재 SonarQube와 OakPAL을 사용하는 컨텐츠 패키지 수준 검사가 결합된 방식으로 구현됩니다. 일반 Java 규칙과 AEM 관련 규칙을 결합하는 규칙이 100개 이상 있습니다. AEM 관련 규칙 중 일부는 AEM Engineering의 우수 사례를 기반으로 작성되며 [사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)이라고 합니다.
 
 >[!NOTE]
->여기에서 [규칙의 전체 목록을 다운로드할 수 있습니다](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx).
+>여기에서 [규칙의 전체 목록을 다운로드할 수 있습니다](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 **3층 게이트**
 
