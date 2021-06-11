@@ -2,9 +2,9 @@
 title: '샌드박스 프로그램 소개 '
 description: 샌드박스 프로그램 소개
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: 1ecadc0d2b45ee8c94af8d91b35dbd40b08e89b5
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 샌드박스에서 생성된 환경은 자동 크기 조절을 위해 구성되지 않습니다. 따라서 이러한 환경은 성능 또는 로드 테스트에 적합하지 않습니다.
 
-샌드박스 프로그램에는 사이트 및 자산이 포함되며 Git 리포지토리, 개발 환경 및 비프로덕션 파이프라인으로 자동 채워집니다.  Git 리포지토리는 AEM Project 원형 기반의 샘플 프로젝트로 채워집니다.
+샌드박스 프로그램에는 [!DNL Sites] 및 [!DNL Assets]이 포함되어 있으며 Git 리포지토리, 개발 환경 및 비프로덕션 파이프라인으로 자동 채워집니다.  Git 리포지토리는 AEM Project 원형 기반의 샘플 프로젝트로 채워집니다.
 
 프로그램 유형에 대한 자세한 내용은 [프로그램 및 프로그램 유형 이해](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)를 참조하십시오.
 
@@ -32,7 +32,7 @@ ht-degree: 0%
    * 개발 환경 생성
    * 개발 환경에 비프로덕션 파이프라인 생성(개발 환경에 마스터 분기 배포)
 
-1. **솔루션:** 샌드박스 프로그램에는 AEM Sites 및 자산이 포함됩니다.
+1. **솔루션:** 샌드박스 프로그램에는 AEM  [!DNL Sites] 및  [!DNL Assets]가 포함됩니다.
 
 1. **AEM 업데이트:**  AEM 업데이트는 샌드박스 프로그램의 환경에 수동으로 적용할 수 있으며 자동으로 푸시되지 않습니다.
 자세한 내용은 [샌드박스 환경에 대한 AEM 업데이트](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox)를 참조하십시오.
