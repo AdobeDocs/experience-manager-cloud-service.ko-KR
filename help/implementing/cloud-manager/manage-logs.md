@@ -2,37 +2,39 @@
 title: 로그 관리 - Cloud Service
 description: 로그 관리 - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
+source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '235'
 ht-degree: 2%
 
 ---
 
 # 로그 액세스 및 관리 {#manage-logs}
 
-사용자는 환경 카드를 사용하여 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
+사용자는 **개요** 페이지 또는 환경 세부 정보 페이지에서 **환경** 카드를 사용하여 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
 
 ## 로그 {#download-logs} 다운로드
 
-로그를 다운로드하려면 아래 단계를 따르십시오.
+아래 단계에 따라 로그를 다운로드하십시오.
 
-1. **개요** 페이지의 **환경** 카드에서 UI를 통해 로그를 다운로드할 수 있습니다.
+1. **개요** 페이지에서 **환경** 카드로 이동합니다.
 
-![](assets/download-logs1.png)
+1. **에서**&#x200B;다운로드 로그&#x200B;**를 선택합니다.** 메뉴.
 
-또는 환경 세부 사항 페이지에서 다음을 수행합니다.
+   ![](assets/download-logs1.png)
 
-![](assets/download-logs.png)
+   *또는*,
 
->[!NOTE]
->열려 있는 위치에 관계없이 동일한 대화 상자가 표시되고 개별 로그 파일을 다운로드할 수 있습니다.
+   환경 세부 사항 페이지에서 다음을 수행합니다.
 
-1. **에서**&#x200B;로그 다운로드&#x200B;**를 선택합니다.** 메뉴.
+   ![](assets/download-logs.png)
 
-1. **서비스** 드롭다운 메뉴에서 **미리 보기** 또는 **Preview Dispatcher**&#x200B;와 같은 옵션을 선택하고 다운로드 아이콘을 클릭합니다. 이 작업은 환경 세부 사항 페이지에서 수행할 수도 있습니다.
+   >[!NOTE]
+   >열려 있는 위치에 관계없이 동일한 대화 상자가 표시되고 개별 로그 파일을 다운로드할 수 있습니다.
 
-![](assets/download-preview.png)
+1. **서비스** 드롭다운 메뉴에서 **미리 보기** 또는 **Preview Dispatcher**&#x200B;와 같은 옵션을 선택하고 다운로드 아이콘을 클릭합니다.
+
+   ![](assets/download-preview.png)
 
 
 ## API {#logs-through-api}를 통해 로그
