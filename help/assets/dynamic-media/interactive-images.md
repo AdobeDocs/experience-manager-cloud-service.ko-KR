@@ -4,9 +4,9 @@ description: Dynamic Media에서 대화형 이미지로 작업하는 방법을 �
 feature: 대화형 이미지
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '4263'
+source-wordcount: '4245'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-위의 그림에 표시된 웹 페이지에서 [대화형 이미지 작업](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)을 참조하십시오.
+위의 그림에 표시된 웹 페이지에서 [대화형 이미지 작업](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)을 참조하십시오.
 
 ## 대화형 이미지 배너가 만들어지는 방법을 확인하십시오 {#watch-how-interactive-image-banners-are-created}
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 다음 단계별 워크플로우 설명은 Adobe Experience Manager Assets에서 대화형 이미지를 빠르게 시작하고 실행할 수 있도록 설계되었습니다.
 
-일부 빠른 시작 작업 내에서 **예제** 제목을 찾습니다. 여기에는 [웹 페이지 예제에 아직 대화형 이미지가 추가되지 않은 ](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)웹 페이지 예제를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
+일부 빠른 시작 작업 내에서 **예제** 제목을 찾습니다. 여기에는 [웹 페이지 예제에 아직 대화형 이미지가 추가되지 않은 ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)웹 페이지 예제를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
 
 
 
@@ -147,7 +147,7 @@ Mac에서 Command+Option+I를 눌러 [개발자 도구] 패널을 열고 [검사
 
 **예**
 
-위의 세 예에서 사용된 동일한 접근 방식을 [데모 웹 페이지](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)에 적용할 수 있습니다.
+위의 세 예에서 사용된 동일한 접근 방식을 [데모 웹 페이지](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)에 적용할 수 있습니다.
 
 데모 웹 페이지에는 &quot;자세히 보기&quot;라는 빠른 보기 단추가 있는 여러 제품 축소판이 있습니다. 웹 브라우저의 디버깅 도구가 계속 활성화되면 각 단추를 클릭하고 기록된 빠른 보기 URL을 기록해 둡니다. 페이지에서 사용할 수 있는 4개의 제품 빠른 보기 를 모두 활성화하면 백엔드에 대한 다음 빠른 보기 요청 목록이 있습니다.
 
@@ -340,13 +340,13 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 
 **예**
 
-[데모 웹 사이트를 예제](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)로 사용하면 세 개인의 그림이 정적 `IMG` 태그임을 알 수 있습니다.
+[데모 웹 사이트를 예제](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)로 사용하면 세 개인의 그림이 정적 `IMG` 태그임을 알 수 있습니다.
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-통합은 `IMG` 태그를 제거하고 Experience Manager 자산에서 복사된 포함 코드로 바꾸는 것만큼 간단합니다. 결과 [에 세 개의 원 핫스팟이 있는 페이지에서 쇼퍼블 인터랙티브 이미지가 표시됩니다](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+통합은 `IMG` 태그를 제거하고 Experience Manager 자산에서 복사된 포함 코드로 바꾸는 것만큼 간단합니다. 결과 [에 세 개의 원 핫스팟이 있는 페이지에서 쇼퍼블 인터랙티브 이미지가 표시됩니다](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 따라서 데모 웹 사이트의 쇼퍼블 대화형 이미지에 있는 핫스팟은 표시 목적으로만 사용됩니다. 아직 기존 빠른 보기와 통합되지 않았습니다.
@@ -491,7 +491,7 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-완전히 통합된 대화형 이미지](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)를 사용하는 [최종 데모 웹 사이트.
+완전히 통합된 대화형 이미지](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)를 사용하는 [최종 데모 웹 사이트.
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
