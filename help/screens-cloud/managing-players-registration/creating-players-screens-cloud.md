@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에서 Cloud Service으로 플레이�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8c58378660d865e90a0f5e562119c510cf86343a
+source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,12 @@ ht-degree: 0%
 
 # Screens에서 Cloud Service {#creating-players-screens-cloud} 플레이어 만들기 및 관리
 
-AEM Screens 프로젝트에서 채널을 게시했으면 플레이어를 만들어야 합니다.
+AEM Screens 프로젝트에서 채널을 게시했으면 스크린 서비스 공급자에서 플레이어를 만들어야 합니다.
+
 *플레이어*&#x200B;는 플레이어 소프트웨어를 실행하여 시각적 출력을 생성합니다. 일반적인 컨텐츠 또는 경험의 잘리고, 크기가 조절되고, 번역된 부분을 표시하는 것을 제어할 수 있습니다. 화면 구성은 디스플레이에 바인딩되지만 기술적 결함이 발생할 경우 대체할 수 있습니다.
+
+>[!NOTE]
+>Screens 플레이어를 설치한 후 이 안내서에서 언급된 단계를 구현할 수도 있습니다.
 
 ## 목표 {#objective}
 
@@ -26,10 +30,12 @@ AEM Screens 프로젝트에서 채널을 게시했으면 플레이어를 만들�
 
 ## 플레이어 {#creating-players} 만들기
 
-Screens 서비스 공급자에서 디스플레이를 생성하려면 아래 절차를 따르십시오.
+Screens 서비스 공급자에서 플레이어를 만들려면 아래 절차를 따르십시오.
 
-1. AEM Cloud Service 인스턴스에서 Screens 서비스 공급자로 이동합니다.
-1. 왼쪽 탐색 막대에서 **표시** 탭을 선택하고 화면의 오른쪽 상단 모서리에서 만들기 를 클릭합니다.
+1. Screens 서비스 공급자로 이동합니다.
+
+1. 왼쪽 탐색 패널에서 **디스플레이** 탭을 선택하고 화면의 오른쪽 상단 모서리에서 만들기 를 클릭합니다.
+
 1. **표시**&#x200B;를 선택합니다.
 1. 표시 이름에 **ChannelFoodDisplay** 제목을 입력하고 만들기를 클릭합니다.
 1. 이제 ChannelFoodDisplay라는 디스플레이가 디스플레이 목록에 기록됩니다.
