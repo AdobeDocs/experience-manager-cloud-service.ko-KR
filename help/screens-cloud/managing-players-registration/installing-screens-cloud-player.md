@@ -4,15 +4,15 @@ description: 이 페이지에서는 Screens에 플레이어를 Cloud Service으�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '262'
 ht-degree: 1%
 
 ---
 
 
-# Screens에 Cloud Service {#installing-players-screens-cloud} 로 플레이어 설치
+# Screens에서 Cloud Service {#installing-players-screens-cloud} 플레이어 설치 및 구성
 
 아래 섹션에서는 온-프레미스 AEM 인스턴스에 등록된 AEM Screens 플레이어를 설치하는 방법을 설명합니다. 또한 기존 플레이어를 출하 시 재설정한 다음 AEM Screens에 대해 새 플레이어를 Cloud Service으로 등록해야 합니다.
 
