@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에 있는 디스플레이에 Cloud S
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 목표 {#objective}
 
-이 문서는 Screens 서비스 공급자에서 디스플레이를 만들고 관리하는 방법을 이해하는 데 도움이 됩니다. 읽기 후에는 디스플레이에 플레이어를 할당하는 방법을 알아볼 수 있어야 합니다.
+이 문서는 Screens 서비스 공급자의 디스플레이에 플레이어를 할당하는 방법을 이해하는 데 도움이 됩니다. 컨텐츠가 Cloud Service 플레이어로 Screens에서 재생되기 전에 마지막으로 필수 단계입니다.
 
 ## 표시 {#create-display}에 플레이어를 할당하는 절차
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 1. 선택 을 클릭하면 **지정된 디스플레이** 패널 아래에 지정된 디스플레이가 표시됩니다.
 
-   이제 디스플레이가 플레이어에 할당되고 채널이 컨텐츠 재생을 시작합니다. 이제 플레이어가 다운로드하여 컨텐츠 재생을 시작해야 합니다. 축하합니다!
+   이제 디스플레이가 플레이어에 할당되고 채널이 컨텐츠 재생을 시작합니다. 이제 플레이어가 다운로드하여 컨텐츠 재생을 시작해야 합니다. **축하합니다!**
 
    ![이미지](/help/screens-cloud/assets/player/output.gif)
 
