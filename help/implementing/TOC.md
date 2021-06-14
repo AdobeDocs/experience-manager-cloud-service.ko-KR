@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 44%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 44%
    + [로깅](developing/introduction/logging.md)
    + [구성 및 구성 브라우저](developing/introduction/configurations.md)
    + [AEM 기술 기반](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
    + [서버 측 API에 대한 액세스 토큰 생성](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM의 헤드리스 및 헤드리스](developing/headful-headless.md)
    + 전체 스택 AEM 개발 {#full-stack}
