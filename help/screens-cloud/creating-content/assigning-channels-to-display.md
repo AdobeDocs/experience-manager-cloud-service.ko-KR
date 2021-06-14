@@ -4,7 +4,7 @@ description: 이 페이지에서는 Screens에서 디스플레이에 Cloud Servi
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 19%
@@ -71,4 +71,4 @@ ht-degree: 19%
 
 ## 다음 기능 {#whats-next}
 
-이제 디스플레이에 채널을 지정했으므로, 다음 번에 **AEM용 Screens 플레이어 설치 및 구성 문서를 Cloud Service**&#x200B;로 검토하여 Screens를 Cloud Service 여정으로 계속해야 합니다.
+이제 디스플레이에 채널을 지정했으므로, 다음 번에 [AEM용 Screens 플레이어 설치 및 구성 문서를 Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)로 검토하여 Screens를 Cloud Service 여정으로 계속해야 합니다.
