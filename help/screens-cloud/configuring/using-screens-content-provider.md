@@ -1,12 +1,12 @@
 ---
 title: 스크린 컨텐츠 공급자 사용
-description: 이 페이지에서는 스크린 컨텐츠 제공자를 사용하는 방법에 대해 설명합니다.
+description: 이 페이지에서는 컨텐츠 작성에 Screens 컨텐츠 공급자를 사용하는 방법에 대해 설명합니다.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -32,5 +32,6 @@ ht-degree: 1%
 
 ## 다음 기능 {#whats-next}
 
-다음 단계로 이동할 수 있는 스크린 컨텐츠 공급자 로 이동하는 방법, 즉 Cloud Service으로 Screens에서 프로젝트 생성 및 관리 방법을 배웁니다.
+이제 Screens 컨텐츠 제공업체로 이동하는 방법을 배웠습니다. 이제 [Screens에서 Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)로 프로젝트 만들기 및 관리를 문서 를 검토하여 Screens를 Cloud Service 여정으로 계속 진행할 수 있습니다.
+
 
