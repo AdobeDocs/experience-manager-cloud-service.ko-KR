@@ -4,10 +4,10 @@ description: 이 페이지에서는 컨텐츠 작성에 Screens 컨텐츠 공급
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,11 @@ ht-degree: 1%
 >**전제 조건**
 >이 섹션 읽기를 시작하기 전에 [스크린 서비스 공급자 설정](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md)을 참조하여 Screens 서비스 공급자에서 이 사용자 인터페이스를 탐색하는 방법을 알아보십시오.
 
-이제 스크린 컨텐츠 공급자에 로그인하면 컨텐츠 재생에서 컨텐츠를 만들 수 있습니다.
+이제 스크린 컨텐츠 공급자에 로그인하면 컨텐츠 재생에서 컨텐츠를 만들 수 있습니다. 스크린 컨텐츠 공급자를 사용하여 다음을 만들고 관리합니다.
+
+* 프로젝트
+* 채널
+* 위치
 
 ## 다음 기능 {#whats-next}
 
