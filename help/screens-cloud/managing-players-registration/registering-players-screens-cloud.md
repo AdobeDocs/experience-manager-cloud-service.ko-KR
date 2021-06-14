@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에 플레이어를 Cloud Service으�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8c58378660d865e90a0f5e562119c510cf86343a
+source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '353'
 ht-degree: 1%
 
 ---
@@ -22,3 +22,47 @@ Screens용 플레이어를 Cloud Service으로 설치하고 구성한 후에는 
 
 * 플레이어를 등록하는 방법을 이해합니다.
 * 범위 측면에서 AEM Screens 프로젝트에서 채널을 관리할 수 있습니다.
+
+## 스크린 플레이어 {#register-players} 등록 단계
+
+플레이어를 Cloud Service으로 Screens에 설치하면 Screens 서비스 공급자에서 플레이어를 등록할 수 있습니다.
+
+아래 절차에 따라 플레이어를 등록하십시오.
+
+1. Screens 서비스 공급자에 로그인합니다.
+
+1. 왼쪽 탐색 패널에서 **Players 관리** 아래의 **등록 코드**&#x200B;로 이동하고 **코드 만들기**&#x200B;를 클릭합니다.
+
+   >[!NOTE]
+   >유효한/만료되지 않은 코드가 없는 경우 코드 만들기를 클릭하고 코드 이름을 입력하고 요구 사항에 따라 만료 설정을 선택합니다.
+
+   ![이미지](/help/screens-cloud/assets/player/register-player1.png)
+
+1. **등록 코드** 대화 상자에서 다음 필드를 채웁니다.
+
+   ![이미지](/help/screens-cloud/assets/player/register-player2.png)
+
+   1. **등록 코드 이름**:등록 코드의 이름
+   1. **등록 코드 만료**:등록 코드의 만료 날짜
+   1. **사용 제한**:등록 코드의 사용 제한을 해제하려면 버튼을 전환합니다. 기본적으로 사용량 제한 옵션은 꺼져 있습니다.
+   1. **사용 제한**:사용 제한 번호를 선택합니다
+
+1. **만들기**&#x200B;를 클릭하여 등록 코드를 만듭니다. 목록에 등록 코드가 있는 플레이어가 표시됩니다.
+
+   ![이미지](/help/screens-cloud/assets/player/register-player3.png)
+
+1. **REGISTRATION CODE** 열 아래의 값을 클릭하여 값을 클립보드에 복사합니다.
+
+1. AEM Screens 플레이어의 관리자 UI에서 **플레이어 등록** 탭에 있는 **코드** 필드에 이 값을 붙여 넣고 **등록**&#x200B;을 클릭합니다.
+
+   ![이미지](/help/screens-cloud/assets/player/register-player4.png)
+
+
+1. 코드를 추가하면 플레이어가 플레이어의 관리 UI에서 등록된 것이 표시됩니다.
+
+   ![이미지](/help/screens-cloud/assets/player/register-player5.png)
+
+1. 이제 왼쪽 탐색 패널의 **Players**&#x200B;에 이 플레이어가 표시됩니다. Screens 서비스 공급자에 표시되는 코드는 플레이어 코드 아래의 관리 UI의 **시스템 정보** 패널과 일치합니다.
+
+   ![이미지](/help/screens-cloud/assets/player/register-player6.png)
+
