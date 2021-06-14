@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에서 Cloud Service으로 채널을 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,4 @@ AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능�
 
 ## 다음 기능 {#whats-next}
 
-이제 프로젝트에 채널을 게시했으므로 다음을 수행할 수 있습니다.
-
-* 스크린 콘텐츠 공급자에서 위치 만들기 및 관리
-* Screens 서비스 공급자에서 플레이어 만들기 및 관리
-
-   다음 번에 문서를 검토하여 Screens를 Cloud Service 여정으로 계속 실행해야 합니다.
+이제 프로젝트에 채널을 게시했으므로, 이제 [Screens의 플레이어 설치 및 구성 문서를 Cloud Service](/help/screens-cloud/creating-content/manage-publish.md)로 검토하여 스크린을 Cloud Service 여정으로 계속해야 합니다.
