@@ -2,7 +2,7 @@
 title: 도메인 이름 상태 확인
 description: 도메인 이름 상태 확인
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -41,7 +41,7 @@ FailedTXT 확인이 성공했습니다. 그러나 CDN 배포가 실패했습니�
 지정 도메인 이름을 삭제하지 못했습니다. 다시 시도해야 합니다. 자세한 내용은 [사용자 지정 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) 삭제를 참조하십시오.
 
 
-## IP 허용 목록 {#pre-existing-cdn}에 대한 기존 CDN 구성
+## 사용자 지정 도메인 이름에 대한 기존 CDN 구성 {#pre-existing-cdn}
 
 IP 허용 목록, SSL 인증서 또는 사용자 지정 도메인 이름에 대한 기존 CDN 구성을 포함하는 환경을 사용하는 고객은 **IP 허용 목록** 및 **환경** 세부 정보 페이지에 다음 메시지가 표시됩니다. 고객이 UI를 통해 기존 환경 구성을 모두 마이그레이션한 후 UI에 표시되는 메시지는 사라지며, 메시지가 사라지려면 영업일 기준으로 1~2일이 걸릴 수 있습니다.
 
