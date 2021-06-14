@@ -6,7 +6,7 @@ hidefromtoc: true
 index: false
 source-git-commit: beb1e635f573c6acc16c2350727c36a98fd6b6e7
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ CAM(Cloud Acceleration Manager)은 고객과 파트너에게 초기 평가를 �
 
 ### Cloud Acceleration Manager로 이동 {#navigating}
 
+
+Cloud Acceleration Manager (CAM)로 이동하려면 아래 단계를 따르십시오.
+
+1. [Adobe Experience Cloud](https://experience.adobe.com)에 로그인합니다.
 
 
 
