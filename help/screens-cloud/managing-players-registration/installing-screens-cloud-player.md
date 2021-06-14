@@ -1,12 +1,12 @@
 ---
-title: Screens에서 Cloud Service으로 플레이어 설치
-description: 이 페이지에서는 Screens에 플레이어를 Cloud Service으로 설치하는 방법을 설명합니다.
+title: Screens에서 Cloud Service으로 플레이어 설치 및 구성
+description: 이 페이지에서는 Screens에서 Cloud Service으로 플레이어를 설치하고 구성하는 방법을 설명합니다.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -48,4 +48,4 @@ ht-degree: 1%
 
 ## 다음 기능 {#whats-next}
 
-이제 플레이어를 설치하고 필요한 설정을 구성했으므로, 다음 번 **Screens 서비스 공급자에서 플레이어 만들기** 문서를 검토하여 Screens를 Cloud Service 여정으로 계속해야 합니다.
+이제 플레이어를 클라우드 모드로 설치 및 구성했으므로, Screens 서비스 제공자에서 [Screens의 플레이어를 Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)(으)로 등록하여 Cloud Service 여정으로 계속해야 합니다.
