@@ -4,7 +4,7 @@ description: 이 페이지에서는 Screens에서 Cloud Service으로 디스플�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 14%
@@ -55,4 +55,4 @@ Screens 서비스 공급자에서 디스플레이를 생성하려면 아래 절�
 
 ## 다음 기능 {#whats-next}
 
-이제 프로젝트에 대한 디스플레이를 만들고 관리하는 방법을 배웠으므로 다음 Cloud Service 여정으로 AEM용 Screens 플레이어 설치 및 구성 문서 [을 Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)로 검토하여 Screens를 플레이어로 계속해야 합니다.
+이제 프로젝트에 대한 디스플레이를 만들고 관리하는 방법을 배웠으므로 다음 Cloud Service 여정으로 [Screens의 디스플레이에 Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md) 문서를 검토하여 Screens를 Screens의 디스플레이로 계속 실행해야 합니다.
