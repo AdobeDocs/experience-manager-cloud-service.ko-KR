@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens용 Cloud Manager의 기존 프로그
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 기존 프로그램에 추가 기능으로 화면을 추가하려면 아래 단계를 따르십시오.
 
-1. Cloud Manager로 이동합니다.
+1. [Cloud Manager](https://my.cloudmanager.adobe.com/)로 이동합니다.
 
    >[!NOTE]
    >Cloud Manager에 대해 알아보려면 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)를 참조하십시오.
