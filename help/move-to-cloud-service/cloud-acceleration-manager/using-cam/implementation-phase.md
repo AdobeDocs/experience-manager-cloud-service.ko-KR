@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '563'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,14 @@ ht-degree: 2%
 * [AEM as a Cloud Service 배포](#aem-as-a-cloud-service-deployment)
 * [컨텐츠 전송](#content-transfer)
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+프로젝트 카드를 클릭하여 프로젝트 랜딩 페이지를 열고 아래 그림과 같이 **구현** 섹션으로 이동합니다.
+
+![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+
+>[!NOTE]
+>자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) 를 참조하십시오.
+
 
 ## 로컬 개발 카드 사용 {#local-development}
 
@@ -62,13 +69,13 @@ AEM as a Cloud Service 배포 카드는 AEM as a Cloud Service에 코드를 배�
 
 AEM as a Cloud Service 배포 카드 활동 카드로 살펴보려면 이 섹션을 따르십시오.
 
-1. **AEM as a Cloud Service 배포** 카드에서 **보기** 단추를 클릭합니다.
+1. **AEM as a Cloud Service 배포** 활동 카드로 **보기** 단추를 클릭합니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. 마이그레이션 여정의 이 단계에 대한 관련 정보가 포함된 컨텐츠 회전판이 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
 
 
 ## 컨텐츠 전송 카드 사용 {#content-transfer}
@@ -77,17 +84,25 @@ AEM as a Cloud Service 배포 카드 활동 카드로 살펴보려면 이 섹션
 
 컨텐츠 전송 활동 카드를 탐색하려면 이 섹션을 따르십시오.
 
-1. **Local Development** 카드에서 **보기** 단추를 클릭합니다.
+1. **컨텐츠 전송** 활동 카드에서 **보기** 단추를 클릭합니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-4.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. 마이그레이션 여정의 이 단계에 대한 관련 정보가 포함된 컨텐츠 회전판이 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
 
->[!NOTE]
->컨텐츠 전송 도구를 사용하기 전에 [사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) 및 [우수 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)을 검토하십시오.
+   >[!NOTE]
+   >컨텐츠 전송 도구를 사용하기 전에 [사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) 및 [우수 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)을 검토하십시오.
 
-컨텐츠 전송 활동을 완료하는 데 걸리는 시간을 예상하기 위해 새로운 컨텐츠 전송 도구 계산기가 제공되었습니다. 컨텐츠 저장소 크기 슬라이더를 사용하여 프로젝트에 적용되는 크기를 선택할 수 있습니다. 전송 시간은 추출 및 수집 단계에 따라 다릅니다. AEM 저장소의 크기를 추정하는 데 필요한 경우 `http://HOST:PORT/etc/reports/diskusage.html`에서 디스크 사용량 보고서를 실행할 수 있습니다.
+### 컨텐츠 전송 도구 활동 추정 {#calculating}
+
+컨텐츠 전송 활동을 완료하는 데 걸리는 시간을 예상하기 위해 새로운 컨텐츠 전송 도구 계산기가 제공되었습니다. 컨텐츠 저장소 크기 슬라이더를 사용하여 프로젝트에 적용되는 크기를 선택할 수 있습니다. 전송 시간은 추출 및 수집 단계에 따라 다릅니다.
+
+AEM 저장소의 크기를 추정하는 데 필요한 경우 `http://HOST:PORT/etc/reports/diskusage.html`에서 디스크 사용량 보고서를 실행할 수 있습니다.
 
 `path` 매개 변수(예: `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`)를 사용하여 특정 저장소 경로의 크기를 예측할 수도 있습니다.
+
+## 다음 기능 {#whats-next}
+
+Cloud Acceleration Manager에 로그인하는 방법과 구현 단계를 활용하는 방법을 학습하면 이제 GoLive 단계를 사용하면서 다음 단계를 검토할 준비가 되었습니다.
