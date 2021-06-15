@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager를 사용 및 시
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Cloud Acceleration Manager (CAM)로 이동하려면 아래 단계를 따르십�
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### Cloud Acceleration Manager에서 프로젝트 만들기 {#create-project}
+### Cloud Acceleration Manager에서 프로젝트 만들기 및 관리 {#create-project}
 
 CAM(Cloud Acceleration Manager)의 랜딩 페이지에서 여러 프로젝트를 만들고 편집할 수 있습니다.
 
