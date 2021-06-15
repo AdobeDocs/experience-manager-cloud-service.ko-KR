@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 3%
 
 ---
@@ -18,20 +18,20 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 준비 단계 에는 다음이 포함됩니다.
 
-* 우수 사례 분석
-* 계획 및 설정
+* [우수 사례 분석](#best-practices-analysis)
+* [계획 및 설정](#planning-setup)
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## 우수 사례 분석 사용 {#best-practices-analysis}
+## 우수 사례 분석 카드 사용 {#best-practices-analysis}
 
-모범 사례 분석을 사용하려면 아래 절차를 따르십시오.
+우수 사례 분석 카드를 사용하려면 아래 절차를 따르십시오.
 
 1. **우수 사례 분석** 카드에서 **검토** 단추를 클릭합니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. 다음 단계에 따라 모범 사례 분석기를 다운로드하고 AEM 시스템의 복제본에서 실행합니다.
+1. 다음 단계에 따라 BPA(Best Practices Analyzer)를 다운로드하고 AEM 시스템의 복제본에서 실행합니다.
 
    1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털로 이동하여 우수 사례 분석기를 zip 파일로 다운로드합니다.
 
@@ -46,10 +46,10 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 1. CAM에서 모범 사례 분석 대시보드를 검토하고 살펴봅니다.
 
-   * 각 카드를 클릭하면 관련 탭이 열립니다
-   * 모든 보고서 탭(필터링 포함)은 공유 또는 향후 검색을 위해 책갈피를 지정할 수 있습니다
-   * 세부 사항 아이콘을 통해 각 보고서 검색 결과의 세부 사항을 봅니다
-   * 새 보고서를 업로드하면 모든 평가가 재설정됩니다
+   * 각 카드를 클릭하여 관련 탭을 엽니다
+   * 공유하거나 나중에 검색할 수 있도록 모든 보고서 탭(필터링 포함)을 책갈피로 지정할 수 있습니다
+   * 세부 사항 아이콘을 사용하여 각 보고서 검색 결과의 세부 사항을 볼 수 있습니다
+   * 새 보고서를 업로드하면 모든 평가가 재설정됩니다.
 
 ## 계획 및 설정 사용 {#planning-setup}
 
@@ -66,8 +66,5 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 ## 다음 기능 {#whats-next}
 
 Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 구현 단계를 사용하면서 다음 단계를 검토할 수 있습니다.
-
-
-
 
 
