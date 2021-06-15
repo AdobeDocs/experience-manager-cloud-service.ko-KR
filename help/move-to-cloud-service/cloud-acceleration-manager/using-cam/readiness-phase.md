@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
    * 세부 사항 아이콘을 사용하여 각 보고서 검색 결과의 세부 사항을 볼 수 있습니다
    * 새 보고서를 업로드하면 모든 평가가 재설정됩니다.
 
-## 계획 및 설정 사용 {#planning-setup}
+## 계획 및 설정 카드 사용 {#planning-setup}
 
 이 섹션을 따라 계획 및 설정 활동 카드를 탐색합니다.
 
