@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에 있는 디스플레이에 Cloud S
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,11 @@ ht-degree: 1%
 
    ![이미지](/help/screens-cloud/assets/player/register-player8.png)
 
-1. 선택 을 클릭하면 **지정된 디스플레이** 패널 아래에 지정된 디스플레이가 표시됩니다.
+## 컨텐츠 재생 {#content-playback}
 
-   이제 디스플레이가 플레이어에 할당되고 채널이 컨텐츠 재생을 시작합니다. 이제 플레이어가 다운로드하여 컨텐츠 재생을 시작해야 합니다. **축하합니다!**
+이전 섹션에 표시된 대로 플레이어에 디스플레이를 지정했으면 **ASSIGNED DISPLAY** 패널 아래에 지정된 디스플레이가 표시됩니다.
 
-   ![이미지](/help/screens-cloud/assets/player/output.gif)
+이제 디스플레이가 플레이어에 할당되고 채널이 컨텐츠 재생을 시작합니다. 이제 플레이어가 다운로드하여 컨텐츠 재생을 시작해야 합니다. **축하합니다!**
+
+![이미지](/help/screens-cloud/assets/player/output.gif)
 
