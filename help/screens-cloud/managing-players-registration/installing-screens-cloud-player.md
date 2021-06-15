@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에서 Cloud Service으로 플레이�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Screens에서 Cloud Service {#installing-players-screens-cloud} 플레이어 설치 및 구성
 
-아래 섹션에서는 온-프레미스 AEM 인스턴스에 등록된 AEM Screens 플레이어를 설치하는 방법을 설명합니다. 또한 기존 플레이어를 출하 시 재설정한 다음 AEM Screens에 대해 새 플레이어를 Cloud Service으로 등록해야 합니다.
+이 섹션에서는 온-프레미스 AEM 인스턴스에 등록된 AEM Screens 플레이어를 설치하는 방법을 설명합니다. 또한 기존 플레이어의 공장 재설정을 수행한 다음, 새 플레이어를 AEM Screens에 Cloud Service으로 등록해야 합니다.
 
 ## 목표 {#objective}
 
@@ -44,8 +44,8 @@ ht-degree: 1%
 
    ![이미지](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. 클라우드 모드로 전환할 때 나타나는 **Confirm**&#x200B;을 클릭하면 플레이어가 등록 취소됩니다.
+1. 클라우드 모드로 전환할 때 나타나는 **Confirm**&#x200B;을 클릭하면 플레이어 등록이 취소됩니다.
 
 ## 다음 기능 {#whats-next}
 
-이제 플레이어를 클라우드 모드로 설치 및 구성했으므로, Screens 서비스 제공자에서 [Screens의 플레이어를 Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)(으)로 등록하여 Cloud Service 여정으로 계속해야 합니다.
+이제 플레이어를 클라우드 모드로 설치 및 구성했으므로, 다음에 Screens 서비스 제공자에서 [Screens의 플레이어를 Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)로 등록하여 Cloud Service 여정으로 계속해야 합니다.
