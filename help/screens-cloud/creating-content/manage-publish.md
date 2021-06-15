@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에서 Cloud Service으로 채널을 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능�
 
 ## 목표 {#objective}
 
-이 문서는 스크린 컨텐츠 제공자에서 AEM Screens 프로젝트를 위한 새 프로젝트를 만드는 것을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 스크린 컨텐츠 제공자에서 AEM Screens 프로젝트를 위한 새 프로젝트를 만드는 것을 이해하는 데 도움이 됩니다. 읽고 나면 다음을 수행할 수 있습니다.
 
 * 채널을 게시하는 방법을 이해합니다.
-* 범위 측면에서 채널 게시를 관리할 수 있습니다.
+* 범위 측면에서 게시 관리
 
 ## 채널 {#publish-channel} 게시 단계
 
