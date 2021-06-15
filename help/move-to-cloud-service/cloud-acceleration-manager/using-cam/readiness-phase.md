@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
+source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,12 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 * [우수 사례 분석](#best-practices-analysis)
 * [계획 및 설정](#planning-setup)
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+프로젝트 카드를 클릭하여 프로젝트 랜딩 페이지를 열고 아래 그림과 같이 **준비** 섹션으로 이동합니다.
+
+![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+>[!NOTE]
+>자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) 를 참조하십시오.
 
 ## 우수 사례 분석 카드 사용 {#best-practices-analysis}
 
