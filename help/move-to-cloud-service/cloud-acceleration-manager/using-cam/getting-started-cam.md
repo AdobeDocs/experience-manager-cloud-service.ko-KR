@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager를 사용 및 시
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '480'
 ht-degree: 1%
 
 ---
@@ -54,14 +54,41 @@ CAM(Cloud Acceleration Manager)의 랜딩 페이지에서 여러 프로젝트를
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   아래 그림과 같이 프로젝트를 선택하고 프로젝트 위로 마우스를 가져가면 프로젝트를 편집하거나 삭제할 수 있습니다.
+1. 이제 프로젝트가 생성되고 **클라우드 가속 관리자** 랜딩 페이지에 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. 프로젝트 카드를 클릭하여 프로젝트를 입력합니다. 프로젝트 랜딩 페이지로 이동합니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## 프로젝트 관리 {#manage-project}
+
+프로젝트 이름, 설명, 축소판 이미지를 편집하거나 프로젝트를 삭제할 수 있습니다.
+
+### 프로젝트 편집 {#edit-project}
+
+아래 절차에 따라 프로젝트를 편집하십시오.
+
+1. 아래 그림과 같이 프로젝트를 선택하고 프로젝트 위로 마우스를 가져간 다음 연필 아이콘을 클릭하여 프로젝트를 편집합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. 프로젝트 이름, 설명을 편집하고 **프로젝트 편집** 대화 상자에서 새 이미지를 업로드하거나 기존 이미지를 편집할 수도 있습니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. **업데이트**&#x200B;를 클릭하여 변경 사항을 커밋합니다.
+
+### 프로젝트 {#delete-project} 삭제
+
+프로젝트를 삭제하려면 아래 절차를 따르십시오.
+
+1. 프로젝트를 선택하고 프로젝트 위로 마우스를 가져간 다음 버킷 아이콘을 클릭하여 아래 그림과 같이 프로젝트를 삭제합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. **삭제**&#x200B;를 클릭하여 단계를 확인합니다.
 
 ## 다음 기능 {#whats-next}
 
