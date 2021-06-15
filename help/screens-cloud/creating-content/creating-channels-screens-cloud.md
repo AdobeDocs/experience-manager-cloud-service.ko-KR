@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에서 Cloud Service으로 채널을 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '540'
 ht-degree: 7%
 
 ---
@@ -19,10 +19,10 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 ## 목표 {#objective}
 
-이 문서는 스크린 컨텐츠 제공자에서 AEM Screens 프로젝트의 채널을 만들고 관리하는 것을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 스크린 컨텐츠 제공자에서 AEM Screens 프로젝트의 채널을 만들고 관리하는 것을 이해하는 데 도움이 됩니다. 읽은 후에는 다음 사항을 충족해야 합니다.
 
-* 스크린 컨텐츠 공급자에 채널을 만드는 방법을 이해합니다.
-* 범위 측면에서 AEM Screens 프로젝트에서 채널을 관리할 수 있습니다.
+* 스크린 컨텐츠 공급자에 채널을 만드는 방법을 이해합니다
+* 채널에서 컨텐츠 관리 및 편집
 
 ## 스크린에서 Cloud Service {#create-new-channel}으로 새 시퀀스 채널을 만드는 절차
 
@@ -44,7 +44,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > **만들기** 마법사는 채널을 만드는 동안 다양한 유형의 템플릿을 제공합니다. 자세한 내용은 만들기 마법사에서 사용 가능한 템플릿 섹션을 참조하십시오.
+   > **만들기** 마법사는 채널을 만드는 동안 다양한 유형의 템플릿을 제공합니다. 자세한 내용은 만들기 마법사의 [사용 가능한 템플릿](#available-templates) 섹션을 참조하십시오.
 
 1. **LoopingChannelOne** 과 같은 시퀀스 채널의 이름을 입력하고 **만들기**&#x200B;를 클릭합니다.
 
@@ -52,7 +52,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
    이제 AEM Screens 프로젝트의 Channels 폴더에 **LoopingChannelOne**&#x200B;이 표시됩니다.
 
-1. 이제 채널을 만들고 나면 채널에 컨텐츠를 추가할 수 있습니다. 채널에 자산(이미지/비디오)을 추가하는 방법에 대해 알려면 [채널](#add-content)에 컨텐츠 추가 를 참조하십시오.
+   이제 채널을 만들고 나면 채널에 컨텐츠를 추가할 수 있습니다. 채널에 자산(이미지/비디오)을 추가하는 방법에 대해 알려면 [채널](#add-content)에 컨텐츠 추가 를 참조하십시오.
 
 ## 채널 관리 {#managing-channels}
 
@@ -82,7 +82,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 ## 만들기 마법사에서 사용 가능한 템플릿 {#available-templates}
 
-다음과 같은 **만들기** 채널 마법사를 사용하는 동안 다음 템플릿을 사용할 수 있습니다.
+**만들기** 채널 마법사를 사용하는 동안 다음 템플릿을 사용할 수 있습니다.
 
 | 사용 가능한 템플릿 | 설명 |
 |--- |--- |
