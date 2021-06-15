@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens에 플레이어를 Cloud Service으�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ Screens용 플레이어를 Cloud Service으로 설치하고 구성한 후에는 
 
 ## 목표 {#objective}
 
-이 문서는 Screens 서비스 공급자의 플레이어 등록을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 Screens 서비스 공급자의 플레이어 등록을 이해하는 데 도움이 됩니다. 읽고 나면 다음을 수행할 수 있습니다.
 
-* 플레이어를 등록하는 방법을 이해합니다.
-* 범위 측면에서 AEM Screens 프로젝트에서 채널을 관리할 수 있습니다.
+* 플레이어를 등록하는 방법 이해
+* screens 서비스 제공자에서 등록 프로세스를 완료하는 방법
 
 ## 스크린 플레이어 {#register-players} 등록 단계
 
@@ -66,3 +66,6 @@ Screens용 플레이어를 Cloud Service으로 설치하고 구성한 후에는 
 
    ![이미지](/help/screens-cloud/assets/player/register-player6.png)
 
+## 다음 기능 {#whats-next}
+
+이제 플레이어를 클라우드 모드로 설치 및 구성했으므로, 다음에 Screens 서비스 공급자의 Cloud Service으로 [Screens의 디스플레이에 플레이어 할당 문서를 검토하여 Screens 여정으로 계속해야 합니다.](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
