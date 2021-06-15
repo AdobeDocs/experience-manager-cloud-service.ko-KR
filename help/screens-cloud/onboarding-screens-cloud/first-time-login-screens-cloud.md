@@ -4,9 +4,9 @@ description: 이 페이지에서는 Screens as a Cloud Service을 시작하는 �
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0cc505b7ed96ddf81cae1f92d50d6aa0c9eb7db8
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ AMS-Screens-Cloud 기능 팩은 소프트웨어 배포 포털을 통해 사용�
 
 ## Adobe Admin Console에 사용자 추가 {#admin-console}
 
-IMS(Adobe Identity Management 시스템) 조직 ID가 제공되면 이제 [Adobe Admin Console](https://adminconsole.adobe.com/)에서 온보딩될 수 있습니다. 사용자를 Admin Console에 추가하는 방법에 대한 자세한 내용은 [Adobe Admin Console 사용자](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) 를 참조하십시오.
+IMS(Adobe Identity Management 시스템) 조직 ID가 제공되면 이제 [Adobe Admin Console](https://adminconsole.adobe.com/)에 액세스할 수 있습니다. 사용자를 Admin Console에 추가하는 방법에 대한 자세한 내용은 [Adobe Admin Console 사용자](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) 를 참조하십시오.
 
 >[!NOTE]
 >사용자는 Adobe ID 또는 Federated ID을 사용하여 AEM에 로그인할 수 있도록 AEM Cloud Service 제품 프로필에 액세스할 수 있습니다.
 
 ## 다음 기능 {#whats-next}
 
-이제 IMS 조직 ID를 프로비저닝하고 Adobe Admin Console에 사용자로 추가되었으므로 Cloud Manager에서 Cloud Service으로 Screens용 새 프로그램 또는 기존 프로그램에 화면 추가 기능을 추가할 수 있습니다.
+이제 IMS 조직 ID가 프로비저닝되어 Adobe Admin Console에 사용자로 추가되었으므로 새 프로그램](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) 또는 Screens용 기존 프로그램](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)에 [Screens 추가 기능을 Cloud Manager의 Cloud Service으로 추가할 수 있습니다.[
