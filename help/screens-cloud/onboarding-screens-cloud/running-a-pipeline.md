@@ -4,7 +4,7 @@ description: 이 페이지에서는 Cloud Manager에서 Screens용 파이프라�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 371cfaeb0e526197fdf98dea65ed5bc2ca0481a2
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -59,4 +59,4 @@ ht-degree: 2%
 
 ## 다음 기능 {#whats-next}
 
-Cloud Manager에서 프로그램에 대한 파이프라인을 실행하는 방법을 학습하면 이제 다음 단계로 이동할 수 있습니다. 다음 단계는 스크린 프로젝트 구성 및 설정입니다.
+Cloud Manager에서 프로그램에 대한 환경을 설정하는 방법을 학습하면 이제 온보딩 프로세스의 다음 단계인 [Screens 서비스 제공업체로 이동](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)으로 이동할 수 있습니다.
