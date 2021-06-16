@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,18 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 * [우수 사례 분석](#best-practices-analysis)
 * [계획 및 설정](#planning-setup)
 
-프로젝트 카드를 클릭하여 프로젝트 랜딩 페이지를 열고 아래 그림과 같이 **준비** 섹션으로 이동합니다.
+아래 절차에 따라 준비 단계로 이동합니다.
 
-![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. 프로젝트 카드를 클릭하여 프로젝트 랜딩 페이지를 엽니다.
 
->[!NOTE]
->자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) 를 참조하십시오.
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. 아래 그림과 같이 **준비** 섹션으로 이동합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >자세한 내용은 [Cloud Acceleration Manager에서 프로젝트 만들기 및 관리](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md) 를 참조하십시오.
 
 ## 우수 사례 분석 카드 사용 {#best-practices-analysis}
 
@@ -49,12 +55,35 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. CAM에서 모범 사례 분석 대시보드를 검토하고 살펴봅니다.
+1. 새 보고서를 업로드하면 모범 사례 분석 보고서가 표시됩니다.
 
-   * 각 카드를 클릭하여 관련 탭을 엽니다
-   * 공유하거나 나중에 검색할 수 있도록 모든 보고서 탭(필터링 포함)을 책갈피로 지정할 수 있습니다
-   * 세부 사항 아이콘을 사용하여 각 보고서 검색 결과의 세부 사항을 볼 수 있습니다
-   * 새 보고서를 업로드하면 모든 평가가 재설정됩니다.
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. CAM에서 모범 사례 분석 대시보드를 검토하고 살펴봅니다. 자세한 내용은 [우수 사례 분석 보고서 검토](#analysis-report) 섹션을 참조하십시오.
+
+### 우수 사례 분석 보고서 검토 {#analysis-report}
+
+보고서 페이지에서 사용할 수 있는 다음 카드를 살펴보십시오.
+
+>[!NOTE]
+>새 보고서를 업로드하면 모든 평가가 재설정됩니다.
+
+1. **보고서 속성**:이 카드는 보고서 날짜, 기간, 필터, 업로드 날짜 등과 같은 보고서 속성에 대한 정보를 제공합니다.
+
+1. **보고서 개요**:
+
+   이 카드는 보고서 결과를 제공합니다
+
+1. **모범 사례 평가**
+
+1. **마이그레이션 복잡성 평가**
+
+   >[!NOTE]
+   > 또한 다음을 수행할 수 있습니다.
+   >* 각 카드를 클릭하여 관련 탭을 엽니다.
+   >* 공유하거나 나중에 검색할 수 있도록 모든 보고서 탭(필터링 포함)을 책갈피로 지정합니다
+   >* 세부 정보 아이콘을 사용하여 각 보고서 검색 결과의 세부 사항을 볼 수 있습니다
+
 
 ## 계획 및 설정 카드 사용 {#planning-setup}
 
