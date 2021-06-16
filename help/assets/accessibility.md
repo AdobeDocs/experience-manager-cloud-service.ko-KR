@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 접근성,자산 관리
 role: Business Practitioner,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -86,7 +86,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 | [!DNL Assets] 사용자 인터페이스의 열 보기 | 위쪽 및 아래쪽 화살표 키 | 동일한 계층 내에서 파일 및 폴더로 이동합니다. |
 | [!DNL Assets] 사용자 인터페이스의 열 보기 | 왼쪽 및 오른쪽 화살표 키 | 현재 폴더 위 또는 아래로 파일 및 폴더로 이동합니다. |
 | [!DNL Assets]에서 폴더 찾아보기 | `/` | Omnisearch 상자를 열어 검색을 호출합니다. |
-| [!DNL Assets] 콘솔 | ` | 사이드 레일 전환 |
+| [!DNL Assets] 콘솔 |  | 사이드 레일 전환 |
 | [!DNL Assets] 콘솔 | `Alt + 1` | 컨텐츠 트리를 엽니다. |
 | [!DNL Assets] 콘솔 | `Alt + 2` | [!UICONTROL 탐색] 왼쪽 레일을 엽니다. |
 | [!DNL Assets] 콘솔 | `Alt + 3` | 선택한 자산의 [!UICONTROL 타임라인]을 표시합니다. |
