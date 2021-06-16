@@ -1,9 +1,9 @@
 ---
 title: 메일 서비스에 대한 OAuth2 지원
 description: Adobe Experience Manager as a Cloud Service으로 메일 서비스에 대한 Oauth2 지원
-source-git-commit: b46062697b25aa8d3f215a8a4249f5203bec268e
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,17 @@ AEM as a Cloud Service 메일 서비스에 대한 자세한 내용은 [이메일
 1. 위의 예에서 `<code>` 값을 복사합니다.
 1. 다음 cURL 명령을 사용하여 refreshToken을 가져옵니다. tenantID, clientID 및 clientSecret을 계정 값과 `<code>` 값으로 바꿔야 합니다.
 
-   `curl --location --request POST 'https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token' \
---header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
---data-urlencode 'client_id=<clientID>' \
---data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
---data-urlencode 'redirect_uri=http://localhost' \
---data-urlencode 'grant_type=authorization_code' \
---data-urlencode 'client_secret=<clientSecret>' \
---data-urlencode 'code=<code>'`
+   ```
+   curl --location --request POST 'https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token' \
+   --header 'Content-Type: application/x-www-form-urlencoded' \
+   --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
+   --data-urlencode 'client_id=<clientID>' \
+   --data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
+   --data-urlencode 'redirect_uri=http://localhost' \
+   --data-urlencode 'grant_type=authorization_code' \
+   --data-urlencode 'client_secret=<clientSecret>' \
+   --data-urlencode 'code=<code>'
+   ```
 
 1. refreshToken 및 accessToken을 기록합니다.
 
@@ -79,15 +81,17 @@ AEM 측에서 OAuth 구성을 계속 진행하기 전에 아래 절차에 따라
 
 1. 이전 절차에서 생성된 refreshToken을 사용하여 accessToken을 생성합니다. curl을 사용하여 `<client_id>`,`<client_secret>` 및 `<refreshToken>`의 값을 바꿀 수 있습니다.
 
-   `curl --location --request POST 'https://login.microsoftonline.com/<tenetId>/oauth2/v2.0/token' \
---header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
---data-urlencode 'client_id=<client_id>' \
---data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
---data-urlencode 'redirect_uri=http://localhost' \
---data-urlencode 'grant_type=refresh_token' \
---data-urlencode 'client_secret=<client_secret>' \
---data-urlencode 'refresh_token=<refreshToken>'`
+   ```
+   curl --location --request POST 'https://login.microsoftonline.com/<tenetId>/oauth2/v2.0/token' \
+   --header 'Content-Type: application/x-www-form-urlencoded' \
+   --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_IezHLAQAAAPeNSdgOAAAA' \
+   --data-urlencode 'client_id=<client_id>' \
+   --data-urlencode 'scope=https://outlook.office365.com/SMTP.Send https://outlook.office365.com/Mail.Read https://outlook.office365.com/Mail.Send openid' \
+   --data-urlencode 'redirect_uri=http://localhost' \
+   --data-urlencode 'grant_type=refresh_token' \
+   --data-urlencode 'client_secret=<client_secret>' \
+   --data-urlencode 'refresh_token=<refreshToken>'
+   ```
 
 1. accessToken을 사용하여 메일을 보내 제대로 작동하는지 확인하십시오.
 
