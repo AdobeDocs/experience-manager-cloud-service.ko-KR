@@ -4,10 +4,10 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 우수 사례 분석 보고서 페이지에서 사용할 수 있는 다음 카드를 살펴보십시오.
 
+![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > 각 카드를 사용할 경우 다음을 수행할 수 있습니다.
 >* 각 카드를 클릭하여 관련 탭을 엽니다.
@@ -77,11 +79,26 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 #### 보고서 속성 {#report-properties}
 
-이 카드는 보고서 날짜, 기간, 필터, 업로드 날짜 등과 같은 보고서 속성에 대한 정보를 제공합니다.
+이 카드는 보고서 날짜, 기간, 필터, 업로드 날짜 및 Adobe Experience Manager(AEM) 세부 사항 등의 보고서 속성에 대한 정보를 제공합니다.
+
+![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### 보고서 개요 {#report-overview}
 
 이 카드는 보고서 결과를 제공합니다
+
+![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+이 보고서를 클릭하면 아래 그림과 같이 **보고서** 탭이 열립니다.
+
+![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+중요도, 하위 유형 또는 개수를 기반으로 보고서를 필터링할 수 있습니다.
+
+![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>검색 결과 카테고리 및 중요도 수준에 대해 알려면 [우수 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en)을 참조하십시오.
 
 #### 우수 사례 평가 {#best-practices-assessment}
 
