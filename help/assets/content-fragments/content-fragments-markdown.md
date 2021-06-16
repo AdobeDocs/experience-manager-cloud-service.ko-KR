@@ -4,10 +4,10 @@ description: 컨텐츠 조각 편집기에서 Markdown 구문을 사용하여 �
 feature: 콘텐츠 조각
 role: Business Practitioner
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 93%
+source-wordcount: '524'
+ht-degree: 90%
 
 ---
 
@@ -165,7 +165,7 @@ ht-degree: 93%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-코드 범위(code span)를 나타내려면 억음 악센트 따옴표(`)로 둘러쌉니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
+코드 범위를 나타내려면 백틱 따옴표(&amp;grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
 
 예:
 
