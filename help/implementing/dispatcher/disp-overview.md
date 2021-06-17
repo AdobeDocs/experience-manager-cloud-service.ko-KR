@@ -3,7 +3,7 @@ title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 7b8b9ca2881d07482888ac2a53b8c3bdff02b6dd
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
 source-wordcount: '4247'
 ht-degree: 5%
@@ -34,9 +34,9 @@ Dispatcher 도구는 전체 AEM as a Cloud Service SDK에 포함되어 있으며
 
 ## 도구 {#extracting-the-sdk} 다운로드 및 추출
 
-[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)에 포함된 Dispatcher 도구는 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 다운로드할 수 있습니다. 이 새 Dispatcher 도구 버전에서 사용할 수 있는 모든 새 구성은 클라우드 이상에서 해당 AEM 버전을 실행하는 클라우드 환경에 배포하는 데 사용할 수 있습니다.
+[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)에 포함된 Dispatcher 도구는 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 다운로드할 수 있습니다. 이 새 Dispatcher 도구 버전에서 사용할 수 있는 모든 새 구성을 사용하여 클라우드 이상에서 해당 AEM 버전을 실행하는 클라우드 환경에 배포할 수 있습니다.
 
-macOS/Linux 및 Windows용 Dispatcher 도구를 번들로 제공하는 SDK의 압축을 해제합니다.
+macOS, Linux 및 Windows용 Dispatcher 도구를 번들로 제공하는 SDK의 압축을 해제합니다.
 
 **macOS/Linux**&#x200B;의 경우 Dispatcher 도구를 실행 가능으로 만들고 실행합니다. 저장한 디렉토리 아래에 Dispatcher 도구 파일을 자동으로 추출합니다(여기서 `version`은 Dispatcher 도구의 버전입니다.).
 
@@ -112,7 +112,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.d/variables/custom.vars`
 
-이 파일은 `.vhost` 파일 내부에서 포함됩니다. 이 위치에 Apache 변수에 대한 정의를 지정할 수 있습니다.
+이 파일은 `.vhost` 파일 내부에서 포함됩니다. 이 위치에 Apache 변수에 대한 정의를 추가할 수 있습니다.
 
 * `conf.d/variables/global.vars`
 
@@ -367,7 +367,7 @@ Apache 가상 호스트 구성에는 다음과 같이 지정할 수 있는 두 �
 **사용 중단된 구성 레이아웃이 검색되어 호환성 모드를 사용하도록 설정합니다.**
 
 이 메시지는 구성에 완료된 를 포함하는 더 이상 사용되지 않는 버전 1 레이아웃이 있음을 나타냅니다
-`ams_` 접두사가 있는 Apache 구성 및 파일입니다. 이 기능은 여전히 이전 버전에서 지원됩니다
+`ams_` 접두사가 있는 Apache 구성 및 파일입니다. 이 변수는 여전히 이전 버전에서 지원됩니다
 호환성은 새 레이아웃으로 전환해야 합니다.
 
 ## Apache httpd가 {#local-validation}을 시작할 수 있도록 Dispatcher 구성 구문의 로컬 유효성 검사
