@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '891'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ Cloud Service으로 AEM이 기본 CDN과 함께 제공됩니다. 주요 목적�
 
 AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 충족합니다. 게시 계층의 경우 고객이 선택적으로 자신의 CDN에서 가리키도록 할 수 있으며, 이를 관리해야 합니다. 중단하기 어려운 CDN 공급업체와 레거시 통합을 보유한 고객을 포함한 특정 전제 조건을 충족하는 것에 제한되지 않고, 이를 기반으로 케이스별로 허용됩니다.
 
-## AEM 관리 CDN {#aem-managed-cdn}
+## AEM 관리 CDN  {#aem-managed-cdn}
 
 Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하여 컨텐츠 전달을 준비하려면 아래 섹션을 따르십시오.
 
@@ -40,7 +40,7 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 >
 >허용되는 IP의 요청만 AEM 관리 CDN에 의해 제공됩니다. 고유한 CDN을 AEM 관리 CDN에 연결하는 경우 CDN의 IP가에 포함되어 있는지 허용 목록에 추가하다 확인합니다.
 
-## 고객 CDN은 AEM Managed CDN {#point-to-point-CDN}을 가리킵니다
+## 고객 CDN은 AEM Managed CDN을 가리킵니다 {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -69,6 +69,10 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 >[!NOTE]
 >
 >자체 CDN을 관리하는 고객은 AEM CDN으로 전송되는 헤더의 무결성을 보장해야 합니다. 예를 들어 고객이 모든 `X-Forwarded-*` 헤더를 지우고 알려진 및 제어 값으로 설정하는 것이 좋습니다. 예를 들어 `X-Forwarded-For` 에는 클라이언트의 IP 주소가 포함되어야 하고, `X-Forwarded-Host` 에는 사이트의 호스트가 포함되어야 합니다.
+
+>[!NOTE]
+>
+>샌드박스 프로그램 환경은 고객이 제공하는 CDN을 지원하지 않습니다.
 
 고객 CDN에서 AEM 관리 CDN까지 홉이 효율적일 수 있지만 추가 홉으로 인해 작은 성능 히트가 발생할 수 있습니다.
 
