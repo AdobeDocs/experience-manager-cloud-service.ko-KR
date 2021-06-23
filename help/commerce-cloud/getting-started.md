@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
+source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1104'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ CIF 추가 기능은 AEM 작성자를 위해 준비된 카탈로그 데이터의
 
 끝점을 구성하는 두 가지 옵션이 있습니다.
 
-### Cloud Manager UI(기본값) {#cm-ui}를 통해
+### Cloud Manager UI 사용(기본값) {#cm-ui}
 
 이 작업은 환경 세부 사항 페이지의 대화 상자를 사용하여 수행할 수 있습니다. 상거래 활성화 프로그램에 대한 이 페이지를 볼 때 종단점이 현재 구성되지 않은 경우 단추가 표시됩니다.
 
@@ -61,7 +61,7 @@ CIF 추가 기능은 AEM 작성자를 위해 준비된 카탈로그 데이터의
 
 ![CM 환경 정보](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Adobe I/O CLI {#adobe-cli} 사용
+### Adobe I/O CLI 사용  {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -128,6 +128,9 @@ CIF 추가 기능 및 [CIF 코어 구성 요소](https://github.com/adobe/aem-co
    >
    > UID에 대한 지원이 Adobe Commerce(Magento) 2.4.2에서 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
 - 카탈로그 루트 카테고리 식별자 - 저장소 카탈로그 루트의 식별자(UID 또는 ID)입니다
+   >[!CAUTION]
+   >
+   > CIF 코어 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid` 로 대체되었습니다. 프로젝트에서 CIF 코어 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 카테고리 UID를 &quot;카탈로그 루트 카테고리 식별자&quot;로 사용해야 합니다.
 
 위에 표시된 구성은 참조용입니다. 프로젝트는 자체 구성을 제공해야 합니다.
 
