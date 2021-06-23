@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 85%
+source-wordcount: '810'
+ht-degree: 82%
 
 ---
 
@@ -48,7 +48,7 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 
 * [자산 처리 및 제공](#asset-handling)
 
-## 런타임 시 /apps 및 /libs를 변경할 수 없습니다 {#apps-libs-immutable}
+## 런타임 시 /apps 및 /libs를 변경할 수 없습니다  {#apps-libs-immutable}
 
 `/apps` 및 `/libs`의 모든 컨텐츠 및 하위 폴더는 읽기 전용입니다. 변경이 필요한 모든 기능 또는 사용자 지정 코드가 변경되지 않습니다. 해당 컨텐츠는 읽기 전용이고 쓰기 작업을 완료할 수 없다는 오류가 반환됩니다. 이것은 AEM의 많은 영역에 영향을 줍니다.
 
@@ -114,10 +114,4 @@ AMS 또는 온프레미스 설치에서 프로젝트 전환의 경우에는 AEM 
 
 ## 자산 처리 및 제공 {#asset-handling}
 
-자산 업로드, 처리 및 다운로드가 보다 효율적으로 수행되도록 Assets에 Cloud Service으로 최적화되었기 때문에 더욱 효율적인 크기 조절과 더 빠른 업로드 및 다운로드가 가능합니다. 그러나 이는 일부 기존 사용자 지정 코드에 영향을 줄 수 있습니다.
-
-* 이전 AEM 버전의 기본 워크플로우 **DAM 자산 업데이트**&#x200B;는 이제 사용할 수 없습니다.
-* **변환하지 않은** 바이너리를 제공하는 웹 사이트 구성 요소는 직접 다운로드를 사용해야 합니다.
-   * Sling GET 서블릿은 기본적으로 이를 수행하도록 변경되었습니다.
-* **변환한** 바이너리를 전달하는 웹 사이트 구성 요소(예: 서블릿을 통한 크기 조정)는 계속 이전처럼 수행할 수 있습니다.
-* 패키지 관리자를 통해 들어오는 자산은 Assets 인터페이스의 **자산 재처리** 작업을 사용하여 수동으로 다시 처리해야 합니다.
+자산 업로드, 처리 및 다운로드가 Cloud Service으로 Experience Manager Assets에 최적화되었습니다. 이제 더 효율적이며, 더 많은 크기와 더 빠른 업로드 및 다운로드를 가능하게 합니다. 또한 기존 사용자 지정 코드 및 일부 작업에 영향을 줍니다. [변경 내용 [!DNL Assets]](/help/assets/assets-cloud-changes.md)을 참조하십시오.
