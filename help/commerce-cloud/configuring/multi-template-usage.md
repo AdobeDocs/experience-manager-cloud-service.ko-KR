@@ -10,10 +10,10 @@ feature: 전자 상거래 통합 프레임워크
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 7%
+source-wordcount: '134'
+ht-degree: 5%
 
 ---
 
@@ -26,3 +26,7 @@ ht-degree: 7%
 다음 리소스에서 이 항목에 대한 자세한 정보를 찾을 수 있습니다.
 
 - [AEM CIF 코어 구성 요소 - 다중 카탈로그 페이지 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+
+## 관련 리소스
+
+또한 페이지의 특정 영역을 동적으로 타겟팅하고 동일한 템플릿을 다시 사용할 수도 있습니다. [연결된 AEM 콘텐츠으로 제품 데이터를 보강하는 방법을 알아봅니다](./enrich-product-associated-content.md).
