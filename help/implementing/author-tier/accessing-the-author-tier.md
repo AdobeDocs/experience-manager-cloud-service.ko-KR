@@ -2,10 +2,10 @@
 title: 작성자 계층 액세스
 description: 작성자 계층 액세스
 exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ebc80a68d250ce5e95657f42419e6b40b843f25b
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 100%
+source-wordcount: '51'
+ht-degree: 78%
 
 ---
 
@@ -17,8 +17,4 @@ URL 형식은 현재 다음과 같습니다.
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-결과적으로 이러한 형식은 표준 Adobe Experience Cloud URL 형식으로 대체됩니다.
-
-* `https://experience.adobe.com/#/@[TenantId]/`
-
-따라서 AEM 작성자 계층의 사용자 지정 도메인 이름을 구성하는 것은 지원되지 않습니다.
+AEM 작성자 계층의 사용자 지정 도메인 이름은 지원되지 않습니다.
