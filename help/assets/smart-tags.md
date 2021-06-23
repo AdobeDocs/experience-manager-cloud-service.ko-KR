@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 스마트 태그,태깅
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 1%
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 교육을 취소할 수 없습니다. 위의 지침은 교육할 좋은 이미지를 선택하는 데 도움이 되어야 합니다.
 
-## 사용자 지정 태그 {#train-model} 모델 교육
+## 사용자 지정 태그의 모델 교육 {#train-model}
 
 비즈니스 특정 태그에 대한 모델을 만들고 교육하려면 다음 단계를 수행합니다.
 
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 *그림:태깅 모델을 교육하는 교육 워크플로우의 단계입니다.*
 
-### 교육 상태 보기 및 보고서 {#training-status}
+### 교육 상태 및 보고서 보기 {#training-status}
 
 스마트 태그 서비스가 자산 교육 세트의 태그에서 훈련되었는지 확인하려면 보고서 콘솔에서 교육 워크플로우 보고서를 검토하십시오.
 
@@ -175,7 +175,7 @@ ht-degree: 1%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## 스마트 태그를 사용하여 자산 태깅 {#tag-assets}
+## 스마트 태그를 사용하여 자산에 태그 지정 {#tag-assets}
 
 지원되는 모든 유형의 자산은 업로드되면 [!DNL Experience Manager Assets]에 의해 자동으로 태그가 지정됩니다. 태깅은 기본적으로 활성화됩니다. [!DNL Experience Manager] 적절한 태그를 거의 실시간으로 적용합니다.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -207,7 +207,7 @@ ht-degree: 1%
 
 1. 자산의 [!UICONTROL 속성] 페이지로 이동합니다. 프로모션한 태그에 높은 관련성이 할당되므로 검색 결과에서 더 높게 표시됩니다.
 
-### 스마트 태그가 있는 [!DNL Experience Manager] 검색 결과 이해 {#understand-search}
+### 스마트 태그를 사용하여 [!DNL Experience Manager] 검색 결과 이해 {#understand-search}
 
 기본적으로 [!DNL Experience Manager] 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용하면 이 기본 동작이 변경되지 않습니다. 스마트 태그를 사용하면 `OR` 절이 추가되어 적용된 스마트 태그에서 검색어를 찾습니다. 예를 들어 `woman running`을 검색하는 것이 좋습니다. 메타데이터에 `woman` 키워드만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 표시되지 않습니다. 그러나 스마트 태그를 사용하는 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 따라서 검색 결과는
 
