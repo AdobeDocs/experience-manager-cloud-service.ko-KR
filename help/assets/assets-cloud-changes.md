@@ -4,14 +4,14 @@ description: '[!DNL Adobe Experience Manager 6.5와 비교하여 [!DNL Adobe Exp
 feature: 릴리스 정보
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 6%
+source-wordcount: '830'
+ht-degree: 5%
 
 ---
 
-# [!DNL Cloud Service] {#notable-changes} 로서 [!DNL Experience Manager Assets]에 대한 주목할 만한 변경 사항
+# [!DNL Experience Manager Assets]에 대한 [!DNL Cloud Service]의 주목할 만한 변경 사항 {#notable-changes}
 
 [!DNL Adobe Experience Manager] 는  [!DNL Cloud Service] Experience Manager 프로젝트를 관리할 많은 새로운 기능과 가능성을 제공합니다. [!DNL Experience Manager Assets] 온프레미스 또는 Adobe 관리 서비스로 호스팅되는 것은 [!DNL Experience Manager] as a2/>에 비해 많은 차이점이 있습니다. [!DNL Cloud Service] 이 문서에서는 [!DNL Assets] 기능에 대한 중요한 차이점을 조명합니다.
 
@@ -21,7 +21,7 @@ ht-degree: 6%
 * [클라우드 기반의 처리를 위한 자산 마이크로서비스](#asset-microservices).
 * [클래식 UI 제거](#classic-ui).
 
-## 자산 수집 및 처리 {#asset-ingestion}
+## 자산 수집, 처리 및 배포 {#asset-ingestion-distribution}
 
 자산 업로드는 섭취 비율 개선, 업로드 속도 개선, 마이크로서비스를 사용한 처리 속도 향상 및 일괄 처리를 활성화하여 효율성을 제공하도록 최적화되었습니다. 제품 기능(웹 사용자 인터페이스, 데스크탑 클라이언트)이 업데이트됩니다. 또한 이는 일부 기존 사용자 정의에 영향을 줄 수 있습니다.
 
@@ -33,6 +33,8 @@ ht-degree: 6%
    * [자산 마이크로서비스 구성 및 사용](/help/assets/asset-microservices-configure-and-use.md) 을 참조하십시오.
    * 처리에서 사용자 지정된 워크플로우 단계를 갖도록 [사후 처리 워크플로우](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용할 수 있습니다.
 
+* 변환하지 않고 이진 파일을 제공하는 웹 사이트 구성 요소는 직접 다운로드를 사용할 수 있습니다. Sling GET 서블릿은 개발자가 기본적으로 이를 수행할 수 있도록 업데이트됩니다. 변환한 바이너리를 전달하는 웹 사이트 구성 요소(예: 서블릿을 통해 크기 조정)는 계속 그대로 수행할 수 있습니다.
+
 자산 마이크로서비스와 함께 생성된 표준 변환은 동일한 이름 지정 규칙을 사용하여 자산 저장소 노드에서 이전 버전과 호환되는 방식으로 저장됩니다.
 
 ## 자산 마이크로서비스 개발 및 테스트 {#asset-microservices}
@@ -43,8 +45,7 @@ ht-degree: 6%
 
 자산 수집 및 처리를 포함하여 코드 및 프로세스에 대한 철저한 유효성 검사를 수행하려면 [파이프라인](/help/implementing/cloud-manager/configure-pipeline.md)을 사용하여 코드 변경 사항을 클라우드 개발 환경에 배포하고 자산 마이크로서비스 처리를 완전히 실행함으로써 테스트합니다.
 
-
-## [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}의 기능 패리티
+## [!DNL Experience Manager] 6.5의 기능 패리티 {#cloud-service-feature-status}
 
 [!DNL Experience Manager] 는  [!DNL Cloud Service] 기존 기능이 작동하는 많은 새로운 기능과 더 많은 성능 방법을 도입했습니다. 그러나 [!DNL Experience Manager] 6.5에서 [!DNL Experience Manager] 로 이동할 때 일부 기능이 다르게 작동하거나, 사용할 수 없거나, 부분적으로 사용할 수 있다는 것을 알 수 있습니다. [!DNL Cloud Service] 다음은 이러한 기능 목록입니다. 또한 [더 이상 사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md)을 참조하십시오.
 
