@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 자산 관리
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
+source-git-commit: 230c5a20696684ec69ab154f97609139dbddfea4
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3222'
 ht-degree: 20%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 20%
 
 1. 완료되면 대화 상자의 오른쪽 상단 모서리에서 확인 표시를 탭하여 변경 내용을 저장합니다.
 
-### Dynamic Media 구성 요소 {#enabling-dynamic-media-components} 활성화
+### Dynamic Media 구성 요소 활성화 {#enabling-dynamic-media-components}
 
 페이지에 추가할 수 있는 Dynamic Media 구성 요소가 없다면 사용할 구성 요소를 활성화해야 합니다.
 
@@ -172,9 +172,9 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
    ![이미지 사전 설정에 대한 장치 픽셀 비율 설정](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   [장치 픽셀 비율 최적화 정보](/help/assets/dynamic-media/imaging-faq.md#dpr)를 참조하십시오.
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   모든 [!DNL Experience Manager] Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
 
 * **[!UICONTROL 제목]**  - 이미지의 제목을 변경합니다.
 
@@ -219,7 +219,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
 * **[!UICONTROL 높이]**  - 이미지의 크기를 고정하려면 값을 픽셀 단위로 입력하십시오. 이 값을 공백으로 두면 자산이 적응형으로 설정됩니다.
 
-#### 스마트 자르기 작업 시 {#when-working-with-smart-crop}
+#### 스마트 자르기 작업 {#when-working-with-smart-crop}
 
 Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기 이미지 자산을 추가합니다. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 설정된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
 
@@ -251,9 +251,9 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
    ![스마트 자르기의 장치 픽셀 비율 설정](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+   [장치 픽셀 비율 최적화 정보](/help/assets/dynamic-media/imaging-faq.md#dpr)를 참조하십시오.
 
-<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   모든 [!DNL Experience Manager] Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
 
 * **[!UICONTROL 제목]**  - 스마트 자르기 이미지의 제목을 변경합니다.
 
@@ -354,7 +354,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 사용하기 전에 뷰어 사전 설정을 게시합니다. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오. 
 
-### HTTP/2를 사용하여 Dynamic Media 자산 {#using-http-to-delivery-dynamic-media-assets} 전달
+### HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2는 브라우저 및 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 보다 신속하게 정보를 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 자산의 배달이 HTTP/2를 통해 수행될 수 있으므로 로드 시간이 향상됩니다.
 
