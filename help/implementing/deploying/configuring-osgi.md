@@ -3,14 +3,14 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: '암호 값 및 환경별 값으로 OSGi 구성 '
 feature: 배포
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
+source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2927'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Manager에 대한 OSGi를 Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service} 로 구성
+# Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [](https://www.osgi.org/) OSG는 AEM(Adobe Experience Manager)의 기술 스택에서 기본 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
 
@@ -40,7 +40,7 @@ cfg.json OSGi 구성 형식을 따릅니다.
 >
 >이전 버전의 AEM에서는 .cfg, .config 및 XML sling:OsgiConfig 리소스 정의와 같은 다양한 파일 형식을 사용하여 OSGi 구성 파일을 지원합니다. 이러한 형식은 cfg.json OSGi 구성 형식으로 대체됩니다.
 
-## 실행 모드 해상도 {#runmode-resolution}
+## 런타임 모드 해상도 {#runmode-resolution}
 
 특정 OSGi 구성은 런타임 모드를 사용하여 특정 AEM 인스턴스에 타깃팅할 수 있습니다. 실행 모드를 사용하려면 `/apps/example`(예: 프로젝트 이름)에 다음 형식으로 구성 폴더를 만드십시오.
 
@@ -53,6 +53,10 @@ cfg.json OSGi 구성 형식을 따릅니다.
 동일한 PID에 대해 여러 구성을 적용할 수 있으면 일치하는 실행 모드가 가장 많은 구성이 적용됩니다.
 
 이 규칙의 세부기간은 PID 수준입니다. 즉, 동일한 PID에 대해 `/apps/example/config.author/` 및 `/apps/example/config.author.dev/`에서 더 구체적인 속성을 동일한 PID에 대해 정의할 수 없습니다. 일치하는 실행 모드가 가장 많은 구성은 전체 PID에 적용됩니다.
+
+>[!NOTE]
+>
+>`config.preview` OSGI 구성 폴더 **은(는) `config.publish`을(를) 선언할 수 없는 것과 같은 방식으로 선언할 수 없습니다.** 대신 미리 보기 계층은 게시 계층의 값에서 해당 OSGI 구성을 상속합니다.
 
 로컬에서 개발할 때 런타임 모드 시작 매개 변수를 전달하여 어떤 런타임 모드 OSGI 구성이 사용되는지를 지시할 수 있습니다.
 
@@ -104,7 +108,7 @@ OSGi의 일반적인 사용 사례에서는 인라인 OSGi 구성 값을 사용�
 
 다음 지침은 비보안 및 비밀 환경별 구성을 사용해야 하는 경우를 설명합니다.
 
-### 인라인 구성 값 {#when-to-use-inline-configuration-values} 을 사용해야 하는 경우
+### 인라인 구성 값을 사용해야 하는 경우 {#when-to-use-inline-configuration-values}
 
 인라인 구성 값은 표준 접근 방식으로 간주되며 가능한 경우 사용해야 합니다. 인라인 구성은 다음과 같은 이점을 제공합니다.
 
@@ -116,12 +120,12 @@ OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하고 사용 �
 
 ### 비보안 환경별 구성 값을 사용해야 하는 경우 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-개발 환경에 따라 값이 다를 때 비보안 구성 값에 환경별 구성(`$[env:ENV_VAR_NAME]`)만 사용하십시오. 여기에는 로컬 개발 인스턴스와 Cloud Service 개발 환경으로서의 모든 Adobe Experience Manager이 포함됩니다. Adobe Experience Manager에 대해 비기밀 환경 관련 구성을 Cloud Service 단계 또는 프로덕션 환경으로 사용하지 마십시오.
+미리 보기 계층에 대해 값이 다르거나 개발 환경에 따라 다를 경우 비보안 구성 값에 환경 특정 구성(`$[env:ENV_VAR_NAME]`)만 사용하십시오. 여기에는 로컬 개발 인스턴스와 Cloud Service 개발 환경으로서의 모든 Adobe Experience Manager이 포함됩니다. 미리 보기 계층의 고유한 값을 설정하는 것 외에, Adobe Experience Manager에 대해 비기밀 환경 관련 구성을 Cloud Service 단계 또는 프로덕션 환경으로 사용하지 마십시오.
 
-* 로컬 개발 인스턴스를 포함하여 개발 환경이 서로 다른 구성 값에 비비밀 환경별 구성만 사용하십시오.
-* 대신 스테이지 및 프로덕션 비비밀 값에 대한 OSGi 구성에서 표준 인라인 값을 사용합니다. 이와 관련하여 런타임 시 스테이지 및 프로덕션 환경에 쉽게 구성을 변경할 수 있도록 환경별 구성을 사용하지 않는 것이 좋습니다.이러한 변경 사항은 소스 코드 관리를 통해 가져와야 합니다.
+* 게시 및 미리 보기 계층 간에 다른 구성 값이나 로컬 개발 인스턴스를 포함하여 개발 환경이 서로 다른 값에 대해서만 비비밀 환경별 구성을 사용하십시오.
+* 미리 보기 계층이 게시 계층과 달라야 하는 시나리오 외에도 스테이지 및 프로덕션 비비밀 값에 대한 OSGi 구성의 표준 인라인 값을 사용합니다. 이와 관련하여 런타임 시 스테이지 및 프로덕션 환경에 쉽게 구성을 변경할 수 있도록 환경별 구성을 사용하지 않는 것이 좋습니다.이러한 변경 사항은 소스 코드 관리를 통해 가져와야 합니다.
 
-### 보안 환경별 구성 값 {#when-to-use-secret-environment-specific-configuration-values} 을 사용해야 하는 경우
+### 보안 환경별 구성 값을 사용해야 하는 경우 {#when-to-use-secret-environment-specific-configuration-values}
 
 Adobe Experience Manager as a Cloud Service은 암호, 개인 API 키 또는 보안상의 이유로 Git에 저장할 수 없는 다른 모든 값과 같은 비밀 OSGi 구성 값에 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
 
@@ -131,7 +135,7 @@ Adobe Experience Manager as a Cloud Service은 암호, 개인 API 키 또는 보
 
 아래에 설명된 대로 OSGi 구성을 만드는 방법에는 두 가지가 있습니다. 이전의 접근 방식은 일반적으로 개발자가 잘 알려진 OSGi 속성 및 값을 가지고 있고 AEM에서 제공한 OSGi 구성 요소에 대해 후자가 있는 사용자 지정 OSGi 구성 요소를 구성하는 데 사용됩니다.
 
-### OSGi 구성 쓰기 {#writing-osgi-configurations}
+### OSGi 구성 작성 {#writing-osgi-configurations}
 
 JSON 형식 OSGi 구성 파일은 AEM 프로젝트에서 직접 작성하여 사용할 수 있습니다. 이는 알려진 OSGi 구성 요소 및 특히 구성을 정의하는 동일한 개발자가 디자인하고 개발한 사용자 정의 OSGi 구성 요소에 대한 OSGi 구성을 만드는 가장 빠른 방법입니다. 이 접근 방식은 다양한 런타임 모드 폴더에서 동일한 OSGi 구성 요소에 대한 구성을 복사/붙여넣기와 업데이트하는 데도 사용할 수 있습니다.
 
@@ -143,7 +147,7 @@ OSGi 구성 팩토리 파일 이름은  `<PID>-<factory-name>.cfg.json` 이름 �
 1. 새 `.cfg.json` 파일에 변경 내용을 저장합니다.
 1. 새로운 OSGi 구성 파일을 Git에 추가 및 커밋
 
-### AEM SDK Quickstart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}을 사용하여 OSGi 구성 생성
+### AEM SDK Quickstart를 사용하여 OSGi 구성 생성 {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 AEM SDK Quickstart Jar의 AEM Web Console을 사용하여 OSGi 구성 요소를 구성하고 OSGi 구성을 JSON으로 내보낼 수 있습니다. 이 구성 요소는 AEM 프로젝트에서 OSGi 구성을 정의하는 개발자가 OSGi 속성 및 해당 값 형식을 제대로 이해하지 못할 수 있는 AEM 제공 OSGi 구성 요소를 구성하는 데 유용합니다.
 
@@ -250,14 +254,14 @@ AEM을 시작하기 전에 구성에 사용되는 환경 변수를 설정하고 
 
 예를 들어 `$[secret:server_password]`을 사용하는 경우 **server_password**&#x200B;라는 텍스트 파일을 만들어야 합니다. 이러한 모든 비밀 파일은 동일한 디렉토리에 저장해야 하며 프레임워크 속성 `org.apache.felix.configadmin.plugin.interpolation.secretsdir`은 해당 로컬 디렉터리로 구성해야 합니다.
 
-### 작성자 및 게시 구성 비교 {#author-vs-publish-configuration}
+### 작성자 및 게시 구성 {#author-vs-publish-configuration}
 
 OSGI 속성에 작성자와 게시에 대해 다른 값이 필요한 경우:
 
 * [실행 모드 해상도 섹션](#runmode-resolution)에 설명된 대로 별도의 `config.author` 및 `config.publish` OSGi 폴더를 사용해야 합니다.
 * 사용해야 하는 독립 변수 이름을 만드는 두 가지 옵션이 있습니다.
    * 첫 번째 옵션인 가 권장됩니다.다른 값을 정의하도록 선언된 모든 OSGI 폴더(예: `config.author` 및 `config.publish`)에서 동일한 변수 이름을 사용하십시오. 예
-      `$[env:ENV_VAR_NAME;default=<value>]`: 기본값이 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. [Cloud Manager API](#cloud-manager-api-format-for-setting-properties)를 통해 또는 클라이언트를 통해 환경 변수를 설정할 때 이 [API 참조 설명서](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)에 설명된 대로 &quot;service&quot; 매개 변수를 사용하여 계층을 구별하십시오. &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGI 계층에 바인딩합니다.
+      `$[env:ENV_VAR_NAME;default=<value>]`: 기본값이 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. [Cloud Manager API](#cloud-manager-api-format-for-setting-properties)를 통해 또는 클라이언트를 통해 환경 변수를 설정할 때 이 [API 참조 설명서](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)에 설명된 대로 &quot;service&quot; 매개 변수를 사용하여 계층을 구별하십시오. &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGI 계층에 바인딩합니다. &quot;작성자&quot;, &quot;게시&quot; 또는 &quot;미리 보기&quot;일 수 있습니다.
    * 두 번째 옵션은 `author_<samevariablename>` 및 `publish_<samevariablename>` 등의 접두사를 사용하여 고유 변수를 선언하는 것입니다.
 
 ### 구성 예 {#configuration-examples}
@@ -448,14 +452,14 @@ config.dev
 </tr>
 </table>
 
-## 속성 {#cloud-manager-api-format-for-setting-properties} 설정에 대한 Cloud Manager API 형식
+## 속성 설정을 위한 Cloud Manager API 형식 {#cloud-manager-api-format-for-setting-properties}
 
 API를 구성하는 방법에 대해서는 [이 페이지](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)를 참조하십시오.
 >[!NOTE]
 >
 >사용된 Cloud Manager API에 &quot;Deployment Manager - Cloud Service&quot; 역할이 할당되었는지 확인합니다. 다른 역할은 아래의 명령을 모두 실행할 수 없습니다.
 
-### API {#setting-values-via-api}를 통해 값 설정
+### API를 통해 값 설정 {#setting-values-via-api}
 
 API를 호출하면 일반적인 고객 코드 배포 파이프라인과 유사하게, 클라우드 환경에 새 변수 및 값을 배포합니다. 작성자 및 게시 서비스가 다시 시작되고 새 값을 참조합니다(일반적으로 몇 분 정도 걸립니다.).
 
@@ -483,7 +487,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >
 >자세한 내용은 [이 페이지](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)를 참조하십시오.
 
-### API {#getting-values-via-api}를 통해 값 가져오기
+### API를 통해 값 가져오기 {#getting-values-via-api}
 
 ```
 GET /program/{programId}/environment/{environmentId}/variables
@@ -491,7 +495,7 @@ GET /program/{programId}/environment/{environmentId}/variables
 
 자세한 내용은 [이 페이지](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables)를 참조하십시오.
 
-### API {#deleting-values-via-api}를 통해 값 삭제
+### API를 통해 값 삭제 {#deleting-values-via-api}
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -501,7 +505,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 자세한 내용은 [이 페이지](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)를 참조하십시오.
 
-### 명령줄 {#getting-values-via-cli}을 통해 값 가져오기
+### 명령줄에서 값 가져오기 {#getting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
@@ -511,13 +515,13 @@ MY_VAR2  secretString ****
 ```
 
 
-### 명령줄 {#setting-values-via-cli}을 통해 값 설정
+### 명령줄에서 값 설정 {#setting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
 ```
 
-### 명령줄 {#deleting-values-via-cli}을 통해 값 삭제
+### 명령줄에서 값 삭제 {#deleting-values-via-cli}
 
 ```bash
 $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
