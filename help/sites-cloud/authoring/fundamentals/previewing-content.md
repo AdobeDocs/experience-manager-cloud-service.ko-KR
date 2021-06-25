@@ -1,13 +1,13 @@
 ---
 title: 컨텐츠 미리 보기
 description: 라이브로 전환하기 전에 AEM 미리 보기 서비스를 사용하여 컨텐츠를 미리 보는 방법을 알아봅니다.
-source-git-commit: 9b4ac173c55380cbc06de64677470818aa801df4
+exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
+source-git-commit: 53a3fb91dcf093d55e80c7dfcdef3a7855731841
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # 컨텐츠 미리 보기 {#previewing-content}
 
@@ -38,3 +38,27 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 환경을 위한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)를 참조하십시오.
 
+## 미리 보기 계층에 대한 OSGi 설정 구성 {#configuring-osgi-settings-for-the-preview-tier}
+
+미리 보기 계층의 OSGI 속성 값은 게시 계층에서 상속되지만 미리 보기 계층 값은 &quot;preview&quot; 값으로 서비스 매개 변수를 설정하는 환경별 값을 사용하여 게시 계층과 구별할 수 있습니다. 통합 끝점의 URL을 결정하는 OSGI 속성의 아래 예를 살펴보십시오.
+
+```
+[
+{
+"name":"INTEGRATION_URL",
+"type":"string",
+"value":"http://s2.integrationvendor.com",
+"service": "preview"
+}
+]
+```
+
+자세한 내용은 OSGi 구성 설명서의 [이 섹션](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration)을 참조하십시오.
+
+## 개발자 콘솔을 사용하여 디버깅 미리 보기 {#debugging-preview-using-the-developer-console}
+
+개발자 콘솔을 사용하여 미리 보기 계층을 디버깅하려면 다음 단계를 따르십시오.
+
+* [개발자 콘솔](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)에서 **— 모두 미리 보기 —** 또는 이름에 **prev**&#x200B;를 포함하는 프로덕션 환경을 선택합니다
+* 미리 보기 인스턴스에 대한 관련 정보 생성
+환경을 위한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)를 참조하십시오.
