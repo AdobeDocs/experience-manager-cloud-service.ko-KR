@@ -2,15 +2,15 @@
 title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1663'
 ht-degree: 2%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] Cloud Service {#release-notes} 의 현재 릴리스 노트
+# [!DNL Adobe Experience Manager] Cloud Service의 현재 릴리스 노트 {#release-notes}
 
 다음 섹션에서는 Cloud Service으로 현재(최신) 버전의 [!DNL Experience Manager]에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 ## AEM as a Cloud Service 기반 {#foundation}
 
-### AEM as a Cloud Service 기초 {#what-is-new-foundation} 의 새로운 기능
+### AEM as a Cloud Service Foundation의 새로운 기능 {#what-is-new-foundation}
 
 * [사전 릴리스 채널](/help/release-notes/prerelease.md):프로덕션에서 라이브로 전환되기 전에 한 달 동안 예정된 기능을 미리 봅니다!
 
@@ -42,13 +42,13 @@ ht-degree: 2%
 
 ## [!DNL Adobe Experience Manager Sites]로서의 [!DNL Cloud Service]  {#sites}
 
-### [!DNL Sites] {#what-is-new-sites}의 새로운 기능
+### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
 * 곧 새 [미리 보기 계층](/help/sites-cloud/authoring/fundamentals/previewing-content.md)에서 콘텐츠를 확인하여 게시 계층에서 수행한 최종 경험 모양과 느낌을 시뮬레이션할 수 있습니다. 이 기능은 AEM Sites 관리 게시 마법사에서 활성화됩니다. 이 마법사를 사용하면 이제 게시 또는 미리 보기 간에 게시 대상을 선택할 수 있습니다. 그런 다음 미리 보기에서 경험에 전용 URL을 통해 액세스할 수 있습니다. 미리 보기에서 유효성 검사 후 평소대로 컨텐츠를 작성자에서 게시로 게시할 수 있습니다. AEM에서 Cloud Service 환경으로 미리 보기 서비스를 활성화하는 것은 다음 몇 주 후에 점진적으로 롤아웃됩니다.
 
 ## [!DNL Adobe Experience Manager Assets]로서의 [!DNL Cloud Service]  {#assets}
 
-### 사전 릴리스 채널 {#what-is-new-assets-prerelease}에서 사용할 수 있는 새로운 기능
+### 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#what-is-new-assets-prerelease}
 
 * 메타데이터 스키마는 폴더 속성에 직접 적용할 수 있습니다.
 
@@ -60,51 +60,25 @@ ht-degree: 2%
 
    ![인터페이스에 폴더의 자산 수가 표시됩니다](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### [!DNL Assets] {#assets-bugs-fixed}에 수정된 버그
+### [!DNL Assets]에 수정된 버그 {#assets-bugs-fixed}
 
 * 매우 큰 파일을 업로드하면 [!DNL Experience Manager desktop app]에 충돌이 발생합니다. (CQ-4320942)
 * 도구 모음 옵션은 폴더 내에서 동일한 컬렉션을 선택하고 검색 결과에서 선택되면 다릅니다. (CQ-4321406)
 
-#### [!DNL Dynamic Media] {#what-is-new-dm}의 새로운 기능
+#### [!DNL Dynamic Media]의 새로운 기능 {#what-is-new-dm}
 
 * DPR(Smart Imaging Device Pixel Ratio) 및 네트워크 대역폭 최적화를 사용하면 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 최상의 품질의 이미지를 효율적으로 제공할 수 있습니다. [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md)를 참조하십시오.
 
-   >[!NOTE]
-   >
-   >위의 스마트 이미징 개선 사항에 대한 릴리스 타임라인은 다음과 같습니다.
-   >
-   >* 2021년 5월 24일 NA,
-      >
-      >
-   * 유럽, 중동 및 아프리카 2021년 6월 25일
-      >
-      >
-   * 아시아 태평양 2021년 7월 19일
-
-
-* [!DNL Dynamic Media] 게재에서 다음 세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다(fmt URL 수정자).
-
-   >[!NOTE]
-   >
-   >AVIF 지원을 위한 릴리스 타임라인은 다음과 같습니다.
-   >
-   >* 북미 2021년 5월 10일
-      >
-      >
-   * 2021년 5월 24일 유럽, 중동, 아프리카
-      >
-      >
-   * 아시아 태평양 2021년 6월 24일.
-
+* [!DNL Dynamic Media] 배달(`fmt` URL 수정자)에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Forms]로서의 [!DNL Cloud Service]  {#forms}
 
-### [!DNL Forms] {#what-is-new-forms}의 새로운 기능
+### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
 * **상황별 도움말**:작성자가 다양한 편집기의 기능을 더 잘 이해할 수 있도록 적응형 양식 편집기, 템플릿 편집기 및 테마 편집기에 대한 상황별 도움말을 추가했습니다.
 * **속성 브라우저의 오류 메시지**:응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
 
-### [!DNL Forms] {#what-is-new-forms-prerelease}의 예정된 베타 기능
+### 예정된 [!DNL Forms] 베타 기능 {#what-is-new-forms-prerelease}
 
 클라우드 서비스로 출력:출력 서비스를 사용하면 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기식 및 비동기식 배치 모드로 문서를 생성할 수 있습니다. 출력 서비스를 통해 다음을 수행할 수 있는 응용 프로그램을 만들 수 있습니다.
 
@@ -114,7 +88,7 @@ ht-degree: 2%
 
 formscsbeta@adobe.com에 편지를 보내 베타 프로그램에 등록할 수 있습니다.
 
-### [!DNL Forms] {#forms-bugs-fixed}에 수정된 버그
+### [!DNL Forms]에 수정된 버그 {#forms-bugs-fixed}
 
 * AEM Forms Workflows의 작업 할당 단계에서 작업 단추의 기본 아이콘을 coral 아이콘으로 바꾸면 워크플로우가 작동하지 않고 예외가 기록됩니다. 워크플로우는 기본 아이콘을 사용할 때 예상대로 수행됩니다.
 * 레이아웃 레이어에서 열 수를 변경하고 편집 레이어를 열고 패널에서 일부 구성 요소를 드래그하면 적응형 양식 편집기의 콘텐츠 영역에 파란색 사각형 상자가 나타나고 편집기가 응답하지 않습니다.
