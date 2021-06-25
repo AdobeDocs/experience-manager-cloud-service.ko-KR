@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 소개 - 용어
 description: Adobe Experience Manager as a Cloud Service 소개 - 용어.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '345'
+ht-degree: 97%
 
 ---
 
@@ -27,6 +27,7 @@ Adobe Experience Manager (AEM) as a Cloud Service와 관련하여 다음과 같�
 |---|---|
 | Adobe 파이프라인 | 작성에서 게시로 컨텐츠를 게시하는 메커니즘. |
 | AEM 작성 계층 | Sites 및 Assets의 작성 환경에 대해 설명합니다. |
+| AEM 미리 보기 계층 | Sites의 미리 보기 환경에 대해 설명합니다. |
 | AEM 게시 계층 | Sites의 게시 환경에 대해 설명합니다. |
 
 
