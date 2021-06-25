@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
+source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
 ## 컨텐츠 게시 방법 {#methods-of-publishing-content}
 
-### 빠른 게시 취소/게시 - 계획된 게시 취소/게시 취소 {#publish-unpublish}
+### 빠른 게시 취소/게시 - 계획된 게시 취소/게시 {#publish-unpublish}
 
 작성자를 위한 이러한 표준 AEM 기능은 AEM Cloud Service과 변경되지 않습니다.
 
@@ -82,7 +82,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
 * `replicateAsParticipant` (부울 값, 기본값: `false`). `true`로 구성된 경우, 복제에서는 참가자 단계를 수행한 주도자의 `userid`을 사용하고 있습니다.
 * `enableVersion` (부울 값, 기본값: `true`). 이 매개 변수는 복제 시 새 버전을 만들지 여부를 결정합니다.
-* `agentId` (문자열 값, 기본값은 모든 활성화된 에이전트가 사용됨을 의미합니다.) agentId에 대해 명시하는 것이 좋습니다.예를 들어 값을 설정합니다.게시
+* `agentId` (문자열 값, 기본값은 게시용 에이전트만 사용됨을 의미합니다.) agentId에 대해 명시하는 것이 좋습니다.예를 들어 값을 설정합니다.게시합니다. 에이전트를 `preview`으로 설정하면 미리 보기 서비스에 게시됩니다
 * `filters` (문자열 값, 기본값은 모든 경로가 활성화됨을 의미합니다.) 사용 가능한 값은 다음과 같습니다.
    * `onlyActivated` - 활성화됨으로 표시되지 않은 경로만 활성화됩니다.
    * `onlyModified` - 활성화 날짜보다 늦게 수정 날짜가 있고 이미 활성화된 경로만 활성화합니다.
@@ -111,6 +111,66 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 **지원 다시 시작**
 
 워크플로우는 컨텐츠를 청크 단위로 처리하며, 각 청크는 게시할 전체 컨텐츠의 하위 집합을 나타냅니다. 어떤 이유로든 워크플로우가 시스템에 의해 중지되면 다시 시작되고 아직 처리되지 않은 청크가 처리됩니다. 로그 문은 특정 경로에서 컨텐츠가 다시 시작되었다고 나타냅니다.
+
+### 복제 API {#replication-api}
+
+AEM에 포함된 복제 API를 Cloud Service으로 사용하여 컨텐츠를 게시할 수 있습니다.
+
+자세한 내용은 [API 설명서](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html)를 참조하십시오.
+
+**API의 기본 사용**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**특정 에이전트를 사용한 복제**
+
+위의 예와 같이 리소스를 복제할 때 기본적으로 활성 상태인 에이전트만 사용됩니다. AEM as a Cloud Service에서 이 작업은 작성자를 게시 계층에 연결하는 &quot;게시&quot;라는 에이전트만 가집니다.
+
+미리 보기 기능을 지원하기 위해 기본적으로 활성화되지 않은 &quot;미리 보기&quot;라는 새 에이전트가 추가되었습니다. 이 에이전트는 작성자를 미리 보기 계층에 연결하는 데 사용됩니다. 미리 보기 에이전트를 통해서만 복제하려면 `AgentFilter` 을 통해 이 미리 보기 에이전트를 명시적으로 선택해야 합니다.
+
+이 작업을 수행하는 방법에 대해서는 아래 예를 참조하십시오.
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+이러한 필터를 제공하지 않고 &quot;게시&quot; 에이전트만 사용하는 경우 &quot;미리 보기&quot; 에이전트가 사용되지 않고 복제 작업이 미리 보기 계층에 영향을 주지 않습니다.
+
+리소스의 전체 `ReplicationStatus` 은 복제 작업에 기본적으로 활성 상태인 에이전트가 하나 이상 포함된 경우에만 수정됩니다. 위의 예에서 이는 복제가 &quot;미리 보기&quot; 에이전트를 사용하고 있기 때문에 해당되지 않습니다. 따라서 특정 에이전트의 상태를 쿼리할 수 있는 새 `getStatusForAgent()` 메서드를 사용해야 합니다. 이 메서드는 &quot;게시&quot; 에이전트에서도 작동합니다. 제공된 에이전트를 사용하여 복제 작업이 수행된 경우 null이 아닌 값을 반환합니다.
 
 ## 문제 해결 {#troubleshooting}
 
