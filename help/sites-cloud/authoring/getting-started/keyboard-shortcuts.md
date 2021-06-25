@@ -25,7 +25,7 @@ ht-degree: 100%
 | 콘솔 | `?` | 키보드 단축키 도움말 |
 |  | `/` | [검색](/help/sites-cloud/authoring/getting-started/search.md) 호출 |
 |  | `Alt+`&lt;`Number`> | 보려는 [레일 선택기 옵션](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)을 전환합니다. |
-|  | ` | 레일 숨기기 |
+|  | &grave; | 레일 숨기기 |
 |  | `e` | 편집 |
 |  | `p` | 속성 |
 |  | `m` | 이동 |
