@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager 6.5와 비교하여 [!DNL Adobe Exp
 feature: 릴리스 정보
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '850'
 ht-degree: 5%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 5%
 | 복합 자산에 대한 하위 자산 생성 | 지원되지 않음. | 종속 사용 사례는 이행되지 않습니다. 예를 들어 다중 페이지 PDF 파일의 주석은 영향을 받습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 만들기를 참조하십시오. |
 | 홈 페이지 | 지원되지 않음. | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) 참조 |
 | ZIP 보관소에서 자산 추출 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)에서 [ZIP 추출 을 참조하십시오. |
+| 자산 등급 | 지원되지 않음. | 자산 등급 옵션을 제공한 메타데이터 스키마 편집기의 위젯은 지원되지 않습니다. |
 | 클래식 UI | 지원되지 않음. | 터치 지원 UI만 사용할 수 있습니다. |
 
 >[!MORELIKETHIS]
