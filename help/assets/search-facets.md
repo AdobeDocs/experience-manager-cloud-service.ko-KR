@@ -4,9 +4,9 @@ description: 이 문서에서는 AEM에서 검색 패싯을 만들고, 수정하
 feature: 검색,메타데이터
 role: Business Practitioner,Administrator
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2361'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ AEM(Adobe Experience Manager) Assets의 엔터프라이즈급 배포는 많은 �
 1. 자산 사용자 인터페이스에서 검색 패널로 이동합니다. 속성 설명이 패널에 추가됩니다.
 1. 텍스트 상자에서 검색할 자산에 대한 설명을 입력합니다. 예를 들어 &quot;Adobe&quot;을 입력합니다. 검색을 수행하면 &quot;Adobe&quot;과 일치하는 설명이 있는 자산이 검색 결과에 나열됩니다.
 
-## 옵션 설명 {#adding-an-options-predicate} 추가
+## 옵션 설명 추가 {#adding-an-options-predicate}
 
 [옵션] 조건부를 사용하면 [필터] 패널에서 여러 검색 옵션을 추가할 수 있습니다. 필터 패널에서 이러한 옵션 중 하나 이상을 선택하여 자산을 검색할 수 있습니다. 예를 들어 파일 유형을 기반으로 자산을 검색하려면 검색 양식에서 이미지, 멀티미디어, 문서, 아카이브 등의 옵션을 구성합니다. 이러한 옵션을 구성한 후 필터 패널에서 이미지 옵션을 선택하면 GIF 유형, JPEG, PNG 등의 자산에 대해 검색이 수행됩니다.
 
@@ -268,17 +268,6 @@ CRX 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대신
     <ul>
      <li>레이블</li>
      <li>속성 이름</li>
-     <li>설명</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>등급</td>
-   <td>검색 조건자를 사용하여 평균 등급을 기준으로 자산을 검색합니다 </td>
-   <td>
-    <ul>
-     <li>레이블</li>
-     <li>속성 이름</li>
-     <li>옵션 경로</li>
      <li>설명</li>
     </ul> </td>
   </tr>
