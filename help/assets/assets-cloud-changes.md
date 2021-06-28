@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager 6.5와 비교하여 [!DNL Adobe Exp
 feature: 릴리스 정보
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: e3efbaf5cb590b079ccc228a0f130ecec198d2ff
+source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '925'
 ht-degree: 5%
 
 ---
@@ -60,6 +60,7 @@ ht-degree: 5%
 | 홈 페이지 | 지원되지 않음. | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) 참조 |
 | ZIP 보관소에서 자산 추출 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)에서 [ZIP 추출 을 참조하십시오. |
 | 자산 등급 | 지원되지 않음. | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
+| 컨텐츠 배포 필터 | 지원되지 않음. | `ContentDispositionFilter`의 일반적인 사용 사례는 관리자가 HTML 파일을 제공하고 PDF 파일을 다운로드하는 대신 인라인으로 열기 위해 [!DNL Experience Manager]을(를) 구성할 수 있도록 하는 것입니다. 게시 인스턴스에서 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성자 인스턴스에서 Adobe은 컨텐츠 처리 헤더를 수정하는 것을 권장하지 않습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)에서 [컨텐츠 처리 필터를 참조하십시오. |
 | 클래식 UI | 지원되지 않음. | 터치 사용 사용자 인터페이스만 사용할 수 있습니다. |
 
 >[!MORELIKETHIS]
