@@ -1,10 +1,7 @@
 ---
 title: 스크린에 Cloud Service으로 처음 로그인
 description: 이 페이지에서는 Screens as a Cloud Service을 시작하는 첫 번째 단계를 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# 스크린에 Cloud Service {#first-time-login-screens-cloud}(으)로 처음 로그인
+# 스크린에 Cloud Service으로 처음 로그인 {#first-time-login-screens-cloud}
 
 
 ## 온보딩 프로세스 {#onboarding-process}
@@ -31,6 +28,6 @@ IMS(Adobe Identity Management 시스템) 조직 ID가 제공되면 이제 [Adobe
 >[!NOTE]
 >사용자는 Adobe ID 또는 Federated ID을 사용하여 AEM에 로그인할 수 있도록 AEM Cloud Service 제품 프로필에 액세스할 수 있습니다.
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 이제 IMS 조직 ID가 프로비저닝되어 Adobe Admin Console에 사용자로 추가되었으므로 새 프로그램](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) 또는 Screens용 기존 프로그램](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)에 [Screens 추가 기능을 Cloud Manager의 Cloud Service으로 추가할 수 있습니다.[
