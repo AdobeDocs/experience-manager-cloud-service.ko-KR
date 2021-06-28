@@ -1,10 +1,7 @@
 ---
 title: 분기 생성
 description: 이 페이지에서는 Screens용 Cloud Manager에 Cloud Service 분기를 만드는 방법에 대해 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f1a21aa8ff832bd8fa460a2ef8013b8e3d1acfde
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 2%
@@ -43,6 +40,6 @@ ht-degree: 2%
 
    ![이미지](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 Cloud Manager에서 프로젝트에 대한 분기를 만드는 방법을 학습하면 이제 온보딩 프로세스의 다음 단계인 [환경 만들기 및 설정](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)으로 이동할 수 있습니다.
