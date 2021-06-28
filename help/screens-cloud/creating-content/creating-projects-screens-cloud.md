@@ -1,10 +1,7 @@
 ---
 title: 스크린에서 Cloud Service으로 프로젝트 만들기
 description: 이 페이지에서는 Screens에서 Cloud Service으로 프로젝트를 만드는 방법을 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# 스크린에서 Cloud Service {#creating-project-screens-cloud} 로 프로젝트 생성 및 관리
+# Screens에서 Cloud Service으로 프로젝트 만들기 및 관리 {#creating-project-screens-cloud}
 
 Screens에서 Cloud Service으로 새 프로젝트를 구현하는 첫 번째 단계는 새 프로젝트를 만드는 것입니다.
 
@@ -27,7 +24,7 @@ Screens에서 Cloud Service으로 새 프로젝트를 구현하는 첫 번째 �
 1. 스크린 컨텐츠 제공업체로 이동합니다.
 
    >[!NOTE]
-   >프로젝트를 만들기 위해 스크린 컨텐츠 공급자에 액세스하는 방법에 대해 알아보려면 [스크린 컨텐츠 공급자 사용](/help/screens-cloud/setting-up-project/using-screens-content-provider.md)을 참조하십시오.
+   >프로젝트를 만들기 위해 스크린 컨텐츠 공급자에 액세스하는 방법에 대해 알아보려면 [스크린 컨텐츠 공급자 사용]을 참조하십시오.
 
 1. 작업 표시줄의 오른쪽 위 모서리에서 **스크린 프로젝트 만들기**&#x200B;를 클릭합니다.
 
@@ -62,6 +59,6 @@ Screens에서 Cloud Service으로 새 프로젝트를 구현하는 첫 번째 �
    >[!NOTE]
    >여러 프로젝트를 선택할 수 있으므로 한 단계에서 여러 프로젝트를 삭제할 수 있습니다.
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
-이제 AEM Screens 프로젝트를 설정했으므로 새 채널을 만들고 컨텐츠를 채널에 추가할 수 있습니다. 채널에서 컨텐츠를 만들고 관리하는 방법에 대해 알아보려면 [채널 만들기 및 관리](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md) 를 참조하십시오.
+이제 AEM Screens 프로젝트를 설정했으므로 새 채널을 만들고 컨텐츠를 채널에 추가할 수 있습니다. 채널에서 컨텐츠를 만들고 관리하는 방법에 대해 알아보려면 [채널 만들기 및 관리] 를 참조하십시오.
