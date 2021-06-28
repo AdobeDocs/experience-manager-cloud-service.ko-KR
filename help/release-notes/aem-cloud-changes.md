@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 82%
+source-wordcount: '819'
+ht-degree: 81%
 
 ---
 
@@ -114,4 +114,4 @@ AMS 또는 온프레미스 설치에서 프로젝트 전환의 경우에는 AEM 
 
 ## 자산 처리 및 제공 {#asset-handling}
 
-자산 업로드, 처리 및 다운로드가 Cloud Service으로 Experience Manager Assets에 최적화되었습니다. 이제 더 효율적이며, 더 많은 크기와 더 빠른 업로드 및 다운로드를 가능하게 합니다. 또한 기존 사용자 지정 코드 및 일부 작업에 영향을 줍니다. [변경 내용 [!DNL Assets]](/help/assets/assets-cloud-changes.md)을 참조하십시오.
+자산 업로드, 처리 및 다운로드가 [!DNL Experience Manager Assets]에 [!DNL Cloud Service] (으)로 최적화되었습니다. [!DNL Assets] 이제 가 보다 효율적이며, 더 많은 크기 조정을 가능하게 하며, 훨씬 빠른 속도로 업로드하고 다운로드할 수 있습니다. 또한 기존 사용자 지정 코드 및 일부 작업에 영향을 줍니다. 변경 사항 목록 및 [!DNL Experience Manager] 6.5 기능과 패리티에 대해서는 [변경 사항 [!DNL Assets]](/help/assets/assets-cloud-changes.md)을 참조하십시오.
