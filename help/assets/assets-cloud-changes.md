@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager 6.5와 비교하여 [!DNL Adobe Exp
 feature: 릴리스 정보
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
+source-git-commit: e3efbaf5cb590b079ccc228a0f130ecec198d2ff
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '858'
 ht-degree: 5%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 5%
 | 메타데이터 원본에 쓰기 | 다르게 작동합니다. | 기본적으로 비활성화됨. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 원본에 쓰기 작업은 자산 마이크로서비스에 의해 처리됩니다. |
 | 패키지 관리자를 사용하여 업로드한 자산 처리 | 수작업 필요. | **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동으로 다시 처리합니다. |
 | MIME 유형 탐지 | 지원되지 않음. | 확장 없이 또는 잘못된 확장이 있는 디지털 자산을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)에서 [MIME 유형 감지를 참조하십시오. |
-| 복합 자산에 대한 하위 자산 생성 | 지원되지 않음. | 종속 사용 사례는 이행되지 않습니다. 예를 들어 다중 페이지 PDF 파일의 주석은 영향을 받습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 만들기를 참조하십시오. |
+| 조합 자산에 대한 하위 자산 생성 또는 주석 달기 | 지원되지 않음. | 종속 사용 사례는 이행되지 않습니다. 예를 들어 다중 페이지 PDF, INDD, PPT, PPTX 및 AI 파일을 보거나 주석을 달 수 없습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 만들기를 참조하십시오. |
 | 홈 페이지 | 지원되지 않음. | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) 참조 |
 | ZIP 보관소에서 자산 추출 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)에서 [ZIP 추출 을 참조하십시오. |
 | 자산 등급 | 지원되지 않음. | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
