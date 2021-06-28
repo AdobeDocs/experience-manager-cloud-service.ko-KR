@@ -1,7 +1,7 @@
 ---
 title: 대용량 컨텐츠 저장소 처리
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -38,13 +38,13 @@ CTT(컨텐츠 전송 도구)를 사용하여 많은 수의 블롭을 복사하�
 
 ### 0. 데이터 저장소에 있는 모든 콘텐츠의 총 크기를 결정합니다 {#determine-total-size}
 
-#### Azure Blob 저장소 데이터 저장소
+#### Azure Blob 저장소 데이터 저장소 {#azure-blob-storage}
 
 Azure 포털의 컨테이너 속성 페이지에서 **크기 계산** 단추를 사용하여 컨테이너에 있는 모든 콘텐츠의 크기를 결정합니다. 예:
 
 ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Amazon S3 데이터 저장소
+#### Amazon S3 데이터 저장소 {#amazon-data}
 
 컨테이너의 지표 탭을 사용하여 컨테이너에 있는 모든 컨텐츠의 크기를 결정할 수 있습니다. 예:
 
@@ -67,7 +67,7 @@ AzCopy 지원은 CTT 1.5.4 릴리스에 포함되어 있습니다. [소프트웨
 
 이 구성 파일의 내용은 소스 AEM 인스턴스가 Azure 또는 Amazon S3 데이터 저장소를 사용하는지에 따라 달라집니다.
 
-#### Azure Blob 저장소 데이터 저장소
+#### Azure Blob 저장소 데이터 저장소 {#azure-blob-storage-data}
 
 azcopy.config 파일에는 다음 속성이 포함되어야 합니다(인스턴스에 올바른 azCopyPath 및 azureSas를 사용해야 함).
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 데이터 저장소
+#### Amazon S3 데이터 저장소 {#amazon-data-store}
 
 azcopy.config 파일에는 다음 속성이 포함되어야 합니다(인스턴스에 올바른 값을 사용해야 함).
 
