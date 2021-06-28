@@ -2,9 +2,9 @@
 title: 컨텐츠 미리 보기
 description: 라이브로 전환하기 전에 AEM 미리 보기 서비스를 사용하여 컨텐츠를 미리 보는 방법을 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 53a3fb91dcf093d55e80c7dfcdef3a7855731841
+source-git-commit: f5e37a4ac8b179ac869609edc87f52858607ad36
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 ```
 
 환경을 위한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)를 참조하십시오.
+
+또한 agentId 매개 변수를 미리 보기로 설정한 [컨텐츠 트리 게시 워크플로우](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow)를 사용하거나 미리 보기를 위해 구성된 AgentFilter와 함께 [복제 API](/help/operations/replication.md#replication-api)를 사용하여 컨텐츠를 미리 보기에 게시할 수 있습니다.
 
 ## 미리 보기 계층에 대한 OSGi 설정 구성 {#configuring-osgi-settings-for-the-preview-tier}
 
