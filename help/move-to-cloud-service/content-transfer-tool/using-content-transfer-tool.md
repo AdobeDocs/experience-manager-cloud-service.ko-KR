@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
 workflow-type: tm+mt
-source-wordcount: '2785'
-ht-degree: 42%
+source-wordcount: '2907'
+ht-degree: 40%
 
 ---
 
@@ -158,6 +158,8 @@ ht-degree: 42%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="추출 추가"
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
+>[!NOTE]
+>Amazon S3 또는 Azure 데이터 저장소가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 단축할 수 있습니다. 이렇게 하려면 추출을 실행하기 전에 azcopy.config 파일을 구성해야 합니다. 자세한 내용은 [큰 컨텐츠 저장소 처리] 를 참조하십시오.
 
 1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **추출**&#x200B;을 클릭하여 추출을 시작합니다. **마이그레이션 세트 추출** 대화 상자가 표시되고 **추출**&#x200B;을 클릭하여 추출 단계를 시작합니다.
 
@@ -206,8 +208,13 @@ ht-degree: 42%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="추가 수집"
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
+>[!NOTE]
+>Amazon S3 또는 Azure Data Store가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 자세한 내용은 [AzCopy를 사용하여 수집]을 참조하십시오.
 
-1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **수집**&#x200B;을 클릭하여 추출을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다. **수집**&#x200B;을 클릭하여 수집 단계를 시작합니다. 컨텐츠를 작성자와 게시에 동시에 수집할 수 있습니다.
+1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **수집**&#x200B;을 클릭하여 수집을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다. **수집**&#x200B;을 클릭하여 수집 단계를 시작합니다. 컨텐츠를 작성자와 게시에 동시에 수집할 수 있습니다.
+
+   >[!IMPORTANT]
+   >사전 복사로 섭취를 사용하는 경우(S3 또는 Azure Data Store용) 먼저 작성자 수집만 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
 
    >[!IMPORTANT]
    >**수집** 옵션이 활성화되기 전에 클라우드 인스턴스에서 기존 컨텐츠를 지우는 경우 기존 저장소 전체를 삭제하고 컨텐츠를 수집 할 새 저장소를 만듭니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. **administrators** 그룹에 추가된 관리자 사용자에게도 적용됩니다.
