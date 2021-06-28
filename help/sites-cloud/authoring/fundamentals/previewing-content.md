@@ -2,9 +2,9 @@
 title: 컨텐츠 미리 보기
 description: 라이브로 전환하기 전에 AEM 미리 보기 서비스를 사용하여 컨텐츠를 미리 보는 방법을 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ AEM은 웹 사이트가 게시 환경에 도달하기 전에 개발자와 컨텐
 
 1. **다음**&#x200B;을 클릭한 다음 **게시**&#x200B;를 클릭하여 확인합니다.
 
-미리 보기 컨텐츠, 미리 보기 **미리 보기**&#x200B;를 프로덕션 인스턴스의 게시 URL에 추가합니다. URL은 다음과 같이 구성해야 합니다.
+1. 미리 보기 환경에서 컨텐츠에 액세스하기 위한 URL이 대화 상자에 표시됩니다.
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   또는 미리 보기 컨텐츠를 보기 위해 프로덕션 인스턴스의 게시 URL에 **미리 보기**&#x200B;를 추가할 수도 있습니다.
+
+   URL은 다음과 같이 구성해야 합니다.
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 환경을 위한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)를 참조하십시오.
 
