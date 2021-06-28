@@ -3,7 +3,7 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: c7cba6217ec960219c607b76ab7f2f096af7459a
+source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 2%
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 * DPR(Smart Imaging Device Pixel Ratio) 및 네트워크 대역폭 최적화를 사용하면 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 최상의 품질의 이미지를 효율적으로 제공할 수 있습니다. [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md)를 참조하십시오.
 
-* [!DNL Dynamic Media] 배달(`fmt` URL 수정자)에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
+* [!DNL Dynamic Media] 배달(`fmt` URL 수정자)에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Forms]로서의 [!DNL Cloud Service]  {#forms}
 
