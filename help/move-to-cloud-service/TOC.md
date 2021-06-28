@@ -5,10 +5,10 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: 배포
 role: Architect, Developer
-source-git-commit: 64794b387efe6995cda6b58fb19ba36a04cbe577
+source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 75%
+source-wordcount: '97'
+ht-degree: 72%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 75%
    + 컨텐츠 전송 도구 {#content-transfer-tool}
       + [개요](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [컨텐츠 전송 도구 사전 요구 사항](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [대용량 컨텐츠 저장소 처리](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
       + [사용자 매핑 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 코드 리팩터링 도구 {#refactoring-tools}
