@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: f4d646e3898f568d17cfb09bd2974fc55a1260c4
+source-git-commit: 7085772d60f589418f7aeb50083906fab495c376
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '663'
+ht-degree: 44%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2021.05.0 |
+| 버전 | 2021.06.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
-## 릴리스 {#how-to-prepare} 준비 방법
+## 릴리스를 준비하는 방법 {#how-to-prepare}
 
 [!DNL Adobe Experience Manager]에 Cloud Service으로 연속 릴리스 모델을 사용하면 애플리케이션이 지속적으로 자동 업데이트됩니다. 업데이트, 기능 릴리스 및 중요 업데이트에는 두 가지 유형이 있습니다.
 
