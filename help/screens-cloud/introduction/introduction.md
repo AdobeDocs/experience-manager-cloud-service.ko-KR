@@ -1,10 +1,7 @@
 ---
 title: AEM Screens as a Cloud Service
 description: 이 페이지는 AEM Screens as a Cloud Service에 대한 소개 역할을 합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 65b7bc7d911a80fa1ae03dc83eb49956b283a050
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -18,7 +15,7 @@ AEM Screens as a Cloud Service을 사용하면 공용 공간에서 사용할 수
 
 AEM Screens as a Cloud Service은 마케터가 규모에 맞게 다이내믹한 디지털 경험을 만들고 관리할 수 있는 디지털 간판 솔루션입니다. 또한 포괄적인 디지털 마케팅 전략의 일부로서 다양한 유형의 실제 화면이 포함됩니다. 또한 일반적인 웹 및 모바일 채널 이상으로 Adobe의 옴니채널 오퍼링을 확장하여 전체 고객을 보유한 디지털 간판 채널도 포함합니다. AEM Screens as a Cloud Service을 사용하면 컨텐츠 작성, 컨텐츠 어셈블리, 트리거된 이벤트 관리 및 모든 공개 공간의 모든 소비자 및 방문자에 대한 미디어 플레이에 대한 심층적인 이해를 통해 보다 연관성 있고 상황에 맞는 생산성 및 예상 사용자 경험을 제공할 수 있습니다.
 
-## Cloud Service {#understanding-components} 로 화면의 구성 요소 이해
+## Cloud Service으로 화면의 구성 요소 이해 {#understanding-components}
 
 Cloud Service으로 화면에는 두 가지 주요 구성 요소가 있습니다. 즉,
 
