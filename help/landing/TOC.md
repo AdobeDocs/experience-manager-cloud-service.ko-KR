@@ -3,10 +3,10 @@ sub-product: Adobe Experience Manager as a Cloud Service 도움말
 user-guide-title: Adobe Experience Manager as a Cloud Service 도움말
 feature: 릴리스 정보
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 441c5f9f1a58bb837f27aef84392b6ec0fba8a78
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 62%
+source-wordcount: '190'
+ht-degree: 58%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 62%
 + [AEM as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
 + [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html)
 + [AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
++ [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-cloud/home.html)
 + [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html)
 + [AEM as a Cloud Service로 이동](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)
 + [AEM as a Cloud Service용 애플리케이션 구현](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
