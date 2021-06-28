@@ -1,10 +1,7 @@
 ---
 title: Screens 서비스 공급자로 이동
 description: 이 페이지에서는 Screens 서비스 제공업체로 이동하는 방법을 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# Screens 서비스 공급자 {#setup-screens-services-provider} 이동
+# Screens 서비스 공급자로 이동 {#setup-screens-services-provider}
 
 ## 소개 {#introduction}
 
@@ -25,7 +22,7 @@ ht-degree: 1%
 
 다음 섹션에서는 Screens 서비스 공급자를 구성하고 설정하는 방법을 설명합니다.
 
-## Screens 서비스 공급자 설정 단계 {#screens-services-provider}
+## Screens 서비스 공급자를 설정하는 절차 {#screens-services-provider}
 
 Screens 서비스 공급자를 설정하려면 아래 절차를 따르십시오.
 
@@ -42,7 +39,7 @@ Screens 서비스 공급자를 설정하려면 아래 절차를 따르십시오.
 
    ![이미지](/help/screens-cloud/assets/configure/configure-screens2.png)
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 Screens 서비스 공급자를 설정하는 방법을 이해하면 [스크린 컨텐츠 공급자 사용](/help/screens-cloud/configuring/using-screens-content-provider.md)으로 이동하여 자세한 내용을 볼 수 있습니다.
 
