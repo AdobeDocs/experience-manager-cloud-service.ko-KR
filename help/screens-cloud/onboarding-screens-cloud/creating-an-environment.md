@@ -1,10 +1,7 @@
 ---
 title: 분기 생성
 description: 이 페이지에서는 Screens용 Cloud Manager에 Cloud Service 분기를 만드는 방법에 대해 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
@@ -41,7 +38,7 @@ ht-degree: 1%
 
    ![이미지](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 Cloud Manager에서 프로그램에 대한 환경을 설정하는 방법을 학습하면 이제 온보딩 프로세스의 다음 단계인 [파이프라인 실행](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)으로 이동할 수 있습니다.
 
