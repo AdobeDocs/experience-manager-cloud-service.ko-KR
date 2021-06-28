@@ -1,10 +1,7 @@
 ---
 title: 화면의 디스플레이에 Cloud Service 지정
 description: 이 페이지에서는 Screens에서 디스플레이에 Cloud Service으로 채널을 할당하는 방법을 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 19%
@@ -12,7 +9,7 @@ ht-degree: 19%
 ---
 
 
-# 화면의 디스플레이에 Cloud Service {#assign-channel-displays-screens-cloud} 할당
+# 화면의 디스플레이에 Cloud Service 지정 {#assign-channel-displays-screens-cloud}
 
 프로젝트 설정이 완료되면 컨텐츠를 보려면 채널을 디스플레이에 지정해야 합니다.
 
@@ -69,6 +66,6 @@ ht-degree: 19%
    ![이미지](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 이제 디스플레이에 채널을 지정했으므로, 다음 번에 [AEM용 Screens 플레이어 설치 및 구성 문서를 Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)로 검토하여 Screens를 Cloud Service 여정으로 계속해야 합니다.
