@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 59%
+source-wordcount: '1930'
+ht-degree: 58%
 
 ---
 
@@ -157,7 +157,7 @@ ht-degree: 59%
 
 ### 클라우드 서비스 {#cloud-services}
 
-* **클라우드 서비스 구성** - 클라우드 서비스에 대한 속성을 정의합니다
+* **Cloud Service 구성**  - 클라우드 서비스의 속성 정의
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -217,6 +217,12 @@ ht-degree: 59%
    * **Live Copy 상속**  - 이 확인란을 선택하면 Live Copy 구성이 모든 하위 항목에 적용됩니다
    * **상위 항목에서 롤아웃 구성 상속**  - 이 확인란을 선택하면 롤아웃 구성이 페이지의 상위 항목에서 상속됩니다
    * **롤아웃 구성 선택**  - 수정 사항이 블루프린트에서 전파되는 환경을 정의하며, 상위 항목에서 롤아웃 구성  **상속을 선택하지 않은 경우에만 사용할** 수 있습니다
+
+### 미리 보기 {#preview}
+
+미리 보기 환경이 활성화되면 다음 내용이 표시됩니다.
+
+* 미리 보기 URL - 미리 보기 환경에서 컨텐츠에 액세스하는 데 사용되는 URL입니다
 
 ## 페이지 속성 편집 {#editing-page-properties-1}
 
