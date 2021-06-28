@@ -1,7 +1,7 @@
 ---
 title: 대용량 컨텐츠 저장소 처리
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -134,7 +134,6 @@ AzCopy에 문제가 발생하면 즉시 추출이 실패하며 추출 로그에 
 컨텐츠 전송 도구 1.5.4가 릴리스된 후 작성자 처리에 AzCopy 지원을 추가했습니다.
 
 >[!NOTE]
->
 > 작성자 수집만 먼저 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
 
 수집 중에 AzCopy를 활용하려면 AEM에서 버전 2021.6.5561 이상의 Cloud Service 버전으로 사용해야 합니다.
