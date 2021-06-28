@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -154,5 +154,25 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 * 상거래 핵심 구성 요소 지원 Adobe Commerce Sensei Recs 데이터 수집
 * 카테고리 페이지의 SEO 기반 URL이 개선되었습니다
 * 사이트/구성당 사용자 지정 HTTP 헤더 지원
+
+## 컨텐츠 전송 도구 {#content-transfer-tool}
+
+### 릴리스 날짜 {#release-date-ctt-latest}
+
+컨텐츠 전송 도구 v1.5.4의 릴리스 날짜는 2021년 6월 28일입니다.
+
+### 새로운 기능 {#what-is-new-ctt-latest}
+
+* CTT에 사용할 선택적 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 단계에 대한 지원이 추가되었습니다. 사전 복사 단계는 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob 저장 공간 데이터 저장소를 사용하도록 구성된 경우 컨텐츠 전송 활동의 추출 및 수집 단계를 크게 가속화하는 데 사용할 수 있습니다.
+
+* 사용자가 수집을 중지하지 않고 수집 단계 중 중요한 시점에 도달하면 데이터가 손상될 수 있도록 CTT에 보호 기능이 추가되었습니다.
+
+* 추출 로그가 문제 해결에 도움이 되도록 더 설명했습니다.
+
+* UI에 보다 설명적인 수집 상태 메시지를 추가했습니다.
+
+### 버그 수정 {#bug-fixes-ctt-latest}
+
+* 작성자 인스턴스에서 처리를 중지하는 동안 UI는 이전에 완료된 수집 항목을 게시 인스턴스에서 `FINISHED`의 `STOPPED`에 덮어씁니다. 이 문제가 수정되었습니다.
 
 
