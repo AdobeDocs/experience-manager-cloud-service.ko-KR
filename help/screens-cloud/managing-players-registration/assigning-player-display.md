@@ -1,10 +1,7 @@
 ---
 title: Screens에서 디스플레이에 Cloud Service 할당
 description: 이 페이지에서는 Screens에 있는 디스플레이에 Cloud Service을 할당하는 방법을 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 스크린에 디스플레이에 Cloud Service {#assign-player-displays-screens-cloud} 로 플레이어 할당
+# Screens에서 디스플레이에 Cloud Service 할당 {#assign-player-displays-screens-cloud}
 
 프로젝트 설정이 완료되면 컨텐츠를 보려면 플레이어를 디스플레이에 할당해야 합니다.
 
@@ -20,7 +17,7 @@ ht-degree: 1%
 
 이 문서는 Screens 서비스 공급자의 디스플레이에 플레이어를 할당하는 방법을 이해하는 데 도움이 됩니다. 컨텐츠가 Cloud Service 플레이어로 Screens에서 재생되기 전에 마지막으로 필수 단계입니다.
 
-## 표시 {#create-display}에 플레이어를 할당하는 절차
+## 디스플레이에 플레이어 할당 단계 {#create-display}
 
 플레이어가 등록되면 필수 표시에 플레이어를 지정해야 하므로 플레이어에서 컨텐츠가 재생을 시작합니다.
 
