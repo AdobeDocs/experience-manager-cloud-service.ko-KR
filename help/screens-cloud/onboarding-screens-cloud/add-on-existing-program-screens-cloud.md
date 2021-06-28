@@ -1,10 +1,7 @@
 ---
 title: Cloud Manager의 기존 프로그램에 스크린 추가 기능 추가
 description: 이 페이지에서는 Screens용 Cloud Manager의 기존 프로그램에 Cloud Service 추가 기능을 추가하는 방법에 대해 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
@@ -23,7 +20,7 @@ ht-degree: 1%
 
 다음 단계를 통해 Cloud Manager의 기존 프로그램에 화면 추가 기능을 추가하는 방법을 배울 수 있습니다.
 
-## Cloud Manager {#edit-programs-screens-cloud} 의 기존 프로그램에 화면 추가 기능을 추가하는 절차
+## Cloud Manager의 기존 프로그램에 화면 추가 기능 추가 단계 {#edit-programs-screens-cloud}
 
 기존 프로그램에 추가 기능으로 화면을 추가하려면 아래 단계를 따르십시오.
 
@@ -45,6 +42,6 @@ ht-degree: 1%
 
 1. 옵션을 선택하면 **업데이트**&#x200B;를 클릭하십시오.
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 기존 Cloud Manager 프로그램에 Screens를 추가 기능으로 추가하는 방법을 학습하고 Cloud Manager의 프로그램 및 제품 아래에 프로그램이 표시되면 이제 온보딩 프로세스의 다음 단계로 이동할 수 있습니다. 즉, [Cloud Manager에서 프로젝트에 대한 분기 만들기](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)입니다.
