@@ -1,10 +1,7 @@
 ---
 title: Screens의 플레이어를 Cloud Service으로 등록
 description: 이 페이지에서는 Screens에 플레이어를 Cloud Service으로 등록하는 방법을 설명합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 1%
@@ -12,7 +9,7 @@ ht-degree: 1%
 ---
 
 
-# 스크린의 플레이어를 Cloud Service {#registering-players-screens-cloud} 로 등록
+# Screens의 플레이어를 Cloud Service으로 등록 {#registering-players-screens-cloud}
 
 Screens용 플레이어를 Cloud Service으로 설치하고 구성한 후에는 플레이어를 등록해야 합니다.
 
@@ -23,7 +20,7 @@ Screens용 플레이어를 Cloud Service으로 설치하고 구성한 후에는 
 * 플레이어를 등록하는 방법 이해
 * screens 서비스 제공자에서 등록 프로세스를 완료하는 방법
 
-## 스크린 플레이어 {#register-players} 등록 단계
+## Screens 플레이어 등록 단계 {#register-players}
 
 플레이어를 Cloud Service으로 Screens에 설치하면 Screens 서비스 공급자에서 플레이어를 등록할 수 있습니다.
 
@@ -66,6 +63,6 @@ Screens용 플레이어를 Cloud Service으로 설치하고 구성한 후에는 
 
    ![이미지](/help/screens-cloud/assets/player/register-player6.png)
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 이제 플레이어를 클라우드 모드로 설치 및 구성했으므로, 다음에 Screens 서비스 공급자의 Cloud Service으로 [Screens의 디스플레이에 플레이어 할당 문서를 검토하여 Screens 여정으로 계속해야 합니다.](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
