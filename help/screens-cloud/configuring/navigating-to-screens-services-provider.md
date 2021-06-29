@@ -1,9 +1,9 @@
 ---
 title: Screens 서비스 공급자로 이동
 description: 이 페이지에서는 Screens 서비스 제공업체로 이동하는 방법을 설명합니다.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '220'
 ht-degree: 1%
 
 ---
@@ -41,5 +41,5 @@ Screens 서비스 공급자를 설정하려면 아래 절차를 따르십시오.
 
 ## 다음은 무엇입니까? {#whats-next}
 
-Screens 서비스 공급자를 설정하는 방법을 이해하면 [스크린 컨텐츠 공급자 사용](/help/screens-cloud/configuring/using-screens-content-provider.md)으로 이동하여 자세한 내용을 볼 수 있습니다.
+Screens 서비스 공급자를 설정하는 방법을 이해하면 [스크린 컨텐츠 공급자 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end)으로 이동하여 자세한 내용을 볼 수 있습니다.
 
