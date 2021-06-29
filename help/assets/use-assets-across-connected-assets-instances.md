@@ -5,14 +5,14 @@ contentOwner: AG
 feature: 자산 관리,연결된 자산,자산 분배,사용자 및 그룹
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
 workflow-type: tm+mt
-source-wordcount: '2966'
+source-wordcount: '2967'
 ht-degree: 25%
 
 ---
 
-# 연결된 자산을 사용하여 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}에서 DAM 자산 공유
+# 연결된 자산을 사용하여 [!DNL Experience Manager Sites]에서 DAM 자산 공유 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 함께 작업하는 데 필요한 기존 배포를 지리적으로 배포할 수 있습니다. 또 다른 이유는 모회사가 함께 사용하려는 다른 [!DNL Experience Manager] 버전을 포함하여 이기종 인프라를 인수하는 것입니다.
 
@@ -58,7 +58,7 @@ ht-degree: 25%
 | DAM 배포자(기술 사용자) | 원격 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` 원격  [!DNL Experience Manager] | 원격 배포에 있는 이 사용자 역할은 [!DNL Sites] 작성자 역할이 아닌 [!DNL Experience Manager] 로컬 서버에서 [!DNL Sites] 작성자를 대신하여 원격 자산을 가져오는 데 사용됩니다. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
 | [!DNL Sites] 기술 사용자 | 로컬 | `connectedassets-sites-techaccts` | - | [!DNL Assets] 배포가 [!DNL Sites] 웹 페이지에서 자산에 대한 참조를 검색할 수 있도록 허용합니다. |
 
-## [!DNL Sites] 및 [!DNL Assets] 배포 {#configure-a-connection-between-sites-and-assets-deployments} 간의 연결을 구성합니다
+## [!DNL Sites] 배포와 [!DNL Assets] 배포 간의 연결 구성 {#configure-a-connection-between-sites-and-assets-deployments}
 
 [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다. 만들고 나면 사용자 그룹을 통해 사용 권한이 설정됩니다. 사용자 그룹은 [!DNL Sites] 배포 및 DAM 배포에 정의됩니다.
 
@@ -116,13 +116,13 @@ ht-degree: 25%
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## [!DNL Sites] 및 [!DNL Dynamic Media] 배포 {#sites-dynamic-media-connected-assets} 간의 연결을 구성합니다
+## [!DNL Sites] 배포와 [!DNL Dynamic Media] 배포 간의 연결 구성 {#sites-dynamic-media-connected-assets}
 
 웹 페이지 작성자가 웹 페이지에서 [!DNL Dynamic Media] 이미지를 사용할 수 있도록 해주는 [!DNL Sites] 배포와 [!DNL Dynamic Media] 배포 간의 연결을 구성할 수 있습니다. 웹 페이지를 작성하는 동안 원격 자산 및 원격 [!DNL Dynamic Media] 배포를 사용한 경험이 동일하게 유지됩니다. 연결된 자산 기능(예: 스마트 자르기 및 이미지 사전 설정)을 통해 [!DNL Dynamic Media] 기능을 활용할 수 있습니다.
 
-이 연결을 구성하려면 다음 단계를 수행합니다.
+연결을 구성하려면 다음 단계를 수행합니다.
 
-1. 위에 설명된 대로 연결된 자산 구성을 만듭니다. 기능을 구성할 때 **[!UICONTROL Dynamic Media 연결된 자산에 대한 원래 표현물 가져오기]** 옵션을 선택합니다.
+1. 기능을 구성할 때를 제외하고 위에 설명된 대로 연결된 자산 구성을 만듭니다. **[!UICONTROL Dynamic Media 연결된 자산에 대한 원래 표현물 가져오기]** 옵션을 선택합니다.
 
 1. 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포에 [!DNL Dynamic Media]을 구성합니다. 다음 지침에 따라 [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
