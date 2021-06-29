@@ -3,7 +3,7 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as a Cloud Service
 breadcrumb-title: AEM Screens as a Cloud Service
 user-guide-description: AEM Screens을 Cloud Service으로 이해합니다.
-source-git-commit: 1d788b37d549d86270156cb43548a7c62fc1165f
+source-git-commit: 38c749e76ae8bc6efa72beb6963b53311ec3817e
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 2%
@@ -25,16 +25,16 @@ ht-degree: 2%
    + [분기 생성](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
    + [환경 만들기](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
    + [파이프라인 실행](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
-   + Cloud Service 프로젝트로 스크린 구성 {#configure-screens-cloud}
-      + [Screens 서비스 공급자로 이동](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
-      + [Screens 컨텐츠 공급자로 이동](/help/screens-cloud/configuring/using-screens-content-provider.md)
++ Cloud Service 프로젝트로 스크린 구성 {#configure-screens-cloud}
+   + [Screens 서비스 공급자로 이동](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
+   + [Screens 컨텐츠 공급자로 이동](/help/screens-cloud/configuring/using-screens-content-provider.md)
 + 컨텐츠 만들기 {#create-content}
    + [스크린 컨텐츠 제공자에서 프로젝트 생성 및 관리](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
    + [스크린 컨텐츠 공급자에서 채널 생성 및 관리](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
    + [게시 관리](/help/screens-cloud/creating-content/manage-publish.md)
    + [Screens 서비스 공급자의 디스플레이 생성 및 관리](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
    + [디스플레이에 채널 지정](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
-   + 플레이어 관리 및 등록 {#manage-player-registration}
-      + [Screens 플레이어 설치](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-      + [플레이어 등록](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-      + [디스플레이에 플레이어 할당](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
++ 플레이어 관리 및 등록 {#manage-player-registration}
+   + [Screens 플레이어 설치](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+   + [플레이어 등록](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+   + [디스플레이에 플레이어 할당](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
