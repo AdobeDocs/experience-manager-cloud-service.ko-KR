@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 자산 관리
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 230c5a20696684ec69ab154f97609139dbddfea4
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
-source-wordcount: '3222'
-ht-degree: 20%
+source-wordcount: '3218'
+ht-degree: 17%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 20%
 **페이지에 Dynamic Media 구성 요소를 추가하려면:**
 
 1. [!DNL Experience Manager]에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
-1. 왼쪽 창에서 **[!UICONTROL 구성 요소]** 아이콘을 탭한 다음, Dynamic Media으로 필터링합니다.
+1. 왼쪽 창에서 **[!UICONTROL 구성 요소]** 아이콘을 선택한 다음 Dynamic Media에 대해 필터링합니다.
 
    사용 가능한 Dynamic Media 구성 요소 목록이 없는 경우 사용할 Dynamic Media 구성 요소를 활성화해야 합니다. [Dynamic Media 구성 요소 활성화](#enabling-dynamic-media-components)를 참조하십시오.
 
@@ -37,7 +37,7 @@ ht-degree: 20%
 
 1. **[!UICONTROL Dynamic Media]** 구성 요소를 페이지의 원하는 위치에 끌어 놓습니다.
 
-1. 구성 요소에 바로 포인터를 둡니다. 구성 요소를 파란색 상자로 둘러싸면 한 번 탭하여 구성 요소의 도구 모음을 표시할 수 있습니다. **[!UICONTROL 구성(공구모양)]** 아이콘을 탭합니다.
+1. 구성 요소에 바로 포인터를 둡니다. 구성 요소를 파란색 상자로 둘러싸면 한 번 을 선택하여 구성 요소의 도구 모음을 표시합니다. **[!UICONTROL 구성(공구모양)]** 아이콘을 선택합니다.
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -49,34 +49,34 @@ ht-degree: 20%
 
    Dynamic Media Video 360 미디어 구성 요소입니다.
 
-1. 완료되면 대화 상자의 오른쪽 상단 모서리에서 확인 표시를 탭하여 변경 내용을 저장합니다.
+1. 완료되면 대화 상자의 오른쪽 상단 모서리에서 확인 표시를 선택하여 변경 사항을 저장합니다.
 
 ### Dynamic Media 구성 요소 활성화 {#enabling-dynamic-media-components}
 
 페이지에 추가할 수 있는 Dynamic Media 구성 요소가 없다면 사용할 구성 요소를 활성화해야 합니다.
 
 1. [!DNL Experience Manager]에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
-1. 페이지 상단 근처에 있는 도구 모음 왼쪽에서 페이지 정보 아이콘을 탭한 다음, 드롭다운 목록에서 **[!UICONTROL 템플릿 편집]**&#x200B;을 누릅니다.
+1. 페이지 상단 근처에 있는 도구 모음 왼쪽에서 페이지 정보 아이콘을 선택한 다음 드롭다운 목록에서 **[!UICONTROL 템플릿 편집]**&#x200B;을 선택합니다.
 
    ![편집 템플릿](/help/assets/assets-dm/edit-template.png)
 
-1. 페이지 상단 근처에 있는 도구 모음의 오른쪽의 드롭다운 목록에서 **[!UICONTROL 구조]**&#x200B;를 누릅니다.
+1. 페이지 상단 근처에 있는 도구 모음의 오른쪽의 드롭다운 목록에서 **[!UICONTROL 구조]**&#x200B;를 선택합니다.
 
    ![정책](/help/assets/assets-dm/structure-mode.png)
 
-1. 페이지 하단 근처에 있는 **[!UICONTROL 레이아웃 컨테이너]**&#x200B;를 탭하여 해당 도구 모음을 열고 정책 아이콘을 탭합니다.
+1. 페이지 하단 근처에 있는 **[!UICONTROL 레이아웃 컨테이너]**&#x200B;를 선택하여 도구 모음을 열고 정책 아이콘을 선택합니다.
 1. **[!UICONTROL 레이아웃 컨테이너]** 페이지의 **[!UICONTROL 속성]** 제목 아래에서 **[!UICONTROL 허용된 구성 요소]** 탭이 선택되어 있는지 확인합니다.
 
    ![허용된 구성 요소](/help/assets/assets-dm/allowed-components.png)
 
 1. **[!UICONTROL Dynamic Media]**&#x200B;이 표시될 때까지 스크롤합니다.
-1. **[!UICONTROL Dynamic Media]** 왼쪽에 있는 > 아이콘을 탭한 다음, 활성화할 Dynamic Media 구성 요소를 선택합니다.
+1. **[!UICONTROL Dynamic Media]** 왼쪽에 있는 > 아이콘을 선택한 다음 활성화할 Dynamic Media 구성 요소를 선택합니다.
 
    ![Dynamic Media 구성 요소 목록](/help/assets/assets-dm/dm-components-select.png)
 
-1. **[!UICONTROL 레이아웃 컨테이너]** 페이지의 오른쪽 위 모서리 근처에 있는 완료 (확인 표시) 아이콘을 탭합니다.
+1. **[!UICONTROL 레이아웃 컨테이너]** 페이지의 오른쪽 위 모서리 근처에 있는 완료 (확인 표시) 아이콘을 선택합니다.
 
-1. 페이지 상단 근처에 있는 도구 모음의 오른쪽의 드롭다운 목록에서 **[!UICONTROL 초기 컨텐츠]**&#x200B;를 누릅니다.
+1. 페이지 상단 근처에 있는 도구 모음의 오른쪽의 드롭다운 목록에서 **[!UICONTROL 초기 컨텐츠]**&#x200B;를 선택합니다.
 1. [평소대로 페이지에 Dynamic Media 구성 ](#adding-a-dynamic-media-component-to-a-page) 요소를 추가합니다.
 
 ## Dynamic Media 구성 요소 현지화 {#localizing-dynamic-media-components}
@@ -87,7 +87,7 @@ ht-degree: 20%
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
-* 사이트 선택기에서 원하는 페이지 또는 페이지 그룹을 선택합니다. **[!UICONTROL 속성]**&#x200B;을 탭하고 **[!UICONTROL 고급]** 탭을 선택합니다. 현지화를 위해 원하는 언어를 선택합니다.
+* 사이트 선택기에서 원하는 페이지 또는 페이지 그룹을 선택합니다. **[!UICONTROL 속성]**&#x200B;을 선택하고 **[!UICONTROL 고급]** 탭을 선택합니다. 현지화를 위해 원하는 언어를 선택합니다.
 
    >[!NOTE]
    >
@@ -95,7 +95,7 @@ ht-degree: 20%
 
 ## 사용 가능한 Dynamic Media 구성 요소 {#dynamic-media-components}
 
-Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 탭한 다음, **[!UICONTROL Dynamic Media]**&#x200B;에서 필터링할 수 있습니다.
+Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 선택한 다음 **[!UICONTROL Dynamic Media]**&#x200B;에서 필터링할 수 있습니다.
 
 사용 가능한 Dynamic Media 구성 요소는 다음과 같습니다.
 
@@ -137,7 +137,7 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
 구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지를 응답형으로 만들려면 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
 
-구성 요소에서 **[!UICONTROL 편집]** 아이콘을 탭한 다음, **[!UICONTROL Dynamic Media 설정]**&#x200B;을 탭하여 다음 Dynamic Media 설정을 편집할 수 있습니다.
+구성 요소에서 **[!UICONTROL 편집]** 아이콘을 선택한 다음, **[!UICONTROL Dynamic Media 설정]**&#x200B;을 선택하여 다음 Dynamic Media 설정을 편집할 수 있습니다.
 
 ![Dynamic Media 이미지 사전 설정 설정](assets/dm-settings-image-preset.png)
 
@@ -163,7 +163,7 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
    이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
-   구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 탭하여 다음 고급 설정을 편집할 수 있습니다.
+   구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 고급 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
 
@@ -196,7 +196,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 Dynamic Media 설정을 편집할 수 있습니다.
+구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 Dynamic Media 설정을 편집할 수 있습니다.
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
    * 캡션 파일을 비디오와 연결:[캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * 탐색 파일을 비디오와 연결:[탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-      구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 고급 설정을 편집할 수 있습니다.
+      구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 고급 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 제목]**  - 비디오의 제목을 변경합니다.
 
@@ -229,7 +229,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 ![Dynamic Media 스마트 자르기 설정](assets/dm-settings-smart-crop.png)
 
-구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 Dynamic Media 설정을 편집할 수 있습니다.
+구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 Dynamic Media 설정을 편집할 수 있습니다.
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
    이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
-   구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 고급 설정을 편집할 수 있습니다.
+   구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 고급 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 비율 일치 활성화]**  - Dynamic Media에서 원본 이미지의 비율과 가장 일치하는 종횡비로 스마트 자르기 렌디션을 선택하도록 하려면 이 옵션을 선택합니다.
 
@@ -290,7 +290,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 ![chlimage_1-174](assets/chlimage_1-541.png)
 
-구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 탭하여 다음 **[!UICONTROL 일반]** 설정을 편집할 수 있습니다.
+구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 **[!UICONTROL 일반]** 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 뷰어 사전 설정]**  - 드롭다운 목록에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. 뷰어 사전 설정 관리를 참조하십시오.
 
@@ -300,7 +300,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 * **[!UICONTROL 높이]**  - 이미지의 크기를 고정하려면 값을 픽셀 단위로 입력하십시오. 이 값을 공백으로 두면 자산이 적응형으로 설정됩니다.
 
-   구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 **[!UICONTROL 장바구니에 추가]** 설정을 편집할 수 있습니다.
+   구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 **[!UICONTROL 장바구니에 추가]** 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 제품 자산 표시]**  - 기본적으로 이 값이 선택되어 있습니다. 제품 자산은 상거래 모듈에 정의된 제품의 이미지를 보여줍니다. 제품 자산을 표시하지 않도록 하려면 확인 표시를 지우십시오.
 
@@ -332,11 +332,11 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 ![파노라마 미디어 뷰어 사전 설정](assets/panoramic-media-viewer-preset.png)
 
-구성 요소에서 **[!UICONTROL 구성]**&#x200B;을 탭하여 다음 설정을 편집할 수 있습니다.
+구성 요소에서 **[!UICONTROL 구성]**&#x200B;을 선택하여 다음 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 뷰어 사전 설정]**  - 뷰어 사전 설정 드롭다운 목록에서 기존 뷰어를 선택합니다.
 
-보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 사용하기 전에 뷰어 사전 설정을 게시합니다. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오. 
+보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 사용하기 전에 뷰어 사전 설정을 게시합니다. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오.
 
 ### 구성 요소:비디오 360 미디어 {#video-media-component}
 
@@ -348,11 +348,11 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 ![6_5_360video_wcmcomponent-1](assets/6_5_360video_wcmcomponent-1.png)
 
-구성 요소에서 **[!UICONTROL 구성]**&#x200B;을 탭하여 다음 설정을 편집할 수 있습니다.
+구성 요소에서 **[!UICONTROL 구성]**&#x200B;을 선택하여 다음 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 뷰어 사전 설정]**  - 뷰어 사전 설정 드롭다운 목록에서 기존 뷰어를 선택합니다. Video360VR은 가상 현실 안경을 사용하는 최종 사용자에게 사용됩니다. 기본 비디오 재생 제어 및 소셜 미디어 기능을 포함합니다. 기본 비디오 재생 컨트롤이 포함된 Video360_social을 사용합니다. 비디오 렌더링은 스테레오 모드로 수행됩니다. 수동 시점 제어 기능이 해제되었지만 회전 제어 기능이 켜져 있습니다. 소셜 미디어 기능이 없습니다.
 
-보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 사용하기 전에 뷰어 사전 설정을 게시합니다. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오. 
+보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 사용하기 전에 뷰어 사전 설정을 게시합니다. [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오.
 
 ### HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-delivery-dynamic-media-assets}
 
@@ -364,7 +364,7 @@ Dynamic Media 계정에서 HTTP/2를 사용하는 시작에 대한 자세한 내
 >
 >* [Dynamic Media Experience Manager에서 비디오 플레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html#dynamic-media)
 >* [Experience Manager Dynamic Media에서 대화형 비디오 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
->* [Experience Manager Dynamic Media을 사용한 자산 뷰어 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html#dynamic-media)
+>* [Dynamic Media Experience Manager을 사용하여 자산 뷰어 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html#dynamic-media)
 >* [Experience Manager Dynamic Media에서 사용자 지정 비디오 축소판 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html#dynamic-media)
 >* [Experience Manager Dynamic Media을 사용한 색상 관리 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
 >* [Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)
