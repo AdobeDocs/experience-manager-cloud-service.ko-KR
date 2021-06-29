@@ -1,9 +1,9 @@
 ---
 title: Cloud Service으로 화면에서 채널 만들기 및 관리
 description: 이 페이지에서는 Screens에서 Cloud Service으로 채널을 만들고 관리하는 방법을 설명합니다.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '550'
 ht-degree: 7%
 
 ---
@@ -90,4 +90,4 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 프로젝트에서 AEM Screens 채널을 설정했으므로 채널을 게시해야 합니다. Screens 서비스 공급자에서 플레이어를 관리하기 전에 [Cloud Service으로 Screens에 채널 게시](/help/screens-cloud/creating-content/manage-publish.md)를 참조하십시오.
+이제 프로젝트에서 AEM Screens 채널을 설정했으므로 채널을 게시해야 합니다. Screens 서비스 공급자에서 플레이어를 관리하기 전에 [Cloud Service으로 Screens에 채널 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en)를 참조하십시오.
