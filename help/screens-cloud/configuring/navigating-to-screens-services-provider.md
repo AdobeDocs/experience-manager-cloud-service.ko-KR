@@ -1,7 +1,7 @@
 ---
 title: Screens 서비스 공급자로 이동
 description: 이 페이지에서는 Screens 서비스 제공업체로 이동하는 방법을 설명합니다.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Screens 서비스 공급자를 설정하려면 아래 절차를 따르십시오.
 
 1. [여기](https://experience.adobe.com/screens)에서 Screens 서비스 공급자로 이동합니다.
 
-   >[!NOTE]
+   >[!CAUTION]
    >여러 조직에 대한 액세스 권한이 있는 경우 올바른 조직에 로그인했는지 확인하십시오. 조직을 변경하려면 화면의 오른쪽 상단 모서리에서 조직 이름을 클릭하고 액세스 권한이 필요한 조직을 선택합니다.
 
 1. 왼쪽 탐색 막대에서 **채널**&#x200B;을 선택하고 **컨텐츠 제공자에서 열기**&#x200B;를 클릭합니다.
