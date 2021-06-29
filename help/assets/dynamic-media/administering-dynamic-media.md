@@ -4,14 +4,14 @@ description: Dynamic Media을 설정하려면 Dynamic Media을 구성하고 이�
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 21%
+ht-degree: 14%
 
 ---
 
-# Dynamic Media {#setting-up-dynamic-media} 설정
+# Dynamic Media 설정 {#setting-up-dynamic-media}
 
 [Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 전달하여 자산을 관리하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
 
