@@ -1,10 +1,10 @@
 ---
 title: 화면으로 디스플레이 생성 및 관리 Cloud Service
 description: 이 페이지에서는 Screens에서 Cloud Service으로 디스플레이를 만들고 관리하는 방법을 설명합니다.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 14%
+source-wordcount: '292'
+ht-degree: 13%
 
 ---
 
@@ -52,4 +52,4 @@ Screens 서비스 공급자에서 디스플레이를 생성하려면 아래 절�
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 프로젝트에 대한 디스플레이를 만들고 관리하는 방법을 배웠으므로 다음 Cloud Service 여정으로 [Screens의 디스플레이에 Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md) 문서를 검토하여 Screens를 Screens의 디스플레이로 계속 실행해야 합니다.
+이제 프로젝트에 대한 디스플레이를 만들고 관리하는 방법을 배웠으므로 다음 Cloud Service 여정으로 [Screens의 디스플레이에 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en) 문서를 검토하여 Screens를 Screens의 디스플레이로 계속 실행해야 합니다.
