@@ -2,7 +2,7 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 4%
@@ -42,17 +42,17 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 트리 활성화를 수행하려면 다음을 수행합니다.
 
 1. AEM 시작 메뉴에서 **도구 > 배포 > 배포**&#x200B;로 이동합니다.
-2. 카드 **forwardPublisher**&#x200B;를 선택합니다.
-3. forwardPublisher Web Console UI에서 **배포**를 선택합니다.
+2. 카드 **게시**&#x200B;를 선택합니다.
+3. 게시 웹 콘솔 UI에서 **배포**를 선택합니다.
 
-   ![](assets/distribute.png "DistributeDistribution")
+   ![](assets/publish-distribute.png "DistributeDistribution")
 4. 경로 브라우저에서 경로를 선택하고 필요에 따라 노드, 트리 또는 삭제를 선택하고 **Submit**&#x200B;을 선택합니다.
 
 ### 컨텐츠 트리 게시 워크플로우 {#publish-content-tree-workflow}
 
 아래 그림과 같이 **도구 - 워크플로우 - 모델**&#x200B;을 선택하고 **컨텐츠 트리 게시** 기본 워크플로우 모델을 복사하여 트리 복제를 트리거할 수 있습니다.
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 원본 모델을 수정하거나 호출하지 마십시오. 대신 먼저 모델을 복사한 다음 해당 복사본을 수정하거나 호출해야 합니다.
 
@@ -191,13 +191,13 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 복제 문제를 해결하려면 AEM 작성자 서비스 웹 UI의 복제 큐로 이동합니다.
 
 1. AEM 시작 메뉴에서 **도구 > 배포 > 배포**&#x200B;로 이동합니다.
-2. 카드 **forwardPublisher**를 선택합니다.
-   ![](assets/status.png "StatusStatus")
+2. 카드 **게시**를 선택합니다.
+   ![](assets/publish-status.png "StatusStatus")
 3. 녹색이어야 하는 큐 상태를 확인합니다
 4. 복제 서비스에 대한 연결을 테스트할 수 있습니다
 5. 컨텐츠 게시물의 내역을 보여주는 **로그** 탭을 선택합니다
 
-![](assets/logs.png "LogsLogs")
+![](assets/publish-logs.png "LogsLogs")
 
 컨텐츠를 게시할 수 없는 경우에는 전체 게시가 AEM 게시 서비스에서 복귀됩니다.
 이 경우 게시가 취소되는 원인이 되는 항목을 식별하려면 대기열을 검토해야 합니다. 빨간색 상태를 표시하는 큐를 클릭하면 보류 중인 항목이 있는 큐가 표시되며, 필요한 경우 단일 또는 모든 항목을 지울 수 있습니다.
