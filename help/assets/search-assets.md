@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: 검색,메타데이터,자산 분배
 role: Business Practitioner,Administrator
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a6813cf691acb868589932719e33303871859323
 workflow-type: tm+mt
 source-wordcount: '4916'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager] {#search-assets-in-aem}에서 자산 검색
+# [!DNL Adobe Experience Manager]에서 자산 검색 {#search-assets-in-aem}
 
 [!DNL Adobe Experience Manager Assets] 는 컨텐츠 속도를 높이는 데 도움이 되는 강력한 자산 검색 방법을 제공합니다. 팀은 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 검색 경험을 통해 출시 시간을 단축할 수 있습니다. 자산을 검색하는 것은 디지털 자산 관리 시스템의 용도의 핵심입니다. 이를 통해 크리에이티브, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 수행할 수 있습니다. [!DNL Assets] 사용자 인터페이스나 다른 앱과 표면을 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색은 이러한 사용 사례를 수행하는 데 도움이 됩니다.
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 | [검색 순위 및 증가](#searchrank) | [사용자 지정 설명](#custompredicates) | [스마트 컬렉션](#collections) |
 | [고급 검색:검색 필터링 및 범위](#scope) |  | [예기치 않은 결과 이해 및 문제 해결](#unexpected-results) |
 | [다른 솔루션 및 앱에서 검색](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager 데스크탑 앱](#desktop-app)</li><li>[Adobe Stock 이미지](#adobe-stock)</li><li>[Dynamic Media 자산](#search-dynamic-media-assets)</li></ul> |  |  |
-| [자산 선택기](#asset-selector) |  |  |
+| [자산 선택기](#asset-picker) |  |  |
 | [](#limitations) 제한 사항 및  [팁](#tips) |  |  |
 | [그림 설명](#samples) |  |  |
 
@@ -147,7 +147,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 **[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하여 Dynamic Media 이미지를 필터링할 수 있습니다. 이미지 세트, 회전 메뉴, 혼합 미디어 세트 및 스핀 세트와 같은 자산을 필터링하고 표시합니다.
 
-### 메타데이터 필드 {#gql-search}에서 특정 값을 사용하여 GQL 검색
+### 메타데이터 필드에서 특정 값을 사용하여 GQL 검색 {#gql-search}
 
 , 제목, 설명 및 작성자와 같은 메타데이터 필드의 정확한 값을 기반으로 자산을 검색할 수 있습니다. GQL 전체 텍스트 검색 기능은 메타데이터 값이 검색 쿼리와 정확히 일치하는 자산만 가져옵니다. 속성 이름(작성자, 제목 등)과 값은 대/소문자를 구분합니다.
 
@@ -192,7 +192,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 * 특정 문자열을 포함하는 속성 값이 있는 자산을 표시하려면 다음을 수행하십시오.title = Basel Meeting Room):`title:*Meeting*`
 * 특정 문자열을 포함하고 특정 속성 값을 갖는 자산을 표시하려면(예:title=John Doe가 있는 자산에서 문자열 Adobe 검색:`*Adobe* title:"John Doe"`
 
-## 다른 [!DNL Experience Manager] 제공 또는 인터페이스 {#search-assets-other-surfaces}에서 자산을 검색합니다.
+## 다른 [!DNL Experience Manager] 제공 또는 인터페이스에서 자산 검색 {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] 는 DAM 저장소를 다른 다양한  [!DNL Experience Manager] 솔루션에 연결하여 디지털 자산에 더 신속하게 액세스하고 크리에이티브 워크플로우를 간소화합니다. 모든 자산 검색은 검색 또는 검색으로 시작합니다. 검색 동작은 다양한 표면과 솔루션에서 대체로 동일하게 유지됩니다. 일부 검색 방법은 타겟 대상, 사용 사례 및 사용자 인터페이스가 [!DNL Experience Manager] 솔루션에 따라 달라질 때 변경됩니다. 구체적인 방법은 아래 링크에서 개별 솔루션에 대해 문서화됩니다. 일반적으로 적용 가능한 팁과 행동이 이 문서에 설명되어 있습니다.
 
@@ -204,15 +204,15 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 크리에이티브 전문가가 데스크탑 앱을 사용하여 로컬 데스크탑(Win 또는 Mac)에서 [!DNL Experience Manager Assets]을 손쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시하고, 데스크탑 애플리케이션에서 열고, 로컬로 변경할 수 있습니다. 변경 사항은 리포지토리에서 생성된 새 버전으로 다시 [!DNL Experience Manager]에 저장됩니다. 응용 프로그램은 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크탑 앱에서 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오.
 
-### [!DNL Brand Portal] {#brand-portal}에서 자산 검색
+### [!DNL Brand Portal]에서 자산 검색 {#brand-portal}
 
 LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 자산을 확장 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유할 수 있습니다. Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)에서 자산 검색 을 참조하십시오.[
 
-### [!DNL Adobe Stock] 이미지 {#adobe-stock1} 검색
+### [!DNL Adobe Stock] 이미지 검색 {#adobe-stock1}
 
 [!DNL Experience Manager] 사용자 인터페이스 내에서 사용자는 Adobe Stock 자산을 검색하고 필요한 자산에 대한 라이선스를 제공할 수 있습니다. Omnisearch 필드에 `Location: Adobe Stock`을 추가합니다. 또한 **[!UICONTROL 필터]** 패널을 사용하여 라이선스가 부여된 또는 라이선스가 없는 모든 자산을 찾거나 Adobe Stock 파일 번호를 사용하여 특정 자산을 검색할 수도 있습니다. [이미지 관리 [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage)를 참조하십시오. [!DNL Adobe Stock] 
 
-### [!DNL Dynamic Media] 자산 {#search-dynamic-media-assets} 검색
+### [!DNL Dynamic Media] 자산 검색 {#search-dynamic-media-assets}
 
 **[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하여 Dynamic Media 이미지를 필터링할 수 있습니다. 이미지 세트, 회전 메뉴, 혼합 미디어 세트 및 스핀 세트와 같은 자산을 필터링하고 표시합니다. 웹 페이지를 작성하는 동안 작성자는 컨텐츠 파인더 내에서 세트를 검색할 수 있습니다. 세트 필터는 팝업 메뉴에서 사용할 수 있습니다.
 
