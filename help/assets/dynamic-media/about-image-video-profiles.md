@@ -4,9 +4,9 @@ description: 이미지 프로필 또는 비디오 프로필은 폴더에 업로�
 feature: 자산 관리,이미지 프로필,비디오 프로필
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1270'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Dynamic Media 이미지 프로필 또는 Dynamic Media 비디오 프로필을 �
 >
 >동일한 프로필이 할당된 두 폴더 간에 자산을 이동하는 경우에도 마찬가지입니다.
 
-## {#reprocessing-assets} 폴더에서 Dynamic Media 자산 재처리
+## 폴더에서 Dynamic Media 자산 재처리 {#reprocessing-assets}
 
 기존 Dynamic Media 이미지 프로필 또는 나중에 변경한 Dynamic Media 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다.
 
@@ -59,6 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **폴더에서 Dynamic Media 자산을 재처리하려면 다음을 수행하십시오.**
+
 1. [!DNL Experience Manager]의 Assets 페이지에서 이미지 프로필 또는 비디오 프로필이 할당된 Assets 폴더로 이동하고 **Scene7을 적용할 Assets 폴더로 이동합니다.자산** 워크플로우를 다시 처리합니다.
 
    이미지 프로필 또는 비디오 프로필이 할당된 폴더가 있는 폴더는 카드 보기에서 폴더 이름 바로 아래에 표시됩니다.
@@ -69,35 +70,35 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * 기본 선택한 폴더에 자산이 있는 하위 폴더가 하나 이상 있는 경우 워크플로우는 폴더 계층 구조의 모든 자산을 재처리합니다.
    * 자산이 1,000개 이상인 폴더 계층 구조에서 이 워크플로우를 실행하지 않는 것이 좋습니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 클릭합니다.
-1. 페이지의 왼쪽 아래 모서리 근처에 있는 [!UICONTROL 댓글] 필드 오른쪽에 있는 캐럿 아이콘( **^** )을 탭합니다.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
+1. 페이지의 왼쪽 아래 모서리 근처에 있는 [!UICONTROL 댓글] 필드 오른쪽에 있는 캐럿 아이콘( **^** )을 선택합니다.
 
    ![자산 워크플로우 재처리 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. **[!UICONTROL 워크플로우 시작]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 워크플로우 시작]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7을 선택합니다.자산]**&#x200B;을 재처리합니다.
 1. (선택 사항) **워크플로우 제목 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로우 인스턴스를 참조할 수 있습니다.
 
    ![자산 재처리 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
-1. **[!UICONTROL 시작]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 시작]**&#x200B;을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
-   워크플로우를 모니터링하거나 진행 상태를 확인하려면 [!DNL Experience Manager] 기본 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로우]**&#x200B;를 클릭합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 기록 열기]**&#x200B;를 클릭합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
+   워크플로우를 모니터링하거나 진행 상태를 확인하려면 [!DNL Experience Manager] 기본 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로우]**&#x200B;를 선택합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 작업 내역 열기]**&#x200B;를 선택합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
 
-### 재처리 워크플로우의 일괄 처리 크기 조정 {#adjusting-load}
+### 재처리 워크플로우의 일괄 처리 크기 조정(선택 사항) {#adjusting-load}
 
 (선택 사항) 재처리 워크플로우의 기본 배치 크기는 작업당 50개의 자산입니다. 이 최적 배치 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있습니다. 따라서 처리 배너는 더 오랫동안 [!DNL Experience Manager] 자산에 유지됩니다. 그러나 평균 파일 크기가 1MB 이하인 경우 값을 여러 개의 100으로 늘릴 것을 권장하지만 1000을 넘지 않습니다. 평균 파일 크기가 수백 MB인 경우 배치 크기를 최대 10개까지 줄이는 것이 좋습니다.
 
 **재처리 워크플로우의 배치 크기를 선택적으로 조정하려면**
 
-1. [!DNL Experience Manager]Adobe Experience Manager ]**를 탭하여 전역 탐색 콘솔에 액세스한 다음,**[!UICONTROL &#x200B;도구&#x200B;]**(망치) 아이콘 >**[!UICONTROL &#x200B;워크플로우 > 모델&#x200B;]**을 탭합니다.**[!UICONTROL 
+1. [!DNL Experience Manager]Adobe Experience Manager ]**을 선택하여 전역 탐색 콘솔에 액세스한 다음**[!UICONTROL &#x200B;도구&#x200B;]**(망치) 아이콘 >**[!UICONTROL &#x200B;워크플로우 > 모델&#x200B;]**을 선택합니다.**[!UICONTROL 
 1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다.자산]**&#x200B;을 재처리합니다.
 
    ![Scene7이 있는 워크플로우 모델 페이지:카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. 새 브라우저 탭에서 Scene7을 엽니다.자산 워크플로우 모델 페이지를 재처리합니다.
-1. Scene7에서:오른쪽 위 모서리 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]**&#x200B;을 탭하여 워크플로우를 &quot;잠금 해제&quot;합니다.
-1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 누릅니다.
+1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다. 새 브라우저 탭에서 Scene7을 엽니다.자산 워크플로우 모델 페이지를 재처리합니다.
+1. Scene7에서:오른쪽 위 모서리 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]**&#x200B;을 선택하여 워크플로우에 대한 &quot;잠금 해제&quot;를 선택하십시오.
+1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
 
    ![Scene7 배치 업로드 구성 요소](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
@@ -111,9 +112,9 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![속성 대화 상자](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 맨 위에 있는 **[!UICONTROL 완료]**&#x200B;를 탭합니다.
+1. **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 맨 위에 있는 **[!UICONTROL 완료]**&#x200B;를 선택합니다.
 
-1. Scene7의 오른쪽 위 모서리:자산 워크플로우 모델 페이지를 다시 처리하고 **[!UICONTROL 동기화]**&#x200B;를 누릅니다. **[!UICONTROL 동기화된]**&#x200B;가 표시되면 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 재처리할 수 있습니다.
+1. Scene7의 오른쪽 위 모서리:자산 워크플로우 모델 페이지를 다시 처리하고 **[!UICONTROL 동기화]**&#x200B;를 선택합니다. **[!UICONTROL 동기화된]**&#x200B;가 표시되면 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 재처리할 수 있습니다.
 
    ![워크플로우 모델 동기화](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
@@ -122,7 +123,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 <!-- MAY BE NEEDED IN THE FUTURE
 
 1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -133,12 +134,12 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, tap **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
