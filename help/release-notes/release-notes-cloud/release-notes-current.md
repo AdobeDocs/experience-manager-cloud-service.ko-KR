@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
+source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -143,6 +143,27 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 
 * FDM(양식 데이터 모델)을 통해 백엔드 서비스에 데이터를 제출하기 전에 필드의 유효성을 검사하면 유효성 검사가 성공하지만 양식 데이터 모델 서비스가 사후 유효성 검사를 호출하지 못합니다.
 * Apple iOS 장치에서 표준 HTML 업로드 필드가 포함된 양식을 제출하면 파일 컨텐츠가 전송되지 않고 다른 쪽에서 0바이트 파일이 수신되는 경우가 있습니다. Apple iOS에서 알려진 문제입니다. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+## AEM Screens {#aem-screens}
+
+이 섹션에서는 스크린에 대한 릴리스 노트를 Cloud Service으로 간략하게 설명합니다.
+
+### 릴리스 날짜 {#release-date-june-screens}
+
+AEM Screens as a Cloud Service의 출시일은 2021년 6월 24일입니다.
+
+### 새로운 기능 {#what-is-new-screens-june}
+
+>[!NOTE]
+>Screens를 Cloud Service으로 설치, 구성 및 실행하고 세부 개념 기술 설명서에 대한 링크와 함께 실행하는 데 필요한 기본 지식은 [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) 안내서를 참조하십시오.
+
+* 대량 장치 등록 관리는 대량의 플레이어 장치를 제공하는 것이 더 빠르고 효율적이라는 것을 의미합니다.
+
+* 각 장치, 표시 및 채널 인벤토리 보기에 대한 검색 및 필터 옵션이 개선되었습니다.
+
+* 디바이스 상태 스냅샷은 중요한 상태를 한 눈에 제공하여 시간을 절약합니다.
+
+* 객체 세부 정보 페이지에는 프로젝트의 각 객체에 대한 가장 관련성이 높은 정보가 요약되어 있습니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
