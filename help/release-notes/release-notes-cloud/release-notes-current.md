@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
+source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1385'
 ht-degree: 2%
 
 ---
@@ -144,9 +144,9 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 * FDM(양식 데이터 모델)을 통해 백엔드 서비스에 데이터를 제출하기 전에 필드의 유효성을 검사하면 유효성 검사가 성공하지만 양식 데이터 모델 서비스가 사후 유효성 검사를 호출하지 못합니다.
 * Apple iOS 장치에서 표준 HTML 업로드 필드가 포함된 양식을 제출하면 파일 컨텐츠가 전송되지 않고 다른 쪽에서 0바이트 파일이 수신되는 경우가 있습니다. Apple iOS에서 알려진 문제입니다. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-## AEM Screens {#aem-screens}
+## [!DNL Adobe Experience Manager Screens]로서의 [!DNL Cloud Service]  {#screens}
 
-이 섹션에서는 스크린에 대한 릴리스 노트를 Cloud Service으로 간략하게 설명합니다.
+이 섹션에서는 AEM Screens as a Cloud Service에 대한 릴리스 노트를 간략하게 설명합니다.
 
 ### 릴리스 날짜 {#release-date-june-screens}
 
