@@ -1,9 +1,9 @@
 ---
 title: AEM Screens as a Cloud Service
 description: 이 페이지는 AEM Screens as a Cloud Service에 대한 소개 역할을 합니다.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ AEM Screens as a Cloud Service은 마케터가 규모에 맞게 다이내믹한 
 
 Cloud Service으로 화면에는 두 가지 주요 구성 요소가 있습니다. 즉,
 
-* **컨텐츠 공급자**: AEM Cloud Service 또는 Adobe Managed Services(AMS)에서 실행되는 스크린 추가 기능입니다. 스크린 컨텐츠 제공업체 를 사용하면 컨텐츠 작성자가 채널을 만들고 관리할 수 있습니다. 컨텐츠 작성자는 디스플레이 또는 플레이어 등록 만들기의 세부 사항에 대해 신경 쓰지 않고 새 컨텐츠를 추가하거나 컨텐츠를 편집할 수 있습니다. 컨텐츠 제공업체는 컨텐츠 개발, 디스플레이 또는 플레이어 등록에 대한 기본 세부 정보에서 추상화를 제공합니다.
+* **[컨텐츠 공급자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**: AEM Cloud Service 또는 Adobe Managed Services(AMS)에서 실행되는 스크린 추가 기능입니다. 스크린 컨텐츠 제공업체 를 사용하면 컨텐츠 작성자가 채널을 만들고 관리할 수 있습니다. 컨텐츠 작성자는 디스플레이 또는 플레이어 등록 만들기의 세부 사항에 대해 신경 쓰지 않고 새 컨텐츠를 추가하거나 컨텐츠를 편집할 수 있습니다. 컨텐츠 제공업체는 컨텐츠 개발, 디스플레이 또는 플레이어 등록에 대한 기본 세부 정보에서 추상화를 제공합니다.
 
-* **Adobe I/O 런타임 시 실행되는 디지털 서명 관리 서비스인 서비스 공급자**. Screens 서비스 공급자를 사용하면 컨텐츠 작성자, 개발자 및 관리자가 컨텐츠가 채널에 추가되면 컨텐츠 재생에 대한 디스플레이 및 플레이어를 관리할 수 있습니다. 또한 화면 서비스 공급자는 높은 수준에서 컨텐츠가 재생되는 위치와 시점을 오케스트레이터에게 알려줍니다.
+* **[Adobe I/O 런타임 시 실행되는 디지털 서명 관리 서비스인 서비스 공급자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**. Screens 서비스 공급자를 사용하면 컨텐츠 작성자, 개발자 및 관리자가 컨텐츠가 채널에 추가되면 컨텐츠 재생에 대한 디스플레이 및 플레이어를 관리할 수 있습니다. 또한 화면 서비스 공급자는 높은 수준에서 컨텐츠가 재생되는 위치와 시점을 오케스트레이터에게 알려줍니다.
 
 
 ## 아키텍처 개요 {#architectural-overview}
