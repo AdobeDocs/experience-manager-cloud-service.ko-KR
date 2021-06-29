@@ -1,10 +1,10 @@
 ---
 title: 스크린에 Cloud Service으로 처음 로그인
 description: 이 페이지에서는 Screens as a Cloud Service을 시작하는 첫 번째 단계를 설명합니다.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3962d736778e4d17bb57296e9401503ce712a6cd
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 기능 팩의 가용성 {#availability}
 
-AMS-Screens-Cloud 기능 팩은 소프트웨어 배포 포털을 통해 사용할 수 있습니다.
+AMS-Screens-Cloud 기능 팩은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)을 통해 사용할 수 있습니다.
 최신 기능 팩을 다운로드하려면 여기를 클릭하십시오 .
 
 ## Adobe Admin Console에 사용자 추가 {#admin-console}
