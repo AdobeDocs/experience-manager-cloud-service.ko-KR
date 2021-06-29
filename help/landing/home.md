@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 사용 안내서
 description: Adobe Experience Manager as a Cloud Service 자습 리소스 및 설명서 링크
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 560775956fbf8eb6376150e8fbf08af2ea9e5c1e
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 83%
+source-wordcount: '418'
+ht-degree: 81%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 83%
 | [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
 | [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
+| [Screens 사용 안내서](/help/screens-cloud/home.md) | Experience Manager Screens을 Cloud Service으로 사용하고 관리하는 방법을 이해합니다. |
 | [상거래 사용 안내서](/help/commerce-cloud/home.md) | Experience Manager Commerce as a Cloud Service로 사용하고 관리하는 방법을 이해합니다. |
 | [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | 이러한 개발 및 배포 항목을 탐색하여 AEM의 강력한 기능을 사용하여 경험을 만들고 사용자 지정하는 방법을 이해합니다. |
