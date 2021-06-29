@@ -1,10 +1,10 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Adobe Experience Manager Screens as a Cloud Service 자습 리소스 및 설명서 링크
-source-git-commit: a10e23901e3f7664e608089b93c95c8a73c14eba
+source-git-commit: 79eac4a2bf7d891dcd99c90f518fffeca279b3b7
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 63%
+source-wordcount: '440'
+ht-degree: 62%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 63%
 
 * [AEM Screens as a Cloud Service 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [AEM Screens as a Cloud Service으로 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
-* 프로젝트 만들기 및 컨텐츠 만들기 시작
+* [Screens에서 Cloud Service으로 프로젝트 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
