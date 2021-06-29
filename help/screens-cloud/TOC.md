@@ -3,7 +3,7 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as a Cloud Service
 breadcrumb-title: AEM Screens as a Cloud Service
 user-guide-description: AEM Screens을 Cloud Service으로 이해합니다.
-source-git-commit: c5e6a3a309bbb4750c8a553eba0c444ce030637b
+source-git-commit: 1d788b37d549d86270156cb43548a7c62fc1165f
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 2%
@@ -35,6 +35,6 @@ ht-degree: 2%
    + [Screens 서비스 공급자의 디스플레이 생성 및 관리](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
    + [디스플레이에 채널 지정](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
    + 플레이어 관리 및 등록 {#manage-player-registration}
-   + [Screens 플레이어 설치](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-   + [플레이어 등록](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-   + [디스플레이에 플레이어 할당](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
+      + [Screens 플레이어 설치](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+      + [플레이어 등록](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+      + [디스플레이에 플레이어 할당](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
