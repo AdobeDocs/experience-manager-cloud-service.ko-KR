@@ -1,7 +1,7 @@
 ---
 title: 대용량 컨텐츠 저장소 처리
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 데이터 저장소 {#amazon-data-store}
+#### Amazon S3 데이터 저장소 {#amazon-sdata-store}
 
 azcopy.config 파일에는 다음 속성이 포함되어야 합니다(인스턴스에 올바른 값을 사용해야 함).
 
@@ -134,7 +134,7 @@ AzCopy에 문제가 발생하면 즉시 추출이 실패하며 추출 로그에 
 컨텐츠 전송 도구 1.5.4가 릴리스된 후 작성자 처리에 AzCopy 지원을 추가했습니다.
 
 >[!NOTE]
-> 작성자 수집만 먼저 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
+>작성자 수집만 먼저 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
 
 수집 중에 AzCopy를 활용하려면 AEM에서 버전 2021.6.5561 이상의 Cloud Service 버전으로 사용해야 합니다.
 
