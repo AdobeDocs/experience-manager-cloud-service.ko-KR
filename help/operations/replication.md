@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1185'
 ht-degree: 4%
 
 ---
@@ -34,6 +34,10 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 ![OSGi 켜기 트리거 구성](/help/operations/assets/replication-on-off-trigger.png)
 
 ### 트리 활성화 {#tree-activation}
+
+>[!NOTE]
+>
+>이 접근 방식은 상태를 지속하지 않으며 다른 접근 방법보다 확장 가능성이 낮으므로 더 이상 사용되지 않는 것으로 간주해야 합니다. Adobe의 추천은 대신 게시 관리 또는 워크플로우 메서드를 사용하는 것입니다
 
 트리 활성화를 수행하려면 다음을 수행합니다.
 
