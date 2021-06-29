@@ -2,10 +2,10 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '1155'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,9 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
 ### 빠른 게시 취소/게시 - 계획된 게시 취소/게시 {#publish-unpublish}
 
-작성자를 위한 이러한 표준 AEM 기능은 AEM Cloud Service과 변경되지 않습니다.
+이렇게 하면 게시 관리 방법을 통해 가능한 추가 옵션 없이 선택한 페이지를 즉시 게시할 수 있습니다.
+
+자세한 내용은 [게시 관리](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)를 참조하십시오.
 
 ### 설정 및 해제 시간 - 트리거 구성 {#on-and-off-times-trigger-configuration}
 
@@ -171,6 +173,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 이러한 필터를 제공하지 않고 &quot;게시&quot; 에이전트만 사용하는 경우 &quot;미리 보기&quot; 에이전트가 사용되지 않고 복제 작업이 미리 보기 계층에 영향을 주지 않습니다.
 
 리소스의 전체 `ReplicationStatus` 은 복제 작업에 기본적으로 활성 상태인 에이전트가 하나 이상 포함된 경우에만 수정됩니다. 위의 예에서 이는 복제가 &quot;미리 보기&quot; 에이전트를 사용하고 있기 때문에 해당되지 않습니다. 따라서 특정 에이전트의 상태를 쿼리할 수 있는 새 `getStatusForAgent()` 메서드를 사용해야 합니다. 이 메서드는 &quot;게시&quot; 에이전트에서도 작동합니다. 제공된 에이전트를 사용하여 복제 작업이 수행된 경우 null이 아닌 값을 반환합니다.
+
+### 게시 관리 {#manage-publication}
+
+게시 관리는 빠른 게시보다 많은 옵션을 제공하여 하위 페이지, 참조의 사용자 지정, 적용 가능한 워크플로우 시작뿐 아니라 나중에 게시할 수 있는 옵션이 포함되어 있습니다.
+
+나중에 게시 옵션에 대한 폴더의 하위 항목을 포함하면 이 문서에 설명된 컨텐츠 트리 게시 작업 과정이 호출됩니다.
+
+게시 관리에 대한 자세한 내용은 [게시 기초 설명서](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)에서 확인할 수 있습니다.
 
 ## 문제 해결 {#troubleshooting}
 
