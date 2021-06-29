@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 자산 보고서,자산 관리
 role: Administrator,Business Practitioner
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '872'
 ht-degree: 2%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 2%
 -->
 
 * 업로드
-* 다운로드
 * 만료
 * 수정
 * 게시
