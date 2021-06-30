@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 자산 관리,게시,공동 작업,자산 처리
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 76dd50e044038859bb06a02a2b1c2131932db29c
 workflow-type: tm+mt
-source-wordcount: '4502'
+source-wordcount: '4550'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >
    >**[!UICONTROL 붙여넣기]** 아이콘은 붙여넣기 작업이 완료될 때까지 도구 모음에서 사용할 수 있습니다.
 
-### 자산 이동 또는 이름 바꾸기 {#moving-or-renaming-assets}
+### 자산 이동 또는 이름 변경 {#moving-or-renaming-assets}
 
 1. 이동할 자산의 위치로 이동합니다.
 
@@ -296,7 +296,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 * 빈 폴더가 게시되지 않습니다.
 * 처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 표현물이 없습니다. 처리가 완료될 때까지 기다렸다가 처리가 완료되면 자산을 게시하거나 다시 게시하십시오.
 
-## 닫힌 사용자 그룹 {#closed-user-group}
+## 폐쇄된 사용자 그룹 {#closed-user-group}
 
 닫힌 사용자 그룹(CUG)은 [!DNL Experience Manager]에서 게시된 특정 자산 폴더에 대한 액세스를 제한하는 데 사용됩니다. 폴더에 대한 CUG를 만드는 경우 폴더(폴더 자산 및 하위 폴더 포함)에 대한 액세스가 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
 
@@ -462,6 +462,14 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 ### 저장된 주석 보기 {#viewing-saved-annotations}
 
+주석을 한 번에 한 개만 볼 수 있습니다.
+
+>[!NOTE]
+>
+>여러 주석을 선택하는 경우 사용자 인터페이스에 최신 주석이 표시됩니다.
+>
+>주석 처리된 자산을 PDF로 인쇄하는 경우에만 다중 선택이 지원됩니다.
+
 1. 자산에 대해 저장된 주석을 보려면 자산의 위치로 이동하고 자산의 자산 페이지를 엽니다.
 
 1. GlobalNav 아이콘을 탭/클릭하고 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
@@ -483,6 +491,10 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 자산에 주석이 있거나 검토 워크플로우가 있었던 경우, 오프라인 검토를 위해 주석과 함께 자산을 인쇄하고 상태를 PDF 파일로 검토할 수 있습니다.
 
 주석이나 검토 상태만 인쇄하도록 선택할 수도 있습니다.
+
+>[!NOTE]
+>
+>주석 처리된 자산을 PDF로 인쇄하는 동안 여러 주석을 선택할 수 있습니다.
 
 주석 및 검토 상태를 인쇄하려면 **[!UICONTROL 인쇄]** 아이콘을 탭/클릭하고 마법사의 지침을 따르십시오. 자산에 하나 이상의 주석 또는 검토 상태가 지정된 경우에만 **[!UICONTROL 인쇄]** 아이콘이 도구 모음에 표시됩니다.
 
@@ -582,7 +594,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
    ![compare_versions](assets/compare_versions.png)
 
-### 자산 {#starting-a-workflow-on-an-asset}에서 워크플로우를 시작합니다.
+### 자산에서 워크플로우 시작 {#starting-a-workflow-on-an-asset}
 
 1. 워크플로우를 시작할 자산의 위치로 이동하고 자산을 탭/클릭하여 자산 페이지를 엽니다.
 1. GlobalNav 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인]**&#x200B;을 선택하여 타임라인을 표시합니다.
@@ -618,7 +630,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 컬렉션 관리에 대한 자세한 내용은 [컬렉션 관리](/help/assets/manage-collections.md)를 참조하십시오.
 
-## 데스크탑 앱 또는 Adobe 자산 링크에서 자산을 볼 때 만료된 자산을 숨깁니다. {#hide-expired-assets-via-acp-api}
+## 데스크탑 앱 또는 Adobe 자산 링크에서 자산을 볼 때 만료된 자산 숨기기 {#hide-expired-assets-via-acp-api}
 
 [!DNL Experience Manager] 데스크탑 앱을 사용하면 Windows 또는 Mac 데스크탑에서 DAM 저장소에 액세스할 수 있습니다. Adobe 자산 링크를 사용하면 지원되는 [!DNL Creative Cloud] 데스크탑 애플리케이션 내에서 자산에 액세스할 수 있습니다.
 
