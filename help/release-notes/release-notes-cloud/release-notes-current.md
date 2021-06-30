@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
+source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1395'
 ht-degree: 2%
 
 ---
@@ -90,14 +90,12 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 
 ### [!DNL Assets]의 새로운 기능 {#ga-features-assets}
 
-* 컨텐츠 자동화 기능을 사용하여 [!DNL Experience Manager Assets] API를 활용하여 자산 프로덕션을 규모에 맞게 자동화할 수 있습니다. [!DNL Adobe Creative Cloud] 동일한 자산의 변형을 만드는 데 필요한 시간과 반복 시간을 크게 줄여 컨텐츠 속도를 향상시킵니다. 기능은 코드가 필요하지 않으며 DAM 내에서 작동합니다.
+* 컨텐츠 자동화 기능을 사용하여 [!DNL Experience Manager Assets] API를 활용하여 자산 프로덕션을 규모에 맞게 자동화할 수 있습니다. [!DNL Adobe Creative Cloud] 동일한 자산의 변형을 만드는 데 필요한 시간과 반복 시간을 크게 줄여 컨텐츠 속도를 향상시킵니다. 이 기능은 DAM 내에서 프로그래밍과 작업할 필요가 없습니다. [Creative Cloud 통합을 사용하여 자산의 변형 생성](/help/assets/cc-api-integration.md)을 참조하십시오.
+
 * [!DNL Adobe Asset Link] v3.0은  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]및  [!DNL Adobe InDesign] 의  [!DNL Adobe Asset Link] v2.0이  [!DNL Adobe XD] 출시되었습니다. 다음을 제공합니다.
 
    * [!DNL Assets Essentials]을 지원합니다.
    * [!DNL Experience Manager]에 [!DNL Cloud Service] 또는 [!DNL Assets Essentials]로 자동 연결할 수 있습니다.
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### [!DNL Assets] 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#beta-features-assets}
 
