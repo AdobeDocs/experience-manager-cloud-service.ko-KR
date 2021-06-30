@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 스마트 태그,태깅
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2355'
 ht-degree: 1%
 
 ---
@@ -98,10 +98,13 @@ ht-degree: 1%
 **예**:지침은 다음과 같습니다.
 
 * 다음을 포함하는 태그 모델을 만듭니다.
-   * 자동차 모델과 관련된 태그만.
-   * 셔츠 색깔과 관련된 태그만.
-   * 여성과 남성용 자켓과 관련된 태그만 있습니다.
+
+   * 자동차 모델과 관련된 태그입니다.
+   * 셔츠 색깔과 관련된 태그입니다.
+   * 여성과 남성용 재킷과 관련된 꼬리표들.
+
 * 만들지 마십시오.
+
    * 2019년과 2020년에 출시된 자동차 모델을 포함하는 태그 모델.
    * 동일한 몇 개의 자동차 모델을 포함하는 여러 태그 모델.
 
