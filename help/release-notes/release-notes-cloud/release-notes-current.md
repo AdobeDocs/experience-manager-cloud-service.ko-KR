@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1544'
 ht-degree: 3%
 
 ---
@@ -111,7 +111,7 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 
    ![검색 조건을 사용하여 검색 폴더 필터링](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] 지원되는 문서 형식을 미리 보기 위해 PDF 뷰어를 포함합니다. [!DNL Adobe Document Cloud] 전원이 켜져 있습니다. 이 기능을 사용하면 복잡한 처리 없이 PDF 및 기타 다중 페이지 파일을 미리 볼 수 있습니다. 따라서 [!DNL Experience Manager] 6.5의 기능 패리티가 개선됩니다.
+* [!DNL Experience Manager Assets] 지원되는 문서 형식을 미리 보기 위해 PDF 뷰어를 포함합니다. [!DNL Adobe Document Cloud] 전원이 켜져 있습니다. 이 기능을 사용하면 복잡한 처리 없이 PDF 및 기타 다중 페이지 파일을 미리 볼 수 있습니다. 이 경우 [!DNL Experience Manager] 6.5의 기능 패리티가 개선됩니다. 미리 보기에서 사용할 수 있는 컨트롤은 확대/축소, 페이지 탐색, 컨트롤 도킹 해제 및 전체 화면에서 보는 것입니다. 통합 PDF 뷰어는 AI, DOCX, INDD, PDF 및 PSD 파일 형식을 지원합니다. 자산 자체에 주석을 달 수 있지만 PDF 파일 내의 주석 및 주석은 지원되지 않습니다.
 
    ![PDF 뷰어를  [!DNL Experience Manager] 사용하여 PDF 파일 미리 보기](/help/assets/assets/preview-pdf-file-viewer.png)
 
