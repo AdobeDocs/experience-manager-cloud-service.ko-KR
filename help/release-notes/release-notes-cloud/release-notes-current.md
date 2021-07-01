@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -211,5 +211,21 @@ AEM Screens as a Cloud Service의 출시일은 2021년 6월 24일입니다.
 ### 버그 수정 {#bug-fixes-ctt-latest}
 
 * 작성자 인스턴스에서 처리를 중지하는 동안 UI는 이전에 완료된 수집 항목을 게시 인스턴스에서 `FINISHED`의 `STOPPED`에 덮어씁니다. 이 문제가 수정되었습니다.
+
+## 모범 사례 분석기 {#best-practices-analyzer}
+
+### 릴리스 날짜 {#release-date-bpa}
+
+Best Practices Analyzer v2.1.16 릴리스 날짜는 2021년 6월 30일입니다.
+
+### 새로운 기능 {#what-is-new-bpa-latest}
+
+* `/content/dam` 아래의 폴더에서 누락된 하위 노드를 감지하고 보고하는 기능.
+
+* 사용된 모범 사례 분석기 버전을 감지하고 보고하는 기능.
+
+### 버그 수정 {#bug-fixes-bpa-latest}
+
+* 지원되지 않는 URS(저장소 구조)와 관련된 로깅 오류가 수정되었습니다.
 
 
