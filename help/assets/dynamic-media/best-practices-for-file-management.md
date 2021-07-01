@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: 자산 관리,이미지 프로필,비디오 프로필
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Dynamic Media 이미지 프로필 또는 비디오 프로필 사용과 관련된
    * [메타데이터 프로필](/help/assets/metadata-profiles.md)을 참조하십시오.
    * [디지털 자산 관리를 위한 메타데이터](/help/assets/manage-metadata.md)를 참조하십시오.
 
-* 일반적으로 디지털 자산 수집은 항상 증가하고 있습니다. 따라서 업로드한 모든 자산 중에서 메타데이터 사용, 폴더 구조 및 파일 이름을 공식화하는 것이 중요합니다. 이러한 사항을 표준화하면 디지털 자산 풀이 커짐에 따라 처리 프로필을 보다 정밀하고 일관성을 유지할 수 있습니다.
+* 일반적으로 디지털 자산 수집은 항상 증가하고 있습니다. 따라서 업로드한 모든 자산 중에서 메타데이터 사용, 폴더 구조 및 파일 이름을 공식화하는 것이 보다 이른 시일 내에 중요합니다. 이러한 사항을 표준화하면 디지털 자산 풀이 커짐에 따라 처리 프로필을 보다 정밀하고 일관성을 유지할 수 있습니다.
 * 디지털 자산에 대해 일관된 저장소 구조를 적용하는 경우에만 폴더를 사용하십시오. 예를 들어 지정할 프로필을 세분화하는 데 도움이 되는 폴더 구조에는 다음이 포함될 수 있습니다.
 
    * **개발 폴더**  - 현재 작업 중인 디지털 자산이 포함되어 있습니다.
