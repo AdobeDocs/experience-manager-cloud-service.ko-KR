@@ -4,9 +4,9 @@ description: Dynamic Media에서 회전 배너를 사용하는 방법을 알아�
 feature: 회전 배너
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '4556'
+source-wordcount: '4537'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-여기에서 숫자를 클릭하여 이미지를 탐색할 수 있습니다. 또한 슬라이드는 사용자 정의할 수 있는 시간 간격에 따라 자동으로 회전합니다. 회전 배너의 이미지는 핫스팟과 이미지 맵을 모두 지원합니다. 사용자는 탭하거나 탭하여 하이퍼링크로 이동하거나 빠른 보기 창에 액세스할 수 있습니다.
+여기에서 숫자를 선택하여 이미지를 탐색할 수 있습니다. 또한 슬라이드는 사용자 정의할 수 있는 시간 간격에 따라 자동으로 회전합니다. 회전 배너의 이미지는 핫스팟과 이미지 맵을 모두 지원합니다. 사용자는 또는 을 선택하여 하이퍼링크로 이동하거나 빠른 보기 창에 액세스할 수 있습니다.
 
-이 예에서는 사용자가 이미지 맵을 탭하거나 클릭하고 빠른 보기 창에 액세스하여 장갑을 찾습니다.
+이 예에서는 사용자가 이미지 맵을 선택하고 장갑에 대한 Quickview 창에 액세스합니다.
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## 회전 배너가 만들어지는 방법을 확인하십시오 {#watch-how-carousel-banners-are-created}
+## 회전 배너가 만들어지는 방식을 확인하십시오 {#watch-how-carousel-banners-are-created}
 
 [캐러셀 배너를 만드는 방법에 대한 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (지속 시간:10분 33초). 캐러셀 배너를 미리 보고 편집하고 전달하는 방법도 알아봅니다.
 
@@ -51,10 +51,10 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >If you are an AEM Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables.
+   >If you are an Experience Manager Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing skus in the product catalog. You do not need to manually enter hotspot or image map variables.
    >
    >
-   >If you are an AEM Assets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
+   >If you are an Experience ManagerAssets and Dynamic Media customer, you will manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.
 
 -->
 
@@ -68,19 +68,19 @@ ht-degree: 0%
 
 1. [회전판 세트를 만듭니다](#creating-carousel-sets).
 
-   회전 메뉴 세트에서 사용자는 배너 이미지를 탐색하고 핫스팟이나 이미지 맵을 탭하여 관련 컨텐츠에 액세스합니다.
+   회전 메뉴 세트에서 사용자는 배너 이미지를 탐색하고 핫스팟이나 이미지 맵을 선택하여 관련 컨텐츠에 액세스합니다.
 
-   자산에 회전 메뉴 세트를 만들려면 **[!UICONTROL 만들기]**&#x200B;를 누른 다음 **[!UICONTROL 회전 메뉴 세트]**&#x200B;를 선택합니다. 슬라이드에 자산을 추가하고 **[!UICONTROL 저장]**&#x200B;을 탭합니다. 편집기 내에서 직접 회전판의 모양과 동작을 편집할 수도 있습니다.
+   자산에 회전 메뉴 세트를 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택한 다음 **[!UICONTROL 회전 메뉴 세트]**&#x200B;를 선택합니다. 슬라이드에 자산을 추가하고 **[!UICONTROL 저장]**&#x200B;을 선택합니다. 편집기 내에서 직접 회전판의 모양과 동작을 편집할 수도 있습니다.
 
 1. [이미지 배너에 핫스팟이나 이미지 맵을 추가합니다](#adding-hotspots-or-image-maps-to-an-image-banner).
 
    이미지 배너에 핫스팟이나 이미지 맵을 하나 이상 추가합니다. 그런 다음 각 항목을 링크, 빠른 보기 또는 경험 조각과 같은 작업에 연결합니다. 핫스팟이나 이미지 맵을 추가한 후에는 회전 메뉴 세트를 게시하여 이 작업을 완료합니다. 게시하면 웹 사이트 랜딩 페이지를 복사하여 적용하는 데 사용할 수 있는 포함 코드가 만들어집니다.
 
-   [(선택 사항) 회전 배너 미리 보기](#optional-previewing-carousel-banners) - 선택 사항 를 참조하십시오. 원하는 경우 회전 메뉴 세트의 표시를 보고 상호 작용을 테스트할 수 있습니다.
+   [(선택 사항) 미리 보기 회전 배너](#optional-previewing-carousel-banners) - 선택 사항 을 참조하십시오. 원하는 경우 회전 메뉴 세트의 표시를 보고 상호 작용을 테스트할 수 있습니다.
 
 1. [회전 배너 게시](#publishing-carousel-banners).
 
-   모든 자산과 마찬가지로 회전 메뉴 세트를 게시합니다. 자산에서 회전 메뉴 집합으로 이동하여 선택한 다음 **[!UICONTROL 게시]**&#x200B;를 탭합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 문자열이 활성화됩니다.
+   모든 자산과 마찬가지로 회전 메뉴 세트를 게시합니다. 자산에서 회전 메뉴 집합으로 이동하여 선택한 다음 **[!UICONTROL 게시]**&#x200B;를 선택합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 문자열이 활성화됩니다.
 
 1. 다음 중 하나를 수행하십시오.
 
@@ -102,9 +102,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->If you are an AEM Sites and/or AEM Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. See information on [setting up eCommerce](/help/sites-cloud/administering/generic.md). In addition, you can use the Interactive component and add it to your web page.
+>If you are an Experience Manager Sites and/or Experience Manager Ecommerce customer, skip this step. You do not need to manually identify hotspot or image map variables; you can use the integration with Ecommerce for product integration. See information on [setting up eCommerce](/help/sites-cloud/administering/generic.md). In addition, you can use the Interactive component and add it to your web page.
 >
->If you are an AEM Assets or Media customer, you publish the URL or Embed code and then integrate with your third-party content management system and identify hotspots and image maps manually.
+>If you are an Experience Manager Assets or Media customer, you publish the URL or Embed code and then integrate with your third-party content management system and identify hotspots and image maps manually.
 
 -->
 
@@ -112,33 +112,33 @@ ht-degree: 0%
 
 핫스팟이나 이미지 맵 데이터에 사용할 변수 세트를 식별하는 방법은 서로 다릅니다.
 
-기존 Quick View 구현을 담당하는 IT 전문가에게 문의하는 것도 충분합니다. 시스템에서 빠른 보기를 식별하는 데 필요한 최소 데이터 세트가 무엇인지 파악할 수 있습니다. 그러나 프런트 엔드 코드의 기존 동작을 간단히 분석할 수 있습니다.
+기존 Quickview 구현을 담당하는 IT 전문가에게 문의하는 것도 충분합니다. 시스템에서 빠른 보기를 식별하는 데 필요한 최소 데이터 세트가 무엇인지 파악할 수 있습니다. 그러나 프런트 엔드 코드의 기존 동작을 간단히 분석할 수 있습니다.
 
 대부분의 빠른 보기 구현에서는 다음 패러다임을 사용합니다.
 
-* 사용자가 웹 사이트에서 사용자 인터페이스 요소를 활성화합니다. 예를 들어 **[!UICONTROL 빠른 보기]** 단추를 탭합니다.
-* 필요한 경우 웹 사이트에서 빠른 보기 데이터 또는 콘텐츠를 로드하기 위해 백 엔드에 Ajax 요청을 보냅니다.
+* 사용자가 웹 사이트에서 사용자 인터페이스 요소를 활성화합니다. 예를 들어 **[!UICONTROL Quickview]** 단추를 선택합니다.
+* 필요한 경우 웹 사이트에서 Quickview 데이터 또는 콘텐츠를 로드하기 위해 Ajax 요청을 백 엔드에 보냅니다.
 * 빠른 보기 데이터는 웹 페이지에서 렌더링을 준비하기 위해 컨텐츠로 변환됩니다.
 * 마지막으로 프런트 엔드 코드는 그러한 콘텐츠를 화면에서 시각적으로 렌더링합니다.
 
-그런 다음 빠른 보기 기능이 구현된 기존 웹 사이트의 다양한 영역을 방문하는 것입니다. 그런 다음 빠른 보기를 트리거하고 빠른 보기 데이터 또는 컨텐츠를 로드하기 위해 웹 페이지에서 보낸 Ajax URL을 얻습니다.
+그런 다음 빠른 보기 기능이 구현된 기존 웹 사이트의 다른 영역을 방문하는 것이 좋습니다. 그런 다음 Quickview를 트리거하고 Quickview 데이터 또는 컨텐츠를 로드하기 위해 웹 페이지에서 보낸 Ajax URL을 획득합니다.
 
 일반적으로 전문 디버깅 도구를 사용할 필요가 없습니다. 최신 웹 브라우저에는 적절한 작업을 수행하는 웹 검사자가 포함되어 있습니다. 다음은 웹 관리자를 포함하는 웹 브라우저의 몇 가지 예입니다.
 
-* Google Chrome에서 나가는 모든 HTTP 요청을 보려면 F12(Windows®) 또는 Command-Option-I(Mac)를 눌러 개발자 도구 패널을 엽니다. 네트워크 탭을 누릅니다.
+* Google Chrome에서 나가는 모든 HTTP 요청을 보려면 F12(Windows®) 또는 Command-Option-I(Mac)를 눌러 개발자 도구 패널을 엽니다. 네트워크 탭을 선택합니다.
 * Firefox에서는 F12(Windows®) 또는 Command-Option-I(Mac)를 눌러 Firebug 플러그인을 활성화할 수 있습니다. [네트워크] 탭을 사용하거나 내장된 [검사기] 도구 및 [네트워크] 탭을 사용합니다.
 
 브라우저에서 네트워크 모니터링이 켜져 있으면 페이지에서 빠른 보기를 트리거합니다.
 
-이제 네트워크 로그에서 빠른 보기 Ajax URL을 찾아 기록된 URL을 복사하여 이후 분석을 수행합니다. 일반적으로 빠른 보기를 트리거할 때 서버에 전송되는 요청이 많습니다. 일반적으로 빠른 보기 Ajax URL은 목록에서 첫 번째 중 하나입니다. 여기에는 복잡한 쿼리 문자열 부분 또는 경로가 있으며 해당 응답 MIME 유형은 `text/html`, `text/xml` 또는 `text/javascript`입니다.
+이제 네트워크 로그에서 빠른 보기 Ajax URL을 찾아 기록된 URL을 복사하여 이후 분석을 수행합니다. 일반적으로 빠른 보기를 트리거할 때, 서버로 전송되는 요청이 많습니다. 일반적으로 Quickview Ajax URL은 목록에서 첫 번째 중 하나입니다. 여기에는 복잡한 쿼리 문자열 부분 또는 경로가 있으며 해당 응답 MIME 유형은 `text/html`, `text/xml` 또는 `text/javascript`입니다.
 
 이 프로세스 중에 제품 카테고리와 유형이 다른 웹 사이트의 다양한 영역을 방문하는 것이 중요합니다. 이유는 빠른 보기 URL에 지정된 웹 사이트 카테고리에 공통인 부분이 있지만, 웹 사이트의 다른 영역을 방문하는 경우에만 변경되기 때문입니다.
 
-가장 간단한 경우 빠른 보기 URL에 있는 유일한 변수 부분은 제품 SKU입니다. 이 경우 SKU 값은 배너 이미지에 핫스팟이나 이미지 맵을 추가하는 데 필요한 유일한 데이터 조각입니다.
+가장 간단한 경우 Quickview URL에 있는 유일한 변수 부분은 제품 SKU입니다. 이 경우 SKU 값은 배너 이미지에 핫스팟이나 이미지 맵을 추가하는 데 필요한 유일한 데이터 조각입니다.
 
-그러나 복잡한 경우 빠른 보기 URL에는 SKU 외에도 다양한 요소가 있습니다. 이러한 요소 중 일부는 카테고리 ID, 색상 코드, 크기 코드 등을 포함합니다. 이러한 경우 모든 요소는 캐러셀 배너 기능의 핫스팟이나 이미지 맵 데이터 정의에 있는 별도의 변수입니다.
+그러나 복잡한 경우, Quickview URL은 SKU 외에도 다양한 요소를 제공합니다. 이러한 요소 중 일부는 카테고리 ID, 색상 코드, 크기 코드 등을 포함합니다. 이러한 경우 모든 요소는 캐러셀 배너 기능의 핫스팟이나 이미지 맵 데이터 정의에 있는 별도의 변수입니다.
 
-빠른 보기 URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예를 생각해 보십시오.
+Quickview URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예를 생각해 보십시오.
 
 <table>
  <tbody>
@@ -154,7 +154,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>URL 경로에 있는 단일 SKU입니다.</td>
-   <td><p>기록된 빠른 보기 URL에는 다음이 포함됩니다.</p>
+   <td><p>기록된 Quickview URL은 다음과 같습니다.</p>
     <ul>
      <li><p><code>https://server/product/6422350843</code></p> </li>
      <li><p><code>https://server/product/1607745002</code></p> </li>
@@ -178,9 +178,9 @@ ht-degree: 0%
  </tbody>
 </table>
 
-## 이미지 배너 업로드 중 {#uploading-image-banners}
+## 이미지 배너 업로드 {#uploading-image-banners}
 
-사용하려는 이미지를 이미 업로드한 경우 다음 단계인 [회전 메뉴 집합 만들기](#creating-carousel-sets)로 이동하십시오. 회전판에 사용되는 이미지는 Dynamic Media이 활성화된 후에 업로드해야 합니다.
+사용하려는 이미지를 이미 업로드한 경우 다음 단계인 [회전 메뉴 세트 만들기](#creating-carousel-sets)로 이동하십시오. 회전판에 사용되는 이미지는 Dynamic Media이 활성화된 후에 업로드해야 합니다.
 
 이미지 배너를 업로드하려면 [자산 업로드](/help/assets/manage-digital-assets.md)를 참조하십시오.
 
@@ -192,31 +192,31 @@ ht-degree: 0%
 
 **회전판 세트를 만들려면 다음을 수행하십시오.**
 
-1. 자산에서 회전 메뉴 세트를 만들 폴더로 이동하고 **[!UICONTROL 만들기 > 회전 메뉴 세트]**&#x200B;를 누릅니다.
-1. 회전 배너 편집기 페이지에서 **[!UICONTROL 탭하여 자산 선택기]**&#x200B;를 열어 첫 번째 슬라이드에 대한 이미지를 선택합니다.
+1. 자산에서 회전판 세트를 만들 폴더로 이동하여 **[!UICONTROL 만들기 > 회전판 세트]**&#x200B;로 이동합니다.
+1. 캐러셀 배너 편집기 페이지에서 **[!UICONTROL 탭하여 자산 선택기]**&#x200B;를 열어 첫 번째 슬라이드에 대한 이미지를 선택합니다.
 
    캐러셀 배너 편집기 페이지에서 다음 중 하나를 수행합니다.
 
-   * 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 슬라이드 추가]** 아이콘을 탭합니다.
+   * 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 슬라이드 추가]** 아이콘을 선택합니다.
 
    * 페이지 가운데 근처에 있는 **[!UICONTROL 탭하여 자산 선택기]**&#x200B;를 엽니다.
-   회전판 세트에 포함할 자산을 탭하여 선택합니다. 선택한 자산에 확인 표시 아이콘이 표시됩니다. 페이지 오른쪽 상단 모서리에서 완료되면 **[!UICONTROL 선택]**&#x200B;을 누릅니다.
+   회전판 세트에 포함할 자산을 선택하려면 선택합니다. 선택한 자산에 확인 표시 아이콘이 표시됩니다. 작업이 끝나면 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
 
-   자산 선택기를 사용하여 키워드를 입력하고 **[!UICONTROL Return]**&#x200B;을 탭하거나 클릭하여 자산을 검색할 수 있습니다. 필터를 적용하여 검색 결과를 세분화할 수도 있습니다. 경로, 컬렉션, 파일 유형 및 태그별로 필터링할 수 있습니다. 필터를 선택한 다음 도구 모음에서 **[!UICONTROL 필터]** 아이콘을 탭합니다. 보기 아이콘을 탭하고 **[!UICONTROL 열 보기]**, **[!UICONTROL 카드 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;를 선택하여 보기를 변경합니다.
+   자산 선택기를 사용하여 키워드를 입력하고 **[!UICONTROL Return]**&#x200B;을 선택하여 자산을 검색할 수 있습니다. 필터를 적용하여 검색 결과를 세분화할 수도 있습니다. 경로, 컬렉션, 파일 유형 및 태그별로 필터링할 수 있습니다. 필터를 선택한 다음 도구 모음에서 **[!UICONTROL 필터]** 아이콘을 선택합니다. 보기 아이콘을 선택하고 **[!UICONTROL 열 보기]**, **[!UICONTROL 카드 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;를 선택하여 보기를 변경합니다.
 
-   자세한 내용은 [선택기 작업](/help/assets/dynamic-media/working-with-selectors.md)을 참조하십시오.
+   자세한 내용은 [선택기를 사용한 작업](/help/assets/dynamic-media/working-with-selectors.md)을 참조하십시오.
 
 1. 회전판 세트에서 회전할 모든 이미지를 추가할 때까지 슬라이드를 계속 추가합니다.
 1. (선택 사항) 다음 중 하나를 수행합니다.
 
    * 필요한 경우 슬라이드를 드래그하여 이 목록에서 이미지를 재정렬합니다.
-   * 이미지를 삭제하려면 이미지를 선택한 다음 도구 모음에서 **[!UICONTROL 슬라이드 삭제]**&#x200B;를 누릅니다.
+   * 이미지를 삭제하려면 이미지를 선택한 다음 도구 모음에서 **[!UICONTROL 슬라이드 삭제]**&#x200B;를 선택합니다.
 
-   * 페이지의 오른쪽 위 모서리 근처에 있는 사전 설정을 적용하려면 사전 설정 드롭다운 목록을 탭한 다음, 세트에 적용할 사전 설정을 선택합니다.
-   슬라이드를 삭제하려면 슬라이드를 탭하거나 클릭하고 도구 모음에서 **[!UICONTROL 슬라이드 삭제]** 를 탭하거나 클릭합니다. 슬라이드를 이동하려면 순서 조정 아이콘을 누르고 원하는 위치로 이동합니다.
+   * 페이지의 오른쪽 위 모서리 근처에 있는 사전 설정을 적용하려면 사전 설정 드롭다운 목록을 선택한 다음, 세트에 한 번에 적용할 사전 설정을 선택합니다.
+   슬라이드를 삭제하려면 슬라이드를 선택합니다. 도구 모음의 **[!UICONTROL 슬라이드 삭제]**&#x200B;를 선택합니다. 슬라이드를 이동하려면 재정렬 아이콘을 선택하고 원하는 위치로 이동합니다.
 
-1. 슬라이드에 이미지를 추가한 후 이미지에 핫스팟이나 이미지 맵 또는 둘 다 추가할 수 있습니다. [핫스팟 또는 이미지 맵 추가](#adding-hotspots-or-image-maps-to-an-image-banner)를 참조하십시오.
-1. 회전판 세트의 시각적 디자인과 동작을 변경할 수 있습니다. **[!UICONTROL 동작]** 및 **[!UICONTROL 모양]** 탭을 탭하거나 클릭하고 회전 배너가 표시되는 방식 또는 특정 구성 요소가 동작하는 방식을 조정합니다. 뷰어 편집기 사용 방법에 대한 자세한 내용은 [뷰어 사전 설정 관리](/help/assets/dynamic-media/viewer-presets.md) 를 참조하십시오.
+1. 슬라이드에 이미지를 추가한 후 이미지에 핫스팟이나 이미지 맵 또는 둘 다 추가할 수 있습니다. [이미지 배너에 핫스팟 또는 이미지 맵 추가](#adding-hotspots-or-image-maps-to-an-image-banner)를 참조하십시오.
+1. 회전판 세트의 시각적 디자인과 동작을 변경할 수 있습니다. 캐러셀 배너의 표시 방식이나 특정 구성 요소의 동작 방식을 조정하려면 **[!UICONTROL 동작]** 및 **[!UICONTROL 모양]** 탭을 선택합니다. 뷰어 편집기 사용 방법에 대한 자세한 내용은 [뷰어 사전 설정 관리](/help/assets/dynamic-media/viewer-presets.md) 를 참조하십시오.
 
    >[!NOTE]
    >
@@ -224,16 +224,16 @@ ht-degree: 0%
    >
    >* 이미지가 표시되는 기간입니다. 기본적으로 각 이미지는 9초 동안 표시됩니다.
    >* 애니메이션. 기본적으로 각 슬라이드 전환은 페이드입니다. 슬라이드 전환으로 변경할 수 있습니다.
-   >* 단추의 스타일입니다. 각 점 또는 숫자를 탭하여 배너를 통해 회전할 수 있습니다. 세트 표시기 단추가 표시되는 위치와 숫자 또는 점선 스타일인 경우 그 크기를 변경할 수 있습니다.
+   >* 단추의 스타일입니다. 각 점 또는 숫자를 선택하여 배너를 통해 회전할 수 있습니다. 세트 표시기 단추가 표시되는 위치와 숫자 또는 점선 스타일인 경우 그 크기를 변경할 수 있습니다.
    >* 이미지 맵의 밝은 영역 스타일 또는 핫스팟에 사용되는 아이콘을 변경합니다.
    >* 뷰어 사전 설정을 편집하기 전에 사전 설정을 기반으로 할 스타일을 선택합니다. 스타일을 선택하지 않으면 뷰어 사전 설정을 편집하기 시작하면 다른 사전 설정으로 변경하면 모든 변경 사항이 손실됩니다.
 
 
-   캐러셀 배너의 모양을 미리 볼 수도 있습니다. [(선택 사항) 회전 배너 미리 보기](#optional-previewing-carousel-banners)를 참조하십시오.
+   캐러셀 배너의 모양을 미리 볼 수도 있습니다. [(선택 사항) 미리 보기 회전 배너](#optional-previewing-carousel-banners)를 참조하십시오.
 
-1. 완료되면 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
+1. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-## 이미지 배너에 핫스팟 또는 이미지 맵 추가 {#adding-hotspots-or-image-maps-to-an-image-banner}
+## 이미지 배너에 핫스팟이나 이미지 맵 추가 {#adding-hotspots-or-image-maps-to-an-image-banner}
 
 회전판 세트 편집기를 사용하여 배너에 핫스팟이나 이미지 맵을 추가할 수 있습니다.
 
@@ -251,7 +251,7 @@ ht-degree: 0%
 
 캐러셀 배너 만들기를 완료하면 선택적으로 미리 보기 를 사용하여 캐러셀 배너가 고객에게 표시되는 방식을 확인할 수 있습니다.
 
-[(선택 사항) 회전 배너 미리 보기](#optional-previewing-carousel-banners)를 참조하십시오.
+[(선택 사항) 미리 보기 회전 배너](#optional-previewing-carousel-banners)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -263,50 +263,50 @@ ht-degree: 0%
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**이미지 배너에 핫스팟 또는 이미지 맵을 추가하려면 다음을 수행합니다.**
+**이미지 배너에 핫스팟이나 이미지 맵을 추가하려면 다음을 수행합니다.**
 
 1. Assets에서 인터랙티브하게 만들 회전 메뉴 세트로 이동합니다.
-1. 회전판 세트를 선택하고 **[!UICONTROL 편집]**&#x200B;을 누릅니다. 회전판 뷰어 편집기가 열립니다.
+1. 회전판 세트를 선택하고 **[!UICONTROL 편집]**&#x200B;을 선택합니다. 회전판 뷰어 편집기가 열립니다.
 1. 대화형으로 만들 슬라이드를 선택합니다.
-1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Hotspot]** 또는 **[!UICONTROL 이미지 맵]**&#x200B;을 탭합니다.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Hotspot]** 또는 **[!UICONTROL 이미지 맵]**&#x200B;을 선택합니다.
 1. 다음 중 하나를 수행합니다.
 
-   * 핫스팟:이미지에서 핫스팟을 표시할 위치를 누릅니다.
-   * 이미지 맵의 경우:이미지에서 를 클릭한 다음 왼쪽 상단에서 오른쪽 하단으로 드래그하여 이미지 맵 영역을 만듭니다. 모퉁이를 끌어서 이미지 맵의 크기를 조정할 수 있습니다.
+   * 핫스팟:이미지에서 핫스팟을 표시할 위치를 선택합니다.
+   * 이미지 맵의 경우:이미지에서 왼쪽 상단에서 오른쪽 하단으로 드래그하여 이미지 맵 영역을 만듭니다. 모퉁이를 끌어서 이미지 맵의 크기를 조정할 수 있습니다.
 
    필요한 경우 핫스팟이나 이미지 맵을 새 위치로 드래그합니다. 또는 키보드 화살표 키를 사용하여 선택한 핫스팟의 위치를 제어합니다. 필요에 따라 핫스팟이나 이미지 맵을 더 추가합니다.
 
-   핫스팟이나 이미지 맵을 삭제하려면 **[!UICONTROL 작업]** 탭을 누릅니다. **[!UICONTROL 맵 및 핫스팟]** 제목의 **[!UICONTROL 선택한 유형]** 드롭다운 목록에서 제거할 핫스팟이나 이미지 맵의 이름을 선택합니다. 메뉴 옆에 있는 **[!UICONTROL 휴지통]** 아이콘을 탭한 다음, **[!UICONTROL 삭제]**&#x200B;를 탭합니다.
+   핫스팟이나 이미지 맵을 삭제하려면 **[!UICONTROL 작업]** 탭을 선택합니다. **[!UICONTROL 맵 및 핫스팟]** 제목의 **[!UICONTROL 선택한 유형]** 드롭다운 목록에서 제거할 핫스팟이나 이미지 맵의 이름을 선택합니다. 메뉴 옆에 있는 **[!UICONTROL 휴지통]** 아이콘을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 선택합니다.
 
 1. 이름 텍스트 필드에 핫스팟이나 이미지 맵의 이름을 입력합니다. 이 이름은 **[!UICONTROL 맵 및 핫스팟]** 드롭다운 목록에도 나타납니다. 이름을 제공하면 나중에 핫스팟이나 이미지 맵을 변경하기로 결정하는 경우 핫스팟이나 이미지 맵을 쉽게 식별할 수 있습니다.
 1. **[!UICONTROL 작업]** 탭에서 다음 중 하나를 수행합니다.
 
-   * **[!UICONTROL 빠른 보기]**&#x200B;를 누릅니다.
+   * **[!UICONTROL Quickview]**&#x200B;를 선택합니다.
 
-      * Experience Manager 사이트 <!-- and Ecommerce--> 고객인 경우 제품 선택기 아이콘(확대경)을 탭하여 제품 선택 페이지를 엽니다. 회전판 배너 편집기로 돌아가려면 사용할 제품을 탭한 다음, 페이지의 오른쪽 위 모서리에서 확인 표시를 누릅니다.
+      * Experience Manager 사이트 <!-- and Ecommerce--> 고객인 경우 제품 선택기 아이콘(확대경)을 선택하여 제품 선택 페이지를 엽니다. 회전판 배너 편집기로 돌아가려면 사용할 제품을 선택한 다음 페이지의 오른쪽 위 모서리에서 확인 표시를 선택합니다.
       * Experience Manager 사이트 <!-- or Ecommerce --> 고객이 아닌 경우:
 
          * 변수를 정의합니다. [핫스팟 변수 식별](#identifying-hotspot-and-image-map-variables)을 참조하십시오.
-         * 그런 다음 SKU 값을 수동으로 입력합니다. SKU 값 텍스트 필드에 제공하는 각 개별 제품 또는 서비스의 고유 식별자인 제품의 SKU(Stock Keeping Unit)를 입력합니다. 입력한 SKU 값은 빠른 보기 템플릿의 변수 부분을 자동으로 채웁니다. 이제 시스템에서는 탭한 핫스팟을 특정 SKU의 빠른 보기에 연결하는 것을 알고 있습니다.
-         * (선택 사항) 빠른 보기 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 누릅니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 category=Mens는 추가된 변수입니다.
+         * 그런 다음 SKU 값을 수동으로 입력합니다. SKU 값 텍스트 필드에 제공하는 각 개별 제품 또는 서비스의 고유 식별자인 제품의 SKU(Stock Keeping Unit)를 입력합니다. 입력한 SKU 값은 빠른 보기 템플릿의 변수 부분을 자동으로 채웁니다. 이제 시스템에서 선택한 핫스팟을 특정 SKU의 빠른 보기에 연결하는 것을 알고 있습니다.
+         * (선택 사항) 빠른 보기 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 선택합니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 category=Mens는 추가된 변수입니다.
 
-         * 자세한 내용은 [선택기 작업](/help/assets/dynamic-media/working-with-selectors.md)을 참조하십시오.
-   * **[!UICONTROL 하이퍼링크]**&#x200B;를 누릅니다.
+         * 자세한 내용은 [선택기를 사용한 작업](/help/assets/dynamic-media/working-with-selectors.md)을 참조하십시오.
+   * **[!UICONTROL 하이퍼링크]**&#x200B;를 선택합니다.
 
-      * AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 탭하여 URL로 이동합니다.
+      * Experience Manager 사이트 고객인 경우 사이트 선택기 아이콘(폴더)을 선택하여 URL로 이동합니다.
 
          >[!NOTE]
-         대화형 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
+         대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
 
       * 독립형 고객인 경우, href 텍스트 필드에서 연결된 웹 페이지에 대한 전체 URL 경로를 지정합니다.
 
    링크를 새 브라우저 탭(권장 기본값)에서 열지 또는 동일한 탭에서 열지를 지정해야 합니다.
 
-   자세한 내용은 [선택기 작업](/help/assets/dynamic-media/working-with-selectors.md)을 참조하십시오.
+   자세한 내용은 [선택기를 사용한 작업](/help/assets/dynamic-media/working-with-selectors.md)을 참조하십시오.
 
-   * **[!UICONTROL 경험 조각]**&#x200B;을 누릅니다.
+   * **[!UICONTROL 경험 조각]**&#x200B;을 선택합니다.
 
-      * AEM Sites 고객인 경우 검색 아이콘(확대경)을 탭하여 경험 조각 페이지를 엽니다. 핫스팟 관리 페이지로 돌아가려면 사용할 경험 구성요소를 탭한 다음, 페이지의 오른쪽 위 모서리에서 선택 을 탭합니다.
+      * Experience Manager 사이트 고객인 경우 검색 아이콘(확대경)을 선택하여 경험 조각 페이지를 엽니다. 핫스팟 관리 페이지로 돌아가려면 사용할 경험 구성요소를 선택한 다음, 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 선택]**을 선택합니다.
 [경험 구성요소](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)를 참조하십시오.
 
       * 배너에 표시되는 경험 조각의 폭과 높이를 지정합니다.
@@ -316,14 +316,14 @@ ht-degree: 0%
          이 문제를 해결하기 위해 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   캐러셀 배너의 모양을 미리 볼 수도 있습니다. [(선택 사항) 회전 배너 미리 보기](#optional-previewing-carousel-banners)를 참조하십시오.
+   캐러셀 배너의 모양을 미리 볼 수도 있습니다. [(선택 사항) 미리 보기 회전 배너](#optional-previewing-carousel-banners)를 참조하십시오.
 
-1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 회전판 세트를 게시합니다. 게시하면 웹 사이트 페이지에서 사용할 수 있는 포함 코드 또는 URL이 만들어집니다. Experience Manager 사이트 고객인 경우, 회전 메뉴 세트를 웹 페이지에 직접 추가합니다.
 
    [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-   웹 사이트 랜딩 페이지에 설정된 회전 메뉴 추가](#adding-a-carousel-banner-to-your-website-page)를 참조하십시오[
+   웹 사이트 랜딩 페이지에 설정된 회전 메뉴 추가](#adding-a-carousel-banner-to-your-website-page)를 참조하십시오.[
 
 ## 회전 메뉴 집합 편집 {#editing-carousel-sets}
 
@@ -339,25 +339,25 @@ ht-degree: 0%
 * 회전판 세트를 삭제합니다.
 * 핫스팟과 이미지 맵을 추가하거나 편집합니다. [선택기를 사용한 작업](/help/assets/dynamic-media/working-with-selectors.md)도 참조하십시오.
 
-**회전판 세트를 편집하려면 다음을 수행하십시오.**
+**회전판 세트를 편집하려면**
 
 1. 다음 중 하나를 수행합니다.
 
-   * 회전판 세트 자산 위로 마우스를 가져간 다음 **[!UICONTROL 편집]**(연필 아이콘)을 누릅니다.
-   * 회전판 세트 자산 위로 마우스를 가져간 후 **[!UICONTROL 선택]**(확인 표시 아이콘)을 탭한 다음, 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 탭합니다.
+   * 회전판 세트 자산 위로 마우스를 가져간 다음 **[!UICONTROL 편집]**(연필 아이콘)을 선택합니다.
+   * 회전판 세트 자산 위로 마우스를 가져간 후 **[!UICONTROL 선택]**(확인 표시 아이콘)을 선택한 다음, 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 
-   * 회전판 세트 자산을 탭한 다음, 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 편집]** (연필 아이콘)을 누릅니다.
+   * 회전판 세트 자산을 선택한 다음 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 편집]** (연필 아이콘)을 선택합니다.
 
 1. 회전판 세트를 편집하려면 다음 중 하나를 수행합니다.
 
-   * 슬라이드를 추가하려면 **[!UICONTROL 슬라이드 추가]** 아이콘을 누릅니다. 해당 슬라이드에 추가할 자산으로 이동하고 확인 표시를 탭하거나 클릭합니다.
+   * 슬라이드를 추가하려면 **[!UICONTROL 슬라이드 추가]** 아이콘을 선택합니다. 해당 슬라이드에 추가할 자산으로 이동한 다음 확인 표시를 선택합니다.
    * 슬라이드를 다시 정렬하려면 슬라이드를 새 위치로 드래그합니다(항목을 이동하려면 다시 정렬 아이콘 선택).
-   * 핫스팟이나 이미지 맵을 추가하려면 핫스팟이나 이미지 맵 아이콘을 클릭하고 [핫스팟 및 이미지 맵 추가](#adding-hotspots-or-image-maps-to-an-image-banner)를 참조하십시오.
-   * 회전판 세트의 모양이나 동작을 편집하려면 **[!UICONTROL 모양]** 탭 또는 **[!UICONTROL 동작]** 탭을 탭한 다음 원하는 옵션을 설정합니다.
+   * 핫스팟이나 이미지 맵을 추가하려면 핫스팟이나 이미지 맵 아이콘을 선택하고 [이미지 배너에 핫스팟 및 이미지 맵 추가](#adding-hotspots-or-image-maps-to-an-image-banner)를 참조하십시오.
+   * 회전판 집합의 모양이나 동작을 편집하려면 **[!UICONTROL 모양]** 탭 또는 **[!UICONTROL 동작]** 탭을 선택한 다음 원하는 옵션을 설정합니다.
    * 핫스팟이나 이미지 맵을 편집하려면 해당 슬라이드에서 핫스팟이나 이미지 맵을 선택합니다. **[!UICONTROL 작업]** 탭에서 변경합니다.
-   * 슬라이드를 삭제하려면 슬라이드를 선택한 다음 도구 모음에서 **[!UICONTROL 슬라이드 삭제]**&#x200B;를 누릅니다.
-   * 페이지의 오른쪽 위 모서리 근처에 있는 사전 설정을 적용하려면 **[!UICONTROL 사전 설정]** 드롭다운 목록을 탭한 다음 뷰어 사전 설정을 선택합니다.
-   * 전체 캐러셀 세트를 삭제하려면 캐러셀 세트로 이동하여 **[!UICONTROL 삭제]**&#x200B;를 탭합니다.
+   * 슬라이드를 삭제하려면 슬라이드를 선택한 다음 도구 모음에서 **[!UICONTROL 슬라이드 삭제]**&#x200B;를 선택합니다.
+   * 페이지의 오른쪽 위 모서리 근처에 있는 사전 설정을 적용하려면 **[!UICONTROL 사전 설정]** 드롭다운 목록을 선택한 다음 뷰어 사전 설정을 선택합니다.
+   * 전체 캐러셀 세트를 삭제하려면 캐러셀 세트로 이동하여 **[!UICONTROL 삭제]**&#x200B;를 선택합니다.
 
    >[!NOTE]
    핫스팟으로 대화형 이미지를 편집하고 이미지를 자르면 핫스팟이 제거됩니다.
@@ -367,32 +367,31 @@ ht-degree: 0%
 미리 보기 를 사용하여 회전 배너가 고객에게 표시되는 방식을 확인할 수 있습니다. 또한 [미리 보기]를 사용하여 회전 배너의 핫스팟과 이미지 맵을 테스트하여 예상대로 작동하는지 확인할 수 있습니다.
 
 캐러셀 배너에 만족하면 게시할 수 있습니다.
-웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
-[
-[URL을 웹 애플리케이션에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
+[웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
 [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 회전판 편집기(기본 설정 메서드) 또는 **[!UICONTROL Viewers]** 목록에서 회전판 배너를 미리 볼 수 있습니다.
 
-**회전 배너를 미리 보려면:**
+**회전판 배너를 선택적으로 미리 보려면:**
 
-1. **[!UICONTROL Assets]**&#x200B;에서 만든 기존 회전 배너를 탐색하고 탭하여 엽니다.
-1. **[!UICONTROL 편집]**&#x200B;을 누릅니다.
+1. **[!UICONTROL Assets]**&#x200B;에서 생성한 기존 회전 배너로 이동하여 엽니다.
+1. **[!UICONTROL 편집]**&#x200B;을 선택하십시오.
 1. 도구 모음의 오른쪽 모서리에 있는 뷰어 사전 설정 목록에서 회전 배너를 미리 볼 뷰어를 선택합니다.
 
    ![experience_fragment-carousselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. **[!UICONTROL 미리 보기]**&#x200B;를 누릅니다.
-1. 연결된 작업을 테스트하려면 이미지에서 핫스팟이나 이미지 맵을 탭합니다.
+1. **[!UICONTROL 미리 보기]**&#x200B;를 선택합니다.
+1. 연결된 작업을 테스트하려면 이미지에서 핫스팟이나 이미지 맵을 선택합니다.
 
 **뷰어 목록에서 회전 배너를 미리 보려면:**
 
-1. **[!UICONTROL Assets]**&#x200B;에서 만든 기존 회전 배너를 탐색하고 탭하여 엽니다.
-1. 미리 보기 페이지의 왼쪽 위 모서리 근처에 있는 컨텐츠 아이콘을 클릭합니다.
-1. 페이지 왼쪽에 있는 패널의 **[!UICONTROL 뷰어]** 목록에서 사용할 회전 배너 뷰어 사전 설정의 이름을 탭합니다.
-1. 연결된 작업을 테스트하려면 이미지에서 핫스팟이나 이미지 맵을 탭합니다.
+1. **[!UICONTROL Assets]**&#x200B;에서 생성한 기존 회전 배너로 이동하여 엽니다.
+1. 미리 보기 페이지의 왼쪽 위 모서리 근처에 있는 컨텐츠 아이콘을 선택합니다.
+1. 페이지 왼쪽에 있는 패널의 **[!UICONTROL 뷰어]** 목록에서 사용할 캐러셀 배너 뷰어 사전 설정의 이름을 선택합니다.
+1. 연결된 작업을 테스트하려면 이미지에서 핫스팟이나 이미지 맵을 선택합니다.
 
-## 회전 배너 게시 중 {#publishing-carousel-banners}
+## 회전 배너 게시 {#publishing-carousel-banners}
 
 회전판을 사용하려면 게시해야 합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 코드가 활성화됩니다. 또한 확장성과 성능을 제공하기 위해 CDN과 통합된 Dynamic Media 클라우드에 회전판을 게시합니다.
 
@@ -402,28 +401,28 @@ ht-degree: 0%
 
 회전 배너를 게시하는 방법에 대한 자세한 내용은 [Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
-## 웹 사이트 페이지에 회전 배너를 추가하는 중 {#adding-a-carousel-banner-to-your-website-page}
+## 웹 사이트 페이지에 회전 배너 추가 {#adding-a-carousel-banner-to-your-website-page}
 
 배너 이미지를 업로드한 후 배너에 회전판, 핫스팟, 이미지 맵 또는 둘 다 추가했습니다. 회전판 세트를 게시했습니다. 이제 기존 웹 사이트 페이지에 추가할 준비가 되었습니다.
 
 >[!NOTE]
-AEM Sites 고객인 경우, 대화형 미디어 구성 요소를 페이지로 드래그하여 회전 배너를 페이지에 직접 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+Experience Manager 사이트 고객의 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 회전 배너를 페이지에 직접 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 그러나 독립형 Experience Manager Assets 고객인 경우 웹 사이트 랜딩 페이지에 회전 배너를 수동으로 추가할 수 있습니다.
 
 1. 게시된 회전 메뉴 세트의 포함 코드를 복사합니다.
-웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.[
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 
 1. Experience Manager 자산에서 복사한 포함 코드를 웹 페이지에 추가합니다.
 복사된 포함 코드는 응답형이므로 페이지의 포함 영역에 자동으로 포함됩니다.
 
-## 회전판 배너와 기존 빠른 보기 {#integrating-the-carousel-banner-with-an-existing-quickview} 통합
+## 캐러셀 배너를 기존 빠른 보기와 통합합니다 {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-참고:이 단계는 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
+참고:이 단계는 독립 실행형 Experience Manager Assets 고객인 경우에만 적용됩니다.
 
-이 프로세스의 마지막 단계는 캐러셀 배너를 웹 사이트의 기존 빠른 보기 구현과 통합하는 것입니다. 모든 Quick view 구현은 고유하며 일반적으로 프런트 엔드 IT 담당자의 지원을 필요로 하는 특정 접근 방식이 필요합니다.
+이 프로세스의 마지막 단계는 캐러셀 배너를 웹 사이트의 기존 Quickview 구현과 통합하는 것입니다. 모든 Quick view 구현은 고유하며 일반적으로 프런트 엔드 IT 담당자의 지원을 필요로 하는 특정 접근 방식이 필요합니다.
 
-기존 빠른 보기 구현은 일반적으로 다음 순서로 웹 페이지에서 발생하는 상호 관련 작업 체인을 나타냅니다.
+기존 Quickview 구현은 일반적으로 다음 순서로 웹 페이지에서 발생하는 관련 간 작업 체인을 나타냅니다.
 
 1. 사용자가 웹 사이트의 사용자 인터페이스에서 요소를 트리거합니다.
 1. 프런트 엔드 코드는 1단계에서 트리거된 사용자 인터페이스 요소를 기반으로 빠른 보기 URL을 가져옵니다.
@@ -435,7 +434,7 @@ AEM Sites 고객인 경우, 대화형 미디어 구성 요소를 페이지로 �
 
 이러한 호출은 임의의 단계에서 웹 페이지 로직에서 호출할 수 있는 독립 공용 API 호출을 나타내지 않습니다. 대신, 이전 단계의 마지막 단계(콜백)에서 모든 다음 단계가 숨겨지는 체인 호출입니다.
 
-동시에 회전판 배너가 1단계를 대체하고, 사용자가 핫스팟이나 이미지 맵을 클릭할 때 부분 2단계를 대체하며, 이러한 상호 작용은 뷰어에 의해 처리됩니다. 뷰어는 이전에 추가된 모든 핫스팟이나 이미지 맵 데이터를 포함하는 웹 페이지에 이벤트를 반환합니다.
+동시에 회전판 배너가 1단계와 2단계의 일부를 대체하면서 사용자가 핫스팟이나 이미지 맵을 선택하면 이러한 상호 작용은 뷰어에 의해 처리됩니다. 뷰어는 이전에 추가된 모든 핫스팟이나 이미지 맵 데이터를 포함하는 웹 페이지에 이벤트를 반환합니다.
 
 이러한 이벤트 처리기에서 프런트 엔드 코드는 다음을 수행합니다.
 
@@ -443,7 +442,7 @@ AEM Sites 고객인 경우, 대화형 미디어 구성 요소를 페이지로 �
 * 핫스팟이나 이미지 맵 데이터를 기반으로 빠른 보기 URL을 구성합니다.
 * 백 엔드에서 빠른 보기를 로드하고 표시하기 위해 화면에서 렌더링하는 프로세스를 트리거합니다.
 
-AEM Assets에서 반환한 포함 코드에는 이미 주석 처리된 사용 가능한 이벤트 처리기가 있습니다.
+Experience Manager 자산에서 반환한 포함 코드에는 이미 주석 처리된 사용 가능한 이벤트 처리기가 있습니다.
 
 따라서 코드의 주석을 해제하고 더미 처리기 본문을 특정 웹 페이지에 해당하는 코드로 대체하기만 하면 됩니다.
 
@@ -453,6 +452,6 @@ AEM Assets에서 반환한 포함 코드에는 이미 주석 처리된 사용 �
 
 빠른 보기 URL을 트리거하고 빠른 보기 패널을 활성화하는 마지막 단계는 IT 부서의 프런트엔드 IT 담당자의 지원이 필요할 수 있습니다. 이들은 사용하기 쉬운 빠른 보기 URL을 사용하여 적절한 단계에서 빠른 보기 구현을 정확하게 트리거하는 방법을 잘 알고 있습니다.
 
-## 빠른 보기를 사용하여 사용자 지정 팝업 Windows® {#using-quickviews-to-create-custom-pop-ups} 만들기
+## Quickview를 사용하여 사용자 지정 팝업 Windows® 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
-[빠른 보기를 사용하여 사용자 지정 팝업 Windows®](/help/assets/dynamic-media/custom-pop-ups.md)을 참조하십시오.
+[Quickview](/help/assets/dynamic-media/custom-pop-ups.md)를 사용하여 사용자 지정 팝업 Windows® 만들기를 참조하십시오.
