@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
+source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1545'
 ht-degree: 3%
 
 ---
@@ -140,15 +140,16 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* AEM 받은 편지함에서 사용자 지정 열을 필터링하는 기능이 추가되었습니다.
-* 적응형 양식 편집기의 테마 편집기와 스타일 레이어를 사용하여 Captcha 구성 요소의 스타일을 지정하는 기능이 추가되었습니다.
-* 소스 PDF forms에서 논리 섹션을 자동으로 감지하여 해당 적응형 양식 패널로 변환하는 속도와 정확도를 개선했습니다.
-* PDF 또는 XDP 파일을 한 폴더에서 다른 폴더로 이동하는 이동 작업을 추가했습니다.
+* Forms 관리자는 AEM 받은 편지함에서 사용자 지정 열을 필터링할 수 있습니다.
+* Forms 개발자는 적응형 양식 편집기의 테마 편집기와 스타일 레이어를 사용하여 captcha 구성 요소의 스타일을 지정할 수 있습니다.
+* 소스 양식에서 논리 섹션을 자동으로 감지하여 해당 적응형 양식 패널로 변환하는 정확도를 개선했습니다.
+* PDF 또는 XDP 파일을 한 폴더에서 다른 폴더로 이동하는 데 도움이 되는 이동 작업이 추가되었습니다.
+* 로드 시간이 단축되고 적응형 양식 편집기 및 테마 편집기의 성능이 향상되었습니다.
 
 ### [!DNL Forms] 베타 기능 {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**:Communication API를 사용하면 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
-   * XML 데이터로 템플릿 파일을 채워서 최종 양식 문서를 생성합니다.
+   * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
    * XFA 양식 PDF 및 Adobe Acrobat 양식(AcroForm)에서 인쇄 PDF를 생성합니다.
 
@@ -159,7 +160,7 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 ### [!DNL Forms]에 수정된 버그 {#forms-bugs-fixed}
 
 * FDM(양식 데이터 모델)을 통해 백엔드 서비스에 데이터를 제출하기 전에 필드의 유효성을 검사하면 유효성 검사가 성공하지만 양식 데이터 모델 서비스가 사후 유효성 검사를 호출하지 못합니다.
-* Apple iOS 장치에서 표준 HTML 업로드 필드가 포함된 양식을 제출하면 파일 컨텐츠가 전송되지 않고 다른 쪽에서 0바이트 파일이 수신되는 경우가 있습니다. Apple iOS에서 알려진 문제입니다. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Apple iOS 장치에서 표준 HTML 업로드 필드가 포함된 양식을 제출하면 파일 컨텐츠가 전송되지 않고 다른 쪽에서 0바이트 파일이 수신되는 경우가 있습니다. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Adobe Experience Manager Screens]로서의 [!DNL Cloud Service]  {#screens}
 
