@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
+source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1524'
 ht-degree: 3%
 
 ---
@@ -152,8 +152,6 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
    * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
    * XFA 양식 PDF 및 Adobe Acrobat 양식(AcroForm)에서 인쇄 PDF를 생성합니다.
-
-* **Variable Data Externalizer**:조직에서 관리하는 외부 스토리지 시스템에 AEM Workflow 변수의 데이터를 저장할 수 있습니다.
 
 [!DNL formscsbeta@adobe.com]에 작성하여 베타 프로그램에 등록할 수 있습니다.
 
