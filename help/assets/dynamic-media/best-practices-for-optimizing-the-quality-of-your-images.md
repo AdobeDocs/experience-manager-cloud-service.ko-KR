@@ -1,13 +1,13 @@
 ---
 title: 이미지 품질 최적화 우수 사례
-description: Dynamic Media을 사용하여 이미지 자산의 품질을 최적화하는 우수 사례를 알아봅니다.
+description: Dynamic Media을 사용하여 이미지 자산의 품질을 최적화하는 데 도움이 되는 우수 사례를 알아봅니다.
 contentOwner: Rick Brough
 feature: 자산 관리
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager에는 이미지 조정 및 최적화 및 렌더링 결�
 
 이미지 형식에 대한 우수 사례로서, 가장 일반적인 설정 `&fmt=JPG`으로 시작하십시오.
 
-## 이미지 크기 {#best-practices-for-image-size}에 대한 우수 사례
+## 이미지 크기에 대한 우수 사례 {#best-practices-for-image-size}
 
 가장 일반적인 작업 중 하나가 동적으로 이미지 크기를 줄이는 것입니다. 이 작업에는 크기를 지정하고, 필요에 따라 이미지를 축소하는 데 사용할 다운샘플링 모드를 지정하는 작업이 포함됩니다.
 
@@ -38,7 +38,7 @@ Adobe Experience Manager에는 이미지 조정 및 최적화 및 렌더링 결�
 
 이미지 크기 조정에 대한 우수 사례로 `&wid=<value>&hei=<value>&resMode=sharp2` 또는 `&hei=<value>&resMode=sharp2` 를 사용하십시오
 
-## 이미지 선명하게 하기 {#best-practices-for-image-sharpening} 우수 사례
+## 이미지 선명하게 하기 위한 우수 사례 {#best-practices-for-image-sharpening}
 
 이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 가장 복잡한 측면이며 오류가 많은 경우입니다. 다음 유용한 리소스를 참조하여 Experience Manager에서 선명하게 하고 언샵 마스킹이 작동하는 방식에 대해 자세히 알아보십시오.
 
@@ -106,7 +106,7 @@ JPG 압축에 가장 좋은 방법은 `&qlt=85,0`을 사용하는 것입니다.
 
 JPG 이미지를 메모리가 제한된 장치에 전달하는 경우 `&jpegSize=` 을 설정하고 매개 변수 `&qlt=` 를 추가하는 것이 좋습니다.
 
-## 우수 사례 요약 {#best-practices-summary}
+## 모범 사례 요약 {#best-practices-summary}
 
 높은 이미지 품질과 작은 파일 크기를 얻으려면 다음 매개 변수의 조합으로 시작하십시오.
 
