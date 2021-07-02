@@ -5,14 +5,14 @@ contentOwner: AG
 feature: asset compute 마이크로서비스,워크플로우,릴리스 정보,자산 처리
 role: Architect,Administrator
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '828'
 ht-degree: 2%
 
 ---
 
-# 자산 마이크로서비스 {#asset-microservices-overview}를 사용한 자산 수집 및 처리 개요
+# 자산 마이크로서비스를 사용한 자산 수집 및 처리 개요 {#asset-microservices-overview}
 
 Adobe Experience Manager as a [!DNL Cloud Service] 에서는 Experience Manager 애플리케이션 및 기능을 활용하는 클라우드 기반의 방법을 제공합니다. 이 새로운 아키텍처의 주요 요소 중 하나는 자산 마이크로서비스 기반의 자산 수집 및 처리입니다. 자산 마이크로서비스 는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적인 처리를 제공합니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 클라우드 기반의 자산 마이크로서비스의 주요 이점은 다음과 같습니다.
 
@@ -25,9 +25,9 @@ Adobe Experience Manager as a [!DNL Cloud Service] 에서는 Experience Manager 
 * 기본 Adobe 파일 처리 서비스는 해당하는 경우 사용되며 고품질의 출력을 제공하고 [Adobe 전용 형식을 효율적으로 처리할 수 있습니다](file-format-support.md).
 * 사용자별 작업 및 통합을 추가하도록 사후 처리 워크플로우를 구성하는 기능.
 
-자산 마이크로서비스 는 일반적인 파일 유형에 대한 기본 기능을 기본적으로 제공하면서 타사 렌더링 도구 및 메서드(예: ImageMagick 및 FFmpeg 코드 변환)가 필요하지 않고 구성을 단순화하는 데 도움이 됩니다.
+자산 마이크로서비스 는 일반적인 파일 형식에 대한 기본 기능을 기본적으로 제공하면서 타사 렌더링 도구 및 메서드(예: [!DNL ImageMagick] 및 FFmpeg 코드 변환)가 필요하지 않고 구성을 단순화하는 데 도움이 됩니다.
 
-## 높은 수준 아키텍처 {#asset-microservices-architecture}
+## 높은 수준의 아키텍처 {#asset-microservices-architecture}
 
 높은 수준 아키텍처 다이어그램은 시스템 전체의 자산 수집 및 처리 및 흐름의 주요 요소를 나타냅니다.
 
@@ -40,21 +40,21 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 자산 마이크로서비스를 사용하여 수집 및 처리하는 주요 단계는 다음과 같습니다.
 
-* 웹 브라우저나 Adobe Asset Link와 같은 클라이언트는 Experience Manager에 업로드 요청을 보내고 바이너리 클라우드 스토리지에 직접 바이너리를 업로드하기 시작합니다.
-* 직접 이진 업로드가 완료되면 클라이언트가 Experience Manager을 알려줍니다.
-* Experience Manager이 자산 마이크로서비스에 처리 요청을 보냅니다. 요청 콘텐츠는 지정할 Experience Manager의 처리 프로필 구성 및 생성할 표현물에 따라 달라집니다.
+* 웹 브라우저나 Adobe Asset Link와 같은 클라이언트는 업로드 요청을 [!DNL Experience Manager]에 보내고 바이너리를 바이너리 클라우드 저장소로 직접 업로드를 시작합니다.
+* 직접 이진 업로드가 완료되면 클라이언트가 [!DNL Experience Manager]에 알립니다.
+* [!DNL Experience Manager] 자산 마이크로서비스에 처리 요청을 보냅니다. 요청 콘텐츠는 생성할 변환을 지정하는 [!DNL Experience Manager]의 처리 프로필 구성에 따라 달라집니다.
 * Assets 마이크로 서비스 백 엔드가 요청을 수신하고, 요청을 기반으로 하나 이상의 마이크로 서비스에 전달합니다. 각 마이크로 서비스는 이진 클라우드 스토어에서 직접 원본 바이너리에 액세스합니다.
 * 표현물과 같은 처리 결과는 이진 클라우드 저장소에 저장됩니다.
-* Experience Manager은 생성된 바이너리(표현물)에 대한 직접 포인터와 함께 처리가 완료되었다는 알림을 받습니다. 생성된 표현물은 업로드된 자산에 대한 Experience Manager에서 사용할 수 있습니다.
+* Experience Manager은 생성된 바이너리(표현물)에 대한 직접 포인터와 함께 처리가 완료되었다는 알림을 받습니다. 생성된 표현물은 업로드된 자산에 대해 [!DNL Experience Manager]에서 사용할 수 있습니다.
 
 자산 수집 및 처리의 기본 흐름입니다. 구성된 경우 Experience Manager이 사용자 지정 워크플로우 모델을 시작하여 자산의 사후 처리를 수행할 수도 있습니다. 예를 들어, 엔터프라이즈 시스템에서 가져오기 정보 및 자산 속성에 추가와 같이 사용자 환경에 맞는 사용자 지정 단계를 실행합니다.
 
 수집 및 처리 흐름은 Experience Manager을 위한 자산 마이크로서비스 아키텍처의 주요 개념입니다.
 
 * **직접 이진 액세스**:Experience Manager 환경에 대해 구성된 후 자산을 클라우드 이진 저장소로 전송(및 업로드)한 다음, 자산 마이크로서비스 [!DNL Experience Manager]를 제공하며, 최종 클라이언트는 액세스 권한을 가지고 작업을 수행할 수 있습니다. 이렇게 하면 네트워크 로드 및 저장된 바이너리 중복을 최소화할 수 있습니다
-* **외부 처리**:자산 처리는  [!DNL Experience Manager] 환경 외부에서 수행되며 핵심 디지털 자산 관리 기능을 제공하고 최종 사용자를 위한 시스템과 대화형 작업을 지원하기 위한 리소스(CPU, 메모리)를 저장합니다
+* **외부 처리**:자산 처리는  [!DNL Experience Manager] 환경 외부에서 수행되며 핵심 DAM(디지털 자산 관리) 기능을 제공하고 최종 사용자를 위한 시스템과 대화형 작업을 지원하기 위한 리소스(CPU, 메모리)를 저장합니다
 
-## 직접 이진 액세스 {#asset-upload-with-direct-binary-access} 를 사용하는 자산 업로드
+## 직접적인 바이너리 액세스를 사용하여 자산 업로드 {#asset-upload-with-direct-binary-access}
 
 제품 오퍼링의 일부인 Experience Manager 클라이언트는 기본적으로 모든 지원 업로드에서 직접 바이너리 액세스를 사용할 수 있습니다. 여기에는 웹 인터페이스를 사용한 업로드, Adobe 자산 링크 및 [!DNL Experience Manager] 데스크탑 앱이 포함됩니다.
 
