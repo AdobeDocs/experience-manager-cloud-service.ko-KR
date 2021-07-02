@@ -5,18 +5,18 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,자산 분배,구성
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9d219b8de11fd977dab4f75468836892cb13364a
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2409'
 ht-degree: 20%
 
 ---
 
-# Brand Portal {#configure-aem-assets-with-brand-portal}을(를) 사용하여 AEM Assets을 [!DNL Cloud Service]으로 구성
+# Brand Portal을 사용하여 AEM Assets을 [!DNL Cloud Service]으로 구성 {#configure-aem-assets-with-brand-portal}
 
 Adobe Experience Manager Assets Brand Portal을 구성하면 Adobe Experience Manager Assets에서 승인된 브랜드 자산을 [!DNL Cloud Service] 인스턴스로 Brand Portal에 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 
-## Cloud Manager {#activate-brand-portal}를 사용하여 Brand Portal 활성화
+## Cloud Manager를 사용하여 Brand Portal 활성화 {#activate-brand-portal}
 
 Cloud Manager 사용자는 AEM Assets에 대해 [!DNL Cloud Service] 인스턴스로 Brand Portal을 활성화합니다. 활성화 워크플로우는 백엔드에 필수 구성(인증 토큰, IMS 구성 및 Brand Portal 클라우드 서비스)을 만들고 Cloud Manager에서 Brand Portal 테넌트의 상태를 반영합니다. Brand Portal을 활성화하면 AEM Assets 사용자가 자산을 Brand Portal에 게시하여 Brand Portal 사용자에게 배포할 수 있습니다.
 
@@ -61,7 +61,7 @@ AEM Assets에 대한 환경을 [!DNL Cloud Service] 인스턴스로 만들거나
 >기존 Brand Portal 클라우드 구성 및 [!DNL Cloud Service] 인스턴스로 AEM Assets이 동일한 IMS 조직(org1)을 사용하는 경우 Cloud Manager에서 Brand Portal을 활성화하기만 하면 됩니다.
 
 **참고 항목**:
-* [AEM Assets에서 Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+* [AEM Assets에서 Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
 
 * [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
 
