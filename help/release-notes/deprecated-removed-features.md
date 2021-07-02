@@ -2,10 +2,10 @@
 title: 이제 사용되지 않는 기능과 제거된 기능
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 사용 중단되거나 제거된 기능에 관한 릴리스 노트입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 41%
+source-wordcount: '483'
+ht-degree: 38%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | ------------ | ------------------ | ----------- |
 | [!DNL Assets] | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로우입니다. | 이제 자산 수집은 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
 | [!DNL Assets] | 자산을 [!DNL Experience Manager]에 바로 업로드합니다.[더 이상 사용되지 않는 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 자세한 내용은 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
-| [!DNL Assets] | ImageMagick와 같은 명령줄 도구 호출을 포함하여 [ 워크플로우의 ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)특정 워크플로우 단계`DAM Asset Update`는 지원되지 않습니다. | [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로우에 대한 대체 기능을 제공합니다. 사용자 지정 처리에는 [사후 처리 워크플로우](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
+| [!DNL Assets] | [워크플로우의 특정 ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) 워크플로우 단계 `DAM Asset Update` 는  [!DNL ImageMagick]과 같은 명령줄 도구 호출을 포함하여 지원되지 않습니다. | [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로우에 대한 대체 기능을 제공합니다. 사용자 지정 처리에는 [사후 처리 워크플로우](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
 | [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
 
 ## 제거된 기능 {#removed-features}
