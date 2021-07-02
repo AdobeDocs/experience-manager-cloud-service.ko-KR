@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager 6.5와 비교하여 [!DNL Adobe Exp
 feature: 릴리스 정보
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2b6e67503b212f0da0064e1955a82ccf7beaddea
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '967'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 ## 자산 마이크로서비스 개발 및 테스트 {#asset-microservices}
 
-자산 마이크로서비스 는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적인 처리를 제공합니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 자산 마이크로서비스 는 일반적인 파일 유형에 대한 기본 기능을 제공하면서도 타사 렌더링 도구 및 메서드(ImageMagick 등)가 필요하지 않고 구성을 단순화하는 데 도움이 됩니다. 이제 이전 버전의 Experience Manager에서 사용할 수 있는 것보다 더 많은 형식을 기본적으로 제공하는 [광범위한 파일 형식](/help/assets/file-format-support.md)을 처리할 수 있습니다. 예를 들어, 이제 ImageMagick와 같은 타사 솔루션을 사용하여 PSD 및 PSB 형식의 축소판 추출을 수행할 수 있습니다. [!UICONTROL 처리 프로필] 구성에 ImageMagick의 복잡한 구성을 사용할 수 없습니다. 비디오의 고급 FFmpeg 코드 변환에 [!DNL Dynamic Media] 을 사용하고 MP4 비디오의 기본 코드 변환에 처리 프로필을 사용하십시오](/help/assets/manage-video-assets.md#transcode-video).[
+자산 마이크로서비스 는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적인 처리를 제공합니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 자산 마이크로서비스 는 일반적인 파일 유형에 대해 기본 제공 기능을 제공하면서도 타사 렌더링 도구 및 메서드(예: [!DNL ImageMagick])가 필요하지 않고 구성을 단순화하는 데 도움이 됩니다. 이제 이전 버전의 Experience Manager에서 사용할 수 있는 것보다 더 많은 형식을 기본적으로 제공하는 [광범위한 파일 형식](/help/assets/file-format-support.md)을 처리할 수 있습니다. 예를 들어 PSD 및 PSB 형식의 축소판 추출은 이전에 [!DNL ImageMagick] 과 같은 타사 솔루션을 필요로 했던 경우에 사용할 수 있습니다. [!UICONTROL 처리 프로필] 구성에 대해 [!DNL ImageMagick]의 복잡한 구성을 사용할 수 없습니다. 비디오의 고급 FFmpeg 코드 변환에 [!DNL Dynamic Media] 을 사용하고 MP4 비디오의 기본 코드 변환에 처리 프로필을 사용하십시오](/help/assets/manage-video-assets.md#transcode-video).[
 
 자산 마이크로서비스 는 Cloud Manager에서 관리되는 고객 프로그램 및 환경에서 자동으로 프로비저닝되고 [!DNL Experience Manager]에 연결되는 클라우드 기반의 서비스입니다. [!DNL Experience Manager] 을 확장하거나 사용자 지정하기 위해 개발자는 기존 컨텐츠 또는 자산에 클라우드 환경에서 생성된 렌디션을 사용하여 자산을 테스트 및 확인하고, 자산을 표시 및 다운로드하여 코드를 확인할 수 있습니다.
 
