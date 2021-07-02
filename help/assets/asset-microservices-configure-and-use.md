@@ -5,9 +5,9 @@ contentOwner: AG
 feature: asset compute 마이크로서비스,워크플로우,자산 처리
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '2582'
+source-wordcount: '2635'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 자산 마이크로서비스 는 클라우드 기반의 애플리케이션(작업자라고도 함)을 사용하여 자산을 확장 가능하고 탄력적으로 처리할 수 있도록 해줍니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 서비스를 관리합니다.
 
-자산 마이크로서비스 를 사용하면 이전 버전의 [!DNL Experience Manager]에서 사용할 수 있는 것보다 더 많은 형식의 [광범위한 파일 유형](/help/assets/file-format-support.md)을 처리할 수 있습니다. 예를 들어, 이제 ImageMagick와 같은 타사 솔루션을 사용하여 PSD 및 PSB 형식의 축소판 추출을 수행할 수 있습니다.
+자산 마이크로서비스 를 사용하면 이전 버전의 [!DNL Experience Manager]에서 사용할 수 있는 것보다 더 많은 형식의 [광범위한 파일 유형](/help/assets/file-format-support.md)을 처리할 수 있습니다. 예를 들어 이제 PSD 및 PSB 형식의 축소판 추출을 수행할 수 있지만 이전에 [!DNL ImageMagick] 과 같은 타사 솔루션이 필요했습니다.
 
 자산 처리는 **[!UICONTROL 처리 프로필]**&#x200B;의 구성에 따라 달라집니다. Experience Manager은 기본 설정 을 제공하며 관리자가 더 구체적인 자산 처리 구성을 추가할 수 있도록 해줍니다. 관리자는 선택적 사용자 지정 작업을 포함하여 사후 처리 워크플로우 구성을 생성, 유지 관리 및 수정합니다. 워크플로우를 사용자 지정하여 개발자는 기본 서비스를 확장할 수 있습니다.
 
@@ -33,7 +33,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## 자산 처리 옵션 이해 {#get-started}
 
-Experience Manager을 사용하면 다음 수준의 처리를 수행할 수 있습니다.
+[!DNL Experience Manager] 는 다음 수준의 처리를 허용합니다.
 
 | 옵션 | 설명 | 활용 사례 적용 |
 |---|---|---|
@@ -69,7 +69,7 @@ Experience Manager을 사용하면 다음 수준의 처리를 수행할 수 있�
 
 처리 프로필에는 FPO(For Placement Only) 표현물이 포함될 수 있습니다. 처리 프로필에 대해 켜야 하는지 확인하려면 [!DNL Adobe Asset Link] [설명서](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)를 참조하십시오. 자세한 내용은 [자산 링크 Adobe 완료 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 참조하십시오.
 
-### 표준 프로필 {#create-standard-profile} 만들기
+### 표준 프로필 만들기 {#create-standard-profile}
 
 표준 처리 프로필을 만들려면 다음 단계를 수행합니다.
 
@@ -120,7 +120,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 >
 >사용자 지정 응용 프로그램을 사용하여 표준 메타데이터를 편집할 수 없습니다. 사용자 지정 메타데이터만 수정할 수 있습니다.
 
-### 사용자 지정 프로필 {#create-custom-profile} 만들기
+### 사용자 지정 프로필 만들기 {#create-custom-profile}
 
 사용자 지정 프로필을 만들려면 다음 단계를 수행하십시오.
 
@@ -141,7 +141,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 >
 >Firefly 앱 및 [!DNL Experience Manager] 계정이 동일한 조직의 계정이 아닌 경우 통합이 작동하지 않습니다.
 
-### 사용자 지정 프로필 {#custom-profile-example} 의 예
+### 사용자 지정 프로필의 예 {#custom-profile-example}
 
 사용자 지정 프로필의 사용을 설명하기 위해 캠페인 이미지에 사용자 지정 텍스트를 적용하는 사용 사례를 생각해 보겠습니다. Photoshop API를 활용하는 처리 프로필을 만들어 이미지를 편집할 수 있습니다.
 
@@ -153,7 +153,7 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 *그림:서비스  [!UICONTROL 매개 ] 변수필드를 사용하여 추가된 정보를 사용자 지정 애플리케이션에 미리 정의된 매개 변수에 전달합니다. 이 예에서 캠페인 이미지가 업로드되면 이미지는 `Arial-BoldMT` 글꼴의 `Jumanji` 텍스트로 업데이트됩니다.*
 
-## 처리 프로필을 사용하여 자산 {#use-profiles} 처리
+## 처리 프로필을 사용하여 자산 처리 {#use-profiles}
 
 이러한 폴더에 업로드되거나 업데이트된 자산에 대해 처리할 Experience Manager을 위해 추가 사용자 지정 처리 프로필을 만들어 특정 폴더에 적용합니다. 기본 제공 표준 처리 프로필은 항상 실행되지만 사용자 인터페이스에 표시되지 않습니다. 사용자 지정 프로필을 추가하면 두 프로필을 사용하여 업로드한 자산을 처리합니다.
 
@@ -206,17 +206,26 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 ### 사후 처리 워크플로우 실행 구성 {#configure-post-processing-workflow-execution}
 
-자산 마이크로서비스 처리가 완료된 후 시스템에서 업로드되거나 업데이트된 자산에 대해 처리 후 워크플로우 모델을 실행하도록 구성하려면 사용자 지정 워크플로우 러너 서비스를 구성해야 합니다.
+자산 마이크로서비스가 업로드된 자산 처리를 완료한 후 사후 처리를 정의하여 일부 자산을 추가로 처리할 수 있습니다. 워크플로우 모델을 사용하여 사후 처리를 구성하려면 다음 중 하나를 수행할 수 있습니다.
+
+* 사용자 지정 워크플로우 러너 서비스를 구성합니다.
+* 폴더 [!UICONTROL 속성]에 워크플로우 모델을 적용합니다.
 
 Adobe CQ DAM 사용자 지정 워크플로우 러너(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)는 OSGi 서비스이며 구성에 대한 두 가지 옵션을 제공합니다.
 
-* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`):다양한 저장소 경로에 따라 여러 워크플로우 모델을 나열할 수 있습니다. 경로와 모델은 콜론으로 구분해야 합니다. 단순 저장소 경로가 지원되며 `/var` 경로의 워크플로우 모델에 매핑되어야 합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`):다양한 저장소 경로에 따라 여러 워크플로우 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. 이러한 매개 변수를 `/var` 경로의 워크플로우 모델에 매핑합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * 표현식에 의한 사후 처리 워크플로우(`postProcWorkflowsByExpression`):다른 정규 표현식을 기반으로 하여 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
 >사용자 지정 워크플로우 러너의 구성은 OSGi 서비스의 구성입니다. OSGi 구성 배포 방법에 대한 자세한 내용은 [Experience Manager에 배포](/help/implementing/deploying/overview.md)를 참조하십시오.
 >[!DNL Experience Manager] 의 온-프레미스 및 관리 서비스 배포와 달리, OSGi 웹 콘솔은 클라우드 서비스 배포에서 직접 사용할 수 없습니다.
+
+폴더 [!UICONTROL 속성]에 워크플로우 모델을 적용하려면 다음 단계를 수행합니다.
+
+1. 워크플로우 모델을 만듭니다.
+1. 폴더를 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭한 다음 **[!UICONTROL 자산 처리]** 탭을 클릭합니다.
+1. **[!UICONTROL 자동 시작 워크플로우]**&#x200B;에서 필요한 워크플로우를 선택하고 워크플로우의 제목을 제공한 다음 변경 사항을 저장합니다.
 
 사후 처리 워크플로우에서 사용할 수 있는 표준 워크플로우 단계에 대한 자세한 내용은 개발자 참조 설명서의 사후 처리 워크플로우](developer-reference-material-apis.md#post-processing-workflows-steps)워크플로우 단계 를 참조하십시오.[
 
