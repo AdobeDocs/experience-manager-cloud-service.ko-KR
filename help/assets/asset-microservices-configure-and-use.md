@@ -3,9 +3,9 @@ title: 자산 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 자산 마이크로서비스 를 구성하고 사용하여 자산을 규모에 맞게 처리합니다.
 contentOwner: AG
 feature: asset compute 마이크로서비스,워크플로우,자산 처리
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 7256300afd83434839c21a32682919f80097f376
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 1%
