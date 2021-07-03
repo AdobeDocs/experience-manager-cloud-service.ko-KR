@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 자산 관리,태깅,자산 배포
 role: Business Practitioner
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 3%
@@ -40,7 +40,7 @@ AEM Assets은 컨텐츠를 구성하는 다양한 방법을 지원합니다. 폴
 1. 폴더 및 해당 자산을 폐쇄된 사용자 그룹에만 사용할 수 있도록 하려면 **활성화됨** 확인란을 선택하십시오.
 1. 로그인 페이지가 있는 경우 해당 정보를 추가할 페이지로 이동합니다. **항목 추가**&#x200B;를 클릭하여 허용되는 그룹을 추가합니다. 필요한 경우 영역을 추가합니다. **확인**&#x200B;을 클릭하여 변경 사항을 저장합니다.
 
-## 태그를 사용하여 자산 {#use-tags-to-organize-assets} 구성
+## 태그를 사용하여 자산 구성 {#use-tags-to-organize-assets}
 
 폴더, 태그 또는 둘 다 사용하여 자산을 구성할 수 있습니다. 자산에 태그를 추가하면 검색 중에 쉽게 검색할 수 있습니다. 자산에 태그를 추가하려면 다음 단계를 수행합니다.
 
