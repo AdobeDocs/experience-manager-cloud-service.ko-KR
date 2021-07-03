@@ -2,10 +2,10 @@
 title: 프로젝트 워크플로우 작업
 description: 다양한 프로젝트 워크플로우를 즉시 사용할 수 있습니다.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 71%
+source-wordcount: '542'
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 71%
 |  | **간단한 프로젝트** | **미디어 프로젝트** | **번역 프로젝트** |
 |---|:-:|:-:|:-:|
 | 복사 요청 |  | x |  |
-| 제품 사진 촬영 |  | x |  |
 | 프로젝트 승인 | x |  |  |
 | 실행 요청 | x |  |  |
 | 랜딩 페이지 요청 | x |  |  |
@@ -85,6 +84,6 @@ AEM에서 워크플로우 작업에 대한 자세한 내용은 다음을 참조�
 
 1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. 워크플로우가 **워크플로우** 목록에 나타납니다(줄임표 **... 클릭).**&#x200B;워크플로우&#x200B;**타일에서 이 목록에 액세스하려면**.
 
-## 자산에 대한 언어 복사 워크플로우 생성(및 번역){#create-and-translate-language-copy-workflow-for-assets}
+## 자산에 대한 언어 복사 워크플로우 생성(및 번역) {#create-and-translate-language-copy-workflow-for-assets}
 
 **언어 사본 작성** 및 **언어 사본 작성 및 번역 워크플로우는 자산에 대한 언어 사본 만들기에서 자세히 다룹니다.**
