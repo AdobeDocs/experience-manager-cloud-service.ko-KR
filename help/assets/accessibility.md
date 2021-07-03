@@ -3,9 +3,9 @@ title: ' [!DNL Experience Manager Assets]의 액세스 가능성'
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 의 접근성 기능이 장애가 있는 사용자에게 어떤 도움이 되는지 알아보십시오.'
 contentOwner: AG
 feature: 접근성,자산 관리
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# [!DNL Adobe Experience Manager Assets]에 [!DNL Cloud Service] {#accessibility-in-aem-assets}의 액세스 가능성 기능
+# [!DNL Adobe Experience Manager Assets]에 [!DNL Cloud Service] 의 액세스 가능성 기능 {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager] 콘텐츠 작성자 및 게시자가 웹에서 놀라운 경험을 제공할 수 있도록 해줍니다. Adobe은 [!DNL Experience Manager]의 액세스 가능성을 개선하여 장애가 있는 작성자를 포함하도록 노력하고 있습니다. 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각, 청각, 이동성 또는 기타 장애가 있는 개인을 포함하는 전 세계 표준을 준수합니다.
 
@@ -56,7 +56,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 * 스위치 컨트롤, 새로 고칠 수 있는 점자 디스플레이 및 기타 컴퓨터 입력 장치를 포함한 보조 하드웨어
 * UI 확대 도구.
 
-## [!DNL Experience Manager Assets] 액세스 가능한 사용 사례  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets] 액세스 가능한 사용 사례 {#accessible-assets-use-cases}
 
 [!DNL Experience Manager]에서 액세스 가능성 기능은 [!DNL Experience Manager] 사용자 및 해당 고객의 두 가지 주요 요구 사항을 해결합니다.
 
@@ -77,7 +77,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
-### [!DNL Assets] {#keyboard-shortcuts}의 키보드 단축키
+### [!DNL Assets]의 키보드 단축키 {#keyboard-shortcuts}
 
 [!DNL Assets]의 다음 작업은 나열된 키보드 단축키로 작동합니다. [!DNL Experience Manager] 콘솔에 적용되는 대부분의 키보드 단축키는 [!DNL Assets]에도 적용됩니다. 콘솔용 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 참조하십시오. [키보드 단축키를 활성화 또는 비활성화하는 방법을 참조하십시오](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
