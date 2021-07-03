@@ -3,20 +3,20 @@ title: ' [!DNL Assets]에 대한 개발자 참조'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 feature: API,자산 HTTP API
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 9d0fbffa0f66deb230a85fa8d09f9f3be45db3f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] 개발자 사용 사례, API 및 참조 자료  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] 개발자 사용 사례, API 및 참조 자료 {#assets-cloud-service-apis}
 
 이 문서에는 [!DNL Assets] as a [!DNL Cloud Service] 개발자를 위한 권장 사항, 참조 자료 및 리소스가 포함되어 있습니다. 여기에는 새 자산 업로드 모듈, API 참조 및 사후 처리 워크플로우에서 제공하는 지원에 대한 정보가 포함됩니다.
 
-## [!DNL Experience Manager Assets] API 및 작업  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] API 및 작업 {#use-cases-and-apis}
 
 [!DNL Assets] as a [!DNL Cloud Service] 는 프로그래밍 방식으로 디지털 자산과 상호 작용하는 여러 API를 제공합니다. 각 API는 아래 표에 설명된 대로 특정 사용 사례를 지원합니다. [!DNL Assets] 사용자 인터페이스, [!DNL Experience Manager] 데스크탑 앱 및 [!DNL Adobe Asset Link]는 모든 작업 또는 일부를 지원합니다.
 
@@ -123,7 +123,7 @@ ht-degree: 2%
 * `minPartSize` (숫자):둘 이상의 URI가 있는  `uploadURIs`경우 모든 URI에 제공할 수 있는 데이터의 최소 길이(바이트)입니다.
 * `maxPartSize` (숫자):둘 이상의 URI가 있는  `uploadURIs`경우 모든 URI에 제공할 수 있는 데이터의 최대 길이(바이트)입니다.
 
-### 이진 {#upload-binary} 업로드
+### 이진 업로드 {#upload-binary}
 
 업로드 시작 출력에는 하나 이상의 업로드 URI 값이 포함됩니다. 두 개 이상의 URI가 제공되면 클라이언트는 바이너리를 부품으로 분할하고 각 부품의 POST 요청을 순서대로 각 URI에 요청합니다. 모든 URI를 사용합니다. 각 부품의 크기가 시작 응답에 지정된 최소 및 최대 크기 내에 있는지 확인합니다. CDN 에지 노드는 요청된 바이너리 업로드 속도를 높이는 데 도움이 됩니다.
 
@@ -165,7 +165,7 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 * [오픈 소스 aem-upload 라이브러리](https://github.com/adobe/aem-upload).
 * [오픈 소스 명령줄 도구](https://github.com/adobe/aio-cli-plugin-aem).
 
-### 자산 업로드 API 삭제 {#deprecated-asset-upload-api}
+### 이제 사용되지 않는 자산 업로드 API {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
