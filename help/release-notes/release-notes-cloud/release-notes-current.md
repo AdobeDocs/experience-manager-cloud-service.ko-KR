@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1586'
 ht-degree: 3%
 
 ---
@@ -105,7 +105,9 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 
    ![보기 설정에서 기본 보기 설정](/help/assets/assets/view-settings-for-defaults.png)
 
-* Linkshare 다운로드 기능은 다운로드 속도를 높이는 비동기 다운로드를 사용합니다.
+* Linkshare 다운로드 기능은 다운로드 속도를 높이는 비동기 다운로드를 사용합니다. [링크 공유를 사용하여 공유된 자산 다운로드](/help/assets/download-assets-from-aem.md#link-share-download)를 참조하십시오.
+
+   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
 
 * 사용자는 속성 설명을 기반으로 폴더를 검색하고 필터링할 수 있습니다.
 
