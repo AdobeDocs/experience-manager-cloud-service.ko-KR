@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 자산 관리,DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 1. 다양한 검색 패싯에서 상태 조합을 기반으로 자산을 검색할 수도 있습니다. 예를 들어, 검색 패싯에서 적절한 옵션을 선택하여 검토 작업에서 승인되었으나 아직 만료되지 않은 게시된 자산을 검색할 수 있습니다.
 
-## [!DNL Assets] {#digital-rights-management-in-assets-1}의 Digital Rights Management
+## [!DNL Assets]의 Digital Rights Management {#digital-rights-management-in-assets-1}
 
 이 기능은 [!DNL Adobe Experience Manager Assets]에서 라이선스가 부여된 자산을 다운로드하기 전에 사용권 계약에 동의함을 적용합니다.
 
@@ -124,7 +124,7 @@ ht-degree: 0%
 >
 >라이센스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 지원하는 경우, Adobe은 `/apps/settings/dam/drm/licenses` 또는 `/conf/*/settings/dam/drm/licenses` 아래에 저장하는 것을 권장합니다.
 
-### DRM으로 보호된 자산 {#downloading-drm-assets} 다운로드
+### DRM 보호 자산 다운로드 {#downloading-drm-assets}
 
 1. 카드 보기에서 다운로드할 자산을 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 저작권 관리]** 페이지의 목록에서 다운로드할 자산을 선택합니다.
