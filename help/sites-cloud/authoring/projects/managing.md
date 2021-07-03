@@ -2,9 +2,9 @@
 title: 프로젝트 관리
 description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 리소스를 그룹화하여 프로젝트를 구성할 수 있습니다
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '915'
 ht-degree: 80%
 
 ---
@@ -25,8 +25,11 @@ ht-degree: 80%
 
 * 간단한 프로젝트
 * 미디어 프로젝트
-* 제품 사진 촬영 프로젝트
 * 번역 프로젝트
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 프로젝트 작성 절차는 프로젝트 간에 동일합니다. 프로젝트 유형 간의 차이에는 사용 가능한 [사용자 역할](/help/sites-cloud/authoring/projects/overview.md)과 [워크플로우](/help/sites-cloud/authoring/projects/workflows.md)가 포함됩니다.  새 프로젝트를 작성하려면 다음을 수행하십시오.
 
