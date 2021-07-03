@@ -2,16 +2,16 @@
 title: 디지털 자산을 [!DNL Adobe Experience Manager]에 추가합니다.
 description: 디지털 자산을 [!DNL Adobe Experience Manager] 에 [!DNL Cloud Service]로 추가합니다.
 feature: 자산 관리,업로드
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager]에 [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager} 디지털 자산을 추가합니다.
+# [!DNL Adobe Experience Manager]에 [!DNL Cloud Service] [!DNL Assets] 디지털 자산을 추가합니다. {#add-assets-to-experience-manager}
 
 [!DNL Adobe Experience Manager Assets] 에서는 많은 소스에서 다양한 유형의 디지털 자산을 허용합니다. 바이너리를 저장하고 생성된 표현물을 저장하고, 다양한 작업 과정과 [!DNL Adobe Sensei] 서비스를 사용하여 자산 처리를 수행할 수 있으므로 여러 면에 있는 많은 채널을 통해 배포할 수 있습니다.
 
@@ -99,7 +99,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### 자산이 이미 있으면 업로드 처리 {#handling-upload-existing-file}
+### 자산이 이미 있을 때 업로드 처리 {#handling-upload-existing-file}
 
 기존 자산과 경로(이름과 위치)가 동일한 자산을 업로드할 수 있습니다. 그러나 다음 옵션과 함께 경고 대화 상자가 표시됩니다.
 
@@ -132,7 +132,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html):로컬 파일 시스템에서 자산을 업로드하는 크리에이티브 전문가 및 마케터에게 유용합니다. 로컬에서 사용할 수 있는 중첩된 폴더를 업로드하려면 이 방법을 사용합니다.
 * [대량 수집 도구](#asset-bulk-ingestor):자산을 배포할 때 가끔 또는 처음에 대량의 자산을 섭취할 때 사용합니다 [!DNL Experience Manager].
 
-### 자산 일괄 수집 또는 도구 {#asset-bulk-ingestor}
+### 자산 벌크 수집 도구 {#asset-bulk-ingestor}
 
 이 도구는 Azure 또는 S3 데이터 저장소에서 자산을 대량으로 수집하기 위해 관리자 그룹에만 제공됩니다. 구성 및 통합에 대한 비디오 개요를 참조하십시오.
 
@@ -185,7 +185,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션 [!DNL Experience Manager] 에서 자산에 대한 액세스 권한을 제공합니다. 이러한 데스크탑 애플리케이션 내에서 자산 링크 Adobe 사용자 인터페이스에서 현재 열려 있는 문서를 직접 [!DNL Experience Manager]에 업로드할 수 있습니다.
 * [[!DNL Experience Manager] 데스크탑 ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 앱에서는 파일을 처리하는 기본 애플리케이션이나 파일 유형에 관계없이 데스크탑에서 자산으로 작업하는 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록만 업로드할 수 있으므로 로컬 파일 시스템에서 중첩 폴더 계층 구조에 있는 파일을 업로드하는 데 특히 유용합니다.
 
-## 업로드 시 자산 처리 {#process-when-uploaded}
+## 업로드할 때 자산 처리 {#process-when-uploaded}
 
 업로드된 자산에 대해 추가 처리를 수행하기 위해 업로드 폴더에 처리 프로필을 적용할 수 있습니다. 프로필은 [!DNL Assets]에 있는 폴더의 **[!UICONTROL 속성]** 페이지에서 사용할 수 있습니다. 확장이 없거나 잘못된 확장이 있는 디지털 자산은 원하는 대로 처리되지 않습니다. 예를 들어 이러한 자산을 업로드할 때 아무 일도 발생하지 않거나 잘못된 처리 프로필이 자산에 적용될 수 있습니다. 사용자는 여전히 DAM에 이진 파일을 저장할 수 있습니다.
 
@@ -207,11 +207,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 처리 프로필이 할당된 폴더의 경우 카드 보기의 축소판에 프로필 이름이 나타납니다. 목록 보기에서 프로필 이름이 **[!UICONTROL 처리 프로필]** 열에 나타납니다.
 
-## API {#upload-using-apis}를 사용하여 자산 업로드 또는 수집
+## API를 사용하여 자산 업로드 또는 수집 {#upload-using-apis}
 
 업로드 API 및 프로토콜에 대한 기술 세부 사항, 오픈 소스 SDK 및 샘플 클라이언트에 대한 링크는 개발자 참조의 [자산 업로드](developer-reference-material-apis.md#asset-upload) 섹션에 제공됩니다.
 
-## 팁, 우수 사례 및 제한 사항 {#tips-limitations}
+## 팁, 모범 사례 및 제한 사항 {#tips-limitations}
 
 * 직접 이진 업로드는 자산을 업로드하는 새로운 방법입니다. 이 기능은 기본적으로 [!DNL Experience Manager] 사용자 인터페이스, [!DNL Adobe Asset Link] 및 [!DNL Experience Manager] 데스크탑 앱과 같은 제품 기능과 클라이언트가 지원합니다. 고객 기술 팀이 사용자 지정하거나 확장하는 모든 사용자 지정 코드는 새 업로드 API 및 프로토콜을 사용해야 합니다.
 
