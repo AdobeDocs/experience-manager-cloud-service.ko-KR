@@ -3,9 +3,9 @@ title: 자산 메타데이터 일괄적으로 가져오거나 내보냅니다
 description: 이 문서에서는 메타데이터를 일괄적으로 가져오고 내보내는 방법을 설명합니다.
 contentOwner: AG
 feature: 메타데이터
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 4%
@@ -39,7 +39,7 @@ AEM Assets을 사용하면 CSV 파일을 사용하여 자산 메타데이터를 
 
 1. 도구 모음에서 **[!UICONTROL 가져오기]**&#x200B;를 클릭합니다. 메타데이터를 가져오면 알림 받은 편지함으로 알림이 전송됩니다. 자산 속성 페이지로 이동하고 메타데이터 값을 자산에 대해 올바르게 가져오는지 확인합니다.
 
-메타데이터를 가져올 때 날짜 및 타임스탬프를 추가하려면 날짜 및 시간에 `YYYY-MM-DDThh:mm:ss.fff-00:00` 형식을 사용하십시오. 날짜와 시간은 `T`으로 구분되고, `hh`은 24시간 형식의 시간, `fff`는 나노초이고 `-00:00`은 시간대 오프셋입니다. 예를 들어 `2020-03-26T11:26:00.000-07:00`은 2020년 3월 26일, 11:26:00.000AM PST 시간입니다.
+메타데이터를 가져올 때 날짜 및 타임스탬프를 추가하려면 날짜 및 시간에 `YYYY-MM-DDThh:mm:ss.fff-00:00` 형식을 사용하십시오. 날짜와 시간은 `T`으로 구분되고, `hh`은 24시간 형식의 시간, `fff`는 나노초이고 `-00:00`은 시간대 오프셋입니다. 예를 들어, `2020-03-26T11:26:00.000-07:00`은 2020년 3월 26일, 11:26:00.000AM PST 시간입니다.
 
 >[!CAUTION]
 >
