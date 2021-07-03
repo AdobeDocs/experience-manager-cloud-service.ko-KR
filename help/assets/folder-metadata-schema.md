@@ -3,9 +3,9 @@ title: 폴더 메타데이터 스키마
 description: ' [!DNL Experience Manager Assets]에서 자산 폴더에 대한 메타데이터 스키마를 만드는 방법을 알아봅니다'
 contentOwner: AG
 feature: 메타데이터
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 [!DNL Adobe Experience Manager Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 
 
-## {#add-a-folder-metadata-schema-form} 폴더 메타데이터 스키마 추가
+## 폴더 메타데이터 스키마 양식 추가 {#add-a-folder-metadata-schema-form}
 
 폴더 메타데이터 스키마 Forms 편집기를 사용하여 폴더에 대한 메타데이터 스키마를 만들고 편집합니다.
 
@@ -131,13 +131,13 @@ ht-degree: 4%
 
 ![delete_form](assets/delete_form.png)
 
-## 폴더 메타데이터 스키마 {#assign-a-folder-metadata-schema} 할당
+## 폴더 메타데이터 스키마 할당 {#assign-a-folder-metadata-schema}
 
 폴더 메타데이터 스키마 Forms 페이지나 폴더를 만들 때 폴더에 폴더 메타데이터 스키마를 할당할 수 있습니다.
 
 폴더에 대한 메타데이터 스키마를 구성하는 경우 스키마 양식의 경로는 아래의 폴더 노드의 `folderMetadataSchema` 속성에 저장됩니다.*/jcr:content*.
 
-### 폴더 메타데이터 스키마 페이지 {#assign-to-a-schema-from-the-folder-metadata-schema-page}에서 스키마에 할당
+### 폴더 메타데이터 스키마 페이지에서 스키마에 할당 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** **[!UICONTROL 폴더 메타데이터 스키마]**&#x200B;로 이동합니다.
 1. 폴더 메타데이터 스키마 Forms 페이지에서 폴더에 적용할 스키마 양식을 선택합니다.
@@ -152,7 +152,7 @@ ht-degree: 4%
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-### {#assign-a-schema-when-creating-a-folder} 폴더를 만들 때 스키마 할당
+### 폴더를 만들 때 스키마 할당 {#assign-a-schema-when-creating-a-folder}
 
 폴더를 만들 때 폴더 메타데이터 스키마를 할당할 수 있습니다. 시스템에 폴더 메타데이터 스키마가 하나 이상 있으면 **[!UICONTROL 폴더 만들기]** 대화 상자에 추가 목록이 표시됩니다. 원하는 스키마를 선택할 수 있습니다. 기본적으로 선택된 스키마가 없습니다.
 
@@ -165,7 +165,7 @@ ht-degree: 4%
 1. 메타데이터 스키마를 적용한 폴더의 메타데이터 속성을 엽니다.
 1. 폴더 메타데이터 필드를 보려면 **[!UICONTROL 폴더 메타데이터]** 탭을 탭/클릭합니다.
 
-## 폴더 메타데이터 스키마 {#use-the-folder-metadata-schema} 사용
+## 폴더 메타데이터 스키마 사용 {#use-the-folder-metadata-schema}
 
 폴더 메타데이터 스키마로 구성된 폴더의 속성을 엽니다. 폴더 속성 페이지에 **[!UICONTROL 폴더 메타데이터]** 탭이 표시됩니다. 폴더 메타데이터 스키마 양식을 보려면 이 탭을 선택합니다.
 
