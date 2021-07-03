@@ -3,9 +3,9 @@ title: 기본 디지털 자산 관리에 Media Library 사용
 description: '[!DNL Experience Manager Assets] 및 Media Library for asset management를 참조하십시오.'
 contentOwner: AG
 feature: 자산 관리,게시
-role: Business Practitioner,Architect,Leader
+role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -35,13 +35,13 @@ Media Library은 [!DNL Adobe Experience Manager Sites] 라이선스와 함께 �
 
 Media Library은 Sites의 일부로 설치됩니다. 사이트 라이선스 및 설치 외에 추가 라이선스 또는 패키지가 필요하지 않습니다.
 
-## [!DNL Assets] Media Library  {#assets-and-media-library}
+## [!DNL Assets] Media Library {#assets-and-media-library}
 
 Experience Manager 자산은 엔터프라이즈급 DAM 기능을 제공합니다. 자산 기능은 하나의 패키지에서 [!DNL Experience Manager]과 함께 제공됩니다. 그러나 자산 라이센스를 구매하지 않은 사용자는 고급 DAM 기능을 사용할 수 없습니다. Assets 라이센스가 없는 경우 [Media Library 기능](#use-media-library)만 사용할 수 있습니다.
 
 라이센스를 부여하지 않은 [!DNL Assets] 기능을 의도하지 않은 상태로 사용하지 않으려면 [!DNL Experience Manager]에서 [!DNL Assets] 특정 워크플로우, 구성 요소, 분류, 옵션 및 [!DNL Assets] 관리자를 모두 제거하십시오. 이렇게 하면 사용자가 라이센스를 제공하지 않은 [!DNL Assets] 기능을 실수로 사용하지 않게 됩니다.
 
-## Media Library {#use-media-library} 사용
+## Media Library 사용 {#use-media-library}
 
 Media Library은 다음과 같은 사용 사례를 광범위하게 다룹니다.
 
