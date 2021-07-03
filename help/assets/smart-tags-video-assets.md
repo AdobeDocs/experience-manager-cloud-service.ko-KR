@@ -2,16 +2,16 @@
 title: 스마트 태그가 비디오 자산에 지정됩니다
 description: Experience Manager은 [!DNL Adobe Sensei]을 사용하여 비디오에 컨텍스트 및 설명적 스마트 태그를 자동으로 추가합니다.
 feature: 스마트 태그,태깅
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
 
 ---
 
-# 스마트 태그가 비디오 자산 {#video-smart-tags}
+# 스마트 태그가 비디오 자산에 지정됩니다 {#video-smart-tags}
 
 새로운 컨텐츠의 필요성이 확대되면 매력적인 디지털 경험을 신속하게 제공하기 위해 수작업 단축이 필요합니다. [!DNL Adobe Experience Manager] as  [!DNL Cloud Service] 는 인공 지능을 사용하여 비디오 자산의 자동 태깅을 지원합니다. 비디오에 수동으로 태깅하는 데에는 시간이 많이 걸릴 수 있습니다. 그러나 제공 비디오 스마트 태그 지정 기능 [!DNL Adobe Sensei] 에서는 인공 지능 모델을 사용하여 비디오 컨텐츠를 분석하고 비디오 자산에 태그를 추가합니다. 따라서 DAM 사용자가 고객에게 풍부한 경험을 전달하는 시간을 줄일 수 있습니다. Adobe의 기계 학습 서비스는 비디오용 태그 세트를 두 개 생성합니다. 반면, 한 세트는 해당 비디오의 개체, 장면 및 속성에 해당합니다.다른 세트는 음주, 달리기, 조깅과 같은 행동에 관한 것이다.
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 >
 >자동으로 생성된 이러한 태그를 검토하여 브랜드와 해당 값을 준수하도록 해야 합니다.
 
-## DAM {#smart-tag-existing-videos}에서 기존 비디오에 스마트 태그 지정
+## DAM에서 기존 비디오에 스마트 태그 지정 {#smart-tag-existing-videos}
 
 DAM에 이미 있는 기존 비디오 자산은 자동으로 태그가 지정되지 않습니다. 자산에 대한 스마트 태그를 생성하려면 [!UICONTROL 자산]을 수동으로 재처리해야 합니다.
 
@@ -51,7 +51,7 @@ DAM에 이미 있는 기존 비디오 자산은 자동으로 태그가 지정되
 
 프로세스가 완료되면 폴더 내의 비디오 자산의 [!UICONTROL 속성] 페이지로 이동합니다. 자동으로 추가된 태그는 [!UICONTROL 기본] 탭의 [!UICONTROL 스마트 태그] 섹션에 표시됩니다. 적용된 이러한 스마트 태그는 [신뢰도 점수](#confidence-score-video-tag)의 내림차순으로 정렬됩니다.
 
-## 태그가 지정된 비디오 {#search-smart-tagged-videos} 검색
+## 태그가 지정된 비디오 검색 {#search-smart-tagged-videos}
 
 자동 생성된 스마트 태그를 기반으로 비디오 자산을 검색하려면 [Omnisearch](search-assets.md#search-assets-in-aem)를 사용하십시오.
 
@@ -65,7 +65,7 @@ DAM에 이미 있는 기존 비디오 자산은 자동으로 태그가 지정되
 
 검색 결과는 비디오 자산과 메타데이터에서 검색된 키워드와 검색된 키워드로 스마트 태그가 지정된 비디오 자산의 조합입니다. 하지만 메타데이터 필드의 모든 검색어와 일치하는 검색 결과가 먼저 표시되고, 그 뒤에 스마트 태그의 검색어와 일치하는 검색 결과가 표시됩니다. 자세한 내용은 [스마트 태그가 있는 검색 결과 이해 [!DNL Experience Manager] 를 참조하십시오.](smart-tags.md#understand-search)
 
-## 비디오 스마트 태그 {#moderate-video-smart-tags} 중재
+## 비디오 스마트 태그 중재 {#moderate-video-smart-tags}
 
 [!DNL Adobe Experience Manager] 스마트 태그를 조정
 
