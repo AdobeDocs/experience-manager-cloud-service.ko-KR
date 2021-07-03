@@ -5,9 +5,9 @@ contentOwner: AG
 feature: asset compute 마이크로서비스,워크플로우,자산 처리
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2678'
 ht-degree: 1%
 
 ---
@@ -181,7 +181,7 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 ## 사후 처리 워크플로우 {#post-processing-workflows}
 
-처리 프로필을 사용하여 처리할 수 없는 자산의 추가 처리가 필요한 경우, 구성에 추가 사후 처리 워크플로우를 추가할 수 있습니다. 이렇게 하면 자산 마이크로서비스를 사용하여 구성 가능한 처리 위에 완전히 사용자 지정된 처리를 추가할 수 있습니다.
+처리 프로필을 사용하여 처리할 수 없는 자산의 추가 처리가 필요한 경우, 구성에 추가 사후 처리 워크플로우를 추가할 수 있습니다. 사후 처리를 사용하면 자산 마이크로서비스를 사용하여 구성 가능한 처리 위에 완전히 사용자 지정된 처리를 추가할 수 있습니다.
 
 사후 처리 워크플로우는 구성된 경우 마이크로 서비스 처리가 완료된 후 [!DNL Experience Manager]에 의해 자동으로 실행됩니다. 워크플로우를 트리거하기 위해 워크플로우 런처를 수동으로 추가할 필요가 없습니다. 해당 예는 다음과 같습니다.
 
@@ -196,38 +196,41 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 * 끝에 [!UICONTROL DAM 자산 업데이트 워크플로우 완료 프로세스] 단계를 추가합니다. 이 단계를 추가하면 Experience Manager이 처리가 종료되고 자산이 처리됨으로 표시될 수 있음을 알 수 있습니다. 즉, 자산에 *New*&#x200B;이 표시됩니다.
 * 경로(폴더 위치) 또는 정규 표현식으로 사후 처리 워크플로우 모델의 실행을 구성할 수 있도록 해주는 사용자 지정 워크플로우 러너 서비스에 대한 구성을 만듭니다.
 
+사후 처리 워크플로우에서 사용할 수 있는 표준 워크플로우 단계에 대한 자세한 내용은 개발자 참조 설명서의 사후 처리 워크플로우](developer-reference-material-apis.md#post-processing-workflows-steps)워크플로우 단계 를 참조하십시오.[
+
 ### 사후 처리 워크플로우 모델 만들기 {#create-post-processing-workflow-models}
 
 사후 처리 워크플로우 모델은 일반적인 [!DNL Experience Manager] 워크플로우 모델입니다. 다른 저장소 위치 또는 자산 유형에 대해 다른 처리가 필요한 경우 다른 모델을 만듭니다.
 
-처리 단계는 필요에 따라 추가해야 합니다. 사용 가능한 모든 지원 단계와 사용자 지정 구현 워크플로우 단계를 사용할 수 있습니다.
+필요에 따라 처리 단계가 추가됩니다. 사용 가능한 지원되는 단계와 사용자 지정 구현된 워크플로우 단계를 모두 사용할 수 있습니다.
 
 각 사후 처리 워크플로우의 마지막 단계가 `DAM Update Asset Workflow Completed Process`인지 확인합니다. 마지막 단계는 Experience Manager이 자산 처리가 완료되는 시점을 파악하는 데 도움이 됩니다.
 
 ### 사후 처리 워크플로우 실행 구성 {#configure-post-processing-workflow-execution}
 
-자산 마이크로서비스가 업로드된 자산 처리를 완료한 후 사후 처리를 정의하여 일부 자산을 추가로 처리할 수 있습니다. 워크플로우 모델을 사용하여 사후 처리를 구성하려면 다음 중 하나를 수행할 수 있습니다.
+자산 마이크로서비스가 업로드된 자산의 처리를 완료한 후 사후 처리 워크플로우를 정의하여 자산을 추가로 처리할 수 있습니다. 워크플로우 모델을 사용하여 사후 처리를 구성하려면 다음 중 하나를 수행할 수 있습니다.
 
-* 사용자 지정 워크플로우 러너 서비스를 구성합니다.
-* 폴더 [!UICONTROL 속성]에 워크플로우 모델을 적용합니다.
+* [폴더 속성에서 워크플로우 모델을 적용합니다](#apply-workflow-model-to-folder).
+* [사용자 지정 워크플로우 러너 서비스를 구성합니다](#configure-custom-workflow-runner-service).
 
-Adobe CQ DAM 사용자 지정 워크플로우 러너(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)는 OSGi 서비스이며 구성에 대한 두 가지 옵션을 제공합니다.
+#### 폴더에 워크플로우 모델 적용 {#apply-workflow-model-to-folder}
 
-* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`):다양한 저장소 경로에 따라 여러 워크플로우 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. 이러한 매개 변수를 `/var` 경로의 워크플로우 모델에 매핑합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 표현식에 의한 사후 처리 워크플로우(`postProcWorkflowsByExpression`):다른 정규 표현식을 기반으로 하여 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
-
->[!NOTE]
->
->사용자 지정 워크플로우 러너의 구성은 OSGi 서비스의 구성입니다. OSGi 구성 배포 방법에 대한 자세한 내용은 [Experience Manager에 배포](/help/implementing/deploying/overview.md)를 참조하십시오.
->[!DNL Experience Manager] 의 온-프레미스 및 관리 서비스 배포와 달리, OSGi 웹 콘솔은 클라우드 서비스 배포에서 직접 사용할 수 없습니다.
-
-폴더 [!UICONTROL 속성]에 워크플로우 모델을 적용하려면 다음 단계를 수행합니다.
+일반적인 사후 처리 사용 사례의 경우 메서드를 사용하여 워크플로우를 폴더에 적용하는 것이 좋습니다. 폴더 [!UICONTROL 속성]에 워크플로우 모델을 적용하려면 다음 단계를 수행합니다.
 
 1. 워크플로우 모델을 만듭니다.
 1. 폴더를 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭한 다음 **[!UICONTROL 자산 처리]** 탭을 클릭합니다.
 1. **[!UICONTROL 자동 시작 워크플로우]**&#x200B;에서 필요한 워크플로우를 선택하고 워크플로우의 제목을 제공한 다음 변경 사항을 저장합니다.
 
-사후 처리 워크플로우에서 사용할 수 있는 표준 워크플로우 단계에 대한 자세한 내용은 개발자 참조 설명서의 사후 처리 워크플로우](developer-reference-material-apis.md#post-processing-workflows-steps)워크플로우 단계 를 참조하십시오.[
+   ![속성의 폴더에 사후 처리 워크플로우 적용](assets/post-processing-profile-workflow-for-folders.png)
+
+#### 사용자 지정 워크플로우 러너 서비스 구성 {#configure-custom-workflow-runner-service}
+
+폴더에 워크플로우를 적용하여 쉽게 구현할 수 없는 고급 구성에 대한 사용자 지정 워크플로우 런너 서비스를 구성할 수 있습니다. 예를 들어 정규 표현식을 사용하는 워크플로우입니다. Adobe CQ DAM 사용자 지정 워크플로우 러너(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)는 OSGi 서비스입니다. 구성에 대해 다음 두 가지 옵션을 제공합니다.
+
+* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`):다양한 저장소 경로에 따라 여러 워크플로우 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. 이러한 매개 변수를 `/var` 경로의 워크플로우 모델에 매핑합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 표현식에 의한 사후 처리 워크플로우(`postProcWorkflowsByExpression`):다른 정규 표현식을 기반으로 하여 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+
+OSGi 구성을 배포하는 방법은 [배포 대상 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)을 참조하십시오.
 
 ## 우수 사례 및 제한 사항 {#best-practices-limitations-tips}
 
