@@ -3,9 +3,9 @@ title: 자산에 워터마크 지정
 description: 디지털 자산에 워터마크를 추가합니다.
 contentOwner: AG
 feature: 자산 관리,게시
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 1%
