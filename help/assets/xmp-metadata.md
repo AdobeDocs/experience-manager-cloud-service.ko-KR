@@ -3,9 +3,9 @@ title: XMP 메타데이터
 description: 메타데이터 관리를 위한 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. 이 변수는 메타데이터의 생성, 처리 및 교환을 위한 표준화된 형식으로 AEM에서 사용됩니다.
 contentOwner: AG
 feature: 메타데이터
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 1%
@@ -34,7 +34,7 @@ XMP은 정의된 메타데이터 항목 세트와 함께 사용할 수 있는 [�
 
 XMP은 가장 일반적으로 직렬화되어 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)(RDF)의 하위 집합을 사용하여 저장됩니다. 이 하위 집합은 [XML](https://en.wikipedia.org/wiki/XML)로 표시됩니다.
 
-### XMP {#advantages-of-xmp}의 이점
+### XMP의 이점 {#advantages-of-xmp}
 
 XMP은 다른 인코딩 표준 및 스키마에 비해 다음과 같은 이점이 있습니다.
 
@@ -49,7 +49,7 @@ XMP 표준은 확장 가능하도록 설계되었으므로 사용자 지정 메�
 >
 >XMP에서는 일반적으로 이진 데이터 형식을 포함할 수 없습니다. 이진 데이터를 XMP으로 가져오려면 축소판 이미지와 같이 XML에 친숙한 형식으로 인코딩해야 합니다( `Base64` ).
 
-### XMP 코어 개념 {#xmp-core-concepts}
+### XMP 핵심 개념 {#xmp-core-concepts}
 
 **네임스페이스 및 스키마**
 
@@ -88,7 +88,7 @@ XMP에서는 텍스트 속성에 `xml:lang` 속성을 추가하여 텍스트의 
 >
 >[!DNL Assets]에서는 원본에 쓰기 기능이 기본적으로 활성화되지 않습니다. 메타데이터 원본에 쓰기](#enable-xmp-writeback)를 활성화하는 방법을 참조하십시오. [ 디지털 자산에 대한 MSM이 메타데이터 쓰기 저장(writeback)이 활성화된 경우 작동하지 않습니다. 원본에 쓰기 시작하면 상속이 중단됩니다.
 
-### XMP 원본에 쓰기 {#enable-xmp-writeback} 사용
+### XMP 원본에 쓰기 활성화 {#enable-xmp-writeback}
 
 [!UICONTROL DAM 메타데이터 ] 원본에 쓰기 워크플로우는 자산의 메타데이터를 쓰는 데 사용됩니다. 원본에 쓰기 작업을 활성화하려면 다음 세 가지 방법 중 하나를 수행하십시오.
 
