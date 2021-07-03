@@ -3,16 +3,16 @@ title: 지원되는 파일 형식 및 MIME 유형
 description: ' [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]로 지원하는 파일 형식 및 MIME 유형입니다.'
 contentOwner: AG
 feature: 자산 관리,표현물
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 7%
 
 ---
 
-# [!DNL Assets] 지원되는 파일 형식  {#supported-file-formats}
+# [!DNL Assets] 지원되는 파일 형식 {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service] 는 저장, 메타데이터 온라인 관리, 버전 관리, 업로드 및 다운로드 등의 기본적인 컨텐츠 관리 기능을 해당 형식과 관계없이 모든 이진 파일에 대해 지원합니다. [!DNL Adobe Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 제품 기능은 다양한 형식에 대한 다양한 지원을 제공합니다.
 
@@ -67,7 +67,7 @@ ht-degree: 7%
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-## [!DNL Dynamic Media] {#image-support-dynamic-media}의 이미지 형식
+## [!DNL Dynamic Media]의 이미지 형식 {#image-support-dynamic-media}
 
 | 형식 | 업로드(입력 형식) | 이미지 사전 설정 만들기(출력 형식) | 동적 표현물 미리 보기 | 동적 표현물 전달 | 동적 표현물 다운로드 |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -106,7 +106,7 @@ ht-degree: 7%
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
-## [!DNL Camera RAW] 포맷  {#camera-raw-formats}
+## [!DNL Camera RAW] 포맷 {#camera-raw-formats}
 
 | 파일 형식 | 축소판 생성 | 메타데이터 추출 | 너비/높이 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -164,7 +164,7 @@ ht-degree: 7%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## [!DNL Dynamic Media] {#document-support-dynamic-media}의 문서 형식
+## [!DNL Dynamic Media]의 문서 형식 {#document-support-dynamic-media}
 
 | 형식 | 업로드(입력 형식) | 이미지 사전 설정 만들기(출력 형식) | 동적 표현물 미리 보기 | 동적 표현물 전달 | 동적 표현물 다운로드 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -200,7 +200,7 @@ ht-degree: 7%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## {#video-dynamic-media-transcoding} 코드 변환용 [!DNL Dynamic Media]의 비디오 형식
+## 코드 변환용 [!DNL Dynamic Media]의 비디오 형식 {#video-dynamic-media-transcoding}
 
 | 비디오 파일 확장 | 컨테이너 | 권장 비디오 코덱스 | 지원되지 않는 비디오 코덱입니다 |
 |------------------------|--------------------|--------|-------|
