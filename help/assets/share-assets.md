@@ -3,16 +3,16 @@ title: 자산, 폴더 및 컬렉션 분배 및 공유
 description: 링크로 공유, 다운로드 및 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]을 통해 공유와 같은 방법을 사용하여 디지털 자산을 배포합니다.
 contentOwner: AG
 feature: 자산 관리,공동 작업,자산 분배
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '754'
+ht-degree: 2%
 
 ---
 
-# [!DNL Experience Manager] {#share-assets-from-aem}에서 관리되는 자산 공유 및 배포
+# [!DNL Experience Manager]에서 관리되는 자산 공유 및 분배 {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] 자산, 폴더 및 컬렉션을 조직 및 외부 엔티티(파트너 및 공급업체 등)의 멤버와 공유할 수 있습니다. 다음 메서드를 사용하여 [!DNL Experience Manager Assets]의 자산을 [!DNL Cloud Service](으)로 공유하십시오.
 
@@ -170,13 +170,13 @@ When you download assets from the link shared using the Link Sharing feature, AE
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### 데스크탑 앱에서 사용할 데스크톱 작업 활성화 {#desktop-actions}
+### 데스크탑 앱에서 사용할 데스크탑 작업 활성화 {#desktop-actions}
 
 브라우저의 [!DNL Assets] 사용자 인터페이스 내에서 자산 위치를 탐색하거나 체크 아웃하고 데스크탑 애플리케이션에서 편집할 자산을 열 수 있습니다. 이러한 옵션을 데스크탑 작업이라고 하며 이를 활성화하려면 [웹 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)에서 데스크톱 작업 활성화 를 참조하십시오. [!DNL Assets] 
 
 ![데스크탑 앱을 사용할 때 바로 가기로 사용할 데스크탑 작업 활성화](assets/enable_desktop_actions.png)
 
-### [!DNL Adobe Asset Link] {#configure-asset-link} 을 사용하도록 구성
+### [!DNL Adobe Asset Link]을 사용하도록 구성 {#configure-asset-link}
 
 Adobe 자산 링크를 사용하면 컨텐츠 작성 프로세스에서 광고 팀과 마케터 간의 협업을 간소화할 수 있습니다. [!DNL Adobe Experience Manager Assets]을 [!DNL Creative Cloud] 데스크탑 앱 [!DNL Adobe InDesign], [!DNL Adobe Photoshop] 및 [!DNL Adobe Illustrator]와 연결합니다. [!DNL Adobe Asset Link] 패널을 사용하면 크리에이티브가 가장 익숙한 크리에이티브 앱을 종료하지 않고도 [!DNL Assets]에 저장된 컨텐츠에 액세스하고 수정할 수 있습니다.
 
