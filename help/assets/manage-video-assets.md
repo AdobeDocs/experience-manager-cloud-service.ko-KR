@@ -3,9 +3,9 @@ title: 비디오 자산 관리
 description: 비디오 자산을 업로드, 미리 보기, 주석 달기 및  [!DNL Adobe Experience Manager]에 게시합니다.
 contentOwner: AG
 feature: 자산 관리,게시,공동 작업,비디오
-role: Business Practitioner
+role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 게시 후 비디오 자산을 웹 페이지에 URL로 포함하거나 자산을 직접 포함할 수 있습니다. 자세한 내용은 [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-## 처리 프로필 {#transcode-video}을 사용하여 코드 변환
+## 처리 프로필을 사용하여 코드 변환 {#transcode-video}
 
 [!DNL Experience Manager] 를  [!DNL Cloud Service] 사용하면 처리 프로필을 사용하여 MP4 비디오 파일을 기본 코드 변환하도록 할 수 있습니다. 기능을 사용하면 MP4 비디오 파일을 업로드하는 것뿐만 아니라 미리 보고 크기를 조정할 수 있습니다.
 
