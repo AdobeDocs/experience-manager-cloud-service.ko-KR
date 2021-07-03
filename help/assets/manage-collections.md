@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assets의 컬렉션 개념을 이해합니
 contentOwner: AG
 mini-toc-levels: 1
 feature: 컬렉션,자산 관리
-role: Business Practitioner
+role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2400'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 검색 기준에 따라 자산을 동적으로 포함하는 스마트 컬렉션입니다.
 
-## 컬렉션 콘솔 {#navigate-the-collections-console}에 액세스
+## 컬렉션 콘솔 액세스 {#navigate-the-collections-console}
 
 **[!UICONTROL 컬렉션]** 콘솔을 열려면 다음을 수행하십시오.
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 [정적 참조](#create-a-collection-with-static-references)나 [검색 기준 기반 필터](#create-a-smart-collection)를 기반으로 하여 컬렉션을 만들 수 있습니다. Lightbox에서 컬렉션을 만들 수도 있습니다.
 
-### 정적 참조 {#create-a-collection-with-static-references} 을 사용하여 컬렉션 만들기
+### 정적 참조를 사용하여 컬렉션 만들기 {#create-a-collection-with-static-references}
 
 정적 참조와 함께 컬렉션을 만들 수 있습니다. 예를 들어 자산, 폴더, 컬렉션, 스핀 세트 및 이미지 세트에 대한 참조가 있는 컬렉션입니다.
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
    컬렉션에 자산을 추가하려면 자산 사용자 인터페이스로 이동합니다. 자세한 내용은 [컬렉션에 자산 추가](#add-assets-to-a-collection)를 참조하십시오.
 
-### dropzone {#create-collections-using-dropzone}을 사용하여 컬렉션 만들기
+### 드롭존을 사용하여 컬렉션 만들기 {#create-collections-using-dropzone}
 
 자산 UI에서 컬렉션으로 자산을 드래그할 수 있습니다. 컬렉션의 사본을 만들고 자산을 여기에 드래그할 수도 있습니다.
 
@@ -113,7 +113,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 1. 원래 스마트 컬렉션을 편집된 컬렉션으로 대체하려면 **[!UICONTROL 덮어쓰기]** 를 탭/클릭합니다. 또는 **[!UICONTROL 다른 이름으로 저장]**&#x200B;을 선택하여 편집된 컬렉션을 별도로 저장합니다.
 1. 확인 대화 상자에서 **[!UICONTROL 저장]**&#x200B;을 탭/클릭하여 프로세스를 완료합니다.
 
-## 컬렉션 메타데이터 {#view-and-edit-collection-metadata} 보기 및 편집
+## 컬렉션 메타데이터 보기 및 편집 {#view-and-edit-collection-metadata}
 
 컬렉션 메타데이터는 추가된 태그를 포함하여 컬렉션에 대한 데이터를 포함합니다.
 
@@ -121,7 +121,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 1. **[!UICONTROL 컬렉션 메타데이터]** 페이지에서 **[!UICONTROL 기본]** 및 **고급** 탭의 컬렉션 메타데이터를 봅니다.
 1. 필요에 따라 메타데이터를 수정한 후 도구 모음에서 **[!UICONTROL 저장 및 닫기]** 를 탭/클릭하여 변경 사항을 저장합니다.
 
-### 벌크 {#edit-collection-metadata-in-bulk}에서 컬렉션 메타데이터 편집
+### 컬렉션 메타데이터 일괄 편집 {#edit-collection-metadata-in-bulk}
 
 여러 컬렉션의 메타데이터를 동시에 편집할 수 있습니다. 이 기능을 사용하면 여러 컬렉션에서 공통 메타데이터를 빠르게 복제할 수 있습니다.
 
@@ -159,7 +159,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 1. **[!UICONTROL 컬렉션 설정]** 페이지에서 컬렉션 설정을 수정합니다. 예를 들어 [컬렉션 추가](#create-a-collection)에서 설명한 대로 컬렉션 제목, 설명, 멤버 및 권한을 수정합니다.
 1. **[!UICONTROL 저장]** 을 탭/클릭하여 변경 사항을 저장합니다.
 
-## {#delete-a-collection} 컬렉션 삭제
+## 컬렉션 삭제 {#delete-a-collection}
 
 1. 컬렉션 콘솔에서 하나 이상의 컬렉션을 선택하고 도구 모음에서 삭제 아이콘을 탭/클릭합니다.
 1. 대화 상자에서 **[!UICONTROL 삭제]**&#x200B;를 탭/클릭하여 삭제 작업을 확인합니다.
@@ -168,7 +168,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
    >
    >[저장된 검색 삭제](#saved-searches)로 스마트 컬렉션을 삭제할 수도 있습니다.
 
-## 컬렉션 {#download-a-collection} 다운로드
+## 컬렉션 다운로드 {#download-a-collection}
 
 컬렉션을 다운로드하면 폴더 및 하위 컬렉션을 포함하여 컬렉션 내의 자산의 전체 계층 구조가 다운로드됩니다.
 
@@ -206,7 +206,7 @@ Adobe Enterprise Manager Assets를 사용하면 많은 컬렉션의 메타데이
 
 1. 변경 사항을 저장합니다.
 
-## 중첩된 컬렉션 {#create-nested-collections} 만들기
+## 중첩된 컬렉션 만들기 {#create-nested-collections}
 
 다른 컬렉션에 컬렉션을 추가하여 중첩된 컬렉션을 만들 수 있습니다.
 
@@ -244,7 +244,7 @@ Assets 사용자 인터페이스에서 특정 규칙, 검색 기준 또는 사�
 1. **[!UICONTROL 저장된 검색]** 목록에서 삭제할 스마트 컬렉션 옆에 있는 **[!UICONTROL 삭제]**&#x200B;를 탭/클릭합니다.
 1. 대화 상자에서 **[!UICONTROL 삭제]**&#x200B;를 탭/클릭하여 저장된 검색을 삭제합니다.
 
-## {#run-a-workflow-on-a-collection} 컬렉션에서 워크플로우 실행
+## 컬렉션에서 워크플로우 실행 {#run-a-workflow-on-a-collection}
 
 컬렉션 내의 자산에 대한 워크플로우를 실행할 수 있습니다. 컬렉션에 중첩된 컬렉션이 포함되어 있으면 중첩된 컬렉션 내의 자산에서도 워크플로우가 실행됩니다. 그러나 컬렉션과 중첩된 컬렉션에 중복 자산이 포함되어 있는 경우 워크플로우는 해당 자산에 대해 한 번만 실행됩니다.
 
