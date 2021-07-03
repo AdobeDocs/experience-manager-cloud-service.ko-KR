@@ -4,16 +4,16 @@ description: 메타데이터 유형에 대해 알아보고 [!DNL Adobe Experienc
 contentOwner: AG
 mini-toc-levels: 1
 feature: 자산 관리,메타데이터
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 0%
 
 ---
 
-# 디지털 자산의 메타데이터 {#managing-metadata-for-digital-assets} 관리
+# 디지털 자산의 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 * [Metadata Schemata Reference](meta-ref.md)
 -->
 
-## 메타데이터 {#why-metadata}이 필요한 이유
+## 메타데이터가 필요한 이유 {#why-metadata}
 
 메타데이터는 데이터에 대한 데이터를 의미합니다. 이러한 점에서 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 자산 관리를 위해 매우 중요합니다.
 
@@ -105,7 +105,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 
 파일에서 임베드할 수 있는 기타 메타데이터에는 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등이 포함됩니다.
 
-## 디지털 자산의 메타데이터 {#manage-assets-metadata} 관리
+## 디지털 자산의 메타데이터 관리 {#manage-assets-metadata}
 
 Enterprise Manager Assets를 사용하면 여러 자산의 메타데이터를 동시에 편집할 수 있으므로 일반적인 메타데이터 변경 사항을 자산에 일괄 전파할 수 있습니다. [!UICONTROL 속성] 페이지를 사용하여 메타데이터 속성을 공통 값으로 변경하거나 태그를 추가 또는 수정합니다. 메타데이터 속성 추가, 수정, 삭제를 포함하여 메타데이터 속성 페이지를 사용자 지정하려면 스키마 편집기를 사용합니다.
 
@@ -137,7 +137,7 @@ Enterprise Manager Assets를 사용하면 여러 자산의 메타데이터를 �
    >
    >단일 값 필드의 경우 **[!UICONTROL 추가 모드]**&#x200B;를 선택하더라도 새 메타데이터가 필드의 기존 값에 추가되지 않습니다.
 
-## 처리 프로필 {#metadata-compute-service}을 사용한 사용자 지정 메타데이터
+## 처리 프로필을 사용한 사용자 지정 메타데이터 {#metadata-compute-service}
 
 as a [!DNL Cloud Service] 는 클라우드 기반의 서비스를 사용하여 자산에 대한 사용자 지정 메타데이터를 생성할 수 있습니다. 사용자 지정 메타데이터를 생성하도록 처리 프로필을 구성합니다. 처리 프로필](/help/assets/asset-microservices-configure-and-use.md#use-profiles)을 사용하는 방법 [을 참조하십시오.
 
@@ -175,7 +175,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - 기본 구직 매표.
 
-### 응용 프로그램별 메타데이터 {#application-specific-metadata}
+### 애플리케이션별 메타데이터 {#application-specific-metadata}
 
 응용 프로그램별 메타데이터는 기술 및 설명 메타데이터를 포함합니다. 이러한 메타데이터를 사용하는 경우 다른 응용 프로그램에서 메타데이터를 사용하지 못할 수 있습니다. 예를 들어 다른 이미지 렌더링 응용 프로그램에서 [!DNL Adobe Photoshop] 메타데이터에 액세스할 수 없습니다. 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
 
@@ -201,7 +201,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * PUR - 프리즘 사용 권한.
 * `xmpPlus` - XMP과 PLUS 통합.
 
-### 포토그래피 특정 메타데이터 {#photography-specific-metadata}
+### 사진별 메타데이터 {#photography-specific-metadata}
 
 * Exif - GPS 위치를 포함한 카메라의 기술 정보.
 * CRS - [!DNL Camera Raw] 스키마.
@@ -220,7 +220,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - 미디어 관리.
 
-## 메타데이터 기반 워크플로우 {#metadata-driven-workflows}
+## 메타데이터 기반의 워크플로우 {#metadata-driven-workflows}
 
 메타데이터 기반의 워크플로우를 만들면 일부 프로세스를 자동화할 수 있으므로 효율성이 향상됩니다. 메타데이터 기반 워크플로우에서 워크플로우 관리 시스템은 워크플로우를 읽고 그 결과 일부 사전 정의된 작업을 수행합니다. 예를 들어 메타데이터 기반 워크플로우를 사용할 수 있는 몇 가지 방법은 다음과 같습니다.
 
