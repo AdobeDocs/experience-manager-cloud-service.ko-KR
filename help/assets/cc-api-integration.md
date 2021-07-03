@@ -3,8 +3,8 @@ title: Creative Cloud 통합을 위한 컨텐츠 자동화
 description: Creative Cloud 통합을 사용하여 자산의 변형 생성
 contentOwner: AG
 feature: 업로드,자산 처리,게시,Asset compute 마이크로서비스,워크플로우
-role: Business Practitioner,Administrator
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+role: User,Admin
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
