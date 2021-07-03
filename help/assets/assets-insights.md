@@ -3,9 +3,9 @@ title: 자산 통찰력
 description: 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에서 사용되는 이미지의 사용자 등급 및 사용 통계를 추적합니다.
 contentOwner: AG
 feature: 자산 통찰력,자산 보고서
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >인사이트는 이미지에만 지원되고 제공됩니다.
 
-## 이미지 {#viewing-statistics-for-an-image} 통계 보기
+## 이미지에 대한 통계 보기 {#viewing-statistics-for-an-image}
 
 메타데이터 페이지에서 자산 통찰력 점수를 볼 수 있습니다.
 
