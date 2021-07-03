@@ -5,14 +5,14 @@ contentOwner: AG
 feature: 자산 관리
 role: Business Practitioner,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
-# Assets를 [!DNL Cloud Service] {#assets-cloud-service-introduction}(으)로 소개
+# 자산을 [!DNL Cloud Service](으)로 소개 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -35,7 +35,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service]은(는) 빠르고 효�
 * **최신 소프트웨어**:항상 최신 상태이고 항상 업데이트됩니다. 모든 사용자는 모든 패치, 기능, 보안 및 버그 수정이 포함된 최신 소프트웨어만 사용할 수 있습니다. 개발자 및 통합자는 다중 버전 지원 문제 없이 최신 API 세트를 사용합니다.
 * **항상 온라인**:백업 및 중복이 있는 클러스터에 배포되는 인스턴스 덕분에 다운타임이 전혀 발생하지 않습니다(0dt). 업그레이드 또한 0dt입니다.
 * **지속적인 모니터링**:시스템 모니터링은 자동화되고 내장된 체크와 트리거를 통해 성능, 가용성 및 전반적인 견고성을 유지할 수 있습니다.
-* **간편한 배포**:클라우드 작업의 AEM은 수동 개입이 필요 없는 완전히 자동화됩니다. 자동화된 배포를 위해 CM(Cloud Manager) 구성 요소는 사용자 지정 코드를 포함하는 배포 가능한 Docker 이미지의 빌드를 자동화합니다.
+* **간편한 배포**:클라우드 작업의 AEM은 수동 개입이 필요 없는 완전히 자동화되어 있습니다. 자동화된 배포를 위해 CM(Cloud Manager) 구성 요소는 사용자 지정 코드를 포함하는 배포 가능한 Docker 이미지의 빌드를 자동화합니다.
 
 ## 새 자산 기능 {#whats-new-assets}
 
