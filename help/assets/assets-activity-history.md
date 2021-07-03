@@ -3,16 +3,16 @@ title: 타임라인의 활동 스트림
 description: 이 문서에서는 타임라인에 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다.
 contentOwner: AG
 feature: 자산 보고서,자산 관리
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 7%
 
 ---
 
-# 활동 스트림 {#activity-stream-in-timeline}에서 자산 작업 로그 보기
+# 활동 스트림에서 자산 작업 로그 보기 {#activity-stream-in-timeline}
 
 이 기능은 타임라인에 자산에 대한 활동 로그를 표시합니다. [!DNL Experience Manager Assets]에서 다음 자산 관련 작업을 수행하는 경우 활동 스트림 기능이 활동을 반영하도록 타임라인을 업데이트합니다.
 
