@@ -3,10 +3,10 @@ sub-product: AEM Content 및 Commerce as a Cloud Service
 user-guide-title: AEM Content 및 Commerce as a Cloud Service
 breadcrumb-title: AEM Content 및 Commerce 안내서
 user-guide-description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
-source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
+source-git-commit: 960fd1bc4731e180cea536ce5a835b15e42fe991
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 46%
+source-wordcount: '109'
+ht-degree: 44%
 
 ---
 
@@ -32,5 +32,6 @@ ht-degree: 46%
       + [스타일 지정 CIF 구성 요소](customizing/style-cif-component.md)
       + [CIF 구성 요소 사용자 정의](customizing/customize-cif-components.md)
       + [CIF 카탈로그 선택기 사용](customizing/use-cif-pickers.md)
++ [Adobe 상거래 PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
 + [마이그레이션](migration.md)
 + [FAQ](faq.md)
