@@ -1,9 +1,9 @@
 ---
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 활용할 수 있는 강력하고 광범위한 API가 있습니다.
-source-git-commit: 4134d87ca40f7834605c7d3496f05ef80fbab554
+source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '665'
 ht-degree: 5%
 
 ---
@@ -58,15 +58,15 @@ API가 AEM에서 제공되는 경우 Sling, JCR 및 OSGi보다 선호합니다. 
 
 AEM에서는 사용자 정의 가능한 구성 요소 및 콘텐츠 전달 옵션을 제공합니다.
 
-| API | 설명 |
+| 기능 | 설명 |
 |---|---|
 | [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) | AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소를 통해 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감할 수 있습니다 |
 | [JSON 내보내기](/help/implementing/developing/components/json-exporter.md) | JSON 데이터 모델 형식으로 AEM 페이지의 콘텐츠를 전달합니다 |
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 컨텐츠의 JSON 내보내기 생성 |
-| [에셋](/help/assets/mac-api-assets.md) | 이진, 메타데이터, 표현물 및 주석을 포함하여 자산에 대한 CRUD(Create-Read-update-delete) 작업을 허용합니다. AEM Assets HTTP API 를 참조하십시오 |
-| [컨텐츠 조각 HTTP](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 작업을 통해 HTTP API를 통해 직접 컨텐츠 조각 컨텐츠에 액세스합니다 |
-| [컨텐츠 조각 GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) | 헤드리스 CMS 구현에서 JavaScript 클라이언트에 컨텐츠 조각을 효율적으로 전달할 수 있도록 합니다 |
-| [컨텐츠 조각 자산 HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 지원되는 HTTP 자산 요청의 정확한 형식 |
+| [자산 API](/help/assets/mac-api-assets.md) | 이진, 메타데이터, 표현물 및 주석을 포함하여 자산에 대한 CRUD(Create-Read-update-delete) 작업을 허용합니다. AEM Assets HTTP API 를 참조하십시오 |
+| [컨텐츠 조각 HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 작업을 통해 HTTP API를 통해 직접 컨텐츠 조각 컨텐츠에 액세스합니다 |
+| [컨텐츠 조각 GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) | 헤드리스 CMS 구현에서 JavaScript 클라이언트에 컨텐츠 조각을 효율적으로 전달할 수 있도록 합니다 |
+| [컨텐츠 조각 자산 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 지원되는 HTTP 자산 요청의 정확한 형식 |
 
 ## SPA 특정 API {#spa-apis}
 
