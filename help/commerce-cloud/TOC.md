@@ -3,10 +3,10 @@ sub-product: AEM Content 및 Commerce as a Cloud Service
 user-guide-title: AEM Content 및 Commerce as a Cloud Service
 breadcrumb-title: AEM Content 및 Commerce 안내서
 user-guide-description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
-source-git-commit: 960fd1bc4731e180cea536ce5a835b15e42fe991
+source-git-commit: 677ac2c35fa79caf16f5f0ef3de7b0791272c44b
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 44%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 44%
       + [관련 콘텐츠로 제품 데이터 보강](configuring/enrich-product-associated-content.md)
       + [SEO용 URL 구성](configuring/advanced-url-configuration.md)
       + [캐싱 옵션](configuring/caching.md)
+      + [사용자 지정 HTTP 헤더](/help/commerce-cloud/configuring/custom-http-headers.md)
    + 개발 {#developing}
       + [AEM Cloud Service SDK를 사용한 개발](develop.md)
       + [스타일 지정 CIF 구성 요소](customizing/style-cif-component.md)
