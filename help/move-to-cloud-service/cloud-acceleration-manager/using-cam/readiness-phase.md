@@ -4,9 +4,9 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 #### 모범 사례 평가 {#best-practices-assessment}
 
-이 카드는
+모범 사례 평가 선택 사항은 현재 AEM 인스턴스에 대한 평가를 제공하며 AEM 모범 사례를 채택할 다음 단계에 대한 지침을 제공합니다. 이 탭에서 다음 정보를 검토할 수 있습니다.
+
+* AEM 인스턴스 개요
+* 사용자 지정 구성 요소 및 템플릿
+* 추가 결과
+* 느린 쿼리
+* 유지 관리 작업
 
 #### 마이그레이션 복잡성 평가 {#migration-complexity-assessment}
 
-이 카드는
+마이그레이션 복잡성 평가 옵션은 기존 AEM 구현을 Cloud Service으로 AEM으로 마이그레이션하는 데 따르는 복잡성에 대한 평가를 제공합니다. 이 탭에서 다음 정보를 검토할 수 있습니다.
 
+* AEM 인스턴스 개요
+* 평가
+* 콘텐츠 마이그레이션 고려 사항
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 계획 및 설정 카드 사용 {#planning-setup}
 
@@ -119,10 +130,8 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 1. 마이그레이션 여정의 이 단계에 대한 관련 정보가 포함된 컨텐츠 회전판이 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## 다음은 무엇입니까? {#whats-next}
 
 Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 구현 단계를 사용하면서 다음 단계를 검토할 수 있습니다.
-
-
