@@ -4,15 +4,15 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
 
 
-# Cloud Acceleration Manager {#readiness-phase-cam} 의 준비 단계
+# Cloud Acceleration Manager의 준비 단계 {#readiness-phase-cam}
 
 Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 단계에서 사용 가능한 도구 실행을 시작할 수 있습니다.
 
@@ -79,17 +79,17 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 #### 보고서 속성 {#report-properties}
 
-이 카드는 보고서 날짜, 기간, 필터, 업로드 날짜 및 Adobe Experience Manager(AEM) 세부 사항 등의 보고서 속성에 대한 정보를 제공합니다.
+**보고서 속성** 카드는 보고서 날짜, 기간, 필터, 업로드 날짜 및 Adobe Experience Manager(AEM) 세부 사항과 같은 보고서 속성에 대한 정보를 제공합니다.
 
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### 보고서 개요 {#report-overview}
 
-이 카드는 보고서 결과를 제공합니다
+이 **보고서 개요** 카드는 아래 그림과 같이 보고서 결과를 제공합니다.
 
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-이 보고서를 클릭하면 아래 그림과 같이 **보고서** 탭이 열립니다.
+이 보고서를 클릭하면 **보고서** 탭이 열립니다.
 
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -100,7 +100,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 >[!NOTE]
 >검색 결과 카테고리 및 중요도 수준에 대해 알려면 [우수 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en)을 참조하십시오.
 
-#### 우수 사례 평가 {#best-practices-assessment}
+#### 모범 사례 평가 {#best-practices-assessment}
 
 이 카드는
 
@@ -121,7 +121,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 구현 단계를 사용하면서 다음 단계를 검토할 수 있습니다.
 
