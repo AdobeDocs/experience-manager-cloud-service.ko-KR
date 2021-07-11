@@ -4,7 +4,7 @@ description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 ---
 
 
-# Cloud Acceleration Manager {#implementation-phase-cam} 의 구현 단계
+# Cloud Acceleration Manager의 구현 단계 {#implementation-phase-cam}
 
 구현 단계에는 다음이 포함됩니다.
 
@@ -75,7 +75,7 @@ AEM as a Cloud Service 배포 카드 활동 카드로 살펴보려면 이 섹션
 
 1. 마이그레이션 여정의 이 단계에 대한 관련 정보가 포함된 컨텐츠 회전판이 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## 컨텐츠 전송 카드 사용 {#content-transfer}
@@ -90,7 +90,7 @@ AEM as a Cloud Service 배포 카드 활동 카드로 살펴보려면 이 섹션
 
 1. 마이그레이션 여정의 이 단계에 대한 관련 정보가 포함된 컨텐츠 회전판이 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >컨텐츠 전송 도구를 사용하기 전에 [사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) 및 [우수 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)을 검토하십시오.
@@ -103,6 +103,6 @@ AEM 저장소의 크기를 추정하는 데 필요한 경우 `http://HOST:PORT/e
 
 `path` 매개 변수(예: `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`)를 사용하여 특정 저장소 경로의 크기를 예측할 수도 있습니다.
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 Cloud Acceleration Manager에 로그인하는 방법과 구현 단계를 활용하는 방법을 학습하면 이제 GoLive 단계를 사용하면서 다음 단계를 검토할 준비가 되었습니다.
