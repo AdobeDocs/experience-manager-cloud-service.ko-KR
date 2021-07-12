@@ -2,9 +2,9 @@
 title: 뷰어 사전 설정 관리
 description: Dynamic Media에서 뷰어 사전 설정을 만들고 관리하는 방법을 알아봅니다.
 feature: 뷰어 사전 설정,뷰어
-role: Business Practitioner
+role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 1%
@@ -32,7 +32,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >
 >사전 정의된 기본 제공 뷰어 사전 설정&#x200B;*을 편집하는 것은 지원되는 시나리오가 아닙니다.* 기본 뷰어 사전 설정을 편집하려고 하면 새 이름을 사용하여 뷰어 사전 설정을 저장하라는 메시지가 표시됩니다.
 
-## 뷰어에 대한 키보드 액세스 가능성 {#keyboard-accessibility-for-viewers}
+## 뷰어의 키보드 액세스 가능성 {#keyboard-accessibility-for-viewers}
 
 모든 기본 뷰어는 키보드 액세스 가능성을 지원합니다.
 
@@ -48,7 +48,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >
 >기본적으로 자산의 세부 사항 보기에서 뷰어 를 선택하면 시스템에 15개의 뷰어 사전 설정이 표시됩니다. 이 제한을 늘릴 수 있습니다. [표시되는 뷰어 사전 설정 수를 늘립니다](#increasing-the-number-of-viewer-presets-that-display).
 
-### 응답형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
+### 반응형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
 
 웹 페이지마다 요구 사항이 다릅니다. 예를 들어, 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지를 원하는 경우가 있습니다. 다른 경우 HTML5 뷰어를 호스팅 페이지에 직접 포함해야 합니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있습니다. 또는 &quot;응답형&quot;이며 다른 장치 또는 다른 브라우저 창 크기에 대해 다르게 표시됩니다. 이러한 요구 사항을 수용하기 위해 Dynamic Media과 함께 제공되는 사전 정의된 모든 기본 제공 HTML5 뷰어는 정적 웹 페이지와 응답형 디자인 웹 페이지를 모두 지원합니다.
 
@@ -59,7 +59,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >처음 사용하기 전에 모든 기본 제공 뷰어를 게시합니다.
 >[뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
 
-### 뷰어 사전 설정 시스템 호환성 {#viewer-preset-system-compatibility}
+### 뷰어 사전 설정 시스템 호환성  {#viewer-preset-system-compatibility}
 
 Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다음 시스템과 완전히 호환됩니다.
 
@@ -86,7 +86,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>플라이아웃 확대/축소</strong></td>
-   <td><p>원본 이미지 옆에 확대/축소된 영역의 두 번째 이미지를 표시합니다. 사용할 컨트롤이 없습니다. 사용자가 원하는 영역으로 선택 영역을 이동합니다.</p> <p>이 뷰어에 대한 전체 대역폭 사용을 결정할 때 기본 이미지와 플라이아웃 이미지가 모두 뷰어에서 제공되는지 고려하십시오. 기본 이미지 크기(스테이지 너비 및 높이)와 확대/축소 인수가 플라이아웃 이미지 크기를 결정합니다. 플라이아웃 파일 크기가 너무 크지 않도록 하려면 다음 두 값의 균형을 맞춥니다.주 이미지 크기가 큰 경우 확대/축소 계수 값을 낮춥니다. (플라이아웃 폭 및 플라이아웃 높이 는 플라이아웃 창의 크기를 결정하지만 뷰어에 제공되는 플라이아웃 이미지의 크기는 결정합니다.)</p> <p>예를 들어 기본 이미지 크기가 350 x 350 픽셀이고 확대/축소 인수가 3인 경우 결과 플라이아웃 이미지는 1050 x 1050 픽셀입니다. 기본 이미지 크기가 300 x 300 픽셀이고 확대/축소 인수가 4인 경우 플라이아웃 이미지는 1200 x 1200 픽셀입니다. JPEG 품질 설정(권장 설정은 80~90 사이)에 따라 파일 크기를 크게 줄일 수 있습니다. 권장되는 확대/축소 요소는 기본 이미지의 크기에 따라 2.5~4입니다.</p> </td>
+   <td><p>원본 이미지 옆에 확대/축소된 영역의 두 번째 이미지를 표시합니다. 사용할 컨트롤이 없습니다. 사용자가 원하는 영역으로 선택 영역을 이동합니다.</p> <p>이 뷰어에 대한 전체 대역폭 사용을 결정할 때 기본 이미지와 플라이아웃 이미지가 모두 뷰어에서 제공되는지 고려하십시오. 기본 이미지 크기(스테이지 너비 및 높이)와 확대/축소 인수가 플라이아웃 이미지 크기를 결정합니다. 플라이아웃 파일 크기가 너무 크지 않도록 하려면 다음 두 값의 균형을 맞춥니다. 주 이미지 크기가 큰 경우 확대/축소 계수 값을 낮춥니다. (플라이아웃 폭 및 플라이아웃 높이 는 플라이아웃 창의 크기를 결정하지만 뷰어에 제공되는 플라이아웃 이미지의 크기는 결정합니다.)</p> <p>예를 들어 기본 이미지 크기가 350 x 350 픽셀이고 확대/축소 인수가 3인 경우 결과 플라이아웃 이미지는 1050 x 1050 픽셀입니다. 기본 이미지 크기가 300 x 300 픽셀이고 확대/축소 인수가 4인 경우 플라이아웃 이미지는 1200 x 1200 픽셀입니다. JPEG 품질 설정(권장 설정은 80~90 사이)에 따라 파일 크기를 크게 줄일 수 있습니다. 권장되는 확대/축소 요소는 기본 이미지의 크기에 따라 2.5~4입니다.</p> </td>
   </tr>
   <tr>
    <td><strong>인라인 확대/축소</strong></td>
@@ -367,7 +367,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
  </tbody>
 </table>
 
-## {#increasing-the-number-of-viewer-presets-that-display}을 표시하는 뷰어 사전 설정 수를 늘립니다
+## 표시되는 뷰어 사전 설정 수 증가 {#increasing-the-number-of-viewer-presets-that-display}
 
 Experience Manager은 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에서 자산을 볼 때 광범위한 뷰어 사전 설정을 표시합니다. 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
 
@@ -456,7 +456,7 @@ Experience Manager은 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에�
 
    [뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
 
-### 대화형 뷰어 사전 설정 {#special-considerations-for-creating-an-interactive-viewer-preset} 만들기에 대한 특수 고려 사항
+### 대화형 뷰어 사전 설정을 만들기 위한 특수 고려 사항 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **패널의 이미지 축소판 표시 모드 정보:**
 
@@ -502,7 +502,7 @@ Experience Manager은 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에�
 뷰어가 사용 가능한 위치의 수에 따라 패널에 표시되는 축소판 그림 수에 사용하는 논리는 다음과 같습니다.
 
 * 하위 세그먼트 수 = 다음 하위 세그먼트로 반올림됩니다(브라우저 창 크기에 따라 축소판 그림 패널에 표시되는 슬롯 수/축소판 그림 수).
-위의 표에서 예제 사용, 9개의 축소판 / 4개의 슬롯 = 2.25;뷰어 로직은 최대 3개의 하위 세그먼트를 라운드합니다.
+위의 표에서 예제 사용, 9개의 축소판 / 4개의 슬롯 = 2.25; 뷰어 로직은 최대 3개의 하위 세그먼트를 라운드합니다.
 
 * 축소판 그림 수 = 다음 축소판 그림(축소판 그림 수/비디오 하위 세그먼트 수)로 반올림합니다.
 위의 표에 나오는 예를 사용하면 9개의 축소판 그림 / 3개의 비디오 하위 세그먼트 = 3개의 축소판 그림이 표시됩니다.
@@ -510,7 +510,7 @@ Experience Manager은 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에�
 * 하위 세그먼트 기간 = 총 비디오 지속 시간 / 비디오 하위 세그먼트 수.
 위의 표에 나오는 예를 사용하여, 30초 / 3개의 비디오 하위 세그먼트 = 각 비디오 하위 세그먼트의 10초 표시.
 
-#### 캐러셀 배너 뷰어 사전 설정 만들기 시 특별히 고려해야 할 사항 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+#### 캐러셀 배너 뷰어 사전 설정 만들기에 대한 특수 고려 사항 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 회전 배너 뷰어 사전 설정을 만들 때 다음과 같이 핫스팟 스타일을 변경할 수 있습니다.
 
@@ -527,7 +527,7 @@ Experience Manager은 **[!UICONTROL 세부 사항 보기 > 뷰어]**&#x200B;에�
 1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**&#x200B;을 누릅니다.
 1. 뷰어 사전 설정 페이지의 **[!UICONTROL 상태]** 열 헤더에서 토글을 탭하여 뷰어 사전 설정을 활성화하거나 비활성화합니다.
 
-   활성화되는 뷰어 사전 설정은 파란색 상자 내에 토글이 오른쪽에 나타납니다.비활성화된 뷰어 사전 설정은 회색 상자 내에서 토글이 왼쪽에 표시됩니다.
+   활성화되는 뷰어 사전 설정은 파란색 상자 내에 토글이 오른쪽에 나타납니다. 비활성화된 뷰어 사전 설정은 회색 상자 내에서 토글이 왼쪽에 표시됩니다.
 
 ## 뷰어 사전 설정 게시 {#publishing-viewer-presets}
 
@@ -578,7 +578,7 @@ Dynamic Media에 만들어 추가한 뷰어 사전 설정을 삭제할 수 있�
 1. 뷰어 사전 설정 페이지에서 사전 설정 제목을 선택한 다음 **[!UICONTROL 휴지통]** 아이콘을 탭합니다.
 1. **[!UICONTROL 삭제]**&#x200B;를 누릅니다.
 
-## 자산 {#applying-a-viewer-preset-to-an-asset}에 뷰어 사전 설정 적용
+## 자산에 뷰어 사전 설정 적용 {#applying-a-viewer-preset-to-an-asset}
 
 자산과 선택한 뷰어를 모두 이미 게시한 경우 뷰어 사전 설정을 선택하면 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 단추가 표시됩니다.
 
@@ -594,7 +594,7 @@ Dynamic Media에 만들어 추가한 뷰어 사전 설정을 삭제할 수 있�
 
    [URL을 복사하여](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 다른 사용자와 공유할 수 있습니다.
 
-## 뷰어 사전 설정 {#delivering-assets-with-viewer-presets}으로 자산 제공
+## 뷰어 사전 설정을 사용하여 자산 제공 {#delivering-assets-with-viewer-presets}
 
 뷰어 사전 설정에 대한 URL을 가져오려면 [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)을 참조하십시오. 또한 [웹 페이지에 비디오 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 
