@@ -4,11 +4,11 @@ user-guide-title: AEM as a Cloud Service 보안
 breadcrumb-title: 보안 안내서
 user-guide-description: Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다.
 feature: 구성
-role: Administrator
-source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
+role: Admin
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '69'
+ht-degree: 65%
 
 ---
 
