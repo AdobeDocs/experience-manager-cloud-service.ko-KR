@@ -2,9 +2,9 @@
 title: 스핀 세트
 description: Dynamic Media에서 스핀 세트를 사용하는 방법을 알아봅니다.
 feature: 스핀 세트
-role: Business Practitioner
+role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [Touch UI로 자산 관리](/help/assets/manage-digital-assets.md)를 참조하여 이미지 세트 자산이 업로드된 새 폴더에 적용하십시오.
 
-## 빠른 시작:스핀 세트 {#quick-start-spin-sets}
+## 빠른 시작: 스핀 세트 {#quick-start-spin-sets}
 
 스핀 세트를 사용하여 빠르게 시작하고 실행하려면 다음 단계를 수행합니다.
 
@@ -81,12 +81,12 @@ ht-degree: 0%
 
 [Experience Manager Assets](/help/assets/manage-digital-assets.md)에 있는 다른 자산을 업로드하는 것처럼 스핀 세트에 대한 이미지를 업로드할 수 있습니다.
 
-### 스핀 세트 {#guidelines-for-shooting-spin-set-images} 이미지를 캡처하기 위한 지침
+### 스핀 세트에 대한 이미지 캡처 지침 {#guidelines-for-shooting-spin-set-images}
 
 다음은 스핀 세트 이미지에 대한 몇 가지 우수 사례입니다. 일반적으로 스핀 세트에 있는 이미지가 많을수록 이미지 회전 효과가 더 좋습니다. 그러나 집합에 많은 이미지를 포함하면 이미지가 로드되는 데 걸리는 시간도 늘어납니다. Experience Manager은 스핀 세트에서 사용할 이미지를 촬영하기 위해 다음 지침을 권장합니다.
 
 * 적어도, 1차원 스핀 세트에 8-12개의 이미지와 2차원 스핀 세트에 있는 16-24개의 이미지를 사용합니다. 360°을 회전하려면 최소 8개의 이미지가 필요합니다. 2차원 스핀 세트를 만드는 것은 노동 집약이므로 1차원 스핀 세트가 더 일반적입니다.
-* 무손실 형식 사용;TIFF 및 PNG가 권장됩니다.
+* 무손실 형식 사용; TIFF 및 PNG가 권장됩니다.
 * 항목이 흰색이나 다른 고대비 백그라운드에 나타나도록 모든 이미지를 마스크합니다. 선택적으로 그림자를 추가합니다.
 * 제품 세부 사항이 잘 조명되고 초점이 맞춰졌는지 확인하십시오.
 * 패션 의류를 위한 스핀 이미지를 마네킹이나 모델로 가져가세요. 마네킹은 종종 마스킹되거나(유리 마네킹을 사용), 스티처리된 마네킹/드레싱이 이미지에 표시됩니다. 각도 수를 정의하여 모델 회전 세트를 생성할 수 있습니다. 모델을 단계별로 안내하고 각 샷의 방향을 확인할 수 있도록 바닥에 있는 테이프로 각 각도를 표시합니다.
@@ -211,6 +211,6 @@ Experience Manager이 축소판에 사용하는 이미지를 다른 이미지로
 
 [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)를 참조하십시오.
 
-## 스핀 세트 게시 중 {#publishing-spin-sets}
+## 스핀 세트 게시 {#publishing-spin-sets}
 
 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
