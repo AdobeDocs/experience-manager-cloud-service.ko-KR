@@ -2,9 +2,9 @@
 title: 번역 프로젝트 관리
 description: AEM에서 기계 및 인간 번역 프로젝트를 모두 만들고 관리하는 방법을 알아봅니다.
 feature: 언어 복사
-role: Administrator
+role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3827'
 ht-degree: 1%
@@ -42,7 +42,7 @@ AEM은 컨텐츠의 초기 번역을 위해 번역 프로젝트가 만들어지�
 
 번역 프로젝트는 사이트 콘솔에서 직접 만들거나 업데이트할 수 있습니다.
 
-### 참조 패널 {#creating-translation-projects-using-the-references-panel}을 사용하여 번역 프로젝트 만들기
+### 참조 패널을 사용하여 번역 프로젝트 만들기 {#creating-translation-projects-using-the-references-panel}
 
 언어 마스터의 리소스를 번역하는 워크플로우를 실행하고 관리할 수 있도록 번역 프로젝트를 만듭니다. 프로젝트를 만들 때 번역할 언어 마스터와 번역을 수행할 언어 사본의 페이지를 지정합니다.
 
@@ -58,7 +58,7 @@ AEM은 컨텐츠의 초기 번역을 위해 번역 프로젝트가 만들어지�
 >
 >프로젝트를 만들려면 계정이 `project-administrators` 그룹의 구성원이어야 합니다.
 
-### 초기 번역 및 변환 업데이트 {#initial-and-updating}
+### 초기 번역 및 번역 업데이트 {#initial-and-updating}
 
 참조 패널은 기존 언어 사본을 업데이트할지 또는 언어 사본의 첫 번째 버전을 작성할지 여부를 나타냅니다. 선택한 페이지에 대한 언어 사본이 있으면 프로젝트 관련 명령에 액세스할 수 있는 언어 사본 업데이트 탭이 나타납니다.
 
@@ -68,7 +68,7 @@ AEM은 컨텐츠의 초기 번역을 위해 번역 프로젝트가 만들어지�
 
 ![작성 및 번역](../assets/create-and-translate.png)
 
-### 새 언어 사본 {#create-translation-projects-for-a-new-language-copy}에 대한 번역 프로젝트 만들기
+### 새 언어 사본 번역 프로젝트 만들기 {#create-translation-projects-for-a-new-language-copy}
 
 1. 사이트 콘솔을 사용하여 번역 프로젝트에 추가할 페이지를 선택합니다.
 
@@ -164,7 +164,7 @@ AEM은 컨텐츠의 초기 번역을 위해 번역 프로젝트가 만들어지�
 
 1. **업데이트**&#x200B;를 클릭하거나 탭합니다.
 
-### 번역 메모리 {#updating-translation-memory} 업데이트 중
+### 번역 메모리 업데이트 {#updating-translation-memory}
 
 번역된 컨텐츠의 수동 편집 내용을 TMS(번역 관리 시스템)로 다시 동기화하여 번역 메모리를 교육할 수 있습니다.
 
@@ -175,7 +175,7 @@ AEM은 컨텐츠의 초기 번역을 위해 번역 프로젝트가 만들어지�
 
 AEM에서 선택한 문자열을 번역 관리 시스템으로 다시 전송합니다.
 
-### 페이지 {#check-translation-status} 번역 상태 확인
+### 페이지의 번역 상태 확인 {#check-translation-status}
 
 페이지가 번역되었거나, 번역되어 있거나, 아직 번역되지 않았는지 여부를 보여주는 사이트 콘솔의 목록 보기에서 속성을 선택할 수 있습니다.
 
@@ -210,7 +210,7 @@ AEM의 번역 프로젝트는 표준 [AEM 프로젝트 콘솔을 사용합니다
 
 ![줄임표 단추](../assets/ellipsis.png)
 
-### 프로젝트 콘솔을 사용하여 번역 프로젝트 만들기 {#creating-a-translation-project-using-the-projects-console}
+### 프로젝트 콘솔을 사용하여 번역 프로젝트 생성 {#creating-a-translation-project-using-the-projects-console}
 
 사이트 콘솔 대신 프로젝트 콘솔을 사용하려는 경우 번역 프로젝트를 수동으로 만들 수 있습니다.
 
@@ -341,7 +341,7 @@ AEM의 번역 프로젝트는 표준 [AEM 프로젝트 콘솔을 사용합니다
 1. 번역 작업의 제목에서 명령 메뉴를 탭하거나 클릭한 다음, **요청 범위**&#x200B;를 탭하거나 클릭합니다.
 1. 작업 상태가 **범위 완료**&#x200B;로 변경되면 명령 메뉴를 클릭하거나 탭한 다음 **범위 표시**&#x200B;를 클릭하거나 탭합니다.
 
-### 번역 작업 시작 중 {#starting-translation-jobs}
+### 번역 작업 시작 {#starting-translation-jobs}
 
 소스 페이지를 대상 언어로 변환하려면 번역 작업을 시작합니다. 번역 요약 타일의 속성 값에 따라 번역이 수행됩니다.
 
