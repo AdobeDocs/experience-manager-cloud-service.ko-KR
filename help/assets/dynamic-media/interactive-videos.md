@@ -2,9 +2,9 @@
 title: 대화형 비디오
 description: Dynamic Media에서 대화형 비디오 및 쇼퍼블 비디오를 사용하여 작업하는 방법을 알아봅니다.
 feature: 대화형 비디오
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6021'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 [대화형 이미지](/help/assets/dynamic-media/interactive-images.md)도 참조하십시오.
 
-## 대화형 비디오 실행 {#interactive-video-in-action}
+## 대화형 비디오 작동 {#interactive-video-in-action}
 
 상호 작용하면서 쇼퍼블 비디오 기능을 보려면 [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)를 클릭하고, 페이지에서 **[!UICONTROL 쇼퍼블 미디어]** 머리글로 스크롤한 다음 쇼퍼블 비디오를 클릭하여 재생을 시작합니다.
 
@@ -46,7 +46,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >사용자가 축소판 이미지를 누를 때 웹 페이지를 실행하는 대화형 비디오를 만드는 경우 일부 장치는 팝업 웹 페이지가 열리지 않도록 차단합니다. 이러한 경우 장치에서 팝업 차단 설정을 변경합니다. 예를 들어 Apple iPhone 6에서 **[!UICONTROL 설정 > Safari > 블록 팝업]**&#x200B;을 탭한 다음, 컨트롤을 **[!UICONTROL Off]**&#x200B;로 슬라이드합니다. 이제 대화형 비디오를 재생하고 축소판을 클릭하면 팝업을 열겠는지 묻는 메시지가 표시됩니다. 수락하면 웹 페이지가 열립니다.
 
-### 대화형 비디오를 만드는 방법 보기 {#watch-how-interactive-videos-are-created}
+### 대화형 비디오 작성 방법 보기 {#watch-how-interactive-videos-are-created}
 
 [대화형 비디오를 만드는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)(7분 30초)에 대한 연습을 시청하십시오.
 (비디오 연습은 Assets on Demand로 브랜딩되지만, 원칙 및 단계는 Adobe Experience Manager Assets의 대화형 비디오에 계속 적용됩니다.)
@@ -55,7 +55,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)에서 대화형 비디오, 링크 공유 및 YouTube 공유 사용 웨비나는 대화형 비디오 및 기타 기능을 사용하여 전환 기반 이벤트를 비디오 마케팅 컨텐츠에 연결하는 방법을 설명합니다.[
 
-## 빠른 시작:대화형 비디오 {#quick-start-interactive-videos}
+## 빠른 시작: 대화형 비디오 {#quick-start-interactive-videos}
 
 다음 단계별 워크플로우 설명은 Dynamic Media에서 대화형 비디오를 빠르게 시작하고 실행할 수 있도록 설계되었습니다.
 
@@ -97,7 +97,7 @@ Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo
 >[!NOTE]
 이 작업은 다음 내용이 true인 경우에만 필요합니다.
 * 빠른 보기를 트리거하여 비디오에 상호 작용을 추가하려고 합니다.
-* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->*
+* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->*
 
 Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -157,7 +157,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>변수 부품은 Experience Manager 축소판의 SKU 값이 됩니다.<strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>변수 부품은 Experience Manager 축소판의 SKU 값이 됩니다. <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>쿼리 문자열의 SKU 및 카테고리 ID.</p> </td>
@@ -214,7 +214,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 
 `/datafeed/$categoryId$-$SKU$.json`
 
-이러한 분석을 기반으로 축소판에 다음 두 변수를 사용할 수 있다고 결론 짓습니다.`categoryId` 및 `SKU`
+이러한 분석을 기반으로 축소판에 다음 두 변수를 사용할 수 있다고 결론 짓습니다. `categoryId` 및 `SKU`
 
 이제 비디오 및 관련 축소판 자산을 업로드할 준비가 되었습니다.
 
@@ -249,7 +249,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 
    이제 비디오에 대화형 기능을 추가합니다.
 
-## 비디오에 대화형 기능 추가 {#adding-interactivity-to-your-video}
+## 비디오에 인터랙티브한 추가 {#adding-interactivity-to-your-video}
 
 대화형 비디오 만들기 페이지에서 즉석 시각적 편집기를 사용하여 비디오에 타임라인 세그먼트를 추가합니다.
 
@@ -428,7 +428,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
       </ul> 
        <ul> 
        <li>경험 조각의 폭과 높이를 비디오에 나타나는 대로 지정합니다.</li>
-       </ul><strong>참고</strong>:경험 조각에 뷰어를 포함할 때 대화형 비디오의 소셜 미디어 공유 도구는 지원되지 않습니다. 대신 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.</p></tr>&lt;&gt; 
+       </ul><strong>참고</strong>: 경험 조각에 뷰어를 포함할 때 대화형 비디오의 소셜 미디어 공유 도구는 지원되지 않습니다. 대신 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.</p></tr>&lt;&gt; 
       <tr> 
       <td>축소판 이미지에 이미 할당된 작업을 편집하려면</td> 
       <td>타임라인 세그먼트 내에서 텍스트 레이블 오른쪽에 체인 링크가 있는 축소판 이미지를 누릅니다. 체인 링크는 작업이 할당되었음을 나타냅니다. 변경하려면 <strong>작업</strong> 탭을 탭합니다.</td> 
@@ -486,7 +486,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 
 1. 대화형 비디오를 게시합니다. 게시하면 웹 사이트 경험에 최종적으로 복사하여 붙여넣는 포함 코드 또는 URL이 만들어집니다.
 
-   빠른 보기를 사용하여 상호 작용을 추가한 경우 포함 코드만 사용하십시오.하이퍼연결된 웹 페이지가 포함된 상호 작용을 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+   빠른 보기를 사용하여 상호 작용을 추가한 경우 포함 코드만 사용하십시오. 하이퍼연결된 웹 페이지가 포함된 상호 작용을 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 
    [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
@@ -499,7 +499,7 @@ Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 �
 
 대화형 비디오 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
-## 웹 사이트 {#integrating-an-interactive-video-with-your-website}와 대화형 비디오 통합
+## 웹 사이트와 대화형 비디오 통합 {#integrating-an-interactive-video-with-your-website}
 
 이제 비디오를 업로드하고, 여기에 타임라인 세그먼트를 추가하고, 대화형 비디오를 게시하면 기존 웹 사이트에 추가할 수 있습니다.
 
@@ -510,7 +510,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 1. 게시된 대화형 비디오의 포함 코드 또는 URL을 복사합니다.
 웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 [
-빠른 보기를 사용하여 상호 작용을 추가한 경우 포함 코드만 사용하십시오.하이퍼연결된 웹 페이지가 포함된 상호 작용을 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+빠른 보기를 사용하여 상호 작용을 추가한 경우 포함 코드만 사용하십시오. 하이퍼연결된 웹 페이지가 포함된 상호 작용을 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 
 1. 대상의 웹 페이지 코드에서 정적 비디오가 있는 위치를 식별합니다.
 1. 정적 비디오를 제거하고 Experience Manager 자산에서 복사한 포함 코드 또는 URL로 코드를 바꿉니다.
@@ -518,7 +518,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 
 >[!NOTE]
 따라서 하이퍼링크된 웹 페이지로만 상호 작용을 추가한 경우 됩니다.
-그러나 빠른 보기를 트리거하기 위해 상호 작용을 추가한 경우 대화형 비디오 옆에 있는 축소판은 표시용으로만 사용됩니다.아직 기존 빠른 보기와 통합되지 않았습니다. 이러한 경우 대화형 비디오를 웹 사이트의 기존 빠른 보기와 통합해야 합니다.
+그러나 빠른 보기를 트리거하기 위해 상호 작용을 추가한 경우 대화형 비디오 옆에 있는 축소판은 표시용으로만 사용됩니다. 아직 기존 빠른 보기와 통합되지 않았습니다. 이러한 경우 대화형 비디오를 웹 사이트의 기존 빠른 보기와 통합해야 합니다.
 
 **예**
 
@@ -557,7 +557,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## 대화형 비디오와 기존 빠른 보기 {#integrating-an-interactive-video-with-an-existing-quickview} 통합
+## 기존 빠른 보기와 대화형 비디오 통합 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 이 작업은 독립 실행형 Experience Manager Assets 고객인 경우에만 적용됩니다.
@@ -635,7 +635,7 @@ Experience Manager이 반환한 포함 코드에 이미 사용 가능한 이벤�
 
 따라서 위에 강조 표시된 코드 조각의 주석을 해제하고 더미 처리기 본문을 특정 웹 페이지에 해당하는 코드로 대체하기만 하면 됩니다.
 
-표준 포함 코드에 있는 두 개의 기본 콜백 핸들러가 있습니다.`quickViewActivate` 및 `initComplete` `quickViewActivate` 처리기는 뷰어에서 축소판을 클릭하면 트리거됩니다. 이 뷰어를 사용하여 뷰어와 빠른 보기 활성화 논리를 통합합니다. `initComplete` 처리기는 뷰어가 페이지에 로드될 때 한 번만 트리거됩니다. 이 처리기는 웹 페이지 DOM에서 빠른 보기 대화 상자 위치를 조정하는 데 사용됩니다.
+표준 포함 코드에 있는 두 개의 기본 콜백 핸들러가 있습니다. `quickViewActivate` 및 `initComplete` `quickViewActivate` 처리기는 뷰어에서 축소판을 클릭하면 트리거됩니다. 이 뷰어를 사용하여 뷰어와 빠른 보기 활성화 논리를 통합합니다. `initComplete` 처리기는 뷰어가 페이지에 로드될 때 한 번만 트리거됩니다. 이 처리기는 웹 페이지 DOM에서 빠른 보기 대화 상자 위치를 조정하는 데 사용됩니다.
 
 빠른 보기 URL을 구성하는 프로세스는 이 항목의 앞부분에서 설명한 축소판 변수를 식별하는 프로세스와 반대됩니다. 이전에 식별된 빠른 보기 URL 예를 사용하면 각 사례에 빠른 보기 URL이 구성되는 방식을 확인할 수 있습니다.
 
@@ -756,7 +756,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## 빠른 보기를 사용하여 사용자 지정 팝업 Windows® {#using-quickviews-to-create-custom-pop-ups} 만들기
+## 빠른 보기를 사용하여 사용자 지정 팝업 Windows® 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
 [빠른 보기를 사용하여 사용자 지정 팝업 Windows®](/help/assets/dynamic-media/custom-pop-ups.md)을 참조하십시오.
 —>
