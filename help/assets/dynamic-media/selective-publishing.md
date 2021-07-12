@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner
+role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 4%
 
 ---
 
-# Dynamic Media {#selective-publish-configure-folder} 의 폴더 수준에서 선택적 게시 구성
+# Dynamic Media의 폴더 수준에서 선택적 게시 구성 {#selective-publish-configure-folder}
 
 Adobe Experience Manager 또는 Dynamic Media에서 자산을 게시 또는 게시 취소하도록 선택할 수 있습니다. 이렇게 하려면 폴더 수준에서 **[!UICONTROL 게시 관리]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 사용합니다. 이 게시 방법은 Dynamic Media 인스턴스의 모든 폴더에 전역 설정을 적용하는 **[!UICONTROL Dynamic Media 구성]**&#x200B;에만 의존하지 않으므로 유용합니다.
 
@@ -59,7 +59,7 @@ Adobe Experience Manager 또는 Dynamic Media에서 자산을 게시 또는 게�
 
    | 동기화 모드 | 설명 |
    | --- | --- |
-   | **[!UICONTROL 상속됨]** | 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 **[!UICONTROL Dynamic Media 구성]**&#x200B;에 설정된 기본 모드 중 하나에서 동기화 값을 상속합니다. **[!UICONTROL 상속됨]**&#x200B;에 대한 자세한 상태는 도구 설명을 통해 표시됩니다. |
+   | **[!UICONTROL 상속됨]** | 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 **[!UICONTROL Dynamic Media 구성]**&#x200B;에 설정된 기본 모드 중 하나에서 동기화 값을 상속합니다. **[!UICONTROL 상속됨]**&#x200B;에 대한 자세한 상태는 도구 설명을 통해 표시됩니다. |
    | **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media에 동기화]** | Dynamic Media에 게시하려면 자산을 Dynamic Media에 동기화해야 합니다. 이 옵션을 선택하면 Dynamic Media과 동기화할 이 하위 트리의 모든 자산이 포함됩니다. 폴더별 설정은 **[!UICONTROL Dynamic Media 구성]**&#x200B;의 기본 설정을 덮어씁니다. |
    | **[!UICONTROL Dynamic Media 동기화에서 이 폴더 하위 트리의 모든 항목 제외]** | 이 하위 트리의 모든 자산이 Dynamic Media과 동기화되지 않도록 제외합니다. |
 
@@ -75,11 +75,11 @@ Adobe Experience Manager 또는 Dynamic Media에서 자산을 게시 또는 게�
    | --- | --- |
    | **[!UICONTROL 즉시]** | 자산이 이 폴더에 업로드되면 시스템은 자산을 Experience Manager에 수집하고 URL/포함을 즉시 제공합니다. 이 옵션은 Experience Manager 게시에만 연결되어 있으며 자산을 게시하는 데 사용자 개입이 필요하지 않습니다.<br>이전 단계에서  ** Dynamic Media 동기화 모드 **[!UICONTROL 에서 이 폴더 하위 트리의 모든 항목]** 을  **[!UICONTROL 제외하도록 선택한 경우에는 이]** 옵션을 사용할 수 없습니다. |
    | **[!UICONTROL 활성화 시]** | 자산을 이 폴더에 업로드할 때 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다. 이 옵션은 Experience Manager 게시에만 연결되어 있습니다.<br>이전 단계에서  ** Dynamic Media 동기화 모드 **[!UICONTROL 에서 이 폴더 하위 트리의 모든 항목]** 을  **[!UICONTROL 제외하도록 선택한 경우에는 이]** 옵션을 사용할 수 없습니다. |
-   | **[!UICONTROL 선택적 게시]** | 자산은 공개 Experience Manager에서 전달을 위해 또는 Dynamic Media 중 선택한 항목에 게시됩니다. 두 게시 방법은 서로 사용할 수 없습니다. 즉, 자산을 DMS7에 게시하여 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있습니다. 또는 보안 미리 보기를 위해 자산만 Experience Manager에 게시할 수 있습니다.동일한 자산은 *DMS7에 게시되지 않고 공용 도메인에 전달됩니다.* 이전 단계의 **[!UICONTROL 동기화 모드]**&#x200B;에서 Dynamic Media 동기화&#x200B;]**에서 이 폴더 하위 트리의 모든 항목을 제외하도록 선택한 경우에는 이 옵션을 사용할 수 없습니다.**[!UICONTROL  |
+   | **[!UICONTROL 선택적 게시]** | 자산은 공개 Experience Manager에서 전달을 위해 또는 Dynamic Media 중 선택한 항목에 게시됩니다. 두 게시 방법은 서로 사용할 수 없습니다. 즉, 자산을 DMS7에 게시하여 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있습니다. 또는 보안 미리 보기를 위해 자산만 Experience Manager에 게시할 수 있습니다. 동일한 자산은 *DMS7에 게시되지 않고 공용 도메인에 전달됩니다.* 이전 단계의 **[!UICONTROL 동기화 모드]**&#x200B;에서 Dynamic Media 동기화&#x200B;]**에서 이 폴더 하위 트리의 모든 항목을 제외하도록 선택한 경우에는 이 옵션을 사용할 수 없습니다.**[!UICONTROL  |
 
 1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭한 다음 **[!UICONTROL 확인]**&#x200B;을 탭하여 Experience Manager 자산으로 돌아갑니다.
 
-## 게시 관리{#selective-publish-manage-publication}를 사용하여 자산을 Dynamic Media 또는 Cloud Service으로 선택적으로 게시합니다.
+## 게시 관리 를 사용하여 자산을 Dynamic Media 또는 Cloud Service으로 Experience Manager에 선택적으로 게시{#selective-publish-manage-publication}
 
 **[!UICONTROL 게시 관리]**&#x200B;를 사용하여 자산을 Dynamic Media에 선택적으로 게시하거나 Experience Manager에 게시하려면 먼저 다음 중 하나를 수행했는지 확인하십시오.
 
@@ -129,7 +129,7 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
    * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL Dynamic Media에 게시]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
-### 게시 관리 {#selective-unpublish-manage-publication}를 사용하여 Dynamic Media 또는 Experience Manager에서 선택적으로 자산 게시 취소
+### 게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에서 선택적으로 자산 게시 취소 {#selective-unpublish-manage-publication}
 
 1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기에서 다음 중 하나를 수행합니다.]**
@@ -160,7 +160,7 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
    * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]** 또는 **[!UICONTROL Dynamic Media에서 게시 취소]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
-## 빠른 게시 {#quick-publish-aem-dm}를 사용하여 Dynamic Media 또는 Experience Manager에 자산 게시
+## 빠른 게시를 사용하여 Dynamic Media 또는 Experience Manager에 자산 게시 {#quick-publish-aem-dm}
 
 단순 자산 활성화 사례에 **[!UICONTROL 빠른 게시]**&#x200B;를 사용할 수 있습니다. **[!UICONTROL 빠른]** 게시에서는 추가 사용자 상호 작용 없이 선택한 자산을 즉시 게시합니다. 게시되지 않은 참조도 자동으로 게시됩니다.
 
@@ -191,7 +191,7 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
 
 1. **[!UICONTROL 확인]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
-## 검색 결과 {#selective-publish-unpublish-search-results} 을 통해 자산을 선택적으로 게시 또는 게시 취소합니다
+## 검색 결과를 통해 자산을 선택적으로 게시 또는 게시 취소합니다 {#selective-publish-unpublish-search-results}
 
 검색 결과에 다른 Dynamic Media 게시 설정이 있는 자산 폴더에서 자산이 표시될 수 있습니다. 검색 결과에서 하나 이상의 자산을 선택했으며 자산에는 다른 Dynamic Media 게시 모드 설정이 있는 경우 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 트리거하거나, 게시하거나, 게시를 취소할 수 있습니다.
 
@@ -253,7 +253,7 @@ Experience Manager](/help/assets/search-assets.md)에서 자산 검색 을 참�
    * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]**&#x200B;를 탭하여 작업을 시작합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
-## 자산 {#check-publish-status-of-asset} 의 게시 상태 확인
+## 자산의 게시 상태 확인 {#check-publish-status-of-asset}
 
 Experience Manager에서 **[!UICONTROL 타임라인]**, **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;를 사용하여 자산의 게시 상태를 빠르게 확인할 수 있습니다.
 
