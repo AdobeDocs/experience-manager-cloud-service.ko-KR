@@ -2,9 +2,9 @@
 title: Dynamic Media 이미지 프로필 및 비디오 프로필 정보
 description: 이미지 프로필 또는 비디오 프로필은 폴더에 업로드하는 자산에 적용할 옵션에 대한 레서피입니다. 예를 들어 업로드하는 Dynamic Media 비디오 자산에 적용할 비디오 인코딩을 지정할 수 있습니다. 또는 Dynamic Media 이미지 자산에 적용할 이미지 프로필로 제대로 잘립니다.
 feature: 자산 관리,이미지 프로필,비디오 프로필
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1270'
 ht-degree: 0%
@@ -38,11 +38,11 @@ Dynamic Media 이미지 프로필 또는 Dynamic Media 비디오 프로필을 �
 
 기존 Dynamic Media 이미지 프로필 또는 나중에 변경한 Dynamic Media 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다.
 
-예를 들어 Dynamic Media 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 자산에는 자동으로 이미지 프로필이 자산에 적용되었습니다. 하지만 나중에 이미지 프로필에 새로운 스마트 자르기 비율을 추가하기로 합니다. 이제 자산을 선택하고 다시 폴더에 업로드하는 대신 *Scene7을 실행하기만 하면 됩니다.자산* 워크플로우를 다시 처리합니다.
+예를 들어 Dynamic Media 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 자산에는 자동으로 이미지 프로필이 자산에 적용되었습니다. 하지만 나중에 이미지 프로필에 새로운 스마트 자르기 비율을 추가하기로 합니다. 이제 자산을 선택하고 다시 폴더에 업로드하는 대신 *Scene7을 실행하기만 하면 됩니다. 자산* 워크플로우를 다시 처리합니다.
 
 처음으로 처리가 실패한 자산에서 재처리 워크플로우를 실행할 수 있습니다. 이미지 프로필 또는 비디오 프로필을 편집하지 않았거나 이미 이미지 프로필 또는 비디오 프로필을 적용한 경우에도 언제든지 자산 폴더에서 재처리 워크플로우를 실행할 수 있습니다.
 
-선택적으로 재처리 워크플로우의 배치 크기를 최대 1000개의 자산인 기본값 50개에서 조정할 수 있습니다. _Scene7을 실행하는 경우:폴더에서 자산_ 워크플로우를 재처리하는 경우 자산은 배치로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후, 전체 배치 세트의 각 자산의 메타데이터가 [!DNL Adobe Experience Manager]에 업데이트됩니다. 일괄 처리 크기가 큰 경우 처리가 지연될 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 너무 많은 왕복 이동이 발생할 수 있습니다.
+선택적으로 재처리 워크플로우의 배치 크기를 최대 1000개의 자산인 기본값 50개에서 조정할 수 있습니다. _Scene7을 실행하는 경우: 폴더에서 자산_ 워크플로우를 재처리하는 경우 자산은 배치로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후, 전체 배치 세트의 각 자산의 메타데이터가 [!DNL Adobe Experience Manager]에 업데이트됩니다. 일괄 처리 크기가 큰 경우 처리가 지연될 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 너무 많은 왕복 이동이 발생할 수 있습니다.
 
 [재처리 워크플로우의 일괄 처리 크기 조정](#adjusting-load)을 참조하십시오.
 
@@ -60,7 +60,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 **폴더에서 Dynamic Media 자산을 재처리하려면 다음을 수행하십시오.**
 
-1. [!DNL Experience Manager]의 Assets 페이지에서 이미지 프로필 또는 비디오 프로필이 할당된 Assets 폴더로 이동하고 **Scene7을 적용할 Assets 폴더로 이동합니다.자산** 워크플로우를 다시 처리합니다.
+1. [!DNL Experience Manager]의 Assets 페이지에서 이미지 프로필 또는 비디오 프로필이 할당된 Assets 폴더로 이동하고 **Scene7을 적용할 Assets 폴더로 이동합니다. 자산** 워크플로우를 다시 처리합니다.
 
    이미지 프로필 또는 비디오 프로필이 할당된 폴더가 있는 폴더는 카드 보기에서 폴더 이름 바로 아래에 표시됩니다.
 
@@ -76,7 +76,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![자산 워크플로우 재처리 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. **[!UICONTROL 워크플로우 시작]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7을 선택합니다.자산]**&#x200B;을 재처리합니다.
+1. **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7을 선택합니다. 자산]**&#x200B;을 재처리합니다.
 1. (선택 사항) **워크플로우 제목 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로우 인스턴스를 참조할 수 있습니다.
 
    ![자산 재처리 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
@@ -92,12 +92,12 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 **재처리 워크플로우의 배치 크기를 선택적으로 조정하려면**
 
 1. [!DNL Experience Manager]Adobe Experience Manager ]**을 선택하여 전역 탐색 콘솔에 액세스한 다음**[!UICONTROL &#x200B;도구&#x200B;]**(망치) 아이콘 >**[!UICONTROL &#x200B;워크플로우 > 모델&#x200B;]**을 선택합니다.**[!UICONTROL 
-1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다.자산]**&#x200B;을 재처리합니다.
+1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다. 자산]**&#x200B;을 재처리합니다.
 
-   ![Scene7이 있는 워크플로우 모델 페이지:카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Scene7이 있는 워크플로우 모델 페이지: 카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다. 새 브라우저 탭에서 Scene7을 엽니다.자산 워크플로우 모델 페이지를 재처리합니다.
-1. Scene7에서:오른쪽 위 모서리 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]**&#x200B;을 선택하여 워크플로우에 대한 &quot;잠금 해제&quot;를 선택하십시오.
+1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다. 새 브라우저 탭에서 Scene7을 엽니다. 자산 워크플로우 모델 페이지를 재처리합니다.
+1. Scene7에서: 오른쪽 위 모서리 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]**&#x200B;을 선택하여 워크플로우에 대한 &quot;잠금 해제&quot;를 선택하십시오.
 1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
 
    ![Scene7 배치 업로드 구성 요소](/help/assets/dynamic-media/assets/reprocess-assets8.png)
@@ -114,11 +114,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 맨 위에 있는 **[!UICONTROL 완료]**&#x200B;를 선택합니다.
 
-1. Scene7의 오른쪽 위 모서리:자산 워크플로우 모델 페이지를 다시 처리하고 **[!UICONTROL 동기화]**&#x200B;를 선택합니다. **[!UICONTROL 동기화된]**&#x200B;가 표시되면 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 재처리할 수 있습니다.
+1. Scene7의 오른쪽 위 모서리: 자산 워크플로우 모델 페이지를 다시 처리하고 **[!UICONTROL 동기화]**&#x200B;를 선택합니다. **[!UICONTROL 동기화된]**&#x200B;가 표시되면 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 재처리할 수 있습니다.
 
    ![워크플로우 모델 동기화](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. Scene7을 표시하는 브라우저 탭을 닫습니다.자산 워크플로우 모델을 재처리합니다.
+1. Scene7을 표시하는 브라우저 탭을 닫습니다. 자산 워크플로우 모델을 재처리합니다.
 
 <!-- MAY BE NEEDED IN THE FUTURE
 
