@@ -2,9 +2,9 @@
 title: 롤아웃 충돌
 description: 다중 사이트 관리자 롤아웃 충돌을 관리하고 해결하는 방법을 알아봅니다.
 feature: 다중 사이트 관리자
-role: Administrator
+role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 2%
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 다음 섹션에서는 블루프린트와 Live Copy 분기(수동으로 생성됨)에서 만들어진 새 페이지 `b`의 예를 사용하여 다양한 충돌 해결 방법을 보여줍니다.
 
-* 블루프린트:`/b`
+* 블루프린트: `/b`
 
    하위 페이지가 1개인 마스터 페이지, `bp-level-1`
 
@@ -81,7 +81,7 @@ AEM은 다음을 제공합니다.
 
 이 충돌 처리기가 블루프린트에 우선합니다. 예를 들어 Live Copy 페이지 `/b`가 Live Copy 분기 내에서 `/b_msm_moved`로 이동됩니다.
 
-* Live Copy:`/b`
+* Live Copy: `/b`
 
    Live Copy 내에서 `/b_msm_moved`(으)로 이동됩니다. 이렇게 하면 백업 기능이 수행되며 컨텐츠가 손실되지 않습니다.
 
@@ -115,7 +115,7 @@ AEM은 다음을 제공합니다.
    * **서비스** 전송은 다른 충돌 처리기(  `service.ranking`)와 관련된 순서를 정의합니다.
       * 기본값은 `0`입니다.
 
-### 충돌 처리가 비활성화된 경우의 동작 {#behavior-when-conflict-handling-deactivated}
+### 충돌 처리가 비활성화된 경우 동작 {#behavior-when-conflict-handling-deactivated}
 
 수동으로 [충돌 처리를 비활성화하는 경우](#rollout-manager-and-conflict-handling) AEM에서 충돌하는 페이지에서 작업을 수행하지 않습니다. 충돌하지 않는 페이지는 예상대로 롤아웃됩니다.
 
@@ -129,7 +129,7 @@ AEM은 다음을 제공합니다.
 
    은 전혀 복사되지 않지만 무시됩니다.
 
-* Live Copy:`/b`
+* Live Copy: `/b`
 
    계속 똑같아
 
