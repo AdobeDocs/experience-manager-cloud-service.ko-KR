@@ -2,9 +2,9 @@
 title: 빠른 보기를 사용하여 사용자 지정 팝업 만들기
 description: 제품 정보와 함께 팝업 창이 표시되어 구매를 유도하는 전자 상거래 경험에서 기본 Quickview가 어떻게 사용되는지 알아보십시오. 팝업 Windows®에 표시할 사용자 지정 콘텐츠를 트리거할 수 있습니다."
 feature: 대화형 이미지,대화형 비디오,회전 배너
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 1%
