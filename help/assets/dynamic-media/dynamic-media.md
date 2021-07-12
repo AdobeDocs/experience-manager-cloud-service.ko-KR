@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media 작업
 description: Dynamic Media을 사용하여 웹, 모바일 및 소셜 사이트에서 소비할 자산을 제공하는 방법을 알아봅니다.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 20%
@@ -20,9 +20,9 @@ Dynamic Media에서는 확대/축소, 360도 회전, 비디오를 포함한 대�
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Dynamic Media {#what-you-can-do-with-dynamic-media}으로 수행할 수 있는 작업
+## Dynamic Media으로 수행할 수 있는 작업 {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media을 사용하면 자산을 게시하기 전에 자산을 관리할 수 있습니다. 일반적으로 자산으로 작업하는 방법은 [디지털 자산으로 작업](/help/assets/manage-digital-assets.md)에서 자세히 다룹니다. 일반적인 주제에는 자산 업로드, 다운로드, 편집 및 게시가 포함됩니다.속성 보기 및 편집, 자산 검색.
+Dynamic Media을 사용하면 자산을 게시하기 전에 자산을 관리할 수 있습니다. 일반적으로 자산으로 작업하는 방법은 [디지털 자산으로 작업](/help/assets/manage-digital-assets.md)에서 자세히 다룹니다. 일반적인 주제에는 자산 업로드, 다운로드, 편집 및 게시가 포함됩니다. 속성 보기 및 편집, 자산 검색.
 
 Dynamic Media 전용 기능에는 다음이 포함됩니다.
 
