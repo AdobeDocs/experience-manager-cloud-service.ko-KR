@@ -2,9 +2,9 @@
 title: 번역할 컨텐츠 식별
 description: 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알아봅니다.
 feature: 언어 복사
-role: Administrator
+role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 0%
@@ -86,7 +86,7 @@ AEM의 컨텐츠 번역 기능에 대한 개요를 알려면 [다국어 사이�
 </node>
 ```
 
-## 페이지에서 자산 추출용 규칙 구문 {#rule-syntax-for-extracting-assets-from-pages}
+## 페이지에서 자산 추출용 규칙 구문  {#rule-syntax-for-extracting-assets-from-pages}
 
 구성 요소에 포함되거나 구성 요소에서 참조되는 자산을 포함하려면 다음 규칙 구문을 사용하십시오.
 
@@ -105,7 +105,7 @@ AEM의 컨텐츠 번역 기능에 대한 개요를 알려면 [다국어 사이�
 <assetNode resourceType="core/wcm/components/image/v2/image" assetReferenceAttribute="fileReference"/>
 ```
 
-## 규칙 재정의 {#overriding-rules}
+## 규칙 무시 {#overriding-rules}
 
 `translation_rules.xml` 파일은 여러 하위 `node` 요소가 있는 `nodelist` 요소로 구성됩니다. AEM은 노드 목록을 위에서 아래로 읽습니다. 여러 규칙이 동일한 노드를 타깃팅하면 파일에서 낮은 규칙이 사용됩니다. 예를 들어, 다음 규칙을 사용하면 `text` 속성의 모든 컨텐츠가 페이지의 `/content/mysite/en` 분기를 제외하고 번역됩니다.
 
@@ -120,7 +120,7 @@ AEM의 컨텐츠 번역 기능에 대한 개요를 알려면 [다국어 사이�
 <nodelist>
 ```
 
-## 속성 필터링 {#filtering-properties}
+## 필터링 속성 {#filtering-properties}
 
 `filter` 요소를 사용하여 특정 속성이 있는 노드를 필터링할 수 있습니다.
 
@@ -215,7 +215,7 @@ xml의 결과는 다음과 같습니다.
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## 규칙 파일을 수동으로 편집 {#editing-the-rules-file-manually}
+## 수동으로 규칙 파일 편집 {#editing-the-rules-file-manually}
 
 AEM과 함께 설치된 `translation_rules.xml` 파일에는 기본 번역 규칙 세트가 포함되어 있습니다. 파일을 편집하여 번역 프로젝트의 요구 사항을 지원할 수 있습니다. 예를 들어 사용자 지정 구성 요소의 컨텐츠가 번역되도록 규칙을 추가할 수 있습니다.
 
