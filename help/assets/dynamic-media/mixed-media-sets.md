@@ -2,9 +2,9 @@
 title: 혼합 미디어 세트
 description: Dynamic Media에서 혼합 미디어 세트를 사용하는 방법을 알아봅니다.
 feature: 혼합 미디어 세트
-role: Business Practitioner
+role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [Touch UI를 사용하여 자산 관리](/help/assets/manage-digital-assets.md)를 참조하십시오.
 
-## 빠른 시작:혼합 미디어 집합 {#quick-start-mixed-media-sets}
+## 빠른 시작: 혼합 미디어 집합 {#quick-start-mixed-media-sets}
 
 혼합 미디어 세트를 사용하여 빠르게 시작하고 실행하려면 다음 단계를 수행합니다.
 
@@ -165,7 +165,7 @@ Assets](/help/assets/manage-digital-assets.md)의 자산처럼 사용자 인터�
 
 혼합 미디어 세트를 미리 보는 방법에 대한 자세한 내용은 [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md) 를 참조하십시오.
 
-## 혼합 미디어 집합 게시 중 {#publishing-mixed-media-sets}
+## 혼합 미디어 집합 게시 {#publishing-mixed-media-sets}
 
 혼합 미디어 세트를 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
