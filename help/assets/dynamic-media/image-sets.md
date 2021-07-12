@@ -2,9 +2,9 @@
 title: 이미지 세트
 description: Dynamic Media에서 이미지 세트를 사용하는 방법을 알아봅니다.
 feature: 이미지 세트
-role: Business Practitioner
+role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 이 응용 프로그램은 다른 색상, 패턴 또는 마무리로 항목을 표시하려는 경우에 유용합니다. 색상 견본으로 이미지 세트를 만들려면 사용자에게 표시할 각 색상, 패턴 또는 마무리에 대해 하나의 이미지가 필요합니다. 또한 각 색상, 패턴 또는 마무리에 색상, 패턴 또는 마무리 견본이 필요합니다.
 
-예를 들어 서로 다른 색상 BOM이 있는 대문자들의 이미지를 제공한다고 가정합니다.지폐는 빨간색, 녹색, 파란색이에요. 이 경우 동일한 캡의 샷이 세 개 필요합니다. 하나는 빨간색, 하나는 녹색이고 하나는 파란색 지폐가 있는 한 샷이 필요합니다. 또한 빨간색, 녹색 및 파란색 색상 견본이 필요합니다. 색상 견본은 사용자가 색상 견본 세트 뷰어에서 클릭하여 빨간색으로 청구되거나 녹색으로 청구되거나 파란색으로 청구되는 캡을 보는 축소판 역할을 합니다.
+예를 들어 서로 다른 색상 BOM이 있는 대문자들의 이미지를 제공한다고 가정합니다. 지폐는 빨간색, 녹색, 파란색이에요. 이 경우 동일한 캡의 샷이 세 개 필요합니다. 하나는 빨간색, 하나는 녹색이고 하나는 파란색 지폐가 있는 한 샷이 필요합니다. 또한 빨간색, 녹색 및 파란색 색상 견본이 필요합니다. 색상 견본은 사용자가 색상 견본 세트 뷰어에서 클릭하여 빨간색으로 청구되거나 녹색으로 청구되거나 파란색으로 청구되는 캡을 보는 축소판 역할을 합니다.
 
 >[!NOTE]
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [Touch UI를 사용하여 자산 관리](/help/assets/manage-digital-assets.md)를 참조하십시오.
 
-## 빠른 시작:이미지 집합 {#quick-start-image-sets}
+## 빠른 시작: 이미지 세트 {#quick-start-image-sets}
 
 빠르게 시작하고 실행하려면
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 [Assets](/help/assets/manage-digital-assets.md#uploading-assets)에 있는 다른 자산을 업로드하는 것처럼 이미지 세트에 대한 이미지를 업로드할 수 있습니다.
 
-### 업로드할 이미지 세트 자산 준비 중 {#preparing-image-set-assets-for-upload}
+### 업로드할 이미지 세트 자산 준비 {#preparing-image-set-assets-for-upload}
 
 이미지 세트를 만들기 전에 이미지가 올바른 크기와 형식인지 확인하십시오.
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 >* 검은색, 갈색 및 녹색 색상의 축소판 그림.
 
 
-## 이미지 집합 만들기 {#creating-image-sets}
+## 이미지 세트 만들기 {#creating-image-sets}
 
 사용자 인터페이스 또는 API를 통해 이미지 세트를 만들 수 있습니다.
 
@@ -234,10 +234,10 @@ ht-degree: 0%
 
 1. 편집을 완료하면 **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
-## 이미지 집합 미리 보기 {#previewing-image-sets}
+## 이미지 세트 미리 보기 {#previewing-image-sets}
 
 [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)를 참조하십시오.
 
-## 이미지 집합 {#publishing-image-sets} 게시
+## 이미지 집합 게시 {#publishing-image-sets}
 
 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
