@@ -2,9 +2,9 @@
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
 feature: 관리
-role: Administrator
+role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 2%
@@ -71,11 +71,11 @@ Target 구성을 편집하려면 다음 단계를 수행합니다.
 3. **Adobe Target에 다시 연결**&#x200B;을 선택합니다.
 4. **저장 후 닫기**&#x200B;를 선택합니다.
 
-### 사이트 {#add-configuration}에 구성 추가
+### 사이트에 구성 추가 {#add-configuration}
 
-사이트에 Touch UI 구성을 적용하려면 다음 위치로 이동하십시오.**사이트** → **사이트 페이지 선택** → **속성** → **고급** → **구성** → 구성 테넌트를 선택합니다.
+사이트에 Touch UI 구성을 적용하려면 다음 위치로 이동하십시오. **사이트** → **사이트 페이지 선택** → **속성** → **고급** → **구성** → 구성 테넌트를 선택합니다.
 
-## Adobe Launch {#integrate-target-launch}를 사용하여 AEM 사이트에서 Adobe Target 통합
+## Launch를 사용하여 AEM 사이트에서 Adobe Target 통합 {#integrate-target-launch}
 
 AEM에서는 Experience Platform Launch과 즉시 통합할 수 있습니다. Adobe Target 확장을 Experience Platform Launch에 추가하여 AEM 웹 페이지에서 Adobe Target의 기능을 사용할 수 있습니다. Target 라이브러리는 Launch를 사용해야만 렌더링됩니다.
 
@@ -132,11 +132,11 @@ AEM에서는 Experience Platform Launch과 즉시 통합할 수 있습니다. Ad
 2. Add Params to All Mbox에서 이전에 구성된 데이터 요소(위의 데이터 요소 참조)를 mbox 호출에서 전송할 매개 변수에 추가합니다.
    ![](assets/map_data1.png "MboxActions")
 
-### 빌드 및 게시 {#build-publish}
+### 작성 및 게시 {#build-publish}
 
 빌드 및 게시 방법에 대한 자세한 내용은 이 [page](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)을 참조하십시오.
 
-## 클래식 UI와 Touch UI 구성 간의 컨텐츠 구조 변경 {#changes-content-structure}
+## 클래식 UI 구성과 Touch UI 구성 간의 컨텐츠 구조 변경 {#changes-content-structure}
 
 | **변경** | **클래식 UI 구성** | **Touch UI 구성** | **결과** |
 |---|---|---|---|
