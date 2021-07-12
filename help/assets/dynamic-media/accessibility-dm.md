@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: 접근성
-role: Administrator,Business Practitioner
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+role: Admin,User
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 1%
@@ -18,14 +18,14 @@ ht-degree: 1%
 
 Dynamic Media은 작성 사용자 인터페이스에서 키보드 제어와 JAWS 및 NVDA 화면 판독기와 같은 보조 기술을 지원합니다.
 
-## Dynamic Media {#keyboard-support-in-dm}에서 키보드 액세스 가능성 지원
+## Dynamic Media에서 키보드 액세스 가능성 지원 {#keyboard-support-in-dm}
 
 Dynamic Media은 [!DNL Experience Manager Assets]의 플러그인이므로 대부분의 키보드 제어 동작은 [!DNL Experience Manager Assets]과 동일합니다. 예를 들어 Dynamic Media의 `Cancel` 단추에는 [!DNL Experience Manager Assets]에서와 동일한 포커스 강조 표시가 있습니다. 또한 [!DNL Experience Manager Assets]에서와 같이 `Spacebar` 키에 반응합니다. Assets](/help/assets/accessibility.md#keyboard-shortcuts)에서 [키보드 단축키를 참조하십시오.
 
 Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 찾기 쉽습니다. Dynamic Media의 키보드 제어는 다음과 같습니다.
 
 * `Tab` 및 `Shift+Tab` 키 입력을 사용하여 페이지에서 대화형 요소 간을 탐색할 수 있습니다.
-`Tab` 을 사용하면 입력 포커스를 탭 순서의 다음 사용자 인터페이스 요소로 이동합니다.`Shift+Tab` 을 사용하면 입력 포커스가 이전 사용자 인터페이스 요소로 돌아갑니다.
+`Tab` 을 사용하면 입력 포커스를 탭 순서의 다음 사용자 인터페이스 요소로 이동합니다. `Shift+Tab` 을 사용하면 입력 포커스가 이전 사용자 인터페이스 요소로 돌아갑니다.
 초점 순번은 화면에서 자연어 사용자 인터페이스 요소 위치를 따르며 왼쪽에서 오른쪽, 위에서 아래로 이동합니다. 또한 필드에 오류가 있으면 `Tab` 키를 눌러 포커스를 이동할 수 있습니다.
 * `Spacebar` 및 `Enter` 키를 사용하여 단추 및 드롭다운 목록과 같은 표준 사용자 인터페이스 요소를 활성화할 수 있습니다.
 * 활성 요소에서 키보드 포커스를 강조 표시하는 기능을 제공합니다. 입력 포커스가 있는 사용자 인터페이스 요소는 사용자 인터페이스 요소 주위에 렌더링되는 테두리로 시각적 포커스 표시를 수신했습니다.
@@ -49,7 +49,7 @@ Dynamic Media의 개별 사용자 인터페이스 요소에서 지원하는 키 
 
 Dynamic Media 사용자 인터페이스 요소는 화면 판독기와 같은 보조 기술과 함께 작동합니다. 예를 들어 키보드 단축키 `D` 를 사용하여 랜드마크를 탐색하거나 키보드 단축키 `R` 를 사용하여 영역을 탐색할 때 페이지에서 랜드마크를 인식합니다. 또한 제목 키보드 단축키 `H`을 사용하여 탐색할 때 제목 내레이션이 적용됩니다.
 
-## Dynamic Media 뷰어에서 키보드 액세스 가능성 지원 {#keyboard-accessibility-for-dm-viewers}
+## Dynamic Media 뷰어의 키보드 액세스 가능성 지원 {#keyboard-accessibility-for-dm-viewers}
 
 즉시 사용 가능한 모든 Dynamic Media 뷰어 구성 요소는 고객을 위한 키보드 액세스 가능성을 지원합니다.
 
