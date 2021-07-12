@@ -2,9 +2,9 @@
 title: 회전 배너
 description: Dynamic Media에서 회전 배너를 사용하는 방법을 알아봅니다.
 feature: 회전 배너
-role: Business Practitioner
+role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4537'
 ht-degree: 0%
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 ## 회전 배너가 만들어지는 방식을 확인하십시오 {#watch-how-carousel-banners-are-created}
 
-[캐러셀 배너를 만드는 방법에 대한 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (지속 시간:10분 33초). 캐러셀 배너를 미리 보고 편집하고 전달하는 방법도 알아봅니다.
+[캐러셀 배너를 만드는 방법에 대한 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (지속 시간: 10분 33초). 캐러셀 배너를 미리 보고 편집하고 전달하는 방법도 알아봅니다.
 
 >[!NOTE]
 >
 >회전 배너를 만들거나 편집하려면 관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹에 추가해야 합니다. 만들거나 편집하는 데 문제가 있는 경우 **d[!UICONTROL am-users]** 그룹에 사용자를 추가할 수 있는 시스템 관리자에게 문의하십시오.
 
-## 빠른 시작:회전 배너 {#quick-start-carousel-banners}
+## 빠른 시작: 회전 배너 {#quick-start-carousel-banners}
 
 빠르게 시작하고 실행하려면
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 -->
 
-1. 선택 사항:[필요에 따라 회전 메뉴 집합 뷰어 사전 설정을 만듭니다](/help/assets/dynamic-media/managing-viewer-presets.md).
+1. 선택 사항: [필요에 따라 회전 메뉴 집합 뷰어 사전 설정을 만듭니다](/help/assets/dynamic-media/managing-viewer-presets.md).
 
    관리자의 경우 자체 캐러셀 뷰어 사전 설정을 만들어 회전판의 동작과 모양을 사용자 지정할 수 있습니다. 주요 이점은 여러 회전 메뉴에 대해 이 사용자 지정 뷰어 사전 설정을 재사용할 수 있다는 것입니다. 그러나 사용자는 회전판을 작성하는 동안 회전판의 동작 및 모양을 직접 사용자 지정할 수도 있습니다. 이 방법은 지정된 회전판에 대해 특정 디자인을 원하는 경우 선호됩니다.
 
@@ -256,7 +256,7 @@ Quickview URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예�
 >[!NOTE]
 >
 >이미지 배너에 핫스팟을 추가하면 핫스팟정보가 이미지의 위치에 대해 동일한 메타데이터 위치에 저장됩니다. 이 점은 대화형 이미지나 회전 배너인지 여부에 관계없이 적용됩니다. 이 기능은 두 뷰어에서 동일한 이미지를 정의된 핫스팟 데이터와 함께 쉽게 다시 사용할 수 있음을 의미합니다.
-그러나 회전 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다.대화형 이미지는 표시되지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려는 경우에는 이 팁을 기억하십시오. 대신 동일한 이미지의 별도의 복사본을 사용하여 대화형 이미지와 회전 배너를 만드는 것이 좋습니다.
+그러나 회전 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다. 대화형 이미지는 표시되지 않습니다. 동일한 이미지를 사용하는 대화형 이미지 또는 회전 배너를 만들려는 경우에는 이 팁을 기억하십시오. 대신 동일한 이미지의 별도의 복사본을 사용하여 대화형 이미지와 회전 배너를 만드는 것이 좋습니다.
 
 >[!NOTE]
 핫스팟으로 대화형 이미지를 편집하고 이미지를 자르면 핫스팟이 제거됩니다.
@@ -271,8 +271,8 @@ Quickview URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예�
 1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Hotspot]** 또는 **[!UICONTROL 이미지 맵]**&#x200B;을 선택합니다.
 1. 다음 중 하나를 수행합니다.
 
-   * 핫스팟:이미지에서 핫스팟을 표시할 위치를 선택합니다.
-   * 이미지 맵의 경우:이미지에서 왼쪽 상단에서 오른쪽 하단으로 드래그하여 이미지 맵 영역을 만듭니다. 모퉁이를 끌어서 이미지 맵의 크기를 조정할 수 있습니다.
+   * 핫스팟: 이미지에서 핫스팟을 표시할 위치를 선택합니다.
+   * 이미지 맵의 경우: 이미지에서 왼쪽 상단에서 오른쪽 하단으로 드래그하여 이미지 맵 영역을 만듭니다. 모퉁이를 끌어서 이미지 맵의 크기를 조정할 수 있습니다.
 
    필요한 경우 핫스팟이나 이미지 맵을 새 위치로 드래그합니다. 또는 키보드 화살표 키를 사용하여 선택한 핫스팟의 위치를 제어합니다. 필요에 따라 핫스팟이나 이미지 맵을 더 추가합니다.
 
@@ -418,7 +418,7 @@ Experience Manager 사이트 고객의 경우 대화형 미디어 구성 요소�
 
 ## 캐러셀 배너를 기존 빠른 보기와 통합합니다 {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-참고:이 단계는 독립 실행형 Experience Manager Assets 고객인 경우에만 적용됩니다.
+참고: 이 단계는 독립 실행형 Experience Manager Assets 고객인 경우에만 적용됩니다.
 
 이 프로세스의 마지막 단계는 캐러셀 배너를 웹 사이트의 기존 Quickview 구현과 통합하는 것입니다. 모든 Quick view 구현은 고유하며 일반적으로 프런트 엔드 IT 담당자의 지원을 필요로 하는 특정 접근 방식이 필요합니다.
 
