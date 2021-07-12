@@ -1,9 +1,9 @@
 ---
 title: URL을 웹 애플리케이션에 연결
 description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법을 알아봅니다.
-role: Business Practitioner
+role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Adobe Experience Manager을 WCM으로 사용하지 *않고*&#x200B;인 경우에
 
 [자산 업로드](/help/assets/manage-digital-assets.md#uploading-assets)도 참조하십시오.
 
-## 자산 {#obtaining-a-url-for-an-asset} URL 가져오기
+## 자산에 대한 URL 가져오기 {#obtaining-a-url-for-an-asset}
 
 이미지 사전 설정 또는 뷰어 사전 설정으로 생성된 URL 문자열을 가져올 수 있습니다. URL을 복사하면 클립보드에 로드되므로 웹 사이트 또는 애플리케이션의 페이지에 필요에 따라 붙여넣을 수 있습니다.
 
@@ -80,7 +80,7 @@ URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나
 
    URL 창을 종료하려면 **[!UICONTROL X]**&#x200B;을 탭하거나 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
-## 정적 자산 {#obtaining-a-url-for-a-static-asset} URL 가져오기
+## 정적 자산에 대한 URL 가져오기 {#obtaining-a-url-for-a-static-asset}
 
 Dynamic Media에서는 이미지 및 비디오 이외에 다른 자산인 정적 자산 전달을 지원합니다. 전달을 위해 지원되는 정적 자산 형식에는 다음이 포함됩니다.
 
@@ -126,7 +126,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 다른 자산인 정적
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (2) 위의 경로는 설명 목적으로만 사용할 수 있다.복사한 실제 경로가 아닙니다.)
+   (2) 위의 경로는 설명 목적으로만 사용할 수 있다. 복사한 실제 경로가 아닙니다.)
 
 1. **[!UICONTROL 등록 ID]**&#x200B;에서 ID의 마지막 부분에 있는 고객 이름을 복사합니다.
 
@@ -139,7 +139,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 다른 자산인 정적
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (2) 위의 경로는 설명 목적으로만 사용할 수 있다.복사한 실제 경로가 아닙니다.)
+   (2) 위의 경로는 설명 목적으로만 사용할 수 있다. 복사한 실제 경로가 아닙니다.)
 
 1. 전체 URL 경로를 형성하려면 복사한 정보를 다음 순서로 배열합니다.
 
@@ -151,7 +151,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 다른 자산인 정적
 
    이 경로는 게시된 비디오 표현물을 위한 전체 비디오 URL입니다.
 
-## 응용 스트리밍을 위한 비디오 URL(HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls} 가져오기
+## 적응형 스트리밍(HLS)을 위한 비디오 URL 가져오기 {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 탭합니다.
@@ -162,7 +162,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 다른 자산인 정적
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (2) 위의 경로는 설명 목적으로만 사용할 수 있다.복사한 실제 경로가 아닙니다.)
+   (2) 위의 경로는 설명 목적으로만 사용할 수 있다. 복사한 실제 경로가 아닙니다.)
 
    * **[!UICONTROL 등록 ID]**&#x200B;에서 ID의 마지막 부분에 있는 고객 이름을 복사합니다. 이 단계의 후반부에 복사된 고객 이름이 필요합니다.
 
@@ -206,7 +206,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 다른 자산인 정적
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## HTTP/2를 사용하여 Dynamic Media 자산 {#using-http-to-deliver-your-dynamic-media-assets} 제공
+## HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2는 브라우저 및 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 보다 신속하게 정보를 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 자산의 배달이 HTTP/2를 통해 수행될 수 있으므로 로드 시간이 향상됩니다.
 
