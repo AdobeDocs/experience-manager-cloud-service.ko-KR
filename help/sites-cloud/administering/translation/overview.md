@@ -2,16 +2,16 @@
 title: 다국어 사이트의 컨텐츠 번역
 description: 다국어 사이트의 콘텐츠를 변환하는 방법에 대한 개요를 살펴보십시오.
 feature: 언어 복사
-role: Administrator
+role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
-# 다국어 사이트 {#translating-content-for-multilingual-sites} 컨텐츠 번역
+# 다국어 사이트의 컨텐츠 번역 {#translating-content-for-multilingual-sites}
 
 페이지 컨텐츠 및 자산 번역을 자동화하여 다국어 웹 사이트를 제작 및 유지 관리할 수 있습니다. 번역 워크플로우를 자동화하기 위해 번역 서비스 공급자를 AEM과 통합하고 컨텐츠를 여러 언어로 번역할 프로젝트를 만듭니다. AEM은 사람 및 기계 번역 워크플로우를 지원합니다.
 
