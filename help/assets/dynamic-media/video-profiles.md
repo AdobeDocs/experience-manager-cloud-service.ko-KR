@@ -2,9 +2,9 @@
 title: Dynamic Media 비디오 프로필
 description: Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하도록 최적화되었습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
 feature: 자산 관리,비디오 프로필,표현물
-role: Business Practitioner
+role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3665'
 ht-degree: 2%
@@ -373,14 +373,14 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 처리 중인 프로필을 편집한 후 폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)도 참조하십시오.[
 
-#### 프로필 사용자 인터페이스 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}을 통해 폴더에 비디오 프로필 적용
+#### 프로필 사용자 인터페이스를 통해 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
 1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 탭하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 탭합니다. 프로필이 이미 할당된 폴더는 **[!UICONTROL 카드 보기]**에 있는 동안 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 [비디오 프로필 처리 작업의 진행 상황을 모니터링할 수 있습니다](#monitoring-the-progress-of-an-encoding-job).
 
-#### 속성 {#applying-video-profiles-to-folders-from-properties}의 폴더에 비디오 프로필 적용
+#### 속성의 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-properties}
 
 1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 비디오 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
@@ -397,24 +397,24 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 **비디오 프로필을 전체적으로 적용하려면 다음을 수행하십시오.**
 
-* 다음 노드로 CRXDE Lite으로 이동합니다.`/content/dam/jcr:content` `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
+* 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content` `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * [비디오 프로필 처리 작업의 진행 상황을 모니터링할 수 있습니다](#monitoring-the-progress-of-an-encoding-job).
 
-## 비디오 프로필 처리 작업 진행률 모니터링 {#monitoring-the-progress-of-an-encoding-job}
+## 비디오 프로필 처리 작업 진행 모니터링 {#monitoring-the-progress-of-an-encoding-job}
 
 비디오 프로필 처리 작업의 진행 상태를 시각적으로 모니터링할 수 있도록 처리 표시기(또는 진행률 표시줄)가 표시됩니다.
 
 또한 `error.log` 파일을 보고 인코딩 작업의 진행 상황을 모니터링하거나 인코딩이 완료되었는지 확인하거나 작업 오류를 확인할 수 있습니다. `error.log`은 Experience Manager 인스턴스가 설치된 `logs` 폴더에 있습니다.
 
-## 폴더 {#removing-a-video-profile-from-folders}에서 비디오 프로필 제거
+## 폴더에서 비디오 프로필 제거 {#removing-a-video-profile-from-folders}
 
 폴더에서 비디오 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 프로필 제거를 자동으로 상속합니다. 그러나 폴더 내에서 발생한 파일의 모든 처리가 그대로 유지됩니다.
 
 **[!UICONTROL 도구]** 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 폴더 설정]**&#x200B;에서 비디오 프로필을 제거할 수 있습니다. 이 섹션에서는 두 가지 방법으로 폴더에서 비디오 프로필을 제거하는 방법을 설명합니다.
 
-### 프로필 사용자 인터페이스 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}를 통해 폴더에서 비디오 프로필 제거
+### 프로필 사용자 인터페이스를 통해 폴더에서 비디오 프로필 제거 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 비디오 프로필을 선택합니다.
@@ -422,7 +422,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
    이름이 더 이상 폴더 이름 아래에 표시되지 않으므로 비디오 프로필이 더 이상 폴더에 적용되지 않았는지 확인할 수 있습니다.
 
-### {#removing-video-profiles-from-folders-by-way-of-properties} 속성을 통해 폴더에서 비디오 프로필 제거
+### 속성을 통해 폴더에서 비디오 프로필 제거 {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Experience Manager 로고를 탭하거나 클릭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 비디오 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 탭하거나 클릭하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 탭합니다.
