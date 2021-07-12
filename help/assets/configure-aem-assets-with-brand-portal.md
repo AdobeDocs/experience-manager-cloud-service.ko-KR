@@ -3,9 +3,9 @@ title: Brand Portal을 사용하여 AEM Assets을 [!DNL Cloud Service] 으로 �
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
 feature: Brand Portal,자산 분배,구성
-role: Administrator
+role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 9d219b8de11fd977dab4f75468836892cb13364a
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 20%
@@ -70,7 +70,7 @@ AEM Assets에 대한 환경을 [!DNL Cloud Service] 인스턴스로 만들거나
 
 Cloud Manager에서 Brand Portal 테넌트가 활성화되면 Admin Console에서 또는 테넌트 URL을 사용하여 Brand Portal에 직접 로그인할 수 있습니다.
 
-Brand Portal 테넌트의 기본 URL은 다음과 같습니다.`https://<tenant-id>.brand-portal.adobe.com/`
+Brand Portal 테넌트의 기본 URL은 다음과 같습니다. `https://<tenant-id>.brand-portal.adobe.com/`
 
 여기서 테넌트 ID는 IMS 조직입니다.
 
@@ -105,9 +105,9 @@ Brand Portal URL을 모르는 경우 다음 단계를 수행하십시오.
    **[!UICONTROL 상태]** 탭 아래에서 분배 큐를 볼 수 있습니다.
 
    분배 에이전트에는 두 개의 큐가 있습니다.
-   * **처리 큐**:Brand Portal에 자산을 분배하기 위해 사용됩니다.
+   * **처리 큐**: Brand Portal에 자산을 분배하기 위해 사용됩니다.
 
-   * **오류 큐**:배포가 실패한 자산에 대해 입니다.
+   * **오류 큐**: 배포가 실패한 자산에 대해 입니다.
    >[!NOTE]
    >
    >오류를 검토하고 **error-queue** 를 정기적으로 지우는 것이 좋습니다.
@@ -151,20 +151,20 @@ AEM Assets as a0/> 인스턴스와 Brand Portal 임차인 간의 연결을 확�
 
 분배 에이전트가 다음 로그를 생성했습니다.
 
-* 정보:분배 에이전트의 성공적인 구성을 트리거하는 시스템 생성 로그입니다.
-* DSTRQ1(요청 1):테스트 연결에 대해 트리거합니다.
+* 정보: 분배 에이전트의 성공적인 구성을 트리거하는 시스템 생성 로그입니다.
+* DSTRQ1(요청 1): 테스트 연결에 대해 트리거합니다.
 
 자산을 게시할 때 다음 요청 및 응답 로그가 생성됩니다.
 
 **분배 에이전트 요청**:
 
 * DSTRQ2(요청 2): 자산 게시 요청이 트리거됩니다.
-* DSTRQ3(요청 3):시스템이 다른 요청을 트리거하여 AEM Assets 폴더(자산이 있는 폴더)를 게시하고 Brand Portal에서 폴더를 복제합니다.
+* DSTRQ3(요청 3): 시스템이 다른 요청을 트리거하여 AEM Assets 폴더(자산이 있는 폴더)를 게시하고 Brand Portal에서 폴더를 복제합니다.
 
 **분배 에이전트 응답**:
 
 * queue-bpdistributionagent0(DSTRQ2): 자산이 Brand Portal에 게시됩니다.
-* queue-bpdistributionagent0(DSTRQ3):시스템이 Brand Portal에서 AEM Assets 폴더(자산 포함)를 복제합니다.
+* queue-bpdistributionagent0(DSTRQ3): 시스템이 Brand Portal에서 AEM Assets 폴더(자산 포함)를 복제합니다.
 
 위의 예에서 추가적인 요청 및 응답이 트리거됩니다. 자산이 처음으로 게시되었기 때문에 시스템이 Brand Portal에서 상위 폴더(경로 추가)를 찾을 수 없어서 자산이 게시된 Brand Portal에서 동일한 이름으로 상위 폴더를 만들라는 추가 요청을 트리거했습니다.
 
@@ -352,7 +352,7 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
 
 1. IMS 계정에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
 
-   **[!UICONTROL 인증 서버]** 필드에서 URL을 지정합니다.[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+   **[!UICONTROL 인증 서버]** 필드에서 URL을 지정합니다. [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
    [서비스 계정(JWT) 연결](#createnewintegration)을 만드는 동안 복사한 **[!UICONTROL API 키]** 필드, **[!UICONTROL 클라이언트 암호]** 및 **[!UICONTROL 페이로드]**(JWT 페이로드)에 클라이언트 ID를 지정합니다.
 
