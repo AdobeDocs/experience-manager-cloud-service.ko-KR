@@ -5,8 +5,8 @@ user-guide-title: AEM as a Cloud Service에서 컨텐츠 작성
 breadcrumb-title: 작성 안내서
 user-guide-description: Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다.
 feature: 작성
-role: Business Practitioner
-source-git-commit: c19c15c4e71c8ead1c3cb05add052a8ffae79d0a
+role: User
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 73%
