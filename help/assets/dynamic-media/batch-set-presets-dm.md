@@ -3,9 +3,9 @@ title: 일괄처리 집합 사전 설정
 description: Dynamic Media에서 일괄처리 집합 사전 설정을 사용하여 이미지 세트 및 스핀 세트 생성을 자동화하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 feature: 이미지 사전 설정,뷰어 사전 설정
-role: Business Practitioner
+role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3446'
 ht-degree: 1%
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 ### 자산 이름 지정 규칙 정보
 
-**[!UICONTROL 일괄 처리 집합 사전 설정]** 페이지의 **[!UICONTROL 자산 이름 지정 규칙]** 영역에는 일괄 처리 집합 사전 설정을 정의하는 데 사용할 수 있는 두 가지 요소가 있습니다.**[!UICONTROL 일치]** 및 **[!UICONTROL 기본 이름]**&#x200B;입니다. 이러한 요소를 사용하면 이름 지정 규칙을 정의하고 해당 규칙이 포함된 세트의 이름을 지정하는 데 사용되는 규칙의 부분을 식별할 수 있습니다.<!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
+**[!UICONTROL 일괄 처리 집합 사전 설정]** 페이지의 **[!UICONTROL 자산 이름 지정 규칙]** 영역에는 일괄 처리 집합 사전 설정을 정의하는 데 사용할 수 있는 두 가지 요소가 있습니다. **[!UICONTROL 일치]** 및 **[!UICONTROL 기본 이름]**&#x200B;입니다. 이러한 요소를 사용하면 이름 지정 규칙을 정의하고 해당 규칙이 포함된 세트의 이름을 지정하는 데 사용되는 규칙의 부분을 식별할 수 있습니다. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
 회사의 개별 이름 지정 규칙은 이러한 두 요소 각에서 하나 이상의 정의 라인을 사용하는 경우가 많습니다. 고유 정의에 많은 선을 사용하고 기본 이미지, 색상 요소, 대체 보기 요소 및 견본 요소와 같은 개별 요소로 그룹화할 수 있습니다.
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 1. 오른쪽 상단 모서리의 **[!UICONTROL 일괄처리 집합 사전 설정]** 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 일괄 처리 집합 사전 설정 만들기]** 대화 상자의 **[!UICONTROL 사전 설정 이름]** 텍스트 필드에 수사적 이름을 입력합니다. 사전 설정 이름은 나중에 변경하려는 경우 편집할 수 없습니다.
 
-1. **[!UICONTROL 사전 설정 유형]** 드롭다운 목록에서 **[!UICONTROL ImageSet]** 또는 **[!UICONTROL SpinSet]**&#x200B;을 선택합니다. 올바른 사전 설정 유형을 선택해야 합니다.나중에 편집할 수 없습니다.
+1. **[!UICONTROL 사전 설정 유형]** 드롭다운 목록에서 **[!UICONTROL ImageSet]** 또는 **[!UICONTROL SpinSet]**&#x200B;을 선택합니다. 올바른 사전 설정 유형을 선택해야 합니다. 나중에 편집할 수 없습니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 일괄 처리 집합 사전 설정 편집]** 페이지의 오른쪽에서 **[!UICONTROL 사전 설정 세부 정보]** 및 **[!UICONTROL 이름 지정 규칙 설정]** 제목 아래에서 원하는 편집 가능한 옵션을 설정합니다.
 사용 가능한 편집 가능한 옵션에 대한 자세한 내용은 [사전 설정 세부 정보, 이름 지정 규칙 설정 및 규칙 결과 - RegX 옵션](#features-options-bsp)을 참조하십시오.
@@ -108,7 +108,7 @@ ht-degree: 1%
 | **[!UICONTROL 사전 설정 세부 사항]** | 설명 |
 | --- | --- |
 | 사전 설정 이름 | 읽기 전용. 배치 세트를 처음 생성할 때 지정한 이름입니다. 사전 설정의 이름을 변경해야 하는 경우 기존 배치 세트 사전 설정을 복사하고 새 이름을 지정할 수 있습니다. [기존 배치 집합 사전 설정 복사](#copy-bsp)를 참조하십시오. |
-| 유형 | 읽기 전용. 배치 세트를 처음 만들 때 유형이 지정되었습니다. 기존 배치 집합 사전 설정을 복사해도 [!UICONTROL Type];을 변경할 수 없습니다.대신 사전 설정을 만들어야 합니다. |
+| 유형 | 읽기 전용. 배치 세트를 처음 만들 때 유형이 지정되었습니다. 기존 배치 집합 사전 설정을 복사해도 [!UICONTROL Type];을 변경할 수 없습니다. 대신 사전 설정을 만들어야 합니다. |
 | 파생된 자산 포함 | 선택 사항입니다. [!DNL Dynamic Media]의 IPS(이미지 프로덕션 시스템)에 스핀 세트 또는 이미지 세트가 있는 생성 또는 &quot;파생&quot; 이미지가 포함되도록 하려면 **[!UICONTROL Yes]** (기본값)를 선택하십시오. 파생된 자산은 사용자가 직접 업로드하지 않은 이미지입니다. 대신, 자산은 마스터 자산이 업로드되었을 때 IPS에 의해 생성되었습니다. 예를 들어, PDF가 [!DNL Dynamic Media]에 업로드되었을 때 PDF의 페이지에서 IPS가 생성된 이미지 자산은 파생 자산으로 간주됩니다. |
 | 대상 폴더 | 선택 사항입니다. 많은 수의 이미지 세트나 스핀 세트를 정의하는 경우 자산 자체가 포함된 폴더와 이러한 세트를 별도로 유지하는 것이 좋습니다. 따라서 이미지 세트 또는 스핀 세트 폴더를 만들고 애플리케이션에서 생성된 배치 세트를 여기에 배치하도록 리디렉션하십시오.<br>이러한 경우 Experience Manager 자산 폴더 구조(`/content/dam`) 내에서 배치 집합 사전 설정이 활성 상태인 폴더를 지정합니다. 폴더를 대상 폴더로 허용하도록 [!DNL Dynamic Media] 동기화를 사용하도록 설정해야 합니다. Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder)의 폴더 수준에서 선택적 게시 구성 을 참조하십시오.[<br>폴더의  **[!UICONTROL 속성]**&#x200B;을 통해 사전 설정을 적용하는 경우 두 개 이상의 폴더에 주어진 배치 세트 사전 설정이 지정되어 있을 수 있습니다. 자산 폴더의 속성 페이지에서 [일괄처리 집합 사전 설정 적용](#apply-bsp-to-folders-via-properties)을 참조하십시오.<br>폴더를 지정하지 않으면 업로드한 자산 폴더와 동일한 폴더에 일괄 세트 사전 설정된 생성 이미지 세트 또는 스핀 세트가 만들어집니다. |
 | **[!UICONTROL 명명 규칙 설정]** |  |
