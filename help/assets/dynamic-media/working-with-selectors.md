@@ -1,16 +1,16 @@
 ---
 title: 선택기를 사용한 작업
 description: Dynamic Media에서 대화형 이미지, 대화형 비디오 및 회전 배너용 자산을 선택하는 데 사용할 수 있는 방법에 대해 알아봅니다.
-role: Business Practitioner
+role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 2%
 
 ---
 
-# Dynamic Media {#working-with-selectors}에서 선택기를 사용한 작업
+# Dynamic Media에서 선택기를 사용한 작업 {#working-with-selectors}
 
 대화형 이미지, 대화형 비디오 또는 회전 배너를 사용하여 작업하는 경우 자산을 선택하고 핫스팟과 연결할 이미지 맵의 사이트 및 제품을 선택합니다. 이미지 세트, 스핀 세트 및 멀티미디어 세트로 작업할 때 자산 선택기가 있는 자산도 선택합니다.
 
@@ -18,13 +18,13 @@ ht-degree: 2%
 
 회전판 세트를 만들고 핫스팟과 이미지 맵을 추가하고 대화형 비디오와 이미지를 만드는 동안 선택기에 액세스합니다.
 
-예를 들어, 이 회전 배너에서는 핫스팟이나 이미지 맵을 빠른 보기 페이지에 연결하는 경우 제품 선택기를 사용합니다. 핫스팟이나 이미지 맵을 하이퍼링크에 연결하는 경우에는 사이트 선택기를 사용합니다.슬라이드를 만들 때 자산 선택기를 사용합니다.
+예를 들어, 이 회전 배너에서는 핫스팟이나 이미지 맵을 빠른 보기 페이지에 연결하는 경우 제품 선택기를 사용합니다. 핫스팟이나 이미지 맵을 하이퍼링크에 연결하는 경우에는 사이트 선택기를 사용합니다. 슬라이드를 만들 때 자산 선택기를 사용합니다.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
 핫스팟이나 이미지 맵이 있는 위치를 수동으로 입력하지 않고 선택하면 선택기를 사용합니다. 사이트 선택기는 [!DNL Adobe Experience Manager Sites] 고객인 경우에만 작동합니다. 제품 선택기에는 [!DNL Experience Manager Commerce]도 필요합니다.
 
-## Dynamic Media {#selecting-products}에서 제품 선택
+## Dynamic Media에서 제품 선택 {#selecting-products}
 
 제품 선택기를 사용하여 핫스팟이나 이미지 맵이 제품 카탈로그의 특정 제품에 대한 빠른 보기를 제공할 때 제품을 선택합니다.
 
@@ -82,7 +82,7 @@ ht-degree: 2%
 
 1. 핫스팟 또는 이미지 맵을 탭하는 경우 **[!UICONTROL 미리 보기]** 모드에서는 지정한 [!DNL Experience Manager] 사이트 페이지로 이동합니다.
 
-## Dynamic Media {#selecting-assets}에서 자산 선택
+## Dynamic Media에서 자산 선택 {#selecting-assets}
 
 회전판 배너, 대화형 비디오, 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 사용할 이미지를 선택하려면 이 선택기를 사용합니다. 대화형 비디오에서 **[!UICONTROL 컨텐츠]** 탭에서 **[!UICONTROL 자산 선택]**&#x200B;을 탭할 때 자산 선택기를 사용할 수 있습니다. 회전 집합에서 슬라이드를 만들 때 자산 선택기를 사용할 수 있습니다. 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 각각 이미지 세트, 혼합 미디어 세트 또는 스핀 세트를 만들 때 자산 선택기를 사용할 수 있습니다.
 
