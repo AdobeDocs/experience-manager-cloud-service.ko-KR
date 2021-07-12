@@ -2,9 +2,9 @@
 title: 자산 미리 보기
 description: Dynamic Media에서 자산을 미리 보는 방법을 알아봅니다.
 feature: 자산 관리
-role: Business Practitioner
+role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -55,10 +55,10 @@ ht-degree: 1%
       </ul>
       <p><strong>3D 장면 탐색</strong></p>
       <ul>
-      <li><p><strong>3D 카메라 회전</strong>  - 3D 장면 및 개체 주위로 보기를 도전합니다.</p> 마우스:왼쪽 클릭 + 드래그.</p> 터치 스크린:누르기 + 드래그.</p></li>
-      <li><p><strong>카메라</strong>  패닝 - 뷰 왼쪽, 오른쪽, 위쪽, 아래쪽으로 패닝합니다.</p> 마우스:마우스 오른쪽 단추 클릭 + 드래그.</p> 터치 스크린:두 손가락으로 누르기 + 드래그.</p></li>
-      <li><p><strong>카메라 확대</strong>  - 3D 장면의 영역을 확대/축소하려면 카메라를 확대합니다.</p> 마우스:스크롤 휠입니다.</p> 터치 스크린:손가락을 꼬집어요</p></li>
-      <li><p><strong>카메라 다시 입력</strong>  - 3D 장면 및 개체 주위의 보기를 추적합니다.</p> 마우스:두 번 클릭합니다.</p> 터치 스크린:두 번 탭하세요.</li></ul></td>
+      <li><p><strong>3D 카메라 회전</strong>  - 3D 장면 및 개체 주위로 보기를 도전합니다.</p> 마우스: 왼쪽 클릭 + 드래그.</p> 터치 스크린: 누르기 + 드래그.</p></li>
+      <li><p><strong>카메라</strong>  패닝 - 뷰 왼쪽, 오른쪽, 위쪽, 아래쪽으로 패닝합니다.</p> 마우스: 마우스 오른쪽 단추 클릭 + 드래그.</p> 터치 스크린: 두 손가락으로 누르기 + 드래그.</p></li>
+      <li><p><strong>카메라 확대</strong>  - 3D 장면의 영역을 확대/축소하려면 카메라를 확대합니다.</p> 마우스: 스크롤 휠입니다.</p> 터치 스크린: 손가락을 꼬집어요</p></li>
+      <li><p><strong>카메라 다시 입력</strong>  - 3D 장면 및 개체 주위의 보기를 추적합니다.</p> 마우스: 두 번 클릭합니다.</p> 터치 스크린: 두 번 탭하세요.</li></ul></td>
       </tr>
       <tr>
       <td><p>이미지</p> </td>
