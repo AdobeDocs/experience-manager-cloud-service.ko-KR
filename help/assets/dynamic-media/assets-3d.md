@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Serv
 topic-tags: introduction
 content-type: reference
 feature: 3D 자산
-role: Business Practitioner
+role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 3%
@@ -40,9 +40,9 @@ Dynamic Media은 다음 3D 파일 형식을 지원합니다.
 | GLB | 이진 GL 전송 | model/gltf-binary | 재료와 텍스처를 하나의 자산으로 포함합니다. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 입체광조형 | application/vnd.ms-pki.stl |  |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집만 지원보거나 상호 작용을 사용할 수 없습니다.* USDZ는 Safari 또는 iOS에서 기본적으로 볼 수 있는 독점 3D 포맷입니다. |
+| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집만 지원 보거나 상호 작용을 사용할 수 없습니다.* USDZ는 Safari 또는 iOS에서 기본적으로 볼 수 있는 독점 3D 포맷입니다. |
 
-## 빠른 시작:Dynamic Media의 3D 자산 {#quick-start-three-d}
+## 빠른 시작: Dynamic Media의 3D 자산 {#quick-start-three-d}
 
 다음 단계별 워크플로우 설명은 Dynamic Media에서 3D 자산을 빠르게 시작하고 실행할 수 있도록 설계되었습니다.
 
@@ -79,7 +79,7 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 [!DNL Experience Manager
 
 ## 3D 자산 보기 및 상호 작용 정보 {#viewing-three-d-assets}
 
-이 섹션에서는 다음 두 가지 방법으로 3D 자산을 보고 상호 작용하는 방법을 설명합니다.자산 세부 사항 페이지 내와 사이트의 3D 미디어 구성 요소 내에서 를 참조하십시오.
+이 섹션에서는 다음 두 가지 방법으로 3D 자산을 보고 상호 작용하는 방법을 설명합니다. 자산 세부 사항 페이지 내와 사이트의 3D 미디어 구성 요소 내에서 를 참조하십시오.
 
 대화형 3D 뷰어에는 특히 3D 자산을 궤도 회전, 확대/축소 및 이동할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
 
