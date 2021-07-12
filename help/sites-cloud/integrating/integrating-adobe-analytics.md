@@ -2,9 +2,9 @@
 title: Adobe Analytics와 통합
 description: 'Adobe Analytics와 통합 '
 feature: 관리
-role: Administrator
+role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 4%
@@ -47,11 +47,11 @@ Adobe Analytics 구성 창에 있는 구성 필드는 다음과 같습니다.
 | 세그먼트 | 현재 보고 세트에 정의된 Analytics 세그먼트를 사용하는 옵션. Analytics 보고서는 세그먼트를 기반으로 필터링됩니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)를 참조하십시오. |
 | 보고서 세트 | 데이터를 보내고 보고서를 가져오는 저장소입니다. 보고서 세트 는 선택한 웹 사이트, 웹 사이트 집합 또는 웹 사이트 페이지의 하위 집합에 대한 전체적이고 독립적인 보고를 정의합니다. 단일 보고서 세트에서 가져온 보고서를 볼 수 있으며, 요구 사항에 따라 언제든지 구성에서 이 필드를 편집할 수 있습니다. |
 
-### 사이트 {#add-configuration}에 구성 추가
+### 사이트에 구성 추가 {#add-configuration}
 
-사이트에 Touch UI 구성을 적용하려면 다음 위치로 이동하십시오.**사이트** → **사이트 페이지** → **속성** → **고급** → **구성** → 구성 테넌트를 선택합니다.
+사이트에 Touch UI 구성을 적용하려면 다음 위치로 이동하십시오. **사이트** → **사이트 페이지** → **속성** → **고급** → **구성** → 구성 테넌트를 선택합니다.
 
-## Adobe Launch {#analytics-launch}를 사용하여 AEM 사이트에서 Adobe Analytics 통합
+## Launch를 사용하여 AEM 사이트에서 Adobe Analytics 통합 {#analytics-launch}
 
 Adobe Analytics은 Launch 속성에서 확장으로 추가할 수 있습니다. Adobe Analytics에 대한 매핑 및 사후 호출을 수행하도록 규칙을 정의할 수 있습니다.
 
