@@ -2,9 +2,9 @@
 title: MSM 문제 해결 및 FAQ
 description: 가장 일반적인 MSM 관련 문제를 해결하고 가장 일반적인 MSM 관련 질문에 대한 답변을 얻는 방법을 알아봅니다.
 feature: 다중 사이트 관리자
-role: Administrator
+role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MSM 문제 해결 및 FAQ {#troubleshooting-msm}
 
-## 첫 번째 단계 문제 해결 {#first-steps}
+## 첫 단계 문제 해결 {#first-steps}
 
 MSM에서 잘못된 동작이나 오류가 발생한 경우 시작 및 세부 문제 해결을 시작하기 전에 다음을 확인하십시오.
 
@@ -58,13 +58,13 @@ MSM은 리소스 URL의 선택기로 요청할 수 있는 여러 서블릿을 �
 
 다음은 MSM 및 Live Copy와 관련된 몇 가지 FAQ입니다.
 
-### MSM 롤아웃 중에 일부 속성(예: 제목, 주석)이 업데이트되지 않는 이유는 무엇입니까?{#missing-properties}
+### MSM 롤아웃 중에 일부 속성(예: 제목, 주석)이 업데이트되지 않는 이유는 무엇입니까? {#missing-properties}
 
 MSM 동기화 작업은 구성 가능성이 높습니다. 롤아웃 중에 수정되는 속성 또는 구성 요소는 해당 구성의 속성에 따라 직접 수정됩니다.
 
 이 항목에 대한 자세한 내용은 [이 문서](best-practices.md)를 참조하십시오.
 
-### 작성자 그룹에 대한 롤아웃 권한을 제거하려면 어떻게 해야 합니까?{#remove-rollout-permissions}
+### 작성자 그룹에 대한 롤아웃 권한을 제거하려면 어떻게 해야 합니까? {#remove-rollout-permissions}
 
 AEM 주체(사용자 또는 그룹)에 대해 설정하거나 제거할 수 있는 **롤아웃** 권한이 없습니다.
 
@@ -73,7 +73,7 @@ AEM 주체(사용자 또는 그룹)에 대해 설정하거나 제거할 수 있�
 * 지정된 주도자에 대한 롤아웃 작업을 숨기도록 제품 UI를 사용자 지정합니다.
 * 롤아웃이 허용되지 않는 작성자의 Live Copy 트리에서 쓰기 권한을 제거합니다.
 
-### 접미사가 &quot;_msm_moved&quot;인 Live Copy 페이지가 표시되는 이유는 무엇입니까?{#moved-pages}
+### 접미사가 &quot;_msm_moved&quot;인 Live Copy 페이지가 표시되는 이유는 무엇입니까? {#moved-pages}
 
 블루프린트 페이지가 롤아웃되면 해당 Live Copy 페이지를 업데이트하거나, 페이지가 아직 존재하지 않는 경우(예: 처음 롤아웃되거나 Live Copy 페이지가 수동으로 삭제되었을 때) 새 Live Copy 페이지를 만듭니다.
 
