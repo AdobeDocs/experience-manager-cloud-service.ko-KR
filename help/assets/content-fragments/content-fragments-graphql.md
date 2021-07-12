@@ -2,16 +2,16 @@
 title: GraphQL에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달
 description: 헤드리스 컨텐츠 전달을 위해 GraphQL에서 AEM 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: 콘텐츠 조각
-role: Business Practitioner
+role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
 
 ---
 
-# GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달
+# GraphQL에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 Adobe Experience Manager(AEM)을 Cloud Service으로 사용하면 AEM GraphQL API(표준 GraphQL을 기반으로 하는 사용자 정의 구현)와 함께 컨텐츠 조각을 사용하여 애플리케이션에서 사용할 수 있도록 구조화된 컨텐츠를 헤드리게 할 수 있습니다. 단일 API 쿼리를 사용자 지정하는 기능을 사용하면 렌더링하려는 특정 콘텐츠(단일 API 쿼리에 대한 응답)를 검색하고 전달할 수 있습니다.
 
@@ -49,7 +49,7 @@ GraphQL은 다음과 같습니다.
 
    [GraphQL.org](https://graphql.org) 참조
 
-[AEM GraphQL API](#aem-graphql-api)에서는 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)에 대해 (복잡한) 쿼리를 수행할 수 있습니다.각 쿼리가 특정 모델 유형에 따라 달라집니다. 그런 다음 반환된 컨텐츠를 애플리케이션에서 사용할 수 있습니다.
+[AEM GraphQL API](#aem-graphql-api)에서는 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)에 대해 (복잡한) 쿼리를 수행할 수 있습니다. 각 쿼리가 특정 모델 유형에 따라 달라집니다. 그런 다음 반환된 컨텐츠를 애플리케이션에서 사용할 수 있습니다.
 
 ## AEM GraphQL API {#aem-graphql-api}
 
@@ -57,7 +57,7 @@ Adobe Experience as a Cloud Experience에서 표준 GraphQL API의 사용자 정
 
 AEM GraphQL API 구현은 [GraphQL Java 라이브러리](https://graphql.org/code/#java)를 기반으로 합니다.
 
-## AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}에 사용할 컨텐츠 조각
+## AEM GraphQL API에서 사용할 컨텐츠 조각 {#content-fragments-use-with-aem-graphql-api}
 
 [컨텐츠 ](#content-fragments) 조각 은 다음과 같이 AEM 쿼리를 위한 GraphQL의 기반으로 사용됩니다.
 
@@ -103,7 +103,7 @@ AEM GraphQL API 구현은 [GraphQL Java 라이브러리](https://graphql.org/cod
 
 컨텐츠 조각 모델을 디자인하고 개발하는 데 도움이 되도록 [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md)을 미리 볼 수 있습니다.
 
-## GraphQL을 AEM과 함께 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
+## AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
 AEM GraphQL API 사용에 대한 소개는 [AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)을 참조하십시오.
 
