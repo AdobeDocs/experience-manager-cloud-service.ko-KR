@@ -2,16 +2,16 @@
 title: 컨텐츠 번역 준비
 description: 컨텐츠를 번역 준비하는 방법을 알아봅니다.
 feature: 언어 복사
-role: Administrator
+role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
-# 컨텐츠 번역 준비 중 {#preparing-content-for-translation}
+# 컨텐츠 번역 준비 {#preparing-content-for-translation}
 
 다국어 웹 사이트는 일반적으로 여러 언어로 일부 콘텐츠를 제공합니다. 사이트는 한 언어로 작성된 다음 다른 언어로 번역됩니다. 일반적으로 다국어 사이트는 페이지 분기로 구성되며, 각 분기에는 사이트의 페이지를 다른 언어로 포함합니다.
 
