@@ -2,9 +2,9 @@
 title: 컨텐츠 조각을 사용한 작업
 description: AEM(Adobe Experience Manager)의 Cloud Service 컨텐츠 조각을 사용하여 헤드리스 게재에 적합한 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법을 알아봅니다.
 feature: 콘텐츠 조각
-role: Business Practitioner
+role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 75%
@@ -260,7 +260,7 @@ AEM은 조각 컨텐츠 번역도 지원합니다. 자세한 내용은 [자산 �
    * [은 Tools](/help/assets/content-fragments/content-fragments-models.md)을 사용하여 만들어집니다.
    * [조각을 만드는 데 필요합니다](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * 조각(제목, 컨텐츠 요소, 태그 정의)의 구조를 정의합니다.
-   * 컨텐츠 모델 정의는 제목과 하나의 데이터 요소를 필요로 합니다.그 외의 모든 것은 선택 사항입니다.
+   * 컨텐츠 모델 정의는 제목과 하나의 데이터 요소를 필요로 합니다. 그 외의 모든 것은 선택 사항입니다.
    * 기본 컨텐츠(해당되는 경우)를 정의할 수 있습니다.
    * 작성자는 조각 컨텐츠를 작성할 때 정의된 구조를 변경할 수 없습니다.
    * 종속된 컨텐츠 조각을 만든 후 모델을 변경하면 해당 컨텐츠 조각에 영향을 줄 수 있습니다.
