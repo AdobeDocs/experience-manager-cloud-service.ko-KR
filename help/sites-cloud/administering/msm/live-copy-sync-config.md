@@ -2,9 +2,9 @@
 title: Live Copy 동기화 구성
 description: 사용 가능한 강력한 Live Copy 동기화 옵션과 프로젝트 요구 사항에 맞게 구성 및 사용자 지정할 수 있는 방법에 대해 알아봅니다.
 feature: 다중 사이트 관리자
-role: Administrator
+role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2339'
 ht-degree: 31%
@@ -31,7 +31,7 @@ Adobe Experience Manager에서는 즉시 사용 가능한 다양한 동기화 �
 
 각 롤아웃 구성은 롤아웃이 발생하도록 하는 롤아웃 트리거를 사용합니다. 롤아웃 구성은 다음 트리거 중 하나를 사용할 수 있습니다.
 
-* **롤아웃 시**:Rolloutcommand  **** 는 파란색 인쇄 페이지에서 사용되거나 Live  **** Copy 페이지에서 Synchronizecommand 가 사용됩니다.
+* **롤아웃 시**: Rolloutcommand  **** 는 파란색 인쇄 페이지에서 사용되거나 Live  **** Copy 페이지에서 Synchronizecommand 가 사용됩니다.
 * **수정 시**: 소스 페이지가 수정됩니다.
 * **활성화 시**: 소스 페이지가 활성화됩니다.
 * **비활성화 시**: 소스 페이지가 비활성화됩니다.
@@ -79,7 +79,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | `mandatory` | 이 작업은 Live Copy 페이지에서 여러 ACL의 권한을 특정 사용자 그룹에 대한 읽기 전용으로 설정합니다. 다음 ACL이 구성됩니다.<br>`ActionSet.ACTION_NAME_REMOVE`<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>이 작업은 페이지에만 사용하십시오. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
 | `mandatoryContent` | 이 작업은 Live Copy 페이지에서 여러 ACL의 권한을 특정 사용자 그룹에 대한 읽기 전용으로 설정합니다. 다음 ACL이 구성됩니다.<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>이 작업은 페이지에만 사용하십시오. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
 | `mandatoryStructure` | 이 작업은 Live Copy 페이지에서 `ActionSet.ACTION_NAME_REMOVE` ACL의 권한을 특정 사용자 그룹에 대한 읽기 전용으로 설정합니다.<br>이 작업은 페이지에만 사용합니다. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
-| `VersionCopyAction` | 블루프린트/소스 페이지가 한 번 이상 게시된 경우 이 작업은 게시된 버전을 사용하여 Live Copy 페이지를 만듭니다. 참고:이 작업은 게시된 소스 페이지를 기반으로 Live Copy 페이지를 생성하는 데에만 사용할 수 있으며, 기존 Live Copy 페이지를 업데이트하는 데에는 사용할 수 없습니다. |  |
+| `VersionCopyAction` | 블루프린트/소스 페이지가 한 번 이상 게시된 경우 이 작업은 게시된 버전을 사용하여 Live Copy 페이지를 만듭니다. 참고: 이 작업은 게시된 소스 페이지를 기반으로 Live Copy 페이지를 생성하는 데에만 사용할 수 있으며, 기존 Live Copy 페이지를 업데이트하는 데에는 사용할 수 없습니다. |  |
 | `PageMoveAction` | `PageMoveAction` 은 페이지가 블루프린트에서 이동되었을 때 적용됩니다.<br>이 작업은 이동 전 위치에서 이동 후 위치로 (관련) Live Copy 페이지를 이동하는 대신 복사합니다.<br>는 이동 전 위치에서 Live Copy 페이지를 변경하지  `PageMoveAction` 않습니다. 따라서 연속 롤아웃 구성의 경우 블루프린트 없이 라이브 관계의 상태가 됩니다.제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하도록 <br>[**** CQ MSM 페이지 이동 작업 서비스를 구성](#excluding-properties-and-node-types-from-synchronization)합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. | 참조를 업데이트하려면 `prop_referenceUpdate: (Boolean)`을 true(기본값)로 설정하십시오. |
 | `markLiveRelationship` | 이 작업 launch에서 만든 컨텐츠에 대한 라이브 관계가 존재함을 나타냅니다. |  |
 
@@ -98,7 +98,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 특정 노드 유형 및 속성에 영향을 주지 않도록 해당 동기화 작업을 지원하는 여러 OSGi 서비스를 구성할 수 있습니다. 예를 들어, AEM의 내부 기능과 관련된 많은 속성 및 하위 노드는 Live Copy에 포함하지 않아야 합니다. 페이지의 사용자와 관련된 컨텐츠만 복사해야 합니다.
 
-AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/implementing/deploying/configuring-osgi.md) 구성 을 참조하십시오.
+AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/implementing/deploying/configuring-osgi.md) 구성 을 참조하십시오.
 
 다음 표에는 제외할 노드를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 표는 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
 
@@ -137,7 +137,7 @@ AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설
 
 참조 업데이트와 관련된 해당 동기화 작업을 지원하는 여러 OSGi 서비스를 구성할 수 있습니다.
 
-AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/implementing/deploying/configuring-osgi.md) 구성 을 참조하십시오.
+AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/implementing/deploying/configuring-osgi.md) 구성 을 참조하십시오.
 
 다음 표에는 참조 업데이트를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 표는 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
 
