@@ -2,9 +2,9 @@
 title: 스마트 이미징
 description: Adobe Sensei AI를 사용한 스마트 이미징이 각 사용자의 고유한 보기 특성을 적용하여 환경에 최적화된 적합한 이미지를 자동으로 제공하므로 향상된 성능과 참여를 제공합니다.
 feature: 자산 관리,표현물
-role: Business Practitioner
+role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0946383504aec025bda8c4087495deb2526b5fe3
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
@@ -80,7 +80,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 
 >[!NOTE]
 >
->DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone5 및 DPR=3이 있는 iPhone12에서는 모두 DPR=2를 표시합니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중:Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
+>DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone5 및 DPR=3이 있는 iPhone12에서는 모두 DPR=2를 표시합니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중: Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
 
 ## 최신 스마트 이미징의 주요 이점은 무엇입니까? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -180,7 +180,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 내 계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-스마트 이미징 사용 요청을 시작합니다.자동으로 활성화되지 않습니다.
+스마트 이미징 사용 요청을 시작합니다. 자동으로 활성화되지 않습니다.
 
 기본적으로 Dynamic Media 회사 계정에 대해 스마트 이미징 DPR 및 네트워크 최적화가 비활성화(꺼짐)됩니다. 이러한 기본 개선 사항 중 하나 또는 둘 다 활성화(켜기)하려면 아래 설명된 지원 사례를 만드십시오.
 
@@ -215,7 +215,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 1. Adobe 고객 지원 팀에서는 요청이 제출되는 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원 팀에서 대상 날짜를 조정하고 설정해야 합니다.
-1. **선택** 사항:Adobe이 새 기능을 프로덕션에 푸시하기 전에 스테이징에서 스마트 이미징을 선택적으로 테스트할 수 있습니다.
+1. **선택** 사항: Adobe이 새 기능을 프로덕션에 푸시하기 전에 스테이징에서 스마트 이미징을 선택적으로 테스트할 수 있습니다.
 1. 고객 지원 센터에서 이 작업을 완료하면 알림을 받게 됩니다.
 1. 스마트 이미징의 성능 향상을 극대화하려면 Adobe에서 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN에 의해 자산이 캐시되는 기간을 정의합니다. 이 설정을 변경하려면 다음을 수행하십시오.
 
