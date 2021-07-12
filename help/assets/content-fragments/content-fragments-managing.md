@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 관리
 description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
 feature: 콘텐츠 조각
-role: Business Practitioner
+role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1746'
 ht-degree: 66%
@@ -31,7 +31,7 @@ ht-degree: 66%
 >
 >컨텐츠 조각은 다음 방법으로 사용할 수 있습니다.
 >
->* 페이지를 작성할 때[컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)을 참조하십시오.
+>* 페이지를 작성할 때 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)을 참조하십시오.
 >* GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)에서 컨텐츠 조각을 사용하여 [헤드리스 컨텐츠 전달에 사용할 수 있습니다.
 
 
@@ -53,7 +53,7 @@ ht-degree: 66%
 1. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
 1. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
-   * [모델](/help/assets/content-fragments/content-fragments-models.md)  - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다.예를  **** 들면
+   * [모델](/help/assets/content-fragments/content-fragments-models.md)  - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예를  **** 들면
 
       * 사용 가능한 모든 모델이 표시됩니다.
 
@@ -88,7 +88,7 @@ ht-degree: 66%
    >[!NOTE]
    >콘솔의 **목록** 모드에서 **보기 설정**&#x200B;을 업데이트하여 **컨텐츠 조각 모델** 열을 활성화할 수 있습니다.
 
-## 자산 콘솔에서 컨텐츠 조각에 대한 작업 {#actions-for-a-content-fragment-assets-console}
+## 자산 콘솔의 컨텐츠 조각에 대한 작업 {#actions-for-a-content-fragment-assets-console}
 
 **자산** 콘솔에서 컨텐츠 조각에 다양한 작업을 사용할 수 있습니다.
 
@@ -190,13 +190,13 @@ ht-degree: 66%
 
    * 이 이름은 모델 편집기를 여는 링크이기도 합니다.
 
-* 조각의 상태를 참조하십시오.예를 들어 생성, 수정 또는 게시된 시기에 대한 정보입니다. 상태도 색상으로 구분됩니다.
+* 조각의 상태를 참조하십시오. 예를 들어 생성, 수정 또는 게시된 시기에 대한 정보입니다. 상태도 색상으로 구분됩니다.
 
-   * **새로 만들기**:회색
-   * **초안**:파란색
-   * **게시됨**:녹색
-   * **수정됨**:주황
-   * **비활성화됨**:빨간색
+   * **새로 만들기**: 회색
+   * **초안**: 파란색
+   * **게시됨**: 녹색
+   * **수정됨**: 주황
+   * **비활성화됨**: 빨간색
 
 * **** Saveen에서  **저장 및 닫기 옵션에 액세스할** 수 있습니다.
 
@@ -355,7 +355,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 게시 환경에서 사용하려면 컨텐츠 조각을 게시해야 합니다. 게시할 수 있는 시점:
 
-* 생성 후;자산 콘솔에서 사용할 수 있는 [작업 사용](#actions-for-a-content-fragment-assets-console)
+* 생성 후; 자산 콘솔에서 사용할 수 있는 [작업 사용](#actions-for-a-content-fragment-assets-console)
 * [컨텐츠 조각 편집기에서](#toolbar-actions-in-the-content-fragment-editor).
 * [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)할 때. 페이지 참조에 조각이 나열됩니다.
 
