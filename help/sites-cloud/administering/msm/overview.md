@@ -2,16 +2,16 @@
 title: 컨텐츠 재사용 - 다중 사이트 관리자 및 Live Copy
 description: AEM의 강력한 Live Copy 및 다중 사이트 관리자 기능을 사용하여 컨텐츠를 재사용하는 방법을 소개합니다.
 feature: 다중 사이트 관리자
-role: Administrator
+role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 1%
 
 ---
 
-# 컨텐츠 재사용:다중 사이트 관리자 및 Live Copy {#multi-site-manager-and-live-copy}
+# 컨텐츠 재사용: 다중 사이트 관리자 및 Live Copy {#multi-site-manager-and-live-copy}
 
 MSM(Multi Site Manager)을 사용하면 여러 위치에서 동일한 사이트 콘텐츠를 사용할 수 있습니다. MSM은 Live Copy 기능을 사용하여 이를 달성합니다.
 
@@ -180,8 +180,8 @@ MSM Live Copy는 원래 소스와의 라이브 관계가 유지 관리되는 특
 * Live Copy는 소스의 컨텐츠를 상속합니다.
 * 동기화는 소스에 변경 사항이 있을 때 실제 컨텐츠 전송을 수행합니다.
 * Live Copy는 다음 중 하나로 간주할 수 있습니다.
-   * 약식:단일 페이지
-   * 깊이:페이지와 해당 하위 페이지
+   * 약식: 단일 페이지
+   * 깊이: 페이지와 해당 하위 페이지
 * 롤아웃 구성이라고 하는 동기화 규칙은 동기화되는 속성과 동기화가 발생하는 시기를 결정합니다.
 
 이전 예에서 `/content/wknd/language-masters/en`은 영어로 된 글로벌 마스터 사이트입니다. 이 사이트의 컨텐츠를 다시 사용하려면 MSM Live Copy 가 만들어집니다.
@@ -191,7 +191,7 @@ MSM Live Copy는 원래 소스와의 라이브 관계가 유지 관리되는 특
 * 작성자가 `/content/wknd/language-masters/en` 아래의 페이지를 변경합니다.
 * 트리거되면 MSM은 이러한 변경 사항을 Live Copy에 동기화합니다.
 
-### 라이브 카피 - 구성 {#live-copies-composition}
+### Live Copy - 구성 {#live-copies-composition}
 
 >[!NOTE]
 >
@@ -297,7 +297,7 @@ Live Copy의 각 페이지 및 구성 요소는 라이브 관계를 통해 소�
 
 개별 페이지를 편집할 때 작성자는 구성 요소에 대해 **상속 취소**&#x200B;할 수 있습니다. 상속이 취소되면 라이브 관계가 일시 중단되고 해당 구성 요소에 대한 동기화가 발생하지 않습니다. 상속 및 동기화를 취소하면 컨텐츠의 하위 섹션을 사용자 지정해야 할 때 유용합니다.
 
-### Live Copy {#detaching-a-live-copy} 분리
+### Live Copy 분리 {#detaching-a-live-copy}
 
 블루프린트에서 [Live Copy](creating-live-copies.md#detaching-a-live-copy)를 분리하여 모든 연결을 제거할 수도 있습니다.
 
@@ -311,7 +311,7 @@ Live Copy의 각 페이지 및 구성 요소는 라이브 관계를 통해 소�
 >
 >하위 및 상위 페이지에 대한 관련 영향을 포함하여 자세한 내용은 [Live Copy 분리](creating-live-copies.md#detaching-a-live-copy) 를 참조하십시오.
 
-## MSM {#standard-steps-for-using-msm} 사용을 위한 표준 단계
+## MSM 사용 표준 단계 {#standard-steps-for-using-msm}
 
 다음 단계에서는 MSM을 사용하여 컨텐츠를 재사용하고 변경 사항을 Live Copy에 동기화하는 표준 절차를 설명합니다.
 
@@ -327,7 +327,7 @@ Live Copy의 각 페이지 및 구성 요소는 라이브 관계를 통해 소�
 1. 필요에 따라 소스 컨텐츠를 변경합니다. 조직에서 설정한 일반 컨텐츠 검토 및 승인 프로세스를 사용해야 합니다.
 1. [블루프린트](creating-live-copies.md#rolling-out-a-blueprint) 를 롤아웃하거나  [Live Copy를 ](creating-live-copies.md#synchronizing-a-live-copy) 변경 사항과 동기화합니다.
 
-## MSM {#customizing-msm} 사용자 지정
+## MSM 사용자 지정 {#customizing-msm}
 
 MSM은 콘텐츠를 공유할 때 발생할 수 있는 매우 복잡한 구현에 맞게 도구를 제공합니다.
 
