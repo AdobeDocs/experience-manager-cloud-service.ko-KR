@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁.
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 2%
@@ -116,7 +116,7 @@ ht-degree: 2%
    <td>
     <ul>
      <li>폴더에 비디오 프로필이 할당되어 있는지 확인합니다(지원되지 않는 파일 형식인 경우). 지원되지 않는 경우에는 이미지만 표시됩니다.</li>
-     <li>비디오 프로필에는 AVS 세트를 생성하려면 둘 이상의 인코딩 사전 설정이 포함되어야 합니다(단일 인코딩은 MP4 파일에 대한 비디오 컨텐츠로 처리됨).지원되지 않는 파일의 경우 처리되지 않은 것으로 처리됨).</li>
+     <li>비디오 프로필에는 AVS 세트를 생성하려면 둘 이상의 인코딩 사전 설정이 포함되어야 합니다(단일 인코딩은 MP4 파일에 대한 비디오 컨텐츠로 처리됨). 지원되지 않는 파일의 경우 처리되지 않은 것으로 처리됨).</li>
      <li>메타데이터에서 <code>dam:scene7File</code> 의 <code>dam:scene7FileAvs</code> 을 확인하여 비디오 처리가 완료되었는지 확인합니다.</li>
     </ul> </td>
    <td>
@@ -179,7 +179,7 @@ ht-degree: 2%
   <tr>
    <td>뷰어 사전 설정이 게시되지 않음</td>
    <td><p>샘플 관리자 진단 페이지로 진행합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>계산된 값을 관찰합니다. 올바르게 작동하면 다음을 볼 수 있습니다.</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>:뷰어 자산을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 <strong>활성화되지 않은 모든 자산 목록</strong> 단추 중 하나를 클릭하여 세부 사항을 확인합니다.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>: 뷰어 자산을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 <strong>활성화되지 않은 모든 자산 목록</strong> 단추 중 하나를 클릭하여 세부 사항을 확인합니다.</p> </td>
    <td>
     <ol>
      <li>관리 도구의 뷰어 사전 설정 목록으로 이동합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
