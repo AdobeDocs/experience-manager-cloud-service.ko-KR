@@ -2,9 +2,9 @@
 title: Dynamic Media 뉴스레터
 description: 'Dynamic Media Newsletter by Experience League은 월간 뉴스레터입니다. Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다. 이 원스톱 상점 뉴스레터에서 유용한 지식 구축 리소스를 이용할 수 있습니다. 예를 들어 방법 비디오 및 솔루션 개요 가 있습니다. 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 몇 가지 주요 기능과 성능에 대해 알아보십시오. '
 feature: 자산 관리
-role: Business Practitioner
+role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
    * 이러한 어려운 시기에 리치 미디어 투자가 도움이 되는 세 가지 방법을 살펴보십시오.
    * Smart Imaging을 사용하여 페이지 로드를 줄이는 방법을 웨비나에 등록하십시오.
    * Dynamic Media Classic용 온디맨드 Skill Builder 웨비나를 시청하십시오.
-   * Online Adobe Summit 2020에서 Dynamic Media 세션을 봅니다.
+   * 온라인 Adobe Summit 2020에서 Dynamic Media 세션을 봅니다.
    * Adobe의 무료 Dynamic Media Classic 감사에 대해 자세히 알아보십시오.
    * 고객 성공 서비스의 수석 프로그램 관리자 John Monroe를 만나보십시오.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
    이 문제:
 
    * 새로운 Skill Builder 웨비나에 참석하여 Dynamic Media Classic 전문가로 전환하십시오.
-   * Adobe Summit 2020에서 Dynamic Media을 찾을 수 있는 위치를 확인하십시오.
+   * 2020년 Adobe Summit에서 Dynamic Media을 찾을 수 있는 위치를 확인하십시오.
    * Dynamic Media의 자르기 마법을 사용하는 방법을 알아봅니다.
    * Dynamic Media Classic을 통해 더 많은 가치를 얻을 수 있도록 하려면 Adobe의 무료 감사를 이용하십시오.
    * Dynamic Media Classic의 새 사용자 인터페이스에 대해 알아봅니다.
@@ -112,7 +112,7 @@ ht-degree: 0%
 
    * Dynamic Media으로 업그레이드할 때만 사용할 수 있는 중요한 기능을 살펴보십시오.
    * Experience Manager 자산 및 Dynamic Media을 빠르게 이해할 수 있도록 설계된 웨비나 시리즈에 대해 알아보십시오.
-   * Experience League에서 Dynamic Media의 가치를 창출하는 여정을 시작합니다.
+   * Experience League 시 Dynamic Media의 가치 창출을 여정으로 시작합니다.
    * 방문자가 리치 미디어와 상호 작용하는 방법을 분석할 수 있는 이번 9월 강력한 통합을 신속하게 엿볼 수 있습니다.
    * Dynamic Media 기술 지원 분야의 PieterJan Pieper를 만나보십시오.
 
