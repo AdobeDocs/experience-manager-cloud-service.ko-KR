@@ -3,9 +3,9 @@ title: 이미지 품질 최적화 우수 사례
 description: Dynamic Media을 사용하여 이미지 자산의 품질을 최적화하는 데 도움이 되는 우수 사례를 알아봅니다.
 contentOwner: Rick Brough
 feature: 자산 관리
-role: Business Practitioner
+role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1480'
 ht-degree: 1%
@@ -69,16 +69,16 @@ Experience Manager을 사용하면 섭취, 게재 시 또는 둘 다에 따라 �
 
       * [Experience Manager에서 이미지 선명하게 하기 사용 - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)을 시청하십시오.
 
-      * Experience Manager을 사용하면 네 번째 매개 변수를 제어할 수도 있습니다.모노크롬(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 개별적으로 또는 값 1을 사용하여 이미지 명도/강도에 언샵 마스킹이 적용되는지 여부를 결정합니다.
+      * Experience Manager을 사용하면 네 번째 매개 변수를 제어할 수도 있습니다. 모노크롬(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 개별적으로 또는 값 1을 사용하여 이미지 명도/강도에 언샵 마스킹이 적용되는지 여부를 결정합니다.
 
 
 
 가장 좋은 방법은 언샵 마스크 반경 매개 변수로 시작하십시오. 시작할 수 있는 반경 설정은 다음과 같습니다.
 
-* **[!UICONTROL 웹 사이트]**:0.2-0.3픽셀
-* **[!UICONTROL 사진 인쇄(250-300ppi)]**:0.3-0.5픽셀
-* **[!UICONTROL 오프셋 인쇄(266-300ppi)]**:0.7-1.0픽셀
-* **[!UICONTROL 캔버스 인쇄(150ppi)]**:1.5-2.0픽셀
+* **[!UICONTROL 웹 사이트]**: 0.2-0.3픽셀
+* **[!UICONTROL 사진 인쇄(250-300ppi)]**: 0.3-0.5픽셀
+* **[!UICONTROL 오프셋 인쇄(266-300ppi)]**: 0.7-1.0픽셀
+* **[!UICONTROL 캔버스 인쇄(150ppi)]**: 1.5-2.0픽셀
 
 1.75에서 4로 점진적으로 증가시키세요. 선명하게 하기가 여전히 원하는 방식이 아닌 경우 반지름을 소수점으로 늘린 다음 양을 1.75에서 4로 다시 실행합니다. 필요에 따라 반복합니다.
 
@@ -86,7 +86,7 @@ Experience Manager을 사용하면 섭취, 게재 시 또는 둘 다에 따라 �
 
 ### JPEF 압축에 대한 우수 사례(`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
-* 이 매개 변수는 JPG 인코딩 품질을 제어합니다. 값이 높을수록 화질이 높지만 파일 크기가 커집니다.또는 값이 낮을수록 품질이 떨어지지만 파일 크기가 작다는 의미입니다. 이 매개 변수의 범위는 0-100입니다.
+* 이 매개 변수는 JPG 인코딩 품질을 제어합니다. 값이 높을수록 화질이 높지만 파일 크기가 커집니다. 또는 값이 낮을수록 품질이 떨어지지만 파일 크기가 작다는 의미입니다. 이 매개 변수의 범위는 0-100입니다.
 * 품질에 최적화하려면 매개 변수 값을 100으로 설정하지 마십시오. 90 또는 95와 100의 설정 차이는 거의 알 수 없지만 100은 이미지 파일의 크기를 불필요하게 증가시킵니다. 따라서 품질에 최적화되지만 이미지 파일이 너무 커지지 않도록 하려면 `qlt= value`을 90 또는 95로 설정하십시오.
 * 작은 이미지 파일 크기에 맞게 최적화하되, 이미지 품질을 허용 수준으로 유지하려면 `qlt= value`을 80으로 설정하십시오. 70~75보다 낮은 값은 상당한 이미지 품질이 저하됩니다.
 * 가장 좋은 방법으로서 중간에 있으려면 `qlt= value`을 85로 설정하면 중간에 있습니다.
