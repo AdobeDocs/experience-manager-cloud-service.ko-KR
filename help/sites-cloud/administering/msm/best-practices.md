@@ -2,9 +2,9 @@
 title: MSM 우수 사례
 description: AEM Multi Site Manager를 사용하여 구축하고 실행하는 데 도움이 되도록 Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 우수 사례를 알아봅니다.
 feature: 다중 사이트 관리자
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Live Copy에서 페이지 이동을 고려할 때 다음 우수 사례를 고려
       * Live Copy에서 각 페이지를 이전 위치에 유지하는 동안 페이지 이동을 롤아웃하려면(기본적으로 컨텐츠 복제):
          * 표준 롤아웃 구성 뒤에 새로 만든 구성을 배치합니다. 이렇게 하면 Live Copy에서 컨텐츠가 삭제되거나 게시에서 비활성화되지 않습니다.
 
-## 역할 사용자 지정 {#customizing-rollouts}
+## 롤아웃 사용자 지정 {#customizing-rollouts}
 
 MSM 롤아웃 구성은 사용자 지정이 매우 가능합니다. 롤아웃 자동화는 매우 큰 결과를 초래할 수 있습니다. 우수 사례로서, 다음 활동에 참여하기 전에 매우 신중하게 계획해야 합니다.
 
