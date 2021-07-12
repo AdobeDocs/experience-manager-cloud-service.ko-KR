@@ -2,16 +2,16 @@
 title: Dynamic Media Classic을 통해 CDN(Content Delivery Network) 캐시 무효화
 description: '"CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하여 캐시가 만료될 때까지 기다리는 대신 Dynamic Media에서 제공하는 자산을 빠르게 업데이트하는 방법을 알아봅니다."'
 feature: 자산 관리,Dynamic Media Classic
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
-# Dynamic Media Classic {#invalidating-your-cdn-cached-content}의 방식으로 CDN 캐시 무효화
+# Dynamic Media Classic을 통해 CDN 캐시 무효화 {#invalidating-your-cdn-cached-content}
 
 Dynamic Media 자산은 CDN(Content Delivery Network)에서 캐시하여 빠른 배달을 제공합니다. 그러나 자산을 업데이트할 때에는 이러한 변경 사항을 즉시 적용할 수 있습니다. CDN 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 전달하는 자산을 빠르게 업데이트할 수 있습니다.
 
@@ -21,7 +21,7 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에서 캐시하여 빠른 
 
 >[!IMPORTANT]
 >
->이 단계는 Adobe Experience Manager 6.5, 서비스 팩 5 이하의 Dynamic Media에만 적용됩니다.<!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
+>이 단계는 Adobe Experience Manager 6.5, 서비스 팩 5 이하의 Dynamic Media에만 적용됩니다. <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
 Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)에서 [캐시 개요 를 참조하십시오.
 
@@ -49,7 +49,7 @@ Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
-1. URL 목록 상자에서 **[!UICONTROL 계속]**&#x200B;을 눌러 각 특정 URL에 대한 캐시를 지웁니다. URL을 편집하거나 URL 목록 상자에 URL을 입력하거나 붙여넣어 URL을 추가할 수 있습니다.cdn 무효화 템플릿을 미리 설정할 필요가 없습니다.
+1. URL 목록 상자에서 **[!UICONTROL 계속]**&#x200B;을 눌러 각 특정 URL에 대한 캐시를 지웁니다. URL을 편집하거나 URL 목록 상자에 URL을 입력하거나 붙여넣어 URL을 추가할 수 있습니다. cdn 무효화 템플릿을 미리 설정할 필요가 없습니다.
 
    **[!UICONTROL 계속]**&#x200B;을 탭하면 캐시를 지우는 데 걸리는 시간을 예상할 수 있는 표시기가 표시됩니다.
 
@@ -57,6 +57,6 @@ Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base
 
    >[!NOTE]
    >
-   >자산을 선택한 다음 **[!UICONTROL 파일]** > **[!UICONTROL CDN 무효화]**&#x200B;를 탭하면 Dynamic Media은 무효화 CDN 템플릿을 사용하여 CDN에서 무효화할 URL을 자동으로 만듭니다. **[!UICONTROL CDN 템플릿 무효화]** 텍스트 상자에 아무 것도 없으면 빈 URL 목록이 표시됩니다. CDN의 캐싱은 자산 기반이 아닙니다.URL을 기반으로 합니다. 따라서 웹 사이트에 있는 전체 URL을 알고 있어야 합니다. 이러한 URL을 결정한 후 단계 앞부분에서 **[!UICONTROL CDN 템플릿 무효화]** 텍스트 상자에 추가할 수 있습니다. 그런 다음 해당 자산을 선택하고 한 단계에서 URL을 무효화할 수 있습니다.
+   >자산을 선택한 다음 **[!UICONTROL 파일]** > **[!UICONTROL CDN 무효화]**&#x200B;를 탭하면 Dynamic Media은 무효화 CDN 템플릿을 사용하여 CDN에서 무효화할 URL을 자동으로 만듭니다. **[!UICONTROL CDN 템플릿 무효화]** 텍스트 상자에 아무 것도 없으면 빈 URL 목록이 표시됩니다. CDN의 캐싱은 자산 기반이 아닙니다. URL을 기반으로 합니다. 따라서 웹 사이트에 있는 전체 URL을 알고 있어야 합니다. 이러한 URL을 결정한 후 단계 앞부분에서 **[!UICONTROL CDN 템플릿 무효화]** 텍스트 상자에 추가할 수 있습니다. 그런 다음 해당 자산을 선택하고 한 단계에서 URL을 무효화할 수 있습니다.
    >
    >다른 옵션은 전체 URL을 **[!UICONTROL CDN 무효화]** 목록에 추가하는 것입니다. 이 방법을 따르면 **[!UICONTROL 파일]** > **[!UICONTROL CDN 무효화]** 옵션으로 이동하기 전에 Dynamic Media Classic에서 자산을 선택할 필요가 없습니다.
