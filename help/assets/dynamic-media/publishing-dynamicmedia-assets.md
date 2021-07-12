@@ -3,9 +3,9 @@ title: Dynamic Media 자산 게시
 description: Dynamic Media 자산을 게시하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 feature: 자산 관리
-role: Business Practitioner
+role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 집합 또는 자산 게시에 대한 자세한 내용은 [자산 게시](/help/assets/manage-digital-assets.md)를 참조하십시오.
 
-## Dynamic Media 자산 {#http-delivery-of-dynamic-media-assets} 의 HTTP/2 전달
+## Dynamic Media 자산의 HTTP/2 전달 {#http-delivery-of-dynamic-media-assets}
 
 이제 Experience Manager은 HTTP/2를 통해 모든 Dynamic Media 컨텐츠(이미지 및 비디오)의 전달을 지원합니다. 즉, 이미지나 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 애플리케이션과 통합할 수 있습니다. 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저 및 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킬 수 있습니다.
 
