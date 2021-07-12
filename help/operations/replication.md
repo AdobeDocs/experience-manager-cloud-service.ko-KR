@@ -2,7 +2,7 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
+source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 4%
@@ -60,7 +60,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
 아래 그림과 같이 **도구 - 워크플로우 - 모델**&#x200B;을 선택하고 **컨텐츠 트리 게시** 기본 워크플로우 모델을 복사하여 트리 복제를 트리거할 수 있습니다.
 
-![](/help/operations/assets/publish-distribute.png)
+![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 원본 모델을 수정하거나 호출하지 마십시오. 대신 먼저 모델을 복사한 다음 해당 복사본을 수정하거나 호출해야 합니다.
 
@@ -94,9 +94,9 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
 **매개 변수**
 
-* `replicateAsParticipant` (부울 값, 기본값: `false`). `true`로 구성된 경우, 복제에서는 참가자 단계를 수행한 주도자의 `userid`을 사용하고 있습니다.
-* `enableVersion` (부울 값, 기본값: `true`). 이 매개 변수는 복제 시 새 버전을 만들지 여부를 결정합니다.
-* `agentId` (문자열 값, 기본값은 게시용 에이전트만 사용됨을 의미합니다.) agentId에 대해 명시하는 것이 좋습니다.예를 들어 값을 설정합니다.게시합니다. 에이전트를 `preview`으로 설정하면 미리 보기 서비스에 게시됩니다
+* `replicateAsParticipant` (부울 값, 기본값:  `false`). `true`로 구성된 경우, 복제에서는 참가자 단계를 수행한 주도자의 `userid`을 사용하고 있습니다.
+* `enableVersion` (부울 값, 기본값:  `true`). 이 매개 변수는 복제 시 새 버전을 만들지 여부를 결정합니다.
+* `agentId` (문자열 값, 기본값은 게시용 에이전트만 사용됨을 의미합니다.) agentId에 대해 명시하는 것이 좋습니다. 예를 들어 값을 설정합니다. 게시합니다. 에이전트를 `preview`으로 설정하면 미리 보기 서비스에 게시됩니다
 * `filters` (문자열 값, 기본값은 모든 경로가 활성화됨을 의미합니다.) 사용 가능한 값은 다음과 같습니다.
    * `onlyActivated` - 활성화됨으로 표시되지 않은 경로만 활성화됩니다.
    * `onlyModified` - 활성화 날짜보다 늦게 수정 날짜가 있고 이미 활성화된 경로만 활성화합니다.
