@@ -1,16 +1,16 @@
 ---
 title: 규칙 세트를 사용하여 URL 변환
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환하는 방법을 알아봅니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript™)으로 작성된 지침 세트입니다.'
-role: Business Practitioner
+role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
 
 ---
 
-# 규칙 세트를 사용하여 URL {#using-rulesets-to-transform-urls} 변환
+# 규칙 세트를 사용하여 URL 변환 {#using-rulesets-to-transform-urls}
 
 Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript™)으로 작성된 지침 세트입니다. 각 규칙은 하나 이상의 조건과 하나 이상의 작업으로 구성됩니다. 규칙은 조건에 대해 XML 데이터를 평가하고 조건이 충족되면 적절한 작업을 수행합니다. 규칙 세트의 예는 다음과 같습니다.
 
@@ -34,7 +34,7 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 자산 정
 
 >[!CAUTION]
 >
->규칙 세트를 사용할 때는 주의하십시오.웹 사이트에 Dynamic Media 컨텐츠가 표시되지 않도록 할 수 있습니다.
+>규칙 세트를 사용할 때는 주의하십시오. 웹 사이트에 Dynamic Media 컨텐츠가 표시되지 않도록 할 수 있습니다.
 
 고유한 규칙 세트를 만드는 데 도움이 되는 샘플 규칙 세트를 사용할 수 있습니다.
 [규칙 세트 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)를 참조하십시오.
