@@ -2,9 +2,9 @@
 title: Dynamic Media 뷰어 사전 설정 적용
 description: Dynamic Media에서 뷰어 사전 설정을 적용하는 방법을 알아봅니다.
 feature: 뷰어 사전 설정,뷰어
-role: Business Practitioner
+role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 뷰어 사전 설정에 문제가 있으면 [Dynamic Media 문제 해결](troubleshoot-dm.md#viewers) 을 참조하십시오.
 
-## 자산 {#applying-a-viewer-preset-to-an-asset}에 Dynamic Media 뷰어 사전 설정 적용
+## 자산에 Dynamic Media 뷰어 사전 설정 적용 {#applying-a-viewer-preset-to-an-asset}
 
 1. 자산을 열고 왼쪽 레일에서 **[!UICONTROL Viewers]**&#x200B;를 누릅니다.
 
@@ -34,6 +34,6 @@ ht-degree: 0%
 
 1. 오른쪽 창에 표시된 대로 자산에 적용할 수 있도록 왼쪽 창에서 뷰어를 선택합니다. [URL을 복사하여 다른 사용자와](linking-urls-to-yourwebapplication.md)을 공유할 수도 있습니다.
 
-## 뷰어 사전 설정 URL {#obtaining-viewer-preset-urls} 가져오기
+## 뷰어 사전 설정 URL 가져오기 {#obtaining-viewer-preset-urls}
 
 뷰어 사전 설정에 대한 URL을 가져오려면 [웹 애플리케이션에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
