@@ -2,9 +2,9 @@
 title: Live Copy 개요 콘솔
 description: 컨텐츠를 동기화하기 위해 Live Copy의 상태를 빠르게 파악할 수 있는 Live Copy 개요 콘솔의 기본 사항에 대해 알아봅니다.
 feature: 다중 사이트 관리자
-role: Administrator
+role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
@@ -44,7 +44,7 @@ ht-degree: 1%
 1. 선택한 블루프린트와 관련된 모든 Live Copy의 개요를 표시하고 사용하려면 **Live Copy 개요**&#x200B;를 선택합니다.
 1. **Close**&#x200B;를 사용하여 종료하고 **Sites** 콘솔로 돌아갑니다.
 
-### 블루프린트 페이지 {#properties-of-a-blueprint-page} 속성
+### 블루프린트 페이지의 속성 {#properties-of-a-blueprint-page}
 
 블루프린트 페이지의 속성을 볼 때 **Live Copy 개요**&#x200B;를 열 수 있습니다.
 
