@@ -2,9 +2,9 @@
 title: 360/VR 비디오
 description: Dynamic Media에서 360 및 VR(Virtual Reality) 비디오로 작업하는 방법을 알아봅니다.
 feature: 360 VR 비디오
-role: Business Practitioner
+role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 360/VR 비디오 {#vr-video}
 
-360도 동영상은 모든 방향에서 동시에 보기를 기록합니다. 그것들은 전방향 카메라나 카메라 모음을 사용하여 촬영된다. 재생 중에 플랫 디스플레이에서 사용자는 보기 각도를 제어할 수 있습니다.모바일 장치에서 재생은 일반적으로 내장된 회전 제어 기능을 적용합니다.
+360도 동영상은 모든 방향에서 동시에 보기를 기록합니다. 그것들은 전방향 카메라나 카메라 모음을 사용하여 촬영된다. 재생 중에 플랫 디스플레이에서 사용자는 보기 각도를 제어할 수 있습니다. 모바일 장치에서 재생은 일반적으로 내장된 회전 제어 기능을 적용합니다.
 
 Dynamic Media에는 360개의 비디오 자산 전달에 대한 기본 지원이 포함되어 있습니다. 기본적으로 보거나 재생하는 데 추가 구성이 필요하지 않습니다. .mp4, .mkv 및 .mov와 같은 표준 비디오 확장 기능을 사용하여 360 비디오를 제공합니다. 가장 일반적인 코덱은 H.264입니다.
 
 360/VR 비디오 뷰어를 사용하여 필요한 사각형 비디오를 렌더링할 수 있습니다. 그 결과, 방, 속성, 위치, 가로, 의료 시술 등의 몰입형 시청 환경이 제공됩니다.
 
-공간 오디오가 현재 지원되지 않습니다.오디오가 스테레오에 혼합되어 있는 경우 고객이 카메라 보기 각도를 변경할 때 균형(L/R)이 변경되지 않습니다.
+공간 오디오가 현재 지원되지 않습니다. 오디오가 스테레오에 혼합되어 있는 경우 고객이 카메라 보기 각도를 변경할 때 균형(L/R)이 변경되지 않습니다.
 
 [AEM Assets에서 Dynamic Media 360 비디오 및 사용자 지정 비디오 축소판 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)을 참조하십시오.
 
@@ -60,9 +60,9 @@ Adobe Premier Pro를 사용하여 360/VR 푸티지를 보고 편집할 수 있�
       * 2160p - 3840 x 2160(4k, UHD 또는 Ultra HD 해상도로 알려져 있음) 이 큰 디스플레이 해상도는 프리미엄 TV 세트와 컴퓨터 모니터에서 가장 자주 발견된다. 너비는 4000픽셀에 가깝기 때문에 2160p 해상도를 &quot;4k&quot;라고 합니다. 즉, 1080p의 4배 픽셀을 제공합니다.
    * [고품질 렌디션을 ](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 사용하여 사용자 지정 응용 비디오 프로필을 만듭니다. 예를 들어 다음 세 가지 설정을 포함하는 응용 비디오 프로필을 만들 수 있습니다.
 
-      * Width=auto;높이=720;비트율=2500kbps
-      * Width=auto;높이=1080;비트율=5000kbps
-      * Width=auto;높이=1440;비트율=6600kbps
+      * Width=auto; 높이=720; 비트율=2500kbps
+      * Width=auto; 높이=1080; 비트율=5000kbps
+      * Width=auto; 높이=1440; 비트율=6600kbps
    * 360개의 비디오 자산만 사용하는 폴더에서 360개의 비디오 컨텐츠를 처리합니다.
 
    이러한 접근 방식은 최종 사용자의 네트워크 및 CPU에 더 많은 요구를 추가합니다.
