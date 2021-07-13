@@ -4,10 +4,10 @@ description: Dynamic Media 자산을 제공하는 방법을 알아봅니다.
 feature: 자산 관리
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 6%
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Dynamic Media을 사용하면 다음과 같은 몇 가지 옵션이 있습니다
 * [웹 페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)
 * [Dynamic Media에서 핫링크 보호 활성화](/help/assets/dynamic-media/hotlink-protection.md)
-* [URL을 웹 애플리케이션에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [웹 응용 프로그램에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [응답형 사이트용으로 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)
 * [컨텐츠의 HTTP2 전달](/help/assets/dynamic-media/http2faq.md)
 * [Dynamic Media을 통해 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
