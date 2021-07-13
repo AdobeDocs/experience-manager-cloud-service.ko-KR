@@ -1,12 +1,9 @@
 ---
 title: Cloud Acceleration Manager 개요
 description: 이 페이지에서는 Cloud Acceleration Manager에 대한 개요를 제공합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: a38238ed1bf726fa5a123d820bc2ff4d220f3606
+source-git-commit: 5a726471fb8f049d837b0ae1a44f73e6411ec225
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
@@ -14,4 +11,4 @@ ht-degree: 0%
 
 # Cloud Acceleration Manager 개요 {#overview-cam}
 
-Cloud Acceleration Manager는 초기 평가를 제공하여 AEM as a Cloud Service에서 성공적인 Go-Live를 보장하기 위한 올바른 도구, 설명서 및 모범 사례를 제시함으로써 여정 전반에 걸쳐 마이그레이션에 대한 원스톱 경험을 고객에게 제공합니다.
+Cloud Acceleration Manager는 Cloud Service에서 라이브로 전환하는 계획에서부터 전환 여정 전반에 걸쳐 IT 팀을 안내하도록 설계된 클라우드 기반 애플리케이션입니다. AEM as a Cloud Service으로 여정의 모든 단계에서 도움이 되는 Adobe 권장 우수 사례, 팁, 설명서 및 도구를 사용하여 성공적인 마이그레이션을 위해 팀을 설정합니다.
