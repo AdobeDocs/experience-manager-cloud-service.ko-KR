@@ -5,10 +5,10 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: 배포
 role: Architect, Developer
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 54%
+source-wordcount: '127'
+ht-degree: 53%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 54%
 + 전환 여정 단계 {#phases}
    + [준비](/help/move-to-cloud-service/migration-readiness.md)
    + [구현](/help/move-to-cloud-service/migration-implementation.md)
+   + [Go Live](/help/move-to-cloud-service/migration-go-live.md)
    + [Go Live 후](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
    + Cloud Acceleration Manager 소개 {#introduction-cam}
