@@ -4,9 +4,9 @@ description: platform launch 및 Dynamic Media Viewers 5.13용 Dynamic Media Vie
 feature: 자산 보고서
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6676'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Experience Manager 사이트에서 [Dynamic Media 뷰어 추적](#tracking-dynam
 
 통합이 지원하는 보조 사용 사례는 Experience Manager 자산만 사용하는 고객 또는 Dynamic Media Classic입니다. 이러한 경우 뷰어에 대한 포함 코드를 가져와 웹 사이트 페이지에 추가합니다. 그런 다음 Experience Platform Launch에서 Experience Platform Launch 라이브러리 프로덕션 URL을 가져와 웹 페이지 코드에 수동으로 추가합니다.
 
-[포함 코드](#tracking-dynamic-media-viewers-using-embed-code)를 사용하여 Dynamic Media 뷰어 추적을 참조하십시오.
+[포함 코드를 사용하여 Dynamic Media 뷰어 추적](#tracking-dynamic-media-viewers-using-embed-code)을 참조하십시오.
 
 ## 통합에서 데이터 및 이벤트 추적 작동 방식 {#how-data-and-event-tracking-works-in-the-integration}
 
@@ -59,7 +59,7 @@ Experience Platform Launch에서 *데이터 요소* 및 *규칙*&#x200B;의 개�
 
 Experience Platform Launch의 데이터 요소는 값이 정적 정의되거나 웹 페이지 또는 Dynamic Media 뷰어 데이터의 상태에 따라 동적으로 계산되는 명명된 속성입니다.
 
-데이터 요소 정의에 사용할 수 있는 옵션은 Experience Platform Launch 속성에 설치된 확장 목록에 따라 다릅니다. 코어 확장은 사전 설치되어 있으며 모든 구성에서 즉시 사용할 수 있습니다. 이 &quot;코어&quot; 확장을 사용하면 쿠키, JavaScript™ 코드, 쿼리 문자열 및 기타 많은 소스에서 오는 데이터 요소를 정의할 수 있습니다.
+데이터 요소 정의에 사용할 수 있는 옵션은 Experience Platform Launch 속성에 설치된 확장 목록에 따라 다릅니다. 코어 확장은 사전 설치되어 있으며 모든 구성에서 즉시 사용할 수 있습니다. 이 &quot;코어&quot; 확장을 사용하면 쿠키, JavaScript 코드, 쿼리 문자열 및 기타 많은 소스에서 오는 데이터 요소를 정의할 수 있습니다.
 
 Adobe Analytics 추적을 위해 [확장 설치 및 설정에 설명된 대로 여러 다른 확장을 설치해야 합니다](#installing-and-setup-of-extensions). Dynamic Media 뷰어 확장은 Dynamic Viewer 이벤트의 인수인 데이터 요소를 정의하는 기능을 추가합니다. 예를 들어, 로드 시 뷰어가 보고한 뷰어 유형 또는 자산 이름, 최종 사용자가 확대/축소하면 보고된 확대/축소 수준 등을 참조할 수 있습니다.
 
@@ -153,12 +153,12 @@ Experience Platform Launch 라이브러리 포함 코드 사용 방법에 대한
 
 Dynamic Media Experience Manager의 포함 코드 기능을 사용하는 방법에 대한 자세한 내용은 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md)을 참조하십시오.
 
-**포함 코드를 사용하여 Dynamic Media 뷰어를 추적하려면:**
+**포함 코드를 사용하여 Dynamic Media 뷰어를 추적합니다.**
 
 1. Dynamic Media 뷰어를 포함할 수 있는 웹 페이지를 준비하십시오.
 1. Experience Platform Launch에 처음 로그인하여 Experience Platform Launch 라이브러리에 대한 포함 코드를 가져옵니다( [Experience Platform Launch 구성](#configuring-adobe-launch-for-the-integration) 참조).
-1. **[!UICONTROL 속성]**&#x200B;을 클릭한 다음 **[!UICONTROL 환경]** 탭을 클릭합니다.
-1. 웹 페이지의 환경과 관련된 환경 수준을 선택합니다. 그런 다음 **[!UICONTROL 설치]** 열에서 상자 아이콘을 클릭합니다.
+1. **[!UICONTROL 속성]**&#x200B;을 선택한 다음 **[!UICONTROL 환경]** 탭을 선택합니다.
+1. 웹 페이지의 환경과 관련된 환경 수준을 선택합니다. 그런 다음 **[!UICONTROL 설치]** 열에서 상자 아이콘을 선택합니다.
 1. **[!UICONTROL 웹 설치 지침 대화]** 상자에서 전체 Experience Platform Launch 라이브러리 포함 코드와 주변 태그를  `<script/>` 복사합니다.
 
 ## Dynamic Media Viewers 확장에 대한 참조 안내서 {#reference-guide-for-the-dynamic-media-viewers-extension}
@@ -174,7 +174,7 @@ Dynamic Media Experience Manager의 포함 코드 기능을 사용하는 방법�
 
 또한 뷰어 구성에서 `launch=0` 매개 변수를 지정하여 뷰어에서 Experience Platform Launch 통합을 명시적으로 비활성화하는 옵션이 있습니다. 이 매개 변수의 기본값은 `1`입니다.
 
-### Dynamic Media Viewers 확장 구성 {#configuring-the-dynamic-media-viewers-extension}
+### Dynamic Media 뷰어 확장 구성 {#configuring-the-dynamic-media-viewers-extension}
 
 Dynamic Media Viewers 확장에 대한 유일한 구성 옵션은 **[!UICONTROL 오디오 및 비디오용 Adobe Medium Analytics 활성화]**&#x200B;입니다.
 
@@ -195,7 +195,7 @@ Dynamic Media Viewers 확장에서 제공하는 유일한 데이터 요소 유�
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-각 뷰어 유형에서 지원되는 이벤트 목록은 [Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)를 참조하십시오. 특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 클릭합니다. 현재 Dynamic Media 뷰어 참조 가이드는 이벤트 인수를 문서화하지 않습니다.
+각 뷰어 유형에서 지원되는 이벤트 목록은 [Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)를 참조하십시오. 특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 선택합니다. 현재 Dynamic Media 뷰어 참조 가이드는 이벤트 인수를 문서화하지 않습니다.
 
 이제 Dynamic Media 뷰어 *데이터 요소*&#x200B;의 수명 주기를 고려해 보겠습니다. 이러한 데이터 요소의 값은 페이지에서 해당 Dynamic Media 뷰어 이벤트가 발생한 후 채워집니다. 예를 들어 데이터 요소가 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리킵니다. 이러한 데이터 요소의 값은 뷰어가 처음 LOAD 이벤트를 실행한 후 유효한 데이터를 받습니다. 데이터 요소가 **[!UICONTROL ZOOM]** 이벤트와 그 &quot;scale&quot; 인수를 가리키는 경우 뷰어가 처음으로 **[!UICONTROL ZOOM]** 이벤트를 전송할 때까지 이러한 데이터 요소의 값은 비어 있습니다.
 
@@ -252,7 +252,7 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 가장 간단한 방법은 다음 2단계 프로세스를 완료하는 것입니다.
 
 * 먼저 하나 이상의 데이터 요소를 정의합니다. 여기서 각 데이터 요소는 Dynamic Media 뷰어 이벤트의 매개 변수를 나타냅니다.
-* 마지막으로, Adobe Analytics 확장의 변수 설정 편집기에서 데이터 요소 선택기 아이콘(3개 누적 디스크)을 클릭하여 데이터 요소 선택 대화 상자를 연 다음, 이 필터에서 데이터 요소를 선택합니다.
+* 마지막으로, Adobe Analytics 확장의 변수 설정 편집기에서 데이터 요소 선택기 아이콘(3개의 누적 디스크)을 선택하여 데이터 요소 선택 대화 상자를 연 다음, 이 필터에서 데이터 요소를 선택합니다.
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
@@ -262,7 +262,7 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-데이터 요소 사용과 직접 이벤트 인수 참조 간에는 중요한 차이가 있습니다. 데이터 요소의 경우 변수 설정 작업을 트리거하는 이벤트가 중요하지 않습니다. 규칙을 트리거하는 이벤트는 Dynamic Viewer와 무관할 수 있습니다(예: 코어 확장에서 웹 페이지 클릭). 그러나 직접 인수를 사용할 때는 규칙을 트리거하는 이벤트가 참조하는 이벤트 인수와 일치하는지 확인하는 것이 중요합니다.
+데이터 요소 사용과 직접 이벤트 인수 참조 간에는 중요한 차이가 있습니다. 데이터 요소의 경우 변수 설정 작업을 트리거하는 이벤트가 중요하지 않습니다. 규칙을 트리거하는 이벤트는 Dynamic Viewer와 관련이 없을 수 있습니다(코어 확장에서 웹 페이지 선택 등). 그러나 직접 인수를 사용할 때는 규칙을 트리거하는 이벤트가 참조하는 이벤트 인수와 일치하는지 확인하는 것이 중요합니다.
 
 예를 들어, Dynamic Media 뷰어 확장의 **[!UICONTROL LOAD]** 이벤트에 의해 규칙이 트리거되는 경우 `%event.detail.dm.LOAD.asset%`을 참조하면 올바른 자산 이름을 반환합니다. 하지만 다른 모든 이벤트에 대해 빈 값을 반환합니다.
 
@@ -417,7 +417,7 @@ Adobe은 전체 통합을 이해하도록 이 섹션 전에 모든 설명서를 
 
 구성의 일부로서, Adobe Analytics 및 Experience Platform Launch이 이미 활성화되어 있는 Adobe Experience Cloud의 회사에 액세스할 수 있는지 확인하십시오.
 
-## 통합을 위한 Adobe Analytics 구성 {#configuring-adobe-analytics-for-the-integration}
+## 통합을 위해 Adobe Analytics 구성 {#configuring-adobe-analytics-for-the-integration}
 
 Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니다.
 
@@ -429,7 +429,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
 **통합을 위해 Adobe Analytics을 구성하려면 다음을 수행하십시오.**
 
-1. 먼저 Experience Cloud [홈 페이지](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)에서 Adobe Analytics에 액세스하십시오. 메뉴 표시줄에서 페이지의 오른쪽 위 모서리 근처에 있는 솔루션 아이콘(세 개 점 테이블)을 클릭한 다음 **[!UICONTROL Analytics]**&#x200B;을 클릭합니다.
+1. 먼저 Experience Cloud [홈 페이지](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)에서 Adobe Analytics에 액세스하십시오. 메뉴 표시줄에서 페이지의 오른쪽 위 모서리 근처에 있는 솔루션 아이콘(세 개 점 테이블)을 선택한 다음 **[!UICONTROL Analytics]**&#x200B;을 선택합니다.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -445,7 +445,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    [보고서 및 보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) 및 [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites)를 참조하십시오.
 
-   Adobe Analytics에서 보고서 세트는 **[!UICONTROL 관리 > 보고서 세트]**&#x200B;에서 관리됩니다.
+   Adobe Analytics에서 보고서 세트는 **[!UICONTROL 관리]** > **[!UICONTROL 보고서 세트]**&#x200B;에서 관리됩니다.
 
    ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
@@ -461,16 +461,16 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    이 설명서의 경우, 사용자 지정 트래픽(prop) 변수만 사용됩니다. 이 변수는 웹 페이지에서 작업이 발생한 후 몇 분 내에 Analytics 보고서에서 사용할 수 있게 됩니다.
 
-   새 사용자 지정 트래픽 변수를 활성화하려면, Adobe Analytics의 도구 모음에서 **[!UICONTROL 관리 > 보고서 세트]**&#x200B;를 클릭하십시오.
+   새 사용자 지정 트래픽 변수를 활성화하려면, Adobe Analytics의 도구 모음에서 **[!UICONTROL 관리]** > **[!UICONTROL 보고서 세트]**&#x200B;로 이동하십시오.
 
-1. **[!UICONTROL 보고서 세트 관리자]** 페이지에서 올바른 보고서를 선택한 다음, 도구 모음에서 **[!UICONTROL 설정 편집]** > **[!UICONTROL 트래픽]** > **[!UICONTROL 트래픽 변수]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 보고서 세트 관리자]** 페이지에서 올바른 보고서를 선택한 다음, 도구 모음에서 **[!UICONTROL 설정 편집]** > **[!UICONTROL 트래픽]** > **[!UICONTROL 트래픽 변수]**&#x200B;로 이동합니다.
 1. 사용하지 않는 변수를 선택하고, 수사적 이름( **[!UICONTROL 뷰어 자산(prop 30)]**)을 지정한 다음, 활성화 열에서 콤보 상자를 &quot;활성화&quot;로 변경합니다.
 
    다음 스크린샷은 뷰어에서 사용하는 자산 이름을 추적하는 사용자 지정 트래픽 변수( **[!UICONTROL prop30]**)의 예입니다.
 
    ![image2019-6-26_23-6-59](/help/assets/dynamic-media/assets/image2019-6-26_23-6-59.png)
 
-1. 변수 목록 하단에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. 변수 목록 하단에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 ### 보고서 설정 {#setting-up-a-report}
 
@@ -478,7 +478,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    그러나 사용자 지정 트래픽 보고서는 **[Adobe Analytics 변수 설정](#setting-up-adobe-analytics-variables)**&#x200B;에서 사용자 지정 트래픽 변수를 설정한 후 Adobe Analytics에서 자동으로 사용할 수 있게 되는 것으로 충분합니다.
 
-   예를 들어, **[!UICONTROL 뷰어 자산(prop 30)]** 변수에 대한 보고서는 **[!UICONTROL 사용자 지정 트래픽 > 사용자 지정 트래픽 21-30 > 뷰어 자산(prop 30)]**&#x200B;의 보고서 메뉴에서 사용할 수 있습니다.
+   예를 들어 **[!UICONTROL 뷰어 자산(prop 30)]** 변수에 대한 보고서는 **[!UICONTROL 사용자 지정 트래픽]** > **[!UICONTROL 사용자 지정 트래픽 21-30]** > **[!UICONTROL 뷰어 자산(prop 30)]**&#x200B;의 보고서 메뉴에서 사용할 수 있습니다.
 
    **[!UICONTROL 뷰어 자산(prop 30)]** 생성 직후 이 보고서를 방문하면 데이터가 표시되지 않습니다. 통합에서 이 시점에서 예상됩니다.
 
@@ -495,7 +495,7 @@ Experience Platform Launch을 구성한 후 통합에 대해 다음과 같이 �
 
 **통합에 대한 Experience Platform Launch을 구성하려면:**
 
-1. 먼저 Experience Cloud [홈 페이지](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)에서 Experience Platform Launch에 액세스합니다. 메뉴 막대에서 페이지의 오른쪽 위 모서리 근처에 있는 솔루션 아이콘(세 개 점 테이블)을 클릭한 다음, **[!UICONTROL Launch]**&#x200B;을 클릭합니다.
+1. 먼저 Experience Cloud [홈 페이지](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)에서 Experience Platform Launch에 액세스합니다. 메뉴 막대에서 페이지의 오른쪽 위 모서리 근처에 있는 솔루션 아이콘(세 개 점 테이블)을 선택한 다음 **[!UICONTROL Launch]**&#x200B;을 선택합니다.
 
    [Experience Platform Launch을 직접 열 수도 있습니다](https://launch.adobe.com/).
 
@@ -507,34 +507,36 @@ Experience Platform Launch의 속성은 모든 설정을 함께 유지하는 명
 
 [Launch 속성 만들기](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch)도 참조하십시오.
 
-1. Experience Platform Launch에서 **[!UICONTROL 새 속성]**&#x200B;을 클릭합니다.
+**Experience Platform Launch에서 속성을 만들려면:**
+
+1. Experience Platform Launch에서 **[!UICONTROL 새 속성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 속성 만들기]** 대화 상자의 **[!UICONTROL 이름]** 필드에 웹 사이트의 제목과 같은 수사적 이름을 입력합니다. 예, `DynamicMediaViewersProp.`
 1. **[!UICONTROL 도메인]** 필드에 웹 사이트의 도메인을 입력합니다.
 1. **[!UICONTROL 고급 옵션]** 드롭다운에서 사용하려는 확장이 아직 릴리스되지 않은 경우 **[!UICONTROL 확장 개발을 위한 구성(나중에 수정할 수 없음)]**&#x200B;을 활성화합니다. 이 경우 *Dynamic Media 뷰어*&#x200B;가 아직 릴리스되지 않았습니다.
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-   새로 만든 속성을 클릭한 다음 *확장 설치 및 설정*&#x200B;으로 진행합니다.
+   새로 만든 속성을 선택한 다음 *확장 설치 및 설정으로 진행합니다*.
 
 ### 확장 설치 및 설정 {#installing-and-setup-of-extensions}
 
-Experience Platform Launch에서 사용할 수 있는 모든 확장은 **[!UICONTROL 확장 > 카탈로그]** 아래에 나열됩니다.
+Experience Platform Launch에서 사용할 수 있는 모든 확장은 **[!UICONTROL 확장]** > **[!UICONTROL 카탈로그]** 아래에 나열됩니다.
 
-확장을 설치하려면 **[!UICONTROL 설치]**&#x200B;를 클릭합니다. 필요한 경우 1회 확장 구성을 수행한 다음 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+확장을 설치하려면 **[!UICONTROL 설치]**&#x200B;를 선택합니다. 필요한 경우 1회 확장 구성을 수행한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 필요한 경우 다음 확장을 설치 및 구성해야 합니다.
 
 * (필수) *Experience Cloud ID 서비스* 확장
 
-추가 구성이 필요하지 않으며, 제안된 값에 대해 수락합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 클릭해야 합니다.
+추가 구성이 필요하지 않으며, 제안된 값에 대해 수락합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택해야 합니다.
 
 [Experience Cloud ID 서비스 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref)을 참조하십시오.
 
 * (필수) *Adobe Analytics* 확장
 
-이 확장을 구성하려면 **[!UICONTROL 관리 > 보고서 세트]** 아래의 Adobe Analytics에 있는 보고서 세트 ID가 **[!UICONTROL 보고서 세트 ID]** 열 헤더 아래에 있어야 합니다.
+이 확장을 구성하려면 Adobe Analytics에 있는 보고서 세트 ID가 **[!UICONTROL 관리]** > **[!UICONTROL 보고서 세트]** 아래의 **[!UICONTROL 보고서 세트 ID]** 열 헤더에서 필요합니다.
 
 (데모 전용 경우, 다음 스크린샷에서 **[!UICONTROL DynamicMediaViewersExtensionDoc]** 보고서 세트의 보고서 세트 ID가 사용됩니다. 이 ID는 [보고서 세트 선택](#selecting-a-report-suite)에서 생성 및 사용되었습니다.)
 
@@ -548,7 +550,7 @@ Experience Platform Launch에서 사용할 수 있는 모든 확장은 **[!UICON
 
 **[!UICONTROL 확장 설치]** 페이지에서 **[!UICONTROL 일반]**&#x200B;을 확장한 다음 추적 서버를 지정합니다. 추적 서버는 `<trackingNamespace>.sc.omtrdc.net` 템플릿을 따릅니다. 여기서 `<trackingNamespace>` 은 프로비저닝 이메일에서 얻은 정보입니다.
 
-**[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+**[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref)을 참조하십시오.
 
@@ -595,11 +597,11 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
 * 필요한 모든 변경 사항(새 변경 사항 및 업데이트)을 라이브러리에 추가하여 새 라이브러리를 빌드합니다.
 * 다른 환경 수준(개발에서 스테이징 및 프로덕션으로)을 통해 라이브러리를 이동합니다.
 
-#### 새 라이브러리 추가 및 작성 {#adding-and-building-a-new-library}
+#### 새 라이브러리 추가 및 빌드 {#adding-and-building-a-new-library}
 
 1. Experience Platform Launch에서 게시 탭을 처음 열면 라이브러리 목록이 비어 있습니다.
 
-   왼쪽 열에서 **[!UICONTROL 새 라이브러리 추가]**&#x200B;를 클릭합니다.
+   왼쪽 열에서 **[!UICONTROL 새 라이브러리 추가]**&#x200B;를 선택합니다.
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
@@ -607,11 +609,11 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
 
    *DynamicMediaViewersLib*
 
-   환경 드롭다운 목록에서 환경 수준을 선택합니다. 처음에는 개발 수준만 선택할 수 있습니다. 페이지의 왼쪽 아래에서 **[!UICONTROL 변경된 모든 리소스 추가]**&#x200B;를 클릭합니다.
+   환경 드롭다운 목록에서 환경 수준을 선택합니다. 처음에는 개발 수준만 선택할 수 있습니다. 페이지의 왼쪽 아래에서 **[!UICONTROL 변경된 모든 리소스 추가]**&#x200B;를 선택합니다.
 
    ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 개발을 위한 저장 및 구축]**&#x200B;을 클릭합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 개발을 위한 저장 및 구축]**&#x200B;을 선택합니다.
 
    몇 분 후에 라이브러리가 만들어지고 사용할 준비가 되었습니다.
 
@@ -619,36 +621,36 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
 
    >[!NOTE]
    >
-   >다음에 Experience Platform Launch 구성을 변경할 때 **[!UICONTROL 속성]** 구성 아래의 **[!UICONTROL 게시]** 탭으로 이동한 다음 이전에 만든 라이브러리를 클릭합니다.
+   >다음에 Experience Platform Launch 구성을 변경할 때 **[!UICONTROL 속성]** 구성 아래의 **[!UICONTROL 게시]** 탭으로 이동한 다음 이전에 만든 라이브러리를 선택합니다.
    >
    >
-   >라이브러리 게시 화면에서 **[!UICONTROL 변경된 모든 리소스 추가]**&#x200B;를 클릭한 다음 **[!UICONTROL 개발을 위한 저장 및 구축]**&#x200B;을 클릭합니다.
+   >라이브러리 게시 화면에서 **[!UICONTROL 변경된 모든 리소스 추가]**&#x200B;를 선택한 다음 **[!UICONTROL 개발용 저장 및 빌드]**&#x200B;를 선택합니다.
 
 #### 환경 수준을 통해 라이브러리 이동 {#moving-a-library-up-through-environment-levels}
 
-1. 새 라이브러리가 추가되면 개발 환경에서 찾을 수 있습니다. 스테이징 환경 수준(제출됨 열에 해당)으로 이동하려면 라이브러리의 드롭다운 메뉴에서 **[!UICONTROL 승인을 위해 제출]**&#x200B;을 클릭합니다.
+1. 새 라이브러리가 추가되면 개발 환경에서 찾을 수 있습니다. 스테이징 환경 수준(제출됨 열에 해당)으로 이동하려면 라이브러리의 드롭다운 메뉴에서 **[!UICONTROL 승인을 위해 제출]**&#x200B;을 선택합니다.
 
    ![image2019-7-15_15-52-37](assets/image2019-7-15_15-52-37.png)
 
-1. 확인 대화 상자에서 **[!UICONTROL 제출]**&#x200B;을 클릭합니다.
+1. 확인 대화 상자에서 **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
-   라이브러리가 제출됨 열로 이동한 후 라이브러리의 드롭다운 메뉴에서 **[!UICONTROL 스테이징용 빌드]**&#x200B;를 클릭합니다.
+   라이브러리가 제출됨 열로 이동한 후 라이브러리의 드롭다운 메뉴에서 **[!UICONTROL 스테이징용 빌드]**&#x200B;를 선택합니다.
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
 1. 스테이징 환경에서 프로덕션 환경(게시된 열)으로 라이브러리를 이동하려면 유사한 프로세스를 수행합니다.
 
-   먼저 드롭다운 메뉴에서 **[!UICONTROL Approve for Publishing]**&#x200B;을 클릭합니다.
+   먼저 드롭다운 메뉴에서 **[!UICONTROL Approve for Publishing]**&#x200B;을 선택합니다.
 
    ![image2019-7-15_16-7-39](assets/image2019-7-15_16-7-39.png)
 
-1. 드롭다운 메뉴에서 **[!UICONTROL Build &amp; Publish to Production]**&#x200B;을 클릭합니다.
+1. 드롭다운 메뉴에서 **[!UICONTROL Build &amp; Publish to Production]**&#x200B;을 선택합니다.
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
    Experience Platform Launch의 게시 프로세스에 대한 자세한 내용은 [게시](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html#publish)를 참조하십시오.
 
-## 통합을 위한 Adobe Experience Manager 구성 {#configuring-adobe-experience-manager-for-the-integration}
+## 통합을 위해 Adobe Experience Manager 구성 {#configuring-adobe-experience-manager-for-the-integration}
 
 <!-- Prerequisites list below should be verified by Sasha -->
 
@@ -665,38 +667,38 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 ### Experience Manager IMS 구성 {#configuring-aem-ims}
 
-1. Experience Manager 작성자에서 도구 아이콘(망치)을 클릭한 다음 **[!UICONTROL 보안 > Adobe IMS 구성]**&#x200B;을 클릭합니다.
+1. Experience Manager 작성기에서 도구 아이콘(망치)을 선택한 다음 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
-1. Adobe IMC 구성 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. **[!UICONTROL IMS 기술 계정 구성 Adobe]** 페이지의 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform 데이터 수집]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 새 인증서 만들기]**&#x200B;를 활성화한 다음 텍스트 필드에 인증서에 대한 의미 있는 값을 입력합니다. 예: *AdobeLaunchIMSCert* **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다.
+1. 왼쪽 위 모서리 근처에 있는 Adobe IMC 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL IMS 기술 계정 구성 Adobe]** 페이지의 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform 데이터 수집]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 새 인증서 만들기]**&#x200B;를 활성화한 다음 텍스트 필드에 인증서에 대한 의미 있는 값을 입력합니다. 예: *AdobeLaunchIMSCert* **[!UICONTROL 인증서 만들기]**&#x200B;를 선택합니다.
 
    다음 정보 메시지가 표시됩니다.
 
    *올바른 액세스 토큰을 검색하려면 새 인증서의 공개 키를 Adobe I/O의 기술 계정에 추가해야 합니다!*
 
-   정보 대화 상자를 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+   정보 대화 상자를 닫으려면 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
    ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
-1. **[!UICONTROL 공개 키 다운로드]**&#x200B;를 클릭하여 공개 키 파일(`*.crt`)을 로컬 시스템에 다운로드합니다.
+1. **[!UICONTROL 공개 키 다운로드]**&#x200B;를 선택하여 공개 키 파일(`*.crt`)을 로컬 시스템에 다운로드합니다.
 
    >[!NOTE]
    >
-   >이 시점에서 ***IMS 기술 계정 구성&#x200B;]**Adobe을*** 열어 두십시오. ***페이지를 닫지 않고***다음 을 클릭하지 마십시오&#x200B;***.**[!UICONTROL *** 나중에 단계에서 이 페이지로 돌아갑니다.
+   >이 시점에서 ***IMS 기술 계정 구성&#x200B;]**Adobe을*** 열어 두십시오. ***페이지를 닫지 않고***페이지를 닫지 마십시오.***다음]**을 선택하지 마십시오.**[!UICONTROL *****[!UICONTROL  나중에 단계에서 이 페이지로 돌아갑니다.
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
 1. 새 브라우저 탭에서 [Adobe I/O 콘솔](https://console.adobe.io/integrations)로 이동합니다.
 
-1. 오른쪽 상단 모서리의 **[!UICONTROL Adobe I/O 콘솔 통합]** 페이지에서 **[!UICONTROL 새 통합]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 새 통합 만들기]** 대화 상자에서 **[!UICONTROL API]** 라디오 단추에 액세스 를 선택한 다음 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
+1. 오른쪽 상단 모서리의 **[!UICONTROL Adobe I/O 콘솔 통합]** 페이지에서 **[!UICONTROL 새 통합]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 새 통합 만들기]** 대화 상자에서 **[!UICONTROL API]** 라디오 단추에 액세스 를 선택한 다음 **[!UICONTROL 계속]**&#x200B;을 선택합니다.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. 두 번째 **[!UICONTROL 새 통합 만들기]** 페이지에서 **[!UICONTROL Experience Platform Launch API]** 라디오 단추를 활성화(켜기)합니다. 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
+1. 두 번째 **[!UICONTROL 새 통합 만들기]** 페이지에서 **[!UICONTROL Experience Platform Launch API]** 라디오 단추를 활성화(켜기)합니다. 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 계속]**&#x200B;을 선택합니다.
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -714,8 +716,8 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
-1. **[!UICONTROL 통합 만들기]**&#x200B;를 클릭합니다.
-1. **[!UICONTROL 통합 생성]** 페이지에서 **[!UICONTROL 통합 세부 정보]**&#x200B;를 계속 클릭합니다.
+1. **[!UICONTROL 통합 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 통합 생성]** 페이지에서 **[!UICONTROL 통합 세부 정보 계속]**&#x200B;을 선택합니다.
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
@@ -728,9 +730,9 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
    _통합 세부 사항 페이지_
 
-1. 이전에 열어 둔 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지로 돌아갑니다. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 클릭하여 **[!UICONTROL IMS 기술 계정 구성]** 창의 **[!UICONTROL 계정]** 페이지를 엽니다.
+1. 이전에 열어 둔 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지로 돌아갑니다. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 선택하여 **[!UICONTROL Adobe IMS 기술 계정 구성]** 창에서 **[!UICONTROL 계정]** 페이지를 엽니다.
 
-   (이전에 페이지를 닫았다면 Experience Manager 작성자로 돌아가서 **[!UICONTROL 도구 > 보안 > Adobe IMS 구성]**&#x200B;을 클릭하십시오. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform Launch]**&#x200B;을 선택합니다. **[!UICONTROL 인증서]** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.
+   (이전에 페이지를 닫았다면 Experience Manager 작성자로 돌아가서 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동하십시오. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform Launch]**&#x200B;을 선택합니다. **[!UICONTROL 인증서]** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _Adobe IMS 기술 계정 구성 - 인증서 페이지_
@@ -743,7 +745,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 1. **[!UICONTROL 계정]** 페이지에서 다음 필드를 채웁니다.
 
    * **[!UICONTROL 제목]**  - 설명하는 계정 제목을 입력합니다.
-   * **[!UICONTROL 인증 서버]**  - 이전에 연 통합 세부 사항 페이지로 돌아갑니다. **[!UICONTROL JWT]** 탭을 클릭합니다. 아래 강조 표시된 대로 경로 없이 서버 이름을 복사합니다.
+   * **[!UICONTROL 인증 서버]**  - 이전에 연 통합 세부 사항 페이지로 돌아갑니다. **[!UICONTROL JWT]** 탭을 선택합니다. 아래 강조 표시된 대로 경로 없이 서버 이름을 복사합니다.
 
 (예제 서버 이름은 설명 목적으로만 사용됩니다.)   **[!UICONTROL Account]** 페이지로 돌아가서 각 필드에 이름을 붙여 넣습니다.
 예: `https://ims-na1.adobelogin.com/`
@@ -752,14 +754,14 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _통합 세부 사항 페이지 - JWT 탭_
 
-1. **[!UICONTROL API 키]**  - 통합 세부 사항 페이지로 돌아갑니다. **[!UICONTROL 개요]** 탭을 클릭한 다음 **[!UICONTROL API 키(클라이언트 ID)]** 필드의 오른쪽에 있는 **[!UICONTROL 복사]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL API 키]**  - 통합 세부 사항 페이지로 돌아갑니다. **[!UICONTROL 개요]** 탭을 선택한 다음, **[!UICONTROL API 키(클라이언트 ID)]** 필드의 오른쪽에 있는 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 
    **[!UICONTROL Account]** 페이지로 돌아가서 키를 각 필드에 붙여 넣습니다.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
    _통합 세부 사항 페이지_
 
-1. **[!UICONTROL 클라이언트 암호]** - 통합 세부 사항 페이지로 돌아갑니다. **[!UICONTROL 개요]** 탭에서 **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 클릭합니다. **[!UICONTROL 클라이언트 암호]** 필드 오른쪽에서는 **[!UICONTROL 복사]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 클라이언트 암호]** - 통합 세부 사항 페이지로 돌아갑니다. **[!UICONTROL 개요]** 탭에서 **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 선택합니다. **[!UICONTROL 클라이언트 암호]** 필드 오른쪽에서는복사를선택합니다. **[!UICONTROL 복사]**
 
    **[!UICONTROL Account]** 페이지로 돌아가서 키를 각 필드에 붙여 넣습니다.
 
@@ -774,15 +776,15 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-1. **[!UICONTROL 계정]** 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 계정]** 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
    이제 Experience Manager IMS가 구성되어 있으면 **[!UICONTROL Adobe IMS 구성]** 아래에 새 IMSAccount가 나열됩니다.
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## 통합을 위한 Experience Platform Launch 클라우드 구성 {#configuring-adobe-launch-cloud-for-the-integration}
+## 통합을 위해 Experience Platform Launch 클라우드 구성 {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Experience Manager 작성자의 왼쪽 위 모서리 근처에 있는 도구 아이콘(망치)을 클릭한 다음 **[!UICONTROL Cloud Services > Experience Platform Launch 구성]**&#x200B;을 클릭합니다.
+1. Experience Manager 작성자의 왼쪽 위 모서리 근처에 있는 도구 아이콘(망치)을 선택한 다음, **[!UICONTROL Cloud Services]** > **[!UICONTROL Experience Platform Launch 구성]**&#x200B;으로 이동합니다.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -792,7 +794,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL Experience Platform Launch 구성 만들기]** 창의 **[!UICONTROL 일반]** 페이지(1/3페이지)에서 다음 필드를 채웁니다.
 
    * **[!UICONTROL 제목]**  - 수사적 구성 제목을 입력합니다. 예, `We.Retail Launch cloud configuration`.
@@ -806,7 +808,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-1. 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. **[!UICONTROL Experience Platform Launch 구성 만들기]** 창의 **[!UICONTROL 스테이징]** 페이지(2/3페이지)에서 다음 필드를 입력합니다.
 
    **[!UICONTROL 라이브러리 URI]** 필드에서 Experience Platform Launch 라이브러리의 스테이징 버전 위치를 확인합니다. Experience Manager은 이 필드를 자동으로 채웁니다.
@@ -824,13 +826,13 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
-1. 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 오른쪽 상단 모서리에서 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. 필요한 경우 **[!UICONTROL Experience Platform Launch 구성 만들기]** 창의 **[!UICONTROL 프로덕션]** 페이지(3/3페이지)에서 이전에 **[!UICONTROL 스테이징]** 페이지에서 수행한 것과 유사한 자동 채워진 프로덕션 URI를 수정합니다.
-1. 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 오른쪽 상단 모서리에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
    이제 새 Experience Platform Launch 클라우드 구성이 생성되어 웹 사이트 옆에 나열됩니다.
 
-1. 새 Experience Platform Launch 클라우드 구성을 선택합니다(선택한 경우 구성 제목 왼쪽에 확인 표시가 표시됨). 도구 모음에서 **[!UICONTROL 게시]**&#x200B;를 클릭합니다.
+1. 새 Experience Platform Launch 클라우드 구성을 선택합니다(선택한 경우 구성 제목 왼쪽에 확인 표시가 표시됨). 도구 모음에서 **[!UICONTROL 게시]**&#x200B;를 선택합니다.
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
