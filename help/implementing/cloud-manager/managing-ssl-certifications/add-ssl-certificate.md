@@ -2,9 +2,9 @@
 title: SSL 인증서 추가 - SSL 인증서 관리
 description: SSL 인증서 추가 - SSL 인증서 관리
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,10 @@ SSL 파일의 형식을 PEM으로 변환하려면 아래 절차를 따르십시�
 
 * Cloud Manager에서 SSL 인증서를 설치하려면 비즈니스 소유자 또는 배포 관리자 역할에 사용자가 있어야 합니다.
 
-* 언제든지, Cloud Manager에서는 인증서가 만료된 경우에도 프로그램 전체에서 하나 이상의 환경과 연결할 수 있는 최대 10개의 SSL 인증서를 허용합니다. 그러나 Cloud Manager UI에서는 이 제한을 사용하여 프로그램에 최대 50개의 SSL 인증서를 설치할 수 있습니다.
+* 언제든지, Cloud Manager에서는 인증서가 만료된 경우에도 프로그램 전체에서 하나 이상의 환경과 연결할 수 있는 최대 10개의 SSL 인증서를 허용합니다. 그러나 Cloud Manager UI에서는 이 제한을 사용하여 프로그램에 최대 50개의 SSL 인증서를 설치할 수 있습니다. 일반적으로 인증서는 여러 도메인(최대 100개의 SAN)을 포함할 수 있으므로 동일한 인증서에 여러 도메인을 그룹화하여 이 제한 범위를 유지하는 것을 고려해 보십시오.
 
-## 인증서 {#adding-a-cert} 추가
+
+## 인증서 추가 {#adding-a-cert}
 
 아래 절차에 따라 인증서를 추가하십시오.
 
@@ -85,6 +86,6 @@ SSL 파일의 형식을 PEM으로 변환하려면 아래 절차를 따르십시�
 >[!NOTE]
 >이 두 명령의 출력은 정확히 동일해야 합니다. `main/server` 인증서에 일치하는 개인 키를 찾을 수 없는 경우에는 새 CSR을 생성하거나 SSL 공급업체에서 업데이트된 인증서를 요청하여 인증서를 다시 키 대조해야 합니다.
 
-### 인증서 유효 날짜 {#certificate-validity-dates}
+### 인증서 유효성 날짜 {#certificate-validity-dates}
 
 Cloud Manager는 향후 최소 90일 동안 SSL 인증서가 유효할 것으로 예상하고 있습니다. 인증서 체인의 유효성을 확인해야 합니다.
