@@ -2,10 +2,10 @@
 title: 구현 단계
 description: 구현 단계
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 87%
+source-wordcount: '950'
+ht-degree: 89%
 
 ---
 
@@ -110,17 +110,4 @@ Cloud Manager 사용은 클라우드 서비스 환경에 코드를 배포하는 
 
 * [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
-## Go-Live 준비 우수 사례 {#go-live}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_prep"
->title="Go-Live 준비"
->abstract="AEM as a Cloud Service에서 유연하고 성공적인 go-live를 수행하려면 코드 및 컨텐츠 고정 기간, 테스트 반복, 컨텐츠 추가, 성능 테스트, 보안 테스트 등을 계획해야 합니다."
-
-AEM as a Cloud Service에서 유연하고 성공적인 go-live를 수행하려면 다음 단계를 실행하는 것이 좋습니다.
-
-* 코드 및 컨텐츠 고정 기간 예약
-* 최종 컨텐츠 추가 수행
-* 전체 테스트 반복
-* 성능 및 보안 테스트 실행
-* 잘라내기
