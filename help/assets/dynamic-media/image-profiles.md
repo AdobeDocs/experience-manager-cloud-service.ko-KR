@@ -4,10 +4,10 @@ description: 언샵 마스크, 스마트 자르기 또는 스마트 견본 또�
 feature: 자산 관리,이미지 프로필,표현물
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 4%
+source-wordcount: '2711'
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 4%
   <tr>
    <td>스마트 자르기</td>
    <td>시각적 초점을 기반으로 이미지를 벌크 자르십시오.</td>
-   <td><p>스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 일괄적으로 이미지 자르기를 신속하게 자동화합니다. 스마트 자르기는 화면 크기에 상관없이 원하는 관심 영역을 얻기 위해 모든 이미지의 초점을 자동으로 감지하고 자릅니다.</p> <p>스마트 자르기를 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)합니다.</p> <p>기본 중단점 크기(큰, 중간, 작은)는 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱 및 배너에 사용되는 전체 크기 범위를 다룹니다. 원하는 경우 큰, 중간 및 작은 의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 <strong>자르기 추가</strong>; 자르기를 삭제하려면 [쓰레기통] 아이콘을 클릭합니다.</p> </td>
+   <td><p>스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 일괄적으로 이미지 자르기를 신속하게 자동화합니다. 스마트 자르기는 화면 크기에 상관없이 원하는 관심 영역을 얻기 위해 모든 이미지의 초점을 자동으로 감지하고 자릅니다.</p> <p>스마트 자르기를 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)합니다.</p> <p>기본 중단점 크기(큰, 중간, 작은)는 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱 및 배너에 사용되는 전체 크기 범위를 다룹니다. 원하는 경우 큰, 중간 및 작은 의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 <strong>자르기 추가</strong>;를 선택합니다. 자르기를 삭제하려면 [쓰레기통] 아이콘을 선택합니다.</p> </td>
   </tr>
   <tr>
    <td>색상 및 이미지 견본</td>
@@ -106,8 +106,8 @@ ht-degree: 4%
 
 **Dynamic Media 이미지 프로필을 만들려면 다음을 수행하십시오.**
 
-1. Adobe Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
-1. 이미지 프로필을 추가하려면 **[!UICONTROL 만들기]**&#x200B;를 누릅니다.
+1. Adobe Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
+1. 이미지 프로필을 추가하려면 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 프로파일 이름 및 언샵 마스크, 자르기, 견본 또는 둘 다에 대한 값을 입력합니다.
 
    팁: 목적에 맞는 프로필 이름을 사용하십시오. 예를 들어 색상 견본을 생성하는 프로파일을 만든다고 가정합니다. 즉, 스마트 자르기가 비활성화(꺼짐)되고 색상 및 이미지 견본이 활성화(켜짐)됩니다. 이러한 경우 프로필 이름 &quot;스마트 색상 견본&quot;을 사용할 수 있습니다.
@@ -116,11 +116,11 @@ ht-degree: 4%
 
    ![자르기](assets/crop.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 누릅니다. 새로 만든 프로필이 사용 가능한 프로필 목록에 나타납니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 새로 만든 프로필이 사용 가능한 프로필 목록에 나타납니다.
 
 ## Dynamic Media 이미지 프로필 편집 또는 삭제 {#editing-or-deleting-image-profiles}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
 1. 편집하거나 제거할 이미지 프로필을 선택합니다. 편집하려면 **[!UICONTROL 이미지 처리 프로필 편집]**&#x200B;을 선택합니다. 제거하려면 **[!UICONTROL 이미지 처리 프로필 삭제]**&#x200B;를 선택합니다.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -139,7 +139,7 @@ ht-degree: 4%
 
 이미지 프로필을 특정 폴더에 적용하거나 모든 자산에 전체적으로 적용할 수 있습니다.
 
-나중에 변경한 기존 이미지 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
+나중에 변경한 기존 이미지 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. 처리 중인 프로필을 편집한 후 [폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
 
 ### 특정 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-specific-folders}
 
@@ -147,22 +147,22 @@ ht-degree: 4%
 
 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
+나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. 처리 중인 프로필을 편집한 후 [폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
 
 #### 프로필 사용자 인터페이스의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 이미지 프로필을 선택합니다.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. **[!UICONTROL 폴더에 처리 프로필 적용]**&#x200B;을 탭하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 탭/클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. **[!UICONTROL 폴더에 처리 프로필 적용]**&#x200B;을 선택하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 선택합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
 #### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 이미지 프로필을 적용할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
-1. **[!UICONTROL 이미지 프로필]** 탭을 탭합니다. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 이미지 프로필을 적용할 폴더로 이동합니다.
+1. 폴더에서 확인 표시를 선택하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 이미지 프로필]** 탭을 선택합니다. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -170,19 +170,19 @@ ht-degree: 4%
 
 폴더에 프로파일을 적용하는 것 외에도 전체적으로 프로파일을 적용할 수 있습니다. 임의의 폴더에 있는 Experience Manager 자산에 업로드된 모든 컨텐츠에는 선택한 프로필이 적용됩니다.
 
-나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
+나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. 처리 중인 프로필을 편집한 후 [폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
 
 **Dynamic Media 이미지 프로필을 전체적으로 적용하려면**
 
 1. 다음 중 하나를 수행하십시오.
 
-   * `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 로 이동하여 적절한 프로필을 적용하고 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
+   * `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`으로 이동하여 적절한 프로필을 적용하고 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`
 
-      `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
+      `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -194,24 +194,24 @@ ht-degree: 4%
 
 필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.
 
-[여러 이미지의 스마트 자르기 또는 스마트 견본 편집](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)을 참조하십시오.
+또한 [여러 이미지의 스마트 자르기 또는 스마트 견본 편집](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)을 참조하십시오.
 
 **단일 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면 다음을 수행하십시오.**
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
-1. 내용을 열려면 폴더를 누릅니다.
-1. 조정할 스마트 자르기 또는 스마트 견본이 있는 이미지를 누릅니다.
-1. 도구 모음에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 누릅니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
+1. 내용을 열려면 폴더를 선택합니다.
+1. 스마트 자르기 또는 스마트 견본을 조정할 이미지를 선택합니다.
+1. 도구 모음에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 선택합니다.
 
 1. 다음 중 하나를 수행합니다.
 
    * 페이지의 오른쪽 위 모서리 근처에 있는 슬라이더 막대를 왼쪽 또는 오른쪽으로 드래그하여 이미지 표시를 각각 늘리거나 줄입니다.
    * 이미지에서 코너 핸들을 드래그하여 자르기나 견본의 볼 수 있는 영역의 크기를 조정합니다.
    * 이미지에서 상자/견본을 새 위치로 드래그합니다. 이미지 색상 견본만 편집할 수 있습니다. 색상 견본은 정적입니다.
-   * 이미지 위에서 **[!UICONTROL 되돌리기]**&#x200B;를 탭하여 모든 편집 내용을 취소하고 원래 자르기 또는 견본을 복원합니다.
+   * 이미지 위에서 **[!UICONTROL 되돌리기]**&#x200B;를 선택하여 모든 편집 내용을 취소하고 원래 자르기 또는 견본을 복원합니다.
    * 키보드 화살표 키를 사용하여 프레임 크기를 자르거나 이미지 위치를 변경하거나 둘 다 재배치합니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭하여 자산의 폴더로 돌아갑니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 선택한 다음 **[!UICONTROL 닫기]**&#x200B;를 선택하여 자산의 폴더로 돌아갑니다.
 
 ## 여러 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
@@ -223,8 +223,8 @@ ht-degree: 4%
 
 **여러 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면 다음을 수행하십시오.**
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
-1. 폴더에서 **[!UICONTROL 추가 작업]**(..) 아이콘을 탭한 다음 **[!UICONTROL 스마트 자르기]**&#x200B;를 탭합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
+1. 폴더에서 **[!UICONTROL 추가 작업]**(..) 아이콘을 선택한 다음 **[!UICONTROL 스마트 자르기]**&#x200B;를 선택합니다.
 
 1. **[!UICONTROL 스마트 자르기 편집]** 페이지에서 다음 중 하나를 수행합니다.
 
@@ -243,26 +243,26 @@ ht-degree: 4%
    * 스마트 자르기 상자의 크기를 조정합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 견본만 있는 경우 이미지에서 자르기 상자의 코너 핸들을 드래그합니다. 자르기의 볼 수 있는 영역의 크기를 조정합니다.
-      * 이미지에 스마트 자르기와 스마트 견본이 모두 있는 경우 이미지에서 자르기 상자의 코너 핸들을 드래그합니다. 자르기의 볼 수 있는 영역의 크기를 조정합니다. 또는 이미지 아래에서 스마트 색상 견본을 탭한 다음(색상 견본은 정적) 자르기 상자의 코너 핸들을 드래그합니다. 견본의 볼 수 있는 영역의 크기를 조정합니다.
+      * 이미지에 스마트 자르기와 스마트 견본이 모두 있는 경우 이미지에서 자르기 상자의 코너 핸들을 드래그합니다. 자르기의 볼 수 있는 영역의 크기를 조정합니다. 또는 이미지 아래에서 스마트 색상 견본을 선택한 다음(색상 견본은 고정됨) 자르기 상자의 코너 핸들을 드래그합니다. 견본의 볼 수 있는 영역의 크기를 조정합니다.
 
       ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png).
 
    * 스마트 자르기 상자를 이동합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 견본만 있는 경우 이미지에서 자르기 상자를 새 위치로 드래그합니다.
-      * 이미지에 스마트 자르기와 스마트 견본이 모두 있는 경우 이미지에서 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래에서 스마트 색상 견본을 탭하거나 클릭한 다음(색상 견본은 정적) 스마트 색상 견본 자르기 상자를 새 위치로 드래그합니다.
+      * 이미지에 스마트 자르기와 스마트 견본이 모두 있는 경우 이미지에서 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래에서 스마트 색상 견본을 선택한 다음(색상 견본은 정적) 스마트 색상 견본 자르기 상자를 새 위치로 드래그합니다.
 
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * 모든 편집 내용을 실행 취소하고 원본 스마트 자르기 또는 스마트 견본을 복원합니다(현재 편집 세션에만 적용).
 
-      이미지 위에 있는 **[!UICONTROL 되돌리기]**&#x200B;를 누릅니다.
+      이미지 위에서 **[!UICONTROL 되돌리기]**&#x200B;를 선택합니다.
 
       ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
 
 
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭하여 자산의 폴더로 돌아갑니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 선택한 다음 **[!UICONTROL 닫기]**&#x200B;를 선택하여 자산의 폴더로 돌아갑니다.
 
 ## 폴더에서 이미지 프로필 제거 {#removing-an-image-profile-from-folders}
 
@@ -272,17 +272,17 @@ ht-degree: 4%
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 이미지 프로필을 선택합니다.
-1. **[!UICONTROL 폴더에서 처리 프로필 제거]**&#x200B;를 탭하고 프로필을 제거하는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 제거]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 폴더에서 처리 프로필 제거]**&#x200B;를 선택하고 프로필을 제거할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 제거]**&#x200B;를 선택합니다.
 
    이름이 더 이상 폴더 이름 아래에 표시되지 않으므로 이미지 프로필이 더 이상 폴더에 적용되지 않았는지 확인할 수 있습니다.
 
 ### 속성을 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-properties}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 이미지 프로필을 제거할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 이미지 프로필을 제거할 폴더로 이동합니다.
+1. 폴더에서 확인 표시를 선택하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 이미지 프로필]** 탭을 선택합니다.
-1. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 **[!UICONTROL 없음]**&#x200B;을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 **[!UICONTROL 없음]**&#x200B;을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
 
    프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
