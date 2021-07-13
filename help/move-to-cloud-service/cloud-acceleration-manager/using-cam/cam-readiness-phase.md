@@ -1,17 +1,17 @@
 ---
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 4%
+source-wordcount: '670'
+ht-degree: 5%
 
 ---
 
 
 # Cloud Acceleration Manager의 준비 단계 {#readiness-phase-cam}
 
-Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 단계에서 사용 가능한 도구 실행을 시작할 수 있습니다.
+Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 단계에서 현재 AEM 구현에 대한 평가를 시작할 수 있습니다.
 
 준비 단계 에는 다음이 포함됩니다.
 
@@ -39,7 +39,10 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. 다음 단계에 따라 BPA(Best Practices Analyzer)를 다운로드하고 AEM 시스템의 복제본에서 실행합니다.
+1. 다음 단계에 따라 모범 사례 분석기 (BPA)를 다운로드합니다.
+
+   >[!NOTE]
+   >비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 프로덕션 환경에 최대한 가까운 작성 환경에서 BPA를 실행하는 것이 좋습니다. 또는 프로덕션 작성 환경의 복제본에서 실행할 수 있습니다.
 
    1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털로 이동하여 우수 사례 분석기를 zip 파일로 다운로드합니다.
 
@@ -82,7 +85,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 #### 보고서 개요 {#report-overview}
 
-이 **보고서 개요** 카드는 아래 그림과 같이 보고서 결과를 제공합니다.
+이 **보고서 개요** 카드는 아래 그림과 같이, AEM으로 이동할 준비를 평가할 때 적용되는 보고서 결과 및 심각도 수준을 제공합니다.
 
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 이 섹션을 따라 계획 및 설정 활동 카드를 탐색합니다.
 
-1. AEM 마이그레이션을 계획 및 설정하는 데 도움이 되는 모든 관련 콘텐츠를 제공하는 **계획 및 설정** 카드에서 **보기** 단추를 클릭합니다.
+1. **계획 및 설정** 카드에서 **보기** 단추를 클릭합니다. 이 카드는 AEM 마이그레이션을 계획 및 설정하는 데 도움이 되는 모든 관련 컨텐츠를 제공합니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. 마이그레이션 여정의 이 단계에 대한 관련 정보가 포함된 컨텐츠 회전판이 표시됩니다.
+1. 컨텐츠 회전판에 마이그레이션 여정의 이 단계에 대한 모든 관련 정보가 표시됩니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## 다음은 무엇입니까? {#whats-next}
 
-Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)를 사용하여 다음 단계를 검토할 준비가 되었습니다.
+Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)에서 다음 단계를 검토할 준비가 되었습니다.
