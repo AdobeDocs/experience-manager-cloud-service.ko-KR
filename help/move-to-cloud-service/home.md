@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service로 이동
 description: Adobe Experience Manager as a Cloud Service를 클라우드 서비스로서의 AEM 셀프 헬프 리소스 및 설명서 링크로 이동
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 8737463905ef604e7d42280e25fb1f48ed87c9f3
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 59%
+source-wordcount: '703'
+ht-degree: 58%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Service으로 전환 여정에는 다음 단계가 포함됩니다.
 
 * [준비](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
 * [구현](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
-* Go Live
+* [Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-go-live.html?lang=en)
 * [Go Live 후](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 성공적이고 원활한 전환을 위해 본 안내서에 나와 있는 우수 사례를 준수하고 적절한 계획을 세워야 합니다.
