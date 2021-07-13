@@ -1,7 +1,7 @@
 ---
 title: 마이그레이션 후 단계
 description: 마이그레이션 후 단계
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 93%
@@ -18,7 +18,6 @@ ht-degree: 93%
 * **개발자 콘솔**
 * **CRXDE Lite**
 * **로그 관리**
-
 
 ## 개발자 콘솔 {#developer-console}
 
