@@ -3,9 +3,9 @@ title: 콘텐츠의 HTTP2 전달 FAQ
 description: HTTP2 콘텐츠 전달에 대해 알아봅니다.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '797'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
    도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다.
 
-   **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **게시된 서버 이름**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
+   **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. **게시된 서버 이름**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
 ## Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -60,7 +60,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
    도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다.
 
-   **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다.
+   **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다.
 
    * 리치 미디어 요청에 보안 HTTPS를 사용하는지 확인합니다.
    * Adobe을 통해 CDN을 사용하고 있으며 직접 관계로 관리되지 않는지 확인합니다.
@@ -68,7 +68,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
    도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다.
 
-   **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
+   **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
    1. 기술 지원에서는 요청을 제출한 순서에 따라 HTTP/2 고객 대기 목록에 추가합니다.
    1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 전환을 조정하고 대상 날짜를 설정하도록 알려줍니다.
