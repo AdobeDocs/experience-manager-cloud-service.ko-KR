@@ -3,10 +3,10 @@ title: Dynamic Media 작업
 description: Dynamic Media을 사용하여 웹, 모바일 및 소셜 사이트에서 소비할 자산을 제공하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 20%
+ht-degree: 18%
 
 ---
 
