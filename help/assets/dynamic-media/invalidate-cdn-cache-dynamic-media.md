@@ -1,12 +1,12 @@
 ---
-title: Dynamic Media을 통해 CDN(Content Delivery Network) 캐시 무효화
-description: '"CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하여 캐시가 만료될 때까지 기다리는 대신 Dynamic Media에서 제공하는 자산을 빠르게 업데이트하는 방법을 알아봅니다."'
+title: Dynamic Media을 통해 CDN(Content Delivery Network) 캐시를 무효화합니다
+description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하여 캐시가 만료될 때까지 기다리는 대신 Dynamic Media에서 제공하는 자산을 빠르게 업데이트하는 방법을 알아봅니다.
 feature: 자산 관리
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1311'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되므로 
 >
 >이 기능을 사용하려면 Adobe Experience Manager Dynamic Media과 함께 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
-Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)에서 [캐싱 개요 를 참조하십시오.
+Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)의 [캐시 개요 를 참조하십시오.
 
 **Dynamic Media을 통해 CDN 캐시를 무효화하려면 다음을 수행하십시오.**
 
 *2부 1: CDN 무효화 템플릿 만들기*
 
-1. Adobe Experience Manager as a Cloud Service으로 사용하여 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL CDN 무효화 템플릿]**&#x200B;을 탭합니다.
+1. Cloud Service으로 Adobe Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL CDN 무효화 템플릿]**&#x200B;으로 이동합니다.
 
    ![CDN 유효성 검사 기능](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -38,12 +38,12 @@ Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching
 
    ![CDN 무효화 템플릿 - 만들기](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. **[!UICONTROL CDN 무효화 템플릿]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 탭한 다음 **[!UICONTROL 확인]**.<br>
+1. **[!UICONTROL CDN 무효화 템플릿]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택한 다음 **[!UICONTROL 확인]**.<br>
 
    *2부: CDN 무효화 옵션 설정*
    <br>
 
-1. Cloud Service으로 Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL CDN 무효화]**&#x200B;를 누릅니다.
+1. Cloud Service으로 Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL CDN 무효화]**&#x200B;로 이동합니다.
 
    ![CDN 유효성 검사 기능](/help/assets/assets-dm/cdn-invalidation-path.png)
 
@@ -61,18 +61,18 @@ Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching
    | **[!UICONTROL CDN에서 자산 관련 이미지 사전 설정 무효화]** | (선택 사항) 이 옵션을 선택하면 선택한 자산과 연결된 모든 이미지 사전 설정 URL이 캐시 무효화에 대해 자동 구성됩니다.<br>자산 및 관련 사전 정의된 사전 설정 URL은 무효화를 위해 자동으로 구성됩니다. 이 옵션은 이미지 자산에만 작동합니다. |
    | **[!UICONTROL 템플릿 기반 무효화]** | (선택 사항) URL 구성에 정의된 템플릿만 사용하려면 이 옵션을 선택합니다. |
    | **[!UICONTROL 자산 추가]** | 무효화할 자산을 선택하려면 자산 선택기를 사용합니다. 게시된 자산 또는 게시 취소된 자산을 선택할 수 있습니다.<br>CDN에서 캐싱은 자산 기반이 아닌 URL 기반입니다. 따라서 웹 사이트에 있는 전체 URL을 알고 있어야 합니다. 그러한 URL을 결정한 후 템플릿에 추가할 수 있습니다. 그런 다음 해당 자산을 선택하고 추가하고 한 단계에서 URL을 무효화할 수 있습니다. <br>CDN에서  **[!UICONTROL 자산 관련 이미지 사전 설정을 무효화하거나]**, 템플릿 기반 **[!UICONTROL 의 무효화]** 또는 둘 다에 이 옵션을 사용합니다. |
-   | **[!UICONTROL URL 추가]** | 무효화하려는 CDN 캐시가 있는 Dynamic Media 자산에 전체 URL 경로를 수동으로 추가 또는 붙여 넣습니다. ***2의 1부에서 CDN 무효화 템플릿을 만들지 않은 경우 이 옵션을 사용합니다. CDN 무효화 템플릿*** 만들기에 사용할 자산이 몇 개만 있습니다.<br>**중요:**  추가하는 각 URL은 자체 줄에 있어야 합니다.<br>한 번에 최대 1000개의 URL을 무효화할 수 있습니다. **[!UICONTROL URL 추가]** 텍스트 필드의 URL 수가 1000개를 초과하는 경우 **[!UICONTROL 다음]**&#x200B;을(를) 탭할 수 없습니다. 이러한 경우 선택한 자산의 오른쪽에 있는 **[!UICONTROL X]**&#x200B;을 탭하거나 수동으로 추가한 URL을 탭하여 무효화 목록에서 삭제해야 합니다.<br>CDN 무효화 템플릿 또는 이 URL 텍스트 추가 필드에서 이미지 스마트 자르기의  **[!UICONTROL URL]** 을 지정합니다. |
+   | **[!UICONTROL URL 추가]** | 무효화하려는 CDN 캐시가 있는 Dynamic Media 자산에 전체 URL 경로를 수동으로 추가 또는 붙여 넣습니다. ***2의 1부에서 CDN 무효화 템플릿을 만들지 않은 경우 이 옵션을 사용합니다. CDN 무효화 템플릿*** 만들기에 사용할 자산이 몇 개만 있습니다.<br>**중요:**  추가하는 각 URL은 자체 줄에 있어야 합니다.<br>한 번에 최대 1000개의 URL을 무효화할 수 있습니다. **[!UICONTROL URL 추가]** 텍스트 필드의 URL 수가 1000개를 초과하는 경우 **[!UICONTROL 다음]**&#x200B;을 선택할 수 없습니다. 이러한 경우 선택한 자산의 오른쪽에 **[!UICONTROL X]** 을 선택하거나 수동으로 추가한 URL을 선택하여 무효화 목록에서 삭제해야 합니다.<br>CDN 무효화 템플릿 또는 이 URL 텍스트 추가 필드에서 이미지 스마트 자르기의  **[!UICONTROL URL]** 을 지정합니다. |
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 다음]**&#x200B;을 탭합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. **[!UICONTROL CDN 무효화]** - **[!UICONTROL Confirm]** 페이지의 **[!UICONTROL URL]** 목록 상자에서, 이전에 만든 CDN 무효화 템플릿과 방금 추가한 자산에서 생성된 하나 이상의 URL 목록이 표시됩니다.
 
-   예를 들어, 이전 단계에 표시된 CDN 무효화 템플릿 예제를 사용하여 `spinset` 라는 단일 자산을 추가했다고 가정합니다. **[!UICONTROL 도구 > Assets > CDN 무효화]**&#x200B;를 탭하면 **[!UICONTROL CDN 무효화 - Confirm]** 사용자 인터페이스에 다음 5개의 생성된 URL이 표시됩니다.
+   예를 들어, 이전 단계에 표시된 CDN 무효화 템플릿 예제를 사용하여 `spinset` 라는 단일 자산을 추가했다고 가정합니다. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL CDN 무효화]**&#x200B;로 이동하면 **[!UICONTROL CDN 무효화 - 확인]** 사용자 인터페이스에 다음 5개의 생성된 URL이 생성됩니다.
 
    ![CDN 무효화 - 확인](/help/assets/assets-dm/cdn-invalidation-confirm-2.png)
 
-   필요한 경우 URL 오른쪽의 **X**&#x200B;을 탭하여 무효화 프로세스에서 삭제합니다.
+   필요한 경우 URL 오른쪽의 **X**&#x200B;을 선택하여 무효화 프로세스에서 삭제합니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Submit]**&#x200B;을 눌러 CDN 무효화 프로세스를 시작합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Submit]**&#x200B;을 선택하여 CDN 무효화 프로세스를 시작합니다.
 
 ## CDN 무효화 오류 문제 해결
 
@@ -83,7 +83,7 @@ Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching
 | *선택한 자산의 URL을 검색하지 못했습니다.* | 다음 시나리오 중 하나가 충족되는 경우 발생합니다.<br> - Dynamic Media 구성을 찾을 수 없습니다.<br>- Dynamic Media 구성을 읽을 서비스 사용자를 검색하는 동안 예외가 있습니다.<br>- URL을 구성하는 데 사용되는 게시 서버 또는 회사 루트가 Dynamic Media 구성에 없습니다. |
 | *일부 URL이 올바르게 정의되지 않았습니다. 수정 및 다시 제출합니다.* | IPS CDN 캐시 무효화 API에서 오류를 반환하는 경우 발생합니다. 오류는 URL이 다른 회사를 참조하거나 IPS cdnCacheInvalidation API에 의해 수행된 유효성 검사에 따라 URL이 유효하지 않음을 나타냅니다. |
 | *CDN 캐시를 무효화하지 못했습니다.* | CDN 캐시 무효화 요청이 다른 이유로 실패할 경우 발생합니다. |
-| *무효화할 URL을 입력하지 않았습니다.* | **[!UICONTROL CDN 무효화]** - **[!UICONTROL Confirm]** 페이지에 URL이 없는 경우 **[!UICONTROL Submit]**&#x200B;을 탭합니다. |
+| *무효화할 URL을 입력하지 않았습니다.* | **[!UICONTROL CDN 무효화]** - **[!UICONTROL Confirm]** 페이지에 URL이 없는 경우 **[!UICONTROL Submit]**&#x200B;을 선택합니다. |
 
 
-<!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
+<!--  | I do not want to create a template. | Near the upper-right corner of the page, select **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
