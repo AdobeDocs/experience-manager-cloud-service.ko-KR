@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service로 이동
 description: Adobe Experience Manager as a Cloud Service를 클라우드 서비스로서의 AEM 셀프 헬프 리소스 및 설명서 링크로 이동
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 83%
+source-wordcount: '657'
+ht-degree: 63%
 
 ---
 
@@ -19,26 +19,31 @@ ht-degree: 83%
 
 ## AEM as a Cloud Service로 이동하여 얻을 수 있는 이점 {#benefits-aem-moving-to-aem-guide}
 
-AEM as a Cloud Service는 Experience Manager 사이트 및 자산에 확장 가능하고 안전하며 민첩한 기술 기반을 제공하므로 마케터와 IT 담당자가 규모에 맞게 효과적인 경험을 전달하는 데 주력할 수 있습니다.
+AEM as a Cloud Service은 Experience Manager 자산, Forms 및 스크린을 위한 확장 가능하고 안전하며 민첩한 기술 기반을 제공하므로 마케터와 IT 담당자가 규모에 맞게 효과적인 경험을 전달하는 데 주력할 수 있습니다.
 
 AEM as a Cloud Service를 사용하면 팀이 제품 업그레이드를 계획하지 않고 혁신에 집중할 수 있습니다. 새로운 제품 기능은 중단 없이 철저하게 테스트되어 팀에게 전달되므로 항상 최신 애플리케이션에 액세스할 수 있습니다.
 
 ## 클라우드 서비스로 전환 프로세스 이해하기 {#understanding-move}
 
-클라우드 서비스로 전환하는 여정에는 계획, 실행 및 Go-live 후의 3단계가 포함됩니다.
+Cloud Service으로 전환 여정에는 다음 단계가 포함됩니다.
+
+* 준비
+* 구현
+* Go Live
+* Go Live 후
 
 성공적이고 원활한 전환을 위해 본 안내서에 나와 있는 우수 사례를 준수하고 적절한 계획을 세워야 합니다.
 
-아래 그림은 권장되는 클라우드 서비스로의 전환 여정을 시각적으로 보여줍니다.
+아래 그림은 AEM as a Cloud Service으로 권장 전환 여정을 시각적으로 보여줍니다.
 
-![이미지](/help/move-to-cloud-service/assets/home-img1.png)
+![이미지](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
 
-클라우드 서비스로의 전환 여정에 포함된 여러 단계에 대해 자세히 알아보십시오.
 
-* **[계획](/help/move-to-cloud-service/planning.md)**
-* **[실행](/help/move-to-cloud-service/execution.md)**
-* **[Go-live 후](/help/move-to-cloud-service/post-go-live.md)**
+## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
+Cloud Acceleration Manager는 Cloud Service에서 라이브로 전환하는 계획에서부터 전환 여정 전반에 걸쳐 IT 팀을 안내하도록 설계된 클라우드 기반 애플리케이션입니다. AEM as a Cloud Service으로 여정의 모든 단계에서 도움이 되는 Adobe 권장 우수 사례, 팁, 설명서 및 도구를 사용하여 성공적인 마이그레이션을 위해 팀을 설정합니다.
+
+마이그레이션 여정을 시작하려면 Cloud Acceleration Manager 시작하기 를 참조하십시오.
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
@@ -52,6 +57,7 @@ AEM as a Cloud Service를 사용하면 팀이 제품 업그레이드를 계획�
 | [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
 | [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
+| [Screens 사용 안내서](/help/screens-cloud/home.md) | Experience Manager Screens을 Cloud Service으로 사용하고 관리하는 방법을 이해합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | 이러한 개발 및 배포 항목을 탐색하여 AEM의 강력한 기능을 사용하여 경험을 만들고 사용자 지정하는 방법을 이해합니다. |
 | [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 헤드리스 기능을 통해 안내식 여정을 탐색하여 첫 번째 헤드리스 프로젝트를 준비할 수 있습니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
