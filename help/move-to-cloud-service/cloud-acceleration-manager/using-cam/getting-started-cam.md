@@ -1,10 +1,7 @@
 ---
 title: Cloud Acceleration Manager 시작하기
 description: 이 페이지에서는 Cloud Acceleration Manager를 사용 및 시작하는 방법에 대한 개요를 제공합니다.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 1%
@@ -37,7 +34,7 @@ Cloud Acceleration Manager (CAM)로 이동하려면 아래 단계를 따르십�
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### Cloud Acceleration Manager에서 프로젝트 만들기 및 관리 {#create-project}
+### Cloud Acceleration Manager에서 프로젝트 생성 및 관리 {#create-project}
 
 CAM(Cloud Acceleration Manager)의 랜딩 페이지에서 여러 프로젝트를 만들고 편집할 수 있습니다.
 
@@ -80,7 +77,7 @@ CAM(Cloud Acceleration Manager)의 랜딩 페이지에서 여러 프로젝트를
 
 1. **업데이트**&#x200B;를 클릭하여 변경 사항을 커밋합니다.
 
-### 프로젝트 {#delete-project} 삭제
+### 프로젝트 삭제 {#delete-project}
 
 프로젝트를 삭제하려면 아래 절차를 따르십시오.
 
@@ -90,6 +87,6 @@ CAM(Cloud Acceleration Manager)의 랜딩 페이지에서 여러 프로젝트를
 
 1. **삭제**&#x200B;를 클릭하여 단계를 확인합니다.
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 준비 단계 사용에서 다음 단계를 검토할 준비가 되었습니다.
