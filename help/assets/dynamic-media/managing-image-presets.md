@@ -1,12 +1,12 @@
 ---
 title: 이미지 사전 설정 관리
-description: '"이미지 사전 설정 및 이미지 사전 설정을 만들고, 수정하고, 관리하는 방법에 대해 알아봅니다."'
+description: 이미지 사전 설정 및 이미지 사전 설정을 만들고, 수정하고, 관리하는 방법에 대해 알아봅니다.
 feature: 이미지 사전 설정,뷰어,표현물
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '3652'
+source-wordcount: '3634'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 >
 >스마트 이미징은 기존 이미지 사전 설정에서 작동하며 마지막 전달 순간에 인텔리전스를 사용하여 브라우저 또는 네트워크 연결 속도에 따라 이미지 파일 크기를 더 줄입니다. 자세한 내용은 [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md) 을 참조하십시오.
 
-## 이미지 사전 설정 이해 {#understanding-image-presets}
+## 이미지 사전 설정에 대해 알아보기 {#understanding-image-presets}
 
 매크로와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 및 형식 명령의 사전 정의된 컬렉션입니다. 이미지 사전 설정 작동 방식을 이해하려면 웹 사이트에서 각 제품 이미지를 데스크탑 및 모바일 게재에 대해 서로 다른 크기, 서로 다른 형식 및 압축률을 나타내야 한다고 가정합니다.
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 ## 이미지 사전 설정 관리 {#managing-image-presets-1}
 
-Experience Manager 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스한 다음, 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL Assets]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동하여 Experience Manager에서 이미지 사전 설정을 관리합니다.
+전역 탐색 콘솔에 액세스할 Experience Manager 로고를 선택한 다음 도구 아이콘을 선택하고 **[!UICONTROL Assets]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동하여 Experience Manager에서 이미지 사전 설정을 관리합니다.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -62,11 +62,11 @@ Adobe Illustrator의 파일 형식은 PDF의 변형입니다. Experience Manager
 * Adobe Illustrator 문서는 여러 레이어가 있는 단일 페이지로 구성됩니다. 각 레이어는 기본 Illustrator 자산 아래에 PNG 하위 자산으로 추출됩니다.
 * PDF 문서는 하나 이상의 페이지로 구성됩니다. 각 페이지는 기본 다중 페이지 PDF 문서 아래에 단일 페이지 PDF 하위 자산으로 추출됩니다.
 
-하위 자산은 전체 `DAM Update Asset` 워크플로우 내에서 `Create Sub Asset process` 구성 요소에 의해 만들어집니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**&#x200B;을 탭하십시오.
+하위 자산은 전체 `DAM Update Asset` 워크플로우 내에서 `Create Sub Asset process` 구성 요소에 의해 만들어집니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**&#x200B;으로 이동합니다.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-자산을 열 때 하위 자산이나 페이지를 보고, 컨텐츠 메뉴를 탭하고 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지]**&#x200B;를 선택할 수 있습니다. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소에 의해 추출됩니다. 그런 다음 기본 자산 아래의 `page1.pdf`, `page2.pdf` 등으로 저장됩니다. 저장되면 `DAM Update Asset` 워크플로우가 처리합니다.
+자산을 열 때 하위 자산이나 페이지를 보고, 컨텐츠 메뉴를 선택하고 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지]**&#x200B;를 선택할 수 있습니다. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소에 의해 추출됩니다. 그런 다음 기본 자산 아래의 `page1.pdf`, `page2.pdf` 등으로 저장됩니다. 저장되면 `DAM Update Asset` 워크플로우가 처리합니다.
 
 Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 렌디션을 미리 보고 생성하려면 다음 처리 단계를 수행해야 합니다.
 
@@ -87,7 +87,7 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 렌디�
 
 `DAM Update Asset` 워크플로우를 통해 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소 옵션에 액세스합니다.
 
-왼쪽 상단에 있는 Adobe Experience Manager을 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;로 이동합니다. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 누릅니다. DAM 자산 업데이트 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 탭하여 해당 단계 속성 대화 상자를 엽니다.
+왼쪽 위의 Adobe Experience Manager에서 을(를) 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;로 이동합니다. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다. DAM 자산 업데이트 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 탭하여 해당 단계 속성 대화 상자를 엽니다.
 
 #### PDF/AI 이미지 미리 보기 변환 옵션 래스터화 {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -114,7 +114,7 @@ PDF 또는 AI 워크플로우를 래스터화하는 인수
 
 InDesign 파일의 경우, Adobe InDesign Server이 Experience Manager과 통합된 경우에만 하위 자산이 추출됩니다. 참조된 자산은 메타데이터를 기준으로 연결됩니다. InDesign Server은 연결에 필요하지 않습니다. 그러나 InDesign 파일과 참조된 자산 간에 링크를 만들려면 InDesign 파일이 처리되기 전에 참조된 자산이 Experience Manager 내에 있어야 합니다.
 
-<!-- See [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
 `DAM Update Asset` 워크플로우의 미디어 추출 프로세스 구성 요소는 사전 구성된 스크립트 확장 을 실행하여 InDesign 파일을 처리합니다.
 
@@ -127,8 +127,8 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 | ExtendScript 이름 | 기본값 | 설명 |
 |---|---|---|
-| ThumbnailExport.jsx | 예 | `Dynamic Media Process Image Assets` 프로세스 구성 요소에 의해 최적화되고 PTIFF 표현물로 전환되는 300ppi `thumbnail.jpg` 변환을 생성합니다. |
-| JPEGPagesExport.jsx | 예 | 각 페이지에 대해 300ppi JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화되어 `DAM Update Asset` 워크플로우에 의해 PTIFF로 전환됩니다. |
+| ThumbnailExport.jsx | 예 | `Dynamic Media Process Image Assets` 프로세스 구성 요소에 의해 최적화되고 PTIFF 표현물로 전환된 300PPI `thumbnail.jpg` 변환을 생성합니다. |
+| JPEGPagesExport.jsx | 예 | 각 페이지에 대해 300PPI JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화되어 `DAM Update Asset` 워크플로우에 의해 PTIFF로 전환됩니다. |
 | PDFPagesExport.jsx | 아니오 | 각 페이지의 PDF 하위 자산을 생성합니다. PDF 하위 자산은 앞에서 설명한 대로 처리됩니다. PDF에는 단일 페이지만 포함되어 있으므로 하위 자산이 생성되지 않습니다. |
 
 ### 이미지 축소판 크기 구성 {#configuring-image-thumbnail-size}
@@ -137,7 +137,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계에서는 이미지 서버에서 미리 보기가 생성되며 이 구성은 **[!UICONTROL 축소판 처리]** 단계에 적용되는 구성과 독립적입니다. **[!UICONTROL 축소판 처리]** 단계를 통해 축소판을 생성하는 것은 축소판을 만드는 가장 느리고 메모리 집약적인 방법입니다.
 
-축소판 크기 조절은 다음 형식으로 정의됩니다. **[!UICONTROL width:height:center]**(예: *80:80:false*) 너비와 높이는 축소판의 크기(픽셀 단위)를 결정합니다. 가운데 값은 false 또는 true입니다. true로 설정하면 축소판 이미지의 크기가 구성에 지정된 크기와 정확히 일치함을 나타냅니다. 크기가 조정된 이미지가 더 작으면 축소판 안에 가운데에 표시됩니다.
+축소판 크기 조절은 다음 형식으로 정의됩니다. **[!UICONTROL width:height:center]**(예: `80:80:false`). 너비와 높이는 축소판의 크기(픽셀 단위)를 결정합니다. 가운데 값은 false 또는 true입니다. true로 설정하면 축소판 이미지의 크기가 구성에 지정된 크기와 정확히 일치함을 나타냅니다. 크기가 조정된 이미지가 더 작으면 축소판 안에 가운데에 표시됩니다.
 
 >[!NOTE]
 >
@@ -152,18 +152,18 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 **이미지 축소판 크기를 구성하려면**
 
-1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**&#x200B;을 탭합니다.
-1. **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계를 탭하고 **[!UICONTROL 축소판]** 탭을 탭합니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**&#x200B;으로 이동합니다.
+1. **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계를 선택하고 **[!UICONTROL 축소판]** 탭을 선택합니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
    ![6_5_dynamicmediaprocesseassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. **[!UICONTROL 축소판 처리]** 단계를 누른 다음 **[!UICONTROL 축소판]** 탭을 탭합니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 축소판 처리]** 단계를 선택한 다음 **[!UICONTROL 축소판]** 탭을 선택합니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
    >[!NOTE]
    >
    >**[!UICONTROL 축소판 처리]** 단계의 축소판 인수 값은 **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계의 축소판 인수와 일치해야 합니다.
 
-1. **[!UICONTROL 저장]**&#x200B;을 눌러 변경 사항을 워크플로우에 저장합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택하여 워크플로우에 대한 변경 사항을 저장합니다.
 
 ### 표시되는 이미지 사전 설정 수를 늘리거나 줄입니다 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -182,11 +182,11 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. limit 속성에서 숫자를 원하는 숫자(예: `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`)로 변경합니다.
-1. **[!UICONTROL 모두 저장]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
 ### 이미지 사전 설정 만들기 {#creating-image-presets}
 
-이미지 사전 설정을 만들면 미리 보거나 게시할 때 이미지에 이러한 설정을 적용할 수 있습니다.
+미리 보거나 게시할 때 이미지에 설정을 일관되게 적용할 수 있도록 이미지 사전 설정을 만듭니다.
 
 >[!NOTE]
 >
@@ -202,8 +202,8 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 **이미지 사전 설정을 만들려면:**
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;을 탭합니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 이미지 사전 설정 편집]** 창이 열립니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동합니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -211,15 +211,15 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
    >
    >이 이미지 사전 설정을 응답형으로 만들려면 **[!UICONTROL width]** 및 **[!UICONTROL height]** 필드의 값을 지우고 비워 둡니다.
 
-1. 이름을 포함하여 **[!UICONTROL 기본]** 및 **[!UICONTROL 고급]** 탭에 값을 적절하게 입력합니다. 옵션은 [이미지 사전 설정 옵션](#image-preset-options)에 요약되어 있습니다. 사전 설정은 왼쪽 창에 나타나며 다른 자산과 함께 즉시 사용할 수 있습니다.
+1. **[!UICONTROL 이미지 사전 설정 편집]** 창에서 이름을 포함하여 **[!UICONTROL 기본]** 및 **[!UICONTROL 고급]** 탭에 값을 적절하게 입력합니다. 옵션은 [이미지 사전 설정 옵션](#image-preset-options)에 요약되어 있습니다. 사전 설정은 왼쪽 창에 나타나며 다른 자산과 함께 즉시 사용할 수 있습니다.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 ### 응답형 이미지 사전 설정 만들기 {#creating-a-responsive-image-preset}
 
-응답형 이미지 사전 설정을 만들려면 [이미지 사전 설정 만들기](#creating-image-presets)에서 단계를 수행하십시오. **[!UICONTROL 이미지 사전 설정 편집]** 창에서 높이 및 너비를 입력할 때 값을 지우고 비워 둡니다.
+응답형 이미지 사전 설정을 만들려면 [이미지 사전 설정 만들기](#creating-image-presets)의 단계를 수행하십시오. **[!UICONTROL 이미지 사전 설정 편집]** 창에서 높이 및 너비를 입력할 때 값을 지우고 비워 둡니다.
 
 이 필드를 비워 두면 Experience Manager이 이 이미지 사전 설정이 응답형임을 알려줍니다. 다른 값을 적절하게 조정할 수 있습니다.
 
@@ -243,55 +243,12 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 #### 기본 탭 옵션 {#basic-tab-options}
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>필드</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td><strong>이름</strong></td>
-   <td>공백 없이 수사적 이름을 입력합니다. 사용자가 이 이미지 사전 설정을 식별하는 데 도움이 되도록 이름에 이미지 크기 사양을 포함하십시오.</td>
-  </tr>
-  <tr>
-   <td><strong>폭과 높이</strong></td>
-   <td>이미지가 전달되는 크기를 픽셀 단위로 입력하십시오. 너비와 높이는 0픽셀보다 커야 합니다. 두 값 중 하나가 0이면 사전 설정이 만들어지지 않습니다. 두 값이 모두 비어 있으면 응답형 이미지 사전 설정이 만들어집니다.</td>
-  </tr>
-  <tr>
-   <td><strong>형식</strong></td>
-   <td><p>메뉴에서 형식을 선택합니다.</p> <p><strong>JPEG</strong>을 선택하면 다음 다른 옵션이 제공됩니다.</p>
-    <ul>
-     <li><strong>품질</strong>  - JPEG 압축 수준을 제어합니다. 이 설정은 파일 크기와 이미지 품질에 모두 영향을 줍니다. JPEG 품질 비율은 1-100입니다. 슬라이더를 드래그하면 배율이 표시됩니다.</li>
-     <li><strong>JPG 색차 다운샘플링 활성화</strong>  - 눈은 고주파 휘도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 휘도 및 색상 구성 요소로 나눕니다. JPEG 이미지를 압축하면, 휘도 구성 요소를 전체 해상도로 두고, 색상 구성 요소는 픽셀 그룹을 평균화하여 다운샘플링됩니다. 다운샘플링을 수행하면 데이터 볼륨이 1/3 또는 1/3까지 감소하며 파악된 품질에 거의 영향을 주지 않습니다. 다운샘플링은 회색 음영 이미지에는 적용할 수 없습니다. 이 기술은 대비가 높은 이미지(예: 텍스트가 오버레이된 이미지)에 유용한 압축 양을 줄입니다.</li>
-    </ul>
-    <div>
-      선택
-     <strong>GIF</strong> 또는
-     <strong>알파</strong>가 있는 GIF는 다음과 같은 추가 기능을 제공합니다
-     <strong>GIF 색상 양자화</strong> 옵션:
-    </div>
-    <ul>
-     <li><strong>유형  </strong>-  <strong>적응형</strong> (기본값),  <strong>웹</strong> 또는  <strong>Macintosh</strong>를 선택합니다. <strong>알파</strong>가 있는 GIF를 선택하면 Macintosh 옵션을 사용할 수 없습니다.</li>
-     <li><strong>디더</strong>  -  <strong></strong> 확산기 또는  <strong>끄기를 선택합니다</strong>.</li>
-     <li><strong>색상 수  </strong>- 2부터 256까지의 숫자를 입력합니다.</li>
-     <li><strong>색상 목록</strong>  - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검정인 경우 000000,888888,ffff를 입력합니다.</li>
-    </ul>
-    <div>
-      선택
-     <strong>PDF</strong>,
-     <strong>TIFF</strong> 또는
-     <strong>알파</strong>를 사용하는 TIFF는 다음 추가 옵션을 제공합니다.
-    </div>
-    <ul>
-     <li><strong>압축</strong>  - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 <strong>None</strong>, <strong>Zip</strong> 및 <strong>Jpeg</strong>입니다. TIFF의 경우 <strong>없음</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> 및 <strong>Zip</strong>입니다. 및 알파의 TIFF는 <strong>없음</strong>, <strong>LZW</strong> 및 <strong>Zip</strong>입니다.</li>
-    </ul> <p><strong>PNG</strong>, <strong>알파,</strong> 또는 <strong>EPS</strong>를 선택하면 추가 옵션이 없습니다.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>선명하게 하기</strong></td>
-   <td>모든 크기 조절이 수행된 후 이미지에 기본 선명도 필터를 적용하려면 <strong>단순 선명도 사용</strong> 옵션을 선택합니다. 선명하게 하면 이미지를 다른 크기로 표시할 때 나타날 수 있는 흐림 효과를 보상하는 데 도움이 됩니다. </td>
-  </tr>
- </tbody>
-</table>
+| 필드 | 설명 |
+| --- | --- |
+| **이름** | 공백 없이 수사적 이름을 입력합니다. 사용자가 이 이미지 사전 설정을 식별하는 데 도움이 되도록 이름에 이미지 크기 사양을 포함하십시오. |
+| **폭과 높이** | 이미지가 전달되는 크기를 픽셀 단위로 입력하십시오. 너비와 높이는 0픽셀보다 커야 합니다. 두 값 중 하나가 0이면 사전 설정이 만들어지지 않습니다. 두 값이 모두 비어 있으면 응답형 이미지 사전 설정이 만들어집니다. |
+| **형식** | 메뉴에서 형식을 선택합니다.<br>JPEG **** 를 선택하면 다음 다른 옵션이 제공됩니다. <br> **품질**  - JPEG 품질 크기가 1-100입니다. 슬라이더를 드래그하면 배율이 표시됩니다.<br>・  **JPG 색차 다운샘플링 활성화**  - 눈은 고주파 휘도보다 고주파 색상 정보에 덜 민감하므로 JPEG 이미지는 이미지 정보를 휘도 및 색상 구성 요소로 나눕니다. JPEG 이미지를 압축하면, 휘도 구성 요소를 전체 해상도로 두고, 색상 구성 요소는 픽셀 그룹을 평균화하여 다운샘플링됩니다. 다운샘플링을 수행하면 데이터 볼륨이 1/3 또는 1/3까지 감소하며 파악된 품질에 거의 영향을 주지 않습니다. 다운샘플링은 회색 음영 이미지에는 적용할 수 없습니다. 이 기술은 대비가 높은 이미지(예: 텍스트가 오버레이된 이미지)에 유용한 압축 양을 줄입니다.<br><br>알파 **** 가 있는 GIF 또는  **GIF를** 선택하면 다음과 같은 추가  **GIF 색상 양자화 옵션이 제공됩니다.** <br>유형 **-** 적응형 **(기본값),** 웹 **또는** Macintosh **** 선택. **알파**&#x200B;가 있는 GIF를 선택하면 Macintosh 옵션을 사용할 수 없습니다.<br>・  **Dither**  -  **** Diffuseor  **Off**&#x200B;를 선택합니다.<br>・  **색상 수**  - 2-256을 입력합니다.<br>・  **색상 목록**  - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검정인 경우 `000000,888888,ffffff`을 입력합니다.<br><br>알파 **로 PDF**,  **TIFF** 또는  **TIFF를** 선택하면 <br> **압축**  - 압축 알고리즘을 선택할 수 있습니다. PDF에 대한 알고리즘 옵션은 **None**, **Zip** 및 **Jpeg**&#x200B;입니다. TIFF의 경우 **없음**, **LZW**, **Jpeg** 및 **Zip**&#x200B;입니다. 및 알파의 TIFF는 **없음**, **LZW** 및 **Zip**&#x200B;입니다.<br><br>추가  **옵션을 제공하지 않는 PNG**,  **알파가 있는 PNG** 또는  **** EPS를 선택합니다. |
+| **선명하게 하기** | 모든 크기 조절이 수행된 후 이미지에 기본 선명도 필터를 적용하려면 **단순 선명도 사용**&#x200B;을 선택합니다. 선명하게 하면 이미지를 다른 크기로 표시할 때 나타날 수 있는 흐림 효과를 보상하는 데 도움이 됩니다. |
 
 #### 고급 탭 옵션 {#advanced-tab-options}
 
@@ -378,7 +335,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
  </tbody>
 </table>
 
-### 이미지 수정자를 사용하여 이미지 사전 설정 옵션 정의 {#defining-image-preset-options-with-image-modifiers}
+### 이미지 수정자를 사용하여 이미지 사전 설정 옵션을 정의합니다 {#defining-image-preset-options-with-image-modifiers}
 
 기본 및 고급 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 더 많은 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Dynamic Media 이미지 렌더링 API를 사용하며, [HTTP 프로토콜 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)에 자세히 정의되어 있습니다.
 
@@ -430,12 +387,12 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 ### 이미지 사전 설정 편집 {#modifying-image-presets}
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;을 탭합니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동합니다.
 
    ![6_5_image사전 설정-편집 사전 설정](assets/6_5_imagepreset-editpreset.png)
 
-1. 사전 설정을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. **[!UICONTROL 이미지 사전 설정 편집]** 창이 열립니다.
-1. 변경 작업을 수행하고 **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장하거나 **[!UICONTROL 취소]**&#x200B;를 클릭하여 변경 내용을 취소합니다.
+1. 사전 설정을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다. **[!UICONTROL 이미지 사전 설정 편집]** 창이 열립니다.
+1. 변경 작업을 수행하고 **[!UICONTROL 저장]**&#x200B;을 선택하여 변경 내용을 저장하거나 **[!UICONTROL 취소]**&#x200B;를 선택하여 변경 내용을 취소합니다.
 
 ### 이미지 사전 설정 게시 {#publishing-image-presets}
 
@@ -443,5 +400,6 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 
 ### 이미지 사전 설정 삭제 {#deleting-image-presets}
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동합니다.
-1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다. Dynamic Media에서 삭제를 확인합니다. **[!UICONTROL 삭제]**&#x200B;를 탭하여 **[!UICONTROL 취소]**&#x200B;를 삭제하거나 탭합니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 선택합니다.
+1. **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동합니다.
+1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 선택합니다. Dynamic Media에서 삭제를 확인합니다. **[!UICONTROL 삭제]**&#x200B;를 선택하여 **[!UICONTROL 취소]**&#x200B;를 선택하거나 이미지 사전 설정으로 돌아갑니다.
