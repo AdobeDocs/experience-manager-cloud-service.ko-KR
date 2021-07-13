@@ -5,10 +5,10 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: 배포
 role: Architect, Developer
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 72%
+source-wordcount: '125'
+ht-degree: 54%
 
 ---
 
@@ -17,9 +17,18 @@ ht-degree: 72%
 
 + [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md)
 + 전환 여정 단계 {#phases}
-   + [계획](/help/move-to-cloud-service/planning.md)
-   + [실행](/help/move-to-cloud-service/execution.md)
-   + [Go-live 후](/help/move-to-cloud-service/post-go-live.md)
+   + [준비](/help/move-to-cloud-service/migration-readiness.md)
+   + [구현](/help/move-to-cloud-service/migration-implementation.md)
+   + [Go Live 후](/help/move-to-cloud-service/migration-post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+   + Cloud Acceleration Manager 소개 {#introduction-cam}
+      + [개요](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
+      + [이점](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+   + Cloud Acceleration Manager 사용 {#using-cam}
+      + [Cloud Acceleration Manager 시작하기](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+      + [준비 단계](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+      + [구현 단계](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+      + [라이브 단계 이동](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + 클라우드 전환 도구 {#cloud-migration}
    + 우수 사례 분석기 {#best-practices-analyzer}
       + [개요](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
