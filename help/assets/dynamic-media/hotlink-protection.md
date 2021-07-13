@@ -4,10 +4,10 @@ description: Dynamic Media에서 핫링크 보호를 활성화하는 방법을 �
 feature: 자산 관리
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
