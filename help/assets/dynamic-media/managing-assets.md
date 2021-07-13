@@ -1,23 +1,23 @@
 ---
-title: Dynamic Media 자산 관리 기본 정보
+title: Dynamic Media 자산 관리
 description: Dynamic Media 자산으로 작업하는 방법을 알아봅니다.
 feature: 자산 관리
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 13%
+source-wordcount: '119'
+ht-degree: 7%
 
 ---
 
-# Dynamic Media 자산 관리 기본 정보 {#managing-assets}
+# Dynamic Media 자산 관리 {#managing-assets}
 
 Dynamic Media 자산(이미지, 비디오 및 대화형 자산)이 업로드된 후 관리 작업에는 미리 보기, 다운로드 또는 게시 등 많은 작업이 포함됩니다.
 
 미리 볼 때 이미지 사전 설정(이미지에만 해당) 또는 뷰어 사전 설정(비디오 및 이미지의 경우)을 적용할 수도 있습니다. 두 항목을 모두 자산에 적용할 수 없습니다. [뷰어 사전 설정 적용](viewer-presets.md) 및 [이미지 사전 설정 적용](image-presets.md)을 참조하십시오.
 
-자산 관리에 대한 일반 정보는 [Touch UI를 사용하여 자산 관리에 있습니다](/help/assets/manage-digital-assets.md).
+자산 관리에 대한 일반 정보는 [Touch UI](/help/assets/manage-digital-assets.md)로 자산 관리에 있습니다.
 
 다음 항목에서는 Dynamic Media 자산을 관리하기 위해 수행할 수 있는 작업을 설명합니다.
 
