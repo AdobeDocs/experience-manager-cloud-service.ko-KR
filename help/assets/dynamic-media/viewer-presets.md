@@ -4,9 +4,9 @@ description: Dynamic Media에서 뷰어 사전 설정을 적용하는 방법을 
 feature: 뷰어 사전 설정,뷰어
 role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,16 @@ ht-degree: 0%
 
 사용 중인 게시 모드에 따라 뷰어 사전 설정을 게시할 필요가 없습니다.
 
-뷰어 사전 설정에 문제가 있으면 [Dynamic Media 문제 해결](troubleshoot-dm.md#viewers) 을 참조하십시오.
+뷰어 사전 설정에 문제가 있으면 [Dynamic Media 문제 해결](troubleshoot-dm.md#viewers)을 참조하십시오.
 
 ## 자산에 Dynamic Media 뷰어 사전 설정 적용 {#applying-a-viewer-preset-to-an-asset}
 
-1. 자산을 열고 왼쪽 레일에서 **[!UICONTROL Viewers]**&#x200B;를 누릅니다.
+1. 자산을 열고 왼쪽 레일에서 **[!UICONTROL 뷰어]**&#x200B;를 선택합니다.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * 뷰어 사전 설정을 선택하면 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 단추가 나타납니다.
-   * 자산의 **[!UICONTROL 세부 사항 보기]**&#x200B;에서 뷰어를 선택하면 시스템에 다양한 뷰어 사전 설정이 표시됩니다. 표시되는 사전 설정 수를 늘릴 수 있습니다. [표시되는 뷰어 사전 설정 수를 늘립니다](managing-viewer-presets.md).
+   * 자산의 **[!UICONTROL 세부 사항 보기]**&#x200B;에서 뷰어를 선택하면 시스템에 다양한 뷰어 사전 설정이 표시됩니다. 표시되는 사전 설정 수를 늘릴 수 있습니다. [표시되는 뷰어 사전 설정 수를 늘리십시오](managing-viewer-presets.md).
 
 1. 오른쪽 창에 표시된 대로 자산에 적용할 수 있도록 왼쪽 창에서 뷰어를 선택합니다. [URL을 복사하여 다른 사용자와](linking-urls-to-yourwebapplication.md)을 공유할 수도 있습니다.
 
