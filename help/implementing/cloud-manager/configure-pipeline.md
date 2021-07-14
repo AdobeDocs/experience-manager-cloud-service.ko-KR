@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 >
 >초기 설정 후 파이프라인 설정을 변경할 수 있습니다.
 
-## [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}에서 파이프라인 설정 구성
+## [!UICONTROL Cloud Manager]에서 파이프라인 설정 구성 {#configuring-the-pipeline-settings-from-cloud-manager}
 
 프로그램을 설정하고 [!UICONTROL Cloud Manager] UI를 사용하여 하나 이상의 환경이 있으면 배포 파이프라인을 설정할 준비가 된 것입니다.
 
@@ -110,7 +110,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 ## 비프로덕션 및 코드 품질 전용 파이프라인 {#non-production-pipelines}
 
-스테이징 및 프로덕션에 배포되는 기본 파이프라인 외에도 고객은 **비프로덕션 파이프라인**&#x200B;이라고 하는 추가 파이프라인을 설정할 수 있습니다. 이러한 파이프라인은 항상 빌드 및 코드 품질 단계를 실행합니다. Adobe Managed Services 환경에 선택적으로 배포할 수도 있습니다.
+스테이징 및 프로덕션에 배포되는 기본 파이프라인 외에도 고객은 **비프로덕션 파이프라인**&#x200B;이라고 하는 추가 파이프라인을 설정할 수 있습니다. 이러한 파이프라인은 항상 빌드 및 코드 품질 단계를 실행합니다. 선택적으로 AEM as a Cloud Service 환경에 배포할 수도 있습니다.
 
 홈 화면에서는 이러한 파이프라인이 새 카드에 나열됩니다.
 
