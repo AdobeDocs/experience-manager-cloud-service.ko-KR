@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
+source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -200,4 +200,4 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 ![](assets/publish-logs.png "LogsLogs")
 
 컨텐츠를 게시할 수 없는 경우에는 전체 게시가 AEM 게시 서비스에서 복귀됩니다.
-이 경우 게시가 취소되는 원인이 되는 항목을 식별하려면 대기열을 검토해야 합니다. 빨간색 상태를 표시하는 큐를 클릭하면 보류 중인 항목이 있는 큐가 표시되며, 필요한 경우 단일 또는 모든 항목을 지울 수 있습니다.
+이 경우 편집 가능한 기본 대기열은 빨간색 상태를 표시하며 어떤 항목이 게시를 취소했는지 확인하기 위해 검토해야 합니다. 해당 대기열을 클릭하면 보류 중인 항목이 표시되며, 필요한 경우 단일 항목 또는 모든 항목을 지울 수 있습니다.
