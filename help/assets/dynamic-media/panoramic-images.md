@@ -4,7 +4,7 @@ description: Dynamic Media에서 파노라마 이미지로 작업하는 방법�
 feature: 파노라마 이미지
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ![파노라마 이미지2](assets/panoramic-image2.png)
 
-## 파노라마 이미지 뷰어에서 사용할 자산 업로드 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## 파노라마 이미지 뷰어에서 사용할 자산을 업로드합니다 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 업로드된 자산이 파노라마 이미지 뷰어와 함께 사용할 구형 파노라마 이미지로 분류되도록 하려면 자산에 다음 중 하나 또는 둘 다 있어야 합니다.
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 종횡비와 키워드 기준은 모두 자산 세부 사항 페이지와 `Panoramic Media` WCM 구성 요소의 파노라마 자산에 적용됩니다.
 
-파노라마 이미지 뷰어에서 사용할 자산을 업로드하려면 [자산 업로드](/help/assets/manage-digital-assets.md#uploading-assets)를 참조하십시오.
+파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 [자산 업로드](/help/assets/manage-digital-assets.md#uploading-assets)를 참조하십시오.
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -41,7 +41,7 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Near the upper-right corner of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
 
 1. On the same Image Server Publish page, locate the heading **[!UICONTROL Request Attributes]**.
@@ -60,9 +60,9 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
    These settings are necessary for using the `Panoramic Media` WCM component in AEM.
 
-1. At the bottom of the Image Server Publish page, on the left side, click **[!UICONTROL Save]**.
+1. At the bottom of the Image Server Publish page, on the left side, select **[!UICONTROL Save]**.
 
-1. In the lower-right corner, click **[!UICONTROL Close]**.
+1. In the lower-right corner, select **[!UICONTROL Close]**.
 
 ### Troubleshooting the Panoramic Media WCM component {#troubleshooting-the-panoramic-media-wcm-component}
 
