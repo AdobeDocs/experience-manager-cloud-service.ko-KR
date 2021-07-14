@@ -4,10 +4,10 @@ description: 반응형 코드 기능을 사용하여 Dynamic Media에서 최적�
 feature: 자산 관리
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 또한 [웹 페이지에 비디오 뷰어 포함](embed-code.md)을 참조하십시오.
 
-또한 [URL을 웹 응용 프로그램에 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
+또한 [웹 애플리케이션에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
 
 **응답형 사이트용으로 최적화된 이미지를 전달하려면:**
 
-1. 응답형 코드를 제공할 이미지로 이동하여 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
+1. 응답형 코드를 제공할 이미지로 이동하여 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 선택합니다.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ ht-degree: 3%
    >
    >이미지 사전 설정이 자동으로 게시됩니다.
 
-1. **[!UICONTROL RESS]**&#x200B;을 누릅니다.
+1. **[!UICONTROL RESS]**&#x200B;을 선택합니다.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
