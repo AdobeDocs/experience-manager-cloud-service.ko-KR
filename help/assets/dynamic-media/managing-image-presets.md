@@ -4,9 +4,9 @@ description: 이미지 사전 설정 및 이미지 사전 설정을 만들고, �
 feature: 이미지 사전 설정,뷰어,표현물
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '3634'
+source-wordcount: '3633'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 렌디�
 
 `DAM Update Asset` 워크플로우를 통해 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소 옵션에 액세스합니다.
 
-왼쪽 위의 Adobe Experience Manager에서 을(를) 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;로 이동합니다. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다. DAM 자산 업데이트 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 탭하여 해당 단계 속성 대화 상자를 엽니다.
+왼쪽 상단에 있는 Adobe Experience Manager을 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;로 이동합니다. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다. DAM 자산 업데이트 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 탭하여 해당 단계 속성 대화 상자를 엽니다.
 
 #### PDF/AI 이미지 미리 보기 변환 옵션 래스터화 {#rasterize-pdf-ai-image-preview-rendition-options}
 
