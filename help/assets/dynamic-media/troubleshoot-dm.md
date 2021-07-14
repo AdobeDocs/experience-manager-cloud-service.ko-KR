@@ -3,10 +3,10 @@ title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -137,7 +137,7 @@ ht-degree: 2%
     </ul> </td>
    <td>
     <ol>
-     <li>Cloud Services 아래의 Dynamic Media 구성이 제대로 설정되었는지 확인합니다.</li>
+     <li>Cloud Services 아래의 Dynamic Media 구성이 제대로 설정되어 있는지 확인하십시오.</li>
      <li>폴더에 비디오 프로필이 있는지 확인합니다. 또한 비디오 프로필을 확인합니다.</li>
     </ol> </td>
   </tr>
@@ -179,11 +179,11 @@ ht-degree: 2%
   <tr>
    <td>뷰어 사전 설정이 게시되지 않음</td>
    <td><p>샘플 관리자 진단 페이지로 진행합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>계산된 값을 관찰합니다. 올바르게 작동하면 다음을 볼 수 있습니다.</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>: 뷰어 자산을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 <strong>활성화되지 않은 모든 자산 목록</strong> 단추 중 하나를 클릭하여 세부 사항을 확인합니다.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>: 뷰어 자산을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 <strong>활성화되지 않은 모든 자산 목록</strong> 단추 중 하나를 선택하여 세부 사항을 확인합니다.</p> </td>
    <td>
     <ol>
      <li>관리 도구의 뷰어 사전 설정 목록으로 이동합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>모든 뷰어 사전 설정을 선택한 다음 <strong>게시</strong>를 클릭합니다.</li>
+     <li>모든 뷰어 사전 설정을 선택한 다음 <strong>게시</strong>를 선택합니다.</li>
      <li>샘플 관리자로 돌아가서 활성화되지 않은 자산 수가 이제 0임을 확인합니다.</li>
     </ol> </td>
   </tr>
