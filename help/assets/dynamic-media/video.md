@@ -4,9 +4,9 @@ description: Dynamic Media에서 비디오를 사용하여 작업하는 방법�
 feature: 비디오 프로필
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '9471'
+source-wordcount: '9467'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
    * 자신만의 비디오 인코딩 프로필을 만듭니다. 또는 Dynamic Media과 함께 제공되는 사전 정의된 _응용 비디오 인코딩_ 프로필을 사용하면 됩니다.
 
-      * [비디오 인코딩 프로필 만들기](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [비디오 인코딩 프로필을 만듭니다](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * [비디오 인코딩 우수 사례](#best-practices-for-encoding-videos)에 대해 자세히 알아보십시오.
    * 비디오 처리 프로필을 기본 소스 비디오를 업로드할 하나 이상의 폴더에 연결합니다.
 
@@ -54,13 +54,13 @@ ht-degree: 1%
    * 비디오 자산 구성, 탐색 및 검색
 
       * [디지털 ](/help/assets/organize-assets.md)
-자산 구성  [처리 프로필 사용을 위한 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오](/help/assets/dynamic-media/best-practices-for-file-management.md)
+자산 구성  [처리 프로필을 사용하기 위해 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오](/help/assets/dynamic-media/best-practices-for-file-management.md)
 
-      * [비디오 ](/help/assets/search-assets.md#custompredicates) 자산 검색  [또는 자산 검색](/help/assets/manage-digital-assets.md#search-assets)
+      * [비디오 ](/help/assets/search-assets.md#custompredicates) 자산 검색 또는  [자산 검색](/help/assets/manage-digital-assets.md#search-assets)
    * 비디오 자산 미리 보기 및 게시
 
       * 관련 축소판과 함께 비디오의 소스 비디오 및 인코딩된 표현물을 봅니다.
-         [비디오 ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 미리 보기 또는  [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)
+         [미리 ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 보기 비디오 또는  [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)
          [비디오 표현물 관리](/help/assets/manage-digital-assets.md#managing-renditions)
 
 
@@ -103,22 +103,22 @@ ht-degree: 1%
 
    * WCM(웹 컨텐츠 관리) 시스템으로 Experience Manager을 사용하는 경우 웹 페이지에 비디오를 직접 추가할 수 있습니다.
 
-      * [웹 페이지에 비디오 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+      * [웹 페이지에 비디오를 추가합니다](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 페이지에 비디오를 링크하거나 포함할 수 있습니다.
 
       * URL을 사용하여 비디오 통합:
-         [URL을 웹 애플리케이션에 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+         [웹 애플리케이션에 URL을 연결합니다](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
-         [웹 페이지에 비디오 뷰어 포함](/help/assets/dynamic-media/embed-code.md).
-   * [YouTube에 비디오 게시](#publishing-videos-to-youtube).
-   * [비디오 보고서 생성](#viewing-video-reports).
+         [웹 페이지에 비디오 뷰어를 포함합니다](/help/assets/dynamic-media/embed-code.md).
+   * [비디오를 YouTube에 게시합니다](#publishing-videos-to-youtube).
+   * [비디오 보고서를 생성합니다](#viewing-video-reports).
 
-   * [비디오에 캡션 추가](#adding-captions-to-video).
+   * [비디오에 캡션을 추가합니다](#adding-captions-to-video).
 
 
 
-## Dynamic Media에서 비디오 작업 {#working-with-video-in-dynamic-media}
+## Dynamic Media에서 비디오를 사용한 작업 {#working-with-video-in-dynamic-media}
 
 Dynamic Media의 비디오는 데스크탑, iOS, Android™, BlackBerry® 및 Windows® 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
 
@@ -151,7 +151,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android™, BlackBerry® 및 Wi
 
 Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 BlackBerry® 장치를 찾을 수 있습니다. [BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
 
-다음 위치에서 이 비디오 형식을 지원하는 Windows® 장치를 찾을 수 있습니다. [Windows® Phone에서 지원되는 비디오 형식](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
+다음 위치에서 이 비디오 형식을 지원하는 Windows® 장치를 찾을 수 있습니다. [Windows® Phone에서 지원되는 비디오 형식](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)?redirectedfrom=MSDN)
 
 * 다음을 포함하여 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
@@ -276,7 +276,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 ## 비디오 인코딩 우수 사례 {#best-practices-for-encoding-videos}
 
-Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 **Dynamic Media 인코딩 비디오** 워크플로우가 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 기록 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
+Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 **Dynamic Media 인코딩 비디오** 워크플로우가 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 기록 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행 상태 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 
 다음은 소스 비디오 파일을 인코딩하기 위한 우수 사례 팁입니다.
 
@@ -430,8 +430,8 @@ YouTube 서버에 비디오 자산을 게시하려면 YouTube을 사용하여 �
 1. [Experience Manager에서 YouTube 설정](#setting-up-youtube-in-aem)
 1. [(선택 사항) 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [YouTube 채널에 비디오 게시](#publishing-videos-to-your-youtube-channel)
-1. [(선택 사항) YouTube에서 게시된 비디오 확인](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
-1. [YouTube URL을 웹 애플리케이션에 연결](#linking-youtube-urls-to-your-web-application)
+1. [(선택 사항) YouTube에서 게시된 비디오를 확인합니다](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
+1. [웹 애플리케이션에 YouTube URL 연결](#linking-youtube-urls-to-your-web-application)
 
 [비디오를 게시 취소하여 YouTube](#unpublishing-videos-to-remove-them-from-youtube)에서 제거할 수도 있습니다.
 
@@ -455,12 +455,12 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
    이미 Google 계정이 있는 경우 다음 단계로 건너뜁니다.
 
 1. [https://cloud.google.com/](https://cloud.google.com/)로 이동합니다.
-1. 오른쪽 상단 모서리의 Google Cloud 페이지에서 **[!UICONTROL 콘솔]**&#x200B;을 클릭합니다.
+1. 오른쪽 상단 모서리의 Google Cloud 페이지에서 **[!UICONTROL 콘솔]**&#x200B;을 선택합니다.
 
    필요한 경우 Google 계정 자격 증명을 사용하여 **[!UICONTROL 에 로그인하여**[!UICONTROL &#x200B;콘솔&#x200B;]**옵션을 확인합니다.]**
 
-1. 대시보드 페이지의 **[!UICONTROL Google Cloud Platform]** 오른쪽에 있는 프로젝트 드롭다운 목록을 클릭하여 프로젝트 선택 대화 상자를 엽니다.
-1. 프로젝트 선택 대화 상자에서 **[!UICONTROL 새 프로젝트]**&#x200B;를 누릅니다.
+1. 대시보드 페이지의 **[!UICONTROL Google Cloud Platform]** 오른쪽에 있는 프로젝트 드롭다운 목록을 선택하여 프로젝트 선택 대화 상자를 엽니다.
+1. 프로젝트 선택 대화 상자에서 **[!UICONTROL 새 프로젝트]**&#x200B;를 선택합니다.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
@@ -468,22 +468,22 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
 
    프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다. 만든 후에는 변경할 수 없습니다. 또한 나중에 Experience Manager에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 그러므로, 그것을 적으세요.
 
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
 1. 다음 중 하나를 수행합니다.
 
-   * 프로젝트의 대시보드의 시작하기 카드에서 **[!UICONTROL 탐색 및 API]**&#x200B;를 활성화합니다.
-   * 프로젝트의 대시보드의 API 카드에서 **[!UICONTROL API로 이동 개요]**&#x200B;를 탭합니다.
+   * 프로젝트의 대시보드의 시작하기 카드에서 **[!UICONTROL 탐색 및 API]**&#x200B;를 선택합니다.
+   * 프로젝트의 대시보드의 API 카드에서 **[!UICONTROL API로 이동 개요]**&#x200B;를 선택합니다.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. API 및 서비스 페이지의 상단 근처에 있는 **[!UICONTROL API 및 서비스 활성화]**&#x200B;를 탭합니다.
-1. API 라이브러리 페이지의 왼쪽에 있는 **[!UICONTROL 카테고리]** 아래에서 **[!UICONTROL YouTube]**&#x200B;을 누릅니다. 페이지 오른쪽에서 **[!UICONTROL YouTube 데이터 API]**&#x200B;를 탭합니다.
-1. YouTube 데이터 API v3 페이지에서 **[!UICONTROL 활성화]**&#x200B;를 탭합니다.
+1. API 및 서비스 페이지의 상단 근처에 있는 **[!UICONTROL API 및 서비스 활성화]**&#x200B;를 선택합니다.
+1. API 라이브러리 페이지의 왼쪽에 있는 **[!UICONTROL 카테고리]** 아래에서 **[!UICONTROL YouTube]**&#x200B;을 선택합니다. 페이지 오른쪽에서 **[!UICONTROL YouTube 데이터 API]**&#x200B;를 선택합니다.
+1. YouTube 데이터 API v3 페이지에서 **[!UICONTROL 활성화]**&#x200B;를 선택합니다.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. API를 사용하려면 자격 증명이 필요합니다. 필요한 경우 **[!UICONTROL 자격 증명 만들기]**&#x200B;를 클릭합니다.
+1. API를 사용하려면 자격 증명이 필요합니다. 필요한 경우 **[!UICONTROL 자격 증명 만들기]**&#x200B;를 선택합니다.
 
    ![6_5_googleaccount-apis-createcreatecredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
@@ -493,7 +493,7 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
 
    * **[!UICONTROL 어디에서 API를 호출합니까?]** 드롭다운 목록에서  **[!UICONTROL 웹 서버(예: node.js, Tomcat)]**&#x200B;를 선택합니다.
 
-   * **[!UICONTROL 어떤 데이터에 액세스합니까?]** 드롭다운 목록에서 사용자 데이터 **[!UICONTROL 를 누릅니다]**.
+   * **[!UICONTROL 어떤 데이터에 액세스합니까?]** 드롭다운 목록에서  **[!UICONTROL 사용자 데이터를 선택합니다]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -517,7 +517,7 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
 
    **참고**: 위의 경로 예는 설명 목적으로만 사용됩니다.
 
-1. **[!UICONTROL OAuth 클라이언트 ID 만들기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL OAuth 클라이언트 ID 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 프로젝트에 자격 증명을 추가]** 페이지의 3단계의 **[!UICONTROL OAuth 2.0 동의 화면 설정]** 제목 아래에서 현재 사용 중인 Gmail 이메일 주소를 선택합니다.
 
    ![6_5_googleaccount-apis-createcredentials-consenscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
@@ -526,8 +526,8 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
 
    YouTube을 인증할 때 Experience Manager 관리자에게 동의 화면이 표시됩니다. Experience Manager은 YouTube에 권한을 요청하십시오.
 
-1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
-1. 프로젝트에 자격 증명 추가 페이지의 4단계에서 **[!UICONTROL 자격 증명 다운로드]** 제목 아래에 있는 **[!UICONTROL 다운로드]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 계속]**&#x200B;을 선택합니다.
+1. 프로젝트에 자격 증명 추가 페이지의 4단계에서 **[!UICONTROL 자격 증명 다운로드]** 제목 아래에서 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
 
    ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
@@ -535,25 +535,25 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
 
    나중에 Adobe Experience Manager에서 YouTube을 설정할 때 이 다운로드한 json 파일이 필요합니다.
 
-1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 선택합니다.
 
    Google 계정에서 로그아웃합니다. 이제 YouTube 채널을 만듭니다.
 
 ### YouTube 채널 만들기 {#creating-a-youtube-channel}
 
-YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합니다. YouTube 채널을 이미 만든 경우 이 작업을 건너뛰고 게시](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)에 대한 태그 추가 로 이동할 수 있습니다.[
+YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합니다. YouTube 채널을 이미 만든 경우 이 작업을 건너뛰고 게시](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)용 태그 추가 로 이동할 수 있습니다.[
 
 >[!CAUTION]
 >
->Experience Manager의 YouTube 설정 아래에 채널을 추가하려면 먼저 YouTube *에서 채널을 하나 이상 설정했는지 확인하십시오(아래 Experience Manager](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오).*[ 채널 설정을 수행하지 않으면 기존 채널에 대해 경고가 표시되지 않습니다. 하지만 채널을 추가할 때는 Google 확인이 계속 발생하지만, 비디오를 전송할 채널을 선택하는 옵션은 없습니다.
+>Experience Manager의 YouTube 설정 아래에 채널을 추가하려면 먼저 YouTube *에서 채널을 하나 이상 설정했는지 확인하십시오(아래 Experience Manager](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오.).*[ 채널 설정을 수행하지 않으면 기존 채널에 대해 경고가 표시되지 않습니다. 하지만 채널을 추가할 때는 Google 확인이 계속 발생하지만, 비디오를 전송할 채널을 선택하는 옵션은 없습니다.
 
 **YouTube 채널을 만들려면:**
 
 1. [https://www.youtube.com](https://www.youtube.com/)로 이동하여 Google 계정 자격 증명을 사용하여 로그인합니다.
-1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진(단색 원 내에 문자로 표시될 수도 있음)을 클릭한 다음 **[!UICONTROL YouTube 설정]**(라운드 톱니바퀴 아이콘)을 탭합니다.
-1. 개요 페이지의 추가 기능 제목 아래에서 **[!UICONTROL 내 채널을 모두 보거나 새 채널]**&#x200B;을 만듭니다.
-1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 탭합니다.
-1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시하려는 회사 이름 또는 선택한 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진을 선택한(단색 원 내에 문자로 표시될 수도 있음) 다음 **[!UICONTROL YouTube 설정]** (라운드 톱니바퀴 아이콘)을 선택합니다.
+1. 개요 페이지의 추가 기능 제목 아래에서 **[!UICONTROL 내 채널을 모두 보거나 채널]**&#x200B;을 만듭니다.
+1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 선택합니다.
+1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시하려는 회사 이름 또는 선택한 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
    여기에 입력하는 이름을 기억하십시오. Experience Manager에서 YouTube을 설정해야 할 경우에는 다시 입력해야 합니다.
 
@@ -565,7 +565,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 비디오를 YouTube에 게시하려면 Experience Manager은 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-cloud/authoring/features/tags.md)를 참조하십시오.
 
-또는 Experience Manager에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 Experience Manager](#setting-up-youtube-in-aem)YouTube에서 [설정으로 이동할 수 있습니다.
+또는 Experience Manager에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 Experience Manager](#setting-up-youtube-in-aem)YouTube 설정 [으로 이동할 수 있습니다.
 
 >[!NOTE]
 >
@@ -573,13 +573,13 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, select **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
-1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
-1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
+1. In the upper-left corner of Experience Manager, select the Experience Manager logo, then in the left rail, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
+1. On the Agents of Author page, select **[!UICONTROL YouTube Publish (youtube)]**.
+1. On the toolbar, to the right of Settings, select **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
-1. Click **[!UICONTROL OK]**. -->
+1. Select **[!UICONTROL OK]**. -->
 
 ### Experience Manager에서 YouTube 설정 {#setting-up-youtube-in-aem}
 
@@ -591,10 +591,10 @@ Experience Manager 6.4부터 Experience Manager에서 YouTube 게시를 설정�
 #### Experience Manager 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
 
 1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
-1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube 게시 구성]**&#x200B;을 누릅니다.
-1. **[!UICONTROL global]**&#x200B;을 누릅니다(선택하지 않음).
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube 게시 구성]**&#x200B;으로 이동합니다.
+1. **[!UICONTROL global]**&#x200B;을 선택합니다(선택하지 않음).
 
-1. 전역 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
+1. 글로벌 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. YouTube 구성 만들기 페이지의 Google Cloud 플랫폼 설정 아래의 **[!UICONTROL 애플리케이션 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
 
    처음에 Google Cloud 설정을 구성할 때 프로젝트 ID를 지정했습니다.
@@ -605,33 +605,33 @@ YouTube 구성 만들기 페이지를 열어 둡니다. 곧 다시 돌아오실 
 1. 일반 텍스트 편집기를 사용하여 [Google Cloud 설정 구성](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings) 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
 1. YouTube 계정 설정 대화 상자로 돌아갑니다. **[!UICONTROL JSON 구성]** 필드에서 JSON 텍스트를 붙여 넣습니다.
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    이제 Experience Manager에서 YouTube 채널을 설정합니다.
 
-1. **[!UICONTROL 채널 추가]**&#x200B;를 누릅니다.
+1. **[!UICONTROL 채널 추가]**&#x200B;를 선택합니다.
 1. 채널 이름 필드에 **[!UICONTROL 이전에 YouTube]**&#x200B;에 하나 이상의 채널을 추가하는 작업에서 만든 채널의 이름을 입력합니다.
 
    원하는 경우 설명을 선택적으로 추가할 수 있습니다.
 
-1. **[!UICONTROL 추가]**&#x200B;를 누릅니다.
+1. **[!UICONTROL 추가]**&#x200B;를 선택합니다.
 1. YouTube/Google 확인이 표시됩니다. 아직 Google Cloud 계정에 로그인하지 않은 경우 이 단계를 건너뜁니다.
 
    * Google 프로젝트 ID 및 위의 JSON 텍스트와 연결된 Google 사용자 이름 및 암호를 입력합니다.
    * 계정에 두 개 이상의 항목이 표시되는 채널 수에 따라 다릅니다. 채널을 선택합니다. 전자 메일 주소를 선택하지 마십시오; 채널이 아닙니다.
-   * 다음 페이지에서 **[!UICONTROL Accept]**&#x200B;를 눌러 이 채널에 액세스할 수 있습니다.
+   * 다음 페이지에서 **[!UICONTROL Accept]**&#x200B;를 선택하여 이 채널에 액세스할 수 있도록 합니다.
 
-1. **[!UICONTROL Allow]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 허용]**&#x200B;을 선택합니다.
 
    이제 게시할 태그를 설정합니다.
 
-1. **[!UICONTROL 게시할 태그 설정]**  - Cloud Services > YouTube 페이지에서 연필 아이콘을 탭하여 사용할 태그 목록을 편집합니다.
-1. Experience Manager에서 사용 가능한 태그 목록을 표시하려면 드롭다운 목록 아이콘(거꾸로 있는 삽입 기호)을 누릅니다.
-1. 태그를 추가하려면 하나 이상의 태그를 탭합니다.
+1. **[!UICONTROL 게시할 태그 설정]**  - Cloud Services > YouTube 페이지에서 연필 아이콘을 선택하여 사용할 태그 목록을 편집합니다.
+1. Experience Manager에서 사용 가능한 태그 목록을 표시하려면 드롭다운 목록 아이콘(거꾸로 있는 삽입 기호)을 선택합니다.
+1. 태그를 추가하려면 하나 이상의 태그를 선택합니다.
 
-   추가한 태그를 삭제하려면 태그를 선택하고 **[!UICONTROL X]**&#x200B;를 누릅니다.
+   추가한 태그를 삭제하려면 태그를 선택하고 **[!UICONTROL X]**&#x200B;을(를) 선택합니다.
 
-1. 원하는 태그를 추가했으면 **[!UICONTROL 저장]**&#x200B;을 누릅니다.
+1. 원하는 태그를 추가했으면 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
@@ -639,10 +639,10 @@ YouTube 구성 만들기 페이지를 열어 둡니다. 곧 다시 돌아오실 
 
 1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
 
-1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**&#x200B;을 누릅니다.
-1. 타사 서비스 제목 아래에 있는 YouTube에서 **[!UICONTROL 지금 구성]**&#x200B;을 탭합니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
+1. 타사 서비스 제목 아래의 YouTube에서 **[!UICONTROL 지금 구성]**&#x200B;을 선택합니다.
 1. 구성 만들기 대화 상자의 각 필드에 제목(필수)과 이름(선택 사항)을 입력합니다.
-1. **[!UICONTROL 만들기]**&#x200B;를 누릅니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. YouTube 계정 설정 대화 상자의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
 
    처음에 [에서 Google Cloud 설정을 구성한 경우 프로젝트 ID를 지정했습니다](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings).
@@ -651,33 +651,33 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 곧 다시 돌아오실
 1. 일반 텍스트 편집기를 사용하여 Google Cloud 설정 구성 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
 1. YouTube 계정 설정 대화 상자로 돌아갑니다. **[!UICONTROL JSON 구성]** 필드에서 JSON 텍스트를 붙여 넣습니다.
-1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
    이제 Experience Manager에서 YouTube 채널을 설정합니다.
 
-1. **[!UICONTROL 사용 가능한 채널]** 오른쪽의 **+**(더하기 기호 아이콘)를 탭합니다.
+1. **[!UICONTROL 사용 가능한 채널]** 오른쪽의 **+**(더하기 기호 아이콘)를 선택합니다.
 1. YouTube 채널 설정 대화 상자의 제목 필드에서 **[!UICONTROL 이전에 YouTube]**&#x200B;에 하나 이상의 채널을 추가하는 작업에서 만든 채널의 이름을 입력합니다.
 
    원하는 경우 설명을 선택적으로 추가할 수 있습니다.
 
-1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 1. YouTube/Google 확인이 표시됩니다. 아직 Google Cloud 계정에 로그인하지 않은 경우 이 단계를 건너뜁니다.
 
    * Google 프로젝트 ID 및 위의 JSON 텍스트와 연결된 Google 사용자 이름 및 암호를 입력합니다.
    * 계정에 두 개 이상의 항목이 표시되는 채널 수에 따라 다릅니다. 채널을 선택합니다. 전자 메일 주소를 선택하지 마십시오; 채널이 아닙니다.
-   * 다음 페이지에서 **[!UICONTROL Accept]**&#x200B;를 눌러 이 채널에 액세스할 수 있습니다.
+   * 다음 페이지에서 **[!UICONTROL Accept]**&#x200B;를 선택하여 이 채널에 액세스할 수 있도록 합니다.
 
-1. **[!UICONTROL Allow]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 허용]**&#x200B;을 선택합니다.
 
    이제 게시할 태그를 설정합니다.
 
-1. **[!UICONTROL 게시할 태그 설정]**  - Cloud Services > YouTube 페이지에서 연필 아이콘을 탭하여 사용할 태그 목록을 편집합니다.
-1. Experience Manager에서 사용 가능한 태그 목록을 표시하려면 드롭다운 목록 아이콘(거꾸로 있는 삽입 기호)을 누릅니다.
-1. 태그를 추가하려면 하나 이상의 태그를 탭합니다.
+1. **[!UICONTROL 게시할 태그 설정]**  - Cloud Services > YouTube 페이지에서 연필 아이콘을 선택하여 사용할 태그 목록을 편집합니다.
+1. Experience Manager에서 사용 가능한 태그 목록을 표시하려면 드롭다운 목록 아이콘(거꾸로 있는 삽입 기호)을 선택합니다.
+1. 태그를 추가하려면 하나 이상의 태그를 선택합니다.
 
-   추가한 태그를 삭제하려면 태그를 선택하고 **X**&#x200B;를 누릅니다.
+   추가한 태그를 삭제하려면 태그를 선택하고 **X**&#x200B;을(를) 선택합니다.
 
-1. 원하는 태그를 추가했으면 **[!UICONTROL 확인]**&#x200B;을 누릅니다.
+1. 원하는 태그를 추가했으면 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
@@ -689,11 +689,11 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 곧 다시 돌아오실
 
 **업로드한 비디오에 대한 기본 YouTube 속성 설정을 자동화하는 방법은 다음과 같습니다.**
 
-1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 클릭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;를 클릭합니다.
-1. **[!UICONTROL default]**&#x200B;을 클릭합니다. (선택 상자에 &quot;기본값&quot; 왼쪽에 선택 표시를 추가하지 마십시오.)
-1. **[!UICONTROL 기본]** 페이지에서 **[!UICONTROL video]** 왼쪽에 있는 상자를 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
-1. 메타데이터 스키마 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 클릭합니다.
-1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 범주]**&#x200B;를 클릭합니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다.
+1. **[!UICONTROL default]**&#x200B;을 선택합니다. (선택 상자에 &quot;기본값&quot; 왼쪽에 선택 표시를 추가하지 마십시오.)
+1. **[!UICONTROL 기본]** 페이지에서 **[!UICONTROL video]** 왼쪽에 있는 상자를 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
+1. 메타데이터 스키마 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 선택합니다.
+1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 범주]**&#x200B;를 선택합니다.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭 아래에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
@@ -702,7 +702,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 곧 다시 돌아오실
    * **[!UICONTROL 선택 항목]**에서 사용할 기본값(예: 사용자 및 블로그 또는 과학 및 기술)을 선택하고 복사합니다.
 복사한 값을 열려 있는 텍스트 편집기에 붙여넣습니다. 메타데이터 처리 프로필을 만들 때 나중에 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 개인 정보 보호]**&#x200B;를 클릭합니다.
+1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 개인 정보 보호]**&#x200B;를 선택합니다.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭 아래에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
@@ -711,35 +711,35 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 곧 다시 돌아오실
    * **[!UICONTROL 선택 항목]**에서 사용할 기본값을 선택하고 복사합니다. 선택 사항은 두 쌍으로 그룹화됩니다. 쌍의 맨 아래 필드는 공용, 비상장 또는 개인 등의 복사할 기본값입니다.
 복사한 값을 열려 있는 텍스트 편집기에 붙여넣습니다. 메타데이터 처리 프로필을 만들 때 나중에 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-1. 메타데이터 스키마 편집기 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 취소]**&#x200B;를 클릭합니다.
-1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 클릭합니다.
+1. 메타데이터 스키마 편집기 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 취소]**&#x200B;를 선택합니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 선택합니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 메타데이터 프로필 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. 메타데이터 프로필 추가 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 이름 `YouTube Video`을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. 메타데이터 프로필 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 클릭합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 메타데이터 프로필 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. 메타데이터 프로필 추가 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 이름 `YouTube Video`을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+1. 메타데이터 프로필 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 선택합니다.
 1. 다음을 수행하여 복사된 YouTube 게시 값을 프로필에 추가합니다.
 
-   * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 클릭합니다.
+   * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 선택합니다.
    * (선택 사항) **[!UICONTROL 섹션 헤더]** 레이블이 지정된 구성 요소를 왼쪽으로 드래그하여 양식 영역에 놓습니다.
-   * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
+   * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 선택하여 구성 요소를 선택합니다.
    * (선택 사항) 페이지의 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Publishing`을 입력합니다.
-   * **[!UICONTROL 양식 작성]** 탭을 클릭한 다음, **[!UICONTROL 다중 값 텍스트]**&#x200B;라는 구성 요소를 드래그하고 만든 **[!UICONTROL YouTube 게시]** 제목 아래에 놓습니다.
+   * **[!UICONTROL 양식 작성]** 탭을 선택한 다음, **[!UICONTROL 다중 값 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 만든 **[!UICONTROL YouTube 게시]** 제목 아래에 놓습니다.
 
-   * 구성 요소를 선택하려면 **[!UICONTROL 필드 레이블]**&#x200B;을 클릭합니다.
+   * 구성 요소를 선택하려면 **[!UICONTROL 필드 레이블]**&#x200B;을 선택합니다.
    * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 해당 필드에 붙여 넣습니다. 선택 사항 값을 기본값 필드에 붙여넣습니다.
 
 1. 다음을 수행하여 복사된 YouTube 개인 정보 보호 값을 프로필에 추가합니다.
 
-   * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 클릭합니다.
+   * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 선택합니다.
    * (선택 사항) **[!UICONTROL 섹션 헤더]** 레이블이 지정된 구성 요소를 왼쪽으로 드래그하여 양식 영역에 놓습니다.
-   * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
+   * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 선택하여 구성 요소를 선택합니다.
    * (선택 사항) 페이지의 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Privacy`을 입력합니다.
-   * **[!UICONTROL 양식 작성]** 탭을 클릭한 다음, **[!UICONTROL 다중 값 텍스트]**&#x200B;라는 구성 요소를 드래그하고 만든 **[!UICONTROL YouTube 개인 정보 보호]** 제목 아래에 놓습니다.
+   * **[!UICONTROL 양식 작성]** 탭을 선택한 다음, **[!UICONTROL 다중 값 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 만든 **[!UICONTROL YouTube 개인 정보 보호]** 제목 아래에 놓습니다.
 
-   * 구성 요소를 선택하려면 **[!UICONTROL 필드 레이블]**&#x200B;을 클릭합니다.
+   * 구성 요소를 선택하려면 **[!UICONTROL 필드 레이블]**&#x200B;을 선택합니다.
    * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 해당 필드에 붙여 넣습니다. 선택 사항 값을 기본값 필드에 붙여넣습니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 비디오를 업로드할 폴더에 YouTube 게시 메타데이터 프로필을 적용합니다. 메타데이터 프로필과 비디오 프로필 세트가 모두 있어야 합니다.
 
    [메타데이터 프로필](/help/assets/metadata-profiles.md) 및 [비디오 프로필](/help/assets/dynamic-media/video-profiles.md)을 참조하십시오.
@@ -756,38 +756,38 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 곧 다시 돌아오실
 
 >[!NOTE]
 YouTube에서 컨텐츠를 게시하기 위해 Experience Manager은 **[!UICONTROL YouTube에 게시]** 워크플로우를 사용하여 진행 상황을 모니터링하고 실패 정보를 볼 수 있습니다.
-[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+[비디오 인코딩 및 YouTube 게시 진행 상태 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 자세한 진행 정보를 보려면 복제 중인 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스 권한이 필요합니다.
 
 **비디오를 YouTube 채널에 게시하려면:**
 
 1. Experience Manager에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
 1. 비디오 자산(응용 비디오 세트)을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
-1. 기본 탭의 메타데이터 제목 아래에서 태그 필드 오른쪽에 있는 **[!UICONTROL 선택 대화 상자 열기]**&#x200B;를 클릭합니다.
+1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
+1. 기본 탭의 메타데이터 제목 아래에서 태그 필드 오른쪽에 있는 **[!UICONTROL 선택 대화 상자 열기]**&#x200B;를 선택합니다.
 1. 태그 선택 페이지에서 사용할 태그로 이동한 다음, 태그를 하나 이상 선택합니다.
 
    태그는 YouTube 채널과 연결되어 있어야 합니다.
 
-1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
-1. 비디오 속성 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
-1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭합니다.
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+1. 비디오 속성 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택합니다.
+1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 선택합니다.
 
-   Experience Manager 사이트에 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)을 참조하십시오.[
+   또한 [Experience Manager 사이트에 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)을 참조하십시오.
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
-### (선택 사항) YouTube에서 게시된 비디오 확인 {#optional-verifying-the-published-video-on-youtube}
+### (선택 사항) YouTube에서 게시된 비디오를 확인합니다 {#optional-verifying-the-published-video-on-youtube}
 
 선택적으로 YouTube 게시(또는 게시 취소)의 진행 상황을 모니터링할 수 있습니다.
 
-[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+[비디오 인코딩 및 YouTube 게시 진행 상태 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
 게시 시간은 기본 소스 비디오의 형식, 파일 크기 및 업로드 트래픽이 포함된 여러 요인에 따라 크게 달라질 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷이 훨씬 느리게 렌더링됩니다. 예를 들어 720p와 1080p는 480p보다 오래 걸립니다.
 
 8시간 후에도 **[!UICONTROL 업로드(처리 중)]**&#x200B;라는 상태 메시지가 계속 표시되면 사이트에서 비디오를 제거하고 다시 업로드하십시오.
 
-### YouTube URL을 웹 애플리케이션에 연결 {#linking-youtube-urls-to-your-web-application}
+### 웹 애플리케이션에 YouTube URL 연결 {#linking-youtube-urls-to-your-web-application}
 
 비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 가져올 수 있습니다. YouTube URL을 복사하면 클립보드에 로드되므로 웹 사이트 또는 애플리케이션의 페이지에 필요에 따라 붙여넣을 수 있습니다.
 
@@ -800,11 +800,11 @@ YouTube URL을 웹 애플리케이션에 연결하려면
 
    YouTube URL은 *이후에*&#x200B;을 복사하는 데에만 사용할 수 있으며, 먼저 *게시된*&#x200B;비디오 자산을 YouTube에 게시했습니다.
 
-1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 고급]** 탭을 클릭합니다.
+1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 고급]** 탭을 선택합니다.
 1. YouTube 게시 제목 아래의 YouTube URL 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
 
-### YouTube에서 제거할 비디오 게시 취소 {#unpublishing-videos-to-remove-them-from-youtube}
+### YouTube에서 제거할 수 있도록 비디오 게시 취소 {#unpublishing-videos-to-remove-them-from-youtube}
 
 Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제거됩니다.
 
@@ -813,16 +813,16 @@ YouTube 내에서 직접 비디오를 제거하는 경우, Experience Manager은
 
 >[!NOTE]
 YouTube에서 컨텐츠를 제거하려면 Experience Manager은 진행 상황을 모니터링하고 실패 정보를 볼 수 있는 **[!UICONTROL YouTube에서 게시 취소 워크플로우를 사용합니다.]**
-[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+[비디오 인코딩 및 YouTube 게시 진행 상태 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
-YouTube에서 제거할 비디오 게시를 취소하려면,
+**YouTube에서 제거할 비디오 게시를 취소하려면,**
 
 1. YouTube 채널에서 게시를 취소하려는 비디오 자산으로 이동합니다.
 1. 자산 선택 모드에서 하나 이상의 게시된 비디오 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 클릭합니다. 필요한 경우 도구 모음에서 세 점 아이콘(`. . .`)을 탭하여 **[!UICONTROL 게시 관리]**&#x200B;를 봅니다.
-1. 게시 관리 페이지에서 **[!UICONTROL 게시 취소]**&#x200B;를 누릅니다.
-1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 누릅니다.
-1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]**&#x200B;를 누릅니다.
+1. 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 선택합니다. 필요한 경우 도구 모음에서 세 점 아이콘(`. . .`)을 선택하여 **[!UICONTROL 게시 관리]**&#x200B;를 확인합니다.
+1. 게시 관리 페이지에서 **[!UICONTROL 게시 취소]**&#x200B;를 선택합니다.
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]**&#x200B;를 선택합니다.
 
 ## 비디오 인코딩 및 YouTube 게시 진행 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -830,7 +830,7 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
 ### 진행 상태 모니터링 {#monitoring-progress}
 
-**실패한 인코딩/YouTube 게시를 포함하여 진행 상황을 모니터링하려면 다음을 수행하십시오.**
+실패한 인코딩/YouTube 게시를 포함하여 진행 상황을 모니터링할 수 있습니다.
 
 1. 자산 폴더에서 비디오 인코딩 진행 상태 보기:
 
@@ -842,11 +842,11 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   이 열은 기본적으로 표시되지 않습니다. 열을 사용하려면 보기 드롭다운 메뉴에서 **[!UICONTROL 설정 보기]**&#x200B;를 선택하고 **[!UICONTROL 처리 상태]** 열을 추가하고 **[!UICONTROL 업데이트]**&#x200B;를 탭하거나 클릭합니다.
+   이 열은 기본적으로 표시되지 않습니다. 열을 사용하려면 보기 드롭다운 메뉴에서 **[!UICONTROL 설정 보기]**&#x200B;를 선택하고 **[!UICONTROL 처리 상태]** 열을 추가하고 **[!UICONTROL 업데이트]**&#x200B;를 선택합니다.
 
    ![chlimage_1-431](/help/assets/dynamic-media/assets/chlimage_1-431.png)
 
-1. 자산 세부 정보에서 진행 상황을 봅니다. 자산을 탭하거나 클릭하면 드롭다운 메뉴를 열고 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다. 인코딩 또는 YouTube 게시과 같은 워크플로우 활동으로 범위를 좁히려면 **[!UICONTROL 워크플로우]**&#x200B;를 선택합니다.
+1. 자산 세부 정보에서 진행 상황을 봅니다. 자산을 선택하면 드롭다운 메뉴를 열고 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다. 인코딩 또는 YouTube 게시과 같은 워크플로우 활동으로 범위를 좁히려면 **[!UICONTROL 워크플로우]**&#x200B;를 선택합니다.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -867,11 +867,11 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
-   인스턴스를 선택하고 **[!UICONTROL 기록 열기]**&#x200B;를 탭하거나 클릭합니다.
+   인스턴스를 선택하고 **[!UICONTROL 기록 열기]**&#x200B;를 선택합니다.
 
    ![chlimage_1-434](/help/assets/dynamic-media/assets/chlimage_1-434.png)
 
-   워크플로우 인스턴스 영역에서 워크플로우를 일시 중단, 종료 또는 변경할 수도 있습니다. 자세한 내용은 [워크플로우 관리](/help/sites-cloud/authoring/workflows/overview.md) 를 참조하십시오.
+   워크플로우 인스턴스 영역에서 워크플로우를 일시 중단, 종료 또는 변경할 수도 있습니다. 자세한 내용은 [워크플로우 관리](/help/sites-cloud/authoring/workflows/overview.md)를 참조하십시오.
 
 1. 실패한 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 실패]**&#x200B;에서 사용할 수 있는 워크플로우 실패 를 참조하십시오. **[!UICONTROL 워크플로우 실패]**&#x200B;는 실패한 모든 워크플로우 활동을 나열합니다.
 
@@ -895,7 +895,7 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
-1. 중단되거나 실패한 워크플로우 작업에 대한 이메일 알림을 받게 됩니다. 관리자가 이러한 이메일 알림을 구성할 수 있습니다. [이메일 알림 구성](#configuring-e-mail-notifications)을 참조하십시오.
+1. 중단되거나 실패한 워크플로우 작업에 대한 이메일 알림을 받게 됩니다. 관리자가 이러한 이메일 알림을 구성할 수 있습니다. [전자 메일 알림 구성](#configuring-e-mail-notifications)을 참조하십시오.
 
 <!-- EMAIL NOT AVAILABLE IN SKYLINE
 
@@ -911,18 +911,18 @@ How you configure notification depends on whether you want notifications for You
 
 For YouTube publishing jobs, do the following:
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.
-1. Near the upper-right corner of the Publish to YouTube workflow page, tap **[!UICONTROL Edit]**.
-1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then select **[!UICONTROL Edit]** on the toolbar.
+1. Near the upper-right corner of the Publish to YouTube workflow page, select **[!UICONTROL Edit]**.
+1. Hover the mouse pointer on the YouTube Upload component, then select once to display the inline toolbar.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
 
-1. On the inline toolbar, tap the Configuration icon (wrench). Click the **[!UICONTROL Arguments]** tab.
+1. On the inline toolbar, select the Configuration icon (wrench). Select the **[!UICONTROL Arguments]** tab.
 
    ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
 
-1. In the YouTube Upload Process - Step Properties dialog box, tap the **[!UICONTROL Arguments]** tab.
+1. In the YouTube Upload Process - Step Properties dialog box, select the **[!UICONTROL Arguments]** tab.
 
    ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
 
@@ -938,8 +938,8 @@ For YouTube publishing jobs, do the following:
    >
    >These emails are specific to YouTube and are in addition to the generic workflow email notifications. As a result, you may receive two sets of email notification - the generic notification available in the **[!UICONTROL Day CQ Workflow Email Notification Service]** and one specific to YouTube depending on your configuration settings.
 
-1. When you are finished, near the upper-right corner of the dialog box, tap the **[!UICONTROL Done]** icon (check mark).
-1. On the Publish to YouTube workflow page, near the upper-right corner, tap **[!UICONTROL Sync]**.
+1. When you are finished, near the upper-right corner of the dialog box, select the **[!UICONTROL Done]** icon (check mark).
+1. On the Publish to YouTube workflow page, near the upper-right corner, select **[!UICONTROL Sync]**.
 
 -->
 
@@ -958,7 +958,7 @@ For YouTube publishing jobs, do the following:
 
 게시된 모든 *게시된* 비디오도 나열되므로 총 비디오 시작을 기반으로 웹 사이트에서 가장 많이 본 비디오를 추적할 수 있습니다.
 
-목록에서 비디오 이름을 탭하면 비디오의 대상 유지(드롭다운) 보고서가 라인 차트 형태로 표시됩니다. 차트는 비디오 재생 중 지정된 시간 동안의 보기 수를 표시합니다. 비디오를 재생하면 세로 막대가 플레이어의 시간 표시기와 동기식으로 추적합니다. 라인 차트 데이터의 드롭은 대상이 관심 영역에서 이탈하는 위치를 나타냅니다.
+목록에서 비디오 이름을 선택하면 비디오의 대상 유지(드롭다운) 보고서가 라인 차트 형태로 표시됩니다. 차트는 비디오 재생 중 지정된 시간 동안의 보기 수를 표시합니다. 비디오를 재생하면 세로 막대가 플레이어의 시간 표시기와 동기식으로 추적합니다. 라인 차트 데이터의 드롭은 대상이 관심 영역에서 이탈하는 위치를 나타냅니다.
 
 비디오가 Adobe Experience Manager Dynamic Media 외부에 인코딩된 경우 대상 유지(드롭다운) 차트와 테이블의 재생 비율 데이터를 사용할 수 없습니다.
 
@@ -967,22 +967,22 @@ For YouTube publishing jobs, do the following:
 
 기본적으로 비디오 보고서를 처음 입력할 때 이 보고서는 현재 달 1일에 시작하여 현재 월의 날짜로 끝나는 비디오 데이터를 표시합니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 무시할 수 있습니다. 다음에 비디오 보고서를 입력할 때 지정한 날짜 범위가 사용됩니다.
 
-비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 이 기능을 사용하려면 게시 서버를 이미 설정해야 합니다. 게시 서버가 설정되지 않은 경우에는 여전히 게시하여 비디오 보고서를 볼 수 있습니다. 그러나 Dynamic Media 클라우드 구성으로 돌아가 **[!UICONTROL OK]**&#x200B;를 탭해야 합니다.
+비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 이 기능을 사용하려면 게시 서버를 이미 설정해야 합니다. 게시 서버가 설정되지 않은 경우에는 여전히 게시하여 비디오 보고서를 볼 수 있습니다. 그러나 Dynamic Media 클라우드 구성으로 돌아가 **[!UICONTROL OK]**&#x200B;를 선택해야 합니다.
 
-비디오 보고서를 보려면 다음을 수행하십시오.
+**비디오 보고서를 보려면 다음을 수행하십시오.**
 
-1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 보고서]**&#x200B;를 탭합니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 보고서]**&#x200B;로 이동합니다.
 1. 비디오 보고서 페이지에서 다음 중 하나를 수행합니다.
 
-   * 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 비디오 보고서 새로 고침]** 아이콘을 탭합니다.
+   * 오른쪽 상단 모서리에서 **[!UICONTROL 비디오 보고서 새로 고침]** 아이콘을 선택합니다.
 보고서의 종료 날짜가 현재 날짜인 경우에만 새로 고침을 사용합니다. 이 기능을 사용하면 보고서를 마지막으로 실행한 이후 발생한 비디오 추적을 볼 수 있습니다.
 
-   * 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 날짜 선택기]** 아이콘을 탭합니다.
-비디오 데이터를 저장할 시작 날짜 및 종료 날짜 범위를 지정한 다음 **[!UICONTROL 보고서 실행]**&#x200B;을 누릅니다.
+   * 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 날짜 선택기]** 아이콘을 선택합니다.
+비디오 데이터를 사용할 시작 날짜 범위와 종료 날짜 범위를 지정한 다음 **[!UICONTROL 보고서 실행]**&#x200B;을 선택합니다.
 
-   상위 지표 그룹 상자는 사이트에 게시된 모든 비디오에 대한 다양한 집계 측정을 식별합니다.
+   상위 지표 그룹 상자는 사이트에 게시된 모든 *게시된* 비디오에 대한 다양한 집계 측정을 식별합니다.
 
-1. 게시된 상위 비디오를 나열하는 테이블에서 비디오 이름을 탭하여 비디오를 재생하고 비디오의 대상 유지(드롭다운) 보고서를 볼 수 있습니다.
+1. 게시된 상위 비디오를 나열하는 테이블에서 비디오를 재생할 비디오 이름을 선택하고 비디오의 대상 유지(드롭다운) 보고서를 볼 수도 있습니다.
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
@@ -1048,7 +1048,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## 비디오에 캡션 추가 {#adding-captions-to-video}
+## 비디오에 캡션 또는 자막 추가 {#adding-captions-to-video}
 
 단일 비디오나 응용 비디오 세트에 자막을 추가하여 비디오의 범위를 글로벌 마켓플레이스로 확장할 수 있습니다. 캡션을 추가하면 오디오를 복제할 필요가 없고 다른 언어별로 오디오를 다시 녹음하기 위해 기본 스피커를 사용할 필요가 없습니다. 비디오는 녹음된 언어로 재생됩니다. 외국어 자막이 나타나므로 다른 언어를 사용하는 사람들이 오디오 부분을 계속 이해할 수 있습니다.
 
@@ -1075,7 +1075,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정�
 
    최상의 결과를 얻으려면 Internet Explorer 9 이상, Google Chrome 또는 Safari에서 도구를 사용하십시오.
 
-   도구의 **[!UICONTROL 비디오 파일의 URL 입력]** 필드에서 복사한 비디오 파일의 URL을 붙여넣은 다음 **[!UICONTROL 로드]**&#x200B;를 클릭합니다. [비디오 파일 자체에 URL을 가져올 수 있는 URL을 가져오려면 ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)비디오 파일 필드의 URL 입력&#x200B;]**을 참조하십시오.**[!UICONTROL  Internet Explorer, Chrome 또는 Safari는 기본적으로 비디오를 재생할 수 있습니다.
+   도구의 **[!UICONTROL 비디오 파일의 URL 입력]** 필드에서 복사한 비디오 파일의 URL을 붙여 넣은 다음 **[!UICONTROL 로드]**&#x200B;를 선택합니다. [비디오 파일 자체에 대한 URL을 가져오려면 ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)에 대한 URL을 획득 을 참조하고, 이 URL을 **[!UICONTROL 비디오 파일 필드의 URL 입력]**&#x200B;에 붙여넣을 수 있습니다. Internet Explorer, Chrome 또는 Safari는 기본적으로 비디오를 재생할 수 있습니다.
 
    이제 사이트에서 화면의 지침에 따라 WebVTT 파일을 작성하고 저장합니다. 완료되면 캡션 파일 내용을 복사하여 일반 텍스트 편집기에 붙여넣은 다음 VTT 파일 확장자로 저장합니다.
 
@@ -1093,13 +1093,13 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정�
 
 1. 다음 중 하나를 수행하십시오.
 
-   * 팝업 비디오 뷰어 환경의 경우 **[!UICONTROL URL]**&#x200B;을 누릅니다. URL 대화 상자에서 URL을 선택하여 클립보드에 복사한 다음 URL을 단순 텍스트 편집기에 복사합니다. 비디오의 복사된 URL을 다음 구문과 함께 추가합니다.
+   * 팝업 비디오 뷰어 환경의 경우 **[!UICONTROL URL]**&#x200B;을 선택합니다. URL 대화 상자에서 URL을 선택하여 클립보드에 복사한 다음 URL을 단순 텍스트 편집기에 복사합니다. 비디오의 복사된 URL을 다음 구문과 함께 추가합니다.
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
       캡션 경로의 끝에 `,1`을 참고하십시오. 경로에서 VTT 파일 이름 확장자 바로 다음에, 각각 `,1` 또는 `,0`로 설정하여 비디오 플레이어 모음에서 닫힌 캡션 단추를 활성화(켜기) 또는 비활성화(해제)할 수 있습니다.
 
-   * 포함된 비디오 뷰어 환경의 경우 **[!UICONTROL 포함 코드]**&#x200B;를 누릅니다. 포함 코드 대화 상자에서 를 선택하고 포함 코드를 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
+   * 포함된 비디오 뷰어 환경의 경우 **[!UICONTROL 포함 코드]**&#x200B;를 선택합니다. 포함 코드 대화 상자에서 를 선택하고 포함 코드를 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -1107,7 +1107,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 [정�
 
 ## 비디오에 장 마커 추가 {#adding-chapter-markers-to-video}
 
-장 마커를 단일 비디오나 응용 비디오 세트에 추가하여 긴 양식 비디오를 더 쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생하면 비디오 타임라인에서 장 마커(비디오 스크러버라고도 함)를 클릭할 수 있습니다. 관심 영역으로 쉽게 이동하거나 새로운 컨텐츠, 교육 및 데모로 바로 이동할 수 있습니다.
+장 마커를 단일 비디오나 응용 비디오 세트에 추가하여 긴 양식 비디오를 더 쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생하면 비디오 타임라인에서 장 마커(비디오 스크러버라고도 함)를 선택할 수 있습니다. 관심 영역으로 쉽게 이동하거나 새로운 컨텐츠, 교육 및 데모로 바로 이동할 수 있습니다.
 
 >[!NOTE]
 사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장 마커를 지원하지만 타사 비디오 플레이어를 사용하지 않을 수 있습니다.
@@ -1160,9 +1160,9 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
        <td>
        <ol>
        <li>업로드한 장 파일과 연결할 <i>게시된 </i>비디오 자산으로 이동합니다. URL은 </i> 다음에 <i>을 복사하는 데에만 사용할 수 있으며, 먼저 <i>자산을 게시했습니다</i>. <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">자산 게시를 참조하십시오.</a></i></li>
-       <li>드롭다운 메뉴에서 <strong>Viewers</strong>를 클릭하거나 탭합니다.</li>
-       <li>왼쪽 레일에서 비디오 뷰어 사전 설정 이름을 탭하거나 클릭합니다. 비디오 미리 보기가 별도의 페이지에 열립니다.</li>
-       <li>왼쪽 레일의 하단에서 <strong>URL</strong>을 클릭합니다.</li>
+       <li>드롭다운 메뉴에서 <strong>Viewers</strong>를 선택합니다.</li>
+       <li>왼쪽 레일에서 비디오 뷰어 사전 설정 이름을 선택합니다. 비디오 미리 보기가 별도의 페이지에 열립니다.</li>
+       <li>왼쪽 레일의 하단에서 <strong>URL</strong>을 선택합니다.</li>
        <li>URL 대화 상자에서 URL을 선택하여 클립보드에 복사한 다음 URL을 단순 텍스트 편집기에 복사합니다.</li>
        <li>복사한 비디오의 URL을 다음 구문과 함께 추가하면 복사한 URL과 장 파일에 연결할 수 있습니다.<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
@@ -1172,9 +1172,9 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
        <td>
        <ol>
        <li>업로드한 장 파일과 연결할 <i>게시된 </i>비디오 자산으로 이동합니다. URL은 </i> 다음에 <i>을 복사하는 데에만 사용할 수 있으며, 먼저 <i>자산을 게시했습니다</i>. <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">자산 게시를 참조하십시오.</a></i></li>
-       <li>드롭다운 메뉴에서 <strong>Viewers</strong>를 클릭하거나 탭합니다.</li>
-       <li>왼쪽 레일에서 비디오 뷰어 사전 설정 이름을 탭하거나 클릭합니다. 비디오 미리 보기가 별도의 페이지에 열립니다.</li>
-       <li>왼쪽 레일의 하단에서 <strong>포함</strong>을 클릭합니다.</li>
+       <li>드롭다운 메뉴에서 <strong>Viewers</strong>를 선택합니다.</li>
+       <li>왼쪽 레일에서 비디오 뷰어 사전 설정 이름을 선택합니다. 비디오 미리 보기가 별도의 페이지에 열립니다.</li>
+       <li>왼쪽 레일의 하단에서 <strong>포함</strong>을 선택합니다.</li>
        <li>포함 코드 대화 상자에서 를 선택하고 전체 코드를 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다.</li>
        <li>비디오의 포함 코드를 다음 구문과 추가하므로 복사한 URL과 장 파일에 연결할 수 있습니다.<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
@@ -1186,7 +1186,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
 
 ## About video thumbnails {#about-video-thumbnails}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to click on the video.
+A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
 
 All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
@@ -1206,25 +1206,25 @@ The ability to customize a video thumbnail is only available after you have appl
     * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
 1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL Properties** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
+1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
+1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
 1. On the Change Thumbnail page, do one of the following:
 
     * To use a frame from the video as the new thumbnail:
 
-        * On the toolbar, tap **[!UICONTROL Select Frame from video]**.
-        * Tap the Play button, then tap the Pause button on the frame you want to capture as the video's new thumbnail.
+        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
+        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
 
     * To use an image asset as the new thumbnail:
 
-        * On the toolbar, tap **[!UICONTROL Select Thumbnail from Assets]**.
-        * Tap **[!UICONTROL Select Thumbnail]**.
+        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
+        * Select **[!UICONTROL Select Thumbnail]**.
         * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
-        * Select the image asset, then tap **[!UICONTROL Select]**.
+        * Select the image asset, then select **[!UICONTROL Select]**.
 
-1. On the Change Thumbnail page, tap **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, tap **[!UICONTROL Save & Close]**.
+1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
+1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
 
 -->
 
@@ -1232,7 +1232,7 @@ The ability to customize a video thumbnail is only available after you have appl
 
 ## About video thumbnails in Dynamic Media Hybrid mode{#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-You can choose from one of ten thumbnail images automatically generated by Dynamic Media to add to your video. The video player displays your selected thumbnail when a video asset is used with the Dynamic Media component in the authoring environment of Experience Manager Sites, Experience Manager Mobile, or Experience Manager Screens. The thumbnail serves as a static picture that best represents the contents of your entire video and further encourages users to click the Play button.
+You can choose from one of ten thumbnail images automatically generated by Dynamic Media to add to your video. The video player displays your selected thumbnail when a video asset is used with the Dynamic Media component in the authoring environment of Experience Manager Sites, Experience Manager Mobile, or Experience Manager Screens. The thumbnail serves as a static picture that best represents the contents of your entire video and further encourages users to select the Play button.
 
 Based on the total time of the video, Dynamic Media captures ten (default) thumbnail images at 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81%, and 91% into the video. The ten thumbnails persist meaning that if you decide to choose a different thumbnail later on, you do not need to regenerate the series. You preview the ten thumbnail images and then select the one you want to use with your video. If you want to change to default you can use CRXDE Lite to configure the time interval that thumbnail images are generated. For example, if you only wanted to generate a series of four evenly spaced thumbnail images from your video, you can configure the interval time at 24%, 49%, 74%, and 99%.
 
@@ -1249,15 +1249,15 @@ See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-vide
 ### Adding a video thumbnail {#adding-a-video-thumbnail}
 
 1. Navigate to an uploaded video asset that you want to add a video thumbnail.
-1. In asset selection mode either from the List View or the Card View, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Select Frame]**.
+1. In asset selection mode either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
+1. On the Change Thumbnail page, on the toolbar, select **[!UICONTROL Select Frame]**.
 
    Dynamic Media generates a series thumbnail images from your video, based on the default time interval or time interval you customized.
 
 1. Preview the generated thumbnail images, then select the one you want to add to your video.
-1. Tap **[!UICONTROL Save Change]**.
+1. Select **[!UICONTROL Save Change]**.
 
    The video's thumbnail image is updated to use the thumbnail you selected. If you later decide to change the thumbnail image, you can return to the **[!UICONTROL Change Thumbnail]** page and select a new one.
 
@@ -1277,21 +1277,21 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 **To configure the default time interval that video thumbnails are generated,**
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
 1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   if the directory panel is not visible, you may need to tap the >> icon to the left of the Home tab.
+   if the directory panel is not visible, you may need to select the >> icon to the left of the Home tab.
 
 1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
 
-    * Tap the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.
-    * Tap the minus sign (-) icon to the right of an interval value field to delete it from the list.
-    * Tap the up arrow icon and the down arrow icon to reorder the interval values.
+    * Select the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.
+    * Select the minus sign (-) icon to the right of an interval value field to delete it from the list.
+    * Select the up arrow icon and the down arrow icon to reorder the interval values.
 
-1. Tap **[!UICONTROL OK]** to return to the Properties tab.
-1. Near the upper-left corner of the CRXDE Lite page, tap **[!UICONTROL Save All]**, then tap the Back Home icon in the upper-left corner to return to Experience Manager.
+1. Select **[!UICONTROL OK]** to return to the Properties tab.
+1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**, then select the Back Home icon in the upper-left corner to return to Experience Manager.
 
    See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
@@ -1306,12 +1306,12 @@ These steps apply only to Dynamic Media running in Hybrid mode.
 T**o add a custom video thumbnail**,
 
 1. Navigate to an uploaded video asset that you want to add a custom video thumbnail.
-1. In asset selection mode either from the List View or the Card View, tap the video asset.
-1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
-1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Upload New Thumbnail]**.
-1. Navigate to a thumbnail image you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
-1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes]**.
+1. In asset selection mode either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
+1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
+1. On the Change Thumbnail page, on the toolbar, select **[!UICONTROL Upload New Thumbnail]**.
+1. Navigate to a thumbnail image you want to use, select it, then select **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
+1. After you have successfully uploaded and published the image, in the Change Thumbnail page, select **[!UICONTROL Save Changes]**.
 
    The custom thumbnail is added to your video.
 
