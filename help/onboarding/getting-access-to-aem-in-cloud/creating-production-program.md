@@ -2,7 +2,7 @@
 title: '프로덕션 프로그램 생성 '
 description: 프로덕션 프로그램 생성
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e51ab417af5aa77019e8ba3fa5c452c9b25b2d35
+source-git-commit: ca960361bea8f62d908a9b6f1408a99722552c75
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Cloud Manager에서 프로그램을 만드는 방법을 배우려면 아래 두 
 
 >[!VIDEO](https://video.tv.adobe.com/v/334954)
 
-또는,
+또한,
 
 프로덕션 프로그램을 만들려면 아래 절차를 따르십시오.
 
