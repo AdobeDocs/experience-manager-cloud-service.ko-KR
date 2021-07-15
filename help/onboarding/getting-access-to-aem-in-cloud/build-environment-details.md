@@ -2,9 +2,9 @@
 title: 빌드 환경 세부 정보
 description: 빌드 환경 세부 사항 - Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: c3b70f513455dfeaac6bc20c05fc9c35dcddf73e
+source-git-commit: 558cd516a89d9012e96fb0b783d0df3eecfda73d
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 
 * 빌드 환경은 Ubuntu 18.04에서 파생된 Linux 기반입니다.
 * Apache Maven 3.6.0이 설치됩니다.
-* 설치된 Java 버전은 Oracle JDK 8u202 및 11.0.2입니다.
+* 설치된 Java 버전은 Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2 및 Azul Zulu 11.0.11입니다.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
 
    * bzip2
@@ -27,7 +27,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
    * graphicsmagick
 
 * [아래에 설명된 대로 다른 패키지는 빌드 시간에 설치할 수 있습니다.](#installing-additional-system-packages)
-* 모든 빌드는 원시 환경에서 수행됩니다.빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
+* 모든 빌드는 원시 환경에서 수행됩니다. 빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
 * Maven은 항상 다음 세 가지 명령을 사용하여 실행됩니다.
 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
@@ -38,13 +38,13 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 >[!NOTE]
 >Cloud Manager에서 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만 사용되는 버전은 적어도 `0.7.5.201505241946`이어야 합니다.
 
-### Java 11 지원 사용 {#using-java-support}
+### 특정 Java 버전 사용 {#using-java-support}
 
-Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로젝트 빌드를 지원합니다. 기본적으로 프로젝트는 Java 8을 사용하여 빌드됩니다.
+기본적으로 프로젝트는 Oracle 8 JDK를 사용하여 Cloud Manager 빌드 프로세스에서 빌드됩니다. 대체 JDK를 사용하려는 고객은 다음 두 가지 옵션을 사용할 수 있습니다. Maven 도구 체인과 전체 Maven 실행 프로세스에 대한 대체 JDK 버전 선택.
 
-프로젝트에서 Java 11을 사용하려는 고객은 [Apache Maven Toolchain 플러그인](https://maven.apache.org/plugins/maven-toolchains-plugin/)을 사용하여 이를 수행할 수 있습니다.
+#### Maven 도구 체인 {#maven-toolchains}
 
-이렇게 하려면 pom.xml 파일에서 다음과 같은 `<plugin>` 항목을 추가합니다.
+[Maven Toolchain 플러그인](https://maven.apache.org/plugins/maven-toolchains-plugin/)을 사용하면 프로젝트에서 도구 체인 인식 Maven 플러그인 컨텍스트에서 사용할 특정 JDK(또는 *도구 체인*)를 선택할 수 있습니다. 이 작업은 공급업체 및 버전 값을 지정하여 프로젝트의 `pom.xml` 파일에서 수행됩니다. `pom.xml` 파일의 샘플 섹션은 다음과 같습니다.
 
 ```
 <plugin>
@@ -63,17 +63,37 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
             <jdk>
                 <version>11</version>
                 <vendor>oracle</vendor>
-           </jdk>
+            </jdk>
         </toolchains>
     </configuration>
 </plugin>
 ```
 
->[!NOTE]
->지원되는 공급업체 값은 `oracle` 및 `sun`이며, 지원되는 버전 값은 `1.8`, `1.11` 및 `11`입니다.
+이렇게 하면 모든 도구 체인 인식 Maven 플러그인이 Oracle JDK, 버전 11을 사용하게 됩니다.
+
+이 방법을 사용하는 경우 Maven 자체는 기본 JDK(Oracle 8)를 사용하여 계속 실행됩니다. 따라서 Apache Maven Enforcer 플러그인과 같은 플러그인을 통해 Java 버전을 확인하거나 적용하면 작동하지 않으므로 이러한 플러그인을 사용하지 않아야 합니다.
+
+현재 사용 가능한 공급업체/버전 조합은 다음과 같습니다.
+
+* oracle 1.8
+* oracle 1.11
+* oracle 11
+* sun 1.8
+* sun 1.11
+* sun 11
+* azul 1.8
+* azul 1.11
+* azul 8
+
+#### 대체 Maven 실행 JDK 버전 {#alternate-maven-jdk-version}
+
+전체 Maven 실행에 대해 JDK로 Azul 8 또는 Azul 11을 선택할 수도 있습니다. 도구 체인 옵션과 달리 도구 체인 구성이 도구 체인 인식 Maven 플러그인에 대해 여전히 도구 체인 구성이 적용되는 경우에도 도구 체인 구성이 설정되어 있지 않으면 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용하여 Java 버전을 확인 및 적용하면 작동합니다.
+
+이렇게 하려면 파이프라인에서 사용하는 Git 리포지토리 분기에 `.cloudmanager/java-version` 파일을 만듭니다. 이 파일에는 콘텐츠 11 또는 8이 있을 수 있습니다. 다른 값은 무시됩니다. 11을 지정하면 아줄 11이 사용됩니다. 8을 지정하면 아줄 8이 사용됩니다.
 
 >[!NOTE]
->Cloud Manager 프로젝트 빌드는 여전히 Java 8을 사용하여 Maven을 호출하고 있으므로 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)과 같은 플러그인을 통해 도구 체인 플러그인에 구성된 Java 버전을 확인하거나 적용하면 작동하지 않으므로 이러한 플러그인을 사용하지 않아야 합니다.
+>현재 2021년 10월로 예상되는 Cloud Manager의 향후 릴리스에서는 기본 JDK가 변경되고 기본값은 Azul 11이 됩니다. Java 11과 호환되지 않는 프로젝트에서는 이 스위치의 영향을 받지 않도록 가능한 한 빨리 컨텐츠 8로 이 파일을 만들어야 합니다.
+
 
 ## 환경 변수 {#environment-variables}
 
