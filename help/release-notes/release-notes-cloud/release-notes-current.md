@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1585'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->여기에서 이전 버전의 릴리스 정보로 이동할 수 있습니다.예를 들어, 2020년, 2021년 등의 경우입니다.
+>여기에서 이전 버전의 릴리스 정보로 이동할 수 있습니다. 예를 들어, 2020년, 2021년 등의 경우입니다.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 3%
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.6.0 및 2021.5.0 의 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.6.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 ### 릴리스 날짜 {#release-date-june-cm}
 
@@ -92,7 +92,7 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 
 * 컨텐츠 자동화 기능을 사용하여 [!DNL Experience Manager Assets] API를 활용하여 자산 프로덕션을 규모에 맞게 자동화할 수 있습니다. [!DNL Adobe Creative Cloud] 동일한 자산의 변형을 만드는 데 필요한 시간과 반복 시간을 크게 줄여 컨텐츠 속도를 향상시킵니다. 이 기능은 DAM 내에서 프로그래밍과 작업할 필요가 없습니다. [Creative Cloud 통합을 사용하여 자산의 변형 생성](/help/assets/cc-api-integration.md)을 참조하십시오.
 
-* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator],  [!DNL Adobe InDesign] 및  [[!DNL Adobe Asset Link] v2.0](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link-for-xd.html) 을  [!DNL Adobe XD] 사용할 수 있습니다. 다음을 제공합니다.
+* [[!DNL Adobe Asset Link] v3.0](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 용  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]및  [!DNL Adobe InDesign] v2.0 [[!DNL Adobe Asset Link] 을 사용할 수 ](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link-for-xd.html)   [!DNL Adobe XD] 있습니다. 다음을 제공합니다.
 
    * [!DNL Assets Essentials]을 지원합니다.
    * [!DNL Experience Manager]에 [!DNL Cloud Service] 또는 [!DNL Assets Essentials]로 자동 연결할 수 있습니다.
@@ -150,7 +150,7 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 
 ### [!DNL Forms] 베타 기능 {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**:Communication API를 사용하면 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication API를 사용하면 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
    * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
    * XFA 양식 PDF 및 Adobe Acrobat 양식(AcroForm)에서 인쇄 PDF를 생성합니다.
