@@ -1,7 +1,7 @@
 ---
 title: Cloud Acceleration Manager의 구현 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계에 대한 개요를 제공합니다.
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 2%
@@ -54,9 +54,9 @@ ht-degree: 2%
 
 1. 이 페이지에는 심각도 수준별로 구성된 코드 리팩터링 활동 목록이 표시됩니다. 강조 표시된 두 개의 아이콘을 클릭하여 자세히 알아볼 수 있습니다.
 
-   페이지는 세 개의 서로 다른 탭에 코드 리팩터링 고려 사항을 표시합니다.
+   이 페이지에는 다음 세 개의 서로 다른 탭에 코드 리팩터링 고려 사항이 표시됩니다.
 
-   * 개요:
+   * 개요
    * Dispatcher
    * 테스트
 
