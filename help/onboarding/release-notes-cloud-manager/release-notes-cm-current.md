@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 릴리스 2021.7.0의 Cloud Manager 릴리스 노�
 description: AEM as a Cloud Service 릴리스 2021.7.0의 Cloud Manager 릴리스 노트
 feature: 릴리스 정보
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
+source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '366'
 ht-degree: 4%
 
 ---
@@ -28,17 +28,19 @@ AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 날짜는 2021년 7�
 
 * 이제 아웃바운드 송신 IP가 빌드 단계 로그 파일에 기록됩니다.
 
-* 이전 버전의 AEM을 실행하는 단계 및 프로덕션 환경에서는 이제 &quot;사용 가능한 업데이트&quot;의 상태를 보고합니다.
+* 이전 버전의 AEM을 실행하는 단계 및 프로덕션 환경에서는 **Update Available** 상태를 보고합니다.
 
 * 지원되는 최대 SSL 인증서는 프로그램당 20개로 증가했습니다.
 
-* 증가 구성할 수 있는 도메인의 최대 수가 환경당 500개로 늘어났습니다.
+* 구성할 수 있는 최대 도메인 수가 환경당 500개로 늘어났습니다.
 
-* Git 관리 단추가 Git 정보에 대한 액세스 권한을 제거했으며 대화 상자가 시각적으로 새로 고침되었습니다.
+* **Git** 관리 단추가 **Access Git Info**&#x200B;로 변경되었으며 대화 상자가 시각적으로 새로 고침되었습니다.
+
+* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 28로 업데이트되었습니다.
 
 ### 버그 수정 {#bug-fixes}
 
-* 경우에 따라 IP를 환경에 바인딩할 때 미리 보기 옵션을 사용할 허용 목록에 추가하다 수 없었습니다.
+* 경우에 따라 IP 허용 목록을 환경에 바인딩할 때 미리 보기 옵션을 사용할 수 없었습니다.
 
 * 존재하지 않는 실행을 위한 실행 세부 사항 페이지로 수동으로 탐색해도 오류가 표시되지 않고 끝없이 로드되는 화면만 표시됩니다.
 
@@ -48,7 +50,7 @@ AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 날짜는 2021년 7�
 
 * 프로그램 추가 마법사에서 생성 후 이름을 변경할 수 없다고 잘못 명시했습니다.
 
-* 경우에 따라 IP를 환경에 바인딩할 때 미리 보기 옵션을 사용할 허용 목록에 추가하다 수 없었습니다.
+* 경우에 따라 IP 허용 목록을 환경에 바인딩할 때 미리 보기 옵션을 사용할 수 없었습니다.
 
 ### 알려진 문제 {#known-issues}
 
