@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Manager의 구현 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계에 대한 개요를 제공합니다.
-source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
+source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,27 @@ ht-degree: 2%
 
 1. 이 페이지에는 심각도 수준별로 구성된 코드 리팩터링 활동 목록이 표시됩니다. 강조 표시된 두 개의 아이콘을 클릭하여 자세히 알아볼 수 있습니다.
 
+   페이지는 세 개의 서로 다른 탭에 코드 리팩터링 고려 사항을 표시합니다.
+
+   * 개요:
+   * Dispatcher
+   * 테스트
+
+   **개요** 탭에는 코드 리팩터링 활동 목록이 표시됩니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+
+   **Dispatcher** 탭에서는 AEM을 Cloud Service Apache 및 Dispatcher 구성으로 구성하는 방법과 클라우드 환경에 배포하기 전에 로컬로 확인하고 실행하는 방법에 대한 정보를 제공합니다. 클라우드 환경에서의 디버깅에도 대해 설명합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+
+   **테스트** 탭은 기능, 경험 감사 및 UI 테스트에 대한 정보를 제공합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+
+
    >[!NOTE]
    >또한 페이지 탭의 컨텐츠를 검토하여 우수 사례 분석기에서 다루지 않는 몇 가지 추가 영역을 파악하십시오.
-
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
 ## AEM을 Cloud Service 배포 카드로 사용 {#aem-as-a-cloud-service-deployment}
