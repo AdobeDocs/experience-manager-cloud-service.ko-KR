@@ -2,16 +2,24 @@
 title: '프로덕션 프로그램 생성 '
 description: 프로덕션 프로그램 생성
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: e51ab417af5aa77019e8ba3fa5c452c9b25b2d35
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
-# 프로덕션 프로그램 만들기 {#create-production-program}
+# 프로덕션 프로그램 생성 {#create-production-program}
 
 *프로덕션* 프로그램은 AEM 및 Cloud Manager에 익숙하고 코드를 프로덕션에 배포하기 위해 작성, 빌드 및 테스트를 시작할 준비가 된 사용자를 위한 것입니다.
+
+Cloud Manager에서 프로그램을 만드는 방법을 배우려면 아래 두 부분으로 된 튜토리얼 비디오를 시청하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334953)
+
+>[!VIDEO](https://video.tv.adobe.com/v/334954)
+
+또는,
 
 프로덕션 프로그램을 만들려면 아래 절차를 따르십시오.
 
