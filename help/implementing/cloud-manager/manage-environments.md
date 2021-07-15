@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
+source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 필수 권한을 가진 사용자는 다음 환경 유형을 만들 수 있습니다(특정 테넌트에 사용할 수 있는 범위 내).
 
-* **프로덕션 및 스테이지 환경**:프로덕션과 스테이지는 듀오로 제공되며 테스트 및 프로덕션 용도로 사용됩니다.
+* **프로덕션 및 스테이지 환경**: 프로덕션과 스테이지는 듀오로 제공되며 테스트 및 프로덕션 용도로 사용됩니다.
 
-* **개발**:개발 환경은 개발 및 테스트 목적으로 만들 수 있으며 비프로덕션 파이프라인에만 연결됩니다.
+* **개발**: 개발 환경은 개발 및 테스트 목적으로 만들 수 있으며 비프로덕션 파이프라인에만 연결됩니다.
 
    >[!NOTE]
    >샌드박스 프로그램에서 자동으로 만들어지는 개발 환경은 사이트 및 자산 솔루션을 포함하도록 구성됩니다.
@@ -52,7 +52,7 @@ ht-degree: 1%
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >환경을 만들 때 Adobe I/O에 하나 이상의 *통합*&#x200B;이 만들어집니다.이는 Adobe I/O 콘솔에 액세스할 수 있는 고객 사용자가 볼 수 있으며 삭제할 수 없습니다. 이는 Adobe I/O 콘솔의 설명에서 나타나지 않습니다.
+   >환경을 만들 때 Adobe I/O에 하나 이상의 *통합*&#x200B;이 만들어집니다. 이는 Adobe I/O 콘솔에 액세스할 수 있는 고객 사용자가 볼 수 있으며 삭제할 수 없습니다. 이는 Adobe I/O 콘솔의 설명에서 나타나지 않습니다.
 
    ![](assets/add-environment-image1.png)
 
@@ -61,13 +61,13 @@ ht-degree: 1%
    >[!NOTE]
    >비프로덕션 파이프라인을 아직 설정하지 않은 경우 *개요* 화면에는 비프로덕션 파이프라인을 생성할 수 있는 카드가 표시됩니다.
 
-## 환경 세부 정보 {#viewing-environment}
+## 환경 세부 사항 {#viewing-environment}
 
 개요 페이지의 **환경** 카드는 최대 3개의 환경을 나열합니다.
 
 1. **모두 표시** 단추를 선택하여 **환경** 요약 페이지로 이동하여 전체 환경 목록이 있는 테이블을 봅니다.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. **환경** 페이지에는 모든 기존 환경의 목록이 표시됩니다.
 
@@ -81,15 +81,15 @@ ht-degree: 1%
    ![](assets/environ-preview1.png)
 
 
-### 미리 보기 서비스 {#access-preview-service}에 액세스
+### 미리 보기 서비스 액세스 {#access-preview-service}
 
 미리 보기 서비스 기능은 Cloud Manager를 통해 각 AEM as a Cloud Service 환경으로 추가 미리 보기(게시) 서비스를 제공합니다.
 
 웹 사이트가 게시 환경에 도달하기 전에 웹 사이트의 최종 경험을 미리 보고 공개적으로 사용할 수 있습니다. 미리 보기 서비스를 보고 사용하기 전에 다음 몇 가지 포인터를 볼 수 있습니다.
 
-1. **AEM 버전**:환경은 AEM 버전  `2021.05.5368.20210529T101701Z` 이상이어야 합니다. 이 작업을 수행하려면 업데이트 파이프라인이 사용자 환경에서 성공적으로 실행되었는지 확인하십시오.
+1. **AEM 버전**: 환경은 AEM 버전  `2021.05.5368.20210529T101701Z` 이상이어야 합니다. 이 작업을 수행하려면 업데이트 파이프라인이 사용자 환경에서 성공적으로 실행되었는지 확인하십시오.
 
-1. **기본 IP 허용 목록 잠금**:생성 시 미리 보기 서비스에는 기본 IP 허용 목록이 적용되며, 여기에 레이블이  `Preview Default [Env ID]`지정됩니다.
+1. **기본 IP 허용 목록 잠금**: 생성 시 미리 보기 서비스에는 기본 IP 허용 목록이 적용되며, 여기에 레이블이  `Preview Default [Env ID]`지정됩니다.
 
    >[!NOTE]
    >처음 생성 시 액세스 권한을 활성화하려면 환경의 미리 보기 서비스에서 기본 IP 허용 목록을 적극적으로 적용 취소해야 합니다.
@@ -109,9 +109,9 @@ ht-degree: 1%
 
       ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
-1. **미리 보기에 컨텐츠 게시**:AEM 내의 게시 관리 UI를 사용하여 미리 보기 서비스에 컨텐츠를 게시할 수 있습니다. 자세한 내용은 [컨텐츠 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en)를 참조하십시오.
+1. **미리 보기에 컨텐츠 게시**: AEM 내의 게시 관리 UI를 사용하여 미리 보기 서비스에 컨텐츠를 게시할 수 있습니다. 자세한 내용은 [컨텐츠 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en)를 참조하십시오.
 
-## 환경 업데이트 중 {#updating-dev-environment}
+## 환경 업데이트 {#updating-dev-environment}
 
 스테이지 및 프로덕션 환경의 업데이트는 Adobe에 의해 자동으로 관리됩니다.
 
@@ -129,7 +129,7 @@ ht-degree: 1%
 
 파이프라인이 이미 업데이트된 경우 파이프라인을 실행하라는 메시지가 표시됩니다.
 
-## 환경 {#deleting-environment} 삭제
+## 환경 삭제 {#deleting-environment}
 
 필수 권한이 있는 사용자는 개발 환경을 삭제할 수 있습니다.
 
@@ -167,7 +167,7 @@ ht-degree: 1%
 
 이 옵션은 **환경** 카드에서 **세부 정보**&#x200B;를 클릭하면 사용할 수도 있습니다. **환경** 페이지가 열리고 환경을 선택하면 **..** 를 선택하고 **개발자 콘솔**&#x200B;을 선택합니다.
 
-## 로컬로 {#login-locally} 로그인
+## 로컬로 로그인 {#login-locally}
 
 **환경** 카드의 드롭다운 메뉴에서 **로컬 로그인**&#x200B;을 선택하여 Adobe Experience Manager에 로컬로 로그인합니다.
 
@@ -205,7 +205,7 @@ ht-degree: 1%
 >[!NOTE]
 >이제 IP 허용 목록 기능은 Cloud Manager for Author, Publish 및 Preview Services(사이트 프로그램에서 사용 가능)에서 지원됩니다.
 
-### IP 허용 목록 {#apply-ip-allow-list} 적용
+### IP 허용 목록 적용 {#apply-ip-allow-list}
 
 IP 허용 목록을 적용하는 것은 허용 목록 정의에 포함된 모든 IP 범위를 환경의 작성자 또는 게시 서비스와 연결하는 프로세스입니다. IP 허용 목록을 적용하려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
 
@@ -218,7 +218,7 @@ IP 허용 목록을 적용하려면 아래 단계를 따르십시오.
 1. IP 허용 목록 테이블 상단에 있는 입력 필드를 사용하여 적용할 IP 허용 목록 및 작성자 또는 게시 서비스를 선택합니다.
 1. **적용**&#x200B;을 클릭하고 제출을 확인합니다.
 
-### IP 허용 목록 {#unapply-ip-allow-list} 적용 취소
+### IP 허용 목록 적용 취소 {#unapply-ip-allow-list}
 
 IP 허용 목록 적용 취소는 허용 목록 정의에 포함된 모든 IP 범위가 환경의 작성자 또는 게시자 서비스와 연관되지 않는 프로세스입니다. IP 허용 목록을 적용 해제하려면 비즈니스 소유자 또는 배포 관리자 역할의 사용자가 로그인해야 합니다.
 
