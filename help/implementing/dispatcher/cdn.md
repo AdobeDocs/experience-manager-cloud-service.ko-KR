@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 12bcc10094151cc8666ed169c2b65e2b5379e616
+source-git-commit: a38dce77b55b7fadfb7b0ab33aeab72483b42725
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '913'
 ht-degree: 8%
 
 ---
@@ -56,14 +56,17 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 
 구성 지침:
 
-1. 도메인 이름으로 `X-Forwarded-Host` 헤더를 설정합니다. 예: `X-Forwarded-Host:example.com`.
-1. AEM CDN의 수신인 원본 도메인으로 호스트 헤더를 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. SNI 헤더를 원본으로 보냅니다. 호스트 헤더와 마찬가지로 SNI 헤더가 원본 도메인이어야 합니다.
-1. `X-Edge-Key` 또는 `X-AEM-Edge-Key` 를 설정합니다(CDN이 `X-Edge-*`을 제거하는 경우). 값은 Adobe에서 가져와야 합니다.
-   * Adobe CDN이 요청 소스의 유효성을 확인하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있도록 필요합니다. 예를 들어 `X-Forwarded-Host` 은 AEM에서 호스트 헤더를 결정하는 데 사용되고 `X-Forwarded-For` 는 클라이언트 IP를 결정하는 데 사용됩니다. 따라서 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임이 되므로 `X-Forwarded-*` 헤더가 정확한지 확인합니다(아래 참고 참조).
-   * 선택적으로, `X-Edge-Key` 이 없을 경우 Adobe CDN의 수신 주소에 대한 액세스를 차단할 수 있습니다. Adobe CDN 수신(차단하려면)에 직접 액세스해야 하는 경우 Adobe에 알려주십시오.
+1. CDN을 Adobe CDN의 주소를 원래 도메인으로 가리킵니다. 예, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. SNI는 Adobe CDN의 수신로도 설정되어야 합니다
+1. 호스트 헤더를 원본 도메인으로 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. AEM에서 호스트 헤더를 확인할 수 있도록 도메인 이름으로 `X-Forwarded-Host` 헤더를 설정하십시오. 예: `X-Forwarded-Host:example.com`.
+1. 설정 `X-AEM-Edge-Key`. 값은 Adobe에서 가져와야 합니다.
+   * Adobe CDN이 요청 소스의 유효성을 확인하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있도록 필요합니다. 예를 들어`X-Forwarded-For`은 클라이언트 IP를 결정하는 데 사용됩니다. 따라서 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임이 되므로 `X-Forwarded-*` 헤더가 정확한지 확인합니다(아래 참고 참조).
+   * 선택적으로, `X-AEM-Edge-Key` 이 없을 경우 Adobe CDN의 수신 주소에 대한 액세스를 차단할 수 있습니다. Adobe CDN 수신(차단하려면)에 직접 액세스해야 하는 경우 Adobe에 알려주십시오.
 
 라이브 트래픽을 수락하기 전에 엔드 투 엔드 트래픽 라우팅이 올바르게 작동하는지 Adobe의 고객 지원 센터에서 확인해야 합니다.
+
+CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 기본 도메인 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`을 사용하여 수행됩니다.
 
 >[!NOTE]
 >
