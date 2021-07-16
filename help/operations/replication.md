@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1229'
 ht-degree: 4%
 
 ---
@@ -55,6 +55,10 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
    ![](assets/publish-distribute.png "DistributeDistribution")
 4. 경로 브라우저에서 경로를 선택하고 필요에 따라 노드, 트리 또는 삭제를 선택하고 **Submit**&#x200B;을 선택합니다.
+
+최상의 성능을 위해 이 기능을 사용할 때는 다음 지침을 따르십시오.
+* 복제에 대해 생성된 컨텐츠 패키지의 총 크기는 5MB 미만이어야 합니다.
+* 한 번에 500개 이하의 경로를 복제하여 100개 이하의 경로를 복제하는 것이 좋습니다.
 
 ### 컨텐츠 트리 게시 워크플로우 {#publish-content-tree-workflow}
 
