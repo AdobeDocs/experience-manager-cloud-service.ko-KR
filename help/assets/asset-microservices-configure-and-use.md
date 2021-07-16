@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute 마이크로서비스,워크플로우,자산 처리
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 1%
@@ -61,11 +61,11 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 [!DNL Experience Manager] 는 사용자의 요구 사항에 따라 일반적인 형식에 대한 보다 구체적인 표현물을 생성하는 기능을 제공합니다. 관리자는 추가 [!UICONTROL 처리 프로필]을 만들어 이러한 변환을 쉽게 만들 수 있습니다. 그런 다음 사용 가능한 프로필 중 하나 이상을 특정 폴더에 할당하여 추가 처리를 완료합니다. 예를 들어, 추가 처리에서는 웹, 모바일 및 태블릿에 대한 렌디션을 생성할 수 있습니다. 다음 비디오에서는 [!UICONTROL 처리 프로필]을 만들고 적용하는 방법과 만들어진 표현물에 액세스하는 방법을 보여줍니다.
 
-* **표현물 너비 및 높이**:변환 너비와 높이 사양은 생성된 출력 이미지의 최대 크기를 제공합니다. 자산 마이크로서비스는 가능한 가장 큰 렌디션을 생성하려고 합니다. 이 렌디션의 너비와 높이는 각각 지정된 너비와 높이보다 크지 않습니다. 종횡비는 유지되며, 이것은 원본과 동일합니다. 빈 값은 자산 처리가 원래 픽셀 차원을 가정함을 의미합니다.
+* **표현물 너비 및 높이**: 변환 너비와 높이 사양은 생성된 출력 이미지의 최대 크기를 제공합니다. 자산 마이크로서비스는 가능한 가장 큰 렌디션을 생성하려고 합니다. 이 렌디션의 너비와 높이는 각각 지정된 너비와 높이보다 크지 않습니다. 종횡비는 유지되며, 이것은 원본과 동일합니다. 빈 값은 자산 처리가 원래 픽셀 차원을 가정함을 의미합니다.
 
-* **MIME 유형 포함 규칙**:특정 MIME 유형의 자산이 처리되면 먼저 표현물 사양에 대해 제외된 MIME 유형 값에 대해 MIME 유형을 확인합니다. 해당 목록과 일치하는 경우 자산(차단 목록)에 대해 이 특정 표현물이 생성되지 않습니다. 그렇지 않으면 포함된 MIME 유형에 대해 MIME 유형이 선택되어 있으며 목록과 일치하면 렌디션이 생성됩니다(허용 목록).
+* **MIME 유형 포함 규칙**: 특정 MIME 유형의 자산이 처리되면 먼저 표현물 사양에 대해 제외된 MIME 유형 값에 대해 MIME 유형을 확인합니다. 해당 목록과 일치하는 경우 자산(차단 목록)에 대해 이 특정 표현물이 생성되지 않습니다. 그렇지 않으면 포함된 MIME 유형에 대해 MIME 유형이 선택되어 있으며 목록과 일치하면 렌디션이 생성됩니다(허용 목록).
 
-* **특수 FPO 변환**:에서  [!DNL Experience Manager] 문서에 대형 자산 [!DNL Adobe InDesign] 을 배치할 때 크리에이티브 전문가가 자산을  [배치한 후 상당한 시간을 기다립니다](https://helpx.adobe.com/indesign/using/placing-graphics.html). 한편 사용자가 [!DNL InDesign] 사용을 차단합니다. 따라서 크리에이티브 플로우가 중단되고 사용자 경험에 부정적인 영향을 줍니다. Adobe을 사용하면 [!DNL InDesign] 문서에 작은 크기의 렌디션을 일시적으로 배치할 수 있습니다. 이 렌디션은 나중에 전체 해상도 자산으로 대체할 수 있습니다. [!DNL Experience Manager] 배치에만 사용되는 표현물(FPO)을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 동일한 종횡비입니다.
+* **특수 FPO 변환**: 에서  [!DNL Experience Manager] 문서에 대형 자산 [!DNL Adobe InDesign] 을 배치할 때 크리에이티브 전문가가 자산을  [배치한 후 상당한 시간을 기다립니다](https://helpx.adobe.com/indesign/using/placing-graphics.html). 한편 사용자가 [!DNL InDesign] 사용을 차단합니다. 따라서 크리에이티브 플로우가 중단되고 사용자 경험에 부정적인 영향을 줍니다. Adobe을 사용하면 [!DNL InDesign] 문서에 작은 크기의 렌디션을 일시적으로 배치할 수 있습니다. 이 렌디션은 나중에 전체 해상도 자산으로 대체할 수 있습니다. [!DNL Experience Manager] 배치에만 사용되는 표현물(FPO)을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 동일한 종횡비입니다.
 
 처리 프로필에는 FPO(For Placement Only) 표현물이 포함될 수 있습니다. 처리 프로필에 대해 켜야 하는지 확인하려면 [!DNL Adobe Asset Link] [설명서](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)를 참조하십시오. 자세한 내용은 [자산 링크 Adobe 완료 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 참조하십시오.
 
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 관리자는 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**&#x200B;에 액세스합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 폴더에 적용할 때 프로필을 고유하게 식별하는 데 도움이 되는 이름을 제공합니다.
-1. FPO 변환을 생성하려면 **[!UICONTROL 표준]** 탭에서 **[!UICONTROL FPO 표현물 만들기]**&#x200B;를 활성화합니다. **[!UICONTROL Quality]** 값을 1에서 100 사이에 입력합니다.
+1. FPO 변환을 생성하려면 **[!UICONTROL 이미지]** 탭에서 **[!UICONTROL FPO 표현물 만들기]**&#x200B;를 활성화합니다. **[!UICONTROL Quality]** 값을 1에서 100 사이에 입력합니다.
 1. 다른 변환을 생성하려면 **[!UICONTROL 새로 추가]**&#x200B;를 클릭하고 다음 정보를 제공합니다.
 
    * 각 변환의 파일 이름입니다.
@@ -151,7 +151,7 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 ![custom-processing-profile](assets/custom-processing-profile.png)
 
-*그림:서비스  [!UICONTROL 매개 ] 변수필드를 사용하여 추가된 정보를 사용자 지정 애플리케이션에 미리 정의된 매개 변수에 전달합니다. 이 예에서 캠페인 이미지가 업로드되면 이미지는 `Arial-BoldMT` 글꼴의 `Jumanji` 텍스트로 업데이트됩니다.*
+*그림: 서비스  [!UICONTROL 매개 ] 변수필드를 사용하여 추가된 정보를 사용자 지정 애플리케이션에 미리 정의된 매개 변수에 전달합니다. 이 예에서 캠페인 이미지가 업로드되면 이미지는 `Arial-BoldMT` 글꼴의 `Jumanji` 텍스트로 업데이트됩니다.*
 
 ## 처리 프로필을 사용하여 자산 처리 {#use-profiles}
 
@@ -177,7 +177,7 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 ![추가 표현물](assets/renditions-additional-renditions.png)
 
-*그림:상위 폴더에 적용된 처리 프로필에서 생성한 두 개의 추가 표현물의 예입니다.*
+*그림: 상위 폴더에 적용된 처리 프로필에서 생성한 두 개의 추가 표현물의 예입니다.*
 
 ## 사후 처리 워크플로우 {#post-processing-workflows}
 
@@ -227,8 +227,8 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 폴더에 워크플로우를 적용하여 쉽게 구현할 수 없는 고급 구성에 대한 사용자 지정 워크플로우 런너 서비스를 구성할 수 있습니다. 예를 들어 정규 표현식을 사용하는 워크플로우입니다. Adobe CQ DAM 사용자 지정 워크플로우 러너(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)는 OSGi 서비스입니다. 구성에 대해 다음 두 가지 옵션을 제공합니다.
 
-* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`):다양한 저장소 경로에 따라 여러 워크플로우 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. 이러한 매개 변수를 `/var` 경로의 워크플로우 모델에 매핑합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 표현식에 의한 사후 처리 워크플로우(`postProcWorkflowsByExpression`):다른 정규 표현식을 기반으로 하여 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`): 다양한 저장소 경로에 따라 여러 워크플로우 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. 이러한 매개 변수를 `/var` 경로의 워크플로우 모델에 매핑합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 표현식에 의한 사후 처리 워크플로우(`postProcWorkflowsByExpression`): 다른 정규 표현식을 기반으로 하여 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 OSGi 구성을 배포하는 방법은 [배포 대상 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)을 참조하십시오.
 
