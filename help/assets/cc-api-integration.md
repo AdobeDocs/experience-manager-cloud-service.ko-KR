@@ -4,9 +4,9 @@ description: Creative Cloud 통합을 사용하여 자산의 변형 생성
 contentOwner: AG
 feature: 업로드,자산 처리,게시,Asset compute 마이크로서비스,워크플로우
 role: User,Admin
-source-git-commit: 997f292be2498624c5218addd61ec40727eb48bc
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,9 @@ ht-degree: 0%
 컨텐츠 자동화 추가 기능은 [!DNL Adobe Experience Manager Assets as a Cloud Service] 및 [!DNL Adobe Creative Cloud] API를 통합하여 자산을 규모에 맞게 크리에이티브 처리합니다. [!DNL Experience Manager] 는 클라우드 기반  [자산 ](/help/assets/asset-microservices-overview.md) 마이크로 서비스를 사용하여  [!DNL Adobe Creative Cloud] 기능을 사용하고 자산 작성 및 미디어 처리를 자동화합니다.
 
 [!DNL Adobe Photoshop] 및 [!DNL Adobe Lightroom]에서 자산을 편집하려면 [!DNL Experience Manager Assets]에서 자산을 다운로드하여 편집하고 다시 업로드할 필요가 없습니다. [!DNL Experience Manager]에서 처리 프로필을 만들고 구성하고, 프로필을 폴더에 적용하고, 자산을 폴더에 업로드하기만 하면 됩니다. 업로드된 자산은 처리 프로필을 기반으로 다시 처리되며, 이러한 자산의 변형을 받습니다. 일관되고 간편하게 일괄 처리를 수행할 수 있으므로 수작업을 줄일 수 있고 컨텐츠 속도를 높일 수 있으므로 탁월한 크리에이티브 기술이 필요하지 않습니다. 또한 개발자 및 파트너는 이러한 API에 직접 액세스하여 자산 마이크로서비스를 확장하고 사용자 지정 논리를 포함할 수 있습니다.
-사용자는 처리 프로필을 만들어 자산에서 다음과 같은 크리에이티브 작업을 자동화할 수 있습니다.
 
+사용자는 처리 프로필을 만들어 자산에서 다음과 같은 크리에이티브 작업을 자동화할 수 있습니다.\
+![자산에서 Adobe Photoshop 및 Adobe Lightroom 작업 자동화](assets/content-automation.png)
 * **자동 톤**: 인공 지능을 사용하여 이미지의 내용을 분석하고 이미지의 고유한 속성에 따라 지능적으로 빛과 색상을 수정합니다.
 * **자동 직립**: 인공 지능을 사용하여 이미지의 내용을 분석하고 이미지의 기울어진 원근감을 수정합니다. 예를 들어 수준 범위를 만듭니다.
 * **Lightroom 사전 설정**: 사용자 정의 사전 설정을 사용하여 이미지에 사용자 정의 모양을 적용하여 일관된 모양을 얻을 수 있습니다.
@@ -26,6 +27,8 @@ ht-degree: 0%
 * **이미지 마스크**: 인공 지능을 사용하여 하나의 명령으로 침목 객체 주위에 마스크를 만듭니다.
 * **Photoshop 작업**: 파일 또는 파일 배치에 일련의 작업(Photoshop)을 적용합니다.
 * **스마트 개체 바꾸기**: PSD 파일 내에 적용된 모든 효과와 조정을 그대로 유지하면서 이미지를 교환하도록 함으로써 규모에 맞게 개인화를 수행할 수 있습니다.
+
+
 
 ## 처리 프로필을 사용하여 크리에이티브 자산을 일괄적으로 편집 {#process-assets}
 
@@ -39,7 +42,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Creative]** 탭을 선택하고 출력 폴더를 지정하고 **[!UICONTROL 새로 추가]**&#x200B;를 선택하여 크리에이티브 구성을 추가합니다.
 
-1. **[!UICONTROL 표현물 이름]**(또는 출력 이름), **[!UICONTROL 확장]**(또는 파일 유형)을 제공하고, **[!UICONTROL 품질]**(또는 출력 매개 변수)을 선택하고, MIME 유형 목록 포함 및 제외(또는 입력 자산 필터)를 선택한 다음 필요한 크리에이티브 작업을 선택합니다.
+1. **[!UICONTROL 표현물 이름]**(또는 출력 이름), **[!UICONTROL 확장]**(또는 파일 유형)을 제공하고, **[!UICONTROL 품질]**(또는 출력 매개 변수)을 선택하고, **[!UICONTROL 포함]** 및 **[!UICONTROL 제외]** MIME 유형 목록(또는 입력 자산 필터)을 선택한 다음 필요한 크리에이티브 작업을 선택합니다.
    ![처리 프로필의 크리에이티브 탭](assets/creative-processing-profile.png)
 
 1. 일부 작업에는 추가 매개 변수(자산)가 필요합니다. 필요한 경우 이러한 추가 매개 변수에 대한 값을 제공합니다.
