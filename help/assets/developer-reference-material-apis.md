@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,자산 HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: b7034a98b0c64ffb407240b5d17e1dd02faa6eb4
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1433'
 ht-degree: 2%
 
 ---
@@ -113,15 +113,15 @@ ht-degree: 2%
 }
 ```
 
-* `completeURI` (문자열):바이너리의 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 값은 `"https://author.acme.com/content/dam.completeUpload.json"` 또는 `"/content/dam.completeUpload.json"`완료 업로드](#complete-upload)를 참조하십시오.[
-* `folderPath` (문자열):바이너리가 업로드된 폴더의 전체 경로입니다.
-* `(files)` (배열):시작 요청에서 제공된 이진 정보 목록의 길이 및 순서와 일치하는 요소의 목록입니다.
-* `fileName` (문자열):시작 요청에서 제공된 해당 바이너리의 이름입니다. 이 값은 전체 요청에 포함해야 합니다.
-* `mimeType` (문자열):시작 요청에서 제공된 해당 바이너리의 MIME 유형입니다. 이 값은 전체 요청에 포함해야 합니다.
-* `uploadToken` (문자열):해당 바이너리에 대한 업로드 토큰. 이 값은 전체 요청에 포함해야 합니다.
-* `uploadURIs` (배열):값이 전체 URI인 문자열 목록으로서, 바이너리 컨텐츠를 업로드해야 합니다( [이진 업로드](#upload-binary) 참조).
-* `minPartSize` (숫자):둘 이상의 URI가 있는  `uploadURIs`경우 모든 URI에 제공할 수 있는 데이터의 최소 길이(바이트)입니다.
-* `maxPartSize` (숫자):둘 이상의 URI가 있는  `uploadURIs`경우 모든 URI에 제공할 수 있는 데이터의 최대 길이(바이트)입니다.
+* `completeURI` (문자열): 바이너리의 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 값은 `"https://author.acme.com/content/dam.completeUpload.json"` 또는 `"/content/dam.completeUpload.json"`완료 업로드](#complete-upload)를 참조하십시오.[
+* `folderPath` (문자열): 바이너리가 업로드된 폴더의 전체 경로입니다.
+* `(files)` (배열): 시작 요청에서 제공된 이진 정보 목록의 길이 및 순서와 일치하는 요소의 목록입니다.
+* `fileName` (문자열): 시작 요청에서 제공된 해당 바이너리의 이름입니다. 이 값은 전체 요청에 포함해야 합니다.
+* `mimeType` (문자열): 시작 요청에서 제공된 해당 바이너리의 MIME 유형입니다. 이 값은 전체 요청에 포함해야 합니다.
+* `uploadToken` (문자열): 해당 바이너리에 대한 업로드 토큰. 이 값은 전체 요청에 포함해야 합니다.
+* `uploadURIs` (배열): 값이 전체 URI인 문자열 목록으로서, 바이너리 컨텐츠를 업로드해야 합니다( [이진 업로드](#upload-binary) 참조).
+* `minPartSize` (숫자): 둘 이상의 URI가 있는  `uploadURIs`경우 모든 URI에 제공할 수 있는 데이터의 최소 길이(바이트)입니다.
+* `maxPartSize` (숫자): 둘 이상의 URI가 있는  `uploadURIs`경우 모든 URI에 제공할 수 있는 데이터의 최대 길이(바이트)입니다.
 
 ### 이진 업로드 {#upload-binary}
 
@@ -129,7 +129,7 @@ ht-degree: 2%
 
 API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는 것이 이를 수행하는 가능한 방법입니다. 예를 들어 바이너리의 총 크기는 20,000바이트이고 업로드 URI 수는 2라고 가정합니다. 그런 다음 다음 단계를 수행합니다.
 
-* 총 크기를 URI 수로 나누어 부품 크기 계산:20,000 / 2 = 10,000.
+* 총 크기를 URI 수로 나누어 부품 크기 계산: 20,000 / 2 = 10,000.
 * POST 바이트 범위는 바이너리의 0-9,999이며 업로드 URI 목록의 첫 번째 URI입니다.
 * 업로드 URI 목록의 두 번째 URI에 대한 POST 바이트 범위는 10,000 - 19,999입니다.
 
@@ -187,21 +187,45 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 
 ## 사후 처리 워크플로우에서 워크플로우 단계 지원 {#post-processing-workflows-steps}
 
-이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 고객은 자산 마이크로서비스를 사용하여 자산을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로서비스 는 구성 및 사용이 훨씬 간단합니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다.
-
-[!DNL Experience Manager] 는 다음  [!DNL Cloud Service] 워크플로우 단계를 지원합니다.
-
-* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
-* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
-* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
-* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
-* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
-* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
+이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 경우 자산 마이크로서비스를 사용하여 자산을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로서비스 는 구성 및 사용이 더 쉽습니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다. 지원되는 클래스에 대한 자세한 내용은 [Java API 참조](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)를 참조하십시오.
 
 다음 기술 워크플로우 모델은 자산 마이크로서비스로 대체되거나 지원되지 않습니다.
+
+* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
+* `com.day.cq.dam.core.process.CommandLineProcess`
+* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
+* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
+* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
+* `com.day.cq.dam.core.process.DownloadAssetProcess`
+* `com.day.cq.dam.word.process.ExtractImagesProcess`
+* `com.day.cq.dam.word.process.ExtractPlainProcess`
+* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
+* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
+* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
+* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
+* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
+* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
+* `com.day.cq.dam.switchengine.process.SwitchEngineHandlingProcess`
+* `com.day.cq.dam.core.process.GateKeeperProcess`
+* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
+* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
+* `com.day.cq.dam.video.FFMpegTranscodeProcess`
+* `com.day.cq.dam.core.process.ThumbnailProcess`
+* `com.day.cq.dam.video.FFMpegThumbnailProcess`
+* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
+* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
+* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
+* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
+* `com.day.cq.dam.core.process.MetadataProcessorProcess`
+* `com.day.cq.dam.core.process.AssetOffloadingProcess`
+* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+
+<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -235,7 +259,7 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 * `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
 * `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
-* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
+-->
 
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
