@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: 표현물
 exl-id: null
-source-git-commit: f6e1ee3a9640f0853d4f518e816cfee4bd5cb20f
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Experience Manager의 큰 자산을 Adobe InDesign 문서에 배치할 때 크�
 
 자산은 배치에만 사용되는 표현물(FPO)을 제공합니다. 이러한 FPO 변환은 파일 크기가 작지만 동일한 종횡비입니다. 자산에 FPO 변환을 사용할 수 없는 경우 Adobe InDesign에서는 대신 원본 자산을 사용합니다. 이 대체 메커니즘을 사용하면 크리에이티브 워크플로우가 중단 없이 진행됩니다.
 
-Experience Manager as a Cloud Service은 FPO 변환을 생성할 수 있는 클라우드 기반의 자산 처리 기능을 제공합니다. 렌디션 생성을 위해 자산 마이크로서비스를 사용합니다. 새로 업로드한 자산과 Experience Manager에 있는 자산의 렌디션 생성을 구성할 수 있습니다.
+Experience Manager as a Cloud Service은 FPO 변환을 생성할 수 있는 클라우드 기반의 자산 처리 기능을 제공합니다. 렌디션 생성을 위해 자산 마이크로서비스 사용. 새로 업로드한 자산과 Experience Manager에 있는 자산의 렌디션 생성을 구성할 수 있습니다.
 
 다음은 FPO 변환을 생성하는 단계입니다.
 1. [처리 프로필 만들기](#create-processing-profile).
