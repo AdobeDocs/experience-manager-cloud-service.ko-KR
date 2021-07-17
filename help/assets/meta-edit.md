@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 메타데이터
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
    * 자산 축소판에서 **[!UICONTROL 속성 보기]** 빠른 작업을 선택합니다.
    * 자산 페이지의 도구 모음에서 **[!UICONTROL 속성 보기]**&#x200B;를 클릭/탭합니다.
 
-   자산 페이지에 자산의 모든 메타데이터가 표시됩니다. 이 메타데이터는 AEM Assets에 업로드(수집)될 때 자동으로 추출됩니다.
+   자산 페이지에 자산의 모든 메타데이터가 표시됩니다. 이 메타데이터는 Experience Manager Assets에 업로드(수집)될 때 자동으로 추출됩니다.
 
 1. 필요에 따라 다양한 탭 아래에서 메타데이터를 편집하고, 완료되면 도구 모음에서 **[!UICONTROL 저장]** 을 클릭/탭하여 변경 사항을 저장합니다. **[!UICONTROL 닫기]**&#x200B;를 클릭/탭하여 Assets 웹 인터페이스로 돌아갑니다.
 
@@ -36,7 +36,7 @@ ht-degree: 1%
    >
    >텍스트 필드가 비어 있으면 기존 메타데이터 세트가 없습니다. 필드에 값을 입력하고 저장하여 해당 메타데이터 속성을 추가할 수 있습니다.
 
-자산의 메타데이터에 대한 모든 변경 사항은 XMP 데이터의 일부로서 원래 바이너리에 다시 작성됩니다. 이 작업은 AEM 메타데이터 다시 쓰기 작업 과정을 통해 수행됩니다. 기존 속성(예: `dc:title`)에 대한 변경 사항을 덮어쓰고 새로 만든 속성(`cq:tags` 등의 사용자 지정 속성 포함)이 스키마와 함께 추가됩니다.
+자산의 메타데이터에 대한 모든 변경 사항은 XMP 데이터의 일부로서 원래 바이너리에 다시 작성됩니다. 이 작업은 Experience Manager 메타데이터 다시 쓰기 작업 과정을 통해 수행됩니다. 기존 속성(예: `dc:title`)에 대한 변경 사항을 덮어쓰고 새로 만든 속성(`cq:tags` 등의 사용자 지정 속성 포함)이 스키마와 함께 추가됩니다.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -44,9 +44,9 @@ ht-degree: 1%
 
 메타데이터 스키마를 편집하는 방법에 대한 자세한 내용은 [메타데이터 스키마 양식 편집](metadata-schemas.md#edit-metadata-schema-forms)을 참조하십시오.
 
-## AEM 내에서 사용자 지정 네임스페이스 등록 {#registering-a-custom-namespace-within-aem}
+## Experience Manager 내에서 사용자 지정 네임스페이스 등록 {#registering-a-custom-namespace-within-aem}
 
-AEM 내에 고유한 네임스페이스를 추가할 수 있습니다. cq, jcr 및 sling과 같이 사전 정의된 네임스페이스가 있는 것처럼 저장소 메타데이터 및 xml 처리를 위한 네임스페이스를 가질 수 있습니다.
+Experience Manager 내에 고유한 네임스페이스를 추가할 수 있습니다. cq, jcr 및 sling과 같이 사전 정의된 네임스페이스가 있는 것처럼 저장소 메타데이터 및 xml 처리를 위한 네임스페이스를 가질 수 있습니다.
 
 1. 노드 유형 관리 페이지 *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*&#x200B;로 이동합니다.
 1. 페이지 맨 위에서 **[!UICONTROL 네임스페이스]**&#x200B;를 클릭하거나 탭합니다. 네임스페이스 관리 페이지가 창에 표시됩니다.
