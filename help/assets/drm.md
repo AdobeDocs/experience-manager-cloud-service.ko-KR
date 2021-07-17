@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 자산 관리,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 다음 위치에서 자산의 만료 상태를 볼 수 있습니다.
 
-* **카드 보기**:만료된 자산의 경우 카드의 플래그는 만료된 것으로 나타냅니다.
-* **목록 보기**:만료된 자산의 경우  **** 상태 열에는 만료 배너가  **** 표시됩니다.
-* **타임라인**:타임라인에서 자산의 만료 상태를 볼 수 있습니다. 자산을 선택하고 타임라인 을 선택합니다.
-* **참조 레일**:참조 레일에서 자산의 만료 상태를 볼 수도  **** 있습니다. 복합 자산과 참조된 하위 자산, 컬렉션 및 프로젝트 간의 자산 만료 상태 및 관계를 관리합니다.
+* **카드 보기**: 만료된 자산의 경우 카드의 플래그는 만료된 것으로 나타냅니다.
+* **목록 보기**: 만료된 자산의 경우  **** 상태 열에는 만료 배너가  **** 표시됩니다.
+* **타임라인**: 타임라인에서 자산의 만료 상태를 볼 수 있습니다. 자산을 선택하고 타임라인 을 선택합니다.
+* **참조 레일**: 참조 레일에서 자산의 만료 상태를 볼 수도  **** 있습니다. 복합 자산과 참조된 하위 자산, 컬렉션 및 프로젝트 간의 자산 만료 상태 및 관계를 관리합니다.
 
 1. 참조하는 웹 페이지와 복합 자산을 볼 자산으로 이동합니다.
 1. 자산을 선택하고 [!DNL Experience Manager] 로고를 클릭합니다.
@@ -57,13 +57,13 @@ ht-degree: 0%
 1. [!DNL Experience Manager] 구성 관리자를 엽니다.
 1. **[!UICONTROL Adobe CQ DAM 만료 알림]**&#x200B;을 선택합니다. 기본적으로 **[!UICONTROL 시간 기반 스케줄러]**&#x200B;가 선택되어 자산이 만료된 하위 자산인지 여부를 특정 시간에 확인할 작업을 예약합니다. 작업이 완료되면, 하위 자산이 만료된 자산과 참조된 자산이 검색 결과에 만료된 것으로 표시됩니다.
 
-1. 작업을 주기적으로 실행하려면 **[!UICONTROL 시간 기반 스케줄러 규칙]** 필드를 지우고 **[!UICONTROL 기간별 스케줄러]** 필드에서 시간(초)을 수정합니다. 예를 들어 예제 표현식 &#39;0 &amp;ast;amp;ast;?&#39; 00시간 후에 작업을 트리거합니다.
+1. 작업을 주기적으로 실행하려면 **[!UICONTROL 시간 기반 스케줄러 규칙]** 필드를 지우고 **[!UICONTROL 기간별 스케줄러]** 필드에서 시간(초)을 수정합니다. 예를 들어 예제 표현식 &#39;0 &amp;ast; amp;ast; ?&#39; 00시간 후에 작업을 트리거합니다.
 
 <!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+   >Only the asset creator (the person who uploads a particular asset to Experience Manager Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall Experience Manager level.
 -->
 
 1. **[!UICONTROL 이전 알림(초]** 필드)에서 만료와 관련된 알림을 받으려면 자산이 만료되기 전 시간(초)을 지정합니다. 관리자 또는 자산 작성자인 경우, 지정된 시간 후에 자산이 만료된다는 메시지가 자산 만료 전에 메시지를 받게 됩니다.
