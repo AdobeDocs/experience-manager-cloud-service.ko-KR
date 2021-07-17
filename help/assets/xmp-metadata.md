@@ -1,34 +1,34 @@
 ---
 title: XMP 메타데이터
-description: 메타데이터 관리를 위한 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. 이 변수는 메타데이터의 생성, 처리 및 교환을 위한 표준화된 형식으로 AEM에서 사용됩니다.
+description: 메타데이터 관리를 위한 XMP(Extensible Metadata Platform) 메타데이터 표준에 대해 알아봅니다. 이 변수는 Experience Manager에서 메타데이터의 작성, 처리 및 교환을 위한 표준화된 형식으로 사용됩니다.
 contentOwner: AG
 feature: 메타데이터
 role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1012'
 ht-degree: 1%
 
 ---
 
 # XMP 메타데이터 {#xmp-metadata}
 
-XMP(Extensible Metadata Platform)은 모든 메타데이터 관리를 위해 AEM Assets에서 사용하는 메타데이터 표준입니다. XMP은 다양한 애플리케이션을 위한 메타데이터 생성, 처리 및 교환을 위한 표준 형식을 제공합니다.
+XMP(Extensible Metadata Platform)은 모든 메타데이터 관리를 위해 Experience Manager 자산에서 사용하는 메타데이터 표준입니다. XMP은 다양한 애플리케이션을 위한 메타데이터 생성, 처리 및 교환을 위한 표준 형식을 제공합니다.
 
-모든 파일 형식에 포함할 수 있는 범용 메타데이터 인코딩을 제공하는 것 외에도 XMP은 풍부한 [컨텐츠 모델](#xmp-core-concepts) 및 Adobe](#advantages-of-xmp) 및 다른 회사에서 지원하는 [를 제공하므로 AEM Assets과 결합하여 XMP을 사용하는 사용자는 강력한 플랫폼을 기반으로 할 수 있습니다.
+모든 파일 형식에 포함할 수 있는 범용 메타데이터 인코딩을 제공하는 것 외에도 XMP은 풍부한 [컨텐츠 모델](#xmp-core-concepts) 및 Adobe](#advantages-of-xmp) 및 다른 회사에서 지원하는 [를 제공하므로 [!DNL Assets]와 결합하여 XMP의 사용자는 강력한 플랫폼을 사용하여 구축할 수 있습니다.
 
 ## XMP 개요 및 에코시스템 {#xmp-ecosystem}
 
-AEM Assets은 기본적으로 XMP 메타데이터 표준을 지원합니다. XMP은 표준화된 독점 메타데이터를 디지털 자산에 처리하고 저장하는 표준입니다. XMP은 여러 애플리케이션이 메타데이터로 효과적으로 작동할 수 있도록 하는 일반적인 표준으로 설계되었습니다.
+[!DNL Assets] 기본적으로 XMP 메타데이터 표준을 지원합니다. XMP은 표준화된 독점 메타데이터를 디지털 자산에 처리하고 저장하는 표준입니다. XMP은 여러 애플리케이션이 메타데이터로 효과적으로 작동할 수 있도록 하는 일반적인 표준으로 설계되었습니다.
 
-예를 들어, 프로덕션 전문가가 Adobe 애플리케이션 내에서 내장된 XMP 지원을 사용하여 여러 파일 형식에 대한 정보를 전달합니다. AEM Assets 리포지토리는 XMP 메타데이터를 추출하고 사용하여 컨텐츠 라이프사이클을 관리하고 자동화 워크플로우를 만드는 기능을 제공합니다.
+예를 들어, 프로덕션 전문가가 Adobe 애플리케이션 내에서 내장된 XMP 지원을 사용하여 여러 파일 형식에 대한 정보를 전달합니다. [!DNL Assets] 저장소는 XMP 메타데이터를 추출하여 사용하여 컨텐츠 주기를 관리하고 자동화 워크플로우를 만드는 기능을 제공합니다.
 
 XMP은 데이터 모델, 스토리지 모델 및 스키마를 제공하여 메타데이터 정의, 생성 및 처리 방법을 표준화합니다. 이러한 모든 개념은 이 섹션에서 다룹니다.
 
 EXIF, ID3 또는 Microsoft Office의 모든 레거시 메타데이터는 자동으로 XMP으로 변환되며, 제품 카탈로그와 같은 고객별 메타데이터 스키마를 지원하도록 확장할 수 있습니다.
 
-XMP의 메타데이터는 속성 세트로 구성됩니다. 이러한 속성은 항상 리소스라고 하는 특정 엔티티와 연결되어 있습니다.즉, 속성은 리소스에 대한 &quot;정보&quot;입니다. XMP의 경우 리소스는 항상 자산입니다.
+XMP의 메타데이터는 속성 세트로 구성됩니다. 이러한 속성은 항상 리소스라고 하는 특정 엔티티와 연결되어 있습니다. 즉, 속성은 리소스에 대한 &quot;정보&quot;입니다. XMP의 경우 리소스는 항상 자산입니다.
 
 XMP은 정의된 메타데이터 항목 세트와 함께 사용할 수 있는 [메타데이터](https://en.wikipedia.org/wiki/Metadata) 모델을 정의합니다. 또한 XMP은 최종 이미지에 결합하기 위해 사진 편집 단계(예: [자르기](https://en.wikipedia.org/wiki/Cropping_%28image%29) 또는 색상 조정)를 통해 촬영되거나, 스캔되거나, 텍스트로 작성된 리소스를 여러 처리 단계를 거칠 때 리소스의 내역을 기록하는 데 유용한 기본 속성을 위해 특정 [스키마](https://en.wikipedia.org/wiki/XML_schema)를 정의합니다. [](https://en.wikipedia.org/wiki/Image_scanner) XMP에서는 각 소프트웨어 프로그램 또는 장치가 디지털 리소스에 자체 정보를 추가할 수 있도록 허용하며 이를 최종 디지털 파일에 유지할 수 있습니다.
 
@@ -62,10 +62,10 @@ XMP 스키마는
 
 XMP에는 하나 이상의 스키마의 속성이 포함될 수 있습니다. 예를 들어, 여러 Adobe 애플리케이션에서 사용하는 일반적인 하위 집합에는 다음이 포함될 수 있습니다.
 
-* 더블린 코어 스키마:`dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
-* XMP 기본 스키마:`xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
-* XMP 권한 관리 스키마:`xmpRights:WebStatement`, `xmpRights:Marked`
-* XMP Media 관리 스키마:`xmpMM:DocumentID`
+* 더블린 코어 스키마: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
+* XMP 기본 스키마: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
+* XMP 권한 관리 스키마: `xmpRights:WebStatement`, `xmpRights:Marked`
+* XMP Media 관리 스키마: `xmpMM:DocumentID`
 
 **언어 대체 요소**
 
@@ -125,7 +125,7 @@ To let the XMP write-back feature propagate metadata changes to select rendition
 
 For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
 
-1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. Tap/click the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
 1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
 1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
 1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
