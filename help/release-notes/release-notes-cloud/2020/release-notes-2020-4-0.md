@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.4.0용 릴리스 노트
 description: Experience Manager 2020.4.0용 릴리스 노트
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 95%
 >* [Adobe Asset Link에 대하여](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Brand Portal 구성](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Asset Link를 사용하도록 Experience Manager 구성](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [자산 마이크로 서비스를 사용하여 Experience Manager에서 워크플로우 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [자산 마이크로서비스를 사용하여 Experience Manager에서 워크플로우 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Cloud Manager의 새로운 기능 {#whats-new-cloud-manager}
