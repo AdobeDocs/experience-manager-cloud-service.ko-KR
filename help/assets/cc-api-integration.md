@@ -4,9 +4,9 @@ description: Creative Cloud 통합을 사용하여 자산의 변형 생성
 contentOwner: AG
 feature: 업로드,자산 처리,게시,Asset compute 마이크로서비스,워크플로우
 role: User,Admin
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 컨텐츠 자동화 추가 기능은 [!DNL Adobe Experience Manager Assets as a Cloud Service] 및 [!DNL Adobe Creative Cloud] API를 통합하여 자산을 규모에 맞게 크리에이티브 처리합니다. [!DNL Experience Manager] 는 클라우드 기반  [자산 ](/help/assets/asset-microservices-overview.md) 마이크로 서비스를 사용하여  [!DNL Adobe Creative Cloud] 기능을 사용하고 자산 작성 및 미디어 처리를 자동화합니다.
 
-[!DNL Adobe Photoshop] 및 [!DNL Adobe Lightroom]에서 자산을 편집하려면 [!DNL Experience Manager Assets]에서 자산을 다운로드하여 편집하고 다시 업로드할 필요가 없습니다. [!DNL Experience Manager]에서 처리 프로필을 만들고 구성하고, 프로필을 폴더에 적용하고, 자산을 폴더에 업로드하기만 하면 됩니다. 업로드된 자산은 처리 프로필을 기반으로 다시 처리되며, 이러한 자산의 변형을 받습니다. 일관되고 간편하게 일괄 처리를 수행할 수 있으므로 수작업을 줄일 수 있고 컨텐츠 속도를 높일 수 있으므로 탁월한 크리에이티브 기술이 필요하지 않습니다. 또한 개발자 및 파트너는 이러한 API에 직접 액세스하여 자산 마이크로서비스를 확장하고 사용자 지정 논리를 포함할 수 있습니다.
+[!DNL Adobe Photoshop] 및 [!DNL Adobe Lightroom]에서 자산을 편집하려면 [!DNL Experience Manager Assets]에서 자산을 다운로드하여 편집하고 다시 업로드할 필요가 없습니다. [!DNL Experience Manager]에서 처리 프로필을 만들고 구성하고, 프로필을 폴더에 적용하고, 자산을 폴더에 업로드합니다. 업로드된 자산은 처리 프로필을 기반으로 다시 처리되며, 이러한 자산의 변형을 받습니다. 일관되고 간편하게 일괄 처리를 수행할 수 있으므로 수작업을 줄일 수 있고 컨텐츠 속도를 높일 수 있으므로 탁월한 크리에이티브 기술이 필요하지 않습니다. 또한 개발자와 파트너는 이러한 API에 직접 액세스하여 자산 마이크로서비스를 확장하고 사용자 지정 논리를 포함할 수 있습니다.
 
 사용자는 처리 프로필을 만들어 자산에서 다음과 같은 크리에이티브 작업을 자동화할 수 있습니다.\
 ![자산에서 Adobe Photoshop 및 Adobe Lightroom 작업 자동화](assets/content-automation.png)
