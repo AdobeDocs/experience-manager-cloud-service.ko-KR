@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 자산 관리,공동 작업,자산 분배
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 2%
 <!--
 ## Share assets as a link {#sharelink}
 
-To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
+To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to Experience Manager Assets.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
     * author
     * publish
 
-   For the local and author properties, provide the URL for the local and author instance respectively. Both local and author properties have the same value if you run a single AEM author instance. For publish, provide the URL for the publish instance.
+   For the local and author properties, provide the URL for the local and author instance respectively. Both local and author properties have the same value if you run a single Experience Manager author instance. For publish, provide the URL for the publish instance.
 
 1. In the email address box of the **[!UICONTROL Link Sharing]** dialog, type the email ID of the user you want to share the link with. You can also share the link with multiple users.
 
@@ -98,7 +98,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 
    >[!NOTE]
    >
-   >AEM supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
+   >Experience Manager supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
 
 1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
 1. To view the assets you shared as links, go to the Assets user interface and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
@@ -116,9 +116,9 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 마케터와 사업 부문 사용자는
 
-* **Experience Manager 데스크탑 앱**:이 앱은 Windows와 Mac에서 작동합니다. [데스크탑 앱 개요](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)를 참조하십시오. 권한이 있는 데스크톱 사용자가 공유 자산에 쉽게 액세스할 수 있는 방법을 알아보려면 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오. 데스크탑 사용자는 새 이미지를 업로드하여 자산을 만들고 AEM 사용자인 사용자와 다시 공유할 수 있습니다. 데스크탑 앱을 사용하여 자산 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)를 참조하십시오.[
+* **Experience Manager 데스크탑 앱**: 이 앱은 Windows와 Mac에서 작동합니다. [데스크탑 앱 개요](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)를 참조하십시오. 권한이 있는 데스크톱 사용자가 공유 자산에 쉽게 액세스할 수 있는 방법을 알아보려면 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오. 데스크탑 사용자는 새 이미지를 업로드하여 자산을 만들고 Experience Manager 사용자인 해당 사용자와 다시 공유할 수 있습니다. 데스크탑 앱을 사용하여 자산 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)를 참조하십시오.[
 
-* **Adobe 자산 링크**:크리에이티브 전문가가  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator]및  [!DNL Adobe Photoshop] 내에서 직접 자산을 검색하고 사용할 수 있습니다.
+* **Adobe 자산 링크**: 크리에이티브 전문가가  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator]및  [!DNL Adobe Photoshop] 내에서 직접 자산을 검색하고 사용할 수 있습니다.
 
 ## 자산 공유 구성 {#configure-sharing}
 
@@ -143,7 +143,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 Before you can share assets as links, configure the email service.
 
-1. Click or tap the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
 1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -158,9 +158,9 @@ Before you can share assets as links, configure the email service.
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 ### Configure maximum data size {#maxdatasize}
 
-When you download assets from the link shared using the Link Sharing feature, AEM compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
+When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
 
-1. Click/Tap the AEM logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. Click/Tap the Experience Manager logo and then go to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 1. Save the changes.
@@ -185,12 +185,12 @@ Adobe 자산 링크를 사용하면 컨텐츠 작성 프로세스에서 광고 �
 ## 우수 사례 및 문제 해결 {#bestpractices}
 
 * 이름에 공백이 포함된 자산 폴더 또는 컬렉션은 공유되지 않을 수 있습니다.
-* 사용자가 공유 자산을 다운로드할 수 없는 경우 AEM 관리자에게 [다운로드 제한](#maxdatasize)이 무엇인지 문의하십시오.
+* 사용자가 공유 자산을 다운로드할 수 없는 경우 Experience Manager 관리자에게 [다운로드 제한](#maxdatasize)이 무엇인지 문의하십시오.
 * 사용자가 링크 공유를 사용하여 공유되는 비디오를 미리 보려면 비디오에 저장소의 비디오 노드에서 사용할 수 있는 정적 비디오 표현물이 있어야 합니다. `/jcr:content/renditions` 미리 보기는 [!DNL Dynamic Media] 표현물의 가용성에 따라 달라지지 않습니다.
 * 링크 공유를 통해 비디오 자산을 다운로드할 때 [!DNL Dynamic Media] 표현물은 다운로드한 보관소에 포함되지 않습니다.
 
 <!--
-* If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
+* If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your Experience Manager administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
