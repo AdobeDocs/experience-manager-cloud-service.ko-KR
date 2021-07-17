@@ -4,7 +4,7 @@ description: Creative Cloud 통합을 사용하여 자산의 변형 생성
 contentOwner: AG
 feature: 업로드,자산 처리,게시,Asset compute 마이크로서비스,워크플로우
 role: User,Admin
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: f21f8bf7975fd4e82785a4c368cf4956096608d4
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,8 @@ ht-degree: 0%
 
 1. **[!UICONTROL Creative]** 탭을 선택하고 출력 폴더를 지정하고 **[!UICONTROL 새로 추가]**&#x200B;를 선택하여 크리에이티브 구성을 추가합니다.
 
-1. **[!UICONTROL 표현물 이름]**(또는 출력 이름), **[!UICONTROL 확장]**(또는 파일 유형)을 제공하고, **[!UICONTROL 품질]**(또는 출력 매개 변수)을 선택하고, **[!UICONTROL 포함]** 및 **[!UICONTROL 제외]** MIME 유형 목록(또는 입력 자산 필터)을 선택한 다음 필요한 크리에이티브 작업을 선택합니다.
+1. **[!UICONTROL 표현물 이름]**(또는 출력 이름), **[!UICONTROL 확장]**(또는 파일 유형)을 제공하고, **[!UICONTROL 품질]**(또는 출력 매개 변수)을 선택하고, **[!UICONTROL 포함]** 및 **[!UICONTROL 제외]** MIME 유형 목록(또는 입력 자산 필터)을 선택한 다음 필요한 크리에이티브 작업을 선택합니다.<br/>
+
    ![처리 프로필의 크리에이티브 탭](assets/creative-processing-profile.png)
 
 1. 일부 작업에는 추가 매개 변수(자산)가 필요합니다. 필요한 경우 이러한 추가 매개 변수에 대한 값을 제공합니다.
