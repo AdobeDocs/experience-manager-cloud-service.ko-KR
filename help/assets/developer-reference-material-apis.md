@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,자산 HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 2%
 [!DNL Experience Manager]에서 [!DNL Cloud Service] HTTP API를 사용하여 자산을 클라우드 저장소에 직접 업로드할 수 있습니다. 이진 파일을 업로드하는 단계는 다음과 같습니다. [!DNL Experience Manager] JVM이 아닌 외부 애플리케이션에서 이러한 단계를 실행합니다.
 
 1. [HTTP 요청을 제출합니다](#initiate-upload). 새 바이너리를 업로드하려면 [!DNL Experience Manage]에 대한 배포를 알려 줍니다.
-1. [상기 초기화 요청](#upload-binary) 에서 제공하는 하나 이상의 URI에 상기 바이너리의 컨텐츠를 POST.
+1. [상기 초기화 요청](#upload-binary) 에서 제공하는 하나 이상의 URI에 상기 바이너리의 컨텐츠를 PUT.
 1. [HTTP 요청](#complete-upload) 을 제출하여 바이너리의 콘텐츠가 성공적으로 업로드되었음을 서버에 알립니다.
 
 ![직접 이진 업로드 프로토콜 개요](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ ht-degree: 2%
 }
 ```
 
-* `completeURI` (문자열): 바이너리의 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 값은 `"https://author.acme.com/content/dam.completeUpload.json"` 또는 `"/content/dam.completeUpload.json"`완료 업로드](#complete-upload)를 참조하십시오.[
+* `completeURI` (문자열): 바이너리의 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 값은 `"https://[aem_server]:[port]/content/dam.completeUpload.json"` 또는 `"/content/dam.completeUpload.json"`완료 업로드](#complete-upload)를 참조하십시오.[
 * `folderPath` (문자열): 바이너리가 업로드된 폴더의 전체 경로입니다.
 * `(files)` (배열): 시작 요청에서 제공된 이진 정보 목록의 길이 및 순서와 일치하는 요소의 목록입니다.
 * `fileName` (문자열): 시작 요청에서 제공된 해당 바이너리의 이름입니다. 이 값은 전체 요청에 포함해야 합니다.
@@ -125,7 +125,7 @@ ht-degree: 2%
 
 ### 이진 업로드 {#upload-binary}
 
-업로드 시작 출력에는 하나 이상의 업로드 URI 값이 포함됩니다. 두 개 이상의 URI가 제공되면 클라이언트는 바이너리를 부품으로 분할하고 각 부품의 POST 요청을 순서대로 각 URI에 요청합니다. 모든 URI를 사용합니다. 각 부품의 크기가 시작 응답에 지정된 최소 및 최대 크기 내에 있는지 확인합니다. CDN 에지 노드는 요청된 바이너리 업로드 속도를 높이는 데 도움이 됩니다.
+업로드 시작 출력에는 하나 이상의 업로드 URI 값이 포함됩니다. 두 개 이상의 URI가 제공되면 클라이언트는 바이너리를 부품으로 분할하고 각 부품의 PUT 요청을 순서대로 각 URI에 수행합니다. 모든 URI를 사용합니다. 각 부품의 크기가 시작 응답에 지정된 최소 및 최대 크기 내에 있는지 확인합니다. CDN 에지 노드는 요청된 바이너리 업로드 속도를 높이는 데 도움이 됩니다.
 
 API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는 것이 이를 수행하는 가능한 방법입니다. 예를 들어 바이너리의 총 크기는 20,000바이트이고 업로드 URI 수는 2라고 가정합니다. 그런 다음 다음 단계를 수행합니다.
 
@@ -154,9 +154,7 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 
 시작 프로세스처럼 전체 요청 데이터에는 두 개 이상의 파일에 대한 정보가 포함될 수 있습니다.
 
-파일에 대한 전체 URL이 호출될 때까지 바이너리를 업로드하는 프로세스가 수행되지 않습니다. 업로드 프로세스가 완료되면 자산이 처리됩니다. 자산의 이진 파일이 완전히 업로드되었지만 업로드 프로세스가 완료되지 않은 경우에도 처리가 시작되지 않습니다.
-
-성공하면 서버가 `200` 상태 코드로 응답합니다.
+파일에 대한 전체 URL이 호출될 때까지 바이너리를 업로드하는 프로세스가 수행되지 않습니다. 업로드 프로세스가 완료되면 자산이 처리됩니다. 자산의 이진 파일이 완전히 업로드되었지만 업로드 프로세스가 완료되지 않은 경우에도 처리가 시작되지 않습니다. 업로드가 성공하면 서버가 `200` 상태 코드로 응답합니다.
 
 ### 오픈 소스 업로드 라이브러리 {#open-source-upload-library}
 
