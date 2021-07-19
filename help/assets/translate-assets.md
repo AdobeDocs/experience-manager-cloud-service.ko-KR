@@ -5,20 +5,20 @@ contentOwner: AG
 feature: 자산 관리,번역
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '2590'
 ht-degree: 3%
 
 ---
 
 # 다국어 자산 {#multilingual-assets}
 
-다국어 자산은 바이너리, 메타데이터 및 태그가 여러 언어로 있는 자산을 의미합니다. 일반적으로 자산에 대한 이진, 메타데이터 및 태그는 한 언어로 존재하며 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 변환됩니다. Adobe Experience Manager Assets를 사용하면 자산(바이너리, 메타데이터 및 태그 포함)에 대한 번역 워크플로우를 자동화하여 다국어 프로젝트에서 사용할 다른 언어로 자산을 생성할 수 있습니다.
+다국어 자산은 바이너리, 메타데이터 및 태그가 여러 언어로 있는 자산을 의미합니다. 일반적으로 자산에 대한 이진, 메타데이터 및 태그는 한 언어로 존재하며 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 변환됩니다. AEM(Adobe Experience Manager) 자산을 사용하면 자산(바이너리, 메타데이터 및 태그 포함)에 대한 번역 워크플로우를 자동화하여 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 자산을 생성할 수 있습니다.
 
-번역 워크플로우를 자동화하기 위해 번역 서비스 공급자를 Experience Manager과 통합하고 자산을 여러 언어로 번역할 프로젝트를 만듭니다. Experience Manager은 인간 및 기계 번역 워크플로우를 지원합니다.
+번역 워크플로우를 자동화하기 위해 번역 서비스 공급자를 AEM과 통합하고 자산을 여러 언어로 번역할 프로젝트를 만듭니다. AEM은 사람 및 기계 번역 워크플로우를 지원합니다.
 
-인간 번역: 번역된 자산이 반환되고 Experience Manager으로 가져옵니다. 번역 공급자가 Experience Manager과 통합되면 Experience Manager과 번역 공급자 간에 자산이 자동으로 전송됩니다.
+인간 번역: 번역된 자산이 반환되고 AEM으로 가져옵니다. 번역 공급자가 AEM과 통합되면 AEM과 번역 공급자 간에 자산이 자동으로 전송됩니다.
 
 기계 번역: 기계 번역 서비스는 자산의 메타데이터와 태그를 즉시 변환합니다.
 
@@ -36,13 +36,13 @@ One of these articles is a copy of [Preparing Content for Translation](https://e
 <!-- 
 Translating assets includes the following:
 
-1. [Connecting Experience Manager with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
 1. [Preparing assets for translation](prepare-assets-for-translation.md)
 1. [Applying translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with Experience Manager, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 다국어 자산은 바이너리, 메타데이터 및 태그가 여러 언어로 있는 자산을 의미합니다. 일반적으로 자산에 대한 이진, 메타데이터 및 태그는 한 언어로 존재하며 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 변환됩니다.
 
-Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며 이 폴더는 각 폴더에 다른 언어로 된 자산을 포함합니다.
+Adobe Experience Manager(AEM) Assets에서 다국어 자산은 폴더에 포함되며 이 폴더에는 다른 언어로 된 자산이 포함됩니다.
 
 각 언어 폴더를 언어 사본이라고 합니다. 언어 복사본으로 알려진 언어 복사본의 루트 폴더는 언어 복사본에서 컨텐츠의 언어를 식별합니다. 예를 들어 `/content/dam/it`은 이탈리아어 언어 사본의 이탈리아어 루트입니다. 소스 자산의 번역을 수행할 때 올바른 언어를 지정하도록 언어 사본은 [올바르게 구성된 언어 루트](#create-a-language-root)를 사용해야 합니다.
 
@@ -89,7 +89,7 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
 
 ### 언어 루트 보기 {#view-language-roots}
 
-터치에 적합한 UI는 [!DNL Assets] 내에서 작성된 언어 루트 목록을 표시하는 참조 패널을 제공합니다.
+터치에 적합한 UI는 AEM Assets 내에서 만들어진 언어 루트 목록을 표시하는 참조 패널을 제공합니다.
 
 1. Assets 콘솔에서 언어 사본을 만들 기본 언어를 선택합니다.
 1. GlobalNav 아이콘을 클릭하거나 탭하고 **[!UICONTROL 참조]**&#x200B;를 선택하여 참조 창을 엽니다.
@@ -169,9 +169,9 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
 
 ### 임시 언어 사본 만들기 {#creating-temporary-language-copies}
 
-번역 워크플로우를 실행하여 편집된 원래 자산의 버전으로 언어 사본을 업데이트하면 번역된 자산을 승인할 때까지 기존 언어 사본이 유지됩니다. [!DNL Assets] 새로 번역된 자산을 임시 위치에 저장하고, 명시적으로 자산을 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않은 상태로 유지됩니다.
+번역 워크플로우를 실행하여 편집된 원래 자산의 버전으로 언어 사본을 업데이트하면 번역된 자산을 승인할 때까지 기존 언어 사본이 유지됩니다. AEM Assets은 새로 번역된 자산을 임시 위치에 저장하고, 명시적으로 자산을 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않은 상태로 유지됩니다.
 
-1. **[!UICONTROL 언어 사본]**&#x200B;에서 이미 언어 사본을 만든 소스 루트 폴더를 클릭/탭한 다음, **[!UICONTROL 자산]**&#x200B;에 표시 를 클릭/탭하여 [!DNL Assets]에서 폴더를 엽니다.
+1. 이미 언어 사본을 만든 **[!UICONTROL 언어 사본]** 아래의 소스 루트 폴더를 클릭/탭한 다음, **[!UICONTROL 자산에 표시]**&#x200B;를 클릭/탭하여 AEM Assets에서 폴더를 엽니다.
 1. Assets UI에서 이미 번역한 자산을 선택하고 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭/탭하여 편집 모드에서 자산을 엽니다.
 1. 자산을 편집한 다음 변경 사항을 저장합니다.
 1. [기존 번역 프로젝트에 추가](#add-to-existing-translation-project) 절차의 2-14단계를 수행하여 언어 사본을 업데이트합니다.
@@ -234,7 +234,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 ## 폴더에 번역 클라우드 서비스 적용 {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager을 사용하면 원하는 번역 공급자로부터 클라우드 기반 번역 서비스를 활용하여 요구 사항에 따라 자산을 번역할 수 있습니다.
+Adobe Experience Manager(AEM)을 사용하면 원하는 번역 공급자로부터 클라우드 기반 번역 서비스를 활용하여 요구 사항에 따라 자산을 번역할 수 있습니다.
 
 번역 워크플로우 중에 활용할 수 있도록 번역 클라우드 서비스를 자산 폴더에 직접 적용할 수 있습니다.
 
@@ -263,7 +263,7 @@ Adobe Experience Manager을 사용하면 원하는 번역 공급자로부터 클
 번역 워크플로우에서 사용할 번역 서비스의 사용자 지정 커넥터를 적용하려면 해당 커넥터를 사용하십시오. 사용자 지정 커넥터를 적용하려면 먼저 패키지 관리자에서 커넥터를 설치하십시오. 그런 다음 Cloud Services 콘솔에서 커넥터를 구성합니다. 커넥터를 구성한 후에는 [번역 서비스 적용](#applying-the-translation-services)에 설명된 Cloud Services 탭의 커넥터 목록에서 커넥터를 사용할 수 있습니다. 사용자 지정 커넥터를 적용하고 번역 워크플로우를 실행한 후 번역 프로젝트의 **[!UICONTROL 번역 요약]** 타일에는 헤드 **[!UICONTROL 공급자]** 및 **[!UICONTROL 메서드]**&#x200B;에 커넥터 세부 정보가 표시됩니다.
 
 1. 패키지 관리자에서 커넥터를 설치합니다.
-1. Experience Manager 로고를 클릭/탭하고 **[!UICONTROL 도구 > 배포 > Cloud Services]**&#x200B;로 이동합니다.
+1. AEM 로고를 클릭/탭하고 **[!UICONTROL 도구 > 배포 > Cloud Services]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Cloud Services]** 페이지의 **[!UICONTROL 타사 서비스]** 아래에 설치한 커넥터를 찾습니다.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
