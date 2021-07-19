@@ -5,7 +5,7 @@ contentOwner: AG
 feature: asset compute 마이크로서비스,워크플로우,릴리스 정보,자산 처리
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 2%
@@ -43,7 +43,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * 웹 브라우저나 Adobe Asset Link와 같은 클라이언트는 업로드 요청을 [!DNL Experience Manager]에 보내고 바이너리를 바이너리 클라우드 저장소로 직접 업로드를 시작합니다.
 * 직접 이진 업로드가 완료되면 클라이언트가 [!DNL Experience Manager]에 알립니다.
 * [!DNL Experience Manager] 자산 마이크로서비스에 처리 요청을 보냅니다. 요청 콘텐츠는 생성할 변환을 지정하는 [!DNL Experience Manager]의 처리 프로필 구성에 따라 달라집니다.
-* Assets 마이크로 서비스 백 엔드가 요청을 수신하고, 요청을 기반으로 하나 이상의 마이크로 서비스에 전달합니다. 각 마이크로 서비스는 이진 클라우드 스토어에서 직접 원본 바이너리에 액세스합니다.
+* 자산 마이크로서비스 백 엔드가 요청을 수신하고, 요청을 기반으로 하나 이상의 마이크로 서비스에 전달합니다. 각 마이크로 서비스는 이진 클라우드 스토어에서 직접 원본 바이너리에 액세스합니다.
 * 표현물과 같은 처리 결과는 이진 클라우드 저장소에 저장됩니다.
 * Experience Manager은 생성된 바이너리(표현물)에 대한 직접 포인터와 함께 처리가 완료되었다는 알림을 받습니다. 생성된 표현물은 업로드된 자산에 대해 [!DNL Experience Manager]에서 사용할 수 있습니다.
 
