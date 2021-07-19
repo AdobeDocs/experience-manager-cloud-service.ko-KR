@@ -2,9 +2,9 @@
 title: 소개 - SSL 인증서 관리
 description: 소개 - SSL 인증서 관리
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: d457d76d56a729a2e6eb729ad91a6e7877fd6a0c
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,6 @@ Cloud Manager는 Cloud Manager UI를 통해 SSL 인증서를 설치하는 셀프
 * AEM as a Cloud Service은 OV(조직 유효성 검사) 또는 EV(확장 유효성 검사) 인증서만 허용합니다. DV(도메인 유효성 검사) 인증서가 허용되지 않습니다. 또한 모든 인증서는 2048비트 RSA 개인 키가 일치하는 신뢰할 수 있는 CA(인증 기관)의 X.509 TLS 인증서여야 합니다.
 
 * AEM as a Cloud Service은 도메인에 대한 와일드카드 SSL 인증서를 허용합니다.
-
-* 언제든지, Cloud Manager에서는 인증서가 만료된 경우에도 프로그램 전체에서 하나 이상의 환경과 연결할 수 있는 최대 20개의 SSL 인증서를 허용합니다. 그러나 Cloud Manager UI에서는 이 제한을 사용하여 프로그램에 최대 50개의 SSL 인증서를 설치할 수 있습니다. 일반적으로 인증서는 여러 도메인(최대 100개의 SAN)을 포함할 수 있으므로 동일한 인증서에 여러 도메인을 그룹화하여 이 제한을 유지하는 것을 고려해 보십시오.
 
 Cloud Manager는 다음과 같은 고객 SSL 인증서 요구 사항을 지원합니다.
 
