@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: 6176665d17432999409baca46c46503d20f8f06b
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 43%
+source-wordcount: '885'
+ht-degree: 44%
 
 ---
 
@@ -180,15 +180,11 @@ ht-degree: 43%
    + [AEM as a Cloud Service에 배포](deploying/overview.md)
    + [AEM 버전 업데이트](deploying/aem-version-updates.md)
    + [AEM as a Cloud Service에 대한 OSGi 구성](deploying/configuring-osgi.md)
-   + [OSGi 구성 API](deploying/osgi-configuration-api.md)
 + 작성 계층 {#author-tier}
    + [작성자 계층 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
 + 컨텐츠 전달 개요 {#content-delivery}
    + [컨텐츠 전달 흐름](dispatcher/overview.md)
    + [클라우드의 디스패처](dispatcher/disp-overview.md)
-   + [Dispatcher 도구를 사용하여 유효성 검사 및 디버깅](dispatcher/validation-debug.md)
-   + [Dispatcher 구성을 AMS에서 AEM as a Cloud Service으로 마이그레이션](dispatcher/ams-aem.md)
-   + [Dispatcher 도구를 사용하여 유효성 검사 및 디버깅 기존](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service에서 CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service에서 캐싱](dispatcher/caching.md)
