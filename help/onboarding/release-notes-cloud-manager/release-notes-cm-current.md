@@ -1,61 +1,56 @@
 ---
-title: AEM as a Cloud Service 릴리스 2021.5.0의 Cloud Manager 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2021.5.0의 Cloud Manager 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2021.7.0의 Cloud Manager 릴리스 노트
+description: AEM as a Cloud Service 릴리스 2021.7.0의 Cloud Manager 릴리스 노트
 feature: 릴리스 정보
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 3%
+source-wordcount: '349'
+ht-degree: 4%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2021.6.0 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2021.7.0 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
 >Adobe Experience Manager as a Cloud Service에 대한 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 클릭하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6월 10일입니다.
-다음 릴리스는 2021년 7월 15일에 예정되어 있습니다.
+AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 날짜는 2021년 7월 15일입니다.
+다음 릴리스는 2021년 8월 12일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new}
 
-* 미리 보기 서비스는 모든 프로그램에 롤링 기반으로 배포됩니다. 미리 보기 서비스에 대해 프로그램이 활성화되면 고객에게 제품 내 알림을 보냅니다. 자세한 내용은 [미리 보기 서비스 액세스](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)를 참조하십시오.
+* 고객은 이제 Cloud Manager 빌드 프로세스에 Azul 8 및 11개의 JDK를 사용할 수 있으며 이러한 JDK 중 하나를 도구 체인 호환 Maven 플러그인 *또는 전체 Maven 프로세스 실행에 사용하도록 선택할 수 있습니다.*
 
-* 이제 빌드 단계 중에 다운로드한 Maven 종속성이 파이프라인 실행 간에 캐시됩니다. 이 기능은 다음 몇 주 동안 고객에 대해 활성화됩니다.
+* 이제 아웃바운드 송신 IP가 빌드 단계 로그 파일에 기록됩니다.
 
-* 이제 프로그램 편집 대화 상자를 통해 프로그램 이름을 편집할 수 있습니다.
+* 이전 버전의 AEM을 실행하는 단계 및 프로덕션 환경에서는 **Update Available** 상태를 보고합니다.
 
-* 프로젝트를 만드는 동안 및 git 워크플로우 관리를 통한 기본 푸시 명령에 사용된 기본 분기 이름이 `main`(으)로 변경되었습니다.
+* 지원되는 최대 SSL 인증서는 프로그램당 20개로 증가했습니다.
 
-* UI에서 프로그램 편집 환경을 새로 고쳤습니다.
+* 구성할 수 있는 최대 도메인 수가 환경당 500개로 늘어났습니다.
 
-* `/oak:index` 노드를 변경할 수 없는 것으로 분류하도록 품질 규칙 `ImmutableMutableMixCheck`이 업데이트되었습니다.
+* **Git** 관리 단추가 **Access Git Info**&#x200B;로 검색되었으며 대화 상자가 시각적으로 새로 고침되었습니다.
 
-* 품질 규칙 `CQBP-84` 및 `CQBP-84--dependencies`이(가) 단일 규칙으로 통합되었습니다. 이 통합의 일부로, 종속성을 스캔하면 AEM 런타임으로 배포되는 타사 종속성의 문제를 보다 정확하게 식별할 수 있습니다.
-
-* 혼동을 방지하기 위해 환경 세부 사항 페이지의 AEM 게시 및 Dispatcher 세그먼트 행이 통합되었습니다.
-
-   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
-
-* `damAssetLucene` 인덱스 구조의 유효성을 확인하기 위해 새 코드 품질 규칙이 추가되었습니다. 자세한 내용은 [사용자 지정 DAM Asset Lucene Oak 색인](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)을 참조하십시오.
-
-* 이제 환경 세부 사항 페이지에 게시 및 미리 보기 서비스의 여러 도메인 이름이 표시됩니다(해당하는 경우). 자세한 내용은 [환경 세부 정보](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 를 참조하십시오.
+* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 28로 업데이트되었습니다.
 
 ### 버그 수정 {#bug-fixes}
 
-* 루트 요소 이름을 올바르게 구문 분석한 후 새 행을 포함하는 JCR 노드 정의가 있습니다.
+* 경우에 따라 IP 허용 목록을 환경에 바인딩할 때 미리 보기 옵션을 사용할 수 없었습니다.
 
-* 목록 저장소 API는 삭제된 저장소를 필터링하지 않습니다.
+* 존재하지 않는 실행을 위한 실행 세부 사항 페이지로 수동으로 탐색해도 오류가 표시되지 않고 끝없이 로드되는 화면만 표시됩니다.
 
-* 예약 단계에 잘못된 값을 제공한 경우 잘못된 오류 메시지가 표시되었습니다.
+* 최대 SSL 인증서 수에 도달했을 때 표시되는 오류 메시지가 표시되지 않습니다.
 
-* 구성이 배포되지 않은 경우에도 IP 허용 목록 옆에 녹색 *활성* 상태가 표시될 수 있습니다.
+* 경우에 따라 **개요** 페이지의 파이프라인 카드에 표시된 릴리스 버전에서 불일치가 발생할 수 있습니다.
 
-* 일부 프로그램 편집 시퀀스는 프로덕션 파이프라인을 만들거나 편집할 수 없게 될 수 있습니다.
+* 프로그램 추가 마법사에서 생성 후 이름을 변경할 수 없다고 잘못 명시했습니다.
 
-* 일부 프로그램 편집 시퀀스는 **개요** 페이지에 프로그램 설정을 다시 실행하기 위한 잘못된 메시지가 표시될 수 있습니다.
+### 알려진 문제 {#known-issues}
+
+Azul JDK를 사용하도록 전환하는 고객은 Azul JDK에 오류가 없는 모든 기존 애플리케이션이 컴파일되는 것은 아니라는 것을 알고 있어야 합니다. 전환하기 전에 로컬로 테스트하는 것이 좋습니다.
+
