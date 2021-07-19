@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] �
 feature: 자산 관리
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '299'
 ht-degree: 31%
 
 ---
@@ -33,8 +33,8 @@ ht-degree: 31%
 | [보안 사용 안내서](/help/security/home.md) | [!DNL Experience Manager] as a [!DNL Cloud Service]에 대한 중요한 보안 항목에 대해 알아봅니다. |
 | [온보딩](/help/onboarding/home.md) | [!DNL Experience Manager] 을 [!DNL Cloud Service](으)로 시작하여 중요한 데이터에 액세스하고 데이터를 보호합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | [!DNL Experience Manager Sites] 을 [!DNL Cloud Service](으)로 작성하고 관리하는 방법을 이해합니다. |
-| [구현 사용 안내서](/help/implementing/home.md) | 이러한 개발 및 배포 항목을 탐색하여 AEM의 강력한 기능을 사용하여 경험을 만들고 사용자 지정하는 방법을 이해합니다. |
-| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 헤드리스 기능을 통해 안내식 여정을 탐색하여 첫 번째 헤드리스 프로젝트를 준비할 수 있습니다. |
+| [구현 사용 안내서](/help/implementing/home.md) | 이러한 개발 및 배포 항목을 탐색하여 Experience Manager의 강력한 기능을 사용하여 경험을 만들고 사용자 지정하는 방법을 이해합니다. |
+| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | 첫 번째 헤드리스 프로젝트를 준비할 수 있도록 Experience Manager의 강력하고 유연한 헤드리스 기능을 통해 안내식 여정을 살펴보십시오. |
 | [다음 [!DNL Experience Manager] 으로 이동 [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | [!DNL Experience Manager] 로의 전환 여정을 [!DNL Cloud Service](으)로 이해합니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | 커넥터를 [!DNL Experience Manager]에 [!DNL Cloud Service](으)로 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 [!DNL Cloud Service]로서 [!DNL Experience Manager]의 백엔드 작업에 대해 알아봅니다. |
