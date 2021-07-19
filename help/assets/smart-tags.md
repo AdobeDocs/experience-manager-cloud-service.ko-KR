@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 스마트 태그,태깅
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2346'
+source-wordcount: '2350'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 자연어 어휘와 비교하여 비즈니스 분류 체계를 기반으로 한 태깅은 자산을 회사의 비즈니스에 맞게 조정하고 가장 관련성이 높은 자산이 검색에 나타나도록 합니다. 예를 들어, 자동차 제조업체는 자동차 이미지에 모델 이름을 사용하여 태그를 지정할 수 있으므로 프로모션 캠페인을 디자인하기 위해 검색할 때 관련 이미지만 표시됩니다.
 
-백그라운드에서 이 기능은 [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html)의 인공적인 지능형 프레임워크를 사용하여 태그 구조 및 비즈니스 분류에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용하는 데 사용됩니다. [!DNL Experience Manager Assets] 배포는 기본적 [!DNL Adobe Developer Console] 으로 과 통합됩니다.
+백그라운드에서 이 기능은 [Adobe Sensei](https://www.adobe.com/kr/sensei/experience-cloud-artificial-intelligence.html)의 인공적인 지능형 프레임워크를 사용하여 태그 구조 및 비즈니스 분류에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용하는 데 사용됩니다. [!DNL Experience Manager Assets] 기본적으로 업로드된 자산에 스마트 태그를 자동으로 적용합니다.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -179,11 +179,11 @@ ht-degree: 1%
 
 ## 스마트 태그를 사용하여 자산에 태그 지정 {#tag-assets}
 
-지원되는 모든 유형의 자산은 업로드되면 [!DNL Experience Manager Assets]에 의해 자동으로 태그가 지정됩니다. 태깅은 기본적으로 활성화됩니다. [!DNL Experience Manager] 적절한 태그를 거의 실시간으로 적용합니다.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+지원되는 모든 유형의 자산은 업로드되면 [!DNL Experience Manager Assets]에 의해 자동으로 태그가 지정됩니다. 태깅은 기본적으로 활성화되어 있으며 작동합니다. [!DNL Experience Manager] 적절한 태그를 거의 실시간으로 적용합니다.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-이미지 및 비디오의 경우 스마트 태그는 일부 시각적 측면을 기반으로 파생됩니다.
+* 이미지 및 비디오의 경우 스마트 태그는 몇 가지 시각적 측면을 기반으로 합니다.
 
-텍스트 기반 자산의 경우, 스마트 태그의 효과는 자산의 텍스트 양보다는 자산의 텍스트에 있는 관련 키워드 또는 엔티티에 따라 다릅니다. 텍스트 기반 자산의 경우, 스마트 태그는 텍스트에 나타나는 키워드지만 자산을 가장 잘 설명하는 키워드입니다. 지원되는 자산의 경우 [!DNL Experience Manager]은(는) 이미 텍스트를 추출하고 인덱싱하여 자산을 검색하는 데 사용됩니다. 하지만 텍스트에 있는 키워드를 기반으로 한 스마트 태그는 전체 검색 색인과 비교하여 자산 검색을 향상시키는 데 사용되는 전용, 구조화 및 상위 우선 순위 검색 패싯을 제공합니다.
+* 텍스트 기반 자산의 경우, 스마트 태그의 효과는 자산의 텍스트 양보다는 자산의 텍스트에 있는 관련 키워드 또는 엔티티에 따라 다릅니다. 텍스트 기반 자산의 경우, 스마트 태그는 텍스트에 나타나는 키워드지만 자산을 가장 잘 설명하는 키워드입니다. 지원되는 자산의 경우 [!DNL Experience Manager]은(는) 이미 텍스트를 추출하고 인덱싱하여 자산을 검색하는 데 사용됩니다. 하지만 텍스트에 있는 키워드를 기반으로 한 스마트 태그는 전체 검색 색인과 비교하여 자산 검색을 향상시키는 데 사용되는 전용, 구조화 및 상위 우선 순위 검색 패싯을 제공합니다.
 
 ## 스마트 태그 및 자산 검색 관리 {#manage-smart-tags-and-searches}
 
