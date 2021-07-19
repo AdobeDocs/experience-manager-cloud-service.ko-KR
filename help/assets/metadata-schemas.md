@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 메타데이터
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2557'
+source-wordcount: '2562'
 ht-degree: 3%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 3%
 | [!UICONTROL 제품 참조] | 를 추가하여 자산과 연결된 제품 목록을 표시합니다. |
 | [!UICONTROL 상황에 맞는 메타데이터] | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭 표시를 제어합니다. |
 
-<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+<!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
 -->
 
@@ -155,7 +155,7 @@ ht-degree: 3%
 
 ## 메타데이터 스키마 양식 삭제 {#deleting-metadata-schema-forms}
 
-AEM을 사용하면 사용자 지정 스키마 양식만 삭제할 수 있습니다. 기본 스키마 양식/템플릿은 삭제할 수 없습니다. 그러나 이러한 양식에서 사용자 지정 변경 사항을 삭제할 수 있습니다.
+Experience Manager을 사용하면 사용자 지정 스키마 양식만 삭제할 수 있습니다. 기본 스키마 양식/템플릿은 삭제할 수 없습니다. 그러나 이러한 양식에서 사용자 지정 변경 사항을 삭제할 수 있습니다.
 
 양식을 삭제하려면 양식을 선택하고 삭제 아이콘을 클릭합니다.
 
@@ -236,16 +236,16 @@ AEM을 사용하면 사용자 지정 스키마 양식만 삭제할 수 있습니
 
 >[!NOTE]
 >
->메타데이터 필드는 다른 필드의 값을 기준으로 필수로 정의할 수 있습니다. 카드 보기에서는 AEM에서 이러한 필수 메타데이터 필드에 대한 누락된 메타데이터에 대한 경고 메시지를 표시하지 않습니다.
+>메타데이터 필드는 다른 필드의 값을 기준으로 필수로 정의할 수 있습니다. 카드 보기에서는 이러한 필수 메타데이터 필드에 대한 누락된 메타데이터에 대한 경고 메시지가 표시되지 않습니다.
 
-1. AEM 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지가 표시됩니다.
+1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지가 표시됩니다.
 1. 기본 메타데이터 양식을 사용자 지정 양식으로 저장합니다. 예를 들어 `my_default`(으)로 저장합니다.
 1. 사용자 지정 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 **[!UICONTROL 범주]** 필드를 추가하고 필드를 필수로 지정합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식은 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지에 나열됩니다. 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 폴더에 적용]**&#x200B;을 클릭하거나 탭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
 1. 폴더로 이동하고 사용자 지정 양식에 추가한 필수 필드에 대한 메타데이터가 없는 일부 자산을 업로드합니다. 필수 필드에 대한 누락된 메타데이터에 대한 메시지가 자산의 카드 보기에 표시됩니다.
-1. (선택 사항) `https://[server]:[port]/system/console/components/`에 액세스합니다. 기본적으로 비활성화된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 활성화하십시오. AEM에서 자산에 대한 메타데이터의 유효성을 확인하는 빈도를 설정합니다.
+1. (선택 사항) `https://[server]:[port]/system/console/components/`에 액세스합니다. 기본적으로 비활성화된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 활성화하십시오. Experience Manager이 자산에 대한 메타데이터의 유효성을 확인하는 빈도를 설정합니다.
 
-   이 구성은 자산의 `jcr:content`에 속성 `hasValidMetadata`을 추가합니다. 이 속성을 사용하면 AEM에서 검색 결과를 필터링할 수 있습니다.
+   이 구성은 자산의 `jcr:content`에 속성 `hasValidMetadata`을 추가합니다. 이 속성을 사용하면 Experience Manager이 검색 결과를 필터링할 수 있습니다.
 
    >[!NOTE]
    >
