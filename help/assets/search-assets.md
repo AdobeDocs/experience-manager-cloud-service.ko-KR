@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 검색,메타데이터,자산 분배
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '4916'
+source-wordcount: '4911'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 ## 입력할 때 제안 검색 {#searchsuggestions}
 
-키워드 입력을 시작하면 AEM에서는 가능한 검색 키워드 또는 구문을 제안합니다. 제안은 AEM의 자산을 기반으로 합니다. AEM은 검색에 도움이 되도록 모든 메타데이터 필드를 인덱싱합니다. 검색 제안을 제공하기 위해 시스템에서는 다음 몇 가지 메타데이터 필드의 값을 사용합니다. 검색 제안을 제공하려면 적절한 키워드로 다음 필드를 채우는 것이 좋습니다.
+키워드 입력을 시작하면 Experience Manager에서 가능한 검색 키워드나 구문을 제안합니다. 제안은 Experience Manager의 자산을 기반으로 합니다. Experience Manager 는 검색에 도움이 되도록 모든 메타데이터 필드를 인덱싱합니다. 검색 제안을 제공하기 위해 시스템에서는 다음 몇 가지 메타데이터 필드의 값을 사용합니다. 검색 제안을 제공하려면 적절한 키워드로 다음 필드를 채우는 것이 좋습니다.
 
 * 자산 태그. (`jcr:content/metadata/cq:tags`에 매핑)
 * 자산 제목. (`jcr:content/metadata/dc:title`에 매핑)
@@ -281,7 +281,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 * 전체 텍스트 검색은 `-` 및 `^` 등의 연산자를 지원합니다. 이러한 문자를 문자열 리터럴으로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어 `Notebook - Beauty` 대신 `"Notebook - Beauty"`을 사용하십시오.
 * 검색 결과가 너무 많으면 원하는 자산에서 [검색](#scope)의 범위를 0으로 제한하십시오. 특정 파일 유형, 특정 위치, 특정 메타데이터 등과 같이 원하는 자산을 더 잘 찾는 방법을 알고 있을 때 가장 잘 작동합니다.
 
-* **태깅**: 태그를 사용하면 보다 효율적으로 검색하고 찾을 수 있는 자산을 분류할 수 있습니다. 태깅은 다른 사용자 및 워크플로우에 적절한 분류법을 전파하는 데 도움이 됩니다. [!DNL Experience Manager] 에서는 사용 및 트레이닝을 통해 자산에 태그 지정 작업을 보다 효과적으로 수행할 수 있도록 Adobe Sensei의 인공적인 지능형 서비스를 사용하여 자산에 자동으로 태그를 지정하는 방법을 제공합니다. 자산을 검색할 때, 계정에서 기능이 활성화되어 있으면 스마트 태그가 팩터링됩니다. 내장된 검색 기능과 함께 작동합니다. [검색 동작](#searchbehavior)을 참조하십시오. 검색 결과가 표시되는 순서를 최적화하기 위해 일부 선택 자산 중 [검색 순위](#searchrank)를 늘릴 수 있습니다.
+* **태깅**: 태그를 사용하면 보다 효율적으로 검색하고 찾을 수 있는 자산을 분류할 수 있습니다. 태깅은 다른 사용자 및 워크플로우에 적절한 분류법을 전파하는 데 도움이 됩니다. [!DNL Experience Manager] 에서는 사용 및 트레이닝을 통해 자산에 태그 지정 작업을 보다 효과적으로 수행할 수 있도록 Adobe Sensei의 인공적인 지능형 서비스를 사용하여 자산에 자동으로 태그를 지정하는 방법을 제공합니다. 자산을 검색할 때 스마트 태그가 팩터링됩니다. 내장된 검색 기능과 함께 작동합니다. [검색 동작](#searchbehavior)을 참조하십시오. 검색 결과가 표시되는 순서를 최적화하기 위해 일부 선택 자산 중 [검색 순위](#searchrank)를 늘릴 수 있습니다.
 
 * **색인 지정**: 인덱싱된 메타데이터 및 자산만 검색 결과에 반환됩니다. 더 나은 서비스 및 성능을 위해 적절한 색인 지정 및 우수 사례를 따르십시오. [인덱싱](#searchindex)을 참조하십시오.
 
@@ -453,7 +453,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 ## 예기치 않은 검색 결과 및 문제 {#unexpected-results}
 
 <!--
-**Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
+**Partially related or unrelated search results**: Experience Manager may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
 | 오류, 문제, 증상 | 가능한 이유 | 문제에 대한 수정 또는 이해 가능 |
