@@ -3,11 +3,11 @@ sub-product: Adobe Experience Manager Assets as a Cloud Service
 user-guide-title: Assets as a Cloud Service 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
-solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+solution: Experience Manager, Experience Manager Assets, Experience Manager as a Cloud Service
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 73%
+source-wordcount: '484'
+ht-degree: 72%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 73%
    + [이미지용 스마트 태그](smart-tags.md)
    + [스마트 태그가 비디오 자산에 지정됩니다](smart-tags-video-assets.md)
    + [자산 구성 방법](organize-assets.md)
-   + [자산 사용 [!DNL Adobe Stock] 자산](aem-assets-adobe-stock.md)
+   + [AEM에서 [!DNL Adobe Stock] 자산 사용](aem-assets-adobe-stock.md)
    + [컬렉션 관리](manage-collections.md)
    + [메타데이터 개요](manage-metadata.md)
    + [ [!DNL Adobe Creative Cloud]과 통합](aem-cc-integration-best-practices.md)
@@ -54,9 +54,9 @@ ht-degree: 73%
    + [검색 패싯](search-facets.md)
    + [자산 HTTP API](mac-api-assets.md)
    + [ Assets HTTP API의 컨텐츠 조각 지원](content-fragments/assets-api-content-fragments.md)
-   + [컨텐츠 조각용 GraphQL API](content-fragments/graphql-api-content-fragments.md)
-   + [컨텐츠 조각에 대한 원격 GraphQL 쿼리에 대한 인증](content-fragments/graphql-authentication-content-fragments.md)
-   + [컨텐츠 조각을 사용한 GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [컨텐츠 조각용 AEM GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](content-fragments/graphql-authentication-content-fragments.md)
+   + [컨텐츠 조각을 사용한 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [연결된 자산](use-assets-across-connected-assets-instances.md)
    + [자산 보고서](asset-reports.md)
    + [계단식 메타데이터](cascading-metadata.md)
