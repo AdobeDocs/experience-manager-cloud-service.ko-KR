@@ -5,16 +5,16 @@ contentOwner: AG
 feature: 메타데이터
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '669'
 ht-degree: 4%
 
 ---
 
 # 자산 메타데이터 일괄적으로 가져오거나 내보냅니다 {#import-and-export-asset-metadata-in-bulk}
 
-AEM Assets을 사용하면 CSV 파일을 사용하여 자산 메타데이터를 일괄적으로 가져올 수 있습니다. CSV 파일을 가져와서 최근에 업로드한 자산 또는 기존 자산에 대한 벌크 업데이트를 수행할 수 있습니다. 타사 시스템에서 CSV 형식으로 자산 메타데이터를 일괄적으로 수집할 수도 있습니다.
+Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 자산 메타데이터를 일괄적으로 가져올 수 있습니다. CSV 파일을 가져와서 최근에 업로드한 자산 또는 기존 자산에 대한 벌크 업데이트를 수행할 수 있습니다. 타사 시스템에서 CSV 형식으로 자산 메타데이터를 일괄적으로 수집할 수도 있습니다.
 
 ## 메타데이터 가져오기 {#import-metadata}
 
@@ -47,7 +47,7 @@ AEM Assets을 사용하면 CSV 파일을 사용하여 자산 메타데이터를 
 
 ## 메타데이터 내보내기 {#export-metadata}
 
-여러 자산에 대한 메타데이터를 CSV 형식으로 내보낼 수 있습니다. 메타데이터는 비동기식으로 내보내지므로 시스템 성능에 영향을 주지 않습니다. 메타데이터를 내보내려면 AEM에서 자산 노드 `jcr:content/metadata` 및 해당 하위 노드의 속성을 통과하여 CSV 파일로 메타데이터 속성을 내보냅니다.
+여러 자산에 대한 메타데이터를 CSV 형식으로 내보낼 수 있습니다. 메타데이터는 비동기식으로 내보내지므로 시스템 성능에 영향을 주지 않습니다. 메타데이터를 내보내려면 자산 노드 `jcr:content/metadata` 및 해당 하위 노드의 속성을 통해 Experience Manager을 수행하고 CSV 파일로 메타데이터 속성을 내보냅니다.
 
 메타데이터를 일괄적으로 내보내는 사용 사례는 다음과 같습니다.
 
