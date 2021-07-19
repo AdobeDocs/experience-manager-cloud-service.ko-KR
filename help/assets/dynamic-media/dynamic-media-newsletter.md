@@ -4,9 +4,9 @@ description: 'Dynamic Media Newsletter by Experience League은 월간 뉴스레�
 feature: 자산 관리
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -123,15 +123,15 @@ ht-degree: 0%
    * 고부가가치 자산을 적절히 관리할 수 있도록 해주는 리소스 및 정보를 통해 방문자가 다시 방문할 수 있는 경험을 제공할 수 있습니다.
    * 디지털 자산을 보호하는 웨비나에 대해 알아봅니다.
    * 다음은 정보가 채워진 Adobe 인사이더 투어의 다음 정류장입니다.
-   * Experience Manager 자산(AEM Assets) 내에 Dynamic Media이 있을 때 사용할 수 있는 흥미로운 기능입니다.
+   * Experience Manager 자산(Experience Manager 자산) 내에 Dynamic Media이 있을 때 사용할 수 있는 흥미로운 기능입니다.
    * 웹 사이트에 360도 비디오 및 사용자 정의 비디오 축소판 추가
-   * AEM Assets에서 Dynamic Media의 주요 솔루션 컨설턴트인 Andrew Hatherey를 만나보십시오.
+   * Experience Manager Assets에서 Dynamic Media의 주요 솔루션 컨설턴트인 Andrew 해서웨이를 만나보십시오.
 
 * **[2019년 6월, 2016년 6월](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    이 문제:
 
-   * AEM Assets 내에서 Dynamic Media으로 업그레이드하는 방법을 강조 표시하는 비디오를 감상하십시오.
+   * Experience Manager Assets 내에서 Dynamic Media으로 업그레이드하는 방법을 강조 표시하는 비디오를 감상하십시오.
    * Experience League에서 주요 방법 비디오를 시청하십시오.
    * 예정된 Adobe Insider Tour에 대해 자세히 알아보십시오.
    * 디지털 자산이 불법 복제되지 않도록 보호하는 방법에 대해 읽어 보십시오.
