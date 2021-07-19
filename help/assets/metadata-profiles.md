@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 메타데이터
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1238'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 **메타데이터 프로필을 전체적으로 적용하려면 다음 중 하나를 수행합니다**
 
-* `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`으로 이동하여 적절한 프로필을 적용하고 **저장**&#x200B;을 클릭합니다.
+* `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`으로 이동하여 적절한 프로필을 적용하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 * 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content` `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` 속성을 추가합니다. **모두 저장**&#x200B;을 클릭합니다.
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. AEM 로고를 클릭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**&#x200B;으로 이동합니다.
+1. Experience Manager 로고를 클릭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**&#x200B;으로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 메타데이터 프로필을 선택합니다.
 1. **[!UICONTROL 폴더에서 메타데이터 프로필 제거]**&#x200B;를 클릭하고 프로필을 제거하는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
@@ -118,6 +118,6 @@ ht-degree: 1%
 
 ### 속성을 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. AEM 로고를 클릭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
+1. Experience Manager 로고를 클릭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 클릭하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 메타데이터 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]**&#x200B;을 선택하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
