@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 1. Cloud Manager 홈 화면에서 **비프로덕션 파이프라인** 타일에 액세스합니다.
 
-   ![](assets/configure-pipeline6.png)
+   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
 
 1. **추가** 단추를 클릭하여 파이프라인 이름, 파이프라인 유형 및 Git 분기를 지정합니다.
 
@@ -124,13 +124,15 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
    ![](assets/non-prod-pipe1.png)
 
-1. **저장** 을 클릭하면 파이프라인이 아래 표시된 것처럼 세 가지 작업이 있는 홈 화면의 카드에 표시됩니다.
+1. **저장** 을 클릭하면 파이프라인이 아래 표시된 대로 5개의 작업이 있는 홈 화면의 카드에 표시됩니다.
 
-   ![](assets/configure-pipeline8.png)
+   ![](/help/implementing/cloud-manager/assets/prod-one.png)
 
    * **편집**  - 파이프라인 설정을 편집할 수 있습니다.
+   * **세부 사항**  - 파이프라인 실행에 대한 세부 사항을 제공합니다
    * **빌드**  - 파이프라인을 실행할 수 있는 실행 페이지로 이동합니다
-   * **Git 관리**  - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있도록 해줍니다
+   * **리포지토리 정보에 액세스**  - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있습니다
+   * **자세히 알아보기**  - CI/CD 파이프라인 설명서 리소스를 이해합니다.
 
 ## 다음 단계 {#the-next-steps}
 
