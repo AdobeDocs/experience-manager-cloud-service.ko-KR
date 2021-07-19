@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: a585fd8994c00014243f628ac0abbcb6571137f6
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -55,10 +55,6 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
    ![](assets/publish-distribute.png "DistributeDistribution")
 4. 경로 브라우저에서 경로를 선택하고 필요에 따라 노드, 트리 또는 삭제를 선택하고 **Submit**&#x200B;을 선택합니다.
-
-최상의 성능을 위해 이 기능을 사용할 때는 다음 지침을 따르십시오.
-* 한 번에 500개 이하의 경로를 복제하여 100개 이하의 경로를 복제하는 것이 좋습니다.
-* 복제된 컨텐츠의 총 크기는 5MB 미만이어야 합니다. 여기에는 워크플로우 패키지 및 컨텐츠 패키지를 포함하는 바이너리는 포함되지 않고 노드 및 속성만 포함됩니다.
 
 ### 컨텐츠 트리 게시 워크플로우 {#publish-content-tree-workflow}
 
@@ -189,11 +185,6 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 이러한 필터를 제공하지 않고 &quot;게시&quot; 에이전트만 사용하는 경우 &quot;미리 보기&quot; 에이전트가 사용되지 않고 복제 작업이 미리 보기 계층에 영향을 주지 않습니다.
 
 리소스의 전체 `ReplicationStatus` 은 복제 작업에 기본적으로 활성 상태인 에이전트가 하나 이상 포함된 경우에만 수정됩니다. 위의 예에서 이는 복제가 &quot;미리 보기&quot; 에이전트를 사용하고 있기 때문에 해당되지 않습니다. 따라서 특정 에이전트의 상태를 쿼리할 수 있는 새 `getStatusForAgent()` 메서드를 사용해야 합니다. 이 메서드는 &quot;게시&quot; 에이전트에서도 작동합니다. 제공된 에이전트를 사용하여 복제 작업이 수행된 경우 null이 아닌 값을 반환합니다.
-
-
-**복제 API 경로 및 크기 제한**
-
-최대 한계인 500개의 경로를 사용하여 100개 이하의 경로를 복제하는 것이 좋습니다. 하드 제한 위에 ReplicationException이 발생합니다. 응용 프로그램 논리에 원자 복제를 필요로 하지 않는 경우 ReplicationOptions.setUseAtomicCalls를 false로 설정하여 이 제한을 극복할 수 있으며, 이 제한은 경로 수를 허용하지만 내부적으로 버킷을 만들어 이 제한을 유지할 수 있습니다. 복제 호출당 전송된 컨텐츠의 양은 5MB를 초과할 수 없습니다. 여기에는 노드 및 속성이 포함되지만 바이너리는 없어야 합니다(워크플로우 패키지 및 컨텐츠 패키지는 바이너리로 간주됨).
 
 ## 문제 해결 {#troubleshooting}
 
