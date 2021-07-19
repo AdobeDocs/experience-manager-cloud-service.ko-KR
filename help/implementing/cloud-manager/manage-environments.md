@@ -2,7 +2,7 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 1%
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 1. **모두 표시** 단추를 선택하여 **환경** 요약 페이지로 이동하여 전체 환경 목록이 있는 테이블을 봅니다.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. **환경** 페이지에는 모든 기존 환경의 목록이 표시됩니다.
 
