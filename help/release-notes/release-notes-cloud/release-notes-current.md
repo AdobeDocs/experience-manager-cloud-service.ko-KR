@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d30384566f08b8819d3263b12939217cafb3399e
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1586'
 ht-degree: 3%
 
 ---
@@ -41,44 +41,7 @@ ht-degree: 3%
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.7.0 및 2021.6.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
-
-### 릴리스 날짜 {#release-cm-july}
-
-AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 날짜는 2021년 7월 15일입니다.
-다음 릴리스는 2021년 8월 12일에 예정되어 있습니다.
-
-### 새로운 기능 {#what-is-new-cm-july}
-
-* 고객은 이제 Cloud Manager 빌드 프로세스에 Azul 8 및 11개의 JDK를 사용할 수 있으며 이러한 JDK 중 하나를 도구 체인 호환 Maven 플러그인 *또는 전체 Maven 프로세스 실행에 사용하도록 선택할 수 있습니다.*
-
-* 이제 아웃바운드 송신 IP가 빌드 단계 로그 파일에 기록됩니다.
-
-* 이전 버전의 AEM을 실행하는 단계 및 프로덕션 환경에서는 **Update Available** 상태를 보고합니다.
-
-* 지원되는 최대 SSL 인증서는 프로그램당 20개로 증가했습니다.
-
-* 구성할 수 있는 최대 도메인 수가 환경당 500개로 늘어났습니다.
-
-* **Git** 관리 단추가 **Access Git Info**&#x200B;로 검색되었으며 대화 상자가 시각적으로 새로 고침되었습니다.
-
-* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 28로 업데이트되었습니다.
-
-### 버그 수정 {#bug-fixes-cm-july}
-
-* 경우에 따라 IP 허용 목록을 환경에 바인딩할 때 미리 보기 옵션을 사용할 수 없었습니다.
-
-* 존재하지 않는 실행을 위한 실행 세부 사항 페이지로 수동으로 탐색해도 오류가 표시되지 않고 끝없이 로드되는 화면만 표시됩니다.
-
-* 최대 SSL 인증서 수에 도달했을 때 표시되는 오류 메시지가 표시되지 않습니다.
-
-* 경우에 따라 **개요** 페이지의 파이프라인 카드에 표시된 릴리스 버전에서 불일치가 발생할 수 있습니다.
-
-* 프로그램 추가 마법사에서 생성 후 이름을 변경할 수 없다고 잘못 명시했습니다.
-
-### 알려진 문제 {#known-issues-cm-july}
-
-Azul JDK를 사용하도록 전환하는 고객은 Azul JDK에 오류가 없는 모든 기존 애플리케이션이 컴파일되는 것은 아니라는 것을 알고 있어야 합니다. 전환하기 전에 로컬로 테스트하는 것이 좋습니다.
+이 섹션에서는 AEM as a Cloud Service 2021.6.0 및 2021.5.0 의 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 ### 릴리스 날짜 {#release-date-june-cm}
 
@@ -219,16 +182,6 @@ AEM Screens as a Cloud Service의 출시일은 2021년 6월 24일입니다.
 * 디바이스 상태 스냅샷은 중요한 상태를 한 눈에 제공하여 시간을 절약합니다.
 
 * 객체 세부 정보 페이지에는 프로젝트의 각 객체에 대한 가장 관련성이 높은 정보가 요약되어 있습니다.
-
-## Cloud Acceleration Manager {#cam}
-
-### 릴리스 날짜 {#release-date-july-cam}
-
-Cloud Acceleration Manager 릴리스 날짜는 2021년 7월 15일입니다.
-
-## 새로운 기능 {#what-is-new-cam}
-
-Cloud Acceleration Manager는 Cloud Service에서 라이브로 전환하는 계획에서부터 전환 여정 전반에 걸쳐 IT 팀을 안내하도록 설계된 클라우드 기반 애플리케이션입니다. AEM as a Cloud Service으로 여정의 모든 단계에서 도움이 되는 Adobe 권장 우수 사례, 팁, 설명서 및 도구를 사용하여 성공적인 마이그레이션을 위해 팀을 설정합니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)를 참조하십시오.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
