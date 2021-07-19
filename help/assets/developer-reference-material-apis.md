@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,자산 HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 2%
 | × | 지원되지 않음. 사용하지 마십시오. |
 | - | 사용할 수 없음 |
 
-| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(미리 보기)_ |
+| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(미리 보기)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **원본 이진** |  |  |  |  |  |  |
 | 원본 만들기 | ✓ | × | - | × | × | - |
@@ -69,7 +69,7 @@ ht-degree: 2%
 [!DNL Experience Manager]에서 [!DNL Cloud Service] HTTP API를 사용하여 자산을 클라우드 저장소에 직접 업로드할 수 있습니다. 이진 파일을 업로드하는 단계는 다음과 같습니다. [!DNL Experience Manager] JVM이 아닌 외부 애플리케이션에서 이러한 단계를 실행합니다.
 
 1. [HTTP 요청을 제출합니다](#initiate-upload). 새 바이너리를 업로드하려면 [!DNL Experience Manage]에 대한 배포를 알려 줍니다.
-1. [상기 초기화 요청](#upload-binary) 에서 제공하는 하나 이상의 URI에 상기 바이너리의 컨텐츠를 POST.
+1. [상기 초기화 요청](#upload-binary) 에서 제공하는 하나 이상의 URI에 상기 바이너리의 컨텐츠를 PUT.
 1. [HTTP 요청](#complete-upload) 을 제출하여 바이너리의 콘텐츠가 성공적으로 업로드되었음을 서버에 알립니다.
 
 ![직접 이진 업로드 프로토콜 개요](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ ht-degree: 2%
 }
 ```
 
-* `completeURI` (문자열): 바이너리의 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 값은 `"https://author.acme.com/content/dam.completeUpload.json"` 또는 `"/content/dam.completeUpload.json"`완료 업로드](#complete-upload)를 참조하십시오.[
+* `completeURI` (문자열): 바이너리의 업로드를 마치면 이 URI를 호출합니다. URI는 절대 또는 상대 URI일 수 있으며 클라이언트는 둘 중 하나를 처리할 수 있어야 합니다. 즉, 값은 `"https://[aem_server]:[port]/content/dam.completeUpload.json"` 또는 `"/content/dam.completeUpload.json"`완료 업로드](#complete-upload)를 참조하십시오.[
 * `folderPath` (문자열): 바이너리가 업로드된 폴더의 전체 경로입니다.
 * `(files)` (배열): 시작 요청에서 제공된 이진 정보 목록의 길이 및 순서와 일치하는 요소의 목록입니다.
 * `fileName` (문자열): 시작 요청에서 제공된 해당 바이너리의 이름입니다. 이 값은 전체 요청에 포함해야 합니다.
@@ -125,7 +125,7 @@ ht-degree: 2%
 
 ### 이진 업로드 {#upload-binary}
 
-업로드 시작 출력에는 하나 이상의 업로드 URI 값이 포함됩니다. 두 개 이상의 URI가 제공되면 클라이언트는 바이너리를 부품으로 분할하고 각 부품의 POST 요청을 순서대로 각 URI에 요청합니다. 모든 URI를 사용합니다. 각 부품의 크기가 시작 응답에 지정된 최소 및 최대 크기 내에 있는지 확인합니다. CDN 에지 노드는 요청된 바이너리 업로드 속도를 높이는 데 도움이 됩니다.
+업로드 시작 출력에는 하나 이상의 업로드 URI 값이 포함됩니다. 두 개 이상의 URI가 제공되면 클라이언트는 바이너리를 부품으로 분할하고 각 부품의 PUT 요청을 순서대로 각 URI에 수행합니다. 모든 URI를 사용합니다. 각 부품의 크기가 시작 응답에 지정된 최소 및 최대 크기 내에 있는지 확인합니다. CDN 에지 노드는 요청된 바이너리 업로드 속도를 높이는 데 도움이 됩니다.
 
 API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는 것이 이를 수행하는 가능한 방법입니다. 예를 들어 바이너리의 총 크기는 20,000바이트이고 업로드 URI 수는 2라고 가정합니다. 그런 다음 다음 단계를 수행합니다.
 
@@ -154,9 +154,7 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 
 시작 프로세스처럼 전체 요청 데이터에는 두 개 이상의 파일에 대한 정보가 포함될 수 있습니다.
 
-파일에 대한 전체 URL이 호출될 때까지 바이너리를 업로드하는 프로세스가 수행되지 않습니다. 업로드 프로세스가 완료되면 자산이 처리됩니다. 자산의 이진 파일이 완전히 업로드되었지만 업로드 프로세스가 완료되지 않은 경우에도 처리가 시작되지 않습니다.
-
-성공하면 서버가 `200` 상태 코드로 응답합니다.
+파일에 대한 전체 URL이 호출될 때까지 바이너리를 업로드하는 프로세스가 수행되지 않습니다. 업로드 프로세스가 완료되면 자산이 처리됩니다. 자산의 이진 파일이 완전히 업로드되었지만 업로드 프로세스가 완료되지 않은 경우에도 처리가 시작되지 않습니다. 업로드가 성공하면 서버가 `200` 상태 코드로 응답합니다.
 
 ### 오픈 소스 업로드 라이브러리 {#open-source-upload-library}
 
@@ -187,21 +185,45 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 
 ## 사후 처리 워크플로우에서 워크플로우 단계 지원 {#post-processing-workflows-steps}
 
-이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 고객은 자산 마이크로서비스를 사용하여 자산을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로서비스 는 구성 및 사용이 훨씬 간단합니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다.
-
-[!DNL Experience Manager] 는 다음  [!DNL Cloud Service] 워크플로우 단계를 지원합니다.
-
-* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
-* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
-* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
-* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
-* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
-* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
+이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 경우 자산 마이크로서비스를 사용하여 자산을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로서비스 는 구성 및 사용이 더 쉽습니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다. 지원되는 클래스에 대한 자세한 내용은 [Java API 참조](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)를 참조하십시오.
 
 다음 기술 워크플로우 모델은 자산 마이크로서비스로 대체되거나 지원되지 않습니다.
+
+* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
+* `com.day.cq.dam.core.process.CommandLineProcess`
+* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
+* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
+* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
+* `com.day.cq.dam.core.process.DownloadAssetProcess`
+* `com.day.cq.dam.word.process.ExtractImagesProcess`
+* `com.day.cq.dam.word.process.ExtractPlainProcess`
+* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
+* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
+* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
+* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
+* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
+* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
+* `com.day.cq.dam.switchengine.process.SwitchEngineHandlingProcess`
+* `com.day.cq.dam.core.process.GateKeeperProcess`
+* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
+* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
+* `com.day.cq.dam.video.FFMpegTranscodeProcess`
+* `com.day.cq.dam.core.process.ThumbnailProcess`
+* `com.day.cq.dam.video.FFMpegThumbnailProcess`
+* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
+* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
+* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
+* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
+* `com.day.cq.dam.core.process.MetadataProcessorProcess`
+* `com.day.cq.dam.core.process.AssetOffloadingProcess`
+* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+
+<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -235,7 +257,7 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 * `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
 * `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
-* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
+-->
 
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
