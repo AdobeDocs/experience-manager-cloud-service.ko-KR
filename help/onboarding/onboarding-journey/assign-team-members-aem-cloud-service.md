@@ -4,7 +4,7 @@ description: 팀 구성원을 AEM as a Cloud Service 제품 프로필로 할당�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## 목표 {#objective}
 
-이 문서는 시스템 관리자가 Cloud Service 제품 프로필로 팀 구성원을 AEM에 할당하는 데 수행해야 하는 단계와 AEM 작성자가 AEM으로 여정을 시작할 수 있도록 해야 하는 이유를 이해하는 데 도움이 됩니다.
+이 문서는 시스템 관리자가 Cloud Service 제품 프로필로 팀 구성원을 AEM에 지정하는 데 수행해야 하는 단계와 AEM 작성자가 AEM으로 여정을 시작할 수 있도록 하는 것이 중요한 이유를 이해하는 데 도움이 됩니다.
 
 이 섹션을 읽은 후에는 다음을 수행해야 합니다.
 
