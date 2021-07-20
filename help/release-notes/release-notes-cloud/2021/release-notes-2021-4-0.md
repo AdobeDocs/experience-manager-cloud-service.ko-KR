@@ -2,20 +2,20 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 릴리스의 릴리스 노트'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 릴리스의 릴리스 노트'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
+source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1535'
 ht-degree: 3%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] Cloud Service {#release-notes} 의 현재 릴리스 노트
+# [!DNL Adobe Experience Manager] Cloud Service의 현재 릴리스 노트 {#release-notes}
 
 다음 섹션에서는 Cloud Service으로 현재(최신) 버전의 [!DNL Experience Manager]에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
->여기에서 이전 버전의 릴리스 정보로 이동할 수 있습니다.예를 들어, 2020년, 2021년 등의 경우입니다.
+>여기에서 이전 버전의 릴리스 정보로 이동할 수 있습니다. 예를 들어, 2020년, 2021년 등의 경우입니다.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 ## [!DNL Adobe Experience Manager Sites]로서의 [!DNL Cloud Service]  {#sites}
 
-### [!DNL Sites] {#what-is-new-sites}의 새로운 기능
+### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
 * GraphQL 엔드포인트 - 이제 개별 AEM Sites 구성에 대해 AEM GraphQL API를 활성화하고 새 GraphQL 콘솔 UI를 사용하여 해당 구성에 대한 사용자 지정 GraphQL 엔드포인트를 만들 수 있습니다. 또한 UI에서 GraphQL 엔드포인트를 관리할 수 있습니다.
 
@@ -44,7 +44,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 * 컨텐츠 모델, 새 탭 자리 표시자 데이터 유형 - 새 탭 자리 표시자 데이터 유형을 컨텐츠 조각 편집기에서 탭 아래에 렌더링될 섹션으로 그룹화할 수 있습니다.
 
-### [!DNL Sites] {#bug-fixes-sites}에 버그 수정
+### [!DNL Sites]의 버그 수정 {#bug-fixes-sites}
 
 * 컨텐츠 조각 - 이제 컨텐츠 조각 또는 폴더를 이동하면 조각 내의 중첩된 참조가 업데이트됩니다(CQ-4320815)
 
@@ -52,7 +52,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 ## [!DNL Adobe Experience Manager Assets]로서의 [!DNL Cloud Service]  {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
+### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
 * [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 개선 사항을 통해 더 빨리 다운로드할 수 있습니다.
 
@@ -66,13 +66,15 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 * 메타데이터 스키마를 편집할 때 새로운 루트 경로 선택기 필드를 사용하면 관리자가 빠르고 쉽게 선택할 수 있으므로 구성 시간이 줄어듭니다.
 
+* 메타데이터 스키마를 편집할 때 메타데이터 편집기에서 자유 형식 텍스트 영역을 제공하는 데이터 유형이 추가됩니다. 사용자는 이 텍스트 영역을 사용하여 자유 형식 텍스트를 자산의 메타데이터로 입력할 수 있습니다. [메타데이터 스키마 편집기](/help/assets/metadata-schemas.md)를 참조하십시오.
+
 * 많은 자산의 메타데이터를 CSV 파일을 사용하여 일괄적으로 가져올 수 있으며 CSV 파일로 내보낼 수 있습니다. 기본 날짜 형식은 이제 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`입니다. 열 헤더를 업데이트하여 다른 형식을 활용할 수 있습니다. 예를 들어 `Date` 라는 단어 대신 CSV 파일의 열 헤더로 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 을 추가합니다.
 
 * 열 보기에서 자산을 검색할 때 시각적 표시기에 각 자산의 승인 또는 거부 상태가 표시됩니다.
 
 * 열 보기에서 자산을 검색할 때 만료된 자산에 대해 시각적 표시기가 표시됩니다.
 
-### [!DNL Assets] {#bug-fixes-assets}에 버그 수정
+### [!DNL Assets]의 버그 수정 {#bug-fixes-assets}
 
 * 여러 자산 또는 폴더를 이동하려고 하면 콘솔에 오류가 기록되고 이동 작업이 완료되지 않습니다. 제목을 업데이트할 수 없으면 이동 작업이 실패합니다. (CQ-4322080)
 
@@ -90,7 +92,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 ## [!DNL Adobe Experience Manager Forms]로서의 [!DNL Cloud Service]  {#forms}
 
-### [!DNL Forms] {#what-is-new-forms}의 새로운 기능
+### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
 * **Adobe Sign에서 활성화된 응용 Forms에서 정부 ID 인증 방법 사용**
 
@@ -114,7 +116,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
    XDP를 Cloud Service 인스턴스에서 기록 문서로 사용하고 AEM Forms을 Cloud Service SDK(로컬 개발 환경)로 사용할 수 있습니다. 이전에는 지원이 Cloud Service 인스턴스로만 제한되었습니다.
 
-### [!DNL Forms] {#bug-fixes-forms}에 버그 수정
+### [!DNL Forms]의 버그 수정 {#bug-fixes-forms}
 
 * 기록 문서를 생성하지 않도록 구성된 적응형 양식을 기록 문서를 생성하도록 구성된 AEM Workflow에 제출하면 오류 메시지가 표시되지 않고 작업을 제출할 수 없습니다.
 
@@ -182,7 +184,7 @@ AEM as a Cloud Service 2021.4.0의 Cloud Manager 릴리스 날짜는 2021년 4�
 
 * `Runmode` 검사에서 비폴더 노드에서 긍정 오류(false positive)가 발생했습니다.
 
-## 우수 사례 분석기 {#best-practices-analyzer}
+## 모범 사례 분석기 {#best-practices-analyzer}
 
 ### 릴리스 날짜 {#release-date-bpa}
 
