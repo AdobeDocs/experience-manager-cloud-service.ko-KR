@@ -4,9 +4,9 @@ description: 언샵 마스크, 스마트 자르기 또는 스마트 견본 또�
 feature: 자산 관리,이미지 프로필,표현물
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2762'
 ht-degree: 3%
 
 ---
@@ -160,9 +160,15 @@ ht-degree: 3%
 
 #### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
-1. AEM 로고를 탭하고 **[!UICONTROL Assets]**&#x200B;로 이동합니다. 그런 다음 이미지 프로필을 적용할 폴더의 상위 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 선택하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 이미지 프로필]** 탭을 선택합니다. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동합니다.
+1. 이미지 프로필을 적용할 *폴더*(자산이 아님)로 이동합니다.
+1. 현재 표시된 보기에 따라 다음 중 하나를 수행합니다.
+   * 카드 보기에서 폴더 위로 포인터를 가져간 다음 확인 표시를 선택하여 선택합니다.
+   * 열 보기 또는 목록 보기에서 폴더 이름의 왼쪽에 있는 확인란을 선택합니다.
+1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
+1. **[!UICONTROL Dynamic Media 처리]** 탭을 선택합니다.
+1. **[!UICONTROL 이미지 프로필]**&#x200B;의 **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 적용할 프로필을 선택합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
