@@ -4,9 +4,9 @@ description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기
 feature: 콘텐츠 조각
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c8462fe370045ad2dc977fdf2f8ce0a5d3e85bc1
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2312'
 ht-degree: 24%
 
 ---
@@ -167,9 +167,10 @@ UniqueContent(특정 필드의 경우)는 현재 모델에서 생성된 모든 �
    변형은 동일한 조각의 변형과 동일한 *고유한* 값을 가질 수 있지만, 다른 조각의 변형에 사용된 값과 동일한 값을 가질 수는 없습니다.
 
 * ****
-번역 가능CF 모델 편집기의 필드에서 &quot;번역 가능&quot; 확인란을 선택하면
+번역 가능 
+**** 컨텐츠 조각 모델 편집기의 필드에 있는 TranslatableCheckbox는
 
-   * 아직 없는 경우 필드의 속성 이름이 번역 구성, 컨텍스트 `/content/dam/<sites-configuration>`에 추가되어 있는지 확인합니다.
+   * 필드의 속성 이름이 번역 구성, 컨텍스트 `/content/dam/<sites-configuration>`(아직 없는 경우)에 추가되어 있는지 확인합니다.
    * GraphQL의 경우: 컨텐츠 조각 필드의 `<translatable>` 속성을 `yes`로 설정하여 변환 가능한 컨텐츠만 있는 JSON 출력에 대한 GraphQL 쿼리 필터를 허용합니다.
 
 * 특정 데이터 유형 및 해당 속성에 대한 자세한 내용은 **[컨텐츠 참조](#content-reference)**&#x200B;를 참조하십시오.
