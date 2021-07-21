@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 73%
+source-wordcount: '481'
+ht-degree: 68%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 73%
    + [비디오 자산 관리](manage-video-assets.md)
    + [자산 다운로드](download-assets-from-aem.md)
    + [편집할 자산 체크인 및 체크아웃](check-out-and-submit-assets.md)
-   + [자산에 대한 디지털 권한 관리](drm.md)
+   + [자산 Digital Rights Management](drm.md)
    + [자산을 워터마크 지정](watermark-assets.md)
    + [ [!DNL Creative Cloud] API를 사용하여 자산 처리](cc-api-integration.md)
 + [!DNL Assets] {#admin} 구성, 관리 및 확장
@@ -112,7 +112,7 @@ ht-degree: 73%
    + [대화형 이미지](dynamic-media/interactive-images.md)
    + [대화형 비디오](dynamic-media/interactive-videos.md)
    + [360 VR 비디오](dynamic-media/360-video.md)
-   + [Adobe Analytics 및 Adobe Launch와 Dynamic Media Viewer 통합](dynamic-media/launch.md)
+   + [Adobe Analytics 및 Adobe Experience Platform 태그와 Dynamic Media Viewer 통합](dynamic-media/tags.md)
    + [빠른 보기를 사용하여 사용자 지정 팝업 만들기](dynamic-media/custom-pop-ups.md)
    + [응답형 사이트용으로 최적화된 이미지 제공](dynamic-media/responsive-site.md)
    + [Dynamic Media 자산 미리 보기](dynamic-media/previewing-assets.md)
