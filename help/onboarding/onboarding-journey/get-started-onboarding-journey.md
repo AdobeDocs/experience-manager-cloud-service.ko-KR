@@ -4,9 +4,9 @@ description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -17,24 +17,18 @@ ht-degree: 1%
 
 ## 목표 {#objective}
 
-시스템 관리자로서 이 문서는 온보딩 여정의 첫 번째 단계를 요약합니다.
+시스템 관리자로서 이 문서에서는 온보딩 여정의 첫 번째 단계를 요약합니다.
 
 이 섹션을 읽은 후에는 다음을 수행할 수 있습니다.
 
-* Admin Console 이해
 * Admin Console에 액세스하고 로그인하는 방법
 * Admin Console을 통해 시스템 관리자로서의 권한을 검토합니다.
 
-## Admin Console 이해 {#login-admin-console}
-
-계약에 서명하면 Adobe Managed Services(AMS)가 고객의 온보딩을 시작합니다.
-
-계약이 체결되면 Adobe은 조직의 시스템 관리자가 사용자를 추가하고 역할에 사용자를 할당하는 등의 시스템 관리자 작업을 수행할 수 있도록 해주는 환영 이메일을 받게 되는 조직에 대한 프로비저닝을 완료합니다.
-
-Adobe Admin Console은 Adobe 제품 라이선스 및 사용자를 관리하고 관리할 수 있는 중앙 위치입니다. 시스템 관리자가 Adobe Admin Console에 로그인하여 사용자를 추가하거나 제거합니다. [여기](https://adminconsole.adobe.com/)를 클릭하여 Adobe Admin Console에 액세스합니다.
+>[!NOTE]
+>온보딩 프로세스를 시작하기 전에 Adobe Admin Console에 대해 자세히 알아보십시오. Adobe Admin Console은 Adobe 제품 라이선스 및 사용자를 관리하고 관리할 수 있는 중앙 위치입니다. 시스템 관리자가 Adobe Admin Console에 로그인하여 사용자를 추가하거나 제거합니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)를 참조하십시오.
 
 
-## Admin Console에 로그인하는 단계 {#steps-admin-console}
+## Admin Console에 로그인 {#steps-admin-console}
 
 Admin Console에서 시스템 관리자 역할을 Admin Console 및 검토하려면 아래 단계를 따르십시오.
 
