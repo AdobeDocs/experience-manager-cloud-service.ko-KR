@@ -4,9 +4,9 @@ description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 0%
 
 ## Cloud Service 프로그램 만들기 {#create-cloud-service-program}
 
+Cloud Manager에서 클라우드 서비스 프로그램을 만들려면 아래 절차를 따르십시오.
 
 1. 아래 표시된 대로 Cloud Manager 랜딩 페이지로 이동합니다.
 
@@ -103,9 +104,11 @@ ht-degree: 0%
 
 ## 클라우드 환경 만들기 {#create-cloud-environments}
 
+Cloud Manager에서 클라우드 환경을 만들려면 아래 절차를 따르십시오.
+
 1. 클라우드 프로그램을 성공적으로 만든 후에는 Cloud Manager 개요 페이지로 이동하고 환경 카드에서 추가 를 선택하여 클라우드 환경을 만듭니다.
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >이 단계를 성공적으로 완료하려면 비즈니스 소유자 또는 배포 관리자 역할의 Cloud Manager 사용자가 로그인해야 합니다.
 
    또한 빠른 비디오 자습서를 시청하여 Cloud Manager 환경과 이를 프로그램에 추가하는 방법을 알아보십시오.
@@ -119,7 +122,9 @@ ht-degree: 0%
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 Cloud Manager 관리 권한이 충분하지 않으므로 팀 구성원에게 인스턴스에 대한 권한을 부여해야 합니다. 클라우드 리소스가 만들어지고 팀이 액세스할 준비가 되었으므로 시스템 관리자는 팀 구성원을 AEM에 Admin Console의 Cloud Service 제품 프로필로 할당해야 합니다.
+Cloud Manager 관리 권한으로는 충분하지 않으므로 팀 구성원에게 인스턴스에 대한 권한을 부여해야 합니다. 클라우드 리소스가 만들어지고 팀이 액세스할 준비가 되었으므로 시스템 관리자는 팀 구성원을 AEM에 Admin Console의 Cloud Service 제품 프로필로 할당해야 합니다.
+
+다음에 AEM에 Cloud Service 제품 프로필로 팀 구성원 할당 문서를 검토하여 온보딩 여정을 계속해야 합니다.
 
 >[!NOTE]
 >Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여받으려면 두 제품 프로필 &#39;AEM 사용자&#39; 또는 &#39;AEM 관리자&#39; 중 하나에 속해야 합니다. 추가 정보.
@@ -128,7 +133,7 @@ ht-degree: 0%
 
 추가 리소스에 따라 다음 사항에 대해 자세히 알아보십시오.
 
-* 프로그램 유형 및 프로그램 추가
-* 환경 유형 및 환경 추가
-* Cloud Manager Git 관리
-* Admin Console에서 AEM as a Cloud Service에 대한 액세스 구성
+* [프로그램 유형 및 프로그램 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
+* [환경 유형 및 환경 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)
+* [Cloud Manager Git 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [Admin Console에서 AEM as a Cloud Service에 대한 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
