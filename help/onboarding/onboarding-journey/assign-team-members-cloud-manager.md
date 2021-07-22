@@ -4,9 +4,9 @@ description: 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## 전제 조건 {#prerequisites}
 
-이 섹션을 시작하기 전에 다음 전제 조건을 고려해야 합니다. 다음 형식이어야 합니다.
+이 섹션을 시작하기 전에 다음 전제 조건을 고려해야 합니다. 다음을 수행해야 합니다.
 
-* 시스템 관리자가 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)을 이해합니다.
+* 시스템 관리자가 되어 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)을 이해합니다.
 * [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) 기본 사항을 이해합니다.
-* 팀 구성원에 대한 세부 정보가 있어야 합니다. 시스템 관리자는 이름 및 전자 메일 주소와 AEM as a Cloud Service에 액세스해야 하는 팀 구성원의 역할 및 책임이 있어야 합니다.
+* 팀 구성원에 대한 세부 정보를 제공합니다. 시스템 관리자는 이름 및 전자 메일 주소와 AEM as a Cloud Service에 액세스해야 하는 팀 구성원의 역할 및 책임이 있어야 합니다.
 
    >[!NOTE]
    >온보딩을 위해 관리자, 개발자 및 컨텐츠 작성자와 같은 즉각적인 작업에 참여할 사용자를 처음에 추가하는 것이 좋습니다. 모든 사용자를 추가하지 않고 온보딩의 나머지 부분을 계속 진행할 수 있습니다. 온보딩을 완료하면 나중에 더 많은 사용자 수로 확장할 수 있습니다.
@@ -63,7 +63,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
    ![](/help/onboarding/onboarding-journey/assets/assign-team3.png)
 
 
-## 비즈니스 소유자 제품 프로필에 사용자 지정 {#assign-users-business-owner}
+## 비즈니스 소유자 제품 프로필에 사용자 할당 {#assign-users-business-owner}
 
 이제 사용자를 추가하고 Cloud Manager 비즈니스 소유자 제품 프로필에 할당할 준비가 되었습니다.
 
@@ -100,7 +100,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 
 축하합니다! 이제 &#39;비즈니스 소유자&#39; 역할에 지정된 자신을 포함하여 새롭게 구성된 Cloud Manager 팀이 설정되었습니다. 구성원은 로그인하여 Cloud Manager에 액세스할 수 있도록 초대하는 환영 이메일을 받게 됩니다. 비즈니스 소유자의 역할에서는 이제 Cloud Manager에 로그인하고 클라우드 리소스를 만들 수 있습니다.
 
-## 배포 관리자 제품 프로필에 사용자 할당 {#assign-users-deployment-manager}
+## 배포 관리자에 사용자 할당 제품 프로필 {#assign-users-deployment-manager}
 
 1. Cloud Manager 프로그램을 관리할 사용자를 식별하고 이를 Deployment Manager 제품 프로필에 추가합니다. 시스템 관리자는 Cloud Manager에 액세스하여 로그인한 첫 번째 사람이어야 합니다. 먼저 비즈니스 소유자 제품 프로필에 사용자(시스템 관리자)를 추가해야 합니다.
 
@@ -155,7 +155,9 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 
 ## 다음은 무엇입니까? {#whats-next}
 
-1. *비즈니스 소유자* 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다. Cloud Manager에 로그인하고 액세스하는 방법에 대해 알아보려면 [Cloud Manager로 이동](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)을 참조하십시오.
+이제 비즈니스 소유자, 배포 관리자 및 개발자와 같은 세 가지 다른 Cloud Manager 제품 프로필과 비즈니스 소유자, 배포 관리자 및 개발자와 같은 Cloud Manager 제품 프로필에 팀 구성원을 할당하고 나면 다음에 Cloud Manager를 통해 문서 설정 리소스를 검토하여 온보딩 여정을 계속 해야 합니다. 여기서 배울 수 있습니다.
+
+1. *비즈니스 소유자* 역할에 지정된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
 
 1. 다음으로, *비즈니스 소유자* 역할의 Cloud Manager 사용자는 클라우드 프로그램 및 환경을 포함하여 클라우드 리소스에 로그인하고 설정할 수 있습니다. 이렇게 하면 전문가 팀이 가능한 한 빨리 AEM에 Cloud Service으로 액세스할 수 있습니다.
 
