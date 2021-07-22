@@ -4,9 +4,9 @@ description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '643'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,10 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 
 ## 소개 {#introduction}
 
-이 안내서는 가장 중요한 주제를 안내합니다. 따라서 완료 시 다음 작업을 수행할 수 있습니다.
+이 안내서에서는 가장 중요한 주제를 안내하여 완료되면 다음과 같은 내용을 볼 수 있습니다.
 
-* AEM as a Cloud Service 온보딩 여정 동안 무엇을 기대하는지 완전히 이해합니다.
-* 팀이 AEM용 컨텐츠를 Cloud Service 애플리케이션으로서 작성 및 개발하는 방법을 학습하고 첫 번째 단계를 수행할 수 있도록 지원했습니다.
+* AEM as a Cloud Service 온보딩 여정 동안 예상되는 사항에 대한 전체 이해
+* 팀을 활성화하여 실행 중이며 AEM용 컨텐츠를 Cloud Service 애플리케이션으로서 작성 및 개발하는 방법을 학습하는 첫 번째 단계를 수행할 수 있습니다.
 
 이것의 의미는 다음과 같습니다.
 
@@ -35,6 +35,8 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 
 온보딩 여정은 아래에 표시되어 있고 여정의 각 단계는 다음 섹션에 자세히 설명되어 있습니다.
 
+![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
 ## 온보딩 여정 탐색 {#exploring-onboarding-journey}
 
 이 여정에서 많은 주제를 살펴봅니다. 다음 문서는 AEM as a Cloud Service에 대한 온보딩 단계에 대한 기본 지식을 제공합니다. 여정의 특정 부분으로 직접 이동할 수 있지만 많은 개념이 이전 문서의 개념에 구축됩니다. 따라서 온보딩을 처음 사용하는 경우에는 시작 부분부터 시작하여 순차적으로 진행하는 것이 좋습니다.
@@ -47,8 +49,8 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 | 3 | Cloud Manager 제품 프로필에 팀 구성원 할당 | Cloud Manager 제품 프로필을 검토하고 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방법을 알아보십시오. |
 | 4 | Cloud Manager를 통해 Cloud 리소스 설정 | 클라우드 리소스를 만드는 방법과 이를 수행할 수 있는 사용자를 알아봅니다. 또한 클라우드 프로그램 및 환경을 만드는 방법을 알아봅니다. |
 | 5 | AEM에 Cloud Service 제품 프로필로 팀 구성원 할당 | 시스템 관리자가 Cloud Service 제품 프로필로 팀 구성원을 AEM에 할당하는 방법을 알아보십시오. |
-| 6 | AEM 개발자 및 배포 관리자를 위한 학습 경로 | 개발자로서 Cloud Manager Git에 액세스 및 관리할 수 있는 방법과 배포 관리자로서 파이프라인을 설정하고 Cloud Manager에서 코드를 배포하는 방법을 알아봅니다. |
-| 7 | AEM 사용자를 위한 학습 경로 | AEM 작성자로서 Cloud Service 인스턴스로 AEM에 액세스하고 AEM용 컨텐츠를 Cloud Service으로 작성하는 방법에 대해 알아봅니다. |
+| 6 | AEM 개발자 및 배포 관리자를 위한 학습 경로 | 개발자로서 Cloud Manager Git에 액세스 및 관리할 수 있는 방법과 배포 관리자로서 Cloud Manager에서 파이프라인을 설정하고 코드를 배포할 수 있는 방법을 알아봅니다. |
+| 7 | AEM 사용자를 위한 학습 경로 | AEM 작성자로서 AEM as a Cloud Service 인스턴스에 액세스하고 AEM as a Cloud Service용 컨텐츠를 작성하는 방법에 대해 알아봅니다. |
 
 ## 다음은 무엇입니까? {#what-is-next}
 
