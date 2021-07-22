@@ -4,25 +4,25 @@ description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
 # Cloud Manager를 통해 Cloud 리소스 설정 {#setup-cloud-resources}
 
-&#39;비즈니스 소유자&#39; 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다. 뒤이어 &#39;비즈니스 소유자&#39; 제품 프로필에 할당된 팀 구성원은 Cloud Manager에 로그인하여 클라우드 프로그램 및 환경을 만들어야 전문가 팀을 시작할 수 있습니다.
+*비즈니스 소유자* 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다. 따라서 *비즈니스 소유자* 제품 프로필에 할당된 팀 구성원이 Cloud Manager에 로그인하여 클라우드 프로그램과 환경을 만들어야 전문가 팀을 시작할 수 있습니다.
 
 ## 목표 {#objective}
 
 이 문서는 클라우드 리소스를 만드는 방법과 이 작업을 수행할 수 있는 사용자를 이해하는 데 도움이 됩니다.
 
-이 섹션을 읽은 후에는 다음을 수행해야 합니다.
+이 섹션을 읽은 후에는 다음 사항을 이해해야 합니다.
 
-* &#39;비즈니스 소유자&#39; 역할에 할당된 시스템 관리자가 Cloud Manager에 먼저 액세스하여 로그인해야 한다는 것을 이해합니다
-* 클라우드 프로그램 및 환경을 만드는 방법을 이해합니다.
+* *비즈니스 소유자* 역할에 할당된 시스템 관리자는 Cloud Manager에 처음으로 액세스하여 로그인해야 합니다.
+* 클라우드 프로그램 및 환경을 만드는 방법.
 
 ## 소개 {#introduction}
 
@@ -32,36 +32,47 @@ ht-degree: 0%
 
 ### 전제 조건 {#prerequisites}
 
-* &#39;비즈니스 소유자&#39; 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
+* *비즈니스 소유자* 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
 
-* Cloud Manager 탐색 및 로그인 방법을 이해합니다
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)로 이동하여 로그인하는 방법을 이해합니다.
 
-* Cloud Manager 제품 프로필을 숙지하십시오
+* [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)에 익숙해지십시오.
 
 * 프로그램을 만들기 위한 고려 사항을 이해합니다. 자세한 내용은 이 비디오를 참조하십시오.
 
-* Cloud Manager 프로그램 및 환경의 개념 이해
+* Cloud Manager [프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) 및 [환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)의 개념을 이해합니다
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
-1. 비즈니스 소유자 사용자는 시작할 수 있는 위치에서 환영 이메일을 받거나 찾을 수 없는 경우 experience.adobe.com으로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
+1. *비즈니스 소유자* 사용자는 시작할 수 있는 위치에서 환영 이메일을 받거나, 찾을 수 없는 경우 [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
 
-1. Experience Cloud 홈페이지에서 Experience Manager을 선택합니다.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. Adobe Experience Cloud 홈 페이지에서 **Experience Manager**&#x200B;을 선택합니다.
 
-1. AEM 홈 페이지로 이동합니다. 여기에서 Cloud Manager를 선택합니다.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. AEM 홈 페이지로 이동합니다. 여기에서 **Cloud Manager** 를 시작합니다.
 
-1. 아래와 같이 Cloud Manager 랜딩 페이지로 이동합니다.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. 아래 그림과 같이 Cloud Manager 랜딩 페이지가 표시됩니다.
 
-1. 이제 비즈니스 소유자 제품 프로필이 할당되었는지 확인합니다. 이렇게 하려면 오른쪽 상단에서 아래 표시된 대로 프로필을 선택합니다.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. 비즈니스 소유자 제품 프로필이 할당되었는지 확인합니다. 이렇게 하려면 오른쪽 상단에서 아래 표시된 대로 프로필을 선택합니다.
 
-1. 이제 사용자 역할을 선택하고 비즈니스 소유자에게 할당되었는지 확인합니다.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. **사용자 역할**&#x200B;을 선택하고 비즈니스 소유자에게 할당되었는지 확인합니다.
 
-   잘했어요! Cloud Manager를 비즈니스 소유자로 로그인했습니다!
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. 이를 통해 비즈니스 소유자로서의 사용자 역할이 확인됩니다.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
+
+   잘했어요! 비즈니스 소유자로서 Cloud Manager에 성공적으로 로그인했습니다!
 
 ## Cloud Service 프로그램 만들기 {#create-cloud-service-program}
 
