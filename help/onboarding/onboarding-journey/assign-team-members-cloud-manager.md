@@ -4,7 +4,7 @@ description: 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
+source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
    >[!NOTE]
    >아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) 을 참조하십시오.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
    >[!NOTE]
    >사용자가 Cloud Manager에 액세스할 수 있도록 사용자를 하나 이상의 제품 프로필에 할당합니다. 비즈니스 소유자에게 사용자(시스템 관리자)를 할당해야 합니다.
@@ -121,7 +121,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
    >[!NOTE]
    >아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) 을 참조하십시오.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
    >[!IMPORTANT]
    >Cloud Manager 리소스를 만든 후 배포 관리자 제품 프로필에 사용자를 추가할 수 있습니다.
@@ -147,7 +147,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
    >[!NOTE]
    >아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) 을 참조하십시오.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
 
    >[!IMPORTANT]
