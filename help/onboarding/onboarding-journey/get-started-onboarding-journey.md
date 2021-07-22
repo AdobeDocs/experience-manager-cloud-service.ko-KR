@@ -1,17 +1,17 @@
 ---
-title: 온보딩 여정 시작
+title: 온보딩 프로세스 시작
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# 온보딩 여정 시작 {#getting-started}
+# 온보딩 프로세스 시작 {#getting-started}
 
 온보딩은 지정된 시스템 관리자가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 각 구성원이 Cloud Service 리소스로 AEM에 로그인하고 액세스할 수 있는 작업 권한에 따라 적절한 역할에 클라우드 리소스의 초기 프로비저닝 및 사용자 할당이 포함됩니다.
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 이 섹션을 읽은 후에는 다음을 수행할 수 있습니다.
 
-* Admin Console에 액세스하고 로그인하는 방법
+* Admin Console 액세스 및 로그인
 * Admin Console을 통해 시스템 관리자로서의 권한을 검토합니다.
 
 >[!NOTE]
@@ -67,5 +67,5 @@ Admin Console에서 시스템 관리자 역할을 Admin Console 및 검토하려
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 Admin Console에 로그인하여 시스템 관리자로 프로필을 검사했으므로 다음 Cloud Manager 제품 프로필에 팀 구성원 할당 문서를 검토하여 온보딩 여정을 계속해야 합니다.
+이제 Admin Console에 로그인하여 시스템 관리자로 프로필을 검사했으므로 Cloud Manager 제품 프로필에 팀 구성원 할당 문서를 검토하여 온보딩 여정을 계속 수행해야 합니다.
 
