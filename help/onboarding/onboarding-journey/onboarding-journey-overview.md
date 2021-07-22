@@ -4,9 +4,9 @@ description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 
 ## 소개 {#introduction}
 
-이 안내서는 가장 중요한 주제를 안내합니다. 따라서 독자가 완료되면 다음과 같은 내용을 읽을 수 있습니다.
+이 안내서는 가장 중요한 주제를 안내합니다. 따라서 완료 시 다음 작업을 수행할 수 있습니다.
 
 * AEM as a Cloud Service 온보딩 여정 동안 무엇을 기대하는지 완전히 이해합니다.
 * 팀이 AEM용 컨텐츠를 Cloud Service 애플리케이션으로서 작성 및 개발하는 방법을 학습하고 첫 번째 단계를 수행할 수 있도록 지원했습니다.
@@ -31,18 +31,13 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 
 ## 속성을 확인하는 {#audience}
 
-온보딩은 지정된 시스템 관리자가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 각 구성원이 Cloud Service 리소스로 AEM에 로그인하고 액세스할 수 있는 작업 권한에 따라 적절한 역할에 클라우드 리소스의 초기 프로비저닝 및 사용자 할당이 포함됩니다.
+온보딩은 지정된 [시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 각 구성원이 Cloud Service 리소스로 AEM에 로그인하고 액세스할 수 있는 작업 권한에 따라 적절한 역할에 클라우드 리소스의 초기 프로비저닝 및 사용자 할당이 포함됩니다.
 
 온보딩 여정은 아래에 표시되어 있고 여정의 각 단계는 다음 섹션에 자세히 설명되어 있습니다.
 
 ## 온보딩 여정 탐색 {#exploring-onboarding-journey}
 
-
 이 여정에서 많은 주제를 살펴봅니다. 다음 문서는 AEM as a Cloud Service에 대한 온보딩 단계에 대한 기본 지식을 제공합니다. 여정의 특정 부분으로 직접 이동할 수 있지만 많은 개념이 이전 문서의 개념에 구축됩니다. 따라서 온보딩을 처음 사용하는 경우에는 시작 부분부터 시작하여 순차적으로 진행하는 것이 좋습니다.
-
-이 여정에서 많은 주제를 살펴봅니다. 다음 문서는 온보딩 프로세스에 필요한 기본 지식을 제공하고 세부 기술 문서에 연결됩니다.
-
-여정의 특정 부분으로 직접 이동할 수 있지만 많은 개념이 이전 문서의 개념에 구축됩니다. 따라서 온보딩을 처음 사용하는 경우에는 먼저 가이드의 학습 온보딩 개념 섹션에 설명된 문서를 검토하는 것이 좋습니다.
 
 | # | 기사 | 설명 |
 |---|---|---|
