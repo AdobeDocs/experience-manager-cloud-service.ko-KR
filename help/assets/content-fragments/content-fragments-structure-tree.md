@@ -4,10 +4,10 @@ description: AEM에서 컨텐츠 조각 편집기의 구조 트리 기능을 사
 feature: 콘텐츠 조각
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 61e3b1d883afe0e9a873991fb8fd148de0fbcd4f
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 2%
+source-wordcount: '105'
+ht-degree: 1%
 
 ---
 
@@ -19,6 +19,10 @@ AEM에서 컨텐츠 조각 편집기의 구조 트리 기능을 사용하여 헤
 
 ![컨텐츠 조각 구조 트리](assets/cfm-structuretree-01.png)
 
-왼쪽 창에 조각 구조의 표현이 열립니다.
+이렇게 하면 왼쪽 창에서 조각 구조의 표현이 열립니다. 이를 사용하여 참조된 조각을 탐색하고 탐색할 수 있습니다.
+
+>[!NOTE]
+>
+>기본 패널에서 탐색 표시를 사용하여 시작 지점으로 다시 이동할 수 있습니다.
 
 ![컨텐츠 조각 구조 트리](assets/cfm-structuretree-02.png)
