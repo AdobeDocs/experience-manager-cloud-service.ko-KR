@@ -4,15 +4,15 @@ description: 팀 구성원을 AEM as a Cloud Service 제품 프로필로 할당�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
 
 
-# AEM에 Cloud Service 제품 프로필로 할당 {#assign-team-members-cloud-service}
+# AEM에 Cloud Service 제품 프로필로 팀 구성원 할당 {#assign-team-members-cloud-service}
 
 ## 목표 {#objective}
 
