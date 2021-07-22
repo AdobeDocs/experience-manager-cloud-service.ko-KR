@@ -4,9 +4,9 @@ description: 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 57b29f8ef6c65b5a752aca680557e75ba55f64bd
+source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -67,54 +67,90 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 
 이제 사용자를 추가하고 Cloud Manager 비즈니스 소유자 제품 프로필에 할당할 준비가 되었습니다.
 
-이렇게 하려면 Admin Console Adobe에서 제품(이 경우 Cloud Service으로 AEM) 및 Cloud Manager 비즈니스 소유자 제품 프로필에 사용자를 추가해야 합니다.
+>[!NOTE]
+>이렇게 하려면 Adobe Admin Console에서 사용자를 두 제품(이 경우 Cloud Service으로 AEM)과 [Cloud Manager Business Owner 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)에 모두 추가해야 합니다.
 
 다음 단계는 이 단계를 안내합니다.
 
-1. Cloud Manager 프로그램을 관리할 사용자를 식별하고 사용자를 비즈니스 소유자 제품 프로필에 추가합니다. 시스템 관리자가 Cloud Manager에 처음으로 액세스하여 로그인해야 합니다. 먼저 비즈니스 소유자 제품 프로필에 사용자(시스템 관리자)를 추가해야 합니다.
+1. Cloud Manager 프로그램을 관리할 사용자를 식별하고 사용자를 비즈니스 소유자 제품 프로필에 추가합니다. 시스템 관리자는 Cloud Manager에 액세스하여 로그인한 첫 번째 사람이어야 합니다. 먼저 비즈니스 소유자 제품 프로필에 사용자(시스템 관리자)를 추가해야 합니다.
 
-1. Admin Console 개요 페이지에서, 아래와 같이 제품 및 서비스 카드에서 Cloud Service 제품으로 Adobe Experience Manager 를 선택합니다.
+1. [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **개요** 페이지에서 **Adobe Experience Manager을**&#x200B;제품 및 서비스&#x200B;**카드에서 Cloud Service** 제품으로 선택하십시오.
 
-1. 위쪽 탐색에서 사용자 탭을 선택한 다음 사용자 추가를 선택합니다.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. 사용자 추가 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다. ID 유형에 대해 팀 구성원의 Federated ID이 아직 설정되지 않은 경우 Adobe ID 을 선택합니다.
+1. 위쪽 탐색에서 **사용자** 탭을 선택한 다음 **사용자 추가**&#x200B;를 선택합니다.
 
-1. 제품 선택에서 &#39;Adobe Experience Manager as a Cloud Service&#39;을 선택하고 아래 표시된 대로 사용자에게 &#39;비즈니스 소유자&#39; 제품 프로필을 할당합니다. 아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 Cloud Manager 제품 프로필을 참조하십시오.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
 
-1. 사용자가 Cloud Manager에 액세스할 수 있도록 사용자를 하나 이상의 제품 프로필에 할당합니다. &#39;비즈니스 소유자&#39;에 사용자(시스템 관리자)를 할당해야 합니다.
+1. **사용자를 팀에 추가** 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다. ID 유형에 대해 팀 구성원의 Federated ID이 아직 설정되지 않은 경우 Adobe ID을 선택합니다.
 
-1. 저장을 클릭합니다. 추가한 사용자에게 환영 이메일이 전송됩니다. 초대받은 사용자는 환영 이메일에서 링크를 클릭하고 Adobe ID을 사용하여 로그인하여 Cloud Manager에 액세스할 수 있습니다.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. 제품 선택에서 **Adobe Experience Manager을 Cloud Service**&#x200B;로 선택하고 아래 표시된 대로 **비즈니스 소유자** 제품 프로필을 사용자에게 할당합니다.
+
+   >[!NOTE]
+   >아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) 을 참조하십시오.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+   >[!NOTE]
+   >사용자가 Cloud Manager에 액세스할 수 있도록 사용자를 하나 이상의 제품 프로필에 할당합니다. 비즈니스 소유자에게 사용자(시스템 관리자)를 할당해야 합니다.
+
+1. **저장**&#x200B;을 클릭합니다. 추가한 사용자에게 환영 이메일이 전송됩니다. 초대받은 사용자는 환영 이메일에서 링크를 클릭하고 Adobe ID을 사용하여 로그인하여 Cloud Manager에 액세스할 수 있습니다.
 
 축하합니다! 이제 &#39;비즈니스 소유자&#39; 역할에 지정된 자신을 포함하여 새롭게 구성된 Cloud Manager 팀이 설정되었습니다. 구성원은 로그인하여 Cloud Manager에 액세스할 수 있도록 초대하는 환영 이메일을 받게 됩니다. 비즈니스 소유자의 역할에서는 이제 Cloud Manager에 로그인하고 클라우드 리소스를 만들 수 있습니다.
 
 ## 배포 관리자 제품 프로필에 사용자 할당 {#assign-users-deployment-manager}
 
-1. Cloud Manager 프로그램을 관리할 사용자를 식별하고 사용자를 비즈니스 소유자 제품 프로필에 추가합니다. 시스템 관리자가 Cloud Manager에 처음으로 액세스하여 로그인해야 합니다. 먼저 비즈니스 소유자 제품 프로필에 사용자(시스템 관리자)를 추가해야 합니다.
+1. Cloud Manager 프로그램을 관리할 사용자를 식별하고 이를 Deployment Manager 제품 프로필에 추가합니다. 시스템 관리자는 Cloud Manager에 액세스하여 로그인한 첫 번째 사람이어야 합니다. 먼저 비즈니스 소유자 제품 프로필에 사용자(시스템 관리자)를 추가해야 합니다.
 
-1. Admin Console 개요 페이지에서, 아래와 같이 제품 및 서비스 카드에서 Cloud Service 제품으로 Adobe Experience Manager 를 선택합니다.
+1. [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **개요** 페이지에서 **Adobe Experience Manager을**&#x200B;제품 및 서비스&#x200B;**카드에서 Cloud Service** 제품으로 선택하십시오.
 
-1. 위쪽 탐색에서 사용자 탭을 선택한 다음 사용자 추가를 선택합니다.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. 사용자 추가 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다. ID 유형에 대해 팀 구성원의 Federated ID이 아직 설정되지 않은 경우 Adobe ID 을 선택합니다.
+1. 위쪽 탐색에서 **사용자** 탭을 선택한 다음 **사용자 추가**&#x200B;를 선택합니다.
 
-1. 제품 선택에서 &#39;Adobe Experience Manager as a Cloud Service&#39;을 선택하고 아래 표시된 대로 사용자에게 &#39;배포 관리자&#39; 제품 프로필을 할당합니다. 아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 Cloud Manager 제품 프로필을 참조하십시오.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
+
+1. **사용자를 팀에 추가** 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다. ID 유형에 대해 팀 구성원의 Federated ID이 아직 설정되지 않은 경우 Adobe ID을 선택합니다.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. 제품 선택에서 **Adobe Experience Manager을 Cloud Service**&#x200B;로 선택하고 아래 표시된 대로 **배포 관리자** 제품 프로필을 사용자에게 할당합니다.
 
    >[!NOTE]
+   >아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) 을 참조하십시오.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+
+   >[!IMPORTANT]
    >Cloud Manager 리소스를 만든 후 배포 관리자 제품 프로필에 사용자를 추가할 수 있습니다.
 
 ## 개발자 제품 프로필에 사용자 할당 {#assign-users-developer}
 
-1. Cloud Manager 프로그램을 관리할 사용자를 식별하고 사용자를 비즈니스 소유자 제품 프로필에 추가합니다. 시스템 관리자가 Cloud Manager에 처음으로 액세스하여 로그인해야 합니다. 먼저 비즈니스 소유자 제품 프로필에 사용자(시스템 관리자)를 추가해야 합니다.
+1. Cloud Manager 프로그램을 관리할 사용자를 식별하고 개발자 제품 프로필에 추가합니다. 시스템 관리자는 Cloud Manager에 액세스하여 로그인한 첫 번째 사람이어야 합니다. 먼저 비즈니스 소유자 제품 프로필에 사용자(시스템 관리자)를 추가해야 합니다.
 
-1. Admin Console 개요 페이지에서, 아래와 같이 제품 및 서비스 카드에서 Cloud Service 제품으로 Adobe Experience Manager 를 선택합니다.
+1. [Admin Console](https://adminconsole.adobe.com/enterprise/overview) **개요** 페이지에서 **Adobe Experience Manager을**&#x200B;제품 및 서비스&#x200B;**카드에서 Cloud Service** 제품으로 선택하십시오.
 
-1. 위쪽 탐색에서 사용자 탭을 선택한 다음 사용자 추가를 선택합니다.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
-1. 사용자 추가 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다. ID 유형에 대해 팀 구성원의 Federated ID이 아직 설정되지 않은 경우 Adobe ID 을 선택합니다.
+1. 위쪽 탐색에서 **사용자** 탭을 선택한 다음 **사용자 추가**&#x200B;를 선택합니다.
 
-1. 제품 선택에서 &#39;Adobe Experience Manager as a Cloud Service&#39;을 선택하고 아래 표시된 대로 &#39;개발자&#39; 제품 프로필을 사용자에게 할당합니다. 아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 Cloud Manager 제품 프로필을 참조하십시오.
+   ![](/help/onboarding/onboarding-journey/assets/assign-team4.png)
+
+1. **사용자를 팀에 추가** 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다. ID 유형에 대해 팀 구성원의 Federated ID이 아직 설정되지 않은 경우 Adobe ID을 선택합니다.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+
+1. 제품 선택에서 **Adobe Experience Manager을 Cloud Service**&#x200B;로 선택하고 아래 표시된 대로 **개발자** 제품 프로필을 사용자에게 할당합니다.
 
    >[!NOTE]
+   >아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) 을 참조하십시오.
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+
+
+   >[!IMPORTANT]
    >Cloud Manager 리소스를 만든 후 개발자 제품 프로필에 사용자를 추가할 수 있습니다.
 
 ## 다음은 무엇입니까? {#whats-next}
@@ -130,6 +166,6 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 
 추가 리소스에 따라 다음 사항에 대해 자세히 알아보십시오.
 
-* Cloud Manager
-* Cloud Manager 제품 프로필
-* Admin Console ID 개요
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)
+* [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)
+* [Admin Console ID 개요](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)
