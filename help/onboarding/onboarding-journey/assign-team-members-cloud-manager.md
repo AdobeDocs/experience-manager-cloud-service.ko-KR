@@ -4,9 +4,9 @@ description: 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -155,12 +155,11 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 
 ## 다음은 무엇입니까? {#whats-next}
 
-*비즈니스 소유자* 역할에 지정된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
->[!NOTE]
->Cloud Manager에 로그인하고 액세스하는 방법에 대해 알아보려면 [Cloud Manager로 이동](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)을 참조하십시오.
+1. *비즈니스 소유자* 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다. Cloud Manager에 로그인하고 액세스하는 방법에 대해 알아보려면 [Cloud Manager로 이동](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)을 참조하십시오.
 
-비즈니스 소유자 역할의 Cloud Manager 사용자는 프로그램 및 환경을 포함하여 클라우드 리소스에 로그인하고 설정할 수 있습니다. 이렇게 하면 전문가 팀이 가능한 한 빨리 AEM에 Cloud Service으로 액세스할 수 있습니다.
-비즈니스 소유자가 클라우드 리소스를 설정한 후 Cloud Manager 제품 프로필에 성공적으로 추가된 개발자 및 배포 관리자는 Cloud Manager에 액세스하여 학습 경로를 계속 진행할 수 있는 방법에 대해 숙지할 수 있습니다.
+1. 다음으로, *비즈니스 소유자* 역할의 Cloud Manager 사용자는 클라우드 프로그램 및 환경을 포함하여 클라우드 리소스에 로그인하고 설정할 수 있습니다. 이렇게 하면 전문가 팀이 가능한 한 빨리 AEM에 Cloud Service으로 액세스할 수 있습니다.
+
+1. *비즈니스 소유자*&#x200B;가 클라우드 리소스를 설정한 후 Cloud Manager 제품 프로필에 성공적으로 추가된 *개발자* 및 *배포 관리자*&#x200B;가 Cloud Manager에 액세스하여 학습 경로를 계속 진행할 수 있는 방법에 대해 숙지할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
