@@ -4,10 +4,10 @@ description: AEM에서 컨텐츠 조각에 대한 메타데이터 속성을 보�
 feature: 콘텐츠 조각
 role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 4d20b83c3324e5c082c26e2fa700f03763da2d19
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 54%
+source-wordcount: '208'
+ht-degree: 37%
 
 ---
 
@@ -34,5 +34,7 @@ AEM에서 컨텐츠 조각에 대한 메타데이터 속성을 보고 편집하�
    * **제목**
    * **설명**
    * **태그**
+      * [](/help/sites-cloud/authoring/features/tags.md) 태그는 컨텐츠 분류 및 분류법에 사용할 수 있으므로 조각을 구성할 때 특히 유용합니다. 태그는 컨텐츠를 찾고(태그별) 벌크 작업을 적용하는 데 사용할 수 있습니다.
+예를 들어 관련 조각에 &quot;크리스마스 시작&quot;으로 태그를 지정하여 하위 집합으로 검색할 수 있도록 하거나, 새 폴더에서 다른 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
    * 작성일(표시만)
    ![메타데이터](assets/cfm-metadata-02.png)
