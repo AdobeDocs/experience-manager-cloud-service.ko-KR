@@ -4,9 +4,9 @@ description: Dynamic Media에서 뷰어 사전 설정을 만들고 관리하는 
 feature: 뷰어 사전 설정,뷰어
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4231'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 * Apple iPad
 * Android™ Smartphone
 * Android™ 태블릿
-* 비디오의 경우 [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) 및 [Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))에 대해 MP4 재생에 대한 추가 지원이 제공됩니다.
+* 비디오의 경우 [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) 및 [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)에 대해 MP4 재생에 대한 추가 지원이 제공됩니다.
 
 ### 뷰어 사전 설정에 대한 리치 미디어 유형 {#rich-media-types-for-viewer-presets}
 
