@@ -4,9 +4,9 @@ description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -83,40 +83,55 @@ Cloud Manager에서 클라우드 서비스 프로그램을 만들려면 아래 �
    >[!NOTE]
    >이 단계를 성공적으로 완료하려면 Cloud Manager 비즈니스 소유자 제품 프로필에 할당된 팀 구성원이어야 합니다.
 
-1. 여기에서 프로그램 추가 마법사를 시작하려면 프로그램 추가를 선택합니다. 프로그램을 만들기 전에 AEMaaCS 프로그램을 만드는 방법과 중요한 고려 사항을 살펴보려면 비디오를 시청하십시오.
+   여기서 **프로그램 추가**&#x200B;를 클릭하여 프로그램 추가 마법사를 시작합니다.
 
-1. 프로그램 추가 마법사를 사용하는 방법에 대한 단계별 지침을 보려면 여기 로 이동하십시오.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
-   >[!CAUTION]
-   >만든 후에는 프로그램 이름을 변경할 수 없습니다. 프로그램에 어떤 이름을 지정할 것인지 확인하는 것이 좋습니다.
+   >[!NOTE]
+   >AEM as a Cloud Program을 만들고 프로그램을 만들기 전에 중요한 고려 사항에 대해 알아보려면 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)를 시청하십시오.
 
-   프로그램 이름을 변경해야 하는 경우, Adobe 지원이 있는 사례를 열거나 Adobe 담당자에게 문의하십시오. 그들은 프로그램을 효과적으로 삭제하는 데 도움을 줄 것이다. 팀원들이 한 잠재적인 업무 손실과 함께 처음부터 다시 시작해야 합니다.
+   >[!IMPORTANT]
+   >프로그램 추가 마법사를 사용하는 방법에 대한 단계별 지침을 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en)로 이동하십시오.
+   >
+   >* 만든 후에는 프로그램 이름을 변경할 수 없습니다. 프로그램에 어떤 이름을 지정할 것인지 확인하는 것이 좋습니다.
+   >* 프로그램 이름을 변경해야 하는 경우, Adobe 지원이 있는 사례를 열거나 Adobe 담당자에게 문의하십시오. 그들은 프로그램을 효과적으로 삭제하는 데 도움을 줄 것이다. 팀원들이 한 잠재적인 업무 손실과 함께 처음부터 다시 시작해야 합니다.
 
-1. 클라우드 프로그램을 성공적으로 만들면 프로그램으로 이동하여 아래와 같이 프로그램의 개요 페이지를 볼 수 있습니다.
 
-1. 개발자 구성원을 아직 추가하지 않은 경우 지금이 Cloud Manager 팀에 추가할 적기입니다. 개발자 제품 프로필에 사용자 추가 로 이동하여 요약된 단계를 수행하십시오.
+1. 클라우드 프로그램을 성공적으로 만들면 프로그램으로 이동하여 아래와 같이 프로그램의 **개요** 페이지를 볼 수 있습니다.
 
-1. 개발자 제품 프로필에 할당된 구성원은 Cloud Manager에 로그인하고 Cloud Manager Git을 관리할 수 있습니다.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources8.png)
 
+   >[!NOTE]
+   >아직 그렇게 하지 않았다면 지금이 Cloud Manager 팀에 개발자 구성원을 추가할 적기입니다. 개발자 제품 프로필에 사용자 추가 를 참조하여 요약된 단계를 따르십시오.
+
+1. 개발자 제품 프로필에 할당된 구성원은 Cloud Manager 및 [Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)에 로그인할 수 있습니다.
 
    잘했어요! 이제 프로그램이 성공적으로 만들어지면 개발자가 액세스할 수 있는 Cloud Manager Git을 사용할 수 있습니다.
 
 
 ## 클라우드 환경 만들기 {#create-cloud-environments}
 
+클라우드 프로그램을 성공적으로 만든 후 클라우드 환경을 만듭니다.
+
 Cloud Manager에서 클라우드 환경을 만들려면 아래 절차를 따르십시오.
 
-1. 클라우드 프로그램을 성공적으로 만든 후에는 Cloud Manager 개요 페이지로 이동하고 환경 카드에서 추가 를 선택하여 클라우드 환경을 만듭니다.
+1. Cloud Manager의 **개요** 페이지로 이동하고 환경 카드에서 **추가**&#x200B;를 선택합니다.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources9.png)
 
    >[!IMPORTANT]
    >이 단계를 성공적으로 완료하려면 비즈니스 소유자 또는 배포 관리자 역할의 Cloud Manager 사용자가 로그인해야 합니다.
 
-   또한 빠른 비디오 자습서를 시청하여 Cloud Manager 환경과 이를 프로그램에 추가하는 방법을 알아보십시오.
+   또한 빠른 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en) 자습서를 시청하여 Cloud Manager 환경과 이를 프로그램에 추가하는 방법을 알아보십시오.
 
-1. 이렇게 하면 환경 추가를 안내하는 환경 추가 마법사가 시작됩니다. 먼저 개발 환경을 추가하여 익숙해지십시오.
+1. 이렇게 하면 환경 추가를 안내하는 환경 추가 마법사가 시작됩니다. 먼저 개발 환경을 추가하여 익숙해지십시오. 자세한 내용은 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)를 참조하십시오.
 
-1. 아직 추가하지 않은 경우 계속해서 개발자 구성원을 Cloud Manager 팀에 추가하고 개발자 제품 프로필에 사용자 추가로 이동하여 요약된 단계를 따를 수 있습니다. 이러한 방식으로 개발자는 Cloud Manager로 이동 및 Cloud Manager Git 관리를 시작할 수 있습니다.
+   >[!NOTE]
+   >아직 그렇게 하지 않았다면 지금이 Cloud Manager 팀에 개발자 구성원을 추가할 적기입니다. 개발자 제품 프로필에 사용자 추가 를 참조하여 요약된 단계를 따르십시오.
 
+1. 개발자 제품 프로필에 할당된 구성원은 Cloud Manager 및 [Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)에 로그인할 수 있습니다.
+
+   잘했어요! 이제 프로그램이 성공적으로 만들어지면 개발자가 액세스할 수 있는 Cloud Manager Git을 사용할 수 있습니다.
 
    축하합니다! 이제 클라우드 프로그램 환경이 만들어졌고 개발자가 팀에 추가되었습니다!
 
