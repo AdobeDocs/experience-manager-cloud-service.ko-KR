@@ -4,9 +4,9 @@ description: AEM 사용자인 경우 액세스 권한을 얻은 후 다음 단�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bfed38bbb0a08e9d6484ec579c4b11d04282473b
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '335'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ AEM을 Cloud Service 팀으로 설정할 때 시스템 관리자가 필요한 �
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 페이지 작성 및 게시 학습 경로를 시작할 준비가 되었습니다. 자세한 내용은 페이지 작성에 대한 빠른 시작 안내서 를 참조하십시오.
+이제 페이지 작성 및 게시 학습 경로를 시작할 준비가 되었습니다. 그 다음 AEM 사용자를 위한 학습 경로 문서를 검토하여 경로를 따라야 합니다.
 
 ## 추가 리소스 {#additional-resources}
 
