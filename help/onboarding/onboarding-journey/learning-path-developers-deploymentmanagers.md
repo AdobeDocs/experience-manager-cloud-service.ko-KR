@@ -4,9 +4,9 @@ description: 개발자 또는 배포 관리자인 경우 액세스 권한을 얻
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ Cloud Manager로 이동하여 로그인하는 방법을 이해합니다
 
 ## 다음은 무엇입니까? {#whats-next}
 
-개발자 및 배포 관리자가 이제 AEMaaCS에서 코드를 개발하는 방법에 대해 잘 알 수 있습니다. 아래의 추가 리소스 섹션에서 자세한 내용을 살펴보거나 추가 학습 경로를 찾을 수 있습니다.
+개발자 및 배포 관리자가 이제 AEM에서 코드를 Cloud Service으로 개발하는 방법을 잘 알 수 있습니다. 아래의 추가 리소스 섹션에서 자세한 내용을 살펴보거나 추가 학습 경로를 찾을 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
