@@ -1,13 +1,13 @@
 ---
 title: 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] 에서 사용 중단되거나 제거된 API에 관한 릴리스 노트입니다.  [!DNL Cloud Service]'
-source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
+exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
+source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
 
 ---
-
 
 # 사용되지 않는 API {#deprecated-apis}
 
@@ -64,7 +64,7 @@ ht-degree: 7%
     <td>org.json</td>
     <td><a href="https://johnzon.apache.org/index.html">javax.json</a>의 Apache Johnzon 구현이 권장되며 사용해야 합니다. </td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
@@ -76,13 +76,13 @@ ht-degree: 7%
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>Commons Lang 2가 유지 관리 모드에 있습니다. Commons Lang 3을 대신 사용해야 합니다.</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>Commons Collections 3은 유지 관리 모드입니다. Commons Collections 4 는 대신 사용해야 합니다.</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>12/31/21</td>
   </tr>
   <tr>
     <td>org.apache.felix.systemready</td>
