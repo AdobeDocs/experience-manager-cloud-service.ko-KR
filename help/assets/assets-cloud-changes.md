@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: 릴리스 정보
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f0f5d04269ae01f28ce88e87c3269efaf21e657
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '963'
 ht-degree: 5%
 
 ---
@@ -56,13 +56,14 @@ ht-degree: 5%
 | 메타데이터 원본에 쓰기 | 다르게 작동합니다. | 기본적으로 비활성화됨. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 원본에 쓰기 작업은 자산 마이크로서비스에 의해 처리됩니다. |
 | 패키지 관리자를 사용하여 업로드한 자산 처리 | 수작업 필요. | **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동으로 다시 처리합니다. |
 | MIME 유형 탐지 | 지원되지 않음. | 확장 없이 또는 잘못된 확장이 있는 디지털 자산을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)에서 [MIME 유형 감지를 참조하십시오. |
-| 조합 자산에 대한 하위 자산 생성 또는 주석 달기 | 지원되지 않음. | 종속 사용 사례는 이행되지 않습니다. 예를 들어 다중 페이지 PDF, INDD, PPT, PPTX 및 AI 파일을 보거나 주석을 달 수 없습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 만들기를 참조하십시오. |
+| 조합 자산에 대한 하위 자산 생성 또는 주석 달기 | 지원되지 않음. | 종속 사용 사례는 이행되지 않을 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)에서 [하위 자산 만들기를 참조하십시오. |
 | 홈 페이지 | 지원되지 않음. | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) 참조 |
 | ZIP 보관소에서 자산 추출 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)에서 [ZIP 추출 을 참조하십시오. |
 | 자산 등급 | 지원되지 않음. | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
 | 콘텐츠 처리 필터 | 지원되지 않음. | `ContentDispositionFilter`의 일반적인 사용 사례는 관리자가 HTML 파일을 제공하고 PDF 파일을 다운로드하는 대신 인라인으로 열기 위해 [!DNL Experience Manager]을(를) 구성할 수 있도록 하는 것입니다. 게시 인스턴스에서 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성자 인스턴스에서 Adobe은 컨텐츠 처리 헤더를 수정하는 것을 권장하지 않습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)에서 [컨텐츠 처리 필터를 참조하십시오. |
 | [보고서 다운로드](/help/assets/asset-reports.md) | 지원되지 않음. | 현재, 자산 사용을 알리는 다운로드 보고서를 사용할 수 없습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)에서 [보고서 다운로드 를 참조하십시오. |
 | 제품 사진 촬영 템플릿 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)에서 [제품 사진 촬영 템플릿을 참조하십시오. |
+| 스마트 번역 | 지원되지 않음. | [스마트 ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 번역은  [!DNL Experience Manager] 로 지원되지  [!DNL Cloud Service]않습니다. |
 | 클래식 UI | 지원되지 않음. | 터치 사용 사용자 인터페이스만 사용할 수 있습니다. |
 
 >[!MORELIKETHIS]
