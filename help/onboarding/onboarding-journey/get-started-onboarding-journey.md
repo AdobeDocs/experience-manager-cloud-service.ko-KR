@@ -4,16 +4,16 @@ description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '517'
+ht-degree: 0%
 
 ---
 
 # 온보딩 프로세스 시작 {#getting-started}
 
-온보딩은 지정된 시스템 관리자가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 각 구성원이 Cloud Service 리소스로 AEM에 로그인하고 액세스할 수 있는 작업 권한에 따라 적절한 역할에 클라우드 리소스의 초기 프로비저닝 및 사용자 할당이 포함됩니다.
+온보딩은 지정된 [시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 초기 클라우드 리소스 프로비저닝 및 작업 권한에 따라 적절한 역할에 사용자를 할당하여 각 구성원이 AEM에 Cloud Service 리소스로 로그인하고 액세스할 수 있게 됩니다.
 
 ## 목표 {#objective}
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 이 섹션을 읽은 후에는 다음을 수행할 수 있습니다.
 
-* Admin Console 액세스 및 로그인
+* Admin Console에 액세스하고 로그인합니다.
 * Admin Console을 통해 시스템 관리자로서의 권한을 검토합니다.
 
 >[!NOTE]
@@ -42,12 +42,12 @@ Admin Console에서 시스템 관리자 역할을 Admin Console 및 검토하려
 
    ![](/help/onboarding/onboarding-journey/assets/sys-admin-getstarted.png)
 
-1. Adobe ID를 사용하여 로그인합니다. 로그인하면 아래와 같이 Adobe Admin Console의 **개요** 페이지가 표시됩니다.
+1. [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)을 사용하여 로그인합니다. 로그인하면 아래와 같이 Adobe Admin Console의 **개요** 페이지가 표시됩니다.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
 
    >[!NOTE]
-   >여러 조직에 대한 액세스 권한이 있는 경우 올바른 조직에 로그인했는지 확인하십시오. 조직을 변경하려면 작업 표시줄에서 조직 이름을 클릭하고 아래 그림과 같이 액세스 권한이 필요한 조직을 선택하십시오.
+   >여러 조직에 대한 액세스 권한이 있는 경우 올바른 조직에 로그인했는지 확인하십시오. 조직을 변경하려면 오른쪽 상단 모서리에서 조직 이름을 클릭하고 아래 그림과 같이 액세스 권한이 필요한 조직을 선택하십시오.
 
    ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
