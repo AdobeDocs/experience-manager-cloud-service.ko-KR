@@ -5,16 +5,16 @@ contentOwner: AG
 feature: 자산 관리
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1025'
+ht-degree: 3%
 
 ---
 
 # [!DNL Adobe Experience Manager]에서 자산 다운로드 {#download-assets-from-aem}
 
-정적 및 동적 표현물을 포함한 자산을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 자산에 대한 링크가 있는 이메일을 보낼 수 있습니다. 다운로드한 자산은 ZIP 파일에 번들로 제공됩니다.<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
+정적 및 동적 표현물을 포함한 자산을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 자산에 대한 링크가 있는 이메일을 보낼 수 있습니다. 다운로드한 자산은 ZIP 파일에 번들로 제공됩니다. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 4%
 
 ![다운로드 알림](assets/download-notification.png)
 
-*그림:받은 편지함을 통해 알림을  [!DNL Experience Manager] 다운로드합니다.*
+*그림: 받은 편지함을 통해 알림을  [!DNL Experience Manager] 다운로드합니다.*
 
 다음 경우 비동기 다운로드가 트리거됩니다.
 
@@ -51,7 +51,7 @@ ht-degree: 4%
 
    ![다음에서 자산을 다운로드할 때 사용할 수 있는 옵션  [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
-   *그림:다운로드 대화 상자 옵션.*
+   *그림: 다운로드 대화 상자 옵션.*
 
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
@@ -109,6 +109,6 @@ DAM에서 자산을 다운로드할 수 있도록 하려면 Asset Share Commons 
 >[!MORELIKETHIS]
 >
 >* [DRM 보호 자산 다운로드](drm.md)
-* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 자산 다운로드](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)
+* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 자산 다운로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 * [지원되는 Adobe Creative Cloud 앱 내에서 Adobe 자산 링크를 사용하여 자산을 다운로드합니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
