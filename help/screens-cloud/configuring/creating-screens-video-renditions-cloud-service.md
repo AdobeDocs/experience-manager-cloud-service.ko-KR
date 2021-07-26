@@ -1,9 +1,9 @@
 ---
 title: Screens에서 Cloud Service으로 스크린 비디오 표현물 만들기
 description: 이 페이지에서는 Screens에서 Cloud Service으로 화면 비디오 표현물을 만드는 방법을 설명합니다.
-source-git-commit: b8691bb77079eeb7efd141ce89c44c5a312262b3
+source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,24 @@ ht-degree: 0%
 
 ## Screens에서 Cloud Service으로 화면 비디오 표현물을 만드는 절차 {#steps-creating-screens-video-renditions}
 
-1. Screens 클라우드 UI에서 채널로 이동합니다.
-1. 왼쪽 상단 모서리의 Adobe Experience Manager을 클릭하여 스크린 컨텐츠 공급자, 즉 AEM as a Cloud Service으로 이동합니다.
-1. 지금 기본 탐색에서 도구 섹션을 클릭하고 &quot;자산&quot;을 클릭한 다음 &quot;처리 프로필&quot;을 클릭합니다
+1. 스크린 컨텐츠 제공자에서 채널로 이동합니다.
 
-1. 새 처리 프로필을 만들려면 &quot;만들기&quot;를 클릭하십시오
-1. &quot;ScreensProcessingProfile&quot;과 같은 이름을 제공합니다
-1. 비디오 탭으로 이동하여 비디오 인코딩을 추가하고 &quot;새로 추가&quot;를 클릭합니다
+   >[!NOTE]
+   >자세한 내용은 [스크린 컨텐츠 공급자 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider)을 참조하십시오.
+
+1. 왼쪽 탐색 막대에서 도구 섹션을 클릭하고 **자산**&#x200B;을 클릭한 다음 **처리 프로필**&#x200B;을 클릭합니다.
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. **만들기**&#x200B;를 클릭하여 새 처리 프로필을 만듭니다.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. **이름**(예: **ScreensProcessingProfile**)을 입력합니다.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. **비디오** 탭으로 이동하여 비디오 인코딩을 추가하고 **새로 추가**&#x200B;를 클릭합니다.
 
 
    >[!IMPORTANT]
