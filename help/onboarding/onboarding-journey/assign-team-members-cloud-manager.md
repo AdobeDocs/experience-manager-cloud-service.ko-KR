@@ -4,9 +4,9 @@ description: 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 목표 {#objective}
 
-이 문서에서는 Admin Console에서 Cloud Manager 제품 프로필에 팀 구성원을 할당하는 방법을 요약합니다.
+이 문서에서는 Adobe Admin Console에서 Cloud Manager 제품 프로필에 팀 구성원을 할당하는 방법을 요약합니다.
 
 이 섹션을 읽은 후에는 다음을 수행할 수 있습니다.
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## Cloud Manager 제품 프로필 검토 {#review-product-profiles}
 
-Admin Console에서 Cloud Manager 프로필 목록을 볼 수 있습니다.
+Adobe Admin Console에서 Cloud Manager 프로필 목록을 확인할 수 있습니다.
 
 >[!NOTE]
 >Admin Console에서 Cloud Manager 제품 프로필을 검토하기 전에 사용 가능한 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)을 검토하는 것이 좋습니다.
@@ -89,7 +89,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 1. 제품 선택에서 **Adobe Experience Manager을 Cloud Service**&#x200B;로 선택하고 아래 표시된 대로 **비즈니스 소유자** 제품 프로필을 사용자에게 할당합니다.
 
    >[!NOTE]
-   >아래에서 보듯이 적절한 사용자에게 Admin Console에서 적절한 역할이 할당되었는지 확인하려면 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) 을 참조하십시오.
+   >아래 그림과 같이 [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)을 참조하여 올바른 사용자에게 Admin Console에서 올바른 역할이 지정되는지 확인하십시오.
 
    ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
@@ -98,7 +98,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 
 1. **저장**&#x200B;을 클릭합니다. 추가한 사용자에게 환영 이메일이 전송됩니다. 초대받은 사용자는 환영 이메일에서 링크를 클릭하고 Adobe ID을 사용하여 로그인하여 Cloud Manager에 액세스할 수 있습니다.
 
-축하합니다! 이제 &#39;비즈니스 소유자&#39; 역할에 지정된 자신을 포함하여 새롭게 구성된 Cloud Manager 팀이 설정되었습니다. 구성원은 로그인하여 Cloud Manager에 액세스할 수 있도록 초대하는 환영 이메일을 받게 됩니다. 비즈니스 소유자의 역할에서는 이제 Cloud Manager에 로그인하고 클라우드 리소스를 만들 수 있습니다.
+   축하합니다! 이제 &#39;비즈니스 소유자&#39; 역할에 지정된 자신을 포함하여 새롭게 구성된 Cloud Manager 팀이 설정되었습니다. 구성원은 로그인하여 Cloud Manager에 액세스할 수 있도록 초대하는 환영 이메일을 받게 됩니다. 비즈니스 소유자의 역할에서는 이제 Cloud Manager에 로그인하고 클라우드 리소스를 만들 수 있습니다.
 
 ## 배포 관리자에 사용자 할당 제품 프로필 {#assign-users-deployment-manager}
 
@@ -155,7 +155,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 비즈니스 소유자, 배포 관리자 및 개발자와 같은 세 가지 다른 Cloud Manager 제품 프로필과 비즈니스 소유자, 배포 관리자 및 개발자와 같은 Cloud Manager 제품 프로필에 팀 구성원을 할당하고 나면 다음에 Cloud Manager를 통해 문서 설정 리소스를 검토하여 온보딩 여정을 계속 해야 합니다. 여기서 배울 수 있습니다.
+이제 비즈니스 소유자, 배포 관리자 및 개발자와 같은 세 가지 다른 Cloud Manager 제품 프로필과 비즈니스 소유자, 배포 관리자 및 개발자와 같은 Cloud Manager 제품 프로필에 팀 구성원을 할당하고 나면 Cloud Manager를 통해 문서 설정 클라우드 리소스를 검토하여 온보딩 여정을 계속 해야 합니다. 여기서 배울 수 있습니다.
 
 1. *비즈니스 소유자* 역할에 지정된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
 
