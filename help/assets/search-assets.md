@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 검색,메타데이터,자산 분배
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '4911'
+source-wordcount: '4902'
 ht-degree: 1%
 
 ---
@@ -226,11 +226,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ## 자산 선택기 {#asset-picker}
 
->[!NOTE]
->
->이전 버전의 [!DNL Adobe Experience Manager]에서 자산 선택기를 [자산 선택기](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)이라고 했습니다.
-
-자산 선택기를 사용하면 DAM 자산을 특별한 방식으로 검색, 필터링 및 검색할 수 있습니다. 자산 선택기는 `https://[aem_server]:[port]/aem/assetpicker.html`에서 사용할 수 있습니다. 자산 선택기를 사용하여 선택한 자산의 메타데이터를 가져올 수 있습니다. 자산 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 여러 선택)와 같은 지원되는 요청 매개 변수를 사용하여 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 자산 선택기의 컨텍스트를 설정하고 선택 전체에서 그대로 유지됩니다.
+자산 선택기(이전 버전의 [!DNL Adobe Experience Manager]에서 자산 선택기라고 함)를 사용하면 DAM 자산을 특별한 방식으로 검색, 필터링 및 검색할 수 있습니다. 자산 선택기는 `https://[aem_server]:[port]/aem/assetpicker.html`에서 사용할 수 있습니다. 자산 선택기를 사용하여 선택한 자산의 메타데이터를 가져올 수 있습니다. 자산 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 여러 선택)와 같은 지원되는 요청 매개 변수를 사용하여 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 자산 선택기의 컨텍스트를 설정하고 선택 전체에서 그대로 유지됩니다.
 
 자산 선택기는 HTML5 `Window.postMessage` 메시지를 사용하여 선택한 자산에 대한 데이터를 수신자에게 보냅니다. 검색 모드에서만 작동하며 Omnisearch 결과 페이지에서만 작동합니다.
 
