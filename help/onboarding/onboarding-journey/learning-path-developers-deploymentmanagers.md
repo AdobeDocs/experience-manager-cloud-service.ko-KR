@@ -4,10 +4,10 @@ description: 개발자 또는 배포 관리자인 경우 액세스 권한을 얻
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 4%
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
@@ -51,19 +51,19 @@ Cloud Manager로 이동하여 로그인하는 방법을 이해합니다
 
 ## 추가 리소스 {#additional-resources}
 
-* Cloud Manager에서 Git 및 Git 계정 관리 액세스
+* [Cloud Manager에서 Git 및 Git 계정 관리 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* AEM as a Cloud Service을 위한 로컬 개발 환경
+* [AEM as a Cloud Service을 위한 로컬 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* AEM Sites 시작하기(튜토리얼)
+* [AEM Sites 시작하기(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* AEM SPA 편집기 및 반응 시작하기 | Adobe Experience Manager
+* [AEM SPA 편집기 및 반응 시작하기 | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-* AEM SPA 편집기 및 Angular 시작하기
+* [AEM SPA 편집기 및 Angular 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
 
-* AEM 헤드리스 시작하기 - GraphQL
+* [AEM 헤드리스 시작하기 - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
 
-* 개발자용 AEM SPA 편집기 시작하기
+* [개발자용 AEM SPA 편집기 시작하기](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 ### Experience League 교육 과정 {#experience-league-courses}
 
