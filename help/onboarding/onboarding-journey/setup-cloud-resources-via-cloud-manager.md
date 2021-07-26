@@ -4,9 +4,9 @@ description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
+source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -137,12 +137,13 @@ Cloud Manager에서 클라우드 환경을 만들려면 아래 절차를 따르�
 
 ## 다음은 무엇입니까? {#whats-next}
 
-Cloud Manager 관리 권한으로는 충분하지 않으므로 팀 구성원에게 인스턴스에 대한 권한을 부여해야 합니다. 클라우드 리소스가 만들어지고 팀이 액세스할 준비가 되었으므로 시스템 관리자는 팀 구성원을 AEM에 Admin Console의 Cloud Service 제품 프로필로 할당해야 합니다.
+Cloud Manager 관리 권한으로는 충분하지 않으므로 팀 구성원에게 인스턴스에 대한 권한을 부여해야 합니다. 클라우드 리소스가 만들어지고 팀이 액세스할 준비가 되었으므로 시스템 관리자는 팀 구성원을 AEM에 Adobe Admin Console의 Cloud Service 제품 프로필로 할당해야 합니다.
+
+>[!NOTE]
+>Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여받으려면 두 제품 프로필 `AEM Users` 또는 `AEM Administrators` 중 하나에 속해야 합니다. 자세한 내용은 [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)에서 제품 및 사용자 액세스 관리 를 참조하십시오.
 
 다음에 AEM에 Cloud Service 제품 프로필로 팀 구성원 할당 문서를 검토하여 온보딩 여정을 계속해야 합니다.
 
->[!NOTE]
->Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여받으려면 두 제품 프로필 &#39;AEM 사용자&#39; 또는 &#39;AEM 관리자&#39; 중 하나에 속해야 합니다. 추가 정보.
 
 ## 추가 리소스 {#additional-resources}
 
