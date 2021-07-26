@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사전 요구 사항
 description: 컨텐츠 전송 도구 사전 요구 사항
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: ac44eeda36a7c8e1232bfd3275fb872e6523f87d
+source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 | 고려 사항 | 현재 지원되는 항목 |
 |--- |--- |
 | AEM 버전 | 컨텐츠 전송 도구는 AEM 6.3 이상 버전에서만 실행할 수 있습니다. AEM 6.2 이전 버전과 함께 컨텐츠 전송 도구를 사용하려면 컨텐츠 저장소를 AEM 6.5로 즉석 업그레이드해야 합니다. 이 경우 코드를 AEM 6.5로 업그레이드할 필요가 없습니다. |
-| 세그먼트 저장소 크기 | *Author*&#x200B;에서는 최대 83GB이고 *Publish*&#x200B;에서는 31GB가 현재 지원됩니다. Adobe 고객 지원 센터를 통해 지원 티켓을 만들어 이러한 제한을 초과하는 세그먼트 저장소 크기에 대한 옵션을 논의합니다. |
+| 세그먼트 저장소 크기 | *Author* 및 *Publish*&#x200B;에서 최대 83GB(온라인 압축 크기)가 있는 기존 저장소가 현재 지원됩니다. Adobe 고객 지원 센터를 통해 지원 티켓을 만들어 이러한 제한을 초과하는 세그먼트 저장소 크기에 대한 옵션을 논의합니다. |
 | 컨텐츠 저장소의 총 크기 <br>*(세그먼트 저장소 + 데이터 저장소)* | 컨텐츠 전송 도구는 파일 데이터 저장소 유형의 데이터 저장소에 대해 최대 10TB의 컨텐츠를 전송하도록 설계되었습니다. 현재 10TB를 초과하는 항목은 지원되지 않습니다. 10TB 이상의 컨텐츠에 대한 옵션을 논의하려면 Adobe 고객 지원 팀과 지원 티켓을 작성합니다. <br>Amazon S3 및 Azure Data Store 유형의 데이터 저장소의 경우 선택적  [사전 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) 복사 단계를 사용하여 컨텐츠 전송 프로세스를 획기적으로 단축하고 10TB 이상의 데이터 저장소를 지원합니다. |
 | 총 인덱스 크기 | 현재 최대 25GB의 총 인덱스 크기가 지원됩니다. 이 제한을 초과하는 색인 크기에 대한 옵션을 토론하려면 Adobe 고객 지원 센터에서 지원 티켓을 만드십시오. |
 | 노드 이름 길이 | 노드 이름의 길이는 150바이트 이하여야 합니다. AEM의 Document 노드 저장소에서 Cloud Service으로 지원하려면 150바이트보다 긴 노드 이름을 150바이트보다 작은 &lt;= 150바이트로 줄여야 합니다. 이러한 긴 노드 이름이 수정되지 않으면 처리가 실패합니다. |
