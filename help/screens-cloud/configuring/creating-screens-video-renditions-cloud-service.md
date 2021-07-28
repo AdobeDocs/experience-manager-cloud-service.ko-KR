@@ -1,9 +1,9 @@
 ---
 title: Screens에서 Cloud Service으로 비디오 표현물 만들기
 description: 이 페이지에서는 Screens에서 Cloud Service으로 비디오 렌디션을 만드는 방법을 설명합니다.
-source-git-commit: 102aab1d550e950ea880d9b9288bdab41866add6
+source-git-commit: e24c368811f0c3e61dc0a48c32ef7368f5fc00f5
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-이 안내서에서는 Screens 플레이어에서 사용되는 비디오 표현물을 만드는 방법을 설명합니다.
+이 섹션에서는 Screens 플레이어에서 사용되는 비디오 표현물을 만드는 방법을 설명합니다.
 
 >[!IMPORTANT]
->[스크린] 채널에서 비디오를 사용하려는 경우 이 섹션에서 강조 표시된 단계를 구성해야 합니다.
+>스크린 채널에서 비디오를 사용하려는 경우 이 섹션에서 강조 표시된 단계를 구성해야 합니다.
 
 ## Screens에서 Cloud Service으로 비디오 표현물을 만드는 절차 {#steps-creating-screens-video-renditions}
 
-Screens 컨텐츠 제공자에서 Screens as a Cloud Service에서 비디오 변환을 만들려면 아래 절차를 따르십시오.
+Screens 컨텐츠 제공업체에서 Cloud Service으로 Screens에서 비디오 렌디션을 만들려면 아래 절차를 따르십시오.
 
 1. 스크린 컨텐츠 제공자에서 채널로 이동합니다.
 
