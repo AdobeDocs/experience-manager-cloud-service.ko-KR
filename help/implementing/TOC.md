@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '921'
 ht-degree: 43%
 
 ---
@@ -172,7 +172,9 @@ ht-degree: 43%
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
    + [컨텐츠 조각 사용자 지정 및 확장](developing/extending/content-fragments-customizing.md)
    + [컨텐츠 조각 렌더링용 구성 요소 구성](developing/extending/content-fragments-configuring-components-rendering.md)
-   + [검색 양식 구성](developing/extending/search-forms.md)
+   + 검색 Forms 관리 {#manage-search-forms}
+      + [검색 양식 구성](developing/extending/search-forms.md)
+      + [받은 편지함에 대한 검색 필터 구성](developing/extending/configure-inbox-search-rail.md)
    + [리치 텍스트 편집기 구성](/help/implementing/developing/extending/rich-text-editor.md)
    + [RTE 플러그인 구성](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [액세스 가능한 사이트를 생성하도록 RTE 구성](/help/implementing/developing/extending/rte-accessible-content.md)
