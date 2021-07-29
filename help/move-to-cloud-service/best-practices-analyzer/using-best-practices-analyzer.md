@@ -2,9 +2,9 @@
 title: 우수 사례 분석기 사용
 description: 우수 사례 분석기 사용
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2522'
 ht-degree: 42%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="모범 사례 분석기 사용"
 >abstract="모범 사례 분석기(이전 클라우드 준비 분석기)를 사용하기 위한 설명서 및 생성된 보고서를 검토하십시오. 모범 사례 분석기 보고서는 일반적인 업그레이드 준비 상태를 세부적으로 파악하는 데 사용됩니다."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 모범 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
@@ -121,12 +121,13 @@ Adobe Experience Manager 6.1의 경우 도구가 작동하지 않으며 HTTP 인
 >[!NOTE]
 모든 버전에서 포함된 패턴 탐지기는 독립적으로 실행될 수 있습니다.
 
-## 우수 사례 분석기 보고서 해석 {#cra-report}
+## 모범 사례 분석기 보고서 해석 {#cra-report}
 
 [!CONTEXTUALHELP]
 id="aemcloud_bpa_interpreting"
 title="모범 사례 분석기 보고서 해석"
-abstract="BPA 보고서 출력을 보는 두 가지 옵션이 있습니다.UI 및 CSV입니다. AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 UI 보고서가 도구 창의 결과로 표시됩니다. 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 카테고리 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다."
+abstract="BPA 보고서 출력을 보는 두 가지 옵션이 있습니다. UI 및 CSV입니다. AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 UI 보고서가 도구 창의 결과로 표시됩니다. 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 카테고리 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="우수 사례 분석 보고서 검토"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="우수 사례 분석기 보고서 범주 이해"
 
 AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서가 도구 창의 결과로 표시됩니다.
@@ -138,7 +139,7 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
    * **만료 시간**: 보고서 내용 캐시가 만료되는 시기
    * **생성 기간**: 보고서 내용 생성 프로세스의 체류 시간
    * **검색 횟수**: 보고서에 포함된 총 결과 수
-* **시스템 개요**:BPA가 실행된 AEM 시스템에 대한 정보입니다.
+* **시스템 개요**: BPA가 실행된 AEM 시스템에 대한 정보입니다.
 * **카테고리 찾기**: 각 섹션에서 동일한 카테고리의 하나 이상의 발견을 처리하는 여러 섹션. 각 섹션에는 카테고리 이름, 하위 유형, 검색 횟수 및 중요도, 요약, 카테고리 설명서 링크 및 개별 검색 정보가 포함됩니다.
 
 작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다.
@@ -180,7 +181,7 @@ CSV 형식 보고서의 열은 다음과 같습니다.
 
 ## HTTP 인터페이스 {#http-interface}
 
-BPA는 AEM 내의 사용자 인터페이스 대신 사용할 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. BPA 보고서를 생성하고 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다.JSON, CSV 및 탭으로 구분된 값(TSV).
+BPA는 AEM 내의 사용자 인터페이스 대신 사용할 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. BPA 보고서를 생성하고 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다. JSON, CSV 및 탭으로 구분된 값(TSV).
 
 다음 URL은 `<host>`이 호스트 이름인 HTTP 액세스와 BPA가 설치된 서버의 포트(필요한 경우) 액세스에 사용할 수 있습니다.
 * JSON 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.json`
@@ -202,17 +203,17 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 
 이 인터페이스에서는 다음 HTTP 헤더를 사용합니다.
 
-* `Cache-Control: max-age=<seconds>`:캐시 새로 고침 수명을 초 단위로 지정합니다. ([RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)를 참조하십시오.)
-* `Prefer: respond-async`:서버가 비동기적으로 응답하도록 지정합니다. ([RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)을 참조하십시오.)
-* `Prefer: return=minimal`:서버가 최소한의 응답을 반환하도록 지정합니다. ([RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)을 참조하십시오.)
+* `Cache-Control: max-age=<seconds>`: 캐시 새로 고침 수명을 초 단위로 지정합니다. ([RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8)를 참조하십시오.)
+* `Prefer: respond-async`: 서버가 비동기적으로 응답하도록 지정합니다. ([RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)을 참조하십시오.)
+* `Prefer: return=minimal`: 서버가 최소한의 응답을 반환하도록 지정합니다. ([RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)을 참조하십시오.)
 
 다음 HTTP 쿼리 매개 변수는 HTTP 헤더를 쉽게 사용할 수 없을 때 편리하게 사용할 수 있습니다.
 
-* `max-age` (숫자, 선택 사항):캐시 새로 고침 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 새로 고침 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 새 캐시가 24시간 동안 요청을 제공하는 데 사용되며 이때 캐시를 다시 생성해야 합니다. `max-age=0` 을 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 새로 고침 수명을 사용하여 캐시가 지워지고 보고서의 재생성이 시작됩니다.
-* `respond-async` (부울, 선택 사항):응답이 비동기식으로 제공되도록 지정합니다. 캐시가 오래된 경우 `respond-async=true`을 사용하면 서버가 캐시가 새로 고쳐지고 보고서가 생성될 때까지 기다리지 않고 `202 Accepted` 응답을 반환합니다. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. 기본값은 `false`입니다.이 매개 변수 또는 해당 헤더가 없으면 서버가 동기적으로 응답합니다. 이 경우 상당한 시간이 필요하고 HTTP 클라이언트에 대한 최대 응답 시간을 조정해야 합니다.
-* `may-refresh-cache` (부울, 선택 사항):현재 캐시가 비어 있거나 오래된 상태이거나 곧 오래된 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. `may-refresh-cache=true` 또는 지정하지 않은 경우 서버는 패턴 탐지기를 호출하고 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. `may-refresh-cache=false` 경우 서버가 새로 고침 작업을 시작하지 않습니다. 이 경우 캐시가 비어 있거나 오래된 경우 보고서가 비어 있습니다. 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
-* `return-minimal` (부울, 선택 사항):서버의 응답에 JSON 형식으로 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. `return-minimal=true`이면 응답 본문은 상태 개체로 제한됩니다. `return-minimal=false` 또는 지정되지 않은 경우 전체 응답이 제공됩니다.
-* `log-findings` (부울, 선택 사항):서버가 처음 빌드하거나 새로 고칠 때 캐시의 내용을 기록하도록 지정합니다. 캐시에서 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 `log-findings=true` 및 요청이 새 캐시를 생성하는 경우에만 발생합니다.
+* `max-age` (숫자, 선택 사항): 캐시 새로 고침 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 새로 고침 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 새 캐시가 24시간 동안 요청을 제공하는 데 사용되며 이때 캐시를 다시 생성해야 합니다. `max-age=0` 을 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 새로 고침 수명을 사용하여 캐시가 지워지고 보고서의 재생성이 시작됩니다.
+* `respond-async` (부울, 선택 사항): 응답이 비동기식으로 제공되도록 지정합니다. 캐시가 오래된 경우 `respond-async=true`을 사용하면 서버가 캐시가 새로 고쳐지고 보고서가 생성될 때까지 기다리지 않고 `202 Accepted` 응답을 반환합니다. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. 기본값은 `false`입니다. 이 매개 변수 또는 해당 헤더가 없으면 서버가 동기적으로 응답합니다. 이 경우 상당한 시간이 필요하고 HTTP 클라이언트에 대한 최대 응답 시간을 조정해야 합니다.
+* `may-refresh-cache` (부울, 선택 사항): 현재 캐시가 비어 있거나 오래된 상태이거나 곧 오래된 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. `may-refresh-cache=true` 또는 지정하지 않은 경우 서버는 패턴 탐지기를 호출하고 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. `may-refresh-cache=false` 경우 서버가 새로 고침 작업을 시작하지 않습니다. 이 경우 캐시가 비어 있거나 오래된 경우 보고서가 비어 있습니다. 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
+* `return-minimal` (부울, 선택 사항): 서버의 응답에 JSON 형식으로 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. `return-minimal=true`이면 응답 본문은 상태 개체로 제한됩니다. `return-minimal=false` 또는 지정되지 않은 경우 전체 응답이 제공됩니다.
+* `log-findings` (부울, 선택 사항): 서버가 처음 빌드하거나 새로 고칠 때 캐시의 내용을 기록하도록 지정합니다. 캐시에서 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 `log-findings=true` 및 요청이 새 캐시를 생성하는 경우에만 발생합니다.
 
 HTTP 헤더와 해당 쿼리 매개 변수가 모두 있으면 쿼리 매개 변수가 우선시됩니다.
 
@@ -225,10 +226,10 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 다음 응답 값이 가능합니다.
 
-* `200 OK`:이 응답에는 캐시의 새로 고침 수명 내에 생성된 패턴 탐지기 결과를 포함함을 나타냅니다.
-* `202 Accepted`:캐시가 오래된 상태임을 나타내는 데 사용됩니다. `respond-async=true` 및 `may-refresh-cache=true` 이 응답은 새로 고침 작업이 진행 중임을 나타냅니다. `may-refresh-cache=false` 이 응답은 캐시가 오래된 것임을 나타냅니다.
+* `200 OK`: 이 응답에는 캐시의 새로 고침 수명 내에 생성된 패턴 탐지기 결과를 포함함을 나타냅니다.
+* `202 Accepted`: 캐시가 오래된 상태임을 나타내는 데 사용됩니다. `respond-async=true` 및 `may-refresh-cache=true` 이 응답은 새로 고침 작업이 진행 중임을 나타냅니다. `may-refresh-cache=false` 이 응답은 캐시가 오래된 것임을 나타냅니다.
 * `400 Bad Request`: 요청에 오류가 있음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식( [RFC 7807](https://tools.ietf.org/html/rfc7807) 참조)의 메시지를 참조하십시오.
-* `401 Unauthorized`:요청이 승인되지 않았음을 나타냅니다.
+* `401 Unauthorized`: 요청이 승인되지 않았음을 나타냅니다.
 * `500 Internal Server Error`: 내부 서버 오류가 발생했음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
 * `503 Service Unavailable`: 서버가 다른 응답으로 사용 중이어서 이 요청을 적시에 처리할 수 없음을 나타냅니다. 이는 동기 요청이 수행된 경우에만 발생합니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
 
