@@ -1,15 +1,21 @@
 ---
 title: Cloud Acceleration Manager의 이점
 description: 이 페이지에서는 Cloud Acceleration Manager를 사용할 때의 주요 이점을 소개합니다.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
 
 # Cloud Acceleration Manager의 이점 {#benefits-cam}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_benefits"
+>title="Cloud Acceleration Manager의 이점"
+>abstract="CAM(Cloud Acceleration Manager)은 팀에서 Adobe 권장 우수 사례와 방법을 안내하는 경험을 제공하여 팀이 보다 안정적으로 Go Live를 계획, 구현 및 수행할 수 있도록 지원합니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="Cloud Acceleration Manager 시작"
 
 다양한 비즈니스 요구 사항과 사용자 지정 기능을 통해 클라우드로 이동하는 것은 관련 프로젝트가 될 수 있습니다. CAM(Cloud Acceleration Manager)은 팀에서 Adobe 권장 우수 사례와 방법을 안내하는 경험을 제공하여 팀이 보다 안정적으로 Go Live를 계획, 구현 및 수행할 수 있도록 지원합니다.
 
