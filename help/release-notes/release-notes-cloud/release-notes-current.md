@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ec1e83b344b0d237db479f66fbb761db2d8923d5
+source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -127,6 +127,30 @@ Azul JDK를 사용하도록 전환하는 고객은 Azul JDK에 오류가 없는 
 ### [!DNL Assets]에 수정된 버그 {#assets-bugs-fixed}
 
 API `com.day.cq.dam.api.collection.SmartCollection`는 [!DNL Experience Manager]에서 [!DNL Cloud Service]로 사용할 수 없습니다. (CQ-4326322)
+
+## [!DNL Cloud Service]로서의 [!DNL Experience Manager Screens] {#screens}
+
+### 버그 수정 {#bug-fixes-screens}
+
+* 이제 만들거나 업데이트하는 동안 콘텐츠 공급자 설정의 유효성을 검사합니다.
+
+* 모든 디스플레이 보기에는 폴더 열이 있습니다.
+
+* 스크린 컨텐츠 구조를 확장할 수 있습니다.
+
+* `bulk-offline-update-service` 일부 환경에 대한 모든 권한이 누락되었습니다.
+
+* 새 screens 클라우드 설명서에 맞게 도움말 링크를 업데이트합니다.
+
+* 재생 목록을 할당 취소하고 플레이어가 할당된 재생 목록을 제거할 수 없습니다.
+
+* &quot;ALL&quot; 캐시가 지워지면 플레이어가 이제 자산을 다시 다운로드합니다.
+
+* 이제 *종료 시간*&#x200B;이 다음 날에 대해 설정된 경우 반복 예약이 작동합니다.
+
+* `Back&Forward` 이제 Screens 클라우드 UI에서 작동합니다.
+
+* 이름이 같지만 네임스페이스가 다른 태그를 만들 수 없습니다.
 
 ## [!DNL Cloud Service]로서의 [!DNL Experience Manager Forms] {#forms}
 
