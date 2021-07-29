@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 7085772d60f589418f7aeb50083906fab495c376
+source-git-commit: 08a687afa423255046dd37c55547d3615ea8276b
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 44%
@@ -13,7 +13,7 @@ ht-degree: 44%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2021.06.0 |
+| 버전 | 2021.07.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
@@ -32,10 +32,10 @@ ht-degree: 44%
 
 릴리스를 준비하려면:
 
-1. 일정 표시:[Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)에서 월별 릴리스에 대한 주요 날짜를 확인하고 달력에 표시를 하여 주요 활동을 준비하여 릴리스를 준비하십시오.
-1. 릴리스 노트를 검토합니다.[현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하여 릴리스 및 사전 릴리스 기능에 익숙해지십시오.
-1. 새로운 기능에 액세스하여 사용해 보십시오.비프로덕션 환경에서 [사전 릴리스 채널](/help/release-notes/prerelease.md)을 사용하도록 설정하고 사용자 지정 환경에서 평가할 기능을 시도하기 시작합니다.
-1. 사용자 교육:설명서 및 Experience League 리소스를 사용하여 사용자가 새로운 기능을 빠르고 잘 이해할 수 있도록 합니다.
+1. 일정 표시: [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)에서 월별 릴리스에 대한 주요 날짜를 확인하고 달력에 표시를 하여 주요 활동을 준비하여 릴리스를 준비하십시오.
+1. 릴리스 노트를 검토합니다. [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하여 릴리스 및 사전 릴리스 기능에 익숙해지십시오.
+1. 새로운 기능에 액세스하여 사용해 보십시오. 비프로덕션 환경에서 [사전 릴리스 채널](/help/release-notes/prerelease.md)을 사용하도록 설정하고 사용자 지정 환경에서 평가할 기능을 시도하기 시작합니다.
+1. 사용자 교육: 설명서 및 Experience League 리소스를 사용하여 사용자가 새로운 기능을 빠르고 잘 이해할 수 있도록 합니다.
 
 ## 주요 릴리스 정보 {#key-articles}
 
