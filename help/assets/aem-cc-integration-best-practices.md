@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 공동 작업,Adobe 자산 링크,데스크탑 앱
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
 workflow-type: tm+mt
-source-wordcount: '3383'
+source-wordcount: '3451'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,7 @@ Adobe Creative Cloud은 크리에이티브 팀이 디지털 자산을 만드는 
 | 데스크탑에서 크리에이티브 환경 간소화 | 크리에이티브 전문가를 위한 DAM([!DNL Assets])에서 자산에 대한 액세스를 간소화하거나, 기본 자산 작성 애플리케이션에서 작업하는 데스크탑의 사용자를 보다 폭넓게 활용할 수 있습니다. 이 구성 요소는 새로운 파일을 업로드하고, Experience Manager을 검색, 사용(열기)하고, 변경 사항을 편집 및 저장하며, 쉽고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑 앱 Creative Cloud |
 | [!DNL Adobe Stock]에서 고품질의 즉시 사용할 수 있는 자산 제공 | 마케터는 자산 소싱 및 검색을 지원하여 컨텐츠 작성 프로세스를 가속화할 수 있습니다. 크리에이티브 전문가가 크리에이티브 도구 내에서 바로 승인된 자산을 사용합니다. | [!DNL Assets];  [!DNL Adobe Stock] marketplace; 메타데이터 필드 |
 | 조직별 자산 분배 및 공유 | 내부 부서/지역 분기 및 외부 파트너, 배포자 및 에이전시는 상위 조직에서 공유한 승인된 자산을 사용합니다. 조직은 더 광범위한 재사용을 위해 생성된 자산을 안전하고 원활하게 공유하려고 합니다. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| 업로드된 자산의 사전 정의된 변형을 자동으로 생성합니다 | 사전 정의된 작업에 Adobe의 고유한 미디어 처리 및 변환 기술을 활용하여 자산을 자동으로 처리합니다. API 및 자산 마이크로서비스를 사용하여 고유한 작업을 정의하는 사용자 지정 로직을 만듭니다. | [!DNL Assets] 사용자 인터페이스 |
 
 ## 협업 요구 사항을 지원하기 위한 Adobe 제공 {#adobe-offerings-to-support-the-collaboration-need}
 
@@ -41,6 +42,7 @@ Adobe Creative Cloud은 크리에이티브 팀이 디지털 자산을 만드는 
 | 비즈니스 사용자는 자산을 열고 사용, 변경 내용을 [!DNL Experience Manager]에 편집 및 업로드하고, 데스크탑 환경에서 [!DNL Experience Manager]에 새 파일을 업로드하는 작업을 단순화합니다. 일반 통합을 사용하여 비Adobe을 포함하여 기본 데스크탑 애플리케이션에서 자산 유형을 엽니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Win 및 Mac 데스크탑의 데스크탑 앱 Experience Manager |
 | 마케터와 비즈니스 사용자는 Experience Manager 내에서 Adobe Stock 자산을 검색, 미리 보기, 라이선스 및 저장 및 관리합니다. 라이선스와 저장된 자산은 더 나은 거버넌스를 위해 선별된 Adobe Stock 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
 | 디지털 제품 디자이너와 마케터 간의 공동 작업을 개선합니다. 디자이너는 디자인에서 디지털 자산을 사용하고 Adobe XD 캔버스에서 와이어프레임 모델을 사용할 수 있습니다. | [[!DNL Adobe Asset Link] 대상 [!DNL Adobe XD]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| 마케터는 사용자 지정을 사용하여 만든 업로드된 자산 및 사전 정의된 작업을 기반으로 변형 및 파생물을 자동으로 만들 수 있습니다. 이 자동화를 사용하여 컨텐츠 속도를 향상시키고 수작업 부담을 줄일 수 있습니다. | [컨텐츠 자동화](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] 웹 인터페이스 |
 
 이 문서는 주로 공동 작업 요구 사항의 첫 두 가지 측면에 중점을 둡니다. 사용 사례로는 자산의 분포 및 소싱이 간략하게 언급되어 있습니다. 이러한 요구 사항을 해결하려면 Brand Portal Adobe 또는 Asset Share Commons를 고려하십시오. [Assets Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) Experience Manager, [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) 구성 요소를 기반으로 빌드할 수 있는 솔루션, [Link Share](share-assets.md)와 같은 대체 솔루션은 특정 요구 사항에 따라 검토해야 합니다. [Assets Web UI](/help/assets/manage-digital-assets.md)을(를) 사용하는 경우
 
