@@ -5,9 +5,9 @@ breadcrumb-title: 릴리스 노트
 user-guide-description: 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다.
 feature: 릴리스 정보
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f3207681f16c7db3922c437ce5c57409fcd29f3b
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '128'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 96%
 + 릴리스 노트 {#release-notes}
    + [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [2021.5.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
       + [2021.5.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
       + [2021.4.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
       + [2021.3.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
