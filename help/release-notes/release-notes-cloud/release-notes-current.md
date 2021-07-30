@@ -3,7 +3,7 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
+source-git-commit: d977ff765accb650daff4c35f2668489454305cd
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 2%
@@ -39,6 +39,102 @@ ht-degree: 2%
 * 보다 유연한 디스패처 구성: 프로젝트를 보다 쉽게 구성할 수 있습니다. 예를 들어 사이트 구조를 반영하는 여러 재작성 규칙 파일을 포함할 수 있습니다. [Dispatcher ](/help/implementing/dispatcher/disp-overview.md#validation-debug) 구성을 활용하여 구성하는 방법을 비롯하여 이 유연한 모드에 대해 알아보십시오.
 * 복제 에이전트의 &quot;분배&quot; 탭에 있는 트리 복제 UI는 더 이상 사용되지 않는 것으로 간주되어야 하며 9월 30일 이후에 제거될 예정입니다. [대체 ](/help/operations/replication.md#tree-activation) 복제 전략에 대해 알아봅니다.
 * Sling 데이터 소스 지원에 대한 번들 `org.apache.sling.datasource-1.0.4.jar`은 오래된 기능이며 고객이 사용하지 않으므로 제거되었습니다.
+
+## [!DNL Cloud Service]로서의 [!DNL Experience Manager Assets] {#assets}
+
+### [!DNL Assets]의 새로운 기능 {#assets-features}
+
+* 컨텐츠 자동화 기능을 사용하여 [!DNL Experience Manager Assets] API를 활용하여 자산 프로덕션을 규모에 맞게 자동화할 수 있습니다. [!DNL Adobe Creative Cloud] 동일한 자산의 변형을 만드는 데 필요한 시간과 반복 시간을 크게 줄여 컨텐츠 속도를 향상시킵니다. 이 기능은 DAM 내에서 프로그래밍과 작업할 필요가 없습니다. Creative Cloud 통합](/help/assets/cc-api-integration.md)을 사용하여 자산의 변형 생성을 참조하십시오.[
+
+* [!DNL Experience Manager Assets] 에서는 기본적으로  [!DNL Document Cloud] PDF 문서를 미리 볼 수 있는 PDF 뷰어를 포함합니다. 이 기능을 사용하면 파일 처리나 변환 없이 다중 페이지 PDF 파일을 미리 볼 수 있습니다. 이 기능은 [!DNL Experience Manager] 6.5와의 패리티를 향상시킵니다. 뷰어에서 사용할 수 있는 컨트롤에는 확대/축소, 페이지로 이동, 도킹 해제 컨트롤, 전체 화면에서 볼 수 있는 컨트롤이 포함됩니다. 사용자 사례에서도 페이지 및 책갈피를 미리 보고 이동할 수 있습니다. 파일 자체에 대한 주석이 지원되며 PDF 파일 내의 컨텐츠에 대한 주석 및 주석이 향후 릴리스에서 추가됩니다.
+
+   ![PDF 뷰어를  [!DNL Experience Manager] 사용하여 PDF 파일 미리 보기](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* Linkshare 다운로드 기능은 다운로드 속도를 높이는 비동기 다운로드를 사용합니다. [링크 공유를 사용하여 공유된 자산 다운로드](/help/assets/download-assets-from-aem.md#link-share-download)를 참조하십시오.
+
+   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
+
+* 보기 설정이 개선되어 사용자가 기본 보기와 기본 정렬 매개 변수를 선택할 수 있습니다.
+
+   ![보기 설정에서 기본  [!UICONTROL 보기 설정]](/help/assets/assets/view-settings-for-defaults.png)
+
+* 사용자는 속성 설명을 기반으로 폴더를 검색하고 필터링할 수 있습니다.
+
+   ![검색 조건을 사용하여 검색 폴더 필터링](/help/assets/assets/search-folders-via-predicates.png)
+
+### [!DNL Assets] 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#assets-prerelease-features}
+
+<!-- TBD: Not sure about GA of these enh. Shall check with the team.
+
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
+
+  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
+-->
+
+* 디지털 자산을 링크로 공유할 때 사용자는 URL을 클립보드에 복사할 수 있습니다. 개선 사항을 통해 자산을 보다 빠르고 편리하게 공유할 수 있습니다.
+
+### [!DNL Assets]에 수정된 버그 {#assets-bugs-fixed}
+
+API `com.day.cq.dam.api.collection.SmartCollection`는 [!DNL Experience Manager]에서 [!DNL Cloud Service]로 사용할 수 없습니다. (CQ-4326322)
+
+## [!DNL Cloud Service]로서의 [!DNL Experience Manager Forms] {#forms}
+
+### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
+
+* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어 및 스페인어 ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
+* 적응형 양식 구성 요소와 관련된 오류를 표시하는 별도의 패널을 템플릿 편집기에 추가했습니다. 모든 적응형 양식 오류를 한 위치에서 통합하고 해결 시간을 줄이는 데 도움이 됩니다.
+
+### [!DNL Forms] 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#beta-features-forms}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp에서는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성합니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
+   * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
+   * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
+   * XFA 양식 PDF 및 Adobe Acrobat 양식에서 인쇄 PDF 파일을 생성합니다.
+
+* **Variable Data Externalizer**: 조직에서 관리하는 외부 스토리지 시스템에 AEM Workflow 변수의 데이터를 저장할 수 있습니다.
+
+* **Acrobat 기반 레코드 문서**: XFA 기반 양식 템플릿 외에 기록 문서용 템플릿으로 Adobe Acrobat 양식 PDF(Acroform PDF)를  [사용할 수도 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) .
+
+* **Microsoft Azure 데이터 저장소 커넥터**: 이제 양식 데이터 모델을  [Microsoft Azure 저장소에 연결할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). 적응형 양식 데이터를 검색하고 BLOB으로 Microsoft Azure 저장소에 저장할 수 있습니다.
+
+## CIF 추가 기능 {#cloud-services-cif}
+
+### 새로운 기능 {#what-is-new-cif}
+
+* CIF 코어 구성 요소 v2
+   * PDP/PLP URL 및 SEO를 위한 간소화된 구성 및 개선
+   * 예정된 변경 사항을 더 잘 파악하기 위해 작성 모드에서 준비된 제품 데이터에 대한 시각적 지표
+   * 컨텐츠 및 상거래 페이지를 위한 새 사이트 맵 구성 요소
+
+* 사전 정의된 권장 또는 즉석에서 만든 추천을 사용하여 AEM Storefront에서 Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)에서 제공하는 [Adobe Commerce Sensei 제품 권장 사항을 지원합니다
+
+## [!DNL Cloud Service]로서의 [!DNL Experience Manager Screens] {#screens}
+
+### 버그 수정 {#bug-fixes-screens}
+
+* 이제 만들거나 업데이트하는 동안 콘텐츠 공급자 설정의 유효성을 검사합니다.
+
+* 모든 디스플레이 보기에는 폴더 열이 있습니다.
+
+* 스크린 컨텐츠 구조를 확장할 수 있습니다.
+
+* `bulk-offline-update-service` 일부 환경에 대한 모든 권한이 누락되었습니다.
+
+* 새 screens 클라우드 설명서에 일치하도록 도움말 링크를 업데이트했습니다.
+
+* 재생 목록을 할당 취소하고 플레이어가 할당된 재생 목록을 제거할 수 없습니다. 이제 작동합니다.
+
+* 이제 &quot;ALL&quot; 캐시가 지워지면 플레이어가 자산을 다시 다운로드합니다.
+
+* 이제 *종료 시간*&#x200B;이 다음 날에 대해 설정된 경우 반복 예약이 작동합니다.
+
+* `Back&Forward` 이제 Cloud Service UI로 Screens에서 작동합니다.
+
+* 이름이 동일하지만 네임스페이스가 다른 태그를 일찍 만들 수 없습니다.
 
 ## Cloud Service으로 Experience Manager에 대한 XML 설명서 {#xml-documentation}
 
@@ -87,91 +183,6 @@ AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 날짜는 2021년 7�
 
 Azul JDK를 사용하도록 전환하는 고객은 Azul JDK에 오류가 없는 모든 기존 애플리케이션이 컴파일되는 것은 아니라는 것을 알고 있어야 합니다. 전환하기 전에 로컬로 테스트하는 것이 좋습니다.
 
-## [!DNL Cloud Service]로서의 [!DNL Experience Manager Assets] {#assets}
-
-### [!DNL Assets]의 새로운 기능 {#assets-features}
-
-* 컨텐츠 자동화 기능을 사용하여 [!DNL Experience Manager Assets] API를 활용하여 자산 프로덕션을 규모에 맞게 자동화할 수 있습니다. [!DNL Adobe Creative Cloud] 동일한 자산의 변형을 만드는 데 필요한 시간과 반복 시간을 크게 줄여 컨텐츠 속도를 향상시킵니다. 이 기능은 DAM 내에서 프로그래밍과 작업할 필요가 없습니다. Creative Cloud 통합](/help/assets/cc-api-integration.md)을 사용하여 자산의 변형 생성을 참조하십시오.[
-
-* [!DNL Experience Manager Assets] 에서는 기본적으로  [!DNL Document Cloud] PDF 문서를 미리 볼 수 있는 PDF 뷰어를 포함합니다. 이 기능을 사용하면 파일 처리나 변환 없이 다중 페이지 PDF 파일을 미리 볼 수 있습니다. 이 기능은 [!DNL Experience Manager] 6.5와의 패리티를 향상시킵니다. 뷰어에서 사용할 수 있는 컨트롤에는 확대/축소, 페이지로 이동, 도킹 해제 컨트롤, 전체 화면에서 볼 수 있는 컨트롤이 포함됩니다. 사용자 사례에서도 페이지 및 책갈피를 미리 보고 이동할 수 있습니다. 파일 자체에 대한 주석이 지원되며 PDF 파일 내의 컨텐츠에 대한 주석 및 주석이 향후 릴리스에서 추가됩니다.
-
-   ![PDF 뷰어를  [!DNL Experience Manager] 사용하여 PDF 파일 미리 보기](/help/assets/assets/preview-pdf-file-viewer.png)
-
-* Linkshare 다운로드 기능은 다운로드 속도를 높이는 비동기 다운로드를 사용합니다. [링크 공유를 사용하여 공유된 자산 다운로드](/help/assets/download-assets-from-aem.md#link-share-download)를 참조하십시오.
-
-   ![받은 편지함 다운로드](/help/assets/assets/download-inbox.png)
-
-* 보기 설정이 개선되어 사용자가 기본 보기와 기본 정렬 매개 변수를 선택할 수 있습니다.
-
-   ![보기 설정에서 기본  [!UICONTROL 보기 설정]](/help/assets/assets/view-settings-for-defaults.png)
-
-* 사용자는 속성 설명을 기반으로 폴더를 검색하고 필터링할 수 있습니다.
-
-   ![검색 조건을 사용하여 검색 폴더 필터링](/help/assets/assets/search-folders-via-predicates.png)
-
-### [!DNL Assets] 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#assets-prerelease-features}
-
-<!-- TBD: Not sure about GA of these enh. Shall check with the team.
-
-* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
-
-  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
-
-  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
--->
-
-* 디지털 자산을 링크로 공유할 때 사용자는 URL을 클립보드에 복사할 수 있습니다. 개선 사항을 통해 자산을 보다 빠르고 편리하게 공유할 수 있습니다.
-
-### [!DNL Assets]에 수정된 버그 {#assets-bugs-fixed}
-
-API `com.day.cq.dam.api.collection.SmartCollection`는 [!DNL Experience Manager]에서 [!DNL Cloud Service]로 사용할 수 없습니다. (CQ-4326322)
-
-## [!DNL Cloud Service]로서의 [!DNL Experience Manager Screens] {#screens}
-
-### 버그 수정 {#bug-fixes-screens}
-
-* 이제 만들거나 업데이트하는 동안 콘텐츠 공급자 설정의 유효성을 검사합니다.
-
-* 모든 디스플레이 보기에는 폴더 열이 있습니다.
-
-* 스크린 컨텐츠 구조를 확장할 수 있습니다.
-
-* `bulk-offline-update-service` 일부 환경에 대한 모든 권한이 누락되었습니다.
-
-* 새 screens 클라우드 설명서에 일치하도록 도움말 링크를 업데이트했습니다.
-
-* 재생 목록을 할당 취소하고 플레이어가 할당된 재생 목록을 제거할 수 없습니다. 이제 작동합니다.
-
-* 이제 &quot;ALL&quot; 캐시가 지워지면 플레이어가 자산을 다시 다운로드합니다.
-
-* 이제 *종료 시간*&#x200B;이 다음 날에 대해 설정된 경우 반복 예약이 작동합니다.
-
-* `Back&Forward` 이제 Cloud Service UI로 Screens에서 작동합니다.
-
-* 이름이 동일하지만 네임스페이스가 다른 태그를 일찍 만들 수 없습니다.
-
-## [!DNL Cloud Service]로서의 [!DNL Experience Manager Forms] {#forms}
-
-### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
-
-* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어 및 스페인어 ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
-* 적응형 양식 구성 요소와 관련된 오류를 표시하는 별도의 패널을 템플릿 편집기에 추가했습니다. 모든 적응형 양식 오류를 한 위치에서 통합하고 해결 시간을 줄이는 데 도움이 됩니다.
-
-### [!DNL Forms] 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#beta-features-forms}
-
-* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp에서는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성합니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
-   * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
-   * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
-   * XFA 양식 PDF 및 Adobe Acrobat 양식에서 인쇄 PDF 파일을 생성합니다.
-
-* **Variable Data Externalizer**: 조직에서 관리하는 외부 스토리지 시스템에 AEM Workflow 변수의 데이터를 저장할 수 있습니다.
-
-* **Acrobat 기반 레코드 문서**: XFA 기반 양식 템플릿 외에 기록 문서용 템플릿으로 Adobe Acrobat 양식 PDF(Acroform PDF)를  [사용할 수도 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) .
-
-* **Microsoft Azure 데이터 저장소 커넥터**: 이제 양식 데이터 모델을  [Microsoft Azure 저장소에 연결할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). 적응형 양식 데이터를 검색하고 BLOB으로 Microsoft Azure 저장소에 저장할 수 있습니다.
-
 ## Cloud Acceleration Manager {#cam}
 
 ### 릴리스 날짜 {#release-date-july-cam}
@@ -185,14 +196,3 @@ Cloud Acceleration Manager는 Cloud Service에서 라이브로 전환하는 계�
 >[!NOTE]
 >
 > 이 [Cloud Acceleration Manager 데모 비디오](https://video.tv.adobe.com/v/335547)를 확인하십시오.
-
-## CIF 추가 기능 {#cloud-services-cif}
-
-### 새로운 기능 {#what-is-new-cif}
-
-* CIF 코어 구성 요소 v2
-   * PDP/PLP URL 및 SEO를 위한 간소화된 구성 및 개선
-   * 예정된 변경 사항을 더 잘 파악하기 위해 작성 모드에서 준비된 제품 데이터에 대한 시각적 지표
-   * 컨텐츠 및 상거래 페이지를 위한 새 사이트 맵 구성 요소
-
-* 사전 정의된 권장 또는 즉석에서 만든 추천을 사용하여 AEM Storefront에서 Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)에서 제공하는 [Adobe Commerce Sensei 제품 권장 사항을 지원합니다
