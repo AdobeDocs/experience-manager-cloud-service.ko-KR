@@ -10,9 +10,9 @@ feature: 전자 상거래 통합 프레임워크
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: dbf32230042f39760733b711ffe8b5b4143e0544
+source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '746'
 ht-degree: 4%
 
 ---
@@ -72,7 +72,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 ## 사용자 지정 Url 형식 {#custom-url-format}
 
-사용자 지정 URL 형식을 제공하기 위해 프로젝트는 [`UrlFormat` 인터페이스](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)를 구현하고 구현을 OSGI 서비스로 등록할 수 있으며 카테고리 페이지 또는 제품 페이지 URL 형식으로 사용합니다. `UrlFormat#PROP_USE_AS` 서비스 속성은 다음과 같이 구성된 사전 정의된 형식 중 대체할 형식을 나타냅니다.
+사용자 지정 URL 형식을 제공하기 위해 프로젝트는 [`UrlFormat` 인터페이스](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)를 구현하고 카테고리 페이지 또는 제품 페이지 URL 형식으로 사용하여 구현을 OSGI 서비스로 등록할 수 있습니다. `UrlFormat#PROP_USE_AS` 서비스 속성은 바꿀 사전 정의된 형식 중 하나를 나타냅니다.
 
 * `useAs=productPageUrlFormat`이 구성된 제품 페이지 url 형식을 대체합니다
 * `useAs=categoryPageUrlFormat`은 구성된 카테고리 페이지 url 형식을 대체합니다
