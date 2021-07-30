@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
+source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1313'
 ht-degree: 2%
 
 ---
@@ -156,22 +156,21 @@ API `com.day.cq.dam.api.collection.SmartCollection`는 [!DNL Experience Manager]
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* 이제 Automated forms conversion 서비스를 사용하여 프랑스어, 독일어 및 스페인어 PDF forms을 적응형 양식으로 전환할 수 있습니다.
+* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어 및 스페인어 ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
 * 적응형 양식 구성 요소와 관련된 오류를 표시하는 별도의 패널을 템플릿 편집기에 추가했습니다. 모든 적응형 양식 오류를 한 위치에서 통합하고 해결 시간을 줄이는 데 도움이 됩니다.
 
 ### [!DNL Forms] 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: Communication API를 사용하면 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp에서는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성합니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
    * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
    * XFA 양식 PDF 및 Adobe Acrobat 양식에서 인쇄 PDF 파일을 생성합니다.
 
 * **Variable Data Externalizer**: 조직에서 관리하는 외부 스토리지 시스템에 AEM Workflow 변수의 데이터를 저장할 수 있습니다.
 
-* **Acrobat 기반 레코드 문서**: XFA 기반 양식 템플릿 외에 기록 문서용 템플릿으로 Adobe Acrobat 양식 PDF(Acroform PDF)를 사용할 수도 있습니다.
+* **Acrobat 기반 레코드 문서**: XFA 기반 양식 템플릿 외에 기록 문서용 템플릿으로 Adobe Acrobat 양식 PDF(Acroform PDF)를  [사용할 수도 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) .
 
-* **Microsoft Azure 데이터 저장소 커넥터**: 이제 양식 데이터 모델을 Microsoft Azure 저장소에 연결할 수 있습니다. 적응형 양식 데이터를 BLOB으로 Microsoft Azure 저장소에 저장하고 검색할 수 있습니다.
-
+* **Microsoft Azure 데이터 저장소 커넥터**: 이제 양식 데이터 모델을  [Microsoft Azure 저장소에 연결할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). 적응형 양식 데이터를 검색하고 BLOB으로 Microsoft Azure 저장소에 저장할 수 있습니다.
 
 ## Cloud Acceleration Manager {#cam}
 
