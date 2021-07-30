@@ -10,9 +10,9 @@ feature: 전자 상거래 통합 프레임워크
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
+source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '744'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-여기서, [Venia 참조 스토어의 경우](https://github.com/adobe/aem-cif-guides-venia)
+[Venia 참조 저장소의 경우](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 교체  `/content/venia/us/en/products/product-page`
 * `{{sku}}` 은 제품의 sku(예: )로 대체됩니다.  `VP09`
@@ -58,7 +58,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 * `{{page}}.html/{{url_path}}.html` (기본값)
 * `{{page}}.html/{{url_key}}.html`
 
-여기서, [Venia 참조 스토어의 경우](https://github.com/adobe/aem-cif-guides-venia)
+[Venia 참조 저장소의 경우](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 교체  `/content/venia/us/en/products/category-page`
 * `{{url_key}}` 은 카테고리의 속성으로  `url_key` 대체됩니다
@@ -70,7 +70,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 > 
 > `url_path`은(는) 제품 또는 카테고리의 상위 항목 `url_keys`과 `/` 슬래시로 구분된 제품 또는 카테고리의 `url_key`의 연결입니다.
 
-## 사용자 지정 Url 형식 {#custom-url-format}
+## 사용자 지정 URL 형식 {#custom-url-format}
 
 사용자 지정 URL 형식을 제공하기 위해 프로젝트는 [`UrlFormat` 인터페이스](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)를 구현하고 카테고리 페이지 또는 제품 페이지 URL 형식으로 사용하여 구현을 OSGI 서비스로 등록할 수 있습니다. `UrlFormat#PROP_USE_AS` 서비스 속성은 바꿀 사전 정의된 형식 중 하나를 나타냅니다.
 
