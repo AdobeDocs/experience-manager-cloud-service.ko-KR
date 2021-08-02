@@ -4,9 +4,9 @@ description: Adobe Sensei AI를 사용한 스마트 이미징이 각 사용자�
 feature: 자산 관리,표현물
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2613'
 ht-degree: 1%
 
 ---
@@ -184,13 +184,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 기본적으로 Dynamic Media 회사 계정에 대해 스마트 이미징 DPR 및 네트워크 최적화가 비활성화(꺼짐)됩니다. 이러한 기본 개선 사항 중 하나 또는 둘 다 활성화(켜기)하려면 아래 설명된 지원 사례를 만드십시오.
 
-스마트 이미징 DPR 및 네트워크 최적화에 대한 릴리스 일정은 다음과 같습니다.
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
 
-| 지역 | Target 날짜 |
+| Region | Target date |
 |---|---|
-| 북미 | 라이브 버전 |
-| 유럽, 중동, 아프리카 | 2021년 8월 13일 |
-| 아시아-태평양 | 2021년 7월 22일 |
+| North America | Live | 
+| Europe, Middle East, Africa | 13 August 2021 | 
+| Asia-Pacific | 22 July 2021 | -->
 
 1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. 지원 사례에 다음 정보를 제공하십시오.
@@ -281,4 +281,4 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * 서버측 스마트 이미징 DPR 최적화로 인해 큰 이미지가 발생하지 않도록 DPR 최적화에 대해 Dynamic Media 기초 구성 요소가 기본적으로 구성되어 있으므로 `dpr=off`이 항상 Dynamic Media Foundation 구성 요소 이미지에 추가됩니다. 고객이 DM 기초 구성 요소에서 DPR 최적화를 선택 취소하더라도 서버측 스마트 이미징 DPR이 시작되지 않습니다. 요약하면 DM 기초 구성 요소에서 DPR 최적화는 DM 기초 구성 요소 수준 설정에만 적용됩니다.
 * 모든 뷰어 측 DPR 최적화는 서버 측 스마트 이미징 DPR 최적화와 함께 작동하며 과도한 크기의 이미지를 생성하지 않습니다. 즉, 확대/축소 지원 뷰어의 기본 보기처럼 DPR이 뷰어에 의해 처리되는 모든 위치에서 서버 측 스마트 이미징 DPR 값이 트리거되지 않습니다. 마찬가지로 색상 견본 및 축소판과 같은 뷰어 요소에 DPR 처리가 없으면 서버측 스마트 이미징 DPR 값이 트리거됩니다.
 
-[이미지 작업 시](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 및 [스마트 자르기 작업 시](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop) 를 참조하십시오.
+[이미지 작업 시](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 및 [스마트 자르기 작업 시](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)를 참조하십시오.
