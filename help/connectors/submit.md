@@ -2,9 +2,9 @@
 title: AEM 커넥터 제출
 description: AEM 커넥터 제출
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: eb6aa8741a07e14727b4e74df66b9643936e9231
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ AEM 커넥터는 [Adobe Exchange](https://partners.adobe.com/exchangeprogram/exp
 프로젝트에 패키지를 포함할 수 있는 방법에는 다음과 같은 다양한 옵션이 있습니다.
 
 1. Partner 의 공용 저장소 - 파트너는 공개적으로 액세스할 수 있는 maven 저장소에서 컨텐츠 패키지를 호스팅합니다
-1. 파트너의 암호로 보호된 리포지토리 - 파트너가 암호로 보호된 maven 저장소에서 컨텐츠 패키지를 호스팅합니다. 지침은 [암호로 보호된 maven 저장소(](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories))를 참조하십시오.
+1. 파트너의 암호로 보호된 리포지토리 - 파트너가 암호로 보호된 maven 저장소에서 컨텐츠 패키지를 호스팅합니다. 지침에 대해서는 암호로 보호된 maven 저장소를 참조하십시오.
 1. 번들 아티팩트 - 이 경우 커넥터 패키지는 고객의 전문 프로젝트에 로컬로 포함됩니다.
 
 호스팅되는 위치에 관계없이 패키지는 공급업체에서 제공하는 대로 pom.xml에서 종속으로 참조되어야 합니다.
