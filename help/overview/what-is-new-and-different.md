@@ -2,7 +2,7 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 10%
@@ -98,7 +98,7 @@ Cloud Manager는
 
 * AEM 프로그램 및 환경을 관리하는 데 사용됩니다.
 
-* AEM as a Cloud Service의 필수 구성 요소새로운 각 임차인이 먼저 Cloud Manager 액세스 권한을 제공받습니다.
+* AEM as a Cloud Service의 필수 구성 요소 새로운 각 임차인이 먼저 Cloud Manager 액세스 권한을 제공받습니다.
 
 * 운영 및 개발 직원을 위한 단일 엔트리 레벨 솔루션
 
@@ -112,7 +112,7 @@ Cloud Manager는
 
 Cloud Manager는 AEM as a Cloud Service의 주요 구성 요소를 만들고 구성할 수 있는 셀프 서비스 포털로 발전했습니다.
 
-* 새 프로그램을 만들고 관리합니다. 자세한 내용은 [프로그램 및 프로그램 유형 이해](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)를 참조하십시오.
+* 새 프로그램을 만들고 관리합니다. 자세한 내용은 [프로그램 및 프로그램 유형 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)를 참조하십시오.
 
 * 이러한 프로그램 내에서 AEM 환경을 만들고 관리합니다. 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md)를 참조하십시오.
 
@@ -139,7 +139,7 @@ AEM 프로젝트를 시작하고 관리하는 것은 Adobe이 많은 측면을 �
 
 현재는 크게 다릅니다.
 
-* 모든 전제 조건을 충족하는 평가 단계다음을 포함합니다. 예:
+* 모든 전제 조건을 충족하는 평가 단계 다음을 포함합니다. 예:
 
    * 법적 요구 사항
 
@@ -149,7 +149,7 @@ AEM 프로젝트를 시작하고 관리하는 것은 Adobe이 많은 측면을 �
 
 * 배포 요구 사항:
 
-   * 코드 업데이트이전 버전의 AEM용으로 개발된 모든 고객 애플리케이션은 검토 및 업데이트해야 합니다.
+   * 코드 업데이트 이전 버전의 AEM용으로 개발된 모든 고객 애플리케이션은 검토 및 업데이트해야 합니다.
 
    * 컨텐츠 마이그레이션
 
@@ -195,9 +195,9 @@ OSGI 번들 및 관련 구성이 관리되고 AEM QuickStart의 이전 일부인
 
 신속한 반복 및 개발을 지원하기 위해 AEM 외부에서 Cloud Service 컨텍스트으로 AEM 애플리케이션을 개발할 수도 있습니다. 이를 위해 개발자가 다음 가공물을 사용할 수 있습니다.
 
-* AEM as a Cloud Service QuickStart:동일한 기능 및 API 면을 사용하는 최신 AEM 코드 베이스의 `.jar` 기반 독립형 설치 프로그램.
+* AEM as a Cloud Service QuickStart: 동일한 기능 및 API 면을 사용하는 최신 AEM 코드 베이스의 `.jar` 기반 독립형 설치 프로그램.
 
-* AEM as a Cloud Service Dispatcher SDK:로컬에서 Dispatcher 구성을 테스트 및 확인하는 이미지 기반 프로세스입니다
+* AEM as a Cloud Service Dispatcher SDK: 로컬에서 Dispatcher 구성을 테스트 및 확인하는 이미지 기반 프로세스입니다
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ AEM as a Cloud Service을 사용하면 이러한 작업이 자동화되므로 �
 
 * 많은 작업이 자동화되었습니다.
 
-* 토폴로지는 최대 복원력과 효율성을 제공하도록 최적화되었습니다.예를 들어 binaryless 복제가 기본값입니다.
+* 토폴로지는 최대 복원력과 효율성을 제공하도록 최적화되었습니다. 예를 들어 binaryless 복제가 기본값입니다.
 
 * 큐, 작업 및 대량 처리 작업과 같은 로드가 많은 작업이 공유 및 전용 마이크로 서비스에서 처리할 수 있도록 핵심 AEM 인스턴스에서 이동되었습니다.
 
@@ -229,7 +229,7 @@ AEM as a Cloud Service에 대한 작업도 새로운 모니터링, 보고 및 �
 
 AEM as a Cloud Service에 대한 주요 변경 사항은 작성 계층에 액세스하기 위해 Adobe ID를 완벽하게 통합한 것입니다.
 
-이렇게 하려면 사용자 및 사용자 그룹을 관리하기 위해 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 모든 클라우드 서비스에서 공유되도록 Adobe Identity Management 시스템(IMS)에서 중앙 집중화되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 대한 액세스 권한이 할당되면 사용자 계정을 AEM에서 Cloud Service(이전과 같이)로 참조할 수 있습니다.예를 들어 AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하는 데 사용됩니다.
+이렇게 하려면 사용자 및 사용자 그룹을 관리하기 위해 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 모든 클라우드 서비스에서 공유되도록 Adobe Identity Management 시스템(IMS)에서 중앙 집중화되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 대한 액세스 권한이 할당되면 사용자 계정을 AEM에서 Cloud Service(이전과 같이)로 참조할 수 있습니다. 예를 들어 AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하는 데 사용됩니다.
 
 여기에는 다음과 같은 이점이 결합됩니다.
 
@@ -245,7 +245,7 @@ AEM as a Cloud Service에 대한 주요 변경 사항은 작성 계층에 액세
 
 사이트 및 자산 둘 다에 대한 작성 UI(사용자 인터페이스)의 기본 원칙은 이전에 AEM을 사용한 모든 사용자에게 매우 익숙할 것입니다.
 
-가장 큰 차이점은 UI가 순전히 터치 방식입니다.클래식 UI는 더 이상 사용할 수 없습니다. 그렇지 않으면 기본 사항은 변경되지 않고 작은 변경 사항만 표시됩니다.
+가장 큰 차이점은 UI가 순전히 터치 방식입니다. 클래식 UI는 더 이상 사용할 수 없습니다. 그렇지 않으면 기본 사항은 변경되지 않고 작은 변경 사항만 표시됩니다.
 
 ## AEM Sites {#aem-sites}
 
