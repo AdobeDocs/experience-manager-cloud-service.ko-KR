@@ -2,7 +2,7 @@
 title: '시스템 관리자 작업 '
 description: 사용자를 추가하고 시스템 관리자로 Cloud Manager 역할에 할당하는 방법을 알려면 이 페이지를 따르십시오
 exl-id: 4c0f5783-02c1-4ea6-871a-03ea8a0847bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. Cloud Manager 랜딩 페이지의 오른쪽 상단에 있는 **액세스 관리** 단추를 클릭하여 새 탭에서 Admin Console을 엽니다.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/sys-admin5.png)
 
    **Admin Console**&#x200B;에서 사용자를 Cloud Manager에 추가하고 Admin Console의 제품 프로필이라고 하는 역할에 할당할 수 있습니다.
 
