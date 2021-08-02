@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: 배포
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 고객 릴리스 {#customer-releases}
 
-### 올바른 AEM 버전 {#coding-against-the-right-aem-version}에 대해 코딩
+### 올바른 AEM 버전에 대해 코딩 {#coding-against-the-right-aem-version}
 
 이전 AEM 솔루션의 경우, 가장 최신 AEM 버전이 자주(거의 매년 분기별 서비스 팩으로) 변경되었으며 고객은 API Jar을 참조하여 프로덕션 인스턴스를 자체 시간에 최신 빠른 시작으로 업데이트할 수 있습니다. 그러나 AEM as a Cloud Service 애플리케이션은 최신 AEM 버전으로 자동 업데이트됩니다. 따라서 내부 릴리스에 대한 사용자 지정 코드는 최신 AEM 버전에 대해 빌드해야 합니다.
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ## Cloud Manager 및 패키지 관리자를 통해 컨텐츠 패키지 배포 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
-### Cloud Manager {#deployments-via-cloud-manager} 를 통한 배포
+### Cloud Manager를 통한 배포 {#deployments-via-cloud-manager}
 
 고객은 Cloud Manager를 통해 클라우드 환경에 사용자 지정 코드를 배포합니다. Cloud Manager는 로컬로 어셈블된 컨텐츠 패키지를 Sling 기능 모델을 따르는 아티팩트로 변환하며, 이는 클라우드 환경에서 실행할 때 AEM as a Cloud Service 애플리케이션에 대해 설명되는 방식입니다. 따라서 클라우드 환경의 패키지 관리자에서 패키지를 볼 때 이름에는 &quot;cp2fm&quot;이 포함되고 변형된 패키지의 메타데이터가 모두 제거됩니다. 상호 작용할 수 없으므로 다운로드, 복제 또는 열 수 없습니다. 변환기에 대한 자세한 설명서는 [여기](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)에 있습니다.
 
@@ -78,13 +78,13 @@ Blue-Green 배포 패턴으로 인한 응용 프로그램 변경 사항은 스�
 
 [AEM용 OSGi 구성을 Cloud Service](/help/implementing/deploying/configuring-osgi.md)로 구성에서 OSGI 구성에 대해 자세히 알아보십시오.
 
-## 가변 컨텐츠 {#mutable-content}
+## 가변 콘텐츠 {#mutable-content}
 
 경우에 따라 환경이 업데이트될 때마다 Cloud Manager에서 배포할 수 있도록 소스 제어에서 컨텐츠 변경 사항을 준비하는 것이 유용할 수 있습니다. 예를 들어, 특정 루트 폴더 구조를 시드하거나 편집 가능한 템플릿의 변경 사항을 정렬하여 응용 프로그램 배포로 업데이트된 구성 요소에 정책을 활성화하는 것이 합리적일 수 있습니다.
 
 Cloud Manager에서 가변 저장소, 변경 가능한 컨텐츠 패키지 및 리포인트 문에 배포할 컨텐츠를 설명하는 두 가지 전략이 있습니다.
 
-### 가변 컨텐츠 패키지 {#mutable-content-packages}
+### 가변 콘텐츠 패키지 {#mutable-content-packages}
 
 폴더 경로 계층, 서비스 사용자 및 액세스 제어(ACL)와 같은 컨텐츠는 일반적으로 maven 원형 기반 AEM 프로젝트에 커밋됩니다. 기법에는 AEM에서 내보내거나 XML로 직접 쓰는 작업이 포함됩니다. 빌드 및 배포 프로세스 중에 Cloud Manager는 결과 변경 가능한 컨텐츠 패키지를 패키지화합니다. 변경 가능한 컨텐츠는 파이프라인의 배포 단계 동안 3번 서로 다르게 설치됩니다.
 
@@ -136,7 +136,7 @@ Cloud Manager에서 가변 저장소, 변경 가능한 컨텐츠 패키지 및 �
 다음과 같은 이점 때문에 지원되는 이러한 컨텐츠 수정 사용 사례에 대해 반복을 사용하는 것이 좋습니다.
 
 * 리포인트는 시작 시 리소스를 만들어 로직이 그러한 리소스를 당연하게 사용할 수 있도록 합니다. 가변 컨텐츠 패키지 접근 방식에서는 시작 후 리소스가 생성되므로 여기에 의존하는 응용 프로그램 코드가 실패할 수 있습니다.
-* 리포인트는 수행할 작업을 명시적으로 제어할 때 비교적 안전한 명령 세트입니다. 또한, 사용자, 서비스 사용자 및 그룹을 제거할 수 있는 몇 가지 보안 관련 사례를 제외하고 지원되는 유일한 작업은 추가 작업입니다. 반대로 변경 가능한 컨텐츠 패키지 접근 방식에서 무언가를 제거하는 것은 명시적 방식입니다. 필터를 정의하면 필터에 의해 적용되는 모든 항목이 삭제됩니다. 여전히 새 컨텐츠가 있으면 애플리케이션의 동작을 변경할 수 있는 시나리오가 있으므로 주의해야 합니다.
+* 리포인트는 수행할 작업을 명시적으로 제어할 때 비교적 안전한 명령 세트입니다. 또한, 사용자, 서비스 사용자 및 그룹을 제거할 수 있는 몇 가지 보안 관련 사례를 제외하고 지원되는 유일한 작업은 추가 작업입니다. 반대로 변경 가능한 컨텐츠 패키지 접근 방식에서 무언가를 제거하는 것은 명시적 방식입니다.  필터를 정의하면 필터에 의해 적용되는 모든 항목이 삭제됩니다. 여전히 새 컨텐츠가 있으면 애플리케이션의 동작을 변경할 수 있는 시나리오가 있으므로 주의해야 합니다.
 * 리포인트는 빠르고 원자적인 작업을 수행합니다. 반대로 변경할 수 있는 컨텐츠 패키지는 필터에 의해 적용되는 구조에 따라 성능이 크게 달라질 수 있습니다. 단일 노드를 업데이트하더라도 큰 트리의 스냅샷이 생성될 수 있습니다.
 * OSGi 구성이 등록될 때 실행되므로 로컬 개발 환경에서 런타임 시 다시 점을 확인할 수 있습니다.
 * repoinit 문은 원자적이고 명시적이며 상태가 이미 일치하는 경우 건너뜁니다.
@@ -165,7 +165,7 @@ Cloud Manager에서 애플리케이션을 배포하면 컨텐츠 패키지 설�
 
 above appears to be internal, to confirm with Brian -->
 
-### 가변 컨텐츠 패키지 {#package-manager-oneoffs-for-mutable-content-packages}에 대한 패키지 관리자 &quot;하나의 오프스&quot;
+### 가변 컨텐츠 패키지에 대한 패키지 관리자 &quot;일회성&quot; {#package-manager-oneoffs-for-mutable-content-packages}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
@@ -181,7 +181,7 @@ Cloud Manager를 통해 설치된 모든 컨텐츠 패키지(변경할 수 있�
 
 ### 타사 패키지 포함 {#including-third-party}
 
-일반적으로 고객은 Adobe의 번역 파트너와 같은 소프트웨어 공급업체로부터 사전 빌드된 패키지를 포함합니다. 원격 리포지토리에서 이러한 패키지를 호스팅하고 `pom.xml`에서 참조하는 것이 좋습니다. 이 기능은 [암호로 보호된 maven 저장소](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)에 설명된 대로 공용 저장소 및 암호 보호를 사용하는 개인 리포지토리에 대해서도 가능합니다.
+일반적으로 고객은 Adobe의 번역 파트너와 같은 소프트웨어 공급업체로부터 사전 빌드된 패키지를 포함합니다. 원격 리포지토리에서 이러한 패키지를 호스팅하고 `pom.xml`에서 참조하는 것이 좋습니다. 이 기능은 [암호로 보호된 maven 저장소](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)에 설명된 대로 공용 저장소 및 암호 보호를 사용하는 개인 리포지토리에 대해서도 가능합니다.
 
 원격 저장소에 패키지를 저장할 수 없는 경우, 고객은 프로젝트의 일부로 SCM에 커밋되고 이 패키지에 종속되는 모든 항목에서 참조하는 로컬 파일 시스템 기반 Maven 리포지토리에 배치할 수 있습니다. 저장소는 아래 그림과 같이 프로젝트 상태에 선언됩니다.
 
@@ -233,7 +233,7 @@ Cloud Manager를 통해 설치된 모든 컨텐츠 패키지(변경할 수 있�
 ...
 ```
 
-## 롤링 배포의 작동 방식 {#how-rolling-deployments-work}
+## 롤링 배포 작동 방식 {#how-rolling-deployments-work}
 
 AEM 업데이트과 마찬가지로, 고객 릴리스는 올바른 환경에서 작성 클러스터 다운타임을 제거하기 위해 롤링 배포 전략을 사용하여 배포됩니다. 이벤트의 일반 시퀀스는 아래에 설명되어 있습니다. 여기서 **Blue**&#x200B;은 고객 코드의 이전 버전이고 **Green**&#x200B;은 새 버전입니다. 파란색과 녹색이 모두 동일한 버전의 AEM 코드를 실행하고 있습니다.
 
@@ -261,7 +261,7 @@ AEM 업데이트과 마찬가지로, 고객 릴리스는 올바른 환경에서 
 
 Cloud Ready AEM 빠른 시작을 사용하여 복제를 개발하고 테스트하려면, 클래식 복제 기능을 작성자/게시 설정과 함께 사용해야 합니다. 클라우드에 대해 AEM 작성자의 UI 시작 지점이 제거된 경우 사용자는 `http://localhost:4502/etc/replication` 로 이동하여 구성을 확인합니다.
 
-## 롤링 배포에 대한 이전 호환 코드 {#backwards-compatible-code-for-rolling-deployments}
+## 롤링 배포를 위한 이전 호환 코드 {#backwards-compatible-code-for-rolling-deployments}
 
 위에서 자세히 설명한 바와 같이, AEM as a Cloud Service의 롤링 배포 전략은 이전 버전과 새 버전이 모두 동시에 작동할 수 있음을 의미합니다. 따라서 여전히 작동 중인 이전 AEM 버전과 이전 버전과 호환되지 않는 코드 변경 사항에 주의하십시오.
 
@@ -271,11 +271,11 @@ Cloud Ready AEM 빠른 시작을 사용하여 복제를 개발하고 테스트�
 
 컨텐츠나 코드에 액세스하는 데 필요한 서비스 사용자 또는 ACL을 변경하면 이전 AEM 버전에서 오류가 발생하여 이전 서비스 사용자가 해당 컨텐츠나 코드에 액세스할 수 있습니다. 이 동작을 해결하기 위해 첫 번째 릴리스가 후속 릴리스에서 정리되기 전에 브리지 역할을 하면서 최소 2개의 릴리스에 변경 사항을 분산하는 것이 좋습니다.
 
-### 인덱스 변경 사항 {#index-changes}
+### 색인 변경 사항 {#index-changes}
 
 인덱스에 대한 변경 사항이 수행된 경우 Blue 버전은 색인이 종료될 때까지 인덱스를 계속 사용하는 반면 Green 버전은 자체 수정된 인덱스 세트를 사용하는 것이 중요합니다. 개발자는 이 문서](/help/operations/indexing.md)에서 설명한 인덱스 관리 기술을 따라야 합니다.[
 
-### 롤백 {#conservative-coding-for-rollbacks}에 대한 보수적 코딩
+### 롤백 시 보수적인 코딩 {#conservative-coding-for-rollbacks}
 
 구축 후 오류를 보고하거나 감지하면 파란색 버전으로 롤백해야 할 수 있습니다. 새로운 구조(가변 컨텐츠 컨텐츠 컨텐츠)가 롤백되지 않으므로 파란색 코드가 녹색 버전에서 만든 모든 새 구조와 호환되는지 확인하는 것이 좋습니다. 이전 코드가 호환하지 않는 경우, 후속 고객 릴리스에서 수정 사항을 적용해야 합니다.
 
