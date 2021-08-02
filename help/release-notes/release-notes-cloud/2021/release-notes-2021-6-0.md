@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 릴리스의 릴리스 노트'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 릴리스의 릴리스 노트'
-source-git-commit: dcc598b565dfeeb7c5f62671edc8b256b60d9ec4
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 4%
@@ -64,7 +64,7 @@ AEM as a Cloud Service 2021.6.0의 Cloud Manager 릴리스 날짜는 2021년 6�
 
 * 혼동을 방지하기 위해 환경 세부 사항 페이지의 AEM 게시 및 Dispatcher 세그먼트 행이 통합되었습니다.
 
-   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+   ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
 * `damAssetLucene` 인덱스 구조의 유효성을 확인하기 위해 새 코드 품질 규칙이 추가되었습니다. 자세한 내용은 [사용자 지정 DAM Asset Lucene Oak 색인](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)을 참조하십시오.
 
