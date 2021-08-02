@@ -2,9 +2,9 @@
 title: Cloud Manager란?
 description: Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알려면 이 페이지를 따르십시오.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ Cloud Manager 프로그램은 비즈니스 이니셔티브의 논리적 집합�
 사용자는 **Sandbox** 또는 **Production** 프로그램을 만들 수 있습니다.
 
 * *프로덕션 프로그램*이 생성되어 미래의 적절한 시간에 라이브 트래픽을 사용할 수 있습니다.
-자세한 내용은 프로덕션 프로그램 소개 를 참조하십시오.
+자세한 내용은 [프로덕션 프로그램 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en)를 참조하십시오.
 
 * *샌드박스 프로그램*은 일반적으로 교육용, 데모, 지원, POC 또는 설명서를 실행하기 위해 만들어집니다. 라이브 트래픽을 전달하기 위한 것이 아니며, 프로덕션 프로그램이 허용하지 않을 수 있는 제한 사항이 있습니다. 여기에는 사이트 및 자산이 포함되며, 샘플 코드, 개발 환경 및 비프로덕션 파이프라인이 포함된 Git 분기로 자동으로 채워집니다.
-자세한 내용은 샌드박스 프로그램 소개 를 참조하십시오.
+자세한 내용은 [샌드박스 프로그램 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en)를 참조하십시오.
 
 ## Cloud Manager 환경 {#cloud-manager-environments}
 
