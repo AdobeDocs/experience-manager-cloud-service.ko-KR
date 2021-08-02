@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 68%
+source-wordcount: '484'
+ht-degree: 47%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 68%
    + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [미리 보기 - JSON 표시](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
-   + [Experience League의 Dynamic Media 뉴스레터](dynamic-media/dynamic-media-newsletter.md)
+   + [Experience League별 Dynamic Media 뉴스레터 아카이브](dynamic-media/dynamic-media-newsletter.md)
    + [Dynamic Media 설정](dynamic-media/administering-dynamic-media.md)
    + [Dynamic Media 작업](dynamic-media/dynamic-media.md)
    + [Dynamic Media 구성](dynamic-media/config-dm.md)
@@ -107,7 +107,7 @@ ht-degree: 68%
    + [파노라마 이미지](dynamic-media/panoramic-images.md)
    + [혼합 미디어 세트](dynamic-media/mixed-media-sets.md)
    + [스핀 세트](dynamic-media/spin-sets.md)
-   + [비디오](dynamic-media/video.md)
+   + [다이내믹 미디어의 비디오](dynamic-media/video.md)
    + [회전 배너](dynamic-media/carousel-banners.md)
    + [대화형 이미지](dynamic-media/interactive-images.md)
    + [대화형 비디오](dynamic-media/interactive-videos.md)
@@ -118,7 +118,7 @@ ht-degree: 68%
    + [Dynamic Media 자산 미리 보기](dynamic-media/previewing-assets.md)
    + [페이지에 Dynamic Media 자산 추가](dynamic-media/adding-dynamic-media-assets-to-pages.md)
    + [웹 페이지에 Dynamic Video 또는 Image viewer 포함](dynamic-media/embed-code.md)
-   + [URL을 웹 애플리케이션에 연결](dynamic-media/linking-urls-to-yourwebapplication.md)
+   + [웹 애플리케이션에 URL 연결](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Dynamic Media의 선택적 게시 작업](dynamic-media/selective-publishing.md)
