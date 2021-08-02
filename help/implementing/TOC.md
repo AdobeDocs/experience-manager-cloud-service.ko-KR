@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 43%
+source-wordcount: '1034'
+ht-degree: 45%
 
 ---
 
@@ -17,6 +17,42 @@ ht-degree: 43%
 
 + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
 + Cloud Manager 사용 {#using-cloud-manager}
+   + Cloud Manager 릴리스 노트 {#release-notes-cloud-manager}
+      + [현재 릴리스 노트(2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2021 {#2021}
+         + [2021.6.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+         + [2021.5.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+         + [2021.4.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+         + [2021.3.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+         + [2021.2.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+         + [2021.1.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + 2020 {#2020}
+         + [2020.12.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+         + [2020.11.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+         + [2020.10.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+         + [2020.9.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+         + [2020.8.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+         + [2020.7.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+         + [2020.6.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+         + [2020.5.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+         + [2020.4.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+         + [2020.3.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+         + [2020.2.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + [프로그램 및 프로그램 유형 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
+   + 프로덕션 프로그램 {#production-programs}
+      + [소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [프로덕션 프로그램 생성](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [프로덕션 프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + 샌드박스 프로그램 {#sandbox-programs}
+      + [소개](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [샌드박스 프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [샌드박스 프로그램 삭제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [최대 절전 모드 및 최대 절전 모드 해제 샌드박스 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
+      + [마법사 사용](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [빌드 환경 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [환경 관리](cloud-manager/manage-environments.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
    + [코드 배포](cloud-manager/deploy-code.md)
