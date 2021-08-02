@@ -1,7 +1,7 @@
 ---
 title: 스크린 컨텐츠 공급자 사용
 description: 이 페이지에서는 컨텐츠 작성에 Screens 컨텐츠 공급자를 사용하는 방법에 대해 설명합니다.
-source-git-commit: aea66e38a54c8e96b0dfe06cc7cb8f7733e8bc09
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
@@ -30,10 +30,10 @@ Screens 컨텐츠 공급자에 로그인하려면 아래 절차를 따르십시�
 1. [Adobe Experience Cloud](https://experience.adobe.com) 홈 페이지로 이동합니다.
 
 1. **Experience Manager**을 선택합니다.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Cloud Manager 카드에서 **Launch**&#x200B;를 클릭합니다. [!UICONTROL Cloud Manager]에 성공적으로 로그인하면 UI(사용자 인터페이스)를 사용할 수 있습니다.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Screens용 프로그램을 Cloud Service으로 선택하고 아래 표시된 대로 아이콘을 클릭하여 Cloud Manager의 **개요** 페이지를 엽니다.
 
