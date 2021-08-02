@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d977ff765accb650daff4c35f2668489454305cd
+source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1309'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 추가된 기능 요약에 대한 설명이 필요하면 [2021년 7월 릴리스 개요](https://video.tv.adobe.com/v/335580) 비디오를 시청하십시오.
 
-## Experience Manager Foundation as a Cloud Service {#foundation}
+## [!DNL Experience Manager] 로서의  [!DNL Cloud Service] 기초 {#foundation}
 
 ### 새로운 기능 {#what-is-new-foundation}
 
