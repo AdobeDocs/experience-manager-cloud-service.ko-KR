@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] as a 2020.7.0 Cloud Service 릴리스 노트'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 76%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스 노트 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스 노트  {#release-notes}
 
 다음 섹션에서는 Experience Manager as a Cloud Service 2020.7.0 일반 릴리스 노트를 간략하게 설명합니다.
 
@@ -17,7 +17,7 @@ ht-degree: 76%
 
 [!DNL Experience Manager] as a Cloud Service 2020.7.0 릴리스 날짜는 2020년 7월 30일입니다.
 
-## Adobe Experience Manager Sites as a Cloud Service{#cloud-services-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
 ### 새로운 기능 {#what-is-new-sites}
 
@@ -31,7 +31,7 @@ ht-degree: 76%
 
 ## [!DNL Adobe Experience Manager Assets] 로서의 Cloud Service {#assets}
 
-### [!DNL Assets] {#what-is-new-assets}의 새로운 기능
+### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
 * [!DNL Asset Compute Service]는 자산을 처리하는 확장 가능한 서비스입니다. 관리자는 [!DNL Asset Compute Service]을(를) 사용하여 만든 사용자 정의 응용 프로그램을 호출하도록 [!DNL Experience Manager]을 구성할 수 있습니다. 개발자는 이 서비스를 사용하여 복잡한 사용 사례에 맞는 전문 맞춤형 애플리케이션을 만들 수 있습니다. 이 웹 서비스는 다양한 파일 유형에 대한 축소판 생성, Adobe 파일 형식의 고품질 이미지 렌더링, 비디오 인코딩(미래), 메타데이터 추출, 색인을 생성하기 위한 사전 설정으로 전체 텍스트 추출, 사용 가능한 모든 [!DNL Sensei] 서비스를 통한 자산 실행 등의 작업을 수행할 수 있습니다. [자산 마이크로서비스 및 처리 프로필 사용](/help/assets/asset-microservices-configure-and-use.md)을 참조하십시오.
 
@@ -43,7 +43,7 @@ ht-degree: 76%
 
 * 고객이 생성하여 [!DNL Cloud Manager]의 환경과 연결된 Git 프로젝트의 `/conf/global`에 배포되는 워크플로우 모델은 자동으로 `/var`에 배포되어 [!DNL Experience Manager]에서 사용할 수 있습니다. 고객이 변경한 `/libs`의 제품 워크플로우 모델은 자동으로 `/var`에 배포되지 않습니다.
 
-### 버그 수정 {#assets-bugs-fixed}
+### 해결된 버그 {#assets-bugs-fixed}
 
 * 자산 이동 마법사가 컬렉션에 포함된 자산에 대해 예상대로 로드되지 않습니다. (CQ-4296756)
 * `dam:size` 및 `dam:sha1` 값은 XMP 원본에 쓰기 작업에서 제외됩니다. (CQ-4237355)
@@ -88,12 +88,12 @@ ht-degree: 76%
 
 * 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 암호를 지원합니다.
 
-   자세한 내용은 [파이프라인 변수](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)를 참조하십시오.
+   자세한 내용은 파이프라인 변수를 참조하십시오.
 
 * 이제 인증 바인딩된 Private Maven 리포지토리가 지원됩니다.
 
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
-자세한 내용은 [Java 11 지원 사용](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)을 참조하십시오.
+자세한 내용은 Java 11 지원 사용 을 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-cm}
 
