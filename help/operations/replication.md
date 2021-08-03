@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1347'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
 >[!NOTE]
 >
->이 접근 방식은 상태를 지속하지 않으며 다른 접근 방법보다 확장 가능성이 낮으므로 더 이상 사용되지 않는 것으로 간주해야 합니다. Adobe의 추천은 대신 게시 관리 또는 워크플로우 메서드를 사용하는 것입니다
+>이 방법은 더 이상 사용되지 않는 것으로 간주되어야 하며, 상태가 지속되지 않으며 다른 접근 방법보다 확장 가능성이 낮으므로 2021년 9월 30일 이후에 제거됩니다. Adobe의 추천은 대신 게시 관리 또는 워크플로우 메서드를 사용하는 것입니다
 
 트리 활성화를 수행하려면 다음을 수행합니다.
 
