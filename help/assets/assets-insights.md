@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 자산 통찰력,자산 보고서
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,10 @@ ht-degree: 0%
 
 1. **[!UICONTROL 사용 통계]** 섹션을 검토하여 자산이 속한 엔티티와 최근에 사용한 크리에이티브 솔루션을 알아봅니다. 사용량이 많을수록 사용자 간에 자산이 인기 있을 가능성이 높습니다. 사용 데이터는 다음 헤드 아래에 표시됩니다.
 
-   * **[!UICONTROL 자산]**:자산이 컬렉션 또는 복합 자산의 일부인 횟수입니다.
-   * **[!UICONTROL 웹 및 모바일]**:자산이 웹 사이트 및 앱의 일부인 횟수입니다.
-   * **[!UICONTROL 소셜]**:자산이 와 같은 다른 솔루션에서 사용된 횟수입니다  [!DNL Adobe Campaign].
-   * **[!UICONTROL 이메일]**:이메일 캠페인에 자산이 사용된 횟수입니다.
+   * **[!UICONTROL 자산]**: 자산이 컬렉션 또는 복합 자산의 일부인 횟수입니다.
+   * **[!UICONTROL 웹 및 모바일]**: 자산이 웹 사이트 및 앱의 일부인 횟수입니다.
+   * **[!UICONTROL 소셜]**: 자산이 와 같은 다른 솔루션에서 사용된 횟수입니다  [!DNL Adobe Campaign].
+   * **[!UICONTROL 이메일]**: 이메일 캠페인에 자산이 사용된 횟수입니다.
 
    ![usage_statistics](assets/usage_statistics.png)
 
@@ -59,7 +59,7 @@ ht-degree: 0%
    >
    >솔루션 섹션의 데이터와 달리 성능 통계 섹션에는 최신 데이터가 표시됩니다.
 
-1. 웹 사이트에 포함하여 성능 데이터를 가져올 자산의 포함 코드를 가져오려면 자산 축소판 아래의 **[!UICONTROL 포함 코드 가져오기]**&#x200B;를 클릭하십시오.<!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. 웹 사이트에 포함하여 성능 데이터를 가져올 자산의 포함 코드를 가져오려면 자산 축소판 아래의 **[!UICONTROL 포함 코드 가져오기]**&#x200B;를 클릭하십시오. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -67,8 +67,8 @@ ht-degree: 0%
 
 **[!UICONTROL 인사이트 보기]**&#x200B;를 사용하여 폴더 내에서 모든 자산의 점수를 동시에 볼 수 있습니다.
 
-1. 자산 UI에서 통찰력을 보려는 자산이 들어 있는 폴더로 이동합니다.
-1. 도구 모음에서 레이아웃 옵션을 클릭한 다음 **[!UICONTROL 인사이트 보기]**&#x200B;를 선택합니다.
+1. Assets 사용자 인터페이스에서 통찰력을 보려는 자산이 들어 있는 폴더로 이동합니다.
+1. 도구 모음에서 **[!UICONTROL 레이아웃]** 옵션을 클릭한 다음 **[!UICONTROL 인사이트 보기]**&#x200B;를 선택합니다.
 1. 페이지에 자산에 대한 사용 점수가 표시됩니다. 다양한 자산의 등급을 비교하고 인사이트를 도출합니다.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -95,21 +95,21 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]**&#x200B;을 클릭합니다.
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. **[!UICONTROL 인사이트 구성]** 카드를 클릭합니다.
 1. 마법사에서 데이터 센터를 선택하고 조직 이름, 사용자 이름 및 공유 암호가 포함된 자격 증명을 제공합니다.
 
    ![에서 자산 통찰력에 대한 Adobe Analytics 구성  [!DNL Experience Manager]](assets/insights_config2.png)
 
-   *그림:에서 자산 통찰력에 대한 Adobe Analytics 구성[!DNL Experience Manager]*
+   *그림: 에서 자산 통찰력에 대한 Adobe Analytics 구성[!DNL Experience Manager]*
 
 1. **[!UICONTROL 인증]**&#x200B;을 클릭합니다. [!DNL Experience Manager]이 자격 증명을 인증하면 **[!UICONTROL 보고서 세트]** 목록에서 자산 통찰력이 데이터를 가져오려는 Adobe Analytics 보고서 세트를 선택합니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. [!DNL Experience Manager] 보고서 세트를 설정한 후에 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 ### 페이지 추적기 {#page-tracker}
 
-Adobe Analytics 계정을 구성하면 페이지 추적기 코드가 생성됩니다. 자산 통찰력 이 타사 웹 사이트에서 사용되는 [!DNL Experience Manager] 자산을 추적하도록 하려면 웹 사이트 코드에 페이지 추적기 코드를 포함하십시오. Assets의 Page Tracker 유틸리티를 사용하여 페이지 추적기 코드를 생성합니다.<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Adobe Analytics 계정을 구성하면 페이지 추적기 코드가 생성됩니다. 자산 통찰력 이 타사 웹 사이트에서 사용되는 [!DNL Experience Manager] 자산을 추적하도록 하려면 웹 사이트 코드에 페이지 추적기 코드를 포함하십시오. Assets의 Page Tracker 유틸리티를 사용하여 페이지 추적기 코드를 생성합니다. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
 1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]**&#x200B;을 클릭합니다.
 
@@ -117,6 +117,29 @@ Adobe Analytics 계정을 구성하면 페이지 추적기 코드가 생성됩�
 
 1. **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 인사이트 페이지 추적기]** 카드를 클릭합니다.
 1. **[!UICONTROL 다운로드]**&#x200B;를 클릭하여 페이지 추적기 코드를 다운로드합니다.
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+다음 샘플 코드 조각은 샘플 웹 페이지에 포함된 페이지 추적기 코드를 표시합니다.
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
