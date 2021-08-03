@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 47%
+source-wordcount: '490'
+ht-degree: 46%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 47%
    + [컨텐츠 조각에 대한 원격 GraphQL 쿼리에 대한 인증](content-fragments/graphql-authentication-content-fragments.md)
    + [컨텐츠 조각을 사용한 GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [연결된 자산](use-assets-across-connected-assets-instances.md)
+   + [Adobe InDesign에 대한 FPO 표현물 생성](configure-fpo-renditions.md)
    + [자산 보고서](asset-reports.md)
    + [계단식 메타데이터](cascading-metadata.md)
    + [XMP 메타데이터](xmp-metadata.md)
