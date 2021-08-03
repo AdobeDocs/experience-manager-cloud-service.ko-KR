@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는 및 제거된 기능
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 사용 중단되거나 제거된 기능에 관한 릴리스 노트입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 1adcde525454e779adbd251b9a31f4e456b28998
+source-git-commit: 8742c4058a5b89a0d6aca0d6e58ed993b01d084d
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 38%
+source-wordcount: '513'
+ht-degree: 36%
 
 ---
 
@@ -38,6 +38,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Assets] | 자산을 [!DNL Experience Manager]에 바로 업로드합니다. [더 이상 사용되지 않는 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 자세한 내용은 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
 | [!DNL Assets] | [워크플로우의 특정 ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) 워크플로우 단계 `DAM Asset Update` 는  [!DNL ImageMagick]과 같은 명령줄 도구 호출을 포함하여 지원되지 않습니다. | [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로우에 대한 대체 기능을 제공합니다. 사용자 지정 처리에는 [사후 처리 워크플로우](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
 | [!DNL Assets] | 비디오의 FFmpeg 코드 변환. | FFmpeg 썸네일 생성의 경우 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. FFmpeg 코드 변환의 경우 [Dynamic Media](/help/assets/manage-video-assets.md)를 사용합니다. |
+| [!DNL Foundation] | 복제 에이전트의 &quot;분배&quot; 탭에 있는 트리 복제 UI(2021년 9월 30일 이후 제거) | [게시 ](/help/operations/replication.md#manage-publication) 관리 또는  [컨텐츠 트리 워크플로우 ](/help/operations/replication.md#publish-content-tree-workflow) 접근 |
 
 ## 제거된 기능 {#removed-features}
 
@@ -50,3 +51,4 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이러한 기능은 [!DNL Experience Manager] 6.4에서 더 이상 사용되지 않으며, 이제 [!DNL Experience Manager]에서 제거되었습니다. |
 | [!DNL Sites] | 디자인 가져오기 | 런타임 시 [!DNL Experience Manager] 리포지토리의 변경할 수 없는 섹션을 액세스할 수 없어서 이 기능은 제거되었습니다. |
 | [!DNL Assets] | [!DNL Assets]Marketing Cloud 자산 핵심 서비스 및 Creative Cloud 서비스와 공유하는 를 사용할 수 없습니다. | [!DNL Adobe Creative Cloud]과 통합하려면 [자산 링크 Adobe](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)를 사용하십시오. |
+| [!DNL Foundation] | Apache Sling 데이터 소스(OSGi 번들 org.apache.sling.datasource)에 대한 지원. | N/A |
