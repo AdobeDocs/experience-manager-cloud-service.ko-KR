@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1618'
 ht-degree: 1%
 
 ---
@@ -74,9 +74,6 @@ ht-degree: 1%
    ![](assets/environment-view-2.png)
 
 1. 목록에서 환경을 선택하여 환경 세부 사항을 확인합니다.
-
-   >[!NOTE]
-   >미리 보기 서비스는 모든 프로그램에 롤링 기반으로 배포됩니다. 미리 보기 서비스에 대해 프로그램이 활성화되면 고객에게 제품 내 알림을 보냅니다. 자세한 내용은 [미리 보기 서비스 액세스](#access-preview-service) 섹션을 참조하십시오.
 
    ![](assets/environ-preview1.png)
 
