@@ -4,9 +4,9 @@ description: 팀 구성원을 AEM as a Cloud Service 제품 프로필로 할당�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Cloud Service 인스턴스로 AEM에 대한 액세스 권한을 부여하려면 
 
 ## 다음은 무엇입니까? {#whats-next}
 
-Cloud Service 제품 프로필로 AEM에 할당한 사용자는 이제 작성자에 액세스하는 방법을 학습하고 AEM as a Cloud Service으로 페이지를 작성하는 방법에 대해 알 수 있습니다. 그 다음 AEM 사용자를 위한 학습 경로 문서를 검토하여 경로를 따라야 합니다.
+Cloud Service 제품 프로필로 AEM에 할당한 사용자는 이제 작성자에 액세스하는 방법을 학습하고 AEM as a Cloud Service으로 페이지를 작성하는 방법에 대해 알 수 있습니다. 그 다음 AEM 사용자를 위한 학습 경로 문서 또는 개발자 및 배포 관리자를 위한 학습 경로를 검토하여 해당 경로를 따라야 합니다.
 
 ## 추가 리소스 {#additional-resources}
 
