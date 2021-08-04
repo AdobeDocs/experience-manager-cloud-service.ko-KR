@@ -4,7 +4,7 @@ description: 팀 구성원을 AEM as a Cloud Service 제품 프로필로 할당�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 196af2ab4801b12017063bc2aab59faabdae45f9
+source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -44,11 +44,15 @@ Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여하려면 `AE
    >[!NOTE]
    >온보딩을 위해 관리자, 개발자 및 컨텐츠 작성자와 같은 즉각적인 작업에 참여할 사용자를 처음에 추가하는 것이 좋습니다. 모든 사용자를 추가하지 않고 온보딩의 나머지 부분을 계속 진행할 수 있습니다. 온보딩을 완료하면 나중에 더 많은 사용자 수로 확장할 수 있습니다.
 
-팀 구성원을 AEM as a Cloud Service 제품 프로필로 지정하는 단계를 검토하기 전에 다음 두 단계를 따르는지 확인하십시오.
 
-1. [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)에 로그인합니다. 자세한 내용은 Admin Console 로그인 을 참조하십시오.
+   >[!IMPORTANT]
+   >팀 구성원을 AEM as a Cloud Service 제품 프로필로 지정하는 단계를 검토하기 전에 다음 두 단계를 따르는지 확인하십시오.
+   >
+   >1. [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)에 로그인합니다. 자세한 내용은 Admin Console 로그인 을 참조하십시오.
+      >
+      >
+   1. [AEM as a Cloud Service 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)을 검토합니다.
 
-1. [AEM as a Cloud Service 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)을 검토합니다.
 
 Adobe Admin Console의 Cloud Manager 프로필 목록을 보려면 아래 단계를 따르십시오.
 
@@ -76,18 +80,24 @@ Cloud Service 인스턴스로 AEM에 대한 액세스 권한을 부여하려면 
 >[!NOTE]
 >인스턴스에 대한 권한을 부여해야 하며 Cloud Manager 관리 권한으로는 충분하지 않습니다. 추가 정보.
 
-아래 단계는 비즈니스 소유자 역할에도 참여하는 시스템 관리자가 수행해야 합니다.
+아래 단계에는 비즈니스 소유자 역할에도 참여하는 시스템 관리자가 따라야 합니다.
 
-1. Cloud Manager에서 Cloud Manager로 이동하여 아래와 같이 관심 환경 컨텍스트에서 액세스 관리 단추를 선택합니다.
+1. Cloud Manager에서 프로그램으로 이동하고 아래 표시된 대로 관심 환경 컨텍스트에서 **액세스 관리** 단추를 선택합니다.
 
-1. 액세스 관리를 클릭하면 새 탭이 환경의 작성자 인스턴스에 액세스할 수 있는 Admin Console으로 이동합니다. 이 개인이 부여해야 하는 권한에 따라 *AEM Administrators* 또는 *AEM Users*&#x200B;를 선택합니다. [AEM as a Cloud Service 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)에 대해 자세히 알아보십시오.
+   ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. 아래 표시된 대로 사용자 추가 를 선택하고 필요한 세부 정보를 제출하여 팀 구성원 추가를 완료합니다.
+1. 새 탭이 환경의 작성자 인스턴스에 액세스할 수 있는 Adobe Admin Console으로 이동합니다. 이 개인이 부여해야 하는 권한에 따라 *AEM Administrators* 또는 *AEM Users*&#x200B;를 선택합니다. [AEM as a Cloud Service 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)에 대해 자세히 알아보십시오.
 
+   ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
-1. 액세스 권한이 필요한 팀 구성원의 정보가 있는 경우 개발, 스테이지 및 프로덕션을 포함한 모든 환경에 대해 이 단계를 반복하게 됩니다.
+1. `AEM Administrator` 또는 `AEM User`을 선택하고 아래 표시된 대로 **사용자 추가**&#x200B;를 클릭한 다음 필요한 세부 정보를 제출하여 팀 구성원 추가를 완료합니다.
+
+   ![](/help/onboarding/onboarding-journey/assets/add-team3.png)
 
    추가한 사용자는 이제 AEM as a Cloud Service 작성자 서비스로 액세스할 수 있습니다.
+
+   >[!NOTE]
+   >액세스 권한이 필요한 팀 구성원의 정보가 있는 경우 개발, 스테이지 및 프로덕션을 포함한 모든 환경에 대해 이 단계를 반복하게 됩니다.
 
 
 ## 다음은 무엇입니까? {#whats-next}
