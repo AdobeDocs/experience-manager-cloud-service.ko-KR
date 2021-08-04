@@ -4,9 +4,9 @@ description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
 
    >[!IMPORTANT]
-   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다.
+   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 이 페이지를 책갈피로 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동하세요.
 
 또한 Adobe Experience Cloud 홈 페이지에서 Cloud Manager의 **프로그램 및 제품** 페이지로 이동할 수 있습니다. 아래 단계를 따르십시오.
 
@@ -91,7 +91,6 @@ Cloud Manager로 이동하려면 아래 단계를 따르십시오.
       조직에 프로그램이 이미 있고 사용자가 시스템 관리자인 경우 랜딩 페이지에 **액세스 관리** 단추가 **프로그램 추가** 옵션과 함께 표시됩니다. 아래 그림은 아래 그림과 같습니다.
 
       ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## 사용자 역할 확인 {#verify-user-roles}
