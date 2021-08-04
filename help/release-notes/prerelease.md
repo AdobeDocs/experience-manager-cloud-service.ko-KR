@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] Cloud Service 사전 릴리스 채널로'
 description: '[!DNL Adobe Experience Manager] Cloud Service 사전 릴리스 채널로'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] Cloud Service 사전 릴리스 채널로  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] Cloud Service 사전 릴리스 채널로 {#prerelease-channel}
 
 
 ## 소개 {#introduction}
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[비디오](/help/release-notes/assets/prerelease-overview.mp4)
 
-## 사전 릴리스 {#enable-prerelease} 를 활성화하는 방법
+## 사전 릴리스를 활성화하는 방법 {#enable-prerelease}
 
 시험판 기능은 다음과 같은 다양한 방법으로 경험할 수 있습니다.
 
@@ -54,7 +54,7 @@ Cloud Manager CLI는 [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-c
 
 Maven Central에 있는 사전 릴리스 `API Jar`을 참조하도록 하면 사전 릴리스에서 로컬 Quickstart SDK의 사이트 콘솔에서 새로운 기능과 새 API에 대한 코드가 표시됩니다. 사전 릴리스 모드에서 일반 Quickstart SDK를 시작하여 로컬 컴퓨터에서 이러한 사전 릴리스 기능을 볼 수도 있습니다.
 
-* 소프트웨어 배포 포털에서 SDK를 다운로드하고 [AEM as a Cloud Service SDK](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)에 설명된 대로 설치합니다.
+* 소프트웨어 배포 포털에서 SDK를 다운로드하고 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)에 설명된 대로 설치합니다.
 * SDK 빠른 시작을 시작할 때 인수 `-r prerelease`을 포함하십시오.
 * 값은 *고정*&#x200B;이므로 첫 번째 시작 시에만 선택할 수 있습니다. 명령줄 옵션을 변경하려면 SDK를 다시 설치합니다.
 
