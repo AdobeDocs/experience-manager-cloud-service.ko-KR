@@ -4,9 +4,9 @@ description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,21 @@ ht-degree: 0%
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
-1. *비즈니스 소유자* 사용자는 시작할 수 있는 위치에서 환영 이메일을 받거나, 찾을 수 없는 경우 [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
+*비즈니스 소유자* 사용자는 시작할 수 있는 위치에서 환영 이메일을 받거나, 찾을 수 없는 경우 [Adobe Experience Cloud](https://experience.adobe.com)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
+Cloud Manager로 이동하려면 아래 단계를 따르십시오.
+
+1. 시작 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
+   ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+
+1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
+
+   >[!IMPORTANT]
+   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다.
+
+또한 Adobe Experience Cloud 홈 페이지에서 Cloud Manager의 **프로그램 및 제품** 페이지로 이동할 수 있습니다. 아래 단계를 따르십시오.
+
+1. [Adobe Experience Cloud](https://experience.adobe.com)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
 
 1. Adobe Experience Cloud 홈 페이지에서 **Experience Manager**&#x200B;을 선택합니다.
 
@@ -56,11 +68,37 @@ ht-degree: 0%
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. 아래 그림과 같이 Cloud Manager 랜딩 페이지가 표시됩니다.
+1. 로그인하면 Cloud Manager의 랜딩 페이지로 이동합니다.
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+   >[!NOTE]
+   >[!UICONTROL Cloud Manager]에 할당된 역할과 응용 프로그램의 상태에 따라 [!UICONTROL Cloud Manager] UI를 사용하는 동안 다른 화면이 표시됩니다.
 
-1. 비즈니스 소유자 제품 프로필이 할당되었는지 확인합니다. 이렇게 하려면 오른쪽 상단에서 아래 표시된 대로 프로필을 선택합니다.
+   아래에 설명된 세 가지 옵션 중 하나가 표시됩니다.
+
+   * **Cloud Manager에 프로그램 없음**
+
+      조직에 프로그램이 없는 경우 랜딩 페이지에서 아래 그림과 같이 첫 번째 프로그램을 만들라고 안내합니다.
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+   * **Cloud Manager에 프로그램이 이미 있는 경우**
+
+      조직에 프로그램이 이미 존재하는 경우 랜딩 페이지에서 아래 그림과 같이 다른 프로그램을 추가하고 기존 프로그램도 모두 표시합니다.
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+   * **프로그램이 있고 사용자가 시스템 관리자인 경우**
+
+      조직에 프로그램이 이미 있고 사용자가 시스템 관리자인 경우 랜딩 페이지에 **액세스 관리** 단추가 **프로그램 추가** 옵션과 함께 표시됩니다. 아래 그림은 아래 그림과 같습니다.
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+
+
+## 사용자 역할 확인 {#verify-user-roles}
+
+Cloud Manager에 성공적으로 로그인했으면 아래 절차에 따라 비즈니스 소유자 제품 프로필이 할당되었는지 확인하십시오.
+
+1. 아래 표시된 것처럼 오른쪽 상단에서 프로필을 선택합니다.
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
