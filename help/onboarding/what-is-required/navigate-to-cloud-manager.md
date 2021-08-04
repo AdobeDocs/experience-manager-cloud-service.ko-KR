@@ -2,9 +2,9 @@
 title: Cloud Manager로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 배우려면 이 페이지를 따르십시오
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '506'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ Cloud Manager는 AEM as a Cloud Service의 중요한 부분입니다. 조직에�
 
 여기에서 Cloud Manager의 비즈니스 소유자 역할과 같은 권한이 있는 사용자는 **프로그램 추가**&#x200B;를 선택하여 [프로그램 추가 마법사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)를 시작할 수 있습니다.
 
-Cloud Manager에서 프로그램을 추가하는 방법에 대해 알아보려면 다음을 참조하십시오.
+Cloud Manager에서 프로그램을 추가하는 방법에 대해 알아보려면 만들기 를 참조하십시오.
 
-* 프로덕션 프로그램 생성
-* 샌드박스 프로그램 만들기
+* [프로덕션 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)
+* [샌드박스 프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/creating-sandbox-program.html?lang=en)
