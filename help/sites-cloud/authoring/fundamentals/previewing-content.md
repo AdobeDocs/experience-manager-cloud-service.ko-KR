@@ -2,9 +2,9 @@
 title: 컨텐츠 미리 보기
 description: 라이브로 전환하기 전에 AEM 미리 보기 서비스를 사용하여 컨텐츠를 미리 보는 방법을 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->미리 보기 기능은 2021.5.0 릴리스의 일부이며 다음 몇 주에 걸쳐 점진적으로 롤아웃됩니다.
+>2021년 8월 3일 이전에 만들어진 환경에서 미리 보기 기능을 활성화하려면 환경이 AEM 버전 2021.05.5368.20210529T101701Z 이상에 있는지 확인한 다음, 고객이 시작한 파이프라인을 실행합니다.
 
 AEM은 웹 사이트가 게시 환경에 도달하기 전에 개발자와 컨텐츠 작성자가 웹 사이트의 최종 경험을 미리 볼 수 있도록 설계된 사이트 미리 보기 서비스를 제공하며 공개적으로 사용할 수 있습니다.
 
 페이지 전환 및 기타 게시 측 전용 컨텐츠와 같이 작성 환경에서 볼 수 없는 페이지 경험 미리 보기를 용이하게 합니다.
+
+미리 보기 서비스](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)에 액세스하는 방법에 대해서도 읽어보십시오.[
 
 ## 미리 보기에 컨텐츠 게시 {#publishing-content-to-preview}
 
@@ -40,7 +42,7 @@ AEM은 웹 사이트가 게시 환경에 도달하기 전에 개발자와 컨텐
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-환경을 위한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)를 참조하십시오.
+환경을 위한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 를 참조하십시오.
 
 또한 agentId 매개 변수를 미리 보기로 설정한 [컨텐츠 트리 게시 워크플로우](/help/operations/replication.md#publish-content-tree-workflow)를 사용하거나 미리 보기를 위해 구성된 AgentFilter와 함께 [복제 API](/help/operations/replication.md#replication-api)를 사용하여 컨텐츠를 미리 보기에 게시할 수 있습니다.
 
@@ -67,4 +69,4 @@ AEM은 웹 사이트가 게시 환경에 도달하기 전에 개발자와 컨텐
 
 * [개발자 콘솔](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)에서 **— 모두 미리 보기 —** 또는 이름에 **prev**&#x200B;를 포함하는 프로덕션 환경을 선택합니다
 * 미리 보기 인스턴스에 대한 관련 정보 생성
-환경을 위한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)를 참조하십시오.
+환경을 위한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 를 참조하십시오.
