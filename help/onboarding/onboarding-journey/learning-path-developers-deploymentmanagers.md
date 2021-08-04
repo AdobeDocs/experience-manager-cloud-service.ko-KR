@@ -4,9 +4,9 @@ description: 개발자 또는 배포 관리자인 경우 액세스 권한을 얻
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '456'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 3%
 
 이 문서는 개발자 및 배포 관리자가 Cloud Manager에 액세스하고 학습 경로를 준비할 수 있는 방법을 잘 아는 데 도움이 됩니다.
 
-읽은 후에는 다음을 수행해야 합니다.
+이 문서를 읽은 후에는 다음을 수행해야 합니다.
 
-* 개발자로서 Cloud Manager Git에 액세스하고 관리하는 방법을 이해할 수 있어야 합니다
-* 배포 관리자는 파이프라인을 설정하고 Cloud Manager에서 코드를 배포하는 방법을 이해할 수 있어야 합니다
+* 개발자로서 Cloud Manager Git에 액세스하고 관리하는 방법을 이해할 수 있습니다
+* 배포 관리자는 Cloud Manager에서 파이프라인을 설정하고 코드를 배포하는 방법을 이해할 수 있습니다
 
 ## 소개 {#introduction}
 
@@ -39,11 +39,13 @@ Cloud Manager로 이동하여 로그인하는 방법을 이해합니다
 
 ## Git 관리 {#manage-git}
 
-이 주제에 대한 자세한 내용을 보려면 여기 로 이동하십시오.
+Cloud Manager UI에서 셀프 서비스 Git 계정 관리를 사용하여 Git 리포지토리에 액세스하고 관리할 수 있습니다.
+이 항목에 대한 자세한 내용은 [Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)액세스 를 참조하십시오.
 
 ## 파이프라인 설정 {#setup-pipeline}
 
-이 항목에 대한 자세한 내용을 보려면 여기 로 이동하십시오
+Cloud Manager UI에서 프로덕션 또는 비프로덕션 파이프라인을 구성할 수 있습니다.
+이 항목에 대한 자세한 내용은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)을 참조하십시오.
 
 ## 다음은 무엇입니까? {#whats-next}
 
