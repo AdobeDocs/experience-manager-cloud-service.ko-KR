@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 메타데이터
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
+source-git-commit: a7da1deb71a7c6ebf9c73b8d33877fb56b73be47
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2594'
 ht-degree: 3%
 
 ---
@@ -105,13 +105,13 @@ ht-degree: 3%
 
 #### 메타데이터 구성 요소 편집 {#edit-the-metadata-component}
 
-양식에서 메타데이터 구성 요소의 속성을 편집하려면 구성 요소를 클릭하여 **[!UICONTROL 설정]** 탭에서 다음 속성의 하위 집합을 모두 또는 편집합니다.
+양식에서 메타데이터 구성 요소의 속성을 편집하려면 구성 요소를 클릭하여 **[!UICONTROL 설정]** 탭에서 다음 속성의 하위 집합을 모두 또는 편집합니다. 메타데이터 스키마의 주어진 속성에 필드를 하나만 매핑하는 것이 좋습니다. 그렇지 않으면 시스템에 의해 속성에 매핑된 최신 추가 필드가 선택됩니다.
 
 **필드 레이블**: 자산의 속성 페이지에 표시되는 메타데이터 속성의 이름입니다.
 
 **속성에 매핑**: 이 속성은 CRX 저장소에 저장되는 자산 노드의 상대 경로 또는 이름을 지정합니다. 이 경로는 `./`로 시작되어 경로가 자산의 노드 아래에 있음을 나타냅니다.
 
-다음은 이 속성에 유효한 값입니다.
+다음은 속성에 유효한 값의 예입니다.
 
 * `./jcr:content/metadata/dc:title`: 자산의 메타데이터 노드에 있는 값을 속성으로  `dc:title`저장합니다.
 
