@@ -2,9 +2,9 @@
 title: Cloud Manager로 이동
 description: Cloud Manager 랜딩 페이지로 이동하는 방법을 배우려면 이 페이지를 따르십시오
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '515'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,8 @@ Cloud Manager는 AEM as a Cloud Service의 중요한 부분입니다. 조직에�
 
    >[!IMPORTANT]
    >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 이 페이지를 책갈피로 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동하세요.
+
+1. Cloud Manager의 랜딩 페이지로 이동합니다.
 
 또한 Adobe Experience Cloud 홈 페이지에서 Cloud Manager의 **프로그램 및 제품** 페이지로 이동할 수도 있습니다. 아래 단계를 따르십시오.
 
