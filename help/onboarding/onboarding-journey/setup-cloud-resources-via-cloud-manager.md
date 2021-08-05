@@ -4,9 +4,9 @@ description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Cloud Manager로 이동하려면 아래 단계를 따르십시오.
    >[!IMPORTANT]
    >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 이 페이지를 책갈피로 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동하세요.
 
+1. Cloud Manager의 랜딩 페이지로 이동합니다. 자세한 내용은 [Cloud Manager 프로그램 보기](#viewing-programs) 섹션을 참조하십시오.
+
 또한 Adobe Experience Cloud 홈 페이지에서 Cloud Manager의 **프로그램 및 제품** 페이지로 이동할 수 있습니다. 아래 단계를 따르십시오.
 
 1. [Adobe Experience Cloud](https://experience.adobe.com)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
@@ -68,29 +70,32 @@ Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. 로그인하면 Cloud Manager의 랜딩 페이지로 이동합니다.
+1. 로그인하면 Cloud Manager의 랜딩 페이지로 이동합니다. 자세한 내용은 [Cloud Manager 프로그램 보기](#viewing-programs) 섹션을 참조하십시오.
 
    >[!NOTE]
    >[!UICONTROL Cloud Manager]에 할당된 역할과 응용 프로그램의 상태에 따라 [!UICONTROL Cloud Manager] UI를 사용하는 동안 다른 화면이 표시됩니다.
 
-   아래에 설명된 세 가지 옵션 중 하나가 표시됩니다.
+### Cloud Manager의 랜딩 페이지에서 프로그램 보기 {#viewing-programs}
 
-   * **Cloud Manager에 프로그램 없음**
+로그인하면 Cloud Manager의 랜딩 페이지로 이동합니다. 아래에 설명된 세 가지 옵션 중 하나가 표시됩니다.
 
-      조직에 프로그램이 없는 경우 랜딩 페이지에서 아래 그림과 같이 첫 번째 프로그램을 만들라고 안내합니다.
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+#### Cloud Manager에 프로그램 없음 {#no-programs}
 
-   * **Cloud Manager에 프로그램이 이미 있는 경우**
+조직에 프로그램이 없는 경우 랜딩 페이지에서 아래 그림과 같이 첫 번째 프로그램을 만들라고 안내합니다.
 
-      조직에 프로그램이 이미 존재하는 경우 랜딩 페이지에서 아래 그림과 같이 다른 프로그램을 추가하고 기존 프로그램도 모두 표시합니다.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+#### Cloud Manager에 프로그램이 이미 있는 경우 {#programs-exist}
 
-   * **프로그램이 있고 사용자가 시스템 관리자인 경우**
+조직에 프로그램이 이미 존재하는 경우 랜딩 페이지에서 아래 그림과 같이 다른 프로그램을 추가하고 기존 프로그램도 모두 표시합니다.
 
-      조직에 프로그램이 이미 있고 사용자가 시스템 관리자인 경우 랜딩 페이지에 **액세스 관리** 단추가 **프로그램 추가** 옵션과 함께 표시됩니다. 아래 그림은 아래 그림과 같습니다.
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+#### 프로그램이 있고 사용자가 시스템 관리자인 경우 {#programs-exist-sysadmin}
+
+조직에 프로그램이 이미 있고 사용자가 시스템 관리자인 경우 랜딩 페이지에 **액세스 관리** 단추가 **프로그램 추가** 옵션과 함께 표시됩니다. 아래 그림은 아래 그림과 같습니다.
+
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## 사용자 역할 확인 {#verify-user-roles}
