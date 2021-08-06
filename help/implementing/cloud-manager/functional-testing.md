@@ -2,9 +2,9 @@
 title: 기능 테스트 - Cloud Services
 description: 기능 테스트 - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
+source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="기능 테스트"
->abstract="기능 테스트는 세 가지 유형으로 분류됩니다.제품 기능 테스트, 사용자 지정 기능 테스트 및 사용자 지정 UI 테스트"
+>abstract="기능 테스트는 세 가지 유형으로 분류됩니다. 제품 기능 테스트, 사용자 지정 기능 테스트 및 사용자 지정 UI 테스트"
 
 기능 테스트는 세 가지 유형으로 분류됩니다.
 
@@ -62,15 +62,27 @@ UI 테스트를 빌드하고 실행하려면 고객이 코드 리포지토리에
 
 *파일 이름*:  `testing.properties`
 
-*내용*:  `one line: ui-tests.version=1`
+*내용*:  `ui-tests.version=1`
 
 기본 제공 `tar.gz` 파일에 없는 경우 UI 테스트 빌드 및 실행을 건너뜁니다
+
+작성된 아티팩트에 `testing.properties` 파일을 추가하려면 `assembly-ui-test-docker-context.xml` 파일에 `include` 문을 추가합니다(UI 테스트 하위 모듈).
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>&lt;/include>
+    &lt;include>Dockerfilewait-for-grid.&lt;/include>
+    &lt;include>shtesting.properties&lt;/include> &lt;!- Cloud Manager의 옵트인 테스트 모듈 —>
+    &lt;/includs>
+    [..]
+    &quot;
 
 >[!NOTE]
 >이 섹션에 설명된 대로 UI 테스트를 사용하려면 2021년 2월 10일 전에 생성된 프로덕션 파이프라인을 업데이트해야 합니다. 이것은 기본적으로 사용자가 프로덕션 파이프라인을 편집하고 UI에서 **저장**을 클릭해야 함을 의미합니다.
 >파이프라인 구성에 대한 자세한 내용은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) 을 참조하십시오.
 
-### 기능 테스트 쓰기 {#writing-functional-tests}
+### 기능 테스트 작성 {#writing-functional-tests}
 
 고객이 작성한 기능 테스트는 AEM에 배포할 아티팩트와 동일한 Maven 빌드에서 생성한 별도의 JAR 파일로 패키지해야 합니다. 일반적으로 이는 별도의 Maven 모듈입니다. 결과 JAR 파일은 필요한 모든 종속성을 포함해야 하며 일반적으로 jar-with-dependencies 설명자를 사용하여 maven-assembly-plugin을 사용하여 만듭니다.
 
