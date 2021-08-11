@@ -3,7 +3,7 @@ title: 액세스 가능한 웹 페이지 및 사이트를 생성하도록 RTE를
 description: ' [!DNL Adobe Experience Manager]에서 액세스 가능한 사이트를 생성하도록 리치 텍스트 편집기를 구성하는 방법을 알아봅니다.'
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -37,7 +37,7 @@ RTE 구성 지침은 [리치 텍스트 편집기 구성](rich-text-editor.md) �
 
 ![rtePlugin 예를 보여주는 CRXDE Lite](assets/example-rteplugin-crxde-lite.png)
 
-### RTE 선택 필드 {#example-specifying-paragraph-formats-available-in-rte-selection-field}에서 사용할 수 있는 단락 형식을 지정하는 예
+### RTE 선택 필드에서 사용할 수 있는 단락 서식을 지정하는 예 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 새로운 시맨틱 블록 포맷을 선택할 수 있게 되었다.
 
@@ -48,7 +48,7 @@ RTE 구성 지침은 [리치 텍스트 편집기 구성](rich-text-editor.md) �
 
 RTE에서 단락 형식 옵션을 통해 구조적 요소를 사용할 수 있으므로 [!DNL Experience Manager]은(는) 액세스 가능한 컨텐츠를 개발할 수 있는 좋은 기반을 제공합니다. 컨텐츠 작성자는 RTE를 사용하여 글꼴 크기 또는 색상 또는 기타 관련 속성의 서식을 지정할 수 없으므로 인라인 서식이 생성되지 않습니다. 대신 작성자는 제목 등의 적절한 구조적 요소를 선택하고 스타일 옵션에서 선택한 전역 스타일을 사용하여 고유한 스타일 시트를 찾아보고 올바르게 구조화된 컨텐츠를 찾는 사용자에게 더 큰 옵션과 깨끗한 마크업 및 옵션을 제공할 수 있습니다.
 
-## 소스 편집 기능 {#use-of-the-source-edit-feature} 사용
+## 소스 편집 기능 사용 {#use-of-the-source-edit-feature}
 
 경우에 따라 컨텐츠 작성자는 RTE를 사용하여 만든 HTML 소스 코드를 검사하고 조정해야 합니다. 예를 들어 RTE 내에서 만들어진 컨텐츠는 WCAG 2.0을 준수하도록 더 많은 마크업이 필요할 수 있습니다. 이 작업은 RTE의 [소스 편집](rich-text-editor.md#aboutplugins) 옵션으로 수행할 수 있습니다. `misctools` 플러그인](rich-text-editor.md#aboutplugins)에서 [`sourceedit` 기능을 지정할 수 있습니다.
 
@@ -147,6 +147,6 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 
 >[!MORELIKETHIS]
 >
->* [WCAG 표준에 대한 빠른 안내서](/help/onboarding/accessibility/quick-guide-wcag.md)
+>* [WCAG 표준에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)
 * [Experience Manager에서 액세스 가능한 컨텐츠를 만드는 방법](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
