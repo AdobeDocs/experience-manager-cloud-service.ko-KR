@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 접근성,자산 관리
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -60,7 +60,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 [!DNL Experience Manager]에서 액세스 가능성 기능은 [!DNL Experience Manager] 사용자 및 해당 고객의 두 가지 주요 요구 사항을 해결합니다.
 
-* 컨텐츠 디자이너와 작성자를 위해 고객 및 웹 사이트 방문자가 차례로 사용하는 액세스 가능한 컨텐츠를 만들고 게시하는 기능이 있습니다. 보조 기술의 도움을 받아 장애가 있는 개인이 컨텐츠를 사용할 수 있습니다. 자세한 내용은 [웹 액세스 가능성 지침](/help/onboarding/accessibility/web-accessibility.md)을 참조하십시오.
+* 컨텐츠 디자이너와 작성자를 위해 고객 및 웹 사이트 방문자가 차례로 사용하는 액세스 가능한 컨텐츠를 만들고 게시하는 기능이 있습니다. 보조 기술의 도움을 받아 장애가 있는 개인이 컨텐츠를 사용할 수 있습니다. 자세한 내용은 [웹 액세스 가능성 지침](/help/compliance/accessibility/quick-guide-wcag.md)을 참조하십시오.
 * [!DNL Experience Manager] 또한 사용자와 장애가 있는 관리자가 사용자 인터페이스와 컨트롤에 액세스하여 컨텐츠를 만들고 관리할 수 있습니다. 장애가 있는 사용자는 보조 기술을 사용하여 [!DNL Assets] 기능을 탐색, 사용 및 관리할 수 있습니다.
 
 [!DNL Assets]의 핵심 기능은 이전보다 더 쉽게 액세스할 수 있으며 글로벌 표준에 대한 호환성을 향상하도록 정기적으로 업데이트됩니다. [!DNL Assets]의 CRUD 작업에는 그러한 작업에 적용되는 액세스 가능성이 약간 있습니다. 키보드 단축키, 화면 판독기 텍스트, 색상 대비 등의 도움을 받아 자산 추가, 관리, 검색 및 배포와 같은 DAM 워크플로우에 액세스할 수 있습니다.
@@ -226,6 +226,6 @@ CRUD 작업, 자산 다운로드, 메타데이터 추가와 같은 많은 자산
 >[!MORELIKETHIS]
 >
 >* [각 릴리스에서 수행된 개선 사항에 대한 릴리스 노트입니다](/help/release-notes/release-notes-cloud/release-notes-current.md).
->* [[!DNL Adobe Experience Manager] 액세스 가능성 지침](/help/onboarding/accessibility/web-accessibility.md).
+>* [[!DNL Adobe Experience Manager] 액세스 가능성 지침](/help/compliance/accessibility/web-accessibility.md).
 >* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/accessibility/compliance.html).
 
