@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 19%
@@ -88,7 +88,7 @@ Cloud Manager는 AEM as a Cloud Service의 중요한 부분입니다. 조직에�
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
-* [GDPR 준비 완료](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
