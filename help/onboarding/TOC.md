@@ -5,10 +5,10 @@ breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 feature: 배포
 role: Architect, Developer
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 62%
+source-wordcount: '138'
+ht-degree: 49%
 
 ---
 
@@ -30,13 +30,6 @@ ht-degree: 62%
    + [시스템 관리자 작업](what-is-required/add-users-assign-cm-roles.md)
    + [Cloud Manager로 이동](what-is-required/navigate-to-cloud-manager.md)
    + [AEM 인스턴스에 사용자 액세스 권한 부여](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ 데이터 개인 정보 보호 및 보호 준비 완료 {#data-privacy}
-   + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비 완료](data-privacy-and-protection-readiness/aem-readiness.md)
-   + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 기초 준비 완료](data-privacy-and-protection-readiness/foundation-readiness.md)
-   + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM Sites 준비 완료](data-privacy-and-protection-readiness/sites-readiness.md)
-+ 접근성 {#accessibility}
-   + [AEM as a Cloud Service 및 웹 액세스 가능성 지침](accessibility/web-accessibility.md)
-   + [WCAG 2.1에 대한 빠른 안내서](accessibility/quick-guide-wcag.md)
 + 마이그레이션 방법론 {#migration-methodology}
    + [Adobe Experience Manager as a Cloud Service으로 마이그레이션](migration-methodology/getting-started.md)
 + 우수 사례 {#best-practices}
