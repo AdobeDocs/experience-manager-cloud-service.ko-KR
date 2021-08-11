@@ -4,7 +4,7 @@ description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] �
 feature: 자산 관리
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 31%
@@ -47,7 +47,7 @@ ht-degree: 31%
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)
-* [GDPR 준비 완료](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as  [!DNL Cloud Service] aTutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
