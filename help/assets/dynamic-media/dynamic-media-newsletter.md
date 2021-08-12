@@ -4,9 +4,9 @@ description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스�
 feature: 자산 관리
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
+source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * Dynamic Media Classic용 온디맨드 Skill Builder 웨비나를 시청하십시오.
    * 온라인 Adobe Summit 2020에서 Dynamic Media 세션을 봅니다.
    * Adobe의 무료 Dynamic Media Classic 감사에 대해 자세히 알아보십시오.
-   * 고객 성공 서비스의 수석 프로그램 관리자 John Monroe를 만나보십시오.
+   * 고객 성공 서비스의 수석 프로그램 관리자 `John Monroe`을 만나보십시오.
 
 * **[2020년 2월, 2호](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -72,7 +72,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * Dynamic Media Classic을 최대한 활용할 수 있는 무료 감사.
    * Adobe의 리치 미디어 고객을 위한 기록적인 휴일 쇼핑 시즌입니다.
    * 현재 사용자의 요구 사항에 맞는 DAM(Digital Asset Manager)을 선택하는 데 대한 안내서와 리치 미디어의 새로운 기능을 내일 준비합니다.
-   * 디지털 미디어 전문가 마크 딘을 만나보십시오.
+   * Digital Media 전문가 `Mark Dean`을 만나보십시오.
 
 * **[2019년 11월, 11호](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -103,7 +103,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * Dynamic Media 팀이 일반 방문자 트래픽보다 높은 하루 준비를 돕는 방법을 알아봅니다.
    * 최근 두 개의 Skill Builder 웨비나를 잡을 두 번째 기회.
    * 해적으로부터 디지털 자산을 보호하는 on-demand 웨비나를 시청하십시오.
-   * Experience Manager 자산을 위한 수석 제품 마케팅 매니저인 Bridget Roman을 만나보십시오.
+   * Experience Manager 자산에 대한 선임 제품 마케팅 관리자 `Bridget Roman` 를 만나보십시오.
    * Experience League에서 Dynamic Media 및 Dynamic Media Classic을 빠르게 사용할 수 있습니다.
 
 * **[2019년 8월, 2018년](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
