@@ -2,7 +2,7 @@
 title: 준수
 description: 준수
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 79%
@@ -15,11 +15,11 @@ ht-degree: 79%
 
 ## 주요 개요 문서 {#key-articles}
 
-* [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 준비 완료](aem-readiness.md)
-* [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 기초 준비 완료](foundation-readiness.md)
-* [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Sites 준비 완료](sites-readiness.md)
-* [웹 액세스 가능성 지침](web-accessibility.md)
-* [WCAG 2.1에 대한 빠른 안내서](quick-guide-wcag.md)
+* [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 기초 준비 완료](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Sites 준비 완료](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [웹 액세스 가능성 지침](/help/compliance/accessibility/web-accessibility.md)
+* [WCAG 2.1에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Experience Manager as a Cloud Service 안내서 {#aem-guides}
 
