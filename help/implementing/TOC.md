@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 45%
+source-wordcount: '1043'
+ht-degree: 44%
 
 ---
 
@@ -18,8 +18,9 @@ ht-degree: 45%
 + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
 + Cloud Manager 사용 {#using-cloud-manager}
    + Cloud Manager 릴리스 노트 {#release-notes-cloud-manager}
-      + [현재 릴리스 노트(2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [현재 릴리스 노트(2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [2021.7.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [2021.6.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [2021.5.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
          + [2021.4.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
@@ -64,6 +65,7 @@ ht-degree: 45%
       + [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
    + [로그 액세스 및 관리](cloud-manager/manage-logs.md)
+   + [SLA 보고](cloud-manager/sla-reporting.md)
    + [알림 이해](cloud-manager/notifications.md)
    + SSL 인증서 관리 {#manage-ssl-certificates}
       + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -94,7 +96,8 @@ ht-degree: 45%
    + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + 코드 관리 {#managing-code}
    + [Maven 프로젝트 버전 처리](cloud-manager/project-version-handling.md)
-   + [Git 액세스](cloud-manager/accessing-git.md)
+   + [Cloud Manager의 저장소](cloud-manager/cloud-manager-repositories.md)
+   + [저장소 액세스](cloud-manager/accessing-repos.md)
    + [Adobe Cloud Manager와 Git 통합](cloud-manager/integrating-with-git.md)
    + [여러 소스 Git 리포지토리 작업](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [AEM as a Cloud Service에 대한 Enterprise Team Development 설정](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
