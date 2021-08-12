@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,자산 HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1438'
 ht-degree: 2%
 
 ---
@@ -185,7 +185,7 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 
 ## 사후 처리 워크플로우에서 워크플로우 단계 지원 {#post-processing-workflows-steps}
 
-이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 경우 자산 마이크로서비스를 사용하여 자산을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로서비스 는 구성 및 사용이 더 쉽습니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다. 지원되는 클래스에 대한 자세한 내용은 [Java API 참조](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)를 참조하십시오.
+이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 경우 자산 마이크로서비스를 사용하여 자산을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로서비스 는 구성 및 사용이 더 쉽습니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다. 지원되는 클래스에 대한 자세한 내용은 [Java API 참조 또는 Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)를 참조하십시오.
 
 다음 기술 워크플로우 모델은 자산 마이크로서비스로 대체되거나 지원되지 않습니다.
 
