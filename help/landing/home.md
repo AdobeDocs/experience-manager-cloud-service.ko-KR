@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 사용 안내서
 description: Adobe Experience Manager as a Cloud Service 자습 리소스 및 설명서 링크
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 390b06ab7bede2dfac9011ebd78f4dbd1dc62df4
+source-git-commit: 90e9dd3c9c61a1e3f0aa1681475afa4e4d12106b
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 81%
+source-wordcount: '430'
+ht-degree: 79%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 81%
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
 | [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
 | [상거래 사용 안내서](/help/commerce-cloud/home.md) | AEM as a Cloud Service에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [규정 준수 사용 안내서](/help/compliance/home.md) | AEM as a Cloud Service의 규정 준수에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
