@@ -2,7 +2,7 @@
 title: 프로그램 및 프로그램 유형 이해
 description: 프로그램 및 프로그램 유형 이해 - Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 2%
@@ -23,7 +23,7 @@ Cloud Manager 프로그램은 자체 git 리포지토리를 사용하여 자동�
 
 사용자가 Cloud Manager git 리포지토리에 액세스하려면 명령줄 도구, 독립 실행형 시각적 Git 클라이언트 또는 Eclipse, IntelliJ, NetBeans와 같은 사용자의 IDE가 있는 Git 클라이언트를 사용해야 합니다.
 
-Git 클라이언트가 설정되면 Cloud Manager UI에서 Git 리포지토리를 관리할 수 있습니다. Cloud Manager UI를 사용하여 Git을 관리하는 방법에 대한 자세한 내용은 [Git](/help/implementing/cloud-manager/accessing-git.md)액세스 를 참조하십시오.
+Git 클라이언트가 설정되면 Cloud Manager UI에서 Git 리포지토리를 관리할 수 있습니다. Cloud Manager UI를 사용하여 Git을 관리하는 방법에 대한 자세한 내용은 [Git](/help/implementing/cloud-manager/accessing-repos.md)액세스 를 참조하십시오.
 
 AEM Cloud 애플리케이션 개발을 시작하려면 Cloud Manager 리포지토리에서 리포지토리를 생성하려는 로컬 컴퓨터의 위치로 애플리케이션 코드의 로컬 복사본을 체크 아웃해야 합니다.
 
