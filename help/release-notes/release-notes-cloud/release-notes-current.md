@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
+source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1406'
 ht-degree: 2%
 
 ---
@@ -182,6 +182,21 @@ AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 날짜는 2021년 7�
 ### 알려진 문제 {#known-issues-cm-july}
 
 Azul JDK를 사용하도록 전환하는 고객은 Azul JDK에 오류가 없는 모든 기존 애플리케이션이 컴파일되는 것은 아니라는 것을 알고 있어야 합니다. 전환하기 전에 로컬로 테스트하는 것이 좋습니다.
+
+## 컨텐츠 전송 도구 {#content-transfer-tool}
+
+### 릴리스 날짜 {#release-date-ctt-latest}
+
+컨텐츠 전송 도구 v1.5.6의 릴리스 날짜는 2021년 8월 11일입니다.
+
+### 버그 수정 {#bug-fixes-ctt}
+
+* 일부 경우에는 일부 사용자가 target 인스턴스로 마이그레이션되지 않았습니다. 이 수정 사항을 가져오려면 Cloud Service 인스턴스로 target AEM의 aem-etos-tools 1.2.354 이상 버전과 함께 CTT v1.5.6이 필요합니다.
+
+* 게시 인스턴스에 수집하는 동안 **수집 중지** 단추가 비활성화되었습니다. 게시 수집 중에 단일 복원 단계가 없으므로 이 작업은 필요하지 않습니다.
+
+* 성공적으로 추출한 후 CTT에서 `/tmp` 디렉터리를 정리하지 못했습니다. 이로 인해 디스크 공간 문제가 발생하는 경우가 있습니다.
+
 
 ## Cloud Acceleration Manager {#cam}
 
