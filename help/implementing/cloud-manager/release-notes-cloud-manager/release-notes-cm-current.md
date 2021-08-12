@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 릴리스 2021.8.0의 Cloud Manager 릴리스 노�
 description: AEM as a Cloud Service 릴리스 2021.8.0의 Cloud Manager 릴리스 노트
 feature: 릴리스 정보
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
+source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 5%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
 
@@ -25,6 +25,7 @@ AEM as a Cloud Service 2021.8.0의 Cloud Manager 릴리스 날짜는 2021년 8�
 ### 새로운 기능 {#what-is-new}
 
 * 이제 Cloud Service 고객은 Cloud Manager에서 SLA(서비스 수준 계약) 보고서를 볼 수 있습니다. 이 기능은 다음 몇 달 동안 점진적으로 제공될 예정입니다.
+자세한 내용은 [SLA 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html)를 참조하십시오.
 
 * IndexType 및 `IndexDamAssetLucene` 품질 규칙의 유형과 심각도가 변경되었습니다. 이제 Blocker *serverity*&#x200B;의 버그가 둘 다 있습니다.
 
