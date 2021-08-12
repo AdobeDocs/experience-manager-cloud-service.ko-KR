@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,35 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
    ![](assets/configure-pipeline5.png)
 
+### 프로덕션 파이프라인 편집 {#editing-prod-pipeline}
+
+**프로그램 개요** 페이지에서 파이프라인 구성을 편집할 수 있습니다.
+
+구성된 파이프라인을 편집하려면 아래 절차를 따르십시오.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. **파이프라인** 카드에서 **편집**&#x200B;을 클릭합니다.
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. **소스 코드** 탭에서는 저장소를 업데이트할 수 있습니다. **보고서 정보에 액세스**&#x200B;를 클릭하여 저장소를 업데이트합니다.
+
+   >[!NOTE]
+   >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos)를 참조하십시오.
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. **환경** 탭에서는 스테이지 및 프로덕션 옵션을 업데이트할 수 있습니다.
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. **경험 감사** 옵션을 사용하면 새 페이지를 업데이트하거나 추가할 수 있습니다.
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. 파이프라인 편집을 완료했으면 **저장**&#x200B;을 클릭합니다.
 
 ## 비프로덕션 및 코드 품질 전용 파이프라인 {#non-production-pipelines}
 
@@ -133,6 +162,22 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
    * **빌드**  - 파이프라인을 실행할 수 있는 실행 페이지로 이동합니다
    * **리포지토리 정보에 액세스**  - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있습니다
    * **자세히 알아보기**  - CI/CD 파이프라인 설명서 리소스를 이해합니다.
+
+### 비프로덕션 파이프라인 편집 {#editing-nonprod-pipeline}
+
+**프로그램 개요** 페이지에서 파이프라인 구성을 편집할 수 있습니다.
+
+구성된 비프로덕션 파이프라인을 편집하려면 아래 절차를 따르십시오.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. **비프로덕션** 탭을 선택하고 원하는 파이프라인을 선택한 후 **편집**&#x200B;을 클릭합니다.
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. 원하는 리포지토리를 선택하고 **저장**&#x200B;을 클릭합니다.
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## 다음 단계 {#the-next-steps}
 
