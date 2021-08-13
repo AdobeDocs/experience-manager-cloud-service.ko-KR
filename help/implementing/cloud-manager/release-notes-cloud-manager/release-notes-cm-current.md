@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 릴리스 2021.8.0의 Cloud Manager 릴리스 노�
 description: AEM as a Cloud Service 릴리스 2021.8.0의 Cloud Manager 릴리스 노트
 feature: 릴리스 정보
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
+source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -39,7 +39,7 @@ AEM as a Cloud Service 2021.8.0의 Cloud Manager 릴리스 날짜는 2021년 8�
 
 * 이제 파이프라인당 Maven 종속성 캐시를 무효화하는 데 사용할 수 있는 API가 있습니다.
 
-* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 28로 업데이트되었습니다.
+* Cloud Manager에서 사용하는 AEM 프로젝트 원형 버전이 버전 29로 업데이트되었습니다.
 
 ### 버그 수정 {#bug-fixes}
 
