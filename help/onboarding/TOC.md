@@ -5,10 +5,10 @@ breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 feature: 배포
 role: Architect, Developer
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 49%
+source-wordcount: '133'
+ht-degree: 47%
 
 ---
 
@@ -37,4 +37,3 @@ ht-degree: 49%
    + [KPI 평가](best-practices/assessing-kpis.md)
    + [KPI 정렬](best-practices/aligning-kpis.md)
    + [적합한 팀 선택](best-practices/choose-right-team.md)
-+ [도구 콘솔 개요](tools-consoles.md)
