@@ -5,9 +5,9 @@ breadcrumb-title: AEM Headless Developer 여정
 user-guide-description: AEM의 강력하고 유연한 헤드리스 기능 및 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '198'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,12 @@ ht-degree: 1%
    + [모두 합치는 방법](developer/put-it-all-together.md)
    + [헤드리스 애플리케이션을 사용하여 라이브로 전환하는 방법](developer/go-live.md)
    + [선택 사항 - AEM을 사용하여 단일 페이지 애플리케이션을 만드는 방법](developer/create-spa.md)
++ AEM Headless 컨텐츠 작성자 여정 {#content-author}
+   + [AEM Headless 컨텐츠 작성자 여정 - 개요](author/overview.md)
+   + [AEM을 사용한 헤드리스용 작성 - 소개](author/introduction.md)
+   + [AEM으로 헤드리스에 대한 작성 기본 사항](author/basics.md)
+   + [컨텐츠 조각에서 참조 사용에 대해 알아봅니다](author/references.md)
+   + [컨텐츠 조각에 대한 메타데이터 및 태깅 정의에 대해 알아봅니다](author/metadata-tagging.md)
 + AEM Headless 번역 여정 {#translation}
    + [AEM의 헤드리스 로컬라이제이션 이해](translation/overview.md)
    + [AEM 헤드리스 로컬라이제이션 시작](translation/getting-started.md)
