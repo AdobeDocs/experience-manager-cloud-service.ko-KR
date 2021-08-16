@@ -1,9 +1,9 @@
 ---
 title: AEM 헤드리스 여정
 description: AEM의 강력한 헤드리스 기능을 이해하는 데 사용할 수 있는 안내식 여정에 대한 개요를 살펴보려면 여기에서 시작하십시오.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -52,5 +52,7 @@ AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 �
 |---|---|---|
 | [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | 헤드리스 기술, 사용자 경험으로 가져올 내용, AEM에서 헤드리스 모델을 지원하는 방법 및 A에서 Z로 헤드리스 개발 프로젝트를 구현하는 방법에 대해 알아봅니다. | 개발자 |
 | [헤드리스 번역 여정](/help/journey-headless/translation/overview.md) | 헤드리스 기술, 프로젝트에서 사용할 수 있는 이유 및 AEM에서 A에서 Z로 번역 프로젝트를 만들고 업데이트하는 방법에 대해 알아봅니다. | 번역 전문가 |
+| [헤드리스 작성 여정](/help/journey-headless/author/overview.md) | AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보십시오. | 아키텍트 |
+| [헤드리스 아키텍트 여정](/help/journey-headless/architect/overview.md) | Cloud Service 로서의 Adobe Experience Manager의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법에 대해 소개합니다. | 컨텐츠 작성자 및 작성자 |
 
 추가 역할을 다루는 [예정된 여정에 대해 채널을 고정하십시오.](/help/journey-documentation/home.md#journeys)
