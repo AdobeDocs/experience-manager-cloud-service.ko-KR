@@ -1,9 +1,10 @@
 ---
 title: AEM Headless Content Architect 여정
 description: As a Cloud Service의 강력하고 유연한 헤드리스 기능 및 프로젝트에 대한 컨텐츠를 모델링하는 방법을 소개합니다.
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: d0e870f5e49580bb95d347092a2ece4c2497a1c9
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
