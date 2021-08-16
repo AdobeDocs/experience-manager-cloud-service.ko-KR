@@ -2,9 +2,9 @@
 title: Cloud Manager 저장소
 description: Cloud Manager 저장소
 exl-id: Cloud Manager Repositories
-source-git-commit: cebc603aab9c558239588f574f52568d05081b34
+source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Cloud Manager에서 생성 및 사용 가능한 리포지토리는 저장소 페이지를 통해 보고 관리할 수 있습니다.
 
 >[!NOTE]
->지정된 회사 또는 [Adobe의 Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html))의 모든 프로그램에 대해 300개의 저장소가 제한됩니다.
+>지정된 회사 또는 [Adobe의 Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)에 있는 모든 프로그램에 대해 300개의 저장소가 제한됩니다.
 
 ## 저장소 추가 및 관리 {#add-manage-repos}
 
@@ -34,15 +34,12 @@ Cloud Manager에서 저장소를 보고 관리하려면 아래 단계를 따르�
 
    ![](assets/repos/repo-1.png)
 
-1. **저장**&#x200B;을 선택합니다. 새로 만든 보고서가 아래와 같이 표에 표시됩니다.
+1. **저장**&#x200B;을 선택합니다. 새로 만든 보고서가 아래와 같이 표에 표시됩니다. Cloud Manager에서 만든 리포지토리는 추가 또는 편집 단계 중에 선택할 수도 있습니다. 자세한 내용은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) 을 참조하십시오.
 
    >[!NOTE]
    >지정된 파이프라인에 대한 단일 *기본* 저장소 또는 분기가 있습니다. [Git 하위 모듈 지원](#git-submodule-support)을 사용하면 많은 보조 분기를 빌드 시간에 포함할 수 있습니다.
 
    ![](assets/repos/create-repo3.png)
-
-   >[!NOTE]
-   >Cloud Manager에서 만든 리포지토리는 추가 또는 편집 단계 중에 선택할 수도 있습니다. 자세한 내용은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) 을 참조하십시오.
 
 1. 아래 그림과 같이 리포지토리를 선택하고 테이블의 맨 오른쪽에 있는 메뉴 옵션을 클릭하여 **저장소 URL 복사**, **보기 및 업데이트** 또는 **저장소 삭제**&#x200B;를 클릭할 수 있습니다.
 
