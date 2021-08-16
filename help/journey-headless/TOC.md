@@ -1,11 +1,11 @@
 ---
-sub-product: AEM Headless Developer 여정
-user-guide-title: AEM Headless Developer 여정
-breadcrumb-title: AEM Headless Developer 여정
+sub-product: AEM 헤드리스 여정
+user-guide-title: AEM 헤드리스 여정
+breadcrumb-title: AEM 헤드리스 여정
 user-guide-description: AEM의 강력하고 유연한 헤드리스 기능 및 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,8 +13,9 @@ ht-degree: 0%
 ---
 
 
-# AEM Headless 여정 {#headless-journey}
+# AEM 헤드리스 여정 {#headless-journey}
 
++ [AEM 헤드리스 여정](/help/journey-headless/home.md)
 + AEM Headless 개발자 여정 {#developer}
    + [AEM의 헤드리스 이해](developer/overview.md)
    + [CMS Headless 개발에 대해 알아보기](developer/learn-about.md)
