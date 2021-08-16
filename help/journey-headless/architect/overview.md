@@ -4,10 +4,10 @@ description: AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 1%
+source-wordcount: '655'
+ht-degree: 2%
 
 ---
 
@@ -52,3 +52,14 @@ AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 헤드리스 �
 ## 다음은 무엇입니까? {#what-is-next}
 
 이제 Adobe 헤드리스 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 이동하여 [AEM을 사용한 헤드리스를 위한 컨텐츠 모델링 - An Introduction](introduction.md) 문서를 읽어 보십시오.
+
+## 추가 리소스 {#additional-resources}
+
+설명서 여정은 복잡하고 관련된 프로세스와 기능을 안내하는 설명을 제공하여 AEM에서 비즈니스 문제를 해결하는 방법을 보여줍니다. 여정은 단일 비즈니스 요구 사항을 충족하기 위해 여러 기능이 함께 작동하는 방식을 보여줍니다.
+
+이러한 여정은 스스로 설 수 있도록 고안되었습니다. 하지만 그들 중 많은 수가 서로 관련될 수 있습니다. AEM의 강력한 기능이 함께 작동하는 방식에 대한 자세한 내용은 이러한 추가 여정을 참조하십시오.
+
+* [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md)  - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
+* [헤드리스 작성 여정](/help/journey-headless/author/overview.md)  - AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오.
+* [AEM 헤드리스 개발자 여정](/help/journey-headless/developer/overview.md)  - AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오.
+* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  - AEM 및 헤드리스 기술에 대한 확고한 이해가 있는 경우에는 심층적인 기술 문서를 직접 문의할 수 있습니다.
