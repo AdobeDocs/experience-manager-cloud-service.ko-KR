@@ -1,7 +1,10 @@
 ---
 title: AEM 헤드리스 번역 시작
 description: 헤드리스 콘텐츠를 구성하는 방법과 AEM 번역 도구가 작동하는 방식을 알아봅니다.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 0%
