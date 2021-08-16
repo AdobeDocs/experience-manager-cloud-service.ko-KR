@@ -2,9 +2,9 @@
 title: 프로젝트 설정 세부 정보
 description: 프로젝트 설정 세부 사항 - Cloud Services
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
+source-git-commit: b9bb9e7b63a53ea1a6ce1e126285bb84c8351083
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Cloud Manager 빌드 환경 내의 Maven 프로필 활성화는 위에 설명된
 ## 암호로 보호된 Maven 저장소 지원 {#password-protected-maven-repositories}
 
 >[!NOTE]
->암호로 보호된 Maven 저장소의 가공물은 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트를 통해 실행되지 않으므로 매우 신중하게 사용해야 합니다. 따라서 드문 경우와 AEM에 연결되지 않은 코드에만 사용해야 합니다. Java 소스뿐만 아니라 전체 프로젝트 소스 코드도 바이너리와 함께 배포하는 것이 좋습니다.
+>암호로 보호된 Maven 저장소의 가공물은 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트에서 구현된 모든 품질 규칙을 통해 실행되지 않으므로 매우 신중하게 사용해야 합니다. 따라서 드문 경우와 AEM에 연결되지 않은 코드에만 사용해야 합니다. Java 소스뿐만 아니라 전체 프로젝트 소스 코드도 바이너리와 함께 배포하는 것이 좋습니다.
 
 Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 선택적으로 사용자 이름)를 비밀 파이프라인 변수로 지정한 다음, git 리포지토리의 `.cloudmanager/maven/settings.xml` 파일 내에서 해당 암호를 참조합니다. 이 파일은 [Maven 설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일에 병합됩니다. `adobe` 및 `cloud-manager` 로 시작하는 서버 ID는 예약된 것으로 간주되므로 사용자 지정 서버에서 사용해서는 안 됩니다. 서버 ID **이 이러한 접두사 중 하나와 일치하지 않거나 기본 ID `central`가 Cloud Manager에 의해 미러링되지 않습니다.** 이 파일이 배치되면 서버 ID는 `pom.xml` 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내에서 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager 관련 프로필](#activating-maven-profiles-in-cloud-manager) 내에 포함되지만, 반드시 필요한 것은 아닙니다.
 
