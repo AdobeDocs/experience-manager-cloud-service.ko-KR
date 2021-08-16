@@ -1,9 +1,9 @@
 ---
 title: AEM 설명서 여정
 description: 설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결하기 위해 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,8 @@ AEM 설명서 여정의 주요 목표는 AEM을 처음 사용하는 독자들이
 | 여정 | 설명 |
 |---|---|
 | [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM에서 헤드리스 개발 모델을 지원하는 방법과 프로젝트를 계획, 구현, go-live로 시작하는 방법을 살펴보십시오. |
-| 헤드리스 작성 여정 | AEM에서 헤드리스 컨텐츠를 작성 및 관리하는 방법을 보려면 여기에서 시작하십시오. |
+| [헤드리스 작성 여정](/help/journey-headless/author/overview.md) | AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보십시오. |
+| [헤드리스 아키텍트 여정](/help/journey-headless/architect/overview.md) | Cloud Service 로서의 Adobe Experience Manager의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법에 대해 소개합니다. |
 | [헤드리스 번역 여정](/help/journey-headless/translation/overview.md) | AEM에서 헤드리스 번역 프로젝트를 설정 및 관리하는 방법을 살펴보려면 여기에서 시작하십시오. |
 | AEM 온보딩 여정 | 곧 제공될 예정입니다! |
 | AEM Commerce 여정 | 곧 제공될 예정입니다! |
