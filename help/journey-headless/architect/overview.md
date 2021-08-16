@@ -1,9 +1,10 @@
 ---
 title: AEM Headless Content Architect 여정
 description: AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보십시오.
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: d0e870f5e49580bb95d347092a2ece4c2497a1c9
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 1%
