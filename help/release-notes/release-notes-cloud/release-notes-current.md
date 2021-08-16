@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
+source-git-commit: 2f08b1487c1a7fc7b94678e78f8fd72054ff51cb
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1632'
 ht-degree: 2%
 
 ---
@@ -144,7 +144,39 @@ API `com.day.cq.dam.api.collection.SmartCollection`는 [!DNL Experience Manager]
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.7.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.8.0 및 2021.7.0 의 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+
+## 릴리스 날짜 {#release-date-cm-aug}
+
+AEM as a Cloud Service 2021.8.0의 Cloud Manager 릴리스 날짜는 2021년 8월 12일입니다.
+다음 릴리스는 2021년 9월 9일에 예정되어 있습니다.
+
+### 새로운 기능 {#what-is-new-aug}
+
+* 이제 Cloud Service 고객은 Cloud Manager에서 SLA(서비스 수준 계약) 보고서를 볼 수 있습니다. 이 기능은 다음 몇 달 동안 점진적으로 제공될 예정입니다.
+자세한 내용은 [SLA 보고](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html)를 참조하십시오.
+
+* IndexType 및 `IndexDamAssetLucene` 품질 규칙의 유형과 심각도가 변경되었습니다. 이제 Blocker *serverity*&#x200B;의 버그가 둘 다 있습니다.
+
+* 비동기 및 tika 구성을 다루는 새로운 Oak 색인 품질 규칙이 도입되었습니다.
+
+* 프로그램당 최대 SSL 인증서를 50개로 늘립니다.
+
+* 사용자가 Cloud Manager UI를 통해 여러 저장소를 만들고 관리할 수 있는 셀프 서비스 기능입니다.
+
+* SonarQube가 불필요하게 Git 내역 데이터를 읽고 있었습니다. 큰 코드 베이스에서 이로 인해 불필요한 빌드 성능 벌금이 발생할 수 있습니다.
+
+* 이제 파이프라인당 Maven 종속성 캐시를 무효화하는 데 사용할 수 있는 API가 있습니다.
+
+* Cloud Manager에서 사용하는 AEM 프로젝트 원형 버전이 버전 29로 업데이트되었습니다.
+
+### 버그 수정 {#bug-fixes-aug}
+
+* 최신 릴리스가 현재 릴리스보다 작을 경우 사용 가능한 업데이트 상태가 표시되지 않아야 합니다.
+
+* 매우 긴 이름을 가진 새로운 조직에 대해 초기 온보딩이 실패했습니다.
+
+* 경우에 따라 파이프라인이 두 번 트리거되면 *이(가) 파이프라인 실행 상태* 오류로 인해 실행 중 하나가 실패하는 경우가 있습니다.
 
 ### 릴리스 날짜 {#release-cm-july}
 
