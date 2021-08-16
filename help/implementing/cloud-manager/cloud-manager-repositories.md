@@ -2,9 +2,9 @@
 title: Cloud Manager 저장소
 description: Cloud Manager 저장소
 exl-id: Cloud Manager Repositories
-source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
+source-git-commit: cebc603aab9c558239588f574f52568d05081b34
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Cloud Manager 저장소 {#cloud-manager-repos}
 
 Cloud Manager에서 생성 및 사용 가능한 리포지토리는 저장소 페이지를 통해 보고 관리할 수 있습니다.
+
+>[!NOTE]
+>지정된 회사 또는 [Adobe의 Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html))의 모든 프로그램에 대해 300개의 저장소가 제한됩니다.
 
 ## 저장소 추가 및 관리 {#add-manage-repos}
 
@@ -32,6 +35,9 @@ Cloud Manager에서 저장소를 보고 관리하려면 아래 단계를 따르�
    ![](assets/repos/repo-1.png)
 
 1. **저장**&#x200B;을 선택합니다. 새로 만든 보고서가 아래와 같이 표에 표시됩니다.
+
+   >[!NOTE]
+   >지정된 파이프라인에 대한 단일 *기본* 저장소 또는 분기가 있습니다. [Git 하위 모듈 지원](#git-submodule-support)을 사용하면 많은 보조 분기를 빌드 시간에 포함할 수 있습니다.
 
    ![](assets/repos/create-repo3.png)
 
