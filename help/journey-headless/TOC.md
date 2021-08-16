@@ -5,7 +5,7 @@ breadcrumb-title: AEM Headless Developer 여정
 user-guide-description: AEM의 강력하고 유연한 헤드리스 기능 및 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
+source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -38,9 +38,9 @@ ht-degree: 0%
    + [AEM을 사용하여 헤드리스에 대한 컨텐츠 모델링 기본 사항을 알아보십시오](architect/basics.md)
    + [AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다](architect/model-structure.md)
 + AEM Headless 번역 여정 {#translation}
-   + [AEM의 헤드리스 로컬라이제이션 이해](translation/overview.md)
-   + [AEM 헤드리스 로컬라이제이션 시작](translation/getting-started.md)
-   + [AEM에서 헤드리스 콘텐츠와 현지화하는 방법에 대해 알아봅니다](translation/learn-about.md)
+   + [AEM에서 헤드리스 번역 이해](translation/overview.md)
+   + [AEM 헤드리스 번역 시작](translation/getting-started.md)
+   + [헤드리스 콘텐츠 및 AEM에서 번역하는 방법에 대해 알아봅니다](translation/learn-about.md)
    + [번역 커넥터 구성](translation/configure-connector.md)
    + [번역 규칙 구성](translation/translation-rules.md)
    + [컨텐츠 번역](translation/translate-content.md)
