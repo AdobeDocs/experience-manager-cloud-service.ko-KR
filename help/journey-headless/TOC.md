@@ -5,7 +5,7 @@ breadcrumb-title: AEM 헤드리스 여정
 user-guide-description: AEM의 강력하고 유연한 헤드리스 기능 및 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: fe1d8f29e59f1f54c4f8e3a419103926005c0e48
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -27,17 +27,17 @@ ht-degree: 0%
    + [모두 합치는 방법](developer/put-it-all-together.md)
    + [헤드리스 애플리케이션을 사용하여 라이브로 전환하는 방법](developer/go-live.md)
    + [선택 사항 - AEM을 사용하여 단일 페이지 애플리케이션을 만드는 방법](developer/create-spa.md)
-+ AEM Headless 컨텐츠 작성자 여정 {#content-author}
++ AEM Headless Content Architect 여정 {#architect}
+   + [AEM Headless Content Architect 여정 개요](architect/overview.md)
+   + [AEM을 사용한 헤드리스를 위한 컨텐츠 모델링 - 소개](architect/introduction.md)
+   + [AEM을 사용하여 헤드리스에 대한 컨텐츠 모델링 기본 사항을 알아보십시오](architect/basics.md)
+   + [AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다](architect/model-structure.md)
++ AEM Headless 컨텐츠 작성자 여정 {#author}
    + [AEM Headless 컨텐츠 작성자 여정 - 개요](author/overview.md)
    + [AEM을 사용한 헤드리스용 작성 - 소개](author/introduction.md)
    + [AEM으로 헤드리스에 대한 작성 기본 사항](author/basics.md)
    + [컨텐츠 조각에서 참조 사용에 대해 알아봅니다](author/references.md)
    + [컨텐츠 조각에 대한 메타데이터 및 태깅 정의에 대해 알아봅니다](author/metadata-tagging.md)
-+ AEM Headless Content Architect 여정 {#content-architect}
-   + [AEM Headless Content Architect 여정 개요](architect/overview.md)
-   + [AEM을 사용한 헤드리스를 위한 컨텐츠 모델링 - 소개](architect/introduction.md)
-   + [AEM을 사용하여 헤드리스에 대한 컨텐츠 모델링 기본 사항을 알아보십시오](architect/basics.md)
-   + [AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다](architect/model-structure.md)
 + AEM Headless 번역 여정 {#translation}
    + [AEM에서 헤드리스 번역 이해](translation/overview.md)
    + [AEM 헤드리스 번역 시작](translation/getting-started.md)
