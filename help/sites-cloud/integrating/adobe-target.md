@@ -2,7 +2,7 @@
 title: Adobe Target과 통합
 description: Adobe Target과 통합
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 8%
@@ -27,7 +27,7 @@ AEM 사이트를 Adobe Target과 통합하여 페이지에서 콘텐츠를 개�
 
 Target과 통합하려면 다음 작업을 수행합니다.
 
-* [전제 조건 작업 수행](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html):Adobe Target에 등록하고 AEM 작성자 인스턴스의 특정 측면을 구성합니다. Adobe Target 계정에는 최소 **승인자** 수준 권한이 있어야 합니다. 또한 사용자가 액세스할 수 없도록 게시 노드에서 활동 설정을 보호해야 합니다.
+* [전제 조건 작업 수행](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html): Adobe Target에 등록하고 AEM 작성자 인스턴스의 특정 측면을 구성합니다. Adobe Target 계정에는 최소 **승인자** 수준 권한이 있어야 합니다. 또한 사용자가 액세스할 수 없도록 게시 노드에서 활동 설정을 보호해야 합니다.
 
 * Launch by Adobe은 Target 기능(JS 라이브러리)을 사용하여 AEM 사이트를 계측하는 사실상의 도구입니다. 따라서 AEM as a Cloud Service과 Launch 및 Adobe Target을 통합하면 바로 사용이 가능합니다(아래 링크 참조).
 
@@ -40,7 +40,7 @@ Target과 통합하려면 다음 작업을 수행합니다.
 >
 >Launch by Adobe에 대한 IMS 구성(기술 계정)은 AEM에서 Cloud Service으로 미리 구성되어 있습니다. 사용자는 이 구성을 만들 필요가 없습니다.
 
-1. [활동 구성](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html):활동을 Target 클라우드 구성과 연결합니다.
+1. [활동 구성](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html): 활동을 Target 클라우드 구성과 연결합니다.
 
 >[!CAUTION]
 >
@@ -85,7 +85,4 @@ AEM as a Cloud Service과 Adobe Target을 통합하려면 Adobe Target, AEM 활�
 >* 2,000개 경험
 >* 50개 지표
 >* 50개의 보고 세그먼트
-
->
-
 
