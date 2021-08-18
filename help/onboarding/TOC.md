@@ -5,9 +5,9 @@ breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 feature: 배포
 role: Architect, Developer
-source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
+source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '119'
 ht-degree: 47%
 
 ---
@@ -32,8 +32,3 @@ ht-degree: 47%
    + [AEM 인스턴스에 사용자 액세스 권한 부여](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + 마이그레이션 방법론 {#migration-methodology}
    + [Adobe Experience Manager as a Cloud Service으로 마이그레이션](migration-methodology/getting-started.md)
-+ 우수 사례 {#best-practices}
-   + [SEO 및 URL 관리](best-practices/seo-and-url-management.md)
-   + [KPI 평가](best-practices/assessing-kpis.md)
-   + [KPI 정렬](best-practices/aligning-kpis.md)
-   + [적합한 팀 선택](best-practices/choose-right-team.md)
