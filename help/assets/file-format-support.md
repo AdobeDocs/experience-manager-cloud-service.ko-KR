@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 자산 관리,표현물
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 7%
@@ -227,7 +227,7 @@ ht-degree: 7%
 
 ## 팁 및 제한 사항 {#limitations-and-tips}
 
-* 현재 메타데이터 추출의 파일 크기 제한은 약 10GB입니다. 매우 큰 자산을 업로드할 때 메타데이터 추출 작업이 실패하는 경우가 있습니다.
+* 현재 메타데이터 추출의 파일 크기 제한은 약 15GB입니다. 매우 큰 자산을 업로드할 때 메타데이터 추출 작업이 실패하는 경우가 있습니다.
 
 >[!MORELIKETHIS]
 >
