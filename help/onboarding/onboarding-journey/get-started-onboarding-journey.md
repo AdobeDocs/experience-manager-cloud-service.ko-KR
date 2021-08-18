@@ -4,7 +4,7 @@ description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 온보딩 프로세스 시작 {#getting-started}
 
-온보딩은 지정된 [시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 초기 클라우드 리소스 프로비저닝 및 작업 권한에 따라 적절한 역할에 사용자를 할당하여 각 구성원이 AEM에 Cloud Service 리소스로 로그인하고 액세스할 수 있게 됩니다.
+온보딩은 지정된 [시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 초기 클라우드 리소스 프로비저닝과 작업 권한에 따라 역할에 사용자를 할당하는 작업이 포함됩니다. 따라서 각 구성원은 Cloud Service 리소스로 AEM에 로그인하고 액세스할 수 있습니다.
 
 ## 목표 {#objective}
 
@@ -55,11 +55,11 @@ Admin Console에서 시스템 관리자 역할을 Admin Console 및 검토하려
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. 이전 단계에서 **사용자** 카드에서 **관리자**&#x200B;를 클릭하면 Adobe ID 이메일, 사용자 이름, 이름 또는 성을 입력하여 검색할 수 있습니다.
+1. **사용자** 카드에서 **관리자**&#x200B;를 클릭하면 Adobe ID 이메일, 사용자 이름, 이름 또는 성을 입력하여 검색할 수 있습니다.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. 검색은 아래 표시된 대로 **ADMIN ROLE** 열 아래에 **System**&#x200B;이 있는 이메일 레코드를 성공적으로 찾아야 합니다. 시스템 관리자임을 확인합니다.
+1. 검색 시 전자 메일 레코드를 찾아야 합니다. 또한 **ADMIN ROLE**&#x200B;은 아래와 같이 **시스템**&#x200B;을 표시해야 합니다. 시스템 관리자임을 확인합니다. 시스템 관리자로서의 역할이 확인됩니다.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
