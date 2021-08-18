@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 자산 관리,표현물
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 7%
+source-wordcount: '795'
+ht-degree: 8%
 
 ---
 
@@ -213,12 +213,8 @@ ht-degree: 7%
 | AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indfo3(IV30), MJPEG, Microsoft 비디오 1(MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | 마트로스카 | H264/AVC | - |
-| R3D, RM | Red Raw 비디오 | MJPEG 2000 | - |
 | RAM, RM | RealVideo | 지원되지 않음 | Real G2(RV20), Real 8(RV30), Real 10(RV40) |
-| FLAC | 네이티브 Flash | 무손실 오디오 코덱이 있습니다 | - |
 | MJ2 | 동작 JPEG 2000 | 모션 JPEG 2000 코덱을 | - |
 
 ## 오디오 형식 {#audio-formats}
