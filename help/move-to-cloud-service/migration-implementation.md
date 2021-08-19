@@ -2,10 +2,10 @@
 title: 구현 단계
 description: 구현 단계
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 89%
+source-wordcount: '943'
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ Cloud Manager Git을 통해 코드를 클라우드 서비스 환경에 푸시하
 
 테스트 스크립트 작성 및 최소 50%의 권장 적용 범위에 대해 알아보려면 [코드 품질 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)를 참조하십시오.
 
-또한 AEM Engineering의 우수 사례를 기반으로 작성된 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대한 자세한 내용은 [사용자 지정 코드 품질 규칙 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)를 참조하십시오.
+또한 AEM Engineering의 우수 사례를 기반으로 작성된 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대한 자세한 내용은 [사용자 지정 코드 품질 규칙 이해](/help/implementing/cloud-manager/custom-code-quality-rules.md)를 참조하십시오.
 
 Cloud Manager 사용은 클라우드 서비스 환경에 코드를 배포하는 유일한 메커니즘입니다.
 
