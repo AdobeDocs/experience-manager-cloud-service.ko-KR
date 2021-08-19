@@ -4,16 +4,16 @@ description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
+source-git-commit: 5f599eb877565c65aad3d54af411bd8d40f4580d
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
 # Cloud Manager를 통해 Cloud 리소스 설정 {#setup-cloud-resources}
 
-*비즈니스 소유자* 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다. 따라서 *비즈니스 소유자* 제품 프로필에 할당된 팀 구성원이 Cloud Manager에 로그인하여 클라우드 프로그램과 환경을 만들어야 전문가 팀을 시작할 수 있습니다.
+비즈니스 소유자 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다. 뒤이어 비즈니스 소유자 제품 프로필에 할당된 팀 구성원이 Cloud Manager에 로그인하여 클라우드 프로그램 및 환경을 만들어야 전문가 팀을 시작할 수 있습니다.
 
 ## 목표 {#objective}
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 이 섹션을 읽은 후에는 다음 사항을 이해해야 합니다.
 
-* *비즈니스 소유자* 역할에 할당된 시스템 관리자는 Cloud Manager에 처음으로 액세스하여 로그인해야 합니다.
+* 비즈니스 소유자 역할에 할당된 시스템 관리자가 먼저 Cloud Manager에 액세스하여 로그인해야 합니다.
 * 클라우드 프로그램 및 환경을 만드는 방법.
 
 ## 소개 {#introduction}
@@ -32,19 +32,17 @@ ht-degree: 0%
 
 ### 전제 조건 {#prerequisites}
 
-* *비즈니스 소유자* 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
+* 비즈니스 소유자 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
 
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)로 이동하여 로그인하는 방법을 이해합니다.
 
 * [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)에 익숙해지십시오.
 
-* 프로그램을 만들기 위한 고려 사항을 이해합니다. 자세한 내용은 이 비디오를 참조하십시오.
-
 * Cloud Manager [프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) 및 [환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)의 개념을 이해합니다
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
-*비즈니스 소유자* 사용자는 시작할 수 있는 위치에서 환영 이메일을 받거나, 찾을 수 없는 경우 [Adobe Experience Cloud](https://experience.adobe.com)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
+비즈니스 소유자 사용자는 시작할 링크가 포함된 환영 이메일을 받게 되며, 링크를 찾을 수 없는 경우 [Adobe Experience Cloud](https://experience.adobe.com)로 바로 이동하여 Adobe ID을 사용하여 로그인합니다.
 
 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
@@ -54,7 +52,7 @@ Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
 
    >[!IMPORTANT]
-   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 이 페이지를 책갈피로 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동하세요.
+   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 참조할 수 있도록 이 페이지에 책갈피를 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동할 수 있습니다.
 
 1. Cloud Manager의 랜딩 페이지로 이동합니다. 자세한 내용은 [Cloud Manager 프로그램 보기](#viewing-programs) 섹션을 참조하십시오.
 
@@ -166,14 +164,14 @@ Cloud Manager에서 클라우드 환경을 만들려면 아래 절차를 따르�
 
    또한 빠른 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en) 자습서를 시청하여 Cloud Manager 환경과 이를 프로그램에 추가하는 방법을 알아보십시오.
 
-1. 이렇게 하면 환경 추가를 안내하는 환경 추가 마법사가 시작됩니다. 먼저 개발 환경을 추가하여 익숙해지십시오. 자세한 내용은 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)를 참조하십시오.
+1. 이렇게 하면 환경 추가를 안내하는 환경 추가 마법사가 시작됩니다. 먼저 개발 환경을 추가하여 마법사를 잘 이해합니다. 자세한 내용은 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)를 참조하십시오.
 
    >[!NOTE]
    >아직 그렇게 하지 않았다면 지금이 Cloud Manager 팀에 개발자 구성원을 추가할 적기입니다. 개발자 제품 프로필에 사용자 추가 를 참조하여 요약된 단계를 따르십시오.
 
 1. 개발자 제품 프로필에 할당된 구성원은 Cloud Manager 및 [Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)에 로그인할 수 있습니다.
 
-   잘했어요! 이제 프로그램이 성공적으로 만들어지면 개발자가 액세스할 수 있는 Cloud Manager Git을 사용할 수 있습니다.
+   잘했어요! 이제 프로그램이 성공적으로 만들어졌고 개발자가 액세스할 수 있는 Cloud Manager Git을 사용할 수 있습니다.
 
    축하합니다! 이제 클라우드 프로그램 환경이 만들어졌고 개발자가 팀에 추가되었습니다!
 
