@@ -2,9 +2,9 @@
 title: Sling 어댑터 사용
 description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 간편하게 번역합니다
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 04767681216ebee845fa6120e3da8db8e105f68f
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2234'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 내부 컨텍스트 개체를 전달해야 하는 개체의 바로 가기 만들기
 
-   예를 들어 JCR 기반 [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)은 요청의 [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)에 대한 참조를 보유하며, 이 참조는 [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) 또는 [`UserManager`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)과 같이 해당 요청 세션을 기반으로 작동하는 많은 개체에 필요합니다.
+   예를 들어 JCR 기반 [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)은 요청의 [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)에 대한 참조를 보유하며, 이 참조는 [`PageManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) 또는 [`UserManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/security/UserManager.html)과 같이 해당 요청 세션을 기반으로 작동하는 많은 개체에 필요합니다.
 
 * 서비스에 대한 바로 가기.
 
@@ -60,7 +60,7 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
 
 `Adaptable.adaptTo()`을 구현할 수 있는 방법에는 여러 가지가 있습니다.
 
-* 개체 자체에 의해;메서드 자체를 구현하고 특정 객체에 매핑합니다.
+* 개체 자체에 의해; 메서드 자체를 구현하고 특정 객체에 매핑합니다.
 * 임의의 개체를 매핑할 수 있는 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)에 의해 결정됩니다.
 
    개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며, [`SlingAdaptable`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/adapter/SlingAdaptable.html)(`adaptTo` 호출을 중앙 어댑터 관리자에 전달)를 확장해야 합니다.
@@ -109,11 +109,11 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">입력 스트림</a></td>
-   <td>파일 리소스의 이진 컨텐츠 반환(JCR 노드 기반 리소스이고 노드 유형이 <code>nt:file</code> 또는 <code>nt:resource</code>;인 경우)번들 리소스인 경우파일 시스템 리소스인 경우 파일 컨텐츠나 바이너리 JCR 속성 리소스의 데이터입니다.</td>
+   <td>파일 리소스의 이진 컨텐츠 반환(JCR 노드 기반 리소스이고 노드 유형이 <code>nt:file</code> 또는 <code>nt:resource</code>;인 경우) 번들 리소스인 경우 파일 시스템 리소스인 경우 파일 컨텐츠나 바이너리 JCR 속성 리소스의 데이터입니다.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/net/URL.html">URL</a></td>
-   <td>리소스(JCR 노드 기반 리소스인 경우 이 노드의 저장소 URL)에 대한 URL을 반환합니다.번들 리소스인 경우 jar 번들 URL파일 시스템 리소스인 경우 파일 URL).</td>
+   <td>리소스(JCR 노드 기반 리소스인 경우 이 노드의 저장소 URL)에 대한 URL을 반환합니다. 번들 리소스인 경우 jar 번들 URL 파일 시스템 리소스인 경우 파일 URL).</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/File.html">파일</a></td>
