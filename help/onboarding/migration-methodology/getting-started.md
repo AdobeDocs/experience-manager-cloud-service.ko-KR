@@ -2,9 +2,9 @@
 title: Experience Manager으로 Cloud Service 마이그레이션
 description: Experience Manager으로 Cloud Service 마이그레이션
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2105'
 ht-degree: 10%
 
 ---
@@ -31,7 +31,7 @@ Cloud Service은 브랜드가 항상 진화하는 소비자 요구를 충족할 
 
 <br>
 
-## Cloud Service {#getting-started}으로 Adobe Experience Manager 시작하기
+## Adobe Experience Manager as a Cloud Service 시작하기 {#getting-started}
 
 | 뭐가 다르죠? | 아키텍처 개요 |
 |--------------------------|--------------------------|
@@ -41,7 +41,7 @@ Cloud Service은 브랜드가 항상 진화하는 소비자 요구를 충족할 
 
 <br>
 
-## Adobe Experience Manager에서 Cloud Service {#developer-journey} 인 개발자 여정
+## Adobe Experience Manager as a Cloud Service의 개발자 여정 {#developer-journey}
 
 ### 개발
 
@@ -53,10 +53,10 @@ Experience Manager을 Cloud Service 배포으로 사용자 지정하는 방법�
 
 | 로컬 개발 설정 | 시작하기 전에 알아야 할 사항 |
 |-----------|------------|
-| <ol><li>자세한 내용은 [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) 설명서를 참조하십시오.</li><li>[Dispatcher SDK 설치](https://video.tv.adobe.com/v/30601)를 시청하고 Dispatcher SDK를 설치하는 방법을 알아보십시오</li><li>[Dispatcher SDK 구성](https://video.tv.adobe.com/v/30602)에서 Dispatcher SDK를 구성하는 방법을 알아보십시오</li><li>자세한 내용은 [로컬 개발 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) 설명서를 참조하십시오</li><li>Experience Manager [둘러보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)에 대한 액세스 구성</li></ol> | <ol><li>[개발 핵심 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[개발 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Experience Manager 프로젝트 구조 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)</li><li>[Digital Foundation 블루프린트](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[오버레이](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/overlays.html?lang=en#developing)</li><li>[Cloud Service API 참조로서의 Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
+| <ol><li>자세한 내용은 [Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing) 설명서를 참조하십시오.</li><li>[Dispatcher SDK 설치](https://video.tv.adobe.com/v/30601)를 시청하고 Dispatcher SDK를 설치하는 방법을 알아보십시오</li><li>[Dispatcher SDK 구성](https://video.tv.adobe.com/v/30602)에서 Dispatcher SDK를 구성하는 방법을 알아보십시오</li><li>자세한 내용은 [로컬 개발 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up) 설명서를 참조하십시오</li><li>Experience Manager [둘러보기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en#accessing)에 대한 액세스 구성</li></ol> | <ol><li>[개발 핵심 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[개발 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)</li><li>[Experience Manager 프로젝트 구조 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)</li><li>[Digital Foundation 블루프린트](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=en#authoring)</li><li>[오버레이](/help/implementing/developing/introduction/overlays.md)</li><li>[Cloud Service API 참조로서의 Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)</li></ol> |
 
 >[!TIP]
-> 로컬 Experience Manager SDK에서 [WKND를 개발 및 배포하는 방법에 대한 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)를 참조하십시오
+> 로컬 Experience Manager SDK에서 [WKND를 개발 및 배포하는 방법에 대한 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)를 참조하십시오
 
 ### 배포
 
@@ -99,7 +99,7 @@ AEM as a Cloud Service 환경으로 구성 및 배포하는 방법에 대한 자
 
 <br>
 
-## Adobe Experience Manager으로 Cloud Service {#move-to-cloud}(으)로 이동
+## Adobe Experience Manager으로 Cloud Service으로 이동 {#move-to-cloud}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
@@ -126,7 +126,7 @@ Cloud Service으로 전환 여정을 시작하기 전에 먼저 Experience Manag
 <table>
 <tr>
 <td>프로젝트 검색 및 평가</td>
-<td><ul><li>Cloud Service 로서의 Adobe Experience Manager과 Experience Manager 6.x의 중요한 차이점을 파악하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">Cloud Service로서의 Experience Manager에 대한 주목할 만한 변경 사항</a>을 참조하십시오.</li><li>더 이상 사용되지 않음으로 표시된 기능에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=en#deprecated-features">더 이상 사용되지 않는 기능</a>을 참조하십시오.</li><li>[Cloud Service 마이그레이션만 해당] Cloud Service 준비 평가 :소스 환경에서 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration">우수 사례 분석기(BPA)</a>를 실행합니다 </li><li>Experience Manager CS의 주요 변경 사항 및 더 이상 사용되지 않는 기능에 대한 평가를 완료합니다</li></ul></td>
+<td><ul><li>Cloud Service 로서의 Adobe Experience Manager과 Experience Manager 6.x의 중요한 차이점을 파악하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">Cloud Service로서의 Experience Manager에 대한 주목할 만한 변경 사항</a>을 참조하십시오.</li><li>더 이상 사용되지 않음으로 표시된 기능에 대한 자세한 내용은 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=en#deprecated-features">더 이상 사용되지 않는 기능</a>을 참조하십시오.</li><li>[Cloud Service 마이그레이션만 해당] Cloud Service 준비 평가 : 소스 환경에서 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration">우수 사례 분석기(BPA)</a>를 실행합니다 </li><li>Experience Manager CS의 주요 변경 사항 및 더 이상 사용되지 않는 기능에 대한 평가를 완료합니다</li></ul></td>
 </tr>
 <tr>
 <td>리뷰</td>
@@ -152,8 +152,8 @@ Cloud Service으로 전환 여정을 시작하기 전에 먼저 Experience Manag
 
 #### 컨텐츠 마이그레이션
 
-1. [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) :기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 target AEM Cloud Service 인스턴스로 이동하는 데 사용됩니다.
-2. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager) :저장소의 가변 콘텐츠를 가져오고 내보내는 데 사용됩니다.
+1. [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) : 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 target AEM Cloud Service 인스턴스로 이동하는 데 사용됩니다.
+2. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager) : 저장소의 가변 콘텐츠를 가져오고 내보내는 데 사용됩니다.
 
 
 #### 리팩터링/최적화
@@ -163,7 +163,7 @@ Cloud Service으로 전환 여정을 시작하기 전에 먼저 Experience Manag
 | <ul><li>[로컬 개발 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up)</li><li>[로컬 Dispatcher 설정](https://video.tv.adobe.com/v/30602/)</li><li>[SDK API jar를 사용하여 코드를 컴파일합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[AEM 개발 지침 검토](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#developing)<ul><li>백그라운드 작업 및 장기 실행 작업</li><li>Sling 스케줄러</li><li>입력 스트림 사용량 등</li></ul></li></ul> | <ul><li>소스 환경에서 [우수 사례 분석기(BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)를 실행합니다.[**마이그레이션만**]<ul><li>프로젝트 구조 고려 사항([Cloud Archetype](https://github.com/adobe/aem-project-archetype) 기반)<ul><li>코드와 컨텐츠 분리(가변 및 변경할 수 없음)</li><li>[사용자 지정 인덱스 정의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#indexing)</li><li>[사용자 지정 실행 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes)</li></ul></li></ul></li><li>필요한 변경 사항에 대해 검토 및 실행</li><li>[](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en) 로컬 SDK에 배포</li><li>AEM SDK를 통해 연기 테스트 수행</li></ul> | <ul><li>리팩터링용 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=en#local-validation-of-dispatcher-configuration) 검토</li><li>적절한 경우 [Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html?lang=en#introduction-dispatcher) 도구를 활용하십시오. [**마이그레이션만**]</li><li>테스트는 [Dispatcher SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)를 사용하여 수행할 수 있습니다</li></ul> |
 
 >[!TIP]
-> Assets 고객 :[Asset Cloud 마이그레이션을 사용하여 자산 워크플로우 검토 및 리팩터링](https://github.com/adobe/aem-cloud-migration) 도구
+> Assets 고객 : [Asset Cloud 마이그레이션을 사용하여 자산 워크플로우 검토 및 리팩터링](https://github.com/adobe/aem-cloud-migration) 도구
 
 
 #### 배포/Go-Live
