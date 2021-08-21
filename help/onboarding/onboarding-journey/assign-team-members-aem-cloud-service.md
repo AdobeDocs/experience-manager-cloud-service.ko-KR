@@ -4,9 +4,9 @@ description: 팀 구성원을 AEM as a Cloud Service 제품 프로필로 할당�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 소개 {#introduction}
 
-Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여하려면 `AEM Users` 또는 `AEM Administrators` 과 같은 두 제품 프로필 중 하나에 속해야 합니다. Cloud Manager 관리 권한이 충분하지 않으므로 팀 구성원에게 AEM 인스턴스에 대한 권한을 부여해야 합니다. 추가 정보.
+Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여받으려면 다음 두 제품 프로필 중 하나에 속해야 합니다.  `AEM Users` 또는 `AEM Administrators` Cloud Manager 관리 권한이 충분하지 않으므로 팀 구성원에게 AEM 인스턴스에 대한 권한을 부여해야 합니다. 추가 정보.
 
 >[!NOTE]
 >시스템 관리자가 AEM 사용자 제품 프로필에 할당한 모든 사용자는 Cloud Manager에 대한 (읽기 전용) 액세스 권한을 갖습니다.
