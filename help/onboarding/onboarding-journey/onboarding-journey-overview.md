@@ -3,7 +3,7 @@ title: 온보딩 여정
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 2%
@@ -64,4 +64,4 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 
 ## 다음은 무엇입니까? {#what-is-next}
 
-이제 온보딩 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 이동하여 온보딩 프로세스 시작 문서를 읽어 보십시오.
+이제 온보딩 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 이동하여 [온보딩 프로세스 시작](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md) 문서를 읽어 보십시오.
