@@ -5,7 +5,7 @@ breadcrumb-title: AEM 설명서 여정
 user-guide-description: AEM의 강력하고 유연한 헤드리스 기능 및 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오.
 feature: 개발자 도구
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 93d7e7159cefba687ce085eda32d8da44e60fdc5
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -40,15 +40,14 @@ Please note that all links to other guides need to be absolute references with l
    + [번역 규칙 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translation-rules.html)
    + [컨텐츠 번역](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
    + [번역된 컨텐츠 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
-+ AEM Headless 컨텐츠 작성자 여정 {#content-author}
-   + [AEM Headless 컨텐츠 작성자 여정 - 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/overview.md)
-   + [AEM을 사용한 헤드리스용 작성 - 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/introduction.md)
-   + [AEM으로 헤드리스에 대한 작성 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/basics.md)
-   + [컨텐츠 조각에서 참조 사용에 대해 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/references.md)
-   + [컨텐츠 조각에 대한 메타데이터 및 태깅 정의에 대해 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-author/metadata-tagging.md)
-+ AEM Headless Content Architect 여정 {#content-architect}
-   + [AEM Headless Content Architect 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/overview.md)
-   + [AEM을 사용한 헤드리스를 위한 컨텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/introduction.md)
-   + [AEM을 사용하여 헤드리스에 대한 컨텐츠 모델링 기본 사항을 알아보십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/basics.md)
-   + [AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/content-architect/model-structure.md)
-
++ AEM Headless 컨텐츠 작성자 여정 {#author}
+   + [AEM Headless 컨텐츠 작성자 여정 - 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
+   + [AEM을 사용한 헤드리스용 작성 - 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
+   + [AEM으로 헤드리스에 대한 작성 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
+   + [컨텐츠 조각에서 참조 사용에 대해 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
+   + [컨텐츠 조각에 대한 메타데이터 및 태깅 정의에 대해 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
++ AEM Headless Content Architect 여정 {#architect}
+   + [AEM Headless Content Architect 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
+   + [AEM을 사용한 헤드리스를 위한 컨텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
+   + [AEM을 사용하여 헤드리스에 대한 컨텐츠 모델링 기본 사항을 알아보십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
+   + [AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
