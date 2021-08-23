@@ -2,9 +2,8 @@
 title: 개발자 및 배포 관리자를 위한 학습 경로
 description: 개발자 또는 배포 관리자인 경우 액세스 권한을 얻은 후 다음 단계를 알려면 이 페이지를 따르십시오
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 3%
