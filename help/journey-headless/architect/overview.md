@@ -4,9 +4,9 @@ description: AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '694'
 ht-degree: 2%
 
 ---
@@ -63,3 +63,4 @@ AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 헤드리스 �
 * [헤드리스 작성 여정](/help/journey-headless/author/overview.md)  - AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오.
 * [AEM 헤드리스 개발자 여정](/help/journey-headless/developer/overview.md)  - AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오.
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)  - AEM 및 헤드리스 기술에 대한 확고한 이해가 있는 경우에는 심층적인 기술 문서를 직접 문의할 수 있습니다.
+* [AEM 헤드리스 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - 자습서를 통해 학습하고 기술적으로 기울어지는 경우 AEM Headless에서 빌드된 애플리케이션을 제작 및 사용하는 API 및 프레임워크로 구성된 실습 자습서를 살펴보십시오.
