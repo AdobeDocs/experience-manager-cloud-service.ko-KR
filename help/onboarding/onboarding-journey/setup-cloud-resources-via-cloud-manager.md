@@ -2,9 +2,8 @@
 title: Cloud Manager를 통해 Cloud 리소스 설정
 description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방법을 배우려면 이 페이지를 따르십시오
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 5f599eb877565c65aad3d54af411bd8d40f4580d
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '1429'
 ht-degree: 0%
