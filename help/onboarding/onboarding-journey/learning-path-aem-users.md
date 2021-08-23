@@ -2,9 +2,8 @@
 title: AEM 사용자를 위한 학습 경로
 description: AEM 사용자인 경우 액세스 권한을 얻은 후 다음 단계를 배우려면 이 페이지를 따르십시오
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: e4b0b026e72e3956503966cfc7a57b657501f0f8
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 3%
