@@ -2,9 +2,9 @@
 title: Experience Manager으로 Cloud Service 마이그레이션
 description: Experience Manager으로 Cloud Service 마이그레이션
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
+source-git-commit: 73c414ed636fea48c4c79a02e71d99fa8d16878f
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2103'
 ht-degree: 10%
 
 ---
@@ -79,7 +79,7 @@ AEM as a Cloud Service 환경으로 구성 및 배포하는 방법에 대한 자
    * [백업 및 복원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en)
 
 >[!TIP]
-> [WKND를 Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)에 배포하는 방법에 대한 자습서를 참조하십시오
+> [WKND를 Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 배포하는 방법에 대한 자습서를 참조하십시오
 
 ### 도움말 및 리소스
 
