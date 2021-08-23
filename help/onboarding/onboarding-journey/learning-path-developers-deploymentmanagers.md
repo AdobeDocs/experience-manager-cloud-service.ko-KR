@@ -3,7 +3,7 @@ title: 개발자 및 배포 관리자를 위한 학습 경로
 description: 개발자 또는 배포 관리자인 경우 액세스 권한을 얻은 후 다음 단계를 알려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 3%
@@ -50,7 +50,7 @@ Cloud Manager UI에서 프로덕션 또는 비프로덕션 파이프라인을 �
 
 ## 다음은 무엇입니까? {#whats-next}
 
-개발자 및 배포 관리자가 이제 AEM에서 코드를 Cloud Service으로 개발하는 방법을 잘 알 수 있습니다. 아래의 추가 리소스 섹션에서 자세한 내용을 살펴보거나 추가 학습 경로를 찾을 수 있습니다. 컨텐츠 작성자를 위한 학습 여정에 대해 알려면 AEM 작성자를 위한 학습 경로 를 참조하십시오.
+개발자 및 배포 관리자가 이제 AEM에서 코드를 Cloud Service으로 개발하는 방법을 잘 알 수 있습니다. 아래의 추가 리소스 섹션에서 자세한 내용을 살펴보거나 추가 학습 경로를 찾을 수 있습니다. 컨텐츠 작성자를 위한 학습 여정에 대해 알려면 [AEM 작성자를 위한 학습 경로](/help/onboarding/onboarding-journey/learning-path-aem-users.md)를 참조하십시오.
 
 ## 추가 리소스 {#additional-resources}
 
