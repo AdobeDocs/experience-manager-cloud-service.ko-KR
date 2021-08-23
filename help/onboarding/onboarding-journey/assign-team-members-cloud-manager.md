@@ -3,7 +3,7 @@ title: 'Cloud Manager 제품 프로필에 팀 구성원 할당 '
 description: 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방법을 알려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -157,7 +157,7 @@ Cloud Manager 프로필 목록을 보려면 아래 절차를 따르십시오.
 
 ## 다음은 무엇입니까? {#whats-next}
 
-비즈니스 소유자, 배포 관리자 및 개발자와 같은 세 가지 서로 다른 Cloud Manager 제품 프로필에 대해 학습했습니다. 다음으로 비즈니스 소유자, 배포 관리자 및 개발자와 같은 Cloud Manager 제품 프로필에 팀 구성원을 할당했습니다. 이제 Cloud Manager를 통해 문서 설정 클라우드 리소스를 검토하여 온보딩 여정을 계속할 준비가 되었습니다. 여기서 다음을 확인할 수 있습니다.
+비즈니스 소유자, 배포 관리자 및 개발자와 같은 세 가지 서로 다른 Cloud Manager 제품 프로필에 대해 학습했습니다. 다음으로 비즈니스 소유자, 배포 관리자 및 개발자와 같은 Cloud Manager 제품 프로필에 팀 구성원을 할당했습니다. 이제 Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md)를 통해 [클라우드 리소스 설정 문서를 검토하여 온보딩 여정을 계속할 준비가 되었습니다. 여기서 다음을 배울 수 있습니다.
 
 1. *비즈니스 소유자* 역할에 지정된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
 
