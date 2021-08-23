@@ -2,9 +2,8 @@
 title: 'Cloud Manager 제품 프로필에 팀 구성원 할당 '
 description: 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방법을 알려면 이 페이지를 따르십시오
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 00f1611b46e0f325802f3ed4bb2d96f8fcaf8535
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
