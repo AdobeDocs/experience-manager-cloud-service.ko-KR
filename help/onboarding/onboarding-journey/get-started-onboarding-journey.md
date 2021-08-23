@@ -3,7 +3,7 @@ title: 온보딩 프로세스 시작
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -66,5 +66,5 @@ Admin Console에서 시스템 관리자 역할을 Admin Console 및 검토하려
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 Admin Console에 로그인하여 시스템 관리자로 프로필을 검사했으므로 Cloud Manager 제품 프로필에 팀 구성원 할당 문서를 검토하여 온보딩 여정을 계속 수행해야 합니다.
+이제 Admin Console에 로그인하여 시스템 관리자로 프로필을 검사했으므로 [Assign Team Members to Cloud Manager 제품 프로필](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md) 문서를 검토하여 온보딩 여정을 계속 수행해야 합니다.
 
