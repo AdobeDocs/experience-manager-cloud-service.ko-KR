@@ -3,9 +3,9 @@ title: 개발자 및 배포 관리자를 위한 학습 경로
 description: 개발자 또는 배포 관리자인 경우 액세스 권한을 얻은 후 다음 단계를 알려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
+source-git-commit: 53b98708044a7df8c4d24f25046c098f1a307743
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '566'
 ht-degree: 2%
 
 ---
@@ -68,3 +68,14 @@ Cloud Manager UI에서 프로덕션 또는 비프로덕션 파이프라인을 �
 
 * [개발자용 AEM SPA 편집기 시작하기](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
+## Experience League 교육 과정 {#exp-league-courses}
+
+자세한 내용은 experience league 교육 과정 을 참조하십시오. 교육 과정에 액세스할 수 있도록 등록했는지 확인하십시오.
+
+* [기존 사이트](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [SPA 편집기](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [헤드리스](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [상거래](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
