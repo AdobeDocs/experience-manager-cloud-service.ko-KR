@@ -3,9 +3,9 @@ title: Cloud Manager를 통해 Cloud 리소스 설정
 description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방법을 배우려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
-비즈니스 소유자 사용자는 시작할 링크가 포함된 환영 이메일을 받게 되며, 링크를 찾을 수 없는 경우 [Adobe Experience Cloud](https://experience.adobe.com)로 바로 이동하여 Adobe ID을 사용하여 로그인합니다.
+비즈니스 소유자 사용자는 시작할 링크가 포함된 환영 이메일을 받게 되며, 링크를 찾을 수 없는 경우 Adobe ID을 사용하여 로그인하여 [Cloud Manager](https://my.cloudmanager.adobe.com/)에 직접 액세스합니다.
 
 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
