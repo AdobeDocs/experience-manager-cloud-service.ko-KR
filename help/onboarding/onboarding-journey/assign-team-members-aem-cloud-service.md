@@ -3,10 +3,10 @@ title: 'AEM에 Cloud Service 제품 프로필로 팀 구성원 할당 '
 description: 팀 구성원을 AEM as a Cloud Service 제품 프로필로 할당하는 방법을 알려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## 소개 {#introduction}
 
-Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여받으려면 다음 두 제품 프로필 중 하나에 속해야 합니다.  `AEM Users` 또는 `AEM Administrators` Cloud Manager 관리 권한이 충분하지 않으므로 팀 구성원에게 AEM 인스턴스에 대한 권한을 부여해야 합니다. 추가 정보.
+Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여받으려면 다음 두 제품 프로필 중 하나에 속해야 합니다.  `AEM Users` 또는 `AEM Administrators` Cloud Manager 관리 권한이 충분하지 않으므로 팀 구성원에게 AEM 인스턴스에 대한 권한을 부여해야 합니다.
 
 >[!NOTE]
 >시스템 관리자가 AEM 사용자 제품 프로필에 할당한 모든 사용자는 Cloud Manager에 대한 (읽기 전용) 액세스 권한을 갖습니다.
@@ -85,7 +85,7 @@ Cloud Service 인스턴스로 AEM에 대한 액세스 권한을 부여하려면 
 
    ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. 새 탭이 환경의 작성자 인스턴스에 액세스할 수 있는 Adobe Admin Console으로 이동합니다. 이 개인이 부여해야 하는 권한에 따라 *AEM Administrators* 또는 *AEM Users*&#x200B;를 선택합니다. [AEM as a Cloud Service 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)에 대해 자세히 알아보십시오.
+1. 새 탭이 환경의 작성자 인스턴스에 액세스할 수 있는 Adobe Admin Console으로 이동합니다. 이 개인이 부여해야 하는 권한에 따라 **AEM Administrators** 또는 **AEM Users**&#x200B;를 선택합니다. [AEM as a Cloud Service 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)에 대해 자세히 알아보십시오.
 
    ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
@@ -105,5 +105,6 @@ Cloud Service 제품 프로필로 AEM에 할당한 사용자는 이제 작성자
 
 ## 추가 리소스 {#additional-resources}
 
+* [Admin Console에서 제품 및 사용자 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)
 * [AEM 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
 * [페이지 작성에 대한 빠른 시작 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
