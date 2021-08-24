@@ -3,10 +3,10 @@ title: AEM 사용자를 위한 학습 경로
 description: AEM 사용자인 경우 액세스 권한을 얻은 후 다음 단계를 배우려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '383'
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,24 @@ AEM을 Cloud Service 팀으로 설정할 때 시스템 관리자가 필요한 �
 
 ## 작성자에게 로그인 {#login-author}
 
-작성자에 액세스하려면 다음 단계를 수행해야 합니다.
+작성자에 액세스하려면 아래 절차를 따르십시오.
 
-1. 다음 단계에 따라 Cloud Manager로 이동합니다. 또는 Cloud Manager로 바로 이동하여 로그인할 수 있습니다.
+1. [Adobe Experience Cloud](https://experience.adobe.com)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
+
+1. Adobe Experience Cloud 홈 페이지에서 **Experience Manager**&#x200B;을 선택합니다.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
+
+1. AEM 홈 페이지로 이동합니다. 여기에서 **Cloud Manager** 를 시작합니다.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
+
+   >[!IMPORTANT]
+   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 참조할 수 있도록 이 페이지에 책갈피를 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동할 수 있습니다.
 
 1. Cloud Manager의 **개요** 페이지에서 **환경** 카드의 작성자 링크를 클릭합니다.
+
+   ![](/help/onboarding/onboarding-journey/assets/author-environ.png)
 
 1. 이렇게 하면 Adobe ID을 사용하여 작성 환경에 로그인할 수 있는 새 탭이 열립니다.
 
