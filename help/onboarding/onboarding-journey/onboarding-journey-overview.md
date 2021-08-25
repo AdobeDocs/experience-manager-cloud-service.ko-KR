@@ -3,7 +3,7 @@ title: 온보딩 여정
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
 hide: true
 index: false
-source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
+source-git-commit: d5a948bd296d7e6ac9aca0b7bfc72202c1046b99
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 2%
@@ -55,12 +55,12 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 |---|---|---|
 | 0 | 온보딩 여정 | 이 문서 |
 | 1 | <br>[시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Adobe ID 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[Cloud Service 팀으로서 AEM 및 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobe 지원에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en)<br>[ | 온보딩 개념에 대해 알아봅니다. |
-| 2 | 온보딩 시작하기 | Admin Console에 로그인하고 시스템 관리자로 프로파일을 확인하는 방법에 대해 알아봅니다 |
-| 3 | Cloud Manager 제품 프로필에 팀 구성원 할당 | Cloud Manager 제품 프로필을 검토하고 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방법을 알아보십시오. |
-| 4 | Cloud Manager를 통해 Cloud 리소스 설정 | 클라우드 리소스를 만드는 방법과 이를 수행할 수 있는 사용자를 알아봅니다. 또한 클라우드 프로그램 및 환경을 만드는 방법을 알아봅니다. |
-| 5 | AEM에 Cloud Service 제품 프로필로 팀 구성원 할당 | 시스템 관리자가 Cloud Service 제품 프로필로 팀 구성원을 AEM에 할당하는 방법을 알아보십시오. |
-| 6 | AEM 개발자 및 배포 관리자를 위한 학습 경로 | 개발자로서 Cloud Manager Git에 액세스 및 관리할 수 있는 방법과 배포 관리자로서 Cloud Manager에서 파이프라인을 설정하고 코드를 배포할 수 있는 방법을 알아봅니다. |
-| 7 | AEM 사용자를 위한 학습 경로 | AEM 작성자로서 AEM as a Cloud Service 인스턴스에 액세스하고 AEM as a Cloud Service용 컨텐츠를 작성하는 방법에 대해 알아봅니다. |
+| 2 | [온보딩 시작하기](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md) | Admin Console에 로그인하고 시스템 관리자로 프로파일을 확인하는 방법에 대해 알아봅니다 |
+| 3 | [Cloud Manager 제품 프로필에 팀 구성원 할당](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md) | Cloud Manager 제품 프로필을 검토하고 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방법을 알아보십시오. |
+| 4 | [Cloud Manager를 통해 Cloud 리소스 설정](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md) | 클라우드 리소스를 만드는 방법과 이를 수행할 수 있는 사용자를 알아봅니다. 또한 클라우드 프로그램 및 환경을 만드는 방법을 알아봅니다. |
+| 5 | [AEM에 Cloud Service 제품 프로필로 팀 구성원 할당](/help/onboarding/onboarding-journey/assign-team-members-aem-cloud-service.md) | 시스템 관리자가 Cloud Service 제품 프로필로 팀 구성원을 AEM에 할당하는 방법을 알아보십시오. |
+| 6 | [AEM 개발자 및 배포 관리자를 위한 학습 경로](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md) | 개발자로서 Cloud Manager Git에 액세스 및 관리할 수 있는 방법과 배포 관리자로서 Cloud Manager에서 파이프라인을 설정하고 코드를 배포할 수 있는 방법을 알아봅니다. |
+| 7 | [AEM 사용자를 위한 학습 경로](/help/onboarding/onboarding-journey/learning-path-aem-users.md) | AEM 작성자로서 AEM as a Cloud Service 인스턴스에 액세스하고 AEM as a Cloud Service용 컨텐츠를 작성하는 방법에 대해 알아봅니다. |
 
 ## 다음은 무엇입니까? {#what-is-next}
 
