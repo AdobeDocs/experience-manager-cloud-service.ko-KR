@@ -2,12 +2,12 @@
 title: 지원되는 파일 형식 및 MIME 유형
 description: ' [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]로 지원하는 파일 형식 및 MIME 유형입니다.'
 contentOwner: AG
-feature: 자산 관리,표현물
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 8%
 
 ---
@@ -159,7 +159,7 @@ ht-degree: 8%
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
 | RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
@@ -228,5 +228,5 @@ ht-degree: 8%
 >[!MORELIKETHIS]
 >
 >* [자산 마이크로서비스를 사용한 자산 처리](asset-microservices-overview.md)
-* [텍스트 기반 자산의 스마트 태그 지정을 위해 지원되는 파일 형식](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [텍스트 기반 자산의 스마트 태그 지정을 위해 지원되는 파일 형식](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 

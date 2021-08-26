@@ -1,12 +1,12 @@
 ---
 title: 컨텐츠 조각 모델
 description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기초로서 사용되는 방법과 구조화된 컨텐츠로 컨텐츠 조각을 생성하는 방법을 알아봅니다.
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
+source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2256'
 ht-degree: 24%
 
 ---
@@ -213,7 +213,6 @@ UniqueContent(특정 필드의 경우)는 현재 모델에서 생성된 모든 �
 AEM은 다음에 대한 되풀이 보호 기능을 제공합니다.
 * 컨텐츠 참조
 따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
-
 * GraphQL의 조각 참조
 서로 참조하는 여러 컨텐츠 조각을 반환하는 딥 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
@@ -284,6 +283,16 @@ type CompanyModel {
 >[!NOTE]
 재발방지 장치가 마련되었다. 따라서 사용자가 조각 참조에서 현재 컨텐츠 조각을 선택할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 참조하는 두 컨텐츠 조각에 딥 쿼리를 만들면 null을 반환합니다.
+
+## 컨텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
+
+컨텐츠 조각 모델의 **속성**&#x200B;을 편집할 수 있습니다.
+
+* **기본**
+   * **모델 제목**
+   * **태그**
+   * **설명**
+   * **이미지 업로드**
 
 ## 컨텐츠 조각 모델 활성화 또는 비활성화 {#enabling-disabling-a-content-fragment-model}
 
@@ -402,12 +411,28 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 1. 모델을 선택한 후 도구 모음에서 **게시 취소** 를 클릭합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
-## 컨텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-컨텐츠 조각 모델의 **속성**&#x200B;을 편집할 수 있습니다.
+This feature provides governance for Content Fragment Models that have been published. 
 
-* **기본**
-   * **모델 제목**
-   * **태그**
-   * **설명**
-   * **이미지 업로드**
+The challenge:
+
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+
+The solution:
+
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->

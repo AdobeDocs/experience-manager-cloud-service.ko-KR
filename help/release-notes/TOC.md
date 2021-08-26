@@ -1,13 +1,13 @@
 ---
-sub-product: AEM as a Cloud Service 릴리스 노트
+sub-product: Release Notes for AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service 릴리스 노트
 breadcrumb-title: 릴리스 노트
 user-guide-description: 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다.
-feature: 릴리스 정보
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9ef460d470ffc17966a2336fe46b60fd9d9759e7
+source-git-commit: 5ad46fe8478ac22d7a263ead24ea6dc13b158c67
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '121'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 96%
 + 릴리스 노트 {#release-notes}
    + [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [2021.7.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
       + [2021.6.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)
       + [2021.5.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-5-0.md)
       + [2021.4.0 릴리스 노트](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
