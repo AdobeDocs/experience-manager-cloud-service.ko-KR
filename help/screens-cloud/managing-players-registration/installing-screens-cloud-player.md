@@ -1,9 +1,9 @@
 ---
 title: Screens에서 Cloud Service으로 플레이어 설치 및 구성
 description: 이 페이지에서는 Screens에서 Cloud Service으로 플레이어를 설치하고 구성하는 방법을 설명합니다.
-source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
+source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,15 @@ AEM Screens 플레이어의 기본 재생 모니터링을 사용하여 다음을
 >|—|—|
 >|isContentRendering {boolean}|GPU에서 실제 컨텐츠 재생(픽셀 분석 기반)을 확인할 수 있는 경우 true|
 
+### 제한 사항 {#limitations}
+
+다음은 기본 재생 모니터링에 대한 몇 가지 제한 사항입니다.
+
+* 플레이어가 서버에 자체 재생 상태를 보고하므로 활성 연결이 필요합니다.
+
+* GPU를 확인하는 `isContentRendering` 속성은 기본적으로 활성화되도록 현재 리소스 사용량이 많으며 플레이어 환경 설정에서 명시적 옵트인이 필요합니다. 비디오와 함께 사용하지 않는 것이 좋습니다.
+
+* 시퀀스 채널에 대해 지원됩니다.
 
 ## 다음은 무엇입니까? {#whats-next}
 
