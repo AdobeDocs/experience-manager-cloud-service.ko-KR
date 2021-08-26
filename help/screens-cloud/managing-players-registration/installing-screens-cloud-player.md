@@ -1,9 +1,9 @@
 ---
 title: Screens에서 Cloud Service으로 플레이어 설치 및 구성
 description: 이 페이지에서는 Screens에서 Cloud Service으로 플레이어를 설치하고 구성하는 방법을 설명합니다.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,38 @@ ht-degree: 1%
    ![이미지](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. 클라우드 모드로 전환할 때 나타나는 **Confirm**&#x200B;을 클릭하면 플레이어 등록이 취소됩니다.
+
+## 기본 재생 모니터링 {#playback-monitoring}
+
+플레이어는 기본값인 각 `ping`이 30초로 설정된 다양한 재생 지표를 보고합니다. 이 지표를 기반으로 중단 경험, 빈 화면 및 예약 문제와 같은 다양한 에지 사례를 감지할 수 있습니다. 이렇게 하면 장치의 문제를 이해하고 해결할 수 있으므로 조사 및 해결 조치를 빠르게 수행할 수 있습니다.
+
+AEM Screens 플레이어의 기본 재생 모니터링을 사용하여 다음을 수행할 수 있습니다.
+
+* 플레이어가 제대로 컨텐츠를 재생하는지 원격 모니터링
+
+* 필드의 빈 화면 또는 끊어진 경험에 대한 반응성 개선
+
+* 최종 사용자에게 손상된 경험을 표시할 위험 감소
+
+### 속성 이해 {#understand-properties}
+
+다음 속성은 각 `ping`에 포함됩니다.
+
+| 속성 | 설명 |
+|---|---|
+| id {string} | 플레이어 식별자 |
+| activeChannel {string} | 현재 재생 중인 채널 경로이거나 예약된 항목이 없으면 null입니다. |
+| activeElements {string} | 쉼표로 구분된 문자열, 현재 표시된 모든 재생 시퀀스 채널에 요소(다중 영역 레이아웃의 경우 다중) |
+| isDefaultContent {boolean} | 재생 채널이 기본 또는 폴백 채널로 간주되는 경우 true(즉, 우선 순위 1이 있고 예약이 없는 경우) |
+| hasContentChanged {boolean} | 지난 5분 동안 내용이 변경된 경우 true이고, 그렇지 않으면 false입니다 |
+| lastContentChange {string} | 마지막 콘텐츠 변경 타임스탬프 |
+
+>[!NOTE]
+>선택적으로 플레이어 환경 설정(재생 모니터링 활성화)에서 더 많은 고급 속성을 활성화할 수 있으며, 이러한 속성은 다음과 같습니다.
+>|속성|설명|
+>|—|—|
+>|isContentRendering {boolean}|GPU에서 실제 컨텐츠 재생(픽셀 분석 기반)을 확인할 수 있는 경우 true|
+
 
 ## 다음은 무엇입니까? {#whats-next}
 
