@@ -3,9 +3,9 @@ title: Screens as a Cloud Service에 대한 축소판 지원
 description: 이 페이지에서는 Screens에서 비디오에 대한 축소판 지원을 Cloud Service으로 추가하는 방법을 설명합니다.
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ ht-degree: 0%
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. 비디오 구성 요소 속성을 편집합니다.
+1. 비디오를 선택하고 *렌치* 아이콘을 클릭하여 비디오 속성을 엽니다.
 
-1. 자산 선택기에서 축소판 그림 드롭 영역으로 이미지를 드래그합니다.
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. 채널을 미리 봅니다.
+1. **비디오** 대화 상자가 열리면 **축소판** 드롭 영역을 볼 수 있습니다.
 
-1. 비디오가 구성 요소에 설정된 경우 비디오가 재생됩니다. 축소판이 설정되어 있지 않으면 축소판이 재생됩니다. 그렇지 않으면 구성 요소가 구성되지 않은 것으로 간주되어 건너뜁니다
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. 자산 선택기에서 이미지를 **축소판 그림** 드롭 영역으로 끌어다 놓고 **완료**&#x200B;를 클릭합니다.
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. **미리 보기**&#x200B;를 클릭합니다.
+
+1. 비디오가 구성 요소에 설정된 경우 비디오가 재생됩니다. 축소판이 설정되어 있지 않으면 축소판이 재생됩니다. 그렇지 않으면 구성 요소가 구성되지 않은 것으로 간주되어 건너뜁니다.
 
 ## 비디오에서 축소판을 사용하는 동안 지원되는 사용 사례 {#understand-use-case}
 
