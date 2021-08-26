@@ -1,14 +1,14 @@
 ---
-sub-product: AEM as a Cloud Service로 이동
+sub-product: Move to AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service로 이동
 breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
-feature: 배포
+feature: Deploying
 role: Architect, Developer
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 53%
+source-wordcount: '130'
+ht-degree: 46%
 
 ---
 
@@ -47,3 +47,4 @@ ht-degree: 53%
    + [자산 워크플로우 마이그레이션](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher 변환기](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM 현대화 도구](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
++ [파트너를 위한 Experience Manager으로 마이그레이션 안내서](/help/move-to-cloud-service/getting-started.md)
