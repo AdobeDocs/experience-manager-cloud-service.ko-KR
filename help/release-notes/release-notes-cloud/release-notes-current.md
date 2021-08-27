@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
+source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1367'
 ht-degree: 2%
 
 ---
@@ -90,6 +90,24 @@ ht-degree: 2%
 * **응용 Forms용 Analytics**: 이제 Adobe Analytics for Adaptive Forms을 통해 최종 사용자 행동을 캡처하고 추적하여 최종 사용자 통찰력을 수집할 수 있습니다. 최종 사용자 경험을 향상시키기 위해 데이터를 기반으로 현명한 결정을 내릴 수 있습니다.
 
 * **AEM Forms과 Microsoft Dynamics 및 Salesforce.com을 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce.com용 기본 데이터 소스 구성 및 데이터 모델을 제공하므로 개발자가 Microsoft Dynamics 및 Salesforce.com을 적응형 양식의 데이터 소스로  [빠르고 쉽게 구성할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html).
+
+## [!DNL Cloud Service]로서의 [!DNL Screens] {#screens}
+
+### 새로운 기능 {#what-is-new-screens}
+
+* 이제 컨텐츠 작성자는 해당 이미지를 자리 표시자로 사용하고 실제 비디오가 적절한 팀이 종결하는 동안 컨텐츠 재생 및 타깃팅을 제대로 테스트할 수 있도록 비디오에 대한 축소판을 정의할 수 있습니다.
+자세한 내용은 [기본 재생 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)을 참조하십시오.
+
+* 의 비디오에 대한 축소판 지원은 이제 Screens에서 Cloud Service으로 지원됩니다. 컨텐츠 작성자는 해당 팀이 실제 비디오를 마무리하는 동안 이미지를 자리 표시자로 사용하고 컨텐츠 재생 및 타깃팅을 적절히 테스트할 수 있도록 비디오의 축소판을 정의할 수 있습니다. 비디오를 재생하지 못할 경우에 이미지를 사용할 수도 있습니다.
+
+### 버그 수정 {#bug-fixes-screens}
+
+* 플레이어가 포함된 페이지의 콘텐츠를 표시할 수 없으며 이 문제가 해결되었습니다.
+
+* 성공적으로 로그인하면 기본 페이지(채널)로 이동한 후 내부 서버 오류 페이지로 끝납니다.
+
+* 재생 목록을 제거할 때 연결된 태그 항목이 제거되지 않았습니다.
+
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
