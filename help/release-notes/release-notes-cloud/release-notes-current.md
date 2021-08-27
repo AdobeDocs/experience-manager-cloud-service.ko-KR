@@ -3,7 +3,7 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
+source-git-commit: 2451a29b71b113f28ffc00737ed825381dd5ad07
 workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 2%
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 * **AEM Forms과 Microsoft Dynamics 및 Salesforce.com을 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce.com용 기본 데이터 소스 구성 및 데이터 모델을 제공하므로 개발자가 Microsoft Dynamics 및 Salesforce.com을 적응형 양식의 데이터 소스로  [빠르고 쉽게 구성할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html).
 
-## [!DNL Cloud Service]로서의 [!DNL Screens] {#screens}
+## [!DNL Cloud Service]로서의 [!DNL Experience Manager Screens] {#screens}
 
 ### 새로운 기능 {#what-is-new-screens}
 
