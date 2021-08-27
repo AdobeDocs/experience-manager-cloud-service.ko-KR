@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1197'
 ht-degree: 2%
 
 ---
@@ -62,19 +62,34 @@ ht-degree: 2%
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* automated forms conversion 서비스는 [PDF forms을 이탈리아어 및 포르투갈어](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)로 변환하여 응용 Forms으로 변환할 수 있습니다.
+<!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
+
+* 이제 Cloud Service 로서 Forms용 AEM Archetype 프로젝트에는 [Canvas 3.0 테마 및 Microsoft Dynamics 및 Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)용 양식 데이터 모델이 포함됩니다.
 
 * **Acrobat 기반 레코드 문서**: AEM Forms as a Cloud Service은 XFA 기반 양식 템플릿 외에  [Adobe Acrobat 양식 PDF(Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 를 기록 문서 템플릿으로 사용할 수 있도록 지원합니다.
 
 * **Microsoft Azure 데이터 저장소 커넥터**: 이제 양식 데이터 모델을  [Microsoft Azure 저장소에 연결할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). 적응형 양식 데이터를 검색하고 BLOB으로 Microsoft Azure 저장소에 저장할 수 있습니다.
 
+### [!DNL Forms] 베타 기능 {#aug-what-is-new-forms-prerelease}
+
+* **Unified Storage Connector:** Unified Storage Connector를 사용하여 고객 관리 리포지토리에서 처리 중인 데이터를 외부화합니다. 예를 들어 다음 작업을 수행할 수 있습니다.
+   * Forms Portal의 저장 및 재개 기능을 활성화하고 고객 관리 데이터 저장소에 적응형 양식 초안을 저장합니다.
+   * 고객 관리 저장소에 SPD(중요 개인 데이터)가 포함된 처리 중인 AEM 워크플로우 데이터(AEM Workflow 변수 데이터)를 저장합니다.
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIshelp에서는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성합니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
+   * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
+   * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
+   * XFA 양식 PDF 및 Adobe Acrobat 양식에서 인쇄 PDF 파일을 생성합니다.
+
+[!DNL formscsbeta@adobe.com]에 작성하여 베타 프로그램에 등록할 수 있습니다.
+
 ### [!DNL Forms] 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
-* **적응형 양식에서 Adobe Sign 역할 사용**: 비즈니스 및 엔터프라이즈 서비스 수준용 Adobe Sign은 서명자 외에 계약 수신자의 역할을 확장하여 워크플로우 요구 사항에 보다 잘 부합할 수 있는 옵션을 제공합니다. 이제 각 동의 수신자가 적응형 양식에서 자신의 역할을 구성할 수 있도록 설정할 수 있으며, 서명자가 기본 역할입니다.
+* **적응형 양식에서 Adobe Sign 역할 사용**: 비즈니스 및 엔터프라이즈 서비스 수준용 Adobe Sign은 서명자 외에 계약 수신자의 역할을 확장하여 워크플로우 요구 사항에 보다 잘 부합할 수 있는 옵션을 제공합니다. 이제 [계약의 각 수신자가 적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform)에서 자신의 역할을 구성할 수 있도록 설정할 수 있으며, 서명자가 기본 역할입니다.
 
 * **응용 Forms용 Analytics**: 이제 Adobe Analytics for Adaptive Forms을 통해 최종 사용자 행동을 캡처하고 추적하여 최종 사용자 통찰력을 수집할 수 있습니다. 최종 사용자 경험을 향상시키기 위해 데이터를 기반으로 현명한 결정을 내릴 수 있습니다.
 
-* **AEM Forms과 Microsoft Dynamics 및 Salesforce.com을 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce.com용 기본 데이터 소스 구성 및 데이터 모델을 제공하므로 개발자가 적응형 양식의 데이터 소스로 Microsoft Dynamics 및 Salesforce.com을 보다 빠르고 쉽게 구성할 수 있습니다.
+* **AEM Forms과 Microsoft Dynamics 및 Salesforce.com을 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce.com용 기본 데이터 소스 구성 및 데이터 모델을 제공하므로 개발자가 Microsoft Dynamics 및 Salesforce.com을 적응형 양식의 데이터 소스로  [빠르고 쉽게 구성할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html).
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
