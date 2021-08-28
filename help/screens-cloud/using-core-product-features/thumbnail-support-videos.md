@@ -2,9 +2,9 @@
 title: Screens as a Cloud Service에 대한 축소판 지원
 description: 이 페이지에서는 Screens에서 비디오에 대한 축소판 지원을 Cloud Service으로 추가하는 방법을 설명합니다.
 index: true
-source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
+source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 * 장치에서 재생 문제가 발생할 경우 대체 메커니즘을 설정하십시오.
 
 ## 비디오에서 축소판 사용 {#using-thumbnails}
+
+>[!IMPORTANT]
+>**전제 조건**
+>비디오에 축소판을 사용하는 방법을 학습하기 전에 Screens에서 Cloud Service 프로젝트로 채널에 대한 비디오 표현물을 만드는 방법을 학습하십시오. 자세한 내용은 [여기](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)를 참조하십시오.
 
 비디오에서 축소판을 사용하려면 아래 절차를 따르십시오.
 
@@ -68,6 +72,6 @@ ht-degree: 0%
 
 * 축소판 그림이 설정된 비디오 구성 요소만 축소판 그림을 재생합니다.
 
-* 비디오와 축소판 그림이 모두 설정된 비디오 구성 요소가 비디오를 재생합니다.
+* 비디오가 올바르게 표현된 경우 비디오와 축소판 세트가 모두 포함된 비디오 구성 요소는 비디오를 재생합니다.
 
 * 비디오 세트가 있는 비디오 구성 요소는 재생 오류가 발생할 경우 축소판을 재생하거나 축소판이 구성되지 않은 경우 다음 항목으로 건너뜁니다.
