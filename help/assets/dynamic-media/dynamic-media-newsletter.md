@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media 뉴스레터 아카이브
 description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스레터입니다. Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다. 이 원스톱 상점 뉴스레터에서 유용한 지식 구축 리소스를 이용할 수 있습니다. 예를 들어 방법 비디오 및 솔루션 개요 가 있습니다. 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 몇 가지 주요 기능과 성능에 대해 알아보십시오. '
-feature: 자산 관리
+feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 디지털 자산을 보호하는 웨비나에 대해 알아봅니다.
    * 다음은 정보가 채워진 Adobe 인사이더 투어의 다음 정류장입니다.
    * Experience Manager 자산(Experience Manager 자산) 내에 Dynamic Media이 있을 때 사용할 수 있는 흥미로운 기능입니다.
-   * 웹 사이트에 360도 비디오 및 사용자 정의 비디오 축소판 추가
+   * 웹 사이트에 360° 비디오 및 사용자 정의 비디오 축소판 추가
    * Experience Manager Assets 내에서 Dynamic Media의 주요 솔루션 컨설턴트인 `Andrew Hathaway` 을 만나보십시오.
 
 * **[2019년 6월, 2016년 6월](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**

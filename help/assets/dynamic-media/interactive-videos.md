@@ -1,12 +1,12 @@
 ---
 title: 대화형 비디오
 description: Dynamic Media에서 대화형 비디오 및 쇼퍼블 비디오를 사용하여 작업하는 방법을 알아봅니다.
-feature: 대화형 비디오
+feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '5941'
+source-wordcount: '5938'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 * 재생 중에 제품이 비디오에 사용되므로 동일한 제품이 축소판 이미지로 오른쪽에 나타납니다.
 
-* 비디오를 일시 중지하고 제품의 Quickview를 열려면 축소판을 선택합니다. 예를 들어, 비디오에서 KitchenAid 축소판 이미지를 선택하여 믹서의 360도 회전 보기를 경험하거나 확대하여 혼합 세부 정보를 확인합니다.
+* 비디오를 일시 중지하고 제품의 Quickview를 열려면 축소판을 선택합니다. 예를 들어, 비디오에서 KitchenAid 축소판 이미지를 선택하여 믹서의 360° 스핀 보기를 경험하거나 확대하면 혼합 세부 정보를 볼 수 있습니다.
 
 또한 [Dynamic Media에서 대화형 비디오 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)을 참조하십시오
 
@@ -99,8 +99,7 @@ Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo
 >* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->*
 
 >
->
-Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
+>Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
 먼저 기존 Quickview 구현에서 사용하는 동적 변수를 식별하여 대화형 비디오 작성 프로세스 동안 제품 축소판을 해당 제품 Quickview에 매핑할 수 있습니다.
 

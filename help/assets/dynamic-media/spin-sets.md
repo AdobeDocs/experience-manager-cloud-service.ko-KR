@@ -1,12 +1,12 @@
 ---
 title: 스핀 세트
 description: Dynamic Media에서 스핀 세트를 사용하는 방법을 알아봅니다.
-feature: 스핀 세트
+feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1815'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->스핀 세트 물질에 이미지가 표시되는 순서입니다. 회전이 매끄러운 360도 경사가 되도록 반드시 주문하십시오.
+>스핀 세트 물질에 이미지가 표시되는 순서입니다. 회전 방향이 매끄러운 360° 보기라면 반드시 주문하십시오.
 
 **스핀 세트를 생성하려면**
 
