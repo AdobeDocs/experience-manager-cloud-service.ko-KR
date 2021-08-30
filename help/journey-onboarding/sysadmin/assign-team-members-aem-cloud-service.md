@@ -1,10 +1,9 @@
 ---
 title: 'AEM에 Cloud Service 제품 프로필로 팀 구성원 할당 '
 description: 팀 구성원을 AEM as a Cloud Service 제품 프로필로 할당하는 방법을 알려면 이 페이지를 따르십시오
-hide: true
 index: false
 role: Admin, User, Developer
-source-git-commit: c7f8ef3b1bb120d393118f41a21c55b52bf023e9
+source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 2%

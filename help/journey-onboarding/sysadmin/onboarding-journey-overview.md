@@ -1,10 +1,9 @@
 ---
 title: 온보딩 여정
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
-hide: true
 index: false
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 1%
