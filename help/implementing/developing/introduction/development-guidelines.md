@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
+source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -23,11 +23,11 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 클러스터에서 기본 인스턴스를 식별해야 하는 경우 Apache Sling Discovery API를 사용하여 이를 감지할 수 있습니다.
 
-## 메모리의 상태 {#state-in-memory}
+## 메모리 상태 {#state-in-memory}
 
 상태는 메모리에 유지되지 않고 리포지토리에 있어야 합니다. 그렇지 않으면 인스턴스가 중지되면 이 상태가 손실될 수 있습니다.
 
-## 파일 시스템 {#state-on-the-filesystem}의 상태
+## 파일 시스템의 상태 {#state-on-the-filesystem}
 
 인스턴스의 파일 시스템은 AEM에서 Cloud Service으로 사용해서는 안 됩니다. 디스크가 사용 후 삭제되며 인스턴스가 재생될 때 삭제됩니다. 단일 요청 처리와 관련된 임시 스토리지에 파일 시스템을 제한적으로 사용할 수는 있지만 대규모 파일에 대해서는 악용되어서는 안 됩니다. 이는 리소스 사용 할당량에 부정적인 영향을 미쳐 디스크 제한 사항이 발생할 수 있기 때문입니다.
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 ## 관찰 {#observation}
 
-마찬가지로, 관찰 이벤트에 대한 동작과 같이 비동기적으로 발생하는 모든 것이므로 로컬에서 실행할 수 없으므로 주의하여 사용해야 합니다. JCR 이벤트 및 Sling 리소스 이벤트 모두에 대해 적용됩니다. 변경 시 인스턴스가 삭제되어 다른 인스턴스로 대체될 수 있습니다. 해당 시점에서 활성화된 토폴로지의 다른 인스턴스는 해당 이벤트에 응답할 수 있습니다. 그러나 이 경우 지역 행사가 아니며, 행사가 있을 때 진행 중인 지도자 선거에도 현역 지도자가 없을 수도 있습니다.
+마찬가지로, 관찰 이벤트에 대한 동작과 같이 비동기적으로 발생하는 모든 것이므로 로컬에서 실행할 수 없으므로 주의하여 사용해야 합니다. JCR 이벤트 및 Sling 리소스 이벤트 모두에 대해 적용됩니다. 변경 시 인스턴스가 삭제되어 다른 인스턴스로 대체될 수 있습니다. 해당 시점에서 활성화된 토폴로지의 다른 인스턴스는 해당 이벤트에 응답할 수 있습니다. 그러나 이 경우 지역 행사가 아니며, 행사가 있을 때 진행 중인 지도자 선거에서도 어떠한 활성 지도자도 없을 수도 있습니다.
 
 ## 백그라운드 작업 및 장기 실행 작업 {#background-tasks-and-long-running-jobs}
 
@@ -63,11 +63,11 @@ Adobe은 HTTP 연결을 만들려면 제공된 [Apache HttpComponents Client 4.x
 
 AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합니다. 클래식 UI는 사용자 지정에 사용할 수 없습니다.
 
-## 네이티브 바이너리 방지 {#avoid-native-binaries}
+## 기본 바이너리 방지 {#avoid-native-binaries}
 
 코드가 런타임에 바이너리를 다운로드하거나 수정할 수 없습니다. 예를 들어 `jar` 또는 `tar` 파일의 압축을 풀 수 없습니다.
 
-## AEM을 Cloud Service {#no-streaming-binaries}으로 통해 바이너리가 스트리밍되지 않음
+## AEM을 Cloud Service으로 통한 스트리밍 바이너리 없음 {#no-streaming-binaries}
 
 코어 AEM 서비스 외부의 바이너리를 제공하는 CDN을 통해 바이너리에 액세스해야 합니다.
 
@@ -87,7 +87,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 로컬 개발의 경우 로그 항목이 `/crx-quickstart/logs` 폴더의 로컬 파일에 기록됩니다.
 
-클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다.<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **로그 수준 설정**
 
@@ -189,7 +189,7 @@ Adobe은 응용 프로그램 성능을 모니터링하고 노후화가 확인되
 
 다음은 코드 샘플입니다.
 
-```
+```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
@@ -203,6 +203,26 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
+일부 라이브러리는 프록시 구성에 표준 Java 시스템 속성을 사용하려면 명시적 구성이 필요합니다.
+
+에 대한 명시적 호출이 필요한 Apache HttpClient를 사용하는 예
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) 또는
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
 동일한 전용 IP는 Adobe 조직의 모든 고객 프로그램과 각 프로그램의 모든 환경에 적용됩니다. 이것은 작성자 및 게시 서비스 모두에 적용됩니다.
 
 HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 HTTP/1.1과 암호화 시 HTTP/2가 포함됩니다.
@@ -211,7 +231,7 @@ HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 HTTP/1.1과 암호화 시
 
 예상되는 전용 IP 주소에서 트래픽이 실제로 전송되는지 확인하려면 대상 서비스의 로그(사용 가능한 경우)를 확인하십시오. 그렇지 않으면 호출 IP 주소를 반환하는 [https://ifconfig.me/ip](https://ifconfig.me/ip) 등의 디버깅 서비스를 호출하는 것이 유용할 수 있습니다.
 
-## 전자 메일 보내기 {#sending-email}
+## 이메일 보내기 {#sending-email}
 
 AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 아래 섹션에서는 이메일을 요청, 구성 및 전송하는 방법을 설명합니다.
 
@@ -256,6 +276,6 @@ AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experiencel
 
 `smtp.starttls` 속성은 런타임 시 AEM에서 적절한 값으로 자동으로 Cloud Service으로 설정됩니다. 따라서 `smtp.tls`이 true로 설정된 경우 `smtp.startls`은 무시됩니다. `smtp.ssl`이 false로 설정된 경우 `smtp.starttls`이 true로 설정됩니다. 이는 OSGI 구성에 설정된 `smtp.starttls` 값에 관계없이 적용됩니다.
 
-## [!DNL Assets] 개발 지침 및 사용 사례  {#use-cases-assets}
+## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 
 Assets as a Cloud Service에 대한 개발 사용 사례, 권장 사항 및 참조 자료에 대해 알아보려면 [Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)에 대한 개발자 참조 를 참조하십시오.
