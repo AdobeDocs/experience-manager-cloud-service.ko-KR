@@ -5,7 +5,7 @@ breadcrumb-title: 온보딩 여정
 user-guide-description: 시스템 관리자 사용자에 맞게 디자인된 안내가 있는 여정에 대해 여기에서 요구 사항, 단계 및 접근 방법을 설명합니다. 여정은 성공적인 프로젝트를 위해 시스템 관리자가 상호 작용해야 하는 추가 가상 사용자를 정의하지만 여정의 관점은 관리자의 것입니다.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 673340ba6e33daca2b1a371286ec38d6eaaca461
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# 온보딩 여정 {#onboarding-journey}
+# 온보딩 여정 {#journey-onboarding}
 
 + [온보딩 여정](/help/journey-onboarding/home.md)
 + 온보딩 여정 {#onboarding} 탐색
