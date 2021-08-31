@@ -24,7 +24,7 @@ ht-degree: 42%
    + [Cloud Manager 소개](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe 지원](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [온보딩 여정 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target=&quot;_blank&quot;}
++ [온보딩 여정 안내서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target="_blank"}
 + AEM as a Cloud Service {#what-is-required} 시작하기
    + [Adobe ID 가져오기](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager 역할](what-is-required/user-roles-permissions.md)
