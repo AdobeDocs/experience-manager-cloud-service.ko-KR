@@ -4,9 +4,9 @@ description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 | # | 기사 | 설명 |
 |---|---|---|
 | 0 | 온보딩 여정 | 이 문서 |
-| 1 | <br>[시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Adobe ID 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[Cloud Service 팀으로서 AEM 및 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobe 지원에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en)<br>[ | 온보딩 개념에 대해 알아봅니다. |
+| 1 | <br>[시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en){target=&quot;_blank&quot;}<br>[Adobe Identity Management 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en){target=&quot;_blank&quot;}<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Cloud Service 팀으로서 Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM 및 제품 프로필<br>[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en)Adobe13/> 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en) | 온보딩 개념에 대해 알아봅니다. |
 | 2 | [온보딩 시작하기](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md) | Admin Console에 로그인하고 시스템 관리자로 프로파일을 확인하는 방법에 대해 알아봅니다 |
 | 3 | [Cloud Manager 제품 프로필에 팀 구성원 할당](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) | Cloud Manager 제품 프로필을 검토하고 팀 구성원을 Cloud Manager 제품 프로필에 할당하는 방법을 알아보십시오. |
 | 4 | [Cloud Manager를 통해 Cloud 리소스 설정](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md) | 클라우드 리소스를 만드는 방법과 이를 수행할 수 있는 사용자를 알아봅니다. 또한 클라우드 프로그램 및 환경을 만드는 방법을 알아봅니다. |
