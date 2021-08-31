@@ -1,7 +1,7 @@
 ---
 title: 온보딩 여정
 description: 온보딩 경험을 이해하는 데 사용할 수 있는 안내 온보딩 여정에 대한 개요를 살펴보려면 여기에서 시작하십시오.
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: 39dda310bbe3ca0a47e8d38f18200351730a5b4e
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 1%
