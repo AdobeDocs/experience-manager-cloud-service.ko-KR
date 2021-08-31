@@ -4,9 +4,9 @@ description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,12 @@ Admin Console에서 시스템 관리자 역할을 Admin Console 및 검토하려
 >[!NOTE]
 >다음 단계를 성공적으로 완료하려면 시스템 관리자여야 합니다.
 
-1. 시작 이메일에서 **시작**&#x200B;을 클릭하여 Admin Console으로 이동하거나 [여기](https://adminconsole.adobe.com)에서 Admin Console으로 직접 이동합니다.
+1. 아래 그림과 같이 시작 이메일에서 **시작**&#x200B;을 클릭하여 Admin Console으로 이동하거나 [여기](https://adminconsole.adobe.com)에서 Admin Console으로 직접 이동합니다.
 
    >[!NOTE]
    >시스템 관리자는 여러 개의 이메일을 받게 됩니다. 액세스 권한이 부여된 조직 이름에 대한 정보를 제공하는 환영 이메일을 찾아 **시작하기**&#x200B;를 클릭합니다. 이메일을 찾을 수 없는 경우 [Admin Console](https://adminconsole.adobe.com/)로 직접 이동합니다.
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)을 사용하여 로그인합니다. 로그인하면 아래와 같이 Adobe Admin Console의 **개요** 페이지가 표시됩니다.
 
