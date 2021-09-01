@@ -4,30 +4,14 @@ description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
+source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
 
 # 온보딩 여정 {#onboarding-jourrney}
-
-AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기셔서 매우 기쁘게 생각하며 온보딩 여정을 시작할 때까지 기다릴 수 없습니다. 새 응용 프로그램을 배포하거나 기존 응용 프로그램을 마이그레이션하는 경우 이 안내서는 팀이 설정되고 AEM as a Cloud Service에 액세스할 수 있도록 하는 시작점 역할을 합니다.
-
-## 소개 {#introduction}
-
-이 안내서에서는 가장 중요한 주제를 안내하여 완료되면 다음과 같은 내용을 볼 수 있습니다.
-
-* AEM as a Cloud Service 온보딩 여정 동안 예상되는 사항에 대한 전체 이해
-* 팀을 활성화하여 실행 중이며 AEM용 컨텐츠를 Cloud Service 애플리케이션으로서 작성 및 개발하는 방법을 학습하는 첫 번째 단계를 수행할 수 있습니다.
-
-이것의 의미는 다음과 같습니다.
-
-* 팀이 설정되고 클라우드 리소스에 대한 액세스 권한이 있습니다.
-* AEM 작성자는 AEM as a Cloud Service에 액세스할 수 있습니다.
-* AEM 개발자 및 배포 관리자는 AEM as a Cloud Service에 액세스할 수 있습니다.
-
 
 ## 온보딩 경험 {#audience}
 
