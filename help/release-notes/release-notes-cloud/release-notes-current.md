@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1ae9a03c76e6ef1e84ac9f3402c1e48b07fdac8c
+source-git-commit: f2c0b3cca634b10b1b39532465968619d53b4e65
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1427'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 2%
 
 ### 새로운 기능 {#what-is-new-screens}
 
-* 이제 컨텐츠 작성자는 해당 이미지를 자리 표시자로 사용하고 실제 비디오가 적절한 팀이 종결하는 동안 컨텐츠 재생 및 타깃팅을 제대로 테스트할 수 있도록 비디오에 대한 축소판을 정의할 수 있습니다.
+* 이제 스크린으로서 Cloud Service은 기본 재생 모니터링을 지원합니다. 이제 플레이어에서 각 &quot;ping&quot;(기본값 30초)을 사용하여 다양한 재생 지표를 보고합니다. 지표를 기반으로 다양한 에지 사례(멈춤 경험, 빈 화면, 예약 문제 등)를 탐지하는 기능을 제공합니다. 이 기능을 사용하면 팀이 플레이어가 제대로 컨텐츠를 재생하는지 원격으로 모니터링할 수 있고, 필드의 빈 화면이나 손상된 경험에 대한 반응성을 개선하여 최종 사용자에게 손상된 경험을 표시할 위험을 줄일 수 있습니다.
 자세한 내용은 [기본 재생 모니터링](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)을 참조하십시오.
 
 * 의 비디오에 대한 축소판 지원은 이제 Screens에서 Cloud Service으로 지원됩니다. 컨텐츠 작성자는 해당 팀이 실제 비디오를 마무리하는 동안 이미지를 자리 표시자로 사용하고 컨텐츠 재생 및 타깃팅을 적절히 테스트할 수 있도록 비디오의 축소판을 정의할 수 있습니다. 비디오를 재생하지 못할 경우에 이미지를 사용할 수도 있습니다.
