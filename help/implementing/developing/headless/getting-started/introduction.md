@@ -1,23 +1,29 @@
 ---
 title: 헤드리스 시작 안내서
 description: 이 빠른 시작 안내서를 사용하면 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 Cloud Service의 강력한 헤드리스 기능으로서 AEM의 핵심 사항을 살펴볼 수 있습니다.
-source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
+exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 5%
+source-wordcount: '308'
+ht-degree: 4%
 
 ---
 
-
 # 헤드리스 시작 안내서 {#introduction}
 
-헤드리스 시작 안내서는 AEM을 Cloud Service으로 사용하여 경험을 만들고, 관리하고, 제공하기 위한 간단한 경로를 5단계로 설명합니다. 각 안내서는 이전 페이지를 기반으로 빌드되므로 철저하게 순서대로 탐색하는 것이 좋습니다.
+헤드리스 시작 안내서에서는 AEM 및 헤드리스 기술에 이미 익숙한 사용자를 위해 5단계 단위로 AEM을 Cloud Service으로 사용하여 경험을 만들고, 관리하고 제공하기 위한 간단한 경로를 설명합니다. 각 안내서는 이전 페이지를 기반으로 빌드되므로 철저하게 순서대로 탐색하는 것이 좋습니다.
 
 1. [구성 만들기](create-configuration.md)
 1. [컨텐츠 조각 모델 만들기](create-content-model.md)
 1. [자산 폴더 만들기](create-assets-folder.md)
 1. [컨텐츠 조각 만들기](create-content-fragment.md)
 1. [컨텐츠 조각 액세스 및 제공](create-api-request.md)
+
+>[!TIP]
+>
+>이 시작 안내서에서는 AEM 및 헤드리스 기술에 대한 지식을 가정합니다.
+>
+>AEM 또는 헤드리스를 처음 사용하는 경우, 헤드리스 및 AEM이 지원하는 방법에 대한 전체 소개는 [헤드리스 설명서 여정](/help/journey-headless/home.md)를 참조하십시오.
 
 ## 속성을 확인하는 {#audience}
 
@@ -33,4 +39,4 @@ ht-degree: 5%
 
 ## 다음 단계 {#next-step}
 
-추가 정보 제공 그런 다음 헤드리스 시작 안내서의 첫 부분을 읽고 시작하십시오.[구성 만들기](create-configuration.md)
+추가 정보 제공 그런 다음 헤드리스 시작 안내서의 첫 부분을 읽고 시작하십시오. [구성 만들기](create-configuration.md)

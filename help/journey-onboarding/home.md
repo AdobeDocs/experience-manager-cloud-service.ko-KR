@@ -1,9 +1,9 @@
 ---
 title: 온보딩 여정
 description: 온보딩 경험을 이해하는 데 사용할 수 있는 안내 온보딩 여정에 대한 개요를 살펴보려면 여기에서 시작하십시오.
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,14 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 여기�
 * 팀이 설정되고 클라우드 리소스에 대한 액세스 권한이 있습니다.
 * AEM 작성자는 AEM as a Cloud Service에 액세스할 수 있습니다.
 * AEM 개발자 및 배포 관리자는 AEM as a Cloud Service에 액세스할 수 있습니다.
+
+## AEM 설명서 여정 {#documentation-journeys}
+
+[설명서 ](/help/journey-documentation/home.md) 여정은 AEM에 대해 새로운 지식을 가진 독자가 처음부터 끝까지 비즈니스 문제를 이해하고 해결하는 데 도움이 되는 스토리를 제공함으로써, 많은 다양한 주제 및 복잡한 주제를 함께 연결합니다. 단, 이전 주제나 AEM 지식이 거의 없습니다.
+
+설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험, 고객 프로젝트의 피드백을 통해 우수 사례 원칙을 중심으로 설계되었습니다.
+
+Adobe이 팀을 Cloud Service 애플리케이션으로 시작하고 실행하는 AEM 컨텐츠를 만드는 방법을 권장하는 방법을 알아보려면 이 위치에서 시작해야 합니다.
 
 ## 대상자 {#audiences}
 

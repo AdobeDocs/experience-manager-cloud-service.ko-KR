@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 모델링 기본 사항 학습
 description: 컨텐츠 조각을 사용하여 헤드리스 CMS용 컨텐츠를 모델링하는 기본 사항을 알아봅니다.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 4%

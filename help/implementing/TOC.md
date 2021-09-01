@@ -1,13 +1,13 @@
 ---
-sub-product: AEM as a Cloud Service용 구현
+sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service용 구현
 breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
-feature: 개발자 도구
+feature: Developer Tools
 role: Developer, Architect
-source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1033'
 ht-degree: 44%
 
 ---
@@ -144,7 +144,7 @@ ht-degree: 44%
       + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
    + 헤드리스 환경 관리 {#headless}
       + [헤드리스 및 AEM](developing/headless/introduction.md)
-      + [헤드리스 개발자 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+      + [헤드리스 설명서 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
       + 시작 안내서 {#getting-started}
          + [소개](developing/headless/getting-started/introduction.md)
          + [구성 만들기](developing/headless/getting-started/create-configuration.md)

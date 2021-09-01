@@ -1,13 +1,13 @@
 ---
 title: AEM Headless Content Architect 여정
 description: AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보십시오.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 1fb3665007439940617c48fd61de7a7c19aee8d2
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '789'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +27,14 @@ AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 헤드리스 �
 * 헤드리스 콘텐츠 전달의 정의와 그 이점에 대해 이해합니다.
 * AEM 헤드리스 기능에 대한 컨텐츠를 모델링하는 방법을 이해합니다.
 * 첫 번째 AEM 헤드리스 프로젝트에 대한 컨텐츠를 모델링하는 첫 번째 단계를 수행할 수 있습니다.
+
+## AEM 설명서 여정 {#documentation-journeys}
+
+[설명서 ](/help/journey-documentation/home.md) 여정은 AEM에 대해 새로운 지식을 가진 독자가 처음부터 끝까지 비즈니스 문제를 이해하고 해결하는 데 도움이 되는 스토리를 제공함으로써, 많은 다양한 주제 및 복잡한 주제를 함께 연결합니다. 단, 이전 주제나 AEM 지식이 거의 없습니다.
+
+설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험, 고객 프로젝트의 피드백을 통해 우수 사례 원칙을 중심으로 설계되었습니다.
+
+AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 권장하는 방법을 알아보려면 [AEM 헤드리스 여정](/help/journey-headless/home.md)이 시작되는 위치입니다.
 
 ## 속성을 확인하는 {#audience}
 

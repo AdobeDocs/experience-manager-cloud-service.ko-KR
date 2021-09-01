@@ -1,10 +1,10 @@
 ---
 title: 작성 기본 사항 학습
 description: 컨텐츠 조각을 사용하여 헤드리스 CMS용 컨텐츠를 작성하는 개념과 역학에 대해 알아봅니다.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 5%

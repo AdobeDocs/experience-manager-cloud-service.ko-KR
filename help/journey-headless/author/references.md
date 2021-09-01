@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 조각에서 참조 사용에 대해 알아봅니다
 description: 컨텐츠 조각, 컨텐츠, 기타 조각 및 기타 자산(미디어)에 대한 참조를 사용하는 방법에 대해 알아봅니다. 헤드리스 CMS 작성을 위한 중첩된 조각의 필요성 및 역학을 소개합니다.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 4%

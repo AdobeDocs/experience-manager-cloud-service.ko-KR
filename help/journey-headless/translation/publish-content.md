@@ -1,10 +1,10 @@
 ---
 title: 번역된 컨텐츠 게시
 description: 번역된 콘텐츠를 게시하고 번역을 콘텐츠 업데이트로 업데이트하는 방법을 알아봅니다.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 0%

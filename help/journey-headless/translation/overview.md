@@ -1,10 +1,10 @@
 ---
 title: AEM 헤드리스 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 헤드리스 콘텐츠를 번역하여 안내식 여정을 살펴보려면 여기에서 시작하십시오.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 9de8b0b295808d0f0fa5bc21a74345e2ba2655d4
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 1%
@@ -38,7 +38,7 @@ AEM의 강력한 번역 도구를 사용하여 헤드리스 콘텐츠를 번역�
 
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험, 고객 프로젝트의 피드백을 통해 우수 사례 원칙을 중심으로 설계되었습니다.
 
-AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 권장하는 방법을 알아보려면 AEM 헤드리스 여정이 시작되는 곳입니다.
+AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 권장하는 방법을 알아보려면 [AEM 헤드리스 여정](/help/journey-headless/home.md)이 시작되는 위치입니다.
 
 ## 속성을 확인하는 {#audience}
 
