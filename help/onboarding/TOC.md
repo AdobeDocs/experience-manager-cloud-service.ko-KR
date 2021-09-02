@@ -5,10 +5,10 @@ breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 7d95c29656fb0d7d54f200546f8b5b664c7f12fd
+source-git-commit: 90ed13a2d86611aeb709f8e8f0d75aeb8dbd97dd
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 43%
+source-wordcount: '110'
+ht-degree: 44%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 43%
    + [시스템 관리자](/help/onboarding/learn-concepts/system-administrator.md)
    + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
    + [Identity Management 시스템 Adobe](/help/onboarding/learn-concepts/ims.md)
+   + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
    + [Cloud Manager 소개](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobe 지원](/help/onboarding/learn-concepts/onboarding-help-resources.md)
