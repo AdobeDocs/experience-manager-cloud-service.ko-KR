@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1531'
 ht-degree: 1%
 
 ---
@@ -40,10 +40,12 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
    ```
 
-   전역 캐시 제어 헤더 또는 광범위한 정규식과 일치하는 헤더를 설정하여 비공개로 유지할 콘텐츠에 적용하지 않도록 주의하십시오. 여러 지시어를 사용하여 규칙이 세밀하게 적용되도록 합니다. 이와 같이 사용하면, AEM as a Cloud Service에서 디스패처 설명서에 설명된 대로 디스패처가 사용할 수 없음을 감지하는 것에 적용된 것을 감지하면 캐시 헤더를 제거합니다. AEM에서 항상 캐싱을 적용하려면 다음과 같이 &quot;always&quot; 옵션을 추가할 수 있습니다.
+   전역 캐시 제어 헤더 또는 광범위한 정규식과 일치하는 헤더를 설정하여 비공개로 유지할 콘텐츠에 적용하지 않도록 주의하십시오. 여러 지시어를 사용하여 규칙이 세밀하게 적용되도록 합니다. 이와 같이 사용하면, AEM as a Cloud Service에서 디스패처 설명서에 설명된 대로 디스패처가 사용할 수 없음을 감지하는 것에 적용된 것을 감지하면 캐시 헤더를 제거합니다. AEM에서 항상 캐싱 헤더를 강제 적용하기 위해 다음과 같이 **always** 옵션을 추가할 수 있습니다.
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
+        Header unset Cache-Control
+        Header unset Expires
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -56,11 +58,13 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 특정 콘텐츠가 캐시되지 않도록 하려면 Cache-Control 헤더를 *private*&#x200B;로 설정하십시오. 예를 들어, 다음 작업으로 인해 **myfolder** 디렉터리에 있는 html 콘텐츠가 캐시되지 않습니다.
+* 특정 콘텐츠가 캐시되지 않도록 하려면 Cache-Control 헤더를 *private*&#x200B;로 설정하십시오. 예를 들어, 다음 경우 **secure** 디렉토리 아래의 html 컨텐츠가 캐시되지 않도록 합니다.
 
    ```
-      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
-      Header set Cache-Control “private”
+      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+      Header unset Cache-Control
+      Header unset Expires
+      Header always set Cache-Control “private”
      </LocationMatch>
    ```
 
@@ -98,7 +102,7 @@ Define DISABLE_DEFAULT_CACHING
    >[!NOTE]
    >[dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)를 비롯한 다른 메서드는 값을 성공적으로 재정의하지 않습니다.
 
-### 노드 저장소의 다른 컨텐츠 파일 형식 {#other-content}
+### 노드 저장소의 다른 컨텐츠 파일 유형 {#other-content}
 
 * 기본 캐싱 없음
 * 기본값은 html/text 파일 형식에 사용되는 `EXPIRATION_TIME` 변수로 설정할 수 없습니다
