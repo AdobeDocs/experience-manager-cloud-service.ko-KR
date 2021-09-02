@@ -2,9 +2,9 @@
 title: Cloud Manager란?
 description: Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알려면 이 페이지를 따르십시오.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
+source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,16 @@ Cloud Manager로 이동하려면 아래 단계를 따르십시오.
    >나중에 참조할 수 있도록 이 페이지에 책갈피를 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동할 수 있습니다.
 
 1. Cloud Manager의 **프로그램 및 제품** 페이지에서 프로그램을 선택하여 **개요** 페이지를 시작합니다.
+
+또한 Adobe Experience Cloud 홈 페이지에서 Cloud Manager의 프로그램 및 제품 페이지로 이동할 수도 있습니다. 아래 단계를 따르십시오.
+
+1. [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
+
+1. **Experience Manager**&#x200B;을 선택합니다.
+
+1. Cloud Manager 카드에서 **Launch**&#x200B;를 클릭합니다. Cloud Manager에 성공적으로 로그인하면 UI(사용자 인터페이스)를 사용할 수 있습니다.
+
+로그인하면 Cloud Manager의 랜딩 페이지로 이동합니다.
 
 ## Cloud Manager 프로그램 {#cloud-manager-programs}
 
