@@ -2,9 +2,9 @@
 title: '샌드박스 프로그램 만들기 '
 description: 샌드박스 프로그램 만들기
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 0%
 1. Cloud Manager의 랜딩 페이지를 시작하고 화면의 오른쪽 상단 모서리에서 **프로그램 추가**&#x200B;를 클릭합니다.
 
    ![](assets/first_timelogin1.png)
-
-   >[!NOTE]
-   >Cloud Manager에 액세스하는 방법에 대해 알려면 [Cloud Manager 랜딩 페이지](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)를 참조하십시오.
 
 1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;을 선택합니다. 사용자가 **만들기**&#x200B;를 선택하기 전에 프로그램 이름을 제출합니다.
 

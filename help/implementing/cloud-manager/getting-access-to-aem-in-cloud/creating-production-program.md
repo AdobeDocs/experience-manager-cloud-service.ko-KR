@@ -2,9 +2,9 @@
 title: '프로덕션 프로그램 생성 '
 description: 프로덕션 프로그램 생성
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ Cloud Manager에서 프로그램을 만드는 방법을 배우려면 두 가지 
 
    ![](assets/first_timelogin1.png)
 
-   >[!NOTE]
-   >Cloud Manager에 액세스하는 방법에 대해 알려면 [Cloud Manager 랜딩 페이지](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)를 참조하십시오.
 
 1. 프로그램 만들기 마법사에서 **프로덕션 설정**&#x200B;을 선택하여 프로덕션 프로그램을 만듭니다. 사용자는 **만들기**&#x200B;를 선택하기 전에 기본 프로그램 이름을 적용하거나 편집할 수 있습니다.
 

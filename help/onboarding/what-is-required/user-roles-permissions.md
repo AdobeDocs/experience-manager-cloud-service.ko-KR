@@ -2,9 +2,9 @@
 title: Cloud Manager 역할
 description: 이 페이지에서는 사용자 역할 및 권한에 대해 설명합니다. 사용자를 추가하고 Cloud Manager 역할에 할당하는 방법을 알아보십시오.
 exl-id: d1689134-044a-4d96-97a2-cd09f735a680
-source-git-commit: a0edbaf650fdfbc271a000ab4827a4c414321613
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '533'
 ht-degree: 6%
 
 ---
@@ -30,9 +30,6 @@ Cloud Manager는 현재 특정 기능의 가용성을 제어하는 4가지 역�
 ## 역할 보기 {#view-roles}
 
 Cloud Manager에서 역할을 보려면 Cloud Manager UI에 로그인하고 오른쪽 상단 모서리에서 프로필 아이콘을 선택하고 아래 그림과 같이 **사용자 역할**&#x200B;을 선택합니다.
-
->[!NOTE]
->Cloud Manager에 로그인하는 방법에 대한 자세한 내용은 [Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)로 이동 을 참조하십시오.
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 

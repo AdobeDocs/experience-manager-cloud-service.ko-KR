@@ -5,10 +5,10 @@ breadcrumb-title: 온보딩 안내서
 user-guide-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 90ed13a2d86611aeb709f8e8f0d75aeb8dbd97dd
+source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 44%
+source-wordcount: '106'
+ht-degree: 46%
 
 ---
 
@@ -28,5 +28,4 @@ ht-degree: 44%
 + AEM as a Cloud Service {#what-is-required} 시작하기
    + [Cloud Manager 역할](what-is-required/user-roles-permissions.md)
    + [시스템 관리자 작업](what-is-required/add-users-assign-cm-roles.md)
-   + [Cloud Manager로 이동](what-is-required/navigate-to-cloud-manager.md)
    + [AEM 인스턴스에 사용자 액세스 권한 부여](/help/onboarding/what-is-required/accessing-aem-instance.md)
