@@ -1,10 +1,10 @@
 ---
 title: OSGi 구성 API
 description: Cloud Service OSGi 구성 서피스로서의 AEM에 대한 설명
-feature: 배포
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+feature: Deploying
+source-git-commit: 5223d57377f5c00b090aee1ddd4dbfe2d7113181
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ OSGI 구성에 대한 추가 정보는 [이 위치](/help/implementing/deploying
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (발표 날짜: 4/30/2021, 적용 날짜: 7/31/2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (발표 날짜: 4/30/2021, 적용 날짜: 7/31/2021)
 * **`org.apache.felix.http (Factory)`** (발표 날짜: 4/30/2021, 적용 날짜: 7/31/2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (발표 날짜: 8/25/2021, 적용 날짜: 11/26/2021)
 
 ## 빌드 유효성 검사 규칙에 따른 OSGi 구성 {#osgi-configurations-subject-to-build-validation-rules}
 
