@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 58d9022b2b65aec4709a41ebfc80cc03c4c162a6
+source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1424'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 추가된 기능의 요약에 대해 [2021년 8월 릴리스 개요](https://video.tv.adobe.com/v/336277) 비디오를 보십시오.
 
-## [!DNL Cloud Service]로서의 [!DNL Experience Manager Assets] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
@@ -58,13 +58,13 @@ ht-degree: 2%
 * 기여자 그룹의 구성원이 [!DNL Assets] 콘솔로 이동하면 추가 `POST` 요청이 생성되어 컬렉션을 만듭니다. 이 요청은 필요하지 않으며, 권한 문제로 인해 실패하며, 로그에 많은 오류가 발생합니다. (CQ-4328856)
 * 사용자가 자산을 보고 왼쪽 패널의 팝업 메뉴에서 [!UICONTROL 타임라인]을 선택하면 오류가 표시됩니다. 로그에서 잘못된 쿼리로 인해 많은 경고가 기록됩니다. (CQ-4328919)
 
-## [!DNL Cloud Service]로서의 [!DNL Experience Manager Forms] {#forms}
+## [!DNL Experience Manager Forms] 로서의  [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* 이제 Cloud Service 로서 Forms용 AEM Archetype 프로젝트에는 [Canvas 3.0 테마 및 Microsoft Dynamics 및 Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)용 양식 데이터 모델이 포함됩니다.
+* 이제 Microsoft Dynamics 및 Salesforce.com](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)용 AEM Archetype Cloud Service 프로젝트에 [양식 데이터 모델이 포함됩니다.
 
 * **Acrobat 기반 레코드 문서**: AEM Forms as a Cloud Service은 XFA 기반 양식 템플릿 외에  [Adobe Acrobat 양식 PDF(Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 를 기록 문서 템플릿으로 사용할 수 있도록 지원합니다.
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 * **AEM Forms과 Microsoft Dynamics 및 Salesforce.com을 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce.com용 기본 데이터 소스 구성 및 데이터 모델을 제공하므로 개발자가 Microsoft Dynamics 및 Salesforce.com을 적응형 양식의 데이터 소스로  [빠르고 쉽게 구성할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html).
 
-## [!DNL Cloud Service]로서의 [!DNL Experience Manager Screens] {#screens}
+## [!DNL Experience Manager Screens] 로서의  [!DNL Cloud Service] {#screens}
 
 ### 새로운 기능 {#what-is-new-screens}
 
