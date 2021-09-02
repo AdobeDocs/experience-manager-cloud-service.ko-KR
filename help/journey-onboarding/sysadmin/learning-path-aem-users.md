@@ -1,10 +1,9 @@
 ---
 title: AEM 사용자를 위한 학습 경로
 description: AEM 사용자인 경우 액세스 권한을 얻은 후 다음 단계를 배우려면 이 페이지를 따르십시오
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 2%

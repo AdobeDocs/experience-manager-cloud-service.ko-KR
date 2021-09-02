@@ -1,10 +1,9 @@
 ---
 title: 온보딩 프로세스 시작
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 533e6cb780f908cfa4a30831bab7b80174872f24
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%

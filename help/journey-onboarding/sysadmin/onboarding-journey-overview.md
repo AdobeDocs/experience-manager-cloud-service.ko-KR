@@ -1,10 +1,9 @@
 ---
 title: 온보딩 여정
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 1%

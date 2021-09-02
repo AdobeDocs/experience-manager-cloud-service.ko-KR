@@ -1,10 +1,9 @@
 ---
 title: 개발자 및 배포 관리자를 위한 학습 경로
 description: 개발자 또는 배포 관리자인 경우 액세스 권한을 얻은 후 다음 단계를 알려면 이 페이지를 따르십시오
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 2%
