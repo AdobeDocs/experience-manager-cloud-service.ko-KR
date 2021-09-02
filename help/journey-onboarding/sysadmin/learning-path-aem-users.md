@@ -3,10 +3,10 @@ title: AEM 사용자를 위한 학습 경로
 description: AEM 사용자인 경우 액세스 권한을 얻은 후 다음 단계를 배우려면 이 페이지를 따르십시오
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+source-git-commit: 12ca20c750d7332ebfaf62c781cbe5ec386c2d64
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 2%
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 
@@ -36,18 +36,12 @@ AEM을 Cloud Service 팀으로 설정할 때 시스템 관리자가 필요한 �
 
 작성자에 액세스하려면 아래 절차를 따르십시오.
 
-1. [Adobe Experience Cloud](https://experience.adobe.com)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동합니다.
 
-1. Adobe Experience Cloud 홈 페이지에서 **Experience Manager**&#x200B;을 선택합니다.
+   >[!NOTE]
+   >나중에 참조할 수 있도록 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 링크를 책갈피로 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동하세요.
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
-
-1. AEM 홈 페이지로 이동합니다. 여기에서 **Cloud Manager** 를 시작합니다.
-
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
-
-   >[!IMPORTANT]
-   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 참조할 수 있도록 이 페이지에 책갈피를 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동할 수 있습니다.
+1. Cloud Manager의 **프로그램 및 제품** 페이지에서 프로그램을 선택하여 **개요** 페이지를 시작합니다.
 
 1. Cloud Manager의 **개요** 페이지에서 **환경** 카드의 작성자 링크를 클릭합니다.
 
