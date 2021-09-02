@@ -2,9 +2,9 @@
 title: 환경 관리 - Cloud Service
 description: 환경 관리 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
+source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1608'
 ht-degree: 1%
 
 ---
@@ -28,9 +28,9 @@ ht-degree: 1%
 
    | 이름 | 작성 계층 | 게시 계층 | 사용자가 만들 수 있음 | 사용자가 삭제할 수 있음 | 환경과 연결할 수 있는 파이프라인 |
    |--- |--- |--- |--- |---|---|
-   | 프로덕션 | 예 | 예 사이트가 포함된 경우 | 예 | 아니오 | 프로덕션 파이프라인 |
-   | 단계 | 예 | 예 사이트가 포함된 경우 | 예 | 아니오 | 프로덕션 파이프라인 |
-   | 개발 | 예 | 예 사이트가 포함된 경우 | 예 | 예 | 비프로덕션 파이프라인 |
+   | 프로덕션 | 예 | 사이트가 포함된 경우 예 | 예 | 아니오 | 프로덕션 파이프라인 |
+   | 단계 | 예 | 사이트가 포함된 경우 예 | 예 | 아니오 | 프로덕션 파이프라인 |
+   | 개발 | 예 | 사이트가 포함된 경우 예 | 예 | 예 | 비프로덕션 파이프라인 |
 
    >[!NOTE]
    >프로덕션과 스테이지는 듀오로 제공되며 테스트 및 프로덕션 용도로 사용됩니다.  사용자는 스테이지나 프로덕션 환경만 만들 수 없습니다.
@@ -145,8 +145,6 @@ ht-degree: 1%
 ## 액세스 관리 {#managing-access}
 
 **환경** 카드의 드롭다운 메뉴에서 **액세스 관리**&#x200B;를 선택합니다. 작성자 인스턴스로 직접 이동하고 환경에 대한 액세스를 관리할 수 있습니다.
-
-자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](/help/onboarding/what-is-required/accessing-aem-instance.md) 를 참조하십시오.
 
 ![](assets/environ-access.png)
 

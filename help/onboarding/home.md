@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 19%
@@ -36,7 +36,7 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 새 응
 
 1. 시스템 관리자가 추가한 사용자는 다시 환영 이메일을 받게 되므로 Cloud Manager로 성공적으로 이동할 수 있습니다. 이제 사용자는 Adobe ID을 사용하여 여기에서 Cloud Manager로 로그인하여 여정을 시작할 수 있습니다.
 
-1. 시스템 관리자는 개발 목적으로 [사용자에게 AEM 인스턴스](/help/onboarding/what-is-required/accessing-aem-instance.md)에 대한 액세스 권한을 부여할 수 있습니다.
+1. 시스템 관리자는 개발용으로 AEM 인스턴스에 대한 액세스 권한을 사용자에게 부여할 수 있습니다.
 
 **Adobe ID 가져오기**
 
@@ -59,7 +59,7 @@ Cloud Manager에 추가된 사용자를 할당된 역할에 가져오려면 Adob
 사용자로 추가되고 Cloud Manager 역할에 할당되었으므로 Cloud Manager에 액세스하여 AEM에서 클라우드 여정을 시작할 수 있습니다. 사용자는 프로그램 만들기, 환경 추가, Git 액세스, [파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md) 및 [코드 배포](/help/implementing/cloud-manager/deploy-code.md)와 같은 다양한 작업을 수행할 준비가 되었습니다.
 Cloud Manager는 AEM as a Cloud Service의 중요한 부분입니다. 조직에서 자체적으로 클라우드에서 [!DNL Experience Manager]을 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다. 사용자 인터페이스를 사용하여 CI/CD 파이프라인을 구성하고 시작할 수 있습니다.
 
-**[AEM 인스턴스에 사용자 액세스 권한 부여](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+* **AEM 인스턴스에 사용자 액세스 권한 부여**
 
 시스템 관리자 또는 환경을 만든 사용자가 다른 사용자에게 AEM 인스턴스에 대한 액세스 권한을 부여할 수 있는 방법을 알려면 이 섹션을 따르십시오.
 
