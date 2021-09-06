@@ -2,9 +2,10 @@
 title: Dispatcher 도구를 사용하여 유효성 검사 및 디버깅
 description: Dispatcher 도구를 사용하여 유효성 검사 및 디버깅
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
@@ -412,7 +413,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Dispatcher를 로컬에서 실행할 때 로그가 터미널 출력에 직접 인쇄됩니다. 대부분의 경우 이러한 로그가 DEBUG에 있어야 하며 Docker를 실행할 때 디버그 수준을 매개 변수로 전달하여 수행할 수 있습니다. 예: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`.
+Dispatcher를 로컬에서 실행할 때 로그가 터미널 출력에 직접 인쇄됩니다. 대부분의 경우 이러한 로그가 DEBUG에 있어야 하며 Docker를 실행할 때 디버그 수준을 매개 변수로 전달하여 수행할 수 있습니다. 예: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 클라우드 환경에 대한 로그는 Cloud Manager에서 사용할 수 있는 로깅 서비스를 통해 노출됩니다.
 
@@ -446,7 +447,7 @@ Dispatcher 구성에서는 동일한 환경 변수를 사용할 수 있습니다
 구성을 로컬로 테스트할 때 변수 `DISP_RUN_MODE`을 `docker_run.sh` 스크립트에 직접 전달하여 다른 환경 유형을 시뮬레이션할 수 있습니다.
 
 ```
-$ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
+$ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
 DISP_RUN_MODE에 대한 값을 전달하지 않을 때 기본 실행 모드가 &quot;dev&quot;입니다.
