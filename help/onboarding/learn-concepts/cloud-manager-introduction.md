@@ -2,10 +2,10 @@
 title: Cloud Manager란?
 description: Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알려면 이 페이지를 따르십시오.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 3%
 
 ---
 
@@ -39,6 +39,26 @@ Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 1. Cloud Manager 카드에서 **Launch**&#x200B;를 클릭합니다. Cloud Manager에 성공적으로 로그인하면 UI(사용자 인터페이스)를 사용할 수 있습니다.
 
    로그인하면 Cloud Manager의 랜딩 페이지로 이동합니다.
+
+## Cloud Manager의 역할 기반 권한 {#role-based-permissions}
+
+| 권한 | 설명 | 비즈니스 소유자 | 배포 관리자 | 프로그램 관리자 | 개발자 |
+|--- |--- |--- |--- |--- |--- |
+| 프로그램 추가<br>프로그램 편집 | 새 프로그램을 추가합니다.<br>프로그램 편집 - 솔루션 또는 추가 기능 추가 또는 제거 | x |  |  |  |
+| 환경 만들기 | Prod+Stage, Dev, 환경을 만듭니다. | x | x |  |  |
+| 환경 업데이트 | Prod+Stage, Dev, 환경을 업데이트합니다. | x | x |  |  |
+| 개발 환경 삭제 | 개발 환경을 삭제합니다. | x | x |  |  |
+| 파이프라인 설정 | 파이프라인 설정 또는 편집. |  | x |  |  |
+| 파이프라인 실행 | 파이프라인을 시작합니다. | x | x |  |  |
+| 파이프라인 실행 | 중요한 3계층 장애 거부/승인 | x | x | x |  |
+| 파이프라인 실행 | GoLive 승인을 제공합니다. | x | x | x |  |
+| 파이프라인 실행 | 프로덕션 배포를 예약합니다. | x | x | x |  |
+| 파이프라인 삭제 | 파이프라인 삭제를 허용합니다. |  | x |  |  |
+| 실행 취소 | 현재 실행을 취소합니다. |  | x |  |  |
+| 개인 액세스 토큰 생성 | Git에 액세스합니다. |  | x |  | x |
+
+>[!NOTE]
+>사용자는 여러 역할에 할당할 수 있습니다. 예를 들어, 사용자에게 비즈니스 소유자 및 배포 관리자 역할을 모두 할당하면 이러한 권한의 조합이나 합계가 제공됩니다.
 
 ## Cloud Manager 프로그램 {#cloud-manager-programs}
 
