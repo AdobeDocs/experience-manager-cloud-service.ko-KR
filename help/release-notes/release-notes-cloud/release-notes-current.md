@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -169,4 +169,20 @@ AEM as a Cloud Service 2021.8.0의 Cloud Manager 릴리스 날짜는 2021년 8�
 * 게시 인스턴스에 수집하는 동안 **수집 중지** 단추가 비활성화되었습니다. 게시 수집 중에 단일 복원 단계가 없으므로 이 작업은 필요하지 않습니다.
 
 * 성공적으로 추출한 후 CTT에서 `/tmp` 디렉터리를 정리하지 못했습니다. 이로 인해 디스크 공간 문제가 발생하는 경우가 있습니다.
+
+## 모범 사례 분석기 {#best-practices-analyzer}
+
+### 릴리스 날짜 {#release-date-bpa-latest}
+
+Best Practices Analyzer v2.1.18 릴리스 날짜는 2021년 9월 2일입니다.
+
+### 새로운 기능 {#what-is-new}
+
+* 총 노드 수를 검색하고 보고하는 기능
+
+* 노드 저장소 유형 및 크기를 감지하고 보고하는 기능.
+
+### 버그 수정 {#bug-fixes-bpa}
+
+* BPA가 Commerce Integration Framework의 존재를 잘못 감지했습니다.
 
