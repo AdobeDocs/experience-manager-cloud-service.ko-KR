@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 릴리스 2021.9.0의 Cloud Manager 릴리스 노�
 description: AEM as a Cloud Service 릴리스 2021.9.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
+source-git-commit: ae619bb5a9ecc030fd3fa486445bcca7d3386df6
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '257'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ AEM as a Cloud Service 2021.9.0의 Cloud Manager 릴리스 날짜는 2021년 9�
 
 * 이제 활동 페이지 메뉴 옵션에는 완료된 코드 생성기 실행에 대한 **다운로드 로그**&#x200B;에 대한 옵션이 포함됩니다. 이를 선택하면 빌드 단계의 로그가 다운로드됩니다.
 
-* 프로그램 카드에서 바로 을 클릭하면 이제 Cloud Manager 개요 페이지로 이동합니다.
+* 프로그램 카드에서 바로 을 클릭하면 이제 Cloud Manager의 **개요** 페이지로 이동합니다. 자세한 내용은 [프로덕션 프로그램 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)를 참조하십시오.
 
 ### 버그 수정 {#bug-fixes}
 
