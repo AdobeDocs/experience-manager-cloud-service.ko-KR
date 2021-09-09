@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Assets HTTP API에서 Cloud Service 컨텐츠 조각 지원
 description: AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
-feature: 컨텐츠 조각,자산 HTTP API
+feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1951'
 ht-degree: 2%
 
 ---
@@ -24,14 +24,13 @@ AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐�
 >* 컨텐츠 조각에 대한 지원 포함
 
 >
->
-Assets HTTP API의 현재 구현은 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 아키텍처 스타일을 기반으로 합니다.
+>Assets HTTP API의 현재 구현은 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 아키텍처 스타일을 기반으로 합니다.
 
 [Assets REST API](/help/assets/mac-api-assets.md)를 사용하면 Adobe Experience Manager 개발자를 Cloud Service으로 사용하여 CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 컨텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager을 헤드리스 CMS(Content Management System)로 Cloud Service으로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다.
 
-예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정 환경에서는 HTTP API를 통해 제공되는 컨텐츠(일반적으로 JSON 형식)가 필요합니다.
+예를 들어, [단일 페이지 애플리케이션(SPA)](/help/implementing/developing/hybrid/introduction.md), 프레임워크 기반 또는 사용자 지정에서는 HTTP API를 통해 제공되는 컨텐츠(종종 JSON 형식)가 필요합니다.
 
 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)는 이 목적에 필요한 읽기 작업을 제공할 수 있고 JSON 출력을 사용자 지정할 수 있는 매우 포괄적이고 유연한 사용자 지정 가능한 API를 제공하지만, 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 AEM WCM(Web Content Management) 구현에 대한 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
 
@@ -82,7 +81,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 >[!NOTE]
 >
->요청 본문 및/또는 URL 매개 변수를 사용하여 이러한 작업 중 일부를 구성할 수 있습니다.예를 들어, **POST** 요청으로 폴더나 자산을 만들어야 함을 정의합니다.
+>요청 본문 및/또는 URL 매개 변수를 사용하여 이러한 작업 중 일부를 구성할 수 있습니다. 예를 들어, **POST** 요청으로 폴더나 자산을 만들어야 함을 정의합니다.
 
 지원되는 요청의 정확한 형식은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) 설명서에서 정의됩니다.
 
@@ -92,7 +91,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 즉, 후속(`write`) 요청을 단일 엔티티로 성공하거나 실패할 수 있는 단일 트랜잭션으로 결합할 수 없습니다.
 
-### AEM(자산) REST API 대 AEM 구성 요소 {#aem-assets-rest-api-versus-aem-components}
+### AEM(Assets) REST API와 AEM 구성 요소 {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
@@ -123,7 +122,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
   </tr>
   <tr>
    <td>보안</td>
-   <td><p>여러 옵션이 가능합니다.</p> <p>OAuth가 제안됩니다.표준 설정과 별도로 구성할 수 있습니다.</p> </td>
+   <td><p>여러 옵션이 가능합니다.</p> <p>OAuth가 제안됩니다. 표준 설정과 별도로 구성할 수 있습니다.</p> </td>
    <td>AEM 표준 설정을 사용합니다.</td>
   </tr>
   <tr>
@@ -133,8 +132,8 @@ HTTP 메서드는 실행할 작업을 결정합니다.
   </tr>
   <tr>
    <td>출력</td>
-   <td>JSON 기반 SHANNER 출력:장황하지만 강력해 컨텐츠 내에서 탐색할 수 있습니다.</td>
-   <td>JSON 기반 독점 출력;Sling 모델을 통해 구성할 수 있습니다. 컨텐츠 구조를 탐색하는 것은 구현하기가 어렵습니다(하지만 반드시 불가능한 것은 아님).</td>
+   <td>JSON 기반 SHANNER 출력: 장황하지만 강력해 컨텐츠 내에서 탐색할 수 있습니다.</td>
+   <td>JSON 기반 독점 출력; Sling 모델을 통해 구성할 수 있습니다. 컨텐츠 구조를 탐색하는 것은 구현하기가 어렵습니다(하지만 반드시 불가능한 것은 아님).</td>
   </tr>
  </tbody>
 </table>
@@ -151,7 +150,6 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 >* [비디오 - AEM을 사용한 CORS용 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 
 >
-
 
 
 특정 인증 요구 사항이 있는 환경에서는 OAuth가 권장됩니다.
@@ -178,7 +176,7 @@ Assets REST API는 URL 매개 변수를 통해 페이징(GET 요청)을 지원�
 >
 >페이징은 일반적으로 요청된 엔티티의 1차 하위 구성요소와 관련된 컨테이너 엔티티(즉, 폴더 또는 변환이 있는 자산)에 적용됩니다.
 
-#### 예:{#example-paging} 호출
+#### 예: 페이징 {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -202,15 +200,15 @@ Assets REST API는 URL 매개 변수를 통해 페이징(GET 요청)을 지원�
 
 폴더는 자산 및 기타 폴더에 대한 컨테이너 역할을 합니다. AEM 컨텐츠 저장소의 구조를 반영합니다.
 
-Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니다.예를 들어 해당 이름, 제목 등이 있습니다. 자산은 폴더 및 하위 폴더의 하위 엔티티로 노출됩니다.
+Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니다. 예를 들어 해당 이름, 제목 등이 있습니다. 자산은 폴더 및 하위 폴더의 하위 엔티티로 노출됩니다.
 
 >[!NOTE]
 >
 >하위 자산 및 폴더의 자산 유형에 따라 하위 엔티티 목록에 이미 각 하위 엔티티를 정의하는 전체 속성 세트가 포함될 수 있습니다. 또는 이 자식 엔티티 목록에서 엔티티에 대해 축소된 속성 집합만 노출될 수 있습니다.
 
-### 자산 {#assets}
+### 에셋 {#assets}
 
-자산이 요청되면 응답은 해당 메타데이터를 반환합니다.제목, 이름 및 각 자산 스키마에 의해 정의된 기타 정보와 같은 정보를 제공합니다.
+자산이 요청되면 응답은 해당 메타데이터를 반환합니다. 제목, 이름 및 각 자산 스키마에 의해 정의된 기타 정보와 같은 정보를 제공합니다.
 
 자산의 바이너리 데이터는 `content` 유형의 SYNAM 링크로 표시됩니다.
 
@@ -233,7 +231,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 
 #### 컨텐츠 모델 및 컨텐츠 조각 {#content-models-and-content-fragments}
 
-현재 컨텐츠 조각의 구조를 정의하는 모델은 HTTP API를 통해 노출되지 않습니다. 따라서 대부분의 정보를 페이로드에서 유추할 수 있지만 *소비자*&#x200B;는 조각의 모델에 대해 알아야 합니다(최소).데이터 유형 등 는 정의의 일부입니다.
+현재 컨텐츠 조각의 구조를 정의하는 모델은 HTTP API를 통해 노출되지 않습니다. 따라서 대부분의 정보를 페이로드에서 유추할 수 있지만 *소비자*&#x200B;는 조각의 모델에 대해 알아야 합니다(최소). 데이터 유형 등 는 정의의 일부입니다.
 
 새 컨텐츠 조각을 생성하려면 모델의 (내부 저장소) 경로를 제공해야 합니다.
 
@@ -275,7 +273,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 두 가지 유형의 읽기 작업이 가능합니다.
 
 * 특정 컨텐츠 조각을 경로별로 읽으면 컨텐츠 조각의 JSON 표현이 반환됩니다.
-* 경로별 컨텐츠 조각 폴더 읽기:이렇게 하면 폴더 내에 있는 모든 컨텐츠 조각의 JSON 표현이 반환됩니다.
+* 경로별 컨텐츠 조각 폴더 읽기: 이렇게 하면 폴더 내에 있는 모든 컨텐츠 조각의 JSON 표현이 반환됩니다.
 
 ### 만들기 {#create}
 
@@ -305,7 +303,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 
 다음과 같은 몇 가지 제한 사항이 있습니다.
 
-* **컨텐츠 조각 모델은 현재 지원되지** 않습니다.읽거나 만들 수 없습니다. 신규 컨텐츠 조각을 생성하거나 기존 컨텐츠 조각을 업데이트하려면 개발자가 컨텐츠 조각 모델에 대한 올바른 경로를 알아야 합니다. 현재 이러한 UI에 대한 개요를 얻는 유일한 방법은 관리 UI를 사용하는 것입니다.
+* **컨텐츠 조각 모델은 현재 지원되지** 않습니다. 읽거나 만들 수 없습니다. 신규 컨텐츠 조각을 생성하거나 기존 컨텐츠 조각을 업데이트하려면 개발자가 컨텐츠 조각 모델에 대한 올바른 경로를 알아야 합니다. 현재 이러한 UI에 대한 개요를 얻는 유일한 방법은 관리 UI를 사용하는 것입니다.
 * **참조는 무시됩니다**. 현재 기존 컨텐츠 조각을 참조하는지 여부에 대한 검사가 없습니다. 따라서, 예를 들어 컨텐츠 조각을 삭제하면 삭제된 컨텐츠 조각에 대한 참조가 포함된 페이지에 문제가 발생할 수 있습니다.
 * **JSON 데이터** 유형JSON 데이터 유형의  *REST API* 출력은 현재  *문자열 기반 출력입니다*.
 
@@ -387,4 +385,4 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 자세한 내용은 다음을 참조하십시오.
 
 * [자산 HTTP API 설명서](/help/assets/mac-api-assets.md)
-* [AEM Gem 세션:OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem 세션: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

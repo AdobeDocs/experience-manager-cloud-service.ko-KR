@@ -2,20 +2,16 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 오버레이
 description: AEM as a Cloud Service은 오버레이 원리를 사용하여 콘솔 및 기타 기능을 확장 및 사용자 지정할 수 있습니다
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 2%
 
 ---
 
 # AEM as a Cloud Service에서 오버레이 {#overlays-in-aem}
 
 Adobe Experience Manager as a Cloud Service은 오버레이 원리를 사용하여 콘솔과 기타 기능(예: 페이지 작성)을 확장 및 사용자 지정할 수 있습니다.
-
-<!--
-Adobe Experience Manager as a Cloud Service uses the principle of overlays to allow you to extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
--->
 
 오버레이는 많은 컨텍스트에서 사용할 수 있는 용어입니다. 이 컨텍스트(AEM as a Cloud Service으로 확장)에서 오버레이는 사전 정의된 기능을 가져와서 해당 기능에 대한 자체 정의를 적용합니다(표준 기능을 사용자 지정 하기 위해).
 
@@ -36,34 +32,19 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
       * 실제로 필요한 것만 재정의합니다.
 
 
-<!-- Still links to reference material in 6.5 -->
-
 >[!CAUTION]
 >
->[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) 및 관련 메서드는 [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)에서만 사용할 수 있습니다. 즉, 뼈대 구조의 오버레이를 만드는 것은 터치 지원 표준 UI에만 적합합니다.
+>[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) 및 관련 메서드는 [Granite](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)에서만 사용할 수 있습니다. 즉, 뼈대 구조의 오버레이를 만드는 것은 터치 지원 표준 UI에만 적합합니다.
 
 오버레이는 콘솔 구성 또는 사이드 패널의 자산 브라우저에 선택 카테고리 만들기(페이지 작성 시 사용)와 같이 많은 변경 사항에 권장되는 방법입니다. 이 변수는 다음과 같이 필요합니다.
-
-<!--
-Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
--->
 
 * ***은 `/libs` 분기&#x200B;**에서 변경할 수 없습니다.
 이 분기는 인스턴스에 업그레이드가 적용될 때마다 변경 사항이 적용되므로 변경 사항이 손실될 수 있습니다.*
 
-* 한 곳에 여러분의 변화를 집중합니다.필요에 따라 변경 사항을 추적, 마이그레이션, 백업 및/또는 디버깅하는 것이 쉬워집니다.
+* 한 곳에 여러분의 변화를 집중합니다. 필요에 따라 변경 사항을 추적, 마이그레이션, 백업 및/또는 디버깅하는 것이 쉬워집니다.
 
 ## 경로 검색 {#search-paths}
 
 AEM에서는 검색 경로를 사용하여 리소스를 찾고, 기본적으로 `/apps` 분기를 먼저 검색한 다음 `/libs` 분기를 찾습니다. 이 메커니즘은 `/apps`(및 여기에 정의된 사용자 지정)에 있는 오버레이에 우선 순위가 지정됨을 의미합니다.
 
 오버레이의 경우 전달된 리소스는 OSGi 구성에 정의된 검색 경로에 따라 검색된 리소스 및 속성의 합계입니다.
-
-<!--
-## Example of Usage {#example-of-usage}
-
-Some examples are covered when:
-
-* [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-* [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
--->

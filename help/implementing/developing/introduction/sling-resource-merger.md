@@ -2,7 +2,7 @@
 title: Adobe Experience Manager에서 Sling Resource Merger를 Cloud Service으로 사용
 description: Sling Resource Merger는 리소스에 액세스하고 병합하는 서비스를 제공합니다
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 2%
@@ -25,13 +25,11 @@ Sling Resource Merger를 사용하면 오버레이/재정의 리소스 및/또�
 
 * 필요한 경우 사용자 지정에 정의된 [속성](#properties)은 원본에서 병합된 컨텐츠를 사용하는 방법을 나타냅니다.
 
-<!-- Still links to reference material in 6.5 -->
-
 >[!CAUTION]
 >
 >Sling 리소스 합병 및 관련 메서드는 터치 지원 UI(Cloud Service으로 AEM에 사용할 수 있는 유일한 UI)에서만 사용할 수 있습니다.
 
-### AEM {#goals-for-aem} 목표
+### AEM 목표 {#goals-for-aem}
 
 AEM에서 Sling Resource Merger를 사용하는 목적은 다음과 같습니다.
 
@@ -47,18 +45,17 @@ AEM에서 Sling Resource Merger를 사용하는 목적은 다음과 같습니다
 >이는 인스턴스에 업그레이드가 적용될 때마다 `/libs` 컨텐츠를 덮어쓸 수 있기 때문입니다.
 >
 >* 오버레이는 [검색 경로](/help/implementing/developing/introduction/overlays.md#search-paths)에 따라 달라집니다.
-   >
-   >
-* 무시는 검색 경로에 종속되지 않으며 `sling:resourceSuperType` 속성을 사용하여 연결을 만듭니다.
 >
+>* 무시는 검색 경로에 종속되지 않으며 `sling:resourceSuperType` 속성을 사용하여 연결을 만듭니다.
+
 >
-그러나 AEM에서 Cloud Service으로 사용하는 가장 좋은 방법은 `/apps`;`/libs` 아래에서 아무 것도 변경하지 않아야 하기 때문입니다.`/apps`
+>그러나 AEM에서 Cloud Service으로 사용하는 가장 좋은 방법은 `/apps`; `/libs` 아래에서 아무 것도 변경하지 않아야 하기 때문입니다.`/apps`
 
 ### 속성 {#properties}
 
 자원 합병은 다음 속성을 제공합니다.
 
-* `sling:hideProperties` (  `String` 또는  `String[]`)
+* `sling:hideProperties` ( `String` 또는 `String[]`)
 
    숨길 속성 또는 속성 목록을 지정합니다.
 
@@ -68,7 +65,7 @@ AEM에서 Sling Resource Merger를 사용하는 목적은 다음과 같습니다
 
    하위 항목을 포함하여 리소스를 완전히 숨겨야 하는지 여부를 나타냅니다.
 
-* `sling:hideChildren` (  `String` 또는  `String[]`)
+* `sling:hideChildren` ( `String` 또는 `String[]`)
 
    숨길 하위 노드 또는 하위 노드 목록을 포함합니다. 노드의 속성이 유지됩니다.
 
@@ -106,7 +103,7 @@ AEM에서 Sling Resource Merger를 사용하는 목적은 다음과 같습니다
 
       `/apps/the-project/components/text/cq:dialog`
 
-이러한 구조 중 하나를 만들려면 뼈대 구조를 다시 만들어야 합니다. 구조를 재조정하기 위해 모든 중간 노드는 `nt:unstructured` 유형일 수 있습니다(원본 노드 유형을 반영하지 않아도 됩니다.).예: `/libs`).
+이러한 구조 중 하나를 만들려면 뼈대 구조를 다시 만들어야 합니다. 구조를 재조정하기 위해 모든 중간 노드는 `nt:unstructured` 유형일 수 있습니다(원본 노드 유형을 반영하지 않아도 됩니다.). 예: `/libs`).
 
 따라서 위의 오버레이 예에서 다음 노드가 필요합니다.
 
@@ -154,7 +151,7 @@ AEM에서 Sling Resource Merger를 사용하는 목적은 다음과 같습니다
    기본적으로 자동 생성된 속성(예: `jcr:primaryType`)은 현재 `/libs` 아래의 노드 유형이 준수되도록 하기 위해 오버레이/무시를 적용하지 않습니다. 오버레이/무시를 적용하려면 `/apps`에서 노드를 다시 만들어야 합니다. 속성을 명시적으로 숨기고 재정의해야 합니다.
 
    1. `/apps` 아래에 원하는 `jcr:primaryType` 로 해당 노드를 만듭니다.
-   1. 값이 자동 생성된 속성의 값으로 설정된 상태에서 해당 노드에 속성 `sling:hideProperties`을 만듭니다.예: `jcr:primaryType`
+   1. 값이 자동 생성된 속성의 값으로 설정된 상태에서 해당 노드에 속성 `sling:hideProperties`을 만듭니다. 예: `jcr:primaryType`
 
       이제 `/apps`에 정의된 이 속성은 `/libs`에 정의된 속성보다 우선 순위가 높습니다
 
@@ -197,9 +194,9 @@ AEM에서 Sling Resource Merger를 사용하는 목적은 다음과 같습니다
    1. `sling:hideChildren` 속성을 만듭니다.
 
       * 유형: `String[]`
-      * 값:`/libs`에 정의된 하위 노드 목록
+      * 값: `/libs`에 정의된 하위 노드 목록
 
-      와일드카드 &amp;ast;모든 하위 노드를 숨기거나 무시하는 데 사용할 수 있습니다.
+      와일드카드 &amp;ast; 모든 하위 노드를 숨기거나 무시하는 데 사용할 수 있습니다.
 
 
 * **노드 순서 변경**
@@ -216,7 +213,7 @@ AEM에서 Sling Resource Merger를 사용하는 목적은 다음과 같습니다
          * 유형: `String`
          * 정렬 단추: `<before-SiblingName>`
 
-### 코드 {#invoking-the-sling-resource-merger-from-your-code}에서 Sling 리소스 합병을 호출하는 중
+### 코드에서 Sling 리소스 합병을 호출하는 중 {#invoking-the-sling-resource-merger-from-your-code}
 
 Sling 리소스 합병에는 두 개의 사용자 지정 리소스 공급자(하나는 오버레이이고 다른 하나는 오버레이입니다. 마운트 지점을 사용하여 코드 내에서 이러한 각 호출을 호출할 수 있습니다.
 
@@ -228,33 +225,19 @@ Sling 리소스 합병에는 두 개의 사용자 지정 리소스 공급자(하
 
 * 오버레이:
 
-   * 목적:검색 경로에 따라 리소스 병합
-   * 마운트 지점:`/mnt/overlay`
-   * 사용:`mount point + relative path`
+   * 목적: 검색 경로에 따라 리소스 병합
+   * 마운트 지점: `/mnt/overlay`
+   * 사용: `mount point + relative path`
    * 예:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
 * 오버라이드:
 
-   * 목적:슈퍼 유형에 따라 리소스 병합
-   * 마운트 지점:`/mnt/overide`
-   * 사용:`mount point + absolute path`
+   * 목적: 슈퍼 유형에 따라 리소스 병합
+   * 마운트 지점: `/mnt/overide`
+   * 사용: `mount point + absolute path`
    * 예:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->
