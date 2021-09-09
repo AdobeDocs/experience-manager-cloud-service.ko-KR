@@ -3,24 +3,15 @@ title: 온보딩 여정
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 2%
 
 ---
 
 # 온보딩 여정 {#onboarding-jourrney}
-
-## 온보딩 경험 {#audience}
-
-온보딩은 지정된 [시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 각 구성원이 Cloud Service 리소스로 AEM에 로그인하고 액세스할 수 있는 작업 권한에 따라 적절한 역할에 클라우드 리소스의 초기 프로비저닝 및 사용자 할당이 포함됩니다.
-
-온보딩 여정은 아래에 표시되어 있고 여정의 각 단계는 다음 섹션에 자세히 설명되어 있습니다.
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-이 여정은 요구 사항, 단계 및 접근 방식을 제시하는 시스템 관리자 사용자에 맞게 설계되었습니다. 여정은 성공적인 프로젝트를 위해 시스템 관리자가 상호 작용해야 하는 추가 가상 사용자를 정의하지만 여정의 관점은 관리자의 것입니다.
 
 ## 온보딩 여정 탐색 {#exploring-onboarding-journey}
 

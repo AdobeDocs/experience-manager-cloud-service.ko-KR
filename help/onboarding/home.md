@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '556'
 ht-degree: 26%
 
 ---
@@ -18,24 +18,17 @@ ht-degree: 26%
 
 AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 새 응용 프로그램을 배포하거나 기존 응용 프로그램을 마이그레이션하든 관계없이 이 안내서는 응용 프로그램이 최적화되어 Cloud Service에서 성공할 수 있도록 하는 시작점 역할을 합니다.
 
-이 안내서는 Cloud Manager를 신속하게 시작하는 데 도움이 됩니다. Cloud Manager에 추가된 사용자를 할당된 역할(Admin Console의 제품 프로필이라고 함) 및 관련 권한에 가져오려면 Adobe ID 및 시스템 관리자의 도움이 필요합니다. 시스템 관리자가 Admin Console을 통해 이 작업을 수행하는 방법에 대한 지침은 설명되어 있습니다. Admin Console에서 제품 프로필이라고 하는 Cloud Manager 역할 목록 및 관련 권한이 자세히 설명되므로 조직의 다양한 사용자에게 필요한 역할을 결정할 수 있습니다.
+## 온보딩 경험 {#audience}
 
-다음 이미지는 시스템 관리자가 받은 환영 이메일부터 시작하여 AEM용 Cloud Manager를 Cloud Service으로 액세스하는 사용자에게 이르기까지 온보딩 여정을 보여줍니다.
+온보딩은 지정된 [시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 각 구성원이 Cloud Service 리소스로 AEM에 로그인하고 액세스할 수 있는 작업 권한에 따라 적절한 역할에 클라우드 리소스의 초기 프로비저닝 및 사용자 할당이 포함됩니다.
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+온보딩 여정은 아래에 표시되어 있고 여정의 각 단계는 다음 섹션에 자세히 설명되어 있습니다.
 
-온보딩 경험을 시작하려면 [온보딩 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) 를 참조하십시오.
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->온보딩 여정을 자세히 살펴보려면 다음 주제를 다루는 학습 온보딩 개념 섹션을 검토하는 것이 좋습니다.
->* [시스템 관리자](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [Identity Management 시스템 Adobe](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Cloud Manager 소개](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Adobe 지원](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+이 여정은 요구 사항, 단계 및 접근 방식을 제시하는 시스템 관리자 사용자에 맞게 설계되었습니다. 여정은 성공적인 프로젝트를 위해 시스템 관리자가 상호 작용해야 하는 추가 가상 사용자를 정의하지만 여정의 관점은 관리자의 것입니다.
 
+온보딩 경험을 시작하려면 [온보딩 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) 를 참조하십시오.
 
 ## [!DNL Experience Manager as a Cloud Service] 안내서 {#aem-guides}
 
