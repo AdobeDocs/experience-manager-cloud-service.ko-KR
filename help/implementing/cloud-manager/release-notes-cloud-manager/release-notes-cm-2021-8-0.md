@@ -2,8 +2,7 @@
 title: AEM as a Cloud Service 릴리스 2021.8.0의 Cloud Manager 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2021.8.0의 Cloud Manager 릴리스 노트
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 4%
@@ -48,5 +47,3 @@ AEM as a Cloud Service 2021.8.0의 Cloud Manager 릴리스 날짜는 2021년 8�
 * 매우 긴 이름을 가진 새로운 조직에 대해 초기 온보딩이 실패했습니다.
 
 * 경우에 따라 파이프라인이 두 번 트리거되면 *이(가) 파이프라인 실행 상태* 오류로 인해 실행 중 하나가 실패하는 경우가 있습니다.
-
-
