@@ -2,9 +2,9 @@
 title: '프로덕션 프로그램 생성 '
 description: 프로덕션 프로그램 생성
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Cloud Manager에서 프로그램을 만드는 방법을 배우려면 두 가지 
 
    ![](assets/setup-prod-commerce.png)
 
-1. 랜딩 페이지에 프로그램 카드가 표시되면 해당 위로 마우스를 가져가서 Cloud Manager 아이콘을 선택하여 Cloud Manager **개요** 페이지로 이동합니다.
+1. 랜딩 페이지에 프로그램 카드가 표시되면 **..** 사용 가능한 메뉴 옵션을 보려면 다음을 수행하십시오. 아래 그림과 같이 **Cloud Manager**&#x200B;를 선택하여 Cloud Manager의 **개요** 페이지로 이동합니다.
 
-   ![](assets/set-up-prod4.png)
+   ![](assets/navigate-cm.png)
 
 1. 기본 클릭유도문안 카드는 사용자가 환경을 만들고, 비프로덕션 파이프라인을 만들고, 최종적으로 프로덕션 파이프라인을 생성하도록 안내합니다.
    ![](assets/set-up-prod5.png)
