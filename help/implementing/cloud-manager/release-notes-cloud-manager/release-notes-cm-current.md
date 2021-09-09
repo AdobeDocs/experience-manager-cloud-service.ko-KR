@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 릴리스 2021.9.0의 Cloud Manager 릴리스 노�
 description: AEM as a Cloud Service 릴리스 2021.9.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 5%
@@ -24,6 +24,8 @@ AEM as a Cloud Service 2021.9.0의 Cloud Manager 릴리스 날짜는 2021년 9�
 
 ### 새로운 기능 {#what-is-new}
 
+* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 30으로 업데이트되었습니다.
+
 * Cloud Manager 랜딩 페이지의 프로그램 카드 및 관련 경험이 새로 고침되었습니다.
 
 * 이제 코드 품질 단계 로그에 OakPal 검색 프로세스에 대한 자세한 로깅 정보가 포함됩니다.
@@ -31,8 +33,6 @@ AEM as a Cloud Service 2021.9.0의 Cloud Manager 릴리스 날짜는 2021년 9�
 * 이제 활동 페이지 메뉴 옵션에는 완료된 코드 생성기 실행에 대한 **다운로드 로그**&#x200B;에 대한 옵션이 포함됩니다. 이를 선택하면 빌드 단계의 로그가 다운로드됩니다.
 
 * 프로그램 카드에서 바로 을 클릭하면 이제 Cloud Manager 개요 페이지로 이동합니다.
-
-* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 30으로 업데이트되었습니다.
 
 ### 버그 수정 {#bug-fixes}
 
