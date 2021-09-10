@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 특정 콘텐츠가 캐시되지 않도록 하려면 Cache-Control 헤더를 *private*&#x200B;로 설정하십시오. 예를 들어, 다음 경우 **secure** 디렉토리 아래의 html 컨텐츠가 캐시되지 않도록 합니다.
+* CDN **에서 특정 컨텐츠가 캐시되지 않도록 하려면 Cache-Control 헤더를 *private*로 설정합니다.** 예를 들어, 다음 작업으로 인해 **secure** 라는 디렉토리 아래의 html 컨텐츠가 CDN에서 캐시되지 않게 됩니다.
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Define DISABLE_DEFAULT_CACHING
 
    >[!NOTE]
    >[dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)를 비롯한 다른 메서드는 값을 성공적으로 재정의하지 않습니다.
+
+   >[!NOTE]
+   >Dispatcher가 여전히 자체 [캐싱 규칙](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html)에 따라 콘텐츠를 캐시할 수 있습니다. 컨텐츠를 정말로 비공개로 만들려면 Dispatcher가 캐시하지 않도록 해야 합니다.
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
