@@ -1,9 +1,9 @@
 ---
 title: Screens에서 Cloud Service 구성
 description: 이 페이지에서는 Screens의 Dispatcher 구성을 Cloud Service으로 설명합니다.
-source-git-commit: b00856e1be8842c4e9fa6ed4ada9129926c73ef5
+source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,7 @@ ht-degree: 0%
 
 Screens에서 Cloud Service 인스턴스로 게시 인스턴스에 대해 dispatcher에서 다음 필터 및 캐시 규칙을 허용합니다.
 
-### 필터 {#filters}
-
-## AEM Screens 필터
+### AEM Screens 필터 {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +30,12 @@ Screens에서 Cloud Service 인스턴스로 게시 인스턴스에 대해 dispat
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-## 캐시 규칙 {#cache-rules}
+### 캐시 규칙 {#cache-rules}
 
 * `publish_farm.any`/의 `/cache` 섹션에 `/statfileslevel "10"`을 추가합니다.
 
    >[!NOTE]
-   >이 기능은 캐시 docroot에서 최대 10개의 수준을 캐싱하고 컨텐츠가 게시되면 모든 항목을 무효화하지 않고 무효화할 수 있습니다. 컨텐츠 구조의 깊이를 기준으로 이 수준을 변경할 수 있습니다.
+   >이 캐시 규칙은 캐시 docroot에서 최대 10개 수준의 캐싱을 지원하며 컨텐츠가 게시되면 모든 항목을 무효화하지 않고 무효화합니다. 컨텐츠 구조가 설정되는 깊이에 따라 이 수준을 변경할 수 있습니다.
 
 * `publish_farm.any`의 `/invalidate` 섹션에 다음을 추가합니다.
 
@@ -56,7 +54,7 @@ Screens에서 Cloud Service 인스턴스로 게시 인스턴스에 대해 dispat
         {
         /glob "/content/screens/*.html"
         /type "allow"
-            }
+        }
    
    ## Allow Dispatcher Cache for Screens offline manifests
    
