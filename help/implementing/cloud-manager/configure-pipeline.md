@@ -2,7 +2,7 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 1. **소스 코드** 탭에서는 저장소를 업데이트할 수 있습니다. **보고서 정보에 액세스**&#x200B;를 클릭하여 저장소를 업데이트합니다.
 
    >[!NOTE]
-   >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos)를 참조하십시오.
+   >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
 
    ![](assets/configure-pipeline/edit-pipeline-2.png)
 

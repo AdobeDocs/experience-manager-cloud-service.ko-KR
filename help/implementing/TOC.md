@@ -5,7 +5,7 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 44%
@@ -56,6 +56,13 @@ ht-degree: 44%
       + [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [빌드 환경 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [환경 관리](cloud-manager/manage-environments.md)
+   + 코드 관리 {#managing-code}
+      + [Maven 프로젝트 버전 처리](cloud-manager/managing-code/project-version-handling.md)
+      + [Cloud Manager의 저장소](cloud-manager/managing-code/cloud-manager-repositories.md)
+      + [저장소 액세스](cloud-manager/managing-code/accessing-repos.md)
+      + [Adobe Cloud Manager와 Git 통합](cloud-manager/managing-code/integrating-with-git.md)
+      + [여러 소스 Git 리포지토리 작업](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [AEM as a Cloud Service에 대한 Enterprise Team Development 설정](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
    + [코드 배포](cloud-manager/deploy-code.md)
    + 테스트 결과 이해 {#test-results}
@@ -95,13 +102,6 @@ ht-degree: 44%
       + [IP 허용 목록 삭제](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP 허용 목록 상태 확인](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
-+ 코드 관리 {#managing-code}
-   + [Maven 프로젝트 버전 처리](cloud-manager/project-version-handling.md)
-   + [Cloud Manager의 저장소](cloud-manager/cloud-manager-repositories.md)
-   + [저장소 액세스](cloud-manager/accessing-repos.md)
-   + [Adobe Cloud Manager와 Git 통합](cloud-manager/integrating-with-git.md)
-   + [여러 소스 Git 리포지토리 작업](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [AEM as a Cloud Service에 대한 Enterprise Team Development 설정](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + AEM as a Cloud Service를 위한 개발 {#developing}
    + [AEM 프로젝트 구조](developing/introduction/aem-project-content-package-structure.md)
    + [AEM 프로젝트 저장소 구조 패키지](developing/introduction/repository-structure-package.md)

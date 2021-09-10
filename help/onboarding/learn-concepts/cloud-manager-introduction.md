@@ -2,7 +2,7 @@
 title: Cloud Manager란?
 description: Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알려면 이 페이지를 따르십시오.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 
 고객이 AEM as a Cloud Service으로 빠르게 시작할 수 있도록 Cloud Manager는 클라우드 리소스 및 환경을 만드는 기능을 포함하여 셀프 서비스 방식으로 시작하는 데 필요한 모든 것을 제공합니다. 이러한 방식으로 AEM 개발자는 Cloud Manager를 통해 Git 리포지토리에 액세스할 수 있습니다. 개발 팀은 Cloud Manager를 사용하여 셀프 서비스 방식으로 변경 사항을 자주 커밋하는 작업을 수행할 수 있습니다.
 
-시스템 관리자는 클라우드 리소스 및 개발자를 생성할 개인을 포함하는 Cloud Manager 팀을 설정할 책임이 있습니다. Cloud Manager가 Enterprise Team Development Setup에서 Cloud Manager를 지원하는 방법에 대해 알아보려면 [AEM as a Cloud Service용 Enterprise Team Development Setup 을 참조하십시오.](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
+시스템 관리자는 클라우드 리소스 및 개발자를 생성할 개인을 포함하는 Cloud Manager 팀을 설정할 책임이 있습니다. Cloud Manager가 Enterprise Team Development Setup에서 Cloud Manager를 지원하는 방법에 대해 알아보려면 [AEM as a Cloud Service용 Enterprise Team Development Setup 을 참조하십시오.](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
 
 ## Cloud Manager의 개요 페이지로 이동 {#navigate-cloud-manager}
 

@@ -2,7 +2,7 @@
 title: '샌드박스 프로그램 만들기 '
 description: 샌드박스 프로그램 만들기
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Cloud Manager UI에서 셀프 서비스 Git 계정 관리를 사용하여 Git 리포지토리에 액세스 및 관리하는 방법에 대한 자세한 내용은 [Git](/help/implementing/cloud-manager/accessing-repos.md)액세스 를 참조하십시오.
+   >Cloud Manager UI에서 셀프 서비스 Git 계정 관리를 사용하여 Git 리포지토리에 액세스 및 관리하는 방법에 대한 자세한 내용은 [Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)액세스 를 참조하십시오.
 
 
 1. 개발 환경이 만들어지면 사용자는 아래 그림과 같이 **AEM** 링크에 액세스할 수 있습니다.
