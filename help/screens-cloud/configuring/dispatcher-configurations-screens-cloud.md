@@ -1,19 +1,19 @@
 ---
 title: Screens에서 Cloud Service 구성
 description: 이 페이지에서는 Screens의 Dispatcher 구성을 Cloud Service으로 설명합니다.
-source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
+source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
 
-# Screens에서 Cloud Service 구성{#dispatcher-configurations-screens-cloud}
+# Screens에서 Cloud Service 구성 {#dispatcher-configurations-screens-cloud}
 
 이 섹션에서는 Screens에 대한 디스패처 구성을 Cloud Service으로 설명합니다.
 
-## Screens as a Cloud Service 배포용 Dispatcher 구성 {#deployment}
+## Screens용 Dispatcher에서 Cloud Service 배포으로 필터 및 캐시 규칙 추가 {#deployment}
 
 Screens에서 Cloud Service 인스턴스로 게시 인스턴스에 대해 dispatcher에서 다음 필터 및 캐시 규칙을 허용합니다.
 
