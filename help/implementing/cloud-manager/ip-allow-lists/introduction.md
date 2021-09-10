@@ -2,7 +2,7 @@
 title: 소개 - Cloud Manager의 IP 허용 목록
 description: 소개 - Cloud Manager의 IP 허용 목록
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 3f282169b9ac2e2cf3e58277fd0c32cd97003de2
+source-git-commit: e20328721ba2583ed32580e47c806460ace4815c
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 AEM as a cloud service는 인터넷에 연결되며 보안은 사용자 인증 및 승인을 통해 처리됩니다. IP 허용 목록은 신뢰할 수 있는 사용자에게만 대한 액세스를 제한하고 제어하는 데 사용되는 Cloud Manager의 기능입니다. 이 기능을 사용하면 권한이 있는 사용자가 사이트 사용자가 AEM 도메인에 액세스할 수 있는 신뢰할 수 있는 IP 주소의 허용 목록을 만들 수 있습니다.
 
 >[!NOTE]
->프로그램에 최대 10개의 IP 허용 목록을 추가할 수 있으며 각 IP 허용 목록에 최대 50개의 IP/CIDR 주소를 추가할 수 있습니다.
+>프로그램에 최대 50개의 IP 허용 목록을 추가할 수 있으며 각 IP 허용 목록에 최대 50개의 IP/CIDR 주소를 추가할 수 있습니다.
 
 IP 허용 목록은 한 번 추가하고 환경의 작성자 및/또는 게시자 서비스에 단위 또는 엔티티로 여러 번 적용/적용할 수 있습니다.
 
