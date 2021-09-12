@@ -1,11 +1,11 @@
 ---
 title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: 헤드리스 컨텐츠 전달을 위해 AEM GraphQL API를 사용하는 Cloud Service으로 Adobe Experience Manager(AEM)의 컨텐츠 조각을 사용하는 방법을 알아봅니다.
-feature: 컨텐츠 조각,GraphQL API
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3929'
 ht-degree: 2%
 
 ---
@@ -108,7 +108,7 @@ GraphQL을 사용하여 다음 중 하나를 반환하기 위한 쿼리를 수�
 >[!NOTE]
 >[GraphiQL IDE](#graphiql-interface)를 사용하여 GraphQL 쿼리를 테스트하고 디버그할 수 있습니다.
 
-## AEM 끝점에 대한 GraphQL {#graphql-aem-endpoint}
+## AEM 종단점에 대한 GraphQL {#graphql-aem-endpoint}
 
 끝점은 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 이 경로 사용(또는 앱)은 다음 작업을 수행할 수 있습니다.
 
@@ -133,7 +133,7 @@ AEM에는 두 가지 유형의 엔드포인트가 있습니다.
 >
 >이러한 경우 사이트 구성 특정 종단점을 사용하여 일부 컨텐츠를 검색할 수 있는 것은 아닙니다.
 >
->컨텐츠 작성자는 이 시나리오를 제어해야 합니다.예를 들어, 글로벌 사이트 구성에 공유 컨텐츠 조각 모델을 적용하는 것이 유용할 수 있습니다.
+>컨텐츠 작성자는 이 시나리오를 제어해야 합니다. 예를 들어, 글로벌 사이트 구성에 공유 컨텐츠 조각 모델을 적용하는 것이 유용할 수 있습니다.
 
 AEM용 GraphQL 글로벌 끝점의 저장소 경로는 다음과 같습니다.
 
@@ -148,7 +148,7 @@ GraphQL for AEM에 대해 끝점을 활성화하려면 다음을 수행해야 �
 * [GraphQL 끝점 활성화](#enabling-graphql-endpoint)
 * [GraphQL 끝점 게시](#publishing-graphql-endpoint)
 
-### GraphQL 엔드포인트 {#enabling-graphql-endpoint} 활성화
+### GraphQL 끝점 활성화 {#enabling-graphql-endpoint}
 
 GraphQL 종단점을 사용하려면 먼저 적절한 구성이 있어야 합니다. [컨텐츠 조각 - 구성 브라우저](/help/assets/content-fragments/content-fragments-configuration-browser.md)를 참조하십시오.
 
@@ -161,8 +161,8 @@ GraphQL 종단점을 사용하려면 먼저 적절한 구성이 있어야 합니
 1. **도구**, **자산**&#x200B;으로 이동한 다음 **GraphQL**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택합니다.
 1. **새 GraphQL 끝점 만들기** 대화 상자가 열립니다. 여기에서 다음을 지정할 수 있습니다.
-   * **이름**:끝점의 이름;텍스트를 입력할 수 있습니다.
-   * ****&#x200B;에서 제공하는 GraphQL 스키마 사용:드롭다운을 사용하여 필요한 사이트/프로젝트를 선택합니다.
+   * **이름**: 끝점의 이름; 텍스트를 입력할 수 있습니다.
+   * ****&#x200B;에서 제공하는 GraphQL 스키마 사용: 드롭다운을 사용하여 필요한 사이트/프로젝트를 선택합니다.
 
    >[!NOTE]
    >
@@ -212,16 +212,16 @@ GraphQL 종단점을 사용하려면 먼저 적절한 구성이 있어야 합니
 
 ### AEM GraphiQL 인터페이스 설치 {#installing-graphiql-interface}
 
-전용 패키지를 사용하여 AEM에 GraphiQL 사용자 인터페이스를 설치할 수 있습니다.[GraphiQL 컨텐츠 패키지 v0.0.6(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) 패키지
+전용 패키지를 사용하여 AEM에 GraphiQL 사용자 인터페이스를 설치할 수 있습니다. [GraphiQL 컨텐츠 패키지 v0.0.6(2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) 패키지
 
-## 작성자 및 게시 환경에 대한 사용 사례 {#use-cases-author-publish-environments}
+## 작성 및 게시 환경에 대한 사용 사례 {#use-cases-author-publish-environments}
 
 사용 사례는 AEM as a Cloud Service 환경에 따라 달라질 수 있습니다.
 
-* 게시 환경;다음 작업에 사용됩니다.
+* 게시 환경; 다음 작업에 사용됩니다.
    * JS 애플리케이션에 대한 쿼리 데이터(표준 사용 사례)
 
-* 작성 환경다음 작업에 사용됩니다.
+* 작성 환경 다음 작업에 사용됩니다.
    * &quot;컨텐츠 관리 목적&quot;을 위한 쿼리 데이터:
       * AEM as a Cloud Service의 GraphQL은 현재 읽기 전용 API입니다.
       * REST API는 CR(u)D 작업에 사용할 수 있습니다.
@@ -242,7 +242,7 @@ GraphQL 사양은 특정 인스턴스에 대한 데이터 조사를 위한 강�
 >
 >모든 GraphQL 스키마( **Enabled** 컨텐츠 조각 모델에서 파생됨)는 GraphQL 종단점을 통해 읽을 수 있습니다.
 >
->이는 민감한 데이터가 이러한 방식으로 유출될 수 있으므로 사용할 수 없도록 해야 함을 의미합니다.예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
+>이는 민감한 데이터가 이러한 방식으로 유출될 수 있으므로 사용할 수 없도록 해야 함을 의미합니다. 예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
 
 예를 들어 사용자가 `Article` 컨텐츠 조각 모델을 만든 경우 AEM은 `ArticleModel` 유형의 `article` 개체를 생성합니다. 이 유형 내의 필드는 모델에 정의된 필드 및 데이터 유형에 해당합니다.
 
@@ -255,9 +255,9 @@ GraphQL 사양은 특정 인스턴스에 대한 데이터 조사를 위한 강�
 
    생성된 형식 `ArticleModel`에 여러 개의 [필드가 포함되어 있음을 보여줍니다](#fields).
 
-   * 이 중 3개는 사용자가 제어했습니다.`author`, `main` 및 `referencearticle`.
+   * 이 중 3개는 사용자가 제어했습니다. `author`, `main` 및 `referencearticle`.
 
-   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 컨텐츠 조각에 대한 정보를 제공하는 유용한 방법을 나타냅니다.이 예에서 `_path`, `_metadata`, `_variations` 입니다. 이러한 [도우미 필드](#helper-fields)는 사용자가 정의한 필드와 자동 생성된 필드를 구분하기 위해 이전 `_`로 표시됩니다.
+   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 컨텐츠 조각에 대한 정보를 제공하는 유용한 방법을 나타냅니다. 이 예에서 `_path`, `_metadata`, `_variations` 입니다. 이러한 [도우미 필드](#helper-fields)는 사용자가 정의한 필드와 자동 생성된 필드를 구분하기 위해 이전 `_`로 표시됩니다.
 
 1. 사용자가 문서 모델을 기반으로 컨텐츠 조각을 만든 후 GraphQL을 통해 질문할 수 있습니다. 예를 들어 [샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)([GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)에 사용할 샘플 컨텐츠 조각 구조 기반)를 참조하십시오.
 
@@ -281,7 +281,7 @@ Sites GraphQL 서비스는 컨텐츠 조각 모델에 수행된 수정 사항을
 >
 >REST api를 통해 컨텐츠 조각 모델에 대해 벌크 업데이트를 수행하거나 수행하려는 경우 메모하는 것이 중요합니다.
 
-스키마는 GraphQL 쿼리와 동일한 종단점을 통해 제공되며 클라이언트는 확장이 `GQLschema` 확장으로 호출된다는 사실을 처리합니다. 예를 들어 `/content/cq:graphql/global/endpoint.GQLschema`에 대해 간단한 `GET` 요청을 수행하면 Content-type이 있는 스키마가 출력됩니다.`text/x-graphql-schema;charset=iso-8859-1`
+스키마는 GraphQL 쿼리와 동일한 종단점을 통해 제공되며 클라이언트는 확장이 `GQLschema` 확장으로 호출된다는 사실을 처리합니다. 예를 들어 `/content/cq:graphql/global/endpoint.GQLschema`에 대해 간단한 `GET` 요청을 수행하면 Content-type이 있는 스키마가 출력됩니다. `text/x-graphql-schema;charset=iso-8859-1`
 
 ### 스키마 생성 - 게시 취소된 모델 {#schema-generation-unpublished-models}
 
@@ -301,7 +301,7 @@ Sites GraphQL 서비스는 컨텐츠 조각 모델에 수행된 수정 사항을
 
    [필드 유형](#field-types) 은 컨텐츠 조각 모델을 구성하는 방법에 따라 필드를 만드는 데 사용됩니다. 필드 이름은 **데이터 유형**&#x200B;의 **속성 이름** 필드에서 가져옵니다.
 
-   * 사용자가 특정 데이터 유형을 구성할 수 있으므로 고려할 **Render As** 속성도 있습니다.예를 들어, 단일 행 텍스트 또는 다중 필드로 사용할 수 있습니다.
+   * 사용자가 특정 데이터 유형을 구성할 수 있으므로 고려할 **Render As** 속성도 있습니다. 예를 들어, 단일 행 텍스트 또는 다중 필드로 사용할 수 있습니다.
 
 * AEM용 GraphQL도 많은 [도우미 필드](#helper-fields)를 생성합니다.
 
@@ -314,10 +314,10 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 컨텐�
 | 컨텐츠 조각 모델 - 데이터 유형 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
 | 한 줄 텍스트 | 문자열, [문자열] |  작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됩니다. |
-| 여러 줄 텍스트 | 문자열 |  문서 본문 등의 텍스트를 출력하는 데 사용됩니다. |
+| 여러 줄 텍스트 | String |  문서 본문 등의 텍스트를 출력하는 데 사용됩니다. |
 | 번호 |  Float, [Float] | 부동 소수점 번호와 일반 숫자를 표시하는 데 사용됩니다. |
 | 부울 |  부울 |  확인란→ 단순 true/false 문을 표시하는 데 사용됩니다 |
-| 날짜 및 시간 | 달력 |  날짜와 시간을 ISO 8086 형식으로 표시하는 데 사용됩니다. 선택한 유형에 따라 AEM GraphQL에서 사용할 수 있는 세 가지 방식이 있습니다.`onlyDate`, `onlyTime`, `dateTime` |
+| 날짜 및 시간 | 달력 |  날짜와 시간을 ISO 8086 형식으로 표시하는 데 사용됩니다. 선택한 유형에 따라 AEM GraphQL에서 사용할 수 있는 세 가지 방식이 있습니다. `onlyDate`, `onlyTime`, `dateTime` |
 | 열거 |  String |  모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됩니다. |
 |  태그 |  [String] |  AEM에 사용된 태그를 나타내는 문자열 목록을 표시하는 데 사용됩니다. |
 | 컨텐츠 참조 |  문자열 |  AEM에서 다른 자산을 향해 경로를 표시하는 데 사용됩니다 |
@@ -525,19 +525,19 @@ query {
 
 * [WKND 프로젝트를 기반으로 하는 샘플 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
+## GraphQL for AEM - 확장 요약 {#graphql-extensions}
 
 GraphQL for AEM을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양을 준수합니다. AEM을 사용하는 GraphQL 쿼리의 경우 몇 가지 확장이 있습니다.
 
 * 단일 결과가 필요한 경우:
-   * 모델 이름 사용;g city
+   * 모델 이름 사용; g city
 
 * 결과 목록이 예상되면:
-   * 모델 이름에 `List` 추가;예: `cityList`
+   * 모델 이름에 `List` 추가; 예: `cityList`
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](#sample-all-information-all-cities)를 참조하십시오.
 
 * 논리 OR를 사용하려면
-   * ` _logOp: OR` 사용
+   * use ` _logOp: OR`
    * [샘플 쿼리 - &quot;Jobs&quot; 또는 &quot;Smith&quot;](#sample-all-persons-jobs-smith)의 이름을 가진 모든 사용자 를 참조하십시오.
 
 * 논리 AND도 존재하지만 (종종) 암시적
@@ -549,26 +549,26 @@ GraphQL for AEM을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양
 
    * 컨텐츠의 경우:
 
-      * `_locale` :언어를 공개하다;언어 관리자 기반
+      * `_locale` : 언어를 공개하다; 언어 관리자 기반
          * 지정된 로케일의 여러 컨텐츠 조각에 대해서는 [샘플 쿼리를 참조하십시오](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` :조각에 대한 메타데이터를 표시하려면 다음을 수행하십시오.
+      * `_metadata` : 조각에 대한 메타데이터를 표시하려면 다음을 수행하십시오.
          * [메타데이터에 대한 샘플 쿼리 - GB](#sample-metadata-awards-gb)라는 이름의 시상식에 대한 메타데이터 목록을 참조하십시오.
-      * `_model` :컨텐츠 조각 모델(경로 및 제목)에 대한 쿼리 허용
+      * `_model` : 컨텐츠 조각 모델(경로 및 제목)에 대한 쿼리 허용
          * 모델](#sample-wknd-content-fragment-model-from-model)에서 컨텐츠 조각 모델에 대한 샘플 쿼리를 참조하십시오.[
-      * `_path` :리포지토리 내의 컨텐츠 조각 경로
+      * `_path` : 리포지토리 내의 컨텐츠 조각 경로
          * [샘플 쿼리 - 단일 특정 도시 조각](#sample-single-specific-city-fragment)을 참조하십시오.
-      * `_reference` :참조를 표시합니다.리치 텍스트 편집기에서 인라인 참조 포함
+      * `_reference` : 참조를 표시합니다. 리치 텍스트 편집기에서 인라인 참조 포함
          * 프리페치된 참조가 있는 다중 컨텐츠 조각에 대한 샘플 쿼리](#sample-wknd-multiple-fragments-prefetched-references)를 참조하십시오.[
-      * `_variation` :컨텐츠 조각 내의 특정 변형을 노출하려면
+      * `_variation` : 컨텐츠 조각 내의 특정 변형을 노출하려면
          * [샘플 쿼리 - 명명된 변형을 가진 모든 도시](#sample-cities-named-variation)를 참조하십시오.
    * 및 작업:
 
-      * `_operator` :특정 연산자 적용 `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
+      * `_operator` : 특정 연산자 적용  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
          * [샘플 쿼리 - &quot;Jobs&quot;](#sample-all-persons-not-jobs)의 이름이 없는 모든 사용자 를 참조하십시오.
          * [샘플 쿼리 - `_path`이 특정 접두사로 시작되는 모든 모험을 참조하십시오](#sample-wknd-all-adventures-cycling-path-filter)
-      * `_apply` :특정 조건을 적용하는 경우예   `AT_LEAST_ONCE`
+      * `_apply` : 특정 조건을 적용하는 경우 예   `AT_LEAST_ONCE`
          * [샘플 쿼리 - 적어도 한 번 이상 ](#sample-array-item-occur-at-least-once) 발생해야 하는 항목이 있는 배열에 대해 필터링 을 참조하십시오
-      * `_ignoreCase` :쿼리 시 대/소문자를 무시하려면
+      * `_ignoreCase` : 쿼리 시 대/소문자를 무시하려면
          * [샘플 쿼리 - 대/소문자를 구분하지 않고 이름에 SAN이 있는 모든 도시 를 참조하십시오.](#sample-all-cities-san-ignore-case)
 
 
@@ -590,7 +590,7 @@ POST 요청을 사용하여 쿼리를 작성한 후 HTTP 캐시 또는 CDN에 �
 
 POST 쿼리는 일반적으로 캐시되지 않으므로 이러한 작업이 필요하며, 쿼리와 함께 GET을 매개 변수로 사용하는 경우 HTTP 서비스 및 중간값에 대해 매개 변수가 너무 커질 가능성이 있습니다.
 
-지속되는 쿼리는 항상 [적절한 사이트 구성](#graphql-aem-endpoint);과 관련된 끝점을 사용해야 합니다.둘 중 하나 또는 둘 다 사용할 수 있습니다.
+지속되는 쿼리는 항상 [적절한 사이트 구성](#graphql-aem-endpoint);과 관련된 끝점을 사용해야 합니다. 둘 중 하나 또는 둘 다 사용할 수 있습니다.
 
 * 전역 구성 및 끝점
 이 쿼리는 모든 컨텐츠 조각 모델에 액세스할 수 있습니다.
@@ -801,7 +801,7 @@ POST 쿼리는 일반적으로 캐시되지 않으므로 이러한 작업이 필
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 
-## 외부 웹 사이트 {#query-graphql-endpoint-from-external-website}에서 GraphQL 엔드포인트 쿼리
+## 외부 웹 사이트에서 GraphQL 끝점 쿼리 {#query-graphql-endpoint-from-external-website}
 
 외부 웹 사이트에서 GraphQL 종단점에 액세스하려면 다음을 구성해야 합니다.
 
@@ -812,7 +812,7 @@ POST 쿼리는 일반적으로 캐시되지 않으므로 이러한 작업이 필
 
 >[!NOTE]
 >
->AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
+>AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
 
 GraphQL 종단점에 액세스하려면 고객 Git 리포지토리에서 CORS 정책을 구성해야 합니다. 이 작업은 원하는 엔드포인트에 대한 적절한 OSGi CORS 구성 파일을 추가하여 수행합니다.
 
@@ -861,7 +861,7 @@ CORS 구성 외에 타사 호스트에서 액세스할 수 있도록 레퍼러 �
 
 이 작업은 다음과 같은 적절한 OSGi 레퍼러 필터 구성 파일을 추가하여 수행합니다.
 
-* 신뢰할 수 있는 웹 사이트 호스트 이름을 지정합니다.`allow.hosts` 또는 `allow.hosts.regexp`,
+* 신뢰할 수 있는 웹 사이트 호스트 이름을 지정합니다. `allow.hosts` 또는 `allow.hosts.regexp`,
 * 이 호스트 이름에 대한 액세스 권한을 부여합니다.
 
 예를 들어 레퍼러 `my.domain`를 사용하여 요청에 대한 액세스 권한을 부여하려면 다음을 수행할 수 있습니다.
@@ -894,14 +894,14 @@ CORS 구성 외에 타사 호스트에서 액세스할 수 있도록 레퍼러 �
 >
 >* 신뢰할 수 있는 도메인에 대한 액세스 권한만 부여
 >* 중요한 정보가 노출되지 않도록 합니다.
->* 와일드카드 [*] 구문을 사용하지 않음;이렇게 하면 GraphQL 종단점에 대한 인증된 액세스를 비활성화하고 전체 세계에 노출됩니다.
+>* 와일드카드 [*] 구문을 사용하지 않음; 이렇게 하면 GraphQL 종단점에 대한 인증된 액세스를 비활성화하고 전체 세계에 노출됩니다.
 
 
 >[!CAUTION]
 >
 >모든 GraphQL [스키마](#schema-generation)(**Enabled**)는 GraphQL 종단점을 통해 읽을 수 있습니다.
 >
->이는 민감한 데이터가 이러한 방식으로 유출될 수 있으므로 사용할 수 없도록 해야 함을 의미합니다.예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
+>이는 민감한 데이터가 이러한 방식으로 유출될 수 있으므로 사용할 수 없도록 해야 함을 의미합니다. 예를 들어 모델 정의에서 필드 이름으로 존재할 수 있는 정보가 포함됩니다.
 
 ## 인증 {#authentication}
 
@@ -923,9 +923,9 @@ CORS 구성 외에 타사 호스트에서 액세스할 수 있도록 레퍼러 �
 
 발생한 질문:
 
-1. **Q**:*&quot;AEM용 GraphQL API는 Query Builder API와 어떻게 다릅니까?*&quot;
+1. **Q**: *&quot;AEM용 GraphQL API는 Query Builder API와 어떻게 다릅니까?*&quot;
 
-   * **A**:&quot;*AEM GraphQL API는 JSON 출력에 대한 전체 제어 기능을 제공하며 컨텐츠를 쿼리하는 업계 표준입니다.
+   * **A**: &quot;*AEM GraphQL API는 JSON 출력에 대한 전체 제어 기능을 제공하며 컨텐츠를 쿼리하는 업계 표준입니다.
 앞으로 AEM에서는 AEM GraphQL API에 투자할 계획입니다.*&quot;
 
 ## 자습서 - AEM 헤드리스 및 GraphQL 시작하기 {#tutorial}

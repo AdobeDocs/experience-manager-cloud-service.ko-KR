@@ -3,12 +3,12 @@ title: 통합 우수 사례 [!DNL Adobe Creative Cloud]
 description: 우수 사례 는 Adobe Creative Cloud과 Experience Manager 배포를 통합하여 자산 전송 워크플로우를 간소화하고 최대 효율성을 달성합니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: 공동 작업,Adobe 자산 링크,데스크탑 앱
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3443'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Adobe Creative Cloud은 크리에이티브 팀이 디지털 자산을 만드는 
 | 관련 성향에 대한 가치 제안 | Adobe 제공 | 관련 서피스 |
 |---|---|---|
 | 크리에이티브 사용자는 [!DNL Experience Manager]에서 자산을 찾고, 열고, 사용하고, 변경 사항을 [!DNL Experience Manager]에 편집하고, [!DNL Creative Cloud] 앱을 종료하지 않고 [!DNL Experience Manager]에 새 파일을 업로드합니다. | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator 및 InDesign. |
-| 비즈니스 사용자는 자산을 열고 사용, 변경 내용을 [!DNL Experience Manager]에 편집 및 업로드하고, 데스크탑 환경에서 [!DNL Experience Manager]에 새 파일을 업로드하는 작업을 단순화합니다. 일반 통합을 사용하여 비Adobe을 포함하여 기본 데스크탑 애플리케이션에서 자산 유형을 엽니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Win 및 Mac 데스크탑의 데스크탑 앱 Experience Manager |
+| 비즈니스 사용자는 자산을 열고 사용, 변경 내용을 [!DNL Experience Manager]에 편집 및 업로드하고, 데스크탑 환경에서 [!DNL Experience Manager]에 새 파일을 업로드하는 작업을 단순화합니다. 일반 통합을 사용하여 비Adobe을 포함하여 기본 데스크탑 애플리케이션에서 자산 유형을 엽니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win 및 Mac 데스크탑의 데스크탑 앱 Experience Manager |
 | 마케터와 비즈니스 사용자는 Experience Manager 내에서 Adobe Stock 자산을 검색, 미리 보기, 라이선스 및 저장 및 관리합니다. 라이선스와 저장된 자산은 더 나은 거버넌스를 위해 선별된 Adobe Stock 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
 | 디지털 제품 디자이너와 마케터 간의 공동 작업을 개선합니다. 디자이너는 디자인에서 디지털 자산을 사용하고 Adobe XD 캔버스에서 와이어프레임 모델을 사용할 수 있습니다. | [[!DNL Adobe Asset Link] 대상 [!DNL Adobe XD]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | 마케터는 사용자 지정을 사용하여 만든 업로드된 자산 및 사전 정의된 작업을 기반으로 변형 및 파생물을 자동으로 만들 수 있습니다. 이 자동화를 사용하여 컨텐츠 속도를 향상시키고 수작업 부담을 줄일 수 있습니다. | [컨텐츠 자동화](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] 웹 인터페이스 |

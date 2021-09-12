@@ -1,13 +1,13 @@
 ---
 title: 컨텐츠 조각을 사용한 작업
 description: AEM(Adobe Experience Manager)의 Cloud Service 컨텐츠 조각을 사용하여 헤드리스 게재에 적합한 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법을 알아봅니다.
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 75%
+source-wordcount: '2033'
+ht-degree: 76%
 
 ---
 
@@ -51,9 +51,9 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >
 >* [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* [컨텐츠 조각 사용자 지정 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
-* [컨텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-* [AEM Assets HTTP API의 컨텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [컨텐츠 조각에 사용할 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [컨텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [AEM Assets HTTP API의 컨텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [컨텐츠 조각에 사용할 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 통신 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
@@ -75,12 +75,15 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 그런 다음 이러한 컨텐츠 조각을 취합하여 다양한 채널에서 경험을 제공할 수 있습니다.
 
 >[!NOTE]
-**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
-* **컨텐츠** 조각은 편집 가능한 컨텐츠이며, 텍스트, 숫자, 날짜 등을 포함하여 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 순수 컨텐츠입니다.
-* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
+>
+>**컨텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
+>* **컨텐츠** 조각은 편집 가능한 컨텐츠이며, 텍스트, 숫자, 날짜 등을 포함하여 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 순수 컨텐츠입니다.
+>* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
 
-경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
-자세한 내용은 [AEM의 컨텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)를 참조하십시오.
+>
+>경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
+>
+>자세한 내용은 [AEM의 컨텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 ## 컨텐츠 조각 및 컨텐츠 서비스 {#content-fragments-and-content-services}
 
@@ -99,13 +102,16 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 그런 다음 AEM 핵심 구성 요소의 JSON 내보내기 기능과 함께 이 구조화된 컨텐츠를 사용하여 AEM 페이지 이외의 채널에 AEM 컨텐츠를 게재할 수 있습니다.
 
 >[!NOTE]
-Headless Development for AEM Sites as a Cloud Service에 대한 소개는 [Headless 및 AEM](/help/implementing/developing/headless/introduction.md)를 참조하십시오.
+>
+>Headless Development for AEM Sites as a Cloud Service에 대한 소개는 [Headless 및 AEM](/help/implementing/developing/headless/introduction.md)를 참조하십시오.
 
 >[!NOTE]
-AEM은 조각 컨텐츠 번역도 지원합니다.
+>
+>AEM은 조각 컨텐츠 번역도 지원합니다.
 
 >[!NOTE]
-AEM은 조각 컨텐츠 번역도 지원합니다. 자세한 내용은 [자산 번역](/help/assets/translate-assets.md)을 참조하십시오.
+>
+>AEM은 조각 컨텐츠 번역도 지원합니다. 자세한 내용은 [자산 번역](/help/assets/translate-assets.md)을 참조하십시오.
 
 ## 컨텐츠 유형 {#content-type}
 
@@ -144,7 +150,8 @@ AEM은 조각 컨텐츠 번역도 지원합니다. 자세한 내용은 [자산 �
    * 자세한 내용은 조각 편집기에서 [조각에 자산 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 참조하십시오.
 
    >[!NOTE]
-   컨텐츠 조각 자체에 삽입된 시각적 자산은 선행하는 단락에 첨부됩니다. 조각을 페이지에 추가하면 이러한 자산이 중간적 컨텐츠가 추가될 때 해당 단락과 관련하여 이동됩니다.
+   >
+   >컨텐츠 조각 자체에 삽입된 시각적 자산은 선행하는 단락에 첨부됩니다. 조각을 페이지에 추가하면 이러한 자산이 중간적 컨텐츠가 추가될 때 해당 단락과 관련하여 이동됩니다.
 
 * **관련 컨텐츠**
 
@@ -188,10 +195,12 @@ AEM은 조각 컨텐츠 번역도 지원합니다. 자세한 내용은 [자산 �
    * 선행하는 텍스트(단락)에 첨부됩니다.
 
       >[!CAUTION]
-      일반 텍스트 형식으로 전환하여 실수로 조각에서 자산을 제거할 수 있습니다.
+      >
+      >일반 텍스트 형식으로 전환하여 실수로 조각에서 자산을 제거할 수 있습니다.
 
       >[!NOTE]
-      자산은 페이지에서 조각을 사용할 때 [추가적인(중간적) 컨텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)로도 추가할 수 있습니다. 이때 자산은 관련 컨텐츠를 사용하거나 자산 브라우저의 자산을 사용합니다.
+      >
+      >자산은 페이지에서 조각을 사용할 때 [추가적인(중간적) 컨텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)로도 추가할 수 있습니다. 이때 자산은 관련 컨텐츠를 사용하거나 자산 브라우저의 자산을 사용합니다.
 
 * **관련 컨텐츠**
 
@@ -215,7 +224,8 @@ AEM은 조각 컨텐츠 번역도 지원합니다. 자세한 내용은 [자산 �
          * 조각 편집기에 있을 때 **메타데이터**&#x200B;를 편집하여
 
    >[!CAUTION]
-   메타데이터 처리 프로필은 컨텐츠 조각에 적용되지 않습니다.
+   >
+   >메타데이터 처리 프로필은 컨텐츠 조각에 적용되지 않습니다.
 
 * **마스터**
 
@@ -248,7 +258,8 @@ AEM은 조각 컨텐츠 번역도 지원합니다. 자세한 내용은 [자산 �
 * 연관된 컨텐츠는 적절한 브라우저에서 자산 및/또는 구성 요소처럼 사용할 수 있습니다.
 
 >[!CAUTION]
-중간 컨텐츠는 페이지 컨텐츠이며, 컨텐츠 조각에 저장되지 않습니다.
+>
+>중간 컨텐츠는 페이지 컨텐츠이며, 컨텐츠 조각에 저장되지 않습니다.
 
 ### 조각에 필요 {#required-by-fragments}
 

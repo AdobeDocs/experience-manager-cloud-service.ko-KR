@@ -4,9 +4,9 @@ description: Dynamic Media에서 대화형 비디오 및 쇼퍼블 비디오를 
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '5936'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 비디오를 일시 중지하고 제품의 Quickview를 열려면 축소판을 선택합니다. 예를 들어, 비디오에서 KitchenAid 축소판 이미지를 선택하여 믹서의 360° 스핀 보기를 경험하거나 확대하면 혼합 세부 정보를 볼 수 있습니다.
 
-또한 [Dynamic Media에서 대화형 비디오 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)을 참조하십시오
+또한 [Dynamic Media에서 대화형 비디오 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)을 참조하십시오
 
 <!-- 
 

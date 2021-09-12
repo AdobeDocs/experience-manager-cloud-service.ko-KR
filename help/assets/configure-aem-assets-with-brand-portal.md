@@ -2,12 +2,12 @@
 title: Brand Portal을 사용하여 AEM Assets을 [!DNL Cloud Service] 으로 구성
 description: Brand Portal에서 AEM Assets 구성.
 contentOwner: Vishabh Gupta
-feature: Brand Portal,자산 분배,구성
+feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2396'
 ht-degree: 20%
 
 ---
@@ -25,7 +25,7 @@ Cloud Manager 사용자는 AEM Assets에 대해 [!DNL Cloud Service] 인스턴�
 AEM Assets에서 [!DNL Cloud Service] 인스턴스로 Brand Portal을 활성화하려면 다음 항목이 필요합니다.
 
 * [!DNL Cloud Service] 인스턴스로 실행 중인 AEM Assets.
-* Cloud Manager 제품의 프로필에 할당된 Cloud Manager에 액세스할 수 있는 사용자. 자세한 내용은 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#accessing-cloud-manager)액세스 를 참조하십시오.
+* Cloud Manager 제품의 프로필에 할당된 Cloud Manager에 액세스할 수 있는 사용자. 자세한 내용은 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager)액세스 를 참조하십시오.
 
 >[!NOTE]
 >
@@ -61,9 +61,9 @@ AEM Assets에 대한 환경을 [!DNL Cloud Service] 인스턴스로 만들거나
 >기존 Brand Portal 클라우드 구성 및 [!DNL Cloud Service] 인스턴스로 AEM Assets이 동일한 IMS 조직(org1)을 사용하는 경우 Cloud Manager에서 Brand Portal을 활성화하기만 하면 됩니다.
 
 **참고 항목**:
-* [AEM Assets에서 Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
+* [AEM Assets에서 Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
-* [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
+* [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
 **Brand Portal 테넌트에 로그인**:
@@ -132,7 +132,7 @@ AEM Assets as a0/> 인스턴스와 Brand Portal 임차인 간의 연결을 확�
 * [AEM Assets의 자산을 Brand Portal에 게시](publish-to-brand-portal.md)
 * [AEM Assets의 폴더를 Brand Portal에 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [AEM Assets의 컬렉션을 Brand Portal에 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand Portal의 자산을 AEM Assets에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)  - Brand Portal의 자산 소싱
+* [Brand Portal의 자산을 AEM Assets에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Brand Portal의 자산 소싱
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -445,7 +445,7 @@ You can now:
 * [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal
 * [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

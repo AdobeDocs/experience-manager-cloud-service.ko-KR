@@ -3,12 +3,12 @@ title: ' [!DNL Adobe Experience Manager]에서 디지털 자산 및 이미지 �
 description: 필터 패널을 사용하여 [!DNL Adobe Experience Manager] 에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: 검색,메타데이터,자산 분배
+feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '4902'
+source-wordcount: '4898'
 ht-degree: 1%
 
 ---
@@ -289,7 +289,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 *그림: 따옴표가 있는 검색 동작과 없는 검색 동작입니다.*
 
-**별표 와일드카드를 사용하여 검색**: 검색을 확장하려면 검색어 앞이나 뒤에 별표를 사용하여 어떤 수의 문자든 일치시킵니다. 예를 들어 별표 없이 실행을 검색하면 단어의 변형이 포함된 자산(메타데이터에 포함)이 반환되지 않습니다. 별표는 여러 문자를 대체합니다. 예,
+**별표 와일드카드를 사용하여 검색**: 검색을 확장하려면 검색어 앞이나 뒤에 별표를 사용하여 어떤 수의 문자든 일치시킵니다. 예를 들어 별표 없이 실행을 검색하면 단어의 변형이 포함된 자산(메타데이터에 포함)이 반환되지 않습니다. 별표는 여러 문자를 대체합니다. 예를 들어
 
 * `run` 정확히 실행 키워드가 있는 자산 반환
 * `run*` ,  `running`,  `run`등이  `runaway`있는 자산을 반환합니다.
@@ -354,7 +354,7 @@ Visual search uses Smart Tags. After configuring smart tagging functionality, fo
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
 

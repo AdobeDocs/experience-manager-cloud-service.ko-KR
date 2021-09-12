@@ -1,12 +1,12 @@
 ---
 title: Adobe Analytics 및 Experience Platform 태그와 Dynamic Media Viewer 통합
 description: Experience Platform 태그 및 Dynamic Media Viewers 5.13용 Dynamic Media Viewer 확장에 대해 알아봅니다. Adobe Analytics 및 Platform Tags 고객은 Experience Platform 태그 구성에서 Dynamic Media Viewer에 대한 특정 이벤트 및 데이터를 사용할 수 있습니다.
-feature: 자산 보고서
+feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 13dbce0d8ad25fec47460a41c5ea3e355a4dd486
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '6681'
+source-wordcount: '6675'
 ht-degree: 0%
 
 ---
@@ -231,7 +231,7 @@ Dynamic Media Viewers 확장에서 제공하는 유일한 데이터 요소 유�
 
 어떤 경우든 Dynamic Media 뷰어에 의해 구동되는 데이터 요소의 값은 로컬 저장소 또는 서버에 저장되지 않습니다. 대신 클라이언트측 Experience Platform 태그 라이브러리에서만 유지됩니다. 이러한 데이터 요소 값은 웹 페이지가 다시 로드되면 사라집니다.
 
-일반적으로 데이터 요소 편집기는 [저장소 기간 선택](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element)을 지원합니다. 그러나 Dynamic Media Viewers 확장을 사용하는 데이터 요소는 **[!UICONTROL None]**&#x200B;의 저장 시간 옵션만 지원합니다. 사용자 인터페이스에서는 다른 값을 설정할 수 있지만 데이터 요소 동작은 이 경우에는 정의되지 않습니다. 확장은 데이터 요소의 값을 자체적으로 관리합니다. 전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지 관리하는 데이터 요소입니다.
+일반적으로 데이터 요소 편집기는 [저장소 기간 선택](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element)을 지원합니다. 그러나 Dynamic Media Viewers 확장을 사용하는 데이터 요소는 **[!UICONTROL None]**&#x200B;의 저장 시간 옵션만 지원합니다. 사용자 인터페이스에서는 다른 값을 설정할 수 있지만 데이터 요소 동작은 이 경우에는 정의되지 않습니다. 확장은 데이터 요소의 값을 자체적으로 관리합니다. 전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지 관리하는 데이터 요소입니다.
 
 ### Dynamic Media Viewers 확장의 규칙 정보 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -256,7 +256,7 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-그러나 대체 방법을 사용하고 데이터 요소 생성을 무시할 수 있습니다. Dynamic Media 뷰어 이벤트에서 인수를 직접 참조할 수 있습니다. Analytics 변수 할당의 **[!UICONTROL 값]** 입력 필드에 이벤트 인수의 정규화된 이름을 입력합니다. 퍼센트(%) 기호로 둘러싸야 합니다. 예,
+그러나 대체 방법을 사용하고 데이터 요소 생성을 무시할 수 있습니다. Dynamic Media 뷰어 이벤트에서 인수를 직접 참조할 수 있습니다. Analytics 변수 할당의 **[!UICONTROL 값]** 입력 필드에 이벤트 인수의 정규화된 이름을 입력합니다. 퍼센트(%) 기호로 둘러싸야 합니다. 예를 들어
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -443,7 +443,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    사용 가능한 보고서 세트가 없는 경우 구성을 계속 진행하려면 먼저 사용자 또는 Adobe Analytics 관리자가 보고서 세트를 만들어야 합니다.
 
-   [보고서 및 보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) 및 [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites)를 참조하십시오.
+   [보고서 및 보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) 및 [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites)를 참조하십시오.
 
    Adobe Analytics에서 보고서 세트는 **[!UICONTROL 관리]** > **[!UICONTROL 보고서 세트]**&#x200B;에서 관리됩니다.
 
@@ -605,7 +605,7 @@ Experience Platform 태그 환경에 대한 자세한 내용은 [환경](https:/
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
-1. 새 라이브러리 만들기 페이지의 **[!UICONTROL 이름]** 필드에 새 라이브러리에 대한 수사적 이름을 입력합니다. 예,
+1. 새 라이브러리 만들기 페이지의 **[!UICONTROL 이름]** 필드에 새 라이브러리에 대한 수사적 이름을 입력합니다. 예를 들어
 
    *DynamicMediaViewersLib*
 

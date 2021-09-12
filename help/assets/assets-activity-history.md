@@ -2,12 +2,12 @@
 title: 타임라인의 활동 스트림
 description: 이 문서에서는 타임라인에 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다.
 contentOwner: AG
-feature: 자산 보고서,자산 관리
+feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '207'
 ht-degree: 7%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 7%
 * 거부
 * 이동
 
-타임라인에 표시할 활동 로그는 로그 파일이 저장된 CRX의 `/var/audit/com.day.cq.dam/content/dam` 위치에서 가져옵니다.  또한 타임라인 활동은 새 자산이 업로드되거나 기존 자산이 수정되어 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 또는 [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en)을 통해 [!DNL Experience Manager]에 체크 인될 때 기록됩니다.
+타임라인에 표시할 활동 로그는 로그 파일이 저장된 CRX의 `/var/audit/com.day.cq.dam/content/dam` 위치에서 가져옵니다.  또한 타임라인 활동은 새 자산이 업로드되거나 기존 자산이 수정되어 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 또는 [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)을 통해 [!DNL Experience Manager]에 체크 인될 때 기록됩니다.
 
 >[!NOTE]
 >
