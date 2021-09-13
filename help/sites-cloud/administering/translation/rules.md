@@ -1,12 +1,12 @@
 ---
 title: 번역할 컨텐츠 식별
 description: 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알아봅니다.
-feature: 언어 복사
+feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 번역할 컨텐츠 식별 {#identifying-content-to-translate}
 
 번역 규칙은 번역 프로젝트에 포함되거나 번역 프로젝트에서 제외되는 페이지, 구성 요소 및 자산에 대해 번역할 컨텐츠를 식별합니다. 페이지 또는 자산을 번역하는 경우, AEM은 이 컨텐츠를 추출하여 번역 서비스로 전송할 수 있습니다.
+
+>[!TIP]
+>
+>컨텐츠를 번역할 때 새로운 사용자에게 AEM의 강력한 번역 도구를 사용하여 AEM Sites 컨텐츠를 번역할 수 있는 안내식 경로인 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하여 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 페이지 및 자산은 JCR 저장소에 노드로 표시됩니다. 추출되는 컨텐츠는 노드의 하나 이상의 속성 값입니다. 번역 규칙은 추출할 컨텐츠가 포함된 속성을 식별합니다.
 

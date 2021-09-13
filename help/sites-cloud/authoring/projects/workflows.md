@@ -2,10 +2,10 @@
 title: 프로젝트 워크플로우 작업
 description: 다양한 프로젝트 워크플로우를 즉시 사용할 수 있습니다.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 72%
+source-wordcount: '452'
+ht-degree: 68%
 
 ---
 
@@ -21,19 +21,18 @@ ht-degree: 72%
 
 선택하는 프로젝트 템플릿에 따라 사용 가능한 워크플로우가 달라집니다.
 
-|  | **간단한 프로젝트** | **미디어 프로젝트** | **번역 프로젝트** |
-|---|:-:|:-:|:-:|
-| 복사 요청 |  | x |  |
-| 프로젝트 승인 | x |  |  |
-| 실행 요청 | x |  |  |
-| 랜딩 페이지 요청 | x |  |  |
-| 전자 메일 요청 | x |  |  |
-| DAM 언어 사본 만들기(&amp;M);ast; |  |  | x |
-| DAM 언어 사본 작성 및 번역;마지막; |  |  | x |
+|  | **간단한 프로젝트** | **번역 프로젝트** |
+|---|:-:|:-:|
+| 프로젝트 승인 작업 과정 | x |  |
+| 실행 요청 | x |  |
+| 랜딩 페이지 요청 | x |  |
+| 전자 메일 요청 | x |  |
+| DAM 언어 사본 만들기(&amp;M);ast; |  | x |
+| DAM 언어 사본 작성 및 번역;마지막; |  | x |
 
 >[!NOTE]
 >
->amp;ast;이러한 워크플로우는 [프로젝트]의 **워크플로우** 타일에서 시작되지 않습니다. [자산을 위한 언어 사본 만들기](/help/sites-cloud/administering/translation/managing-projects.md)를 참조하십시오.
+>amp;ast; 이러한 워크플로우는 [프로젝트]의 **워크플로우** 타일에서 시작되지 않습니다. [자산을 위한 언어 사본 만들기](/help/sites-cloud/administering/translation/managing-projects.md)를 참조하십시오.
 
 워크플로우 시작 및 완료 단계는 선택하는 워크플로우와 상관없이 동일합니다. 단계만 변경됩니다.
 
@@ -47,19 +46,6 @@ AEM에서 워크플로우 작업에 대한 자세한 내용은 다음을 참조�
 
 이 섹션에서는 [프로젝트]에 사용 가능한 워크플로우에 대해 설명합니다.
 
-## 사본 요청 워크플로우 {#request-copy-workflow}
-
-이 워크플로우에서는 사용자의 원고를 요청한 다음, 이를 승인할 수 있습니다. 사본 요청 워크플로우를 시작하려면 다음을 수행하십시오.
-
-1. 미디어 프로젝트에서 **워크플로우** 타일의 **+** 기호를 선택하고 **사본 요청 워크플로우**&#x200B;를 선택합니다.
-1. 원고 제목과 요청하는 내용에 대한 간단한 요약을 입력합니다. 해당하는 경우 타겟 단어 수, 작업 우선순위 및 기한을 입력하십시오.
-
-   ![복사 요청 워크플로우](/help/sites-cloud/authoring/assets/projects-request-copy.png)
-
-1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. 작업이 **작업** 타겟에 나타납니다.
-
-   ![요청 복사본이 추가되었습니다.](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
-
 ## 프로젝트 승인 워크플로우 {#project-approval-workflow}
 
 프로젝트 승인 워크플로우에서는 사용자에게 컨텐츠를 지정하고 검토한 다음 컨텐츠를 승인합니다.
@@ -70,8 +56,6 @@ AEM에서 워크플로우 작업에 대한 자세한 내용은 다음을 참조�
    ![승인 요청](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. **만들기**&#x200B;를 클릭합니다. 워크플로우가 시작됩니다. 작업이 **작업** 타겟에 나타납니다.
-
-   ![승인 요청 추가](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## 론치 요청 워크플로우 {#request-launch-workflow}
 
@@ -86,4 +70,4 @@ AEM에서 워크플로우 작업에 대한 자세한 내용은 다음을 참조�
 
 ## 자산에 대한 언어 복사 워크플로우 생성(및 번역) {#create-and-translate-language-copy-workflow-for-assets}
 
-**언어 사본 작성** 및 **언어 사본 작성 및 번역 워크플로우는 자산에 대한 언어 사본 만들기에서 자세히 다룹니다.**
+**언어 사본 작성** 및 **언어 사본 작성 및 번역 워크플로우는 [자산에 대한 언어 사본 만들기에서 자세히 다룹니다.](/help/assets/translate-assets.md)**

@@ -1,17 +1,21 @@
 ---
 title: 번역 우수 사례
 description: 번역 프로젝트를 시작하고 실행하는 데 도움이 되는 Adobe 엔지니어링 및 컨설팅 팀이 컴파일한 우수 사례에 대해 알아보십시오.
-feature: 언어 복사
+feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
 
 # 번역 우수 사례 {#translation-best-practices}
+
+>[!TIP]
+>
+>컨텐츠를 번역할 때 새로운 사용자에게 AEM의 강력한 번역 도구를 사용하여 AEM Sites 컨텐츠를 번역할 수 있는 안내식 경로인 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하여 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 ## 일반 {#general}
 

@@ -1,19 +1,23 @@
 ---
 title: 언어 복사 마법사
 description: AEM에서 언어 복사 마법사 사용에 대해 알아봅니다.
-feature: 언어 복사
+feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 2%
+source-wordcount: '286'
+ht-degree: 1%
 
 ---
 
 # 언어 복사 마법사 {#language-copy-wizard}
 
 언어 복사 마법사는 다국어 컨텐츠 구조를 만들고 계측하기 위한 안내 경험입니다. 마법사를 사용하여 언어 사본 만들기를 간단하고 신속하게 수행할 수 있습니다.
+
+>[!TIP]
+>
+>컨텐츠를 번역할 때 새로운 사용자에게 AEM의 강력한 번역 도구를 사용하여 AEM Sites 컨텐츠를 번역할 수 있는 안내식 경로인 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하여 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 >[!NOTE]
 >

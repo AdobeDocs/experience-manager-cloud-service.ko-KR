@@ -1,12 +1,12 @@
 ---
 title: 컨텐츠 번역 준비
 description: 컨텐츠를 번역 준비하는 방법을 알아봅니다.
-feature: 언어 복사
+feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 컨텐츠 번역 준비 {#preparing-content-for-translation}
 
 다국어 웹 사이트는 일반적으로 여러 언어로 일부 콘텐츠를 제공합니다. 사이트는 한 언어로 작성된 다음 다른 언어로 번역됩니다. 일반적으로 다국어 사이트는 페이지 분기로 구성되며, 각 분기에는 사이트의 페이지를 다른 언어로 포함합니다.
+
+>[!TIP]
+>
+>컨텐츠를 번역할 때 새로운 사용자에게 AEM의 강력한 번역 도구를 사용하여 AEM Sites 컨텐츠를 번역할 수 있는 안내식 경로인 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하여 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 [WKND 자습서 사이트](/help/implementing/developing/introduction/develop-wknd-tutorial.md)에는 여러 언어 분기가 포함되어 있으며 다음 구조를 사용합니다.
 
@@ -136,8 +140,7 @@ AEM에서는 생성된 언어 루트 목록을 표시하는 **참조** 레일을
 >* `/content/wknd/language-masters/americas/central-america/es`
 
 >
-> 
-이 `es` 언어 사본은 `en` 노드에서 2개 수준(`americas/central-america`)이므로 검색되지 않습니다.
+> 이 `es` 언어 사본은 `en` 노드에서 2개 수준(`americas/central-america`)이므로 검색되지 않습니다.
 
 >[!TIP]
 >

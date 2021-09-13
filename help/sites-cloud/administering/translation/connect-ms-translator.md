@@ -1,12 +1,12 @@
 ---
 title: Microsoft Translator에 연결
 description: AEM을 Microsoft Translator에 즉시 연결하여 번역 워크플로우를 자동화하는 방법을 알아봅니다.
-feature: 언어 복사
+feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '514'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 1%
 # Microsoft Translator에 연결 {#connecting-to-microsoft-translator}
 
 AEM 페이지 콘텐츠 또는 자산을 번역할 때 Microsoft 번역 계정을 사용하려면 [Microsoft Translator](https://hub.microsofttranslator.com) 클라우드 서비스에 대한 구성을 만드십시오.
+
+>[!TIP]
+>
+>컨텐츠를 번역할 때 새로운 사용자에게 AEM의 강력한 번역 도구를 사용하여 AEM Sites 컨텐츠를 번역할 수 있는 안내식 경로인 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하여 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 >[!NOTE]
 >

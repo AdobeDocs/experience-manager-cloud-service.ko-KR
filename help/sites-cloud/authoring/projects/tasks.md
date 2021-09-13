@@ -2,9 +2,9 @@
 title: 작업
 description: 작업은 컨텐츠에 대해 수행할 일의 항목들을 나타내며 프로젝트에서 현재 작업의 완료 수준을 판별하는 데 사용됩니다
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 88%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 88%
 * 활성 작업의 비율
 * 기한이 초과된 작업의 비율
 
-![작업 타일](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![작업 타일](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### 프로젝트에서 작업 보기 또는 수정 {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -47,7 +47,7 @@ ht-degree: 88%
 
 #### 작업 세부 사항 {#task-details}
 
-특정 작업에 대한 자세한 내용은 작업 목록에서 작업을 탭/클릭하고 **작업 세부 사항** 엽니다.
+특정 작업에 대한 자세한 내용은 작업 목록에서 작업을 탭/클릭하고 **열기**&#x200B;를 클릭하십시오.
 
 ![작업 세부 사항](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -70,7 +70,7 @@ ht-degree: 88%
 
 1. **만들기**&#x200B;를 탭/클릭합니다. 
 
-## 받은 편지함에서 작업  {#working-with-tasks-in-the-inbox}
+## 받은 편지함에서 작업 {#working-with-tasks-in-the-inbox}
 
 작업에 액세스하는 다른 방법은 받은 편지함을 사용하는 것입니다. 받은 편지함에서 컨텐츠를 열어 필요한 변경 사항을 구현할 수 있습니다. 작업이 완료되면, 작업 상태를 [완료]로 설정합니다. 작업은 사용자가 속한 사용자 그룹에 할당되면 사용자의 받은 편지함에도 나타납니다. 이 경우, 그룹의 아무 구성원이나 작업을 수행하고 작업을 완료할 수 있습니다.
 

@@ -1,15 +1,15 @@
 ---
 solution: Experience Manager, Experience Manager Sites, Experience Manager as a Cloud Service
-sub-product: AEM as a Cloud Service에서 컨텐츠 작성
+sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service에서 컨텐츠 작성
 breadcrumb-title: 작성 안내서
 user-guide-description: Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다.
-feature: 작성
+feature: Authoring
 role: User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 73%
+source-wordcount: '311'
+ht-degree: 70%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 73%
       + [컨텐츠 미리 보기](authoring/fundamentals/previewing-content.md)
       + [페이지 게시](authoring/fundamentals/publishing-pages.md)
       + [콘텐츠 조각](authoring/fundamentals/content-fragments.md)
-      + [경험 구성요소](authoring/fundamentals/experience-fragments.md)
+      + [경험 조각](authoring/fundamentals/experience-fragments.md)
       + [CSV로 내보내기](authoring/fundamentals/csv-export.md)
       + [구성 요소](authoring/fundamentals/components.md)
       + [모바일 장치용 작성](authoring/fundamentals/mobile.md)
@@ -94,6 +94,7 @@ ht-degree: 73%
          + [MSM 우수 사례](administering/msm/best-practices.md)
          + [문제 해결 및 FAQ](administering/msm/troubleshooting.md)
       + 번역 {#translation}
+         + [번역 설명서 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
          + [다국어 사이트의 컨텐츠 번역](administering/translation/overview.md)
          + [컨텐츠 번역 준비](administering/translation/preparation.md)
          + [번역 프로젝트 관리](administering/translation/managing-projects.md)

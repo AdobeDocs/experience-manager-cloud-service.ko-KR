@@ -1,12 +1,12 @@
 ---
 title: 번역 프로젝트 관리
 description: AEM에서 기계 및 인간 번역 프로젝트를 모두 만들고 관리하는 방법을 알아봅니다.
-feature: 언어 복사
+feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3863'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 1%
 # 번역 프로젝트 관리 {#managing-translation-projects}
 
 번역 프로젝트를 사용하면 AEM 컨텐츠 번역을 관리할 수 있습니다. 번역 프로젝트는 다른 언어로 번역되는 리소스를 포함하는 AEM [project](/help/sites-cloud/authoring/projects/overview.md)의 유형입니다. 이러한 리소스는 언어 마스터에서 만들어진 [언어 사본](preparation.md)의 페이지 및 자산입니다.
+
+>[!TIP]
+>
+>컨텐츠를 번역할 때 새로운 사용자에게 AEM의 강력한 번역 도구를 사용하여 AEM Sites 컨텐츠를 번역할 수 있는 안내식 경로인 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하여 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 번역 프로젝트에 리소스를 추가하면 해당 리소스에 대한 번역 작업이 만들어집니다. 작업은 리소스에서 실행되는 인간 번역 및 기계 번역 워크플로우를 관리하는 데 사용하는 명령과 상태 정보를 제공합니다.
 

@@ -2,9 +2,9 @@
 title: 프로젝트 관리
 description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 리소스를 그룹화하여 프로젝트를 구성할 수 있습니다
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '894'
 ht-degree: 80%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 80%
 
 **프로젝트** 콘솔에서 다음과 같이 프로젝트에 액세스하여 작업을 수행합니다.
 
-![프로젝트 콘솔](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![프로젝트 콘솔](/help/sites-cloud/authoring/assets/projects-console.png)
 
 [프로젝트]에서 프로젝트를 작성하고 리소스를 프로젝트와 연결시키고 프로젝트 또는 리소스 링크를 삭제할 수도 있습니다. 타일을 열어 컨텐츠를 보고 타일에 항목을 추가할 수도 있습니다. 이 항목에서는 이러한 절차에 대해 설명합니다.
 
-## 프로젝트 만들기 {#creating-a-project}
+## 프로젝트 제작 {#creating-a-project}
 
 특히 AEM에서는 프로젝트를 작성할 때 선택할 수 있는 템플릿을 다음과 같이 제공합니다.
 
@@ -40,7 +40,7 @@ ht-degree: 80%
 
 1. **제목** 및 **설명**&#x200B;을 정의하고 필요한 경우 **축소판** 이미지를 추가합니다. 사용자와 사용자가 속한 그룹을 추가하거나 삭제할 수도 있습니다. 또한 **고급**&#x200B;을 클릭하여 URL에 사용된 이름을 추가합니다.
 
-   ![프로젝트 세부 사항 추가](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![프로젝트 세부 사항 추가](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. **만들기**&#x200B;를 탭/클릭합니다. 새 프로젝트를 열거나 콘솔로 돌아갈 것 인지를 묻는 확인 메시지가 표시됩니다.
 
@@ -85,13 +85,11 @@ ht-degree: 80%
 
 타일에 항목을 추가하려면 다음을 수행하십시오.
 
-1. **프로젝트**&#x200B;에서 프로젝트로 이동하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
+1. **프로젝트**&#x200B;에서 프로젝트로 이동하고 항목을 추가할 타일의 아래쪽 V자형 화살표를 탭하거나 클릭합니다.
 
-   ![타일에 항목 추가](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![타일에 항목 추가](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. 새 타일을 만들 때처럼 타일에 항목을 추가합니다. 프로젝트 타일은 [여기](/help/sites-cloud/authoring/projects/overview.md#project-tiles)에 설명됩니다. 이 예제에서는 워크플로우가 더 추가되었습니다.
-
-   ![타일에 추가된 다른 항목](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### 타일 열기 {#opening-a-tile}
 
@@ -99,19 +97,17 @@ ht-degree: 80%
 
 항목을 보거나 수정할 수 있도록 타일을 열려면 다음을 수행하십시오.
 
-1. 프로젝트 콘솔에서 줄임표(...)를 탭/클릭합니다.
+1. 프로젝트 콘솔에서 줄임표(...)를 탭/클릭합니다. 아이콘 을 클릭하여 제품에서 사용할 수 있습니다.
 
-   ![타일 열기](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![타일 열기](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. 해당 타일에 있는 항목이 나열됩니다. 선택 모드에 들어가 항목을 수정하거나 삭제할 수 있습니다.
 
-   ![열린 타일](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![열린 타일](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## 프로젝트 통계 보기 {#viewing-project-statistics}
 
-프로젝트 통계를 보려면 **프로젝트** 콘솔에서 **통계 보기 표시**&#x200B;를 클릭하십시오. 각 프로젝트에 대한 완료 수준이 표시됩니다. **통계 보기 표시**&#x200B;를 다시 클릭하여 **프로젝트** 콘솔로 이동합니다.
-
-![프로젝트 통계](/help/sites-cloud/authoring/assets/projects-stats.png)
+**프로젝트** 콘솔에서 프로젝트 통계를 볼 수 있습니다.
 
 ### 프로젝트 타임라인 보기 {#viewing-a-project-timeline}
 
@@ -143,6 +139,6 @@ ht-degree: 80%
 1. **편집**&#x200B;을 탭/클릭합니다.
 1. 선택기를 **활성**&#x200B;에서 **비활성**(또는 그 반대)으로 변경합니다.
 
-   ![프로젝트 활성화](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![프로젝트 활성화](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. **완료**&#x200B;를 탭/클릭하여 변경 내용을 저장합니다.

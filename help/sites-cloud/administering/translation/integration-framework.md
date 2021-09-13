@@ -1,12 +1,12 @@
 ---
 title: 번역 통합 프레임워크 구성
 description: 타사 번역 서비스와 통합하도록 번역 통합 프레임워크를 구성하는 방법을 알아봅니다.
-feature: 언어 복사
+feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1419'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 1%
 1. [클라우드 구성을 페이지와 연결합니다.](#configuring-pages-for-translation)
 
 AEM의 컨텐츠 번역 기능에 대한 개요를 알려면 [다국어 사이트에 대한 컨텐츠 번역](overview.md)을 참조하십시오.
+
+>[!TIP]
+>
+>컨텐츠를 번역할 때 새로운 사용자에게 AEM의 강력한 번역 도구를 사용하여 AEM Sites 컨텐츠를 번역할 수 있는 안내식 경로인 [사이트 번역 여정](/help/journey-sites/translation/overview.md)을 참조하여 AEM 또는 번역 경험이 없는 사용자에게 이상적입니다.
 
 ## 번역 서비스 공급자에 연결 {#connecting-to-a-translation-service-provider}
 
