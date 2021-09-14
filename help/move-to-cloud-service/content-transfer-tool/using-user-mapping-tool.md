@@ -2,9 +2,9 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
+source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1315'
 ht-degree: 2%
 
 ---
@@ -50,11 +50,10 @@ AEM as a Cloud Service에 대한 주요 변경 사항은 작성 계층에 액세
 
 * 컨텐츠 추가를 수행할 때 컨텐츠가 이전 전송 이후 변경되지 않았으므로 전송되지 않으면 그 동안 사용자와 그룹이 변경되더라도 해당 컨텐츠와 연관된 사용자 및 그룹도 전송되지 않습니다. 사용자 및 그룹은 연결된 컨텐츠와 함께 마이그레이션되기 때문입니다.
 
-* 수집은 다음 시나리오에서 실패합니다.
+* target AEM Cloud Service 인스턴스에 다른 사용자 이름은 있지만 소스 AEM 인스턴스의 사용자 중 하나의 사용자와 동일한 이메일 주소를 가진 사용자가 있고 사용자 매핑이 활성화되어 있으면 로그에 오류 메시지가 기록되고 소스 AEM 사용자는 전송되지 않습니다. 이는 지정된 이메일 주소를 가진 한 명의 사용자만 대상 시스템에서 허용되기 때문입니다.
 
-1. target AEM Cloud Service 인스턴스에 다른 사용자 이름이 있지만 소스 AEM 인스턴스에 있는 사용자 중 하나의 이메일 주소가 동일한 사용자가 있는 경우.
+* 소스 AEM 인스턴스의 두 사용자에게 동일한 이메일 주소가 있고 사용자 매핑이 활성화되어 있으면 오류 메시지가 로그에 기록되고 소스 AEM 사용자 중 하나는 전송되지 않습니다. 이는 지정된 이메일 주소를 가진 한 명의 사용자만 대상 시스템에서 허용되기 때문입니다.
 
-1. 소스 AEM 인스턴스에 서로 다른 사용자 이름을 사용하지만 동일한 이메일 주소를 사용하는 사용자가 두 명인 경우. AEM as a Cloud Service에서는 두 사용자에게 동일한 이메일 주소를 제공할 수 없습니다.
 
 ## 사용자 매핑 도구 사용 {#using-user-mapping-tool}
 
@@ -87,14 +86,14 @@ AEM as a Cloud Service에 대한 주요 변경 사항은 작성 계층에 액세
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
-   * **조직 ID**:사용자를 마이그레이션하고 있는 조직의 IMS(Identity Management 시스템) 조직 ID를 입력합니다.
+   * **조직 ID**: 사용자를 마이그레이션하고 있는 조직의 IMS(Identity Management 시스템) 조직 ID를 입력합니다.
 
       >[!NOTE]
       >조직 ID를 가져오려면 [Admin Console](https://adminconsole.adobe.com/)에 로그인하고, 둘 이상에 속해 있는 경우 조직(오른쪽 상단 영역)을 선택하십시오. 조직 ID는 해당 페이지의 URL에 있는 `xx@AdobeOrg` 형식입니다. 여기서 xx는 IMS 조직 ID입니다.  또는 [Adobe 개발자 콘솔](https://console.adobe.io) 페이지에서 액세스 토큰을 생성하는 조직 ID를 찾을 수 있습니다.
 
-   * **클라이언트 ID**:설정 단계에서 저장한 클라이언트 ID를 입력합니다.
+   * **클라이언트 ID**: 설정 단계에서 저장한 클라이언트 ID를 입력합니다.
 
-   * **액세스 토큰**:설정 단계에서 저장한 액세스 토큰을 입력합니다.
+   * **액세스 토큰**: 설정 단계에서 저장한 액세스 토큰을 입력합니다.
 
       >[!NOTE]
       >액세스 토큰이 24시간마다 만료되며 새 토큰을 만들어야 합니다. 새 토큰을 만들려면 [Adobe 개발자 콘솔](https://console.adobe.io)로 돌아가서 프로젝트를 선택하고 **사용자 관리 API**&#x200B;를 클릭한 다음 동일한 개인 키를 상자에 붙여 넣습니다.
