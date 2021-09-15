@@ -2,12 +2,12 @@
 title: 자산 마이크로서비스 구성 및 사용
 description: 클라우드 기반의 자산 마이크로서비스 를 구성하고 사용하여 자산을 규모에 맞게 처리합니다.
 contentOwner: AG
-feature: asset compute 마이크로서비스,워크플로우,자산 처리
+feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -229,8 +229,8 @@ asset compute 서비스 통합을 통해 Experience Manager은 [!UICONTROL 서�
 
 폴더에 워크플로우를 적용하여 쉽게 구현할 수 없는 고급 구성에 대한 사용자 지정 워크플로우 런너 서비스를 구성할 수 있습니다. 예를 들어 정규 표현식을 사용하는 워크플로우입니다. Adobe CQ DAM 사용자 지정 워크플로우 러너(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)는 OSGi 서비스입니다. 구성에 대해 다음 두 가지 옵션을 제공합니다.
 
-* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`): 다양한 저장소 경로에 따라 여러 워크플로우 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. 이러한 매개 변수를 `/var` 경로의 워크플로우 모델에 매핑합니다. 예를 들어: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
-* 표현식에 의한 사후 처리 워크플로우(`postProcWorkflowsByExpression`): 다른 정규 표현식을 기반으로 하여 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예를 들어: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
+* 경로별 사후 처리 워크플로우(`postProcWorkflowsByPath`): 다양한 저장소 경로에 따라 여러 워크플로우 모델을 나열할 수 있습니다. 콜론을 사용하여 경로와 모델을 구분합니다. 단순 저장소 경로가 지원됩니다. 이러한 매개 변수를 `/var` 경로의 워크플로우 모델에 매핑합니다. 예: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* 표현식에 의한 사후 처리 워크플로우(`postProcWorkflowsByExpression`): 다른 정규 표현식을 기반으로 하여 여러 워크플로우 모델을 나열할 수 있습니다. 표현식과 모델은 콜론으로 구분해야 합니다. 정규 표현식은 표현물이나 파일 중 하나를 지정하지 않고 자산 노드를 직접 가리켜야 합니다. 예: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 OSGi 구성을 배포하는 방법은 [배포 대상 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)을 참조하십시오.
 

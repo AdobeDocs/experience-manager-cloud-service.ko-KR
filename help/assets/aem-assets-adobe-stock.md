@@ -2,12 +2,12 @@
 title: ' [!DNL Assets]의 자산을 관리합니다. [!DNL Adobe Stock] '
 description: ' [!DNL Adobe Experience Manager] 내에서 자산을 검색, 가져오기, 라이선스 및 관리합니다.  [!DNL Adobe Stock]  라이선스가 있는 자산을 다른 디지털 자산으로 사용합니다.'
 contentOwner: AG
-feature: 검색,Adobe Stock
+feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '989'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## [!DNL Experience Manager] 및 [!DNL Adobe Stock] 통합 {#integrate-aem-and-adobe-stock}
 
-[!DNL Experience Manager] 과 [!DNL Adobe Stock] 간의 통신을 허용하려면 [!DNL Experience Manager]에서 IMS 구성과 [!DNL Adobe Stock] 구성을 만드십시오.
+[!DNL Experience Manager] 과 [!DNL Adobe Stock] 간의 통신을 설정하려면 [!DNL Experience Manager]에서 IMS 구성과 [!DNL Adobe Stock] 구성을 만드십시오.
 
 >[!NOTE]
 >
@@ -53,9 +53,9 @@ ht-degree: 4%
 
 ## [!DNL Experience Manager]에서 [!DNL Adobe Stock] 자산 사용 및 관리 {#usemanage}
 
-이 기능을 사용하면 조직에서 해당 사용자가 [!DNL Experience Manager Assets]에서 [!DNL Adobe Stock] 자산을 사용하여 작업할 수 있도록 허용할 수 있습니다. [!DNL Experience Manager] 사용자 인터페이스 내에서 사용자는 [!DNL Adobe Stock] 자산을 검색하고 필요한 자산에 대한 라이선스를 제공할 수 있습니다.
+이 기능을 사용하면 조직 사용자는 [!DNL Experience Manager Assets]에서 [!DNL Adobe Stock] 자산을 사용하여 작업할 수 있습니다. [!DNL Experience Manager] 사용자 인터페이스 내에서 사용자는 [!DNL Adobe Stock] 자산을 검색하고 필요한 자산에 대한 라이선스를 제공할 수 있습니다.
 
-[!DNL Adobe Stock] 자산이 [!DNL Experience Manager]에서 라이선스가 부여되면 일반적인 자산처럼 사용하고 관리할 수 있습니다. [!DNL Experience Manager]에서 사용자는 자산을 검색하고 미리 볼 수 있습니다.자산을 복사하여 게시합니다.[!DNL Brand Portal]에서 자산 공유[!DNL Experience Manager] 데스크탑 앱을 통해 자산에 액세스하고 사용합니다.기타.
+[!DNL Adobe Stock] 자산이 [!DNL Experience Manager]에서 라이선스가 부여되면 일반적인 자산처럼 사용하고 관리할 수 있습니다. [!DNL Experience Manager]에서 사용자는 자산을 검색하고 미리 볼 수 있습니다. 자산을 복사하여 게시합니다. [!DNL Brand Portal]에서 자산 공유 [!DNL Experience Manager] 데스크탑 앱을 통해 자산에 액세스하고 사용합니다. 기타.
 
 <!--  ![Search for Adobe Stock assets and filter results from your Adobe Experience Manager workspace](assets/adobe-stock-search-results-workspace.png)
 
@@ -79,7 +79,7 @@ ht-degree: 4%
 
 ![검색 결과에서 Experience Manager 및 강조 표시된 Adobe Stock 자산의 검색 필터](assets/aem-search-filters2.jpg)
 
-*그림:검색 결과에서 필터  [!DNL Experience Manager] 및 강조 표시된  [!DNL Adobe Stock] 자산을 검색합니다.*
+*그림: 검색 결과에서 필터  [!DNL Experience Manager] 및 강조 표시된  [!DNL Adobe Stock] 자산을 검색합니다.*
 
 ### 필요한 자산을 저장하고 봅니다 {#saveassets}
 
@@ -97,7 +97,7 @@ ht-degree: 4%
 
 ![Experience Manager Assets에 Adobe Stock 자산의 라이센스를 부여하고 저장하는 대화 상자](assets/aem-stock_licenseandsave.jpg)
 
-*그림:대화 상자에서 자산에 라이선스를  [!DNL Adobe Stock] 부여하고 저장할 수  [!DNL Experience Manager Assets]있습니다.*
+*그림: 대화 상자에서 자산에 라이선스를  [!DNL Adobe Stock] 부여하고 저장할 수  [!DNL Experience Manager Assets]있습니다.*
 
 ### 메타데이터 및 자산 속성에 액세스 {#access-metadata-and-asset-properties}
 
@@ -107,15 +107,15 @@ ht-degree: 4%
 
 ![저장된 자산의 메타데이터 및 라이선스 참조를 보고 액세스합니다](assets/metadata_properties.jpg)
 
-*그림:저장된 자산의 메타데이터 및 라이선스 참조를 보고 액세스합니다.*
+*그림: 저장된 자산의 메타데이터 및 라이선스 참조를 보고 액세스합니다.*
 
 ## 알려진 제한 사항 {#known-limitations}
 
-* **편집 이미지 경고가 표시되지 않습니다**.이미지에 라이센스를 부여할 때 이미지가 편집 전용 인지 확인할 수 없습니다. 관리 관리자는 Admin Console에서 편집 자산에 대한 액세스를 중단할 수 있습니다.
+* **편집 이미지 경고가 표시되지 않습니다**. 이미지에 라이센스를 부여할 때 이미지가 편집 전용 인지 확인할 수 없습니다. 관리 관리자는 Admin Console에서 편집 자산에 대한 액세스를 중단할 수 있습니다.
 
-* **잘못된 라이센스 유형이 표시됩니다**.자산에 대해 잘못된 라이선스 유형이  [!DNL Experience Manager] 에 표시될 수 있습니다. 사용자는 [!DNL Adobe Stock] 웹 사이트에 로그인하여 라이센스 유형을 확인할 수 있습니다.
+* **잘못된 라이센스 유형이 표시됩니다**. 자산에 대해 잘못된 라이선스 유형이  [!DNL Experience Manager] 에 표시될 수 있습니다. 사용자는 [!DNL Adobe Stock] 웹 사이트에 로그인하여 라이센스 유형을 확인할 수 있습니다.
 
-* **참조 필드 및 메타데이터가 동기화되지 않습니다**.사용자가 라이센스 참조 필드를 업데이트하면 라이센스 참조 정보가 웹 사이트 [!DNL Experience Manager] 에서 업데이트되지만 웹 사이트에서는 업데이트되지  [!DNL Adobe Stock] 않습니다. 마찬가지로, 사용자가 [!DNL Adobe Stock] 웹 사이트의 참조 필드를 업데이트하면 업데이트가 [!DNL Experience Manager]에서 동기화되지 않습니다.
+* **참조 필드 및 메타데이터가 동기화되지 않습니다**. 사용자가 라이센스 참조 필드를 업데이트하면 라이센스 참조 정보가 웹 사이트 [!DNL Experience Manager] 에서 업데이트되지만 웹 사이트에서는 업데이트되지  [!DNL Adobe Stock] 않습니다. 마찬가지로, 사용자가 [!DNL Adobe Stock] 웹 사이트의 참조 필드를 업데이트하면 업데이트가 [!DNL Experience Manager]에서 동기화되지 않습니다.
 
 >[!MORELIKETHIS]
 >

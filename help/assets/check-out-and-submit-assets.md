@@ -2,12 +2,12 @@
 title: ' [!DNL Assets]에서 파일 체크인 및 체크아웃'
 description: 편집할 자산을 확인하고 변경 사항이 완료되면 다시 체크 인하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 자산 관리
+feature: Asset Management
 role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [데스크탑 앱의 체크인 및  [!DNL Experience Manager] 체크아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [데스크탑 앱의 체크인 및  [!DNL Experience Manager] 체크아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [체크인 및 체크아웃 이해 비디오 튜토리얼 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 

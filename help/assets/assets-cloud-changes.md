@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 ## 자산 마이크로서비스 개발 및 테스트 {#asset-microservices}
 
-자산 마이크로서비스 는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적인 처리를 제공합니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 자산 마이크로서비스 는 일반적인 파일 유형에 대해 기본 제공 기능을 제공하면서도 타사 렌더링 도구 및 메서드(예: [!DNL ImageMagick])가 필요하지 않고 구성을 단순화하는 데 도움이 됩니다. 이제 이전 버전의 Experience Manager에서 사용할 수 있는 것보다 더 많은 형식을 기본적으로 제공하는 [광범위한 파일 형식](/help/assets/file-format-support.md)을 처리할 수 있습니다. 예를 들어 PSD 및 PSB 형식의 축소판 추출은 이전에 [!DNL ImageMagick] 과 같은 타사 솔루션을 필요로 했던 경우에 사용할 수 있습니다. [!UICONTROL 처리 프로필] 구성에 대해 [!DNL ImageMagick]의 복잡한 구성을 사용할 수 없습니다. 비디오의 고급 FFmpeg 코드 변환에 [!DNL Dynamic Media] 을 사용하고 MP4 비디오의 기본 코드 변환에 처리 프로필을 사용하십시오](/help/assets/manage-video-assets.md#transcode-video).[
+자산 마이크로서비스 는 클라우드 서비스를 사용하여 자산을 확장 가능하고 탄력적인 처리를 제공합니다. Adobe은 다양한 자산 유형 및 처리 옵션을 최적으로 처리하기 위해 클라우드 서비스를 관리합니다. 자산 마이크로서비스 는 일반적인 파일 유형에 대해 기본 제공 기능을 제공하면서도 타사 렌더링 도구 및 메서드(예: [!DNL ImageMagick])가 필요하지 않고 구성을 단순화하는 데 도움이 됩니다. 이제 이전 버전의 Experience Manager에서 사용할 수 있는 것보다 더 많은 형식을 기본적으로 제공하는 [광범위한 파일 형식](/help/assets/file-format-support.md)을 처리할 수 있습니다. 예를 들어 PSD 및 PSB 형식의 축소판 추출은 이전에 [!DNL ImageMagick] 과 같은 타사 솔루션을 필요로 했을 수 있습니다. [!UICONTROL 처리 프로필] 구성에 대해 [!DNL ImageMagick]의 복잡한 구성을 사용할 수 없습니다. 비디오의 고급 FFmpeg 코드 변환에 [!DNL Dynamic Media] 을 사용하고 MP4 비디오의 기본 코드 변환에 처리 프로필을 사용하십시오](/help/assets/manage-video-assets.md#transcode-video).[
 
 자산 마이크로서비스 는 Cloud Manager에서 관리되는 고객 프로그램 및 환경에서 자동으로 프로비저닝되고 [!DNL Experience Manager]에 연결되는 클라우드 기반의 서비스입니다. [!DNL Experience Manager] 을 확장하거나 사용자 지정하기 위해 개발자는 기존 컨텐츠 또는 자산에 클라우드 환경에서 생성된 렌디션을 사용하여 자산을 테스트 및 확인하고, 자산을 표시 및 다운로드하여 코드를 확인할 수 있습니다.
 
@@ -52,7 +52,7 @@ ht-degree: 5%
 | 기능 또는 사용 사례 | [!DNL Experience Manager]에 [!DNL Cloud Service] 상태 | 댓글 |
 |-----|-----|-----|
 | [중복된 자산 탐지](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 다르게 작동합니다. | [이 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)에서 작동하는 방식을 참조하십시오. |
-| [배치만(FPO) 표현물의 경우](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 다르게 작동합니다. |  |
+| [배치만(FPO) 표현물의 경우](/help/assets/configure-fpo-renditions.md) | 다르게 작동합니다. | 처리 프로필은 자산 마이크로서비스를 사용하여 FPO 변환을 생성합니다. 6.5 Experience Manager에서 [!DNL ImageMagick] 과 같은 타사 솔루션을 사용하여 변환을 생성할 수 있습니다. |
 | 메타데이터 원본에 쓰기 | 다르게 작동합니다. | 기본적으로 비활성화됨. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 원본에 쓰기 작업은 자산 마이크로서비스에 의해 처리됩니다. |
 | 패키지 관리자를 사용하여 업로드한 자산 처리 | 수작업 필요. | **[!UICONTROL 자산 재처리]** 작업을 사용하여 수동으로 다시 처리합니다. |
 | MIME 유형 탐지 | 지원되지 않음. | 확장 없이 또는 잘못된 확장이 있는 디지털 자산을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)에서 [MIME 유형 감지를 참조하십시오. |
@@ -73,7 +73,7 @@ ht-degree: 5%
 >* [더 이상 사용되지 않는 및 제거된 기능 목록](/help/release-notes/deprecated-removed-features.md)
 >* [소개](/help/overview/introduction.md)
 >* [새로운 기능 및 차이점](/help/overview/what-is-new-and-different.md)
->* [아키텍처](/help/overview/architecture.md)
+>* [아키텍처](/help/core-concepts/architecture.md)
 >* [주요 변경 사항](/help/release-notes/aem-cloud-changes.md)
 >* [주요 변경 사항 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)

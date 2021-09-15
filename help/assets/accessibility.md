@@ -2,12 +2,12 @@
 title: ' [!DNL Experience Manager Assets]의 액세스 가능성'
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 의 접근성 기능이 장애가 있는 사용자에게 어떤 도움이 되는지 알아보십시오.'
 contentOwner: AG
-feature: 접근성,자산 관리
+feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1911'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Possible topics to cover in this article are below.
 
 # [!DNL Adobe Experience Manager Assets]에 [!DNL Cloud Service] 의 액세스 가능성 기능 {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] 콘텐츠 작성자 및 게시자가 웹에서 놀라운 경험을 제공할 수 있도록 해줍니다. Adobe은 [!DNL Experience Manager]의 액세스 가능성을 개선하여 장애가 있는 작성자를 포함하도록 노력하고 있습니다. 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각, 청각, 이동성 또는 기타 장애가 있는 개인을 포함하는 전 세계 표준을 준수합니다.
+[!DNL Adobe Experience Manager] 콘텐츠 생성자와 게시자가 웹에서 놀라운 경험을 제공할 수 있도록 해줍니다. Adobe은 [!DNL Experience Manager]의 액세스 가능성을 개선하여 장애가 있는 작성자를 포함하도록 노력하고 있습니다. 소프트웨어는 모든 유형의 사용자의 요구 사항을 충족하도록 지속적으로 향상되며 시각, 청각, 이동성 또는 기타 장애가 있는 개인을 포함하는 전 세계 표준을 준수합니다.
 
 [!DNL Experience Manager] 는 이 표준을 준수하며 제품의 액세서빌러티 기능에 대해 간략하게 설명하고 규정 준수 수준을 설명하는 적합성 정보를 게시합니다. 액세서빌러티 적합성 보고서는 [!DNL Experience Manager] 사용자가 다양한 표준에 대한 준수 수준을 이해하는 데 도움이 됩니다. [!DNL Assets]에서 향상된 기능을 통해 모든 사용자는 키보드, 화면 판독기, 돋보기 및 기타 보조 기술을 통해 인터페이스를 쉽게 사용할 수 있습니다.
 
