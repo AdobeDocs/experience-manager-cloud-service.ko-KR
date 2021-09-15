@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 27%
+source-wordcount: '521'
+ht-degree: 28%
 
 ---
 
@@ -35,9 +35,8 @@ AEM as a Cloud Service으로 여정을 시작한 것을 축하합니다! 새 응
 | 사용 안내서 | 설명 |
 |---|---|
 | [Experience Manager as a Cloud Service 홈](/help/landing/home.md) | Experience Manager as a Cloud Service 설명서에 대한 개요를 살펴보려면 여기에서 시작하십시오. |
-| [개요](/help/overview/home.md) | 이 안내서에서는 [!DNL Experience Manager as a Cloud Service] 소개, 용어 등 개요를 제공합니다. |
+| [개요](/help/overview/home.md) | 이 안내서에서는 [!DNL Experience Manager as a Cloud Service] 소개, 용어, 아키텍처 등을 포함하여 개요를 제공합니다. |
 | [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 [!DNL Experience Manager as a Cloud Service] 의 최신 릴리스에 대한 중요 정보를 제공합니다. |
-| [핵심 개념](/help/core-concepts/home.md) | 이 안내서에서는 새 서비스의 아키텍처를 포함하여 [!DNL Experience Manager as a Cloud Service]의 핵심 개념을 소개합니다. |
 | [보안 사용 안내서](/help/security/home.md) | [!DNL Experience Manager as a Cloud Service]에 대한 중요한 보안 항목에 대해 알아봅니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | [!DNL Experience Manager Sites] 을 Cloud Service으로 작성하고 관리하는 방법을 이해합니다. |
 | [자산 사용 안내서](/help/assets/home.md) | [!DNL Experience Manager Assets as a Cloud Service] 사용 및 관리 방법을 이해합니다. |

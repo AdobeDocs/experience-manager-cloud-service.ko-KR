@@ -1,13 +1,13 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] 안내서'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] 자습 리소스 및 설명서 링크'
-feature: 자산 관리
+feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '276'
+ht-degree: 32%
 
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 31%
 | [[!DNL Experience Manager] as a [!DNL Cloud Service] 홈](/help/landing/home.md) | [!DNL Experience Manager] 을(를) [!DNL Cloud Service](으)로 작성합니다. |
 | [개요](/help/overview/home.md) | [!DNL Experience Manager] 의 [!DNL Cloud Service] 개요 및 용어집입니다. |
 | [릴리스 정보](/help/release-notes/home.md) | 릴리스 노트, 새로운 기능, 이제 사용되지 않거나 제거된 기능 및 알려진 문제입니다. |
-| [핵심 개념](/help/core-concepts/home.md) | 이 안내서에서는 새 서비스의 아키텍처를 포함하여 [!DNL Experience Manager] as a1/>의 핵심 개념을 소개합니다.[!DNL Cloud Service] |
 | [보안 사용 안내서](/help/security/home.md) | [!DNL Experience Manager] as a [!DNL Cloud Service]에 대한 중요한 보안 항목에 대해 알아봅니다. |
 | [온보딩](/help/onboarding/home.md) | [!DNL Experience Manager] 을 [!DNL Cloud Service](으)로 시작하여 중요한 데이터에 액세스하고 데이터를 보호합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | [!DNL Experience Manager Sites] 을 [!DNL Cloud Service](으)로 작성하고 관리하는 방법을 이해합니다. |

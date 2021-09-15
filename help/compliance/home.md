@@ -2,10 +2,10 @@
 title: 준수
 description: 준수
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: 6569b98bafa98b3f85c55d95f5e6db0ec1de77f8
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 78%
+source-wordcount: '382'
+ht-degree: 76%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 78%
 |---|---|
 | [Experience Manager as a Cloud Service 홈](/help/landing/home.md) | Experience Manager as a Cloud Service 설명서에 대한 개요를 살펴보려면 여기에서 시작하십시오. |
 | [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다. |
-| [핵심 개념](/help/core-concepts/home.md) | 이 안내서에서는 이 새로운 서비스의 아키텍처를 포함하여 Experience Manager as a Cloud Service의 핵심 개념을 소개합니다. |
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다. |
 | [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
