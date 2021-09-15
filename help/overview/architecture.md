@@ -1,15 +1,21 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
-exl-id: fb169e85-ac19-4962-93d9-abaed812f948
-source-git-commit: f96561e46cfaa217398ec496bf9d5df669e01c29
+source-git-commit: a54841ca2e959e885a997b19dd03c6ece3f00d1c
 workflow-type: tm+mt
-source-wordcount: '1725'
-ht-degree: 84%
+source-wordcount: '1782'
+ht-degree: 82%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 아키텍처 소개 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+
+>[!CONTEXTUALHELP]
+>id="intro_aem_cloudservice_architecture"
+>title="AEM as a Cloud Service 아키텍처 소개"
+>abstract="이 탭에서 AEM의 새 아키텍처를 Cloud Service으로 보고 변경 사항을 이해할 수 있습니다. AEM에서는 다양한 수의 이미지가 포함된 동적 아키텍처가 발생했으므로 이해하는 데 시간이 걸리는 것이 중요합니다.클라우드 아키텍처"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="아키텍처 개요"
+
 
 Adobe Experience Manager (AEM) as a Cloud Service는 아키텍처가 변경되었습니다.
 
