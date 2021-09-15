@@ -2,10 +2,10 @@
 title: AEM 클라우드 서비스의 AEM 사이트에 대한 주요 변경 사항
 description: AEM 클라우드 서비스의 AEM 사이트에 대한 주요 변경 사항
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -17,12 +17,12 @@ AEM Sites as a Cloud Service은 클라우드 기반의 AEM as a Cloud Service �
 >이 문서에서는 AEM Sites의 주요 변경 사항을 조명합니다. AEM as a Cloud Service 및 기타 모듈에 대한 일반적인 변경 사항에 대해서는 다음을 참조하십시오.
 >
 >* [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
-* [AEM as a Cloud Service에 대한 개요 - 새로운 기능 및 다른 기능](/help/overview/what-is-new-and-different.md)
-* Adobe Experience Manager as a Cloud Service [아키텍처](/help/core-concepts/architecture.md)
-* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
-* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
-* [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [AEM as a Cloud Service에 대한 개요 - 새로운 기능 및 다른 기능](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a Cloud Service [아키텍처](/help/overview/architecture.md)
+>* [AEM as a Cloud Service에 대한 주목할 만한 변경 사항(릴리스 노트)](/help/release-notes/aem-cloud-changes.md)
+>* [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
+>* [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
+>* [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 Cloud Service 로서 AEM Sites의 변경 사항 및 추가 사항은 다음과 같습니다.
@@ -40,7 +40,8 @@ AEM 클라우드 서비스에서는 일반적으로 UI를 차단한 작업이 �
 이러한 작업의 개시자는 새 UI에서 `/mnt/overlay/dam/gui/content/asyncjobs.html`의 상태를 확인할 수 있습니다.
 
 >[!NOTE]
-이 새 기능을 사용하기 위해 시스템 사용자가 변경할 필요가 없습니다. 여기서는 AEM의 이전 온-프레미스 버전에서의 동작 변화만 간단히 설명합니다.
+>
+>이 새 기능을 사용하기 위해 시스템 사용자가 변경할 필요가 없습니다. 여기서는 AEM의 이전 온-프레미스 버전에서의 동작 변화만 간단히 설명합니다.
 
 ## 새 참조 사이트 및 자습서 {#new-reference-site-and-tutorial}
 
@@ -48,7 +49,7 @@ AEM 클라우드 서비스에서는 일반적으로 UI를 차단한 작업이 �
 
 이전에는 AEM에서 기본적으로 We.Retail을 설치했지만(프로덕션 모드에서 시작하는 경우 제외)  이제 참조 사이트는 기본적으로 앞으로 설치되지 않습니다.  대신 업데이트된 WKND 참조 사이트 코드와 함께 [git repo](https://github.com/adobe/aem-guides-wknd/) 및 [함께 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)가 제공됩니다.
 
-## 런타임 {#capabilities-not-available-at-runtime}에서 기능을 사용할 수 없습니다.
+## 런타임 시 사용할 수 없는 기능 {#capabilities-not-available-at-runtime}
 
 AEM as a Cloud Service은 항상 켜져 있으며 항상 최신 상태입니다. 이를 위해서는 변경할 수 없는 컨텐츠와 변경할 수 없는 컨텐츠로 AEM 리포지토리를 분리해야 하며 런타임 시 변경할 수 없는 컨텐츠에 대한 액세스를 금지해야 합니다. 변경할 수 있는 컨텐츠와 변경할 수 없는 컨텐츠에 대한 자세한 내용은 [변경할 수 있는 영역과 저장소의 변경할 수 없는 영역을 참조하십시오](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
 

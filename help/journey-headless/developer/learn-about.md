@@ -1,15 +1,15 @@
 ---
 title: CMS 헤드리스 개발에 대해 알아보기
 description: AEM Headless Developer 여정의 이 부분에서 헤드리스 기술과 왜 이 기술을 사용하는지 알아봅니다.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
 
 ---
 
-
-# CMS Headless 개발에 대해 알아보기 {#learn-about}
+# CMS 헤드리스 개발에 대해 알아보기 {#learn-about}
 
 [AEM Headless Developer 여정의 이 부분에서](overview.md)에서 헤드리스 기술과 왜 이 기술을 사용하는지 알아봅니다.
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 사용자는 플랫폼이나 터치 포인트에 관계없이 참여를 기대할 수 있으므로 경험을 전달하는 방법에 있어 민첩성이 필요합니다.  이러한 다중 채널 접근 방식은 디지털 경험의 표준이며 특정 상황에서 전체 스택 접근 방식은 유연성이 없다는 것을 입증할 수 있습니다.
 
-## 헤드리스 {#the-head}의 헤드
+## 헤드리스의 머리 {#the-head}
 
 시스템의 헤드는 일반적으로 해당 시스템의 출력 렌더러이며, 일반적으로 GUI 또는 기타 그래픽 출력 형태입니다.
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 여러 채널을 사용하는 것은 각각 고유한 프레젠테이션 시스템이 있다는 것을 의미할 수 있습니다. 모두 동일한 API를 통해 동일한 콘텐츠를 소비하지만 서로 다른 프레젠테이션 때문에 경험이 다를 수 있습니다. 고객 경험의 일관성을 유지하기 위해서는 염려와 배려가 있어야 합니다.
 
-신중한 디자인 시스템을 구현하고, 패턴 라이브러리를 공유하고, 재사용 가능한 디자인 구성 요소와 더불어 구축된 오픈 클라이언트측 프레임워크를 활용함으로써 일관된 경험을 확보할 수 있지만, 이를 계획해야 합니다.
+신중한 설계 시스템을 구현하고, 패턴 라이브러리를 공유하고, 재사용 가능한 디자인 구성 요소와 더불어 구축된 오픈 클라이언트측 프레임워크를 활용함으로써 일관된 경험을 확보할 수 있지만, 이를 계획해야 합니다.
 
 ## 미래는 헤드리스 이고 미래는 지금 입니다 {#future}
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 미래를 예측하는 것은 불가능하지만, 헤드리스를 하지 않으면 여러분에게 미래에서 가져오는 것에 반응할 민첩성을 줍니다.
 
-## AEM 및 Headless {#aem-and-headless}
+## AEM 및 헤드리스 {#aem-and-headless}
 
 이 개발자 여정을 계속 진행하면 AEM에서 전체 스택 전달 기능 외에 헤드리스 게재를 지원하는 방법을 알 수 있습니다.
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 이 여정은 헤드리스 전용 컨텐츠 전달 모델에 중점을 둡니다. 그러나 이러한 기본 지식이 있으면 두 모델의 기능을 활용하는 방법을 더 탐색할 수 있습니다.
 
-## 다음 기능 {#what-is-next}
+## 다음은 무엇입니까? {#what-is-next}
 
 AEM 헤드리스 여정을 시작해 주셔서 감사합니다! 이제 이 문서를 읽고 나면 다음을 수행해야 합니다.
 
@@ -126,5 +126,5 @@ AEM 헤드리스 여정을 시작해 주셔서 감사합니다! 이제 이 문�
 
 [AEM Headless를 Cloud Service으로 시작하기 문서를 검토하여 헤드리스 개발 여정의 다음 부분으로 이동하는 것이 좋지만,](getting-started.md) 다음은 이 문서에서 언급된 일부 개념에 대해 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 하지만 헤드리스 여정에서 계속할 필요는 없습니다.
 
-* [Adobe Experience Manager as a Cloud Service 아키텍처 소개](/help/core-concepts/architecture.md)  - AEM as a Cloud Service 구조 이해
+* [Adobe Experience Manager as a Cloud Service 아키텍처 소개](/help/overview/architecture.md)  - AEM as a Cloud Service 구조 이해
 * [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - 이 실습 자습서를 사용하여 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.

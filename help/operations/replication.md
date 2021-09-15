@@ -2,7 +2,7 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 4%
@@ -15,7 +15,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
 >[!NOTE]
 >
->자세한 내용은 [배포](/help/core-concepts/architecture.md#content-distribution)를 참조하십시오.
+>자세한 내용은 [배포](/help/overview/architecture.md#content-distribution)를 참조하십시오.
 
 ## 컨텐츠 게시 방법 {#methods-of-publishing-content}
 
