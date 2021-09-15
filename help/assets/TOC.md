@@ -4,9 +4,9 @@ user-guide-title: Assets as a Cloud Service 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '483'
 ht-degree: 46%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 46%
    + [메타데이터 프로필](metadata-profiles.md)
    + [메타데이터 스키마](metadata-schemas.md)
    + [비디오 자산 관리](manage-video-assets.md)
+   + [MSM을 사용하여 자산 재사용](reuse-assets-using-msm.md)
    + [자산 다운로드](download-assets-from-aem.md)
    + [편집할 자산 체크인 및 체크아웃](check-out-and-submit-assets.md)
    + [자산 Digital Rights Management](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 46%
    + [컨텐츠 조각에 대한 원격 GraphQL 쿼리에 대한 인증](content-fragments/graphql-authentication-content-fragments.md)
    + [컨텐츠 조각을 사용한 GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [연결된 자산](use-assets-across-connected-assets-instances.md)
-   + [Adobe InDesign에 대한 FPO 표현물 생성](configure-fpo-renditions.md)
+   + [배치 전용 표현물 생성](configure-fpo-renditions.md)
    + [자산 보고서](asset-reports.md)
    + [계단식 메타데이터](cascading-metadata.md)
    + [XMP 메타데이터](xmp-metadata.md)
@@ -67,7 +68,7 @@ ht-degree: 46%
 + 자산 공유 및 분배 {#brand-portal}
    + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](configure-aem-assets-with-brand-portal.md)
    + [자산을 [!DNL Brand Portal]에 게시](publish-to-brand-portal.md)
-   + [의 자산 [!DNL Brand Portal] 을 게시합니다. [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [의 자산 [!DNL Brand Portal] 을 게시합니다. [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + 콘텐츠 조각 {#content-fragments}
    + [컨텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 게재](content-fragments/content-fragments-graphql.md)
