@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '997'
 ht-degree: 5%
 
 ---
@@ -64,6 +64,7 @@ ht-degree: 5%
 | [보고서 다운로드](/help/assets/asset-reports.md) | 지원되지 않음. | 현재, 자산 사용을 알리는 다운로드 보고서를 사용할 수 없습니다.  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)에서 [보고서 다운로드 를 참조하십시오. |
 | 제품 사진 촬영 템플릿 | 지원되지 않음. |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)에서 [제품 사진 촬영 템플릿을 참조하십시오. |
 | 스마트 번역 | 지원되지 않음. | [스마트 ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 번역은  [!DNL Experience Manager] 로 지원되지  [!DNL Cloud Service]않습니다. |
+| WebDAV | 지원되지 않음. | 대체 방법은 [[!DNL Creative Cloud] 통합](/help/assets/aem-cc-integration-best-practices.md) 또는 [개발자 참조 자료](/help/assets/developer-reference-material-apis.md)를 참조하십시오. |
 | 클래식 UI | 지원되지 않음. | 터치 사용 사용자 인터페이스만 사용할 수 있습니다. |
 
 >[!MORELIKETHIS]
