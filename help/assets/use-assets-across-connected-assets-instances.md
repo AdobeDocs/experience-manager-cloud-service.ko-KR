@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6e7b2dd71f7e5a820ebca5e6e3928c712dfc359c
+source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
 workflow-type: tm+mt
-source-wordcount: '3086'
+source-wordcount: '2986'
 ht-degree: 25%
 
 ---
@@ -23,8 +23,6 @@ ht-degree: 25%
 [!UICONTROL 페이지 편집기]의 페이지를 대상 대상으로 편집할 때 작성자는 자산의 소스 역할을 하는 다른 [!DNL Assets] 배포의 자산을 원활하게 검색, 탐색 및 포함할 수 있습니다. 관리자는 [!DNL Sites] 기능이 [!DNL Assets] 기능이 있는 [!DNL Experience Manager] 의 다른 배포와 함께 [!DNL Experience Manager] 배포의 일회성 통합을 만듭니다. 연결된 자산을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용하고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용할 수도 있습니다.
 
 [!DNL Sites] 작성자의 경우 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 한 번에 여러 개의 원격 자산을 원활하게 검색하고 사용할 수 있도록 지원합니다. 한 번에 [!DNL Sites] 배포에서 많은 원격 자산을 사용할 수 있도록 하려면 자산을 일괄적으로 마이그레이션하는 것이 좋습니다.
-
-웹 페이지 작성자가 웹 페이지에서 Dynamic Media 이미지를 사용할 수 있도록 해주는 사이트 배포와 Dynamic Media 배포 간의 연결을 구성할 수 있습니다. 웹 페이지를 작성하는 동안 원격 자산 및 원격 Dynamic Media 배포를 사용한 경험은 동일하게 유지됩니다. 연결된 자산 기능(예: 스마트 자르기 및 이미지 사전 설정)을 통해 Dynamic Media 기능을 활용할 수 있습니다.
 
 ### 사전 요구 사항 및 지원되는 배포 {#prerequisites}
 
@@ -148,24 +146,17 @@ ht-degree: 25%
 위의 설정을 사용하여 작성 환경에서 기능이 어떻게 작동하는지 파악합니다. 원격 DAM 배포 시 원하는 문서 또는 이미지를 사용합니다.
 
 1. [!DNL Experience Manager] 작업 영역에서 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;에 액세스하여 원격 배포의 [!DNL Assets] 인터페이스로 이동합니다. 또는 브라우저에서 `https://[assets_servername_ams]:[port]/assets.html/content/dam`에 액세스합니다. 선택한 자산을 업로드합니다.
-&lt;>
+
 1. [!DNL Sites] 배포의 오른쪽 위 모서리에 있는 프로필 활성자에서 **[!UICONTROL 가장 대상]**&#x200B;을 클릭합니다. `ksaner`를 사용자 이름으로 지정하고 제공된 옵션을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 탐색]** > **[!UICONTROL 사이트]**&#x200B;에서 웹 사이트 페이지를 엽니다. 페이지를 편집합니다. 또는 브라우저에서 `https://[aem_server]:[port]/editor.html/content/<site page>`에 액세스하여 페이지를 편집합니다.
-=======
-1. [!DNL Sites] 배포의 오른쪽 위 모서리에 있는 프로필 활성자에서 **[!UICONTROL 가장 대상]**&#x200B;을 클릭합니다. 원하는 사용자 이름을 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 탐색]** > **[사이트]**&#x200B;에서 웹 사이트 페이지를 엽니다. 페이지를 편집합니다. 또는 브라우저에서 `https://[aem_server]:[port]/editor.html/content/<page name>`에 액세스하여 페이지를 편집합니다.
->>>>>>>>>>휴지통으로 이동된 변경 사항
 
+1. **[!UICONTROL 사이트]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;에서 `We.Retail` 웹 사이트 페이지를 엽니다. 페이지를 편집합니다. 또는 브라우저에서 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html`에 액세스하여 페이지를 편집합니다.
 
-
-
-
-> 
-
-페이지의 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널 전환]**&#x200B;을 클릭합니다.
+   페이지의 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널 전환]**&#x200B;을 클릭합니다.
 
 1. [!UICONTROL Assets] 탭을 열고 **[!UICONTROL 연결된 자산에 로그인]**&#x200B;을 클릭합니다.
-1. 적절한 자격 증명을 제공합니다. 이 사용자는 두 [!DNL Experience Manager] 배포에 대한 작성 권한이 있습니다.
+
+1. 자격 증명을 제공합니다(사용자 이름: `ksaner`, 암호: `password`). 이 사용자는 두 [!DNL Experience Manager] 배포에 대한 작성 권한이 있습니다.
+
 1. DAM에 추가한 자산을 검색합니다. 원격 자산이 왼쪽 패널에 표시됩니다. 이미지 또는 문서를 필터링하고 지원되는 문서 유형을 추가로 필터링합니다. 이미지를 `Image` 구성 요소로, 문서를 `Download` 구성 요소로 드래그합니다.
 
    가져온 자산은 로컬 [!DNL Sites] 배포에서 읽기 전용입니다. [!DNL Sites] 구성 요소에서 제공하는 옵션을 사용하여 가져온 자산을 편집할 수도 있습니다. 구성 요소별 편집은 원본에 영향을 주지 않습니다.
@@ -183,10 +174,12 @@ ht-degree: 25%
 1. 페이지를 게시할 때 [!DNL Experience Manager]은 페이지에 사용된 자산의 전체 목록을 표시합니다. 게시할 때 원격 자산을 성공적으로 가져오는지 확인합니다. 가져온 각 자산의 상태를 확인하려면 [비동기 작업](/help/operations/asynchronous-jobs.md) 사용자 인터페이스를 참조하십시오.
 
    >[!NOTE]
-   하나 이상의 원격 자산을 가져오지 않더라도 페이지가 게시됩니다. 원격 자산을 사용하는 구성 요소가 빈 채로 게시됩니다. [!DNL Experience Manager] 알림 영역에는 비동기 작업 페이지에 표시되는 오류에 대한 알림이 표시됩니다.
+   >
+   >하나 이상의 원격 자산을 가져오지 않더라도 페이지가 게시됩니다. 원격 자산을 사용하는 구성 요소가 빈 채로 게시됩니다. [!DNL Experience Manager] 알림 영역에는 비동기 작업 페이지에 표시되는 오류에 대한 알림이 표시됩니다.
 
 >[!CAUTION]
-가져온 원격 자산은 웹 페이지에서 사용한 경우 로컬 폴더에 액세스할 권한이 있는 모든 사람이 검색하고 사용할 수 있습니다. 가져온 자산은 로컬 폴더(`connectedassets` 위의 연습에서 )에 저장됩니다. 또한 자산은 [!UICONTROL 콘텐츠 파인더]를 통해 로컬 저장소에서 검색하고 볼 수 있습니다.
+>
+>가져온 원격 자산은 웹 페이지에서 사용한 경우 로컬 폴더에 액세스할 권한이 있는 모든 사람이 검색하고 사용할 수 있습니다. 가져온 자산은 로컬 폴더(`connectedassets` 위의 연습에서 )에 저장됩니다. 또한 자산은 [!UICONTROL 콘텐츠 파인더]를 통해 로컬 저장소에서 검색하고 볼 수 있습니다.
 
 가져온 자산은 연결된 메타데이터를 편집할 수 없다는 점을 제외하고 다른 로컬 자산으로 사용할 수 있습니다.
 
