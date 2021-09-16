@@ -2,12 +2,12 @@
 title: 메타데이터 프로필
 description: 자산의 메타데이터 프로필에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
-feature: 메타데이터
+feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1356'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,9 @@ ht-degree: 1%
 # 메타데이터 프로필 {#metadata-profiles}
 
 메타데이터 프로필을 사용하면 폴더 내의 자산에 기본 메타데이터를 적용할 수 있습니다. 메타데이터 프로필을 만들어 폴더에 적용합니다. 이후에 폴더에 업로드하는 모든 자산은 메타데이터 프로필에서 구성한 기본 메타데이터를 상속합니다.
+
+Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념은 프로필에 폴더가 폴더에 할당된다는 것입니다. 프로필 내에는 비디오 프로필 또는 이미지 프로필과 함께 메타데이터 프로필 형식의 설정이 있습니다. 이러한 설정은 폴더의 내용과 하위 폴더를 처리합니다. 따라서 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내에서 파일을 처리하는 방법은 프로필에서 해당 자산을 처리하는 방식에 큰 영향을 줍니다.
+일관되고 적절한 파일 및 폴더 이름 지정 전략 및 좋은 메타데이터 방법을 사용하면 디지털 자산 수집을 최대한 활용하고 올바른 프로필에 의해 올바른 파일이 처리되도록 할 수 있습니다.
 
 ## 메타데이터 프로필 추가 {#adding-a-metadata-profile}
 

@@ -4,12 +4,13 @@ description: Experience Manager 자산 워크플로우 및 ImageMagick를 사용
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
+
 
 # Adobe InDesign에 대한 배치 전용 표현물 생성 {#fpo-renditions}
 
@@ -20,7 +21,9 @@ Experience Manager의 큰 자산을 Adobe InDesign 문서에 배치할 때 크�
 Experience Manager as a Cloud Service은 FPO 변환을 생성할 수 있는 클라우드 기반의 자산 처리 기능을 제공합니다. 렌디션 생성을 위해 자산 마이크로서비스 사용. 새로 업로드한 자산과 Experience Manager에 있는 자산의 렌디션 생성을 구성할 수 있습니다.
 
 다음은 FPO 변환을 생성하는 단계입니다.
+
 1. [처리 프로필 만들기](#create-processing-profile).
+
 1. 이 프로필을 사용하여 새 자산 처리 [에 사용하도록 Experience Manager을 구성합니다.](#generate-renditions-of-new-assets)
 1. 프로필을 사용하여 기존 자산](#generate-renditions-of-existing-assets)을 처리합니다.[
 

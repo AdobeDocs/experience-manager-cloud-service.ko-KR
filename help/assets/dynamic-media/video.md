@@ -4,14 +4,14 @@ description: Dynamic Media에서 비디오를 사용하여 작업하는 방법�
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
 workflow-type: tm+mt
-source-wordcount: '9497'
+source-wordcount: '9427'
 ht-degree: 1%
 
 ---
 
-# 비디오{#video}
+# 비디오 {#video}
 
 이 섹션에서는 Dynamic Media에서 비디오 작업을 설명합니다.
 
@@ -37,7 +37,6 @@ ht-degree: 1%
    * 비디오 처리 프로필을 기본 소스 비디오를 업로드할 하나 이상의 폴더에 연결합니다.
 
       * [폴더에 비디오 프로필 적용](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-      * 처리 프로필](/help/assets/dynamic-media/best-practices-for-file-management.md)을 사용하기 위해 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오.[
       * [디지털 자산 구성](/help/assets/organize-assets.md)에 대해 자세히 알아보십시오.
    * 기본 소스 비디오를 폴더에 업로드합니다. 폴더에 비디오를 추가하면 폴더에 할당한 비디오 처리 프로필에 따라 인코딩됩니다.
 
@@ -54,9 +53,7 @@ ht-degree: 1%
 
    * 비디오 자산 구성, 탐색 및 검색
 
-      * [디지털 ](/help/assets/organize-assets.md)
-자산 구성  [처리 프로필을 사용하기 위해 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
+      * [디지털 자산 구성](/help/assets/organize-assets.md)
       * [비디오 ](/help/assets/search-assets.md#custompredicates) 자산 검색 또는  [자산 검색](/help/assets/manage-digital-assets.md#search-assets)
    * 비디오 자산 미리 보기 및 게시
 
@@ -64,41 +61,27 @@ ht-degree: 1%
          [미리 ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 보기 비디오 또는  [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)
          [비디오 표현물 관리](/help/assets/manage-digital-assets.md#managing-renditions)
 
+      * [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * 비디오 메타데이터 작업
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
+      * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드와 같은 비디오의 속성을 편집합니다.
+         [비디오 속성 편집](/help/assets/manage-digital-assets.md#editing-properties)
 
-    * [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    
-    * 비디오 메타데이터 작업
+      * [디지털 자산에 대한 메타데이터 관리](/help/assets/manage-metadata.md)
+      * [메타데이터 스키마](/help/assets/metadata-schemas.md)
+   * 비디오 검토, 승인 및 주석 달기, 전체 버전 제어 유지
 
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
+      * [비디오에 ](/help/assets/manage-video-assets.md#annotate-video-assets) 주석 달기 또는  [자산에 주석 달기](/help/assets/manage-digital-assets.md#annotating)
 
-    * 제목, 설명 및 태그, 사용자 지정 메타데이터 필드 등의 비디오 속성을 편집합니다. 
-    [비디오 속성 편집](/help/assets/manage-digital-assets.md#editing-properties)
-    
-    * [디지털 자산에 대한 메타데이터 관리](/help/assets/manage-metadata.md)
-    * [메타데이터 스키마](/help/assets/metadata-schemas.md)
-    
-    * 비디오 검토, 승인 및 주석을 달고 전체 버전 제어 유지
-    
-    * [비디오에 주석 달기](/help/assets/manage-video-assets.md#annotate-video-assets) 또는 [자산 주석 달기](/help/assets/manage-digital-assets.md#annotating)
-    
-    * [버전 만들기](/help/assets/manage-digital-assets.md#asset-versioning)
-     [자산에 주석 달기](/help/assets/manage-digital-assets.md)[자산에 대한 워크플로우 시작](#starting-a-workflow-on-an-asset)
+      * [버전 만들기](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [자산에서 워크플로우 시작](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
+      * [폴더 자산 검토](/help/assets/bulk-approval.md)
+      * [프로젝트](/help/sites-cloud/authoring/projects/overview.md)
 
-    * [폴더 자산 검토](/help/assets/bulk-approval.md)
-    * [프로젝트](/help/sites-cloud/authoring/projects/overview.md)
+
+
 
 1. **다음 중** 하나를 수행하여 Dynamic Media 비디오를 게시합니다.
 

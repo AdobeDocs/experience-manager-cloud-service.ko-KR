@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media 비디오 프로필
 description: Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하도록 최적화되었습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
-feature: 자산 관리,비디오 프로필,표현물
+feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '3661'
+source-wordcount: '3656'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,8 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 [비디오 인코딩에 대한 우수 사례](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)를 참조하십시오.
 
-또한 [처리 프로필 사용을 위한 디지털 자산을 구성하는 우수 사례](/help/assets/dynamic-media/best-practices-for-file-management.md)를 참조하십시오.
+또한 [처리 프로필 사용을 위한 디지털 자산을 구성하는 우수 사례](/help/assets/organize-assets.md)를 참조하십시오.
+
 
 >[!NOTE]
 >
