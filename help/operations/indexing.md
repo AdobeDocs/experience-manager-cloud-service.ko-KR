@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
+source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2038'
 ht-degree: 2%
 
 ---
@@ -211,9 +211,9 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 ## 인덱스 최적화
 
-Apache Jackrabbit Oak를 사용하면 유연한 인덱스 구성을 통해 검색 쿼리를 효율적으로 처리할 수 있습니다. 인덱스 최적화는 중소규모 프로젝트의 주요 역할을 하지 않지만, 대규모 컨텐츠 저장소 및 컨텐츠 속도가 높은 프로젝트를 통해 인덱싱에 대한 타깃팅된 효율성 향상을 수행해야 합니다. 최적화되지 않은 인덱스 및 대체 인덱스는 가능한 한 피해야 합니다. AEM의 모든 쿼리에 적절하고 최적화된 인덱스를 사용할 수 있도록 사전 조치를 취하는 것이 좋습니다. 적절한 인덱스가 없는 경우 쿼리는 전체 리포지토리를 트래버스합니다. 이러한 쿼리는 AEM에서 저장소 순회 쿼리가 가장 덜 효율적인 쿼리 방법이므로 로그 파일을 분석하여 인덱스 정의를 최적화하여 식별해야 합니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)를 참조하십시오.
+Apache Jackrabbit Oak를 사용하면 유연한 인덱스 구성을 통해 검색 쿼리를 효율적으로 처리할 수 있습니다. 인덱스가 더 큰 리포지토리의 경우 특히 중요합니다. 최적화되지 않은 인덱스 및 대체 인덱스는 가능한 한 피해야 합니다. 모든 쿼리가 적절한 인덱스로 백업되었는지 확인하십시오. 적절한 인덱스가 없는 쿼리는 수천 개의 노드를 읽을 수 있으며 이 노드는 경고로 기록됩니다. 이러한 쿼리는 로그 파일을 분석하여 식별해야 인덱스 정의를 최적화할 수 있습니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)를 참조하십시오.
 
 ### AEM as a Cloud Service의 Lucene 전체 텍스트 인덱스
 
-전체 텍스트 인덱스 lucene2는 기본적으로 AEM 저장소의 모든 컨텐츠를 인덱싱하며, 따라서 저장소 종속 크기로 인해 매우 비효율적입니다. Lucene 전체 텍스트 색인은 내부적으로 사용되지 않으며, 2021년 9월부터 Cloud Service으로 AEM에 더 이상 배포되지 않습니다. 따라서 AEM의 제품 측에서 더 이상 Cloud Service으로 사용되지 않으므로 고객 코드를 실행할 필요는 없습니다. 일반적인 Lucene 인덱스가 있는 Cloud Service 환경인 AEM의 경우 Adobe은 이 색인을 보정하고 더 나은 최적화된 인덱스를 사용하기 위해 개별적으로 고객과 협력합니다. 모든 예상과 달리 사용자 지정 코드에서 쿼리를 수행하기 위해 전체 텍스트 인덱스가 실제로 필요한 경우 유지 관리 충돌을 방지하기 위해 Lucene 인덱스와 유사한 인덱스 정의를 다른 이름으로 만들어야 합니다.
+전체 텍스트 인덱스 `/oak:index/lucene-2`은(는) 기본적으로 AEM 저장소의 모든 노드를 인덱싱하므로 매우 클 수 있습니다. Lucene 전체 텍스트 색인은 내부적으로 사용되지 않으며, 2021년 9월부터 Cloud Service으로 AEM에 더 이상 배포되지 않습니다. 따라서 AEM의 제품 측에서 더 이상 Cloud Service으로 사용되지 않으므로 고객 코드를 실행할 필요는 없습니다. 일반적인 Lucene 인덱스가 있는 Cloud Service 환경인 AEM의 경우 Adobe은 이 색인을 보정하고 더 나은 최적화된 인덱스를 사용하기 위해 개별적으로 고객과 협력합니다. 사용자 지정 쿼리에 이 인덱스가 필요한 경우 임시 솔루션으로서 [여기](/help/operations/indexing.md)에 설명된 대로 다른 이름(예: `/oak:index/acme.lucene-1-custom-1`)을 사용하여 이 인덱스의 사본을 만들어야 합니다.
 Adobe에게 별도로 조언하지 않는 한 이 최적화는 온-프레미스하거나 Adobe Managed Services에서 관리하는 다른 AEM 환경에는 적용되지 않습니다.
