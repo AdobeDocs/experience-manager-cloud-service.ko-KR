@@ -2,16 +2,16 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
+source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '2098'
 ht-degree: 2%
 
 ---
 
 # 콘텐츠 검색 및 색인 지정 {#indexing}
 
-## AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service} 의 변경 사항
+## AEM as a Cloud Service 변경 사항 {#changes-in-aem-as-a-cloud-service}
 
 AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에서 Cloud Manager의 CI/CD 파이프라인에 의해 구동되는 n-x AEM 컨테이너가 있는 서비스 기반 보기로 이동하고 있습니다. 단일 AEM 인스턴스에서 인덱스를 구성하고 유지 관리하는 대신 배포 전에 인덱스 구성을 지정해야 합니다. 프로덕션의 구성 변경은 분명히 CI/CD 정책을 위반하는 것입니다. 인덱스 변경 내용은 시스템 안정성 및 성능에 영향을 줄 수 있으므로 테스트 및 재색인화를 지정하지 않은 경우 프로덕션으로 가져오기 전에 적용됩니다.
 
@@ -31,11 +31,11 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 1. 색인 구성은 배포를 통해 변경됩니다. 색인 정의 변경 사항은 다른 컨텐츠 변경 사항과 같이 구성됩니다.
 
-1. AEM as a Cloud Service의 높은 수준에서 [Blue-Green 배포 모델](#index-management-using-blue-green-deployments) 두 개의 인덱스 세트가 존재합니다.이전 버전(파란색)에 대해 한 세트, 새 버전에 대해 한 세트(녹색)를 설정합니다.
+1. AEM as a Cloud Service의 높은 수준에서 [Blue-Green 배포 모델](#index-management-using-blue-green-deployments) 두 개의 인덱스 세트가 존재합니다. 이전 버전(파란색)에 대해 한 세트, 새 버전에 대해 한 세트(녹색)를 설정합니다.
 
 1. 고객은 Cloud Manager 빌드 페이지에서 색인 작업이 완료되었는지 확인하고 새 버전에서 트래픽을 받을 준비가 되면 알림을 받게 됩니다.
 
-1. 제한 사항:현재 AEM as a Cloud Service의 인덱스 관리는 lucene 유형의 색인에만 지원됩니다.
+1. 제한 사항: 현재 AEM as a Cloud Service의 인덱스 관리는 lucene 유형의 색인에만 지원됩니다.
 
 ## 사용 방법 {#how-to-use}
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 위의 두 지점 모두에 대해, 각각의 Cloud Manager 릴리스 일정에서 사용자 지정 코드 베이스의 일부로 새 인덱스 정의를 생성해야 합니다. 자세한 내용은 [AEM as a Cloud Service 설명서](/help/implementing/deploying/overview.md)를 참조하십시오.
 
-### 새 인덱스 정의 준비 중 {#preparing-the-new-index-definition}
+### 새 인덱스 정의 준비 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
@@ -89,9 +89,9 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 ### 인덱스 관리란 무엇입니까? {#what-is-index-management}
 
-인덱스 관리는 인덱스를 추가, 제거 및 변경하는 것입니다. 인덱스의 *정의*&#x200B;를 변경하는 것은 빠르지만 변경(종종 &quot;색인 작성&quot;이라고 함) 또는 기존 인덱스의 경우 &quot;다시 인덱싱&quot;이라고 함)을 적용하려면 시간이 필요합니다. 순간적이지 않습니다.데이터를 인덱싱하려면 리포지토리를 검사해야 합니다.
+인덱스 관리는 인덱스를 추가, 제거 및 변경하는 것입니다. 인덱스의 *정의*&#x200B;를 변경하는 것은 빠르지만 변경(종종 &quot;색인 작성&quot;이라고 함) 또는 기존 인덱스의 경우 &quot;다시 인덱싱&quot;이라고 함)을 적용하려면 시간이 필요합니다. 순간적이지 않습니다. 데이터를 인덱싱하려면 리포지토리를 검사해야 합니다.
 
-### 파랑-녹색 배포란 무엇입니까? {#what-is-blue-green-deployment}
+### 파란색 녹색 배포란 무엇입니까? {#what-is-blue-green-deployment}
 
 블루-그린 배포를 통해 다운타임을 줄일 수 있습니다. 또한 다운타임 없이 업그레이드할 수 있으며 빠른 롤백 기능을 제공합니다. 애플리케이션의 이전 버전(파란색)은 새 애플리케이션 버전(녹색)과 동시에 실행됩니다.
 
@@ -111,15 +111,15 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 저장소의 읽기-쓰기 영역은 응용 프로그램의 모든 버전 간에 공유되지만 각 응용 프로그램 버전에 대해 특정 `/apps` 및 `/libs` 세트가 있습니다.
 
-### 파란색-녹색 배포가 없는 인덱스 관리 {#index-management-without-blue-green-deployment}
+### 청록 배포가 없는 인덱스 관리 {#index-management-without-blue-green-deployment}
 
 개발 중 또는 온-프레미스 설치를 사용할 때 런타임 시 인덱스를 추가, 제거 또는 변경할 수 있습니다. 색인은 가능한 한 빨리 사용됩니다. 인덱스가 아직 이전 버전의 응용 프로그램에서 사용되어야 하는 경우에는 일반적으로 예약된 다운타임에 인덱스를 만듭니다. 인덱스를 제거하거나 기존 인덱스를 변경할 때에도 같은 현상이 발생합니다. 인덱스를 제거하면 제거되는 즉시 사용할 수 없게 됩니다.
 
-### 파랑-녹색 배포가 있는 인덱스 관리 {#index-management-with-blue-green-deployment}
+### 블루-그린 배포를 통한 인덱스 관리 {#index-management-with-blue-green-deployment}
 
-청록 배포로 다운타임이 발생하지 않습니다. 그러나 인덱스 관리를 위해서는 특정 버전의 응용 프로그램에서만 인덱스를 사용해야 합니다. 예를 들어 애플리케이션 버전 2에서 인덱스를 추가할 때 아직 애플리케이션 버전 1에서 사용하지 않도록 설정할 수 있습니다. 반대는 인덱스가 제거될 때 발생합니다.버전 1에서는 버전 2에서 제거된 인덱스가 계속 필요합니다. 인덱스 정의를 변경할 때 인덱스의 이전 버전은 버전 1에만 사용하고 새로운 버전의 인덱스는 버전 2에만 사용하려는 것입니다.
+청록 배포로 다운타임이 발생하지 않습니다. 그러나 인덱스 관리를 위해서는 특정 버전의 응용 프로그램에서만 인덱스를 사용해야 합니다. 예를 들어 애플리케이션 버전 2에서 인덱스를 추가할 때 아직 애플리케이션 버전 1에서 사용하지 않도록 설정할 수 있습니다. 반대는 인덱스가 제거될 때 발생합니다. 버전 1에서는 버전 2에서 제거된 인덱스가 계속 필요합니다. 인덱스 정의를 변경할 때 인덱스의 이전 버전은 버전 1에만 사용하고 새로운 버전의 인덱스는 버전 2에만 사용하려는 것입니다.
 
-다음 표에는 5개의 인덱스 정의가 나와 있습니다.index `cqPageLucene`은 두 버전에서 사용되지만 index `damAssetLucene-custom-1`은 버전 2에서만 사용됩니다.
+다음 표에는 5개의 인덱스 정의가 나와 있습니다. index `cqPageLucene`은 두 버전에서 사용되지만 index `damAssetLucene-custom-1`은 버전 2에서만 사용됩니다.
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 색인이 변경될 때마다 버전 번호가 증가합니다. 사용자 지정 인덱스 이름이 제품 자체의 인덱스 이름과 충돌하는 것을 방지하려면 사용자 지정 인덱스 및 기본 제공 인덱스에 대한 변경 사항은 `-custom-<number>`로 끝나야 합니다.
 
-### 기본 인덱스 {#changes-to-out-of-the-box-indexes} 변경
+### 기본 인덱스 변경 {#changes-to-out-of-the-box-indexes}
 
 Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 기본 인덱스를 변경하고 나면 `damAssetLucene-2` 또는 `cqPageLucene-2`이라는 새 인덱스가 만들어지거나, 인덱스가 이미 사용자 지정된 경우 사용자 지정된 인덱스 정의가 아래와 같이 기본 색인의 변경 사항과 병합됩니다. 변경 내용의 병합은 자동으로 수행됩니다. 즉, 기본 인덱스가 변경되는 경우 아무 작업도 수행할 필요가 없습니다. 그러나 나중에 인덱스를 다시 사용자 지정할 수 있습니다.
 
@@ -150,7 +150,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 인덱스 관리는 현재 `lucene` 유형의 인덱스에만 지원됩니다.
 
-### 인덱스 {#adding-an-index} 추가
+### 인덱스 추가 {#adding-an-index}
 
 응용 프로그램의 새 버전에서 사용할 `/oak:index/acme.product-custom-1` 인덱스를 추가하려면 다음과 같이 인덱스를 구성해야 합니다.
 
@@ -160,7 +160,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 위와 같이, 이렇게 하면 인덱스가 새로운 버전의 응용 프로그램에서만 사용됩니다.
 
-### 인덱스 {#changing-an-index} 변경
+### 인덱스 변경 {#changing-an-index}
 
 기존 인덱스를 변경하면 변경된 인덱스 정의로 새 인덱스를 추가해야 합니다. 예를 들어 기존 인덱스 `/oak:index/acme.product-custom-1`이 변경되었다고 가정하십시오. 이전 색인은 `/oak:index/acme.product-custom-1` 아래에 저장되고 새 색인은 `/oak:index/acme.product-custom-2` 아래에 저장됩니다.
 
@@ -180,7 +180,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 경우에 따라 인덱스 정의의 변경 사항을 되돌려야 합니다. 이유는 실수로 변경했거나 변경이 더 이상 필요하지 않기 때문일 수 있습니다. 예를 들어 인덱스 정의 `damAssetLucene-8-custom-3`이(가) 실수로 생성되었으며 이미 배포되었습니다. 이러한 이유로 이전 인덱스 정의 `damAssetLucene-8-custom-2`로 되돌릴 수 있습니다. 이렇게 하려면 이전 인덱스 `damAssetLucene-8-custom-2`의 정의를 포함하는 새 인덱스 `damAssetLucene-8-custom-4`를 추가해야 합니다.
 
-### 인덱스 {#removing-an-index} 제거
+### 인덱스 제거 {#removing-an-index}
 
 다음은 사용자 지정 색인에만 적용됩니다. 제품 색인은 AEM에서 사용하므로 제거할 수 없습니다.
 
@@ -208,3 +208,12 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 ```
 
 기본 인덱스의 사용자 지정이 더 이상 필요하지 않으면 기본 인덱스 정의를 복사해야 합니다. 예를 들어 `damAssetLucene-8-custom-3`을 이미 배포했지만 더 이상 사용자 지정 항목이 필요하지 않고 기본 `damAssetLucene-8` 인덱스로 다시 전환하려면 `damAssetLucene-8`의 인덱스 정의를 포함하는 `damAssetLucene-8-custom-4` 인덱스를 추가해야 합니다.
+
+## 인덱스 최적화
+
+Apache Jackrabbit Oak를 사용하면 유연한 인덱스 구성을 통해 검색 쿼리를 효율적으로 처리할 수 있습니다. 인덱스 최적화는 중소규모 프로젝트의 주요 역할을 하지 않지만, 대규모 컨텐츠 저장소 및 컨텐츠 속도가 높은 프로젝트를 통해 인덱싱에 대한 타깃팅된 효율성 향상을 수행해야 합니다. 최적화되지 않은 인덱스 및 대체 인덱스는 가능한 한 피해야 합니다. AEM의 모든 쿼리에 적절하고 최적화된 인덱스를 사용할 수 있도록 사전 조치를 취하는 것이 좋습니다. 적절한 인덱스가 없는 경우 쿼리는 전체 리포지토리를 트래버스합니다. 이러한 쿼리는 AEM에서 저장소 순회 쿼리가 가장 덜 효율적인 쿼리 방법이므로 로그 파일을 분석하여 인덱스 정의를 최적화하여 식별해야 합니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)를 참조하십시오.
+
+### AEM as a Cloud Service의 Lucene 전체 텍스트 인덱스
+
+전체 텍스트 인덱스 lucene2는 기본적으로 AEM 저장소의 모든 컨텐츠를 인덱싱하며, 따라서 저장소 종속 크기로 인해 매우 비효율적입니다. Lucene 전체 텍스트 색인은 내부적으로 사용되지 않으며, 2021년 9월부터 Cloud Service으로 AEM에 더 이상 배포되지 않습니다. 따라서 AEM의 제품 측에서 더 이상 Cloud Service으로 사용되지 않으므로 고객 코드를 실행할 필요는 없습니다. 일반적인 Lucene 인덱스가 있는 Cloud Service 환경인 AEM의 경우 Adobe은 이 색인을 보정하고 더 나은 최적화된 인덱스를 사용하기 위해 개별적으로 고객과 협력합니다. 모든 예상과 달리 사용자 지정 코드에서 쿼리를 수행하기 위해 전체 텍스트 인덱스가 실제로 필요한 경우 유지 관리 충돌을 방지하기 위해 Lucene 인덱스와 유사한 인덱스 정의를 다른 이름으로 만들어야 합니다.
+Adobe에게 별도로 조언하지 않는 한 이 최적화는 온-프레미스하거나 Adobe Managed Services에서 관리하는 다른 AEM 환경에는 적용되지 않습니다.
