@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는 및 제거된 기능
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 사용 중단되거나 제거된 기능에 관한 릴리스 노트입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
+source-git-commit: 8294709d6c5685fd5b88a52835b4082e3e713a51
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 34%
+source-wordcount: '559'
+ht-degree: 33%
 
 ---
 
@@ -34,6 +34,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 | 기능 | 사용되지 않는 기능 | 대체 |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | 템플릿 기반 단순 컨텐츠 조각. | [모델 기반의 구조화된 컨텐츠 ](/help/assets/content-fragments/content-fragments-models.md) 조각. |
 | [!DNL Assets] | `DAM Asset Update` 수집된 이미지를 처리하는 워크플로우입니다. | 이제 자산 수집은 [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)를 사용합니다. |
 | [!DNL Assets] | 자산을 [!DNL Experience Manager]에 바로 업로드합니다. [더 이상 사용되지 않는 자산 업로드 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)를 참조하십시오. | [다이렉트 이진 업로드](/help/assets/add-assets.md)를 사용합니다. 자세한 내용은 [직접 업로드 API](/help/assets/developer-reference-material-apis.md#upload-binary)를 참조하십시오. |
 | [!DNL Assets] | [워크플로우의 특정 ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) 워크플로우 단계 `DAM Asset Update` 는  [!DNL ImageMagick]과 같은 명령줄 도구 호출을 포함하여 지원되지 않습니다. | [자산 마이크로서비스](/help/assets/asset-microservices-overview.md)는 많은 워크플로우에 대한 대체 기능을 제공합니다. 사용자 지정 처리에는 [사후 처리 워크플로우](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)를 사용하십시오. |
