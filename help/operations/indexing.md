@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
+source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2057'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,9 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 1. 고객은 Cloud Manager 빌드 페이지에서 색인 작업이 완료되었는지 확인하고 새 버전에서 트래픽을 받을 준비가 되면 알림을 받게 됩니다.
 
-1. 제한 사항: 현재 AEM as a Cloud Service의 인덱스 관리는 lucene 유형의 색인에만 지원됩니다.
+1. 제한 사항:
+* 현재 AEM as a Cloud Service의 인덱스 관리는 lucene 유형의 색인에만 지원됩니다.
+* 표준 분석기만 지원됩니다(즉, 제품과 함께 제공된 분석기). 사용자 지정 분석기는 지원되지 않습니다.
 
 ## 사용 방법 {#how-to-use}
 
