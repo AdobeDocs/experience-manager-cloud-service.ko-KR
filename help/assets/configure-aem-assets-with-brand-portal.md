@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2402'
 ht-degree: 20%
 
 ---
@@ -59,6 +59,8 @@ AEM Assets에 대한 환경을 [!DNL Cloud Service] 인스턴스로 만들거나
 >IMS 조직(org1-existing)에 대해 Adobe 개발자 콘솔](#manual-configuration))을 사용하여 수동으로 구성한 기존 Brand Portal 클라우드 구성([)이 있고 다른 IMS 조직(org2-new)에 대해 [!DNL Cloud Service] 인스턴스가 구성된 경우, Cloud Manager에서 Brand Portal을 활성화하면 Brand Portal IMS 조직이 `org2-new`로 재설정됩니다. `org1-existing`에 수동으로 구성된 클라우드 구성은 AEM Assets 작성자 인스턴스에 표시되지만, Cloud Manager에서 Brand Portal을 활성화한 후에는 더 이상 사용할 수 없습니다.
 >
 >기존 Brand Portal 클라우드 구성 및 [!DNL Cloud Service] 인스턴스로 AEM Assets이 동일한 IMS 조직(org1)을 사용하는 경우 Cloud Manager에서 Brand Portal을 활성화하기만 하면 됩니다.
+>
+>자동 생성된 설정은 수정하지 마십시오.
 
 **참고 항목**:
 * [AEM Assets에서 Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
