@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager 저장소
 description: Cloud Manager 저장소
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,25 @@ Cloud Manager에서 저장소를 보고 관리하려면 아래 단계를 따르�
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. 아래 그림과 같이 리포지토리를 선택하고 테이블의 맨 오른쪽에 있는 메뉴 옵션을 클릭하여 **저장소 URL 복사**, **보기 및 업데이트** 또는 **저장소 삭제**&#x200B;를 클릭할 수 있습니다.
+1. 저장소를 선택하고 아래 그림과 같이 테이블 맨 오른쪽에 있는 메뉴 옵션을 클릭하여 **저장소 URL 복사** 또는 **보기 및 업데이트** 또는 **저장소 삭제**&#x200B;를 클릭할 수 있습니다.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## 저장소 삭제 {#delete-repo}
+
+Cloud Manager에서 저장소를 삭제하려면 아래 절차를 따르십시오.
+>[!NOTE]
+>저장소를 삭제하면 다음 작업이 수행됩니다.
+>1. 나중에 생성할 수 있는 새 저장소에 대해 삭제된 저장소 이름을 사용할 수 없도록 합니다. 이 경우 아래와 같이 오류 메시지가 표시됩니다.
+   >*리포지토리 이름은 조직 내에서 고유해야 합니다.*
+>1. 삭제된 저장소를 Cloud Manager에서 사용할 수 없게 하므로 파이프라인에 연결할 수 없습니다.
+
+
+1. **프로그램 개요** 페이지에서 **저장소** 탭을 클릭하고 **저장소** 페이지로 이동합니다.
+
+1. 저장소를 선택하고 표의 맨 오른쪽에 있는 메뉴 옵션을 클릭합니다. 아래 그림과 같이 **삭제**&#x200B;를 클릭하여 저장소를 삭제합니다.
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Git 하위 모듈 지원 {#git-submodule-support}
