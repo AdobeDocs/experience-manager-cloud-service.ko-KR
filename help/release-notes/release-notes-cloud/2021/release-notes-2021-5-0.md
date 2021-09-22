@@ -1,20 +1,20 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 릴리스의 릴리스 노트'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 릴리스의 릴리스 노트'
-source-git-commit: 6a81e04a7de657d222cdd965fb6e2d4351b4c338
+exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1355'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] Cloud Service의 현재 릴리스 노트 {#release-notes}
 
 다음 섹션에서는 Cloud Service으로 현재(최신) 버전의 [!DNL Experience Manager]에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
->여기에서 이전 버전의 릴리스 정보로 이동할 수 있습니다.예를 들어, 2020년, 2021년 등의 경우입니다.
+>여기에서 이전 버전의 릴리스 정보로 이동할 수 있습니다. 예를 들어, 2020년, 2021년 등의 경우입니다.
 
 >[!NOTE]
 >
@@ -29,19 +29,19 @@ ht-degree: 4%
 
 ### AEM as a Cloud Service Foundation의 새로운 기능 {#what-is-new-foundation}
 
-* [사전 릴리스 채널](/help/release-notes/prerelease.md):프로덕션에서 라이브로 전환되기 전에 한 달 동안 예정된 기능을 미리 봅니다!
+* [사전 릴리스 채널](/help/release-notes/prerelease.md): 프로덕션에서 라이브로 전환되기 전에 한 달 동안 예정된 기능을 미리 봅니다!
 
-* [API 사용 중단](/help/release-notes/deprecated-apis.md):더 이상 사용되지 않는 최신 AEM as a Cloud Service 목록 을 사용할 수 있습니다.
+* [API 사용 중단](/help/release-notes/deprecated-apis.md): 더 이상 사용되지 않는 최신 AEM as a Cloud Service 목록 을 사용할 수 있습니다.
 
-* [AEM as a Cloud Service SDK Build Analyzer Maven 플러그인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html):더 이상 사용되지 않는 Java API 확인 및 기타 개선 사항이 포함된 전문 프로젝트를 최신 버전으로 업데이트합니다.
+* [AEM as a Cloud Service SDK Build Analyzer Maven 플러그인](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): 더 이상 사용되지 않는 Java API 확인 및 기타 개선 사항이 포함된 전문 프로젝트를 최신 버전으로 업데이트합니다.
 
-## [!DNL Adobe Experience Manager Sites]로서의 [!DNL Cloud Service]  {#sites}
+## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
 * 곧 새 [미리 보기 계층](/help/sites-cloud/authoring/fundamentals/previewing-content.md)에서 콘텐츠를 확인하여 게시 계층에서 수행한 최종 경험 모양과 느낌을 시뮬레이션할 수 있습니다. 이 기능은 AEM Sites 관리 게시 마법사에서 활성화됩니다. 이 마법사를 사용하면 이제 게시 또는 미리 보기 간에 게시 대상을 선택할 수 있습니다. 그런 다음 미리 보기에서 경험에 전용 URL을 통해 액세스할 수 있습니다. 미리 보기에서 유효성 검사 후 평소대로 컨텐츠를 작성자에서 게시로 게시할 수 있습니다. AEM에서 Cloud Service 환경으로 미리 보기 서비스를 활성화하는 것은 다음 몇 주 후에 점진적으로 롤아웃됩니다.
 
-## [!DNL Adobe Experience Manager Assets]로서의 [!DNL Cloud Service]  {#assets}
+## [!DNL Adobe Experience Manager Assets] 로서의  [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
@@ -68,46 +68,19 @@ ht-degree: 4%
 
 #### Dynamic Media의 새로운 기능 {#what-is-new-dm}
 
-* 스마트 이미징 DPR(Device Pixel Ratio) 및 네트워크 대역폭 최적화를 사용하면 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 고품질 이미지를 효율적으로 제공할 수 있습니다. 자세한 내용은 [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md)를 참조하십시오.
-
-   >[!NOTE]
-   >
-   >위의 스마트 이미징 개선 사항에 대한 릴리스 타임라인은 다음과 같습니다.
-   >
-   >* 2021년 5월 24일 NA,
-      >
-      >
-   * 유럽, 중동 및 아프리카 2021년 6월 25일
-      >
-      >
-   * 아시아 태평양 2021년 7월 19일
-
-
+* 스마트 이미징 DPR(Device Pixel Ratio) 및 네트워크 대역폭 최적화를 사용하면 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 고품질 이미지를 효율적으로 제공할 수 있습니다. 자세한 내용은 [스마트 이미징 FAQ](/help/assets/dynamic-media/imaging-faq.md) 및 [차세대 이미지 형식을 사용하는 이미지 최적화 WebP 및 AVIF를 참조하십시오.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * Dynamic Media 게재에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다(fmt URL 수정자).
 
-   >[!NOTE]
-   >
-   >AVIF 지원을 위한 릴리스 타임라인은 다음과 같습니다.
-   >
-   >* 북미 2021년 5월 10일
-      >
-      >
-   * 2021년 5월 24일 유럽, 중동, 아프리카
-      >
-      >
-   * 아시아 태평양 2021년 6월 24일.
-
-
-## [!DNL Adobe Experience Manager Forms]로서의 [!DNL Cloud Service]  {#forms}
+## [!DNL Adobe Experience Manager Forms] 로서의  [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* **상황별 도움말**:작성자가 다양한 편집기의 기능을 더 잘 이해할 수 있도록 적응형 양식 편집기, 템플릿 편집기 및 테마 편집기에 대한 상황별 도움말을 추가했습니다.
-* **속성 브라우저의 오류 메시지**:응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
+* **상황별 도움말**: 작성자가 다양한 편집기의 기능을 더 잘 이해할 수 있도록 적응형 양식 편집기, 템플릿 편집기 및 테마 편집기에 대한 상황별 도움말을 추가했습니다.
+* **속성 브라우저의 오류 메시지**: 응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
 
 ### 예정된 [!DNL Forms] 베타 기능 {#what-is-new-forms-prerelease}
 
-클라우드 서비스로 출력:출력 서비스를 사용하면 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기식 및 비동기식 배치 모드로 문서를 생성할 수 있습니다. 출력 서비스를 통해 다음을 수행할 수 있는 응용 프로그램을 만들 수 있습니다.
+클라우드 서비스로 출력: 출력 서비스를 사용하면 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기식 및 비동기식 배치 모드로 문서를 생성할 수 있습니다. 출력 서비스를 통해 다음을 수행할 수 있는 응용 프로그램을 만들 수 있습니다.
 
 * XML 데이터로 템플릿 파일을 채워서 최종 양식 문서를 생성합니다.
 * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.

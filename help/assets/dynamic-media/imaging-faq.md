@@ -1,12 +1,12 @@
 ---
 title: 스마트 이미징
 description: Adobe Sensei AI를 사용한 스마트 이미징이 각 사용자의 고유한 보기 특성을 적용하여 환경에 최적화된 적합한 이미지를 자동으로 제공하므로 향상된 성능과 참여를 제공합니다.
-feature: 자산 관리,표현물
+feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '2613'
+source-wordcount: '2624'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 | Europe, Middle East, Africa | 13 August 2021 | 
 | Asia-Pacific | 22 July 2021 | -->
 
-1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. 지원 사례에 다음 정보를 제공하십시오.
 
    1. 기본 연락처 이름, 이메일, 전화
@@ -282,3 +282,9 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * 모든 뷰어 측 DPR 최적화는 서버 측 스마트 이미징 DPR 최적화와 함께 작동하며 과도한 크기의 이미지를 생성하지 않습니다. 즉, 확대/축소 지원 뷰어의 기본 보기처럼 DPR이 뷰어에 의해 처리되는 모든 위치에서 서버 측 스마트 이미징 DPR 값이 트리거되지 않습니다. 마찬가지로 색상 견본 및 축소판과 같은 뷰어 요소에 DPR 처리가 없으면 서버측 스마트 이미징 DPR 값이 트리거됩니다.
 
 [이미지 작업 시](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 및 [스마트 자르기 작업 시](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)를 참조하십시오.
+
+>[!MORELIKETHIS]
+>
+>* [차세대 이미지 포맷인 WebP 및 AVIF를 사용한 이미지 최적화.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+
