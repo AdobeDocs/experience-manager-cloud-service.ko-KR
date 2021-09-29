@@ -1,9 +1,9 @@
 ---
 title: 구성 및 구성 브라우저
 description: AEM 구성 및 AEM에서 작업 공간 설정을 관리하는 방법을 이해합니다.
-source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
+source-git-commit: 4892f644929bc308762ca4fb8a2ebfb85e5fb5e2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1498'
 ht-degree: 2%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 2%
 
 AEM 구성은 AEM에서 설정을 관리하고 작업 공간으로 사용할 수 있습니다.
 
-## 구성이란 무엇입니까?{#what-is-a-configuration}
+## 구성이란 무엇입니까? {#what-is-a-configuration}
 
 구성은 두 개의 다른 관점에서 고려될 수 있다.
 
 * [관리자는 ](#configurations-administrator) 구성을 AEM 내의 작업 공간으로 사용하여 설정 그룹을 정의하고 관리합니다.
 * [개발자](#configurations-developer) 는 AEM에서 설정을 유지하고 조회하기 위해 구성을 구현하는 기본 구성 메커니즘을 사용합니다.
 
-요약하면 다음과 같습니다.관리자의 관점에서 구성은 AEM에서 설정을 관리하는 작업 공간을 만드는 방법이지만, 개발자는 AEM이 저장소 내에서 이러한 구성을 사용하고 관리하는 방법을 이해해야 합니다.
+요약하면 다음과 같습니다. 관리자의 관점에서 구성은 AEM에서 설정을 관리하는 작업 공간을 만드는 방법이지만, 개발자는 AEM이 저장소 내에서 이러한 구성을 사용하고 관리하는 방법을 이해해야 합니다.
 
 사용자의 관점에 상관없이 구성은 AEM에서 두 가지 주요 목적을 제공합니다.
 
@@ -33,10 +33,10 @@ AEM 구성은 AEM에서 설정을 관리하고 작업 공간으로 사용할 수
 
 AEM 내의 다양한 기능에 대한 구성을 만들 수 있습니다.
 
-* [클라우드 구성](/help/implementing/developing/introduction/configurations.md)
 * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [편집 가능한 템플릿](/help/sites-cloud/authoring/features/templates.md)
+* 다양한 클라우드 구성
 
 ### 예 {#administrator-example}
 
@@ -56,7 +56,7 @@ AEM 내의 다양한 기능에 대한 구성을 만들 수 있습니다.
 
 편집 가능한 템플릿뿐만 아니라 클라우드 구성, ContextHub 세그먼트 및 컨텐츠 조각 모델에 대해서도 유사한 설정을 수행할 수 있습니다.
 
-### 구성 브라우저 {#using-configuration-browser} 사용
+### 구성 브라우저 사용 {#using-configuration-browser}
 
 관리자는 구성 브라우저를 사용하여 AEM에서 구성에 대한 액세스 권한을 쉽게 생성, 관리 및 구성할 수 있습니다.
 
@@ -79,10 +79,10 @@ AEM 내의 다양한 기능에 대한 구성을 만들 수 있습니다.
       * 제목 기준 자동 생성되며 [AEM 이름 지정 규칙에 따라 조정됩니다.](naming-conventions.md)
       * 필요하면 조정할 수 있다.
 1. 허용할 구성 유형을 확인합니다.
-   * [클라우드 구성](/help/implementing/developing/introduction/configurations.md)
    * [Context Hub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
    * [편집 가능한 템플릿](/help/sites-cloud/authoring/features/templates.md)
+   * 다양한 클라우드 구성
 1. **만들기**&#x200B;를 탭하거나 클릭합니다.
 
 >[!TIP]
