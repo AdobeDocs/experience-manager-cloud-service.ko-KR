@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
+source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2061'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 >[!NOTE]
 >
->Jackrabbit Filerabbit Maven 패키지 플러그인 버전 **1.1.0**&#x200B;에 대해 알려진 문제로, `<packageType>application</packageType>`의 모듈에 `oak:index`를 추가할 수 없습니다. 이 문제를 해결하려면 버전 **1.0.4**&#x200B;을 사용하십시오.
+>Jackrabbit Filerabbit Maven 패키지 플러그인 버전 **1.1.0**&#x200B;에 대해 알려진 문제로, `<packageType>application</packageType>`의 모듈에 `oak:index`를 추가할 수 없습니다. 해당 플러그인의 최신 버전으로 업데이트해야 합니다.
 
 이제 색인 정의가 사용자 정의 및 버전이 지정됨으로 표시됩니다.
 
