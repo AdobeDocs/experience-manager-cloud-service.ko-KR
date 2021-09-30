@@ -2,7 +2,7 @@
 title: 로그 관리 - Cloud Service
 description: 로그 관리 - Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
+source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 사용자는 **개요** 페이지 또는 환경 세부 정보 페이지에서 **환경** 카드를 사용하여 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
 
-## 로그 {#download-logs} 다운로드
+## 로그 다운로드 {#download-logs}
 
 아래 단계에 따라 로그를 다운로드하십시오.
 
@@ -37,11 +37,11 @@ ht-degree: 2%
    ![](assets/download-preview.png)
 
 
-## API {#logs-through-api}를 통해 로그
+## API를 통해 로그 {#logs-through-api}
 
 UI를 통해 로그를 다운로드하는 것 외에도 API 및 명령줄 인터페이스를 통해 로그를 사용할 수 있습니다.
 
-예를 들어, 특정 환경에 대한 로그 파일을 다운로드하려면 명령은
+예를 들어 특정 환경에 대한 로그 파일을 다운로드하려면 명령은
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
