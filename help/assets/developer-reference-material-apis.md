@@ -2,13 +2,13 @@
 title: ' [!DNL Assets]에 대한 개발자 참조'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: API,자산 HTTP API
+feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 2%
+source-wordcount: '1430'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 | × | 지원되지 않음. 사용하지 마십시오. |
 | - | 사용할 수 없음 |
 
-| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(미리 보기)_ |
+| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(미리 보기)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **원본 이진** |  |  |  |  |  |  |
 | 원본 만들기 | ✓ | × | - | × | × | - |
@@ -141,7 +141,7 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 
 | 필드 | 유형 | 필수 여부 | 설명 |
 |---|---|---|---|
-| `fileName` | 문자열 | 필수 | 초기화 데이터에서 제공한 자산의 이름입니다. |
+| `fileName` | String | 필수 | 초기화 데이터에서 제공한 자산의 이름입니다. |
 | `mimeType` | 문자열 | 필수 | 시작 데이터에서 제공한 바이너리의 HTTP 컨텐츠 유형입니다. |
 | `uploadToken` | 문자열 | 필수 | 시작 데이터에서 제공한 대로 바이너리에 대한 업로드 토큰. |
 | `createVersion` | 부울 | 선택 사항입니다 | `True` 과 지정된 이름의 자산이 있으면 [!DNL Experience Manager] 에서는 자산의 새 버전을 만듭니다. |
@@ -185,7 +185,7 @@ API에서 제공하는 업로드 URI 수에 따라 부품 크기를 계산하는
 
 ## 사후 처리 워크플로우에서 워크플로우 단계 지원 {#post-processing-workflows-steps}
 
-이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 경우 자산 마이크로서비스를 사용하여 자산을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로서비스 는 구성 및 사용이 더 쉽습니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다. 지원되는 클래스에 대한 자세한 내용은 [Java API 참조 또는 Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)를 참조하십시오.
+이전 버전의 [!DNL Experience Manager]에서 업그레이드하는 경우 자산 마이크로서비스를 사용하여 자산을 처리할 수 있습니다. 클라우드 기반의 자산 마이크로서비스 는 구성 및 사용이 더 쉽습니다. 이전 버전의 [!UICONTROL DAM 자산 업데이트] 워크플로우에서 사용되는 몇 가지 워크플로우 단계는 지원되지 않습니다. 지원되는 클래스에 대한 자세한 내용은 [Java API 참조 또는 Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html)를 참조하십시오.
 
 다음 기술 워크플로우 모델은 자산 마이크로서비스로 대체되거나 지원되지 않습니다.
 

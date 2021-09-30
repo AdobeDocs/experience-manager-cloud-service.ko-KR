@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 20%
@@ -78,7 +78,7 @@ Brand Portal 테넌트의 기본 URL은 다음과 같습니다. `https://<tenant
 
 Brand Portal URL을 모르는 경우 다음 단계를 수행하십시오.
 
-1. [Admin Console](http://adminconsole.adobe.com/)에 로그인하고 **[!UICONTROL Products]**&#x200B;로 이동합니다.
+1. [Admin Console](https://adminconsole.adobe.com/)에 로그인하고 **[!UICONTROL Products]**&#x200B;로 이동합니다.
 1. 왼쪽 레일에서 **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**&#x200B;을 선택합니다.
 1. **[!UICONTROL Brand Portal]**&#x200B;로 이동 을 클릭하여 브라우저에서 직접 Brand Portal을 엽니다.
 

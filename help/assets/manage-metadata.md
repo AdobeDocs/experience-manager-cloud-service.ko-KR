@@ -3,19 +3,19 @@ title: 디지털 자산의 메타데이터 관리
 description: 메타데이터 유형에 대해 알아보고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 을 통해 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있는 방법을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: 자산 관리,메타데이터
+feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1854'
 ht-degree: 0%
 
 ---
 
 # 디지털 자산의 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
-[!DNL Adobe Experience Manager Assets] 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 는 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -72,10 +72,10 @@ ht-degree: 0%
 
 파일에 메타데이터를 포함하는 방법은 다양합니다. 다양한 인코딩 표준이 지원됩니다.
 
-* XMP:추출된 메타데이터를 리포지토리 내에 저장하는 데 [!DNL Assets]에서 사용됩니다.
-* ID3:오디오 및 비디오 파일에 사용할 수 있습니다.
-* 예:이미지 파일에 사용할 수 있습니다.
-* 기타/기존:[!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등입니다.
+* XMP: 추출된 메타데이터를 리포지토리 내에 저장하는 데 [!DNL Assets]에서 사용됩니다.
+* ID3: 오디오 및 비디오 파일에 사용할 수 있습니다.
+* 예: 이미지 파일에 사용할 수 있습니다.
+* 기타/기존: [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등입니다.
 
 ### XMP {#xmp}
 
@@ -183,7 +183,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 앨범 - [!DNL Adobe Photoshop Album].
 * CQ - [!DNL Experience Manager Assets]에 의해 사용됩니다.
 * DAM - [!DNL Experience Manager Assets]에 의해 사용됩니다.
-* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html)는 Windows 운영 체제에 대한 메타데이터 및 파일 관리를 위한 도구 모음입니다.
+* DEX - [Optima SC Description explorer](https://www.optimasc.com/products/dex/index.html)는 Windows 운영 체제에 대한 메타데이터 및 파일 관리를 위한 도구 모음입니다.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -231,5 +231,5 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 >[!MORELIKETHIS]
 >
 >* [XMP 메타데이터](xmp-metadata.md)
-* [메타데이터 편집 또는 추가 방법](meta-edit.md)
+>* [메타데이터 편집 또는 추가 방법](meta-edit.md)
 

@@ -3,7 +3,7 @@ title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: 헤드리스 컨텐츠 전달을 위해 AEM GraphQL API를 사용하는 Cloud Service으로 Adobe Experience Manager(AEM)의 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '3929'
 ht-degree: 2%
@@ -57,7 +57,7 @@ GraphQL API에 대한 자세한 내용은 다음 섹션(다른 많은 리소스 
 
    * [GraphQL 소개](https://graphql.org/learn)
 
-   * [GraphQL 사양](http://spec.graphql.org/)
+   * [GraphQL 사양](https://spec.graphql.org/)
 
 * [graphql.com](https://graphql.com)에서:
 
@@ -606,7 +606,7 @@ POST 쿼리는 일반적으로 캐시되지 않으므로 이러한 작업이 필
 
 예를 들어 사이트 구성 `my-conf`에서 모델 `my-model`을 사용하는 `my-query` 이라는 특정 쿼리가 있는 경우:
 
-* `my-conf` 특정 끝점을 사용하여 쿼리를 만들 수 있으면 쿼리가 다음과 같이 저장됩니다.
+* `my-conf` 특정 종단점을 사용하여 쿼리를 만들 수 있습니다. 그러면 쿼리가 다음과 같이 저장됩니다.
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * `global` 종단점을 사용하여 동일한 쿼리를 만들 수 있지만, 쿼리는 다음과 같이 저장됩니다.
    `/conf/global/settings/graphql/persistentQueries/my-query`
