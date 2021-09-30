@@ -2,9 +2,9 @@
 title: '샌드박스 프로그램 소개 '
 description: 샌드박스 프로그램 소개
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ ht-degree: 0%
 
 샌드박스 프로그램에는 [!DNL Sites] 및 [!DNL Assets]이 포함되어 있으며 Git 리포지토리, 개발 환경 및 비프로덕션 파이프라인으로 자동 채워집니다.  Git 리포지토리는 AEM Project 원형 기반의 샘플 프로젝트로 채워집니다.
 
-프로그램 유형에 대한 자세한 내용은 프로그램 및 프로그램 유형 이해 를 참조하십시오.
+>[!NOTE]
+>사용자 지정 허용 목록 및 IP 도메인은 샌드박스 프로그램에서 사용할 수 없습니다.
+
+프로그램 유형에 대한 자세한 내용은 [프로그램 및 프로그램 유형 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en)를 참조하십시오.
 
 ### 샌드박스 프로그램 속성 {#attributes-sandbox}
 
