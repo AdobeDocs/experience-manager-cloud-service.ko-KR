@@ -2,7 +2,7 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
+source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
 workflow-type: tm+mt
 source-wordcount: '2880'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Oak 인덱스(`/oak:index`)는 특별히 AEM에서 Cloud Service 배포 프로�
       + `/apps/settings`
    + ACL(권한)
       + `/apps` 아래의 경로에 대해 모두 `rep:policy`
-   + [사전 컴파일된 번들 스크립트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [사전 컴파일된 번들 스크립트](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + `ui.config` 패키지에는 모든 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)이 들어 있습니다.
    + 실행 모드별 OSGi 구성 정의를 포함하는 조직 폴더
