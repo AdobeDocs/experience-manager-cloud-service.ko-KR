@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사전 요구 사항
 description: 컨텐츠 전송 도구 사전 요구 사항
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 2%
 | 총 인덱스 크기 | 현재 최대 25GB의 총 인덱스 크기가 지원됩니다. 이 제한을 초과하는 색인 크기에 대한 옵션을 토론하려면 Adobe 고객 지원 센터에서 지원 티켓을 만드십시오. |
 | 노드 이름 길이 | 노드 이름의 길이는 150바이트 이하여야 합니다. AEM의 Document 노드 저장소에서 Cloud Service으로 지원하려면 150바이트보다 긴 노드 이름을 150바이트보다 작은 &lt;= 150바이트로 줄여야 합니다. 이러한 긴 노드 이름이 수정되지 않으면 처리가 실패합니다. |
 | 변경할 수 없는 경로의 콘텐츠 | 컨텐츠 전송 도구를 사용하여 변경할 수 없는 경로에서 컨텐츠를 마이그레이션할 수 없습니다. `/etc`에서 컨텐츠를 전송하려면 특정 `/etc` 경로만 선택할 수 있지만 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)로서 [AEM Forms을 AEM Forms에 지원하기만 하면 됩니다. 다른 모든 사용 사례에 대해서는 [공통 저장소 구조 변경](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring)을 참조하여 저장소 구조 변경에 대해 자세히 알아보십시오. |
+| MongoDB의 노드 속성 값 | MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 이는 MongoDB에 의해 적용됩니다. 이 제한보다 큰 속성 값이 있는 경우 처리가 실패합니다. 추출을 실행하기 전에 이 [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) 스크립트를 실행합니다. 모든 큰 속성 값을 검토하고 필요한 경우 확인합니다. 16MB를 초과하는 값은 이진 값으로 변환해야 합니다. |
 
 ## 다음은 무엇입니까? {#whats-next}
 
