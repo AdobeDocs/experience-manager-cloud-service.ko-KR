@@ -2,7 +2,7 @@
 title: CI-CD 파이프라인
 description: CI-CD 파이프라인
 index: false
-source-git-commit: e51b995aebb053f38cb99879be70e23447f543c0
+source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
-* **프로덕션 파이프라인**
-* **비프로덕션 파이프라인**
+* [프로덕션 파이프라인](#prod-pipeline)
+* [비프로덕션 파이프라인](#non-prod-pipeline)
 
 ## 프로덕션 파이프라인 {#prod-pipeline}
 
