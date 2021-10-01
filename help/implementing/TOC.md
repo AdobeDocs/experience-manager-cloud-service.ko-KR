@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 8ee0eef4a46b2e2ebe0e94812db68e369bc0dfd0
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1039'
 ht-degree: 43%
 
 ---
@@ -192,6 +192,7 @@ ht-degree: 43%
       + [Launch 통합](developing/hybrid/launch-integration.md)
       + [SPA 참조 문서](developing/hybrid/reference-materials.md)
 + 개발자 도구 {#developer-tools}
+   + [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
    + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)

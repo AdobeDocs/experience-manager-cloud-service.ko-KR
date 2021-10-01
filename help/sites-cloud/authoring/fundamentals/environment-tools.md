@@ -2,9 +2,9 @@
 title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2154'
 ht-degree: 99%
 
 ---
@@ -271,6 +271,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * [타깃팅](/help/sites-cloud/authoring/personalization/targeted-content.md) - 모든 채널에서 타깃팅과 측정을 통해 컨텐츠 관련성을 높입니다.
 * [타임워프](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 특정 시점에 페이지 상태를 볼 수 있습니다.
 * [Live Copy 상태](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) - live copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
+* [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
 * [미리 보기](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 페이지가 게시 환경에 표시될 상태로 해당 페이지를 보거나 컨텐츠의 링크를 사용하여 탐색하는 데 사용됩니다.
 * [주석](/help/sites-cloud/authoring/fundamentals/annotations.md) - 페이지에서 주석을 추가하거나 보는 데 사용됩니다.
 
@@ -288,12 +289,11 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 >
 
 
-
 ## 경로 선택 {#path-selection}
 
 작성할 때, 다른 페이지나 리소스에 대한 링크를 정의하거나 이미지를 선택할 때와 같이 다른 리소스를 선택해야 하는 경우가 있습니다. 경로를 쉽게 선택할 수 있도록 [경로 필드](#path-fields)가 자동 완성 기능을 제공하고 [경로 브라우저](#path-browser)가 보다 강력하게 선택할 수 있도록 지원합니다.
 
-### 경로 필드  {#path-fields}
+### 경로 필드 {#path-fields}
 
 여기에 사용되는 예제는 이미지 구성 요소입니다. 구성 요소 사용 및 편집에 대한 자세한 내용은 [페이지 작성 구성 요소](/help/sites-cloud/authoring/fundamentals/components.md)를 참조하십시오.
 
