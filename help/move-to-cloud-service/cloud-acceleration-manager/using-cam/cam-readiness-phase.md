@@ -1,13 +1,13 @@
 ---
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
-source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
+exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
+source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
-
 
 # Cloud Acceleration Manager의 준비 단계 {#readiness-phase-cam}
 
@@ -54,6 +54,9 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 1. **새 보고서 업로드**&#x200B;를 클릭하여 CAM에서 BPA 보고서를 업로드합니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
+
+   >[!IMPORTANT]
+   >브라우저의 Incognito 모드에 있는 경우에는 보고서를 업로드할 수 없습니다.
 
 1. 새 보고서를 업로드하면 모범 사례 분석 보고서가 표시됩니다.
 
