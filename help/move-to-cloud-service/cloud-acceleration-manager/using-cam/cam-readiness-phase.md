@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
+source-git-commit: 3fea3da263216c8250fd1ba3e3b1edd73b5c8940
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '748'
 ht-degree: 5%
 
 ---
@@ -67,7 +67,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
    >[!NOTE]
    >새 보고서를 업로드하면 모든 평가가 재설정됩니다.
 
-1. 공유하기 쉽도록 아래에 표시된 대로 **인쇄 미리 보기** 아이콘을 클릭합니다.
+1. 아래 표시된 대로 **인쇄 미리 보기** 아이콘을 클릭합니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
