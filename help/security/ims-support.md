@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
+source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 91%
+source-wordcount: '2024'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,11 @@ ht-degree: 91%
 
 >[!TIP]
 >
->사용자가 AEM에 대한 Adobe IMS를 Cloud Service으로 사용하여에 인증하는 방법과 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM과 해당 기능에 대한 액세스를 제어하는 방법에 대한 소개는 Experience League 교육 과정 [관리자용 AEM 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) 을 참조하십시오. Adobe ID이 필요합니다.
+>사용자가 AEM에 Adobe IMS를 Cloud Service으로 사용하여에 인증하는 방법과 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM과 해당 기능에 대한 액세스를 제어하는 방법에 대한 소개는 Experience League 교육 과정 [관리자용 AEM 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)을 참조하십시오. Adobe ID이 필요합니다.
+
+>[!NOTE]
+>
+>AEM as a Cloud Service에 대한 IMS 로그인은 Admin Console에서 중첩 그룹을 지원하지 않습니다.
 
 ## 주요 특징 {#key-highlights}
 
@@ -144,7 +148,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ![제품 프로필](/help/security/assets/ims8.png)
 
-### Adobe Experience Manager as a Cloud Service에 로그인{#logging-in-to-aem}
+### Adobe Experience Manager as a Cloud Service에 로그인 {#logging-in-to-aem}
 
 **로컬 관리자 로그인**
 
