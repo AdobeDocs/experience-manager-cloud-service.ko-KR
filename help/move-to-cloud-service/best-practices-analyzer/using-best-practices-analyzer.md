@@ -2,10 +2,10 @@
 title: 우수 사례 분석기 사용
 description: 우수 사례 분석기 사용
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 41%
+source-wordcount: '2522'
+ht-degree: 42%
 
 ---
 
@@ -92,18 +92,6 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
-1. 공유하기 쉽도록 아래에 표시된 대로 **인쇄 미리 보기** 아이콘을 클릭합니다.
-
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. **인쇄 미리 보기**&#x200B;를 클릭하면 인쇄 가능한 미리 보기에 표시된 보고서가 있는 새 탭이 열립니다. **인쇄**&#x200B;를 클릭하여 보고서를 PDF 형식으로 인쇄하면 쉽게 공유할 수 있습니다.
-
-   >[!IMPORTANT]
-   * **PDF로 저장** 옵션이 권장되며 위의 기능을 지원합니다.
-   * 브라우저의 인쇄 단추를 사용하면 한 페이지만 인쇄됩니다.
-
-
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### 우수 사례 분석기 보고서에서 필터 사용 {#bpa-filters}
