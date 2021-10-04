@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
+source-git-commit: a9d3547900c84101672cd0400bb374b1a8ccda33
 workflow-type: tm+mt
-source-wordcount: '3063'
-ht-degree: 38%
+source-wordcount: '3104'
+ht-degree: 37%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 38%
 
 * 액세스 토큰은 특정 기간 후 또는 Cloud Service 환경이 업그레이드된 후 주기적으로 만료될 수 있습니다. 액세스 토큰이 만료되면 Cloud Service 인스턴스에 연결할 수 없으며 새 액세스 토큰을 검색해야 합니다. 기존 마이그레이션 세트와 연결된 상태 아이콘은 빨간색 클라우드로 변경되며, 마우스로 가리키면 메시지가 표시됩니다.
 
-* 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 CTT(컨텐츠 전송 도구)가 컨텐츠 분석을 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스 또는 게시 인스턴스 또는 둘 다에 수집할 수 있습니다. 컨텐츠를 프로덕션 인스턴스로 이동하는 동안 컨텐츠를 타겟 작성자 인스턴스로 이동하도록 소스 작성자 인스턴스에 CTT를 설치하여 컨텐츠를 타겟 게시 인스턴스로 이동시키는 것이 좋습니다.
+* 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 CTT(컨텐츠 전송 도구)가 컨텐츠 분석을 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스 또는 게시 인스턴스 또는 둘 다에 수집할 수 있습니다. 컨텐츠를 프로덕션 인스턴스로 이동하는 동안 컨텐츠를 타겟 작성자 인스턴스로 이동하도록 소스 작성자 인스턴스에 CTT를 설치하여 컨텐츠를 타겟 게시 인스턴스로 이동시키는 것이 좋습니다. 자세한 내용은 게시 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish)에서 [컨텐츠 전송 도구 실행 을 참조하십시오.
 
 * 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에 의해 권한을 충족하기 위해 필요한 사용자 및 그룹에만 해당합니다. *추출* 프로세스는 전체 `/home`를 마이그레이션 세트에 복사하고 *수집* 프로세스는 마이그레이션된 컨텐츠 ACL에서 참조되는 모든 사용자 및 그룹을 복사합니다. 기존 사용자 및 그룹을 IMS ID에 자동으로 매핑하려면 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)을 참조하십시오.
 
@@ -119,7 +119,7 @@ ht-degree: 38%
 
    1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
-      1. **버전 포함**: 필요에 따라 선택합니다.
+      1. **버전 포함**: 필요에 따라 선택합니다. 버전이 포함되면 감사 이벤트를 마이그레이션하기 위해 경로 `/var/audit`이 자동으로 포함됩니다.
 
       1. **IMS 사용자 및 그룹의 매핑 포함**: IMS 사용자 및 그룹의 매핑을 포함할 옵션을 선택합니다.
 자세한 내용은 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)를 참조하십시오.
@@ -211,7 +211,7 @@ ht-degree: 38%
 >[!NOTE]
 >Amazon S3 또는 Azure Data Store가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 자세한 내용은 [AzCopy를 사용하여 수집](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy)을 참조하십시오.
 
-1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **수집**&#x200B;을 클릭하여 수집을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다. **수집**&#x200B;을 클릭하여 수집 단계를 시작합니다. 컨텐츠를 작성자와 게시에 동시에 수집할 수 있습니다.
+1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **수집**&#x200B;을 클릭하여 수집을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다. 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다. 컨텐츠를 수집할 인스턴스를 선택합니다. **수집**&#x200B;을 클릭하여 수집 단계를 시작합니다.
 
    >[!IMPORTANT]
    >사전 복사로 섭취를 사용하는 경우(S3 또는 Azure Data Store용) 먼저 작성자 수집만 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
@@ -219,11 +219,11 @@ ht-degree: 38%
    >[!IMPORTANT]
    >**수집** 옵션이 활성화되기 전에 클라우드 인스턴스에서 기존 컨텐츠를 지우는 경우 기존 저장소 전체를 삭제하고 컨텐츠를 수집 할 새 저장소를 만듭니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. **administrators** 그룹에 추가된 관리자 사용자에게도 적용됩니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
    또한 **고객 지원 센터**&#x200B;를 클릭하여 위의 그림과 같이 티켓을 기록합니다. 또한 자세한 내용은 [컨텐츠 전송 도구 사용에 대한 중요한 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)을 참조하십시오.
 
-1. 수집이 완료되면 **수집 게시** 필드의 상태가 **완료됨**&#x200B;으로 업데이트됩니다.
+1. 수집이 완료되면 상태가 **FINISHED**&#x200B;로 업데이트됩니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -239,7 +239,7 @@ ht-degree: 38%
 
 1. *개요* 페이지로 이동하고 추가 수집을 수행할 마이그레이션 세트를 선택합니다. **수집**&#x200B;을 클릭하여 추가 추출을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
 
    >[!IMPORTANT]
    >이전 수집 활동에서 기존 컨텐츠를 삭제하지 않으려면 먼저 클라우드 인스턴스에서 기존 컨텐츠를 지우는 **옵션을 비활성화해야 합니다.** 또한 **고객 지원 센터**&#x200B;를 클릭하여 이전 그림과 같이 티켓을 기록합니다.
