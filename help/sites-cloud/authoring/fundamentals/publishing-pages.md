@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 85%
+source-wordcount: '1769'
+ht-degree: 82%
 
 ---
 
@@ -79,6 +79,10 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 >[!NOTE]
 >
 >편집기에서 게시하면 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
+
+>[!NOTE]
+>
+>편집기에서 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)이 액세스하는 페이지를 게시할 수 없습니다. 편집기의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
 
 ### 콘솔에서 게시 {#publishing-from-the-console}
 
@@ -217,6 +221,10 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 ### 편집기에서 게시 취소 {#unpublishing-from-the-editor}
 
 페이지를 편집할 때 해당 페이지의 게시를 취소하려는 경우 [페이지를 게시](#publishing-from-the-editor)한 만큼 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
+
+>[!NOTE]
+>
+>편집기에서 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)이 액세스하는 페이지는 게시 취소할 수 없습니다. 편집기의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
 
 ### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
 

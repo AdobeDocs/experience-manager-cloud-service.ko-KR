@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 57%
+source-wordcount: '1966'
+ht-degree: 54%
 
 ---
 
@@ -101,14 +101,9 @@ ht-degree: 57%
    * **리디렉션**  - 이 페이지가 자동으로 리디렉션되는 페이지를 나타냅니다
    * **디자인**  - 결과 사이트의 페이지 탐색에 페이지가 표시되거나 숨겨지는지 여부를 나타냅니다
    * **별칭**  - 이 페이지에 사용할 별칭을 지정합니다
-
-   >[!NOTE]
-   >
-   >별칭은 리소스의 별칭 이름을 정의하기 위해 `sling:alias` 속성을 설정합니다. 이 이름은 경로에는 영향을 주지 않고 리소스에만 영향을 줍니다.
-   >
-   >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
-   >
-   >자세한 내용은 SEO 및 URL 관리 우수 사례 아래의 로컬라이제이션된 페이지 이름을 참조하십시오.
+      * 예를 들어 `/content/wknd/us/en/magazine/members-only` 페이지에 대해 `private` 별칭을 정의하면, 이 페이지는 `/content/wknd/us/en/magazine/private` 를 통해 액세스할 수도 있습니다
+      * 별칭을 만들면 저장소 경로가 아니라 리소스에만 영향을 주는 페이지 노드에 `sling:alias` 속성을 설정합니다.
+      * 편집기에서 별칭으로 액세스한 페이지를 게시할 수 없습니다. [편집기](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
