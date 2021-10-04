@@ -3,9 +3,9 @@ title: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트
 description: Cloud Service [!DNL Adobe Experience Manager] 의 현재 릴리스 노트입니다.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
+source-git-commit: 1062b65da46d85e3777656dbef4b7667b130a6ec
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1722'
 ht-degree: 2%
 
 ---
@@ -179,19 +179,35 @@ AEM as a Cloud Service 2021.8.0의 Cloud Manager 릴리스 날짜는 2021년 8�
 
 * 경우에 따라 파이프라인이 두 번 트리거되면 *이(가) 파이프라인 실행 상태* 오류로 인해 실행 중 하나가 실패하는 경우가 있습니다.
 
+
+## Cloud Acceleration Manager {#cam}
+
+### 릴리스 날짜 {#release-date-october-cam}
+
+Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
+
+### 새로운 기능 {#what-is-new-cam}
+
+* Cloud Acceleration Manager는 이제 사용자가 인쇄 가능한 미리 보기에서 BPA 보고서를 볼 수 있는 기능을 제공하여 PDF로 간단하게 인쇄하거나 인쇄하여 공유할 수 있습니다. [우수 사례 분석 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis)에서 6단계 및 7단계를 참조하십시오.
+
+
 ## 컨텐츠 전송 도구 {#content-transfer-tool}
 
 ### 릴리스 날짜 {#release-date-ctt-latest}
 
-컨텐츠 전송 도구 v1.5.6의 릴리스 날짜는 2021년 8월 11일입니다.
+컨텐츠 전송 도구 v1.6.0의 릴리스 날짜는 2021년 10월 4일입니다.
 
-### 버그 수정 {#bug-fixes-ctt}
+### 새로운 기능 {#what-is-new-ctt}
 
-* 일부 경우에는 일부 사용자가 target 인스턴스로 마이그레이션되지 않았습니다. 이 수정 사항을 가져오려면 Cloud Service 인스턴스로 target AEM의 aem-etos-tools 1.2.354 이상 버전과 함께 CTT v1.5.6이 필요합니다.
+* 아래 나열된 다음 기능을 포함하여 간소화된 사용자 경험을 통해 사용자 매핑이 개선되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)을 참조하십시오.
+   * 사용자 매핑을 실행하기 전에 사용자 관리 API에 대한 연결을 테스트합니다
+   * 오류를 올바르게 건너뛰고 사용자 매핑 활동을 계속 진행합니다
+   * 액세스 토큰이 만료된 경우(24시간 후) 사용자 매핑이 더 이상 실패하지 않습니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.
 
-* 게시 인스턴스에 수집하는 동안 **수집 중지** 단추가 비활성화되었습니다. 게시 수집 중에 단일 복원 단계가 없으므로 이 작업은 필요하지 않습니다.
+* CTT 견고성을 높이기 위해 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다.
 
-* 성공적으로 추출한 후 CTT에서 `/tmp` 디렉터리를 정리하지 못했습니다. 이로 인해 디스크 공간 문제가 발생하는 경우가 있습니다.
+* 버전이 포함되면 감사 이벤트를 마이그레이션하기 위해 경로 `/var/audit`이 자동으로 포함됩니다.
+
 
 ## 모범 사례 분석기 {#best-practices-analyzer}
 
