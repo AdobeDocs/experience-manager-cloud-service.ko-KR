@@ -1,9 +1,9 @@
 ---
 title: 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] Cloud Service으로 확장.
 description: 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] Cloud Service으로 확장.
-source-git-commit: 4bd0419ff31195fef1565b50f87b4b55f81361f0
+source-git-commit: 32580d3e45747b71e959b137e99fdb8e64cdf4bb
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ App Builder 는 고객이 다양한 사용 사례에서 Adobe Experience Manager
 * 사용자 경험 확장성 - 핵심 경험을 확장하여 비즈니스 요구 사항을 지원하거나 고객별 디지털 속성, 상점 및 백엔드 앱을 구축할 수 있습니다.
 
 App Builder(이전에 Project Firefly라고 알려짐)는 2020년 여름 이후 Adobe의 개발자 미리 보기를 통해 엔터프라이즈 고객 및 파트너가 사용할 수 있습니다. App Builder의 GA(일반 출시)는 2021년 12월로 예약되었습니다. 개발자가 [평가판 프로그램](http://adobe.ly/appbuilder-trial)을 통해 앱 빌더를 사용해 볼 것을 환영합니다.
+
+>[!NOTE]
+>
+> 앱 빌더를 활용하려는 AEM 6.5 고객의 경우, Adobe 개발자 앱 빌더를 사용하여 Adobe Experience Manager을 Cloud Service으로 확장](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)으로 이동하십시오.[
 
 ## 아키텍처 {#architecture}
 
