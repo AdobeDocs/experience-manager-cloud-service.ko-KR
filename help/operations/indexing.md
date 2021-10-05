@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: dd62f1c0a5c679508c3cf8cc8a1460d86a777759
+source-git-commit: 37e0c3865fb5be6c31e6e4bf1faa5666e77303bc
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2155'
 ht-degree: 1%
 
 ---
@@ -218,7 +218,7 @@ Apache Jackrabbit Oak를 사용하면 유연한 인덱스 구성을 통해 검�
 ### AEM as a Cloud Service의 Lucene 전체 텍스트 인덱스
 
 전체 텍스트 인덱스 `/oak:index/lucene-2`은(는) 기본적으로 AEM 저장소의 모든 노드를 인덱싱하므로 매우 클 수 있습니다.  이 색인의 사용 중지 계획은 Adobe이 2021년 9월부터 Cloud Service으로 AEM에 더 이상 배포되지 않습니다. 따라서 AEM의 제품 측에서 더 이상 Cloud Service으로 사용되지 않으므로 고객 코드를 실행할 필요는 없습니다. 일반적인 Lucene 인덱스가 있는 Cloud Service 환경인 AEM의 경우 Adobe은 이 색인을 보정하고 더 나은 최적화된 인덱스를 사용하기 위해 개별적으로 고객과 협력합니다. Adobe의 추가 통보 없이 고객에게 조치가 필요하지 않습니다. AEM as a Cloud Service 고객은 이 최적화와 관련하여 조치를 취해야 할 때 Adobe을 통해 정보를 받게 됩니다. 사용자 지정 쿼리에 이 인덱스가 필요한 경우 임시 솔루션으로서 [여기](/help/operations/indexing.md)에 설명된 대로 다른 이름(예: `/oak:index/acme.lucene-1-custom-1`)을 사용하여 이 인덱스의 사본을 만들어야 합니다.
-이 최적화는 온-프레미스에서 호스팅되거나 Adobe Managed Services에서 관리하는 다른 AEM 환경에는 기본적으로 적용되지 않습니다.
+이 최적화는 온프레미스에서 호스팅되거나 Adobe Managed Services에서 관리하는 다른 AEM 환경에는 기본적으로 적용되지 않습니다.
 
 ## 쿼리 최적화
 
