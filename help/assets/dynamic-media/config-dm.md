@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media Cloud Service 구성
-description: Adobe Experience Manager에서 Cloud Service으로 Dynamic Media을 구성하는 방법을 알아봅니다.
+description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '4054'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,8 @@ ht-degree: 1%
 
 새로운 아키텍처를 통해 Experience Manager은 기본 소스 자산을 담당하며 자산 처리 및 게시를 위해 Dynamic Media과 동기화됩니다.
 
-1. 기본 소스 자산이 Cloud Service으로 Adobe Experience Manager에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 자산 처리 및 표현물 생성을 처리합니다.
-1. 표현물이 생성되면 Cloud Service으로 Experience Manager이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(Cloud Service 인스턴스로 Experience Manager으로 바이너리가 다시 전송되지 않음).
+1. 기본 소스 자산이 Adobe Experience Manager as a Cloud Service에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 자산 처리 및 표현물 생성을 처리합니다.
+1. 표현물이 생성되면 Experience Manager as a Cloud Service이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리가 Experience Manager의 as a Cloud Service 인스턴스로 다시 전송되지 않음).
 1. 컨텐츠가 게시 및 승인할 준비가 되면, Dynamic Media 서비스가 컨텐츠를 전달 서버에 푸시하고 CDN(Content Delivery Network)에 컨텐츠를 캐시하도록 트리거됩니다.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
@@ -31,11 +31,11 @@ ht-degree: 1%
 >다음 기능 목록을 사용하려면 Adobe Experience Manager - Dynamic Media과 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이러한 기능에서 지원되지 않습니다.
 >
 >* [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
-* [캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [핫링크 보호](/help/assets/dynamic-media/hotlink-protection.md)
-* [컨텐츠의 HTTP/2 전달](/help/assets/dynamic-media/http2faq.md)
-* CDN 수준에서 URL 리디렉션
-* Akamai ChinaCDN(중국에서 최적의 전달을 위한)
+>* [캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [핫링크 보호](/help/assets/dynamic-media/hotlink-protection.md)
+>* [컨텐츠의 HTTP/2 전달](/help/assets/dynamic-media/http2faq.md)
+>* CDN 수준에서 URL 리디렉션
+>* Akamai ChinaCDN(중국에서 최적의 전달을 위한)
 
 
 <!-- OBSOLETE CONTENT
@@ -62,7 +62,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
-1. Cloud Service으로 Experience Manager에서 Experience Manager을 Cloud Service 로고로 선택하여 전역 탐색 콘솔에 액세스합니다.
+1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
 1. 콘솔 왼쪽에서 도구 아이콘을 선택한 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;으로 이동합니다.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**(**[!UICONTROL global]** 왼쪽의 폴더 아이콘을 선택하지 않음)을 선택합니다. 그런 다음 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL Dynamic Media 구성 만들기]** 페이지에서 제목, Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. 이 정보는 규정 이메일에서 Adobe이 제공합니다. 이 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
@@ -92,13 +92,16 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | 회사 | Dynamic Media 계정의 이름입니다. 다양한 하위 브랜드, 사업부 또는 스테이징/프로덕션 환경에 대한 여러 Dynamic Media 계정이 있을 수 있습니다. |
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
-   | 자산 게시 | 다음 세 가지 옵션 중에서 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**- 자산이 업로드되면 시스템이 자산을 수집하여 URL/Embed를 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다.<br>**[!UICONTROL 활성화 시]**  - URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**- 자산이 보안 미리 보기용으로만 자동 게시됩니다. 또한 공개 Experience Manager에서 전달하기 위해 DMS7에 게시하지 않고 Cloud Service으로 명시적으로 게시할 수 있습니다. 나중에 이 옵션은 상호 배타적으로 자산을 Experience Manager으로 게시하고 자산을 Dynamic Media에 게시하려고 합니다. 즉, 자산을 DMS7에 게시하여 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있습니다. 또는 미리 보기를 위한 Cloud Service으로 Experience Manager에만 자산을 게시할 수 있습니다. 동일한 자산이 공용 도메인에 전달되도록 DMS7에 게시되지 않습니다. |
-   | 보안 미리 보기 서버 | 보안 표현물 미리 보기 서버의 URL 경로를 지정할 수 있도록 해줍니다. 즉, 표현물이 생성되면 Cloud Service으로 Experience Manager이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(Cloud Service 인스턴스로 Experience Manager으로 바이너리가 다시 전송되지 않음).<br>회사의 서버나 특수 서버를 사용하기 위해 특별한 계획이 없는 한 Adobe은 이 설정을 지정된 대로 유지하는 것을 권장합니다. |
+   | 자산 게시 | 다음 세 가지 옵션 중에서 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**- 자산이 업로드되면 시스템이 자산을 수집하여 URL/Embed를 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다.<br>**[!UICONTROL 활성화 시]**  - URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**- 자산이 보안 미리 보기용으로만 자동 게시됩니다. 공용 도메인에서 전달을 위해 DMS7에 게시하지 않고 as a Cloud Service에 명시적으로 게시할 수도 있습니다. 나중에 이 옵션은 자산을 as a Cloud Service으로 게시하고 자산을 Dynamic Media에 게시하며 상호 배타적으로 게시하려고 합니다. 즉, 자산을 DMS7에 게시하여 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있습니다. 또는 미리 보기를 위해 Experience Manager as a Cloud Service에만 자산을 게시할 수 있습니다. 동일한 자산이 공용 도메인에 전달되도록 DMS7에 게시되지 않습니다. |
+   | 보안 미리 보기 서버 | 보안 표현물 미리 보기 서버의 URL 경로를 지정할 수 있도록 해줍니다. 즉, 표현물이 생성되면 Experience Manager as a Cloud Service이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리는 Experience Manager as a Cloud Service 인스턴스로 다시 전송되지 않음).<br>회사의 서버나 특수 서버를 사용하기 위해 특별한 계획이 없는 한 Adobe은 이 설정을 지정된 대로 유지하는 것을 권장합니다. |
    | 모든 컨텐츠 동기화 | 기본적으로 선택됩니다. Dynamic Media에 대한 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 선택 사항을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드(<br>**[!UICONTROL Dynamic Media 동기화 모드]**<br>**[!UICONTROL 기본적으로 활성화&#x200B;]**) 중에서 선택할 수 있습니다. 제외에 대해 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]**  - Dynamic Media에 동기화할 선택한 폴더를 명시적으로 표시할 때까지 구성은 폴더에 적용되지 않습니다.<br>Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 속성 을  **[!UICONTROL 선택합니다]**. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택합니다. *기억: 앞서 모든 컨텐츠 동기화를 선택한 경우에는 이 세&#x200B;**가지 옵션을 사용할 수**없습니다.* Dynamic Media [의 폴더 수준에서 선택적 게시로 작업](/help/assets/dynamic-media/selective-publishing.md)을 참조하십시오.<br>**[!UICONTROL 상속됨&#x200B;]**- 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속받습니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태입니다.<br>**[!UICONTROL 하위 폴더에 사용]**  - Dynamic Media에 동기화할 이 하위 트리에 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 비활성화&#x200B;]**- 이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다. |
 
    >[!NOTE]
-   Dynamic Media에서는 버전 관리를 지원하지 않습니다. 또한, Dynamic Media 구성 편집 페이지의 **[!UICONTROL 자산 게시]**&#x200B;가 **[!UICONTROL 활성화 시]**&#x200B;로 설정된 경우에만 지연된 활성화가 적용됩니다. 그런 다음 자산이 처음 활성화될 때까지 자산
-   자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
+   >
+   >Dynamic Media에서는 버전 관리를 지원하지 않습니다. 또한, Dynamic Media 구성 편집 페이지의 **[!UICONTROL 자산 게시]**&#x200B;가 **[!UICONTROL 활성화 시]**&#x200B;로 설정된 경우에만 지연된 활성화가 적용됩니다. 그런 다음 자산이 처음 활성화될 때까지 자산
+   >
+   >
+   >자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
 
    ![dynamicmediaconfiguration2업데이트됨](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
@@ -106,11 +109,13 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. **[!UICONTROL Dynamic Media 구성]** 대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 선택하여 구성을 시작합니다.
 
    >[!IMPORTANT]
-   새 Dynamic Media 구성의 설정을 마치면 Cloud Service의 받은 편지함으로 Experience Manager 내에 상태 알림을 받게 됩니다.
-   이 받은 편지함 알림은 구성이 성공했는지 여부를 알려줍니다.
-자세한 내용은 [새 Dynamic Media 구성 문제 해결](#troubleshoot-dm-config) 및 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)을 참조하십시오.
+   >
+   >새 Dynamic Media 구성의 설정을 마치면 Experience Manager as a Cloud Service의 받은 편지함 내에 상태 알림을 받게 됩니다.
+   >
+   >이 받은 편지함 알림은 구성이 성공했는지 여부를 알려줍니다.
+   > 자세한 내용은 [새 Dynamic Media 구성 문제 해결](#troubleshoot-dm-config) 및 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)을 참조하십시오.
 
-1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Cloud Service 로서의 Experience Manager은 기본적으로 토큰 기반 유효성 검사를 사용합니다. 그러나 IP를 더 &quot;&quot;하여 사용자에게 안전하게 미리 보기 컨텐츠에 대한 액세스 권한을 제공할 수도 있습니다허용 목록에 추가하다. 이 작업을 설정하려면 다음을 수행하십시오. <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 게시되기 전에 Dynamic Media 컨텐츠를 안전하게 미리 보려면 Experience Manager as a Cloud Service에서 기본적으로 토큰 기반 유효성 검사를 사용합니다. 그러나 IP를 더 &quot;&quot;하여 사용자에게 안전하게 미리 보기 컨텐츠에 대한 액세스 권한을 제공할 수도 있습니다허용 목록에 추가하다. 이 작업을 설정하려면 다음을 수행하십시오. <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
    * [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 페이지의 오른쪽 위 모서리 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;로 이동합니다.
@@ -125,7 +130,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ### 새 Dynamic Media 구성 문제 해결 {#troubleshoot-dm-config}
 
-새 Dynamic Media 구성의 설정을 마치면 Cloud Service의 받은 편지함으로 Experience Manager 내에 상태 알림을 받게 됩니다. 이 알림은 받은 편지함의 다음 각 이미지에서 보듯이 구성이 성공했는지 여부를 알려줍니다.
+새 Dynamic Media 구성의 설정을 마치면 Experience Manager as a Cloud Service의 받은 편지함 내에 상태 알림을 받게 됩니다. 이 알림은 받은 편지함의 다음 각 이미지에서 보듯이 구성이 성공했는지 여부를 알려줍니다.
 
 ![Experience Manager 받은 편지함 성공](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
 
@@ -135,7 +140,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 **새 Dynamic Media 구성 문제를 해결하려면**
 
-1. Cloud Service 페이지로 Experience Manager의 오른쪽 위 모서리 근처에 있는 벨 아이콘을 선택한 다음 **[!UICONTROL 모두 보기]**&#x200B;를 선택합니다.
+1. Experience Manager as a Cloud Service 페이지의 오른쪽 위 모서리 근처에 있는 벨 아이콘을 선택한 다음 **[!UICONTROL 모두 보기]**&#x200B;를 선택합니다.
 1. 받은 편지함 페이지에서 성공 알림을 선택하여 구성의 상태 및 로그에 대한 개요를 읽습니다.
 
    구성이 실패한 경우 다음 스크린샷과 유사한 실패 알림을 선택하십시오.
@@ -161,7 +166,7 @@ Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 
 
 변경된 암호는 **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택하면 저장됩니다.
 
-1. Cloud Service으로 Experience Manager에서 Experience Manager을 Cloud Service 로고로 선택하여 전역 탐색 콘솔에 액세스합니다.
+1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
 1. 콘솔 왼쪽에서 도구 아이콘을 선택한 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;으로 이동합니다.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**&#x200B;을 선택합니다. **[!UICONTROL global]** 왼쪽에 있는 폴더 아이콘을 선택하지 마십시오. 그런 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 1. **[!UICONTROL Dynamic Media 구성 편집]** 페이지의 **[!UICONTROL 암호]** 필드 바로 아래에 있는 **[!UICONTROL 암호 변경]**&#x200B;을 선택합니다.
@@ -224,16 +229,16 @@ Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media �
 
 응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;으로 이동합니다.
 
-**[!UICONTROL 서버]**  - 계정 프로비저닝에서 Dynamic Media은 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다. Cloud Service 지원으로서 Experience Manager에서 명시적으로 지시한 경우를 제외하고 서버 이름을 변경하지 마십시오.
+**[!UICONTROL 서버]**  - 계정 프로비저닝에서 Dynamic Media은 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다. 서버 이름을 변경하지 마십시오. 서버 이름을 변경하지 마십시오. 단, Experience Manager as a Cloud Service 지원를 통해 서버 이름을 명시적으로 지정하지 마십시오.
 **[!UICONTROL 이미지 덮어쓰기]**  - Dynamic Media에서는 두 파일의 이름이 같을 수 없습니다. 각 항목의 URL ID(파일 이름에서 확장자를 뺀 경우)는 고유해야 합니다. 다음 옵션은 교체 자산을 업로드하는 방법을 지정합니다. 원본과 중복이 되는지 여부 중복 자산은 &quot;-1&quot;로 이름이 변경됩니다(예를 들어 chair.tif는 chair-1.tif로 이름이 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 자산이나 원본과 다른 파일 확장자가 있는 자산에 영향을 줍니다.
-**[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장]**  - 이 옵션은 교체를 위한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더로 업로드하고 원본과 동일한 파일 확장자가 있어야 합니다. 이러한 요구 사항을 충족하지 않으면 복제본이 만들어집니다. Experience Manager과 Cloud Service의 일관성을 유지하려면 항상 **[!UICONTROL 현재 폴더에 덮어쓰기, 기본 이미지 이름/확장]**을 선택합니다.
+**[!UICONTROL 현재 폴더에 덮어쓰기, 동일한 기본 이미지 이름/확장]**  - 이 옵션은 교체를 위한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더로 업로드하고 원본과 동일한 파일 확장자가 있어야 합니다. 이러한 요구 사항을 충족하지 않으면 복제본이 만들어집니다. Experience Manager as a Cloud Service과 일관성을 유지하려면 항상 **[!UICONTROL 현재 폴더에 덮어쓰기, 기본 이미지 이름/확장]**을 선택하십시오.
 **[!UICONTROL 모든 폴더에 덮어쓰기, 동일한 기본 자산 이름/확장]**  - 대체 이미지에 원래 이미지와 동일한 파일 확장명이 있어야 합니다. 예를 들어 chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 합니다. 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다. 파일을 원래 위치에서 더 이상 찾을 수 없습니다.
 **[!UICONTROL 확장자와 관계없이 동일한 기본 자산 이름을 가진 임의의 폴더에 덮어쓰기]**  - 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자를 가진 파일을 업로드하고, 원래 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 **[!UICONTROL 기본 색상 프로필]**  -  [자세한 내용은 ](#configuring-color-management) 색상 관리 구성 을 참조하십시오. 기본적으로 자산의 세부 사항 보기에서 **[!UICONTROL Viewers]**&#x200B;를 선택하면 시스템은 **[!UICONTROL 표현물]** 및 15개의 뷰어 사전 설정을 선택할 때 15개의 표현물을 표시합니다. 이 제한을 늘릴 수 있습니다. [표시](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘리거나 줄이십시오](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### 색상 관리 구성 {#configuring-color-management}
 
-Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할 수 있습니다. 색상 교정을 통해 수집된 자산은 색상 공간(RGB, CMYK, 회색)과 포함된 색상 프로파일을 유지합니다. 동적 변환을 요청하면 이미지 색상이 CMYK, RGB 또는 회색 출력을 사용하여 대상 색상 공간으로 교정됩니다. [이미지 사전 설정 구성](/help/assets/dynamic-media/managing-image-presets.md)을 참조하십시오.
+Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할 수 있습니다. 색상 교정을 통해 수집된 자산은 색상 공간(RGB, CMYK, 회색)과 포함된 색상 프로파일을 유지합니다. 동적 변환을 요청하면 이미지 색상이 CMYK, RGB 또는 회색 출력을 사용하여 대상 색상 공간으로 수정됩니다. [이미지 사전 설정 구성](/help/assets/dynamic-media/managing-image-presets.md)을 참조하십시오.
 
 이미지를 요청할 때 색상 보정을 활성화하는 기본 색상 속성을 구성하려면:
 
@@ -252,7 +257,7 @@ Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-예를 들어 **[!UICONTROL RGB 기본 색상 공간]**&#x200B;을 *sRGB*&#x200B;로 설정하고 **[!UICONTROL CMYK 기본 색상 공간]**&#x200B;을 *WebCoated*&#x200B;로 설정할 수 있습니다.
+예를 들어 **[!UICONTROL 기본 색상 공간 RGB]**&#x200B;을 *sRGB* 로 설정하고 **[!UICONTROL CMYK 기본 색상 공간]**&#x200B;을 *WebCoated*&#x200B;로 설정할 수 있습니다.
 
 이렇게 하면 다음 작업이 수행됩니다.
 
@@ -267,7 +272,7 @@ Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할
 Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 지정할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
 
 * Adobe PDF을 eCatalog 자산으로 변환합니다.
-* 개인화를 위해 Adobe Photoshop 문서(.PSD)를 배너 템플릿 자산으로 변환합니다.
+* 개인화를 위해 Adobe Photoshop 문서(.PSD)을 배너 템플릿 자산으로 변환합니다.
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript® 파일(.EPS)을 래스터화합니다.
 * [비디오 ](/help/assets/dynamic-media/video-profiles.md) 프로필 및  [이미지 ](/help/assets/dynamic-media/image-profiles.md) 프로필을 사용하여 각각 비디오 및 이미지 처리를 정의할 수 있습니다.
 
@@ -275,7 +280,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 **지원되는 형식에 대한 MIME 유형을 편집하려면:**
 
-1. Cloud Service으로 Experience Manager에서 Experience Manager을 Cloud Service 로고로 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 일반 > CRXDE Lite]**&#x200B;로 이동합니다.
+1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 일반 > CRXDE Lite]**&#x200B;로 이동합니다.
 1. 왼쪽 레일에서 다음 위치로 이동합니다.
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -293,15 +298,15 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
    * 추가 MIME 유형을 편집하려면 3-4단계를 반복합니다.
    * CRXDE Lite 페이지의 메뉴 모음에서 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
-1. 페이지의 왼쪽 위 모서리에서 **[!UICONTROL CRXDE Lite]**&#x200B;을 선택하여 Experience Manager으로 돌아갑니다.
+1. 페이지의 왼쪽 위 모서리에서 **[!UICONTROL CRXDE Lite]**&#x200B;을 선택하여 Experience Manager as a Cloud Service 으로 돌아갑니다.
 
 #### 지원되지 않는 형식에 대한 MIME 유형 추가 {#adding-mime-types-for-unsupported-formats}
 
-Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 Experience Manager에서 삭제되지 않도록 하려면 MIME 유형을 `image_` 앞에 이동합니다. 또한 이 활성화된 값이 **[!UICONTROL false]**&#x200B;로 설정되어 있는지 확인하십시오.
+Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 Experience Manager에서 삭제되지 않도록 하려면 MIME 유형을 `image_` 앞에 이동합니다. 또한 이 활성화된 값이 **[!UICONTROL false]**&#x200B;로 설정되어 있는지 확인하십시오.
 
 **지원되지 않는 형식에 대한 MIME 유형을 추가하려면 다음을 수행합니다.**
 
-1. Cloud Service으로 Experience Manager에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔]**&#x200B;로 이동합니다.
+1. Experience Manager as a Cloud Service에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔]**&#x200B;로 이동합니다.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -327,8 +332,8 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
    이때 열려 있는 Adobe Experience Manager 웹 콘솔 구성 페이지가 있는 브라우저 탭을 닫을 수 있습니다.
 
-1. 열린 Experience Manager이 Cloud Service 콘솔으로 있는 브라우저 탭으로 돌아갑니다.
-1. Experience Manager에서 Cloud Service으로 **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;로 이동합니다.
+1. 열려 있는 Experience Manager as a Cloud Service 콘솔이 있는 브라우저 탭으로 돌아갑니다.
+1. Experience Manager as a Cloud Service에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;로 이동합니다.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -360,13 +365,13 @@ Dynamic Media <!--(with `dynamicmedia_scene7` run mode)-->을 원활하게 실�
 
 #### 다양한 파일 형식을 처리하기 위해 사전 정의된 작업 매개 변수를 업데이트합니다
 
-파일을 업로드할 때 처리 속도를 높이기 위해 작업 매개 변수를 조정할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 튜닝된 작업 매개 변수는 다음과 같이 나타납니다. `process=None&createTemplate=false`
+파일을 업로드할 때 처리 속도를 높이기 위해 작업 매개 변수를 조정할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하려는 경우가 아니라면 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 튜닝된 작업 매개 변수는 다음과 같이 나타납니다. `process=None&createTemplate=false`
 
 템플릿 만들기를 설정하려면 다음 매개 변수를 사용하십시오. `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe은 PDF, PostScript® 및 PSD 파일에 다음과 같은 &quot;튜닝된&quot; 작업 매개 변수를 사용할 것을 권장합니다.
+Adobe은 PDF, PostScript® 및 PSD 파일에 다음과 같은 &quot;튜닝된&quot; 작업 매개 변수를 사용하는 것을 권장합니다.
 
 | 파일 유형 | 권장 작업 매개 변수 |
 | ---| ---|
@@ -386,10 +391,12 @@ Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 
 
 **Granite Transient 워크플로우 큐를 업데이트하려면:**
 
-1. [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr)로 이동하여 **큐를 검색합니다. Granite Transient 워크플로 큐**.
+1. `http://<host>:<port>/system/console/configMgr`의 **Adobe Experience Manager 웹 콘솔 구성**&#x200B;으로 이동합니다.
+1. **큐를 검색합니다. Granite Transient 워크플로 큐**.
 
    >[!NOTE]
-   OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
+   >
+   >OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
 
 1. **[!UICONTROL 최대 병렬 작업]** 필드에서 숫자를 원하는 값으로 변경합니다.
 
@@ -412,7 +419,8 @@ Granite 워크플로우 큐는 비임시 워크플로우에 사용됩니다. Dyn
 1. `https://<server>/system/console/configMgr`으로 이동하여 **큐를 검색합니다. Granite Workflow 큐**.
 
    >[!NOTE]
-   OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
+   >
+   >OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
 
 1. **[!UICONTROL 최대 병렬 작업]** 필드에서 숫자를 원하는 값으로 변경합니다.
 
