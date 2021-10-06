@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 72c1e85fca032f82a2755f9ca601625e1a3f7461
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 42%
@@ -13,18 +13,18 @@ ht-degree: 42%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2021.08.0 |
+| 버전 | 2021.09.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
 ## 릴리스를 준비하는 방법 {#how-to-prepare}
 
-[!DNL Adobe Experience Manager]에 Cloud Service으로 연속 릴리스 모델을 사용하면 애플리케이션이 지속적으로 자동 업데이트됩니다. 업데이트, 기능 릴리스 및 중요 업데이트에는 두 가지 유형이 있습니다.
+[!DNL Adobe Experience Manager] as a Cloud Service의 연속 릴리스 모델을 사용하면 애플리케이션이 지속적으로 자동 업데이트됩니다. 업데이트, 기능 릴리스 및 중요 업데이트에는 두 가지 유형이 있습니다.
 
 * 기능 릴리스는 예측 가능한 월별 빈도로 수행되며 새로운 기능 및 제품 혁신에 중점을 둡니다.
-* 중요 업데이트는 자주 수행되며 보안 업데이트, 버그 수정 및 성능 향상에 중점을 둡니다. 이렇게 하면 Cloud Service 로서 [!DNL Adobe Experience Manager]이(가) 항상 최신 상태로 유지되며 중요한 수정 사항이 있습니다.
+* 중요 업데이트는 자주 수행되며 보안 업데이트, 버그 수정 및 성능 향상에 중점을 둡니다. 따라서 [!DNL Adobe Experience Manager] as a Cloud Service이 항상 중요한 수정 사항이 있는 최신 상태가 됩니다.
 
-혁신 속도 외에도 [!DNL Adobe Experience Manager] Cloud Service은 기능이 프로덕션에 릴리스되기 전 한 달 전에 예정된 기능을 미리 볼 수 있는 유연성을 제공합니다. 따라서 사용자 지정 환경에서 기능을 테스트하고 내부 사용자를 미리 교육/준비하여 향후 릴리스가 조직에 미치는 영향을 평가할 수 있습니다.
+혁신 속도 외에도 [!DNL Adobe Experience Manager] as a Cloud Service은 기능을 프로덕션에 릴리스하기 전에 한 달 전에 예정된 기능을 미리 볼 수 있는 유연성을 제공합니다. 따라서 사용자 지정 환경에서 기능을 테스트하고 내부 사용자를 미리 교육/준비하여 향후 릴리스가 조직에 미치는 영향을 평가할 수 있습니다.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ ht-degree: 42%
 | [Experience Manager as a Cloud Service 홈](/help/landing/home.md) | Experience Manager as a Cloud Service 설명서에 대한 개요를 살펴보려면 여기에서 시작하십시오. |
 | [개요](/help/overview/home.md) | 이 안내서에서는 Experience Manager as a Cloud Service 소개, 용어 등 개요를 제공합니다. |
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다. |
-| [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager을 Cloud Service으로 시작하는 방법에 대한 요약을 제공합니다. |
+| [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service으로 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
 | [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
 | [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |

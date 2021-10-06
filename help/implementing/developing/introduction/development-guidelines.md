@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
+source-git-commit: bcb3beb893d5e8aa6d5911866e78cb72fe7d4ae0
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 1%
+source-wordcount: '2073'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 ## 파일 시스템의 상태 {#state-on-the-filesystem}
 
-인스턴스의 파일 시스템은 AEM에서 Cloud Service으로 사용해서는 안 됩니다. 디스크가 사용 후 삭제되며 인스턴스가 재생될 때 삭제됩니다. 단일 요청 처리와 관련된 임시 스토리지에 파일 시스템을 제한적으로 사용할 수는 있지만 대규모 파일에 대해서는 악용되어서는 안 됩니다. 이는 리소스 사용 할당량에 부정적인 영향을 미쳐 디스크 제한 사항이 발생할 수 있기 때문입니다.
+인스턴스의 파일 시스템은 AEM as a Cloud Service에서 사용해서는 안 됩니다. 디스크가 사용 후 삭제되며 인스턴스가 재생될 때 삭제됩니다. 단일 요청 처리와 관련된 임시 스토리지에 파일 시스템을 제한적으로 사용할 수는 있지만 대규모 파일에 대해서는 악용되어서는 안 됩니다. 이는 리소스 사용 할당량에 부정적인 영향을 미쳐 디스크 제한 사항이 발생할 수 있기 때문입니다.
 
 파일 시스템 사용이 지원되지 않는 예로서 게시 계층은 지속해야 하는 모든 데이터를 장기 보관을 위해 외부 서비스로 내보내야 합니다.
 
@@ -39,7 +39,7 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 ## 백그라운드 작업 및 장기 실행 작업 {#background-tasks-and-long-running-jobs}
 
-백그라운드 작업으로 실행된 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하고 대부분의 가져오기 다시 시작할 수 있어야 합니다. 즉, 코드가 다시 실행되면 처음부터 다시 시작하지 않고 원래 상태로 유지한 곳에서 다시 시작하지 않아야 합니다. 이러한 종류의 코드에 대한 새로운 요구 사항은 아니지만 AEM as a Cloud Service에서 인스턴스가 발생하기 쉽습니다.
+백그라운드 작업으로 실행된 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하고 대부분의 가져오기 다시 시작할 수 있어야 합니다. 즉, 코드가 다시 실행되면 처음부터 다시 시작하지 않고 원래 상태로 유지한 곳에서 다시 시작하지 않아야 합니다. 이러한 종류의 코드에 대한 새로운 요구 사항은 아니지만 AEM as a Cloud Service에서 인스턴스가 삭제될 가능성이 높습니다.
 
 이를 최소화하려면 장기실행 작업은 가급적 피할 수 있고, 최소한 재개는 가능하다. 이러한 작업을 실행하는 경우, 적어도 한 번 이상의 보증이 있으므로 중단되면 가능한 한 빨리 재실행됩니다. 그러나 처음부터 다시 시작하지 않아야 할 것이다. 이러한 작업을 예약하기 위해 [Sling 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 스케줄러를 다시 한 번 이상 실행하는 것이 좋습니다.
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 ## 나가는 HTTP 연결 {#outgoing-http-connections}
 
-나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 이러한 시간 초과를 적용하지 않는 코드의 경우, AEM as a Cloud Service에서 실행되는 AEM 인스턴스는 전역 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초 및 다음의 일반적인 Java 라이브러리에서 사용하는 연결에 대한 읽기 호출의 60초입니다.
+나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 이러한 시간 초과를 적용하지 않는 코드의 경우, AEM as a Cloud Service에서 실행되는 AEM 인스턴스는 글로벌 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초 및 다음의 일반적인 Java 라이브러리에서 사용하는 연결에 대한 읽기 호출의 60초입니다.
 
 Adobe은 HTTP 연결을 만들려면 제공된 [Apache HttpComponents Client 4.x 라이브러리](https://hc.apache.org/httpcomponents-client-ga/)를 사용하는 것이 좋습니다.
 
@@ -67,7 +67,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 코드가 런타임에 바이너리를 다운로드하거나 수정할 수 없습니다. 예를 들어 `jar` 또는 `tar` 파일의 압축을 풀 수 없습니다.
 
-## AEM을 Cloud Service으로 통한 스트리밍 바이너리 없음 {#no-streaming-binaries}
+## AEM as a Cloud Service을 통한 스트리밍 바이너리 없음 {#no-streaming-binaries}
 
 코어 AEM 서비스 외부의 바이너리를 제공하는 CDN을 통해 바이너리에 액세스해야 합니다.
 
@@ -75,7 +75,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 ## 역방향 복제 에이전트 없음 {#no-reverse-replication-agents}
 
-게시에서 작성자로 역복제가 AEM에서 Cloud Service으로 지원되지 않습니다. 이러한 전략이 필요한 경우 게시 인스턴스의 팜 및 작성자 클러스터 간에 공유되는 외부 지속성 저장소를 사용할 수 있습니다.
+게시에서 작성자로 역방향 복제는 AEM as a Cloud Service에서 지원되지 않습니다. 이러한 전략이 필요한 경우 게시 인스턴스의 팜 및 작성자 클러스터 간에 공유되는 외부 지속성 저장소를 사용할 수 있습니다.
 
 ## 앞으로 복제 에이전트를 포팅해야 할 수 있습니다. {#forward-replication-agents}
 
@@ -95,7 +95,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 >[!NOTE]
 >
->아래 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 변경 사항을 만든 다음 Cloud Service 인스턴스로 AEM에 푸시해야 합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Cloud Service](/help/implementing/deploying/overview.md)로서 AEM에 배포 를 참조하십시오.
+>아래 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 요소를 만든 다음 AEM as a Cloud Service 인스턴스에 푸시해야 합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service](/help/implementing/deploying/overview.md)에 배포를 참조하십시오.
 
 **디버그 로그 수준 활성화**
 
@@ -159,7 +159,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개�
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-프로덕션 프로그램의 경우 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 개발자 콘솔을 Cloud Service으로 AEM에 대한 액세스 권한을 제공하는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에는 &quot;Cloud Manager - 개발자 역할&quot;이 필요하며, 두 서비스에서 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하십시오.
+프로덕션 프로그램의 경우 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 개발자 콘솔을 AEM as a Cloud Service에 액세스할 수 있는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에는 &quot;Cloud Manager - 개발자 역할&quot;이 필요하며, 두 서비스에서 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하십시오.
 
 ### AEM 스테이징 및 프로덕션 서비스 {#aem-staging-and-production-service}
 
@@ -169,68 +169,6 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개�
 
 Adobe은 응용 프로그램 성능을 모니터링하고 노후화가 확인되면 조치를 수행합니다. 현재는 애플리케이션 지표를 검색할 수 없습니다.
 
-## 전용 송신 IP 주소 {#dedicated-egress-ip-address}
-
-요청 시 AEM as a Cloud Service은 Java 코드로 프로그래밍된 HTTP(포트 80) 및 HTTPS(포트 443) 아웃바운드 트래픽에 대한 정적 전용 IP 주소를 제공합니다.
-
-### 이점 {#benefits}
-
-이 전용 IP 주소는 IP 주소 AEM을 제공하는 Cloud Service으로 SaaS 공급업체(CRM 공급업체 등)와 통합하거나 외부의 다른 통합에 통합할 때 보안을 향상시킬 수 허용 목록에 추가하다 있습니다. 전용 IP 주소를에 허용 목록에 추가하다 추가하면 고객의 AEM Cloud Service에서 들어오는 트래픽만 외부 서비스로 유입될 수 있습니다. 이는 허용되는 다른 IP의 트래픽 외에도 입니다.
-
-전용 IP 주소 기능을 활성화하지 않은 경우 Cloud Service으로 AEM에서 나가는 트래픽이 다른 고객과 공유되는 IP 세트를 통해 이동합니다.
-
-### 구성 {#configuration}
-
-전용 IP 주소를 활성화하려면 고객 지원 팀에 IP 주소 정보를 제공하도록 요청을 제출하십시오. 요청은 각 환경을 지정해야 하며 초기 요청 후 새 환경에 기능이 필요한 경우 추가 요청을 해야 합니다. 샌드박스 프로그램 환경은 지원되지 않습니다.
-
-### 기능 사용 {#feature-usage}
-
-프록시 구성에 표준 Java 시스템 속성을 사용하는 경우, 아웃바운드 트래픽을 발생하는 Java 코드 또는 라이브러리와 호환됩니다. 실제로 여기에는 가장 일반적인 라이브러리가 포함되어야 합니다.
-
-다음은 코드 샘플입니다.
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-  URLConnection connection = finalUrl.openConnection();
-  connection.addRequestProperty("Accept", "application/json");
-  connection.addRequestProperty("X-API-KEY", apiKey);
-
-  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
-    return new JSONObject(new JSONTokener(responseReader));
-  }
-}
-```
-
-일부 라이브러리는 프록시 구성에 표준 Java 시스템 속성을 사용하려면 명시적 구성이 필요합니다.
-
-에 대한 명시적 호출이 필요한 Apache HttpClient를 사용하는 예
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) 또는
-[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-
-  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
-  HttpGet request = new HttpGet(finalUrl.toURI());
-  request.setHeader("Accept", "application/json");
-  request.setHeader("X-API-KEY", apiKey);
-  HttpResponse response = httpClient.execute(request);
-  String result = EntityUtils.toString(response.getEntity());
-}
-```
-
-동일한 전용 IP는 Adobe 조직의 모든 고객 프로그램과 각 프로그램의 모든 환경에 적용됩니다. 이것은 작성자 및 게시 서비스 모두에 적용됩니다.
-
-HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 HTTP/1.1과 암호화 시 HTTP/2가 포함됩니다.
-
-### 디버깅 고려 사항 {#debugging-considerations}
-
-예상되는 전용 IP 주소에서 트래픽이 실제로 전송되는지 확인하려면 대상 서비스의 로그(사용 가능한 경우)를 확인하십시오. 그렇지 않으면 호출 IP 주소를 반환하는 [https://ifconfig.me/ip](https://ifconfig.me/ip) 등의 디버깅 서비스를 호출하는 것이 유용할 수 있습니다.
-
 ## 이메일 보내기 {#sending-email}
 
 AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 아래 섹션에서는 이메일을 요청, 구성 및 전송하는 방법을 설명합니다.
@@ -239,20 +177,19 @@ AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해
 >
 >메일 서비스는 OAuth2 지원을 사용하여 구성할 수 있습니다. 자세한 내용은 메일 서비스에 대한 [OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)을 참조하십시오.
 
-### 액세스 요청 {#requesting-access}
+### 아웃바운드 이메일 활성화 {#enabling-outbound-email}
 
-기본적으로 아웃바운드 이메일은 비활성화되어 있습니다. 이 기능을 활성화하려면 지원 티켓을 제출하십시오.
+기본적으로 전송하는 데 사용되는 포트는 비활성화되어 있습니다. 이 기능을 활성화하려면 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성하여 필요한 각 환경에 대해 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 종단점의 포트 전달 규칙을 설정하여 트래픽이 포트 465(메일 서버에서 지원하는 경우) 또는 포트 587(메일 서버에 이 기능이 필요하고 해당 포트에서 TLS를 적용하는 경우)을 통과하도록 하십시오.
 
-1. 메일 서버의 정규화된 도메인 이름(예: `smtp.sendgrid.net`)
-1. 사용할 포트입니다. 메일 서버에서 지원하는 경우 포트 465, 포트 587 이어야 합니다. 포트 587은 메일 서버에서 사용하고 해당 포트에 TLS를 적용하는 경우에만 사용할 수 있습니다
-1. 보낼 환경에 대한 프로그램 ID 및 환경 ID
-1. 작성자, 게시 또는 둘 다에서 SMTP 액세스가 필요한지 여부.
+Adobe은 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 `kind` 매개 변수를 `flexiblePortEgress`로 설정하여 고급 네트워킹을 구성하는 것이 좋습니다. 고유 송신 IP 주소가 필요한 경우 `dedicatedEgressIp` 의 `kind` 매개 변수를 선택하십시오. 다른 이유로 이미 VPN을 구성한 경우 해당 고급 네트워킹 변형에서 제공하는 고유한 IP 주소도 사용할 수 있습니다.
+
+전자 메일 클라이언트에 직접 이메일을 보내는 대신 메일 서버를 통해 전자 메일을 보내야 합니다. 그렇지 않으면 이메일이 차단될 수 있습니다.
 
 ### 전자 메일 보내기 {#sending-emails}
 
 [일 CQ Mail Service OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하고 이메일을 수신자에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
 
-AEM CS는 포트 465를 통해 메일을 전송해야 합니다. 메일 서버가 포트 465를 지원하지 않는 경우 TLS 옵션이 활성화되어 있는 한 포트 587을 사용할 수 있습니다.
+AEM as a Cloud Service은 포트 465를 통해 메일을 전송해야 합니다. 메일 서버가 포트 465를 지원하지 않는 경우 TLS 옵션이 활성화되어 있는 한 포트 587을 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -274,7 +211,9 @@ AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experiencel
 * `smtp.port`을 `587`(으)로 설정
 * `smtp.ssl`을 `false`(으)로 설정
 
-`smtp.starttls` 속성은 런타임 시 AEM에서 적절한 값으로 자동으로 Cloud Service으로 설정됩니다. 따라서 `smtp.tls`이 true로 설정된 경우 `smtp.startls`은 무시됩니다. `smtp.ssl`이 false로 설정된 경우 `smtp.starttls`이 true로 설정됩니다. 이는 OSGI 구성에 설정된 `smtp.starttls` 값에 관계없이 적용됩니다.
+`smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동 설정됩니다. 따라서 `smtp.tls`이 true로 설정된 경우 `smtp.startls`은 무시됩니다. `smtp.ssl`이 false로 설정된 경우 `smtp.starttls`이 true로 설정됩니다. 이는 OSGI 구성에 설정된 `smtp.starttls` 값에 관계없이 적용됩니다.
+
+선택적으로 OAuth2 지원을 사용하여 메일 서비스를 구성할 수 있습니다. 자세한 내용은 메일 서비스에 대한 [OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)을 참조하십시오.
 
 ## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 

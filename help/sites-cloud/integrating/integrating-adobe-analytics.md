@@ -1,12 +1,12 @@
 ---
 title: Adobe Analytics와 통합
 description: 'Adobe Analytics와 통합 '
-feature: 관리
+feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '530'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 4%
 Adobe Analytics과 AEM as a Cloud Service을 통합하여 웹 페이지 활동을 추적할 수 있습니다. 통합에는 다음이 필요합니다.
 
 * touch UI를 사용하여 AEM as a Cloud Service에서 Analytics 구성을 만듭니다.
-* [Adobe Launch](#analytics-launch)에서 Adobe Analytics을 확장으로 추가하고 구성하는 중입니다. Launch에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)를 참조하십시오.
+* [Adobe Launch](#analytics-launch)에서 Adobe Analytics을 확장으로 추가하고 구성하는 중입니다. Launch에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)를 참조하십시오.
 
-이전 AEM 버전과 비교하여 프레임워크 지원이 AEM의 Analytics 구성에서 Cloud Service으로 제공되지 않습니다. 대신 이제 Analytics 기능(JS 라이브러리)을 사용하여 AEM 사이트를 계측하는 사실상의 도구인 Adobe Launch를 통해 수행됩니다. Launch에서 Adobe Analytics 확장을 구성할 수 있고 Adobe Analytics에 데이터를 보내기 위한 규칙을 만드는 속성이 만들어집니다. Adobe Launch가 sitecatalyst에서 제공하는 analytics 작업을 대체했습니다.
+이전 AEM 버전과 비교하여 프레임워크 지원은 AEM as a Cloud Service의 Analytics 구성에서 제공되지 않습니다. 대신 이제 Analytics 기능(JS 라이브러리)을 사용하여 AEM 사이트를 계측하는 사실상의 도구인 Adobe Launch를 통해 수행됩니다. Launch에서 Adobe Analytics 확장을 구성할 수 있고 Adobe Analytics에 데이터를 보내기 위한 규칙을 만드는 속성이 만들어집니다. Adobe Launch가 sitecatalyst에서 제공하는 analytics 작업을 대체했습니다.
 
 >[!NOTE]
 >
->기존 Analytics 계정이 없는 Cloud Service 고객인 Adobe Experience Manager은 Experience Cloud을 위한 Analytics Foundation Pack 액세스 권한을 요청할 수 있습니다. 이 기초 팩은 Analytics의 볼륨 제한을 제공합니다.
+>기존 Analytics 계정이 없는 Adobe Experience Manager as a Cloud Service 고객은 Experience Cloud에 대한 Analytics Foundation Pack 액세스 권한을 요청할 수 있습니다. 이 기초 팩은 Analytics의 볼륨 제한을 제공합니다.
 
 ## Adobe Analytics 구성 만들기 {#analytics-configuration}
 
@@ -65,4 +65,4 @@ Adobe Analytics은 Launch 속성에서 확장으로 추가할 수 있습니다. 
 
 >[!NOTE]
 >
->Launch용 IMS 구성(기술 계정)은 AEM에서 Cloud Service으로 미리 구성되어 있습니다. 사용자는 이 구성을 만들 필요가 없습니다.
+>Launch용 IMS 구성(기술 계정)은 AEM as a Cloud Service에서 미리 구성되어 있습니다. 사용자는 이 구성을 만들 필요가 없습니다.

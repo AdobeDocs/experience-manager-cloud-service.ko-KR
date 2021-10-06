@@ -2,9 +2,9 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
+source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 >
 >이 문서가 이러한 학습 및 개념을 기반으로 작성되므로 기본 [AEM Project Archetype 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 [FileVault Content Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)에 대해 숙지하십시오.
 
-이 문서에서는 변경 가능한 컨텐츠와 변경할 수 없는 컨텐츠 분리를 사용하여 Adobe Experience Manager Maven 프로젝트에 필요한 변경 사항을 설명하고, 상충되는 배포가 없도록 종속성을 설정하고, 배포 가능한 구조로 패키지되어 있다는 점을 확인하여 호환되는 Cloud Service으로 AEM에 필요한 변경 사항을 설명합니다.
+이 문서에서는 변경 가능한 컨텐츠와 변경할 수 없는 컨텐츠 분리를 사용하여 Adobe Experience Manager Maven 프로젝트에 필요한 변경 사항을 AEM as a Cloud Service 호환으로 설명하고, 상충되는 배포가 없도록 종속성을 설정하고, 배포 가능한 구조로 패키지되어 있다는 점을 설명합니다.
 
 AEM 애플리케이션 배포는 단일 AEM 패키지로 구성되어야 합니다. 따라서 이 패키지에는 코드, 구성 및 지원 기준선 컨텐츠를 포함하여 응용 프로그램이 작동하는 데 필요한 모든 것을 구성하는 하위 패키지가 들어 있어야 합니다.
 
 AEM에서는 **content** 및 **코드**&#x200B;를 분리해야 합니다. 즉, 단일 컨텐츠 패키지 **가**&#x200B;모두&#x200B;**`/apps` 및 런타임 쓰기 가능 영역(예: 리포지토리의 `/content`, `/conf`, `/home` 또는 `/apps`)가 아닌 것.** 대신 AEM에 배포하려면 애플리케이션에서 코드와 컨텐츠를 개별 패키지로 분리해야 합니다.
 
-이 문서에 설명된 패키지 구조는 **로컬 개발 배포 및 AEM Cloud Service 배포과 호환됩니다.**
+이 문서에 설명된 패키지 구조는 **로컬 개발 배포 및 AEM Cloud Service 배포 모두와 호환됩니다.**
 
 >[!TIP]
 >
@@ -39,13 +39,13 @@ AEM에서는 **content** 및 **코드**&#x200B;를 분리해야 합니다. 즉, 
 
 ### Oak 인덱스 {#oak-indexes}
 
-Oak 인덱스(`/oak:index`)는 특별히 AEM에서 Cloud Service 배포 프로세스로 관리됩니다. 새 코드 이미지로 전환하기 전에 Cloud Manager가 새 인덱스가 배포되고 완전히 다시 색인화될 때까지 기다려야 하기 때문입니다.
+Oak 인덱스(`/oak:index`)는 특히 AEM as a Cloud Service 배포 프로세스에서 관리됩니다. 새 코드 이미지로 전환하기 전에 Cloud Manager가 새 인덱스가 배포되고 완전히 다시 색인화될 때까지 기다려야 하기 때문입니다.
 
 이러한 이유로 런타임 시 Oak 인덱스를 변경할 수 있지만 변경 가능한 패키지를 설치하기 전에 설치할 수 있도록 코드를 배포해야 합니다. 따라서 `/oak:index` 구성은 아래의 설명에 따라 코드 패키지의 일부이며 컨텐츠 패키지 [의 일부가 아닙니다.](#recommended-package-structure)
 
 >[!TIP]
 >
->AEM as a Cloud Service에서 색인화에 대한 자세한 내용은 [컨텐츠 검색 및 색인 지정](/help/operations/indexing.md) 문서를 참조하십시오.
+>AEM as a Cloud Service의 색인화에 대한 자세한 내용은 [컨텐츠 검색 및 색인 지정](/help/operations/indexing.md) 문서를 참조하십시오.
 
 ## 권장 패키지 구조 {#recommended-package-structure}
 
@@ -75,9 +75,9 @@ Oak 인덱스(`/oak:index`)는 특별히 AEM에서 Cloud Service 배포 프로�
 + `ui.config` 패키지에는 모든 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)이 들어 있습니다.
    + 실행 모드별 OSGi 구성 정의를 포함하는 조직 폴더
       + `/apps/my-app/osgiconfig`
-   + 모든 target AEM에 Cloud Service 배포 대상으로 적용되는 기본 OSGi 구성이 들어 있는 일반적인 OSGi 구성 폴더
+   + 모든 AEM as a Cloud Service 배포 대상에 적용되는 기본 OSGi 구성이 들어 있는 공통 OSGi 구성 폴더
       + `/apps/my-app/osgiconfig/config`
-   + 모든 target AEM에 Cloud Service 배포 대상으로 적용되는 기본 OSGi 구성을 포함하는 모드별 OSGi 구성 폴더를 실행합니다
+   + 모든 AEM as a Cloud Service 배포 대상에 적용되는 기본 OSGi 구성을 포함하는 모드별 OSGi 구성 폴더를 실행합니다
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Repo 초기화 OSGi 구성 스크립트
       + [Repo ](#repo-init) AEM 응용 프로그램의 논리적 일부인 (가변) 컨텐츠를 배포하는 권장 방법을 시작합니다. Repo Init OSGi 구성은 위에 요약된 대로 적절한 `config.<runmode>` 폴더에 있어야 하며 다음을 정의하는 데 사용해야 합니다.
@@ -269,7 +269,7 @@ AEM 작성자, AEM 게시 또는 둘 다 타깃팅하려면 패키지가 `all` �
 
 ## 타사 패키지 포함 {#embedding-3rd-party-packages}
 
-모든 패키지는 [Adobe의 공용 Maven 아티팩트 저장소](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) 또는 액세스 가능한 공개 참조 가능한 타사 Maven 아티팩트 저장소를 통해 사용할 수 있어야 합니다.
+모든 패키지는 [Adobe의 공용 Maven 아티팩트 저장소](https://repo1.maven.org/maven2/com/adobe/) 또는 액세스 가능한 공개 참조 가능한 타사 Maven 아티팩트 저장소를 통해 사용할 수 있어야 합니다.
 
 타사 패키지가 **Adobe의 public Maven 아티팩트 저장소**&#x200B;에 있는 경우 Cloud Manager에서 아티팩트를 해결하는 데 더 이상 구성이 필요하지 않습니다.
 

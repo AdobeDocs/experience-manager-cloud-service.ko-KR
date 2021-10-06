@@ -2,9 +2,9 @@
 title: 빌드 환경 세부 정보
 description: 빌드 환경 세부 사항 - Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 9ae940fb0149a76277aba49a75abfb8b83305788
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven은 `adobe-public` 프로필을 사용하여 공용 Adobe **Artifact** 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 구성됩니다. (자세한 내용은 [Public Maven 저장소 Adobe](https://repo.adobe.com/) 를 참조하십시오.)
+* Maven은 `adobe-public` 프로필을 사용하여 공용 Adobe **Artifact** 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 구성됩니다. (자세한 내용은 [Public Maven 저장소 Adobe](https://repo1.maven.org/) 를 참조하십시오.)
 
 >[!NOTE]
 >Cloud Manager에서 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만 사용되는 버전은 적어도 `0.7.5.201505241946`이어야 합니다.

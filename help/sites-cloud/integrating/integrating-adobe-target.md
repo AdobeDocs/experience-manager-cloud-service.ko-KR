@@ -1,28 +1,28 @@
 ---
 title: Adobe Target과 통합
 description: 'Adobe Target과 통합 '
-feature: 관리
+feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1035'
 ht-degree: 2%
 
 ---
 
 # Adobe Target과 통합{#integrating-with-adobe-target}
 
-Adobe Target은 Adobe Marketing Cloud의 일부로서 모든 채널에서 타깃팅과 측정을 통해 컨텐츠 관련성을 높일 수 있습니다. Adobe Target과 AEM as a Cloud Service을 통합하려면 다음 작업이 필요합니다.
+Adobe Target은 Adobe Marketing Cloud의 일부로서 모든 채널에서 타깃팅과 측정을 통해 컨텐츠 관련성을 높일 수 있습니다. Adobe Target과 AEM as a Cloud Service을 통합하려면 다음을 수행해야 합니다.
 
-* touch UI를 사용하여 AEM에서 Cloud Service(IMS 구성 필요)로 Target 구성을 만듭니다.
-* [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)에서 Adobe Target을 확장으로 추가하고 구성하는 중입니다.
+* touch UI를 사용하여 AEM as a Cloud Service(IMS 구성 필요)에서 Target 구성을 만듭니다.
+* [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)에서 Adobe Target을 확장으로 추가하고 구성하는 중입니다.
 
 Launch는 AEM 페이지(JS 라이브러리/태그)에서 Analytics와 Target 모두에 대한 클라이언트측 속성을 관리하는 데 필요합니다. 즉, 경험 타깃팅을 위해 Launch와의 통합이 필요합니다. Target으로 경험 조각 내보내기의 경우 Adobe Target 구성 및 IMS만 있으면 됩니다.
 
 >[!NOTE]
 >
->Adobe Experience Manager은 기존 Target 계정이 없는 Cloud Service 고객으로서 Experience Cloud에 대한 Target 기초 팩에 대한 액세스를 요청할 수 있습니다. Foundation Pack에서는 볼륨을 제한하여 Target을 사용합니다.
+>기존 Target 계정이 없는 Adobe Experience Manager as a Cloud Service 고객은 Experience Cloud을 위한 Target 기초 팩에 대한 액세스를 요청할 수 있습니다. Foundation Pack에서는 볼륨을 제한하여 Target을 사용합니다.
 
 ## Adobe Target 구성 만들기 {#create-configuration}
 
@@ -36,7 +36,7 @@ Launch는 AEM 페이지(JS 라이브러리/태그)에서 Analytics와 Target 모
 
 ### IMS 구성 {#ims-configuration}
 
-Target을 AEM 및 Launch와 제대로 통합하려면 Launch 및 Target 둘 다에 대한 IMS 구성이 필요합니다. Launch에 대한 IMS 구성은 AEM에서 Cloud Service으로 미리 구성되어 있지만 Target IMS 구성을 만들어야 합니다(Target이 프로비저닝된 후). Target IMS 구성을 만드는 방법에 대해 알아보려면 [이 비디오](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) 및 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)를 참조하십시오.
+Target을 AEM 및 Launch와 제대로 통합하려면 Launch 및 Target 둘 다에 대한 IMS 구성이 필요합니다. Launch에 대한 IMS 구성은 AEM as a Cloud Service에서 미리 구성되어 있지만 Target IMS 구성을 만들어야 합니다(Target이 프로비저닝된 후). Target IMS 구성을 만드는 방법에 대해 알아보려면 [이 비디오](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) 및 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)를 참조하십시오.
 
 ### Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 {#tenant-client}
 
@@ -51,7 +51,7 @@ Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 필드를 구�
 * 기본 테넌트 ID 세트를 변경할 수 있는 옵션이 있습니다.
 * 따라서 Target에 대한 백엔드 호출은 테넌트 ID를 기반으로 하며, Target에 대한 클라이언트측 호출은 클라이언트 코드를 기반으로 합니다.
 
-앞에서 설명한 바와 같이, 첫 번째 사례는 AEM as a Cloud Service에 가장 일반적으로 사용됩니다. 어느 쪽이든, **모두** 필드에 요구 사항에 따라 올바른 정보가 포함되어 있는지 확인하십시오.
+앞에서 설명한 바와 같이, 첫 번째 케이스는 AEM as a Cloud Service에서 가장 일반적인 케이스입니다. 어느 쪽이든, **모두** 필드에 요구 사항에 따라 올바른 정보가 포함되어 있는지 확인하십시오.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ AEM에서는 Experience Platform Launch과 즉시 통합할 수 있습니다. Ad
 
 ### 필요한 확장 추가 {#add-extension}
 
-**** 확장은 코어 라이브러리 설정을 관리하는 컨테이너를 나타냅니다. Adobe Target 확장은 최신 웹, at.js에 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. **Adobe Target** 및 **Adobe ContextHub** 확장을 모두 추가해야 합니다.
+**** 확장은 코어 라이브러리 설정을 관리하는 컨테이너를 확장합니다. Adobe Target 확장은 최신 웹, at.js에 Target JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. **Adobe Target** 및 **Adobe ContextHub** 확장을 모두 추가해야 합니다.
 
 1. 확장 카탈로그 옵션을 선택하고 필터에서 Target을 검색합니다.
 2. **Adobe Target** at.js를 선택하고 설치 옵션을 클릭합니다.
@@ -128,7 +128,7 @@ AEM에서는 Experience Platform Launch과 즉시 통합할 수 있습니다. Ad
 **규칙**&#x200B;에서는 타깃팅을 위해 사이트에서 실행되는 일련의 작업을 정의하고 순서를 지정합니다.
 
 1. 스크린샷에 예시된 일련의 작업을 추가합니다.
-   ![](assets/rules1.png "ActionsActions")
+   ![](assets/rules1.png "작업")
 2. Add Params to All Mbox에서 이전에 구성된 데이터 요소(위의 데이터 요소 참조)를 mbox 호출에서 전송할 매개 변수에 추가합니다.
    ![](assets/map_data1.png "MboxActions")
 

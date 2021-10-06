@@ -1,14 +1,14 @@
 ---
-sub-product: AEM as a Cloud Service 보안
+sub-product: Security for AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service 보안
 breadcrumb-title: 보안 안내서
 user-guide-description: Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다.
-feature: 구성
+feature: Configuring
 role: Admin
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 3993e5575d87e403acaff333f33a452135430a80
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 65%
+source-wordcount: '70'
+ht-degree: 52%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 65%
 # 보안 {#security}
 
 + [AEM as a Cloud Service 보안](/help/security/home.md)
++ [AEM as a Cloud Service 고급 네트워킹 구성](/help/security/configuring-advanced-networking.md)
 + [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md)
 + [AEM as a Cloud Service를 위한 IMS 지원](ims-support.md)
 + [AEM as a Cloud Service에 대한 동일한 사이트 쿠키 지원](/help/security/same-site-cookie-support.md)

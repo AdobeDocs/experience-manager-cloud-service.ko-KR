@@ -1,8 +1,7 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 릴리스의 릴리스 노트'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 릴리스의 릴리스 노트'
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 3%
@@ -10,9 +9,9 @@ ht-degree: 3%
 ---
 
 
-# [!DNL Adobe Experience Manager] Cloud Service의 현재 릴리스 노트 {#release-notes}
+# [!DNL Adobe Experience Manager] 최신 릴리스 노트(as a Cloud Service) {#release-notes}
 
-다음 섹션에서는 Cloud Service으로 현재(최신) 버전의 [!DNL Experience Manager]에 대한 일반 릴리스 노트를 간략하게 설명합니다.
+다음 섹션에서는 현재 (최신) 버전의 [!DNL Experience Manager] as a Cloud Service에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
 >여기에서 이전 버전의 릴리스 정보로 이동할 수 있습니다. 예를 들어, 2020년, 2021년 등의 경우입니다.
@@ -23,7 +22,7 @@ ht-degree: 3%
 
 ## 릴리스 날짜 {#release-date}
 
-Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 2021년 5월 6일입니다.
+[!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0의 출시일은 2021년 5월 6일입니다.
 다음 릴리스(2021.5.0)는 2021년 5월 27일에 제공됩니다.
 
 ## AEM as a Cloud Service 기반{#aem-as-a-cloud-service-foundation}
@@ -32,7 +31,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 * [컨텐츠 트리 게시 워크플로우](/help/operations/replication.md#publish-content-tree-workflow)  - 새로운 워크플로우 모델 및 단계는 컨텐츠 계층 구조를 게시할 때 향상된 성능을 제공합니다.
 
-## [!DNL Adobe Experience Manager Sites]로서의 [!DNL Cloud Service]  {#sites}
+## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
@@ -50,7 +49,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 * GraphQL - 지속된 쿼리는 이제 AEM Sites 구성에만 적용되는 사용자 정의 종단점을 지원합니다(CQ-4315928)
 
-## [!DNL Adobe Experience Manager Assets]로서의 [!DNL Cloud Service]  {#assets}
+## [!DNL Adobe Experience Manager Assets] 로서의  [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#what-is-new-assets}
 
@@ -90,7 +89,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 * 자산을 검색한 후 검색 결과에서 자산을 선택하면 빠른 게시 옵션이 표시되지 않습니다. (CQ-4317748)
 
-## [!DNL Adobe Experience Manager Forms]로서의 [!DNL Cloud Service]  {#forms}
+## [!DNL Adobe Experience Manager Forms] 로서의  [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
@@ -114,7 +113,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 * **로컬 개발 환경을 사용하여 기록 문서(DoR) 작성**
 
-   XDP를 Cloud Service 인스턴스에서 기록 문서로 사용하고 AEM Forms을 Cloud Service SDK(로컬 개발 환경)로 사용할 수 있습니다. 이전에는 지원이 Cloud Service 인스턴스로만 제한되었습니다.
+   XDP를 Cloud Service 인스턴스 및 AEM Forms as a Cloud Service SDK(로컬 개발 환경)에서 기록 문서로 사용할 수 있습니다. 이전에는 지원이 Cloud Service 인스턴스로만 제한되었습니다.
 
 ### [!DNL Forms]의 버그 수정 {#bug-fixes-forms}
 
@@ -122,8 +121,8 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 ### 기타 업데이트 {#misc-2021-04-0-forms}
 
-* 컨텐츠를 더 쉽게 인식할 수 있도록 이제 서비스에서 XDP, Dynamic PDF 및 스키마 파일에 대한 라이브 축소판 그림을 생성합니다.
-* PDF 파일을 AEM Forms UI에 배치된 폴더로 이동하는 기능을 추가합니다.
+* 컨텐츠를 더 쉽게 인식할 수 있도록 이제 서비스에서 XDP, 동적 PDF 및 스키마 파일에 대한 라이브 축소판 그림을 생성합니다.
+* AEM Forms UI에 배치된 폴더로 PDF 파일을 이동하는 기능을 추가합니다.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -145,7 +144,7 @@ Cloud Service 2021.4.0으로서 [!DNL Adobe Experience Manager]의 출시일은 
 
 ## Cloud Manager {#cloud-manager}
 
-이 섹션에서는 AEM as a Cloud Service 2021.4.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 섹션에서는 AEM as a Cloud Service 2021.4.0에서 Cloud Manager에 대한 릴리스 노트를 간략하게 설명합니다.
 
 ### 릴리스 날짜 {#release-date-cm-april}
 

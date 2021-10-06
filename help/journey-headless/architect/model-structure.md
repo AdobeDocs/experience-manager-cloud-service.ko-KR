@@ -4,13 +4,13 @@ description: 컨텐츠 조각 모델을 사용하여 헤드리스 CMS용 컨텐�
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
+source-git-commit: 117d79b277118f39dfc442957989095bab5670b9
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 8%
+source-wordcount: '690'
+ht-degree: 7%
 
 ---
-
 
 # AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다 {#architect-headless-content-fragment-models}
 
@@ -101,6 +101,10 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >작성자가 모델이 아직 게시되지 않은 컨텐츠 조각을 게시하려고 하면 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
+모델이 게시되는 즉시 이 모델은 작성자의 읽기 전용 모드로 *잠긴*&#x200B;입니다. 이는 기존 GraphQL 스키마 및 쿼리, 특히 게시 환경에서 오류가 발생하는 변경을 방지하기 위한 것입니다. **잠김**&#x200B;에 의해 콘솔에 표시됩니다.
+
+모델이 **잠금**(읽기 전용 모드)이면 모델의 내용 및 구조를 볼 수 있지만 직접 편집할 수는 없습니다. 그러나 콘솔 또는 모델 편집기에서 **잠금** 모델을 관리할 수 있습니다.
+
 ## 다음은 무엇입니까? {#whats-next}
 
 기본 사항을 배웠으므로 다음 단계는 고유한 컨텐츠 조각 모델 만들기를 시작하는 것입니다.
@@ -126,6 +130,8 @@ At the very start you need to enable Content Fragment Models for your site, this
       * [컨텐츠 조각 모델 게시](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [컨텐츠 조각 모델 게시 취소](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+
+      * [잠김(게시된) 컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 시작 안내서
 
