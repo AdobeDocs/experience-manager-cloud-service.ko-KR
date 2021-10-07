@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 노트.'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 2%
+source-wordcount: '1507'
+ht-degree: 3%
 
 ---
 
@@ -47,8 +47,11 @@ ht-degree: 2%
    ![열 및 카드 보기 [!DNL Assets] 에서 검색 결과를 정렬합니다.](/help/assets/assets/sort-searched-assets.png)
    *그림: 열 및 카드 보기 [!DNL Assets] 에서 검색 결과를 정렬합니다.*
 
-* 자산 마이크로서비스를 사용하여 처리를 프로그래밍 방식으로 호출하려면 새 API가 도입됩니다. 이제 개발자는 폴더의 하나 이상의 특정 자산에 기존 폴더 수준 처리 프로필을 적용할 수 있습니다. 처리 프로필은 사용자 지정 메타데이터 속성 업데이트를 기반으로 적용됩니다. [[!DNL Experience Manager] API 참조](https://www.adobe.io/experience-manager/reference-materials/)에서 `AssetProcessor` 을 참조하십시오. 전과 마찬가지로 [사용자 인터페이스에서 자산 마이크로서비스를 사용할 수 있습니다](/help/assets/asset-microservices-configure-and-use.md).
+<!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
+* To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
+
+-->
 <!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
