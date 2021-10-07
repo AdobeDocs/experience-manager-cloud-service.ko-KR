@@ -5,10 +5,10 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
+source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 46%
+source-wordcount: '136'
+ht-degree: 45%
 
 ---
 
@@ -38,7 +38,10 @@ ht-degree: 46%
       + [개요](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [컨텐츠 전송 도구 사전 요구 사항](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [대용량 컨텐츠 저장소 처리](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
-      + [사용자 매핑 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
+      + 사용자 매핑 도구 {#user-mapping-tool}
+         + [개요](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+         + [중요 고려 사항](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+         + [사용자 매핑 도구 사용](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
       + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 코드 리팩터링 도구 {#refactoring-tools}
    + [통합 경험](/help/move-to-cloud-service/unified-experience.md)
@@ -47,4 +50,4 @@ ht-degree: 46%
    + [자산 워크플로우 마이그레이션](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher 변환기](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM 현대화 도구](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-+ [파트너를 위한 Experience Manager으로 마이그레이션 안내서](/help/move-to-cloud-service/getting-started.md)
++ [파트너를 위한 Experience Manager as a Cloud Service으로 마이그레이션 안내서](/help/move-to-cloud-service/getting-started.md)
