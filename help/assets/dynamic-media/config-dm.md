@@ -3,9 +3,9 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4057'
 ht-degree: 1%
 
 ---
@@ -391,8 +391,7 @@ Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 
 
 **Granite Transient 워크플로우 큐를 업데이트하려면:**
 
-1. `http://<host>:<port>/system/console/configMgr`의 **Adobe Experience Manager 웹 콘솔 구성**&#x200B;으로 이동합니다.
-1. **큐를 검색합니다. Granite Transient 워크플로 큐**.
+1. [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr)로 이동하여 **큐를 검색합니다. Granite Transient 워크플로 큐**.
 
    >[!NOTE]
    >

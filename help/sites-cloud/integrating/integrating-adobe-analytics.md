@@ -4,9 +4,9 @@ description: 'Adobe Analytics와 통합 '
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '531'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 Adobe Analytics과 AEM as a Cloud Service을 통합하여 웹 페이지 활동을 추적할 수 있습니다. 통합에는 다음이 필요합니다.
 
 * touch UI를 사용하여 AEM as a Cloud Service에서 Analytics 구성을 만듭니다.
-* [Adobe Launch](#analytics-launch)에서 Adobe Analytics을 확장으로 추가하고 구성하는 중입니다. Launch에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)를 참조하십시오.
+* [Adobe Launch](#analytics-launch)에서 Adobe Analytics을 확장으로 추가하고 구성하는 중입니다. Launch에 대한 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)를 참조하십시오.
 
 이전 AEM 버전과 비교하여 프레임워크 지원은 AEM as a Cloud Service의 Analytics 구성에서 제공되지 않습니다. 대신 이제 Analytics 기능(JS 라이브러리)을 사용하여 AEM 사이트를 계측하는 사실상의 도구인 Adobe Launch를 통해 수행됩니다. Launch에서 Adobe Analytics 확장을 구성할 수 있고 Adobe Analytics에 데이터를 보내기 위한 규칙을 만드는 속성이 만들어집니다. Adobe Launch가 sitecatalyst에서 제공하는 analytics 작업을 대체했습니다.
 

@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 89480738357e8f26185aaa8ea1c6190e58baa644
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1039'
 ht-degree: 43%
 
 ---
@@ -210,7 +210,6 @@ ht-degree: 43%
    + [Adobe Target과 통합](/help/sites-cloud/integrating/adobe-target.md)
    + [ContextHub로 세그멘테이션 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
-   + [Adobe Developer App Builder를 사용하여 AEM 확장](developing/extending/app-builder.md)
    + [경험 구성요소 확장](developing/extending/experience-fragments.md)
    + [컨텐츠 조각 사용자 지정 및 확장](developing/extending/content-fragments-customizing.md)
    + [컨텐츠 조각 렌더링용 구성 요소 구성](developing/extending/content-fragments-configuring-components-rendering.md)

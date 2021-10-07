@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 20%
@@ -178,7 +178,7 @@ AEM Assets에서 Brand Portal을 [!DNL Cloud Service](으)로 활성화하기 �
 
 >[!NOTE]
 >
->Brand Portal 테넌트를 활성화하는 동안 문제가 발생하는 경우 고객 지원 센터에 문의하십시오.
+>Brand Portal 테넌트를 활성화하는 동안 문제가 발생하는 경우 Adobe 지원 센터에 문의하십시오.
 
 ## Adobe 개발자 콘솔을 사용한 수동 구성 {#manual-configuration}
 

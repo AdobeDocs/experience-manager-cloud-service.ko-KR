@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bcb3beb893d5e8aa6d5911866e78cb72fe7d4ae0
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 2%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -169,6 +169,68 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개�
 
 Adobe은 응용 프로그램 성능을 모니터링하고 노후화가 확인되면 조치를 수행합니다. 현재는 애플리케이션 지표를 검색할 수 없습니다.
 
+## 전용 송신 IP 주소 {#dedicated-egress-ip-address}
+
+요청 시 AEM as a Cloud Service은 Java 코드로 프로그래밍된 HTTP(포트 80) 및 HTTPS(포트 443)의 정적 전용 IP 주소를 제공합니다.
+
+### 이점 {#benefits}
+
+이 전용 IP 주소는 IP 주소 AEM을 제공하는 as a Cloud Service 외부의 다른 통합이나 SaaS 공급업체(CRM 공급업체 등)와 통합할 때 보안을 향상시킬 수 허용 목록에 추가하다 있습니다. 전용 IP 주소를에 허용 목록에 추가하다 추가하면 고객의 AEM Cloud Service에서 들어오는 트래픽만 외부 서비스로 유입될 수 있습니다. 이는 허용되는 다른 IP의 트래픽 외에도 입니다.
+
+전용 IP 주소 기능이 활성화되지 않은 경우 AEM as a Cloud Service에서 들어오는 트래픽은 다른 고객과 공유되는 IP 집합을 통해 전달됩니다.
+
+### 구성 {#configuration}
+
+전용 IP 주소를 활성화하려면 고객 지원 팀에 IP 주소 정보를 제공하도록 요청을 제출하십시오. 요청은 각 환경을 지정해야 하며 초기 요청 후 새 환경에 기능이 필요한 경우 추가 요청을 해야 합니다. 샌드박스 프로그램 환경은 지원되지 않습니다.
+
+### 기능 사용 {#feature-usage}
+
+프록시 구성에 표준 Java 시스템 속성을 사용하는 경우, 아웃바운드 트래픽을 발생하는 Java 코드 또는 라이브러리와 호환됩니다. 실제로 여기에는 가장 일반적인 라이브러리가 포함되어야 합니다.
+
+다음은 코드 샘플입니다.
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+일부 라이브러리는 프록시 구성에 표준 Java 시스템 속성을 사용하려면 명시적 구성이 필요합니다.
+
+에 대한 명시적 호출이 필요한 Apache HttpClient를 사용하는 예
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) 또는
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
+동일한 전용 IP는 Adobe 조직의 모든 고객 프로그램과 각 프로그램의 모든 환경에 적용됩니다. 이것은 작성자 및 게시 서비스 모두에 적용됩니다.
+
+HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 HTTP/1.1과 암호화 시 HTTP/2가 포함됩니다.
+
+### 디버깅 고려 사항 {#debugging-considerations}
+
+예상되는 전용 IP 주소에서 트래픽이 실제로 전송되는지 확인하려면 대상 서비스의 로그(사용 가능한 경우)를 확인하십시오. 그렇지 않으면 호출 IP 주소를 반환하는 [https://ifconfig.me/ip](https://ifconfig.me/ip) 등의 디버깅 서비스를 호출하는 것이 유용할 수 있습니다.
+
 ## 이메일 보내기 {#sending-email}
 
 AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 아래 섹션에서는 이메일을 요청, 구성 및 전송하는 방법을 설명합니다.
@@ -177,19 +239,20 @@ AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해
 >
 >메일 서비스는 OAuth2 지원을 사용하여 구성할 수 있습니다. 자세한 내용은 메일 서비스에 대한 [OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)을 참조하십시오.
 
-### 아웃바운드 이메일 활성화 {#enabling-outbound-email}
+### 액세스 요청 {#requesting-access}
 
-기본적으로 전송하는 데 사용되는 포트는 비활성화되어 있습니다. 이 기능을 활성화하려면 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성하여 필요한 각 환경에 대해 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 종단점의 포트 전달 규칙을 설정하여 트래픽이 포트 465(메일 서버에서 지원하는 경우) 또는 포트 587(메일 서버에 이 기능이 필요하고 해당 포트에서 TLS를 적용하는 경우)을 통과하도록 하십시오.
+기본적으로 아웃바운드 이메일은 비활성화되어 있습니다. 이 기능을 활성화하려면 지원 티켓을 제출하십시오.
 
-Adobe은 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 `kind` 매개 변수를 `flexiblePortEgress`로 설정하여 고급 네트워킹을 구성하는 것이 좋습니다. 고유 송신 IP 주소가 필요한 경우 `dedicatedEgressIp` 의 `kind` 매개 변수를 선택하십시오. 다른 이유로 이미 VPN을 구성한 경우 해당 고급 네트워킹 변형에서 제공하는 고유한 IP 주소도 사용할 수 있습니다.
-
-전자 메일 클라이언트에 직접 이메일을 보내는 대신 메일 서버를 통해 전자 메일을 보내야 합니다. 그렇지 않으면 이메일이 차단될 수 있습니다.
+1. 메일 서버의 정규화된 도메인 이름(예: `smtp.sendgrid.net`)
+1. 사용할 포트입니다. 메일 서버에서 지원하는 경우 포트 465, 포트 587 이어야 합니다. 포트 587은 메일 서버에서 사용하고 해당 포트에 TLS를 적용하는 경우에만 사용할 수 있습니다
+1. 보낼 환경에 대한 프로그램 ID 및 환경 ID
+1. 작성자, 게시 또는 둘 다에서 SMTP 액세스가 필요한지 여부.
 
 ### 전자 메일 보내기 {#sending-emails}
 
 [일 CQ Mail Service OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하고 이메일을 수신자에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
 
-AEM as a Cloud Service은 포트 465를 통해 메일을 전송해야 합니다. 메일 서버가 포트 465를 지원하지 않는 경우 TLS 옵션이 활성화되어 있는 한 포트 587을 사용할 수 있습니다.
+AEM CS는 포트 465를 통해 메일을 전송해야 합니다. 메일 서버가 포트 465를 지원하지 않는 경우 TLS 옵션이 활성화되어 있는 한 포트 587을 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -212,8 +275,6 @@ AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experiencel
 * `smtp.ssl`을 `false`(으)로 설정
 
 `smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동 설정됩니다. 따라서 `smtp.tls`이 true로 설정된 경우 `smtp.startls`은 무시됩니다. `smtp.ssl`이 false로 설정된 경우 `smtp.starttls`이 true로 설정됩니다. 이는 OSGI 구성에 설정된 `smtp.starttls` 값에 관계없이 적용됩니다.
-
-선택적으로 OAuth2 지원을 사용하여 메일 서비스를 구성할 수 있습니다. 자세한 내용은 메일 서비스에 대한 [OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)을 참조하십시오.
 
 ## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 

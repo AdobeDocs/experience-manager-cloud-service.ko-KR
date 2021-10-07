@@ -4,7 +4,7 @@ description: Adobe Sensei AI를 사용한 스마트 이미징이 각 사용자�
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 1%
@@ -213,10 +213,10 @@ Smart Imaging을 사용하려면 회사의 Experience Manager 또는 Dynamic Med
       **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media Classic 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
    1. HTTP/2에서 작동하도록 할지 여부를 지정합니다.
 
-1. Adobe 고객 지원 팀에서는 요청을 제출한 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
+1. Adobe 고객 지원 팀에서는 요청이 제출되는 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원 팀에서 대상 날짜를 조정하고 설정해야 합니다.
 1. **선택** 사항: Adobe이 새 기능을 프로덕션에 푸시하기 전에 스테이징에서 스마트 이미징을 선택적으로 테스트할 수 있습니다.
-1. 고객 지원 센터에서 완료 후 알림을 받습니다.
+1. 고객 지원 센터에서 이 작업을 완료하면 알림을 받게 됩니다.
 1. 스마트 이미징의 성능 향상을 극대화하려면 Adobe에서 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN에 의해 자산이 캐시되는 기간을 정의합니다. 이 설정을 변경하려면 다음을 수행하십시오.
 
    1. Dynamic Media Classic을 사용하는 경우 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;로 이동합니다. **[!UICONTROL 기본 클라이언트 캐시 시간을 Live]** 값으로 24 이상으로 설정합니다.

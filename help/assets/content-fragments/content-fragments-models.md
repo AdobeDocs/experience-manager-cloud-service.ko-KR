@@ -4,20 +4,16 @@ description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 20%
+source-wordcount: '2256'
+ht-degree: 24%
 
 ---
 
 # 컨텐츠 조각 모델 {#content-fragment-models}
 
->[!NOTE]
->
->[잠김(게시된) 컨텐츠 조각 모델](#locked-published-content-fragment-models) 기능은 베타에 있습니다.
-
-AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초로서 사용되는 [컨텐츠 조각에 대한 컨텐츠 구조를 정의합니다.](/help/assets/content-fragments/content-fragments.md)
+컨텐츠 조각 모델 AEM에서 [컨텐츠 조각에 대한 컨텐츠 구조를 정의합니다.](/help/assets/content-fragments/content-fragments.md) 헤드리스 컨텐츠의 기초입니다.
 
 컨텐츠 조각 모델을 사용하려면 다음을 수행합니다.
 
@@ -415,82 +411,28 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 1. 모델을 선택한 후 도구 모음에서 **게시 취소** 를 클릭합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
-하나 이상의 조각에서 현재 사용하는 모델을 게시 취소하려고 하면 오류 경고가 표시됩니다.
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-![사용 중인 모델을 게시 취소할 때 컨텐츠 조각 모델 오류 메시지가 표시됩니다](assets/cfm-model-unpublish-error.png)
+This feature provides governance for Content Fragment Models that have been published. 
 
-메시지에 [참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) 패널을 확인하여 추가 조사를 수행하는 것이 좋습니다.
+The challenge:
 
-![참조의 컨텐츠 조각 모델](assets/cfm-model-references.png)
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
 
-## 잠김(게시된) 컨텐츠 조각 모델 {#locked-published-content-fragment-models}
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
 
->[!NOTE]
-잠긴(게시된) 컨텐츠 조각 모델 기능은 베타에 있습니다.
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
 
-이 기능은 게시된 컨텐츠 조각 모델에 대한 거버넌스를 제공합니다.
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
 
-### 과제 {#the-challenge}
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
 
-* 컨텐츠 조각 모델은 AEM에서 GraphQL 쿼리에 대한 스키마를 결정합니다.
+The solution:
 
-   * AEM GraphQL 스키마는 컨텐츠 조각 모델이 만들어지자마자 생성되며 작성 및 게시 환경 모두에 존재할 수 있습니다.
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
 
-   * 게시의 스키마는 JSON 형식으로 컨텐츠 조각 컨텐츠를 실시간으로 게재할 수 있는 기반을 제공하므로 가장 중요합니다.
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
 
-* 컨텐츠 조각 모델이 수정되거나 다른 말로 편집될 때 문제가 발생할 수 있습니다. 즉, 스키마가 변경되고 이는 기존의 GraphQL 쿼리에 영향을 줄 수 있습니다.
-
-* 컨텐츠 조각 모델에 새 필드를 추가하는 것은 일반적으로 유해한 효과가 없어야 합니다. 그러나 기존 데이터 필드(예: 해당 이름)를 수정하거나 필드 정의를 삭제하면 이러한 필드를 요청할 때 기존 GraphQL 쿼리가 중단됩니다.
-
-### 요구 사항 {#the-requirements}
-
-* 라이브 컨텐츠 전달에 이미 사용되는 모델을 편집할 때(다시 말해, 게시된 모델) 사용자에게 위험을 인식하도록 합니다.
-
-* 또한 의도하지 않은 변경을 방지하기 위해
-
-이렇게 하면 수정된 모델이 다시 게시되는 경우 쿼리가 손상될 수 있습니다.
-
-### 솔루션 {#the-solution}
-
-이러한 문제를 해결하기 위해 컨텐츠 조각 모델은 게시되는 즉시 작성자의 읽기 전용 모드로 *잠긴*&#x200B;입니다. 이것은 **잠김**&#x200B;로 표시됩니다.
-
-![잠긴 컨텐츠 조각 모델의 카드](assets/cfm-model-locked.png)
-
-모델이 **잠금**(읽기 전용 모드)이면 모델의 내용 및 구조를 볼 수 있지만 편집할 수는 없습니다.
-
-콘솔 또는 모델 편집기에서 **잠금** 모델을 관리할 수 있습니다.
-
-* 콘솔
-
-   콘솔에서 도구 모음에서 **잠금 해제** 및 **잠금** 작업을 사용하여 읽기 전용 모드를 관리할 수 있습니다.
-
-   ![잠긴 컨텐츠 조각 모델의 도구 모음](assets/cfm-model-locked.png)
-
-   * 모델을 **잠금 해제**&#x200B;하여 편집 작업을 활성화할 수 있습니다.
-
-      **잠금 해제**&#x200B;를 선택하면 경고가 표시되며, **잠금 해제** 작업을 확인해야 합니다.
-      ![컨텐츠 조각 모델 잠금을 해제할 때 메시지](assets/cfm-model-unlock-message.png)
-
-      그런 다음 편집할 모델을 열 수 있습니다.
-
-   * 나중에 **모델 잠금**&#x200B;을 수행할 수도 있습니다.
-   * 모델을 다시 게시하면 즉시 **잠김**(읽기 전용) 모드로 돌아갑니다.
-
-* 모델 편집기
-
-   * 잠긴 모델을 열면 다음 세 가지 작업이 표시됩니다. **취소**, **읽기 전용 보기**, **편집**:
-
-      ![잠긴 컨텐츠 조각 모델을 볼 때 메시지](assets/cfm-model-editor-lock-message.png)
-
-   * **읽기 전용 보기**&#x200B;를 선택하면 모델의 내용과 구조를 볼 수 있습니다.
-
-      ![읽기 전용 보기 - 잠긴 컨텐츠 조각 모델](assets/cfm-model-editor-locked-view-only.png)
-
-   * **편집**&#x200B;을 선택하는 경우 업데이트를 편집하고 저장할 수 있습니다.
-
-      ![편집 - 잠긴 컨텐츠 조각 모델](assets/cfm-model-editor-locked-edit.png)
-
-      >[!NOTE]
-      맨 위에는 경고가 있을 수 있지만, 이는 모델이 기존 컨텐츠 조각에서 이미 사용 중인 경우입니다.
-
-   * **** 취소하면 콘솔로 돌아갑니다.
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->

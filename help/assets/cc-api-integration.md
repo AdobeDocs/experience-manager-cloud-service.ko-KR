@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 처리 프로필을 사용하여 변형을 자동으로 만들려면 다음 단계를 수행합니다.
 
-1. 라이센스를 받으려면 [고객 지원 Adobe](https://experienceleague.adobe.com/#support)에 문의하십시오.
+1. 라이센스를 받으려면 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/#support)에 문의하십시오.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**&#x200B;로 이동합니다.
 
