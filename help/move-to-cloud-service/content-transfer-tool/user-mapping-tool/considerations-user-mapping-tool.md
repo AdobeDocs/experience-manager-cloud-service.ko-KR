@@ -1,9 +1,9 @@
 ---
 title: 사용자 매핑 도구에 대한 중요한 고려 사항
 description: 사용자 매핑 도구에 대한 중요한 고려 사항
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -35,3 +35,7 @@ ht-degree: 0%
 * 대상 AEM Cloud Service 인스턴스에 소스 AEM 인스턴스의 사용자 이름과 다른 사용자 이름은 있지만 소스 사용자 중 하나의 사용자와 동일한 이메일 주소를 사용하는 사용자가 있고 사용자 매핑이 활성화되어 있으면 로그에 오류 메시지가 기록되고 소스 AEM 사용자는 전송되지 않습니다. 이는 지정된 이메일 주소를 가진 한 명의 사용자만 대상 시스템에서 허용되기 때문입니다.
 
 * 소스 AEM 인스턴스의 두 사용자에게 동일한 이메일 주소가 있고 사용자 매핑이 활성화되어 있으면 오류 메시지가 로그에 기록되고 소스 AEM 사용자 중 하나는 전송되지 않습니다. 이는 지정된 이메일 주소를 가진 한 명의 사용자만 대상 시스템에서 허용되기 때문입니다.
+
+### 다음은 무엇입니까? {#whats-next}
+
+중요한 고려 사항과 특별한 사례를 알게 되면 이제 도구를 사용할 준비가 되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)을 참조하십시오.

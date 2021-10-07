@@ -1,9 +1,9 @@
 ---
 title: 사용자 매핑 도구 개요
 description: 사용자 매핑 도구 개요
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -27,3 +27,7 @@ AEM as a Cloud Service에 대한 주요 변경 사항은 작성 계층에 액세
 ## 사용자 매핑 도구 {#mapping-tool}
 
 사용자 매핑 없이 컨텐츠 전송 도구는 마이그레이션되는 컨텐츠와 연결된 사용자 및 그룹을 마이그레이션하게 됩니다. 사용자 매핑 도구는 컨텐츠 전송 도구의 일부이며 유일한 목적은 AEM에서 사용하는 단일 사인온 기능인 IMS에서 올바르게 인식할 수 있도록 사용자 및 그룹을 수정하는 것입니다. 이러한 수정 사항이 완료되면 컨텐츠 전송 도구는 지정된 컨텐츠의 사용자 및 그룹을 평소대로 마이그레이션합니다.
+
+### 다음은 무엇입니까? {#whats-next}
+
+사용자 매핑 도구가 무엇인지 알게 되면 이제 사용자 매핑 도구를 사용하기 전에 중요한 고려 사항과 특별한 사례를 검토할 준비가 되었습니다. 자세한 내용은 [사용자 매핑 도구에 대한 중요한 고려 사항](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)을 참조하십시오.
