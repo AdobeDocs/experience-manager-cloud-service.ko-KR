@@ -11,9 +11,9 @@ ht-degree: 1%
 
 # 콘텐츠 검색 및 색인 지정 {#indexing}
 
-## AEM as a Cloud Service 변경 사항 {#changes-in-aem-as-a-cloud-service}
+## AEM의 변경 사항 as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에서 Cloud Manager의 CI/CD 파이프라인에 의해 구동되는 n-x AEM 컨테이너가 있는 서비스 기반 보기로 이동하고 있습니다. 단일 AEM 인스턴스에서 인덱스를 구성하고 유지 관리하는 대신 배포 전에 인덱스 구성을 지정해야 합니다. 프로덕션의 구성 변경은 분명히 CI/CD 정책을 위반하는 것입니다. 인덱스 변경 내용은 시스템 안정성 및 성능에 영향을 줄 수 있으므로 테스트 및 재색인화를 지정하지 않은 경우 프로덕션으로 가져오기 전에 적용됩니다.
+AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심 모델에서 Cloud Manager의 CI/CD 파이프라인에 의해 구동되는 n-x AEM Containers를 사용하는 서비스 기반 보기로 이동하고 있습니다. 단일 AEM 인스턴스에서 인덱스를 구성하고 유지 관리하는 대신 배포 전에 인덱스 구성을 지정해야 합니다. 프로덕션의 구성 변경은 분명히 CI/CD 정책을 위반하는 것입니다. 인덱스 변경 내용은 시스템 안정성 및 성능에 영향을 줄 수 있으므로 테스트 및 재색인화를 지정하지 않은 경우 프로덕션으로 가져오기 전에 적용됩니다.
 
 다음은 AEM 6.5 및 이전 버전과 비교하여 주요 변경 사항 목록입니다.
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 1. 기존 인덱스 정의를 업데이트하는 중입니다. 이는 기존 인덱스 정의의 새 버전을 추가하는 것을 의미합니다
 1. 중복되거나 사용되지 않는 기존 인덱스를 제거하는 중입니다.
 
-위의 두 지점 모두에 대해, 각각의 Cloud Manager 릴리스 일정에서 사용자 지정 코드 베이스의 일부로 새 인덱스 정의를 생성해야 합니다. 자세한 내용은 [AEM as a Cloud Service 설명서](/help/implementing/deploying/overview.md)를 참조하십시오.
+위의 두 지점 모두에 대해, 각각의 Cloud Manager 릴리스 일정에서 사용자 지정 코드 베이스의 일부로 새 인덱스 정의를 생성해야 합니다. 자세한 내용은 [AEM as a Cloud Service 설명서에 배포](/help/implementing/deploying/overview.md)를 참조하십시오.
 
 ### 새 인덱스 정의 준비 {#preparing-the-new-index-definition}
 
@@ -85,7 +85,7 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 >[!TIP]
 >
->AEM as a Cloud Service에 필요한 패키지 구조에 대한 자세한 내용은 [AEM 프로젝트 구조 문서를 참조하십시오.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>AEM as a Cloud Service에 필요한 패키지 구조에 대한 자세한 내용은 [AEM Project Structure.](/help/implementing/developing/introduction/aem-project-content-package-structure.md) 문서를 참조하십시오.
 
 ## 파랑-녹색 배포를 사용한 색인 관리 {#index-management-using-blue-green-deployments}
 
@@ -125,7 +125,7 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심의 모델에�
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` 는 AEM을 기존 색인의 교체로 표시할 Cloud Service으로 사용해야 합니다.
+>`<indexName>-custom-<customerVersionNumber>` AEM as a Cloud Service에서 기존 색인의 대체용으로 표시할 때 필요합니다.
 
 | 색인 | 기본 인덱스 | 버전 1에서 사용 | 버전 2에서 사용 |
 |---|---|---|---|
@@ -217,11 +217,11 @@ Apache Jackrabbit Oak를 사용하면 유연한 인덱스 구성을 통해 검�
 
 ### AEM as a Cloud Service의 Lucene 전체 텍스트 인덱스 {#index-lucene}
 
-전체 텍스트 인덱스 `/oak:index/lucene-2`은(는) 기본적으로 AEM 저장소의 모든 노드를 인덱싱하므로 매우 클 수 있습니다.  이 색인의 사용 중지 계획은 Adobe이 2021년 9월부터 Cloud Service으로 AEM에 더 이상 배포되지 않습니다. 따라서 AEM의 제품 측에서 더 이상 Cloud Service으로 사용되지 않으므로 고객 코드를 실행할 필요는 없습니다. 일반적인 Lucene 인덱스가 있는 Cloud Service 환경인 AEM의 경우 Adobe은 이 색인을 보정하고 더 나은 최적화된 인덱스를 사용하기 위해 개별적으로 고객과 협력합니다. Adobe의 추가 통보 없이 고객에게 조치가 필요하지 않습니다. AEM as a Cloud Service 고객은 이 최적화와 관련하여 조치를 취해야 할 때 Adobe을 통해 정보를 받게 됩니다. 사용자 지정 쿼리에 이 인덱스가 필요한 경우 임시 솔루션으로서 [여기](/help/operations/indexing.md)에 설명된 대로 다른 이름(예: `/oak:index/acme.lucene-1-custom-1`)을 사용하여 이 인덱스의 사본을 만들어야 합니다.
+전체 텍스트 인덱스 `/oak:index/lucene-2`은(는) 기본적으로 AEM 저장소의 모든 노드를 인덱싱하므로 매우 클 수 있습니다.  이 지수의 사용 중지 계획에 따라 Adobe은 2021년 9월부터 AEM as a Cloud Service에 더 이상 배포되지 않습니다. 따라서 AEM as a Cloud Service의 제품 측에서 더 이상 사용되지 않으며 고객 코드를 실행하는 데 필요하지 않습니다. 일반적인 Lucene 인덱스가 있는 AEM as a Cloud Service 환경의 경우 Adobe은 이 색인을 보정하고 더 나은 최적화된 인덱스를 사용하기 위해 개별적으로 고객과 공동 작업을 수행합니다. Adobe의 추가 통보 없이 고객에게 조치가 필요하지 않습니다. AEM as a Cloud Service 고객은 이 최적화와 관련하여 조치를 취해야 할 때 Adobe을 통해 정보를 받게 됩니다. 사용자 지정 쿼리에 이 인덱스가 필요한 경우 임시 솔루션으로서 [여기](/help/operations/indexing.md)에 설명된 대로 다른 이름(예: `/oak:index/acme.lucene-1-custom-1`)을 사용하여 이 인덱스의 사본을 만들어야 합니다.
 이 최적화는 온프레미스에서 호스팅되거나 Adobe Managed Services에서 관리하는 다른 AEM 환경에는 기본적으로 적용되지 않습니다.
 
 ## 쿼리 최적화 {#index-query}
 
 **쿼리 성능** 도구를 사용하면 인기 있는 JCR 쿼리와 느린 JCR 쿼리를 모두 관찰할 수 있습니다. 또한 쿼리를 분석하고 그에 대한 다양한 정보를 표시할 수 있습니다. 특히 색인이 이 쿼리에 사용되고 있는지 여부를 확인할 수 있습니다.
 
-AEM의 온-프레미스와는 달리, AEM as a Cloud Service은 UI에 **쿼리 성능** 도구가 더 이상 표시되지 않습니다. 대신 이제 **쿼리** 탭의 개발자 콘솔(Cloud Manager)을 통해 사용할 수 있습니다.
+AEM의 온-프레미스와는 달리 AEM as a Cloud Service은 UI에 **쿼리 성능** 도구를 더 이상 표시하지 않습니다. 대신 이제 **쿼리** 탭의 개발자 콘솔(Cloud Manager)을 통해 사용할 수 있습니다.

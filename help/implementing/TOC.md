@@ -62,7 +62,7 @@ ht-degree: 43%
       + [저장소 액세스](cloud-manager/managing-code/accessing-repos.md)
       + [Adobe Cloud Manager와 Git 통합](cloud-manager/managing-code/integrating-with-git.md)
       + [여러 소스 Git 리포지토리 작업](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-      + [AEM as a Cloud Service에 대한 Enterprise Team Development 설정](cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [AEM as a Cloud Service용 엔터프라이즈 팀 개발 설정](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
    + [코드 배포](cloud-manager/deploy-code.md)
    + 테스트 결과 이해 {#test-results}

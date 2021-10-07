@@ -1,6 +1,6 @@
 ---
-title: 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] Cloud Service으로 확장.
-description: 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] Cloud Service으로 확장.
+title: 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] as a Cloud Service으로 확장.
+description: 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] as a Cloud Service으로 확장.
 source-git-commit: 9287a40518d7026d5361cb61ab3804583e22450f
 workflow-type: tm+mt
 source-wordcount: '589'
@@ -9,11 +9,11 @@ ht-degree: 0%
 ---
 
 
-# Adobe 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] 을 Cloud Service으로 확장 {#extend-using-app-builder}
+# Adobe 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] as a Cloud Service 확장 {#extend-using-app-builder}
 
 ## AEM용 App Builder as a Cloud Service {#project-firefly}
 
-새로운 Adobe 개발자 앱 빌더는 개발자가 AEM을 Cloud Service 기능으로 쉽게 확장할 수 있는 확장성 프레임워크를 제공합니다.
+새로운 Adobe 개발자 앱 빌더는 개발자가 AEM as a Cloud Service 기능을 쉽게 확장할 수 있는 확장성 프레임워크를 제공합니다.
 
 App Builder는 Adobe Experience Manager을 확장하는 사용자 지정 경험을 통합 및 만들 수 있는 통합된 타사 확장성 프레임워크를 제공합니다. 개발자는 Adobe의 인프라를 기반으로 구축된 이러한 완벽한 확장성 프레임워크를 사용하여 Adobe 솔루션 및 기타 IT 스택에서 사용자 정의 마이크로 서비스를 구축하고, 확장하고, Adobe Experience Manager을 통합할 수 있습니다.
 

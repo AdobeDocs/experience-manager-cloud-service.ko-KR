@@ -74,7 +74,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 1. **인쇄 미리 보기**&#x200B;를 클릭하면 인쇄 가능한 미리 보기에 표시된 보고서가 있는 새 탭이 열립니다. **인쇄**&#x200B;를 클릭하여 보고서를 PDF 형식으로 인쇄하면 쉽게 공유할 수 있습니다.
 
    >[!IMPORTANT]
-   >* **PDF로 저장** 옵션이 권장되며 위의 기능을 지원합니다.
+   >* **PDF**&#x200B;로 저장 옵션이 권장되며 위의 기능에 대해 지원됩니다.
    >* 브라우저의 인쇄 단추를 사용하면 한 페이지만 인쇄됩니다.
 
 
@@ -101,7 +101,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 #### 보고서 개요 {#report-overview}
 
-이 **보고서 개요** 카드는 아래 그림과 같이, AEM으로 이동할 준비를 평가할 때 적용되는 보고서 결과 및 심각도 수준을 제공합니다.
+이 **보고서 개요** 카드는 아래 그림과 같이 AEM as a Cloud Service으로 이동할 준비를 평가할 때 적용되는 보고서 결과 및 심각도 수준을 제공합니다.
 
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 #### 마이그레이션 복잡성 평가 {#migration-complexity-assessment}
 
-마이그레이션 복잡성 평가 옵션은 기존 AEM 구현을 Cloud Service으로 AEM으로 마이그레이션하는 데 따르는 복잡성에 대한 평가를 제공합니다.
+마이그레이션 복잡성 평가 옵션은 기존 AEM 구현을 AEM as a Cloud Service으로 마이그레이션하는 데 따르는 복잡성에 대한 평가를 제공합니다.
 
 이 탭에서 다음 정보를 검토할 수 있습니다.
 

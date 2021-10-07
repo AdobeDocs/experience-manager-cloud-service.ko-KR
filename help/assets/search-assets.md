@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
 workflow-type: tm+mt
-source-wordcount: '4898'
+source-wordcount: '4897'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 검색 인터페이스 및 사용 가능한 작업에 대해 숙지하십시오.
 
-![Experience Manager 자산 검색 결과 인터페이스 이해](assets/aem_search_results.png)
+![Experience Manager Assets 검색 결과 인터페이스 이해](assets/aem_search_results.png)
 
 *그림: 검색  [!DNL Experience Manager Assets] 결과 인터페이스를 이해합니다.*
 
@@ -157,7 +157,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 작성자 | 작성자:John |
 | 위치 | 위치:NA |
 | 설명 | description:&quot;샘플 이미지&quot; |
-| 작성자 도구 | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| 작성자 도구 | creatortool:&quot;Adobe Photoshop&quot; |
 | 저작권 소유자 | copyrightowner:&quot;Adobe Systems&quot; |
 | 내용 작성자 | 기여자:John |
 | 사용 약관 | usagterms:&quot;CopyRights Reserved&quot; |
@@ -202,7 +202,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### [!DNL Experience Manager] 데스크탑 앱에서 자산 검색 {#desktop-app}
 
-크리에이티브 전문가가 데스크탑 앱을 사용하여 로컬 데스크탑(Win 또는 Mac)에서 [!DNL Experience Manager Assets]을 손쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시하고, 데스크탑 애플리케이션에서 열고, 로컬로 변경할 수 있습니다. 변경 사항은 리포지토리에서 생성된 새 버전으로 다시 [!DNL Experience Manager]에 저장됩니다. 응용 프로그램은 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크탑 앱에서 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오.
+크리에이티브 전문가가 데스크탑 앱을 사용하여 로컬 데스크탑(Win 또는 Mac)에서 [!DNL Experience Manager Assets] 을 손쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시하고, 데스크탑 애플리케이션에서 열고, 로컬로 변경할 수 있습니다. 변경 사항은 리포지토리에서 생성된 새 버전으로 다시 [!DNL Experience Manager]에 저장됩니다. 응용 프로그램은 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크탑 앱에서 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오.
 
 ### [!DNL Brand Portal]에서 자산 검색 {#brand-portal}
 

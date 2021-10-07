@@ -2,15 +2,15 @@
 title: Creative Cloud 통합을 위한 컨텐츠 자동화
 description: Creative Cloud 통합을 사용하여 자산의 변형 생성
 contentOwner: AG
-feature: 업로드,자산 처리,게시,Asset compute 마이크로서비스,워크플로우
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Adobe Creative Cloud] 통합을 사용하여 자산의 변형을 생성합니다. {#content-automation}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
    ![Lightroom 사전 설정](/help/assets/assets/content-automation-lrpresets.png)
 
-   *그림: 많은 이미지에 대한 일관된 방법으로 이미지 품질을 개선하려면 Lightroom 사전 설정을 Adobe 하십시오.*
+   *그림: Adobe Lightroom 사전 설정은 많은 이미지에 일관된 방식으로 이미지 품질을 개선합니다.*
 
 * **이미지 컷아웃**: 인공 지능을 사용하여 돌출된 객체 주위에 선택 영역을 만들고 단일 명령으로 배경을 제거합니다.
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    ![Photoshop 작업](/help/assets/assets/content-automation-psactions.png)
 
-* **스마트 개체 바꾸기**: PSD 파일 내에 적용된 모든 효과와 조정을 그대로 유지하면서 이미지를 교환하도록 함으로써 규모에 맞게 개인화를 수행할 수 있습니다.
+* **스마트 개체 바꾸기**: PSD 파일 내에 적용된 모든 효과 및 조정을 그대로 유지하면서 이미지를 교환하도록 하여 규모에 맞게 개인화를 수행합니까?
 
    ![개체를 깔끔하게 바꾸기](/help/assets/assets/content-automation-objectreplace.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 처리 프로필을 사용하여 변형을 자동으로 만들려면 다음 단계를 수행합니다.
 
-1. 라이센스를 받으려면 [고객 지원 센터 Adobe](https://experienceleague.adobe.com/#support)에 문의하십시오.
+1. 라이센스를 받으려면 [고객 지원 Adobe](https://experienceleague.adobe.com/#support)에 문의하십시오.
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**&#x200B;로 이동합니다.
 
@@ -84,6 +84,6 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [처리 프로필을 통해 자산 마이크로서비스 를 구성하고 사용합니다](/help/assets/asset-microservices-configure-and-use.md).
->* [ [!DNL Experience Manager]  [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)과 통합됩니다.
+>* [ [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md) [!DNL Experience Manager] 과 통합됩니다.
 >* [자산 마이크로서비스를 사용한 자산 수집 및 처리: 개요](/help/assets/asset-microservices-overview.md).
 

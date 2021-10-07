@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 20%
@@ -63,7 +63,7 @@ AEM Assets에 대한 환경을 [!DNL Cloud Service] 인스턴스로 만들거나
 >자동 생성된 설정은 수정하지 마십시오.
 
 **참고 항목**:
-* [AEM Assets에서 Cloud Service으로 사용자 및 역할 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
+* [AEM Assets에서 사용자 및 역할 추가 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
 * [Cloud Manager에서 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
@@ -178,7 +178,7 @@ AEM Assets에서 Brand Portal을 [!DNL Cloud Service](으)로 활성화하기 �
 
 >[!NOTE]
 >
->Brand Portal 테넌트를 활성화하는 동안 문제가 발생하는 경우 Adobe 지원 센터에 문의하십시오.
+>Brand Portal 테넌트를 활성화하는 동안 문제가 발생하는 경우 고객 지원 센터에 문의하십시오.
 
 ## Adobe 개발자 콘솔을 사용한 수동 구성 {#manual-configuration}
 
