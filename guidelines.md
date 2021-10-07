@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 91%
 
 ---
 # Adobe Experience Manager 설명서에 대한 기여 지침
@@ -37,9 +37,9 @@ AEM 설명서에서는 표준 사용 사례를 다룹니다. 따라서 버그, �
 
 AEM 설명서를 개선하기 위해 필요한 모든 아이디어를 기여할 수 있습니다. 그러나 주석, 문제 및 가져오기 요청만 *기여*&#x200B;에 해당합니다. 하지만 기여는 AEM 사용 방법, AEM 프로젝트 구현 방법, 기술 문제 해결 방법 등에 대한 질문에 답변하기 위해 마련된 것이 아닙니다.
 
-AEM 사용 또는 기술 오류에 대한 질문은 [Experience Cloud 엔터프라이즈 지원 포털](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)을 통해 일반적인 지원 프로세스를 통해 보고하거나 [Experience Manager 커뮤니티](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)에서 다루어야 합니다.
+AEM 사용 또는 기술 오류에 대한 질문은 [Experience Manager 지원 포털](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)을 통해 일반적인 지원 프로세스를 통해 보고하거나 [Experience Manager 커뮤니티](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)에서 다루어야 합니다.
 
-***AEM 설명서 기여는 Adobe 고객 지원 센터를 대체할 수 없으며*** 지원 관련 질문에 대한 답변을 구하는 기여는 거부됩니다.
+***AEM 설명서 기여는 Adobe 고객 지원*** 을 대체할 수 없으며 지원 관련 질문에 대한 답변을 구하는 기여는 거부됩니다.
 
 ### 기여는 해당 설명서 페이지를 명확하게 참조해야 합니다.
 

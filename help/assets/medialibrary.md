@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: e294ecdefca89bc3fd16ee2166a1a8418d0237ee
+source-git-commit: 51ebeda46fbacb2479a5bd007cb741486caa218f
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,15 @@ Media Library은 다음과 같은 사용 사례를 광범위하게 다룹니다.
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
+* Basic metadata properties
+* Tag management
+* Version control
 * Static renditions
-* Projects, tasks authoring
+* Projects, tasks, workflow authoring
 * Activity stream (timeline)
+* Query Builder (API)
+* Marketing Cloud integration
+* User interface customization and extension
 * Comments and annotation
 -->
 
@@ -73,21 +79,13 @@ Media Library 기능을 사용하려면 기본 [!DNL Experience Manager] 사용�
 * 자산에 주석 달기.
 * 컨텐츠 파인더를 통해 [!DNL Sites] 페이지에 자산을 추가합니다.
 * 사용 [!DNL Content Fragments].
-* 사이트 라이선스 아래의 [!DNL Content Fragments] 및 참조된 미디어 자산에 HTTP REST 및 GraphQL API를 사용합니다.
-* Marketing Cloud 통합.
-* 자산 관리 사용자 인터페이스를 사용자 지정하고 확장합니다.
-* Query Builder(API)에 액세스하여 검색 기능을 확장합니다.
-* 정적 태그를 만듭니다.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
->많은 고급 DAM 사용 사례가 [!DNL Experience Manager Assets]에 의해 이행됩니다. Media Library 라이센스를 사용하면 Media Library을 사용하여 나열된 사용 사례만 충족할 수 있습니다. 사용 사례가 나열되지 않은 경우 Media Library 라이센스에서 사용하지 마십시오. 문의 사항이 있으면 고객 지원에 문의하십시오.
-
-스마트 태그, [!DNL Asset] 링크, [!DNL Asset] 선택기, 벌크 태그 지정, [!DNL Assets] 라이센스 없이 자산 워크플로우 수정 등은 사용할 수 없습니다.
+>많은 고급 DAM 사용 사례가 [!DNL Experience Manager Assets]에 의해 이행됩니다. Media Library 라이센스를 사용하면 Media Library을 사용하여 나열된 사용 사례만 충족할 수 있습니다. 사용 사례가 나열되지 않은 경우 Media Library 라이센스에서 사용하지 마십시오. 질문이 있는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

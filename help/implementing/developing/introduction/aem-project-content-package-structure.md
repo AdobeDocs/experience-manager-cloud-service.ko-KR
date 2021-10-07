@@ -2,9 +2,9 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 1%
 
 ---
@@ -269,7 +269,7 @@ AEM 작성자, AEM 게시 또는 둘 다 타깃팅하려면 패키지가 `all` �
 
 ## 타사 패키지 포함 {#embedding-3rd-party-packages}
 
-모든 패키지는 [Adobe의 공용 Maven 아티팩트 저장소](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) 또는 액세스 가능한 공개 참조 가능한 타사 Maven 아티팩트 저장소를 통해 사용할 수 있어야 합니다.
+모든 패키지는 [Adobe의 공용 Maven 아티팩트 저장소](https://repo1.maven.org/maven2/com/adobe/) 또는 액세스 가능한 공개 참조 가능한 타사 Maven 아티팩트 저장소를 통해 사용할 수 있어야 합니다.
 
 타사 패키지가 **Adobe의 public Maven 아티팩트 저장소**&#x200B;에 있는 경우 Cloud Manager에서 아티팩트를 해결하는 데 더 이상 구성이 필요하지 않습니다.
 

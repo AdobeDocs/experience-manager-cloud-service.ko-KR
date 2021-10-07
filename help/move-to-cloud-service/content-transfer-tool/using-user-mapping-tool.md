@@ -2,10 +2,10 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 2%
+source-wordcount: '1367'
+ht-degree: 1%
 
 ---
 
@@ -75,17 +75,20 @@ AEM as a Cloud Service에 대한 주요 변경 사항은 작성 계층에 액세
 
 사용자 매핑 도구는 컨텐츠 전송 도구에 통합되었습니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 컨텐츠 전송 도구를 다운로드할 수 있습니다. 최신 버전에 대한 자세한 내용은 [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-1. Adobe Experience Manager를 선택하고 도구 -> **작업** -> **컨텐츠 전송**&#x200B;으로 이동합니다.
+1. Adobe Experience Manager을 선택하고 도구 -> **작업** -> **사용자 매핑**&#x200B;으로 이동합니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+
 1. **사용자 매핑 구성 만들기**&#x200B;를 클릭합니다.
 
    >[!NOTE]
    >이 단계를 건너뛰면 추출 단계 중에 사용자 및 그룹 매핑을 건너뜁니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
 
-   아래 설명에 따라 사용자 관리 API 구성의 필드를 채웁니다.
+   아래 설명된 대로 **사용자 관리 API 구성**&#x200B;의 필드를 채웁니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
 
    * **조직 ID**: 사용자를 마이그레이션하고 있는 조직의 IMS(Identity Management 시스템) 조직 ID를 입력합니다.
 
@@ -99,16 +102,15 @@ AEM as a Cloud Service에 대한 주요 변경 사항은 작성 계층에 액세
       >[!NOTE]
       >액세스 토큰이 24시간마다 만료되며 새 토큰을 만들어야 합니다. 새 토큰을 만들려면 [Adobe 개발자 콘솔](https://console.adobe.io)로 돌아가서 프로젝트를 선택하고 **사용자 관리 API**&#x200B;를 클릭한 다음 동일한 개인 키를 상자에 붙여 넣습니다.
 
-1. 위의 정보를 입력한 후 **저장**&#x200B;을 클릭합니다.
+1. 필드를 채운 후 **테스트 구성**&#x200B;을 클릭하여 사용자 관리 API 서비스에 대한 연결을 테스트합니다. 연결이 성공하면 **저장**&#x200B;을 클릭하여 구성을 저장할 수 있습니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+1. 구성을 저장한 후 구성을 선택하고 **사용자 매핑 시작**&#x200B;을 클릭합니다.
 
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
-1. **마이그레이션 세트 만들기**&#x200B;를 클릭하고 필드를 채운 다음 **저장**&#x200B;을 클릭하여 마이그레이션 세트를 만듭니다. 자세한 내용은 [컨텐츠 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)을 참조하십시오.
+1. 사용자 매핑이 완료되면 **결과**&#x200B;를 클릭하여 요약을 확인합니다.
 
-   >[!NOTE]
-   >IMS 사용자 및 그룹의 매핑 사용자를 포함하도록 전환 스위치는 기본적으로 켜져 있습니다. 이 설정을 사용하면 이 마이그레이션 세트에서 추출이 수행되면 사용자 매핑 도구가 추출 단계의 일부로 실행됩니다. 컨텐츠 전송 도구의 추출 단계를 실행하는 데 권장되는 방법입니다. 이 토글이 꺼져 있거나 사용자 매핑 구성이 생성되지 않으면 추출 단계 중에 사용자 및 그룹 매핑을 건너뜁니다.
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
-
-1. 추출 단계를 실행하려면 [컨텐츠 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool)을 참조하십시오.
+   >[!IMPORTANT]
+   >사용자 매핑이 완료되면 이동 경로를 사용하여 컨텐츠 마이그레이션 페이지로 돌아갈 수 있습니다. 사용자 매핑 카드에 상태와 타임스탬프가 표시됩니다. **컨텐츠 전송**&#x200B;을 클릭하여 추출을 실행할 마이그레이션 세트를 만듭니다. 자세한 내용은 [컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)을 참조하십시오.

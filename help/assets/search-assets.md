@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '4898'
+source-wordcount: '4897'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 작성자 | 작성자:John |
 | 위치 | 위치:NA |
 | 설명 | description:&quot;샘플 이미지&quot; |
-| 작성자 도구 | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| 작성자 도구 | creatortool:&quot;Adobe Photoshop&quot; |
 | 저작권 소유자 | copyrightowner:&quot;Adobe Systems&quot; |
 | 내용 작성자 | 기여자:John |
 | 사용 약관 | usagterms:&quot;CopyRights Reserved&quot; |

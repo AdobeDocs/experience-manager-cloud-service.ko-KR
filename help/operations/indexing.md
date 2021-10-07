@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '2061'
-ht-degree: 2%
+source-wordcount: '2155'
+ht-degree: 1%
 
 ---
 
@@ -211,11 +211,17 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 기본 인덱스의 사용자 지정이 더 이상 필요하지 않으면 기본 인덱스 정의를 복사해야 합니다. 예를 들어 `damAssetLucene-8-custom-3`을 이미 배포했지만 더 이상 사용자 지정 항목이 필요하지 않고 기본 `damAssetLucene-8` 인덱스로 다시 전환하려면 `damAssetLucene-8`의 인덱스 정의를 포함하는 `damAssetLucene-8-custom-4` 인덱스를 추가해야 합니다.
 
-## 인덱스 최적화
+## 인덱스 최적화 {#index-optimizations}
 
-Apache Jackrabbit Oak를 사용하면 유연한 인덱스 구성을 통해 검색 쿼리를 효율적으로 처리할 수 있습니다. 인덱스가 더 큰 리포지토리의 경우 특히 중요합니다. 최적화되지 않은 인덱스 및 대체 인덱스는 가능한 한 피해야 합니다. 모든 쿼리가 적절한 인덱스로 백업되었는지 확인하십시오. 적절한 인덱스가 없는 쿼리는 수천 개의 노드를 읽을 수 있으며 이 노드는 경고로 기록됩니다. 이러한 쿼리는 로그 파일을 분석하여 식별해야 인덱스 정의를 최적화할 수 있습니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)를 참조하십시오.
+Apache Jackrabbit Oak를 사용하면 유연한 인덱스 구성을 통해 검색 쿼리를 효율적으로 처리할 수 있습니다. 인덱스가 더 큰 리포지토리의 경우 특히 중요합니다. 모든 쿼리가 적절한 인덱스로 백업되었는지 확인하십시오. 적절한 인덱스가 없는 쿼리는 수천 개의 노드를 읽을 수 있으며 이 노드는 경고로 기록됩니다. 이러한 쿼리는 로그 파일을 분석하여 식별해야 인덱스 정의를 최적화할 수 있습니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes)를 참조하십시오.
 
-### AEM as a Cloud Service의 Lucene 전체 텍스트 인덱스
+### AEM as a Cloud Service의 Lucene 전체 텍스트 인덱스 {#index-lucene}
 
-전체 텍스트 인덱스 `/oak:index/lucene-2`은(는) 기본적으로 AEM 저장소의 모든 노드를 인덱싱하므로 매우 클 수 있습니다. Lucene 전체 텍스트 색인은 내부적으로 사용되지 않으며, 2021년 9월부터 AEM as a Cloud Service에 더 이상 배포되지 않습니다. 따라서 AEM as a Cloud Service의 제품 측에서 더 이상 사용되지 않으며 고객 코드를 실행하는 데 필요하지 않습니다. 일반적인 Lucene 인덱스가 있는 AEM as a Cloud Service 환경의 경우 Adobe은 이 색인을 보정하고 더 나은 최적화된 인덱스를 사용하기 위해 개별적으로 고객과 공동 작업을 수행합니다. 사용자 지정 쿼리에 이 인덱스가 필요한 경우 임시 솔루션으로서 [여기](/help/operations/indexing.md)에 설명된 대로 다른 이름(예: `/oak:index/acme.lucene-1-custom-1`)을 사용하여 이 인덱스의 사본을 만들어야 합니다.
-Adobe에게 별도로 조언하지 않는 한 이 최적화는 온-프레미스하거나 Adobe Managed Services에서 관리하는 다른 AEM 환경에는 적용되지 않습니다.
+전체 텍스트 인덱스 `/oak:index/lucene-2`은(는) 기본적으로 AEM 저장소의 모든 노드를 인덱싱하므로 매우 클 수 있습니다.  이 지수의 사용 중지 계획에 따라 Adobe은 2021년 9월부터 AEM as a Cloud Service에 더 이상 배포되지 않습니다. 따라서 AEM as a Cloud Service의 제품 측에서 더 이상 사용되지 않으며 고객 코드를 실행하는 데 필요하지 않습니다. 일반적인 Lucene 인덱스가 있는 AEM as a Cloud Service 환경의 경우 Adobe은 이 색인을 보정하고 더 나은 최적화된 인덱스를 사용하기 위해 개별적으로 고객과 공동 작업을 수행합니다. Adobe의 추가 통보 없이 고객에게 조치가 필요하지 않습니다. AEM as a Cloud Service 고객은 이 최적화와 관련하여 조치를 취해야 할 때 Adobe을 통해 정보를 받게 됩니다. 사용자 지정 쿼리에 이 인덱스가 필요한 경우 임시 솔루션으로서 [여기](/help/operations/indexing.md)에 설명된 대로 다른 이름(예: `/oak:index/acme.lucene-1-custom-1`)을 사용하여 이 인덱스의 사본을 만들어야 합니다.
+이 최적화는 온프레미스에서 호스팅되거나 Adobe Managed Services에서 관리하는 다른 AEM 환경에는 기본적으로 적용되지 않습니다.
+
+## 쿼리 최적화 {#index-query}
+
+**쿼리 성능** 도구를 사용하면 인기 있는 JCR 쿼리와 느린 JCR 쿼리를 모두 관찰할 수 있습니다. 또한 쿼리를 분석하고 그에 대한 다양한 정보를 표시할 수 있습니다. 특히 색인이 이 쿼리에 사용되고 있는지 여부를 확인할 수 있습니다.
+
+AEM의 온-프레미스와는 달리 AEM as a Cloud Service은 UI에 **쿼리 성능** 도구를 더 이상 표시하지 않습니다. 대신 이제 **쿼리** 탭의 개발자 콘솔(Cloud Manager)을 통해 사용할 수 있습니다.

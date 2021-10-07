@@ -2,7 +2,7 @@
 title: 우수 사례 분석기 사용
 description: 우수 사례 분석기 사용
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2522'
 ht-degree: 42%
@@ -91,6 +91,7 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 보고서를 다시 생성하는 동안 아래 그림과 같이 완료됨 백분율로 진행 상태가 표시됩니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
 
 
 #### 우수 사례 분석기 보고서에서 필터 사용 {#bpa-filters}

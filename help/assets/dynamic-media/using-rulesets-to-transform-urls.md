@@ -3,7 +3,7 @@ title: 규칙 세트를 사용하여 URL 변환
 description: 'Dynamic Media에서 규칙 세트를 배포하여 URL을 변환하는 방법을 알아봅니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다.'
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 자산 정
 
 1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다.
 
-   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 고객 지원에 문의하십시오.
 
 1. 다음을 수행하여 규칙 세트 파일을 업로드합니다.
 

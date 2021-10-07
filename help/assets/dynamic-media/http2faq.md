@@ -3,9 +3,9 @@ title: 콘텐츠의 HTTP2 전달 FAQ
 description: HTTP2 콘텐츠 전달에 대해 알아봅니다.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 ## Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Admin Console을 사용하여 지원 ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 사례를 만들고 HTTP/2로 전환할 요청을 수행합니다. 자동으로 수행되지 않습니다.
+[Admin Console을 사용하여 지원 ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 사례를 만들고 HTTP/2로 전환할 요청을 수행합니다. 자동으로 수행되지 않습니다.
 
 1. 지원 사례에 다음 정보를 제공하십시오.
 
@@ -70,7 +70,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
    **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
-   1. 기술 지원에서는 요청을 제출한 순서에 따라 HTTP/2 고객 대기 목록에 추가합니다.
+   1. 고객 지원 팀은 요청이 제출된 순서에 따라 HTTP/2 고객 대기 목록에 사용자를 추가합니다.
    1. Adobe이 요청을 처리할 준비가 되면 고객 지원 센터에서 전환을 조정하고 대상 날짜를 설정하도록 알려줍니다.
    1. 완료 후 알림을 받게 되며 HTTP2로 성공적으로 전환되었는지 확인할 수 있습니다.
 
@@ -78,7 +78,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 ## 언제 HTTP/2로 전환할 수 있습니까? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-요청은 기술 지원에서 수신하는 순서로 처리됩니다.
+요청은 고객 지원에서 수신하는 순서로 처리됩니다.
 
 >[!NOTE]
 >
