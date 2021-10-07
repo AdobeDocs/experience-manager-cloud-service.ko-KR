@@ -1,9 +1,10 @@
 ---
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 활용할 수 있는 강력하고 광범위한 API가 있습니다.
-source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
+exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '664'
 ht-degree: 5%
 
 ---
@@ -34,7 +35,7 @@ AEM은 많은 추가 오픈 소스 API를 사용합니다.
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | JCR(Java Content Repository)을 사용하여 컨텐츠를 저장하고 관리하는 웹 프레임워크 |
 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 최신 세계적 수준의 웹 사이트의 기반으로 사용할 확장 가능하고 고성능 계층적 Java Content Repository(JCR) 구현 |
-| [Java Content Repository](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR 버전 2.0의 사양 |
+| [Java Content Repository](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR 버전 2.0의 사양 |
 | [Apache Felix](https://felix.apache.org) | OSGi(Open Services Gateway Initiative) 프레임워크 및 서비스 플랫폼 구현 |
 
 ## API 기본 설정 지침 {#guidelines}

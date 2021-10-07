@@ -2,14 +2,14 @@
 title: AEM 기술 기반
 description: AEM이 JCR, Sling 및 OSGi와 같은 구조화되고 기본적인 기술을 제공하는 방법을 포함하여 AEM의 기술 기반에 대한 개요입니다.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
 
-# AEM 기술 기본 사항 {#aem-technical-foundations}
+# AEM 기술 기반 {#aem-technical-foundations}
 
 AEM은 검증된 확장성과 유연한 기술을 기반으로 구축된 강력한 플랫폼입니다. 이 문서에서는 AEM을 구성하는 다양한 부품에 대한 세부 개요를 제공하며 전체 스택 AEM 개발자를 위한 기술 부록으로 작성됩니다. 시작하기 안내서로 의도된 것이 아닙니다. AEM 개발을 처음 사용하는 경우 첫 번째 단계로 [AEM Sites 개발 시작 - WKND 자습서](develop-wknd-tutorial.md)를 참조하십시오.
 
@@ -32,11 +32,11 @@ AEM은 최신 컨텐츠 관리 시스템으로 표준 웹 기술을 사용합니
 * 슬링
 * OSGi
 
-## Java 컨텐츠 저장소 {#java-content-repository}
+## Java Content Repository {#java-content-repository}
 
-JCR(Java Content Repository) 표준 [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) 은 컨텐츠 리포지토리 내의 세부 수준에서 양방향 컨텐츠에 액세스할 수 있도록 공급업체에 독립적이고 구현에 독립적인 방법을 지정합니다. 사양 리드는 Adobe 리서치(스위스) AG에 의해 소유됩니다.
+JCR(Java Content Repository) 표준 [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) 은 컨텐츠 리포지토리 내의 세부 수준에서 양방향 컨텐츠에 액세스할 수 있도록 공급업체에 독립적이고 구현에 독립적인 방법을 지정합니다. 사양 리드는 Adobe 리서치(스위스) AG에 의해 소유됩니다.
 
-[JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, `javax.jcr.*`는 저장소 컨텐츠의 직접 액세스 및 조작에 사용됩니다.
+[JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, `javax.jcr.*`는 저장소 컨텐츠의 직접 액세스 및 조작에 사용됩니다.
 
 AEM은 JCR을 기반으로 구축됩니다.
 
@@ -58,7 +58,7 @@ Sling을 사용하면 렌더링할 컨텐츠의 유형이 첫 번째 처리 고�
 
 Sling을 사용하여 개발하는 첫 번째 단계는 [15분 내에 Sling 검색](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html)을 참조하십시오.
 
-다음 다이어그램에서는 Sling 스크립트 해상도에 대해 설명합니다.이 보고서는 HTTP 요청에서 컨텐츠 노드로, 컨텐츠 노드에서 리소스 유형으로, 리소스 유형에서 스크립트로 가져오는 방법과 사용 가능한 스크립팅 변수를 보여줍니다.
+다음 다이어그램에서는 Sling 스크립트 해상도에 대해 설명합니다. 이 보고서는 HTTP 요청에서 컨텐츠 노드로, 컨텐츠 노드에서 리소스 유형으로, 리소스 유형에서 스크립트로 가져오는 방법과 사용 가능한 스크립팅 변수를 보여줍니다.
 
 ![Apache Sling 스크립트 해상도 이해](assets/sling-cheatsheet-01.png)
 
@@ -66,7 +66,7 @@ Sling을 사용하여 개발하는 첫 번째 단계는 [15분 내에 Sling 검�
 
 ![SlingPostServlet 사용](assets/sling-cheatsheet-02.png)
 
-### Sling은 컨텐츠 중심 {#sling-is-content-centric}
+### Sling은 컨텐츠 중심의 {#sling-is-content-centric}
 
 Sling은 *컨텐츠 중심의*&#x200B;입니다. 즉, 각(HTTP) 요청이 JCR 리소스(저장소 노드) 형식의 컨텐츠에 매핑될 때 처리에 중점을 둡니다.
 
@@ -77,10 +77,10 @@ Sling은 *컨텐츠 중심의*&#x200B;입니다. 즉, 각(HTTP) 요청이 JCR �
 
 Sling은 컨텐츠 중심 철학으로 REST 기반 서버를 구현하므로 웹 애플리케이션 프레임워크에 새로운 개념을 제공합니다. 장점은 다음과 같습니다.
 
-* 표면에만 있는 것이 아니라 매우 RESTful;리소스 및 표현은 서버 내부에서 올바르게 모델링됩니다
+* 표면에만 있는 것이 아니라 매우 RESTful; 리소스 및 표현은 서버 내부에서 올바르게 모델링됩니다
 * 하나 이상의 데이터 모델 제거
    * 다른 컨텐츠 관리 프레임워크를 사용하려면 리소스에 액세스하려면 URL 구조, 비즈니스 객체, DB 스키마가 필요할 수 있습니다.
-   * Sling을 사용하면 다음과 같이 줄어듭니다.URL = resource = JCR 구조
+   * Sling을 사용하면 다음과 같이 줄어듭니다. URL = resource = JCR 구조
 
 ### URL 분해 {#url-decomposition}
 
@@ -100,13 +100,13 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 * **프로토콜**  - HTTPS
 * **호스트**  - 사이트의 도메인
-* **컨텐츠 경로**  - 렌더링할 컨텐츠를 지정하는 경로 및 확장과 함께 사용됩니다.이 예제에서는  `tools/spy.html`
-* **선택기**  - 컨텐츠를 렌더링하는 대체 방법에 사용됩니다.이 예에서는 A4 형식의 프린터 친화적인 버전
-* **확장**  - 컨텐츠 형식;렌더링에 사용할 스크립트도 지정합니다
+* **컨텐츠 경로**  - 렌더링할 컨텐츠를 지정하는 경로 및 확장과 함께 사용됩니다. 이 예제에서는  `tools/spy.html`
+* **선택기**  - 컨텐츠를 렌더링하는 대체 방법에 사용됩니다. 이 예에서는 A4 형식의 프린터 친화적인 버전
+* **확장**  - 컨텐츠 형식; 렌더링에 사용할 스크립트도 지정합니다
 * **접미사**  - 추가 정보를 지정하는 데 사용할 수 있음
 * **매개 변수**  - 동적 컨텐츠에 필요한 모든 매개 변수
 
-#### URL에서 컨텐츠 및 스크립트 {#from-url-to-content-and-scripts} 까지입니다.
+#### URL에서 콘텐츠 및 스크립트에 이르기까지 {#from-url-to-content-and-scripts}
 
 URL 분해의 원칙 사용:
 
@@ -123,13 +123,13 @@ Sling을 사용하면 특정 엔티티를 렌더링하는 스크립트를 지정
 
 요청이 분류되고 필요한 정보가 추출됩니다. 저장소가 요청된 리소스(컨텐츠 노드)에 대해 검색됩니다.
 
-* 첫 번째 Sling은 요청에 지정된 위치에 노드가 있는지 확인합니다.예`../content/corporate/jobs/developer.html`
-* 노드를 찾을 수 없으면 확장이 삭제되고 검색이 반복됩니다.예`../content/corporate/jobs/developer`
+* 첫 번째 Sling은 요청에 지정된 위치에 노드가 있는지 확인합니다. 예 `../content/corporate/jobs/developer.html`
+* 노드를 찾을 수 없으면 확장이 삭제되고 검색이 반복됩니다. 예 `../content/corporate/jobs/developer`
 * 노드를 찾을 수 없으면 Sling은 http 코드 404(찾을 수 없음)를 반환합니다.
 
 Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 기능입니다.
 
-### 스크립트 {#locating-the-script} 찾기
+### 스크립트 찾기 {#locating-the-script}
 
 적절한 리소스(컨텐츠 노드)가 있으면 **sling 리소스 유형**&#x200B;이 추출됩니다. 컨텐츠 렌더링에 사용할 스크립트를 찾는 경로입니다.
 
@@ -146,7 +146,7 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 
 주목할 다른 몇 가지 사항은 다음과 같습니다.
 
-* 메서드(GET, POST)이 필요한 경우 HTTP 사양에 따라 대문자로 지정됩니다(예: ).`jobs.POST.esp`
+* 메서드(GET, POST)이 필요한 경우 HTTP 사양에 따라 대문자로 지정됩니다(예: ). `jobs.POST.esp`
 * 다양한 스크립트 엔진이 지원되지만 일반적으로 권장되는 스크립트는 HTL 및 JavaScript입니다.
 
 지정된 AEM 인스턴스에서 지원하는 스크립트 엔진 목록은 Felix Management Console( `http://<host>:<port>/system/console/slingscripting`)에 나열되어 있습니다.
@@ -154,28 +154,28 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 앞의 예를 사용하여 `sling:resourceType`이 `hr/jobs`인 경우 다음을 수행합니다.
 
 * `.html`(기본 요청 유형, 기본 형식)으로 끝나는 GET/HEAD 요청 및 URL
-   * 스크립트는 `/apps/hr/jobs/jobs.esp`;`sling:resourceType` 의 마지막 섹션에서 파일 이름을 구성합니다.
+   * 스크립트는 `/apps/hr/jobs/jobs.esp`; `sling:resourceType` 의 마지막 섹션에서 파일 이름을 구성합니다.
 * POST 요청(GET/HEAD을 제외한 모든 요청 유형, 메서드 이름은 대문자여야 함)
    * POST은 스크립트 이름에 사용됩니다.
    * 스크립트는 `/apps/hr/jobs/jobs.POST.esp`입니다.
 * `.html`으로 끝나지 않고 다른 형식의 URL입니다.
    * 예 `../content/corporate/jobs/developer.pdf`
-   * 스크립트는 `/apps/hr/jobs/jobs.pdf.esp`;접미사가 스크립트 이름에 추가됩니다.
+   * 스크립트는 `/apps/hr/jobs/jobs.pdf.esp`; 접미사가 스크립트 이름에 추가됩니다.
 * 선택기가 있는 URL
    * 선택기를 사용하여 동일한 콘텐츠를 대체 형식으로 표시할 수 있습니다. 예를 들어 프린터에 적합한 버전, rss 피드 또는 요약이 있습니다.
-   * 선택기가 `print`일 수 있는 프린터 친화형 버전을 살펴보는 경우`../content/corporate/jobs/developer.print.html`
-   * 스크립트는 `/apps/hr/jobs/jobs.print.esp`;선택기가 스크립트 이름에 추가됩니다.
+   * 선택기가 `print`일 수 있는 프린터 친화형 버전을 살펴보는 경우 `../content/corporate/jobs/developer.print.html`
+   * 스크립트는 `/apps/hr/jobs/jobs.print.esp`; 선택기가 스크립트 이름에 추가됩니다.
 * `sling:resourceType`이 정의되지 않은 경우:
    * 컨텐츠 경로는 적절한 스크립트를 검색하는 데 사용됩니다(경로 기반 `ResourceTypeProvider`이 활성화된 경우).
    * 예를 들어 `../content/corporate/jobs/developer.html`에 대한 스크립트는 `/apps/content/corporate/jobs/`에 검색을 생성합니다.
    * 기본 노드 유형이 사용됩니다.
 * 스크립트를 전혀 찾을 수 없으면 기본 스크립트가 사용됩니다.
-   * 기본 표현물은 현재 일반 텍스트(`.txt`), HTML(`.html`) 및 JSON(`.json`)으로 지원되며, 이 모든 표현물이 노드의 속성(적절한 형식)을 나열할 수 있습니다. 확장 `.res` 또는 요청 확장 없이 요청에 대한 기본 변환은 리소스를 스풀(가능한 경우)하는 것입니다.
+   * 기본 표현물은 현재 일반 텍스트(`.txt`), HTML(`.html`) 및 JSON(`.json`)으로 지원되며, 이 모든 표현물이 노드의 속성(적절한 형식)을 나열합니다. 확장 `.res` 또는 요청 확장 없이 요청에 대한 기본 변환은 리소스를 스풀(가능한 경우)하는 것입니다.
 * http 오류 처리(코드 403 또는 404)의 경우 Sling은 다음 중 하나에서 스크립트를 찾습니다.
    * 사용자 지정된 스크립트의 `/apps/sling/servlet/errorhandler` 위치
    * 또는 표준 스크립트 `/libs/sling/servlet/errorhandler/404.jsp`의 위치
 
-지정된 요청에 여러 스크립트가 적용되는 경우 가장 일치하는 스크립트가 선택됩니다. 매치가 구체적일수록 효과적이다.즉, 요청 확장이나 메서드 이름이 일치하는 것과 관계없이 더 많은 선택기가 더 잘 일치합니다.
+지정된 요청에 여러 스크립트가 적용되는 경우 가장 일치하는 스크립트가 선택됩니다. 매치가 구체적일수록 효과적이다. 즉, 요청 확장이나 메서드 이름이 일치하는 것과 관계없이 더 많은 선택기가 더 잘 일치합니다.
 
 예를 들어 리소스에 액세스하기 위한 요청을 고려합니다
 
@@ -228,22 +228,22 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 
 이것은 `/y`에 `sling:resourceSuperType` 속성이 있지만 `/x`은 이 없으므로 해당 리소스 유형에서 상위 형식이 가져오므로 발생합니다.
 
-#### Sling 스크립트를 직접 {#sling-scripts-cannot-be-called-directly} 호출할 수 없습니다.
+#### Sling 스크립트를 직접 호출할 수 없습니다. {#sling-scripts-cannot-be-called-directly}
 
-Sling 내에서 스크립트를 직접 호출할 수 없습니다. 이렇게 하면 REST 서버의 엄격한 개념이 중단됩니다.리소스와 표현을 혼합합니다.
+Sling 내에서 스크립트를 직접 호출할 수 없습니다. 이렇게 하면 REST 서버의 엄격한 개념이 중단됩니다. 리소스와 표현을 혼합합니다.
 
 표현(스크립트)을 직접 호출하는 경우 스크립트 내에 리소스를 숨겨 프레임워크(Sling)가 더 이상 이 리소스에 대해 알지 못합니다. 따라서 특정 기능을 잃게 됩니다.
 
 * 다음을 포함하여 GET 이외의 http 메서드 자동 처리:
    * sling 기본 구현으로 처리되는 POST, PUT, DELETE
    * `sling:resourceType` 위치의 `POST.jsp` 스크립트
-* 코드 아키텍처는 더 이상 깨끗하거나 구조화되지 않습니다.대규모 개발을 위한 가장 중요한 요소
+* 코드 아키텍처는 더 이상 깨끗하거나 구조화되지 않습니다. 대규모 개발을 위한 가장 중요한 요소
 
 ### Sling API {#sling-api}
 
 Sling API 패키지, `org.apache.sling.*` 및 태그 라이브러리를 사용합니다.
 
-### sling:include {#referencing-existing-elements-using-sling-include} 를 사용하여 기존 요소 참조
+### sling:include를 사용하여 기존 요소 참조 {#referencing-existing-elements-using-sling-include}
 
 마지막으로 고려해야 할 사항은 스크립트 내에 기존 요소를 참조해야 하는 것입니다.
 
@@ -280,19 +280,19 @@ OSGi(Open Services Gateway Initiative)는 모듈식 애플리케이션 및 라�
 * 현재 상태를 참조하십시오
 * 특정 번들에 대한 자세한 정보(예: 기호 이름, 버전, 위치 등)에 액세스합니다
 
-자세한 내용은 [AEM as a Cloud Service에 대한 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
+자세한 내용은 [AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)에 대한 OSGi 구성 을 참조하십시오.
 
-## 저장소 내의 구조 {#structure-within-the-repository}
+## 리포지토리 내의 구조 {#structure-within-the-repository}
 
 다음 목록은 리포지토리 내에 표시되는 구조에 대한 개요를 제공합니다.
 
-* `/apps` - 응용 프로그램 관련웹 사이트와 관련된 구성 요소 정의를 포함합니다. 개발하는 구성 요소는 `/libs/core/wcm/components`에서 사용할 수 있는 기본 구성 요소를 기반으로 할 수 있습니다.
+* `/apps` - 응용 프로그램 관련 웹 사이트와 관련된 구성 요소 정의를 포함합니다. 개발하는 구성 요소는 `/libs/core/wcm/components`에서 사용할 수 있는 기본 구성 요소를 기반으로 할 수 있습니다.
 * `/content` - 웹 사이트용으로 만든 컨텐츠.
 * `/etc`
 * `/home` - 사용자 및 그룹 정보.
 * `/libs` - AEM의 핵심에 속하는 라이브러리 및 정의. `/libs`의 하위 폴더는 기본 제공 AEM 기능을 나타냅니다. `/libs`의 컨텐츠는 수정할 수 없습니다. 웹 사이트에 대한 기능은 `/apps` 아래에 있어야 합니다.
 * `/tmp` - 임시 작업장
-* `/var` - 시스템에 의해 변경되고 업데이트되는 파일감사 로그, 통계, 이벤트 처리 등.
+* `/var` - 시스템에 의해 변경되고 업데이트되는 파일 감사 로그, 통계, 이벤트 처리 등.
 
 >[!CAUTION]
 >

@@ -2,9 +2,9 @@
 title: Query Builder 설명 참조
 description: Query Builder API에 대한 설명 참조입니다.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2218'
 ht-degree: 2%
 
 ---
@@ -23,12 +23,12 @@ ht-degree: 2%
 
 * **`p.offset`** - 결과 페이지의 시작을 나타내는 숫자(즉, 건너뛸 항목 수)
 * **`p.limit`** - 페이지 크기를 나타내는 숫자
-* **`p.guessTotal`** - 권장:비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오.최대 계산할 최대 총계를 나타내는 숫자(예: 1000, 대략적인 크기와 더 작은 결과를 위한 정확한 숫자를 사용자에게 제공하는 숫자) 또는 필요한 최소값 `true` 의  `p.offset` +  `p.limit`
+* **`p.guessTotal`** - 권장: 비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오. 최대 계산할 최대 총계를 나타내는 숫자(예: 1000, 대략적인 크기와 더 작은 결과를 위한 정확한 숫자를 사용자에게 제공하는 숫자) 또는 필요한 최소값 `true` 의  `p.offset` +  `p.limit`
 * **`p.excerpt`** - 로 설정하면  `true`결과에 전체 텍스트 발췌문을 포함합니다
 * **`p.hits`** - (JSON 서블릿에 대해서만) 히트가 JSON으로 기록되는 방식(이러한 표준 방식(ResultHitWriter 서비스를 통해 확장 가능)을 선택합니다.
    * **`simple`** -  `path`,  `title`,  `lastmodified`,  `excerpt` (설정된 경우)과 같은 최소 항목
-   * **`full`** - 히트의 경로를  `jcr:path` 나타내는 노드의 sling JSON 렌더링:기본적으로 노드의 직접 속성을 나열하고, 0은 전체 무한 하위 트리를 의미함 `p.nodedepth=N`과 함께 더 깊은 트리를 포함합니다.지정된 결과 항목 `p.acls=true` 에 현재 세션의 JCR 권한을 포함하도록 추가합니다(매핑: `create` =  `add_node`,  `modify`  =  `set_property`,  `delete`  =  `remove`)
-   * **`selective`** - 상대 경로 목록 `p.properties`으로 구분된 공간(URL에서 사용) 목록인  `+` 에 지정된 속성만상대 경로에 깊이가  `>1` 있으면 자식 개체로 표시됩니다.특수  `jcr:path` 속성에는 히트의 경로가 포함됩니다
+   * **`full`** - 히트의 경로를  `jcr:path` 나타내는 노드의 sling JSON 렌더링: 기본적으로 노드의 직접 속성을 나열하고, 0은 전체 무한 하위 트리를 의미함 `p.nodedepth=N`과 함께 더 깊은 트리를 포함합니다. 지정된 결과 항목 `p.acls=true` 에 현재 세션의 JCR 권한을 포함하도록 추가합니다(매핑:  `create` =  `add_node`,  `modify`  =  `set_property`,  `delete`  =  `remove`)
+   * **`selective`** - 상대 경로 목록 `p.properties`으로 구분된 공간(URL에서 사용) 목록인  `+` 에 지정된 속성만 상대 경로에 깊이가  `>1` 있으면 자식 개체로 표시됩니다. 특수  `jcr:path` 속성에는 히트의 경로가 포함됩니다
 
 ### 그룹 {#group}
 
@@ -76,7 +76,7 @@ group.2_group.type=dam:Asset
 
 * **`orderby`** - 선행 @(예:  `@jcr:lastModified` 또는  `@jcr:content/jcr:title`)로 표시된 JCR 속성 이름 또는 정렬할 쿼리의 다른 설명(예:  `2_property`)으로 표시됩니다
 * **`sort`** - 정렬 방향, 내림차순 또 `desc` 는 오름차순 `asc` 에 대해 정렬(기본값)
-* **`case`** - 로 설정하면  `ignore` 대소문자를 구분하지 않게 됩니다. 이것은 앞에 오는  `a` 것을 의미합니다 `B`.비워 두거나 비워 둘 경우 정렬은 대/소문자를 구분합니다. 즉,  `B` 앞에 옵니다  `a`
+* **`case`** - 로 설정하면  `ignore` 대소문자를 구분하지 않게 됩니다. 이것은 앞에 오는  `a` 것을 의미합니다 `B`. 비워 두거나 비워 둘 경우 정렬은 대/소문자를 구분합니다. 즉,  `B` 앞에 옵니다  `a`
 
 ## 설명 {#predicates}
 
@@ -167,13 +167,13 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-이 조건에서는 현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+이 조건에서는 현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 필터링 전용 조건이며 검색 색인을 활용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 
 #### 속성 {#properties-7}
 
-* **`hasPermission`** - 현재 사용자 세션이 해당 노드에 대해 모두 가져야 하는 쉼표로 구분된 JCR 권한예 `jcr:write`:  `jcr:modifyAccessControl`
+* **`hasPermission`** - 현재 사용자 세션이 해당 노드에 대해 모두 가져야 하는 쉼표로 구분된 JCR 권한 예 `jcr:write`:  `jcr:modifyAccessControl`
 
 ### 언어 {#language}
 
@@ -219,7 +219,7 @@ group.2_group.type=dam:Asset
 
 #### 속성 {#properties-11}
 
-* **`nodename`** - 와일드카드가 가능한 노드 이름 패턴: `*` = any 또는 no char,  `?`  = any char,  `[abc]`  = only chars
+* **`nodename`** - 와일드카드가 가능한 노드 이름 패턴:  `*` = any 또는 no char,  `?`  = any char,  `[abc]`  = only chars
 
 ### 만료되지 않음 {#notexpired}
 
@@ -246,7 +246,7 @@ group.2_group.type=dam:Asset
    * `exact` 속성에 따라 전체 하위 트리가 일치하거나(xpath에 `//*` 추가 등과 같이, 기본 경로가 포함되지 않지만) 와일드카드(`*`)를 포함할 수 있는 정확한 경로 일치만 일치시킵니다.
       * 기본값은 입니다.`true`
    * `self`속성이 설정되면 기본 노드를 포함하는 전체 하위 트리가 검색됩니다.
-* **`exact`** -  `exact` 가  `true`이면 정확한 경로가 일치해야 하지만, 단순 와일드카드(`*`), 해당 일치 이름( `/`)이 포함될 수 있지만,(기본값)  `false` 모든 하위 항목이 포함됩니다(선택 사항).
+* **`exact`** -  `exact` 가  `true`이면 정확한 경로가 일치해야 하지만, 단순 와일드카드(`*`), 해당 일치 이름( `/`)이 포함될 수 있지만, (기본값)  `false` 모든 하위 항목이 포함됩니다(선택 사항).
 * **`flat`** - 직접 1차 하위 구성요소만 검색합니다(xpath `/*` 에 추가 등).  `exact` 이 true가 아닌 경우에만 사용됨, 선택 사항)
 * **`self`** - 하위 트리를 검색하지만 경로(와일드카드 없음)로 제공된 기본 노드를 포함합니다.
 
@@ -259,7 +259,7 @@ group.2_group.type=dam:Asset
 #### 속성 {#properties-15}
 
 * **`property`** - 속성의 상대 경로(예:  `jcr:title`
-* **`value`** - 속성을 확인하는 값입니다.는 JCR 속성 유형을 문자열 전환으로 따릅니다
+* **`value`** - 속성을 확인하는 값입니다. 는 JCR 속성 유형을 문자열 전환으로 따릅니다
 * **`N_value`** -  `1_value`,  `2_value`, ...를 사용하여 여러 값(기본적으로 와 결합되어  `OR` 있는 경우)을 확인할 수  `AND` 있습니다 `and=true`.
 * **`and`** - 여러 값( `true` )을 `N_value`와 결합하려면 로 설정합니다.  `AND`
 * **`operation`**
@@ -371,7 +371,7 @@ group.2_group.type=dam:Asset
 
 * **`tagsearch`** - 태그 제목에서 검색할 키워드
 * **`property`** - 고려할 속성(또는 속성의 상대 경로)(기본값  `cq:tags`
-* **`lang`** - 현지화된 특정 태그 제목으로만 검색할 수 있습니다(예: `de`)
+* **`lang`** - 현지화된 특정 태그 제목으로만 검색할 수 있습니다(예:  `de`)
 * **`all`** - 전체 태그 전체 텍스트, 즉 모든 제목, 설명 등을 검색하는 부울 값 (`lang`보다 우선함)
 
 ### 유형 {#type}
