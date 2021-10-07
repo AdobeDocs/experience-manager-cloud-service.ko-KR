@@ -5,7 +5,7 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 45%
@@ -38,11 +38,11 @@ ht-degree: 45%
       + [개요](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [컨텐츠 전송 도구 사전 요구 사항](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [대용량 컨텐츠 저장소 처리](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + 사용자 매핑 도구 {#user-mapping-tool}
          + [개요](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
          + [중요 고려 사항](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
          + [사용자 매핑 도구 사용](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
-      + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + 코드 리팩터링 도구 {#refactoring-tools}
    + [통합 경험](/help/move-to-cloud-service/unified-experience.md)
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
