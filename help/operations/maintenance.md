@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service의 유지 관리 작업
 description: AEM as a Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
+source-git-commit: 3e0de69033883bb77fae5be83d47167663bea3fd
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '940'
 ht-degree: 2%
 
 ---
@@ -14,16 +14,9 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="유지 관리 작업"
->abstract="유지 관리 작업은 저장소를 최적화하기 위해 일정에 따라 실행되는 프로세스입니다. AEM을 Cloud Service으로 사용하면 고객이 유지 관리 작업의 운영 속성을 구성할 필요가 최소화됩니다. 고객은 애플리케이션 수준의 문제에 집중할 수 있으므로 인프라 운영을 Adobe에 집중할 수 있습니다."
->additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="AEM 유지 관리 안내서"
->additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="작업 대시보드 유지 관리 작업"
+>abstract="유지 관리 작업은 저장소를 최적화하기 위해 일정에 따라 실행되는 프로세스입니다. AEM as a Cloud Service을 사용하면 고객이 유지 관리 작업의 운영 속성을 구성할 필요가 거의 없습니다. 고객은 애플리케이션 수준의 문제에 집중할 수 있으므로 인프라 운영을 Adobe에 집중할 수 있습니다."
 
-유지 관리 작업은 저장소를 최적화하기 위해 일정에 따라 실행되는 프로세스입니다. AEM을 Cloud Service으로 사용하면 고객이 유지 관리 작업의 운영 속성을 구성할 필요가 최소화됩니다. 고객은 애플리케이션 수준의 문제에 집중할 수 있으므로 인프라 운영을 Adobe에 집중할 수 있습니다.
-
-유지 관리 작업에 대한 자세한 내용은 다음 페이지를 참조하십시오.
-
-* [AEM 유지 관리 안내서](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
-* [작업 대시보드 유지 관리 작업](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
+유지 관리 작업은 저장소를 최적화하기 위해 일정에 따라 실행되는 프로세스입니다. AEM as a Cloud Service을 사용하면 고객이 유지 관리 작업의 운영 속성을 구성할 필요가 거의 없습니다. 고객은 애플리케이션 수준의 문제에 집중할 수 있으므로 인프라 운영을 Adobe에 집중할 수 있습니다.
 
 ## 유지 관리 작업 구성
 
@@ -73,7 +66,7 @@ ht-degree: 2%
     <p><strong>windowSchedule=weekly</strong> (이 값은 변경할 수 없음)</p>
     <p><strong>windowStartTime=HH:</strong> 24시간 클럭으로 사용 주별 유지 관리 기간과 연관된 유지 관리 작업 실행 시기를 정의합니다.</p>
     <p><strong>windowEndTime=HH:</strong> 24시간 클럭으로 사용 아직 완료되지 않은 경우 주간 유지 관리 창과 연관된 유지 관리 작업이 실행을 중지해야 하는 시기를 정의합니다.</p>
-    <p><strong>windowScheduleWeekle= 1-7에서 2개의 값 배열(예:[5,5])</strong>  배열의 첫 번째 값은 작업이 예약된 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime에 의해 제어됩니다.</p>
+    <p><strong>windowScheduleWeekle= 1-7에서 2개의 값 배열(예: [5,5])</strong>  배열의 첫 번째 값은 작업이 예약된 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime에 의해 제어됩니다.</p>
     </td>
   </tr>
   <tr>
@@ -84,7 +77,7 @@ ht-degree: 2%
     <p><strong>windowSchedule=daily</strong> (이 값은 변경할 수 없습니다.)</p>
     <p><strong>windowStartTime=HH:</strong> 24시간 클럭으로 사용 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
     <p><strong>windowEndTime=HH:</strong> 24시간 클럭으로 사용 아직 완료되지 않은 경우 월별 유지 관리 창과 연관된 유지 관리 작업이 실행을 중지해야 하는 시기를 정의합니다.</p>
-    <p><strong>windowScheduleWeekle=1-7에서 2개 값의 배열(예:[5,5])</strong>  배열의 첫 번째 값은 작업이 예약된 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime에 의해 제어됩니다.</p>
+    <p><strong>windowScheduleWeekle=1-7에서 2개 값의 배열(예: [5,5])</strong>  배열의 첫 번째 값은 작업이 예약된 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime에 의해 제어됩니다.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0을 사용하여 월의 첫 번째 주에 예약하거나 월의 마지막 주에 예약하십시오. 값이 없을 경우, 매달 windowScheduleWeekday에 의해 관리되는 방식으로 매일 일자리를 예약할 수 있습니다.</p>
     </td> 
     </tr>
