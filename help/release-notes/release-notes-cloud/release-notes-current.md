@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 노트.'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
+source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1476'
 ht-degree: 3%
 
 ---
@@ -75,13 +75,13 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Microsoft Dynamics 및 Salesforce와 AEM Forms을 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce용 기본 데이터 소스 구성 및 데이터 모델을 제공하므로 개발자가 적응형 양식의 데이터 소스로 Microsoft Dynamics 및 Salesforce를  [보다 빠르고 쉽게 구성할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **DocuSign을 사용하여 적응형 양식에 전자 서명:**  DocuSign을 사용하여 적응형 양식에 전자 서명할 수 있습니다. 이 서비스는 적응형 양식과 함께 DocuSign을 사용하기 위한 사용자 지정 제출 작업을 제공합니다. 소프트웨어 배포에 있는 패키지를 설치하여 제출 작업을 가져올 수 있습니다.
+* **DocuSign을 사용하여 적응형 양식에 전자 서명:**  DocuSign을 사용하여 적응형 양식에 전자 서명할 수 있습니다. 이 서비스는 적응형 양식과 함께 DocuSign을 사용하기 위한 사용자 지정 제출 작업을 제공합니다.
 
 ### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-prerelease}
 
-* **Unified Storage Connector:** Unified Storage Connector를 사용하여 고객 관리 리포지토리에서 처리 중인 데이터를 외부화합니다. 예를 들어 다음 작업을 수행할 수 있습니다.
-   * Forms Portal의 저장 및 재개 기능을 활성화하고 고객 관리 데이터 저장소에 적응형 양식 초안을 저장합니다.
-   * 고객 관리 저장소에 SPD(중요 개인 데이터)가 포함된 처리 중인 AEM 워크플로우 데이터(AEM Workflow 변수 데이터)를 저장합니다.
+* **Unified Storage Connector:** Unified Storage Connector를 사용하여 고객 관리 리포지토리에서 처리 중인 데이터를 외부화합니다. 예를 들어, 고객 관리 저장소에 SPD(중요 개인 데이터)를 포함하는 처리 중인 AEM 워크플로우 데이터(AEM 워크플로우 변수 데이터)를 저장할 수 있습니다.
+
+   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) APIshelp에서는 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성합니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
    * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
