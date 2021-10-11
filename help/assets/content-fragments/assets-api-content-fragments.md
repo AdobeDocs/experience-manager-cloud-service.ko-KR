@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager as a Assets HTTP API에서 Cloud Service 컨텐츠 조각 지원
+title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 컨텐츠 조각 지원
 description: AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1951'
 ht-degree: 2%
 
 ---
@@ -26,9 +26,9 @@ AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐�
 >
 >Assets HTTP API의 현재 구현은 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 아키텍처 스타일을 기반으로 합니다.
 
-[Assets REST API](/help/assets/mac-api-assets.md)를 사용하면 Adobe Experience Manager 개발자를 Cloud Service으로 사용하여 CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 컨텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
+[Assets REST API](/help/assets/mac-api-assets.md)를 사용하면 Adobe Experience Manager as a Cloud Service 개발자가 CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 컨텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
-API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager을 헤드리스 CMS(Content Management System)로 Cloud Service으로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다.
+API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Cloud Service을 헤드리스 CMS(Content Management System)로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다.
 
 예를 들어, [단일 페이지 애플리케이션(SPA)](/help/implementing/developing/hybrid/introduction.md), 프레임워크 기반 또는 사용자 지정에서는 HTTP API를 통해 제공되는 컨텐츠(종종 JSON 형식)가 필요합니다.
 
@@ -50,7 +50,7 @@ Assets REST API를 사용하면 기존 자산, 컨텐츠 조각 및 폴더를 �
 
 ## 전제 조건 {#prerequisites}
 
-Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전으로 즉시 설치할 때마다 사용할 수 있습니다.
+Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전을 바로 설치할 때마다 사용할 수 있습니다.
 
 ## 주요 개념 {#key-concepts}
 
@@ -69,7 +69,7 @@ Assets REST API는 AEM 인스턴스 내에 저장된 자산에 대한 [REST](htt
 >액세스 권한:
 >
 >* `/api/assets` **은** 선택기를 사용할 필요가  `.model` 없습니다.
->* `/content/path/to/page` **** 를 사용하려면 선택기를 사용해야  `.model` 합니다.
+>* `/content/path/to/page` **** 선택기를 사용해야  `.model` 합니다.
 
 
 HTTP 메서드는 실행할 작업을 결정합니다.
@@ -256,7 +256,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 
 >[!NOTE]
 >
->자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### 읽기/전달 {#read-delivery}
 
@@ -374,7 +374,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 
 자세한 API 참조는 다음을 참조하십시오.
 
-* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
 
