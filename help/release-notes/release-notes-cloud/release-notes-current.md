@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 노트.'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
+source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1486'
 ht-degree: 3%
 
 ---
@@ -197,7 +197,7 @@ Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 아래 나열된 다음 기능을 포함하여 간소화된 사용자 경험을 통해 사용자 매핑이 개선되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)을 참조하십시오.
+* 아래 나열된 다음 기능을 포함하여 간소화된 사용자 경험을 통해 사용자 매핑이 개선되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)을 참조하십시오.
    * 사용자 매핑을 실행하기 전에 사용자 관리 API에 대한 연결을 테스트합니다
    * 오류를 올바르게 건너뛰고 사용자 매핑 활동을 계속 진행합니다
    * 액세스 토큰이 만료된 경우(24시간 후) 사용자 매핑이 더 이상 실패하지 않습니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.
