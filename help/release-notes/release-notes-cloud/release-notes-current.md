@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 노트.'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 3%
@@ -210,14 +210,13 @@ Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
 
 ### 릴리스 날짜 {#release-date-bpa-latest}
 
-Best Practices Analyzer v2.1.18 릴리스 날짜는 2021년 9월 2일입니다.
+Best Practices Analyzer v2.1.20 릴리스 날짜는 2021년 10월 5일입니다.
 
 ### 새로운 기능 {#what-is-new}
 
-* 총 노드 수를 검색하고 보고하는 기능
+* 노드 이름 길이를 감지하고 보고할 수 있습니다.
 
-* 노드 저장소 유형 및 크기를 감지하고 보고하는 기능.
+* 총 인덱스 크기를 감지하고 보고하는 기능.
 
-### 버그 수정 {#bug-fixes-bpa}
+* 원래 표현물이 누락된 자산을 검색하고 보고하는 기능.
 
-* BPA가 Commerce Integration Framework의 존재를 잘못 감지했습니다.
