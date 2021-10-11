@@ -1,19 +1,19 @@
 ---
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: AEM Headless Developer 여정의 이 부분에서 REST API를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다.
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
 
 ---
 
-
-# AEM Assets API {#update-your-content}를 통해 컨텐츠를 업데이트하는 방법
+# AEM Assets API를 통해 콘텐츠를 업데이트하는 방법 {#update-your-content}
 
 [AEM Headless 개발자 여정의 이 부분에서](overview.md)는 REST API를 사용하여 컨텐츠 조각에 액세스하고 업데이트하는 방법을 알아봅니다.
 
-## 지금까지 {#story-so-far} 이야기
+## 지금까지 그 이야기 {#story-so-far}
 
 AEM 헤드리스 여정의 이전 문서에서, [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](access-your-content.md) AEM GraphQL API를 통해 AEM에서 헤드리스 컨텐츠에 액세스하는 방법을 배웠으며 이제 다음을 수행해야 합니다.
 
@@ -25,8 +25,8 @@ AEM 헤드리스 여정의 이전 문서에서, [AEM 배달 API를 통해 콘텐
 
 ## 목표 {#objective}
 
-* **대상**:고급
-* **목표**:REST API를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다.
+* **대상**: 고급
+* **목표**: REST API를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다.
    * AEM Assets HTTP API 소개.
    * API에서 컨텐츠 조각 지원을 도입하고 논의합니다.
    * API의 세부 사항을 보여줍니다.
@@ -35,7 +35,7 @@ AEM 헤드리스 여정의 이전 문서에서, [AEM 배달 API를 통해 콘텐
   * Look at sample code to see how things work in practice.
 -->
 
-## 컨텐츠 조각 {#why-http-api}에 Assets HTTP API가 필요한 이유는 무엇입니까?
+## 컨텐츠 조각에 Assets HTTP API가 필요한 이유는 무엇입니까 {#why-http-api}
 
 헤드리스 여정의 이전 단계에서 AEM GraphQL API를 사용하여 쿼리를 사용하여 콘텐츠를 검색하는 방법을 알아보았습니다.
 
@@ -43,7 +43,7 @@ AEM 헤드리스 여정의 이전 문서에서, [AEM 배달 API를 통해 콘텐
 
 Assets HTTP API를 사용하면 **컨텐츠를 읽을 수 있지만, GraphQL API에서는 사용할 수 없는 작업 -** Create **,** Update **및** Delete **컨텐츠를 만들 수도 있습니다.**
 
-Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전으로 즉시 설치할 때마다 사용할 수 있습니다.
+Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전을 바로 설치할 때마다 사용할 수 있습니다.
 
 ## 자산 HTTP API {#assets-http-api}
 
@@ -54,7 +54,7 @@ Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전으�
 
 Assets HTTP API의 현재 구현은 **REST** 아키텍처 스타일을 기반으로 하며, **CRUD** 작업(만들기, 읽기, 업데이트, 삭제)을 통해 컨텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
-이러한 작업을 사용하여 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager을 헤드리스 CMS(Content Management System)로 Cloud Service으로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정 환경에서는 API를 통해 제공되는 컨텐츠가 필요합니다(일반적으로 JSON 형식).
+이러한 작업을 사용하여 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Cloud Service을 헤드리스 CMS(Content Management System)로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정 환경에서는 API를 통해 제공되는 컨텐츠가 필요합니다(일반적으로 JSON 형식).
 
 <!--
 >[!NOTE]
@@ -222,7 +222,7 @@ Assets REST API는 `/api/assets` 종단점을 사용하고 선행 `/content/dam`
 >액세스 권한:
 >
 >* `/api/assets` **은** 선택기를 사용할 필요가  `.model` 없습니다.
->* `/content/path/to/page` **** 를 사용하려면 선택기를 사용해야  `.model` 합니다.
+>* `/content/path/to/page` **** 선택기를 사용해야  `.model` 합니다.
 
 
 ### 작업 {#operation}
@@ -236,7 +236,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 >[!NOTE]
 >
->요청 본문 및/또는 URL 매개 변수를 사용하여 이러한 작업 중 일부를 구성할 수 있습니다.예를 들어, **POST** 요청으로 폴더나 자산을 만들어야 함을 정의합니다.
+>요청 본문 및/또는 URL 매개 변수를 사용하여 이러한 작업 중 일부를 구성할 수 있습니다. 예를 들어, **POST** 요청으로 폴더나 자산을 만들어야 함을 정의합니다.
 
 지원되는 요청의 정확한 형식은 API 참조 설명서에서 정의됩니다.
 
@@ -255,7 +255,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 >[!NOTE]
 >
->자세한 내용은 API 참조를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>자세한 내용은 API 참조를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### 읽기/전달 {#read-delivery}
 
@@ -272,7 +272,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 두 가지 유형의 읽기 작업이 가능합니다.
 
 * 특정 컨텐츠 조각을 경로별로 읽으면 컨텐츠 조각의 JSON 표현이 반환됩니다.
-* 경로별 컨텐츠 조각 폴더 읽기:이렇게 하면 폴더 내에 있는 모든 컨텐츠 조각의 JSON 표현이 반환됩니다.
+* 경로별 컨텐츠 조각 폴더 읽기: 이렇게 하면 폴더 내에 있는 모든 컨텐츠 조각의 JSON 표현이 반환됩니다.
 
 ### 만들기 {#create}
 
@@ -303,7 +303,7 @@ AEM Assets REST API 사용에 대한 자세한 내용은 다음을 참조할 수
 * Adobe Experience Manager Assets HTTP API(추가 리소스)
 * AEM Assets HTTP API의 컨텐츠 조각 지원(추가 리소스)
 
-## 다음 기능 {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
 AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
 
@@ -325,7 +325,7 @@ AEM Headless 여정을 계속 진행하려면 다음 문서 [How to Go Live with
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
 * [컨텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 * [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
 * [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

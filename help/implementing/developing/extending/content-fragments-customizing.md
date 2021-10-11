@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 사용자 지정 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 1%
@@ -166,7 +166,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 서버측 API를 사용하여 컨텐츠 조각에 액세스할 수 있습니다. 다음을 참조하십시오.
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -176,7 +176,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 다음 세 개의 인터페이스가 시작 지점으로 사용될 수 있습니다.
 
-* **컨텐츠 조각** ([컨텐츠 조각](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **컨텐츠 조각** ([컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    이 인터페이스를 사용하면 컨텐츠 조각을 추상적으로 사용할 수 있습니다.
 
@@ -202,7 +202,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
    조각의 주요 요소를 나타내는 인터페이스는 다음과 같습니다.
 
-   * **컨텐츠 요소** ([ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **컨텐츠 요소** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 기본 데이터 가져오기(이름, 제목, 설명)
       * 콘텐츠 가져오기/설정
@@ -214,7 +214,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
          * 변형 제거([Caveze](#caveats) 참조)
          * 변형 데이터에 액세스( `ContentVariation` 참조)
       * 변형 해결을 위한 바로 가기(지정된 변형을 요소에 사용할 수 없는 경우 몇 가지 추가 구현별 폴백 논리 적용)
-   * **컨텐츠 변형** ([컨텐츠 변형](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **컨텐츠 변형** ([컨텐츠 변형](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 기본 데이터 가져오기(이름, 제목, 설명)
       * 콘텐츠 가져오기/설정
@@ -244,9 +244,9 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 * `ContentElement` 다음을 적용할 수 있습니다.
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 요소의 구조적 정보에 액세스하기 위한 것입니다.
+   * [`ElementTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 요소의 구조적 정보에 액세스하기 위한 것입니다.
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` 다음을 적용할 수 있습니다.
 
