@@ -2,7 +2,7 @@
 title: Query Builder API
 description: Asset Share Query Builder의 기능은 Java API 및 REST API를 통해 노출됩니다.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Query Builder에서는 AEM의 컨텐츠 저장소를 쉽게 쿼리하는 방법을 제공합니다. 기능은 Java API 및 REST API를 통해 노출됩니다. 이 문서에서는 이러한 API에 대해 설명합니다.
 
-서버측 쿼리 빌더([`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html))는 쿼리 설명을 적용하고, XPath 쿼리를 만들고 실행하며, 선택적으로 결과 세트를 필터링하고, 원하는 경우 패싯도 추출합니다.
+서버측 쿼리 빌더([`QueryBuilder`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html))는 쿼리 설명을 적용하고, XPath 쿼리를 만들고 실행하며, 선택적으로 결과 세트를 필터링하고, 원하는 경우 패싯도 추출합니다.
 
-쿼리 설명은 단지 설명 집합입니다([`Predicate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html)). 예로는 XPath의 `jcr:contains()` 함수에 해당하는 전체 텍스트 설명이 있습니다.
+쿼리 설명은 단지 설명 집합입니다([`Predicate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). 예로는 XPath의 `jcr:contains()` 함수에 해당하는 전체 텍스트 설명이 있습니다.
 
-각 설명 유형에 대해 XPath, 필터링 및 패싯 추출에 대한 특정 설명을 처리하는 방법을 알고 있는 평가기 구성 요소([`PredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html))가 있습니다. OSGi 구성 요소 런타임을 통해 플러그인이 되는 사용자 정의 평가자를 만드는 것은 매우 쉽습니다.
+각 설명 유형에 대해 XPath, 필터링 및 패싯 추출에 대한 특정 설명을 처리하는 방법을 알고 있는 평가기 구성 요소([`PredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))가 있습니다. OSGi 구성 요소 런타임을 통해 플러그인이 되는 사용자 정의 평가자를 만드는 것은 매우 쉽습니다.
 
 REST API는 JSON으로 전송되는 응답을 사용하여 HTTP를 통해 정확히 동일한 기능에 대한 액세스 권한을 제공합니다.
 
@@ -76,7 +76,7 @@ p.limit=-1
 orderby=path
 ```
 
-### p.guessTotal을 사용하여 결과 {#using-p-guesstotal-to-return-the-results} 반환
+### p.guessTotal을 사용하여 결과 반환 {#using-p-guesstotal-to-return-the-results}
 
 `p.guessTotal` 매개 변수의 목적은 최소 실행 가능한 `p.offset` 값과 `p.limit` 값을 결합하여 표시할 수 있는 적절한 수의 결과를 반환하는 것입니다. 이 매개 변수를 사용하면 큰 결과 세트를 사용하여 성능이 향상됩니다. 이렇게 하면 전체 합계(예: `result.getSize()` 호출)를 계산하고 전체 결과 세트를 읽는 것이 방지되며, OAK 엔진 및 색인까지 최적화됩니다. 이는 실행 시간과 메모리 사용 모두에서 수십만 개의 결과가 있을 때 큰 차이가 될 수 있습니다.
 
@@ -125,7 +125,7 @@ orderby=path
 
 예를 들어 UI는 다음 접근 방식을 조정할 수 있습니다.
 
-* 총 히트 수([SearchResult.getTotalMatches()](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 또는 `querybuilder.json` 응답에서 total)가 100개 미만이거나 균일합니다.
+* 총 히트 수([SearchResult.getTotalMatches()](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 또는 `querybuilder.json` 응답에서 total)가 100개 미만이거나 균일합니다.
 * Query Builder를 호출하는 동안 `guessTotal`을 100으로 설정합니다.
 
 * 응답에는 다음 결과가 있을 수 있습니다.
@@ -135,7 +135,7 @@ orderby=path
 
 `guessTotal` Query Builder가 정확한 히트 수를 확인하지 않도록 UI에서 무한 스크롤을 사용해야 하는 경우에도 사용해야 합니다.
 
-### jar 파일을 찾아 정렬하십시오. 최신 첫 번째 {#find-jar-files-and-order-them-newest-first}
+### jar 파일을 찾아 가장 최신 파일부터 순서대로 정렬합니다. {#find-jar-files-and-order-them-newest-first}
 
 `http://<host>:<port>/bin/querybuilder.json?type=nt:file&nodename=*.jar&orderby=@jcr:content/jcr:lastModified&orderby.sort=desc`
 
@@ -146,7 +146,7 @@ orderby=@jcr:content/jcr:lastModified
 orderby.sort=desc
 ```
 
-### 모든 페이지를 찾아 마지막으로 수정한 {#find-all-pages-and-order-them-by-last-modified}별로 정렬합니다.
+### 모든 페이지를 찾아 마지막으로 수정한 순서대로 정렬합니다. {#find-all-pages-and-order-them-by-last-modified}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified`
 
@@ -155,7 +155,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### 모든 페이지를 찾아 마지막으로 수정한 후 내림차순 {#find-all-pages-and-order-them-by-last-modified-but-descending}
+### 모든 페이지를 찾아 마지막으로 수정한 후 내림차순으로 정렬합니다. {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc`
 
@@ -165,7 +165,7 @@ orderby=@jcr:content/cq:lastModified
 orderby.sort=desc
 ```
 
-### 전체 텍스트 검색, 점수 {#fulltext-search-ordered-by-score} 순
+### 전체 텍스트 검색, 점수로 정렬됨 {#fulltext-search-ordered-by-score}
 
 `http://<host>:<port>/bin/querybuilder.json?fulltext=Management&orderby=@jcr:score&orderby.sort=desc`
 
@@ -216,7 +216,7 @@ group.2_path=/content/wknd/us/en/adventures
 >
 >서로 다른 조건에도 불구하고 하나의 쿼리에서 동일한 숫자 접두어를 사용할 수 없습니다.
 
-### 속성 {#search-for-properties} 검색
+### 속성 검색 {#search-for-properties}
 
 여기서는 `cq:template` 속성을 사용하여 주어진 템플릿의 모든 페이지를 검색합니다.
 
@@ -238,7 +238,7 @@ property=jcr:content/cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-### 여러 속성 {#search-for-multiple-properties} 검색
+### 여러 속성 검색 {#search-for-multiple-properties}
 
 속성 설명을 여러 번 사용하는 경우 번호 접두사를 다시 추가해야 합니다.
 
@@ -252,7 +252,7 @@ type=cq:Page
 2_property.value=Cycling Tuscany
 ```
 
-### 여러 속성 값 {#search-for-multiple-property-values} 검색
+### 여러 속성 값 검색 {#search-for-multiple-property-values}
 
 속성(`"A" or "B" or "C"`)의 여러 값을 검색할 때 큰 그룹을 사용하지 않도록 하려면 `property` 조건자에 여러 값을 제공할 수 있습니다.
 
@@ -347,13 +347,13 @@ p.nodedepth=5
 
 자세한 설명은 [Query Builder 설명 참조 페이지](query-builder-predicates.md)를 참조하십시오.
 
-[Javadoc에서 `PredicateEvaluator` 클래스](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 확인할 수도 있습니다. 이러한 클래스의 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
+[Javadoc에서 `PredicateEvaluator` 클래스](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 확인할 수도 있습니다. 이러한 클래스의 Javadoc에는 사용할 수 있는 속성 목록이 포함되어 있습니다.
 
-클래스 이름의 접두사(예: [`SimilarityPredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)에 있는 `similar`)는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에 사용할 조건자의 이름이기도 합니다(소문자는).
+클래스 이름의 접두사(예: [`SimilarityPredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)에 있는 `similar`)는 클래스의 *principal 속성*&#x200B;입니다. 이 속성은 쿼리에 사용할 조건자의 이름이기도 합니다(소문자는).
 
 이러한 주체 속성의 경우 쿼리를 줄이고 정규화된 변형 `similar.similar=/content/en` 대신 `similar=/content/en` 을 사용할 수 있습니다. 정규화된 양식은 클래스의 모든 비주체 속성에 사용해야 합니다.
 
-## 예제 Query Builder API 사용 {#example-query-builder-api-usage}
+## Query Builder API 사용 예 {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "WKND";
@@ -421,13 +421,13 @@ JSON(Query Builder) 서블릿을 사용하여 HTTP를 통해 실행된 동일한
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-[`QueryBuilder#storeQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) 메서드를 사용할 때 지정된 `Query`가 `createFile` 인수 값에 따라 저장소 또는 속성으로 저장됩니다. 다음 예제에서는 `/mypath/getfiles` 경로에 `Query`을 파일로 저장하는 방법을 보여 줍니다.
+[`QueryBuilder#storeQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) 메서드를 사용할 때 지정된 `Query`가 `createFile` 인수 값에 따라 저장소 또는 속성으로 저장됩니다. 다음 예제에서는 `/mypath/getfiles` 경로에 `Query`을 파일로 저장하는 방법을 보여 줍니다.
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-이전에 저장된 쿼리는 [`QueryBuilder#loadQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) 메서드를 사용하여 저장소에서 로드할 수 있습니다.
+이전에 저장된 쿼리는 [`QueryBuilder#loadQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) 메서드를 사용하여 저장소에서 로드할 수 있습니다.
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -453,7 +453,7 @@ Query Builder 쿼리 주위에 재생하고 디버깅하기 위해
 
 ### 일반 디버깅 Recommendations {#general-debugging-recommendations}
 
-### 로깅 {#obtain-explain-able-xpath-via-logging}을 통해 탐색 가능한 XPath 획득
+### 로깅을 통해 탐색 가능한 XPath 획득 {#obtain-explain-able-xpath-via-logging}
 
 대상 인덱스 집합에 대한 개발 주기 동안 **모든** 쿼리를 설명합니다.
 
@@ -464,7 +464,7 @@ Query Builder 쿼리 주위에 재생하고 디버깅하기 위해
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
 1. XPath 쿼리를 XPath로 Explain Query에 붙여 넣어 쿼리 계획을 가져옵니다.
 
-### Query Builder Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}를 통해 실행 가능한 XPath 가져오기
+### Query Builder Debugger를 통해 탐색 가능한 XPath 가져오기 {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
 AEM Query Builder 디버거를 사용하여 명시적 XPath 쿼리를 생성합니다.
 
@@ -479,7 +479,7 @@ AEM Query Builder 디버거를 사용하여 명시적 XPath 쿼리를 생성합�
 >
 >Query Builder 쿼리 이외의 쿼리(XPath, JCR-SQL2)는 Explain Query에 직접 제공할 수 있습니다.
 
-## 로깅 {#debugging-queries-with-logging}을 사용하여 쿼리 디버깅
+## 로깅을 사용하여 쿼리 디버깅 {#debugging-queries-with-logging}
 
 >[!NOTE]
 >
@@ -521,10 +521,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **설명** |
 |---|---|
-| [com.day.cq.search](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/package-summary.html) | 기본 쿼리 빌더 및 쿼리 API |
-| [com.day.cq.search.result](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/package-summary.html) | 결과 API |
-| [com.day.cq.search.facets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/package-summary.html) | 패싯 |
-| [com.day.cq.search.facets.bucket](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 버킷(패싯에 포함됨) |
-| [com.day.cq.search.eval](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | 설명 평가자 |
-| [com.day.cq.search.facets.extractors](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | 패싯 추출기(평가자용) |
-| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | Query Builder 서블릿(`/bin/querybuilder.json`)에 대한 JSON 결과 히트 작성기 |
+| [com.day.cq.search](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | 기본 쿼리 빌더 및 쿼리 API |
+| [com.day.cq.search.result](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | 결과 API |
+| [com.day.cq.search.facets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | 패싯 |
+| [com.day.cq.search.facets.bucket](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 버킷(패싯에 포함됨) |
+| [com.day.cq.search.eval](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | 설명 평가자 |
+| [com.day.cq.search.facets.extractors](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | 패싯 추출기(평가자용) |
+| [com.day.cq.search.writer](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | Query Builder 서블릿(`/bin/querybuilder.json`)에 대한 JSON 결과 히트 작성기 |

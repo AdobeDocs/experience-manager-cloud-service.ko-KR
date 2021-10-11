@@ -2,7 +2,7 @@
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 활용할 수 있는 강력하고 광범위한 API가 있습니다.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 5%
@@ -19,7 +19,7 @@ Adobe Experience Manager(AEM)은 애플리케이션 개발 및 AEM 확장을 위
 
 | API | 설명 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | 페이지, 자산, 워크플로우 등과 같은 제품 추상 |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 페이지, 자산, 워크플로우 등과 같은 제품 추상 |
 | [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe의 개방형 웹 스택, 다양한 필수 구성 요소 제공(6.5 Granite 자료는 AEMaaCS에 적용됨) |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | 사용자 경험에서 일관성을 제공하도록 설계된 Adobe의 클라우드 UI용 시각적 스타일 |
 
@@ -44,7 +44,7 @@ AEM은 다음 네 개의 기본 Java API 세트를 기본 설정의 내림차순
 
 | 우선 순위 | API | 설명 |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | 페이지, 자산, 워크플로우 등과 같은 제품 추상 |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 페이지, 자산, 워크플로우 등과 같은 제품 추상 |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | 리소스, 값 맵 및 HTTP 요청과 같은 REST 및 리소스 기반 추상화. |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 노드, 속성 및 세션과 같은 데이터 및 컨텐츠 추상. |
 | 4 | [Apache Felix](https://felix.apache.org/) | 서비스 및 (OSGi) 구성 요소와 같은 OSGi 애플리케이션 컨테이너 추상. |

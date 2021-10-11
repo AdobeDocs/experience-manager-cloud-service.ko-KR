@@ -2,7 +2,7 @@
 title: Query Builder의 사용자 지정 설명 평가기 구현
 description: AEM의 Query Builder 는 컨텐츠 리포지토리를 쿼리하는 쉽고 사용자 지정 가능한 방법을 제공합니다
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 2%
@@ -48,11 +48,11 @@ ht-degree: 2%
 
 조건자 평가기는 쿼리의 제약 조건을 정의하는 특정 조건자에 대한 평가를 처리합니다.
 
-상위 수준 검색 제한(예: `width>200`)을 실제 컨텐츠 모델에 맞는 특정 JCR 쿼리(예: )에 매핑합니다.`metadata/@width > 200`) 또는 노드를 수동으로 필터링하고 해당 제약 조건을 확인할 수 있습니다.
+상위 수준 검색 제한(예: `width>200`)을 실제 컨텐츠 모델에 맞는 특정 JCR 쿼리(예: )에 매핑합니다. `metadata/@width > 200`) 또는 노드를 수동으로 필터링하고 해당 제약 조건을 확인할 수 있습니다.
 
 >[!TIP]
 >
->`PredicateEvaluator` 및 `com.day.cq.search` 패키지에 대한 자세한 내용은 [Java 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html?com/day/cq/search/package-summary.html)를 참조하십시오.
+>`PredicateEvaluator` 및 `com.day.cq.search` 패키지에 대한 자세한 내용은 [Java 설명서](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html)를 참조하십시오.
 
 ### 복제 메타데이터에 대한 사용자 지정 설명 평가기 구현 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -96,7 +96,7 @@ replic.action=Activate
 
 사용자 지정 설명 평가기로 복제 메타데이터 설명을 그룹화하면 의미 있는 쿼리를 만들 수 있습니다.
 
-#### Maven 종속성 업데이트 중 {#updating-maven-dependencies}
+#### Maven 종속성 업데이트 {#updating-maven-dependencies}
 
 >[!TIP]
 >
@@ -125,13 +125,13 @@ replic.action=Activate
              <version>3.8.1</version></dependency>
 ```
 
-#### ReplicationDe조건자 평가기를 쓰는 중 {#writing-the-replicationpredicateevaluator}
+#### ReplicationPredicateEvaluator 작성 {#writing-the-replicationpredicateevaluator}
 
 `cq-search` 프로젝트에 `AbstractPredicateEvaluator` 추상 클래스가 포함되어 있습니다. 사용자 지정 설명 평가기 `(PredicateEvaluator`)를 구현하는 몇 가지 단계로 확장할 수 있습니다.
 
 >[!NOTE]
 >
->다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 표현식을 작성하는 방법에 대해 설명합니다. 행을 기준으로 데이터를 선택하는 `includes` 메서드를 구현하는 방법도 있습니다. 자세한 내용은 [Java 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 참조하십시오.
+>다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 표현식을 작성하는 방법에 대해 설명합니다. 행을 기준으로 데이터를 선택하는 `includes` 메서드를 구현하는 방법도 있습니다. 자세한 내용은 [Java 설명서](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 참조하십시오.
 
 1. `com.day.cq.search.eval.AbstractPredicateEvaluator`을 확장하는 새 Java 클래스를 만듭니다.
 1. [통합 비교 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)에 표시되는 코드 조각과 같은 `@Component`을 사용하여 클래스에 주석을 답니다
@@ -166,7 +166,7 @@ replic.action=Activate
 
    override 메서드에서 인수에 지정된 `Predicate`에 따라 `Xpath` 표현식을 만듭니다.
 
-### 복제 메타데이터 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}에 대한 사용자 지정 설명 평가기의 예
+### 복제 메타데이터의 사용자 지정 설명 평가기의 예 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
 이 `PredicateEvaluator`의 전체 구현은 다음 클래스와 유사할 수 있습니다.
 

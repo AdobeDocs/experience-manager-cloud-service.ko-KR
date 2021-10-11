@@ -2,7 +2,7 @@
 title: Query Builder 설명 참조
 description: Query Builder API에 대한 설명 참조입니다.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 2%
@@ -201,7 +201,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-이 조건자는 특정 [sling 리소스 컬렉션](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html)에 속하는 항목을 찾습니다.
+이 조건자는 특정 [sling 리소스 컬렉션](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)에 속하는 항목을 찾습니다.
 
 필터링 전용 조건이며 검색 색인을 활용할 수 없습니다.
 

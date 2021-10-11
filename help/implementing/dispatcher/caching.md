@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Define DISABLE_DEFAULT_CACHING
 
 예를 들어, 비즈니스 로직에서는 기본적으로 연령 헤더가 0으로 설정되므로 페이지 헤더를 세밀하게 조정해야 하는 경우(달력 일을 기반으로 하는 값 포함) 유용합니다. 즉, **기본 캐싱을 해제할 때에는 주의하십시오.**
 
-* AEM을 Cloud Service SDK Dispatcher 도구로 사용하여 `global.vars`에서 `EXPIRATION_TIME` 변수를 정의하여 모든 HTML/텍스트 컨텐츠에 대해 재정의할 수 있습니다.
+* AEM as a Cloud Service SDK Dispatcher 도구를 사용하여 `global.vars`에서 `EXPIRATION_TIME` 변수를 정의하여 모든 HTML/텍스트 컨텐츠에 대해 재정의할 수 있습니다.
 * 다음 apache mod_headers 지시문에 의해 보다 세밀하게 조정된 수준에서 재정의할 수 있습니다.
 
    ```
@@ -40,7 +40,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
    ```
 
-   전역 캐시 제어 헤더 또는 광범위한 정규식과 일치하는 헤더를 설정하여 비공개로 유지할 콘텐츠에 적용하지 않도록 주의하십시오. 여러 지시어를 사용하여 규칙이 세밀하게 적용되도록 합니다. 이와 같이 사용하면, AEM as a Cloud Service에서 디스패처 설명서에 설명된 대로 디스패처가 사용할 수 없음을 감지하는 것에 적용된 것을 감지하면 캐시 헤더를 제거합니다. AEM에서 항상 캐싱 헤더를 강제 적용하기 위해 다음과 같이 **always** 옵션을 추가할 수 있습니다.
+   전역 캐시 제어 헤더 또는 광범위한 정규식과 일치하는 헤더를 설정하여 비공개로 유지할 콘텐츠에 적용하지 않도록 주의하십시오. 여러 지시어를 사용하여 규칙이 세밀하게 적용되도록 합니다. 이를 통해 AEM as a Cloud Service은 디스패처 설명서에 설명된 대로 디스패처가 사용할 수 없음을 감지하는 대상에 적용되었음을 감지하는 경우 캐시 헤더를 제거합니다. AEM에서 항상 캐싱 헤더를 강제 적용하기 위해 다음과 같이 **always** 옵션을 추가할 수 있습니다.
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -130,8 +130,8 @@ AEM as a Cloud Service 이전에는 디스패처 캐시를 무효화하는 두 �
 1. 게시 디스패처 초기화 에이전트를 지정하여 복제 에이전트를 호출합니다
 2. `invalidate.cache` API를 직접 호출합니다(예: `POST /dispatcher/invalidate.cache`).
 
-디스패처의 `invalidate.cache` API 접근 방식은 특정 디스패처 노드만 처리하므로 더 이상 지원되지 않습니다. AEM as a Cloud Service은 개별 노드 수준이 아니라 서비스 수준에서 작동하므로 [AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html)에서 캐시된 페이지 무효화 페이지의 무효화 지침은 AEM에서 Cloud Service으로 더 이상 유효하지 않습니다.
-대신 복제 초기화 에이전트를 사용해야 합니다. 이 작업은 복제 API를 사용하여 수행할 수 있습니다. 복제 API 설명서는 [여기](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html)에서 사용할 수 있으며, 캐시 플러싱의 예는 [API 예제 페이지](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) 특히 사용 가능한 모든 에이전트에 ACTIVATE 유형의 복제 작업을 실행하는 `CustomStep` 예를 참조하십시오. 플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하면서 디스패처를 가리키도록 사전 구성되어 있습니다. 플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
+디스패처의 `invalidate.cache` API 접근 방식은 특정 디스패처 노드만 처리하므로 더 이상 지원되지 않습니다. AEM은 개별 노드 수준이 아니라 서비스 수준에서 as a Cloud Service으로 작동하므로 [AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html)에서 캐시된 페이지 무효화 페이지의 무효화 지침은 AEM에 더 이상 유효하지 않습니다.
+대신 복제 초기화 에이전트를 사용해야 합니다. 이 작업은 복제 API를 사용하여 수행할 수 있습니다. 복제 API 설명서는 [여기](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)에서 사용할 수 있으며, 캐시 플러싱의 예는 [API 예제 페이지](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) 특히 사용 가능한 모든 에이전트에 ACTIVATE 유형의 복제 작업을 실행하는 `CustomStep` 예를 참조하십시오. 플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하면서 디스패처를 가리키도록 사전 구성되어 있습니다. 플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
 
 아래 표시된 다이어그램은 이를 보여줍니다.
 
@@ -145,15 +145,15 @@ Adobe 관리 CDN은 TTL을 준수하므로 플러시할 필요가 없습니다. 
 
 페이지는 HTML, Javascript, CSS 및 이미지로 구성됩니다. 고객은 [클라이언트측 라이브러리(clientlibs) 프레임워크](/help/implementing/developing/introduction/clientlibs.md)를 활용하여 Javascript 및 CSS 리소스를 HTML 페이지로 가져와 JS 라이브러리 간의 종속성을 고려해 보는 것이 좋습니다.
 
-clientlibs 프레임워크는 자동 버전 관리를 제공합니다. 즉, 개발자는 소스 제어에서 JS 라이브러리의 변경 사항을 체크 인할 수 있으며 최신 버전은 고객이 릴리스를 푸시할 때 사용할 수 있습니다. 이렇게 하지 않으면 개발자는 새 버전의 라이브러리를 참조하여 HTML을 수동으로 변경해야 합니다. 이는 많은 HTML 템플릿이 동일한 라이브러리를 공유하는 경우 특히 중요합니다.
+clientlibs 프레임워크는 자동 버전 관리를 제공합니다. 즉, 개발자는 소스 제어에서 JS 라이브러리의 변경 사항을 체크 인할 수 있으며 최신 버전은 고객이 릴리스를 푸시할 때 사용할 수 있습니다. 이렇게 하지 않으면 개발자가 새 라이브러리 버전에 대한 참조를 사용하여 HTML을 수동으로 변경해야 합니다. 이는 많은 HTML 템플릿이 동일한 라이브러리를 공유하는 경우 특히 중요합니다.
 
-새 버전의 라이브러리가 프로덕션에 릴리스되면 참조하는 HTML 페이지가 업데이트된 라이브러리 버전에 대한 새 링크로 업데이트됩니다. 주어진 HTML 페이지에 대해 브라우저 캐시가 만료되면 새로 고친 페이지(AEM에서)가 이제 새 버전의 라이브러리를 참조할 수 있으므로 이전 라이브러리가 브라우저 캐시에서 로드될 염려가 없습니다. 즉, 새로 고친 HTML 페이지에 모든 최신 라이브러리 버전이 포함됩니다.
+새 버전의 라이브러리가 프로덕션에 릴리스되면 참조하는 HTML 페이지가 업데이트된 라이브러리 버전에 대한 새 링크로 업데이트됩니다. 주어진 HTML 페이지에 대해 브라우저 캐시가 만료되면 새로 고친 페이지(AEM)이 새 버전의 라이브러리를 참조할 수 있으므로 이전 라이브러리가 브라우저 캐시에서 로드될 염려가 없습니다. 즉, 새로 고친 HTML 페이지에는 모든 최신 라이브러리 버전이 포함됩니다.
 
 이 메커니즘은 직렬화된 해시이며, 클라이언트 라이브러리 링크에 추가되므로 브라우저에서 CSS/JS를 캐시할 고유한 버전이 지정된 URL을 보장합니다. 직렬화된 해시는 클라이언트 라이브러리의 내용이 변경되는 경우에만 업데이트됩니다. 즉, 새 배포가 있어도 관련 없는 업데이트가 발생하는 경우(즉, 클라이언트 라이브러리의 기본 css/js에 대한 변경 사항이 없는 경우) 참조가 동일하게 유지되므로 브라우저 캐시가 중단되지 않습니다.
 
-### 클라이언트 측 라이브러리의 긴 캐시 버전 활성화 - AEM as a Cloud Service SDK Quickstart {#enabling-longcache}
+### 클라이언트 측 라이브러리의 긴 캐시 버전 활성화 - AEM as a Cloud Service SDK 빠른 시작 {#enabling-longcache}
 
-HTML 페이지에 포함된 기본 clientlib은 다음 예제와 비슷합니다.
+HTML 페이지에 포함된 기본 clientlib은 다음 예와 같습니다.
 
 ```
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.css" type="text/css">
@@ -173,5 +173,5 @@ strict clientlib 버전 관리가 활성화되면 장기적인 해시 키가 클
 1. Granite HTML 라이브러리 관리자를 위한 OSGi 구성을 찾습니다.
    * 엄격한 버전 관리를 사용하려면 확인란을 선택합니다
    * Long term client side cache key 라는 필드에 / 값을 입력합니다.*;해시
-1. 변경 사항을 저장합니다. AEM as a Cloud Service은 개발, 스테이지 및 프로덕션 환경에서 이 구성을 자동으로 활성화하므로 소스 제어에 이 구성을 저장할 필요가 없습니다.
+1. 변경 사항을 저장합니다. AEM as a Cloud Service은 개발, 스테이지 및 프로덕션 환경에서 이 구성을 자동으로 활성화하므로 이 구성을 소스 제어에 저장할 필요가 없습니다.
 1. 클라이언트 라이브러리의 내용이 변경될 때마다 새 해시 키가 생성되고 HTML 참조가 업데이트됩니다.

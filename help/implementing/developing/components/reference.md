@@ -2,7 +2,7 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -39,7 +39,7 @@ WKND 자습서에서는 대부분의 사용 사례를 다룹니다. 이 문서�
 
 완전히 새로운 구성 요소를 만드는 데 시간을 투자하기 전에 기존 구성 요소를 사용자 지정하거나 확장하는 것이 좋습니다. [핵심 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 구성 요소는 유연하고 강력하며 테스트를 잘 거친 프로덕션 지원 구성 요소 세트를 제공합니다.
 
-#### 코어 구성 요소 확장 {#extending-core-components}
+#### 핵심 구성 요소 확장 {#extending-core-components}
 
 코어 구성 요소는 또한 [명확한 사용자 지정 패턴](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)을 제공하여 프로젝트의 요구 사항에 맞게 조정할 수 있습니다.
 
@@ -53,9 +53,9 @@ Sling Resource Merger를 사용하여 구성 요소 대화 상자를 재정의�
 
 즉, 전체 대화 상자를 재정의하는 대신 필요한 차이만 재정의할 수 있습니다.
 
-### 컨텐츠 논리 및 렌더링 마크업 {#content-logic-and-rendering-markup}
+### 컨텐츠 논리 및 렌더링 마크업  {#content-logic-and-rendering-markup}
 
-구성 요소가 [HTML로 렌더링됩니다.](https://www.w3schools.com/htmL/html_intro.asp) 구성 요소는 필요한 컨텐츠를 가져온 다음 작성 환경과 게시 환경 모두에서 필요에 따라 렌더링하는 데 필요한 HTML을 정의해야 합니다.
+구성 요소가 [HTML으로 렌더링됩니다.](https://www.w3schools.com/htmL/html_intro.asp) 구성 요소는 필요한 컨텐츠를 가져온 다음 작성 환경과 게시 환경 모두에서 필요에 따라 렌더링하는 데 필요한 HTML을 정의해야 합니다.
 
 구성 요소의 컨텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와는 별도로 마크업 및 렌더링에 대한 코드를 유지하는 것이 좋습니다.
 
@@ -65,7 +65,7 @@ Sling Resource Merger를 사용하여 구성 요소 대화 상자를 재정의�
 
 * Java 사용 - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 보조 메서드에 액세스할 수 있습니다. 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현하는 데 Java 코드를 사용할 수 있습니다.
 * JavaScript 사용 - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)를 사용하면 HTL 파일이 JavaScript로 작성된 도우미 코드에 액세스할 수 있습니다. 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현할 수 있습니다.
-* 클라이언트측 라이브러리 사용 - 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 주로 의존합니다. 자세한 내용은 [AEM에서 클라이언트측 라이브러리를 Cloud Service](/help/implementing/developing/introduction/clientlibs.md)로 사용 문서를 참조하십시오.
+* 클라이언트측 라이브러리 사용 - 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 주로 의존합니다. 자세한 내용은 AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)에서 클라이언트 측 라이브러리 사용 문서를 참조하십시오.[
 
 ## 구성 요소 구조 {#structure}
 
@@ -98,13 +98,13 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
    * 리소스 - 구성 요소에서 사용하는 정적 요소를 정의합니다.
    * 스크립트 - 구성 요소의 결과 인스턴스의 동작을 구현하는 데 사용됩니다.
 
-#### 필수 속성 {#vital-properties}
+#### 중요한 속성 {#vital-properties}
 
 * **루트 노드**:
    * `<mycomponent> (cq:Component)` - 구성 요소의 계층 노드입니다.
 * **중요한 속성**:
-   * `jcr:title` - 구성 요소 제목;예를 들어 구성 요소가 구성 요소 브라우저 및 구성 요소  [콘솔에 나열될 때 ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 레이블로  [사용됩니다](/help/sites-cloud/authoring/features/components-console.md)
-   * `jcr:description` - 구성 요소에 대한 설명구성 요소 브라우저 및 구성 요소 콘솔에서 마우스 오른쪽 단추 힌트로 사용됩니다.
+   * `jcr:title` - 구성 요소 제목; 예를 들어 구성 요소가 구성 요소 브라우저 및 구성 요소  [콘솔에 나열될 때 ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 레이블로  [사용됩니다](/help/sites-cloud/authoring/features/components-console.md)
+   * `jcr:description` - 구성 요소에 대한 설명 구성 요소 브라우저 및 구성 요소 콘솔에서 마우스 오른쪽 단추 힌트로 사용됩니다.
    * 자세한 내용은 [구성 요소 아이콘](#component-icon) 섹션을 참조하십시오
 * **중요한 하위 노드**:
    * `cq:editConfig (cq:EditConfig)` - 구성 요소의 편집 속성을 정의하고 구성 요소 브라우저에 구성 요소를 표시할 수 있습니다
@@ -157,7 +157,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 </svg>
 ```
 
-### 구성 요소 {#properties-and-child-nodes-of-a-component}의 속성 및 하위 노드
+### 구성 요소의 속성 및 하위 노드 {#properties-and-child-nodes-of-a-component}
 
 구성 요소를 정의하는 데 필요한 많은 노드/속성은 두 UI 모두에서 일반적이지만, 구성 요소가 두 환경에서 모두 작동할 수 있도록 독립적입니다.
 
@@ -171,7 +171,7 @@ AEM 구성 요소의 구조는 강력하고 유연합니다. 주요 부분은 �
 | `cq:dialog` | `nt:unstructured` | 구성 요소에 대한 편집 대화 상자의 정의입니다. |
 | `cq:design_dialog` | `nt:unstructured` | 구성 요소에 대한 디자인 대화 상자의 정의입니다. |
 | `cq:editConfig` | `cq:EditConfig` | 구성 요소의 [구성 편집을 정의합니다.](#edit-behavior) |
-| `cq:htmlTag` | `nt:unstructured` | 그러면 주변 HTML 태그에 추가된 추가 태그 속성이 반환됩니다. 자동으로 생성된 div에 속성을 추가할 수 있습니다. |
+| `cq:htmlTag` | `nt:unstructured` | 주변 HTML 태그에 추가된 추가적인 태그 속성을 반환합니다. 자동으로 생성된 div에 속성을 추가할 수 있습니다. |
 | `cq:noDecoration` | `Boolean` | true일 경우 구성 요소는 자동으로 생성된 div 및 css 클래스로 렌더링되지 않습니다. |
 | `cq:template` | `nt:unstructured` | 구성 요소가 있는 경우 이 노드는 구성 요소 브라우저에서 구성 요소를 추가할 때 컨텐츠 템플릿으로 사용됩니다. |
 | `jcr:created` | `Date` | 구성 요소 생성 날짜입니다. |
@@ -250,7 +250,7 @@ Content not found
 
 구성 요소 대화 상자에서 사용할 새 위젯을 만들려면 새로운 Granite UI 필드 구성 요소를 만들어야 합니다.
 
-대화 상자를 양식 요소의 단순 컨테이너로 간주하는 경우 대화 상자 컨텐츠의 기본 컨텐츠를 양식 필드로 볼 수도 있습니다. 새 양식 필드를 만들려면 리소스 유형을 만들어야 합니다.이는 새 구성 요소를 만드는 것과 같습니다. 해당 작업을 지원하기 위해 Granite UI는 상속할 일반 필드 구성 요소를 제공합니다(`sling:resourceSuperType` 사용).
+대화 상자를 양식 요소의 단순 컨테이너로 간주하는 경우 대화 상자 컨텐츠의 기본 컨텐츠를 양식 필드로 볼 수도 있습니다. 새 양식 필드를 만들려면 리소스 유형을 만들어야 합니다. 이는 새 구성 요소를 만드는 것과 같습니다. 해당 작업을 지원하기 위해 Granite UI는 상속할 일반 필드 구성 요소를 제공합니다(`sling:resourceSuperType` 사용).
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -260,7 +260,7 @@ Content not found
 
 #### 대화 상자 필드에 액세스 {#access-to-dialog-fields}
 
-또한 렌더링 조건(`rendercondition`)을 사용하여 대화 상자의 특정 탭/필드에 액세스할 수 있는 사용자를 제어할 수도 있습니다.예:
+또한 렌더링 조건(`rendercondition`)을 사용하여 대화 상자의 특정 탭/필드에 액세스할 수 있는 사용자를 제어할 수도 있습니다. 예:
 
 ```text
 + mybutton
@@ -270,7 +270,7 @@ Content not found
     - groups = ["administrators"]
 ```
 
-## 구성 요소 {#using-components} 사용
+## 구성 요소 사용 {#using-components}
 
 구성 요소를 만든 후 사용하려면 구성 요소를 활성화해야 합니다. 사용 시 구성 요소의 구조가 저장소의 결과 컨텐츠 구조와 관련되는 방식을 보여줍니다.
 
@@ -282,7 +282,7 @@ Content not found
 
 ### 구성 요소 및 구성 요소가 만드는 컨텐츠 {#components-and-the-content-they-create}
 
-페이지에서 **제목** 구성 요소의 인스턴스를 만들고 구성하는 경우:`/content/wknd/language-masters/en/adventures/extreme-ironing.html`
+페이지에서 **제목** 구성 요소의 인스턴스를 만들고 구성하는 경우: `/content/wknd/language-masters/en/adventures/extreme-ironing.html`
 
 ![제목 편집 대화 상자](assets/components-title-dialog.png)
 
@@ -311,9 +311,9 @@ AEM 내의 구성 요소는 **리소스 유형 계층 구조**&#x200B;를 따릅
 
 * `cq:editConfig` 노드 속성
 * [`cq:editConfig` 하위 노드](#configuring-with-cq-editconfig-child-nodes):
-   * `cq:dropTargets` (노드 유형  `nt:unstructured`):컨텐츠 파인더의 자산에서 드롭을 허용할 수 있는 드롭 대상 목록을 정의합니다(단일 드롭 대상이 허용됨).
-   * `cq:inplaceEditing` (노드 유형  `cq:InplaceEditingConfig`):구성 요소에 대한 즉석 편집 구성 정의
-   * `cq:listeners` (노드 유형  `cq:EditListenersConfig`):구성 요소에서 작업이 발생하기 전이나 후에 수행되는 작업을 정의합니다
+   * `cq:dropTargets` (노드 유형  `nt:unstructured`): 컨텐츠 파인더의 자산에서 드롭을 허용할 수 있는 드롭 대상 목록을 정의합니다(단일 드롭 대상이 허용됨).
+   * `cq:inplaceEditing` (노드 유형  `cq:InplaceEditingConfig`): 구성 요소에 대한 즉석 편집 구성 정의
+   * `cq:listeners` (노드 유형  `cq:EditListenersConfig`): 구성 요소에서 작업이 발생하기 전이나 후에 수행되는 작업을 정의합니다
 
 AEM에는 기존 구성이 많습니다. **CRXDE Lite**&#x200B;에서 쿼리 도구를 사용하여 특정 속성 또는 하위 노드를 쉽게 검색할 수 있습니다.
 
@@ -350,7 +350,7 @@ AEM에는 기존 구성이 많습니다. **CRXDE Lite**&#x200B;에서 쿼리 도
 
 이 템플릿의 사용 예는 제목 구성 요소에서와 같이, [핵심 구성 요소에서 볼 수 있습니다.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
-### cq:EditConfig 하위 노드를 사용하여 구성 {#configuring-with-cq-editconfig-child-nodes}
+### cq:EditConfig 하위 노드로 구성 {#configuring-with-cq-editconfig-child-nodes}
 
 #### 대화 상자에 자산 놓기 - cq:dropTargets {#cq-droptargets}
 
@@ -370,7 +370,7 @@ AEM에는 기존 구성이 많습니다. **CRXDE Lite**&#x200B;에서 쿼리 도
 |---|---|---|
 | `active` | `Boolean` | `true` 구성 요소의 즉석 편집을 활성화하려면 |
 | `configPath` | `String` | 구성 노드에서 지정할 수 있는 편집기 구성의 경로입니다 |
-| `editorType` | `String` | 사용 가능한 유형은 다음과 같습니다.`plaintext` 비 HTML 컨텐츠의 경우 `title`은 편집을 시작하기 전에 그래픽 제목을 일반 텍스트로 변환하고 `text`는 리치 텍스트 편집기를 사용합니다 |
+| `editorType` | `String` | 사용 가능한 유형은 다음과 같습니다. HTML이 아닌 컨텐츠의 경우 `plaintext` 편집이 시작되기 전에 그래픽 제목을 일반 텍스트로 변환하고, `text` 에서는 리치 텍스트 편집기를 사용합니다`title` |
 
 다음 구성은 구성 요소의 즉석 편집을 활성화하고 `plaintext`을 편집기 유형으로 정의합니다.
 
@@ -440,7 +440,7 @@ AEM에는 기존 구성이 많습니다. **CRXDE Lite**&#x200B;에서 쿼리 도
 
 Granite UI 및 Granite UI 위젯의 필드 유효성 검사는 `foundation-validation` API를 사용하여 수행됩니다. 자세한 내용은 [`foundation-valdiation` Granite 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)를 참조하십시오.
 
-### 대화 상자 {#dialog-ready} 가용성 검색
+### 대화 상자의 가용성 검색 {#dialog-ready}
 
 대화 상자를 사용할 수 있고 준비할 때만 실행해야 하는 사용자 지정 JavaScript가 있는 경우 `dialog-ready` 이벤트를 수신해야 합니다.
 
@@ -450,11 +450,11 @@ Granite UI 및 Granite UI 위젯의 필드 유효성 검사는 `foundation-valid
 
 ## 미리 보기 동작 {#preview-behavior}
 
-페이지를 새로 고치지 않아도 미리 보기 모드로 전환할 때 [WCM 모드](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키가 설정됩니다.
+페이지를 새로 고치지 않아도 미리 보기 모드로 전환할 때 [WCM 모드](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키가 설정됩니다.
 
 WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별히 새로 고친 다음, 쿠키의 값에 의존하도록 정의해야 합니다.
 
-## 구성 요소 {#documenting-components} 문서화
+## 구성 요소 문서화 {#documenting-components}
 
 개발자는 구성 요소의 다음 내용을 빠르게 이해할 수 있도록 구성 요소 설명서에 쉽게 액세스하려고 합니다.
 
