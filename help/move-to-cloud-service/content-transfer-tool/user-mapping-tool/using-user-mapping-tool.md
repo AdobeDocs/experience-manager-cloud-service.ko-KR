@@ -1,10 +1,10 @@
 ---
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
-source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +71,10 @@ ht-degree: 2%
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. 대화 상자에서 **시작**&#x200B;을 클릭하여 사용자 매핑 프로세스를 시작합니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. 사용자 매핑이 완료되면 **결과**&#x200B;를 클릭하여 요약을 확인합니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -87,4 +91,22 @@ ht-degree: 2%
 * 액세스 토큰은 프로세스 또는
 * 다른 이유
 
-진행률이 프로세스가 중지된 위치에서 저장됩니다. 사용자 매핑 로그를 검토하여 저장된 진행 상태를 확인합니다. **사용자 매핑 시작** 단추를 다시 클릭하여 중지된 위치에서 다시 시작합니다. 다시 시작하기 전에 액세스 토큰이 여전히 유효하거나 새로 고침되었는지 확인하십시오.
+   >[!NOTE]
+   >진행률이 프로세스가 중지된 위치에서 저장됩니다.
+
+사용자 매핑 프로세스를 재개하려면 아래 절차를 따르십시오.
+
+1. **로그 보기**&#x200B;를 클릭하여 사용자 매핑 로그를 검토하여 저장된 진행 상태를 확인합니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. **사용자 매핑 시작** 단추를 다시 클릭하여 중지된 위치에서 다시 시작합니다.
+
+   >[!NOTE]
+   >다시 시작하기 전에 액세스 토큰이 여전히 유효하거나 새로 고침되었는지 확인하십시오.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. 대화 상자에서 **시작**&#x200B;을 클릭하여 사용자 매핑 프로세스를 다시 시작합니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
