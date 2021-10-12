@@ -1,9 +1,9 @@
 ---
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -115,3 +115,7 @@ ht-degree: 3%
 1. 대화 상자에서 **시작**&#x200B;을 클릭하여 사용자 매핑 프로세스를 다시 시작합니다.
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   사용자 매핑 프로세스가 완료되면 해당 특정 구성에 대한 **상태**&#x200B;를 **FINISHED**&#x200B;로 봅니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
