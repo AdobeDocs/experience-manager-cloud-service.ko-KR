@@ -1,10 +1,10 @@
 ---
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
-source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
+source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 3%
+source-wordcount: '680'
+ht-degree: 2%
 
 ---
 
@@ -76,4 +76,15 @@ ht-degree: 3%
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >사용자 매핑이 완료되면 이동 경로를 사용하여 컨텐츠 마이그레이션 페이지로 돌아갈 수 있습니다. 사용자 매핑 카드에 상태와 타임스탬프가 표시됩니다. **컨텐츠 전송**&#x200B;을 클릭하여 추출을 실행할 마이그레이션 세트를 만듭니다. 자세한 내용은 [컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)을 참조하십시오.
+   >* 사용자 매핑이 완료되면 이동 경로를 사용하여 컨텐츠 마이그레이션 페이지로 돌아갈 수 있습니다. 사용자 매핑 카드에 상태와 타임스탬프가 표시됩니다. **컨텐츠 전송**&#x200B;을 클릭하여 추출을 실행할 마이그레이션 세트를 만듭니다. 자세한 내용은 [컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)을 참조하십시오.
+
+
+### 사용자 매핑 프로세스 재개 {#resume-user-mapping}
+
+다음 이유 중 하나로 인해 사용자 매핑 프로세스가 중지되는 경우
+
+* 사용자가 선택한 **사용자 매핑 중지**
+* 액세스 토큰은 프로세스 또는
+* 다른 이유가 있습니다.
+
+진행률이 프로세스가 중지된 위치에서 저장됩니다. 사용자 매핑 로그를 검토하여 저장된 진행 상태를 확인합니다. **사용자 매핑 시작** 단추를 다시 클릭하여 중지된 위치에서 다시 시작합니다. 다시 시작하기 전에 액세스 토큰이 여전히 유효하거나 새로 고침되었는지 확인하십시오.
