@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출
 description: 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 53%
+source-wordcount: '526'
+ht-degree: 48%
 
 ---
 
@@ -60,3 +60,7 @@ ht-degree: 53%
    >**추출 중에 스테이징 컨테이너 덮어쓰기** 옵션을 비활성화해야 합니다.
    >
    >![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## 다음은 무엇입니까? {#whats-next}
+
+이제 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출을 학습하면 컨텐츠 전송 도구에서 수집 프로세스를 배울 수 있습니다. 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하는 방법을 알려면 [컨텐츠 전송 도구에서 Target에 컨텐츠 섭취](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 를 참조하십시오.

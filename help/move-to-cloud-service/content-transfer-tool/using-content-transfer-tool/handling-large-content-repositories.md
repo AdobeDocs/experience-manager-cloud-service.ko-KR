@@ -2,9 +2,9 @@
 title: 대용량 컨텐츠 저장소 처리
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -174,3 +174,7 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## 다음은 무엇입니까? {#whats-next}
+
+대규모 컨텐츠 저장소 처리를 통해 컨텐츠 전송 활동의 추출 및 수집 단계를 대폭 단축하여 컨텐츠를 AEM as a Cloud Service으로 이동하는 것을 알게 되면 이제 컨텐츠 전송 도구에서 추출 프로세스를 배울 수 있습니다. 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하는 방법을 알려면 [컨텐츠 전송 도구의 소스에서 컨텐츠 추출](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)을 참조하십시오.
