@@ -1,15 +1,15 @@
 ---
-title: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
-description: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
+description: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 26%
+source-wordcount: '1503'
+ht-degree: 25%
 
 ---
 
 
-# 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례 {#guidelines}
+# 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례 {#guidelines}
 
 ## 지침 및 우수 사례 {#best-practices}
 
@@ -81,3 +81,7 @@ ht-degree: 26%
 * 추가 작업을 하려면 초기 추출을 수행할 때부터 추가 추출을 실행할 때까지의 기존 컨텐츠의 컨텐츠 구조가 변경되지 않는 것이 중요합니다. 초기 추출 후 구조가 변경된 컨텐츠에서는 추가를 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
 
 * 마이그레이션 세트의 일부로 버전을 포함하되 `wipe=false` 을 사용하여 추가 작업을 수행하는 경우, 컨텐츠 전송 도구의 현재 제한 사항으로 인해 버전 제거를 비활성화해야 합니다. 버전 삭제를 사용하도록 유지하고 마이그레이션 세트에 추가 작업을 수행하려는 경우 수집을 `wipe=true`(으)로 수행해야 합니다.
+
+## 다음은 무엇입니까? {#whats-next}
+
+컨텐츠 전송 도구 사용에 대한 지침, 우수 사례 및 중요한 고려 사항을 알게 되면 이제 마이그레이션 세트 생성부터 도구를 설치하고 사용할 준비가 되었습니다. 자세한 내용은 [컨텐츠 전송 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)를 참조하십시오.

@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사전 요구 사항
 description: 컨텐츠 전송 도구 사전 요구 사항
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '575'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 1%
 
 ## 다음은 무엇입니까? {#whats-next}
 
-사전 요구 사항을 검토하고 마이그레이션 프로젝트에서 컨텐츠 전송 도구를 사용할 수 있는지 여부를 결정했으면 컨텐츠 전송 도구를 사용하는 동안 [추가 우수 사례 및 고려 사항](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)을 참조하십시오.
+사전 요구 사항을 검토하고 마이그레이션 프로젝트에서 컨텐츠 전송 도구를 사용할 수 있는지 여부를 결정했으면 컨텐츠 전송 도구를 사용하는 동안 [컨텐츠 전송 도구 사용 지침 및 우수 사례 를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en)

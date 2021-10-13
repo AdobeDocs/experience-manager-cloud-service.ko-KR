@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 개요
 description: 컨텐츠 전송 도구 개요
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 74%
+source-wordcount: '496'
+ht-degree: 65%
 
 ---
 
@@ -54,4 +54,7 @@ ht-degree: 74%
 
 수집 단계에서 델타 컨텐츠를 현재 컨텐츠 위에 적용하려면 *지우기* 옵션을 비활성화해야 합니다. 자세한 내용은 [수집 추가](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process)를 참조하십시오.
 
+## 다음은 무엇입니까? {#whats-next}
+
+컨텐츠 전송 도구 및 이 도구를 설명하는 개요를 알고 나면 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용할 수 있습니다. [컨텐츠 전송 도구에 대한 사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)을 검토해야 합니다.
 
