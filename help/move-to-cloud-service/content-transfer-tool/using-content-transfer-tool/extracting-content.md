@@ -1,0 +1,62 @@
+---
+title: 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출
+description: 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출
+source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 53%
+
+---
+
+
+# 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출 {#extracting-content}
+
+## 컨텐츠 전송 도구의 추출 프로세스 {#extraction-process}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_extraction"
+>title="컨텐츠 추출"
+>abstract="추출이란 소스 AEM 인스턴스에서 마이그레이션 세트라는 임시 영역으로 컨텐츠를 추출하는 것입니다. 마이그레이션 세트는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 컨텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="추출 추가"
+
+컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
+>[!NOTE]
+>Amazon S3 또는 Azure 데이터 저장소가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 단축할 수 있습니다. 이렇게 하려면 추출을 실행하기 전에 `azcopy.config` 파일을 구성해야 합니다. 자세한 내용은 [큰 컨텐츠 저장소 처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 를 참조하십시오.
+
+1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **추출**&#x200B;을 클릭하여 추출을 시작합니다. **마이그레이션 세트 추출** 대화 상자가 표시되고 **추출**&#x200B;을 클릭하여 추출 단계를 시작합니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
+
+   >[!NOTE]
+   >추출 단계 중에 스테이징 컨테이너를 덮어쓰는 옵션이 제공됩니다.
+
+
+1. 이제 **EXTRACTION** 필드에 **RUNNING** 상태가 표시되어 추출이 진행 중임을 나타냅니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
+
+   추출이 완료되면 마이그레이션 세트의 상태가 **완료됨**&#x200B;으로 업데이트되고 *녹색* 클라우드 아이콘이 **정보**&#x200B;필드 아래에 표시됩니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
+
+   >[!NOTE]
+   >UI에는 30초마다 개요 페이지를 다시 로드하는 자동 재로드 기능이 있습니다.
+   >추출 단계가 시작되면 *60초* 후 쓰기 잠금이 만들어지고 해제됩니다. 따라서 추출이 중지된 경우 다시 추출을 시작하기 전에 잠금이 해제될 때까지 잠시 기다려야 합니다.
+
+## 추가 추출 {#top-up-extraction-process}
+
+컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 추가를 지원하는 기능이 있습니다.
+
+>[!NOTE]
+>처음 컨텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다.
+>또한 기존 컨텐츠의 컨텐츠 구조는 초기 추출을 수행한 때부터 추가 추출을 실행할 때까지의 변경되지 않는 것이 중요합니다. 초기 추출 후 구조가 변경된 컨텐츠에서는 추가를 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
+
+추출 프로세스가 완료되면 추가 추출 방법을 사용하여 델타 컨텐츠를 전송할 수 있습니다. 아래 단계를 따르십시오.
+
+1. *개요* 페이지로 이동하고 추가 추출을 수행할 마이그레이션 세트를 선택합니다. **추출**&#x200B;을 클릭하여 추가 추출을 시작합니다. **마이그레이션 세트 추출** 대화 상자가 표시됩니다.
+
+   >[!IMPORTANT]
+   >
+   >**추출 중에 스테이징 컨테이너 덮어쓰기** 옵션을 비활성화해야 합니다.
+   >
+   >![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)

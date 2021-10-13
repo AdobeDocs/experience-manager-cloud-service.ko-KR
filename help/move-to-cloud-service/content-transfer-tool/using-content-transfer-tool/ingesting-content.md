@@ -1,0 +1,57 @@
+---
+title: 컨텐츠 전송 도구에서 컨텐츠를 Target에 수집
+description: 컨텐츠 전송 도구에서 컨텐츠를 Target에 수집
+source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 34%
+
+---
+
+
+# 컨텐츠 전송 도구에서 컨텐츠를 Target에 수집 {#ingesting-content}
+
+## 컨텐츠 전송 도구의 수집 프로세스 {#ingestion-process}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion"
+>title="컨텐츠 수집"
+>abstract="수집은 마이그레이션 세트 의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 것입니다. 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 추가를 지원하는 기능이 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="추가 수집"
+
+컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
+>[!NOTE]
+>Amazon S3 또는 Azure Data Store가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 자세한 내용은 [AzCopy를 사용하여 수집](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy)을 참조하십시오.
+
+1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **수집**&#x200B;을 클릭하여 수집을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다. 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다. 컨텐츠를 수집할 인스턴스를 선택합니다. **수집**&#x200B;을 클릭하여 수집 단계를 시작합니다.
+
+   >[!IMPORTANT]
+   >사전 복사로 섭취를 사용하는 경우(S3 또는 Azure Data Store용) 먼저 작성자 수집만 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
+
+   >[!IMPORTANT]
+   >**수집** 옵션이 활성화되기 전에 클라우드 인스턴스에서 기존 컨텐츠를 지우는 경우 기존 저장소 전체를 삭제하고 컨텐츠를 수집 할 새 저장소를 만듭니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. **administrators** 그룹에 추가된 관리자 사용자에게도 적용됩니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
+
+   또한 **고객 지원 센터**&#x200B;를 클릭하여 위의 그림과 같이 티켓을 기록합니다. 또한 자세한 내용은 [컨텐츠 전송 도구 사용에 대한 중요한 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)을 참조하십시오.
+
+1. 수집이 완료되면 상태가 **FINISHED**&#x200B;로 업데이트됩니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+
+## 추가 수집 {#top-up-ingestion-process}
+
+컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 *추가*&#x200B;를 지원하는 기능이 있습니다.
+
+>[!NOTE]
+>
+>처음 컨텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다.
+
+수집 프로세스가 완료되면 추가 수집 방법을 사용하여 델타 컨텐츠를 사용할 수 있습니다. 아래 단계를 따르십시오.
+
+1. *개요* 페이지로 이동하고 추가 수집을 수행할 마이그레이션 세트를 선택합니다. **수집**&#x200B;을 클릭하여 추가 추출을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+
+   >[!IMPORTANT]
+   >이전 수집 활동에서 기존 컨텐츠를 삭제하지 않으려면 먼저 클라우드 인스턴스에서 기존 컨텐츠를 지우는 **옵션을 비활성화해야 합니다.** 또한 **고객 지원 센터**&#x200B;를 클릭하여 이전 그림과 같이 티켓을 기록합니다.
