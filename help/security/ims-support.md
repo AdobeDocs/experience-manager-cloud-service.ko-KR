@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
+source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2022'
 ht-degree: 90%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 >[!TIP]
 >
->사용자가 AEM에 Adobe IMS를 Cloud Service으로 사용하여에 인증하는 방법과 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM과 해당 기능에 대한 액세스를 제어하는 방법에 대한 소개는 Experience League 교육 과정 [관리자용 AEM 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)을 참조하십시오. Adobe ID이 필요합니다.
+>사용자가 Adobe IMS를 사용하여 AEM에 인증하는 방법과 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM과 해당 기능에 대한 액세스를 제어하는 방법에 대한 소개는 Experience League 교육 과정 [관리자용 AEM 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) 을 참조하십시오. Adobe ID이 필요합니다.
 
 >[!NOTE]
 >
->AEM as a Cloud Service에 대한 IMS 로그인은 Admin Console에서 중첩 그룹을 지원하지 않습니다.
+>AEM에서는 현재 프로필에 그룹 지정을 지원하지 않습니다. 대신 개별적으로 사용자를 추가해야 합니다.
 
 ## 주요 특징 {#key-highlights}
 
@@ -132,7 +132,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ### Admin Console에서 제품 및 사용자 액세스 관리 {#managing-products-and-user-access-in-admin-console}
 
-제품 관리자가 Admin Console에 로그인하면, 아래와 같이 AEM의 여러 인스턴스가 Cloud Service 제품 컨텍스트로 표시됩니다. 예를 들어 **개요** 페이지에서 제품을 선택합니다.
+제품 관리자가 Admin Console에 로그인하면, 아래와 같이 AEM as a Cloud Service 제품 컨텍스트의 여러 인스턴스가 표시됩니다. 예를 들어 **개요** 페이지에서 제품을 선택합니다.
 
 ![인스턴스 로그인](/help/security/assets/ims6.png)
 
