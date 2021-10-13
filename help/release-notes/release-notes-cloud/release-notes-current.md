@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 노트.'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
+source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1603'
 ht-degree: 2%
 
 ---
@@ -42,10 +42,16 @@ ht-degree: 2%
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
+* 이제 Adobe Document Cloud의 기본 주석 및 주석 도구를 사용하여 PDF 파일의 주석을 달 수 있습니다. 문서 미리 보기 창에서 직접 텍스트, 강조 표시, 스티커 메모 및 드로잉을 추가하여 PDF 컨텐츠에 주석을 답니다. 특정 주석을 클릭하여 PDF에서 관심 페이지로 이동할 수도 있습니다
+
 * 이제 사용자는 열 및 카드 보기에서 검색 결과에 표시된 자산을 정렬할 수 있습니다. 정렬은 이름, 작성, 수정 또는 없음 열에서 작동합니다.
 
    ![열 및 카드 보기 [!DNL Assets] 에서 검색 결과를 정렬합니다.](/help/assets/assets/sort-searched-assets.png)
    *그림: 열 및 카드 보기 [!DNL Assets] 에서 검색 결과를 정렬합니다.*
+
+### [!DNL Assets] 사전 릴리스 채널의 새 기능 {#assets-prerelease-features}
+
+* [!DNL Assets] 에는 오디오 및 비디오 전사용 내장  [!DNL Azure Media Services] 커넥터가 포함되어 있습니다. 구성된 경우 지원되는 파일이 자동으로 전사되어 WebVTT 파일을 생성합니다. WebVTT 캡션은 자막으로 사용할 보다 효과적인 검색, 캡션 기능 또는 번역을 위해 사용됩니다.
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -56,8 +62,8 @@ ht-degree: 2%
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+Apparently, no new Assets features in Sep prerelease channel.
+A/V transcription feature via CQ-4303854 has moved to Oct prerelease now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
