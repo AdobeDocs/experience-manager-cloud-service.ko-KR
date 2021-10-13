@@ -5,10 +5,10 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
+source-git-commit: a309e668cb99231b274cf933c8392df873f33a81
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 45%
+source-wordcount: '151'
+ht-degree: 41%
 
 ---
 
@@ -35,9 +35,11 @@ ht-degree: 45%
       + [개요](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [우수 사례 분석기 사용](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + 컨텐츠 전송 도구 {#content-transfer-tool}
-      + [개요](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [컨텐츠 전송 도구 사전 요구 사항](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
-      + [대용량 컨텐츠 저장소 처리](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [개요](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+      + [컨텐츠 전송 도구 사전 요구 사항](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+      + [컨텐츠 전송 도구 시작하기](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+      + [대용량 컨텐츠 저장소 처리](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [컨텐츠 전송 도구 사용](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + 사용자 매핑 도구 {#user-mapping-tool}
          + [개요](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)

@@ -2,163 +2,16 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5243efa12fdca7e2e2d6ab23b38e8d09c6ea4945
+source-git-commit: 04494e116fcdd38622ae2d4434d7cf8e4034d5aa
 workflow-type: tm+mt
-source-wordcount: '3199'
-ht-degree: 35%
+source-wordcount: '1503'
+ht-degree: 52%
 
 ---
 
 # 컨텐츠 전송 도구 사용 {#using-content-transfer-tool}
 
-## 컨텐츠 전송 도구 사용에 대한 중요한 고려 사항 {#pre-reqs}
-
-아래 섹션을 따라 수행하여 컨텐츠 전송 도구를 실행하는 동안 중요한 고려 사항을 이해하십시오.
-
-* 컨텐츠 전송 도구의 최소 시스템 요구 사항은 AEM 6.3 이상 및 JAVA 8입니다. 더 낮은 AEM 버전을 사용하는 경우 컨텐츠 저장소를 AEM 6.5로 업그레이드해야 컨텐츠 전송 도구를 사용할 수 있습니다.
-
-* AEM을 시작하는 사용자가 `java` 명령을 실행할 수 있도록 AEM 환경에서 Java를 구성해야 합니다.
-
-* 도구에 주요 아키텍처 변경 사항이 있으므로 버전 1.3.0을 설치할 때 이전 버전의 컨텐츠 전송 도구를 제거하는 것이 좋습니다. 1.3.0을 사용하면 새 마이그레이션 세트를 만들고 새 마이그레이션 세트에서 추출 및 수집을 다시 실행해야 합니다.
-
-* 컨텐츠 전송 도구는 다음 유형의 데이터 저장소와 함께 사용할 수 있습니다. 파일 데이터 저장소, S3 데이터 저장소, 공유 S3 데이터 저장소 및 Azure Blob 저장소 데이터 저장소.
-
-* *샌드박스 환경*&#x200B;을(를) 사용 중인 경우 환경이 최신 상태이고 최신 릴리스로 업그레이드되었는지 확인하십시오. *프로덕션 환경*&#x200B;을 사용하는 경우 자동으로 업데이트됩니다.
-
-* 컨텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리 사용자여야 하며, 컨텐츠를 전송하는 Cloud Service 인스턴스의 로컬 AEM **administrators** 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 컨텐츠 전송 도구를 사용할 수 없습니다.
-
-* 수집&#x200B;**옵션이 활성화되기 전에**&#x200B;클라우드 인스턴스에서 기존 컨텐츠를 지우는 옵션이 활성화되면 기존 저장소 전체를 삭제하고 컨텐츠를 수집 (으)로 수집할 새 저장소를 만듭니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. **administrators** 그룹에 추가된 관리자 사용자에게도 적용됩니다. CTT에 대한 액세스 토큰을 검색하려면 **administrators** 그룹에 사용자를 다시 추가해야 합니다.
-
-* 액세스 토큰은 특정 기간 후 또는 Cloud Service 환경이 업그레이드된 후 주기적으로 만료될 수 있습니다. 액세스 토큰이 만료되면 Cloud Service 인스턴스에 연결할 수 없으며 새 액세스 토큰을 검색해야 합니다. 기존 마이그레이션 세트와 연결된 상태 아이콘은 빨간색 클라우드로 변경되며, 마우스로 가리키면 메시지가 표시됩니다.
-
-* 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 CTT(컨텐츠 전송 도구)가 컨텐츠 분석을 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스 또는 게시 인스턴스 또는 둘 다에 수집할 수 있습니다. 컨텐츠를 프로덕션 인스턴스로 이동하는 동안 컨텐츠를 타겟 작성자 인스턴스로 이동하도록 소스 작성자 인스턴스에 CTT를 설치하여 컨텐츠를 타겟 게시 인스턴스로 이동시키는 것이 좋습니다. 자세한 내용은 게시 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish)에서 [컨텐츠 전송 도구 실행 을 참조하십시오.
-
-* 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에 의해 권한을 충족하기 위해 필요한 사용자 및 그룹에만 해당합니다. *추출* 프로세스는 전체 `/home`를 마이그레이션 세트에 복사하고 *수집* 프로세스는 마이그레이션된 컨텐츠 ACL에서 참조되는 모든 사용자 및 그룹을 복사합니다. 기존 사용자 및 그룹을 IMS ID에 자동으로 매핑하려면 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)을 참조하십시오.
-
-* 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
-
-* 컨텐츠 전송 프로세스의 *추출* 단계를 완료하고 *수집 단계*&#x200B;를 시작하여 AEM as a Cloud Service *Stage* 또는 *프로덕션* 인스턴스에 컨텐츠를 수집하기 전에 지원 티켓을 로그하여 *수집* 프로세스 중에 중단이 발생하지 않도록 Adobe에게 *수집*&#x200B;을 실행할 의사가 있음을 알려야 합니다. 예정된 *수집* 날짜 1주 전에 지원 티켓을 기록해야 합니다. 지원 티켓을 제출하면 지원 팀이 다음 단계에 대한 지침을 제공합니다. 다음 세부 정보로 지원 티켓을 기록할 수 있습니다.
-
-   * *Ingestion* 단계를 시작할 때의 정확한 날짜 및 예상 시간(시간대와 함께).
-   * 데이터를 수집할 환경 유형(스테이지 또는 프로덕션)입니다.
-   * 프로그램 ID.
-
-* 작성자에 대한 *수집 단계*&#x200B;는 전체 작성자 배포를 축소합니다. 즉, 전체 수집 프로세스 중에 작성자 AEM을 사용할 수 없습니다. 또한 *수집* 단계를 실행하는 동안 Cloud Manager 파이프라인이 실행되지 않는지 확인하십시오.
-
-* 소스 AEM 시스템의 데이터 저장소로 `Amazon S3` 또는 `Azure` 를 사용하는 경우 저장된 Blob(가비지 수집)을 삭제할 수 없도록 데이터 저장소를 구성해야 합니다. 이렇게 하면 인덱스 데이터의 무결성이 보장되고 이러한 방법을 구성하지 않으면 이 인덱스 데이터의 무결성으로 인해 추출에 실패할 수 있습니다.
-
-* 사용자 지정 인덱스를 사용하는 경우 컨텐츠 전송 도구를 실행하기 전에 `tika` 노드로 사용자 지정 인덱스를 구성해야 합니다. 자세한 내용은 [새 인덱스 정의 준비](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition)를 참조하십시오.
-
-* 추가 작업을 하려면 초기 추출을 수행할 때부터 추가 추출을 실행할 때까지의 기존 컨텐츠의 컨텐츠 구조가 변경되지 않는 것이 중요합니다. 초기 추출 후 구조가 변경된 컨텐츠에서는 추가를 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한해야 합니다.
-
-* 마이그레이션 세트의 일부로 버전을 포함하되 `wipe=false` 을 사용하여 추가 작업을 수행하는 경우, 컨텐츠 전송 도구의 현재 제한 사항으로 인해 버전 제거를 비활성화해야 합니다. 버전 삭제를 사용하도록 유지하고 마이그레이션 세트에 추가 작업을 수행하려는 경우 수집을 `wipe=true`(으)로 수행해야 합니다.
-
-## 사용 가능 {#availability}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_download"
->title="다운로드"
->abstract="소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다. 최신 버전을 다운로드해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="릴리스 노트"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="소프트웨어 배포 포털"
-
-소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 참조하십시오.
-
->[!NOTE]
->[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털에서 컨텐츠 전송 도구를 다운로드합니다.
-
-## 컨텐츠 전송 도구 실행 {#running-tool}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_demo"
->title="컨텐츠 전송 도구 실행"
->abstract="컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service(작성자/게시)로 마이그레이션하는 방법을 알아봅니다."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 데모 참조"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="자습서 - 컨텐츠 전송 도구 사용"
-
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
-
-
-이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service(작성자/게시)에 마이그레이션하는 방법을 알아보십시오.
-
-1. Adobe Experience Manager을 선택하고 도구 -> **작업** -> **컨텐츠 마이그레이션**&#x200B;으로 이동합니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
-
-1. **컨텐츠 마이그레이션** 마법사에서 **컨텐츠 전송** 옵션을 선택합니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
-
-
-1. 첫 번째 마이그레이션 세트를 만들면 아래 콘솔이 나타납니다. **마이그레이션 세트 만들기**&#x200B;를 클릭하여 새 마이그레이션 세트를 만듭니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
-
-   >[!NOTE]
-   >기존 마이그레이션 세트가 있는 경우 콘솔에 기존 마이그레이션 세트 목록이 현재 상태로 표시됩니다.
-
-
-1. 아래 설명된 대로 **마이그레이션 세트 만들기** 화면의 필드를 채웁니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
-
-   1. **이름**: 마이그레이션 세트의 이름을 입력합니다.
-      >[!NOTE]
-      >마이그레이션 세트 이름에는 특수 문자를 사용할 수 없습니다.
-
-   1. **클라우드 서비스 구성**: 대상 AEM as a Cloud Service 작성자 URL로 입력합니다.
-
-      >[!NOTE]
-      >컨텐츠 전송 작업 중에 한 번에 최대 10개의 마이그레이션 세트를 만들고 유지 관리할 수 있습니다.
-      >또한 특정 환경 - *단계*, *개발* 또는 *프로덕션*&#x200B;마다 개별적으로 마이그레이션을 만들어야 합니다.
-
-   1. **액세스 토큰**: 액세스 토큰을 입력합니다.
-
-      >[!NOTE]
-      >**액세스 토큰 열기** 단추를 사용하여 액세스 토큰을 검색할 수 있습니다. Target Cloud Service 인스턴스의 AEM 관리자 그룹에 속해 있는지 확인해야 합니다.
-
-   1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
-
-      1. **버전 포함**: 필요에 따라 선택합니다. 버전이 포함되면 감사 이벤트를 마이그레이션하기 위해 경로 `/var/audit`이 자동으로 포함됩니다.
-
-      ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
-
-      >[!NOTE]
-      >마이그레이션 세트의 일부로 버전을 포함하되 `wipe=false` 을 사용하여 추가 작업을 수행하는 경우, 컨텐츠 전송 도구의 현재 제한 사항으로 인해 버전 제거를 비활성화해야 합니다. 버전 삭제를 사용하도록 유지하고 마이그레이션 세트에 추가 작업을 수행하려는 경우 수집을 `wipe=true`(으)로 수행해야 합니다.
-
-      1. **IMS 사용자 및 그룹의 매핑 포함**: IMS 사용자 및 그룹의 매핑을 포함할 옵션을 선택합니다.
-자세한 내용은 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)를 참조하십시오.
-
-      1. **포함할 경로**: 경로 브라우저를 사용하여 마이그레이션해야 하는 경로를 선택합니다. 경로 선택기는 입력 또는 선택 항목을 허용합니다.
-
-         >[!IMPORTANT]
-         >마이그레이션 세트를 만드는 동안 다음 경로가 제한됩니다.
-         >* `/apps`
-         >* `/libs`
-         >* `/home`
-         >* `/etc` (일부  `/etc` 경로는 CTT에서 선택할 수 있음)
-
-
-
-
-1. **마이그레이션 세트 만들기** 세부 정보 화면에서 모든 필드를 채운 후 **저장**&#x200B;을 클릭합니다.
-
-1. 아래 그림과 같이 **컨텐츠 전송** 마법사에서 마이그레이션 세트를 봅니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
-
-   모든 기존 마이그레이션 세트가 현재 상태 및 상태 정보와 함께 **컨텐츠 전송** 마법사에 표시됩니다. 아래에 설명된 이러한 아이콘 중 일부가 표시될 수 있습니다.
-
-   * *빨간색 클라우드*&#x200B;는 추출 프로세스를 완료할 수 없음을 나타냅니다.
-   * *녹색 클라우드*&#x200B;는 추출 프로세스를 완료할 수 있음을 나타냅니다.
-   * *노란색 아이콘*&#x200B;은 기존 마이그레이션 세트를 만들지 않았으며, 특정 마이그레이션은 동일한 인스턴스에 있는 다른 사용자가 작성했음을 나타냅니다.
-
-1. 마이그레이션 세트를 선택하고 **속성**&#x200B;을 클릭하여 마이그레이션 세트 속성을 보거나 편집합니다. 속성을 편집하는 동안 **마이그레이션 세트 이름** 또는 **서비스 URL**&#x200B;을 변경할 수 없습니다.
-
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
-
-
-### 컨텐츠 전송의 추출 프로세스 {#extraction-process}
+## 컨텐츠 전송의 추출 프로세스 {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
@@ -190,7 +43,7 @@ ht-degree: 35%
    >UI에는 30초마다 개요 페이지를 다시 로드하는 자동 재로드 기능이 있습니다.
    >추출 단계가 시작되면 *60초* 후 쓰기 잠금이 만들어지고 해제됩니다. 따라서 추출이 중지된 경우 다시 추출을 시작하기 전에 잠금이 해제될 때까지 잠시 기다려야 합니다.
 
-#### 추가 추출 {#top-up-extraction-process}
+### 추가 추출 {#top-up-extraction-process}
 
 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 추가를 지원하는 기능이 있습니다.
 
@@ -208,7 +61,7 @@ ht-degree: 35%
    >
    >![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
-### 컨텐츠 전송의 수집 프로세스 {#ingestion-process}
+## 컨텐츠 전송의 수집 프로세스 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -236,7 +89,7 @@ ht-degree: 35%
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-#### 추가 수집 {#top-up-ingestion-process}
+### 추가 수집 {#top-up-ingestion-process}
 
 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 *추가*&#x200B;를 지원하는 기능이 있습니다.
 
