@@ -2,14 +2,14 @@
 title: 도메인 이름 상태 확인
 description: 도메인 이름 상태 확인
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
+source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 도메인 이름 상태 {#check-status} 확인
+# 도메인 이름 상태 확인 {#check-status}
 
 도메인 설정 페이지의 환경 테이블에서 도메인 이름에 대한 상태 아이콘을 클릭하여 도메인 이름이 성공적으로 확인되었는지 여부를 확인할 수 있습니다.
 
@@ -27,7 +27,7 @@ FailedTXT 값이 없거나 오류가 발생했습니다. 지침을 따르고 다
 *상태* 옆에 있는 다시 확인 아이콘을 클릭합니다.
 
 * **확인되었습니다. 배포**
-FailedTXT 확인이 성공했습니다. 그러나 CDN 배포가 실패했습니다. Adobe 담당자에게 자동으로 통지됩니다.
+FailedTXT 확인이 성공했습니다. 그러나 CDN 배포가 실패했습니다. Adobe 담당자에게 문의하십시오.
 
 * **도메인 확인 및**
 배포이 상태는 사용자 지정 도메인 이름을 사용할 준비가 되었음을 나타냅니다.
