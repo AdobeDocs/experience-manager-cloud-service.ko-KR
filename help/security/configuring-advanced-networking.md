@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service 고급 네트워킹 구성
 description: AEM as a Cloud Service용 VPN 또는 전용 송신 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법을 알아봅니다.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 1%
@@ -81,17 +81,15 @@ API는 업데이트 상태를 나타내는 몇 초 후에 응답해야 하며 �
 예를 들어 다음은 `www.example.com:8443`에 요청을 보내는 샘플 코드입니다.
 
 ```java
-HttpsHost target = new HttpsHost("example.com", 8443, "https");
+String url = "www.example.com:8443"
+var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
  
-HttpHost proxy = new HttpHost(System.getenv("AEM_HTTPS_PROXY_HOST"),
-                              Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT")),
-                              "https");
- 
-RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
- 
-HttpGet request = new HttpGet("/");
-request.setConfig(config);
-CloseableHttpResponse response = httpclient.execute(target, request);
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
 비표준 Java 네트워킹 라이브러리를 사용하는 경우 모든 트래픽에 대해 위의 속성을 사용하여 프록시를 구성합니다.
