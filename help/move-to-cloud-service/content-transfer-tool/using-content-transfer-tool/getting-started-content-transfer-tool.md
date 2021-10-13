@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 시작하기
 description: 컨텐츠 전송 도구 시작하기
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
+source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 32%
@@ -103,7 +103,7 @@ ht-degree: 32%
 
 1. 아래 그림과 같이 **컨텐츠 전송** 마법사에서 마이그레이션 세트를 봅니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    모든 기존 마이그레이션 세트가 현재 상태 및 상태 정보와 함께 **컨텐츠 전송** 마법사에 표시됩니다. 아래에 설명된 이러한 아이콘 중 일부가 표시될 수 있습니다.
 

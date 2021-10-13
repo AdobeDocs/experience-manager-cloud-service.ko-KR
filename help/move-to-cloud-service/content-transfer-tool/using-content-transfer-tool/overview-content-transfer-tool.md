@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 개요
 description: 컨텐츠 전송 도구 개요
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: 001c0003a19153edeb238938a8eae330396e67c5
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 65%
+source-wordcount: '532'
+ht-degree: 61%
 
 ---
 
@@ -26,15 +26,15 @@ ht-degree: 65%
 
 1. **추출**: 추출이란 소스 AEM 인스턴스에서 *마이그레이션 세트*&#x200B;라고 하는 임시 영역으로 컨텐츠를 추출하는 것입니다. *마이그레이션 세트*&#x200B;는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 컨텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다.
 
-   자세한 내용은 [컨텐츠 전송의 추출 프로세스](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process)를 참조하십시오.
+   자세한 내용은 [컨텐츠 전송의 추출 프로세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html)를 참조하십시오.
 
 >[!NOTE]
 >
-> 추출 단계의 일부로 사용자 매핑 도구를 실행하는 것이 좋습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)을 참조하십시오.
+> 추출 단계의 일부로 사용자 매핑 도구를 실행하는 것이 좋습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html)을 참조하십시오.
 
 1. **수집**: 수집은 *마이그레이션 세트*&#x200B;의 컨텐츠를 대상 클라우드 서비스 인스턴스로 수집하는 것입니다.
 
-   자세한 내용은 [컨텐츠 전송의 수집 프로세스](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process)를 참조하십시오.
+   자세한 내용은 [컨텐츠 전송의 수집 프로세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html)를 참조하십시오.
 
 *마이그레이션 세트*&#x200B;에는 다음 속성이 있습니다.
 
@@ -50,9 +50,9 @@ ht-degree: 65%
 >
 >처음 컨텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다.
 
-추출 단계에서 기존 마이그레이션 세트를 ***추가***&#x200B;하려면 *덮어쓰기* 옵션을 비활성화해야 합니다. 자세한 내용은 [추출 추가](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process)를 참조하십시오.
+추출 단계에서 기존 마이그레이션 세트를 ***추가***&#x200B;하려면 *덮어쓰기* 옵션을 비활성화해야 합니다. 자세한 내용은 [추출 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en#top-up-extraction-process)를 참조하십시오.
 
-수집 단계에서 델타 컨텐츠를 현재 컨텐츠 위에 적용하려면 *지우기* 옵션을 비활성화해야 합니다. 자세한 내용은 [수집 추가](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process)를 참조하십시오.
+수집 단계에서 델타 컨텐츠를 현재 컨텐츠 위에 적용하려면 *지우기* 옵션을 비활성화해야 합니다. 자세한 내용은 [수집 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en#top-up-ingestion-process)를 참조하십시오.
 
 ## 다음은 무엇입니까? {#whats-next}
 
