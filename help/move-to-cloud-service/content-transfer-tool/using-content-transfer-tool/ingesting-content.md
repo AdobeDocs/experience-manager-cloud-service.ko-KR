@@ -1,7 +1,7 @@
 ---
 title: 컨텐츠 전송 도구에서 컨텐츠를 Target에 수집
 description: 컨텐츠 전송 도구에서 컨텐츠를 Target에 수집
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 34%
@@ -33,7 +33,7 @@ ht-degree: 34%
 
    ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
-   또한 **고객 지원 센터**&#x200B;를 클릭하여 위의 그림과 같이 티켓을 기록합니다. 또한 자세한 내용은 [컨텐츠 전송 도구 사용에 대한 중요한 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)을 참조하십시오.
+   또한 **고객 지원 센터**&#x200B;를 클릭하여 위의 그림과 같이 티켓을 기록합니다. 또한 자세한 내용은 [컨텐츠 전송 도구 사용에 대한 중요한 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations)을 참조하십시오.
 
 1. 수집이 완료되면 상태가 **FINISHED**&#x200B;로 업데이트됩니다.
 

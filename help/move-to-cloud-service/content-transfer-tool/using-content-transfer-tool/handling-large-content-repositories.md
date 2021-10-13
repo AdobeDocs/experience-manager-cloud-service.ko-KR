@@ -2,9 +2,9 @@
 title: 대용량 컨텐츠 저장소 처리
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1282'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ AzCopy 지원은 CTT 1.5.4 릴리스에 포함되어 있습니다. [소프트웨
 
 ### 3. azcopy.config 파일 구성 {#configure-azcopy-config-file}
 
-소스 AEM 인스턴스의 crx-quickstart/cloud-migration에서 azcopy.config 라는 새 파일을 만듭니다.
+소스 AEM 인스턴스의 `crx-quickstart/cloud-migration`에서 azcopy.config 라는 새 파일을 만듭니다.
 
 이 구성 파일의 내용은 소스 AEM 인스턴스가 Azure 또는 Amazon S3 데이터 저장소를 사용하는지에 따라 달라집니다.
 
@@ -106,7 +106,8 @@ s3SecretKey=--REDACTED--
 
 위의 구성 파일이 준비되면 AzCopy 사전 복사 단계는 모든 후속 추출의 일부로 실행됩니다. 이 파일이 실행되지 않도록 하려면 이 파일의 이름을 바꾸거나 제거할 수 있습니다.
 
-1. CTT UI에서 추출을 시작합니다. 자세한 내용은 [컨텐츠 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool) 및 [추출 프로세스](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process)를 참조하십시오.
+1. CTT UI에서 추출을 시작합니다. 자세한 내용은 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 및 [추출 프로세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en)를 참조하십시오.
+
 1. 추출 로그에 다음 줄이 인쇄되었는지 확인합니다.
 
 ```
@@ -143,7 +144,7 @@ AzCopy에 문제가 발생하면 즉시 추출이 실패하며 추출 로그에 
 
 수집 중에 AzCopy를 활용하려면 버전 2021.6.5561 이상인 AEM as a Cloud Service 버전을 사용해야 합니다.
 
-CTT UI에서 작성자 수집을 시작합니다. 자세한 내용은 [수집 프로세스](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process)를 참조하십시오.
+CTT UI에서 작성자 수집을 시작합니다. 자세한 내용은 [수집 프로세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en)를 참조하십시오.
 AzCopy의 로그 항목이 수집 로그에 나타납니다. 이러한 기능은 다음과 같습니다.
 
 ```

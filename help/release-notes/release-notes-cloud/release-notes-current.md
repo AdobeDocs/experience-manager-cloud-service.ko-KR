@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 릴리스 노트.'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
+source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,7 @@ Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
    * 오류를 올바르게 건너뛰고 사용자 매핑 활동을 계속 진행합니다
    * **액세스 토큰**&#x200B;이 24시간 후에 만료되는 경우 사용자 매핑이 더 이상 실패하지 않습니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.
 
-* 컨텐츠 전송 도구의 견고성을 높이기 위해 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다. 자세한 내용은 [컨텐츠 전송 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en)을 참조하십시오.
+* 컨텐츠 전송 도구의 견고성을 높이기 위해 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다. 자세한 내용은 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)를 참조하십시오.
 
 * 버전이 포함되면 감사 이벤트를 마이그레이션하기 위해 경로 `/var/audit`이 자동으로 포함됩니다.
 

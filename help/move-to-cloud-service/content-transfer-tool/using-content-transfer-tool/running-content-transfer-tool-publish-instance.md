@@ -1,9 +1,9 @@
 ---
 title: 게시 인스턴스에서 컨텐츠 전송 도구 실행
 description: 게시 인스턴스에서 컨텐츠 전송 도구 실행
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 아래 설명된 대로 권장되는 방법을 따르십시오.
 
-* 작성자 인스턴스에서 사용한 것과 동일한 버전의 CTT를 사용합니다.
+* 작성자 인스턴스에서 사용한 것과 동일한 버전의 컨텐츠 전송 도구를 사용합니다.
 
 * 단일 게시 노드만 마이그레이션해야 합니다. 추출 작업을 시작하기 전에 로드 밸런서에서 제거해야 합니다.
 
-* 마이그레이션 세트를 만들 때 작성 AEMaaCS 환경의 URL을 사용합니다.
+* 마이그레이션 세트를 만들 때 작성 AEM as a Cloud Service 환경의 URL을 사용합니다.
 
 * 게시하기 위해 수집하는 동안 게시 계층의 크기가 조정되지 않습니다(작성자와 다름). 따라서 다음과 같은 쓰기 작업을 시작하지 마십시오.
 

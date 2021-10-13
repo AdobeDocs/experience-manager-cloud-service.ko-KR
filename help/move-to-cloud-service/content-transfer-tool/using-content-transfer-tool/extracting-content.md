@@ -1,7 +1,7 @@
 ---
 title: 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출
 description: 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 48%
@@ -21,7 +21,7 @@ ht-degree: 48%
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
 >[!NOTE]
->Amazon S3 또는 Azure 데이터 저장소가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 단축할 수 있습니다. 이렇게 하려면 추출을 실행하기 전에 `azcopy.config` 파일을 구성해야 합니다. 자세한 내용은 [큰 컨텐츠 저장소 처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 를 참조하십시오.
+>Amazon S3 또는 Azure 데이터 저장소가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 단축할 수 있습니다. 이렇게 하려면 추출을 실행하기 전에 `azcopy.config` 파일을 구성해야 합니다. 자세한 내용은 [대용량 컨텐츠 저장소 처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)를 참조하십시오.
 
 1. *개요* 페이지에서 마이그레이션 세트를 선택하고 **추출**&#x200B;을 클릭하여 추출을 시작합니다. **마이그레이션 세트 추출** 대화 상자가 표시되고 **추출**&#x200B;을 클릭하여 추출 단계를 시작합니다.
 
