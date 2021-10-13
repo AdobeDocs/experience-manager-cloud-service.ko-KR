@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용
 description: 컨텐츠 전송 도구 사용
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
+source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3193'
 ht-degree: 36%
 
 ---
@@ -83,26 +83,24 @@ ht-degree: 36%
 
 1. Adobe Experience Manager을 선택하고 도구 -> **작업** -> **컨텐츠 마이그레이션**&#x200B;으로 이동합니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. **컨텐츠 마이그레이션** 마법사에서 **컨텐츠 전송** 옵션을 선택합니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. 첫 번째 마이그레이션 세트를 만들면 아래 콘솔이 나타납니다. **마이그레이션 세트 만들기**&#x200B;를 클릭하여 새 마이그레이션 세트를 만듭니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
-
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >기존 마이그레이션 세트가 있는 경우 콘솔에 기존 마이그레이션 세트 목록이 현재 상태로 표시됩니다.
 
-   또한 **사용자 매핑 구성 만들기**&#x200B;를 클릭하여 [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)에 액세스합니다.
 
 1. 아래 설명된 대로 **마이그레이션 세트 만들기** 화면의 필드를 채웁니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **이름**: 마이그레이션 세트의 이름을 입력합니다.
       >[!NOTE]
@@ -122,6 +120,9 @@ ht-degree: 36%
    1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
       1. **버전 포함**: 필요에 따라 선택합니다. 버전이 포함되면 감사 이벤트를 마이그레이션하기 위해 경로 `/var/audit`이 자동으로 포함됩니다.
+
+      ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+
       >[!NOTE]
       >마이그레이션 세트의 일부로 버전을 포함하되 `wipe=false` 을 사용하여 추가 작업을 수행하는 경우, 컨텐츠 전송 도구의 현재 제한 사항으로 인해 버전 제거를 비활성화해야 합니다. 버전 삭제를 사용하도록 유지하고 마이그레이션 세트에 추가 작업을 수행하려는 경우 수집을 `wipe=true`(으)로 수행해야 합니다.
 
@@ -136,6 +137,7 @@ ht-degree: 36%
          >* `/libs`
          >* `/home`
          >* `/etc` (일부  `/etc` 경로는 CTT에서 선택할 수 있음)
+
 
 
 
