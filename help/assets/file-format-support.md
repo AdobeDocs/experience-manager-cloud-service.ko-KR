@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '775'
 ht-degree: 8%
 
 ---
@@ -20,10 +20,10 @@ ht-degree: 8%
 
 자산 마이크로서비스를 사용한 자산 전환의 주요 사항은 다음과 같습니다.
 
-* 키 [Adobe 파일 형식](#adobe-formats)은 [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] 및 [!DNL Adobe Acrobat] 또는 PDF를 포함하여 Adobe 응용 프로그램 및 서비스에 의해 생성됩니다.
+* 키 [Adobe 파일 형식](#adobe-formats)은 [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] 및 [!DNL Adobe Acrobat] 또는 PDF을 포함하여 Adobe 응용 프로그램 및 서비스에 의해 생성됩니다.
 * 키 [이미징 파일 형식](#image-formats).
 * [캐논, ](#camera-raw-formats) 니콘, 후지필름, 올림푸스 및 기타 제조업체(Adobe Camera Raw에서 제공)를 포함한 다양한 카메라의 Camera Raw 파일 포맷을 제공합니다.
-* 일반 [문서 형식](#document-formats)(Microsoft Office 및 Open Document 형식 포함)
+* Microsoft Office 및 열린 문서 형식을 포함한 일반 [문서 형식](#document-formats)
 * 광범위한 [video](#video-formats) 및 [audio](#audio-formats) 형식
 
 다음 범례에서는 각 형식에 대한 지원 수준을 설명합니다.
@@ -80,7 +80,7 @@ ht-degree: 8%
 | PSD   ‡ | ✓ | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-병합된 ‡ 이미지가 PSD 파일에서 추출됩니다. [!DNL Adobe Photoshop]에 의해 생성되며 PSD 파일에 포함된 이미지입니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+병합된 ‡ 이미지가 PSD 파일에서 추출됩니다. 이 이미지는 [!DNL Adobe Photoshop]에 의해 생성되며 PSD 파일에 포함된 이미지입니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 [!DNL Dynamic Media]에서 지원되지 않는 다음 하위 유형의 래스터 이미지 파일 형식:
 
@@ -89,7 +89,7 @@ ht-degree: 8%
 * CMYK, RGB, 회색 음영 또는 비트맵 이외의 색상 공간이 있는 PSD 파일은 지원되지 않습니다. DuoTone, Lab 및 Indexed 색상 공백은 지원되지 않습니다.
 * 비트 깊이가 16보다 큰 PSD 파일.
 * 부동 소수점 데이터가 있는 TIFF 파일입니다.
-* Lab 색상 공간이 있는 TIFF 파일입니다.
+* Lab 색상 공간이 있는 TIFF 파일
 
 ## 3D 형식 {#support-3d-formats}
 
@@ -97,7 +97,7 @@ ht-degree: 8%
 
 또한 [Dynamic Media](/help/assets/dynamic-media/assets-3d.md)에서 3D 자산 작업 을 참조하십시오.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 게재 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
@@ -146,7 +146,7 @@ ht-degree: 8%
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | DOC | - | - | - | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
+| ePub | - | ✓ | - | - | - |
 | HTML | - | ✓ | - | ✓ | ✓ |
 | ODF | ✓ | ✓ | ✓ | - | - |
 | ODM | ✓ | ✓ | ✓ | - | - |
@@ -207,15 +207,13 @@ ht-degree: 8%
 | MP4 | MPEG-4 | H264/AVC(모든 프로필) | - |
 | 이동, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV(DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
-| WMV | Windows Media 9 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen(MSS2), Microsoft Photo Story(WVP2) |
+| WMV | Windows Media 9 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft 화면(MSS2), Microsoft 사진 스토리(WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| M4V | 애플 아이튠스 | H264/AVC | - |
-| AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indfo3(IV30), MJPEG, Microsoft 비디오 1(MS-CRAM) |
+| M4V | Apple iTunes | H264/AVC | - |
+| AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3(IV30), MJPEG, Microsoft 비디오 1(MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | 마트로스카 | H264/AVC | - |
-| RAM, RM | RealVideo | 지원되지 않음 | Real G2(RV20), Real 8(RV30), Real 10(RV40) |
-| MJ2 | 동작 JPEG 2000 | 모션 JPEG 2000 코덱을 | - |
 
 ## 오디오 형식 {#audio-formats}
 
