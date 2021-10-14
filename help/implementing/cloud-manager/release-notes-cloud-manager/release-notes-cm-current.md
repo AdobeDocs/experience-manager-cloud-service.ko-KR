@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 릴리스 2021.10.0의 Cloud Manager 릴리스 노
 description: AEM as a Cloud Service 릴리스 2021.10.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 3b1ff5f1715cd18228a9b7e5c57b0f3d84ee0eb0
+source-git-commit: 62e9466fdfd6d6ac63dad9a2bc19693f7dc8d098
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '381'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ AEM as a Cloud Service 2021.10.0의 Cloud Manager 릴리스 날짜는 2021년 10
 
 * 이제 IP 허용 목록 추가 마법사가 허용된 최대 IP 허용 목록 수에 도달했는지 사용자에게 알려줍니다.
 
-* 이제 Cloud Manager API 설명서에는 로그인한 사용자가 브라우저에서 API를 실험할 수 있도록 해주는 대화형 필드가 포함되어 있습니다. [Cloud Manager API 놀이터](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) 참조
+* 이제 Cloud Manager API 설명서에는 로그인한 사용자가 브라우저에서 API를 실험할 수 있도록 해주는 대화형 필드가 포함되어 있습니다. 자세한 내용은 [Cloud Manager API 놀이터](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/)를 참조하십시오.
 
 * &#39;탐색 대상&#39; 아래의 선택 옵션이 비활성화되어 있으면 프로그램 카드의 도구 설명이 더 설명적입니다. 이제 &quot;프로덕션 환경이 없습니다.&quot;가 표시됩니다.
 

@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
    자세한 내용은 [비프로덕션 및 코드 품질 전용 파이프라인](configure-pipeline.md#non-production-pipelines)을 참조하십시오.
 
->[!NOTE]
->파이프라인을 구성하려면 다음을 수행해야 합니다.
-> * 파이프라인을 시작할 트리거를 정의합니다.
-> * 프로덕션 배포를 제어하는 매개 변수를 정의합니다.
-> * 성능 테스트 매개 변수를 구성합니다.
+   >[!NOTE]
+   >파이프라인을 구성하려면 다음을 수행해야 합니다.
+   > * 파이프라인을 시작할 트리거를 정의합니다.
+   > * 프로덕션 배포를 제어하는 매개 변수를 정의합니다.
+   > * 성능 테스트 매개 변수를 구성합니다.
 
 
 ## 프로덕션 파이프라인 설정 {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
 
-1. **파이프라인** 카드에서 **편집**&#x200B;을 클릭합니다.
+1. **클릭..**&#x200B;파이프라인&#x200B;**카드에서**&#x200B;을 클릭하고 아래 그림과 같이 **편집**&#x200B;을 클릭합니다.
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. **소스 코드** 탭에서는 저장소를 업데이트할 수 있습니다. **보고서 정보에 액세스**&#x200B;를 클릭하여 저장소를 업데이트합니다.
+1. **프로덕션 파이프라인 편집** 대화 상자가 표시됩니다.
 
-   >[!NOTE]
-   >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
+   1. **구성** 탭에서는 **파이프라인 이름**, **배포 트리거** 및 **중요한 지표 실패 동작**&#x200B;을 업데이트할 수 있습니다.
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. **환경** 탭에서는 스테이지 및 프로덕션 옵션을 업데이트할 수 있습니다.
+   1. **소스** 탭에서는 웹 계층 구성을 무시하고 **프로덕션 배포 옵션**&#x200B;에서 업데이트할 수 있습니다.
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. **경험 감사** 옵션을 사용하면 새 페이지를 업데이트하거나 추가할 수 있습니다.
+   1. **경험 감사** 옵션을 사용하면 새 페이지를 업데이트하거나 추가할 수 있습니다.
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. 파이프라인 편집을 완료했으면 **저장**&#x200B;을 클릭합니다.
+1. 파이프라인 편집을 완료했으면 **업데이트**&#x200B;를 클릭합니다.
 
 ## 비프로덕션 및 코드 품질 전용 파이프라인 {#non-production-pipelines}
 
-스테이징 및 프로덕션에 배포되는 기본 파이프라인 외에도 고객은 **비프로덕션 파이프라인**&#x200B;이라고 하는 추가 파이프라인을 설정할 수 있습니다. 이러한 파이프라인은 항상 빌드 및 코드 품질 단계를 실행합니다. 선택적으로 AEM as a Cloud Service 환경에 배포할 수도 있습니다.
+스테이징 및 프로덕션에 배포되는 기본 파이프라인 외에도 고객은 **비프로덕션 파이프라인**&#x200B;이라고 하는 추가 파이프라인을 설정할 수 있습니다. 이러한 파이프라인은 항상 빌드 및 코드 품질 단계를 실행합니다. AEM as a Cloud Service 환경에 선택적으로 배포할 수도 있습니다.
 
 홈 화면에서는 이러한 파이프라인이 새 카드에 나열됩니다.
 
