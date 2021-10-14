@@ -2,15 +2,25 @@
 title: CI-CD 파이프라인
 description: CI-CD 파이프라인
 index: false
-source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
 
 
 # Cloud Manager CI-CD 파이프라인 {#intro-cicd}
+
+## 소개 {#introduction}
+
+>[!NOTE]
+>Cloud Manager의 CI/CD 파이프라인은 릴리스 케이던스와 일치시키기 위한 소스 코드 리포지토리의 가져오기 요청, 코드 변경 또는 일반 일정과 같은 이벤트에 의해 트리거됩니다.
+
+파이프라인을 구성하려면 다음을 수행해야 합니다.
+* 파이프라인을 시작할 트리거 정의
+* 프로덕션 배포를 제어하는 매개 변수 정의
+* 성능 테스트 매개 변수 구성
 
 Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
@@ -31,19 +41,3 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 >[!NOTE]
 >자세한 내용은 비프로덕션 및 코드 품질 전용 파이프라인 을 참조하십시오.
-
-Cloud Manager의 프로덕션 및 비프로덕션 파이프라인에서 지원되는 배포 및 코드 품질은 다음 두 가지 유형으로 분류됩니다.
-
-* 프런트엔드
-* 전체 스택
-
-다음 표에는 파이프라인이 요약되어 있습니다.
-
-
->[!NOTE]
->Cloud Manager의 CI/CD 파이프라인은 릴리스 케이던스와 일치시키기 위한 소스 코드 리포지토리의 가져오기 요청, 코드 변경 또는 일반 일정과 같은 이벤트에 의해 트리거됩니다.
->
->파이프라인을 구성하려면 다음을 수행해야 합니다.
->* 파이프라인을 시작할 트리거 정의
->* 프로덕션 배포를 제어하는 매개 변수 정의
->* 성능 테스트 매개 변수 구성

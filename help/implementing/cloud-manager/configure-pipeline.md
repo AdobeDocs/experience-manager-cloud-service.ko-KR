@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -129,12 +129,9 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. **소스** 탭에서는 파이프라인에 대한 웹 계층 구성을 무시하고 **프로덕션**&#x200B;에 배포하기 전에 일시 중지 를 선택하거나 선택 취소할 수 있으며, **프로덕션 배포 옵션**&#x200B;에서 **예약된** 옵션을 선택할 수 있습니다.
+   1. **소스** 탭에서는 **프로덕션**&#x200B;에 배포하기 전에 일시 중지 및 **프로덕션 배포 옵션**&#x200B;에서 예약된&#x200B;**옵션을 선택하거나 선택 취소할 수 있는 옵션을 제공합니다.**
 
-      >[!NOTE]
-      >**웹 계층 구성 무시**&#x200B;를 선택 취소하면 파이프라인도 웹 계층 구성도 배포됩니다.
-
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
    1. **경험 감사** 옵션을 사용하면 새 페이지를 업데이트하거나 추가할 수 있습니다.
 
@@ -148,41 +145,59 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 홈 화면에서는 이러한 파이프라인이 새 카드에 나열됩니다.
 
-1. Cloud Manager 홈 화면에서 **비프로덕션 파이프라인** 타일에 액세스합니다.
+1. Cloud Manager 홈 화면에서 **파이프라인** 카드에 액세스합니다. **+추가**&#x200B;를 클릭하고 **비프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. **추가** 단추를 클릭하여 파이프라인 이름, 파이프라인 유형 및 Git 분기를 지정합니다.
+1. **비프로덕션 파이프라인 추가**  대화 상자가 표시됩니다. 만들려는 파이프라인 유형을 **코드 품질 파이프라인** 또는 **배포 파이프라인** 선택합니다.
 
-   또한 파이프라인 옵션에서 배포 트리거 및 중요 실패 동작을 설정할 수도 있습니다.
+   또한 **배포 옵션**&#x200B;에서 **배포 트리거** 및 **중요 실패 동작**&#x200B;을 설정할 수도 있습니다. **계속**&#x200B;을 클릭합니다.
 
-   ![](assets/non-prod-pipe1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. **저장** 을 클릭하면 파이프라인이 아래 표시된 대로 5개의 작업이 있는 홈 화면의 카드에 표시됩니다.
+1. **전체 스택** 코드가 선택되어 있습니다. **리포지토리** 및 **Git 분기**&#x200B;를 선택할 수 있습니다. **저장**&#x200B;을 클릭합니다.
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-   * **편집**  - 파이프라인 설정을 편집할 수 있습니다.
-   * **세부 사항**  - 파이프라인 실행에 대한 세부 사항을 제공합니다
-   * **빌드**  - 파이프라인을 실행할 수 있는 실행 페이지로 이동합니다
-   * **리포지토리 정보에 액세스**  - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있습니다
+1. 이제 새로 생성된 비프로덕션 파이프라인이 **파이프라인** 카드에 표시됩니다.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+
+
+   파이프라인은 아래와 같이 세 가지 작업이 있는 홈 화면의 카드에 표시됩니다.
+
+   * **추가**  - 새 파이프라인을 추가할 수 있습니다.
+   * **리포지토리 정보에 액세스**  - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있습니다.
    * **자세히 알아보기**  - CI/CD 파이프라인 설명서 리소스를 이해합니다.
 
 ### 비프로덕션 파이프라인 편집 {#editing-nonprod-pipeline}
 
-**프로그램 개요** 페이지에서 파이프라인 구성을 편집할 수 있습니다.
+**프로그램 개요** 페이지의 **파이프라인 카드**&#x200B;에서 파이프라인 구성을 편집할 수 있습니다.
 
 구성된 비프로덕션 파이프라인을 편집하려면 아래 절차를 따르십시오.
 
 1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
 
-1. **비프로덕션** 탭을 선택하고 원하는 파이프라인을 선택한 후 **편집**&#x200B;을 클릭합니다.
+1. 비프로덕션 파이프라인을 선택하고 **... 을 클릭합니다.**. 아래 그림과 같이 **편집**&#x200B;을 클릭합니다.
 
-   ![](assets/configure-pipeline/non-prod-edit-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. 원하는 저장소 및 기타 필요한 업데이트를 선택하고 **저장**&#x200B;을 클릭합니다.
+1. **프로덕션 파이프라인 편집** 대화 상자가 표시됩니다.
 
-   ![](assets/configure-pipeline/edit-nonprodenv.png)
+   1. **구성** 탭에서는 **파이프라인 이름**, **배포 트리거** 및 **중요한 지표 실패 동작**&#x200B;을 업데이트할 수 있습니다.
+
+      >[!NOTE]
+      >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. **소스 코드** 탭에서는 **리포지토리** 및 **Git 분기**&#x200B;를 업데이트할 수 있습니다.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. 비프로덕션 파이프라인의 편집을 완료했으면 **업데이트**&#x200B;를 클릭합니다.
+
 
 ## 다음 단계 {#the-next-steps}
 
