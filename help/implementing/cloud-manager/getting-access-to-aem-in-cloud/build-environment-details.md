@@ -2,9 +2,9 @@
 title: 빌드 환경 세부 정보
 description: 빌드 환경 세부 사항 - Cloud Services
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: f39cc7bcbfe11c64a0fc7bb673f9e9286214106d
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 * 빌드 환경은 Ubuntu 18.04에서 파생된 Linux 기반입니다.
 * Apache Maven 3.6.0이 설치됩니다.
 * 설치된 Java 버전은 Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2 및 Azul Zulu 11.0.11입니다.
+* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u202를 포함하는 `/usr/lib/jvm/jdk1.8.0_202` 로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션을 참조하십시오.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
 
    * bzip2
@@ -71,7 +72,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 
 이렇게 하면 모든 도구 체인 인식 Maven 플러그인이 Oracle JDK, 버전 11을 사용하게 됩니다.
 
-이 방법을 사용하는 경우 Maven 자체는 기본 JDK(Oracle 8)를 사용하여 계속 실행됩니다. 따라서 Apache Maven Enforcer 플러그인과 같은 플러그인을 통해 Java 버전을 확인하거나 적용하면 작동하지 않으므로 이러한 플러그인을 사용하지 않아야 합니다.
+이 방법을 사용하는 경우 Maven 자체는 기본 JDK(Oracle 8)를 사용하여 계속 실행되며 JAVA_HOME 환경 변수는 변경되지 않습니다. 따라서 Apache Maven Enforcer 플러그인과 같은 플러그인을 통해 Java 버전을 확인하거나 적용하면 작동하지 않으므로 이러한 플러그인을 사용하지 않아야 합니다.
 
 현재 사용 가능한 공급업체/버전 조합은 다음과 같습니다.
 
@@ -89,11 +90,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 
 전체 Maven 실행에 대해 JDK로 Azul 8 또는 Azul 11을 선택할 수도 있습니다. 도구 체인 옵션과 달리 도구 체인 구성이 도구 체인 인식 Maven 플러그인에 대해 여전히 도구 체인 구성이 적용되는 경우에도 도구 체인 구성이 설정되어 있지 않으면 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용하여 Java 버전을 확인 및 적용하면 작동합니다.
 
-이렇게 하려면 파이프라인에서 사용하는 Git 리포지토리 분기에 `.cloudmanager/java-version` 파일을 만듭니다. 이 파일에는 콘텐츠 11 또는 8이 있을 수 있습니다. 다른 값은 무시됩니다. 11을 지정하면 아줄 11이 사용됩니다. 8을 지정하면 아줄 8이 사용됩니다.
-
->[!NOTE]
->현재 2021년 10월로 예상되는 Cloud Manager의 향후 릴리스에서는 기본 JDK가 변경되고 기본값은 Azul 11이 됩니다. Java 11과 호환되지 않는 프로젝트에서는 이 스위치의 영향을 받지 않도록 가능한 한 빨리 컨텐츠 8로 이 파일을 만들어야 합니다.
-
+이렇게 하려면 파이프라인에서 사용하는 Git 리포지토리 분기에 `.cloudmanager/java-version` 파일을 만듭니다. 이 파일에는 콘텐츠 11 또는 8이 있을 수 있습니다. 다른 값은 무시됩니다. 11을 지정하면 Azul 11이 사용되고 JAVA_HOME 환경 변수가 `/usr/lib/jvm/jdk-11.0.11`로 설정됩니다. 8을 지정하면 Azul 8이 사용되고 JAVA_HOME 환경 변수가 `/usr/lib/jvm/jdk-8.0.292`로 설정됩니다.
 
 ## 환경 변수 {#environment-variables}
 

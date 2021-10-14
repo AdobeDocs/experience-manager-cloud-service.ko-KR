@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager 저장소
 description: Cloud Manager 저장소
-source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
+source-git-commit: e5d52c92c9162a58cc1a8e4f5d1169d59ee13119
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -118,4 +118,5 @@ Git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
 * Git URL은 위에서 설명한 구문에서 정확히 일치해야 합니다. 보안상의 이유로 이러한 URL에 자격 증명을 포함하지 마십시오.
 * 분기의 루트에 있는 하위 모듈만 지원됩니다.
 * Git 하위 모듈 참조는 특정 Git 커밋에 저장됩니다. 따라서 하위 모듈 리포지토리를 변경할 때 예를 들어 `git submodule update --remote` 을 사용하여 커밋 참조 를 업데이트해야 합니다.
+* 별도로 필요하지 않는 한 &quot;얕은&quot; 하위 모듈을 사용하는 것이 좋습니다. 이렇게 하려면 각 하위 모듈에 대해 `git config -f .gitmodules submodule.<submodule path>.shallow true` 을 실행하십시오.
 

@@ -1,42 +1,52 @@
 ---
-title: AEM as a Cloud Service 릴리스 2021.9.0의 Cloud Manager 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2021.9.0의 Cloud Manager 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2021.10.0의 Cloud Manager 릴리스 노트
+description: AEM as a Cloud Service 릴리스 2021.10.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: ae619bb5a9ecc030fd3fa486445bcca7d3386df6
+source-git-commit: 3b1ff5f1715cd18228a9b7e5c57b0f3d84ee0eb0
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 5%
+source-wordcount: '378'
+ht-degree: 3%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.9.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.10.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2021.9.0 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service Manager에 대한 릴리스 노트를 간략하게 설명합니다2021.10.0.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service에 대한 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 클릭하십시오.
+>Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 클릭하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service 2021.9.0의 Cloud Manager 릴리스 날짜는 2021년 9월 9일입니다.
-다음 릴리스는 2021년 10월 7일에 예정되어 있습니다.
+AEM as a Cloud Service 2021.10.0의 Cloud Manager 릴리스 날짜는 2021년 10월 14일입니다.
+다음 릴리스는 2021년 11월 4일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new}
 
-* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 30으로 업데이트되었습니다.
+* 향후 몇 가지 변경 사항에 대비하기 위해 기존 배포 파이프라인이 사용자 인터페이스에서 **전체 스택** 파이프라인으로 참조되고 레이블이 지정됩니다.
 
-* Cloud Manager 랜딩 페이지의 프로그램 카드 및 관련 경험이 새로 고침되었습니다.
+* 이제 파이프라인 카드가 새로 고쳐져서 프로덕션 파이프라인과 비프로덕션 파이프라인을 모두 표시하는 통합된 단일 면을 표시할 수 있으며, 사용자는 각 파이프라인과 연관된 작업 메뉴에서 직접 실행/일시 중지/재개 를 선택할 수 있습니다.
 
-* 이제 코드 품질 단계 로그에 OakPal 검색 프로세스에 대한 자세한 로깅 정보가 포함됩니다.
+* 이제 배포 관리자 역할의 사용자는 UI를 통해 셀프 서비스 방식으로 프로덕션 파이프라인을 삭제할 수 있습니다.
 
-* 이제 활동 페이지 메뉴 옵션에는 완료된 코드 생성기 실행에 대한 **다운로드 로그**&#x200B;에 대한 옵션이 포함됩니다. 이를 선택하면 빌드 단계의 로그가 다운로드됩니다.
+* 이제 익숙하고 현대적인 모듈을 사용할 수 있도록 파이프라인 경험을 추가 및 편집할 수 있습니다.
 
-* 프로그램 카드에서 바로 을 클릭하면 이제 Cloud Manager의 **개요** 페이지로 이동합니다. 자세한 내용은 [프로덕션 프로그램 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)를 참조하십시오.
+* 이제 Cloud Manager 사용자는 랜딩 페이지의 오른쪽 상단에 있는 **피드백** 버튼을 통해 사용자 인터페이스에서 직접 피드백을 제출할 수 있습니다.
+
+* 이제 Cloud Manager의 사용자 인터페이스에서 연간 SLA 그래프를 다운로드할 수 있습니다.
+
+* 이제 코드 품질 및 비프로덕션 파이프라인 실행에서는 빌드 단계에서 보다 효율적인 약식 복제 프로세스를 사용하므로 고객이 특히 큰 git 저장소를 사용하는 경우 빌드 시간이 빨라집니다.
+
+* 이제 IP 허용 목록 추가 마법사가 허용된 최대 IP 허용 목록 수에 도달했는지 사용자에게 알려줍니다.
+
+* 이제 Cloud Manager API 설명서에는 로그인한 사용자가 브라우저에서 API를 실험할 수 있도록 해주는 대화형 필드가 포함되어 있습니다. [Cloud Manager API 놀이터](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) 참조
+
+* &#39;탐색 대상&#39; 아래의 선택 옵션이 비활성화되어 있으면 프로그램 카드의 도구 설명이 더 설명적입니다. 이제 &quot;프로덕션 환경이 없습니다.&quot;가 표시됩니다.
 
 ### 버그 수정 {#bug-fixes}
 
-* 이제 사용자는 구성할 수 있는 최대 허용 IP 허용 목록 수에 도달한 프로그램에서 새 IP 허용 목록을 추가하려고 하면 더 이해할 수 있는 메시지가 표시됩니다.
+* 드문 경우이지만, Adobe 직원이 고객의 환경을 복원할 경우 환경이 완전히 작동하기 전에 복구가 완료된 것으로 간주됩니다.
 
-* 저장소 화면에서 URL 복사 메뉴 옵션을 선택할 때 잘못된 URL이 복사되었습니다.
+* 환경을 만드는 동안 수행된 특정 내부 요청이 다시 시도되지 않았습니다.
 
