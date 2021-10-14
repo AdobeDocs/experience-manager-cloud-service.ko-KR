@@ -5,10 +5,10 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 29211dd24346c10ffc634073c66881709990c6b7
+source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 36%
+source-wordcount: '178'
+ht-degree: 38%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 36%
       + [컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [컨텐츠 전송 도구 시작하기](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [대용량 컨텐츠 저장소 처리](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-      + [컨텐츠 전송 도구에서 소스에서 컨텐츠 추출](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-      + [컨텐츠 전송 도구에서 컨텐츠를 Target에 수집](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [소스에서 컨텐츠 추출](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [Target에 컨텐츠 수집](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [마이그레이션 세트에 대한 로그 보기](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [마이그레이션 세트 삭제](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [게시 인스턴스에서 컨텐츠 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
