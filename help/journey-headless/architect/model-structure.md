@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '700'
 ht-degree: 7%
 
 ---
@@ -100,6 +100,10 @@ At the very start you need to enable Content Fragment Models for your site, this
 >[!NOTE]
 >
 >작성자가 모델이 아직 게시되지 않은 컨텐츠 조각을 게시하려고 하면 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+
+>[!NOTE]
+>
+>잠긴(게시된) 컨텐츠 조각 모델 기능은 베타에 있습니다.
 
 모델이 게시되는 즉시 이 모델은 작성자의 읽기 전용 모드로 *잠긴*&#x200B;입니다. 이는 기존 GraphQL 스키마 및 쿼리, 특히 게시 환경에서 오류가 발생하는 변경을 방지하기 위한 것입니다. **잠김**&#x200B;에 의해 콘솔에 표시됩니다.
 
