@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 전송 도구에서 컨텐츠를 Target에 수집
 description: 컨텐츠 전송 도구에서 컨텐츠를 Target에 수집
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 34%
+source-wordcount: '554'
+ht-degree: 27%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 34%
 
 1. 수집이 완료되면 **작성자 수집**&#x200B;의 상태가 **완료됨**&#x200B;으로 업데이트됩니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## 추가 수집 {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ ht-degree: 34%
 
 수집 프로세스가 완료되면 추가 수집 방법을 사용하여 델타 컨텐츠를 사용할 수 있습니다. 아래 단계를 따르십시오.
 
-1. *개요* 페이지로 이동하고 추가 수집을 수행할 마이그레이션 세트를 선택합니다. **수집**&#x200B;을 클릭하여 추가 추출을 시작합니다. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
+1. **컨텐츠 전송** 마법사로 이동하고 추가 수집을 수행할 마이그레이션 세트를 선택합니다. **수집**&#x200B;을 클릭하여 추가 추출을 시작합니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
+
+   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >이전 수집 활동에서 기존 컨텐츠를 삭제하지 않으려면 먼저 클라우드 인스턴스에서 기존 컨텐츠를 지우는 **옵션을 비활성화해야 합니다.** 또한 **고객 지원 센터**&#x200B;를 클릭하여 이전 그림과 같이 티켓을 기록합니다.
+
+## 다음은 무엇입니까? {#whats-next}
+
+컨텐츠 전송 도구에서 컨텐츠를 Target에 섭취한 후 각 단계가 완료되면(추출 및 섭취) 로그를 보고 오류를 찾을 수 있습니다. 자세한 내용은 [마이그레이션 세트에 대한 로그 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en)를 참조하십시오.
