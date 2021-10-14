@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
+source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,10 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. **소스** 탭에서는 웹 계층 구성을 무시하고 **프로덕션 배포 옵션**&#x200B;에서 업데이트할 수 있습니다.
+   1. **소스** 탭에서는 파이프라인에 대한 웹 계층 구성을 무시하고 **프로덕션**&#x200B;에 배포하기 전에 일시 중지 를 선택하거나 선택 취소할 수 있으며, **프로덕션 배포 옵션**&#x200B;에서 **예약된** 옵션을 선택할 수 있습니다.
+
+      >[!NOTE]
+      >**웹 계층 구성 무시**&#x200B;를 선택 취소하면 파이프라인도 웹 계층 구성도 배포됩니다.
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
