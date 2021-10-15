@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,11 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
 **+추가**&#x200B;를 클릭하고 **프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **프로덕션 파이프라인 추가** 대화 상자가 표시됩니다. 파이프라인 이름을 입력합니다.
 
-   또한 **배포 옵션**&#x200B;에서 **배포 트리거** 및 **중요 실패 동작**&#x200B;을 설정할 수도 있습니다. **계속**&#x200B;을 클릭합니다.
+   또한 **배포 옵션**&#x200B;에서 **배포 트리거** 및 **중요한 지표 실패 동작**&#x200B;을 설정할 수도 있습니다. **계속**&#x200B;을 클릭합니다.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -78,16 +78,21 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
    * **즉시 계속**  - 이 옵션을 선택하면 중요한 오류가 발생할 때마다 파이프라인이 자동으로 진행됩니다. 이것은 기본적으로 사용자가 각 실패를 수동으로 승인하는 것입니다.
 
 
-1. **프로덕션 파이프라인 추가** 대화 상자에는 **소스 코드**&#x200B;라는 레이블이 지정된 두 번째 탭이 포함되어 있습니다. **전체 스택** 코드가 선택되어 있습니다. **리포지토리** 및 **Git 분기**&#x200B;를 선택할 수 있습니다. **저장**&#x200B;을 클릭합니다.
+1. **프로덕션 파이프라인 추가** 대화 상자에는 **소스 코드**&#x200B;라는 레이블이 지정된 두 번째 탭이 포함되어 있습니다. **전체 스택** 코드가 선택되어 있습니다. **리포지토리** 및 **Git 분기**&#x200B;를 선택할 수 있습니다. 아래 설명된 대로 프로덕션 배포 옵션을 선택합니다. **계속**&#x200B;을 클릭합니다.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   프로덕션 배포 옵션:
+
+   * **프로덕션에 배포하기 전에 일시 정지**: 이 옵션을 사용하면 프로덕션 전에 배포 최상위 일시 정지를 사용할 수 있습니다.
+   * **예약됨**: 이 옵션을 사용하면 예약된 프로덕션 배포를 활성화할 수 있습니다.
 
 1. **프로덕션 파이프라인 추가** 대화 상자에는 **경험 감사**&#x200B;라는 레이블이 지정된 세 번째 탭이 포함되어 있습니다. 이 옵션은 항상 경험 감사에 포함해야 하는 URL 경로에 대한 테이블을 제공합니다.
 
    >[!NOTE]
    >사용자 지정 링크를 정의하려면 **페이지 추가**&#x200B;를 클릭해야 합니다.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    **새 페이지 추가** 를 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다.
 
@@ -234,6 +239,28 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. 비프로덕션 파이프라인의 편집을 완료했으면 **업데이트**&#x200B;를 클릭합니다.
+
+### 추가 비프로덕션 파이프라인 작업 {#additional-nonprod-actions}
+
+#### 비프로덕션 파이프라인 실행 {#run-nonprod}
+
+파이프라인 카드에서 프로덕션 파이프라인을 실행할 수 있습니다.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. **클릭..**&#x200B;파이프라인&#x200B;**카드에서**&#x200B;을 클릭하고 아래 그림과 같이 **실행**&#x200B;을 클릭합니다.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### 비프로덕션 파이프라인 삭제 {#delete-nonprod}
+
+파이프라인 카드에서 프로덕션 파이프라인을 삭제할 수 있습니다.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. **클릭..**&#x200B;파이프라인&#x200B;**카드에서**&#x200B;을 클릭하고 아래 그림과 같이 **삭제**&#x200B;를 클릭합니다.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## 다음 단계 {#the-next-steps}
