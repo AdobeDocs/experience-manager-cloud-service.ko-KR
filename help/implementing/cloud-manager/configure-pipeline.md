@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
+source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -147,6 +147,32 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
 1. 파이프라인 편집을 완료했으면 **업데이트**&#x200B;를 클릭합니다.
+
+### 추가 프로덕션 파이프라인 작업 {#additional-prod-actions}
+
+#### 프로덕션 파이프라인 실행 {#run-prod}
+
+파이프라인 카드에서 프로덕션 파이프라인을 실행할 수 있습니다.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. **클릭..**&#x200B;파이프라인&#x200B;**카드에서**&#x200B;을 클릭하고 아래 그림과 같이 **실행**&#x200B;을 클릭합니다.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### 프로덕션 파이프라인 삭제 {#delete-prod}
+
+파이프라인 카드에서 프로덕션 파이프라인을 삭제할 수 있습니다.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. **클릭..**&#x200B;파이프라인&#x200B;**카드에서**&#x200B;을 클릭하고 아래 그림과 같이 **삭제**&#x200B;를 클릭합니다.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >이제 배포 관리자 역할의 사용자는 파이프라인 카드에서 **삭제** 옵션을 통해 셀프 서비스 방식으로 프로덕션 파이프라인을 삭제할 수 있습니다.
+
 
 ## 비프로덕션 및 코드 품질 전용 파이프라인 {#non-production-pipelines}
 
