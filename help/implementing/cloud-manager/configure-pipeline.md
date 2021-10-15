@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
+source-git-commit: eb8fb1f4134ceb9117773d01f4d97c68bd8c41a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -89,22 +89,24 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 1. **프로덕션 파이프라인 추가** 대화 상자에는 **경험 감사**&#x200B;라는 레이블이 지정된 세 번째 탭이 포함되어 있습니다. 이 옵션은 항상 경험 감사에 포함해야 하는 URL 경로에 대한 테이블을 제공합니다.
 
-   >[!NOTE]
-   >사용자 지정 링크를 정의하려면 **페이지 추가**&#x200B;를 클릭해야 합니다.
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+
+   >[!IMPORTANT]
+   >사용자 지정 링크를 정의하려면 **페이지 추가**&#x200B;를 클릭해야 합니다. 페이지 경로는 `/`로 시작해야 합니다.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+
 
    **새 페이지 추가** 를 클릭하여 경험 감사에 포함할 URL 경로를 제공합니다.
 
-   예를 들어 경험 감사에 `https://wknd.site/us/en/about-us.html`을 포함하려면 이 필드에 `us/en/about-us.html` 경로를 입력하고 **저장**&#x200B;을 클릭하십시오.
+   예를 들어 경험 감사에 `https://wknd.site/us/en/about-us.html`을 포함하려면 이 필드에 `/us/en/about-us.html` 경로를 입력하고 **저장**&#x200B;을 클릭하십시오.
 
-   ![](assets/exp-audit4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
    테이블에 표시되는 URL은 다음과 같습니다.
 
    `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
-   ![](assets/exp-audit5.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
    최대 25개의 행을 포함할 수 있습니다. 이 섹션에 사용자가 제출한 페이지가 없는 경우, 기본적으로 사이트의 홈 페이지가 경험 감사에 포함됩니다.
 
