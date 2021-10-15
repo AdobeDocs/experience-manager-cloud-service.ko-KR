@@ -4,7 +4,7 @@ description: 워크플로우 인스턴스 관리 방법 알아보기
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
+source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 1%
@@ -94,7 +94,7 @@ ht-degree: 1%
 기록워크플로 내역의 세부 정보를 표시합니다.
 
 * **다시** 시도 단계스크립트 단계 구성 요소 인스턴스를 다시 실행합니다. 원래 오류 원인을 해결한 후 Retry Step 명령을 사용합니다. 예를 들어 프로세스 단계가 실행되는 스크립트에서 버그를 수정한 후 단계를 다시 시도하십시오.
-* **** 종료: 오류로 인해 워크플로우에 조정 가능한 상황이 발생한 경우 워크플로우를 종료합니다. 예를 들어, 워크플로우는 워크플로우 인스턴스에 더 이상 유효하지 않은 저장소의 정보와 같은 환경 조건을 사용할 수 있습니다.
+* **** 종료오류가 워크플로우에 대해 조정 가능한 상황이 발생한 경우 워크플로우를 종료합니다. 예를 들어, 워크플로우는 워크플로우 인스턴스에 더 이상 유효하지 않은 저장소의 정보와 같은 환경 조건을 사용할 수 있습니다.
 * **종료 및** 다시 시도 **** 는 원래 페이로드, 제목 및 설명을 사용하여 새 워크플로우 인스턴스가 시작된다는 점을 제외하면 종료와 유사합니다.
 
 오류를 조사하려면 나중에 워크플로우를 다시 시작하거나 종료하려면 다음 단계를 사용합니다.
@@ -170,13 +170,12 @@ ht-degree: 1%
 
 ## 고객이 소유한 데이터 저장소에 대한 워크플로우 변수 사용 {#using-workflow-variables-customer-datastore}
 
-워크플로우에서 사용되는 데이터는 Adobe 제공 저장소(JCR)에 저장됩니다. 이 데이터는 본질적으로 민감할 수 있습니다. Adobe 제공 저장소 대신 사용자가 정의한 메타데이터/데이터를 모두 관리 저장소에 저장할 수 있습니다. 이 섹션에서는 외부 스토리지에 대해 이러한 변수를 설정하는 방법을 설명합니다.
+워크플로우에 의해 처리된 데이터는 Adobe 제공 저장소(JCR)에 저장됩니다. 이 데이터는 본질적으로 민감할 수 있습니다. Adobe 제공 저장소 대신 사용자가 정의한 메타데이터/데이터를 모두 관리 저장소에 저장할 수 있습니다. 이러한 섹션에서는 외부 스토리지에 대해 이러한 변수를 설정하는 방법을 설명합니다.
 
 ### 메타데이터의 외부 저장소를 사용하도록 모델 설정 {#set-model-for-external-storage}
 
-워크플로우 모델 수준에서 모델(및 런타임 인스턴스)에 메타데이터의 외부 저장소가 있음을 나타내는 플래그를 도입할 예정입니다. 외부 저장소에 대해 표시된 모델의 워크플로우 인스턴스에 대해 사용자 메타데이터가 JCR에 지속되지 않습니다.
+워크플로우 모델 수준에서 모델(및 런타임 인스턴스)에 메타데이터의 외부 저장소가 있음을 나타내는 플래그가 제공됩니다. 워크플로우 변수는 외부 스토리지로 표시된 모델의 워크플로우 인스턴스에 대해 JCR에 지속되지 않습니다.
 
-이 기능을 활성화하려면 외부 지속성 플래그를 활성화해야 합니다. **userMetaDataCustomPersistenceEnabled = &quot;true&quot;**.
 *userMetadataPersistenceEnabled* 속성은 워크플로우 모델의 *jcr:content node*&#x200B;에 저장됩니다. 이 플래그는 워크플로우 메타데이터에 *cq:userMetaDataCustomPersistenceEnabled*&#x200B;로 유지됩니다.
 
 아래 그림은 워크플로우에 플래그를 설정해야 합니다.
@@ -184,6 +183,8 @@ ht-degree: 1%
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### 외부 저장소의 메타데이터에 대한 API {#apis-for-metadata-external-storage}
+
+변수를 외부에 저장하려면 워크플로우가 노출하는 API를 구현해야 합니다.
 
 UserMetaDataPersistenceContext
 
