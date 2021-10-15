@@ -2,7 +2,7 @@
 title: CI/CD 파이프라인 구성 - Cloud Services
 description: CI/CD 파이프라인 구성 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
+source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 >
 >초기 설정 후 파이프라인 설정을 변경할 수 있습니다.
 
-## 새 프로덕션 파이프라인 추가 {#adding-production-pipeline}
+### 새 프로덕션 파이프라인 추가 {#adding-production-pipeline}
 
 프로그램을 설정하고 [!UICONTROL Cloud Manager] UI를 사용하여 하나 이상의 환경이 있으면 프로덕션 파이프라인을 추가할 준비가 된 것입니다.
 
