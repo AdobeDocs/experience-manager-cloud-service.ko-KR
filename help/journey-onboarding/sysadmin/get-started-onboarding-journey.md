@@ -3,16 +3,17 @@ title: 온보딩 프로세스 시작
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
+source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 1%
 
 ---
 
 # 온보딩 프로세스 시작 {#getting-started}
 
-온보딩은 지정된 [시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)가 AEM을 조직의 Cloud Service으로 설정하는 프로세스입니다. 여기에는 초기 클라우드 리소스 프로비저닝과 작업 권한에 따라 역할에 사용자를 할당하는 작업이 포함됩니다. 따라서 각 구성원은 Cloud Service 리소스로 AEM에 로그인하고 액세스할 수 있습니다.
+온보딩은 지정된 [시스템 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)가 조직에 대해 AEM as a Cloud Service을 설정하는 프로세스입니다. 여기에는 초기 클라우드 리소스 프로비저닝과 작업 권한에 따라 역할에 사용자를 할당하는 작업이 포함됩니다. 따라서 각 구성원은 AEM as a Cloud Service 리소스에 로그인하여 액세스할 수 있습니다.
 
 ## 목표 {#objective}
 
@@ -26,6 +27,11 @@ ht-degree: 0%
 >[!NOTE]
 >온보딩 프로세스를 시작하기 전에 Adobe Admin Console에 대해 자세히 알아보십시오. Adobe Admin Console은 Adobe 제품 라이선스 및 사용자를 관리하고 관리할 수 있는 중앙 위치입니다. 시스템 관리자가 Adobe Admin Console에 로그인하여 사용자를 추가하거나 제거합니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)를 참조하십시오.
 
+## AEM as a Cloud Service에 온보딩 {#onboarding-process}
+
+Cloud Manager를 사용하여 환경을 설정하는 과정을 거쳐 계약 단계부터 AEM as a Cloud Service으로 온보딩에 대해 알아봅니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
 ## Admin Console에 로그인 {#steps-admin-console}
 
@@ -67,4 +73,3 @@ Admin Console에서 시스템 관리자 역할을 Admin Console 및 검토하려
 ## 다음은 무엇입니까? {#whats-next}
 
 이제 Admin Console에 로그인하여 시스템 관리자로 프로필을 검사했으므로 [Assign Team Members to Cloud Manager 제품 프로필](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md) 문서를 검토하여 온보딩 여정을 계속 수행해야 합니다.
-
