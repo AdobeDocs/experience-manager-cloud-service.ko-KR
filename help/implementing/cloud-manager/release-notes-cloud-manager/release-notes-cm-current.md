@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 릴리스 2021.10.0의 Cloud Manager 릴리스 노
 description: AEM as a Cloud Service 릴리스 2021.10.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: null
-source-git-commit: a519b5bd774506f50f49c8309b14d4a62c7e7ba5
+source-git-commit: 23b19789e9e9857c9ae3d763fc71586a5e5da25b
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '405'
 ht-degree: 3%
 
 ---
@@ -49,4 +49,6 @@ AEM as a Cloud Service 2021.10.0의 Cloud Manager 릴리스 날짜는 2021년 10
 * 드문 경우이지만, Adobe 직원이 고객의 환경을 복원할 경우 환경이 완전히 작동하기 전에 복구가 완료된 것으로 간주됩니다.
 
 * 환경을 만드는 동안 수행된 특정 내부 요청이 다시 시도되지 않았습니다.
+
+* 도메인 이름 확인 후 배포 실패 오류가 발생하면 고객이 Adobe 담당자에게 문의하도록 오류 메시지가 수정되었습니다.
 
