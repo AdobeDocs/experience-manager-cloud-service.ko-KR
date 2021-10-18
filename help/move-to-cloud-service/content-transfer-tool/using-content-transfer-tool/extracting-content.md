@@ -1,10 +1,10 @@
 ---
 title: 소스에서 컨텐츠 추출
 description: 소스에서 컨텐츠 추출
-source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 41%
+source-wordcount: '518'
+ht-degree: 42%
 
 ---
 
@@ -71,4 +71,4 @@ ht-degree: 41%
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출을 학습하면 컨텐츠 전송 도구에서 수집 프로세스를 배울 수 있습니다. 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하는 방법을 알려면 [컨텐츠 전송 도구에서 Target에 컨텐츠 섭취](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 를 참조하십시오.
+이제 컨텐츠 전송 도구에서 소스에서 컨텐츠 추출을 학습하면 컨텐츠 전송 도구에서 수집 프로세스를 배울 수 있습니다. 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하는 방법을 알려면 [컨텐츠를 Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)에 수집 을 참조하십시오.

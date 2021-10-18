@@ -1,7 +1,7 @@
 ---
 title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
 description: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 25%
@@ -84,4 +84,4 @@ ht-degree: 25%
 
 ## 다음은 무엇입니까? {#whats-next}
 
-컨텐츠 전송 도구 사용에 대한 지침, 우수 사례 및 중요한 고려 사항을 알게 되면 이제 마이그레이션 세트 생성부터 도구를 설치하고 사용할 준비가 되었습니다. 자세한 내용은 [컨텐츠 전송 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)를 참조하십시오.
+컨텐츠 전송 도구 사용에 대한 지침, 우수 사례 및 중요한 고려 사항을 알게 되면 이제 마이그레이션 세트 생성부터 도구를 설치하고 사용할 준비가 되었습니다. 자세한 내용은 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en)를 참조하십시오.
