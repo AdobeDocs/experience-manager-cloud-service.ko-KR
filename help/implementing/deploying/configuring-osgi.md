@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: '암호 값 및 환경별 값으로 OSGi 구성 '
-feature: 배포
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ cfg.json OSGi 구성 형식을 따릅니다.
 
 ## OSGi 구성 값 유형 {#types-of-osgi-configuration-values}
 
-Adobe Experience Manager에서 Cloud Service으로 사용할 수 있는 OSGi 구성 값에는 세 가지 종류가 있습니다.
+Adobe Experience Manager as a Cloud Service에서 사용할 수 있는 OSGi 구성 값에는 세 가지 종류가 있습니다.
 
 1. **인라인 값**: OSGi 구성으로 코딩되고 Git에 저장된 값입니다. 예:
 
@@ -80,7 +80,7 @@ Adobe Experience Manager에서 Cloud Service으로 사용할 수 있는 OSGi 구
    } 
    ```
 
-1. **환경 특정 값**: 개발 환경에 따라 달라지는 값이므로 Cloud Service으로 Adobe Experience Manager에 단일  `dev` 실행 모드가 있으므로 실행 모드로 정확하게 타깃팅할 수 없습니다. 예:
+1. **환경 특정 값**(개발 환경에 따라 다른 값)이며, 따라서 실행 모드(Adobe Experience Manager as a Cloud Service에 단일  `dev` 실행 모드가 있으므로)별로 정확하게 타깃팅할 수 없습니다. 예:
 
    ```json
    {
@@ -120,16 +120,16 @@ OSGi 구성 값을 정의할 때마다 인라인 값으로 시작하고 사용 �
 
 ### 비보안 환경별 구성 값을 사용해야 하는 경우 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-미리 보기 계층에 대해 값이 다르거나 개발 환경에 따라 다를 경우 비보안 구성 값에 환경 특정 구성(`$[env:ENV_VAR_NAME]`)만 사용하십시오. 여기에는 로컬 개발 인스턴스와 Cloud Service 개발 환경으로서의 모든 Adobe Experience Manager이 포함됩니다. 미리 보기 계층의 고유한 값을 설정하는 것 외에, Adobe Experience Manager에 대해 비기밀 환경 관련 구성을 Cloud Service 단계 또는 프로덕션 환경으로 사용하지 마십시오.
+미리 보기 계층에 대해 값이 다르거나 개발 환경에 따라 다를 경우 비보안 구성 값에 환경 특정 구성(`$[env:ENV_VAR_NAME]`)만 사용하십시오. 여기에는 로컬 개발 인스턴스 및 모든 Adobe Experience Manager as a Cloud Service 개발 환경이 포함됩니다. 미리 보기 계층의 고유한 값을 설정하는 것 외에도 Adobe Experience Manager as a Cloud Service 스테이지 또는 프로덕션 환경에 비보안 환경별 구성을 사용하지 마십시오.
 
 * 게시 및 미리 보기 계층 간에 다른 구성 값이나 로컬 개발 인스턴스를 포함하여 개발 환경이 서로 다른 값에 대해서만 비비밀 환경별 구성을 사용하십시오.
 * 미리 보기 계층이 게시 계층과 달라야 하는 시나리오 외에도 스테이지 및 프로덕션 비비밀 값에 대한 OSGi 구성의 표준 인라인 값을 사용합니다. 이와 관련하여 런타임 시 스테이지 및 프로덕션 환경에 쉽게 구성을 변경할 수 있도록 환경별 구성을 사용하지 않는 것이 좋습니다. 이러한 변경 사항은 소스 코드 관리를 통해 가져와야 합니다.
 
 ### 보안 환경별 구성 값을 사용해야 하는 경우 {#when-to-use-secret-environment-specific-configuration-values}
 
-Adobe Experience Manager as a Cloud Service은 암호, 개인 API 키 또는 보안상의 이유로 Git에 저장할 수 없는 다른 모든 값과 같은 비밀 OSGi 구성 값에 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
+Adobe Experience Manager as a Cloud Service에서는 보안상의 이유로 암호, 개인 API 키 또는 Git에 저장할 수 없는 다른 모든 값과 같은 비밀 OSGi 구성 값에 환경별 구성(`$[secret:SECRET_VAR_NAME]`)을 사용해야 합니다.
 
-보안 환경별 구성을 사용하여 단계 및 프로덕션을 포함한 모든 Adobe Experience Manager의 기밀 값을 Cloud Service 환경으로 저장합니다.
+보안 환경별 구성을 사용하여 단계 및 프로덕션을 포함하여 모든 Adobe Experience Manager as a Cloud Service 환경에 기밀에 대한 값을 저장합니다.
 
 ## OSGi 구성 만들기 {#creating-sogi-configurations}
 
@@ -140,9 +140,9 @@ Adobe Experience Manager as a Cloud Service은 암호, 개인 API 키 또는 보
 JSON 형식 OSGi 구성 파일은 AEM 프로젝트에서 직접 작성하여 사용할 수 있습니다. 이는 알려진 OSGi 구성 요소 및 특히 구성을 정의하는 동일한 개발자가 디자인하고 개발한 사용자 정의 OSGi 구성 요소에 대한 OSGi 구성을 만드는 가장 빠른 방법입니다. 이 접근 방식은 다양한 런타임 모드 폴더에서 동일한 OSGi 구성 요소에 대한 구성을 복사/붙여넣기와 업데이트하는 데도 사용할 수 있습니다.
 
 1. IDE에서 `ui.apps` 프로젝트를 열고 새 OSGi 구성을 적용해야 하는 실행 모드를 대상으로 하는 구성 폴더(`/apps/.../config.<runmode>`)를 찾거나 만듭니다
-1. 이 구성 폴더에서 새 `<PID>.cfg.json` 파일을 만듭니다. PID는 OSGi 구성 요소의 영구 ID 입니다. 일반적으로 OSGi 구성 요소 구현의 전체 클래스 이름입니다. 예:
+1. 이 구성 폴더에서 새 `<PID>.cfg.json` 파일을 만듭니다. PID는 OSGi 구성 요소의 영구 ID입니다. 일반적으로 OSGi 구성 요소 구현의 전체 클래스 이름입니다. 예:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-OSGi 구성 팩토리 파일 이름은  `<PID>-<factory-name>.cfg.json` 이름 지정 규칙을 사용합니다
+OSGi 구성 팩토리 파일 이름은  `<factoryPID>-<name>.cfg.json` 이름 지정 규칙을 사용합니다
 1. 새 `.cfg.json` 파일을 열고 [JSON OSGi 구성 형식](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)에 따라 OSGi 속성 및 값 쌍에 대한 키/값 조합을 정의합니다.
 1. 새 `.cfg.json` 파일에 변경 내용을 저장합니다.
 1. 새로운 OSGi 구성 파일을 Git에 추가 및 커밋
@@ -537,7 +537,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ## 보안 및 환경별 구성 값에 대한 배포 고려 사항 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-보안 및 환경별 구성 값은 Git 외부에 있으므로 Cloud Service 배포 메커니즘으로서 공식 Adobe Experience Manager의 일부가 아니므로 고객은 Cloud Service 배포 프로세스로 Adobe Experience Manager을 관리, 제어 및 통합해야 합니다.
+보안 및 환경별 구성 값은 Git 외부에 있으므로 정식 Adobe Experience Manager as a Cloud Service 배포 메커니즘의 일부가 아니므로 고객은 Adobe Experience Manager as a Cloud Service 배포 프로세스를 관리, 제어 및 통합해야 합니다.
 
 위에서 언급했듯이 API를 호출하면 일반적인 고객 코드 배포 파이프라인과 유사하게, 새 변수와 값을 클라우드 환경에 배포합니다. 작성자 및 게시 서비스가 다시 시작되고 새 값을 참조합니다(일반적으로 몇 분 정도 걸립니다.). 일반 코드 배포 중에 Cloud Manager에서 실행하는 품질 게이트와 테스트는 이 프로세스 동안 수행되지 않습니다.
 
