@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service 고급 네트워킹 구성
 description: AEM as a Cloud Service용 VPN 또는 전용 송신 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법을 알아봅니다.
-source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2798'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ AEM as a Cloud Service은 Cloud Manager API를 사용하는 고객이 구성할 
 
 * [유연한 포트 송신](#flexible-port-egress)  - AEM as a Cloud Service을 구성하여 비표준 포트로부터 아웃바운드 트래픽을 허용합니다
 * [전용 송신 IP 주소](#dedicated-egress-IP-address)  - 고유한 IP에서 시작되도록 AEM as a Cloud Service에서 트래픽을 구성합니다
-* [가상 사설 네트워크](#vpn)  - VPN 기술을 보유한 고객을 위해 고객의 인프라와 AEM as a Cloud Service 간의 트래픽을 보호합니다.
+* [VPN(Virtual Private Network)](#vpn)  - VPN 기술을 보유한 고객을 위해 고객의 인프라와 AEM as a Cloud Service 간의 트래픽을 보호합니다
 
 이 문서에서는 구성 방법을 비롯하여 각 옵션에 대해 자세히 설명합니다. 일반적인 구성 전략으로서, `/networkInfrastructures` API 종단점은 프로그램 수준에서 호출되어 원하는 유형의 고급 네트워킹을 선언하고, 그런 다음 각 환경에 대해 `/advancedNetworking` 종단점을 호출하여 인프라를 활성화하고 환경별 매개 변수를 구성합니다. 각 공식 구문과 샘플 요청 및 응답에 대해 Cloud Manager API 설명서의 적절한 엔드포인트를 참조하십시오.
 
