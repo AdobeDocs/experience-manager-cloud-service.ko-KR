@@ -1,7 +1,7 @@
 ---
 title: 게시 인스턴스에서 컨텐츠 전송 도구 실행
 description: 게시 인스턴스에서 컨텐츠 전송 도구 실행
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 86b118e05b1e6947610c6032ed973394ba4b68e5
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 1%
@@ -28,7 +28,10 @@ ht-degree: 1%
 
 * 마이그레이션 세트를 만들 때 작성 AEM as a Cloud Service 환경의 URL을 사용합니다.
 
-* 게시하기 위해 수집하는 동안 게시 계층의 크기가 조정되지 않습니다(작성자와 다름). 따라서 다음과 같은 쓰기 작업을 시작하지 마십시오.
+* 게시하기 위해 수집하는 동안 게시 계층의 크기가 조정되지 않습니다(작성자와 다름).
 
-   * AEM as a Cloud Service 작성자에서 해당 환경의 게시로 컨텐츠 배포
-   * 게시 인스턴스 간 사용자 동기화
+   >[!IMPORTANT]
+   >따라서 다음과 같은 쓰기 작업을 시작하지 마십시오.
+   > * AEM as a Cloud Service 작성자에서 해당 환경의 게시로 컨텐츠 배포
+   > * 게시 인스턴스 간 사용자 동기화
+

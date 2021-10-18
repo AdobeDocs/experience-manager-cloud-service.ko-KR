@@ -2,24 +2,24 @@
 title: AEM as a Cloud Service 릴리스 2021.7.0의 Cloud Manager 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2021.7.0의 Cloud Manager 릴리스 노트
 feature: Release Information
-source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
+source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '340'
 ht-degree: 4%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2021.7.0 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2021.7.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service에 대한 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 클릭하십시오.
+>Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR)를 클릭하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
 AEM as a Cloud Service 2021.7.0의 Cloud Manager 릴리스 날짜는 2021년 7월 15일입니다.
-다음 릴리스는 2021년 8월 12일에 예정되어 있습니다.
+
 
 ### 새로운 기능 {#what-is-new}
 

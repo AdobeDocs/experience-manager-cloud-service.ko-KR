@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '782'
 ht-degree: 5%
 
 ---
@@ -67,11 +67,17 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
    >[!NOTE]
    >새 보고서를 업로드하면 모든 평가가 재설정됩니다.
 
+### 인쇄 미리 보기 사용 {#print-preview-cam}
+
+Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보고서의 인쇄 가능 미리 보기를 수행하거나 보고서를 PDF 형식으로 인쇄하여 쉽게 공유할 수 있습니다.
+
+아래 단계를 따르십시오.
+
 1. 아래 표시된 대로 **인쇄 미리 보기** 아이콘을 클릭합니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. **인쇄 미리 보기**&#x200B;를 클릭하면 인쇄 가능한 미리 보기에 표시된 보고서가 있는 새 탭이 열립니다. **인쇄**&#x200B;를 클릭하여 보고서를 PDF 형식으로 인쇄하면 쉽게 공유할 수 있습니다.
+1. **인쇄 미리 보기**&#x200B;를 클릭하면 인쇄 가능한 미리 보기에 표시된 보고서가 있는 새 탭이 열립니다. 보고서를 PDF 형식으로 인쇄하려면 **인쇄**&#x200B;를 클릭하십시오.
 
    >[!IMPORTANT]
    >* **PDF**&#x200B;로 저장 옵션이 권장되며 위의 기능에 대해 지원됩니다.
