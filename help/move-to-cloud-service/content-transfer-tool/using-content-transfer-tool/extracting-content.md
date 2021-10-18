@@ -1,10 +1,10 @@
 ---
 title: 소스에서 컨텐츠 추출
 description: 소스에서 컨텐츠 추출
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 39%
+source-wordcount: '596'
+ht-degree: 36%
 
 ---
 
@@ -36,6 +36,10 @@ ht-degree: 39%
 
    >[!NOTE]
    >추출 단계 중에 스테이징 컨테이너를 덮어쓰는 옵션이 제공됩니다.
+
+   >[!IMPORTANT]
+   >소스에서 컨텐츠를 추출하기 전에 이 마이그레이션 세트에 대해 사용자 매핑을 실행하지 않은 경우 아래 그림과 같이 사용자 매핑 단계가 보류 중임을 알리는 경고가 표시됩니다. 클릭 **사용자 매핑** 사용자 매핑 도구를 실행하려면
+   >![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. 다음 **추출** 이제 필드에 가 표시됩니다. **실행 중** 상태: 추출이 진행 중임을 나타냅니다.
 
