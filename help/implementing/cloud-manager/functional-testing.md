@@ -2,10 +2,10 @@
 title: 기능 테스트 - Cloud Services
 description: 기능 테스트 - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
+source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 0%
+source-wordcount: '898'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 고객이 Cloud Manager에 새 코드를 배포할 때마다 제품 기능 테스트가 자동으로 실행되며 건너뛸 수 없습니다.
 
-샘플 테스트를 보려면 [제품 기능 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)를 참조하십시오.
+을(를) 참조하십시오. [제품 기능 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 샘플 테스트.
 
 ## 사용자 지정 기능 테스트 {#custom-functional-testing}
 
@@ -39,48 +39,48 @@ ht-degree: 0%
 그러나 빌드에 의해 테스트 JAR이 생성되지 않으면 테스트가 기본적으로 전달됩니다.
 
 >[!NOTE]
->**로그 다운로드** 단추를 사용하면 테스트 실행 세부 양식에 대한 로그가 포함된 ZIP 파일에 액세스할 수 있습니다. 이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그에는 일반적인 다운로드 또는 테일 로그 기능을 사용하여 액세스할 수 있습니다. 자세한 내용은 [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)를 참조하십시오.
+>다음 **다운로드 로그** 단추를 사용하면 테스트 실행 세부 양식에 대한 로그가 포함된 ZIP 파일에 액세스할 수 있습니다. 이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그에는 일반적인 다운로드 또는 테일 로그 기능을 사용하여 액세스할 수 있습니다. 을(를) 참조하십시오. [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) 자세한 내용
 
 ## 사용자 지정 UI 테스트 {#custom-ui-testing}
 
 AEM은 고객에게 Cloud Manager 품질 게이트의 통합 세트를 제공하여 애플리케이션을 원활하게 업데이트합니다. 특히 IT 테스트 게이트를 통해 고객은 이미 AEM API를 사용하는 자체 테스트를 만들고 자동화할 수 있습니다.
 
-사용자 지정 UI 테스트 기능은 고객이 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있도록 해주는 선택적 기능 [고객 옵트인](#customer-opt-in) 입니다. UI 테스트는 Java 및 Maven, Node 및 WebDriver.io와 같은 다양한 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)를 사용할 수 있도록 Docker 이미지에 패키지된 Selenium 기반 테스트입니다. 여기에서 UI를 빌드하고 UI 테스트를 작성하는 방법에 대해 자세히 알아볼 수 있습니다. 또한 AEM Project Archetype을 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
+사용자 지정 UI 테스트 기능은 [옵션 기능](#customer-opt-in) 고객이 자신의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있도록 해줍니다. UI 테스트는 Java 및 Maven, Node 및 WebDriver.io와 같은 다양한 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)를 사용할 수 있도록 Docker 이미지에 패키지된 Selenium 기반 테스트입니다. 여기에서 UI를 빌드하고 UI 테스트를 작성하는 방법에 대해 자세히 알아볼 수 있습니다. 또한 AEM Project Archetype을 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
 
 고객은 GIT을 통해 사용자 지정 테스트를 만들고 UI용 테스트 세트를 만들 수 있습니다. UI 테스트는 각 Cloud Manager 파이프라인에 대한 특정 품질 게이트의 일부로서 특정 단계 및 피드백 정보와 함께 실행됩니다. 회귀 및 새로운 기능을 포함한 모든 UI 테스트를 통해 고객 컨텍스트 내에서 오류를 감지하고 보고할 수 있습니다.
 
 고객 UI 테스트는 &quot;사용자 지정 UI 테스트&quot; 단계의 프로덕션 파이프라인에서 자동으로 실행됩니다.
 
-Java로 작성된 HTTP 테스트인 사용자 지정 기능 테스트와 달리, UI 테스트는 [UI 테스트 작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests)에 정의된 규칙을 따르는 한 모든 언어로 작성된 테스트가 있는 Docker 이미지가 될 수 있습니다.
+Java로 작성된 HTTP 테스트인 사용자 지정 기능 테스트와 달리, UI 테스트는 다음에 정의된 규칙을 따르는 한 모든 언어로 작성된 테스트가 있는 Docker 이미지가 될 수 있습니다 [UI 테스트 작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
 
 >[!NOTE]
->[AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)에 시작점으로 편리하게 제공된 구조 및 언어 *(js 및 wdio)*&#x200B;을 따르는 것이 좋습니다.
+>구조와 언어를 따르는 것이 좋습니다 *(js 및 wdio)* 간편하게 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) 시작점으로 사용하십시오.
 
 ### 고객 옵트인 {#customer-opt-in}
 
-UI 테스트를 빌드하고 실행하려면 고객이 코드 리포지토리에 파일을 추가하고(UI 테스트 하위 모듈의 pom.xml 파일 옆에 있는 UI 테스트용 maven 하위 모듈 아래) 이 파일을 빌드된 `tar.gz` 파일의 루트에 있는지 확인하여 &quot;옵트인&quot;해야 합니다.
+UI 테스트를 빌드하고 실행하려면 고객이 코드 리포지토리에 파일을 추가하고, UI 테스트 하위 모듈의 pom.xml 파일 옆에 있는 UI 테스트를 위한 maven 하위 모듈 아래에 있는 &quot;옵트인&quot;을 구현하고 이 파일이 빌드된 루트에 있는지 확인해야 합니다 `tar.gz` 파일.
 
-*파일 이름*:  `testing.properties`
+*파일 이름*: `testing.properties`
 
-*내용*:  `ui-tests.version=1`
+*내용*: `ui-tests.version=1`
 
-기본 제공 `tar.gz` 파일에 없는 경우 UI 테스트 빌드 및 실행을 건너뜁니다
+빌드되지 않은 경우 `tar.gz` 파일, UI 테스트 빌드 및 실행을 건너뜁니다
 
-작성된 아티팩트에 `testing.properties` 파일을 추가하려면 `assembly-ui-test-docker-context.xml` 파일에 `include` 문을 추가합니다(UI 테스트 하위 모듈).
+추가하려면 `testing.properties` 작성된 아티팩트에 파일을 추가하고 `include` 문 `assembly-ui-test-docker-context.xml` 파일(UI 테스트 하위 모듈):
 
     &quot;
-    [...]
+    [..]
     &lt;includes>
-    &lt;include>&lt;/include>
-    &lt;include>Dockerfilewait-for-grid.&lt;/include>
-    &lt;include>shtesting.properties&lt;/include> &lt;!- Cloud Manager의 옵트인 테스트 모듈 —>
-    &lt;/includs>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!>- Cloud Manager의 옵트인 테스트 모듈 —>
+    &lt;/includes>
     [..]
     &quot;
 
 >[!NOTE]
->이 섹션에 설명된 대로 UI 테스트를 사용하려면 2021년 2월 10일 전에 생성된 프로덕션 파이프라인을 업데이트해야 합니다. 이것은 기본적으로 사용자가 프로덕션 파이프라인을 편집하고 UI에서 **저장**을 클릭해야 함을 의미합니다.
->파이프라인 구성에 대한 자세한 내용은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) 을 참조하십시오.
+>이 섹션에 설명된 대로 UI 테스트를 사용하려면 2021년 2월 10일 전에 생성된 프로덕션 파이프라인을 업데이트해야 합니다. 이것은 사용자가 프로덕션 파이프라인을 편집하고 클릭해야 함을 의미합니다 **저장** 변경하지 않은 경우에도 UI에서 변경할 수 있습니다.
+>을(를) 참조하십시오. [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) 파이프라인 구성에 대해 자세히 알아보십시오 .
 
 ### 기능 테스트 작성 {#writing-functional-tests}
 
@@ -121,9 +121,9 @@ UI 테스트를 빌드하고 실행하려면 고객이 코드 리포지토리에
 
 이 JAR 파일 내에서 실행할 실제 테스트의 클래스 이름은 IT에서 끝나야 합니다.
 
-예를 들어 `com.myco.tests.aem.ExampleIT` 라는 클래스가 실행되지만 `com.myco.tests.aem.ExampleTest` 라는 클래스는 실행되지 않습니다.
+예를 들어 `com.myco.tests.aem.ExampleIT` 이 실행되지만 `com.myco.tests.aem.ExampleTest` 그렇지 않습니다.
 
-테스트 클래스는 일반적인 JUnit 테스트여야 합니다. 테스트 인프라는 aem-testing-clients 테스트 라이브러리에서 사용하는 규칙과 호환되도록 설계되고 구성됩니다. 개발자는 이 라이브러리를 사용하고 모범 사례를 따를 것을 적극 권장합니다. 자세한 내용은 [Git 링크](https://github.com/adobe/aem-testing-clients)를 참조하십시오.
+테스트 클래스는 일반적인 JUnit 테스트여야 합니다. 테스트 인프라는 aem-testing-clients 테스트 라이브러리에서 사용하는 규칙과 호환되도록 설계되고 구성됩니다. 개발자는 이 라이브러리를 사용하고 모범 사례를 따를 것을 적극 권장합니다. 을(를) 참조하십시오. [Git 링크](https://github.com/adobe/aem-testing-clients) 자세한 내용
 
 ### 로컬 테스트 실행 {#local-test-execution}
 
