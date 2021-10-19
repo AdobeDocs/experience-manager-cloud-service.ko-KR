@@ -1,9 +1,9 @@
 ---
 title: 소스에서 컨텐츠 추출
 description: 소스에서 컨텐츠 추출
-source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
+source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '601'
 ht-degree: 36%
 
 ---
@@ -19,12 +19,13 @@ ht-degree: 36%
 >abstract="추출이란 소스 AEM 인스턴스에서 마이그레이션 세트라는 임시 영역으로 컨텐츠를 추출하는 것입니다. 마이그레이션 세트는 소스 AEM 인스턴스와 클라우드 서비스 AEM 인스턴스 간에 전송된 컨텐츠를 임시 저장할 수 있도록 Adobe가 제공하는 클라우드 저장소 영역입니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="추출 추가"
 
->[!IMPORTANT]
->소스에서 컨텐츠를 추출하기 전에 사용자 매핑 도구를 실행해야 합니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 자세한 내용
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
 >[!NOTE]
 >Amazon S3 또는 Azure 데이터 저장소가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 단축할 수 있습니다. 이렇게 하려면 다음을 구성해야 합니다 `azcopy.config` 파일 압축을 실행하기 전에 을(를) 참조하십시오. [대용량 컨텐츠 저장소 처리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 자세한 내용
+
+**소스에서 컨텐츠 추출 전**
+소스에서 컨텐츠를 추출하기 전에 사용자 매핑 도구를 실행해야 합니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) 자세한 내용
 
 1. 마이그레이션 세트 선택 **컨텐츠 전송** 마법사를 클릭하고 **Extract** 추출을 시작합니다.
 
