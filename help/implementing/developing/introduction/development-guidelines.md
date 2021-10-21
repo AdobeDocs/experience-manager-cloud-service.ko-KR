@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
+source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 2%
+source-wordcount: '2177'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 백그라운드 작업으로 실행된 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하고 대부분의 가져오기 다시 시작할 수 있어야 합니다. 즉, 코드가 다시 실행되면 처음부터 다시 시작하지 않고 원래 상태로 유지한 곳에서 다시 시작하지 않아야 합니다. 이러한 종류의 코드에 대한 새로운 요구 사항은 아니지만 AEM as a Cloud Service에서 인스턴스가 삭제될 가능성이 높습니다.
 
-이를 최소화하려면 장기실행 작업은 가급적 피할 수 있고, 최소한 재개는 가능하다. 이러한 작업을 실행하는 경우, 적어도 한 번 이상의 보증이 있으므로 중단되면 가능한 한 빨리 재실행됩니다. 그러나 처음부터 다시 시작하지 않아야 할 것이다. 이러한 작업을 예약하기 위해 [Sling 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 스케줄러를 다시 한 번 이상 실행하는 것이 좋습니다.
+이를 최소화하려면 장기실행 작업은 가급적 피할 수 있고, 최소한 재개는 가능하다. 이러한 작업을 실행하는 경우, 적어도 한 번 이상의 보증이 있으므로 중단되면 가능한 한 빨리 재실행됩니다. 그러나 처음부터 다시 시작하지 않아야 할 것이다. 이러한 작업을 예약하기 위해 [Sling 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 스케줄러를 사용하여 한 번 이상 실행할 수 있습니다.
 
 실행을 보장할 수 없으므로 Sling Commons Scheduler를 예약에 사용하면 안 됩니다. 그것은 단지 일정이 잡힐 것 같습니다.
 
@@ -51,13 +51,13 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 이러한 시간 초과를 적용하지 않는 코드의 경우, AEM as a Cloud Service에서 실행되는 AEM 인스턴스는 글로벌 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초 및 다음의 일반적인 Java 라이브러리에서 사용하는 연결에 대한 읽기 호출의 60초입니다.
 
-Adobe은 HTTP 연결을 만들려면 제공된 [Apache HttpComponents Client 4.x 라이브러리](https://hc.apache.org/httpcomponents-client-ga/)를 사용하는 것이 좋습니다.
+Adobe은 제공된 를 사용할 것을 권장합니다 [Apache HttpComponents Client 4.x 라이브러리](https://hc.apache.org/httpcomponents-client-ga/) HTTP 연결을 만들 수 있습니다.
 
 잘 알려져 있지만, 직접 종속성을 제공해야 할 수 있는 대체 방법은 다음과 같습니다.
 
-* [java.net.](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) URL 및/또는  [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (AEM에서 제공)
-* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (오래된 버전이며 버전 4.x로 대체되었으므로 권장되지 않음)
-* [OK Http](https://square.github.io/okhttp/) (AEM에서 제공하지 않음)
+* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) 및/또는 [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (AEM에서 제공)
+* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (오래된 버전 및 버전 4.x로 대체되었으므로 권장되지 않음)
+* [확인 Http](https://square.github.io/okhttp/) (AEM에서 제공하지 않음)
 
 ## 클래식 UI 사용자 지정 없음 {#no-classic-ui-customizations}
 
@@ -65,13 +65,13 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 ## 기본 바이너리 방지 {#avoid-native-binaries}
 
-코드가 런타임에 바이너리를 다운로드하거나 수정할 수 없습니다. 예를 들어 `jar` 또는 `tar` 파일의 압축을 풀 수 없습니다.
+코드가 런타임에 바이너리를 다운로드하거나 수정할 수 없습니다. 예를 들어 압축을 풀 수 없습니다 `jar` 또는 `tar` 파일.
 
 ## AEM as a Cloud Service을 통한 스트리밍 바이너리 없음 {#no-streaming-binaries}
 
 코어 AEM 서비스 외부의 바이너리를 제공하는 CDN을 통해 바이너리에 액세스해야 합니다.
 
-예를 들어, AEM 서비스의 사용 후 디스크에 바이너리 다운로드를 트리거하는 `asset.getOriginal().getStream()` 을 사용하지 마십시오.
+예를 들어 를 사용하지 마십시오 `asset.getOriginal().getStream()`: AEM 서비스의 사용 후 디스크에 바이너리 다운로드를 트리거합니다.
 
 ## 역방향 복제 에이전트 없음 {#no-reverse-replication-agents}
 
@@ -85,7 +85,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 ### 로그 {#logs}
 
-로컬 개발의 경우 로그 항목이 `/crx-quickstart/logs` 폴더의 로컬 파일에 기록됩니다.
+로컬 개발의 경우 로그 항목은 의 로컬 파일에 기록됩니다 `/crx-quickstart/logs` 폴더를 입력합니다.
 
 클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -95,7 +95,7 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 >[!NOTE]
 >
->아래 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 요소를 만든 다음 AEM as a Cloud Service 인스턴스에 푸시해야 합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service](/help/implementing/deploying/overview.md)에 배포를 참조하십시오.
+>아래 나열된 구성 변경 사항을 수행하려면 로컬 개발 환경에서 구성 요소를 만든 다음 AEM as a Cloud Service 인스턴스에 푸시해야 합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [AEM에 배포 as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **디버그 로그 수준 활성화**
 
@@ -125,13 +125,13 @@ DEBUG 로그 레벨을 활성화하려면
 
 ### 로컬 개발 {#local-development}
 
-로컬 개발 시 개발자는 CRXDE Lite(`/crx/de`)와 AEM 웹 콘솔(`/system/console`)에 대한 전체 액세스 권한을 갖습니다.
+로컬 개발 시 개발자는 CRXDE Lite(`/crx/de`) 및 AEM 웹 콘솔(`/system/console`).
 
-로컬 개발(SDK 사용)에서 `/apps` 및 `/libs`에 직접 쓸 수 있으며, 이는 최상위 폴더를 변경할 수 없는 클라우드 환경과 다릅니다.
+로컬 개발(SDK 사용)에서는 `/apps` 및 `/libs` 에 직접 쓸 수 있으며, 이는 최상위 폴더를 변경할 수 없는 클라우드 환경과 다릅니다.
 
 ### AEM as a Cloud Service 개발 도구 {#aem-as-a-cloud-service-development-tools}
 
-고객은 작성 계층의 개발 환경에서 CRXDE Lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다. 런타임 시에 변경할 수 없는 저장소(`/libs`, `/apps`)를 쓸 수 없으므로 작업을 시도하면 오류가 발생합니다.
+고객은 작성 계층의 개발 환경에서 CRXDE Lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다. 변경할 수 없는 저장소(`/libs`, `/apps`)를 런타임에 쓸 수 없으므로 작업을 시도하면 오류가 발생합니다.
 
 AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
 
@@ -141,7 +141,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개�
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-자세한 내용은 [이 페이지](/help/release-notes/home.md)를 참조하십시오.
+자세한 내용은 [이 페이지](/help/release-notes/home.md) 추가 정보.
 
 개발자는 상태 정보를 생성하고 다양한 리소스를 해결할 수 있습니다.
 
@@ -159,7 +159,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개�
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-프로덕션 프로그램의 경우 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 개발자 콘솔을 AEM as a Cloud Service에 액세스할 수 있는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에는 &quot;Cloud Manager - 개발자 역할&quot;이 필요하며, 두 서비스에서 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)를 참조하십시오.
+프로덕션 프로그램의 경우 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 개발자 콘솔을 AEM as a Cloud Service에 액세스할 수 있는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에는 &quot;Cloud Manager - 개발자 역할&quot;이 필요하며, 두 서비스에서 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### AEM 스테이징 및 프로덕션 서비스 {#aem-staging-and-production-service}
 
@@ -171,46 +171,69 @@ Adobe은 응용 프로그램 성능을 모니터링하고 노후화가 확인되
 
 ## 이메일 보내기 {#sending-email}
 
-AEM as a Cloud Service을 사용하려면 아웃바운드 메일을 암호화해야 합니다. 아래 섹션에서는 이메일을 요청, 구성 및 전송하는 방법을 설명합니다.
+아래 섹션에서는 이메일을 요청, 구성 및 전송하는 방법을 설명합니다.
 
 >[!NOTE]
 >
->메일 서비스는 OAuth2 지원을 사용하여 구성할 수 있습니다. 자세한 내용은 메일 서비스에 대한 [OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)을 참조하십시오.
+>메일 서비스는 OAuth2 지원을 사용하여 구성할 수 있습니다. 자세한 내용은 [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md).
 
 ### 아웃바운드 이메일 활성화 {#enabling-outbound-email}
 
-기본적으로 전송하는 데 사용되는 포트는 비활성화되어 있습니다. 이 기능을 활성화하려면 [고급 네트워킹](/help/security/configuring-advanced-networking.md)을 구성하여 필요한 각 환경에 대해 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 종단점의 포트 전달 규칙을 설정하여 트래픽이 포트 465(메일 서버에서 지원하는 경우) 또는 포트 587(메일 서버에 이 기능이 필요하고 해당 포트에서 TLS를 적용하는 경우)을 통과하도록 하십시오.
+기본적으로 이메일을 보내는 데 사용되는 포트는 비활성화됩니다. 포트를 활성화하려면 [고급 네트워킹](/help/security/configuring-advanced-networking.md)를 설정하는 것이 좋습니다 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 의도한 포트(예: 465 또는 587)를 프록시 포트에 매핑하는 엔드포인트의 포트 전달 규칙.
 
-Adobe은 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 `kind` 매개 변수를 `flexiblePortEgress`로 설정하여 고급 네트워킹을 구성하는 것이 좋습니다. 고유 송신 IP 주소가 필요한 경우 `dedicatedEgressIp` 의 `kind` 매개 변수를 선택하십시오. 다른 이유로 이미 VPN을 구성한 경우 해당 고급 네트워킹 변형에서 제공하는 고유한 IP 주소도 사용할 수 있습니다.
+고급 네트워킹을 `kind` 매개 변수가 `flexiblePortEgress` Adobe은 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 고유 송신 IP 주소가 필요한 경우 `kind` 매개 변수 `dedicatedEgressIp`. 다른 이유로 이미 VPN을 구성한 경우 해당 고급 네트워킹 변형에서 제공하는 고유한 IP 주소도 사용할 수 있습니다.
 
 전자 메일 클라이언트에 직접 이메일을 보내는 대신 메일 서버를 통해 전자 메일을 보내야 합니다. 그렇지 않으면 이메일이 차단될 수 있습니다.
 
 ### 전자 메일 보내기 {#sending-emails}
 
-[일 CQ Mail Service OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하고 이메일을 수신자에게 직접 보내는 대신 지원 요청에 표시된 메일 서버로 보내야 합니다.
-
-AEM as a Cloud Service은 포트 465를 통해 메일을 전송해야 합니다. 메일 서버가 포트 465를 지원하지 않는 경우 TLS 옵션이 활성화되어 있는 한 포트 587을 사용할 수 있습니다.
+다음 [일 CQ 메일 서비스 OSGI 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) 을 사용해야 하며 이메일은 수신자에게 직접 전달되지 않고 지원 요청에 표시된 메일 서버로 전송되어야 합니다.
 
 ### 구성 {#email-configuration}
 
-AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)를 사용하여 전송해야 합니다.
+AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-전자 메일 설정 구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)를 참조하십시오. AEM as a Cloud Service의 경우 `com.day.cq.mailer.DefaultMailService OSGI` 서비스를 다음과 같이 조정해야 합니다.
+자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) 전자 메일 설정 구성에 대한 자세한 내용은 을 참조하십시오. AEM as a Cloud Service의 경우 다음 필요한 조정을 `com.day.cq.mailer.DefaultMailService OSGI` 서비스:
+
+* SMTP 서버 호스트 이름을 $(으)로 설정해야 합니다.[env:AEM_PROXY_HOST]
+* SMTP 서버 포트는 고급 네트워킹을 구성할 때 API 호출에 사용된 portForwards 매개 변수에 설정된 원래 프록시 포트의 값으로 설정해야 합니다. 예를 들어 30465(465가 아님)
+
+포트 465가 요청된 경우 다음 사항을 권장합니다.
+
+* 설정 `smtp.port` to `465`
+* 설정 `smtp.ssl` to `true`
+
+그리고 포트 587이 요청되는 경우:
+
+* 설정 `smtp.port` to `587`
+* 설정 `smtp.ssl` to `false`
+
+다음 `smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동으로 설정됩니다. 따라서 `smtp.ssl` 이 true로 설정되어 있고, `smtp.startls` 은 무시됩니다. If `smtp.ssl` 가 false로 설정되고, `smtp.starttls` 가 true로 설정된 경우에만 추적됩니다. 이것은 `smtp.starttls` OSGI 구성에 설정된 값입니다.
+
+
+선택적으로 OAuth2 지원을 사용하여 메일 서비스를 구성할 수 있습니다. 자세한 내용은 [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md).
+
+### 기존 이메일 구성 {#legacy-email-configuration}
+
+2021.9.0 릴리스 이전에는 고객 지원 요청을 통해 이메일을 구성했습니다. 다음에 필요한 조정을 확인합니다. `com.day.cq.mailer.DefaultMailService OSGI` 서비스:
+
+AEM as a Cloud Service은 포트 465를 통해 메일을 전송해야 합니다. 메일 서버가 포트 465를 지원하지 않는 경우 TLS 옵션이 활성화되어 있는 한 포트 587을 사용할 수 있습니다.
 
 포트 465가 요청된 경우:
 
-* `smtp.port`을 `465`(으)로 설정
-* `smtp.ssl`을 `true`(으)로 설정
+* 설정 `smtp.port` to `465`
+* 설정 `smtp.ssl` to `true`
 
-포트 587이 요청된 경우(메일 서버가 포트 465를 지원하지 않는 경우에만 허용됨):
+그리고 포트 587이 요청되는 경우:
 
-* `smtp.port`을 `587`(으)로 설정
-* `smtp.ssl`을 `false`(으)로 설정
+* 설정 `smtp.port` to `587`
+* 설정 `smtp.ssl` to `false`
 
-`smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동 설정됩니다. 따라서 `smtp.tls`이 true로 설정된 경우 `smtp.startls`은 무시됩니다. `smtp.ssl`이 false로 설정된 경우 `smtp.starttls`이 true로 설정됩니다. 이는 OSGI 구성에 설정된 `smtp.starttls` 값에 관계없이 적용됩니다.
+다음 `smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동으로 설정됩니다. 따라서 `smtp.ssl` 이 true로 설정되어 있고, `smtp.startls` 은 무시됩니다. If `smtp.ssl` 가 false로 설정되고, `smtp.starttls` 가 true로 설정된 경우에만 추적됩니다. 이것은 `smtp.starttls` OSGI 구성에 설정된 값입니다.
 
-선택적으로 OAuth2 지원을 사용하여 메일 서비스를 구성할 수 있습니다. 자세한 내용은 메일 서비스에 대한 [OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)을 참조하십시오.
+SMTP 서버 호스트를 메일 서버의 호스트로 설정해야 합니다.
+
 
 ## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 
-Assets as a Cloud Service에 대한 개발 사용 사례, 권장 사항 및 참조 자료에 대해 알아보려면 [Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)에 대한 개발자 참조 를 참조하십시오.
+Assets에 대한 개발 사용 사례, 권장 사항 및 참조 자료를 as a Cloud Service으로 확인하려면 [자산에 대한 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
