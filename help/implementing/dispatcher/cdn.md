@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: b8466ace384657d972a55e39dbd2fcdac1a9d0b9
+source-git-commit: b71299a08c6dec8e88c4259b3d03481b20b310cb
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 8%
@@ -33,7 +33,7 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 
 기본적으로 AEM 관리 CDN 설정의 경우 모든 공용 트래픽은 프로덕션 및 비프로덕션(개발 및 스테이지) 환경 모두에 대해 게시 서비스로 이동할 수 있습니다. 지정된 환경에 대한 게시 서비스로 트래픽을 제한하려는 경우(예: IP 주소 범위에 따라 스테이징을 제한하는) Cloud Manager UI를 통해 셀프 서비스 방식으로 이 작업을 수행할 수 있습니다.
 
-자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 를 참조하십시오.
+을(를) 참조하십시오. [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 추가 정보
 
 >[!CAUTION]
 >
@@ -50,7 +50,7 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 
 * 고객은 교체해야 하는 번거로운 기존 CDN이 있어야 합니다.
 * 고객이 관리해야 합니다.
-* 고객은 AEM에서 Cloud Service으로 작동하도록 CDN을 구성할 수 있어야 합니다. 아래 구성 지침을 참조하십시오.
+* 고객은 AEM as a Cloud Service에서 작동하도록 CDN을 구성할 수 있어야 합니다. 아래 구성 지침을 참조하십시오.
 * 고객은 관련 문제가 발생할 경우 호출되는 엔지니어링 CDN 전문가가 있어야 합니다.
 * 고객은 프로덕션으로 이동하기 전에 로드 테스트를 수행하고 성공적으로 통과해야 합니다.
 
@@ -59,24 +59,24 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 1. CDN을 Adobe CDN의 주소를 원래 도메인으로 가리킵니다. 예, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. SNI는 Adobe CDN의 수신로도 설정되어야 합니다
 1. 호스트 헤더를 원본 도메인으로 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. AEM에서 호스트 헤더를 확인할 수 있도록 도메인 이름으로 `X-Forwarded-Host` 헤더를 설정하십시오. 예: `X-Forwarded-Host:example.com`.
+1. 설정 `X-Forwarded-Host` 헤더에 사용할 수 있습니다. 예: `X-Forwarded-Host:example.com`.
 1. 설정 `X-AEM-Edge-Key`. 값은 Adobe에서 가져와야 합니다.
-   * Adobe CDN이 요청 소스의 유효성을 확인하고 `X-Forwarded-*` 헤더를 AEM 애플리케이션에 전달할 수 있도록 필요합니다. 예를 들어`X-Forwarded-For`은 클라이언트 IP를 결정하는 데 사용됩니다. 따라서 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임이 되므로 `X-Forwarded-*` 헤더가 정확한지 확인합니다(아래 참고 참조).
-   * 선택적으로, `X-AEM-Edge-Key` 이 없을 경우 Adobe CDN의 수신 주소에 대한 액세스를 차단할 수 있습니다. Adobe CDN 수신(차단하려면)에 직접 액세스해야 하는 경우 Adobe에 알려주십시오.
+   * Adobe CDN이 요청 소스의 유효성을 확인하고 를 전달할 수 있도록 필요합니다 `X-Forwarded-*` 헤더 를 AEM 애플리케이션에 추가합니다. 예,`X-Forwarded-For` 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 는 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임이 되므로 `X-Forwarded-*` header(아래 참고 참조).
+   * 선택적으로, `X-AEM-Edge-Key` 이 없습니다. Adobe CDN 수신(차단하려면)에 직접 액세스해야 하는 경우 Adobe에 알려주십시오.
 
 라이브 트래픽을 수락하기 전에 엔드 투 엔드 트래픽 라우팅이 올바르게 작동하는지 Adobe의 고객 지원 센터에서 확인해야 합니다.
 
-`X-AEM-Edge-Key`을 얻은 후 요청이 다음과 같이 올바르게 라우팅되는지 테스트할 수 있습니다.
+를 가져온 후 `X-AEM-Edge-Key`를 설정하는 경우, 요청이 다음과 같이 올바르게 라우팅되는지 테스트할 수 있습니다.
 
 ```
-curl publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 ```
 
-CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 기본 도메인 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`을 사용하여 수행됩니다.
+CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 기본 도메인을 사용하여 수행됩니다 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
->자체 CDN을 관리하는 고객은 AEM CDN으로 전송되는 헤더의 무결성을 보장해야 합니다. 예를 들어 고객이 모든 `X-Forwarded-*` 헤더를 지우고 알려진 및 제어 값으로 설정하는 것이 좋습니다. 예를 들어 `X-Forwarded-For` 에는 클라이언트의 IP 주소가 포함되어야 하고, `X-Forwarded-Host` 에는 사이트의 호스트가 포함되어야 합니다.
+>자체 CDN을 관리하는 고객은 AEM CDN으로 전송되는 헤더의 무결성을 보장해야 합니다. 예를 들어, 고객이 모두 지우는 것이 좋습니다 `X-Forwarded-*` 헤더를 설정하고 이를 알려진 및 제어 값으로 설정합니다. 예, `X-Forwarded-For` 는 클라이언트의 IP 주소를 포함해야 하는 반면, `X-Forwarded-Host` 에는 사이트의 호스트가 포함되어야 합니다.
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 * 국가 코드: `x-aem-client-country`
 * 대륙 코드: `x-aem-client-continent`
 
-국가 코드의 값은 [여기](https://en.wikipedia.org/wiki/ISO_3166-1)에 설명된 알파-2 코드입니다.
+국가 코드 값은 설명된 알파-2 코드입니다 [여기](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 대륙 코드 값은 다음과 같습니다.
 
@@ -105,4 +105,4 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 * OC 오세아니아
 * SA 남아메리카
 
-이 정보는 요청의 원본(국가)을 기준으로 다른 URL로 리디렉션하는 등의 사용 사례에 유용할 수 있습니다. 지역 정보에 종속되는 응답을 캐시하려면 Vary 헤더를 사용합니다. 예를 들어, 특정 국가 랜딩 페이지로의 리디렉션은 항상 `Vary: x-aem-client-country`을 포함해야 합니다. 필요한 경우 `Cache-Control: private` 을 사용하여 캐싱을 방지할 수 있습니다. [캐싱](/help/implementing/dispatcher/caching.md#html-text)도 참조하십시오.
+이 정보는 요청의 원본(국가)을 기준으로 다른 URL로 리디렉션하는 등의 사용 사례에 유용할 수 있습니다. 지역 정보에 종속되는 응답을 캐시하려면 Vary 헤더를 사용합니다. 예를 들어, 특정 국가 랜딩 페이지로의 리디렉션은 항상 을 포함해야 합니다 `Vary: x-aem-client-country`. 필요한 경우 `Cache-Control: private` 캐싱 방지 참조 - [캐싱](/help/implementing/dispatcher/caching.md#html-text).
