@@ -3,7 +3,7 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 540e380b01629cb17aae9b993e871e3496a2e86b
+source-git-commit: adb0aa2812871f6efedd1fb88663170127dc59d4
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 ## 릴리스 날짜 {#release-date}
 
 의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2021.9.0)는 2021년 10월 6일입니다.
-다음 릴리스(2021.10.0)은 2021년 10월 27일에 있습니다.
+다음 릴리스(2021.10.0)은 2021년 11월 4일에 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
