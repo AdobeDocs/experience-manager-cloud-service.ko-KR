@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 소개
 description: Adobe Experience Manager (AEM) as a Cloud Service 소개.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 7d5445ae4081065fd869684f2aacdb9de1951089
+source-git-commit: 4db42a04a122306f5fa068b258913836020d2f9a
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '588'
 ht-degree: 54%
 
 ---
@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM) as a Cloud Service은 AEM 제품 라인의 최신
 
 AEM as a Cloud Service을 사용하면 클라우드 기반의 방식으로 AEM 애플리케이션을 활용할 수 있으므로 다음을 수행할 수 있습니다.
 
-* Cloud Manager를 사용하여 DevOps 작업 확장: CI/CD 프레임워크, 자동 크기 조정, API 연결, 유연한 배포 모드, 코드 품질 게이트 및 서비스.
+* Cloud Manager를 사용하여 DevOps 작업 확장: CI/CD 프레임워크, 자동 크기 조정, API 연결, 유연한 배포 모드, 코드 품질 게이트, 서비스 제공 투명성 및 안내 업데이트.
 
 * 개발자가 애플리케이션 개발 방침에 자동화를 추가할 수 있도록 합니다.
 
