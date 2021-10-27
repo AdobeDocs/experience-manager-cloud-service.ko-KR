@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 시작하기
 description: 컨텐츠 전송 도구 시작하기
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -11,7 +11,7 @@ ht-degree: 29%
 
 # 컨텐츠 전송 도구 시작하기 {#getting-started-content-transfer-tool}
 
-## 소스 환경 연결
+## 소스 환경 연결 {#source-environment-connectivity}
 
 소스 AEM 인스턴스는 허용 목록에 추가된 특정 호스트에만 연결할 수 있는 방화벽 뒤에서 실행될 수 있습니다. 추출을 성공적으로 실행하려면 AEM을 실행 중인 인스턴스에서 다음 엔드포인트에 액세스할 수 있어야 합니다.
 
@@ -30,6 +30,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >다음과 같은 경우 `HTTP/2 200` 이(가) 수신되면 AEM as a Cloud Service에 대한 연결이 성공적으로 수행되었습니다.
+
 
 ## 사용 가능 {#availability}
 
