@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 시작하기
 description: 컨텐츠 전송 도구 시작하기
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
+source-git-commit: 95f65b9be7d8921bfc12980116c00aba21586f41
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -15,12 +15,9 @@ ht-degree: 29%
 
 소스 AEM 인스턴스는 허용 목록에 추가된 특정 호스트에만 연결할 수 있는 방화벽 뒤에서 실행될 수 있습니다. 추출을 성공적으로 실행하려면 AEM을 실행 중인 인스턴스에서 다음 엔드포인트에 액세스할 수 있어야 합니다.
 
-* 대상 AEM as a Cloud Service 환경:
-   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Azure Blob 저장소 서비스:
-   `*.blob.core.windows.net`
-* 사용자 매핑 IO 끝점:
-   `usermanagement.adobe.io`
+* 대상 AEM as a Cloud Service 환경: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Azure Blob 저장소 서비스: `*.blob.core.windows.net`
+* 사용자 매핑 IO 끝점: `usermanagement.adobe.io`
 
 대상 AEM as a Cloud Service 환경에 대한 연결을 테스트하려면 소스 인스턴스의 셸에서 다음 cURL 명령을 실행합니다(replace) `program_id`, `environment_id`, 및 `migration_token`):
 
