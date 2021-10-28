@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 시작하기
 description: 컨텐츠 전송 도구 시작하기
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: a8635ce39e2a8f8769975be22cdc431dd7f9423a
+source-git-commit: d8c9373da79b46d32f8da37b4dfeae815348ae8a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -21,9 +21,7 @@ ht-degree: 29%
 
 대상 AEM as a Cloud Service 환경에 대한 연결을 테스트하려면 소스 인스턴스의 셸에서 다음 cURL 명령을 실행합니다(replace) `program_id`, `environment_id`, 및 `migration_token`):
 
-```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
-```
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 
 >[!NOTE]
