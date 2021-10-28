@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 시작하기
 description: 컨텐츠 전송 도구 시작하기
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 54ecb65e78b25aed694f00eed99015ef0226f862
+source-git-commit: 4d71cd5f2376d7cf5ea201410890259ae19f2846
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 29%
+source-wordcount: '801'
+ht-degree: 27%
 
 ---
 
@@ -27,13 +27,6 @@ ht-degree: 29%
 >다음과 같은 경우 `HTTP/2 200` 이(가) 수신되면 AEM as a Cloud Service에 대한 연결이 성공적으로 수행되었습니다.
 
 ## 사용 가능 {#availability}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_download"
->title="다운로드"
->abstract="소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다. 최신 버전을 다운로드해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="릴리스 노트"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="소프트웨어 배포 포털"
 
 소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
 
