@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
+source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1042'
 ht-degree: 5%
 
 ---
@@ -90,7 +90,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
 프로젝트에서 두 개 이상의 BPA(Best Practices Analyzer) 보고서를 업로드할 때 **트렌드 라인 보기** 이전 BPA 보고서의 결과를 보고 비교하는 옵션입니다.
 
-트렌드 라인을 보려면 아래 절차를 따르십시오.
+트렌드 라인 옵션에서 보고서를 보려면 아래 절차를 따르십시오.
 
 >[!NOTE]
 >프로젝트에서 두 개 이상의 BPA 보고서를 업로드하면 아이콘이 표시됩니다 **...**.
@@ -104,7 +104,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >표시된 보고서는 항상 최신 보고서 날짜가 있는 보고서입니다.
+   >에 표시되는 보고서 **트렌드 라인 보고서 화면** 는 항상 최근 보고서 날짜가 있는 것입니다.
 
 1. 클릭 **트렌드 라인 보기**&#x200B;아래 그림과 같이,
 
@@ -116,12 +116,14 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
    >[!NOTE]
    >트렌드 라인 보고서는 내역 BPA 보고서의 결과를 그래픽 표현으로 표시합니다.
+   >
    >다음 두 개의 그래프에서 트렌드를 확인할 수 있습니다.
-   >1. 보고서 결과 트렌드
-   >1. 사용자 지정 구성 요소 및 템플릿 트렌드
-      >아래 표시된 것처럼 드롭다운을 통해 그래픽 보기를 추가하거나 변경할 수 있습니다.
-      >![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >1. **보고서 결과 트렌드**
+   >1. **사용자 지정 구성 요소 및 템플릿 트렌드**
 
+   >
+   >아래 그림과 같이 드롭다운을 통해 그래픽 보기를 추가하거나 변경할 수 있습니다.
+   >![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### 트렌드 라인 보고서 삭제 {#delete-trendline}
 
