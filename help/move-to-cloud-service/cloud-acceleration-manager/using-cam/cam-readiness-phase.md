@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
+source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1058'
 ht-degree: 5%
 
 ---
@@ -125,9 +125,12 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
    >아래 그림과 같이 드롭다운을 통해 그래픽 보기를 추가하거나 변경할 수 있습니다.
    >![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
-#### 트렌드 라인 보고서 삭제 {#delete-trendline}
+#### 보고서 삭제 {#delete-trendline}
 
 트렌드 라인 보기에서 보고서를 삭제하려면 아래 절차를 따르십시오.
+
+>[!IMPORTANT]
+>프로젝트에 두 개 이상의 보고서가 업로드된 경우에만 보고서를 삭제할 수 있습니다.
 
 1. 프로젝트로 이동하고 을(를) 클릭합니다 **검토** 에서 **우수 사례 분석** 의 카드 **준비** 단계.
 
