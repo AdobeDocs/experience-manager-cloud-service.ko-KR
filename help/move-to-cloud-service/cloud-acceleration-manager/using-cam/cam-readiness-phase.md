@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 5%
@@ -93,7 +93,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 트렌드 라인 옵션에서 보고서를 보려면 아래 절차를 따르십시오.
 
 >[!NOTE]
->프로젝트에서 두 개 이상의 BPA 보고서를 업로드하면 아이콘이 표시됩니다 **...**.
+>프로젝트에서 두 개 이상의 BPA 보고서를 업로드하면 **...** 아이콘.
 
 1. 프로젝트로 이동하고 을(를) 클릭합니다 **검토** 에서 **우수 사례 분석** 의 카드 **준비** 단계.
 
