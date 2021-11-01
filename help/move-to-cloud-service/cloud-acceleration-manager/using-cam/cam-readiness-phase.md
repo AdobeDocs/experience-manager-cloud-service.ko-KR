@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 5%
 
 ---
@@ -104,7 +104,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >에 표시되는 보고서 **트렌드 라인 보고서 화면** 는 항상 최근 보고서 날짜가 있는 것입니다.
+   >표시된 보고서는 항상 최신 보고서 날짜가 있는 보고서입니다.
 
 1. 클릭 **트렌드 라인 보기**&#x200B;아래 그림과 같이,
 
@@ -124,33 +124,6 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
    >
    >아래 그림과 같이 드롭다운을 통해 그래픽 보기를 추가하거나 변경할 수 있습니다.
    >![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### 보고서 삭제 {#delete-trendline}
-
-트렌드 라인 보기에서 보고서를 삭제하려면 아래 절차를 따르십시오.
-
->[!IMPORTANT]
->프로젝트에 두 개 이상의 보고서가 업로드된 경우에만 보고서를 삭제할 수 있습니다.
-
-1. 프로젝트로 이동하고 을(를) 클릭합니다 **검토** 에서 **우수 사례 분석** 의 카드 **준비** 단계.
-
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. 을(를) 클릭합니다. **...** 아이콘을 클릭하여 드롭다운을 표시합니다.
-
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. 클릭 **트렌드 라인 보기**&#x200B;아래 그림과 같이,
-
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. 에서 삭제 아이콘을 클릭합니다 **트렌드 라인 보고서** 화면.
-
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. 클릭 **삭제** 를 클릭하여 삭제를 확인합니다.
-
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### 우수 사례 분석 보고서 검토 {#analysis-report}
@@ -222,6 +195,33 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 1. 컨텐츠 회전판에 마이그레이션 여정의 이 단계에 대한 모든 관련 정보가 표시됩니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### 우수 사례 분석 보고서 삭제 {#delete-trendline}
+
+트렌드 라인 보기에서 보고서를 삭제하려면 아래 절차를 따르십시오.
+
+>[!IMPORTANT]
+>프로젝트에 두 개 이상의 보고서가 업로드된 경우에만 보고서를 삭제할 수 있습니다.
+
+1. 프로젝트로 이동하고 을(를) 클릭합니다 **검토** 에서 **우수 사례 분석** 의 카드 **준비** 단계.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. 을(를) 클릭합니다. **...** 아이콘을 클릭하여 드롭다운을 표시합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. 클릭 **트렌드 라인 보기**&#x200B;아래 그림과 같이,
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. 에서 삭제 아이콘을 클릭합니다 **트렌드 라인 보고서** 화면.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. 클릭 **삭제** 를 클릭하여 삭제를 확인합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## 다음은 무엇입니까? {#whats-next}
 
