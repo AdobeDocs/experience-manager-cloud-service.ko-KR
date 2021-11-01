@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
+source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '1032'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. 아래 그림과 같이 **준비** 섹션으로 이동합니다.
+1. 로 이동합니다 **준비** 섹션을 참조하십시오.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -35,7 +35,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
 우수 사례 분석 카드를 사용하려면 아래 절차를 따르십시오.
 
-1. **우수 사례 분석** 카드에서 **검토** 단추를 클릭합니다.
+1. 을(를) 클릭합니다. **검토** 단추 **우수 사례 분석** 카드.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
@@ -44,14 +44,14 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
    >[!NOTE]
    >비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 프로덕션 환경에 최대한 가까운 작성 환경에서 BPA를 실행하는 것이 좋습니다. 또는 프로덕션 작성 환경의 복제본에서 실행할 수 있습니다.
 
-   1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털로 이동하여 우수 사례 분석기를 zip 파일로 다운로드합니다.
+   1. 다음으로 이동 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털 및 우수 사례 분석기를 zip 파일로 다운로드합니다.
 
       >[!NOTE]
-      >[우수 사례 분석기 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations)을 검토하여 BPA를 실행하는 방법을 알아보십시오.
+      >검토 [우수 사례 분석기 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) bpa 실행 방법을 알아봅니다.
 
    1. 보고서를 CSV 형식으로 내보냅니다
 
-1. **새 보고서 업로드**&#x200B;를 클릭하여 CAM에서 BPA 보고서를 업로드합니다.
+1. 클릭 **새 보고서 업로드** 를 눌러 CAM에서 BPA 보고서를 업로드합니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
@@ -62,7 +62,7 @@ Cloud Acceleration Manager에서 프로젝트를 만들었으면 이제 준비 �
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. CAM에서 모범 사례 분석 대시보드를 검토하고 살펴봅니다. 자세한 내용은 [우수 사례 분석 보고서 검토](#analysis-report) 섹션을 참조하십시오.
+1. CAM에서 모범 사례 분석 대시보드를 검토하고 살펴봅니다. 아래 섹션을 참조하십시오 [우수 사례 분석 보고서 검토](#analysis-report) 자세한 내용
 
    >[!NOTE]
    >새 보고서를 업로드하면 모든 평가가 재설정됩니다.
@@ -73,18 +73,80 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
 아래 단계를 따르십시오.
 
-1. 아래 표시된 대로 **인쇄 미리 보기** 아이콘을 클릭합니다.
+1. 클릭 **인쇄 미리 보기** 아이콘 을 채우는 방법을 설명합니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. **인쇄 미리 보기**&#x200B;를 클릭하면 인쇄 가능한 미리 보기에 표시된 보고서가 있는 새 탭이 열립니다. 보고서를 PDF 형식으로 인쇄하려면 **인쇄**&#x200B;를 클릭하십시오.
+1. 클릭 **인쇄 미리 보기** 인쇄 가능한 미리 보기에 표시된 보고서가 있는 새 탭을 엽니다. 클릭 **인쇄** 보고서를 PDF 형식으로 인쇄하려면
 
    >[!IMPORTANT]
-   >* **PDF**&#x200B;로 저장 옵션이 권장되며 위의 기능에 대해 지원됩니다.
+   >* 옵션 **다른 이름으로 저장 PDF** 는 위의 기능에 대해 권장되고 지원됩니다.
    >* 브라우저의 인쇄 단추를 사용하면 한 페이지만 인쇄됩니다.
 
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
+
+### 트렌드 라인 보기 사용 {#trendline-view-cam}
+
+프로젝트에서 두 개 이상의 BPA(Best Practices Analyzer) 보고서를 업로드할 때 **트렌드 라인 보기** 이전 BPA 보고서의 결과를 보고 비교하는 옵션입니다.
+
+트렌드 라인을 보려면 아래 절차를 따르십시오.
+
+>[!NOTE]
+>프로젝트에서 두 개 이상의 BPA 보고서를 업로드하면 아이콘이 표시됩니다 **...**.
+
+1. 프로젝트로 이동하고 을(를) 클릭합니다 **검토** 에서 **우수 사례 분석** 의 카드 **준비** 단계.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. 을(를) 클릭합니다. **...** 아이콘을 클릭하여 드롭다운을 표시합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+   >[!IMPORTANT]
+   >표시된 보고서는 항상 최신 보고서 날짜가 있는 보고서입니다.
+
+1. 클릭 **트렌드 라인 보기**&#x200B;아래 그림과 같이,
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. 클릭 **트렌드 라인 보기** 아래 그림과 같이 보고서의 트렌드 라인 보기를 엽니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+
+   >[!NOTE]
+   >트렌드 라인 보고서는 내역 BPA 보고서의 결과를 그래픽 표현으로 표시합니다.
+   >다음 두 개의 그래프에서 트렌드를 확인할 수 있습니다.
+   >1. 보고서 결과 트렌드
+   >1. 사용자 지정 구성 요소 및 템플릿 트렌드
+      >아래 표시된 것처럼 드롭다운을 통해 그래픽 보기를 추가하거나 변경할 수 있습니다.
+      >![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+
+
+#### 트렌드 라인 보고서 삭제 {#delete-trendline}
+
+트렌드 라인 보기에서 보고서를 삭제하려면 아래 절차를 따르십시오.
+
+1. 프로젝트로 이동하고 을(를) 클릭합니다 **검토** 에서 **우수 사례 분석** 의 카드 **준비** 단계.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. 을(를) 클릭합니다. **...** 아이콘을 클릭하여 드롭다운을 표시합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. 클릭 **트렌드 라인 보기**&#x200B;아래 그림과 같이,
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. 에서 삭제 아이콘을 클릭합니다 **트렌드 라인 보고서** 화면.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. 클릭 **삭제** 를 클릭하여 삭제를 확인합니다.
+
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+
 
 ### 우수 사례 분석 보고서 검토 {#analysis-report}
 
@@ -101,7 +163,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
 #### 보고서 속성 {#report-properties}
 
-**보고서 속성** 카드는 보고서 날짜, 기간, 필터, 업로드 날짜 및 Adobe Experience Manager(AEM) 세부 사항과 같은 보고서 속성에 대한 정보를 제공합니다.
+다음 **보고서 속성** 카드는 보고서 날짜, 기간, 필터, 업로드 날짜 및 Adobe Experience Manager(AEM) 세부 사항 등의 보고서 속성에 대한 정보를 제공합니다.
 
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
@@ -111,7 +173,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-이 보고서를 클릭하면 **보고서** 탭이 열립니다.
+이 보고서를 클릭하면 **보고서** 탭.
 
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -120,7 +182,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->검색 결과 카테고리 및 중요도 수준에 대해 알려면 [우수 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en)을 참조하십시오.
+>을(를) 참조하십시오. [모범 사례 분석기 보고서 해석](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 검색 결과 카테고리 및 중요도 수준에 대해 알아봅니다.
 
 #### 모범 사례 평가 {#best-practices-assessment}
 
@@ -148,7 +210,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
 이 섹션을 따라 계획 및 설정 활동 카드를 탐색합니다.
 
-1. **계획 및 설정** 카드에서 **보기** 단추를 클릭합니다. 이 카드는 AEM 마이그레이션을 계획 및 설정하는 데 도움이 되는 모든 관련 컨텐츠를 제공합니다.
+1. 을(를) 클릭합니다. **보기** 단추 **계획 및 설정** 카드. 이 카드는 AEM 마이그레이션을 계획 및 설정하는 데 도움이 되는 모든 관련 컨텐츠를 제공합니다.
 
    ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -158,4 +220,4 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
 ## 다음은 무엇입니까? {#whats-next}
 
-Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)에서 다음 단계를 검토할 준비가 되었습니다.
+Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 의 다음 단계를 검토할 준비가 되었습니다 [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
