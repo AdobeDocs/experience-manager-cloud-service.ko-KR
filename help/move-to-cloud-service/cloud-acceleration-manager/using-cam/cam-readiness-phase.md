@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -112,7 +112,8 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
 1. 클릭 **트렌드 라인 보기** 아래 그림과 같이 보고서의 트렌드 라인 보기를 엽니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
 
    >[!NOTE]
    >트렌드 라인 보고서는 내역 BPA 보고서의 결과를 그래픽 표현으로 표시합니다.
@@ -217,11 +218,11 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
 1. 에서 삭제 아이콘을 클릭합니다 **트렌드 라인 보고서** 화면.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. 클릭 **삭제** 를 클릭하여 삭제를 확인합니다.
 
-   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+   ![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## 다음은 무엇입니까? {#whats-next}
 
