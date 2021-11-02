@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: cc9e305d96f1de55a8c3fa450aa41142bb0adfd1
+source-git-commit: 997caea86978a2306a5081ef26270dfd451ab8a4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '927'
+ht-degree: 8%
 
 ---
 
@@ -68,7 +68,9 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 
 를 가져온 후 `X-AEM-Edge-Key`를 설정하는 경우, 요청이 다음과 같이 올바르게 라우팅되는지 테스트할 수 있습니다.
 
-`https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'`
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+```
 
 CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할 필요가 없습니다. Adobe CDN의 라우팅은 기본 도메인을 사용하여 수행됩니다 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
