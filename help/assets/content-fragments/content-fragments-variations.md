@@ -1,19 +1,19 @@
 ---
 title: 변형 - 조각 컨텐츠 작성
 description: 변형에서 조각에 대한 컨텐츠를 작성한 다음 목적에 따라 해당 컨텐츠의 변형을 만들 수 있도록 함으로써 AEM에서 헤드리스 컨텐츠를 더욱 유연하게 만드는 방법을 이해합니다.
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3c7358aa8db925e8f2493896a9d57ae13788bf8d
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2283'
+ht-degree: 70%
 
 ---
 
 # 변형 - 조각 컨텐츠 작성{#variations-authoring-fragment-content}
 
-[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 변수는 특정 채널 및/또는 시나리오에서 사용할 마스터 컨텐츠의 사본을 만들고 편집할 수 있으므로 AEM 컨텐츠 조각의 중요한 기능으로, 헤드리스 컨텐츠 게재를 보다 유연하게 만듭니다.
+[변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 특정 채널 및/또는 시나리오에서 사용할 마스터 컨텐츠의 사본을 만들고 편집할 수 있으므로 AEM 컨텐츠 조각의 중요한 기능으로, 헤드리스 컨텐츠 게재를 보다 유연하게 만듭니다.
 
 **변형** 탭에서는 다음 작업을 수행할 수 있습니다.
 
@@ -44,20 +44,20 @@ ht-degree: 0%
 
 예:
 
-![전체 화면 ](assets/cfm-variations-02.png)
-편집기다음 작업을 수행할 수 있습니다.
+![전체 화면 편집기](assets/cfm-variations-02.png)
+다음을 수행할 수 있습니다.
 
 * **변형** 탭에서 바로 편집
 
    * 각 데이터 유형은 다양한 편집 옵션을 제공합니다
 
-* **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 다음과 같이 열 수도 있습니다.
+* 대상 **여러 줄 텍스트** 필드를 열 수도 있습니다 [전체 화면 편집기](#full-screen-editor) 변환:
 
    * [형식](#formats) 선택
    * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
    * 다양한 [작업](#actions) 액세스
 
-* **조각 참조** 필드의 경우 모델 정의에 따라 **[컨텐츠 조각 편집](#fragment-references-edit-content-fragment)** 옵션을 사용할 수 있습니다.
+* 대상 **조각 참조** 필드 **[컨텐츠 조각 편집](#fragment-references-edit-content-fragment)** 모델 정의에 따라 옵션을 사용할 수 있습니다.
 
 ### 전체 화면 편집기 {#full-screen-editor}
 
@@ -119,7 +119,7 @@ ht-degree: 0%
    * 찾기/바꾸기
    * 맞춤법 검사기
    * [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [컨텐츠 조각 삽입](#inserting-content-fragment-into-your-fragment); 여러 줄  **텍스트 필드** 가 조각 참조  **허용으로 구성된 경우 사용할 수 있습니다**.
+* [컨텐츠 조각 삽입](#inserting-content-fragment-into-your-fragment); 사용 가능한 시기 **여러 줄 텍스트** 필드가 **조각 참조 허용**.
 
 [작업](#actions)은 전체 화면 편집기에서 액세스할 수도 있습니다.
 
@@ -166,25 +166,25 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 #### 콘텐츠 조각 편집 {#fragment-references-edit-content-fragment}
 
-**컨텐츠 조각 편집** 옵션은 동일한 브라우저 탭 내에서 새 편집기 탭에서 해당 조각을 엽니다.
+옵션 **컨텐츠 조각 편집** 는 새 편집기 탭에서 해당 조각을 엽니다(동일한 브라우저 탭 내).
 
-원래 탭을 다시 선택합니다(예: **Little Pony Inc.**). 이 보조 탭을 닫습니다(이 경우 **Adam Smith**).
+원본 탭을 다시 선택합니다(예: **리틀 포니**)에서 이 보조 탭을 닫습니다(이 경우 **아담 스미스**).
 
 ![조각 참조](assets/cfm-variations-editreference.png)
 
 #### 새 컨텐츠 조각 {#fragment-references-new-content-fragment}
 
-**새 컨텐츠 조각** 옵션을 사용하면 완전히 새로운 조각을 만들 수 있습니다. 이를 위해 컨텐츠 조각 만들기 마법사의 변형이 편집기에서 열립니다.
+옵션 **새 컨텐츠 조각** 을 사용하면 완전히 새로운 조각을 만들 수 있습니다. 이를 위해 컨텐츠 조각 만들기 마법사의 변형이 편집기에서 열립니다.
 
 그런 다음 다음을 수행하여 새 조각을 만들 수 있습니다.
 
 1. 로 이동하고 필요한 폴더를 선택합니다.
-1. **다음**&#x200B;을 선택합니다.
-1. 속성 지정; 예: **제목**
-1. **만들기**&#x200B;를 선택합니다.
+1. 선택 **다음**.
+1. 속성 지정; 예 **제목**.
+1. 선택 **만들기**.
 1. 마지막으로:
-   1. **** 은 원래 조각으로 반환되고 새 조각을 참조합니다.
-   1. **** 새 브라우저 탭에서 편집할 새 조각을 열 뿐만 아니라 새 조각을 참조합니다.
+   1. **완료** 은 원래 조각으로 반환되고 새 조각을 참조합니다.
+   1. **열기** 은 새 조각을 참조하고 새 조각을 열어서 편집할 수 있도록 새 브라우저 탭에서 엽니다.
 
 ### 주요 통계 보기 {#viewing-key-statistics}
 
@@ -192,7 +192,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 예:
 
-![통계](assets/cfm-variations-04.png)
+![statistics](assets/cfm-variations-04.png)
 
 ### 컨텐츠 업로드 {#uploading-content}
 
@@ -216,12 +216,11 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 >[!CAUTION]
 영어는 즉시 이용 가능합니다.
-다른 언어는 패키지 공유에서 언어 모델 패키지로 사용할 수 있습니다.
+다른 언어는 소프트웨어 배포의 언어 모델 패키지로 사용할 수 있습니다.
 * [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-
 
 
 1. **마스터** 또는 필요한 변형을 선택합니다.
@@ -246,7 +245,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
    * 요약된 컨텐츠로 유지하려면 강조 표시된 문장을 클릭하십시오.
    * 제거하려면 강조 표시되지 않은 문장을 클릭하십시오.
    * 요약 통계가 표시됩니다. **실제** 및 **Target**-
-   * **변경 내용을 미리 보기**&#x200B;할 수 있습니다.
+   * 다음을 수행할 수 있습니다 **미리 보기** 변경 사항.
 
    ![요약 비교](assets/cfm-variations-06.png)
 
@@ -258,7 +257,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 1. 전체 화면 편집기를 엽니다.
 
-1. **주석** 아이콘은 맨 위 도구 모음에서 사용할 수 있습니다. 필요한 경우 텍스트를 선택할 수 있습니다.
+1. 다음 **주석 달기** 아이콘은 맨 위 도구 모음에서 사용할 수 있습니다. 필요한 경우 텍스트를 선택할 수 있습니다.
 
    ![주석](assets/cfm-variations-07.png)
 
@@ -266,7 +265,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
    ![주석](assets/cfm-variations-07a.png)
 
-1. 대화 상자에서 **적용**&#x200B;을 선택합니다.
+1. 선택 **적용** 클릭합니다.
 
    ![주석](assets/cfm-variations-annotations-apply-icon.png)
 
@@ -339,7 +338,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 조각의 현재 위치에서 참조로 추가됩니다.
 
 >[!NOTE]
-이 옵션은 **여러 줄 텍스트**&#x200B;가 **조각 참조 허용**&#x200B;으로 구성된 경우 사용할 수 있습니다.
+이 옵션은 **여러 줄 텍스트** 는 **조각 참조 허용**.
 
 >[!CAUTION]
 참조하는 페이지에서 이러한 자산을 이동하거나 삭제할 수 없습니다. 이러한 작업은 조각 편집기에서 수행해야 합니다.
@@ -349,7 +348,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 [이미지](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)를 조각 및/또는 페이지에 추가하는 방법은 다양합니다.
 
 1. 조각을 추가할 위치에 커서를 놓습니다.
-1. **컨텐츠 조각 삽입** 아이콘을 사용하여 검색 대화 상자를 엽니다.
+1. 를 사용하십시오 **컨텐츠 조각 삽입** 아이콘을 클릭하여 검색 대화 상자를 엽니다.
 
    ![컨텐츠 조각 삽입 아이콘](assets/cfm-variations-13.png)
 
@@ -360,7 +359,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
    찾은 경우 축소판을 클릭하여 필요한 조각을 선택합니다.
 
-1. **선택**&#x200B;을 사용하여 선택한 컨텐츠 조각에 대한 참조를 현재 컨텐츠 조각(현재 위치)에 추가합니다.
+1. 사용 **선택** 선택한 컨텐츠 조각에 대한 참조를 현재 컨텐츠 조각(현재 위치)에 추가합니다.
 
    >[!CAUTION]
    다른 조각에 대한 참조를 추가한 후 형식을 다음과 같이 변경하는 경우

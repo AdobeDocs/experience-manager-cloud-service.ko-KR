@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '3334'
 ht-degree: 0%
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ### Cloud Manager를 통한 배포 {#deployments-via-cloud-manager}
 
-고객은 Cloud Manager를 통해 클라우드 환경에 사용자 지정 코드를 배포합니다. Cloud Manager는 로컬에서 어셈블된 컨텐츠 패키지를 Sling 기능 모델을 따르는 아티팩트로 변환하며, 클라우드 환경에서 실행할 때 AEM as a Cloud Service 애플리케이션에 대해 설명합니다. 따라서 클라우드 환경의 패키지 관리자에서 패키지를 볼 때 이름에는 &quot;cp2fm&quot;이 포함되고 변형된 패키지의 메타데이터가 모두 제거됩니다. 상호 작용할 수 없으므로 다운로드, 복제 또는 열 수 없습니다. 변환기에 대한 자세한 설명서는 다음과 같습니다 [여기에서](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+고객은 Cloud Manager를 통해 클라우드 환경에 사용자 지정 코드를 배포합니다. Cloud Manager는 로컬에서 어셈블된 컨텐츠 패키지를 Sling 기능 모델을 따르는 아티팩트로 변환하며, 클라우드 환경에서 실행할 때 AEM as a Cloud Service 애플리케이션에 대해 설명합니다. 따라서 의 패키지를 볼 때 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 클라우드 환경에서 이름은 &quot;cp2fm&quot;을 포함하며, 변형된 패키지에는 모든 메타데이터가 제거됩니다. 상호 작용할 수 없으므로 다운로드, 복제 또는 열 수 없습니다. 변환기에 대한 자세한 설명서는 다음과 같습니다 [여기에서](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 AEM as a Cloud Service 애플리케이션용으로 작성된 컨텐츠 패키지는 변경할 수 없는 컨텐츠와 변경할 수 있는 컨텐츠 간에 완전히 구분되어 있어야 하며 Cloud Manager에서는 변경 가능한 컨텐츠만 설치하고 다음과 같은 메시지도 출력합니다.
 
@@ -109,7 +109,7 @@ Cloud Manager에서 가변 저장소, 변경 가능한 컨텐츠 패키지 및 �
 아래의 install.author 또는 install.publish 폴더에 패키지를 포함하여 가변 컨텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다 `/apps`. 이러한 분리를 반영하도록 재구성을 AEM 6.5에서 수행했으며 권장 프로젝트 재구성에 대한 세부 사항은 [AEM 6.5 설명서.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->컨텐츠 패키지는 모든 환경 유형(dev, stage, prod)에 배포됩니다. 배포를 특정 환경으로 제한할 수 없습니다. 이 제한은 자동 실행을 테스트하는 옵션을 보장하기 위해 적용됩니다. 환경에 고유한 컨텐츠는 패키지 관리자를 통해 수동으로 설치해야 합니다.
+>컨텐츠 패키지는 모든 환경 유형(dev, stage, prod)에 배포됩니다. 배포를 특정 환경으로 제한할 수 없습니다. 이 제한은 자동 실행을 테스트하는 옵션을 보장하기 위해 적용됩니다. 환경에 고유한 컨텐츠는 [패키지 관리자.](/help/implementing/developing/tools/package-manager.md)
 
 또한 적용된 변경 사항 컨텐츠 패키지 변경 사항을 롤백하는 메커니즘이 없습니다. 고객이 문제를 감지하면 다음 코드 릴리스에서 또는 마지막 수단으로 문제를 해결하도록 선택하고 전체 시스템을 배포 전 시점으로 복원할 수 있습니다.
 
@@ -173,7 +173,7 @@ above appears to be internal, to confirm with Brian -->
 >abstract="프로덕션 문제를 디버깅하기 위해 프로덕션 환경에서 스테이징으로 특정 콘텐츠를 가져오는 작업, 온-프레미스 환경에서 AEM 클라우드 환경으로 작은 컨텐츠 패키지를 전송하는 작업 등을 포함하는 컨텐츠 패키지를 설치해야 하는 사용 사례에 대해 패키지 관리자의 사용을 탐색합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="컨텐츠 전송 도구"
 
-컨텐츠 패키지를 &quot;일회성&quot;으로 설치해야 하는 사용 사례가 있습니다. 예를 들어 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오는 경우가 있습니다. 이러한 시나리오의 경우 패키지 관리자를 AEM as a Cloud Service 환경에서 사용할 수 있습니다.
+컨텐츠 패키지를 &quot;일회성&quot;으로 설치해야 하는 사용 사례가 있습니다. 예를 들어 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오는 경우가 있습니다. 이러한 시나리오에서는 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) AEM as a Cloud Service 환경에서 사용할 수 있습니다.
 
 패키지 관리자는 런타임 개념이므로 컨텐츠나 코드를 변경할 수 없는 저장소에 설치할 수 없으므로 이러한 컨텐츠 패키지는 주로 변경할 수 있는 컨텐츠(주로 `/content` 또는 `/conf`). 콘텐츠 패키지에 혼합(변경할 수 있는 콘텐츠와 변경할 수 없는 콘텐츠 모두)인 콘텐츠가 포함되어 있으면 가변 콘텐츠만 설치됩니다.
 

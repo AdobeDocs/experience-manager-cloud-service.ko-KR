@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
+source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 43%
+source-wordcount: '1051'
+ht-degree: 45%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 43%
 + Cloud Manager 사용 {#using-cloud-manager}
    + Cloud Manager 릴리스 노트 {#release-notes-cloud-manager}
       + [현재 릴리스 노트(2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-      + 2021 {#2021}
+      + 2021년 {#2021}
          + [2021.9.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [2021.8.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [2021.7.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
@@ -29,7 +29,7 @@ ht-degree: 43%
          + [2021.3.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
          + [2021.2.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
          + [2021.1.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-      + 2020 {#2020}
+      + 2020년 {#2020}
          + [2020.12.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
          + [2020.11.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
          + [2020.10.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -198,6 +198,7 @@ ht-degree: 43%
    + [Content Package Maven 플러그인](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite 사용](/help/implementing/developing/tools/crxde.md)
+   + [설치할 수 있습니다](/help/implementing/developing/tools/package-manager.md)
    + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
 + 개인화 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)

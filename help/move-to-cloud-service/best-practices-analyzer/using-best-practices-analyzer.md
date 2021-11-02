@@ -2,10 +2,10 @@
 title: 우수 사례 분석기 사용
 description: 우수 사례 분석기 사용
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '2522'
-ht-degree: 42%
+ht-degree: 41%
 
 ---
 
@@ -15,25 +15,25 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="모범 사례 분석기 사용"
 >abstract="모범 사례 분석기(이전 클라우드 준비 분석기)를 사용하기 위한 설명서 및 생성된 보고서를 검토하십시오. 모범 사례 분석기 보고서는 일반적인 업그레이드 준비 상태를 세부적으로 파악하는 데 사용됩니다."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 모범 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
 BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
-* BPA 보고서는 Adobe Experience Manager (AEM) [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)의 출력을 사용하여 작성됩니다. BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
+* BPA 보고서는 Adobe Experience Manager(AEM)의 출력을 사용하여 작성됩니다 [패턴 탐지기](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). BPA에서 사용하는 패턴 탐지기 버전은 BPA 설치 패키지에 포함되어 있습니다.
 
-* BPA는 **admin** 사용자 또는 **administrators** 그룹의 사용자만 실행할 수 있습니다.
+* BPA는 **관리** 사용자 또는 **관리자** 그룹에 속해 있어야 합니다.
 
 * BPA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
 
    >[!NOTE]
-AEM  [6.1에 BPA를 설치하기 위한 특별 요구 사항은 AEM 6.1에 설치](#installing-on-aem61) 를 참조하십시오.
+자세한 내용은 [AEM 6.1에 설치](#installing-on-aem61) AEM 6.1에 BPA 설치를 위한 특별 요구 사항입니다.
 
-* BPA는 모든 환경에서 실행할 수 있지만 *Stage* 환경에서 실행하는 것이 좋습니다.
+* BPA는 모든 환경에서 실행할 수 있지만 *단계* 환경.
 
    >[!NOTE]
-비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션  ** 영역의  ** 프로덕션 환경에 최대한 가까운 환경에서 BPA를 실행하는 것이 좋습니다. 또는 프로덕션 *작성* 환경의 복제본에서 실행할 수 있습니다.
+비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 BPA를 *작성자* 가능한 가까운 환경 *프로덕션* 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 환경입니다. 또는 프로덕션 *작성* 환경의 복제본에서 실행할 수 있습니다.
 
 * BPA 보고서 컨텐츠를 생성하는 데 몇 분에서 몇 시간 정도의 시간이 걸릴 수 있습니다. 필요한 시간은 AEM 저장소 컨텐츠, AEM 버전 및 기타 요소에 따라 크게 달라집니다.
 
@@ -46,10 +46,10 @@ id="aemcloud_bpa_download"
 title="모범 사례 분석기 다운로드"
 abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다."
 
-소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다.
+소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 를 통해 패키지를 설치할 수 있습니다 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 소스 AEM(Adobe Experience Manager) 인스턴스에 배치합니다.
 
 >[!NOTE]
-소프트웨어 배포 포털에서 모범 사례  [분석기를 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 다운로드합니다.
+에서 모범 사례 분석기 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털.
 
 ## 모범 사례 분석기 보고서 보기 {#viewing-report}
 
@@ -57,11 +57,11 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 
 모범 사례 분석기 보고서를 보는 방법에 대해 알아보려면 다음 섹션을 따르십시오.
 
-1. Adobe Experience Manager을 선택하고 도구 -> **작업** -> **우수 사례 분석기**&#x200B;로 이동합니다.
+1. Adobe Experience Manager을 선택하고 도구 -> 로 이동합니다. **작업** -> **모범 사례 분석기**.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. **보고서 생성**&#x200B;을 클릭하여 우수 사례 분석기를 실행합니다.
+1. 클릭 **보고서 생성** 모범 사례 분석기를 실행하려면
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -78,12 +78,12 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. 아래 그림과 같이 **CSV로 내보내기**&#x200B;를 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드할 수 있는 옵션이 제공됩니다.
+1. 아이콘을 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드할 수 있는 옵션이 있습니다 **CSV로 내보내기**&#x200B;아래 그림과 같이,
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-보고서 새로 고침 을 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할  **수 있습니다**.
+를 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다 **보고서 새로 고침**.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -96,21 +96,21 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 
 #### 우수 사례 분석기 보고서에서 필터 사용 {#bpa-filters}
 
-[ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)와 관련된 결과를 필터링하려면 아래 단계를 따르십시오.
+관련 결과를 필터링하려면 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), 아래 절차를 따르십시오.
 
-1. 페이지 왼쪽에 있는 왼쪽 레일 아이콘을 클릭합니다. 그러면 **ACS Commons Filter**&#x200B;가 표시됩니다. 아래 그림과 같이 **ACS Commons Filter**&#x200B;를 클릭하여 대화형 확인란을 표시합니다.
+1. 페이지 왼쪽에 있는 왼쪽 레일 아이콘을 클릭합니다. 그러면 **ACS Commons 필터**. 을(를) 클릭합니다. **ACS Commons 필터** 아래에 표시된 것처럼 대화형 확인란을 표시합니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 왼쪽 레일 아이콘은 BPA에서 ACS Commons 사용을 감지하는 경우에만 나타납니다.
 
-1. ACS Commons와 관련된 모든 결과를 필터링하려면 상자를 선택 취소합니다. 아래 그림과 같이 보고서에 **필터링된 검색 횟수**&#x200B;가 표시됩니다. 필터가 CSV(쉼표로 구분된 값) 형식으로 내보낼 때에도 보고서에 적용됩니다.
+1. ACS Commons와 관련된 모든 결과를 필터링하려면 상자를 선택 취소합니다. 다음 항목이 표시됩니다. **필터링된 검색 횟수** 를 클릭하십시오. 필터가 CSV(쉼표로 구분된 값) 형식으로 내보낼 때에도 보고서에 적용됩니다.
 
    ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-ACS Commons 결과는 무시되어서는 안 됩니다. AEM as a Cloud Service와의 호환성을 확인하려면 [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)를 참조하십시오.
+ACS Commons 결과는 무시되어서는 안 됩니다. 을(를) 참조하십시오. [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Service와의 호환성을 확인합니다.
 
 
 ### Adobe Experience Manager 6.2 및 6.1 {#aem-specific-versions}
@@ -146,7 +146,7 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
 작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다.
 
 >[!NOTE]
-각 검색 카테고리에 대한 자세한 내용은  [패턴 탐지기 카테고리](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)를 참조하십시오.
+각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지기 카테고리](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 아래 표에 따라 중요도 수준을 파악하십시오.
 
@@ -160,7 +160,7 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
 
 ## 우수 사례 분석기 CSV 보고서 해석 {#cra-csv-report}
 
-AEM 인스턴스에서 **CSV** 옵션을 클릭하면 모범 사례 분석기 보고서의 CSV 형식이 컨텐츠 캐시에서 만들어지고 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
+를 클릭하면 **CSV** AEM 인스턴스에서 선택하는 경우 우수 사례 분석기 보고서의 CSV 형식이 컨텐츠 캐시에서 만들어지고 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
 
 캐시가 만료되면 CSV 파일을 빌드하고 다운로드하기 전에 보고서가 다시 생성됩니다.
 
@@ -184,7 +184,7 @@ CSV 형식 보고서의 열은 다음과 같습니다.
 
 BPA는 AEM 내의 사용자 인터페이스 대신 사용할 수 있는 HTTP 인터페이스를 제공합니다. 인터페이스는 HEAD 및 GET 명령을 모두 지원합니다. BPA 보고서를 생성하고 다음 세 형식 중 하나로 반환하는 데 사용할 수 있습니다. JSON, CSV 및 탭으로 구분된 값(TSV).
 
-다음 URL은 `<host>`이 호스트 이름인 HTTP 액세스와 BPA가 설치된 서버의 포트(필요한 경우) 액세스에 사용할 수 있습니다.
+다음 URL은 여기서 HTTP 액세스를 사용할 수 있습니다. `<host>` 은 BPA가 설치된 서버의 호스트 이름 및 필요한 경우 포트입니다.
 * JSON 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.json`
 * CSV 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.csv`
 * TSV 형식용 `http://<host>/apps/best-practices-analyzer/analysis/report.tsv`
@@ -210,11 +210,11 @@ HTTP 인터페이스는 다양한 방법으로 사용될 수 있습니다.
 
 다음 HTTP 쿼리 매개 변수는 HTTP 헤더를 쉽게 사용할 수 없을 때 편리하게 사용할 수 있습니다.
 
-* `max-age` (숫자, 선택 사항): 캐시 새로 고침 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 새로 고침 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 새 캐시가 24시간 동안 요청을 제공하는 데 사용되며 이때 캐시를 다시 생성해야 합니다. `max-age=0` 을 사용하면 새로 생성된 캐시에 대한 이전의 0이 아닌 새로 고침 수명을 사용하여 캐시가 지워지고 보고서의 재생성이 시작됩니다.
-* `respond-async` (부울, 선택 사항): 응답이 비동기식으로 제공되도록 지정합니다. 캐시가 오래된 경우 `respond-async=true`을 사용하면 서버가 캐시가 새로 고쳐지고 보고서가 생성될 때까지 기다리지 않고 `202 Accepted` 응답을 반환합니다. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. 기본값은 `false`입니다. 이 매개 변수 또는 해당 헤더가 없으면 서버가 동기적으로 응답합니다. 이 경우 상당한 시간이 필요하고 HTTP 클라이언트에 대한 최대 응답 시간을 조정해야 합니다.
-* `may-refresh-cache` (부울, 선택 사항): 현재 캐시가 비어 있거나 오래된 상태이거나 곧 오래된 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. `may-refresh-cache=true` 또는 지정하지 않은 경우 서버는 패턴 탐지기를 호출하고 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. `may-refresh-cache=false` 경우 서버가 새로 고침 작업을 시작하지 않습니다. 이 경우 캐시가 비어 있거나 오래된 경우 보고서가 비어 있습니다. 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
-* `return-minimal` (부울, 선택 사항): 서버의 응답에 JSON 형식으로 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. `return-minimal=true`이면 응답 본문은 상태 개체로 제한됩니다. `return-minimal=false` 또는 지정되지 않은 경우 전체 응답이 제공됩니다.
-* `log-findings` (부울, 선택 사항): 서버가 처음 빌드하거나 새로 고칠 때 캐시의 내용을 기록하도록 지정합니다. 캐시에서 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 `log-findings=true` 및 요청이 새 캐시를 생성하는 경우에만 발생합니다.
+* `max-age` (숫자, 선택 사항): 캐시 새로 고침 수명을 초 단위로 지정합니다. 이 숫자는 0보다 커야 합니다. 기본 새로 고침 수명은 86400초입니다. 이 매개 변수 또는 해당 헤더가 없으면 새 캐시가 24시간 동안 요청을 제공하는 데 사용되며 이때 캐시를 다시 생성해야 합니다. 사용 `max-age=0` 새로 생성된 캐시에 대한 이전의 0이 아닌 새로 고침 수명을 사용하여 캐시를 지우고 보고서 재생성을 시작합니다.
+* `respond-async` (부울, 선택 사항): 응답이 비동기식으로 제공되도록 지정합니다. 사용 `respond-async=true` 캐시가 오래된 경우 서버가 `202 Accepted` 캐시가 새로 고쳐지고 보고서가 생성될 때까지 기다리지 않습니다. 캐시를 새로 고치면 이 매개 변수는 영향을 주지 않습니다. 기본값은 입니다. `false`. 이 매개 변수 또는 해당 헤더가 없으면 서버가 동기적으로 응답합니다. 이 경우 상당한 시간이 필요하고 HTTP 클라이언트에 대한 최대 응답 시간을 조정해야 합니다.
+* `may-refresh-cache` (부울, 선택 사항): 현재 캐시가 비어 있거나 오래된 상태이거나 곧 오래된 경우, 서버가 요청에 응답하여 캐시를 새로 고칠 수 있도록 지정합니다. If `may-refresh-cache=true`또는 지정하지 않으면 서버가 패턴 탐지기 를 호출하고 캐시를 새로 고치는 백그라운드 작업을 시작할 수 있습니다. If `may-refresh-cache=false` 그런 다음 서버는 캐시가 비어 있거나 오래된 경우 새로 고침 작업을 시작하지 않습니다. 이 경우 보고서가 비어 있습니다. 이미 진행 중인 새로 고침 작업은 이 매개 변수의 영향을 받지 않습니다.
+* `return-minimal` (부울, 선택 사항): 서버의 응답에 JSON 형식으로 진행 표시 및 캐시 상태가 포함된 상태만 포함되도록 지정합니다. If `return-minimal=true`를 입력하면 응답 본문은 상태 개체로 제한됩니다. If `return-minimal=false`또는 지정되지 않은 경우 전체 응답이 제공됩니다.
+* `log-findings` (부울, 선택 사항): 서버가 처음 빌드하거나 새로 고칠 때 캐시의 내용을 기록하도록 지정합니다. 캐시에서 각 검색 결과는 JSON 문자열로 기록됩니다. 이 로깅은 `log-findings=true` 그러면 요청이 새 캐시를 생성합니다.
 
 HTTP 헤더와 해당 쿼리 매개 변수가 모두 있으면 쿼리 매개 변수가 우선시됩니다.
 
@@ -228,8 +228,8 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 다음 응답 값이 가능합니다.
 
 * `200 OK`: 이 응답에는 캐시의 새로 고침 수명 내에 생성된 패턴 탐지기 결과를 포함함을 나타냅니다.
-* `202 Accepted`: 캐시가 오래된 상태임을 나타내는 데 사용됩니다. `respond-async=true` 및 `may-refresh-cache=true` 이 응답은 새로 고침 작업이 진행 중임을 나타냅니다. `may-refresh-cache=false` 이 응답은 캐시가 오래된 것임을 나타냅니다.
-* `400 Bad Request`: 요청에 오류가 있음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식( [RFC 7807](https://tools.ietf.org/html/rfc7807) 참조)의 메시지를 참조하십시오.
+* `202 Accepted`: 캐시가 오래된 상태임을 나타내는 데 사용됩니다. When `respond-async=true` 및 `may-refresh-cache=true` 이 응답은 새로 고침 작업이 진행 중임을 나타냅니다. When `may-refresh-cache=false` 이 응답은 캐시가 오래된 것임을 나타냅니다.
+* `400 Bad Request`: 요청에 오류가 있음을 나타냅니다. 문제 세부 정보 형식의 메시지(참조) [RFC 7807](https://tools.ietf.org/html/rfc7807)) 더 자세히 제공됩니다.
 * `401 Unauthorized`: 요청이 승인되지 않았음을 나타냅니다.
 * `500 Internal Server Error`: 내부 서버 오류가 발생했음을 나타냅니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
 * `503 Service Unavailable`: 서버가 다른 응답으로 사용 중이어서 이 요청을 적시에 처리할 수 없음을 나타냅니다. 이는 동기 요청이 수행된 경우에만 발생합니다. 자세한 내용은 문제 세부 정보 형식의 메시지를 참조하십시오.
@@ -247,7 +247,7 @@ HTTP 인터페이스를 통해 보고서의 생성을 시작하는 간단한 방
 
 ### AEM 6.1에 설치 {#installing-on-aem61}
 
-BPA는 `repository-reader-service`라는 시스템 서비스 사용자 계정을 사용하여 패턴 탐지기를 실행합니다. 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서 이 계정은 BPA를 설치하기 전에 *다음 단계를 수행하여 만들어야 합니다.*
+BPA는 `repository-reader-service` 패턴 탐지기 실행 이 계정은 AEM 6.2 이상에서 사용할 수 있습니다. AEM 6.1에서 이 계정을 만들어야 합니다 *이전* 다음 단계를 수행하여 BPA 설치:
 
 1. 사용자를 만들려면 [새 서비스 사용자 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)의 지침을 따르십시오. UserID를 `repository-reader-service`로 설정하고 중간 경로를 비워 둔 다음 녹색 확인 표시를 클릭합니다.
 
