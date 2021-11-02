@@ -2,7 +2,7 @@
 title: 프로덕션 파이프라인 구성
 description: 프로덕션 파이프라인 구성
 index: false
-source-git-commit: e0c21561a9a6e2940768ecb86da9b4d16e2fbfa8
+source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -99,3 +99,7 @@ ht-degree: 0%
    * **추가** - 새 파이프라인을 추가할 수 있습니다.
    * **보고서 정보에 액세스** - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있도록 해줍니다.
    * **추가 정보** - CI/CD 파이프라인 설명서 리소스를 이해하도록 이동합니다.
+
+
+
+
