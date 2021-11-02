@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 �
 description: AEM as a Cloud Service 릴리스 2021.10.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: null
-source-git-commit: c7cee58a465887b15994a963448fcba8d546673a
+source-git-commit: 0058cfda65ec8f59dbe3ea1bbcc43c08c5e5fe3e
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 6%
@@ -17,24 +17,6 @@ ht-degree: 6%
 
 >[!NOTE]
 >Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
-
-## 컨텐츠 전송 도구 {#ctt-release}
-
-### 릴리스 날짜 {#release-date-ctt-latest}
-
-컨텐츠 전송 도구 v1.6.0의 릴리스 날짜는 2021년 10월 4일입니다.
-
-### 새로운 기능 {#what-is-new-ctt-oct}
-
-* 아래 나열된 다음 기능을 포함하여 간소화된 사용자 경험을 통해 사용자 매핑 도구가 개선되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-   * 사용자 매핑을 실행하기 전에 사용자 관리 API에 대한 연결을 테스트합니다
-   * 오류를 올바르게 건너뛰고 사용자 매핑 활동을 계속 진행합니다
-   * 다음의 경우 사용자 매핑이 더 이상 실패하지 않습니다 **액세스 토큰** 는 24시간 후에 만료됩니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.
-
-* 컨텐츠 전송 도구의 견고성을 높이기 위해 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다. 자세한 내용은 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 자세한 내용
-
-* 버전이 포함되면 경로는 `/var/audit` 은 감사 이벤트를 마이그레이션하기 위해 자동으로 포함됩니다.
-
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -53,6 +35,24 @@ Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
 ### 새로운 기능 {#what-is-new-cam-oct}
 
 이제 Cloud Acceleration Manager에서 BPA 보고서를 인쇄 가능한 미리 보기로 볼 수 있으므로 인쇄하거나 인쇄하여 PDF에 인쇄하여 공유하기 쉽게 할 수 있습니다. 의 6단계 및 7단계를 참조하십시오 [우수 사례 분석 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
+## 컨텐츠 전송 도구 {#ctt-release}
+
+### 릴리스 날짜 {#release-date-ctt-latest}
+
+컨텐츠 전송 도구 v1.6.0의 릴리스 날짜는 2021년 10월 4일입니다.
+
+### 새로운 기능 {#what-is-new-ctt-oct}
+
+* 아래 나열된 다음 기능을 포함하여 간소화된 사용자 경험을 통해 사용자 매핑 도구가 개선되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+   * 사용자 매핑을 실행하기 전에 사용자 관리 API에 대한 연결을 테스트합니다
+   * 오류를 올바르게 건너뛰고 사용자 매핑 활동을 계속 진행합니다
+   * 다음의 경우 사용자 매핑이 더 이상 실패하지 않습니다 **액세스 토큰** 는 24시간 후에 만료됩니다. 사용자 매핑은 마지막으로 중지된 위치에서 다시 실행할 수 있습니다.
+
+* 컨텐츠 전송 도구의 견고성을 높이기 위해 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다. 자세한 내용은 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) 자세한 내용
+
+* 버전이 포함되면 경로는 `/var/audit` 은 감사 이벤트를 마이그레이션하기 위해 자동으로 포함됩니다.
 
 ## 모범 사례 분석기 {#best-practices-analyzer}
 
