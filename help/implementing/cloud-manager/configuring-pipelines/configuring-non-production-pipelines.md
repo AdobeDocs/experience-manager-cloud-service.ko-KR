@@ -1,10 +1,10 @@
 ---
 title: 비프로덕션 파이프라인 구성
-description: 비프로덕션 파이프라인 구성
+description: Cloud Manager에서 비프로덕션 파이프라인 구성에 대해 알려면 이 페이지를 따르십시오
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,8 @@ ht-degree: 0%
 # 비프로덕션 파이프라인 구성 {#configure-non-production-pipeline}
 
 스테이징 및 프로덕션에 배포되는 기본 파이프라인 외에도 고객은 비프로덕션 파이프라인이라고도 하는 추가 파이프라인을 설정할 수 있습니다.
-다음과 같은 두 가지 유형의 비프로덕션 파이프라인이 있습니다.
+
+다음 두 가지 유형의 비프로덕션 파이프라인이 있습니다.
 
 1. 코드 품질: Git 분기의 코드에서 코드 품질 검사를 실행합니다. 이 파이프라인은 빌드 및 코드 품질 단계를 실행합니다.
 1. 배포: 이 파이프라인은 빌드 및 코드 품질 단계를 실행하는 것 외에도 선택한 비프로덕션 환경에 코드를 AEM as a Cloud Service 환경에 배포합니다.
