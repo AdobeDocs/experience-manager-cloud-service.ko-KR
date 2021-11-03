@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서 CDN
 description: AEM as a Cloud Service에서 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5455985df0dad352fa158c7fb0df7d6c6a8dee0
+source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 8%
@@ -11,7 +11,6 @@ ht-degree: 8%
 ---
 
 # AEM as a Cloud Service에서 CDN {#cdn}
-
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
@@ -61,6 +60,7 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 1. 호스트 헤더를 원본 도메인으로 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. 설정 `X-Forwarded-Host` 헤더에 사용할 수 있습니다. 예: `X-Forwarded-Host:example.com`.
 1. 설정 `X-AEM-Edge-Key`. 값은 Adobe에서 가져와야 합니다.
+
    * Adobe CDN이 요청 소스의 유효성을 확인하고 를 전달할 수 있도록 필요합니다 `X-Forwarded-*` 헤더 를 AEM 애플리케이션에 추가합니다. 예,`X-Forwarded-For` 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 는 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임이 되므로 `X-Forwarded-*` header(아래 참고 참조).
    * 선택적으로, `X-AEM-Edge-Key` 이 없습니다. Adobe CDN 수신(차단하려면)에 직접 액세스해야 하는 경우 Adobe에 알려주십시오.
 
