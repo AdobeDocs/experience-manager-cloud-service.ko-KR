@@ -2,9 +2,9 @@
 title: 프로덕션 파이프라인 편집
 description: 프로덕션 파이프라인 편집
 index: false
-source-git-commit: b9d28088ad18a389108ebfb81aa750c63e637922
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # 프로덕션 파이프라인 편집 {#edit-prod-pipeline}
 
 에서 파이프라인 구성을 편집할 수 있습니다 **프로그램 개요** 페이지.
+
+>[!IMPORTANT]
+>실행 중인 파이프라인은 편집할 수 없습니다.
 
 구성된 파이프라인을 편집하려면 아래 절차를 따르십시오.
 

@@ -2,9 +2,9 @@
 title: 비프로덕션 파이프라인 편집
 description: 비프로덕션 파이프라인 편집
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # 비프로덕션 파이프라인 편집 {#edit-non-prod-pipeline}
 
 에서 파이프라인 구성을 편집할 수 있습니다 **파이프라인 카드** 변환 전: **프로그램 개요** 페이지.
+
+>[!IMPORTANT]
+>실행 중인 파이프라인은 편집할 수 없습니다.
 
 구성된 비프로덕션 파이프라인을 편집하려면 아래 절차를 따르십시오.
 
