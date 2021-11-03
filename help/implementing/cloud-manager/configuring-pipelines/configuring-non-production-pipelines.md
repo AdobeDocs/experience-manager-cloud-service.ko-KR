@@ -2,9 +2,9 @@
 title: 비프로덕션 파이프라인 구성
 description: Cloud Manager에서 비프로덕션 파이프라인 구성에 대해 알려면 이 페이지를 따르십시오
 index: false
-source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -36,12 +36,15 @@ ht-degree: 0%
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. 선택 **전체 스택 코드** 또는 **프런트 엔드 코드**. 을(를) 선택할 수 있습니다 **저장소** 그리고 **Git 분기**. 클릭 **저장**.
+1. 선택 **[전체 스택 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 또는 **[프런트 엔드 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 을(를) 선택할 수 있습니다 **저장소** 그리고 **Git 분기**. 클릭 **저장**.
+
+   >[!IMPORTANT]
+   >선택한 환경에 대해 전체 스택 코드 파이프라인이 이미 존재하는 경우 이 선택이 비활성화됩니다.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
    >[!NOTE]
    >프런트 엔드 파이프라인 구성을 시작하기 전에 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 엔드 투 엔드 워크플로우를 보려면 AEM 빠른 사이트 만들기 여정 를 참조하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
 1. 이제 새로 생성된 비프로덕션 파이프라인이 **파이프라인** 카드.
 
