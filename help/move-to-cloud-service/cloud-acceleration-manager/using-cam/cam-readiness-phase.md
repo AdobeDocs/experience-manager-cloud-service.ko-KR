@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager의 준비 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 준비 단계에 대한 개요를 제공합니다.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
+source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -124,7 +124,7 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
    >
    >아래 그림과 같이 드롭다운을 통해 그래픽 보기를 추가하거나 변경할 수 있습니다.
-   >![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >![이미지](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### 우수 사례 분석 보고서 검토 {#analysis-report}
