@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service 고급 네트워킹 구성
 description: VPN 또는 AEM as a Cloud Service용 플렉서블 또는 전용 송신 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법을 알아봅니다.
-source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
+source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2836'
 ht-degree: 1%
 
 ---
@@ -15,10 +15,6 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
->[!INFO]
->
->고급 네트워킹 기능은 2021.9.0 릴리스의 일부이며, 10월 중순에 고객이 사용할 수 있도록 제공됩니다.
-
 AEM as a Cloud Service은 Cloud Manager API를 사용하는 고객이 구성할 수 있는 몇 가지 유형의 고급 네트워킹 기능을 제공합니다. 이러한 쿠키에는 다음이 포함됩니다.
 
 * [유연한 포트 송신](#flexible-port-egress) - AEM as a Cloud Service을 구성하여 비표준 포트에서 아웃바운드 트래픽을 허용하도록 구성
@@ -27,11 +23,12 @@ AEM as a Cloud Service은 Cloud Manager API를 사용하는 고객이 구성할 
 
 이 문서에서는 구성 방법을 비롯하여 각 옵션에 대해 자세히 설명합니다. 일반적인 구성 전략으로서, `/networkInfrastructures` API 엔드포인트는 원하는 유형의 고급 네트워킹을 선언하기 위해 프로그램 수준에서 호출되고 다음에 를 호출합니다 `/advancedNetworking` 인프라를 활성화하고 환경별 매개 변수를 구성하는 각 환경의 끝점입니다. 각 공식 구문과 샘플 요청 및 응답에 대해 Cloud Manager API 설명서의 적절한 엔드포인트를 참조하십시오.
 
-Adobe이 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 유연한 포트 송신 및 전용 송신 IP 주소 중 하나를 결정할 때 특정 IP 주소가 필요하지 않은 경우 유연한 포트 송신(flexible port 송신)을 선택하는 것이 좋습니다.
+하나의 프로그램은 하나의 고급 네트워킹 변형을 제공할 수 있습니다. Adobe이 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 유연한 포트 송신 및 전용 송신 IP 주소 중 하나를 결정할 때 특정 IP 주소가 필요하지 않은 경우 유연한 포트 송신(flexible port 송신)을 선택하는 것이 좋습니다.
 
 >[!INFO]
 >
 >샌드박스 프로그램에는 고급 네트워킹을 사용할 수 없습니다.
+>또한 환경을 AEM 버전 5958 이상으로 업그레이드해야 합니다.
 
 >[!NOTE]
 >
@@ -49,9 +46,9 @@ VPN이 필요하지 않고 전용 송신 IP 주소가 필요하지 않은 경우
 
 프로그램당 한 번, POST `/program/<programId>/networkInfrastructures` 끝점이 호출되고 의 값을 전달하기만 하면 됩니다 `flexiblePortEgress` 대상 `kind` 매개 변수와 영역을 사용합니다. 엔드포인트는 `network_id`뿐만 아니라 상태를 포함한 기타 정보도 포함됩니다. 전체 매개 변수 세트와 정확한 구문은 API 문서에서 참조해야 합니다.
 
-호출되면 일반적으로 네트워킹 인프라를 프로비저닝하는 데 약 15분이 걸립니다. Cloud Manager의 [환경 GET 끝점](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) 상태가 &quot;준비&quot;로 표시됩니다.
+호출되면 일반적으로 네트워킹 인프라를 프로비저닝하는 데 약 15분이 걸립니다. Cloud Manager의 [네트워크 인프라 GET 끝점](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 상태가 &quot;준비&quot;로 표시됩니다.
 
-프로그램 범위의 유연한 포트 송신 구성이 준비되면 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 환경 수준에서 네트워킹을 활성화하고 포트 전달 규칙을 선언하려면 환경에 따라 엔드포인트를 호출해야 합니다. 매개 변수는 유연성을 제공하기 위해 환경별로 구성할 수 있습니다.
+프로그램 범위의 유연한 포트 송신 구성이 준비되면 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 환경 수준에서 네트워킹을 활성화하고 선택적으로 포트 전달 규칙을 선언하려면 환경별로 엔드포인트를 호출해야 합니다. 매개 변수는 유연성을 제공하기 위해 환경별로 구성할 수 있습니다.
 
 대상 호스트 집합(이름 또는 IP, 포트 포함)을 지정하여 80/443 이외의 포트에 대해 포트 전달 규칙을 선언해야 합니다. 각 대상 호스트의 경우 고객이 의도한 대상 포트를 30000에서 30999까지 포트에 매핑해야 합니다.
 

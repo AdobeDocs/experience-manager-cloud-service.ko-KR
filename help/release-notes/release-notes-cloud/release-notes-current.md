@@ -3,9 +3,9 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
+source-git-commit: ffdd1e306ed24409fd5ef946172d95b1ca5ed7cc
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1911'
 ht-degree: 2%
 
 ---
@@ -141,10 +141,6 @@ CQ-4328183 was not reported on CS so not documented here.
 ### 의 새로운 기능 [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **고급 네트워킹**
-
->[!INFO]
->
->고급 네트워킹 기능은 2021.9.0 릴리스의 일부이며, 10월 중순에 고객이 사용할 수 있도록 제공됩니다.
 
 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 이제 다음과 같은 여러 유형의 고급 네트워킹 기능을 제공합니다.
 
