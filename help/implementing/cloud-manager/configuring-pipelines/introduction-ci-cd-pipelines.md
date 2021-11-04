@@ -2,9 +2,9 @@
 title: CI-CD 파이프라인
 description: Cloud Manager CI-CD 파이프라인에 대해 알아보려면 이 페이지를 따르십시오
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 | 파이프라인 유형 | 배포 또는 코드 품질 | 소스 코드 | 사용 시기 | 언제 또는 왜 사용해야 합니까? |
 |--- |--- |--- |---|---|---|
-| 프로덕션 또는 비프로덕션 | 배포 | 프런트엔드 | 프런트 엔드 코드를 배포하려면 프런트 엔드 코드는 정적 파일로 제공되는 모든 코드입니다. AEM에서 제공하는 UI 코드와는 별개입니다. 여기에는 사이트 테마, 고객이 정의한 SPA, Firefly SPA 및 기타 모든 솔루션이 포함됩니다. AEM 버전을 사용해야 합니다. | 신속한 배포 시간<br> 각 환경마다 여러 프런트 엔드 파이프라인을 구성하고 동시에 실행할 수 있습니다 |
-|  | 배포 | 전체 스택 | 백엔드, 프런트엔드 및 HTTPD/디스패처 구성을 동시에 배포하기 위해 일부 제한 사항이 적용됩니다. | 프런트 엔드 파이프라인이 아직 채택되지 않은 경우 |
-| 비프로덕션 | 코드 품질 | 프런트엔드 | 프런트 엔드 코드에서 코드 품질 검사 실행 | 신속한 배포 시간<br> 여러 파이프라인을 구성하고 실행할 수 있습니다 |
-|  | 코드 품질 | 전체 스택 | 전체 스택 코드에서 코드 품질 검사 실행 | 신속한 배포 시간<br> 여러 파이프라인을 구성하고 실행할 수 있습니다 |
+| 프로덕션 또는 비프로덕션 | 배포 | 프런트엔드 | 신속한 배포 시간<br>여러 프런트 엔드 파이프라인을 구성하여 환경에 따라 동시에 실행할 수 있습니다.<br>프런트 엔드 파이프라인 빌드가 빌드에서 저장소로 푸시됩니다. html 페이지가 제공될 때 이 저장소를 원본으로 사용하여 CDN에서 제공할 Frontend Code 정적 파일을 참조할 수 있습니다. | 하나 이상의 클라이언트측 UI 응용 프로그램이 포함된 프런트 엔드 코드를 독점적으로 배포하려면 프런트 엔드 코드는 정적 파일로 제공되는 모든 코드입니다. AEM에서 제공하는 UI 코드와는 별개입니다. 여기에는 사이트 테마, 고객이 정의한 SPA, Firefly SPA 및 기타 모든 솔루션이 포함됩니다.<br>AEM 버전이어야 합니다. `2021.10.5933.20211012T154732Z` |
+| 프로덕션 또는 비프로덕션 | 배포 | 전체 스택 | 프런트 엔드 파이프라인이 아직 채택되지 않은 경우<br>프런트 엔드 코드를 AEM 서버 코드와 정확히 동시에 배포해야 하는 경우 | 하나 이상의 AEM 서버 응용 프로그램을 동시에 포함하는 AEM 서버 코드(변경할 수 없는 컨텐츠, Java 코드, OSGi 구성, HTTPD/dispatcher 구성, 포인터, 가변 컨텐츠, 글꼴)를 배포하려면 다음을 수행하십시오. |
+| 비프로덕션 | 코드 품질 | 프런트엔드 | Cloud Manager에서 배포를 수행하지 않고 빌드 성공 및 코드 품질을 평가하도록 합니다.<br>여러 파이프라인을 구성하고 실행할 수 있습니다. | 프런트 엔드 코드에서 코드 품질 검사를 실행합니다. |
+| 비프로덕션 | 코드 품질 | 전체 스택 | Cloud Manager에서 배포를 수행하지 않고 빌드 성공 및 코드 품질을 평가하도록 합니다.<br>여러 파이프라인을 구성하고 실행할 수 있습니다. | 전체 스택 코드에서 코드 품질 검사를 실행합니다. |
 
 다음 다이어그램은 기존의 단일 프런트 엔드 저장소 또는 독립 프런트 엔드 저장소 설정을 사용하는 Cloud Manager 파이프라인 구성을 보여줍니다.
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Cloud Manager 프런트엔드 파이프라인 {#front-end}
 
@@ -76,8 +76,8 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 프런트 엔드 파이프라인을 구성하는 방법에 대해 알아보려면 다음을 참조하십시오.
 
-* 프로덕션 파이프라인 추가
-* 비프로덕션 파이프라인 추가
+* [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## 전체 스택 파이프라인 {#full-stack-pipeline}
 
@@ -99,5 +99,5 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 전체 스택 파이프라인을 구성하는 방법에 대해 알아보려면 다음을 참조하십시오.
 
-* 프로덕션 파이프라인 추가
-* 비프로덕션 파이프라인 추가
+* [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
