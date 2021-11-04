@@ -2,9 +2,9 @@
 title: 기능 테스트 - Cloud Services
 description: 기능 테스트 - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 파이프라인의 사용자 지정 기능 테스트 단계가 항상 존재하며 건너뛸 수 없습니다.
 
-그러나 빌드에 의해 테스트 JAR이 생성되지 않으면 테스트가 기본적으로 전달됩니다.
+빌드는 0이나 하나의 테스트 JAR를 생성해야 합니다. 테스트 JAR이 0이면 기본적으로 테스트 단계가 전달됩니다. 빌드에서 두 개 이상의 테스트 JAR를 생성하는 경우 선택한 JAR가 비결정적입니다.
 
 >[!NOTE]
 >다음 **다운로드 로그** 단추를 사용하면 테스트 실행 세부 양식에 대한 로그가 포함된 ZIP 파일에 액세스할 수 있습니다. 이러한 로그에는 실제 AEM 런타임 프로세스의 로그가 포함되지 않습니다. 이러한 로그에는 일반적인 다운로드 또는 테일 로그 기능을 사용하여 액세스할 수 있습니다. 을(를) 참조하십시오. [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md) 자세한 내용
