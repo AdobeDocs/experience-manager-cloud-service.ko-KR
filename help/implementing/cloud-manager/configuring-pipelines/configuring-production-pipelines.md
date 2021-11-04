@@ -2,9 +2,9 @@
 title: 프로덕션 파이프라인 구성
 description: 프로덕션 파이프라인 구성
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 8bdc246d1f47e1bdc9a217588f0be69a09982be5
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
    * **즉시 계속** - 이 옵션을 선택하면 중요한 오류가 발생할 때마다 파이프라인이 자동으로 진행됩니다. 이것은 기본적으로 사용자가 각 실패를 수동으로 승인하는 것입니다.
 
 
-1. 다음 **프로덕션 파이프라인 추가** 대화 상자에는 라는 레이블이 지정된 두 번째 탭이 포함되어 있습니다 **소스 코드**. 다음 중 하나를 선택할 수 있습니다 **[프런트 엔드 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** 또는 **[전체 스택 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. 을(를) 선택할 수 있습니다 **저장소** 그리고 **Git 분기**. 아래 설명된 대로 프로덕션 배포 옵션을 선택합니다. 클릭 **계속**.
+1. 다음 **프로덕션 파이프라인 추가** 대화 상자에는 라는 레이블이 지정된 두 번째 탭이 포함되어 있습니다 **소스 코드**. 다음 중 하나를 선택할 수 있습니다 **[프런트 엔드 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** 또는 **[전체 스택 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
@@ -77,6 +77,7 @@ ht-degree: 0%
    >[!NOTE]
    >프런트엔드 파이프라인 구성을 시작하기 전에 [AEM 빠른 사이트 만들기 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 전체 워크플로우를 완료하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
 
+1. 클릭 **계속** 옵션 선택 후 **소스 코드** 탭.
 
 1. 다음 **프로덕션 파이프라인 추가** 대화 상자에는 라는 레이블이 지정된 세 번째 탭이 포함되어 있습니다 **경험 감사**. 이 옵션은 항상 경험 감사에 포함해야 하는 URL 경로에 대한 테이블을 제공합니다.
 
@@ -108,9 +109,12 @@ ht-degree: 0%
 
 1. 클릭 **저장**. 이제 새로 생성된 프로덕션 파이프라인이 **파이프라인** 카드.
 
-   파이프라인은 아래와 같이 세 가지 작업이 있는 홈 화면의 카드에 표시됩니다.
+   파이프라인은 아래와 같이 네 가지 작업이 있는 홈 화면의 카드에 표시됩니다.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
 
    * **추가** - 새 파이프라인을 추가할 수 있습니다.
+   * **모두 표시** - 사용자가 모든 파이프라인을 볼 수 있습니다.
    * **보고서 정보에 액세스** - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있도록 해줍니다.
    * **추가 정보** - CI/CD 파이프라인 설명서 리소스를 이해하도록 이동합니다.
 
