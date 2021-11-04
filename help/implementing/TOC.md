@@ -5,10 +5,10 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
+source-git-commit: 826fb6cf042e4dbfa994c101b05f54bb4e5d9575
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 45%
+source-wordcount: '1084'
+ht-degree: 44%
 
 ---
 
@@ -18,8 +18,9 @@ ht-degree: 45%
 + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
 + Cloud Manager 사용 {#using-cloud-manager}
    + Cloud Manager 릴리스 노트 {#release-notes-cloud-manager}
-      + [현재 릴리스 노트(2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [현재 릴리스 노트(2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021년 {#2021}
+         + [2021.10.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
          + [2021.9.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [2021.8.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [2021.7.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
@@ -64,6 +65,14 @@ ht-degree: 45%
       + [Adobe Cloud Manager와 Git 통합](cloud-manager/managing-code/integrating-with-git.md)
       + [여러 소스 Git 리포지토리 작업](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [AEM as a Cloud Service용 엔터프라이즈 팀 개발 설정](cloud-manager/managing-code/enterprise-team-dev-setup.md)
+   + Cloud Manager CI-CD 파이프라인 {#cicd-pipelines}
+      + [소개](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+      + 프로덕션 파이프라인 {#production-pipelines}
+         + [프로덕션 파이프라인 구성](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
+         + [프로덕션 파이프라인 편집](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + 비프로덕션 파이프라인 {#non-production-pipelines}
+         + [비프로덕션 파이프라인 구성](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [비프로덕션 파이프라인 편집](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
    + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
    + [코드 배포](cloud-manager/deploy-code.md)
    + 테스트 결과 이해 {#test-results}
@@ -113,6 +122,7 @@ ht-degree: 45%
    + [AEM 기술 기반](/help/implementing/developing/introduction/aem-technologies.md)
    + [API 참조 자료](/help/implementing/developing/reference-materials.md)
    + [서버 측 API에 대한 액세스 토큰 생성](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [사이트 템플릿 및 테마 사용자 지정](developing/introduction/customizing-site-templates-themes.md)
    + [AEM의 헤드리스 및 헤드리스](developing/headful-headless.md)
    + 전체 스택 AEM 개발 {#full-stack}
       + [AEM Sites 개발 시작 - WKND 자습서](developing/introduction/develop-wknd-tutorial.md)
