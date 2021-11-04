@@ -1,10 +1,10 @@
 ---
 title: 프로덕션 파이프라인 구성
 description: 프로덕션 파이프라인 구성
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,14 @@ ht-degree: 0%
 
 1. 다음 **프로덕션 파이프라인 추가** 대화 상자에는 라는 레이블이 지정된 두 번째 탭이 포함되어 있습니다 **소스 코드**. 다음 중 하나를 선택할 수 있습니다 **[전체 스택 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 또는 **[프런트 엔드 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 을(를) 선택할 수 있습니다 **저장소** 그리고 **Git 분기**. 아래 설명된 대로 프로덕션 배포 옵션을 선택합니다. 클릭 **계속**.
 
-   >[!IMPORTANT]
-   >선택한 환경에 대해 전체 스택 코드 파이프라인이 이미 존재하는 경우 이 선택이 비활성화됩니다.
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
+   >[!IMPORTANT]
+   >선택한 환경에 대해 전체 스택 코드 파이프라인이 이미 존재하는 경우 이 선택이 비활성화됩니다.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+
    >[!NOTE]
-   >프런트 엔드 파이프라인 구성을 시작하기 전에 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 엔드 투 엔드 워크플로우를 보려면 AEM 빠른 사이트 만들기 여정 를 참조하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
+   >프런트엔드 파이프라인 구성을 시작하기 전에 [AEM 빠른 사이트 만들기 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 전체 워크플로우를 완료하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
 
    프로덕션 배포 옵션:
 

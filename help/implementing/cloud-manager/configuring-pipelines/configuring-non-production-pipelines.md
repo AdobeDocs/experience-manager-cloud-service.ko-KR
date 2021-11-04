@@ -1,10 +1,10 @@
 ---
 title: 비프로덕션 파이프라인 구성
 description: Cloud Manager에서 비프로덕션 파이프라인 구성에 대해 알려면 이 페이지를 따르십시오
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,10 @@ ht-degree: 0%
    >[!IMPORTANT]
    >선택한 환경에 대해 전체 스택 코드 파이프라인이 이미 존재하는 경우 이 선택이 비활성화됩니다.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
 
    >[!NOTE]
-   >프런트 엔드 파이프라인 구성을 시작하기 전에 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 엔드 투 엔드 워크플로우를 보려면 AEM 빠른 사이트 만들기 여정 를 참조하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
+   >프런트엔드 파이프라인 구성을 시작하기 전에 [AEM 빠른 사이트 만들기 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 전체 워크플로우를 완료하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
 
 1. 이제 새로 생성된 비프로덕션 파이프라인이 **파이프라인** 카드.
 

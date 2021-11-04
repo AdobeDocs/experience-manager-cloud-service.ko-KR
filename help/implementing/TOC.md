@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 826fb6cf042e4dbfa994c101b05f54bb4e5d9575
+source-git-commit: 2f428f4401d7c60685332e9d23a02bf0bfb27c23
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1079'
 ht-degree: 44%
 
 ---
@@ -73,7 +73,6 @@ ht-degree: 44%
       + 비프로덕션 파이프라인 {#non-production-pipelines}
          + [비프로덕션 파이프라인 구성](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [비프로덕션 파이프라인 편집](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
-   + [CI/CD 파이프라인 구성](cloud-manager/configure-pipeline.md)
    + [코드 배포](cloud-manager/deploy-code.md)
    + 테스트 결과 이해 {#test-results}
       + [개요](/help/implementing/cloud-manager/overview-test-results.md)

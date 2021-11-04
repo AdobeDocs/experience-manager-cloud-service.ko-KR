@@ -2,9 +2,9 @@
 title: UI 테스트 - Cloud Services
 description: UI 테스트 - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ UI 테스트는 Java 및 Maven, Node 및 WebDriver.io와 같은 다양한 언어
 
 >[!NOTE]
 > 이 페이지에 설명된 대로 UI 테스트를 사용하려면 2021년 2월 10일 이전에 만들어진 단계 및 프로덕션 파이프라인을 업데이트해야 합니다.
-> 자세한 내용은 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configure-pipeline.md) 파이프라인 구성에 대한 정보입니다.
+> 자세한 내용은 [Cloud Manager의 CI-CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 파이프라인 구성에 대한 정보입니다.
 
 ## UI 테스트 작성 {#building-ui-tests}
 
