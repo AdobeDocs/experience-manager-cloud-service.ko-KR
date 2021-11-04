@@ -2,9 +2,9 @@
 title: 프로덕션 파이프라인 구성
 description: 프로덕션 파이프라인 구성
 index: true
-source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -55,14 +55,14 @@ ht-degree: 0%
    * **즉시 계속** - 이 옵션을 선택하면 중요한 오류가 발생할 때마다 파이프라인이 자동으로 진행됩니다. 이것은 기본적으로 사용자가 각 실패를 수동으로 승인하는 것입니다.
 
 
-1. 다음 **프로덕션 파이프라인 추가** 대화 상자에는 라는 레이블이 지정된 두 번째 탭이 포함되어 있습니다 **소스 코드**. 다음 중 하나를 선택할 수 있습니다 **[전체 스택 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** 또는 **[프런트 엔드 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 을(를) 선택할 수 있습니다 **저장소** 그리고 **Git 분기**. 아래 설명된 대로 프로덕션 배포 옵션을 선택합니다. 클릭 **계속**.
+1. 다음 **프로덕션 파이프라인 추가** 대화 상자에는 라는 레이블이 지정된 두 번째 탭이 포함되어 있습니다 **소스 코드**. 다음 중 하나를 선택할 수 있습니다 **[프런트 엔드 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** 또는 **[전체 스택 코드](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. 을(를) 선택할 수 있습니다 **저장소** 그리고 **Git 분기**. 아래 설명된 대로 프로덕션 배포 옵션을 선택합니다. 클릭 **계속**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
    선택한 경우 **프런트 엔드 코드**&#x200B;를 선택해야 합니다. **저장소**, **Git 분기** 및 **코드 위치**아래 그림과 같이,
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
-   선택한 경우 **전체 스택 코드**&#x200B;를 선택해야 합니다. **저장소**, **Git 분기** 및 **프로덕션 배포 옵션**아래 그림과 같이,
+   선택한 경우 **전체 스택 코드**&#x200B;를 선택해야 합니다. **저장소**, **Git 분기** 및 **프로덕션 배포 옵션** (아래에 자세히 설명되어 있습니다.)
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
 
    **프로덕션 배포 옵션:**
@@ -76,9 +76,6 @@ ht-degree: 0%
 
    >[!NOTE]
    >프런트엔드 파이프라인 구성을 시작하기 전에 [AEM 빠른 사이트 만들기 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 전체 워크플로우를 완료하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
-
-
-
 
 
 1. 다음 **프로덕션 파이프라인 추가** 대화 상자에는 라는 레이블이 지정된 세 번째 탭이 포함되어 있습니다 **경험 감사**. 이 옵션은 항상 경험 감사에 포함해야 하는 URL 경로에 대한 테이블을 제공합니다.

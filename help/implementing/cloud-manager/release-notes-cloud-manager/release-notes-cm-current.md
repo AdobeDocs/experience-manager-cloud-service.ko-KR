@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노
 description: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: null
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 3%
+source-wordcount: '461'
+ht-degree: 2%
 
 ---
 
@@ -40,6 +40,8 @@ AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 날짜는 2021년 11
 * 다음 `x-request-id` 이제 응답 헤더가 의 API Playground에 표시됩니다. [www.adobe.io](https://www.adobe.io/). 이 헤더는 문제 해결을 위해 고객 지원 문제를 제출할 때 유용합니다.
 
 * 사용자는 파이프라인이 없는 파이프라인 카드에 적절한 지침이 제공됩니다.
+
+* 이제 연관된 세부 사항과 함께 파이프라인 및 코드 실행과 같은 활동을 볼 수 있는 새로운 활동 페이지를 사용할 수 있습니다. 시간이 지나면서 이 페이지에 나열된 활동은 제공된 세부 정보와 함께 범위가 확장됩니다.
 
 * 이제 세부 사항 요약을 쉽게 볼 수 있도록 마우스로 가리키면 상태 팝오버가 있는 새 파이프라인 페이지를 사용할 수 있습니다. 파이프라인 실행은 연관된 세부 정보와 함께 볼 수 있습니다.
 
