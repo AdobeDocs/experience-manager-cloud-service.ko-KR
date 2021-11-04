@@ -4,27 +4,23 @@ description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d5032670c243779289e8e86850bbfd137d8d6286
+source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
-source-wordcount: '2858'
+source-wordcount: '2838'
 ht-degree: 19%
 
 ---
 
 # 컨텐츠 조각 모델 {#content-fragment-models}
 
->[!NOTE]
->
->[잠김(게시된) 컨텐츠 조각 모델](#locked-published-content-fragment-models) 기능은 베타에 있습니다.
-
-AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초로서 사용되는 [컨텐츠 조각에 대한 컨텐츠 구조를 정의합니다.](/help/assets/content-fragments/content-fragments.md)
+컨텐츠 조각 모델 AEM에서 의 컨텐츠 구조를 정의합니다 [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 헤드리스 컨텐츠의 기초 역할을 합니다.
 
 컨텐츠 조각 모델을 사용하려면 다음을 수행합니다.
 
 1. [인스턴스에 대해 컨텐츠 조각 모델 기능을 사용할 수 있도록 설정](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-1. [컨텐츠 조각 모델](#creating-a-content-fragment-model)을 만들고  [구성합니다](#defining-your-content-fragment-model).
-1. [컨텐츠 조각을 ](#enabling-disabling-a-content-fragment-model) 만들 때 사용할 컨텐츠 조각을 만들 때 사용할 컨텐츠 조각 모델을 사용할 수 있도록 설정
-1. [정책을 구성하여 필요한 자산 폴더의 컨텐츠 조각 ](#allowing-content-fragment-models-assets-folder) 모델을  **허용합니다**.
+1. [만들기](#creating-a-content-fragment-model), 및 [구성](#defining-your-content-fragment-model), 컨텐츠 조각 모델
+1. [컨텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model) 컨텐츠 조각을 만들 때 사용할 컨텐츠 조각 을 만들 때 사용합니다.
+1. [필요한 자산 폴더에서 컨텐츠 조각 모델 을 허용합니다](#allowing-content-fragment-models-assets-folder) 구성 **정책**.
 
 ## 컨텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
 
@@ -36,7 +32,7 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초로서 사용�
    >
    >[컨텐츠 조각 모델 사용이 활성화되지 않은](/help/assets/content-fragments/content-fragments-configuration-browser.md) 경우 **만들기** 옵션을 사용할 수 없습니다.
 
-1. **모델 제목**&#x200B;을 지정합니다. **태그**, **설명**&#x200B;을 추가하고, 필요한 경우 **모델**&#x200B;활성화 를 선택하여 [모델](#enabling-disabling-a-content-fragment-model)을 활성화할 수도 있습니다.
+1. **모델 제목**&#x200B;을 지정합니다. 추가할 수도 있습니다 **태그**, **설명**, 을(를) 선택하고 을(를) 선택합니다. **모델 활성화** to [모델 활성화](#enabling-disabling-a-content-fragment-model) 필요한 경우.
 
    ![제목 및 설명](assets/cfm-models-02.png)
 
@@ -44,7 +40,7 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초로서 사용�
 
 ## 컨텐츠 조각 모델 정의 {#defining-your-content-fragment-model}
 
-컨텐츠 조각 모델은 **[데이터 유형](#data-types)** 선택을 사용하여 결과 컨텐츠 조각의 구조를 효과적으로 정의합니다. 모델 편집기를 사용하여 데이터 유형의 인스턴스를 추가한 다음 필수 필드를 만들도록 구성할 수 있습니다.
+컨텐츠 조각 모델은 선택 항목을 사용하여 결과 컨텐츠 조각의 구조를 효과적으로 정의합니다 **[데이터 유형](#data-types)**. 모델 편집기를 사용하여 데이터 유형의 인스턴스를 추가한 다음 필수 필드를 만들도록 구성할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -70,15 +66,15 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초로서 사용�
 
    * 필수 데이터 유형을 필드에 필요한 위치로 드래그합니다.
 
-      ![필드에 대한 데이터 유형](assets/cfm-models-04.png)
+      ![data type to field](assets/cfm-models-04.png)
 
    * 모델에 필드가 추가되면 오른쪽 패널에 그 특정 데이터 유형에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 해당 필드에 필요한 사항을 정의할 수 있습니다.
 
-      * 많은 속성은 자체 설명이며 자세한 내용은 [속성](#properties)을 참조하십시오.
-      * **필드 레이블**&#x200B;을 입력하면 **속성 이름** 이 자동으로 완료되며, 비어 있으면 나중에 수동으로 업데이트할 수 있습니다.
+      * 자세한 내용은 많은 속성을 직접 설명합니다. [속성](#properties).
+      * 입력 **필드 레이블** 이(가) 자동으로 **속성 이름**  - 비어 있는 경우 나중에 수동으로 업데이트할 수 있습니다.
 
          >[!CAUTION]
-         데이터 유형에 대한 속성 **속성 이름**&#x200B;을 수동으로 업데이트하는 경우 이름에는 특수 문자로 라틴 문자, 숫자 숫자 및 밑줄 &quot;_&quot;만 포함되어야 합니다.
+         속성을 수동으로 업데이트할 때 **속성 이름** 데이터 유형의 경우 이름에는 특수 문자로 라틴 문자, 숫자 및 밑줄 &quot;_&quot;만 포함해야 합니다.
          이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우 해당 문자를 제거하거나 업데이트하십시오.
       예:
 
@@ -95,7 +91,7 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초로서 사용�
 
    ![저장](assets/cfm-models-07.png)
 
-1. **저장**&#x200B;을 선택하여 정의를 유지합니다.
+1. 선택 **저장** 을 눌러 정의를 유지합니다.
 
 ## 데이터 유형 {#data-types}
 
@@ -116,10 +112,10 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초로서 사용�
 * **태그**
    * 조각 작성자가 태그의 영역에 액세스하고 선택할 수 있습니다
 * **컨텐츠 참조**
-   * 모든 유형의 다른 컨텐츠를 참조합니다. [중첩된 컨텐츠 만들기](#using-references-to-form-nested-content)에 사용할 수 있습니다.
+   * 모든 유형의 다른 컨텐츠를 참조합니다. 다음 용도로 사용할 수 있습니다. [중첩된 컨텐츠 만들기](#using-references-to-form-nested-content)
    * 이미지가 참조되면 축소판을 표시하도록 선택할 수 있습니다
 * **조각 참조**
-   * 다른 컨텐츠 조각을 참조합니다. [중첩된 컨텐츠 만들기](#using-references-to-form-nested-content)에 사용할 수 있습니다.
+   * 다른 컨텐츠 조각을 참조합니다. 다음 용도로 사용할 수 있습니다. [중첩된 컨텐츠 만들기](#using-references-to-form-nested-content)
    * 조각 작성자가 다음을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
       * 참조된 조각을 직접 편집합니다.
       * 적절한 모델을 기반으로 새 컨텐츠 조각을 만듭니다
@@ -142,20 +138,20 @@ AEM의 컨텐츠 조각 모델은 헤드리스 컨텐츠의 기초로서 사용�
 
 * **속성 이름**
 
-   데이터 유형에 대해 이 속성을 수동으로 업데이트할 때는 이름 **에는 *만 특수 문자로 포함해야 합니다.* 숫자, 밑줄 &quot;_&quot;**
+   When manually updating this property for a data type, note that names **must** contain *only* Latin characters, numerical digits and underscore &quot;_&quot; as special character.
 
    >[!CAUTION]
    이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우 해당 문자를 제거하거나 업데이트하십시오.
 
-* **렌더링**
-as조각에서 필드를 구현하거나 렌더링하는 다양한 옵션입니다. 종종 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다.
+* **Render As**
+The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
 
-* **필드**
-레이블입력 
-**필드** 레이블은  **속성 이름을 자동으로 생성합니다.** 그러면 필요한 경우 수동으로 업데이트할 수 있습니다.
+* **필드 레이블**
+입력 
+**Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
 
-* ****
-ValidationBasic 유효성 검사는 Requirements 속성과 같은 메커니즘에서 사용할  **** 수 있습니다. 일부 데이터 유형에는 추가 유효성 검사 필드가 있습니다. 자세한 내용은 [유효성 검사](#validation)를 참조하십시오.
+* **유효성 검사**
+기본 유효성 확인은 다음과 같은 메커니즘에서 사용할 수 있습니다 **필수 여부** 속성을 사용합니다. Some data types have addition validation fields. See [Validation](#validation) for further details.
 
 * 데이터 유형 **여러 줄 텍스트**&#x200B;의 경우 **기본 유형**&#x200B;을 다음 중 하나로 정의할 수 있습니다.
 
@@ -167,22 +163,22 @@ ValidationBasic 유효성 검사는 Requirements 속성과 같은 메커니즘�
 
    컨텐츠 조각 모델의 **기본 유형** 변경은 해당 조각을 편집기에서 열고 저장한 후에 기존 관련 컨텐츠 조각에만 적용됩니다.
 
-* ****
-UniqueContent(특정 필드의 경우)는 현재 모델에서 생성된 모든 컨텐츠 조각에서 고유해야 합니다.
+* **고유**
+특정 필드의 경우, 컨텐츠는 현재 모델에서 만들어진 모든 컨텐츠 조각에서 고유해야 합니다.
 
-   컨텐츠 작성자가 동일한 모델의 다른 조각에 이미 추가된 컨텐츠를 반복할 수 없도록 하는 데 사용됩니다.
+   This is used to ensure that content authors cannot repeat content already added in another fragment of the same model.
 
-   예를 들어 컨텐츠 조각 모델에서 `Country`라는 **단일 라인 텍스트** 필드는 두 개의 종속 컨텐츠 조각에 있는 `Japan` 값을 가질 수 없습니다. 두 번째 인스턴스를 시도하면 경고가 표시됩니다.
+   예: **한 줄 텍스트** 필드 호출 `Country` 컨텐츠 조각 모델에서는 값을 가질 수 없습니다 `Japan` 두 개의 종속 컨텐츠 조각에 있습니다. 두 번째 인스턴스를 시도하면 경고가 표시됩니다.
 
    >[!NOTE]
    언어 루트별로 고유성이 보장됩니다.
 
    >[!NOTE]
-   변형은 동일한 조각의 변형과 동일한 *고유한* 값을 가질 수 있지만, 다른 조각의 변형에 사용된 값과 동일한 값을 가질 수는 없습니다.
+   변형은 동일할 수 있습니다 *고유* 값은 동일한 조각의 변형으로, 다른 조각의 변형에 사용된 값과 동일한 값은 아닙니다.
 
-* 특정 데이터 유형 및 해당 속성에 대한 자세한 내용은 **[컨텐츠 참조](#content-reference)**&#x200B;를 참조하십시오.
+* 자세한 내용은 **[컨텐츠 참조](#content-reference)** 를 참조하십시오.
 
-* 특정 데이터 유형 및 해당 속성에 대한 자세한 내용은 **[조각 참조(중첩된 조각)](#fragment-reference-nested-fragments)**&#x200B;를 참조하십시오.
+* 자세한 내용은 **[조각 참조(중첩된 조각)](#fragment-reference-nested-fragments)** 를 참조하십시오.
 
 <!--
 * **Translatable**
@@ -220,15 +216,13 @@ UniqueContent(특정 필드의 경우)는 현재 모델에서 생성된 모든 �
    * 구조화된 데이터를 포함/검색할 수 있습니다.
 
       >[!NOTE]
-      이 메서드는 GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)과 함께 컨텐츠 조각을 사용하여 [헤드리스 컨텐츠 전달과 함께 특별히 관심이 있습니다.
+      이 방법은 특히 [GraphQL에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달](/help/assets/content-fragments/content-fragments-graphql.md).
    * 하나 또는 여러 참조(결과 조각에서)에 대해 구성할 수 있습니다.
 
 >[!NOTE]
 AEM은 다음에 대한 되풀이 보호 기능을 제공합니다.
-* 컨텐츠 참조
-따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
-* GraphQL의 조각 참조
-서로 참조하는 여러 컨텐츠 조각을 반환하는 딥 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+* 컨텐츠 참조 사용자가 현재 조각에 대한 참조를 추가하지 못하도록 합니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+* GraphQL의 조각 참조 서로 참조하는 여러 컨텐츠 조각을 반환하는 딥 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 
 ### 컨텐츠 참조 {#content-reference}
@@ -237,7 +231,7 @@ AEM은 다음에 대한 되풀이 보호 기능을 제공합니다.
 
 표준 속성 외에 다음을 지정할 수 있습니다.
 
-* 참조된 컨텐츠에 대한 **루트 경로**
+* 다음 **루트 경로** 참조된 컨텐츠에 대해 설명합니다.
 * 참조할 수 있는 컨텐츠 유형입니다
 * 파일 크기 제한
 * 이미지를 참조한 경우:
@@ -270,27 +264,27 @@ type CompanyModel {
 ```
 
 >[!NOTE]
-이는 GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)과 함께 컨텐츠 조각을 사용하여 [헤드리스 컨텐츠 전달과 관련하여 특히 관심이 있습니다.
+이것은 특히 [GraphQL에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달](/help/assets/content-fragments/content-fragments-graphql.md).
 
 표준 속성 외에 다음을 정의할 수 있습니다.
 
 * **렌더링 형식**:
 
-   * **multifield**  - 조각 작성자는 여러 개인 참조를 생성할 수 있습니다.
+   * **multifield** - the fragment author can create multiple, individual, references
 
-   * **조각 참조**  - 조각 작성자가 조각에 대한 단일 참조를 선택할 수 있습니다.
+   * **조각 참조** - 조각 작성자가 조각에 대한 단일 참조를 선택할 수 있습니다.
 
-* **모델**
-유형여러 모델을 선택할 수 있습니다. 컨텐츠 조각을 작성할 때 이러한 모델을 사용하여 참조된 조각을 만들어야 합니다.
+* **모델 유형**
+여러 모델을 선택할 수 있습니다. 컨텐츠 조각을 작성할 때 이러한 모델을 사용하여 참조된 조각을 만들어야 합니다.
 
-* **루트**
-경로참조된 조각의 루트 경로를 지정합니다.
+* **루트 경로**
+참조된 조각의 루트 경로를 지정합니다.
 
 * **조각 생성 허용**
 
    이렇게 하면 조각 작성자가 적절한 모델을 기반으로 새 조각을 만들 수 있습니다.
 
-   * **조각 참조** 복합 - 조각 작성자가 여러 조각을 선택하여 컴포지션을 작성할 수 있습니다.
+   * **조각 참조합성** - 여러 조각을 선택하여 조각 작성자가 컴포지션을 작성할 수 있도록 해줍니다
 
    ![조각 참조](assets/cfm-fragment-reference.png)
 
@@ -300,7 +294,7 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 
 ## 컨텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
 
-컨텐츠 조각 모델의 **속성**&#x200B;을 편집할 수 있습니다.
+을 편집할 수 있습니다 **속성** 컨텐츠 조각 모델 중 하나를 선택합니다.
 
 * **기본**
    * **모델 제목**
@@ -325,7 +319,7 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 * **초안** : mew(활성화되지 않음)
 * **비활성화됨** : 이 특별히 비활성화되어 있습니다.
 
-다음 중 하나에서 **활성화** 옵션을 사용합니다.
+를 사용합니다 **활성화** 옵션:
 
 * 필요한 모델을 선택한 경우 상단 도구 모음입니다.
 * 해당 빠른 작업(필요한 모델 위에 마우스 놓기)입니다.
@@ -336,13 +330,13 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 
 모델을 비활성화하여 다음 작업을 수행할 수도 있습니다.
 
-* 이 모델은 더 이상 *새* 컨텐츠 조각을 만드는 기준으로 사용할 수 없습니다.
+* 모델은 생성 기준으로 더 이상 사용할 수 없습니다 *새* 컨텐츠 조각.
 * 하지만:
    * GraphQL 스키마는 계속 생성되며 계속 쿼리할 수 있습니다(JSON API에 영향을 주지 않기 위해).
    * 모델을 기반으로 하는 모든 컨텐츠 조각은 여전히 GraphQL 종단점에서 쿼리하고 반환할 수 있습니다.
 * 모델을 더 이상 참조할 수 없지만 기존 참조는 그대로 유지되므로 GraphQL 끝점에서 질의 및 반환될 수 있습니다.
 
-**Enabled**&#x200B;로 플래그가 지정된 모델을 비활성화하려면 다음 중 하나에서 **Disable** 옵션을 사용합니다.
+로 플래그가 지정된 모델을 비활성화하려면 **활성화됨** 다음 **비활성화** 옵션:
 
 * 필요한 모델을 선택한 경우 상단 도구 모음입니다.
 * 해당 빠른 작업(필요한 모델 위에 마우스 놓기)입니다.
@@ -351,16 +345,16 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 
 ## 자산 폴더에서 컨텐츠 조각 모델 허용 {#allowing-content-fragment-models-assets-folder}
 
-컨텐츠 거버넌스를 구현하려면 자산 폴더에 **정책**&#x200B;을 구성하여 해당 폴더에서 조각 만들기에 허용된 컨텐츠 조각 모델을 제어할 수 있습니다.
+컨텐츠 거버넌스를 구현하기 위해 다음을 구성할 수 있습니다 **정책** 자산 폴더에서 조각 만들기에 허용된 컨텐츠 조각 모델을 제어할 수 있습니다.
 
 >[!NOTE]
-이 메커니즘은 페이지의 고급 속성에서 페이지 템플릿](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 및 그 하위 페이지를 허용하는 [과 유사합니다.
+메커니즘은 다음과 유사합니다 [페이지 템플릿 허용](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 페이지의 고급 속성에 있는 페이지 및 그 하위 항목에 대해
 
-**허용된 컨텐츠 조각 모델**&#x200B;에 대한 **정책**&#x200B;을 구성하려면:
+를 구성하려면 **정책** 대상 **허용된 컨텐츠 조각 모델**:
 
-1. 필요한 자산 폴더로 **속성**&#x200B;을 탐색하고 엽니다.
+1. 탐색 및 열기 **속성** 을 참조하십시오.
 
-1. 구성 가능한 **정책** 탭을 엽니다.
+1. 를 엽니다. **정책** 탭, 구성할 수 있는 위치:
 
    * **상속 위치`<folder>`**
 
@@ -375,12 +369,12 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
       여러 모델을 사용할 수 있습니다.
    ![컨텐츠 조각 모델 정책](assets/cfm-model-policy-assets-folder.png)
 
-1. **** 변경 사항을 저장합니다.
+1. **저장** 모든 변경 사항.
 
 폴더에 대해 허용되는 컨텐츠 조각 모델은 다음과 같이 해결됩니다.
-* **허용된 컨텐츠 조각 모델**&#x200B;에 대한 **정책**.
+* 다음 **정책** 대상 **허용된 컨텐츠 조각 모델**.
 * 비어 있는 경우 상속 규칙을 사용하여 정책을 결정하십시오.
-* 상속 체인이 결과를 전달하지 않는 경우 해당 폴더에 대한 **Cloud Services** 구성을 확인합니다(먼저 상속을 통해 해당 폴더도 직접 제공).
+* 상속 체인이 결과를 전달하지 않으면 **Cloud Services** 해당 폴더에 대한 구성(먼저 상속을 통해 직접 구성)
 * 위의 결과 중 어느 것에도 전달되지 않는 경우에는 해당 폴더에 대해 허용되는 모델이 없습니다.
 
 ## 컨텐츠 조각 모델 삭제 {#deleting-a-content-fragment-model}
@@ -422,21 +416,18 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 1. **도구**, **자산**&#x200B;으로 이동한 후 **컨텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 컨텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 후 도구 모음에서 **게시 취소** 를 클릭합니다.
+1. 모델을 선택한 후 **게시 취소** 를 클릭합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
 하나 이상의 조각에서 현재 사용하는 모델을 게시 취소하려고 하면 오류 경고가 표시됩니다.
 
 ![사용 중인 모델을 게시 취소할 때 컨텐츠 조각 모델 오류 메시지가 표시됩니다](assets/cfm-model-unpublish-error.png)
 
-메시지에 [참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) 패널을 확인하여 추가 조사를 수행하는 것이 좋습니다.
+메시지를 통해 [참조](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) 더 자세히 조사하려면 다음을 수행하십시오.
 
 ![참조의 컨텐츠 조각 모델](assets/cfm-model-references.png)
 
 ## 잠김(게시된) 컨텐츠 조각 모델 {#locked-published-content-fragment-models}
-
->[!NOTE]
-잠긴(게시된) 컨텐츠 조각 모델 기능은 베타에 있습니다.
 
 이 기능은 게시된 컨텐츠 조각 모델에 대한 거버넌스를 제공합니다.
 
@@ -462,29 +453,29 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 
 ### 솔루션 {#the-solution}
 
-이러한 문제를 해결하기 위해 컨텐츠 조각 모델은 게시되는 즉시 작성자의 읽기 전용 모드로 *잠긴*&#x200B;입니다. 이것은 **잠김**&#x200B;로 표시됩니다.
+이러한 문제를 해결하기 위해 컨텐츠 조각 모델은 *잠김* 게시되는 즉시 작성자의 읽기 전용 모드로 전환합니다. 이것은 **잠김**:
 
 ![잠긴 컨텐츠 조각 모델의 카드](assets/cfm-model-locked.png)
 
-모델이 **잠금**(읽기 전용 모드)이면 모델의 내용 및 구조를 볼 수 있지만 편집할 수는 없습니다.
+모델이 인 경우 **잠김** (읽기 전용 모드에서) 모델의 내용 및 구조를 볼 수 있지만 편집할 수는 없습니다.
 
-콘솔 또는 모델 편집기에서 **잠금** 모델을 관리할 수 있습니다.
+You can manage **Locked** models from either the console, or the model editor:
 
 * 콘솔
 
-   콘솔에서 도구 모음에서 **잠금 해제** 및 **잠금** 작업을 사용하여 읽기 전용 모드를 관리할 수 있습니다.
+   From the console, you can manage the READ-ONLY mode with the **Unlock** and **Lock** actions in the toolbar:
 
-   ![잠긴 컨텐츠 조각 모델의 도구 모음](assets/cfm-model-locked.png)
+   ![Toolbar of locked Content Fragment Model](assets/cfm-model-locked.png)
 
-   * 모델을 **잠금 해제**&#x200B;하여 편집 작업을 활성화할 수 있습니다.
+   * 다음을 수행할 수 있습니다 **잠금 해제** 편집 기능을 활성화하는 모델.
 
-      **잠금 해제**&#x200B;를 선택하면 경고가 표시되며, **잠금 해제** 작업을 확인해야 합니다.
+      선택하는 경우 **잠금 해제** 경고가 표시되고 **잠금 해제** 작업:
       ![컨텐츠 조각 모델 잠금을 해제할 때 메시지](assets/cfm-model-unlock-message.png)
 
       그런 다음 편집할 모델을 열 수 있습니다.
 
-   * 나중에 **모델 잠금**&#x200B;을 수행할 수도 있습니다.
-   * 모델을 다시 게시하면 즉시 **잠김**(읽기 전용) 모드로 돌아갑니다.
+   * 다음을 수행할 수도 있습니다 **잠금** 모델이 나중에 표시됩니다.
+   * 모델을 다시 게시하면 즉시 **잠김** (읽기 전용) 모드.
 
 * 모델 편집기
 
@@ -492,15 +483,15 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 
       ![잠긴 컨텐츠 조각 모델을 볼 때 메시지](assets/cfm-model-editor-lock-message.png)
 
-   * **읽기 전용 보기**&#x200B;를 선택하면 모델의 내용과 구조를 볼 수 있습니다.
+   * 선택하는 경우 **읽기 전용 보기** 모델의 컨텐츠 및 구조를 확인할 수 있습니다.
 
       ![읽기 전용 보기 - 잠긴 컨텐츠 조각 모델](assets/cfm-model-editor-locked-view-only.png)
 
-   * **편집**&#x200B;을 선택하는 경우 업데이트를 편집하고 저장할 수 있습니다.
+   * 선택하는 경우 **편집** 업데이트를 편집하고 저장할 수 있습니다.
 
       ![편집 - 잠긴 컨텐츠 조각 모델](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
       맨 위에는 경고가 있을 수 있지만, 이는 모델이 기존 컨텐츠 조각에서 이미 사용 중인 경우입니다.
 
-   * **** 취소하면 콘솔로 돌아갑니다.
+   * **취소** 콘솔로 돌아갑니다.

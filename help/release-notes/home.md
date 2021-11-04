@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 98c6207e84fda0d4bab3141c84507498f3527337
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 42%
@@ -13,18 +13,18 @@ ht-degree: 42%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2021.09.0 |
+| 버전 | 2021.10.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
 ## 릴리스를 준비하는 방법 {#how-to-prepare}
 
-[!DNL Adobe Experience Manager] as a Cloud Service의 연속 릴리스 모델을 사용하면 애플리케이션이 지속적으로 자동 업데이트됩니다. 업데이트, 기능 릴리스 및 중요 업데이트에는 두 가지 유형이 있습니다.
+에서 연속 릴리스 모델 사용 [!DNL Adobe Experience Manager] as a Cloud Service은 애플리케이션을 지속적으로 자동 업데이트합니다. 업데이트, 기능 릴리스 및 중요 업데이트에는 두 가지 유형이 있습니다.
 
 * 기능 릴리스는 예측 가능한 월별 빈도로 수행되며 새로운 기능 및 제품 혁신에 중점을 둡니다.
-* 중요 업데이트는 자주 수행되며 보안 업데이트, 버그 수정 및 성능 향상에 중점을 둡니다. 따라서 [!DNL Adobe Experience Manager] as a Cloud Service이 항상 중요한 수정 사항이 있는 최신 상태가 됩니다.
+* 중요 업데이트는 자주 수행되며 보안 업데이트, 버그 수정 및 성능 향상에 중점을 둡니다. 이렇게 하면 다음과 같은 이점이 있습니다 [!DNL Adobe Experience Manager] as a Cloud Service은 중요한 수정 사항이 있는 최신 상태로 항상 제공됩니다.
 
-혁신 속도 외에도 [!DNL Adobe Experience Manager] as a Cloud Service은 기능을 프로덕션에 릴리스하기 전에 한 달 전에 예정된 기능을 미리 볼 수 있는 유연성을 제공합니다. 따라서 사용자 지정 환경에서 기능을 테스트하고 내부 사용자를 미리 교육/준비하여 향후 릴리스가 조직에 미치는 영향을 평가할 수 있습니다.
+혁신의 속도와 더불어 [!DNL Adobe Experience Manager] 또한 as a Cloud Service은 기능을 프로덕션에 릴리스하기 전에 한 달 전에 예정된 기능을 미리 볼 수 있는 유연성을 제공합니다. 따라서 사용자 지정 환경에서 기능을 테스트하고 내부 사용자를 미리 교육/준비하여 향후 릴리스가 조직에 미치는 영향을 평가할 수 있습니다.
 
 >[!NOTE]
 >
@@ -32,9 +32,9 @@ ht-degree: 42%
 
 릴리스를 준비하려면:
 
-1. 일정 표시: [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에서 월별 릴리스에 대한 주요 날짜를 확인하고 달력에 표시를 하여 주요 활동을 준비하여 릴리스를 준비하십시오.
-1. 릴리스 노트를 검토합니다. [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하여 릴리스 및 사전 릴리스 기능에 익숙해지십시오.
-1. 새로운 기능에 액세스하여 사용해 보십시오. 비프로덕션 환경에서 [사전 릴리스 채널](/help/release-notes/prerelease.md)을 사용하도록 설정하고 사용자 지정 환경에서 평가할 기능을 시도하기 시작합니다.
+1. 일정 표시: 에서 월별 릴리스에 대한 주요 날짜 확인 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 달력에 표시를 하여 주요 활동을 준비하여 릴리스를 준비하십시오.
+1. 릴리스 노트를 검토합니다. 다음 문서를 참조하십시오. [현재 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md) 릴리스 및 사전 릴리스 기능에 친숙해지도록 합니다.
+1. 새로운 기능에 액세스하여 사용해 보십시오. 를 활성화합니다 [사전 릴리스 채널](/help/release-notes/prerelease.md) 비프로덕션 환경에서 사용하고 사용자 지정 환경에서 평가할 기능 시도를 시작합니다.
 1. 사용자 교육: 설명서 및 Experience League 리소스를 사용하여 사용자가 새로운 기능을 빠르고 잘 이해할 수 있도록 합니다.
 
 ## 주요 릴리스 정보 {#key-articles}
@@ -66,7 +66,7 @@ ht-degree: 42%
 
 * [최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
-* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
+* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
 * [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)

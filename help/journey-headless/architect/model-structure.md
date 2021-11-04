@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
+source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '690'
 ht-degree: 7%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 7%
 
 ## 지금까지 이야기 {#story-so-far}
 
-[AEM Headless 컨텐츠 작성자 여정](overview.md) 의 시작 부분에서 AEM](basics.md)헤드리스를 사용하는 헤드리스를 위한 [컨텐츠 모델링 기본 사항 은 헤드리스 작성에 관련된 기본 개념과 용어를 다룹니다.
+의 시작 [AEM Headless Content Author 여정](overview.md) a [AEM을 사용한 헤드리스의 컨텐츠 모델링 기본 사항](basics.md) 헤드리스용 작성과 관련된 기본 개념 및 용어를 다룹니다.
 
 이 문서는 AEM 헤드리스 프로젝트에 대한 자체 컨텐츠 조각 모델을 만드는 방법을 이해할 수 있도록 이러한 조각을 기반으로 합니다.
 
 ## 목표 {#objective}
 
-* **대상**: 초보
+* **Audience**: 초보
 * **목표**: 컨텐츠 조각 모델을 사용하여 헤드리스 CMS용 컨텐츠 모델링 컨텐츠의 개념 및 역학을 참조하십시오.
 
 <!-- which persona does this? -->
@@ -46,27 +46,27 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![도구의 컨텐츠 조각 모델](assets/cfm-tools.png)
 
-이 옵션을 선택한 후 모델의 위치로 이동하고 **만들기**&#x200B;를 선택합니다. 여기에서 다양한 주요 세부 정보를 입력할 수 있습니다.
+이 옵션을 선택한 후 모델의 위치로 이동하고 을 선택합니다 **만들기**. 여기에서 다양한 주요 세부 정보를 입력할 수 있습니다.
 
-**모델 활성화** 옵션이 기본적으로 활성화됩니다. 즉, 컨텐츠 조각을 저장하자마자 모델을 사용할 수 있습니다(컨텐츠 조각 만들기에서). 원할 경우 이 모델을 비활성화할 수 있습니다. 나중에 기존 모델을 활성화(또는 비활성화)할 기회가 있습니다.
+옵션 **모델 활성화** 은 기본적으로 활성화됩니다. 즉, 컨텐츠 조각을 저장하자마자 모델을 사용할 수 있습니다(컨텐츠 조각 만들기에서). 원할 경우 이 모델을 비활성화할 수 있습니다. 나중에 기존 모델을 활성화(또는 비활성화)할 기회가 있습니다.
 
 ![컨텐츠 조각 모델 만들기](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-**만들기**&#x200B;로 확인한 다음 **모델 열기**&#x200B;를 사용하여 구조 정의를 시작할 수 있습니다.
+다음으로 확인 **만들기** 그러면 **열기** 구조 정의를 시작할 모델입니다.
 
 ## 컨텐츠 조각 모델 정의 {#defining-content-fragment-models}
 
-새 모델을 처음 열면 왼쪽에 큰 공백 및 오른쪽에 **데이터 유형**&#x200B;의 긴 목록이 표시됩니다.
+새 모델을 처음 열면 왼쪽에 큰 공백, 긴 목록 등이 표시됩니다 **데이터 유형** 오른쪽:
 
 ![빈 모델](/help/assets/content-fragments/assets/cfm-models-03.png)
 
 그럼 어떻게 해야 하죠?
 
-**데이터 유형**&#x200B;의 인스턴스를 왼쪽 공간으로 드래그할 수 있습니다. 이미 모델을 정의하고 있습니다.
+인스턴스를 **데이터 유형** 왼쪽 공간에 있습니다. 이미 모델을 정의하고 있습니다.
 
 ![필드 정의](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-데이터 유형을 추가하면 해당 필드에 대한 **속성**&#x200B;을 정의해야 합니다. 사용 유형에 따라 다릅니다. 예:
+데이터 유형을 추가하면 다음을 정의해야 합니다 **속성** 해당 필드에 대해 입력합니다. 사용 유형에 따라 다릅니다. 예:
 
 ![데이터 속성](/help/assets/content-fragments/assets/cfm-models-05.png)
 
@@ -101,13 +101,9 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >작성자가 모델이 아직 게시되지 않은 컨텐츠 조각을 게시하려고 하면 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
->[!NOTE]
->
->잠긴(게시된) 컨텐츠 조각 모델 기능은 베타에 있습니다.
+모델이 게시되는 즉시 게시됩니다 *잠김* 작성자의 읽기 전용 모드로 전환합니다. 이는 기존 GraphQL 스키마 및 쿼리, 특히 게시 환경에서 오류가 발생하는 변경을 방지하기 위한 것입니다. 콘솔에서 다음과 같이 표시됩니다. **잠김**.
 
-모델이 게시되는 즉시 이 모델은 작성자의 읽기 전용 모드로 *잠긴*&#x200B;입니다. 이는 기존 GraphQL 스키마 및 쿼리, 특히 게시 환경에서 오류가 발생하는 변경을 방지하기 위한 것입니다. **잠김**&#x200B;에 의해 콘솔에 표시됩니다.
-
-모델이 **잠금**(읽기 전용 모드)이면 모델의 내용 및 구조를 볼 수 있지만 직접 편집할 수는 없습니다. 그러나 콘솔 또는 모델 편집기에서 **잠금** 모델을 관리할 수 있습니다.
+모델이 인 경우 **잠김** (읽기 전용 모드에서) 모델의 내용 및 구조를 볼 수 있지만 직접 편집할 수는 없습니다. 관리 **잠김** 콘솔 또는 모델 편집기에서 모델을 생성합니다.
 
 ## 다음은 무엇입니까? {#whats-next}
 
@@ -117,7 +113,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - 이 페이지는 주로  **** 사이트 콘솔을 기반으로 하지만, 많은/대부분의 기능은  **자산 콘솔 아래의 컨텐츠 조각 모델** 로 이동하고 작업을 수행하는 데에도  **** 관련이 있습니다.
+* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔의 대부분/대부분 기능은 이동 및 작업 수행에도 관련이 있습니다. **컨텐츠 조각 모델** 아래에 **자산** 콘솔.
 
 * [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
 
