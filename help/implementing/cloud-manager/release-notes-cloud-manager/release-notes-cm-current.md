@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노
 description: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: null
-source-git-commit: 40d0b5eea4fe29afbb051134215ef93493ecdbae
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 2%
+source-wordcount: '421'
+ht-degree: 3%
 
 ---
 
@@ -41,11 +41,9 @@ AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 날짜는 2021년 11
 
 * 사용자는 파이프라인이 없는 파이프라인 카드에 적절한 지침이 제공됩니다.
 
-* 이제 연관된 세부 사항과 함께 파이프라인 및 코드 실행과 같은 활동을 볼 수 있는 새로운 활동 페이지를 사용할 수 있습니다. 시간이 지나면서 이 페이지에 나열된 활동은 제공된 세부 정보와 함께 범위가 확장됩니다.
+* 이제 세부 사항 요약을 쉽게 볼 수 있도록 마우스로 가리키면 상태 팝오버가 있는 새 파이프라인 페이지를 사용할 수 있습니다. 파이프라인 실행은 연관된 세부 정보와 함께 볼 수 있습니다.
 
 * 이제 파이프라인 편집 API에서 배포 단계에서 사용되는 환경 변경을 지원합니다.
-
-* 이제 파이프라인 페이지에 파이프라인 세부 사항 요약을 쉽게 볼 수 있는 마우스로 가리키면 상태 팝오버가 포함됩니다.
 
 * 큰 패키지에 대해 OakPal 검색 프로세스의 최적화가 도입되었습니다.
 
