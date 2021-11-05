@@ -3,9 +3,9 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a0bf314ff8f994dd77c2c124db1ab604dcae74b6
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 ### 의 새로운 기능 [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] 에서는 이제 지원되는 오디오 및 비디오 자산에서 텍스트 스크립트를 자동으로 생성할 수 있도록 기본 제공 커넥터를 사용합니다. [!DNL Azure Media Services]. 지원되는 파일은 자동으로 전사되며 텍스트는 WebVTT 형식으로 저장됩니다. WebVTT 캡션은 보다 효과적인 검색, 캡션 또는 번역을 위해 사용됩니다. 또한 이 기능은 자산의 액세스 가능성, 검색 가능성 및 현지화를 개선합니다.
+* [!DNL Experience Manager] 에서는 이제 지원되는 오디오 및 비디오 자산에서 텍스트 스크립트를 자동으로 생성할 수 있도록 기본 제공 커넥터를 사용합니다. [!DNL Azure Media Services]. 다음 [지원되는 파일 형식](/help/assets/file-format-support.md#audio-video-transcription-formats) 는 자동으로 전사되며 텍스트는 WebVTT 형식으로 저장됩니다. WebVTT 캡션은 보다 효과적인 검색, 캡션 또는 번역을 위해 사용됩니다. 또한 이 기능은 자산의 액세스 가능성, 검색 가능성 및 현지화를 개선합니다.
 
 ### 의 새로운 기능 [!DNL Assets] 사전 릴리스 채널 {#assets-prerelease-features}
 

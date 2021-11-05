@@ -1,30 +1,30 @@
 ---
 title: 지원되는 파일 형식 및 MIME 유형
-description: ' [!DNL Experience Manager Assets] 에서 [!DNL Cloud Service]로 지원하는 파일 형식 및 MIME 유형입니다.'
+description: 에서 지원하는 파일 형식 및 MIME 유형 [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 8%
+source-wordcount: '834'
+ht-degree: 7%
 
 ---
 
 # [!DNL Assets] 지원되는 파일 형식 {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a  [!DNL Cloud Service] 는 저장, 메타데이터 온라인 관리, 버전 관리, 업로드 및 다운로드 등의 기본적인 컨텐츠 관리 기능을 해당 형식과 관계없이 모든 이진 파일에 대해 지원합니다. [!DNL Adobe Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 제품 기능은 다양한 형식에 대한 다양한 지원을 제공합니다.
+[!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 포맷과 상관없이 모든 바이너리 파일에 대해 저장, 메타데이터 온라인 관리, 버전 관리, 업로드 및 다운로드 등의 기본적인 컨텐츠 관리 기능을 지원합니다. [!DNL Adobe Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 제품 기능은 다양한 형식에 대한 다양한 지원을 제공합니다.
 
-또한 [!DNL Experience Manager Assets]은 미리 보기 및 표현물을 생성하고 전체 텍스트 색인을 생성하기 위한 메타데이터와 텍스트를 추출하는 확장된 지원을 제공합니다. 이 확장 지원은 [자산 마이크로서비스](asset-microservices-configure-and-use.md)를 사용하여 제공됩니다.
+게다가, [!DNL Experience Manager Assets] 미리 보기 및 변환을 생성하고 전체 텍스트 색인을 위한 메타데이터와 텍스트를 추출할 수 있도록 확장된 지원을 제공합니다. 이 확장 지원은 [자산 마이크로서비스](asset-microservices-configure-and-use.md).
 
 자산 마이크로서비스를 사용한 자산 전환의 주요 사항은 다음과 같습니다.
 
-* 키 [Adobe 파일 형식](#adobe-formats)은 [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] 및 [!DNL Adobe Acrobat] 또는 PDF을 포함하여 Adobe 응용 프로그램 및 서비스에 의해 생성됩니다.
-* 키 [이미징 파일 형식](#image-formats).
-* [캐논, ](#camera-raw-formats) 니콘, 후지필름, 올림푸스 및 기타 제조업체(Adobe Camera Raw에서 제공)를 포함한 다양한 카메라의 Camera Raw 파일 포맷을 제공합니다.
-* Microsoft Office 및 열린 문서 형식을 포함한 일반 [문서 형식](#document-formats)
-* 광범위한 [video](#video-formats) 및 [audio](#audio-formats) 형식
+* 키 [Adobe 파일 형식](#adobe-formats) 다음을 포함한 Adobe 애플리케이션 및 서비스에서 작성 [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], 및 [!DNL Adobe Acrobat] 또는 PDF.
+* 키 [이미지 파일 형식](#image-formats).
+* [Camera Raw 파일 형식](#camera-raw-formats) 캐논, 니콘, 후지필름, 올림푸스 등 다양한 카메라 제조 업체(Adobe Camera Raw 제공)에 대한 것이다.
+* 공통 [문서 형식](#document-formats)( Microsoft Office 및 Open Document 형식 포함)
+* 광범위한 범위 [비디오](#video-formats) 및 [오디오](#audio-formats) 형식.
 
 다음 범례에서는 각 형식에 대한 지원 수준을 설명합니다.
 
@@ -50,7 +50,7 @@ ht-degree: 8%
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* [!DNL Adobe InDesign] 파일(INDD)의 경우 변환 크기는 INDD 파일에 포함된 미리 보기에 의해 결정됩니다. [!DNL InDesign](**[!UICONTROL 환경 설정 > 파일 처리 > 항상 문서를 사용하여 미리 보기 이미지 저장, 미리 보기 크기]**)에서 기본 설정을 구성하여 더 큰 변환을 포함합니다.
+\* [!DNL Adobe InDesign] 파일(INDD), 표현물의 크기는 INDD 파일에 포함된 미리 보기에 의해 결정됩니다. 에서 환경 설정을 구성합니다. [!DNL InDesign] (**[!UICONTROL 환경 설정 > 파일 처리 > 항상 문서를 사용하여 미리 보기 이미지 저장, 미리 보기 크기]**)을 클릭하여 더 큰 렌디션을 포함합니다.
 
 ## 이미지 형식 {#image-formats}
 
@@ -67,7 +67,7 @@ ht-degree: 8%
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-## [!DNL Dynamic Media]의 이미지 형식 {#image-support-dynamic-media}
+## 의 이미지 형식 [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | 형식 | 업로드(입력 형식) | 이미지 사전 설정 만들기(출력 형식) | 동적 표현물 미리 보기 | 동적 표현물 전달 | 동적 표현물 다운로드 |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -77,12 +77,12 @@ ht-degree: 8%
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PSD   ‡ | ✓ | - | - | - | - |
+| PSD ‡ | ✓ | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-병합된 ‡ 이미지가 PSD 파일에서 추출됩니다. 이 이미지는 [!DNL Adobe Photoshop]에 의해 생성되며 PSD 파일에 포함된 이미지입니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+병합된 ‡ 이미지가 PSD 파일에서 추출됩니다. 에서 생성한 이미지입니다. [!DNL Adobe Photoshop] 및 은 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
-[!DNL Dynamic Media]에서 지원되지 않는 다음 하위 유형의 래스터 이미지 파일 형식:
+에서 지원되지 않는 래스터 이미지 파일 형식의 다음 하위 유형 [!DNL Dynamic Media]:
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일.
 * PSB 파일.
@@ -95,7 +95,7 @@ ht-degree: 8%
 
 다음 3D 형식이 지원됩니다.
 
-또한 [Dynamic Media](/help/assets/dynamic-media/assets-3d.md)에서 3D 자산 작업 을 참조하십시오.
+참조 - [Dynamic Media에서 3D 자산 작업](/help/assets/dynamic-media/assets-3d.md).
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -164,7 +164,7 @@ ht-degree: 8%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## [!DNL Dynamic Media]의 문서 형식 {#document-support-dynamic-media}
+## 문서 형식 [!DNL Dynamic Media] {#document-support-dynamic-media}
 
 | 형식 | 업로드(입력 형식) | 이미지 사전 설정 만들기(출력 형식) | 동적 표현물 미리 보기 | 동적 표현물 전달 | 동적 표현물 다운로드 |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -200,7 +200,7 @@ ht-degree: 8%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## 코드 변환용 [!DNL Dynamic Media]의 비디오 형식 {#video-dynamic-media-transcoding}
+## 의 비디오 형식 [!DNL Dynamic Media] 코드 변환 {#video-dynamic-media-transcoding}
 
 | 비디오 파일 확장 | 컨테이너 | 권장 비디오 코덱스 | 지원되지 않는 비디오 코덱입니다 |
 |------------------------|--------------------|--------|-------|
@@ -217,7 +217,20 @@ ht-degree: 8%
 
 ## 오디오 형식 {#audio-formats}
 
-[!DNL Assets] as a [!DNL Cloud Service] 에서는 AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 형식에 대한 XMP 메타데이터 추출 지원을 제공합니다.
+[!DNL Assets] 로서의 [!DNL Cloud Service] AIF, ASF, M4A, MP3, WAV 및 WMA 오디오 형식에 대한 XMP 메타데이터 추출 지원을 제공합니다.
+
+## 오디오 및 비디오 변환에 지원되는 입력 형식 {#audio-video-transcription-formats}
+
+* FLV(H.264 및 AAC 코덱이 있는 경우)(.flv)
+* MXF(.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP(.ts, .ps, .3gp, .3gpp, .mpg)
+* Windows Media 비디오(WMV)/ASF(.wmv, .asf)
+* AVI(압축되지 않은 8비트/10비트)(.avi)
+* MP4(.mp4, .m4a, .m4v)
+* Microsoft 디지털 비디오 기록(DVR-MS)(.dvr-ms)
+* Matroska/WebM(.mkv)
+* 웨이브/WAV(.wav)
+* QuickTime(.mov)
 
 ## 팁 및 제한 사항 {#limitations-and-tips}
 
