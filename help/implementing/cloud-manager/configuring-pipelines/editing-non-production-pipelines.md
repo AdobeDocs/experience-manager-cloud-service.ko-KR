@@ -2,7 +2,7 @@
 title: 비프로덕션 파이프라인 편집
 description: 비프로덕션 파이프라인 편집
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### 비프로덕션 파이프라인 삭제 {#delete-nonprod}
+### 비프로덕션 파이프라인 삭제 {#delete-nonprod}
 
 파이프라인 카드에서 프로덕션 파이프라인을 삭제할 수 있습니다.
 
