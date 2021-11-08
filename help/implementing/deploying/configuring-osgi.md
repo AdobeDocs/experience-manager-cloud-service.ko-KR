@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: '암호 값 및 환경별 값으로 OSGi 구성 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f1ad12d308319ecfff6c0138ca77862976594e42
+source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
 workflow-type: tm+mt
-source-wordcount: '2938'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -224,9 +224,15 @@ use $[secret:SECRET_VAR_NAME]
 
 >[!CAUTION]
 >
->변수 이름 접두사로 `INTERNAL_`, `ADOBE_`, 또는 `CONST_` Adobe에 의해 예약되어 있습니다. 이러한 접두사로 시작하는 고객 설정 변수는 모두 무시됩니다.
+>변수 이름에 특정 접두사를 사용하는 것과 관련된 규칙이 있습니다.
 >
->고객은 접두사가 있는 변수를 참조하지 않아야 합니다. `INTERNAL_` 또는 `ADOBE_` 둘 중 하나를 선택합니다.
+>1. 변수 이름 접두사로 `INTERNAL_`, `ADOBE_`, 또는 `CONST_` Adobe에 의해 예약되어 있습니다. 이러한 접두사로 시작하는 고객 설정 변수는 모두 무시됩니다.
+>
+>1. 고객은 접두사가 있는 변수를 참조하지 않아야 합니다. `INTERNAL_` 또는 `ADOBE_` 둘 중 하나를 선택합니다.
+>
+>1. 접두사가 있는 환경 변수 `AEM_` 는 제품에서 고객이 사용하고 설정할 공용 API로 정의됩니다.
+   >   고객은 접두사로 시작하는 환경 변수를 사용하고 설정할 수 있습니다 `AEM_` 이 접두사가 있는 자체 변수를 정의해서는 안 됩니다.
+
 
 ### 기본값 {#default-values}
 
