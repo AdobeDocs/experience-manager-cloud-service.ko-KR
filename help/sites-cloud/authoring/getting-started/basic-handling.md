@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 98%
+source-wordcount: '2939'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 | 프로젝트 | 프로젝트 콘솔에서는 프로젝트에 직접 액세스할 수 있습니다. [프로젝트는 가상 대시보드](/help/sites-cloud/authoring/projects/overview.md)로서 팀을 만드는 데 사용할 수 있습니다. 팀을 만든 후에는 공동 목표를 위한 작업을 수행할 수 있도록 이 팀에 리소스, 워크플로우 및 작업에 대한 액세스 권한을 부여할 수 있습니다. |
 | 사이트 | Sites 콘솔에서는 AEM 인스턴스에서 실행되는 [사이트를 만들고, 보고, 관리](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)할 수 있습니다. 이 콘솔을 통해 페이지를 만들고, 편집하고, 복사하고, 이동하고, 삭제하며 워크플로우를 시작하고, 페이지를 게시할 수 있습니다. |
 | 경험 조각 | [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)은 여러 채널 간에 재사용할 수 있으며 변형이 있는 독립형 환경으로, 경험 또는 경험 일부를 반복해서 복사하고 붙여넣는 단조로운 작업을 수행할 필요를 없애줍니다. |
-| 자산 | Assets 콘솔을 사용하여 이미지, 비디오, 문서 및 오디오 파일](/help/assets/overview.md)과 같은 [디지털 자산을 가져오고 관리할 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 사이트에서 이러한 자산을 사용할 수 있습니다. 자산 콘솔에서 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 만들고 관리할 수도 있습니다. |
+| 자산 | Assets 콘솔을 사용하여 가져오고 관리할 수 있습니다 [이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 자산](/help/assets/overview.md). 그런 다음 동일한 AEM 인스턴스에서 실행되는 사이트에서 이러한 자산을 사용할 수 있습니다. 또한 만들고 관리할 수 있습니다 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 자산 콘솔에서 게시할 수 있습니다. |
 | 개인화 | [이 콘솔은 타게팅된 컨텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## 도구 패널 {#tools-panel}
@@ -202,7 +202,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    >모든 키보드 단축키에 대한 개요는 다음 문서를 참조하십시오.
    >
    >* [페이지 편집을 위한 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   * [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   >* [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## 작업 도구 모음 {#actions-toolbar}
@@ -222,7 +222,8 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 ![추가적인 옵션](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
-사용할 수 있는 개별 아이콘은 적절한 콘솔/기능/시나리오와 관련하여 문서화되어 있습니다.
+>
+>사용할 수 있는 개별 아이콘은 적절한 콘솔/기능/시나리오와 관련하여 문서화되어 있습니다.
 
 ## 빠른 작업 {#quick-actions}
 
@@ -243,7 +244,8 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 * [목록 보기](#list-view)
 
 >[!NOTE]
-기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
+>
+>기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
 
 ### 리소스 선택 {#selecting-resources}
 
@@ -361,7 +363,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    * **이름** - 페이지 이름이며, 페이지 URL의 일부이고 언어와 관계없이 변경되지 않으므로 다국어 제작 환경에서 유용할 수 있습니다.
    * **수정됨** - 마지막 수정 일자 및 수정자
    * **게시됨** - 게시 상태
-   * **미리 보기**  - 미리 보기 상태
+   * **미리 보기** - 미리 보기 상태
    * **템플릿** - 페이지의 기반이 되는 템플릿
    * **워크플로우** - 페이지에 현재 적용된 워크플로우입니다. 마우스오버로 또는 타임라인을 열면 더 많은 정보를 사용할 수 있습니다.
    * **페이지 분석**
@@ -374,7 +376,8 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 * 목록에서 각 항목의 맨 오른쪽에 있는 점선 세로 막대를 사용하여 항목 순서를 변경합니다.
 
    >[!NOTE]
-   순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
+   >
+   >순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
 
    ![열 순서](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -388,12 +391,13 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![확장된 레일 선택기](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-예를 들어 **Sites**&#x200B;에서 컨텐츠 전용(기본값), 컨텐츠 트리, 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
+예를 들어, **Sites** 콘솔에서는 컨텐츠 전용(기본값), 컨텐츠 트리, 타임라인, 참조, 사이트 세부 사항 또는 필터 사이드 패널을 선택할 수 있습니다.
 
 컨텐츠만을 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
 
 >[!NOTE]
-[키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 사용하면 레일 디스플레이 옵션 간을 빠르게 전환할 수 있습니다.
+>
+>[키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 사용하면 레일 디스플레이 옵션 간을 빠르게 전환할 수 있습니다.
 
 ### 컨텐츠 트리 {#content-tree}
 
@@ -404,8 +408,10 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 ![컨텐츠 트리](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
-계층 구조 보기에서 항목을 선택한 후에는 화살표 키를 사용하여 계층 구조를 빠르게 탐색할 수 있습니다.
-자세한 내용은 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 참조하십시오.
+>
+>계층 구조 보기에서 항목을 선택한 후에는 화살표 키를 사용하여 계층 구조를 빠르게 탐색할 수 있습니다.
+>
+>자세한 내용은 [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)를 참조하십시오.
 
 ### 타임라인 {#timeline}
 
@@ -452,6 +458,18 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
    * 참조 구성 요소가 선택한 페이지에서 빌린 컨텐츠 및/또는 선택한 페이지에 빌려준 컨텐츠
 
 ![참조 예](/help/sites-cloud/authoring/assets/references-example.png)
+
+### 사이트 {#site}
+
+**사이트** 사이트 세부 사항을 표시합니다. [사이트 템플릿을 사용하여 만들어집니다.](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![사이트 레일](../assets/site-rail.png)
+
+을(를) 탭하거나 클릭합니다 **테마 소스 다운로드** 를 사용하여 [사이트의 테마.](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>템플릿에서 새 사이트를 만들고 테마를 사용자 지정하는 프로세스에 대한 종단 간 설명은 [빠른 사이트 만들기 여정.](/help/journey-sites/quick-site/overview.md)
 
 ### 필터 {#filter}
 
