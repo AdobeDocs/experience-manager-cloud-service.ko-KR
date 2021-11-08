@@ -6,10 +6,10 @@ breadcrumb-title: 작성 안내서
 user-guide-description: Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다.
 feature: Authoring
 role: User
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 70%
+source-wordcount: '325'
+ht-degree: 68%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 70%
    + 작성 기본 사항 {#fundamentals}
       + [환경 및 도구](authoring/fundamentals/environment-tools.md)
       + [페이지 주석 추가](authoring/fundamentals/annotations.md)
+      + [새 사이트 만들기](authoring/fundamentals/create-site.md)
       + [페이지 생성 및 구성](authoring/fundamentals/organizing-pages.md)
       + [페이지 컨텐츠 편집](authoring/fundamentals/editing-content.md)
       + [리치 텍스트 편집기](authoring/fundamentals/rich-text-editor.md)
@@ -82,6 +83,10 @@ ht-degree: 70%
       + [ContextHub로 세그멘테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 관리 {#administering}
+   + 사이트 만들기 {#site-creation}
+      + [새 사이트 만들기](administering/site-creation/create-site.md)
+      + [사이트 템플릿](administering/site-creation/site-templates.md)
+      + [사이트 테마](administering/site-creation/site-themes.md)
    + [워크플로우 관리](administering/workflows-administering.md)
    + 컨텐츠 재사용 {#reusing-content}
       + [MSM 및 번역](administering/msm-and-translation.md)
