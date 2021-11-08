@@ -1,9 +1,9 @@
 ---
 title: 사용자 지정 테마 배포
 description: 파이프라인을 사용하여 사이트 테마를 배포하는 방법을 알아봅니다.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ AEM 빠른 사이트 만들기 여정의 이전 문서에서, [사이트 테마 
 
 테마 사용자 지정 변경 사항을 AEM Git 리포지토리에 커밋하면 다음을 실행할 수 있습니다 [관리자가 만든 파이프라인](pipeline-setup.md) 를 눌러 변경 사항을 배포합니다.
 
-1. Cloud Manager 액세스 [git 액세스 정보를 검색하기 위해 수행한 것과 같습니다.](retrieve-access.md) 설정 **개요** 탭 다음에 대한 카드가 표시됩니다. **파이프라인**.
+1. Cloud Manager에 로그인 [git 액세스 정보를 검색할 때](retrieve-access.md) 프로그램에 액세스합니다. 설정 **개요** 탭 다음에 대한 카드가 표시됩니다. **파이프라인**.
 
    ![Cloud Manager 개요](assets/cloud-manager-overview.png)
 

@@ -1,9 +1,9 @@
 ---
 title: 파이프라인 설정
 description: 프런트 엔드 파이프라인을 만들어 사이트 테마의 사용자 지정을 관리합니다.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -59,21 +59,13 @@ AEM 빠른 사이트 만들기 여정의 이전 문서에서, [템플릿에서 �
 
 ## Cloud Manager 액세스 {#login}
 
-1. Adobe Experience Cloud에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Cloud Manager에 로그인 위치: [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. 로그인한 후 화면의 오른쪽 상단 모서리에서 해당 조직을 확인하여 올바른 조직에 있는지 확인하십시오. 한 조직의 구성원만 있는 경우 이 단계는 필요하지 않습니다. 그런 다음 를 탭하거나 클릭합니다 **Experience Manager**.
-
-   ![Experience Cloud 개요](assets/experience-cloud-overview.png)
-
-1. 다음 페이지에서 **Launch** 시작하려면 **Cloud Manager** 앱.
-
-   ![앱 Experience Manager](assets/experience-manager-apps.png)
-
-1. 다음 페이지에는 사용 가능한 다양한 프로그램이 나와 있습니다. 관리할 항목을 탭하거나 클릭합니다. AEM as a Cloud Service으로 시작하는 경우에는 하나의 프로그램만 사용할 수 있습니다.
+1. Cloud Manager는 사용 가능한 다양한 프로그램을 나열합니다. 관리할 항목을 탭하거나 클릭합니다. AEM as a Cloud Service으로 시작하는 경우에는 하나의 프로그램만 사용할 수 있습니다.
 
    ![Cloud Manager에서 프로그램 선택](assets/cloud-manager-select-program.png)
 
-이제 Cloud Manager에 대한 개요를 볼 수 있습니다. 페이지는 다르게 보이지만 이 예제와 비슷합니다.
+이제 프로그램 개요가 표시됩니다. 페이지는 다르게 보이지만 이 예제와 비슷합니다.
 
 ![Cloud Manager 개요](assets/cloud-manager-overview.png)
 

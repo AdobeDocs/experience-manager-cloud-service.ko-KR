@@ -1,10 +1,10 @@
 ---
 title: Git 리포지토리 액세스 정보 검색
 description: 프런트 엔드 개발자가 Cloud Manager를 사용하여 git 리포지토리 정보에 액세스하는 방법을 알아봅니다.
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 3%
+source-wordcount: '928'
+ht-degree: 4%
 
 ---
 
@@ -82,19 +82,11 @@ Cloud Manager 관리자는 Cloud Manager 사용자로 온보딩합니다. 다음
 
 1. Adobe Experience Cloud에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 또는 환영 이메일에 제공된 링크를 클릭합니다.
 
-1. 로그인한 후 화면의 오른쪽 상단 모서리에서 해당 조직을 확인하여 올바른 조직에 있는지 확인하십시오. 한 조직의 구성원만 있는 경우 이 단계는 필요하지 않습니다. 그런 다음 를 탭하거나 클릭합니다 **Experience Manager**.
-
-   ![Experience Cloud 개요](assets/experience-cloud-overview.png)
-
-1. 다음 페이지에서 **Launch** 단추를 클릭하여 **Cloud Manager** 앱.
-
-   ![앱 Experience Manager](assets/experience-manager-apps.png)
-
-1. 다음 페이지에는 사용 가능한 다양한 프로그램이 나와 있습니다. Cloud Manager 관리자가 제공하는 대로 액세스해야 하는 아이콘을 탭하거나 클릭합니다. AEMaaCS의 첫 번째 프런트 엔드 프로젝트인 경우 하나의 프로그램만 사용할 수 있습니다.
+1. Cloud Manager는 사용 가능한 다양한 프로그램을 나열합니다. Cloud Manager 관리자가 제공하는 대로 액세스해야 하는 아이콘을 탭하거나 클릭합니다. AEMaaCS의 첫 번째 프런트 엔드 프로젝트인 경우 하나의 프로그램만 사용할 수 있습니다.
 
    ![Cloud Manager에서 프로그램 선택](assets/cloud-manager-select-program.png)
 
-이제 Cloud Manager에 대한 개요를 볼 수 있습니다. 페이지는 다르게 보이지만 이 예제와 비슷합니다.
+이제 프로그램 개요가 표시됩니다. 페이지는 다르게 보이지만 이 예제와 비슷합니다.
 
 ![Cloud Manager 개요](assets/cloud-manager-overview.png)
 
