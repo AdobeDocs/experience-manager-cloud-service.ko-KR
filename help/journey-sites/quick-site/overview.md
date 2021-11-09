@@ -1,9 +1,9 @@
 ---
 title: AEM 빠른 사이트 만들기 여정
 description: 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 안내가 있는 여정을 보려면 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 경우 사이트를 신속하게 사용자 지정할 수 있습니다.
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,9 @@ AEM 빠른 사이트 만들기 도구를 사용하면 비개발자가 사이트 
 
 ## 비디오 개요 {#video-overview}
 
-이 기능의 작동 방식에 대한 간단한 개요를 살펴보려면 이 5분 소개를 시청하십시오.
+작동 중인 이 기능에 대한 간단한 개요를 살펴보려면 [이 5분 소개도 보실 수 있습니다.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-이 설명서 여정은 비디오의 모든 기능을 단계별로 자세히 살펴보도록 하므로 프로세스를 이해하고 자체 환경에서 프로세스를 다시 만들 수 있습니다.
+이 설명서 여정은 비디오 의 모든 기능을 단계별로 자세히 살펴보도록 하므로 워크플로우를 이해하고 자체 환경에서 프로세스를 다시 만들 수 있습니다.
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
