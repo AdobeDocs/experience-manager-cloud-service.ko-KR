@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,11 @@ above appears to be internal, to confirm with Brian -->
 
 >[!IMPORTANT]
 >
->패키지 관리자 UI가 **정의되지 않음** 패키지를 설치하는 데 10분 이상 걸리는 경우 오류 메시지가 표시됩니다. 백그라운드에서 올바르게 진행 중이며 일부 충돌이 여러 동시 가져오기 프로세스에서 발생할 수 있으므로 그런 경우 설치를 다시 시도하지 마십시오.
+>패키지 관리자 UI는 **정의되지 않음** 패키지를 설치하는 데 10분 이상 걸리는 경우 오류 메시지가 표시됩니다.
+>
+>이것은 설치 오류가 아니라 Cloud Service이 모든 요청에 대해 갖는 시간 제한으로 인한 것입니다.
+>
+>이러한 오류가 표시되면 설치를 다시 시도하지 마십시오. 백그라운드에서 설치가 올바르게 진행 중입니다. 설치를 다시 시작하면 여러 동시 가져오기 프로세스에서 일부 충돌이 발생할 수 있습니다.
 
 Cloud Manager를 통해 설치된 모든 컨텐츠 패키지(변경할 수 있고 변경할 수 없음)는 AEM Package Manager의 사용자 인터페이스에 고정된 상태로 표시됩니다. 이러한 패키지를 다시 설치하거나 다시 빌드하거나 다운로드할 수 없으며 **&quot;cp2fm&quot;** 접미사: 설치가 Cloud Manager에서 관리되었음을 나타냅니다.
 
