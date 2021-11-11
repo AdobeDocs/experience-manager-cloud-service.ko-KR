@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
+source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -134,7 +134,12 @@ Define DISABLE_DEFAULT_CACHING
 >
 >디스패처의 `invalidate.cache` API 접근 방식은 특정 디스패처 노드만 처리하므로 더 이상 지원되지 않습니다. AEM as a Cloud Service은 개별 노드 수준이 아니라 서비스 수준에서 작동하므로 [AEM에서 캐시된 페이지 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) AEM as a Cloud Service 페이지는 더 이상 유효하지 않습니다.
 
-복제 초기화 에이전트를 사용해야 합니다. 이 작업은 복제 API를 사용하여 수행할 수 있습니다. 다음 [복제 API 설명서를 사용할 수 있습니다](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html), 및 캐시 플러싱에 대한 예는 를 참조하십시오. [API 예제 페이지](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (특히 `CustomStep` 사용 가능한 모든 에이전트에 대해 활성화 유형의 복제 작업을 실행하는 예). 플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하면서 디스패처를 가리키도록 사전 구성되어 있습니다. 플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
+복제 초기화 에이전트를 사용해야 합니다. 이 작업은 를 사용하여 수행할 수 있습니다. [복제 API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). 플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하면서 디스패처를 가리키도록 사전 구성되어 있습니다. 플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
+
+<!-- Need to find a new link and/or example -->
+<!-- 
+and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
+-->
 
 아래 표시된 다이어그램은 이를 보여줍니다.
 
