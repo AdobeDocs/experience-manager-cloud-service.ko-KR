@@ -5,9 +5,9 @@ breadcrumb-title: Implementing 안내서
 user-guide-description: 개발 및 배포 항목을 비롯한 Experience Manager as a Cloud Service 배포를 사용자 지정하는 방법에 대해 알아봅니다.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
+source-git-commit: b89869223986dcc64ebefc9ae6bfb8587456d4da
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1084'
 ht-degree: 44%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 44%
       + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
    + [로그 액세스 및 관리](cloud-manager/manage-logs.md)
    + [SLA 보고](cloud-manager/sla-reporting.md)
+   + [New Relic에 대한 사용자 액세스](cloud-manager/user-access-new-relic.md)
    + [알림 이해](cloud-manager/notifications.md)
    + SSL 인증서 관리 {#manage-ssl-certificates}
       + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -179,7 +180,7 @@ ht-degree: 44%
          + [컨텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
          + [컨텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
          + [컨텐츠 조각을 사용한 AEM GraphQL API - 샘플 컨텐츠 및 쿼리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
-         + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
+         + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리에 대한 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
    + 하이브리드 및 SPA AEM 개발 {#hybrid}
       + [AEM을 사용한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
