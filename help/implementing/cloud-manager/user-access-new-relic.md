@@ -1,9 +1,9 @@
 ---
 title: New Relic에 대한 사용자 액세스
 description: AEM as a Cloud Service용 New Relic Application Performance Monitoring에 대해 알려면 이 페이지를 따르십시오
-source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ AEM as a Cloud Service 환경당 3개:
 * 환경당 게시 서비스를 위한 하나의 애플리케이션(골든 게시 포함)
 * 환경당 미리 보기 서비스를 위한 애플리케이션 하나
    >[!IMPORTANT]
-   >각 애플리케이션은 하나의 라이센스 키를 사용하며, AEM as a Cloud Service 환경은 하나의 New Relic 계정에만 보고됩니다. New Relic APM 및 Infrastructure에 대한 전체 모니터링 지표와 이벤트는 7일 동안 유지됩니다.
+   >각 애플리케이션은 하나의 라이센스 키를 사용하며, AEM as a Cloud Service 환경은 하나의 New Relic 계정에만 보고됩니다. New Relic APM 모두에 대한 전체 모니터링 지표와 이벤트는 7일 동안 유지됩니다.
 
 ### 누가 New Relic Cloud Service 데이터에 액세스할 수 있습니까? {#access-new-relic-cloud}
 
