@@ -3,9 +3,9 @@ title: 소개 및 개요
 description: 컨텐츠 및 상거래 소개 및 개요. CIF(Experience Manager Commerce Integration Framework)는 Magento 및 기타 타사 상거래 솔루션에서 Experience Cloud을 사용하여 상거래 서비스를 통합 및 확장하는 Adobe의 권장 패턴입니다.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 8a8a1f7f461e5a02bfadfc392508d920bd6c1601
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Adobe Experience Manager 컨텐츠 및 상거래를 통해 브랜드는 확장 및 혁신을 통해 상거래 경험을 차별화하고 온라인 비용을 신속하게 캡처할 수 있습니다. AEM Content and Commerce는 Experience Manager에 몰입형, 옴니채널 및 개인화된 경험을 다양한 상거래 솔루션과 결합하여 구매 여정의 모든 부분에 차별화된 경험을 제공하고 가치 창출 시간을 단축하고 높은 전환을 유도합니다.
 
-## 컨텐츠 및 상거래를 통해 고객이 성공하는 방법
+## 컨텐츠 및 상거래를 통해 고객이 성공하는 방법 {#successful}
 
 온라인 상거래 경험에 대한 고객의 기대감이 지속적으로 증가하고 있는 가운데 브랜드는 차별화된 경험과 더 많은 컨텐츠를 더 빨리 제공해야 한다는 부담을 안고 있습니다. 그러나 콘텐츠 관리 플랫폼을 구현하려면 사용자 정의 구성 요소 및 작성 도구와 같은 기본 요소를 개발하는 데 많은 시간과 예산을 투자하고 유지 관리 및 업그레이드에 드는 비용을 발생시키는 경우가 많습니다. Experience Manager Sites은 기본 제공 상거래 핵심 구성 요소, 제작 도구 및 참조 스토어를 제공하는 Experience Manager as a Cloud Service용 추가 모듈로 컨텐츠 및 상거래 를 제공하여 go-live를 가속화하고 팀 간의 원활한 공동 작업을 가능하게 하며 전환을 유도합니다.
 
@@ -40,7 +40,7 @@ Adobe Experience Manager 컨텐츠 및 상거래를 통해 브랜드는 확장 �
 
 ![CIF 요소](./assets/CIF/CIF_Overview.png)
 
-## 2013년 이후 고객 지원 성공
+## 2013년 이후 고객 지원 성공 {#support}
 
 CIF는 200여 명의 고객을 확보하고 성공적인 콘텐츠 및 상거래 프로젝트를 위한 성공적인 요소로 자리 잡았습니다. IT 및 비즈니스를 위한 가치 제공 최근 고객 프로젝트에서는 CIF를 &quot;Great Accelerator and Large time saver with a much of value&quot;라고 설명합니다.
 
@@ -50,23 +50,23 @@ CIF는 사용자 지정 코드의 필요성을 줄여 브랜드의 출시 시간
 
 CIF 추가 기능은 제품 컨텍스트를 Experience Manager에 가져오고, 마케터가 개발자에 의존하지 않고 Experience Manager에서 쇼퍼블 경험을 만들고 전달할 수 있도록 하는 제품 콘솔 및 제품/카테고리 선택기 등의 작성 도구를 제공합니다. 다음과 같은 이점이 있습니다.
 
-### 경험
+### 경험 {#experiences}
 
 AEM의 강력한 CIF 도구를 사용하면 컨텐츠 작성자는 확장 가능하고 게재에 관계없이 비즈니스 기회를 활용할 수 있는 풍부하고 개인화된 상거래 경험을 빠르게 구축할 수 있습니다.
 
 ![CIF 요소](./assets/CIF/CIF_Product_Experience_Management.png)
 
-### 가치 실현 시간(TTV)
+### 가치 실현 시간(TTV) {#ttv}
 
 을(를) 사용하여 프로젝트 개발 가속화 [AEM 코어 구성 요소](https://www.aemcomponents.dev/), [AEM Venia 참조 상점](https://github.com/adobe/aem-cif-guides-venia), [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), 및 PWA 통합 패턴 (헤드리스 컨텐츠 및 상거래).
 
 CIF는 항상 최신 추가 기능을 사용하여 지속적인 혁신을 위해 구축되어 고객이 새롭고 향상된 기능에 액세스할 수 있도록 해줍니다.
 
-### 통합
+### 통합 {#integrations}
 
 을 사용하여 에코시스템(예: 상거래 솔루션)과 Experience Cloud 연결  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), 마이크로 서비스 기반 PaaS 및 [CIF의 참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
-## 검증된 패턴 및 우수 사례
+## 검증된 패턴 및 우수 사례 {#proven}
 
 CIF는 우수 사례를 기반으로 표준화된 통합 패턴을 통해 고객을 지원합니다. EMC Documentum 은 고객이 현재 성공적인 환경을 구축할 수 있도록 지원하고 고객에게 유연하게 확장하고 향후 요구 사항을 충족할 수 있도록 지원합니다.
 
@@ -76,3 +76,9 @@ CIF는 우수 사례를 기반으로 표준화된 통합 패턴을 통해 고객
    * 실시간 제품 데이터 및 경험 요구 사항
 * 디지털 성숙도가 높아짐에 따라 경험 관리가 필요합니다. CIF에는 추가 IT 노력 없이 점진적으로 통합할 수 있는 제품 경험 관리 기능이 포함되어 있습니다.
 * 옴니채널 준비: CIF는 패턴, 가속기 및 핵심 구성 요소를 사용하여 다양한 터치 포인트 기술(서버측, 하이브리드, 클라이언트측)을 지원합니다.
+
+## 여정 {#journey}
+
+상거래 여정을 따르는 경우 다음 단계로 이동하십시오.
+
+* 다음 [AEM 컨텐츠 작성자 여정](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

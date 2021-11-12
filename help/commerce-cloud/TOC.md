@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content 및 Commerce as a Cloud Service
 breadcrumb-title: AEM Content 및 Commerce 안내서
 user-guide-description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
-source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 38%
+source-wordcount: '140'
+ht-degree: 30%
 
 ---
 
@@ -16,6 +16,13 @@ ht-degree: 38%
 + [AEM Content 및 Commerce](/help/commerce-cloud/home.md)
 + [AEM 컨텐츠 및 Commerce as a Cloud Service에 대한 주요 변경 사항](changes.md)
 + [소개 및 개요](introduction.md)
++ 상거래 여정 {#journeys}
+   + 컨텐츠 작성자 여정 {#author}
+      + [AEM Content and Commerce Content Author 여정](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
+      + [CIF 작성 시작하기](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+      + [제품 카탈로그 페이지 및 템플릿 관리](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+      + [준비된 제품 카탈로그 경험 작성](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+      + [제품 경험 구축](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
 + 통합 {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [타사 상거래 솔루션](integrating/third-party.md)
