@@ -2,7 +2,7 @@
 title: Adobe 컨텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 응용 프로그램을 배포합니다.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 5%
@@ -117,7 +117,7 @@ AEM 인스턴스에 이미 정의된 컨텐츠 패키지를 만듭니다.
 다음 매개 변수 외에 의 설명을 참조하십시오. [공통 매개 변수](#common-parameters) 섹션을 참조하십시오.
 
 | 이름 | 유형 | 필수 | 기본 값 | 설명 |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | `artifact` | `String` | 아니오 | 의 값 `artifactId` Maven 프로젝트의 속성 | 양식의 문자열입니다 `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | 아니오 | 없음 | 설치할 아티팩트의 ID입니다 |
 | `groupId` | `String` | 아니오 | 없음 | 다음 `groupId` 설치할 아티팩트 |
