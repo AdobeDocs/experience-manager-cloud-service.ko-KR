@@ -1,9 +1,9 @@
 ---
 title: 제품 경험 구축
 description: 제품 경험을 구축하는 방법을 알아봅니다.
-source-git-commit: 2d981424d22e2c8d16505eb0cc77c67d5df2bc64
+source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,5 @@ AEM에서 다양한 유형의 컨텐츠를 만들어 제품 카탈로그에 연�
 ## 추가 리소스 {#additional-resources}
 
 * [상거래 경험 작성](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [제품 조종실](/help/commerce-cloud/authoring/product-cockpit.md)
 * [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)
