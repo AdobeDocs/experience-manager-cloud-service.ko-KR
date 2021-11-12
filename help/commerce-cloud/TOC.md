@@ -3,7 +3,7 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content 및 Commerce as a Cloud Service
 breadcrumb-title: AEM Content 및 Commerce 안내서
 user-guide-description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
-source-git-commit: 2bc33096132164b54a8206c69945f3a3fd4227db
+source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 38%
@@ -19,13 +19,13 @@ ht-degree: 38%
 + 통합 {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [타사 상거래 솔루션](integrating/third-party.md)
++ AEM Storefront {#storefront}
+   + [시작하기](getting-started.md)
    + 작성 {#authoring}
       + [상거래 경험](authoring/authoring-commerce-experiences.md)
       + [제품 조종실](authoring/product-cockpit.md)
       + [다중 템플릿 사용](authoring/multi-template-usage.md)
       + [관련 콘텐츠로 제품 데이터 보강](authoring/enrich-product-associated-content.md)
-+ AEM Storefront {#storefront}
-   + [시작하기](getting-started.md)
    + 관리 {#administering}
       + [다중 저장소 설정](configuring/multi-store-setup.md)
       + [SEO용 URL 구성](configuring/advanced-url-configuration.md)

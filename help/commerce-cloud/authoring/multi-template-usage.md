@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ea4009b7ab99ea8fd9def4157302b942794aa283
+source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# 여러 카테고리 및 제품 페이지 만들기
+# 여러 카테고리 및 제품 페이지 만들기 {#multiple}
 
     >[!NOTE]
     >
@@ -31,6 +31,6 @@ ht-degree: 2%
 
 - [AEM CIF 코어 구성 요소 - 다중 카탈로그 페이지 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## 관련 리소스
+## 관련 리소스 {#related}
 
 또한 페이지의 특정 영역을 동적으로 타겟팅하고 동일한 템플릿을 다시 사용할 수도 있습니다. 방법 알아보기 [관련 AEM 콘텐츠으로 제품 데이터 보강](./enrich-product-associated-content.md).

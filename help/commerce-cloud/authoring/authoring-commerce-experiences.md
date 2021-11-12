@@ -1,15 +1,14 @@
 ---
-title: 전자 상거래 경험 작성
+title: 상거래 경험 작성
 description: 작동하는 상거래 경험
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
-# 전자 상거래 경험 작성 {#authoring-commerce-experiences}
+# 상거래 경험 작성 {#authoring-commerce-experiences}
 
 ## 개요 {#overview}
 
@@ -63,9 +62,9 @@ CIF 추가 기능은 전자 상거래 관련 기능으로 AEM 작성을 확장�
 
 자산과 유사하게, 제품을 페이지에 찾을 수 있습니다(제품 티저 구성 요소를 기본값으로 생성) 또는 구성 요소(현재 지원됨 제품 티저 및 제품 회전판).
 
-### RTE를 사용하여 텍스트 필드의 제품 또는 카테고리 페이지에 링크 추가(리치 텍스트 편집기)  {#rte}
+### RTE를 사용하여 텍스트 필드에 링크 추가 {#rte}
 
-CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입니다. 따라서 일반 AEM 페이지용 과 같은 하이퍼링크를 포함할 수 없습니다. CIF는 RTE에 새 작업 &quot;Commerce Links&quot;를 추가합니다. 이 작업은 일반 &quot;하이퍼링크&quot; 작업과 정확히 유사하지만 작성자가 선택기를 사용하여 제품 또는 카테고리를 선택할 수 있습니다.
+CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입니다. 따라서 일반 AEM 페이지용 과 같은 하이퍼링크를 포함할 수 없습니다. CIF는 RTE(리치 텍스트 편집기)에 새 작업 &quot;상거래 링크&quot;를 추가합니다. 이 작업은 일반 &quot;하이퍼링크&quot; 작업과 정확히 유사하지만 작성자가 선택기를 사용하여 제품 또는 카테고리를 선택할 수 있습니다.
 
 ![RTE](../assets/authoring/RTE.png)
 
