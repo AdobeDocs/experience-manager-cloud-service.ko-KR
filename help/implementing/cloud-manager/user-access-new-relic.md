@@ -1,9 +1,9 @@
 ---
 title: New Relic에 대한 사용자 액세스
 description: AEM as a Cloud Service용 New Relic Application Performance Monitoring에 대해 알려면 이 페이지를 따르십시오
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ AEM as a Cloud Service 프로그램과 연결된 New Relic 하위 계정에 액�
    >[!NOTE]
    >New Relic에서 전자 메일을 받지 않는 경우:
    >다음 문서를 확인하십시오. [스팸 필터](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). 해당되는 경우 [이메일 허용 목록에 New Relic 추가](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >지원 티켓에 대한 피드백을 보내주시면 저희 팀이 추가 지원을 해 드리겠습니다
+   >지원 티켓에 대한 피드백을 제공하고 Adobe 지원 팀이 추가 지원을 제공할 것입니다.
 
 1. 등록 프로세스를 완료하고 전자 메일 또는 암호 오류 메시지로 인해 계정에 로그인할 수 없는 경우 [Admin Console](https://adminconsole.adobe.com/).
 
