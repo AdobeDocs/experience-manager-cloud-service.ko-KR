@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
+source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2178'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 ## 백그라운드 작업 및 장기 실행 작업 {#background-tasks-and-long-running-jobs}
 
-백그라운드 작업으로 실행된 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하고 대부분의 가져오기 다시 시작할 수 있어야 합니다. 즉, 코드가 다시 실행되면 처음부터 다시 시작하지 않고 원래 상태로 유지한 곳에서 다시 시작하지 않아야 합니다. 이러한 종류의 코드에 대한 새로운 요구 사항은 아니지만 AEM as a Cloud Service에서 인스턴스가 삭제될 가능성이 높습니다.
+백그라운드 작업으로 실행된 코드는 실행 중인 인스턴스를 언제든지 중지할 수 있다고 간주해야 합니다. 따라서 코드가 복원력이 있어야 하며, 가장 중요한 것은 다시 시작할 수 있어야 합니다. 즉, 코드가 다시 실행되면 처음부터 다시 시작하지 않고 원래 상태로 유지한 곳에서 다시 시작하지 않아야 합니다. 이러한 종류의 코드에 대한 새로운 요구 사항은 아니지만 AEM as a Cloud Service에서 인스턴스가 삭제될 가능성이 높습니다.
 
-이를 최소화하려면 장기실행 작업은 가급적 피할 수 있고, 최소한 재개는 가능하다. 이러한 작업을 실행하는 경우, 적어도 한 번 이상의 보증이 있으므로 중단되면 가능한 한 빨리 재실행됩니다. 그러나 처음부터 다시 시작하지 않아야 할 것이다. 이러한 작업을 예약하기 위해 [Sling 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 스케줄러를 사용하여 한 번 이상 실행할 수 있습니다.
+이를 최소화하려면 장기실행 작업은 가급적 피할 수 있고, 최소한 재개는 가능하다. 이러한 작업을 실행하는 경우, 적어도 한 번 이상의 보증이 있으므로 중단되면 가능한 한 빨리 재실행됩니다. 그러나 처음부터 다시 시작하지 않아야 할 것이다. 이러한 작업을 예약하기 위해 [Sling 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 이렇게 스케줄러를 사용하여 한 번 이상 실행할 수 있습니다.
 
 실행을 보장할 수 없으므로 Sling Commons Scheduler를 예약에 사용하면 안 됩니다. 그것은 단지 일정이 잡힐 것 같습니다.
 
