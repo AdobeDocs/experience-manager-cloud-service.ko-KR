@@ -1,13 +1,13 @@
 ---
 title: 관리 [!DNL Adobe Stock] 자산 [!DNL Assets].
 description: 검색, 가져오기, 라이선스 및 관리 [!DNL Adobe Stock] 내 자산 [!DNL Adobe Experience Manager]. 라이선스가 있는 자산을 다른 디지털 자산으로 사용합니다.
-contentOwner: AG
+contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: ea1b2d58c04937304bddd528a9839bdf627f1ae9
+source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2426'
 ht-degree: 10%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 10%
 
 통합에는 다음이 필요합니다.
 
+* 실행 [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] 인스턴스
 * An [enterprise [!DNL Adobe Stock] 계획](https://stockenterprise.adobe.com/)
 * 기본 Stock 제품 프로필에 대한 Admin Console 권한이 있는 사용자
 * 개발자 콘솔에서 통합을 만들기 위해 개발자 액세스 프로필에 대한 권한이 있는 사용자
@@ -39,7 +40,7 @@ ht-degree: 10%
 * 내에서 서비스 계정(JWT) 인증을 활성화합니다 [!DNL Adobe Developer Console] 주식 권리
 * Credits 및 라이센스 관리를 전 세계적으로 지원 [!DNL Adobe Admin Console]
 
-자격 내에서 [!DNL Adobe Stock] 존재 [!DNL Admin Console]. 여러 프로필을 만들 수 있으며, 이러한 프로필은 Stock 자산의 라이선스를 제공할 수 있는 사용자를 결정합니다. 제품 프로필에 직접 액세스할 수 있는 사용자가 액세스할 수 있습니다 [https://stock.adobe.com/](https://stock.adobe.com/) 및 라이선스 Stock 자산 반면 개발자 액세스를 사용하여 API(통합)를 만들어 두 API 간에 통신을 인증하는 다른 방법이 있습니다 [!DNL Experience Manager] 및 [!DNL Adobe Stock].
+자격 내에서 [!DNL Adobe Stock] 존재 [!DNL Admin Console]. 여러 프로필을 만들 수 있으며, 이러한 프로필은 Stock 자산의 라이선스를 제공할 수 있는 사용자를 결정합니다. 제품 프로필에 직접 액세스할 수 있는 사용자가 액세스할 수 있습니다 [https://stock.adobe.com/](https://stock.adobe.com/) 및 라이선스 Stock 자산 반면 개발자 액세스를 사용하여 통합(API)을 만드는 다른 방법이 있습니다. 이 통합은 다음 사이의 통신을 인증합니다 [!DNL Experience Manager Assets] 및 [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 공개 키(인증서)는 Adobe 개발자 콘솔에서 제품 프로필을 인증합니다.
 
-1. 에 로그인합니다. [!DNL Experience Manager Assets] 작성자 인스턴스. 기본 URL은 `http://localhost:4502/aem/start.html`.
+1. 에 로그인합니다. [!DNL Experience Manager Assets] 클라우드 인스턴스.
 
 1. 에서 **[!UICONTROL 도구]** 패널, 다음 위치로 이동 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**.
 
