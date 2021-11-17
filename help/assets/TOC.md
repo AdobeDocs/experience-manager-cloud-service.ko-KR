@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
+source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 46%
+source-wordcount: '488'
+ht-degree: 45%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 46%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [개요 및 새로운 기능](overview.md)
-+ [ [!DNL Assets] 에 대한 주목할 만한 변경 사항 [!DNL Cloud Service]](assets-cloud-changes.md)
++ [에 대한 주요 변경 사항 [!DNL Assets] 로서의 [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] 아키텍처](architecture.md)
 + [지원되는 파일 형식](file-format-support.md)
 + [자산 마이크로서비스 개요](asset-microservices-overview.md)
-+ [ [!DNL Assets]의 액세스 가능성](accessibility.md)
++ [의 액세스 가능성 [!DNL Assets]](accessibility.md)
 + 디지털 자산을 관리합니다 {#manage}
    + [자산 공유](share-assets.md)
    + [활동 및 DAM 작업 모니터링](assets-activity-history.md)
@@ -31,10 +31,10 @@ ht-degree: 46%
    + [이미지용 스마트 태그](smart-tags.md)
    + [스마트 태그가 비디오 자산에 지정됩니다](smart-tags-video-assets.md)
    + [자산 구성 방법](organize-assets.md)
-   + [자산 사용 [!DNL Adobe Stock] 자산](aem-assets-adobe-stock.md)
+   + [사용 [!DNL Adobe Stock] assets](aem-assets-adobe-stock.md)
    + [컬렉션 관리](manage-collections.md)
    + [메타데이터 개요](manage-metadata.md)
-   + [ [!DNL Adobe Creative Cloud]과 통합](aem-cc-integration-best-practices.md)
+   + [통합 대상 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [메타데이터 추가 또는 편집 방법](meta-edit.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [자산 통찰력 사용 및 구성](assets-insights.md)
@@ -46,8 +46,8 @@ ht-degree: 46%
    + [편집할 자산 체크인 및 체크아웃](check-out-and-submit-assets.md)
    + [자산 Digital Rights Management](drm.md)
    + [자산을 워터마크 지정](watermark-assets.md)
-   + [ [!DNL Creative Cloud] API를 사용하여 자산 처리](cc-api-integration.md)
-+ [!DNL Assets] {#admin} 구성, 관리 및 확장
+   + [자산을 [!DNL Creative Cloud] API](cc-api-integration.md)
++ 구성, 관리 및 확장 [!DNL Assets] {#admin}
    + [개발자 문서 및 API 참조](developer-reference-material-apis.md)
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [이미지 및 비디오 프로필 작업](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -66,9 +66,9 @@ ht-degree: 46%
    + [MediaLibrary 기능](medialibrary.md)
    + [자산 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
 + 자산 공유 및 분배 {#brand-portal}
-   + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](configure-aem-assets-with-brand-portal.md)
-   + [자산을 [!DNL Brand Portal]에 게시](publish-to-brand-portal.md)
-   + [의 자산 [!DNL Brand Portal] 을 게시합니다. [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+   + [구성 [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [자산 게시 대상 [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [다음에서 자산 게시 [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + 콘텐츠 조각 {#content-fragments}
    + [컨텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 게재](content-fragments/content-fragments-graphql.md)
@@ -127,3 +127,7 @@ ht-degree: 46%
    + [콘텐츠의 HTTP2 전달 FAQ](dynamic-media/http2faq.md)
    + [Flash 뷰어 지원 중단](dynamic-media/flash-viewers-eol.md)
    + [DHTML 뷰어 지원 중단](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ 다른 솔루션과 통합 {#integrations}
+   + [통합 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [설치 [!DNL enhanced connector] 대상 [!DNL Workfront]](workfront-connector-install.md)
+   + [구성 [!DNL enhanced connector] 대상 [!DNL Workfront]](workfront-connector-configure.md)
