@@ -2,9 +2,9 @@
 title: 기능 테스트 - Cloud Services
 description: 기능 테스트 - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '946'
 ht-degree: 1%
 
 ---
@@ -119,9 +119,11 @@ UI 테스트를 빌드하고 실행하려면 고객이 코드 리포지토리에
     </plugins>
 ```
 
-이 JAR 파일 내에서 실행할 실제 테스트의 클래스 이름은 IT에서 끝나야 합니다.
+이 JAR 파일 내에서 실행할 실제 테스트의 클래스 이름은 `IT`.
 
-예를 들어 `com.myco.tests.aem.ExampleIT` 이 실행되지만 `com.myco.tests.aem.ExampleTest` 그렇지 않습니다.
+예를 들어 `com.myco.tests.aem.it.ExampleIT` 이 실행되지만 `com.myco.tests.aem.it.ExampleTest` 그렇지 않습니다.
+
+또한 코드 스캔의 검사 검사 시 테스트 코드를 제외하려면 테스트 코드가 이름이 인 패키지 미만이어야 합니다 `it` (적용 범위 제외 필터는 `**/it/**/*.java`).
 
 테스트 클래스는 일반적인 JUnit 테스트여야 합니다. 테스트 인프라는 aem-testing-clients 테스트 라이브러리에서 사용하는 규칙과 호환되도록 설계되고 구성됩니다. 개발자는 이 라이브러리를 사용하고 모범 사례를 따를 것을 적극 권장합니다. 을(를) 참조하십시오. [Git 링크](https://github.com/adobe/aem-testing-clients) 자세한 내용
 
