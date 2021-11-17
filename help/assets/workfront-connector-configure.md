@@ -3,7 +3,7 @@ title: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
+source-git-commit: 6923f3d63bf9b1c24f70e50548b4fb0c13f0cd88
 workflow-type: tm+mt
 source-wordcount: '1637'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Adobe을 사용하려면 [!DNL Adobe Workfront for Experience Manager enhanced connector] 인증된 파트너를 통해 [!DNL Adobe Professional Services]. 인증된 파트너 또는 [!DNL Adobe Professional Services]Adobe에서 지원하지 않습니다.
 >
->Adobe은 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager] 이 커넥터를 이중화합니다. 이러한 경우 고객은 이 커넥터를 사용하는 상태에서 전환해야 할 수 있습니다.
+>Adobe은 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager] 이렇게 하면 커넥터가 이중화됩니다. 이러한 경우 고객은 이 커넥터를 사용하는 상태에서 전환해야 할 수 있습니다.
 
 ## 이벤트 구독 구성 {#event-subscriptions}
 
