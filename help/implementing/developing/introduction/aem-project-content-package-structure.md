@@ -2,9 +2,9 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2877'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ AEM을 사용하려면 **콘텐츠** 및 **코드**: 단일 컨텐츠 패키지�
 
 ### Oak 인덱스 {#oak-indexes}
 
-Oak 인덱스(`/oak:index`)은 특히 AEM as a Cloud Service 배포 프로세스에서 관리됩니다. 새 코드 이미지로 전환하기 전에 Cloud Manager가 새 인덱스가 배포되고 완전히 다시 색인화될 때까지 기다려야 하기 때문입니다.
+Oak 인덱스(`/oak:index`)은 특히 AEM as a Cloud Service 배포 프로세스에서 관리됩니다. 새 코드 이미지로 전환하기 전에 Cloud Manager가 새 색인이 배포되고 완전히 다시 색인화될 때까지 기다려야 하기 때문입니다.
 
 이러한 이유로 런타임 시 Oak 인덱스를 변경할 수 있지만 변경 가능한 패키지를 설치하기 전에 설치할 수 있도록 코드를 배포해야 합니다. 따라서 `/oak:index` 구성은 코드 패키지의 일부이며 컨텐츠 패키지에 포함되지 않습니다 [아래에 설명된 대로](#recommended-package-structure).
 
@@ -94,10 +94,10 @@ Oak 인덱스(`/oak:index`)은 특히 AEM as a Cloud Service 배포 프로세스
 
 ### 컨텐츠 패키지
 
-+ 다음 `ui.content` 패키지에 모든 컨텐츠 및 구성이 포함되어 있습니다. 컨텐츠 패키지 에는 `ui.apps` 또는 `ui.config` 패키지 또는, 즉 `/apps` 또는 `/oak:index`. 의 공통 요소 `ui.content` 패키지에는 다음이 포함되지만 이에 국한되지 않습니다.
++ 다음 `ui.content` 패키지에 모든 컨텐츠 및 구성이 포함되어 있습니다. 컨텐츠 패키지에 `ui.apps` 또는 `ui.config` 패키지 또는, 즉 `/apps` 또는 `/oak:index`. 의 공통 요소 `ui.content` 패키지에는 다음이 포함되지만 이에 국한되지 않습니다.
    + 컨텍스트 인식 구성
       + `/conf`
-   + 필수, 복잡한 컨텐츠 구조(예: Repo Init에 정의된 이전 Baseline 컨텐츠 구조를 기반으로 빌드되고 확장하는 컨텐츠 작성입니다.)
+   + 필수, 복잡한 컨텐츠 구조(예: Repo Init에 정의된 이전 Baseline 컨텐츠 구조를 기반으로 빌드하고 확장하는 컨텐츠 작성입니다.)
       + `/content`, `/content/dam`, 등이 됩니다.
    + 관리되는 태깅 분류
       + `/content/cq:tags`
@@ -106,7 +106,7 @@ Oak 인덱스(`/oak:index`)은 특히 AEM as a Cloud Service 배포 프로세스
 
 ### 컨테이너 패키지
 
-+ 다음 `all` package는 배포 가능한 아티팩트와 OSGI 번들 Jar 파일만 포함하는 컨테이너 패키지입니다. `ui.apps`, `ui.config` 및 `ui.content` 패키지는 embed로 포함됩니다. 다음 `all` 패키지가 아니어야 합니다. **모든 콘텐츠 또는 코드** 대신 하위 패키지 또는 OSGi 번들 Jar 파일에 모든 배포를 리포지토리에 위임합니다.
++ 다음 `all` package는 배포 가능한 아티팩트와 OSGI 번들 Jar 파일만 포함하는 컨테이너 패키지입니다. `ui.apps`, `ui.config` 및 `ui.content` 패키지를 embed로 포함합니다. 다음 `all` 패키지가 아니어야 합니다. **모든 콘텐츠 또는 코드** 대신 하위 패키지 또는 OSGi 번들 Jar 파일에 모든 배포를 리포지토리에 위임합니다.
 
    이제 Maven을 사용하여 패키지가 포함됩니다 [FileVault Package Maven 플러그인의 포함된 ds 구성](#embeddeds), 대신 `<subPackages>` 구성.
 
@@ -458,7 +458,7 @@ scripts=["
 
 ### 컨테이너 패키지에 하위 패키지 포함 {#xml-embeddeds}
 
-에서 `all/pom.xml`를 클릭하고 다음을 추가합니다 `<embeddeds>` 지시문 `filevault-package-maven-plugin` 플러그인 선언입니다. 기억해 **포함하지 않음** 사용 `<subPackages>` 구성이며 여기에 하위 패키지가 포함되므로 `/etc/packages` 보다는 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
+에서 `all/pom.xml`를 추가하고 다음을 추가합니다 `<embeddeds>` 지시문 `filevault-package-maven-plugin` 플러그인 선언입니다. 기억해 **포함하지 않음** 사용 `<subPackages>` 구성이며 여기에 하위 패키지가 포함되므로 `/etc/packages` 보다는 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 
 ```xml
 ...
@@ -573,7 +573,7 @@ scripts=["
 
 ### 패키지 종속성 `ui.apps` 변환 전: `ui.content` 패키지 {#xml-package-dependencies}
 
-에서 `ui.content/pom.xml`를 클릭하고 다음을 추가합니다 `<dependencies>` 지시문 `filevault-package-maven-plugin` 플러그인 선언입니다.
+에서 `ui.content/pom.xml`를 추가하고 다음을 추가합니다 `<dependencies>` 지시문 `filevault-package-maven-plugin` 플러그인 선언입니다.
 
 ```xml
 ...

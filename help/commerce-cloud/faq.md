@@ -2,9 +2,9 @@
 title: AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
 description: AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Adobe은 모든 상거래 관련 데이터에 대한 공식 상거래 API로 Magento의 GraphQL API를 채택했습니다. 따라서 AEM은 GraphQL을 사용하여 I/O Runtime을 통해 Magento 및 모든 상거래 엔진과 상거래 데이터를 교환합니다. 이 GraphQL API는 AEM GraphQL API와 독립적으로 컨텐츠 조각에 액세스합니다.
 
-## 2. 제품 자산(이미지)을 Adobe Commerce(Magento) 관리자를 통해 AEM에서 저장하고 참조할 수 있습니까? Dynamic Media의 자산을 어떻게 사용할 수 있습니까?
+## 2. 제품 자산(이미지)을 Adobe Commerce(Magento) 관리자를 통해 AEM에서 저장 및 참조할 수 있습니까? Dynamic Media의 자산을 어떻게 사용할 수 있습니까?
 
-공식 AEM Assets - Magento 통합을 사용할 수 없습니다. [marketplace](https://marketplace.magento.com/bounteous-dam.html)에 사용할 수 있는 파트너 커넥터가 있습니다.
+공식 AEM Assets - Magento 통합을 사용할 수 없습니다. 에는 파트너 커넥터가 있습니다 [marketplace](https://marketplace.magento.com/bounteous-dam.html).
 
 또는 해결 방법으로, 제품 자산(이미지)을 AEM Assets에 저장할 수 있지만, Magento에 자산 URL을 수동으로 저장해야 합니다. Dynamic Media은 현재 AEM Assets의 일부이며 동일한 방식으로 작동합니다.
 
@@ -31,7 +31,7 @@ Adobe은 모든 상거래 관련 데이터에 대한 공식 상거래 API로 Mag
 
 ## 5. 상거래 솔루션에서 제품 데이터를 업데이트할 때 이것이 AEM에 대한 실시간 푸시 입니까? 아니면 일괄 처리인가요?
 
-AEM Cloud Service과 함께 사용되는 CIF 추가 기능을 사용하면 데이터를 상거래 솔루션에서 AEM 온디맨드(on-demand)로 전달할 수 있습니다. 따라서 상거래 솔루션에 업데이트가 있는 경우 실시간 푸시 또는 배치 프로세스가 아닙니다.
+AEM Cloud Service과 함께 사용되는 CIF 추가 기능을 사용하면 데이터를 상거래 솔루션에서 AEM 온디맨드 로 전달할 수 있습니다. 따라서 상거래 솔루션에 업데이트가 있는 경우 실시간 푸시 또는 배치 프로세스가 아닙니다.
 
 ## 6. CIF를 지원하는 AEM은 어떤 카탈로그 크기를 지원합니까?
 
@@ -47,7 +47,7 @@ PIM 데이터는 GraphQL 요청을 통해 AEM 및 클라이언트에 노출됩�
 
 ## 9. AEM Dispatcher에 대한 캐시 무효화는 AEM 및 Commerce에서 어떻게 작동합니까?
 
-Dispatcher에 캐시된 페이지에 대해 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 주식 등의 동적 정보는 클라이언트측에서 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html) 를 참조하십시오.
+Dispatcher에 캐시된 페이지에 대해 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 주식 등의 동적 정보는 데이터 클라이언트측에서 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 다음을 참조하십시오. [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10. Commerce를 사용하여 AEM 컨텐츠 간에 통합 검색에 대한 권장 사항이 있습니까?
 
@@ -67,7 +67,7 @@ AEM에서 마케팅 관련 데이터 및 컨텐츠를 관리하는 것이 좋습
 
 ## 14. 전체 프레젠테이션 계층에서 AEM을 사용할 때 PCI 규정 준수를 어떻게 보장할 수 있습니까?
 
-추상적인 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션도 카드 소지자 데이터를 보유하거나 전달할 수 없습니다. 이 접근 방식에서는 레벨 3 PCI 규정 준수가 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방법과 같이 PCI를 완벽하게 준수하도록 고려해야 할 추가 사항이 있습니다. Magento PCI 준수에 대한 자세한 내용은 <https://magento.com/pci-compliance> 을 참조하십시오.
+추상적인 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션도 카드 소지자 데이터를 보유하거나 전달할 수 없습니다. 이 접근 방식에서는 레벨 3 PCI 규정 준수가 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방법과 같이 PCI를 완벽하게 준수하도록 고려해야 할 추가 사항이 있습니다. Magento PCI 준수에 대한 자세한 내용은 다음을 참조하십시오. [PCI 규정 준수 요구 사항](https://magento.com/pci-compliance).
 
 ## 15. AEM 및 Magento 클라우드 버전을 사용하는 경우 이 공동 솔루션 PCI를 준수합니까?
 
@@ -75,4 +75,4 @@ AEM에서 마케팅 관련 데이터 및 컨텐츠를 관리하는 것이 좋습
 
 ## 16. I/O Runtime 평가판 라이센스를 요청하려면 어떻게 해야 합니까?
 
-I/O Runtime [여기](https://adobeio.typeform.com/to/obqgRm)을 사용하도록 평가판 라이센스를 요청할 수 있습니다.
+I/O Runtime을 사용하도록 평가판 라이센스를 요청할 수 있습니다 [여기](https://adobeio.typeform.com/to/obqgRm).
