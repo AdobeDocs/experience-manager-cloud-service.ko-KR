@@ -1,19 +1,19 @@
 ---
 title: 상거래 다중 스토어 설정
 description: 여러 스토어 보기를 Magento에서 AEM에 매핑하는 방법을 알아봅니다. 이를 통해 프로젝트에서 다중 임차인 및 다중 언어 사용 사례를 지원할 수 있습니다.
-sub-product: 상거래
+sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: 전자 상거래 통합 프레임워크
+feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 0%
 
 ---
 
@@ -33,13 +33,13 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 저장소 보기에 연
 
 ## 구성 {#configuration}
 
-1. [Magento 웹 사이트, 저장소 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)에 설명된 패턴에 따라 여러 저장소 및 저장소 보기를 구성합니다
+1. 에 설명된 패턴에 따라 여러 저장소 및 저장소 보기를 구성합니다. [Magento 웹 사이트, 스토어 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
 2. AEM 및 Magento 간 연결이 작동하는지 확인합니다.
 
 3. 다음 단계에 따라 CIF Cloud Service 구성의 하위 구성을 만듭니다.
 
-   * AEM에서 도구 -> 일반 -> [구성 브라우저](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)로 이동합니다.
+   * AEM에서 도구 -> 일반 -> 로 이동합니다. [구성 브라우저](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 만든 기본 구성을 선택합니다
    * 위의 2지점에 설명된 단계를 사용하여 새 구성을 만듭니다
 
@@ -52,14 +52,14 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 저장소 보기에 연
 4. AEM 사이트에 하위 구성 할당
 
    * AEM Sites 콘솔으로 이동
-   * 사이트 구조의 지역 또는 언어 루트로 이동합니다(예: )./content/venia/us _또는_ /content/venia/us/en(Venia 샘플 페이지의 경우)
+   * 사이트 구조의 지역 또는 언어 루트로 이동합니다(예: ). /content/venia/us _또는_ Venia 샘플 페이지의 /content/venia/us/en
    * 페이지를 선택하고 페이지 속성을 엽니다
    * 고급 탭을 선택합니다
-   * `Configuration` 섹션에서 단계에서 작성한 구성을 선택합니다
+   * 에서 `Configuration` 섹션에서 3단계에서 작성한 구성을 선택합니다.
 
 ## 추가 리소스
 
 * [Magento 웹 사이트, 스토어 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF 코어 구성 요소 - 다중 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [컨텐츠 재사용:다중 사이트 관리자 및 Live Copy](/help/sites-cloud/administering/msm/overview.md)
+* [컨텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-cloud/administering/msm/overview.md)
