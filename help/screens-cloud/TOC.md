@@ -3,7 +3,7 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as a Cloud Service
 breadcrumb-title: AEM Screens as a Cloud Service
 user-guide-description: AEM Screens as a Cloud Service 이해
-source-git-commit: 34d67344340da51fd3f7b2ec38ca1fb498a5cddb
+source-git-commit: 5e2d3df282addcb42072f577f32e9b8b299af346
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 1%
@@ -42,6 +42,6 @@ ht-degree: 1%
    + [디스플레이에 플레이어 할당](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
 + 코드 제품 기능 사용 {#core-product-features}
    + [비디오에 대한 축소판 지원](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-+ [화면 as a Cloud Service FAQ](/help/screens-cloud/screens-cloud-faqs.md)
 + Screens에서 as a Cloud Service 개발 {#developing-screens-cloud}
    + [화면의 사용자 지정 구성 요소 개발 as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
++ [화면 as a Cloud Service FAQ](/help/screens-cloud/screens-cloud-faqs.md)
