@@ -1,7 +1,7 @@
 ---
 title: CIF 작성 시작하기
 description: CIF 작성 시작하기
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+source-git-commit: e497b5b4439cf91ec7ea698d9bedcb4210802414
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -20,7 +20,7 @@ AEM CIF 작성에 대해 알아봅니다.
 
 ## 목표 {#objective}
 
-이 문서는 콘텐츠 및 상거래 관련 작성에 CIF를 사용하는 방법을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 콘텐츠 및 상거래 관련 작성에 CIF를 사용하는 방법을 이해하는 데 도움이 됩니다. 읽기 후에는 다음을 수행해야 합니다.
 
 * 범용 편집기를 사용하여 CIF 작성의 개념 이해
 * 제품 및 카테고리 선택기를 사용하여 AEM에서 제품 카탈로그 데이터에 액세스하는 방법

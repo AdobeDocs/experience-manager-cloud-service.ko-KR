@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
+source-git-commit: 3ea19210049e49401da892021f098005759542a3
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 7%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 7%
 
 ## 구성 {#configuration}
 
-를 구성하려면 `UrlProvider` 서비스는 SEO 요구 사항에 따라 제공되며 프로젝트가 필요한 경우 &quot;CIF URL 공급자 구성&quot;에 대한 OSGI 구성을 제공해야 합니다.
+를 구성하려면 `UrlProvider` 서비스가 SEO 요구 사항에 따라 수행되며 프로젝트가 필요한 경우 &quot;CIF URL 공급자 구성&quot;에 대한 OSGI 구성을 제공해야 합니다.
 
 >[!NOTE]
 >
-> AEM CIF 코어 구성 요소 의 릴리스 2.0.0부터 URL 공급자 구성에서는 1.x 릴리스에서 제공되는 자유 텍스트 구성 가능 형식 대신 미리 정의된 URL 형식만 제공합니다. 또한 URL에서 데이터를 전달하는 선택기를 사용하여 접미사로 대체되었습니다.
+> AEM CIF 코어 구성 요소 의 릴리스 2.0.0부터 URL 공급자 구성에서는 1.x 릴리스에서 알려진 자유 텍스트 구성 가능 형식 대신 미리 정의된 URL 형식만 제공합니다. 또한 URL에서 데이터를 전달하는 선택기를 사용하여 접미사로 대체되었습니다.
 
 ### 제품 페이지 URL 형식 {#product}
 
@@ -91,9 +91,9 @@ ht-degree: 7%
 
 ## AEM Dispatcher와 결합 {#dispatcher}
 
-또한 URL 다시 쓰기는 AEM Dispatcher HTTP 서버를 `mod_rewrite` 모듈. 다음 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype) 에서는 이미 기본 항목이 포함된 참조 AEM Dispatcher 구성을 제공합니다 [rewrite 규칙](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 생성되었습니다.
+URL 다시 쓰기는 AEM Dispatcher HTTP 서버를 `mod_rewrite` 모듈. 다음 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype) 에서는 이미 기본 항목이 포함된 참조 AEM Dispatcher 구성을 제공합니다 [rewrite 규칙](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 생성되었습니다.
 
-## 예
+## 예 {#example}
 
 다음 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia) 프로젝트에는 제품 및 카테고리 페이지에 대한 사용자 지정 URL의 사용을 보여주는 샘플 구성이 포함되어 있습니다. 이렇게 하면 각 프로젝트에서 SEO 요구 사항에 따라 제품 및 카테고리 페이지에 대한 개별 URL 패턴을 설정할 수 있습니다. CIF의 조합 `UrlProvider` 및 위에 설명된 Sling 매핑이 사용됩니다.
 
@@ -101,7 +101,7 @@ ht-degree: 7%
 >
 >이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 구성 을 참조하십시오.
 
-## 추가 리소스
+## 추가 리소스 {#additional}
 
 * [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
 * [AEM 리소스 매핑](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
