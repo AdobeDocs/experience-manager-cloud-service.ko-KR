@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2192'
 ht-degree: 1%
 
 ---
@@ -156,6 +156,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 최대 크기로 필터링]: 자산의 최대 파일 크기(MB)를 제공합니다.
    * [!UICONTROL Mime 유형 제외]: 수집에서 제외할 MIME 유형의 쉼표로 구분된 목록입니다. 예, `image/jpeg, image/.*, video/mp4`. 자세한 내용은 [모든 지원되는 파일 형식](/help/assets/file-format-support.md).
    * [!UICONTROL Mime 유형 포함]: 수집에 포함할 MIME 유형의 쉼표로 구분된 목록입니다. 자세한 내용은 [모든 지원되는 파일 형식](/help/assets/file-format-support.md).
+   * [!UICONTROL 가져온 후 소스 파일 삭제]: 파일을 가져온 후 원본 데이터 저장소에서 원본 파일을 삭제하려면 이 옵션을 선택합니다 [!DNL Experience Manager].
    * [!UICONTROL 가져오기 모드]: 건너뛰기, 바꾸기 또는 버전 만들기를 선택합니다. 건너뛰기 모드는 기본값이며 이 모드에서는 자산이 이미 존재하는 경우 수집기가 자산을 가져오기 위해 건너뜁니다. 의 의미 보기 [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
    * [!UICONTROL 자산 Target 폴더]: 자산을 가져올 DAM에서 폴더를 가져옵니다. 예, `/content/dam/imported_assets`
    * [!UICONTROL 메타데이터 파일]: 가져올 메타데이터 파일로, CSV 형식으로 제공됩니다. 소스 Blob 위치에 이 CSV 파일을 제공하고 벌크 수집 도구 구성의 경로를 참조합니다.
