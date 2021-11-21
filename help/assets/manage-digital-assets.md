@@ -1,34 +1,34 @@
 ---
 title: 디지털 자산을 관리합니다
-description: 다양한 자산 관리 및 편집 방법에 대해 알아봅니다.
+description: 다양한 자산 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
 workflow-type: tm+mt
-source-wordcount: '4543'
+source-wordcount: '4268'
 ht-degree: 2%
 
 ---
 
 # 자산 관리 {#manage-assets}
 
-이 문서에서는 Adobe Experience Manager Assets의 자산을 관리하고 편집하는 방법에 대해 설명합니다. 컨텐츠 조각을 관리하려면 [컨텐츠 조각](content-fragments/content-fragments.md) 자산을 참조하십시오.
+이 문서에서는 [!DNL Adobe Experience Manager Assets]. 관리하려면 [!DNL Content Fragments]를 참조하십시오. [[!DNL Content Fragments]](content-fragments/content-fragments.md) 자산.
 
 ## 폴더 만들기 {#creating-folders}
 
-자산 컬렉션을 구성할 때(예: 모든 `Nature` 이미지) 폴더를 만들어 함께 유지할 수 있습니다. 폴더를 사용하여 자산을 분류하고 구성할 수 있습니다. [!DNL Experience Manager Assets] 가 더 잘 작동하도록 하려면 폴더에서 자산을 구성할 필요가 없습니다.
+자산 컬렉션을 구성할 때(예: 모두) `Nature` 이미지를 만들 수 있습니다. 폴더를 사용하여 자산을 분류하고 구성할 수 있습니다. [!DNL Experience Manager Assets] 가 더 잘 작동하도록 하려면 폴더에서 자산을 구성할 필요가 없습니다.
 
 >[!NOTE]
 >
->* Marketing Cloud에 공유할 때 `sling:OrderedFolder` 유형의 Assets 폴더를 공유할 수 없습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 주문]을 선택하지 마십시오.
->* Experience Manager은 `subassets` 단어를 폴더 이름으로 사용할 수 없습니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다
+>* 유형의 자산 폴더 공유 `sling:OrderedFolder`은 Marketing Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오 [!UICONTROL 주문] 폴더를 만들 때.
+>* Experience Manager이 사용을 허용하지 않음 `subassets` 폴더 이름으로 word를 지정합니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다
 
 
-1. 새 폴더를 만들 디지털 자산 폴더의 위치로 이동합니다. 메뉴에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 새 폴더]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 제목]** 필드에서 폴더 이름을 입력합니다. 기본적으로 DAM은 폴더 이름으로 제공한 제목을 사용합니다. 폴더를 만들면 기본값을 무시하고 다른 폴더 이름을 지정할 수 있습니다.
+1. 새 폴더를 만들 디지털 자산 폴더의 위치로 이동합니다. 메뉴에서 **[!UICONTROL 만들기]**. 선택 **[!UICONTROL 새 폴더]**.
+1. 에서 **[!UICONTROL 제목]** 필드에서 폴더 이름을 입력합니다. 기본적으로 DAM은 폴더 이름으로 제공한 제목을 사용합니다. 폴더를 만들면 기본값을 무시하고 다른 폴더 이름을 지정할 수 있습니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 폴더가 디지털 자산 폴더에 표시됩니다.
 
 다음(공백으로 구분된 목록) 문자는 지원되지 않습니다.
@@ -38,15 +38,15 @@ ht-degree: 2%
 
 ## 자산 업로드 {#uploading-assets}
 
-[Experience Manager](add-assets.md)에 디지털 자산 추가를 참조하십시오.
+자세한 내용은 [Experience Manager에 디지털 자산 추가](add-assets.md).
 
 ## 중복 자산 검색 {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드하는 경우 [!DNL Experience Manager] 은 중복을 감지하여 사용자에게 알립니다. 중복 감지는 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL AEM Cloud 자산 중복 탐지기]를 Adobe하십시오. [OSGi 구성을 수행하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)을 참조하십시오. 중복 감지는 `jcr:content/metadata/dam:sha1`에 저장된 고유한 `dam:sha1` 값을 기반으로 합니다. 파일 이름이 다르더라도 중복 자산이 검색됩니다.
+DAM 사용자가 저장소에 이미 있는 자산을 한 개 이상 업로드하는 경우, [!DNL Experience Manager] 중복을 감지하고 사용자에게 알립니다. 중복 감지는 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL Adobe AEM Cloud 자산 중복 감지 장치]. 자세한 내용은 [OSGi 구성 수행 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). 중복 검색은 고유한 `dam:sha1` 다음 위치에 저장된 값 `jcr:content/metadata/dam:sha1`. 파일 이름이 다르더라도 중복 자산이 검색됩니다.
 
-사용자 지정 코드에 구성 파일 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json`을 추가할 수 있으며 파일에 다음을 포함할 수 있습니다.
+구성 파일을 추가할 수 있습니다 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 사용자 지정 코드에서 파일에 다음을 포함할 수 있습니다.
 
 ```json
 {
@@ -66,43 +66,43 @@ DAM 사용자가 저장소에 이미 있는 하나 이상의 자산을 업로드
 1. 자산 사용자 인터페이스에서 미리 보려는 자산의 위치로 이동합니다.
 1. 원하는 자산을 탭하여 엽니다.
 
-1. 미리 보기 모드에서 지원되는 이미지 유형](/help/assets/file-format-support.md)에 대해 확대/축소 옵션을 사용할 수 있습니다(대화형 편집 사용).[
+1. 미리 보기 모드에서 확대/축소 옵션을 사용할 수 있습니다 [지원되는 이미지 유형](/help/assets/file-format-support.md) (대화형 편집 사용).
 
-   자산을 확대하려면 `+`(또는 자산의 돋보기를 탭/클릭)을 탭/클릭합니다. 축소하려면 `-` 을 탭/클릭합니다. 확대하면 패닝하여 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표는 원래 보기로 돌아갑니다.
+   자산을 확대하려면 탭/클릭합니다 `+` (또는 자산에서 돋보기를 탭/클릭합니다.) 축소하려면 탭/클릭합니다 `-`. 확대하면 패닝하여 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표는 원래 보기로 돌아갑니다.
 
-   **[!UICONTROL 재설정]**&#x200B;을 눌러 보기를 원래 크기로 재설정합니다.
+   탭 **[!UICONTROL 재설정]** 보기를 원래 크기로 재설정하려면 다음을 수행하십시오.
 
 ## 속성 편집 {#editing-properties}
 
 1. 메타데이터를 편집할 자산의 위치로 이동합니다.
 
-1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 탭/클릭하여 자산 속성을 봅니다. 또는 자산 카드에서 **[!UICONTROL 속성]** 빠른 작업을 선택합니다.
+1. 자산을 선택하고 탭/클릭합니다 **[!UICONTROL 속성]** 도구 모음에서 자산 속성 보기 또는 을(를) 선택합니다 **[!UICONTROL 속성]** 자산 카드의 빠른 작업.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. [!UICONTROL 속성] 페이지에서 다양한 탭에서 메타데이터 속성을 편집합니다. 예를 들어, **[!UICONTROL 기본]** 탭에서 제목, 설명 등을 편집합니다.
+1. 에서 [!UICONTROL 속성] 페이지에서 다양한 탭에서 메타데이터 속성을 편집합니다. 예를 들어 **[!UICONTROL 기본]** 탭에서 제목, 설명 등을 편집합니다.
 
    >[!NOTE]
    >
-   >[!UICONTROL 속성] 페이지의 레이아웃 및 사용 가능한 메타데이터 속성은 기본 메타데이터 스키마에 따라 다릅니다. [!UICONTROL 속성] 페이지의 레이아웃을 수정하는 방법에 대한 자세한 내용은 [메타데이터 스키마](/help/assets/metadata-schemas.md)를 참조하십시오.
+   >의 레이아웃 [!UICONTROL 속성] 페이지 및 사용 가능한 메타데이터 속성은 기본 메타데이터 스키마에 따라 다릅니다. 레이아웃을 수정하는 방법을 배우려면 [!UICONTROL 속성] 페이지를 참조하십시오. [메타데이터 스키마](/help/assets/metadata-schemas.md).
 
-1. 자산의 활성화를 위한 특정 날짜/시간을 예약하려면 **[!UICONTROL 설정 시간]** 필드 옆에 있는 날짜 선택기를 사용하십시오.
+1. 자산의 활성화를 위한 특정 날짜/시간을 예약하려면, **[!UICONTROL 시간]** 필드.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 특정 기간 후에 자산을 비활성화하려면 **[!UICONTROL 해제 시간]** 필드 옆에 있는 날짜 선택기에서 비활성화 날짜/시간을 선택합니다. 비활성화 날짜는 자산의 활성화 날짜보다 이후여야 합니다. [!UICONTROL 해제 시간] 이후에는 자산 및 해당 표현물을 Assets 웹 인터페이스나 HTTP API를 통해 사용할 수 없습니다.
+1. 특정 기간 후에 자산을 비활성화하려면 다음 항목 옆의 날짜 선택기에서 비활성화 날짜/시간을 선택합니다 **[!UICONTROL 해제 시간]** 필드. 비활성화 날짜는 자산의 활성화 날짜보다 이후여야 합니다. 다음 이후 [!UICONTROL 해제 시간], 자산 및 해당 표현물은 Assets 웹 인터페이스 또는 HTTP API를 통해 사용할 수 없습니다.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. **[!UICONTROL 태그]** 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 `Enter` 키를 선택합니다. 새 태그가 [!DNL Experience Manager]에 저장됩니다.
+1. 에서 **[!UICONTROL 태그]** 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 `Enter` 키. 새 태그가에 저장됩니다. [!DNL Experience Manager].
 
    YouTube을 게시하려면 태그가 필요하며 YouTube에 대한 링크가 있어야 합니다(적절한 링크를 찾을 수 있는 경우).
 
    >[!NOTE]
    >
-   >태그를 만들려면 CRX 저장소의 `/content/cq:tags/default` 경로에 쓰기 권한이 있어야 합니다.
+   >태그를 만들려면 다음에 쓰기 권한이 있어야 합니다. `/content/cq:tags/default` CRX 저장소의 경로입니다.
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭/클릭합니다.
+1. 탭/클릭 **[!UICONTROL 저장 및 닫기]**.
 
 1. 자산 사용자 인터페이스로 이동합니다. 제목, 설명 및 태그를 포함한 편집된 메타데이터 속성은 카드 보기의 자산 카드 및 목록 보기의 관련 열 아래에 표시됩니다.
 
@@ -128,65 +128,65 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 특정 자산 사본에 고유한 몇 가지 속성은 전달되지 않습니다. 예를 들면 다음과 같습니다.
 
-* 자산 ID, 생성 날짜 및 시간, 버전 및 버전 내역. 이러한 속성 중 일부는 `jcr:uuid`, `jcr:created` 및 `cq:name` 속성으로 표시됩니다.
+* 자산 ID, 생성 날짜 및 시간, 버전 및 버전 내역. 이러한 속성 중 일부는 속성으로 표시됩니다 `jcr:uuid`, `jcr:created`, 및 `cq:name`.
 
 * 작성 시간 및 참조된 경로는 각 자산 및 해당 표현물에 대해 고유합니다.
 
 다른 속성 및 메타데이터 정보는 유지됩니다. 자산을 복사할 때 부분 복사본이 만들어지지 않습니다.
 
-1. Assets UI에서 자산을 한 개 이상 선택한 다음 도구 모음에서 **[!UICONTROL 복사]** 아이콘을 탭/클릭합니다. 또는 자산 카드에서 **[!UICONTROL 복사]** ![copy_icon](assets/copy_icon.png) 빠른 작업을 선택합니다.
+1. Assets UI에서 자산을 한 개 이상 선택한 다음, **[!UICONTROL 복사]** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다. 또는 을(를) 선택합니다 **[!UICONTROL 복사]** ![copy_icon](assets/copy_icon.png) 자산 카드에서 빠른 작업 을 참조하십시오.
 
    >[!NOTE]
    >
-   >[!UICONTROL 복사] 빠른 작업을 사용하는 경우 한 번에 하나의 자산만 복사할 수 있습니다.
+   >를 사용하는 경우 [!UICONTROL 복사] 빠른 작업, 한 번에 하나의 자산만 복사할 수 있습니다.
 
 1. 자산을 복사할 위치로 이동합니다.
 
    >[!NOTE]
    >
-   >자산을 동일한 위치에 복사하는 경우 [!DNL Experience Manager]은(는) 자동으로 변형된 이름이 생성됩니다. 예를 들어 `Square` 라는 자산을 복사하면 [!DNL Experience Manager] 이 자동으로 해당 사본의 제목을 `Square1`(으)로 생성합니다.
+   >자산을 같은 위치에 복사하는 경우 [!DNL Experience Manager] 변형된 이름을 자동으로 생성합니다. 예를 들어, 라는 이름의 자산을 복사하는 경우 `Square`, [!DNL Experience Manager] 복사본 제목을 자동으로 생성 `Square1`.
 
-1. 도구 모음에서 **[!UICONTROL 붙여넣기]** 자산 아이콘을 클릭합니다. 자산이 이 위치에 복사됩니다.
+1. 을(를) 클릭합니다. **[!UICONTROL 붙여넣기]** 도구 모음의 자산 아이콘. 자산이 이 위치에 복사됩니다.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
    >[!NOTE]
    >
-   >**[!UICONTROL 붙여넣기]** 아이콘은 붙여넣기 작업이 완료될 때까지 도구 모음에서 사용할 수 있습니다.
+   >다음 **[!UICONTROL 붙여넣기]** 아이콘은 붙여넣기 작업이 완료될 때까지 도구 모음에서 사용할 수 있습니다.
 
 ### 자산 이동 또는 이름 변경 {#moving-or-renaming-assets}
 
 1. 이동할 자산의 위치로 이동합니다.
 
-1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 이동]** 아이콘 ![move_icon](assets/move_icon.png)을 탭/클릭합니다.
+1. 자산을 선택하고 자산을 탭/클릭합니다. **[!UICONTROL 이동]** 아이콘 ![move_icon](assets/move_icon.png) 를 클릭합니다.
 
 1. 자산 이동 마법사에서 다음 중 하나를 수행합니다.
 
-   * 자산을 이동한 후 자산의 이름을 지정합니다. 그런 다음 **[!UICONTROL 다음]**&#x200B;을 탭/클릭하여 진행합니다.
+   * 자산을 이동한 후 자산의 이름을 지정합니다. 그런 다음 탭/클릭합니다 **[!UICONTROL 다음]** 계속 진행합니다.
 
-   * **[!UICONTROL 취소]**&#x200B;를 탭/클릭하여 프로세스를 중지합니다.
+   * 탭/클릭 **[!UICONTROL 취소]** 프로세스를 중지합니다.
    >[!NOTE]
    >
    >* 새 위치에 해당 이름의 자산이 없는 경우 자산에 대해 동일한 이름을 지정할 수 있습니다. 하지만 자산을 동일한 이름의 자산이 있는 위치로 이동하는 경우 다른 이름을 사용해야 합니다. 동일한 이름을 사용하는 경우 변형된 이름이 자동으로 생성됩니다. 예를 들어, 자산의 이름이 Square인 경우, 시스템은 해당 사본의 이름 Square1을 생성합니다.
    >* 이름을 바꿀 때 파일 이름에 공백을 사용할 수 없습니다.
 
 
-1. **[!UICONTROL 대상 선택]** 대화 상자에서 다음 중 하나를 수행합니다.
+1. 설정 **[!UICONTROL 대상 선택]** 대화 상자에서 다음 중 하나를 수행합니다.
 
-   * 자산의 새 위치로 이동한 후 **[!UICONTROL 다음]**&#x200B;을 탭/클릭하여 진행하십시오.
+   * 자산의 새 위치로 이동한 후 탭/클릭합니다 **[!UICONTROL 다음]** 계속 진행합니다.
 
-   * **[!UICONTROL 뒤로]**&#x200B;를 탭/클릭하여 **[!UICONTROL 이름 바꾸기]** 화면으로 돌아갑니다.
+   * 탭/클릭 **[!UICONTROL 뒤로]** 로 돌아가기 **[!UICONTROL 이름 변경]** 화면.
 
-1. 이동되는 자산에 참조 페이지, 자산 또는 컬렉션이 있는 경우 **[!UICONTROL 참조 조정]** 탭이 **[!UICONTROL 대상 선택]** 탭 옆에 나타납니다.
+1. 이동되는 자산에 참조 페이지, 자산 또는 컬렉션이 있는 경우, **[!UICONTROL 참조 조정]** 탭 옆에 표시됩니다 **[!UICONTROL 대상 선택]** 탭.
 
-   **[!UICONTROL 참조 조정]** 화면에서 다음 중 하나를 수행합니다.
+   에서 다음 중 하나를 수행합니다 **[!UICONTROL 참조 조정]** 화면:
 
-   * 새 세부 정보에 따라 조정할 참조를 지정한 다음 **[!UICONTROL 이동]**&#x200B;을 탭/클릭하여 진행합니다.
+   * 새 세부 사항을 기반으로 조정할 참조를 지정한 다음 탭/클릭합니다 **[!UICONTROL 이동]** 계속 진행합니다.
 
-   * **[!UICONTROL 조정]** 열에서 자산에 대한 참조를 선택/선택 취소합니다.
-   * **[!UICONTROL 뒤로]**&#x200B;를 탭/클릭하여 **[!UICONTROL 대상 선택]** 화면으로 돌아갑니다.
+   * 에서 **[!UICONTROL 조정]** 열에서 자산에 대한 참조를 선택/선택 취소합니다.
+   * 탭/클릭 **[!UICONTROL 뒤로]** 로 돌아가기 **[!UICONTROL 대상 선택]** 화면.
 
-   * **[!UICONTROL 취소]**&#x200B;를 탭/클릭하여 이동 작업을 중지합니다.
+   * 탭/클릭 **[!UICONTROL 취소]** 이동 작업을 중지하려면 다음을 수행하십시오.
 
    참조를 업데이트하지 않으면 이 참조는 자산의 이전 경로를 계속 가리킵니다. 참조를 조정하면 새 자산 경로로 업데이트됩니다.
 
@@ -198,45 +198,45 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. GlobalNav 아이콘을 탭/클릭하고 목록에서 **[!UICONTROL 표현물]**&#x200B;을 선택합니다.
+1. GlobalNav 아이콘을 탭/클릭하고 을 선택합니다 **[!UICONTROL 표현물]** 참조하십시오.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. **[!UICONTROL 표현물]** 패널에서 자산에 대해 생성된 표현물 목록을 확인합니다.
+1. 에서 **[!UICONTROL 표현물]** 패널에서 자산에 대해 생성된 표현물 목록을 확인합니다.
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >기본적으로 [!DNL Experience Manager Assets] 은 미리 보기 모드에서 자산의 원래 렌디션을 표시하지 않습니다. 관리자의 경우 오버레이를 사용하여 [!DNL Assets]을 구성하여 미리 보기 모드에서 원래 렌디션을 표시할 수 있습니다.
+   >기본적으로 [!DNL Experience Manager Assets] 미리 보기 모드에서는 자산의 원래 표현물이 표시되지 않습니다. 관리자는 오버레이를 사용하여 다음을 구성할 수 있습니다 [!DNL Assets] 를 클릭하여 미리 보기 모드에서 원래 렌디션을 표시합니다.
 
 1. 변환을 보거나 삭제할 변환을 선택합니다.
 
    **표현물 삭제**
 
-   **[!UICONTROL 표현물]** 패널에서 표현물을 선택한 다음, 도구 모음에서 **[!UICONTROL 표현물 삭제]** 아이콘을 탭/클릭합니다. 자산 처리가 완료된 후에는 렌디션을 일괄적으로 삭제할 수 없습니다. 개별 자산의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 자산의 경우 특정 표현물을 삭제하거나 자산을 삭제하고 삭제된 자산을 다시 업로드하도록 [!DNL Experience Manager]을 사용자 지정할 수 있습니다.
+   에서 렌디션을 선택합니다 **[!UICONTROL 표현물]** 패널, 탭/클릭 **[!UICONTROL 표현물 삭제]** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다. 자산 처리가 완료된 후에는 렌디션을 일괄적으로 삭제할 수 없습니다. 개별 자산의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 자산의 경우 사용자 지정할 수 있습니다 [!DNL Experience Manager] 특정 표현물을 삭제하거나 자산을 삭제하고 삭제된 자산을 다시 업로드하려면 다음을 수행하십시오.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **새 변환 업로드**
 
-   자산에 대한 자산 세부 사항 페이지로 이동하고 도구 모음에서 **[!UICONTROL 표현물 추가]** 아이콘을 탭/클릭하여 자산에 대한 새 표현물을 업로드합니다.
+   자산에 대한 자산 세부 사항 페이지로 이동하고 **[!UICONTROL 표현물 추가]** 아이콘을 클릭하여 해당 자산에 대한 새 렌디션을 업로드합니다.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
    >[!NOTE]
    >
-   >**[!UICONTROL 표현물]** 패널에서 표현물을 선택하면 도구 모음이 컨텍스트를 변경하고 표현물과 관련된 작업만 표시합니다. 표현물 업로드 아이콘과 같은 옵션이 표시되지 않습니다. 도구 모음에서 이러한 옵션을 보려면 자산의 세부 사항 페이지로 이동합니다.
+   >에서 변환을 선택하는 경우 **[!UICONTROL 표현물]** 패널에서는 도구 모음이 컨텍스트를 변경하고 표현물과 관련된 작업만 표시합니다. 표현물 업로드 아이콘과 같은 옵션이 표시되지 않습니다. 도구 모음에서 이러한 옵션을 보려면 자산의 세부 사항 페이지로 이동합니다.
 
    이미지 또는 비디오 자산의 세부 사항 페이지에 표시할 표현물에 대한 차원을 구성할 수 있습니다. 지정하는 차원에 따라 Assets에 정확히 일치하거나 가장 가까운 차원이 있는 표현물이 표시됩니다.
 
-   이미지의 표현물 차원을 자산 세부 사항 수준에서 구성하려면 `renditionpicker` 노드(`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)를 오버레이하고 width 속성의 값을 구성합니다. 이미지 크기에 따라 자산 세부 사항 페이지에서 렌디션을 사용자 지정할 수 있도록 속성 **[!UICONTROL 크기(Long)를 KB]** 너비 대신 구성합니다. 크기 기반 사용자 지정의 경우 속성 `preferOriginal`은 일치하는 표현물의 크기가 원본보다 큰 경우 원본에 기본 설정을 지정합니다.
+   이미지의 표현물 차원을 자산 세부 사항 수준에서 구성하려면 `renditionpicker` 노드 (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)을 설정하고 width 속성의 값을 구성합니다. 속성 구성 **[!UICONTROL 크기(긴)(KB)]** 폭 대신 이미지 크기에 따라 자산 세부 사항 페이지에서 렌디션을 사용자 지정할 수 있습니다. 크기 기반 사용자 지정의 경우 속성은 `preferOriginal` 일치하는 표현물의 크기가 원본보다 큰 경우 원본에 기본 설정을 지정합니다.
 
-   마찬가지로 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`을 오버레이하여 주석 페이지 이미지를 사용자 지정할 수 있습니다.
+   마찬가지로 오버레이하여 주석 페이지 이미지를 사용자 지정할 수 있습니다 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   비디오 자산에 대한 표현물 차원을 구성하려면 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker` 위치에 있는 CRX 저장소의 `videopicker` 노드로 이동하여 노드를 오버레이한 다음 적절한 속성을 편집합니다.
+   비디오 자산에 대한 표현물 차원을 구성하려면 다음 위치로 이동합니다 `videopicker` 노드 아래의 CRX 저장소에 있는 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`를 오버레이한 다음 해당 속성을 편집합니다.
 
    >[!NOTE]
    >
@@ -250,15 +250,15 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 삭제할 자산의 위치로 이동합니다.
 
-1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 삭제]** ![delete_icon](assets/do-not-localize/delete-icon.png)을 클릭합니다.
+1. 자산을 선택하고 을(를) 클릭합니다 **[!UICONTROL 삭제]** ![delete_icon](assets/do-not-localize/delete-icon.png) 를 클릭합니다.
 
 1. 확인 대화 상자에서 다음을 클릭합니다.
 
-   * **** 작업을 중지하려면 취소하십시오
+   * **[!UICONTROL 취소]** 작업을 중지하려면
    * 해당 작업을 승인하려면 **[!UICONTROL 삭제]**
 
       * 자산에 참조가 없으면, 자산이 삭제됩니다.
-      * 자산에 참조가 있으면, 오류 메시지에 **[!UICONTROL 하나 이상의 자산이 참조되었습니다]**&#x200B;라고 표시됩니다. **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
+      * 자산에 참조가 있으면, 오류 메시지에 다음 내용이 표시됩니다 **[!UICONTROL 하나 이상의 자산을 참조했습니다.]**. **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
 
    >[!NOTE]
    >
@@ -270,138 +270,139 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 자산 다운로드 {#download-assets}
 
-[자산 다운로드 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)를 참조하십시오.
+자세한 내용은 [자산 다운로드 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## 자산 게시 또는 게시 취소 {#publish-assets}
 
 1. 게시하려는 자산 또는 게시 환경에서 제거하려는 자산 폴더의 위치(게시 취소)로 이동합니다.
 
-1. 게시 또는 게시 취소할 자산 또는 폴더를 선택하고 도구 모음에서 **[!UICONTROL 게시 관리]** ![게시 관리 옵션](assets/do-not-localize/globe-publication.png) 옵션을 선택합니다. 또는 빠르게 게시하려면 도구 모음에서 **[!UICONTROL 빠른 게시]** 옵션을 선택합니다. 게시하려는 폴더에 빈 폴더가 포함되어 있으면 빈 폴더가 게시되지 않습니다.
+1. 게시 또는 게시 취소할 자산 또는 폴더를 선택하고 을 선택합니다 **[!UICONTROL 게시 관리]** ![게시 관리 옵션](assets/do-not-localize/globe-publication.png) 옵션 을 클릭합니다. 또는 빠르게 게시하려면 **[!UICONTROL 빠른 게시]** 옵션 을 클릭합니다. 게시하려는 폴더에 빈 폴더가 포함되어 있으면 빈 폴더가 게시되지 않습니다.
 
-1. 필요에 따라 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]** 옵션을 선택합니다.
+1. 을(를) 선택합니다 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]** 선택 사항.
 
    ![게시 취소 작업](assets/unpublish_action.png)
    *그림: 게시 및 게시 취소 옵션 및 예약 옵션.*
 
-1. **[!UICONTROL 지금]**&#x200B;을 선택하여 자산을 바로 사용하거나 **[!UICONTROL 나중에]**&#x200B;를 선택하여 작업을 예약하십시오. **[!UICONTROL 나중에]** 옵션을 선택하는 경우 날짜 및 시간을 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 선택 **[!UICONTROL 지금]** 자산을 바로 사용하거나 **[!UICONTROL 나중에]** 를 눌러 작업을 예약합니다. 을(를) 선택하는 경우 날짜 및 시간을 선택합니다 **[!UICONTROL 나중에]** 선택 사항입니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
 1. 게시할 때 자산이 다른 자산을 참조하는 경우 해당 참조가 마법사에 나열됩니다. 마지막 게시 이후 게시 취소되거나 수정된 참조만 표시됩니다. 게시할 참조를 선택합니다.
 
-1. 게시를 취소할 때 자산이 다른 자산을 참조하는 경우 게시를 취소하려는 참조를 선택합니다. **[!UICONTROL 게시 취소]**&#x200B;를 클릭합니다. 확인 대화 상자에서 **[!UICONTROL 취소]**&#x200B;를 클릭하여 작업을 중지하거나 **[!UICONTROL 게시 취소]**&#x200B;를 클릭하여 지정된 날짜에 자산의 게시를 취소할지 확인합니다.
+1. 게시를 취소할 때 자산이 다른 자산을 참조하는 경우 게시를 취소하려는 참조를 선택합니다. 클릭 **[!UICONTROL 게시 취소]**. 확인 대화 상자에서 **[!UICONTROL 취소]** 작업을 중지하려면 를 클릭하거나 **[!UICONTROL 게시 취소]** 지정된 날짜에 자산의 게시를 취소할지 확인합니다.
 
 자산 또는 폴더의 게시 또는 게시 취소와 관련된 다음 제한 사항과 팁을 이해합니다.
 
-* [!UICONTROL 게시 관리] 옵션은 복제 권한이 있는 사용자 계정에서만 사용할 수 있습니다.
+* 다음 옵션 [!UICONTROL 게시 관리] 복제 권한이 있는 사용자 계정에만 이 기능을 사용할 수 있습니다.
 * 복잡한 자산의 게시를 취소하는 동안 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 게시를 취소하지 마십시오.
 * 빈 폴더가 게시되지 않습니다.
 * 처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 표현물이 없습니다. 처리가 완료될 때까지 기다렸다가 처리가 완료되면 자산을 게시하거나 다시 게시하십시오.
 
 ## 폐쇄된 사용자 그룹 {#closed-user-group}
 
-닫힌 사용자 그룹(CUG)은 [!DNL Experience Manager]에서 게시된 특정 자산 폴더에 대한 액세스를 제한하는 데 사용됩니다. 폴더에 대한 CUG를 만드는 경우 폴더(폴더 자산 및 하위 폴더 포함)에 대한 액세스가 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
+CUG(폐쇄된 사용자 그룹)를 사용하여 [!DNL Experience Manager]. 폴더에 대한 CUG를 만드는 경우 폴더(폴더 자산 및 하위 폴더 포함)에 대한 액세스가 할당된 구성원 또는 그룹으로만 제한됩니다. 폴더에 액세스하려면 보안 자격 증명을 사용하여 로그인해야 합니다.
 
 CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더에 대한 로그인 페이지를 구성할 수도 있습니다.
 
 1. 자산 UI에서 폴더를 선택하고 도구 모음에서 속성 아이콘을 탭/클릭하여 속성 페이지를 표시합니다.
-1. **[!UICONTROL 권한]** 탭에서 **[!UICONTROL 닫힌 사용자 그룹]**&#x200B;에 구성원 또는 그룹을 추가합니다.
+1. 에서 **[!UICONTROL 권한]** 탭에서 **[!UICONTROL 폐쇄된 사용자 그룹]**.
 
    ![add_user](assets/add_user.png)
 
-1. 사용자가 폴더에 액세스할 때 로그인 화면을 표시하려면 **[!UICONTROL 활성화]** 옵션을 선택합니다. 그런 다음 [!DNL Experience Manager]에서 로그인 페이지의 경로를 선택하고 변경 내용을 저장합니다.
+1. 사용자가 폴더에 액세스할 때 로그인 화면을 표시하려면 **[!UICONTROL 활성화]** 선택 사항입니다. 그런 다음 의 로그인 페이지 경로를 선택합니다 [!DNL Experience Manager], 그리고 변경 사항을 저장합니다.
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >로그인 페이지의 경로를 지정하지 않은 경우 [!DNL Experience Manager]은 게시 인스턴스에 기본 로그인 페이지를 표시합니다.
+   >로그인 페이지의 경로를 지정하지 않으면 [!DNL Experience Manager] 게시 인스턴스에 기본 로그인 페이지를 표시합니다.
 
 1. 폴더를 게시한 다음 게시 인스턴스에서 해당 폴더에 액세스해 보십시오. 로그인 화면이 표시됩니다.
-1. CUG 멤버인 경우 보안 자격 증명을 입력합니다. [!DNL Experience Manager] 이 사용자를 인증하면 폴더가 표시됩니다.
+1. CUG 멤버인 경우 보안 자격 증명을 입력합니다. 폴더는 다음에 표시됩니다 [!DNL Experience Manager] 인증을 받습니다.
 
 ## 자산 검색 {#search-assets}
 
 자산을 검색하는 것은 디지털 자산 관리 시스템의 용도의 핵심입니다. 이를 통해 크리에이티브, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 수행할 수 있습니다.
 
-가장 적절한 자산을 검색하고 사용하기 위한 단순, 고급 및 사용자 지정 검색에 대해서는 [에서 자산 검색 [!DNL Experience Manager]](/help/assets/search-assets.md)을 참조하십시오.
+가장 적절한 자산을 검색하고 사용하기 위한 간단한 고급 및 사용자 지정 검색에 대해서는 를 참조하십시오. [의 자산 검색 [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## 빠른 작업 {#quick-actions}
 
 빠른 작업 아이콘은 한 번에 한 자산에 사용할 수 있습니다. 장치에 따라 다음 작업을 수행하여 빠른 작업 아이콘을 표시합니다.
 
-* 터치 장치: 길게 터치하세요. 예를 들어, iPad에서 빠른 작업이 표시되도록 자산을 길게 탭할 수 있습니다.
+* 터치 장치: 길게 터치하세요. 예를 들어 iPad에서 자산을 길게 탭하여 빠른 작업이 표시됩니다.
 * 비터치 장치: 포인터를 가져갑니다. 예를 들어, 데스크탑 장치에서 포인터를 자산 축소판 위에 두면 빠른 작업 모음이 표시됩니다.
 
-## 이미지 편집 {#editing-images}
+<!-- Hiding this topic via cqdoc-18707
 
-[!DNL Experience Manager Assets] 인터페이스의 편집 도구를 사용하여 이미지 자산에 대해 작은 편집 작업을 수행할 수 있습니다. 이미지에서 자르기, 회전, 뒤집기 및 기타 편집 작업을 수행할 수 있습니다. 이미지 맵을 자산에 추가할 수도 있습니다.
+## Edit images {#editing-images}
+
+The editing tools in the [!DNL Experience Manager Assets] interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
 
 >[!NOTE]
 >
->일부 구성 요소의 경우 전체 화면 모드에는 추가 옵션을 사용할 수 있습니다.
+>For some components, the Full Screen mode has additional options available.
 
-1. 다음 중 하나를 수행하여 편집 모드에서 자산을 엽니다.
+1. Do one of the following to open an asset in edit mode:
 
-   * 자산을 선택한 다음, 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭/탭합니다.
-   * 카드 보기의 자산에 나타나는 **[!UICONTROL 편집]** 아이콘을 탭/클릭합니다.
-   * 자산 페이지의 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 탭/클릭합니다.
+    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
+    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. 이미지를 자르려면 **자르기** 아이콘을 탭/클릭합니다.
+1. To crop the image, tap/click the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. 목록에서 원하는 옵션을 선택합니다. 자르기 영역은 선택한 옵션에 따라 이미지에 나타납니다. **자유 손** 옵션을 사용하면 종횡비 제한 없이 이미지를 자를 수 있습니다.
+1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
-1. 잘릴 영역을 선택하고 이미지에서 크기를 조정하거나 위치를 변경합니다.
-1. **완료** 아이콘(오른쪽 상단)을 사용하여 이미지를 자릅니다. **완료** 아이콘을 클릭하면 표현물 재생도 트리거됩니다.
+1. Select the area to be cropped, and resize or reposition it on the image.
+1. Use the **Finish** icon (top right corner) to crop the image. Clicking the **Finish** icon also triggers the regeneration of renditions.
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
-1. 오른쪽 상단에 있는 **실행 취소** 및 **다시 실행** 아이콘을 사용하여 잘리지 않은 이미지로 되돌리거나 잘려진 이미지를 각각 유지합니다.
+1. Use the **Undo** and **Redo** icons on the top right to revert to the uncropped image or retain the cropped image, respectively.
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. 적절한 회전 아이콘을 탭/클릭하여 이미지를 시계 방향 또는 시계 반대 방향으로 회전합니다.
+1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. 이미지를 수평 또는 수직으로 뒤집으려면 적절한 대칭 이동 아이콘을 탭/클릭합니다.
+1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. **완료** 아이콘을 탭/클릭하여 변경 사항을 저장합니다.
+1. Tap/click the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 >[!NOTE]
 >
->BMP, GIF, PNG 및 JPEG 파일 형식에 대해 이미지 편집이 지원됩니다.
-
-<!-- You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md). -->
+>Image editing is supported for BMP, GIF, PNG, and JPEG files formats.
 
 >[!NOTE]
 >
->TXT 파일을 편집하려면 구성 관리자에서 **Day CQ Link Externalizer**&#x200B;를 설정합니다.
+>To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
+-->
 
 ## 타임라인 {#timeline}
 
 타임라인을 사용하면 자산에 대한 활성 워크플로우, 댓글/주석, 활동 로그 및 버전과 같은 선택한 항목에 대한 다양한 이벤트를 볼 수 있습니다.
 
-![자산에 대한 타임라인 항목을 ](assets/sort_timeline.gif)
-*정렬합니다. 그림: 자산에 대한 타임라인 항목 정렬*
+![자산에 대한 타임라인 항목 정렬](assets/sort_timeline.gif)
+*그림: 자산에 대한 타임라인 항목 정렬*
 
 >[!NOTE]
 >
->[컬렉션 콘솔](/help/assets/manage-collections.md#navigate-the-collections-console)에서 **[!UICONTROL 모두 표시]** 목록은 주석 및 워크플로우만 볼 수 있는 옵션을 제공합니다. 또한 타임라인은 콘솔에 나열된 최상위 수준의 컬렉션에만 표시됩니다. 컬렉션 내부를 탐색하는 경우에는 표시되지 않습니다.
+>에서 [컬렉션 콘솔](/help/assets/manage-collections.md#navigate-the-collections-console), **[!UICONTROL 모두 표시]** 목록에는 댓글 및 워크플로우만 볼 수 있는 옵션이 있습니다. 또한 타임라인은 콘솔에 나열된 최상위 수준의 컬렉션에만 표시됩니다. 컬렉션 내부를 탐색하는 경우에는 표시되지 않습니다.
 
 >[!NOTE]
 >
->타임라인에는 컨텐츠 조각에 관련된 여러 [옵션이 포함되어 있습니다](content-fragments/content-fragments.md).
+>타임라인에 여러 항목이 포함되어 있습니다 [컨텐츠 조각별 옵션](content-fragments/content-fragments.md).
 
-## 주석 달기 {#annotating}
+## 자산에 주석 달기 {#annotating}
 
 주석은 이미지나 비디오에 추가된 주석 또는 설명 노트입니다. 주석은 마케터가 자산에 대한 공동 작업을 수행하고 피드백을 남길 수 있는 기능을 제공합니다.
 
@@ -409,17 +410,17 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 >[!NOTE]
 >
->컨텐츠 조각의 경우 [주석은 조각 편집기에 만들어집니다](content-fragments/content-fragments.md).
+>컨텐츠 조각의 경우, [주석은 조각 편집기에서 작성됩니다](content-fragments/content-fragments.md).
 
 1. 주석을 추가할 자산의 위치로 이동합니다.
-1. 다음 중 하나에서 **[!UICONTROL 주석]** 아이콘을 탭/클릭합니다.
+1. 을 탭/클릭합니다. **[!UICONTROL 주석 달기]** 아이콘 사용:
 
    * [빠른 작업](#quick-actions)
    * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
-1. 타임라인 하단의 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는 이미지에서 영역을 표시하고 **[!UICONTROL 주석 추가]** 대화 상자에서 주석을 추가합니다.
+1. 에 댓글 추가 **[!UICONTROL 댓글]** 타임라인 하단의 상자. 또는 이미지에서 영역을 표시하고 **[!UICONTROL 주석 추가]** 대화 상자.
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -429,11 +430,11 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 >[!NOTE]
 >
->관리자가 아닌 사용자의 경우 사용자에게 CRXDE의 `/home`에 대한 읽기 권한이 있는 경우에만 제안이 표시됩니다.
+>관리자가 아닌 사용자의 경우 사용자에게 읽기 권한이 있는 경우에만 제안이 표시됩니다. `/home` 입니다.
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. 주석을 추가한 후 **[!UICONTROL 추가]**&#x200B;를 클릭하여 저장합니다. 노트에 대한 알림이 Aaron에게 전송됩니다.
+1. 주석을 추가한 후 **[!UICONTROL 추가]** 저장하려고 노트에 대한 알림이 Aaron에게 전송됩니다.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -441,18 +442,18 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
    >
    >주석을 저장하기 전에 여러 주석을 추가할 수 있습니다.
 
-1. **[!UICONTROL 닫기]**&#x200B;를 탭/클릭하여 주석 모드를 종료합니다.
-1. 알림을 보려면 Aaron MacDonald의 자격 증명으로 자산에 로그인하고 **[!UICONTROL 알림]** 아이콘을 클릭하여 알림을 확인합니다.
+1. 탭/클릭 **[!UICONTROL 닫기]** 주석 모드를 종료하려면 다음을 수행하십시오.
+1. 알림을 보려면 Aaron MacDonald의 자격 증명으로 Assets에 로그인하고 을 클릭합니다. **[!UICONTROL 알림 을 참조하십시오]** 아이콘을 클릭하여 알림을 볼 수 있습니다.
 
    >[!NOTE]
    >
-   >비디오 자산에 주석을 추가할 수도 있습니다. 비디오에 주석을 추가하는 동안 플레이어는 프레임에 주석을 달 수 있도록 일시 중지합니다. 자세한 내용은 [비디오 자산 관리](manage-video-assets.md)를 참조하십시오.
+   >비디오 자산에 주석을 추가할 수도 있습니다. 비디오에 주석을 추가하는 동안 플레이어는 프레임에 주석을 달 수 있도록 일시 중지합니다. 자세한 내용은 [비디오 자산 관리](manage-video-assets.md).
 
-1. 사용자를 구분하기 위해 다른 색상을 선택하려면 프로필 아이콘을 클릭/탭하고 **[!UICONTROL 내 환경 설정]**&#x200B;을 클릭/탭합니다.
+1. 사용자를 구분하기 위해 다른 색상을 선택하려면 프로필 아이콘을 클릭/탭하고 클릭/탭합니다 **[!UICONTROL 내 환경 설정]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   **[!UICONTROL 주석 색상]** 상자에서 원하는 색상을 지정한 후 **[!UICONTROL Accept]**&#x200B;를 클릭/탭합니다.
+   에서 원하는 색상을 지정합니다 **[!UICONTROL 주석 색상]** 상자를 열고 클릭/탭하기 **[!UICONTROL 수락]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -468,41 +469,41 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 >
 >여러 주석을 선택하는 경우 사용자 인터페이스에 최신 주석이 표시됩니다.
 >
->주석 처리된 자산을 PDF로 인쇄하는 경우에만 다중 선택이 지원됩니다.
+>다중 선택은 주석 처리된 자산을 PDF으로 인쇄하기 위해서만 지원됩니다.
 
 1. 자산에 대해 저장된 주석을 보려면 자산의 위치로 이동하고 자산의 자산 페이지를 엽니다.
 
-1. GlobalNav 아이콘을 탭/클릭하고 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
+1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 타임라인]** 참조하십시오.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. 타임라인의 **[!UICONTROL 모두 표시]** 목록에서 **[!UICONTROL 주석]**&#x200B;을 선택하여 주석을 기반으로 결과를 필터링합니다.
+1. 에서 **[!UICONTROL 모두 표시]** 타임라인의 목록에서 **[!UICONTROL 댓글]** 주석을 기반으로 결과를 필터링합니다.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   **[!UICONTROL 타임라인]** 패널에서 주석을 탭/클릭하여 이미지에 해당하는 주석을 봅니다.
+   에서 댓글 탭/클릭 **[!UICONTROL 타임라인]** 패널에서 이미지에 해당하는 주석을 볼 수 있습니다.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   특정 설명을 삭제하려면 **[!UICONTROL 삭제]**&#x200B;를 탭/클릭합니다.
+   탭/클릭 **[!UICONTROL 삭제]**&#x200B;를 눌러 특정 설명을 삭제합니다.
 
 ### 주석 인쇄 {#printing-annotations}
 
-자산에 주석이 있거나 검토 워크플로우가 있었던 경우, 오프라인 검토를 위해 주석과 함께 자산을 인쇄하고 상태를 PDF 파일로 검토할 수 있습니다.
+자산에 주석이 있거나 검토 워크플로우가 있었던 경우, 오프라인 검토를 위해 PDF 파일로 주석 및 검토 상태와 함께 자산을 인쇄할 수 있습니다.
 
 주석이나 검토 상태만 인쇄하도록 선택할 수도 있습니다.
 
 >[!NOTE]
 >
->주석 처리된 자산을 PDF로 인쇄하는 동안 여러 주석을 선택할 수 있습니다.
+>주석 처리된 자산을 PDF으로 인쇄하는 동안 여러 주석을 선택할 수 있습니다.
 
-주석 및 검토 상태를 인쇄하려면 **[!UICONTROL 인쇄]** 아이콘을 탭/클릭하고 마법사의 지침을 따르십시오. 자산에 하나 이상의 주석 또는 검토 상태가 지정된 경우에만 **[!UICONTROL 인쇄]** 아이콘이 도구 모음에 표시됩니다.
+주석 및 검토 상태를 인쇄하려면 **[!UICONTROL 인쇄]** 아이콘을 클릭하고 마법사의 지침을 따릅니다. 다음 **[!UICONTROL 인쇄]** 아이콘이 자산에 하나 이상의 주석 또는 검토 상태가 지정된 경우에만 도구 모음에 표시됩니다.
 
 1. 자산 UI에서 자산에 대한 미리 보기 페이지를 엽니다.
 1. 다음 중 하나를 수행하십시오.
 
    * 모든 주석 및 검토 상태를 인쇄하려면 3단계를 건너뛰고 4단계로 바로 이동합니다.
-   * 특정 주석을 인쇄하고 상태를 검토하려면 [타임라인](/help/assets/manage-digital-assets.md#timeline)을 연 다음 3단계로 이동합니다.
+   * 특정 주석을 인쇄하고 상태를 검토하려면 [타임라인](/help/assets/manage-digital-assets.md#timeline) 그리고 3단계로 가십시오.
 
 1. 특정 주석을 인쇄하려면 타임라인에서 주석을 선택합니다.
 
@@ -512,27 +513,27 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
-1. 도구 모음에서 **[!UICONTROL 인쇄]** 아이콘을 탭/클릭합니다.
+1. 을 탭/클릭합니다. **[!UICONTROL 인쇄]** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다.
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. [인쇄] 대화 상자에서 PDF에 주석/검토 상태를 표시할 위치를 선택합니다. 예를 들어, 인쇄된 이미지가 포함된 페이지의 오른쪽 상단에 주석/상태를 인쇄하려면 **왼쪽 위** 설정을 사용합니다. 기본적으로 선택됩니다.
+1. 인쇄 대화 상자에서 PDF에 주석/검토 상태를 표시할 위치를 선택합니다. 예를 들어, 인쇄된 이미지가 포함된 페이지의 오른쪽 상단에 주석/상태를 인쇄하려면 **왼쪽 위** 설정 기본적으로 선택됩니다.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   인쇄된 PDF에 주석/상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. 인쇄된 자산과 별도의 페이지에 주석/상태를 표시하려면 **[!UICONTROL 다음 페이지]**&#x200B;를 선택합니다.
+   인쇄 PDF에 주석/상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. 인쇄된 자산과 별개인 페이지에 주석/상태를 표시하려면 **[!UICONTROL 다음 페이지]**.
 
-1. **[!UICONTROL 인쇄]**&#x200B;를 클릭합니다. 2단계에서 선택한 옵션에 따라 생성된 PDF에 지정된 위치의 주석/상태가 표시됩니다. 예를 들어, **왼쪽 위** 설정을 사용하여 주석 및 검토 상태를 모두 인쇄하도록 선택하면 생성된 출력이 여기에 표시된 PDF 파일과 유사합니다.
+1. 클릭 **[!UICONTROL 인쇄]**. 2단계에서 선택한 옵션에 따라 생성된 PDF에 지정된 위치에 주석/상태가 표시됩니다. 예를 들어, **왼쪽 위** 설정하는 경우 생성된 출력은 여기에 표시된 PDF 파일과 유사합니다.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. 오른쪽 상단에 있는 옵션을 사용하여 PDF를 다운로드하거나 인쇄합니다.
+1. 오른쪽 상단의 옵션을 사용하여 PDF을 다운로드하거나 인쇄합니다.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   글꼴 색상, 크기 및 스타일, 주석 및 상태의 배경색 등 렌더링된 PDF 파일의 모양을 수정하려면 구성 관리자에서 **[!UICONTROL 주석 PDF 구성]**&#x200B;을 열고 원하는 옵션을 수정합니다. 예를 들어, 승인됨 상태의 표시 색상을 변경하려면 해당 필드에서 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 [주석 달기](/help/assets/manage-digital-assets.md#annotating)를 참조하십시오.
+   렌더링된 PDF 파일의 모양(예: 글꼴 색상, 크기 및 스타일, 주석 및 상태의 배경색)을 수정하려면 **[!UICONTROL 주석 PDF 구성]** 구성 관리자에서 원하는 옵션을 수정합니다. 예를 들어, 승인됨 상태의 표시 색상을 변경하려면 해당 필드에서 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 [주석 달기](/help/assets/manage-digital-assets.md#annotating).
 
-   렌더링된 PDF 파일로 돌아가서 새로 고칩니다. 새로 고친 PDF는 사용자가 변경한 내용을 반영합니다.
+   렌더링된 PDF 파일로 돌아가서 새로 고칩니다. 새로 고친 PDF은 사용자가 변경한 내용을 반영합니다.
 
 ## 에셋 버전 관리 {#asset-versioning}
 
@@ -542,7 +543,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 * 다른 애플리케이션에서 이미지를 수정하고 자산에 업로드합니다. 이미지의 버전이 만들어지므로 원본 이미지를 덮어쓰지 않습니다.
 * 자산의 메타데이터를 편집합니다.
-* [!DNL Experience Manager] 데스크탑 앱을 사용하여 기존 자산을 체크아웃하고 변경 사항을 저장합니다. 자산이 저장될 때마다 새 버전이 만들어집니다.
+* 사용 [!DNL Experience Manager] 기존 자산을 체크아웃하고 변경 사항을 저장하는 데스크탑 앱. 자산이 저장될 때마다 새 버전이 만들어집니다.
 
 워크플로우를 통해 자동 버전 지정을 활성화할 수도 있습니다. 자산에 대한 버전을 만들면 메타데이터 및 표현물이 버전과 함께 저장됩니다. 표현물은 동일한 이미지의 대체 요소(예: 업로드된 JPEG 파일의 PNG 표현물)로 렌더링됩니다.
 
@@ -554,23 +555,23 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 1. 버전을 만들 자산의 위치로 이동하고, 해당 자산 페이지를 열려면 해당 자산을 탭/클릭합니다.
 
-1. GlobalNav 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
+1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 타임라인]** 메뉴 아래의 제품에서 사용할 수 있습니다.
 
    ![타임라인](assets/timeline.png)
 
-1. 하단의 **[!UICONTROL 작업]** (화살표) 아이콘을 탭/클릭하여 자산에서 수행할 수 있는 사용 가능한 작업을 봅니다.
+1. 을 탭/클릭합니다. **[!UICONTROL 작업]** 맨 아래에 있는 (화살표) 아이콘을 클릭하여 자산에서 수행할 수 있는 사용 가능한 작업을 확인합니다.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. **[!UICONTROL 다른 버전으로 저장]** 을 탭/클릭하여 자산 버전을 만듭니다.
+1. 탭/클릭 **[!UICONTROL 다른 버전으로 저장]** 를 입력하여 자산의 버전을 만들 수 있습니다.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. 레이블과 설명을 추가한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭하여 버전을 만듭니다. 또는 **취소**&#x200B;를 탭/클릭하여 작업을 종료합니다.
+1. 레이블과 주석을 추가한 다음 **[!UICONTROL 만들기]** 버전을 만들려면 또는 탭/클릭합니다 **취소** 를 눌러 작업을 종료합니다.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. 새 버전을 보려면 자산 세부 사항 페이지 또는 자산 UI에서 타임라인의 **[!UICONTROL 모두 표시]** 목록을 열고 **[!UICONTROL 버전]**&#x200B;을 선택합니다. 자산에 대해 만들어진 모든 버전은 타임라인 탭 아래에 나열됩니다. 드롭다운 화살표를 클릭하고 목록에서 **[!UICONTROL 버전]**&#x200B;을 선택하여 버전을 표시하도록 목록을 필터링할 수 있습니다.
+1. 새 버전을 보려면 **[!UICONTROL 모두 표시]** 자산 세부 사항 페이지 또는 자산 UI에서 타임라인에 나열한 다음 **[!UICONTROL 버전]**. 자산에 대해 만들어진 모든 버전은 타임라인 탭 아래에 나열됩니다. 드롭다운 화살표를 클릭하고 을 선택하여 버전을 표시하도록 목록을 필터링할 수 있습니다 **[!UICONTROL 버전]** 참조하십시오.
 
    ![version_option](assets/versions_option.png)
 
@@ -582,8 +583,8 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
    ![save_version](assets/save_version.png)
 
-1. 버전에 대한 미리 보기를 생성하려면 **[!UICONTROL 버전 미리 보기]**&#x200B;를 탭/클릭합니다.
-1. 자산 UI에 이 버전을 표시하려면 **[!UICONTROL 이 버전으로 되돌리기]**&#x200B;를 선택합니다.
+1. 버전에 대한 미리 보기를 생성하려면 를 탭/클릭합니다 **[!UICONTROL 버전 미리 보기]**.
+1. 자산 UI에 이 버전을 표시하려면 **[!UICONTROL 이 버전으로 되돌리기]**.
 1. 두 버전 간에 비교하려면 자산의 자산 페이지로 이동한 후 현재 버전과 비교할 버전을 탭/클릭합니다.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
@@ -595,19 +596,19 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 ### 자산에서 워크플로우 시작 {#starting-a-workflow-on-an-asset}
 
 1. 워크플로우를 시작할 자산의 위치로 이동하고 자산을 탭/클릭하여 자산 페이지를 엽니다.
-1. GlobalNav 아이콘을 탭/클릭하고 메뉴에서 **[!UICONTROL 타임라인]**&#x200B;을 선택하여 타임라인을 표시합니다.
+1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 타임라인]** 메뉴에서 타임라인을 표시합니다.
 
    ![타임라인-1](assets/timeline-1.png)
 
-1. 맨 아래에 있는 **[!UICONTROL 작업]** (화살표) 아이콘을 탭/클릭하여 자산에 사용할 수 있는 작업 목록을 엽니다.
+1. 을 탭/클릭합니다. **[!UICONTROL 작업]** 맨 아래에 있는 (화살표) 아이콘을 사용하여 자산에 사용할 수 있는 작업 목록을 엽니다.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. 목록에서 **[!UICONTROL 워크플로우 시작]**&#x200B;을 탭/클릭합니다.
+1. 탭/클릭 **[!UICONTROL 워크플로우 시작]** 참조하십시오.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. **[!UICONTROL 워크플로우 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
+1. 에서 **[!UICONTROL 워크플로우 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -615,7 +616,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. **[!UICONTROL 시작]**&#x200B;을 탭/클릭한 다음 대화 상자에서 **[!UICONTROL 계속]**&#x200B;을 탭/클릭하여 확인합니다. 워크플로우의 각 단계는 타임라인에 이벤트로 표시됩니다.
+1. 탭/클릭 **[!UICONTROL 시작]** 그런 다음 탭/클릭합니다. **[!UICONTROL 계속]** 을 클릭하여 레코드 추가를 확인합니다. 워크플로우의 각 단계는 타임라인에 이벤트로 표시됩니다.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -626,15 +627,15 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 * 컬렉션에는 이러한 자산에 대한 참조만 포함되므로 다른 위치의 자산이 포함될 수 있습니다. 각 컬렉션은 자산의 참조 무결성을 유지합니다.
 * 편집, 보기 등을 포함하여 권한 수준이 다른 여러 사용자와 컬렉션을 공유할 수 있습니다.
 
-컬렉션 관리에 대한 자세한 내용은 [컬렉션 관리](/help/assets/manage-collections.md)를 참조하십시오.
+컬렉션 관리에 대한 자세한 내용은 [컬렉션 관리](/help/assets/manage-collections.md).
 
 ## 데스크탑 앱 또는 Adobe 자산 링크에서 자산을 볼 때 만료된 자산 숨기기 {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] 데스크탑 앱을 사용하면 Windows 또는 Mac 데스크탑에서 DAM 저장소에 액세스할 수 있습니다. Adobe 자산 링크를 사용하면 지원되는 [!DNL Creative Cloud] 데스크탑 애플리케이션 내에서 자산에 액세스할 수 있습니다.
+[!DNL Experience Manager] 데스크탑 앱을 사용하면 Windows 또는 Mac 데스크탑에서 DAM 저장소에 액세스할 수 있습니다. Adobe 자산 링크를 사용하면 지원되는 내에서 자산에 액세스할 수 있습니다 [!DNL Creative Cloud] 데스크탑 응용 프로그램.
 
-[!DNL Experience Manager] 사용자 인터페이스 내에서 자산을 검색할 때 만료된 자산이 표시되지 않습니다. 데스크탑 앱 및 자산 링크에서 자산을 검색할 때 만료된 자산을 보고, 검색하고, 가져올 수 없도록 관리자는 다음 구성을 수행할 수 있습니다. 구성은 관리자 권한에 관계없이 모든 사용자에 대해 작동합니다.
+내에서 자산을 검색할 때 [!DNL Experience Manager] 사용자 인터페이스에서는 만료된 자산이 표시되지 않습니다. 데스크탑 앱 및 자산 링크에서 자산을 검색할 때 만료된 자산을 보고, 검색하고, 가져올 수 없도록 관리자는 다음 구성을 수행할 수 있습니다. 구성은 관리자 권한에 관계없이 모든 사용자에 대해 작동합니다.
 
-다음 CURL 명령을 실행합니다. 자산에 액세스하는 사용자에 대해 `/conf/global/settings/dam/acpapi/`에 대한 읽기 액세스 권한을 확인합니다. `dam-user` 그룹에 속하는 사용자는 기본적으로 권한이 있습니다.
+다음 CURL 명령을 실행합니다. 읽기 액세스 설정 `/conf/global/settings/dam/acpapi/` 자산에 액세스하는 사용자용. 에 속하는 사용자 `dam-user` 그룹에는 기본적으로 권한이 있습니다.
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -646,4 +647,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-자세한 내용은 데스크탑 앱을 사용하여 [DAM 자산을 검색하는 방법](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 자산 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)를 사용하는 방법을 참조하십시오.
+자세한 내용은 방법 을 참조하십시오. [데스크탑 앱을 사용하여 DAM 자산 찾아보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 자산 링크 사용 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).

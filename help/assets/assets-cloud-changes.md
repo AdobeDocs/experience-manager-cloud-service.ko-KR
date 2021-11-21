@@ -4,16 +4,16 @@ description: 에 대한 주요 변경 사항 [!DNL Adobe Experience Manager Asse
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: e07529f73a3c0b39cb51afb4f3545a9094ce48ef
+source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1026'
 ht-degree: 5%
 
 ---
 
 # 에 대한 주요 변경 사항 [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#notable-changes}
 
-[!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 은 Experience Manager 프로젝트를 관리할 많은 새로운 기능과 가능성을 제공합니다. 두 사이에는 많은 차이점이 있다 [!DNL Experience Manager Assets] 온-프레미스 또는 Adobe 관리 서비스로 호스팅 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. 이 문서에서는 [!DNL Assets] 기능.
+[!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 에서는 Experience Manager 프로젝트를 관리할 많은 새로운 기능과 가능성을 제공합니다. 두 사이에는 많은 차이점이 있다 [!DNL Experience Manager Assets] 온-프레미스 또는 Adobe 관리 서비스로 호스팅 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. 이 문서에서는 [!DNL Assets] 기능.
 
 와 비교되는 주요 차이점 [!DNL Experience Manager] 6.5는 다음 영역에 있습니다.
 
@@ -54,18 +54,19 @@ ht-degree: 5%
 | [중복된 자산 탐지](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 다르게 작동합니다. | 자세한 내용은 [작동 방식 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [배치만(FPO) 표현물의 경우](/help/assets/configure-fpo-renditions.md) | 다르게 작동합니다. | 처리 프로필은 자산 마이크로서비스를 사용하여 FPO 변환을 생성합니다. Experience Manager 6.5에서는 [!DNL ImageMagick] 은 표현물을 생성하는 데 사용할 수 있습니다. |
 | 메타데이터 원본에 쓰기 | 다르게 작동합니다. | 기본적으로 비활성화됨. 필요한 경우 해당 워크플로우 런처를 활성화합니다. 원본에 쓰기 작업은 자산 마이크로서비스에 의해 처리됩니다. |
-| 패키지 관리자를 사용하여 업로드한 자산 처리 | 수작업 필요. | 를 사용하여 수동으로 재처리 **[!UICONTROL 자산 재처리]** 작업. |
+| 패키지 관리자를 사용하여 업로드한 자산 처리 | 수동 개입 필요 | 를 사용하여 수동으로 재처리 **[!UICONTROL 자산 재처리]** 작업. |
 | MIME 유형 탐지 | 지원되지 않음. | 확장 없이 또는 잘못된 확장이 있는 디지털 자산을 업로드하는 경우 원하는 대로 처리되지 않을 수 있습니다. 사용자는 DAM에서 확장 없이 이진 파일을 저장할 수 있습니다. 자세한 내용은 [의 MIME 유형 탐지 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | 복합 자산에 대한 하위 자산 생성 | 지원되지 않음. | 주석과 같은 종속 사용 사례는 이행되지 않을 수 있습니다. 자세한 내용은 [하위 자산 만들기 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 시작 시 일부 파일 형식의 PDF 미리 보기를 사용할 수 있습니다 [2021.7.0 릴리스](/help/release-notes/release-notes-cloud/release-notes-current.md). |
-| 홈 페이지 | 지원되지 않음. | 자세한 내용은 [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| ZIP 보관소에서 자산 추출 | 지원되지 않음. | 자세한 내용은 [의 ZIP 추출 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
-| 자산 등급 | 지원되지 않음. | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
-| 콘텐츠 처리 필터 | 지원되지 않음. | 의 일반적인 사용 사례 `ContentDispositionFilter` 는 관리자가 구성할 수 있도록 하는 것입니다 [!DNL Experience Manager] HTML 파일을 제공하고 PDF 파일을 다운로드하는 대신 인라인으로 엽니다. 게시 인스턴스에서 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성자 인스턴스에서 Adobe은 컨텐츠 처리 헤더를 수정하는 것을 권장하지 않습니다. 자세한 내용은 [의 콘텐츠 처리 필터 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
-| [보고서 다운로드](/help/assets/asset-reports.md) | 지원되지 않음. | 현재, 자산 사용을 알리는 다운로드 보고서를 사용할 수 없습니다. 자세한 내용은 [보고서 다운로드 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
-| 제품 사진 촬영 템플릿 | 지원되지 않음. | 자세한 내용은 [제품 사진 촬영 템플릿 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
-| 스마트 번역 | 지원되지 않음. | [스마트 번역](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 에서 지원되지 않음 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
-| WebDAV | 지원되지 않음. | 대체 요소에 대해서는 [[!DNL Creative Cloud] 통합](/help/assets/aem-cc-integration-best-practices.md) 또는 [개발자 참조 자료](/help/assets/developer-reference-material-apis.md). |
-| 클래식 UI | 지원되지 않음. | 터치 사용 사용자 인터페이스만 사용할 수 있습니다. |
+| 이미지 편집 | 지원되지 않음 | 자산 편집은 Experience Manager as a Cloud Service에서 지원되지 않습니다. 자세한 내용은 [Experience Manager 6.5에서 작동 방식](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
+| 홈 페이지 | 지원되지 않음 | 자세한 내용은 [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| ZIP 보관소에서 자산 추출 | 지원되지 않음 | 자세한 내용은 [의 ZIP 추출 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
+| 자산 등급 | 지원되지 않음 | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
+| 콘텐츠 처리 필터 | 지원되지 않음 | 의 일반적인 사용 사례 `ContentDispositionFilter` 는 관리자가 구성할 수 있도록 하는 것입니다 [!DNL Experience Manager] HTML 파일을 제공하고 PDF 파일을 다운로드하는 대신 인라인으로 엽니다. 게시 인스턴스에서 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성자 인스턴스에서 Adobe은 컨텐츠 처리 헤더를 수정하는 것을 권장하지 않습니다. 자세한 내용은 [의 콘텐츠 처리 필터 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
+| [보고서 다운로드](/help/assets/asset-reports.md) | 지원되지 않음 | 현재, 자산 사용을 알리는 다운로드 보고서를 사용할 수 없습니다. 자세한 내용은 [보고서 다운로드 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
+| 제품 사진 촬영 템플릿 | 지원되지 않음 | 자세한 내용은 [제품 사진 촬영 템플릿 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
+| 스마트 번역 | 지원되지 않음 | [스마트 번역](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 에서 지원되지 않음 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
+| WebDAV | 지원되지 않음 | 대체 요소에 대해서는 [[!DNL Creative Cloud] 통합](/help/assets/aem-cc-integration-best-practices.md) 또는 [개발자 참조 자료](/help/assets/developer-reference-material-apis.md). |
+| 클래식 UI | 지원되지 않음 | 터치 사용 사용자 인터페이스만 사용할 수 있습니다. |
 
 >[!MORELIKETHIS]
 >
