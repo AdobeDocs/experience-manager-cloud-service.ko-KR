@@ -2,9 +2,9 @@
 title: TXT 레코드 추가
 description: 사용자 지정 도메인 이름 추가
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
+source-git-commit: 26ac0c63e4fba167206f43f64f046452c922c10e
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,18 @@ TXT 레코드를 만들기 전에 아래 단계를 따라야 합니다.
 도메인 확인을 시작하면 Cloud Manager에서 확인을 위해 사용할 이름과 TXT 값을 제공합니다. 지정된 이름 및 값을 사용하여 도메인의 DNS 서버에 TXT 레코드를 추가합니다.
 
 1. 도메인 호스트에 로그인하고 DNS 레코드 섹션을 참조하십시오.
-1. `_aemverification.[yourdomainname]` 을 이름으로 추가하고 TXT 값을 표시되는 그대로 추가합니다.
+1. 추가 `_aemverification.[yourdomainname]` 를 이름으로 추가하고 TXT 값을 표시되는 그대로 추가합니다.
 아래 표에 나와 있는 예를 참조하십시오.
 
 | 도메인 | 이름 | TXT 값 |
 |--- |--- |---|
-| `example.com` | `_aemverification` | Cloud Manager UI에 표시되며 도메인 및 Cloud Manager 환경에만 제공됩니다 |
-| `test.example.com` | `_aemverification` | Cloud Manager UI에 표시되며 도메인 및 Cloud Manager 환경에만 제공됩니다 |
+| `example.com` | `_aemverification.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. `Ex:adobe-aem-verification=example.com/[program]/[env]/..` |
+| `test.example.com`<br>`www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
 
-완료되면 다음을 실행하여 결과를 확인할 수 있습니다.`dig _aemverification.[yourdomainname] -t txt`
+완료되면 다음을 실행하여 결과를 확인할 수 있습니다. `dig _aemverification.[yourdomainname] -t txt`.
 예상되는 결과에 Cloud Manager UI에 제공된 TXT 값이 표시됩니다.
 
-예를 들어 도메인이 `example.com`인 경우 다음을 실행합니다.`dig TXT _aemverification.example.com -t txt`.
+예를 들어 도메인이 `example.com`를 실행한 후 다음을 실행합니다. `dig TXT _aemverification.example.com -t txt`.
 
 >[!NOTE]
->또한 다양한 [DNS 조회 도구](https://www.ultratools.com/tools/dnsLookup)가 있습니다. Google DoH를 사용하여 TXT 레코드 항목을 조회하고 TXT 레코드가 누락되었거나 잘못된 것인지 확인할 수 있습니다.
+>다양합니다 [DNS 조회 도구](https://www.ultratools.com/tools/dnsLookup), Google DoH 를 사용하여 TXT 레코드 항목을 조회하고 TXT 레코드가 누락되었는지 확인할 수 있습니다.
