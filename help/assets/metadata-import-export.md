@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '661'
 ht-degree: 4%
 
 ---
@@ -24,10 +24,9 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 자�
 >
 >사용자 지정 네임스페이스에 메타데이터를 가져오려면 먼저 네임스페이스를 등록합니다.
 
-1. 자산 사용자 인터페이스로 이동하고 탭/클릭합니다 **[!UICONTROL 만들기]** 를 클릭합니다.
-1. 메뉴에서 **[!UICONTROL 메타데이터]**.
-1. 에서 **[!UICONTROL 메타데이터 가져오기]** 페이지, 탭/클릭 **[!UICONTROL 파일 선택]**. 메타데이터가 있는 CSV 파일을 선택합니다.
-1. 다음 매개 변수를 지정합니다.
+1. 다음으로 이동 [!DNL Assets] 사용자 인터페이스, 선택 **[!UICONTROL 만들기]** 도구 모음에서 를 선택하고 **[!UICONTROL 메타데이터]** 메뉴 아래의 제품에서 사용할 수 있습니다.
+1. 에서 **[!UICONTROL 메타데이터 가져오기]** 페이지를 클릭한 다음 **[!UICONTROL 파일 선택]**. 메타데이터가 있는 CSV 파일을 선택합니다.
+1. 다음 매개 변수를 제공합니다.
 
    | 매개 변수 | 설명 |
    | ---------------------- | ------- |
@@ -37,13 +36,19 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 자�
    | 워크플로우 실행 | 기본적으로 False입니다. 로 설정된 경우 `true` 및 기본 설정은 DAM 메타데이터 다시 쓰기 워크플로우에 적용됩니다(이진 XMP 데이터에 메타데이터를 기록). 워크플로우를 활성화하면 시스템이 느려집니다. |
    | 자산 경로 열 이름 | 자산이 있는 CSV 파일의 열 이름을 정의합니다. |
 
-1. 클릭 **[!UICONTROL 가져오기]** 를 클릭합니다. 메타데이터를 가져오면 알림 받은 편지함으로 알림이 전송됩니다. 자산 속성 페이지로 이동하고 메타데이터 값을 자산에 대해 올바르게 가져오는지 확인합니다.
+1. 선택 **[!UICONTROL 가져오기]** 를 클릭합니다. 메타데이터를 가져오면 알림 받은 편지함으로 알림이 전송됩니다. 자산 속성 페이지로 이동하고 메타데이터 값을 자산에 대해 올바르게 가져오는지 확인합니다.
 
-메타데이터를 가져올 때 날짜 및 타임스탬프를 추가하려면 `YYYY-MM-DDThh:mm:ss.fff-00:00` 날짜 및 시간에 대한 형식입니다. 날짜와 시간은 `T`, `hh` 시간은 24시간 형식으로, `fff` 은 나노 초이고, `-00:00` 시간대 오프셋입니다. 예, `2020-03-26T11:26:00.000-07:00` 은 2020년 3월 26일, 11일입니다:26:00.000 오전 PST 시간
+1. 날짜 및 타임스탬프를 추가하여 메타데이터를 가져오려면 `YYYY-MM-DDThh:mm:ss.fff-00:00` 날짜 및 시간에 대한 형식입니다. 날짜와 시간은 `T`, `hh` 시간은 24시간 형식으로, `fff` 은 나노 초이고, `-00:00` 시간대 오프셋입니다. 예, `2020-03-26T11:26:00.000-07:00` 은 2020년 3월 26일, 11일입니다:26:오전 00.00 PST.
+
+   * 날짜 형식은 열 머리글과 열 형식에 따라 다릅니다. 예를 들어, 날짜가 형식이 포함된 불만 사항인 경우 `yyyy-MM-dd'T'HH:mm:ssXXX` 각 열 헤더는 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * 기본 날짜 형식은 다음과 같습니다 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->날짜 형식이 일치하지 않는 경우 `YYYY-MM-DDThh:mm:ss.fff-00:00`인 경우 날짜 값이 설정되지 않습니다. 내보낸 메타데이터 CSV 파일의 날짜 형식은 입니다 `YYYY-MM-DDThh:mm:ss-00:00`. 이 필드를 가져오려면 다음 방법으로 나타내는 나노 초 값을 추가하여 허용 가능한 형식으로 변환하십시오 `fff`.
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## 메타데이터 내보내기 {#export-metadata}
 
