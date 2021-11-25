@@ -2,9 +2,9 @@
 title: 우수 사례 분석기 사용
 description: 우수 사례 분석기 사용
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2470'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="모범 사례 분석기 사용"
 >abstract="모범 사례 분석기(이전 클라우드 준비 분석기)를 사용하기 위한 설명서 및 생성된 보고서를 검토하십시오. 모범 사례 분석기 보고서는 일반적인 업그레이드 준비 상태를 세부적으로 파악하는 데 사용됩니다."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 모범 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
@@ -113,14 +113,16 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 ACS Commons 결과는 무시되어서는 안 됩니다. 을(를) 참조하십시오. [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Service와의 호환성을 확인합니다.
 
 
-### Adobe Experience Manager 6.2 및 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-모범 사례 분석기 도구는 Adobe Experience Manager 6.2에서 CSV 보고서를 생성하고 다운로드하는 링크로 제한됩니다.
-
-Adobe Experience Manager 6.1의 경우 도구가 작동하지 않으며 HTTP 인터페이스만 사용할 수 있습니다.
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
 >[!NOTE]
-모든 버전에서 포함된 패턴 탐지기는 독립적으로 실행될 수 있습니다.
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## 모범 사례 분석기 보고서 해석 {#cra-report}
 
@@ -160,7 +162,7 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
 
 ## 우수 사례 분석기 CSV 보고서 해석 {#cra-csv-report}
 
-를 클릭하면 **CSV** AEM 인스턴스에서 선택하는 경우 우수 사례 분석기 보고서의 CSV 형식이 컨텐츠 캐시에서 만들어지고 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
+를 클릭하면 **CSV** AEM 인스턴스에서 옵션을 선택하면 모범 사례 분석기 보고서의 CSV 형식이 컨텐츠 캐시에서 만들어지고 브라우저에 반환됩니다. 브라우저 설정에 따라 이 보고서는 기본 이름이 `results.csv`인 파일로 자동 다운로드됩니다.
 
 캐시가 만료되면 CSV 파일을 빌드하고 다운로드하기 전에 보고서가 다시 생성됩니다.
 
