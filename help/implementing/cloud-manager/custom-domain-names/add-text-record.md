@@ -2,9 +2,9 @@
 title: TXT 레코드 추가
 description: 사용자 지정 도메인 이름 추가
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 12849a79975f70dafd59f4b6ebf4b4ff24145cbf
+source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ TXT 레코드를 만들기 전에 아래 단계를 따라야 합니다.
 
 | 도메인 | 이름 | TXT 값 |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. 예:<br>*adobe-aem-verification=example.com/[프로그램]/[env]/..* |
-| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. 예:<br>*adobe-aem-verification=www.example.com/[프로그램]/[env]/..* |
+| `example.com` | `_aemverification.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. 예:<br>*adobe-aem-verification=<br>example.com/[프로그램]/[env]/..* |
+| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. 예:<br>*adobe-aem-verification=<br>www.example.com/[프로그램]/[env]/..* |
 
 완료되면 다음을 실행하여 결과를 확인할 수 있습니다. `dig _aemverification.[yourdomainname] -t txt`.
 예상되는 결과에 Cloud Manager UI에 제공된 TXT 값이 표시됩니다.
