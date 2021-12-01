@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6c17b048631a7f61305ec4f0a4f84c4b0577aec0
+source-git-commit: 2c6bf90f51628fb1580a2ad287cfb1500063abc0
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 7%
+source-wordcount: '842'
+ht-degree: 8%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 * 키 [이미지 파일 형식](#image-formats).
 * [Camera Raw 파일 형식](#camera-raw-formats) 캐논, 니콘, 후지필름, 올림푸스 등 다양한 카메라 제조 업체(Adobe Camera Raw 제공)에 대한 것이다.
 * 공통 [문서 형식](#document-formats)( Microsoft Office 및 Open Document 형식 포함)
-* 광범위한 범위 [비디오](#video-formats) 및 [오디오](#audio-formats) 형식.
+* Wide range of [video](#video-formats) and [audio](#audio-formats) formats.
 
 다음 범례에서는 각 형식에 대한 지원 수준을 설명합니다.
 
@@ -208,10 +208,10 @@ ht-degree: 7%
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
 | M4V | Apple iTunes | H264/AVC | - |
 | MKV | 마트로스카 | H264/AVC | - |
-| 이동, QT | Apple QuickTime | H264/AVC, Apple ProRes422HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV(DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| 이동, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV(DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | MP4 | MPEG-4 | H264/AVC(모든 프로필) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF |  | Media eXchange 형식입니다.<br>Apple ProRes422 | - |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft 화면(MSS2), Microsoft 사진 스토리(WVP2) |
