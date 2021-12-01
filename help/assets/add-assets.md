@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
+source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2263'
 ht-degree: 1%
 
 ---
@@ -159,7 +159,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 가져온 후 소스 파일 삭제]: 파일을 가져온 후 원본 데이터 저장소에서 원본 파일을 삭제하려면 이 옵션을 선택합니다 [!DNL Experience Manager].
    * [!UICONTROL 가져오기 모드]: 건너뛰기, 바꾸기 또는 버전 만들기를 선택합니다. 건너뛰기 모드는 기본값이며 이 모드에서는 자산이 이미 존재하는 경우 수집기가 자산을 가져오기 위해 건너뜁니다. 의 의미 보기 [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
    * [!UICONTROL 자산 Target 폴더]: 자산을 가져올 DAM에서 폴더를 가져옵니다. 예, `/content/dam/imported_assets`
-   * [!UICONTROL 메타데이터 파일]: 가져올 메타데이터 파일로, CSV 형식으로 제공됩니다. 소스 Blob 위치에 이 CSV 파일을 제공하고 벌크 수집 도구 구성의 경로를 참조합니다.
+   * [!UICONTROL 메타데이터 파일]: 가져올 메타데이터 파일로, CSV 형식으로 제공됩니다. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 수집 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 CSV 파일 형식 및 [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져온 후 소스 파일 삭제** 옵션을 선택하는 경우 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일별 필터링** 필드. 정규 표현식을 사용하여 이러한 필드에 있는 CSV 파일을 필터링할 수 있습니다.
 
 1. 생성된 수집 또는 구성을 사용하여 삭제, 수정, 실행 및 추가 작업을 수행할 수 있습니다. 벌크 가져오기 수집기나 구성을 선택하면 도구 모음에서 다음 옵션을 사용할 수 있습니다.
 
