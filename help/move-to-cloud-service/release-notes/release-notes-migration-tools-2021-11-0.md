@@ -2,8 +2,7 @@
 title: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.11.0
 description: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.11.0
 feature: Release Information
-exl-id: null
-source-git-commit: e91dcb74cfcb478309e863241c2d96b4d8bb1591
+source-git-commit: 587258a831fb5cd3b3a23d1f891db8c2254a8d6b
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%

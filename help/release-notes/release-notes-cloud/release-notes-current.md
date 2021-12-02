@@ -3,9 +3,9 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c4d664450244394a65ddbc8097731d913db59091
+source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1525'
 ht-degree: 2%
 
 ---
@@ -187,3 +187,21 @@ Best Practices Analyzer v2.1.20 릴리스 날짜는 2021년 10월 5일입니다.
 * 총 인덱스 크기를 감지하고 보고하는 기능.
 
 * 원래 표현물이 누락된 자산을 검색하고 보고하는 기능.
+
+
+## 모범 사례 분석기 {#bpa-release}
+
+### 릴리스 날짜 {#release-date-bpa}
+
+Best Practices Analyzer v2.1.22 릴리스 날짜는 2021년 12월 1일입니다.
+
+### 새로운 기능 {#what-is-new-bpa}
+
+* 사용된 ACS commons 버전을 감지하고 보고하는 기능.
+* 그룹의 사용자 및 하위 그룹 수를 감지하고 보고하는 기능.
+* 16MB를 초과하는 MongoDB의 노드 속성 값을 감지하고 보고할 수 있습니다.
+
+### 버그 수정 {#bug-fixes-bpa}
+
+* 잘못된 네거티브를 줄이기 위해 기초 구성 요소 탐지를 개선했습니다.
+* AEM Forms 고객의 경우 `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Service에서 사용할 수 없는 것이 수정되었습니다.
