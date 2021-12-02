@@ -2,9 +2,9 @@
 title: UI 테스트 - Cloud Services
 description: UI 테스트 - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 710f156e606902ab5548169661d4a82c8cf4f819
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,10 @@ UI 테스트를 빌드하고 실행하려면 고객이 코드 리포지토리에
 
 빌드되지 않은 경우 `tar.gz` 파일, UI 테스트 빌드 및 실행을 건너뜁니다
 
-추가하려면 `testing.properties` 작성된 아티팩트에 파일을 추가하고 `include` 문 `assembly-ui-test-docker-context.xml` 파일(UI에서 테스트 하위 모듈). 프로젝트에 해당 줄이 포함되지 않은 경우 이 파일을 편집하여 UI 테스트를 받아야 합니다. 파일에 편집하지 말라는 줄이 있을 수 있다면 해당 조언을 무시하십시오.
+추가하려면 `testing.properties` 작성된 아티팩트에 파일을 추가하고 `include` 문 `assembly-ui-test-docker-context.xml` 파일(UI에서 테스트 하위 모듈).
+
+>[!NOTE]
+>프로젝트에 해당 줄이 포함되지 않은 경우 이 파일을 편집하여 UI 테스트를 받아야 합니다. 파일에 편집하지 말라는 줄이 있다면 해당 조언을 무시하십시오.
 
     &quot;
     [..]
