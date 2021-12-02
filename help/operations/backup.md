@@ -2,14 +2,14 @@
 title: AEM as a Cloud Service 백업 및 복원
 description: AEM as a Cloud Service 백업 및 복원
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-# AEM as a Cloud Service 백업 및 복원
+# AEM as a Cloud Service 백업 및 복원 {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >이 기능은 코드 또는 컨텐츠에 심각한 문제가 있는 경우에만 사용해야 합니다. 복원된 백업 시간과 현재 시간 사이의 최근 데이터가 손실됩니다. 스테이징이 이전 버전으로 복원됩니다.
 
-## 사용 방법
+## 사용 방법 {#how-to-use}
 
 고객은 발생한 문제를 설명하는 지원 티켓을 제출해야 합니다. 이렇게 하면 복원이 필요한지 여부를 결정하는 Adobe 지원 담당자에 의해 조사가 수행됩니다.
 
@@ -41,3 +41,9 @@ RTO(복구 시간 목표)는 저장소의 크기에 따라 다르지만 일반�
 >[!CAUTION]
 >
 >삭제된 환경의 데이터는 영구적으로 손실되어 복구할 수 없습니다.
+
+## 오프사이트 백업 {#offsite-backup}
+
+일반 백업은 AEM 클라우드 서비스 내에서 실수로 삭제 또는 기술 장애가 발생할 수 있는 위험도 해결하지만 지역 실패에서 발생할 수 있는 위험도 고려해야 합니다. 가용성 외에도 이러한 데이터 영역 정전의 가장 큰 위험은 주로 데이터 손실입니다.
+AEM as a Cloud Service은 전체 AEM 컨텐츠를 원격 영역에 지속적으로 복제하여 3개월 동안 복구에 사용할 수 있도록 함으로써 모든 AEM 프로덕션 환경에 대한 표준으로 이러한 위험을 다룹니다. 이 기능을 오프사이트 백업이라고 합니다.
+스테이지 및 프로덕션 환경을 위한 AEM 클라우드 서비스의 복원은 데이터 영역 정전이 발생하는 경우 AEM Service 신뢰성 엔지니어링 센터에서 수행합니다.
