@@ -2,7 +2,7 @@
 title: 기능 테스트 - Cloud Services
 description: 기능 테스트 - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
+source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 9%
@@ -20,9 +20,9 @@ ht-degree: 9%
 기능 테스트는 세 가지 유형으로 분류됩니다.
 
 
-* 제품 기능 테스트
-* 사용자 지정 기능 테스트
-* 사용자 지정 UI 테스트
+* [제품 기능 테스트](#product-functional-testing)
+* [사용자 지정 기능 테스트](#custom-functional-testing)
+* [사용자 지정 UI 테스트](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ## 제품 기능 테스트 {#product-functional-testing}
 
