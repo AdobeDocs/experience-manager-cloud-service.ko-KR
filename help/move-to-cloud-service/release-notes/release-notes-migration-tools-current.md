@@ -1,31 +1,36 @@
 ---
-title: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.11.0
-description: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.11.0
+title: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.12.0
+description: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.12.0
 feature: Release Information
 exl-id: null
-source-git-commit: 43b56f074c0e09074c6745c2384e9bfd6b2eebb2
+source-git-commit: 3bd73869fb04c82fb908a5530728040c7e573eb0
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 8%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
 
-# AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.11.0 {#release-notes}
+# AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.12.0 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다2021.11.0.
+이 페이지에서는 AEM as a Cloud Service의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다2021.12.0.
 
 >[!NOTE]
 >Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
 
-## 컨텐츠 전송 도구 {#ctt-release}
+## 모범 사례 분석기 {#bpa-release}
 
-### 릴리스 날짜 {#release-date-ctt}
+### 릴리스 날짜 {#release-date-bpa}
 
-컨텐츠 전송 도구 v1.7.2의 릴리스 날짜는 2021년 11월 1일입니다.
+Best Practices Analyzer v2.1.22 릴리스 날짜는 2021년 12월 1일입니다.
 
-### 새로운 기능 {#what-is-new-ctt}
+### 새로운 기능 {#what-is-new-bpa}
 
-* 옵션 지원 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 소스 AEM 인스턴스가 파일 데이터 저장소를 사용하여 추출 단계를 크게 가속하도록 구성된 경우 컨텐츠 전송 도구에서 사용하도록 단계가 추가되었습니다.
+* 사용된 ACS commons 버전을 감지하고 보고하는 기능.
+* 그룹의 사용자 및 하위 그룹 수를 감지하고 보고하는 기능.
+* 16MB를 초과하는 MongoDB의 노드 속성 값을 감지하고 보고할 수 있습니다.
 
-* 컨텐츠 전송 도구 UI의 수집 단계에 추가 설명 메시지를 추가하여 인덱싱 및 모니터링 복구 단계가 진행 중임을 나타냅니다.
+### 버그 수정 {#bug-fixes-bpa}
+
+* 잘못된 네거티브를 줄이기 위해 기초 구성 요소 탐지를 개선했습니다.
+* AEM Forms 고객의 경우 `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Service에서 사용할 수 없는 것이 수정되었습니다.

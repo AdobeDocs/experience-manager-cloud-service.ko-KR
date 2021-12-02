@@ -5,10 +5,10 @@ breadcrumb-title: Move 안내서
 user-guide-description: 클라우드 서비스로의 전환 여정을 이해합니다.
 feature: Deploying
 role: Architect, Developer
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: e91dcb74cfcb478309e863241c2d96b4d8bb1591
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 39%
+source-wordcount: '193'
+ht-degree: 40%
 
 ---
 
@@ -17,8 +17,9 @@ ht-degree: 39%
 
 + [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md)
 + 마이그레이션 도구에 대한 릴리스 노트 {#release-notes-migration-tools}
-   + [현재 릴리스 노트(2021.11.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+   + [현재 릴리스 노트(2021.12.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
    + 2021년 {#2021}
+      + [2021.11.0 릴리스 노트](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-11-0.md)
       + [2021.10.0 릴리스 노트](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + 전환 여정 단계 {#phases}
    + [준비](/help/move-to-cloud-service/migration-readiness.md)
