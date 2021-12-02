@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
+source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
 workflow-type: tm+mt
-source-wordcount: '4268'
-ht-degree: 2%
+source-wordcount: '4287'
+ht-degree: 11%
 
 ---
 
@@ -59,6 +59,10 @@ DAM 사용자가 저장소에 이미 있는 자산을 한 개 이상 업로드�
 
 ![중복 자산에 대한 받은 편지함 알림](assets/duplicate-detect-inbox-notification.png)
 
+>[!NOTE]
+>
+>자산을 저장소에 업로드하면 Experience Manager이 중복을 감지하고 처음 100개의 중복 자산에 대해 알려줍니다.
+
 ## 자산 미리 보기 {#previewing-assets}
 
 자산을 미리 보려면 다음 단계를 수행합니다.
@@ -86,7 +90,7 @@ DAM 사용자가 저장소에 이미 있는 자산을 한 개 이상 업로드�
    >
    >의 레이아웃 [!UICONTROL 속성] 페이지 및 사용 가능한 메타데이터 속성은 기본 메타데이터 스키마에 따라 다릅니다. 레이아웃을 수정하는 방법을 배우려면 [!UICONTROL 속성] 페이지를 참조하십시오. [메타데이터 스키마](/help/assets/metadata-schemas.md).
 
-1. 자산의 활성화를 위한 특정 날짜/시간을 예약하려면, **[!UICONTROL 시간]** 필드.
+1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -220,17 +224,17 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    **새 변환 업로드**
 
-   자산에 대한 자산 세부 사항 페이지로 이동하고 **[!UICONTROL 표현물 추가]** 아이콘을 클릭하여 해당 자산에 대한 새 렌디션을 업로드합니다.
+   Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
    >[!NOTE]
    >
-   >에서 변환을 선택하는 경우 **[!UICONTROL 표현물]** 패널에서는 도구 모음이 컨텍스트를 변경하고 표현물과 관련된 작업만 표시합니다. 표현물 업로드 아이콘과 같은 옵션이 표시되지 않습니다. 도구 모음에서 이러한 옵션을 보려면 자산의 세부 사항 페이지로 이동합니다.
+   >If you select a rendition from the **[!UICONTROL Renditions]** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. Options, such as the Upload Rendition icon is not displayed. To view these options in the toolbar, navigate to the details page for the asset.
 
    이미지 또는 비디오 자산의 세부 사항 페이지에 표시할 표현물에 대한 차원을 구성할 수 있습니다. 지정하는 차원에 따라 Assets에 정확히 일치하거나 가장 가까운 차원이 있는 표현물이 표시됩니다.
 
-   이미지의 표현물 차원을 자산 세부 사항 수준에서 구성하려면 `renditionpicker` 노드 (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`)을 설정하고 width 속성의 값을 구성합니다. 속성 구성 **[!UICONTROL 크기(긴)(KB)]** 폭 대신 이미지 크기에 따라 자산 세부 사항 페이지에서 렌디션을 사용자 지정할 수 있습니다. 크기 기반 사용자 지정의 경우 속성은 `preferOriginal` 일치하는 표현물의 크기가 원본보다 큰 경우 원본에 기본 설정을 지정합니다.
+   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
    마찬가지로 오버레이하여 주석 페이지 이미지를 사용자 지정할 수 있습니다 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -420,7 +424,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
-1. 에 댓글 추가 **[!UICONTROL 댓글]** 타임라인 하단의 상자. 또는 이미지에서 영역을 표시하고 **[!UICONTROL 주석 추가]** 대화 상자.
+1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -453,7 +457,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   에서 원하는 색상을 지정합니다 **[!UICONTROL 주석 색상]** 상자를 열고 클릭/탭하기 **[!UICONTROL 수락]**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -477,7 +481,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. 에서 **[!UICONTROL 모두 표시]** 타임라인의 목록에서 **[!UICONTROL 댓글]** 주석을 기반으로 결과를 필터링합니다.
+1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -521,9 +525,9 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   인쇄 PDF에 주석/상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. 인쇄된 자산과 별개인 페이지에 주석/상태를 표시하려면 **[!UICONTROL 다음 페이지]**.
+   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
-1. 클릭 **[!UICONTROL 인쇄]**. 2단계에서 선택한 옵션에 따라 생성된 PDF에 지정된 위치에 주석/상태가 표시됩니다. 예를 들어, **왼쪽 위** 설정하는 경우 생성된 출력은 여기에 표시된 PDF 파일과 유사합니다.
+1. 클릭 **[!UICONTROL 인쇄]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -571,7 +575,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. 새 버전을 보려면 **[!UICONTROL 모두 표시]** 자산 세부 사항 페이지 또는 자산 UI에서 타임라인에 나열한 다음 **[!UICONTROL 버전]**. 자산에 대해 만들어진 모든 버전은 타임라인 탭 아래에 나열됩니다. 드롭다운 화살표를 클릭하고 을 선택하여 버전을 표시하도록 목록을 필터링할 수 있습니다 **[!UICONTROL 버전]** 참조하십시오.
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
    ![version_option](assets/versions_option.png)
 
@@ -583,7 +587,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![save_version](assets/save_version.png)
 
-1. 버전에 대한 미리 보기를 생성하려면 를 탭/클릭합니다 **[!UICONTROL 버전 미리 보기]**.
+1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
 1. 자산 UI에 이 버전을 표시하려면 **[!UICONTROL 이 버전으로 되돌리기]**.
 1. 두 버전 간에 비교하려면 자산의 자산 페이지로 이동한 후 현재 버전과 비교할 버전을 탭/클릭합니다.
 
@@ -616,7 +620,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 탭/클릭 **[!UICONTROL 시작]** 그런 다음 탭/클릭합니다. **[!UICONTROL 계속]** 을 클릭하여 레코드 추가를 확인합니다. 워크플로우의 각 단계는 타임라인에 이벤트로 표시됩니다.
+1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
