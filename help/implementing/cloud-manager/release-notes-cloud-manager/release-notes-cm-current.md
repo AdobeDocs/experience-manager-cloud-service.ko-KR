@@ -2,8 +2,7 @@
 title: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노트
 feature: Release Information
-exl-id: null
-source-git-commit: ec2719fca19f366e0021fea7429e93c15e9579df
+source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 2%
@@ -15,7 +14,7 @@ ht-degree: 2%
 이 페이지에서는 AEM as a Cloud Service Manager에 대한 릴리스 노트를 간략하게 설명합니다2021.11.0.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
 
 ## 릴리스 날짜 {#release-date}
 
