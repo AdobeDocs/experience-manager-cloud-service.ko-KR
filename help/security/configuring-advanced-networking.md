@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service 고급 네트워킹 구성
 description: VPN 또는 AEM as a Cloud Service용 플렉서블 또는 전용 송신 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법을 알아봅니다.
-source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
+source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2867'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 1%
 # AEM as a Cloud Service 고급 네트워킹 구성 {#configuring-advanced-networking}
 
 이 문서는 VPN, 비표준 포트 및 전용 송신 IP 주소의 셀프 서비스 프로비저닝을 포함하여 AEM as a Cloud Service의 다양한 고급 네트워킹 기능을 소개합니다.
+
+>[!INFO]
+>
+>또한 각 고급 네트워킹 옵션을 살펴보기 위해 디자인된 일련의 문서를 찾을 수 있습니다 [위치](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
 
 ## 개요 {#overview}
 
