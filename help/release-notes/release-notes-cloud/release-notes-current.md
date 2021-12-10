@@ -3,9 +3,9 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
+source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1619'
 ht-degree: 2%
 
 ---
@@ -205,3 +205,14 @@ Best Practices Analyzer v2.1.22 릴리스 날짜는 2021년 12월 1일입니다.
 
 * 잘못된 네거티브를 줄이기 위해 기초 구성 요소 탐지를 개선했습니다.
 * AEM Forms 고객의 경우 `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Service에서 사용할 수 없는 것이 수정되었습니다.
+
+## 컨텐츠 전송 도구 {#ctt-release}
+
+### 릴리스 날짜 {#release-date-ctt}
+
+컨텐츠 전송 도구 v1.7.10의 릴리스 날짜는 2021년 12월 8일입니다.
+
+### 새로운 기능 {#what-is-new-ctt}
+
+* 사용자가 비활성화할 수 있도록 컨텐츠 전송 도구에서 수집 단계에 추가/전환 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 수집 중. 최적의 수집 속도를 위해 작은 마이그레이션 세트에 대해 또는 마지막 수집 이후 몇 개의 Blob만 추가한 경우 수집 중 사전 복사를 비활성화해야 합니다.
+* 사용자 매핑 을 업데이트하여 한 번에 2,000명의 사용자를 얻을 수 있는 향상된 사용자 관리 API를 사용하여 성능을 크게 개선했습니다.
