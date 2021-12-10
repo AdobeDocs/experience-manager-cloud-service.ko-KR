@@ -1,10 +1,10 @@
 ---
 title: 준수
 description: 준수
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 76%
+source-wordcount: '361'
+ht-degree: 75%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 76%
 
 | 사용 안내서 | 설명 |
 |---|---|
-| [Experience Manager as a Cloud Service 홈](/help/landing/home.md) | Experience Manager as a Cloud Service 설명서에 대한 개요를 살펴보려면 여기에서 시작하십시오. |
 | [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다. |
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다. |
 | [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
@@ -41,7 +40,7 @@ ht-degree: 76%
 
 * [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
-* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
+* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)

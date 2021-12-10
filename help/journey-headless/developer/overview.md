@@ -2,7 +2,7 @@
 title: AEM Headless Developer 여정
 description: AEM Headless CMS 설명서. AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d683b71d823fb6cc756f8fcf04e7393e7bf71c14
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 1%
@@ -25,11 +25,11 @@ AEM의 강력하고 유연한 헤드리스 기능, 그리고 첫 번째 헤드�
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
-[설명서 여정](/help/journey-documentation/home.md) AEM에 대해 새로운 지식을 가진 독자들이, 이전의 주제와 AEM 지식을 최소한으로 가정하는 동시에, 처음부터 끝까지 비즈니스 문제를 이해하고 해결하는 데 도움이 되는 이야기를 제공함으로써, 많은 다양한 그리고 아마도 복잡한 주제와 특징들을 함께 결합합니다.
+[설명서 여정](/help/journey-documentation/documentation-journeys.md) AEM에 대해 새로운 지식을 가진 독자들이, 이전의 주제와 AEM 지식을 최소한으로 가정하는 동시에, 처음부터 끝까지 비즈니스 문제를 이해하고 해결하는 데 도움이 되는 이야기를 제공함으로써, 많은 다양한 그리고 아마도 복잡한 주제와 특징들을 함께 결합합니다.
 
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험, 고객 프로젝트의 피드백을 통해 우수 사례 원칙을 중심으로 설계되었습니다.
 
-AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 권장하는 방법을 알아보려면, [AEM 헤드리스 여정](/help/journey-headless/home.md) 은 시작할 위치입니다.
+AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 권장하는 방법을 알아보려면, [AEM 헤드리스 여정](/help/journey-documentation/documentation-journeys.md) 은 시작할 위치입니다.
 
 >[!TIP]
 >
@@ -48,7 +48,7 @@ AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 �
 | 관리자 | AEM의 기본 설정 및 구성을 관리합니다 | 개발자는 관리자와 함께 개발에 필요한 구성을 변경합니다. |
 | 컨텐츠 설계자 | 헤드리스 없이 전달해야 하는 데이터에 대한 요구 사항을 분석하고 이 데이터의 구조를 정의합니다 | 개발자는 컨텐츠 설계자와 협력하여 데이터 구조 및 요구 사항을 헤딩 없이 파악합니다. |
 
-이 여정의 정보는 물론 모든 사용자에게 유용할 수 있지만, 일부 정보는 특정 역할에 유용할 수 있습니다. 채널을 고정하세요 [추가 역할을 다루는 제공 여정](/help/journey-documentation/home.md#journeys)
+이 여정의 정보는 물론 모든 사용자에게 유용할 수 있지만, 일부 정보는 특정 역할에 유용할 수 있습니다. 채널을 고정하세요 [추가 역할을 다루는 제공 여정](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## 헤드리스 개발자 여정 {#the-journey}
 

@@ -2,7 +2,7 @@
 title: AEM Sites 여정
 description: AEM의 강력한 사이트 기능을 이해하는 데 사용할 수 있는 안내식 여정에 대한 개요를 살펴보려면 여기에서 시작하십시오.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: e69d3efbb45f95cbb5f84724c86c3cbd1255b8fb
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
@@ -19,7 +19,7 @@ AEM의 강력한 사이트 기능을 이해하는 데 사용할 수 있는 안�
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
-[설명서 여정](/help/journey-documentation/home.md) AEM에 대해 새로운 지식을 가진 독자들이, 이전의 주제와 AEM 지식을 최소한으로 가정하는 동시에, 처음부터 끝까지 비즈니스 문제를 이해하고 해결하는 데 도움이 되는 이야기를 제공함으로써, 많은 다양한 그리고 아마도 복잡한 주제와 특징들을 함께 결합합니다.
+[설명서 여정](/help/journey-documentation/documentation-journeys.md) AEM에 대해 새로운 지식을 가진 독자들이, 이전의 주제와 AEM 지식을 최소한으로 가정하는 동시에, 처음부터 끝까지 비즈니스 문제를 이해하고 해결하는 데 도움이 되는 이야기를 제공함으로써, 많은 다양한 그리고 아마도 복잡한 주제와 특징들을 함께 결합합니다.
 
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험, 고객 프로젝트의 피드백을 통해 우수 사례 원칙을 중심으로 설계되었습니다.
 
@@ -31,7 +31,7 @@ Adobe에서 AEM Sites을 사용하여 비즈니스 사례를 해결하는 방법
 
 개별 여정은 특정 성향 또는 대상에 대해 정의되지만, 독자가 상호 작용하는 추가 가상 사용자를 정의합니다.
 
-여정의 정보는 물론 여러 성향에게 유용할 수 있지만 여정은 특정 성향에 타깃팅되며 일부 정보는 특정 역할에 유용할 수 있습니다.
+여정의 정보는 물론 여러 사용자에게 유용할 수 있지만 여정은 특정 성향에 타깃팅되며 일부 정보는 특정 역할에 유용할 수 있습니다.
 
 ## 사이트 여정 {#sites-journeys}
 
@@ -42,4 +42,4 @@ AEM Sites 항목에는 다음 설명서 여정을 사용할 수 있습니다.
 | [사이트 번역 여정](/help/journey-sites/translation/overview.md) | AEM Sites 기술, 프로젝트에서 사용할 수 있는 방법, AEM에서 A에서 Z로 번역 프로젝트를 만들고 업데이트하는 방법에 대해 알아봅니다. | 번역 전문가 |
 | [빠른 사이트 만들기 여정](/help/journey-sites/quick-site/overview.md) | 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 안내가 있는 여정을 보려면 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 경우 사이트를 신속하게 사용자 지정할 수 있습니다. | 프런트엔드 개발자 |
 
-채널을 고정하세요 [추가 역할을 다루는 제공 여정](/help/journey-documentation/home.md#journeys)
+채널을 고정하세요 [추가 역할을 다루는 제공 여정](/help/journey-documentation/documentation-journeys.md#journeys)

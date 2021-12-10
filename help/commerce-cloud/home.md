@@ -2,10 +2,10 @@
 title: AEM Content 및 Commerce
 description: AEM 컨텐츠 및 Commerce 자습 리소스 및 설명서 링크
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 64%
+source-wordcount: '350'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->AEM 6.5 및 클래식 CIF가 있는 AEM 컨텐츠 및 상거래의 경우 [AEM 6.5 컨텐츠 및 상거래](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)를 참조하십시오.
+>AEM 6.5 및 classic CIF가 있는 AEM 컨텐츠 및 상거래에 대해서는 다음을 참조하십시오 [AEM 6.5 콘텐츠 및 상거래](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
 ## 주요 컨텐츠 및 상거래 문서 {#key-articles}
 
@@ -27,7 +27,6 @@ ht-degree: 64%
 
 | 사용 안내서 | 설명 |
 |---|---|
-| [Experience Manager as a Cloud Service 홈](/help/landing/home.md) | Experience Manager as a Cloud Service 설명서에 대한 개요를 알려면 여기에서 시작하십시오. |
 | [개요](/help/overview/home.md) | 이 안내서에서는 소개, 용어, 아키텍처 등을 포함하여 Experience Manager as a Cloud Service에 대한 개요를 제공합니다. |
 | [릴리스 노트](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다. |
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다. |
@@ -42,7 +41,7 @@ ht-degree: 64%
 ## 기타 Experience Manager 리소스 {#other-resources}
 
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
-* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
+* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 노트.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 98c6207e84fda0d4bab3141c84507498f3527337
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 42%
+source-wordcount: '615'
+ht-degree: 40%
 
 ---
 
@@ -49,7 +49,6 @@ ht-degree: 42%
 
 | 사용 안내서 | 설명 |
 |---|---|
-| [Experience Manager as a Cloud Service 홈](/help/landing/home.md) | Experience Manager as a Cloud Service 설명서에 대한 개요를 살펴보려면 여기에서 시작하십시오. |
 | [개요](/help/overview/home.md) | 이 안내서에서는 Experience Manager as a Cloud Service 소개, 용어 등 개요를 제공합니다. |
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다. |
 | [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service으로 시작하는 방법에 대한 요약을 제공합니다. |
