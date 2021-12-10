@@ -1,11 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
+landing-page-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 AEM as a Cloud Service으로 시작하는 방법에 대한 요약을 제공합니다.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 25%
+source-wordcount: '526'
+ht-degree: 23%
 
 ---
 

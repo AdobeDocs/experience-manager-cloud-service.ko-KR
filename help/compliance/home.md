@@ -1,10 +1,11 @@
 ---
 title: 준수
-description: 준수
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+description: 이 페이지에는 Experience Manager 규정 준수에 대한 정보를 제공하는 자습 리소스들이 as a Cloud Service으로 나열됩니다.
+landing-page-description: 개인 정보 및 액세스 가능성 등 AEM as a Cloud Service의 규정 준수에 대한 개요를 알려면 여기에서 시작하십시오.
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 75%
+source-wordcount: '394'
+ht-degree: 68%
 
 ---
 

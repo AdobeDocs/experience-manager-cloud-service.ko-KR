@@ -1,11 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 커넥터
 description: Adobe Experience Manager as a Cloud Service 커넥터 자습 리소스 및 설명서 링크
+landing-page-description: 커넥터를 AEM as a Cloud Service에 통합하는 방법을 알아봅니다.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 79%
+source-wordcount: '375'
+ht-degree: 77%
 
 ---
 

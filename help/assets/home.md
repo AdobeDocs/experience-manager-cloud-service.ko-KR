@@ -1,13 +1,14 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] 안내서'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] 자습 리소스 및 설명서 링크'
+landing-page-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 33%
+source-wordcount: '283'
+ht-degree: 36%
 
 ---
 
