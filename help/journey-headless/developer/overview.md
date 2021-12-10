@@ -1,10 +1,11 @@
 ---
 title: AEM Headless Developer 여정
 description: AEM Headless CMS 설명서. AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오.
+landing-page-description: AEM의 헤드리스 기능, 기능 및 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 안내하는 여정을 살펴보려면 여기에서 시작하십시오.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1247'
 ht-degree: 1%
 
 ---
