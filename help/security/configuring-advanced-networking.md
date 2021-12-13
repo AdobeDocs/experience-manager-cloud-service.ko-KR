@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service 고급 네트워킹 구성
 description: VPN 또는 AEM as a Cloud Service용 플렉서블 또는 전용 송신 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법을 알아봅니다.
-source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
+source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2982'
 ht-degree: 1%
 
 ---
@@ -78,17 +78,17 @@ API는 업데이트 상태와 약 10분 후에 엔드포인트의 상태를 나�
 
 ### 트래픽 라우팅 {#flexible-port-egress-traffic-routing}
 
-표준 Java 네트워킹 라이브러리가 사용된다고 가정할 때 포트 80 또는 443을 통해 대상으로 이동하는 Http 또는 https 트래픽은 사전 구성된 프록시를 통해 전달됩니다. 다른 포트를 통해 이동하는 http 또는 https 트래픽의 경우 다음 속성을 사용하여 프록시를 구성해야 합니다.
+80 또는 443 이외의 포트로 이동하는 http 또는 https 트래픽의 경우 다음 호스트 및 포트 환경 변수를 사용하여 프록시를 구성해야 합니다.
 
-* `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
-* `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
+* HTTP의 경우: `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (기본값: `proxy.tunnel:3128` AEM 릴리스 &lt; 6094)에서
+* HTTPS의 경우: `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (기본값: `proxy.tunnel:3128` AEM 릴리스 &lt; 6094)에서
 
 예를 들어, 요청을에 보낼 샘플 코드가 있습니다 `www.example.com:8443`:
 
 ```java
 String url = "www.example.com:8443"
-var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
+int proxyPort = Integer.parseInt(System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", "3128"));
 HttpClient client = HttpClient.newBuilder()
       .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
       .build();
@@ -114,7 +114,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
     <th>대상 조건</th>
     <th>포트</th>
     <th>연결</th>
-    <th>예</th>
+    <th>외부 대상 예</th>
   </tr>
 </thead>
 <tbody>
@@ -127,12 +127,13 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr> 
   <tr>
     <td></td>
-    <td>이러한 환경 변수를 사용하여 구성된 http 프록시를 통해 비표준 트래픽(80 또는 443 외부의 다른 포트)입니다.<br><ul>
-     <li>AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST</li>
-     <li>AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT</li>
+    <td>다음 환경 변수 및 프록시 포트 번호를 사용하여 구성된 http 프록시를 통한 비표준 트래픽(80 또는 443 외부의 다른 포트)입니다. Cloud Manager API 호출의 portForwards 매개 변수에 대상 포트를 선언하지 마십시오.<br><ul>
+     <li>AEM_PROXY_HOST(기본적으로 AEM 릴리스 &lt; 6094)의 'proxy.tunnel'에 해당)</li>
+     <li>AEM_HTTPS_PROXY_PORT(기본적으로 AEM 릴리스 &lt; 6094에서 포트 3128로 설정됨)</li>
     </ul>
     <td>80 또는 443 이외의 포트</td>
     <td>허용</td>
+    <td>example.com:8443</td>
   </tr>
   <tr>
     <td></td>
@@ -163,15 +164,15 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 AEM Cloud Service Apache/Dispatcher 계층의 `mod_proxy` 지시문은 위에 설명된 속성을 사용하여 구성할 수 있습니다.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
-ProxyPass "/somepath" "http://example.com"
-ProxyPassReverse "/somepath" "http://example.com"
+ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
+ProxyPass "/somepath" "http://example.com:8080"
+ProxyPassReverse "/somepath" "http://example.com:8080"
 ```
 
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
+ProxyRemote "https://example.com:8443" "http://${AEM_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -204,6 +205,36 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 트래픽 라우팅 {#dedcated-egress-ip-traffic-routing}
 
+표준 Java 네트워킹 라이브러리가 사용된다고 가정할 때 포트 80 또는 443을 통해 대상으로 이동하는 Http 또는 https 트래픽은 사전 구성된 프록시를 통해 전달됩니다. 다른 포트를 통해 이동하는 http 또는 https 트래픽의 경우 다음 속성을 사용하여 프록시를 구성해야 합니다.
+
+```
+AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
+AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
+```
+
+예를 들어, 요청을에 보낼 샘플 코드가 있습니다 `www.example.com:8443`:
+
+```java
+String url = "www.example.com:8443"
+String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
+ 
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+```
+
+비표준 Java 네트워킹 라이브러리를 사용하는 경우 모든 트래픽에 대해 위의 속성을 사용하여 프록시를 구성합니다.
+
+에서 선언된 포트를 통해 대상이 있는 비http/s 트래픽 `portForwards` 매개 변수는 `AEM_PROXY_HOST`매핑된 포트와 함께 를 사용할 수도 있습니다. 예:
+
+```java
+DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
+```
+
 <table>
 <thead>
   <tr>
@@ -211,7 +242,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
     <th>대상 조건</th>
     <th>포트</th>
     <th>연결</th>
-    <th>예</th>
+    <th>외부 대상 예</th>
   </tr>
 </thead>
 <tbody>
@@ -380,7 +411,7 @@ API는 몇 초 후에 응답해야 하며, 이 상태는 `updating` 그리고 �
     <th>대상 조건</th>
     <th>포트</th>
     <th>연결</th>
-    <th>예</th>
+    <th>외부 대상 예</th>
   </tr>
 </thead>
 <tbody>
