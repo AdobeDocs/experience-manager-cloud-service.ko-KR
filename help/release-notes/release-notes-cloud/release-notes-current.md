@@ -3,9 +3,9 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
+source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1591'
 ht-degree: 2%
 
 ---
@@ -47,14 +47,6 @@ ht-degree: 2%
 ### 의 새로운 기능 [!DNL Assets] 사전 릴리스 채널 {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] 이제 이미지 스마트 자르기 및 색상 견본을 최신 Sensei 서비스에서 제공하며 향상된 자르기 및 색상 견본을 생성합니다. 또한 동일한 종횡비이지만 다양한 해상도에서 서로 다른 자르기 콘텐츠를 생성하기 위한 개선 사항을 시작했습니다. 또한 이미지 프로필의 폭과 높이가 변경되지 않은 경우 수동 편집 내용은 재처리 시 유지됩니다.
-
-* 스마트 태그는 스마트 컨텐츠 서비스 대신 자산 마이크로서비스를 사용하여 자산에 자동으로 적용됩니다. 기본 모델이 업데이트되어 태깅 결과를 개선하고 바이어스를 줄일 수 있습니다. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
-
-<!-- Leave this commented.
-### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
-
-No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
--->
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
