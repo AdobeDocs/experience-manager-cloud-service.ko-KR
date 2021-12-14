@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '4287'
+source-wordcount: '4320'
 ht-degree: 11%
 
 ---
@@ -244,7 +244,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >비디오 주석은 HTML5 호환 비디오 형식이 있는 브라우저에서만 지원됩니다. 또한 브라우저에 따라 다른 비디오 형식이 지원됩니다.
+   >비디오 주석은 HTML5 호환 비디오 형식이 있는 브라우저에서만 지원됩니다. 또한 브라우저에 따라 다른 비디오 형식이 지원됩니다. 그러나 MXF 비디오 형식은 아직 비디오 주석에서 지원되지 않습니다.
 
 ## 자산 삭제 {#delete-assets}
 
@@ -410,7 +410,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 주석은 이미지나 비디오에 추가된 주석 또는 설명 노트입니다. 주석은 마케터가 자산에 대한 공동 작업을 수행하고 피드백을 남길 수 있는 기능을 제공합니다.
 
-비디오 주석은 HTML5 호환 비디오 형식이 있는 브라우저에서만 지원됩니다. Assets에서 지원하는 비디오 형식은 브라우저에 따라 다릅니다.
+비디오 주석은 HTML5 호환 비디오 형식이 있는 브라우저에서만 지원됩니다. Assets에서 지원하는 비디오 형식은 브라우저에 따라 다릅니다. 그러나 MXF 비디오 형식은 아직 비디오 주석에서 지원되지 않습니다.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    >[!NOTE]
    >
-   >비디오 자산에 주석을 추가할 수도 있습니다. 비디오에 주석을 추가하는 동안 플레이어는 프레임에 주석을 달 수 있도록 일시 중지합니다. 자세한 내용은 [비디오 자산 관리](manage-video-assets.md).
+   >비디오 자산에 주석을 추가할 수도 있습니다. 비디오에 주석을 추가하는 동안 플레이어는 프레임에 주석을 달 수 있도록 일시 중지합니다. 자세한 내용은 [비디오 자산 관리](manage-video-assets.md). 그러나 MXF 비디오 형식은 아직 비디오 주석에서 지원되지 않습니다.
 
 1. 사용자를 구분하기 위해 다른 색상을 선택하려면 프로필 아이콘을 클릭/탭하고 클릭/탭합니다 **[!UICONTROL 내 환경 설정]**.
 
