@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 55ed91d87d5b57d467604f7723949b4bf918f2ff
+source-git-commit: bd5611c32591562697750e6e6c86767a42bb7727
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3403'
 ht-degree: 36%
 
 ---
@@ -754,7 +754,19 @@ ht-degree: 36%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub로 세그멘테이션 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
    + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
-      + [Adobe Developer App Builder를 사용하여 AEM 확장](/help/implementing/developing/extending/app-builder.md)
+      + App Builder로 AEM 확장{#app-builder}
+         + [Adobe Developer App Builder를 사용하여 AEM 확장](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+         + [App Builder 소개](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+         + [Adobe 개발자 콘솔](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+         + [SDK 및 CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+         + [애플리케이션 만들기](/help/implementing/developing/extending/app-builder/videos/create.md)
+         + [작업](/help/implementing/developing/extending/app-builder/videos/actions.md)
+         + [저장소 라이브러리](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
+         + [이벤트 기반 애플리케이션](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
+         + [프런트엔드 애플리케이션](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
+         + [보안](/help/implementing/developing/extending/app-builder/videos/security.md)
+         + [애플리케이션 배포](/help/implementing/developing/extending/app-builder/videos/deploy.md)
+         + [애플리케이션 게시](/help/implementing/developing/extending/app-builder/videos/publish.md)
       + [경험 구성요소 확장](/help/implementing/developing/extending/experience-fragments.md)
       + [컨텐츠 조각 사용자 지정 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [컨텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
