@@ -1,64 +1,48 @@
 ---
-title: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2021.12.0의 Cloud Manager 릴리스 노트
+description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2021.12.0.
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 2%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service Manager에 대한 릴리스 노트를 간략하게 설명합니다2021.11.0.
+# Adobe Experience Manager as a Cloud Service 2021.12.0의 Cloud Manager 릴리스 노트 {#release-notes}
+
+이 페이지에서는 AEM as a Cloud Service에서 Cloud Manager에 대한 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
+>
+>을(를) 참조하십시오. [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md) 최신 Adobe Experience Manager as a Cloud Service 릴리스 노트 를 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 날짜는 2021년 11월 4일입니다.
-다음 릴리스는 2021년 12월 16일에 예정되어 있습니다.
+AEM as a Cloud Service 2021.12.0의 Cloud Manager 릴리스 날짜는 2021년 12월 16일입니다. 다음 릴리스는 2022년 1월에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new}
 
-* 이제 사용자는 새로운 프런트 엔드 파이프라인을 활용하여 프런트 엔드 코드만 신속하게 배포할 수 있습니다. 자세한 내용은 [Cloud Manager 프런트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 추가 정보
-
-   >[!IMPORTANT]
-   >AEM 버전을 사용해야 합니다. `2021.10.5933.20211012T154732Z` 최신 프런트 엔드 파이프라인을 활용합니다.
-
-* 코드 품질 파이프라인 기간은 전체 AEM 이미지를 작성하지 않고도 보다 효율적인 방식으로 코드 분석을 수행하므로 크게 줄어듭니다. 이 변경 사항은 릴리스 후 몇 주에 걸쳐 점진적으로 롤아웃됩니다.
-
-* 이제 Git 커밋 ID가 파이프라인 실행 세부 사항에 표시되므로 빌드된 코드를 쉽게 추적할 수 있습니다.
-
-* 이제 공개적으로 노출된 API를 통해 프로그램 생성을 사용할 수 있습니다.
-
-* 이제 공개적으로 노출된 API를 통해 환경 만들기를 사용할 수 있습니다.
-
-* 다음 `x-request-id` 이제 응답 헤더가 의 API Playground에 표시됩니다. [www.adobe.io](https://www.adobe.io/). 이 헤더는 문제 해결을 위해 고객 지원 문제를 제출할 때 유용합니다.
-
-* 사용자는 파이프라인이 없는 파이프라인 카드에 적절한 지침이 제공됩니다.
-
-* 이제 연관된 세부 사항과 함께 파이프라인 및 코드 실행과 같은 활동을 볼 수 있는 새로운 활동 페이지를 사용할 수 있습니다. 시간이 지나면서 이 페이지에 나열된 활동은 제공된 세부 정보와 함께 범위가 확장됩니다.
-
-* 이제 세부 사항 요약을 쉽게 볼 수 있도록 마우스로 가리키면 상태 팝오버가 있는 새 파이프라인 페이지를 사용할 수 있습니다. 파이프라인 실행은 연관된 세부 정보와 함께 볼 수 있습니다.
-
-* 이제 파이프라인 편집 API에서 배포 단계에서 사용되는 환경 변경을 지원합니다.
-
-* 큰 패키지에 대해 OakPal 검색 프로세스의 최적화가 도입되었습니다.
-
-* 이제 품질 문제 CSV 파일에 각 품질 문제에 대한 타임스탬프가 포함됩니다.
+* UI에 이미 표시되는 커밋 해시가 이제 API에서도 제공됩니다.
+* 이제 활동 페이지에 파이프라인 세부 사항을 요약하여 제공하는 파이프라인 실행을 위한 팝오버가 포함되어 있습니다.
+* 활동 페이지에 제공된 추가 세부 사항을 포함하도록 업데이트를 추가했습니다.
+* 이제 Cloud Manager의 학습 탭에 API 안내서 및 관련 리소스에 빠르게 액세스할 수 있습니다.
+* 이제 배포 관리자 역할을 가진 사용자는 저장소 페이지의 작업 메뉴에서 분기가 없는 저장소에 대한 프로젝트/분기 생성 마법사를 시작할 수 있습니다.
+* 이제 파이프라인 추가 또는 편집 워크플로우에 있는 배포 관리자에 선택한 저장소에 분기가 없는 경우 분기나 프로젝트를 생성하는 방법에 대한 정보를 제공합니다.
+* 에 새로운 Cloud Manager 셀프 서비스 기능이 추가되었습니다. [환경 수준에서 자유 형식 변수 및 암호 추가.](/help/implementing/cloud-manager/environment-variables.md)
+* 새로운 참조 데모 추가 기능(2021년 12월 17일 제공)을 사용하면 AEM 제품에 대한 최신 데모 코드 베이스를 설치하여 새로운 기능을 통해 배포할 수 있습니다 [빠른 사이트 생성 도구](/help/journey-sites/quick-site/overview.md) 참조하십시오.
+* 이제 프런트엔드 파이프라인이 파이프라인 변수를 지원합니다.
+* 이제 모든 샌드박스에 대한 프로그램 편집 대화 상자에서 화면을 활성화할 수 있습니다.
+* 개요 페이지에서 클릭유도문안 카드에서 제공하는 지침은 프로덕션 전체 스택 파이프라인과의 연결을 정확하게 반영하도록 새로 고침되었습니다.
+* 소스 코드, 커밋 ID 등을 포함하여 파이프라인에 적용할 수 있는 추가 세부 사항을 표시하는 활동 페이지 개선 사항이 추가되었습니다.
+* 잠재적인 혼동을 제거하기 위해 TXT 항목(&quot;TXT 레코드&quot; 대신 &quot;TXT 값&quot;)을 복사할 때 UI가 약간 업데이트되었습니다.
+* [인증서 오류와 관련된 설명서입니다](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) 문제 해결 단계와 함께 추가 예를 포함하도록 가 업데이트되었습니다.
+* 이제 프로덕션에 배포하기 전에 프런트엔드 파이프라인 실행에서 옵션을 사용하여 거부하거나 승인할 수 있습니다.
 
 ### 버그 수정 {#bug-fixes}
 
-* 특정 비정형 빌드 구성은 빌드 컨테이너를 시작 및 중지할 때 외부 네트워크 I/O를 발생시킨 파이프라인의 Maven 아티팩트 캐시에 불필요한 파일이 저장되었습니다.
-
-* 배포 단계가 없는 경우 파이프라인 PATCH API가 실패합니다.
-
-* 다음 `ClientlibProxyResourceCheck` 일반적인 기본 경로가 있는 클라이언트 라이브러리가 있을 때 품질 규칙이 긍정 오류(false positive)를 생성하는 것이었습니다.
-
-* 최대 저장소 수에 도달했을 때 오류 메시지에 오류 이유를 지정하지 않았습니다.
-
-* 드문 경우이지만 특정 응답 코드를 잘못 처리하여 파이프라인이 실패했습니다.
-
+* 기능 및 UI 테스트 가공물이 빌드 단계 로그에 포함되지 않았습니다.
+* 제품, 기능 및 UI 테스트 단계의 로그에 공개 API를 통해 액세스할 수 없었습니다.
+* 환경 세부 사항 페이지에서 게시 또는 미리 보기 서비스로의 링크가 작동하지 않는 경우가 드물게 나타납니다.
+* 사용자가 이름 필드에 다른 이름을 입력할 때에도 전체 스택 프로덕션 파이프라인의 이름이 &quot;프로덕션 파이프라인&quot;으로 유지됩니다.

@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7b636396dd9ca34955d2f40a7191821e43cb30f9
+source-git-commit: 8066635a11712f942fc4df813b5a4343c3ff8e87
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3370'
 ht-degree: 36%
 
 ---
@@ -532,8 +532,9 @@ ht-degree: 36%
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
    + Cloud Manager 사용 {#using-cloud-manager}
       + Cloud Manager 릴리스 노트 {#release-notes-cloud-manager}
-         + [현재 릴리스 노트(2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+         + [현재 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2021년 {#2021}
+            + [2021.11.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [2021.10.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
             + [2021.9.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
             + [2021.8.0 릴리스 노트](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
@@ -579,6 +580,7 @@ ht-degree: 36%
          + [Adobe Cloud Manager와 Git 통합](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [여러 소스 Git 리포지토리 작업](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [AEM as a Cloud Service용 엔터프라이즈 팀 개발 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [환경 변수](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 파이프라인 {#cicd-pipelines}
          + [소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + 프로덕션 파이프라인 {#production-pipelines}
