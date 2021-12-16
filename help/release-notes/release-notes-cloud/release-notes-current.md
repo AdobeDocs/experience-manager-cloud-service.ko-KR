@@ -3,9 +3,9 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 994ecec88f2724a75d9b11ba38c9c854a6983066
+source-git-commit: edb547fa31158e1608b57231d9705d24f008b12e
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
@@ -89,7 +89,7 @@ AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 날짜는 2021년 11
 * 이제 사용자는 새로운 프런트 엔드 파이프라인을 활용하여 프런트 엔드 코드만 신속하게 배포할 수 있습니다. 자세한 내용은 [Cloud Manager 프런트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 추가 정보
 
    >[!IMPORTANT]
-   >AEM 버전을 사용해야 합니다. `2021.10.5933.20211012T154732Z` 최신 프런트 엔드 파이프라인을 활용합니다.
+   >AEM 버전을 사용해야 합니다. `2021.10.5933.20211012T154732Z` 또는 그 이상으로 새로운 프런트엔드 파이프라인을 활용합니다.
 
 * 코드 품질 파이프라인 기간은 전체 AEM 이미지를 작성하지 않고도 보다 효율적인 방식으로 코드 분석을 수행하므로 크게 줄어듭니다. 이 변경 사항은 릴리스 후 몇 주에 걸쳐 점진적으로 롤아웃됩니다.
 
