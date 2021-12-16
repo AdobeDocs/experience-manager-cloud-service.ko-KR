@@ -205,7 +205,7 @@ OSGI 번들 및 관련 구성이 관리되는 웹 콘솔 및 이전에 AEM Quick
 
 >[!NOTE]
 >
->자세한 내용은 [백업](/help/operations/backup.md), [색인 지정](/help/operations/indexing.md), 및 [기타 유지 관리 작업](/help/operations/maintenance.md).
+>For further details start with [Backup](/help/operations/backup.md), [Indexing](/help/operations/indexing.md), and [other Maintenance Tasks](/help/operations/maintenance.md).
 
 AEM as a Cloud Service을 사용하면 이러한 작업이 자동화되므로 더 이상 서비스를 중단할 필요가 없습니다.
 
