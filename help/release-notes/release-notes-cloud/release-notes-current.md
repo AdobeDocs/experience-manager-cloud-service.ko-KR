@@ -3,9 +3,9 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
+source-git-commit: 994ecec88f2724a75d9b11ba38c9c854a6983066
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
@@ -25,61 +25,55 @@ ht-degree: 2%
 
 ## 릴리스 날짜 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2021.10.0)은 2021년 11월 4일입니다.
-다음 릴리스(2021.11.0)은 2021년 12월 16일에 있습니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2021.11.0)은 2021년 12월 16일입니다.
+다음 릴리스(2022.1.0)는 2022년 1월 27일입니다.
 
 ## 릴리스 비디오 {#release-video}
 
-을(를) 보십시오. [2021년 10월 릴리스 개요](https://video.tv.adobe.com/v/338253) 비디오 를 참조하십시오.
+을(를) 보십시오. [2021년 12월 릴리스 개요](https://video.tv.adobe.com/v/339278) 비디오 를 참조하십시오.
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### 의 새로운 기능 [!DNL Sites] {#sites-features}
-
-* 이제 컨텐츠 조각 모델은 게시된 후 자동으로 읽기 전용 상태로 설정되므로, 편집된 모델을 다시 게시한 후 실수로 라이브 API 쿼리를 중단하지 않습니다. 게시된 모델을 편집하려고 하면 사용자에게 경고가 표시됩니다. 경고를 수락하면 편집할 수 있습니다.
-
-## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### 의 새로운 기능 [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] 에서는 이제 지원되는 오디오 및 비디오 자산에서 텍스트 스크립트를 자동으로 생성할 수 있도록 기본 제공 커넥터를 사용합니다. [!DNL Azure Media Services]. 다음 [지원되는 파일 형식](/help/assets/file-format-support.md#audio-video-transcription-formats) 는 자동으로 전사되며 텍스트는 WebVTT 형식으로 저장됩니다. WebVTT 캡션은 보다 효과적인 검색, 캡션 또는 번역을 위해 사용됩니다. 또한 이 기능은 자산의 액세스 가능성, 검색 가능성 및 현지화를 개선합니다.
+* 이제 Dynamic Media 이미지 스마트 자르기 및 색상 견본을 최신 Sensei 서비스에서 제공하며 향상된 자르기 및 색상 견본을 생성합니다. 또한 동일한 종횡비이지만 다양한 해상도에서 서로 다른 자르기 콘텐츠를 생성하기 위한 개선 사항을 시작했습니다. 또한 이미지 프로필의 폭과 높이가 변경되지 않은 경우 수동 편집 내용은 재처리 시 유지됩니다.
 
 ### 의 새로운 기능 [!DNL Assets] 사전 릴리스 채널 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 이제 이미지 스마트 자르기 및 색상 견본을 최신 Sensei 서비스에서 제공하며 향상된 자르기 및 색상 견본을 생성합니다. 또한 동일한 종횡비이지만 다양한 해상도에서 서로 다른 자르기 콘텐츠를 생성하기 위한 개선 사항을 시작했습니다. 또한 이미지 프로필의 폭과 높이가 변경되지 않은 경우 수동 편집 내용은 재처리 시 유지됩니다.
+* [!DNL Dynamic Media] - 이제 AEM Dynamic Media 인터페이스를 사용하여 Dynamic Media Classic 데스크탑 응용 프로그램을 진행할 필요 없이 일반 설정 및 게시 설정을 구성할 수 있습니다.
+
+* [!DNL Dynamic Media] 이제에서 MXF 비디오에 대한 수집, 미리 보기, 재생 및 게시를 지원합니다. MXF 비디오에 대한 주석 및 쇼퍼블 비디오는 아직 지원되지 않습니다.
+
+* 원격 DAM과 사이트 배포 간에 연결을 구성한 후 원격 DAM의 자산을 사이트 배포에서 사용할 수 있습니다. 이제 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니다. 업데이트가 지연되면 사이트 배포에서 자동으로 사용할 수 있습니다.
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
-### 의 새로운 기능 [!DNL Forms] {#what-is-new-forms-oct-2021}
+### 의 새로운 기능 [!DNL Forms] {#what-is-new-forms}
 
-* **응용 Forms용 Analytics**: 이제 Adaptive Forms을 통해 Adobe Analytics을 통해 로그인된 사용자와 로그인하지 않은(익명) 모두의 동작을 캡처하고 추적하여 최종 사용자 통찰력을 얻을 수 있습니다. 최종 사용자 경험을 향상시키기 위해 데이터를 기반으로 현명한 결정을 내릴 수 있습니다.
-
-### 에서 사용할 수 있는 새로운 기능 [!DNL Forms] 사전 릴리스 채널 {#prerelease-features-forms-oct-2021}
+* **Forms 포털**: 다음을 사용할 수 있습니다 [Forms 포털](/help/forms/configure-forms-portal.md) 게시된 적응형 양식을 AEM Sites 페이지에 나열하려면 다음을 수행하십시오. 사이트 방문자가 사용 가능한 모든 양식을 검색하는 데 도움이 됩니다. 또한 방문자는 양식 포털을 사용하여 적응형 양식의 초안을 저장하고 액세스하고 제출된 적응형 양식의 PDF 버전을 볼 수 있습니다.
 
 * **보안 처리를 위한 AEM 워크플로우 데이터 표면화**: 안전한 처리를 위해 고객 관리 저장소에 민감한 개인 데이터(SPD) 요소를 포함하는 처리 중인 AEM 워크플로우 데이터(AEM Workflow Variables 데이터)를 저장할 수 있습니다. 데이터 요소와 워크플로우 변수는 AEM 저장소에 저장되지 않으며 워크플로우를 처리하는 동안 고객 관리 저장소에서 주문형 가져옵니다.
 
-### 의 베타 기능 [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### 에서 사용할 수 있는 새로운 기능 [!DNL Forms] 사전 릴리스 채널 {#prerelease-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [통신 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 서식 파일과 XML 데이터를 결합하여 인쇄 문서를 다양한 형식으로 생성하는 데 도움이 됩니다. 이 서비스를 사용하면 문서를 동기식과 배치 모드로 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
 
    * XML 데이터로 템플릿 파일(PDF 및 XDP)을 채워서 문서를 생성합니다.
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
 
-에 쓸 수 있습니다. [!DNL formscsbeta@adobe.com] 베타 프로그램에 등록하려면
+* **Communications API로 작성된 레코드 문서 및 PDF 문서에 대한 사용자 정의 글꼴**: 이제 Communications API를 사용하여 생성된 PDF 문서에서 브랜드 승인 글꼴을 사용하여 조직 요구 사항에 맞게 만들 수 있습니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
 ### 새로운 기능 {#what-is-new-cif}
 
-* CIF 추가 기능은 새로운 GraphQL API 및 스키마를 사용하여 최신 Commerce v2.4.3을 지원합니다
+* Commerce의 확장 가능한 상위 구성 요소를 기반으로 하는 myAccount 구성 요소를 확장했습니다
 
-* 작성자는 리치 텍스트 편집기(RTE)를 사용하여 텍스트 필드에 제품 및 카탈로그 페이지에 대한 링크를 추가할 수 있습니다. CIF 아이콘이 RTE 도구 모음에 추가되어 컨텍스트를 종료하지 않고 제품이나 카테고리를 빠르게 검색하고 선택할 수 있는 선택기가 열립니다.
+![확장 myAccount 구성 요소](/help/assets/CIF/extended-myAccount-components.png)
 
-* 기존 팝업 장바구니 및 체크아웃이 전용 AEM 장바구니 및 체크아웃 페이지로 대체되었습니다. 이러한 페이지에 있는 구성 요소는 Magento의 확장 가능한 상위 구성 요소를 사용하여 만들어집니다
+* 작성자는 추가 권장 사항 유형을 사용하여 Ad-Hoc Commerce 제품 Recommendations을 만들 수 있습니다
 
-* 상인은 상거래 백엔드를 사용하여 탐색에서 특정 제품 카탈로그 카테고리를 숨길 수 있습니다. CIF 탐색 코어 구성 요소는 탐색에서 카테고리를 표시하거나 숨기기 위해 상거래 백엔드 구성 &quot;include in menu&quot;를 따릅니다
-
-* 카테고리 또는 제품 페이지를 찾을 수 없는 경우 AEM Storefront Venia에서 HTTP 404 오류를 반환합니다
+* AEM Storefront에서 기프트 카드 지원
 
 ## Cloud Manager {#cloud-manager}
 
@@ -131,56 +125,6 @@ AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 날짜는 2021년 11
 
 * 드문 경우이지만 특정 응답 코드를 잘못 처리하여 파이프라인이 실패했습니다.
 
-
-## 릴리스 날짜 {#release-date-cm-oct}
-
-AEM as a Cloud Service 2021.10.0의 Cloud Manager 릴리스 날짜는 2021년 10월 14일입니다.
-
-### 새로운 기능 {#what-is-new-cm-oct}
-
-* 향후 몇 가지 변경 사항에 대비하기 위해 기존 배포 파이프라인은 이제 사용자 인터페이스에서 다음과 같이 참조되고 레이블이 지정됩니다. **전체 스택** 파이프라인.
-
-* 이제 파이프라인 카드가 새로 고쳐져서 프로덕션 파이프라인과 비프로덕션 파이프라인을 모두 표시하는 통합된 단일 면을 표시할 수 있으며, 사용자는 각 파이프라인과 연관된 작업 메뉴에서 직접 실행/일시 중지/재개 를 선택할 수 있습니다.
-
-* 이제 배포 관리자 역할의 사용자는 UI를 통해 셀프 서비스 방식으로 프로덕션 파이프라인을 삭제할 수 있습니다.
-
-* 이제 익숙하고 현대적인 모듈을 사용할 수 있도록 파이프라인 경험을 추가 및 편집할 수 있습니다.
-
-* 이제 Cloud Manager 사용자는 **피드백** 랜딩 페이지의 오른쪽 위에 있는 단추.
-
-* 이제 Cloud Manager의 사용자 인터페이스에서 연간 SLA 그래프를 다운로드할 수 있습니다.
-
-* 이제 코드 품질 및 비프로덕션 파이프라인 실행에서는 빌드 단계에서 보다 효율적인 약식 복제 프로세스를 사용하므로 고객이 특히 큰 git 저장소를 사용하는 경우 빌드 시간이 빨라집니다.
-
-* 이제 IP 허용 목록 추가 마법사가 허용된 최대 IP 허용 목록 수에 도달했는지 사용자에게 알려줍니다.
-
-* 이제 Cloud Manager API 설명서에는 로그인한 사용자가 브라우저에서 API를 실험할 수 있도록 해주는 대화형 필드가 포함되어 있습니다. 자세한 내용은 [Cloud Manager API 놀이터](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) 자세한 내용
-
-* &#39;탐색 대상&#39; 아래의 선택 옵션이 비활성화되어 있으면 프로그램 카드의 도구 설명이 더 설명적입니다. 이제 &quot;프로덕션 환경이 없습니다.&quot;가 표시됩니다.
-
-### 버그 수정 {#bug-fixes-cm-oct}
-
-* 드문 경우이지만, Adobe 직원이 고객의 환경을 복원할 경우 환경이 완전히 작동하기 전에 복구가 완료된 것으로 간주됩니다.
-
-* 환경을 만드는 동안 수행된 특정 내부 요청이 다시 시도되지 않았습니다.
-
-* 도메인 이름 확인 후 배포 실패 오류가 발생하면 고객이 Adobe 담당자에게 문의하도록 오류 메시지가 수정되었습니다.
-
-## 모범 사례 분석기 {#best-practices-analyzer}
-
-### 릴리스 날짜 {#release-date-bpa-latest}
-
-Best Practices Analyzer v2.1.20 릴리스 날짜는 2021년 10월 5일입니다.
-
-### 새로운 기능 {#what-is-new}
-
-* 노드 이름 길이를 감지하고 보고할 수 있습니다.
-
-* 총 인덱스 크기를 감지하고 보고하는 기능.
-
-* 원래 표현물이 누락된 자산을 검색하고 보고하는 기능.
-
-
 ## 모범 사례 분석기 {#bpa-release}
 
 ### 릴리스 날짜 {#release-date-bpa}
@@ -197,14 +141,3 @@ Best Practices Analyzer v2.1.22 릴리스 날짜는 2021년 12월 1일입니다.
 
 * 잘못된 네거티브를 줄이기 위해 기초 구성 요소 탐지를 개선했습니다.
 * AEM Forms 고객의 경우 `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Service에서 사용할 수 없는 것이 수정되었습니다.
-
-## 컨텐츠 전송 도구 {#ctt-release}
-
-### 릴리스 날짜 {#release-date-ctt}
-
-컨텐츠 전송 도구 v1.7.10의 릴리스 날짜는 2021년 12월 8일입니다.
-
-### 새로운 기능 {#what-is-new-ctt}
-
-* 사용자가 비활성화할 수 있도록 컨텐츠 전송 도구에서 수집 단계에 추가/전환 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 수집 중. 최적의 수집 속도를 위해 작은 마이그레이션 세트에 대해 또는 마지막 수집 이후 몇 개의 Blob만 추가한 경우 수집 중 사전 복사를 비활성화해야 합니다.
-* 사용자 매핑 을 업데이트하여 한 번에 2,000명의 사용자를 얻을 수 있는 향상된 사용자 관리 API를 사용하여 성능을 크게 개선했습니다.

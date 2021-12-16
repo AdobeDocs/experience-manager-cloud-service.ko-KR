@@ -1,8 +1,7 @@
 ---
 title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms Portal을 만들고 기본 제공 코어 구성 요소를 사용하는 방법을 알아봅니다.
-exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: e46690fae931b85171a0c61d61fdd375ff8fba90
+source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 1%

@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 릴리스의 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 2020.10.0용 as a Cloud Service 릴리스 노트.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
+source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 20%
@@ -43,7 +43,7 @@ ht-degree: 20%
 
 * **[!DNL Assets]WebP 파일 지원**: [!DNL Assets] 이제 as a Cloud Service에서 WebP 이미지 형식을 지원합니다. WebP는 Google에서 만든 새로운 이미지 형식입니다. WebP 파일 형식의 이미지는 JPG 또는 PNG 파일과 시각적으로 구별할 수 없으며 파일의 크기가 훨씬 작습니다. 자산의 파일 크기를 줄이면 페이지 로드 시간이 빨라지고 콘텐츠 작성자가 더 빠른 웹 경험을 제공할 수 있습니다. 에서 WebP를 사용하는 방법을 참조하십시오. [처리 프로필 만들기](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
 ### 의 새로운 기능 [!DNL Forms] {#what-is-new-forms-oct-2021}
 
