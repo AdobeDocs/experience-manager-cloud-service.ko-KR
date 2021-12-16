@@ -3,9 +3,9 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: edb547fa31158e1608b57231d9705d24f008b12e
+source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1053'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ## 릴리스 비디오 {#release-video}
 
-을(를) 보십시오. [2021년 12월 릴리스 개요](https://video.tv.adobe.com/v/339278) 비디오 를 참조하십시오.
+을(를) 보십시오. [2021년 12월 릴리스 개요](https://video.tv.adobe.com/v/339278) 2021.11.0(2021년 11월) 릴리스에 추가된 기능에 대한 요약 비디오를 참조하십시오.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
