@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: aaeecc897157b08686a741ed7c2143a443fb2633
+source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
 workflow-type: tm+mt
-source-wordcount: '3354'
+source-wordcount: '3362'
 ht-degree: 36%
 
 ---
@@ -292,6 +292,7 @@ ht-degree: 36%
       + [MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md)
       + [자산 다운로드](/help/assets/download-assets-from-aem.md)
       + [편집할 자산 체크인 및 체크아웃](/help/assets/check-out-and-submit-assets.md)
+      + [개인 폴더 만들기 및 공유](/help/assets/private-folder.md)
       + [자산 Digital Rights Management](/help/assets/drm.md)
       + [자산을 워터마크 지정](/help/assets/watermark-assets.md)
       + [자산을 [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)
@@ -435,7 +436,7 @@ ht-degree: 36%
       + [데이터 소스 구성](/help/forms/configure-data-sources.md)
       + [구성 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [구성 [!DNL Azure] 저장소](/help/forms/configure-azure-storage.md)
-      + [구성 [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] 클라우드 서비스](/help/forms/configure-msdynamics-salesforce.md)
+      + [구성 [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스](/help/forms/configure-msdynamics-salesforce.md)
       + [양식 데이터 모델 작성](/help/forms/create-form-data-models.md)
       + [양식 데이터 모델을 사용한 작업](/help/forms/work-with-form-data-model.md)
       + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)

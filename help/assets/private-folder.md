@@ -4,9 +4,9 @@ description: 에서 개인 폴더를 만드는 방법을 알아봅니다. [!DNL 
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: 2a05822588cdb031a1fe25429910dd44f67f2d36
+source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >개인 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다.
 >
->비공개 폴더를 만들려면 읽기 및 수정이 필요합니다 [액세스 제어 권한](/help/sites-administering/security.md#permissions-in-aem) 상위 폴더에서 을 클릭합니다. 관리자가 아닌 경우 기본적으로 이 권한은 활성화되지 않습니다 `/content/dam`. 이 경우, 비공개 폴더를 만들기 전에 먼저 사용자 ID/그룹에 대한 이러한 권한을 얻습니다.
+>비공개 폴더를 만들려면 `Read` 및 `Modify` 비공개 폴더를 만들 상위 폴더의 권한. 관리자가 아닌 경우 기본적으로 이 권한은 활성화되지 않습니다 `/content/dam`. 이 경우, 비공개 폴더를 만들기 전에 먼저 사용자 ID/그룹에 대한 이러한 권한을 얻습니다.
 
 ## 비공개 폴더 만들기 및 공유  {#create-share-private-folder}
 
