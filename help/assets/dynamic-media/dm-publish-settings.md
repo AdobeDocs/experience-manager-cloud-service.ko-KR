@@ -7,18 +7,19 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
-hide: true
-hidefromtoc: true
 mini-toc-levels: 4
-source-git-commit: 5c5588179d4ebcfb3bd16a63a273f686e348d50e
+exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
+source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 3%
 
 ---
 
-
 # 이미지 서버에 대한 Dynamic Media 게시 설정 구성
+
+<!-- hide: yes
+hidefromtoc: yes -->
 
 Dynamic Media 게시 설정 구성은 다음 경우에만 사용할 수 있습니다.
 

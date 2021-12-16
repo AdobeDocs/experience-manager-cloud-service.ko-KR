@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 3f90ce1b9325d4dabcd97b515cebffe008b199c7
+source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
 workflow-type: tm+mt
-source-wordcount: '4067'
-ht-degree: 4%
+source-wordcount: '3514'
+ht-degree: 3%
 
 ---
 
@@ -90,7 +90,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | 속성 | 설명 |
    |---|---|
-   | 회사 | Dynamic Media 계정의 이름입니다. 다양한 하위 브랜드, 사업부 또는 스테이징/프로덕션 환경에 대한 여러 Dynamic Media 계정이 있을 수 있습니다. |
+   | 회사 | The name of the Dynamic Media account. 다양한 하위 브랜드, 사업부 또는 스테이징/프로덕션 환경에 대한 여러 Dynamic Media 계정이 있을 수 있습니다. |
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
    | 자산 게시 | 다음 세 가지 옵션 중에서 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**- 자산이 업로드되면 시스템이 자산을 수집하여 URL/포함 기능을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다.<br>**[!UICONTROL 활성화 시]** - URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**- 자산이 보안 미리 보기용으로만 자동 게시됩니다. 공용 도메인에서 전달을 위해 DMS7에 게시하지 않고 as a Cloud Service에 명시적으로 게시할 수도 있습니다. 나중에 이 옵션은 자산을 as a Cloud Service으로 게시하고 자산을 Dynamic Media에 게시하며 상호 배타적으로 게시하려고 합니다. 즉, 자산을 DMS7에 게시하여 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있습니다. 또는 미리 보기를 위해 Experience Manager as a Cloud Service에만 자산을 게시할 수 있습니다. 동일한 자산이 공용 도메인에 전달되도록 DMS7에 게시되지 않습니다. |
    | 보안 미리 보기 서버 | 보안 표현물 미리 보기 서버의 URL 경로를 지정할 수 있도록 해줍니다. 즉, 표현물이 생성되면 Experience Manager as a Cloud Service이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리는 Experience Manager as a Cloud Service 인스턴스로 다시 전송되지 않음).<br>회사의 서버나 특수 서버를 사용하기 위해 특별한 계획이 없는 한 Adobe은 이 설정을 지정된 대로 유지하는 것을 권장합니다. |
@@ -207,46 +207,19 @@ Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media �
 * [지원되는 형식에 대한 MIME 유형 편집](#editing-mime-types-for-supported-formats)
 * [지원되지 않는 형식에 대한 MIME 유형 추가](#adding-mime-types-for-unsupported-formats)
 
-<!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+<!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+#### 이미지 서버에 대한 Dynamic Media 게시 설정 구성 {#publishing-setup-for-image-server}
 
-The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 웹 사이트 또는 응용 프로그램으로 자산을 전달하는 방법을 결정하는 기본 설정을 설정합니다.
 
-See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
+자세한 내용은 [이미지 서버에 대한 Dynamic Media 게시 설정 구성](/help/assets/dynamic-media/dm-publish-settings.md).
 
-#### 이미지 서버에 대한 게시 설정 {#publishing-setup-for-image-server}
+#### Dynamic Media 일반 설정 구성 {#configuring-application-general-settings}
 
-게시 설정 설정은 Dynamic Media에서 기본적으로 자산이 전달되는 방법을 결정합니다. 지정된 설정이 없으면 Dynamic Media은 게시 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어, 해상도 속성을 포함하지 않는 이미지 전달에 대한 요청에서 기본 개체 해상도 설정이 있는 이미지가 생성됩니다.
+Dynamic Media 구성 **[!UICONTROL 게시 서버 이름]** URL 및 **[!UICONTROL 원본 서버 이름]** URL. 지정할 수도 있습니다 **[!UICONTROL 애플리케이션에 업로드]** 설정 및 **[!UICONTROL 기본 업로드 옵션]** 모두 특정 사용 사례를 기반으로 합니다.
 
-게시 설정을 구성하려면: Dynamic Media Classic에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버]**.
-
-이미지 서버 화면은 이미지 전달을 위한 기본 설정을 설정합니다. 각 설정에 대한 설명은 UI 화면을 참조하십시오.
-
-**[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
-**[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
-**[!UICONTROL 공통 축소판 속성]** - 이러한 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
-**[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형에 대한 설정입니다.
-**[!UICONTROL 색상 관리 속성]** - 이러한 설정은 사용할 ICC 색상 프로파일을 결정합니다.
-**[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 이전 버전과의 호환성을 위해 텍스트 레이어의 선행 및 후행 단락을 버전 3.6의 단락과 동일하게 처리할 수 있습니다.
-**[!UICONTROL 지역화 지원]** - 이 설정을 사용하면 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정하여 뷰어의 다양한 도구 설명에 대해 지원할 언어를 정의할 수 있습니다. 설정에 대한 자세한 정보 **[!UICONTROL 지역화 지원]**&#x200B;를 참조하십시오. [자산 현지화를 설정할 때의 고려 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
-
-<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
-
-Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
-
-See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
-
-#### 응용 프로그램 일반 설정 구성 {#configuring-application-general-settings}
-
-응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 일반 설정]**.
-
-**[!UICONTROL 서버]** - 계정 프로비저닝 시 Dynamic Media에서 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다. 서버 이름을 변경하지 마십시오. 서버 이름을 변경하지 마십시오. 단, Experience Manager as a Cloud Service 지원를 통해 서버 이름을 명시적으로 지정하지 마십시오.
-**[!UICONTROL 이미지 덮어쓰기]** - Dynamic Media에서는 두 파일의 이름이 같을 수 없습니다. 각 항목의 URL ID(파일 이름에서 확장자를 뺀 경우)는 고유해야 합니다. 다음 옵션은 교체 자산을 업로드하는 방법을 지정합니다. 원본과 중복이 되는지 여부 중복 자산은 &quot;-1&quot;로 이름이 변경됩니다(예를 들어 chair.tif는 chair-1.tif로 이름이 변경됨). 이러한 옵션은 원본과 다른 폴더에 업로드된 자산이나 원본과 다른 파일 확장자가 있는 자산에 영향을 줍니다.
-**[!UICONTROL 현재 폴더에 동일한 기본 이미지 이름/확장명으로 덮어쓰기]** - 이 옵션은 교체를 위한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더로 업로드하고 원본과 동일한 파일 확장자가 있어야 합니다. 이러한 요구 사항을 충족하지 않으면 복제본이 만들어집니다. Experience Manager as a Cloud Service과 일관성을 유지하려면 항상 을 선택합니다 **[!UICONTROL 현재 폴더에 동일한 기본 이미지 이름/확장명으로 덮어쓰기]**.
-**[!UICONTROL 동일한 기본 자산 이름/확장에 있는 모든 폴더에 덮어쓰기]** - 교체 이미지의 파일 확장명이 원본 이미지와 동일해야 합니다. 예를 들어 chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 합니다. 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다. 파일을 원래 위치에서 더 이상 찾을 수 없습니다.
-**[!UICONTROL 확장에 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기]** - 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자를 가진 파일을 업로드하고, 원래 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
-**[!UICONTROL 기본 색상 프로필]** - 다음을 참조하십시오. [색상 관리 구성](#configuring-color-management) 추가 정보. By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset&#39;s detail view. You can increase this limit. 자세한 내용은 [표시되는 이미지 사전 설정 수를 늘리거나 줄입니다](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘리거나 줄입니다](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+자세한 내용은 [Dynamic Media 일반 설정 구성](/help/assets/dynamic-media/dm-general-settings.md).
 
 #### 색상 관리 구성 {#configuring-color-management}
 
@@ -266,8 +239,8 @@ Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할
    |---|---|
    | CMYK 기본 색상 공간 | 기본 CMYK 색상 프로파일의 이름입니다. |
    | 회색 음영 기본 색상 공간 | 기본 회색 색상 프로필의 이름입니다. |
-   | RGB 기본 색상 공간 | 기본 RGB 색상 프로필의 이름입니다. |
-   | 색상 변환 렌더링 의도 | 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL 지각]**, **[!UICONTROL 상대 콜론]**, **[!UICONTROL 채도]**, **[!UICONTROL 절대 동량체]**. Adobe 권장 사항 **[!UICONTROL 상대적]** 을 기본값으로 사용합니다. |
+   | RGB Default Color Space | Name of the default RGB color profile. |
+   | 색상 변환 렌더링 의도 | Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default. |
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -290,7 +263,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript® 파일(.EPS)을 래스터화합니다.
 * [비디오 프로필](/help/assets/dynamic-media/video-profiles.md) 및 [이미지 프로필](/help/assets/dynamic-media/image-profiles.md) 는 각각 비디오와 이미지 처리를 정의하는 데 사용할 수 있습니다.
 
-자세한 내용은 [자산 업로드](/help/assets/add-assets.md).
+See [Upload assets](/help/assets/add-assets.md).
 
 **지원되는 형식에 대한 MIME 유형을 편집하려면:**
 
@@ -330,17 +303,17 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
 1. On the page, scroll down to the name *Adobe CQ Scene7 Asset MIME type Service* as seen the following screenshot. To the right of the name, tap the **[!UICONTROL Edit the configuration values]** (pencil icon).
 
-   ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
+   ![구성 값 편집](assets/2019-08-02_16-44-56.png)
 
 1. 설정 **Adobe CQ Scene7 Asset MIME 유형 서비스** 페이지에서 더하기 기호 아이콘 &lt;+>을 선택합니다. 새 MIME 유형을 추가할 더하기 기호를 선택하는 테이블의 위치는 매우 작습니다.
 
-   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
+   ![Adobe CQ Scene7 Asset Mime 유형 서비스](assets/2019-08-02_16-27-27.png)
 
 1. 유형 `DWG=image/vnd.dwg` 방금 추가한 빈 텍스트 필드에서 을 클릭합니다.
 
    다음 `DWG=image/vnd.dwg` MIME 유형은 샘플 용도로만 사용됩니다. 여기에 추가하는 MIME 유형은 다른 지원되지 않는 형식일 수 있습니다.
 
-   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
+   ![DWG MIME 유형 추가](assets/2019-08-02_16-36-36.png)
 
 1. 페이지의 오른쪽 아래 모서리에서 을(를) 선택합니다. **[!UICONTROL 저장]**.
 
@@ -349,24 +322,24 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 1. 열려 있는 Experience Manager as a Cloud Service 콘솔이 있는 브라우저 탭으로 돌아갑니다.
 1. Experience Manager as a Cloud Service에서 로 이동합니다. **[!UICONTROL 도구 > 일반 > CRXDE Lite]**.
 
-   ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
+   ![도구 > 일반 > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
-1. 왼쪽 레일에서 다음 위치로 이동합니다.
+1. In the left rail, navigate to the following:
 
    `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
 1. MIME 유형을 드래그합니다 `image_vnd.dwg` 바로 위에 떨어뜨려주세요 `image_` 다음 스크린샷에 표시된 것처럼 트리에서 입니다.
 
-   ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
+   ![CRXDE Lite에서 DWG 파일 편집](assets/crxdelite_cqdoc-14627.png)
 
-1. MIME 유형 `image_vnd.dwg` 여전히 선택됨, **[!UICONTROL 속성]** 탭, **[!UICONTROL 활성화됨]** 행, 아래 **[!UICONTROL 값]** 열 헤더에서 값을 두 번 누릅니다. 다음 **[!UICONTROL 값]** 드롭다운 목록이 열립니다.
-1. 유형 `false` 필드에서 (또는 를) 선택합니다. **[!UICONTROL false]** 드롭다운 목록에서).
+1. With the MIME type `image_vnd.dwg` still selected, from the **[!UICONTROL Properties]** tab, in the **[!UICONTROL enabled]** row, under the **[!UICONTROL Value]** column header, double-tap the value. 다음 **[!UICONTROL 값]** 드롭다운 목록이 열립니다.
+1. Type `false` in the field (or select **[!UICONTROL false]** from the drop-down list).
 
-   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
+   ![CRXDE Lite에서 MIME 유형 편집](assets/2019-08-02_16-60-30.png)
 
-1. CRXDE Lite 페이지의 왼쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 모두 저장]**.
+1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 
-### (선택 사항) Dynamic Media의 성능 조정 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Optional) Tune the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Dynamic Media을 유지하려면 <!--(with `dynamicmedia_scene7` run mode)--> 원활하게 실행되는 Adobe은 다음과 같은 동기화 성능/확장성 미세 조정 팁을 권장합니다.
 
@@ -415,7 +388,7 @@ Granite 워크플로우 큐는 비임시 워크플로우에 사용됩니다. Dyn
 
    대부분의 사용 사례의 경우 0.5 기본 설정으로도 충분합니다.
 
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+   ![작업 처리 큐 구성](assets/chlimage_1-1.jpeg)
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -448,18 +421,18 @@ Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 
 
 Dynamic Media Classic(Scene7) 업로드 연결 설정은 Experience Manager 자산을 Dynamic Media Classic 서버에 동기화합니다.
 
-**Dynamic Media Classic(Scene7) 서버에 대한 최대 업로드 연결을 업데이트하려면:**
+**To update the maximum upload connections to the Dynamic Media Classic (Scene7) server:**
 
 1. 다음으로 이동 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
-1. 에서 **[!UICONTROL 연결 수]** 필드 또는 **[!UICONTROL 활성 작업 시간 초과]** 필드 또는 둘 다 원하는 대로 숫자를 변경합니다.
+1. In the **[!UICONTROL Number of connections]** field, or the **[!UICONTROL Active job timeout]** field, or both, change the number as desired.
 
    다음 **[!UICONTROL 연결 수]** 설정은 Dynamic Media 업로드에 Experience Manager이 허용되는 최대 HTTP 연결 수를 제어합니다. 일반적으로 10개의 연결의 사전 정의된 값으로 충분합니다.
 
    다음 **[!UICONTROL 활성 작업 시간 초과]** 설정 은 업로드된 Dynamic Media 자산이 게재 서버에 게시될 대기 시간을 결정합니다. 이 값은 기본적으로 2100초 또는 35분입니다.
 
-   대부분의 사용 사례에서 2100으로 설정하면 충분합니다.
+   For most use cases, the setting of 2100 is sufficient.
 
-   ![chlimage_1-2](assets/chlimage_1-2.jpeg)
+   ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
