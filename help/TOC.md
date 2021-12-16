@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
+source-git-commit: 7b636396dd9ca34955d2f40a7191821e43cb30f9
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3365'
 ht-degree: 36%
 
 ---
@@ -432,6 +432,7 @@ ht-degree: 36%
          + [적응형 양식의 메타데이터 속성 재사용](/help/forms/reusing-adaptive-forms.md)
       + 적응형 양식의 액세스 가능성 개선 {#accessible-adaptive-forms}
          + [액세스 가능한 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
+      + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
    + 양식을 하나 이상의 데이터 소스와 통합 {#use-form-data-model}
       + [데이터 소스 구성](/help/forms/configure-data-sources.md)
       + [구성 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
