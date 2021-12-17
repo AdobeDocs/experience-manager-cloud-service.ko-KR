@@ -2,10 +2,10 @@
 title: 파트너를 위한 Experience Manager as a Cloud Service으로 마이그레이션 안내서
 description: 파트너를 위한 Experience Manager as a Cloud Service으로 마이그레이션 안내서
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2092'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -115,7 +115,7 @@ Experience Manager as a Cloud Service을 사용하면 팀이 제품 업그레이
 
 아래 그림은 권장되는 클라우드 서비스로의 전환 여정을 시각적으로 보여줍니다.
 
-![이미지](/help/move-to-cloud-service/assets/home-img1.png)
+![이미지](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
@@ -150,7 +150,7 @@ Cloud Service으로 전환 여정을 시작하기 전에 먼저 Experience Manag
 
 조직에서 Cloud Manager를 사용하여 클라우드에서 Experience Manager을 자체 관리할 수 있습니다. 여기에는 지속적인 통합 및 지속적인 게재([CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/overview/ci-cd-pipeline.html?lang=en#overview)) 프레임워크를 사용하면 IT 팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있습니다.
 
-#### 컨텐츠 마이그레이션
+#### 콘텐츠 마이그레이션
 
 1. [컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) - 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용됩니다.
 2. 패키지 관리자 - 리포지토리의 가변 콘텐츠를 가져오고 내보내는 데 사용됩니다.
@@ -171,7 +171,7 @@ Cloud Service으로 전환 여정을 시작하기 전에 먼저 Experience Manag
 1. [Cloud Manager에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) git
 2. 다음을 통해 고객 코드 실행 [Cloud Manager 품질 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
 3. [개발 환경에 배포](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**마이그레이션만**] 패키지 또는 를 사용하여 컨텐츠 전송 [컨텐츠 전송 도구](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
+4. [**마이그레이션만**] 패키지 또는 를 사용하여 컨텐츠 전송 [컨텐츠 전송 도구](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
 5. 권장 테스트 주기(연기, QA 등)를 수행합니다
 6. Cloud Manager 프로덕션 파이프라인으로 승격
 7. 연기 테스트 유효성 검사
@@ -194,7 +194,7 @@ Go-live 후 단계에서는 임시 파일을 정리하고, 지속적인 개발�
 
 ### 도구 및 리소스
 
-| 평가 | 리팩터링 | Experience Manager 현대화 | 컨텐츠 마이그레이션 |
+| 평가 | 리팩터링 | Experience Manager 현대화 | 콘텐츠 마이그레이션 |
 |------------|-------------|---------------------------------|-------------------|
 | <ul><li>[모범 사례 분석기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[통합 경험 플러그인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[정적 템플릿을 편집 가능한 템플릿](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[디자인 구성을 정책](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[기초 구성 요소를 핵심 구성 요소](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[클래식 UI를 터치 사용 UI](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[컨텐츠 전송 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[설치할 수 있습니다](/help/implementing/developing/tools/package-manager.md)</li></ul> |
 

@@ -2,7 +2,7 @@
 title: 컨텐츠 전송 도구 시작하기
 description: 컨텐츠 전송 도구 시작하기
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: c1a530f749e766650d5fe20c89d5672f56885fbb
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 27%
@@ -57,16 +57,16 @@ ht-degree: 27%
 
 1. Adobe Experience Manager을 선택하고 도구 -> 로 이동합니다. **작업** -> **컨텐츠 마이그레이션**.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. 을(를) 선택합니다 **컨텐츠 전송** 옵션: **컨텐츠 마이그레이션** 마법사
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. 첫 번째 마이그레이션 세트를 만들면 아래 콘솔이 나타납니다. **마이그레이션 세트 만들기**&#x200B;를 클릭하여 새 마이그레이션 세트를 만듭니다.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >기존 마이그레이션 세트가 있는 경우 콘솔에 기존 마이그레이션 세트 목록이 현재 상태로 표시됩니다.
@@ -74,7 +74,7 @@ ht-degree: 27%
 
 1. 의 필드를 채웁니다 **마이그레이션 세트 만들기** 아래 설명된 대로 화면.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **이름**: 마이그레이션 세트의 이름을 입력합니다.
       >[!NOTE]
@@ -95,7 +95,7 @@ ht-degree: 27%
 
       1. **버전 포함**: 필요에 따라 선택합니다. 버전이 포함되면 경로는 `/var/audit` 은 감사 이벤트를 마이그레이션하기 위해 자동으로 포함됩니다.
 
-         ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
          >마이그레이션 세트의 일부로 버전을 포함하려 하며 다음 방법으로 추가 작업을 수행하는 경우 `wipe=false`를 입력한 다음 컨텐츠 전송 도구의 현재 제한으로 인해 버전 제거를 비활성화해야 합니다. 버전 삭제를 활성화한 상태로 유지하고 마이그레이션 세트에 대한 추가 작업을 수행하려는 경우 수집을 다음으로 수행해야 합니다 `wipe=true`.
@@ -115,7 +115,7 @@ ht-degree: 27%
 
 1. 마이그레이션 세트는 **컨텐츠 전송** 마법사: 아래 그림과 같이
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
    모든 기존 마이그레이션 세트가 **컨텐츠 전송** 현재 상태 및 상태 정보가 있는 마법사 아래에 설명된 이러한 아이콘 중 일부가 표시될 수 있습니다.
 
@@ -125,7 +125,7 @@ ht-degree: 27%
 
 1. 마이그레이션 세트를 선택하고 을(를) 클릭합니다. **속성** 마이그레이션 세트 속성을 보거나 편집하려면 다음을 수행하십시오. 속성을 편집하는 동안에는 **마이그레이션 세트 이름** 또는 **서비스 URL**.
 
-   ![이미지](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## 다음은 무엇입니까? {#whats-next}

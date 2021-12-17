@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6e78e3c72bd67ca63503cf4d1710826b53994675
+source-git-commit: 0c079a38f7137a8bb469f4a45df70ffcb13cca76
 workflow-type: tm+mt
-source-wordcount: '3431'
+source-wordcount: '3433'
 ht-degree: 35%
 
 ---
@@ -93,55 +93,54 @@ ht-degree: 35%
       + [프로그램 만들기](/help/journey-sites/demos-add-on/create-program.md)
       + [데모 사이트 만들기](/help/journey-sites/demos-add-on/create-site.md)
       + [데모 사이트 관리](/help/journey-sites/demos-add-on/manage.md)
-+ AEMaaCS로 이동 {#moving}
-   + [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md)
++ AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
+   + [AEM as a Cloud Service 이동 시작](/help/journey-migration/getting-started.md)
+   + [준비](/help/journey-migration/readiness.md)
+   + [구현](/help/journey-migration/implementation.md)
+   + [Go Live](/help/journey-migration/go-live.md)
+   + [Go Live 후](/help/journey-migration/post-go-live.md)
+   + [파트너를 위한 Experience Manager as a Cloud Service으로 마이그레이션 안내서](/help/journey-migration/getting-started-partners.md)
    + 마이그레이션 도구에 대한 릴리스 노트 {#release-notes-migration-tools}
-      + [현재 릴리스 노트(2021.12.0)](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+      + [현재 릴리스 노트(2021.12.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2021년 {#2021}
-         + [2021.11.0 릴리스 노트](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [2021.10.0 릴리스 노트](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + 전환 여정 단계 {#phases}
-      + [준비](/help/move-to-cloud-service/migration-readiness.md)
-      + [구현](/help/move-to-cloud-service/migration-implementation.md)
-      + [Go Live](/help/move-to-cloud-service/migration-go-live.md)
-      + [Go Live 후](/help/move-to-cloud-service/migration-post-go-live.md)
+         + [2021.11.0 릴리스 노트](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [2021.10.0 릴리스 노트](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Cloud Acceleration Manager 소개 {#introduction-cam}
-         + [개요](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
-         + [이점](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+         + [개요](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+         + [이점](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)
       + Cloud Acceleration Manager 사용 {#using-cam}
-         + [Cloud Acceleration Manager 시작하기](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
-         + [준비 단계](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
-         + [구현 단계](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
-         + [라이브 단계 이동](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
+         + [Cloud Acceleration Manager 시작하기](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+         + [준비 단계](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+         + [구현 단계](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+         + [라이브 단계 이동](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
    + 클라우드 전환 도구 {#cloud-migration}
       + 모범 사례 분석기 {#best-practices-analyzer}
-         + [개요](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
-         + [우수 사례 분석기 사용](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
+         + [개요](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+         + [우수 사례 분석기 사용](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + 컨텐츠 전송 도구 {#content-transfer-tool}
-         + [개요](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
-         + [컨텐츠 전송 도구 사전 요구 사항](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
-         + [컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-         + [컨텐츠 전송 도구 시작하기](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
-         + [대용량 컨텐츠 저장소 처리](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [소스에서 컨텐츠 추출](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [Target에 컨텐츠 수집](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-         + [마이그레이션 세트에 대한 로그 보기](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
-         + [마이그레이션 세트 삭제](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
-         + [게시 인스턴스에서 컨텐츠 전송 도구 실행](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
-         + [컨텐츠 전송 문제 해결 도구](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
+         + [개요](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+         + [컨텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+         + [컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+         + [컨텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [대용량 컨텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+         + [소스에서 컨텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+         + [Target에 컨텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+         + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
+         + [게시 인스턴스에서 컨텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [컨텐츠 전송 문제 해결 도구](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 사용자 매핑 도구 {#user-mapping-tool}
-            + [개요](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
-            + [중요 고려 사항](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
-            + [사용자 매핑 도구 사용](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+            + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+            + [중요 고려 사항](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+            + [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
    + 코드 리팩터링 도구 {#refactoring-tools}
-      + [통합 경험](/help/move-to-cloud-service/unified-experience.md)
-      + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
-      + [인덱스 변환기](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
-      + [자산 워크플로우 마이그레이션](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-      + [AEM Dispatcher 변환기](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-      + [AEM 현대화 도구](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-   + [파트너를 위한 Experience Manager as a Cloud Service으로 마이그레이션 안내서](/help/move-to-cloud-service/getting-started.md)
+      + [통합 경험](/help/journey-migration/unified-experience.md)
+      + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
+      + [인덱스 변환기](/help/journey-migration/refactoring-tools/index-converter.md)
+      + [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [AEM Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+      + [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + 사이트 {#sites}
    + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
    + [AEM 클라우드 서비스의 AEM 사이트에 대한 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)

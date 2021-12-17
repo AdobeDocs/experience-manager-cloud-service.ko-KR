@@ -1,14 +1,14 @@
 ---
-title: '[!DNL Assets] as a [!DNL Cloud Service] 안내서'
-description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] 자습 리소스 및 설명서 링크'
+title: '[!DNL Assets] 로서의 [!DNL Cloud Service] 안내서'
+description: '[!DNL Adobe Experience Manager Assets] 로서의 [!DNL Cloud Service] 자습 리소스 및 설명서 링크'
 landing-page-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 36%
+source-wordcount: '287'
+ht-degree: 35%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 36%
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | 작성 및 관리 방법을 이해합니다. [!DNL Experience Manager Sites] 로서의 [!DNL Cloud Service]. |
 | [구현 사용 안내서](/help/implementing/home.md) | 이러한 개발 및 배포 항목을 탐색하여 Experience Manager의 강력한 기능을 사용하여 경험을 만들고 사용자 지정하는 방법을 이해합니다. |
 | [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | 첫 번째 헤드리스 프로젝트를 준비할 수 있도록 Experience Manager의 강력하고 유연한 헤드리스 기능을 통해 안내식 여정을 살펴보십시오. |
-| [이동 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | 전환 여정 이해 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
+| [이동 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]](/help/journey-migration/getting-started.md) | 전환 여정 이해 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | 커넥터를 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
 | [작업 사용 안내서](/help/operations/home.md) | 의 백엔드 작업에 대해 알아보기 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]색인 지정 및 유지 관리 작업과 같은 작업이 표시됩니다. |
 | [상거래 사용 안내서](/help/commerce-cloud/home.md) | 에서 전자 상거래 통합 프레임워크에 대해 알아보기 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |

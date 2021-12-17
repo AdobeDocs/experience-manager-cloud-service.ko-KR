@@ -2,7 +2,7 @@
 title: 우수 사례 분석기 개요
 description: 우수 사례 분석기 개요
 exl-id: 2c45f527-3bcd-489b-a3be-b5c6f371429e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 29%
@@ -14,9 +14,9 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="모범 사례 분석기 개요"
->abstract="모범 사례 분석기는 AEM 우수 사례를 따르지 않는 영역을 지정하여 현재 AEM 구현에 대한 평가를 제공합니다. 또한 AEM 우수 사례를 채택하기 위한 다음 단계에 대한 지침도 제공합니다. 또한 기존 Adobe Experience Manager(AEM) 배포에서 Cloud Service으로 AEM으로 이동할 준비를 평가하는 프로세스를 가속화할 수 있습니다."
+>abstract="모범 사례 분석기는 AEM 우수 사례를 따르지 않는 영역을 지정하여 현재 AEM 구현에 대한 평가를 제공합니다. 또한 AEM 우수 사례를 채택하기 위한 다음 단계에 대한 지침도 제공합니다. 또한 기존 Adobe Experience Manager(AEM) 배포에서 AEM as a Cloud Service으로 이동할 준비 상황을 평가하는 프로세스를 가속화할 수 있습니다."
 
-모범 사례 분석기는 AEM 우수 사례를 따르지 않는 영역을 지정하여 현재 AEM 구현에 대한 평가를 제공합니다. 또한 AEM 우수 사례를 채택하기 위한 다음 단계에 대한 지침도 제공합니다. 또한 기존 Adobe Experience Manager(AEM) 배포에서 Cloud Service으로 AEM으로 이동할 준비를 평가하는 프로세스를 가속화할 수 있습니다.
+모범 사례 분석기는 AEM 우수 사례를 따르지 않는 영역을 지정하여 현재 AEM 구현에 대한 평가를 제공합니다. 또한 AEM 우수 사례를 채택하기 위한 다음 단계에 대한 지침도 제공합니다. 또한 기존 Adobe Experience Manager(AEM) 배포에서 AEM as a Cloud Service으로 이동할 준비 상황을 평가하는 프로세스를 가속화할 수 있습니다.
 
 이 도구는 AEM as a Cloud Service로의 전환 경로의 첫 번째 단계인 잠재적 리팩터링 영역을 식별하는 보고서를 생성합니다.
 
@@ -35,6 +35,6 @@ ht-degree: 29%
 카테고리 및 이러한 카테고리와 관련된 가능한 의미 및 솔루션에 대한 추가 정보는 모범 사례 분석기 보고서 내에서 링크를 통해 제공됩니다.
 
 >[!NOTE]
->모범 사례 분석기 보고서는 수동으로 수집하고 평가해야 하는 정보를 제공하여 AEM으로 전환하는 데 필요한 시간과 비용을 계산하는 프로세스를 가속화합니다.
+>모범 사례 분석기 보고서는 수동으로 수집하고 평가해야 하는 정보를 제공하여 AEM as a Cloud Service으로 전환하는 데 필요한 시간과 비용을 계산하는 프로세스를 가속화합니다.
 
-AEM 인스턴스에서 모범 사례 분석기 보고서를 다운로드할 수도 있습니다. 자세한 내용은 [우수 사례 분석기 보고서 보기](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)를 참조하십시오.
+AEM 인스턴스에서 모범 사례 분석기 보고서를 다운로드할 수도 있습니다. 을(를) 참조하십시오. [모범 사례 분석기 보고서 보기](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 자세한 내용

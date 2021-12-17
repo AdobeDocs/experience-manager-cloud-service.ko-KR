@@ -2,7 +2,7 @@
 title: 구현 단계
 description: 구현 단계
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 91%
@@ -30,7 +30,7 @@ ht-degree: 91%
 
 다음 그림은 실행 단계에 관련된 주요 단계를 보여줍니다.
 
-![이미지](/help/move-to-cloud-service/assets/exec-image1.png)
+![이미지](/help/journey-migration/assets/exec-image1.png)
 
 ## 컨텐츠 전송 {#content-transfer}
 
@@ -41,7 +41,7 @@ ht-degree: 91%
 >[!NOTE]
 >클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다.
 
-자세한 내용은 [컨텐츠 전송 도구](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)를 참조하십시오.
+자세한 내용은 [컨텐츠 전송 도구](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)를 참조하십시오.
 
 >[!IMPORTANT]
 >컨텐츠 전송 도구의 최소 시스템 요구 사항은 AEM 6.3 이상 및 JAVA 8입니다. 더 낮은 AEM 버전을 사용하는 경우 컨텐츠 저장소를 AEM 6.5로 업그레이드해야 컨텐츠 전송 도구를 사용할 수 있습니다.
@@ -64,9 +64,9 @@ AEM as a Cloud Service를 개발할 때 알고 있어야 할 몇 가지 추가 �
 
 코드 리팩터링 작업 중 일부를 가속화하기 위해 다음 도구를 사용할 수 있습니다.
 
-* [자산 워크플로우 마이그레이션](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-* [Dispatcher 변환기](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-* [현대화 도구](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+* [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+* [현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 
 Cloud Manager Git을 통해 코드를 클라우드 서비스 환경에 푸시하기 전에 로컬로 리팩터링하고 테스트하는 것이 좋습니다.
 

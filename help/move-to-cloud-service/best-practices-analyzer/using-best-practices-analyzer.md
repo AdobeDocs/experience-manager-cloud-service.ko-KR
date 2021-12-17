@@ -2,7 +2,7 @@
 title: 우수 사례 분석기 사용
 description: 우수 사례 분석기 사용
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 41%
@@ -15,7 +15,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="모범 사례 분석기 사용"
 >abstract="모범 사례 분석기(이전 클라우드 준비 분석기)를 사용하기 위한 설명서 및 생성된 보고서를 검토하십시오. 모범 사례 분석기 보고서는 일반적인 업그레이드 준비 상태를 세부적으로 파악하는 데 사용됩니다."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## 모범 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
@@ -59,38 +59,38 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 
 1. Adobe Experience Manager을 선택하고 도구 -> 로 이동합니다. **작업** -> **모범 사례 분석기**.
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. 클릭 **보고서 생성** 모범 사례 분석기를 실행하려면
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. BPA가 보고서를 생성하는 동안 도구에서 만든 진행 상황을 화면에서 볼 수 있습니다. 분석된 항목 수를 표시하고 발견된 결과 수를 표시합니다.
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. BPA 보고서가 생성되면 요약 및 결과의 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 특정 검색 결과에 대한 자세한 내용을 보려면 테이블에서 검색 유형에 해당하는 숫자를 클릭합니다.
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
    위의 작업이 보고서에서 해당 검색 결과의 위치로 자동 스크롤됩니다.
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. 아이콘을 클릭하여 쉼표로 구분된 값(CSV) 형식으로 보고서를 다운로드할 수 있는 옵션이 있습니다 **CSV로 내보내기**&#x200B;아래 그림과 같이,
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
 를 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다 **보고서 새로 고침**.
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
 보고서를 다시 생성하는 동안 아래 그림과 같이 완료됨 백분율로 진행 상태가 표시됩니다.
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
@@ -100,14 +100,14 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
 
 1. 페이지 왼쪽에 있는 왼쪽 레일 아이콘을 클릭합니다. 그러면 **ACS Commons 필터**. 을(를) 클릭합니다. **ACS Commons 필터** 아래에 표시된 것처럼 대화형 확인란을 표시합니다.
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 왼쪽 레일 아이콘은 BPA에서 ACS Commons 사용을 감지하는 경우에만 나타납니다.
 
 1. ACS Commons와 관련된 모든 결과를 필터링하려면 상자를 선택 취소합니다. 다음 항목이 표시됩니다. **필터링된 검색 횟수** 를 클릭하십시오. 필터가 CSV(쉼표로 구분된 값) 형식으로 내보낼 때에도 보고서에 적용됩니다.
 
-   ![이미지](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
 ACS Commons 결과는 무시되어서는 안 됩니다. 을(를) 참조하십시오. [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Service와의 호환성을 확인합니다.

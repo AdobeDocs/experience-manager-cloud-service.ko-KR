@@ -2,7 +2,7 @@
 title: 대용량 컨텐츠 저장소 처리
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 1%
@@ -48,7 +48,7 @@ CTT(컨텐츠 전송 도구)를 사용하여 많은 수의 블롭을 복사하�
 
 ### 소스 AEM 인스턴스가 파일 데이터 저장소를 사용하도록 구성된 경우 추가적인 고려 사항 {#additional-considerations-aem-instance-filedatastore}
 
-* 로컬 시스템의 사용 가능한 공간이 원본 데이터 저장소1/256 크기보다 훨씬 크어야 합니다. 예를 들어 데이터 저장소 크기가 3TB이면 11.72GB보다 큰 여유 공간이 `crx-quickstart/cloud-migration` AzCopy를 사용할 소스의 폴더입니다. 적어도 소스 시스템의 여유 공간은 1GB여야 합니다. 사용 가능한 공간은 `df -h` Linux 인스턴스의 명령 및 Windows 인스턴스의 dir 명령
+* 로컬 시스템의 사용 가능한 공간이 원본 데이터 저장소1/256 크기보다 훨씬 크어야 합니다. 예를 들어 데이터 저장소 크기가 3TB이면 11.72GB보다 큰 여유 공간이 `crx-quickstart/cloud-migration` AzCopy를 사용할 소스의 폴더입니다. 최소한 소스 시스템의 여유 공간은 1GB여야 합니다. 사용 가능한 공간은 `df -h` Linux 인스턴스의 명령 및 Windows 인스턴스의 dir 명령
 
 * AzCopy가 활성화된 상태에서 추출을 실행할 때마다 전체 파일 데이터 저장소가 변환되어 클라우드 마이그레이션 컨테이너에 복사됩니다. 마이그레이션 세트가 데이터 저장소 크기보다 상당히 작은 경우 AzCopy 추출이 최적의 방법이 아닙니다.
 
@@ -70,14 +70,14 @@ CTT(컨텐츠 전송 도구)를 사용하여 많은 수의 블롭을 복사하�
 
 Azure 포털의 컨테이너 속성 페이지에서 **크기 계산** 단추을 눌러 컨테이너에 있는 모든 컨텐츠의 크기를 결정합니다. 예:
 
-![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![이미지](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Amazon S3 데이터 저장소 {#amazon-data}
 
 컨테이너의 지표 탭을 사용하여 컨테이너에 있는 모든 컨텐츠의 크기를 결정할 수 있습니다. 예:
 
 
-![이미지](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![이미지](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### 파일 데이터 저장소 {#file-data-store-determine-size}
 
@@ -243,4 +243,4 @@ AzCopy를 비활성화하려면 이름을 바꾸거나 `azcopy.config` 파일.
 
 ## 다음은 무엇입니까? {#whats-next}
 
-대규모 컨텐츠 저장소 처리를 통해 컨텐츠 전송 활동의 추출 및 수집 단계를 대폭 단축하여 컨텐츠를 AEM as a Cloud Service으로 이동하는 것을 알게 되면 이제 컨텐츠 전송 도구에서 추출 프로세스를 배울 수 있습니다. 자세한 내용은 [컨텐츠 전송 도구에서 소스에서 컨텐츠 추출](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하는 방법을 알아봅니다.
+대규모 컨텐츠 저장소 처리를 통해 컨텐츠 전송 활동의 추출 및 수집 단계를 대폭 단축하여 컨텐츠를 AEM as a Cloud Service으로 이동하는 것을 알게 되면 이제 컨텐츠 전송 도구에서 추출 프로세스를 배울 수 있습니다. 자세한 내용은 [컨텐츠 전송 도구에서 소스에서 컨텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하는 방법을 알아봅니다.

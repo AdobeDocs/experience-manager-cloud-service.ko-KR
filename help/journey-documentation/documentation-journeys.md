@@ -3,9 +3,9 @@ title: AEM 설명서 여정
 description: 설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결하기 위해 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
@@ -93,6 +93,6 @@ AEM 설명서 여정의 주요 목표는 AEM을 처음 사용하는 독자들이
 | [AEM 온보딩 여정](/help/journey-onboarding/home.md) | 새로운 AEM as a Cloud Service 환경을 사용하여 바로 시작하여 빠르게 실행 가능합니다! |
 | [AEM 빠른 사이트 만들기 여정](/help/journey-sites/quick-site/overview.md) | 사용하기 간단한 AEM 빠른 사이트 만들기 도구를 통해 안내가 있는 여정을 보려면 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 경우 사이트를 신속하게 사용자 지정할 수 있습니다. |
 | AEM Commerce 여정 | 곧 제공될 예정입니다! |
-| AEMaaCS 마이그레이션 여정 | 곧 제공될 예정입니다! |
+| [AEM as a Cloud Service 마이그레이션 여정](/help/journey-migration/getting-started.md) | 온-프레미스 또는 Adobe Managed AEM 설치에서 완전히 클라우드 기반 AEM으로 마이그레이션하는 방법에 대한 단계별 여정을 시작하고 많은 이점을 소개합니다. |
 
 새 여정을 사용할 수 있게 되면 더 많은 콘텐츠를 다시 확인하십시오.
