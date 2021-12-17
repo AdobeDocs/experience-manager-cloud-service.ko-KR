@@ -1,9 +1,9 @@
 ---
 title: Go-Live
 description: 코드와 컨텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ ht-degree: 0%
 * 클론에 대해 수행된 AEM as a Cloud Service 스테이지 마이그레이션 중에 얻은 경험을 기반으로 프로덕션에서 마이그레이션을 시작합니다.
    * Author-Author
    * Publish-Publish
-
->[!NOTE]
->
->수집 중에 AEM as a Cloud Service 작성자가 표시되지만 수집 중에 as a Cloud Service 게시됩니다.
 
 * 수집된 컨텐츠를 AEM as a Cloud Service 작성자 및 게시 계층 모두에 확인합니다.
 * 수집이 완료될 때까지 소스와 대상 모두에서 컨텐츠를 이동하지 않도록 컨텐츠 작성 팀에 지시합니다
