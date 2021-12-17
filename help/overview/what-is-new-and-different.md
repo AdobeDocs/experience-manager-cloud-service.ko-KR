@@ -2,9 +2,9 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1906'
 ht-degree: 10%
 
 ---
@@ -270,3 +270,9 @@ Adobe Experience Manager Assets as a Cloud Service은 클라우드 기반의 Paa
 * [AEM Assets as a Cloud Service에 대한 주요 변경 사항](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+
+>[!TIP]
+>
+>AEM as a Cloud Service에 대한 개요를 보고 를 검토하여 빠르게 온보딩할 수 있습니다. [온보딩 여정.](/help/journey-onboarding/home.md)
+>
+>이미 온보딩되었거나 AEM 기능 테스트를 시작할 준비가 되었습니까? 설치 [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md) 풍부한 예를 사용하여 AEM의 강력한 기능을 살펴보십시오.

@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 릴리스 2021.12.0의 Cloud Manager 릴리스 노트
 description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2021.12.0.
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -31,7 +31,7 @@ AEM as a Cloud Service 2021.12.0의 Cloud Manager 릴리스 날짜는 2021년 12
 * 이제 배포 관리자 역할을 가진 사용자는 저장소 페이지의 작업 메뉴에서 분기가 없는 저장소에 대한 프로젝트/분기 생성 마법사를 시작할 수 있습니다.
 * 이제 파이프라인 추가 또는 편집 워크플로우에 있는 배포 관리자에 선택한 저장소에 분기가 없는 경우 분기나 프로젝트를 생성하는 방법에 대한 정보를 제공합니다.
 * 에 새로운 Cloud Manager 셀프 서비스 기능이 추가되었습니다. [환경 수준에서 자유 형식 변수 및 암호 추가.](/help/implementing/cloud-manager/environment-variables.md)
-* 새로운 참조 데모 추가 기능(2021년 12월 17일 제공)을 사용하면 AEM 제품에 대한 최신 데모 코드 베이스를 설치하여 새로운 기능을 통해 배포할 수 있습니다 [빠른 사이트 생성 도구](/help/journey-sites/quick-site/overview.md) 참조하십시오.
+* 새로운 [참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md) (2021년 12월 17일에 제공) AEM 제품에 대한 최신 데모 코드 베이스를 설치하고 새로운 기능을 통해 배포할 준비가 되었습니다 [빠른 사이트 생성 도구](/help/journey-sites/quick-site/overview.md) 참조하십시오.
 * 이제 프런트엔드 파이프라인이 파이프라인 변수를 지원합니다.
 * 이제 모든 샌드박스에 대한 프로그램 편집 대화 상자에서 화면을 활성화할 수 있습니다.
 * 개요 페이지에서 클릭유도문안 카드에서 제공하는 지침은 프로덕션 전체 스택 파이프라인과의 연결을 정확하게 반영하도록 새로 고침되었습니다.

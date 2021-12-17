@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f333294f1bb13291a8d947c3fbfd99b5e7b4a9d6
+source-git-commit: 7fb63dba9a72fc04b1d4fe677f65e993ec5a1e47
 workflow-type: tm+mt
-source-wordcount: '3415'
-ht-degree: 36%
+source-wordcount: '3431'
+ht-degree: 35%
 
 ---
 
@@ -87,6 +87,12 @@ ht-degree: 36%
       + [AEM as a Cloud Service 제품 프로필에 팀 구성원 할당](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
       + [개발자 및 배포 관리자를 위한 학습 경로](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
       + [AEM 사용자를 위한 학습 경로](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+   + [AEM 참조 데모 추가 기능 여정] {#demo-add-on}
+      + [개요](/help/journey-sites/demos-add-on/overview.md)
+      + [설치](/help/journey-sites/demos-add-on/installation.md)
+      + [프로그램 만들기](/help/journey-sites/demos-add-on/create-program.md)
+      + [데모 사이트 만들기](/help/journey-sites/demos-add-on/create-site.md)
+      + [데모 사이트 관리](/help/journey-sites/demos-add-on/manage.md)
 + AEMaaCS로 이동 {#moving}
    + [AEM as a Cloud Service로 이동](/help/move-to-cloud-service/home.md)
    + 마이그레이션 도구에 대한 릴리스 노트 {#release-notes-migration-tools}

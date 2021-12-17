@@ -3,10 +3,11 @@ title: 개발자 및 배포 관리자를 위한 학습 경로
 description: 개발자 또는 배포 관리자인 경우 액세스 권한을 얻은 후 다음 단계를 알려면 이 페이지를 따르십시오
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 2%
+source-wordcount: '607'
+ht-degree: 4%
 
 ---
 
@@ -26,8 +27,8 @@ ht-degree: 2%
 이 섹션을 읽는 경우 개발자 또는 배포 관리자 제품 프로필에 할당될 수 있으며 교육 경로를 온보딩하고 계속할 준비가 되었습니다.
 
 >[!NOTE]
->* *개발자*&#x200B;로서 Cloud Manager에 로그인하고 Git 액세스를 숙지할 수 있습니다.
->* *배포 관리자*&#x200B;에서는 파이프라인을 설정하고 코드를 배포하는 방법에 대해 숙지할 수 있습니다.
+>* 로서의 *개발자*: Cloud Manager에 로그인하고 Git 액세스를 숙지하고 싶습니다.
+>* 로서의 *배포 관리자*&#x200B;를 사용하는 경우 파이프라인을 설정하고 코드를 배포하는 방법을 숙지해야 합니다.
 
 
 ## 전제 조건 {#prerequisites}
@@ -41,24 +42,28 @@ ht-degree: 2%
 ## GitHub 관리 {#manage-git}
 
 Cloud Manager UI에서 셀프 서비스 Git 계정 관리를 사용하여 Git 리포지토리에 액세스하고 관리할 수 있습니다.
-이 항목에 대한 자세한 내용은 [Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)액세스 를 참조하십시오.
+이 항목에 대한 자세한 내용은 [Git 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## 파이프라인 설정 {#setup-pipeline}
 
 Cloud Manager UI에서 프로덕션 또는 비프로덕션 파이프라인을 구성할 수 있습니다.
-이 항목에 대한 자세한 내용은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)을 참조하십시오.
+이 항목에 대한 자세한 내용은 [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## 다음은 무엇입니까? {#whats-next}
 
-개발자 및 배포 관리자가 이제 AEM에서 코드를 Cloud Service으로 개발하는 방법을 잘 알 수 있습니다. 아래의 추가 리소스 섹션에서 자세한 내용을 살펴보거나 추가 학습 경로를 찾을 수 있습니다. 컨텐츠 작성자를 위한 학습 여정에 대해 알려면 [AEM 작성자를 위한 학습 경로](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)를 참조하십시오.
+개발자 및 배포 관리자가 이제 AEM as a Cloud Service에서 코드를 개발하는 방법에 대해 잘 알 수 있습니다. 아래의 추가 리소스 섹션에서 자세한 내용을 살펴보거나 추가 학습 경로를 찾을 수 있습니다. 컨텐츠 작성자를 위한 학습 여정에 대해 알아보려면 [AEM 작성자를 위한 학습 경로](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>이제 온보딩되므로 [AEM 참조 데모 추가 기능을 쉽게 추가하는 방법을 알아봅니다.](/help/journey-sites/demos-add-on/overview.md) 최소한의 AEM 구성으로 샌드박스 환경을 테스트하고 모범 사례를 기반으로 한 풍부한 예를 사용하여 AEM의 강력한 기능을 테스트할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
 * [Cloud Manager에서 Git 및 Git 계정 관리 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [AEM as a Cloud Service을 위한 로컬 개발 환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [AEM as a Cloud Service 지역개발환경](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* [AEM Sites 시작하기(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [AEM Sites 시작하기(튜토리얼)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
 
 * [AEM SPA 편집기 및 반응 시작하기 | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 

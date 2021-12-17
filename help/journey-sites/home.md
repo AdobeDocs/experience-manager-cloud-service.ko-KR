@@ -2,10 +2,10 @@
 title: AEM Sites 여정
 description: AEM의 강력한 사이트 기능을 이해하는 데 사용할 수 있는 안내식 여정에 대한 개요를 살펴보려면 여기에서 시작하십시오.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 1%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,8 @@ AEM Sites 항목에는 다음 설명서 여정을 사용할 수 있습니다.
 
 | 제목 | 설명 | 기본 대상 |
 |---|---|---|
-| [사이트 번역 여정](/help/journey-sites/translation/overview.md) | AEM Sites 기술, 프로젝트에서 사용할 수 있는 방법, AEM에서 A에서 Z로 번역 프로젝트를 만들고 업데이트하는 방법에 대해 알아봅니다. | 번역 전문가 |
 | [빠른 사이트 만들기 여정](/help/journey-sites/quick-site/overview.md) | 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 안내가 있는 여정을 보려면 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 경우 사이트를 신속하게 사용자 지정할 수 있습니다. | 프런트엔드 개발자 |
+| [참조 데모 추가 기능 여정](/help/journey-sites/demos-add-on/overview.md) | AEM 구성을 최소화하면서 샌드박스 환경에 AEM 참조 데모 추가 기능을 쉽게 추가하고 모범 사례를 기반으로 AEM의 강력한 기능을 테스트하는 방법을 안내하는 여정을 살펴보려면 여기에서 시작하십시오. | 시스템 관리자 |
+| [사이트 번역 여정](/help/journey-sites/translation/overview.md) | AEM Sites 기술, 프로젝트에서 사용할 수 있는 방법, AEM에서 A에서 Z로 번역 프로젝트를 만들고 업데이트하는 방법에 대해 알아봅니다. | 번역 전문가 |
 
 채널을 고정하세요 [추가 역할을 다루는 제공 여정](/help/journey-documentation/documentation-journeys.md#journeys)
