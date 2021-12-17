@@ -3,9 +3,9 @@ title: 사이트 템플릿
 description: AEM 사이트 템플릿을 사용하여 사이트 구조 및 초기 컨텐츠를 미리 정의하여 사이트를 신속하게 만들 수 있는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 2dd35f1ea25f6bfc515d7b50fd53cf4638af4026
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 사이트 템플릿 {#site-templates}
 
 AEM 사이트 템플릿을 사용하여 사이트 구조 및 초기 컨텐츠를 미리 정의하여 사이트를 신속하게 만들 수 있는 방법을 알아봅니다.
-
->[!CAUTION]
->
->빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 ## 개요 {#overview}
 
@@ -55,7 +51,7 @@ AEM 사이트 템플릿을 사용하여 사이트 구조 및 초기 컨텐츠를
 
 템플릿이 업로드되고 다음 용도로 사용할 수 있습니다. [새 사이트를 만듭니다.](create-site.md)
 
-기존 템플릿을 선택하면 오른쪽 열의 템플릿에 대한 정보가 표시됩니다.
+기존 템플릿을 선택하면 오른쪽 열에 템플릿에 대한 정보가 표시됩니다.
 
 ![템플릿을 선택합니다](../assets/select-site-template.png)
 

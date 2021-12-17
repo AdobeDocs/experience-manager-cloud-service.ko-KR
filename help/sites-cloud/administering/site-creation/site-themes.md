@@ -3,9 +3,9 @@ title: 사이트 테마
 description: AEM 사이트 테마를 사용하여 사이트의 스타일 및 디자인을 사용자 지정하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 9e7ad4a640f1783be5aed75e01e860b647662f52
+source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 사이트 테마 {#site-themes}
 
 AEM 사이트 테마를 사용하여 사이트의 스타일 및 디자인을 사용자 지정하는 방법을 알아봅니다.
-
->[!CAUTION]
->
->빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 ## 개요 {#overview}
 
@@ -55,6 +51,6 @@ Adobe은 고유한 테마를 만드는 기준으로 사용할 수 있는 모범 
 
 ## 사이트 테마 개발 {#developing-themes}
 
-Adobe은 새 사이트 테마를 만들기 위한 스크립트 세트로 및 AEM 사이트 테마 빌더를 제공합니다.
+Adobe은 새 사이트 테마를 만들기 위한 스크립트 세트로 AEM 사이트 테마 빌더를 제공합니다.
 
 [AEM 사이트 테마 빌더는 GitHub의 사용 설명서와 함께 사용할 수 있습니다.](https://github.com/adobe/aem-site-theme-builder) 테마를 사용자 지정하려면 프런트 엔드 개발 경험이 필요합니다.

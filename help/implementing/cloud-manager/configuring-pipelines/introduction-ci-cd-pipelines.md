@@ -2,9 +2,9 @@
 title: CI-CD 파이프라인
 description: Cloud Manager CI-CD 파이프라인에 대해 알아보려면 이 페이지를 따르십시오
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 ### 프런트엔드 파이프라인을 구성하기 전에 {#before-start}
 
-프런트엔드 파이프라인 구성을 시작하기 전에 [AEM 빠른 사이트 만들기 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 전체 워크플로우를 완료하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
+프런트엔드 파이프라인 구성을 시작하기 전에 [AEM 빠른 사이트 만들기 여정](/help/journey-sites/quick-site/overview.md) 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 전체 워크플로우를 완료하십시오. 이 설명서 사이트를 통해 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 사용자를 신속하게 사용자 지정할 수 있습니다.
 
 ### 프런트엔드 파이프라인 구성 {#configure-front-end}
 
@@ -82,6 +82,12 @@ Cloud Manager에는 두 가지 유형의 파이프라인이 있습니다.
 
 * [프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+
+### 프런트엔드 파이프라인을 사용한 사이트 개발 {#developing-with-front-end-pipeline}
+
+프런트엔드 파이프라인을 통해 프런트엔드 개발자에게 더 많은 독립성이 부여되며, 개발 프로세스를 통해 상당한 속도를 향상시킬 수 있습니다.
+
+을(를) 참조하십시오. [이 문서](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이 프로세스의 전체 가능성을 얻기 위해 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식에 대해 설명합니다.
 
 ## 전체 스택 파이프라인 {#full-stack-pipeline}
 

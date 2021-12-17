@@ -1,9 +1,9 @@
 ---
 title: Git 리포지토리 액세스 정보 검색
 description: 프런트 엔드 개발자가 Cloud Manager를 사용하여 git 리포지토리 정보에 액세스하는 방법을 알아봅니다.
-source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '897'
 ht-degree: 4%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 4%
 # Git 리포지토리 액세스 정보 검색 {#retrieve-access}
 
 프런트 엔드 개발자가 Cloud Manager를 사용하여 git 리포지토리 정보에 액세스하는 방법을 알아봅니다.
-
->[!CAUTION]
->
->빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 ## 지금까지 그 이야기 {#story-so-far}
 

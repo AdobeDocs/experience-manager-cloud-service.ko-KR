@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager 및 빠른 사이트 생성 워크플로우를 이해합니다
 description: Cloud Manager와 새로운 빠른 사이트 생성 프로세스를 함께 연결하는 방법에 대해 알아봅니다.
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Cloud Manager 및 빠른 사이트 생성 워크플로우를 이해합니다 {#understand-cloud-manager}
 
 Cloud Manager와 새로운 빠른 사이트 생성 프로세스를 함께 연결하는 방법에 대해 알아봅니다.
-
->[!CAUTION]
->
->빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 >[!TIP]
 >

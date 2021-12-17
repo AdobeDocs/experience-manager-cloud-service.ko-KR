@@ -1,9 +1,9 @@
 ---
 title: 사용자 지정 테마 배포
 description: 파이프라인을 사용하여 사이트 테마를 배포하는 방법을 알아봅니다.
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # 사용자 지정 테마 배포 {#deploy-your-customized-theme}
 
 파이프라인을 사용하여 사이트 테마를 배포하는 방법을 알아봅니다.
-
->[!CAUTION]
->
->빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 ## 지금까지 그 이야기 {#story-so-far}
 
@@ -95,11 +91,16 @@ AEM 빠른 사이트 만들기 여정의 이전 문서에서, [사이트 테마 
 * 프록시된 AEM 콘텐츠를 사용하여 테마를 사용자 지정 및 테스트하고 이러한 변경 사항을 AEM Git에 커밋하는 방법입니다.
 * 파이프라인을 사용하여 프런트 엔드 사용자 지정을 배포하는 방법입니다.
 
-이제 자신만의 AEM 사이트의 테마를 사용자 지정할 준비가 되었습니다. 그러나 AEM은 강력한 도구이며 다양한 추가 옵션을 사용할 수 있습니다. 에서 사용할 수 있는 추가 리소스 중 일부를 확인하십시오 [추가 리소스 섹션](#additional-resources) 추가 정보를 확인하십시오.
+이제 자신만의 AEM 사이트의 테마를 사용자 지정할 준비가 되었습니다. 그러나 여러 프런트 엔드 파이프라인을 사용하여 서로 다른 작업 스트림을 만들기 전에 문서를 검토하십시오 [프런트엔드 파이프라인을 사용하여 사이트 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 이를 통해 다음과 같은 방법으로 프런트 엔드 개발을 최대한 활용할 수 있습니다.
+
+* 한 가지 진실의 근원을 유지하는 것.
+* 근심을 분리시키는 것.
+
+AEM은 강력한 툴이며 다양한 추가 옵션을 사용할 수 있습니다. 에서 사용할 수 있는 추가 리소스 중 일부를 확인하십시오 [추가 리소스 섹션](#additional-resources) 추가 정보를 확인하십시오.
 
 ## 추가 리소스 {#additional-resources}
 
-문서를 검토하여 빠른 사이트 만들기 여정의 다음 부분으로 이동하는 것이 좋습니다 [맞춤형 테마 배포,](deploy-theme.md) 다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 여정을 계속 진행할 필요는 없습니다.
+다음은 이 문서에서 언급된 몇 가지 개념을 자세히 설명하는 몇 가지 추가 리소스입니다.
 
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 이미 AEM에 대한 확고한 이해가 있는 경우 심층적인 기술 문서를 직접 참조할 수 있습니다.
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대한 자세한 내용은 세부 기술 문서를 직접 참조하십시오.
@@ -115,3 +116,4 @@ AEM 빠른 사이트 만들기 여정의 이전 문서에서, [사이트 테마 
 * [온보딩 여정](/help/journey-onboarding/home.md) - 이 안내서는 AEM as a Cloud Service에 대한 액세스 및 팀 설정을 위한 시작점 역할을 합니다.
 * [Adobe Experience Manager Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR) - 기능에 대한 자세한 내용은 Cloud Manager 설명서를 참조하십시오.
 * [사이트 관리 설명서](/help/sites-cloud/administering/site-creation/create-site.md) - 빠른 사이트 만들기 도구의 기능에 대한 자세한 내용은 사이트 작성 시 기술 문서를 참조하십시오.
+* [프런트엔드 파이프라인을 사용한 사이트 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 이 문서에서는 프런트 엔드 파이프라인을 사용하여 프런트 엔드 개발 프로세스에서 완전한 잠재성을 확보하기 위해 알아야 할 몇 가지 고려 사항에 대해 설명합니다.

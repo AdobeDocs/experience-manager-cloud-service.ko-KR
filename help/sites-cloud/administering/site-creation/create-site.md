@@ -3,10 +3,10 @@ title: 사이트 만들기
 description: 사이트 템플릿을 사용하여 AEM을 사용하여 사이트의 스타일 및 구조를 정의하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 0%
+source-wordcount: '788'
+ht-degree: 1%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 0%
 # 사이트 만들기 {#creating-site}
 
 AEM을 사용하여 사이트 템플릿을 사용하여 사이트를 만들고 사이트의 스타일 및 구조를 정의하는 방법을 알아봅니다.
-
->[!CAUTION]
->
->빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 ## 개요 {#overview}
 

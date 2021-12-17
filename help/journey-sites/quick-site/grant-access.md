@@ -1,9 +1,9 @@
 ---
 title: 프런트엔드 개발자에게 액세스 권한 부여
 description: 프런트 엔드 개발자를 Cloud Manager에 온보딩하여 AEM 사이트 git 리포지토리 및 파이프라인에 액세스할 수 있습니다.
-source-git-commit: 7c70be541e811e1be236763081d5571db4269b7a
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 프런트엔드 개발자에게 액세스 권한 부여 {#grant-fed-access}
 
 프런트 엔드 개발자를 Cloud Manager에 온보딩하여 AEM 사이트 git 리포지토리 및 파이프라인에 액세스할 수 있습니다.
-
->[!CAUTION]
->
->빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 ## 지금까지 그 이야기 {#story-so-far}
 
@@ -81,7 +77,7 @@ Cloud Manager에 대한 액세스 권한을 부여하고 사용자 역할을 사
 
    ![팀 프로필 할당](assets/assign-team.png)
 
-1. 탭 또는 클릭 **저장** 그리고 사용자로 추가한 프런트 엔드 개발자에게 환영 이메일을 보냅니다.
+1. 탭 또는 클릭 **저장** 또한 사용자로 추가한 프런트 엔드 개발자에게 환영 이메일을 보냅니다.
 
 초대받은 프런트 엔드 개발자는 환영 이메일에서 링크를 클릭하고 Adobe ID을 사용하여 로그인하여 Cloud Manager에 액세스할 수 있습니다.
 

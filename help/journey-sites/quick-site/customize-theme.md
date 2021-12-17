@@ -1,9 +1,9 @@
 ---
 title: 사이트 테마 사용자 지정
 description: 사이트 테마가 빌드되는 방법, 사용자 지정 방법 및 라이브 AEM 콘텐츠를 사용하여 테스트하는 방법을 알아봅니다.
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # 사이트 테마 사용자 지정 {#customize-the-site-theme}
 
 사이트 테마가 빌드되는 방법, 사용자 지정 방법 및 라이브 AEM 콘텐츠를 사용하여 테스트하는 방법을 알아봅니다.
-
->[!CAUTION]
->
->빠른 사이트 만들기 도구는 현재 기술 미리 보기입니다. 테스트 및 평가 목적으로 사용할 수 있으며, Adobe 지원에 동의하지 않는 프로덕션 용도에는 사용할 수 없습니다.
 
 ## 지금까지 그 이야기 {#story-so-far}
 
