@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
+source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -132,57 +132,111 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): 로컬 파일 시스템에서 자산을 업로드하는 크리에이티브 전문가 및 마케터에게 유용합니다. 로컬에서 사용할 수 있는 중첩된 폴더를 업로드하려면 이 파일을 사용합니다.
 * [일괄 수집 도구](#asset-bulk-ingestor): 배포 시 가끔 또는 처음에 대량의 자산을 수집하는 데 사용합니다 [!DNL Experience Manager].
 
-### 자산 벌크 수집 도구 {#asset-bulk-ingestor}
+### 자산 벌크 가져오기 도구 {#asset-bulk-ingestor}
 
 이 도구는 Azure 또는 S3 데이터 저장소에서 자산을 대량으로 수집하기 위해 관리자 그룹에만 제공됩니다. 구성 및 통합에 대한 비디오 개요를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-도구를 구성하려면 다음 단계를 수행합니다.
+다음 이미지는 데이터 저장소에서 Experience Manager에 자산을 수집할 때 다양한 단계를 보여줍니다.
+
+![대량 수집 도구](assets/bulk-ingestion.png)
+
+#### 전제 조건 {#prerequisites-bulk-ingestion}
+
+Experience Manager 인스턴스를 데이터 저장소에 연결하려면 소스 Blob 저장소 세부 정보가 있어야 합니다.
+
+#### 대량 가져오기 도구 구성 {#configure-bulk-ingestor-tool}
+
+대량 가져오기 도구를 구성하려면 다음 단계를 수행합니다.
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 벌크 가져오기]**. 을(를) 선택합니다 **[!UICONTROL 만들기]** 선택 사항입니다.
 
-![대량 가져오기 구성](assets/bulk-import-config.png)
+1. 에서 벌크 가져오기 구성의 제목을 지정합니다 **[!UICONTROL 제목]** 필드.
 
-1. 설정 **[!UICONTROL 대량 가져오기 구성]** 페이지에서 필요한 값을 제공한 다음 **[!UICONTROL 저장]**.
+1. 에서 데이터 소스 유형을 선택합니다 **[!UICONTROL 원본 가져오기]** 드롭다운 목록.
 
-   * [!UICONTROL 제목]: 수사적 제목.
-   * [!UICONTROL 원본 가져오기]: 적용 가능한 데이터 소스를 선택합니다.
-   * [!UICONTROL Azure 저장소 계정]: 의 이름을 입력합니다 [!DNL Azure] 저장소 계정.
-   * [!UICONTROL Azure Blob 컨테이너]: 다음을 제공합니다. [!DNL Azure] 저장소 컨테이너.
-   * [!UICONTROL Azure 액세스 키]: 액세스 키를 [!DNL Azure] 계정이 필요합니다.
-   * [!UICONTROL 소스 폴더]: 이 필터는 일반적으로 Azure 및 AWS 클라우드 저장소 공급자가 지원합니다.
-   * [!UICONTROL 최소 크기별 필터링]: 자산의 최소 파일 크기(MB)를 제공합니다.
-   * [!UICONTROL 최대 크기로 필터링]: 자산의 최대 파일 크기(MB)를 제공합니다.
-   * [!UICONTROL Mime 유형 제외]: 수집에서 제외할 MIME 유형의 쉼표로 구분된 목록입니다. 예, `image/jpeg, image/.*, video/mp4`. 자세한 내용은 [모든 지원되는 파일 형식](/help/assets/file-format-support.md).
-   * [!UICONTROL Mime 유형 포함]: 수집에 포함할 MIME 유형의 쉼표로 구분된 목록입니다. 자세한 내용은 [모든 지원되는 파일 형식](/help/assets/file-format-support.md).
-   * [!UICONTROL 가져온 후 소스 파일 삭제]: 파일을 가져온 후 원본 데이터 저장소에서 원본 파일을 삭제하려면 이 옵션을 선택합니다 [!DNL Experience Manager].
-   * [!UICONTROL 가져오기 모드]: 건너뛰기, 바꾸기 또는 버전 만들기를 선택합니다. 건너뛰기 모드는 기본값이며 이 모드에서는 자산이 이미 존재하는 경우 수집기가 자산을 가져오기 위해 건너뜁니다. 의 의미 보기 [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
-   * [!UICONTROL 자산 Target 폴더]: 자산을 가져올 DAM에서 폴더를 가져옵니다. 예, `/content/dam/imported_assets`
-   * [!UICONTROL 메타데이터 파일]: 가져올 메타데이터 파일로, CSV 형식으로 제공됩니다. 소스 Blob 위치에 CSV 파일을 지정하고 일괄 수집 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 CSV 파일 형식 및 [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져온 후 소스 파일 삭제** 옵션을 선택하는 경우 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일별 필터링** 필드. 정규 표현식을 사용하여 이러한 필드에 있는 CSV 파일을 필터링할 수 있습니다.
+1. 데이터 소스와의 연결을 만들 값을 제공합니다. 예를 들어 **Azure Blob 저장소** 데이터 소스로 Azure 저장소 계정, Azure blob 컨테이너 및 Azure 액세스 키의 값을 지정합니다.
 
-1. 생성된 수집 또는 구성을 사용하여 삭제, 수정, 실행 및 추가 작업을 수행할 수 있습니다. 벌크 가져오기 수집기나 구성을 선택하면 도구 모음에서 다음 옵션을 사용할 수 있습니다.
+1. 의 데이터 소스에 있는 자산이 들어 있는 루트 폴더의 이름을 입력합니다 **[!UICONTROL 소스 폴더]** 필드.
 
-   * [!UICONTROL 편집]: 선택한 구성을 편집합니다.
-   * [!UICONTROL 삭제]: 선택한 구성을 삭제합니다.
-   * [!UICONTROL 확인]: 데이터 저장소에 대한 연결을 확인합니다.
-   * [!UICONTROL 연습 실행]: 일괄 처리에 대한 테스트 실행을 호출합니다.
-   * [!UICONTROL 실행]: 선택한 구성을 실행합니다.
-   * [!UICONTROL 정지]: 활성 구성을 종료합니다.
-   * [!UICONTROL 예약]: 자산을 수집하려면 1회 또는 반복 일정을 설정합니다.
-   * [!UICONTROL 작업 상태]: 진행 중인 가져오기 작업에서 사용하거나 완료된 작업에 사용할 경우 구성 상태를 확인합니다.
-   * [!UICONTROL 작업 내역]: 작업의 이전 인스턴스입니다.
-   * [!UICONTROL 자산 보기]: 대상 폴더가 있는 경우 해당 폴더를 봅니다.
+1. (선택 사항) 자산의 최소 파일 크기를 MB로 제공하여 자산의 수집 프로세스를 **[!UICONTROL 최소 크기별 필터링]** 필드.
 
-   ![수집기 구성을 위한 도구 모음 옵션](assets/bulk-ingest-toolbar-options.png)
+1. (선택 사항) 자산의 최대 파일 크기를 MB로 제공하여 자산의 수집 프로세스에 **[!UICONTROL 최대 크기로 필터링]** 필드.
 
-1회 또는 반복 대량 가져오기를 예약하려면 다음 단계를 수행합니다.
+1. (선택 사항) 의 수집에서 제외할 MIME 유형의 쉼표로 구분된 목록을 지정합니다. **[!UICONTROL MIME 유형 제외]** 필드. 예, `image/jpeg, image/.*, video/mp4`. 자세한 내용은 [모든 지원되는 파일 형식](/help/assets/file-format-support.md).
+
+1. 의 수집에서 포함할 MIME 유형의 쉼표로 구분된 목록을 지정합니다. **[!UICONTROL MIME 유형 포함]** 필드. 자세한 내용은 [모든 지원되는 파일 형식](/help/assets/file-format-support.md).
+
+1. 을(를) 선택합니다 **[!UICONTROL 가져온 후 소스 파일 삭제]** 파일을 가져온 후 소스 데이터 저장소에서 원본 파일을 삭제하는 옵션 [!DNL Experience Manager].
+
+1. 을(를) 선택합니다 **[!UICONTROL 가져오기 모드]**. 선택 **건너뛰기**, **바꾸기**, 또는 **버전 만들기**. 건너뛰기 모드는 기본값이며 이 모드에서는 자산이 이미 존재하는 경우 수집기가 자산을 가져오기 위해 건너뜁니다. 의 의미 보기 [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
+
+1. DAM에서 을 사용하여 자산을 가져올 위치를 정의할 경로를 지정합니다. **[!UICONTROL 자산 Target 폴더]** 필드. 예, `/content/dam/imported_assets`.
+
+1. (선택 사항) CSV 형식으로 제공되는 가져올 메타데이터 파일을 **[!UICONTROL 메타데이터 파일]** 필드. 소스 Blob 위치에 CSV 파일을 지정하고 벌크 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 CSV 파일 형식 및 [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져온 후 소스 파일 삭제** 옵션을 선택하는 경우 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일별 필터링** 필드. 정규 표현식을 사용하여 이러한 필드에 있는 CSV 파일을 필터링할 수 있습니다.
+
+1. 클릭 **[!UICONTROL 저장]** 구성을 저장합니다.
+
+#### 대량 가져오기 도구 구성 관리 {#manage-bulk-import-configuration}
+
+벌크 가져오기 도구 구성을 만든 후 자산을 Experience Manager 인스턴스에 일괄 수집하기 전에 구성을 평가하는 작업을 수행할 수 있습니다. 에서 사용할 수 있는 구성을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 벌크 가져오기]** 대량 가져오기 도구 구성을 관리하는 사용 가능한 옵션을 보려면
+
+##### 구성 편집 {#edit-configuration}
+
+구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 편집]** 구성 세부 사항을 수정하려면 편집 작업을 수행하는 동안에는 구성 및 데이터 소스 가져오기 제목을 편집할 수 없습니다.
+
+##### 구성 삭제 {#delete-configuration}
+
+구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 삭제]** 대량 가져오기 구성을 삭제하려면
+
+##### 데이터 소스에 대한 연결 유효성 검사 {#validate-connection}
+
+구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL check]** 데이터 소스에 대한 연결의 유효성을 검사하려면 연결에 성공하면 Experience Manager에 다음 메시지가 표시됩니다.
+
+![대량 가져오기 성공 메시지](assets/bulk-import-success-message.png)
+
+##### 대량 가져오기 작업에 대한 테스트 실행 호출 {#invoke-test-run-bulk-import}
+
+구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 연습 실행]** 대량 가져오기 작업에 대한 테스트 실행을 호출하려면 Experience Manager은 대량 가져오기 작업에 대한 다음 세부 정보를 표시합니다.
+
+![시험 실행 결과](assets/dry-assets-result.png)
+
+##### 1회 또는 반복 대량 가져오기를 예약합니다. {#schedule-bulk-import}
+
+1회 또는 반복 대량 가져오기를 예약하려면 다음 단계를 실행합니다.
 
 1. 대량 가져오기 구성을 만듭니다.
 1. 구성을 선택하고 을(를) 선택합니다 **[!UICONTROL 예약]** 를 클릭합니다.
 1. 1회 수집을 설정하거나 시간별, 일별 또는 주별 일정을 예약합니다. 클릭 **[!UICONTROL 제출]**.
 
    ![일괄 수집 또는 작업 예약](assets/bulk-ingest-schedule1.png)
+
+
+##### 자산 대상 폴더 보기 {#view-assets-target-folder}
+
+구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 자산 보기]** 일괄 가져오기 작업을 실행한 후 자산을 가져올 자산 대상 위치를 보려면
+
+#### 대량 가져오기 도구 실행 {#run-bulk-import-tool}
+
+후 [대량 가져오기 도구 구성](#configure-bulk-ingestor-tool) 원할 경우 [대량 가져오기 도구 구성 관리](#manage-bulk-import-configuration)구성 작업을 실행하여 자산의 일괄 수집을 시작할 수 있습니다.
+
+다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 벌크 가져오기]**&#x200B;에서 을(를) 선택합니다. [대량 가져오기 구성](#configure-bulk-ingestor-tool) 을(를) 클릭합니다. **[!UICONTROL 실행]** 일괄 임포트 프로세스를 시작합니다. 클릭 **[!UICONTROL 실행]** 다시 확인합니다.
+
+Experience Manager은 작업 상태를 **처리 중** 및 **성공** 그 일이 성공적으로 완성되었을 때. 클릭 **자산 보기** Experience Manager에서 가져온 자산을 보려면
+
+작업이 진행 중인 경우 구성을 선택하고 **정지** 일괄 수집 프로세스를 중지합니다. 클릭 **실행** 프로세스를 다시 시작합니다. 을 클릭할 수도 있습니다 **연습 실행** 가져오기로 아직 보류 중인 자산의 세부 사항을 알 수 있습니다.
+
+#### 실행 후 작업 관리 {#manage-jobs-after-execution}
+
+Experience Manager을 사용하면 벌크 가져오기 작업의 내역을 볼 수 있습니다. 작업 기록은 작업 상태, 작업 생성자, 로그와 시작 날짜 및 시간, 생성 날짜 및 시간, 완료 날짜 및 시간 등의 기타 세부 정보로 구성됩니다.
+
+구성에 대한 작업 기록에 액세스하려면 구성을 선택하고 **[!UICONTROL 작업 내역]**. 작업을 선택하고 **열기**.
+
+![일괄 수집 또는 작업 예약](assets/job-history-bulk-import.png)
+
+Experience Manager에 작업 기록이 표시됩니다. [대량 가져오기 작업 내역] 페이지에서 **삭제** 대량 가져오기 구성에 대한 해당 작업을 삭제하려면
+
 
 ## 데스크탑 클라이언트를 사용하여 자산 업로드 {#upload-assets-desktop-clients}
 

@@ -3,7 +3,7 @@ title: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Se
 description: 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
+source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
@@ -44,13 +44,11 @@ ht-degree: 2%
 
 * [!DNL Dynamic Media] 이제에서 MXF 비디오에 대한 수집, 미리 보기, 재생 및 게시를 지원합니다. MXF 비디오에 대한 주석 및 쇼퍼블 비디오는 아직 지원되지 않습니다.
 
-* 원격 DAM과 사이트 배포 간에 연결을 구성한 후 원격 DAM의 자산을 사이트 배포에서 사용할 수 있습니다. 이제 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니다. 업데이트가 지연되면 사이트 배포에서 자동으로 사용할 수 있습니다.
+* 원격 DAM과 사이트 배포 간에 연결을 구성한 후 원격 DAM의 자산을 사이트 배포에서 사용할 수 있습니다. 이제 다음을 수행할 수 있습니다. [업데이트, 삭제, 이름 변경 및 이동 작업](../../assets/use-assets-across-connected-assets-instances.md) 원격 DAM 자산 또는 폴더에서 을 클릭합니다. 업데이트가 지연되면 사이트 배포에서 자동으로 사용할 수 있습니다.
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
 ### 의 새로운 기능 [!DNL Forms] {#what-is-new-forms}
-
-* **Forms 포털**: 다음을 사용할 수 있습니다 [Forms 포털](/help/forms/configure-forms-portal.md) 게시된 적응형 양식을 AEM Sites 페이지에 나열하려면 다음을 수행하십시오. 사이트 방문자가 사용 가능한 모든 양식을 검색하는 데 도움이 됩니다. 또한 방문자는 양식 포털을 사용하여 적응형 양식의 초안을 저장하고 액세스하고 제출된 적응형 양식의 PDF 버전을 볼 수 있습니다.
 
 * **보안 처리를 위한 AEM 워크플로우 데이터 표면화**: 안전한 처리를 위해 고객 관리 저장소에 민감한 개인 데이터(SPD) 요소를 포함하는 처리 중인 AEM 워크플로우 데이터(AEM Workflow Variables 데이터)를 저장할 수 있습니다. 데이터 요소와 워크플로우 변수는 AEM 저장소에 저장되지 않으며 워크플로우를 처리하는 동안 고객 관리 저장소에서 주문형 가져옵니다.
 
@@ -62,6 +60,8 @@ ht-degree: 2%
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
 
 * **Communications API로 작성된 레코드 문서 및 PDF 문서에 대한 사용자 정의 글꼴**: 이제 Communications API를 사용하여 생성된 PDF 문서에서 브랜드 승인 글꼴을 사용하여 조직 요구 사항에 맞게 만들 수 있습니다.
+
+* **Forms 포털**: 다음을 사용할 수 있습니다 [Forms 포털](/help/forms/configure-forms-portal.md) 게시된 적응형 양식을 AEM Sites 페이지에 나열하려면 다음을 수행하십시오. 사이트 방문자가 사용 가능한 모든 양식을 검색하는 데 도움이 됩니다. 또한 방문자는 양식 포털을 사용하여 적응형 양식의 초안을 저장하고 액세스하고 제출된 적응형 양식의 PDF 버전을 볼 수 있습니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
