@@ -3,14 +3,18 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: '암호 값 및 환경별 값으로 OSGi 구성 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성 {#configuring-osgi-for-aem-as-a-cloud-service}
+
+>[!NOTE]
+>
+>AEM에서는 Cloud Manager 사용자 인터페이스를 사용하여 2021.12.0 릴리스에서 표준 환경 변수를 구성하는 기능을 도입했습니다. 자세한 내용은 설명서를 참조하십시오 [여기](/help/implementing/cloud-manager/environment-variables.md).
 
 [OSGi](https://www.osgi.org/) 는 AEM(Adobe Experience Manager)의 기술 스택에서 기본적인 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
 
@@ -110,7 +114,7 @@ OSGi의 일반적인 사용 사례에서는 인라인 OSGi 구성 값을 사용�
 
 ### 인라인 구성 값을 사용해야 하는 경우 {#when-to-use-inline-configuration-values}
 
-인라인 구성 값은 표준 접근 방식으로 간주되며 가능한 경우 사용해야 합니다. 인라인 구성은 다음과 같은 이점을 제공합니다.
+인라인 구성 값은 표준 접근 방법으로 간주되며 가능한 경우 사용해야 합니다. 인라인 구성은 다음과 같은 이점을 제공합니다.
 
 * Git의 거버넌스 및 버전 내역을 통해 유지 관리됩니다
 * 값은 코드 배포에 암묵적으로 연결됩니다
