@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
+source-git-commit: d9a01a3010582a632f8125964032c1f02363399f
 workflow-type: tm+mt
-source-wordcount: '3437'
+source-wordcount: '3438'
 ht-degree: 35%
 
 ---
@@ -282,7 +282,7 @@ ht-degree: 35%
       + [자산 추가 및 업로드](/help/assets/add-assets.md)
       + [자산 검색](/help/assets/search-assets.md)
       + [일반적인 자산 관리 작업](/help/assets/manage-digital-assets.md)
-      + [3d-자산 미리 보기](/help/assets/dynamic-media/previewing-3d-assets.md)
+      + [3D 자산 미리 보기](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [이미지용 스마트 태그](/help/assets/smart-tags.md)
       + [스마트 태그가 비디오 자산에 지정됩니다](/help/assets/smart-tags-video-assets.md)
       + [자산 구성 방법](/help/assets/organize-assets.md)
