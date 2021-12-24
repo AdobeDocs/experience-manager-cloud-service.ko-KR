@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9dc60e627a6770ee636ad5f8a8e0a8eb81adae9b
+source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3441'
 ht-degree: 35%
 
 ---
@@ -393,7 +393,6 @@ ht-degree: 35%
    + [소개](/help/forms/home.md)
    + [주요 기능](/help/forms/key-features.md)
    + [주요 변경 사항](/help/forms/notable-changes.md)
-   + [릴리스 노트](/help/forms/release-notes.md)
    + 서비스 설정 및 구성 {#setup-environment}
       + [Cloud Service 환경에 온보딩](/help/forms/setup-forms-cloud-service.md)
       + [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
@@ -450,7 +449,7 @@ ht-degree: 35%
       + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
    + [Adobe Sign과 통합](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [DocuSign과 통합](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [AEM Sites과 통합](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+   + [사이트와 통합](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Adobe Analytics과 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
    + 워크플로우 만들기 및 사용 {#create-form-centric-workflows}
       + [워크플로우 + 단계 참조에서 Forms 중심의 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
@@ -459,7 +458,8 @@ ht-degree: 35%
    + 통신 사용 {#using-communications}
       + [소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [통신 API](/help/forms/aem-forms-cloud-service-communications.md)
-      + [통신 API + 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [통신 API 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [PDF 문서에서 사용자 정의 글꼴 사용](/help/forms/use-custom-fonts.md)
    + [다음으로 마이그레이션 [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [FAQ](/help/forms/faq.md)
    + [알려진 문제](/help/forms/known-issues.md)
