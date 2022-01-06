@@ -1,82 +1,80 @@
 ---
-title: 헤드리스 콘텐츠 및 AEM에서 번역하는 방법에 대해 알아봅니다
-description: 헤드리스 개념, AEM에 매핑하는 방법, AEM 번역 이론에 대해 알아봅니다.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about headless content and how to translate it in AEM
+description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
+exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
 
 ---
 
-# 헤드리스 콘텐츠 및 AEM에서 번역하는 방법에 대해 알아봅니다 {#learn-about}
+# Learn about headless content and how to translate it in AEM {#learn-about}
 
-헤드리스 개념, AEM에 매핑하는 방법, AEM 번역 이론에 대해 알아봅니다.
+Learn headless concepts, how they map to AEM, and the theory of AEM translation.
 
 ## 목표 {#objective}
 
-이 문서는 헤드리스 컨텐츠 전달, AEM에서 헤드리스를 지원하는 방법 및 이러한 컨텐츠를 번역하는 방법을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+This document helps you understand headless content delivery, how AEM supports headless, and how such content can be translated. After reading you should:
 
-* 헤드리스 컨텐츠 전달의 기본 개념을 이해합니다.
-* AEM에서 헤드리스 및 번역을 지원하는 방법을 숙지하십시오.
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-## 전체 스택 컨텐츠 전달 {#full-stack}
+## Full-Stack Content Delivery {#full-stack}
 
-사용이 간편하고 규모가 큰 CMS(콘텐츠 관리 시스템)가 급증한 이후 조직은 이를 메시징, 브랜딩 및 커뮤니케이션을 관리하는 중앙 위치로 활용했습니다. CMS를 경험 관리를 위한 중심점으로 사용하면 서로 다른 시스템에서 작업을 복제할 필요가 없으므로 효율성이 향상됩니다.
+Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
 
-![기존의 전체 스택 CMS](/help/journey-headless/developer/assets/full-stack.png)
+![](/help/journey-headless/developer/assets/full-stack.png)
 
-전체 스택 CMS에서 컨텐츠를 조작하는 모든 기능은 CMS에 있습니다. 시스템의 기능은 CMS 스택의 다양한 구성 요소를 구성합니다. 전체 스택 솔루션에는 많은 이점이 있습니다.
+In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
 
-* 유지 관리 시스템이 하나 있습니다.
-* 컨텐츠는 중앙에서 관리됩니다.
-* 시스템의 모든 서비스가 통합됩니다.
-* 컨텐츠 작성이 원활하게 수행됩니다.
+* There is one system to maintain.
+* Content is managed centrally.
+* All services of the system are integrated.
+* Content authoring is seamless.
 
-따라서 새 채널을 추가하거나 새 유형의 경험을 지원해야 하는 경우 스택에 하나 이상의 새 구성 요소를 삽입할 수 있으며 변경할 공간이 한 개만 있습니다.
+So if new channel must be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
 
-![스택에 새 채널 추가](/help/journey-headless/developer/assets/adding-channel.png)
+![](/help/journey-headless/developer/assets/adding-channel.png)
 
-그러나 변경 사항에 맞게 스택의 다른 항목을 조정해야 하므로 스택 내의 종속성 복잡성이 빠르게 드러납니다.
+However the complexity of the dependencies within the stack quickly becomes apparent as other items in the stack need to be adjusted to accommodate the changes.
 
-## 헤드리스의 머리 {#the-head}
+## The Head in Headless {#the-head}
 
-시스템의 헤드는 일반적으로 해당 시스템의 출력 렌더러이며, 일반적으로 GUI 또는 기타 그래픽 출력 형태입니다.
+The head of any system is generally the output renderer of that system, typically in the form of a GUI or other graphical output.
 
-헤드리스 CMS에 대해 이야기할 때, CMS는 컨텐츠를 관리하고 소비자에게 계속 제공합니다. 그러나, 표준화된 방식으로 **content**&#x200B;만 전달함으로써, 헤드리스 CMS가 최종 출력 렌더링을 생략하고 컨텐츠의 **presentation**&#x200B;을 소비 서비스에 남겨 둡니다.
+When we talk about a headless CMS, the CMS manages the content and continues to deliver it to consumers. ********
 
-![헤드리스 CMS](/help/journey-headless/developer/assets/headless-cms.png)
+![](/help/journey-headless/developer/assets/headless-cms.png)
 
-AR 경험, 웹 상점, 모바일 경험, 점진적 웹 앱(PWA) 등 소비되는 서비스는 헤드리스 CMS의 콘텐츠를 가져와서 자체 렌더링을 제공합니다. 그들은 여러분의 컨텐츠에 대해 그들 자신의 의견을 제공하는 것을 돌봅니다.
+The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
 
-헤드를 생략하면 복잡도를 제거하여 CMS를 단순화할 수 있습니다. 이렇게 하면 컨텐츠가 실제로 필요하고 이러한 렌더링에 더 잘 맞는 서비스로 컨텐츠를 렌더링하는 작업도 이동합니다.
+Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
 
-## AEM에서 헤드리스 컨텐츠 번역 {#translating-in-aem}
+## Translating Headless Content in AEM {#translating-in-aem}
 
-AEM은 전체 스택 방식으로 기존 웹 페이지를 만들고, 관리하고 전달할 수 있는 강력한 도구를 제공할 뿐만 아니라 자체 포함된 컨텐츠 선택 사항을 작성하여 헤드리도록 할 수도 있습니다.
+In addition to offering robust tools to create, manage, and deliver traditional webpages in the full-stack fashion, AEM also offers the ability to author self-contained selections of content and serve them headlessly.
 
-AEM의 기능을 사용하면 헤드리스, 전체 스택 또는 두 모델에서 동시에 컨텐츠를 제공할 수 있습니다. 번역 전문가의 경우, 두 가지 유형의 컨텐츠에 동일한 번역 도구 세트를 적용할 수 있으므로 컨텐츠를 번역할 수 있는 통합된 방법을 제공합니다.
+The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
 
-여정에서 AEM이 컨텐츠를 변환하는 방법에 대한 세부 사항을 알게 되지만 높은 수준에서 개념은 간단합니다.
+Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
 
-1. 번역 통합 프레임워크를 구성하여 번역 서비스에 대한 연결을 정의합니다.
-1. 번역 규칙을 사용하여 번역해야 하는 콘텐츠를 정의합니다.
-1. 컨텐츠를 작성하여 번역 서비스로 보내고 결과를 받을 번역 프로젝트를 만듭니다.
-1. 번역된 컨텐츠를 검토하고 게시합니다.
+1. Define a connection to a translation service by configuring the translation integration framework.
+1. Define which content should be translated using translation rules.
+1. Create a translation project to harvest the content, send it to the translation service, and receive the results.
+1. Review and publish the translated content.
 
-## 다음은 무엇입니까? {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-AEM 헤드리스 번역 여정을 시작해 주셔서 감사합니다! 이제 이 문서를 읽고 나면 다음을 수행해야 합니다.
+Thanks for getting started on your AEM headless translation journey! Now that you read this document you should:
 
-* 헤드리스 컨텐츠 전달의 기본 개념을 이해합니다.
-* AEM에서 헤드리스 및 번역을 지원하는 방법을 숙지하십시오.
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-이 지식을 바탕으로 AEM 헤드리스 번역 여정을 계속 진행하려면 다음 문서 [AEM 헤드리스 번역 시작하기](getting-started.md)를 참조하여 AEM에서 헤드리스 콘텐츠를 관리하는 방법에 대한 개요를 보고 번역 도구를 익히십시오.
+[](getting-started.md)
 
 ## 추가 리소스 {#additional-resources}
 
-문서 [AEM 헤드리스 번역 시작하기](getting-started.md)를 검토하여 헤드리스 번역 여정의 다음 부분으로 이동하는 것이 좋지만, 이 문서에서 언급된 일부 개념에 대해 자세히 설명하는 추가 선택적 리소스는 있지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
+[](getting-started.md)
 
-* [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)  - AEM 다중 사이트 관리자의 세부 정보와 번역 도구로 작동하는 방식
+* [](/help/sites-cloud/administering/msm-and-translation.md)

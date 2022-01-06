@@ -1,103 +1,101 @@
 ---
-title: 번역 규칙 구성
-description: 번역 규칙을 정의하여 번역 콘텐츠를 식별하는 방법을 알아봅니다.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Configure Translation Rules
+description: Learn how to define translation rules to identify content for translation.
+exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
-# 번역 규칙 구성 {#configure-translation-rules}
+# Configure Translation Rules {#configure-translation-rules}
 
-번역 규칙을 정의하여 번역 콘텐츠를 식별하는 방법을 알아봅니다.
+Learn how to define translation rules to identify content for translation.
 
-## 지금까지 그 이야기 {#story-so-far}
+## The Story So Far {#story-so-far}
 
-AEM 헤드리스 번역 여정의 이전 문서에서, [번역 커넥터 구성](configure-connector.md)에서는 번역 커넥터를 설치하고 구성하는 방법을 알아보았으며, 이제 다음을 수행해야 합니다.
+[](configure-connector.md)
 
-* AEM에서 번역 통합 프레임워크의 중요한 매개 변수를 이해합니다.
-* 번역 서비스에 대한 자체 연결을 설정할 수 있습니다.
+* Understand the important parameters of the Translation Integration Framework in AEM.
+* Be able to set up your own connection to your translation service.
 
-커넥터가 설정되었으므로 이 문서를 통해 번역해야 하는 컨텐츠를 식별하는 다음 단계를 살펴봅니다.
+Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
 
 ## 목표 {#objective}
 
-이 문서는 AEM 번역 규칙을 사용하여 번역 콘텐츠를 식별하는 방법을 이해하는 데 도움이 됩니다. 이 문서를 읽은 후에는 다음을 수행해야 합니다.
+This document helps you understand how to use AEM&#39;s translation rules to identify your translation content. After reading this document you should:
 
-* 번역 규칙이 수행하는 작업을 이해합니다.
-* 고유한 번역 규칙을 정의할 수 있습니다.
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
-## 번역 규칙 {#translation-rules}
+## Translation Rules {#translation-rules}
 
-헤드리스 컨텐츠를 나타내는 컨텐츠 조각은 구조화된 필드로 구성된 많은 정보를 포함할 수 있습니다. 프로젝트 요구 사항에 따라 컨텐츠 조각 내의 모든 필드를 번역해야 하는 것은 아닐 수 있습니다.
+Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all of the fields within a Content Fragment must to be translated.
 
-번역 규칙은 번역 프로젝트에 포함되거나 번역 프로젝트에서 제외되는 콘텐츠를 식별합니다. 컨텐츠가 번역되면 AEM은 이러한 규칙을 기반으로 컨텐츠를 추출하거나 수확합니다. 이렇게 하면 번역해야 하는 컨텐츠만 번역 서비스로 전송됩니다.
+Translation rules identify the content that is included in, or excluded from, translation projects. When content is translated, AEM extracts or harvests the content based on these rules. In this way only content that must be translated is sent to the translation service.
 
-번역 규칙에는 다음 정보가 포함됩니다.
+Translation rules include the following information:
 
-* 규칙이 적용되는 컨텐츠의 경로
-   * 이 규칙은 컨텐츠의 하위 항목에도 적용됩니다
-* 변환할 컨텐츠가 들어 있는 속성의 이름
-   * 속성은 특정 리소스 유형이나 모든 리소스 유형에만 해당될 수 있습니다
+* The path of the content to which the rule applies
+   * The rule also applies to the descendants of the content
+* The names of the properties that contain the content to translate
+   * The property can be specific to a specific resource type or to all resource types
 
-컨텐츠 조각의 구조를 정의하는 컨텐츠 조각 모델은 고유한 프로젝트이므로 AEM에서 변환할 컨텐츠 모델의 요소를 알 수 있도록 번역 규칙을 설정하는 것이 중요합니다.
+Because Content Fragment Models, which define the structure of your Content Fragments, are unique to your own project, it is vital to set up translation rules so AEM knows what elements of your content models to translate.
 
 >[!TIP]
 >
->일반적으로 컨텐츠 설계자는 번역에 필요한 모든 필드의 **속성 이름**&#x200B;을 사용하여 번역 전문가에게 제공합니다. 이러한 이름은 번역 규칙을 구성하는 데 필요합니다. 번역 전문의로서, [이 여정에서 이전에 설명한 대로 이러한 **속성 이름**&#x200B;을 직접 찾을 수 있습니다.](getting-started.md#content-modlels)
+>**** These names are needed to configure translation rules. [****](getting-started.md#content-modlels)
 
-## 번역 규칙 만들기 {#creating-rules}
+## Creating Translation Rules {#creating-rules}
 
-복잡한 번역 요구 사항을 지원하도록 여러 규칙을 만들 수 있습니다. 예를 들어, 작업 중인 한 프로젝트에서는 모델의 모든 필드를 번역해야 하지만, 다른 유일한 설명 필드는 제목을 번역하지 않은 상태로 두어야 합니다.
+Multiple rules can be created to support complex translation requirements. For example, one project you may be working on requires all fields of the model to be translated, but on another only description fields must be translated while titles are left untranslated.
 
-번역 규칙은 이러한 시나리오를 처리하도록 설계되었습니다. 하지만 이 예에서는 간단한 단일 구성에 초점을 맞추어 규칙을 만드는 방법을 보여줍니다.
+Translation rules are designed to handle such scenarios. However in this example we illustrate how to create rules by focusing on a simple, single configuration.
 
-번역 규칙을 구성하는 데 사용할 수 있는 **번역 구성** 콘솔이 있습니다. 액세스하려면 다음을 수행하십시오.
+**** To access it:
 
-1. **도구** -> **일반**&#x200B;으로 이동합니다.
-1. **번역 구성**&#x200B;을 탭하거나 클릭합니다.
+1. ********
+1. ****
 
-**번역 구성** UI에는 번역 규칙에 사용할 수 있는 옵션이 많습니다. 여기서는 기본 헤드리스 로컬라이제이션 구성에 필요한 가장 필요하고 일반적인 단계를 강조 표시합니다.
+**** Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
 
-1. 경로를 추가할 수 있는 **컨텍스트 추가**를 탭하거나 클릭합니다. 규칙의 영향을 받는 콘텐츠 경로입니다.
-   ![컨텍스트 추가](assets/add-translation-context.png)
-1. 경로 브라우저를 사용하여 필요한 경로를 선택하고 **확인** 단추를 탭하거나 클릭하여 저장합니다. 헤드리스 컨텐츠가 있는 컨텐츠 조각은 일반적으로 `/content/dam/<your-project>` 아래에 있습니다.
-   ![경로를 선택합니다](assets/select-context.png)
-1. AEM에서 구성을 저장합니다.
-1. 방금 만든 컨텍스트를 선택한 다음 **편집**&#x200B;을 탭하거나 클릭해야 합니다. 속성을 구성하려면 **번역 규칙 편집기**가 열립니다.
-   ![번역 규칙 편집기](assets/translation-rules-editor.png)
-1. 기본적으로 모든 구성은 상위 경로에서 상속됩니다(이 경우 `/content/dam`). 구성에 필드를 더 추가하려면 **`/content/dam`**&#x200B;에서 상속 옵션을 선택 취소합니다.
-1. 선택 취소되면 목록의 **일반** 섹션 아래에서 이전에 번역 필드로 식별한 [컨텐츠 조각 모델의 속성 이름을 추가합니다.](getting-started.md#content-models)
-   1. **새 속성** 필드에 속성 이름을 입력합니다.
-   1. **변환** 및 **상속** 옵션이 자동으로 선택됩니다.
-   1. **추가**&#x200B;를 탭하거나 클릭합니다.
-   1. 번역해야 하는 모든 필드에 대해 이 단계를 반복합니다.
+1. **** This is the path of the content that is be affected by the rule.
+   ![](assets/add-translation-context.png)
+1. **** `/content/dam/<your-project>`
+   ![](assets/select-context.png)
+1. AEM saves the configuration.
+1. **** ****
+   ![](assets/translation-rules-editor.png)
+1. `/content/dam` **`/content/dam`**
+1. ****[](getting-started.md#content-models)
+   1. ****
+   1. ********
+   1. ****
+   1. Repeat these steps for all of the fields that you must translate.
    1. **저장**을 탭하거나 클릭합니다.
-      ![속성 추가](assets/add-property.png)
+      ![](assets/add-property.png)
 
-이제 번역 규칙을 구성했습니다.
+You have now configured your translation rules.
 
-## 고급 사용 {#advanced-usage}
+## Advanced Usage {#advanced-usage}
 
-번역 규칙의 일부로 구성할 수 있는 다양한 추가 속성이 있습니다. 또한 규칙을 XML로 직접 지정하여 보다 구체적이고 유연하게 지정할 수 있습니다.
+There are a number of additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
 
-이러한 기능은 일반적으로 헤드리스 컨텐츠를 현지화하는 데 필요하지 않지만, 관심이 있는 경우 [추가 리소스](#additional-resources) 섹션에서 추가로 읽을 수 있습니다.
+[](#additional-resources)
 
-## 다음은 무엇입니까? {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-헤드리스 번역 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
+Now that you have completed this part of the headless translation journey you should:
 
-* 번역 규칙이 수행하는 작업을 이해합니다.
-* 고유한 번역 규칙을 정의할 수 있습니다.
+* Understand what the translation rules do.
+* Be able to define your own translation rules.
 
-이러한 지식을 바탕으로 AEM 헤드리스 번역 여정을 계속 진행하려면 다음 문서 [컨텐츠 변환](translate-content.md)을 참조하여 커넥터와 규칙이 어떻게 상호 작용하여 헤드리스 컨텐츠를 번역하는지 학습합니다.
+[](translate-content.md)
 
 ## 추가 리소스 {#additional-resources}
 
-[컨텐츠 번역 문서를 검토하여 헤드리스 번역 여정의 다음 부분으로 이동하는 것이 좋지만,](translate-content.md) 다음은 이 문서에서 언급된 일부 개념에 대해 자세히 설명하는 추가 선택적 리소스입니다. 하지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
+[](translate-content.md)
 
-* [번역할 컨텐츠 식별](/help/sites-cloud/administering/translation/rules.md)  - 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알아봅니다.
+* [](/help/sites-cloud/administering/translation/rules.md)

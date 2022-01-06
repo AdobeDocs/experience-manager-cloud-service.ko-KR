@@ -1,133 +1,131 @@
 ---
-title: AEM 헤드리스 번역 시작
-description: 헤드리스 콘텐츠를 구성하는 방법과 AEM 번역 도구가 작동하는 방식을 알아봅니다.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Get started with AEM headless translation
+description: Get to know how to organize your headless content and how AEM's translation tools work.
+exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 0%
 
 ---
 
-# AEM Headless 번역 시작 {#getting-started}
+# Get Started with AEM Headless Translation {#getting-started}
 
-헤드리스 콘텐츠를 구성하는 방법과 AEM 번역 도구가 작동하는 방식을 알아봅니다.
+Get to know how to organize your headless content and how AEM&#39;s translation tools work.
 
-## 지금까지 그 이야기 {#story-so-far}
+## The Story So Far {#story-so-far}
 
-AEM 헤드리스 번역 여정의 이전 문서에서, [헤드리스 콘텐츠와 AEM](learn-about.md)에서 번역하는 방법에 대해 학습하면 헤드리스 CMS가 무엇인지에 대한 기본 이론을 학습하고 이제 다음을 수행해야 합니다.
+[](learn-about.md)
 
-* 헤드리스 컨텐츠 전달의 기본 개념을 이해합니다.
-* AEM에서 헤드리스 및 번역을 지원하는 방법을 숙지하십시오.
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-이 문서는 이러한 기본 사항을 기반으로 하여 AEM에서 헤드리스 콘텐츠를 저장하고 관리하는 방법과 AEM 번역 도구를 사용하여 해당 콘텐츠를 번역하는 방법을 이해합니다.
+This article builds on those fundamentals so you understand how AEM stores and manages headless content and how you can use AEM&#39;s translation tools to translate that content.
 
 ## 목표 {#objective}
 
-이 문서는 AEM에서 헤드리스 컨텐츠를 번역하는 방법을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+This document helps you understand how to get started translating headless content in AEM. After reading you should:
 
-* 번역에 대한 컨텐츠 구조의 중요성을 이해합니다.
-* AEM에서 헤드리스 콘텐츠를 저장하는 방법을 이해합니다.
-* AEM 번역 도구에 익숙해지십시오.
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
-## 요구 사항 및 사전 요구 사항 {#requirements-prerequisites}
+## Requirements and Prerequisites {#requirements-prerequisites}
 
-헤드리스 AEM 컨텐츠를 번역하기 전에 많은 요구 사항이 있습니다.
+There are a number of requirements before you begin translating your headless AEM content.
 
-### 지식 {#knowledge}
+### Knowledge {#knowledge}
 
-* CMS에서 컨텐츠를 번역할 수 있습니다.
-* 대규모 CMS의 기본 기능을 사용한 경험
-* AEM 기본 처리에 대한 전문 지식 얻기
-* 사용 중인 번역 서비스 이해
-* 번역하고 있는 콘텐츠에 대한 기본 이해
+* Experience translating content in a CMS
+* Experience using the basic features of a large-scale CMS
+* Have a working knowledge of AEM basic handling
+* Understanding of the translation service you are using
+* Have a basic understanding of the content you are translating
 
 >[!TIP]
 >
->AEM과 같은 대규모 CMS를 사용하는 것에 익숙하지 않은 경우 계속하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하십시오. 기본 처리 설명서는 여정의 일부가 아니므로 완료되면 이 페이지로 돌아오십시오.
+>[](/help/sites-cloud/authoring/getting-started/basic-handling.md) The Basic Handling documentation is not part of the journey, so please return to this page when complete.
 
 ### 도구 {#tools}
 
-* 컨텐츠 번역 테스트를 위한 샌드박스 액세스
-* 기본 번역 서비스에 연결할 자격 증명
-* AEM에서 `project-administrators` 그룹의 구성원이어야 합니다
+* Sandbox access for testing translating your content
+* Credentials to connect to your preferred translation service
+* `project-administrators`
 
-## 구조가 키임 {#content-structure}
+## Structure is Key {#content-structure}
 
-헤드리스 또는 기존 웹 페이지인 AEM 컨텐츠는 해당 구조에 의해 결정됩니다. AEM에서는 컨텐츠 구조에 거의 필요한 사항을 지정하지 않지만 프로젝트 계획의 일부로서 컨텐츠 계층 구조를 신중하게 고려할 경우 번역이 훨씬 간단해질 수 있습니다.
+AEM&#39;s content, be it headless or traditional web pages, is driven by its structure. AEM imposes few requirements on the content structure, but careful consideration of your content hierarchy as part of the project planning can make translation much simpler.
 
 >[!TIP]
 >
->헤드리스 프로젝트의 시작 부분에 번역을 계획합니다. 일찍 프로젝트 관리자 및 컨텐츠 설계자와 긴밀하게 작업합니다.
+>Plan for translation at the very beginning of the headless project. Work closely with the project manager and content architects early.
 >
->국제화 프로젝트 관리자는 번역해야 하는 컨텐츠와 번역되지 않아야 하는 사항, 그리고 지역 또는 지역 컨텐츠 제작자가 수정할 수 있는 번역된 컨텐츠를 정의하는 책임을 지는 별도의 인물이어야 합니다.
+>An Internationalization Project Manager may be required as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
 
-## AEM에서 헤드리스 콘텐츠를 저장하는 방법 {#headless-content-in-aem}
+## How AEM Stores Headless Content {#headless-content-in-aem}
 
-번역 전문가의 경우, AEM에서 헤드리스 콘텐츠를 관리하는 방법을 심층적으로 이해하는 것은 중요하지 않습니다. 그러나 기본 개념 및 용어를 숙지하는 것은 나중에 AEM 번역 도구를 사용할 때 유용합니다. 가장 중요한 것은 자신의 콘텐츠와 콘텐츠를 효과적으로 번역하기 위해 어떻게 구조화되었는지 이해해야 한다는 것입니다.
+For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM&#39;s translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
 
-### 컨텐츠 모델 {#content-models}
+### Content Models {#content-models}
 
-헤드리스 콘텐츠를 채널, 지역 및 언어 간에 일관되게 전달하려면 높은 구조화여야 합니다. AEM에서는 컨텐츠 모델을 사용하여 이 구조를 적용합니다. 컨텐츠 모델을 헤드리스 컨텐츠를 만들기 위한 템플릿 또는 패턴의 일종으로 생각합니다. 모든 프로젝트에는 자체 요구 사항이 있으므로 모든 프로젝트는 자체 컨텐츠 조각 모델을 정의합니다. AEM에는 이러한 모델에 대한 고정 요구 사항이나 구조가 없습니다.
+In order for headless content to be delivered consistently across channels, regions, and languages, content must be highly structured. AEM uses Content Models to enforce this structure. Think of Content Models as a kind of template or pattern for creating headless content. Because every project has its own needs, every project defines its own Content Fragment Models. AEM has no fixed requirements or structure for such models.
 
-컨텐츠 설계자는 이 구조를 정의하기 위해 프로젝트에서 초기에 작동합니다. 번역 전문가는 콘텐츠 설계자와 긴밀히 협력하여 컨텐츠를 이해하고 구성해야 합니다.
+The content architect works early in the project to define this structure. As the translation specialist, you should work closely with the content architect to understand and organize the content.
 
 >[!NOTE]
 >
->컨텐츠 모델을 정의하는 것은 컨텐츠 설계자의 책임입니다. 번역 전문가는 다음 단계에 설명된 대로 해당 구조에만 익숙해야 합니다.
+>It is the responsibility of the content architect to define the Content Models. The translation specialist should only be familiar with their structure as outlined in the following steps.
 
-컨텐츠 모델은 컨텐츠 구조를 정의하므로 변환해야 하는 모델의 필드를 알고 있어야 합니다. 일반적으로 컨텐츠 설계자와 협력하여 이를 정의합니다. 컨텐츠 모델의 필드를 찾아보려면 아래 단계를 따르십시오.
+Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
-1. **도구** -> **자산** -> **컨텐츠 조각 모델**&#x200B;으로 이동합니다.
-1. 컨텐츠 조각 모델은 일반적으로 폴더 구조에 저장됩니다. 프로젝트의 폴더를 탭하거나 클릭합니다.
-1. 모델이 나열됩니다. 모델을 탭하거나 클릭하여 세부 사항을 확인합니다.
+1. ************
+1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
+1. The models are listed. Tap or click on the model to see the details.
    ![콘텐츠 조각 모델](assets/content-fragment-models.png)
-1. **컨텐츠 조각 모델 편집기**&#x200B;가 열립니다.
-   1. 왼쪽 열에는 모델의 필드가 포함됩니다. 이 칼럼은 우리에게 흥미를 준다.
-   1. 오른쪽 열에는 모델에 추가할 수 있는 필드가 있습니다. 이 열은 무시할 수 있습니다.
+1. ****
+   1. The left column contains the fields of the model. This column interests us.
+   1. The right column contains the fields that can be added to the model. This column we can ignore.
       ![컨텐츠 조각 모델 편집기](assets/content-fragment-model-editor.png)
-1. 모델의 필드 중 하나를 탭하거나 클릭합니다. AEM은 표시를 표시하고 오른쪽 열에 해당 필드의 세부 정보가 표시됩니다.
-   ![컨텐츠 조각 모델 편집기 세부 사항](assets/content-fragment-model-editor-detail.png)
+1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
+   ![](assets/content-fragment-model-editor-detail.png)
 
-변환해야 하는 모든 필드에 대해 **속성 이름** 필드를 주목하십시오. 이 정보는 여정에서 나중에 필요합니다. 이러한 **속성 이름**&#x200B;은 컨텐츠의 어느 필드를 번역해야 하는지 AEM에 알려주어야 합니다.
+**** You will need this information later in the journey. ****
 
 >[!TIP]
 >
->일반적으로 컨텐츠 설계자는 번역에 필요한 모든 필드의 **속성 이름**&#x200B;을 사용하여 번역 전문가에게 제공합니다. 이러한 필드 이름은 나중에 여정에서 수행해야 합니다. 번역 전문가의 이해를 위해 이전 단계가 제공됩니다.
+>**** These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
 
 ### 콘텐츠 조각 {#content-fragments}
 
-컨텐츠 모델은 컨텐츠 작성자가 실제 헤드리스 컨텐츠를 만드는 데 사용됩니다. 컨텐츠 작성자는 컨텐츠를 기반으로 컨텐츠를 작성한 다음 컨텐츠 조각을 만들 모델을 선택합니다. 컨텐츠 조각은 모델의 인스턴스이며, 헤드리도록 전달될 실제 컨텐츠를 나타냅니다.
+Content Models are used by the content authors to create the actual headless content. Content authors select which model to base their content on an then create Content Fragments. Content Fragments are instances of the models and represent actual content to be delivered headlessly.
 
-컨텐츠 모델이 컨텐츠의 패턴인 경우 컨텐츠 조각은 해당 패턴을 기반으로 하는 실제 컨텐츠입니다. 컨텐츠 조각은 번역해야 하는 컨텐츠를 나타냅니다.
+If the Content Models are the patterns for the content, the Content Fragments are the actual content based on those patterns. The Content Fragments represent the content that must be translated.
 
-컨텐츠 조각은 DAM(디지털 자산 관리)의 일부로서 AEM에서 자산으로 관리됩니다. 이 매개 변수는 모두 `/content/dam` 경로 아래에 있으므로 중요합니다.
+Content Fragments are managed as assets in AEM as part of digital asset management (DAM). `/content/dam`
 
-## 권장 컨텐츠 구조 {#recommended-structure}
+## Recommended Content Structure {#recommended-structure}
 
-이전에 권장했듯이 컨텐츠 설계자와 협력하여 프로젝트에 적합한 컨텐츠 구조를 결정합니다. 그러나 다음은 매우 효과적이고 간단하며 직관적인 구조입니다.
+As previously recommended, work with your content architect to determine the appropriate content structure for your own project. However the following is a proven, simple, and intuitive structure which is quite effective.
 
-`/content/dam` 아래에서 프로젝트의 기본 폴더를 정의합니다.
+`/content/dam`
 
 ```text
 /content/dam/<your-project>
 ```
 
-컨텐츠가 작성된 언어를 언어 루트라고 합니다. 이 예제에서는 영어이며 이 경로 아래에 있어야 합니다.
+The language in which your content is authored is called the language root. In our example it is English and it should be below this path.
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-현지화해야 할 수 있는 모든 프로젝트 콘텐츠는 언어 루트 아래에 배치해야 합니다.
+All project content that may need to be localized should be placed under the language root.
 
 ```text
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-번역은 해당 언어의 ISO-2 언어 코드를 나타내는 폴더 이름과 함께 언어 루트와 함께 동위 폴더로 만들어야 합니다. 예를 들어, 독일어 경로는 다음과 같습니다.
+Translations should be created as sibling folders alongside the language root with their folder name representing the ISO-2 language code of the language. For example, German would have the following path.
 
 ```text
 /content/dam/<your-project>/de
@@ -135,9 +133,9 @@ AEM 헤드리스 번역 여정의 이전 문서에서, [헤드리스 콘텐츠�
 
 >[!NOTE]
 >
->컨텐츠 설계자는 일반적으로 이러한 언어 폴더를 만들어야 합니다. 작성되지 않은 경우 AEM에서 나중에 번역 작업을 만들 수 없습니다.
+>The content architect generally is responsible for creating these language folders. If they are not created, AEM will not be able to later create translation jobs.
 
-최종 구조가 다음과 같을 수 있습니다.
+The final structure may look something like the following.
 
 ```text
 /content
@@ -156,39 +154,39 @@ AEM 헤드리스 번역 여정의 이전 문서에서, [헤드리스 콘텐츠�
         |- ...
 ```
 
-나중에 번역을 구성하는 데 필요하므로 컨텐츠의 특정 경로를 주목해야 합니다.
+You should take note of the specific path of your content as it will be required later to configure your translation.
 
 >[!NOTE]
 >
->일반적으로 컨텐츠 구조를 정의하는 것은 컨텐츠 설계자의 책임이지만 번역 전문가와 공동 작업할 수 있습니다.
+>It is generally the responsibility of the content architect to define the content structure, but can collaborate with the translation specialist.
 >
->완벽을 기하기 위해 여기에 자세히 나와 있다.
+>It is detailed here for completeness.
 
-## AEM 번역 도구 {#translation-tools}
+## AEM Translation Tools {#translation-tools}
 
-이제 컨텐츠 조각의 정의와 컨텐츠 구조의 중요성을 이해하므로 이 컨텐츠를 번역하는 방법을 살펴볼 수 있습니다. AEM의 번역 도구는 매우 강력하지만 높은 수준에서 이해하기 쉽습니다.
+Now that you understand what Content Fragments are and the importance of content structure, we can look at how to translate this content. The translation tools in AEM are quite powerful, but are simple to understand at a high level.
 
-* **번역 커넥터**  - 커넥터는 사용자가 사용하는 AEM과 번역 서비스 간의 링크입니다.
-* **번역 규칙**  - 규칙은 특정 경로에 있는 콘텐츠를 정의합니다.
-* **번역 프로젝트**  - 번역 프로젝트는 단일 번역 작업으로 처리해야 하는 컨텐츠를 수집하여 번역 진행 상황을 추적하고 커넥터와 연결하여 변환할 콘텐츠를 전송하고 번역 서비스에서 다시 받게 합니다.
+* ****
+* ****
+* ****
 
-일반적으로 인스턴스 및 헤드리스 프로젝트당 규칙에 대해 커넥터를 한 번만 설정합니다. 그런 다음 번역 프로젝트를 사용하여 콘텐츠를 번역하고 번역을 계속 최신 상태로 유지할 수 있습니다.
+You generally only set up your connector once for your instance and rules per headless project. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
 
-## 다음은 무엇입니까? {#what-is-next}
+## What&#39;s Next {#what-is-next}
 
-헤드리스 번역 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
+Now that you have completed this part of the headless translation journey you should:
 
-* 번역에 대한 컨텐츠 구조의 중요성을 이해합니다.
-* AEM에서 헤드리스 콘텐츠를 저장하는 방법을 이해합니다.
-* AEM 번역 도구에 익숙해지십시오.
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
-이 지식을 바탕으로 AEM 헤드리스 번역 여정을 계속 진행하려면 다음 문서 [번역 커넥터 구성](configure-connector.md)을(를) 참조하여 AEM을 번역 서비스에 연결하는 방법을 배웁니다.|
+[](configure-connector.md)
 
 ## 추가 리소스 {#additional-resources}
 
-[번역 커넥터 구성](configure-connector.md) 문서를 검토하여 헤드리스 번역 여정의 다음 부분으로 이동하는 것이 좋지만, 다음은 이 문서에서 언급된 일부 개념에 대해 자세히 설명하는 추가 선택적 리소스입니다. 하지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
+[](configure-connector.md)
 
-* [AEM 기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - 컨텐츠를 찾는 것과 같은 필수 작업을 편안하게 탐색하고 수행할 수 있도록 AEM UI의 기본 사항을 알아봅니다.
-* [번역할 컨텐츠 식별](/help/sites-cloud/administering/translation/rules.md)  - 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알아봅니다.
-* [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md)  - 타사 번역 서비스와 통합하도록 번역 통합 프레임워크를 구성하는 방법을 알아봅니다.
-* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md)  - AEM에서 기계 및 인간 번역 프로젝트를 모두 만들고 관리하는 방법을 알아봅니다.
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [](/help/sites-cloud/administering/translation/rules.md)
+* [](/help/sites-cloud/administering/translation/integration-framework.md)
+* [](/help/sites-cloud/administering/translation/managing-projects.md)

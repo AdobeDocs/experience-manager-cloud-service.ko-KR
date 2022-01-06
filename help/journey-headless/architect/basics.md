@@ -1,84 +1,81 @@
 ---
-title: 컨텐츠 모델링 기본 사항 학습
-description: 컨텐츠 조각을 사용하여 헤드리스 CMS용 컨텐츠를 모델링하는 기본 사항을 알아봅니다.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn Content Modeling Basics
+description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 4%
 
 ---
 
+# Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
 
-# AEM을 사용하여 헤드리스에 대한 컨텐츠 모델링 기본 사항을 알아보십시오 {#content-modeling-headless-basics}
+## The Story so Far {#story-so-far}
 
-## 지금까지 이야기 {#story-so-far}
+[](overview.md)[](introduction.md)
 
-[AEM Headless Content Architect 여정](overview.md) 의 시작 부분에서 [소개](introduction.md)는 헤드리스를 위한 컨텐츠 모델링과 관련된 기본 개념과 용어를 다룹니다.
-
-이 문서는 AEM 헤드리스 프로젝트에 대한 컨텐츠를 모델링하는 방법을 이해할 수 있도록 이러한 단원을 기반으로 합니다.
+This article builds on these so you understand how to model your content for your AEM headless project.
 
 ## 목표 {#objective}
 
-* **대상**: 초보
-* **목표**: 헤드리스 CMS에 대한 컨텐츠 모델링 개념을 소개합니다.
+* ****
+* ****
 
-## 컨텐츠 조각 모델을 사용한 컨텐츠 모델링 {#architect-content-fragment-models}
+## Content Modeling with Content Fragment Models {#architect-content-fragment-models}
 
-컨텐츠(데이터) 모델링은 설정된 기술의 집합으로, 관계 데이터베이스를 개발할 때 자주 사용되므로 AEM Headless에 대해 컨텐츠 모델링이 의미하는 것은 무엇입니까?
+Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
 
-### 왜? {#why}
+### Why? {#why}
 
-애플리케이션이 AEM에서 필요한 컨텐츠를 일관되고 효율적으로 요청하고 수신할 수 있도록 하려면 이 컨텐츠를 구조화해야 합니다.
+To ensure that your application can consistently and efficiently request and receive the required content from AEM, this content must be structured.
 
-즉, 애플리케이션이 응답의 형식을 미리 알고 있으므로 처리하는 방법을 알 수 있습니다. 이 작업은 자유 형식 컨텐츠를 수신하는 것보다 훨씬 쉽습니다. 이 컨텐츠를 구문 분석하여 내용을 포함해야 하므로 사용 방법을 결정할 수 있습니다.
+This means that your application knows in advance the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine what it contains and therefore, how it can be used.
 
-### 방법 소개 {#how}
+### Introduction to How? {#how}
 
-AEM은 컨텐츠 조각을 사용하여 컨텐츠를 애플리케이션에 헤드리스 전달에 필요한 구조를 제공합니다.
+AEM uses Content Fragments to provide the structures needed for Headless delivery of your content to your applications.
 
-컨텐츠 모델의 구조는 다음과 같습니다.
+The structure of your content model is:
 
-* 컨텐츠 조각 모델의 정의에 의해 구현됩니다.
-* 컨텐츠 생성에 사용되는 컨텐츠 조각의 기반으로 사용됩니다.
+* realized by the definition of your Content Fragment Model,
+* used as a basis of the Content Fragments used for your content generation.
 
 >[!NOTE]
 >
->컨텐츠 조각 모델은 AEM GraphQL 스키마를 기반으로 사용되므로, 개발자 여정에서 컨텐츠를 검색하는 데 사용됩니다.
+>The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
 
-컨텐츠에 대한 요청은 표준 GraphQL API의 사용자 정의된 구현인 AEM GraphQL API를 사용하여 수행됩니다. AEM GraphQL API를 사용하면 애플리케이션에서 특정 모델 유형에 따라 각 쿼리를 사용하여 컨텐츠 조각에 대한 (복잡한) 쿼리를 수행할 수 있습니다.
+Requests for your content are made using the AEM GraphQL API, a customized implementation of the standard GraphQL API. The AEM GraphQL API allows applications to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
 
-그런 다음 반환된 컨텐츠를 애플리케이션에서 사용할 수 있습니다.
+The content returned can then be used by your applications.
 
-## 컨텐츠 조각 모델을 사용하여 구조 만들기 {#create-structure-content-fragment-models}
+## Creating the Structure with Content Fragment Models {#create-structure-content-fragment-models}
 
-컨텐츠 조각 모델은 컨텐츠의 구조를 정의할 수 있는 다양한 메커니즘을 제공합니다.
+Content Fragment Models provide various mechanisms that allow you to define the structure of your content.
 
-컨텐츠 조각 모델은 엔티티를 설명합니다.
+A Content Fragment Model describes an entity.
 
 >[!NOTE]
->새 모델을 만들 수 있으려면 구성 브라우저에서 컨텐츠 조각 기능을 활성화해야 합니다.
+>Content Fragment functionality must be enabled in the Configuration Browser so that you can create new models.
 
 >[!TIP]
 >
->컨텐츠 작성자가 컨텐츠 조각을 만들 때 선택할 모델을 알 수 있도록 모델의 이름을 지정해야 합니다.
+>The model should be named so that the content author knows which model to select when creating a Content Fragment.
 
-모델 내에서:
+Within a model:
 
-1. **데이터** 유형개별 속성을 정의할 수 있습니다.
-예를 들어, 교사 이름을 **Text**&#x200B;로 포함하는 필드와 해당 연도 서비스가 **Number**&#x200B;으로 정의되어 있습니다.
-1. 데이터 유형 **컨텐츠 참조** 및 **조각 참조**&#x200B;를 사용하면 AEM 내의 다른 컨텐츠에 대한 관계를 만들 수 있습니다.
-1. **조각 참조** 데이터 유형을 사용하면 모델 유형에 따라 컨텐츠 조각을 중첩하여 여러 수준의 구조를 구현할 수 있습니다. 이는 컨텐츠 모델링에 필수적입니다.
+1. ****
+********
+1. ********
+1. **** This is vital for your content modeling.
 
 예:
 
-![컨텐츠 조각을 사용한 컨텐츠 ](assets/headless-modeling-01.png "모델링 컨텐츠 조각을 사용한 컨텐츠 모델링")
+![](assets/headless-modeling-01.png "")
 
 ## 데이터 유형 {#data-types}
 
-AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형을 제공합니다.
+AEM provides the following data types for you to model your content:
 
 * 한 줄 텍스트
 * 여러 줄 텍스트
@@ -93,62 +90,60 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 
 >[!NOTE]
 >
->자세한 내용은 컨텐츠 조각 모델 - 데이터 유형에서 확인할 수 있습니다.
+>Further details are available under Content Fragment Models - Data Types.
 
-## 참조 및 중첩 컨텐츠 {#references-nested-content}
+## References and Nested Content {#references-nested-content}
 
-두 데이터 유형은 특정 조각 외부의 컨텐츠에 대한 참조를 제공합니다.
+Two data types provide references to content outside a specific fragment:
 
-* **컨텐츠**
-참조모든 유형의 다른 컨텐츠에 대한 간단한 참조를 제공합니다.
-예를 들어 지정된 위치에서 이미지를 참조할 수 있습니다.
+* ****
+For example, you can reference an image at a specified location.
 
-* **조각**
-참조다른 컨텐츠 조각에 대한 참조를 제공합니다.
-이 유형의 참조는 중첩된 콘텐츠를 만드는 데 사용되며 콘텐츠를 모델링하는 데 필요한 관계를 도입합니다.
-조각 작성자가 다음을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
-   * 참조된 조각을 직접 편집합니다.
-   * 적절한 모델을 기반으로 새 컨텐츠 조각을 만듭니다
+* ****
+This type of reference is used to create nested content, introducing the relationships needed to model your content.
+The data type can be configured to allow fragment authors to:
+   * Edit the referenced fragment directly.
+   * Create a new content fragment, based on the appropriate model
 
 >[!NOTE]
 >
->텍스트 블록 내의 링크를 사용하여 임시 참조를 만들 수도 있습니다.
+>You can also create ad hoc references by using links within Text blocks.
 
-## 구조 수준(중첩된 조각) {#levels-of-structure-nested-fragments}
+## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 
-컨텐츠 모델링의 경우 **조각 참조** 데이터 유형을 사용하면 여러 수준의 구조 및 관계를 만들 수 있습니다.
+****
 
-이 참조를 사용하면 *connect* 다양한 컨텐츠 조각 모델을 사용하여 상호 관계를 나타낼 수 있습니다. 따라서 헤드리스 애플리케이션에서 필요에 따라 연결을 따르고 콘텐츠에 액세스할 수 있습니다.
+** This allows the headless application to follow the connections and access the content as necessary.
 
 >[!NOTE]
 >
->이 방법은 주의해서 사용해야 하며, 우수 사례는 *필요한 만큼 중첩할 수 있지만*&#x200B;는 가능한 한 적게 정의할 수 있습니다.
+>**
 
-조각 참조는 다른 조각을 참조할 수 있도록 해줍니다.
+Fragment References do just that - they allow you to reference another fragment.
 
-예를 들어 다음 컨텐츠 조각 모델이 정의되어 있을 수 있습니다.
+For example, you might have the following Content Fragment Models defined:
 
 * 도시
 * 회사
 * 개인
-* 수상
+* Awards
 
-매우 간단해 보이지만, 회사에는 CEO와 직원들이 모두 있습니다..그리고 이들은 모두 사람들이며, 각각 사람으로 정의되었습니다.
+Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
-또한 사람은 상을 받을 수 있습니다(또는 둘 중 하나).
+And a Person can have an Award (or maybe two).
 
-* 내 회사 - 회사
-   * CEO - 개인
-   * 직원 - 개인
-      * Personal Award - Award
+* My Company - Company
+   * CEO - Person
+   * Employee(s) - Person
+      * Personal Award(s) - Award
 
-그리고 그것은 단지 시작자들을 위한 것입니다. 복잡성에 따라 시상식은 회사별 또는 회사가 특정 도시에 본점을 둘 수 있습니다.
+And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
 
-이러한 상호 관계를 나타내는 것은 조각 참조(설계자), 컨텐츠 작성자 및 헤드리스 애플리케이션에서 이해할 수 있으므로 조각 참조에서 수행할 수 있습니다.
+Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
 
-## 다음은 무엇입니까? {#whats-next}
+## What&#39;s Next {#whats-next}
 
-기본 사항을 배웠으므로 다음 단계는 [AEM](model-structure.md)에서 컨텐츠 조각 모델 만들기에 대해 학습하는 것입니다. 여기에는 사용 가능한 다양한 참조 및 헤드리스를 위한 모델링의 주요 부분인 조각 참조를 사용하여 구조 수준을 만드는 방법이 소개되고 논의됩니다.
+[](model-structure.md) This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
 
 ## 추가 리소스 {#additional-resources}
 
@@ -158,6 +153,6 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - 이 페이지는 주로  **** 사이트 콘솔을 기반으로 하지만, 많은/대부분의 기능은  **자산 콘솔에서 컨텐츠** 조각을 작성하는 데에도  **** 관련이 있습니다.
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
 
 * [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
