@@ -1,12 +1,12 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Adobe Experience Manager Screens as a Cloud Service 자습 리소스 및 설명서 링크
-landing-page-description: AEM Screens as a Cloud Service 이해
+description: Adobe Experience Manager Screens as a Cloud Service 개요 자가 진단 리소스 및 설명서 링크
+landing-page-description: AEM Screens as a Cloud Service에 대해 이해합니다.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 51%
+source-wordcount: '408'
+ht-degree: 60%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 51%
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
-* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 설명서](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

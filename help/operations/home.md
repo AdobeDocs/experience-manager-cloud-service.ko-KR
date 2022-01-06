@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 작업 및 유지 관리
 description: Adobe Experience Manager as a Cloud Service 작업 및 유지 관리 자습 리소스 및 설명서 링크
-landing-page-description: 색인 지정 및 유지 관리 작업과 같은 AEM as a Cloud Service의 백엔드 작업에 대해 알아봅니다.
+landing-page-description: 색인 및 유지 관리 작업과 같은 AEM as a Cloud Service의 백엔드 작업에 대해 알아봅니다.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 74%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 74%
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
-* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 설명서](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

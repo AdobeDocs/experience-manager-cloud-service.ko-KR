@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 구현
 description: Adobe Experience Manager as a Cloud Service 구현 자습 리소스 및 설명서 링크
-landing-page-description: 개발 및 배포 항목을 비롯하여 AEM as a Cloud Service 배포를 사용자 지정하는 방법을 알아봅니다.
+landing-page-description: 개발 및 배포 항목을 비롯하여 AEM as a Cloud Service 배포를 사용자 정의하는 방법을 알아봅니다.
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 77%
+source-wordcount: '409'
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 77%
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
-* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 설명서](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

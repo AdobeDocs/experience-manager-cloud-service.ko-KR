@@ -1,9 +1,9 @@
 ---
 title: 프로비저닝 프로세스 - 개요
 description: 프로비저닝 프로세스 - 개요
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '331'
 ht-degree: 7%
 
 ---
@@ -11,18 +11,18 @@ ht-degree: 7%
 
 # AEM as a Cloud Service: 온보딩 및 액세스
 
-이 페이지에는 Experience Manager의 Cloud Service 제공 프로세스에 대한 자습 리소스들이 나열됩니다.
+이 페이지에는 Experience Manager as a Cloud Service의 프로비전 프로세스에 대한 자습 리소스들이 나열됩니다.
 
 ## AEM as a Cloud Service 프로비저닝 프로세스 개요
 
 이 섹션에서는 다음 사항에 초점을 둔 주요 문서를 다룹니다.
 
-* AEM으로 Cloud Service 액세스
+* AEM as a Cloud Service 액세스
 * Adobe Experience Manager as a Cloud Service 온보딩 및 프로비저닝 프로세스
 * 도움말 및 리소스
 
 
-### AEM으로 Cloud Service 액세스
+### AEM as a Cloud Service 액세스
 
 자동 프로비저닝이 완료되면
 
@@ -34,7 +34,7 @@ ht-degree: 7%
 > ![processoverview.jpg](./assets/processOverview.jpg)
 
 
-자세한 내용은 [Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)에서 Cloud Service으로 Experience Manager에 온보딩을 방문하십시오.
+자세한 내용은 [Experience League에서 Experience Manager as a Cloud Service으로 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 
 ### 리소스 및 링크
 
@@ -50,7 +50,6 @@ ht-degree: 7%
 ### 2. Adobe Admin Console에 온보드 조직
 
 >   ![processoverview2.jpg](./assets/processOverview2.jpg)
-
 * 시스템 관리자:
    * AEM 프로그램 및 환경을 프로비저닝합니다.
    * 관리 작업을 위한 Admin Console으로 이동합니다.
@@ -67,12 +66,11 @@ ht-degree: 7%
 크기 및 선호도에 따라 사용자를 온보딩하는 세 가지 방법:
 * Admin Console에서 수동으로 사용자 만들기
 * .csv 파일 업로드
-* 엔터프라이즈 Active에서 사용자 동기화
-디렉토리
+* 엔터프라이즈 Active Directory에서 사용자 동기화
 
 ### 4. 관리자는 조직을 구성하고 사용자 및 그룹에 환경에 대한 액세스 권한을 부여합니다
 
 ## 도움말 및 리소스
 
-* [처음 로그인 - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
+* [처음 로그인 - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
 * [AEM as a Cloud Service 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)

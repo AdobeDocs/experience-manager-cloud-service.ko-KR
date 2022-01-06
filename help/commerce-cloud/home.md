@@ -1,12 +1,12 @@
 ---
 title: AEM Content 및 Commerce
-description: AEM 컨텐츠 및 Commerce 자습 리소스 및 설명서 링크
+description: AEM Content 및 Commerce 자가 진단 리소스 및 설명서 링크
 landing-page-description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 64%
+source-wordcount: '357'
+ht-degree: 68%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 64%
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
-* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 설명서](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service에 대한 온보딩
 description: Adobe Experience Manager as a Cloud Service 온보딩 자습 리소스 및 설명서 링크
-landing-page-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 AEM as a Cloud Service으로 시작하는 방법에 대한 요약을 제공합니다.
+landing-page-description: 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 AEM as a Cloud Service로 시작하는 방법에 대한 요약을 제공합니다.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 23%
+source-wordcount: '518'
+ht-degree: 29%
 
 ---
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service으로 여정을 시작하신 것을 축하합니다! 새 
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
-* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 설명서](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 사이트
 description: Adobe Experience Manager as a Cloud Service 사이트 자습 리소스 및 설명서 링크
-landing-page-description: AEM Sites as a Cloud Service으로 작성하고 관리하는 방법을 이해합니다.
+landing-page-description: AEM Sites as a Cloud Service로 작성하고 관리하는 방법을 이해합니다.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 76%
+source-wordcount: '390'
+ht-degree: 81%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 76%
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
-* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager 설명서](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
