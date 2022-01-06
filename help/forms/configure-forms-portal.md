@@ -1,9 +1,9 @@
 ---
 title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms Portal을 만들고 기본 제공 코어 구성 요소를 사용하는 방법을 알아봅니다.
-source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
+source-git-commit: 50eeb2c1e6925b39b03bbbdd627169453ea1c1d8
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1784'
 ht-degree: 1%
 
 ---
@@ -59,22 +59,15 @@ AEM Forms as a Cloud Service에서 바로 사용 가능한 Forms Portal 구성 �
 
    또한, `appTitle`, `appId`, 및 `groupId`를 입력하여 환경을 반영하십시오.
 
+1. **사전 릴리스에서 다음 단계를 수행하여 Forms Portal 구성 요소를 사용합니다.**
+   * [사전 릴리스 채널 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * 바꾸기 `core-forms-components-*` 원하는 시험판 버전(예: 1.0.4-PRERELEASE-20211223)이 있는 버전 `Cloud Manager/AEM Archetype` 프로젝트를 업데이트하여 `<core.forms.components.version>x.y.z</core.forms.components.version>` 최상위 수준의 속성 `pom.xml` Archetype 프로젝트의 예입니다.
+
 1. **프로젝트를 로컬 개발 환경에 배포합니다.** 다음 명령을 사용하여 로컬 개발 환경에 배포할 수 있습니다
 
    `mvn -PautoInstallPackage clean install`
 
    전체 명령 목록이 필요하면 [빌드 및 설치](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
-
-1. [코어 구성 요소 객체 포함](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds) 및 종속성은 다음과 같습니다.
-
-   ```shell
-   <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>{TBD}</artifactId>
-               <type>content-package</type>
-               <version>{TBD}</version>
-   </dependency>
-   ```
 
 1. [코드를 [!DNL AEM Forms] as a Cloud Service 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
@@ -85,7 +78,7 @@ AEM Forms as a Cloud Service에서 바로 사용 가능한 Forms Portal 구성 �
 
 ### 스토리지 구성 경로 {#create-azure-storage-configuration}
 
-이러한 단계를 실행하기 전에 [!DNL Azure] 스토리지 계정 및 액세스 키를 사용하여 액세스 권한을 부여합니다 [!DNL Azure] 저장소 계정.
+이 단계를 실행하기 전에 Azure 저장소 계정 및 액세스 키가 있어야 액세스 권한을 부여할 수 있습니다 [!DNL Azure] 저장소 계정.
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure 저장소]**.
 1. 구성을 만들 폴더를 선택하고 탭합니다. **[!UICONTROL 만들기]**.
