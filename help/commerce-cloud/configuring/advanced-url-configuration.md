@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 3ea19210049e49401da892021f098005759542a3
+source-git-commit: dadf4f21ebaac12386153b2a9c69dc8f10951e9c
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 7%
+source-wordcount: '916'
+ht-degree: 6%
 
 ---
 
@@ -53,6 +53,8 @@ ht-degree: 7%
 * `{{url_path}}` 이 제품의 `url_path`예: `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` 은 현재 선택한 변형으로 대체됩니다(예: ). `VP09-KH-S`
 
+다음 이후 `url_path` 가 더 이상 사용되지 않는 경우, 사전 정의된 제품 URL 형식은 제품의 `url_rewrites` 및 를 선택하는 경우 경로 세그먼트가 가장 큰 세그먼트를 대체 항목으로 선택합니다 `url_path` 을(를) 사용할 수 없습니다.
+
 위의 예제 데이터를 사용하면 기본 URL 형식을 사용하여 형식이 지정된 제품 변형 URL은 다음과 같습니다 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### 카테고리 페이지 URL 형식 {#product-list}
@@ -74,16 +76,19 @@ ht-degree: 7%
 > 
 > 다음 `url_path` 는 `url_keys` 제품 또는 카테고리의 상위 항목 및 제품 또는 카테고리의 `url_key` 분리 `/` 슬래시.
 
+### 특정 카테고리-/제품 페이지 {#specific-pages}
+
+만들 수 있습니다 [여러 카테고리 및 제품 페이지](../authoring/multi-template-usage.md) 를 참조하십시오.
+
+다음 `UrlProvider` 작성자 계층 인스턴스의 해당 페이지에 대한 딥 링크를 생성하도록 사전 구성되어 있습니다. 이 기능은 미리 보기 모드를 사용하여 사이트를 탐색하고, 특정 제품 또는 카테고리 페이지로 이동한 다음, 편집 모드로 전환하여 페이지를 편집하는 편집자에게 유용합니다.
+
+반면 게시 계층 인스턴스에서는 카탈로그 페이지 URL을 안정적으로 유지하여 검색 엔진 순위가 더 이상 떨어지지 않도록 해야 합니다. 이러한 게시 계층 인스턴스로 인해 기본적으로 특정 카탈로그 페이지에 대한 딥 링크가 렌더링되지 않습니다. 이 동작을 변경하려면 _CIF URL 공급자 특정 페이지 전략_ 항상 특정 페이지 url을 생성하도록 구성할 수 있습니다.
+
 ## 사용자 지정 URL 형식 {#custom-url-format}
 
-사용자 지정 URL 형식을 제공하기 위해 프로젝트에서 다음을 구현할 수 있습니다 [`UrlFormat` 인터페이스](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) 및 를 카테고리 페이지 또는 제품 페이지 url 형식으로 사용하여 구현을 OSGI 서비스로 등록합니다. 다음 `UrlFormat#PROP_USE_AS` 서비스 속성은 바꿀 사전 정의된 형식 중 하나를 나타냅니다.
+사용자 지정 URL 형식을 제공하려면 프로젝트가 다음을 구현할 수 있습니다 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 또는 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 서비스 인터페이스를 사용하여 구현을 OSGI 서비스로 등록합니다. 이러한 구현은 사용 가능한 경우 구성된 사전 정의된 형식을 대체합니다. 등록된 여러 개의 구현이 있는 경우 서비스 등급이 높은 구현은 해당 구현이 낮은 서비스 등급을 대체합니다.
 
-* `useAs=productPageUrlFormat`이 구성된 제품 페이지 url 형식을 대체합니다
-* `useAs=categoryPageUrlFormat`은 구성된 카테고리 페이지 url 형식을 대체합니다
-
-의 구현이 여러 개 있는 경우 `UrlFormat` OSGI 서비스로 등록된 경우 서비스 등급이 높은 서비스가 서비스 등급을 낮은 서비스 등급으로 대체합니다.
-
-다음 `UrlFormat` 지정된 매개 변수 맵에서 URL을 작성하고 동일한 매개 변수 맵을 반환하기 위해 URL을 구문 분석하려면 한 쌍의 메서드를 구현해야 합니다. 매개 변수는 카테고리에 대해서만 위에 설명된 것과 동일합니다 `{{uid}}` 매개 변수는 `UrlFormat`.
+사용자 지정 URL 형식 구현은 지정된 매개 변수에서 URL을 빌드하고 URL을 구문 분석하여 각각 동일한 매개 변수를 반환하는 한 쌍의 메서드를 구현해야 합니다.
 
 ## Sling 매핑과 결합 {#sling-mapping}
 
@@ -99,7 +104,7 @@ URL 다시 쓰기는 AEM Dispatcher HTTP 서버를 `mod_rewrite` 모듈. 다음 
 
 >[!NOTE]
 >
->이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 구성 을 참조하십시오.
+>이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 프로젝트에 대한 구성.
 
 ## 추가 리소스 {#additional}
 
