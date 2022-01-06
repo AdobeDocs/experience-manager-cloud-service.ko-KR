@@ -2,9 +2,9 @@
 title: 더 이상 사용되지 않는 및 제거된 기능
 description: 의 사용 중단되거나 제거된 기능에 관한 릴리스 노트입니다. [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 9410b061278d916c95233ecba7f7f946fccc51ed
+source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '582'
 ht-degree: 32%
 
 ---
@@ -53,7 +53,8 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 | [!DNL Sites] | 포털 디렉터 및 포틀릿 구성 요소 | 이 기능은에서 더 이상 사용되지 않습니다. [!DNL Experience Manager] 6.4 및에서 제거됨 [!DNL Experience Manager]. |
 | [!DNL Sites] | 디자인 가져오기 | 이 기능은 [!DNL Experience Manager] 저장소는 런타임 시 액세스할 수 없습니다. |
 | [!DNL Assets] | [!DNL Assets]Marketing Cloud 자산 핵심 서비스 및 Creative Cloud 서비스와 공유하는 를 사용할 수 없습니다. | 통합 [!DNL Adobe Creative Cloud], 사용 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | Apache Sling 데이터 소스(OSGi 번들 org.apache.sling.datasource)에 대한 지원. | N/A |
+| [!DNL Foundation] | Apache Sling 데이터 소스(OSGi 번들 org.apache.sling.datasource) 지원 | N/A |
+| [!DNL Foundation] | JST 스크립팅 템플릿(OSGi 번들 org.apache.sling.scripting.jst) 지원 | 해당 없음 |
 
 ## Java API {#java-api}
 
