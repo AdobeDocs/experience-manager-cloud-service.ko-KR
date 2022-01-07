@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
+source-git-commit: 98862df8b69657cf3a8a4a0f54d1285b3cab526f
 workflow-type: tm+mt
 source-wordcount: '3441'
 ht-degree: 35%
@@ -322,7 +322,7 @@ ht-degree: 35%
       + [MediaLibrary 기능](/help/assets/medialibrary.md)
       + [자산 메타데이터 가져오기 및 내보내기](/help/assets/metadata-import-export.md)
    + 자산 공유 및 분배 {#brand-portal}
-      + [구성 [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [ [!DNL Assets] 를 사용하여  [!DNL Brand Portal] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [자산 게시 대상 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
       + [다음에서 자산 게시 [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
    + 콘텐츠 조각 {#content-fragments}
@@ -664,7 +664,7 @@ ht-degree: 35%
             + [구성 요소 개요](/help/implementing/developing/components/overview.md)
             + [템플릿](/help/implementing/developing/components/templates.md)
             + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/features/style-system.html)
+            + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
             + [컨텐츠 서비스용 JSON 익스포터](/help/implementing/developing/components/json-exporter.md)
             + [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md)
             + [이미지 편집기](/help/implementing/developing/components/image-editor.md)
@@ -724,7 +724,7 @@ ht-degree: 35%
             + [컨텐츠 조각에 대한 원격 AEM GraphQL 쿼리에 대한 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
       + 하이브리드 및 SPA 개발 {#hybrid}
          + [AEM을 사용한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [SPA 소개 및 연습](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND 자습서](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [React 사용 시작](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -740,7 +740,7 @@ ht-degree: 35%
          + [AEM 내에서 외부 SPA 편집](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA의 복합 구성 요소](/help/implementing/developing/hybrid/composite-components.md)
          + [서버 측 렌더링](/help/implementing/developing/hybrid/ssr.md)
-         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [Launch 통합](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md)
    + 개발자 도구 {#developer-tools}
@@ -760,7 +760,7 @@ ht-degree: 35%
       + [ContextHub 진단](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [ContextHub 확장](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [ContextHub로 세그멘테이션 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
+      + [ContextHub로 세그멘테이션 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
    + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
       + App Builder로 AEM 확장{#app-builder}
          + [Adobe Developer App Builder를 사용하여 AEM 확장](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
