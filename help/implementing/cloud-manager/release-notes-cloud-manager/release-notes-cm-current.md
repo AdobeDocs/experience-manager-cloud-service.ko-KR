@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 릴리스 2021.12.0의 Cloud Manager 릴리스 노트
 description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2021.12.0.
 feature: Release Information
-source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
+source-git-commit: 6389dfaf1e4569a0e7bf2c6dbfa30bb003c4db5b
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ AEM as a Cloud Service 2021.12.0의 Cloud Manager 릴리스 날짜는 2021년 12
 * 잠재적인 혼동을 제거하기 위해 TXT 항목(&quot;TXT 레코드&quot; 대신 &quot;TXT 값&quot;)을 복사할 때 UI가 약간 업데이트되었습니다.
 * [인증서 오류와 관련된 설명서입니다](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) 문제 해결 단계와 함께 추가 예를 포함하도록 가 업데이트되었습니다.
 * 이제 프로덕션에 배포하기 전에 프런트엔드 파이프라인 실행에서 옵션을 사용하여 거부하거나 승인할 수 있습니다.
+* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 32로 업데이트되었습니다.
+
 
 ### 버그 수정 {#bug-fixes}
 
