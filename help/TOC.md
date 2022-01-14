@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 98862df8b69657cf3a8a4a0f54d1285b3cab526f
+source-git-commit: c136703a14af8a0366fb39c00b7b73f2d320a448
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3447'
 ht-degree: 35%
 
 ---
@@ -266,6 +266,7 @@ ht-degree: 35%
             + [번역 우수 사례](/help/sites-cloud/administering/translation/best-practices.md)
    + AEM as a Cloud Service와 통합 {#integrations}
       + [Adobe Analytics와 통합](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
+      + [Adobe Analytics 자동 설정과 통합 사용 설정](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
 + 에셋 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
