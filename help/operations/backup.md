@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 백업 및 복원
 description: AEM as a Cloud Service 백업 및 복원
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 0%
 
 AEM as a Cloud Service 지원:
 
+* 스테이지, 운영 및 개발 환경을 위한 백업 및 리스토어
 * 24시간 시점 복구, 즉 지난 24시간 동안 어느 시점으로든 시스템을 복원할 수 있습니다.
 * 지난 7일 동안 하루에 두 번 걸린 특정 Adobe 정의 타임스탬프에서 복원합니다.  모든 복제 메시지(삭제, 업데이트, 생성)는 유지됩니다.
 
