@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1194'
 ht-degree: 3%
 
 ---
@@ -33,16 +33,45 @@ ht-degree: 3%
 
 ## 을 사용하여 자산 다운로드 [!DNL Experience Manager] 인터페이스 {#download-assets}
 
-비동기 다운로드 서비스는 대형 자산을 원활하게 다운로드할 수 있는 프레임워크를 제공합니다. 사용자 인터페이스에서 작은 파일이 실시간으로 다운로드됩니다. [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 기능을 사용하면 더 빨리 다운로드할 수 있습니다. 큰 파일은 비동기식으로 다운로드되고 [!DNL Experience Manager] 받은 편지함의 알림을 통해 완료를 알려줍니다. 자세한 내용은 [이해 [!DNL Experience Manager] 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md).
+비동기 다운로드 서비스는 대형 자산을 원활하게 다운로드할 수 있는 프레임워크를 제공합니다. 사용자 인터페이스에서 작은 파일이 실시간으로 다운로드됩니다. [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 기능을 사용하면 더 빨리 다운로드할 수 있습니다.
 
-![다운로드 알림](assets/download-notification.png)
+기본적으로 Experience Manager은 다운로드 워크플로우가 완료되면 알림을 트리거합니다. 다운로드 알림이  [[!DNL Experience Manager] 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-*그림: 를 통해 알림 다운로드 [!DNL Experience Manager] 받은 편지함.*
+![받은 편지함 알림](assets/inbox-notification-for-large-downloads.png)
 
-다음 경우 비동기 다운로드가 트리거됩니다.
+<!--
+The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-* 자산을 10개 이상 다운로드하거나 100MB를 초과하는 경우.
+![Download notification](assets/download-notification.png)
+
+*Figure: Download notification via [!DNL Experience Manager] Inbox.*
+
+Asynchronous downloads are triggered in either of the following case:
+
+* If there are more than 10 assets or more than 100 MB to be downloaded.
+* If the download takes more than 30 seconds to prepare.
+-->
+
+### 대규모 다운로드에 대한 이메일 알림 활성화 {#enable-emails-for-large-downloads}
+
+비동기 다운로드는 다음 경우 트리거됩니다.
+
+* 자산이 10개 이상인 경우
+* 다운로드 크기가 100MB를 초과하는 경우
 * 다운로드를 준비하는 데 30초 이상 걸리는 경우
+
+백엔드에서 비동기 다운로드가 실행되는 동안 사용자는 Experience Manager에서 계속 탐색하고 작업할 수 있습니다. 다운로드 프로세스가 완료되면 사용자에게 즉시 알리기 위해 기본 메커니즘이 필요합니다. 이러한 목표를 달성하기 위해 관리자는 SMTP 서버를 설정하여 이메일 서비스를 구성할 수 있습니다. 자세한 내용은 [메일 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+
+이메일 서비스가 구성되면 관리자와 사용자는 Experience Manager 인터페이스에서 이메일 알림을 활성화할 수 있습니다.
+
+이메일 알림을 활성화하려면
+
+1. 에 로그인합니다. [!DNL Experience Manager Assets].
+1. 오른쪽 상단 모서리에서 사용자 아이콘을 클릭한 다음 을(를) 클릭합니다 **[!UICONTROL 내 환경 설정]**. 사용자 환경설정 창이 열립니다.
+1. 을(를) 선택합니다 **[!UICONTROL 자산 다운로드 이메일 알림]** 확인란을 선택하고 **[!UICONTROL 수락]**.
+
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
 
 자산을 다운로드하려면 다음 단계를 수행하십시오.
 
@@ -50,8 +79,6 @@ ht-degree: 3%
 1. 다운로드할 자산으로 이동합니다. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다. 도구 모음에서 **[!UICONTROL 다운로드]**.
 
    ![다음에서 자산을 다운로드할 때 사용할 수 있는 옵션 [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
-
-   *그림: 다운로드 대화 상자 옵션.*
 
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
@@ -66,13 +93,23 @@ ht-degree: 3%
 
 1. 대화 상자에서 **[!UICONTROL 다운로드]**.
 
+   큰 다운로드에 대해 이메일 알림이 활성화되면 보관된 zip 폴더의 다운로드 URL이 포함된 이메일이 받은 편지함에 나타납니다. 이메일에서 다운로드 링크를 클릭하여 zip 폴더를 다운로드합니다.
+
+   ![대규모 다운로드용 이메일 알림](/help/assets/assets/email-for-large-notification.png)
+
+   또한 [!DNL Experience Manager] 받은 편지함.
+
+   ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+
 ## 링크 공유를 사용하여 공유된 자산 다운로드 {#link-share-download}
 
+<!--
 >[!NOTE]
 >
->이 기능은 Experience Manager 사전 릴리스 채널에서 사용할 수 있습니다.
+>This functionality is available in the Experience Manager prerelease channel.
+-->
 
-링크를 사용하여 자산을 공유하는 것은 관심 있는 사람이 처음 로그인하지 않고도 이용할 수 있는 편리한 방법입니다 [!DNL Assets]. 자산을 공유할 URL을 생성하려면 [링크 공유 기능](/help/assets/share-assets.md#sharelink).
+링크를 사용하여 자산을 공유하는 것은 관심 있는 사람이 처음 로그인하지 않고도 이용할 수 있는 편리한 방법입니다 [!DNL Assets]. 자세한 내용은 [링크 공유 기능](/help/assets/share-assets.md#sharelink).
 
 사용자가 공유 링크에서 자산을 다운로드하면, [!DNL Assets] 은 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 매우 큰 다운로드의 경우 다운로드가 100GB의 파일로 청크됩니다.
 
