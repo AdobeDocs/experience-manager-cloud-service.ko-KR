@@ -2,9 +2,9 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 0673aa4f2f0ad2f0a5205bf929de3f26aea0d879
+source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1840'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 통신 API는 템플릿(XFA 또는 PDF)을 고객 데이터([XML 데이터](#form-data)) PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성할 수 있습니다.
 
-일반적으로 디자이너를 사용하여 템플릿을 만들고 Communications API를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션이 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템으로 전송하여 아카이빙할 수 있습니다. 일반적인 기본 제공 및 사용자 지정 워크플로우는 다음과 같습니다.
+일반적으로 [디자이너](use-forms-designer.md) 및 를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션이 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템으로 전송하여 아카이빙할 수 있습니다. 일반적인 기본 제공 및 사용자 지정 워크플로우는 다음과 같습니다.
 
 ![통신 워크플로우](assets/communicaions-workflow.png)
 
@@ -44,9 +44,9 @@ ht-degree: 1%
 
 통신은 주문형 및 배치 문서 생성을 위한 HTTP API를 제공합니다.
 
-* **동기 API** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
+* **[동기 API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
 
-* **배치 API(비동기 API)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
+* **[배치 API(비동기 API)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
 
 ## 온보딩
 
@@ -143,7 +143,7 @@ Communication API를 사용하여 문서를 생성하기 전에 다음 고려 �
 
 ### 양식 데이터 {#form-data}
 
-Communications API는 일반적으로 디자이너와 XML 양식 데이터에서 입력된 양식 디자인을 허용합니다. 문서를 데이터로 채우려면 채울 모든 양식 필드의 XML 양식 데이터에 XML 요소가 있어야 합니다. XML 요소 이름은 필드 이름과 일치해야 합니다. XML 요소는 양식 필드에 해당하지 않거나 XML 요소 이름이 필드 이름과 일치하지 않는 경우에는 무시됩니다. XML 요소가 표시되는 순서와 일치하지 않아도 됩니다. 중요한 요소는 XML 요소가 해당 값과 함께 지정된다는 것입니다.
+Communications API는 일반적으로 [디자이너](use-forms-designer.md) 및 XML 양식 데이터를 입력으로 추가할 수 있습니다. 문서를 데이터로 채우려면 채울 모든 양식 필드의 XML 양식 데이터에 XML 요소가 있어야 합니다. XML 요소 이름은 필드 이름과 일치해야 합니다. XML 요소는 양식 필드에 해당하지 않거나 XML 요소 이름이 필드 이름과 일치하지 않는 경우에는 무시됩니다. XML 요소가 표시되는 순서와 일치하지 않아도 됩니다. 중요한 요소는 XML 요소가 해당 값과 함께 지정된다는 것입니다.
 
 다음 예제 대출 신청 양식을 고려하십시오.
 
@@ -186,13 +186,13 @@ Communications API는 일반적으로 디자이너와 XML 양식 데이터에서
 
 Communications API의 렌더링 기능에 대한 전체 액세스 권한을 얻으려면 XDP 파일을 입력으로 사용하는 것이 좋습니다. 경우에 따라 PDF 파일을 사용할 수 있습니다. 그러나 PDF 파일을 입력으로 사용하면 다음과 같은 제한 사항이 있습니다.
 
-XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로 렌더링할 수 없습니다. Communications API는 XFA 스트림(즉 Designer에서 만든 양식)으로 PDF 문서를 레이저 및 레이블 형식으로 렌더링할 수 있습니다. PDF 문서에 서명, 인증 또는 사용 권한(AEM Forms Reader 확장 서비스를 사용하여 적용)이 있는 경우 이러한 인쇄 형식으로 렌더링할 수 없습니다.
+XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로 렌더링할 수 없습니다. Communications API는 XFA 스트림(즉,에서 만든 양식)으로 PDF 문서를 렌더링할 수 있습니다 [디자이너](use-forms-designer.md))을 레이저나 레이블 형식으로 지정합니다. PDF 문서에 서명, 인증 또는 사용 권한(AEM Forms Reader 확장 서비스를 사용하여 적용)이 있는 경우 이러한 인쇄 형식으로 렌더링할 수 없습니다.
 
-&lt;!-* * PDF 버전 및 태그가 지정된 PDF과 같은 런타임 옵션은 Acrobat Forms에서 지원되지 않습니다. XFA 스트림을 포함하는 PDF forms에 대해 유효합니다. 그러나 이러한 양식은 서명하거나 인증할 수 없습니다.
+<!-- Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
 
-### 이메일 지원 {#email-support}
+### Email support {#email-support}
 
-이메일 기능의 경우 이메일 단계를 사용하는 Experience Manager 워크플로우에서 프로세스를 만들 수 있습니다. 워크플로우는 자동화하려는 비즈니스 프로세스를 나타냅니다. —>
+For email functionality, you can create a process in Experience Manager Workflows that uses the Email Step. A workflow represents a business process that you are automating. -->
 
 ### 인쇄 가능 영역 {#printable-areas}
 
@@ -202,9 +202,10 @@ XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로
 
 ### 스크립트 {#scripts}
 
-Communications API와 함께 사용되는 양식 디자인에는 서버에서 실행되는 스크립트가 포함될 수 있습니다. 양식 디자인에는 클라이언트에서 실행되는 스크립트가 포함되어 있지 않아야 합니다. 양식 디자인 스크립트 만들기에 대한 내용은 디자이너 도움말을 참조하십시오.
+Communications API와 함께 사용되는 양식 디자인에는 서버에서 실행되는 스크립트가 포함될 수 있습니다. 양식 디자인에는 클라이언트에서 실행되는 스크립트가 포함되어 있지 않아야 합니다. 양식 디자인 스크립트 만들기에 대한 내용은 [디자이너 도움말](use-forms-designer.md).
 
-&lt;!-* #### 글꼴로 작업하기 위한 문서 고려 사항 글꼴 작업> —>
+<!-- #### Working with Fonts
+ Document Considerations for Working with Fonts>> -->
 
 ### 글꼴 매핑 {#font-mapping}
 
@@ -255,7 +256,7 @@ Type-1 및 OpenType® 글꼴은 PCL 출력에 포함되지 않습니다. Type-1 
 
 ### XCI 구성 파일 작업 {#working-with-xci-files}
 
-Communications API는 XCI 구성 파일을 사용하여 출력이 단일 패널인지 페이지 매김인지를 제어하는 등의 작업을 수행합니다. 이 파일에는 설정할 수 있는 설정이 포함되어 있지만 이 값을 수정하는 것은 일반적이지 않습니다. &lt;!-* default.xci 파일은 svcdata\XMLFormService 폴더에 있습니다. —>
+Communications API는 XCI 구성 파일을 사용하여 출력이 단일 패널인지 페이지 매김인지를 제어하는 등의 작업을 수행합니다. 이 파일에는 설정할 수 있는 설정이 포함되어 있지만 이 값을 수정하는 것은 일반적이지 않습니다. <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 Communications API를 사용하는 동안 수정된 XCI 파일을 전달할 수 있습니다. 이 작업을 수행할 때 기본 파일의 복사본을 만들고 비즈니스 요구 사항을 충족하도록 수정해야 하는 값만 변경하고 수정된 XCI 파일을 사용하십시오.
 
