@@ -2,9 +2,9 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1869'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,12 @@ ht-degree: 1%
 
 * 온디맨드 및 배치 문서 생성 기능을 간소화합니다.
 
-* 에서는 기존 시스템과의 쉬운 통합을 위해 HTTP API를 제공합니다
+* 기존 시스템과 쉽게 통합할 수 있는 HTTP API입니다. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다. 문서 생성을 효율적으로 합니다.
 
 * 데이터에 대한 보안 액세스. Communications API는 고객이 지정한 데이터 저장소에서만 데이터에 연결 및 액세스하고 로컬 데이터 복사본을 만들지 않으므로 Communications를 매우 안전하게 만듭니다.
 
-* 별도의 API를 사용하여 지연 시간이 짧고 처리량이 높아 문서 생성 작업을 효율적으로 수행할 수 있습니다.
-
 ![신용 카드 명세서 샘플](assets/statement.png)
+Communications API를 사용하여 샘플 신용 카드 명세서를 만들 수 있습니다. 이 설명서는 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 데이터를 구분합니다.
 
 ## 어떻게 작동합니까?
 
@@ -143,16 +142,15 @@ Communication API를 사용하여 문서를 생성하기 전에 다음 고려 �
 
 ### 양식 데이터 {#form-data}
 
-Communications API는 일반적으로 [디자이너](use-forms-designer.md) 및 XML 양식 데이터를 입력으로 추가할 수 있습니다. 문서를 데이터로 채우려면 채울 모든 양식 필드의 XML 양식 데이터에 XML 요소가 있어야 합니다. XML 요소 이름은 필드 이름과 일치해야 합니다. XML 요소는 양식 필드에 해당하지 않거나 XML 요소 이름이 필드 이름과 일치하지 않는 경우에는 무시됩니다. XML 요소가 표시되는 순서와 일치하지 않아도 됩니다. 중요한 요소는 XML 요소가 해당 값과 함께 지정된다는 것입니다.
+Communications API는 일반적으로 [디자이너](use-forms-designer.md) 및 XML 양식 데이터를 입력으로 추가할 수 있습니다. 문서를 데이터로 채우려면 채울 모든 양식 필드의 XML 양식 데이터에 XML 요소가 있어야 합니다. XML 요소 이름은 필드 이름과 일치해야 합니다. XML 요소가 양식 필드에 해당하지 않거나 XML 요소 이름이 필드 이름과 일치하지 않으면 XML 요소가 무시됩니다. XML 요소가 표시되는 순서와 일치하지 않아도 됩니다. 중요한 요소는 XML 요소가 해당 값과 함께 지정된다는 것입니다.
 
 다음 예제 대출 신청 양식을 고려하십시오.
 
 ![대출 신청 양식](assets/loanFormData.png)
 
-데이터를 이 양식 디자인에 병합하려면 양식에 해당하는 XML 데이터 소스를 만듭니다. 다음 XML은 예제 모기지 응용 프로그램 양식에 해당하는 XML 데이터 원본을 나타냅니다.
+데이터를 이 양식 디자인에 병합하려면 양식 계층 구조, 필드 이름 지정 및 데이터 형식에 해당하는 XML 데이터 소스를 만듭니다. 다음 XML은 예제 모기지 응용 프로그램 양식에 해당하는 XML 데이터 원본을 나타냅니다.
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### 인쇄 가능 영역 {#printable-areas}
 
-기본 0.25인치 인쇄 불가 여백은 레이블 프린터에는 정확하지 않으며 프린터마다, 레이블 크기에서 레이블 크기에 따라 다릅니다. 0.25인치 여백을 유지하거나 줄이는 것이 좋습니다. 그러나 인쇄되지 않는 여백은 증가시키지 않는 것이 좋습니다. 그렇지 않으면 인쇄 가능 영역의 정보가 제대로 인쇄되지 않습니다.
+기본 0.25인치 인쇄 불가 여백은 레이블 프린터에는 정확하지 않으며 프린터마다, 레이블 크기에서 레이블 크기로 달라지지만 0.25인치 여백을 유지하거나 줄이는 것이 좋습니다. 그러나 인쇄되지 않는 여백은 증가시키지 않는 것이 좋습니다. 그렇지 않으면 인쇄 가능 영역의 정보가 제대로 인쇄되지 않습니다.
 
 항상 프린터에 올바른 XDC 파일을 사용해야 합니다. 예를 들어, 300dpi 프린터의 XDC 파일을 선택하고 문서를 200dpi 프린터로 보내지 마십시오.
 
-### 스크립트 {#scripts}
+### XFA 양식에 대한 스크립트(XDP/PDF)만 해당 {#scripts}
 
 Communications API와 함께 사용되는 양식 디자인에는 서버에서 실행되는 스크립트가 포함될 수 있습니다. 양식 디자인에는 클라이언트에서 실행되는 스크립트가 포함되어 있지 않아야 합니다. 양식 디자인 스크립트 만들기에 대한 내용은 [디자이너 도움말](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Type-1 및 OpenType® 글꼴은 PCL 출력에 포함되지 않습니다. Type-1 
 * dpl600.xdc
 
 제공된 XDC 파일을 사용하여 인쇄 문서를 생성하거나 필요에 따라 수정할 수 있습니다.
-&lt;!-* 문서를 만들기 위해 이러한 파일을 수정할 필요가 없습니다. 하지만 비즈니스 요구 사항을 충족하도록 수정할 수 있습니다. —>
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 이러한 파일은 상주 글꼴, 종이 트레이, 스테이플러와 같은 특정 프린터의 기능을 지원하는 XDC 파일을 참조합니다. 이러한 참조의 목적은 장치 프로필을 사용하여 고유한 프린터를 설정하는 방법을 이해하는 데 도움이 됩니다. 또한 참조는 동일한 제품 라인에서 유사한 프린터의 시작점입니다.
 
