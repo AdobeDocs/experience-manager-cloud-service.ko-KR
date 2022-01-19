@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
+source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2720'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 기존 자산과 경로(이름과 위치)가 동일한 자산을 업로드할 수 있습니다. 그러나 다음 옵션과 함께 경고 대화 상자가 표시됩니다.
 
 * 기존 자산 바꾸기: 기존 자산을 바꿀 경우, 자산의 메타데이터 및 기존 자산에 대한 이전 수정(예: 주석, 자르기 등)이 삭제됩니다.
+
+   >[!NOTE]
+   >
+   >자산이 잠겨 있거나 체크 아웃된 경우에는 자산을 바꾸는 옵션을 사용할 수 없습니다.
+
 * 다른 버전 만들기: 저장소에 기존 자산의 새 버전이 만들어집니다. 에서 두 버전을 볼 수 있습니다 [!UICONTROL 타임라인] 필요한 경우 이전 기존 버전으로 되돌릴 수 있습니다.
 * 둘 다 유지: 두 자산을 모두 유지하도록 선택하면 새 자산의 이름이 바뀝니다.
 
@@ -242,7 +247,7 @@ Experience Manager에 작업 기록이 표시됩니다. [대량 가져오기 작
 
 웹 브라우저 사용자 인터페이스 외에도 [!DNL Experience Manager] 데스크탑에서 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 경험을 제공합니다.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 에서 자산에 대한 액세스 권한을 제공합니다. [!DNL Experience Manager] Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 사용할 수 있습니다. 현재 열려 있는 문서를 [!DNL Experience Manager] 이러한 데스크탑 애플리케이션 내에서 Asset Link 사용자 인터페이스에서 직접 액세스할 수 있습니다.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 에서 자산에 대한 액세스 권한을 제공합니다. [!DNL Experience Manager] Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 사용할 수 있습니다. 현재 열려 있는 문서를 [!DNL Experience Manager] 이러한 데스크탑 애플리케이션 내에서 Asset Link 사용자 인터페이스에서 직접 액세스할 수 있습니다.
 * [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 파일을 처리하는 기본 애플리케이션이나 파일 유형에 관계없이 데스크탑에서 자산 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록만 업로드할 수 있으므로 로컬 파일 시스템에서 중첩 폴더 계층 구조에 있는 파일을 업로드하는 데 특히 유용합니다.
 
 ## 업로드할 때 자산 처리 {#process-when-uploaded}
