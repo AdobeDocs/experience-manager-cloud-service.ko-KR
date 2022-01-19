@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구에 대한 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구에 대한 릴리스 노트
 feature: Release Information
-source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
+source-git-commit: 0bc2dedd9bfbf138fddf9fe112ba0d66444fcb41
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 10%
+source-wordcount: '134'
+ht-degree: 6%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 10%
 # AEM as a Cloud Service 릴리스 2022.1.0의 마이그레이션 도구에 대한 릴리스 노트 {#release-notes}
 
 이 페이지에서는 AEM as a Cloud Service 2022.1.0의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다.
-
->[!NOTE]
->Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
-
 
 ## 콘텐츠 전송 도구 {#ctt-release}
 
