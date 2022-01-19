@@ -1,19 +1,19 @@
 ---
 title: 알려진 문제
-description: Adobe Experience Manager as a Cloud Service의 알려진 문제
+description: Adobe Experience Manager as a Cloud Service 관련 알려진 문제
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # 알려진 문제 {#known-issues}
 
-이 문서에서는 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 제공 이 목록은 다음의 연속적인 릴리스를 통해 수정 및 업데이트됩니다. [!DNL Experience Manager].
+이 문서에는 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 제품의 알려진 문제가 나열되어 있습니다. 해당 목록은 [!DNL Experience Manager]의 지속적인 릴리스와 함께 수정되고 업데이트됩니다.
 
-알려진 문제에 대한 자세한 내용은 [지원 센터에 문의하십시오](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support).
+알려진 문제에 대한 자세한 내용은 [지원 센터에 문의](https://experienceleague.adobe.com/?lang=ko-kr&amp;support-solution=Experience+Manager#support)하십시오.
 
 <!-- 
 ## Platform {#platform}
@@ -25,13 +25,13 @@ ht-degree: 33%
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-의 일부 알려진 문제 [!DNL Assets] 입니다.
+일부 [!DNL Assets]의 알려진 문제는 다음과 같습니다.
 
-* **다운로드**: 빈 폴더를 다운로드하면, [!DNL Experience Manager] zip 아카이브 만들기에 대한 성공 메시지를 전달하지만 아카이브는 만들어지지 않습니다.
+* **다운로드**: 빈 폴더를 다운로드하는 경우 [!DNL Experience Manager]에 ZIP 아카이브 생성에 대한 성공 메시지가 표시되지만, 아카이브는 생성되지 않습니다.
 
-* **메타데이터 스키마**: 사용된 자산 등급 위젯으로 인해 JSP 컴파일 오류가 발생했습니다. 메타데이터 스키마에서 제거되었습니다. <!-- CQ-4282865, CQ-4284633 -->
+* **메타데이터 스키마**: 사용된 에셋 등급 위젯으로 인해 JSP 컴파일 오류가 발생했습니다. 메타데이터 스키마에서 제거되었습니다. <!-- CQ-4282865, CQ-4284633 -->
 
-또한, [주목할 만한 변경 사항 [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
+또한 [ [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md)의 주목할 만한 변경 내용을 참조하십시오.
 
 <!-- This content was added at GA. Not sure if we should continue to have this commitment about upcoming features/enh. in the docs. Commenting it for now.
 
@@ -50,7 +50,7 @@ A few capabilities of Adobe Experience Manager Assets that depend on foundation 
 
 >[!MORELIKETHIS]
 >
->* [의 주요 변경 사항 [!DNL Experience Manager]](aem-cloud-changes.md)
+>* [ [!DNL Experience Manager]](aem-cloud-changes.md)의 주요 변경 내용
 >* [이제 사용되지 않는 기능과 제거된 기능](deprecated-removed-features.md)
->* [릴리스 노트](home.md)
+>* [릴리스 정보](home.md)
 
