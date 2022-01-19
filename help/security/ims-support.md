@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 90%
 
 >[!TIP]
 >
->사용자가 Adobe IMS를 사용하여 AEM에 인증하는 방법과 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM과 해당 기능에 대한 액세스를 제어하는 방법에 대한 소개는 Experience League 교육 과정 [관리자용 AEM 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) 을 참조하십시오. Adobe ID이 필요합니다.
+>Experience League 과정인 [관리자를 위한 AEM에 대한 액세스 구성](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)을 확인하고 Adobe IMS를 사용하여 AEM as a Cloud Service에 인증하는 방법과 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 사용하여 AEM 및 기능에 대한 액세스를 제어하는 방법에 대해 살펴보십시오. Adobe ID가 필요합니다.
 
 >[!NOTE]
 >
->AEM에서는 현재 프로필에 그룹 지정을 지원하지 않습니다. 대신 개별적으로 사용자를 추가해야 합니다.
+>현재 AEM에서는 프로필에 그룹을 할당할 수 없습니다. 대신 사용자를 개별적으로 추가해야 합니다.
 
-## 주요 특징 {#key-highlights}
+## 주요 내용 {#key-highlights}
 
-AEM as a Cloud Service에서는 작성자, 관리자 및 개발자 사용자에 대해서만 IMS 인증 지원 서비스를 제공합니다.  사이트 방문자와 같은 고객 사이트의 외부 최종 사용자는 지원하지 않습니다.
+AEM as a Cloud Service에서는 작성자, 관리자 및 개발자 사용자에 대해서만 IMS 인증 지원 서비스를 제공합니다. 사이트 방문자와 같은 고객 사이트의 외부 최종 사용자는 지원하지 않습니다.
 
 * Admin Console은 고객을 IMS 조직으로, 환경에 있는 작성 및 게시 인스턴스를 제품 컨텍스트 인스턴스로 표시합니다. 이렇게 하면 시스템 및 제품 관리자가 인스턴스에 대한 액세스를 관리할 수 있습니다.
 * Admin Console의 제품 프로필이 사용자가 액세스할 수 있는 인스턴스를 결정합니다.
@@ -36,7 +36,7 @@ AEM as a Cloud Service에서는 작성자, 관리자 및 개발자 사용자에 
 
 ## 아키텍처 {#architecture}
 
-IMS 인증은 AEM과 Adobe IMS 엔드포인트 간 OAuth 프로토콜을 사용하여 작동합니다.  사용자가 IMS에 추가되고 Adobe ID가 있으면 IMS 자격 증명을 사용하여 AEM 작성자 서비스 인스턴스에 로그인할 수 있습니다.
+IMS 인증은 AEM과 Adobe IMS 엔드포인트 간 OAuth 프로토콜을 사용하여 작동합니다. 사용자가 IMS에 추가되고 Adobe ID가 있으면 IMS 자격 증명을 사용하여 AEM 작성자 서비스 인스턴스에 로그인할 수 있습니다.
 
 사용자 로그인 흐름은 아래에 표시되어 있고, 사용자는 IMS로 리디렉션되고, 원할 경우 SSO용 고객 IDP로 리디렉션된 다음 AEM으로 다시 리디렉션됩니다.
 
@@ -58,7 +58,7 @@ AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로
 
 1. 지정된 시스템 관리자는 Cloud Manager에 로그인하라는 초대를 받습니다. Cloud Manager에 로그인한 후 시스템 관리자는 AEM 프로그램 및 환경을 프로비저닝하거나 관리 작업을 위해 Admin Console로 이동하는 것을 선택할 수 있습니다.
 1. 시스템 관리자는 도메인을 요청하여 해당 도메인의 소유권을 확인합니다(예: acme.com).
-1. 시스템 관리자가 사용자 디렉토리를 설정합니다.
+1. 시스템 관리자가 사용자 디렉터리를 설정합니다.
 1. 시스템 관리자는 단일 사인온을 설정하기 위해 Admin Console에서 IDP 구성을 수행합니다.
 1. AEM 관리자는 평소대로 로컬 그룹 및 권한을 관리합니다.
 
@@ -84,11 +84,11 @@ IDP 구성을 비롯한 Adobe Identity Management 기본 사항은 [여기에서
 
 **사용자 동기화 도구**
 
-UST(사용자 동기화 도구)를 사용하면 기업 고객은 Active Directory를 활용하여 Adobe 사용자를 만들고 관리할 수 있습니다. 이것은 다른 테스트된 OpenLDAP 디렉토리 서비스에도 적용됩니다.  타겟 사용자는 도구를 설치 및 구성할 수 있는 IT ID 관리자(Enterprise Directory 또는 시스템 관리자)입니다. 오픈소스 도구는 고객이 특정 요구 사항에 맞게 수정할 수 있도록 사용자 지정할 수 있습니다.
+UST(사용자 동기화 도구)를 사용하면 기업 고객은 Active Directory를 활용하여 Adobe 사용자를 만들고 관리할 수 있습니다. 이것은 다른 테스트된 OpenLDAP 디렉터리 서비스에도 적용됩니다. 타겟 사용자는 도구를 설치 및 구성할 수 있는 IT ID 관리자(Enterprise Directory 또는 시스템 관리자)입니다. 오픈소스 도구는 고객이 특정 요구 사항에 맞게 수정할 수 있도록 사용자 지정할 수 있습니다.
 
-사용자 동기화가 실행되면 이 기능은 조직의 Active Directory의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다.  그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉토리와 동기화되도록 합니다. 변화 흐름은 완전히 한 가지 방향입니다. Admin Console에서 편집한 내용은 디렉토리에 푸시되지 않습니다.
+사용자 동기화가 실행되면 이 기능은 조직의 Active Directory의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다.  그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉터리와 동기화되도록 합니다. 변화 흐름은 완전히 한 가지 방향입니다. Admin Console에서 편집한 내용은 디렉터리에 푸시되지 않습니다.
 
-시스템 관리자는 이 도구를 사용하여 고객 디렉토리에 있는 사용자 그룹을 Admin Console의 제품 구성 및 사용자 그룹과 매핑할 수 있습니다.
+시스템 관리자는 이 도구를 사용하여 고객 디렉터리에 있는 사용자 그룹을 Admin Console의 제품 구성 및 사용자 그룹과 매핑할 수 있습니다.
 
 사용자 동기화를 설정하려면 조직에서는 [사용자 관리 API](https://www.adobe.io/apis/experienceplatform/umapi-new.html)를 사용하는 것과 같은 방식으로 자격 증명 세트를 만들어야 합니다.
 
@@ -98,7 +98,7 @@ UST(사용자 동기화 도구)를 사용하면 기업 고객은 Active Director
 
 >[!NOTE]
 >
->베타 버전 **2.4RC1**&#x200B;은 동적 그룹 생성 지원과 함께 사용 가능하며 [여기](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)에서 찾을 수 있습니다.
+>프리릴리스 버전 **2.4RC1**&#x200B;은 동적 그룹 생성 지원과 함께 사용 가능하며 [여기](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)에서 찾을 수 있습니다.
 
 이 릴리스의 주요 기능은 Admin Console에서 사용자 멤버십에 대한 새 LDAP 그룹을 동적으로 매핑하고 동적 사용자 그룹 생성을 수행하는 기능입니다.
 
@@ -132,7 +132,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ### Admin Console에서 제품 및 사용자 액세스 관리 {#managing-products-and-user-access-in-admin-console}
 
-제품 관리자가 Admin Console에 로그인하면, 아래와 같이 AEM as a Cloud Service 제품 컨텍스트의 여러 인스턴스가 표시됩니다. 예를 들어 **개요** 페이지에서 제품을 선택합니다.
+제품 관리자가 Admin Console에 로그인할 때 아래와 같이 AEM as a Cloud Service 제품 컨텍스트의 여러 인스턴스가 표시됩니다. 예를 들어 **개요** 페이지에서 제품 중 하나를 선택합니다.
 
 ![인스턴스 로그인](/help/security/assets/ims6.png)
 
@@ -140,7 +140,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 
 ![인스턴스 로그인2](/help/security/assets/ims7.png)
 
-각 제품 컨텍스트 인스턴스에는 프로덕션, 스테이지 또는 개발 환경에서 작성자 또는 게시 서비스에 걸쳐 인스턴스가 있습니다. 각 인스턴스는 제품 프로필 또는 Cloud Manager 역할과 연결됩니다. 이러한 제품 프로필은 필요한 권한을 가진 사용자 및 그룹에 대한 액세스 권한을 지정하는 데 사용됩니다.
+각 제품 컨텍스트 인스턴스에는 프로덕션, 스테이지 또는 개발 환경 등을 포함하여 작성자 또는 게시 서비스에 걸친 인스턴스가 있습니다. 각 인스턴스는 제품 프로필 또는 Cloud Manager 역할과 연계됩니다. 이러한 제품 프로필은 필요한 권한을 갖춘 사용자 및 그룹에게 액세스를 할당하는 데 사용됩니다.
 
 **Administrator_xxx** 프로필은 연결된 AEM 인스턴스에서 관리자 권한을 부여하는 데 사용되고 **User_xxx** 프로필은 일반 사용자를 추가하는 데 사용됩니다.
 
@@ -160,14 +160,14 @@ AEM은 관리 사용자에 대한 로컬 로그인을 계속 지원할 수 있�
 
 **IMS 기반 로그인**
 
-다른 사용자의 경우 인스턴스에 IMS가 구성되어 있으면 IMS 기반 로그인을 사용할 수 있습니다. 사용자는 아래에 표시된 대로 먼저 Adobe로 로그인 단추를 클릭합니다.
+다른 사용자의 경우 인스턴스에 IMS가 구성되어 있으면 IMS 기반 로그인을 사용할 수 있습니다. 사용자는 아래에 표시된 대로 먼저 Adobe로 로그인 버튼을 클릭합니다.
 
 ![IMS 로그인](/help/security/assets/ims10.png)
 
 
 >[!NOTE]
 >
->IMS에서 만든 모든 사용자는 Adobe ID 또는 Federated ID를 사용하여 만들 수 있습니다. 사용자가 Federated ID을 사용하여 설정되는 경우 로그인을 위해 회사의 ID 공급자를 사용하여 인증됩니다.
+>IMS에서 만든 모든 사용자는 Adobe ID 또는 Federated ID를 사용하여 만들 수 있습니다. 사용자가 Federated ID를 사용하여 설정된 경우 회사의 IP 공급자를 사용하여 로그인이 인증됩니다.
 
 그러면 IMS 로그인 화면으로 리디렉션되고 자격 증명을 입력해야 합니다.
 
@@ -208,7 +208,7 @@ IMS에서 동기화된 사용자 그룹은 AEM에서 **DAM 사용자**&#x200B;�
 
 ### Cloud Manager 액세스 {#accessing-cloud-manager}
 
-Cloud Manager 또는 AEM as a Cloud Service 환경으로 액세스하려면 Cloud Manager 제품의 프로필에 할당되어야 합니다.
+Cloud Manager 또는 AEM as a Cloud Service 환경에 액세스하려면 Cloud Manager 제품의 프로필에 할당되어야 합니다.
 
 Cloud Manager의 특정 기능의 가용성을 제어하는 사용자 역할에 대한 자세한 내용은 역할 정의를 참조하십시오.
 
@@ -229,10 +229,10 @@ Cloud Manager의 특정 기능의 가용성을 제어하는 사용자 역할에 
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. 해당 프로필에 추가되면 사용자 인터페이스의 오른쪽 상단 모서리에서 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com)를 통해 Cloud Manager의 각 테넌트에 액세스할 수 있습니다.
+1. 해당 프로필에 추가되면 사용자 인터페이스의 오른쪽 상단에서 [Adobe Experience Cloud](http://my.cloudmanager.adobe.com)를 통해 Cloud Manager의 각 테넌트에 액세스할 수 있습니다.
 
 
-### AEM as a Cloud Service로 인스턴스에 액세스 {#accessing-instance-cloud-service}
+### AEM as a Cloud Service의 인스턴스에 액세스 {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
 >AEM as a Cloud Service로 인스턴스에 대한 액세스 권한을 부여하기 전에 위의 섹션에 언급된 단계가 이미 완료되었어야 합니다.
