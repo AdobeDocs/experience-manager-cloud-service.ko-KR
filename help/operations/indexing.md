@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
+source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 2%
+source-wordcount: '2224'
+ht-degree: 1%
 
 ---
 
@@ -43,17 +43,27 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심 모델에서 C
 
 인덱스를 정의하는 것은 다음 세 가지 사용 사례 중 하나일 수 있습니다.
 
-1. 새 고객 색인 정의 추가
-1. 기존 인덱스 정의를 업데이트하는 중입니다. 이는 기존 인덱스 정의의 새 버전을 추가하는 것을 의미합니다
+1. 새 고객 색인 정의를 추가합니다.
+1. 기존 인덱스 정의를 업데이트하는 중입니다. 이는 기존 인덱스 정의의 새 버전을 추가하는 것을 효과적으로 의미합니다.
 1. 중복되거나 사용되지 않는 기존 인덱스를 제거하는 중입니다.
 
 위의 두 지점 모두에 대해, 각각의 Cloud Manager 릴리스 일정에서 사용자 지정 코드 베이스의 일부로 새 인덱스 정의를 생성해야 합니다. 자세한 내용은 [AEM as a Cloud Service 설명서에 배포](/help/implementing/deploying/overview.md).
+
+## 인덱스 이름 {#index-names}
+
+인덱스 정의는 다음 중 하나일 수 있습니다.
+
+1. 기본 제공 인덱스. 예를 들면 다음과 같습니다 `/oak:index/cqPageLucene-2`.
+1. 기본 인덱스의 사용자 지정. 이러한 사용자 지정은 고객이 정의합니다. 예를 들면 다음과 같습니다 `/oak:index/cqPageLucene-2-custom-1`.
+1. 완전히 사용자 지정 색인입니다. 예를 들면 다음과 같습니다 `/oak:index/acme.product-1-custom-2`. 이름 지정 충돌을 피하려면 전체 사용자 지정 인덱스에 접두사가 있어야 합니다(예: `acme.`
+
+기본 인덱스의 사용자 지정 및 전체 사용자 지정 인덱스를 모두 포함해야 합니다 `-custom-`. 전체 사용자 지정 인덱스만 접두사로 시작해야 합니다.
 
 ### 새 인덱스 정의 준비 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->예를 들어, 기본 색인을 사용자 지정하는 경우 `damAssetLucene-6`을(를) 통해 최신 인덱스 정의를 기본 제공 *Cloud Service 환경* 그리고 사용자 지정 사항을 맨 위에 추가하면 필요한 구성이 실수로 제거되지 않습니다. 예: `tika` 노드 아래의 `/oak:index/damAssetLucene-6/tika` 는 필수 노드이며 사용자 지정된 색인의 일부여야 하며 Cloud SDK에 존재하지 않습니다.
+>기본 인덱스를 사용자 지정하는 경우(예: ) `damAssetLucene-6`에서 최신 기본 인덱스 정의를 복사하십시오 *Cloud Service 환경* 그리고 사용자 지정 사항을 맨 위에 추가하면 필요한 구성이 실수로 제거되지 않습니다. 예: `tika` 노드 아래의 `/oak:index/damAssetLucene-6/tika` 는 필수 노드이며 사용자 지정된 색인의 일부여야 하며 Cloud SDK에 존재하지 않습니다.
 
 다음 이름 지정 패턴에 따라 실제 인덱스 정의가 포함된 새 인덱스 정의 패키지를 준비해야 합니다.
 
@@ -154,7 +164,7 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 ### 인덱스 추가 {#adding-an-index}
 
-이름이 지정된 인덱스를 추가하려면 `/oak:index/acme.product-custom-1` 응용 프로그램의 새 버전에서 사용하려면 인덱스를 다음과 같이 구성해야 합니다.
+이름이 인 전체 사용자 지정 인덱스를 추가하려면 `/oak:index/acme.product-custom-1` 응용 프로그램의 새 버전에서 사용하려면 인덱스를 다음과 같이 구성해야 합니다.
 
 `acme.product-1-custom-1`
 
@@ -180,13 +190,13 @@ Adobe이 &quot;damAssetLucene&quot; 또는 &quot;cqPageLucene&quot;과 같은 �
 
 ### 변경 취소 {#undoing-a-change}
 
-경우에 따라 인덱스 정의의 변경 사항을 되돌려야 합니다. 이유는 실수로 변경했거나 변경이 더 이상 필요하지 않기 때문일 수 있습니다. 예를 들어 인덱스 정의 `damAssetLucene-8-custom-3` 이(가) 실수로 작성되었으며 이미 배포되었습니다. 이러한 이유로 이전 인덱스 정의로 되돌릴 수 있습니다 `damAssetLucene-8-custom-2`. 이렇게 하려면 `damAssetLucene-8-custom-4` 이전 색인에 대한 정의를 포함하는 `damAssetLucene-8-custom-2`.
+경우에 따라 인덱스 정의의 변경 사항을 되돌려야 합니다. 이유는 실수로 변경했거나 변경이 더 이상 필요하지 않기 때문일 수 있습니다. 예를 들어 인덱스 정의 `damAssetLucene-8-custom-3` 이(가) 실수로 작성되었으며 이미 배포되었습니다. 이러한 이유로 이전 인덱스 정의로 되돌릴 수 있습니다 `damAssetLucene-8-custom-2`. 이렇게 하려면 `damAssetLucene-8-custom-4` 이전 색인의 정의를 포함하는 `damAssetLucene-8-custom-2`.
 
 ### 인덱스 제거 {#removing-an-index}
 
 다음은 사용자 지정 색인에만 적용됩니다. 제품 색인은 AEM에서 사용하므로 제거할 수 없습니다.
 
-이후 버전의 응용 프로그램에서 인덱스를 제거할 경우 새 이름으로 빈 인덱스(사용되지 않고 데이터를 포함하지 않는 빈 인덱스)를 정의할 수 있습니다. 이 예제의 목적을 위해 이름을 지정할 수 있습니다 `/oak:index/acme.product-custom-3`. 이렇게 하면 인덱스가 바뀝니다 `/oak:index/acme.product-custom-2`. 한 번 `/oak:index/acme.product-custom-2` 시스템에 의해 제거되고 빈 색인이 제거됩니다. `/oak:index/acme.product-custom-3` 그런 다음 를 제거할 수도 있습니다. 이러한 빈 인덱스의 예는 다음과 같습니다.
+이후 버전의 응용 프로그램에서 인덱스를 제거할 경우 새 이름으로 빈 인덱스(사용되지 않고 데이터를 포함하지 않는 빈 인덱스)를 정의할 수 있습니다. 이 예제의 목적을 위해 이름을 지정할 수 있습니다 `/oak:index/acme.product-custom-3`. 이렇게 하면 인덱스가 바뀝니다 `/oak:index/acme.product-custom-2`. 한 번 `/oak:index/acme.product-custom-2` 시스템에 의해 제거되고 빈 인덱스가 제거됩니다. `/oak:index/acme.product-custom-3` 그런 다음 를 제거할 수도 있습니다. 이러한 빈 인덱스의 예는 다음과 같습니다.
 
 ```xml
 <acme.product-custom-3
