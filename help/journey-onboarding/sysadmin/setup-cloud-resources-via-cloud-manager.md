@@ -1,15 +1,16 @@
 ---
-title: Cloud Manager를 통해 Cloud 리소스 설정
+title: Cloud Manager를 통해 클라우드 리소스 설정
 description: Cloud Manager를 통해 클라우드 리소스를 설정하는 방법을 배우려면 이 페이지를 따르십시오
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
+source-git-commit: 7fe39bbc8d5e965af7f339b2a524420c76360552
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 0%
+source-wordcount: '1246'
+ht-degree: 1%
 
 ---
 
-# Cloud Manager를 통해 Cloud 리소스 설정 {#setup-cloud-resources}
+# Cloud Manager를 통해 클라우드 리소스 설정 {#setup-cloud-resources}
 
 비즈니스 소유자 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다. 뒤이어 비즈니스 소유자 제품 프로필에 할당된 팀 구성원이 Cloud Manager에 로그인하여 클라우드 프로그램 및 환경을 만들어야 전문가 팀을 시작할 수 있습니다.
 
@@ -26,50 +27,52 @@ ht-degree: 0%
 
 클라우드 리소스 추가는 Cloud Manager 비즈니스 소유자 제품 프로필에 할당된 팀 구성원이 Cloud Manager를 통해 수행됩니다. 일반적으로 비즈니스 요구 사항을 이해하고 초기 Cloud Manager 설정을 완료하는 사용자입니다.
 
-아래 섹션을 따라 [클라우드 서비스 프로그램](#create-cloud-service-program) 및 [환경](#create-cloud-environments)을 만드는 방법을 알아보십시오.
+아래 섹션을 따라 를 작성하는 방법을 알아보십시오 [클라우드 서비스 프로그램](#create-cloud-service-program) 및 [환경.](#create-cloud-environments)
 
 ### 전제 조건 {#prerequisites}
 
 * 비즈니스 소유자 역할에 할당된 시스템 관리자는 Cloud Manager에 액세스하여 로그인해야 합니다.
 
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)로 이동하여 로그인하는 방법을 이해합니다.
+* 방법 이해 [cloud Manager로 이동하여 로그인합니다.](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 
-* [Cloud Manager 제품 프로필](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)에 익숙해지십시오.
+* 익숙해지십시오 [Cloud Manager 제품 프로필.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* Cloud Manager [프로그램](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) 및 [환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)의 개념을 이해합니다
+* Cloud Manager의 개념 이해 [프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) 및 [환경.](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Cloud Manager로 이동 {#navigate-cloud-manager}
 
-비즈니스 소유자 사용자는 시작할 링크가 포함된 환영 이메일을 받게 되며, 링크를 찾을 수 없는 경우 Adobe ID을 사용하여 로그인하여 [Cloud Manager](https://my.cloudmanager.adobe.com/)에 직접 액세스합니다.
+비즈니스 소유자 사용자는 시작할 링크가 포함된 환영 이메일을 수신하거나, 링크를 찾을 수 없는 경우 액세스합니다 [Cloud Manager](https://my.cloudmanager.adobe.com/) Adobe ID을 사용하여 로그인함으로써 직접 액세스할 수 있습니다.
 
 Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
-1. 시작 이메일에서 아래 그림과 같이 **시작하기**를 클릭합니다.
+1. 환영 이메일에서 클릭 **시작**아래 그림과 같이,
    ![](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Cloud Manager의 **프로그램 및 제품** 페이지로 이동합니다.
+1. Cloud Manager의 **프로그램 및 제품** 페이지.
 
    >[!IMPORTANT]
-   >또는 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다. 나중에 참조할 수 있도록 이 페이지에 책갈피를 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동할 수 있습니다.
+   >
+   >또는 다음 위치에서 Cloud Manager의 로그인 페이지로 직접 이동할 수도 있습니다 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). 나중에 참조할 수 있도록 이 페이지에 책갈피를 지정하여 Cloud Manager의 랜딩 페이지로 직접 이동할 수 있습니다.
 
 1. Cloud Manager의 랜딩 페이지로 이동합니다. 자세한 내용은 [Cloud Manager 프로그램 보기](#viewing-programs) 섹션을 참조하십시오.
 
-또한 Adobe Experience Cloud 홈 페이지에서 Cloud Manager의 **프로그램 및 제품** 페이지로 이동할 수 있습니다. 아래 단계를 따르십시오.
+또한 Cloud Manager의 **프로그램 및 제품** Adobe Experience Cloud 홈페이지에서 페이지를 엽니다. 아래 단계를 따르십시오.
 
-1. [Adobe Experience Cloud](https://experience.adobe.com)로 직접 이동하여 Adobe ID을 사용하여 로그인합니다.
+1. 로 바로 이동 [Adobe Experience Cloud](https://experience.adobe.com) Adobe ID을 사용하여 로그인합니다.
 
-1. Adobe Experience Cloud 홈 페이지에서 **Experience Manager**&#x200B;을 선택합니다.
+1. Adobe Experience Cloud 홈페이지에서 Select **Experience Manager**.
 
    ![](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. AEM 홈 페이지로 이동합니다. 여기에서 **Cloud Manager** 를 시작합니다.
+1. AEM 홈 페이지로 이동합니다. 여기에서 시작 **Cloud Manager** .
 
    ![](/help/journey-onboarding/assets/setup-resources3.png)
 
 1. 로그인하면 Cloud Manager의 랜딩 페이지로 이동합니다. 자세한 내용은 [Cloud Manager 프로그램 보기](#viewing-programs) 섹션을 참조하십시오.
 
    >[!NOTE]
-   >[!UICONTROL Cloud Manager]에 할당된 역할과 응용 프로그램의 상태에 따라 [!UICONTROL Cloud Manager] UI를 사용하는 동안 다른 화면이 표시됩니다.
+   >
+   >에 할당된 역할에 따라 [!UICONTROL Cloud Manager] 응용 프로그램의 상태에서는 [!UICONTROL Cloud Manager] UI.
 
 ### Cloud Manager의 랜딩 페이지에서 프로그램 보기 {#viewing-programs}
 
@@ -89,7 +92,7 @@ Cloud Manager로 이동하려면 아래 단계를 따르십시오.
 
 #### 프로그램이 있고 사용자가 시스템 관리자인 경우 {#programs-exist-sysadmin}
 
-조직에 프로그램이 이미 있고 사용자가 시스템 관리자인 경우 랜딩 페이지에 **액세스 관리** 단추가 **프로그램 추가** 옵션과 함께 표시됩니다. 아래 그림은 아래 그림과 같습니다.
+조직에 프로그램이 이미 있고 사용자가 시스템 관리자인 경우 랜딩 페이지가 표시됩니다 **액세스 관리** 와 함께 사용할 단추 **프로그램 추가** 옵션을 선택합니다.
 
 ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
@@ -102,7 +105,7 @@ Cloud Manager에 성공적으로 로그인했으면 아래 절차에 따라 비�
 
    ![](/help/journey-onboarding/assets/setup-resources5.png)
 
-1. **사용자 역할**&#x200B;을 선택하고 비즈니스 소유자에게 할당되었는지 확인합니다.
+1. 선택 **사용자 역할** 비즈니스 소유자에게 지정되었는지 확인합니다.
 
    ![](/help/journey-onboarding/assets/setup-resources6.png)
 
@@ -119,30 +122,30 @@ Cloud Manager에서 클라우드 서비스 프로그램을 만들려면 아래 �
 1. 아래 표시된 대로 Cloud Manager 랜딩 페이지로 이동합니다.
 
    >[!NOTE]
+   >
    >이 단계를 성공적으로 완료하려면 Cloud Manager 비즈니스 소유자 제품 프로필에 할당된 팀 구성원이어야 합니다.
 
-   여기서 **프로그램 추가**&#x200B;를 클릭하여 프로그램 추가 마법사를 시작합니다.
+   여기서 을(를) 클릭합니다. **프로그램 추가** 프로그램 추가 마법사를 시작하려면 다음을 수행하십시오.
 
    ![](/help/journey-onboarding/assets/setup-resources4.png)
 
-   >[!NOTE]
-   >AEM as a Cloud Program을 만들고 프로그램을 만들기 전에 중요한 고려 사항에 대해 알아보려면 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)를 시청하십시오.
-
-   >[!IMPORTANT]
-   >프로그램 추가 마법사를 사용하는 방법에 대한 단계별 지침을 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en)로 이동하십시오.
+   >[!TIP]
    >
-   >* 만든 후에는 프로그램 이름을 변경할 수 없습니다. 프로그램에 어떤 이름을 지정할 것인지 확인하는 것이 좋습니다.
-   >* 프로그램 이름을 변경해야 하는 경우, Adobe 지원이 있는 사례를 열거나 Adobe 담당자에게 문의하십시오. 그들은 프로그램을 효과적으로 삭제하는 데 도움을 줄 것이다. 팀원들이 한 잠재적인 업무 손실과 함께 처음부터 다시 시작해야 합니다.
+   >보기 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) AEM as a Cloud Program을 만들고 프로그램을 만들기 전에 중요한 고려 사항에 대해 학습하는 방법을 알아봅니다.
 
+   >[!TIP]
+   >
+   >프로그램 추가 마법사를 사용하는 방법에 대한 단계별 지침을 보려면 [여기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md).
 
-1. 클라우드 프로그램을 성공적으로 만들면 프로그램으로 이동하여 아래와 같이 프로그램의 **개요** 페이지를 볼 수 있습니다.
+1. 클라우드 프로그램을 성공적으로 만들면 프로그램으로 이동하여 을 볼 수 있습니다. **개요** 아래 표시된 대로 프로그램의 페이지입니다.
 
    ![](/help/journey-onboarding/assets/setup-resources8.png)
 
    >[!NOTE]
+   >
    >아직 그렇게 하지 않았다면 지금이 Cloud Manager 팀에 개발자 구성원을 추가할 적기입니다. 개발자 제품 프로필에 사용자 추가 를 참조하여 요약된 단계를 따르십시오.
 
-1. 개발자 제품 프로필에 할당된 구성원은 Cloud Manager 및 [Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)에 로그인할 수 있습니다.
+1. 개발자 제품 프로필에 할당된 구성원은 Cloud Manager 및 [Cloud Manager Git 관리](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
    잘했어요! 이제 프로그램이 성공적으로 만들어지면 개발자가 액세스할 수 있는 Cloud Manager Git을 사용할 수 있습니다.
 
@@ -153,21 +156,23 @@ Cloud Manager에서 클라우드 서비스 프로그램을 만들려면 아래 �
 
 Cloud Manager에서 클라우드 환경을 만들려면 아래 절차를 따르십시오.
 
-1. Cloud Manager의 **개요** 페이지로 이동하고 환경 카드에서 **추가**&#x200B;를 선택합니다.
+1. Cloud Manager의 **개요** 페이지를 선택하고 **추가** 환경 카드에서
 
    ![](/help/journey-onboarding/assets/setup-resources9.png)
 
    >[!IMPORTANT]
+   >
    >이 단계를 성공적으로 완료하려면 비즈니스 소유자 또는 배포 관리자 역할의 Cloud Manager 사용자가 로그인해야 합니다.
 
-   또한 빠른 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en) 자습서를 시청하여 Cloud Manager 환경과 이를 프로그램에 추가하는 방법을 알아보십시오.
+   또한 빠른 시간 내에 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) cloud Manager 환경 및 프로그램에 추가하는 방법에 대해 학습하는 자습서입니다.
 
-1. 이렇게 하면 환경 추가를 안내하는 환경 추가 마법사가 시작됩니다. 먼저 개발 환경을 추가하여 마법사를 잘 이해합니다. 자세한 내용은 [환경 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)를 참조하십시오.
+1. 이렇게 하면 환경 추가를 안내하는 환경 추가 마법사가 시작됩니다. 먼저 개발 환경을 추가하여 마법사를 잘 이해합니다. 을(를) 참조하십시오. [환경 추가](/help/implementing/cloud-manager/manage-environments.md#adding-environments) 추가 정보
 
    >[!NOTE]
+   >
    >아직 그렇게 하지 않았다면 지금이 Cloud Manager 팀에 개발자 구성원을 추가할 적기입니다. 개발자 제품 프로필에 사용자 추가 를 참조하여 요약된 단계를 따르십시오.
 
-1. 개발자 제품 프로필에 할당된 구성원은 Cloud Manager 및 [Cloud Manager Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)에 로그인할 수 있습니다.
+1. 개발자 제품 프로필에 할당된 구성원은 Cloud Manager 및 [Cloud Manager Git 관리.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
 
    잘했어요! 이제 프로그램이 성공적으로 만들어졌고 개발자가 액세스할 수 있는 Cloud Manager Git을 사용할 수 있습니다.
 
@@ -175,19 +180,20 @@ Cloud Manager에서 클라우드 환경을 만들려면 아래 절차를 따르�
 
 ## 다음은 무엇입니까? {#whats-next}
 
-Cloud Manager 관리 권한으로는 충분하지 않으므로 팀 구성원에게 인스턴스에 대한 권한을 부여해야 합니다. 클라우드 리소스가 만들어지고 팀이 액세스할 준비가 되었으므로 시스템 관리자는 팀 구성원을 AEM에 Adobe Admin Console의 Cloud Service 제품 프로필로 할당해야 합니다.
+Cloud Manager 관리 권한으로는 충분하지 않으므로 팀 구성원에게 인스턴스에 대한 권한을 부여해야 합니다. 클라우드 리소스가 생성되어 팀이 액세스할 준비가 되었으므로 시스템 관리자는 팀 구성원을 Adobe Admin Console의 AEM as a Cloud Service 제품 프로필에 할당해야 합니다.
 
 >[!NOTE]
->Cloud Service 사용자로 AEM에 대한 액세스 권한을 부여받으려면 두 제품 프로필 `AEM Users` 또는 `AEM Administrators` 중 하나에 속해야 합니다. 자세한 내용은 [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)에서 제품 및 사용자 액세스 관리 를 참조하십시오.
+>
+>AEM as a Cloud Service 사용자에게 액세스 권한을 부여하려면 두 제품 프로필 중 하나에 속해야 합니다 `AEM Users` 또는 `AEM Administrators`. 자세한 내용은 [Admin Console에서 제품 및 사용자 액세스 관리](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) 추가 정보
 
-다음에 [팀 구성원을 AEM에 Cloud Service 제품 프로필](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)으로 지정하는 문서를 검토하여 온보딩 여정을 계속해야 합니다.
+다음에 문서를 검토하여 온보딩 여정을 계속해야 합니다 [AEM as a Cloud Service 제품 프로필에 팀 구성원을 할당합니다.](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
 
 
 ## 추가 리소스 {#additional-resources}
 
 추가 리소스에 따라 다음 사항에 대해 자세히 알아보십시오.
 
-* [프로그램 유형 및 프로그램 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
-* [환경 유형 및 환경 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)
-* [Cloud Manager Git 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
-* [Admin Console에서 AEM as a Cloud Service에 대한 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
+* [프로그램 유형 및 프로그램 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
+* [환경 유형 및 환경 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)
+* [Cloud Manager Git 관리](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+* [Admin Console에서 AEM as a Cloud Service에 대한 액세스 구성](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#adobe-ims-users)
