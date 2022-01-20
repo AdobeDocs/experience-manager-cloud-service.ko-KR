@@ -1,16 +1,16 @@
 ---
-title: Dispatcher 도구를 사용하여 유효성 검사 및 디버깅
-description: Dispatcher 도구를 사용하여 유효성 검사 및 디버깅
+title: 디스패처 도구를 사용하여 확인 및 디버깅
+description: 디스패처 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
+source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
 workflow-type: tm+mt
 source-wordcount: '2413'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Dispatcher 도구를 사용하여 유효성 검사 및 디버깅 {#Dispatcher-in-the-cloud}
+# 디스패처 도구를 사용하여 확인 및 디버깅 {#Dispatcher-in-the-cloud}
 
 ## 소개 {#apache-and-dispatcher-configuration-and-testing}
 
@@ -350,7 +350,7 @@ Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 명령 프롬
 >
 >Windows 사용자는 Windows 10 Professional이나 Docker를 지원하는 다른 배포를 사용해야 합니다. 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 전제 조건입니다.
 
-이 단계는 를 통해 독립적으로 실행할 수도 있습니다. `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.
+이 단계는 를 통해 독립적으로 실행할 수도 있습니다. `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
 Cloud Manager 배포 중 `httpd -t` 구문 검사가 실행되며 모든 오류가 Cloud Manager 빌드 이미지 단계 실패 로그에 포함됩니다.
 
