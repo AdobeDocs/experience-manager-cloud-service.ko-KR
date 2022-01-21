@@ -2,18 +2,24 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 1%
+source-wordcount: '2222'
+ht-degree: 2%
 
 ---
 
 # AEM as a Cloud Service 개발 지침 {#aem-as-a-cloud-service-development-guidelines}
 
-Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. 즉, 실행되는 인스턴스가 항상 두 개 이상 있습니다. The code must be resilient especially as an instance might be stopped at any point in time.
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="AEM as a Cloud Service 개발 지침"
+>abstract="이 탭에서 AEM as a Cloud Service에서 코딩에 대한 권장 우수 사례를 볼 수 있습니다. 코딩은 AMS 또는 On-Prem 배포와 하위 통계적으로 다를 수 있습니다."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="패키지 구조 데모"
 
-AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드가 동시에 실행되는 인스턴스가 있습니다. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
+AEM as a Cloud Service에서 실행되는 코드는 항상 클러스터에서 실행되고 있다는 것을 알고 있어야 합니다. 즉, 실행되는 인스턴스가 항상 두 개 이상 있습니다. 특정 시점에 인스턴스가 중지될 수 있으므로 코드는 복원력이 있어야 합니다.
+
+AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드가 동시에 실행되는 인스턴스가 있습니다. 따라서 이전 코드는 새 코드로 만든 콘텐츠로 나누면 안 되며, 새 코드는 이전 콘텐츠를 처리할 수 있어야 합니다.
 <!--
 
 >[!NOTE]
@@ -21,7 +27,7 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 -->
 
-If there is the need to identify the primary in the cluster, the Apache Sling Discovery API can be used to detect it.
+클러스터에서 기본 인스턴스를 식별해야 하는 경우 Apache Sling Discovery API를 사용하여 이를 감지할 수 있습니다.
 
 ## 메모리 상태 {#state-in-memory}
 
@@ -61,7 +67,7 @@ Adobe은 제공된 를 사용할 것을 권장합니다 [Apache HttpComponents C
 
 ## 클래식 UI 사용자 지정 없음 {#no-classic-ui-customizations}
 
-AEM as a Cloud Service only supports the Touch UI for 3rd party customer code. 클래식 UI는 사용자 지정에 사용할 수 없습니다.
+AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합니다. 클래식 UI는 사용자 지정에 사용할 수 없습니다.
 
 ## 기본 바이너리 방지 {#avoid-native-binaries}
 
@@ -85,9 +91,9 @@ AEM as a Cloud Service only supports the Touch UI for 3rd party customer code. �
 
 ### 로그 {#logs}
 
-For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
+로컬 개발의 경우 로그 항목은 의 로컬 파일에 기록됩니다 `/crx-quickstart/logs` 폴더를 입력합니다.
 
-On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+클라우드 환경에서 개발자는 Cloud Manager를 통해 로그를 다운로드하거나 명령줄 도구를 사용하여 로그를 추적할 수 있습니다. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **로그 수준 설정**
 
@@ -113,7 +119,7 @@ DEBUG 로그 레벨을 활성화하려면
 
 | 0 | 치명적인 오류 | 작업이 실패하여 설치 프로그램을 계속할 수 없습니다. |
 |---|---|---|
-| 1 | 오류 | The action has failed. The installation proceeds, but a part of CRX was not installed correctly and will not work. |
+| 1 | 오류 | 작업이 실패했습니다. 설치가 진행되지만 CRX 일부가 제대로 설치되지 않아 작동하지 않습니다. |
 | 2 | 경고 | 작업에 성공했지만 문제가 발생했습니다. CRX가 제대로 작동하지 않을 수 있습니다. |
 | 3 | 정보 | 작업이 성공했습니다. |
 
@@ -181,9 +187,9 @@ Adobe은 응용 프로그램 성능을 모니터링하고 노후화가 확인되
 
 기본적으로 이메일을 보내는 데 사용되는 포트는 비활성화됩니다. 포트를 활성화하려면 [고급 네트워킹](/help/security/configuring-advanced-networking.md)를 설정하는 것이 좋습니다 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 의도한 포트(예: 465 또는 587)를 프록시 포트에 매핑하는 엔드포인트의 포트 전달 규칙.
 
-고급 네트워킹을 `kind` 매개 변수가 `flexiblePortEgress` Adobe은 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 고유 송신 IP 주소가 필요한 경우 `kind` 매개 변수 `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
+고급 네트워킹을 `kind` 매개 변수가 `flexiblePortEgress` Adobe은 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 고유 송신 IP 주소가 필요한 경우 `kind` 매개 변수 `dedicatedEgressIp`. 다른 이유로 이미 VPN을 구성한 경우 해당 고급 네트워킹 변형에서 제공하는 고유한 IP 주소도 사용할 수 있습니다.
 
-전자 메일 클라이언트에 직접 이메일을 보내는 대신 메일 서버를 통해 전자 메일을 보내야 합니다. Otherwise, the emails may be blocked.
+전자 메일 클라이언트에 직접 이메일을 보내는 대신 메일 서버를 통해 전자 메일을 보내야 합니다. 그렇지 않으면 이메일이 차단될 수 있습니다.
 
 ### 전자 메일 보내기 {#sending-emails}
 
@@ -198,7 +204,7 @@ AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experiencel
 * SMTP 서버 호스트 이름을 $(으)로 설정해야 합니다.[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * SMTP 서버 포트는 고급 네트워킹을 구성할 때 API 호출에 사용된 portForwards 매개 변수에 설정된 원래 프록시 포트의 값으로 설정해야 합니다. 예를 들어 30465(465가 아님)
 
-It is also recommended that if port 465 has been requested:
+포트 465가 요청된 경우 다음 사항을 권장합니다.
 
 * 설정 `smtp.port` to `465`
 * 설정 `smtp.ssl` to `true`
@@ -208,14 +214,14 @@ It is also recommended that if port 465 has been requested:
 * 설정 `smtp.port` to `587`
 * 설정 `smtp.ssl` to `false`
 
-다음 `smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동으로 설정됩니다. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` 가 false로 설정되고, `smtp.starttls` 가 true로 설정된 경우에만 추적됩니다. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+다음 `smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동으로 설정됩니다. 따라서 `smtp.ssl` 이 true로 설정되어 있고, `smtp.startls` 은 무시됩니다. If `smtp.ssl` 가 false로 설정되고, `smtp.starttls` 가 true로 설정된 경우에만 추적됩니다. 이것은 `smtp.starttls` OSGI 구성에 설정된 값입니다.
 
 
-선택적으로 OAuth2 지원을 사용하여 메일 서비스를 구성할 수 있습니다. For more information, see [OAuth2 Support for the Mail Service](/help/security/oauth2-support-for-mail-service.md).
+선택적으로 OAuth2 지원을 사용하여 메일 서비스를 구성할 수 있습니다. 자세한 내용은 [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md).
 
 ### 기존 이메일 구성 {#legacy-email-configuration}
 
-Prior to the 2021.9.0 release, email was configured through a customer support request. 다음에 필요한 조정을 확인합니다. `com.day.cq.mailer.DefaultMailService OSGI` 서비스:
+2021.9.0 릴리스 이전에는 고객 지원 요청을 통해 이메일을 구성했습니다. 다음에 필요한 조정을 확인합니다. `com.day.cq.mailer.DefaultMailService OSGI` 서비스:
 
 AEM as a Cloud Service은 포트 465를 통해 메일을 전송해야 합니다. 메일 서버가 포트 465를 지원하지 않는 경우 TLS 옵션이 활성화되어 있는 한 포트 587을 사용할 수 있습니다.
 
@@ -229,11 +235,11 @@ AEM as a Cloud Service은 포트 465를 통해 메일을 전송해야 합니다.
 * 설정 `smtp.port` to `587`
 * 설정 `smtp.ssl` to `false`
 
-다음 `smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동으로 설정됩니다. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` 가 false로 설정되고, `smtp.starttls` 가 true로 설정된 경우에만 추적됩니다. 이것은 `smtp.starttls` OSGI 구성에 설정된 값입니다.
+다음 `smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동으로 설정됩니다. 따라서 `smtp.ssl` 이 true로 설정되어 있고, `smtp.startls` 은 무시됩니다. If `smtp.ssl` 가 false로 설정되고, `smtp.starttls` 가 true로 설정된 경우에만 추적됩니다. 이것은 `smtp.starttls` OSGI 구성에 설정된 값입니다.
 
 SMTP 서버 호스트를 메일 서버의 호스트로 설정해야 합니다.
 
 
-## [!DNL Assets] development guidelines and use cases {#use-cases-assets}
+## [!DNL Assets] 개발 지침 및 사용 사례 {#use-cases-assets}
 
 Assets에 대한 개발 사용 사례, 권장 사항 및 참조 자료를 as a Cloud Service으로 확인하려면 [자산에 대한 개발자 참조](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
