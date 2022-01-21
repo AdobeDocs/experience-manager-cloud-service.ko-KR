@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
+source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1033'
 ht-degree: 3%
 
 ---
@@ -54,26 +54,29 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### 대규모 다운로드에 대한 이메일 알림 활성화 {#enable-emails-for-large-downloads}
 
-비동기 다운로드는 다음 경우 트리거됩니다.
+<!-- Go live is on 27th Jan 2022
+### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
 
-* 자산이 10개 이상인 경우
-* 다운로드 크기가 100MB를 초과하는 경우
-* 다운로드를 준비하는 데 30초 이상 걸리는 경우
+Asynchronous downloads are triggered in any of the following cases:
 
-백엔드에서 비동기 다운로드가 실행되는 동안 사용자는 Experience Manager에서 계속 탐색하고 작업할 수 있습니다. 다운로드 프로세스가 완료되면 사용자에게 즉시 알리기 위해 기본 메커니즘이 필요합니다. 이러한 목표를 달성하기 위해 관리자는 SMTP 서버를 설정하여 이메일 서비스를 구성할 수 있습니다. 자세한 내용은 [메일 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+* If there are more than ten assets 
+* If the download size is more than 100 MB
+* If the download takes more than 30 seconds to prepare
 
-이메일 서비스가 구성되면 관리자와 사용자는 Experience Manager 인터페이스에서 이메일 알림을 활성화할 수 있습니다.
+While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
-이메일 알림을 활성화하려면
+Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
 
-1. 에 로그인합니다. [!DNL Experience Manager Assets].
-1. 오른쪽 상단 모서리에서 사용자 아이콘을 클릭한 다음 을(를) 클릭합니다 **[!UICONTROL 내 환경 설정]**. 사용자 환경설정 창이 열립니다.
-1. 을(를) 선택합니다 **[!UICONTROL 자산 다운로드 이메일 알림]** 확인란을 선택하고 **[!UICONTROL 수락]**.
+To enable email notifications:
+
+1. Log in to [!DNL Experience Manager Assets].
+1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The User Preferences window opens.
+1. Select the **[!UICONTROL Asset Download email notifications]** check box and click **[!UICONTROL Accept]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
+-->
 
 자산을 다운로드하려면 다음 단계를 수행하십시오.
 
