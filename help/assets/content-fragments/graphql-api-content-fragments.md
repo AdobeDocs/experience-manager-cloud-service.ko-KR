@@ -3,7 +3,7 @@ title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: 헤드리스 컨텐츠 전달을 위해 AEM GraphQL API와 함께 Adobe Experience Manager(AEM)에서 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 3b69ce9236254301127dfe93dba899b565c5c642
+source-git-commit: f4dab394504676a12dea55229f2fa56efa4a0dc3
 workflow-type: tm+mt
 source-wordcount: '3952'
 ht-degree: 2%
@@ -586,7 +586,7 @@ GraphQL for AEM을 사용하는 쿼리의 기본 작업은 표준 GraphQL 사양
 
 * 중첩 조각을 쿼리할 때 폴백:
 
-   * 주어진 변형이 중첩된 조각에 없는 경우 **기본** 변형이 반환됩니다.
+   * 요청된 변형이 중첩 조각에 없는 경우 **기본** 변형이 반환됩니다.
 
 ## 지속되는 쿼리(캐싱) {#persisted-queries-caching}
 
