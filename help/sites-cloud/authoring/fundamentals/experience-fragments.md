@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 229e2d8252a9efe1e303e926bde6719387833fa9
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 100%
+source-wordcount: '1483'
+ht-degree: 99%
 
 ---
 
@@ -42,8 +42,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 >
 >* `experience-fragments-editors`
 >
->
-문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
+>문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
 ## 언제 경험 조각을 사용해야 합니까? {#when-should-you-use-experience-fragments}
 
@@ -218,7 +217,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. **만들기**&#x200B;를 사용하여 다음을 생성할 수 있습니다.
 
-   * **변형**
+   * **Variation**
    * **변형을 Live Copy로**.
 
 1. 필수 속성을 정의합니다.
@@ -344,15 +343,16 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 ## 일반 HTML 렌디션 {#the-plain-html-rendition}
 
-
 URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌디션에 액세스할 수 있습니다.
 
 >[!NOTE]
 >
 >브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 타사 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 컨텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
-## 경험 조각 내보내기  {#exporting-experience-fragments}
+## 경험 조각 내보내기 {#exporting-experience-fragments}
 
 기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 타사 채널에서 모두 동일하게 사용할 수 있습니다.
 
-Adobe Target으로 내보내기 위해 JSON을 사용할 수도 있습니다. 자세한 내용은 경험 조각과 Target 통합을 참조하십시오. <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+Adobe Target으로 내보내려면 다음을 참조하십시오. [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md).
+
+<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
