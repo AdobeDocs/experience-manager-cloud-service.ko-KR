@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
+source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 4%
+source-wordcount: '187'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +27,11 @@ ht-degree: 4%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
+특정 제품 페이지는 sku 또는 제품 카테고리로 선택할 수 있습니다. 제품 URL에서 카테고리 정보를 인코딩해야 하므로 나중에 는 사용 가능한 기본 제품 페이지 URL 형식 중 일부에서만 지원됩니다.
+
 다음 리소스에서 이 항목에 대한 자세한 정보를 찾을 수 있습니다.
 
+- [고급 URL 구성](../configuring/advanced-url-configuration.md)
 - [AEM CIF 코어 구성 요소 - 다중 카탈로그 페이지 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## 관련 리소스 {#related}
