@@ -1,13 +1,13 @@
 ---
-title: 자산 다운로드
+title: 에셋 다운로드
 description: 다음에서 자산 다운로드 [!DNL Adobe Experience Manager Assets] 다운로드 기능을 활성화하거나 비활성화합니다.
 contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
+source-git-commit: 462fd68ce4a33e14464256be4f4e9fdfe8d34aab
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 3%
 
 정적 및 동적 표현물을 포함한 자산을 다운로드할 수 있습니다. 또는 다음에서 바로 자산에 대한 링크가 있는 이메일을 보낼 수 있습니다 [!DNL Adobe Experience Manager Assets]. 다운로드한 자산은 ZIP 파일에 번들로 제공됩니다. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
+<!--
 >[!NOTE]
 >
->전자 메일 수신자는 `dam-users` 그룹 을 사용하여 이메일 메시지에서 ZIP 다운로드 링크에 액세스합니다. 자산을 다운로드하려면 구성원이 자산 다운로드를 트리거하는 워크플로우를 시작할 권한이 있어야 합니다.
+>Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
+-->
 
 자산 유형 이미지 세트, 스핀 세트, 혼합 미디어 세트 및 회전 세트는 다운로드할 수 없습니다.
 
@@ -33,9 +35,9 @@ ht-degree: 3%
 
 ## 을 사용하여 자산 다운로드 [!DNL Experience Manager] 인터페이스 {#download-assets}
 
-비동기 다운로드 서비스는 대형 자산을 원활하게 다운로드할 수 있는 프레임워크를 제공합니다. 작은 파일은 사용자 인터페이스에서 실시간으로 다운로드됩니다. [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 기능을 사용하면 더 빨리 다운로드할 수 있습니다.
+비동기 다운로드 서비스는 대형 자산을 원활하게 다운로드할 수 있는 프레임워크를 제공합니다. 100GB보다 큰 다운로드 아카이브는 최대 크기가 100GB인 다중 zip 아카이브로 분할됩니다. 이러한 파일은 개별적으로 다운로드할 수 있습니다. 작은 파일은 사용자 인터페이스에서 실시간으로 다운로드됩니다. [!DNL Experience Manager] 원본 파일이 다운로드되는 단일 자산 다운로드를 보관하지 않습니다. 이 기능을 사용하면 더 빨리 다운로드할 수 있습니다.
 
-기본적으로 Experience Manager은 다운로드 워크플로우가 완료되면 알림을 트리거합니다. 다운로드 알림이  [[!DNL Experience Manager] 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md).
+기본적으로 [!DNL Experience Manager] 다운로드 워크플로우가 완료되면 알림을 트리거합니다. 다운로드 알림이  [[!DNL Experience Manager] 받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![받은 편지함 알림](assets/inbox-notification-for-large-downloads.png)
 
@@ -85,7 +87,7 @@ Asynchronous downloads are triggered in either of the following case:
    | 다운로드 옵션 | 설명 |
    |---|---|
    | **[!UICONTROL 각 자산에 대해 별도의 폴더 만들기]** | 다운로드할 각 자산을 자산의 상위 폴더 아래에 중첩된 하위 폴더에 로컬 컴퓨터의 한 폴더로 포함하려면 이 옵션을 선택합니다. 이 옵션이 *not* 을(를) 선택합니다. 기본적으로 폴더 계층은 무시되고 모든 자산은 로컬 컴퓨터의 한 폴더에 다운로드됩니다. |
-   | **[!UICONTROL 이메일]** | 수신자에게 이메일 알림을 전송하려면 이 옵션을 선택합니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 배포 중에 사용자 지정하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>다음 위치에 임차인별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL 이메일]** | 다른 사용자에게 이메일 알림(다운로드 링크가 포함됨)을 보내려면 이 옵션을 선택합니다. 수신자 사용자는 `dam-users` 그룹에 속해 있어야 합니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 배포 중에 사용자 지정하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>다음 위치에 임차인별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL 자산]** | 이 옵션을 선택하면 변환 없이 자산을 원래 양식으로 다운로드합니다.<br>원본 자산에 하위 자산이 있는 경우 하위 자산 옵션을 사용할 수 있습니다. |
    | **[!UICONTROL 렌디션]** | 표현물은 자산의 이진 표현입니다. 자산에는 업로드된 파일의 표현인 기본 표현이 있습니다. 레프리젠테이션들을 수 있어요 <br> 이 옵션을 사용하여 다운로드할 표현물을 선택할 수 있습니다. 사용 가능한 표현물은 선택한 자산에 따라 다릅니다. |
    | **[!UICONTROL 스마트 자르기]** | 내에서 선택한 자산의 모든 스마트 자르기 렌디션을 다운로드하려면 이 옵션을 선택합니다 [!DNL Experience Manager]. 스마트 자르기 렌디션이 있는 zip 파일이 만들어지고 로컬 컴퓨터에 다운로드됩니다. |
