@@ -1,10 +1,10 @@
 ---
 title: 프로비저닝 프로세스 - 개요
 description: 프로비저닝 프로세스 - 개요
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 7%
 
 ### 리소스 및 링크
 
-• [AEM as a Cloud Service를 위한 IMS 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)\
-・ [Cloud Manager의 역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)\
-• [Experience Manager as a Cloud Service 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
+* [AEM as a Cloud Service를 위한 IMS 지원](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en)
+* [Cloud Manager의 역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)
+* [Experience Manager as a Cloud Service 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
 
 
 ## Adobe Experience Manager as a Cloud Service 온보딩 프로세스
@@ -49,7 +49,8 @@ ht-degree: 7%
 
 ### 2. Adobe Admin Console에 온보드 조직
 
->   ![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](./assets/processOverview2.jpg)
+
 * 시스템 관리자:
    * AEM 프로그램 및 환경을 프로비저닝합니다.
    * 관리 작업을 위한 Admin Console으로 이동합니다.
@@ -61,7 +62,7 @@ ht-degree: 7%
 
 ### 3. Admin Console에서 온보드 사용자 및 액세스 관리
 
->   ![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](./assets/processOverview3.jpg)
 
 크기 및 선호도에 따라 사용자를 온보딩하는 세 가지 방법:
 * Admin Console에서 수동으로 사용자 만들기
