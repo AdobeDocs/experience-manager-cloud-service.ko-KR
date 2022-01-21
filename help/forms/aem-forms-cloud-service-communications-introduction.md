@@ -2,7 +2,7 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 * 데이터에 대한 보안 액세스. Communications API는 고객이 지정한 데이터 저장소에서만 데이터에 연결 및 액세스하고 로컬 데이터 복사본을 만들지 않으므로 Communications를 매우 안전하게 만듭니다.
 
 ![신용 카드 명세서 샘플](assets/statement.png)
-Communications API를 사용하여 샘플 신용 카드 명세서를 만들 수 있습니다. 이 설명서는 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 데이터를 구분합니다.
+Communications API를 사용하여 신용 카드 명세서를 만들 수 있습니다. 이 샘플 문은 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 데이터를 구분합니다.
 
 ## 어떻게 작동합니까?
 

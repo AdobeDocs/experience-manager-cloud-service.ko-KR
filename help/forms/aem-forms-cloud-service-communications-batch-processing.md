@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service 통신 일괄 처리
 description: 브랜드 중심 및 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2297'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 배치 작업을 사용하여 예약된 간격으로 여러 문서를 생성할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 비디오를 보거나 아래 지침을 수행하여 배치 작업을 사용하여 문서를 생성하는 방법을 배울 수 있습니다. 비디오에 사용된 API 참조 설명서는 .yaml 형식으로 사용할 수 있습니다. 을 다운로드할 수 있습니다 [배치 API](assets/batch-api.yaml) 파일을 업로드하고 Postman에 업로드하여 API의 기능을 확인하고 비디오를 따라 가세요.
 
@@ -100,7 +100,7 @@ Microsoft Azure 저장소에서 [컨테이너](https://docs.microsoft.com/en-us/
 
 구성을 만들려면:
 
-1. 도구 > Forms > 출력 배치 - 통합 스토리지 커넥터로 이동합니다.
+1. 도구 > Forms > 통합 스토리지 커넥터로 이동합니다.
 1. 구성을 호스팅할 폴더를 열고 만들기를 클릭합니다. 전역 폴더를 사용하거나 폴더를 만듭니다.
 1. 구성의 제목 및 이름을 지정합니다. 저장소에서 Microsoft Azure 저장소를 선택합니다.
 1. 저장소 구성 경로에서 고객이 소유한 Azure 저장소 계정의 자격 증명이 포함된 클라우드 구성을 찾아 선택합니다.
@@ -235,7 +235,7 @@ API 참조 설명서는 API에서 제공하는 모든 매개 변수, 인증 방�
 
 * Adobe은 Experience Manager Cloud Service에서 사용하는 클라우드 영역에서 데이터 파일 blob 컨테이너 저장소를 호스팅할 것을 권장합니다.
 
-## FAQ {#faq}
+## 자주 묻는 질문 {#faq}
 
 **감시 폴더나 다른 스토리지 메커니즘을 사용하여 입출력 작업을 저장할 수 있습니까?**
 
