@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 3%
+source-wordcount: '1295'
+ht-degree: 2%
 
 ---
 
@@ -24,27 +24,72 @@ ht-degree: 3%
 
 ## 링크로 자산 공유 {#sharelink}
 
-링크를 통해 자산을 공유하는 것은 처음 로그인하지 않고도 외부 당사자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다 [!DNL Assets]. 관리자 권한이 있거나 `/var/dam/share` 위치는 공유된 링크를 볼 수 있습니다.
+링크를 통해 자산을 공유하는 것은 외부 당사자가 로그인하지 않고도 리소스를 사용할 수 있도록 하는 편리한 방법입니다 [!DNL Assets]. 기능을 사용하면 익명의 사용자가 공유된 자산에 액세스하고 다운로드할 수 있습니다. 사용자가 공유 링크에서 자산을 다운로드하면, [!DNL Assets] 는 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 매우 큰 다운로드의 경우 이 다운로드는 100GB 크기의 파일에 번들로 제공됩니다.
 
-![링크 공유 대화 상자](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* 링크로 공유할 폴더 또는 자산에 대한 ACL 편집 권한이 필요합니다.
->* 사용자와 링크를 공유하기 전에 [아웃바운드 이메일 활성화](/help/implementing/developing/introduction/development-guidelines.md#sending-email). 그렇지 않으면 오류가 발생합니다.
+>* [아웃바운드 이메일 활성화](/help/implementing/developing/introduction/development-guidelines.md#sending-email) 사용자와 링크를 공유하기 전에
 
 
-1. 에서 [!DNL Assets] 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 링크 공유]**. 다음 [!UICONTROL 링크 공유] 에 자동 생성된 자산 링크가 포함된 대화 상자가 나타납니다 **[!UICONTROL 링크 공유]** 필드.
+링크 공유 기능을 사용하여 자산을 공유하는 두 가지 방법이 있습니다.
+
+1. 공유 링크 생성, [자산 링크 복사 및 공유](#copy-and-share-assets-link) 다른 사용자와 공유할 수 있습니다. 링크의 기본 만료 시간은 하루입니다. 복사된 링크를 다른 사용자와 공유할 때에는 만료 시간을 변경할 수 없습니다.
+
+1. 공유 링크 생성 및 [이메일을 통해 자산 링크 공유](#share-assets-link-through-email). 이 경우 만료 날짜 및 시간과 같은 기본값을 수정하고 원래 자산 및 해당 표현물을 다운로드할 수 있습니다. 이메일 주소를 추가하여 여러 사용자에게 이메일을 보낼 수 있습니다.
+
+![링크 공유 대화 상자](assets/link-sharing-dialog.png)
+
+### 자산 링크 복사 및 공유{#copy-and-share-asset-link}
+
+자산을 공개 URL로 공유하려면:
+
+1. 에 로그인합니다. [!DNL Experience Manager Assets] 및 **[!UICONTROL 파일]**.
+1. 자산 또는 자산이 들어 있는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 링크 공유]**.
+1. 다음 **[!UICONTROL 링크 공유]** 에 자동 생성된 자산 링크가 포함된 대화 상자가 나타납니다 **[!UICONTROL 링크 공유]** 필드.
+1. 자산 링크를 복사하여 사용자와 공유합니다.
+
+### 이메일 알림을 통해 자산 링크 공유 {#share-assets-link-through-email}
+
+이메일을 통해 자산을 공유하려면 다음을 수행하십시오.
+
+1. 자산 또는 자산이 들어 있는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 링크 공유]**.
+1. 다음 **[!UICONTROL 링크 공유]** 에 자동 생성된 자산 링크가 포함된 대화 상자가 나타납니다 **[!UICONTROL 링크 공유]** 필드.
 
    * 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. You can share the link with multiple users. 사용자가 조직의 구성원인 경우 드롭다운 목록에 나타나는 제안에서 이메일 ID를 선택합니다. 사용자가 외부 사용자라면 전체 이메일 ID를 입력하고 키를 누릅니다 **[!UICONTROL Enter 키]**; 이메일 ID가 사용자 목록에 추가됩니다.
 
-   * 에서 **[!UICONTROL 제목]** 상자에 공유할 자산의 제목을 입력합니다.
+   * 에서 **[!UICONTROL 제목]** 상자에서 공유할 자산의 용도를 지정할 제목을 입력합니다.
    * 에서 **[!UICONTROL 메시지]** 상자에 필요한 경우 메시지를 입력합니다.
-   * 에서 **[!UICONTROL 만료]** 필드에서 날짜 선택기를 사용하여 링크에 대한 만료 날짜 및 시간을 지정합니다. 링크의 기본 만료 시간은 하루입니다.
+   * 에서 **[!UICONTROL 만료]** 필드에서 날짜 선택기를 사용하여 링크에 대한 만료 날짜 및 시간을 지정합니다.
    * 를 활성화합니다 **[!UICONTROL 원본 파일 다운로드 허용]** 수신자가 원본 변환을 다운로드할 수 있도록 하는 확인란을 선택합니다.
 
 1. **[!UICONTROL 공유]**&#x200B;를 클릭합니다. 링크가 사용자와 공유되는지 확인하는 메시지가 나타납니다. 사용자는 공유 링크가 포함된 이메일을 받게 됩니다.
+
+![링크 공유 전자 메일](assets/link-sharing-email-notification.png)
+
+### 자산 링크를 사용하여 자산 다운로드
+
+공유 자산 링크에 액세스할 수 있는 모든 사용자는 zip 폴더에 번들로 제공되는 자산을 다운로드할 수 있습니다. 다운로드 프로세스는 사용자가 복사된 자산 링크에 액세스하는지 또는 이메일을 통해 공유되는 자산 링크를 사용하는지 여부에 관계없이 동일합니다.
+
+* 자산 링크를 클릭하거나 브라우저에 URL을 붙여넣습니다. 다음 [!UICONTROL 링크 공유] 인터페이스 열기 [!UICONTROL 카드 보기] 또는 [!UICONTROL 목록 보기].
+
+* 에서 [!UICONTROL 카드 보기]를 클릭하고 공유 자산 또는 공유 자산 폴더 위로 마우스를 가져가면 자산을 선택하거나 큐에 올릴 수 있습니다.
+
+* 기본적으로 사용자 인터페이스에 **[!UICONTROL 받은 편지함 다운로드]** 선택 사항입니다. 다운로드 큐에 있는 모든 공유 자산 또는 폴더의 목록과 해당 상태를 반영합니다.
+
+* 자산 또는 폴더를 선택할 때 **[!UICONTROL 큐 다운로드]** 옵션이 화면에 표시됩니다. 을(를) 클릭합니다. **[!UICONTROL 큐 다운로드]** 다운로드 프로세스를 시작하는 옵션.
+
+   ![큐 다운로드](assets/queue-download.png)
+
+* 다운로드 파일이 준비되면 **[!UICONTROL 받은 편지함 다운로드]** 다운로드 상태를 보는 옵션. 대규모 다운로드의 경우 **[!UICONTROL 새로 고침]** 단추를 클릭하여 상태를 업데이트합니다.
+
+   ![받은 편지함 다운로드](assets/link-sharing-download-inbox.png)
+
+* 처리가 완료되면 **[!UICONTROL 다운로드]** 단추를 클릭하여 zip 파일을 다운로드합니다.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -146,6 +191,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 >[!NOTE]
 >
 >작성자 인스턴스의 링크를 외부 엔티티에 공유하려면 다음 URL만 표시해야 합니다 `GET` 요청. 다른 URL을 차단하여 작성자 인스턴스가 안전한지 확인합니다.
+>
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`

@@ -5,9 +5,9 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1032'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,10 @@ Asynchronous downloads are triggered in either of the following case:
 
 <!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
 
 Asynchronous downloads are triggered in any of the following cases:
 
@@ -114,13 +118,13 @@ To enable email notifications:
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-링크를 사용하여 자산을 공유하는 것은 관심 있는 사람이 처음 로그인하지 않고도 이용할 수 있는 편리한 방법입니다 [!DNL Assets]. 자세한 내용은 [링크 공유 기능](/help/assets/share-assets.md#sharelink).
+링크를 사용하여 자산을 공유하는 것은 관심 있는 사람이 로그인하지 않고도 이용할 수 있는 편리한 방법입니다 [!DNL Assets]. 자세한 내용은 [링크 공유 기능](/help/assets/share-assets.md#sharelink).
 
-사용자가 공유 링크에서 자산을 다운로드하면, [!DNL Assets] 은 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 매우 큰 다운로드의 경우 다운로드가 100GB의 파일로 청크됩니다.
+사용자가 공유 링크에서 자산을 다운로드하면, [!DNL Assets] 는 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 매우 큰 다운로드의 경우 다운로드가 100GB의 파일로 청크됩니다.
 
-받은 편지함은 각 아카이브의 처리 상태를 표시합니다. 처리가 완료되면 받은 편지함에서 아카이브를 다운로드할 수 있습니다.
+다음 [!UICONTROL 받은 편지함 다운로드] 각 아카이브의 처리 상태를 표시합니다. 처리가 완료되면 받은 편지함에서 아카이브를 다운로드할 수 있습니다.
 
-![받은 편지함 다운로드](assets/download-inbox.png)
+![받은 편지함 다운로드](assets/link-sharing-download-inbox.png)
 
 ## 자산 다운로드 서블릿 활성화 {#enable-asset-download-servlet}
 
