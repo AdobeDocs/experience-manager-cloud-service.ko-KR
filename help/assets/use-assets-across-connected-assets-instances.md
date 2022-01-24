@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
+source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
 workflow-type: tm+mt
 source-wordcount: '3358'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -139,7 +139,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 1. 구성 [!DNL Dynamic Media] 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포. 지침에 따라 다음을 수행합니다 [구성 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * 모든 구성에서 동일한 회사 이름을 사용합니다.
-   * 로컬 [!DNL Sites], in [!UICONTROL Dynamic Media 동기화 모드], 선택 **[!UICONTROL 기본적으로 비활성화됨]**. 다음 [!DNL Sites] 배포에는 읽기 전용 액세스 권한만 필요합니다 [!DNL Dynamic Media] 계정이 필요합니다.
+   * 로컬 [!DNL Sites], in [!UICONTROL Dynamic Media 동기화 모드], 선택 **[!UICONTROL 기본적으로 비활성화됨]**. 다음 [!DNL Sites] 배포에 대한 읽기 전용 액세스 권한이 있어야 합니다. [!DNL Dynamic Media] 계정이 필요합니다.
    * 로컬 [!DNL Sites]에서 **[!UICONTROL 자산 게시]** 선택 **[!UICONTROL 선택적 게시]**. 선택하지 않음 **[!UICONTROL 모든 콘텐츠 동기화]**.
    * 원격 [!DNL Assets] 배포, [!UICONTROL Dynamic Media 동기화 모드], 선택 **[!UICONTROL 기본적으로 활성화됨]**.
 
@@ -218,7 +218,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 >
 >이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 을 참조하십시오.
 
-후 [연결 구성](#configure-a-connection-between-sites-and-assets-deployments) 원격 DAM과 사이트 배포 간에 원격 DAM의 자산을 사이트 배포에서 사용할 수 있도록 합니다. 그런 다음 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니다. 업데이트가 지연되면 사이트 배포에서 자동으로 사용할 수 있습니다. 또한 원격 DAM의 자산을 로컬 Experience Manager Sites 페이지에서 사용하는 경우 원격 DAM의 자산에 대한 업데이트가 사이트 페이지에 표시됩니다.
+후 [연결 구성](#configure-a-connection-between-sites-and-assets-deployments) 원격 DAM과 사이트 배포 간에 원격 DAM의 자산을 사이트 배포에서 사용할 수 있도록 합니다. 그런 다음 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니다. 업데이트는 약간의 지연과 함께 Sites 배포에서 자동으로 사용할 수 있습니다. 또한 원격 DAM의 자산을 로컬 Experience Manager Sites 페이지에서 사용하는 경우 원격 DAM의 자산에 대한 업데이트가 사이트 페이지에 표시됩니다.
 
 자산을 한 위치에서 다른 위치로 이동하는 동안 다음을 확인하십시오 [참조 조정](manage-digital-assets.md) 사이트 페이지에 자산이 표시되도록 합니다. 자산을 로컬 사이트 배포에서 액세스할 수 없는 위치로 이동하는 경우 자산이 사이트 배포에 표시되지 않습니다.
 
