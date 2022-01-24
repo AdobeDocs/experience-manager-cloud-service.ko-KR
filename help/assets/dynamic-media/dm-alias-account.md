@@ -10,9 +10,9 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 3023fda4543328a0feda259ca58adb95fa4b1317
+source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,13 @@ ht-degree: 0%
 >
 >Dynamic Media 회사 별칭 계정을 만드는 기능은 2022년 1월 베타 채널에 있습니다. 이 기능은 일반적으로 2022년 2월 릴리스에서 제공됩니다.
 
-Dynamic Media URL 및 뷰어 포함 코드에 회사 계정 이름이 포함되어 있습니다. 이 계정 이름은 Dynamic Media 프로비저닝 시 생성되었습니다. 비즈니스에서 획득이나 리브랜딩을 받았거나, 더 기억에 남을 이름을 사용하고 싶은 시나리오가 있을 수 있습니다. 이러한 시나리오에서는 즉시 제공되는 모든 URL 및 뷰어 포함 코드에서 회사 계정 이름을 수동으로 업데이트하는 것이 쉽지 않습니다. 또한 기존 Dynamic Media 리포지토리에 영향을 주거나 라이브 컨텐츠에 영향을 줄 가능성이 있습니다. 이 문제를 해결하려면 Dynamic Media 회사 별칭 계정을 구성할 수 있습니다.
+Dynamic Media URL 및 뷰어 포함 코드에 회사 계정 이름이 포함되어 있습니다. 이 계정 이름은 Dynamic Media 프로비저닝 시 생성되었습니다. 비즈니스에서 획득이나 리브랜딩을 받았거나, 더 기억에 남을 이름을 사용하고 싶은 시나리오가 있을 수 있습니다. 이러한 시나리오에서는 즉시 제공되는 모든 URL 및 뷰어 포함 코드에서 회사 계정 이름을 수동으로 업데이트하는 것이 쉽지 않습니다. 또한 기존 Dynamic Media 저장소에 영향을 주거나 라이브 컨텐츠에 영향을 줄 수 있습니다. 이 문제를 해결하려면 Dynamic Media 회사 별칭 계정을 구성할 수 있습니다.
 
 Dynamic Media 회사 별칭 계정을 사용하면 사용자 인터페이스에 있는 즉시 사용 가능한 모든 Dynamic Media URL 및 뷰어 포함 코드가 리브랜딩과 같은 비즈니스 컨텍스트에 대한 업데이트를 반영하도록 할 수 있습니다. Dynamic Media URL 및 뷰어 포함 코드는 새 회사 계정 이름을 반영하므로 별칭 계정은 SEO(검색 엔진 최적화)에 긍정적인 영향을 줍니다.
 
 Dynamic Media 회사 별칭 계정을 구성할 때는 다음 사항에 유의하십시오.
 
+* 에서 회사 별칭 계정을 구성할 때 **[!UICONTROL Dynamic Media 구성 편집]** 페이지, 캐시 무효화에 성공하려면 URL을 무효화해야 합니다. *둘 다* a **[!UICONTROL 회사]** 계정 및 **[!UICONTROL 회사 별칭]** 계정을 동시에 사용합니다.
 * 기존 Dynamic Media URL 또는 뷰어 포함 코드를 *live* 새 별칭 이름을 반영하려면 디지털 속성을 수동으로 업데이트해야 합니다. 그러나 원래 Dynamic Media 회사 이름의 모든 URL 또는 뷰어 포함 코드는 기존 또는 새 자산에 대해 계속 작동합니다.
 * Dynamic Media 회사 별칭 계정 기능은 Experience Manager Assets 작성 모드 및 게재로 제한됩니다. 회사 별칭 이름이 Experience Manager Sites에서 작동하지 않습니다. WCM(Web Content Management) 구성 요소는 이 변경 사항에 대해 업데이트되지 않습니다. 이러한 구성 요소는 Dynamic Media 자산을 가져오기 위해 원래 Dynamic Media 회사 이름과 계속 작동합니다.
 * 에서 회사 별칭 계정을 하나만 설정할 수 있습니다 **[!UICONTROL Dynamic Media 구성 편집]** 페이지. 그러나 지원 사례를 통해 회사 별칭 계정을 최대 여러 개 만들고 Dynamic Media URL 또는 뷰어 포함 코드에 필요한 별칭 이름을 수동으로 반영할 수 있습니다.
