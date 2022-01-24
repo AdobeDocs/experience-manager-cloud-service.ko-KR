@@ -1,11 +1,11 @@
 ---
 title: 자산, 폴더 및 컬렉션 분배 및 공유
 description: 링크로 공유, 다운로드 및 와 같은 방법을 사용하여 디지털 자산을 배포합니다 [!DNL Brand Portal], [!DNL desktop app], 및 [!DNL Asset Link].
-contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
-role: User,Admin
+contentOwner: Vishabh Gupta
+feature: Asset Management, Collaboration, Asset Distribution
+role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
+source-git-commit: 3eb12e6e6a539a8f6b3cb4ccddba9d1971268c13
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 2%
