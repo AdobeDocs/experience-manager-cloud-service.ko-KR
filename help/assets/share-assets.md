@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1289'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## 링크로 자산 공유 {#sharelink}
 
-링크를 통해 자산을 공유하는 것은 외부 당사자가 로그인하지 않고도 리소스를 사용할 수 있도록 하는 편리한 방법입니다 [!DNL Assets]. 기능을 사용하면 익명의 사용자가 공유된 자산에 액세스하고 다운로드할 수 있습니다. 사용자가 공유 링크에서 자산을 다운로드하면, [!DNL Assets] 는 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 매우 큰 다운로드의 경우 이 다운로드는 100GB 크기의 파일에 번들로 제공됩니다.
+링크를 통해 자산을 공유하는 것은 외부 당사자가 로그인하지 않고도 리소스를 사용할 수 있도록 하는 편리한 방법입니다 [!DNL Assets]. 기능을 사용하면 익명의 사용자가 공유된 자산에 액세스하고 다운로드할 수 있습니다. 사용자가 공유 링크에서 자산을 다운로드하면, [!DNL Assets] 는 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 대규모 다운로드의 경우 이 다운로드는 100GB의 파일에 번들로 제공됩니다.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -49,7 +49,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 자산을 공개 URL로 공유하려면:
 
 1. 에 로그인합니다. [!DNL Experience Manager Assets] 및 **[!UICONTROL 파일]**.
-1. 자산 또는 자산이 들어 있는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 링크 공유]**.
+1. 자산이 들어 있는 자산 또는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 링크 공유]**.
 1. 다음 **[!UICONTROL 링크 공유]** 에 자동 생성된 자산 링크가 포함된 대화 상자가 나타납니다 **[!UICONTROL 링크 공유]** 필드.
 1. 자산 링크를 복사하여 사용자와 공유합니다.
 
@@ -57,7 +57,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 이메일을 통해 자산을 공유하려면 다음을 수행하십시오.
 
-1. 자산 또는 자산이 들어 있는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 링크 공유]**.
+1. 자산이 들어 있는 자산 또는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 링크 공유]**.
 1. 다음 **[!UICONTROL 링크 공유]** 에 자동 생성된 자산 링크가 포함된 대화 상자가 나타납니다 **[!UICONTROL 링크 공유]** 필드.
 
    * 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. You can share the link with multiple users. 사용자가 조직의 구성원인 경우 드롭다운 목록에 나타나는 제안에서 이메일 ID를 선택합니다. 사용자가 외부 사용자라면 전체 이메일 ID를 입력하고 키를 누릅니다 **[!UICONTROL Enter 키]**; 이메일 ID가 사용자 목록에 추가됩니다.
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >공유 자산이 다른 위치로 이동되면 해당 링크가 작동하지 않습니다. 링크를 다시 만들고 사용자와 다시 공유합니다.
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## 자산 다운로드 및 공유 {#download-and-share-assets}
+## 자산을 다운로드하고 별도로 공유 {#download-and-share-assets}
 
 사용자는 필요한 자산을 다운로드하고 외부에서 공유할 수 있습니다 [!DNL Experience Manager]. 자세한 내용은 [자산을 검색하는 방법](/help/assets/search-assets.md), [자산을 다운로드하는 방법](/help/assets/download-assets-from-aem.md), 및 [컬렉션을 다운로드하는 방법](manage-collections.md#download-a-collection)
 
