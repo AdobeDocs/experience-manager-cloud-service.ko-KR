@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1bef3ed7ba12e872dd8f478b13d14b459eb9495b
+source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1287'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## 링크로 자산 공유 {#sharelink}
 
-링크를 통해 자산을 공유하는 것은 외부 당사자, 마케터 및 기타 사용자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다 [!DNL Experience Manager] 사용자 참조. 기능을 사용하면 익명의 사용자가 공유된 자산에 액세스하고 다운로드할 수 있습니다. 공유 링크에서 자산을 다운로드할 때는, [!DNL Experience Manager Assets] 는 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 받은 편지함의 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 전송됩니다. 대규모 다운로드의 경우 이 다운로드는 파일 크기보다 100GB의 여러 파일로 번들로 제공됩니다.
+링크를 통해 자산을 공유하는 것은 외부 당사자, 마케터 및 기타 사용자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다 [!DNL Experience Manager] 사용자 참조. 기능을 사용하면 익명의 사용자가 공유된 자산에 액세스하고 다운로드할 수 있습니다. 공유 링크에서 자산을 다운로드할 때는, [!DNL Experience Manager Assets] 는 빠르고 중단 없는 다운로드를 제공하는 비동기 서비스를 사용합니다. 다운로드할 자산은 백그라운드에서 관리할 수 있는 파일 크기의 ZIP 아카이브로 대기합니다. 대규모 다운로드의 경우 이 다운로드는 파일 크기보다 100GB의 여러 파일로 번들로 제공됩니다.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
