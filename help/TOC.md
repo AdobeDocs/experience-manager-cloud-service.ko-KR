@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7dd57c6e161b7276d3796d64cd37fddc60e7a5b0
+source-git-commit: 72ddcbcc714bcd33de8f4f681db57872f5ca69ac
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3460'
 ht-degree: 96%
 
 ---
@@ -400,6 +400,7 @@ ht-degree: 96%
       + [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
       + [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
       + [Forms Designer 설치 및 구성](/help/forms/installing-configuring-designer.md)
+      + [통합 스토리지 커넥터 구성](/help/forms/configure-unified-storage-connector.md)
    + 사용자 그룹, 양식 및 관련 에셋 관리 {#manage-forms-and-related-assets}
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
       + [적응형 양식, PDF 양식 및 기타 에셋 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)

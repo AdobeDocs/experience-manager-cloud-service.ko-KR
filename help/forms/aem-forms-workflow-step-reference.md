@@ -2,10 +2,10 @@
 title: '워크플로우를 다른 사용자에게 할당하고, 이메일을 보내고, 워크플로우에서 Adobe Sign을 사용하는 방법 '
 description: Forms 중심의 워크플로우를 통해 적응형 Forms 기반 워크플로우를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색 및 여러 데이터 소스로 보내고, 이메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '5377'
-ht-degree: 0%
+source-wordcount: '5467'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,10 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
 * 다양한 데이터 소스와 워크플로우 모델을 연결하여 데이터를 쉽게 저장하고 검색할 수 있습니다.
 
 * 전자 메일 단계를 사용하여 작업 완료 및 워크플로우 시작 또는 완료 시 알림 전자 메일 및 기타 첨부 파일을 보낼 수 있습니다.
+
+>[!NOTE]
+>
+>워크플로우 모델이 외부 스토리지에 대해 표시된 경우 모든 Forms 워크플로우 단계에 대해 변수 옵션만 선택하여 데이터 파일과 첨부 파일을 저장하거나 검색할 수 있습니다.
 
 
 ## 작업 단계 할당 {#assign-task-step}
@@ -66,7 +70,7 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
 * **[!UICONTROL 미리 채워짐]**: 아래 나열된 다음 필드는 작업에 대한 입력으로 사용됩니다.
 
    * **[!UICONTROL 을 사용하여 입력 데이터 파일 선택]**: 입력 데이터 파일의 경로(.json, .xml, .doc 또는 양식 데이터 모델). 페이로드를 기준으로 하는 경로를 사용하여 입력 데이터 파일을 검색하거나 Document, XML 또는 JSON 데이터 유형의 변수에 저장된 파일을 검색할 수 있습니다. 예를 들어 파일에는 AEM 받은 편지함 애플리케이션을 통해 양식에 대해 제출된 데이터가 포함되어 있습니다. 경로의 예는 다음과 같습니다 [Payload_Directory]/workflow/data.
-   * **[!UICONTROL 을 사용하여 입력 첨부 파일 선택]**: 위치에서 사용할 수 있는 첨부 파일은 작업과 관련된 양식에 첨부됩니다. 경로는 항상 페이로드를 기준으로 합니다. 경로의 예는 다음과 같습니다 [Payload_Directory]/attachments/. 페이로드를 기준으로 배치된 첨부 파일을 지정하거나 문서 유형(배열 목록 > 문서) 변수를 사용하여 적응형 양식의 입력 첨부 파일을 지정할 수 있습니다
+   * **[!UICONTROL 을 사용하여 입력 첨부 파일 선택]**: 위치에서 사용할 수 있는 첨부 파일은 작업과 관련된 양식에 첨부됩니다. 페이로드에 상대적인 경로를 사용하거나 문서의 변수에 저장된 첨부 파일을 검색할 수 있습니다. 경로의 예는 다음과 같습니다 [Payload_Directory]/attachments/. 페이로드를 기준으로 배치된 첨부 파일을 지정하거나 문서 유형(배열 목록 > 문서) 변수를 사용하여 적응형 양식의 입력 첨부 파일을 지정할 수 있습니다.
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -88,7 +92,7 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL 할당자]** > **[!UICONTROL 옵션 할당]**: 사용자에게 작업을 할당할 방법을 지정합니다. 참가자 선택기 스크립트를 사용하여 사용자 또는 그룹에 작업을 동적으로 할당하거나 특정 AEM 사용자 또는 그룹에 작업을 지정할 수 있습니다.
-* **[!UICONTROL 참가자 선택기]**: 이 옵션은 **[!UICONTROL 동적으로 사용자 또는 그룹에 추가]** 옵션 지정 필드에서 옵션이 선택되어 있습니다. ECMAScript 또는 서비스를 사용하여 사용자나 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로우를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **[!UICONTROL 참가자 선택기]**: 이 옵션은 **[!UICONTROL 동적으로 사용자 또는 그룹에 추가]** 옵션 지정 필드에서 옵션이 선택되어 있습니다. ECMAScript 또는 서비스를 사용하여 사용자나 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로우를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL 참가자]**: 이 필드는 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantSelector]** 옵션이 **[!UICONTROL 참가자 선택기]** 필드. 필드에서는 RandomParticipantSelector 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
 
@@ -130,6 +134,10 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
 * **[!UICONTROL 이전 단계의 데이터 표시]**: 이 옵션을 선택하면 담당자에게 이전 담당자, 작업에 이미 수행된 작업, 작업에 추가된 댓글, 사용 가능한 경우 완료된 작업의 기록 문서를 볼 수 있습니다.
 * **[!UICONTROL 후속 단계의 데이터 표시]**: 현재 할당자가 후속 할당자가 작업에 추가한 작업과 설명을 보려면 이 옵션을 선택합니다. 또한 현재 할당자가 사용 가능한 경우 완료된 작업의 기록 문서를 볼 수 있습니다.
 * **[!UICONTROL 데이터 유형의 가시성]**: 기본적으로 할당자는 이전 및 이후 할당자가 추가한 기록 문서, 담당자, 조치 및 설명을 볼 수 있습니다. 할당자에게 표시되는 데이터 유형을 제한하려면 데이터 유형 표시 옵션을 사용합니다.
+
+>[!NOTE]
+>
+>외부 데이터 저장소에 대해 AEM 워크플로우 모델을 구성할 때 작업 할당 단계를 초안으로 저장하고 작업 할당 단계의 기록을 검색하는 옵션이 비활성화됩니다. 또한 받은 편지함에서 저장 옵션이 비활성화됩니다.
 
 ## 이메일 전송 단계 {#send-email-step}
 
@@ -294,9 +302,9 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
 
 ## 문서 서명 단계 {#sign-document-step}
 
-문서 서명 단계를 통해 [!DNL Adobe Sign] 문서에 서명합니다. 사용 시 [!DNL Adobe Sign] 적응형 양식에 서명하는 워크플로우 단계. 양식은 워크플로우 단계의 구성에 따라 서명자 간에 서로 전달하거나 모든 서명자에게 동시에 전송할 수 있습니다. [!DNL Adobe Sign] 활성화된 적응형 Forms은 모든 서명자가 서명 프로세스를 완료한 후에만 Experience Manager Forms 서버에 제출됩니다.
+문서 서명 단계를 통해 [!DNL Adobe Sign] 문서에 서명합니다. [!DNL Adobe Sign] 워크플로 단계를 사용해 적응형 양식에 서명할 때, 워크플로 단계의 구성에 따라 양식이 서명자들 간에 전달되거나 모든 서명자에게 동시에 전달될 수 있습니다. [!DNL Adobe Sign]이 활성화된 적응형 양식은 모든 서명자가 서명 프로세스를 완료한 후에만 Experience Manager Forms Server에 제출됩니다.
 
-기본적으로 [!DNL Adobe Sign] 스케줄러 서비스는 24시간마다 후에 (투표) 서명자 응답을 확인합니다. 다음을 수행할 수 있습니다 [환경의 기본 간격 변경](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
+기본값으로 [!DNL Adobe Sign] 스케줄러 서비스는 서명자 응답을 24시간마다 점검(가져옴)합니다. 다음을 수행할 수 있습니다 [환경의 기본 간격 변경](adobe-sign-integration-adaptive-forms.md##configure-adobe-sign-scheduler-to-sync-the-signing-status).
 
 문서 서명 단계에는 다음 속성이 있습니다.
 

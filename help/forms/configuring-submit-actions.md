@@ -2,10 +2,10 @@
 title: 적응형 양식에 대한 제출 작업을 구성하는 방법
 description: 적응형 양식은 여러 제출 작업을 제공합니다. 제출 작업은 제출 후 적응형 양식을 처리하는 방법을 정의합니다. 기본 제공 제출 작업을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 0%
+source-wordcount: '1886'
+ht-degree: 3%
 
 ---
 
@@ -145,13 +145,15 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## AEM 워크플로우 호출 {#invoke-an-aem-workflow}
 
-다음 **[!UICONTROL AEM 워크플로우 호출]** 제출 작업은 적응형 양식을 [AEM 워크플로우](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 양식이 제출되면 연결된 워크플로우가 작성자 인스턴스에서 자동으로 시작됩니다. 제출 작업은 워크플로우의 페이로드 위치에 다음 사항을 배치합니다.
+다음 **[!UICONTROL AEM 워크플로우 호출]** 제출 작업은 적응형 양식을 [AEM 워크플로우](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). 양식이 제출되면 연결된 워크플로우가 작성자 인스턴스에서 자동으로 시작됩니다. 데이터 파일, 첨부 파일 및 기록 문서를 워크플로우의 페이로드 위치 또는 변수에 저장할 수 있습니다. 워크플로우가 외부 데이터 저장소에 대해 표시되고 외부 데이터 저장소에 대해 구성된 경우 변수 옵션만 사용할 수 있습니다. 워크플로우 모델에 사용할 수 있는 변수 목록에서 선택할 수 있습니다. 워크플로우가 워크플로우 생성 시점이 아니라 이후 단계에서 외부 데이터 스토리지에 대해 표시된다면 필요한 변수 구성이 있는지 확인합니다.
 
-* **데이터 파일**: 여기에는 적응형 양식에 전송된 데이터가 포함되어 있습니다. 를 사용할 수 있습니다 **[!UICONTROL 데이터 파일 경로]** 옵션을 사용하여 페이로드를 기준으로 파일 이름과 파일 경로를 지정합니다. 예: `/addresschange/data.xml` 경로: 라는 폴더를 만듭니다. `addresschange` 페이로드를 기준으로 하여 배치합니다. 만 지정할 수도 있습니다 `data.xml` 폴더 계층 구조를 만들지 않고 제출된 데이터만 보냅니다.
+제출 작업은 워크플로우의 페이로드 위치에 다음을 배치하거나, 워크플로우가 외부 데이터 저장소에 대해 표시된 경우 변수를 지정합니다.
 
-* **첨부 파일**: 를 사용할 수 있습니다 **[!UICONTROL 첨부 경로]** 적응형 양식에 업로드된 첨부 파일을 저장할 폴더 이름을 지정하는 옵션. 페이로드를 기준으로 폴더가 만들어집니다.
+* **데이터 파일**: 여기에는 적응형 양식에 전송된 데이터가 포함되어 있습니다. 를 사용할 수 있습니다 **[!UICONTROL 데이터 파일 경로]** 옵션을 사용하여 페이로드를 기준으로 파일 이름과 파일 경로를 지정합니다. 예: `/addresschange/data.xml` 경로: 라는 폴더를 만듭니다. `addresschange` 페이로드를 기준으로 하여 배치합니다. 만 지정할 수도 있습니다 `data.xml` 폴더 계층 구조를 만들지 않고 제출된 데이터만 보냅니다. 워크플로우가 외부 데이터 저장소에 대해 표시된 경우 변수 옵션을 사용하고 워크플로우 모델에 사용할 수 있는 변수 목록에서 변수를 선택합니다.
 
-* **기록 문서**: 여기에는 적응형 양식에 대해 생성된 레코드 문서가 포함되어 있습니다. 를 사용할 수 있습니다 **[!UICONTROL 레코드 경로 문서]** [레코드 문서] 파일의 이름과 페이로드를 기준으로 파일 경로를 지정하는 옵션입니다. 예: `/addresschange/DoR.pdf` 경로: 라는 폴더를 만듭니다. `addresschange` 를 페이로드에 대해 관련되고, `DoR.pdf` 을 페이로드에 대해 상대적으로 설정합니다. 만 지정할 수도 있습니다 `DoR.pdf` 폴더 계층을 만들지 않고 레코드 문서만 저장하려면
+* **첨부 파일**: 를 사용할 수 있습니다 **[!UICONTROL 첨부 경로]** 적응형 양식에 업로드된 첨부 파일을 저장할 폴더 이름을 지정하는 옵션. 페이로드를 기준으로 폴더가 만들어집니다. 워크플로우가 외부 데이터 저장소에 대해 표시된 경우 변수 옵션을 사용하고 워크플로우 모델에 사용할 수 있는 변수 목록에서 변수를 선택합니다.
+
+* **기록 문서**: 여기에는 적응형 양식에 대해 생성된 레코드 문서가 포함되어 있습니다. 를 사용할 수 있습니다 **[!UICONTROL 레코드 경로 문서]** [레코드 문서] 파일의 이름과 페이로드를 기준으로 파일 경로를 지정하는 옵션입니다. 예: `/addresschange/DoR.pdf` 경로: 라는 폴더를 만듭니다. `addresschange` 를 페이로드에 대해 관련되고, `DoR.pdf` 을 페이로드에 대해 상대적으로 설정합니다. 만 지정할 수도 있습니다 `DoR.pdf` 폴더 계층을 만들지 않고 레코드 문서만 저장하려면 워크플로우가 외부 데이터 저장소에 대해 표시된 경우 변수 옵션을 사용하고 워크플로우 모델에 사용할 수 있는 변수 목록에서 변수를 선택합니다.
 
 를 사용하기 전에 **[!UICONTROL AEM 워크플로우 호출]** 작업 제출 에는 **[!UICONTROL AEM DS 설정 서비스]** 구성:
 
@@ -161,7 +163,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 * **[!UICONTROL 처리 서버 암호]**: 워크플로우 사용자 암호
 
-구성 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), 및 [구성 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) Cloud Service 인스턴스에 매핑해야 합니다.
+구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.
 
 ## 동기 또는 비동기 제출 사용 {#use-synchronous-or-asynchronous-submission}
 
