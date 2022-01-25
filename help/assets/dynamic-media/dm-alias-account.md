@@ -10,7 +10,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
+source-git-commit: 494f6803967725ca04a1cc4512c1e553b9f0282c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -29,11 +29,11 @@ Dynamic Media 회사 별칭 계정을 사용하면 사용자 인터페이스에 
 
 Dynamic Media 회사 별칭 계정을 구성할 때는 다음 사항에 유의하십시오.
 
-* 에서 회사 별칭 계정을 구성할 때 **[!UICONTROL Dynamic Media 구성 편집]** 페이지, 캐시 무효화에 성공하려면 URL을 무효화해야 합니다. *둘 다* a **[!UICONTROL 회사]** 계정 및 **[!UICONTROL 회사 별칭]** 계정을 동시에 사용합니다.
 * 기존 Dynamic Media URL 또는 뷰어 포함 코드를 *live* 새 별칭 이름을 반영하려면 디지털 속성을 수동으로 업데이트해야 합니다. 그러나 원래 Dynamic Media 회사 이름의 모든 URL 또는 뷰어 포함 코드는 기존 또는 새 자산에 대해 계속 작동합니다.
 * Dynamic Media 회사 별칭 계정 기능은 Experience Manager Assets 작성 모드 및 게재로 제한됩니다. 회사 별칭 이름이 Experience Manager Sites에서 작동하지 않습니다. WCM(Web Content Management) 구성 요소는 이 변경 사항에 대해 업데이트되지 않습니다. 이러한 구성 요소는 Dynamic Media 자산을 가져오기 위해 원래 Dynamic Media 회사 이름과 계속 작동합니다.
 * 에서 회사 별칭 계정을 하나만 설정할 수 있습니다 **[!UICONTROL Dynamic Media 구성 편집]** 페이지. 그러나 지원 사례를 통해 회사 별칭 계정을 최대 여러 개 만들고 Dynamic Media URL 또는 뷰어 포함 코드에 필요한 별칭 이름을 수동으로 반영할 수 있습니다.
 * 즉시 사용 가능한 [캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) Dynamic Media의 기능은 Cloud Services의 Dynamic Media 구성 페이지에 구성된 회사 및 회사 별칭 계정 모두로 URL을 무효화합니다.
+* 에서 회사 별칭 계정을 구성할 때 **[!UICONTROL Dynamic Media 구성 편집]** 페이지, 캐시 무효화에 성공하려면 URL을 무효화해야 합니다. *둘 다* a **[!UICONTROL 회사]** 계정 및 **[!UICONTROL 회사 별칭]** 계정을 동시에 사용합니다.
 
 참조 - [Cloud Services에서 Dynamic Media 구성 만들기](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
