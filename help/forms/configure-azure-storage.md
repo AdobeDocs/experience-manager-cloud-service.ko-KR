@@ -2,14 +2,14 @@
 title: Azure 스토리지를 구성하는 방법
 description: 양식을 Azure 저장소 서버와 통합하는 방법을 알아봅니다.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
 
-# 구성 [!DNL Azure] 저장소 {#configure-azure-storage}
+# [!DNL Azure]스토리지 구성 {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 제공 [!DNL Azure] 양식을 와 통합하기 위한 스토리지 구성 [!DNL Azure] 스토리지 서비스. 양식 데이터 모델 을 사용하여 와 상호 작용하는 적응형 Forms을 만들 수 있습니다 [!DNL Azure] 비즈니스 워크플로우를 사용하도록 설정하는 서버입니다. 예:
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 1. 이름 지정 [!DNL Azure] 스토리지 계정 **[!UICONTROL Azure 저장소 계정]** 필드.
 1. 키를 지정하여 **[!UICONTROL Azure 액세스 키]** 필드 및 탭 **[!UICONTROL 저장]**.
 
-## 양식 데이터 모델 작성 {#create-azure-form-data-model}
+## 양식 데이터 모델 만들기 {#create-azure-form-data-model}
 
 만들기 후 [!DNL Azure] 스토리지 구성, [양식 데이터 모델 만들기](create-form-data-models.md). 이 포함된 폴더를 지정합니다 [!DNL Azure] 의 구성 **[!UICONTROL 데이터 소스 구성]** 필드를 만듭니다. 그런 다음 지정된 폴더 이름에 있는 구성 목록에서 구성을 선택할 수 있습니다.
 
@@ -93,4 +93,8 @@ ht-degree: 1%
 1. 스위치 **[!UICONTROL 검색 키]** 옵션을 켜짐 상태로 전환합니다. 이 옵션은 기본 데이터 유형에만 사용할 수 있습니다.
 1. 탭 **[!UICONTROL 완료]** 그런 다음 **[!UICONTROL 저장]** 양식 데이터 모델을 저장합니다.
 
-데이터 모델 개체 속성을 검색 키로 정의한 후에는 키가 Azure 저장소에 메타데이터로 저장됩니다.
+데이터 모델 개체 속성을 검색 키로 정의한 후 해시 값은 Azure 인덱스 태그에 저장되고 Base64 인코딩 값은 Azure 메타데이터에 저장됩니다.
+
+>[!NOTE]
+>
+>Azure에서는 Blob당 10개의 태그만 허용하고 검색 키로 표시된 속성 값은 해시 후 Azure 인덱스 태그에 저장되므로 Azure 개체당 10개의 검색 키만 허용됩니다.
