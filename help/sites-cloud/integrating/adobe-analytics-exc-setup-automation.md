@@ -3,7 +3,10 @@ title: Adobe Analytics과 Experience Cloud 설정 자동화 통합
 description: Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 통해 Experience Manager Sites을 Experience Platform Launch 및 Adobe Analytics과 통합 및 계측하는 간단하고 자동화된 방법을 제공합니다. 자체 사이트에서 자동화된 설정을 사용하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 75d8f2a14ea97216c48c3bf242aa6186d97d4490
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 6c84c0eff6392f1f86c18c9daf15c402c4d9e778
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
