@@ -1,14 +1,14 @@
 ---
-title: 컨텐츠 전송 도구 시작하기
-description: 컨텐츠 전송 도구 시작하기
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: 콘텐츠 전송 도구 시작하기
+description: 콘텐츠 전송 도구 시작하기
+source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 27%
+source-wordcount: '859'
+ht-degree: 29%
 
 ---
 
-# 컨텐츠 전송 도구 시작하기 {#getting-started-content-transfer-tool}
+# 콘텐츠 전송 도구 시작하기 {#getting-started-content-transfer-tool}
 
 
 ## 사용 가능 {#availability}
@@ -88,7 +88,7 @@ ht-degree: 27%
    1. **액세스 토큰**: 액세스 토큰을 입력합니다.
 
       >[!NOTE]
-      >액세스 토큰은 **액세스 토큰 열기** 버튼을 클릭합니다. Target Cloud Service 인스턴스의 AEM 관리자 그룹에 속해 있는지 확인해야 합니다.
+      >액세스 토큰은 **액세스 토큰 열기** 버튼을 클릭합니다. Target Cloud Service 인스턴스의 &#39;관리자&#39; 그룹에 속해 있는지 확인해야 합니다.
 
    1. **매개 변수**: 다음 매개 변수를 선택하여 마이그레이션 세트를 만듭니다.
 
