@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 229e2d8252a9efe1e303e926bde6719387833fa9
+source-git-commit: 848c0090565db7a93243c7215ef159204597360e
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 99%
+source-wordcount: '1494'
+ht-degree: 98%
 
 ---
 
@@ -353,6 +353,4 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 타사 채널에서 모두 동일하게 사용할 수 있습니다.
 
-Adobe Target으로 내보내려면 다음을 참조하십시오. [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md).
-
-<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+Adobe Target으로 내보내려면 다음을 참조하십시오. [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md). JSON을 사용할 수도 있습니다. 자세한 내용은 [경험 조각과 Target 통합](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md).

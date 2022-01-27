@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: fb75c9099b77a397fa451b72ee997463a3f4f11e
+source-git-commit: 9dc34e7e9e69fa5d5a6fc30c380a506cdbc0234a
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3469'
 ht-degree: 99%
 
 ---
@@ -172,6 +172,7 @@ ht-degree: 99%
          + [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
          + [콘텐츠 조각](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
          + [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
+         + [경험 조각 - 내보내기](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
          + [CSV로 내보내기](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [구성 요소](/help/sites-cloud/authoring/fundamentals/components.md)
          + [모바일 디바이스용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
