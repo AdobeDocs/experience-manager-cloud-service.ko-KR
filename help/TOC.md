@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9dc34e7e9e69fa5d5a6fc30c380a506cdbc0234a
+source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
 workflow-type: tm+mt
-source-wordcount: '3469'
+source-wordcount: '3472'
 ht-degree: 99%
 
 ---
@@ -172,7 +172,6 @@ ht-degree: 99%
          + [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
          + [콘텐츠 조각](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
          + [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-         + [경험 조각 - 내보내기](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
          + [CSV로 내보내기](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [구성 요소](/help/sites-cloud/authoring/fundamentals/components.md)
          + [모바일 디바이스용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
@@ -270,6 +269,7 @@ ht-degree: 99%
       + [Adobe Analytics와 통합](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 자동 설정과 통합](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
 + 에셋 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [개요 및 새로운 기능](/help/assets/overview.md)
