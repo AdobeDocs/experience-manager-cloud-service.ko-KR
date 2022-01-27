@@ -1,18 +1,18 @@
 ---
-title: Commerce Integration Framework를 사용하여 AEM 및 Adobe Commerce(Magento) 통합
-description: AEM 및 Adobe Commerce(Magento)은 CIF(Commerce Integration Framework)를 사용하여 원활하게 통합됩니다. CIF를 사용하면 AEM이 GraphQL을 통해 Magento 인스턴스에 액세스하고 Magento과 통신할 수 있습니다. 또한 AEM 작성자는 제품 및 카테고리 선택기 및 제품 콘솔을 사용하여 Magento에서 온디맨드로 가져온 제품 및 카테고리 데이터를 검색할 수 있습니다. 또한 CIF는 상거래 프로젝트를 가속화할 수 있는 기본 제공 스토어를 제공합니다.
+title: Commerce Integration Framework를 사용하여 AEM 및 Adobe Commerce 통합
+description: AEM 및 Adobe Commerce은 CIF(Commerce Integration Framework)를 사용하여 원활하게 통합됩니다. CIF를 사용하면 AEM이 GraphQL을 통해 Adobe Commerce 인스턴스에 액세스하고 Adobe Commerce과 통신할 수 있습니다. 또한 AEM 작성자는 제품 및 카테고리 선택기 및 제품 콘솔을 사용하여 Adobe Commerce에서 온디맨드로 가져온 제품 및 카테고리 데이터를 검색할 수 있습니다. 또한 CIF는 상거래 프로젝트를 가속화할 수 있는 기본 제공 스토어를 제공합니다.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: 96e7a7c38dd1275c9b0d291d12a0f768ab183c38
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '412'
+ht-degree: 2%
 
 ---
 
-# Commerce Integration Framework를 사용하여 AEM 및 Adobe Commerce(Magento) 통합 {#aem-magento-framework}
+# Commerce Integration Framework를 사용하여 AEM 및 Adobe Commerce 통합 {#aem-framework}
 
-CIF(Commerce Integration Framework)를 사용하여 Experience Manager 및 Adobe Commerce(Magento)이 원활하게 통합됩니다. CIF를 사용하면 AEM이 Adobe Commerce을 사용하여 상거래 인스턴스에 직접 액세스하고 통신할 수 있습니다 [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/).
+Experience Manager 및 Adobe Commerce은 CIF(Commerce Integration Framework)를 사용하여 원활하게 통합됩니다. CIF를 사용하면 AEM이 Adobe Commerce을 사용하여 상거래 인스턴스에 직접 액세스하고 통신할 수 있습니다 [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >

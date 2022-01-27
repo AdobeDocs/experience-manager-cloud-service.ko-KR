@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1004'
 ht-degree: 7%
 
 ---
@@ -68,25 +68,25 @@ AEM as a Cloud Service SDK를 사용한 로컬 CIF 추가 기능 개발에 대�
 
    CIF 추가 기능 zip 파일에는 두 개의 Sling 기능 아카이브가 포함되어 있습니다 `.far` 파일. 로컬 AEM as a Cloud Service SDK를 실행하는 방법에 따라 AEM 작성자 또는 AEM 게시용으로 올바른 SDK를 사용해야 합니다.
 
-1. 이름이 인 로컬 OS 환경 변수를 만듭니다. `COMMERCE_ENDPOINT` GraphQL Magento 끝점을 사용합니다.
+1. 이름이 인 로컬 OS 환경 변수를 만듭니다. `COMMERCE_ENDPOINT` Adobe Commerce GraphQL 종단점을 사용합니다.
 
    예제 Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    예제 Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    이 변수는 AEM에서 상거래 시스템에 연결하는 데 사용됩니다. 또한, CIF 추가 기능에는 Commerce GraphQL 끝점을 로컬에서 사용할 수 있도록 하는 로컬 역방향 프록시가 포함되어 있습니다. CIF 작성 도구(제품 콘솔 및 선택기)와 직접 GraphQL 호출을 수행하는 CIF 클라이언트측 구성 요소에 사용됩니다.
 
    이 변수는 AEM as a Cloud Service 환경에서도 설정해야 합니다. 변수에 대한 자세한 내용은 [AEM as a Cloud Service OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (선택 사항) 준비된 카탈로그 기능을 활성화하려면 Magento 인스턴스에 대한 통합 토큰을 만들어야 합니다. 다음 단계를 따르십시오. [시작하기](./getting-started.md#staging) 토큰을 만들려면
+1. (선택 사항) 준비된 카탈로그 기능을 활성화하려면 Adobe Commerce 인스턴스에 대한 통합 토큰을 만들어야 합니다. 다음 단계를 따르십시오. [시작하기](./getting-started.md#staging) 토큰을 만들려면
 
    이름으로 OSGi 암호 설정 `COMMERCE_AUTH_HEADER` 변환 후:
 

@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 2afeb12ec7b99da056652fc869da5bc82db30754
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1096'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ CIF 추가 기능이 제공되면 기존 Cloud Manager 프로그램에 적용됩
 
 두 번째 단계는 각 AEM as a Cloud Service 환경을 위한 셀프 서비스입니다. CIF 추가 기능의 초기 프로비저닝 후에 수행해야 하는 몇 가지 추가 구성이 있습니다.
 
-## 전자 상거래 솔루션과 AEM 연결 {#magento}
+## 전자 상거래 솔루션과 AEM 연결 {#solution}
 
 CIF 추가 기능 및 [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components) 상거래 솔루션을 사용하려면 Cloud Manager 환경 변수를 통해 GraphQL 엔드포인트 URL을 제공해야 합니다. 변수 이름은 `COMMERCE_ENDPOINT`. HTTPS를 통한 보안 연결을 구성해야 합니다.
 
@@ -81,7 +81,7 @@ Adobe I/O CLI를 통해 AEM과 상거래 솔루션을 연결하려면 다음 단
 
    자세한 내용은 [CLI 문서](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 자세한 내용
 
-   상거래 GraphQL 끝점 URL은 상거래 GraphQl 서비스를 가리키고 보안 HTTPS 연결을 사용해야 합니다. 예: `https://<yourmagentosystem>/graphql`.
+   상거래 GraphQL 끝점 URL은 상거래 GraphQl 서비스를 가리키고 보안 HTTPS 연결을 사용해야 합니다. 예: `https://<yourcommercesystem>/graphql`.
 
 4. 인증이 필요한 준비된 카탈로그 기능 활성화(선택 사항)
 
@@ -103,7 +103,7 @@ Adobe I/O CLI를 통해 AEM과 상거래 솔루션을 연결하려면 다음 단
 
 ## 저장소 및 카탈로그 구성 {#catalog}
 
-CIF 추가 기능 및 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components) 여러 상거래 저장소에 연결된 여러 AEM 사이트 구조(또는 스토어 보기 등)에서 사용할 수 있습니다. 기본적으로 Adobe Commerce의 기본 스토어와 카탈로그(Magento)에 연결하는 기본 구성 이 포함된 CIF 추가 기능이 배포됩니다.
+CIF 추가 기능 및 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components) 여러 전자 상거래 저장소(또는 스토어 보기 등)에 연결된 여러 AEM 사이트 구조에서 사용할 수 있습니다. 기본적으로 CIF 추가 기능은 Adobe Commerce의 기본 스토어와 카탈로그에 연결하는 기본 구성과 함께 배포됩니다.
 
 이 구성은 다음 단계에 따라 CIF Cloud Service 구성을 통해 프로젝트에 대해 조정할 수 있습니다.
 
@@ -118,7 +118,7 @@ CIF 추가 기능 및 [CIF 코어 구성 요소](https://github.com/adobe/aem-co
 다음 속성을 구성할 수 있습니다.
 
 - GraphQL 클라이언트 - 상거래 백엔드 통신을 위해 구성된 GraphQL 클라이언트를 선택합니다. 이 기능은 일반적으로 기본적으로 유지됩니다.
-- 저장소 보기 - (Magento) 저장소 보기 식별자입니다. 비어 있으면 기본 저장소 보기가 사용됩니다.
+- 저장소 보기 - 저장소 보기 식별자입니다. 비어 있으면 기본 저장소 보기가 사용됩니다.
 - GraphQL 프록시 경로 - AEM의 URL 경로 GraphQL 프록시가 상거래 백엔드 GraphQL 끝점에 요청을 프록시할 때 사용합니다.
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ CIF 추가 기능 및 [CIF 코어 구성 요소](https://github.com/adobe/aem-co
 - 카탈로그 UID 지원 활성화 - 상거래 백엔드 GraphQL 호출에서 ID 대신 UID에 대한 지원을 활성화합니다.
    >[!NOTE]
    >
-   > Adobe Commerce(Magento) 2.4.2에서 UID에 대한 지원이 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화합니다.
+   > Adobe Commerce 2.4.2에서 UID에 대한 지원이 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
 - 카탈로그 루트 카테고리 식별자 - 저장소 카탈로그 루트의 식별자(UID 또는 ID)입니다
    >[!CAUTION]
    >

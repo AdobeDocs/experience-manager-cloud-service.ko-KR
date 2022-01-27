@@ -1,6 +1,6 @@
 ---
 title: 상거래 다중 스토어 설정
-description: 여러 스토어 보기를 Magento에서 AEM에 매핑하는 방법을 알아봅니다. 이를 통해 프로젝트에서 다중 임차인 및 다중 언어 사용 사례를 지원할 수 있습니다.
+description: Adobe Commerce에서 AEM에 여러 스토어 보기를 매핑하는 방법을 알아봅니다. 이를 통해 프로젝트에서 다중 임차인 및 다중 언어 사용 사례를 지원할 수 있습니다.
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -10,32 +10,32 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # 상거래 다중 스토어 설정 {#multi-store}
 
-AEM CIF 코어 구성 요소는 여러 AEM 사이트 구조에서 사용할 수 있으며 기본 GraphQL 클라이언트 구현에서 다양한 Magento 저장소/저장소 보기에 연결할 수 있습니다. 이를 통해 프로젝트에서 복잡한 다중 저장소/다중 사이트 설정을 구현할 수 있습니다.
+AEM CIF 코어 구성 요소는 여러 AEM 사이트 구조에서 사용할 수 있으며 기본 GraphQL 클라이언트 구현에서 다양한 Adobe Commerce 저장소/저장소 보기에 연결할 수 있습니다. 이를 통해 프로젝트에서 복잡한 다중 저장소/다중 사이트 설정을 구현할 수 있습니다.
 
-여러 Magento 스토어 보기를 Adobe Experience Manager Sites과 통합하기 위한 옵션에 대한 비디오 연습입니다.
+여러 Adobe Commerce 스토어 보기를 Adobe Experience Manager Sites과 통합하는 옵션을 자세히 설명하는 비디오 연습입니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 AEM Live Copy 및 Language Copy의 다중 사이트 관리 기능은 Commerce Integration Framework와 함께 사용하여 지역 및 로케일 간에 사이트를 전체적으로 관리합니다.
 
-권장 설정은 AEM 사이트와 Magento 저장소 보기 간에 1:1 관계를 사용하는 것입니다.
+권장 설정은 AEM 사이트와 Adobe Commerce 저장소 보기 간에 1:1 관계를 사용하는 것입니다.
 
 AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 저장소 보기에 연결하려면 아래 단계를 따르십시오.
 
 ## 구성 {#configuration}
 
-1. 에 설명된 패턴에 따라 여러 저장소 및 저장소 보기를 구성합니다. [Magento 웹 사이트, 스토어 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. 에 설명된 패턴에 따라 여러 저장소 및 저장소 보기를 구성합니다. [Adobe Commerce 웹 사이트, 저장소 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
-2. AEM 및 Magento 간 연결이 작동하는지 확인합니다.
+2. AEM 및 Adobe Commerce 간 연결이 작동하는지 확인합니다.
 
 3. 다음 단계에 따라 CIF Cloud Service 구성의 하위 구성을 만듭니다.
 
@@ -47,7 +47,7 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 저장소 보기에 연
 
    >[!TIP]
    >
-   > 상거래 카탈로그는 ID 또는 UID를 사용하여 처리할 수 있습니다. Magento 2.4.2에서 UID가 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
+   > 상거래 카탈로그는 ID 또는 UID를 사용하여 처리할 수 있습니다. Adobe Commerce 2.4.2에서 UID가 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
 
 4. AEM 사이트에 하위 구성 할당
 
@@ -59,7 +59,7 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 저장소 보기에 연
 
 ## 추가 리소스
 
-* [Magento 웹 사이트, 스토어 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [Adobe Commerce 웹 사이트, 저장소 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF 코어 구성 요소 - 다중 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [컨텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-cloud/administering/msm/overview.md)

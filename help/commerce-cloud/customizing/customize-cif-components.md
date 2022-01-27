@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: a30006b7eedbe2bc6993f47b7e8433af6df17a07
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '2578'
+source-wordcount: '2598'
 ht-degree: 2%
 
 ---
 
 # AEM CIF 핵심 구성 요소 사용자 지정 {#customize-cif-components}
 
-다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 를 사용하기 위한 참조 코드 베이스입니다 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 추가 확장을 수행합니다 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Magento의 사용자 지정 속성을 표시하는 구성 요소입니다. 또한 AEM과 Magento의 GraphQL 통합과 CIF 코어 구성 요소에서 제공하는 확장 후크 간의 GraphQL에 대해 자세히 알아봅니다.
+다음 [CIF 베니아 프로젝트](https://github.com/adobe/aem-cif-guides-venia) 는 를 사용하기 위한 참조 코드 베이스입니다 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components). 이 자습서에서는 추가 확장을 수행합니다 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 구성 요소를 사용하여 Adobe Commerce의 사용자 지정 속성을 표시할 수 있습니다. 또한 AEM과 Adobe Commerce의 GraphQL 통합과 CIF 코어 구성 요소에서 제공하는 확장 후크 간의 GraphQL에 대해 자세히 알아봅니다.
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## 전제 조건 {#prerequisites}
 
-이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Magento 인스턴스에 구성 및 연결된 AEM의 실행 인스턴스가 포함됩니다. 다음 요구 사항 및 단계를 검토하십시오 [AEM as a Cloud Service SDK를 사용하여 로컬 개발 설정](../develop.md). 자습서를 완전히 따르려면 추가 권한이 필요합니다 [제품에 대한 속성](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Magento에서 확인하십시오.
+이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 인스턴스가 포함됩니다. 다음 요구 사항 및 단계를 검토하십시오 [AEM as a Cloud Service SDK를 사용하여 로컬 개발 설정](../develop.md). 자습서를 완전히 따르려면 추가 권한이 필요합니다 [제품에 대한 속성](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerce.
 
 다음과 같은 GraphQL IDE가 필요합니다 [GraphiQL](https://github.com/graphql/graphiql) 또는 브라우저 확장을 사용하여 코드 샘플 및 자습서를 실행할 수 있습니다. 브라우저 확장을 설치하는 경우 요청 헤더를 설정할 수 있는 기능이 있는지 확인하십시오. Google Chrome에서, [Alt GraphQL 클라이언트](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) 는 작업을 수행할 수 있는 하나의 확장입니다.
 
@@ -59,11 +59,11 @@ ht-degree: 2%
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. 필요한 OSGi 구성을 추가하여 AEM 인스턴스를 Magento 인스턴스에 연결하거나 구성을 새로 만든 프로젝트에 추가합니다.
+1. 필요한 OSGi 구성을 추가하여 AEM 인스턴스를 Adobe Commerce 인스턴스에 연결하거나 구성을 새로 만든 프로젝트에 추가합니다.
 
-1. 이때 Magento 인스턴스에 연결된 스토어의 작업 버전이 있어야 합니다. 로 이동합니다 `US` > `Home` 페이지 위치: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. 이때 Adobe Commerce 인스턴스에 연결된 스토어의 작업 버전이 있어야 합니다. 로 이동합니다 `US` > `Home` 페이지 위치: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   현재 스토프런트가 Venia 테마를 사용하고 있다는 것을 알 수 있습니다. 스토어의 주 메뉴를 확장하면 연결 Magento이 작동하는지 나타내는 다양한 범주가 표시됩니다.
+   현재 스토프런트가 Venia 테마를 사용하고 있다는 것을 알 수 있습니다. 스토어의 주 메뉴를 확장하면 Adobe Commerce 연결이 작동하는 것을 나타내는 다양한 카테고리가 표시됩니다.
 
    ![Venia 테마로 구성된 Storefront](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -77,7 +77,7 @@ ht-degree: 2%
 
    ![제품 티저 삽입](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. 사이드 패널(아직 전환되지 않은 경우)을 확장하고 자산 파인더 드롭다운을 (으)로 전환합니다. **제품**. 연결된 Magento 인스턴스의 사용 가능한 제품 목록이 표시됩니다. 제품 및 **드래그+드롭** 위로 **제품 티저** 구성 요소를 생성하지 않습니다.
+3. 사이드 패널(아직 전환되지 않은 경우)을 확장하고 자산 파인더 드롭다운을 (으)로 전환합니다. **제품**. 연결된 Adobe Commerce 인스턴스의 사용 가능한 제품 목록이 표시됩니다. 제품 및 **드래그+드롭** 위로 **제품 티저** 구성 요소를 생성하지 않습니다.
 
    ![드래그 + 제품 티저 놓기](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
@@ -89,15 +89,15 @@ ht-degree: 2%
 
    ![제품 티저 - 기본 스타일](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Magento에 사용자 지정 속성 추가 {#add-custom-attribute}
+## Adobe Commerce에서 사용자 지정 속성 추가 {#add-custom-attribute}
 
-AEM에 표시되는 제품 및 제품 데이터는 Magento에 저장됩니다. 다음에 대한 새 속성을 추가합니다 **친환경** Magento UI를 사용하여 제품 속성 집합의 일부로 사용됩니다.
+AEM에 표시되는 제품 및 제품 데이터는 Adobe Commerce에 저장됩니다. 다음에 대한 새 속성을 추가합니다 **친환경** Adobe Commerce UI를 사용하여 설정한 제품 속성의 일부로 제공됩니다.
 
 >[!TIP]
 >
 > 이미 사용자 지정 항목이 있습니다. **예/아니오** 속성을 제품 속성 세트의 일부로 포함하시겠습니까? 자유롭게 사용하고 이 섹션을 건너뜁니다.
 
-1. Magento 인스턴스에 로그인합니다.
+1. Adobe Commerce 인스턴스에 로그인합니다.
 1. 다음으로 이동 **카탈로그** > **제품**.
 1. 검색 필터를 업데이트하여 **구성 가능한 제품** 이전 연습에서 티저 구성 요소에 추가될 때 사용됩니다. 제품을 편집 모드로 엽니다.
 
@@ -124,24 +124,24 @@ AEM에 표시되는 제품 및 제품 데이터는 Magento에 저장됩니다. �
 
    >[!TIP]
    >
-   > 관리에 대한 자세한 내용 [제품 속성은 Magento 사용 안내서에서 확인할 수 있습니다](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   > 관리에 대한 자세한 내용 [제품 속성은 Adobe Commerce 사용 안내서에서 확인할 수 있습니다](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. 다음으로 이동 **시스템** > **도구** > **캐시 관리**. 데이터 스키마를 업데이트했으므로 Magento의 일부 캐시 유형을 무효화해야 합니다.
+1. 다음으로 이동 **시스템** > **도구** > **캐시 관리**. 데이터 스키마가 업데이트되었으므로 Adobe Commerce의 일부 캐시 유형을 무효화해야 합니다.
 1. 옆에 있는 상자를 선택합니다. **구성** 캐시 유형을 **새로 고침**
 
    ![구성 캐시 유형 새로 고침](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
    >[!TIP]
    >
-   > 에 대한 자세한 내용 [캐시 관리는 Magento 사용 안내서에서 찾을 수 있습니다](https://docs.magento.com/user-guide/system/cache-management.html).
+   > 에 대한 자세한 내용 [캐시 관리 는 Adobe Commerce 사용 안내서에서 찾을 수 있습니다](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## GraphQL IDE를 사용하여 속성 확인 {#use-graphql-ide}
 
-AEM 코드로 이동하기 전에 다음을 탐색하는 것이 유용합니다 [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) GraphQL IDE 사용. AEM과의 Magento 통합은 주로 일련의 GraphQL 쿼리를 통해 수행됩니다. GraphQL 쿼리를 이해하고 수정하는 것은 CIF 코어 구성 요소를 확장할 수 있는 주요 방법 중 하나입니다.
+AEM 코드로 이동하기 전에 다음을 탐색하는 것이 유용합니다 [GraphQL 개요](https://devdocs.magento.com/guides/v2.4/graphql/) GraphQL IDE 사용. AEM과의 Adobe Commerce 통합은 주로 일련의 GraphQL 쿼리를 통해 수행됩니다. GraphQL 쿼리를 이해하고 수정하는 것은 CIF 코어 구성 요소를 확장할 수 있는 주요 방법 중 하나입니다.
 
 그런 다음 GraphQL IDE를 사용하여 `eco_friendly` 속성이 제품 속성 세트에 추가되었습니다. 이 자습서의 스크린샷은 [Alt GraphQL 클라이언트](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
-1. GraphQL IDE를 열고 URL을 입력합니다 `http://<magento-server>/graphql` ( IDE 또는 확장의 URL 표시줄)을 참조하십시오.
+1. GraphQL IDE를 열고 URL을 입력합니다 `http://<commerce-server>/graphql` ( IDE 또는 확장의 URL 표시줄)을 참조하십시오.
 2. 다음을 추가합니다 [제품 쿼리](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 여기서 `YOUR_SKU` 은 **SKU** 이전 연습에서 사용된 제품의 경우:
 
    ```json
@@ -182,7 +182,7 @@ AEM 코드로 이동하기 전에 다음을 탐색하는 것이 유용합니다 
 
    >[!TIP]
    >
-   > 에 대한 자세한 설명서 [Magento GraphQL은 여기에서 찾을 수 있습니다](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > 에 대한 자세한 설명서 [Adobe Commerce GraphQL은 여기에서 찾을 수 있습니다](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## 제품 티저에 대한 Sling 모델 업데이트 {#updating-sling-model-product-teaser}
 
@@ -285,7 +285,7 @@ Sling 모델은 Java로 구현되며 **코어** 생성된 프로젝트의 모듈
 
    에 추가 `extendProductQueryWith` 메서드는 추가적인 제품 속성을 모델의 나머지 부분에서 사용할 수 있도록 하는 강력한 방법입니다. 또한 실행된 쿼리 수를 최소화합니다.
 
-   위의 코드에서`addCustomSimpleField` 는 를 검색하는 데 사용됩니다 `eco_friendly` 속성을 사용합니다. Magento 스키마에 속하는 모든 사용자 지정 속성을 쿼리하는 방법을 보여 줍니다.
+   위의 코드에서`addCustomSimpleField` 는 를 검색하는 데 사용됩니다 `eco_friendly` 속성을 사용합니다. Adobe Commerce 스키마에 포함된 모든 사용자 지정 속성을 쿼리할 수 있는 방법을 보여 줍니다.
 
    >[!NOTE]
    >
@@ -330,7 +330,7 @@ Sling 모델은 Java로 구현되며 **코어** 생성된 프로젝트의 모듈
 
 ## 제품 티저의 마크업 사용자 정의 {#customize-markup-product-teaser}
 
-AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) 구성 요소가 태그를 렌더링하는 데 사용하는 것입니다. HTL(HTML 템플릿 언어)은 AEM 구성 요소가 작성된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어이며, 구성 요소를 다시 사용할 수 있습니다. 예를 들어 제품 티저를 반복해서 사용하여 서로 다른 제품을 표시할 수 있습니다.
+AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 [HTL 스크립트](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 구성 요소가 태그를 렌더링하는 데 사용하는 것입니다. HTL(HTML 템플릿 언어)은 AEM 구성 요소가 작성된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어이며, 구성 요소를 다시 사용할 수 있습니다. 예를 들어 제품 티저를 반복해서 사용하여 서로 다른 제품을 표시할 수 있습니다.
 
 이 경우 티저 위에 배너를 렌더링하여 제품이 사용자 지정 속성에 따라 &quot;친환경&quot;임을 표시하려고 합니다. 디자인 패턴 [마크업 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 구성 요소의 표준은 AEM CIF 핵심 구성 요소뿐만 아니라 모든 AEM 구성 요소에 대해서도 표준입니다.
 
