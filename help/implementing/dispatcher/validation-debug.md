@@ -3,9 +3,9 @@ title: 디스패처 도구를 사용하여 확인 및 디버깅
 description: 디스패처 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
+source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2433'
 ht-degree: 2%
 
 ---
@@ -126,6 +126,8 @@ ht-degree: 2%
 * `conf.d/available_vhosts/default.vhost`
 
 샘플 가상 호스트를 포함합니다. 가상 호스트의 경우 이 파일의 복사본을 만들고 사용자 지정한 다음 `conf.d/enabled_vhosts` 그리고 사용자 지정된 복사본에 대한 심볼 링크를 만듭니다.
+
+내부 Adobe 프로세스에 필요한 ServerAlias &quot;\*.local&quot; 및 localhost와 일치하는 가상 호스트를 항상 사용할 수 있는지 확인합니다.
 
 * `conf.d/dispatcher_vhost.conf`
 
