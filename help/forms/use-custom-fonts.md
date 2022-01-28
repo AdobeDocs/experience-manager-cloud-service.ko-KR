@@ -1,9 +1,9 @@
 ---
 title: '사용자 정의 글꼴 사용 '
 description: '사용자 정의 글꼴 사용 '
-source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Forms as a Cloud Service Communications를 사용하여 XDP 템플릿, XDP 기�
 
 다음을 수행할 수 있습니다 [글꼴 포함](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) PDF 문서로 이동합니다. 글꼴이 포함되면 PDF 문서가 모든 플랫폼에서 동일하게 표시됩니다(모양). 내장형 글꼴을 사용하여 일관된 모양과 느낌을 보장합니다. 글꼴이 포함되지 않은 경우 PDF 뷰어 클라이언트의 렌더링 설정에 따라 글꼴 렌더링이 달라집니다. 클라이언트 컴퓨터에서 글꼴을 사용할 수 있는 경우 PDF은 지정된 글꼴을 사용하고, 그렇지 않으면 PDF이 대체 글꼴로 렌더링됩니다.
 
-## Forms as a Cloud Service 환경에 사용자 정의 글꼴 추가
+## Forms as a Cloud Service 환경에 사용자 정의 글꼴 추가 {#custom-fonts-cloud-service}
 
 Cloud Service 환경에 사용자 정의 글꼴을 추가하려면 다음을 수행하십시오.
 
-1. 로컬 개발 프로젝트를 설정하고 엽니다. 원하는 IDE를 사용할 수 있습니다.
+1. 을(를) 설정하고 엽니다. [지역 개발 프로젝트](setup-local-development-environment.md). 원하는 IDE를 사용할 수 있습니다.
 1. 프로젝트의 최상위 폴더 구조에서 폴더를 만들어 사용자 정의 글꼴을 저장하고 사용자 정의 글꼴을 폴더에 추가합니다. 예를 들어, fonts/src/main/resources
    ![글꼴 폴더](assets/fonts.png)
 
@@ -71,3 +71,21 @@ Cloud Service 환경에 사용자 정의 글꼴을 추가하려면 다음을 수
    ```
 
 1. 업데이트된 코드를 확인하고 [파이프라인 실행](/help/implementing/cloud-manager/deploy-code.md) 글꼴을 Cloud Service 환경에 배포합니다.
+
+1. 명령 프롬프트를 열고 로컬 프로젝트 폴더로 이동한 다음 아래 명령을 실행합니다. 이 파일은 .jar 파일에서 글꼴을 패키지화합니다. .jar 파일을 사용하여 프로젝트의 로컬 배포에 사용할 수 있습니다.
+
+```shell
+mvn clean install
+```
+
+## 로컬 Forms Cloud Service 개발 환경에 사용자 정의 글꼴 추가 {#custom-fonts-cloud-service-sdk}
+
+1. 로컬 개발 환경을 시작합니다.
+1. 다음으로 이동 [crx-repository]\install 폴더
+1. 사용자 정의 글꼴과 관련 배포 코드가 포함된 .jar 파일을 설치 폴더에 배치합니다. .jar 파일이 없는 경우에는 [Forms as a Cloud Service 환경에 사용자 정의 글꼴 추가](#custom-fonts-cloud-service) 섹션을 클릭하여 파일을 생성합니다.
+1. 를 실행합니다. [docker 기반 SDK 환경](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >업데이트된 .jar 파일을 배포하여 로컬 배포 환경에 사용자 지정 글꼴을 추가하거나 제거할 때마다 Docker 기반 SDK 환경을 중지하고 시작합니다.

@@ -2,10 +2,10 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service 통신 일괄 처리
 description: 브랜드 중심 및 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 1%
+source-wordcount: '2250'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 1%
 
 배치 작업은 예약된 간격으로 레코드 집합에 대해 유사한 유형의 여러 문서를 생성하는 프로세스입니다. 배치 작업에는 두 가지 부품이 있습니다. 구성(정의) 및 실행.
 
-* **구성(정의)**: 배치 구성에서는 생성된 문서에 대해 설정할 다양한 자산 및 속성에 대한 정보를 저장합니다. 예를 들어, 출력 PDF 문서에 대한 다양한 속성 지정과 함께 사용할 XDP 또는 PDF 템플릿과 고객 데이터의 위치에 대한 세부 정보를 제공합니다.
+* **구성(정의)**: 배치 구성에서는 생성된 문서에 대해 설정할 다양한 자산 및 속성에 대한 정보를 저장합니다. 예를 들어, 출력 문서에 대한 다양한 속성 지정과 함께 사용할 XDP 또는 PDF 템플릿과 고객 데이터의 위치에 대한 세부 정보를 제공합니다.
 
-* **실행**: 배치 작업을 시작하려면 실행을 지정하고 배치 구성 이름으로 배치 실행 API에 전달합니다.
+* **실행**: 배치 작업을 시작하려면 배치 구성 이름을 배치 실행 API에 전달합니다.
 
 ### 배치 작업의 구성 요소 {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 **배치 데이터 저장소 구성(USC)**: 배치 데이터 구성은 배치 API에 대한 Blob 저장소의 특정 인스턴스를 구성하는 데 도움이 됩니다. 고객이 소유한 Microsoft Azure Blob 저장소의 입력 및 출력 위치를 지정할 수 있도록 해줍니다.
 
-**배치 API**: 배치 구성을 생성하고 이러한 구성에 따라 배치 실행을 실행하여 PDF 또는 XDP 템플릿을 데이터와 병합하고 PDF, PS, PCL, DPL, IPL 및 ZPL 형식으로 출력을 생성하는 배치 작업을 생성하고 실행할 수 있습니다. 통신은 생성, 읽기, 업데이트 및 삭제 작업을 위한 배치 API를 제공합니다.
+**배치 API**: PDF 또는 XDP 템플릿을 데이터와 병합하고 PDF, PS, PCL, DPL, IPL 및 ZPL 형식으로 출력을 생성하기 위해 배치 구성을 생성하고 이러한 구성에 따라 배치 실행을 실행할 수 있습니다. 통신은 구성 관리 및 배치 실행을 위한 배치 API를 제공합니다.
 
 ![데이터 병합 테이블](assets/communications-batch-structure.png)
 
@@ -125,12 +125,11 @@ Microsoft Azure 저장소에서 [컨테이너](https://docs.microsoft.com/en-us/
 
 ### 배치 만들기 {#create-a-batch}
 
-배치를 생성하려면 `GET /config` API. HTTP 요청 본문에 다음 필수 속성을 포함하십시오.
-
+배치를 생성하려면 `POST /config` API. HTTP 요청 본문에 다음 필수 속성을 포함하십시오.
 
 * **configName**: 배치의 고유 이름을 지정합니다. 예, `wknd-job`
 * **dataSourceConfigUri**: 배치 데이터 저장소 구성의 위치를 지정합니다. 구성의 상대 또는 절대 경로일 수 있습니다. 예를 들어,`/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: 출력 형식 지정: PDF 또는 인쇄 PRINT 출력 유형을 사용하는 경우 `printedOutputOptionsList` 속성을 하나 이상 지정합니다. 인쇄 옵션은 해당 렌더링 유형으로 식별되므로 현재 동일한 렌더링 유형을 사용하는 여러 인쇄 옵션이 허용되지 않습니다. 지원되는 형식은 PS, PCL, DPL, IPL 및 ZPL입니다.
+* **outputTypes**: 출력 형식 지정: PDF 및 인쇄 PRINT 출력 유형을 사용하는 경우 `printedOutputOptionsList` 속성을 하나 이상 지정합니다. 인쇄 옵션은 해당 렌더링 유형으로 식별되므로 현재 동일한 렌더링 유형을 사용하는 여러 인쇄 옵션이 허용되지 않습니다. 지원되는 형식은 PS, PCL, DPL, IPL 및 ZPL입니다.
 
 * **템플릿**: 템플릿의 절대 또는 상대 경로를 지정합니다. 예, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -138,7 +137,7 @@ Microsoft Azure 저장소에서 [컨테이너](https://docs.microsoft.com/en-us/
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-배치를 생성한 후에는 `GET /config /[configName]/execution/[execution-identifier]` 배치 상세내역을 조회하려면
+다음을 사용할 수 있습니다 `GET /config /[configName]` 배치 구성의 상세내역을 조회하려면
 
 ### 일괄 처리 실행 {#run-a-batch}
 
@@ -150,14 +149,14 @@ Microsoft Azure 저장소에서 [컨테이너](https://docs.microsoft.com/en-us/
 
 ### 배치 상태 확인 {#status-of-a-batch}
 
-배치의 상태를 검색하려면 `GET /config /[configName]/execution/[execution-identifier]`. 실행 식별자는 배치 실행 요청에 대한 HTTP 응답 헤더에 포함됩니다.  예를 들어, 다음 이미지는 배치 작업에 대한 실행 식별자를 표시합니다.
+배치의 상태를 검색하려면 `GET /config /[configName]/execution/[execution-identifier]`. 실행 식별자는 배치 실행 요청에 대한 HTTP 응답 헤더에 포함됩니다.
 
 상태 요청의 응답에는 상태 섹션이 포함됩니다. 일괄 처리 작업의 상태, 파이프라인(이미 읽기 및 처리 중)에 이미 있는 레코드 수 및 각 outputType/renderType(진행 중, 성공 및 실패한 항목 수)의 상태에 대한 세부 정보를 제공합니다. 또한 상태는 배치 작업의 시작 및 종료 시간과 오류에 대한 정보와 함께 포함합니다. 종료 시간은 배치 실행이 실제로 완료될 때까지 -1입니다.
 
 >[!NOTE]
 >
 >* 여러 PRINT 형식을 요청할 경우 상태에는 여러 항목이 포함됩니다. 예를 들면 PRINT/ZPL, PRINT/IPL입니다.
->* 일괄 처리 작업이 모든 레코드를 동시에 읽는 것은 아니지만, 작업이 계속 읽기와 레코드 수를 증가시킵니다. 따라서 상태는 각 실행에서 다른 레코드 수를 반환합니다.
+>* 일괄 처리 작업이 모든 레코드를 동시에 읽는 것은 아니지만, 작업이 계속 읽기와 레코드 수를 증가시킵니다. 따라서 상태는 모든 레코드가 읽힐 때까지 -1을 반환합니다.
 
 
 ### 생성된 문서 보기 {#view-generated-documents}
@@ -224,8 +223,6 @@ XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로
 API 참조 설명서는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로 제공됩니다. 을 다운로드할 수 있습니다 [배치 API](assets/batch-api.yaml) 파일을 업로드하고 Postman에 업로드하여 API의 기능을 확인합니다.
 
 ## 알려진 문제 {#known-issues}
-
-* 데이터 xml 파일에 XML 선언 헤더가 없는지 확인합니다. 예, `<?xml version="1.0" encoding="UTF-8"?>`
 
 * PRINT를 지정하면 인쇄 옵션 목록에서 특정 렌더링 유형을 한 번만 지정할 수 있습니다. 예를 들어 PCL 렌더링 유형을 지정하는 두 개의 인쇄 옵션이 있을 수 없습니다.
 
