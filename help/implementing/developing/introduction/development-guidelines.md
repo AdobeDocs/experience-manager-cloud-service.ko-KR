@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2288'
 ht-degree: 2%
 
 ---
@@ -105,15 +105,34 @@ AEM as a Cloud Service은 타사 고객 코드에 대한 Touch UI만 지원합�
 
 **디버그 로그 수준 활성화**
 
-기본 로그 수준은 INFO, 즉 DEBUG 메시지는 기록되지 않습니다.
-DEBUG 로그 레벨을 활성화하려면
+기본 로그 수준은 INFO, 즉 DEBUG 메시지는 기록되지 않습니다. DEBUG 로그 레벨을 활성화하려면 다음 속성을 디버그 모드로 업데이트하십시오.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-디버그할 속성입니다. 로그를 많이 생성하므로 DEBUG 로그 수준에서 로그를 필요한 기간보다 오래 두지 마십시오.
+예를 들어, `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` 다음 값으로 채우십시오.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+이 경우 많은 항목이 생성되므로 DEBUG 로그 수준에서 로그를 필요한 기간보다 오래 두지 마십시오.
+
+항상 로그인하는 것이 좋을 경우 실행 모드 기반 OSGi 구성 타깃팅을 사용하여 서로 다른 AEM 환경에 대해 개별 로그 수준을 설정할 수 있습니다 `DEBUG` 개발 중. 예:
+
+| 환경 | 실행 모드별 OSGi 구성 위치 | `org.apache.sling.commons.log.level` 속성 값 | | - | - | - | | 개발 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 디버그 | | 단계 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 경고 | | 프로덕션 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 오류 |
+
 디버그 파일의 한 줄은 일반적으로 DEBUG로 시작하며 로그 수준, 설치 관리자 작업 및 로그 메시지를 제공합니다. 예:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 로그 수준은 다음과 같습니다.
 
