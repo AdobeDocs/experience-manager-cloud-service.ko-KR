@@ -1,20 +1,20 @@
 ---
 title: AEM 6.5 Forms 및 AEM 6.4 Forms에서 로 마이그레이션하는 방법 [!DNL AEM Forms] as a Cloud Service 환경?
-description: 다음에서 마이그레이션 [!DNL AEM Forms] On-Premise environment to [!DNL AEM Forms] as a Cloud Service 환경
+description: 다음에서 마이그레이션 [!DNL AEM Forms] On-Premise 환경 [!DNL AEM Forms] as a Cloud Service 환경
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 2%
+source-wordcount: '1219'
+ht-degree: 3%
 
 ---
 
-# 다음으로 마이그레이션 [!DNL AEM Forms] as a Cloud Service  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
+# [!DNL AEM Forms]as a Cloud Service로 마이그레이션  {#Harden-your-AEM-Forms-as-a-Cloud-Service-environment}
 
 에서 응용 Forms, 테마, 템플릿 및 클라우드 구성을 마이그레이션할 수 있습니다 <!-- AEM 6.3 Forms--> OSGi의 AEM 6.4 Forms 및 OSGi의 AEM 6.5 Forms으로 [!DNL AEM] as a Cloud Service. 이러한 자산을 마이그레이션하기 전에 마이그레이션 유틸리티를 사용하여 이전 버전에서 사용된 형식을 에서 사용하는 형식으로 변환합니다 [!DNL AEM] as a Cloud Service. 마이그레이션 유틸리티를 실행하면 다음 자산이 업데이트됩니다.
 
@@ -30,6 +30,10 @@ ht-degree: 2%
 * (AEM 6.3 Forms 또는 이전 버전 환경이 AEM 6.4 Forms 또는 AEM 6.5 Forms으로 업그레이드된 경우에만 해당) AEM 6.3 Forms 또는 이전 버전에서 사용할 수 있는 기본 템플릿 및 테마를 기반으로 하는 적응형 Forms은 [!DNL]에서 지원되지 않습니다 [!DNL AEM Forms]] as a Cloud Service 로
 
 ## 전제 조건 {#prerequisites}
+
+* [Forms 활성화 - 디지털 등록](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) Forms Cloud Service 프로그램 및 [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+
+![시험 실행 결과](assets/enable-add-on.png)
 
 * Cloud Service 환경에서 마이그레이션 유틸리티는 사용자 매핑 도구 및 컨텐츠 전송 도구와 함께 작동합니다. 마이그레이션 유틸리티는 다음을 수행합니다 [!DNL AEM Forms] Cloud Service 및 컨텐츠 전송 도구와 호환되는 자산은 사용자의 자산에서 컨텐츠를 마이그레이션합니다 [!DNL AEM Forms] 환경 [!DNL AEM] as a Cloud Service 환경. 마이그레이션 유틸리티를 사용하기 전에 [AEM으로 이동 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). 이 프로세스에는 다음의 두 가지 도구가 있습니다.
    * [사용자 매핑 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): 사용자 매핑 도구는 사용자를 해당 Adobe IMS 사용자 계정에 매핑하도록 도와줍니다.
