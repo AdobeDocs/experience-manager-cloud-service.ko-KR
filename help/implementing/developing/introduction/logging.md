@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 로깅
 description: 중앙 로깅 서비스에 대한 글로벌 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 위해 AEM as a Cloud Service에 대한 로깅을 사용하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
+source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 2%
+source-wordcount: '2316'
+ht-degree: 3%
 
 ---
 
@@ -150,7 +150,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 
 다른 LogManager OSGi 구성 속성을 변경하면 AEM as a Cloud Service에서 가용성 문제가 발생할 수 있습니다.
 
-다음은 세 가지 AEM as a Cloud Service 환경 유형에 대한 권장 로깅 구성(자리 표시자 Java 패키지 `com.example` 사용)의 예입니다.
+다음은 권장되는 로깅 구성(의 자리 표시자 Java 패키지 사용)의 예입니다 `com.example`)을 클릭하여 세 가지 AEM as a Cloud Service 환경 유형을 확인하십시오.
 
 ### 개발 {#development}
 
@@ -262,7 +262,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | 프로토콜 | HTTP/1.1 |
 | HTTP 응답 상태 | 200 |
-| HTTP 요청 시간(밀리초) | 1141년 |
+| 응답 본문의 크기(바이트) | 1141년 |
 | 레퍼러 | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | 사용자 에이전트 | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
@@ -286,7 +286,7 @@ AEM as a Cloud Service은 게시에서 Apache 웹 서버 및 디스패처 레이
 
 Apache HTTP Web Server 액세스 로그는 게시 계층의 웹 서버/Dispatcher에 도달하는 각 HTTP 요청에 대한 문을 제공합니다. 업스트림 CDN에서 제공되는 요청은 이러한 로그에 반영되지 않습니다.
 
-[공식 apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#accesslog)에서 오류 로그 형식에 대한 정보를 참조하십시오.
+에서 오류 로그 형식에 대한 정보를 참조하십시오. [공식 apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **로그 출력 예**
 
@@ -355,7 +355,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 Apache HTTP Web Server 오류 로그는 게시 계층의 웹 서버/Dispatcher에 있는 각 오류에 대한 구문을 제공합니다.
 
-[공식 apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#errorlog)에서 오류 로그 형식에 대한 정보를 참조하십시오.
+에서 오류 로그 형식에 대한 정보를 참조하십시오. [공식 apache 설명서](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **로그 출력 예**
 
@@ -371,7 +371,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>날짜 및 시간</td>
-<td>2020년 7월 17일부터:16:42.608913</td>
+<td>2002년 7월 17일:16:42.608913 2020</td>
 </tr>
 <tr>
 <td>이벤트 수준</td>
@@ -394,11 +394,11 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 ### Apache HTTPD 웹 서버 오류 로그 구성 {#configuring-the-apache-httpd-web-server-error-log}
 
-mod_rewrite 로그 수준은 `conf.d/variables/global.var` 파일의 REWRITE_LOG_LEVEL 변수에 의해 정의됩니다.
+mod_rewrite 로그 수준은 파일의 REWRITE_LOG_LEVEL 변수에 의해 정의됩니다 `conf.d/variables/global.var`.
 
 Error, Warn, Info, Debug 및 Trace1 - Trace8로 설정할 수 있으며 기본값은 Warn입니다. RewriteRules를 디버깅하려면 로그 수준을 Trace2로 높이는 것이 좋습니다.
 
-자세한 내용은 [mod_rewrite 모듈 설명서](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging)를 참조하십시오.
+자세한 내용은 [mod_rewrite 모듈 설명서](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) 추가 정보.
 
 환경당 로그 수준을 설정하려면 아래에 설명된 대로 global.var 파일에서 적절한 조건부 분기를 사용하십시오.
 
@@ -472,13 +472,13 @@ Define REWRITE_LOG_LEVEL Debug
 
 ### Dispatcher 오류 로그 구성 {#configuring-the-dispatcher-error-log}
 
-디스패처 로그 수준은 `conf.d/variables/global.var` 파일의 변수 DISP_LOG_LEVEL에 의해 정의됩니다.
+디스패처 로그 수준은 파일의 변수 DISP_LOG_LEVEL에 의해 정의됩니다 `conf.d/variables/global.var`.
 
 Error, Warn, Info, Debug 및 Trace1로 설정할 수 있으며 기본값은 Warn입니다.
 
 Dispatcher 로깅은 몇 가지 다른 로깅 세부 수준을 지원하는 동안 아래에 설명된 수준을 사용하는 것이 좋습니다.
 
-환경당 로그 수준을 설정하려면 아래 설명된 대로 `global.var` 파일에서 적절한 조건부 분기를 사용하십시오.
+환경별 로그 수준을 설정하려면 `global.var` 아래에 설명된 대로 파일을 파일로 파일로 내보낼 수 있습니다.
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -499,26 +499,26 @@ Define DISP_LOG_LEVEL Debug
 
 ### 클라우드 환경 {#cloud-environments}
 
-클라우드 서비스용 AEM as a Cloud Service 로그는 Cloud Manager 인터페이스를 통해 다운로드하거나 Adobe I/O 명령줄 인터페이스를 사용하여 명령줄에서 로그를 추적하여 액세스할 수 있습니다. 자세한 내용은 [Cloud Manager 로깅 설명서](/help/implementing/cloud-manager/manage-logs.md)를 참조하십시오.
+클라우드 서비스용 AEM as a Cloud Service 로그는 Cloud Manager 인터페이스를 통해 다운로드하거나 Adobe I/O 명령줄 인터페이스를 사용하여 명령줄에서 로그를 추적하여 액세스할 수 있습니다. 자세한 내용은 [Cloud Manager 로깅 설명서](/help/implementing/cloud-manager/manage-logs.md).
 
 ### 로컬 SDK {#local-sdk}
 
 AEM as a Cloud Service SDK는 로컬 개발을 지원하는 로그 파일을 제공합니다.
 
-AEM 로그는 다음 로그를 볼 수 있는 폴더 `crx-quickstart/logs`에 있습니다.
+AEM 로그는 폴더에 있습니다 `crx-quickstart/logs`: 다음 로그를 볼 수 있습니다.
 
 * AEM Java 로그: `error.log`
 * AEM HTTP 요청 로그: `request.log`
 * AEM HTTP 액세스 로그: `access.log`
 
-디스패처를 포함한 Apache 레이어 로그는 Dispatcher를 포함하는 Docker 컨테이너에 있습니다. Dispatcher를 시작하는 방법에 대한 자세한 내용은 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)를 참조하십시오.
+디스패처를 포함한 Apache 레이어 로그는 Dispatcher를 포함하는 Docker 컨테이너에 있습니다. 자세한 내용은 [Dispatcher 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) dispatcher를 시작하는 방법에 대한 자세한 내용을 참조하십시오.
 
 로그를 검색하려면 다음을 수행하십시오.
 
-1. 명령줄에서 `docker ps`을 입력하여 컨테이너를 나열합니다
-1. 컨테이너에 로그인하려면 &quot;`docker exec -it <container> /bin/sh`&quot;를 입력합니다. 여기서 `<container>`은 이전 단계의 디스패처 컨테이너 ID입니다
-1. `/mnt/var/www/html` 아래의 캐시 루트로 이동합니다.
-1. 로그는 `/etc/httpd/logs` 아래에 있습니다.
+1. 명령줄에서 `docker ps` 컨테이너를 나열하려면
+1. 컨테이너에 로그인하려면 &quot;`docker exec -it <container> /bin/sh`&quot;, 여기서 `<container>` 는 이전 단계의 디스패처 컨테이너 id입니다
+1. 아래의 캐시 루트로 이동합니다. `/mnt/var/www/html`
+1. 로그들은 아래에 있습니다 `/etc/httpd/logs`
 1. Inspect 로그: XYZ 폴더에서 액세스할 수 있으며 여기서 다음 로그를 볼 수 있습니다.
    * Apache HTTPD 웹 서버 액세스 로그 - `httpd_access.log`
    * Apache HTTPD 웹 서버 오류 로그 - `httpd_error.log`
@@ -552,7 +552,7 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 * Splunk HEC 끝점 주소
 * Splunk 색인
 * Splunk 포트
-* Splunk HEC 토큰. 자세한 내용은 [이 페이지](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)를 참조하십시오.
+* Splunk HEC 토큰. 자세한 내용은 [이 페이지](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) 추가 정보.
 
 위의 속성은 각 관련 프로그램/환경 유형 조합에 대해 지정해야 합니다.  예를 들어 고객이 개발, 스테이징 및 프로덕션 환경을 원하는 경우 아래에 표시된 대로 3개의 정보 세트를 제공해야 합니다.
 
@@ -564,7 +564,7 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 
 초기 요청 후에 생성된 새 개발 환경이 Splunk 전달을 위해 만들어지지 않은 경우 추가적인 요청이 수행되어야 합니다.
 
-또한 개발 환경이 요청한 경우, 요청이나 샌드박스 환경에 없는 다른 개발 환경에 Splunk 전달이 활성화되어 있고 Splunk 인덱스를 공유할 수 있습니다. 고객은 `aem_env_id` 필드를 사용하여 이러한 환경을 구분할 수 있습니다.
+또한 개발 환경이 요청한 경우, 요청이나 샌드박스 환경에 없는 다른 개발 환경에 Splunk 전달이 활성화되어 있고 Splunk 인덱스를 공유할 수 있습니다. 고객은 를 사용할 수 있습니다 `aem_env_id` 이러한 환경을 구분하는 필드입니다.
 
 아래에는 고객 지원 요청 샘플이 있습니다.
 
@@ -589,7 +589,7 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 * Splunk 포트: 443년
 * Splunk HEC 토큰: ABC123
 
-각 환경에 대해 동일한 Splunk 인덱스를 사용하기에 충분할 수 있습니다. 이 경우 dev, stage 및 prod 값을 기준으로 `aem_env_type` 필드를 구분하여 사용할 수 있습니다. 여러 개발 환경이 있는 경우 `aem_env_id` 필드도 사용할 수 있습니다. 일부 조직에서는 연결된 인덱스가 축소된 Splunk 사용자 집합에 대한 액세스를 제한하는 경우 프로덕션 환경의 로그에 대해 별도의 인덱스를 선택할 수 있습니다.
+각 환경에 대해 동일한 Splunk 인덱스를 사용하기에 충분할 수 있으며, 이 경우 모두 `aem_env_type` 필드는 dev, stage 및 prod 값에 따라 구별하는 데 사용할 수 있습니다. 여러 개발 환경이 있는 경우 `aem_env_id` 필드를 사용할 수도 있습니다. 일부 조직에서는 연결된 인덱스가 축소된 Splunk 사용자 집합에 대한 액세스를 제한하는 경우 프로덕션 환경의 로그에 대해 별도의 인덱스를 선택할 수 있습니다.
 
 다음은 로그 항목의 예입니다.
 
