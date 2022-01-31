@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service 통신 일괄 처리
 description: 브랜드 중심 및 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -168,55 +168,6 @@ Microsoft Azure 저장소에서 [컨테이너](https://docs.microsoft.com/en-us/
 >[!NOTE]
 >
 >일괄 처리를 처리하는 데 입력 레코드 수와 템플릿의 복잡성에 따라 시간이 좀 걸릴 수 있습니다. 대상 폴더에서 출력 파일을 확인하기 전에 몇 분 정도 기다리십시오.
-
-## 고려 사항  {#considerations-for-communications-apis}
-
-### 양식 데이터 {#form-data}
-
-Communications API는 일반적으로 디자이너에서 만들어지는 양식 디자인과 XML 양식 데이터를 모두 입력으로 허용합니다. 문서를 데이터로 채우려면 채울 모든 양식 필드의 XML 양식 데이터에 XML 요소가 있어야 합니다. XML 요소 이름은 필드 이름과 일치해야 합니다. XML 요소는 양식 필드에 해당하지 않거나 XML 요소 이름이 필드 이름과 일치하지 않는 경우에는 무시됩니다. XML 요소가 표시되는 순서와 일치하지 않아도 됩니다. 중요한 요소는 XML 요소가 해당 값과 함께 지정된다는 것입니다.
-
-다음 예제 대출 신청 양식을 고려하십시오.
-
-![대출 신청 양식](assets/loanFormData.png)
-
-데이터를 이 양식 디자인에 병합하려면 양식에 해당하는 XML 데이터 소스를 만듭니다. 다음 XML은 예제 모기지 응용 프로그램 양식에 해당하는 XML 데이터 원본을 나타냅니다.
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### 지원되는 문서 유형 {#supported-document-types}
-
-Communications API의 렌더링 기능에 대한 전체 액세스 권한을 얻으려면 XDP 파일을 입력으로 사용하는 것이 좋습니다. 경우에 따라 PDF 파일을 사용할 수 있습니다. 그러나 PDF 파일을 입력으로 사용하면 다음과 같은 제한이 있습니다.
-
-XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로 렌더링할 수 없습니다. Communications API는 XFA 스트림(즉 Designer에서 만든 양식)으로 PDF 문서를 레이저 및 레이블 형식으로 렌더링할 수 있습니다. PDF 문서에 서명, 인증 또는 사용 권한(AEM Forms Reader 확장 서비스를 사용하여 적용)이 있는 경우 이러한 인쇄 형식으로 렌더링할 수 없습니다.
 
 ## API 참조 설명서
 
