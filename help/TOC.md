@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
+source-git-commit: 634644b55f9fbe7d0abe4038da8b8ebb37cd7892
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3480'
 ht-degree: 99%
 
 ---
@@ -465,6 +465,7 @@ ht-degree: 99%
       + [통신 API](/help/forms/aem-forms-cloud-service-communications.md)
       + [통신 API 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [PDF 문서에서 맞춤형 글꼴 사용하기](/help/forms/use-custom-fonts.md)
+      + [알려진 문제, 우수 사례 및 FAQ](/help/forms/communications-known-issues-limitations.md)
    + [ [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [자주 묻는 질문](/help/forms/faq.md)
    + [알려진 문제](/help/forms/known-issues.md)

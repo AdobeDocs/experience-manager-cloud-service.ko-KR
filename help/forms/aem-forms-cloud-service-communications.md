@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - 통신
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2250'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 Communications API를 사용하면 XDP 템플릿, XDP 기반 PDF 문서 및 Acrobat Forms(AcroForm)를 XML 데이터와 결합하여 다양한 형식으로 인쇄 문서를 생성하고 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
 
-- XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
+- XML 데이터로 템플릿 파일을 채워 문서를 생성합니다.
 
 - 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 양식을 생성합니다.
 
-- XFA 양식 PDF에서 인쇄 PDF을 생성합니다.
+- XFA 양식 PDF에서 인쇄 PDF를 생성합니다.
 
 - 여러 데이터 세트를 소스 템플릿에 병합하여 PDF, PostScript, PCL 및 ZPL 문서를 일괄적으로 생성합니다.
 
@@ -267,24 +267,8 @@ Communications API를 사용하는 동안 수정된 XCI 파일을 전달할 수 
 | config/present/pdf/tagged | 출력 PDF 문서에 태그 포함을 제어합니다. PDF 컨텍스트에서 태그는 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. 태그는 접근성 보조 및 서식 변경을 지원합니다. 예를 들어, 페이지 번호에 아티팩트로 태그를 지정하여 화면 판독기에서 텍스트 중간에 이를 발음하지 않도록 할 수 있습니다. 태그는 문서를 더 유용하게 만들 수 있지만 문서 크기와 문서 작성 시간을 늘립니다. |
 | config/present/pdf/version | 생성할 PDF 문서의 버전을 지정합니다. |
 
-### 알려진 문제
-
-- 템플릿 및 XCI 구성 파일의 크기가 16KB를 초과하는지 확인합니다.
-
-- 데이터 xml 파일에 XML 선언 헤더가 없는지 확인합니다. 예, `<?xml version="1.0" encoding="UTF-8"?>`
-
-- 일괄 처리 구성의 경우 OutputType(PDF, PRINT) 및 RenderType(PostScript, PCL, IPL, ZPL 등)의 값 조합 인스턴스 하나만 가 허용됩니다.
-
-- 일괄 처리를 실행하는 동안 일괄 처리 구성에 사용된 데이터 소스 USC 구성/Azure 클라우드 구성을 수정하지 마십시오. 실행 후에도 업데이트가 필요한 경우 기존 배치 구성에서 사용되는 구성을 업데이트하는 대신 구성 사본을 만듭니다.
-
-### 우수 사례
-
-- Adobe은 AEM Cloud Service에서 사용하는 클라우드 영역에서 데이터 파일 blob 컨테이너 저장소를 호스팅하도록 권장합니다.
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-

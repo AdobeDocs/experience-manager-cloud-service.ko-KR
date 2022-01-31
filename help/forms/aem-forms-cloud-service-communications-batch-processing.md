@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service 통신 일괄 처리
 description: 브랜드 중심 및 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2250'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -221,44 +221,3 @@ XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로
 ## API 참조 설명서
 
 API 참조 설명서는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로 제공됩니다. 을 다운로드할 수 있습니다 [배치 API](assets/batch-api.yaml) 파일을 업로드하고 Postman에 업로드하여 API의 기능을 확인합니다.
-
-## 알려진 문제 {#known-issues}
-
-* PRINT를 지정하면 인쇄 옵션 목록에서 특정 렌더링 유형을 한 번만 지정할 수 있습니다. 예를 들어 PCL 렌더링 유형을 지정하는 두 개의 인쇄 옵션이 있을 수 없습니다.
-
-* 일괄 처리를 실행하는 동안 일괄 처리 구성에 사용된 데이터 소스 USC 구성/Azure 클라우드 구성을 수정하지 마십시오. 실행 후에도 업데이트가 필요한 경우 기존 배치 구성에서 사용되는 구성을 업데이트하는 대신 구성 사본을 만듭니다.
-
-## 우수 사례 {#best-practices}
-
-* Adobe은 Experience Manager Cloud Service에서 사용하는 클라우드 영역에서 데이터 파일 blob 컨테이너 저장소를 호스팅할 것을 권장합니다.
-
-## 자주 묻는 질문 {#faq}
-
-**감시 폴더나 다른 스토리지 메커니즘을 사용하여 입출력 작업을 저장할 수 있습니까?**
-
-현재 Microsoft Azure 저장 공간을 사용하여 입력 데이터와 생성된 문서를 저장할 수 있습니다. Microsoft Azure 저장소는 [데이터 이동 작업 자동화](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
-
-**Microsoft Azure 저장 공간 계정이 Experience Manager Forms Cloud Service 라이선스에 포함되어 있습니까?**
-
-Microsoft Azure 저장 공간 계정은 Experience Manager Forms Cloud Service 라이선스와 독립적입니다.
-
-**Communication API는 Experience Manager Forms Cloud Service 서버에 데이터를 저장합니까?**
-
-입력 및 출력 데이터는 Microsoft Azure 저장소에만 저장됩니다.
-
-**Communication API는 Experience Manager Forms Cloud Service에만 사용할 수 있습니까? 온-프레미스 환경에서 유사한 기능을 사용할 수 있습니까?**
-
-AEM Forms 출력 서비스를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL 및 ZPL 형식으로 문서를 생성할 수 있습니다.
-
-온-프레미스 환경과 비교하여 Cloud Service은 자동 확장 및 비용 효율성의 추가적인 이점을 제공합니다.
-
-<!--**Where is data processed?**
-
-**Who has access to data?**
-
-**Is data encrypted?**
-
-**Where is data hosted?** -->
-
-**여러 배치 작업을 동시에 실행할 수 있습니까?**
-예, 여러 배치 작업을 함께 실행할 수 있습니다. 충돌을 방지하려면 모든 작업에 항상 서로 다른 소스 및 대상 폴더를 사용하십시오.

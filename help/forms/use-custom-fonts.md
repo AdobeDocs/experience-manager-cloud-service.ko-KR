@@ -1,9 +1,9 @@
 ---
 title: '사용자 정의 글꼴 사용 '
 description: '사용자 정의 글꼴 사용 '
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: 0bfd75e517e03110d58575b21551d1d553fa36bf
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ Forms as a Cloud Service Communications를 사용하여 XDP 템플릿, XDP 기�
 Cloud Service 환경에 사용자 정의 글꼴을 추가하려면 다음을 수행하십시오.
 
 1. 을(를) 설정하고 엽니다. [지역 개발 프로젝트](setup-local-development-environment.md). 원하는 IDE를 사용할 수 있습니다.
-1. 프로젝트의 최상위 폴더 구조에서 폴더를 만들어 사용자 정의 글꼴을 저장하고 사용자 정의 글꼴을 폴더에 추가합니다. 예를 들어, fonts/src/main/resources
+1. 프로젝트의 최상위 폴더 구조에서 폴더(모듈)를 만들어 사용자 정의 글꼴을 저장하고 사용자 정의 글꼴을 폴더에 추가합니다. 예를 들어, fonts/src/main/resources
    ![글꼴 폴더](assets/fonts.png)
 
-1. 개발 프로젝트의 최상위 pom.xml 파일을 엽니다.
+1. 개발 프로젝트의 fonts 모듈의 pom.xml 파일을 엽니다.
 1. 추가 `<Font-Archive-Version>` .pom 파일에 대한 매니페스트 항목을 설정하고 버전 값을 1로 설정합니다.
 
    ```xml
@@ -72,11 +72,11 @@ Cloud Service 환경에 사용자 정의 글꼴을 추가하려면 다음을 수
 
 1. 업데이트된 코드를 확인하고 [파이프라인 실행](/help/implementing/cloud-manager/deploy-code.md) 글꼴을 Cloud Service 환경에 배포합니다.
 
-1. 명령 프롬프트를 열고 로컬 프로젝트 폴더로 이동한 다음 아래 명령을 실행합니다. 이 파일은 .jar 파일에서 글꼴을 패키지화합니다. .jar 파일을 사용하여 프로젝트의 로컬 배포에 사용할 수 있습니다.
+1. (선택 사항) 명령 프롬프트를 열고 로컬 프로젝트 폴더로 이동한 다음 아래 명령을 실행합니다. 이 명령은 관련 정보와 함께 .jar 파일의 글꼴을 패키지화합니다. .jar 파일을 사용하여 Forms Cloud Service 로컬 개발 환경에 사용자 정의 글꼴을 추가할 수 있습니다.
 
-```shell
-mvn clean install
-```
+   ```shell
+   mvn clean install
+   ```
 
 ## 로컬 Forms Cloud Service 개발 환경에 사용자 정의 글꼴 추가 {#custom-fonts-cloud-service-sdk}
 
@@ -88,4 +88,4 @@ mvn clean install
 
    >[!NOTE]
    >
-   >업데이트된 .jar 파일을 배포하여 로컬 배포 환경에 사용자 지정 글꼴을 추가하거나 제거할 때마다 Docker 기반 SDK 환경을 중지하고 시작합니다.
+   >업데이트된 사용자 지정 글꼴 .jar 파일을 로컬 배포 환경에 배포할 때마다 Docker 기반 SDK 환경을 다시 시작합니다.
