@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 634644b55f9fbe7d0abe4038da8b8ebb37cd7892
+source-git-commit: 80483d812d8f8ee6a942d21a87a281a98feddbdd
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3485'
 ht-degree: 99%
 
 ---
@@ -461,9 +461,9 @@ ht-degree: 99%
       + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
       + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
    + 통신 사용 {#using-communications}
-      + [소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [통신 API](/help/forms/aem-forms-cloud-service-communications.md)
-      + [통신 API 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [소개 통신 API로](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [통신 API - 동기 처리](/help/forms/aem-forms-cloud-service-communications.md)
+      + [통신 API - 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [PDF 문서에서 맞춤형 글꼴 사용하기](/help/forms/use-custom-fonts.md)
       + [알려진 문제, 우수 사례 및 FAQ](/help/forms/communications-known-issues-limitations.md)
    + [ [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
