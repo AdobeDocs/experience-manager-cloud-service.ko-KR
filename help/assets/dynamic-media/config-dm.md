@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
-source-wordcount: '3514'
-ht-degree: 3%
+source-wordcount: '3420'
+ht-degree: 4%
 
 ---
 
@@ -90,7 +90,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | 속성 | 설명 |
    |---|---|
-   | 회사 | The name of the Dynamic Media account. 다양한 하위 브랜드, 사업부 또는 스테이징/프로덕션 환경에 대한 여러 Dynamic Media 계정이 있을 수 있습니다. |
+   | 회사 | Dynamic Media 계정의 이름입니다. 다양한 하위 브랜드, 사업부 또는 스테이징/프로덕션 환경에 대한 여러 Dynamic Media 계정이 있을 수 있습니다. |
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
    | 자산 게시 | 다음 세 가지 옵션 중에서 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**- 자산이 업로드되면 시스템이 자산을 수집하여 URL/포함 기능을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다.<br>**[!UICONTROL 활성화 시]** - URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**- 자산이 보안 미리 보기용으로만 자동 게시됩니다. 공용 도메인에서 전달을 위해 DMS7에 게시하지 않고 as a Cloud Service에 명시적으로 게시할 수도 있습니다. 나중에 이 옵션은 자산을 as a Cloud Service으로 게시하고 자산을 Dynamic Media에 게시하며 상호 배타적으로 게시하려고 합니다. 즉, 자산을 DMS7에 게시하여 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있습니다. 또는 미리 보기를 위해 Experience Manager as a Cloud Service에만 자산을 게시할 수 있습니다. 동일한 자산이 공용 도메인에 전달되도록 DMS7에 게시되지 않습니다. |
    | 보안 미리 보기 서버 | 보안 표현물 미리 보기 서버의 URL 경로를 지정할 수 있도록 해줍니다. 즉, 표현물이 생성되면 Experience Manager as a Cloud Service이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리는 Experience Manager as a Cloud Service 인스턴스로 다시 전송되지 않음).<br>회사의 서버나 특수 서버를 사용하기 위해 특별한 계획이 없는 한 Adobe은 이 설정을 지정된 대로 유지하는 것을 권장합니다. |
@@ -115,14 +115,15 @@ To migrate any custom viewer presets and configurations that you have created fr
    >이 받은 편지함 알림은 구성이 성공했는지 여부를 알려줍니다.
    > 자세한 내용은 [새 Dynamic Media 구성 문제 해결](#troubleshoot-dm-config) 및 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md) 추가 정보.
 
-1. 게시되기 전에 Dynamic Media 컨텐츠를 안전하게 미리 보려면 Experience Manager as a Cloud Service에서 기본적으로 토큰 기반 유효성 검사를 사용합니다. 그러나 IP를 더 &quot;&quot;하여 사용자에게 안전하게 미리 보기 컨텐츠에 대한 액세스 권한을 제공할 수도 있습니다허용 목록에 추가하다. 이 작업을 설정하려면 다음을 수행하십시오. <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. Dynamic Media 컨텐츠가 게시되기 전에 안전하게 미리 보려면 Experience Manager as a Cloud Service에서 토큰 기반 유효성 검사를 사용하므로 Experience Manager 작성자는 기본적으로 Dynamic Media 컨텐츠를 미리 봅니다. 그러나 다음을 수행할 수 있습니다 *허용 목록에 추가하다* 사용자에게 컨텐츠를 안전하게 미리 볼 수 있는 액세스 권한을 제공하는 추가 IP. Experience Manager as a Cloud Service에서 이 작업을 설정하려면 다음을 참조하십시오 [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * 를 엽니다. [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * 페이지의 오른쪽 위 모서리 근처에 있는 탐색 막대에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**.
-   * 이미지 서버 게시 페이지의 **[!UICONTROL 게시 컨텍스트]** 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**.
-   * 클라이언트 주소 필터에 대해 다음을 선택합니다. **[!UICONTROL 추가]**.
-   * 주소를 활성화(켜짐)하려면 확인란을 선택한 다음 Experience Manager 작성자 인스턴스(Dispatcher IP 아님)의 IP 주소를 입력합니다.
-   * **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+<!--
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+    * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
+    * For the Client Address Filter, select **[!UICONTROL Add]**.
+    * To enable (turn on) the address, select the check box, then enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
+    * Select **[!UICONTROL Save]**. -->
 
 이제 기본 구성을 완료했습니다. Dynamic Media을 사용할 준비가 되었습니다.
 
@@ -239,8 +240,8 @@ Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할
    |---|---|
    | CMYK 기본 색상 공간 | 기본 CMYK 색상 프로파일의 이름입니다. |
    | 회색 음영 기본 색상 공간 | 기본 회색 색상 프로필의 이름입니다. |
-   | RGB Default Color Space | Name of the default RGB color profile. |
-   | 색상 변환 렌더링 의도 | Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default. |
+   | RGB 기본 색상 공간 | 기본 RGB 색상 프로필의 이름입니다. |
+   | 색상 변환 렌더링 의도 | 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL 지각]**, **[!UICONTROL 상대 콜론]**, **[!UICONTROL 채도]**, **[!UICONTROL 절대 동량체]**. Adobe 권장 사항 **[!UICONTROL 상대적]** 을 기본값으로 사용합니다. |
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -263,7 +264,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated PostScript® 파일(.EPS)을 래스터화합니다.
 * [비디오 프로필](/help/assets/dynamic-media/video-profiles.md) 및 [이미지 프로필](/help/assets/dynamic-media/image-profiles.md) 는 각각 비디오와 이미지 처리를 정의하는 데 사용할 수 있습니다.
 
-See [Upload assets](/help/assets/add-assets.md).
+자세한 내용은 [자산 업로드](/help/assets/add-assets.md).
 
 **지원되는 형식에 대한 MIME 유형을 편집하려면:**
 
@@ -324,7 +325,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
    ![도구 > 일반 > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
-1. In the left rail, navigate to the following:
+1. 왼쪽 레일에서 다음 위치로 이동합니다.
 
    `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
@@ -332,14 +333,14 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
    ![CRXDE Lite에서 DWG 파일 편집](assets/crxdelite_cqdoc-14627.png)
 
-1. With the MIME type `image_vnd.dwg` still selected, from the **[!UICONTROL Properties]** tab, in the **[!UICONTROL enabled]** row, under the **[!UICONTROL Value]** column header, double-tap the value. 다음 **[!UICONTROL 값]** 드롭다운 목록이 열립니다.
-1. Type `false` in the field (or select **[!UICONTROL false]** from the drop-down list).
+1. MIME 유형 `image_vnd.dwg` 여전히 선택됨, **[!UICONTROL 속성]** 탭, **[!UICONTROL 활성화됨]** 행, 아래 **[!UICONTROL 값]** 열 헤더에서 값을 두 번 누릅니다. 다음 **[!UICONTROL 값]** 드롭다운 목록이 열립니다.
+1. 유형 `false` 필드에서 (또는 를) 선택합니다. **[!UICONTROL false]** 드롭다운 목록에서).
 
    ![CRXDE Lite에서 MIME 유형 편집](assets/2019-08-02_16-60-30.png)
 
-1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. CRXDE Lite 페이지의 왼쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 모두 저장]**.
 
-### (Optional) Tune the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (선택 사항) Dynamic Media의 성능 조정 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Dynamic Media을 유지하려면 <!--(with `dynamicmedia_scene7` run mode)--> 원활하게 실행되는 Adobe은 다음과 같은 동기화 성능/확장성 미세 조정 팁을 권장합니다.
 
@@ -421,18 +422,18 @@ Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 
 
 Dynamic Media Classic(Scene7) 업로드 연결 설정은 Experience Manager 자산을 Dynamic Media Classic 서버에 동기화합니다.
 
-**To update the maximum upload connections to the Dynamic Media Classic (Scene7) server:**
+**Dynamic Media Classic(Scene7) 서버에 대한 최대 업로드 연결을 업데이트하려면:**
 
 1. 다음으로 이동 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
-1. In the **[!UICONTROL Number of connections]** field, or the **[!UICONTROL Active job timeout]** field, or both, change the number as desired.
+1. 에서 **[!UICONTROL 연결 수]** 필드 또는 **[!UICONTROL 활성 작업 시간 초과]** 필드 또는 둘 다 원하는 대로 숫자를 변경합니다.
 
    다음 **[!UICONTROL 연결 수]** 설정은 Dynamic Media 업로드에 Experience Manager이 허용되는 최대 HTTP 연결 수를 제어합니다. 일반적으로 10개의 연결의 사전 정의된 값으로 충분합니다.
 
    다음 **[!UICONTROL 활성 작업 시간 초과]** 설정 은 업로드된 Dynamic Media 자산이 게재 서버에 게시될 대기 시간을 결정합니다. 이 값은 기본적으로 2100초 또는 35분입니다.
 
-   For most use cases, the setting of 2100 is sufficient.
+   대부분의 사용 사례에서 2100으로 설정하면 충분합니다.
 
-   ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
+   ![Adobe Scene7 업로드 서비스](assets/chlimage_1-2.jpeg)
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 

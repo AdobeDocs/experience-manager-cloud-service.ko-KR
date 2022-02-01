@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 3%
@@ -43,11 +43,11 @@ Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 
 1. 이미지 서버 페이지에서 이미지 서버 - 게시 컨텍스트를 설정한 다음 5개의 탭을 사용하여 기본 게시 설정을 구성합니다.
 
    * [이미지 서버](#image-server)
-   * [보안](#security-tab) 탭
-   * [카탈로그 관리](#catalog-management-tab) 탭
-   * [요청 속성](#request-attributes-tab) 탭
-   * [공통 축소판 속성](#common-thumbnail-attributes-tab) 탭
-   * [색상 관리 속성](#color-management-attributes-tab) 탭
+      * [보안](#security-tab) 탭
+      * [카탈로그 관리](#catalog-management-tab) 탭
+      * [요청 속성](#request-attributes-tab) 탭
+      * [공통 축소판 속성](#common-thumbnail-attributes-tab) 탭
+      * [색상 관리 속성](#color-management-attributes-tab) 탭
 
    ![Dynamic Media 게시 설정 페이지](/help/assets/assets-dm/dm-publish-setup.png)
    *Dynamic Media 게시 설정 페이지,**[!UICONTROL 요청 속성]**탭 선택.*<br><br>
