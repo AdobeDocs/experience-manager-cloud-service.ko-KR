@@ -2,7 +2,7 @@
 title: AEM Forms as a Cloud Service - 통신
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms as a Cloud Service Communications API 사용 - 동기화 처리 {#frequently-asked-questions}
+# AEM Forms as a Cloud Service Communications API 사용 - 동기 처리 {#frequently-asked-questions}
 
 **통신 기능은 베타에 있습니다.**
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 동기 작업 사용 {#batch-operations}
 
-동기적 작업은 문서를 선형 방식으로 생성하는 프로세스입니다. 이 서비스는 두 가지 유형의 인증을 지원합니다.
+동기 작업은 선형 방식으로 문서를 생성하는 프로세스입니다. 이 서비스는 두 가지 유형의 인증을 지원합니다.
 
 * **기본 인증**: 기본 인증은 HTTP 프로토콜에 빌드된 간단한 인증 체계입니다. 클라이언트는 Basic 다음에 공백 및 base64로 인코딩된 문자열 username:password를 포함하는 Authorization 헤더를 사용하여 HTTP 요청을 보냅니다. 예를 들어, 클라이언트가 Basic을 전송하는 관리자/관리자로 승인합니다 [base64로 인코딩된 문자열 사용자 이름]: [base64로 인코딩된 문자열 암호].
 
