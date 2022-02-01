@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: 0194c7edebfc49fd0cf98779100424e3c5272981
+source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-디지털 자산은 하나 이상의 제품 SKU와 연결할 수 있습니다. 연결된 경우 SKU를 기반으로 한 주요 단어 검색으로 디지털 자산을 검색할 수 있습니다. 또한 자산은 관련 제품이 포함된 페이지를 편집할 때 관련 컨텐츠로도 자동으로 표시되므로 다음 디지털 경험을 더 쉽게 만들 수 있습니다
+디지털 자산은 하나 이상의 제품 SKU와 연결할 수 있습니다. 연결된 경우 SKU를 기반으로 한 주요 단어 검색으로 디지털 자산을 검색할 수 있습니다. 또한 자산은 관련 제품이 포함된 페이지를 편집할 때 관련 컨텐츠로도 자동으로 표시되므로 다음 디지털 경험을 더 쉽게 만들 수 있습니다.
 
 ## 경험 조각
 
