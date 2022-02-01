@@ -2,9 +2,9 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dbc0ef92b0b61945ee195971aacab3bc8781b01c
+source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1026'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 요청 시 문서를 생성하거나 배치 작업을 생성하여 정의된 간격으로 여러 문서를 생성할 수 있습니다. 통신 API는 다음을 제공합니다.
 
-* 온디맨드 및 배치 문서 생성 기능을 간소화합니다.
+* 온디맨드 및 배치 문서 생성 기능이 간소화되었습니다.
 
-* 기존 시스템과 쉽게 통합할 수 있는 HTTP API입니다. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다. 문서 생성을 효율적으로 합니다.
+* 외부 시스템과의 쉬운 통합을 위한 HTTP API. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다. 문서 생성을 효율적으로 합니다.
 
 * 데이터에 대한 보안 액세스. Communications API는 고객이 지정한 데이터 저장소에서만 데이터에 연결 및 액세스하고 로컬 데이터 복사본을 만들지 않으므로 Communications를 매우 안전하게 만듭니다.
 
@@ -31,7 +31,7 @@ Communications API를 사용하여 신용 카드 명세서를 만들 수 있습�
 
 커뮤니케이션 활용 [PDF 및 XFA 템플릿](#supported-document-types) with [XML 데이터](#form-data) 정의된 간격으로 배치 작업을 사용하여 단일 요청 문서 또는 여러 문서를 생성합니다.
 
-통신 API는 템플릿(XFA 또는 PDF)을 고객 데이터([XML 데이터](#form-data)) PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성할 수 있습니다.
+통신 API는 템플릿(XFA 또는 PDF)을 고객 데이터( )와 결합하는 데 도움이 됩니다[XML 데이터](#form-data)) PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성할 수 있습니다.
 
 일반적으로 [디자이너](use-forms-designer.md) 및 를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션이 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템으로 전송하여 아카이빙할 수 있습니다. 일반적인 기본 제공 및 사용자 지정 워크플로우는 다음과 같습니다.
 
@@ -43,9 +43,9 @@ Communications API를 사용하여 신용 카드 명세서를 만들 수 있습�
 
 통신은 주문형 및 배치 문서 생성을 위한 HTTP API를 제공합니다.
 
-* **[동기 API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
+* **[동기 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
 
-* **[배치 API(비동기 API)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
+* **[배치 API(비동기 API)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
 
 통신 API의 주요 사용 중 일부는 다음과 같습니다.
 
@@ -100,7 +100,6 @@ Communications API를 사용하여 대화형 PDF 문서(예: 양식)를 비대�
 대화형 PDF 문서에는 양식을 구성하는 다양한 요소가 포함되어 있습니다. 이러한 요소에는 필드(데이터를 허용하거나 표시하기 위한), 단추(이벤트를 트리거하기 위한) 및 스크립트(특정 작업을 수행하는 명령)가 포함될 수 있습니다. 버튼을 클릭하면 필드의 상태를 변경하는 이벤트가 트리거될 수 있습니다. 예를 들어, 성별 옵션을 선택하면 필드의 색상 또는 양식의 모양이 변경될 수 있습니다. 양식 상태가 변경되는 수동 이벤트의 예입니다.
 
 그러한 대화형 PDF 문서를 Communications API를 사용하여 병합하면 양식의 상태가 유지되지 않습니다. 양식을 평면화한 후에도 양식의 상태가 유지되도록 하려면 부울 값을 설정합니다 _keepFormState_ 를 입력하여 양식의 상태를 저장하고 유지할 수 있습니다.
-
 
 ## 온보딩
 

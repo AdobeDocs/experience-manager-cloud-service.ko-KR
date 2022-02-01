@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - 통신
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
+source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -31,17 +31,17 @@ ht-degree: 0%
 
 * **기본 인증**: 기본 인증은 HTTP 프로토콜에 빌드된 간단한 인증 체계입니다. 클라이언트는 Basic 다음에 공백 및 base64로 인코딩된 문자열 username:password를 포함하는 Authorization 헤더를 사용하여 HTTP 요청을 보냅니다. 예를 들어, 클라이언트가 Basic을 전송하는 관리자/관리자로 승인합니다 [base64로 인코딩된 문자열 사용자 이름]: [base64로 인코딩된 문자열 암호].
 
-* **토큰 기반 인증:** 토큰 기반 인증은 액세스 토큰(베어러 인증 토큰)을 사용하여 AEM as a Cloud Service에 요청을 합니다. AEM Forms as a Cloud Service은 액세스 토큰을 안전하게 검색하기 위한 API를 제공합니다. 토큰을 검색하고 사용하여 요청을 인증하려면:
+* **토큰 기반 인증:** 토큰 기반 인증은 액세스 토큰(베어러 인증 토큰)을 사용하여 as a Cloud Service으로 Experience Manager을 요청합니다. AEM Forms as a Cloud Service은 액세스 토큰을 안전하게 검색하기 위한 API를 제공합니다. 토큰을 검색하고 사용하여 요청을 인증하려면:
 
-   1. [개발자 콘솔에서 AEM as a Cloud Service 자격 증명을 검색합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [환경에 AEM as a Cloud Service 자격 증명 설치](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Application Server, Web Server 또는 기타 비 AEM 서버)가 클라우드 서비스에 요청을 전송(호출)하도록 구성되어 있습니다.
+   1. [개발자 콘솔에서 Experience Manager as a Cloud Service 자격 증명을 검색합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [환경에 Experience Manager as a Cloud Service 자격 증명 설치](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Application Server, Web Server 또는 기타 비 AEM 서버)가 클라우드 서비스에 요청을 전송(호출)하도록 구성되어 있습니다.
    1. [JWT 토큰을 생성하고 이 토큰을 Adobe IMS API와 교환하여 액세스 토큰을 받았습니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. 액세스 토큰을 사용하여 AEM API를 Bearer 인증 토큰으로 실행합니다.
-   1. [AEM 환경에서 기술 계정 사용자에 대한 적절한 권한 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. 액세스 토큰을 사용하여 Experience Manager API를 Bearer 인증 토큰으로 실행합니다.
+   1. [Experience Manager 환경에서 기술 계정 사용자에 대한 적절한 권한 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
    >[!NOTE]
    >
-   >Adobe은 프로덕션 환경에서 토큰 기반 인증을 사용할 것을 권장합니다.
+   >Adobe은 프로덕션 환경에서 토큰 기반 인증을 사용하는 것을 권장합니다.
 
 ### 전제 조건 {#pre-requisites}
 
