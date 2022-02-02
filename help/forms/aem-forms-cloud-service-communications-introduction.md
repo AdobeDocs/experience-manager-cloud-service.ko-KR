@@ -2,39 +2,43 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
+source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1404'
 ht-degree: 1%
 
 ---
 
 # AEM Forms as a Cloud Service 통신 사용 {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service Communications 문서 조작 API는 베타 버전이며 실제 릴리스 전에 크게 변경될 수 있습니다.**
+**AEM Forms as a Cloud Service - 통신 문서 조작 API는 베타 버전이며 실제 릴리스 전에 크게 변경될 수 있습니다.**
 
-커뮤니케이션 기능을 사용하면 비즈니스 서신, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 또는 환영 키트와 같은 브랜드 승인, 개인화 및 표준화된 문서를 만들 수 있습니다. 이 기능은 문서를 생성하고 조작하는 API를 제공합니다. 필요에 따라 문서를 생성 또는 조작하거나 배치 작업을 만들어 정의된 간격으로 여러 문서를 생성할 수 있습니다. 통신 API는 다음을 제공합니다.
+커뮤니케이션 기능을 사용하면 비즈니스 서신, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 또는 환영 키트와 같은 브랜드 승인, 개인화 및 표준화된 문서를 만들 수 있습니다.
+
+이 기능은 문서를 생성하고 조작하는 API를 제공합니다. 필요에 따라 문서를 생성 또는 조작하거나 배치 작업을 만들어 정의된 간격으로 여러 문서를 생성할 수 있습니다. 통신 API는 다음을 제공합니다.
 
 * 온디맨드 및 배치 문서 생성 기능이 간소화되었습니다.
 
-* PDF 문서를 결합, 재정렬 및 검증합니다.
+* PDF 문서를 필요에 따라 결합, 재정렬 및 검증할 수 있습니다.
 
 * 외부 시스템과의 쉬운 통합을 위한 HTTP API. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다. 문서 생성을 효율적으로 합니다.
 
 * 데이터에 대한 보안 액세스. Communications API는 고객이 지정한 데이터 저장소에서만 데이터에 연결 및 액세스하고 로컬 데이터 복사본을 만들지 않으므로 Communications를 매우 안전하게 만듭니다.
 
 ![신용 카드 명세서 샘플](assets/statement.png)
-Communications API를 사용하여 신용 카드 명세서를 만들 수 있습니다. 이 샘플 문은 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 데이터를 구분합니다.
+Communications API를 사용하여 신용 카드 명세서를 만들 수 있습니다. 이 샘플 문은 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 별도의 데이터를 사용합니다.
 
 ## 문서 생성
 
-통신 문서 생성 API는 템플릿(XFA 또는 PDF)을 고객 데이터([XML 데이터](#form-data)) PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성할 수 있습니다. 이러한 API는 [PDF 및 XFA 템플릿](#supported-document-types) with [XML 데이터](communications-known-issues-limitations.md#form-data) 정의된 간격으로 배치 작업을 사용하여 단일 요청 문서 또는 여러 문서를 생성합니다.
+템플릿(XFA 또는 PDF)을 고객 데이터( )와 결합하는 데 도움이 되는 통신 문서 생성 API[XML 데이터](#form-data)) PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성할 수 있습니다. 이러한 API는 [PDF 및 XFA 템플릿](#supported-document-types) with [XML 데이터](communications-known-issues-limitations.md#form-data) 배치 작업을 사용하여 단일 요청 문서 또는 여러 문서를 생성할 수 있습니다.
 
 일반적으로 [디자이너](use-forms-designer.md) 및 를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션이 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템으로 전송하여 아카이빙할 수 있습니다. 일반적인 기본 제공 및 사용자 지정 워크플로우는 다음과 같습니다.
 
 ![통신 문서 생성 워크플로우](assets/communicaions-workflow.png)
 
-사용 사례에 따라 웹 사이트나 스토리지 서버를 통해 이러한 문서를 다운로드할 수 있도록 할 수도 있습니다. 문서 생성 API의 몇 가지 예는 다음과 같습니다.
+사용 사례에 따라 웹 사이트나 스토리지 서버를 통해 이러한 문서를 다운로드할 수 있도록 할 수도 있습니다.
+
+문서 생성 API의 몇 가지 예는 다음과 같습니다.
 
 ### PDF 문서 만들기 {#create-pdf-documents}
 
@@ -96,11 +100,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ## 문서 조작
 
-통신 문서 조작 API는 PDF 문서를 결합, 재정렬 및 확인하는 데 도움이 됩니다. 일반적으로 DDX를 만들어 문서 작성 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. DDX 문서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
+통신 문서 조작 API를 사용하여 PDF 문서를 결합, 재정렬 및 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. DDX 문서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
 
 ### PDF 문서 조합
 
-문서 작성 API를 사용하여 두 개 이상의 PDF 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. 탐색 또는 보안 강화를 지원하는 PDF 문서에 기능을 적용할 수도 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
+문서 작성 API를 사용하여 두 개 이상의 PDF 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
 
 * 간단한 PDF 문서 조합
 * PDF Portfolio 만들기
@@ -113,7 +117,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### PDF 문서 분해
 
-문서 작성 API를 사용하여 PDF 문서를 분해할 수 있습니다. 이 서비스는 소스 문서에서 페이지를 추출하거나 책갈피에 따라 소스 문서를 나눌 수 있습니다. 일반적으로 이 작업은 PDF 문서가 원래 문 컬렉션과 같은 여러 개별 문서에서 만들어진 경우에 유용합니다.
+문서 작성 API를 사용하여 PDF 문서를 분해할 수 있습니다. API는 소스 문서에서 페이지를 추출하거나 책갈피를 기반으로 소스 문서를 나눌 수 있습니다. 일반적으로 이 작업은 PDF 문서가 원래 문 컬렉션과 같은 여러 개별 문서에서 만들어진 경우에 유용합니다.
 
 * 소스 문서에서 페이지 추출
 * 책갈피를 기준으로 소스 문서 나누기
@@ -121,9 +125,9 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 ![책갈피를 기반으로 하는 소스 문서를 여러 문서로 분할](assets/as_intro_pdfsfrombookmarks.png)
 그림: 책갈피를 기반으로 하는 소스 문서를 여러 문서로 분할
 
-### PDF/A 호환 문서로 변환 및 검증
+### PDF/A 호환 문서로 변환 및 유효성 검사
 
-문서 작성 API를 사용하여 PDF 문서를 PDF/A 호환 버전으로 변환하고 PDF 문서가 PDF/A 호환 상태인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
+문서 작성 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 규격 문서인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
 
 
 ## 통신 API 유형
@@ -136,9 +140,9 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ## 온보딩
 
-통신은 Forms as a Cloud Service 사용자를 위한 독립형 및 추가 기능 모듈로 제공됩니다. Adobe 영업 팀이나 Adobe 담당자에게 문의하여 액세스를 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 API를 사용할 수 있도록 조직의 AEM Forms 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다.
+통신 기능은 Forms as a Cloud Service 사용자를 위한 독립형 및 추가 기능 모듈로 제공됩니다. Adobe 영업 팀이나 Adobe 담당자에게 문의하여 액세스를 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 조직의 Forms as a Cloud Service 개발자(사용자)에게 API를 사용할 수 있는 액세스 권한을 부여할 수 있습니다.
 
-온보딩 후 Forms as a Cloud Service 환경에 대한 통신을 활성화하려면 다음을 수행하십시오.
+온보딩 후 Forms as a Cloud Service 환경에 대한 통신 기능을 활성화하려면
 
 1. Cloud Manager에 로그인하고 AEM Forms as a Cloud Service 인스턴스를 엽니다.
 
@@ -152,9 +156,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 1. 클릭 **[!UICONTROL 업데이트]**.
 
-1. 빌드 파이프라인을 실행합니다.
-
-빌드 파이프라인이 성공하면 환경에 대한 Communications API가 활성화됩니다.
+1. 빌드 파이프라인을 실행합니다. 빌드 파이프라인이 성공하면 환경에 대해 Communications API가 활성화됩니다.
 
 
 <!--
