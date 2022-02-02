@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 API에 관련된 릴리스 정보입니다.'
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
+source-git-commit: 8e205c92b1d3ca14988b7ae9187cd708428774a9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 87%
 
 <table>
 <thead>
+<table style="table-layout:auto">
   <tr>
     <th>패키지/클래스</th>
     <th>댓글</th>
@@ -157,7 +158,7 @@ ht-degree: 87%
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http 화이트보드는 더 이상 지원되지 않습니다. 코드를 OSGi Http 화이트보드로 마이그레이션하십시오.</td>
+    <td>Apache Felix Http Whiteboard는 더 이상 지원되지 않습니다. 코드를 OSGi Http Whiteboard로 마이그레이션하십시오.</td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
