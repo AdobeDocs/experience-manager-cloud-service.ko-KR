@@ -2,23 +2,22 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
+source-git-commit: fcde70f424d8e798469563397ba091547163bd77
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
 
 # AEM Forms as a Cloud Service 통신 사용 {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service Communications 기능은 베타에 있습니다.**
+**AEM Forms as a Cloud Service Communications 문서 조작 API는 베타 버전이며 실제 릴리스 전에 크게 변경될 수 있습니다.**
 
-커뮤니케이션 기능을 통해 비즈니스 서신, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 또는 환영 키트와 같은 브랜드 중심, 개인화된 표준화된 문서를 작성할 수 있습니다.
-
-
-요청 시 문서를 생성하거나 배치 작업을 생성하여 정의된 간격으로 여러 문서를 생성할 수 있습니다. 통신 API는 다음을 제공합니다.
+커뮤니케이션 기능을 사용하면 비즈니스 서신, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 또는 환영 키트와 같은 브랜드 승인, 개인화 및 표준화된 문서를 만들 수 있습니다. 이 기능은 문서를 생성하고 조작하는 API를 제공합니다. 필요에 따라 문서를 생성 또는 조작하거나 배치 작업을 만들어 정의된 간격으로 여러 문서를 생성할 수 있습니다. 통신 API는 다음을 제공합니다.
 
 * 온디맨드 및 배치 문서 생성 기능이 간소화되었습니다.
+
+* PDF 및 XDP 문서를 결합, 재정렬 및 증가시키고 PDF 문서에 대한 정보를 얻습니다
 
 * 외부 시스템과의 쉬운 통합을 위한 HTTP API. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다. 문서 생성을 효율적으로 합니다.
 
@@ -51,13 +50,13 @@ Communications API를 사용하여 신용 카드 명세서를 만들 수 있습�
 
 ### PDF 문서 만들기 {#create-pdf-documents}
 
-Communication API를 사용하여 양식 디자인 및 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력은 비대화형 PDF 문서입니다. 즉, 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다. 기본 워크플로우는 XML 양식 데이터를 양식 디자인과 병합하여 PDF 문서를 만드는 것입니다. 다음 그림은 양식 디자인과 XML 양식 데이터를 병합하여 PDF 문서를 생성하는 방법을 보여 줍니다.
+문서 생성 API를 사용하여 양식 디자인 및 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력은 비대화형 PDF 문서입니다. 즉, 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다. 기본 워크플로우는 XML 양식 데이터를 양식 디자인과 병합하여 PDF 문서를 만드는 것입니다. 다음 그림은 양식 디자인과 XML 양식 데이터를 병합하여 PDF 문서를 생성하는 방법을 보여 줍니다.
 
 ![PDF 문서 만들기](assets/outPutPDF_popup.png)
 
 ### PostScript(PS), 프린터 명령 언어(PCL), Zebra Printing Language(ZPL) 문서 작성 {#create-PS-PCL-ZPL-documents}
 
-Communications API를 사용하여 XDP 양식 디자인 또는 PDF 문서를 기반으로 하는 PS(PostScript), PCL(프린터 명령 언어) 및 ZPL(Zebra Printing Language) 문서를 만들 수 있습니다. 이러한 API는 양식 디자인을 양식 데이터와 병합하여 문서를 생성하는 데 도움이 됩니다. 문서를 파일에 저장하고 사용자 정의 프로세스를 개발하여 프린터로 보낼 수 있습니다.
+문서 생성 API를 사용하여 XDP 양식 디자인 또는 PDF 문서를 기반으로 하는 PS(PostScript), PCL(Printer Command Language) 및 ZPL(Zebra Printing Language) 문서를 만들 수 있습니다. 이러한 API는 양식 디자인을 양식 데이터와 병합하여 문서를 생성하는 데 도움이 됩니다. 문서를 파일에 저장하고 사용자 정의 프로세스를 개발하여 프린터로 보낼 수 있습니다.
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -71,7 +70,7 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### 배치 데이터를 처리하여 여러 문서 작성 {#processing-batch-data-to-create-multiple-documents}
 
-XML 배치 데이터 소스 내에서 각 레코드에 대해 별도의 문서를 만들 수 있습니다. 대량 및 비동기 모드로 문서를 생성할 수 있습니다. 변환에 대한 다양한 매개 변수를 구성한 다음 배치 프로세스를 시작할 수 있습니다. <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+문서 생성 API를 사용하여 XML 배치 데이터 소스 내의 각 레코드에 대해 별도의 문서를 만들 수 있습니다. 대량 및 비동기 모드로 문서를 생성할 수 있습니다. 변환에 대한 다양한 매개 변수를 구성한 다음 배치 프로세스를 시작할 수 있습니다. <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -85,7 +84,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### 대화형 PDF 문서 병합 {#flatten-interactive-pdf-documents}
 
-Communications API를 사용하여 대화형 PDF 문서(예: 양식)를 비대화형 PDF 문서로 변환할 수 있습니다. 대화형 PDF 문서를 사용하면 PDF 문서 필드에 있는 데이터를 입력하거나 수정할 수 있습니다. 대화형 PDF 문서를 비대화형 PDF 문서로 변환하는 프로세스를 병합이라고 합니다. PDF 문서를 평면화하면 사용자는 문서 필드에 있는 데이터를 수정할 수 없습니다. PDF 문서를 평면화하는 한 가지 이유는 데이터를 수정할 수 없도록 하기 위한 것입니다.
+문서 생성 API를 사용하여 대화형 PDF 문서(예: 양식)를 비대화형 PDF 문서로 변환할 수 있습니다. 대화형 PDF 문서를 사용하면 PDF 문서 필드에 있는 데이터를 입력하거나 수정할 수 있습니다. 대화형 PDF 문서를 비대화형 PDF 문서로 변환하는 프로세스를 병합이라고 합니다. PDF 문서를 평면화하면 사용자는 문서 필드에 있는 데이터를 수정할 수 없습니다. PDF 문서를 평면화하는 한 가지 이유는 데이터를 수정할 수 없도록 하기 위한 것입니다.
 
 다음 유형의 PDF 문서를 평면화할 수 있습니다.
 
@@ -101,11 +100,30 @@ Communications API를 사용하여 대화형 PDF 문서(예: 양식)를 비대�
 
 그러한 대화형 PDF 문서를 Communications API를 사용하여 병합하면 양식의 상태가 유지되지 않습니다. 양식을 평면화한 후에도 양식의 상태가 유지되도록 하려면 부울 값을 설정합니다 _keepFormState_ 를 입력하여 양식의 상태를 저장하고 유지할 수 있습니다.
 
+### PDF 문서 조합
+
+문서 작성 API를 사용하여 두 개 이상의 PDF 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. 탐색 또는 보안 강화를 지원하는 PDF 문서에 기능을 적용할 수도 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
+
+* 간단한 PDF 문서 조합
+* PDF Portfolio 만들기
+* 암호화된 문서 조합
+* Bates 번호를 사용하여 문서 조합
+* 문서 평면화 및 조합
+
+### PDF 문서 분해
+
+문서 작성 API를 사용하여 PDF 문서를 분해할 수 있습니다. 이 서비스는 소스 문서에서 페이지를 추출하거나 책갈피에 따라 소스 문서를 나눌 수 있습니다. 일반적으로 이 작업은 PDF 문서가 원래 문 컬렉션과 같은 여러 개별 문서에서 만들어진 경우에 유용합니다.
+
+* 소스 문서에서 페이지 추출
+* 책갈피를 기준으로 소스 문서 나누기
+
+### PDF/A 호환 문서로 변환 및 검증
+
+문서 작성 API를 사용하여 PDF 문서를 PDF/A 호환 버전으로 변환하고 PDF 문서가 PDF/A 호환 상태인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
+
 ## 온보딩
 
-통신은 Forms as a Cloud Service 사용자를 위한 독립형 및 추가 기능 모듈로 제공됩니다. Adobe 영업 팀이나 Adobe 담당자에게 문의하여 액세스를 요청할 수 있습니다.
-
-Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 API를 사용할 수 있도록 조직의 AEM Forms 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다.
+통신은 Forms as a Cloud Service 사용자를 위한 독립형 및 추가 기능 모듈로 제공됩니다. Adobe 영업 팀이나 Adobe 담당자에게 문의하여 액세스를 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 API를 사용할 수 있도록 조직의 AEM Forms 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다.
 
 온보딩 후 Forms as a Cloud Service 환경에 대한 통신을 활성화하려면 다음을 수행하십시오.
 
