@@ -2,9 +2,9 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fcde70f424d8e798469563397ba091547163bd77
+source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1410'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 * 온디맨드 및 배치 문서 생성 기능이 간소화되었습니다.
 
-* PDF 및 XDP 문서를 결합, 재정렬 및 증가시키고 PDF 문서에 대한 정보를 얻습니다
+* PDF 문서를 결합, 재정렬 및 검증합니다.
 
 * 외부 시스템과의 쉬운 통합을 위한 HTTP API. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다. 문서 생성을 효율적으로 합니다.
 
@@ -26,33 +26,22 @@ ht-degree: 1%
 ![신용 카드 명세서 샘플](assets/statement.png)
 Communications API를 사용하여 신용 카드 명세서를 만들 수 있습니다. 이 샘플 문은 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 데이터를 구분합니다.
 
-## 어떻게 작동합니까?
+## 문서 생성
 
-커뮤니케이션 활용 [PDF 및 XFA 템플릿](#supported-document-types) with [XML 데이터](#form-data) 정의된 간격으로 배치 작업을 사용하여 단일 요청 문서 또는 여러 문서를 생성합니다.
-
-통신 API는 템플릿(XFA 또는 PDF)을 고객 데이터( )와 결합하는 데 도움이 됩니다[XML 데이터](#form-data)) PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성할 수 있습니다.
+통신 문서 생성 API는 템플릿(XFA 또는 PDF)을 고객 데이터([XML 데이터](#form-data)) PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성할 수 있습니다. 이러한 API는 [PDF 및 XFA 템플릿](#supported-document-types) with [XML 데이터](communications-known-issues-limitations.md#form-data) 정의된 간격으로 배치 작업을 사용하여 단일 요청 문서 또는 여러 문서를 생성합니다.
 
 일반적으로 [디자이너](use-forms-designer.md) 및 를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션이 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템으로 전송하여 아카이빙할 수 있습니다. 일반적인 기본 제공 및 사용자 지정 워크플로우는 다음과 같습니다.
 
-![통신 워크플로우](assets/communicaions-workflow.png)
+![통신 문서 생성 워크플로우](assets/communicaions-workflow.png)
 
-사용 사례에 따라 웹 사이트나 스토리지 서버를 통해 이러한 문서를 다운로드할 수 있도록 할 수도 있습니다.
-
-## 통신 API
-
-통신은 주문형 및 배치 문서 생성을 위한 HTTP API를 제공합니다.
-
-* **[동기 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
-
-* **[배치 API(비동기 API)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
-
-통신 API의 주요 사용 중 일부는 다음과 같습니다.
+사용 사례에 따라 웹 사이트나 스토리지 서버를 통해 이러한 문서를 다운로드할 수 있도록 할 수도 있습니다. 문서 생성 API의 몇 가지 예는 다음과 같습니다.
 
 ### PDF 문서 만들기 {#create-pdf-documents}
 
 문서 생성 API를 사용하여 양식 디자인 및 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력은 비대화형 PDF 문서입니다. 즉, 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다. 기본 워크플로우는 XML 양식 데이터를 양식 디자인과 병합하여 PDF 문서를 만드는 것입니다. 다음 그림은 양식 디자인과 XML 양식 데이터를 병합하여 PDF 문서를 생성하는 방법을 보여 줍니다.
 
 ![PDF 문서 만들기](assets/outPutPDF_popup.png)
+그림: PDF 문서를 만드는 일반적인 워크플로우
 
 ### PostScript(PS), 프린터 명령 언어(PCL), Zebra Printing Language(ZPL) 문서 작성 {#create-PS-PCL-ZPL-documents}
 
@@ -70,7 +59,11 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### 배치 데이터를 처리하여 여러 문서 작성 {#processing-batch-data-to-create-multiple-documents}
 
-문서 생성 API를 사용하여 XML 배치 데이터 소스 내의 각 레코드에 대해 별도의 문서를 만들 수 있습니다. 대량 및 비동기 모드로 문서를 생성할 수 있습니다. 변환에 대한 다양한 매개 변수를 구성한 다음 배치 프로세스를 시작할 수 있습니다. <!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+문서 생성 API를 사용하여 XML 배치 데이터 소스 내의 각 레코드에 대해 별도의 문서를 만들 수 있습니다. 대량 및 비동기 모드로 문서를 생성할 수 있습니다. 변환에 대한 다양한 매개 변수를 구성한 다음 배치 프로세스를 시작할 수 있습니다.
+
+![PDF 문서 만들기](assets/ou_OutputBatchMany_popup.png)
+
+<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -100,6 +93,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 그러한 대화형 PDF 문서를 Communications API를 사용하여 병합하면 양식의 상태가 유지되지 않습니다. 양식을 평면화한 후에도 양식의 상태가 유지되도록 하려면 부울 값을 설정합니다 _keepFormState_ 를 입력하여 양식의 상태를 저장하고 유지할 수 있습니다.
 
+
+## 문서 조작
+
+통신 문서 조작 API는 PDF 문서를 결합, 재정렬 및 확인하는 데 도움이 됩니다. 일반적으로 DDX를 만들어 문서 작성 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. DDX 문서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
+
 ### PDF 문서 조합
 
 문서 작성 API를 사용하여 두 개 이상의 PDF 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. 탐색 또는 보안 강화를 지원하는 PDF 문서에 기능을 적용할 수도 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
@@ -110,6 +108,9 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 * Bates 번호를 사용하여 문서 조합
 * 문서 평면화 및 조합
 
+![여러 PDF 문서에서 간단한 PDF 문서 조립](assets/as_document_assembly.png)
+그림: 여러 PDF 문서에서 간단한 PDF 문서 조립
+
 ### PDF 문서 분해
 
 문서 작성 API를 사용하여 PDF 문서를 분해할 수 있습니다. 이 서비스는 소스 문서에서 페이지를 추출하거나 책갈피에 따라 소스 문서를 나눌 수 있습니다. 일반적으로 이 작업은 PDF 문서가 원래 문 컬렉션과 같은 여러 개별 문서에서 만들어진 경우에 유용합니다.
@@ -117,9 +118,21 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 * 소스 문서에서 페이지 추출
 * 책갈피를 기준으로 소스 문서 나누기
 
+![책갈피를 기반으로 하는 소스 문서를 여러 문서로 분할](assets/as_intro_pdfsfrombookmarks.png)
+그림: 책갈피를 기반으로 하는 소스 문서를 여러 문서로 분할
+
 ### PDF/A 호환 문서로 변환 및 검증
 
 문서 작성 API를 사용하여 PDF 문서를 PDF/A 호환 버전으로 변환하고 PDF 문서가 PDF/A 호환 상태인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
+
+
+## 통신 API 유형
+
+통신은 주문형 및 배치 문서 생성을 위한 HTTP API를 제공합니다.
+
+* **[동기 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
+
+* **[배치 API(비동기 API)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
 
 ## 온보딩
 
@@ -141,7 +154,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 1. 빌드 파이프라인을 실행합니다.
 
-빌드 파이프라인이 성공하면 환경에 대해 Communication API가 활성화됩니다.
+빌드 파이프라인이 성공하면 환경에 대한 Communications API가 활성화됩니다.
 
 
 <!--
