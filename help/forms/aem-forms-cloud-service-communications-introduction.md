@@ -2,7 +2,7 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: a6b6a190a59d1c2f0001fe1f28d8d7bc8353d464
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 1%
@@ -129,10 +129,12 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 문서 작성 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 규격 문서인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
 
->!![Note]
-문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
-`# Allow Forms Doc Generation requests`
-`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
+>[!NOTE]
+>
+> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## 통신 API 유형
