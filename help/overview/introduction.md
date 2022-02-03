@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 소개
 description: Adobe Experience Manager (AEM) as a Cloud Service 소개.
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -74,10 +74,10 @@ AEM은 최신 클라우드 서비스의 주요 특성을 채택하여 다음과 
 * [AEM Sites as a Cloud Service에 대한 주요 변경 내용](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service 소개](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
 
 >[!TIP]
 >
->AEM as a Cloud Service에 대한 개요를 보고 를 검토하여 빠르게 온보딩할 수 있습니다. [온보딩 여정.](/help/journey-onboarding/home.md)
+>AEM as a Cloud Service에 대한 개요가 있으면 [온보딩 여정](/help/journey-onboarding/home.md)을 검토하여 빠르게 온보딩할 수 있습니다.
 >
->이미 온보딩되었거나 AEM 기능 테스트를 시작할 준비가 되었습니까? 설치 [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md) 풍부한 예를 사용하여 AEM의 강력한 기능을 살펴보십시오.
+>이미 온보딩했거나 AEM의 기능을 테스트할 준비가 되었습니까? [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md)을 설치하여 풍부한 예제를 통해 AEM의 강력한 기능을 살펴보십시오.
