@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 8c3a1366d076c009262eeab8129e4e589dc4f7c5
+source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2039'
 ht-degree: 3%
 
 ---
@@ -92,27 +92,27 @@ CIF 구성에서 편집기는 대체 제품 또는 카테고리 페이지 URL �
 >
 > 저장소별 URL 형식 구성은 [CIF 코어 구성 요소 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 최신 버전의 Adobe Experience Manager Content and Commerce 추가 기능입니다.
 
-## 카테고리 인식 제품 URL {#context-aware-pdps}
+## 카테고리 인식 제품 페이지 URL {#context-aware-pdps}
 
 제품 URL에서 카테고리 정보를 인코딩할 수 있으므로 여러 카테고리에 있는 제품은 여러 제품 URL로 주소를 지정할 수도 있습니다.
 
-기본 구성에서 기본 URL 형식은 다음 스키마를 사용하여 가능한 대체 요소 중 하나를 선택합니다.
+기본 URL 형식은 다음 스키마를 사용하여 가능한 대체 요소 중 하나를 선택합니다.
 
 * if `url_path` e-commerce 백엔드에서 정의합니다(사용 중단됨).
 * 에서 `url_rewrites` 제품의 `url_key` 대체 요소
 * 이러한 대체 요소에서는 가장 많은 경로 세그먼트가 있는 세그먼트를 사용합니다
 * 여러 개가 있는 경우 전자 상거래 백엔드에서 지정한 순서대로 첫 번째 항목을 가져갑니다
 
-이 구성표는 `url_path` 하위 카테고리가 상위 카테고리보다 더 구체적이라는 가정을 기반으로 한 가장 많은 상위 카테고리가 있습니다. 선택한 항목 `url_path` 는 고려됩니다 _정식_ 과 는 항상 제품 페이지 또는 제품 사이트 맵의 대표 링크에 사용됩니다.
+이 구성표는 `url_path` 상위 카테고리가 상위 카테고리보다 하위 카테고리가 더 구체적이라는 가정을 기반으로 하여 가장 많은 상위 카테고리를 사용합니다. 선택한 항목 `url_path` 는 고려됩니다 _정식_ 및 는 항상 제품 페이지 또는 제품 사이트 맵에서 표준 링크로 사용됩니다.
 
 그러나 쇼핑객이 카테고리 페이지에서 제품 페이지로 이동하거나, 한 제품 페이지에서 동일한 카테고리의 다른 관련 제품 페이지로 이동하는 경우 현재 카테고리 컨텍스트를 유지하는 것이 좋습니다. 이 경우 `url_path` 선택 사항에서는 현재 카테고리 컨텍스트 내에 있는 대체 요소를 선호해야 합니다. _정식_ 위에 설명된 선택 사항입니다.
 
 이 기능은 _CIF URL 공급자 구성_. 활성화하면 선택 내용이 대체 요소에 더 높은 점수를 주게 됩니다
 
-* 해당 카테고리의 일부와 일치합니다 `url_paths` 시작(퍼지 접두사 일치)
-* 또는 지정된 카테고리와 일치함 `url_key` 장소(정확히 부분 일치)
+* 해당 카테고리의 일부와 일치합니다 `url_path` 시작(퍼지 접두사 일치)
+* 또는 지정된 카테고리와 일치하는 `url_key` 장소(정확히 부분 일치)
 
-예를 들어 [제품 쿼리](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 아래의 제품에서 사용할 수 있습니다. 사용자가 &quot;New Products / New in Summer 2022&quot; 카테고리 페이지에 있고 스토어가 기본 카테고리 페이지 URL 형식을 사용하고 있는 경우, 대체 &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot;은(는) 처음부터 컨텍스트의 경로 세그먼트 중 2개와 일치합니다. &quot;new-products&quot; 및 &quot;new-in-summer-2022&quot; 스토어에 `url_key`컨텍스트의 와 일치하므로 동일한 대체 요소가 여전히 선택됩니다 `url_key` 어디에나 두 경우 모두 &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot;에 대해 제품 페이지 URL이 만들어집니다 `url_path`.
+예를 들어 [제품 쿼리](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 아래의 제품에서 사용할 수 있습니다. 사용자가 &quot;New Products / New in Summer 2022&quot; 카테고리 페이지에 있고 스토어가 기본 카테고리 페이지 URL 형식을 사용하는 경우, 대체 &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot;은(는) 처음부터 컨텍스트의 경로 세그먼트 중 2개와 일치합니다. &quot;new-products&quot; 및 &quot;new-in-summer-2022&quot; 저장소가 카테고리만 포함하는 카테고리 페이지 URL 형식을 사용하는 경우 `url_key`컨텍스트의 와 일치하므로 동일한 대체 요소가 여전히 선택됩니다 `url_key` 어디에나 두 경우 모두 &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot;에 대해 제품 페이지 URL이 만들어집니다 `url_path`.
 
 ```
 {
@@ -203,29 +203,29 @@ URL 다시 쓰기는 AEM Dispatcher HTTP 서버를 `mod_rewrite` 모듈. 다음 
 
 ### 최상의 URL 형식 선택 {#choose-url-format}
 
-사용 가능한 기본 형식 중 하나를 선택하기 전에 언급했듯이 또는 사용자 지정 형식을 구현하기 전에 언급된 것은 저장소의 요구 사항과 요구 사항에 따라 다릅니다. 다음의 제안은 교육받은 설명을 하는 데 도움이 될 수 있다.
+사용 가능한 기본 형식 중 하나를 선택하거나 사용자 지정 형식을 구현하기 전에 언급했듯이 은 저장소의 요구 사항과 요구 사항에 따라 크게 달라집니다. 다음의 제안은 교육받은 설명을 하는 데 도움이 될 수 있다.
 
 _**sku를 포함하는 제품 페이지 URL 형식을 사용합니다.**_
 
-CIF 코어 구성 요소 는 모든 구성 요소에서 sku를 기본 식별자로 사용합니다. 제품 페이지 URL 형식에 sku가 포함되어 있지 않은 경우 GraphQL 쿼리에서 이를 해결해야 합니다 `url_key`: 1바이트 지표에 영향을 줄 수 있습니다. 또한 고객이 검색 엔진에서 sku별로 제품 품목을 찾도록 지정할 수 있습니다.
+CIF 코어 구성 요소 는 모든 구성 요소에서 sku를 기본 식별자로 사용합니다. 제품 페이지 URL 형식에 sku가 포함되어 있지 않은 경우 GraphQL 쿼리가 이를 해결해야 합니다. 이 경우 1바이트 시간에 영향을 줄 수 있습니다. 또한 고객이 검색 기호를 사용하여 sku로 제품을 찾을 수 있다는 것이 필요할 수 있습니다.
 
 _**카테고리 컨텍스트를 포함하는 제품 페이지 URL 형식을 사용합니다.**_
 
-CIF Url Provider의 일부 기능은 카테고리와 같이 카테고리 컨텍스트를 인코딩하는 제품 URL 형식을 사용할 때만 사용할 수 있습니다 `url_key` 또는 카테고리 `url_path`. 새 저장소에 이러한 기능이 필요하지 않을 수 있더라도 처음부터 이러한 URL 형식 중 하나를 사용하면 나중에 마이그레이션 작업을 줄일 수 있습니다.
+CIF Url Provider의 일부 기능은 제품 URL 형식을 사용할 때만 사용할 수 있으며, 카테고리와 같은 카테고리 컨텍스트를 인코딩합니다 `url_key` 또는 카테고리 `url_path`. 새 스토어에 이러한 기능이 필요하지 않을 수도 있지만 처음부터 이러한 URL 형식 중 하나를 사용하면 나중에 마이그레이션 작업을 줄일 수 있습니다.
 
 _**URL 길이와 인코딩된 정보 간의 균형.**_
 
-카탈로그 크기, 특히 카테고리 트리의 크기 및 깊이에 따라 전체 항목을 인코딩하는 것은 적절하지 않을 수 있습니다 `url_path` 카테고리를 URL에 추가합니다. 이 경우 카테고리를 포함하여 URL 길이를 줄일 수 있습니다 `url_key` 을 가리키도록 업데이트하는 것이 좋습니다. 이렇게 하면 카테고리를 사용할 때 사용할 수 있는 거의 모든 기능이 활성화됩니다 `url_path`.
+카탈로그 크기, 특히 카테고리 트리의 크기 및 깊이에 따라 전체 항목을 인코딩하는 것은 적절하지 않을 수 있습니다 `url_path` 카테고리를 URL에 추가합니다. 이 경우 카테고리만 포함하여 URL 길이를 줄일 수 있습니다 `url_key` 을 가리키도록 업데이트하는 것이 좋습니다. 이렇게 하면 카테고리를 사용할 때 사용할 수 있는 대부분의 기능이 지원됩니다 `url_path`.
 
-또한 다음을 사용하십시오 [Sling 매핑](#sling-mapping) sku를 제품과 결합하려면 `url_key`. 대부분의 전자 상거래 시스템에서 sku는 특정 형식을 따르며 sku에서 을 구분합니다 `url_key` 수신 요청의 경우 쉽게 수행할 수 있어야 합니다. 이를 염두에 두고 제품 페이지 URL을 다음으로 다시 작성할 수 있어야 합니다. `/p/{{category}}/{{sku}}-{{url_key}}.html`및 카테고리 URL을 `/c/{{url_key}}.html` 특별하게 다음 `/p` 및 `/c` 제품 및 카테고리 페이지를 다른 컨텐츠 페이지와 구분하려면 접두사가 여전히 필요합니다.
+또한 다음을 사용하십시오 [Sling 매핑](#sling-mapping) sku를 제품과 결합하려면 `url_key`. 대부분의 전자 상거래 시스템에서 sku는 특정 형식을 따르며 sku와 `url_key` 수신 요청의 경우 쉽게 수행할 수 있어야 합니다. 이를 염두에 두고 제품 페이지 URL을 다음으로 다시 작성할 수 있어야 합니다. `/p/{{category}}/{{sku}}-{{url_key}}.html`및 카테고리 URL을 `/c/{{url_key}}.html` 특별하게 다음 `/p` 및 `/c` 제품 및 카테고리 페이지를 다른 컨텐츠 페이지와 구분하려면 접두사가 여전히 필요합니다.
 
-### 한 URL 포맷에서 다른 URL로 마이그레이션 {#migrate-url-formats}
+### 새 URL 형식으로 마이그레이션 {#migrate-url-formats}
 
-대부분의 기본 URL 형식은 어떻게든 서로 호환되므로, 한 URL에서 가져온 URL을 다른 URL에서 구문 분석할 수 있습니다. 이렇게 하면 URL 형식 간을 마이그레이션할 수 있습니다.
+대부분의 기본 URL 형식은 어떻게든 서로 호환되므로, 한 URL에서 가져온 URL을 다른 URL에서 구문 분석할 수 있습니다. URL 형식 간을 마이그레이션하는 데 도움이 됩니다.
 
 반면 검색 엔진은 새로운 URL 포맷으로 모든 카탈로그 페이지를 다시 크롤링하는 데 시간이 걸릴 것입니다. 이 프로세스를 지원하고 최종 사용자 경험을 향상시키기 위해 이전 URL에서 새 URL로 사용자를 전달하는 리디렉션을 제공하는 것이 좋습니다.
 
-한 가지 방법은 스테이지 환경을 프로덕션 전자 상거래 백엔드에 연결하고 새 URL 형식을 사용하도록 구성하는 것입니다. 그런 다음 를 가져옵니다 [CIF 제품 사이트 맵 생성기에서 생성된 제품 사이트 맵](../../overview/seo-and-url-management.md) 스테이지 및 프로덕션 환경에 대해 사용하고 이를 사용하여 [Apache httpd 재작성 맵](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 이 다시 작성 맵은 새 URL 형식의 롤아웃과 함께 디스패처에 배포할 수 없습니다.
+한 가지 접근 방법은 스테이지 환경을 프로덕션 e-commerce 백엔드에 연결하고 새 URL 형식을 사용하도록 구성하는 것입니다. 그런 다음 를 가져옵니다 [CIF 제품 사이트 맵 생성기에서 생성된 제품 사이트 맵](../../overview/seo-and-url-management.md) 스테이지와 프로덕션 환경 모두에 대해 이 두 차원을 사용하여 [Apache httpd 재작성 맵](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 이 다시 작성 맵은 새 URL 형식의 롤아웃과 함께 디스패처에 배포할 수 없습니다.
 
 ## 예 {#example}
 
