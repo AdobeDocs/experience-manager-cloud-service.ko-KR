@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] as a Cloud Service 프리릴리스 채�
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 프리릴리스 채널'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 ## 소개 {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-kr#aem-as-cloud-service)의 일정에 따라 월간 케이던스로 새로운 기능을 제공합니다. 다음 달 출시가 예정된 기능에 익숙해지려면 표준 프로그램 개발 환경 또는 샌드박스 프로그램 환경에 적절하게 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. Sites 콘솔 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
+[!DNL Adobe Experience Manager] as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR#aem-as-cloud-service)의 일정에 따라 월간 케이던스로 새로운 기능을 제공합니다. 다음 달 출시가 예정된 기능에 익숙해지려면 표준 프로그램 개발 환경 또는 샌드박스 프로그램 환경에 적절하게 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. Sites 콘솔 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
 
 지정된 달에 대한 프리릴리스 기능 목록은 [월별 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)에 게시됩니다.
 
@@ -50,7 +50,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 환경을 정기적인(비 프리릴리스) 채널의 비헤이비어로 복원하고자 하는 경우 변수를 삭제하거나 다른 값으로 다시 설정할 수 있습니다.
 
-* 또는 다음을 통해 환경 변수를 구성할 수도 있습니다 [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md).
+* 또는 [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md)에서 환경 변수를 구성할 수도 있습니다.
 
 ### 로컬 SDK {#local-sdk}
 
@@ -117,7 +117,7 @@ JavaDoc은 Maven Central에 게시됩니다.
 > 
 > 스테이지 및 프로덕션에 배포 시 `aem-prerelease-sdk-api` artifactId를 사용해야 합니다. 프로덕션 파이프라인을 통해 배포 시 항상 aem-sdk-api를 사용하십시오. 마찬가지로 프리릴리스 API를 참조하는 코드는 프로덕션 파이프라인을 통해 배포할 수 없습니다.
 
-[AEM CS SDK Build Analyzer Maven 플러그인 v1.0 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko-kr#developing)은 종속성 검사를 통해 프로젝트에서 프리릴리스 API가 사용되는지 감지합니다. 분석기가 사용을 감지하면 프리릴리스 SDK API를 사용하여 프로젝트를 분석합니다.
+[AEM CS SDK Build Analyzer Maven 플러그인 v1.0 이상](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko-KR#developing)은 종속성 검사를 통해 프로젝트에서 프리릴리스 API가 사용되는지 감지합니다. 분석기가 사용을 감지하면 프리릴리스 SDK API를 사용하여 프로젝트를 분석합니다.
 
 ## 고려 사항 {#considerations}
 
