@@ -3,9 +3,9 @@ title: 디스패처 도구를 사용하여 확인 및 디버깅
 description: 디스패처 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: dc25b243c2d64d735e553e7ea2fb990fb34cb4cb
+source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2512'
 ht-degree: 2%
 
 ---
@@ -442,7 +442,7 @@ Dispatcher 구성에서는 동일한 환경 변수를 사용할 수 있습니다
 }
 ```
 
-또는 httpd/dispatcher 구성에서 Cloud Manager 환경 변수를 사용할 수 있습니다. 이 방법은 프로그램에 여러 개발 환경이 있고 이러한 개발 환경 중 일부가 httpd/dispatcher 구성에 대해 다른 값을 갖는 경우 특히 중요합니다. 위의 예제와 동일한 ${VIRTUALHOST} 구문은 사용되지만 위의 변수 파일에 있는 Define 선언은 사용되지 않습니다. 다음 문서를 참조하십시오. [Cloud Manager 설명서](/help/implementing/cloud-manager/environment-variables.md) cloud Manager 환경 변수 구성에 대한 지침입니다.
+또는 환경 비밀이 아닌 httpd/dispatcher 구성에서 Cloud Manager 환경 변수를 사용할 수 있습니다. 이 방법은 프로그램에 여러 개발 환경이 있고 이러한 개발 환경 중 일부가 httpd/dispatcher 구성에 대해 다른 값을 갖는 경우 특히 중요합니다. 위의 예제와 동일한 ${VIRTUALHOST} 구문은 사용되지만 위의 변수 파일에 있는 Define 선언은 사용되지 않습니다. 다음 문서를 참조하십시오. [Cloud Manager 설명서](/help/implementing/cloud-manager/environment-variables.md) cloud Manager 환경 변수 구성에 대한 지침입니다.
 
 구성을 로컬에서 테스트할 때 변수를 전달하여 다양한 환경 유형을 시뮬레이션할 수 있습니다 `DISP_RUN_MODE` 변환 후 `docker_run.sh` 직접 스크립트 작성:
 
