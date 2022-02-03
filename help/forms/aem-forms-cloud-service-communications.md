@@ -2,17 +2,15 @@
 title: AEM Forms as a Cloud Service - 통신
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
 
 
-# AEM Forms as a Cloud Service Communications API 사용 - 동기 처리 {#frequently-asked-questions}
-
-**통신 기능은 베타에 있습니다.**
+# 동기 처리 사용 {#sync-processing-introduction}
 
 커뮤니케이션을 사용하면 비즈니스 서신, 문서, 명세서, 청구 처리 편지, 혜택 공지, 청구 처리 편지, 월별 청구서 및 환영 키트와 같은 브랜드 지향적이고 개인화된 커뮤니케이션을 작성, 조합 및 제공할 수 있습니다. Communications API를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL, DPL, IPL 및 ZPL 형식으로 문서를 생성할 수 있습니다.
 

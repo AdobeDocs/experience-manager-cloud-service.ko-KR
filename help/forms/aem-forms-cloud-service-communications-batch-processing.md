@@ -2,14 +2,14 @@
 title: Experience Manager [!DNL Forms] as a Cloud Service 통신 일괄 처리
 description: 브랜드 중심 및 개인화된 커뮤니케이션을 만드는 방법
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
 
-# Forms as a Cloud Service 통신 - 일괄 처리
+# 일괄 처리 사용
 
 커뮤니케이션을 사용하면 비즈니스 서신, 문서, 명세서, 청구 처리 편지, 혜택 공지, 청구 처리 편지, 월별 청구서 및 환영 키트와 같은 브랜드 지향적이고 개인화된 커뮤니케이션을 작성, 조합 및 제공할 수 있습니다. Communications API를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL, DPL, IPL 및 ZPL 형식으로 문서를 생성할 수 있습니다.
 

@@ -2,16 +2,16 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
 
 # AEM Forms as a Cloud Service 통신 사용 {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service - 통신 문서 조작 API는 베타 버전이며 실제 릴리스 전에 크게 변경될 수 있습니다.**
+**문서 조작 API는 시험판 단계에 있으며 실제 릴리스 전에 변경될 수 있습니다.**
 
 커뮤니케이션 기능을 사용하면 비즈니스 서신, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 또는 환영 키트와 같은 브랜드 승인, 개인화 및 표준화된 문서를 만들 수 있습니다.
 
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 * PDF 문서를 필요에 따라 결합, 재정렬 및 검증할 수 있습니다.
 
-* 외부 시스템과의 쉬운 통합을 위한 HTTP API. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다. 문서 생성을 효율적으로 합니다.
+* 외부 시스템과의 쉬운 통합을 위한 HTTP API. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다.
 
-* 데이터에 대한 보안 액세스. Communications API는 고객이 지정한 데이터 저장소에서만 데이터에 연결 및 액세스하고 로컬 데이터 복사본을 만들지 않으므로 Communications를 매우 안전하게 만듭니다.
+* 데이터에 대한 보안 액세스. 통신 API는 고객이 지정한 데이터 저장소에서만 데이터를 연결 및 액세스하므로 커뮤니케이션을 매우 안전하게 만듭니다.
 
 ![신용 카드 명세서 샘플](assets/statement.png)
 Communications API를 사용하여 신용 카드 명세서를 만들 수 있습니다. 이 샘플 문은 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 별도의 데이터를 사용합니다.
@@ -57,7 +57,7 @@ Communications APIs can create separate documents for each record within an XML 
 
 The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
 
-The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
+The following illustration shows Communications APIs processing an XML data file that con tains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
 
  -->
 
@@ -77,34 +77,34 @@ The following illustration shows the Communication APIs processing an XML data f
 
 ![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
 
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. -->
+For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. 
 
-### 대화형 PDF 문서 병합 {#flatten-interactive-pdf-documents}
+### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
 
-문서 생성 API를 사용하여 대화형 PDF 문서(예: 양식)를 비대화형 PDF 문서로 변환할 수 있습니다. 대화형 PDF 문서를 사용하면 PDF 문서 필드에 있는 데이터를 입력하거나 수정할 수 있습니다. 대화형 PDF 문서를 비대화형 PDF 문서로 변환하는 프로세스를 병합이라고 합니다. PDF 문서를 평면화하면 사용자는 문서 필드에 있는 데이터를 수정할 수 없습니다. PDF 문서를 평면화하는 한 가지 이유는 데이터를 수정할 수 없도록 하기 위한 것입니다.
+You can use document generation APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document’s fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
 
-다음 유형의 PDF 문서를 평면화할 수 있습니다.
+You can flatten the following types of PDF documents:
 
-* Designer에서 작성된 대화형 PDF 문서(XFA 스트림을 포함함).
+* Interactive PDF documents created in Designer (that contain XFA streams).
 
 * Acrobat PDF forms
 
-비대화형 PDF 문서를 병합하려고 하면 예외가 발생합니다.
+If you attempt to flatten a non-interactive PDF document, an exception occurs.
 
-### 양식 상태 유지 {#retain-form-state}
+### Retain Form State {#retain-form-state}
 
-대화형 PDF 문서에는 양식을 구성하는 다양한 요소가 포함되어 있습니다. 이러한 요소에는 필드(데이터를 허용하거나 표시하기 위한), 단추(이벤트를 트리거하기 위한) 및 스크립트(특정 작업을 수행하는 명령)가 포함될 수 있습니다. 버튼을 클릭하면 필드의 상태를 변경하는 이벤트가 트리거될 수 있습니다. 예를 들어, 성별 옵션을 선택하면 필드의 색상 또는 양식의 모양이 변경될 수 있습니다. 양식 상태가 변경되는 수동 이벤트의 예입니다.
+An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
-그러한 대화형 PDF 문서를 Communications API를 사용하여 병합하면 양식의 상태가 유지되지 않습니다. 양식을 평면화한 후에도 양식의 상태가 유지되도록 하려면 부울 값을 설정합니다 _keepFormState_ 를 입력하여 양식의 상태를 저장하고 유지할 수 있습니다.
+When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
 
-## 문서 조작
+## (시험판) 문서 조작
 
 통신 문서 조작 API를 사용하여 PDF 문서를 결합, 재정렬 및 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. DDX 문서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
 
 ### PDF 문서 조합
 
-문서 작성 API를 사용하여 두 개 이상의 PDF 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
+문서 작성 API를 사용하여 두 개 이상의 PDF 또는 XDP 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
 
 * 간단한 PDF 문서 조합
 * PDF Portfolio 만들기
@@ -128,6 +128,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 ### PDF/A 호환 문서로 변환 및 유효성 검사
 
 문서 작성 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 규격 문서인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
+
+>!![Note]
+문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+`# Allow Forms Doc Generation requests`
+`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## 통신 API 유형
