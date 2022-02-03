@@ -3,7 +3,7 @@ title: 규정 준수
 description: 이 페이지에는 Experience Manager as a Cloud Service의 규정 준수에 대한 정보를 제공하는 자습 리소스가 기재되어 있습니다.
 landing-page-description: 여기에서 개인정보 보호 및 접근성을 포함하여 AEM as a Cloud Service의 규정 준수에 대한 개요를 살펴보십시오.
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
 ht-degree: 100%
 
@@ -39,11 +39,11 @@ ht-degree: 100%
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
-* [최신 설명서 업데이트](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
-* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
-* [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
+* [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Cloud Manager 설명서](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
