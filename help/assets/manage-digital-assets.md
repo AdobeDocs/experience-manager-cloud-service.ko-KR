@@ -1,15 +1,15 @@
 ---
-title: 디지털 자산을 관리합니다
+title: 디지털 에셋 관리
 description: 다양한 자산 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: c49352926c67587096b8c60840e00bf379b92075
 workflow-type: tm+mt
-source-wordcount: '4320'
-ht-degree: 11%
+source-wordcount: '4063'
+ht-degree: 12%
 
 ---
 
@@ -272,33 +272,41 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >
    >다른 페이지에서 들어오는 참조를 해결하거나 제거하려면 자산을 삭제하기 전에 관련 참조를 업데이트하십시오. 참조된 자산을 삭제하면 링크가 끊어지기 때문에 삭제를 취소할 수 없습니다. 오버레이를 사용하여 강제 삭제 단추를 비활성화합니다.
 
-## 자산 다운로드 {#download-assets}
+## 에셋 다운로드 {#download-assets}
 
 자세한 내용은 [자산 다운로드 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## 자산 게시 또는 게시 취소 {#publish-assets}
 
-1. 게시하려는 자산 또는 게시 환경에서 제거하려는 자산 폴더의 위치(게시 취소)로 이동합니다.
+작성자 인스턴스의 자산이 들어 있는 자산 및 폴더를 [!DNL Experience Manager Assets], [!DNL Dynamic Media], 및 [!DNL Brand Portal]. 다음 중 하나를 사용하여 자산 또는 폴더 수준에서 자산을 게시하거나 게시 취소할 수 있습니다 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 선택 사항은 [!DNL Experience Manager Assets] 인터페이스.
 
-1. 게시 또는 게시 취소할 자산 또는 폴더를 선택하고 을 선택합니다 **[!UICONTROL 게시 관리]** ![게시 관리 옵션](assets/do-not-localize/globe-publication.png) 옵션 을 클릭합니다. 또는 빠르게 게시하려면 **[!UICONTROL 빠른 게시]** 옵션 을 클릭합니다. 게시하려는 폴더에 빈 폴더가 포함되어 있으면 빈 폴더가 게시되지 않습니다.
+자세한 내용은 [에서 게시 관리 [!DNL Experience Manager]](/help/assets/manage-publication.md)
 
-1. 을(를) 선택합니다 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]** 선택 사항.
+<!--
 
-   ![게시 취소 작업](assets/unpublish_action.png)
-   *그림: 게시 및 게시 취소 옵션 및 예약 옵션.*
+1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
-1. 선택 **[!UICONTROL 지금]** 자산을 바로 사용하거나 **[!UICONTROL 나중에]** 를 눌러 작업을 예약합니다. 을(를) 선택하는 경우 날짜 및 시간을 선택합니다 **[!UICONTROL 나중에]** 선택 사항입니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
 
-1. 게시할 때 자산이 다른 자산을 참조하는 경우 해당 참조가 마법사에 나열됩니다. 마지막 게시 이후 게시 취소되거나 수정된 참조만 표시됩니다. 게시할 참조를 선택합니다.
+1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
 
-1. 게시를 취소할 때 자산이 다른 자산을 참조하는 경우 게시를 취소하려는 참조를 선택합니다. 클릭 **[!UICONTROL 게시 취소]**. 확인 대화 상자에서 **[!UICONTROL 취소]** 작업을 중지하려면 를 클릭하거나 **[!UICONTROL 게시 취소]** 지정된 날짜에 자산의 게시를 취소할지 확인합니다.
+   ![Unpublish action](assets/unpublish_action.png)
+   *Figure: Publish and unpublish options and the scheduling option.*
 
-자산 또는 폴더의 게시 또는 게시 취소와 관련된 다음 제한 사항과 팁을 이해합니다.
+1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
 
-* 다음 옵션 [!UICONTROL 게시 관리] 복제 권한이 있는 사용자 계정에만 이 기능을 사용할 수 있습니다.
-* 복잡한 자산의 게시를 취소하는 동안 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 게시를 취소하지 마십시오.
-* 빈 폴더가 게시되지 않습니다.
-* 처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 표현물이 없습니다. 처리가 완료될 때까지 기다렸다가 처리가 완료되면 자산을 게시하거나 다시 게시하십시오.
+1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
+
+1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
+
+Understand the following limitations and tips related to publishing or unpublishing assets or folders:
+
+* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
+* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
+* Empty folders are not published.
+* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+
+-->
 
 ## 폐쇄된 사용자 그룹 {#closed-user-group}
 
@@ -322,7 +330,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 1. 폴더를 게시한 다음 게시 인스턴스에서 해당 폴더에 액세스해 보십시오. 로그인 화면이 표시됩니다.
 1. CUG 멤버인 경우 보안 자격 증명을 입력합니다. 폴더는 다음에 표시됩니다 [!DNL Experience Manager] 인증을 받습니다.
 
-## 자산 검색 {#search-assets}
+## 에셋 검색 {#search-assets}
 
 자산을 검색하는 것은 디지털 자산 관리 시스템의 용도의 핵심입니다. 이를 통해 크리에이티브, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 수행할 수 있습니다.
 
