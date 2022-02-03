@@ -2,16 +2,17 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 99%
+source-wordcount: '1522'
+ht-degree: 95%
 
 ---
 
 # 경험 조각 {#experience-fragments}
 
 Adobe Experience Manager as a Cloud Service 내 경험 조각은
+
 * 하나 이상의 구성 요소 그룹입니다.
 * 컨텐츠와 레이아웃을 모두 포함합니다.
 * 페이지 내에서 참조할 수 있습니다.
@@ -22,10 +23,12 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 * 경험(페이지)의 일부입니다.
 * 여러 페이지에서 사용할 수 있습니다.
 * 구조 및 구성 요소를 정의하기 위한 템플릿(편집만 가능)을 기반으로 합니다.
+* 이 템플릿은 *루트 페이지* 경험 조각 의 하위 섹션을 참조하십시오.
 * 단락 시스템에서 레이아웃이 있는 하나 이상의 구성 요소로 구성되어 있습니다.
 * 다른 경험 조각을 포함할 수 있습니다.
 * 다른 조각(다른 경험 조각 포함)과 결합하여 전체 페이지(경험)를 형성할 수 있습니다.
-* 다른 변형이 있을 수 있으며, 이 변형이 컨텐츠 및/또는 구성 요소를 공유할 수 있습니다.
+* 루트 페이지를 기반으로 하나 이상의 변형을 만들 수 있습니다.
+* 이러한 변형은 컨텐츠 및/또는 구성 요소를 공유할 수 있습니다.
 * 조각의 여러 변형에서 사용할 수 있는 빌딩 블록으로 분할할 수 있습니다.
 
 경험 조각을 사용할 수 있습니다.
@@ -57,7 +60,6 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
    * 채널 또는 컨텍스트별 변형.
    * 그룹에 적절한 경험(예: 채널 간에 다양한 경험이 있는 캠페인).
 * Omnichannel Commerce를 사용하는 경우
-   * [소셜 미디어](/help/implementing/developing/extending/experience-fragments.md#social-variations) 채널에서 대규모로 상거래 관련 컨텐츠 공유.
    * 터치포인트를 거래와 관련시키기.
 
 ## 경험 조각 구성 {#organizing-your-experience-fragments}
@@ -151,7 +153,6 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. **저장**&#x200B;을 선택합니다.
 
-
 ## 경험 조각 생성 {#creating-an-experience-fragment}
 
 경험 조각을 생성하려면 다음을 수행하십시오.
@@ -176,6 +177,12 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    **제목**&#x200B;은 필수입니다. **이름**&#x200B;을 비워 두면 **제목**&#x200B;에서 파생됩니다.
 
    ![경험 조각 속성](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >경험 조각 템플릿의 태그는 이 경험 조각 루트 페이지의 태그와 병합되지 않습니다.
+   >
+   >이건 완전히 별개입니다
 
 1. **만들기**&#x200B;를 클릭합니다.
 
@@ -232,6 +239,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![변형 속성](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. **완료**&#x200B;로 확인하면 새 변형이 패널에 표시됩니다.
 
 ## 경험 조각 사용 {#using-your-experience-fragment}
@@ -283,7 +291,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 빌딩 블록은 **빌딩 블록** 탭에서 볼 수 있습니다. 각 블록에서 다음 작업을 수행할 수 있습니다.
 
-* ****&#x200B;마스터로 이동: 새 탭에서 마스터 변형을 엽니다.
+* **마스터로 이동**: 새 탭에서 루트 페이지 변형을 엽니다.
 * **이름 변경**
 * **삭제**
 
@@ -338,8 +346,6 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
       * **Pinterest 보드**
    * **참조**
       * 참조 목록입니다
-   * **소셜 미디어 상태**
-      * 소셜 미디어 변형의 세부 사항입니다
 
 ## 일반 HTML 렌디션 {#the-plain-html-rendition}
 

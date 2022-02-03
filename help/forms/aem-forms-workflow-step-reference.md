@@ -2,7 +2,7 @@
 title: '워크플로우를 다른 사용자에게 할당하고, 이메일을 보내고, 워크플로우에서 Adobe Sign을 사용하는 방법 '
 description: Forms 중심의 워크플로우를 통해 적응형 Forms 기반 워크플로우를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색 및 여러 데이터 소스로 보내고, 이메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
+source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 1%
@@ -92,7 +92,7 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL 할당자]** > **[!UICONTROL 옵션 할당]**: 사용자에게 작업을 할당할 방법을 지정합니다. 참가자 선택기 스크립트를 사용하여 사용자 또는 그룹에 작업을 동적으로 할당하거나 특정 AEM 사용자 또는 그룹에 작업을 지정할 수 있습니다.
-* **[!UICONTROL 참가자 선택기]**: 이 옵션은 **[!UICONTROL 동적으로 사용자 또는 그룹에 추가]** 옵션 지정 필드에서 옵션이 선택되어 있습니다. ECMAScript 또는 서비스를 사용하여 사용자나 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로우를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL 참가자 선택기]**: 이 옵션은 **[!UICONTROL 동적으로 사용자 또는 그룹에 추가]** 옵션 지정 필드에서 옵션이 선택되어 있습니다. ECMAScript 또는 서비스를 사용하여 사용자나 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로우를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL 참가자]**: 이 필드는 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantSelector]** 옵션이 **[!UICONTROL 참가자 선택기]** 필드. 필드에서는 RandomParticipantSelector 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
 
