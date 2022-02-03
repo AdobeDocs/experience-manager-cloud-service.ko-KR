@@ -3,9 +3,9 @@ title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Serv
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1906'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->온프레미스 및 Managed Service 버전에 대한 자세한 내용은 [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html)의 설명서 세트를 참조하십시오.
+>온프레미스 및 Managed Service 버전에 대한 자세한 내용은 [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)의 설명서 세트를 참조하십시오.
 
 ## 아키텍처 {#architecture}
 
@@ -227,7 +227,7 @@ AEM as a Cloud Service를 사용하면 이러한 작업이 자동화되므로 �
 
 AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다.
 
-이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
+이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보가 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 클라우드 서비스에 공유되므로 사용자 계정을 사용하면 사용자가 Adobe 제품 및 서비스에 액세스할 수 있습니다. AEM에 액세스 권한을 할당하면 이전과 동일하게 AEM as a Cloud Service에서 사용자 계정을 참조할 수 있습니다(예: AEM 보안 사용자 인터페이스에서 역할 및 권한을 정의하기 위해).
 
 이렇게 하면 다음과 같은 이점이 있습니다.
 
@@ -269,10 +269,10 @@ Assets 제품에는 클라우드에서의 차세대 에셋 프로세싱과 고�
 * [AEM Sites as a Cloud Service에 대한 주요 변경 내용](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
 
 >[!TIP]
 >
->AEM as a Cloud Service에 대한 개요를 보고 를 검토하여 빠르게 온보딩할 수 있습니다. [온보딩 여정.](/help/journey-onboarding/home.md)
+>AEM as a Cloud Service에 대한 개요가 있으면 [온보딩 여정](/help/journey-onboarding/home.md)을 검토하여 빠르게 온보딩할 수 있습니다.
 >
->이미 온보딩되었거나 AEM 기능 테스트를 시작할 준비가 되었습니까? 설치 [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md) 풍부한 예를 사용하여 AEM의 강력한 기능을 살펴보십시오.
+>이미 온보딩했거나 AEM의 기능을 테스트할 준비가 되었습니까? [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md)을 설치하여 풍부한 예제를 통해 AEM의 강력한 기능을 살펴보십시오.
