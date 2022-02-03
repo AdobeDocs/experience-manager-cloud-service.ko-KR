@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
+source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 34%
@@ -52,10 +52,10 @@ ht-degree: 34%
 
    * 이미지에 디지털 워터마크 추가를 구성합니다.
 
-* 이제 관리자는 대규모 다운로드에 대한 이메일 서비스를 구성할 수 있습니다. 이를 통해 사용자는 [!DNL Experience Manager Assets] 인터페이스. 사용자는 다운로드 프로세스가 완료되면 보관된 zip 폴더의 다운로드 링크가 포함된 이메일 알림을 받습니다.
+* 이제 관리자는 대규모 다운로드에 대한 이메일 서비스를 구성할 수 있습니다. 이를 통해 사용자는 [대규모 다운로드에 대한 이메일 알림 활성화](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) 에서 [!DNL Experience Manager Assets] 인터페이스. 사용자는 다운로드 프로세스가 완료되면 보관된 zip 폴더의 다운로드 링크가 포함된 이메일 알림을 받습니다.
 
 
-* 게시 관리 기능이 개선되어 사용자 인터페이스가 개선되었습니다. 사용자는 선택한 대상과의 컨텐츠를 게시 또는 게시 취소하고, DAM 저장소에서 게시 목록에 컨텐츠 추가, 선택한 폴더의 컨텐츠를 게시하고 필터를 적용하는 폴더 설정 포함 및 나중 날짜나 시간에 게시를 예약할 수 있습니다.
+* 다음 [게시 관리](/help/assets/manage-publication.md) 향상된 사용자 인터페이스를 통해 기능이 향상되었습니다. 사용자는 선택한 대상에 콘텐츠를 게시하거나 선택한 대상에 게시 취소할 수 있습니다. [컨텐츠 추가](/help/assets/manage-publication.md#add-content) DAM 저장소에서 게시 목록 [폴더 설정 포함](/help/assets/manage-publication.md#include-folder-settings) 선택한 폴더의 컨텐츠를 게시하고 필터를 적용하려면 [게시 예약](/help/assets/manage-publication.md#publish-assets-later) 나중에 또는 나중에
 
 ### 버그 수정 {#bug-fixes}
 
