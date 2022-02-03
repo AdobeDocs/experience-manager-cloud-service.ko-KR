@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c49352926c67587096b8c60840e00bf379b92075
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '4063'
-ht-degree: 12%
+source-wordcount: '4356'
+ht-degree: 11%
 
 ---
 
@@ -44,16 +44,30 @@ ht-degree: 12%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM 사용자가 저장소에 이미 있는 자산을 한 개 이상 업로드하는 경우, [!DNL Experience Manager] 중복을 감지하고 사용자에게 알립니다. 중복 감지는 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [!UICONTROL Adobe AEM Cloud 자산 중복 감지 장치]. 자세한 내용은 [OSGi 구성 수행 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). 중복 검색은 고유한 `dam:sha1` 다음 위치에 저장된 값 `jcr:content/metadata/dam:sha1`. 파일 이름이 다르더라도 중복 자산이 검색됩니다.
+DAM 사용자가 저장소에 이미 있는 자산을 한 개 이상 업로드하는 경우, [!DNL Experience Manager] 중복을 감지하고 사용자에게 알립니다. 중복 감지는 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 기본적으로 비활성화됩니다.
 
-구성 파일을 추가할 수 있습니다 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 사용자 지정 코드에서 파일에 다음을 포함할 수 있습니다.
+>[!NOTE]
+>
+>이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 을 참조하십시오.
 
-```json
-{
-  "enabled":true,
-  "detectMetadataField":"dam:sha1"
-}
-```
+기능을 활성화하려면
+
+1. 다음으로 이동 **[!UICONTROL 도구 > 자산 > 자산 구성]**.
+
+1. 클릭 **[!UICONTROL 자산 중복 감지 장치]**.
+
+1. 설정 [!UICONTROL 자산 중복 감지 페이지]를 클릭합니다. **[!UICONTROL 활성화됨]**.
+
+   `dam:sha1` 메타데이터 검색 필드의 값은 파일 이름이 다르더라도 중복 자산을 검색하도록 합니다.
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+   ![에셋 중복 감지기](assets/asset-duplication-detector.png)
+
+>[!NOTE]
+>
+>복제 탐지기를 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 구성 파일(OSGi 구성)은 계속 사용할 수 있지만 Adobe은 새 메서드를 사용하는 것이 좋습니다.
+
 
 활성화되면 Experience Manager이 중복 자산의 알림을 Experience Manager 받은 편지함에 보냅니다. 여러 중복에 대해 집계된 결과입니다. 사용자는 결과를 기반으로 자산을 제거하도록 선택할 수 있습니다.
 
@@ -278,35 +292,27 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 자산 게시 또는 게시 취소 {#publish-assets}
 
-작성자 인스턴스의 자산이 들어 있는 자산 및 폴더를 [!DNL Experience Manager Assets], [!DNL Dynamic Media], 및 [!DNL Brand Portal]. 다음 중 하나를 사용하여 자산 또는 폴더 수준에서 자산을 게시하거나 게시 취소할 수 있습니다 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 선택 사항은 [!DNL Experience Manager Assets] 인터페이스.
+1. 게시하려는 자산 또는 게시 환경에서 제거하려는 자산 폴더의 위치(게시 취소)로 이동합니다.
 
-자세한 내용은 [에서 게시 관리 [!DNL Experience Manager]](/help/assets/manage-publication.md)
+1. 게시 또는 게시 취소할 자산 또는 폴더를 선택하고 을 선택합니다 **[!UICONTROL 게시 관리]** ![게시 관리 옵션](assets/do-not-localize/globe-publication.png) 옵션 을 클릭합니다. 또는 빠르게 게시하려면 **[!UICONTROL 빠른 게시]** 옵션 을 클릭합니다. 게시하려는 폴더에 빈 폴더가 포함되어 있으면 빈 폴더가 게시되지 않습니다.
 
-<!--
+1. 을(를) 선택합니다 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]** 선택 사항.
 
-1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
+   ![게시 취소 작업](assets/unpublish_action.png)
+   *그림: 게시 및 게시 취소 옵션 및 예약 옵션.*
 
-1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
+1. 선택 **[!UICONTROL 지금]** 자산을 바로 사용하거나 **[!UICONTROL 나중에]** 를 눌러 작업을 예약합니다. 을(를) 선택하는 경우 날짜 및 시간을 선택합니다 **[!UICONTROL 나중에]** 선택 사항입니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
+1. 게시할 때 자산이 다른 자산을 참조하는 경우 해당 참조가 마법사에 나열됩니다. 마지막 게시 이후 게시 취소되거나 수정된 참조만 표시됩니다. 게시할 참조를 선택합니다.
 
-   ![Unpublish action](assets/unpublish_action.png)
-   *Figure: Publish and unpublish options and the scheduling option.*
+1. 게시를 취소할 때 자산이 다른 자산을 참조하는 경우 게시를 취소하려는 참조를 선택합니다. 클릭 **[!UICONTROL 게시 취소]**. 확인 대화 상자에서 **[!UICONTROL 취소]** 작업을 중지하려면 를 클릭하거나 **[!UICONTROL 게시 취소]** 지정된 날짜에 자산의 게시를 취소할지 확인합니다.
 
-1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
+자산 또는 폴더의 게시 또는 게시 취소와 관련된 다음 제한 사항과 팁을 이해합니다.
 
-1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
-
-1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
-
-Understand the following limitations and tips related to publishing or unpublishing assets or folders:
-
-* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
-* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
-* Empty folders are not published.
-* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
-
--->
+* 다음 옵션 [!UICONTROL 게시 관리] 복제 권한이 있는 사용자 계정에만 이 기능을 사용할 수 있습니다.
+* 복잡한 자산의 게시를 취소하는 동안 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 게시를 취소하지 마십시오.
+* 빈 폴더가 게시되지 않습니다.
+* 처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 표현물이 없습니다. 처리가 완료될 때까지 기다렸다가 처리가 완료되면 자산을 게시하거나 다시 게시하십시오.
 
 ## 폐쇄된 사용자 그룹 {#closed-user-group}
 

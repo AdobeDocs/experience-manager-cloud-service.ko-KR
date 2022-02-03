@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '3358'
+source-wordcount: '3328'
 ht-degree: 23%
 
 ---
@@ -213,10 +213,6 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
    ![강제 삭제 경고](assets/delete-referenced-asset.png)
 
 ### 원격 DAM의 자산에 대한 업데이트 관리 {#handling-updates-to-remote-assets}
-
->[!NOTE]
->
->이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 을 참조하십시오.
 
 후 [연결 구성](#configure-a-connection-between-sites-and-assets-deployments) 원격 DAM과 사이트 배포 간에 원격 DAM의 자산을 사이트 배포에서 사용할 수 있도록 합니다. 그런 다음 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니다. 업데이트는 약간의 지연과 함께 Sites 배포에서 자동으로 사용할 수 있습니다. 또한 원격 DAM의 자산을 로컬 Experience Manager Sites 페이지에서 사용하는 경우 원격 DAM의 자산에 대한 업데이트가 사이트 페이지에 표시됩니다.
 
