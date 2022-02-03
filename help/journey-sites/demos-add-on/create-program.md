@@ -1,21 +1,21 @@
 ---
-title: 프로그램 만들기
+title: 프로그램 제작
 description: 추가 기능을 배포하기 위해 새 프로그램 및 파이프라인을 설정하는 방법을 알아봅니다.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 0%
+source-wordcount: '715'
+ht-degree: 1%
 
 ---
 
 
-# 프로그램 만들기 {#creating-a-program}
+# 프로그램 제작 {#creating-a-program}
 
 추가 기능을 배포하기 위해 새 프로그램 및 파이프라인을 설정하는 방법을 알아봅니다.
 
 ## 지금까지 그 이야기 {#story-so-far}
 
-AEM 빠른 사이트 만들기 여정의 이전 문서에서, [참조 데모 추가 기능 설치 이해,](installation.md) 레퍼런스 데모 추가 기능 작동 과정을 통해 다양한 조각을 함께 작동하는 방식을 알 수 있습니다. 이제 다음을 수행해야 합니다.
+AEM 참조 데모 추가 기능 여정의 이전 문서에서 [참조 데모 추가 기능 설치 이해,](installation.md) 레퍼런스 데모 추가 기능 작동 과정을 통해 다양한 조각을 함께 작동하는 방식을 알 수 있습니다. 이제 다음을 수행해야 합니다.
 
 * Cloud Manager에 대한 기본 이해를 얻으십시오.
 * 파이프라인이 컨텐츠 및 구성을 AEM에 전달하는 방법을 이해합니다.
@@ -76,7 +76,7 @@ Cloud Manager에 로그인한 후 테스트 및 데모 목적으로 새 샌드�
 
    ![프로그램 편집 대화 상자](assets/edit-program-dialog.png)
 
-1. 설정 **솔루션 및 추가 기능** 탭에서 을 확장합니다. **Sites** 목록의 항목을 입력하고 다음을 확인합니다 **참조 데모**. 탭 또는 클릭 **업데이트**.
+1. 설정 **솔루션 및 추가 기능** 탭에서 을 확장합니다. **Sites** 목록의 항목을 입력하고 다음을 확인합니다 **참조 데모**. AEM Screens용 데모를 만들려면 **Screens** 옵션도 포함되어 있습니다. 탭 또는 클릭 **업데이트**.
 
    ![참조 데모 확인 옵션](assets/edit-program-add-on.png)
 
