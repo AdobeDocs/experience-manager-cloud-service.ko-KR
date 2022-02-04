@@ -1,25 +1,25 @@
 ---
 title: 컨텐츠 조각 관리
 description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
-feature: 콘텐츠 조각
+feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
 workflow-type: tm+mt
-source-wordcount: '1746'
-ht-degree: 66%
+source-wordcount: '1758'
+ht-degree: 65%
 
 ---
 
-# 컨텐츠 조각 관리 {#managing-content-fragments}
+# 콘텐츠 조각 관리 {#managing-content-fragments}
 
 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
 
-[컨텐츠 조각 모델](#creating-a-content-model)을 정의한 후 이를 사용하여 [컨텐츠 조각](#creating-a-content-fragment)을 만들 수 있습니다.
+을 정의한 후 [컨텐츠 조각 모델](#creating-a-content-model) 다음 작업을 수행할 수 있습니다. [컨텐츠 조각 만들기](#creating-a-content-fragment).
 
-[컨텐츠 조각 편집기](#opening-the-fragment-editor)는 다음과 같은 작업을 수행할 수 있도록 다양한 [모드](#modes-in-the-content-fragment-editor)를 제공합니다.
+다음 [컨텐츠 조각 편집기](#opening-the-fragment-editor) 다양한 제공 [모드](#modes-in-the-content-fragment-editor) 다음을 수행할 수 있습니다.
 
-* [컨텐츠 편집 ](#editing-the-content-of-your-fragment) 및  [변형 관리](#creating-and-managing-variations-within-your-fragment)
+* [컨텐츠 편집](#editing-the-content-of-your-fragment) 및 [변형 관리](#creating-and-managing-variations-within-your-fragment)
 * [조각에 주석 달기](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [조각과 컨텐츠 연결](#associating-content-with-your-fragment)
 * [메타데이터 구성](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -31,8 +31,8 @@ ht-degree: 66%
 >
 >컨텐츠 조각은 다음 방법으로 사용할 수 있습니다.
 >
->* 페이지를 작성할 때 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)을 참조하십시오.
->* GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)에서 컨텐츠 조각을 사용하여 [헤드리스 컨텐츠 전달에 사용할 수 있습니다.
+>* 페이지를 작성할 때 참조 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* 대상 [GraphQL에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달](/help/assets/content-fragments/content-fragments-graphql.md).
 
 
 >[!NOTE]
@@ -45,7 +45,7 @@ ht-degree: 66%
 
 구조화된 컨텐츠와 함께 컨텐츠 조각을 생성하기 전에 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)을 활성화하고 생성할 수 있습니다.
 
-### 컨텐츠 조각 만들기 {#creating-a-content-fragment}
+### 콘텐츠 조각 만들기 {#creating-a-content-fragment}
 
 컨텐츠 조각을 만드는 방법은 다음과 같습니다.
 
@@ -53,7 +53,7 @@ ht-degree: 66%
 1. **만들기**&#x200B;를 선택한 후 **컨텐츠 조각**&#x200B;을 선택하여 마법사를 엽니다.
 1. 마법사의 첫 번째 단계에서는 새 조각의 기준을 지정해야 합니다.
 
-   * [모델](/help/assets/content-fragments/content-fragments-models.md)  - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예를  **** 들면
+   * [모델](/help/assets/content-fragments/content-fragments-models.md) - 구조화된 컨텐츠가 필요한 조각을 만드는 데 사용됩니다. 예 **모험** 모델
 
       * 사용 가능한 모든 모델이 표시됩니다.
 
@@ -86,7 +86,7 @@ ht-degree: 66%
 1. **만들기**&#x200B;를 선택하여 작업을 완료한 후 편집할 조각을 **열거나** **완료**&#x200B;를 사용하여 콘솔로 돌아갑니다.
 
    >[!NOTE]
-   >콘솔의 **목록** 모드에서 **보기 설정**&#x200B;을 업데이트하여 **컨텐츠 조각 모델** 열을 활성화할 수 있습니다.
+   >in **목록** 콘솔의 모드에서 **설정 보기** 를 **컨텐츠 조각 모델** 열.
 
 ## 자산 콘솔의 컨텐츠 조각에 대한 작업 {#actions-for-a-content-fragment-assets-console}
 
@@ -118,7 +118,7 @@ ht-degree: 66%
 * **게시 관리**
 * **태그 관리**
 * **대상 컬렉션**
-* **복사** (및  **붙여넣기**)
+* **복사** (및 **붙여넣기**)
 * **이동**
 * **삭제**
 
@@ -148,15 +148,15 @@ ht-degree: 66%
 
    ![조각 편집기](assets/cfm-managing-03.png)
 
-1. 변경 후 필요에 따라 **저장**, **저장 및 닫기** 또는 **닫기**&#x200B;를 사용하십시오.
+1. 변경한 후 **저장**, **저장 및 닫기** 또는 **닫기** 필요한 경우.
 
    >[!NOTE]
    >
-   >**저장 및** 닫힘 기능은 Savedropdown을 통해 사용할 수  **** 있습니다.
+   >**저장 및 닫기** 는 **저장** 드롭다운.
 
    >[!NOTE]
    >
-   >**저장 및 닫기** 및 **닫기**&#x200B;는 모두 편집기를 종료합니다. 컨텐츠 조각에 대해 다양한 옵션이 작동하는 방법에 대한 자세한 내용은 [저장, 닫기 및 버전](#save-close-and-versions)을 참조하십시오.
+   >둘 다 **저장 및 닫기** 및 **닫기** 편집기가 종료됩니다. [저장, 닫기 및 버전](#save-close-and-versions) 컨텐츠 조각에 대해 다양한 옵션이 작동하는 방식에 대한 자세한 내용을 살펴보십시오.
 
 ## 컨텐츠 조각 편집기의 모드 및 작업 {#modes-actions-content-fragment-editor}
 
@@ -182,11 +182,11 @@ ht-degree: 66%
 
 ![모드](assets/cfm-managing-top-toolbar.png)
 
-* 이미 컨텐츠 페이지에서 조각을 참조 중이면 메시지가 표시됩니다. 메시지를 **닫기**&#x200B;할 수 있습니다.
+* 이미 컨텐츠 페이지에서 조각을 참조 중이면 메시지가 표시됩니다. 다음을 수행할 수 있습니다 **닫기** 메시지를 표시합니다.
 
 * 사이드 패널은 **사이드 패널 전환** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
 
-* 조각 이름 아래에 현재 조각을 만드는 데 사용되는 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)의 이름이 표시됩니다.
+* 조각 이름 아래에 의 이름이 표시됩니다 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) 현재 조각을 만드는 데 사용됩니다.
 
    * 이 이름은 모델 편집기를 여는 링크이기도 합니다.
 
@@ -198,9 +198,9 @@ ht-degree: 66%
    * **수정됨**: 주황
    * **비활성화됨**: 빨간색
 
-* **** Saveen에서  **저장 및 닫기 옵션에 액세스할** 수 있습니다.
+* **저장** 에 대한 액세스 권한 제공 **저장 및 닫기** 선택 사항입니다.
 
-* 세 점(**..**) 드롭다운에서 추가 작업에 액세스할 수 있습니다.
+* 세 점(**...**) 드롭다운에서 추가 작업에 액세스할 수 있습니다.
    * **업데이트 페이지 참조**
       * 그러면 모든 페이지 참조가 업데이트됩니다.
    * **[빠른 게시](#publishing-and-referencing-a-fragment)**
@@ -217,10 +217,10 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 편집기에는 다음과 같은 다양한 옵션이 있습니다.
 
-* **** 저장 및  **저장 및 닫기**
+* **저장** 및 **저장 및 닫기**
 
-   * **** Save는 최신 변경 내용을 저장하고 편집기에 유지됩니다.
-   * **저장 및** 닫으면 최신 변경 사항이 저장되고 편집기가 종료됩니다.
+   * **저장** 은 최신 변경 사항을 저장하고 편집기에 유지됩니다.
+   * **저장 및 닫기** 최신 변경 사항을 저장하고 편집기를 종료합니다.
 
    >[!CAUTION]
    >
@@ -234,13 +234,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    >
    >작업은 변경 사항을 저장할 뿐만 아니라 모든 참조를 업데이트하고 필요에 따라 Dispatcher를 초기화시킵니다. 이러한 변경 사항은 처리에 시간이 걸릴 수 있습니다. 이로 인해 대형/복합/부하가 큰 시스템의 성능에 영향이 있을 수 있습니다.
    >
-   >**저장 및 닫기**&#x200B;를 사용할 때 이것을 염두에 두고 조각 편집기를 신속하게 다시 입력하여 추가 변경 작업을 수행하고 저장하십시오.
+   >사용 시 이것을 명심하십시오 **저장 및 닫기** 그런 다음 조각 편집기를 신속하게 다시 입력하여 추가 변경 작업을 수행하고 저장합니다.
 
 * **닫기**
 
-   최신 변경 사항을 저장하지 않고 편집기를 종료합니다(즉, 마지막 **저장** 이후 수행).
+   최신 변경 사항을 저장하지 않고 편집기를 종료합니다(즉, 마지막 변경 사항 이후에 수행됩니다.) **저장**).
 
-컨텐츠 조각을 편집하는 동안 AEM은 변경 사항을 취소(저장 없이 **Close** 사용)하는 경우 이전 컨텐츠를 복원할 수 있도록 자동으로 버전을 생성합니다.
+컨텐츠 조각을 편집하는 동안 AEM은 변경 사항을 취소(사용)할 경우 이전 컨텐츠를 복원할 수 있도록 자동으로 버전을 생성합니다. **닫기** 저장 안 함):
 
 1. 편집하기 위해 컨텐츠 조각을 열면 AEM에서는 *편집 세션*&#x200B;이 존재하는지 여부를 나타내는 쿠키 기반 토큰이 있는지 확인합니다.
 
@@ -299,11 +299,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 모든 자산에 대한 표준 기능입니다.
 * 타임라인에서 만들어집니다.
 * 조각 자산과 관련되어 있습니다.
-
+>
 주석(컨텐츠 조각)은
 * 조각 편집기에서 입력됩니다.
 * 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
-
+>
 
 
 예:
@@ -353,11 +353,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
 모델이 아직 게시되지 않은 컨텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
-게시 환경에서 사용하려면 컨텐츠 조각을 게시해야 합니다. 게시할 수 있는 시점:
+게시 환경에서 사용하려면 컨텐츠 조각을 게시해야 합니다. 이 작업은 표준 자산 기능을 사용하여 수행됩니다.
 
-* 생성 후; 자산 콘솔에서 사용할 수 있는 [작업 사용](#actions-for-a-content-fragment-assets-console)
-* [컨텐츠 조각 편집기에서](#toolbar-actions-in-the-content-fragment-editor).
-* [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)할 때. 페이지 참조에 조각이 나열됩니다.
+* [빠른 게시](/help/assets/manage-publication.md#quick-publish)
+* [게시 관리](/help/assets/manage-publication.md#manage-publication)
+
+액세스 가능한 항목:
+
+* 생성 후; 사용 [자산 콘솔에서 사용할 수 있는 작업](#actions-for-a-content-fragment-assets-console).
+* 에서 [컨텐츠 조각 편집기](#toolbar-actions-in-the-content-fragment-editor).
+
+또한 [조각을 사용하는 페이지 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); 페이지 참조에 조각이 나열됩니다.
 
 >[!CAUTION]
 조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
