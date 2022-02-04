@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
+source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 34%
+source-wordcount: '1024'
+ht-degree: 33%
 
 ---
 
@@ -95,12 +95,6 @@ ht-degree: 34%
 
 ## Cloud Manager {#cloud-manager}
 
-이 페이지에서는 AEM as a Cloud Service에서 Cloud Manager에 대한 릴리스 노트를 간략하게 설명합니다.
-
->[!NOTE]
->
->을(를) 참조하십시오. [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md) Adobe Experience Manager as a Cloud Service에 대한 최신 릴리스 노트 를 참조하십시오.
-
 ### 릴리스 날짜 {#release-date-cm}
 
 AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1월 20일입니다. 다음 릴리스는 2022년 2월 10일에 예정되어 있습니다.
@@ -118,6 +112,20 @@ AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1�
 * 이제 환경에서 오래된 AEM 버전을 실행 중인 경우 환경 변수를 추가, 업데이트 및 삭제할 수 있습니다.
 * 이미지 작성 단계는 특정 드문 경우 예약된 단계를 사용한 파이프라인에 대한 오류로 더 이상 표시되지 않습니다.
 * 이제 저장소가 하나만 있는 프로그램의 경우 파이프라인 실행 화면에 저장소 이름이 표시됩니다.
+
+## 콘텐츠 전송 도구 {#ctt-release}
+
+### 릴리스 날짜 {#release-date-ctt}
+
+컨텐츠 전송 도구 v1.8.6의 릴리스 날짜는 2022년 2월 3일입니다.
+
+### 새로운 기능 {#what-is-new-ctt}
+
+* 컨텐츠 유효성 검사 - 사용자는 컨텐츠 전송 도구에서 추출한 모든 컨텐츠를 대상 인스턴스에 성공적으로 수집했는지 여부를 안정적으로 확인할 수 있습니다. 이 기능을 사용하려면, `System Console` 소스 AEM 환경의 구성 요소 을(를) 참조하십시오. [컨텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 자세한 내용
+
+### 버그 수정 {#bug-fixes-ctt}
+
+* 사용자 매핑은 대/소문자를 구분하므로 일부 사용자가 매핑되지 않았습니다. 이 문제가 수정되었습니다. 사용자 매핑은 더 이상 대/소문자를 구분하지 않습니다.
 
 ## 모범 사례 분석기 {#bpa-release}
 
