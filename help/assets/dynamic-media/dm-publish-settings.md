@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3456'
 ht-degree: 3%
 
 ---
@@ -66,6 +66,9 @@ Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 
 ### 보안 탭 {#security-tab}
 
 **[!UICONTROL 클라이언트 주소]** - 하나 이상의 IP 주소 또는 IP 주소 범위를 지정할 수 있습니다. 지정하면 목록에 없는 IP 주소의 클라이언트에서 생성된 이 이미지 카탈로그에 대한 요청이 거부됩니다. 이 규칙은 이미지 전달과 렌더링된 이미지 모두에 적용됩니다.
+
+![보안 탭&#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*IP &quot;허용&quot; 필드를 표시하는 보안 탭입니다.*
+
 
 ### 카탈로그 관리 탭 {#catalog-management-tab}
 
