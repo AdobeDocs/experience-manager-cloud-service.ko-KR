@@ -1,15 +1,15 @@
 ---
-title: 컨텐츠 전송 유효성 확인
+title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
-source-git-commit: 9705af35d4a6064c0b4ad35086d98f4b43158dec
+source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 1%
+source-wordcount: '948'
+ht-degree: 2%
 
 ---
 
 
-# 컨텐츠 전송 유효성 확인 {#validating-content-transfers}
+# 콘텐츠 전송 확인 {#validating-content-transfers}
 
 ## 시작하기 {#getting-started}
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->이 기능은 CTT(Content Transfer Tool) 버전 1.8.x 릴리스에서 사용할 수 있습니다. AEM Cloud Service 대상 환경에서 버전 6158 이상을 실행해야 합니다.
+>이 기능은 CTT(Content Transfer Tool) 버전 1.8.x 릴리스에서 사용할 수 있습니다. AEM Cloud Service 대상 환경에서 버전 6158 이상을 실행해야 합니다. 또한 실행하기 위해 소스 환경을 설정해야 합니다 [사전 복사](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 유효성 검사 기능이 소스에서 azcopy.config 파일을 찾습니다. 이 파일을 찾지 못하면 유효성 검사가 실행되지 않습니다. azcopy.config 파일을 구성하는 방법에 대한 자세한 내용은 [이 페이지](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 컨텐츠 전송 유효성 확인은 선택 기능입니다. 이 기능을 활성화하면 추출을 수행하는 데 걸리는 시간과 수집이 모두 증가합니다. 이 기능을 사용하려면 다음 단계를 수행하여 소스 AEM 환경의 System Console에서 기능을 활성화합니다.
 
