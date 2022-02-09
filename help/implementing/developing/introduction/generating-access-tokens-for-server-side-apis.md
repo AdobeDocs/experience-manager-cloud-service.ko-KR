@@ -2,9 +2,9 @@
 title: 서버측 API용 액세스 토큰 생성
 description: 보안 JWT 토큰을 생성하여 타사 서버와 AEM as a Cloud Service 간의 통신을 용이하게 하는 방법을 알아봅니다
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 1b2f1f50832bb06fa5d4cc9a540ebc68cbebf7c8
+source-git-commit: c4f4ce968c17db1f1185ce7be9cad833eaf0b91b
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 서버 간 흐름 {#the-server-to-server-flow}
 
-IMS 조직 관리자 역할을 가진 사용자이며, AEM 작성자의 AEM 사용자 또는 AEM 관리자 제품 프로필의 멤버이기도 한 사용자는 AEM as a Cloud Service 자격 증명을 생성할 수 있습니다. 이 자격 증명은 나중에 AEM as a Cloud Service 환경 관리자 역할을 가진 사용자가 검색할 수 있으며 서버에 설치되어야 하며 보안 키로 신중하게 처리해야 합니다. 이 JSON 형식 파일에는 AEM as a Cloud Service API와 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 IMS 액세스 토큰에 대해 IMS와 교환되는 서명된 JWT 토큰을 만드는 데 사용됩니다. 그런 다음 이 액세스 토큰을 AEM as a Cloud Service에 대한 요청을 수행하는 베어러 인증 토큰으로 사용할 수 있습니다. 자격 증명은 기본적으로 1년 후에 만료되지만, 필요한 경우 새로 고침하여 설명에 따라 생성됩니다 [여기](#refresh-credentials).
+IMS 조직 관리자 역할을 가진 사용자이며, AEM 작성자의 AEM 사용자 또는 AEM 관리자 제품 프로필의 멤버이기도 한 사용자는 AEM as a Cloud Service 자격 증명을 생성할 수 있습니다. 이 자격 증명은 나중에 AEM as a Cloud Service 환경 관리자 역할을 가진 사용자가 검색할 수 있으며 서버에 설치되어야 하며 보안 키로 신중하게 처리해야 합니다. 이 JSON 형식 파일에는 AEM as a Cloud Service API와 통합하는 데 필요한 모든 데이터가 포함되어 있습니다. 이 데이터는 IMS 액세스 토큰에 대해 IMS와 교환되는 서명된 JWT 토큰을 만드는 데 사용됩니다. 그런 다음 이 액세스 토큰을 AEM as a Cloud Service에 대한 요청을 수행하는 베어러 인증 토큰으로 사용할 수 있습니다. 자격 증명은 기본적으로 1년 후에 만료되지만 필요에 따라 새로 고칠 수 있습니다 [여기](#refresh-credentials).
 
 서버 간 흐름에는 다음 단계가 포함됩니다.
 
