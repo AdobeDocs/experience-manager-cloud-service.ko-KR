@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 33%
 
 ## 릴리스 날짜 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2022.1.0)는 2022년 2월 3일입니다.
-다음 릴리스(2022.2.0)는 2022년 2월 24일입니다.
+[!DNL Adobe Experience Manager]인 [!DNL Cloud Service]의 현재 릴리스(2022.1.0)의 날짜는 2022년 2월 3일입니다.
+다음 릴리스(2022.2.0) 날짜는 2022년 2월 24일입니다.
 
 ## 릴리스 비디오 {#release-video}
 
-을(를) 보십시오. [2022년 1월 릴리스 개요](https://video.tv.adobe.com/v/340120) 비디오 - 2022.1.0 릴리스에 추가된 기능에 대한 요약
+[2022년 1월 릴리스 개요](https://video.tv.adobe.com/v/340120) 비디오를 통해 2022.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -44,22 +44,22 @@ ht-degree: 33%
 
 ### [!DNL Assets] 프리릴리스 채널의 새로운 기능 {#assets-prerelease-features}
 
-* [!DNL AEM Dynamic Media] 이제 는 [하나의 별칭 계정 구성](../../assets/dynamic-media/dm-alias-account.md) ( 사용자 인터페이스)에서 바로 사용 가능한 Dynamic Media URL 및 뷰어 포함 코드가 업데이트되도록 합니다. 이는 리브랜딩과 같은 비즈니스 컨텍스트에 대한 업데이트를 반영하기 위해 SEO에 긍정적인 영향을 줍니다.
+* [!DNL AEM Dynamic Media] 이제 즉시 사용 가능한 Dynamic Media URL 및 뷰어 임베드 코드를 업데이트하도록 사용자 인터페이스에서 [하나의 별칭 계정](../../assets/dynamic-media/dm-alias-account.md)을 구성할 수 있습니다. 이는 리브랜딩과 같은 비즈니스 컨텍스트에 대한 업데이트를 반영하여 SEO에 긍정적인 영향을 미칩니다.
 
-* 이제 를 사용할 수 있습니다 [!DNL Experience Manager Assets] 사용자 인터페이스 대상:
+* 이제 [!DNL Experience Manager Assets] 사용자 인터페이스를 사용하여 다음을 수행할 수 있습니다.
 
-   * 저장소에서 중복 자산 감지를 구성합니다.
+   * 저장소에서 중복 에셋 감지를 구성합니다.
 
    * 이미지에 디지털 워터마크 추가를 구성합니다.
 
-* 이제 관리자는 대규모 다운로드에 대한 이메일 서비스를 구성할 수 있습니다. 이를 통해 사용자는 [대규모 다운로드에 대한 이메일 알림 활성화](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) 에서 [!DNL Experience Manager Assets] 인터페이스. 사용자는 다운로드 프로세스가 완료되면 보관된 zip 폴더의 다운로드 링크가 포함된 이메일 알림을 받습니다.
+* 이제 관리자는 대량 다운로드를 위한 이메일 서비스를 구성할 수 있습니다. 이를 통해 사용자는 [!DNL Experience Manager Assets] 인터페이스에서 [대량 다운로드에 대한 이메일 알림](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)을 활성화할 수 있습니다. 사용자는 다운로드 프로세스가 완료되면 아카이브된 zip 폴더의 다운로드 링크가 포함된 이메일 알림을 수신하게 됩니다.
 
 
-* 다음 [게시 관리](/help/assets/manage-publication.md) 향상된 사용자 인터페이스를 통해 기능이 향상되었습니다. 사용자는 선택한 대상에 콘텐츠를 게시하거나 선택한 대상에 게시 취소할 수 있습니다. [컨텐츠 추가](/help/assets/manage-publication.md#add-content) DAM 저장소에서 게시 목록 [폴더 설정 포함](/help/assets/manage-publication.md#include-folder-settings) 선택한 폴더의 컨텐츠를 게시하고 필터를 적용하려면 [게시 예약](/help/assets/manage-publication.md#publish-assets-later) 나중에 또는 나중에
+* [게시 관리](/help/assets/manage-publication.md) 기능은 개선된 사용자 인터페이스로 향상되었습니다. 사용자는 선택한 대상에 콘텐츠를 게시하거나 게시를 취소하고, DAM 저장소의 게시 목록에 [콘텐츠를 추가](/help/assets/manage-publication.md#add-content)하고, [폴더 설정을 포함하여](/help/assets/manage-publication.md#include-folder-settings) 선택한 폴더의 콘텐츠를 게시하고 필터를 적용하고, 나중에 게시할 날짜 또는 시간에 [게시 일정](/help/assets/manage-publication.md#publish-assets-later)을 지정할 수 있습니다.
 
 ### 버그 수정 {#bug-fixes}
 
-* AEM 온프레미스 서비스에서 클라우드 서비스로 자산을 마이그레이션하는 동안 원래 렌디션이 없는 처리되지 않은 자산이 처리를 위해 Asset compute에 전송됩니다.
+* 원본 렌디션이 없는 처리되지 않은 에셋은 AEM on-premise에서 클라우드 서비스로 에셋을 마이그레이션하는 동안 처리를 위해 Asset Compute로 전송됩니다.
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
@@ -68,15 +68,15 @@ ht-degree: 33%
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ko-KR)를 통해 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드와 배치 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
 
    * XML 데이터로 템플릿 파일을 채워 문서를 생성합니다.
-   * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 양식을 생성합니다.
+   * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식의 양식을 생성합니다.
    * XFA 양식 PDF에서 인쇄 PDF를 생성합니다.
-   * 여러 데이터 세트를 소스 템플릿에 병합하여 PDF, PostScript, PCL 및 ZPL 문서를 일괄적으로 생성합니다.
+   * 여러 데이터 세트를 소스 템플릿과 병합하여 PDF, PostScript, PCL 및 ZPL 문서를 대량으로 생성합니다.
 
 * **커뮤니케이션 API로 생성된 기록 문서 및 PDF 문서에 대한 맞춤형 글꼴**: 이제 커뮤니케이션 API를 사용하여 생성된 PDF 문서의 브랜드 승인 글꼴을 사용하여 조직 요구 사항을 맞출 수 있습니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
-* **[어셈블러 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: PDF 문서에 대한 정보를 결합, 재정렬, 보강 및 가져올 수 있는 어셈블러 API입니다.
+* **[어셈블러 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: PDF 문서에 대한 정보를 결합, 재배열, 보강 및 얻을 수 있는 어셈블러 API입니다.
 
 
 ## CIF 추가 기능 {#cloud-services-cif}
@@ -84,12 +84,12 @@ ht-degree: 33%
 ### 새로운 기능 {#what-is-new-cif}
 
 * 향상된 myAccount 구성 요소
-* 제품 권장 사항 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다
+* 제품 추천 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다.
 * **위시리스트**
-   * 로그인한 방문자는 wishlist에 제품을 추가할 수 있습니다
-   * myAccount를 통해 Wishlist와 그 제품의 관리 가능
-   * &quot;wishlist에 추가&quot; 단추는 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항)
-   * 코어 구성 요소 및 AEM Venia Storefront에서 사용할 수 있습니다.
+   * 로그인한 방문자는 위시리스트에 제품을 추가할 수 있습니다.
+   * myAccount를 통해 위시리스트 및 해당 제품을 관리할 수 있습니다.
+   * “위시리스트에 추가” 버튼은 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항).
+   * 핵심 구성 요소 및 AEM Venia Storefront에서 사용 가능
 
 ![위시리스트](/help/assets/CIF/wishlist.png)
 
@@ -101,45 +101,45 @@ AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1�
 
 ### 새로운 기능 {#what-is-new-cm}
 
-* Cloud Manager가 [동일한 git 커밋이 사용됨을 감지하면 코드 베이스를 다시 빌드하지 마십시오](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 여러 전체 스택 파이프라인 실행에서.
-* 이제 AEM 환경 로그에 액세스하려면 **배포 관리자** 제품 프로필 . 이 프로필이 없는 사용자는 사용자 인터페이스에 비활성화된 단추가 표시됩니다.
-* UI는 Sites를 솔루션으로 사용할 수 없는 프로그램에 대한 프런트엔드 파이프라인 구성을 허용하지 않습니다.
-* Git 암호를 생성하면 만료 날짜가 표시됩니다.
+* Cloud Manager는 [동일한 Git Commit이 여러 전체 스택 파이프라인 실행에 사용되는 것을 감지하면 코드 베이스를 다시 빌드하지 않습니다](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
+* 이제 AEM 환경 로그에 액세스하려면 **Deployment Manager** 제품 프로필이 필요합니다. 이 프로필이 없는 사용자에게는 사용자 인터페이스에서 비활성화된 버튼이 표시됩니다.
+* UI는 Sites가 솔루션으로 활성화되지 않은 프로그램에 대한 프론트엔드 파이프라인 구성을 허용하지 않습니다.
+* Git 비밀번호 생성 시 만료 날짜가 표시됩니다.
 
 ### 버그 수정 {#bug-fixes-cm}
 
-* 일부 프런트 엔드 파이프라인 배포에서 발생한 Null 포인터 예외가 수정되었습니다.
-* 이제 환경에서 오래된 AEM 버전을 실행 중인 경우 환경 변수를 추가, 업데이트 및 삭제할 수 있습니다.
-* 이미지 작성 단계는 특정 드문 경우 예약된 단계를 사용한 파이프라인에 대한 오류로 더 이상 표시되지 않습니다.
-* 이제 저장소가 하나만 있는 프로그램의 경우 파이프라인 실행 화면에 저장소 이름이 표시됩니다.
+* 일부 프론트엔드 파이프라인 배포에서 발생한 Null 포인터 예외가 수정되었습니다.
+* 이제 환경에서 오래된 버전의 AEM을 실행할 때 환경 변수를 추가, 업데이트 및 삭제할 수 있습니다.
+* 드문 경우지만 예약된 단계를 사용한 파이프라인에 대해 빌드 이미지 단계가 더 이상 오류로 표시되지 않습니다.
+* 저장소가 하나만 있는 프로그램의 경우 이제 파이프라인 실행 화면에 저장소 이름이 표시됩니다.
 
 ## 콘텐츠 전송 도구 {#ctt-release}
 
 ### 릴리스 날짜 {#release-date-ctt}
 
-컨텐츠 전송 도구 v1.8.6의 릴리스 날짜는 2022년 2월 3일입니다.
+콘텐츠 전송 도구 v1.8.6의 릴리스 날짜는 2022년 2월 3일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 컨텐츠 유효성 검사 - 사용자는 컨텐츠 전송 도구에서 추출한 모든 컨텐츠를 대상 인스턴스에 성공적으로 수집했는지 여부를 안정적으로 확인할 수 있습니다. 이 기능을 사용하려면, `System Console` 소스 AEM 환경의 구성 요소 을(를) 참조하십시오. [컨텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) 자세한 내용
+* 콘텐츠 유효성 검사 - 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 기능을 사용하려면 소스 AEM 환경의 `System Console`에서 활성화해야 합니다. 자세한 내용은 [콘텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started)를 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-ctt}
 
-* 사용자 매핑은 대/소문자를 구분하므로 일부 사용자가 매핑되지 않았습니다. 이 문제가 수정되었습니다. 사용자 매핑은 더 이상 대/소문자를 구분하지 않습니다.
+* 사용자 매핑이 대소문자를 구분하기 때문에 일부 사용자가 매핑되지 않았습니다. 이 문제가 해결되었습니다. 사용자 매핑은 더 이상 대소문자를 구분하지 않습니다.
 
 ## 모범 사례 분석기 {#bpa-release}
 
 ### 릴리스 날짜 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.24 릴리스 날짜는 2022년 2월 1일입니다.
+우수 사례 분석기 v2.1.24의 릴리스 날짜는 2022년 2월 1일입니다.
 
 ### 새로운 기능 {#what-is-new-bpa}
 
-* 스마트 태그가 있는 자산 및 없는 자산 수를 감지하고 보고하는 기능.
-* 사용된 코어 구성 요소 버전을 감지하고 보고할 수 있습니다.
-* BPA가 실행된 소스 계층(작성자 또는 게시)의 유형을 감지하고 보고하는 기능.
+* 스마트 태그가 있거나 없는 에셋 수를 감지하고 보고하는 기능.
+* 사용된 핵심 구성 요소 버전 감지 및 보고 기능.
+* BPA가 실행된 소스 계층 유형(작성자 또는 게시)을 감지하고 보고하는 기능.
 
 ### 버그 수정 {#bug-fixes-bpa}
 
-* BPA 크기 조정 로직이 더 빠르고 효율적으로 만들어졌습니다.
-* 일부 시나리오에서 BPA는 실행 시 분석된 카운트를 증가시키지 않았습니다. 이 문제가 수정되었습니다.
+* BPA 크기 조정 논리는 더 빠르고 효율적으로 만들어졌습니다.
+* 일부 시나리오에서는 BPA가 실행될 때 분석된 수를 증가시키지 않았습니다. 이 문제가 해결되었습니다.
