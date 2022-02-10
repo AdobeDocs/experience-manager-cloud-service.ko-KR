@@ -1,23 +1,23 @@
 ---
-title: AEM as a Cloud Service에서 CDN
-description: AEM as a Cloud Service에서 CDN
+title: AEM as a Cloud Service의 CDN
+description: AEM as a Cloud Service의 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
+source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 8%
+source-wordcount: '946'
+ht-degree: 9%
 
 ---
 
-# AEM as a Cloud Service에서 CDN {#cdn}
+# AEM as a Cloud Service의 CDN {#cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
->title="AEM as a Cloud Service에서 CDN"
+>title="AEM as a Cloud Service의 CDN"
 >abstract="Cloud Service으로 AEM이 기본 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 컨텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다."
 
-Cloud Service으로 AEM이 기본 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 컨텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
+Cloud Service으로 AEM이 기본 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
 
 AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 충족합니다. 게시 계층의 경우 고객이 선택적으로 자신의 CDN에서 가리키도록 할 수 있으며, 이를 관리해야 합니다. 중단하기 어려운 CDN 공급업체와 레거시 통합을 보유한 고객을 포함한 특정 전제 조건을 충족하는 것에 제한되지 않고, 이를 기반으로 케이스별로 허용됩니다.
 
@@ -26,7 +26,7 @@ AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 충�
 Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하여 컨텐츠 전달을 준비하려면 아래 섹션을 따르십시오.
 
 1. [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-1. [사용자 지정 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+1. [맞춤형 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **트래픽 제한**
 
@@ -52,6 +52,10 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 * 고객은 AEM as a Cloud Service에서 작동하도록 CDN을 구성할 수 있어야 합니다. 아래 표시된 구성 지침을 참조하십시오.
 * 고객은 관련 문제가 발생할 경우 호출되는 엔지니어링 CDN 전문가가 있어야 합니다.
 * 고객은 프로덕션으로 이동하기 전에 로드 테스트를 수행하고 성공적으로 통과해야 합니다.
+
+>[!NOTE]
+>
+>Adobe CDN은 선택 사항이 아닙니다. 자체 CDN을 가져오는 고객은 AEM Managed CDN을 가리켜야 합니다.
 
 구성 지침:
 
