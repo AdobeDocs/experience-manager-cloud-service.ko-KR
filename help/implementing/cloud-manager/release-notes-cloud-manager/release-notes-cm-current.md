@@ -1,16 +1,16 @@
 ---
-title: AEM as a Cloud Service 릴리스 2022.01.0의 Cloud Manager 릴리스 노트
-description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2022.01.0.
+title: AEM as a Cloud Service 릴리스 2022.02.0의 Cloud Manager 릴리스 노트
+description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2022.02.0.
 feature: Release Information
-source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
 이 페이지에서는 AEM as a Cloud Service에서 Cloud Manager에 대한 릴리스 노트를 간략하게 설명합니다.
 
@@ -20,18 +20,20 @@ ht-degree: 2%
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1월 20일입니다. 다음 릴리스는 2022년 2월 10일에 예정되어 있습니다.
+AEM as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 날짜는 2022년 2월 10일입니다. 다음 릴리스는 2022년 3월 10일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* Cloud Manager가 [동일한 git 커밋이 사용됨을 감지하면 코드 베이스를 다시 빌드하지 마십시오](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 여러 전체 스택 파이프라인 실행에서.
-* 이제 AEM 환경 로그에 액세스하려면 **배포 관리자** 제품 프로필 . 이 프로필이 없는 사용자는 사용자 인터페이스에 비활성화된 단추가 표시됩니다.
-* UI는 Sites를 솔루션으로 사용할 수 없는 프로그램에 대한 프런트엔드 파이프라인 구성을 허용하지 않습니다.
-* Git 암호를 생성하면 만료 날짜가 표시됩니다.
+* 새로운 가속 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 은 HTTPD/dispatcher 구성을 독점적으로 배포하기 위해 도입되었습니다
+   * AEM 버전을 사용해야 합니다. `2021.12.6151.20211217T120950Z` 을 클릭하여 이 기능을 사용할 수 있습니다.
+   * 이 기능은 2022.02.0 릴리스 후 2주에 걸쳐 단계적인 접근 방식으로 롤아웃됩니다.
+* Cloud Manager 랜딩 페이지 환경을 새로 고쳐 향상된 탐색, 그리드/타일 보기 및 팝업 오버를 제공하여 빠른 프로그램 요약을 제공합니다.
+* 실패한 새 임계값(`< D`)이 에 추가되었습니다. [신뢰성 등급 지표.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * 시스템 안정성에 영향을 주는 심각한 품질 문제가 있는 고객(주로 잘못된 인덱스 및 워크플로우 프로세스와 관련이 있음)은 이러한 문제가 해결될 때까지 배포할 수 없습니다.
+* 의 심각도 `BannedPath` [품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) 이 차단기에서 위험으로 변경되었습니다.
+* 파이프라인 마법사는 를 구성하기 전에 AEM 환경 업데이트가 필요할 수 있음을 사용자에게 알려줍니다 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 관련 항목.
 
 ## 버그 수정 {#bug-fixes}
 
-* 일부 프런트 엔드 파이프라인 배포에서 발생한 Null 포인터 예외가 수정되었습니다.
-* 이제 환경에서 오래된 AEM 버전을 실행 중인 경우 환경 변수를 추가, 업데이트 및 삭제할 수 있습니다.
-* 이미지 작성 단계는 특정 드문 경우 예약된 단계를 사용한 파이프라인에 대한 오류로 더 이상 표시되지 않습니다.
-* 이제 저장소가 하나만 있는 프로그램의 경우 파이프라인 실행 화면에 저장소 이름이 표시됩니다.
+* 새 암호가 생성되면 이전 Git 리포지토리 암호가 항상 무효화됩니다.
+* API를 통해 환경 변수를 업데이트해도 드물게 발생하는 경우 파이프라인 실행이 더 이상 방해되지 않습니다.

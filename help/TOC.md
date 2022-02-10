@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c135f7c0c5265110774d145bf8c5a73d44d660b1
+source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
 workflow-type: tm+mt
-source-wordcount: '3500'
-ht-degree: 98%
+source-wordcount: '3494'
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 98%
       + [설치](/help/journey-sites/demos-add-on/installation.md)
       + [프로그램 제작](/help/journey-sites/demos-add-on/create-program.md)
       + [데모 사이트 만들기](/help/journey-sites/demos-add-on/create-site.md)
-      + [화면 활성화](/help/journey-sites/demos-add-on/screens.md)
+      + [스크린 활성화](/help/journey-sites/demos-add-on/screens.md)
       + [데모 사이트 관리](/help/journey-sites/demos-add-on/manage.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
@@ -127,7 +127,7 @@ ht-degree: 98%
          + [콘텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [콘텐츠 전송 도구 사용을 위한 지침 및 모범 사례](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
-         + [컨텐츠 전송 유효성 확인](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
+         + [콘텐츠 전송 확인](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [소스에서 콘텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [대상에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -289,7 +289,7 @@ ht-degree: 98%
       + [에셋 추가 및 업로드](/help/assets/add-assets.md)
       + [에셋 검색](/help/assets/search-assets.md)
       + [일반적인 에셋 관리 작업](/help/assets/manage-digital-assets.md)
-      + [게시물 관리](/help/assets/manage-publication.md)
+      + [게시 관리](/help/assets/manage-publication.md)
       + [3D 에셋 미리보기](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [이미지용 스마트 태그](/help/assets/smart-tags.md)
       + [비디오 에셋에 스마트 태그 지정](/help/assets/smart-tags-video-assets.md)
@@ -470,7 +470,7 @@ ht-degree: 98%
       + [통신 API - 동기 처리](/help/forms/aem-forms-cloud-service-communications.md)
       + [통신 API - 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [PDF 문서에서 맞춤형 글꼴 사용하기](/help/forms/use-custom-fonts.md)
-      + [알려진 문제, 우수 사례 및 FAQ](/help/forms/communications-known-issues-limitations.md)
+      + [알려진 문제, 모범 사례 및 FAQ](/help/forms/communications-known-issues-limitations.md)
    + [ [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [자주 묻는 질문](/help/forms/faq.md)
    + [알려진 문제](/help/forms/known-issues.md)
@@ -512,9 +512,9 @@ ht-degree: 98%
       + [구성 요소 만들기](/help/screens-cloud/developing/creating-components.md)
       + [Screens as a Cloud Service에 대한 맞춤형 구성 요소 개발](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Screens as a Cloud Service FAQ](/help/screens-cloud/screens-cloud-faqs.md)
-+ Content 및 Commerce {#content-and-commerce}
-   + [AEM Content 및 Commerce](/help/commerce-cloud/home.md)
-   + [AEM Content 및 Commerce as a Cloud Service의 주요 변경 내용](/help/commerce-cloud/changes.md)
++ Content and Commerce {#content-and-commerce}
+   + [AEM Content and Commerce](/help/commerce-cloud/home.md)
+   + [AEM Content and Commerce as a Cloud Service의 주요 변경 내용](/help/commerce-cloud/changes.md)
    + [소개 및 개요](/help/commerce-cloud/introduction.md)
    + 상거래 여정 {#journeys}
       + 콘텐츠 작성 여정 {#author}
@@ -526,7 +526,7 @@ ht-degree: 98%
    + 통합 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
       + [서드파티 상거래 솔루션](/help/commerce-cloud/integrating/third-party.md)
-   + AEM 상점 첫 화면 {#storefront}
+   + AEM Storefront {#storefront}
       + [시작하기](/help/commerce-cloud/getting-started.md)
       + 작성 {#authoring}
          + [상거래 경험](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
@@ -552,6 +552,8 @@ ht-degree: 98%
    + Cloud Manager 사용 {#using-cloud-manager}
       + Cloud Manager 릴리스 정보 {#release-notes-cloud-manager}
          + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+         + 2022년 {#2022}
+            + [2022.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021년 {#2021}
             + [2021.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [2021.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -602,12 +604,9 @@ ht-degree: 98%
       + [환경 변수](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 파이프라인 {#cicd-pipelines}
          + [소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-         + 프로덕션 파이프라인 {#production-pipelines}
-            + [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-            + [프로덕션 파이프라인 편집](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + 비프로덕션 파이프라인 {#non-production-pipelines}
-            + [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-            + [비프로덕션 파이프라인 편집](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+         + [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [파이프라인 관리](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [코드 배포](/help/implementing/cloud-manager/deploy-code.md)
       + 테스트 결과 이해 {#test-results}
          + [개요](/help/implementing/cloud-manager/overview-test-results.md)
@@ -824,7 +823,7 @@ ht-degree: 98%
    + [유지 관리 작업](/help/operations/maintenance.md)
    + [백업 및 복원](/help/operations/backup.md)
    + [비동기 작업](/help/operations/asynchronous-jobs.md)
-   + [일반 lucene 인덱스 제거](/help/operations/removal-generic-lucene-index.md)
+   + [일반 Lucene 인덱스 제거](/help/operations/removal-generic-lucene-index.md)
 + 규정 준수 {#compliance}
    + [AEM as a Cloud Service 규정 준수](/help/compliance/home.md)
    + 데이터 개인정보 보호 및 보호 준비 {#data-privacy}
