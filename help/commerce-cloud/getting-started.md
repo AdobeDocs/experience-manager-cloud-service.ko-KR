@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ CIF 추가 기능 및 [AEM CIF 코어 구성 요소](https://github.com/adobe/ae
 
 각 AEM as a Cloud Service 환경에 다른 GraphQL 엔드포인트 URL을 사용할 수 있습니다. 이렇게 하면 프로젝트가 전자 상거래 스테이징 시스템 및 AEM 프로덕션 환경과 AEM 스테이징 환경을 상거래 프로덕션 시스템에 연결할 수 있습니다. GraphQL 끝점은 공개적으로 사용할 수 있어야 하며 개인 VPN 또는 로컬 연결은 지원되지 않습니다. 원할 경우, 인증을 필요로 하는 추가 CIF 기능을 사용하기 위해 인증 헤더를 제공할 수 있습니다.
 
-Adobe Commerce Enterprise/Cloud에 대한 선택적 및 전용 CIF 추가 기능은 AEM 작성자를 위해 준비된 카탈로그 데이터 사용을 지원합니다. 인증 토큰을 구성해야 합니다. 구성된 인증 토큰은 보안상의 이유로 AEM 작성자 인스턴스에서만 사용할 수 있으며, AEM 게시 인스턴스에서는 스테이징된 데이터를 표시할 수 없습니다.
+선택적 및 Adobe Commerce Enterprise/Cloud에만 CIF 추가 기능은 AEM 작성자를 위해 준비된 카탈로그 데이터의 사용을 지원합니다. 인증 헤더를 구성해야 합니다. 이 헤더는 보안상의 이유로 AEM 작성자 인스턴스에서만 사용할 수 있으며 사용됩니다. AEM 게시 인스턴스에서는 스테이징된 데이터를 표시할 수 없습니다.
 
 끝점을 구성하는 두 가지 옵션이 있습니다.
 
@@ -59,7 +59,7 @@ Adobe Commerce Enterprise/Cloud에 대한 선택적 및 전용 CIF 추가 기능
 
 ![CM 상거래 끝점](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-엔드포인트(선택적으로 스테이지된 카탈로그 지원을 위한 인증 토큰)가 설정되면 엔드포인트가 세부 정보 페이지에 표시됩니다. 편집 아이콘을 클릭하면 필요한 경우 엔드포인트를 수정할 수 있는 동일한 대화 상자가 열립니다.
+종단점 및 선택적으로 스테이지된 카탈로그 지원을 위한 인증 헤더가 설정되면 종단점이 세부 사항 페이지에 표시됩니다. 편집 아이콘을 클릭하면 필요한 경우 엔드포인트를 수정할 수 있는 동일한 대화 상자가 열립니다.
 
 ![CM 환경 정보](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
