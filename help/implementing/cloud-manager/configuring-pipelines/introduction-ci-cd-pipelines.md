@@ -2,9 +2,9 @@
 title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이 파이프라인을 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 1%
 
 ---
@@ -147,16 +147,18 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 웹 계층 구성 파이프라인은 다른 코드 변경 사항에서 HTTPD/Dispatcher 구성을 분리하여 AEM 런타임으로 독점적으로 배포할 수 있도록 합니다. Dispatcher 구성 변경 사항만 배포하려는 사용자를 제공하는 간소화된 파이프라인이며 몇 분 안에 이를 가속화하는 방법입니다.
 
->[!IMPORTANT]
+>[!TIP]
 >
->AEM 버전을 사용해야 합니다. `X` 웹 계층 구성 파이프라인을 활용합니다.
+>웹 계층 구성 파이프라인을 사용하면 프로젝트에 더 적합한 구조에 따라 전체 스택 파이프라인과 동일한 소스 위치에 웹 구성을 저장하거나 다른 위치에 저장할 것인지 선택할 수 있습니다.
 
 다음 제한 사항이 적용됩니다.
 
+* AEM 버전을 사용해야 합니다. `2021.12.6151.20211217T120950Z` 웹 계층 구성 파이프라인을 활용하기 위한 최신 버전입니다.
+* 다음을 수행해야 합니다. [dispatcher 도구의 유연한 모드로 옵트인합니다.](/help/implementing/dispatcher/disp-overview.md#validation-debug) 웹 계층 구성 파이프라인을 활용합니다.
 * 사용자는 **배포 관리자** 역할을 사용하여 파이프라인을 구성하거나 실행할 수 있습니다.
 * 언제든지 환경당 하나의 웹 계층 구성 파이프라인만 있을 수 있습니다.
 * 해당 전체 스택 파이프라인이 실행 중인 경우 웹 계층 구성 파이프라인을 구성할 수 없습니다.
-* 웹 계층 구조는 문서에 정의된 대로 유연한 모드 구조를 준수해야 합니다 [클라우드의 디스패처](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* 웹 계층 구조는 문서에 정의된 대로 유연한 모드 구조를 준수해야 합니다 [클라우드의 디스패처.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 또한 [전체 스택 파이프라인](#full-stack-pipeline) 은 웹 계층 파이프라인을 도입하면 동작합니다.
 

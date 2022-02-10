@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 릴리스 2022.02.0의 Cloud Manager 릴리스 노트
 description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2022.02.0.
 feature: Release Information
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,8 @@ AEM as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 날짜는 2022년 2�
 
 ## 새로운 기능 {#what-is-new}
 
-* 새로운 가속 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 은 HTTPD/dispatcher 구성을 독점적으로 배포하기 위해 도입되었습니다
-   * AEM 버전을 사용해야 합니다. `2021.12.6151.20211217T120950Z` 을 클릭하여 이 기능을 사용할 수 있습니다.
+* 새로운 가속 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 은 HTTPD/dispatcher 구성을 독점적으로 배포하기 위해 도입되었습니다.
+   * AEM 버전을 사용해야 합니다. `2021.12.6151.20211217T120950Z` 또는 이상 [dispatcher 도구의 유연한 모드로 옵트인합니다.](/help/implementing/dispatcher/disp-overview.md#validation-debug) 을 클릭하여 이 기능을 사용할 수 있습니다.
    * 이 기능은 2022.02.0 릴리스 후 2주에 걸쳐 단계적인 접근 방식으로 롤아웃됩니다.
 * Cloud Manager 랜딩 페이지 환경을 새로 고쳐 향상된 탐색, 그리드/타일 보기 및 팝업 오버를 제공하여 빠른 프로그램 요약을 제공합니다.
 * 실패한 새 임계값(`< D`)이 에 추가되었습니다. [신뢰성 등급 지표.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
