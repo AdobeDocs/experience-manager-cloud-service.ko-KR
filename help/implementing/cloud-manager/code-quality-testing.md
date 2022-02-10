@@ -15,7 +15,10 @@ ht-degree: 2%
 
 >[!CONTEXTUALHELP]
 >
->
+>id="aemcloud_nonbpa_codequalitytests"
+>title="Code Quality Testing"
+>abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+
 ## 소개 {#introduction}
 
 코드 품질 테스트는 품질 규칙 세트를 기반으로 애플리케이션 코드를 평가합니다. 이는 코드 품질 전용 파이프라인의 기본 목적이며 모든 프로덕션 및 비프로덕션 파이프라인에서 빌드 단계에 따라 즉시 실행됩니다.
