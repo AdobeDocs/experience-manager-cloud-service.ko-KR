@@ -2,9 +2,9 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트 작동 방식과 배포 품질을 향상시키는 방법을 알아봅니다.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
+source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1147'
 ht-degree: 2%
 
 ---
@@ -14,10 +14,9 @@ ht-degree: 2%
 파이프라인의 코드 품질 테스트 작동 방식과 배포 품질을 향상시키는 방법을 알아봅니다.
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>title="코드 품질 테스트"
+>abstract="코드 품질 테스트는 품질 규칙 세트를 기반으로 애플리케이션 코드를 평가합니다. 이는 코드 품질 전용 파이프라인의 기본 목적이며 모든 프로덕션 및 비프로덕션 파이프라인에서 빌드 단계에 따라 즉시 실행됩니다."
 
 ## 소개 {#introduction}
 
@@ -30,7 +29,8 @@ ht-degree: 2%
 코드 품질 테스트는 소스 코드를 스캔하여 특정 품질 기준을 충족하는지 확인합니다. OakPAL을 사용하여 SonarQube와 콘텐츠 패키지 수준 검사를 조합하여 구현됩니다. 일반 Java 규칙과 AEM 관련 규칙을 결합하는 100개 이상의 규칙이 있습니다. 일부 AEM 관련 규칙은 AEM Engineering의 우수 사례를 기반으로 작성되며, 다음과 같이 부릅니다 [사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-전체 규칙 목록을 다운로드할 수 있습니다 [이 링크를 사용하여 메시지를 표시합니다.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>
+>전체 규칙 목록을 다운로드할 수 있습니다 [이 링크를 사용하여 메시지를 표시합니다.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### 3층 등급 {#three-tiered-gate}
 
@@ -58,10 +58,12 @@ ht-degree: 2%
 | Cloud Service 호환성 | 식별된 클라우드 서비스 호환성 문제 수 | 정보 | > 0 |
 
 >[!NOTE]
-을(를) 참조하십시오. [SonarQube의 지표 정의](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) 를 참조하십시오.
+>
+>을(를) 참조하십시오. [SonarQube의 지표 정의](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) 를 참조하십시오.
 
 >[!NOTE]
-에서 실행되는 사용자 지정 코드 품질 규칙에 대해 자세히 알아보려면 [!UICONTROL Cloud Manager]을(를) 참조하십시오. [사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>
+>에서 실행되는 사용자 지정 코드 품질 규칙에 대해 자세히 알아보려면 [!UICONTROL Cloud Manager]을(를) 참조하십시오. [사용자 지정 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## 긍정 오류 처리 {#dealing-with-false-positives}
 
@@ -94,10 +96,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 그런 다음 하드코딩된 암호를 제거하는 것이 올바른 방법입니다.
 
 >[!NOTE]
-반면에, 이것은 `@SuppressWarnings` 가능한 한 구체적이고, 예를 들어 문제를 일으키는 특정 문이나 블록에만 주석을 달고, 클래스 수준에서 주석을 달 수 있습니다.
+>
+>반면에, 이것은 `@SuppressWarnings` 가능한 한 구체적이고, 예를 들어 문제를 일으키는 특정 문이나 블록에만 주석을 달고, 클래스 수준에서 주석을 달 수 있습니다.
 
 >[!NOTE]
-명시적 보안 테스트 단계는 아니지만 코드 품질 단계 동안 평가된 보안 관련 코드 품질 규칙이 있습니다. 문서를 참조하십시오 [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md) Cloud Service의 보안에 대한 자세한 내용을 살펴보십시오.
+>명시적 보안 테스트 단계는 아니지만 코드 품질 단계 동안 평가된 보안 관련 코드 품질 규칙이 있습니다. 문서를 참조하십시오 [AEM as a Cloud Service 보안 개요](/help/security/cloud-service-security-overview.md) Cloud Service의 보안에 대한 자세한 내용을 살펴보십시오.
 
 ## 컨텐츠 패키지 스캔 최적화 {#content-package-scanning-optimization}
 
@@ -114,6 +117,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 &quot;모두&quot; 컨텐츠 패키지에 건너뛴 컨텐츠 패키지와 OSGi 번들의 조합이 포함되어 있을 때 특별한 경우가 발생할 수 있습니다. 예를 들어 `myco-all-1.0.0-SNAPSHOT.zip` 이전에 언급된 두 개의 포함된 패키지와 하나 이상의 OSGi 번들이 포함되어 있으면 OSGi 번들만 사용하여 최소 새로운 컨텐츠 패키지가 작성됩니다. 이 패키지의 이름은 항상 다음과 같습니다 `cloudmanager-synthetic-jar-package` 그리고 포함된 번들이 `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
-* 이 최적화는 AEM에 배포된 패키지에 영향을 주지 않습니다.
-* 포함된 컨텐츠 패키지와 건너뛴 컨텐츠 패키지 간의 일치는 파일 이름을 기반으로 하므로 건너뛴 여러 컨텐츠 패키지에 동일한 파일 이름이 있거나 포함 중에 파일 이름이 변경된 경우에는 이 최적화를 수행할 수 없습니다.
+>
+>* 이 최적화는 AEM에 배포된 패키지에 영향을 주지 않습니다.
+>* 포함된 컨텐츠 패키지와 건너뛴 컨텐츠 패키지 간의 일치는 파일 이름을 기반으로 하므로 건너뛴 여러 컨텐츠 패키지에 동일한 파일 이름이 있거나 포함 중에 파일 이름이 변경된 경우에는 이 최적화를 수행할 수 없습니다.
 

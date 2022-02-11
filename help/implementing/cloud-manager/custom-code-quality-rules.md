@@ -2,25 +2,25 @@
 title: 맞춤형 코드 품질 규칙
 description: 이 페이지에서는 [코드 품질 테스트]의 일부로 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대해 설명합니다. AEM Engineering의 우수 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 4567581eb02c928f1493defdab667cc713fc222a
+source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 3%
+source-wordcount: '3495'
+ht-degree: 4%
 
 ---
 
 # 맞춤형 코드 품질 규칙 {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_customcodequalityrules"
->title="Custom Code Quality Rules"
->abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
+>title="맞춤형 코드 품질 규칙"
+>abstract="이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대해 설명합니다. AEM Engineering의 우수 사례를 기반으로 합니다."
 
 이 페이지에서는 Cloud Manager가 의 일부로 실행하는 사용자 지정 코드 품질 규칙에 대해 설명합니다 [코드 품질 테스트.](/help/implementing/cloud-manager/code-quality-testing.md) AEM Engineering의 우수 사례를 기반으로 합니다.
 
 >[!NOTE]
-여기에 제공된 코드 샘플은 예시적인 용도로만 제공됩니다. SonarQube 를 참조하십시오. [개념 설명서](https://docs.sonarqube.org/7.4/user-guide/concepts/) SonarQube 개념 및 품질 규칙에 대해 알아봅니다.
+>
+>여기에 제공된 코드 샘플은 예시적인 용도로만 제공됩니다. SonarQube 를 참조하십시오. [개념 설명서](https://docs.sonarqube.org/7.4/user-guide/concepts/) SonarQube 개념 및 품질 규칙에 대해 알아봅니다.
 
 ## SonarQube 규칙 {#sonarqube-rules}
 
@@ -315,7 +315,8 @@ public void doThis() throws Exception {
 일반적으로 INFO 로그 수준을 사용하여 중요한 작업을 구분해야 하며 기본적으로 AEM은 INFO 수준 이상으로 로그온하도록 구성되어 있습니다. GET 및 HEAD 방법은 읽기 전용 작업만 수행되어야 하므로 중요한 작업을 구성하지 않습니다. GET 또는 HEAD 요청에 응답하여 INFO 수준에서 로그인하면 상당한 로그 노이즈가 발생할 수 있으므로 로그 파일에서 유용한 정보를 식별하기가 어렵습니다. GET 또는 HEAD 요청을 처리할 때 로깅은 문제가 발생한 경우 WARN 또는 ERROR 수준에서, 또는 문제 해결 정보가 유용할 경우 DEBUG 또는 TRACE 수준에서 로깅해야 합니다.
 
 >[!NOTE]
-이 변수에는 적용되지 않습니다 `access.log`-각 요청에 대한 로깅을 입력합니다.
+>
+>이 변수에는 적용되지 않습니다 `access.log`-각 요청에 대한 로깅을 입력합니다.
 
 #### 비호환 코드 {#non-compliant-code-8}
 
@@ -520,7 +521,8 @@ AEM API 서피스는 사용이 중단되어 더 이상 사용되지 않는 API�
 다음 섹션에서는 Cloud Manager에서 실행되는 OakPAL 검사에 대해 자세히 설명합니다.
 
 >[!NOTE]
-OakPAL은 독립형 Oak 저장소를 사용하여 컨텐츠 패키지를 확인하는 프레임워크입니다. AEM 파트너에 의해 개발되었으며 2019 AEM 록스타 노스 아메리카 상을 수상한 바 있다.
+>
+>OakPAL은 독립형 Oak 저장소를 사용하여 컨텐츠 패키지를 확인하는 프레임워크입니다. AEM 파트너에 의해 개발되었으며 2019 AEM 록스타 노스 아메리카 상을 수상한 바 있다.
 
 ### 고객이 구현하거나 확장하면 @ProviderType으로 주석을 단 제품 API {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -681,9 +683,12 @@ AEM Assets에서 자산 검색이 제대로 작동하려면 `damAssetLucene` Oa
 복잡한 프로젝트에서 발생하는 일반적인 문제는 동일한 OSGi 구성 요소가 여러 번 구성된 경우입니다. 이렇게 하면 적용 가능한 구성이 모호해집니다. 이 규칙은 동일한 런타임 모드 또는 런타임 모드의 조합에서 동일한 구성 요소가 여러 번 구성되는 문제만 식별한다는 점에서 &quot;실행 모드 인식&quot;입니다.
 
 >[!NOTE]
-이 규칙은 동일한 경로에서 동일한 구성이 여러 패키지에서 정의되는 문제를 발생시킵니다. 여기에는 동일한 패키지가 내장된 패키지의 전체 목록에 중복되는 경우를 포함합니다.
-예를 들어 빌드에서 이름이 인 패키지를 만드는 경우 `com.myco:com.myco.ui.apps` 및 `com.myco:com.myco.all` 여기서 `com.myco:com.myco.all` 침대 `com.myco:com.myco.ui.apps`를 클릭한 다음 내의 모든 구성을 `com.myco:com.myco.ui.apps` 은 중복으로 보고됩니다.
-이는 일반적으로 다음을 따르지 않는 경우입니다 [컨텐츠 패키지 구조 지침.](/help/implementing/developing/introduction/aem-project-content-package-structure.md). 이 특정 예제에서 패키지는 `com.myco:com.myco.ui.apps` 누락된 항목 `<cloudManagerTarget>none</cloudManagerTarget>` 속성을 사용합니다.
+>
+>이 규칙은 동일한 경로에서 동일한 구성이 여러 패키지에서 정의되는 문제를 발생시킵니다. 여기에는 동일한 패키지가 내장된 패키지의 전체 목록에 중복되는 경우를 포함합니다.
+>
+>예를 들어 빌드에서 이름이 인 패키지를 만드는 경우 `com.myco:com.myco.ui.apps` 및 `com.myco:com.myco.all` 여기서 `com.myco:com.myco.all` 침대 `com.myco:com.myco.ui.apps`를 클릭한 다음 내의 모든 구성을 `com.myco:com.myco.ui.apps` 은 중복으로 보고됩니다.
+>
+>이는 일반적으로 다음을 따르지 않는 경우입니다 [컨텐츠 패키지 구조 지침.](/help/implementing/developing/introduction/aem-project-content-package-structure.md). 이 특정 예제에서 패키지는 `com.myco:com.myco.ui.apps` 누락된 항목 `<cloudManagerTarget>none</cloudManagerTarget>` 속성을 사용합니다.
 
 #### 비호환 코드 {#non-compliant-code-osgi}
 
@@ -779,7 +784,8 @@ AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 Touch UI�
 Cloud Service 배포 모델과 호환되려면 개별 컨텐츠 패키지에 저장소의 변경할 수 없는 영역에 대한 컨텐츠(즉, `/apps` 및 `/libs`) 또는 변경할 수 있는 영역(즉, 에 없는 모든 것) `/apps` 또는 `/libs`). 예를 들어, 두 가지 모두를 포함하는 패키지 `/apps/myco/components/text and /etc/clientlibs/myco` 는 Cloud Service과 호환되지 않으므로 문제가 보고됩니다.
 
 >[!NOTE]
-규칙 [고객 패키지는 /libs 아래에 노드를 만들거나 수정해서는 안 됩니다.](#oakpal-customer-package) 항상 적용됩니다.
+>
+>규칙 [고객 패키지는 /libs 아래에 노드를 만들거나 수정해서는 안 됩니다.](#oakpal-customer-package) 항상 적용됩니다.
 
 을(를) 참조하십시오. [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md) 자세한 내용
 
