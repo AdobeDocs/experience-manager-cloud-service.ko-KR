@@ -13,7 +13,10 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >
->
+>id="aemcloud_nonbpa_customcodequalityrules"
+>title="Custom Code Quality Rules"
+>abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
+
 이 페이지에서는 Cloud Manager가 의 일부로 실행하는 사용자 지정 코드 품질 규칙에 대해 설명합니다 [코드 품질 테스트.](/help/implementing/cloud-manager/code-quality-testing.md) AEM Engineering의 우수 사례를 기반으로 합니다.
 
 >[!NOTE]
