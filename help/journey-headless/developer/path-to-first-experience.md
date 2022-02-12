@@ -2,20 +2,20 @@
 title: AEM Headless를 사용하여 첫 번째 경험에 대한 경로
 description: AEM Headless Developer 여정의 이 부분에서 계획 고려 사항을 포함하여 AEM에서 첫 번째 헤드리스 경험을 구현하는 단계를 이해하고, 가능한 한 원활한 경로를 만드는 우수 사례를 알아봅니다.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
 # AEM Headless를 사용하여 첫 번째 경험에 대한 경로 {#path-to-first-experience}
 
-[AEM Headless 개발자 여정의 이 부분에서는 계획 고려 사항을 포함하여 AEM에서 첫 번째 헤드리스 경험을 구현하는 단계를 이해하고, 가능한 한 원활하게 경로를 만드는 우수 사례를 알아봅니다.](overview.md)
+의 이 부분에서 [AEM Headless Developer 여정,](overview.md) 계획 고려 사항을 포함하여 AEM에서 첫 번째 헤드리스 경험을 구현하는 단계를 이해하고, 가능한 한 원활한 경로를 만드는 우수 사례를 알아봅니다.
 
 ## 지금까지 그 이야기 {#story-so-far}
 
-AEM 헤드리스 여정의 이전 문서에서, [Cloud Service으로 AEM Headless 시작하기](getting-started.md)에서는 헤드리스 CMS가 무엇인지에 대한 기본 이론을 배웠고 이제 다음을 수행해야 합니다.
+AEM 헤드리스 여정의 이전 문서에서, [AEM Headless as a Cloud Service 시작하기](getting-started.md) 헤드리스 CMS가 무엇인지에 대한 기본 이론을 배우셨고, 이제
 
 * AEM 헤드리스 기능의 기본 사항을 이해합니다.
 * AEM 헤드리스 기능을 사용하기 위한 사전 요구 사항을 알아봅니다.
@@ -35,7 +35,7 @@ AEM 헤드리스 여정의 이전 문서에서, [Cloud Service으로 AEM Headles
 
 ## 요구 사항 {#requirements}
 
-이 문서를 계속 진행하기 전에 AEM Headless 개발자 여정([AEM Headless를 Cloud Service](getting-started.md)로 시작하기에서 이전 문서를 검토했는지 확인합니다.
+이 문서를 계속 진행하기 전에 AEM Headless 개발자 여정에서 이전 문서를 검토했는지 확인합니다. [AEM Headless as a Cloud Service 시작하기](getting-started.md) 다음을 확인하십시오.
 
 * 나열된 요구 사항을 충족합니다.
 * 범위, 역할 및 성능을 포함한 고유한 프로젝트 정의를 고려했습니다.
@@ -44,7 +44,7 @@ AEM 헤드리스 여정의 이전 문서에서, [Cloud Service으로 AEM Headles
 
 첫 번째 AEM 헤드리스 프로젝트를 시작하려면 모든 채널에서 수행하려는 개인화 및 업데이트를 지원하는 컨텐츠 모델이 있어야 합니다.
 
-AEM과 별도로, 클라이언트측 애플리케이션을 빌드하는 경우 AEM에 대한 API 호출에 대해 Cloud Service으로 클라이언트를 테스트할 수 있도록 적절한 개발 환경이 설정되었는지 확인해야 합니다.
+또한 AEM과 별도로, 클라이언트측 애플리케이션을 빌드하는 경우 AEM as a Cloud Service으로 API 호출에 대해 클라이언트를 테스트할 수 있도록 적절한 개발 환경이 설정되었는지 확인해야 합니다.
 
 ### 컨텐츠 모델 및 API 정의 {#defining-models}
 
@@ -74,9 +74,9 @@ AEM 내에는 세 가지 유형의 환경이 있습니다. 개발, 스테이징 
 
 ## 설정 {#setup}
 
-AEM에서 헤드리스를 시작하기 전에 필요한 모든 기능이 활성화되어 있는지 확인해야 합니다. 이 섹션에서는 필요한 사항을 설명합니다. 이러한 단계를 수행하는 실제 단계는 나중에 [AEM Headless Developer 여정에 자세히 설명되어 있습니다.](#overview.md)
+AEM에서 헤드리스를 시작하기 전에 필요한 모든 기능이 활성화되어 있는지 확인해야 합니다. 이 섹션에서는 필요한 사항을 설명합니다. 이러한 단계를 수행하는 실제 단계는 나중에 [AEM Headless Developer 여정.](#overview.md)
 
-개별 항목에 대한 자세한 내용은 [추가 리소스](#additional-resources)를 원할 수도 있습니다.
+원할 경우 [추가 리소스](#additional-resources) 를 참조하십시오.
 
 ### 구성 {#configuration}
 
@@ -105,7 +105,7 @@ AEM을 사용하여 콘텐츠를 전달하는 데 첫 번째 헤드리스 앱을
 * 액세스 요구 사항이 있으면 콘텐츠 계층 구조를 가져와야 합니다. 동일한 사용자 그룹에 의해 편집되는 컨텐츠를 함께 그룹화합니다.
 * 유사한 컨텐츠를 폴더로 그룹화합니다.
    * 컨텐츠 작성자가 기존 컨텐츠를 복사하여 붙여 넣어 새 컨텐츠를 만들 수 있습니다. 따라서 동일한 폴더에서 이 작업을 수행하면 더 효율적입니다.
-   * AEM에서는 허용되는 모델을 폴더별로 설정할 수 있도록 허용하므로 **새 만들기** 단추에는 해당 위치에서 지원되는 모델만 표시됩니다.
+   * AEM에서는 폴더별로 허용되는 모델을 설정하여 **새로 만들기** 버튼은 해당 위치에서 지원되는 모델만 표시합니다.
 * 모델에서 루트 폴더가 설정된 경우 새 컨텐츠 조각의 인라인 컨텐츠 조각 편집기 생성을 단순화할 수 있습니다. 그런 다음, 전문가가 위치를 선택할 필요가 없지만, 단지 이름을 입력하고 새로운 참조를 편집하기 시작할 수 있습니다.
 
 ### 컨텐츠 작성 {#authoring}
@@ -135,20 +135,20 @@ AEM Headless의 강력한 기능과 유연성을 완벽하게 파악하기 위�
 
 Adobe은 학습 스타일이 무엇이든 AEM Headless 프로젝트를 시작할 때 성공하기를 원합니다.
 
-* **헤드리스 개념 및 AEM 헤드리스 기술에 대해 배우려면** 문서를 참조하여 AEM 헤드리스 여정을 계속하십시오. 여기서 [컨텐츠를 AEM 컨텐츠 모델로 모델링하는 방법](model-your-content.md) 문서를 참조하십시오.
-* **을(를) 수행하여 학습하려는 경우 [AEM 헤드리스 실습 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)로 건너뛸 수 있습니다. 여기서 간단한 프로젝트를 구현하여 AEM 헤드리스 콘텐츠를 노출하도록 AEM Headless 개발에 직접 참여합니다.**
+* 계속 **headless 개념 및 AEM headless 기술에 대해 알아보기**&#x200B;를 입력한 후에 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다 [컨텐츠를 AEM 컨텐츠 모델로 모델링하는 방법](model-your-content.md) AEM에서 컨텐츠 구조를 모델링하는 방법을 알아봅니다.
+* 원하는 경우 **다음을 통해 학습**&#x200B;로 이동하면 [AEM Headless 실습 자습서 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) 에서는 간단한 프로젝트를 구현하여 AEM 헤드리스 콘텐츠를 노출하여 AEM 헤드리스 개발에 직접 참여합니다.
 
 ## 추가 리소스 {#additional-resources}
 
-[컨텐츠를 AEM 컨텐츠 모델로 모델링하는 방법 문서를 검토하여 헤드리스 개발 여정의 다음 부분으로 이동하는 것이 좋지만,](model-your-content.md) 다음은 이 문서에서 언급된 일부 개념에 대해 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 하지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
+문서를 검토하여 헤드리스 개발 여정의 다음 부분으로 이동하는 것이 좋습니다 [컨텐츠를 AEM 컨텐츠 모델로 모델링하는 방법,](model-your-content.md) 다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 하지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
 
-* [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md)  - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
-* [AEM Sites as a Cloud Service을 위한 헤드리스 개발](/help/implementing/developing/headless/introduction.md)  - 필요한 기능을 갖춘 AEM Headless 개발자를 안내하는 빠른 소개
-* [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - 이 실습 자습서를 사용하여 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
-* [GraphQL API를 사용한 헤드리스 컨텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - AEM에서 구현된 GraphQL API에 대한 개요를 알려면 이 과정을 따르십시오. AdobeID를 통한 인증이 필요합니다.
-* [AEM 안내서 WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - 이 GitHub 프로젝트에는 AEM GraphQL API를 강조 표시하는 예제 애플리케이션이 포함되어 있습니다.
-* [Adobe Experience Manager as a Cloud Service 아키텍처 소개](/help/overview/architecture.md)  - AEM 아키텍처에 대한 전체 개요
-* [헤드리스 시작 안내서](/help/implementing/developing/headless/introduction.md#getting-started)  - AEM에 대해 이미 잘 알려진 사용자를 위한 AEM 헤드리스 기능에 대한 빠른 소개입니다.
-* [컨텐츠 조각 모델 만들기](/help/assets/content-fragments/content-fragments-models.md)  - 컨텐츠 조각 모델에 대한 기술 설명서
-* [컨텐츠 조각 만들기](/help/assets/content-fragments/content-fragments.md)  - 컨텐츠 조각에 대한 기술 설명서
-* [GraphQL을 사용하여 쿼리 컨텐츠](/help/assets/content-fragments/graphql-api-content-fragments.md)  - GraphQL API에 대한 기술 설명서
+* [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
+* [AEM Sites as a Cloud Service 헤드리스 개발](/help/headless/introduction.md) - 필요한 기능을 갖춘 AEM Headless 개발자를 안내하는 빠른 소개
+* [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 자습서를 통해 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
+* [GraphQL API를 사용한 헤드리스 컨텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM에서 구현된 GraphQL API에 대한 개요를 알려면 이 과정을 따르십시오. AdobeID를 통한 인증이 필요합니다.
+* [AEM 안내서 WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM GraphQL API를 강조 표시하는 예제 애플리케이션이 포함되어 있습니다.
+* [Adobe Experience Manager as a Cloud Service 아키텍처 소개](/help/overview/architecture.md) - AEM 아키텍처에 대한 전체 개요
+* [헤드리스 설정](/help/headless/introduction.md#getting-started) - AEM에 대해 이미 잘 알고 있는 사용자를 위한 AEM 헤드리스 기능에 대한 빠른 소개입니다.
+* [컨텐츠 조각 모델 만들기](/help/assets/content-fragments/content-fragments-models.md) - 컨텐츠 조각 모델에 대한 기술 설명서
+* [컨텐츠 조각 만들기](/help/assets/content-fragments/content-fragments.md) - 컨텐츠 조각에 대한 기술 설명서
+* [GraphQL을 사용하여 쿼리 컨텐츠](/help/headless/graphql-api/content-fragments.md) - GraphQL API에 대한 기술 설명서

@@ -4,7 +4,7 @@ description: AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 2e6f59fe663a3c93fc612b888f151d75dc5821f6
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 30%
@@ -27,7 +27,7 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
 >활성화하지 않은 경우 **컨텐츠 조각 모델**:
 >
 >* a **만들기** 새 모델을 만드는 데에는 옵션을 사용할 수 없습니다.
->* 당신은 [사이트 구성을 선택하여 관련 끝점을 만듭니다](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* 당신은 [사이트 구성을 선택하여 관련 끝점을 만듭니다](/help/headless/graphql-api/graphql-endpoint.md).
 
 
 컨텐츠 조각 기능을 활성화하려면 필요한 단계가 있습니다.

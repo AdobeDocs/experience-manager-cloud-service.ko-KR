@@ -2,9 +2,9 @@
 title: 작성 기본 사항 학습
 description: 컨텐츠 조각을 사용하여 헤드리스 CMS용 컨텐츠를 작성하는 개념과 역학에 대해 알아봅니다.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 6%
 
 ---
@@ -268,7 +268,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 
 * 시작 안내서
-   * [자산 폴더 헤드리스 빠른 시작 안내서 만들기](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [자산 폴더 헤드리스 설정 만들기](/help/headless/setup/create-assets-folder.md)
 
 * AEM 헤드리스 콘텐츠 설계 여정
 

@@ -1,21 +1,21 @@
 ---
-title: Cloud Service으로 AEM Headless 시작하기
+title: AEM Headless as a Cloud Service 시작하기
 description: AEM Headless Developer 여정의 이 부분에서 AEM Headless 사전 요구 사항에 대해 알아봅니다.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
 workflow-type: tm+mt
 source-wordcount: '3058'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Cloud Service으로 AEM Headless 시작하기 {#getting-started}
+# AEM Headless as a Cloud Service 시작하기 {#getting-started}
 
-[AEM Headless 개발자 여정의 이 부분에서](overview.md)에서는 AEM Headless로 직접 프로젝트를 시작하는 데 필요한 사항에 대해 알아봅니다.
+의 이 부분에서 [AEM Headless Developer 여정,](overview.md) AEM Headless로 직접 프로젝트를 시작하는 데 필요한 사항에 대해 알아봅니다.
 
 ## 지금까지 그 이야기 {#story-so-far}
 
-AEM 헤드리스 여정의 이전 문서에서, [CMS 헤드리스 개발](learn-about.md)에서는 헤드리스 CMS가 무엇인지에 대한 기본 이론을 배웠고 이제 다음을 수행해야 합니다.
+AEM 헤드리스 여정의 이전 문서에서, [CMS 헤드리스 개발에 대해 알아보기](learn-about.md) 헤드리스 CMS가 무엇인지에 대한 기본 이론을 배우셨고, 이제
 
 * 헤드리스 컨텐츠 전달의 기본 개념 및 용어 이해
 * 헤드리스가 필요한 이유와 시기 이해
@@ -38,7 +38,7 @@ AEM 내에서 헤드리스 프로젝트를 정의하려면 먼저 몇 가지 기
 
 ### 작성자 인스턴스 {#author}
 
-가장 간단한 방법으로서, AEM은 컨텐츠를 만들고, 관리하고, 게시하기 위해 함께 작동하는 작성자 인스턴스와 [게시 인스턴스](#publish)로 구성됩니다.
+가장 간단한 방법으로는 AEM이 작성자 인스턴스와 [게시 인스턴스](#publish) 컨텐츠를 작성, 관리 및 게시하기 위해 함께 작동하는 컨텐츠.
 
 컨텐츠는 작성자 인스턴스에서 시작됩니다. 여기에서 컨텐츠 작성자가 컨텐츠를 만듭니다. 작성 환경에서는 작성자가 컨텐츠를 작성, 구성 및 재사용할 수 있는 다양한 도구를 제공합니다.
 
@@ -58,15 +58,15 @@ AEM 내에서 헤드리스 프로젝트를 정의하려면 먼저 몇 가지 기
 1. 이 컨텐츠가 준비되면 게시 인스턴스에 복제됩니다.
 1. 그런 다음 이 컨텐츠를 검색하기 위해 API를 호출할 수 있습니다.
 
-AEM Headless는 다음 섹션에 설명된 [의 헤드리스 컨텐츠를 관리하는 강력한 도구를 제공하여 이 기술 기반을 구축합니다.](#aem-headless-basics)
+AEM Headless는 헤드리스 컨텐츠를 관리하는 강력한 도구를 제공하여 이 기술 기반을 구축합니다 [다음 섹션에 설명되어 있습니다.](#aem-headless-basics)
 
 ## AEM Headless 기본 사항 {#aem-headless-basics}
 
 AEM의 헤드리스 기능은 몇 가지 주요 기능을 기반으로 합니다. 이러한 내용은 여정 후반부에 자세히 설명되어 있습니다. 이제 그들이 무엇을 하고 그들이 뭐라고 불리는지에 대한 기본 사항만 아는 것이 중요하다.
 
-### 컨텐츠 조각 모델 {#content-fragment-models}
+### 콘텐츠 조각 모델 {#content-fragment-models}
 
-컨텐츠 조각 모델 AEM에서 만들고 관리하는 데이터 및 컨텐츠의 구조를 정의합니다. 컨텐츠를 위한 일종의 스캐폴딩 역할을 합니다. 컨텐츠를 작성하도록 선택할 때 작성자가 정의한 컨텐츠 조각 모델에서 컨텐츠 생성을 안내하는 컨텐츠 조각 모델을 선택합니다.
+컨텐츠 조각 모델은 AEM에서 만들고 관리하는 데이터 및 컨텐츠의 구조를 정의합니다. 컨텐츠를 위한 일종의 스캐폴딩 역할을 합니다. 컨텐츠를 작성하도록 선택할 때 작성자가 정의한 컨텐츠 조각 모델에서 컨텐츠 생성을 안내하는 컨텐츠 조각 모델을 선택합니다.
 
 ### 콘텐츠 조각 {#content-fragments}
 
@@ -81,7 +81,7 @@ AEM에서 헤더없이 컨텐츠를 수정하기 위해 두 개의 강력한 API
 * GraphQL API를 사용하면 컨텐츠 조각에 액세스하고 전달할 요청을 만들 수 있습니다.
 * 자산 REST API 를 사용하면 컨텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
-이러한 API에 대해 알아보고, AEM 헤드리스 여정의 뒷부분에서 이 API를 사용하는 방법을 알아봅니다. 또는 추가 문서를 보려면 아래의 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+이러한 API에 대해 알아보고, AEM 헤드리스 여정의 뒷부분에서 이 API를 사용하는 방법을 알아봅니다. 또는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
 ## 헤드리스 통합 수준 {#integration-levels}
 
@@ -141,7 +141,7 @@ SPA 편집기를 사용하면 SPA에서 AEM의 컨텐츠를 소비할 뿐만 아
 
 프로젝트에 대해 명확하게 정의된 범위를 갖는 것이 중요합니다. 범위는 수락 기준을 알려주고 완료를 정의할 수 있도록 해줍니다.
 
-여러분이 질문해야 할 첫 번째 질문은 &quot;AEM Headless로 무엇을 성취하려고 노력하고 있습니까?&quot;입니다. 일반적으로 답변은 AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하고 있거나 향후에 보유해야 합니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객 대면 경험 애플리케이션일 수 있습니다. AEM 헤드리스를 사용하는 목적은 AEM에서 생성, 저장 및 관리되는 컨텐츠로 경험 애플리케이션을 제공하는 것입니다. 이 API는 AEM Headless를 호출하여 경험 애플리케이션에서 직접 컨텐츠 또는 완전히 CRUD 컨텐츠를 가져오도록 합니다. 이 작업을 수행하지 않으려면 [AEM 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)로 돌아가서 수행하려는 작업에 더 적합한 섹션을 찾습니다.
+여러분이 질문해야 할 첫 번째 질문은 &quot;AEM Headless로 무엇을 성취하려고 노력하고 있습니까?&quot;입니다. 일반적으로 답변은 AEM이 아닌 자체 개발 도구로 빌드한 경험 애플리케이션을 보유하고 있거나 향후에 보유해야 합니다. 이 경험 애플리케이션은 모바일 앱, 웹 사이트 또는 기타 최종 사용자 고객 대면 경험 애플리케이션일 수 있습니다. AEM 헤드리스를 사용하는 목적은 AEM에서 생성, 저장 및 관리되는 컨텐츠로 경험 애플리케이션을 제공하는 것입니다. 이 API는 AEM Headless를 호출하여 경험 애플리케이션에서 직접 컨텐츠 또는 완전히 CRUD 컨텐츠를 가져오도록 합니다. 만약 이것이 당신이 하고자 하는 것이 아니라면, 당신은 아마도 당신이 하고 싶어할 것이다 [AEM 설명서로 돌아갑니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) 원하는 내용에 더 적합한 섹션을 찾습니다.
 
 ### 역할 및 책임 {#roles-responsibilities}
 
@@ -158,7 +158,7 @@ SPA 편집기를 사용하면 SPA에서 AEM의 컨텐츠를 소비할 뿐만 아
 
 관리자가 사용자를 구성하면, 모든 AEM 리소스에 액세스하여 AEM Headless를 사용하여 경험 애플리케이션을 제공하는 기여자로서 작업을 수행할 수 있는 권한이 부여됩니다.
 
-관리자는 AEM을 설정하고 런타임 환경을 준비하는 사용자여야 합니다. 이 사용자는 [컨텐츠 작성자](#content-author)가 컨텐츠를 만들고 업데이트할 수 있도록 설정하고 [개발자](#developer)가 경험 애플리케이션에 대한 컨텐츠를 가져오거나 수정하는 API를 사용하도록 설정해야 합니다.
+관리자는 AEM을 설정하고 런타임 환경을 준비하여 사용하도록 설정해야 합니다 [컨텐츠 작성자](#content-author) 컨텐츠를 만들고 업데이트하기 [개발자](#developer) 경험 애플리케이션에 대한 컨텐츠를 가져오거나 수정하는 API를 사용하기 위해.
 
 #### 컨텐츠 작성자 {#content-author}
 
@@ -177,18 +177,18 @@ SPA 편집기를 사용하면 SPA에서 AEM의 컨텐츠를 소비할 뿐만 아
 
 콘텐츠 업데이트 워크플로우에 대해 명확히 하십시오. 시스템에서 지원해야 하는 승인 프로세스는 무엇입니까? AEM 워크플로우를 활용하여 이 프로세스를 자동화할 수 있습니까?
 
-[컨텐츠 계층](#content-hierarchy)을 활용하여 번역을 쉽게 할 수 있습니다.
+다음 사항에 주의하십시오. [콘텐츠 계층](#content-hierarchy) 을 활용하여 번역을 쉽게 할 수 있습니다.
 
-AEM Headless 번역 여정에 대한 링크를 포함하여 AEM 워크플로우 및 번역 도구에 대한 추가 설명서는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+자세한 내용은 [추가 리소스](#additional-resources) AEM Headless 번역 여정에 대한 링크를 포함하여 AEM 워크플로우 및 번역 도구에 대한 추가 설명서입니다.
 
 ##### 컨텐츠 계층 활용 {#content-hierarchy}
 
 폴더 계층 구조 는 컨텐츠 관리와 관련하여 두 가지 주요 문제를 해결할 수 있습니다.
 
-* [번역](#translation)  - AEM은 로케일 특정 폴더에서 컨텐츠 사본을 유지 관리하여 컨텐츠 번역을 관리합니다.
+* [번역](#translation) - AEM은 로케일 특정 폴더에서 컨텐츠 사본을 유지 관리하여 컨텐츠 번역을 관리합니다.
 * 조직 - 폴더는 번역 요구 사항을 지원하고 컨텐츠 조각을 논리적으로 관리하는 데 필요한 컨텐츠 계층 구조를 정의하는 데 사용됩니다.
 
-AEM을 사용하면 유연한 컨텐츠 구조를 만들 수 있으며 계층 구조가 임의로 클 수 있습니다. 그러나 폴더 구조의 모든 변경 사항에 [이 컨텐츠 경로에 의존하는 기존 쿼리에 의도하지 않은 결과가 발생할 수 있다는 것을 알고 있어야 합니다.](#developer) 따라서 미리 명확하게 설정된 잘 정의된 계층 구조가 컨텐츠 작성자에게 유용할 수 있습니다.
+AEM을 사용하면 유연한 컨텐츠 구조를 만들 수 있으며 계층 구조가 임의로 클 수 있습니다. 그러나 폴더 구조의 모든 변경 사항이 기존 쿼리에 의도하지 않은 결과를 초래할 수 있다는 사실을 알고 있어야 합니다 [컨텐츠 경로를 사용합니다.](#developer) 따라서 미리 명확하게 설정된 잘 정의된 계층 구조가 컨텐츠 작성자에게 유용할 수 있습니다.
 
 폴더를 특정 컨텐츠 유형(컨텐츠 조각 모델 기반)만 허용하도록 제한할 수도 있습니다. 계층의 모든 폴더에 대해 허용되는 모델을 항상 명시적으로 지정하는 것이 좋습니다. 지정된 폴더에 대해 허용되는 컨텐츠 지정:
 
@@ -199,22 +199,22 @@ AEM을 사용하면 유연한 컨텐츠 구조를 만들 수 있으며 계층 �
 
 ##### 올바른 이름 지정 규칙 설정 {#naming-conventions}
 
-컨텐츠 조각 이름은 컨텐츠 작성자에 대해 설명적이어야 합니다. AEM은 저장소 수준에서 사용된 ID의 이름 이스케이프 및/또는 잘라내기를 투명하게 처리합니다. 따라서 컨텐츠 작성자가 제공하는 논리 이름은 항상 읽을 수 있고 컨텐츠를 나타내야 합니다.
+컨텐츠 조각 이름은 컨텐츠 작성자에 대해 설명적이어야 합니다. AEM은 저장소 수준에서 사용된 ID의 이스케이프 및/또는 잘림을 투명하게 처리합니다. 따라서 컨텐츠 작성자가 제공하는 논리 이름은 항상 읽을 수 있고 컨텐츠를 나타내야 합니다.
 
 * 잘못된 이름: `cta_btn_1`
 * 이름: `Call To Action Button`
 
-AEM 페이지 이름 지정 규칙에 대한 추가 설명서는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+자세한 내용은 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
 ##### 컨텐츠 중첩을 과하게 하지 마십시오 {#content-nesting}
 
-[컨텐츠 ](#content-fragments) 조각은 헤드리스 컨텐츠를 만드는 데 AEM에서 사용됩니다. AEM에서는 컨텐츠 조각에 대해 최대 10개의 컨텐츠 중첩 수준을 지원합니다. 그러나 AEM은 상위 컨텐츠 조각에 정의된 각 참조를 반복적으로 확인한 다음 모든 동일 수준에 하위 참조가 있는지 확인해야 한다는 것을 명심해야 합니다. 이러한 작업은 신속하게 추가되어 성능 문제가 될 수 있습니다.
+[컨텐츠 조각](#content-fragments) 헤드리스 컨텐츠를 만드는 데 AEM에서 사용됩니다. AEM에서는 컨텐츠 조각에 대해 최대 10개의 컨텐츠 중첩 수준을 지원합니다. 그러나 AEM은 상위 컨텐츠 조각에 정의된 각 참조를 반복적으로 확인한 다음 모든 동일 수준에 하위 참조가 있는지 확인해야 한다는 것을 명심해야 합니다. 이러한 작업은 신속하게 추가되어 성능 문제가 될 수 있습니다.
 
 일반적인 경험상 컨텐츠 조각 참조는 5개 수준 이상으로 중첩되어서는 안 됩니다.
 
 #### 컨텐츠 설계자 {#content-architect}
 
-컨텐츠 설계자는 헤드리스 없이 전달해야 하는 데이터에 대한 요구 사항을 분석하고 이 데이터의 구조를 정의합니다. 이러한 구조를 AEM에서 [컨텐츠 조각 모델](#content-fragment-models)이라고 합니다. 컨텐츠 조각 모델은 컨텐츠 작성자가 만드는 컨텐츠 조각의 기초로 사용됩니다.
+컨텐츠 설계자는 헤드리스 없이 전달해야 하는 데이터에 대한 요구 사항을 분석하고 이 데이터의 구조를 정의합니다. 이러한 구조체들을 라고 합니다 [컨텐츠 조각 모델](#content-fragment-models) AEM에서 확인하십시오. 컨텐츠 조각 모델은 컨텐츠 작성자가 만드는 컨텐츠 조각의 기초로 사용됩니다.
 
 컨텐츠 조각 모델을 정의할 때 유용한 접근 방법은 컨텐츠를 사용하는 애플리케이션의 UX 구성 요소에 매핑되는 모델을 만드는 것입니다.
 
@@ -228,13 +228,13 @@ GraphQL은 AEM과 헤드리스 컨텐츠의 소비자 간에 &quot;접착제&quo
 
 개발자는 쿼리를 계획할 때 몇 가지 기본 권장 사항을 염두에 두어야 합니다.
 
-* 쿼리는 컨텐츠 조각을 검색하는 고정 경로(`ByPath`)에 의존하지 않아야 합니다.
-   * [컨텐츠 작성자는 컨텐츠 조각 계층](#content-hierarchy) 에 대한 완전한 제어 권한을 가지며, 이러한 쿼리를 중단하는 변경 작업을 수행할 수 있습니다.
+* 쿼리는 고정 경로(`ByPath`)을 클릭하여 컨텐츠 조각을 검색합니다.
+   * [컨텐츠 작성자는 컨텐츠 조각 계층 구조를 완벽하게 제어할 수 있습니다](#content-hierarchy) 및 은(는) 이러한 쿼리를 손상하는 변경 작업을 수행할 수 있습니다.
    * 쿼리는 대신 동적 쿼리 매개 변수를 사용하여 컨텐츠 조각 모델 참조를 옵트하여 결과를 필터링하여 원하는 페이로드를 생성해야 합니다.
 * 최상의 쿼리 성능을 위해 항상 AEM에서 지속된 쿼리를 사용하십시오. 이러한 내용은 여정에서 나중에 설명합니다.
-* GraphQL은 &quot;필요한 내용을 정확히 확인하고 정확하게 파악할 수 있습니다&quot;라는 모토에 따라 선언됩니다. 즉, GraphQL 쿼리를 만들 때 항상 관계형 데이터베이스에서 만들 수 있는 `select *` 유형 쿼리를 사용하지 않습니다.
+* GraphQL은 &quot;필요한 내용을 정확히 확인하고 정확하게 파악할 수 있습니다&quot;라는 모토에 따라 선언됩니다. 즉, GraphQL 쿼리를 만들 때 항상 `select *`관계형 데이터베이스에 생성할 수 있는 쿼리를 -입력합니다.
 
-AEM을 사용하는 일반적인 헤드리스 구현의 경우,](#level-1)개발자는 AEM에 대한 코딩 지식이 필요하지 않습니다.[
+대상 [AEM을 사용한 일반적인 헤드리스 구현](#level-1) 개발자는 AEM에 대한 코딩 지식이 필요하지 않습니다.
 
 ### 성능 요구 사항 {#performance-requirements}
 
@@ -255,7 +255,7 @@ AEM을 사용하는 일반적인 헤드리스 구현의 경우,](#level-1)개발
 
 #### 업데이트 빈도 {#update-frequency}
 
-경험의 여러 섹션에서 콘텐츠 업데이트 빈도를 달리하는 경우가 많습니다. CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. 또한 [컨텐츠 설계자](#content-architects)가 컨텐츠를 나타내는 모델을 설계하므로 이 입력도 중요합니다. 다음 사항을 고려하십시오.
+경험의 여러 섹션에서 콘텐츠 업데이트 빈도를 달리하는 경우가 많습니다. CDN 및 캐시 구성을 미세 조정할 수 있어야 합니다. 이는 또한 [컨텐츠 설계자](#content-architects) 콘텐츠를 나타내기 위해 모델을 디자인합니다. 다음 사항을 고려하십시오.
 
 * 일정 기간 후에 일부 유형의 컨텐츠가 만료됩니까?
 * 사용자별로 다르므로 캐싱할 수 없는 요소가 있습니까?
@@ -269,26 +269,26 @@ AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수�
 * AEM 헤드리스 통합 수준을 숙지하십시오.
 * 범위 측면에서 프로젝트를 정의할 수 있습니다.
 
-다음으로 AEM 헤드리스 여정을 계속 진행하려면 문서 [AEM 헤드리스를 사용하여 첫 번째 경험으로 이동](path-to-first-experience.md) 을 검토하여 필요한 도구를 설정하는 방법과 AEM에서 데이터 모델링을 시작하는 방법을 학습해야 합니다.
+다음에 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다 [AEM Headless를 사용하여 첫 번째 경험에 대한 경로](path-to-first-experience.md) 에서는 필요한 도구를 설정하는 방법과 AEM에서 데이터 모델링을 시작하는 방법을 알아봅니다.
 
 ## 추가 리소스 {#additional-resources}
 
-[AEM Headless를 사용하여 첫 번째 경험으로 이동](path-to-first-experience.md) 문서를 검토하여 헤드리스 개발 여정의 다음 부분으로 이동하는 것이 좋지만, 다음은 이 문서에서 언급된 일부 개념에 대해 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 그러나 헤드리스 여정을 계속 진행할 필요는 없습니다.
+문서를 검토하여 헤드리스 개발 여정의 다음 부분으로 이동하는 것이 좋습니다 [AEM Headless를 사용하여 첫 번째 경험에 대한 경로,](path-to-first-experience.md) 다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 하지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
 
-* [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md)  - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
-* [Adobe Experience Manager as a Cloud Service 아키텍처 소개](/help/overview/architecture.md)  - AEM as a Cloud Service 구조 이해
-* [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)  - 이 실습 자습서를 사용하여 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
-* [GraphQL API를 사용한 헤드리스 컨텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses)  - AEM에서 구현된 GraphQL API에 대한 개요를 알려면 이 과정을 따르십시오. AdobeID를 통한 인증이 필요합니다.
-* [AEM 안내서 WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)  - 이 GitHub 프로젝트에는 AEM GraphQL API를 강조 표시하는 예제 애플리케이션이 포함되어 있습니다.
-* [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)  - 작성-게시 설정에 대한 세부 사항을 포함하여 AEM의 작성 환경을 위한 기술 문서
-* [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  - AEM에 컨텐츠를 게시하기 위한 기술 설명서
-* [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md)  - AEM의 페이지 이름 지정 제한에 대한 기술 문서
-* [다중 사이트 관리자 및 번역](/help/sites-cloud/administering/msm-and-translation.md)  - AEM의 강력한 번역 기능에 대한 기술 문서
-* [AEM 워크플로우](/help/sites-cloud/authoring/workflows/overview.md)  - AEM에서 워크플로우를 자동화하는 방법에 대한 기술 설명서
-* [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)  - 컨텐츠 조각에 대한 기술 설명서.
-* [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)  - 컨텐츠 조각 모델에 대한 기술 설명서.
-* [GraphQL 기술 설명서](https://graphql.org)  - GraphQL 정의(외부 링크)
-* [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)  - 컨텐츠 조각에 액세스하고 전달할 요청을 만드는 방법을 설명하는 기술 문서입니다
-* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md)  - 컨텐츠 조각(및 기타 자산)을 만들고 수정하는 방법을 설명하는 기술 문서
-* [지속되는 쿼리](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching)  - AEM의 지속된 쿼리에 대한 기술 문서
-* [AEM의 헤드리스 및 헤드리스](/help/implementing/developing/headful-headless.md)  - AEM에서 사용할 수 있는 헤드리스 통합 수준에 대한 완전한 토론입니다
+* [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
+* [Adobe Experience Manager as a Cloud Service 건축 소개](/help/overview/architecture.md) AEM as a Cloud Service 구조 이해
+* [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 자습서를 통해 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
+* [GraphQL API를 사용한 헤드리스 컨텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM에서 구현된 GraphQL API에 대한 개요를 알려면 이 과정을 따르십시오. AdobeID를 통한 인증이 필요합니다.
+* [AEM 안내서 WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM GraphQL API를 강조 표시하는 예제 애플리케이션이 포함되어 있습니다.
+* [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md) - 작성자-게시 설정에 대한 세부 정보를 포함하여 AEM 작성 환경을 위한 기술 설명서
+* [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - AEM에 컨텐츠를 게시하기 위한 기술 설명서
+* [이름 지정 규칙](/help/implementing/developing/introduction/naming-conventions.md) - AEM의 페이지 이름 지정 제한에 대한 기술 문서
+* [다중 사이트 관리자 및 번역](/help/sites-cloud/administering/msm-and-translation.md) - AEM의 강력한 번역 기능에 대한 기술 설명서
+* [AEM 워크플로우](/help/sites-cloud/authoring/workflows/overview.md) - AEM에서 워크플로우를 자동화하는 방법에 대한 기술 설명서
+* [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) - 컨텐츠 조각에 대한 기술 설명서.
+* [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) - 컨텐츠 조각 모델에 대한 기술 설명서.
+* [GraphQL 기술 설명서](https://graphql.org) - GraphQL 정의(외부 링크)
+* [GraphQL API](/help/headless/graphql-api/content-fragments.md) - 컨텐츠 조각에 액세스하고 전달할 요청을 만드는 방법을 설명하는 기술 문서
+* [자산 REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - 컨텐츠 조각(및 기타 자산)을 만들고 수정하는 방법을 설명하는 기술 문서
+* [지속되는 쿼리](/help/headless/graphql-api/persisted-queries.md) - AEM의 지속되는 쿼리에 대한 기술 문서
+* [AEM의 헤드리스 및 헤드리스](/help/implementing/developing/headful-headless.md) - AEM에서 사용할 수 있는 헤드리스 통합 수준에 대한 완전한 논의

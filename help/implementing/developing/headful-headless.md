@@ -1,15 +1,15 @@
 ---
-title: AEM의 헤드리스 및 헤드리스
+title: AEM 헤드풀 및 헤드리스
 description: AEM 프로젝트는 headful 및 headless 모델로 구현할 수 있지만 선택은 바이너리가 아닙니다. AEM은 한 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# AEM {#headful-headless}의 헤드리스 및 헤드리스
+# AEM 헤드풀 및 헤드리스 {#headful-headless}
 
 Adobe Experience Manager 프로젝트는 제목이 많은 모델과 헤드리스 모델 모두에서 구현할 수 있지만 선택할 수 있는 것은 바이너리가 아닙니다. AEM은 한 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다. 이 문서에서는 다른 모델에 대한 개요 및 SPA 통합 수준을 설명합니다.
 
@@ -21,7 +21,7 @@ AEM은 하나의 플랫폼에서 콘텐츠 만들기와 게재를 모두 관리�
 
 하지만 이것은 이진법으로 선택할 필요는 없다. AEM은 전례 없는 유연성을 제공하므로 두 모델의 프로젝트를 활용할 수 있습니다.
 
-![AEM 구현 모델](headless/assets/aem-implementation-models.png)
+![AEM 구현 모델](/help/headless/assets/aem-implementation-models.png)
 
 헤더 또는 전체 스택 모델에서 컨텐츠는 Java, HTL 등을 기반으로 하는 AEM 저장소 및 AEM 구성 요소에서 관리됩니다. 사용자 경험을 위한 컨텐츠를 렌더링하는 데 사용됩니다. 이 모델에서 컨텐츠를 만들고, 스타일을 지정하고, 표현하고, 전달하는 것은 모두 AEM에서 이루어집니다.
 
@@ -43,29 +43,29 @@ SPA으로 회사를 위한 기존 웹 가게가 있다고 가정해 보겠습니
 
 >[!NOTE]
 >
->물론 AEM SPA Editor 프레임워크를 사용하여 완전히 작동하는 AEM SPA [로 Web Shop SPA을 다시 구현할 수도 있습니다.](/help/implementing/developing/hybrid/introduction.md) 이미 AEM이 있고 새 웹 스토어 또는 다른 SPA을 만들려는 경우 이 방법이 권장되지만 이 문서의 범위를 벗어납니다.
+>물론 완전히 작동하는 AEM SPA로서 web shop SPA을 다시 구현할 수도 있습니다 [AEM SPA 편집기 프레임워크 사용.](/help/implementing/developing/hybrid/introduction.md) 이미 AEM이 있고 새 웹 스토어 또는 다른 SPA을 만들려는 경우 이 방법이 권장되지만 이 문서의 범위를 벗어납니다.
 
 ## SPA 통합 수준 {#integration-levels}
 
 SPA 통합은 AEM에서 네 가지 수준의 스펙트럼에 해당합니다.
 
-* **레벨 0:통합 없음**
+* **레벨 0: 통합 없음**
    * SPA과 AEM은 별도로 존재하며 정보를 교환하지 않습니다.
    * 컨텐츠는 두 개의 별도 시스템에서 독립적으로 생성, 관리 및 전달됩니다.
-* **수준 1:컨텐츠 조각 통합**
-   * [컨텐츠 ](/help/assets/content-fragments/content-fragments.md) 조각은 SPA에 대해 제한된 컨텐츠를 만들고 관리하는 데 사용됩니다.
-   * SPA은 AEM [GraphQL API를 통해 이 컨텐츠를 검색합니다.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* **수준 1: 컨텐츠 조각 통합**
+   * [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) AEM에서 SPA에 대한 제한된 컨텐츠를 만들고 관리하는 데 사용됩니다.
+   * SPA은 AEM을 통해 이 컨텐츠를 검색합니다 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * 일부 컨텐츠는 AEM에서 관리되고 일부는 외부 시스템에서 관리됩니다.
    * 콘텐츠는 SPA에서만 볼 수 있습니다.
-* **레벨 2:AEM에 SPA 포함**
-   * [컨텐츠 ](/help/assets/content-fragments/content-fragments.md) 조각은 AEM에서 SPA용 컨텐츠를 만들고 관리하는 데 사용됩니다.
-   * SPA은 AEM [GraphQL API를 통해 이 컨텐츠를 검색합니다.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* **레벨 2: AEM에 SPA 포함**
+   * [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) SPA용 컨텐츠를 만들고 관리하는 데 AEM에서 사용됩니다.
+   * SPA은 AEM을 통해 이 컨텐츠를 검색합니다 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * 일부 컨텐츠는 AEM에서 관리되고 일부는 외부 시스템에서 관리됩니다.
    * 컨텐츠는 AEM 내에서 컨텍스트 내에서 볼 수 있습니다.
    * 제한된 컨텐츠는 AEM 내에서 편집할 수 있습니다.
-* **레벨 3:AEM에서 SPA 포함 및 전체 활성화**
-   * [컨텐츠 ](/help/assets/content-fragments/content-fragments.md) 조각은 AEM에서 SPA용 컨텐츠를 만들고 관리하는 데 사용됩니다.
-   * SPA은 AEM [GraphQL API를 통해 이 컨텐츠를 검색합니다.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* **레벨 3: AEM에서 SPA 포함 및 전체 활성화**
+   * [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) SPA용 컨텐츠를 만들고 관리하는 데 AEM에서 사용됩니다.
+   * SPA은 AEM을 통해 이 컨텐츠를 검색합니다 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * 컨텐츠는 AEM 내에서 컨텍스트 내에서 볼 수 있습니다.
    * 대부분의 컨텐츠는 AEM 내에서 편집할 수 있습니다.
 
@@ -77,9 +77,9 @@ AEM의 장점과 유연성은 SPA의 장점을 그대로 유지하면서 레벨 
 
 AEM에는 선택한 통합 수준에 따라 다른 도구를 사용할 수 있습니다. 각 레벨은 이전에 사용된 도구를 기반으로 빌드합니다. 다음 목록은 관련 리소스에 연결되어 있습니다.
 
-* **수준 1:** 컨텐츠 조각 및  [AEM 헤드리스 ](/help/implementing/developing/headless/introduction.md) 프레임워크를 사용하여 AEM 컨텐츠를 SPA에 전달할 수 있습니다.
-* **레벨 2:**  레벨 1 추가:
-   * [RemotePage 구성 ](/help/implementing/developing/hybrid/remote-page.md) 요소를 사용하여 AEM 컨텐츠를 컨텍스트 내에서 볼 수 있는 AEM에 외부 SPA을 포함할 수 있습니다.
-   * SPA의 특정 지점을 [AEM에서 제한된 편집을 허용하도록 설정할 수도 있습니다.](/help/implementing/developing/hybrid/editing-external-spa.md)
-* **레벨 3:**  레벨 2 추가:
+* **수준 1:** 컨텐츠 조각 및 [AEM 헤드리스 프레임워크](/help/headless/introduction.md) SPA에 AEM 컨텐츠를 전달하는 데 사용할 수 있습니다.
+* **레벨 2:** 레벨 1 외에
+   * [RemotePage 구성 요소](/help/implementing/developing/hybrid/remote-page.md) AEM 컨텐츠를 컨텍스트에서 볼 수 있는 AEM에 외부 SPA을 포함하는 데 사용할 수 있습니다.
+   * SPA의 특정 지점을 활성화하여 [AEM에서 제한된 편집을 허용합니다.](/help/implementing/developing/hybrid/editing-external-spa.md)
+* **레벨 3:** 레벨 2 외에
    * SPA의 전체 영역을 활성화하여 AEM에서 포괄적인 편집을 허용할 수 있습니다.

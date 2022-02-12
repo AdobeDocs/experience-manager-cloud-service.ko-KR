@@ -2,10 +2,10 @@
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 활용할 수 있는 강력하고 광범위한 API가 있습니다.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -53,7 +53,7 @@ API가 AEM에서 제공되는 경우 Sling, JCR 및 OSGi보다 선호합니다. 
 
 >[!TIP]
 >
->이러한 지침에 대한 자세한 내용은 [Java API 우수 사례 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html) 문서를 참조하십시오.
+>이러한 지침에 대한 자세한 내용은 문서를 참조하십시오 [Java API 우수 사례를 이해합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ## AEM 배달 및 콘텐츠 관리 서비스 및 API {#delivery-apis}
 
@@ -66,7 +66,7 @@ AEM에서는 사용자 정의 가능한 구성 요소 및 콘텐츠 전달 옵�
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 컨텐츠의 JSON 내보내기 생성 |
 | [자산 API](/help/assets/mac-api-assets.md) | 이진, 메타데이터, 표현물 및 주석을 포함하여 자산에 대한 CRUD(Create-Read-update-delete) 작업을 허용합니다. AEM Assets HTTP API 를 참조하십시오 |
 | [컨텐츠 조각 HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD 작업을 통해 HTTP API를 통해 직접 컨텐츠 조각 컨텐츠에 액세스합니다 |
-| [컨텐츠 조각 GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) | 헤드리스 CMS 구현에서 JavaScript 클라이언트에 컨텐츠 조각을 효율적으로 전달할 수 있도록 합니다 |
+| [컨텐츠 조각 GraphQL API](/help/headless/graphql-api/content-fragments.md) | 헤드리스 CMS 구현에서 JavaScript 클라이언트에 컨텐츠 조각을 효율적으로 전달할 수 있도록 합니다 |
 | [컨텐츠 조각 자산 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 지원되는 HTTP 자산 요청의 정확한 형식 |
 
 ## SPA 특정 API {#spa-apis}
@@ -82,4 +82,4 @@ AEM Single-Page Application(SPA) Editor SDK 프레임워크는 특정 JavaScript
 
 >[!TIP]
 >
->단일 페이지 애플리케이션에 대한 자세한 내용은 [SPA 소개 및 연습](/help/implementing/developing/hybrid/introduction.md)을 참조하십시오.
+>다음을 확인하십시오 [SPA 소개 및 연습](/help/implementing/developing/hybrid/introduction.md) 단일 페이지 애플리케이션에 대한 자세한 정보.

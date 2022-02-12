@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
+source-git-commit: 7076b5b7db75ebe4f6b381ab2330769f7dcd6904
 workflow-type: tm+mt
-source-wordcount: '3494'
-ht-degree: 99%
+source-wordcount: '3444'
+ht-degree: 98%
 
 ---
 
@@ -158,12 +158,7 @@ ht-degree: 99%
          + [계정 환경 구성](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + 헤드리스 콘텐츠 작성 여정 {#headless-journey}
-         + [AEM 헤드리스 콘텐츠 작성 여정 - 개요](/help/journey-headless/author/overview.md)
-         + [AEM을 통한 헤드리스 작성 - 소개](/help/journey-headless/author/introduction.md)
-         + [AEM을 통한 헤드리스 작성 기본 사항 - 소개](/help/journey-headless/author/basics.md)
-         + [콘텐츠 조각의 참조 사용에 대해 알아보기](/help/journey-headless/author/references.md)
-         + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
+      + [헤드리스 콘텐츠 작성 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + 작성 기본 사항 {#fundamentals}
          + [환경 및 도구](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [페이지 주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -253,14 +248,7 @@ ht-degree: 99%
                + [번역 규칙 구성](/help/journey-sites/translation/translation-rules.md)
                + [콘텐츠 번역](/help/journey-sites/translation/translate-content.md)
                + [번역된 콘텐츠 게시](/help/journey-sites/translation/publish-content.md)
-            + 헤드리스 번역 여정 {#headless}
-               + [AEM에서의 헤드리스 번역 이해](/help/journey-headless/translation/overview.md)
-               + [AEM 헤드리스 번역 시작하기](/help/journey-headless/translation/getting-started.md)
-               + [헤드리스 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기](/help/journey-headless/translation/learn-about.md)
-               + [번역 커넥터 구성](/help/journey-headless/translation/configure-connector.md)
-               + [번역 규칙 구성](/help/journey-headless/translation/translation-rules.md)
-               + [콘텐츠 번역](/help/journey-headless/translation/translate-content.md)
-               + [번역된 콘텐츠 게시](/help/journey-headless/translation/publish-content.md)
+            + [헤드리스 번역 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [다국어 사이트를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md)
             + [번역을 위한 콘텐츠 준비](/help/sites-cloud/administering/translation/preparation.md)
             + [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -319,9 +307,6 @@ ht-degree: 99%
       + [검색 패싯](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [콘텐츠 조각용 GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
-      + [콘텐츠 조각의 원격 GraphQL 구문 인증](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-      + [콘텐츠 조각이 있는 GraphQL API - 샘플 콘텐츠 및 구문](/help/assets/content-fragments/content-fragments-graphql-samples.md)
       + [연결된 에셋](/help/assets/use-assets-across-connected-assets-instances.md)
       + [배치 전용 렌디션 생성](/help/assets/configure-fpo-renditions.md)
       + [에셋 보고서](/help/assets/asset-reports.md)
@@ -547,6 +532,73 @@ ht-degree: 99%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
++ 헤드리스 {#headless}
+   + [AEM Headless 소개](/help/headless/introduction.md)
+   + 설정 {#setup}
+      + [소개](/help/headless/setup/introduction.md)
+      + [구성](/help/headless/setup/create-configuration.md)
+      + [컨텐츠 조각 모델](/help/headless/setup/create-content-model.md)
+      + [자산 폴더](/help/headless/setup/create-assets-folder.md)
+      + [콘텐츠 조각](/help/headless/setup/create-content-fragment.md)
+      + [GraphQL 끝점](/help/headless/setup/create-api-request.md)
+   + 콘텐츠 조각 {#content-fragments}
+      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ko-KR)
+      + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ko-KR)
+      + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ko-KR)
+      + 작성{#authoring}
+         + [작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko-KR)
+         + [텍스트 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ko-KR)
+         + [관련 컨텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ko-KR)
+         + [변형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+      + [메타데이터](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ko-KR)
+      + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ko-KR)
+      + [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ko-KR)
+   + GraphQL API {#graphql-api}
+      + [콘텐츠 조각용 GraphQL API](/help/headless/graphql-api/content-fragments.md)
+      + [GraphQL 엔드포인트 관리](/help/headless/graphql-api/graphql-endpoint.md)
+      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+      + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
+      + [지속된 GraphQL 쿼리](/help/headless/graphql-api/persisted-queries.md)
+   + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ko-KR)
+   + 보안 {#security}
+      + [권한](/help/headless/security/permissions.md)
+      + [인증](/help/headless/security/authentication.md)
+   + 배포 {#deployment}
+      + [아키텍처](/help/headless/deployment/architecture.md)
+      + [Dispatcher](/help/headless/deployment/dispatcher.md)
+      + [CORS 구성](/help/headless/deployment/cross-origin-resource-sharing.md)
+      + [레퍼러 필터](/help/headless/deployment/referrer-filter.md)
+   + 헤드리스 여정 {#journeys}
+      + 헤드리스 개발자 여정 {#developer}
+         + [AEM 헤드리스 이해](/help/journey-headless/developer/overview.md)
+         + [CMS 헤드리스 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
+         + [AEM Headless as a Cloud Service 시작하기](/help/journey-headless/developer/getting-started.md)
+         + [AEM Headless를 사용한 첫 번째 경험으로의 경로](/help/journey-headless/developer/path-to-first-experience.md)
+         + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](/help/journey-headless/developer/model-your-content.md)
+         + [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](/help/journey-headless/developer/access-your-content.md)
+         + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](/help/journey-headless/developer/update-your-content.md)
+         + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
+         + [헤드리스 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
+         + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
+      + 헤드리스 콘텐츠 설계 여정 {#architect}
+         + [AEM 헤드리스 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
+         + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
+         + [AEM을 통한 헤드리스용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
+         + [AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
+      + 헤드리스 번역 여정 {#translation}
+         + [AEM에서의 헤드리스 번역 이해](/help/journey-headless/translation/overview.md)
+         + [AEM 헤드리스 번역 시작하기](/help/journey-headless/translation/getting-started.md)
+         + [헤드리스 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기](/help/journey-headless/translation/learn-about.md)
+         + [번역 커넥터 구성](/help/journey-headless/translation/configure-connector.md)
+         + [번역 규칙 구성](/help/journey-headless/translation/translation-rules.md)
+         + [콘텐츠 번역](/help/journey-headless/translation/translate-content.md)
+         + [번역된 콘텐츠 게시](/help/journey-headless/translation/publish-content.md)
+      + 헤드리스 콘텐츠 작성 여정 {#author}
+         + [AEM 헤드리스 콘텐츠 작성 여정 - 개요](/help/journey-headless/author/overview.md)
+         + [AEM을 통한 헤드리스 작성 - 소개](/help/journey-headless/author/introduction.md)
+         + [AEM을 통한 헤드리스 작성 기본 사항 - 소개](/help/journey-headless/author/basics.md)
+         + [콘텐츠 조각의 참조 사용에 대해 알아보기](/help/journey-headless/author/references.md)
+         + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
    + Cloud Manager 사용 {#using-cloud-manager}
@@ -690,49 +742,7 @@ ht-degree: 99%
             + [맞춤형 술어 평가자 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [맞춤형 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
-      + 헤드리스 경험 관리 {#headless}
-         + [헤드리스 및 AEM](/help/implementing/developing/headless/introduction.md)
-         + 헤드리스 여정 {#journeys}
-            + 헤드리스 개발자 여정 {#developer}
-               + [AEM 헤드리스 이해](/help/journey-headless/developer/overview.md)
-               + [CMS 헤드리스 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
-               + [AEM Headless as a Cloud Service 시작하기](/help/journey-headless/developer/getting-started.md)
-               + [AEM Headless를 사용한 첫 번째 경험으로의 경로](/help/journey-headless/developer/path-to-first-experience.md)
-               + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](/help/journey-headless/developer/model-your-content.md)
-               + [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](/help/journey-headless/developer/access-your-content.md)
-               + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](/help/journey-headless/developer/update-your-content.md)
-               + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
-               + [헤드리스 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
-               + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
-            + AEM 헤드리스 콘텐츠 설계 여정 {#architect}
-               + [AEM 헤드리스 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
-               + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
-               + [AEM을 통한 헤드리스용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
-               + [AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
-         + 헤드리스 시작 안내서 {#getting-started}
-            + [소개](/help/implementing/developing/headless/getting-started/introduction.md)
-            + [구성 만들기](/help/implementing/developing/headless/getting-started/create-configuration.md)
-            + [콘텐츠 조각 모델 만들기](/help/implementing/developing/headless/getting-started/create-content-model.md)
-            + [Assets 폴더 만들기](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
-            + [콘텐츠 조각 만들기](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
-            + [콘텐츠 조각 액세스 및 게재](/help/implementing/developing/headless/getting-started/create-api-request.md)
-         + 콘텐츠 조각 {#content-fragments}
-            + [콘텐츠 조각 및 GraphQL을 사용하여 헤드리스 게재](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=ko-KR)
-            + [콘텐츠 조각을 사용하여 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ko-KR)
-            + [인스턴스에 대해 콘텐츠 조각 기능 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html?lang=ko-KR)
-            + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ko-KR)
-            + [콘텐츠 조각 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ko-KR)
-            + [변형 - 조각 콘텐츠 작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko-KR)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ko-KR)
-            + [관련 콘텐츠 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ko-KR)
-            + [메타데이터 - 조각 속성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ko-KR)
-            + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ko-KR)
-            + [미리보기 - JSON 표시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ko-KR)
-         + 배달 API{#delivery-api}
-            + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ko-KR)
-            + [콘텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=ko-KR)
-            + [콘텐츠 조각이 있는 AEM GraphQL API - 샘플 콘텐츠 및 구문](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=ko-KR)
-            + [콘텐츠 조각의 원격 AEM GraphQL 구문 인증](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=ko-KR)
+      + [헤드리스 경험 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + 하이브리드 및 SPA 개발 {#hybrid}
          + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ko-KR)
