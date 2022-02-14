@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service의 유지 관리 작업
 description: AEM as a Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 3e0de69033883bb77fae5be83d47167663bea3fd
+source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 2%
@@ -34,13 +34,13 @@ ht-degree: 2%
 | 버전 삭제 | Adobe | Adobe이 완전히 소유하지만 향후에는 고객이 특정 매개 변수를 구성할 수 있습니다. |
 | 감사 로그 삭제 | Adobe | Adobe이 완전히 소유하지만 향후에는 고객이 특정 매개 변수를 구성할 수 있습니다. |
 | Lucene 바이너리 정리 | Adobe | 사용하지 않으므로 Adobe에 의해 비활성화됩니다. |
-| 임시 작업 제거 | 고객 | github에서 수행해야 합니다. <br> 또는 폴더에 속성을  `/libs` 만들어 아래의 바로 사용 가능한 유지 관리 창 구성 노드 `/apps/settings/granite/operations/maintenance/granite_weekly` 를 재정의합니다 `granite_daily`. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 다른 노드를 추가하여 유지 관리  `granite_TaskPurgeTask`작업을 활성화합니다. <br> OSGI 속성 구성 은  [AEM 6.5 Maintenance Task 설명서 를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 워크플로우 삭제 | 고객 | github에서 수행해야 합니다. <br> 폴더 아래에 속성을  `/libs` 만들어 아래의 바로 사용 가능한 유지 관리 창 구성 노드를 `/apps/settings/granite/operations/maintenance/granite_weekly` 재정의합니다  `granite_daily`. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 다른 노드를 추가하여 유지 관리  `granite_WorkflowPurgeTask`작업을 활성화합니다. <br> OSGI 속성 구성 은  [AEM 6.5 Maintenance Task 설명서 를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| 프로젝트 삭제 | 고객 | github에서 수행해야 합니다. <br> 또는 폴더에 속성을  `/libs` 만들어 아래의 바로 사용 가능한 유지 관리 창 구성 노드 `/apps/settings/granite/operations/maintenance/granite_weekly` 를 재정의합니다 `granite_daily`. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오. <br> 위의 노드 아래에 적절한 속성을 사용하여 노드를 추가하여 유지 관리  `granite_ProjectPurgeTask`작업을 활성화합니다. <br> OSGI 속성 구성  [AEM 6.5 Maintenance Task Documentation 을 참조하십시오](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 임시 작업 제거 | 고객 | github에서 수행해야 합니다. <br> 아래의 기본 제공 유지 관리 창 구성 노드 재정의 `/libs` 폴더 아래에 속성을 만들면 `/apps/settings/granite/operations/maintenance/granite_weekly` 또는 `granite_daily`. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오. <br> 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다(이름을 지정합니다.) `granite_TaskPurgeTask`) 내의 아무 곳에나 삽입할 수 있습니다. <br> OSGI 속성을 구성하려면 다음을 참조하십시오. [AEM 6.5 유지 관리 작업 설명서](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 워크플로우 삭제 | 고객 | github에서 수행해야 합니다. <br> 아래의 기본 제공 유지 관리 창 구성 노드 재정의 `/libs` 폴더 아래에 속성을 만들면`/apps/settings/granite/operations/maintenance/granite_weekly` 또는 `granite_daily`. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오. <br> 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다(이름을 지정합니다.) `granite_WorkflowPurgeTask`) 내의 아무 곳에나 삽입할 수 있습니다. <br> OSGI 속성 구성 참조 [AEM 6.5 유지 관리 작업 설명서](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| 프로젝트 삭제 | 고객 | github에서 수행해야 합니다. <br> 아래의 기본 제공 유지 관리 창 구성 노드 재정의 `/libs` 폴더 아래에 속성을 만들면 `/apps/settings/granite/operations/maintenance/granite_weekly` 또는 `granite_daily`. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오. <br> 위의 노드 아래에 노드를 추가하여 유지 관리 작업을 활성화합니다(노드 이름 지정) `granite_ProjectPurgeTask`) 내의 아무 곳에나 삽입할 수 있습니다. <br> OSGI 속성 구성 참조 [AEM 6.5 유지 관리 작업 설명서](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 고객은 일별, 주별 또는 월별 유지 관리 기간 동안 각 워크플로우 삭제, 임시 태스크 삭제 및 프로젝트 삭제 유지 관리 작업을 실행하도록 예약할 수 있습니다. 이러한 구성은 소스 제어에서 직접 편집해야 합니다. 아래 표에서는 각 창에 사용할 수 있는 구성 매개 변수에 대해 설명합니다. 또한 테이블 뒤에 제공된 위치 및 코드 샘플도 참조하십시오.
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
     <th>유지 관리 창 구성</th>
@@ -54,8 +54,8 @@ ht-degree: 2%
     <td>JCR 노드 정의</td>
   <td>
   <p><strong>windowSchedule=daily</strong> (이 값은 변경할 수 없습니다.)</p>
-  <p><strong>windowStartTime=HH:</strong> 24시간 클럭으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
-  <p><strong>windowEndTime=HH:</strong> 24시간 클럭으로 사용 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행을 중지해야 하는 시기를 정의합니다.</p>
+  <p><strong>windowStartTime=HH:MM</strong> 를 24시간 시간으로 사용. 일별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
+  <p><strong>windowEndTime=HH:MM</strong> 를 24시간 시간으로 사용. 일별 유지 관리 창과 연관된 유지 관리 작업이 아직 완료되지 않은 경우 실행을 중지해야 하는 시기를 정의합니다.</p>
   </td> 
   </tr>
   <tr>
@@ -63,10 +63,10 @@ ht-degree: 2%
     <td>고객</td>
     <td>JCR 노드 정의</td>
     <td>
-    <p><strong>windowSchedule=weekly</strong> (이 값은 변경할 수 없음)</p>
-    <p><strong>windowStartTime=HH:</strong> 24시간 클럭으로 사용 주별 유지 관리 기간과 연관된 유지 관리 작업 실행 시기를 정의합니다.</p>
-    <p><strong>windowEndTime=HH:</strong> 24시간 클럭으로 사용 아직 완료되지 않은 경우 주간 유지 관리 창과 연관된 유지 관리 작업이 실행을 중지해야 하는 시기를 정의합니다.</p>
-    <p><strong>windowScheduleWeekle= 1-7에서 2개의 값 배열(예: [5,5])</strong>  배열의 첫 번째 값은 작업이 예약된 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime에 의해 제어됩니다.</p>
+    <p><strong>windowSchedule=weekly</strong> (이 값은 변경할 수 없습니다.)</p>
+    <p><strong>windowStartTime=HH:MM</strong> 를 24시간 시간으로 사용. 주별 유지 관리 기간과 연관된 유지 관리 작업 실행 시기를 정의합니다.</p>
+    <p><strong>windowEndTime=HH:MM</strong> 를 24시간 시간으로 사용. 아직 완료되지 않은 경우 주간 유지 관리 창과 연관된 유지 관리 작업이 실행을 중지해야 하는 시기를 정의합니다.</p>
+    <p><strong>windowScheduleWeekle= 1-7에서 2개의 값 배열(예: [5,5])</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime에 의해 제어됩니다.</p>
     </td>
   </tr>
   <tr>
@@ -75,10 +75,10 @@ ht-degree: 2%
     <td>JCR 노드 정의</td>
     <td>
     <p><strong>windowSchedule=daily</strong> (이 값은 변경할 수 없습니다.)</p>
-    <p><strong>windowStartTime=HH:</strong> 24시간 클럭으로 사용 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
-    <p><strong>windowEndTime=HH:</strong> 24시간 클럭으로 사용 아직 완료되지 않은 경우 월별 유지 관리 창과 연관된 유지 관리 작업이 실행을 중지해야 하는 시기를 정의합니다.</p>
-    <p><strong>windowScheduleWeekle=1-7에서 2개 값의 배열(예: [5,5])</strong>  배열의 첫 번째 값은 작업이 예약된 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime에 의해 제어됩니다.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0을 사용하여 월의 첫 번째 주에 예약하거나 월의 마지막 주에 예약하십시오. 값이 없을 경우, 매달 windowScheduleWeekday에 의해 관리되는 방식으로 매일 일자리를 예약할 수 있습니다.</p>
+    <p><strong>windowStartTime=HH:MM</strong> 를 24시간 시간으로 사용. 월별 유지 관리 창과 연관된 유지 관리 작업의 실행을 시작하는 시기를 정의합니다.</p>
+    <p><strong>windowEndTime=HH:MM</strong> 를 24시간 시간으로 사용. 아직 완료되지 않은 경우 월별 유지 관리 창과 연관된 유지 관리 작업이 실행을 중지해야 하는 시기를 정의합니다.</p>
+    <p><strong>windowScheduleWeekle=1-7에서 2개 값의 배열(예: [5,5])</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 시작 및 종료의 정확한 시간은 각각 windowStartTime 및 windowEndTime에 의해 제어됩니다.</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 을 클릭하여 해당 월의 첫 번째 주 또는 1에서 해당 월의 마지막 주에 예약합니다. 값이 없을 경우, 매달 windowScheduleWeekday에 의해 관리되는 방식으로 매일 일자리를 예약할 수 있습니다.</p>
     </td> 
     </tr>
     </tbody>
