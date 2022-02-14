@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 5731337ff0edf5825860e6f76ed919b90402d88b
+source-git-commit: 7935ed5c332934cf1824ef8e6b52b6a7f451dc34
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 100%
+source-wordcount: '1083'
+ht-degree: 95%
 
 ---
 
@@ -31,6 +31,10 @@ ht-degree: 100%
 ## 릴리스 비디오 {#release-video}
 
 [2022년 1월 릴리스 개요](https://video.tv.adobe.com/v/340120) 비디오를 통해 2022.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+
+## Adobe Experience Manager Sites as a Cloud Service {#sites}
+
+* 다음 **[프런트엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 버튼은 **사이트** 페이지 코어 구성 요소의 v2를 사용하는 사이트에 대한 사이트 콘솔의 레일입니다. 이 버튼은 기존 클라이언트 라이브러리의 맨 위에 프런트 엔드 파이프라인과 함께 배포된 테마를 로드하도록 사이트를 구성합니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
