@@ -3,9 +3,9 @@ title: 프런트엔드 파이프라인 활성화
 description: 기존 사이트의 프런트엔드 파이프라인이 사이트 테마를 활용하여 사이트를 보다 신속하게 사용자 정의할 수 있는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ ht-degree: 0%
 >프런트 엔드 파이프라인과 이 파이프라인과 사이트 템플릿을 사용하여 사이트를 빠르게 배포하는 방법을 잘 모르는 경우 다음을 검토하십시오 [빠른 사이트 만들기 여정](/help/journey-sites/quick-site/overview.md) 소개
 
 사이트 템플릿 및 테마를 기반으로 기존 사이트를 만들지 않은 경우 AEM에서는 기존 클라이언트 라이브러리 맨 위에 프런트엔드 파이프라인과 함께 배포되는 테마를 로드하도록 사이트를 구성할 수 있습니다.
+
+## 기술 세부 사항 {#technical-details}
+
+사이트에 대한 프런트 엔드 파이프라인을 활성화하면 AEM에서 사이트 구조를 다음과 같이 변경합니다.
+
+* 사이트의 모든 페이지에는 전용 Cloud Manager 프런트 엔드 파이프라인을 통해 업데이트를 배포하여 수정할 수 있는 한 개의 추가 CSS 및 JS 파일이 포함되어 있습니다.
+* 추가된 CSS 및 JS 파일은 처음에 비어 있지만 &quot;테마 소스&quot; 폴더를 다운로드하여 해당 파이프라인을 통해 CSS 및 JS 코드 업데이트를 배포할 수 있는 폴더 구조를 부트스트랩할 수 있습니다.
+* 이 변경 사항은 개발자가 삭제한 다음 `SiteConfig` 및 `HtmlPageItemsConfig` 이 작업이 아래에 생성하는 노드 `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>이 작업은 사이트의 기존 클라이언트 라이브러리를 글꼴 끝 파이프라인을 사용하도록 자동으로 변환하지 않습니다. 이러한 소스를 클라이언트 라이브러리 폴더에서 프런트 엔드 파이프라인 폴더로 이동하는 것은 프런트 엔드 개발자가 수동으로 작업해야 하는 작업입니다.
 
 ## 요구 사항 {#requirements}
 
