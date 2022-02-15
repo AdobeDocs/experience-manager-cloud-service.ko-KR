@@ -103,7 +103,7 @@ ht-degree: 98%
    + [실행 이후](/help/journey-migration/post-go-live.md)
    + [파트너용 Experience Manager as a Cloud Service 마이그레이션 안내서](/help/journey-migration/getting-started-partners.md)
    + 마이그레이션 도구 릴리스 정보 {#release-notes-migration-tools}
-      + [최신 릴리스 정보(2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [최신 릴리스 정보 (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2021년 {#2021}
          + [2022.1.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
          + [2021.12.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
@@ -605,7 +605,7 @@ ht-degree: 98%
    + Cloud Manager 사용 {#using-cloud-manager}
       + Cloud Manager 릴리스 정보 {#release-notes-cloud-manager}
          + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022년 {#2022}
+         + 2022 {#2022}
             + [2022.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021년 {#2021}
             + [2021.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
