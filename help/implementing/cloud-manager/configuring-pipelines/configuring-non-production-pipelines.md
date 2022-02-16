@@ -2,7 +2,7 @@
 title: 비프로덕션 파이프라인 구성
 description: 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
@@ -124,7 +124,7 @@ ht-degree: 0%
 >
 >선택한 환경에 대해 웹 계층 코드 파이프라인이 이미 있으면 이 선택 사항이 비활성화됩니다.
 
-전체 스택 코드 비프로덕션 파이프라인의 구성을 완료하려면 다음 단계를 따르십시오.
+웹 계층 코드 비프로덕션 파이프라인의 구성을 완료하려면 다음 단계를 따르십시오.
 
 1. 설정 **소스 코드** 탭에서 다음 옵션을 정의해야 합니다.
 
