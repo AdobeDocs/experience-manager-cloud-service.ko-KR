@@ -1,9 +1,9 @@
 ---
 title: 사용자 지정 테마 배포
 description: 파이프라인을 사용하여 사이트 테마를 배포하는 방법을 알아봅니다.
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -102,6 +102,7 @@ AEM은 강력한 툴이며 다양한 추가 옵션을 사용할 수 있습니다
 
 다음은 이 문서에서 언급된 몇 가지 개념을 자세히 설명하는 몇 가지 추가 리소스입니다.
 
+* [사이트 레일을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md) - 사이트 레일의 강력한 기능을 학습하여 테마 소스 다운로드 및 테마 버전 관리 등 사이트 테마를 손쉽게 사용자 지정하고 관리할 수 있습니다.
 * [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 이미 AEM에 대한 확고한 이해가 있는 경우 심층적인 기술 문서를 직접 참조할 수 있습니다.
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager의 기능에 대한 자세한 내용은 세부 기술 문서를 직접 참조하십시오.
 * [역할 기반 권한](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager에는 적절한 권한이 있는 미리 구성된 역할이 있습니다. 이러한 역할에 대한 자세한 내용 및 관리 방법은 이 문서를 참조하십시오.
