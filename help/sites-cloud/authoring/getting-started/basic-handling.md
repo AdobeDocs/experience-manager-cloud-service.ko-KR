@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 96%
+source-wordcount: '2954'
+ht-degree: 95%
 
 ---
 
@@ -465,7 +465,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![사이트 레일](../assets/site-rail.png)
 
-을(를) 탭하거나 클릭합니다 **테마 소스 다운로드** 를 사용하여 [사이트의 테마.](/help/sites-cloud/administering/site-creation/site-themes.md)
+문서를 참조하십시오 [사이트 레일을 사용하여 사이트 테마 관리](/help/sites-cloud/administering/site-creation/site-rail.md) 레일을 사용하여 관리 [사이트의 테마.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
