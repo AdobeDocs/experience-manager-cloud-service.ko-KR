@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service의 유지 관리 작업
 description: AEM as a Cloud Service의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
+source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '1211'
 ht-degree: 2%
 
 ---
@@ -39,6 +39,64 @@ ht-degree: 2%
 | 프로젝트 삭제 | 고객 | github에서 수행해야 합니다. <br> 아래의 기본 제공 유지 관리 창 구성 노드 재정의 `/libs` 폴더 아래에 속성을 만들면 `/apps/settings/granite/operations/maintenance/granite_weekly` 또는 `granite_daily`. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오. <br> 위의 노드 아래에 노드를 추가하여 유지 관리 작업을 활성화합니다(노드 이름 지정) `granite_ProjectPurgeTask`) 내의 아무 곳에나 삽입할 수 있습니다. <br> OSGI 속성 구성 참조 [AEM 6.5 유지 관리 작업 설명서](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 고객은 일별, 주별 또는 월별 유지 관리 기간 동안 각 워크플로우 삭제, 임시 태스크 삭제 및 프로젝트 삭제 유지 관리 작업을 실행하도록 예약할 수 있습니다. 이러한 구성은 소스 제어에서 직접 편집해야 합니다. 아래 표에서는 각 창에 사용할 수 있는 구성 매개 변수에 대해 설명합니다. 또한 테이블 뒤에 제공된 위치 및 코드 샘플도 참조하십시오.
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>유지 관리 작업</th>
+    <th>구성을 소유하는 사용자</th>
+    <th>구성 방법(선택 사항)</th>
+  </tr>  
+  <tr>
+    <td>데이터 저장소 가비지 수집</td>
+    <td>Adobe</td>
+    <td>해당 사항 없음 - 소유한 전체 Adobe</td>
+  </td> 
+  </tr>
+  <tr>
+    <td>버전 삭제</td>
+    <td>Adobe</td>
+    <td>Adobe이 완전히 소유하지만 향후에는 고객이 특정 매개 변수를 구성할 수 있습니다.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>감사 로그 삭제</td>
+    <td>Adobe</td>
+    <td>Adobe이 완전히 소유하지만 향후에는 고객이 특정 매개 변수를 구성할 수 있습니다.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Lucene 바이너리 정리</td>
+    <td>Adobe</td>
+    <td>사용하지 않으므로 Adobe에 의해 비활성화됩니다.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>임시 작업 제거</td>
+    <td>고객</td>
+    <td>
+    <p>github에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 만들면 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code>.</p>
+    <p>추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다(이름을 지정합니다.) <code>granite_TaskPurgeTask</code>) 내의 아무 곳에나 삽입할 수 있습니다. OSGI 속성을 구성하려면 다음을 참조하십시오. <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 유지 관리 작업 설명서</a>.</p>
+  </td>
+  </tr>
+    <tr>
+    <td>워크플로우 삭제</td>
+    <td>고객</td>
+    <td>
+    <p>github에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 만들면 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code>. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오.</p>
+    <p>위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다(이름을 지정합니다.) <code>granite_WorkflowPurgeTask</code>) 내의 아무 곳에나 삽입할 수 있습니다. OSGI 속성 구성 참조 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 유지 관리 작업 설명서</a>.</p>
+  </td>
+  </tr>
+  <tr>
+    <td>프로젝트 삭제</td>
+    <td>고객</td>
+    <td>
+    <p>github에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 만들면 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code>. 추가 구성 세부 사항은 아래의 유지관리 창 테이블을 참조하십시오.</p>
+    <p>위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다(이름을 지정합니다.) <code>granite_ProjectPurgeTask</code>) 내의 아무 곳에나 삽입할 수 있습니다. OSGI 속성 구성 참조 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 유지 관리 작업 설명서</a>.</p>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 <table style="table-layout:auto">
  <tbody>
