@@ -3,7 +3,7 @@ title: Cloud Manager를 통해 클라우드 리소스 설정
 description: Cloud Manager를 사용하여 고유한 클라우드 리소스를 설정 및 관리하는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Cloud Manager를 사용하여 고유한 클라우드 리소스를 설정 및 관
 
 * 잘 아셔야 합니다 [Cloud Manager 제품 프로필.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* Cloud Manager의 개념을 이해해야 합니다 [프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) 및 [환경.](/help/implementing/cloud-manager/manage-environments.md)
+* Cloud Manager의 개념을 이해해야 합니다 [프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 및 [환경.](/help/implementing/cloud-manager/manage-environments.md)
 
 ## 시스템 관리자 및 비즈니스 소유자로서 Cloud Manager에 액세스 {#access-sysadmin-bo}
 
@@ -141,7 +141,7 @@ Cloud Manager에 성공적으로 로그인하면 사용자에게 **비즈니스 
 
    >[!TIP]
    >
-   >프로그램 추가 마법사를 사용하는 방법에 대한 단계별 지침은 문서를 참조하십시오 [프로덕션 프로그램 생성](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) 이걸 보고 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) AEM as a Cloud Program을 만들고 프로그램을 만들기 전에 중요한 고려 사항에 대해 학습하는 방법을 알아봅니다.
+   >프로그램 추가 마법사를 사용하는 방법에 대한 단계별 지침은 문서를 참조하십시오 [프로덕션 프로그램 생성](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 이걸 보고 [비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) AEM as a Cloud Program을 만들고 프로그램을 만들기 전에 중요한 고려 사항에 대해 학습하는 방법을 알아봅니다.
 
 
 1. 클라우드 프로그램을 성공적으로 만들면 Cloud Manager 랜딩 페이지에서 프로그램으로 이동하여 를 볼 수 있습니다. **개요** 프로그램의 페이지입니다.

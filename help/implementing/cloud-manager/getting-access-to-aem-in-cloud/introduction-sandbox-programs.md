@@ -1,49 +1,67 @@
 ---
 title: '샌드박스 프로그램 소개 '
-description: 샌드박스 프로그램 소개
+description: 샌드박스 프로그램은 프로덕션 프로그램과 어떻게 다른지 알아봅니다.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 1892900ea3f365e1b5f7d31ffae64d45256d2a3a
+source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
+
 # 샌드박스 프로그램 소개 {#sandbox-programs}
+
+샌드박스 프로그램은 프로덕션 프로그램과 어떻게 다른지 알아봅니다.
 
 ## 소개 {#introduction}
 
-샌드박스 프로그램은 AEM Cloud Service에서 사용할 수 있는 두 가지 프로그램 중 하나이며 다른 프로그램은 프로덕션 프로그램입니다.
+샌드박스 프로그램은 일반적으로 교육, 데모 실행, 지원 또는 개념 증명(POC)의 목적을 위해 만들어지므로 라이브 트래픽을 전달하지 않습니다.
 
-샌드박스는 일반적으로 교육, 실행 데모, 지원 또는 개념 증명(POC)의 목적을 위해 만들어집니다. 그들은 실생활에 대한 여행을 하기 위한 것이 아니다. 이 콘텐츠는 [AEM as a Cloud Service 약정](https://www.adobe.com/legal/service-commitments.html).
+샌드박스 프로그램은 AEM Cloud Service에서 사용할 수 있는 두 가지 프로그램 중 하나이며 다른 프로그램은 [프로덕션 프로그램.](introduction-production-programs.md) 문서를 참조하십시오 [프로그램 및 프로그램 유형 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 프로그램 유형에 대해 자세히 알아보십시오.
 
-샌드박스에서 생성된 환경은 자동 크기 조절을 위해 구성되지 않습니다. 따라서 이러한 환경은 성능 또는 로드 테스트에 적합하지 않습니다.
+## 자동 만들기 {#auto-creation}
 
-샌드박스 프로그램에는 다음이 포함됩니다 [!DNL Sites] 및 [!DNL Assets] 및 는 Git 리포지토리, 개발 환경 및 비프로덕션 파이프라인으로 자동 채워집니다.  Git 리포지토리는 AEM Project 원형 기반의 샘플 프로젝트로 채워집니다.
+샌드박스 프로그램 기능은 자동 생성 기능을 제공합니다. 새 샌드박스 프로그램을 생성할 때마다 Cloud Manager는 자동으로 다음을 수행합니다.
 
->[!IMPORTANT]
->샌드박스 프로그램에는 개발 환경이 하나만 있습니다.
+* 프로그램에서 솔루션으로 AEM Sites 및 AEM Assets을 추가합니다.
+* 을 기반으로 샘플 프로젝트를 사용하여 프로젝트 git 리포지토리 설정 [AEM 프로젝트 원형.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* 개발 환경을 만듭니다.
+* 개발 환경에 배포되는 비프로덕션 파이프라인을 만듭니다.
 
->[!NOTE]
->사용자 지정 허용 목록 및 IP 도메인은 샌드박스 프로그램에서 사용할 수 없습니다.
+샌드박스 프로그램에는 하나의 개발 환경만 있습니다.
 
-을(를) 참조하십시오. [프로그램 및 프로그램 유형 이해](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) 프로그램 유형에 대해 자세히 알아보십시오 .
+## 제한 사항 및 조건 {#limitations}
 
-### 샌드박스 프로그램 속성 {#attributes-sandbox}
+라이브 트래픽에 전용되지 않으므로 샌드박스 프로그램에는 프로덕션 프로그램과 구별되는 사용에 대한 특정 제한 사항과 조건이 있습니다.
 
-샌드박스 프로그램에는 다음 속성이 있습니다.
+### 라이브 트래픽 없음 {#live-traffic}
 
-1. **프로그램 만들기:** 샌드박스 프로그램 만들기에 자동 기능이 포함되어 있습니다.
-   * 샘플 코드 및 컨텐츠로 프로젝트 설정
-   * 개발 환경 생성
-   * 개발 환경에 비프로덕션 파이프라인 생성(개발 환경에 마스터 분기 배포)
+샌드박스 프로그램은 라이브 트래픽을 전달하기 위한 것이 아니므로 [AEM as a Cloud Service 약정.](https://www.adobe.com/legal/service-commitments.html)
 
-1. **솔루션:** 샌드박스 프로그램에는 AEM이 포함됩니다 [!DNL Sites] 및 [!DNL Assets].
+### 자동 크기 조절 없음 {#auto-scaling}
 
-1. **AEM 업데이트:** AEM 업데이트는 샌드박스 프로그램의 환경에 수동으로 적용할 수 있으며 자동으로 푸시되지 않습니다.
-을(를) 참조하십시오. [샌드박스 환경에 대한 AEM 업데이트](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) 자세한 내용
+샌드박스 프로그램에서 만든 환경은 자동 크기 조절을 위해 구성되지 않습니다. 따라서 이러한 환경은 성능 또는 로드 테스트에 적합하지 않습니다.
 
-1. **최대 절전 모드:** 샌드박스 프로그램의 환경은 특정 기간 동안 활동이 감지되지 않으면 자동으로 최대 절전 모드로 전환됩니다. 샌드박스는 8시간 동안 활동하지 않으면 최대 절전 모드로 전환되고 그 이후에는 최대 절전 모드 해제 상태로 전환될 수 있습니다. 최대 절전 모드 환경을 수동으로 해제할 수 있습니다.
-을(를) 참조하십시오. [최대 절전 모드 및 최대 절전 모드 해제 샌드박스 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) 자세한 내용
+### 사용자 지정 도메인 또는 IP 허용 목록 없음 {#ip-allow}
 
-1. **삭제**: 샌드박스는 연속적인 최대 절전 모드 상태에서 6개월 후 삭제되며 그 후 다시 생성할 수 있습니다.
+사용자 지정 도메인 및 IP 허용 목록은 샌드박스 프로그램에서 사용할 수 없습니다.
+
+### 수동 AEM 업데이트 {#updates}
+
+AEM 업데이트는 자동으로 샌드박스 프로그램에 푸시되지 않지만 샌드박스 프로그램의 환경에 수동으로 적용할 수 있습니다.
+
+* 타깃팅된 환경에 올바르게 구성된 파이프라인이 있는 경우에만 수동 업데이트를 실행할 수 있습니다.
+* 프로덕션 또는 스테이징 환경에 대한 수동 업데이트는 다른 프로덕션 환경을 자동으로 업데이트합니다. 프로덕션+스테이지 환경 세트는 동일한 AEM 릴리스에 있어야 합니다.
+
+문서를 참조하십시오 [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md) 자세한 내용
+
+문서를 참조하십시오 [환경 업데이트](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) 환경 업데이트 방법을 알아봅니다.
+
+### 최대 절전 모드 및 삭제 {#hibernation}
+
+샌드박스 프로그램의 환경은 8시간 동안 활동이 없으면 자동으로 최대 절전 모드로 전환됩니다. 최대 절전 모드까지 제공되면, 수동면까지 해제될 수 있습니다.
+
+샌드박스 프로그램은 연속 최대 절전 모드 6개월 후 삭제되며 그 후 다시 생성할 수 있습니다.
+
+자세한 내용은 [최대 절전 모드 및 최대 절전 모드 해제 샌드박스 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) 자세한 내용

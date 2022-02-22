@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager 및 빠른 사이트 생성 워크플로우를 이해합니다
 description: Cloud Manager와 새로운 빠른 사이트 생성 프로세스를 함께 연결하는 방법에 대해 알아봅니다.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -82,11 +82,17 @@ AEM as a Cloud Service은 엔터프라이즈 개발 설정을 통해 고객을 �
 
 ![Cloud Manager 구조](assets/cloud-manager-structure.png)
 
-* **테넌트** - 모든 고객에게 테넌트가 제공됩니다. **WKND Travel and Adventure Enterprises** 임차인일 수 있습니다.
-* **프로그램.** - 각 임차인에게 하나 이상의 프로그램이 있습니다. 다음 **WKND Travel and Adventure Enterprises** 임차인이 **WKND 밤문화** 그리고 **WKND 오후 프로젝트** 프로그램.
-* **환경** - 각 프로그램에는 라이브 컨텐츠를 위한 프로덕션, 개발을 위한 스테이징 및 개발 등의 여러 환경이 있습니다. **WKND 밤문화** 및 **WKND 오후 프로젝트** 프로그램에는 개발, 스테이지 및 프로덕션 환경이 모두 있습니다.
+* **테넌트** - 모든 고객에게 테넌트가 제공됩니다.
+* **프로그램.** - 각 임차인에는 고객의 라이센스 솔루션을 반영하는 하나 이상의 프로그램이 있습니다.
+* **환경** - 각 프로그램에는 라이브 컨텐츠를 위한 프로덕션, 스테이징을 위한 환경 및 개발을 위한 환경이 여러 개 있습니다.
 * **저장소** - 환경에는 애플리케이션과 프런트 엔드 코드가 유지되는 Git 리포지토리가 있습니다.
 * **도구 및 워크플로우** - 파이프라인은 저장소에서 환경으로의 코드 배포를 관리합니다.
+
+예제는 이 계층 구조를 문맥화하는 데 종종 유용합니다.
+
+* WKND Travel and Adventure Enterprises는 **임차인** 그것은 여행 관련 미디어에 중점을 둡니다.
+* WKND여행과 어드벤처 기업 임차인은 두 개를 가질 수 있습니다 **프로그램**: WKND 매거진을 위한 하나의 사이트 프로그램과 WKND Media를 위한 하나의 자산 프로그램.
+* WKND 매거진과 WKND 미디어 프로그램에는 개발, 스테이지 및 프로덕션이 있을 것입니다 **환경**.
 
 ## 빠른 사이트 생성 프런트 엔드 개발 흐름 {#flow}
 
