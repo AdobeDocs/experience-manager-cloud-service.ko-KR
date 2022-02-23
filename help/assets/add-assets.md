@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2744'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 #### 전제 조건 {#prerequisites-bulk-ingestion}
 
-Experience Manager 인스턴스를 데이터 저장소에 연결하려면 소스 Blob 저장소 세부 정보가 있어야 합니다.
+이 기능을 사용하려면 Azure 또는 AWS의 외부 저장소 계정 또는 버킷이 필요합니다.
+
+>[!NOTE]
+>
+>저장소 계정 컨테이너 또는 버킷을 비공개로 만들고 승인된 요청에서만 연결을 허용합니다. 그러나 송신 네트워크 연결에 대한 추가 제한 사항은 지원되지 않습니다.
 
 #### 대량 가져오기 도구 구성 {#configure-bulk-ingestor-tool}
 
@@ -247,7 +251,7 @@ Experience Manager에 작업 기록이 표시됩니다. [대량 가져오기 작
 
 웹 브라우저 사용자 인터페이스 외에도 [!DNL Experience Manager] 데스크탑에서 다른 클라이언트를 지원합니다. 또한 웹 브라우저로 이동할 필요 없이 업로드 경험을 제공합니다.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 에서 자산에 대한 액세스 권한을 제공합니다. [!DNL Experience Manager] Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 사용할 수 있습니다. 현재 열려 있는 문서를 [!DNL Experience Manager] 이러한 데스크탑 애플리케이션 내에서 Asset Link 사용자 인터페이스에서 직접 액세스할 수 있습니다.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 에서 자산에 대한 액세스 권한을 제공합니다. [!DNL Experience Manager] Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 데스크탑 애플리케이션에서 사용할 수 있습니다. 현재 열려 있는 문서를 [!DNL Experience Manager] 이러한 데스크탑 애플리케이션 내에서 Asset Link 사용자 인터페이스에서 직접 액세스할 수 있습니다.
 * [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 파일을 처리하는 기본 애플리케이션이나 파일 유형에 관계없이 데스크탑에서 자산 작업을 간소화합니다. 브라우저 업로드는 플랫 파일 목록만 업로드할 수 있으므로 로컬 파일 시스템에서 중첩 폴더 계층 구조에 있는 파일을 업로드하는 데 특히 유용합니다.
 
 ## 업로드할 때 자산 처리 {#process-when-uploaded}
