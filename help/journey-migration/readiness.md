@@ -1,9 +1,9 @@
 ---
 title: 준비 단계
 description: AEM 설치를 클라우드로 이동할 준비가 되었는지 확인하기 위해 수행해야 하는 단계에 대해 알아봅니다
-source-git-commit: 2b2b18993d2782f01cc9361e1d558fb0d1a8c530
+source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1975'
 ht-degree: 6%
 
 ---
@@ -114,7 +114,7 @@ AEM as a Cloud Service는 AEM 프로젝트 관리를 위한 많은 새로운 기
   <tr>
     <td>워크플로 런처</td>
     <td></td>
-    <td>코드에서 OOTB 또는 사용자 지정 DAM 자산 업데이트 워크플로우를 트리거하는 워크플로우 런처를 제거합니다.</br>AEM as a Cloud Service에 업로드된 모든 자산은 자산 처리 서비스에서 처리됩니다. 추가적인 사용자 지정 처리 단계를 트리거하는 데 사용할 수 있는 워크플로우 후 처리 OSGi 구성이 있습니다.</td>
+    <td>코드에서 OOTB 또는 사용자 지정 DAM 자산 업데이트 워크플로우를 트리거하는 워크플로우 런처를 제거합니다.</br>AEM as a Cloud Service에 업로드된 모든 자산은 자산 처리 서비스에서 처리됩니다. 사용자 지정 단계는 다음을 참조하십시오. <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 사후 처리 워크플로우</a> 사후 처리 워크플로우 설정 및 구성 방법에 대해 설명합니다.</td>
   </tr>
   <tr>
     <td>사용자 정의 표현물 단계</td>
