@@ -1,8 +1,8 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 릴리스의 릴리스 노트'
-description: '[!DNL Adobe Experience Manager] 2021.3.0용 as a Cloud Service 릴리스 노트'
+description: '"[!DNL Adobe Experience Manager] 2021.3.0용 as a Cloud Service 릴리스 노트"'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 9%
@@ -138,7 +138,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 날짜는 2021년 3�
 
 ### 버그 수정 {#bug-fixes-ctt}
 
-* CTT는 이름이 같지만 이름에 하이픈이 있는 폴더에서 컨텐츠를 건너뛰었습니다. 이 문제가 수정되었습니다.
+* CTT는 이름이 같지만 이름에 하이픈이 있는 폴더에서 컨텐츠를 건너뛰었습니다. 이 문제가 해결되었습니다.
 
 ### 릴리스 날짜 {#release-date-ctt-march}
 

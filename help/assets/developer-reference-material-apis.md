@@ -1,14 +1,14 @@
 ---
 title: 에 대한 개발자 참조 [!DNL Assets]
-description: '[!DNL Assets] API 및 개발자 참조 컨텐츠를 사용하면 이진 파일, 메타데이터, 표현물, 주석 및 를 포함한 자산을 관리할 수 있습니다 [!DNL Content Fragments].'
+description: '"[!DNL Assets] API 및 개발자 참조 컨텐츠를 사용하면 이진 파일, 메타데이터, 표현물, 주석 및 를 포함한 자산을 관리할 수 있습니다 [!DNL Content Fragments]."'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2f0521831383c11e1edee8c5d719ec42f7bcfd5e
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1449'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: '[!DNL Assets] 로서의 [!DNL Cloud Service] 안내서'
-description: '[!DNL Adobe Experience Manager Assets] 로서의 [!DNL Cloud Service] 자습 리소스 및 설명서 링크'
+title: '"[!DNL Assets] 로서의 [!DNL Cloud Service] 안내서"'
+description: '"[!DNL Adobe Experience Manager Assets] 로서의 [!DNL Cloud Service] 자습 리소스 및 설명서 링크"'
 landing-page-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 35%
+ht-degree: 38%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 35%
 ## 키 [!DNL Assets] 문서 {#key-articles}
 
 * [개요 및 새로운 기능](overview.md)
-* [주요 변경 사항](/help/assets/assets-cloud-changes.md)
+* [주요 변경 내용](/help/assets/assets-cloud-changes.md)
 * [아키텍처 [!DNL Assets] 로서의 [!DNL Cloud Service]](architecture.md)
-* [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
+* [에셋 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
 
 ## [!DNL Experience Manager] 안내서 {#aem-guides}
 
@@ -37,16 +37,16 @@ ht-degree: 35%
 | [이동 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]](/help/journey-migration/getting-started.md) | 전환 여정 이해 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | 커넥터를 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
 | [작업 사용 안내서](/help/operations/home.md) | 의 백엔드 작업에 대해 알아보기 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]색인 지정 및 유지 관리 작업과 같은 작업이 표시됩니다. |
-| [상거래 사용 안내서](/help/commerce-cloud/home.md) | 에서 전자 상거래 통합 프레임워크에 대해 알아보기 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
+| [Commerce 사용 안내서](/help/commerce-cloud/home.md) | 에서 전자 상거래 통합 프레임워크에 대해 알아보기 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 
-* [최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
+* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
-* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)
-* [GDPR 준비 완료](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [GDPR 준비](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Adobe Experience Manager as a [!DNL Cloud Service] Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
