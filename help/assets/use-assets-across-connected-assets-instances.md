@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
+source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3825'
 ht-degree: 19%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 19%
 기능 및 해당 사용자 그룹을 구성하고 사용하는 데 관련된 여러 가지 역할이 아래에 설명되어 있습니다. 로컬 범위는 작성자가 웹 페이지를 만드는 사용 사례에 사용됩니다. 원격 범위는 필요한 자산을 호스팅하는 DAM 배포에 사용됩니다. 다음 [!DNL Sites] 작성자가 이러한 원격 자산을 가져옵니다.
 
 | 역할 | 범위 | 사용자 그룹 | 요구 사항 |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites] administrator | 로컬 | [!DNL Experience Manager] `administrators` | 설정 [!DNL Experience Manager] 원격 사이트와의 통합 구성 [!DNL Assets] 배포. |
 | DAM 사용자 | 로컬 | `Authors` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
 | [!DNL Sites] 작성자 | 로컬 | <ul><li>`Authors` (원격 DAM에 대한 읽기 권한과 로컬 작성자 액세스 사용) [!DNL Sites]) </li> <li>`dam-users` 로컬 [!DNL Sites]</li></ul> | 최종 사용자는 [!DNL Sites] 이 통합을 사용하여 콘텐츠 속도를 향상시키는 작성자 작성자가 다음을 사용하여 원격 DAM에서 자산을 검색하고 검색할 수 있습니다 [!UICONTROL 컨텐츠 파인더] 로컬 웹 페이지에서 필요한 이미지를 사용하는 중입니다. |
@@ -136,7 +136,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 사이에 연결을 구성할 수 있습니다 [!DNL Sites] 배포 및 [!DNL Dynamic Media] 웹 페이지 작성자가 사용할 수 있는 배포 [!DNL Dynamic Media] 이미지를 참조하십시오. 웹 페이지를 작성하는 동안 원격 자산 및 원격 사용 환경 [!DNL Dynamic Media] 배포는 동일하게 유지됩니다. 이를 통해 [!DNL Dynamic Media] 연결된 자산 기능을 통한 기능(예: 스마트 자르기 및 이미지 사전 설정).
 
-연결된 자산을 사용하여 [!DNL Dynamic Media] 원격 DAM 배포에서 이미지 자산을 처리하는 기능입니다.
+연결된 자산을 사용하여 [!DNL Dynamic Media] 원격 DAM 배포에서 이미지 자산을 처리하는 중입니다.
 
 를 사용하려면 [!DNL Dynamic Media] 원격 DAM 배포의 이미지 [!DNL Sites] 배포:
 
