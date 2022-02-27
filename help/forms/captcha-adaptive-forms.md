@@ -10,10 +10,10 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 0%
+source-wordcount: '1415'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,6 @@ CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공
 >
 >* [!DNL AEM Forms] reCaptcha v2만 지원합니다. 다른 버전은 지원되지 않습니다.
 >* 응용 Forms의 CAPTCHA는 [!DNL AEM Forms] 앱.
-
 >
 
 
@@ -57,7 +56,7 @@ CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공
 
 1. reCAPTCHA에 대한 클라우드 서비스를 구성합니다.
 
-   1. AEM 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. Experience Manager 작성자 인스턴스에서 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. 탭 **[!UICONTROL reCAPTCHA]**. 구성 페이지가 열립니다. 이전 단계에서 만든 구성 컨테이너를 선택하고 을(를) 누릅니다 **[!UICONTROL 만들기]**.
    1. reCAPTCHA 서비스의 이름, 사이트 키 및 비밀 키를 지정하고 탭합니다. **[!UICONTROL 만들기]** 클라우드 서비스 구성을 만들려면
    1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. 탭 **[!UICONTROL 설정 저장]** 그런 다음 **[!UICONTROL 확인]** 구성을 완료합니다.
@@ -86,11 +85,14 @@ CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공
 
 1. 추가한 Captcha 구성 요소를 선택하고 탭합니다 ![cmppr](assets/configure-icon.svg) 속성을 편집하려면
 1. CAPTCHA 위젯의 제목을 지정합니다. 기본값은 입니다. **[!UICONTROL Captcha]**. 선택 **[!UICONTROL 제목 숨기기]** 제목을 표시하지 않으려면
-1. 에서 **[!UICONTROL Captcha 서비스]** 드롭다운에서 을 선택합니다. **[!UICONTROL reCaptcha]** reCAPTCHA 서비스를 사용하도록 설정하려면 [Google ReCAPTCHA 서비스](#google-recaptcha). 설정 드롭다운에서 구성을 선택합니다. 또한 크기를 **[!UICONTROL 일반]** 또는 **[!UICONTROL 컴팩트]** reCAPTCHA 위젯용.
+1. 에서 **[!UICONTROL Captcha 서비스]** 드롭다운에서 을 선택합니다. **[!UICONTROL reCaptcha]** reCAPTCHA 서비스를 사용하도록 설정하려면 [Google ReCAPTCHA 서비스](#google-recaptcha). 설정 드롭다운에서 구성을 선택합니다.
+1. 유형을 (으)로 선택합니다. **[!UICONTROL 일반]** 또는 **[!UICONTROL 컴팩트]** reCAPTCHA 위젯용. 을(를) 선택할 수도 있습니다 **[!UICONTROL 보이지 않음]** 의심스러운 활동의 경우에만 CAPTCHA 문제를 표시하는 옵션입니다. 아래에 표시되는 reCAPTCHA 배지로 보호된 양식은 보호된 양식에 표시됩니다.
+
+   ![reCAPTCHA 배지가 제공하는 Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >선택하지 않음 **[!UICONTROL 기본값]** 기본 AEM CAPTCHA 서비스는 더 이상 사용되지 않으므로 Captcha 서비스 드롭다운에서 제공됩니다.
+   >선택하지 않음 **[!UICONTROL 기본값]** 기본 Experience Manager CAPTCHA 서비스는 더 이상 사용되지 않으므로 Captcha 서비스 드롭다운에서 제공됩니다.
 
 1. 속성을 저장합니다.
 
@@ -132,7 +134,7 @@ reCAPTCHA 서비스는 적응형 양식에서 활성화됩니다. 양식을 미�
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
-    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+     GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
@@ -216,4 +218,4 @@ reCAPTCHA 서비스 사용 `https://www.recaptcha.net/` 을 기본 도메인으�
 }
 ```
 
-구성 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), 및 [구성 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) Cloud Service 인스턴스에 매핑해야 합니다.
+구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.

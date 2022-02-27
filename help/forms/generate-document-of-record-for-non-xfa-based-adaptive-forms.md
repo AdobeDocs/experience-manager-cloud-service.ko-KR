@@ -2,10 +2,10 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
 workflow-type: tm+mt
-source-wordcount: '2926'
-ht-degree: 3%
+source-wordcount: '3686'
+ht-degree: 2%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 3%
 * [Acroform 기반(Acrobat 양식 PDF) 레코드 문서 생성](#generate-an-Acroform-based-document-of-record)
 * [기록 문서 자동 생성](#auto-generate-a-document-of-record)
 
-## 시작하기 전에 {#components-to-automatically-generate-a-document-of-record}
+## 시작하기 전 {#components-to-automatically-generate-a-document-of-record}
 
 학습 및 준비가 완료되기 전에 레코드 문서에 필요한 자산을 준비합니다.
 
-**기본 템플릿:** AEM Designer 또는 Acrobat 양식(AcroForm)에서 생성된 XFA 템플릿(XDP 파일)입니다. [기본 템플릿](#base-template-of-a-document-of-record) 레코드 문서에 대한 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다. 이전에 XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드합니다
+**기본 템플릿:** Forms 디자이너 또는 Acrobat 양식(AcroForm)에서 만든 XFA 템플릿(XDP 파일)입니다. [기본 템플릿](#base-template-of-a-document-of-record) 레코드 문서에 대한 스타일 및 브랜딩 정보를 지정하는 데 사용됩니다. 이전에 XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드합니다
 
 **적응형 양식:** 기록 문서를 생성할 적응형 양식입니다.
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드합니다. XFA 템플릿(XDP 파일)을 레코드 문서의 템플릿으로 사용하도록 적응형 양식을 구성하려면 다음 단계를 수행하십시오.
 
-1. AEM 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
+1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
 1. 양식을 선택하고 **[!UICONTROL 속성]**.
 1. 속성 창에서 **[!UICONTROL 양식 모델]**.
 1. 설정  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 선택 위치]** 드롭다운에서 을 선택합니다. **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
@@ -51,7 +51,7 @@ XFA 템플릿(XDP 파일)을 AEM Forms 인스턴스에 업로드합니다. XFA �
 
 Adobe Acrobat PDF(Acrobat)를 AEM Forms 인스턴스에 업로드합니다. 다음 단계를 수행하여 Adobe Acrobat PDF(Acroform)을 기록 문서의 템플릿으로 사용하도록 적응형 양식을 구성합니다.
 
-1. AEM 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
+1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
 1. 양식을 선택하고 **[!UICONTROL 속성]**.
 1. 속성 창에서 **[!UICONTROL 양식 모델]**.
 1. 설정  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 선택 위치]** 드롭다운에서 을 선택합니다. **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
@@ -68,11 +68,11 @@ Adobe Acrobat PDF(Acrobat)를 AEM Forms 인스턴스에 업로드합니다. 다�
 * 양식 개발자는 레코드 문서에서 제외로 표시된 필드를 수동으로 숨길 필요가 없습니다. 자동 생성된 레코드 문서는 이러한 필드를 제외하도록 사전 구성되어 있습니다.
 * 자동으로 생성된 레코드 문서 옵션을 사용하면 레코드 문서에 대한 양식 서식 파일을 만드는 데 필요한 시간이 절약됩니다.
 * 자동 생성된 기록 문서 옵션을 사용하면 다른 기본 템플릿을 사용하여 다양한 스타일 및 모양새를 사용할 수 있습니다. 조직의 기록 문서에 가장 적합한 스타일과 모양을 선택하는 데 도움이 됩니다. 스타일을 지정하지 않으면 시스템 스타일이 기본값으로 설정됩니다.
-* 자동 생성된 레코드 문서는 양식의 변경 사항이 즉시 기록 문서에 반영되도록 합니다.
+* 자동 생성된 기록 문서를 사용하면 양식의 변경 사항이 즉시 기록 문서에 반영됩니다.
 
 다음 단계를 수행하여 적응형 양식을 구성하여 기록 문서를 자동으로 생성합니다.
 
-1. AEM 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
+1. Experience Manager 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서].**
 1. 양식을 선택하고 **[!UICONTROL 속성]**.
 1. 속성 창에서 **[!UICONTROL 양식 모델]**.
 1. 설정  **[!UICONTROL 양식 모델]** 탭, **[!UICONTROL 선택 위치]** 드롭다운에서 을 선택합니다. **[!UICONTROL 스키마]** 또는 **[!UICONTROL 없음]**. 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
@@ -98,7 +98,7 @@ Adobe Acrobat PDF(Acrobat)를 AEM Forms 인스턴스에 업로드합니다. 다�
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-전자 메일 전송, AEM 워크플로우 제출 작업을 [레코드 단계 문서 및 기타 제출 작업](configuring-submit-actions.md) 레코드 문서를 수신하려면
+전자 메일 보내기, Experience Manager 워크플로우 제출 작업을 와 함께 사용할 수 있습니다 [레코드 단계 문서 및 기타 제출 작업](configuring-submit-actions.md) 레코드 문서를 수신하려면
 
 ## 레코드 문서 템플릿에 대한 증분 업데이트 {#document-of-record-template-incremental-updates}
 
@@ -148,7 +148,6 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
-
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -301,7 +300,7 @@ When you select a form model, configure Document of Record using options availab
 
 * 이러한 필드의 속성은 레코드 문서의 필드에 적용됩니다. 이러한 필드는 `AF_<name of field in all caps>_XFO` 명명 규칙입니다. 예를 들어, 확인란에 대한 필드 이름은 `AF_CHECKBOX_XFO`.
 
-기본 템플릿을 만들려면 AEM 디자이너에서 다음을 수행합니다.
+기본 템플릿을 만들려면 Forms 디자이너에서 다음을 수행합니다.
 
 1. 클릭 **[!UICONTROL 파일]** > **[!UICONTROL 새로 만들기]**.
 1. 을(를) 선택합니다 **[!UICONTROL 템플릿 기반]** 선택 사항입니다.
@@ -334,7 +333,7 @@ When you select a form model, configure Document of Record using options availab
 
    ![브랜딩 템플릿](assets/brandingtemplate.png)
 
-   사용자 지정 템플릿을 선택하도록 선택하는 경우, [!DNL AEM Forms] server. 아직 페이지에 없는 템플릿을 사용하려면 [!DNL AEM Forms] server, 먼저 XDP를 업로드하여 [!DNL AEM Forms] server.
+   사용자 지정 템플릿을 선택하도록 선택하는 경우, [!DNL AEM Forms] server. 아직 페이지에 없는 템플릿을 사용하려면 [!DNL AEM Forms] server, 먼저 XDP를 업로드해야 합니다 [!DNL AEM Forms] server.
 
 1. 기본값을 선택하는지 사용자 지정 템플릿을 선택하는지 여부에 따라 다음 속성 중 일부 또는 전부가 기록 문서 탭에 나타납니다. 다음 사항을 적절히 지정합니다.
 
@@ -354,7 +353,7 @@ When you select a form model, configure Document of Record using options availab
 
    >[!NOTE]
    >
-   >6.3 이전 버전의 디자이너로 만든 적응형 양식 서식 파일을 사용하는 경우, 강조 색상 및 글꼴 패밀리 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 서식 파일에 다음 내용이 있는지 확인하십시오.
+   >6.3 이전 버전의 디자이너로 만든 적응형 양식 서식 파일을 사용하는 경우, 강조색 및 글꼴 패밀리 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 서식 파일에 다음 내용이 있는지 확인하십시오.
 
    ```xml
    <proto>
@@ -388,7 +387,7 @@ When you select a form model, configure Document of Record using options availab
 
 기록 문서 설정을 사용하면 기록 문서에 포함할 옵션을 선택할 수 있습니다. 예를 들어, 한 은행은 양식에 이름, 나이, 사회 보장 번호 및 전화 번호를 허용합니다. 이 양식은 은행 계좌 번호와 지점 상세내역을 생성합니다. Document of Record에서 이름, Social Security 번호, Bank Account 및 Branch Details만 표시하도록 선택할 수 있습니다.
 
-구성 요소의 문서 기록 설정은 해당 속성에서 사용할 수 있습니다. 구성 요소의 속성에 액세스하려면 구성 요소를 선택하고 ![cmppr](assets/cmppr.png) ( 오버레이에서)를 클릭합니다. 속성은 사이드바에 나열되며, 여기에서 다음 설정을 찾을 수 있습니다.
+기록 문서 구성 요소의 설정은 해당 등록 정보에서 사용할 수 있습니다. 구성 요소의 속성에 액세스하려면 구성 요소를 선택하고 ![cmppr](assets/cmppr.png) ( 오버레이에서)를 클릭합니다. 속성은 사이드바에 나열되며, 여기에서 다음 설정을 찾을 수 있습니다.
 
 **필드 수준 설정**
 
@@ -401,4 +400,70 @@ When you select a form model, configure Document of Record using options availab
 **양식 수준 설정**
 
 * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 스키마 기반 적응형 양식의 레코드 문서에서 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-* **숨겨진 경우 DoR에서 필드 제외:** 속성이 true가 아닌 경우 속성을 설정하면 &quot;레코드의 문서에서 제외&quot; 필드 수준 속성의 동작이 무시됩니다. 양식 제출 시 필드가 숨겨져 있으면 속성이 true로 설정되어 있으면 레코드 문서에서 제외됩니다. &quot;레코드의 문서에서 제외&quot; 속성이 설정되지 않은 경우 이 필드가 제외됩니다.
+* **숨겨진 경우 DoR에서 필드 제외:** 속성이 true가 아닌 경우 속성을 설정하면 &quot;레코드의 문서에서 제외&quot; 필드 수준 속성의 동작이 무시됩니다. 양식 제출 시 필드가 숨겨져 있으면 속성이 true로 설정되어 있으면 Document of Record에서 제외됩니다. &quot;Exclude From Document of Record&quot; 속성이 설정되지 않은 경우 이러한 필드가 제외됩니다.
+
+## 사용자 지정 XCI 파일 사용
+
+>[!NOTE]
+>
+> 이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 을 참조하십시오.
+
+XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다. Forms as a Cloud Service에는 마스터 XCI 파일이 있습니다. 사용자 지정 XCI 파일을 사용하여 마스터 XCI 파일에 지정된 하나 이상의 기본 속성을 재정의할 수 있습니다. 예를 들어, 문서에 글꼴을 포함하거나 모든 문서에 대해 태그가 지정된 속성을 사용하도록 선택할 수 있습니다. 다음 표에서는 XCI 옵션을 지정합니다.
+
+| XCI 옵션 | 설명 |
+|--- |--- |
+| config/present/pdf/creator | 문서 정보 사전의 작성자 항목을 사용하여 문서 작성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/producer | 문서 정보 사전의 생성자 항목을 사용하여 문서 생성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| 구성/현재/레이아웃 | 출력이 단일 패널인지 페이지로 매기는지 여부를 제어합니다. |
+| config/present/pdf/compression/level | PDF 문서를 생성할 때 사용할 압축 정도를 지정합니다. |
+| config/present/pdf/fontInfo/embed | 출력 문서에 글꼴 포함을 제어합니다. |
+| config/present/pdf/scriptModel | 출력 PDF 문서에 XFA 관련 정보를 포함할지 여부를 제어합니다. |
+| config/present/common/data/adjustData | 병합 후 XFA 응용 프로그램이 데이터를 조정하는지 여부를 제어합니다. |
+| config/present/pdf/renderPolicy | 페이지 컨텐츠 생성을 서버에서 수행할지 또는 클라이언트에게 연기할지 여부를 제어합니다. |
+| config/present/common/locale | 출력 문서에 사용되는 기본 로케일을 지정합니다. |
+| config/present/destination | 현재 요소에 포함되는 경우 출력 형식을 지정합니다. openAction 요소에 포함된 경우, 대화형 클라이언트에서 문서를 열 때 수행할 작업을 지정합니다. |
+| config/present/output/type | 파일에 적용할 압축 유형 또는 생성할 출력 유형을 지정합니다. |
+| config/present/common/temp/uri | 양식 URI를 지정합니다. |
+| config/present/common/template/base | 양식 디자인에서 URI의 기본 위치를 제공합니다. 이 요소가 없거나 비어 있으면 양식 디자인의 위치가 기본으로 사용됩니다. |
+| config/present/common/log/to | 로그 데이터 또는 출력 데이터가 기록되는 위치를 제어합니다. |
+| config/present/output/to | 로그 데이터 또는 출력 데이터가 기록되는 위치를 제어합니다. |
+| config/present/script/currentPage | 문서를 열 때의 초기 페이지를 지정합니다. |
+| 구성/현재/스크립트/제외 | 무시할 이벤트를 Forms as a Cloud Service에 알립니다. |
+| config/present/pdf/linear | 출력 PDF 문서의 선형화 여부를 제어합니다. |
+| config/present/script/runScripts | Forms이 as a Cloud Service으로 실행되는 스크립트 집합을 제어합니다. |
+| config/present/pdf/tagged | 출력 PDF 문서에 태그 포함을 제어합니다. PDF 컨텍스트에서 태그는 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. 태그는 접근성 보조 및 서식 변경을 지원합니다. 예를 들어, 페이지 번호에 아티팩트로 태그를 지정하여 화면 판독기에서 텍스트 중간에 이를 발음하지 않도록 할 수 있습니다. 태그는 문서를 더 유용하게 만들 수 있지만 문서 크기와 문서 작성 시간을 늘립니다. |
+| config/present/pdf/fontInfo/alwaysEmbed | 출력 문서에 포함된 글꼴을 지정합니다. |
+| config/present/pdf/fontInfo/neverEmbed | 출력 문서에 포함해서는 안 되는 글꼴을 지정합니다. |
+| config/present/pdf/pdfa/part | 문서가 준수하는 PDF/A 사양의 버전 번호를 지정합니다. |
+| config/present/pdf/pdfa/amd | PDF/A 세부 항목의 수정 수준을 지정합니다. |
+| config/present/pdf/pdfa/conformance | PDF/A 사양에 대한 적합성 수준을 지정합니다. |
+| config/present/pdf/version | 생성할 PDF 문서의 버전을 지정합니다 |
+| config/present/pdf/version/map | 문서의 폴백 글꼴을 지정합니다. |
+
+### Forms as a Cloud Service 환경에서 사용자 지정 XCI 파일 사용
+
+1. 사용자 지정 XCI 파일을 개발 프로젝트에 추가합니다.
+1. 다음을 지정합니다 [인라인 속성](/help/implementing/deploying/configuring-osgi.md):
+
+   ```JSON
+    {
+     "xciFilePath": "[path of XCI file]"
+    }
+   ```
+
+   예를 들어
+
+   ```JSON
+    {
+     "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
+    }
+   ```
+
+1. 프로젝트를 Cloud Service 환경에 배포합니다.
+
+### 로컬 Forms as a Cloud Service 개발 환경에서 사용자 지정 XCI 파일 사용
+
+1. XCI 파일을 로컬 개발 환경에 업로드합니다.
+1. Cloud Service SDK 구성 관리자를 엽니다. 기본 URL은: <http://localhost:4502/system/console/configMgr>.
+1. 을(를) 찾아 엽니다. **[!UICONTROL 응용 Forms 및 대화형 통신 웹 채널]** 구성.
+1. XCI 파일의 경로를 지정하고 **[!UICONTROL 저장]**.
