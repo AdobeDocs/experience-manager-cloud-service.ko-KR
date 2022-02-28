@@ -4,10 +4,10 @@ description: 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고�
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
+source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
 workflow-type: tm+mt
-source-wordcount: '9476'
-ht-degree: 5%
+source-wordcount: '9334'
+ht-degree: 4%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 5%
 
 ## Dynamic Media에서 비디오를 사용한 작업 {#working-with-video-in-dynamic-media}
 
-Dynamic Media의 비디오는 데스크탑, iOS, Android™, BlackBerry® 및 Windows® 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
+Dynamic Media의 비디오는 데스크탑, 태블릿 및 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
 
 예를 들어 iOS 모바일 장치에서 3G, 4G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음 응용 비디오 세트 내의 다양한 비디오 비트 전송률 중에서 올바른 인코딩된 비디오를 자동으로 선택합니다. 비디오는 데스크탑, 모바일 장치 또는 태블릿으로 스트리밍됩니다.
 
@@ -128,13 +128,13 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android™, BlackBerry® 및 Wi
 
 * 모든 HTML 5 비디오 뷰어의 비디오 캡션.
 * 비디오 자산을 효율적으로 관리하기 위해 전체 메타데이터 지원을 사용하여 비디오를 구성, 탐색 및 검색할 수 있습니다.
-* 응용 비디오 세트를 웹 및 데스크탑, iPhone, iPad, Android™, BlackBerry® 및 Windows® 휴대폰을 비롯한 모바일 장치에 제공합니다.
+* 응용 비디오 세트를 웹 및 데스크톱, 태블릿 및 모바일 장치에 제공합니다.
 
 응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. 자세한 내용은 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
-Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 BlackBerry® 장치를 찾을 수 있습니다. [BlackBerry®에서 지원되는 비디오 형식](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-다음 위치에서 이 비디오 형식을 지원하는 Windows® 장치를 찾을 수 있습니다 [Windows® Phone에서 지원되는 비디오 형식](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * 다음을 포함하여 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
@@ -239,13 +239,15 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
    <td>Chrome(iOS)</td>
    <td>HLS</td>
   </tr>
-  <tr>
-   <td>모바일</td>
+ </tbody>
+</table>
+
+<!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
+   <td>Mobile</td>
    <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
- </tbody>
-</table>
+ -->
 
 ## Dynamic Media 비디오 솔루션 아키텍처 {#architecture-of-dynamic-media-video-solution}
 
@@ -436,21 +438,19 @@ Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라�
 **Google Cloud 설정을 구성하려면:**
 
 1. Google 계정을 만듭니다.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   이미 Google 계정이 있는 경우 다음 단계로 건너뜁니다.
+   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
 
 1. 이동 [https://cloud.google.com/](https://cloud.google.com/).
 1. 오른쪽 상단 모서리의 Google 클라우드 페이지에서 을(를) 선택합니다 **[!UICONTROL 콘솔]**.
 
    필요한 경우 **[!UICONTROL 로그인]** Google 계정 자격 증명을 사용하여 확인 **[!UICONTROL 콘솔]** 선택 사항입니다.
 
-1. 대시보드 페이지의 오른쪽 **[!UICONTROL Google Cloud Platform]**&#x200B;프로젝트 드롭다운 목록을 선택하여 프로젝트 선택 대화 상자를 엽니다.
-1. 프로젝트 선택 대화 상자에서 다음을 선택합니다 **[!UICONTROL 새 프로젝트]**.
+1. 대시보드 페이지의 오른쪽 **[!UICONTROL Google Cloud Platform]**&#x200B;에서 프로젝트 드롭다운 목록을 선택하여 **[!UICONTROL 프로젝트 선택]** 대화 상자
+1. 에서 **[!UICONTROL 프로젝트 선택]** 대화 상자, 선택 **[!UICONTROL 새 프로젝트]**.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
-1. 새 프로젝트 대화 상자의 프로젝트 이름 필드에 새 프로젝트의 이름을 입력합니다.
+1. 에서 **[!UICONTROL 새 프로젝트]** 대화 상자, **[!UICONTROL 프로젝트 이름]** 필드에서 새 프로젝트의 이름을 입력합니다.
 
    프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다. 만든 후에는 변경할 수 없습니다. 또한 나중에 Experience Manager에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 그러므로, 그것을 적으세요.
 
@@ -458,72 +458,71 @@ Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라�
 
 1. 다음 중 하나를 수행합니다.
 
-   * 프로젝트의 대시보드의 시작하기 카드에서 를 선택합니다 **[!UICONTROL API 탐색 및 활성화]**.
-   * 프로젝트의 대시보드의 API 카드에서 를 선택합니다 **[!UICONTROL API 개요로 이동]**.
+   * 프로젝트의 대시보드에서 **[!UICONTROL 시작하기]** 카드, 선택 **[!UICONTROL API 탐색 및 활성화]**.
+   * 프로젝트의 대시보드에서 **[!UICONTROL API]** 카드, 선택 **[!UICONTROL API 개요로 이동]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. API 및 서비스 페이지의 맨 위에서 을 선택합니다. **[!UICONTROL API 및 서비스 활성화]**.
-1. API 라이브러리 페이지의 왼쪽에 있는 **[!UICONTROL 카테고리]**, 선택 **[!UICONTROL YouTube]**. 페이지의 오른쪽에서 을 선택합니다 **[!UICONTROL YouTube 데이터 API]**.
-1. YouTube 데이터 API v3 페이지에서 을 선택합니다 **[!UICONTROL 활성화]**.
+1. 위쪽 중간 **[!UICONTROL API 및 서비스]** 페이지를 선택하고 **[!UICONTROL API 및 서비스 활성화]**.<!-- NEXT STEP BELOW IS STEP 10 -->
+1. 설정 **[!UICONTROL API 라이브러리]** 페이지, 왼쪽, 아래 **[!UICONTROL 카테고리]**, 선택 **[!UICONTROL YouTube]**. 페이지의 오른쪽에서 을 선택합니다 **[!UICONTROL YouTube]**.
+1. 설정 **[!UICONTROL YouTube]** 페이지를 선택하고 **[!UICONTROL YouTube 데이터 API v3]**.
+1. 설정 **[!UICONTROL YouTube 데이터 API v3]** 페이지를 선택하고 **[!UICONTROL 관리]**.
 
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
+   ![6_5_googleaccount-api-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. API를 사용하려면 자격 증명이 필요합니다. 필요한 경우 을 선택합니다. **[!UICONTROL 자격 증명 만들기]**.
+1. API를 사용하려면 자격 증명이 필요합니다. 필요한 경우 API 및 서비스 페이지의 왼쪽에서 을(를) 선택합니다 **[!UICONTROL 자격 증명]**.
 
-   ![6_5_googleaccount-apis-createcreatecredentials](assets/6_5_googleaccount-apis-createcredentials.png)
+1. [자격 증명] 페이지의 맨 위에 있는 **[!UICONTROL 자격 증명 만들기]**&#x200B;를 선택하고 을 선택합니다. **[!UICONTROL OAuth 클라이언트 ID]**.
 
-1. 설정 **[!UICONTROL 프로젝트에 자격 증명 추가]** 페이지, 1단계에서 다음을 수행합니다.
+1. 설정 **[!UICONTROL OAuth 클라이언트 ID 만들기]** 페이지, **[!UICONTROL 애플리케이션 유형]** 드롭다운 목록에서 **[!UICONTROL 웹 애플리케이션]**.
 
-   * 에서 **[!UICONTROL 어떤 API를 사용하고 있습니까?]** 드롭다운 목록에서 **[!UICONTROL YouTube 데이터 API v3]**.
+   ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-   * 에서 **[!UICONTROL API는 어디에서 호출합니까?]** 드롭다운 목록에서 **[!UICONTROL 웹 서버(예: node.js, Tomcat)]**.
+1. 다음 중 하나를 수행하십시오.
 
-   * 에서 **[!UICONTROL 어떤 데이터에 액세스하고 있습니까?]** 드롭다운 목록에서 **[!UICONTROL 사용자 데이터]**.
+   * 에서 **[!UICONTROL 이름]** 필드에서 OAuth 2.0 클라이언트의 고유 이름을 입력합니다.
+   * Google이 이미 **[!UICONTROL 이름]** 필드.
 
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
+1. 아래에 **[!UICONTROL 인증된 JavaScript 원본]** 제목, 선택 **[!UICONTROL URI 추가]**.
 
-1. 선택 **[!UICONTROL 어떤 자격 증명이 필요합니까?]**
-1. On the **[!UICONTROL Add credentials to your project]** page, step 2, under the **[!UICONTROL Create an OAuth 2.0 client ID]** heading, in the Name field, enter a unique name if desired. Or, you can use the default name specified by Google.
-1. 아래에 **[!UICONTROL 인증된 JavaScript 원본]** 텍스트 필드에 다음 경로를 입력하고 경로에 고유한 도메인과 포트 번호를 바꾼 다음 키를 누릅니다 **[!UICONTROL Enter 키]** 목록에 경로를 추가하려면 다음을 수행합니다.
+   ![6_5_googleaccount-apis-name-authorizations](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
+
+1. 에서 **[!UICONTROL URI]** 텍스트 필드에 다음 경로를 입력하고 경로에 고유한 도메인과 포트 번호를 대체한 다음 키를 누릅니다 **[!UICONTROL Enter 키]** 목록에 경로를 추가하려면 다음을 수행합니다.
 
    `https://<servername.domain>:<port_number>`
 
    예, `https://1a2b3c.mycompany.com:4321`
 
-   **참고**: 위의 경로 예는 설명 목적으로만 사용됩니다.
+   >[!IMPORTANT]
+   >
+   >위의 예제 경로는 가상의 이며 설명 목적으로만 사용됩니다.
 
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
+1. 아래에 **[!UICONTROL 허가된 리디렉션 URI]** 제목을 선택하고 URI 추가를 선택합니다.
 
-1. 아래에 **[!UICONTROL 허가된 리디렉션 URI]** 텍스트 필드에 다음 경로를 입력하고 경로에 고유한 도메인과 포트 번호를 바꾼 다음 키를 누릅니다 **[!UICONTROL Enter 키]** 목록에 경로를 추가하려면 다음을 수행합니다.
+1. 에서 **[!UICONTROL URI]** 텍스트 필드에 다음 경로를 입력하고 경로에 고유한 도메인과 포트 번호를 대체한 다음 키를 누릅니다 **[!UICONTROL Enter 키]** 목록에 경로를 추가하려면 다음을 수행합니다.
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    예, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **참고**: 위의 경로 예는 설명 목적으로만 사용됩니다.
+   >[!IMPORTANT]
+   >
+   >위의 예제 경로는 가상의 이며 설명 목적으로만 사용됩니다.
 
-1. 선택 **[!UICONTROL OAuth 클라이언트 ID 만들기]**.
-1. On the **[!UICONTROL Add credentials to your project]** page, step 3, under the **[!UICONTROL Set up the OAuth 2.0 consent screen]** heading, select the Gmail email address that you are currently using.
+1. 아래쪽으로 **[!UICONTROL OAuth 클라이언트 ID 만들기]** 페이지를 선택하고 **[!UICONTROL 만들기]**.
 
-   ![6_5_googleaccount-apis-createcredentials-consenscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
+1. 설정 **[!UICONTROL OAuth 클라이언트가 생성됨]** 대화 상자에서 다음을 수행합니다.
 
-1. 아래에 **[!UICONTROL 사용자에게 표시되는 제품 이름]** 제목 텍스트 필드에 동의 화면에 표시할 내용을 입력합니다.
+   * (선택 사항) 클라이언트 ID와 클라이언트 암호를 복사하여 저장합니다.
+   * 선택 **[!UICONTROL JSON 다운로드]**&#x200B;를 입력한 다음 JSON 파일을 저장합니다.
 
-   YouTube을 인증할 때 Experience Manager 관리자에게 동의 화면이 표시됩니다. Experience Manager은 YouTube에 권한을 요청하십시오.
+   나중에 Adobe Experience Manager에서 YouTube을 설정할 때 이 다운로드한 JSON 파일이 필요합니다.
 
-1. 선택 **[!UICONTROL 계속]**.
-1. 프로젝트 페이지에 자격 증명 추가 페이지의 **[!UICONTROL 자격 증명 다운로드]** 제목, 선택 **[!UICONTROL 다운로드]**.
+   ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
+1. 설정 **[!UICONTROL OAuth 클라이언트가 생성됨]** 대화 상자, 선택 **[!UICONTROL 확인]**.
 
-1. 를 저장합니다 `client_id.json` 파일.
-
-   나중에 Adobe Experience Manager에서 YouTube을 설정할 때 이 다운로드한 json 파일이 필요합니다.
-
-1. 선택 **[!UICONTROL 완료]**.
-
-   Google 계정에서 로그아웃합니다. 이제 YouTube 채널을 만듭니다.
+1. Google 계정에서 로그아웃합니다. 이제 YouTube 채널을 만듭니다.
 
 ### YouTube 채널 만들기 {#creating-a-youtube-channel}
 
