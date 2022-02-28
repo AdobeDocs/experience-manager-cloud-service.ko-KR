@@ -4,9 +4,9 @@ description: 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고�
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9332'
 ht-degree: 4%
 
 ---
@@ -447,9 +447,6 @@ Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라�
 
 1. 대시보드 페이지의 오른쪽 **[!UICONTROL Google Cloud Platform]**&#x200B;에서 프로젝트 드롭다운 목록을 선택하여 **[!UICONTROL 프로젝트 선택]** 대화 상자
 1. 에서 **[!UICONTROL 프로젝트 선택]** 대화 상자, 선택 **[!UICONTROL 새 프로젝트]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. 에서 **[!UICONTROL 새 프로젝트]** 대화 상자, **[!UICONTROL 프로젝트 이름]** 필드에서 새 프로젝트의 이름을 입력합니다.
 
    프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다. 만든 후에는 변경할 수 없습니다. 또한 나중에 Experience Manager에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다. 그러므로, 그것을 적으세요.
@@ -460,8 +457,6 @@ Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라�
 
    * 프로젝트의 대시보드에서 **[!UICONTROL 시작하기]** 카드, 선택 **[!UICONTROL API 탐색 및 활성화]**.
    * 프로젝트의 대시보드에서 **[!UICONTROL API]** 카드, 선택 **[!UICONTROL API 개요로 이동]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. 위쪽 중간 **[!UICONTROL API 및 서비스]** 페이지를 선택하고 **[!UICONTROL API 및 서비스 활성화]**.<!-- NEXT STEP BELOW IS STEP 10 -->
 1. 설정 **[!UICONTROL API 라이브러리]** 페이지, 왼쪽, 아래 **[!UICONTROL 카테고리]**, 선택 **[!UICONTROL YouTube]**. 페이지의 오른쪽에서 을 선택합니다 **[!UICONTROL YouTube]**.
