@@ -3,16 +3,16 @@ title: Commerce Integration Framework를 사용하여 AEM 및 타사 상거래 �
 description: 엔터프라이즈 기업에서는 상점 전원을 공급하기 위해 추가 타사 상거래 솔루션이 필요할 수 있습니다. CIF(Commerce Integration Framework)는 이러한 통합 시나리오에서 I/O Runtime을 사용하여 타사 상거래 솔루션을 Adobe Experience Manager에 연결하는 데 사용할 수 있습니다.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: a53ef07cd9da636c8d938c711de6defb9eb8e05f
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
-# 전자 상거래 통합 프레임워크를 사용하여 AEM 및 타사 전자 상거래 통합 {#aem-third-party}
+# Commerce Integration Framework를 사용하여 AEM 및 타사 상거래 통합 {#aem-third-party}
 
-비Adobe Commerce 솔루션의 통합은 CIF를 위한 일반적인 시나리오입니다. 다양한 API 및 스키마를 사용하는 타사 솔루션은 통합 레이어를 통해 연결됩니다.
+비Adobe Commerce 솔루션의 통합은 CIF에 대한 일반적인 시나리오입니다. 다양한 API 및 스키마를 사용하는 타사 솔루션은 통합 레이어를 통해 연결됩니다.
 
 ## 아키텍처 {#architecture}
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ![AEM 비 Magento/타사 아키텍처 개요](../assets//AEM_nonMagento_Architecture.png)
 
-이 통합 레이어의 목적은 지원되는 Adobe Commerce GraphQL API 및 Experience Manager 외부에 있는 스키마에 대해 타사 API 및 스키마를 매핑하는 것입니다. 이 캡슐화 덕분에 Experience Manager 내의 코드를 변경하지 않고도 통합 논리 및 시스템을 업데이트할 수 있습니다.
+이 통합 레이어의 목적은 지원되는 Adobe Commerce GraphQL API 및 스키마를 Experience Manager 외부에 매핑하는 것입니다. 이 캡슐화 덕분에 Experience Manager 내의 코드를 변경하지 않고도 통합 논리 및 시스템을 업데이트할 수 있습니다.
 
 ## 통합을 위한 솔루션 요구 사항
 
@@ -28,7 +28,7 @@ Experience Manager이 데이터를 온디맨드로 검색하므로 제품 카탈
 
 >[!TIP]
 >
->실시간 API를 사용할 수 없는 경우 통합에 API가 있는 외부 제품 캐시를 사용해야 합니다. 예 [Magento open-source](https://magento.com/products/magento-open-source).
+>실시간 API를 사용할 수 없는 경우 통합에 API가 있는 외부 제품 캐시를 사용해야 합니다. 예 [Magento 오픈 소스](https://magento.com/products/magento-open-source).
 
 원하는 사용 사례를 활성화하기 위해 전체 GraphQL 스키마를 구현할 필요가 없으며 스키마 객체만 구현할 수 있습니다.
 
@@ -40,14 +40,25 @@ CIF는 실시간 제품 카탈로그 액세스 및 제품 경험 관리 도구�
 
 ## 프런트 엔드 사용 사례
 
-[AEM CIF 코어 ](https://github.com/adobe/aem-core-cif-components) 구성 요소 는 CIF 지원 Adobe Commerce API를 통해 데이터를 검색하고 내보냅니다. 구성 요소를 다시 사용하려면 각 API를 구현해야 합니다.
+[AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components) cif 지원 Adobe Commerce API를 통해 데이터를 검색하고 내보냅니다. 구성 요소를 다시 사용하려면 각 API를 구현해야 합니다.
 
 성능 중요한 클라이언트측 구성 요소에 대한 권장 사항은 지연을 방지하기 위해 타사 솔루션과 직접 통신하는 것입니다.
 
 ## 통합 개발 {#develop-integration}
 
-통합 레이어에 [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)을 사용하는 것이 좋습니다. 타사의 CIF 추가 기능에 포함되어 있습니다. 마이크로 서비스와 같은 접근 방식으로 작동하므로 여러 솔루션을 쉽게 통합하는 것이 적합합니다.
+을 사용하는 것이 좋습니다 [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) 통합 레이어의 경우 타사의 CIF 추가 기능에 포함되어 있습니다. 마이크로 서비스와 같은 접근 방식으로 작동하므로 여러 솔루션을 쉽게 통합하는 것이 적합합니다.
 
-[참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)은 상거래 솔루션에 대한 통합을 구축하는 좋은 시작점입니다. GraphQL을 지원하지만 REST 등 다른 유형의 API와 통합할 수도 있습니다.
+다음 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference) 는 상거래 솔루션에 대한 통합을 구축하는 중요한 시작점입니다. GraphQL을 지원하지만 REST 등 다른 유형의 API와 통합할 수도 있습니다.
 
 타사 계층을 사용할 수 있거나(예: Mulesoft) 통합이 타사 솔루션을 기반으로 구축된 경우에는 이 통합 레이어가 필요하지 않습니다.
+
+## 사전 설치된 커넥터 {#connectors}
+
+커넥터는 프로젝트에 좋은 시작을 제공합니다. 여기에는 상거래 솔루션별 연결 및 기본 API 매핑이 제공됩니다. 이러한 커넥터는 Adobe에 의해 유지 관리되지 않고 타사에 의해 구축됩니다. 자세한 내용은 해당 파트너에게 문의하십시오.
+
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris)사전 설정된
+* [상거래 도구](https://github.com/diconium/commerce-cif-graphql-integration-commercetool)사전 설정된
+
+>[!TIP]
+>
+>커넥터는 커머스 통합을 가속화하기 위해 프로젝트를 지원하지만 플러그인은 아닙니다. 엔터프라이즈 커머스 솔루션은 일반적으로 사용자 지정 수준이 높으며 사용자 지정 통합이 필요합니다. 상거래 플랫폼, Adobe Commerce GraphQL 스키마 및 Adobe I/O Runtime에 대한 올바른 지식이 필요합니다.
