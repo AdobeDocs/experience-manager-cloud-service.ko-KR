@@ -5,12 +5,13 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
+source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3856'
 ht-degree: 19%
 
 ---
+
 
 # 연결된 자산을 사용하여 DAM 자산을 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -132,22 +133,24 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
+## Dynamic Media 자산 사용 {#dynamic-media-assets}
+
+
+연결된 자산에서 처리된 이미지 자산을 사용할 수 있습니다 [!DNL Dynamic Media] 사이트 페이지에서 원격 DAM 배포에서 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용할 수 있습니다.
+
+를 사용하려면 [!DNL Dynamic Media] 연결된 자산 사용:
+
+1. 구성 [!DNL Dynamic Media] 동기화 모드를 사용한 원격 DAM 배포 설정.
+1. 구성 [연결된 자산](#configure-a-connection-between-sites-and-assets-deployments).
+1. 구성 [!DNL Dynamic Media] ( 원격 DAM에 구성된 것과 동일한 회사 이름을 사용하는 사이트 인스턴스). 연결된 자산으로 작동하려면 사이트 배포에서 Dynamic Media 계정에 대한 읽기 전용 액세스 권한이 있어야 합니다. 따라서 사이트 인스턴스의 Dynamic Media 구성에서 동기화 모드를 비활성화해야 합니다.
+
+>[!CAUTION]
+>
+>연결된 자산 및 [!DNL Dynamic Media] 구성, [!DNL Dynamic Media] 에서 사용 가능한 로컬 자산을 처리하려면 [!DNL Sites] 배포.
+
 ## 다음 사이 연결 구성 [!DNL Sites] 및 [!DNL Dynamic Media] 배포 {#sites-dynamic-media-connected-assets}
 
 사이에 연결을 구성할 수 있습니다 [!DNL Sites] 배포 및 [!DNL Dynamic Media] 웹 페이지 작성자가 사용할 수 있는 배포 [!DNL Dynamic Media] 이미지를 참조하십시오. 웹 페이지를 작성하는 동안 원격 자산 및 원격 사용 환경 [!DNL Dynamic Media] 배포는 동일하게 유지됩니다. 이를 통해 [!DNL Dynamic Media] 연결된 자산 기능을 통한 기능(예: 스마트 자르기 및 이미지 사전 설정).
-
-연결된 자산을 사용하여 [!DNL Dynamic Media] 원격 DAM 배포에서 이미지 자산을 처리하는 중입니다.
-
-를 사용하려면 [!DNL Dynamic Media] 원격 DAM 배포의 이미지 [!DNL Sites] 배포:
-
-1. 구성 [!DNL Dynamic Media] 원격 DAM 배포에서 다음 옵션을 사용합니다.
-   * 동기화 모드: 기본적으로 활성화됨
-   * 자산 게시: 모든 콘텐츠 동기화
-1. 설정 [!DNL Sites] 배포:
-   1. 구성 [!DNL Dynamic Media] 1단계와 동일한 회사 사용(동기화 모드 사용 안 함).
-   1. 연결된 자산을 구성합니다.
-
-   [!DNL Dynamic Media] 다음에서 자산을 사용할 수 있습니다. [!DNL Sites] 읽기 전용 모드로 배포합니다. 따라서 를 사용할 수 없습니다 [!DNL Dynamic Media] 에서 자산을 처리하려면 [!DNL Sites] 배포.
 
 연결을 구성하려면 다음 단계를 수행합니다.
 
