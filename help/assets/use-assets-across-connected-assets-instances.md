@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
+source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
 workflow-type: tm+mt
-source-wordcount: '3856'
+source-wordcount: '3796'
 ht-degree: 19%
 
 ---
@@ -148,11 +148,9 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 >
 >연결된 자산 및 [!DNL Dynamic Media] 구성, [!DNL Dynamic Media] 에서 사용 가능한 로컬 자산을 처리하려면 [!DNL Sites] 배포.
 
-## 다음 사이 연결 구성 [!DNL Sites] 및 [!DNL Dynamic Media] 배포 {#sites-dynamic-media-connected-assets}
+## 구성 [!DNL Dynamic Media] {#configure-dynamic-media}
 
-사이에 연결을 구성할 수 있습니다 [!DNL Sites] 배포 및 [!DNL Dynamic Media] 웹 페이지 작성자가 사용할 수 있는 배포 [!DNL Dynamic Media] 이미지를 참조하십시오. 웹 페이지를 작성하는 동안 원격 자산 및 원격 사용 환경 [!DNL Dynamic Media] 배포는 동일하게 유지됩니다. 이를 통해 [!DNL Dynamic Media] 연결된 자산 기능을 통한 기능(예: 스마트 자르기 및 이미지 사전 설정).
-
-연결을 구성하려면 다음 단계를 수행합니다.
+구성하려면 [!DNL Dynamic Media] on [!DNL Assets] 및 [!DNL Sites] 배포:
 
 1. 기능을 구성할 때를 제외하고 위에 설명된 대로 연결된 자산 구성을 만듭니다. **[!UICONTROL Dynamic Media 연결된 자산에 대한 원래 변환 가져오기]** 선택 사항입니다.
 
