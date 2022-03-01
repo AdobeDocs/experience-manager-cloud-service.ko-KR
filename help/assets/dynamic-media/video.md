@@ -4,9 +4,9 @@ description: 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고�
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
+source-git-commit: 22588f102f5b388d6da3a8aae124c30288ecb0a5
 workflow-type: tm+mt
-source-wordcount: '9332'
+source-wordcount: '9346'
 ht-degree: 4%
 
 ---
@@ -439,6 +439,8 @@ Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라�
 
 1. Google 계정을 만듭니다.
    [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+
+   이미 Google 계정이 있는 경우 다음 단계로 건너뛸 수 있습니다.
 
 1. 이동 [https://cloud.google.com/](https://cloud.google.com/).
 1. 오른쪽 상단 모서리의 Google 클라우드 페이지에서 을(를) 선택합니다 **[!UICONTROL 콘솔]**.
