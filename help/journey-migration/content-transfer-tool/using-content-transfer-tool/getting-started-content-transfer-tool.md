@@ -1,10 +1,10 @@
 ---
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구 시작하기
-source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
+source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 29%
+source-wordcount: '1069'
+ht-degree: 24%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 29%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="릴리스 노트"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="소프트웨어 배포 포털"
 
-소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 를 통해 패키지를 설치할 수 있습니다 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 소스 AEM(Adobe Experience Manager) 인스턴스에 배치합니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
+소프트웨어 배포 포털에서 컨텐츠 전송 도구를 zip 파일로 다운로드할 수 있습니다. 를 통해 패키지를 설치할 수 있습니다 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 소스 AEM(Adobe Experience Manager) 인스턴스에 배치합니다. 최신 버전을 다운로드해야 합니다. 최신 버전에 대한 자세한 내용은 [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털에서 컨텐츠 전송 도구를 다운로드합니다.
@@ -125,6 +125,44 @@ ht-degree: 29%
 1. 마이그레이션 세트를 선택하고 을(를) 클릭합니다. **속성** 마이그레이션 세트 속성을 보거나 편집하려면 다음을 수행하십시오. 속성을 편집하는 동안에는 **마이그레이션 세트 이름** 또는 **서비스 URL**.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+
+### 마이그레이션 세트 크기 및 디스크 공간 확인 {#migration-set-size}
+
+마이그레이션 세트를 만든 후에는 추출 프로세스를 시작하기 전에 마이그레이션 세트에서 크기 검사를 실행하는 것이 좋습니다.
+마이그레이션 세트에서 크기 검사를 실행하면 다음을 수행할 수 있습니다.
+* 에 충분한 디스크 공간이 있는지 확인합니다. `crx-quickstart` 하위 디렉토리를 사용하여 추출을 완료합니다.
+* 마이그레이션 세트 크기가 지원되는 제품 제한에 속하는지 확인하고, 실패한 컨텐츠 수집을 방지합니다.
+
+크기 검사를 실행하려면 아래 단계를 따르십시오.
+
+1. 마이그레이션 세트를 선택하고 을(를) 클릭합니다. **크기 확인**.
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+
+1. 그러면 **크기 확인** 대화 상자.
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+
+1. 클릭 **크기 확인** 프로세스를 시작합니다. 그런 다음 마이그레이션 세트 목록 보기로 돌아갑니다. 그러면 다음과 같은 메시지가 표시됩니다 **크기 확인** 실행 중입니다.
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+
+
+1. 한 번 **크기 확인** 프로세스가 완료되면 상태가 다음 중 하나로 변경됩니다. **완료됨**. 동일한 마이그레이션 세트를 선택하고 을(를) 클릭합니다 **크기 확인** 결과를 확인합니다.
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+
+   아래는 의 예입니다 **크기 확인** 경고 없는 결과.
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+
+1. 만약 **크기 확인** 디스크 공간이 부족하거나 마이그레이션 세트가 제품 제한을 초과함 **경고** 상태가 표시됩니다.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+
+아래는 의 예입니다 **크기 확인** 경고 메시지가 표시됩니다.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## 다음은 무엇입니까? {#whats-next}
