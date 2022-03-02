@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
+source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 3%
@@ -177,7 +177,7 @@ CIF 구성에서 편집기는 대체 제품 또는 카테고리 페이지 URL �
 >
 > 카테고리별로 특정 제품 페이지를 선택하려면 다음이 필요합니다 [CIF 코어 구성 요소 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 또는 그 이상
 
-### F2 연결 {#specific-pages-deep-linking}
+### 심층 연결 {#specific-pages-deep-linking}
 
 다음 `UrlProvider` 는 작성 계층 인스턴스의 특정 카테고리 및 제품 페이지에 대한 딥 링크를 생성하도록 사전 구성되어 있습니다. 이 기능은 미리 보기 모드를 사용하여 사이트를 탐색하고, 특정 제품 또는 카테고리 페이지로 이동한 다음, 편집 모드로 전환하여 페이지를 편집하는 편집자에게 유용합니다.
 
@@ -233,7 +233,7 @@ _**URL 길이와 인코딩된 정보 간의 균형.**_
 
 >[!NOTE]
 >
->이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 구성 을 참조하십시오.
+>이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 프로젝트에 대한 구성.
 
 ## 추가 리소스 {#additional}
 
