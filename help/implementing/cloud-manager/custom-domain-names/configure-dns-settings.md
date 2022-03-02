@@ -2,10 +2,10 @@
 title: 'DNS 설정 구성 '
 description: DNS 설정 구성
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
+source-git-commit: 016954bc712a135886a6031deba05d92e7d5099c
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 | 단계 |  | 책임 | 추가 정보 |
 |--- |--- |--- |---|
-| SLL 인증서 추가 | SLL 인증서 추가 | 고객 | [SSL 인증서 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| SSL 인증서 추가 | SSL 인증서 추가 | 고객 | [SSL 인증서 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
 | 도메인 확인 | TXT 레코드 추가 | 고객 | [TXT 레코드 추가](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
 | 도메인 확인 상태 검토 |  | 고객 |  |
 |  | 상태: 도메인 확인 실패 | 고객 | [도메인 이름 상태 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
