@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 86b1677b79f64c2d4ddfa260f17021da068283c9
+source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3436'
 ht-degree: 99%
 
 ---
@@ -809,6 +809,7 @@ ht-degree: 99%
       + [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)
       + [AEM as a Cloud Service에 대한 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)
       + [OSGi 구성 API](/help/implementing/deploying/osgi-configuration-api.md)
+      + [리소스 매핑](/help/implementing/deploying/resource-mapping.md)
    + 작성자 계층 {#author-tier}
       + [작성자 계층에 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
