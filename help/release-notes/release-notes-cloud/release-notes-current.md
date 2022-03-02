@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 2693022e5745b5c2bb2166f0833c6b1af4337815
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* 다음 **[프런트엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 버튼은 **사이트** 페이지 코어 구성 요소의 v2를 사용하는 사이트에 대한 사이트 콘솔의 레일입니다. 이 버튼은 기존 클라이언트 라이브러리의 맨 위에 프런트 엔드 파이프라인과 함께 배포된 테마를 로드하도록 사이트를 구성합니다.
+* **[프론트 엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 버튼은 페이지 핵심 구성 요소의 v2를 사용하는 사이트를 위한 Sites 콘솔의 **Site** 레일에서 사용할 수 있습니다. 이 버튼은 기존 클라이언트 라이브러리 위에 프런트 엔드 파이프라인과 함께 배포된 테마를 로드하도록 사이트를 구성합니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -108,7 +108,7 @@ AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1�
 * Cloud Manager는 [동일한 Git Commit이 여러 전체 스택 파이프라인 실행에 사용되는 것을 감지하면 코드 베이스를 다시 빌드하지 않습니다](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
 * 이제 AEM 환경 로그에 액세스하려면 **Deployment Manager** 제품 프로필이 필요합니다. 이 프로필이 없는 사용자에게는 사용자 인터페이스에서 비활성화된 버튼이 표시됩니다.
 * UI는 Sites가 솔루션으로 활성화되지 않은 프로그램에 대한 프론트엔드 파이프라인 구성을 허용하지 않습니다.
-* Git 비밀번호 생성 시 만료 날짜가 표시됩니다.
+* Git 암호 생성 시 만료 날짜가 표시됩니다.
 
 ### 버그 수정 {#bug-fixes-cm}
 
@@ -125,7 +125,7 @@ AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1�
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 콘텐츠 유효성 검사 - 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 기능을 사용하려면 소스 AEM 환경의 `System Console`에서 활성화해야 합니다. 자세한 내용은 [콘텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started)를 참조하십시오.
+* 콘텐츠 유효성 검사 - 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 기능을 사용하려면 소스 AEM 환경의 `System Console`에서 활성화해야 합니다. 자세한 내용은 [콘텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ko-KR#getting-started)를 참조하십시오.
 
 ### 버그 수정 {#bug-fixes-ctt}
 
