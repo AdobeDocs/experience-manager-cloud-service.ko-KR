@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 86b1677b79f64c2d4ddfa260f17021da068283c9
 workflow-type: tm+mt
 source-wordcount: '3434'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -104,8 +104,8 @@ ht-degree: 97%
    + [파트너용 Experience Manager as a Cloud Service 마이그레이션 안내서](/help/journey-migration/getting-started-partners.md)
    + 마이그레이션 도구 릴리스 정보 {#release-notes-migration-tools}
       + [최신 릴리스 정보 (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [2022.1.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021년 {#2021}
-         + [2022.1.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
          + [2021.12.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -158,7 +158,7 @@ ht-degree: 97%
          + [계정 환경 구성](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [헤드리스 콘텐츠 작성 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+      + [Headless 콘텐츠 작성 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + 작성 기본 사항 {#fundamentals}
          + [환경 및 도구](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [페이지 주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -217,7 +217,7 @@ ht-degree: 97%
    + 관리 {#administering}
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
-         + [프런트엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
+         + [프런트-엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [사이트 레일 사용](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md)
@@ -250,7 +250,7 @@ ht-degree: 97%
                + [번역 규칙 구성](/help/journey-sites/translation/translation-rules.md)
                + [콘텐츠 번역](/help/journey-sites/translation/translate-content.md)
                + [번역된 콘텐츠 게시](/help/journey-sites/translation/publish-content.md)
-            + [헤드리스 번역 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
+            + [Headless 번역 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [다국어 사이트를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md)
             + [번역을 위한 콘텐츠 준비](/help/sites-cloud/administering/translation/preparation.md)
             + [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -534,33 +534,33 @@ ht-degree: 97%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
-+ 헤드리스 {#headless}
++ Headless {#headless}
    + [AEM Headless 소개](/help/headless/introduction.md)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
       + [구성](/help/headless/setup/create-configuration.md)
-      + [컨텐츠 조각 모델](/help/headless/setup/create-content-model.md)
-      + [자산 폴더](/help/headless/setup/create-assets-folder.md)
+      + [콘텐츠 조각 모델](/help/headless/setup/create-content-model.md)
+      + [Assets 폴더](/help/headless/setup/create-assets-folder.md)
       + [콘텐츠 조각](/help/headless/setup/create-content-fragment.md)
       + [GraphQL 끝점](/help/headless/setup/create-api-request.md)
    + 콘텐츠 조각 {#content-fragments}
-      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ko-KR)
+      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
       + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ko-KR)
       + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ko-KR)
       + 작성{#authoring}
          + [작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko-KR)
          + [텍스트 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ko-KR)
-         + [관련 컨텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ko-KR)
+         + [관련 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ko-KR)
          + [변형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
       + [메타데이터](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ko-KR)
       + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ko-KR)
-      + [JSON 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ko-KR)
+      + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ko-KR)
    + GraphQL API {#graphql-api}
       + [콘텐츠 조각용 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL 엔드포인트 관리](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
-      + [지속된 GraphQL 쿼리](/help/headless/graphql-api/persisted-queries.md)
+      + [지속 GraphQL 쿼리](/help/headless/graphql-api/persisted-queries.md)
    + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ko-KR)
    + 보안 {#security}
       + [권한](/help/headless/security/permissions.md)
@@ -582,7 +582,7 @@ ht-degree: 97%
          + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
          + [헤드리스 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
          + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
-      + 헤드리스 콘텐츠 설계 여정 {#architect}
+      + Headless 콘텐츠 설계 여정 {#architect}
          + [AEM 헤드리스 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
          + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
          + [AEM을 통한 헤드리스용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
@@ -741,7 +741,7 @@ ht-degree: 97%
             + [맞춤형 술어 평가자 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [맞춤형 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
-      + [헤드리스 경험 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
+      + [Headless 경험 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + 하이브리드 및 SPA 개발 {#hybrid}
          + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ko-KR)
