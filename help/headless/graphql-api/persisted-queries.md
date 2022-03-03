@@ -227,7 +227,6 @@ ht-degree: 100%
 >
 >예를 들어 지속 쿼리 실행 요청에서처럼:
 >
->
-```xml
+>```xml
 >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
 >```
