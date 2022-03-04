@@ -1,15 +1,15 @@
 ---
-title: Target에 컨텐츠 수집
-description: Target에 컨텐츠 수집
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+title: 대상에 콘텐츠 수집
+description: 대상에 콘텐츠 수집
+source-git-commit: 80e148aa5533963bcd6354e2117a4619bcf5b27f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 28%
+source-wordcount: '527'
+ht-degree: 31%
 
 ---
 
 
-# Target에 컨텐츠 수집 {#ingesting-content}
+# 대상에 콘텐츠 수집 {#ingesting-content}
 
 ## 컨텐츠 전송 도구의 수집 프로세스 {#ingestion-process}
 
@@ -21,7 +21,7 @@ ht-degree: 28%
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
 >[!NOTE]
->Amazon S3 또는 Azure Data Store가 데이터 저장소 유형으로 사용되는 경우 선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 자세한 내용
+>선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 자세한 내용
 
 1. 마이그레이션 세트 선택 **컨텐츠 전송** 페이지를 클릭하고 **수집** 수집
 
