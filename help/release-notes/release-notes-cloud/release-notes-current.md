@@ -26,7 +26,7 @@ ht-degree: 100%
 ## 릴리스 날짜 {#release-date}
 
 [!DNL Adobe Experience Manager]인 [!DNL Cloud Service]의 현재 릴리스(2022.1.0)의 날짜는 2022년 2월 3일입니다.
-다음 릴리스(2022.2.0) 날짜는 2022년 10월 3일입니다.
+다음 릴리스(2022.2.0) 날짜는 2022년 3월 10일입니다.
 
 ## 릴리스 비디오 {#release-video}
 

@@ -3,13 +3,13 @@ title: 사이트 템플릿
 description: AEM 사이트 템플릿을 사용하여 사이트 구조 및 초기 컨텐츠를 미리 정의하여 사이트를 신속하게 만들 수 있는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 1%
 
 ---
-
 
 # 사이트 템플릿 {#site-templates}
 
