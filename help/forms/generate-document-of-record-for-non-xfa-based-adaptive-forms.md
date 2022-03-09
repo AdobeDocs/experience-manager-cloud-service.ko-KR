@@ -2,9 +2,9 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
+source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3678'
 ht-degree: 2%
 
 ---
@@ -406,7 +406,7 @@ When you select a form model, configure Document of Record using options availab
 
 >[!NOTE]
 >
-> 이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 을 참조하십시오.
+> 이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](/help/release-notes/prerelease.md#enable-prerelease) 을 참조하십시오.
 
 XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다. Forms as a Cloud Service에는 마스터 XCI 파일이 있습니다. 사용자 지정 XCI 파일을 사용하여 마스터 XCI 파일에 지정된 하나 이상의 기본 속성을 재정의할 수 있습니다. 예를 들어, 문서에 글꼴을 포함하거나 모든 문서에 대해 태그가 지정된 속성을 사용하도록 선택할 수 있습니다. 다음 표에서는 XCI 옵션을 지정합니다.
 
