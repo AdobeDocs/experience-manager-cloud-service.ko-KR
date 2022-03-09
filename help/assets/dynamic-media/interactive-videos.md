@@ -4,7 +4,7 @@ description: Dynamic Media에서 대화형 비디오 및 쇼퍼블 비디오를 
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 3%
@@ -101,7 +101,6 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 >
 >* 빠른 보기를 트리거하여 비디오에 상호 작용을 추가하려고 합니다.
 >* Experience Manager 구현은 다음을 수행합니다 *not* IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 eCommerce 통합 프레임워크를 사용합니다. <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
-
 >
 >Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -541,7 +540,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 비디오 포함 코드는 표준입니다.
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7video_div.s7videoviewer{
    width:100%;
@@ -602,7 +601,7 @@ Experience Manager Sites 고객의 경우 대화형 미디어 구성 요소를 �
 
 Experience Manager이 반환한 포함 코드에 이미 사용 가능한 이벤트 처리기가 있습니다. 강조 표시된 다음 코드 조각에 표시된 대로 주석 처리됩니다.
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -686,13 +685,13 @@ Quickview URL을 트리거하고 Quickview 패널을 활성화하는 마지막 �
 
 대화형 비디오를 Quickview 코드와 완전히 통합하기 위해 이러한 단계가 데모 웹 사이트에 적용되는 방법을 확인할 수 있습니다. 이 주제의 앞부분에서 Quickview URL의 구조는 다음과 같이 식별되었습니다.
 
-```xml
+```xml {.line-numbers}
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
 이 URL을 `quickViewActivate` 핸들링 사용 `categoryId` 및 `sku` 에서 사용할 수 있는 필드 `inData` 다음과 같이 뷰어의 코드를 통해 처리기에 전달되는 개체입니다.
 
-```xml
+```js {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -700,13 +699,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 데모 웹 사이트에서 간단한 `loadQuickView()` 함수 호출. 이 함수는 Quickview 데이터 URL인 인수를 하나만 사용합니다. 따라서 대화형 비디오를 통합하는 마지막 단계는 다음 코드 행을 `quickViewActivate` 핸들러:
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 마지막으로 Quickview 대화 상자가 뷰어의 컨테이너 요소에 연결되어 있는지 확인합니다. 포함 코드 기본값은 이 기능을 수행하는 샘플 단계를 제공합니다. 뷰어의 컨테이너 요소에 대한 참조를 가져오려면 다음 코드 행을 사용할 수 있습니다.
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 ```
@@ -717,7 +716,7 @@ var inner_container = document.getElementById(sdkContainerId);
 
 샘플 웹 사이트의 경우 Quickview 모달 대화 상자가 `DIV` quickview-modal ID가 문서에 직접 첨부된 경우입니다. `BODY`. 따라서 이 대화 상자를 뷰어의 컨테이너로 이동할 코드는 다음과 같이 간단합니다.
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 inner_container.appendChild(document.getElementById("quickview-modal"));
@@ -725,7 +724,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 전체 소스 코드는 다음과 같습니다.
 
-```xml
+```javascript {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -772,4 +771,4 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 ## Quickview를 사용하여 사용자 지정 팝업 Windows® 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
-자세한 내용은 [Quickview를 사용하여 사용자 지정 팝업 Windows® 만들기](/help/assets/dynamic-media/custom-pop-ups.md). —>
+자세한 내용은 [Quickview를 사용하여 사용자 지정 팝업 Windows® 만들기](/help/assets/dynamic-media/custom-pop-ups.md).
