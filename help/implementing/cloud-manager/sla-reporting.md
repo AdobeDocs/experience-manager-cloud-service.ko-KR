@@ -1,51 +1,51 @@
 ---
-title: SLA 보고 - Cloud Service
-description: SLA 보고 - Cloud Service
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+title: SLA 보고
+description: 계약된 SLA(Service Level Agreement)와 관련하여 프로덕션 AEM 환경의 성능을 확인하는 방법을 알아봅니다.
+exl-id: 03932415-a029-4703-b44a-f86a87edb328
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 0%
+source-wordcount: '248'
+ht-degree: 2%
 
 ---
 
+
 # SLA 보고 {#sla-reporting}
 
-AEM as a Cloud Service의 SLA 보고에 대해 알아보려면 아래 섹션을 따르십시오.
+계약된 SLA(Service Level Agreement)와 관련하여 프로덕션 AEM 환경의 성능을 확인하는 방법을 알아봅니다.
 
 ## 소개 {#introduction}
 
-고객은 계약된 SLA(Service Level Agreement)와 관련하여 프로덕션 AEM 환경의 성능을 확인할 수 있습니다. 기본 헤더에서 액세스할 수 있는 보고서 탭의 메뉴를 통해 사용할 수 있습니다.
+SLA 보고 데이터는 **보고서** 탭. 액세스하려면 다음 단계에 따르십시오.
 
-아래 예를 따라, 2021년 월별 SLA 달성도를 보여주는 그래프입니다.
+1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직과 프로그램을 선택합니다.
 
-![](assets/sla-reporting-1.png)
+1. 로 이동합니다 **보고서** 탭에서 **개요** 페이지.
 
+1. 그래프로 표시된 SLA 데이터를 보려면 원하는 연도를 클릭합니다.
 
-데이터 포인트를 롤오버하면 해당 달의 특정 값이 표시됩니다.
+![SLA 그래프 예](assets/sla-reporting-1.png)
 
-![](assets/sla-reporting-b.png)
+커서를 데이터 점 위에 놓으면 해당 점에 대한 특정 값이 표시됩니다.
 
->[!NOTE]
->이러한 보고서는 고객이 지속적으로 이용할 수 있게 됩니다. 기본 탐색에 보고서 옵션이 표시되지 않는 경우 Adobe 담당자에게 문의하여 보고서를 언제 사용할 수 있게 되는지 알아보십시오.
-
-이 그래프의 이벤트 분석 섹션에는 현재 선택한 연도 동안 프로그램에 대해 발생한 사고 세트가 표시됩니다.
-
-각 인시던트는 아래 그림과 같이 시간 범위, 원인 및 설명 세트가 있습니다.
-
-![](assets/sla-reporting-c.png)
-
+![자세한 데이터 표시](assets/sla-reporting-b.png)
 
 ## SLA 지표 {#sla-metrics}
 
-* **게시 계층**
-계약게시 계층의 Adobe과 계약에 정의된 SLA입니다.
+선택한 연도의 그래프에는 여러 데이터 세트가 포함됩니다.
 
-* **게시 계층**
-실제Adobe 또는 공급업체가 일으킨 프로덕션 게시 계층 팩토링 인시던트의 측정된 가동 시간입니다.
+* **계층 계약 게시** - 게시 계층의 Adobe과 계약에 정의된 SLA입니다.
 
-* **작성 계층**
-계약 작성 계층의 Adobe과 계약에 정의된 SLA입니다.
+* **실제 게시 계층** - Adobe 또는 Adobe 공급업체이 일으킨 프로덕션 게시 계층 팩토링 사고의 측정된 가동 시간입니다.
 
-* **작성자 계층**
-실제Adobe 또는 공급업체가 일으킨 프로덕션 작성 계층 팩토링 인시던트의 측정된 가동 시간입니다.
+* **작성 계층 계약** - 작성 계층에 대한 Adobe과 계약에 정의된 SLA입니다.
 
+* **실제 작성 계층** - Adobe 또는 Adobe 공급업체이 일으킨 프로덕션 작성 계층 팩토링 사고의 측정된 가동 시간입니다.
+
+## 이벤트 분석 {#event-analysis}
+
+다음 **이벤트 분석** 그래프 아래의 섹션에는 선택한 연도 동안 프로그램에 대해 발생한 인시던트 세트가 표시됩니다.
+
+각 사건에는 시간 범위, 원인 및 설명 세트가 있습니다.
+
+![이벤트 분석 예](assets/sla-reporting-c.png)

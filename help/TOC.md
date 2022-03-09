@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 100%
+source-wordcount: '3419'
+ht-degree: 99%
 
 ---
 
@@ -641,17 +641,17 @@ ht-degree: 100%
          + [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [환경 절전 모드 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
-         + [마법사 사용](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [프로젝트 만들기 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [빌드 환경 이해](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [환경 관리](/help/implementing/cloud-manager/manage-environments.md)
       + 코드 관리 {#managing-code}
          + [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager의 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [저장소에 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Adobe Cloud Manager와 Git 통합](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [다중 소스 Git 저장소를 사용하여 작업](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [AEM as a Cloud Service에 대한 기업 팀 개발 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Cloud Manager에서 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [여러 저장소 사용](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [엔터프라이즈 개발 팀 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [환경 변수](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 파이프라인 {#cicd-pipelines}
          + [소개](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -668,8 +668,8 @@ ht-degree: 100%
          + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
       + [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
-      + [새 Relic에 대한 사용자 액세스](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [알림 이해](/help/implementing/cloud-manager/notifications.md)
+      + [신유교 원](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [알림](/help/implementing/cloud-manager/notifications.md)
       + SSL 인증서 관리 {#manage-ssl-certificates}
          + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [SSL 인증서 가져오기](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)

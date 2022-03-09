@@ -1,61 +1,62 @@
 ---
-title: 로그 관리 - Cloud Service
-description: 로그 관리 - Cloud Service
+title: 로그 액세스 및 관리
+description: AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 2%
+source-wordcount: '272'
+ht-degree: 3%
 
 ---
 
+
 # 로그 액세스 및 관리 {#manage-logs}
 
-사용자는 **개요** 페이지 또는 환경 세부 정보 페이지에서 **환경** 카드를 사용하여 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다.
+AEM as a Cloud Service에서 개발 프로세스를 지원하기 위해 로그에 액세스하고 관리하는 방법을 알아봅니다.
+
+을 사용하여 선택한 환경에 사용할 수 있는 로그 파일 목록에 액세스할 수 있습니다 **환경** 카드로부터 **개요** 페이지 또는 환경 세부 사항 페이지를 참조하십시오.
 
 ## 로그 다운로드 {#download-logs}
 
-아래 단계에 따라 로그를 다운로드하십시오.
+다음 단계에 따라 로그를 다운로드합니다.
 
-1. **개요** 페이지에서 **환경** 카드로 이동합니다.
+1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직과 프로그램을 선택합니다.
 
-1. **에서**&#x200B;다운로드 로그&#x200B;**를 선택합니다.** 메뉴.
+1. 로 이동합니다 **환경** 카드로부터 **개요** 페이지.
 
-   ![](assets/download-logs1.png)
+1. 선택 **다운로드 로그** 를 클릭합니다.
 
-   *또는*,
+   ![로그 메뉴 항목 다운로드](assets/download-logs1.png)
 
-   환경 세부 사항 페이지에서 다음을 수행합니다.
+1. 에서 **다운로드 로그** 대화 상자에서 적절한 를 선택합니다 **서비스** 드롭다운 메뉴에서
 
-   ![](assets/download-logs.png)
+   ![로그 다운로드 대화 상자](assets/download-preview.png)
 
-   >[!NOTE]
-   >열려 있는 위치에 관계없이 동일한 대화 상자가 표시되고 개별 로그 파일을 다운로드할 수 있습니다.
+1. 서비스를 선택하면 검색할 로그 옆에 있는 다운로드 아이콘을 클릭합니다.
 
-1. **서비스** 드롭다운 메뉴에서 **미리 보기** 또는 **Preview Dispatcher**&#x200B;와 같은 옵션을 선택하고 다운로드 아이콘을 클릭합니다.
+또한 **환경** 페이지.
 
-   ![](assets/download-preview.png)
+![환경 화면의 로그](assets/download-logs.png)
 
-
-## API를 통해 로그 {#logs-through-api}
+## API를 통한 로그 {#logs-through-api}
 
 UI를 통해 로그를 다운로드하는 것 외에도 API 및 명령줄 인터페이스를 통해 로그를 사용할 수 있습니다.
 
-예를 들어 특정 환경에 대한 로그 파일을 다운로드하려면 명령은
+특정 환경에 대한 로그 파일을 다운로드하려면 명령은 다음과 비슷합니다.
 
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-다음 명령을 사용하면 로그를 추적할 수 있습니다.
+명령줄 인터페이스를 통해 로그를 추적할 수도 있습니다.
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-환경 ID(이 경우 1884)와 사용 가능한 서비스 또는 로그 이름 옵션을 가져오려면 다음을 사용할 수 있습니다.
+이 예에서 환경 ID(1884) 및 사용 가능한 서비스 또는 로그 이름 옵션을 얻으려면 다음 명령을 사용할 수 있습니다.
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -75,9 +76,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->**로그 다운로드**&#x200B;는 UI와 API를 모두 통해 사용할 수 있지만 **로그 추적**&#x200B;은 API/CLI만 사용할 수 있습니다.
 
 ### 추가 리소스 {#resources}
 

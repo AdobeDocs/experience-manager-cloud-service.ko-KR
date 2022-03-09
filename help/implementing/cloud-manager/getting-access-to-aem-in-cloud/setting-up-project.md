@@ -1,38 +1,40 @@
 ---
-title: 프로젝트 설정 세부 정보
-description: 프로젝트 설정 세부 사항 - Cloud Services
+title: 프로젝트 설정
+description: AEM 프로젝트를 만들 때 Maven과 따라야 하는 표준을 사용하여 프로젝트를 만드는 방법을 알아봅니다.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 4219c8ce30a0f1cd44bbf8e8de46d6be28a1ddf3
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 5%
+source-wordcount: '1264'
+ht-degree: 1%
 
 ---
 
-# 프로젝트 설정 {#project-setup-details}
+# 프로젝트 설정 {#project-setup}
 
-## 프로젝트 설정 세부 정보 수정 {#modifying-project-setup-details}
+AEM 프로젝트를 만들 때 Maven과 따라야 하는 표준을 사용하여 프로젝트를 만드는 방법을 알아봅니다.
 
-Cloud Manager를 사용하여 성공적으로 빌드하고 배포하려면 기존 AEM 프로젝트를 다음 몇 가지 기본 규칙을 준수해야 합니다.
+## 프로젝트 설정 세부 정보 {#project-setup-details}
 
-* Apache Maven을 사용하여 프로젝트를 빌드해야 합니다.
-* 다음 항목이 있어야 합니다. *pom.xml* Git 저장소의 루트에 있는 파일입니다. 이 *pom.xml* 파일은 하위 모듈의 수를 의미할 수 있으며, 이 경우 다른 하위 모듈 등이 있을 수 있습니다. 필요한 경우.
+Cloud Manager를 사용하여 성공적으로 빌드하고 배포하려면 AEM 프로젝트에서 다음 지침을 따라야 합니다.
 
-* 에서 추가 Maven 객체 저장소에 대한 참조를 추가할 수 있습니다 *pom.xml* 파일. 액세스 권한 [암호로 보호된 객체 저장소](#password-protected-maven-repositories) 는 구성 시 지원됩니다. 그러나 네트워크 보호 아티팩트 리포지토리에 대한 액세스는 지원되지 않습니다.
-* 배포 가능한 컨텐츠 패키지는 컨텐츠 패키지를 검색하여 검색합니다 *zip* 이름이 지정된 디렉터리에 포함된 파일 *target*. 임의의 하위 모듈 개수로 컨텐츠 패키지를 생성할 수 있습니다.
-
-* 배포 가능한 Dispatcher 가공물은 *zip* 파일(다시, 이름이 지정된 디렉토리에 포함됨) *target*). *conf* 및 *conf.d*.
-
-* 두 개 이상의 컨텐츠 패키지가 있는 경우 패키지 배포를 순서 지정할 수 없습니다. 특정 순서가 필요한 경우 컨텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다. 패키지는 [생략됨](#skipping-content-packages) 배포
-
+* 프로젝트를 [Apache Maven.](https://maven.apache.org)
+* 다음 항목이 있어야 합니다. `pom.xml` git 저장소의 루트에 있는 파일입니다. 이 `pom.xml` 파일은 하위 모듈의 수를 의미할 수 있으며, 이 경우 다른 하위 모듈 등이 있을 수 있습니다. 필요한 경우.
+* 에서 추가 Maven 객체 저장소에 대한 참조를 추가할 수 있습니다 `pom.xml` 파일.
+   * 액세스 권한 [암호로 보호된 객체 저장소](#password-protected-maven-repositories) 는 구성 시 지원됩니다. 그러나 네트워크 보호 아티팩트 리포지토리에 대한 액세스는 지원되지 않습니다.
+* 배포 가능한 컨텐츠 패키지는 컨텐츠 패키지를 검색하여 검색합니다 `.zip` 이름이 지정된 디렉토리에 들어 있는 파일 `target`.
+   * 임의의 하위 모듈 개수로 컨텐츠 패키지를 생성할 수 있습니다.
+* 배포 가능한 Dispatcher 가공물은 `.zip` 파일( `target`). `conf` 및 `conf.d`.
+* 두 개 이상의 컨텐츠 패키지가 있는 경우 패키지 배포를 순서 지정할 수 없습니다.
+   * 특정 순서가 필요한 경우 컨텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다.
+* 패키지는 [생략됨](#skipping-content-packages) 배포 중.
 
 ## Cloud Manager에서 Maven 프로필 활성화 {#activating-maven-profiles-in-cloud-manager}
 
-일부 제한된 경우에는 개발자 워크스테이션에서 실행되는 경우와 달리 Cloud Manager 내에서 실행할 때 빌드 프로세스를 약간 변경해야 할 수 있습니다. 이러한 경우 [Maven 프로필](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 는 Cloud Manager를 포함하여 다양한 환경에서 빌드가 어떻게 달라야 하는지를 정의하는 데 사용할 수 있습니다.
+일부 제한된 경우에는 개발자 워크스테이션에서 실행할 때와 달리 Cloud Manager 내에서 실행할 때 빌드 프로세스를 약간 변경해야 할 수 있습니다. 이러한 경우 [Maven 프로필](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 는 Cloud Manager를 포함하여 다양한 환경에서 빌드가 어떻게 달라야 하는지를 정의하는 데 사용할 수 있습니다.
 
-Cloud Manager 빌드 환경 내의 Maven 프로필 활성화는 위에 설명된 CM_BUILD 환경 변수를 찾아 수행해야 합니다. 반대로 Cloud Manager 빌드 환경 외부에서만 사용하도록 만들어진 프로필은 이 변수가 없는 경우를 찾아 작성해야 합니다.
+Cloud Manager 빌드 환경 내의 Maven 프로필 활성화는 `CM_BUILD` [환경 변수 입니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 마찬가지로, Cloud Manager 빌드 환경 외부에서만 사용하도록 만들어진 프로필은 이 변수가 없음을 확인하여 수행해야 합니다.
 
-예를 들어 빌드가 Cloud Manager 내에서 실행될 때만 단순 메시지를 출력하려는 경우 다음을 수행합니다.
+예를 들어 빌드가 Cloud Manager 내에서 실행될 때만 단순 메시지를 출력하려는 경우 이렇게 합니다.
 
 ```xml
         <profile>
@@ -68,9 +70,9 @@ Cloud Manager 빌드 환경 내의 Maven 프로필 활성화는 위에 설명된
 
 >[!NOTE]
 >
->개발자 워크스테이션에서 이 프로필을 테스트하려면 명령줄에서 을(를) 활성화하거나 `-PcmBuild`) 또는 IDE(Integrated Development Environment)에서 사용할 수 있습니다.
+>개발자 워크스테이션에서 이 프로필을 테스트하려면 명령줄에서 을(를) 활성화하거나 `-PcmBuild`) 또는 IDE(통합 개발 환경)에서 사용할 수 있습니다.
 
-빌드가 Cloud Manager 외부에서 실행될 때만 간단한 메시지를 출력하려면 다음을 수행합니다.
+빌드가 Cloud Manager 외부에서 실행될 때만 간단한 메시지를 출력하려는 경우에는 이렇게 합니다.
 
 ```xml
         <profile>
@@ -107,127 +109,142 @@ Cloud Manager 빌드 환경 내의 Maven 프로필 활성화는 위에 설명된
 ## 암호로 보호된 Maven 저장소 지원 {#password-protected-maven-repositories}
 
 >[!NOTE]
->암호로 보호된 Maven 저장소의 가공물은 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트에서 구현된 모든 품질 규칙을 통해 실행되지 않으므로 매우 신중하게 사용해야 합니다. 따라서 드문 경우와 AEM에 연결되지 않은 코드에만 사용해야 합니다. Java 소스뿐만 아니라 전체 프로젝트 소스 코드도 바이너리와 함께 배포하는 것이 좋습니다.
+>
+>암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 모든 [코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md) Cloud Manager의 품질 게이트에서 구현됨. 따라서 드문 경우와 AEM에 연결되지 않은 코드에만 사용해야 합니다. Java 소스뿐만 아니라 전체 프로젝트 소스 코드도 바이너리와 함께 배포하는 것이 좋습니다.
 
-Cloud Manager에서 암호로 보호된 Maven 저장소를 사용하려면 암호(및 선택적으로 사용자 이름)를 비밀 파이프라인 변수로 지정한 다음 이름이 지정된 파일 내에서 해당 암호를 참조합니다 `.cloudmanager/maven/settings.xml` git 리포지토리에서 생성합니다. 이 파일은 [Maven 설정 파일](https://maven.apache.org/settings.html) 스키마. Cloud Manager 빌드 프로세스가 시작되면 `<servers>` 이 파일의 요소는 기본 `settings.xml` Cloud Manager에서 제공하는 파일입니다. 서버 ID 시작 `adobe` 및 `cloud-manager` 는 예약된 것으로 간주되므로 사용자 지정 서버에서 사용해서는 안 됩니다. 서버 ID **not** 이러한 접두사 또는 기본 ID 중 하나와 일치 `central` 는 Cloud Manager에서 미러링되지 않습니다. 이 파일이 준비되면 서버 ID가 `<repository>` 및/또는 `<pluginRepository>` 내부 요소 `pom.xml` 파일. 일반적으로 다음과 같습니다 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](#activating-maven-profiles-in-cloud-manager)하지만, 이것은 엄격히 필요한 것은 아닙니다.
+Cloud Manager 내에서 암호로 보호된 Maven 저장소를 사용하려면 다음을 수행하십시오.
 
-예를 들어 https://repository.myco.com/maven2에 저장소가 있다고 가정할 경우 Cloud Manager에서 사용해야 하는 사용자 이름은 다음과 같습니다. `cloudmanager` 그리고 암호는 `secretword`.
+1. 암호로 암호(및 선택적으로 사용자 이름)를 지정합니다 [파이프라인 변수.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+1. 그런 다음 이름이 지정된 파일 내에서 해당 암호를 참조합니다. `.cloudmanager/maven/settings.xml` git 리포지토리에서 다음을 따릅니다. [Maven 설정 파일](https://maven.apache.org/settings.html) 스키마.
 
-먼저 파이프라인에서 암호를 암호로 설정합니다.
+Cloud Manager 빌드 프로세스가 시작될 때:
 
-`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+* 다음 `<servers>` 이 파일의 요소는 기본 `settings.xml` Cloud Manager에서 제공하는 파일입니다.
+   * 서버 ID 시작 `adobe` 및 `cloud-manager` 는 예약된 것으로 간주되므로 사용자 지정 서버에서 사용해서는 안 됩니다.
+   * 서버 ID가 이러한 접두사 또는 기본 ID 중 하나와 일치하지 않습니다 `central` 는 Cloud Manager에서 미러링되지 않습니다.
+* 이 파일이 준비되면 서버 ID가 `<repository>` 및/또는 `<pluginRepository>` 내부 요소 `pom.xml` 파일.
+* 일반적으로 다음과 같습니다 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](#activating-maven-profiles-in-cloud-manager)하지만, 이것은 엄격히 필요한 것은 아닙니다.
 
-그런 다음 `.cloudmanager/maven/settings.xml` 파일:
+예를 들어, 저장소가 `https://repository.myco.com/maven2`를 설정하는 경우 Cloud Manager에서 사용해야 하는 사용자 이름은 다음과 같습니다. `cloudmanager`, 그리고 암호는 `secretword`. 다음 단계를 수행합니다.
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <servers>
-        <server>
-            <id>myco-repository</id>
-            <username>cloudmanager</username>
-            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
-        </server>
-    </servers>
-</settings>
-```
+1. 암호를 파이프라인에서 암호로 설정합니다.
 
-그리고 마지막으로 `pom.xml` 파일:
+   ```text
+   $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+   ```
 
-```xml
-<profiles>
-    <profile>
-        <id>cmBuild</id>
-        <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-        </activation>
-        <repositories>
-             <repository>
-                 <id>myco-repository</id>
-                 <name>MyCo Releases</name>
-                 <url>https://repository.myco.com/maven2</url>
-                 <snapshots>
-                     <enabled>false</enabled>
-                 </snapshots>
-                 <releases>
-                     <enabled>true</enabled>
-                 </releases>
-             </repository>
-         </repositories>
-         <pluginRepositories>
-             <pluginRepository>
-                 <id>myco-repository</id>
-                 <name>MyCo Releases</name>
-                 <url>https://repository.myco.com/maven2</url>
-                 <snapshots>
-                     <enabled>false</enabled>
-                 </snapshots>
-                 <releases>
-                     <enabled>true</enabled>
-                 </releases>
-             </pluginRepository>
-         </pluginRepositories>
-    </profile>
-</profiles>
-```
+1. 다음에서 이 항목을 참조합니다. `.cloudmanager/maven/settings.xml` 파일.
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+       <servers>
+           <server>
+               <id>myco-repository</id>
+               <username>cloudmanager</username>
+              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+           </server>
+       </servers>
+   </settings>
+   ```
+
+1. 마지막으로 `pom.xml` 파일:
+
+   ```xml
+   <profiles>
+       <profile>
+           <id>cmBuild</id>
+           <activation>
+                   <property>
+                       <name>env.CM_BUILD</name>
+                   </property>
+           </activation>
+           <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+       </profile>
+   </profiles>
+   ```
 
 ### 소스 배포 {#deploying-sources}
 
 바이너리와 함께 Java 소스를 Maven 저장소에 배포하는 것이 좋습니다.
 
-프로젝트에서 maven-source-plugin을 구성합니다.
+이렇게 하려면 프로젝트에서 maven-source-plugin을 구성합니다.
 
 ```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>attach-sources</id>
-                    <goals>
-                        <goal>jar-no-fork</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-source-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>attach-sources</id>
+                     <goals>
+                         <goal>jar-no-fork</goal>
+                     </goals>
+                 </execution>
+             </executions>
+         </plugin>
 ```
 
 ### 프로젝트 소스 배포 {#deploying-project-sources}
 
-이진 파일과 함께 전체 프로젝트 소스를 Maven 저장소에 배포하는 것이 좋습니다. 이렇게 하면 정확한 아티팩트를 다시 빌드할 수 있습니다.
+바이너리와 함께 전체 프로젝트 소스를 Maven 저장소에 배포하는 것이 좋습니다. 이를 통해 가 정확한 아티팩트를 다시 작성할 수 있습니다.
 
-프로젝트에서 maven-assembly-plugin을 구성합니다.
+이렇게 하려면 프로젝트에서 maven-assembly-plugin을 구성합니다.
 
 ```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>project-assembly</id>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>single</goal>
-                    </goals>
-                    <configuration>
-                        <descriptorRefs>
-                            <descriptorRef>project</descriptorRef>
-                        </descriptorRefs>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-assembly-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>project-assembly</id>
+                     <phase>package</phase>
+                     <goals>
+                         <goal>single</goal>
+                     </goals>
+                     <configuration>
+                         <descriptorRefs>
+                             <descriptorRef>project</descriptorRef>
+                         </descriptorRefs>
+                     </configuration>
+                 </execution>
+             </executions>
+         </plugin>
 ```
 
 ## 컨텐츠 패키지 건너뛰기 {#skipping-content-packages}
 
-Cloud Manager에서 빌드는 다양한 컨텐츠 패키지를 생성할 수 있습니다.
-다양한 이유로 컨텐츠 패키지를 개발하지만 배포하지는 않는 것이 좋을 수 있습니다. 예를 들어 테스트에만 사용하거나 빌드 프로세스의 다른 단계에서 다시 패키징하는 컨텐츠 패키지를 만들 때, 즉 다른 패키지의 하위 패키지로 사용할 수 있습니다.
+Cloud Manager에서 빌드는 다양한 컨텐츠 패키지를 생성할 수 있습니다. 다양한 이유로, 컨텐츠 패키지를 생성하되 배포하지 않는 것이 좋을 수 있습니다. 예를 들어 테스트에만 사용되는 컨텐츠 패키지를 빌드하거나 빌드 프로세스의 다른 단계에서 다시 패키지하는 경우, 즉 다른 패키지의 하위 패키지로 제공될 수 있습니다.
 
-To accommodate these scenarios, Cloud Manager will look for a property named ***cloudManagerTarget*** in the properties of built content packages. If this property is set to none, the package will be skipped and not deployed. The mechanism to set this property depends upon the way the build is producing the content package. For example, with the filevault-maven-plugin you would configure the plugin like this:
+To accommodate these scenarios, Cloud Manager will look for a property named `cloudManagerTarget` in the properties of built content packages. 이 속성이 `none`를 지정하면 패키지를 건너뛰고 배포하지 않습니다.
+
+이 속성을 설정하는 메커니즘은 빌드가 컨텐츠 패키지를 생성하는 방식에 따라 다릅니다. 예를 들어, `filevault-maven-plugin` 다음과 같이 플러그인을 구성합니다.
 
 ```xml
         <plugin>
@@ -243,7 +260,7 @@ To accommodate these scenarios, Cloud Manager will look for a property named ***
         </plugin>
 ```
 
-content-package-maven-plugin을 사용하면 비슷합니다.
+다음 `content-package-maven-plugin` 에도 유사한 구성이 있습니다.
 
 ```xml
         <plugin>
@@ -289,6 +306,6 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ### 경고 {#caveats}
 
-* [Maven 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md) 프로덕션 파이프라인에서만 프로젝트 버전을 대체합니다. 따라서 개발 배포 실행과 프로덕션 파이프라인 실행 둘 다에서 동일한 커밋을 사용하고 개발 배포 파이프라인이 먼저 실행되는 경우 버전은 변경되지 않고 스테이지와 프로덕션에 배포됩니다. 그러나 이 경우에도 태그가 생성됩니다.
+* [Maven 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md) 는 프로덕션 파이프라인에서만 프로젝트 버전을 대체합니다. 따라서 개발 배포 실행과 프로덕션 파이프라인 실행 둘 다에서 동일한 커밋을 사용하고 개발 배포 파이프라인이 먼저 실행되는 경우 버전은 변경되지 않고 스테이지와 프로덕션에 배포됩니다. 그러나 이 경우에도 태그가 생성됩니다.
 * 저장된 아티팩트를 검색하지 못하면 아티팩트가 저장되지 않은 것처럼 빌드 단계가 실행됩니다.
 * 다음 이외의 파이프라인 변수 `CM_DISABLE_BUILD_REUSE` Cloud Manager가 이전에 만든 빌드 아티팩트를 다시 사용하기로 결정한 경우에는 고려되지 않습니다.

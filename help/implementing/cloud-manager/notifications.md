@@ -1,39 +1,44 @@
 ---
-title: 알림 - Cloud Service
-description: 알림 - Cloud Service
+title: 알림
+description: Adobe Experience Cloud 알림 시스템을 사용하여 파이프라인 배포에 대한 정보를 받는 방법을 알아봅니다.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 42d4e3bb38e3a7ecb4507d15e2307ed08d752b5c
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
-# 알림 이해 {#notifications}
+# 알림 {#notifications}
 
-[!UICONTROL Cloud ] Manager를 사용하면 프로덕션 배포를 시작할 때 프로덕션 파이프라인이 시작되고 완료(성공 또는 실패)되면 알림을 받을 수 있습니다. 이러한 알림은 Adobe [!UICONTROL Experience Cloud] 알림 시스템을 통해 전송됩니다.
+[!UICONTROL Cloud Manager] 프로덕션 배포 중에 프로덕션 파이프라인이 시작되고 완료되었을 때(성공 또는 실패) 사용자가 알림을 받을 수 있도록 해줍니다.
 
->[!NOTE]
->
->승인 및 예약된 알림은 비즈니스 소유자, 프로그램 관리자 및 배포 관리자 역할의 사용자에게만 전송됩니다.
+이러한 알림은 Adobe을 통해 전송됩니다 [!UICONTROL Experience Cloud] 역할을 가진 사용자에게 알림 시스템 **비즈니스 소유자**, **프로그램 관리자**, 및 **배포 관리자**.
 
-알림은 [!UICONTROL Cloud Manager] UI(사용자 인터페이스)의 사이드바 및 [!UICONTROL Experience Cloud]에 나타납니다.
-![](assets/notify-1.png)
+알림이 [!UICONTROL Cloud Manager] UI 및 Adobe 전체 [!UICONTROL Experience Cloud].
 
-아래 그림과 같이 헤더에서 벨 아이콘을 클릭하여 사이드바를 열고 알림을 확인합니다.
+![메뉴 막대의 알림 아이콘](assets/notify-1.png)
 
-![](assets/notify-2.png)
+새로운 알림이 있으면 벨 아이콘이 배지로 지정됩니다. 아이콘을 클릭하여 패널을 열어 알림을 확인합니다.
 
-사이드바에 가장 최근 알림이 나열됩니다.
+![알림 보기](assets/notify-2.png)
 
+패널에는 최신 알림만 나열됩니다. 클릭 **모두 보기** 패널 하단에 있는 모든 알림을 확인하십시오.
 
-## 전자 메일 알림 {#email-notifications}
+## 이메일 알림 {#email-notifications}
 
-기본적으로 알림은 Adobe [!UICONTROL Experience Cloud] 솔루션 간 웹 사용자 인터페이스에서 사용할 수 있습니다. 개별 사용자는 즉시 또는 다이제스트할 때 이메일을 통해 이러한 알림을 전송하도록 선택할 수도 있습니다.
+기본적으로 Adobe 간 사용자 인터페이스에서 알림을 사용할 수 있습니다 [!UICONTROL Experience Cloud] 솔루션. 개별 사용자는 이러한 단계에 따라 이메일을 통해 이러한 알림을 전송하도록 선택할 수도 있습니다.
 
-이렇게 하면 Adobe [!UICONTROL Experience Cloud]의 알림 환경 설정 화면으로 이동합니다.
+1. 벨 아이콘을 클릭하여 알림을 표시합니다.
+1. 을(를) 클릭합니다. **환경 설정 편집** 알림 패널의 맨 위에 있는 아이콘(톱니바퀴와 같은 모양)입니다.
+1. 열리는 창에서 **알림 을 참조하십시오** 을 클릭합니다.
+   ![환경설정 편집 창](assets/notification-preferences.png)
+1. 아래로 스크롤하여 **이메일** 제목.
+   ![이메일 옵션](assets/email-preferences.png)
+1. 전자 메일을 받을 방법을 선택합니다.
+   * 전자 메일 보내기 안 함(기본값)
+   * 인스턴트 알림
+   * 일별 다이제스트
+   * 주간 다이제스트
 
-사용자는 이메일 알림을 켜고(선택 사항) 이메일을 통해 수신하려는 알림 유형을 선택할 수 있습니다.
-
->[!NOTE]
->Adobe [!UICONTROL Experience Cloud]에서 소화하도록 설정할 수도 있습니다.
+선택한 항목은 저장 또는 적용 단추를 클릭하지 않아도 자동으로 저장됩니다.
