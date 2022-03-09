@@ -3,13 +3,13 @@ title: ' 설치  [!DNL Workfront for Experience Manager enhanced connector]'
 description: ' 설치  [!DNL Workfront for Experience Manager enhanced connector]'
 role: Admin
 feature: Integrations
-source-git-commit: 8ca25f86a8d0d61b40deaff0af85e56e438efbdc
+exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
+source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 0%
+source-wordcount: '554'
+ht-degree: 1%
 
 ---
-
 
 #  설치 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
@@ -42,6 +42,23 @@ ht-degree: 0%
 
 추가 기능을 설치하려면 다음을 수행하십시오 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]다음 단계를 수행합니다.
 
+1. 에서 향상된 커넥터를 다운로드합니다. [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) Cloud Manager에서 AEM as a Cloud Service 저장소를 복제하고
+
+1. 선택한 IDE를 사용하여 복제된 AEM as a Cloud Service 저장소를 엽니다.
+
+1. 1단계에서 다운로드한 향상된 커넥터 zip 파일을 다음 경로에 배치합니다.
+
+   ```TXT
+      /ui.apps/src/main/resources/<zip file>
+   ```
+
+   >[!NOTE]
+   >
+   >만약 `resources` 폴더가 없으므로 폴더를 만듭니다.
+
+
 1. 추가 `pom.xml` 종속성:
 
    1. 상위에 종속성 추가 `pom.xml`.
@@ -51,47 +68,28 @@ ht-degree: 0%
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
+         <scope>system</scope>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
-   1. 모든 모듈에 종속성 추가 [!DNL pom.xml].
+      >[!NOTE]
+      >
+      >종속성을 상위에 복사하기 전에 향상된 커넥터 버전 번호를 업데이트해야 합니다 `pom.xml`.
+
+   1. 에 종속성 추가 `all module pom.xml`.
 
       ```XML
          <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
-1. 추가 `pom.xml` 인증.
-
-   1. adobe-public profile 내의 pom.xml에 아래 저장소 구성을 포함하므로, 커넥터 종속성(위의)은 빌드 시(로컬에서 그리고 Cloud Manager에 의해 모두) 해결될 수 있습니다. 라이센스 구입 시 저장소 액세스를 위한 자격 증명이 제공됩니다. 자격 증명을 서버 섹션의 settings.xml 파일에 추가해야 합니다.
-
-      ```XML
-      <repository>
-         <id>hoodoo-maven</id>
-         <name>Hoodoo Repository</name>
-         <url>https://gitlab.com/api/v4/projects/12715200/packages/maven</url>
-      </repository>
-      ```
-
-   1. 이름이 인 파일 만들기 `./cloudmanager/maven/settings.xml` 를 클릭합니다. 암호로 보호된 Maven 저장소를 지원하려면 다음을 참조하십시오 [프로젝트를 설정하는 방법](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md). 또한, `settings.xml` 참조할 파일입니다. 마지막으로 로컬 업데이트 `settings.xml` 를 컴파일합니다.
-
-      ```XML
-         <server>
-            <id>hoodoo-maven</id>
-            <configuration>
-               <httpHeaders>
-                     <property>
-                        <name>Deploy-Token</name>
-                        <value>xxxxxxxxxxxxxxxx</value>
-                     </property>
-               </httpHeaders>
-            </configuration>
-         </server>
-      ```
 
 1. 추가 `pom.xml` 침대. 추가 [!DNL Workfront for Experience Manager enhanced connector] 패키지 `embeddeds` 섹션 `pom.xml` 모든 하위 프로젝트 모든 모듈에 포함 필요 `pom.xml`.
 
@@ -104,6 +102,12 @@ ht-degree: 0%
       <target>/apps/<path-to-project-install-folder>/install</target>
    </embedded>
    ```
+
+   포함된 섹션의 대상이 `/apps/<path-to-project-install-folder>/install`. 이 JCR 경로 `/apps/<path-to-project-install-folder>` 는 `all/src/main/content/META-INF/vault/filter.xml` 파일. 저장소의 필터 규칙은 일반적으로 프로그램 이름에서 파생됩니다. 기존 규칙의 대상으로 폴더 이름을 사용합니다.
+
+1. 변경 사항을 저장소에 푸시합니다.
+
+1. 다음 대상 파이프라인 실행 [cloud Manager에 변경 사항 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. 시스템 사용자 구성을 만들려면 `wf-workfront-users` in [!DNL Experience Manager] 사용자 그룹 및 권한 할당 `jcr:all` to `/content/dam`. 시스템 사용자 `workfront-tools` 는 자동으로 만들어지며 필요한 권한은 자동으로 관리됩니다. 의 모든 사용자 [!DNL Workfront] 향상된 커넥터를 사용하는 사용자는 자동으로 이 그룹의 일부로 추가됩니다.
 

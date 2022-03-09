@@ -1,15 +1,15 @@
 ---
-title: '"[!DNL Experience Manager Assets] 통합 [!DNL Adobe Workfront]"'
+title: '`[!DNL Experience Manager Assets] 통합 [!DNL Adobe Workfront]`'
 description: 통합 소개 [!DNL Assets] 및 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
+source-git-commit: b6e108296d6786166e482cd8bbd20caa36795f44
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '926'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] [!DNL Assets] 통합 [!DNL Adobe Workfront] {#assets-integration-overview}
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 다음 [!DNL Workfront for Experience Manager enhanced connector] 종단 간 워크플로우를 통해 비즈니스 프로세스를 향상시키고 개인화된 종단 간 클라이언트 경험과 중앙 스토리지를 제공합니다. Adobe은 두 솔루션을 통합하는 표준 커넥터와 향상된 커넥터를 제공합니다. 비교에 대해서는 아래의 지원되는 기능을 참조하고 를 참조하십시오 [의 새로운 기능 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
-[!DNL Workfront for Experience Manage enhanced connector] 조직을 사용하여 다음을 수행할 수 있습니다.
+[!DNL Workfront for Experience Manager enhanced connector] 조직을 사용하여 다음을 수행할 수 있습니다.
 
 * Workfront에서 연결된 Experience Manager 폴더를 자동으로 만들고 Workfront Portfolio, 프로그램 및 프로젝트를 기반으로 폴더를 구성합니다.
 * Workfront 프로젝트 메타데이터를 연결된 Experience Manager 폴더와 동기화합니다.
@@ -32,6 +32,8 @@ ht-degree: 2%
 >Adobe을 사용하려면 [!DNL Adobe Workfront for Experience Manager enhanced connector] 인증된 파트너를 통해 [!DNL Adobe Professional Services]. 인증된 파트너 또는 [!DNL Adobe Professional Services]Adobe에서 지원하지 않습니다.
 >
 >Adobe은 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager] 이렇게 하면 커넥터가 이중화됩니다. 이러한 경우 고객은 이 커넥터를 사용하는 상태에서 전환해야 할 수 있습니다.
+>
+>자세한 내용은 [Experience Manager Assets Enhanced Connector용 Workfront의 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 시험에 관한 정보는 [시험 안내서](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 ## 서로 다른 통합 비교 [!DNL Assets] 및 [!DNL Workfront] {#feature-parity-matrix}
 
