@@ -1,17 +1,17 @@
 ---
 title: 빠른 보기를 사용하여 맞춤형 팝업 제작
-description: 제품 정보와 함께 팝업 창이 표시되어 구매를 유도하는 전자 상거래 경험에서 기본 Quickview가 어떻게 사용되는지 알아보십시오. 팝업 Windows®에 표시할 사용자 지정 콘텐츠를 트리거할 수 있습니다."
+description: 제품 정보와 함께 팝업 창이 표시되어 구매를 유도하는 전자 상거래 경험에서 기본 Quickview가 어떻게 사용되는지 알아보십시오. 사용자 지정 콘텐츠를 트리거하여 팝업 창에 표시할 수 있습니다."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 1%
+source-wordcount: '1002'
+ht-degree: 2%
 
 ---
 
-# Quickview를 사용하여 사용자 지정 팝업 Windows® 만들기 {#using-quickviews-to-create-custom-pop-ups}
+# 빠른 보기를 사용하여 맞춤형 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
 
 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다. 사용하는 뷰어에 따라 고객은 핫스팟이나 축소판 이미지 또는 이미지 맵을 선택하여 정보나 관련 컨텐츠를 볼 수 있습니다.
 
@@ -23,11 +23,11 @@ ht-degree: 1%
 
 각 뷰어의 기능은 다르지만, 빠른 보기를 만드는 프로세스는 지원되는 세 뷰어 모두에서 동일합니다.
 
-**Quickview를 사용하여 사용자 지정 팝업 Windows®를 만들려면:**
+**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면 다음을 수행하십시오.**
 
 1. 업로드된 자산에 대한 빠른 보기를 만듭니다.
 
-   일반적으로 사용 중인 뷰어와 함께 사용할 자산을 편집할 때 빠른 보기를 만듭니다.
+   일반적으로 사용 중인 뷰어와 함께 사용할 자산을 편집하는 것과 동시에 빠른 보기를 만듭니다.
 
    <table>
     <tbody>
