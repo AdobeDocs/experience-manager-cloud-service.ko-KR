@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service Cloud Manager 2022.3.0의 릴
 description: 다음은 AEM as a Cloud Service의 Cloud Manager 2022.3.0에 대한 릴리스 노트입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 0749099acf98b09d0f83bfe86c2cc4558261c029
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 2%
+source-wordcount: '195'
+ht-degree: 3%
 
 ---
 
@@ -25,12 +25,11 @@ AEM as a Cloud Service 10의 Cloud Manager 릴리스 2022.3.0에 대한 릴리�
 
 ## 새로운 기능 {#what-is-new}
 
-* 을 사용하는 사용자 **개발자** 이제 역할이 AEM 환경 로그에 액세스할 수 있습니다.
-* [다음 `reliability_rating` 중요 지표](/help/implementing/cloud-manager/code-quality-testing.md) 이 비활성화되었습니다.
-* 이제 사용자가 **파이프라인** 페이지를 Cloud Manager에 추가합니다.
+* AEM 환경 로그에 액세스하는 작업은 개발자 역할을 사용하여 수행할 수 있습니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 수동으로 만든 Git 리포지토리의 하위 집합에 영향을 받는 잘못된 이름 값이 있습니다 [빌드 아티팩트 재사용 기능입니다.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 이러한 리포지토리의 이름이 변경되었으며 사용자는 Cloud Manager API/UI에서 수정된 이름을 볼 수 있습니다.
-* [코드 품질 파이프라인을 추가하거나 편집할 때](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) a **중요한 지표 실패 동작** 옵션이 더 이상 표시되지 않습니다.
-* 예기치 않은 파이프라인 변수 구성으로 인해 빌드 단계에서 오류가 발생하지 않습니다.
+* 수동으로 만든 Git 리포지토리의 하위 집합에 잘못된 이름 값이 있어서 작성 객체 재사용 기능이 적용되지 않았습니다. 이러한 리포지토리의 이름이 변경되었으며 사용자는 Cloud Manager API/UI에서 수정된 이름을 볼 수 있습니다.
+* 비프로덕션 파이프라인의 빌드 아티팩트가 프로덕션 전체 스택 파이프라인에서 잘못 재사용되었습니다.
+* 코드 품질 파이프라인을 추가하거나 편집할 때 지표 오류를 처리하는 옵션이 더 이상 표시되지 않습니다.
+* 일부 예기치 않은 파이프라인 변수 구성이 빌드 단계에서 발생할 수 있습니다.
