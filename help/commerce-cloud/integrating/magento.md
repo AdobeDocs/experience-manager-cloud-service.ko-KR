@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bc
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 2%
+ht-degree: 12%
 
 ---
 
@@ -20,10 +20,10 @@ Experience Manager 및 Adobe Commerce은 CIF(Commerce Integration Framework)를 
 
 >[!NOTE]
 >
->GraphQL은 현재 Adobe Experience Manager(AEM) as a Cloud Service의 두 가지(별도) 시나리오에서 사용됩니다.
+>GraphQL은 현재 Adobe Experience Manager(AEM) as a Cloud Service의 두 가지 (별도) 시나리오에서 사용됩니다.
 >
 >* 이 시나리오는 CIF가 GraphQL을 통해 상거래와 통신하는 시나리오입니다.
->* [AEM 컨텐츠 조각은 AEM GraphQL API(표준 GraphQL을 기반으로 하는 사용자 정의 구현)와 함께 작동하여 애플리케이션에서 사용할 수 있도록 구조화된 컨텐츠를 제공합니다](/help/headless/graphql-api/content-fragments.md).
+>* [AEM 콘텐츠 조각은 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)와 함께 작동하여 애플리케이션에서 사용할 구조화된 콘텐츠를 제공합니다](/help/headless/graphql-api/content-fragments.md).
 
 
 ## 아키텍처 개요 {#overview}

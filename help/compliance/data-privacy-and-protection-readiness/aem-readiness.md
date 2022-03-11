@@ -3,7 +3,7 @@ title: 데이터 보호 및 데이터 개인정보 보호 규정 - Adobe Experie
 description: EU 일반 데이터 보호 규정(GDPR), 캘리포니아 소비자 개인정보 보호법 및 새 AEM as a Cloud Service 프로젝트 구현 시 이들 규정을 준수하는 방법을 포함하여 다양한 데이터 보호 및 데이터 개인정보 보호 규정에 대한 Adobe Experience Manager as a Cloud Service 지원에 대해 알아봅니다.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Adobe는 고객 개인정보 보호 관리자 또는 AEM 관리자가 데이터 
 >
 >다른 Adobe 온디맨드 서비스의 데이터 및 관련 개인정보 보호 요청은 해당 서비스에 대한 조치가 필요합니다.
 >
->자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/kr/privacy.html)를 참조하십시오.
+>자세한 내용은 [Adobe의 개인정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 ## 소개 {#introduction}
 

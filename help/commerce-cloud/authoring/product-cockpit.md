@@ -1,14 +1,15 @@
 ---
-title: 제품 조종실
+title: 제품 관리실
 description: 제품 조종실 작업
-source-git-commit: 5d7c877c158994048c092f310274c01fd2bedbd1
+exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# 제품 조종실 {#product-cockpit}
+# 제품 관리실 {#product-cockpit}
 
 ## 개요 {#overview}
 

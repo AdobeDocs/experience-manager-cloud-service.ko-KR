@@ -9,7 +9,7 @@ exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
@@ -32,5 +32,5 @@ ht-degree: 1%
 
 ## 제한 사항 {#limitations}
 
-* XFA 기반 응용 Forms에 대한 지원은 즉시 사용할 수 없습니다. XFA 기반 적응형 Forms을 사용하려면 사용 사례 및 특정 요구 사항에 대한 자세한 내용을 보려면 Adobe 지원 센터에 문의하십시오.
+* XFA 기반 적응형 양식에 대한 지원은 즉시 사용할 수 없습니다. XFA 기반 적응형 양식을 사용하려는 경우 Adobe 지원 팀에 문의하여 사용 사례 및 특정 요구 사항에 대해 자세히 알아보십시오.
 

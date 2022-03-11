@@ -143,6 +143,6 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 >[!MORELIKETHIS]
 >
 >* [페이지 생성 및 구성](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-* [자산 메타데이터 일괄적으로 가져오거나 내보냅니다](/help/assets/metadata-import-export.md).
-* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).
+>* [자산 메타데이터 일괄적으로 가져오거나 내보냅니다](/help/assets/metadata-import-export.md).
+>* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).
 

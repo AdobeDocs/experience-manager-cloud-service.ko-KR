@@ -3,13 +3,13 @@ title: 사이트 만들기
 description: 사이트 템플릿을 사용하여 AEM을 사용하여 사이트의 스타일 및 구조를 정의하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 1%
 
 ---
-
 
 # 사이트 만들기 {#creating-site}
 

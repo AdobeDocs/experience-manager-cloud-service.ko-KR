@@ -8,7 +8,7 @@ exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
 source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
 source-wordcount: '2441'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -313,7 +313,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 | 사용자 | 그룹 | 권한 | 사용자 기본 설정에서 Stock 구성 수락 | 자산 액세스 | Adobe Stock 액세스 |
 | --- | --- | --- | --- | --- | --- |
-| admin | N/A | 모든 | 해당 없음 | 예 | 예 |
+| admin | 해당 없음 | 모든 | 해당 없음 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 예 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 아니오 | 오류: 데이터를 로드하지 못했습니다. | 아니오 |
 | test-doc1 | DAM 사용자 | **허용**: /conf/global/settings/stock **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니오 |
@@ -326,7 +326,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 ![검색 대상 [!DNL Adobe Stock] 자산 및 결과의 필터링 [!DNL Adobe Experience Manager] 작업 영역](assets/adobe-stock-search-results-workspace.png)
 
-**A.** 자산을 검색하는 [!DNL Adobe Stock] ID가 제공됩니다. **B.** 선택한 모양 또는 방향과 일치하는 자산을 검색합니다. **C.** 지원되는 자산 유형 중 하나를 검색합니다 **D.** 필터 창을 열거나 축소합니다. **E.** 선택한 자산에 대한 라이선스 및 저장 [!DNL Experience Manager] **F.** 자산 저장 위치 [!DNL Experience Manager] 워터마크 **G.** 에서 자산 탐색 [!DNL Adobe Stock] 선택한 자산과 유사한 웹 사이트 **H.** 에서 선택한 자산 보기 [!DNL Adobe Stock] 웹 사이트 **나.** 검색 결과에서 선택한 자산 수 **J.** 카드 보기와 목록 보기 간 전환
+**A.**[!DNL Adobe Stock] Search assets similar to the assets whose ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager]**F.**[!DNL Experience Manager] Save the asset in with watermark **G.**[!DNL Adobe Stock] Explore assets on website that are similar to the selected asset **H.**[!DNL Adobe Stock] View the selected assets on website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view
 
 ### 자산 찾기 {#find-assets}
 

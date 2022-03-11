@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
 source-wordcount: '3364'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -69,7 +69,7 @@ Blue-Green 배포 패턴으로 인한 응용 프로그램 변경 사항은 스�
 
 예를 들어, 이러한 코드 패키지에 일부 추가 제한이 적용됩니다 [후크 설치](http://jackrabbit.apache.org/filevault/installhooks.html) 지원되지 않습니다.
 
-## OSGI 구성 {#osgi-configuration}
+## OSGi 구성 {#osgi-configuration}
 
 위에서 언급했듯이 OSGI 구성은 웹 콘솔을 통해서가 아니라 소스 제어에 커밋되어야 합니다. 다음과 같은 방법을 사용합니다.
 
@@ -171,7 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="패키지 관리자 - 가변 컨텐츠 패키지 마이그레이션"
 >abstract="프로덕션 문제를 디버깅하기 위해 프로덕션 환경에서 스테이징으로 특정 콘텐츠를 가져오는 작업, 온-프레미스 환경에서 AEM 클라우드 환경으로 작은 컨텐츠 패키지를 전송하는 작업 등을 포함하는 컨텐츠 패키지를 설치해야 하는 사용 사례에 대해 패키지 관리자의 사용을 탐색합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="컨텐츠 전송 도구"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="콘텐츠 전송 도구"
 
 컨텐츠 패키지를 &quot;일회성&quot;으로 설치해야 하는 사용 사례가 있습니다. 예를 들어 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오는 경우가 있습니다. 이러한 시나리오에서는 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) AEM as a Cloud Service 환경에서 사용할 수 있습니다.
 
@@ -206,7 +206,7 @@ Cloud Manager를 통해 설치된 모든 컨텐츠 패키지(변경할 수 있�
 
 포함된 타사 패키지는 이 문서에 설명된 AEM as a Cloud Service 서비스 코딩 및 패키징 지침을 따라야 하며, 그렇지 않으면 포함 시 배포 오류가 발생합니다.
 
-다음 Maven POM XML 코드 조각은 일반적으로 이름이 인 프로젝트의 &quot;컨테이너&quot; 패키지에 타사 패키지를 임베드하는 방법을 보여줍니다 **&#39;all&#39;**&#x200B;를 통해 **filervault-package-maven-plugin** Maven 플러그인 구성.
+The following Maven POM XML snippet shows how 3rd party packages can be embedded in the project&#39;s &quot;Container&quot; package, typically named **&#39;all&#39;**, via the **filevault-package-maven-plugin** Maven plugin configuration.
 
 ```
 ...
@@ -287,7 +287,7 @@ Cloud Ready AEM 빠른 시작을 사용하여 복제를 개발하고 테스트�
 
 구축 후 오류를 보고하거나 감지하면 파란색 버전으로 롤백해야 할 수 있습니다. 새로운 구조(가변 컨텐츠 컨텐츠 컨텐츠)가 롤백되지 않으므로 파란색 코드가 녹색 버전에서 만든 모든 새 구조와 호환되는지 확인하는 것이 좋습니다. 이전 코드가 호환하지 않는 경우, 후속 고객 릴리스에서 수정 사항을 적용해야 합니다.
 
-## 런타임 모드 {#runmodes}
+## 실행 모드 {#runmodes}
 
 기존 AEM 솔루션에서는 고객이 임의 실행 모드로 인스턴스를 실행하고 OSGI 구성을 적용하거나 특정 인스턴스에 OSGI 번들을 설치할 수 있습니다. 일반적으로 정의된 실행 모드에는 *서비스* (작성 및 게시) 및 환경(dev, stage, prod)
 

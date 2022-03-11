@@ -3,7 +3,7 @@ title: 에셋 폴더 만들기 - Headless 설정
 description: AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다. 그런 다음 콘텐츠 조각은 에셋 폴더에 저장됩니다.
 
-## 에셋 폴더란 무엇입니까? {#what-is-an-assets-folder}
+##  에셋 폴더란 무엇입니까? {#what-is-an-assets-folder}
 
 미래의 콘텐츠 조각을 위해 원하는 구조를 정의하는 [콘텐츠 조각 모델을 만들었으므로](create-content-model.md) 이제 일부 조각을 만들고 싶을 것입니다.
 

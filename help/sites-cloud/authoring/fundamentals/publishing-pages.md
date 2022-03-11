@@ -19,7 +19,7 @@ ht-degree: 82%
 
 ## 용어 {#terminology}
 
-AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 게시와 관련된 다양한 용어가 있을 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service에서 작업할 때 게시와 관련된 다양한 용어가 있을 수 있습니다.
 
 * **게시/게시 취소**
    * 이 용어는 컨텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
@@ -35,7 +35,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
 다음 위치에 따라 게시할 수 있습니다.
 
-* [페이지 편집기에서](#publishing-from-the-editor)
+* [From the page editor](#publishing-from-the-editor)
 * [사이트 콘솔에서](#publishing-from-the-console)
 
 >[!NOTE]
@@ -49,7 +49,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
 >[!NOTE]
 >
-> 추가 가능성에 대해서는 페이지 속성의 [기본 탭에서 **On Time** 및 **Off Time**&#x200B;을 참조하십시오](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> 추가 가능성에 대해서는 **시간** 및 **해제 시간** 에서 [페이지 속성의 기본 탭](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### 편집기에서 게시 {#publishing-from-the-editor}
 
@@ -82,7 +82,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
 >[!NOTE]
 >
->편집기에서 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)이 액세스하는 페이지를 게시할 수 없습니다. 편집기의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
+>사용자가 액세스한 페이지 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 편집기에서 게시할 수 없습니다. 편집기의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
 
 ### 콘솔에서 게시 {#publishing-from-the-console}
 
@@ -113,7 +113,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
 #### 게시 관리 {#manage-publication}
 
-**게시** 관리 **는**&#x200B;빠른 게시보다 많은 옵션을 제공하여 하위 페이지, 참조의 사용자 지정, 적용 가능한 워크플로우 시작뿐 아니라 나중에 게시할 수 있는 옵션이 포함되어 있습니다.
+**게시 관리** 보다 많은 옵션을 제공합니다. **빠른 게시**&#x200B;를 사용하면 하위 페이지, 참조의 사용자 지정, 적용 가능한 워크플로우 시작뿐 아니라 나중에 게시할 수 있는 옵션이 포함되어 있습니다.
 
 게시 관리를 사용하여 페이지를 게시 또는 게시 취소하려면 다음을 수행하십시오.
 
@@ -148,9 +148,9 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
    게시 관리 마법사를 시작하기 전에 선택하지 않은 경우 **컨텐츠 추가** 단추를 사용하여 게시할 페이지 목록에 페이지를 추가할 수 있습니다.
 
-   **컨텐츠 추가** 단추를 선택하면 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
+   선택 **컨텐츠 추가** 버튼이 시작됨 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 을 클릭하여 콘텐츠를 선택할 수 있습니다.
 
-   필요한 페이지를 선택한 다음 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**&#x200B;를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
+   필요한 페이지를 선택한 다음 를 클릭합니다 **선택** 컨텐츠를 마법사에 추가하려면 **취소** 선택 항목을 취소하고 마법사로 돌아갑니다.
 
    **선택 제거**
 
@@ -176,16 +176,16 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
    >[!NOTE]
    >
-   >[트리 게시 및 게시 취소](#publishing-and-unpublishing-a-tree)를 참조하십시오
+   >자세한 내용은 [트리 게시 및 게시 취소](#publishing-and-unpublishing-a-tree)
 
-   **하위 포함**&#x200B;을 클릭하면 대화 상자가 열려 다음 작업을 수행할 수 있습니다.
+   클릭 **하위 포함** 다음을 수행할 수 있는 대화 상자를 엽니다.
 
    * **하위 항목 포함**
    * **바로 아래 하위만 포함**
    * **수정된 페이지만 포함**
    * **이미 게시된 페이지만 포함**
 
-   필요한 옵션을 활성화하고 **확인**&#x200B;으로 확인하여 선택 옵션에 따라 게시하거나 게시 취소할 페이지 목록에 하위 페이지를 추가합니다. **취소**&#x200B;를 클릭하여 선택 항목을 취소하고 마법사로 돌아갑니다.
+   필요한 옵션을 활성화하고 를 확인합니다. **확인** 선택 옵션에 따라 게시하거나 게시 취소할 페이지 목록에 하위 페이지를 추가합니다. **취소**&#x200B;를 클릭하여 선택 항목을 취소하고 마법사로 돌아갑니다.
 
    ![하위 항목을 포함한 게시 관리](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
@@ -224,7 +224,7 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
 >[!NOTE]
 >
->편집기에서 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)이 액세스하는 페이지는 게시 취소할 수 없습니다. 편집기의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
+>사용자가 액세스한 페이지 [별칭](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 편집기에서 게시를 취소할 수 없습니다. 편집기의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
 
 ### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
 
@@ -257,18 +257,18 @@ AEM(Adobe Experience Manager)을 Cloud Service으로 사용하여 작업할 때 
 
    ![게시 관리 페이지 선택](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. **하위 포함** 대화 상자에서 다음을 수행합니다.
+1. 에서 **하위 포함** 대화 상자:
 
-   * **하위 포함** 선택
-   * **바로 아래 하위만 포함** 선택 취소
-   * **이미 게시된 페이지만 포함 취소**
-   * 필요에 따라 **수정된 페이지만 포함**
+   * 선택 **하위 포함**
+   * 선택 취소 **바로 아래 하위만 포함**
+   * 선택 취소 **이미 게시된 페이지만 포함**
+   * 구성 **수정된 페이지만 포함** 필요에 따라
 
-   이러한 옵션은 기본적으로 선택되어 있으므로 구성해야 합니다. **OK**&#x200B;로 선택 내용을 확인하여 게시/게시 취소할 컨텐츠를 추가합니다.
+   이러한 옵션은 기본적으로 선택되어 있으므로 구성해야 합니다. 다음 방법으로 선택 내용을 확인합니다. **확인** 게시/게시 취소할 컨텐츠를 추가합니다.
 
    ![트리 게시용 하위 포함](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. **게시 관리** 마법사에서 페이지를 추가하거나 선택한 페이지를 제거하여 선택 사항을 추가로 사용자 지정할 수 있습니다.
+1. 에서 **게시 관리** 마법사 페이지를 추가하거나 선택한 페이지를 제거하여 선택 사항을 추가로 사용자 지정할 수 있습니다.
 
    **게시된 참조** 옵션을 통해 게시되는 참조 자료도 검토할 수 있습니다.
 

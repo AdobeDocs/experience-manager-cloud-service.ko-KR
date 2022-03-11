@@ -1,5 +1,5 @@
 ---
-title: 타깃팅된 컨텐츠에 대한 다중 사이트 관리 구성 방식
+title: 대상 콘텐츠에 대한 다중 사이트 관리 구성 방식
 description: 다이어그램은 타깃팅된 컨텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여줍니다.
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
@@ -9,11 +9,11 @@ ht-degree: 86%
 
 ---
 
-# 타깃팅된 컨텐츠에 대한 다중 사이트 관리 구성 방식 {#how-multisite-management-for-targeted-content-is-structured}
+# 대상 콘텐츠에 대한 다중 사이트 관리 구성 방식 {#how-multisite-management-for-targeted-content-is-structured}
 
 다음 다이어그램은 타깃팅된 컨텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여줍니다.
 
-영역은 **/content/campaigns/&lt;brand>** 아래에 표시되며, 기본적으로 각 브랜드에는 자동으로 만들어지는 마스터 영역이 있습니다. 각 영역에는 영역만의 활동, 경험 및 오퍼 세트가 있습니다.
+영역은 아래에 나타납니다 **/content/campaigns/&lt;brand>** 기본적으로 각 브랜드에는 자동으로 만들어지는 마스터 영역이 있습니다. 각 영역에는 영역만의 활동, 경험 및 오퍼 세트가 있습니다.
 
 ![다중 사이트 구조](/help/sites-cloud/authoring/assets/multisite-structure.png)
 

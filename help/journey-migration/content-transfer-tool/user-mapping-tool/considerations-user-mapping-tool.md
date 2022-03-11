@@ -1,13 +1,13 @@
 ---
 title: 사용자 매핑 도구에 대한 중요한 고려 사항
 description: 사용자 매핑 도구에 대한 중요한 고려 사항
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 매핑 도구에 대한 중요한 고려 사항 {#important-considerations}
 

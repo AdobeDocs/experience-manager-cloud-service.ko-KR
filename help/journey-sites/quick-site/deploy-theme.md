@@ -1,13 +1,13 @@
 ---
 title: 사용자 지정 테마 배포
 description: 파이프라인을 사용하여 사이트 테마를 배포하는 방법을 알아봅니다.
-source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
+exl-id: fe065972-39db-4074-a802-85895c701efd
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 1%
 
 ---
-
 
 # 사용자 지정 테마 배포 {#deploy-your-customized-theme}
 

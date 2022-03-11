@@ -1,10 +1,11 @@
 ---
 title: CIF 작성 시작하기
 description: CIF 작성 시작하기
-source-git-commit: e497b5b4439cf91ec7ea698d9bedcb4210802414
+exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -62,7 +63,7 @@ CIF는 범용 편집기를 확장하여 컨텍스트를 종료하지 않고 실�
 왼쪽의 카탈로그 구조를 탐색하고 범주를 선택합니다.
 ![카테고리 선택기](assets/category-picker-folders.png)
 
-## 제품 조종실 {#cockpit}
+## 제품 관리실 {#cockpit}
 
 제품 조종실은 풍부한 모든 콘텐츠와 함께 제품 카탈로그에 빠르게 액세스할 수 있는 중앙 장소입니다. 다음 모듈 중 하나에서 컨텐츠로 제품 데이터를 보강하는 방법을 학습합니다. 이제 제품 데이터에 액세스하는 데 주력해 보겠습니다.
 

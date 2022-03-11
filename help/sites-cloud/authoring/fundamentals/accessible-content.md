@@ -9,7 +9,7 @@ ht-degree: 99%
 
 ---
 
-# 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성) {#creating-accessible-content-wcag-conformance}
+# 액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성) {#creating-accessible-content-wcag-conformance}
 
 [WCAG(Web Content Accessibility Guidelines) 2.1](https://www.w3.org/TR/WCAG/)은 [World Wide Wec Consortium의 작업 그룹](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group)이 작성한 것으로, 장애가 있는 사용자가 웹 컨텐츠에 액세스하고 사용할 수 있도록 하는 데 도움이 되는 기술 독립적인 지침 집합 및 성공 기준으로 구성되어 있습니다.
 
@@ -30,9 +30,9 @@ ht-degree: 99%
 
 이러한 적합성 수준에 따라 레벨 A(가장 낮음), 레벨 AA 및 레벨 AAA(가장 높음)로 지침의 등급이 지정됩니다. 이러한 등급을 간단히 정의하면 다음과 같습니다.
 
-* **레벨 A:** 사이트가 기본적인 최소 액세서빌러티 수준에 도달합니다. 이 수준을 충족하려면, 모든 레벨 A 성공 기준을 만족시켜야 합니다.
-* **레벨 AA:** 추구할만한 이상적인 액세서빌러티 수준으로서, 사이트는 대부분의 기술을 사용하여 대부분의 상황에서 대부분의 사람에게 액세스할 수 있도록 기본 액세서빌러티 수준에 도달합니다. 이 수준을 충족하려면, 모든 레벨 A 및 레벨 AA 성공 기준을 만족시켜야 합니다.
-* **레벨 AAA:** 사이트가 매우 높은 액세서빌러티 수준에 도달합니다. 이 수준을 충족하려면, 모든 레벨 A, 레벨 AA 및 레벨 AAA 성공 기준을 만족시켜야 합니다.
+* **Level A:** Your site reaches a basic, minimum level of accessibility. To meet this level, all Level A Success Criteria are satisfied.
+* **레벨 AA:** 추구할만한 이상적인 액세서빌러티 수준으로서, 사이트는 대부분의 기술을 사용하여 대부분의 상황에서 대부분의 사람에게 액세스할 수 있도록 기본 액세서빌러티 수준에 도달합니다. To meet this level, all Level A and Level AA Success Criteria are satisfied.
+* **Level AAA:** Your site reaches a very high level of accessibility. To meet this level, all Level A, Level AA and Level AAA Success Criteria are satisfied.
 
 사이트를 만들 때에는 사이트가 따라야 할 전반적인 수준을 결정해야 합니다.
 
@@ -319,7 +319,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 
 해당되는 경우 다음 요소를 사용하여 웹 페이지에 적절한 구조가 지정되어 있는지 확인할 수 있습니다.
 
-* **머리글:** RTE의 액세서빌러티 기능이 활성화되어 있는 한 AEM에서는 3가지 수준의 페이지 머리글을 제공합니다. 이러한 머리글을 사용하여 컨텐츠의 섹션과 하위 섹션을 식별할 수 있습니다. 머리글 1은 머리글 중 가장 높은 수준이며, 머리글 3은 가장 낮은 수준입니다. 시스템 관리자는 더 많은 머리글 수준 사용을 허용하도록 시스템을 구성할 수 있습니다.
+* **머리글:** RTE의 액세서빌러티 기능이 활성화되어 있는 한 AEM에서는 3가지 수준의 페이지 머리글을 제공합니다. You can use these to identify sections and subsections of content. Heading 1 is the highest level of heading, Heading 3 the lowest. The system administrator can configure the system to allow the use of more heading levels.
 
 * **목록**: HTML을 사용하여 세 가지 서로 다른 유형의 목록을 지정할 수 있습니다.
    * `<ul>` 요소는 *무순서*(글머리 기호) 목록에 사용됩니다. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다. RTE에서는 **글머리 기호 목록** 아이콘을 사용하십시오.
@@ -327,7 +327,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 
    기존 컨텐츠를 특정 목록 유형으로 변경하려면, 적절한 텍스트를 강조 표시하고 적절한 목록 유형을 선택하십시오. 단락 텍스트가 어떻게 입력되는지를 보여주는 앞의 예에서처럼, 적절한 목록 요소가 HTML에 자동으로 추가됩니다.
 
-   전체 화면 모드에서는 개별 **글머리 기호 목록** 및 **번호 목록** 아이콘이 표시됩니다. 전체 화면 모드가 아닐 때는 단일 **목록** 아이콘 뒤에서 두 가지 옵션을 사용할 수 있습니다.
+   전체 화면 모드에서는 개별 **글머리 기호 목록** 및 **번호 목록** 아이콘이 표시됩니다. When not in full screen mode, the two options are available behind the single **Lists** icon.
 
 * **표**: 데이터 표는 HTML 표 요소를 사용하여 식별해야 합니다.
    * 하나의 `<table>` 요소
@@ -348,7 +348,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
    **표 속성** 탭을 선택할 수 있는 **표** 대화 상자를 열려면:
 
    * 적합한 **캡션**&#x200B;을 정의합니다.
-   * **폭**, **높이**, **테두리**, **셀 패딩**, **셀 간격** 속성은 전역 스타일 시트에서 설정할 수 있으므로 이러한 속성의 기본값 중 어느 것이든 얼마든지 제거하십시오.
+   * Ideally remove any default values for **Width**, **Height**, **Border**, **Cell padding**, **Cell spacing**. as these properties can be set in a global style sheet.
 
    그런 다음 **셀 속성**&#x200B;을 사용하여 셀이 데이터인지 또는 머리글 셀인지 여부를 선택할 수 있습니다.
 
@@ -365,7 +365,6 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 
       >
       >이러한 요소는 효과가 동일하지만 `<strong>`과 `<em>`이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 `<strong>`과 `<em>`(`<b>`와 `<i>` 대신)을 사용하도록 RTE를 구성할 수 있습니다.
-
 
 * **복잡한 데이터 표**: 때에 따라 두 개 이상의 헤더 수준이 있는 복잡한 표가 있을 때 기본 표 속성이 모든 필요한 구조적 정보를 제공하기에 충분하지 않을 수 있습니다. 이러한 종류의 복잡한 표의 경우, **header** 및 **id** 특성을 사용하여 헤더와 헤더 관련 셀 간에 직접적인 관계를 만들어야 합니다.
 
@@ -1212,7 +1211,7 @@ WKND 프로젝트에서 **라디오 그룹**&#x200B;과 같은 관련 컨트롤 
 
 데이터를 특정 형식으로 입력해야 하는 경우 레이블 텍스트에서 이를 분명히 하십시오. 예를 들어, 날짜를 `DD-MM-YYYY` 형식으로 입력해야 하는 경우, 특히 레이블 일부로 이 형식을 표현하십시오. 이는 스크린 리더 사용자가 해당 필드를 만나면 형식에 대한 추가 정보와 함께 레이블을 자동으로 알림을 의미합니다.
 
-양식 필드에 대한 입력이 필수일 경우, 필요한 단어를 레이블의 일부로 사용하여 이를 명확히 하십시오. AEM에서는 필드가 필수이면 별표를 추가하지만, 레이블 자체에 `required` 라는 단어를 포함하는 것이 좋을 것입니다(편집 대화 상자의 **제목** 필드).
+If input for a form field is mandatory, make this clear by using the word required as part of the label. AEM에서는 필드가 필수이면 별표를 추가하지만, 레이블 자체에 `required` 라는 단어를 포함하는 것이 좋을 것입니다(편집 대화 상자의 **제목** 필드).
 
 레이블의 위치 지정은 적절한 필드를 찾는 데 도움이 되므로 역시 중요하며 복잡한 양식이 있을 때 특히 중요합니다. 다음 규칙을 따르십시오.
 

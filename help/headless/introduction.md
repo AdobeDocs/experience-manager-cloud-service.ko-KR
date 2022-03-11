@@ -4,7 +4,7 @@ description: AEM(Adobe Experience Manager) Headless 자가 진단 리소스 및 
 landing-page-description: Experience Manager Headless as a Cloud Service를 사용하고 관리하는 방법을 이해합니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 100%
 

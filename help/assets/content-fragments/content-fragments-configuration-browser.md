@@ -7,7 +7,7 @@ exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -54,7 +54,7 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
    1. **제목**&#x200B;을 지정합니다.
    1. 사용을 활성화하려면 를 선택합니다
       * **콘텐츠 조각 모델**
-      * **GraphQL 영구 쿼리**
+      * **GraphQL 지속 쿼리**
 
       ![구성 정의](assets/cfm-conf-01.png)
 

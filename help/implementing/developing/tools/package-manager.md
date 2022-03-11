@@ -1,17 +1,17 @@
 ---
-title: 설치할 수 있습니다
+title: 패키지 관리자
 description: AEM의 기본 사항을 알아봅니다. 패키지 관리자를 사용한 패키지 관리.
 feature: Administering
 role: Admin
-source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
+exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '3584'
 ht-degree: 1%
 
 ---
 
-
-# 설치할 수 있습니다 {#working-with-packages}
+# 패키지 관리자 {#working-with-packages}
 
 패키지를 사용하면 저장소 컨텐츠를 가져오고 내보낼 수 있습니다. 패키지를 사용하여 새 컨텐츠를 설치하고 인스턴스 간에 컨텐츠를 전송하며 저장소 컨텐츠를 백업할 수 있습니다.
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service 애플리케이션용으로 생성된 컨텐츠 패키지
 
 AEMaaCS용 패키지를 관리하는 방법에 대한 자세한 내용은 문서를 검토하십시오 [AEM에 배포 as a Cloud Service](/help/implementing/deploying/overview.md) 배포 사용 안내서에서 을 참조하십시오.
 
-## 설치할 수 있습니다 {#package-manager}
+## 패키지 관리자 {#package-manager}
 
 패키지 관리자는 AEM 설치 시 패키지를 관리합니다. 그러고 나면 [필요한 권한이 지정됨](#permissions-needed-for-using-the-package-manager) 패키지 구성, 빌드, 다운로드 및 패키지 설치 등 다양한 작업에 패키지 관리자를 사용할 수 있습니다.
 

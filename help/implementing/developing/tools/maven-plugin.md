@@ -129,7 +129,7 @@ AEM 인스턴스에 이미 정의된 컨텐츠 패키지를 만듭니다.
 | `project` | `org.apache.maven.project.MavenProject` | 예 | 플러그인이 구성된 프로젝트 | 프로젝트에 플러그인 구성이 포함되어 있으므로 암시적 Maven 프로젝트 |
 | `repositoryId` (POM), `repoID` (명령줄) | `String` | 아니오 | `temp` | 아티팩트가 검색되는 저장소의 ID입니다 |
 | `repositoryUrl` (POM), `repoURL` (명령줄) | `String` | 아니오 | 없음 | 아티팩트가 검색되는 저장소의 URL입니다 |
-| 버전 | String | 아니오 | 없음 | 설치할 아티팩트 버전 |
+| 버전 | 문자열 | 아니오 | 없음 | 설치할 아티팩트 버전 |
 
 ### ls {#ls}
 

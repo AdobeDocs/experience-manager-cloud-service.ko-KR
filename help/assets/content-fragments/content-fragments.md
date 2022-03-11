@@ -7,7 +7,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
 workflow-type: tm+mt
 source-wordcount: '2033'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -53,7 +53,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >* [컨텐츠 조각 사용자 지정 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [컨텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API의 컨텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [컨텐츠 조각에 사용할 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+>* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 
 통신 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
@@ -295,8 +295,8 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 WKND 프로젝트에는 다음이 포함되어 있습니다.
 
-* 컨텐츠 조각 모델은 다음 위치에서 사용할 수 있습니다.
+* 콘텐츠 조각 모델은 다음에서 사용할 수 있습니다.
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* 컨텐츠 조각(및 기타 컨텐츠)은 다음 위치에서 사용할 수 있습니다.
+* 콘텐츠 조각(및 기타 콘텐츠)은 다음에서 사용할 수 있습니다.
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`

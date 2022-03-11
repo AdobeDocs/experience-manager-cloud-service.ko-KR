@@ -1,13 +1,13 @@
 ---
 title: 프런트엔드 개발자에게 액세스 권한 부여
 description: 프런트 엔드 개발자를 Cloud Manager에 온보딩하여 AEM 사이트 git 리포지토리 및 파이프라인에 액세스할 수 있습니다.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
 
 ---
-
 
 # 프런트엔드 개발자에게 액세스 권한 부여 {#grant-fed-access}
 
@@ -105,5 +105,3 @@ Cloud Manager에 대한 액세스 권한을 부여하고 사용자 역할을 사
 문서를 검토하여 빠른 사이트 만들기 여정의 다음 부분으로 이동하는 것이 좋습니다 [프런트엔드 개발자 자격 증명 검색,](retrieve-access.md) 다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 여정을 계속 진행할 필요는 없습니다.
 
 * [온보딩 여정](/help/journey-onboarding/home.md) - 이 안내서는 AEM as a Cloud Service에 대한 액세스 및 팀 설정을 위한 시작점 역할을 합니다.
-
-

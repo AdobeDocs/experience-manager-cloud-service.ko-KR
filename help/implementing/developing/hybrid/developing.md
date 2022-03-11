@@ -15,18 +15,18 @@ SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭
 
 이 문서에서는 프런트엔드 개발자에게 AEM for SPA을 개발하도록 권유할 때 고려해야 할 중요한 질문을 제시하며 AEM에서 SPA 배포과 관련된 AEM 아키텍처에 대한 개요를 제공합니다.
 
-## AEM {#spa-development-principles-for-aem}에 대한 SPA 개발 원칙
+## AEM 개발 원칙 {#spa-development-principles-for-aem}
 
-AEM에서 단일 페이지 애플리케이션을 개발하는 경우 프런트 엔드 개발자는 SPA을 만들 때 표준 우수 사례를 관찰한다고 가정합니다. 프런트 엔드 개발자로서 이러한 일반 모범 사례와 몇 가지 AEM 관련 원칙을 따르는 경우 SPA은 [AEM 및 해당 컨텐츠 작성 기능](introduction.md#content-editing-experience-with-spa)에서 사용할 수 있습니다.
+AEM에서 단일 페이지 애플리케이션을 개발하는 경우 프런트 엔드 개발자는 SPA을 만들 때 표준 우수 사례를 관찰한다고 가정합니다. 프런트 엔드 개발자로서 이러한 일반 모범 사례와 AEM 관련 원칙을 따르는 경우 SPA은 [AEM 및 컨텐츠 작성 기능](introduction.md#content-editing-experience-with-spa).
 
-* **[휴대성](#portability)**  - 모든 구성 요소와 마찬가지로 구성 요소를 최대한 휴대할 수 있도록 제작해야 합니다. SPA은 휴대용 및 재사용 가능한 구성 요소로 구축되어야 합니다.
-* **[AEM 드라이브 사이트 구조](#aem-drives-site-structure)**  - 프런트 엔드 개발자는 구성 요소를 만들고 내부 구조를 소유하지만, AEM을 사용하여 사이트의 컨텐츠 구조를 정의합니다.
-* **[동적 렌더링](#dynamic-rendering)**  - 모든 렌더링은 동적이여야 합니다.
-* **[동적 라우팅](#dynamic-routing)**  - SPA은 공정순서를 담당하고 AEM은 공정순서를 수신하여 그에 따라 가져옵니다. 모든 라우팅도 동적이여야 합니다.
+* **[휴대성](#portability)** - 모든 컴포넌트와 마찬가지로 가능한 한 휴대할 수 있도록 제작하여야 한다. SPA은 휴대용 및 재사용 가능한 구성 요소로 구축되어야 합니다.
+* **[AEM 드라이브 사이트 구조](#aem-drives-site-structure)** - 프런트 엔드 개발자는 구성 요소를 만들고 내부 구조를 소유하지만, AEM을 사용하여 사이트의 컨텐츠 구조를 정의합니다.
+* **[동적 렌더링](#dynamic-rendering)** - 모든 렌더링은 동적이여야 합니다.
+* **[동적 라우팅](#dynamic-routing)** - SPA은 라우팅을 담당하고 AEM은 이를 바탕으로 라우팅을 수신합니다. 모든 라우팅도 동적이여야 합니다.
 
 SPA을 개발할 때 이러한 원칙을 염두에 두는 경우 지원되는 모든 AEM 작성 기능을 활성화하면서 가능한 한 유연하고 향후 증거입니다.
 
-AEM 작성 기능을 지원하지 않아도 되는 경우 다른 [SPA 디자인 모델](#spa-design-models)을 고려해야 할 수 있습니다.
+AEM 작성 기능을 지원하지 않아도 되는 경우 다른 기능을 고려해야 할 수 있습니다 [SPA 디자인 모델](#spa-design-models).
 
 ### 휴대성 {#portability}
 
@@ -44,21 +44,21 @@ AEM 작성 기능을 지원하지 않아도 되는 경우 다른 [SPA 디자인 
 
 SPA은 컨텐츠의 동적 렌더링만 사용해야 합니다. 이는 AEM이 컨텐츠 구조의 모든 하위 항목을 가져오고 렌더링하는 기본 예측입니다.
 
-특정 컨텐츠를 가리키는 명시적 렌더링은 정적 렌더링으로 간주되지만 지원되는 것은 AEM 컨텐츠 작성 기능과 호환되지 않습니다. 이는 [이식성](#portability)의 원칙과도 어긋납니다.
+특정 컨텐츠를 가리키는 명시적 렌더링은 정적 렌더링으로 간주되지만 지원되는 것은 AEM 컨텐츠 작성 기능과 호환되지 않습니다. 이는 또한 [휴대성](#portability).
 
 ### 동적 라우팅 {#dynamic-routing}
 
-렌더링과 마찬가지로 모든 라우팅도 동적이여야 합니다. AEM에서 [SPA은 항상 라우팅](routing.md)을 소유해야 하며 AEM이 이 라우트를 수신하고 이를 기반으로 컨텐츠를 가져옵니다.
+렌더링과 마찬가지로 모든 라우팅도 동적이여야 합니다. AEM에서, [SPA은 항상 라우팅을 소유해야 합니다](routing.md) 그리고 AEM은 이 정보를 듣고 이를 기반으로 컨텐츠를 가져옵니다.
 
-모든 정적 라우팅은 [휴대성](#portability)의 원칙에 따라 작동하며 AEM의 컨텐츠 작성 기능과 호환되지 않아 작성자를 제한합니다. 예를 들어 정적 라우팅을 사용하여 컨텐츠 작성자가 경로를 변경하거나 페이지를 변경하려면 프런트 엔드 개발자에게 경로 지정을 요청해야 합니다.
+모든 정적 라우팅은 [휴대성의 원리](#portability) 및 는 AEM의 컨텐츠 작성 기능과 호환되지 않으므로 작성자를 제한합니다. 예를 들어 정적 라우팅을 사용하여 컨텐츠 작성자가 경로를 변경하거나 페이지를 변경하려면 프런트 엔드 개발자에게 경로 지정을 요청해야 합니다.
 
-## AEM 프로젝트 전형 {#aem-project-archetype}
+## AEM Project Archetype {#aem-project-archetype}
 
-모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html): React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다.
 
 ## SPA 디자인 모델 {#spa-design-models}
 
-AEM](#spa-development-principles-for-aem)에서 SPA을 개발하는 [의 원칙을 따를 경우 SPA은 지원되는 모든 AEM 컨텐츠 작성 기능과 함께 작동합니다.
+만약 [AEM에서 SPA 개발 원칙](#spa-development-principles-for-aem) 을 수행하면 SPA이 지원되는 모든 AEM 컨텐츠 작성 기능과 함께 작동합니다.
 
 그러나 이것이 완전히 필요하지 않은 경우도 있을 수 있습니다. 다음 표에서는 다양한 디자인 모델, 그 이점 및 그 단점에 대해 간략하게 설명합니다.
 
@@ -70,7 +70,7 @@ AEM](#spa-development-principles-for-aem)에서 SPA을 개발하는 [의 원칙�
    <th><strong>단점</strong></th>
   </tr>
   <tr>
-   <td>AEM은 <a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK 프레임워크를 사용하지 않고 헤드리스 CMS로 사용됩니다.</a></td>
+   <td>AEM은 를 사용하지 않고 경험 없는 CMS로 사용됩니다 <a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK 프레임워크.</a></td>
    <td>프런트 엔드 개발자는 앱을 완벽하게 제어할 수 있습니다.</td>
    <td><p>컨텐츠 작성자는 AEM 컨텐츠 작성 환경을 활용할 수 없습니다.</p> <p>이 코드가 정적 참조나 라우팅이 포함된 경우 휴대형 또는 재사용할 수 없습니다.</p> <p>템플릿 편집기를 사용할 수 없으므로 프런트 엔드 개발자는 JCR을 통해 편집 가능한 템플릿을 유지 관리해야 합니다.</p> </td>
   </tr>
@@ -89,11 +89,11 @@ AEM](#spa-development-principles-for-aem)에서 SPA을 개발하는 [의 원칙�
 
 >[!NOTE]
 >
->모든 모델은 AEM에서 지원되지만, 세 번째(및 이에 따라 AEM](#spa-development-principles-for-aem)에서 권장되는 [SPA 개발 원칙을 따르는 경우에만 컨텐츠 작성자는 익숙해진 대로 AEM에서 SPA의 컨텐츠와 상호 작용하고 편집할 수 있습니다.
+>모든 모델은 AEM에서 지원되지만, 세 번째 모델을 구현하기만 하면 됩니다(따라서 권장되는 [AEM의 SPA 개발 원칙](#spa-development-principles-for-aem))를 사용하면 컨텐츠 작성자가 익숙한 대로 AEM에서 SPA 컨텐츠를 상호 작용하고 편집할 수 있습니다.
 
-## 기존 SPA을 AEM {#migrating-existing-spas-to-aem}으로 마이그레이션
+## 기존 SPA에서 AEM으로 마이그레이션 {#migrating-existing-spas-to-aem}
 
-일반적으로 SPA이 AEM](#spa-development-principles-for-aem)SPA 개발 원칙을 따르는 경우, SPA은 AEM에서 작동하며 AEM SPA 편집기를 사용하여 편집할 수 있습니다.[
+일반적으로 SPA이 [AEM 개발 원칙](#spa-development-principles-for-aem)로 설정되면 SPA은 AEM에서 작동하며 AEM SPA 편집기를 사용하여 편집할 수 있습니다.
 
 다음 단계에 따라 기존 SPA에서 AEM을 사용할 수 있습니다.
 
@@ -115,37 +115,37 @@ AEM](#spa-development-principles-for-aem)에서 SPA을 개발하는 [의 원칙�
 
 1. **React 구성 요소에서`this.props.cqModel`**
 
-   구성 요소가 동의하고 JSON 모델이 배치되면 프런트 엔드 개발자는 SPA을 개발할 수 있으며 `this.props.cqModel` 을 통해 JSON 모델에 간편하게 액세스할 수 있습니다.
+   구성 요소가 동의하고 JSON 모델이 배치되면 프런트 엔드 개발자는 SPA을 개발할 수 있고 를 통해 JSON 모델에 간단히 액세스할 수 있습니다. `this.props.cqModel`.
 
-1. **구성 요소의  `render()` 메서드 구현**
+1. **구성 요소의 구현 `render()` 메서드**
 
-   프런트 엔드 개발자는 `render()` 메서드를 적절히 구현하고 `cqModel` 속성의 필드를 사용할 수 있습니다. 이렇게 하면 페이지에 삽입할 DOM 및 HTML 조각이 출력됩니다. React에서 앱을 빌드하는 표준 방법입니다.
+   프런트엔드 개발자는 `render()` 적합한 방법을 확인하고 `cqModel` 속성을 사용합니다. 이렇게 하면 페이지에 삽입할 DOM 및 HTML 조각이 출력됩니다. React에서 앱을 빌드하는 표준 방법입니다.
 
 1. **을 통해 구성 요소를 AEM 리소스 유형에 매핑합니다`MapTo()`**
 
-   매핑은 구성 요소 클래스를 저장하고 제공된 `Container` 구성 요소에서 내부적으로 사용하여 주어진 리소스 유형에 따라 구성 요소를 검색하고 동적으로 인스턴스화합니다.
+   매핑은 구성 요소 클래스를 저장하며 제공된 `Container` 지정된 리소스 유형에 따라 구성 요소를 검색하고 동적으로 인스턴스화하는 구성 요소입니다.
 
    이 기능은 프런트 엔드와 백 엔드 간에 &quot;풀&quot; 역할을 하므로 편집기에서 React 구성 요소가 해당하는 구성 요소를 파악할 수 있습니다.
 
-   `Page` 및 `ResponsiveGrid` 는 기본 `Container`을 확장하는 클래스의 좋은 예입니다.
+   다음 `Page` 및 `ResponsiveGrid` 기본 클래스를 확장하는 클래스의 좋은 예입니다 `Container`.
 
-1. **구성 요소의 매개 변수 `EditConfig` 를 (으)로 정의합니다`MapTo()`**
+1. **구성 요소의 `EditConfig` 매개 변수를으로`MapTo()`**
 
    이 매개 변수는 이 아직 렌더링되지 않았거나 렌더링할 콘텐츠가 없는 경우 구성 요소의 이름을 지정하는 방법을 편집기에 알려야 합니다.
 
-1. **페이지 및 컨테이너 `Container` 에 대해 제공된 클래스를 확장합니다.**
+1. **제공된 을 확장합니다. `Container` 페이지 및 컨테이너 클래스**
 
    페이지 및 단락 시스템은 내부 구성 요소에 위임이 예상대로 작동되도록 이 클래스를 확장해야 합니다.
 
-1. **HTML5  `History` API를 사용하는 라우팅 솔루션을 구현합니다.**
+1. **HTML 5을 사용하여 라우팅 솔루션 구현 `History` API.**
 
-   `ModelRouter`이 활성화되어 있으면 `pushState` 및 `replaceState` 함수를 호출하면 `PageModelManager`에 대한 요청을 트리거하여 누락된 모델 조각을 가져옵니다.
+   이 `ModelRouter` 이 활성화되어 있으면, `pushState` 및 `replaceState` 함수는 `PageModelManager` 모델의 누락된 조각을 가져오려면 다음을 수행하십시오.
 
-   현재 버전의 `ModelRouter`은(는) Sling 모델 시작 지점의 실제 리소스 경로를 가리키는 URL의 사용만 지원합니다. 별칭 URL 또는 별칭 사용을 지원하지 않습니다.
+   의 현재 버전입니다. `ModelRouter` Sling 모델 시작 지점의 실제 리소스 경로를 가리키는 URL의 사용만 지원합니다. 별칭 URL 또는 별칭 사용을 지원하지 않습니다.
 
-   정규 표현식 목록을 무시하도록 `ModelRouter` 을 비활성화하거나 구성할 수 있습니다.
+   다음 `ModelRouter` 정규 표현식 목록을 무시하도록 비활성화하거나 구성할 수 있습니다.
 
-## AEM-Agnostic {#aem-agnostic}
+## AEM-agnostic {#aem-agnostic}
 
 이러한 코드 블록은 React 및 Angular 구성 요소에 Adobe 또는 AEM에만 해당하는 것이 필요하지 않음을 보여줍니다.
 
@@ -154,12 +154,12 @@ AEM](#spa-development-principles-for-aem)에서 SPA을 개발하는 [의 원칙�
 
 ![AEM 불가지식 접근 방식](assets/aem-agnostic.png)
 
-`MapTo` 도우미는 백 엔드와 프런트 엔드 구성 요소를 함께 일치시킬 수 있는 &quot;풀&quot;입니다.
+다음 `MapTo` helper는 백 엔드와 프런트 엔드 구성 요소가 함께 일치되도록 하는 &quot;풀&quot;입니다.
 
 * JSON에 있는 각 구성 요소 렌더링을 위해 JS 컨테이너(또는 JS 단락 시스템)에 어떤 JS 구성 요소가 담당하는지 알려줍니다.
-* JS 구성 요소가 렌더링하는 HTML에 HTML 데이터 속성을 추가하므로 SPA 편집기는 구성 요소를 편집할 때 작성자에게 표시할 대화 상자를 알 수 있습니다.
+* JS 구성 요소가 렌더링하는 HTML에 HTML 데이터 속성을 추가하므로 SPA 편집기에서 구성 요소를 편집할 때 작성자에게 표시할 대화 상자를 알 수 있습니다.
 
-일반적으로 `MapTo` 사용 및 SPA for AEM 작성에 대한 자세한 내용은 선택한 프레임워크에 대한 시작 안내서를 참조하십시오.
+사용에 대한 자세한 정보 `MapTo` 일반적으로 SPA for AEM을 빌드하려면 선택한 프레임워크에 대한 시작 안내서를 참조하십시오.
 
 * [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md)
 * [angular을 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md)
@@ -186,7 +186,7 @@ SPA 사용 시 개발, 작성 및 게시 환경을 포함한 AEM의 일반 아�
    1. SPA이 외부 HTML을 요청합니다.
    1. CSS가 로드됩니다.
    1. SPA 애플리케이션의 Javascript가 로드됩니다.
-   1. SPA 애플리케이션이 실행되면 JSON이 요청되어 앱이 `cq-data` 속성을 포함하는 페이지의 DOM을 작성할 수 있습니다.
+   1. SPA 애플리케이션이 실행되면 JSON이 요청되어 앱에서 가 포함된 페이지의 DOM을 작성할 수 있습니다 `cq-data` 속성을 사용합니다.
    1. 이 `cq-data` 속성을 사용하면 편집기에서 구성 요소에 사용할 수 있는 편집 구성을 알 수 있도록 추가 페이지 정보를 로드할 수 있습니다.
 
 * **AEM 게시**
@@ -197,7 +197,7 @@ SPA 사용 시 개발, 작성 및 게시 환경을 포함한 AEM의 일반 아�
 
    디스패처는 사이트 방문자를 위한 AEM의 캐싱 레이어 역할을 합니다.
    * 요청은 AEM 작성자에 있는 방식과 유사하게 처리되지만 편집기에만 필요하므로 페이지 정보에 대한 요청이 없습니다.
-   * Javascript, CSS, JSON 및 HTML이 캐시되므로 빠른 배달을 위해 페이지가 최적화됩니다.
+   * Javascript, CSS, JSON 및 HTML이 캐시되므로 신속한 전달을 위해 페이지가 최적화됩니다.
 
 >[!NOTE]
 >
@@ -205,9 +205,9 @@ SPA 사용 시 개발, 작성 및 게시 환경을 포함한 AEM의 일반 아�
 
 ## 다음 단계 {#next-steps}
 
-* [React를 사용하여 AEM에서 SPA](getting-started-react.md) 로 시작하기 는 React를 사용하여 AEM에서 SPA Editor와 작동하도록 기본 SPA을 빌드하는 방법을 보여줍니다.
-* [Angular를 사용하여 AEM](getting-started-angular.md) 에서 SPA 시작하기 은 Angular을 사용하여 AEM에서 SPA 편집기로 작동하기 위해 기본 SPA을 어떻게 빌드하는지 보여줍니다.
-* [SPA ](editor-overview.md) 편집기 개요는 AEM과 SPA 간의 통신 모델에 대해 자세히 설명합니다.
-* [WKND SPA ](wknd-tutorial.md) Projectials는 AEM에서 간단한 SPA 프로젝트를 구현하는 단계별 자습서입니다.
-* [SPA에 대한 동적 모델과 구성 ](model-to-component-mapping.md) 요소 간 매핑이 AEM에서 SPA 내에서 작동하는 방식에 대해 설명합니다.
-* [SPA ](blueprint.md) Blueprint는 React 또는 Angular 이외의 프레임워크를 위해 AEM에서 SPA을 구현하거나 단순히 더 깊이 이해하고 싶은 경우 AEM용 SPA SDK가 작동하는 방식을 자세히 살펴봅니다.
+* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) React를 사용하여 AEM에서 SPA 편집기와 작동하도록 기본 SPA을 빌드하는 방법을 보여 줍니다.
+* [angular을 사용하여 AEM에서 SPA 시작하기](getting-started-angular.md) angular을 사용하여 AEM에서 SPA 편집기로 작동하도록 기본 SPA을 빌드하는 방법을 표시합니다.
+* [SPA 편집기 개요](editor-overview.md) AEM과 SPA 간의 통신 모델에 대해 자세히 알아봅니다.
+* [WKND SPA 프로젝트](wknd-tutorial.md) 는 AEM에서 간단한 SPA 프로젝트를 구현하는 단계별 자습서입니다.
+* [SPA용 동적 모델과 구성 요소 간 매핑](model-to-component-mapping.md) 동적 모델과 구성 요소 간 매핑 및 AEM에서 이 모델이 작동하는 방식을 설명합니다.
+* [SPA 블루프린트](blueprint.md) 는 React 또는 Angular 이외의 프레임워크를 위해 AEM에서 SPA을 구현하거나 단순히 더 깊이 이해하고 싶은 경우 AEM용 SPA SDK의 작동 방식을 자세히 살펴봅니다.

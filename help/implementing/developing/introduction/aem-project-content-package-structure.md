@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -60,7 +60,7 @@ Oak 인덱스(`/oak:index`)은 특히 AEM as a Cloud Service 배포 프로세스
 + OSGi 번들 Jar 파일이 생성되어 모든 프로젝트에 직접 포함됩니다.
 
 + 다음 `ui.apps` 패키지에는 배포할 모든 코드가 포함되어 있으며 배포 대상 `/apps`. 의 공통 요소 `ui.apps` 패키지에는 다음이 포함되지만 이에 국한되지 않습니다.
-   + [구성 요소 정의 및 HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) 스크립트
+   + [구성 요소 정의 및 HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR) 스크립트
       + `/apps/my-app/components`
    + JavaScript 및 CSS(를 통해) [클라이언트 라이브러리](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -207,7 +207,7 @@ This is **only required** for Code packages, meaning any Package marked with `<p
 >
 >자세한 내용은 [POM XML 코드 조각](#xml-repository-structure-package) 아래의 섹션 을 참조하십시오.
 
-## 컨테이너 패키지에 하위 패키지 포함{#embeddeds}
+## 컨테이너 패키지에 하위 패키지 임베드{#embeddeds}
 
 컨텐츠 또는 코드 패키지는 특수 &quot;사이드 카&quot; 폴더에 배치되며 FileVault Maven 플러그인을 사용하여 AEM 작성자, AEM 게시 또는 둘 다에 설치할 수 있습니다 `<embeddeds>` 구성. 다음 사항에 유의하십시오. `<subPackages>` 구성은 사용하지 않아야 합니다.
 
@@ -457,7 +457,7 @@ scripts=["
     ...
 ```
 
-### 컨테이너 패키지에 하위 패키지 포함 {#xml-embeddeds}
+### 컨테이너 패키지에 하위 패키지 임베드 {#xml-embeddeds}
 
 에서 `all/pom.xml`를 추가하고 다음을 추가합니다 `<embeddeds>` 지시문 `filevault-package-maven-plugin` 플러그인 선언입니다. 기억해 **포함하지 않음** 사용 `<subPackages>` 구성이며 여기에 하위 패키지가 포함되므로 `/etc/packages` 보다는 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 

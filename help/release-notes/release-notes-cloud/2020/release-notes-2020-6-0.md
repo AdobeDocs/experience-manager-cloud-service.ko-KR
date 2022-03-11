@@ -23,7 +23,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기�
 
 ### 새로운 기능 {#whats-new-2020.6.0}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer)와 핵심 구성 요소 간의 통합
 * 모든 구성 요소에 대해 구성 가능한 HTML ID 속성
@@ -102,14 +102,14 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 Cloud Manager의 새로운 �
 
 * Cloud Manager에서 직접 개발자 콘솔로 연결되는 링크에는 샌드박스 프로그램 환경의 최대 절전 모드 해제/최대 절전 모드 해제 옵션이 표시되지 않습니다. 이 문제를 해결하려면 개발자 콘솔에서 `#release-cm-p1234-e5678` 패턴을 URL 끝에 추가합니다. 여기서 *1234*&#x200B;를 프로그램 ID이고 *5678*&#x200B;은 환경 ID입니다. 이 문제는 향후 릴리스에서 해결될 예정입니다.
 
-## 의 새로운 기능[!DNL Adobe Experience Manager Assets]{#aem-assets}
+## 의 새로운 기능[!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **Adobe Sensei 기반의 향상된 스마트 태그를 위한 사용자 경험 가이드**
 
 고급 스마트 태그를 사용하면 일반 스마트 태그 외에도 고급 태그 모델 기반의 이미지를 인식할 수 있도록 고급 태그 지정 모델을 교육할 수 있습니다.
 
 이번 릴리스에는 고객별 태그의 세트에 대한 스마트 태그 교육을 설정하고, 자산에 대한 교육을 제공하는 가이드 방식의 새로운 사용자 경험이 포함되어 있으며, 이를 인식하여 향후 태그를 지정해야 합니다. 이제 경험이 보다 직관적이 됩니다.
-고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. [자산에 스마트 태그를 추가하는 방법](/help/assets/smart-tags.md)을 참조하십시오.
+고급 스마트 태그를 트레이닝하여 더욱 직관적인 스마트 태그 트레이닝을 받을 수 있습니다. 자세한 내용은 [자산에 스마트 태그를 추가하는 방법](/help/assets/smart-tags.md).
 
 **3D 컨텐츠 수집, 미리 보기 및 전달 지원**
 

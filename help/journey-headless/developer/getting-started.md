@@ -5,7 +5,7 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
 workflow-type: tm+mt
 source-wordcount: '3058'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -66,20 +66,20 @@ AEM의 헤드리스 기능은 몇 가지 주요 기능을 기반으로 합니다
 
 ### 콘텐츠 조각 모델 {#content-fragment-models}
 
-컨텐츠 조각 모델은 AEM에서 만들고 관리하는 데이터 및 컨텐츠의 구조를 정의합니다. 컨텐츠를 위한 일종의 스캐폴딩 역할을 합니다. 컨텐츠를 작성하도록 선택할 때 작성자가 정의한 컨텐츠 조각 모델에서 컨텐츠 생성을 안내하는 컨텐츠 조각 모델을 선택합니다.
+컨텐츠 조각 모델은 AEM에서 만들고 관리하는 데이터 및 컨텐츠의 구조를 정의합니다. 콘텐츠를 위한 일종의 스캐폴딩 역할을 합니다. 컨텐츠를 작성하도록 선택할 때 작성자가 정의한 컨텐츠 조각 모델에서 컨텐츠 생성을 안내하는 컨텐츠 조각 모델을 선택합니다.
 
 ### 콘텐츠 조각 {#content-fragments}
 
-컨텐츠 조각을 사용하면 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 게시할 수 있습니다. 이를 통해 여러 위치 및 여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
+콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고 만들고 선별하고 게시할 수 있습니다. 이를 통해 여러 위치와 여러 채널에서 사용할 수 있는 콘텐츠를 준비할 수 있습니다.
 
-컨텐츠 조각은 구조화된 컨텐츠를 포함하며 JSON 형식으로 게재할 수 있습니다.
+콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있으며 JSON 형식으로 전달할 수 있습니다.
 
 ### GraphQL 및 REST API {#apis}
 
 AEM에서 헤더없이 컨텐츠를 수정하기 위해 두 개의 강력한 API를 제공합니다.
 
-* GraphQL API를 사용하면 컨텐츠 조각에 액세스하고 전달할 요청을 만들 수 있습니다.
-* 자산 REST API 를 사용하면 컨텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
+* GraphQL API를 사용하면 콘텐츠 조각에 액세스하고 전달하기 위한 요청을 생성할 수 있습니다.
+* Assets REST API를 사용하면 콘텐츠 조각(및 기타 에셋)을 만들고 수정할 수 있습니다.
 
 이러한 API에 대해 알아보고, AEM 헤드리스 여정의 뒷부분에서 이 API를 사용하는 방법을 알아봅니다. 또는 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
@@ -277,7 +277,7 @@ AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수�
 
 * [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
 * [Adobe Experience Manager as a Cloud Service 건축 소개](/help/overview/architecture.md) AEM as a Cloud Service 구조 이해
-* [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 자습서를 통해 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
+* [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko-KR) - 이 실습 자습서를 통해 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
 * [GraphQL API를 사용한 헤드리스 컨텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM에서 구현된 GraphQL API에 대한 개요를 알려면 이 과정을 따르십시오. AdobeID를 통한 인증이 필요합니다.
 * [AEM 안내서 WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM GraphQL API를 강조 표시하는 예제 애플리케이션이 포함되어 있습니다.
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md) - 작성자-게시 설정에 대한 세부 정보를 포함하여 AEM 작성 환경을 위한 기술 설명서

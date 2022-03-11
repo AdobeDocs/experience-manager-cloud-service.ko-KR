@@ -1,15 +1,15 @@
 ---
-title: 화면에서 Cloud Service으로 채널 게시
-description: 이 페이지에서는 Screens에서 Cloud Service으로 채널을 게시하는 방법에 대해 설명합니다.
-source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
+title: 화면에서 채널 게시 as a Cloud Service
+description: 이 페이지에서는 Screens에서 채널을 as a Cloud Service으로 게시하는 방법에 대해 설명합니다.
+exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
 
 ---
 
-
-# 화면에서 Cloud Service으로 채널 게시 {#publish-channel-screens-cloud}
+# 화면에서 채널 게시 as a Cloud Service {#publish-channel-screens-cloud}
 
 ## 소개 {#introduction}
 
@@ -29,24 +29,24 @@ AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능�
 
 아래 절차에 따라 채널을 게시하십시오.
 
-1. **FirstDigitalExperience** —> **채널** —> **LoopingChannelOne**&#x200B;과 같이 프로젝트에서 채널을 탐색하고 선택합니다.
+1. 다음과 같이 프로젝트에서 채널을 탐색하고 선택합니다 **FirstDigitalExperience** —> **채널** —> **LoopingChannelOne**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. 작업 표시줄에서 **게시 관리**&#x200B;를 클릭합니다.
+1. 클릭 **게시 관리** 작업 표시줄.
 
-1. **게시 마법사**&#x200B;에서 **작업**&#x200B;게시&#x200B;**및**&#x200B;예약&#x200B;**을**&#x200B;지금&#x200B;**으로 선택하고**&#x200B;다음&#x200B;**을 클릭합니다.**
+1. 을(를) 선택합니다 **작업** 로서의 **게시** 및 **예약** 로서의 **지금** 에서 **게시 관리 마법사** 을(를) 클릭합니다. **다음**.
 
    ![](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >작업 표시줄에서 **+ 하위 포함** 을 클릭하고 모든 옵션을 선택 취소하여 프로젝트의 모든 모듈을 게시하고 추가 를 클릭하여 게시합니다. 기본적으로 모든 상자가 선택되며 프로젝트의 모든 모듈을 게시하려면 상자를 수동으로 선택 취소해야 합니다.
+   >클릭 **+ 하위 포함** 작업 표시줄에서 모든 옵션을 선택 취소하고 프로젝트에 있는 모든 모듈을 게시하고 게시하려면 추가 를 클릭하십시오. 기본적으로 모든 상자가 선택되며 프로젝트의 모든 모듈을 게시하려면 상자를 수동으로 선택 취소해야 합니다.
 
-1. **게시 관리** 마법사에서 채널을 선택한 후 **게시**&#x200B;를 클릭하여 채널을 게시합니다.
+1. 에서 채널을 선택한 후 **게시 관리** 마법사, 클릭 **게시** 채널을 게시하려면 다음을 수행하십시오.
 
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 프로젝트에 채널을 게시했으므로, 이제 [Screens의 플레이어 설치 및 구성 문서를 Cloud Service](/help/screens-cloud/creating-content/manage-publish.md)로 검토하여 스크린을 Cloud Service 여정으로 계속해야 합니다.
+이제 프로젝트에 채널을 게시했으므로, 다음 번에 문서를 검토하여 스크린 as a Cloud Service 여정을 계속해야 합니다. [Screens에서 플레이어 설치 및 구성 as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).

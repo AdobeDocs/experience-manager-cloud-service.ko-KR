@@ -1,10 +1,11 @@
 ---
 title: AEM as a Cloud Service 마이그레이션 여정 시작하기
-description: AEM as a Cloud Service으로 이동하는 기본 사항을 숙지하여 마이그레이션 여정을 시작합니다
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+description: AEM as a Cloud Service로의 전환에 대한 기본 사항을 숙지하여 마이그레이션 여정 시작
+exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '568'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 

@@ -5,7 +5,7 @@ exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
 source-wordcount: '964'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 * 대상자 추가 - Adobe Target 대상 또는 ContextHub 세그먼트 중 하나.
 * 대상자 관리.
 
-ContextHub에서 *세그먼트*&#x200B;라고 하는 대상자는 특정 기준에 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사용자를 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 새 대상을 만들 수 있습니다.
+라고 하는 대상 *세그먼트* ContextHub에서 는 특정 기준에 정의된 방문자 클래스로, 타깃팅된 활동을 보는 사용자를 결정합니다. 활동을 타깃팅할 때 타깃팅 프로세스에서 바로 대상을 선택하거나 대상 콘솔에서 새 대상을 만들 수 있습니다.
 
 대상 콘솔에서 대상은 브랜드별로 구성됩니다.
 
@@ -56,7 +56,7 @@ ContextHub을 사용하여 세그먼트를 만드는 방법에 대한 자세히 
 
 >[!NOTE]
 >
->**만들기** 메뉴에 **타겟 대상자 만들기**&#x200B;가 표시되지 않으면 대상을 만드는 데 필요한 권한이 없는 것입니다. 대상자를 만들 수 있으려면 `/etc/segmentation` 아래에 쓰기 권한이 있어야 합니다. content-authors 그룹에는 기본적으로 쓰기 권한이 있습니다.
+>If you do not see **Create Target Audience** in the **Create** menu, you do not have the necessary permissions to create an audience. You need write permissions under `/etc/segmentation` to be able to create audiences. content-authors 그룹에는 기본적으로 쓰기 권한이 있습니다.
 
 Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 
@@ -70,12 +70,12 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 
 1. **Adobe Target 구성** 대화 상자에서 타겟 구성을 선택하고 **확인**&#x200B;을 탭하거나 클릭합니다.
 1. 규칙#1 영역에서 속성 유형을 탭하거나 클릭하고 사용 가능한 필드에 특성 정보를 입력합니다. 끝나면 속성의 오른쪽에 있는 확인 표시를 선택하여 저장하십시오. 모든 속성에 대해 알려면 [속성 및 속성 선택 사항](#attributes-and-their-options)을 참조하십시오.
-1. **규칙 추가**&#x200B;를 클릭하여 다른 규칙을 추가합니다. 규칙을 필요한 만큼 입력하십시오. 규칙들은 부울 연산자 AND를 사용하여 결합되며 이는 대상이 각 규칙의 모든 요구 사항을 충족해야 활동에 대한 자격이 있음을 의미합니다.
+1. Click **Add Rule** to add another rule. Enter as many rules as needed. Rules are combined with the boolean operator AND, which means that the audience must meet all the requirements of each rule to be eligible for an activity.
 1. **다음**&#x200B;을 탭하거나 클릭합니다.
 1. 대상에 사용할 이름을 입력하고 **저장**&#x200B;을 탭하거나 클릭합니다.
 1. **저장**&#x200B;을 탭하거나 클릭합니다. 대상이 대상 목록에 표시됩니다.
 
-### 속성 및 해당 선택 사항  {#attributes-and-their-options}
+### 속성 및 해당 선택 사항 {#attributes-and-their-options}
 
 다음 각 속성에 대해 타깃팅 규칙을 만들 수 있습니다.
 
@@ -98,5 +98,5 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 대상자 콘솔에서 모든 ContextHub 대상자를 편집할 수 있습니다. Adobe Target 대상을 편집할 수도 있지만 AEM에서 만들어진 대상만 편집할 수 있습니다.
 
 1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **대상자**&#x200B;를 클릭하거나 탭합니다.
-1. 편집할 ContextHub 세그먼트 옆의 아이콘을 탭하거나 클릭하고 **편집**&#x200B;을 탭하거나 클릭합니다.
-1. 세그먼트 편집기에서 편집을 수행합니다. 자세한 내용은 ContextHub 설명서 를 참조하십시오.<!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->
+1. 편집할 ContextHub 세그먼트 옆에 있는 아이콘을 탭하거나 클릭하고 탭하거나 클릭합니다 **편집**.
+1. 세그먼트 편집기에서 편집을 수행합니다. 자세한 내용은 ContextHub 설명서 를 참조하십시오. <!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

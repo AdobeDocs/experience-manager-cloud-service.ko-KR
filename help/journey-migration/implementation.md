@@ -1,7 +1,8 @@
 ---
 title: 구현 단계
 description: 코드와 컨텐츠가 클라우드로 마이그레이션할 준비가 되었는지 확인합니다.
-source-git-commit: b6667e19ae111685ab4832a1859a62164b4e31c5
+exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 9%

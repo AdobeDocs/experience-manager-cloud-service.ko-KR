@@ -1,13 +1,13 @@
 ---
 title: 파노라마 이미지
 description: Dynamic Media에서 파노라마 이미지로 작업하는 방법을 알아봅니다.
-feature: 파노라마 이미지
+feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 3%
+source-wordcount: '147'
+ht-degree: 15%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 이 섹션에서는 공간, 속성, 위치 또는 조경의 몰입형 360° 보기 환경을 위해 파노라마 뷰어를 사용하여 구형 파노라마 이미지를 렌더링하는 방법에 대해 설명합니다.
 
-또한 [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md)를 참조하십시오.
+참조 - [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![파노라마 이미지2](assets/panoramic-image2.png)
 
@@ -27,11 +27,11 @@ ht-degree: 3%
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* `equirectangular` 또는 `spherical`와 `panorama`, 또는 `spherical` 및 `panoramic` 키워드가 태그되었습니다. [태그 사용](/help/sites-cloud/authoring/features/tags.md)을 참조하십시오.
+* 키워드가 태그됨 `equirectangular`, 또는 `spherical`및 `panorama`, 또는 `spherical` 및 `panoramic`. 자세한 내용은 [태그 사용](/help/sites-cloud/authoring/features/tags.md).
 
-종횡비와 키워드 기준은 모두 자산 세부 사항 페이지와 `Panoramic Media` WCM 구성 요소의 파노라마 자산에 적용됩니다.
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
-파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 [자산 업로드](/help/assets/manage-digital-assets.md#uploading-assets)를 참조하십시오.
+파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 를 참조하십시오 [자산 업로드](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -78,8 +78,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## 파노라마 이미지 미리 보기 {#previewing-panoramic-images}
 
-[자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md)를 참조하십시오.
+자세한 내용은 [자산 미리 보기](/help/assets/dynamic-media/previewing-assets.md).
 
 ## 파노라마 이미지 게시 {#publishing-panoramic-images}
 
-[자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)를 참조하십시오.
+자세한 내용은 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

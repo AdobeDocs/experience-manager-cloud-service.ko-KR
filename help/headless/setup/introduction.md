@@ -3,7 +3,7 @@ title: Headless 설정
 description: 이 빠른 시작 안내서를 통해 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 AEM as a Cloud Service의 강력한 Headless기능의 핵심을 배웁니다.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%
 

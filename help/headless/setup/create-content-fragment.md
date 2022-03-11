@@ -3,7 +3,7 @@ title: 콘텐츠 조각 만들기 - Headless 설정
 description: Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 

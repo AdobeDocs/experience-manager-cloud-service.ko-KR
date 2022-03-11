@@ -3,13 +3,13 @@ title: 사이트 테마
 description: AEM 사이트 테마를 사용하여 사이트의 스타일 및 디자인을 사용자 지정하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
+exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
 
 ---
-
 
 # 사이트 테마 {#site-themes}
 

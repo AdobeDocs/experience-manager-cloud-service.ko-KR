@@ -1,15 +1,15 @@
 ---
-title: 사용자 지정 도메인 이름 추가
-description: 사용자 지정 도메인 이름 추가
+title: 맞춤형 도메인 이름 추가
+description: 맞춤형 도메인 이름 추가
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 98c137645351c86da8680a31b4929c588863a981
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# 사용자 지정 도메인 이름 추가 {#adding-cdn}
+# 맞춤형 도메인 이름 추가 {#adding-cdn}
 
 Cloud Manager에서 사용자 지정 도메인 이름을 추가하려면 사용자가 비즈니스 소유자 또는 배포 관리자여야 합니다.
 

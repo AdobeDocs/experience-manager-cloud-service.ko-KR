@@ -11,17 +11,17 @@ ht-degree: 1%
 
 # URL 표면화 {#externalizing-urls}
 
-AEM에서 **Externalizer**&#x200B;는 프로그래밍 방식으로 리소스 경로(예: )를 변환할 수 있는 OSGi 서비스입니다. `/path/to/my/page`)를 미리 구성된 DNS로 경로를 접두사로 사용하여 외부 및 절대 URL(예: `https://www.mycompany.com/path/to/my/page`)에 추가합니다.
+AEM에서 **외부 도우미** 는 리소스 경로(예: )를 프로그래밍 방식으로 변환할 수 있는 OSGi 서비스입니다. `/path/to/my/page`)을 외부 및 절대 URL에 넣습니다(예: `https://www.mycompany.com/path/to/my/page`) 접두사가 있는 DNS로 경로를 고정합니다.
 
 AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없고, 경우에 따라 요청 범위 외부에서 링크를 만들어야 하기 때문에 이 서비스는 이러한 외부 URL을 구성하고 빌드할 수 있는 중앙 위치를 제공합니다.
 
-이 문서에서는 Externalizer 서비스를 구성하는 방법 및 이를 사용하는 방법에 대해 설명합니다. 서비스에 대한 자세한 내용은 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html)를 참조하십시오.
+이 문서에서는 Externalizer 서비스를 구성하는 방법 및 이를 사용하는 방법에 대해 설명합니다. 서비스에 대한 자세한 내용은 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Externalizer의 기본 동작 및 무시 방법 {#default-behavior}
 
-기본적으로 Externalizer 서비스에는 `author-p12345-e6789.adobeaemcloud.com` 및 `publish-p12345-e6789.adobeaemcloud.com` 등의 값이 있습니다.
+기본적으로 Externalizer 서비스에는 다음과 같은 값이 있습니다. `author-p12345-e6789.adobeaemcloud.com` 및 `publish-p12345-e6789.adobeaemcloud.com`.
 
-이러한 값을 무시하려면 문서 [AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)에 대한 OSGi 구성 및 사전 정의된 `AEM_CDN_DOMAIN_AUTHOR` 및 `AEM_CDN_DOMAIN_PUBLISH` 변수 설정에 설명된 대로 Cloud Manager 환경 변수를 사용하십시오.
+이러한 값을 무시하려면 문서에 설명된 대로 Cloud Manager 환경 변수를 사용합니다 [AEM as a Cloud Service OSGi 구성](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 및 `AEM_CDN_DOMAIN_AUTHOR` 및 `AEM_CDN_DOMAIN_PUBLISH` 변수를 채우는 방법을 설명합니다.
 
 ## 외부 도우미 서비스 구성 {#configuring-the-externalizer-service}
 
@@ -29,7 +29,7 @@ Externalizer 서비스를 사용하면 프로그래밍 방식으로 리소스 �
 
 >[!NOTE]
 >
->AEM as a Cloud Service에 대해 [OSGi 구성을 적용할 때와 같이,](/help/implementing/deploying/overview.md#osgi-configuration)은(는) 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
+>적용할 때 [AEM as a Cloud Service용 OSGi 구성](/help/implementing/deploying/overview.md#osgi-configuration) 로컬 개발자 인스턴스에서 다음 단계를 수행한 다음 배포를 위해 프로젝트 코드에 커밋해야 합니다.
 
 Externalizer 서비스에 대한 도메인 매핑을 정의하려면
 
@@ -37,15 +37,15 @@ Externalizer 서비스에 대한 도메인 매핑을 정의하려면
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. **Day CQ Link Externalizer**&#x200B;를 클릭하여 구성 대화 상자를 엽니다.
+1. 클릭 **Day CQ Link Externalizer** 구성 대화 상자를 열려면 다음을 수행하십시오.
 
    ![Externalizer OSGi 구성](./assets/externalizer-osgi.png)
 
    >[!NOTE]
    >
-   >구성에 대한 직접 링크는 `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`입니다.
+   >구성에 대한 직접 링크는 다음과 같습니다 `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`
 
-1. **도메인** 매핑을 정의합니다. 매핑은 코드에서 도메인, 공간 및 도메인을 참조하는 데 사용할 수 있는 고유한 이름으로 구성됩니다.
+1. 정의 **도메인** 매핑. 매핑은 코드에서 도메인, 공간 및 도메인을 참조하는 데 사용할 수 있는 고유한 이름으로 구성됩니다.
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
@@ -59,7 +59,7 @@ Externalizer 서비스에 대한 도메인 매핑을 정의하려면
    * **`port`** (선택 사항)은 포트 번호입니다.
    * **`contextpath`** (선택 사항) AEM이 다른 컨텍스트 경로 아래에 웹 앱으로 설치된 경우에만 설정됩니다.
 
-   예를 들어,`production https://my.production.instance`
+   예를 들어`production https://my.production.instance`
 
    다음 매핑 이름은 사전 정의되어 있으며, AEM이 매핑 이름을 사용함에 따라 항상 설정되어야 합니다.
 
@@ -69,9 +69,9 @@ Externalizer 서비스에 대한 도메인 매핑을 정의하려면
 
    >[!NOTE]
    >
-   >사용자 지정 구성을 사용하면 `production`, `staging` 등의 새 카테고리 또는 `my-internal-webservice` 등의 외부 비 AEM 시스템도 추가할 수 있습니다. 프로젝트 코드 베이스의 서로 다른 위치에서 이러한 URL을 하드 코딩하지 않도록 하는 것이 유용합니다.
+   >사용자 지정 구성에서는 다음과 같은 새 카테고리를 추가할 수 있습니다. `production`, `staging` 또는 외부 비 AEM 시스템(예: `my-internal-webservice`. 이러한 URL은 프로젝트 코드 베이스의 여러 위치에서 하드 코딩하지 않도록 하는 데 유용합니다.
 
-1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
+1. 클릭 **저장** 변경 사항을 저장하려면 을 클릭합니다.
 
 ### 외부 도우미 서비스 사용 {#using-the-externalizer-service}
 
@@ -125,4 +125,4 @@ Externalizer 서비스에 대한 도메인 매핑을 정의하려면
 
 >[!TIP]
 >
->[Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html)에서 더 많은 예를 찾을 수 있습니다.
+>자세한 예제는 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

@@ -3,13 +3,13 @@ title: 사이트 레일을 사용하여 사이트 테마 관리
 description: 사이트 테마를 쉽게 사용자 지정하고 관리하는 데 도움이 되는 사이트 레일의 강력한 기능을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
 
 ---
-
 
 # 사이트 레일을 사용하여 사이트 테마 관리 {#site-rail}
 

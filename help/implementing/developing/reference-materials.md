@@ -61,7 +61,7 @@ AEM에서는 사용자 정의 가능한 구성 요소 및 콘텐츠 전달 옵�
 
 | 기능 | 설명 |
 |---|---|
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) | AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소를 통해 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감할 수 있습니다 |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) | AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소를 통해 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감할 수 있습니다 |
 | [JSON 내보내기](/help/implementing/developing/components/json-exporter.md) | JSON 데이터 모델 형식으로 AEM 페이지의 콘텐츠를 전달합니다 |
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 컨텐츠의 JSON 내보내기 생성 |
 | [자산 API](/help/assets/mac-api-assets.md) | 이진, 메타데이터, 표현물 및 주석을 포함하여 자산에 대한 CRUD(Create-Read-update-delete) 작업을 허용합니다. AEM Assets HTTP API 를 참조하십시오 |

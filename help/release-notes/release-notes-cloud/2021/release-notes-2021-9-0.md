@@ -1,26 +1,25 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 릴리스의 릴리스 노트'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 릴리스의 릴리스 노트'
-source-git-commit: bef02a7e72d54b7c9eb5726bb046460c5902fb84
+exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 4%
+ht-degree: 29%
 
 ---
 
+# [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
 
-
-# 의 현재 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-다음 섹션에서는 현재(최신) 버전의 [!DNL Experience Manager] as a Cloud Service.
+다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 버전 일반 릴리스 정보에 대해 간략히 소개합니다.
 
 >[!NOTE]
 >
->여기에서 이전 버전의 릴리스 정보로 이동할 수 있습니다. 예를 들어, 2020년, 2021년 등의 경우입니다.
+>여기에서 2020, 2021 버전 등 이전 버전의 릴리스 정보로 이동할 수 있습니다.
 
 >[!NOTE]
 >
->자세한 내용은 [최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) 릴리스 정보와 직접 관련이 없는 설명서 업데이트 세부 정보는
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko-KR)를 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
@@ -39,7 +38,7 @@ ht-degree: 4%
 
 ## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
 
-### 의 새로운 기능 [!DNL Assets] {#assets-features}
+### [!DNL Assets]의 새로운 기능 {#assets-features}
 
 * 이제 사용자는 열 및 카드 보기에서 검색 결과에 표시된 자산을 정렬할 수 있습니다. 정렬은 이름, 작성, 수정 또는 없음 열에서 작동합니다.
 
@@ -63,28 +62,28 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
-### 의 새로운 기능 [!DNL Forms] {#what-is-new-forms-sep-2021}
+### [!DNL Forms]의 새로운 기능 {#what-is-new-forms-sep-2021}
 
-* **적응형 양식에서 Adobe Sign 역할 사용**: 비즈니스 및 엔터프라이즈 서비스 수준용 Adobe Sign은 서명자 외에 계약 수신자의 역할을 확장하여 워크플로우 요구 사항에 보다 잘 부합할 수 있는 옵션을 제공합니다. 이제 다음을 수행할 수 있습니다 [각 동의 수신자가 적응형 양식에서 자신의 역할을 구성할 수 있도록 설정](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)서명자가 기본 역할인 경우
+* **적응형 양식에서 Adobe Sign 역할 사용**: 비즈니스 및 엔터프라이즈 서비스 수준을 위한 Adobe Sign은 계약 수신자의 역할을 서명자 이상으로 확장하는 옵션을 제공하여 워크플로 요구 사항에 보다 잘 부합하도록 합니다. 이제 [계약의 각 수신자가 적응형 양식에서 자신의 역할을 구성할 수 있으며,](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform) 서명자는 기본 역할입니다.
 
-* **응용 Forms용 Analytics**: 이제 Adobe Analytics for Adaptive Forms을 통해 최종 사용자 행동을 캡처하고 추적하여 최종 사용자 통찰력을 수집할 수 있습니다. 최종 사용자 경험을 향상시키기 위해 데이터를 기반으로 현명한 결정을 내릴 수 있습니다.
+* **적응형 양식용 Analytics**: 이제 적응형 양식용 Adobe Analytics를 통해 최종 사용자 행동을 포착하고 추적하여 최종 사용자 인사이트를 수집할 수 있습니다. 이로써 데이터를 기반으로 정보에 입각한 결정을 내려 최종 사용자 경험을 개선할 수 있습니다.
 
-* **Microsoft Dynamics 및 Salesforce와 AEM Forms을 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce용 기본 데이터 소스 구성 및 데이터 모델을 제공하여 만듭니다 [개발자가 적응형 양식의 데이터 소스로 Microsoft Dynamics 및 Salesforce를 구성할 수 있는 빠르고 쉬운 방법](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
+* **AEM Forms를 Microsoft Dynamics 및 Salesforce에 손쉽게 연결**: 이 서비스는 Microsoft Dynamics 및 Salesforce를 위한 즉시 사용 가능한 데이터 소스 구성 및 데이터 모델을 제공하여 [개발자가 Microsoft Dynamics 및 Salesforce를 적응형 양식의 데이터 소스로 더 빠르고 간편하게 구성할 수 있게 해 줍니다](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en).
 
-* **DocuSign을 사용하여 적응형 양식에 전자 서명:** DocuSign을 사용하여 적응형 양식에 전자 서명할 수 있습니다. 이 서비스는 적응형 양식과 함께 DocuSign을 사용하기 위한 사용자 지정 제출 작업을 제공합니다. 소프트웨어 배포에 있는 패키지를 설치하여 제출 작업을 가져올 수 있습니다.
+* **DocuSign을 이용한 적응형 양식 전자 서명:** DocuSign을 사용해 적응형 양식에 전자 서명할 수 있습니다. 이 서비스는 적응형 양식에 DocuSign을 사용하는 맞춤형 제출 액션을 제공합니다. 소프트웨어 배포에 있는 패키지를 설치하여 제출 작업을 가져올 수 있습니다.
 
-### 의 베타 기능 [!DNL Forms] {#sep-what-is-new-forms-prerelease}
+### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-prerelease}
 
-* **통합 스토리지 커넥터:** Unified Storage Connector를 사용하여 고객 관리 리포지토리에서 처리 중인 데이터를 외부화할 수 있습니다. 예를 들어 다음 작업을 수행할 수 있습니다.
-   * Forms Portal의 저장 및 재개 기능을 활성화하고 고객 관리 데이터 저장소에 적응형 양식 초안을 저장합니다.
-   * 고객 관리 저장소에 SPD(중요 개인 데이터)가 포함된 처리 중인 AEM 워크플로우 데이터(AEM Workflow 변수 데이터)를 저장합니다.
+* **통합 스토리지 커넥터:** 통합 스토리지 커넥터를 사용하여 고객 관리 저장소에서 처리 중인 데이터를 외부화합니다. 예를 들어 다음 작업을 수행할 수 있습니다.
+   * Forms 포털 저장 및 재개 기능을 활성화하고 적응형 양식 초안을 고객 관리 데이터 저장소에 저장합니다.
+   * 민감한 개인 데이터(SPD)가 포함된, 처리 중인 AEM Workflow 데이터(AEM Workflow 변수 데이터)를 고객 관리 저장소에 저장합니다.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [통신 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) XDP 템플릿과 XML 데이터를 결합하여 다양한 형식으로 인쇄 문서를 생성하는 데 도움이 됩니다. 이 서비스를 통해 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음을 수행할 수 있는 애플리케이션을 만들 수 있습니다.
-   * XML 데이터로 템플릿 파일을 채워서 문서를 생성합니다.
-   * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
-   * XFA 양식 PDF 및 Adobe Acrobat 양식에서 인쇄 PDF 파일을 생성합니다.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en)를 통해 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
+   * XML 데이터로 템플릿 파일을 채워 문서를 생성합니다.
+   * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식의 출력 양식을 생성합니다.
+   * XFA 양식 PDF 및 Adobe Acrobat Form에서 인쇄 PDF 파일을 생성합니다.
 
-에 쓸 수 있습니다. [!DNL formscsbeta@adobe.com] 베타 프로그램에 등록하려면
+Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하십시오.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
@@ -128,9 +127,9 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ## [!DNL Experience Manager as a Cloud Service] Foundation {#foundation}
 
-### New features in [!DNL Experience Manager as a Cloud Service] {#foundation-features}
+### [!DNL Experience Manager as a Cloud Service]의 새로운 기능 {#foundation-features}
 
-**Advanced Networking**
+**고급 네트워킹**
 
 >[!INFO]
 >
@@ -185,7 +184,7 @@ Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
 
 * 이제 Cloud Acceleration Manager에서 BPA 보고서를 인쇄 가능한 미리 보기로 볼 수 있으므로 인쇄하거나 인쇄하여 PDF에 인쇄하여 공유하기 쉽게 할 수 있습니다. 의 6단계 및 7단계를 참조하십시오 [우수 사례 분석 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
-## 컨텐츠 전송 도구 {#content-transfer-tool}
+## 콘텐츠 전송 도구 {#content-transfer-tool}
 
 ### 릴리스 날짜 {#release-date-ctt-latest}
 

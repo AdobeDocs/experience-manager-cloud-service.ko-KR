@@ -1,13 +1,13 @@
 ---
 title: 프로그램 편집
 description: 프로덕션 및 샌드박스 프로그램을 편집하여 옵션을 만든 후 조정하는 방법을 알아봅니다.
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 프로그램 편집 {#editing-programs}
 

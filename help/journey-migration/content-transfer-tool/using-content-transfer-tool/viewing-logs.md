@@ -1,13 +1,13 @@
 ---
 title: 컨텐츠 전송 도구의 마이그레이션 세트에 대한 로그 보기
 description: 컨텐츠 전송 도구의 마이그레이션 세트에 대한 로그 보기
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 52%
 
 ---
-
 
 # 마이그레이션 세트에 대한 로그 보기 {#view-logs-content-transfer-tool}
 

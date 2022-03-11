@@ -69,7 +69,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 필요한 만큼 필드를 추가할 수 있습니다. 예:
 
-![컨텐츠 조각 모델](/help/assets/content-fragments/assets/cfm-models-07.png)
+![콘텐츠 조각 모델](/help/assets/content-fragments/assets/cfm-models-07.png)
 
 ### 컨텐츠 작성자 {#your-content-authors}
 

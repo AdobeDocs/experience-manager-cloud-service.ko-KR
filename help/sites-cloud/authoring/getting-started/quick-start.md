@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# 페이지 작성에 대한 빠른 시작 안내서{#quick-guide-to-authoring-pages}
+# 페이지 작성 빠른 시작 안내서 {#quick-guide-to-authoring-pages}
 
 이 문서는 AEM의 주요 페이지 작성 작업에 대한 빠른 시작 개요 안내서로서 작성되었습니다. 이 문서는
 
@@ -159,7 +159,6 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 구성 요소 [복사(및 붙여넣기):](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
-
    >[!NOTE]
    >
    >같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
@@ -181,7 +180,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    >
    >컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)를 사용해야 합니다.
 
-### 페이지 속성 편집  {#editing-the-page-properties}
+### 페이지 속성 편집 {#editing-the-page-properties}
 
 [페이지 속성을 편집](/help/sites-cloud/authoring/fundamentals/page-properties.md)하는 방법에는 두 가지(기본) 방법이 있습니다.
 
@@ -225,7 +224,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    1. **페이지 정보** 메뉴를 엽니다.
    1. **페이지 게시**&#x200B;를 선택합니다.
 
-* 콘솔에서 페이지를 게시 취소하는 것은 **게시 관리** 옵션을 통해서만 수행할 수 있으며 빠른 작업이 아니라 도구 모음에서만 사용 가능합니다.
+* Unpublishing a page from the console can only be done via the **Manage Publication** option, which is only available on the toolbar (not via the quick actions).
 
    ![게시 관리 단추](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -233,12 +232,12 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    자세한 내용은 [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)를 참조하십시오.
 
-### 페이지 이동, 복사 및 붙여넣기 또는 삭제  {#move-copy-and-paste-or-delete-your-page}
+### 페이지 이동, 복사 및 붙여넣기 또는 삭제 {#move-copy-and-paste-or-delete-your-page}
 
 이러한 작업은 모두 다음을 수행하여 트리거할 수 있습니다.
 
 1. 이동, 복사 및 붙여넣기 또는 삭제할 [페이지로 이동](#finding-your-page)하십시오.
-1. 다음 중 하나를 사용하여 필요에 따라 [복사] (및 [붙여넣기]), [이동] 또는 [삭제] 아이콘을 선택합니다.
+1. Select the copy (and then paste), move or delete icon as required using either:
 
    * 필요한 리소스에 대한 [빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only)
    * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
@@ -254,14 +253,13 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 삭제:
 
       * 작업을 확인하는 메시지가 나타납니다.
-
    >[!NOTE]
    >
    >삭제는 빠른 작업으로 사용할 수 없습니다.
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
-[페이지를 잠그면](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금] (및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
+[Locking a page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) prevents other authors from working on it while you are. The Lock (and Unlock) icon/button can be found:
 
 * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
 * 페이지를 편집할 때 [[페이지 정보] 드롭다운 메뉴](#editing-the-page-properties)
@@ -283,9 +281,9 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![참조 보기](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고 (해당되는 경우) 추가 작업을 수행합니다.
+1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고(해당되는 경우) 추가 작업을 수행합니다.
 
-### 페이지 버전 생성  {#creating-a-version-of-your-page}
+### 페이지 버전 생성 {#creating-a-version-of-your-page}
 
 페이지의 [버전](/help/sites-cloud/authoring/features/page-versions.md)을 생성하려면:
 

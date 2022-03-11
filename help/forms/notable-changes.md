@@ -6,7 +6,7 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 Adobe Experience Manager Forms은 Adobe Experience Manager FormsOn-Premise 및 [!DNL Adobe-Managed Service] 환경. 주요 차이점은 아래에 나와 있습니다.
 
 * 이 서비스는 로컬 및 클라우드 기반의 개발 환경을 제공합니다. 을(를) 사용할 수 있습니다 [로컬 개발 환경](setup-local-development-environment.md) 클라우드 환경에 이러한 자산을 배포하기 전에 사용자 지정 코드, 구성 요소, 템플릿, 테마, 응용 Forms 및 기타 자산을 개발하고 테스트하려면 다음을 수행하십시오. 개발 프로세스를 가속화하는 데 도움이 됩니다.
-* [!DNL AEM] 는 내장 CDN과 함께 Cloud Service이 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 컨텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
+* [!DNL AEM] 는 내장 CDN과 함께 Cloud Service이 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
 * 클라우드 기본 환경에는 웹 콘솔(구성 관리자)이 없습니다. 다음을 사용할 수 있습니다 [[!DNL AEM Forms] 구성을 생성할 as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) 및에 대한 CI/CD 파이프라인 [구성 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) Cloud Service 인스턴스에 매핑해야 합니다.
 
 * 현지화된 적응형 Forms의 URL 규칙은 이제 URL에서 로케일 지정을 지원합니다. 새 URL 규칙을 사용하면 Dispatcher 또는 CDN에 현지화된 양식을 캐싱할 수 있습니다. Cloud Service 환경에서 URL 형식을 사용합니다 `http://host:port/content/forms/af/<afName>.<locale>.html` 를 입력하여 대신 현지화된 적응형 양식 버전을 요청합니다. `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe은 Dispatcher 또는 CDN 캐싱을 사용하는 것을 권장합니다. 미리 입력된 양식의 렌더링 속도를 개선하는 데 도움이 됩니다.

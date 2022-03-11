@@ -1,10 +1,11 @@
 ---
 title: 제품 경험 구축
 description: 제품 경험을 구축하는 방법을 알아봅니다.
-source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
+exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -52,7 +53,7 @@ AEM에서 다양한 유형의 컨텐츠를 만들어 제품 카탈로그에 연�
 
 ![평판](assets/pem-cf.png)
 
-### 제품 조종실 {#product-cockpit}
+### 제품 관리실 {#product-cockpit}
 
 제품 조종실(또는 콘솔)을 이전 모듈 중 하나에 소개했습니다. 조종실은 제품 카탈로그를 찾아보는 것뿐만 아니라 관련된 모든 AEM 컨텐츠를 한 곳에서 보는 쉬운 방법입니다. 제품 콘솔로 이동하고 관련 컨텐츠가 있는 제품의 속성을 엽니다. 각 탭으로 전환하여 관련 컨텐츠를 확인합니다.
 
@@ -113,5 +114,5 @@ AEM에서 다양한 유형의 컨텐츠를 만들어 제품 카탈로그에 연�
 ## 추가 리소스 {#additional-resources}
 
 * [상거래 경험 작성](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
-* [제품 조종실](/help/commerce-cloud/authoring/product-cockpit.md)
+* [제품 관리실](/help/commerce-cloud/authoring/product-cockpit.md)
 * [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)

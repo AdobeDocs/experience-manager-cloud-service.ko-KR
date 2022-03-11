@@ -47,7 +47,7 @@ venia/components/structure/navigation:true:10:600
 
 ## Dispatcher 캐싱 {#dispatcher}
 
-에서 AEM 페이지 또는 조각을 캐싱 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 는 모든 AEM 프로젝트에 가장 적합한 방법입니다. 일반적으로, AEM에서 변경된 모든 컨텐츠가 Dispatcher에서 제대로 업데이트되도록 하는 무효화 기술에 의존합니다. AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
+에서 AEM 페이지 또는 조각을 캐싱 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 는 모든 AEM 프로젝트에 가장 적합한 방법입니다. 일반적으로, AEM에서 변경된 모든 컨텐츠가 Dispatcher에서 제대로 업데이트되도록 하는 무효화 기술에 의존합니다. AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
 
 순수 AEM 관리 콘텐츠 CIF 외에도 페이지는 일반적으로 GraphQL을 통해 Adobe Commerce에서 동적으로 가져오는 상거래 데이터를 표시할 수 있습니다. 페이지 구조 자체는 변경되지 않을 수 있지만 일부 제품 데이터(이름, 가격 등)가 있는 경우 상거래 콘텐츠가 변경될 수 있습니다. Adobe Commerce의 변경 사항.
 

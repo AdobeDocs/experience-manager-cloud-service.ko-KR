@@ -1,15 +1,15 @@
 ---
-title: 다중 사이트에서 타깃팅된 컨텐츠 작업
+title: 다중 사이트에서 대상 콘텐츠를 사용하여 작업
 description: 사이트 간 활동, 경험 및 오퍼와 같은 타깃팅된 컨텐츠를 관리해야 하는 경우 타깃팅된 컨텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
 source-wordcount: '2893'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
-# 다중 사이트에서 타깃팅된 컨텐츠 작업 {#working-with-targeted-content-in-multisites}
+# 다중 사이트에서 대상 콘텐츠를 사용하여 작업 {#working-with-targeted-content-in-multisites}
 
 사이트 간 활동, 경험 및 오퍼와 같은 타깃팅된 컨텐츠를 관리해야 하는 경우 타깃팅된 컨텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
 
@@ -48,7 +48,6 @@ ht-degree: 87%
 >
 >* 롤아웃이나 Live Copy를 사용하는 경우 MSM 라이센스가 있어야 합니다.
 >* Adobe Target에 대한 동기화를 사용하는 경우 Adobe Target 라이센스가 있어야 합니다.
-
 >
 
 
@@ -146,11 +145,11 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 >[!NOTE]
 >
->마스터 영역이라고 하는 기본 영역은 다른 영역을 만들기 **전까지**&#x200B;는 브랜드 이름을 탭하거나 클릭하면 기본적으로 축소됩니다. 그런 다음 **활동**&#x200B;이나 **오퍼** 콘솔에서 브랜드를 선택하면 **영역** 콘솔이 표시됩니다.
+>The default area called Master Area is collapsed by default when you tap or click on the name of a brand **until** you create another area. Then, when you select a brand in either the **Activity** or **Offers** console, you see the **Area** console.
 
 새 영역을 만들려면 다음을 수행하십시오.
 
-1. 다음으로 이동 **개인화** > **활동** 또는 **오퍼** 또는 브랜드와 공유할 수 있습니다.
+1. Navigate to **Personalization** > **Activities** or **Offers** or and then to your brand.
 1. **영역 만들기**&#x200B;를 탭하거나 클릭합니다.
 
    ![영역 만들기](/help/sites-cloud/authoring/assets/multisite-create-area.png)
@@ -169,7 +168,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 영역을 Live Copy로 만들려면 다음을 수행하십시오.
 
-1. 다음으로 이동 **개인화** > **활동** 또는 **오퍼** 브랜드와 공유할 수 있습니다.
+1. Navigate to **Personalization** > **Activities** or **Offers** and then to your brand.
 1. **영역을 Live Copy로 만들기**&#x200B;를 탭하거나 클릭합니다.
 
    ![영역을 Live Copy로 만들기](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
@@ -178,7 +177,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
    ![Live Copy 만들기](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
-1. **이름** 필드에 Live Copy의 이름을 입력합니다. 기본적으로 하위 페이지가 포함되어 있습니다. **하위 페이지 제외** 확인란을 선택하여 제외하십시오.
+1. In the **Name** field, enter a name for the live copy. By default, sub pages are included; exclude them by selecting the **Exclude sub pages** check box.
 
    ![Live Copy 만들기](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
@@ -235,7 +234,6 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 >
 >* 활동에서는 Live Copy만 일시 중단하거나 분리할 수 있습니다.
 >* 상속된 활동을 확장하기 위해 Live Copy를 일시 중단하거나 분리할 필요는 없습니다. 항상 해당 활동에 대한 **새** 로컬 경험과 오퍼를 만들 수 있습니다. 기존 활동을 수정하려면 상속을 일시 중단해야 합니다.
-
 >
 
 
@@ -262,7 +260,7 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 
 1. 마스터에서 Live Copy를 분리하려는 페이지로 이동하고 모드 드롭다운 메뉴에서 **타깃팅**&#x200B;을 탭하거나 클릭합니다.
 1. 페이지가 Live Copy인 영역에 연결되어 있으면, 상속 상태가 표시됩니다. **타깃팅 시작**&#x200B;을 탭하거나 클릭합니다.
-1. 도구 모음의 드롭다운 메뉴에서 **Live Copy 분리**&#x200B;를 선택합니다. Live Copy를 분리할지 확인하는 메시지가 나타납니다.
+1. Select **Detach Live Copy** from the drop-down menu in the toolbar. AEM confirms that you want to detach the live copy.
 1. **분리**&#x200B;를 탭하거나 클릭하여 활동에서 Live Copy를 분리합니다. 분리된 후에는 상속에 대한 드롭다운 메뉴가 더 이상 표시되지 않습니다. 이제 이 활동은 로컬 활동입니다.
 
    ![로컬 활동](/help/sites-cloud/authoring/assets/multisite-winter.png)
@@ -275,7 +273,7 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 
 1. 상속을 복원할 페이지로 이동하고 탭하거나 클릭합니다 **타깃팅** 모드 드롭다운 메뉴에서 을 클릭합니다.
 1. **타깃팅 시작**&#x200B;을 탭하거나 클릭합니다.
-1. 선택 **Live Copy 다시 시작** 를 클릭합니다.
+1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
 
    ![Live Copy 다시 시작](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
@@ -287,6 +285,6 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 
 영역을 삭제하려면 다음을 수행하십시오.
 
-1. 다음으로 이동 **개인화** > **활동** 또는 **오퍼** 그리고 당신의 브랜드요
+1. Navigate **Personalization** > **Activities** or **Offers** and then to your brand.
 1. 삭제할 영역 옆에 있는 아이콘을 탭하거나 클릭합니다.
 1. **삭제**&#x200B;를 탭하거나 클릭하고 영역을 삭제할 것임을 확인합니다.

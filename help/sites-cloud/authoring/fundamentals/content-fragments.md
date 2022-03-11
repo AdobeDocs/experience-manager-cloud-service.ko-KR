@@ -5,15 +5,15 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1163'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 컨텐츠 조각 {#content-fragments}
+# 콘텐츠 조각 {#content-fragments}
 
 Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 제작되고 관리됩니다](/help/assets/content-fragments/content-fragments.md).
 
-변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 컨텐츠를 만들 수 있습니다. 그런 다음 컨텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
+변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 컨텐츠를 만들 수 있습니다. 그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
 업데이트된 JSON Exporter와 함께 구조화된 컨텐츠 조각을 사용하여 AEM 페이지 이외의 채널에 컨텐츠 서비스를 통해 AEM 컨텐츠를 제공할 수도 있습니다.
 
@@ -23,10 +23,8 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 >
 >* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠이며, 따라서 웹 페이지 조각입니다.
-
 >
->
-경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
+>경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 
 >[!CAUTION]
 >
@@ -72,7 +70,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
    >추가 편집 기능에 대한 자세한 정보는 다음을 참조하십시오.
    >
    >* [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
-   * [페이지 컨텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [페이지 컨텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### 요소 또는 변형 선택 {#selecting-the-element-or-variation}
@@ -80,7 +78,8 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 조각의 **구성** 대화 상자를 열어 현재 페이지에서 사용할 조각을 구성합니다. 이 대화 상자는 사용된 구성 요소에 따라 달라질 수 있습니다.
 
 >[!NOTE]
-[핵심 구성 요소, 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)도 참조하십시오.
+>
+>[핵심 구성 요소, 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko-KR)도 참조하십시오.
 
 적절한 구성 대화 상자에서 다음을 포함하여 사용 가능한 매개 변수를 선택할 수 있습니다.
 
@@ -93,10 +92,11 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
    * 선택한 항목은 사용된 모델에 따라 사용할 수 있습니다.
 
    >[!NOTE]
-   사용할 수 있는 요소는 사용된 모델에 따라 다릅니다.
+   >
+   >사용할 수 있는 요소는 사용된 모델에 따라 다릅니다.
 
-* **변형**
-   * 기본 **마스터**&#x200B;는 항상 사용할 수 있습니다.
+* **Variation**
+   * The default **Master** will always be available.
    * 조각에 대해 변형을 만든 경우 선택이 가능합니다.
 
 * **ID**
@@ -108,9 +108,10 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 구성 요소 도구 모음에서 **편집** 아이콘을 사용하여 자산을 편집할 조각 소스를 열 수 있습니다. 이 경우 [컨텐츠 조각을 편집하고 관리](/help/assets/content-fragments/content-fragments.md)할 수 있습니다.
 
 >[!CAUTION]
-조각 소스를 편집하면 해당 컨텐츠 조각을 참조하는 모든 페이지에 영향을 줍니다.
+>
+>조각 소스를 편집하면 해당 컨텐츠 조각을 참조하는 모든 페이지에 영향을 줍니다.
 
-### 중간 컨텐츠 추가  {#adding-in-between-content}
+### 중간 컨텐츠 추가 {#adding-in-between-content}
 
 특정 컨텐츠 조각이 페이지에 추가되면 조각의 각 HTML 단락 사이(및 상단/하단)에 **구성 요소를 여기로 드래그하십시오.** 자리 표시자가 있습니다.
 
@@ -123,32 +124,40 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 * 중간 컨텐츠 소스로 [연관된 컨텐츠](#using-associated-content)를 사용합니다.
 
 >[!CAUTION]
-중간 컨텐츠는 페이지 컨텐츠이며, 컨텐츠 조각에 저장되지 않습니다.
+>
+>중간 컨텐츠는 페이지 컨텐츠이며, 컨텐츠 조각에 저장되지 않습니다.
 
 ![구성 요소 삽입](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
-또한 조각 자체에 [시각적 자산(이미지)을 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)할 수도 있습니다.
-조각 자체에 삽입된 시각적 자산은 조각의 이전 단락에 첨부됩니다. 즉, 시각적 자산과 이전 단락 간에 중간 컨텐츠를 배치할 수 없음을 의미합니다. 이 연결 수준이 필요한 경우 조각([혼합 미디어 조각](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)으로)에 이미지를 추가할 수 있습니다.
+>
+>또한 조각 자체에 [시각적 자산(이미지)을 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)할 수도 있습니다.
+>
+>조각 자체에 삽입된 시각적 자산은 조각의 이전 단락에 첨부됩니다. 즉, 시각적 자산과 이전 단락 간에 중간 컨텐츠를 배치할 수 없음을 의미합니다. 이 연결 수준이 필요한 경우 조각([혼합 미디어 조각](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)으로)에 이미지를 추가할 수 있습니다.
 
 >[!CAUTION]
-중간 컨텐츠를 페이지의 컨텐츠 조각에 추가한 후에 기존 컨텐츠 조각(즉, 컨텐츠 조각 편집기에서)의 구조를 변경하면 잘못된/예기치 않은 결과가 나타날 수 있습니다.
-이 경우 중간 컨텐츠가 그대로 유지됩니다. 
-* 중간 구성 요소는 조각 플로우의 구성 요소 순서 내에서 절대 위치에 있습니다. 조각 내의 단락 컨텐츠가 변경되더라도 이 위치는 변경되지 않습니다.
+>
+>중간 컨텐츠를 페이지의 컨텐츠 조각에 추가한 후에 기존 컨텐츠 조각(즉, 컨텐츠 조각 편집기에서)의 구조를 변경하면 잘못된/예기치 않은 결과가 나타날 수 있습니다.
+>
+>이 경우 중간 컨텐츠가 그대로 유지됩니다. 
+>
+>* 중간 구성 요소는 조각 플로우의 구성 요소 순서 내에서 절대 위치에 있습니다. 조각 내의 단락 컨텐츠가 변경되더라도 이 위치는 변경되지 않습니다.
+>
+>  중간 단락은 옆에 배치된(조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
+>* 두 단락 구조가 충돌하지 않는 경우에는 중간 컨텐츠가 내부에 여전히 있어도 표시되지 않습니다.
 
-중간 단락은 옆에 배치된(조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
-* 두 단락 구조가 충돌하지 않는 경우에는 중간 컨텐츠가 내부에 여전히 있어도 표시되지 않습니다.
 
-
-### 관련 컨텐츠 사용  {#using-associated-content}
+### 관련 콘텐츠 사용 {#using-associated-content}
 
 [관련 컨텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)를 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)과 연결한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)의 특별한 컨텐츠 소스입니다.
 
 >[!NOTE]
-[시각적 자산(예: 이미지)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
+>
+>[시각적 자산(예: 이미지)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
 
 >[!NOTE]
-한 페이지에 여러 개의 컨텐츠 조각이 있는 경우 **관련 컨텐츠** 탭에 모든 조각에 적합한 자산이 표시됩니다.
+>
+>한 페이지에 여러 개의 컨텐츠 조각이 있는 경우 **관련 컨텐츠** 탭에 모든 조각에 적합한 자산이 표시됩니다.
 
 관련 컨텐츠가 있는 조각을 페이지에 추가하면 새 탭(**관련 컨텐츠**)이 사이드 패널에서 열립니다.
 

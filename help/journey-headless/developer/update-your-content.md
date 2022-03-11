@@ -5,13 +5,13 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # AEM Assets API를 통해 콘텐츠를 업데이트하는 방법 {#update-your-content}
 
-[AEM Headless 개발자 여정의 이 부분에서](overview.md)는 REST API를 사용하여 컨텐츠 조각에 액세스하고 업데이트하는 방법을 알아봅니다.
+의 이 부분에서 [AEM Headless Developer 여정,](overview.md) rest API를 사용하여 컨텐츠 조각에 액세스하고 업데이트하는 방법을 알아봅니다.
 
 ## 지금까지 그 이야기 {#story-so-far}
 
@@ -25,7 +25,7 @@ AEM 헤드리스 여정의 이전 문서에서, [AEM 배달 API를 통해 콘텐
 
 ## 목표 {#objective}
 
-* **대상**: 고급
+* **Audience**: 고급
 * **목표**: REST API를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다.
    * AEM Assets HTTP API 소개.
    * API에서 컨텐츠 조각 지원을 도입하고 논의합니다.
@@ -41,18 +41,18 @@ AEM 헤드리스 여정의 이전 문서에서, [AEM 배달 API를 통해 콘텐
 
 다른 API가 필요한 이유는 무엇입니까?
 
-Assets HTTP API를 사용하면 **컨텐츠를 읽을 수 있지만, GraphQL API에서는 사용할 수 없는 작업 -** Create **,** Update **및** Delete **컨텐츠를 만들 수도 있습니다.**
+자산 HTTP API를 사용하면 다음 작업을 수행할 수 있습니다 **읽기** 사용자의 콘텐츠는 물론 **만들기**, **업데이트** 및 **삭제** 컨텐츠 - GraphQL API에서는 사용할 수 없는 작업입니다.
 
 Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전을 바로 설치할 때마다 사용할 수 있습니다.
 
-## 자산 HTTP API {#assets-http-api}
+## Assets HTTP API {#assets-http-api}
 
 자산 HTTP API는 다음을 포함합니다.
 
 * 자산 REST API
 * 컨텐츠 조각에 대한 지원 포함
 
-Assets HTTP API의 현재 구현은 **REST** 아키텍처 스타일을 기반으로 하며, **CRUD** 작업(만들기, 읽기, 업데이트, 삭제)을 통해 컨텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
+자산 HTTP API의 현재 구현은 **REST** 아키텍처 스타일 및 를 통해 컨텐츠(AEM에 저장됨)에 액세스할 수 있습니다. **CRUD** 작업(만들기, 읽기, 업데이트, 삭제).
 
 이러한 작업을 사용하여 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Cloud Service을 헤드리스 CMS(Content Management System)로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다. 예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정 환경에서는 API를 통해 제공되는 컨텐츠가 필요합니다(일반적으로 JSON 형식).
 
@@ -209,34 +209,34 @@ Associated content is currently not exposed.
 
 ### 액세스 {#access}
 
-Assets REST API는 `/api/assets` 종단점을 사용하고 선행 `/content/dam` 없이 자산에 액세스할 자산의 경로가 필요합니다.
+Assets REST API는 `/api/assets` 엔드포인트 및에 액세스할 자산의 경로가 필요합니다(선행 없이). `/content/dam`).
 
 * 즉, 다음 위치에서 자산에 액세스합니다.
    * `/content/dam/path/to/asset`
 * 다음을 요청해야 합니다.
    * `/api/assets/path/to/asset`
 
-예를 들어 `/content/dam/wknd/en/adventures/cycling-tuscany`에 액세스하려면 `/api/assets/wknd/en/adventures/cycling-tuscany.json`을 요청합니다
+예를 들어, `/content/dam/wknd/en/adventures/cycling-tuscany`, 요청 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >액세스 권한:
 >
->* `/api/assets` **은** 선택기를 사용할 필요가  `.model` 없습니다.
->* `/content/path/to/page` **** 선택기를 사용해야  `.model` 합니다.
+>* `/api/assets` **포함하지 않음** 의 사용 필요 `.model` 선택기.
+>* `/content/path/to/page` **does** 를 사용하려면 `.model` 선택기.
 
 
 ### 작업 {#operation}
 
 HTTP 메서드는 실행할 작업을 결정합니다.
 
-* **GET**  - 자산 또는 폴더의 JSON 표현을 검색합니다
-* **POST**  - 새 자산 또는 폴더를 만들려면
-* **PUT**  - 자산 또는 폴더의 속성을 업데이트하는 방법
-* **DELETE**  - 자산 또는 폴더를 삭제하려면
+* **GET** - 자산 또는 폴더의 JSON 표현을 검색하려면
+* **POST** - 새 자산 또는 폴더를 만들려면
+* **PUT** - 자산 또는 폴더의 속성을 업데이트하려면
+* **DELETE** - 자산 또는 폴더를 삭제하려면
 
 >[!NOTE]
 >
->요청 본문 및/또는 URL 매개 변수를 사용하여 이러한 작업 중 일부를 구성할 수 있습니다. 예를 들어, **POST** 요청으로 폴더나 자산을 만들어야 함을 정의합니다.
+>요청 본문 및/또는 URL 매개 변수를 사용하여 이러한 작업 중 일부를 구성할 수 있습니다. 예를 들어, 폴더 또는 자산을 **POST** 요청.
 
 지원되는 요청의 정확한 형식은 API 참조 설명서에서 정의됩니다.
 
@@ -251,11 +251,11 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 >[!CAUTION]
 >
->AEM 클라우드 인스턴스의 Dispatcher 구성은 `/api`에 대한 액세스를 차단할 수 있습니다.
+>AEM 클라우드 인스턴스의 Dispatcher 구성은에 대한 액세스를 차단할 수 있습니다 `/api`.
 
 >[!NOTE]
 >
->자세한 내용은 API 참조를 참조하십시오. 특히 [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>자세한 내용은 API 참조를 참조하십시오. 특히, [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### 읽기/전달 {#read-delivery}
 
@@ -280,7 +280,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 `POST /{cfParentPath}/{cfName}`
 
-본문에는 컨텐츠 조각 요소에서 설정해야 하는 초기 컨텐츠를 포함하여 만들 컨텐츠 조각의 JSON 표현이 포함되어 있어야 합니다. `cq:model` 속성을 설정해야 하며 유효한 컨텐츠 조각 모델을 가리켜야 합니다. 실패하면 오류가 발생합니다. `application/json` 로 설정된 헤더 `Content-Type`을 추가해야 합니다.
+본문에는 컨텐츠 조각 요소에서 설정해야 하는 초기 컨텐츠를 포함하여 만들 컨텐츠 조각의 JSON 표현이 포함되어 있어야 합니다. 을(를) 설정해야 합니다 `cq:model` 속성 및 유효한 컨텐츠 조각 모델을 가리켜야 합니다. 실패하면 오류가 발생합니다. 헤더를 추가해야 합니다 `Content-Type` 설정됨 `application/json`.
 
 ### 업데이트 {#update}
 
@@ -318,15 +318,15 @@ AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수�
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-AEM Headless 여정을 계속 진행하려면 다음 문서 [How to Go Live with Your Headless Application](go-live.md)을 검토하여 AEM Headless 프로젝트를 실제로 라이브로 전환하십시오!
+다음에 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다 [헤드리스 애플리케이션을 사용하여 라이브로 전환하는 방법](go-live.md) AEM Headless 프로젝트를 라이브로 전환하는 곳!
 
 ## 추가 리소스 {#additional-resources}
 
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
-* [컨텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
+* [콘텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
-* [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
-* [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
+* [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [비디오 - AEM을 사용한 CORS용 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

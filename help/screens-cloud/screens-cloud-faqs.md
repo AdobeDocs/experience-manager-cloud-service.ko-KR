@@ -1,15 +1,15 @@
 ---
-title: 화면 as a Cloud Service FAQ
+title: Screens as a Cloud Service FAQ
 description: 이 페이지에서는 스크린 as a Cloud Service FAQ에 대해 설명합니다.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
 source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 화면 as a Cloud Service FAQ {#screens-cloud-faqs}
+# Screens as a Cloud Service FAQ {#screens-cloud-faqs}
 
 다음 섹션에서는 Screens as a Cloud Service 프로젝트와 관련된 FAQ(자주 묻는 질문)에 대한 답변을 제공합니다.
 

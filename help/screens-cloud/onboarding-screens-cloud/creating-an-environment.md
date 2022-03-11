@@ -1,20 +1,20 @@
 ---
-title: 분기 생성
-description: 이 페이지에서는 Screens용 Cloud Manager에 Cloud Service 분기를 만드는 방법에 대해 설명합니다.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+title: 분기 만들기
+description: 이 페이지에서는 Screens용 Cloud Manager에서 as a Cloud Service 분기를 만드는 방법에 대해 설명합니다.
+exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Cloud Manager에서 환경 만들기 {#create-environment-screens-cloud}
 
 이 섹션에서는 Cloud Manager에서 프로그램의 환경을 만드는 방법을 설명합니다.
 
 >[!NOTE]
->사용자가 환경을 만들 수 있는 방법에 대해 알아보려면 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en)에서 환경 관리 를 참조하십시오.
+>을(를) 참조하십시오. [Cloud Manager의 환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) 사용자가 환경을 만드는 방법을 알아봅니다.
 
 ## 목표 {#objective}
 
@@ -24,13 +24,13 @@ ht-degree: 1%
 
 프로젝트 만들기가 완료되면 Cloud Manager의 개요 페이지에서 클릭유도문안 카드 업데이트가 표시됩니다.
 
-1. Cloud Manager로 이동하고 아이콘을 선택하여 Cloud Manager의 **개요** 페이지로 이동합니다.
+1. Cloud Manager로 이동하고 아이콘을 선택하여 Cloud Manager의 **개요** 페이지.
 
-1. Cloud Manager의 **개요** 페이지에서 **환경 추가**&#x200B;를 클릭합니다.
+1. 클릭 **환경 추가** Cloud Manager의 **개요** 페이지.
 
    ![이미지](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. **환경 추가** 대화 상자에서 환경 세부 정보를 선택하고 **저장**&#x200B;을 클릭합니다.
+1. 에서 환경 세부 사항을 선택합니다 **환경 추가** 대화 상자를 클릭하고 **저장**.
 
    ![이미지](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -40,5 +40,4 @@ ht-degree: 1%
 
 ## 다음은 무엇입니까? {#whats-next}
 
-Cloud Manager에서 프로그램에 대한 환경을 설정하는 방법을 학습하면 이제 온보딩 프로세스의 다음 단계인 [파이프라인 실행](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)으로 이동할 수 있습니다.
-
+Cloud Manager에서 프로그램에 대한 환경을 설정하는 방법을 학습하면 이제 온보딩 프로세스의 다음 단계로 이동할 수 있으며, [파이프라인 실행](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

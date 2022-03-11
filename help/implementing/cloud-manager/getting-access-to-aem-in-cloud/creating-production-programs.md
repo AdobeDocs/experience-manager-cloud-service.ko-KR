@@ -1,16 +1,16 @@
 ---
-title: '프로덕션 프로그램 생성 '
+title: '제작 프로그램 만들기 '
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하기 위한 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 프로덕션 프로그램 생성 {#create-production-program}
+# 제작 프로그램 만들기 {#create-production-program}
 
 프로덕션 프로그램은 AEM 및 Cloud Manager에 익숙하고 라이브 트래픽을 호스팅하기 위해 코드 작성을 시작하기 위한 준비가 된 사용자를 위한 것입니다.
 

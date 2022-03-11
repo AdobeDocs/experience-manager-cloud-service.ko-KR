@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager 및 빠른 사이트 생성 워크플로우를 이해합니다
 description: Cloud Manager와 새로운 빠른 사이트 생성 프로세스를 함께 연결하는 방법에 대해 알아봅니다.
-source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
+exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
 
 ---
-
 
 # Cloud Manager 및 빠른 사이트 생성 워크플로우를 이해합니다 {#understand-cloud-manager}
 

@@ -20,4 +20,4 @@ AEM WKND 자습서와 유사한 이 SPA 중심의 상대방은 애플리케이�
 * [AEM에서 첫 번째 Angular SPA 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [AEM에서 첫 번째 React SPA 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
 
-그러나 AEM용 SPA 프로젝트를 시작하기 전에 [AEM for SPA 개발](developing.md) 문서를 검토할 수도 있습니다.
+그러나 AEM용 SPA 프로젝트를 시작하기 전에 [SPA for AEM 개발](developing.md) 문서.

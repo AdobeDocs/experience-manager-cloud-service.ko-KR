@@ -1,7 +1,8 @@
 ---
 title: AEM Dispatcher 변환기 도구
 description: AEM Dispatcher 변환기 도구
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 48%
@@ -24,7 +25,7 @@ Dispatcher는 Adobe Experience Manager의 캐싱 및/또는 로드 밸런싱 도
 >[!NOTE]
 >Dispatcher의 가장 일반적인 사용은 **AEM 게시 인스턴스**&#x200B;의 응답을 캐시하여 외부에서 게시되는 웹 사이트의 응답성과 보안을 향상시키는 것입니다.
 
-[Dispatcher 개요](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)를 참조하여 Dispatcher가 캐싱을 수행하고 문서를 반환하며 부하 분산을 수행하는 방법을 알아보십시오.
+[Dispatcher 개요](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)를 참조하여 Dispatcher가 캐싱을 수행하고 문서를 반환하며 부하 분산을 수행하는 방법을 알아보십시오.
 
 ### Apache 및 Dispatcher 구성과 테스트 {#dispatcher-configurations-cloud}
 

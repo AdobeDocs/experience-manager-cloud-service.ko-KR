@@ -1,12 +1,12 @@
 ---
 title: AEM Headless Developer 여정
-description: AEM Headless CMS 설명서. AEM의 강력하고 유연한 헤드리스 기능 및 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오.
-landing-page-description: AEM의 헤드리스 기능, 기능 및 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 안내하는 여정을 살펴보려면 여기에서 시작하십시오.
+description: AEM Headless CMS 설명서. AEM의 강력하고 유연한 헤드리스 기능과 각각의 능력, 그리고 귀하의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 받으십시오.
+landing-page-description: AEM의 헤드리스 기능과 각각의 능력, 그리고 귀하의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 받으십시오.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
@@ -36,7 +36,7 @@ AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 �
 >
 > 원하는 경우 **다음을 통해 학습** 및 는 기본적으로 API 및 프레임워크로 구성되어 있고 [추가 리소스 섹션](#additional-resources) 이 문서의 끝 부분.
 
-## 속성을 확인하는 {#audience}
+## 대상자 {#audience}
 
 이 여정은 개발자 관점에서 AEM Headless 프로젝트의 요구 사항, 단계 및 접근 방식을 레이아웃하며 개발자 성향용으로 설계되었습니다. 여정은 성공적인 프로젝트를 위해 개발자가 상호 작용해야 하는 추가 가상 사용자를 정의하지만 여정의 관점은 개발자의 것입니다.
 
@@ -60,14 +60,14 @@ AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 �
 | # | 문서 | 설명 |
 |---|---|---|
 | 0 | AEM Headless Developer 여정 | 이 문서 |
-| 1 | [CMS Headless 개발에 대해 알아보기](learn-about.md) | 헤드리스 기술 및 사용 시기를 알아봅니다. |
+| 1 | [CMS 헤드리스 개발에 대해 알아보기](learn-about.md) | 헤드리스 기술 및 사용 시기를 알아봅니다. |
 | 2 | [AEM Headless as a Cloud Service 시작하기](getting-started.md) | AEM Headless 사전 요구 사항에 대해 알아보기 |
-| 3 | [AEM Headless를 사용하여 첫 번째 경험의 경로](path-to-first-experience.md) | 개발 환경을 설정하고 간단한 앱을 AEM Headless와 통합하는 방법을 알아봅니다 |
+| 3 | [AEM Headless를 사용한 첫 번째 경험으로의 경로](path-to-first-experience.md) | 개발 환경을 설정하고 간단한 앱을 AEM Headless와 통합하는 방법을 알아봅니다 |
 | 4 | [컨텐츠를 모델링하는 방법](model-your-content.md) | 컨텐츠 구조를 모델링하는 방법을 알아봅니다. 그런 다음 컨텐츠 조각 모델 및 컨텐츠 조각을 사용하여 AEM(Adobe Experience Manager)의 구조를 사용하여 여러 채널에서 재사용할 수 있습니다. |
 | 5 | [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](access-your-content.md) | GraphQL 쿼리를 사용하여 컨텐츠 조각 컨텐츠에 액세스하는 방법을 알아봅니다. |
 | 6 | [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](update-your-content.md) | REST API를 사용하여 컨텐츠 조각 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다. |
 | 7 | [AEM Headless에서 앱과 컨텐츠를 모두 통합하는 방법](put-it-all-together.md) | AEM Headless SDK를 사용하여 AEM 프로젝트를 라이브로 전환하는 방법을 알아봅니다. |
-| 8 | [헤드리스 애플리케이션을 사용하여 라이브로 전환하는 방법](go-live.md) | 애플리케이션을 라이브로 배포하고 Git에서 로컬 코드를 가져와 CI/CD용 Cloud Manager Git 파이프라인으로 이동하는 방법을 알아봅니다. |
+| 8 | [헤드리스 애플리케이션 실행 방법](go-live.md) | 애플리케이션을 라이브로 배포하고 Git에서 로컬 코드를 가져와 CI/CD용 Cloud Manager Git 파이프라인으로 이동하는 방법을 알아봅니다. |
 | 9 | [선택 사항 - AEM을 사용하여 단일 페이지 애플리케이션(SPA)을 만드는 방법](create-spa.md) | AEM 헤드리스 기능을 이해하면 헤드리스 게재 기능과 헤드리스 게재를 결합하는 방법을 탐색하고 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법을 알아봅니다. |
 
 ## 다음은 무엇입니까? {#what-is-next}
@@ -79,7 +79,7 @@ AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 �
 그러나 Adobe은 학습 스타일에 상관없이 AEM Headless 프로젝트를 시작할 때 성공하기를 원합니다. 따라서 이 두 가지 옵션을 고려해 보십시오.
 
 * 계속 **headless 개념 및 AEM headless 기술에 대해 알아보기**&#x200B;을 지정하는 경우, 다음 번에 문서를 검토하여 권장하는 대로 AEM 헤드리스 여정을 계속해야 합니다 [컨텐츠를 AEM 컨텐츠 모델로 모델링하는 방법](model-your-content.md) AEM에서 컨텐츠 구조를 모델링하는 방법을 알아봅니다.
-* 원하는 경우 **다음을 통해 학습**&#x200B;로 이동하면 [AEM Headless 실습 자습서 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) 에서는 간단한 프로젝트를 구현하여 AEM 헤드리스 콘텐츠를 노출하여 AEM 헤드리스 개발에 직접 참여합니다.
+* 원하는 경우 **다음을 통해 학습**&#x200B;로 이동하면 [AEM Headless 실습 자습서 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR) 에서는 간단한 프로젝트를 구현하여 AEM 헤드리스 콘텐츠를 노출하여 AEM 헤드리스 개발에 직접 참여합니다.
 
 ## 추가 리소스 {#additional-resources}
 
@@ -87,7 +87,7 @@ AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 �
 
 이러한 여정은 스스로 설 수 있도록 고안되었습니다. 하지만 그들 중 많은 수가 서로 관련될 수 있습니다. AEM의 강력한 기능이 함께 작동하는 방식에 대한 자세한 내용은 이러한 추가 여정을 참조하십시오.
 
-* [AEM Headless 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 기술에 관심이 있고, API와 프레임워크로 구성된 실습 자습서를 통해 AEM Headless에서 구축된 애플리케이션의 제작 및 사용을 탐색합니다.
+* [AEM Headless 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko-KR) - 기술에 관심이 있고, API와 프레임워크로 구성된 실습 자습서를 통해 AEM Headless에서 구축된 애플리케이션의 제작 및 사용을 탐색합니다.
 * [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
 * [헤드리스 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오.
 * [헤드리스 아키텍트 여정](/help/journey-headless/architect/overview.md) - Adobe Experience Manager as a Cloud Service의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법을 소개합니다.

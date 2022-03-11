@@ -12,7 +12,7 @@ ht-degree: 1%
 
 ---
 
-# 양식 데이터 모델 작성 {#create-form-data-model}
+# 양식 데이터 모델 만들기 {#create-form-data-model}
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 >
 >둘 다 구성원이어야 합니다 **fdm-author** 및 **forms-user** 양식 데이터 모델을 만들고 사용할 수 있는 그룹입니다. 다음 사항에 문의하십시오. [!DNL Experience Manager] 관리자가 그룹의 구성원이 될 수 있습니다.
 
-## 양식 데이터 모델 작성 {#data-sources}
+## 양식 데이터 모델 만들기 {#data-sources}
 
 에 설명된 대로 양식 데이터 모델에 사용할 데이터 소스를 구성했는지 확인합니다. [데이터 소스 구성](configure-data-sources.md). 구성된 데이터 소스를 기반으로 양식 데이터 모델을 만들려면 다음을 수행하십시오.
 

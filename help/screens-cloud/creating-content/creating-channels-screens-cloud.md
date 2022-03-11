@@ -1,15 +1,15 @@
 ---
-title: Cloud Service으로 화면에서 채널 만들기 및 관리
-description: 이 페이지에서는 Screens에서 Cloud Service으로 채널을 만들고 관리하는 방법을 설명합니다.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+title: 화면에서 채널 생성 및 관리 as a Cloud Service
+description: 이 페이지에서는 Screens에서 채널을 만들고 관리하는 방법을 as a Cloud Service으로 설명합니다.
+exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 7%
 
 ---
 
-
-# Cloud Service으로 화면에서 채널 만들기 및 관리 {#creating-channels-screens-cloud}
+# 채널에서 as a Cloud Service 생성 및 관리 {#creating-channels-screens-cloud}
 
 AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 ***채널***, 일련의 컨텐츠(이미지 및 비디오), 웹 사이트 또는 단일 페이지 애플리케이션을 표시합니다.
@@ -21,35 +21,35 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 * 스크린 컨텐츠 공급자에 채널을 만드는 방법을 이해합니다
 * 채널에서 컨텐츠 관리 및 편집
 
-## 스크린에서 Cloud Service으로 새 시퀀스 채널을 만드는 절차 {#create-new-channel}
+## 화면에서 새 시퀀스 채널을 만드는 단계 as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
 >**전제 조건**
->안내서의 이 섹션을 시작하기 전에 [Screens에서 프로젝트 만들기 및 관리 를 Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)로 검토하십시오.
+>안내서의 이 섹션을 시작하기 전에 [화면에서 프로젝트 생성 및 관리 as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-아래 절차에 따라 Screens에서 Cloud Service으로 새 시퀀스 채널을 만드십시오.
+아래 절차에 따라 Screens as a Cloud Service에서 새 시퀀스 채널을 만드십시오.
 
 1. 스크린 컨텐츠 제공업체로 이동합니다.
 
-1. *FirstDigitalExperience* 등의 AEM Screens 프로젝트로 이동합니다.
+1. 다음과 같이 AEM Screens 프로젝트로 이동합니다 *FirstDigitalExperience*.
 
-1. **FirstDigitalExperience** —> **채널**&#x200B;과 같이 프로젝트에서 **채널** 폴더를 선택하고 작업 표시줄에서 **만들기**&#x200B;를 클릭합니다.
+1. 을(를) 선택합니다 **채널** 다음과 같이 프로젝트의 폴더를 지정합니다. **FirstDigitalExperience** —> **채널** 을(를) 클릭합니다. **만들기** 작업 표시줄.
 
    ![](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. **만들기** 마법사에서 **시퀀스 채널**&#x200B;과 같은 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
+1. 다음과 같은 템플릿을 선택합니다. **시퀀스 채널** 에서 **만들기** 마법사를 클릭하고 **다음**.
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > **만들기** 마법사는 채널을 만드는 동안 다양한 유형의 템플릿을 제공합니다. 자세한 내용은 만들기 마법사의 [사용 가능한 템플릿](#available-templates) 섹션을 참조하십시오.
+   > 다음 **만들기** 마법사는 채널을 만드는 동안 다양한 유형의 템플릿을 제공합니다. 섹션을 참조하십시오 [사용 가능한 템플릿](#available-templates) 을 참조하십시오.
 
-1. **LoopingChannelOne** 과 같은 시퀀스 채널의 이름을 입력하고 **만들기**&#x200B;를 클릭합니다.
+1. 시퀀스 채널의 이름(예: )을 입력합니다. **LoopingChannelOne** 을(를) 클릭합니다. **만들기**.
 
    ![](/help/screens-cloud/assets/create-content/channel-create3.png)
 
-   이제 AEM Screens 프로젝트의 Channels 폴더에 **LoopingChannelOne**&#x200B;이 표시됩니다.
+   이제 **LoopingChannelOne** AEM Screens 프로젝트의 채널 폴더에서 을 사용할 수 있습니다.
 
-   이제 채널을 만들고 나면 채널에 컨텐츠를 추가할 수 있습니다. 채널에 자산(이미지/비디오)을 추가하는 방법에 대해 알려면 [채널](#add-content)에 컨텐츠 추가 를 참조하십시오.
+   이제 채널을 만들고 나면 채널에 컨텐츠를 추가할 수 있습니다. 을(를) 참조하십시오. [채널에 컨텐츠 추가](#add-content) 자산에 자산(이미지/비디오)을 채널에 추가하는 방법을 알아봅니다.
 
 ## 채널 관리 {#managing-channels}
 
@@ -63,7 +63,7 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 채널에서 컨텐츠를 추가하거나 편집하려면 아래 절차를 따르십시오.
 
-1. 아래 그림과 같이 편집할 채널을 선택합니다. 작업 표시줄의 왼쪽 위 모서리에서 **편집**&#x200B;을 클릭하여 편집기를 엽니다.
+1. 아래 그림과 같이 편집할 채널을 선택합니다. 클릭 **편집** 작업 표시줄의 왼쪽 위 모서리에서 편집기를 엽니다.
 
    ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
@@ -74,12 +74,12 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
    ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >**미리 보기**를 클릭하여 채널의 컨텐츠를 미리 봅니다.
+   >클릭 **미리 보기** 채널의 컨텐츠를 미리 보려면
    >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 만들기 마법사에서 사용 가능한 템플릿 {#available-templates}
 
-**만들기** 채널 마법사를 사용하는 동안 다음 템플릿을 사용할 수 있습니다.
+다음 템플릿은 **만들기** 채널 마법사:
 
 | 사용 가능한 템플릿 | 설명 |
 |--- |--- |
@@ -90,4 +90,4 @@ AEM Screens 프로젝트를 만든 후에는 채널을 만들어야 합니다.
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 프로젝트에서 AEM Screens 채널을 설정했으므로 채널을 게시해야 합니다. Screens 서비스 공급자에서 플레이어를 관리하기 전에 [Cloud Service으로 Screens에 채널 게시](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en)를 참조하십시오.
+이제 프로젝트에서 AEM Screens 채널을 설정했으므로 채널을 게시해야 합니다. 을(를) 참조하십시오. [화면에서 채널 게시 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) screens 서비스 공급자에서 플레이어를 관리하기 전에

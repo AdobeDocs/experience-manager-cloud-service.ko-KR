@@ -1,16 +1,16 @@
 ---
-title: Screens as a Cloud Service에 대한 축소판 지원
-description: 이 페이지에서는 Screens에서 비디오에 대한 축소판 지원을 Cloud Service으로 추가하는 방법을 설명합니다.
+title: Screens에서 비디오에 대한 축소판 지원 as a Cloud Service
+description: 이 페이지에서는 Screens에서 비디오에 대한 축소판 지원을 as a Cloud Service으로 추가하는 방법을 설명합니다.
 index: true
-source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
+exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# 비디오에 대한 축소판 지원 {#thumbnail-support-videos}
+# 비디오에 대한 썸네일 지원 {#thumbnail-support-videos}
 
 ## 소개 {#introduction}
 
@@ -31,16 +31,16 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >**전제 조건**
->비디오에 축소판을 사용하는 방법을 학습하기 전에 Screens에서 Cloud Service 프로젝트로 채널에 대한 비디오 표현물을 만드는 방법을 학습하십시오. 자세한 내용은 [여기](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)를 참조하십시오.
+>비디오에 축소판을 사용하는 방법을 학습하기 전에 Screens as a Cloud Service 프로젝트에서 채널에 대한 비디오 표현물을 만드는 방법을 배웁니다. 자세한 내용은 [여기](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) 자세한 내용
 
 비디오에서 축소판을 사용하려면 아래 절차를 따르십시오.
 
 1. 기존 스크린 채널로 이동하거나 새 채널을 만듭니다.
 
    >[!NOTE]
-   >채널을 만들고 채널에 컨텐츠를 추가하는 방법에 대해 알려면 [Cloud Service으로 Screens에서 채널 만들기 및 관리 를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >채널을 만들고 채널에 컨텐츠를 추가하는 방법에 대해 알려면 다음을 참조하십시오 [채널에서 as a Cloud Service 생성 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
 
-1. 채널을 선택하고 작업 표시줄에서 **편집**&#x200B;을 클릭하여 편집기를 엽니다.
+1. 채널을 선택하고 을(를) 클릭합니다 **편집** 작업 표시줄에서 편집기를 엽니다.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
@@ -48,19 +48,19 @@ ht-degree: 0%
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. 비디오를 선택하고 *렌치* 아이콘을 클릭하여 비디오 속성을 엽니다.
+1. 비디오를 선택하고 을(를) 클릭합니다. *렌치* 아이콘을 클릭하여 비디오 속성을 엽니다.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. **비디오** 대화 상자가 열리면 **축소판** 드롭 영역을 볼 수 있습니다.
+1. 다음 **비디오** 대화 상자가 열립니다. **축소판** 드롭 영역.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
-1. 자산 선택기에서 이미지를 **축소판 그림** 드롭 영역으로 끌어다 놓고 **완료**&#x200B;를 클릭합니다.
+1. 자산 선택기에서 이미지를 **축소판** 영역을 클릭하고 **완료**.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
 
-1. **미리 보기**&#x200B;를 클릭합니다.
+1. 클릭 **미리 보기**.
 
 1. 비디오가 구성 요소에 설정된 경우 비디오가 재생됩니다. 축소판이 설정되어 있지 않으면 축소판이 재생됩니다. 그렇지 않으면 구성 요소가 구성되지 않은 것으로 간주되어 건너뜁니다.
 

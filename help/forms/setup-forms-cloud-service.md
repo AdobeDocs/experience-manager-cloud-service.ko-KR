@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 
 
 ## 다음 단계 {#next-steps}
 
-[로컬 개발 환경 설정](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업, 사전 채우기 서비스 등)을 만들 수 있습니다 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 클라우드 개발 환경에 로그인하지 않아도 됩니다.
+[로컬 개발 환경 설정](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업, 사전 채우기 서비스 등)을 만들 수 있습니다 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR) 클라우드 개발 환경에 로그인하지 않아도 됩니다.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

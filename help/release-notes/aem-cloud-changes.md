@@ -3,7 +3,7 @@ title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 100%
 

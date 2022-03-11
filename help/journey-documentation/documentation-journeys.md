@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -73,7 +73,7 @@ AEM 설명서 여정의 주요 목표는 AEM을 처음 사용하는 독자들이
 
 설명서 여정은 기존 AEM 기술 설명서 및 자습서를 보완하기 위한 것입니다. 예를 들어, 여정에서 개념을 소개하면 기술 문서에서 필요한 세부 구성 옵션과 특정 설정을 안내하는 자습서를 설명합니다.
 
-| 설명서 유형 | 목적 | 속성을 확인하는 | 가정합니다 | Omits | 컨텐츠 유형 | 길이 |
+| 설명서 유형 | 목적 | 대상자 | 가정합니다 | Omits | 컨텐츠 유형 | 길이 |
 |---|---|---|---|---|---|---|
 | 설명서 여정 | 여정은 독자가 복잡하고 관련된 프로세스와 기능을 통해 문제를 해결할 수 있도록 스토리를 통해 AEM이 일반적인 비즈니스 문제를 해결하는 방법을 정의합니다. 모범 사례 방식으로 비즈니스 요구 사항을 해결하기 위해 여러 기능이 함께 작동하는 방식을 보여줍니다. | AEM에 새로 Reader | 일반적인 CMS 친숙함 | 자세한 옵션 및 구성 | 텍스트 | Ca. 1시간 |
 | 기술 문서 | 기술 문서는 기능의 기술 작업과 사용자가 사용할 수 있는 모든 옵션을 자세히 설명하는 개별 기능에 중점을 둡니다. | 숙련된 AEM 사용자 | AEM 경험 | 컨텍스트 및 배경 | 텍스트 | 다양함 |
@@ -86,12 +86,12 @@ AEM 설명서 여정의 주요 목표는 AEM을 처음 사용하는 독자들이
 
 | 여정 | 설명 |
 |---|---|
-| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM에서 헤드리스 개발 모델을 지원하는 방법과 프로젝트를 계획, 구현, go-live로 시작하는 방법을 살펴보십시오. |
-| [헤드리스 작성 여정](/help/journey-headless/author/overview.md) | AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보십시오. |
-| [헤드리스 아키텍트 여정](/help/journey-headless/architect/overview.md) | Adobe Experience Manager as a Cloud Service의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법에 대해 소개합니다. |
-| [헤드리스 번역 여정](/help/journey-headless/translation/overview.md) | AEM에서 헤드리스 번역 프로젝트를 설정 및 관리하는 방법을 살펴보려면 여기에서 시작하십시오. |
+| [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | AEM에서 헤드리스 개발 모델을 지원하는 방법과 프로젝트를 계획, 구현, go-live로 시작하는 방법을 살펴보십시오. |
+| [Headless 제작 여정](/help/journey-headless/author/overview.md) | AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보십시오. |
+| [Headless 설계 여정](/help/journey-headless/architect/overview.md) | Adobe Experience Manager as a Cloud Service의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법에 대해 소개합니다. |
+| [Headless 번역 여정](/help/journey-headless/translation/overview.md) | AEM에서 헤드리스 번역 프로젝트를 설정 및 관리하는 방법을 살펴보려면 여기에서 시작하십시오. |
 | [AEM 온보딩 여정](/help/journey-onboarding/home.md) | 새로운 AEM as a Cloud Service 환경을 사용하여 바로 시작하여 빠르게 실행 가능합니다! |
-| [AEM 빠른 사이트 만들기 여정](/help/journey-sites/quick-site/overview.md) | 사용하기 간단한 AEM 빠른 사이트 만들기 도구를 통해 안내가 있는 여정을 보려면 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 경우 사이트를 신속하게 사용자 지정할 수 있습니다. |
+| [AEM 빠른 사이트 생성 여정](/help/journey-sites/quick-site/overview.md) | 사용하기 간단한 AEM 빠른 사이트 만들기 도구를 통해 안내가 있는 여정을 보려면 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 경우 사이트를 신속하게 사용자 지정할 수 있습니다. |
 | AEM Commerce 여정 | 곧 제공될 예정입니다! |
 | [AEM as a Cloud Service 마이그레이션 여정](/help/journey-migration/getting-started.md) | 온-프레미스 또는 Adobe Managed AEM 설치에서 완전히 클라우드 기반 AEM으로 마이그레이션하는 방법에 대한 단계별 여정을 시작하고 많은 이점을 소개합니다. |
 

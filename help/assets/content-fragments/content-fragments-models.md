@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠 조각 모델
+title: 콘텐츠 조각 모델
 description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기초로서 사용되는 방법과 구조화된 컨텐츠로 컨텐츠 조각을 생성하는 방법을 알아봅니다.
 feature: Content Fragments
 role: User
@@ -11,9 +11,9 @@ ht-degree: 19%
 
 ---
 
-# 컨텐츠 조각 모델 {#content-fragment-models}
+# 콘텐츠 조각 모델 {#content-fragment-models}
 
-컨텐츠 조각 모델 AEM에서 의 컨텐츠 구조를 정의합니다 [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 헤드리스 컨텐츠의 기초 역할을 합니다.
+AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠 조각,](/help/assets/content-fragments/content-fragments.md) 헤드리스 컨텐츠의 기초 역할을 합니다.
 
 컨텐츠 조각 모델을 사용하려면 다음을 수행합니다.
 
@@ -22,7 +22,7 @@ ht-degree: 19%
 1. [컨텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model) 컨텐츠 조각을 만들 때 사용할 컨텐츠 조각 을 만들 때 사용합니다.
 1. [필요한 자산 폴더에서 컨텐츠 조각 모델 을 허용합니다](#allowing-content-fragment-models-assets-folder) 구성 **정책**.
 
-## 컨텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
+## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
 
 1. **도구**, **자산**&#x200B;으로 이동한 후 **컨텐츠 조각 모델**&#x200B;을 엽니다.
 1. [구성](/help/assets/content-fragments/content-fragments-configuration-browser.md)에 적절한 폴더로 이동합니다.
@@ -66,7 +66,7 @@ ht-degree: 19%
 
    * 필수 데이터 유형을 필드에 필요한 위치로 드래그합니다.
 
-      ![data type to field](assets/cfm-models-04.png)
+      ![필드에 대한 데이터 유형](assets/cfm-models-04.png)
 
    * 모델에 필드가 추가되면 오른쪽 패널에 그 특정 데이터 유형에 대해 정의할 수 있는 **속성**&#x200B;이 표시됩니다. 여기에서 해당 필드에 필요한 사항을 정의할 수 있습니다.
 
@@ -111,7 +111,7 @@ ht-degree: 19%
    * 확인란, 라디오 단추 또는 드롭다운 필드 세트를 추가합니다
 * **태그**
    * 조각 작성자가 태그의 영역에 액세스하고 선택할 수 있습니다
-* **컨텐츠 참조**
+* **콘텐츠 참조**
    * 모든 유형의 다른 컨텐츠를 참조합니다. 다음 용도로 사용할 수 있습니다. [중첩된 컨텐츠 만들기](#using-references-to-form-nested-content)
    * 이미지가 참조되면 축소판을 표시하도록 선택할 수 있습니다
 * **조각 참조**
@@ -138,20 +138,20 @@ ht-degree: 19%
 
 * **속성 이름**
 
-   When manually updating this property for a data type, note that names **must** contain *only* Latin characters, numerical digits and underscore &quot;_&quot; as special character.
+   데이터 유형에 대해 이 속성을 수동으로 업데이트하는 경우 이름이 **반드시** contain *전용* 특수 문자로 라틴 문자, 숫자 및 밑줄 &quot;_&quot;.
 
    >[!CAUTION]
    이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우 해당 문자를 제거하거나 업데이트하십시오.
 
-* **Render As**
-The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
+* **다음으로 렌더링**
+조각의 필드를 구현하거나 렌더링하기 위한 다양한 옵션. 종종 이를 통해 작성자에게 필드의 단일 인스턴스가 표시되는지 또는 여러 인스턴스를 만들 수 있는지를 정의할 수 있습니다.
 
 * **필드 레이블**
 입력 
-**Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
+**필드 레이블** 자동으로 생성 **속성 이름**&#x200B;필요한 경우 수동으로 업데이트할 수 있습니다.
 
 * **유효성 검사**
-기본 유효성 확인은 다음과 같은 메커니즘에서 사용할 수 있습니다 **필수 여부** 속성을 사용합니다. Some data types have addition validation fields. See [Validation](#validation) for further details.
+기본 유효성 확인은 다음과 같은 메커니즘에서 사용할 수 있습니다 **필수 여부** 속성을 사용합니다. 일부 데이터 유형에는 추가 유효성 검사 필드가 있습니다. 자세한 내용은 [유효성 검사](#validation) 자세한 내용
 
 * 데이터 유형 **여러 줄 텍스트**&#x200B;의 경우 **기본 유형**&#x200B;을 다음 중 하나로 정의할 수 있습니다.
 
@@ -166,7 +166,7 @@ The various options for realizing/rendering the field in a fragment. Often this 
 * **고유**
 특정 필드의 경우, 컨텐츠는 현재 모델에서 만들어진 모든 컨텐츠 조각에서 고유해야 합니다.
 
-   This is used to ensure that content authors cannot repeat content already added in another fragment of the same model.
+   컨텐츠 작성자가 동일한 모델의 다른 조각에 이미 추가된 컨텐츠를 반복할 수 없도록 하는 데 사용됩니다.
 
    예: **한 줄 텍스트** 필드 호출 `Country` 컨텐츠 조각 모델에서는 값을 가질 수 없습니다 `Japan` 두 개의 종속 컨텐츠 조각에 있습니다. 두 번째 인스턴스를 시도하면 경고가 표시됩니다.
 
@@ -196,7 +196,7 @@ The various options for realizing/rendering the field in a fragment. Often this 
    * 사전 정의된 정규 표현식과 비교합니다.
 * **번호**
    * 특정 값을 확인합니다.
-* **컨텐츠 참조**
+* **콘텐츠 참조**
    * 특정 유형의 콘텐츠를 테스트합니다.
    * 지정된 파일 크기 이상의 자산만 참조할 수 있습니다.
    * 미리 정의된 너비 및/또는 높이 범위(픽셀 단위) 내의 이미지만 참조할 수 있습니다.
@@ -207,7 +207,7 @@ The various options for realizing/rendering the field in a fragment. Often this 
 
 컨텐츠 조각은 다음 데이터 유형 중 하나를 사용하여 중첩된 컨텐츠를 만들 수 있습니다.
 
-* **[컨텐츠 참조](#content-reference)**
+* **[콘텐츠 참조](#content-reference)**
    * 다른 컨텐츠에 대한 간단한 참조를 제공합니다. 모든 유형의
    * 하나 또는 여러 참조(결과 조각에서)에 대해 구성할 수 있습니다.
 
@@ -225,7 +225,7 @@ AEM은 다음에 대한 되풀이 보호 기능을 제공합니다.
 * GraphQL의 조각 참조 서로 참조하는 여러 컨텐츠 조각을 반환하는 딥 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 
-### 컨텐츠 참조 {#content-reference}
+### 콘텐츠 참조 {#content-reference}
 
 컨텐츠 참조를 사용하면 다른 소스의 컨텐츠를 렌더링할 수 있습니다. 예를 들어 이미지 또는 컨텐츠 조각이 있습니다.
 
@@ -238,7 +238,7 @@ AEM은 다음에 대한 되풀이 보호 기능을 제공합니다.
    * 썸네일 표시
    * 높이 및 너비의 이미지 제한
 
-![컨텐츠 참조](assets/cfm-content-reference.png)
+![콘텐츠 참조](assets/cfm-content-reference.png)
 
 ### 조각 참조(중첩된 조각) {#fragment-reference-nested-fragments}
 
@@ -270,7 +270,7 @@ type CompanyModel {
 
 * **렌더링 형식**:
 
-   * **multifield** - the fragment author can create multiple, individual, references
+   * **멀티필드** - 조각 작성자는 여러 개인 참조를 생성할 수 있습니다.
 
    * **조각 참조** - 조각 작성자가 조각에 대한 단일 참조를 선택할 수 있습니다.
 
@@ -419,7 +419,7 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 1. 모델을 선택한 후 **게시 취소** 를 클릭합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
-하나 이상의 조각에서 현재 사용하는 모델을 게시 취소하려고 하면 오류 경고가 표시됩니다.
+하나 이상의 조각에서 현재 사용하는 모델을 게시 취소하려고 하면 오류 경고에서 다음 내용을 알려줍니다.
 
 ![사용 중인 모델을 게시 취소할 때 컨텐츠 조각 모델 오류 메시지가 표시됩니다](assets/cfm-model-unpublish-error.png)
 
@@ -459,13 +459,13 @@ GraphQL에서 조각 참조에 대한 반복 보호도 있습니다. 서로를 �
 
 모델이 인 경우 **잠김** (읽기 전용 모드에서) 모델의 내용 및 구조를 볼 수 있지만 편집할 수는 없습니다.
 
-You can manage **Locked** models from either the console, or the model editor:
+다음을 관리할 수 있습니다 **잠김** 콘솔 또는 모델 편집기의 모델입니다.
 
 * 콘솔
 
-   From the console, you can manage the READ-ONLY mode with the **Unlock** and **Lock** actions in the toolbar:
+   콘솔에서 를 사용하여 읽기 전용 모드를 관리할 수 있습니다. **잠금 해제** 및 **잠금** 도구 모음의 작업:
 
-   ![Toolbar of locked Content Fragment Model](assets/cfm-model-locked.png)
+   ![잠긴 컨텐츠 조각 모델의 도구 모음](assets/cfm-model-locked.png)
 
    * 다음을 수행할 수 있습니다 **잠금 해제** 편집 기능을 활성화하는 모델.
 

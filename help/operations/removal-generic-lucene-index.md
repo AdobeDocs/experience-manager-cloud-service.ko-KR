@@ -1,14 +1,13 @@
 ---
 title: 일반 Lucene 색인 제거
 description: 일반 Lucene 인덱스 제거와 영향을 받는 방법에 대해 알아봅니다.
-exl-id: fe0e00ac-f9c8-43cf-83c2-5a353f5eaeab
-source-git-commit: 7a3c8b59a5a642ffc335fc80898fb956221cfcc2
+exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 0%
 
 ---
-
 
 # 일반 Lucene 색인 제거 {#generic-lucene-index-removal}
 

@@ -128,7 +128,7 @@ Microsoft Azure 저장소에서 [컨테이너](https://docs.microsoft.com/en-us/
 배치를 생성하려면 `POST /config` API. HTTP 요청 본문에 다음 필수 속성을 포함하십시오.
 
 * **configName**: 배치의 고유 이름을 지정합니다. 예, `wknd-job`
-* **dataSourceConfigUri**: 배치 데이터 저장소 구성의 위치를 지정합니다. 구성의 상대 또는 절대 경로일 수 있습니다. 예를 들어,`/conf/global/settings/forms/usc/batch/wknd-batch`
+* **dataSourceConfigUri**: 배치 데이터 저장소 구성의 위치를 지정합니다. 구성의 상대 또는 절대 경로일 수 있습니다. 예를 들어`/conf/global/settings/forms/usc/batch/wknd-batch`
 * **outputTypes**: 출력 형식 지정: PDF 및 인쇄 PRINT 출력 유형을 사용하는 경우 `printedOutputOptionsList` 속성을 하나 이상 지정합니다. 인쇄 옵션은 해당 렌더링 유형으로 식별되므로 현재 동일한 렌더링 유형을 사용하는 여러 인쇄 옵션이 허용되지 않습니다. 지원되는 형식은 PS, PCL, DPL, IPL 및 ZPL입니다.
 
 * **템플릿**: 템플릿의 절대 또는 상대 경로를 지정합니다. 예, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`

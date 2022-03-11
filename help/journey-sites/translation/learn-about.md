@@ -4,13 +4,13 @@ description: AEM Sites 개념과 AEM 번역 이론에 대해 알아봅니다.
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
-
 
 # 사이트 컨텐츠와 AEM에서 번역하는 방법에 대해 알아봅니다 {#learn-about}
 
@@ -33,7 +33,7 @@ AEM Sites은 디지털 경험을 만들고, 관리하고, 전달할 수 있는 �
 >
 >이 설명서 여정은 번역 전문가가 번역해야 하는 컨텐츠를 이해할 수 있도록 AEM Sites 기능의 기본 사항만 다룹니다.
 >
->AEM Sites과 모든 강력한 기능에 대한 자세한 내용은 이 문서의 끝에 있는 [추가 정보 섹션](#additional-information)을 통해 AEM Sites 리소스를 더 자세히 알아보십시오.
+>AEM Sites 및 모든 강력한 기능에 대한 자세한 내용은 [추가 정보 섹션](#additional-information) 자세한 내용은 이 문서 끝 부분에 있는 AEM Sites 리소스를 참조하십시오.
 
 ## AEM에서 사이트 컨텐츠 번역 {#translating-in-aem}
 
@@ -51,16 +51,16 @@ AEM을 사용하면 컨텐츠를 간단하게 만들고 관리할 수 있을 뿐
 
 ## 다음은 무엇입니까? {#what-is-next}
 
-AEM Sites 번역 여정을 시작해 주셔서 감사합니다! 이제 이 문서를 읽고 나면 다음을 수행해야 합니다.
+AEM Sites 번역 여정을 시작해 주셔서 감사합니다! 이 문서를 읽으면 다음을 수행해야 합니다.
 
 * AEM Sites 컨텐츠 만들기에 대한 기본 개념을 이해합니다.
 * AEM에서 번역을 지원하는 방법을 숙지하십시오.
 
-이 지식을 바탕으로 구축하고 AEM Sites 번역 여정을 계속 진행하려면 다음 문서 [AEM Sites 번역 시작하기](getting-started.md)를 참조하여 AEM에서 컨텐츠를 관리하는 방법에 대한 개요를 보고 해당 번역 도구를 알 수 있습니다.
+이 지식을 바탕으로 작성되고 다음에 문서를 검토하여 AEM Sites 번역 여정을 계속 진행합니다 [AEM Sites 번역 시작](getting-started.md) 에서는 AEM에서 컨텐츠를 관리하고 번역 도구를 이해하는 방법에 대한 개요를 알 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
-문서 [AEM Sites 번역 시작하기](getting-started.md)를 검토하여 사이트 번역 여정의 다음 부분으로 이동하는 것이 좋습니다. 다음은 이 문서에서 언급된 일부 개념에 대해 자세히 설명하는 추가 선택적 리소스입니다. 하지만 여정을 계속 진행할 필요는 없습니다.
+문서를 검토하여 사이트 번역 여정의 다음 부분으로 이동하는 것이 좋습니다 [AEM Sites 번역 시작,](getting-started.md) 다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 여정을 계속 진행할 필요는 없습니다.
 
-* [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md)  - AEM Sites을 사용하여 컨텐츠를 만드는 데 가장 중요한 개념에 대한 빠른 개요
-* [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)  - AEM 다중 사이트 관리자의 세부 정보와 번역 도구로 작동하는 방식
+* [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEM Sites을 사용하여 컨텐츠를 작성하는 데 가장 중요한 개념에 대한 빠른 개요
+* [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md) - AEM 다중 사이트 관리자의 세부 정보 및 번역 도구 사용 방법

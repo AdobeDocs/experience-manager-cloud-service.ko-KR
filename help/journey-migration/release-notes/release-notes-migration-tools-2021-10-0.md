@@ -2,20 +2,20 @@
 title: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.10.0
 description: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.11.0
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
-
 
 # AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.10.0 {#release-notes}
 
 이 페이지에서는 AEM as a Cloud Service의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다2021.10.0.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
+>Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -36,7 +36,7 @@ Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
 이제 Cloud Acceleration Manager에서 BPA 보고서를 인쇄 가능한 미리 보기로 볼 수 있으므로 인쇄하거나 인쇄하여 PDF에 인쇄하여 공유하기 쉽게 할 수 있습니다. 의 6단계 및 7단계를 참조하십시오 [우수 사례 분석 카드 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
-## 컨텐츠 전송 도구 {#ctt-release}
+## 콘텐츠 전송 도구 {#ctt-release}
 
 ### 릴리스 날짜 {#release-date-ctt-latest}
 

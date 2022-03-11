@@ -1,17 +1,17 @@
 ---
-title: Live Copy 동기화 구성
+title: 라이브 카피 동기화 구성
 description: 사용 가능한 강력한 Live Copy 동기화 옵션과 프로젝트 요구 사항에 맞게 구성 및 사용자 지정할 수 있는 방법에 대해 알아봅니다.
-feature: 다중 사이트 관리자
+feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 31%
+source-wordcount: '2336'
+ht-degree: 30%
 
 ---
 
-# Live Copy 동기화 구성 {#configuring-live-copy-synchronization}
+# 라이브 카피 동기화 구성 {#configuring-live-copy-synchronization}
 
 Adobe Experience Manager에서는 즉시 사용 가능한 다양한 동기화 구성을 제공합니다. Live Copy를 사용하기 전에 Live Copy가 소스 컨텐츠와 동기화되는 방법과 시기를 정의하려면 다음 사항을 고려해야 합니다.
 
@@ -25,20 +25,20 @@ Adobe Experience Manager에서는 즉시 사용 가능한 다양한 동기화 �
 
 >[!CAUTION]
 >
->기본 롤아웃 구성을 업데이트하거나 변경하는 것은&#x200B;**권장되지 않습니다**. 사용자 지정 라이브 작업에 대한 요구 사항이 있는 경우 사용자 지정 롤아웃 구성에 추가해야 합니다.
+>기본 롤아웃 구성을 업데이트 또는 변경하는 것은 **not** 권장. 사용자 지정 라이브 작업에 대한 요구 사항이 있는 경우 사용자 지정 롤아웃 구성에 추가해야 합니다.
 
 ### 롤아웃 트리거 {#rollout-triggers}
 
 각 롤아웃 구성은 롤아웃이 발생하도록 하는 롤아웃 트리거를 사용합니다. 롤아웃 구성은 다음 트리거 중 하나를 사용할 수 있습니다.
 
-* **롤아웃 시**: Rolloutcommand  **** 는 파란색 인쇄 페이지에서 사용되거나 Live  **** Copy 페이지에서 Synchronizecommand 가 사용됩니다.
+* **롤아웃 시**: 다음 **롤아웃** 명령은 파란색 인쇄 페이지나 **동기화** 명령은 Live Copy 페이지에서 사용됩니다.
 * **수정 시**: 소스 페이지가 수정됩니다.
 * **활성화 시**: 소스 페이지가 활성화됩니다.
 * **비활성화 시**: 소스 페이지가 비활성화됩니다.
 
 >[!NOTE]
 >
->**수정 시** 트리거를 사용하면 성능에 영향을 줄 수 있습니다. 자세한 내용은 [MSM 우수 사례](best-practices.md#onmodify)를 참조하십시오.
+>의 사용 **수정 시** 트리거는 성능에 영향을 줄 수 있습니다. 자세한 내용은 [MSM 우수 사례](best-practices.md#onmodify)를 참조하십시오.
 
 ### 롤아웃 구성 {#rollout-configurations}
 
@@ -53,8 +53,8 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | 표준 롤아웃 구성 | 롤아웃 트리거 및 실행 작업에 대한 롤아웃 프로세스를 시작할 수 있는 표준 롤아웃 구성: 컨텐츠를 생성, 업데이트, 삭제하고 하위 노드의 순서를 지정합니다 | 롤아웃 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
 | 블루프린트 활성화에서 활성화 | 소스가 게시될 때 Live Copy를 게시합니다 | 활성화 시 | `targetActivate` |
 | 블루프린트 비활성화에서 비활성화 | 소스가 비활성화될 때 Live Copy 비활성화 | 비활성화 시 | `targetDeactivate` |
-| 수정되면 푸시 | 소스가 수정될 때 Live Copy에 컨텐츠를 푸시합니다<br>이 롤아웃 구성은 수정 시 트리거를 사용하므로 제한적으로 사용합니다. | 수정 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| 수정되면 푸시(약식) | 블루프린트 페이지가 수정될 때 참조를 업데이트하지 않고(예: 약식 복사본의 경우)<br>이 롤아웃 구성을 수정 시 트리거를 사용하므로 제한적으로 사용합니다. | 수정 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| 수정되면 푸시 | 소스가 수정될 때 컨텐츠를 Live Copy에 푸시합니다.<br>이 롤아웃 구성은 수정 시 트리거를 사용하므로 제한적으로 사용합니다. | 수정 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
+| 수정되면 푸시(약식) | 블루프린트 페이지가 수정될 때 참조를 업데이트하지 않고 컨텐츠를 Live Copy에 푸시합니다(예: 약식 사본의 경우)<br>이 롤아웃 구성은 수정 시 트리거를 사용하므로 제한적으로 사용합니다. | 수정 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | 출시 홍보 | 시작 페이지를 홍보하기 위한 표준 롤아웃 구성입니다. | 롤아웃 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### 동기화 작업 {#synchronization-actions}
@@ -65,22 +65,22 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 | 작업 이름 | 설명 | 속성 |
 |---|---|---|
-| `contentCopy` | 소스의 노드가 Live Copy에 없으면 이 작업이 노드를 Live Copy에 복사합니다. [제외할 노드 유형,  **단락 항목 및 페이지 속성을 지정하도록** ](#excluding-properties-and-node-types-from-synchronization) CQ MSM 컨텐츠 복사 작업 서비스를 구성합니다. |  |
-| `contentDelete` | 이 작업은 소스에 없는 Live Copy 노드를 삭제합니다. [제외할 노드 유형,  **단락 항목 및 페이지 속성** ](#excluding-properties-and-node-types-from-synchronization) 을 지정하도록 CQ MSM 컨텐츠 삭제 작업 서비스를 구성합니다. |  |
-| `contentUpdate` | 이 작업은 소스의 변경 사항으로 Live Copy 컨텐츠를 업데이트합니다. [제외할 노드 유형,  **단락 항목 및 페이지 속성을 지정하도록** ](#excluding-properties-and-node-types-from-synchronization) CQ MSM 컨텐츠 업데이트 작업 서비스를 구성합니다. |  |
-| `editProperties` | 이 작업은 Live Copy의 속성을 편집합니다. `editMap` 속성은 편집할 속성과 해당 값을 결정합니다. `editMap` 속성 값은<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` 및 `new_value` 형식을 사용해야 하며, `n`은(는) 증분 정수입니다.<br>예를 들어 다음 값을 고려하십시오.  `editMap`<br>`sling:resourceType#/(contentpage` `homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>이 값은 Live Copy 노드의 속성을 다음과 같이 편집합니다.<br>  `sling:resourceType` 또는 로  `contentpage` 설정된 속성 `homepage` 은  `mobilecontentpage`로 설정됩니다.<br>로  `cq:template` 설정된 속성 `contentpage` 이 로 설정되어 있습니다 `mobilecontentpage`. | `editMap: (String)` 속성, 현재 값 및 새 값을 식별합니다. 자세한 내용은 설명을 참조하십시오. |
+| `contentCopy` | 소스의 노드가 Live Copy에 없으면 이 작업이 노드를 Live Copy에 복사합니다. [구성 **CQ MSM 컨텐츠 복사 작업** 서비스](#excluding-properties-and-node-types-from-synchronization) 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하려면 |  |
+| `contentDelete` | 이 작업은 소스에 없는 Live Copy 노드를 삭제합니다. [구성 **CQ MSM 컨텐츠 삭제 작업** 서비스](#excluding-properties-and-node-types-from-synchronization) 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하려면 |  |
+| `contentUpdate` | 이 작업은 소스의 변경 사항으로 Live Copy 컨텐츠를 업데이트합니다. [구성 **CQ MSM 콘텐츠 업데이트 작업** 서비스](#excluding-properties-and-node-types-from-synchronization) 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하려면 |  |
+| `editProperties` | 이 작업은 Live Copy의 속성을 편집합니다. 다음 `editMap` 속성은 편집할 속성과 해당 값을 결정합니다. 의 값 `editMap` 속성은 다음 형식을 사용해야 합니다.<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` 및 `new_value` 정규 표현식 및 `n` 증분 정수입니다.<br>예를 들어 다음 값을 고려하십시오. `editMap`:<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>이 값은 Live Copy 노드의 속성을 다음과 같이 편집합니다.<br>다음 `sling:resourceType` 다음 중 하나로 설정되는 속성 `contentpage` 또는 `homepage` 가 로 설정되어 있습니다. `mobilecontentpage`.<br>다음 `cq:template` 로 설정된 속성 `contentpage` 가 로 설정되어 있습니다. `mobilecontentpage`. | `editMap: (String)` 속성, 현재 값 및 새 값을 식별합니다. 자세한 내용은 설명을 참조하십시오. |
 | `notify` | 이 작업은 페이지가 롤아웃된 페이지 이벤트를 보냅니다. 알림을 받으려면 먼저 롤아웃 이벤트를 구독해야 합니다. |  |
 | `orderChildren` | 이 작업은 블루프린트의 순서에 따라 하위 노드를 주문합니다. |  |
-| `referencesUpdate` | 이 동기화 작업은 Live Copy의 참조를 업데이트합니다.<br>블루프린트 내의 리소스를 가리키는 Live Copy 페이지에서 경로를 검색합니다. 찾으면 Live Copy 내의 관련 리소스를 가리키도록 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다. <br>[제외할 노드 유형,  **단락 항목 및 페이지 속성을 지정하도록** ](#excluding-properties-and-node-types-from-synchronization) CQ MSM 참조 업데이트 작업 서비스를 구성합니다. |  |
+| `referencesUpdate` | 이 동기화 작업은 Live Copy의 참조를 업데이트합니다.<br>블루프린트 내의 리소스를 가리키는 Live Copy 페이지에서 경로를 검색합니다. 찾으면 Live Copy 내의 관련 리소스를 가리키도록 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다. <br>[구성 **CQ MSM 참조 업데이트 작업** 서비스](#excluding-properties-and-node-types-from-synchronization) 제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하려면 |  |
 | `targetVersion` | 이 작업으로 Live Copy 버전이 만들어집니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. |  |
 | `targetActivate` | 이 작업을 수행하면 Live Copy가 활성화됩니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. |  |
 | `targetDeactivate` | 이 작업은 Live Copy를 비활성화합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. |  |
 | `workflow` | 이 작업은 target 속성(페이지에만 해당)에 정의된 워크플로우를 시작하고 Live Copy를 페이로드로 가져옵니다.<br>대상 경로는 모델 노드의 경로입니다. | `target: (String)` 은 워크플로우 모델의 경로입니다. |
-| `mandatory` | 이 작업은 Live Copy 페이지에서 여러 ACL의 권한을 특정 사용자 그룹에 대한 읽기 전용으로 설정합니다. 다음 ACL이 구성됩니다.<br>`ActionSet.ACTION_NAME_REMOVE`<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>이 작업은 페이지에만 사용하십시오. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
-| `mandatoryContent` | 이 작업은 Live Copy 페이지에서 여러 ACL의 권한을 특정 사용자 그룹에 대한 읽기 전용으로 설정합니다. 다음 ACL이 구성됩니다.<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>이 작업은 페이지에만 사용하십시오. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
-| `mandatoryStructure` | 이 작업은 Live Copy 페이지에서 `ActionSet.ACTION_NAME_REMOVE` ACL의 권한을 특정 사용자 그룹에 대한 읽기 전용으로 설정합니다.<br>이 작업은 페이지에만 사용합니다. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
+| `mandatory` | 이 작업은 Live Copy 페이지에서 여러 ACL의 권한을 특정 사용자 그룹에 대한 읽기 전용으로 설정합니다. 다음 ACL이 구성됩니다.<br>`ActionSet.ACTION_NAME_REMOVE`<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>이 작업은 페이지에만 사용합니다. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
+| `mandatoryContent` | 이 작업은 Live Copy 페이지에서 여러 ACL의 권한을 특정 사용자 그룹에 대한 읽기 전용으로 설정합니다. 다음 ACL이 구성됩니다.<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>이 작업은 페이지에만 사용합니다. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
+| `mandatoryStructure` | 이 작업은 의 권한을 설정합니다 `ActionSet.ACTION_NAME_REMOVE` Live Copy 페이지의 특정 사용자 그룹에 대한 읽기 전용 ACL입니다.<br>이 작업은 페이지에만 사용합니다. | `target: (String)` 는 권한을 설정할 그룹의 ID입니다. |
 | `VersionCopyAction` | 블루프린트/소스 페이지가 한 번 이상 게시된 경우 이 작업은 게시된 버전을 사용하여 Live Copy 페이지를 만듭니다. 참고: 이 작업은 게시된 소스 페이지를 기반으로 Live Copy 페이지를 생성하는 데에만 사용할 수 있으며, 기존 Live Copy 페이지를 업데이트하는 데에는 사용할 수 없습니다. |  |
-| `PageMoveAction` | `PageMoveAction` 은 페이지가 블루프린트에서 이동되었을 때 적용됩니다.<br>이 작업은 이동 전 위치에서 이동 후 위치로 (관련) Live Copy 페이지를 이동하는 대신 복사합니다.<br>는 이동 전 위치에서 Live Copy 페이지를 변경하지  `PageMoveAction` 않습니다. 따라서 연속 롤아웃 구성의 경우 블루프린트 없이 라이브 관계의 상태가 됩니다.제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하도록 <br>[**** CQ MSM 페이지 이동 작업 서비스를 구성](#excluding-properties-and-node-types-from-synchronization)합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. | 참조를 업데이트하려면 `prop_referenceUpdate: (Boolean)`을 true(기본값)로 설정하십시오. |
+| `PageMoveAction` | 다음 `PageMoveAction` 페이지가 블루프린트에서 이동되었을 때 적용됩니다.<br>이 작업은 이동 전 위치에서 이동 후 위치로 (관련) Live Copy 페이지를 이동하는 대신 복사합니다.<br>다음 `PageMoveAction` 이동 전 위치에서 Live Copy 페이지를 변경하지 않습니다. 따라서 연속 롤아웃 구성의 경우 블루프린트 없이 라이브 관계의 상태가 됩니다.제외할 노드 유형, 단락 항목 및 페이지 속성을 지정하도록 <br>[**** CQ MSM 페이지 이동 작업 서비스를 구성](#excluding-properties-and-node-types-from-synchronization)합니다.<br>이 작업은 롤아웃 구성에 포함된 유일한 동기화 작업이어야 합니다. | 설정 `prop_referenceUpdate: (Boolean)` 를 true(기본값)로 업데이트하여 참조를 업데이트합니다. |
 | `markLiveRelationship` | 이 작업 launch에서 만든 컨텐츠에 대한 라이브 관계가 존재함을 나타냅니다. |  |
 
 <!--
@@ -98,7 +98,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 특정 노드 유형 및 속성에 영향을 주지 않도록 해당 동기화 작업을 지원하는 여러 OSGi 서비스를 구성할 수 있습니다. 예를 들어, AEM의 내부 기능과 관련된 많은 속성 및 하위 노드는 Live Copy에 포함하지 않아야 합니다. 페이지의 사용자와 관련된 컨텐츠만 복사해야 합니다.
 
-AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/implementing/deploying/configuring-osgi.md) 구성 을 참조하십시오.
+AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다. 자세한 내용은 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md) 자세한 내용 및 권장 지침
 
 다음 표에는 제외할 노드를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 표는 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
 
@@ -117,7 +117,7 @@ AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설
 | 제외된 노드 유형 | `cq.wcm.msm.action.excludednodetypes` | 동기화 작업에서 제외할 노드 유형과 일치하는 정규식입니다 |
 | 제외된 단락 항목 | `cq.wcm.msm.action.excludedparagraphitems` | 동기화 작업에서 제외할 단락 항목과 일치하는 정규 표현식입니다 |
 | 제외된 페이지 속성 | `cq.wcm.msm.action.excludedprops` | 동기화 작업에서 제외할 페이지 속성과 일치하는 정규식입니다 |
-| 무시된 Mixin NodeTypes | `cq.wcm.msm.action.ignoredMixin` | 동기화 작업에서 제외할 mixin 노드 유형의 이름과 일치하는 정규식입니다( `contentUpdate` 작업에만 사용 가능) |
+| 무시된 Mixin NodeTypes | `cq.wcm.msm.action.ignoredMixin` | 동기화 작업에서 제외할 mixin 노드 유형의 이름과 일치하는 정규식입니다(만 사용 가능) `contentUpdate` action) |
 
 #### CQ MSM 컨텐츠 업데이트 작업 - 제외 {#cq-msm-content-update-action-exclusions}
 
@@ -137,14 +137,14 @@ AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설
 
 참조 업데이트와 관련된 해당 동기화 작업을 지원하는 여러 OSGi 서비스를 구성할 수 있습니다.
 
-AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/implementing/deploying/configuring-osgi.md) 구성 을 참조하십시오.
+AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다. 자세한 내용은 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md) 자세한 내용 및 권장 지침
 
 다음 표에는 참조 업데이트를 지정할 수 있는 동기화 작업이 나열되어 있습니다. 이 표는 웹 콘솔을 사용하여 구성할 서비스의 이름 및 저장소 노드를 사용하여 구성할 PID를 제공합니다.
 
 | 웹 콘솔 속성 | OSGi 속성 | 설명 |
 |---|---|---|
-| 중첩된 LiveCopy에서 참조 업데이트 | `cq.wcm.msm.impl.action.referencesupdate.prop_updateNested` | 웹 콘솔에서 이 옵션을 선택하거나, 가장 높은 라이브 카피의 분기 내에 있는 리소스를 대상으로 하는 참조를 바꾸려면 저장소 구성을 사용하여 이 부울 속성을 `true` 로 설정하십시오. `referencesUpdate` 작업에만 사용할 수 있습니다. |
-| 참조 페이지 업데이트 | `cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate` | 웹 콘솔에서 이 옵션을 선택하거나 저장소 구성을 사용하여 Live Copy 페이지를 참조하지 않고 원래 페이지를 사용하도록 참조를 업데이트하여 이 부울 속성을 `true` 로 설정합니다. `PageMoveAction`에만 사용할 수 있습니다. |
+| 중첩된 LiveCopy에서 참조 업데이트 | `cq.wcm.msm.impl.action.referencesupdate.prop_updateNested` | 웹 콘솔에서 이 옵션을 선택하거나 이 부울 속성을 로 설정합니다. `true` 가장 높은 라이브 카피의 분기 내에 있는 리소스를 대상으로 하는 참조를 바꾸기 위해 저장소 구성을 사용합니다. 에 대해서만 사용 가능 `referencesUpdate` 작업. |
+| 참조 페이지 업데이트 | `cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate` | 웹 콘솔에서 이 옵션을 선택하거나 이 부울 속성을 로 설정합니다. `true` 저장소 구성을 사용하여 Live Copy 페이지를 참조하지 않고 원래 페이지를 사용하도록 참조를 업데이트합니다. 에 대해서만 사용 가능 `PageMoveAction`. |
 
 ## 사용할 롤아웃 구성 지정 {#specifying-the-rollout-configurations-to-use}
 
@@ -152,12 +152,12 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
 사용할 롤아웃 구성을 지정할 수 있는 다음 위치 목록은 MSM이 Live Copy에 사용할 롤아웃 구성을 결정하는 방법을 설명합니다.
 
-* **[Live Copy 페이지 속성](live-copy-sync-config.md#setting-the-rollout-configurations-for-a-live-copy-page):**  Live Copy 페이지가 하나 이상의 롤아웃 구성을 사용하도록 구성된 경우 MSM은 이러한 롤아웃 구성을 사용합니다.
-* **[블루프린트 페이지 속성](live-copy-sync-config.md#setting-the-rollout-configuration-for-a-blueprint-page):**  Live Copy가 블루프린트를 기반으로 하고 Live Copy 페이지가 롤아웃 구성으로 구성되지 않은 경우 블루프린트 소스 페이지와 연결된 롤아웃 구성이 사용됩니다.
-* **Live Copy 상위 페이지 속성:**  Live Copy 페이지나 블루프린트 소스 페이지가 롤아웃 구성으로 구성되지 않은 경우 Live Copy 페이지의 상위 페이지에 적용되는 롤아웃 구성이 사용됩니다.
-* **[시스템 기본값](live-copy-sync-config.md#setting-the-system-default-rollout-configuration):**  Live Copy 상위 페이지의 롤아웃 구성을 확인할 수 없는 경우 시스템 기본 롤아웃 구성이 사용됩니다.
+* **[Live Copy 페이지 속성](live-copy-sync-config.md#setting-the-rollout-configurations-for-a-live-copy-page):** Live Copy 페이지가 하나 이상의 롤아웃 구성을 사용하도록 구성된 경우 MSM은 이러한 롤아웃 구성을 사용합니다.
+* **[블루프린트 페이지 속성](live-copy-sync-config.md#setting-the-rollout-configuration-for-a-blueprint-page):** Live Copy가 블루프린트를 기반으로 하고 Live Copy 페이지가 롤아웃 구성으로 구성되지 않은 경우 블루프린트 소스 페이지와 연결된 롤아웃 구성이 사용됩니다.
+* **Live Copy 상위 페이지 속성:** Live Copy 페이지나 블루프린트 소스 페이지가 롤아웃 구성으로 구성되지 않은 경우 Live Copy 페이지의 상위 페이지에 적용되는 롤아웃 구성이 사용됩니다.
+* **[시스템 기본값](live-copy-sync-config.md#setting-the-system-default-rollout-configuration):** Live Copy 상위 페이지의 롤아웃 구성을 확인할 수 없는 경우 시스템 기본 롤아웃 구성이 사용됩니다.
 
-예를 들어 블루프린트는 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 사이트를 소스 컨텐츠로 사용합니다. 블루프린트에서 사이트가 생성됩니다. 다음 목록의 각 항목은 롤아웃 구성 사용과 관련된 여러 시나리오를 설명합니다.
+예를 들어 블루프린트는 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 사이트를 소스 컨텐츠로 추가할 수 있습니다. 블루프린트에서 사이트가 생성됩니다. 다음 목록의 각 항목은 롤아웃 구성 사용과 관련된 여러 시나리오를 설명합니다.
 
 * 블루프린트 페이지나 Live Copy 페이지가 롤아웃 구성을 사용하도록 구성되지 않습니다. MSM은 모든 Live Copy 페이지에 시스템 기본 롤아웃 구성을 사용합니다.
 * WKND 사이트의 루트 페이지는 여러 롤아웃 구성으로 구성됩니다. MSM은 모든 Live Copy 페이지에 이러한 롤아웃 구성을 사용합니다.
@@ -167,9 +167,9 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
 소스 페이지가 롤아웃될 때 사용할 롤아웃 구성으로 Live Copy 페이지를 구성합니다. 하위 페이지는 기본적으로 구성을 상속합니다. 사용할 롤아웃 구성을 구성할 때 Live Copy 페이지가 상위에서 상속하는 구성을 재정의합니다.
 
-[Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page)를 만들 때 Live Copy 페이지에 대한 롤아웃 구성을 구성할 수도 있습니다.
+Live Copy 페이지에 대한 롤아웃 구성을 구성할 수도 있습니다 [live Copy 만들기](creating-live-copies.md#creating-a-live-copy-of-a-page).
 
-1. **Sites** 콘솔을 사용하여 Live Copy 페이지를 선택합니다.
+1. 를 사용하십시오 **Sites** 콘솔 을 클릭하여 Live Copy 페이지를 선택합니다.
 1. 도구 모음에서 **속성**&#x200B;을 선택합니다.
 1. **Live Copy** 탭을 엽니다.
 
@@ -185,7 +185,7 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
    ![Live Copy 구성 상속 재정의](../assets/live-copy-inherit-override.png)
 
-1. **저장 및 닫기**&#x200B;를 클릭하거나 탭합니다.
+1. 클릭 또는 탭 **저장 및 닫기**.
 
 ### 블루프린트 페이지에 대한 롤아웃 구성 설정 {#setting-the-rollout-configuration-for-a-blueprint-page}
 
@@ -203,11 +203,11 @@ MSM을 사용하면 일반적으로 사용되는 롤아웃 구성 세트를 지�
 
 시스템 기본값으로 사용할 롤아웃 구성을 지정하려면 다음 OSGi 서비스를 구성합니다.
 
-* **Day CQ WCM Live Relationship** Manager with the service PID  `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager** 서비스 PID로 `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-[웹 콘솔](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소 노드](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-in-the-repository)를 사용하여 서비스를 구성합니다.
+다음 중 하나를 사용하여 서비스를 구성합니다 [웹 콘솔](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소 노드](/help/implementing/deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
-* 웹 콘솔에서 구성할 속성의 이름은 **기본 롤아웃 구성**&#x200B;입니다.
-* 저장소 노드를 사용하는 경우 구성할 속성의 이름은 `liverelationshipmgr.relationsconfig.default`입니다.
+* 웹 콘솔에서 구성할 속성의 이름은 다음과 같습니다 **기본 롤아웃 구성**.
+* 저장소 노드를 사용하는 경우 구성할 속성의 이름은 다음과 같습니다 `liverelationshipmgr.relationsconfig.default`.
 
-시스템 기본값으로 사용할 롤아웃 구성 경로로 이 속성 값을 설정합니다. 기본값은 `/libs/msm/wcm/rolloutconfigs/default`표준 롤아웃 구성&#x200B;**입니다.**
+시스템 기본값으로 사용할 롤아웃 구성 경로로 이 속성 값을 설정합니다. 기본값은 입니다. `/libs/msm/wcm/rolloutconfigs/default`: **표준 롤아웃 구성**.

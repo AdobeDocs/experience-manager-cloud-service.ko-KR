@@ -1,14 +1,14 @@
 ---
-title: 'Headless 콘텐츠에 대한 권한 고려 사항 '
+title: Headless 콘텐츠에 대한 권한 고려 사항
 description: Adobe Experience Manager를 사용한 Headless 구현에 대한 다양한 권한 및 ACL 고려 사항에 대해 알아봅니다. Author 및 Publish 환경 모두에 필요한 다양한 가상 사용자 및 잠재적 권한 수준을 이해합니다.
 feature: Content Fragments,GraphQL API
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
-workflow-type: ht
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
 
 ---
-
 
 # Headless 콘텐츠에 대한 권한 고려 사항
 
@@ -98,4 +98,3 @@ CUG는 GraphQL API를 통해 노출된 콘텐츠가 포함된 에셋 폴더에 �
 ### GraphQL API에 액세스
 
 AEM Publish 서비스의 GraphQL API 끝점에 [적절한 인증 자격 증명](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client)을 제공하는 HTTP 요청에는 자격 증명이 읽을 수 있는 콘텐츠와 익명으로 액세스할 수 있는 콘텐츠가 포함됩니다. GraphQL API의 다른 소비자는 CUG로 보호된 폴더의 콘텐츠를 읽을 수 없습니다.
-

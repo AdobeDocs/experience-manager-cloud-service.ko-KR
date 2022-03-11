@@ -137,7 +137,7 @@ AEM을 사용하면 장치의 너비에 따라 레이아웃을 정의할 수 있
 >
 >아직 사용할 수 없는 경우에는 **레이아웃 컨테이너**&#x200B;를 단락 시스템/페이지에 대해 확실히 활성화해야 합니다. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. **레이아웃 컨테이너**&#x200B;를 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 표준 구성 요소로 사용할 수 있습니다. 여기서 레이아웃 컨테이너를 페이지 상의 필요한 위치로 끌어오면 **구성 요소를 여기로 드래그하십시오.** 자리 표시자가 표시됩니다.
+1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). From here you can drag it to the required location on the page after which you will see the **Drag Components here** placeholder.
 1. 그런 다음 구성 요소를 레이아웃 컨테이너에 추가할 수 있습니다. 이러한 구성 요소는 실제 컨텐츠를 담게 됩니다.
 
    ![레이아웃 컨테이너](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -230,9 +230,9 @@ AEM을 사용하면 장치의 너비에 따라 레이아웃을 정의할 수 있
    >
    >위의 예에서 이동 및 숨기기 동작은 레이아웃 컨테이너가 상위 레이아웃 컨테이너 내에서 중첩되기 때문에 가능한 것입니다.
 
-   * **구성**
-요소 숨김 취소상위 구성 요소를 선택하여 작업 도구 모음을 
-**숨겨진 구성** 요소 표시 선택 사항. 이 예시에는 두 개의 구성 요소가 숨겨져 있습니다.
+   * **구성 요소 숨기기 취소**
+상위 구성 요소를 선택하여 작업 도구 모음을 
+**숨겨진 구성 요소 표시** 선택 사항입니다. 이 예시에는 두 개의 구성 요소가 숨겨져 있습니다.
 
       ![구성 요소 숨기기 취소](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    **숨겨진 구성 요소 표시** 옵션을 선택하면 원래 위치에서 현재 숨겨진 구성 요소가 파란색으로 표시됩니다.

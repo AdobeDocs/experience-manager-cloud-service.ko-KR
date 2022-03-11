@@ -1,33 +1,33 @@
 ---
 title: angular을 사용하여 AEM에서 SPA 시작하기
-description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하며 이 응용 프로그램을 구성하는 방법을 설명하고 Angular 프레임워크을 사용하여 신속하게 자체 SPA을 사용하여 실행 및 실행할 수 있도록 해줍니다.
+description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하며 이 응용 프로그램을 구성하는 방법을 설명하고 Angular 프레임워크을 사용하여 자체 SPA을 빠르게 실행 및 실행할 수 있도록 해줍니다.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# angular {#getting-started-with-spas-in-aem-using-angular}을 사용하여 AEM에서 SPA 시작하기
+# angular을 사용하여 AEM에서 SPA 시작하기 {#getting-started-with-spas-in-aem-using-angular}
 
-Single page applications (SPAs) can offer compelling experiences for website users. 개발자는 SPA 프레임워크을 사용하여 사이트를 작성하려고 하며 작성자는 SPA 프레임워크을 사용하여 작성된 사이트의 AEM 내에서 컨텐츠를 원활하게 편집하려고 합니다.
+SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 작성하려고 하며 작성자는 SPA 프레임워크을 사용하여 작성된 사이트의 AEM 내에서 컨텐츠를 원활하게 편집하려고 합니다.
 
 SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 Angular 프레임워크에 간소화된 SPA 애플리케이션을 제공하며 이 애플리케이션을 구성하는 방법을 설명하므로 SPA을 빠르게 시작하고 실행할 수 있습니다.
 
 >[!NOTE]
 >
->이 문서는 Angular 프레임워크을 기반으로 합니다. React 프레임워크에 대한 해당 문서는 [AEM에서 SPA 시작하기 - React](getting-started-react.md)를 참조하십시오.
+>이 문서는 Angular 프레임워크을 기반으로 합니다. React 프레임워크에 대한 해당 문서에 대해서는 [AEM에서 SPA 시작하기 - React](getting-started-react.md).
 
-## Introduction {#introduction}
+## 소개 {#introduction}
 
 이 문서에서는 간단한 SPA의 기본 기능과 최소 기능을 사용하여 실행할 수 있도록 합니다.
 
 AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-* [SPA Introduction and Walkthrough](introduction.md)
-* [SPA Editor Overview](editor-overview.md)
-* [SPA Blueprint](blueprint.md)
+* [SPA 소개 및 워크스루](introduction.md)
+* [SPA 편집기 개요](editor-overview.md)
+* [SPA 블루프린트](blueprint.md)
 
 >[!NOTE]
 >
@@ -37,13 +37,13 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 이 문서는 간소화된 SPA의 구조를 살펴보고 이 이해를 SPA에 적용할 수 있도록 작동 방식을 설명하겠습니다.
 
-## 종속성, 구성 및 빌드 {#dependencies-configuration-and-building}
+## 종속성, 구성 및 작성 {#dependencies-configuration-and-building}
 
 예상되는 Angular 종속성 외에, 샘플 SPA은 추가 라이브러리를 활용하여 SPA을 보다 효율적으로 만들 수 있습니다.
 
-### Dependencies {#dependencies}
+### 종속성 {#dependencies}
 
-`package.json` 파일은 전체 SPA 패키지의 요구 사항을 정의합니다. 필요한 최소 AEM 종속성은 여기에 나열됩니다.
+다음 `package.json` 파일은 전체 SPA 패키지의 요구 사항을 정의합니다. 필요한 최소 AEM 종속성은 여기에 나열됩니다.
 
 ```
 "dependencies": {
@@ -53,13 +53,13 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
 }
 ```
 
-`aem-clientlib-generator`은 빌드 프로세스의 일부로 클라이언트 라이브러리를 자동으로 만드는 데 사용됩니다.
+다음 `aem-clientlib-generator` 는 빌드 프로세스의 일부로 클라이언트 라이브러리를 자동으로 만드는 데 사용됩니다.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-이에 대한 자세한 내용은 여기](https://github.com/wcm-io-frontend/aem-clientlib-generator)GitHub에서 [을 참조하십시오.
+자세한 내용은 [설정](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
-`aem-clientlib-generator`은 `clientlib.config.js` 파일에 다음과 같이 구성됩니다.
+다음 `aem-clientlib-generator` 는 `clientlib.config.js` 다음과 같이 파일을 지정합니다.
 
 ```
 module.exports = {
@@ -90,7 +90,7 @@ module.exports = {
 
 ### 빌딩 {#building}
 
-실제로 앱을 빌드하면 자동 클라이언트 라이브러리 생성을 위한 aem-clientlib-generator 외에 전달을 위해 [Webpack](https://webpack.js.org/)이 활용됩니다. 따라서 build 명령은 다음과 같습니다.
+실제로 앱을 빌드하면 활용됩니다 [웹 팩](https://webpack.js.org/) 자동 클라이언트 라이브러리 생성을 위한 aem-clientlib-generator 외에 전달을 위한 것입니다. 따라서 build 명령은 다음과 같습니다.
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,7 +98,7 @@ module.exports = {
 
 ### AEM Project Archetype {#aem-project-archetype}
 
-모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html): React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다.
 
 ## 응용 프로그램 구조 {#application-structure}
 
@@ -110,7 +110,7 @@ module.exports = {
 
 ### app.module.ts {#app-module-ts}
 
-SPA의 시작 지점은 중요한 컨텐츠에 집중할 수 있도록 여기에 간소화된 `app.module.ts` 파일입니다.
+SPA의 진입점은 `app.module.ts` 여기에 표시된 파일은 중요한 컨텐츠에 집중할 수 있도록 간소화되었습니다.
 
 ```
 // app.module.ts
@@ -133,7 +133,7 @@ import { AppRoutingModule } from './app-routing.module';
 export class AppModule {}
 ```
 
-`app.module.ts` 파일은 앱의 시작점이며 초기 프로젝트 구성을 포함하고 `AppComponent` 을 사용하여 앱을 부트스트랩합니다.
+다음 `app.module.ts` 파일은 앱의 시작점이며 초기 프로젝트 구성 및 사용을 포함합니다 `AppComponent` 를 부트스트랩합니다.
 
 #### 정적 인스턴스화 {#static-instantiation}
 
@@ -141,7 +141,7 @@ export class AppModule {}
 
 ### app.component.ts {#app-component-ts}
 
-`app.module.ts` 부트스트랩 `AppComponent`을(를) 시작하면 앱을 초기화할 수 있습니다. 이 앱은 중요한 컨텐츠에 집중할 수 있도록 간소화된 버전으로 여기에 표시됩니다.
+한 번 `app.module.ts` 부트스트랩 `AppComponent`그런 다음 앱을 초기화할 수 있습니다. 앱은 중요한 컨텐츠에 집중할 수 있도록 간소화된 버전으로 여기에 표시됩니다.
 
 ```
 // app.component.ts
@@ -173,9 +173,9 @@ export class AppComponent {
 }
 ```
 
-### main.content.component.ts {#main-content-component-ts}
+### main-content.component.ts {#main-content-component-ts}
 
-페이지를 처리하면 `app.component.ts`이(가) 여기에 나열된 `main-content.component.ts`을(를) 간소화된 버전으로 호출합니다.
+페이지를 처리하면 `app.component.ts` 호출 `main-content.component.ts` 여기에 간소화된 버전으로 나열됩니다.
 
 ```
 import { Component } from '@angular/core';
@@ -206,11 +206,11 @@ export class MainContentComponent {
 }
 ```
 
-`MainComponent` 은 페이지 모델의 JSON 표현을 수집하고 컨텐츠를 처리하여 페이지의 각 요소를 래핑/장식합니다. `Page`에 대한 자세한 내용은 [SPA Blueprint](blueprint.md) 문서에서 확인할 수 있습니다.
+다음 `MainComponent` 페이지 모델의 JSON 표현을 설정하고 컨텐츠를 처리하여 페이지의 각 요소를 래핑/장식합니다. 에 대한 자세한 내용 `Page` 문서에서 찾을 수 있습니다. [SPA 블루프린트](blueprint.md).
 
 ### image.component.ts {#image-component-ts}
 
-`Page`은 구성 요소로 구성됩니다. JSON을 통해 `Page`은 여기에 표시된 것처럼 `image.component.ts`과 같은 구성 요소를 처리할 수 있습니다.
+다음 `Page` 구성 요소로 구성됩니다. JSON을 처리한 후 `Page` 와 같은 구성 요소를 처리할 수 있습니다 `image.component.ts` 아래와 같이 표시됩니다.
 
 ```
 /// image.component.ts
@@ -239,11 +239,11 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠가 수정될 때(또는 그 반대로) 구성 요소를 업데이트하는 것입니다. 이 통신 모델에 대한 요약은 [SPA 편집기 개요](editor-overview.md) 문서를 참조하십시오.
+AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠가 수정될 때(또는 그 반대로) 구성 요소를 업데이트하는 것입니다. 문서를 참조하십시오 [SPA 편집기 개요](editor-overview.md) 이 통신 모델의 요약입니다.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
-`MapTo` 메서드는 SPA 구성 요소를 AEM 구성 요소에 매핑합니다. 단일 문자열 또는 문자열 배열을 사용할 수 있습니다.
+다음 `MapTo` 메서드는 SPA 구성 요소를 AEM 구성 요소에 매핑합니다. 단일 문자열 또는 문자열 배열을 사용할 수 있습니다.
 
 `ImageEditConfig` 는 편집기에서 자리 표시자를 생성하는 데 필요한 메타데이터를 제공하여 구성 요소의 작성 기능을 활성화하는 데 기여하는 구성 개체입니다
 
@@ -255,7 +255,7 @@ AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매�
 
 ### image.component.html {#image-component-html}
 
-마지막으로 이미지를 `image.component.html`에서 렌더링할 수 있습니다.
+마지막으로 이미지를 렌더링할 수 있습니다 `image.component.html`.
 
 ```
 // image.component.html
@@ -266,14 +266,14 @@ AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매�
 
 단일 페이지 애플리케이션 내의 구성 요소가 정보를 공유하려면 정기적으로 필요합니다. 다음과 같이 복잡도 순서로 나열하는 몇 가지 권장 방법이 있습니다.
 
-* **옵션 1:** 논리 및 브로드캐스트를 필수 구성 요소로 집중하려면 예를 들어, util 클래스를 순수한 개체 지향 솔루션으로 사용합니다.
+* **옵션 1:** util 클래스를 순수한 개체 지향 솔루션으로 사용하여 논리 및 브로드캐스트를 필요한 구성 요소에 집중할 수 있습니다.
 * **옵션 2:** NgRx와 같은 상태 라이브러리를 사용하여 구성 요소 상태를 공유합니다.
 * **옵션 3:** 컨테이너 구성 요소를 사용자 지정하고 확장하여 객체 계층 구조를 활용합니다.
 
 ## 다음 단계 {#next-steps}
 
-* [React를 사용하여 AEM에서 SPA](getting-started-react.md) 로 시작하기 는 React를 사용하여 AEM에서 SPA Editor와 작동하도록 기본 SPA을 빌드하는 방법을 보여줍니다.
-* [SPA ](editor-overview.md) 편집기 개요는 AEM과 SPA 간의 통신 모델에 대해 자세히 설명합니다.
-* [WKND SPA ](wknd-tutorial.md) Projectials는 AEM에서 간단한 SPA 프로젝트를 구현하는 단계별 자습서입니다.
-* [SPA에 대한 동적 모델과 구성 ](model-to-component-mapping.md) 요소 간 매핑이 AEM에서 SPA 내에서 작동하는 방식에 대해 설명합니다.
-* [SPA ](blueprint.md) Blueprint는 React 또는 Angular 이외의 프레임워크를 위해 AEM에서 SPA을 구현하거나 단순히 더 깊이 이해하고 싶은 경우 AEM용 SPA SDK가 작동하는 방식을 자세히 살펴봅니다.
+* [React를 사용하여 AEM에서 SPA 시작하기](getting-started-react.md) React를 사용하여 AEM에서 SPA 편집기와 작동하도록 기본 SPA을 빌드하는 방법을 보여 줍니다.
+* [SPA 편집기 개요](editor-overview.md) AEM과 SPA 간의 통신 모델에 대해 자세히 알아봅니다.
+* [WKND SPA 프로젝트](wknd-tutorial.md) 는 AEM에서 간단한 SPA 프로젝트를 구현하는 단계별 자습서입니다.
+* [SPA용 동적 모델과 구성 요소 간 매핑](model-to-component-mapping.md) 동적 모델과 구성 요소 간 매핑 및 AEM에서 이 모델이 작동하는 방식을 설명합니다.
+* [SPA 블루프린트](blueprint.md) 는 React 또는 Angular 이외의 프레임워크를 위해 AEM에서 SPA을 구현하거나 단순히 더 깊이 이해하고 싶은 경우 AEM용 SPA SDK의 작동 방식을 자세히 살펴봅니다.

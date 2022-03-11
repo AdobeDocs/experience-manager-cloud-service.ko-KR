@@ -1,10 +1,11 @@
 ---
 title: Adobe Target으로 경험 조각 내보내기
 description: Adobe Target으로 경험 조각 내보내기
-source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
+exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -39,7 +40,7 @@ Adobe Target으로 경험 조각을 내보내는 데 사용할 수 있는 세 �
 >자세한 내용은 다음을 참조하십시오.
 >
 >* [Adobe Target 개발](https://www.adobe.io/apis/experiencecloud/target.html)
->* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+>* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 >* [Adobe Target - Adobe Experience Manager(AEM) 경험 조각을 사용하려면 어떻게 해야 합니까?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=en)
 
 

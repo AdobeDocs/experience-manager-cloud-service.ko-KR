@@ -1,5 +1,5 @@
 ---
-title: 신유교 원
+title: 새 Relic One
 description: AEM as a Cloud Service에 대한 APM(New Relic One Application Performance Monitoring) 서비스와 이 서비스에 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
@@ -10,7 +10,7 @@ ht-degree: 2%
 ---
 
 
-# 신유교 원 {#user-access}
+# 새 Relic One {#user-access}
 
 AEM as a Cloud Service에 대한 APM(New Relic One Application Performance Monitoring) 서비스와 이 서비스에 액세스하는 방법에 대해 알아봅니다.
 

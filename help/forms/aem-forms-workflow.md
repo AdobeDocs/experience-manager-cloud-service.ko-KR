@@ -40,7 +40,7 @@ OSGi에서 Forms 중심의 워크플로우 확장 [AEM 받은 편지함](https:/
 
 ![aem-forms-workflow 소개](assets/introduction-to-aem-forms-workflow.jpg)
 
-## 시작하기 전에 {#before-you-start}
+## 시작하기 전 {#before-you-start}
 
 * 워크플로우는 실제 비즈니스 프로세스를 나타냅니다. 실제 비즈니스 프로세스와 비즈니스 프로세스 참가자 목록을 준비하십시오. 또한 워크플로우를 만들기 전에 자료(적응형 Forms, PDF 문서 등)를 준비할 수 있습니다.
 * 워크플로우에는 여러 단계가 있을 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시되며 워크플로우의 진행 상황을 보고하는 데 도움이 됩니다. 비즈니스 프로세스를 논리적 단계로 나눕니다.

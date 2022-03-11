@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1317'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
-* RESTful 웹 서비스
+* RESTful web services
 * SOAP 기반 웹 서비스
 * OData 서비스
 
@@ -88,7 +88,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 ## 클라우드 서비스 구성에 대한 폴더 구성 {#cloud-folder}
 
-RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하려면 클라우드 서비스 폴더를 구성해야 합니다.
+Configuration for cloud services folder is required for configuring cloud services for RESTful, SOAP, and OData services.
 
 의 모든 클라우드 서비스 구성 [!DNL Experience Manager] 는 `/conf` 폴더 [!DNL Experience Manager] 저장소. 기본적으로 `conf` 폴더에는 다음이 포함됩니다 `global` 클라우드 서비스 구성을 만들 수 있는 폴더. 그러나 클라우드 구성에 대해서는 수동으로 활성화해야 합니다. 에서 추가 폴더를 만들 수도 있습니다 `conf` 클라우드 서비스 구성을 만들고 구성하려면 다음을 수행하십시오.
 
@@ -110,7 +110,7 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
-RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/) JSON 또는 YAML 형식으로 [!DNL Swagger] 정의 파일입니다. 에서 RESTful 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service, [!DNL Swagger] 파일 시스템 또는 파일이 호스팅되는 URL의 파일입니다.
+RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a [!DNL Swagger] definition file. 에서 RESTful 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service, [!DNL Swagger] 파일 시스템 또는 파일이 호스팅되는 URL의 파일입니다.
 
 RESTful 서비스를 구성하려면 다음을 수행하십시오.
 
@@ -118,15 +118,15 @@ RESTful 서비스를 구성하려면 다음을 수행하십시오.
 
    자세한 내용은 [클라우드 서비스 구성에 대한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성용 폴더 만들기 및 구성에 대한 자세한 내용은 을 참조하십시오.
 
-1. 탭 **[!UICONTROL 만들기]** 열다 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성 이름과 선택적으로 제목을 지정하고 **[!UICONTROL RESTful 서비스]** 에서 **[!UICONTROL 서비스 유형]** 드롭다운, 원하는 경우 구성에 대한 축소판 이미지를 찾아 선택한 다음 탭합니다 **[!UICONTROL 다음]**.
+1. 탭 **[!UICONTROL 만들기]** 열다 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL RESTful Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and tap **[!UICONTROL Next]**.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
-   * 에서 URL 또는 파일 을 선택합니다 [!UICONTROL Swagger 소스] 드롭다운 및 그에 따라 [!DNL Swagger URL] 변환 후[!DNL  Swagger] 정의 파일 또는 업로드 [!DNL Swagger] 파일을 로컬 파일 시스템에서 가져옵니다.
+   * Select URL or File from the [!UICONTROL Swagger Source] drop-down, and accordingly specify the [!DNL Swagger URL] to the[!DNL  Swagger] definition file or upload the [!DNL Swagger] file from your local file system.
    * 기준[!DNL  Swagger] 소스 입력, 다음 필드는 값으로 미리 채워집니다.
 
-      * 구성표: REST API에서 사용하는 전송 프로토콜입니다. 드롭다운 목록에 표시되는 체계 유형의 수는 [!DNL Swagger] 소스.
+      * Scheme: The transfer protocols used by the REST API. 드롭다운 목록에 표시되는 체계 유형의 수는 [!DNL Swagger] 소스.
       * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
-      * 기본 경로: 모든 API 경로의 URL 접두사입니다. 선택적 필드입니다.\
+      * Base Path: The URL prefix for all API paths. 선택적 필드입니다.\
          필요한 경우 이러한 필드에 대해 미리 채워진 값을 편집합니다.
    * 인증 유형(없음, OAuth2.0, 기본 인증, API 키 또는 사용자 지정 인증)을 선택하여 RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
 
@@ -142,16 +142,16 @@ SOAP 기반 웹 서비스는 [WSDL(웹 서비스 설명 언어) 사양](https://
 
 에서 SOAP 기반 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service 웹 서비스용 WSDL URL이 있는지 확인하고 다음을 수행합니다.
 
-1. 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.
 
    자세한 내용은 [클라우드 서비스 구성에 대한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성용 폴더 만들기 및 구성에 대한 자세한 내용은 을 참조하십시오.
 
-1. 탭 **[!UICONTROL 만들기]** 열다 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성 이름과 선택적으로 제목을 지정하고 **[!UICONTROL SOAP 웹 서비스]** 에서 **[!UICONTROL 서비스 유형]** 드롭다운, 원하는 경우 구성에 대한 축소판 이미지를 찾아 선택한 다음 탭합니다 **[!UICONTROL 다음]**.
-1. SOAP 웹 서비스에 대해 다음을 지정합니다.
+1. 탭 **[!UICONTROL 만들기]** 열다 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL SOAP Web Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and tap **[!UICONTROL Next]**.
+1. Specify the following for the SOAP web service:
 
    * 웹 서비스의 WSDL URL입니다.
    * 서비스 엔드포인트. WSDL에 언급된 서비스 끝점을 무시하려면 이 필드에 값을 지정하십시오.
-   * 인증 유형(없음, OAuth2.0, 기본 인증 또는 사용자 지정 인증)을 선택하여 SOAP 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
+   * Select the authentication type — None, OAuth2.0, Basic Authentication, or Custom Authentication — to access the SOAP service, and accordingly provide the details for authentication.
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
@@ -172,7 +172,7 @@ SOAP 웹 서비스 WSDL의 가져오기 구문으로 허용되는 절대 URL의 
 }
 ```
 
-구성 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), 및 [구성 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) Cloud Service 인스턴스에 매핑해야 합니다.
+구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.
 
 ## OData 서비스 구성 {#config-odata}
 
@@ -186,10 +186,10 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
    자세한 내용은 [클라우드 서비스 구성에 대한 폴더 구성](#cloud-folder) 클라우드 서비스 구성용 폴더 만들기 및 구성에 대한 자세한 내용은 을 참조하십시오.
 
-1. 탭 **[!UICONTROL 만들기]** 열다 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성 이름과 선택적으로 제목을 지정하고 **[!UICONTROL OData 서비스]** 에서 **[!UICONTROL 서비스 유형]** 드롭다운, 원하는 경우 구성에 대한 축소판 이미지를 찾아 선택한 다음 탭합니다 **[!UICONTROL 다음]**.
+1. 탭 **[!UICONTROL 만들기]** 열다 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. Specify a name and optionally a title for the configuration, select **[!UICONTROL OData Service]** from the **[!UICONTROL Service Type]** drop-down, optionally browse and select a thumbnail image for the configuration, and tap **[!UICONTROL Next]**.
 1. OData 서비스에 대해 다음 세부 정보를 지정합니다.
 
-   * 구성할 OData 서비스의 서비스 루트 URL입니다.
+   * Service Root URL for the OData service to be configured.
    * 인증 유형(없음, OAuth2.0, 기본 인증, API 키 또는 사용자 지정 인증)을 선택하여 OData 서비스에 액세스하고 그에 따라 인증 세부 사항을 제공합니다.
 
    선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키의 값을 지정합니다. API 키는 요청 헤더로 또는 쿼리 매개 변수로 보낼 수 있습니다. 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록에서 헤더 또는 쿼리 매개 변수의 이름을 지정합니다 **[!UICONTROL 매개 변수 이름]** 그에 따라 필드가 표시됩니다.
@@ -215,4 +215,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 다음 단계 {#next-steps}
 
-데이터 소스를 구성했습니다. 다음으로 양식 데이터 모델을 만들거나 데이터 소스 없이 양식 데이터 모델을 이미 만든 경우 방금 구성한 데이터 소스와 연결할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md) 자세한 내용
+데이터 소스를 구성했습니다. Next you can create a Form Data Model or if you have already created a Form Data Model without a data source, you can associate it with the data sources you just configured. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md) 자세한 내용

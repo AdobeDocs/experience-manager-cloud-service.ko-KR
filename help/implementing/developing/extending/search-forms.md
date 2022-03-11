@@ -1,6 +1,6 @@
 ---
 title: 검색 양식 구성
-description: Adobe Experience Manager에 대한 Search Forms을 Cloud Service으로 구성
+description: Adobe Experience Manager as a Cloud Service에 대한 Forms 검색 구성
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 16%
 
 # 검색 양식 구성 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘과 함께 제공됩니다.
+Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cloud/authoring/getting-started/search.md) 메커니즘.
 
-이와 함께 컨텐츠를 필터링할 수 있도록 미리 정의된 옵션 세트가 있습니다. 이러한 패싯은 **수정한 날짜**, **게시 상태** 또는 **Livecopy 상태**&#x200B;와 같이 사전 정의된 패싯으로 구성되어 필요한 리소스로 빠르게 드릴다운할 수 있습니다.
+이와 함께 컨텐츠를 필터링할 수 있도록 미리 정의된 옵션 세트가 있습니다. 이러한 패싯은 다음과 같이 사전 정의된 패싯을 유지합니다 **수정한 날짜**, **게시 상태**, 또는 **Livecopy 상태** 필요한 리소스로 빠르게 드릴다운할 수 있습니다.
 
 ![검색 및 필터 사용](assets/csf-usage.png)
 
@@ -21,15 +21,15 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 * [검색 및 필터](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* [자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)(페이지를 편집할 때)
+* a [자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (페이지 편집 시)
 
 >[!NOTE]
 >
->기본 [콘텐츠 검색 및 색인 지정](/help/operations/indexing.md) 서비스를 구성할 수 있습니다.
+>기본 [컨텐츠 검색 및 색인 지정](/help/operations/indexing.md) 서비스.
 
-**Forms 검색**&#x200B;을 사용하면 특정 요구 사항에 따라 이러한 패널을 사용자 지정하고 확장할 수 있습니다.
+사용 **Forms 검색**&#x200B;특정 요구 사항에 따라 이러한 패널을 사용자 지정하고 확장할 수 있습니다.
 
-**Forms 검색**&#x200B;에서는 결합하고 정의할 수 있는 [에 대한 기본 선택 항목을 제공합니다. ](#predicates-and-their-settings) 이러한 양식](#configuring-your-search-forms)을 구성하기 위한 [대화 상자는 다음을 통해 액세스할 수 있습니다.
+다음 **Forms 검색** 의 기본 선택 제공 [설명](#predicates-and-their-settings) 결합하고 정의할 수 있습니다. 다음 [이러한 양식 구성을 위한 대화 상자](#configuring-your-search-forms) 는 다음을 통해 액세스할 수 있습니다.
 
 * **도구**
    * **일반**
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 ## 기본 Forms {#default-forms}
 
-처음 **Forms 검색** 콘솔에 액세스하면 모든 구성에 자물쇠 기호가 있음을 알 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 사용자 지정하고 저장하면 구성이 사라집니다. [사용자 지정된 구성](#deleting-a-configuration-to-reinstate-the-default)을 삭제하면 다시 나타납니다. 이 경우 기본값(및 자물쇠 표시기)이 복원됩니다.
+처음 액세스할 때 **Forms 검색** 콘솔에는 모든 구성에 자물쇠 기호가 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 사용자 지정하고 저장하면 구성이 사라집니다. 그러면 다시 나타납니다 [사용자 지정된 구성 삭제](#deleting-a-configuration-to-reinstate-the-default)- 기본(및 자물쇠 표시기)가 복원됩니다.
 
 ![검색 양식 구성 개요](assets/csf-overview.png)
 
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 >[!NOTE]
 >
->자산 관련 검색 양식에 대한 자세한 내용은 [자산 - 검색 패싯](/help/assets/search-facets.md)을 참조하십시오.
+>자산 관련 검색 양식에 대한 자세한 내용은 [자산 - 검색 패싯](/help/assets/search-facets.md)
 
 
 ## 설명 및 설정 {#predicates-and-their-settings}
@@ -135,7 +135,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
   </tr>
   <tr>
    <td>구성 요소</td>
-   <td>작성자가 특정 구성 요소가 있는 페이지를 검색/필터링할 수 있습니다. 예: 이미지 갤러리.<br /> </td>
+   <td>작성자가 특정 구성 요소가 있는 페이지를 검색/필터링할 수 있습니다. 예를 들어 이미지 갤러리가 있습니다.<br /> </td>
    <td>
     <ul>
      <li>자리 표시자</li>
@@ -256,7 +256,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
   </tr>
   <tr>
    <td>옵션</td>
-   <td><p>옵션은 사용자가 만든 컨텐츠 노드입니다.</p> <p>자세한 내용은 <a href="#addinganoptionspredicate">옵션 설명</a> 추가 를 참조하십시오.</p> </td>
+   <td><p>옵션은 사용자가 만든 컨텐츠 노드입니다.</p> <p>자세한 내용은 <a href="#addinganoptionspredicate">옵션 설명 추가</a> 추가 정보.</p> </td>
    <td>
     <ul>
      <li>필드 레이블</li>
@@ -480,7 +480,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 >일반적인 검색 조건은에서 정의됩니다.
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->이 정보는 참조용이므로 `/libs`을 변경할 수 없습니다.
+>이 정보는 참조용이므로 변경할 수 없습니다 `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -507,9 +507,9 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 * **속성 이름**
 
-   검색할 속성입니다. 상대 경로를 사용하고 와일드카드 `*/*/*` 은 `jcr:content` 노드에 상대적인 속성 깊이를 지정합니다(각 별표는 하나의 노드 수준을 나타냅니다).
+   검색할 속성입니다. 상대 경로와 와일드카드를 사용합니다 `*/*/*` 속성에 대한 깊이를 `jcr:content` 노드(각 별표는 하나의 노드 수준을 나타냅니다.)
 
-   `jcr:content` 노드에서 `x` 속성이 있는 리소스의 첫 번째 수준 하위 노드에서만 검색하려면 `*/jcr:content/x` 를 사용하십시오
+   리소스의 첫 번째 수준 하위 노드에서만 검색할 경우 `x` 속성 `jcr:content` 노드 사용 `*/jcr:content/x`
 
 * **속성 깊이**
 
@@ -517,44 +517,44 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 * **속성 값**
 
-   속성 값은 절대 문자열 또는 표현식 언어로서 사용됩니다.예: `cq:Page` 또는
+   속성 값은 절대 문자열 또는 표현식 언어로서 사용됩니다. 예 `cq:Page` 또는
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **범위 텍스트**
 
-   **날짜 범위** 조건부의 범위 필드의 레이블입니다.
+   에 있는 범위 필드의 레이블입니다 **날짜 범위** 조건자.
 
 * **옵션 경로**
 
-   사용자는 설명 설정 탭에서 경로 브라우저 를 사용하여 경로를 선택할 수 있습니다. **+** 아이콘을 선택한 후 선택 사항을 유효한 옵션 목록에 추가합니다(그런 다음 필요한 경우 제거하려면 **-** 아이콘).
+   사용자는 설명 설정 탭에서 경로 브라우저 를 사용하여 경로를 선택할 수 있습니다. 을(를) 선택한 후 **+** 아이콘을 사용하여 선택 사항을 유효한 옵션 목록에 추가합니다. **-** 필요한 경우 제거할 아이콘).
 
    옵션은 다음 구조를 갖는 사용자가 만든 컨텐츠 노드입니다.
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **옵션 노드**
-경로와 효과적으로 동일합니다 
-**옵션 경로**. 이 경로만 공통 설명 필드에 있고 다른 경로도 자산에 대해 다릅니다.
+* **옵션 노드 경로**
+와 효과적으로 동일 
+**옵션 경로**&#x200B;뿐만 아니라, 공통 설명 필드에만 있고, 다른 술어는 자산에 대해 다릅니다.
 
-* **단일**
-선택If를 선택하면 옵션이 하나의 선택만 허용하는 확인란으로 렌더링됩니다. 실수로 선택한 경우 확인란을 선택 취소할 수 있습니다.
+* **단일 선택**
+이 옵션을 선택하면 선택 사항이 하나만 허용하는 확인란으로 렌더링됩니다. 실수로 선택한 경우 확인란을 선택 취소할 수 있습니다.
 
 * **게시 및 Live Copy 속성 이름**
 사이트 특정 조건자에 대한 게시 및 Live Copy 확인란의 레이블입니다.
 
-* &amp;ast;**설정** 탭의 필드 레이블은 필수 필드이며 비워 두면 오류 메시지가 표시됩니다.
+* 마지막(&amp;A) 의 필드 레이블에서 **설정** 탭에는 필드가 필수이며, 비워 두면 오류 메시지가 표시됩니다.
 
 ## 검색 Forms 구성 {#configuring-your-search-forms}
 
-### 사용자 지정된 구성 만들기/열기 {#creating-opening-a-customized-configuration}
+### 사용자 지정 구성 생성/열기 {#creating-opening-a-customized-configuration}
 
-1. **도구**, **일반**, **Forms 검색**&#x200B;으로 이동합니다.
+1. 다음으로 이동 **도구**, **일반**, **Forms 검색**.
 
 1. 사용자 지정할 구성을 선택합니다.
-1. **편집** 아이콘을 사용하여 업데이트할 구성을 엽니다.
-1. 새 사용자 지정을 사용하는 경우 [새 설명 필드를 추가하고 필요에 따라 설정](#add-edit-a-predicate-field-and-define-field-settings)을(를) 정의합니다. 기존 사용자 지정인 경우 기존 필드를 선택하고 [설정을 업데이트](#add-edit-a-predicate-field-and-define-field-settings)할 수 있습니다.
-1. **완료**&#x200B;를 선택하여 구성을 저장합니다. 다음에 구성을 사용할 때 변경 사항이 표시될 수 있습니다.
+1. 를 사용하십시오 **편집** 아이콘을 클릭하여 업데이트할 구성을 엽니다.
+1. 새 사용자 지정을 원하는 경우 [새 설명 필드를 추가하고 설정을 정의합니다](#add-edit-a-predicate-field-and-define-field-settings) 필요한 경우. 기존 사용자 지정을 사용하는 경우 기존 필드를 선택하고 [설정 업데이트](#add-edit-a-predicate-field-and-define-field-settings).
+1. 선택 **완료** 구성을 저장합니다. 다음에 구성을 사용할 때 변경 사항이 표시될 수 있습니다.
 
    >[!NOTE]
    >
@@ -568,8 +568,8 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 필드를 추가하거나 편집하고 설정을 정의/업데이트할 수 있습니다.
 
-1. [업데이트할 사용자 지정 ](#creating-opening-a-customized-configuration) 구성을 엽니다.
-1. 새 필드를 추가하려면 **설명 선택** 탭을 열고 필요한 설명을 필요한 위치로 드래그합니다. 예를 들어 **날짜 범위 설명**:
+1. [사용자 지정된 구성을 엽니다.](#creating-opening-a-customized-configuration) 업데이트.
+1. 새 필드를 추가하려면 **설명 선택** 탭을 선택하고 필요한 설명을 필요한 위치로 드래그합니다. 예: **날짜 범위 설명**:
 
    ![설명 추가](assets/csf-add-predicate.png)
 
@@ -577,16 +577,16 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
    * 새 필드를 추가하고 있습니다.
 
-      설명을 추가하면 **설정** 탭이 열리고 정의할 수 있는 속성이 표시됩니다.
+      설명을 추가한 후 **설정** 탭이 열리고 정의할 수 있는 속성이 표시됩니다.
 
    * 기존 설명을 업데이트하려는 경우:
 
-      설명 필드(오른쪽)를 선택한 다음 **설정** 탭을 엽니다.
-   예를 들어 **날짜 범위 설명**&#x200B;에 대한 설정이 있습니다.
+      설명 필드(오른쪽)를 선택한 다음 **설정** 탭.
+   예를 들어 **날짜 범위 설명**:
 
    ![설명 수정](assets/csf-modify-predicate.png)
 
-1. 필요에 따라 변경하고 **완료**&#x200B;로 확인합니다. 다음에 구성을 사용할 때 변경 사항이 표시될 수 있습니다.
+1. 필요에 따라 변경하고 을(를) 확인합니다. **완료**. 다음에 구성을 사용할 때 변경 사항이 표시될 수 있습니다.
 
 ### 검색 구성 미리 보기 {#previewing-the-search-configuration}
 
@@ -598,18 +598,18 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
    ![미리 보기 양식](assets/csf-preview-form.png)
 
-1. **** 미리 보기를 닫아서 구성을 반환하고 완료합니다.
+1. **닫기** 구성을 반환하고 완료하는 미리 보기.
 
 ### 설명 필드 삭제 {#deleting-a-predicate-field}
 
-1. [업데이트할 사용자 지정 ](#creating-opening-a-customized-configuration) 구성을 엽니다.
-1. 설명 필드(오른쪽)를 선택하고 **설정** 탭을 연 다음 **삭제** 아이콘(왼쪽 아래)을 선택합니다.
+1. [사용자 지정된 구성을 엽니다.](#creating-opening-a-customized-configuration) 업데이트.
+1. 설명 필드(오른쪽)를 선택하고 **설정** 탭을 선택한 다음 **삭제** 아이콘(왼쪽 아래).
 
    ![아이콘 삭제](assets/csf-delete-icon.png)
 
 1. 대화 상자가 삭제 작업의 확인을 요청합니다.
 
-1. **완료**&#x200B;로 이 작업과 다른 변경 사항을 확인합니다.
+1. 로 이 변경 사항 및 다른 변경 사항을 확인합니다. **완료**.
 
 ### 구성 삭제(기본값 복원) {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -621,7 +621,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 사용자 지정된 구성 삭제는 콘솔에서 수행됩니다.
 
-1. 필요한 구성(예: **페이지 편집기(단락 검색)**)을 선택한 다음 도구 모음에서 **삭제** 아이콘을 선택합니다.
+1. 필요한 구성을 선택합니다(예: **페이지 편집기(단락 검색)**) 및 **삭제** 아이콘 사용:
 
    ![기본값 복원](assets/csf-restore-default.png)
 
@@ -629,7 +629,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 ### 옵션 설명 추가 {#adding-options-predicates}
 
-옵션 설명(옵션, 옵션 속성)을 사용하여 검색할 항목을 구성할 수 있습니다. 일반적으로 페이지 아래에서 바로 검색할 때 사용됩니다.예를 들어, 페이지 노드의 속성입니다.
+옵션 설명(옵션, 옵션 속성)을 사용하여 검색할 항목을 구성할 수 있습니다. 일반적으로 페이지 아래에서 바로 검색할 때 사용됩니다. 예를 들어, 페이지 노드의 속성입니다.
 
 다음 예제(페이지를 만드는 데 사용된 템플릿에 따라 검색하기)는 관련 단계를 보여줍니다.
 
@@ -646,20 +646,20 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
    >[!NOTE]
    >
-   >***은 `/libs` 경로에서 아무 것도 변경하지 않아야 합니다.***
+   >사용자 ***반드시*** 에서 아무것도 변경하지 않음 `/libs` 경로.
    >
-   >이는 다음 번에 인스턴스를 업그레이드할 때 `/libs` 컨텐츠를 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
+   >왜냐하면 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰여지며, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있습니다.
    >
    >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
    >
-   >1. `/libs`에 있는 필수 항목을 `/apps` 아래에 다시 만드십시오. 이 경우
+   >1. 필요한 항목이 있을 때 다시 만드십시오. `/libs`, 아래에 `/apps`. 이 경우
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. `/apps.` 내에서 변경
+   >1. 내에서 변경 `/apps.`
 
 
-1. **Forms 검색** 콘솔을 열고 업데이트할 구성을 선택합니다. 예: **사이트 관리자 검색 레일**. 그런 다음 **편집**&#x200B;을 선택합니다.
+1. 를 엽니다. **Forms 검색** 콘솔에서 업데이트할 구성을 선택합니다. 예, **Sites 관리 검색 레일**. 그런 다음 을(를) 선택합니다 **편집**.
 
-1. 구성에 따라 구성에 **Options** 또는 **Options 속성**&#x200B;을 추가합니다.
+1. 구성에 따라 **옵션** 또는 **Options 속성** 구성합니다.
 1. 필드를 업데이트합니다. 특히:
 
    * **속성 이름**
@@ -675,8 +675,8 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![옵션 설명](assets/csf-options-predicate-02.png)
 
-1. **완료**&#x200B;를 선택하여 구성을 저장합니다.
-1. 적절한 콘솔(이 예에서 **사이트**)로 이동하고 **검색 - 필터** 레일을 엽니다. 새로 정의된 검색 양식과 다양한 옵션이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 확인합니다.
+1. 선택 **완료** 구성을 저장합니다.
+1. 해당 콘솔로 이동합니다(이 예에서 **Sites**)를 클릭하여 엽니다. **검색 - 필터** 레일. 새로 정의된 검색 양식과 다양한 옵션이 표시됩니다. 필요한 옵션을 선택하여 검색 결과를 확인합니다.
 
    ![사용 중인 옵션](assets/csf-options-usage.png)
 
@@ -695,15 +695,15 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
  <tbody>
   <tr>
    <td>편집 </td>
-   <td>읽기, <code>/apps </code>노드에 대한 쓰기 권한.</td>
+   <td>읽기, 쓰기 권한 <code>/apps </code>노드 아래에 있어야 합니다.</td>
   </tr>
   <tr>
    <td>삭제</td>
-   <td><code>/apps</code> 노드에 대한 읽기, 쓰기, 삭제 권한</td>
+   <td>에 대한 읽기, 쓰기, 삭제 권한 <code>/apps</code> 노드</td>
   </tr>
   <tr>
    <td>미리 보기</td>
-   <td><code>/var/dam/content</code> 노드에 대한 읽기, 쓰기, 삭제 권한.<br /> 노드에 대한 읽기, 쓰기  <code>/apps</code> 권한.</td>
+   <td>에 대한 읽기, 쓰기, 삭제 권한 <code>/var/dam/content</code> 노드 아래에 있어야 합니다.<br /> 읽기, 쓰기 권한 <code>/apps</code> 노드 아래에 있어야 합니다.</td>
   </tr>
  </tbody>
 </table>

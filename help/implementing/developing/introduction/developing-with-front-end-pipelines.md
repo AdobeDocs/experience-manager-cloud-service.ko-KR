@@ -1,15 +1,15 @@
 ---
-title: 프런트엔드 파이프라인을 사용한 사이트 개발
+title: 프론트엔드 파이프라인으로 Sites 개발
 description: 프런트엔드 파이프라인을 통해 프런트엔드 개발자에게 더 많은 독립성이 부여되며, 개발 프로세스를 통해 상당한 속도를 향상시킬 수 있습니다.
-source-git-commit: fd6a17a199b6cae03e91eba2ee938a03a326e612
+exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# 프런트엔드 파이프라인을 사용한 사이트 개발 {#developing-site-with-front-end-pipeline}
+# 프론트엔드 파이프라인으로 Sites 개발 {#developing-site-with-front-end-pipeline}
 
 [프런트엔드 파이프라인을 통해](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) 프런트 엔드 개발자에게 더 많은 독립성이 부여되며 개발 프로세스는 상당한 속도를 얻을 수 있습니다. 이 문서에서는 이 프로세스의 잠재력을 최대한 활용하기 위해 몇 가지 고려 사항과 함께 이 프로세스가 작동하는 방식을 설명합니다.
 

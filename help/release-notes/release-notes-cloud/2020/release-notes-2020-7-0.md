@@ -61,7 +61,7 @@ ht-degree: 76%
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * 새로운 [PDF 뷰어 구성 요소](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html) 소개
 

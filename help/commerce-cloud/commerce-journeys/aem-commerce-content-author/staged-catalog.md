@@ -1,14 +1,15 @@
 ---
 title: 준비된 제품 카탈로그 경험 관리
 description: 준비된 제품 카탈로그 경험을 관리하는 방법을 알아봅니다.
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 준비된 제품 카탈로그 경험 작성 {#building-experiences}
+# 단계적 제품 카탈로그 경험 구축 {#building-experiences}
 
 준비된 제품 카탈로그 경험을 관리하는 방법을 알아봅니다.
 
@@ -67,6 +68,6 @@ AEM Launches에서 준비된 제품 데이터에 대한 컨텐츠를 만들 수 
 
 ## 추가 리소스 {#additional-resources}
 
-* [제품 조종실](/help/commerce-cloud/authoring/product-cockpit.md)
+* [제품 관리실](/help/commerce-cloud/authoring/product-cockpit.md)
 * [시작하기](/help/commerce-cloud/getting-started.md)
 * [론치](/help/sites-cloud/authoring/launches/overview.md)

@@ -1,11 +1,11 @@
 ---
 title: TXT 레코드 추가
-description: 사용자 지정 도메인 이름 추가
+description: 맞춤형 도메인 이름 추가
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 

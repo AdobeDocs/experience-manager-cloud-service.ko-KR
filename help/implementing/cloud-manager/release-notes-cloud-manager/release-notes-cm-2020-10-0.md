@@ -1,22 +1,22 @@
 ---
 title: AEM as a Cloud Service 릴리스 2020.10.0의 Cloud Manager 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2020.10.0의 Cloud Manager 릴리스 노트
-feature: 릴리스 정보
+feature: Release Information
 exl-id: 129d0dd8-3d6e-4cf0-b42e-5526f5cf0836
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '300'
 ht-degree: 48%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 2020.10.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2020.10.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service Manager에 대한 릴리스 노트를 간략하게 설명합니다2020.10.0.
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service 2020.10.0에 있는 Cloud Manager의 릴리스 날짜는 2020년 10월 1일입니다.
+AEM as a Cloud Service 2020.10.0의 Cloud Manager 릴리스 날짜는 2020년 10월 1일입니다.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -30,8 +30,8 @@ AEM as a Cloud Service 2020.10.0에 있는 Cloud Manager의 릴리스 날짜는 
 
 * 환경당 환경 변수의 수가 200개로 증가했습니다.
 
-* 이제 개요 페이지의 환경 카드에 최대 3개의 환경이 나열됩니다. 사용자는 **모두 표시** 단추를 선택하여 환경 요약 페이지로 이동하여 전체 환경 목록이 있는 테이블을 볼 수 있습니다.
-자세한 내용은 [환경 보기](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)를 참조하십시오.
+* 이제 개요 페이지의 환경 카드에 최대 3개의 환경이 나열됩니다. 사용자는 **모두 표시** 전체 환경 목록이 있는 테이블을 보려면 환경 요약 페이지로 이동하는 단추
+을(를) 참조하십시오. [보기 환경](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 자세한 내용
 
 
 ### 버그 수정 {#bug-fixes-cloud-manager}

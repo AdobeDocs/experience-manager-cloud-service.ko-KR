@@ -2,13 +2,13 @@
 title: AEM Headless으로 Dispatcher 구성
 description: Dispatcher는 Adobe Experience Manager Publish 환경 앞에 있는 캐싱 및 보안 계층입니다. Headless 애플리케이션에 대한 GraphQL 끝점을 여는 데 여러 구성이 사용됩니다.
 feature: Dispatcher, GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
-workflow-type: ht
+exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
-
 
 # AEM Headless으로 Dispatcher 구성
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Dispatcher에 대한 자세한 문서는 [Dispatcher 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 를 참조하십시오.
+>Dispatcher에 대한 자세한 문서는 [Dispatcher 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 를 참조하십시오.
 
 AEM Project의 일부로 Dispatcher에 대한 구성이 포함된 Dispatcher 모듈이 포함되어 있습니다. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)에서 새로 생성된 프로젝트에는 GraphQL 끝점을 활성화하는 [필터](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR?#defining-a-filter)가 자동으로 포함됩니다.
 

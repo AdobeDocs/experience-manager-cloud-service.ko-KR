@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -197,7 +197,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
    >
    >자세한 내용을 알아보려면 AEM Headless Content Architect 여정을 읽을 수 있습니다.
 
-* **관련 컨텐츠**
+* **관련 콘텐츠**
 
    이것은 편집자의 입장이므로 아주 명백하다.
 
@@ -258,7 +258,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
       * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
    * [변형 - 컨텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+   * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 
       * [컨텐츠 조각 모델 - 데이터 유형](/help/assets/content-fragments/content-fragments-models.md#data-types)
 

@@ -1,13 +1,13 @@
 ---
 title: 참조 데모 추가 기능 설치 이해
 description: Cloud Manager와 추가 기능을 설치하는 데 사용하는 방법에 대해 알아봅니다.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 0%
 
 ---
-
 
 # 참조 데모 추가 기능 설치 이해 {#understand-installation}
 

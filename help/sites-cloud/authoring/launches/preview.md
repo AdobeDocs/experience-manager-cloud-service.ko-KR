@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# 타임워프 {#preview-with-timewarp}로 미리 보기
+# 타임워프를 사용한 미리 보기 {#preview-with-timewarp}
 
-[](/help/sites-cloud/authoring/features/page-versions.md#timewarp) Timewarp은 론치에 포함되어 있는 페이지와 함께 사용할 수 있습니다.
+[타임워프](/help/sites-cloud/authoring/features/page-versions.md#timewarp) launch에도 포함된 페이지에 사용할 수 있습니다.
 
-1. 페이지 편집기에서 **타임워프** 모드를 선택하면 날짜를 묻는 메시지가 표시됩니다. 론치의 프로모션 날짜 이후에 있는 날짜를 선택합니다.
+1. 선택 시 **타임워프** 페이지 편집기에서 모드를 활성화하면 날짜를 묻는 메시지가 표시됩니다. 론치의 프로모션 날짜 이후에 있는 날짜를 선택합니다.
    ![페이지 편집기에서 시작 탐색](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
 
 1. 해당 날짜에 적절한 컨텐츠가 표시됩니다.

@@ -1,13 +1,13 @@
 ---
 title: 컨텐츠 전송 도구에서 마이그레이션 세트 삭제
 description: 컨텐츠 전송 도구에서 마이그레이션 세트 삭제
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 39%
 
 ---
-
 
 # 마이그레이션 세트 삭제 {#delete-migration-set}
 

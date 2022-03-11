@@ -8,7 +8,7 @@ exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 자�
 >사용자 지정 네임스페이스에 메타데이터를 가져오려면 먼저 네임스페이스를 등록합니다.
 
 1. 다음으로 이동 [!DNL Assets] 사용자 인터페이스, 선택 **[!UICONTROL 만들기]** 도구 모음에서 를 선택하고 **[!UICONTROL 메타데이터]** 메뉴 아래의 제품에서 사용할 수 있습니다.
-1. 에서 **[!UICONTROL 메타데이터 가져오기]** 페이지를 클릭한 다음 **[!UICONTROL 파일 선택]**. 메타데이터가 있는 CSV 파일을 선택합니다.
+1. 에서 **[!UICONTROL 메타데이터 가져오기]** 페이지를 클릭한 다음 **[!UICONTROL 파일 선택]**. Select the CSV file with the metadata.
 1. 다음 매개 변수를 제공합니다.
 
    | 매개 변수 | 설명 |
@@ -71,7 +71,7 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 자�
 1. 에서 **[!UICONTROL 내보낼 속성]** 필드에서 모든 속성을 내보내할지 특정 속성을 내보내할지를 지정합니다. 내보낼 선택적 속성 을 선택하는 경우 원하는 속성을 추가합니다.
 
 1. 도구 모음에서 탭/클릭 **[!UICONTROL 내보내기]**. 메타데이터가 내보내지는지 확인하는 메시지가 나타납니다. 메시지를 닫습니다.
-1. 내보내기 작업에 대한 받은 편지함 알림을 엽니다. 작업을 선택하고 을(를) 클릭합니다 **[!UICONTROL 열기]** 를 클릭합니다. 메타데이터가 있는 CSV 파일을 다운로드하려면 를 탭/클릭합니다 **[!UICONTROL CSV 다운로드]** 를 클릭합니다. 클릭 **[!UICONTROL 닫기]**.
+1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
 
    ![대량으로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자](assets/csv_download.png)
 

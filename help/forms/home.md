@@ -1,12 +1,12 @@
 ---
 title: 소개 [!DNL AEM Forms] as a Cloud Service
-description: Adobe Experience Manager Forms as a Cloud Service 자습 리소스 및 설명서 링크
+description: Adobe Experience Manager Forms as a Cloud Service 자가 진단 리소스 및 설명서 링크
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
@@ -21,5 +21,5 @@ Adobe Experience Manager Forms as a Cloud Service은 제출된 데이터를 백�
 조직은 [!DNL AEM Forms] 로컬 인프라가 필요 없이 클라우드에서 as a Cloud Service으로 이러한 기능을 모두 이용할 수 있습니다. 또한 이 서비스를 통해 최신 기능을 항상 최신 상태로 유지할 수 있으므로 복잡한 업그레이드 주기가 필요 없습니다. 서비스에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [주요 기능](key-features.md)
-* [AEM 6.5 Forms과 비교한 주요 변경 사항](notable-changes.md)
-* [FAQ](faq.md)
+* [주요 변경 내용 AEM 6.5 Forms과 비교](notable-changes.md)
+* [자주 묻는 질문](faq.md)

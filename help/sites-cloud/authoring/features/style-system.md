@@ -5,7 +5,7 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1327'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,9 +54,9 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-## 사용 {#use}
+##  사용  {#use}
 
-이 기능을 보여주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
+이 기능을 보여주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
 
 다음 섹션 [컨텐츠 작성자](#as-a-content-author) 및 [템플릿 작성자](#as-a-template-author)에서는 WKND의 스타일 시스템을 사용하여 스타일 시스템의 기능을 테스트하는 방법을 설명합니다.
 
@@ -66,7 +66,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 1. [템플릿 작성자](#as-a-template-author) 섹션에 설명된 대로 컨텐츠 작성자가 사용할 수 있도록 하려는 CSS 클래스를 구성합니다.
 1. 그러면 컨텐츠 작성자는 [컨텐츠 작성자](#as-a-content-author) 섹션에 설명된 대로 스타일을 사용할 수 있습니다.
 
-### 컨텐츠 작성자  {#as-a-content-author}
+### 컨텐츠 작성자 {#as-a-content-author}
 
 1. WKND 프로젝트를 설치한 후 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`에서 WKND의 영어 마스터 홈 페이지로 이동하여 페이지를 편집합니다.
 1. 페이지 아래쪽에서 **제목** 구성 요소 선택
@@ -79,9 +79,9 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
    >[!NOTE]
    >
-   >이 예에서 **색상** 스타일(**검은색**, **흰색** 및 **회색**)은 상호 배타적이지만 **스타일** 옵션(**밑줄**, **오른쪽 정렬** 및 **미니 공간**)은 조합할 수 있습니다. 이 내용은 ](#as-a-template-author)템플릿 작성자로서 템플릿에 구성[할 수 있습니다.
+   >이 예에서 **색상** 스타일(**검은색**, **흰색** 및 **회색**)은 상호 배타적이지만 **스타일** 옵션(**밑줄**, **오른쪽 정렬** 및 **미니 공간**)은 조합할 수 있습니다. This can be [configured in the template as the template author](#as-a-template-author).
 
-### 템플릿 작성자  {#as-a-template-author}
+### 템플릿 작성자 {#as-a-template-author}
 
 1. WKND의 영어 마스터 홈 페이지인 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`를 편집하는 동안, **페이지 정보 -> 템플릿 편집**&#x200B;에서 페이지의 템플릿을 편집합니다.
 
@@ -157,7 +157,6 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 >1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
 
 >
-
 
 
 스타일 이름을 정의하는 기능은 레이아웃 컨테이너 또는 컨텐츠 조각 구성 요소와 같은 매우 일반적인 구성 요소에 추가적인 의미를 제공할 때 유용합니다.

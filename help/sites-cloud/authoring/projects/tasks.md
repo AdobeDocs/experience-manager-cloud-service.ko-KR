@@ -5,7 +5,7 @@ exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 88%
 
 **작업** 타일로 표시되는 프로젝트 내의 활성/완료 작업을 보고 프로젝트 진행 상태를 추적할 수 있습니다. 프로젝트 진행 상태는 다음 항목을 통해 판별할 수 있습니다.
 
-* **작업 타일:** 프로젝트의 전체 진행 상태가 프로젝트 세부 사항 페이지에서 사용할 수 있는 작업 타일에 묘사됩니다.
+* **Task Tile:** An overall progress of the project is depicted in the Task Tile available on the project details page.
 
-* **작업 목록:**  작업 타일을 클릭하면 작업 목록이 표시됩니다. 이 목록에는 프로젝트와 관련된 모든 작업에 대한 자세한 정보가 있습니다.
+* **Task List:** When clicking the Task tile, a list of tasks is displayed. This list has detailed information about all the tasks related to the project.
 
 두 목록에는 모두 **작업** 타일에서 직접 생성하는 작업뿐만 아니라 워크플로우 작업도 표시합니다.
 
@@ -47,7 +47,7 @@ ht-degree: 88%
 
 #### 작업 세부 사항 {#task-details}
 
-특정 작업에 대한 자세한 내용은 작업 목록에서 작업을 탭/클릭하고 **열기**&#x200B;를 클릭하십시오.
+특정 작업에 대한 자세한 내용을 보려면 작업 목록에서 작업을 탭/클릭하고 **열기**.
 
 ![작업 세부 사항](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,7 +63,7 @@ ht-degree: 88%
 
 작업을 추가하려면 다음을 수행하십시오.
 
-1. 프로젝트의 **작업** 타일에서 + 아이콘을 탭/클릭합니다. **작업 추가** 창이 열립니다.
+1. In the project, in the **Tasks** tile, tap/click the + icon. The **Add Task** window opens.
 1. 작업에 대한 정보를 입력합니다. 작업 제목과 할당 대상 그룹은 필수입니다. 컨텐츠 경로, 설명, 작업 우선 순위 및 기한과 같은 추가 정보는 선택 사항입니다. 추가로 **고급** 탭을 선택하여 URL의 이름을 지정하는 데 사용되는 작업 이름을 입력할 수 있습니다.
 
    ![작업 추가](/help/sites-cloud/authoring/assets/projects-add-task.png)

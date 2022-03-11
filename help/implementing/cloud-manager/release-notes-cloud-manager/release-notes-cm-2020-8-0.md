@@ -1,18 +1,18 @@
 ---
 title: AEM as a Cloud Service 릴리스 2020.8.0의 Cloud Manager 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2020.8.0의 Cloud Manager 릴리스 노트
-feature: 릴리스 정보
+feature: Release Information
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 2%
+source-wordcount: '423'
+ht-degree: 1%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 2020.8.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2020.8.0 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2020.8.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
@@ -20,17 +20,17 @@ AEM as a Cloud Service 2020.8.0의 Cloud Manager 릴리스 날짜는 2020년 8�
 
 ## 새로운 기능 {#whats-new-cloud-manager}
 
-* 컨텐츠 감사 는 Cloud Manager Sites 프로덕션 파이프라인에서 사용할 수 있는 기능입니다. 이제 사이트 가 있는 프로그램에 대한 프로덕션 파이프라인 구성에 **컨텐츠 감사**&#x200B;라는 세 번째 탭이 포함됩니다. 프로덕션 파이프라인이 실행될 때마다 사용자 정의 기능 테스트 후 새로운 컨텐츠 감사 단계가 파이프라인에 포함되며, 이 테스트에서는 성능, SEO(검색 엔진 최적화), 접근성, 모범 사례 및 PWA(점진적 웹 앱)을 비롯한 다양한 차원에 대해 사이트를 평가하게 됩니다.
+* 컨텐츠 감사 는 Cloud Manager Sites 프로덕션 파이프라인에서 사용할 수 있는 기능입니다. 이제 사이트 가 있는 프로그램에 대한 프로덕션 파이프라인 구성에 이름이 인 세 번째 탭이 포함됩니다. **컨텐츠 감사**. 프로덕션 파이프라인이 실행될 때마다 사용자 정의 기능 테스트 후 새로운 컨텐츠 감사 단계가 파이프라인에 포함되며, 이 테스트에서는 성능, SEO(검색 엔진 최적화), 접근성, 모범 사례 및 PWA(점진적 웹 앱)을 비롯한 다양한 차원에 대해 사이트를 평가하게 됩니다.
 
 
    >[!NOTE]
    >이후 콘텐츠 감사 이름이 Experience Auditor로 변경되었습니다.
 
-   자세한 내용은 [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)를 참조하십시오.
+   을(를) 참조하십시오. [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md) 자세한 내용
 
 * 이제 자산 프로그램에서 새로 만든 환경이 스마트 컨텐츠 서비스로 자동 구성됩니다.
 
-* Cloud Manager의 **개요** 페이지에서 최대 절전 모드 환경을 해제할 수 있습니다.
+* Cloud Manager에서 최대 절전 모드 환경을 해제할 수 있습니다 **개요** 페이지.
 
 * Google Lighthouse에서 제공하는 페이지에서 경험 확인을 수행할 수 있습니다. Cloud Manager 파이프라인의 일부로서 경험 KPI에 대해 최대 25페이지의 유효성 검사와 확인을 수행할 수 있으며 점수는 Cloud Manager UI에 표시됩니다.
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service 2020.8.0의 Cloud Manager 릴리스 날짜는 2020년 8�
 
 * 경우에 따라 완료된 파이프라인 실행이 완료된 것으로 기록되지 않아 파이프라인의 새로운 실행이 방지됩니다.
 
-* 내부 통신 문제로 인해 파이프라인 실행이 *멈춥니다.*
+* 파이프라인 실행은 가끔 *정지* 내부 통신 문제로 인해
 
 * 새 조직을 프로비저닝할 때 시스템 관리자 이외의 관리자 역할을 가진 일부 사용자에게 Cloud Manager에 대한 액세스 권한이 잘못 부여되었습니다.
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service 2020.8.0의 Cloud Manager 릴리스 날짜는 2020년 8�
 
 * 사용자 인터페이스가 삭제되는 동안 환경에서 작업을 시도할 수 있도록 잘못 허용되었습니다.
 
-* Cloud Manager의 **개요** 페이지에 색상이 일치하지 않습니다.
+* Cloud Manager의 색상이 일치하지 않습니다 **개요** 페이지.
 
 ### 알려진 문제 {#known-issues-cm}
 

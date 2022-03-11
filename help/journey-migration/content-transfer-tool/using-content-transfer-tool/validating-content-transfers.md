@@ -1,13 +1,13 @@
 ---
 title: 콘텐츠 전송 확인
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 2%
 
 ---
-
 
 # 콘텐츠 전송 확인 {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Migration validation took 0 minutes
 추출 및 수집 다이제스트의 일부 경로는 이러한 파일의 크기를 관리하기 위해 의도적으로 제외되며, 이는 수집 완료 후 2시간 이내에 마이그레이션 유효성 검사 결과를 계산할 수 있다는 것입니다.
 
 현재 다이제스트에서 제외하는 경로는 다음과 같습니다. `cqdam.text.txt` 변환, 내의 노드 `/home`, 및에 있는 노드 `/jcr:system`.
-
-
-
-

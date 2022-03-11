@@ -1,13 +1,13 @@
 ---
-title: 화면의 사용자 지정 구성 요소 개발 as a Cloud Service
+title: Screens as a Cloud Service에 대한 맞춤형 구성 요소 개발
 description: 다음 자습서에서는 AEM Screens용 사용자 지정 구성 요소를 만드는 단계를 안내합니다. AEM Screens은 다른 AEM 제품의 많은 기존 디자인 패턴과 기술을 재사용합니다. 이 자습서에서는 AEM Screens용 개발 시 차이점과 특별한 고려 사항을 중점적으로 설명합니다.
-source-git-commit: 0ca86e127569e8f6eb92654e4224a4d5da72ebf4
+exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # AEM Screens as a Cloud Service용 사용자 지정 구성 요소 개발{#developing-a-custom-component-for-aem-screens}
 
@@ -281,7 +281,7 @@ AEM Screens 구성 요소가 편집 모드와 미리 보기/프로덕션 모드�
 
    * `allowProxy` | 부울 | `true`
 
-   * `categories`| String[] | `cq.screens.components`
+   * `categories`| 문자열[] | `cq.screens.components`
 
    ![/apps/weretail-run/components/content/help/world/clientlibs/shared에 대한 속성](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
 
@@ -386,7 +386,7 @@ We.Retail 실행 프로젝트에 관련된 모든 구성을 저장하는 We.Reta
 
    | 이름 | 유형 | 값 |
    |---|---|---|
-   | jcr:title | String | We.Retail 실행 |
+   | jcr:title | 문자열 | We.Retail 실행 |
    | sling:resourceType | 문자열 | wcm/core/components/designer |
    | cq:doctype | 문자열 | html_5 |
 

@@ -1,14 +1,15 @@
 ---
 title: AEM Commerce Content Author 여정
 description: AEM Commerce Authoring을 통해 안내식 여정을 보려면 여기에서 시작하십시오
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
-# AEM Content and Commerce Content Author 여정 {#aem-commerce-author-journey}
+# AEM Content and Commerce 콘텐츠 작성 여정 {#aem-commerce-author-journey}
 
 AEM Content and Commerce를 통해 제공되는 여정에서 제품 경험을 관리하는 방법을 살펴보려면 여기에서 시작하십시오.
 
@@ -30,7 +31,7 @@ AEM Content and Commerce를 통해 제공되는 여정에서 제품 경험을 �
 
 Adobe이 AEM을 사용하여 사이트 비즈니스 사례를 해결하는 방법을 권장하는 방법을 알아보려면 AEM Sites 여정이 시작되는 곳입니다.
 
-## 속성을 확인하는 {#audience}
+## 대상자 {#audience}
 
 이 여정은 AEM Commerce 컨텐츠 작성자를 위해 설계되었습니다. 이 여정은 카탈로그 페이지, 템플릿 및 전체 제품 경험을 시작하고 관리하는 요구 사항, 단계 및 접근 방식을 설명합니다.
 

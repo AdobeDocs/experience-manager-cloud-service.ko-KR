@@ -1,13 +1,13 @@
 ---
-title: '사용자 정의 글꼴 사용 '
-description: '사용자 정의 글꼴 사용 '
-source-git-commit: 94fe397d6ce08380ef08b65b47fe2c1aeb015ca3
+title: 사용자 정의 글꼴 사용
+description: 사용자 정의 글꼴 사용
+exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
 
 ---
-
 
 # 사용자 정의 글꼴 사용
 

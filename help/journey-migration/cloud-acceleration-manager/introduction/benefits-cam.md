@@ -1,7 +1,8 @@
 ---
 title: Cloud Acceleration Manager의 이점
 description: 이 페이지에서는 Cloud Acceleration Manager를 사용할 때의 주요 이점을 소개합니다.
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%

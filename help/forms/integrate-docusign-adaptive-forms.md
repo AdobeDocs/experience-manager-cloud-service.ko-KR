@@ -5,7 +5,7 @@ exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1557'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -129,16 +129,16 @@ AEM Forms as a Cloud Service은 DocumentSign에 대한 사용자 지정 제출 �
 1. 구성 페이지에서 **[!UICONTROL 만들기]** 만들기 [!DNL DocuSign] AEM Forms의 구성.
 1. 에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL DocuSign 구성 만들기]** 페이지에서, **[!UICONTROL 이름]** 구성에 대해 를 탭하고 **[!UICONTROL 다음]**. 원할 경우 **[!UICONTROL 제목]**.
 
-1. 현재 브라우저 창의 URL을 메모장에 복사합니다. 구성하는 데 URL이 필요합니다 [!DNL DocuSign] 애플리케이션 [!DNL AEM Forms] 을 참조하십시오.
+1. 현재 브라우저 창의 URL을 메모장에 복사합니다. 이 URL은 이후 단계에서 [!DNL AEM Forms]를 사용해 [!DNL DocuSign]을 구성하는 데 필요합니다.
 
-1. 에 대한 OAuth 설정 구성 [!DNL DocuSign] 애플리케이션:
+1. [!DNL DocuSign] 애플리케이션에 대한 OAuth 설정을 구성합니다.
 
-   1. 브라우저 창을 열고 [!DNL DocuSign] [개발자 계정](https://admindemo.docusign.com/apps-and-keys).
+   1. 브라우저 창을 열고 [!DNL DocuSign][ 개발자 계정에 로그인합니다](https://admindemo.docusign.com/apps-and-keys).
    1. 에 대해 구성된 앱을 엽니다. [!DNL AEM Forms].
    1. 에서 **[!UICONTROL 리디렉션 URI]** 상자에서 이전 단계에서 복사한 URL을 추가하고 을(를) 클릭합니다 **[!UICONTROL 저장]**.
    1. 통합 및 비밀 키를 참조하십시오.
 
-   에 대한 OAuth 설정을 구성하는 단계별 정보입니다 [!DNL DocuSign] 응용 프로그램을 사용하여 키를 얻습니다. [애플리케이션에 대한 oAuth 설정 구성](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys) 개발자 설명서입니다.
+   [!DNL DocuSign] 애플리케이션에 대한 OAuth 설정을 구성하고 키를 얻는 방법에 대한 단계별 정보는 [애플리케이션에 대한 oAuth 설정 구성](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys) 개발자 문서를 참조하십시오.
 
 1. 로 돌아갑니다. **[!UICONTROL DocuSign 구성 만들기]** 페이지. 에서 **[!UICONTROL 설정]** 탭, **[!UICONTROL OAuth URL]** 필드에 다음 기본 URL이 설명되어 있습니다.
 
@@ -146,15 +146,15 @@ AEM Forms as a Cloud Service은 DocumentSign에 대한 사용자 지정 제출 �
 
 1. 을(를) 지정합니다. **[!UICONTROL 클라이언트 ID]** (DocuSign 통합 키) 및 **[!UICONTROL 클라이언트 암호]** (DocuSign 암호 키).
 
-1. 탭 **[!UICONTROL DocuSign에 연결]**. 자격 증명을 입력하라는 메시지가 표시되면 만드는 동안 사용되는 계정의 사용자 이름과 암호를 입력합니다 [!DNL DocuSign] 응용 프로그램. 에 대한 액세스 확인을 묻는 경우 `your developer account`를 클릭합니다. **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르면 성공 메시지가 나타납니다.
+1. 탭 **[!UICONTROL DocuSign에 연결]**. 자격 증명을 입력하라는 메시지가 뜨면 [!DNL DocuSign] 애플리케이션 생성 시 사용한 계정의 사용자 이름과 비밀번호를 입력합니다. 에 대한 액세스 확인을 묻는 경우 `your developer account`를 클릭합니다. **[!UICONTROL 액세스 허용]**. 자격 증명이 올바르면 성공 메시지가 나타납니다.
 
 1. 탭 **[!UICONTROL 만들기]** 를 클릭하여 [!DNL DocuSign] 구성.
 
-1. 구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 게시]**&#x200B;를 클릭하고 구성을 선택한 다음 를 클릭합니다. **[!UICONTROL 게시]**. 해당 게시 환경에 구성을 복제합니다.
+1. 구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 게시]**&#x200B;를 클릭하고 구성을 선택한 다음 를 클릭합니다. **[!UICONTROL 게시]**. 해당 게시 환경에 구성이 복사됩니다.
 
-1. 개발자, 스테이지 및 프로덕션 인스턴스(왼쪽)에서 위의 모든 단계를 반복하여 구성을 완료합니다 [!DNL DocuSign] with [!DNL AEM Forms] 사용자 환경.
+1. 위의 모든 단계를 개발자, 스테이지 및 생산 인스턴스(어느 것이든 남은 인스턴스에)에 반복하여, 해당 환경을 위한 [!DNL AEM Forms]를 사용한 [!DNL DocuSign] 구성을 완료합니다.
 
-이제 AEM Forms 환경이 DocuSign을 사용하도록 구성되었습니다. Cloud Service에 사용되는 구성 컨테이너를 사용 중인 모든 적응형 Forms에 추가해야 합니다 [!DNL DocuSign]. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.
+이제 AEM Forms 환경이 DocuSign을 사용하도록 구성되었습니다. Cloud Service에 사용되는 구성 컨테이너를 [!DNL DocuSign]을 위해 활성화하고자 하는 모든 적응형 양식에 추가해야 합니다. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.
 
 ### 사용 [!DNL DocuSign] 적응형 양식에 {#enabledocusign}
 

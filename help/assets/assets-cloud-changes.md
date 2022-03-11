@@ -1,13 +1,13 @@
 ---
 title: 의 주요 변경 사항 [!DNL Adobe Experience Manager Assets] 로서의 [!DNL Cloud Service]
-description: 에 대한 주요 변경 사항 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5.
+description: 에 대한 주요 변경 사항 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] 로서의 [!DNL Cloud Service] 에 비해 [!DNL Adobe Experience Manager] 6.5.
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 5%
+source-wordcount: '1032'
+ht-degree: 6%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 5%
 >* [소개](/help/overview/introduction.md)
 >* [새로운 기능 및 차이점](/help/overview/what-is-new-and-different.md)
 >* [아키텍처](/help/overview/architecture.md)
->* [주요 변경 사항](/help/release-notes/aem-cloud-changes.md)
->* [주요 변경 사항 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
+>* [주요 변경 내용 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
 

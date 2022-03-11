@@ -3,13 +3,13 @@ title: 프런트엔드 파이프라인 활성화
 description: 기존 사이트의 프런트엔드 파이프라인이 사이트 테마를 활용하여 사이트를 보다 신속하게 사용자 정의할 수 있는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
 
 ---
-
 
 # 프런트엔드 파이프라인 활성화 {#enable-front-end-pipeline}
 

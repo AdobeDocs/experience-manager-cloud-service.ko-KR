@@ -165,7 +165,6 @@ XML 스키마 요소에 다음 속성을 추가하여 연결된 적응형 양식
 >
 >* 요소 이름의 첫 번째 문자를 대문자로 바꿉니다
 >* 카멜 케이스 경계에 공백을 삽입합니다.
-
 >
 >예를 들어 `userFirstName` 스키마 요소, 적응형 양식에 생성된 캡션은 `User First Name`.
 
@@ -177,13 +176,13 @@ XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
  <tbody>
   <tr>
    <td><p><strong> 스키마 속성</strong></p> </td>
-   <td><p><strong>데이터 유형</strong></p> </td>
+   <td><p><strong>데이터 형식</strong></p> </td>
    <td><p><strong>설명</strong></p> </td>
    <td><p><strong>구성 요소</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>totalDigits</code></p> </td>
-   <td><p>String</p> </td>
+   <td><p>문자열</p> </td>
    <td><p>구성 요소에서 허용되는 최대 자릿수를 지정합니다. 지정한 자릿수는 0보다 커야 합니다.</p> </td>
    <td>
     <ul>
@@ -283,7 +282,7 @@ XML 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
  </tbody>
 </table>
 
-## FAQ {#frequently-asked-questions}
+## 자주 묻는 질문 {#frequently-asked-questions}
 
 **컨텐츠 파인더에는 구조가 매우 복잡합니다. 특정 요소를 찾으려면 어떻게 해야 합니까?**
 

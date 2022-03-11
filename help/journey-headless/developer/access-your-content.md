@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '1353'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 
@@ -137,7 +137,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
    * 로 정의된 경우 **다중 피드**&#x200B;를 채울 경우 하위 조각에서 여러 하위 조각을 참조(검색)할 수 있습니다.
 
-### JSON 미리 보기 {#json-preview}
+### JSON 미리보기 {#json-preview}
 
 컨텐츠 조각 모델을 디자인하고 개발하는 데 도움이 되도록 컨텐츠 조각 편집기에서 JSON 출력을 미리 볼 수 있습니다.
 
@@ -243,7 +243,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 * 엔드포인트 활성화
    * 도구 -> 자산 -> GraphQL 사용
-   * [GraphQL 끝점 활성화](/help/headless/graphql-api/graphql-endpoint.md)
+   * [GraphQL 끝점 활성화하기](/help/headless/graphql-api/graphql-endpoint.md)
 
 * GraphiQL 설치(필요한 경우)
    * 전용 패키지로 설치됨
@@ -350,7 +350,7 @@ AEM GraphQL API 사용에 대한 전체 세부 사항과 필요한 요소 구성
 
 * AEM에서 GraphQL을 사용하는 방법 학습
 * 샘플 컨텐츠 조각 구조
-* AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리
+* AEM으로 GraphQL을 사용하는 방법 배우기 - 샘플 콘텐츠 및 쿼리
 
 ## 다음은 무엇입니까? {#whats-next}
 
@@ -364,17 +364,17 @@ AEM GraphQL API 사용에 대한 전체 세부 사항과 필요한 요소 구성
    * [GraphQL Java 라이브러리](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [AEM에서 GraphQL을 사용하는 방법 학습](/help/headless/graphql-api/content-fragments.md)
-   * [GraphQL 끝점 활성화](/help/headless/graphql-api/graphql-endpoint.md)
+   * [GraphQL 끝점 활성화하기](/help/headless/graphql-api/graphql-endpoint.md)
    * [AEM GraphiQL 인터페이스 설치](/help/headless/graphql-api/graphiql-ide.md)
 * [샘플 컨텐츠 조각 구조](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리](/help/headless/graphql-api/sample-queries.md)
+* [AEM으로 GraphQL을 사용하는 방법 배우기 - 샘플 콘텐츠 및 쿼리](/help/headless/graphql-api/sample-queries.md)
    * [샘플 쿼리 - 단일 특정 도시 조각](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
-   * [메타데이터에 대한 샘플 쿼리 - GB라는 이름의 시상식에 대한 메타데이터 나열](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
-   * [샘플 쿼리 - 명명된 변형을 가진 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+   * [메타데이터에 대한 샘플 쿼리 - GB라는 제목의 상에 대한 메타데이터 나열](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+   * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [구성 브라우저에서 컨텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
    * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [서버측 API용 액세스 토큰 생성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 컨텐츠 모델링 및 GraphQL을 포함하여 AEM 헤드리스 기능을 사용하는 방법에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.
+* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) - 컨텐츠 모델링 및 GraphQL을 포함하여 AEM 헤드리스 기능을 사용하는 방법에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.

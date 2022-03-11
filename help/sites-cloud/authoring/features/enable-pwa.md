@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 0%
 >* 사이트 및 컨텐츠 구조에 대한 지식
 >* 캐싱 전략 이해
 >* 개발 팀의 지원
-
 >
 >이 기능을 사용하기 전에 개발 팀과 함께 이를 논의하여 프로젝트에 활용할 수 있는 최상의 방법을 정의하는 것이 좋습니다.
 
@@ -125,7 +124,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
       ![PWA 오프라인 경로 정의](../assets/pwa-offline.png)
 
 
-1. 탭 또는 클릭 **저장 및 닫기**.
+1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
 
 이제 사이트가 구성되었으며 다음 작업을 수행할 수 있습니다 [로컬 앱으로 설치합니다.](#using-pwa-enabled-site)
 

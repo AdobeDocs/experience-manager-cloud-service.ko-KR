@@ -2,8 +2,9 @@
 title: 규정 준수
 description: 이 페이지에는 Experience Manager as a Cloud Service의 규정 준수에 대한 정보를 제공하는 자습 리소스가 기재되어 있습니다.
 landing-page-description: 여기에서 개인정보 보호 및 접근성을 포함하여 AEM as a Cloud Service의 규정 준수에 대한 개요를 살펴보십시오.
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
-workflow-type: ht
+exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 100%
 

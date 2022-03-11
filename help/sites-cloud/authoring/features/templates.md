@@ -13,7 +13,7 @@ ht-degree: 97%
 
 페이지를 생성할 때 새 페이지를 만드는 기준으로 사용할 템플릿을 선택해야 합니다. 템플릿은 결과 페이지의 구조, 초기 컨텐츠 및 사용할 수 있는 구성 요소를 정의합니다.
 
-**템플릿 편집기**&#x200B;를 사용하면 템플릿을 만들고 유지 관리하는 것이 더 이상 개발자 전용 작업이 아닙니다. **템플릿 작성자**&#x200B;라고 하는 고급 사용자 유형도 이 작업에 참여할 수 있습니다. 개발자는 여전히 환경을 설정하고, 클라이언트 라이브러리를 작성하고, 사용할 구성 요소를 작성해야 하지만, 이러한 기본 사항이 지정되면 **템플릿 작성자**&#x200B;가 개발 프로젝트 없이도 템플릿을 유연하게 작성하고 구성할 수 있습니다.
+With the **Template Editor**, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a **template author**, can be involved too. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the **template author** has the flexibility to create and configure templates without a development project.
 
 **템플릿 콘솔**&#x200B;을 사용하여 템플릿 작성자는 다음을 수행할 수 있습니다.
 
@@ -28,11 +28,11 @@ ht-degree: 97%
 
 이 문서에서는 **템플릿 작성자**&#x200B;가 템플릿 콘솔 및 편집기를 사용하여 편집 가능한 템플릿을 만들고 관리하는 방법을 설명합니다.
 
-편집 가능한 템플릿이 기술 수준에서 작동하는 방법에 대한 자세한 내용은 개발자 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md)을 참조하십시오.
+편집 가능한 템플릿이 기술 수준에서 작동하는 방법에 대한 자세한 내용은 개발자 문서를 참조하십시오 [페이지 템플릿](/help/implementing/developing/components/templates.md) 추가 정보.
 
 >[!NOTE]
 >
->**템플릿 편집기**&#x200B;는 템플릿 수준에서 직접적으로 대상을 지정하도록 지원하지 않습니다. 편집 가능한 템플릿을 기준으로 만들어진 페이지는 대상으로 지정할 수 있지만 템플릿 자체는 대상이 될 수 없습니다.
+>The **Template Editor** does not support targeting directly on the template level. Pages created based on an editable template can be targeted, but the templates themselves can not be.
 
 ## 시작하기 전에 {#before-you-start}
 
@@ -44,7 +44,7 @@ ht-degree: 97%
 
 ### 역할 {#roles}
 
-**템플릿 콘솔** 및 **템플릿 편집기**&#x200B;를 사용하여 새 템플릿을 만들려면 다음 역할 간의 공동 작업이 필요합니다.
+Creating a new template using the **Templates Console** and the **Template Editor** requires collaboration between the following roles:
 
 * **관리자**:
    * 템플릿에 대한 새 폴더를 만들려면 `admin` 권한이 필요합니다.
@@ -95,7 +95,7 @@ ht-degree: 97%
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
-프로젝트에 프로젝트 특정 템플릿을 포함하려면 템플릿 폴더를 만들어야 합니다. 관리자 작업이며 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-folders) 문서에 설명되어 있습니다.—>
+프로젝트에 프로젝트 특정 템플릿을 포함하려면 템플릿 폴더를 만들어야 합니다. 관리자 작업이며 문서에 설명되어 있습니다 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### 새 템플릿 만들기 - 템플릿 작성자 {#creating-a-new-template-template-author}
 
@@ -113,7 +113,7 @@ ht-degree: 97%
 
    >[!NOTE]
    >
-   >템플릿 유형은 사전 정의된 템플릿 레이아웃이며 템플릿의 템플릿으로 간주할 수 있습니다. 이러한 템플릿은 개발자 또는 시스템 관리자가 미리 정의합니다. 개발자 문서 [페이지 템플릿](/help/implementing/developing/components/templates.md#template-type).—>에서 자세한 내용을 확인할 수 있습니다.
+   >템플릿 유형은 사전 정의된 템플릿 레이아웃이며 템플릿의 템플릿으로 간주할 수 있습니다. 이러한 템플릿은 개발자 또는 시스템 관리자가 미리 정의합니다. 개발자 문서에서 자세한 내용을 확인할 수 있습니다. [페이지 템플릿](/help/implementing/developing/components/templates.md#template-type).—>
 
 1. **템플릿 세부 정보**&#x200B;를 완료합니다.
 
@@ -209,7 +209,7 @@ ht-degree: 97%
    >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
    >
-   >[템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability)을 참조하십시오. 허용된 템플릿에 대한 원칙은 동일하게 유지됩니다.
+   >자세한 내용은 [템플릿 가용성](/help/implementing/developing/components/templates.md#template-availability) - 허용된 템플릿에 대한 원칙은 동일하게 유지됩니다.
 
 1. **저장**&#x200B;을 클릭하여 페이지 속성에 대한 변경 사항을 저장합니다.
 
@@ -226,7 +226,7 @@ ht-degree: 97%
 1. 함께 게시할 **컨텐츠 정책**&#x200B;을 선택합니다.
 1. 도구 모음에서 **게시**&#x200B;를 선택하여 작업을 완료합니다.
 
-## 템플릿 편집 - 템플릿 작성자  {#editing-templates-template-authors}
+## 템플릿 편집 - 템플릿 작성자 {#editing-templates-template-authors}
 
 템플릿을 만들거나 편집할 때 다양한 측면을 정의할 수 있습니다. 템플릿 편집 작업은 페이지 작성과 유사합니다.
 
@@ -386,10 +386,10 @@ ht-degree: 97%
 
 **속성** 제목에서 구성 요소의 설정을 정의할 수 있습니다. 제목에는 다음과 같은 두 개의 탭이 있습니다.
 
-* 기본
+* 메인
 * 기능
 
-###### 기본 {#main}
+###### 메인 {#main}
 
 **기본** 탭에서는 구성 요소의 가장 중요한 설정이 정의됩니다.
 
@@ -463,7 +463,7 @@ ht-degree: 97%
 
 완전히 새로운 구성 요소 및 MIME 유형 매핑을 추가하려면 **매핑 추가**&#x200B;를 클릭하거나 탭하십시오.
 
-이미 매핑된 구성 요소에 추가 MIME 유형을 추가하려면 목록에서 구성 요소를 선택하고 **유형 추가**&#x200B;를 클릭하거나 탭하십시오. MIME 유형을 제거하려면 **삭제** 아이콘을 클릭하십시오.
+Select a component in the list and click or tap **Add type** to add an additional MIME type to an already mapped component. MIME 유형을 제거하려면 **삭제** 아이콘을 클릭하십시오.
 
 ![기본 구성 요소 탭](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -485,13 +485,13 @@ ht-degree: 97%
 
 ![구성 요소 잠금 단추](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-여기에는 **초기 컨텐츠** 모드 또는 결과 페이지에서 추가 구성 요소를 추가할 수 있도록 컨테이너 구성 요소의 잠금을 해제하는 작업도 포함됩니다. 구성 요소/컨텐츠를 잠금 해제하기 전에 이미 컨테이너에 추가한 경우 **구조** 모드에서는 더 이상 표시되지 않지만 **초기 컨텐츠** 모드에서는 표시됩니다. **구조 모드**&#x200B;에서는 컨테이너 구성 요소 자체만 **허용된 구성 요소** 목록과 함께 표시됩니다.
+This includes unlocking container components so that further components can be added, either in **Initial Content** mode or on resulting pages. If you have already added components/content to the container before unlocking it, then these will no longer be shown when in **Structure** mode but they will be shown in **Initial Content** mode. **구조 모드**&#x200B;에서는 컨테이너 구성 요소 자체만 **허용된 구성 요소** 목록과 함께 표시됩니다.
 
 ![허용된 구성 요소](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
 공간을 절약하기 위해 레이아웃 컨테이너는 허용된 구성 요소 목록을 수용하도록 확장되지 않습니다. 대신, 컨테이너는 스크롤 가능한 목록이 됩니다.
 
-구성 가능한 구성 요소는 **정책** 아이콘과 함께 표시됩니다. 이 아이콘을 탭하거나 클릭하여 해당 구성 요소의 정책 및 속성을 편집할 수 있습니다.
+Components that are configurable are shown with a **Policy** icon, which can be tapped or clicked to edit the policy and properties of that component.
 
 ![구성 가능한 구성 요소 아이콘](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 

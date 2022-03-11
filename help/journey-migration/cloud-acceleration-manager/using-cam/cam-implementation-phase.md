@@ -1,7 +1,8 @@
 ---
 title: Cloud Acceleration Manager의 구현 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계에 대한 개요를 제공합니다.
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 2%

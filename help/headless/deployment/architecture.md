@@ -2,13 +2,13 @@
 title: AEM Headless의 아키텍처
 description: Headless 배포와 관련된 Adobe Experience Manager의 고급 아키텍처에 대해 알아봅니다. AEM Author, 미리보기, Publish 서비스의 역할과 Headless 애플리케이션에 권장되는 배포 패턴을 이해합니다.
 feature: Content Fragments,GraphQL API
-source-git-commit: 64b2beb4af2297e19e39ad534856bce33ffcfcf8
-workflow-type: ht
+exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
 ---
-
 
 # AEM Headless의 아키텍처
 
@@ -49,4 +49,3 @@ Headless 배포를 위한 또 다른 옵션은 **AEM 미리보기** 서비스를
 1. Author 서비스에 연결하는 애플리케이션의 Author 버전을 설정할 수 있습니다.
 1. 콘텐츠를 검토 및 승인되면 AEM Publish 서비스에 게시할 수 있습니다.
 1. 최종 사용자는 애플리케이션의 프로덕션 버전과 상호 작용합니다. 프로덕션 애플리케이션은 Dispatcher를 통해 Publish 서비스에 연결하고 GraphQL API를 사용하여 콘텐츠를 요청하고 소비합니다.
-

@@ -180,12 +180,12 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 
 * 한 줄 텍스트
 * 여러 줄 텍스트
-* 번호
+* 숫자
 * 부울
 * 날짜 및 시간
 * 열거
 * 태그
-* 컨텐츠 참조
+* 콘텐츠 참조
 * 조각 참조
 * JSON 개체
 
@@ -216,7 +216,7 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 
 그런 다음 컨텐츠 조각 모델 을 만들고 구조를 정의할 수 있습니다. 도구 -> 자산 -> 컨텐츠 조각 모델에서 이 작업을 수행할 수 있습니다. 예:
 
-![컨텐츠 조각 모델](assets/cfm-model.png)
+![콘텐츠 조각 모델](assets/cfm-model.png)
 
 >[!NOTE]
 >
@@ -248,7 +248,7 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 
 적절한 모델을 선택하면 컨텐츠 조각 편집기에서 편집할 컨텐츠 조각이 열립니다.
 
-![컨텐츠 조각 편집기](assets/cfm-editor.png)
+![콘텐츠 조각 편집기](assets/cfm-editor.png)
 
 >[!NOTE]
 >
@@ -276,5 +276,5 @@ tbc...
    * [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) - 컨텐츠 조각 만들기 및 작성 이 페이지에서는 다른 세부 섹션으로 연결됩니다.
 * [AEM GraphQL 스키마](access-your-content.md) - GraphQL에서 모델을 구현하는 방법
 * [샘플 컨텐츠 조각 구조](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 컨텐츠 모델링 및 GraphQL을 포함하여 AEM 헤드리스 기능을 사용하는 방법에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다
+* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) - 컨텐츠 모델링 및 GraphQL을 포함하여 AEM 헤드리스 기능을 사용하는 방법에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다
    * [GraphQL 모델링 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - GraphQL에서 사용할 수 있도록 Adobe Experience Manager(AEM)에서 컨텐츠 조각을 정의하고 사용하는 방법을 알아봅니다.

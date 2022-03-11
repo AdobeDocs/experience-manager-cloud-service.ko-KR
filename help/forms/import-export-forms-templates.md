@@ -8,11 +8,11 @@ exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 적응형 Forms, PDF forms 및 기타 자산 가져오기, 내보내기 및 구성{#importing-and-exporting-assets-to-aem-forms}
+# 적응형 양식, PDF 양식 및 기타 에셋 가져오기, 내보내기 및 구성{#importing-and-exporting-assets-to-aem-forms}
 
 적용형 Forms 및 적용형 양식 테마, 양식 데이터 모델, 적용형 양식 템플릿, 문서 조각 및 PDF forms 등의 관련 자산을 다음 간에 이동할 수 있습니다 [!DNL AEM Forms] 인스턴스. CRX 패키지 또는 이진 파일 형식으로 자산을 가져오고 내보낼 수 있습니다.
 

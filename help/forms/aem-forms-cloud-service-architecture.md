@@ -4,7 +4,7 @@ description: 의 아키텍처 이해 [!DNL AEM Forms] 플랫폼의 확장성, �
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -46,11 +46,12 @@ AEM as a Cloud Service을 지원하는 새로운 아키텍처는 전체 개발�
 * 사용자 지정 애플리케이션이 파이프라인에 적용되는 모든 코드 품질, 보안 및 성능 게이트를 통과하도록 하십시오. Labs를 사용하면 안전하고 더 나은 성능 애플리케이션을 구축함으로써 고객 경험을 향상시킬 수 있습니다. 항상 Cloud Manager UI를 사용하여 일부 검사를 건너뛸 수 있습니다.
 이 프로세스를 일반적으로 클라우드 우선 개발이라고 합니다. [!DNL AEM Forms] 또한 as a Cloud Service은 클라우드에서 보류 중인 코드 및 구성 변경을 시도하기 전에 신속한 개발을 지원하는 SDK를 제공합니다.
 이전에 AEM QuickStart에 포함되었던 일부 인터페이스는 AEM as a Cloud Service 환경의 사용자가 더 이상 사용할 수 없습니다. 예를 들어 OSGI 번들 및 관련 구성이 관리되는 웹 콘솔입니다. CRXDE Lite 컨텐츠 저장소 브라우저는 비프로덕션 환경 유형에서만 액세스할 수 있게 됩니다. 개발자가 진단 및 상태 목적으로 사용하는 경우 특히 필요한 웹 콘솔 기능의 하위 집합은 새로운 개발자 콘솔을 통해 사용할 수 있습니다.
-또한 개발자에게 가장 일반적인 요구 사항 중 하나는 다양한 환경의 로그 파일에 빠르게 액세스하는 것입니다. 사용 [!DNL AEM Cloud Service]로 지정하는 경우 작성자, 게시에 있는 다른 노드의 로그 파일은 Cloud Manager를 통해 다운로드할 수 있는 파일 형식 또는 로그를 추적하기 위한 API를 통해 사용할 수 있습니다. 코드와 컨텐츠가 명확히 구분되어 개발자는 배포의 일부로 컨텐츠를 업데이트하는 특정 프로세스를 활용할 수 있습니다. 가변 콘텐츠에 대한 일반적인 사용 사례는 다음과 같습니다.
+또한 개발자에게 가장 일반적인 요구 사항 중 하나는 다양한 환경의 로그 파일에 빠르게 액세스하는 것입니다. 사용 [!DNL AEM Cloud Service]로 지정하는 경우 작성자, 게시에 있는 다른 노드의 로그 파일은 Cloud Manager를 통해 다운로드할 수 있는 파일 형식 또는 로그를 추적하기 위한 API를 통해 사용할 수 있습니다. 코드와 컨텐츠가 명확히 구분되어 개발자는 배포의 일부로 컨텐츠를 업데이트하는 특정 프로세스를 활용할 수 있습니다. 변경 가능한 콘텐츠의 일반적인 사용 사례는 다음과 같습니다.
 * 고객 프로젝트에 포함된 표준 &quot;기본&quot; 컨텐츠(예: 폴더, 템플릿, 워크플로우..)
 * 검색 색인 정의
 * ACL 및 권한
-* 서비스 사용자 및 사용자 그룹 개발 환경 설정, [CI/CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), 및 학습 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 환경.
+* 서비스 사용자 및 사용자 그룹
+개발 환경 설정, [CI/CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html), 및 학습 [코드 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 환경.
 
 ## 로컬 개발 {#local-development}
 

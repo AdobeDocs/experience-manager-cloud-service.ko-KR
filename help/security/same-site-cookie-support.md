@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service에 대한 Same Site 쿠키 �
 description: Adobe Experience Manager as a Cloud Service에 대한 Same Site 쿠키 지원
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
 

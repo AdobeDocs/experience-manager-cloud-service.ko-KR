@@ -1,46 +1,46 @@
 ---
-title: Learn about defining Metadata and Tagging for Content Fragments
-description: Learn about defining Metadata and Tagging for Content Fragments
+title: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
+description: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
-# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
+# 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기 {#author-headless-metadata-tagging}
 
-## The Story so Far {#story-so-far}
+## 지금까지 이야기 {#story-so-far}
 
-[](overview.md)[](introduction.md)
+의 시작 [AEM Headless Content Author 여정](overview.md) a [소개](introduction.md) 헤드리스용 작성과 관련된 기본 개념 및 용어를 다룹니다.
 
-In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
+이전 단계에서는 헤드리스 CMS 작성에 대한 참조를 사용하라는 지침을 도입했습니다. 여러분은 어떤 종류의 참조들을 이용할 수 있는지, 그리고 그들의 목적은 무엇인지 배웠습니다. 컨텐츠 참조, 자산/미디어 참조 및 조각 참조.
 
-This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
+이 문서는 이러한 단원을 기반으로 하여 AEM 헤드리스 프로젝트에 대한 메타데이터 및 태깅을 사용하여 자신만의 컨텐츠를 작성하는 방법을 이해합니다.
 
 ## 목표 {#objective}
 
-* ****
-* ****
+* **Audience**: 고급
+* **목표**: 헤드리스 CMS 작성에 대한 메타데이터 및 태깅을 도입합니다.
 
-## Adding Metadata and Tags {#adding-metadata-and-tags}
+## 메타데이터 및 태그 추가 {#adding-metadata-and-tags}
 
-There are three methods that you can use to add metadata and tags:
+메타데이터 및 태그를 추가하는 데 사용할 수 있는 방법에는 세 가지가 있습니다.
 
-* When first creating your fragment:
+* 조각을 처음 만들 때:
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![컨텐츠 조각 만들기 - 제공 이름](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* ********
+* 다음 **메타데이터** 컨텐츠 조각 편집기의 탭에서는 메타데이터의 다양한 필드와 사전 정의된 필드를 모두 추가할 수 있습니다 **태그** 프로젝트에서 다음을 수행하십시오.
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![컨텐츠 조각 편집기 - 메타데이터](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * ****
+   * 또한 **속성** 옵션을 클릭합니다.
 
-## What&#39;s Next {#whats-next}
+## 다음은 무엇입니까? {#whats-next}
 
-Now you can put all this knowledge to use and start creating Content Fragments for your project.
+이제 이 모든 지식을 사용하여 프로젝트에 대한 컨텐츠 조각 만들기를 시작할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
@@ -48,4 +48,4 @@ Now you can put all this knowledge to use and start creating Content Fragments f
 
 * [태그 사용](/help/sites-cloud/authoring/features/tags.md)
 
-* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [컨텐츠 조각 모델 - 자산 폴더에서 컨텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

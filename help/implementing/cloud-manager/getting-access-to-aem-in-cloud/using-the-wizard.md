@@ -1,15 +1,15 @@
 ---
-title: 프로젝트 만들기 마법사
+title: 프로젝트 제작 마법사
 description: 프로덕션 프로그램을 만든 후 프로젝트를 신속하게 설정할 수 있는 프로젝트 만들기 마법사에 대해 알아봅니다.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 프로젝트 만들기 마법사 {#project-creation-wizard}
+# 프로젝트 제작 마법사 {#project-creation-wizard}
 
 프로덕션 프로그램을 만든 후 Cloud Manager는 마법사를 제공하여 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 를 신속하게 시작할 수 있습니다.
 

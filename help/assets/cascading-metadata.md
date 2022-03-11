@@ -1,14 +1,14 @@
 ---
-title: 계단식 메타데이터
+title: 연속 메타데이터
 description: 이 문서에서는 자산에 대한 계단식 메타데이터를 정의하는 방법을 설명합니다.
 contentOwner: AG
-feature: 메타데이터
+feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 0%
+source-wordcount: '957'
+ht-degree: 12%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 대해 표시되는 선택 사항을 변경합니다.
 * 다른 필드에 지정된 값을 기반으로 특정 필드에 기본 메타데이터 값을 설정합니다.
 
-## [!DNL Experience Manager]에서 계단식 메타데이터 구성 {#configure-cascading-metadata-in-aem}
+## 에서 계단식 메타데이터 구성 [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 선택한 자산 유형에 따라 계단식 메타데이터를 표시하려는 시나리오를 생각해 보십시오. 몇 가지 예
 
@@ -36,26 +36,26 @@ ht-degree: 0%
 
 선택한 자산 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
-1. [!DNL Experience Manager] 로고를 탭/클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다.
-1. **[!UICONTROL 스키마 Forms]** 페이지에서 스키마 양식을 선택한 다음, 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 탭/클릭하여 스키마를 편집합니다.
+1. 을 탭/클릭합니다. [!DNL Experience Manager] 로고로 이동하여 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**.
+1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then tap/click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
 
-1. (선택 사항) 메타데이터 스키마 편집기에서 조건부 적용할 새 필드를 만듭니다. **[!UICONTROL 설정]** 탭에서 이름과 속성 경로를 지정합니다.
+1. (선택 사항) 메타데이터 스키마 편집기에서 조건부 적용할 새 필드를 만듭니다. 에서 이름 및 속성 경로를 지정합니다. **[!UICONTROL 설정]** 탭.
 
-   새 탭을 만들려면 `+` 을(를) 탭/클릭하여 탭을 추가한 다음 메타데이터 필드를 추가합니다.
+   새 탭을 만들려면 탭하거나 클릭합니다 `+` 탭을 추가하고 메타데이터 필드를 추가합니다.
 
    ![add_tab](assets/add_tab.png)
 
-1. 자산 유형에 대한 드롭다운 필드를 추가합니다. **[!UICONTROL 설정]** 탭에서 이름과 속성 경로를 지정합니다. 선택적 설명을 추가합니다.
+1. 자산 유형에 대한 드롭다운 필드를 추가합니다. 에서 이름 및 속성 경로를 지정합니다. **[!UICONTROL 설정]** 탭. 선택적 설명을 추가합니다.
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. 키-값 쌍은 양식 사용자에게 제공되는 옵션입니다. 수동으로 또는 JSON 파일에서 키-값 쌍을 제공할 수 있습니다.
 
-   * 값을 수동으로 지정하려면 **[!UICONTROL 수동으로 추가]**&#x200B;를 선택하고 **[!UICONTROL 선택 추가]**&#x200B;를 탭/클릭하고 옵션 텍스트와 값을 지정합니다. 예를 들어, 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
+   * 값을 수동으로 지정하려면 **[!UICONTROL 수동으로 추가]**, 탭/클릭 **[!UICONTROL 선택 추가]** 텍스트 및 값 옵션을 지정합니다. 예를 들어, 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
 
-   * JSON 파일에서 값을 동적으로 가져오려면 **[!UICONTROL JSON 경로 추가]**&#x200B;를 선택하고 JSON 파일의 경로를 제공합니다. [!DNL Experience Manager] 사용자에게 양식이 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
+   * JSON 파일에서 값을 동적으로 가져오려면 를 선택합니다 **[!UICONTROL JSON 경로를 통해 추가]** 및 는 JSON 파일의 경로를 제공합니다. [!DNL Experience Manager] 사용자에게 양식이 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
 
    두 옵션 모두 함께 사용할 수 없습니다. JSON 파일에서 옵션을 가져오고 수동으로 편집할 수 없습니다.
 
@@ -75,12 +75,12 @@ ht-degree: 0%
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
-1. 자산 유형 필드와 다른 필드 간의 종속성을 만들려면 종속 필드를 선택하고 **[!UICONTROL 규칙]** 탭을 엽니다.
+1. 자산 유형 필드와 다른 필드 간에 종속성을 만들려면 종속 필드를 선택하고 을(를) 엽니다. **[!UICONTROL 규칙]** 탭.
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. **[!UICONTROL 요구 사항]**&#x200B;에서 새 규칙&#x200B;]**옵션을 기준으로**[!UICONTROL &#x200B;필수 옵션을 선택합니다.
-1. **[!UICONTROL 규칙 추가]**&#x200B;를 탭/클릭하고 **[!UICONTROL 자산 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오]**&#x200B;를 선택합니다. **[!UICONTROL 완료]** 를 탭/클릭하여 변경 사항을 저장합니다.
+1. 아래 **[!UICONTROL 요구 사항]**&#x200B;을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 필수, 새 규칙 기반]** 선택 사항입니다.
+1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
 
    ![define_rule](assets/define_rule.png)
 
@@ -88,9 +88,9 @@ ht-degree: 0%
    >
    >수동으로 사전 정의된 값이 있는 드롭다운을 규칙과 함께 사용할 수 있습니다. 구성된 JSON 경로가 있는 드롭다운 메뉴는 사전 정의된 값을 사용하여 조건을 적용하는 규칙과 함께 사용할 수 없습니다. 런타임 시 JSON에서 값이 로드되는 경우 사전 정의된 규칙을 적용할 수 없습니다.
 
-1. **[!UICONTROL 가시성]**&#x200B;에서 새 규칙&#x200B;]**에 따라**[!UICONTROL &#x200B;표시 옵션을 선택합니다.
+1. 아래 **[!UICONTROL 가시성]**&#x200B;을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 표시, 새 규칙에 따라]** 선택 사항입니다.
 
-1. **[!UICONTROL 규칙 추가]**&#x200B;를 탭/클릭하고 **[!UICONTROL 자산 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오]**&#x200B;를 선택합니다. **[!UICONTROL 완료]** 를 탭/클릭하여 변경 사항을 저장합니다.
+1. 탭/클릭 **[!UICONTROL 규칙 추가]** 그리고 **[!UICONTROL 자산 유형]** 종속성을 만드는 필드입니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오]**. 탭/클릭 **[!UICONTROL 완료]** 변경 사항을 저장하려면 을 클릭합니다.
 
    ![define_visityrule](assets/define_visibilityrule.png)
 
@@ -100,16 +100,16 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >**[!UICONTROL 요구 사항]** 조건 및 **[!UICONTROL 가시성]** 조건을 서로 독립적으로 적용할 수 있습니다.
+   >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
 
 1. 마찬가지로 자산 유형 필드의 값 비디오와 코덱과 지속 시간 등의 다른 필드 간에 종속성을 만듭니다.
-1. [!UICONTROL 자산 유형] 필드와 [!UICONTROL 페이지 수] 및 [!UICONTROL 작성자]와 같은 필드 간에 종속성을 만들려면 단계를 반복합니다.
+1. 다음 단계를 반복하여 문서 자산(PDF 및 Word) 간에 종속성을 만듭니다 [!UICONTROL 자산 유형] 필드 및 필드(예: ) [!UICONTROL 페이지 수] 및 [!UICONTROL 작성자].
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 폴더에 메타데이터 스키마를 적용합니다.
 
 1. 메타데이터 스키마를 적용한 폴더로 이동하고 자산의 속성 페이지를 엽니다. 자산 유형 필드에서 선택한 내용에 따라 관련 계단식 메타데이터 필드가 표시됩니다.
 
    ![비디오 자산에 대한 계단식 메타데이터](assets/video_asset.png)
-   *그림:비디오 자산에 대한 계단식 메타데이터*
+   *그림: 비디오 자산에 대한 계단식 메타데이터*
 
    ![문서 자산에 대한 계단식 메타데이터](assets/doc_type_fields.png)
-   *그림:문서 자산에 대한 계단식 메타데이터*
+   *그림: 문서 자산에 대한 계단식 메타데이터*

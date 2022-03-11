@@ -21,7 +21,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 ![열 보기](/help/sites-cloud/authoring/assets/column-view.png)
 
-## 페이지 컨텐츠 편집 {#editing-page-content}
+## 페이지 콘텐츠 편집 {#editing-page-content}
 
 페이지 편집기로 페이지를 편집할 수 있습니다. 예:
 
@@ -87,7 +87,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
    * 구성 요소를 이름별로 필터링합니다.
    * 드롭다운 선택을 사용하여 표시를 특정 그룹으로 제한합니다.
 
-   구성 요소에 대한 자세한 설명을 보려면 **구성 요소** 브라우저의 구성 요소 옆에 있는 정보 아이콘(있는 경우)을 클릭하거나 탭할 수 있습니다. 예를 들어 **컨텐츠 조각**&#x200B;의 경우 다음과 같습니다.
+   For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). 예를 들어 **컨텐츠 조각**&#x200B;의 경우 다음과 같습니다.
 
    ![구성 요소 브라우저 정보](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -192,7 +192,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
    ![컨텐츠 트리 편집 단추](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* 구성 요소가 다른 페이지에서 상속되는 [livecopy](/help/sites-cloud/administering/msm/overview.md)의 일부인 페이지.
+* 페이지의 일부인 페이지 [livecopy](/help/sites-cloud/administering/msm/overview.md): 구성 요소가 다른 페이지에서 상속됩니다.
 
 >[!NOTE]
 >
@@ -227,7 +227,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * **참조** 구성 요소를 사용하여 빌린 컨텐츠와 빌려준 컨텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 * [론치](/help/sites-cloud/authoring/launches/overview.md): 관련 론치에 대한 액세스 권한 제공
 * [](/help/sites-cloud/administering/msm/overview.md)LiveCopy: 선택한 리소스를 기반으로 하는 모든 LiveCopy 경로 표시 
-* [블루프린트](/help/sites-cloud/administering/msm/best-practices.md): 세부 사항 및 여러 작업 제공
+* [블루프린트](/help/sites-cloud/administering/msm/best-practices.md), 세부 사항 및 여러 작업 제공
 * [언어 사본](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel): 세부 사항 및 여러 작업 제공
 
 ## 이벤트 - 타임라인 {#events-timeline}
@@ -285,7 +285,6 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 >* 일부 모드에 액세스하려면 적절한 권한이 필요합니다.
 >* 공간 제약으로 인해 [개발자 모드]는 모바일 장치에서 사용할 수 없습니다.
 >* [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)(`Ctrl-Shift-M`)를 사용하여 **미리 보기**&#x200B;와 현재 선택한 모드(예: **편집**, **레이아웃** 등) 간에 전환합니다.
-
 >
 
 
@@ -314,7 +313,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 ![경로 브라우저](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * 리소스를 선택하면 대화 상자의 오른쪽 상단에 **선택** 단추가 활성화됩니다. 클릭하거나 탭하여 선택 사항을 확인하거나 **취소**&#x200B;를 선택하여 중단할 수 있습니다.
-* 컨텍스트가 여러 리소스를 선택할 수 있도록 허용하는 경우 리소스를 선택해도 **선택** 단추가 활성화되지만 창 오른쪽 상단에 선택한 리소스 수가 추가됩니다. 숫자 옆에 있는 **X**&#x200B;를 클릭하면 모두 선택 취소됩니다.
+* If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click the **X** next to the number to deselect all.
 * 트리를 탐색할 때 위치는 대화 상자 상단의 탐색 표시에 반영됩니다. 이러한 탐색 표시를 사용하여 리소스 계층 구조 내에서 빠르게 이동할 수도 있습니다.
 * 언제든지 대화 상자 상단의 검색 필드를 사용할 수 있습니다. 검색을 지우려면 검색 필드에서 **X**&#x200B;를 클릭합니다.
 * 검색 범위를 좁히려면 필터 옵션을 표시하고 특정 경로에 따라 결과를 필터링할 수 있습니다.

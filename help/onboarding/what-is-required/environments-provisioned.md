@@ -4,7 +4,7 @@ description: 환경 프로비저닝 - 필수 사항
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 고객이 구입한 모든 AEM 클라우드 환경은 Adobe에 의해 자동으로 프로비저닝되며, Cloud Manager의 해당 프로그램에 다시 연결됩니다. 이러한 AEM 클라우드 환경은 모든 Adobe Managed Services 구독에 포함되어 있으며 일반적으로 한 개 이상의 프로덕션 환경, 한 단계 환경 및 하나 이상의 개발 또는 테스트 환경으로 구성됩니다.
 
-## 시작 전자 메일 {#welcome-email}
+## 환영 이메일 {#welcome-email}
 
 환경 프로비저닝 프로세스가 완료되면 지정된 고객 관리자가 Adobe Experience Cloud에 대한 액세스 권한이 부여되었음을 확인하는 환영 이메일을 수신합니다. 이메일에는 Experience Cloud 서비스 및 Cloud Manager 셀프 서비스 포털을 시작하는 방법에 대한 자세한 정보가 포함되어 있습니다. 또한 e-메일에는 지원 리소스, 포럼 또는 FAQ를 방문할 위치 등의 중요한 정보가 포함되어 있습니다. 이메일에 제공된 리소스 목록에서 Cloud Manager 또는 AEM 클라우드 환경에 액세스하는 방법에 대한 세부 정보도 얻을 수 있습니다.
 

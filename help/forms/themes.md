@@ -384,7 +384,7 @@ Cloud Service 인스턴스에서 만들어진 테마:
  <tbody>
   <tr>
    <td><strong>속성</strong></td>
-   <td><strong>사용</strong></td>
+   <td><strong> 사용 </strong></td>
   </tr>
   <tr>
    <td><p>치수 및 위치</p> </td>

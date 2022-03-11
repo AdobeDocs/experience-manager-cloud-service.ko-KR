@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# 컨텐츠 전달 흐름 {#content-delivery}
+# 콘텐츠 전송 플로우 {#content-delivery}
 
 현재 페이지 세부 사항은 AEM as a Cloud Service에서 서비스 컨텐츠 전달을 게시합니다. 게시 서비스 컨텐츠 게재에는 다음이 포함됩니다.
 
@@ -31,4 +31,4 @@ ht-degree: 1%
 
 아래 섹션에서는 CDN 구성 및 캐싱을 포함한 컨텐츠 전달에 대해 더 자세히 설명합니다.
 
-작성자 서비스에서 게시 서비스로의 복제에 대한 정보는 [여기](/help/operations/replication.md)에서 사용할 수 있습니다.
+작성자 서비스에서 게시 서비스로의 복제에 대한 정보를 사용할 수 있습니다 [여기](/help/operations/replication.md).

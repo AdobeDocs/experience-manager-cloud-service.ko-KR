@@ -1,10 +1,11 @@
 ---
 title: REST API
 description: Screens는 as a Cloud Service 사양을 따르는 간단한 RESTful API를 제공합니다. 컨텐츠 구조를 탐색하고 환경의 장치로 명령을 전송하는 방법을 배우려면 이 페이지를 따르십시오.
-source-git-commit: fc3c047c6ad08db6e992a2aedc58c9cc1478b99f
+exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 

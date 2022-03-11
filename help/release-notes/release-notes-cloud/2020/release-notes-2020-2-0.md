@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# AEM as a Cloud Service 2020.2.0의 릴리스 노트 {#release-notes}
+# AEM as a Cloud Service 2020.2.0 릴리스 노트 {#release-notes}
 
 이 페이지에서는 Experience Manager as a Cloud Service 2020.2.0 일반 릴리스 노트를 간략하게 설명합니다.
 

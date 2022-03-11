@@ -11,11 +11,11 @@ ht-degree: 2%
 
 # Query Builder의 사용자 지정 설명 평가기 구현 {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-이 문서에서는 사용자 지정 설명 평가기를 구현하여 [Query Builder](query-builder-api.md)를 확장하는 방법을 설명합니다.
+이 문서에서는 [Query Builder](query-builder-api.md) 사용자 지정 설명 평가기를 구현합니다.
 
 ## 개요 {#overview}
 
-[Query Builder](query-builder-api.md)는 컨텐츠 저장소를 쉽게 쿼리하는 방법을 제공합니다. AEM에는 데이터를 쿼리하는 데 도움이 되는 [조건자 평가자 세트가 포함되어 있습니다](#query-builder-predicates.md).
+다음 [Query Builder](query-builder-api.md) 컨텐츠 저장소를 쉽게 쿼리하는 방법을 제공합니다. AEM과 함께 제공됩니다 [조건자 평가자 집합](#query-builder-predicates.md) 데이터를 쿼리하는 데 도움이 됩니다.
 
 그러나 일부 복잡성을 숨기고 더 나은 의미 체계를 보장하는 사용자 지정 설명 평가기를 구현하여 쿼리를 단순화할 수 있습니다.
 
@@ -30,14 +30,14 @@ ht-degree: 2%
 
 >[!TIP]
 >
->[Query Builder](query-builder-api.md) 문서에서 쿼리 예제를 찾을 수 있습니다.
+>에서 쿼리 예제를 찾을 수 있습니다 [Query Builder](query-builder-api.md) 문서.
 
 >[!TIP]
 >
 >GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 >
 >* [GitHub에서 aem-search-custom-predicate-evaluator 프로젝트를 엽니다.](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
->* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)로 다운로드합니다
+>* 다음 이름으로 프로젝트를 다운로드합니다 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 
 >[!NOTE]
@@ -48,11 +48,11 @@ ht-degree: 2%
 
 조건자 평가기는 쿼리의 제약 조건을 정의하는 특정 조건자에 대한 평가를 처리합니다.
 
-상위 수준 검색 제한(예: `width>200`)을 실제 컨텐츠 모델에 맞는 특정 JCR 쿼리(예: )에 매핑합니다. `metadata/@width > 200`) 또는 노드를 수동으로 필터링하고 해당 제약 조건을 확인할 수 있습니다.
+상위 수준 검색 제약 조건(예: )을 매핑합니다 `width>200`)을 실제 컨텐츠 모델에 맞는 특정 JCR 쿼리(예: `metadata/@width > 200`). 또는 노드를 수동으로 필터링하고 해당 제약 조건을 확인할 수 있습니다.
 
 >[!TIP]
 >
->`PredicateEvaluator` 및 `com.day.cq.search` 패키지에 대한 자세한 내용은 [Java 설명서](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html)를 참조하십시오.
+>에 대한 자세한 정보 `PredicateEvaluator` 그리고 `com.day.cq.search` 패키지 참조 [Java 설명서](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### 복제 메타데이터에 대한 사용자 지정 설명 평가기 구현 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 #### 기본 설명 평가자를 사용하여 복제 메타데이터 쿼리 {#querying-replication-metadata-with-default-predicate-evaluators}
 
-다음 쿼리는 연도 시작 이후 `admin`에 의해 활성화된 `/content` 분기의 노드 목록을 가져옵니다.
+다음 쿼리는 의 노드 목록을 가져옵니다 `/content` 에 의해 활성화된 분기 `admin` 연초 이후로
 
 ```xml
 path=/content
@@ -84,7 +84,7 @@ daterange.lowerOperation=>=
 
 #### 목표 {#objectives}
 
-`ReplicationPredicateEvaluator`의 목표는 다음 구문을 사용하여 위의 쿼리를 지원하는 것입니다.
+목표 `ReplicationPredicateEvaluator` 는 다음 구문을 사용하여 위의 쿼리를 지원합니다.
 
 ```xml
 path=/content
@@ -100,15 +100,15 @@ replic.action=Activate
 
 >[!TIP]
 >
->maven 사용을 포함하는 새 AEM 프로젝트 설정은 [WKND 자습서에서 자세히 설명합니다.](develop-wknd-tutorial.md)
+>maven 사용을 포함한 새 AEM 프로젝트 설정은 [WKND 자습서입니다.](develop-wknd-tutorial.md)
 
-먼저 프로젝트의 Maven 종속성을 업데이트해야 합니다. `PredicateEvaluator`은 `cq-search` 아티팩트의 일부이므로 Maven pom 파일에 추가해야 합니다.
+먼저 프로젝트의 Maven 종속성을 업데이트해야 합니다. 다음 `PredicateEvaluator` 의 일부입니다. `cq-search` 아티팩트이므로 Maven pom 파일에 추가해야 합니다.
 
 >[!NOTE]
 >
->`OSGi` 컨테이너에 의해 `cq-search`가 제공되므로 `cq-search` 종속성의 범위가 `provided`로 설정됩니다.
+>의 범위 `cq-search` 종속성이 `provided` 왜냐하면 `cq-search` 는 `OSGi` 컨테이너.
 
-다음 코드 조각은 [통합 비교 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)에 있는 `pom.xml` 파일의 차이점을 보여 줍니다
+다음 코드 조각은 `pom.xml` 파일, 위치 [통합 비교 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
 ```text
 @@ -120,6 +120,12 @@
@@ -127,14 +127,14 @@ replic.action=Activate
 
 #### ReplicationPredicateEvaluator 작성 {#writing-the-replicationpredicateevaluator}
 
-`cq-search` 프로젝트에 `AbstractPredicateEvaluator` 추상 클래스가 포함되어 있습니다. 사용자 지정 설명 평가기 `(PredicateEvaluator`)를 구현하는 몇 가지 단계로 확장할 수 있습니다.
+다음 `cq-search` 프로젝트에 가 포함되어 있습니다. `AbstractPredicateEvaluator` 추상 클래스입니다. 사용자 지정 설명 평가기를 구현하는 몇 가지 단계로 확장할 수 있습니다 `(PredicateEvaluator`).
 
 >[!NOTE]
 >
->다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 표현식을 작성하는 방법에 대해 설명합니다. 행을 기준으로 데이터를 선택하는 `includes` 메서드를 구현하는 방법도 있습니다. 자세한 내용은 [Java 설명서](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)를 참조하십시오.
+>다음 절차에서는 `Xpath` 표현식을 사용하여 데이터를 필터링합니다. 다른 옵션은 를 구현하는 것입니다 `includes` 행 단위로 데이터를 선택하는 메서드입니다. 자세한 내용은 [Java 설명서](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html) 추가 정보.
 
-1. `com.day.cq.search.eval.AbstractPredicateEvaluator`을 확장하는 새 Java 클래스를 만듭니다.
-1. [통합 비교 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)에 표시되는 코드 조각과 같은 `@Component`을 사용하여 클래스에 주석을 답니다
+1. 확장할 새 Java 클래스 만들기 `com.day.cq.search.eval.AbstractPredicateEvaluator`
+1. 를 사용하여 클래스에 주석 달기 `@Component` 에 표시되는 코드 조각과 비슷함 [통합 비교 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
    ```text
    @@ -19,8 +19,11 @@
@@ -152,11 +152,11 @@ replic.action=Activate
 
    >[!NOTE]
    >
-   >`factory`은 `com.day.cq.search.eval.PredicateEvaluator/`로 시작하고 사용자 지정 `PredicateEvaluator`의 이름으로 끝나는 고유한 문자열이어야 합니다.
+   >다음 `factory`는 `com.day.cq.search.eval.PredicateEvaluator/`사용자 지정 이름으로 끝나는 방법 `PredicateEvaluator`.
 
    >[!NOTE]
    >
-   >`PredicateEvaluator` 이름은 쿼리를 작성할 때 사용되는 조건자 이름입니다.
+   >의 이름 `PredicateEvaluator` 은 쿼리를 작성할 때 사용되는 조건자 이름입니다.
 
 1. 오버라이드:
 
@@ -164,11 +164,11 @@ replic.action=Activate
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   override 메서드에서 인수에 지정된 `Predicate`에 따라 `Xpath` 표현식을 만듭니다.
+   재정의 메서드에서 `Xpath` 를 기반으로 하는 표현식 `Predicate` 주장에서 주어진.
 
 ### 복제 메타데이터의 사용자 지정 설명 평가기의 예 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
-이 `PredicateEvaluator`의 전체 구현은 다음 클래스와 유사할 수 있습니다.
+이 구현의 전체 `PredicateEvaluator` 다음 클래스와 비슷할 수 있습니다.
 
 ```java
 /*

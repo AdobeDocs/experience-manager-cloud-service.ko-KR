@@ -19,7 +19,7 @@ Adobe Experience Manager 페이지는 응답형 레이아웃을 기반으로 합
 
 >[!NOTE]
 >
->기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. [라이브 카피 만들기를 참조하십시오.](/help/sites-cloud/administering/msm/creating-live-copies.md)
+>기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. 자세한 내용은 [Live Copy 생성.](/help/sites-cloud/administering/msm/creating-live-copies.md)
 >
 >AEM 개발자는 새 장치 그룹을 만들 수 있습니다. 장치 그룹 필터 만들기를 참조하십시오.
 

@@ -4,13 +4,13 @@ description: AEM Sites 콘텐츠를 구성하는 방법과 AEM 번역 도구가 
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
 
 ---
-
 
 # AEM Sites 번역 시작 {#getting-started}
 
@@ -18,7 +18,7 @@ AEM Sites 콘텐츠를 구성하는 방법과 AEM 번역 도구가 작동하는 
 
 ## 지금까지 그 이야기 {#story-so-far}
 
-AEM Sites 번역 여정의 이전 문서에서 [AEM Sites 컨텐츠과 AEM](learn-about.md)에서 번역하는 방법에 대해 학습하면 AEM Sites의 기본 이론을 배울 수 있으므로 이제 다음을 수행해야 합니다.
+AEM Sites 번역 여정의 이전 문서에서, [AEM Sites 콘텐츠 및 AEM에서 번역하는 방법에 대해 알아봅니다](learn-about.md) AEM Sites의 기본 이론을 배웠고 이제 다음을 수행해야 합니다.
 
 * AEM Sites 컨텐츠 만들기에 대한 기본 개념을 이해합니다.
 * AEM에서 번역을 지원하는 방법을 숙지하십시오.
@@ -47,13 +47,13 @@ AEM 컨텐츠를 번역하기 전에 많은 요구 사항이 있습니다.
 
 >[!TIP]
 >
->AEM과 같은 대규모 CMS를 사용하는 것에 익숙하지 않은 경우 계속하기 전에 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 검토하십시오. 기본 처리 설명서는 여정의 일부가 아니므로 완료되면 이 페이지로 돌아오십시오.
+>AEM과 같은 대규모 CMS를 사용하는 것에 익숙하지 않다면 다음 사항을 검토하십시오 [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) 설명서를 참조하십시오. 기본 처리 설명서는 여정의 일부가 아니므로 완료되면 이 페이지로 돌아오십시오.
 
 ### 도구 {#tools}
 
 * 컨텐츠 번역 테스트를 위한 샌드박스 액세스
 * 기본 번역 서비스에 연결할 자격 증명
-* AEM에서 `project-administrators` 그룹의 구성원이어야 합니다
+* 의 구성원이어야 합니다 `project-administrators` AEM의 그룹
 
 ## AEM에서 컨텐츠를 저장하는 방법 {#content-in-aem}
 
@@ -65,9 +65,9 @@ AEM 컨텐츠를 번역하기 전에 많은 요구 사항이 있습니다.
 
 사이트 콘솔에 액세스하려면:
 
-1. 전역 탐색 메뉴에서 **탐색** -> **사이트**&#x200B;를 클릭하거나 탭합니다.
+1. 전역 탐색 메뉴에서 를 클릭하거나 탭합니다 **탐색** -> **Sites**.
 1. 사이트 콘솔이 컨텐츠의 최상위 수준으로 열립니다.
-1. 창의 오른쪽 상단에 있는 보기 선택기를 사용하여 **열 보기**&#x200B;를 선택했는지 확인합니다.
+1. 다음을 확인합니다. **열 보기** 창의 오른쪽 상단에 있는 보기 선택기를 사용하여 이 선택됩니다.
 
    ![열 보기 선택](assets/selecting-column-view.png)
 
@@ -79,7 +79,7 @@ AEM 컨텐츠를 번역하기 전에 많은 요구 사항이 있습니다.
 
    ![콘텐츠 선택](assets/sites-console-selection.png)
 
-1. 왼쪽 상단에 있는 레일 선택기를 탭하거나 클릭하여 컨텐츠의 트리 개요에 대한 **컨텐츠 트리** 보기를 표시할 수도 있습니다.
+1. 왼쪽 상단에 있는 레일 선택기를 탭하거나 클릭하여 **컨텐츠 트리** 컨텐츠 트리 개요를 확인합니다.
 
    ![컨텐츠 트리 보기](assets/sites-console-content-tree.png)
 
@@ -101,7 +101,7 @@ AEM 컨텐츠를 번역하기 전에 많은 요구 사항이 있습니다.
 
    ![편집할 페이지 선택](assets/sites-editor-select-page.png)
 
-1. 도구 모음에서 **편집** 옵션을 탭합니다.
+1. 탭하기 **편집** 옵션 을 클릭합니다.
 1. 사이트 편집기가 새 브라우저 탭에서 편집할 수 있도록 선택한 페이지가 로드되어 열립니다.
 1. 컨텐츠 위에 마우스를 올려 놓거나 탭하면 개별 구성 요소에 대한 선택기가 표시됩니다. 구성 요소는 페이지를 구성하는 드래그 앤 드롭 구성 요소입니다.
 
@@ -129,7 +129,7 @@ AEM 컨텐츠는 해당 구조에 의해 결정됩니다. AEM에서는 컨텐츠
 
 이전에 권장했듯이 컨텐츠 설계자와 협력하여 프로젝트에 적합한 컨텐츠 구조를 결정합니다. 그러나 다음은 매우 효과적이고 간단하며 직관적인 구조입니다.
 
-`/content` 아래에서 프로젝트의 기본 폴더를 정의합니다.
+에서 프로젝트의 기본 폴더를 정의합니다 `/content`.
 
 ```text
 /content/<your-project>
@@ -187,9 +187,9 @@ AEM 컨텐츠는 해당 구조에 의해 결정됩니다. AEM에서는 컨텐츠
 
 이제 사이트 콘솔 및 편집기와 컨텐츠 구조의 중요성을 이해했으므로 컨텐츠를 번역하는 방법을 살펴볼 수 있습니다. AEM의 번역 도구는 매우 강력하지만 높은 수준에서 이해하기 쉽습니다.
 
-* **번역 커넥터**  - 커넥터는 사용자가 사용하는 AEM과 번역 서비스 간의 링크입니다.
-* **번역 규칙**  - 규칙은 특정 경로에 있는 콘텐츠를 정의합니다.
-* **번역 프로젝트**  - 번역 프로젝트는 단일 번역 작업으로 처리해야 하는 컨텐츠를 수집하여 번역 진행 상황을 추적하고 커넥터와 연결하여 변환할 콘텐츠를 전송하고 번역 서비스에서 다시 받게 합니다.
+* **번역 커넥터** - 커넥터는 사용하는 AEM과 번역 서비스 간의 링크입니다.
+* **번역 규칙** - 규칙은 특정 경로에서 번역해야 하는 컨텐츠를 정의합니다.
+* **번역 프로젝트** - 번역 프로젝트는 단일 번역 작업으로 처리해야 하는 컨텐츠를 수집하여 번역 진행 상황을 추적하고 커넥터와 연결하여 변환할 콘텐츠를 전송하고 번역 서비스에서 다시 받게 합니다.
 
 일반적으로 인스턴스와 프로젝트당 규칙에 대해 커넥터를 한 번만 설정합니다. 그런 다음 번역 프로젝트를 사용하여 콘텐츠를 번역하고 번역을 계속 최신 상태로 유지할 수 있습니다.
 
@@ -201,13 +201,13 @@ AEM Sites 번역 여정의 이 부분을 완료했으므로 다음을 수행해�
 * AEM이 컨텐츠를 저장하는 방법을 이해합니다.
 * AEM 번역 도구에 익숙해지십시오.
 
-이 지식을 바탕으로 AEM Sites 번역 여정을 계속 진행하려면 다음 문서 [번역 커넥터 구성](configure-connector.md)을(를) 검토하여 AEM을 번역 서비스에 연결하는 방법을 알아보십시오.|
+이 지식을 바탕으로 작성되고 다음에 문서를 검토하여 AEM Sites 번역 여정을 계속 진행합니다 [번역 커넥터 구성](configure-connector.md) AEM을 번역 서비스에 연결하는 방법을 알아봅니다.|
 
 ## 추가 리소스 {#additional-resources}
 
-문서 [번역 커넥터 구성](configure-connector.md)을 검토하여 번역 여정의 다음 부분으로 이동하는 것이 좋지만, 다음은 이 문서에서 언급된 일부 개념에 대해 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 하지만 여정을 계속할 필요는 없습니다.
+문서를 검토하여 번역 여정의 다음 부분으로 이동하는 것이 좋습니다 [번역 커넥터 구성](configure-connector.md) 다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 여정을 계속 진행할 필요는 없습니다.
 
-* [AEM 기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md)  - 컨텐츠를 찾는 것과 같은 필수 작업을 편안하게 탐색하고 수행할 수 있도록 AEM UI의 기본 사항을 알아봅니다.
-* [번역할 컨텐츠 식별](/help/sites-cloud/administering/translation/rules.md)  - 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알아봅니다.
-* [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md)  - 타사 번역 서비스와 통합하도록 번역 통합 프레임워크를 구성하는 방법을 알아봅니다.
-* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md)  - AEM에서 기계 및 인간 번역 프로젝트를 모두 만들고 관리하는 방법을 알아봅니다.
+* [AEM 기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - AEM UI의 기본 사항을 사용하여 컨텐츠를 탐색하고 찾는 등의 필수 작업을 편리하게 수행할 수 있습니다.
+* [번역할 컨텐츠 식별](/help/sites-cloud/administering/translation/rules.md) - 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알아봅니다.
+* [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md) - 타사 번역 서비스와 통합하도록 번역 통합 프레임워크를 구성하는 방법을 알아봅니다.
+* [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md) - AEM에서 기계 및 인간 번역 프로젝트를 모두 만들고 관리하는 방법을 알아봅니다.

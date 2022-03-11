@@ -2,20 +2,20 @@
 title: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.12.0
 description: AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.12.0
 feature: Release Information
-source-git-commit: 2788db9338da5499b4a9e72ce196e4ae9857b5d5
+exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 40%
 
 ---
 
-
 # AEM as a Cloud Service 릴리스의 마이그레이션 도구에 대한 릴리스 2021.12.0 {#release-notes}
 
 이 페이지에서는 AEM as a Cloud Service의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다2021.12.0.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
+>Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 ## 모범 사례 분석기 {#bpa-release}
 

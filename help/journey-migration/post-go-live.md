@@ -1,13 +1,13 @@
 ---
 title: Go-Live 후
 description: 문제를 모니터링하고 성능을 향상시키는 방법을 알아봅니다
-source-git-commit: c9143d77e70476beb7f7dd162c36aeda8d1be506
+exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
-
 
 # Go-Live 후 {#post-go-live}
 
@@ -61,7 +61,7 @@ UI를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 
 >abstract="AEM 지원 팀에 문의하여 명확히 하거나 문제를 해결할 수 있습니다."
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
 
-Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) 자세한 내용
+Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 자세한 내용
 
 ## 문서 학습 {#document-learnings}
 

@@ -1,13 +1,13 @@
 ---
 title: 템플릿에서 사이트 만들기
 description: 사이트 템플릿을 사용하여 새 AEM 사이트를 빠르게 만드는 방법을 알아봅니다.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 0%
 
 ---
-
 
 # 템플릿에서 사이트 만들기 {#create-site-from-template}
 
@@ -162,7 +162,7 @@ AEM 빠른 사이트 만들기 여정의 이전 문서에서, [Cloud Manager 및
 
    ![그룹에 추가](assets/add-to-group.png)
 
-1. 탭 또는 클릭 **저장 및 닫기**.
+1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
 
 이제 구성을 완료했습니다. 이제 컨텐츠 작성자가 여정의 다음 단계에서 프런트 엔드 사용자 지정을 위해 사이트 준비 시 컨텐츠를 만들 수 있습니다.
 

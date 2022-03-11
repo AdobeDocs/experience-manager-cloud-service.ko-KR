@@ -1,13 +1,13 @@
 ---
-title: '알려진 문제 '
+title: 알려진 문제
 description: 통신 우수 사례, 알려진 문제 및 제한 사항
-source-git-commit: bf7ce5850700141a8a6d1eeb90ea0fd21ff811e7
+exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
 
 ---
-
 
 # 알려진 문제 및 우수 사례를 고려 사항 {#best-practices-known-issues-and-limitations}
 
@@ -65,13 +65,13 @@ XFA 스트림이 포함되지 않은 PDF 문서는 PostScript, PCL 또는 ZPL로
 
 ### 인쇄 가능 영역 {#printable-areas}
 
-기본 0.25인치 인쇄 불가 여백은 레이블 프린터에는 정확하지 않으며 프린터마다, 레이블 크기에서 레이블 크기로 달라지지만 0.25인치 여백을 유지하거나 줄이는 것이 좋습니다. 그러나 인쇄되지 않는 여백은 증가시키지 않는 것이 좋습니다. Otherwise, information in the printable area does not print properly.
+기본 0.25인치 인쇄 불가 여백은 레이블 프린터에는 정확하지 않으며 프린터마다, 레이블 크기에서 레이블 크기로 달라지지만 0.25인치 여백을 유지하거나 줄이는 것이 좋습니다. 그러나 인쇄되지 않는 여백은 증가시키지 않는 것이 좋습니다. 그렇지 않으면 인쇄 가능 영역의 정보가 제대로 인쇄되지 않습니다.
 
 항상 프린터에 올바른 XDC 파일을 사용해야 합니다. 예를 들어, 300dpi 프린터의 XDC 파일을 선택하고 문서를 200dpi 프린터로 보내지 마십시오.
 
-### Scripts for XFA forms (XDP/PDF) only {#scripts}
+### XFA 양식에 대한 스크립트(XDP/PDF)만 해당 {#scripts}
 
-A form design that is used with the Communications APIs can contain scripts that run on the server. 양식 디자인에는 클라이언트에서 실행되는 스크립트가 포함되어 있지 않아야 합니다. 양식 디자인 스크립트 만들기에 대한 내용은 [디자이너 도움말](use-forms-designer.md).
+Communications API와 함께 사용되는 양식 디자인에는 서버에서 실행되는 스크립트가 포함될 수 있습니다. 양식 디자인에는 클라이언트에서 실행되는 스크립트가 포함되어 있지 않아야 합니다. 양식 디자인 스크립트 만들기에 대한 내용은 [디자이너 도움말](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
@@ -80,13 +80,13 @@ A form design that is used with the Communications APIs can contain scripts that
 
 프린터 상주 글꼴을 사용하는 양식을 디자인하려면 프린터에서 사용할 수 있는 글꼴과 일치하는 서체 이름을 디자이너에서 선택합니다. PCL 또는 PostScript에 대해 지원되는 글꼴 목록은 해당 장치 프로필(XDC 파일)에 있습니다. 또는 다른 서체 이름의 프린터 상주 글꼴에 인쇄자가 아닌 글꼴을 매핑하기 위해 글꼴 매핑을 만들 수 있습니다. 예를 들어, PostScript 시나리오에서 Arial® 글꼴에 대한 참조를 프린터에 상주하는 Helvetica® 서식에 매핑할 수 있습니다.
 
-클라이언트 컴퓨터에 글꼴이 설치되어 있으면 디자이너의 드롭다운 목록에서 사용할 수 있습니다. 글꼴이 설치되어 있지 않으면 글꼴 이름을 수동으로 지정해야 합니다. The “Permanently replace unavailable fonts” option in Designer can be off. Otherwise, when the XDP file is saved in Designer, the substitution font name is written to the XDP file. It means that the printer-resident font is not used.
+클라이언트 컴퓨터에 글꼴이 설치되어 있으면 디자이너의 드롭다운 목록에서 사용할 수 있습니다. 글꼴이 설치되어 있지 않으면 글꼴 이름을 수동으로 지정해야 합니다. 디자이너의 &quot;사용할 수 없는 글꼴을 영구적으로 바꾸기&quot; 옵션은 해제할 수 있습니다. 그렇지 않으면 XDP 파일이 디자이너에 저장되면 대체 글꼴 이름이 XDP 파일에 기록됩니다. 프린터 상주 글꼴이 사용되지 않음을 의미합니다.
 
-두 가지 유형의 OpenType® 글꼴이 있습니다. 한 유형은 PCL에서 지원하는 TrueType OpenType® 글꼴입니다. 다른 하나는 CFF OpenType®. PDF and PostScript output supports embedded Type-1, TrueType, and OpenType® fonts. PCL 출력은 포함된 TrueType 글꼴을 지원합니다.
+두 가지 유형의 OpenType® 글꼴이 있습니다. 한 유형은 PCL에서 지원하는 TrueType OpenType® 글꼴입니다. 다른 하나는 CFF OpenType®. PDF 및 PostScript 출력은 포함된 Type-1, TrueType 및 OpenType® 글꼴을 지원합니다. PCL 출력은 포함된 TrueType 글꼴을 지원합니다.
 
 Type-1 및 OpenType® 글꼴은 PCL 출력에 포함되지 않습니다. Type-1 및 OpenType® 글꼴로 서식이 지정된 컨텐츠는 래스터화되어 생성되는 속도가 점점 느려질 수 있는 비트맵 이미지로 생성됩니다.
 
-Downloaded or embedded fonts are automatically substituted when generating PostScript, PCL, or PDF output. It means that only the subset of the font glyphs that are required to properly render the generated document is included in the generated output.
+다운로드되거나 포함된 글꼴은 PostScript, PCL 또는 PDF 출력을 생성할 때 자동으로 대체됩니다. 즉, 생성된 문서를 올바르게 렌더링하는 데 필요한 글꼴 글리프의 하위 집합만 생성된 출력에 포함됩니다.
 
 ### 장치 프로필 파일 작업(XDC 파일) {#working-with-xdc-files}
 
@@ -142,30 +142,30 @@ Communications API를 사용하는 동안 수정된 XCI 파일을 전달할 수 
 | config/present/pdf/scriptModel | 출력 PDF 문서에 XFA 관련 정보를 포함할지 여부를 제어합니다. |
 | config/present/common/data/adjustData | 병합 후 XFA 응용 프로그램이 데이터를 조정하는지 여부를 제어합니다. |
 | config/present/pdf/renderPolicy | 페이지 컨텐츠 생성을 서버에서 수행할지 또는 클라이언트에게 연기할지 여부를 제어합니다. |
-| config/present/common/locale | Specifies the default locale used in the output document. |
+| config/present/common/locale | 출력 문서에 사용되는 기본 로케일을 지정합니다. |
 | config/present/destination | 현재 요소에 포함되는 경우 출력 형식을 지정합니다. openAction 요소에 포함된 경우, 대화형 클라이언트에서 문서를 열 때 수행할 작업을 지정합니다. |
 | config/present/output/type | 파일에 적용할 압축 유형 또는 생성할 출력 유형을 지정합니다. |
 | config/present/common/temp/uri | 양식 URI를 지정합니다. |
 | config/present/common/template/base | 양식 디자인에서 URI의 기본 위치를 제공합니다. 이 요소가 없거나 비어 있으면 양식 디자인의 위치가 기본으로 사용됩니다. |
 | config/present/common/log/to | 로그 데이터 또는 출력 데이터가 기록되는 위치를 제어합니다. |
-| config/present/output/to | Controls the location that log data or output data is written to. |
-| config/present/script/currentPage | Specifies the initial page when the document is opened. |
-| config/present/script/exclude | Informs to AEM Forms server/Communications APIs which events to ignore. |
+| config/present/output/to | 로그 데이터 또는 출력 데이터가 기록되는 위치를 제어합니다. |
+| config/present/script/currentPage | 문서를 열 때의 초기 페이지를 지정합니다. |
+| 구성/현재/스크립트/제외 | 무시할 이벤트를 AEM Forms 서버/통신 API에 알려줍니다. |
 | config/present/pdf/linear | 출력 PDF 문서의 선형화 여부를 제어합니다. |
 | config/present/script/runScripts | AEM Forms이 실행하는 스크립트 집합을 제어합니다. |
-| config/present/pdf/tagged | Controls the inclusion of tags into the output PDF document. PDF 컨텍스트에서 태그는 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. Tags assist accessibility aids and reformatting. 예를 들어, 페이지 번호에 아티팩트로 태그를 지정하여 화면 판독기에서 텍스트 중간에 이를 발음하지 않도록 할 수 있습니다. 태그는 문서를 더 유용하게 만들 수 있지만 문서 크기와 문서 작성 시간을 늘립니다. |
+| config/present/pdf/tagged | 출력 PDF 문서에 태그 포함을 제어합니다. PDF 컨텍스트에서 태그는 문서의 논리적 구조를 노출하기 위해 문서에 포함된 추가 정보입니다. 태그는 접근성 보조 및 서식 변경을 지원합니다. 예를 들어, 페이지 번호에 아티팩트로 태그를 지정하여 화면 판독기에서 텍스트 중간에 이를 발음하지 않도록 할 수 있습니다. 태그는 문서를 더 유용하게 만들 수 있지만 문서 크기와 문서 작성 시간을 늘립니다. |
 | config/present/pdf/version | 생성할 PDF 문서의 버전을 지정합니다. |
 
 
 ## 알려진 문제
 
-* You can use a specific render type (PDF, PRINT) only once in the print options list. 예를 들어 PCL 렌더링 유형을 지정하는 PRINT 옵션은 각각 두 개 가질 수 없습니다.
+* 특정 렌더링 유형(PDF, PRINT)은 인쇄 옵션 목록에서 한 번만 사용할 수 있습니다. 예를 들어 PCL 렌더링 유형을 지정하는 PRINT 옵션은 각각 두 개 가질 수 없습니다.
 
 * 일괄 처리 구성의 경우 OutputType(PDF, PRINT) 및 RenderType(PostScript, PCL, IPL, ZPL 등)의 값 조합 인스턴스 하나만 가 허용됩니다.
 
 * 비동기 API(배치 처리)의 경우 기본 레코드 수준이 2로 설정됩니다. 사용자 지정 XCI를 사용하여 레코드 수준을 1로 변경할 수 있습니다.
 
-* When the default XCI is configured, it includes path till original rendition. 예 `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* 기본 XCI가 구성되면 원본 렌디션까지 경로가 포함됩니다. 예 `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 

@@ -2,13 +2,13 @@
 title: AEM에서 GraphQL 끝점 관리
 description: Headless 콘텐츠 전달용 Adobe Experience Manager as a Cloud Service에서 GraphQL 끝점을 관리하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
-source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
-workflow-type: ht
+exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 100%
 
 ---
-
 
 # AEM에서 GraphQL 끝점 관리 {#graphql-aem-endpoint}
 

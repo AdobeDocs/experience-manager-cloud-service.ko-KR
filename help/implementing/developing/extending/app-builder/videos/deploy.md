@@ -8,13 +8,13 @@ role: Developer, Architect
 level: Beginner
 kt: 9461
 thumbnail: 339250.jpg
-source-git-commit: 921ceeea87e4a36592241b5e12868b94dc69137b
+exl-id: 54ad1cbc-a8b5-44b2-b12c-24c530a5a929
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
-
 
 # App Builder 애플리케이션 배포
 
@@ -25,4 +25,3 @@ ht-degree: 0%
 App Builder에 대한 배포의 의미와 Adobe I/O CLI를 사용하여 App Builder 애플리케이션을 배포하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)
-

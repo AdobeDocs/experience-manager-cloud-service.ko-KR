@@ -1,20 +1,20 @@
 ---
-title: Dynamic Media의 액세스 가능성
+title: Dynamic Media에서의 접근성
 description: 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고서 보기 우수 사례와 같이 Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다. 비디오에 자막, 자막 또는 장 마커를 추가하는 방법도 알아봅니다.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
-source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
+exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
+source-git-commit: 0d3262a3182063e69f764339e7937e2f83ad7bbb
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 1%
 
 ---
 
-
-# Dynamic Media의 액세스 가능성 {#accessibility-in-dm}
+# Dynamic Media에서의 접근성 {#accessibility-in-dm}
 
 Dynamic Media은 작성 사용자 인터페이스에서 키보드 제어와 JAWS 및 NVDA 화면 판독기와 같은 보조 기술을 지원합니다.
 

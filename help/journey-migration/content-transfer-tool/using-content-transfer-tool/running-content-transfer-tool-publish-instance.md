@@ -1,15 +1,15 @@
 ---
-title: 게시 인스턴스에서 컨텐츠 전송 도구 실행
-description: 게시 인스턴스에서 컨텐츠 전송 도구 실행
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+title: 게시 인스턴스에서 콘텐츠 전송 도구 실행
+description: 게시 인스턴스에서 콘텐츠 전송 도구 실행
+exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 1%
+ht-degree: 11%
 
 ---
 
-
-# 게시 인스턴스에서 컨텐츠 전송 도구 실행 {#run-content-transfer-tool-publish-instance}
+# 게시 인스턴스에서 콘텐츠 전송 도구 실행 {#run-content-transfer-tool-publish-instance}
 
 ## 소개 {#introduction}
 

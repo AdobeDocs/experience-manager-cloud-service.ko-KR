@@ -2,13 +2,13 @@
 title: AEM as a Cloud Service 릴리스 2022.01.0의 Cloud Manager 릴리스 노트
 description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2022.01.0.
 feature: Release Information
-source-git-commit: 6b0fd14fb2038e09b59fa487427b3202d8f129dc
+exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 70%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1�
 * Cloud Manager는 [동일한 Git Commit이 여러 전체 스택 파이프라인 실행에 사용되는 것을 감지하면 코드 베이스를 다시 빌드하지 않습니다](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
 * 이제 AEM 환경 로그에 액세스하려면 **Deployment Manager** 제품 프로필이 필요합니다. 이 프로필이 없는 사용자에게는 사용자 인터페이스에서 비활성화된 버튼이 표시됩니다.
 * UI는 Sites가 솔루션으로 활성화되지 않은 프로그램에 대한 프론트엔드 파이프라인 구성을 허용하지 않습니다.
-* Git 비밀번호 생성 시 만료 날짜가 표시됩니다.
+* Git 암호 생성 시 만료 날짜가 표시됩니다.
 
 ## 버그 수정 {#bug-fixes}
 

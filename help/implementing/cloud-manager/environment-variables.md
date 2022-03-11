@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 런타임 환경에 제공하여 OSGi 구성에서 사용할 수 있습니다.
-source-git-commit: 58db4323ed292109398f7a7ffbdaaaf50e800983
+exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
 
 ---
-
 
 # Cloud Manager 환경 변수 {#environment-variables}
 

@@ -1,13 +1,13 @@
 ---
 title: 구성 요소 만들기
 description: AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저장, 포맷 및 렌더링하는 데 사용됩니다. 채널 작성 및 구성 요소 렌더링에 대해 알려면 이 페이지를 따르십시오.
-source-git-commit: 34a072bd8e936a7cdf6c37ad7b3eea704d644fd9
+exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # 구성 요소 만들기 {#creating-components}
 

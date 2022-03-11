@@ -1,31 +1,31 @@
 ---
 title: AEM as a Cloud Service 릴리스 2020.11.0의 Cloud Manager 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2020.11.0의 Cloud Manager 릴리스 노트
-feature: 릴리스 정보
+feature: Release Information
 exl-id: e2acf515-d339-4d2b-9b62-09c1dab1ffac
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 5%
+source-wordcount: '186'
+ht-degree: 8%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 2020.11.0의 Cloud Manager 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2020.11.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service Manager에 대한 릴리스 노트를 간략하게 설명합니다2020.11.0.
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service 2020.11.0에 있는 Cloud Manager의 릴리스 날짜는 2020년 11월 12일입니다.
+AEM as a Cloud Service 2020.11.0의 Cloud Manager 릴리스 날짜는 2020년 11월 12일입니다.
 
 ## Cloud Manager {#cloud-manager}
 
 ### 새로운 기능 {#what-is-new}
 
-* 이제 환경 카드 및 환경 요약 페이지의 환경 메뉴 옵션에서 새 메뉴 옵션 **로컬 로그인**을 사용할 수 있습니다.
+* 새 메뉴 옵션 **로컬 로그인** 이제 환경 카드 및 환경 요약 페이지의 환경 메뉴 옵션에서 사용자가 이 기능을 사용할 수 있습니다.
 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#login-locally)를 참조하십시오.
 
-* Cloud Manager의 **학습** 탭이 UI의 새 이미지로 새로 고침되었습니다.
+* 다음 **학습** cloud Manager의 탭이 UI의 새 이미지로 새로 고침되었습니다.
 
 ### 버그 수정 {#bug-fixes-cloud-manager}
 

@@ -1,17 +1,17 @@
 ---
-title: 사이트 템플릿 및 테마 사용자 지정
+title: 사이트 템플릿 및 테마 맞춤화
 description: AEM 사이트 템플릿을 사용하여 사이트 구조 및 초기 컨텐츠를 사전 정의하는 방법과 테마를 사용하여 사이트를 신속하게 만들 수 있도록 사이트 스타일을 정의하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 0babdc80421c8a2a4be55d005884475dcebeda84
+exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-
-# 사이트 템플릿 및 테마 사용자 지정 {#customizing-site-templates-themes}
+# 사이트 템플릿 및 테마 맞춤화 {#customizing-site-templates-themes}
 
 AEM 사이트 템플릿을 사용하여 사이트 구조 및 초기 컨텐츠를 사전 정의하는 방법과 테마를 사용하여 사이트를 신속하게 만들 수 있도록 사이트 스타일을 정의하는 방법을 알아봅니다.
 

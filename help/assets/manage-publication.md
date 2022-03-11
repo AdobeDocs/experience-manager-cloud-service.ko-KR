@@ -1,17 +1,17 @@
 ---
-title: '게시 관리 '
+title: 게시 관리
 description: Experience Manager Assets, Dynamic Media 및 Brand Portal에 자산 게시 또는 게시 취소
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 8%
 
 ---
-
 
 # Experience Manager Assets에서 게시 관리 {#manage-publication-in-aem}
 
@@ -191,4 +191,3 @@ Only the selected folder content and references are published.
 * 빈 폴더가 게시되지 않습니다.
 * 처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 표현물이 없습니다. 처리가 완료될 때까지 기다렸다가 처리가 완료되면 자산을 게시하거나 다시 게시하십시오.
 * 복잡한 자산의 게시를 취소하는 동안 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 게시를 취소하지 마십시오.
-

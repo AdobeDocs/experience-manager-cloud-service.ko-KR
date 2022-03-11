@@ -1,5 +1,5 @@
 ---
-title: 페이지에 워크플로우 적용
+title: 페이지에 워크플로 적용
 description: 작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다. 또한 둘 이상의 워크플로우를 적용할 수도 있습니다.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
@@ -9,14 +9,14 @@ ht-degree: 81%
 
 ---
 
-# 페이지에 워크플로우 적용 {#applying-workflows-to-pages}
+# 페이지에 워크플로 적용 {#applying-workflows-to-pages}
 
-작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다.두 개 이상의 워크플로우를 적용할 수도 있습니다.
+작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다. 두 개 이상의 워크플로우를 적용할 수도 있습니다.
 
 워크플로우를 적용할 때에는 다음 정보를 지정합니다.
 
-* 적용할 워크플로우.
-   *  모든 워크플로우(AEM 관리자가 지정한 액세스 권한이 있는 워크플로우)를 적용할 수 있습니다.
+* The workflow to apply.
+   * You can apply any workflow (that you have access to, as assigned by your AEM administrator).
 * 원할 경우, 사용자의 받은 편지함에서 워크플로우 인스턴스를 식별하는 데 도움이 되는 제목.
 * 워크플로우 페이로드. 하나 이상의 페이지일 수 있습니다.
 
@@ -59,28 +59,28 @@ ht-degree: 81%
 
 ### 사이트 도구 모음에서 워크플로우 시작 {#starting-a-workflow-from-the-sites-toolbar}
 
-**사이트** 콘솔의 도구 모음에서 워크플로우를 시작할 수 있습니다.
+워크플로우는 **Sites** 콘솔:
 
 1. 필요한 페이지로 이동하여 선택합니다.
 
-1. 이제 도구 모음의 **만들기** 옵션에서 **워크플로우**&#x200B;를 선택할 수 있습니다.
+1. 에서 **만들기** 이제 도구 모음의 옵션을 선택할 수 있습니다 **워크플로우**.
 
    ![도구 모음에서 워크플로우 만들기](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
 1. **워크플로우 만들기** 마법사는 [워크플로우 세부 사항을 지정](#specifying-workflow-details-in-the-create-workflow-wizard)하는 데 도움이 됩니다.
 
-### 타임라인에서 워크플로우 시작  {#starting-a-workflow-from-the-timeline}
+### 타임라인에서 워크플로우 시작 {#starting-a-workflow-from-the-timeline}
 
 **타임라인**&#x200B;에서는 선택한 리소스에 적용할 워크플로우를 시작할 수 있습니다.
 
-1. [리소스를 ](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) 선택하고  [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 을 엽니다(또는 타임라인을 연 다음 리소스를 선택합니다.).
+1. [리소스를 선택합니다](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) 및 열기 [타임라인](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) (또는 타임라인 을 열고 리소스를 선택합니다.)
 1. 주석 필드 옆에 있는 화살촉 모양을 사용하여 **워크플로우 시작**&#x200B;을 표시할 수 있습니다.
 
    ![타임라인에서 워크플로우 만들기](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
 1. **워크플로우 만들기** 마법사는 [워크플로우 세부 사항을 지정](#specifying-workflow-details-in-the-create-workflow-wizard)하는 데 도움이 됩니다.
 
-### 워크플로우 만들기 마법사에서 워크플로우 세부 사항 지정  {#specifying-workflow-details-in-the-create-workflow-wizard}
+### 워크플로우 만들기 마법사에서 워크플로우 세부 사항 지정 {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 **워크플로우 만들기** 마법사는 워크플로우를 선택하고 필요한 세부 사항을 지정하는 데 도움이 됩니다.
 
@@ -106,7 +106,7 @@ ht-degree: 81%
       * 식별할 수 있도록 패키지의 제목을 지정할 수 있습니다.
    >[!NOTE]
    >
-   >여러 리소스 지원을 위한 워크플로우를 구성하고 여러 리소스를 선택하면 **워크플로우 패키지 유지** 선택 사항을 사용할 수 있습니다.
+   >The **Keep workflow package** option is available when the workflow has been configured for Multi Resource Support and multiple resources have been selected.
 
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
@@ -118,7 +118,7 @@ ht-degree: 81%
 
 1. **범위** 단계에서 다음 내용을 선택할 수 있습니다.
 
-   * **컨텐츠 추** 가 를 사용하여  [경로 브라우저를 열고 ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 추가 리소스를 선택합니다.브라우저에서 선택 을 클릭/탭하여  **** 워크플로우 인스턴스에 컨텐츠를 추가합니다.
+   * **컨텐츠 추가** 열다 [경로 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 추가 리소스를 선택합니다. 브라우저에서는 을 클릭/탭합니다 **선택** 워크플로우 인스턴스에 컨텐츠를 추가하는 방법
 
    * 추가 작업을 보기 위한 기존 리소스:
 
@@ -137,11 +137,11 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >리소스를 더 추가하려는 경우 **뒤로**&#x200B;를 사용하여 **속성** 단계에서 **워크플로우 패키지 유지**&#x200B;에 대한 설정을 조정할 수 있습니다.
+   >If you add additional resources, then you can use **Back** to adjust the setting for **Keep workflow package** in the **Properties** step.
 
-1. **만들기**&#x200B;를 사용하여 마법사를 닫고 워크플로우 인스턴스를 만듭니다. 알림은 사이트 콘솔에 표시됩니다.
+1. 사용 **만들기** 마법사를 닫고 워크플로우 인스턴스를 만들려면 다음을 수행하십시오. 알림은 사이트 콘솔에 표시됩니다.
 
-## 페이지 편집기에서 워크플로우 시작  {#starting-a-workflow-from-the-page-editor}
+## 페이지 편집기에서 워크플로우 시작 {#starting-a-workflow-from-the-page-editor}
 
 페이지를 편집할 때 도구 모음에서 **페이지 정보**&#x200B;를 선택할 수 있습니다. 드롭다운 메뉴에는 **워크플로우에서 시작** 선택 사항이 있습니다. 이 선택 사항을 선택하면 필요한 경우 제목과 함께 필요한 워크플로를 지정할 수 있는 대화 상자가 열립니다.
 

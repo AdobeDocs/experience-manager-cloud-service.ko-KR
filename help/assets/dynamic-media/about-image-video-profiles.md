@@ -98,7 +98,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![Scene7이 있는 워크플로우 모델 페이지: 카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
 1. 도구 모음에서 를 선택합니다 **[!UICONTROL 편집]**. 새 브라우저 탭에서 Scene7을 엽니다. 자산 워크플로우 모델 페이지를 재처리합니다.
-1. Scene7에서: 오른쪽 상단 모서리 근처에 있는 자산 워크플로우 페이지 재처리 를 선택하고 **[!UICONTROL 편집]** 워크플로우 &quot;잠금 해제&quot;하기.
+1. Scene7에서: 오른쪽 상단 모서리 근처에 있는 자산 워크플로우 페이지 재처리를 선택합니다. **[!UICONTROL 편집]** 워크플로우 &quot;잠금 해제&quot;하기.
 1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 을 선택합니다 **[!UICONTROL 구성]** 클릭합니다.
 
    ![Scene7 배치 업로드 구성 요소](/help/assets/dynamic-media/assets/reprocess-assets8.png)

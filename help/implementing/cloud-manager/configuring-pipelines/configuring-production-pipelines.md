@@ -2,13 +2,13 @@
 title: 프로덕션 파이프라인 구성
 description: 코드를 프로덕션 환경에 빌드 및 배포하도록 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 0%
 
 ---
-
 
 # 프로덕션 파이프라인 구성 {#configure-production-pipeline}
 

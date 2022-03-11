@@ -56,7 +56,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 * 도시
 * 회사
 * 개인
-* 수상
+* 상
 
 매우 간단해 보이지만, 회사에는 CEO와 직원들이 모두 있습니다..그리고 이들은 모두 사람들이며, 각각 사람으로 정의되었습니다.
 
@@ -119,7 +119,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
       * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
    * [변형 - 컨텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+   * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 
       * [컨텐츠 조각 모델 - 데이터 유형](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
@@ -127,7 +127,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 
 
 * 시작 안내서
-   * [자산 폴더 만들기 - 헤드리스 설정](/help/headless/setup/create-assets-folder.md)
+   * [에셋 폴더 만들기 - Headless 설정](/help/headless/setup/create-assets-folder.md)
 
 * AEM 헤드리스 콘텐츠 설계 여정
 

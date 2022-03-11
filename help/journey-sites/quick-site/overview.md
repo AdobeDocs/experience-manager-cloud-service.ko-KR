@@ -1,15 +1,15 @@
 ---
-title: AEM 빠른 사이트 만들기 여정
+title: AEM 빠른 사이트 생성 여정
 description: 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 안내가 있는 여정을 보려면 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 경우 사이트를 신속하게 사용자 지정할 수 있습니다.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b8218232-0298-4b16-9dab-fa59be592a24
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# AEM 빠른 사이트 만들기 여정 {#quick-site-creation-journey}
+# AEM 빠른 사이트 생성 여정 {#quick-site-creation-journey}
 
 사용하기 쉬운 AEM 빠른 사이트 만들기 도구를 통해 안내가 있는 여정을 보려면 AEM 사이트의 프런트 엔드 개발을 간소화하고 AEM 백엔드 지식이 없는 경우 사이트를 신속하게 사용자 지정할 수 있습니다.
 
@@ -35,7 +35,7 @@ AEM 빠른 사이트 만들기 도구를 사용하면 비개발자가 사이트 
 
 Adobe이 AEM을 사용하여 사이트 비즈니스 사례를 해결하는 방법을 권장하는 방법을 알아보려면 AEM Sites 여정이 시작되는 곳입니다.
 
-## 속성을 확인하는 {#audience}
+## 대상자 {#audience}
 
 이 여정은 AEM Sites 테마를 사용자 지정하는 요구 사항, 단계 및 접근 방식을 설명합니다. 주요 대상은 AEM에 대한 지식이 필요하지 않은 프런트엔드 개발자입니다. 그러나 전체 프로세스를 보여주기 위해 여정에는 기본 AEM Sites 및 Cloud Manager 지식이 있다고 간주되는 관리자가 포함됩니다. 실제로, 여러 사람이 여러 역할을 제공할 수 있으며, 이 여정은 관리자와 프런트 엔드 개발자 모두의 관점을 지원합니다.
 

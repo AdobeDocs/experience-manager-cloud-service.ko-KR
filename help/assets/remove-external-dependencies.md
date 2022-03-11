@@ -2,13 +2,13 @@
 title: 기존 설치에 대한 외부 종속성 제거
 description: ' 설치  [!DNL Workfront for Experience Manager enhanced connector]'
 feature: Integrations
-source-git-commit: b61915a27968b11472ae458d7be3d73f3449fbbe
+exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
+source-git-commit: d1f7b3ee9394751795273820c17e6feba84f7bf6
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 1%
 
 ---
-
 
 # 기존 설치에 대한 외부 종속성 제거 {#remove-external-depedencies}
 
@@ -47,4 +47,3 @@ Adobe은 Workfront에 대한 기존 향상된 커넥터 설치에 대한 구성 
    ```
 
 1. 를 실행합니다 [새 설치 단계](workfront-connector-install.md).
-

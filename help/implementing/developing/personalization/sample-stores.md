@@ -31,11 +31,11 @@ ContextHub는 솔루션에서 사용할 수 있는 몇 가지 샘플 저장소 �
 
 ### 기본 구현 {#base-implementation-segmentation}
 
-aem.segmentation store 후보는 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)을 확장합니다.
+aem.segmentation store 후보자가 확장됩니다 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### 구성 {#configuration-segmentation}
 
-`aem.segmentation` 저장소를 만들 때 세부 구성을 제공할 필요가 없습니다. 기본 구성은 ContextHub 세그먼트 정의의 위치를 지정합니다.
+를 만들 때 `aem.segmentation` 저장 시 자세한 구성을 제공할 필요가 없습니다. 기본 구성은 ContextHub 세그먼트 정의의 위치를 지정합니다.
 
 ```xml
 {
@@ -49,7 +49,7 @@ aem.segmentation store 후보는 [`ContextHub.Store.PersistedJSONPStore`](contex
 
 ## contexthub.geolocation 샘플 저장소 후보 {#contexthub-geolocation-sample-store-candidate}
 
-`contexthub.geolocation` 샘플 저장소 후보 는 Google Map을 사용하여 클라이언트 위치에 대한 정보를 가져오고 저장합니다.
+다음 `contexthub.geolocation` 샘플 저장소 후보 에서는 Google 맵을 사용하여 클라이언트 위치에 대한 정보를 얻고 저장합니다.
 
 ### 소스 위치 {#source-location-geolocation}
 
@@ -57,7 +57,7 @@ aem.segmentation store 후보는 [`ContextHub.Store.PersistedJSONPStore`](contex
 
 ### 기본 구현 {#base-implementation-geolocation}
 
-`contexthub.geolocation` 저장소 후보가 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)을(를) 확장합니다.
+다음 `contexthub.geolocation` 저장 후보 확장 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### 구성 {#configuration-geolocation}
 
@@ -105,7 +105,7 @@ aem.segmentation store 후보는 [`ContextHub.Store.PersistedJSONPStore`](contex
 >
 >Chrome 50.x에 도입된 보안 정책을 사용하려면 모든 지리적 위치 관련 호출이 보안 연결을 통해 수행되어야 합니다. 따라서 AEM이 https를 통해 실행 중인 경우 AEM에서는 지리적 위치 API 호출에 https 사용을 강제 적용합니다. 그렇지 않으면 동일한 원본 정책을 준수하기 위해 http를 사용합니다.
 >
->Chrome의 변경 사항에 대한 자세한 내용은 [이 Google 블로그 게시물](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)을 참조하십시오.
+>자세한 내용은 [이 Google 블로그 게시물](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) chrome의 변경 사항에 대한 자세한 내용을 참조하십시오.
 
 ## contexthub.surferinfo 샘플 저장소 후보 {#contexthub-surferinfo-sample-store-candidate}
 
@@ -117,11 +117,11 @@ aem.segmentation store 후보는 [`ContextHub.Store.PersistedJSONPStore`](contex
 
 ### 기본 구현 {#base-implementation-surferinfo}
 
-`contexthub.surferinfo` 저장소 후보가 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)을(를) 확장합니다.
+다음 `contexthub.surferinfo` 저장 후보 확장 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### 구성 {#configuration-surferinfo}
 
-기본 구성은 `ContextHub.Store.PersistedStore`에서 상속됩니다.
+기본 구성은 다음에서 상속됩니다. `ContextHub.Store.PersistedStore`.
 
 ### 데이터 항목 {#data-items-surferinfo}
 
@@ -176,7 +176,7 @@ aem.segmentation store 후보는 [`ContextHub.Store.PersistedJSONPStore`](contex
 
 ## granite.에뮬레이터 샘플 저장소 후보 {#granite-emulators-sample-store-candidate}
 
-`granite.emulators` 샘플 저장소 후보 는 클라이언트 장치에 대한 정보를 저장합니다.
+다음 `granite.emulators` 샘플 저장소 후보 는 클라이언트 장치에 대한 정보를 저장합니다.
 
 ### 소스 위치 {#source-location-emulators}
 
@@ -184,11 +184,11 @@ aem.segmentation store 후보는 [`ContextHub.Store.PersistedJSONPStore`](contex
 
 ### 기본 구현 {#base-implementation-emulators}
 
-`granite.emulators` 저장소 후보가 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)을(를) 확장합니다.
+다음 `granite.emulators` 저장 후보 확장 [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### 구성 {#configuration-emulators}
 
-기본 구성에는 다른 장치에 대한 정보를 포함하는 `defaultEmulators` 배열이 포함되어 있습니다. 저장소를 만들 때 다음 예제에 표시된 형식을 사용하여 필요에 따라 세부 구성 속성에 다른 장치 프로필을 제공합니다.
+기본 구성에는 이름이 인 배열이 포함되어 있습니다 `defaultEmulators` 여기에는 여러 장치에 대한 정보가 포함되어 있습니다. 저장소를 만들 때 다음 예제에 표시된 형식을 사용하여 필요에 따라 세부 구성 속성에 다른 장치 프로필을 제공합니다.
 
 ```javascript
 {
@@ -317,7 +317,7 @@ aem.segmentation store 후보는 [`ContextHub.Store.PersistedJSONPStore`](contex
 
 ### 기본 구현 {#base-implementation-profile}
 
-`granite.profile` 저장소 후보가 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)을(를) 확장합니다.
+다음 `granite.profile` 저장 후보 확장 [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### 구성 {#configuration-profile}
 

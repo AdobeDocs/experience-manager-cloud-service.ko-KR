@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# 통합 대상 [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+# [!DNL Adobe Analytics]와 통합  {#integrate-aem-forms-with-adobe-analytics}
 
 AEM Forms과 통합 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있도록 해줍니다. 이러한 지표를 분석하는 데 중요한 목적은 비즈니스 사용자가 최종 사용자 행동에 대한 통찰력을 얻을 수 있도록 하고 데이터 캡처 경험을 최적화할 수 있도록 하는 것입니다. Adaptive Forms용 Adobe Analytics을 통해 로그인된 사용자와 로그인(익명) 사용자 모두의 동작을 캡처하고 추적할 수 있습니다.
 

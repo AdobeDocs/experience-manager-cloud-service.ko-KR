@@ -1,13 +1,13 @@
 ---
 title: AEM Forms용 통합 스토리지 커넥터를 구성하는 방법
 description: AEM Forms용 통합 스토리지 커넥터를 관리하는 방법을 알아봅니다. 통합 스토리지 커넥터를 사용하여 AEM Forms을 외부 데이터 저장소에 연결합니다.
-source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms용 통합 스토리지 커넥터 관리 {#manage-unified-storage-connector}
 

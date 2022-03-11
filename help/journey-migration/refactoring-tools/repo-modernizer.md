@@ -1,14 +1,15 @@
 ---
-title: Repository Modernizer
-description: Repository Modernizer
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: 저장소 현대화 도구
+description: 저장소 현대화 도구
+exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# Repository Modernizer {#repo-modernizer}
+# 저장소 현대화 도구 {#repo-modernizer}
 
 Repository Modernizer는 Adobe Experience Manager as a Cloud Service에 대해 정의된 프로젝트 구조와 호환되도록 컨텐츠와 코드를 개별 패키지로 분리하여 기존 프로젝트 패키지를 재구성할 수 있도록 개발된 유틸리티입니다.
 

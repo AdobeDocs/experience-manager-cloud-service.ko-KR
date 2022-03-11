@@ -23,7 +23,7 @@ ht-degree: 97%
 >
 >이 기능에 대한 기술적인 세부 사항은 [개발 및 페이지 차이](/help/implementing/developing/introduction/page-diff.md#operation-details)를 참조하십시오.
 
-## 사용 {#use}
+##  사용  {#use}
 
 이러한 병렬 비교에서 비교할 수 있는 내용은 다음과 같습니다.
 
@@ -63,7 +63,7 @@ ht-degree: 97%
 >
 >번역에서는 모든 것이 변경되어 강조 표시가 아무런 소용이 없으므로 언어 사본을 비교할 때에는 강조 표시가 비활성화됩니다.
 
-### 전체 화면 및 종료  {#fullscreen-and-exiting}
+### 전체 화면 및 종료 {#fullscreen-and-exiting}
 
 특정 컨텐츠에 집중할 수 있도록 병렬 비교의 어느 &quot;한 쪽&quot;에 대한 전체 화면 아이콘을 클릭하여 전체 브라우저 창으로 확대할 수 있습니다.
 

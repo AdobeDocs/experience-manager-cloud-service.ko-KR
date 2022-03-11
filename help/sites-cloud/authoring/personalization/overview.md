@@ -27,7 +27,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 활동은 또한 페이지에서 사용하는 [타깃팅 엔진](#targeting-engine)을 식별합니다.
 
-브랜드를 위한 활동을 만들고 관리하려면 [활동 콘솔](/help/sites-cloud/authoring/personalization/activities.md)을 사용하십시오. [타깃팅된 컨텐츠를 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)할 때 활동을 만들 수도 있습니다.
+를 사용하십시오 [활동 콘솔](/help/sites-cloud/authoring/personalization/activities.md) 브랜드를 위한 활동을 만들고 관리하기 위해. [타깃팅된 컨텐츠를 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)할 때 활동을 만들 수도 있습니다.
 
 ## 경험 {#experiences}
 
@@ -47,7 +47,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 [오퍼 콘솔](/help/sites-cloud/authoring/personalization/offers.md)을 사용하여 여러 경험에서 사용할 수 있는 오퍼를 만드십시오. [타깃팅된 컨텐츠를 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)할 때 단일 사용 오퍼를 만들거나 오퍼 라이브러리의 오퍼를 추가하십시오.
 
-## 타깃팅 엔진  {#targeting-engine}
+## 타깃팅 엔진 {#targeting-engine}
 
 타깃팅 엔진은 타깃팅된 컨텐츠에 대한 논리를 실행하는 메커니즘입니다. [활동](/help/sites-cloud/authoring/personalization/activities.md)은 사용 가능한 두 개의 타깃팅 엔진인 AEM과 Adobe Target 중 하나를 사용하도록 구성되어 있습니다.
 
@@ -62,4 +62,4 @@ Adobe Target 타깃팅 엔진을 사용하면 페이지 방문에서 수집된 �
 * 이 타깃팅 엔진을 사용하는 경우, Adobe Target에서 가져오는 세그먼트를 사용하여 경험의 대상을 정의합니다.
 * Adobe Target 엔진을 사용하는 활동은 [Target에 동기화](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)됩니다.
 
-Adobe Target과 통합한 경우 이 엔진을 사용할 수 있습니다.<!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
+Adobe Target과 통합한 경우 이 엔진을 사용할 수 있습니다. <!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->

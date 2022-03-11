@@ -11,7 +11,7 @@ ht-degree: 70%
 
 ---
 
-# 변형 - 조각 컨텐츠 작성{#variations-authoring-fragment-content}
+# 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
 [변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 특정 채널 및/또는 시나리오에서 사용할 마스터 컨텐츠의 사본을 만들고 편집할 수 있으므로 AEM 컨텐츠 조각의 중요한 기능으로, 헤드리스 컨텐츠 게재를 보다 유연하게 만듭니다.
 
@@ -74,7 +74,7 @@ ht-degree: 70%
 * 다양한 [작업](#actions)에 대한 액세스
 * [형식](#formats)에 따라 추가적인 형식 옵션([리치 텍스트](#rich-text))
 
-### 작업 {#actions}
+### 액션 {#actions}
 
 전체 화면 편집기(즉, 여러 줄 텍스트)가 열려 있는 경우 다음 작업도(모든 [형식](#formats)에) 사용할 수 있습니다.
 
@@ -221,6 +221,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 * [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
 
 
 1. **마스터** 또는 필요한 변형을 선택합니다.
@@ -294,7 +295,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 * 조각 편집기에서 **주석** 탭을 선택하여 나열하거나 삭제할 수 있습니다.
 
-   ![주석](assets/cfm-variations-08.png)
+   ![annotations](assets/cfm-variations-08.png)
 
 * 선택한 조각에 대한 [타임라인](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 보고 삭제할 수 있습니다.
 

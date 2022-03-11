@@ -4,7 +4,7 @@ description: 'Adobe AEM Target HTTP 창 '
 source-git-commit: c193b38718622cd2e960a8e8833c2d295822dc33
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## 매개 변수 {#parameters}
 
-![Target HTTP ](assets/httpwindow.png "WindowTarget HTTP 창")
+![Target HTTP 창](assets/httpwindow.png "Target HTTP 창")
 
 창에는 다음과 같은 구성 가능한 매개 변수가 포함되어 있습니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 비디오 자산 관리
+title: 비디오 에셋 관리
 description: 에서 비디오 자산 업로드, 미리 보기, 주석 달기 및 게시 [!DNL Adobe Experience Manager].
 contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
@@ -12,7 +12,7 @@ ht-degree: 6%
 
 ---
 
-# 비디오 자산 관리 {#manage-video-assets}
+# 비디오 에셋 관리 {#manage-video-assets}
 
 비디오 형식은 조직의 디지털 자산에 중요한 부분입니다. [!DNL Adobe Experience Manager] 에서는 비디오 자산이 만들어진 후 비디오 자산의 전체 라이프사이클을 관리하기 위한 성숙한 오퍼링과 기능을 제공합니다.
 

@@ -1,20 +1,21 @@
 ---
-title: 대용량 컨텐츠 저장소 처리
+title: 대형 콘텐츠 저장소 처리
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 대용량 컨텐츠 저장소 처리 {#handling-large-content-repositories}
+# 대형 콘텐츠 저장소 처리 {#handling-large-content-repositories}
 
 ## 개요 {#overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
->title="대용량 컨텐츠 저장소 처리"
+>title="대형 콘텐츠 저장소 처리"
 >abstract="컨텐츠 전송 활동의 추출 및 수집 단계를 크게 단축하여 컨텐츠를 AEM as a Cloud Service으로 이동하기 위해 CTT는 AzCopy를 선택적 사전 복사 단계로 활용할 수 있습니다. 이 사전 단계가 구성되면 추출 단계에서 AzCopy는 Amazon S3 또는 Azure Blob 저장소에서 마이그레이션 세트 blob 저장소로 블롭을 복사합니다. 수집 단계에서 AzCopy는 마이그레이션 세트 blob 저장소에서 대상 AEM as a Cloud Service blob 저장소로 블롭을 복사합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="AzCopy를 사전 복제 단계로 시작하기"
 

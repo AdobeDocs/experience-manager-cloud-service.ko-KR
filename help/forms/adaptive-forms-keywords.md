@@ -129,7 +129,7 @@ ht-degree: 5%
   <tr>
    <td><p>너비</p> </td>
    <td><p>buttonText</p> </td>
-   <td><p>색인</p> </td>
+   <td><p>index</p> </td>
   </tr>
   <tr>
    <td><p>높이</p> </td>

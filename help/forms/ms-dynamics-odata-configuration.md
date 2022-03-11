@@ -1,13 +1,13 @@
 ---
 title: 구성 방법 [!DNL Microsoft Dynamics] OData?
-description: 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델을 만드는 방법을 알아봅니다 [!DNL Microsoft Dynamics] service. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Microsoft Dynamics] 비즈니스 워크플로우를 사용하도록 설정하는 서버입니다.
+description: 에 정의된 엔티티, 속성 및 서비스를 기반으로 양식 데이터 모델을 만드는 방법을 알아봅니다 [!DNL Microsoft Dynamics] 서비스. 양식 데이터 모델 을 사용하여 와 상호 작용하는 적응형 Forms을 만들 수 있습니다 [!DNL Microsoft Dynamics] 비즈니스 워크플로우를 사용하도록 설정하는 서버입니다.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 1%
    * [!DNL Microsoft Dynamics] 구내 365
    * [!DNL Microsoft Dynamics] 2016년 온프레미스
 
-* [응용 프로그램을 등록했습니다. [!DNL Microsoft Dynamics] online service with [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). 등록된 서비스에 대한 클라이언트 ID(애플리케이션 ID라고도 함)와 클라이언트 암호 값을 기록해 두십시오. 이러한 값은 [에 대한 cloud service 구성 [!DNL Microsoft Dynamics] 서비스](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [응용 프로그램을 등록했습니다. [!DNL Microsoft Dynamics] 온라인 서비스 [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). 등록된 서비스에 대한 클라이언트 ID(애플리케이션 ID라고도 함)와 클라이언트 암호 값을 기록해 두십시오. 이러한 값은 [에 대한 cloud service 구성 [!DNL Microsoft Dynamics] 서비스](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## 등록된 회신 URL 설정 [!DNL Microsoft Dynamics] 애플리케이션 {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -141,7 +141,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
 MS Dynamics OData Cloud Service(OData 서비스) 클라우드 서비스가 구성되어 Dynamics 서비스와 연결되어 있습니다. 양식 데이터 모델 양식 데이터 모델
 
-## 양식 데이터 모델 작성 {#create-form-data-model}
+## 양식 데이터 모델 만들기 {#create-form-data-model}
 
 <!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 

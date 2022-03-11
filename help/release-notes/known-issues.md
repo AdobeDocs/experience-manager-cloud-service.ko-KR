@@ -3,7 +3,7 @@ title: 알려진 문제
 description: Adobe Experience Manager as a Cloud Service 관련 알려진 문제
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 100%
 

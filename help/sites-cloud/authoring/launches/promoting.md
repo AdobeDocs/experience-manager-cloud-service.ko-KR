@@ -1,5 +1,5 @@
 ---
-title: 론치 홍보
+title: 런치 홍보
 description: 게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
@@ -9,7 +9,7 @@ ht-degree: 76%
 
 ---
 
-# 론치 홍보 {#promoting-launches}
+# 런치 홍보 {#promoting-launches}
 
 게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. 론치 페이지가 홍보되면 해당 소스 페이지가 홍보된 페이지의 컨텐츠로 바뀝니다. 론치 페이지 홍보 시 다음 옵션을 사용할 수 있습니다.
 
@@ -24,7 +24,7 @@ ht-degree: 76%
 
 >[!CAUTION]
 >
->단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 두 개의 프로모트 작업을 동시에 수행하면 오류 `Launch could not be promoted` (로그에 충돌 오류와 함께 발생될 수 있습니다.)
+>단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에서 두 개의 홍보 작업을 동시에 수행하면 오류가 발생할 수 있습니다. `Launch could not be promoted` (로그에 충돌 오류와 함께)
 
 >[!CAUTION]
 >
@@ -38,32 +38,30 @@ ht-degree: 76%
 >
 >* [중첩된 론치 홍보](#promoting-a-nested-launch)에서는 구조에 둘 이상의 론치가 있는 경우를 설명합니다.
 >* [론치 - 이벤트 순서](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)에서는 자동 홍보 및 게시에 대한 세부 정보를 제공합니다.
-
 >
-
 
 
 **사이트** 콘솔 또는 **론치** 콘솔에서 론치를 홍보할 수 있습니다.
 
 1. 열기:
-   * 소스 페이지를 탐색할 때 **Sites** 콘솔:
-      1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 열고 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하고 열면 순서는 중요하지 않음). 모든 참조가 표시됩니다.
+   * 다음 **Sites** 소스 페이지를 탐색할 때 콘솔
+      1. 를 엽니다. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) 을 사용하여 필요한 소스 페이지를 선택합니다. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md) (또는 참조 레일을 선택하고 엽니다. 순서는 중요하지 않습니다.) 모든 참조가 표시됩니다.
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
       1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
-   * 시작 페이지를 탐색할 때 **Sites** 콘솔:
-      1. [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 론치 페이지를 선택합니다.
-      1. **Promote** 작업은 도구 모음에서 사용할 수 있습니다.
-   * **시작** 콘솔:
+   * 다음 **Sites** launch 페이지를 탐색할 때 콘솔:
+      1. 을 사용하여 필요한 론치 페이지를 선택합니다 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. 다음 **홍보** 작업은 도구 모음에서 사용할 수 있습니다.
+   * 다음 **론치** 콘솔:
       1. 론치를 선택합니다(썸네일 탭/클릭).
       1. **홍보**&#x200B;를 선택합니다.
 1. 첫 번째 단계에서 다음을 지정할 수 있습니다.
-   * **타겟**
+   * **대상**
       * **승격 후 실행 삭제**
    * **범위**
       * **전체 론치 홍보**
       * **수정된 페이지 홍보**
-      * **승인된 페이지 홍보**  - 론치 승인 워크플로우에 따라 다름
+      * **승인된 페이지 홍보** - 시작 승인 작업 과정에 따라 다름
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
 
@@ -75,13 +73,13 @@ ht-degree: 76%
       >
       >여기서는 단일 론치만 다룹니다. 론치가 중첩된 경우에는 [중첩된 론치 홍보](#promoting-a-nested-launch)를 참조하십시오.
 1. **다음**&#x200B;을 선택하여 계속하십시오.
-1. 홍보할 페이지를 검토할 수 있습니다.선택한 페이지의 범위에 따라 다릅니다.
+1. 홍보할 페이지를 검토할 수 있습니다. 선택한 페이지의 범위에 따라 다릅니다.
 
    ![프로모션 검토](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
 1. **홍보**&#x200B;를 선택합니다.
 
-## 편집 시 론치 페이지 홍보  {#promoting-launch-pages-when-editing}
+## 편집 시 론치 페이지 홍보 {#promoting-launch-pages-when-editing}
 
 론치 페이지를 편집할 때 **론치 홍보** 동작을 **페이지 정보**&#x200B;에서도 사용할 수 있습니다. 이 작업을 수행하면 필요한 정보를 수집하기 위한 마법사가 열립니다.
 
@@ -91,7 +89,7 @@ ht-degree: 76%
 >
 >이 마법사는 단일 및 [중첩 론치](#promoting-a-nested-launch)에 사용할 수 있습니다.
 
-## 중첩 론치 홍보  {#promoting-a-nested-launch}
+## 중첩 론치 홍보 {#promoting-a-nested-launch}
 
 중첩 론치를 만든 후에는 루트 소스(프로덕션)를 포함하는 모든 소스에 다시 홍보할 수 있습니다.
 
@@ -100,13 +98,13 @@ ht-degree: 76%
 1. 중첩 론치 만들기의 경우처럼, **론치** 콘솔 또는 **참조** 레일로 이동한 후 필요한 론치를 선택합니다.
 1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
 1. 다음과 같은 필수 세부 사항을 입력합니다.
-   * **타겟**
-      * **프로모션 타겟**  - 모든 소스로 승격할 수 있습니다.
-      * **승격 후 론치 삭제**  - 승격 후 선택한 론치와 론치 내에 중첩된 론치가 모두 삭제됩니다.
-   * **범위**  - 여기서는 전체 론치를 홍보할지, 실제로 편집된 페이지만 홍보할지 여부를 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
+   * **대상**
+      * **프로모션 타겟** - 어떤 소스로도 홍보할 수 있습니다.
+      * **프로모션 후 실행 삭제** - 홍보 후 선택한 론치와 론치 내에 중첩된 론치가 삭제됩니다.
+   * **범위** - 여기서는 전체 론치를 홍보할지, 실제로 편집된 페이지만 홍보할지 여부를 선택할 수 있습니다. 후자인 경우, 하위 페이지를 포함/제외하도록 선택할 수 있습니다. 기본 구성은 현재 페이지의 페이지 변경 사항만 홍보하는 것입니다.
       * **전체 론치 홍보**
       * **수정된 페이지 홍보**
-      * **승인된 페이지 홍보**  - 론치 승인 워크플로우에 따라 다름
+      * **승인된 페이지 홍보** - 시작 승인 작업 과정에 따라 다름
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
 
@@ -125,7 +123,7 @@ ht-degree: 76%
 
    ![론치 콘솔에서](/help/sites-cloud/authoring/assets/launches-console.png)
 
-## AEM Workflow를 사용하여 승격된 페이지 처리 {#processing-promoted-pages-using-aem-workflow}
+## Processing Promoted Pages Using AEM Workflow {#processing-promoted-pages-using-aem-workflow}
 
 작업 흐름 모델을 사용하여 다음과 같이 승격된 론치 페이지의 일괄 프로세스를 수행할 수 있습니다.
 

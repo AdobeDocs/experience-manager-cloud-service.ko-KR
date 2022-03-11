@@ -7,7 +7,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## 언샵 마스크 옵션 {#unsharp-mask}
 
-이미지 프로필을 만들 때 **[!UICONTROL 언샵 마스크]** 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하는 옵션입니다. 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. 이 효과는 Adobe Photoshop의 &quot;언샵 마스크&quot; 필터와 동일한 옵션을 사용합니다.
+이미지 프로필을 만들 때 **[!UICONTROL 언샵 마스크]** 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하는 옵션입니다. 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
   </tr>
   <tr>
    <td>양</td>
-   <td>가장자리 픽셀에 적용된 대비 크기를 제어합니다. 기본값은 1.75입니다. 고해상도 이미지의 경우 최대 5로 늘릴 수 있습니다. 양을 필터 강도를 측정하는 방법으로 생각합니다. 범위는 0-5입니다.</td>
+   <td>가장자리 픽셀에 적용된 대비 양을 제어합니다. 기본값은 1.75입니다. 고해상도 이미지의 경우 최대 5로 늘릴 수 있습니다. 양을 필터 강도를 측정하는 방법으로 생각합니다. 범위는 0-5입니다.</td>
   </tr>
   <tr>
    <td>반경</td>
@@ -68,7 +68,7 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 
 | 옵션 | 사용 시기 | 설명 |
 | --- | --- | --- |
-| **[!UICONTROL 픽셀 자르기]** | 차원만 기준으로 이미지를 벌크 자르십시오. | 에서 **[!UICONTROL 자르기 옵션]** 드롭다운 목록에서 **[!UICONTROL 픽셀 자르기]**.<br>이미지의 양쪽에서 자르려면 이미지의 모든 측면이나 각 측면에서 자를 픽셀 수를 입력합니다. 이미지가 잘리는 양은 이미지 파일의 ppi(인치당 픽셀) 설정에 따라 달라집니다.<br>이미지 프로필 픽셀 자르기는 다음과 같은 방식으로 렌더링됩니다.<br>・ 값은 위쪽, 아래쪽, 왼쪽 및 오른쪽입니다.<br>・ 왼쪽 위 부분이 고려됨 `0,0` 여기서 픽셀 자르기가 계산됩니다.<br>・ 자르기 시작 지점: 왼쪽은 X이고, 상단은 Y입니다<br>・ 가로 계산: 원래 이미지의 가로 픽셀 크기 - 왼쪽 및 - 오른쪽<br>・ 세로 계산: 세로 픽셀 높이 - 위쪽, 아래쪽 빼기<br>예를 들어 4000 x 3000 픽셀 이미지가 있다고 가정합니다. 값을 사용합니다. Top=250, Bottom=500, Left=300, Right=700.<br>(4000-300-700, 3000-250-500 또는 3000,2250)의 채우기 공간을 사용하여 왼쪽 위(300,250) 자르기로부터 |
+| **[!UICONTROL 픽셀 자르기]** | 차원만 기준으로 이미지를 벌크 자르십시오. | 에서 **[!UICONTROL 자르기 옵션]** 드롭다운 목록에서 **[!UICONTROL 픽셀 자르기]**.<br>이미지의 양쪽에서 자르려면 이미지의 모든 측면이나 각 측면에서 자를 픽셀 수를 입력합니다. 이미지가 잘리는 양은 이미지 파일의 ppi(인치당 픽셀) 설정에 따라 달라집니다.<br>이미지 프로필 픽셀 자르기는 다음과 같은 방식으로 렌더링됩니다.<br>・ 값은 위쪽, 아래쪽, 왼쪽 및 오른쪽입니다.<br>・ 왼쪽 위 부분이 고려됨 `0,0` 여기서 픽셀 자르기가 계산됩니다.<br>・ 자르기 시작 지점: 왼쪽은 X이고, 상단은 Y입니다<br>・ 가로 계산: 원래 이미지의 가로 픽셀 크기 - 왼쪽 및 - 오른쪽<br>・ 세로 계산: 세로 픽셀 높이 - 위쪽 및 빼기 아래쪽<br>예를 들어 4000 x 3000 픽셀 이미지가 있다고 가정합니다. 값을 사용합니다. Top=250, Bottom=500, Left=300, Right=700.<br>(4000-300-700, 3000-250-500 또는 3000,2250)의 채우기 공간을 사용하여 왼쪽 위(300,250) 자르기로부터 |
 | **[!UICONTROL 스마트 자르기]** | 시각적 초점을 기반으로 이미지를 벌크 자르십시오. | 스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 일괄적으로 이미지 자르기를 신속하게 자동화합니다. 스마트 자르기는 화면 크기에 상관없이 원하는 관심 영역을 얻기 위해 모든 이미지의 초점을 자동으로 감지하고 자릅니다.<br>에서 **[!UICONTROL 자르기 옵션]** 드롭다운 목록에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 만든 다음 의 오른쪽에 있습니다. **[!UICONTROL 응답형 이미지 자르기]**&#x200B;을 눌러 기능을 활성화(켜짐)합니다.<br>기본 중단점 크기(**[!UICONTROL 큰]**, **[!UICONTROL Medium]**, **[!UICONTROL 작은 크기]**)은 대부분의 이미지가 모바일 및 태블릿 장치, 데스크탑 및 배너에 사용되는 다양한 크기를 다룹니다. 원하는 경우 큰, 중간 및 작은 의 기본 이름을 편집할 수 있습니다.<br>중단점을 더 추가하려면 **[!UICONTROL 자르기 추가]**; 자르기를 삭제하려면 [쓰레기통] 아이콘을 선택합니다. |
 | **[!UICONTROL 색상 및 이미지 견본]** | 각 이미지에 대한 이미지 견본을 벌크로 생성합니다. | **참고**: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.<br>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성합니다.<br>에서 **[!UICONTROL 자르기 옵션]** 드롭다운 목록에서 **[!UICONTROL 스마트 자르기]**. 그리고 오른쪽의 **[!UICONTROL 색상 및 이미지 견본]**&#x200B;을 눌러 기능을 활성화(켜짐)합니다. 에 픽셀 값을 입력합니다. **[!UICONTROL 너비]** 및 **[!UICONTROL 높이]** 텍스트 상자<br>모든 이미지 작물은 [표현물] 레일에서 사용할 수 있지만 색상 견본은 **[!UICONTROL URL 복사]** 기능. 사이트에서 견본을 렌더링하려면 직접 보는 구성 요소를 사용합니다. 이 규칙의 예외는 회전 배너입니다. Dynamic Media은 회전 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.<br><br>**이미지 색상 견본 사용**<br>&#x200B;이미지 색상 견본의 URL은 간단합니다.<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>위치 `:Swatch` 이 자산 요청에 추가됩니다.<br><br>**색상 견본 사용**<br>&#x200B;색상 견본을 사용하려면 `req=userdata` 다음과 같이 요청합니다.<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>예를 들어 다음은 Dynamic Media Classic의 견본 자산입니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>견본 에셋은 다음과 같습니다 `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br>다음 `req=userdata` 응답은 다음과 같습니다.<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>을 요청할 수도 있습니다 `req=userdata` 다음 각 URL 예와 같이, XML 또는 JSON 형식으로 응답합니다.<br>・`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>・`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**참고**: 색상 견본을 요청하고 를 구문 분석하려면 고유한 WCM 구성 요소를 만들어야 합니다 `SmartSwatchColor` 24비트 RGB 16진수 값으로 표시되는 속성입니다.<br>참조 - [`userdata`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) 를 참조하십시오. |
 | **[!UICONTROL 대상 해상도 전체에서 자르기 콘텐츠 유지]** | 동일한 종횡비로 자르기 컨텐츠를 유지 관리하려면 | 스마트 자르기 프로필을 만들 때 을 사용합니다.<br>다양한 해상도에서 주어진 종횡비에 대해 초점을 유지하면서 새 자르기 콘텐츠를 생성하려면 이 옵션을 선택 취소합니다.<br>이 상자의 선택을 취소하면 원본 이미지 해상도가 스마트 자르기 프로필에 대해 정의한 해상도보다 커야 합니다.<br><br>예를 들어 종횡비를 600 x 600(큰), 400 x 400(중간) 및 300 x 300(작은)으로 설정했다고 가정합니다.<br>When **[!UICONTROL 대상 해상도의 자르기 컨텐츠 유지]** 옵션 *체크*&#x200B;에서는 세 가지 해상도에서 동일한 자르기를 볼 수 있습니다. 이는 다음 이미지 샘플 출력과 비슷합니다(실례지만).<br>![옵션 선택](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>When **[!UICONTROL 대상 해상도의 자르기 컨텐츠 유지]** 옵션 *선택 안 함*&#x200B;로 지정하는 경우, 자르기 컨텐츠는 다음 이미지 샘플 출력과 유사하며 세 가지 해상도 모두에 대해 새로운 것입니다(예시적인 경우에만).<br>![선택 사항 선택 취소](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
@@ -105,7 +105,7 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 
    팁: 목적에 맞는 프로필 이름을 사용하십시오. 예를 들어 색상 견본을 생성하는 프로파일을 만든다고 가정합니다. 즉, 스마트 자르기가 비활성화(꺼짐)되고 색상 및 이미지 견본이 활성화(켜짐)됩니다. 이러한 경우 프로필 이름 &quot;스마트 색상 견본&quot;을 사용할 수 있습니다.
 
-   참조 - [스마트 자르기 및 스마트 견본 옵션](#crop-options) 및 [언샵 마스크](#unsharp-mask).
+   See also [Smart Crop and Smart Swatch Options](#crop-options) and [Unsharp Mask](#unsharp-mask).
 
    ![자르기](assets/crop.png)
 
@@ -138,7 +138,7 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 
 내에서 폴더에 이미지 프로필을 적용할 수 있습니다 **[!UICONTROL 도구]** 메뉴 또는 폴더에 있는 경우 **[!UICONTROL 속성]**.
 
-프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
 나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. 자세한 내용은 [처리 중인 프로필을 편집한 후 폴더에서 자산을 재처리합니다](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
@@ -229,7 +229,7 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 
 >[!IMPORTANT]
 >
->여러 자산의 스마트 자르기 창을 수동으로 재정렬하거나 크기를 변경하면 나중에 해당 자산을 재처리하기로 하더라도 해당 편집 내용이 유지 및 유지됩니다. 그러나 너비, 높이 또는 둘 다를 편집하는 경우 **[!UICONTROL 응답형 이미지 자르기]** 이미지 프로필의 영역에서 해당 자산을 재처리할 수 있습니다.
+>여러 에셋의 스마트 자르기 창을 수동으로 재정렬하거나 크기를 조정하면 나중에 해당 에셋을 재처리하는 경우에도 이러한 편집 내용이 유지되고 보존됩니다. 단, 이미지 프로필의 **[!UICONTROL 반응형 이미지 자르기]** 영역에서 폭, 높이 또는 두 가지 모두를 편집하면 해당 에셋이 재처리됩니다.
 >자세한 내용은 [폴더에서 Dynamic Media 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.

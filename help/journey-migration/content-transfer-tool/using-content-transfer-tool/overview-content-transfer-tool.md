@@ -1,7 +1,8 @@
 ---
 title: 컨텐츠 전송 도구 개요
 description: 컨텐츠 전송 도구 개요
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 58%
@@ -58,4 +59,3 @@ ht-degree: 58%
 ## 다음은 무엇입니까? {#whats-next}
 
 컨텐츠 전송 도구 및 이 도구를 설명하는 개요를 알고 나면 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용할 수 있습니다 [컨텐츠 전송 도구 사전 요구 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
-

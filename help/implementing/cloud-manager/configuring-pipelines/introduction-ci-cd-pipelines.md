@@ -2,13 +2,13 @@
 title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이 파이프라인을 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
-source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
+exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 1%
 
 ---
-
 
 # Cloud Manager CI/CD 파이프라인 {#intro-cicd}
 

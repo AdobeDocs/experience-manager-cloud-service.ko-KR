@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# 양식 데이터 모델을 사용한 작업 {#work-with-form-data-model}
+# 양식 데이터 모델을 사용하여 작업 {#work-with-form-data-model}
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 

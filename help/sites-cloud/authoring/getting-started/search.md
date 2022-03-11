@@ -77,7 +77,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 1. 검색어를 추가할 수도 있습니다.
 
-1. **X**(오른쪽 상단) 표시를 사용하여 **검색**&#x200B;을 닫습니다.
+1. Close **Search** with the **X** (top right).
 
 >[!NOTE]
 >
@@ -106,6 +106,6 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * **x**(저장된 검색 이름에 대해)를 사용하여 새 쿼리를 시작합니다(저장된 검색 자체는 삭제되지 않음).
    * **저장한 검색을 편집**&#x200B;하고, 검색 조건을 변경한 다음 다시 **저장**&#x200B;합니다.
 
-저장된 검색을 선택하고 검색 패널의 맨 아래에 있는 **저장된 검색 편집**&#x200B;을 클릭하여 저장된 검색을 수정할 수 있습니다.
+Saved searches can be modified by selecting the saved search and clicking **Edit Saved Search** at the bottom of the search panel.
 
 ![저장된 검색 수정](/help/sites-cloud/authoring/assets/saved-searches-modify.png)

@@ -1,88 +1,88 @@
 ---
-title: AEM Headless Translation Journey
-description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
+title: AEM 헤드리스 번역 여정
+description: AEM의 강력한 번역 도구를 사용하여 헤드리스 콘텐츠를 번역하여 안내식 여정을 살펴보려면 여기에서 시작하십시오.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# AEM Headless Translation Journey {#aem-headless-translation-journey}
+# AEM 헤드리스 번역 여정 {#aem-headless-translation-journey}
 
-Start here for a guided journey through translating your headless content using AEM&#39;s powerful translation tools.
+AEM의 강력한 번역 도구를 사용하여 헤드리스 콘텐츠를 번역하여 안내식 여정을 살펴보려면 여기에서 시작하십시오.
 
 ## 소개 {#introduction}
 
-Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel, region, or locale.
+헤드리스 구현은 채널, 지역 또는 로케일에 관계없이 어디에서든 대상자에게 경험을 전달하는 데 점점 더 중요해지고 있습니다.
 
-Headless implementation forgoes page and component management as is traditional in full stack solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. By using AEM&#39;s powerful translation tools, these reusable fragments can be easily translated and delivered to your audience wherever it may be.
+헤드리스 구현은 전체 스택 솔루션에서 일반적으로 페이지 및 구성 요소 관리를 수행하고 채널 중립적이고 재사용 가능한 컨텐츠 조각 및 채널 간 게재에 중점을 둡니다. AEM의 강력한 번역 도구를 사용하면 이러한 재사용 가능한 조각을 쉽게 번역하여 제공할 수 있습니다.
 
-This guide leads you through the most important headless translation topics so that on completion you:
+이 안내서에서는 가장 중요한 헤드리스 번역 주제를 안내하여 작성 시 다음과 같이 안내합니다.
 
-* Have an overview of what headless content delivery is.
-* Have a basic understanding AEM&#39;s headless features.
-* Understand AEM&#39;s translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* 헤드리스 콘텐츠 전달에 대한 개요를 살펴보십시오.
+* AEM 헤드리스 기능에 대한 기본적인 이해를 바랍니다.
+* AEM 번역 기능 및 헤드리스 콘텐츠와 어떻게 관련되는지를 이해합니다.
+* 헤드리스 콘텐츠를 번역할 수 있습니다.
 
-The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it. If you are not familiar with any of these topics, this is your ideal place to start.
+헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법, 그리고 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공하는 것이 목표입니다. 이 주제들 중 어느 것에도 익숙하지 않다면, 이것이 시작하기에 이상적인 장소입니다.
 
-If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. [](#additional-resources)
+이미 AEM, 헤드리스 및 번역에 익숙한 경우 이 여정에 대한 기본 지식을 이미 갖추고 있을 수 있습니다. 아래에 연결된 기술 설명서를 참조하는 것을 고려하십시오 [아래의 추가 리소스 섹션.](#additional-resources)
 
-## AEM Documentation Journeys {#documentation-journeys}
+## AEM 설명서 여정 {#documentation-journeys}
 
-[](/help/journey-documentation/documentation-journeys.md)
+[설명서 여정](/help/journey-documentation/documentation-journeys.md) AEM에 대해 새로운 지식을 가진 독자들이, 이전의 주제와 AEM 지식을 최소한으로 가정하는 동시에, 처음부터 끝까지 비즈니스 문제를 이해하고 해결하는 데 도움이 되는 이야기를 제공함으로써, 많은 다양한 그리고 아마도 복잡한 주제와 특징들을 함께 결합합니다.
 
-Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험, 고객 프로젝트의 피드백을 통해 우수 사례 원칙을 중심으로 설계되었습니다.
 
-[](/help/journey-documentation/documentation-journeys.md)
+AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 권장하는 방법을 알아보려면, [AEM 헤드리스 여정](/help/journey-documentation/documentation-journeys.md) 은 시작할 위치입니다.
 
-## 속성을 확인하는 {#audience}
+## 대상자 {#audience}
 
-This journey is designed for the translation specialist persona, often referred to as the Translation Project Manager or TPM. This journey lays out the requirements, steps, and approach to translate headless content in AEM. The journey may define additional personas with which the translation specialist must interact, but the point-of-view for the journey is that of the translation specialist.
+이 여정은 번역 전문가 사용자를 위해 설계되었으며 종종 번역 프로젝트 관리자 또는 TPM이라고도 합니다. 이 여정은 AEM에서 헤드리스 컨텐츠를 번역하는 요구 사항, 단계 및 접근 방식을 설명합니다. 여정은 번역 전문가가 상호 작용해야 하는 추가 가상 사용자를 정의할 수 있지만, 여정의 관점은 번역 전문가의 것입니다.
 
-This journey assumes the reader has experience translating content on a large CMS system, but assumes no knowledge of headless technology or AEM.
+이 여정은 독자가 대규모 CMS 시스템에서 컨텐츠를 번역할 경험이 있다고 가정하지만 헤드리스 기술 또는 AEM에 대한 지식이 없다고 가정합니다.
 
-The following are the personas that interact in this journey.
+다음은 이 여정에서 상호 작용하는 가상 정보입니다.
 
-| 모습 | 설명 | Role in Journey |
+| 모습 | 설명 | 여정의 역할 |
 |---|---|---|
-| Translation Specialist | Defines what content should be translated and manages those workflows | Audience of this journey |
-| Content Author | Creates and manage content that is delivered headlessly | Content Authors create content that the translation specialist must translate. |
-| 관리자 | Manages the base setup and configuration of AEM | The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector. |
-| Content Architect | Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data | Translation specialists work with the content architect to define the organization of the content so it can be easily translated. |
+| 번역 전문가 | 번역해야 하는 컨텐츠를 정의하고 이러한 워크플로우를 관리합니다 | 이 여정 대상 |
+| 컨텐츠 작성자 | 헤비하지 않고 전달되는 컨텐츠를 만들고 관리합니다 | 컨텐츠 작성자는 번역 전문가가 번역해야 하는 컨텐츠를 만듭니다. |
+| 관리자 | AEM의 기본 설정 및 구성을 관리합니다 | 번역 전문가는 관리자와 함께 번역 커넥터 설치처럼 번역에 필요한 구성을 변경합니다. |
+| 컨텐츠 설계자 | 헤드리스 없이 전달해야 하는 데이터에 대한 요구 사항을 분석하고 이 데이터의 구조를 정의합니다 | 번역 전문가들은 콘텐츠 설계자와 협력하여 쉽게 변환할 수 있도록 컨텐츠 구성을 정의합니다. |
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. [](/help/journey-documentation/documentation-journeys.md#journeys)
+이 여정의 정보는 물론 모든 사용자에게 유용할 수 있지만, 일부 정보는 특정 역할에 유용할 수 있습니다. 채널을 고정하세요 [추가 역할을 다루는 제공 여정](/help/journey-documentation/documentation-journeys.md#journeys)
 
-## The Headless Translation Journey {#the-journey}
+## 헤드리스 번역 여정 {#the-journey}
 
-You will explore many topics in this journey. The following articles give you foundational knowledge of translating headless content in AEM and link out to detailed technical documentation.
+이 여정에서 많은 주제를 살펴봅니다. 다음 문서는 AEM에서 헤드리스 컨텐츠를 번역하고 세부 기술 설명서에 연결하는 기본 지식을 제공합니다.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless translation in AEM, we recommend that you start at the beginning and progress sequentially.
+여정의 특정 부분으로 직접 이동할 수 있지만 많은 개념이 이전 문서의 개념에 구축됩니다. 따라서 AEM에서 헤드리스 번역을 처음 사용하는 경우 처음부터 시작하여 순차적으로 진행하는 것이 좋습니다.
 
 | # | 문서 | 설명 |
 |---|---|---|
-| 0 | AEM Headless Translation Journey | This document |
-| 1 | [](learn-about.md) | Learn headless concepts, how they map to AEM, and the theory of AEM translation. |
-| 2 | [](getting-started.md) | Get to know how to organize your headless content and how AEM&#39;s translation tools work. |
-| 3 | [](configure-connector.md) | Learn how to connect AEM to a translation service. |
-| 4 | [](translation-rules.md) | Learn how to define translation rules to identify content for translation. |
-| 5 | [](translate-content.md) | Use the translation connector and rules to translate your headless content. |
-| 6 | [](publish-content.md) | Learn how to publish your translated content and update the translation when the underlying content is updated. |
+| 0 | AEM 헤드리스 번역 여정 | 이 문서 |
+| 1 | [헤드리스 콘텐츠 및 AEM에서 번역하는 방법에 대해 알아봅니다](learn-about.md) | 헤드리스 개념, AEM에 매핑하는 방법, AEM 번역 이론에 대해 알아봅니다. |
+| 2 | [AEM 헤드리스 번역 시작하기](getting-started.md) | 헤드리스 콘텐츠를 구성하는 방법과 AEM 번역 도구가 작동하는 방식을 알아봅니다. |
+| 3 | [번역 커넥터 구성](configure-connector.md) | AEM을 번역 서비스에 연결하는 방법을 알아봅니다. |
+| 4 | [번역 규칙 구성](translation-rules.md) | 번역 규칙을 정의하여 번역 콘텐츠를 식별하는 방법을 알아봅니다. |
+| 5 | [콘텐츠 번역](translate-content.md) | 번역 커넥터와 규칙을 사용하여 헤드리스 콘텐츠를 번역합니다. |
+| 6 | [번역된 콘텐츠 게시](publish-content.md) | 기본 컨텐츠가 업데이트될 때 번역된 컨텐츠를 게시하고 번역을 업데이트하는 방법을 알아봅니다. |
 
-## What&#39;s Next {#what-is-next}
+## 다음은 무엇입니까? {#what-is-next}
 
-You are now ready to get started on your Adobe headless translation journey. [](learn-about.md)
+이제 Adobe 헤드리스 번역 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 이동하여 문서를 읽어 보십시오 [헤드리스 콘텐츠 및 AEM에서 번역하는 방법에 대해 알아봅니다](learn-about.md)
 
 ## 추가 리소스 {#additional-resources}
 
-Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+설명서 여정은 복잡하고 관련된 프로세스와 기능을 안내하는 설명을 제공하여 AEM에서 비즈니스 문제를 해결하는 방법을 보여줍니다. 여정은 단일 비즈니스 요구 사항을 충족하기 위해 여러 기능이 함께 작동하는 방식을 보여줍니다.
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
+이러한 여정은 스스로 설 수 있도록 고안되었습니다. 하지만 그들 중 많은 수가 서로 관련될 수 있습니다. AEM의 강력한 기능이 함께 작동하는 방식에 대한 자세한 내용은 이러한 추가 여정을 참조하십시오.
 
-* [](/help/journey-headless/author/overview.md)
-* [](/help/journey-headless/architect/overview.md)
-* [](/help/journey-headless/developer/overview.md)
-* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
-* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+* [헤드리스 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 헤드리스 프로젝트에서 컨텐츠를 모델링하는 방법을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오.
+* [헤드리스 아키텍트 여정](/help/journey-headless/architect/overview.md) - Adobe Experience Manager as a Cloud Service의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법을 소개합니다.
+* [AEM Headless Developer 여정](/help/journey-headless/developer/overview.md) - AEM의 강력하고 유연한 헤드리스 기능, 첫 번째 개발 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오.
+* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM 및 헤드리스 기술에 대한 확고한 이해가 있는 경우에는 심층적인 기술 문서를 직접 문의할 수 있습니다.
+* [AEM Headless 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko-KR) - 자습서를 통해 학습하고 기술적으로 경사진 경우 AEM Headless에서 빌드된 애플리케이션을 제작 및 사용하는 API 및 프레임워크로 구성된 실습 자습서를 살펴보십시오.

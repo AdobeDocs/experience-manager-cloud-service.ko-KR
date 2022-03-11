@@ -13,7 +13,7 @@ ht-degree: 2%
 
 을 설정하고 구성할 때 [!DNL  Adobe Experience Manager Forms] 로서의 [!DNL  Cloud Service] 환경에서는 클라우드에 개발, 스테이징 및 프로덕션 환경을 설정합니다. 또한 로컬 개발 환경을 설정하고 구성할 수도 있습니다.
 
-로컬 개발 환경을 사용하여 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업 등)을 만들고 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) 클라우드 개발 환경에 로그인하지 않아도 됩니다. 적응형 양식 또는 관련 자산이 로컬 개발 인스턴스에서 준비되면 추가 테스트 및 게시를 위해 로컬 개발 환경에서 Cloud Service 환경으로 적응형 양식 및 관련 자산을 내보낼 수 있습니다.
+로컬 개발 환경을 사용하여 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업 등)을 만들고 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko-KR) 클라우드 개발 환경에 로그인하지 않아도 됩니다. 적응형 양식 또는 관련 자산이 로컬 개발 인스턴스에서 준비되면 추가 테스트 및 게시를 위해 로컬 개발 환경에서 Cloud Service 환경으로 적응형 양식 및 관련 자산을 내보낼 수 있습니다.
 
 로컬 개발 환경에서 사용자 지정 구성 요소 및 미리 채우기 서비스와 같은 사용자 지정 코드를 개발하고 테스트할 수도 있습니다. 사용자 지정 코드가 테스트되고 준비되면 Cloud Service 개발 환경의 Git 저장소를 사용하여 사용자 지정 코드를 배포할 수 있습니다.
 

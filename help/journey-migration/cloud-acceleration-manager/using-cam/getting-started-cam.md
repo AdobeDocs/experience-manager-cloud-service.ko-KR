@@ -1,10 +1,11 @@
 ---
 title: Cloud Acceleration Manager 시작하기
 description: 이 페이지에서는 Cloud Acceleration Manager를 사용 및 시작하는 방법에 대한 개요를 제공합니다.
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 

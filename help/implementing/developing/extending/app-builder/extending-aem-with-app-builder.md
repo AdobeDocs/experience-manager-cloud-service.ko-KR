@@ -1,13 +1,13 @@
 ---
 title: 확장 [!DNL Adobe Experience Manager] Adobe 개발자 앱 빌더를 사용하여 as a Cloud Service.
 description: 확장 [!DNL Adobe Experience Manager] Adobe 개발자 앱 빌더를 사용하여 as a Cloud Service.
-source-git-commit: 528abc0938a71746c2c8b69382c961686cc42634
+exl-id: 50d82745-5deb-4bfa-961b-714842403601
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
 
 ---
-
 
 # 확장 [!DNL Adobe Experience Manager] Adobe 개발자 앱 빌더를 사용하여 as a Cloud Service {#extend-using-app-builder}
 

@@ -1,17 +1,17 @@
 ---
-title: 새 사이트 만들기
+title: 새 사이트 생성
 description: 관리자가 AEM을 사용하여 사이트 템플릿을 사용하여 새 사이트를 만드는 방법을 사용하여 사이트의 스타일 및 구조를 정의하는 방법을 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
+exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-
-# 새 사이트 만들기 {#new-site}
+# 새 사이트 생성 {#new-site}
 
 관리자가 AEM을 사용하여 사이트 템플릿을 사용하여 새 사이트를 만드는 방법을 사용하여 사이트의 스타일 및 구조를 정의하는 방법을 알아봅니다.
 

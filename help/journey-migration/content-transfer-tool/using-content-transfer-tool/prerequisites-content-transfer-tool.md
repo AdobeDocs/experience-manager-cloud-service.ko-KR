@@ -1,14 +1,15 @@
 ---
-title: 컨텐츠 전송 도구 사전 요구 사항
-description: 컨텐츠 전송 도구 사전 요구 사항
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: 콘텐츠 전송 도구 사전 요구 사항
+description: 콘텐츠 전송 도구 사전 요구 사항
+exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# 컨텐츠 전송 도구 사전 요구 사항 {#prerequisites}
+# 콘텐츠 전송 도구 사전 요구 사항 {#prerequisites}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"

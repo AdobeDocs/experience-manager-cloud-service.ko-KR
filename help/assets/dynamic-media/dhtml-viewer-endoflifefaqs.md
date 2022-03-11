@@ -14,4 +14,4 @@ ht-degree: 0%
 
 2014년 1월 31일부터 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다.
 
-지원되는 최신 뷰어는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)를 참조하십시오.
+자세한 내용은 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) 지원되는 최신 뷰어용.

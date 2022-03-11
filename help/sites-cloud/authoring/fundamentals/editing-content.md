@@ -1,5 +1,5 @@
 ---
-title: 페이지 컨텐츠 편집
+title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 컨텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# 페이지 컨텐츠 편집{#editing-page-content}
+# 페이지 콘텐츠 편집{#editing-page-content}
 
 페이지가 만들어지면(launch 또는 live copy의 일부 또는 신규) 컨텐츠를 편집하여 필요한 업데이트 작업을 수행할 수 있습니다.
 
@@ -269,7 +269,7 @@ ht-degree: 100%
 * [편집하려면 구성 요소 대화 상자](#component-edit-dialog)를 엽니다.
 * 자산 브라우저에서 [자산을 끌어다 놓아](#drag-and-drop-assets-into-component) 컨텐츠를 바로 추가합니다.
 
-### 구성 요소 편집 대화 상자  {#component-edit-dialog}
+### 구성 요소 편집 대화 상자 {#component-edit-dialog}
 
 [구성 요소 도구 모음의 편집(연필) 아이콘](#component-toolbar)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
 
@@ -291,7 +291,7 @@ ht-degree: 100%
 
 * 이미지 구성 요소 - 전체 화면
 
-   이미지 구성 요소에 대해 [전체 화면 모드를 표시](#edit-content-full-screen-mode)하면 **Launch Map** 및 **확대/축소 재설정**&#x200B;과 같은 추가 편집 옵션을 표시할 뿐 아니라 이미지를 편집하는 데 더 많은 공간을 사용할 수 있습니다. 또한 전체 화면에서는 [자르기 사전 설정]을 선택할 수 있습니다.
+   [Entering full screen mode](#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
 
    ![이미지 구성 요소의 전체 화면 모드](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -391,9 +391,9 @@ ht-degree: 100%
 
 [페이지 정보 메뉴](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)에서 **템플릿 편집**&#x200B;을 선택하면 [템플릿 편집기](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors)로 쉽게 전환할 수 있습니다.
 
-[열 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) 페이지를 선택할 때 페이지가 기반으로 하는 템플릿을 쉽게 확인할 수 있습니다.
+You can easily see which template the page is based on when selecting the page in either [Column view](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) or [List view](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
-## Live Copy 상태  {#live-copy-status}
+## Live Copy 상태 {#live-copy-status}
 
 [Live Copy 상태 페이지 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)를 사용하면 live copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
 
@@ -408,7 +408,7 @@ ht-degree: 100%
 
 [주석](/help/sites-cloud/authoring/fundamentals/annotations.md)을 사용하면 검토자와 다른 작성자가 컨텐츠에 대한 피드백을 제공할 수 있습니다. 검토 및 유효성 검사 목적으로도 종종 사용됩니다.
 
-## 페이지 미리 보기  {#previewing-pages}
+## 페이지 미리 보기 {#previewing-pages}
 
 페이지를 미리 볼 수 있는 두 가지 옵션이 있습니다.
 

@@ -178,7 +178,7 @@ ht-degree: 2%
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 clientlibraries에 대한 정의는 `.content.xml` 각 폴더 아래의 파일.
 
-   **clientlib-base** - 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR). 카테고리는 다음과 같습니다 `venia.base`.
+   **clientlib-base** - 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko). 카테고리는 다음과 같습니다 `venia.base`.
 
    **clientlib-cif** - 또한 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components). 카테고리는 다음과 같습니다 `venia.cif`.
 

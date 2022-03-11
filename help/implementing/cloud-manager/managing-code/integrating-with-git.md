@@ -1,15 +1,15 @@
 ---
-title: Cloud Manager에서 git 사용
+title: Cloud Manager와 함께 git 사용
 description: Cloud Manager의 Git 저장소를 사용하는 방법 및 Cloud Manager와 자체 온-프레미스 고객 관리 Git 리포지토리를 통합하는 방법을 알아봅니다.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Cloud Manager에서 git 사용 {#git-integration}
+# Cloud Manager와 함께 git 사용 {#git-integration}
 
 Adobe Cloud Manager에는 Cloud Manager의 CI/CD 파이프라인을 사용하여 코드를 배포하는 데 사용되는 단일 git 리포지토리가 제공됩니다.
 

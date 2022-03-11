@@ -6,11 +6,11 @@ exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# FAQ {#frequently-asked-questions}
+# 자주 묻는 질문 {#frequently-asked-questions}
 
 * **코드 편집기를 사용하여 규칙을 만들 수 있습니까?**
 시각적 편집기를 사용하여 규칙을 만들 수 있습니다. 코드 편집기는 [!DNL Forms] as a Cloud Service. 적응형 양식이 코드 편집기를 사용하여 개발된 규칙 스크립트를 사용하는 경우 [마이그레이션 유틸리티](migrate-to-forms-as-a-cloud-service.md) 코드 스크립트를 사용자 지정 함수로 변환하려면 다음을 수행하십시오. 시각적 편집기와 함께 사용자 지정 함수를 사용하여 코드 편집기로 얻은 결과를 계속 가져올 수 있습니다.
@@ -85,7 +85,7 @@ Custom parameters are planned for an upcoming release. -->
 
 * **사용할 수 있나요 [!DNL AEM Forms] 앱 사용 [!DNL AEM Forms] as a Cloud Service?**
 
-   적응형 Forms은 반응형 디자인을 제공합니다. 이러한 양식은 기본 장치를 기반으로 모양, 디자인 및 상호 작용을 변경합니다. 모바일 장치에서 응용 Forms을 계속 사용할 수 있지만, 기능을 사용할 수 있는지 여부에 대한 월별 릴리스 노트는 계속 사용할 수 있습니다.
+   적응형 양식은 반응형 디자인을 제공합니다. 이러한 양식은 기본 디바이스에 따라 모양, 디자인 및 인터랙티브 요소를 변경합니다. 모바일 장치에서 응용 Forms을 계속 사용할 수 있지만, 기능을 사용할 수 있는지 여부에 대한 월별 릴리스 노트는 계속 사용할 수 있습니다.
 
 * **초기 GA 릴리스의 일부가 아닌 기능은 무엇입니까?**
 Forms 포털, [!DNL AEM Forms] 앱, Adobe Analytics와의 통합 및 Adobe Target과의 통합은 초기 GA 릴리스의 일부가 아닙니다. 새로운 기능에 대한 정보는 월별 릴리스 노트를 참조하십시오.

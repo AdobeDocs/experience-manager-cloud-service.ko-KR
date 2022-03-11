@@ -13,9 +13,9 @@ ht-degree: 8%
 
 Adobe Experience Platform Launch은 SPA(단일 페이지 애플리케이션) 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
 
-## 자습서 {#tutorial}
+## 튜토리얼 {#tutorial}
 
-SPA을 Adobe Experience Platform Launch과 통합하는 방법을 알려면 Launch 설정을 안내하는 [이 기술 자료 문서 및 자습서](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)를 참조하여 Angular 또는 React로 빌드된 Experience Cloud을 구현하십시오.
+SPA을 Adobe Experience Platform Launch과 통합하는 방법을 알려면 다음을 참조하십시오 [이 기술 자료 문서 및 자습서](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html): Launch 설정을 안내하고 Angular 또는 React로 빌드된 Experience Cloud을 구현합니다.
 
 >[!NOTE]
 >

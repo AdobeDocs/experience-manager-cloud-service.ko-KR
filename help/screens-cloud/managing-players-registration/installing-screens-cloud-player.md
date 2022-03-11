@@ -1,6 +1,6 @@
 ---
-title: Screens에서 Cloud Service으로 플레이어 설치 및 구성
-description: 이 페이지에서는 Screens에서 Cloud Service으로 플레이어를 설치하고 구성하는 방법을 설명합니다.
+title: Screens에서 플레이어 설치 및 구성 as a Cloud Service
+description: 이 페이지에서는 Screens에서 플레이어를 설치하고 구성하는 방법을 as a Cloud Service으로 설명합니다.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# Screens에서 Cloud Service으로 플레이어 설치 및 구성 {#installing-players-screens-cloud}
+# Screens에서 플레이어 설치 및 구성 as a Cloud Service {#installing-players-screens-cloud}
 
-이 섹션에서는 온-프레미스 AEM 인스턴스에 등록된 AEM Screens 플레이어를 설치하는 방법을 설명합니다. 또한 기존 플레이어의 공장 재설정을 수행한 다음, 새 플레이어를 AEM Screens에 Cloud Service으로 등록해야 합니다.
+이 섹션에서는 온-프레미스 AEM 인스턴스에 등록된 AEM Screens 플레이어를 설치하는 방법을 설명합니다. 또한 기존 플레이어의 공장 재설정을 수행한 다음 새 플레이어를 AEM Screens as a Cloud Service에 등록해야 합니다.
 
 ## 목표 {#objective}
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 플레이어를 클라우드 모드로 설정하는 절차 {#cloud-mode-setup}
 
-[AEM Screens Player 다운로드](https://download.macromedia.com/screens/)에서 최신 플레이어를 다운로드하면 이제 플레이어를 클라우드 모드로 업데이트할 준비가 되었습니다.
+에서 최신 플레이어를 다운로드하면 [AEM Screens Player 다운로드](https://download.macromedia.com/screens/)이제 플레이어를 클라우드 모드로 업데이트할 준비가 되었습니다.
 
 아래 단계에 따라 플레이어를 업데이트하십시오.
 
@@ -31,21 +31,21 @@ ht-degree: 1%
    >[!NOTE]
    >전용 하드웨어 장치 또는 자체 플레이어에서 웹 확장을 사용하여 테스트할 수 있습니다.
 
-1. **구성** 탭을 클릭하고 **재설정** 옵션 아래에 있는 **출하 시** 단추를 클릭합니다.
+1. 을(를) 클릭합니다. **구성** 탭을 클릭하고 **To Factory** 버튼 아래 **재설정** 선택 사항입니다.
 
    ![이미지](/help/screens-cloud/assets/player/installplayer-2.png)
 
-1. **Confirm**&#x200B;을 클릭하여 플레이어를 재설정합니다.
+1. 클릭 **확인** 플레이어를 재설정하려면 다음을 수행하십시오.
 
-1. **구성** 탭에서 **실행 모드 전환** 옵션 아래의 **클라우드 모드로 변경** 단추를 다시 클릭합니다.
+1. 다음에서 다시 **구성** 탭을 클릭하고 **클라우드 모드로 변경** 버튼 아래 **실행 모드 전환** 선택 사항입니다.
 
    ![이미지](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. 클라우드 모드로 전환할 때 나타나는 **Confirm**&#x200B;을 클릭하면 플레이어 등록이 취소됩니다.
+1. 클릭 **확인** 이 메시지는 클라우드 모드로 전환할 때 플레이어 등록이 취소됩니다.
 
 ## 기본 재생 모니터링 {#playback-monitoring}
 
-플레이어는 기본값인 각 `ping`이 30초로 설정된 다양한 재생 지표를 보고합니다. 이러한 지표를 기반으로 중단 경험, 빈 화면 및 예약 문제와 같은 다양한 에지 사례를 감지할 수 있습니다. 따라서 장치의 문제를 이해하고 문제를 해결할 수 있으므로 신속한 조사 및 해결 조치를 취할 수 있습니다.
+플레이어는 각 `ping` 기본값은 30초입니다. 이러한 지표를 기반으로 중단 경험, 빈 화면 및 예약 문제와 같은 다양한 에지 사례를 감지할 수 있습니다. 따라서 장치의 문제를 이해하고 문제를 해결할 수 있으므로 신속한 조사 및 해결 조치를 취할 수 있습니다.
 
 AEM Screens 플레이어의 기본 재생 모니터링을 통해 다음을 수행할 수 있습니다.
 
@@ -57,7 +57,7 @@ AEM Screens 플레이어의 기본 재생 모니터링을 통해 다음을 수�
 
 ### 속성 이해 {#understand-properties}
 
-다음 속성은 각 `ping`에 포함됩니다.
+다음 속성은 각 속성에 포함됩니다 `ping`:
 
 | 속성 | 설명 |
 |---|---|
@@ -80,7 +80,7 @@ AEM Screens 플레이어의 기본 재생 모니터링을 통해 다음을 수�
 
 * 플레이어는 자체 재생 상태를 서버에 보고하므로 활성 연결이 필요합니다.
 
-* GPU를 확인하는 `isContentRendering` 속성은 현재 리소스를 너무 많이 사용하므로 기본적으로 활성화할 수 없으며 플레이어 환경 설정에서 명시적 옵트인이 필요합니다. 프로덕션 환경에서 비디오와 함께 사용하지 않는 것이 좋습니다.
+* 다음 `isContentRendering` GPU를 확인하는 속성은 현재 리소스를 너무 많이 사용하므로 기본적으로 활성화할 수 없으며 플레이어 환경 설정에서 명시적 옵트인이 필요합니다. 프로덕션 환경에서 비디오와 함께 사용하지 않는 것이 좋습니다.
 
 * 이 기능은 시퀀스 채널에서만 지원되며 대화형 채널(SPA) 사용 사례는 아직 다루지 않습니다.
 
@@ -88,4 +88,4 @@ AEM Screens 플레이어의 기본 재생 모니터링을 통해 다음을 수�
 
 ## 다음은 무엇입니까? {#whats-next}
 
-이제 플레이어를 클라우드 모드로 설치 및 구성했으므로, 다음에 Screens 서비스 제공자에서 [Screens의 플레이어를 Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)로 등록하여 Cloud Service 여정으로 계속해야 합니다.
+이제 플레이어를 클라우드 모드로 설치 및 구성했으므로 다음 번 문서를 검토하여 Screens as a Cloud Service 여정을 계속해야 합니다. [Screens의 플레이어 등록 as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) 스크린 서비스 공급자에서

@@ -1,13 +1,13 @@
 ---
 title: 사이트 테마 사용자 지정
 description: 사이트 테마가 빌드되는 방법, 사용자 지정 방법 및 라이브 AEM 콘텐츠를 사용하여 테스트하는 방법을 알아봅니다.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
 
 ---
-
 
 # 사이트 테마 사용자 지정 {#customize-the-site-theme}
 

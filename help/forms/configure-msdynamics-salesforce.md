@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# 구성 [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스 {#configure-azure-storage}
+# [!DNL Microsoft Dynamics 365]및[!DNL Salesforce]클라우드 서비스 구성 {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] 데이터 통합](data-integration.md) 제공 [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스를 통해 적응형 양식을 기본 양식 데이터 모델과 통합할 수 있습니다. 그러면 적응형 Forms이 [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 비즈니스 워크플로우를 활성화하는 서버 예:
 

@@ -5,35 +5,35 @@ exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
 # AEM 프로젝트 저장소 구조 패키지
 
-Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에서는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 유일한 목적이 되는 저장소 구조 하위 패키지 정의가 필요합니다. 이렇게 하면 Cloud Service으로 Experience Manager에 패키지를 설치하는 것이 JCR 리소스 종속성으로 자동 순서가 지정됩니다. 종속성이 누락되면 하위 구조가 상위 구조보다 먼저 설치되어 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
+Adobe Experience Manager as a Cloud Service용 Maven 프로젝트에서는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 유일한 목적이 되는 저장소 구조 하위 패키지 정의가 필요합니다. 이렇게 하면 JCR 리소스 종속성으로 Experience Manager as a Cloud Service에 패키지를 자동으로 설치할 수 있습니다. 종속성이 누락되면 하위 구조가 상위 구조보다 먼저 설치되어 예기치 않게 제거되어 배포가 중단되는 시나리오가 발생할 수 있습니다.
 
-코드 패키지가 코드 패키지에서 다루지 않은 **위치**&#x200B;에 배포되는 경우, 상위 리소스(JCR 루트에 가까운 JCR 리소스)는 저장소 구조 패키지에 열거되어 이러한 종속성을 설정해야 합니다.
+If your code package deploys into a location **not covered** by the code package, then any ancestor resources (JCR resources closer to the JCR root) must be enumerated in the repository structure package to establish these dependencies.
 
 ![저장소 구조 패키지](./assets/repository-structure-packages.png)
 
-저장소 구조 패키지는 패키지 유효성 검사기가 표준 루트이므로 &quot;잠재적인 충돌에서 안전한&quot; 영역을 결정하기 위해 사용하는 예상 및 일반적인 `/apps` 상태를 정의합니다.
+저장소 구조 패키지는 예상되는 공통 상태를 정의합니다 `/apps` 패키지 유효성 검사기는 표준 루트이므로 &quot;잠재적인 충돌에서 안전한&quot; 영역을 결정하기 위해 사용합니다.
 
 저장소 구조 패키지에 포함할 가장 일반적인 경로는 다음과 같습니다.
 
 + `/apps` 시스템 제공 노드인 노드
-+ `/apps/cq/...`,  `/apps/dam/...`,  `/apps/wcm/...` 및  `/apps/sling/...` 에 대한 일반적인 오버레이를 제공합니다 `/libs`.
++ `/apps/cq/...`, `/apps/dam/...`, `/apps/wcm/...`, 및 `/apps/sling/...` 에 일반 오버레이를 제공 `/libs`.
 + `/apps/settings` 공유 컨텍스트 인식 구성 루트 경로
 
-이 하위 패키지 **에는**&#x200B;의 컨텐츠가 없으며 필터 루트를 정의하는 `pom.xml`로만 구성됩니다.
+이 하위 패키지는 **이** 모든 콘텐츠는 `pom.xml` 필터 루트 정의
 
 ## 저장소 구조 패키지 생성
 
-Maven 프로젝트에 대한 저장소 구조 패키지를 만들려면 다음 `pom.xml`을 사용하여 빈 Maven 하위 프로젝트를 만들고, 상위 Maven 프로젝트에 맞게 프로젝트 메타데이터를 업데이트합니다.
+Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다음을 사용하여 빈 Maven 하위 프로젝트를 생성합니다 `pom.xml`, 상위 Maven 프로젝트를 준수하도록 프로젝트 메타데이터를 업데이트합니다.
 
-코드 패키지가 배포하는 모든 JCR 저장소 경로 루트를 포함하려면 `<filters>` 을(를) 업데이트합니다.
+업데이트 `<filters>` 를 추가하여 코드 패키지가 배포하는 모든 JCR 저장소 경로 루트를 포함시킵니다.
 
-이 새 Maven 하위 프로젝트를 상위 프로젝트 `<modules>` 목록에 추가해야 합니다.
+이 새 Maven 하위 프로젝트를 상위 프로젝트에 추가해야 합니다 `<modules>` 목록.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -116,9 +116,9 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 만들려면 다음 `
 
 ## 저장소 구조 패키지 참조
 
-저장소 구조 패키지를 사용하려면 FileVault 컨텐츠 패키지 Maven 플러그인 `<repositoryStructurePackage>` 구성을 통해 모든 코드 패키지( `/apps`에 배포하는 하위 패키지)를 통해 참조합니다.
+저장소 구조 패키지를 사용하려면 모든 코드 패키지(에 배포되는 하위 패키지)를 통해 참조합니다 `/apps`) FileVault 콘텐츠 패키지 Maven 플러그인을 통한 Maven 프로젝트 `<repositoryStructurePackage>` 구성.
 
-`ui.apps/pom.xml` 및 다른 코드 패키지 `pom.xml`에서 프로젝트의 저장소 구조 패키지(#repository-structure-package) 구성에 대한 참조를 FileVault 패키지 Maven 플러그인에 추가합니다.
+에서 `ui.apps/pom.xml`, 및 기타 모든 코드 패키지 `pom.xml`프로젝트의 저장소 구조 패키지(#repository-structure-package) 구성에 대한 참조를 FileVault 패키지 Maven 플러그인에 추가합니다.
 
 ```xml
 ...
@@ -159,15 +159,15 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 만들려면 다음 `
 
 예:
 
-+ 코드 패키지 A가 `/apps/a`에 배포됩니다.
-+ 코드 패키지 B가 `/apps/a/b`에 배포됩니다.
++ 코드 패키지 A가에 배포됩니다. `/apps/a`
++ 코드 패키지 B가에 배포됩니다. `/apps/a/b`
 
-패키지 수준 종속성이 코드 패키지 A의 코드 패키지 B에서 설정되지 않은 경우 코드 패키지 B는 먼저 `/apps/a`에 배포되고, 코드 패키지 B가 `/apps/a`에 배포되어 이전에 설치된 `/apps/a/b`가 제거될 수 있습니다.
+패키지 수준 종속성이 코드 패키지 A의 코드 패키지 B에서 설정되지 않은 경우 코드 패키지 B가 먼저 `/apps/a`, 다음에 코드 패키지 B가 배포됩니다. `/apps/a`로 설정되면 이전에 설치된 `/apps/a/b`.
 
 이 경우:
 
-+ 코드 패키지 A는 프로젝트의 저장소 구조 패키지에서 `<repositoryStructurePackage>`을(를) 정의해야 합니다(`/apps`에 대한 필터가 있어야 함).
-+ 코드 패키지 B는 코드 패키지 A가 공유하는 공간에 배포되므로 코드 패키지 B는 코드 패키지 A에서 `<repositoryStructurePackage>`을(를) 정의해야 합니다.
++ 코드 패키지 A는 `<repositoryStructurePackage>` 프로젝트의 저장소 구조 패키지(에 대한 필터가 있어야 함) `/apps`).
++ 코드 패키지 B는 `<repositoryStructurePackage>` 코드 패키지 A의 경우, 코드 패키지 B가 코드 패키지 A가 공유하는 공간에 배포되기 때문입니다.
 
 ## 오류 및 디버깅
 
@@ -178,7 +178,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 만들려면 다음 `
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-이는 브레이크 코드 패키지에 해당 필터 목록에 `/apps/some/path`을 나열하는 `<repositoryStructurePackage>`이 없음을 나타냅니다.
+이는 브레이크 코드 패키지에 `<repositoryStructurePackage>` 목록 `/apps/some/path` 필터 목록에 추가합니다.
 
 ## 추가 리소스
 

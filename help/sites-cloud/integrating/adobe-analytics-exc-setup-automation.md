@@ -6,13 +6,13 @@ role: Admin
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 6c84c0eff6392f1f86c18c9daf15c402c4d9e778
+exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Analytics과 Experience Cloud 설정 자동화 통합 {#integrate-adobe-analytics-automation-setup}
 
@@ -30,7 +30,7 @@ Adobe Analytics을 AEM Sites과 통합하는 것이 결코 간단하지 않았�
 
 ## 요구 사항
 
-자동화 설정은 AEM Site를 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 사용 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 활성화되었습니다. 를 사용하여 이러한 기능을 자동으로 활성화하는 새 사이트를 생성할 수 있습니다. [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 또는 다음을 사용하여 사이트를 만들어 [사이트 템플릿](/help/journey-sites/quick-site/create-site.md).
+자동화 설정은 AEM Site를 [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 사용 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 활성화되었습니다. 를 사용하여 이러한 기능을 자동으로 활성화하는 새 사이트를 생성할 수 있습니다. [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 또는 다음을 사용하여 사이트를 만들어 [사이트 템플릿](/help/journey-sites/quick-site/create-site.md).
 
 ## 설정 방법
 

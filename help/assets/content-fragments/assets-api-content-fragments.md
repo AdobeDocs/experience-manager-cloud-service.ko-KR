@@ -22,7 +22,6 @@ AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐�
 >
 >* 자산 REST API
 >* 컨텐츠 조각에 대한 지원 포함
-
 >
 >자산 HTTP API의 현재 구현은 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 건축 스타일.
 
@@ -32,7 +31,7 @@ API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 
 
 예, [단일 페이지 애플리케이션(SPA)](/help/implementing/developing/hybrid/introduction.md), 프레임워크 기반 또는 사용자 지정 환경에서는 HTTP API를 통해 제공되는 컨텐츠(일반적으로 JSON 형식)가 필요합니다.
 
-While [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 이 용도로 필요한 읽기 작업을 제공할 수 있고 사용자 지정할 수 있는 매우 포괄적이고 유연한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
+While [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 는 이 용도로 필요한 읽기 작업을 제공할 수 있고 사용자 지정할 수 있는 매우 포괄적이고 유연한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 먼저 포함할 필요 없이 자산(예: 이미지 및 컨텐츠 조각)에 직접 액세스하여 직렬화된 JSON 형식으로 콘텐츠를 제공할 수 있습니다.
 
@@ -148,7 +147,6 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 >
 >* [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [비디오 - AEM을 사용한 CORS용 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 

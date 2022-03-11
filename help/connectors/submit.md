@@ -5,14 +5,14 @@ exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
 AEM 커넥터 제출
 ===========================
 
-다음은 AEM Connectors 제출을 위한 유용한 정보이며, 관련 문서와 함께 읽어야 합니다 [구현](implement.md) 및  [유지](maintain.md) 커넥터.
+Provided below is useful information for submitting AEM Connectors and should be read in conjunction with articles about [implementing](implement.md) and  [maintaining](maintain.md) connectors.
 
 AEM 커넥터는 [Adobe 교환](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
