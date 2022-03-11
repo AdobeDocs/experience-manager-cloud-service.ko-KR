@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 279b263b72f8b99aed3fb55c7625a3b54dd6a370
 workflow-type: tm+mt
 source-wordcount: '3428'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -643,7 +643,7 @@ ht-degree: 98%
          + [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [환경 절전 모드 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
-         + [프로젝트 만들기 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [프로젝트 제작 마법사](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [빌드 환경](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [환경 관리](/help/implementing/cloud-manager/manage-environments.md)
@@ -651,7 +651,7 @@ ht-degree: 98%
          + [Maven 프로젝트 버전 처리](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager의 저장소](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [저장소에 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Cloud Manager에서 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [여러 저장소 사용](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [엔터프라이즈 개발 팀 설정](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [환경 변수](/help/implementing/cloud-manager/environment-variables.md)
@@ -670,7 +670,7 @@ ht-degree: 98%
          + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
       + [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
-      + [신유교 원](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [새 Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [알림](/help/implementing/cloud-manager/notifications.md)
       + SSL 인증서 관리 {#manage-ssl-certificates}
          + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
