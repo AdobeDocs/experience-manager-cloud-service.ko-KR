@@ -54,7 +54,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ![aem-style-system](/help/sites-cloud/authoring/assets/style-system-architecture.png)
 
-##  사용  {#use}
+## 사용  {#use}
 
 이 기능을 보여주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
 
@@ -155,7 +155,6 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 >1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
 >1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
-
 >
 
 
