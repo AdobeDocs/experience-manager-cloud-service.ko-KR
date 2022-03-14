@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
+source-git-commit: cd48b78383974027d8980397632c395a5958edbf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## 유지 관리 작업 구성
 
-이전 버전의 AEM에서는 유지 관리 카드( 도구 > 작업 > 유지 관리)를 사용하여 유지 관리 작업을 구성할 수 있습니다. AEM as a Cloud Service의 경우 유지 관리 카드를 더 이상 사용할 수 없으므로 Cloud Manager를 사용하여 소스 제어에 구성을 커밋하고 배포해야 합니다. Adobe은 고객이 다른 유지 관리 작업을 구성할 수 있을 때(아래 표 참조) 고객 결정을 필요로 하지 않는 유지 관리 작업(예: 데이터 저장소 가비지 수집)을 관리합니다.
+이전 버전의 AEM에서는 유지 관리 카드( 도구 > 작업 > 유지 관리)를 사용하여 유지 관리 작업을 구성할 수 있습니다. AEM as a Cloud Service의 경우 유지 관리 카드를 더 이상 사용할 수 없으므로 Cloud Manager를 사용하여 소스 제어에 구성을 커밋하고 배포해야 합니다. Adobe은 고객이 구성할 수 없는 설정(예: 데이터 저장소 가비지 수집, 감사 로그 삭제, 버전 삭제)이 있는 유지 관리 작업을 관리합니다. 아래 표에 설명된 대로 기타 유지 관리 작업은 고객이 구성할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -56,14 +56,22 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>버전 삭제</td>
     <td>Adobe</td>
-    <td>Adobe이 완전히 소유하지만 향후에는 고객이 특정 매개 변수를 구성할 수 있습니다.</td>
+    <td>작성 계층이 성능을 유지하려면 아래에 있는 각 컨텐츠 부분의 이전 버전을 <code>/content</code> 저장소의 노드는 다음 동작에 따라 제거됩니다.<br><ol>
+  <li>30일 이전 버전이 제거됩니다</li>
+  <li>최근 30일 동안 최신 5개 버전이 유지됩니다</li>
+  <li>위의 규칙에 관계없이 최신 버전이 유지됩니다.</li>
+</ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 현재 새 환경에 적용되며 2022년 4월 21일에 기존 환경(2022년 3월 14일 이전에 생성된 환경)에 적용됩니다.</td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
     <td>Adobe</td>
-    <td>Adobe이 완전히 소유하지만 향후에는 고객이 특정 매개 변수를 구성할 수 있습니다.</td>
-  </td>
+    <td>작성 계층이 성능을 유지하려면, <code>/content</code> 저장소의 노드는 다음 동작에 따라 제거됩니다.<br><ol>
+  <li>복제 감사의 경우 3일 이상의 감사 로그가 제거됩니다</li>
+  <li>DAM(자산) 감사의 경우 30일 이상의 감사 로그가 제거됩니다</li>
+  <li>페이지 감사의 경우 3일 이상의 로그가 제거됩니다.<br></li>
+</ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 현재 새 환경에 적용되며 2022년 4월 21일에 기존 환경(2022년 3월 14일 이전에 생성된 환경)에 적용됩니다.</td>
+   </td>
   </tr>
   <tr>
     <td>Lucene 바이너리 정리</td>
