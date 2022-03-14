@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 279b263b72f8b99aed3fb55c7625a3b54dd6a370
+source-git-commit: 5e71b569280f486a50da0148b745200a6bbdc991
 workflow-type: tm+mt
-source-wordcount: '3428'
+source-wordcount: '3431'
 ht-degree: 99%
 
 ---
@@ -773,6 +773,7 @@ ht-degree: 99%
       + [CRXDE Lite 사용](/help/implementing/developing/tools/crxde.md)
       + [패키지 관리자](/help/implementing/developing/tools/package-manager.md)
       + [링크 외부화](/help/implementing/developing/tools/externalizer.md)
+      + [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md)
    + 개인 맞춤화 {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [ContextHub 구성](/help/implementing/developing/personalization/configuring-contexthub.md)

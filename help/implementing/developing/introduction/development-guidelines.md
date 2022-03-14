@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
+source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2306'
 ht-degree: 2%
 
 ---
@@ -158,6 +158,8 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 고객은 작성 계층의 개발 환경에서 CRXDE Lite에 액세스할 수 있지만, 스테이지나 프로덕션 환경에서는 액세스할 수 없습니다. 변경할 수 없는 저장소(`/libs`, `/apps`)를 런타임에 쓸 수 없으므로 작업을 시도하면 오류가 발생합니다.
 
+대신 개발자 콘솔에서 저장소 브라우저를 시작할 수 있으므로 작성, 게시 및 미리 보기 계층의 모든 환경에 대한 저장소에 읽기 전용 보기를 제공합니다. 저장소 브라우저에 대해 자세히 보기 [여기](/help/implementing/developing/tools/repository-browser.md).
+
 AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
@@ -184,11 +186,7 @@ AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개�
 
 ![개발 콘솔 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-프로덕션 프로그램의 경우 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 개발자 콘솔을 AEM as a Cloud Service에 액세스할 수 있는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에는 &quot;Cloud Manager - 개발자 역할&quot;이 필요하며, 두 서비스에서 상태 덤프 데이터를 보려면 작성자 및 게시 서비스 모두의 AEM 사용자 또는 AEM 관리자 제품 프로필에도 사용자가 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-
-### AEM 스테이징 및 프로덕션 서비스 {#aem-staging-and-production-service}
-
-고객은 스테이징 및 프로덕션 환경을 위한 개발자 도구에 액세스할 수 없습니다.
+프로덕션 프로그램의 경우 개발자 콘솔에 대한 액세스는 Admin Console의 &quot;Cloud Manager - 개발자 역할&quot;에 의해 정의되며, 샌드박스 프로그램의 경우 개발자 콘솔을 AEM as a Cloud Service에 액세스할 수 있는 제품 프로필이 있는 모든 사용자가 사용할 수 있습니다. 모든 프로그램의 경우, 상태 덤프에 &quot;Cloud Manager - 개발자 역할&quot;이 필요하며, 저장소 브라우저와 사용자가 두 서비스의 데이터를 보려면 작성자 및 게시 서비스 모두의 AEM 사용자 또는 AEM 관리자 제품 프로필에 정의되어 있어야 합니다. 사용자 권한 설정에 대한 자세한 내용은 [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### 성능 모니터링 {#performance-monitoring}
 
