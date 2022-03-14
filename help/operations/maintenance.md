@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: cd48b78383974027d8980397632c395a5958edbf
+source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 4%
@@ -56,21 +56,23 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>버전 삭제</td>
     <td>Adobe</td>
-    <td>작성 계층이 성능을 유지하려면 아래에 있는 각 컨텐츠 부분의 이전 버전을 <code>/content</code> 저장소의 노드는 다음 동작에 따라 제거됩니다.<br><ol>
-  <li>30일 이전 버전이 제거됩니다</li>
-  <li>최근 30일 동안 최신 5개 버전이 유지됩니다</li>
-  <li>위의 규칙에 관계없이 최신 버전이 유지됩니다.</li>
-</ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 현재 새 환경에 적용되며 2022년 4월 21일에 기존 환경(2022년 3월 14일 이전에 생성된 환경)에 적용됩니다.</td>
+    <td>작성 계층이 성능을 유지하려면 아래에 있는 각 컨텐츠 부분의 이전 버전을 <code>/content</code> 저장소의 노드는 다음 동작에 따라 제거됩니다.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+     <ol>
+       <li>30일 이전 버전이 제거됩니다</li>
+       <li>최근 30일 동안 최신 5개 버전이 유지됩니다</li>
+       <li>위의 규칙에 관계없이 최신 버전이 유지됩니다.</li>
+     </ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 현재 새 환경에 적용되며 2022년 4월 21일에 기존 환경(2022년 3월 14일 이전에 생성된 환경)에 적용됩니다.</td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
     <td>Adobe</td>
-    <td>작성 계층이 성능을 유지하려면, <code>/content</code> 저장소의 노드는 다음 동작에 따라 제거됩니다.<br><ol>
-  <li>복제 감사의 경우 3일 이상의 감사 로그가 제거됩니다</li>
-  <li>DAM(자산) 감사의 경우 30일 이상의 감사 로그가 제거됩니다</li>
-  <li>페이지 감사의 경우 3일 이상의 로그가 제거됩니다.<br></li>
-</ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 현재 새 환경에 적용되며 2022년 4월 21일에 기존 환경(2022년 3월 14일 이전에 생성된 환경)에 적용됩니다.</td>
+    <td>작성 계층이 성능을 유지하려면, <code>/content</code> 저장소의 노드는 다음 동작에 따라 제거됩니다.<br><br> <!-- See above for the two line breaks -->
+     <ol>
+       <li>복제 감사의 경우 3일 이상의 감사 로그가 제거됩니다</li>
+       <li>DAM(자산) 감사의 경우 30일 이상의 감사 로그가 제거됩니다</li>
+       <li>페이지 감사의 경우 3일 이상의 로그가 제거됩니다.</li>
+     </ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 현재 새 환경에 적용되며 2022년 4월 21일에 기존 환경(2022년 3월 14일 이전에 생성된 환경)에 적용됩니다.</td>
    </td>
   </tr>
   <tr>
