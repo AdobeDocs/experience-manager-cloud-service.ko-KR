@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
+source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2356'
 ht-degree: 2%
 
 ---
@@ -55,15 +55,19 @@ AEM as a Cloud Service을 업데이트하는 동안 이전 코드와 새 코드�
 
 ## 나가는 HTTP 연결 {#outgoing-http-connections}
 
-나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 이러한 시간 초과를 적용하지 않는 코드의 경우, AEM as a Cloud Service에서 실행되는 AEM 인스턴스는 글로벌 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초 및 다음의 일반적인 Java 라이브러리에서 사용하는 연결에 대한 읽기 호출의 60초입니다.
+나가는 모든 HTTP 연결은 적절한 연결 및 읽기 시간 제한을 설정하는 것이 좋습니다. 제안된 값은 연결 시간 초과에는 1초, 읽기 시간 초과에는 5초입니다. 정확한 숫자는 이러한 요청을 처리하는 백엔드 시스템의 성능에 따라 결정되어야 합니다.
+
+이러한 시간 초과를 적용하지 않는 코드의 경우, AEM as a Cloud Service에서 실행되는 AEM 인스턴스는 글로벌 시간 초과를 적용합니다. 이러한 시간 초과 값은 연결 호출의 경우 10초, 연결에 대한 읽기 호출의 경우 60초입니다.
 
 Adobe은 제공된 를 사용할 것을 권장합니다 [Apache HttpComponents Client 4.x 라이브러리](https://hc.apache.org/httpcomponents-client-ga/) HTTP 연결을 만들 수 있습니다.
 
 잘 알려져 있지만, 직접 종속성을 제공해야 할 수 있는 대체 방법은 다음과 같습니다.
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) 및/또는 [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (AEM에서 제공)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) 및/또는 [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (AEM에서 제공)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (오래된 버전 및 버전 4.x로 대체되었으므로 권장되지 않음)
 * [확인 Http](https://square.github.io/okhttp/) (AEM에서 제공하지 않음)
+
+시간 초과를 제공하는 것 외에도 예기치 않은 HTTP 상태 코드뿐만 아니라 이러한 시간 초과에 대한 적절한 처리가 구현되어야 합니다.
 
 ## 클래식 UI 사용자 지정 없음 {#no-classic-ui-customizations}
 
