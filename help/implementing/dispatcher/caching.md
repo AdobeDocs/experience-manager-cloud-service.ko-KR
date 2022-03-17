@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 265999e5e92fc7b0f78f41bee4545ca6cee618a5
+source-git-commit: b490d581532576bc526f9bd166003df7f2489495
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1549'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
    >다음을 포함한 다른 메서드 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)은 값을 성공적으로 재정의하지 않습니다.
 
    >[!NOTE]
-   >Dispatcher가 여전히 자체 콘텐츠를 캐시할 수 있습니다 [캐싱 규칙](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). 컨텐츠를 정말로 비공개로 만들려면 Dispatcher가 캐시하지 않도록 해야 합니다.
+   >Dispatcher가 여전히 자체 콘텐츠를 캐시할 수 있습니다 [캐싱 규칙](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 컨텐츠를 정말로 비공개로 만들려면 Dispatcher가 캐시하지 않도록 해야 합니다.
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
