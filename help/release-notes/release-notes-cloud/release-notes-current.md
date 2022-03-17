@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1188'
+ht-degree: 85%
 
 ---
 
@@ -135,15 +135,17 @@ AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1�
 
 ### 릴리스 날짜 {#release-date-bpa}
 
-우수 사례 분석기 v2.1.24의 릴리스 날짜는 2022년 2월 1일입니다.
+Best Practices Analyzer v2.1.26 릴리스 날짜는 2022년 3월 16일입니다.
 
 ### 새로운 기능 {#what-is-new-bpa}
 
-* 스마트 태그가 있거나 없는 에셋 수를 감지하고 보고하는 기능.
-* 사용된 핵심 구성 요소 버전 감지 및 보고 기능.
-* BPA가 실행된 소스 계층 유형(작성자 또는 게시)을 감지하고 보고하는 기능.
+* 처리되지 않은 자산을 탐지하는 기능. 처리되지 않은 자산이 감지되면 이러한 자산을 처리됨으로 설정해야 하거나 컨텐츠를 처리하는 동안 문제가 발생하지 않도록 컨텐츠를 전송하는 동안 마이그레이션 세트에서 제거해야 합니다.
+* 컨텐츠에 별칭 URL이 1,000개를 초과하는지 감지하는 기능. 별칭 URL을 많이 사용하는 것은 Dispatcher 및 Publish 서버에 로드되므로 좋지 않습니다.
+* Oak 색인 정의와 관련된 문제를 식별하고 AEM as a Cloud Service와의 비호환성을 감지하는 기능.
+* 외부자 구성 사용을 감지하고 보고하는 기능. AEM as a Cloud Service Externalizer 구성은 Cloud Manager에 의해 설정되므로 호환성을 유지하기 위해 기존 Externalizer 구성을 리팩터링해야 합니다.
 
 ### 버그 수정 {#bug-fixes-bpa}
 
-* BPA 크기 조정 논리는 더 빠르고 효율적으로 만들어졌습니다.
-* 일부 시나리오에서는 BPA가 실행될 때 분석된 수를 증가시키지 않았습니다. 이 문제가 해결되었습니다.
+* 일부 시나리오에서 FormsSelectiveFeaturesAnalysis에서 어설션 오류가 발생하여 BPA를 실행하지 못했습니다. 이 문제가 해결되었습니다.
+* BPA는 WRK 패턴과 관련된 결과를 CRITICAL 대신 MAJOR로 보고 중이었습니다. 이 문제가 해결되었습니다.
+* BPA가 ui.apps의 OAK 색인 정의와 관련된 결과를 CRITICAL로 잘못 보고했습니다. 이 문제가 해결되었습니다
