@@ -2,10 +2,10 @@
 title: Screens Services Provider로 이동
 description: 이 페이지에서는 Screens 서비스 제공업체로 이동하는 방법을 설명합니다.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9263c833edf092a4254b7692924c1638100b9f6d
+source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 5%
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
@@ -36,7 +36,8 @@ Screens 서비스 공급자를 설정하려면 아래 절차를 따르십시오.
    ![이미지](/help/screens-cloud/assets/configure/configure-screens0.png)
 
 3. 설정 편집 대화 상자에 다음 세부 사항을 입력합니다.
-o **기본 Url** - AEM 게시 URL o **작성자 Url** - AEM 작성자 URL o **채널 공급자 경로** - /screens/channels.json
+   * **게시 Url** - AEM 게시 URL(예: `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **작성자 Url** - AEM 작성자 URL(예: `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![이미지](/help/screens-cloud/assets/configure/configure-screens4.png)
 
