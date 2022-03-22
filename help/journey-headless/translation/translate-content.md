@@ -1,10 +1,10 @@
 ---
-title: 컨텐츠 번역
+title: 컨텐츠 번역(AEM 헤드리스)
 description: 번역 커넥터와 규칙을 사용하여 헤드리스 콘텐츠를 번역합니다.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2176'
 ht-degree: 0%
 
 ---

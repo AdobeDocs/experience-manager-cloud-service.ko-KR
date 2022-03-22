@@ -1,11 +1,11 @@
 ---
-title: AEM Headless Content Author 여정
+title: AEM을 통한 헤드리스 작성 - 소개
 description: Adobe Experience Manager as a Cloud Service의 강력하고 유연한 헤드리스 기능 및 프로젝트용 컨텐츠를 작성하는 방법에 대한 소개입니다.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 3%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 

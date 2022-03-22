@@ -1,8 +1,8 @@
 ---
-title: 분기 만들기
-description: 이 페이지에서는 Screens용 Cloud Manager에서 as a Cloud Service 분기를 만드는 방법에 대해 설명합니다.
+title: 환경 만들기
+description: 이 페이지에서는 Screens용 Cloud Manager에서 환경을 as a Cloud Service으로 만드는 방법에 대해 설명합니다.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 3%

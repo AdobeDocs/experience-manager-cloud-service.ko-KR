@@ -1,11 +1,11 @@
 ---
-title: AEM 헤드리스 콘텐츠 설계 여정
+title: AEM 도입으로 헤드리스를 위한 컨텐츠 모델링
 description: Adobe Experience Manager as a Cloud Service의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법을 소개합니다.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 2%
+source-wordcount: '716'
+ht-degree: 1%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: 온보딩 여정
+title: 온보딩 여정 탐색
 description: 온보딩 여정을 시작하는 방법을 알려면 이 페이지를 따르십시오
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: fa88a919-af6a-4266-b38c-647706decba4
-source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 11%
+source-wordcount: '403'
+ht-degree: 10%
 
 ---
 

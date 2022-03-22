@@ -1,10 +1,10 @@
 ---
-title: 번역 규칙 구성
+title: 번역 규칙 구성(AEM headless)
 description: 번역 규칙을 정의하여 번역 콘텐츠를 식별하는 방법을 알아봅니다.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---

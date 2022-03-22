@@ -1,10 +1,10 @@
 ---
-title: 온보딩 여정
+title: 온보딩 여정 소개
 description: 온보딩 경험을 이해하는 데 사용할 수 있는 안내 온보딩 여정에 대한 개요를 살펴보려면 여기에서 시작하십시오.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '463'
 ht-degree: 2%
 
 ---
