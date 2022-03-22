@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리�
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
 source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 85%
 
 * 원본 렌디션이 없는 처리되지 않은 에셋은 AEM on-premise에서 클라우드 서비스로 에셋을 마이그레이션하는 동안 처리를 위해 Asset Compute로 전송됩니다.
 
-## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
@@ -131,21 +131,21 @@ AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1�
 
 * 사용자 매핑이 대소문자를 구분하기 때문에 일부 사용자가 매핑되지 않았습니다. 이 문제가 해결되었습니다. 사용자 매핑은 더 이상 대소문자를 구분하지 않습니다.
 
-## 모범 사례 분석기 {#bpa-release}
+## Best Practices Analyzer {#bpa-release}
 
 ### 릴리스 날짜 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.26 릴리스 날짜는 2022년 3월 16일입니다.
+Best Practices Analyzer v2.1.26의 릴리스 날짜는 2022년 3월 16일입니다.
 
 ### 새로운 기능 {#what-is-new-bpa}
 
-* 처리되지 않은 자산을 탐지하는 기능. 처리되지 않은 자산이 감지되면 이러한 자산을 처리됨으로 설정해야 하거나 컨텐츠를 처리하는 동안 문제가 발생하지 않도록 컨텐츠를 전송하는 동안 마이그레이션 세트에서 제거해야 합니다.
-* 컨텐츠에 별칭 URL이 1,000개를 초과하는지 감지하는 기능. 별칭 URL을 많이 사용하는 것은 Dispatcher 및 Publish 서버에 로드되므로 좋지 않습니다.
-* Oak 색인 정의와 관련된 문제를 식별하고 AEM as a Cloud Service와의 비호환성을 감지하는 기능.
-* 외부자 구성 사용을 감지하고 보고하는 기능. AEM as a Cloud Service Externalizer 구성은 Cloud Manager에 의해 설정되므로 호환성을 유지하기 위해 기존 Externalizer 구성을 리팩터링해야 합니다.
+* 처리되지 않은 에셋을 감지할 수 있습니다. 처리되지 않은 에셋이 감지되면 이들 에셋을 처리됨으로 설정하거나 콘텐츠 전송 도중 마이그레이션 세트에서 제거하여 콘텐츠 수집 과정에서 문제가 발생하지 않도록 해야 합니다.
+* 콘텐츠의 vanity URL이 1000개를 초과하는지 감지할 수 있습니다. 디스패처 및 게시 서버에 부하가 걸리게 되므로 다수의 vanity URL을 사용하는 것은 권장되지 않습니다.
+* Oak 인덱스 정의와 관련된 문제를 식별하고 AEM as a Cloud Service와의 비호환성을 감지할 수 있습니다.
+* 외부화 구성의 사용을 감지하고 보고할 수 있습니다. AEM as a Cloud Service 외부화 구성은 Cloud Manager에 의해 설정되므로 호환성을 유지하려면 기존 외부화 구성을 리팩터링해야 합니다.
 
 ### 버그 수정 {#bug-fixes-bpa}
 
-* 일부 시나리오에서 FormsSelectiveFeaturesAnalysis에서 어설션 오류가 발생하여 BPA를 실행하지 못했습니다. 이 문제가 해결되었습니다.
-* BPA는 WRK 패턴과 관련된 결과를 CRITICAL 대신 MAJOR로 보고 중이었습니다. 이 문제가 해결되었습니다.
-* BPA가 ui.apps의 OAK 색인 정의와 관련된 결과를 CRITICAL로 잘못 보고했습니다. 이 문제가 해결되었습니다
+* 일부 시나리오에서 어설션 오류를 발생시키는 FormsSelectiveFeaturesAnalysis로 인해 BPA가 실행되지 못했습니다. 이 문제가 해결되었습니다.
+* BPA가 WRK 패턴과 관련된 결과를 “심각”이 아닌 “주요” 문제로 보고했습니다. 이 문제가 해결되었습니다.
+* BPA가 ui.apps의 OAK 인덱스 정의와 관련된 결과를 “심각”으로 잘못 보고했습니다. 이 문제가 해결되었습니다
