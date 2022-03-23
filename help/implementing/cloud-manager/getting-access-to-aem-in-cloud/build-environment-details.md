@@ -2,9 +2,9 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드를 빌드하고 테스트하는 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3bf8764500d2b0068b808a42ecfd1400f78b1d13
+source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 
 * 빌드 환경은 Ubuntu 18.04에서 파생된 Linux 기반입니다.
 * Apache Maven 3.6.0이 설치됩니다.
-* 설치된 Java 버전은 Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2 및 Azul Zulu 11.0.11입니다.
+* 설치된 Java 버전은 Oracle JDK 8u202 및 Oracle JDK 11.0.2입니다.
 * 기본적으로 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_202`  에는 Oracle JDK 8u202가 포함되어 있습니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션을 참조하십시오.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
 
@@ -90,15 +90,10 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 | `sun` | `1.8` |
 | `sun` | `1.11` |
 | `sun` | `11` |
-| `azul` | `1.8` |
-| `azul` | `1.11` |
-| `azul` | `8` |
 
-#### 대체 Maven 실행 JDK 버전 {#alternate-maven-jdk-version}
-
-전체 Maven 실행에 대해 JDK로 Azul 8 또는 Azul 11을 선택할 수도 있습니다. 도구 체인 옵션과 달리 도구 체인 구성이 도구 체인 인식 Maven 플러그인에 대해 여전히 도구 체인 구성이 적용되는 경우에도 도구 체인 구성이 설정되어 있지 않으면 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 를 사용하여 Java 버전을 확인하고 적용합니다 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 사용할 수 있습니다.
-
-이렇게 하려면 이름이 인 파일을 만듭니다 `.cloudmanager/java-version` 파이프라인에서 사용하는 git 리포지토리 분기입니다. 이 파일에는 콘텐츠 11 또는 8이 있을 수 있습니다. 다른 값은 무시됩니다. 11을 지정하면 Azul 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.11`. 8을 지정하면 아줄 8을 사용하고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-8.0.292`.
+>[!NOTE]
+>
+>2022년 4월부터 AEM 애플리케이션 개발 및 작업을 위한 기본 JDK는 Oracle JDK입니다. Cloud Manager의 빌드 프로세스는 Maven 도구 체인에서 대체 옵션을 명시적으로 선택한 경우에도 Oracle JDK를 사용하여 자동으로 로 전환됩니다. 자세한 내용은 4월 릴리스 노트를 게시된 후 참조하십시오.
 
 ## 환경 변수 {#environment-variables}
 
