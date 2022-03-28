@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 100%
+source-wordcount: '2976'
+ht-degree: 99%
 
 ---
 
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## 레거시 전용 이그레스 주소 고객 {#legacy-dedicated-egress-address-customers}
-
-2021년 9월 30일 이전에 전용 이그레스 IP로 프로비저닝된 경우 전용 이그레스 IP 기능이 아래에 설명된 대로 작동합니다.
-
-### 기능 사용 {#feature-usage}
+## 기능 사용 {#feature-usage}
 
 해당 기능은 프록시 구성에 표준 Java 시스템 속성을 사용하는 경우 아웃바운드 트래픽을 생성하는 Java 코드 또는 라이브러리와 호환됩니다. 따라서 가장 일반적인 라이브러리가 포함되어야 합니다.
 
@@ -349,11 +345,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 Adobe 조직의 모든 고객 프로그램 및 각 프로그램의 모든 환경에 동일한 전용 IP가 적용됩니다. 작성자 및 게시 서비스 모두에 적용됩니다.
 
-HTTP 및 HTTPS 포트만 지원됩니다. 여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다.
-
 ### 디버깅 고려 사항 {#debugging-considerations}
 
 예상되는 전용 IP 주소에 트래픽이 실제로 송신되는지 확인하려면 가능한 경우 대상 서비스의 로그를 확인하십시오. 그렇지 않으면 [https://ifconfig.me/IP](https://ifconfig.me/IP)와 같이 호출 IP 주소를 반환하는 디버깅 서비스를 호출하는 것이 유용할 수 있습니다.
+
+## 레거시 전용 이그레스 주소 고객 {#legacy-dedicated-egress-address-customers}
+
+2021.09.30 이전에 전용 송신 IP를 프로비저닝한 경우 전용 송신 IP 기능은 HTTP 및 HTTPS 포트만 지원합니다.
+여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다.
 
 ## Virtual Private Network(VPN) {#vpn}
 
