@@ -1,16 +1,16 @@
 ---
-title: 기존 설치에 대한 외부 종속성 제거
-description: ' 설치  [!DNL Workfront for Experience Manager enhanced connector]'
+title: 기존 설치에 대해 외부 종속성 제거
+description: 기존 설치에 대해 외부 종속성 제거
 feature: Integrations
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
-source-git-commit: d1f7b3ee9394751795273820c17e6feba84f7bf6
+source-git-commit: b71a78696d4b347c97b077d84b455f53a1747a07
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 1%
+source-wordcount: '102'
+ht-degree: 17%
 
 ---
 
-# 기존 설치에 대한 외부 종속성 제거 {#remove-external-depedencies}
+# 기존 설치에 대해 외부 종속성 제거 {#remove-external-depedencies}
 
 Adobe은 Workfront에 대한 기존 향상된 커넥터 설치에 대한 구성 단계를 실행하여 Hoodo 배포 지점에 대한 종속성을 제거할 것을 권장합니다.
 

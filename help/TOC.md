@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1530763a4817b9d6c17b55fb2d8db98304f1d433
+source-git-commit: ac5984d9b5c8800287e11fe00e02d60d9727ed43
 workflow-type: tm+mt
-source-wordcount: '3397'
-ht-degree: 100%
+source-wordcount: '3407'
+ht-degree: 99%
 
 ---
 
@@ -383,10 +383,12 @@ ht-degree: 100%
       + [Flash 뷰어 서비스 종료](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Adobe Workfront와 통합 {#integrations}
+      + [Workfront for Experience Manager Enhanced Connector 릴리스 노트](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [ [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
       + [ [!DNL Workfront]에 [!DNL enhanced connector] 설치](/help/assets/workfront-connector-install.md)
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
+      + [업데이트 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + 양식 {#forms}
    + [소개](/help/forms/home.md)
    + [주요 기능](/help/forms/key-features.md)
