@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3c1012469db3e8a947634d5995eaee09a632e7f8
+source-git-commit: 1530763a4817b9d6c17b55fb2d8db98304f1d433
 workflow-type: tm+mt
-source-wordcount: '3417'
+source-wordcount: '3397'
 ht-degree: 100%
 
 ---
@@ -679,15 +679,12 @@ ht-degree: 100%
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 맞춤형 도메인 이름 관리 {#custom-domain-names}
          + [소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [맞춤형 도메인 이름 가져오기](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
          + [맞춤형 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [맞춤형 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-         + [맞춤형 도메인 이름 조회, 업데이트 및 바꾸기](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-         + [맞춤형 도메인 이름의 SSL 인증서 업데이트](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-         + [맞춤형 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+         + [맞춤형 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + IP 허용 목록 관리 {#ip-allow-lists}
          + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

@@ -2,9 +2,9 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용 환경 유형을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1747'
 ht-degree: 1%
 
 ---
@@ -216,9 +216,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포한 버전�
 
 * [맞춤형 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-* [사용자 지정 도메인 이름 보기 및 업데이트](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-
-* [맞춤형 도메인 이름 삭제](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [맞춤형 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
 
 * [사용자 지정 도메인 이름의 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 또는 [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
