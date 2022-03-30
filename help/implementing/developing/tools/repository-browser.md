@@ -3,19 +3,23 @@ title: 저장소 브라우저
 seo-title: Repository Browser
 description: 저장소 브라우저는 작성자, 게시 및 미리 보기 계층의 모든 환경을 위한 저장소에 읽기 전용 보기를 제공합니다.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
-source-git-commit: 76e28ca5628fb985df21f53d1c3e9898985dc736
+exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
+source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
-
 
 # 저장소 브라우저 {#repository-browser}
 
 >[!NOTE]
 >
 >저장소 브라우저는 AEM 버전 6582 이상에서 사용할 수 있습니다.
+
+>[!INFO]
+>
+>또한 볼 수 있습니다 [이 클립](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) 저장소 브라우저를 사용하여 AEM as a Cloud Service을 디버깅하는 방법에 대한 빠른 비디오 소개입니다.
 
 ## 소개 {#introduction}
 
