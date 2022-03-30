@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2976'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -351,7 +351,7 @@ Adobe 조직의 모든 고객 프로그램 및 각 프로그램의 모든 환경
 
 ## 레거시 전용 이그레스 주소 고객 {#legacy-dedicated-egress-address-customers}
 
-2021.09.30 이전에 전용 송신 IP를 프로비저닝한 경우 전용 송신 IP 기능은 HTTP 및 HTTPS 포트만 지원합니다.
+2021년 9월 30일 이전에 전용 이그레스 IP로 프로비저닝된 경우, 전용 이그레스 IP 기능은 HTTP 및 HTTPS 포트만 지원합니다.
 여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다.
 
 ## Virtual Private Network(VPN) {#vpn}
@@ -360,7 +360,7 @@ VPN을 사용하면 작성자, 게시 또는 미리보기에서 온프레미스 
 
 또한 VPN을 사용하면 VPN을 지원하는 CRM 공급업체와 같은 SaaS 공급업체에 연결하거나 기업 네트워크에서 AEM as a Cloud Service 작성자, 미리보기 또는 게시에 연결할 수 있습니다.
 
-대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. **RouteBased 구성 지침** 열에 기재된 정보에 따라 [이 페이지](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 디바이스 목록을 참조하십시오. 표에 설명된 대로 디바이스를 구성하십시오.
+대부분의 IPSec 기술이 내장된 VPN 디바이스가 지원됩니다. **RouteBased 구성 지침** 열에 기재된 정보에 따라 [이 페이지](https://docs.microsoft.com/ko-kr/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)의 디바이스 목록을 참조하십시오. 표에 설명된 대로 디바이스를 구성하십시오.
 
 ### 일반적인 고려 사항 {#general-vpn-considerations}
 
