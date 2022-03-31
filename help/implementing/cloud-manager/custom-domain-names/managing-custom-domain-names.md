@@ -1,13 +1,13 @@
 ---
 title: 맞춤형 도메인 이름 관리
 description: Cloud Manager를 사용하여 사용자 지정 도메인 이름을 보고, 업데이트하고, 대체하고, 삭제하는 방법을 알아봅니다.
-source-git-commit: 4604b5fad59524a05dc7addf16c70246a14cfea1
+exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 3%
 
 ---
-
 
 # 맞춤형 도메인 이름 관리 {#managing-custom-domain-names}
 
@@ -52,7 +52,8 @@ Cloud Manager를 사용하면 사용자 지정 도메인 이름을 보고, 업�
 1. 행의 맨 오른쪽 끝에 있는 줄임표 단추를 클릭합니다.
 
 1. 선택 **삭제**.
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+
+   ![사용자 지정 도메인 이름 삭제](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. 제출을 확인합니다.
 

@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 릴리스 2021.3.0의 Cloud Manager 릴리스 노�
 description: AEM as a Cloud Service 릴리스 2021.3.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -22,7 +22,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 날짜는 2021년 3�
 
 ### 새로운 기능 {#what-is-new}
 
-* 에 대한 기존 사용자 지정 도메인 이름 구성이 있는 환경이 있는 고객 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 및 [사용자 지정 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 은 이전 기존 구성에 대한 메시지를 볼 수 있고 UI를 통해 자체 제공할 수 있습니다.
+* 에 대한 기존 사용자 지정 도메인 이름 구성이 있는 환경이 있는 고객 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 및 [사용자 지정 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 은 이전 기존 구성에 대한 메시지를 볼 수 있고 UI를 통해 자체 제공할 수 있습니다.
 
 * 필수 권한이 있는 사용자는 이제 프로그램을 편집하여 셀프 서비스 방식으로 다음을 수행할 수 있습니다.
    * 자산을 사용하여 기존 프로그램에 사이트 솔루션을 추가하거나 그 반대로 추가합니다.

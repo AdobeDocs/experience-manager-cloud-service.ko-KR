@@ -2,16 +2,16 @@
 title: TXT 레코드 추가
 description: Cloud Manager에서 사용자 지정 도메인 이름을 추가하기 위해 TXT 레코드를 추가하는 방법을 알아봅니다.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: c80b7288b86ac62da17d5a83ec96cb882e36f687
+source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 4%
 
 ---
 
 # TXT 레코드 추가 {#adding-txt}
 
-DNS TXT 레코드는 CDN 서비스에서 호스팅될 도메인을 허용합니다. Cloud Manager가 사용자 지정 도메인에 CDN 서비스를 배포하고 이를 백엔드 서비스에 연결할 수 있도록 하는 영역에 DNS TXT 레코드를 만들어야 합니다. 이 연결은 전적으로 귀하의 제어하에 있으며 Cloud Manager가 서비스의 컨텐츠를 도메인에서 도메인으로 제공하도록 허용합니다. 이 인가는 또한 취소될 수 있다.
+DNS TXT 레코드는 CDN 서비스에서 호스팅될 도메인을 허용합니다. Cloud Manager가 사용자 지정 도메인에 CDN 서비스를 배포하고 이를 백엔드 서비스에 연결할 수 있도록 하는 영역에 DNS TXT 레코드를 만들어야 합니다. 이 연결은 전적으로 귀하의 제어하에 있으며 Cloud Manager가 서비스의 컨텐츠를 도메인에서 도메인으로 제공하도록 허용합니다. 이 인가는 또한 취소될 수 있다. TXT 레코드는 도메인 및 Cloud Manager 환경에 따라 다릅니다.
 
 TXT 레코드를 추가하기 전에 이러한 요구 사항을 충족해야 합니다.
 

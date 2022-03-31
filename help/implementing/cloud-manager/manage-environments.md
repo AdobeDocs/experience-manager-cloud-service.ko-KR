@@ -2,9 +2,9 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용 환경 유형을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 1%
 
 ---
@@ -105,9 +105,9 @@ Cloud Manager는 각 AEM as a Cloud Service 환경에 미리 보기 서비스(�
 
 1. 적절한 IP 허용 목록을 만들어 미리 보기 서비스에 적용한 후 즉시 적용 취소 `Preview Default [<envId>]` 허용 목록.
 
-   * 을(를) 참조하십시오. [IP 허용 목록 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) 자세한 내용
+   * 문서를 참조하십시오 [IP 허용 목록 적용 및 적용 해제](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 자세한 내용
 
-1. 업데이트 사용 **IP 허용 목록** 기본 IP를 제거하고 IP를 적절히 추가하는 워크플로우입니다. 을(를) 참조하십시오. [IP 허용 목록 보기 및 업데이트](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) 추가 정보
+1. 업데이트 사용 **IP 허용 목록** 기본 IP를 제거하고 IP를 적절히 추가하는 워크플로우입니다. 을(를) 참조하십시오. [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) 추가 정보
 
 미리 보기 서비스에 대한 액세스 잠금이 해제되면 미리 보기 서비스 이름 앞에 있는 잠금 아이콘이 더 이상 표시되지 않습니다.
 
@@ -220,7 +220,7 @@ Cloud Manager에서 파이프라인과 함께 마지막으로 배포한 버전�
 
 * [사용자 지정 도메인 이름의 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 또는 [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [IP 허용 목록 상태 확인](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## IP 허용 목록 관리 {#manage-ip-allow-lists}
