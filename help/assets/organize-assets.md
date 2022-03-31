@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -74,14 +74,45 @@ Date24/08/2021
 
 ## 태그를 사용하여 자산 구성 {#use-tags-to-organize-assets}
 
-태그를 메타데이터로 사용하면 자산을 쉽게 검색하고, 검색 결과를 사용하여 컬렉션을 만들고, 일부 자산에 대한 검색 등급을 높이고, 자산 검색을 위해 Adobe Sensei의 AI 알고리즘을 적용할 수 있습니다.
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] 는 자체 학습 알고리즘을 사용하여 몇 번의 클릭만으로 적합한 자산을 찾을 수 있도록 해주는 매우 설명적인 태그를 만듭니다. 스마트 태깅은 Adobe Sensei, 인공 지능 및 머신 러닝 프레임워크를 사용하며, 이 프레임워크는 이미지에 표준 태그와 비즈니스 관련 태그를 모두 인식하고 적용하도록 교육할 수 있습니다. 스마트 태그는 컨텐츠, 개별 단어 또는 구문을 식별하고 자산에 설명 태그를 자동으로 적용할 수도 있습니다
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+자산에 태그를 추가하면 검색 중에 보다 쉽게 검색할 수 있고, 검색 결과를 사용하여 컬렉션을 만들고, 일부 자산에 대한 검색 등급을 높이고, 자산 검색을 위해 Adobe Sensei의 AI 알고리즘을 적용할 수 있습니다.
+
+[!DNL Adobe Experience Manager Assets] 는 자체 학습 알고리즘을 사용하여 몇 번의 클릭만으로 적합한 자산을 찾을 수 있도록 해주는 매우 설명적인 태그를 만듭니다. 스마트 태깅은 Adobe Sensei, 인공 지능 및 머신 러닝 프레임워크를 사용하며, 이 프레임워크는 이미지에 표준 태그와 비즈니스 관련 태그를 모두 인식하고 적용하도록 교육할 수 있습니다. 스마트 태그는 컨텐츠, 개별 단어 또는 구문을 식별하고 자산에 설명 태그를 자동으로 적용할 수도 있습니다.
+
+다음은 자산에 태그를 추가하는 단계입니다.
+
+1. 에 로그인합니다. [!DNL Experience Manager Assets].
+1. 클릭 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;를 클릭하고 자산을 선택한 다음 를 클릭합니다 **[!UICONTROL 속성]** 자산 속성을 엽니다.
+1. 에서 **[!UICONTROL 기본]** 탭에서 폴더 아이콘을 클릭합니다. **[!UICONTROL 태그]** 메타데이터. 팝업 창이 열립니다.
+1. 의 기존 태그에서 적절한 태그를 검색하거나 선택합니다 `cq-tags`. 자산에 여러 태그를 지정할 수 있습니다.
+
+   태그 구조를 **[!UICONTROL 이름]** (알파벳 순서), **[!UICONTROL 생성됨]** 날짜 또는 **[!UICONTROL 수정됨]** 날짜. 다음 그림에서 태그 구조는 **[!UICONTROL 이름]**.
+
+   ![추가 태그](assets/add-tags-to-asset.png)
+
+1. 클릭 **저장** 자산 메타데이터 변경 사항을 업데이트하려면
+
+>[!NOTE]
+>
+>스마트 태그를 만드는 동안 태그 구조를 정렬하고 태그 설명을 사용하여 검색 필터를 적용할 수 있습니다.
+>
+>태그 정렬 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](/help/release-notes/prerelease.md#enable-prerelease) 을 참조하십시오.
 
 자세한 내용은 다음 문서를 참조하십시오.
 
 * [자산 메타데이터 편집](meta-edit.md)
 * [자산의 스마트 태그](smart-tags.md)
+* [검색 패널에 태그 설명 추가](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## 컬렉션으로 구성 {#organize-as-collections}
 

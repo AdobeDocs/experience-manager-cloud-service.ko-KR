@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
+source-git-commit: 170f93e9ef8b92ce258cc6f3e2d35ece27709fd5
 workflow-type: tm+mt
-source-wordcount: '3387'
-ht-degree: 99%
+source-wordcount: '3409'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 99%
    + [릴리스 정보](/help/release-notes/home.md)
    + 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2022 {#2022}
+         + [2022.1.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
          + [2021.11.0 릴리스 정보](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [2021.10.0 릴리스 정보](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -263,7 +265,9 @@ ht-degree: 99%
    + AEM as a Cloud Service와 통합 {#integrations}
       + [Adobe Analytics와 통합](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 자동 설정과 통합](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Adobe Analytics과 통합할 때 사용할 IMS 구성](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [Adobe Target과 통합할 때 사용할 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
 + 에셋 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -610,7 +614,7 @@ ht-degree: 99%
    + Cloud Manager 사용 {#using-cloud-manager}
       + Cloud Manager 릴리스 정보 {#release-notes-cloud-manager}
          + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022 {#2022}
+         + 2022년 {#2022}
             + [2022.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
             + [2022.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021년 {#2021}

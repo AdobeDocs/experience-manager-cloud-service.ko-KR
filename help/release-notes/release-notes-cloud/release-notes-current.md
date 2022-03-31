@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
-workflow-type: ht
-source-wordcount: '1188'
-ht-degree: 100%
+source-git-commit: 372e40eb90d87d9ed366e08a3c0117068542680b
+workflow-type: tm+mt
+source-wordcount: '1427'
+ht-degree: 35%
 
 ---
 
@@ -25,111 +25,121 @@ ht-degree: 100%
 
 ## 릴리스 날짜 {#release-date}
 
-[!DNL Adobe Experience Manager]인 [!DNL Cloud Service]의 현재 릴리스(2022.1.0)의 날짜는 2022년 2월 3일입니다.
-다음 릴리스(2022.3.0) 날짜는 2022년 3월 31일입니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2022.3.0)는 2022년 3월 31일입니다.
+다음 릴리스(2022.4.0)는 2022년 4월 28일입니다.
 
 ## 릴리스 비디오 {#release-video}
 
-[2022년 1월 릴리스 개요](https://video.tv.adobe.com/v/340120) 비디오를 통해 2022.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
-
-## Adobe Experience Manager Sites as a Cloud Service {#sites}
-
-* **[프론트 엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** 버튼은 페이지 핵심 구성 요소의 v2를 사용하는 사이트를 위한 Sites 콘솔의 **Site** 레일에서 사용할 수 있습니다. 이 버튼은 기존 클라이언트 라이브러리 위에 프런트 엔드 파이프라인과 함께 배포된 테마를 로드하도록 사이트를 구성합니다.
+을(를) 보십시오. [2022년 3월 릴리스 개요](https://video.tv.adobe.com/v/341465) 비디오 - 2022.3.0 릴리스에 추가된 기능에 대한 요약
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* [!DNL Dynamic Media] - 이제 Dynamic Media Classic 데스크탑 애플리케이션을 사용하지 않고도 AEM Dynamic Media 인터페이스를 사용하여 일반 설정 및 게시 설정을 구성할 수 있습니다.
-
-* [!DNL Dynamic Media]는 이제 MXF 비디오에 대해 수집, 미리보기, 재생 및 게시 기능을 지원합니다. MXF에 대한 주석 및 구매 가능한 비디오는 아직 지원되지 않습니다.
-
-* 원격 DAM 및 Sites 배포 간의 연결을 구성한 후에는 Sites 배포에서 원격 DAM의 에셋을 사용할 수 있습니다. 이제 원격 DAM 에셋 또는 폴더에서의 [작업을 업데이트하고, 삭제하고, 이름을 바꾸고, 이동](/help/assets/use-assets-across-connected-assets-instances.md)할 수 있습니다. 업데이트는 약간의 지연과 함께 Sites 배포에서 자동으로 사용할 수 있습니다.
-
-### [!DNL Assets] 프리릴리스 채널의 새로운 기능 {#assets-prerelease-features}
-
-* [!DNL AEM Dynamic Media] 이제 즉시 사용 가능한 Dynamic Media URL 및 뷰어 임베드 코드를 업데이트하도록 사용자 인터페이스에서 [하나의 별칭 계정](../../assets/dynamic-media/dm-alias-account.md)을 구성할 수 있습니다. 이는 리브랜딩과 같은 비즈니스 컨텍스트에 대한 업데이트를 반영하여 SEO에 긍정적인 영향을 미칩니다.
+* [!DNL AEM Dynamic Media] 이제 즉시 사용 가능한 Dynamic Media URL 및 뷰어 임베드 코드를 업데이트하도록 사용자 인터페이스에서 [하나의 별칭 계정](/help/assets/dynamic-media/dm-alias-account.md)을 구성할 수 있습니다. 이는 리브랜딩과 같은 비즈니스 컨텍스트에 대한 업데이트를 반영하여 SEO에 긍정적인 영향을 미칩니다.
 
 * 이제 [!DNL Experience Manager Assets] 사용자 인터페이스를 사용하여 다음을 수행할 수 있습니다.
 
-   * 저장소에서 중복 에셋 감지를 구성합니다.
+   * 구성 [중복 자산 검색](/help/assets/manage-digital-assets.md#detect-duplicate-assets) 저장소에 있습니다.
 
-   * 이미지에 디지털 워터마크 추가를 구성합니다.
+   * 구성 [디지털 워터마크 추가](/help/assets/watermark-assets.md) 이미지를 클릭합니다.
 
 * 이제 관리자는 대량 다운로드를 위한 이메일 서비스를 구성할 수 있습니다. 이를 통해 사용자는 [!DNL Experience Manager Assets] 인터페이스에서 [대량 다운로드에 대한 이메일 알림](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads)을 활성화할 수 있습니다. 사용자는 다운로드 프로세스가 완료되면 아카이브된 zip 폴더의 다운로드 링크가 포함된 이메일 알림을 수신하게 됩니다.
 
-
 * [게시 관리](/help/assets/manage-publication.md) 기능은 개선된 사용자 인터페이스로 향상되었습니다. 사용자는 선택한 대상에 콘텐츠를 게시하거나 게시를 취소하고, DAM 저장소의 게시 목록에 [콘텐츠를 추가](/help/assets/manage-publication.md#add-content)하고, [폴더 설정을 포함하여](/help/assets/manage-publication.md#include-folder-settings) 선택한 폴더의 콘텐츠를 게시하고 필터를 적용하고, 나중에 게시할 날짜 또는 시간에 [게시 일정](/help/assets/manage-publication.md#publish-assets-later)을 지정할 수 있습니다.
 
-### 버그 수정 {#bug-fixes}
+### [!DNL Assets] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-assets}
 
-* 원본 렌디션이 없는 처리되지 않은 에셋은 AEM on-premise에서 클라우드 서비스로 에셋을 마이그레이션하는 동안 처리를 위해 Asset Compute로 전송됩니다.
+* 다음을 수행할 수 있습니다 [태그 정렬](/help/assets/organize-assets.md#use-tags-to-organize-assets) 태그 설명을 사용하여 검색 필터를 적용할 뿐만 아니라 스마트 태그를 만드는 동안
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ko-KR)를 통해 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드와 배치 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
+* **[!DNL Communications - Document Generation APIs]**: [문서 생성 API](/help/forms/aem-forms-cloud-service-communications.md) PDF 문서를 결합, 재정렬 및 확인하는 데 도움이 됩니다. 이 서비스를 사용하면 동기화 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
 
-   * XML 데이터로 템플릿 파일을 채워 문서를 생성합니다.
-   * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식의 양식을 생성합니다.
-   * XFA 양식 PDF에서 인쇄 PDF를 생성합니다.
-   * 여러 데이터 세트를 소스 템플릿과 병합하여 PDF, PostScript, PCL 및 ZPL 문서를 대량으로 생성합니다.
+   * PDF 문서를 어셈블합니다.
+   * PDF 문서를 디스어셈블합니다.
+   * PDF/A 규격 문서로 변환하여 유효성을 검사합니다.
 
-* **커뮤니케이션 API로 생성된 기록 문서 및 PDF 문서에 대한 맞춤형 글꼴**: 이제 커뮤니케이션 API를 사용하여 생성된 PDF 문서의 브랜드 승인 글꼴을 사용하여 조직 요구 사항을 맞출 수 있습니다.
+* **15페이지가 넘는 PDF forms을 적응형 양식으로 자동 변환**: 이제 automated forms conversion 서비스를 사용하여 최대 40페이지가 있는 PDF forms을 적응형 양식으로 전환할 수 있습니다. 이제 이 서비스는 15페이지 이상의 양식의 섹션을 적응형 양식 조각으로 변환하는 옵션을 제공합니다. 이것은 변환된 양식의 렌더링 속도를 개선하는 데 도움이 되며 적응형 양식 편집기에서 큰 양식을 더 쉽게 로드할 수 있도록 합니다.
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
-* **[어셈블러 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: PDF 문서에 대한 정보를 결합, 재배열, 보강 및 얻을 수 있는 어셈블러 API입니다.
+* **사용자 정의 XCI를 사용하여 레코드 문서 생성**: 이제 사용자 지정 XCI 파일을 사용하여 레코드 문서의 다양한 속성을 설정할 수 있습니다. 이 값은 사용자 지정 변경 사항으로 마스터 XCI를 무시합니다.
 
+* **적응형 양식에서 보이지 않는 CAPTCHA 사용**: 보이지 않는 CAPTCHA를 사용하여 의심스러운 활동의 경우에만 CAPTCHA 문제를 표시할 수 있습니다. 의심스러운 활동이 없으면 CAPTCHA 문제가 표시되지 않습니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
 ### 새로운 기능 {#what-is-new-cif}
 
-* 향상된 myAccount 구성 요소
-* 제품 추천 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다.
-* **위시리스트**
-   * 로그인한 방문자는 위시리스트에 제품을 추가할 수 있습니다.
-   * myAccount를 통해 위시리스트 및 해당 제품을 관리할 수 있습니다.
-   * “위시리스트에 추가” 버튼은 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항).
-   * 핵심 구성 요소 및 AEM Venia Storefront에서 사용 가능
+* 베타: AEM CIF Search 핵심 구성 요소 지원 Commerce LiveSearch
+* 다중 저장소 시나리오에 대한 SEO가 개선되었습니다. 이제 CIF 클라우드 구성 속성을 통해 저장소 수준에서 PDP/PLP의 URL 형식을 구성할 수 있습니다
+* 제품 선택기는 UI에서 새 필터 옵션을 통해 준비된 제품을 지원합니다.  이를 통해 컨텐츠 전문가가 향후 제품 출시에 대한 제품 컨텐츠 관리를 준비할 수 있습니다
+* 구성 프록시 URL 대신 CIF 클라우드 구성 이름을 사용하여 CIF 구성 관리 및 오류 처리를 단순화했습니다
+* 제품 목록 및 회전 메뉴 구성 요소에 대한 수동 카테고리 선택. 이를 통해 컨텐츠 전문가가 카탈로그 경험 외부의 컨텐츠 페이지에서 이러한 구성 요소를 사용할 수 있습니다
 
-![위시리스트](/help/assets/CIF/wishlist.png)
+## [!DNL Experience Manager] 로서의 [!DNL Cloud Service] Foundation {#foundation}
+
+### 새로운 기능 {#what-is-new-foundation}
+
+* 클라우드 환경의 사용자 지정 기능을 보다 효율적이고 효과적으로 해결하기 위해 새로운 개발자 도구를 발표했습니다. [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md). 개발자 콘솔에서 실행할 수 있는 경량의 읽기 전용 HTML 브라우저입니다. 게시자, 작성자 및 미리 보기 계층, 프로덕션, 스테이지, 개발 등 모든 환경에서 컨텐츠 리포지토리를 표시할 수 있습니다. 컨텐츠 구조를 찾아보고, 속성을 보고, 바이너리를 미리 보고 다운로드합니다.
+
+   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+
+* 서버 간 API 호출을 인증하는 데 사용되는 자격 증명(예: GraphQL API 요청의 경우)은 이제 개발자 콘솔에서 자체 제공 방식으로 만료되기 전에 새로 고칠 수 있습니다. 자세한 내용은 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 추가 정보.
+
+* 버전 삭제 및 감사 로그 삭제 유지 관리 작업은 이전에 활성화되지 않았던 새 환경에 대해 활성화됩니다. 에서 관련 값을 참조하십시오 [유지 관리 작업](/help/operations/maintenance.md) 문서.
+
+* AEM as a Cloud Service SDK Dispatcher 도구는 이제 M1 칩을 사용하는 Mac 컴퓨터를 지원합니다
 
 ## Cloud Manager {#cloud-manager}
 
-### 릴리스 날짜 {#release-date-cm}
+### 2월 릴리스 날짜 {#release-date-cm-feb}
 
-AEM as a Cloud Service 2022.01.0의 Cloud Manager 릴리스 날짜는 2022년 1월 20일입니다. 다음 릴리스는 2022년 2월 10일에 예정되어 있습니다.
+AEM as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 날짜는 2022년 2월 10일입니다. 다음 릴리스는 2022년 3월 10일에 예정되어 있습니다.
 
-### 새로운 기능 {#what-is-new-cm}
+### 새로운 기능 {#what-is-new-cm-feb}
 
-* Cloud Manager는 [동일한 Git Commit이 여러 전체 스택 파이프라인 실행에 사용되는 것을 감지하면 코드 베이스를 다시 빌드하지 않습니다](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse).
-* 이제 AEM 환경 로그에 액세스하려면 **Deployment Manager** 제품 프로필이 필요합니다. 이 프로필이 없는 사용자에게는 사용자 인터페이스에서 비활성화된 버튼이 표시됩니다.
-* UI는 Sites가 솔루션으로 활성화되지 않은 프로그램에 대한 프론트엔드 파이프라인 구성을 허용하지 않습니다.
-* Git 암호 생성 시 만료 날짜가 표시됩니다.
+* 새로운 가속 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 은 HTTPD/dispatcher 구성을 독점적으로 배포하기 위해 도입되었습니다.
+   * AEM 버전을 사용해야 합니다. `2021.12.6151.20211217T120950Z` 또는 이상 [dispatcher 도구의 유연한 모드로 옵트인합니다.](/help/implementing/dispatcher/disp-overview.md#validation-debug) 을 클릭하여 이 기능을 사용할 수 있습니다.
+   * 이 기능은 2022.02.0 릴리스 후 2주에 걸쳐 단계적인 접근 방식으로 롤아웃됩니다.
+* Cloud Manager 랜딩 페이지 환경을 새로 고쳐 향상된 탐색, 그리드/타일 보기 및 팝업 오버를 제공하여 빠른 프로그램 요약을 제공합니다.
+* 실패한 새 임계값(`< D`)이 에 추가되었습니다. [신뢰성 등급 지표.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * 시스템 안정성에 영향을 주는 심각한 품질 문제가 있는 고객(주로 잘못된 인덱스 및 워크플로우 프로세스와 관련이 있음)은 이러한 문제가 해결될 때까지 배포할 수 없습니다.
+* 의 심각도 `BannedPath` [품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) 이 차단기에서 위험으로 변경되었습니다.
+* 파이프라인 마법사는 를 구성하기 전에 AEM 환경 업데이트가 필요할 수 있음을 사용자에게 알려줍니다 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 관련 항목.
 
-### 버그 수정 {#bug-fixes-cm}
+### 버그 수정 {#bug-fixes-cm-feb}
 
-* 일부 프론트엔드 파이프라인 배포에서 발생한 Null 포인터 예외가 수정되었습니다.
-* 이제 환경에서 오래된 버전의 AEM을 실행할 때 환경 변수를 추가, 업데이트 및 삭제할 수 있습니다.
-* 드문 경우지만 예약된 단계를 사용한 파이프라인에 대해 빌드 이미지 단계가 더 이상 오류로 표시되지 않습니다.
-* 저장소가 하나만 있는 프로그램의 경우 이제 파이프라인 실행 화면에 저장소 이름이 표시됩니다.
+* 새 암호가 생성되면 이전 Git 리포지토리 암호가 항상 무효화됩니다.
+* API를 통해 환경 변수를 업데이트해도 드물게 발생하는 경우 파이프라인 실행이 더 이상 방해되지 않습니다.
+
+### 3월 릴리스 날짜 {#release-date-cm-march}
+
+AEM as a Cloud Service 10의 Cloud Manager 릴리스 2022.3.0에 대한 릴리스 날짜(2022년 3월) 다음 릴리스는 2022년 4월 7일에 예정되어 있습니다.
+
+### 새로운 기능 {#what-is-new-cm-march}
+
+* AEM 환경 로그에 액세스하는 작업은 개발자 역할을 사용하여 수행할 수 있습니다.
+
+### 버그 수정 {#bug-fixes-cm-march}
+
+* 수동으로 만든 Git 리포지토리의 하위 집합에 잘못된 이름 값이 있어서 작성 객체 재사용 기능이 적용되지 않았습니다. 이러한 리포지토리의 이름이 변경되었으며 사용자는 Cloud Manager API/UI에서 수정된 이름을 볼 수 있습니다.
+* 비프로덕션 파이프라인의 빌드 아티팩트가 프로덕션 전체 스택 파이프라인에서 잘못 재사용되었습니다.
+* 코드 품질 파이프라인을 추가하거나 편집할 때 지표 오류를 처리하는 옵션이 더 이상 표시되지 않습니다.
+* 일부 예기치 않은 파이프라인 변수 구성이 빌드 단계에서 발생할 수 있습니다.
 
 ## 콘텐츠 전송 도구 {#ctt-release}
 
 ### 릴리스 날짜 {#release-date-ctt}
 
-콘텐츠 전송 도구 v1.8.6의 릴리스 날짜는 2022년 2월 3일입니다.
+컨텐츠 전송 도구 v1.9.0의 릴리스 날짜는 2022년 2월 28일입니다.
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 콘텐츠 유효성 검사 - 사용자는 콘텐츠 전송 도구에서 추출한 모든 콘텐츠가 대상 인스턴스에 성공적으로 수집되었는지 확인할 수 있습니다. 이 기능을 사용하려면 소스 AEM 환경의 `System Console`에서 활성화해야 합니다. 자세한 내용은 [콘텐츠 전송 확인 - 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=ko-KR#getting-started)를 참조하십시오.
-
-### 버그 수정 {#bug-fixes-ctt}
-
-* 사용자 매핑이 대소문자를 구분하기 때문에 일부 사용자가 매핑되지 않았습니다. 이 문제가 해결되었습니다. 사용자 매핑은 더 이상 대소문자를 구분하지 않습니다.
+* 크기 보호 확인 - 컨텐츠 전송 도구 확인 크기 기능은 실패한 컨텐츠 전송을 줄이는 데 도움이 됩니다.  [크기 확인] 기능을 사용하면 1) 사용자가 1) `crx-quickstart` 하위 디렉토리 추출 전 및 2) 마이그레이션 세트 크기를 추정하고 지원되는지 확인합니다. 이 검사 중 하나 또는 둘 다를 위반한 경우 CTT UI에 경고가 표시됩니다. 이러한 보호를 통해 컨텐츠 전송 오류를 방지하고 Adobe 고객 지원 센터를 통해 마이그레이션 옵션에 대해 미리 논의할 수 있습니다. 을(를) 참조하십시오. [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) 자세한 내용
 
 ## Best Practices Analyzer {#bpa-release}
 

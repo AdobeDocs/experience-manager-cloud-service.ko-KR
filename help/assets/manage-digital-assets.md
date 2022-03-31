@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
-source-wordcount: '4356'
-ht-degree: 11%
+source-wordcount: '4326'
+ht-degree: 12%
 
 ---
 
-# 자산 관리 {#manage-assets}
+# 에셋 관리 {#manage-assets}
 
 이 문서에서는 [!DNL Adobe Experience Manager Assets]. 관리하려면 [!DNL Content Fragments]를 참조하십시오. [[!DNL Content Fragments]](content-fragments/content-fragments.md) 자산.
 
@@ -23,7 +23,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->* 유형의 자산 폴더 공유 `sling:OrderedFolder`은 Marketing Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오 [!UICONTROL 주문] 폴더를 만들 때.
+>* 유형의 자산 폴더 공유 `sling:OrderedFolder`은 Experience Cloud에 공유할 때 지원되지 않습니다. 폴더를 공유하려면 선택하지 마십시오 [!UICONTROL 주문] 폴더를 만들 때.
 >* Experience Manager이 사용을 허용하지 않음 `subassets` 폴더 이름으로 word를 지정합니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다
 
 
@@ -36,7 +36,7 @@ ht-degree: 11%
 * 자산 파일 이름에는 다음 문자를 사용할 수 없습니다. `* / : [ \\ ] | # % { } ? &`
 * 자산 폴더 이름에는 다음 문자를 사용할 수 없습니다. `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## 자산 업로드 {#uploading-assets}
+## 에셋 업로드 {#uploading-assets}
 
 자세한 내용은 [Experience Manager에 디지털 자산 추가](add-assets.md).
 
@@ -45,10 +45,6 @@ ht-degree: 11%
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
 DAM 사용자가 저장소에 이미 있는 자산을 한 개 이상 업로드하는 경우, [!DNL Experience Manager] 중복을 감지하고 사용자에게 알립니다. 중복 감지는 저장소 크기 및 업로드된 자산 수에 따라 성능에 영향을 줄 수 있으므로 기본적으로 비활성화됩니다.
-
->[!NOTE]
->
->이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 을 참조하십시오.
 
 기능을 활성화하려면
 
@@ -77,7 +73,7 @@ DAM 사용자가 저장소에 이미 있는 자산을 한 개 이상 업로드�
 >
 >자산을 저장소에 업로드하면 Experience Manager이 중복을 감지하고 처음 100개의 중복 자산에 대해 알려줍니다.
 
-## 자산 미리 보기 {#previewing-assets}
+## 에셋 미리보기 {#previewing-assets}
 
 자산을 미리 보려면 다음 단계를 수행합니다.
 
@@ -140,7 +136,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 -->
 
-## 자산 복사 {#copying-assets}
+## 에셋 복사 {#copying-assets}
 
 자산 또는 폴더를 복사하면 전체 자산 또는 폴더가 해당 컨텐츠 구조와 함께 복사됩니다. 복사된 자산 또는 폴더는 대상 위치에 복제됩니다. 소스 위치의 자산은 변경되지 않습니다.
 
@@ -481,7 +477,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ### 저장된 주석 보기 {#viewing-saved-annotations}
 
-주석을 한 번에 하나씩만 볼 수 있습니다.
+주석을 한 번에 한 개만 볼 수 있습니다.
 
 >[!NOTE]
 >

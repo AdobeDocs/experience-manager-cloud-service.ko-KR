@@ -4,9 +4,9 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2397'
 ht-degree: 20%
 
 ---
@@ -144,6 +144,11 @@ Instead of manually creating a node structure for the options in the CRX reposit
 1. 검색 패널로 이동합니다. 다음 **[!UICONTROL 태그]** 설명이 [검색] 패널에 추가됩니다.
 1. 자산을 검색할 위치에 대한 태그를 지정하거나 제안 목록에서 선택합니다.
 1. 선택 **[!UICONTROL 모두 일치]** 를 입력하여 지정한 모든 태그를 포함하는 일치 항목을 검색합니다.
+
+태그 구조를 **[!UICONTROL 이름]** (알파벳 순서), **[!UICONTROL 생성됨]** 날짜 또는 **[!UICONTROL 수정됨]** 날짜. 다음 그림에서 태그 구조는 **[!UICONTROL 이름]**.
+
+![추가 태그](assets/add-tags-to-asset.png)
+
 
 ## 다른 설명 추가 {#adding-other-predicates}
 

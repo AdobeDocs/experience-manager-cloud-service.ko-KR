@@ -3,7 +3,7 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달용 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
+source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
 workflow-type: tm+mt
 source-wordcount: '2569'
 ht-degree: 100%
@@ -350,7 +350,7 @@ query GetArticlesByVariation($variation: String!) {
  
 ### in query variables
 {
-    "variation": "uk"
+    "variation": "Introduction"
 }
 ```
 

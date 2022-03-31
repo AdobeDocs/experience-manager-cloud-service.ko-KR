@@ -4,9 +4,9 @@ description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
+source-git-commit: 0d964a981f7b9004e99768888f78558c57ae398a
 workflow-type: tm+mt
-source-wordcount: '2838'
+source-wordcount: '2924'
 ht-degree: 19%
 
 ---
@@ -180,13 +180,16 @@ AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠
 
 * 자세한 내용은 **[조각 참조(중첩된 조각)](#fragment-reference-nested-fragments)** 를 참조하십시오.
 
-<!--
-* **Translatable**
-  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+* **번역 가능**
 
-  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
--->
+   >[!NOTE]
+   이 기능은 사전 릴리스 채널에서 사용할 수 있습니다.
+   자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 을 참조하십시오.
+
+   확인 **번역 가능** 컨텐츠 조각 모델 편집기의 필드에 있는 확인란은 다음과 같습니다.
+
+   * 필드의 속성 이름이 번역 구성, 컨텍스트에 추가되었는지 확인합니다 `/content/dam/<sites-configuration>`: 아직 없는 경우.
+   * GraphQL의 경우: 설정 `<translatable>` 컨텐츠 조각 필드의 속성 `yes`변환 가능한 콘텐츠만 있는 JSON 출력에 대해 GraphQL 쿼리 필터를 허용하는 방법.
 
 ## 유효성 검사 {#validation}
 

@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: ddc79a163e328d560912550900242cc089df3958
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1192'
 ht-degree: 3%
 
 ---
@@ -43,10 +43,6 @@ ht-degree: 3%
 
 
 ### 대규모 다운로드에 대한 이메일 알림 활성화 {#enable-emails-for-large-downloads}
-
->[!NOTE]
->
->이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 을 참조하십시오.
 
 비동기 다운로드는 다음 경우 트리거됩니다.
 

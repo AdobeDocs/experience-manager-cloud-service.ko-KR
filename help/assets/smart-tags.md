@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
+source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2411'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,13 @@ ht-degree: 5%
 1. 필요한 태그 및 적절한 태그 구조를 만듭니다. DAM 저장소에서 관련 이미지를 업로드합니다.
 1. in [!DNL Experience Manager] 사용자 인터페이스, 액세스 **[!UICONTROL 자산]** > **[!UICONTROL 스마트 태그 교육]**.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 다음을 제공합니다. **[!UICONTROL 제목]**, **[!UICONTROL 설명]**.
-1. 의 기존 태그에서 태그를 찾아 선택합니다 `cq:tags` 모델을 교육하고 싶어합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. 에서 폴더 아이콘을 클릭합니다. **[!UICONTROL 태그]** 필드. 팝업 창이 열립니다.
+1. 의 기존 태그에서 적절한 태그를 검색하거나 선택합니다 `cq-tags` 모델에 추가하려는 참조. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+
+   >[!NOTE]
+   >
+   >태그 구조를 **[!UICONTROL 이름]** (알파벳 순서), **[!UICONTROL 생성됨]** 날짜 또는 **[!UICONTROL 수정됨]** 날짜.
+
 1. 에서 **[!UICONTROL 자산 선택]** 대화 상자 **[!UICONTROL 자산 추가]** 를 반환합니다. DAM 저장소에서 검색하거나 리포지토리를 찾아 10개 이상 50개 이상의 이미지를 선택합니다. 폴더가 아니라 자산을 선택합니다. 이미지를 선택하면 **[!UICONTROL 선택]**.
 
    ![교육 상태 보기](assets/smart-tags-training-status.png)

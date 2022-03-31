@@ -1,18 +1,22 @@
 ---
 title: 지속 GraphQL 쿼리
-description: 성능을 최적화하기 위해 Adobe Experience Manager에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
+description: Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 유지하여 성능을 최적화하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 54%
 
 ---
 
 # 지속 GraphQL 쿼리 {#persisted-queries-caching}
 
-지속 쿼리는 AEM 서버에서 생성 및 저장되는 GraphQL 쿼리입니다. 표준 GraphQL 쿼리는 POST 요청을 사용하여 실행되며 응답을 쉽게 캐시할 수 없습니다. 지속 쿼리는 클라이언트 애플리케이션에서 GET 요청을 사용하여 요청할 수 있습니다. GET 요청의 응답은 Dispatcher 및 CDN 계층에서 캐시될 수 있으므로 궁극적으로 요청하는 애플리케이션의 성능이 향상됩니다.
+지속되는 쿼리는 Adobe Experience Manager(AEM) as a Cloud Service 서버에 만들고 저장하는 GraphQL 쿼리입니다. 클라이언트 응용 프로그램의 GET 요청으로 요청할 수 있습니다. GET 요청의 응답은 Dispatcher 및 CDN 계층에서 캐시될 수 있으므로 궁극적으로 요청하는 애플리케이션의 성능이 향상됩니다. 이는 응답을 쉽게 캐시할 수 없는 POST 요청을 사용하여 실행되는 표준 GraphQL 쿼리와 다릅니다.
+
+다음 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) AEM에서 사용할 수 있습니다(기본적으로 `dev-author`)을 사용하여 GraphQL 쿼리를 개발, 테스트 및 유지할 수 있습니다. [프로덕션 환경으로 전송](#transfer-persisted-query-production). 사용자 지정이 필요한 경우(예: [캐시 사용자 정의](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) API를 사용할 수 있습니다. 에 제공된 curl 예를 참조하십시오. [GraphQL 쿼리를 유지하는 방법](#how-to-persist-query).
+
+## 지속되는 쿼리 및 끝점 {#persisted-queries-and-endpoints}
 
 지속 쿼리는 항상 [적절한 Sites 구성](graphql-endpoint.md)과 관련된 끝점을 사용해야 합니다. 따라서 다음 중 하나 또는 둘 다를 사용할 수 있습니다.
 
@@ -26,7 +30,7 @@ ht-degree: 100%
 >
 >자세한 내용은 [구성 브라우저에서 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)를 참조하십시오.
 >
->적절한 Sites 구성을 위해 **GraphQL 지속 쿼리**&#x200B;를 활성화해야 합니다.
+>다음 **GraphQL 영구 쿼리** 적절한 사이트 구성에 대해 를 활성화해야 합니다.
 
 예를 들어 Sites 구성 `my-conf`의 모델 `my-model`을 사용하는 `my-query`라는 특정 쿼리가 있는 경우:
 
@@ -41,9 +45,15 @@ ht-degree: 100%
 >
 >동일한 모델을 사용하기는 하지만 다른 끝점을 통해 발생합니다.
 
-## GraphQL 쿼리를 지속하는 방법
+## GraphQL 쿼리를 지속하는 방법 {#how-to-persist-query}
 
-처음에 AEM 작성 환경에서 쿼리를 지속한 다음 AEM 게시 환경에 [쿼리를 게시](#publish-persisted-query)하는 것이 좋습니다. [Postman](https://www.postman.com/) 같은 도구나[curl](https://curl.se/) 같은 명령줄 도구를 사용할 수 있습니다.
+처음에 AEM 작성 환경에서 쿼리를 유지한 다음 [쿼리 전송](#transfer-persisted-query-production) 프로덕션 AEM 게시 환경에 배포해야 합니다.
+
+다음을 포함하여 쿼리를 유지하는 다양한 방법이 있습니다.
+
+* graphiQL IDE - 참조 [지속되는 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* curl - 다음 예를 참조하십시오
+* 기타 도구(예: [포스트맨](https://www.postman.com/)
 
 **curl** 명령줄 도구를 사용하여 주어진 쿼리를 지속하는 단계는 다음과 같습니다.
 
@@ -185,13 +195,23 @@ ht-degree: 100%
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-## 지속 쿼리를 게시합니다. {#publish-persisted-query}
+## 프로덕션 환경에 지속적인 쿼리 전송  {#transfer-persisted-query-production}
 
-지속 쿼리는 클라이언트 애플리케이션에서 요청할 수 있는 AEM Publish 환경에 게시할 수 있습니다. 게시 시 지속 쿼리를 사용하려면 관련 지속 트리가 복제되어야 합니다.
+궁극적으로 지속형 쿼리는 클라이언트 애플리케이션에서 요청할 수 있는 프로덕션 게시 환경(AEM as a Cloud Service)에 있어야 합니다. 프로덕션 게시 환경에서 지속된 쿼리를 사용하려면 관련 영구 트리를 복제해야 합니다.
 
-지속 쿼리를 게시하는 방법에는 여러 가지가 있습니다.
+* 처음에 쿼리로 새로 작성된 컨텐츠를 검증하기 위해 프로덕션 작성자에게
+* 그런 다음 마지막으로 라이브 소비를 위한 프로덕션 게시
 
-* **복제를 위해 POST 사용**:
+지속형 쿼리를 전송하는 방법에는 몇 가지가 있습니다.
+
+1. 패키지 사용:
+   1. 새 패키지 정의를 만듭니다.
+   1. 구성을 포함합니다(예: `/conf/wknd/settings/graphql/persistentQueries`).
+   1. 패키지를 빌드합니다.
+   1. 패키지를 전송(다운로드/업로드 또는 복제)합니다.
+   1. 패키지를 설치합니다.
+
+1. 복제를 위해 POST 사용:
 
    ```xml
    $ curl -X POST   http://localhost:4502/bin/replicate.json \
@@ -200,20 +220,16 @@ ht-degree: 100%
    -F cmd=activate
    ```
 
-* **패키지 사용**:
-   1. 새 패키지 정의를 만듭니다.
-   1. 구성을 포함합니다(예: `/conf/wknd/settings/graphql/persistentQueries`).
-   1. 패키지를 빌드합니다.
-   1. 패키지를 복제합니다.
+<!--
+1. Using replication/distribution tool:
+   1. Go to the Distribution tool.
+   1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-* **복제/배포 도구 사용**:
-   1. 배포 도구로 이동합니다.
-   1. 구성에 대한 트리 활성화를 선택합니다(예: `/conf/wknd/settings/graphql/persistentQueries`).
+* Using a workflow (via workflow launcher configuration):
+  1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+-->
 
-* **워크플로 사용(워크플로 시작 관리자 구성을 통해)**:
-   1. 다른 이벤트(예: 만들기, 수정 등)에 대한 구성을 복제하는 워크플로 모델을 실행하기 위한 워크플로 시작 관리자 규칙을 정의합니다.
-
-쿼리 구성이 게시되면 동일한 인증 원칙이 게시 끝점을 사용하기만 하여 적용됩니다.
+쿼리 구성이 프로덕션의 게시 환경에 있으면 게시 끝점을 사용하기만 하면 동일한 인증 원칙이 적용됩니다.
 
 >[!NOTE]
 >
@@ -221,12 +237,14 @@ ht-degree: 100%
 >
 >그렇지 않은 경우 실행이 불가능합니다.
 
->[!NOTE]
->
->URL에 있는 모든 세미콜론(“;”)은 인코딩해야 합니다.
->
->예를 들어 지속 쿼리 실행 요청에서처럼:
->
->```xml
->curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
->```
+## 앱에서 사용할 쿼리 URL을 인코딩합니다 {#encoding-query-url}
+
+애플리케이션에서 사용하는 경우 URL의 모든 세미콜론(&quot;;&quot;)을 인코딩해야 합니다.
+
+예를 들어 지속 쿼리 실행 요청에서처럼:
+
+```xml
+curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+```
+
+클라이언트 앱에서 지속형 쿼리를 사용하려면 AEM 헤드리스 클라이언트 SDK를 사용해야 합니다 [JavaScript용 AEM Headless 클라이언트](https://github.com/adobe/aem-headless-client-js).

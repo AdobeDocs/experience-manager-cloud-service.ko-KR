@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1435'
 ht-degree: 8%
 
 ---
@@ -61,10 +61,6 @@ ht-degree: 8%
 
 ### 컨텐트 추가 {#add-content}
 
->[!NOTE]
->
->이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 을 참조하십시오.
-
 에 게시 [!DNL Experience Manager Assets] 게시 목록에 컨텐츠(자산 및 폴더)를 더 추가할 수 있습니다. DAM 저장소의 목록에 자산 또는 폴더를 더 추가할 수 있습니다. 클릭 **[!UICONTROL 컨텐츠 추가]** 단추를 클릭하여 콘텐츠를 더 추가합니다.
 
 폴더에서 여러 자산을 추가하거나 한 번에 여러 폴더를 추가할 수 있습니다. 그러나 여러 폴더에서 자산을 한 번에 추가할 수는 없습니다.
@@ -72,10 +68,6 @@ ht-degree: 8%
 ![컨텐트 추가](assets/manage-publication-add-content.png)
 
 ### 폴더 설정 포함 {#include-folder-settings}
-
->[!NOTE]
->
->이 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 을 참조하십시오.
 
 기본적으로 폴더를 [!DNL Experience Manager Assets] 는 모든 자산, 하위 폴더 및 해당 참조를 게시합니다.
 
