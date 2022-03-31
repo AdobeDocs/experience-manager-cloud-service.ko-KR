@@ -2,10 +2,10 @@
 title: 화면에서 디스플레이 생성 및 관리 as a Cloud Service
 description: 이 페이지에서는 Screens에서 디스플레이를 만들고 관리하는 방법을 as a Cloud Service으로 설명합니다.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
+source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 9%
+source-wordcount: '668'
+ht-degree: 7%
 
 ---
 
@@ -63,7 +63,7 @@ Screens 서비스 공급자에서 디스플레이를 생성하려면 아래 절�
 
 1. 폴더 사이드 레일이 표시됩니다.
 
-![이미지](/help/screens-cloud/assets/display/toggle-rail.png)
+   ![이미지](/help/screens-cloud/assets/display/toggle-rail.png)
 
 1. 선택 **폴더 숨기기** 다시 닫으려고 했습니다.
 
@@ -74,13 +74,62 @@ Screens 서비스 공급자에서 디스플레이를 생성하려면 아래 절�
 1. 디스플레이 인벤토리 보기로 이동합니다.
 1. 현재 폴더에 없는지 확인합니다. 다음 내용이 표시됩니다.
 
-![이미지](/help/screens-cloud/assets/display/verify-view.png)
+   ![이미지](/help/screens-cloud/assets/display/verify-view.png)
 
-참고: **모든 표시** 폴더 측 레일에서 를 선택해야 하며 탐색 표시 탐색은 만 표시됩니다 **표시**.
+   참고: **모든 표시** 폴더 측 레일에서 를 선택해야 하며 탐색 표시 탐색은 만 표시됩니다 **표시**.
 
-1. 오른쪽 상단에 있는 &quot;만들기&quot; 단추를 클릭하고 **폴더** 옵션
+1. 오른쪽 상단에 있는 &quot;만들기&quot; 단추를 클릭하고 **폴더** 선택 사항입니다.
+
+   ![이미지](/help/screens-cloud/assets/display/Createfolder.png)
 
 1. 새 폴더의 제목을 입력하고 **만들기**.
+
+   ![이미지](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## 중첩된 새 폴더를 만드는 방법 {#nested-folder}
+
+1. 디스플레이 인벤토리 보기로 이동합니다.
+
+1. 폴더 측 레일에서 또는 인벤토리 보기에서 원하는 상위 폴더를 선택합니다.
+1. 원하는 상위 폴더가 선택되어 있는지 확인합니다.
+
+   ![이미지](/help/screens-cloud/assets/display/Nestedview.png)
+
+   * 폴더 사이드 레일에서 폴더를 선택해야 합니다.
+   * 탐색 표시 탐색에는 다음 옆에 현재 폴더 이름이 표시됩니다 **표시**.
+
+1. 클릭  **만들기**  오른쪽 상단에서 을(를) 선택하고 **폴더** 선택 사항입니다.
+
+   ![이미지](/help/screens-cloud/assets/display/Createfolder.png)
+
+1. 새 폴더의 제목을 입력하고 **만들기**.
+
+   ![이미지](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## 컨텐츠를 새 폴더로 이동하는 방법 {#move-folder}
+
+컨텐츠를 새 폴더로 이동하여 디스플레이를 더 잘 구성할 수 있습니다.
+
+1. 디스플레이 인벤토리 보기로 이동합니다.
+
+1. 폴더 측 레일에서 또는 인벤토리 보기에서 선택하여 원하는 상위 폴더를 선택합니다.
+
+1. 원하는 상위 폴더를 선택했는지 확인합니다.
+
+![이미지](/help/screens-cloud/assets/display/movetofolder.png)
+
+**참고**: 폴더 사이드 레일에서 폴더를 선택해야 합니다. 또한 탐색 표시 탐색에는 다음 옆에 현재 폴더 이름이 표시됩니다 **표시**.
+
+## 폴더에서 컨텐츠를 삭제하는 방법 {#delete-folder}
+
+모든 폴더 작업은 인벤토리 보기의 선택 작업 표시줄을 통해 액세스할 수 있습니다.
+
+1. 상위 폴더로 이동하거나 사이드 레일에서 선택합니다.
+
+1. 인벤토리 보기에서 삭제할 하위 폴더를 선택하고 비어 있는지 확인합니다.
+
+1. 을(를) 클릭합니다. **삭제** 작업 표시줄에서 작업을 수행합니다. 폴더가 비어 있지 않으면 작업이 비활성화됩니다.
+
 
 ## 다음은 무엇입니까? {#whats-next}
 
