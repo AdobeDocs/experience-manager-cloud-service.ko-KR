@@ -2,16 +2,16 @@
 title: 화면에서 디스플레이 생성 및 관리 as a Cloud Service
 description: 이 페이지에서는 Screens에서 디스플레이를 만들고 관리하는 방법을 as a Cloud Service으로 설명합니다.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 13%
+source-wordcount: '436'
+ht-degree: 9%
 
 ---
 
 # 화면에서 디스플레이 생성 및 관리 as a Cloud Service {#create-displays-screens-cloud}
 
-채널을 게시했으면 이제 Screens 서비스 공급자에서 디스플레이를 만들 차례입니다.
+채널을 게시했으면 이제 스크린 서비스 공급자에서 디스플레이를 만들 차례입니다.
 
 디스플레이는 일반적으로 서로 옆에 배치된 화면의 가상 그룹입니다. 일반적으로 디스플레이는 설치와 관련하여 영구적이며 컨텐츠 작성자가 물리적으로 대응하는 부분이 아닌 논리적 디스플레이로서 작업에 사용하고 항상 참조하는 개체입니다.
 
@@ -19,7 +19,8 @@ ht-degree: 13%
 
 이 문서는 Screens 서비스 공급자에서 디스플레이를 만들고 관리하는 방법을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
 
-* 디스플레이를 만드는 방법을 이해합니다.
+* 디스플레이를 만들고 삭제하는 방법을 이해합니다
+* 디스플레이를 폴더로 구성하는 방법을 이해합니다
 
 ## 디스플레이 생성 단계 {#create-display}
 
@@ -49,6 +50,37 @@ Screens 서비스 공급자에서 디스플레이를 생성하려면 아래 절�
 디스플레이를 선택하고 을(를) 클릭합니다 **삭제** 아래 그림과 같이 패널 아래쪽에서 확인하십시오.
 
 ![이미지](/help/screens-cloud/assets/display/disp-5.png)
+
+## 디스플레이를 폴더로 구성하는 단계 {#organize-display}
+
+## 폴더 레일을 전환하는 방법 {#toggle-rail}
+
+폴더 레일이 모든 폴더를 특정 폴더로 표시하지 않도록 전환할 수 있습니다.
+
+1. 아래에 강조 표시된 버튼을 클릭하여 표시된 인벤토리 보기로 이동합니다.
+
+   ![이미지](/help/screens-cloud/assets/display/display-inventory.png)
+
+1. 폴더 사이드 레일이 표시됩니다.
+
+![이미지](/help/screens-cloud/assets/display/toggle-rail.png)
+
+1. 선택 **폴더 숨기기** 다시 닫으려고 했습니다.
+
+## 새 폴더를 만드는 방법 {#create-folder}
+
+폴더를 만들어 디스플레이를 보다 잘 구성할 수 있습니다.
+
+1. 디스플레이 인벤토리 보기로 이동합니다.
+1. 현재 폴더에 없는지 확인합니다. 다음 내용이 표시됩니다.
+
+![이미지](/help/screens-cloud/assets/display/verify-view.png)
+
+참고: **모든 표시** 폴더 측 레일에서 를 선택해야 하며 탐색 표시 탐색은 만 표시됩니다 **표시**.
+
+1. 오른쪽 상단에 있는 &quot;만들기&quot; 단추를 클릭하고 **폴더** 옵션
+
+1. 새 폴더의 제목을 입력하고 **만들기**.
 
 ## 다음은 무엇입니까? {#whats-next}
 
