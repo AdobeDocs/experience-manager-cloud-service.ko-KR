@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1020'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>30일 이전 버전이 제거됩니다</li>
        <li>최근 30일 동안 최신 5개 버전이 유지됩니다</li>
        <li>위의 규칙에 관계없이 최신 버전이 유지됩니다.</li>
-     </ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 현재 새 환경에 적용되며 2022년 4월 21일에 기존 환경(2022년 3월 14일 이전에 생성된 환경)에 적용됩니다.</td>
+     </ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 이후에 생성된 새 환경에 대해 기본적으로 적용됩니다. 다른 설정이 필요한 경우 고객 지원 티켓을 제출하십시오.</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>복제 감사의 경우 3일 이상의 감사 로그가 제거됩니다</li>
        <li>DAM(자산) 감사의 경우 30일 이상의 감사 로그가 제거됩니다</li>
        <li>페이지 감사의 경우 3일 이상의 로그가 제거됩니다.</li>
-     </ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 현재 새 환경에 적용되며 2022년 4월 21일에 기존 환경(2022년 3월 14일 이전에 생성된 환경)에 적용됩니다.</td>
+     </ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 이후에 생성된 새 환경에 대해 기본적으로 적용됩니다. 다른 설정이 필요한 경우 고객 지원 티켓을 제출하십시오.</td>
    </td>
   </tr>
   <tr>
