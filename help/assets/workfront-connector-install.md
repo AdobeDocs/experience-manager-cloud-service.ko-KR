@@ -4,9 +4,9 @@ description: ' 설치  [!DNL Workfront for Experience Manager enhanced connector
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 34f3cf925a3ea58de176521be459a61f4317eec3
+source-git-commit: 7ffac94eace3eaa276f0ad1705e0b32c886c795c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '564'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,8 @@ ht-degree: 1%
 1. 다음 대상 파이프라인 실행 [cloud Manager에 변경 사항 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. 시스템 사용자 구성을 만들려면 `wf-workfront-users` in [!DNL Experience Manager] 사용자 그룹 및 권한 할당 `jcr:all` to `/content/dam`. 시스템 사용자 `workfront-tools` 는 자동으로 만들어지며 필요한 권한은 자동으로 관리됩니다. 의 모든 사용자 [!DNL Workfront] 향상된 커넥터를 사용하는 사용자는 자동으로 이 그룹의 일부로 추가됩니다.
+
+을(를) 업데이트하기 위한 정보 [!DNL Workfront for Experience Manager enhanced connector] 이전 버전에서 최신 버전까지 [여기](update-workfront-enhanced-connector.md).
 
 ## 다음 사이의 연결 구성 [!DNL Experience Manager] 로서의 [!DNL Cloud Service] 및 [!DNL Workfront] {#configure-connection}
 
