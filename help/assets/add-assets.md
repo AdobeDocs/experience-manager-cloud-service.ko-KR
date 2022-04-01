@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2943'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | 크리에이티브 및 마케터가 지원되는 내에서 자산을 사용할 때 유용합니다 [!DNL Creative Cloud] 데스크탑 앱. | 크리에이티브, 마케터 |
 | [자산 일괄 수집](#asset-bulk-ingestor) | 대규모 마이그레이션 및 종종 대량 섭취에 권장됩니다. 지원되는 데이터 저장소에 대해서만 가능합니다. | 관리자, 개발자 |
 
-## 자산 업로드 {#upload-assets}
+## 에셋 업로드 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -116,11 +116,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 파일 이름 처리 및 금지된 문자 {#filename-handling}
 
-[!DNL Experience Manager Assets] 에서는 파일 이름에 금지된 문자가 있는 자산을 업로드하지 못하도록 합니다. 허용되지 않는 문자 이상이 포함된 파일 이름의 자산을 업로드하려고 하면, [!DNL Assets] 경고 메시지를 표시하고 이러한 문자를 제거하거나 허용되는 이름으로 업로드할 때까지 업로드를 중지합니다.
+[!DNL Experience Manager Assets] 파일 이름에 사용할 수 없는 문자가 있는 자산을 업로드하지 못하도록 합니다. 허용되지 않는 문자 이상을 포함하는 파일 이름이 있는 자산을 업로드하려고 하면, [!DNL Assets] 경고 메시지를 표시하고 이러한 문자를 제거하거나 허용되는 이름으로 업로드할 때까지 업로드를 중지합니다.
 
 조직에 대한 특정 파일 이름 지정 규칙에 맞추기 위해 [!UICONTROL 자산 업로드] 대화 상자에서는 업로드하는 파일의 긴 이름을 지정할 수 있습니다. 다음(공백으로 구분된 목록) 문자는 지원되지 않습니다.
 
-* 자산 파일 이름에 잘못된 문자가 있습니다. `* / : [ \\ ] | # % { } ? &`
+* 자산 이름에 잘못된 문자: `* / : [ \\ ] | # % { } ? &`
 * 자산 폴더 이름에 잘못된 문자가 있습니다. `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## 자산 일괄 업로드 {#bulk-upload}
@@ -147,7 +147,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ![대량 수집 도구](assets/bulk-ingestion.png)
 
-#### 전제 조건 {#prerequisites-bulk-ingestion}
+**전제 조건**
 
 이 기능을 사용하려면 Azure 또는 AWS의 외부 저장소 계정 또는 버킷이 필요합니다.
 
@@ -155,7 +155,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >저장소 계정 컨테이너 또는 버킷을 비공개로 만들고 승인된 요청에서만 연결을 허용합니다. 그러나 송신 네트워크 연결에 대한 추가 제한 사항은 지원되지 않습니다.
 
-#### 대량 가져오기 도구 구성 {#configure-bulk-ingestor-tool}
+### 대량 가져오기 도구 구성 {#configure-bulk-ingestor-tool}
 
 대량 가져오기 도구를 구성하려면 다음 단계를 수행합니다.
 
@@ -187,31 +187,108 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 클릭 **[!UICONTROL 저장]** 구성을 저장합니다.
 
-#### 대량 가져오기 도구 구성 관리 {#manage-bulk-import-configuration}
+### 대량 가져오기 도구 구성 관리 {#manage-bulk-import-configuration}
 
 벌크 가져오기 도구 구성을 만든 후 자산을 Experience Manager 인스턴스에 일괄 수집하기 전에 구성을 평가하는 작업을 수행할 수 있습니다. 에서 사용할 수 있는 구성을 선택합니다. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 벌크 가져오기]** 대량 가져오기 도구 구성을 관리하는 사용 가능한 옵션을 보려면
 
-##### 구성 편집 {#edit-configuration}
+### 구성 편집 {#edit-configuration}
 
 구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 편집]** 구성 세부 사항을 수정하려면 편집 작업을 수행하는 동안에는 구성 및 데이터 소스 가져오기 제목을 편집할 수 없습니다.
 
-##### 구성 삭제 {#delete-configuration}
+### 구성 삭제 {#delete-configuration}
 
 구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 삭제]** 대량 가져오기 구성을 삭제하려면
 
-##### 데이터 소스에 대한 연결 유효성 검사 {#validate-connection}
+### 데이터 소스에 대한 연결 유효성 검사 {#validate-connection}
 
 구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL check]** 데이터 소스에 대한 연결의 유효성을 검사하려면 연결에 성공하면 Experience Manager에 다음 메시지가 표시됩니다.
 
 ![대량 가져오기 성공 메시지](assets/bulk-import-success-message.png)
 
-##### 대량 가져오기 작업에 대한 테스트 실행 호출 {#invoke-test-run-bulk-import}
+### 대량 가져오기 작업에 대한 테스트 실행 호출 {#invoke-test-run-bulk-import}
 
 구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 연습 실행]** 대량 가져오기 작업에 대한 테스트 실행을 호출하려면 Experience Manager은 대량 가져오기 작업에 대한 다음 세부 정보를 표시합니다.
 
 ![시험 실행 결과](assets/dry-assets-result.png)
 
-##### 1회 또는 반복 대량 가져오기를 예약합니다. {#schedule-bulk-import}
+### 벌크 가져오기 중 파일 이름 처리 {#filename-handling-bulkimport}
+
+자산 또는 폴더를 일괄적으로 가져오는 경우 [!DNL Experience Manager Assets] 가져오기 소스에 있는 모든 구조를 가져옵니다. [!DNL Experience Manager] 에서는 자산 및 폴더 이름에 특수 문자의 기본 제공 규칙을 따르므로 이러한 파일 이름은 정리해야 합니다. 폴더 이름과 자산 이름 모두에 대해 사용자가 정의한 제목은 변경되지 않고 그대로 유지되며 `jcr:title`.
+
+벌크 가져오기 중에 [!DNL Experience Manager] 기존 폴더를 찾아 자산 및 폴더를 다시 가져오지 않고 가져오기가 발생하는 상위 폴더에 적용된 기밀 정보 처리 규칙을 확인합니다. 상위 폴더에 정리 규칙이 적용되는 경우 가져오기 원본에 동일한 규칙이 적용됩니다. 새 가져오기의 경우 자산 및 폴더의 파일 이름을 관리하기 위해 다음 산화 규칙이 적용됩니다.
+
+**일괄 가져오기에서 자산 이름 처리**
+
+자산 파일 이름의 경우 API를 사용하여 Jcr 이름 및 경로가 정리됩니다. `JcrUtil.escapeIllegalJcrChars`.
+
+* 유니코드를 그대로 유지합니다
+* 특수 문자를 URL 이스케이프 코드로 바꿉니다(예: ). `new*asset.png` 업데이트됨: `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**벌크 가져오기에서 폴더 이름 처리**
+
+폴더 파일 이름의 경우 API를 사용하여 Jcr 이름 및 경로가 정리됩니다. `JcrUtil.createValidName`.
+
+* 대소문자를 소문자로 변환
+* 유니코드 그대로 유지
+* 특수 문자를 대시(&#39;-&#39;)로 바꿉니다. 예를 들면 다음과 같습니다. `new*asset.png` 업데이트됨: `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### 1회 또는 반복 대량 가져오기를 예약합니다. {#schedule-bulk-import}
 
 1회 또는 반복 대량 가져오기를 예약하려면 다음 단계를 실행합니다.
 
@@ -222,7 +299,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    ![일괄 수집 또는 작업 예약](assets/bulk-ingest-schedule1.png)
 
 
-##### 자산 대상 폴더 보기 {#view-assets-target-folder}
+#### 자산 대상 폴더 보기 {#view-assets-target-folder}
 
 구성을 선택하고 을(를) 클릭합니다 **[!UICONTROL 자산 보기]** 일괄 가져오기 작업을 실행한 후 자산을 가져올 자산 대상 위치를 보려면
 
@@ -301,7 +378,7 @@ Experience Manager에 작업 기록이 표시됩니다. [대량 가져오기 작
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [정보 [!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [ [!DNL Adobe Asset Link] 정보](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [자산 업로드에 대한 기술 참조](developer-reference-material-apis.md#asset-upload)
 

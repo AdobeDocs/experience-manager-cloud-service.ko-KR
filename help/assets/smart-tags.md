@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '2411'
 ht-degree: 5%
@@ -124,6 +124,7 @@ ht-degree: 5%
    >[!NOTE]
    >
    >태그 구조를 **[!UICONTROL 이름]** (알파벳 순서), **[!UICONTROL 생성됨]** 날짜 또는 **[!UICONTROL 수정됨]** 날짜.
+
 
 1. 에서 **[!UICONTROL 자산 선택]** 대화 상자 **[!UICONTROL 자산 추가]** 를 반환합니다. DAM 저장소에서 검색하거나 리포지토리를 찾아 10개 이상 50개 이상의 이미지를 선택합니다. 폴더가 아니라 자산을 선택합니다. 이미지를 선택하면 **[!UICONTROL 선택]**.
 

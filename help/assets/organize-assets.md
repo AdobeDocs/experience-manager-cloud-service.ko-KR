@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 1%
@@ -73,17 +73,6 @@ Date24/08/2021
 * 자산이 이미 게시된 경우 [!DNL Experience Manager] 자산을 다른 폴더로 이동하고 새 위치에서 다시 게시하려면 다음을 수행하십시오. 게시된 원래 자산 위치는 새로 다시 게시된 자산과 함께 계속 사용할 수 있습니다. 그러나 원래 게시된 자산은 입니다 *분실* to [!DNL Experience Manager] 게시 취소할 수 없습니다. 따라서 가장 좋은 방법은 먼저 자산을 게시 취소한 다음 다른 폴더로 이동하는 것입니다.
 
 ## 태그를 사용하여 자산 구성 {#use-tags-to-organize-assets}
-
-<!--
-Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
-
-[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
-
-For more information, see the following articles:
-
-* [Edit asset metadata](meta-edit.md)
-* [Smart Tags in Assets](smart-tags.md)
--->
 
 자산에 태그를 추가하면 검색 중에 보다 쉽게 검색할 수 있고, 검색 결과를 사용하여 컬렉션을 만들고, 일부 자산에 대한 검색 등급을 높이고, 자산 검색을 위해 Adobe Sensei의 AI 알고리즘을 적용할 수 있습니다.
 
