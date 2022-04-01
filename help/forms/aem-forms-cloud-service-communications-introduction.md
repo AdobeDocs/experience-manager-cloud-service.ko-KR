@@ -2,16 +2,14 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 319f92e04998c484c4b1834973c231be28aa23c7
+source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
 
 # AEM Forms as a Cloud Service 통신 사용 {#frequently-asked-questions}
-
-**문서 조작 API는 시험판 단계에 있으며 실제 릴리스 전에 변경될 수 있습니다.**
 
 커뮤니케이션 기능을 사용하면 비즈니스 서신, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 또는 환영 키트와 같은 브랜드 승인, 개인화 및 표준화된 문서를 만들 수 있습니다.
 
@@ -97,8 +95,7 @@ An interactive PDF document contains various elements that constitute a form. Th
 
 When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
-
-## (시험판) 문서 조작
+## 문서 조작
 
 통신 문서 조작 API를 사용하여 PDF 문서를 결합, 재정렬 및 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. DDX 문서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
 
@@ -164,7 +161,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-
 <!--
 
 Communication help you combine a template and XML data to generate print documents in various formats. The service allows you to generate documents in synchronous and batch modes. The APIs enables you to create applications that let you:
@@ -213,8 +209,6 @@ Communications APIs can create separate documents for each record within an XML 
 The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
 
 The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
-
-
 
 ### Processing batch data to create multiple documents {#processing-batch-data-to-create-multiple-documents}
 

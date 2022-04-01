@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - 통신
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,9 @@ ht-degree: 0%
 
 # 동기 처리 사용 {#sync-processing-introduction}
 
-커뮤니케이션을 사용하면 비즈니스 서신, 문서, 명세서, 청구 처리 편지, 혜택 공지, 청구 처리 편지, 월별 청구서 및 환영 키트와 같은 브랜드 지향적이고 개인화된 커뮤니케이션을 작성, 조합 및 제공할 수 있습니다. Communications API를 사용하여 템플릿(XFA 또는 PDF)을 고객 데이터와 결합하여 PDF, PS, PCL, DPL, IPL 및 ZPL 형식으로 문서를 생성할 수 있습니다.
+커뮤니케이션 기능을 사용하면 비즈니스 서신, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 또는 환영 키트와 같은 브랜드 승인, 개인화 및 표준화된 문서를 만들 수 있습니다.
 
-각 템플릿에 대해 하나 이상의 템플릿과 여러 개의 XML 데이터 레코드가 있는 시나리오를 생각해 보십시오. Communications API를 사용하여 각 레코드에 대한 인쇄 문서를 생성할 수 있습니다. <!-- You can also combine the records into a single document. --> 그 결과는 비대화형 PDF 문서입니다. 비대화형 PDF 문서에서는 사용자가 해당 필드에 데이터를 입력할 수 없습니다.
-
+이 기능은 문서를 생성하고 조작하는 API를 제공합니다. 필요에 따라 문서를 생성 또는 조작하거나 배치 작업을 만들어 정의된 간격으로 여러 문서를 생성할 수 있습니다.
 
 통신은 주문형 및 예약된 문서 생성을 위한 API를 제공합니다. 예약된 문서 생성을 위해 온디맨드 및 배치 API(비동기 API)에 동기 API를 사용할 수 있습니다.
 
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 ## 동기 작업 사용 {#batch-operations}
 
-동기 작업은 선형 방식으로 문서를 생성하는 프로세스입니다. 이 서비스는 두 가지 유형의 인증을 지원합니다.
+동기 작업은 문서를 선형 방식으로 생성하거나 조작하는 프로세스입니다. 이 서비스는 두 가지 유형의 인증을 지원합니다.
 
 * **기본 인증**: 기본 인증은 HTTP 프로토콜에 빌드된 간단한 인증 체계입니다. 클라이언트는 Basic 다음에 공백 및 base64로 인코딩된 문자열 username:password를 포함하는 Authorization 헤더를 사용하여 HTTP 요청을 보냅니다. 예를 들어, 클라이언트가 Basic을 전송하는 관리자/관리자로 승인합니다 [base64로 인코딩된 문자열 사용자 이름]: [base64로 인코딩된 문자열 암호].
 
@@ -41,9 +40,9 @@ ht-degree: 0%
    >
    >Adobe은 프로덕션 환경에서 토큰 기반 인증을 사용하는 것을 권장합니다.
 
-### 전제 조건 {#pre-requisites}
+### (문서 생성 API만 해당)사전 요구 사항 {#pre-requisites}
 
-동기 API를 사용하려면 다음 조건을 충족해야 합니다.
+문서 생성에 동기 API를 사용하려면 다음 조건을 충족해야 합니다.
 
 * PDF 또는 XDP 템플릿
 * [템플릿과 병합할 데이터](#form-data)
@@ -73,4 +72,3 @@ ht-degree: 0%
 >[!NOTE]
 >
 >forms-users 그룹의 구성원만 Communications API에 액세스할 수 있습니다.
-
