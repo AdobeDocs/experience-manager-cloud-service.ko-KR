@@ -1,19 +1,22 @@
 ---
 title: GraphQL에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달
-description: 헤드리스 컨텐츠 전달을 위해 GraphQL에서 AEM 컨텐츠 조각을 사용하는 방법을 알아봅니다.
-feature: Content Fragments
+description: GraphQL에서 헤드리스 컨텐츠 전달을 위해 컨텐츠 조각을 사용하여 AEM 헤드리스 CMS를 구현하는 기본 개념을 알아봅니다.
+feature: Content Fragments, GraphQL API
+topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: f296e8cbc12c9426e0fefe6f5342374ba9b21291
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 18%
+source-wordcount: '739'
+ht-degree: 17%
 
 ---
 
 # GraphQL에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 전달 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-AEM(Adobe Experience Manager) as a Cloud Service을 사용하여 AEM GraphQL API(표준 GraphQL을 기반으로 하는 사용자 정의 구현)와 함께 컨텐츠 조각을 사용하여 애플리케이션에서 사용할 구조화된 컨텐츠를 헤드리도록 할 수 있습니다. 단일 API 쿼리를 사용자 지정하는 기능을 사용하면 렌더링하려는 특정 콘텐츠(단일 API 쿼리에 대한 응답)를 검색하고 전달할 수 있습니다.
+컨텐츠 조각 및 GraphQL API를 사용하여 AEM(Adobe Experience Manager) as a Cloud Service CMS(Headless Content Management System)로 사용할 수 있습니다.
+
+이 작업은 AEM GraphQL API(표준 GraphQL을 기반으로 하는 사용자 정의 구현)와 함께 컨텐츠 조각을 사용하여 애플리케이션에서 사용할 구조화된 컨텐츠를 헤드리도록 합니다. 단일 API 쿼리를 사용자 지정하는 기능을 사용하면 렌더링하려는 특정 콘텐츠(단일 API 쿼리에 대한 응답)를 검색하고 전달할 수 있습니다.
 
 >[!NOTE]
 >
