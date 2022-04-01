@@ -2,12 +2,13 @@
 title: 컨텐츠 번역(AEM 헤드리스)
 description: 번역 커넥터와 규칙을 사용하여 헤드리스 콘텐츠를 번역합니다.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
+
 
 # 컨텐츠 번역 {#translate-content}
 
@@ -21,6 +22,10 @@ AEM 헤드리스 번역 여정의 이전 문서에서, [번역 규칙 구성](tr
 * 고유한 번역 규칙을 정의할 수 있습니다.
 
 커넥터와 번역 규칙이 설정되었으므로 이 문서를 통해 헤드리스 콘텐츠를 번역하는 다음 단계를 안내합니다.
+
+>[!NOTE]
+>
+>건너뛴 경우 [번역 규칙 구성](translation-rules.md) AEM as a Cloud Service 사전 릴리스 채널에 있으므로 이 여정의 단계는 이 문서에 설명된 대로 번역 규칙을 걱정할 필요가 없습니다.
 
 ## 목표 {#objective}
 

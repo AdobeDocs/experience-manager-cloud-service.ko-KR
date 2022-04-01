@@ -4,9 +4,9 @@ description: 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1292'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,22 @@ ht-degree: 1%
 >[!TIP]
 >
 >콘텐츠를 번역할 신규 분은 [사이트 번역 여정,](/help/journey-sites/translation/overview.md) AEM 또는 번역 경험이 없는 사용자에게 이상적인 AEM의 강력한 번역 도구를 사용하여 AEM Sites 컨텐츠를 번역하는 안내식 경로입니다.
+
+## 컨텐츠 조각 및 번역 규칙 {#content-fragments}
+
+이 문서에 설명된 번역 규칙은 **번역을 위한 컨텐츠 모델 필드 활성화** 옵션이에서 활성화되지 않았습니다. [번역 통합 프레임워크 구성 수준.](integration-framework.md#assets-configuration-properties)
+
+만약 **번역을 위한 컨텐츠 모델 필드 활성화** 옵션이 활성화되어 있으면 AEM에서 **번역 가능** 필드 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#properties) 를 클릭하여 필드를 번역할지 여부를 결정합니다. 이 경우 [번역 규칙](rules.md) 이 대체되었습니다.
+
+컨텐츠 조각을 번역하기 위해 번역 규칙을 사용하려면 **번역을 위한 컨텐츠 모델 필드 활성화** 번역 통합 프레임워크 구성의 옵션을 비활성화해야 합니다.
+
+>[!NOTE]
+>
+>이 기능은 사전 릴리스 채널에서 사용할 수 있습니다.
+> 
+>자세한 내용은 [사전 릴리스 채널 설명서](/help/release-notes/prerelease.md#enable-prerelease) 을 참조하십시오.
+
+## 개요 {#overview}
 
 페이지 및 자산은 JCR 저장소에 노드로 표시됩니다. 추출되는 컨텐츠는 노드의 하나 이상의 속성 값입니다. 번역 규칙은 추출할 컨텐츠가 포함된 속성을 식별합니다.
 

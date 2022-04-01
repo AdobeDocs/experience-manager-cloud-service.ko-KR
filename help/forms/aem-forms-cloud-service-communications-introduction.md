@@ -2,9 +2,9 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1138'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 문서 조작
 
-통신 문서 조작 API를 사용하여 PDF 문서를 결합, 재정렬 및 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. DDX 문서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
+통신 문서 조작 API를 사용하여 PDF 문서를 결합, 재정렬 및 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. 다음 [DDX 문서](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 소스 문서를 사용하여 필수 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
 
 ### PDF 문서 조합
 
