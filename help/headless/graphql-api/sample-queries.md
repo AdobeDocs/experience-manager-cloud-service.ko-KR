@@ -4,7 +4,7 @@ description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐�
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -1576,7 +1576,7 @@ query {
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | 스티브 잡스 | Joe Smith<br>Abe Lincoln |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### 개인 {#fragment-person}
 
@@ -1596,7 +1596,7 @@ query {
 | 단축키/ID | 제목 |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | 가메스타르 |
+|  GS | Gamestar |
 |  OSC | Oscar |
 
 #### 도시 {#fragment-city}
