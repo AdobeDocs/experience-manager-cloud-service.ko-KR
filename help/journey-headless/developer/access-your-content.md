@@ -2,7 +2,7 @@
 title: AEM 배달 API를 통해 콘텐츠에 액세스하는 방법
 description: AEM 헤드리스 개발자 여정의 이 부분에서 GraphQL 쿼리를 사용하여 컨텐츠 조각 컨텐츠에 액세스하는 방법을 알아봅니다.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 8%
@@ -272,7 +272,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 쿼리는 GraphiQL 인터페이스에 입력할 수 있습니다. 예를 들면 다음과 같습니다.
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL 인터페이스](assets/graphiql-interface.png "GraphiQL 인터페이스")
 

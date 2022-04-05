@@ -1,17 +1,17 @@
 ---
-title: AEM 도입으로 헤드리스를 위한 컨텐츠 모델링
-description: Adobe Experience Manager as a Cloud Service의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법을 소개합니다.
+title: Headless CMS로서의 AEM 컨텐츠 모델링 - 소개
+description: Adobe Experience Manager as a Cloud Service의 기능을 헤드리스 CMS로 사용하여 프로젝트에 대한 컨텐츠를 모델링하는 방법을 소개합니다.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
-# AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개 {#architect-headless-introduction}
+# Headless CMS로서의 AEM 컨텐츠 모델링 - 소개 {#architect-headless-introduction}
 
-의 이 부분에서 [AEM Headless Content Architect 여정](overview.md), Adobe Experience Manager (AEM) as a Cloud Service을 사용하여 헤드리스 컨텐츠 전달을 위한 컨텐츠 모델링을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
+의 이 부분에서 [AEM Headless Content Architect 여정](overview.md)에서는 Adobe Experience Manager(AEM) as a Cloud Service as a Headless CMS를 사용할 때 컨텐츠 모델링을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
 
 이 문서는 헤드리스 컨텐츠 전달, AEM에서 헤드리스를 지원하는 방법 및 헤드리스를 위해 컨텐츠를 모델링하는 방법을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
 

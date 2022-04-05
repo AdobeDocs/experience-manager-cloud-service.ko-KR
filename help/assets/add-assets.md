@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e842097241f93899e1aade3259563d281c7a6efa
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2948'
 ht-degree: 1%
 
 ---
@@ -219,9 +219,9 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 **일괄 가져오기에서 자산 이름 처리**
 
-자산 파일 이름의 경우 API를 사용하여 Jcr 이름 및 경로가 정리됩니다. `JcrUtil.escapeIllegalJcrChars`.
+자산 파일 이름의 경우 JCR 이름 및 경로는 API를 사용하여 정리됩니다. `JcrUtil.escapeIllegalJcrChars`.
 
-* 유니코드를 그대로 유지합니다
+* 유니코드 문자는 변경되지 않습니다
 * 특수 문자를 URL 이스케이프 코드로 바꿉니다(예: ). `new asset.png` 업데이트됨: `new%20asset.png`:
 
    ```
@@ -245,10 +245,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 **벌크 가져오기에서 폴더 이름 처리**
 
-폴더 파일 이름의 경우 API를 사용하여 Jcr 이름 및 경로가 정리됩니다. `JcrUtil.createValidName`.
+폴더 파일 이름의 경우 JCR 이름 및 경로는 API를 사용하여 정리됩니다. `JcrUtil.createValidName`.
 
-* 대소문자를 소문자로 변환
-* 유니코드 그대로 유지
+* 대문자는 소문자로 변환됩니다
+* 유니코드 문자는 변경되지 않습니다
 * 특수 문자를 대시(&#39;-&#39;)로 바꿉니다. 예를 들면 다음과 같습니다. `new asset.png` 업데이트됨: `new-asset.png`:
 
    ```

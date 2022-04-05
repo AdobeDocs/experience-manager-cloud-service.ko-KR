@@ -3,7 +3,7 @@ title: AEM으로 GraphQL을 사용하는 방법 배우기 - 샘플 콘텐츠 및
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 6d5cdc4b606692f059fe3a6b7a29544f5bc0fa11
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 100%
@@ -40,7 +40,7 @@ GraphQL 쿼리를 시작하고 GraphQL 쿼리가 AEM 콘텐츠 조각과 함께 
 >
 >인스턴스에 따라 쿼리를 제출하고 테스트하기 위해 [AEM GraphQL API에 포함되어 있는 GraphiQL 인터페이스](/help/headless/graphql-api/graphiql-ide.md)에 직접 액세스할 수 있습니다.
 >
->예를 들어`http://localhost:4502/content/graphiql.html`
+>예를 들어`http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >
