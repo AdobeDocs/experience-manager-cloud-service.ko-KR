@@ -2,9 +2,9 @@
 title: UI 테스트
 description: 사용자 지정 UI 테스트는 사용자 지정 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택 기능입니다
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1338'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,6 @@ ht-degree: 1%
 >abstract="사용자 지정 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택 기능입니다. UI 테스트는 Java 및 Maven, Node 및 WebDriver.io와 같은 다양한 언어 및 프레임워크(또는 Selenium을 기반으로 구축된 기타 프레임워크 및 기술)를 사용할 수 있도록 Docker 이미지에 패키지된 Selenium 기반 테스트입니다."
 
 사용자 지정 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택 기능입니다.
-
->[!NOTE]
-> 이 페이지에 설명된 대로 UI 테스트를 사용하려면 2021년 2월 10일 이전에 만들어진 단계 및 프로덕션 파이프라인을 업데이트해야 합니다.
-> 자세한 내용은 [Cloud Manager의 CI-CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 파이프라인 구성에 대한 정보입니다.
 
 ## 개요 {#custom-ui-testing}
 
@@ -62,12 +58,9 @@ Cloud Manager에서 UI 테스트를 빌드하고 실행하려면 저장소에 �
 
 >[!NOTE]
 >
->프로젝트에 이 줄이 포함되어 있지 않으면 이 파일을 편집하여 UI 테스트를 수행해야 합니다. 파일에 편집하지 말라는 줄이 있다면 해당 조언을 무시하십시오.
-
->[!NOTE]
+>프로젝트에 이 줄이 포함되어 있지 않으면 파일을 편집하여 UI 테스트를 수행해야 합니다.
 >
->이 섹션에 설명된 대로 UI 테스트를 사용하려면 2021년 2월 10일 전에 생성된 프로덕션 파이프라인을 업데이트해야 합니다. 이것은 사용자가 프로덕션 파이프라인을 편집하고 클릭해야 함을 의미합니다 **저장** 변경하지 않은 경우에도 UI에서 변경할 수 있습니다.
->을(를) 참조하십시오. [CI-CD 파이프라인 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) 파이프라인 구성에 대해 자세히 알아보십시오 .
+>파일에 편집하지 말라는 줄이 포함되어 있을 수 있습니다. 이는 옵트인 UI 테스트가 도입되고 클라이언트의 파일이 파일을 편집하지 않았기 때문에, 프로젝트에 도입되기 때문입니다. 이것은 무시해도 된다.
 
 ## UI 테스트 작성 {#building-ui-tests}
 
@@ -177,7 +170,7 @@ Docker 빌드 컨텍스트가 포함된 아카이브는 Cloud Manager에 의해 
 | 변수 | 예 | 설명 |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 서버의 URL |
-| `SELENIUM_BROWSER` | `chrome`, `firefox` | Selenium 서버에서 사용하는 브라우저 구현 |
+| `SELENIUM_BROWSER` | `chrome` | Selenium 서버에서 사용하는 브라우저 구현 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 작성자 인스턴스의 URL |
 | `AEM_AUTHOR_USERNAME` | `admin` | AEM 작성자 인스턴스에 로그인할 사용자 이름 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | AEM 작성자 인스턴스에 로그인할 암호입니다. |
@@ -198,7 +191,7 @@ Selenium의 상태 끝점이 긍정적인 응답으로 응답하면 테스트가
 
 ### 테스트 보고서 생성 {#generate-test-reports}
 
-Docker 이미지는 JUnit XML 형식으로 테스트 보고서를 생성하고 환경 변수에 지정된 경로에 저장해야 합니다 `REPORTS_PATH`. JUnit XML 형식은 테스트 결과를 보고하는 데 널리 사용되는 형식입니다. Docker 이미지가 Java 및 Maven을 사용하는 경우 [Maven Suresfire 플러그인](https://maven.apache.org/surefire/maven-surefire-plugin/) 그리고 [Maven Failsafe 플러그인](https://maven.apache.org/surefire/maven-failsafe-plugin/).
+Docker 이미지는 JUnit XML 형식으로 테스트 보고서를 생성하고 환경 변수에 지정된 경로에 저장해야 합니다 `REPORTS_PATH`. JUnit XML 형식은 테스트 결과를 보고하는 데 널리 사용되는 형식입니다. Docker 이미지가 Java 및 Maven을 사용하는 경우 다음과 같은 표준 테스트 모듈입니다 [Maven Suresfire 플러그인](https://maven.apache.org/surefire/maven-surefire-plugin/) 및 [Maven Failsafe 플러그인](https://maven.apache.org/surefire/maven-failsafe-plugin/) 은 즉시 이러한 보고서를 생성할 수 있습니다.
 
 다른 프로그래밍 언어나 테스트 러너와 함께 Docker 이미지가 구현된 경우 선택한 도구에서 JUnit XML 보고서를 생성하는 방법을 확인하십시오.
 
