@@ -1,18 +1,18 @@
 ---
 title: AEM Headless Developer 여정
-description: AEM Headless CMS 설명서. AEM의 강력하고 유연한 헤드리스 기능과 각각의 능력, 그리고 귀하의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 받으십시오.
+description: CMS(헤드리스 컨텐츠 관리 시스템)로 사용 중일 때 Adobe Experience Manager(AEM) as a Cloud Service을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오. 이 여정은 첫 번째 헤드리스 애플리케이션을 개발하는 데 필요한 모든 정보를 제공합니다.
 landing-page-description: AEM의 헤드리스 기능과 각각의 능력, 그리고 귀하의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 받으십시오.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
+source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 11%
+source-wordcount: '1277'
+ht-degree: 8%
 
 ---
 
 # AEM Headless Developer 여정 {#aem-headless-developer-journey}
 
-AEM의 강력하고 유연한 헤드리스 기능, 그리고 첫 번째 헤드리스 개발 프로젝트에서 이러한 기능을 활용하는 방법을 통해 안내식 여정을 살펴보십시오. 이 여정은 첫 번째 헤드리스 애플리케이션을 개발하는 데 필요한 모든 AEM 헤드리스 설명서를 제공합니다.
+CMS(헤드리스 컨텐츠 관리 시스템)로 사용 중일 때 Adobe Experience Manager(AEM) as a Cloud Service을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오. 강력하고 유연한 헤드리스 기능, 그리고 첫 번째 헤드리스 개발 프로젝트에서 이러한 기능을 활용하는 방법에 대해 알아볼 수 있습니다. 이 여정은 첫 번째 헤드리스 애플리케이션을 개발하는 데 필요한 모든 정보를 제공합니다.
 
 ## 소개 {#introduction}
 
