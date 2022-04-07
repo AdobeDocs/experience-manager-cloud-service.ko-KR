@@ -3,9 +3,9 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 프로덕션 환경에 빌드 및 배포하도록 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ ht-degree: 0%
    >문서를 참조하십시오 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) cloud Manager에서 저장소를 추가하고 관리하는 방법을 알아봅니다.
 
    * **Git 분기** - 이 옵션은 선택한 파이프라인의 어느 분기에서 코드를 검색해야 하는지를 정의합니다.
+      * 분기 이름의 처음 몇 문자를 입력하고 이 필드의 자동 완성 기능이 선택한 데 도움이 되는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 리포지토리의 분기에서 경로를 정의합니다.
    * **프로덕션에 배포하기 전에 일시 정지** - 이 옵션은 프로덕션에 배포하기 전에 파이프라인을 일시 중지합니다.
 
@@ -104,6 +105,7 @@ ht-degree: 0%
    >문서를 참조하십시오 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) cloud Manager에서 저장소를 추가하고 관리하는 방법을 알아봅니다.
 
    * **Git 분기** - 이 옵션은 선택한 파이프라인의 어느 분기에서 코드를 검색해야 하는지를 정의합니다.
+      * 분기 이름의 처음 몇 문자를 입력하고 이 필드의 자동 완성 기능이 선택한 데 도움이 되는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 리포지토리의 분기에서 경로를 정의합니다.
    * **프로덕션에 배포하기 전에 일시 정지** - 이 옵션은 프로덕션에 배포하기 전에 파이프라인을 일시 중지합니다.
    * **예약됨** - 이 옵션을 사용하면 예약된 프로덕션 배포를 활성화할 수 있습니다.
@@ -150,6 +152,7 @@ ht-degree: 0%
    >문서를 참조하십시오 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) cloud Manager에서 저장소를 추가하고 관리하는 방법을 알아봅니다.
 
    * **Git 분기** - 이 옵션은 선택한 파이프라인의 어느 분기에서 코드를 검색해야 하는지를 정의합니다.
+      * 분기 이름의 처음 몇 문자를 입력하고 이 필드의 자동 완성 기능이 선택한 데 도움이 되는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 리포지토리의 분기에서 경로를 정의합니다.
       * 웹 계층 구성 파이프라인의 경우 일반적으로 다음을 포함하는 경로입니다 `conf.d`, `conf.dispatcher.d`, 및 `opt-in` 디렉토리.
       * 예를 들어, 프로젝트 구조가 [AEM 프로젝트 원형,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 경로는 다음과 같습니다. `/dispatcher/src`.

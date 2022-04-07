@@ -3,9 +3,9 @@ title: 비프로덕션 파이프라인 구성
 description: 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 0%
    >문서를 참조하십시오 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) cloud Manager에서 저장소를 추가하고 관리하는 방법을 알아봅니다.
 
    * **Git 분기** - 이 옵션은 선택한 파이프라인의 어느 분기에서 코드를 검색해야 하는지를 정의합니다.
+      * 분기 이름의 처음 몇 문자를 입력하고 이 필드의 자동 완성 기능이 선택한 데 도움이 되는 일치하는 분기를 찾습니다.
    * **코드 위치** - 이 옵션은 파이프라인이 코드를 검색해야 하는 선택한 리포지토리의 분기에서 경로를 정의합니다.
 
    ![프런트엔드 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -102,7 +103,8 @@ ht-degree: 0%
    >문서를 참조하십시오 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) cloud Manager에서 저장소를 추가하고 관리하는 방법을 알아봅니다.
 
    * **Git 분기** - 이 옵션은 선택한 파이프라인의 어느 분기에서 코드를 검색해야 하는지를 정의합니다.
-   * **웹 계층 구성 무시** -
+      * 분기 이름의 처음 몇 문자를 입력하고 이 필드의 자동 완성 기능이 선택한 데 도움이 되는 일치하는 분기를 찾습니다.
+   * **웹 계층 구성 무시** - 이 확인란을 선택하면 파이프라인이 웹 계층 구성을 배포하지 않습니다.
 
    ![전체 스택 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
