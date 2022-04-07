@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
+source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1536'
 ht-degree: 3%
 
 ---
@@ -135,6 +135,28 @@ RESTful 서비스를 구성하려면 다음을 수행하십시오.
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 탭 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
+
+### 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-configuration}
+
+[!DNL Experience Manager Forms] 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함됩니다.
+양식 데이터 모델 HTTP 클라이언트를 구성하려면 다음 단계를 수행하십시오.
+
+1. 에 로그인합니다. [!DNL Experience Manager Forms] 관리자로 작성자 인스턴스 및 다음 위치로 이동 [!DNL Experience Manager] 웹 콘솔 번들. 기본 URL은 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. 탭 **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성]**.
+
+1. 에서 [!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성] 대화 상자:
+
+   * 에서 양식 데이터 모델과 RESTful 웹 서비스 간에 허용되는 최대 연결 수를 지정합니다 **[!UICONTROL 총 연결 제한]** 필드. 기본값은 20개의 연결입니다.
+
+   * 각 경로에 대해 허용되는 최대 연결 수를 **[!UICONTROL 경로별 연결 제한]** 필드. 기본값은 2개의 연결입니다.
+
+   * 영구 HTTP 연결이 유지되는 기간을 **[!UICONTROL 살아있도록 유지]** 필드. 기본값은 15초입니다.
+
+   * 지속 기간을 지정합니다. [!DNL Experience Manager Forms] 서버는 연결이 설정될 때까지 기다렸다가 **[!UICONTROL 연결 시간 초과]** 필드. 기본값은 10초입니다.
+
+   * 에서 두 데이터 패킷 간에 비활성 상태에 대한 최대 기간을 지정합니다 **[!UICONTROL 소켓 시간 제한]** 필드. 기본값은 30초입니다.
+
 
 ## SOAP 웹 서비스 구성 {#configure-soap-web-services}
 
