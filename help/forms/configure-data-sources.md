@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: a6268415217894dae5d3aae77256855717798d3c
+source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1326'
 ht-degree: 3%
 
 ---
@@ -180,7 +180,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
 >[!NOTE]
 >
-> 양식 데이터 모델은 [OData 버전 4.0](https://www.odata.org/documentation/) 나중에
+> 양식 데이터 모델은 [OData 버전 4](https://www.odata.org/documentation/).
 >구성을 위한 단계별 안내서입니다. [!DNL Microsoft Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
 
 1. 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.
