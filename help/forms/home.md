@@ -1,12 +1,12 @@
 ---
 title: 소개 [!DNL AEM Forms] as a Cloud Service
-description: Adobe Experience Manager Forms as a Cloud Service 자가 진단 리소스 및 설명서 링크
+description: 이 PaaS(Platform as-a-Service)를 사용하여 엔터프라이즈급 디지털 양식 및 비즈니스 프로세스를 생성, 관리 및 게시하고, 양식을 현재 데이터 소스에 연결합니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fe2f0743d8efaaf9b3fcfc9e20264cca627db6c8
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 11%
+source-wordcount: '289'
+ht-degree: 6%
 
 ---
 
