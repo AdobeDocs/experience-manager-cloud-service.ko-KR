@@ -2,9 +2,9 @@
 title: Cloud Manager FAQ
 description: AEM as a Cloud Service에서 Cloud Manager에 대해 자주 묻는 질문에 대한 답변을 확인하십시오.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
+source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 0%
 
 예. 을(를) 추가해야 합니다 `maven-toolchains-plugin` ( Java 11에 대한 적절한 설정 사용).
 
-* 이것은 문서화되었습니다 [여기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-* 예를 들어 [wknd 프로젝트 샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+프로세스가 문서화되었습니다 [여기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+
+예를 들어 [wknd 프로젝트 샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Java 8에서 Java 11로 전환한 후 maven-scr-plugin에 대한 오류로 인해 내 빌드가 실패합니다. 어떻게 해야 합니까? {#build-fails-maven-scr-plugin}
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 ## Java 8에서 Java 11로 전환한 후 RequireJavaVersion에 대해 오류가 발생하여 빌드가 실패합니다. 어떻게 해야 합니까? {#build-fails-requirejavaversion}
 
-Cloud Manager 빌드의 경우 `maven-enforcer-plugin` 이 오류로 인해 실패합니다.
+Cloud Manager 빌드의 경우 `maven-enforcer-plugin` 이 오류로 실패할 수 있습니다.
 
 ```text
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
@@ -55,7 +56,9 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin` 이 오류로 인해 실�
 
 버전을 로 설정할 수도 있습니다. `-SNAPSHOT` 스테이지 및 프로덕션 빌드 또는 배포용. Cloud Manager는 적절한 버전 번호를 자동으로 설정하고 git에서 태그를 만듭니다. 필요한 경우 나중에 이 태그를 참조할 수 있습니다.
 
-## 패키지 및 번들 버전 관리는 스테이지 및 프로덕션 배포에서 어떻게 작동합니까? {#snapshot-version}
+버전 처리에 대한 자세한 내용은 다음과 같습니다 [여기에 설명되어 있습니다.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+
+## 패키지 및 번들 버전은 스테이지 및 프로덕션 배포에 대해 어떻게 작동합니까? {#snapshot-version}
 
 스테이지 및 프로덕션 배포에서 자동 버전은 다음과 같이 생성됩니다. [여기에 설명되어 있습니다.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -86,12 +89,11 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 이전 예제 오류에서 패키지는 `myapp-base.ui.content-*.zip` 다음 콘텐츠 포함 `/conf` 및 `/var/workflow`. 배포가 성공하려면 `sling-distribution-importer` 이 경로에는 다음이 필요합니다.
 
-다음은 한 예입니다 [org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) 에 대한 추가 권한을 추가하는 그러한 OSGi 구성 중 하나 `sling-distribution-importer` 사용자.  이 구성은 다음에 권한을 추가합니다. `/var`.  아래의 이 xml 파일 [1] 아래의 응용 프로그램 패키지에 추가해야 합니다. `/apps/myapp/config` 여기서 myapp 은 애플리케이션 코드가 저장되는 폴더입니다.
-org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
+다음은 한 예입니다 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) 에 대한 추가 권한을 추가하는 OSGi 구성 `sling-distribution-importer` 사용자.  구성은 다음에 권한을 추가합니다. `/var`.  이러한 구성을 아래의 애플리케이션 패키지에 추가해야 합니다 `/apps/myapp/config` 여기서 myapp 은 애플리케이션 코드가 저장되는 폴더입니다.
 
-## AEM as a Cloud Service의 배포 단계에서 Cloud Manager 배포가 실패하고 이미 RepositoryInitializer OSGi 구성이 있습니다. 다른 방법은? {#build-failures}
+## AEM as a Cloud Service의 배포 단계에서 Cloud Manager 배포가 실패하고 RepositoryInitializer OSGi 구성을 이미 추가했습니다. 다른 방법은? {#build-failures}
 
-If [repositoryInitializer OSGi 구성 추가](##cloud-manager-deployment-cloud-service) 오류를 해결하지 않은 경우 이러한 추가 문제 중 하나가 원인일 수 있습니다.
+If [repositoryInitializer OSGi 구성 추가](#cloud-manager-deployment-cloud-service) 오류를 해결하지 않은 경우 이러한 추가 문제 중 하나가 원인일 수 있습니다.
 
 * 기본 제공 서비스를 중단하는 잘못된 OSGi 구성으로 인해 배포가 실패할 수 있습니다.
    * 배포 중에 명백한 오류가 있는지 확인하려면 로그를 확인하십시오.
@@ -127,6 +129,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-이 경우 이러한 명령을 실행하는 사용자를 **배포 관리** Admin Console의 역할입니다.
+이 경우 이러한 명령을 실행하는 사용자를 **배포 관리자** Admin Console의 역할입니다.
 
 자세한 내용은 [API 권한](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) 자세한 내용
