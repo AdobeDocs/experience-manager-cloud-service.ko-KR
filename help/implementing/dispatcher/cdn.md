@@ -3,10 +3,10 @@ title: AEM as a Cloud Service의 CDN
 description: AEM as a Cloud Service의 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 9%
 Cloud Service으로 AEM이 기본 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
 
 AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 충족합니다. 게시 계층의 경우 고객이 선택적으로 자신의 CDN에서 가리키도록 할 수 있으며, 이를 관리해야 합니다. 중단하기 어려운 CDN 공급업체와 레거시 통합을 보유한 고객을 포함한 특정 전제 조건을 충족하는 것에 제한되지 않고, 이를 기반으로 케이스별로 허용됩니다.
+
+다음 비디오도 참조하십시오 [Cloud 5 AEM CDN 1부](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) 및 [Cloud 5 AEM CDN 2부](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) 를 참조하십시오.
 
 ## AEM 관리 CDN  {#aem-managed-cdn}
 

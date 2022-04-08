@@ -3,10 +3,10 @@ title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## 소개 {#apache-and-dispatcher-configuration-and-testing}
 
-이 페이지에서는 디스패처 도구 및 디스패처 도구를 다운로드하고 추출하는 방법에 대해 설명하고 지원되는 Apache 모듈과 기존 및 유연한 모드에 대한 높은 수준의 개요를 제공합니다. 또한 유효성 검사 및 디버깅 및 Dispatcher 구성을 AMS에서 AEM as a Cloud Service으로 마이그레이션하는 방법에 대한 추가 참조가 있습니다
+이 페이지에서는 디스패처 도구 및 디스패처 도구를 다운로드하고 추출하는 방법에 대해 설명하고 지원되는 Apache 모듈과 기존 및 유연한 모드에 대한 높은 수준의 개요를 제공합니다. 또한 유효성 검사 및 디버깅과 Dispatcher 구성을 AMS에서 AEM as a Cloud Service으로 마이그레이션하는 것에 대한 추가 참조가 있습니다. 또한, [이 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) 를 참조하십시오.
 
 ## Dispatcher 도구 {#dispatcher-sdk}
 
