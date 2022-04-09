@@ -2,9 +2,9 @@
 title: 상거래 경험 작성
 description: 작동하는 상거래 경험
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ Omnisearch를 사용하면 전문가가 전체 텍스트 검색을 사용하여 
 
 결과는 유형별로 그룹화됩니다.
 
-    >[!NOTE]
-    >
-    > Omnisearch의 전체 텍스트 검색은 관련 컨텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 관련 컨텐츠 조각을 찾습니다.
+>[!NOTE]
+>
+> Omnisearch의 전체 텍스트 검색은 관련 컨텐츠 조각을 지원하지 않습니다. SKU 또는 UID를 사용하여 관련 컨텐츠 조각을 찾습니다.
