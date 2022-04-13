@@ -1,13 +1,13 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 릴리스의 릴리스 노트'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 릴리스의 릴리스 노트'
-source-git-commit: 7b4f9e3808e3de933f7c1e1fd4f80be078a9ae1a
-workflow-type: tm+mt
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.1.0 릴리스 정보.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.1.0 릴리스 정보.'
+exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+workflow-type: ht
 source-wordcount: '1085'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
 
@@ -63,7 +63,7 @@ ht-degree: 97%
 
 * 원본 렌디션이 없는 처리되지 않은 에셋은 AEM on-premise에서 클라우드 서비스로 에셋을 마이그레이션하는 동안 처리를 위해 Asset Compute로 전송됩니다.
 
-## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
@@ -86,10 +86,10 @@ ht-degree: 97%
 ### 새로운 기능 {#what-is-new-cif}
 
 * 향상된 myAccount 구성 요소
-* 제품 권장 사항 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다
+* 제품 추천 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다.
 * **위시리스트**
    * 로그인한 방문자는 위시리스트에 제품을 추가할 수 있습니다.
-   * myAccount를 통해 우유목록 및 제품 관리 가능
+   * myAccount를 통해 위시리스트 및 해당 제품을 관리할 수 있습니다.
    * “위시리스트에 추가” 버튼은 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항).
    * 핵심 구성 요소 및 AEM Venia Storefront에서 사용 가능
 
