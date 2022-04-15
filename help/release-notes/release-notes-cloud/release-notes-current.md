@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: a96824cede31414963ff7e6f5ef1315bd35a51c1
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 98%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다 [여기](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+[여기](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
 
 ## 콘텐츠 전송 도구 {#ctt-release}
 
@@ -106,7 +106,7 @@ Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다 [여�
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 점검 크기 가드레일 - 콘텐츠 전송 도구 점검 크기 기능을 사용하여 콘텐트 전송 실패율을 줄일 수 있습니다.  점검 크기 기능을 사용하여 1) 추출하기 전에 `crx-quickstart` 하위 디렉터리에 디스크 공간이 충분한지 결정하고, 2) 마이그레이션 세트 크기를 예측하고 현재 지원되는지 확인할 수 있습니다. 점검 사항 중 하나 또는 두 개 모두 위반한 경우 CTT UI에 경고가 표시됩니다. 이 가드레일을 사용하여 콘텐츠 전송 실패를 방지하고, Adobe 고객 지원 센터와 주도적으로 마이그레이션 옵션에 대해 논의할 수 있습니다. 자세한 내용은 [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size)을 참조하십시오.
+* 점검 크기 가드레일 - 콘텐츠 전송 도구 점검 크기 기능을 사용하여 콘텐트 전송 실패율을 줄일 수 있습니다.  점검 크기 기능을 사용하여 1) 추출하기 전에 `crx-quickstart` 하위 디렉터리에 디스크 공간이 충분한지 결정하고, 2) 마이그레이션 세트 크기를 예측하고 현재 지원되는지 확인할 수 있습니다. 점검 사항 중 하나 또는 두 개 모두 위반한 경우 CTT UI에 경고가 표시됩니다. 이 가드레일을 사용하여 콘텐츠 전송 실패를 방지하고, Adobe 고객 지원 센터와 주도적으로 마이그레이션 옵션에 대해 논의할 수 있습니다. 자세한 내용은 [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko#migration-set-size)을 참조하십시오.
 
 ## Best Practices Analyzer {#bpa-release}
 
