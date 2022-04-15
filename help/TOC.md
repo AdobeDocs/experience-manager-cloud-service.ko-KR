@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 437be8c82a4dee6c9e56af09afa7e9048c8cb3c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3419'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 98%
       + [최신 릴리스 정보 (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + [2022.2.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [2022.1.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021년 {#2021}
+      + 2021 {#2021}
          + [2021.12.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -161,7 +161,7 @@ ht-degree: 98%
          + [계정 환경 구성](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [Headless 콘텐츠 작성 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=ko-KR)
+      + [Headless 콘텐츠 작성 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=ko)
       + 작성 기본 사항 {#fundamentals}
          + [환경 및 도구](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [페이지 주석 추가](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -253,7 +253,7 @@ ht-degree: 98%
                + [번역 규칙 구성](/help/journey-sites/translation/translation-rules.md)
                + [콘텐츠 번역](/help/journey-sites/translation/translate-content.md)
                + [번역된 콘텐츠 게시](/help/journey-sites/translation/publish-content.md)
-            + [Headless 번역 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko-KR)
+            + [Headless 번역 여정](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ko)
             + [다국어 사이트를 위한 콘텐츠 번역](/help/sites-cloud/administering/translation/overview.md)
             + [번역을 위한 콘텐츠 준비](/help/sites-cloud/administering/translation/preparation.md)
             + [번역 프로젝트 관리](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -265,9 +265,9 @@ ht-degree: 98%
    + AEM as a Cloud Service와 통합 {#integrations}
       + [Adobe Analytics와 통합](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 자동 설정과 통합](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [Adobe Analytics과 통합할 때 사용할 IMS 구성](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [Adobe Analytics와 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [Adobe Target과 통합할 때 사용할 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [Adobe Target과 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
 + 에셋 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -305,12 +305,12 @@ ht-degree: 98%
       + [비공개 폴더 생성 및 공유](/help/assets/private-folder.md)
       + [에셋용 디지털 권한 관리](/help/assets/drm.md)
       + [에셋에 워터마크 추가](/help/assets/watermark-assets.md)
-      + [ [!DNL Creative Cloud] API를 사용하여 에셋 처리](/help/assets/cc-api-integration.md)
+      + [ [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)를 사용하여 에셋 처리
    + [!DNL Assets] 구성, 관리 및 확장 {#admin}
       + [개발자 문서 및 API 참조](/help/assets/developer-reference-material-apis.md)
       + [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)
       + [이미지 및 비디오 프로필을 사용하여 작업](/help/assets/dynamic-media/about-image-video-profiles.md)
-      + [오디오 및 비디오 자산에 대한 전사 구성](/help/assets/configure-transcription.md)
+      + [오디오 및 비디오 에셋의 트랜스크립션 구성](/help/assets/configure-transcription.md)
       + [다국어 에셋 및 번역](/help/assets/translate-assets.md)
       + [검색 패싯](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
@@ -325,7 +325,7 @@ ht-degree: 98%
    + 에셋 공유 및 배치 {#brand-portal}
       + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [ [!DNL Brand Portal]에 에셋 게시](/help/assets/publish-to-brand-portal.md)
-      + [ [!DNL Brand Portal] 에서 [!DNL Assets]로 에셋 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko-KR)
+      + [ [!DNL Brand Portal] 에서 [!DNL Assets]로 에셋 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko)
    + 콘텐츠 조각 {#content-fragments}
       + [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
       + [콘텐츠 조각 및 GraphQL을 사용하여 헤드리스 게재](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -388,7 +388,7 @@ ht-degree: 98%
       + [Flash 뷰어 서비스 종료](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Adobe Workfront와 통합 {#integrations}
-      + [Workfront for Experience Manager Enhanced Connector 릴리스 노트](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Experience Manager 강화 커넥터용 Workfront 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [ [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
       + [ [!DNL Workfront]에 [!DNL enhanced connector] 설치](/help/assets/workfront-connector-install.md)
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
@@ -407,9 +407,9 @@ ht-degree: 98%
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
       + [적응형 양식, PDF 양식 및 기타 에셋 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
    + PDF 양식을 적응형 양식으로 변환 {#afcs}
-      + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR)
-      + [기존 PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko-KR)
-      + [전환된 양식 검토 및 수정](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ko-KR#welcome-to-review-and-correct-editor)
+      + [자동 양식 전환 서비스 소개](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko)
+      + [기존 PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko)
+      + [전환된 양식 검토 및 수정](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ko#welcome-to-review-and-correct-editor)
    + 적응형 양식 만들기 및 게시 {#create-an-adaptive-form}
       + 시작하기 전 {#before-you-start}
          + [템플릿 만들기](/help/forms/template-editor.md)
@@ -423,7 +423,7 @@ ht-degree: 98%
          + [소극적 로드 옵션이 있는 대용량 양식의 성능 향상](/help/forms/lazy-loading-adaptive-forms.md)
       + 적응형 양식에 구성 요소 추가 {#add-components-to-an-adaptive-form}
          + [적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
-         + [핵심 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+         + [핵심 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
       + 적응형 양식에 레이아웃 구성 및 스타일 적용{#configure-layout-of-an-adaptive-form}
          + [적응형 양식의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms.md)
          + [레이아웃 모드를 사용하여 구성 요소 크기 변경](/help/forms/resize-using-layout-mode.md)
@@ -553,24 +553,24 @@ ht-degree: 98%
       + [콘텐츠 조각](/help/headless/setup/create-content-fragment.md)
       + [GraphQL 끝점](/help/headless/setup/create-api-request.md)
    + 콘텐츠 조각 {#content-fragments}
-      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ko-KR)
-      + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ko-KR)
-      + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ko-KR)
+      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ko)
+      + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ko)
+      + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ko)
       + 작성{#authoring}
-         + [작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko-KR)
-         + [텍스트 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ko-KR)
-         + [관련 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ko-KR)
-         + [변형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko-KR#managing-variations)
-      + [메타데이터](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ko-KR)
-      + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ko-KR)
-      + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ko-KR)
+         + [작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko)
+         + [텍스트 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ko)
+         + [관련 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ko)
+         + [변형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko#managing-variations)
+      + [메타데이터](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ko)
+      + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ko)
+      + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ko)
    + GraphQL API {#graphql-api}
       + [콘텐츠 조각용 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL 엔드포인트 관리](/help/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
       + [지속 GraphQL 쿼리](/help/headless/graphql-api/persisted-queries.md)
-   + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ko-KR)
+   + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ko)
    + 보안 {#security}
       + [권한](/help/headless/security/permissions.md)
       + [인증](/help/headless/security/authentication.md)
@@ -615,11 +615,11 @@ ht-degree: 98%
    + Cloud Manager 사용 {#using-cloud-manager}
       + Cloud Manager 릴리스 정보 {#release-notes-cloud-manager}
          + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022년 {#2022}
+         + 2022 {#2022}
             + [2022.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
             + [2022.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
             + [2022.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-         + 2021년 {#2021}
+         + 2021 {#2021}
             + [2021.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [2021.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
             + [2021.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
@@ -631,7 +631,7 @@ ht-degree: 98%
             + [2021.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
             + [2021.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
             + [2021.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-         + 2020년 {#2020}
+         + 2020 {#2020}
             + [2020.12.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
             + [2020.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
             + [2020.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -685,7 +685,7 @@ ht-degree: 98%
          + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 사용자 지정 도메인 이름 {#custom-domain-names}
+      + 맞춤형 도메인 이름 {#custom-domain-names}
          + [소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [맞춤형 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -696,7 +696,7 @@ ht-degree: 98%
       + IP 허용 목록 {#ip-allow-lists}
          + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [IP 허용 목록 적용 및 적용 해제](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [IP 허용 목록 적용 및 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + AEM as a Cloud Service용 개발 {#developing}
@@ -727,8 +727,8 @@ ht-degree: 98%
          + 구성 요소 및 템플릿 {#components-templates}
             + [구성 요소 개요](/help/implementing/developing/components/overview.md)
             + [템플릿](/help/implementing/developing/components/templates.md)
-            + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ko-KR)
+            + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+            + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ko)
             + [콘텐츠 서비스에 대한 JSON 내보내기](/help/implementing/developing/components/json-exporter.md)
             + [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md)
             + [이미지 편집기](/help/implementing/developing/components/image-editor.md)
@@ -743,10 +743,10 @@ ht-degree: 98%
             + [맞춤형 술어 평가자 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [맞춤형 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
-      + [Headless 경험 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ko-KR)
+      + [Headless 경험 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ko)
       + 하이브리드 및 SPA 개발 {#hybrid}
          + [AEM을 통한 하이브리드 및 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ko-KR)
+         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ko)
          + [SPA 소개 및 워크스루](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND 튜토리얼](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [React를 사용하여 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -762,7 +762,7 @@ ht-degree: 98%
          + [AEM에서 외부 SPA 편집](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA의 구성 요소 합성](/help/implementing/developing/hybrid/composite-components.md)
          + [서버측 렌더링](/help/implementing/developing/hybrid/ssr.md)
-         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ko)
          + [통합 실행](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md)
    + 개발자 도구 {#developer-tools}
@@ -783,7 +783,7 @@ ht-degree: 98%
       + [ContextHub 진단](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [ContextHub 확장](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [ContextHub를 사용하여 세그먼테이션 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ko-KR)
+      + [ContextHub를 사용하여 세그먼테이션 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ko)
    + AEM as a Cloud Service 구성 및 확장 {#configuring-and-extending}
       + App Builder를 사용하여 AEM 확장{#app-builder}
          + [Adobe Developer App Builder를 사용하여 AEM 확장](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
