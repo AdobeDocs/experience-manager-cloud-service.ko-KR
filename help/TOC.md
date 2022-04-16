@@ -305,7 +305,7 @@ ht-degree: 100%
       + [비공개 폴더 생성 및 공유](/help/assets/private-folder.md)
       + [에셋용 디지털 권한 관리](/help/assets/drm.md)
       + [에셋에 워터마크 추가](/help/assets/watermark-assets.md)
-      + [ [!DNL Creative Cloud] API](/help/assets/cc-api-integration.md)를 사용하여 에셋 처리
+      + [ [!DNL Creative Cloud] API를 사용하여 에셋 처리](/help/assets/cc-api-integration.md)
    + [!DNL Assets] 구성, 관리 및 확장 {#admin}
       + [개발자 문서 및 API 참조](/help/assets/developer-reference-material-apis.md)
       + [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)
