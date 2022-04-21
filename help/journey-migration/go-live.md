@@ -2,9 +2,9 @@
 title: Go-Live
 description: 코드와 컨텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 프로덕션에서 처음 마이그레이션 후 클라우드 인스턴스에서 컨텐츠를 최신 상태로 전환하려면 증분 추가를 수행해야 합니다. 따라서 다음 우수 사례를 따르는 것이 좋습니다.
 
 * 컨텐츠 양에 대한 데이터를 수집합니다. 예: 1주, 2주 또는 1개월마다
-* 48시간 이상의 컨텐츠 추출 및 수집을 방지하기 위해 추가 작업을 계획해야 합니다. 콘텐츠 추가를 주말 시간대에 맞게 지정하는 것이 좋습니다.
+* 48시간 이상의 컨텐츠 추출 및 수집을 방지하기 위해 추가 작업을 계획해야 합니다. 컨텐츠 추가 작업이 주말 시간대에 맞게 수행되도록 하는 것이 좋습니다.
 * 필요한 추가 수를 계획하고 이러한 추정치를 사용하여 Go-Live 날짜를 계획합니다.
 
 ## 마이그레이션에 대한 코드 및 컨텐츠 고정 타임라인 식별 {#code-content-freeze}
@@ -113,13 +113,45 @@ AEM 소스의 부하가 추출 단계 중에 더 크게 된다는 것을 기억�
 
 ## Go-Live 체크리스트 {#Go-Live-Checklist}
 
-원활하고 성공적인 마이그레이션을 수행할 수 있는지 확인하려면 아래에 표시된 활동 목록을 검토하십시오.
+이 활동 목록을 검토하여 마이그레이션이 원활하고 성공했는지 확인하십시오.
 
-* 코드 및 컨텐츠 고정 기간을 예약합니다. 참조 - [마이그레이션을 위한 코드 및 컨텐츠 고정 타임라인](#code-content-freeze).
-* 최종 컨텐츠 추가 수행
-* 전체 테스트 반복
-* 성능 및 보안 테스트 실행
-* 잘라내기 프로덕션 인스턴스에서 마이그레이션을 수행합니다
+* 기능 및 UI 테스트를 통해 종단 간 프로덕션 파이프라인을 실행하여 **항상 전류** AEM 제품 경험. 다음 리소스를 참조하십시오.
+   * [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)
+   * [사용자 지정 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
+* 컨텐츠를 프로덕션으로 마이그레이션하고 테스트용 스테이징에서 관련 하위 집합을 사용할 수 있는지 확인하십시오.
+   * AEM에 대한 DevOps 우수 사례는 코드가 개발 환경에서 프로덕션 환경으로 이동하는 것을 암시합니다 [컨텐츠는 프로덕션 환경에서 아래로 이동합니다.](/help/overview/enterprise-devops.md#code-movement)
+* 코드 및 컨텐츠 고정 기간을 예약합니다.
+   * 섹션을 참조하십시오 [마이그레이션을 위한 코드 및 컨텐츠 고정 타임라인](#code-content-freeze)
+* 최종 컨텐츠 추가 를 수행합니다.
+* Dispatcher 구성의 유효성을 검사합니다.
+   * 로컬 Dispatcher 유효성 검사기를 사용하여 Dispatcher를 로컬에서 구성, 유효성 검사 및 시뮬레이션을 용이하게 합니다.
+      * [로컬 Dispatcher 도구를 설정합니다.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+   * 가상 호스트 구성을 신중하게 검토하십시오.
+      * 가장 쉬운(및 기본) 솔루션은 다음과 같습니다 `ServerAlias *` 가상 호스트 파일에서 `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * 이렇게 하면 제품 기능 테스트, 디스패처 캐시 무효화 및 클론에 사용되는 호스트 별칭이 작동할 수 있습니다.
+      * 그러나 `ServerAlias *` 은(는) 허용되지 않으며, 최소한 다음 `ServerAlias` 사용자 지정 도메인 외에 항목을 사용할 수 있어야 합니다.
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* CDN, SSL 및 DNS를 구성합니다.
+   * 고유한 CDN을 사용하는 경우 지원 티켓을 입력하여 적절한 라우팅을 구성합니다.
+      * 섹션을 참조하십시오 [고객 CDN은 AEM Managed CDN을 가리킵니다](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) 참조하십시오.
+      * CDN 공급업체의 설명서에 따라 SSL 및 DNS를 구성해야 합니다.
+   * 추가 CDN을 사용하지 않는 경우 다음 설명서에 따라 SSL 및 DNS를 관리합니다.
+      * SSL 인증서 관리
+         * [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * DNS(사용자 지정 도메인 이름) 관리
+         * [사용자 지정 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [맞춤형 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [사용자 지정 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * DNS 레코드에 대한 TTL 집합의 유효성을 검사해야 합니다.
+      * TTL은 서버에서 업데이트를 요청하기 전에 DNS 레코드가 캐시에 남아 있는 시간입니다.
+      * 매우 높은 TTL을 갖는 경우 DNS 레코드에 대한 업데이트를 전파하는 데 시간이 오래 걸립니다.
+* 비즈니스 요구 사항 및 목표를 충족하는 성능 및 보안 테스트를 실행합니다.
+* 마우스를 가져간 후 새 배포나 콘텐츠 업데이트 없이 실제 Go-Live가 수행되었는지 확인합니다.
 
 마이그레이션을 수행하는 동안 작업을 재조정해야 하는 경우 언제든지 목록을 참조할 수 있습니다.
 

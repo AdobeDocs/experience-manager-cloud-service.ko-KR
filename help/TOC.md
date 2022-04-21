@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 437be8c82a4dee6c9e56af09afa7e9048c8cb3c0
-workflow-type: ht
-source-wordcount: '3419'
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+workflow-type: tm+mt
+source-wordcount: '3421'
 ht-degree: 100%
 
 ---
@@ -108,7 +108,7 @@ ht-degree: 100%
       + [최신 릴리스 정보 (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + [2022.2.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [2022.1.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021 {#2021}
+      + 2021년 {#2021}
          + [2021.12.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -615,11 +615,11 @@ ht-degree: 100%
    + Cloud Manager 사용 {#using-cloud-manager}
       + Cloud Manager 릴리스 정보 {#release-notes-cloud-manager}
          + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022 {#2022}
+         + 2022년 {#2022}
             + [2022.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
             + [2022.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
             + [2022.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-         + 2021 {#2021}
+         + 2021년 {#2021}
             + [2021.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [2021.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
             + [2021.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
@@ -631,7 +631,7 @@ ht-degree: 100%
             + [2021.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
             + [2021.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
             + [2021.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-         + 2020 {#2020}
+         + 2020년 {#2020}
             + [2020.12.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
             + [2020.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
             + [2020.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -704,6 +704,7 @@ ht-degree: 100%
       + [AEM 프로젝트 저장소 구조 패키지](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM as a Cloud Service 개발 지침](/help/implementing/developing/introduction/development-guidelines.md)
+      + [엔터프라이즈 DevOps](/help/overview/enterprise-devops.md)
       + [로깅](/help/implementing/developing/introduction/logging.md)
       + [구성 및 구성 브라우저](/help/implementing/developing/introduction/configurations.md)
       + [AEM 기술 재단](/help/implementing/developing/introduction/aem-technologies.md)
@@ -727,7 +728,7 @@ ht-degree: 100%
          + 구성 요소 및 템플릿 {#components-templates}
             + [구성 요소 개요](/help/implementing/developing/components/overview.md)
             + [템플릿](/help/implementing/developing/components/templates.md)
-            + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+            + [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ko)
             + [콘텐츠 서비스에 대한 JSON 내보내기](/help/implementing/developing/components/json-exporter.md)
             + [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md)
@@ -762,7 +763,7 @@ ht-degree: 100%
          + [AEM에서 외부 SPA 편집](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA의 구성 요소 합성](/help/implementing/developing/hybrid/composite-components.md)
          + [서버측 렌더링](/help/implementing/developing/hybrid/ssr.md)
-         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ko)
+         + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [통합 실행](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md)
    + 개발자 도구 {#developer-tools}
