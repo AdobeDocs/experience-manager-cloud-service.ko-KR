@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
+source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -60,17 +60,19 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심 모델에서 C
 
 기본 인덱스의 사용자 지정 및 전체 사용자 지정 인덱스를 모두 포함해야 합니다 `-custom-`. 전체 사용자 지정 인덱스만 접두사로 시작해야 합니다.
 
-### 새 인덱스 정의 준비 {#preparing-the-new-index-definition}
+## 새 인덱스 정의 준비 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->기본 인덱스를 사용자 지정하는 경우(예: ) `damAssetLucene-6`에서 최신 기본 인덱스 정의를 복사하십시오 *Cloud Service 환경* 그리고 사용자 지정 사항을 맨 위에 추가하면 필요한 구성이 실수로 제거되지 않습니다. 예: `tika` 노드 아래의 `/oak:index/damAssetLucene-6/tika` 는 필수 노드이며 사용자 지정된 색인의 일부여야 하며 Cloud SDK에 존재하지 않습니다.
+>기본 인덱스를 사용자 지정하는 경우(예: ) `damAssetLucene-6`에서 최신 기본 인덱스 정의를 복사하십시오 *Cloud Service 환경* CRX DE Package Manager 를 사용하는 개발 환경 (`/crx/packmgr/`). 그런 다음 구성 이름을 변경합니다(예: ). `damAssetLucene-6-custom-1`, 그리고 사용자 지정 사항을 맨 위에 추가합니다. 따라서 필요한 구성이 실수로 제거되지 않습니다. 예: `tika` 노드 아래의 `/oak:index/damAssetLucene-6/tika` 은 클라우드 서비스의 사용자 지정된 색인에 필요합니다. 클라우드 SDK에 존재하지 않습니다.
 
 다음 이름 지정 패턴에 따라 실제 인덱스 정의가 포함된 새 인덱스 정의 패키지를 준비해야 합니다.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 그 다음 `ui.apps/src/main/content/jcr_root`. 현재는 하위 루트 폴더가 지원되지 않습니다.
+
+기존(기본 제공 인덱스)가 유지되도록 패키지 필터를 설정해야 합니다. 다음 두 가지 방법으로 데이터를 수집할 수 있습니다. 또는 필터가 `<filter root="/oak:index/" mode="merge"/>` 파일에서 `ui.apps/src/main/content/META-INF/vault/filter.xml`또는 각 사용자 지정(또는 사용자 지정) 인덱스를 필터 섹션에 개별적으로 나열해야 합니다(예: ). `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 나중에 이 경우 버전을 변경할 때마다 필터를 조정해야 합니다.
 
 위의 샘플의 패키지는 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
@@ -80,7 +82,7 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심 모델에서 C
 >
 >`noIntermediateSaves=true`
 
-### 인덱스 정의 배포 {#deploying-index-definitions}
+## 인덱스 정의 배포 {#deploying-index-definitions}
 
 >[!NOTE]
 >
