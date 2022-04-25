@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b490d581532576bc526f9bd166003df7f2489495
+source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -31,14 +31,18 @@ Define DISABLE_DEFAULT_CACHING
 예를 들어, 비즈니스 로직에서는 기본적으로 연령 헤더가 0으로 설정되므로 페이지 헤더를 세밀하게 조정해야 하는 경우(달력 일을 기반으로 하는 값 포함) 유용합니다. 그건, **기본 캐싱을 해제할 때는 주의하십시오.**
 
 * 모든 HTML/텍스트 컨텐츠에 대해 `EXPIRATION_TIME` 변수 `global.vars` AEM as a Cloud Service SDK Dispatcher 도구 사용.
-* 다음 apache mod_headers 지시문에 의해 보다 세밀하게 조정된 수준에서 재정의할 수 있습니다.
+* 다음 apache mod_headers 지시문을 사용하여 CDN과 브라우저 캐시를 독립적으로 제어하는 것을 포함하여 보다 세밀하게 조정된 수준에서 재정의할 수 있습니다.
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Surrogate-Control "max-age=3600"
         Header set Age 0
    </LocationMatch>
    ```
+
+   >[!NOTE]
+   >Surrogate-Control 헤더는 Adobe 관리 CDN에 적용됩니다. 를 사용하는 경우 [고객 관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), CDN 공급자에 따라 다른 헤더가 필요할 수 있습니다.
 
    전역 캐시 제어 헤더 또는 광범위한 정규식과 일치하는 헤더를 설정하여 비공개로 유지할 콘텐츠에 적용하지 않도록 주의하십시오. 여러 지시어를 사용하여 규칙이 세밀하게 적용되도록 합니다. 이를 통해 AEM as a Cloud Service은 디스패처 설명서에 설명된 대로 디스패처가 사용할 수 없음을 감지하는 대상에 적용되었음을 감지하는 경우 캐시 헤더를 제거합니다. AEM에서 항상 캐싱 헤더를 적용하도록 하기 위해 **항상** 다음과 같이 옵션을 선택합니다.
 
@@ -110,6 +114,73 @@ Define DISABLE_DEFAULT_CACHING
 * 기본 캐싱 없음
 * 기본값은 `EXPIRATION_TIME` html/text 파일 유형에 사용되는 변수입니다
 * 캐시 만료는 적절한 regex를 지정하여 html/text 섹션에 설명된 것과 동일한 LocationMatch 전략으로 설정할 수 있습니다
+
+### 추가 최적화
+
+* 사용하지 마십시오 `User-Agent` 의 일부로 `Vary` 헤더. 기본 Dispatcher 설정의 이전 버전(원형 버전 28 이전)에는 이 설정이 포함되었으며 아래 단계를 사용하여 이 설정을 제거하는 것이 좋습니다.
+   * 에서 vhost 파일을 찾습니다. `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
+   * 다음 줄을 제거하거나 주석을 답니다. `Header append Vary User-Agent env=!dont-vary` 모든 vhost 파일에서 읽기 전용 default.vhost를 제외하고
+* 를 사용하십시오 `Surrogate-Control` 브라우저 캐싱과 독립적으로 CDN 캐싱을 제어하는 헤더
+* 적용 고려 [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) 및 [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) 지시어를 사용하면 백그라운드 새로 고침을 허용하고 캐시 실패를 방지하여 컨텐츠를 빠르고 깨끗하게 유지할 수 있습니다.
+   * 이러한 지시문을 적용하는 방법은 여러 가지가 있지만, 30분을 추가합니다 `stale-while-revalidate` 모든 캐시 제어 헤더에 적합한 시작점입니다.
+* 다음은 고유한 캐싱 규칙을 설정할 때 안내서로 사용할 수 있는 다양한 콘텐츠 유형에 대한 예입니다. 특정 설정 및 요구 사항에 대해 주의 깊게 고려 및 테스트하십시오.
+
+   * 12시간 및 12시간 이후 백그라운드 새로 고침에 대해 캐시 변경 가능한 클라이언트 라이브러리 리소스.
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * MISS를 방지하기 위해 백그라운드 새로 고침을 통해 변경할 수 없는 클라이언트 라이브러리 리소스를 장기(30일) 캐시합니다.
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 브라우저 의 경우 5분, CDN의 경우 12시 및 배경 새로 고침으로 HTML 페이지를 캐시합니다. Cache-Control 헤더는 항상 추가되므로 /content/* 아래에 있는 일치하는 html 페이지가 공개되도록 하는 것이 중요합니다. 그렇지 않은 경우 더 구체적인 regex를 사용하는 것이 좋습니다.
+
+      ```
+      <LocationMatch "^/content/.*\.html$">
+         Header unset Cache-Control
+         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 브라우저에 5분, CDN에 대해 배경 새로 고침 1시간 및 12시간의 컨텐츠 서비스/Sling 모델 내보내기 json 응답을 캐시합니다.
+
+      ```
+      <LocationMatch "^/content/.*\.model\.json$">
+         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * 코어 이미지 구성 요소의 변경할 수 없는 URL을 백그라운드 새로 고침으로 장기간(30일)에 캐시하여 MISS를 방지합니다.
+
+      ```
+      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * DAM에서 가변 리소스를 캐시하여 24시간 이미지 및 비디오, 12일 이후 백그라운드 새로 고침 등의 작업을 수행할 수 있습니다
+
+      ```
+      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
 
 ## Dispatcher 캐시 무효화 {#disp}
 
