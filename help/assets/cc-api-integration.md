@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,31 @@ ht-degree: 0%
 
    ![개체를 깔끔하게 바꾸기](/help/assets/assets/content-automation-objectreplace.png)
 
+## AEM as a Cloud Service 프로그램에 컨텐츠 자동화 사용 {#enable-content-automation}
+
+Cloud Manager를 사용하여 AEM as a Cloud Service 프로그램에 대한 컨텐츠 자동화 추가 기능을 활성화하려면
+
+1. Content Automation 추가 기능의 라이센스를 얻으려면 계정 담당자에게 문의하십시오.
+1. Cloud Manager에 액세스하고 조직 선택기를 사용하여 조직으로 전환합니다.
+1. 클릭 **[!UICONTROL 프로그램 추가]** 그리고 프로그램 이름을 지정합니다.
+1. 클릭 **[!UICONTROL 계속]**.
+1. 확장 **[!UICONTROL 자산]** 을(를) 선택합니다. **[!UICONTROL 컨텐츠 자동화]**.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 다음 대상 파이프라인 실행 [cloud Manager에 변경 사항 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
+Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동화 추가 기능을 추가해야 하는 경우:
+
+1. 프로그램 카드에서 ...을 클릭합니다.
+
+1. 선택 **[!UICONTROL 프로그램 편집]** 그런 다음 **[!UICONTROL 솔루션 및 추가 기능]** 탭.
+
+1. 확장 **[!UICONTROL 자산]** 을(를) 선택합니다. **[!UICONTROL 컨텐츠 자동화]**.
+1. 클릭 **[!UICONTROL 업데이트]**.
+1. 다음 대상 파이프라인 실행 [cloud Manager에 변경 사항 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+
 ## 처리 프로필을 사용하여 크리에이티브 자산을 일괄적으로 편집 {#process-assets}
 
 처리 프로필을 사용하여 변형을 자동으로 만들려면 다음 단계를 수행합니다.
-
-1. 연락처 [고객 지원 Adobe](https://experienceleague.adobe.com/#support) 라이센스 받기.
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**.
 
