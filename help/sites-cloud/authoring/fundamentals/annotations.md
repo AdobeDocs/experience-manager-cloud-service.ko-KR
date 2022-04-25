@@ -2,9 +2,9 @@
 title: 페이지 주석 추가
 description: 스티커 노트를 사용하여 컨텐츠 검토 프로세스를 지원하는 것처럼 주석 및 스케치를 페이지에 그대로 두려면 주석 모드를 사용합니다
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
+source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '699'
 ht-degree: 35%
 
 ---
