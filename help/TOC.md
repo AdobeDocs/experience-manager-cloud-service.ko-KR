@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 48f645d43779a40aaa58b92bb3c8fd8020e32640
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
-source-wordcount: '3424'
+source-wordcount: '3422'
 ht-degree: 100%
 
 ---
@@ -705,7 +705,6 @@ ht-degree: 100%
       + [AEM 프로젝트 저장소 구조 패키지](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM as a Cloud Service 개발 지침](/help/implementing/developing/introduction/development-guidelines.md)
-      + [엔터프라이즈 DevOps](/help/overview/enterprise-devops.md)
       + [로깅](/help/implementing/developing/introduction/logging.md)
       + [구성 및 구성 브라우저](/help/implementing/developing/introduction/configurations.md)
       + [AEM 기술 재단](/help/implementing/developing/introduction/aem-technologies.md)

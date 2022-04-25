@@ -2,7 +2,7 @@
 title: Go-Live
 description: 코드와 컨텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -120,7 +120,7 @@ AEM 소스의 부하가 추출 단계 중에 더 크게 된다는 것을 기억�
    * [사용자 지정 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
 * 컨텐츠를 프로덕션으로 마이그레이션하고 테스트용 스테이징에서 관련 하위 집합을 사용할 수 있는지 확인하십시오.
-   * AEM에 대한 DevOps 우수 사례는 코드가 개발 환경에서 프로덕션 환경으로 이동하는 것을 암시합니다 [컨텐츠는 프로덕션 환경에서 아래로 이동합니다.](/help/overview/enterprise-devops.md#code-movement)
+   * AEM에 대한 DevOps 우수 사례에서는 컨텐츠가 프로덕션 환경에서 아래로 이동하는 동안 코드가 개발 환경에서 프로덕션 환경으로 이동한다는 점을 참고하십시오.
 * 코드 및 컨텐츠 고정 기간을 예약합니다.
    * 섹션을 참조하십시오 [마이그레이션을 위한 코드 및 컨텐츠 고정 타임라인](#code-content-freeze)
 * 최종 컨텐츠 추가 를 수행합니다.
