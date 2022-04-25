@@ -2,10 +2,10 @@
 title: 코드 배포
 description: AEM as a Cloud Service에서 Cloud Manager 파이프라인을 사용하여 코드를 배포하는 방법을 알아봅니다.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 0%
+source-wordcount: '704'
+ht-degree: 1%
 
 ---
 
@@ -93,6 +93,19 @@ AEM 사이트에 방문자가 미치는 영향을 최소화하기 위해 프로�
 이 프로세스는 배포가 토폴로지의 모든 게시자 및 디스패처에 도달할 때까지 계속됩니다.
 
 ![프로덕션 배포 단계](assets/production-deployment.png)
+
+## 시간 초과 {#timeouts}
+
+사용자 피드백을 기다리고 있는 경우 다음 단계가 시간 초과됩니다.
+
+| 단계 | 시간 초과 |
+|--- |--- |
+| 코드 품질 테스트 | 14일 |
+| 보안 테스트 | 14일 |
+| 성능 테스트 | 14일 |
+| 승인 신청 | 14일 |
+| 프로덕션 배포 예약 | 14일 |
+| CSE 지원 | 14일 |
 
 ## 배포 프로세스 {#deployment-process}
 
