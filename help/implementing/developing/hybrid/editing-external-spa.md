@@ -2,9 +2,9 @@
 title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고 편집 가능한 컨텐츠 섹션을 추가하고 작성을 활성화하기 위한 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2127'
+source-wordcount: '2401'
 ht-degree: 1%
 
 ---
@@ -257,6 +257,42 @@ mvn clean install -PautoInstallSinglePackage
 * 새 노드를 만드는 노드의 경로는 를 통해 제공할 때 유효해야 합니다 `itemPath`.
    * 이 예제에서는 `root/responsivegrid` 새 노드가 존재해야 함 `text_20` 여기에서 만들 수 있습니다.
 * 리프 구성 요소 생성만 지원됩니다. 가상 컨테이너 및 페이지는 향후 버전에서 지원됩니다.
+
+### 가상 컨테이너 {#virtual-containers}
+
+해당 컨테이너가 아직 AEM에서 만들어지지 않았더라도 컨테이너를 추가하는 기능이 지원됩니다. 개념과 접근 방식은 [가상 리프 구성 요소.](#virtual-leaf-components)
+
+프런트엔드 개발자는 SPA 내의 적절한 위치에 컨테이너 구성 요소를 추가할 수 있으며, 이러한 구성 요소는 AEM에서 편집기에서 열면 자리 표시자를 표시합니다. 그런 다음 작성자는 구성 요소 및 해당 컨텐츠를 컨테이너에 추가하여 JCR 구조에서 필요한 노드를 만들 수 있습니다.
+
+예를 들어 컨테이너가에 이미 존재하는 경우 `/root/responsivegrid` 개발자가 새 하위 컨테이너를 추가하려고 합니다.
+
+![컨테이너 위치](assets/container-location.png)
+
+`newContainer` AEM에 아직 존재하지 않습니다.
+
+AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가 컨텐츠를 추가할 수 있는 컨테이너에 대한 빈 자리 표시자가 표시됩니다.
+
+![컨테이너 자리 표시자](assets/container-placeholder.png)
+
+![JCR의 컨테이너 위치](assets/container-jcr-structure.png)
+
+작성자가 컨테이너에 하위 구성 요소를 추가하면 JCR 구조에 해당 이름을 사용하여 새 컨테이너 노드가 만들어집니다.
+
+![컨텐츠가 있는 컨테이너](assets/container-with-content.png)
+
+![JCR에 컨텐츠가 있는 컨테이너](assets/container-with-content-jcr.png)
+
+작성자가 요구하고 변경 사항이 유지되므로 이제 더 많은 구성 요소 및 컨텐츠를 컨테이너에 추가할 수 있습니다.
+
+#### 요구 사항 및 제한 사항 {#container-limitations}
+
+가상 컨테이너를 추가하기 위한 요구 사항에는 몇 가지 제한 사항이 있습니다.
+
+* 추가할 수 있는 구성 요소를 결정하는 정책은 상위 컨테이너에서 상속됩니다.
+* 만들 컨테이너의 바로 위 상위가 AEM에 이미 있어야 합니다.
+   * 컨테이너 `root/responsivegrid` AEM 컨테이너에 이미 존재하는 경우 경로를 제공하여 새 컨테이너를 만들 수 있습니다 `root/responsivegrid/newContainer`.
+   * 하지만 `root/responsivegrid/newContainer/secondNewContainer` 는 가능하지 않습니다.
+* 한 번에 하나의 새로운 구성 요소 수준만 만들 수 있습니다.
 
 ## 추가 사용자 지정 {#additional-customizations}
 
