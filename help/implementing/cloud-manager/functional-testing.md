@@ -2,7 +2,7 @@
 title: 기능 테스트
 description: 코드의 품질과 안정성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 빌드된 세 가지 다양한 기능 테스트에 대해 알아봅니다.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: a936f056685f2233a272b4b3105d845f832d143c
+source-git-commit: f8d5b94d176dfbd5bcecf552f974dc77c5afe4e2
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
@@ -125,7 +125,7 @@ Adobe이 제품 기능 테스트를 작성하는 데 사용하는 것과 동일�
 * `sling.it.instance.runmode.1 - should be set to author`
 * `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
 * `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
+* `sling.it.instance.url.2 - should be set to the publish URL, for example, http://localhost:4503`
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
