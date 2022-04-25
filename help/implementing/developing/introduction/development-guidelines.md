@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
+source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2444'
 ht-degree: 2%
 
 ---
@@ -225,14 +225,16 @@ AEM의 이메일은 [일 CQ 메일 서비스 OSGi 서비스](https://experiencel
 * SMTP 서버 호스트 이름을 $(으)로 설정해야 합니다.[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * SMTP 서버 포트는 고급 네트워킹을 구성할 때 API 호출에 사용된 portForwards 매개 변수에 설정된 원래 프록시 포트의 값으로 설정해야 합니다. 예를 들어 30465(465가 아님)
 
-포트 465가 요청된 경우 다음 사항을 권장합니다.
+SMTP 서버 포트를 `portDest` 고급 네트워킹을 구성할 때 API 호출에 사용된 portForwards 매개 변수에 설정된 값 및 `portOrig` 값은 필요한 30000 - 30999 범위 내에 있는 의미 있는 값이어야 합니다. 예를 들어, SMTP 서버 포트가 465인 경우 포트 30465 를 `portOrig` 값.
 
-* 설정 `smtp.port` to `465`
+이 경우, SSL을 활성화해야 한다고 가정할 경우, **일 CQ 메일 서비스 OSGI** 서비스:
+
+* 설정 `smtp.port` to `30465`
 * 설정 `smtp.ssl` to `true`
 
-그리고 포트 587이 요청되는 경우:
+또는 대상 포트가 587이면 `portOrig` 30587 값을 사용해야 합니다. 또한 SSL을 비활성화해야 한다고 가정할 경우 Day CQ Mail Service OSGI 서비스의 구성은 다음과 같습니다.
 
-* 설정 `smtp.port` to `587`
+* 설정 `smtp.port` to `30587`
 * 설정 `smtp.ssl` to `false`
 
 다음 `smtp.starttls` 속성은 런타임 시 AEM as a Cloud Service에서 적절한 값으로 자동으로 설정됩니다. 따라서 `smtp.ssl` 이 true로 설정되어 있고, `smtp.startls` 은 무시됩니다. If `smtp.ssl` 가 false로 설정되고, `smtp.starttls` 가 true로 설정된 경우에만 추적됩니다. 이것은 `smtp.starttls` OSGI 구성에 설정된 값입니다.
