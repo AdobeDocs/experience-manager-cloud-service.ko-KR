@@ -2,9 +2,9 @@
 title: AEM 헤드리스 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 헤드리스 콘텐츠를 번역하여 안내식 여정을 살펴보려면 여기에서 시작하십시오.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1029'
 ht-degree: 3%
 
 ---
@@ -67,9 +67,8 @@ AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 �
 | 1 | [헤드리스 콘텐츠 및 AEM에서 번역하는 방법에 대해 알아봅니다](learn-about.md) | 헤드리스 개념, AEM에 매핑하는 방법, AEM 번역 이론에 대해 알아봅니다. |
 | 2 | [AEM 헤드리스 번역 시작하기](getting-started.md) | 헤드리스 콘텐츠를 구성하는 방법과 AEM 번역 도구가 작동하는 방식을 알아봅니다. |
 | 3 | [번역 커넥터 구성](configure-connector.md) | AEM을 번역 서비스에 연결하는 방법을 알아봅니다. |
-| 4 | [번역 규칙 구성](translation-rules.md) | 번역 규칙을 정의하여 번역 콘텐츠를 식별하는 방법을 알아봅니다. |
-| 5 | [콘텐츠 번역](translate-content.md) | 번역 커넥터와 규칙을 사용하여 헤드리스 콘텐츠를 번역합니다. |
-| 6 | [번역된 콘텐츠 게시](publish-content.md) | 기본 컨텐츠가 업데이트될 때 번역된 컨텐츠를 게시하고 번역을 업데이트하는 방법을 알아봅니다. |
+| 4 | [콘텐츠 번역](translate-content.md) | 번역 커넥터와 규칙을 사용하여 헤드리스 콘텐츠를 번역합니다. |
+| 5 | [번역된 콘텐츠 게시](publish-content.md) | 기본 컨텐츠가 업데이트될 때 번역된 컨텐츠를 게시하고 번역을 업데이트하는 방법을 알아봅니다. |
 
 ## 다음은 무엇입니까? {#what-is-next}
 

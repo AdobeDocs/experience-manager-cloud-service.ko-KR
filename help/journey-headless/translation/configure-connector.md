@@ -1,10 +1,10 @@
 ---
-title: 번역 커넥터 구성(AEM headless)
+title: 헤드리스 컨텐츠에 대한 번역 커넥터 구성
 description: AEM을 번역 서비스에 연결하는 방법을 알아봅니다.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -101,9 +101,6 @@ AEM TIF(Translation Integration Framework)는 타사 번역 서비스와 통합�
    1. **번역 자동 실행** - 번역 서비스로 번역을 자동으로 보내려면 이 속성을 선택합니다.
    1. **업데이트 전용 번역 비활성화** - 이 옵션을 선택하면 번역 프로젝트를 업데이트하면 마지막 번역 이후 변경된 필드뿐만 아니라 번역 가능한 모든 필드가 번역 가능합니다. 번역 프로젝트 업데이트에 대해서는 여정에서 나중에 설명합니다.
    1. **번역을 위한 컨텐츠 모델 필드 활성화** - 번역 구성이 을(를) 기반으로 컨텐츠 모델의 필드를 자동으로 인식하도록 이 옵션을 선택합니다. **번역 가능** 플래그.
-      * 사용 가능한 경우 이 옵션을 선택하여 번역 프로세스를 단순화해야 합니다.
-      * 이 옵션은 AEM as a Cloud Service의 사전 릴리스 채널에서만 사용할 수 있습니다.
-      * 자세한 내용은 [추가 리소스 섹션](#additional-resources) 를 참조하십시오.
 
 1. **저장 및 닫기**&#x200B;를 탭하거나 클릭합니다.
 
@@ -135,7 +132,7 @@ AEM은 유연하고 강력한 툴이며 여러 커넥터와 여러 구성을 통
 * AEM에서 번역 통합 프레임워크의 중요한 매개 변수를 이해합니다.
 * 번역 서비스에 대한 자체 연결을 설정할 수 있습니다.
 
-이 지식을 바탕으로 작성하며 다음 번에 문서를 검토하여 AEM 헤드리스 번역 여정을 계속 진행합니다 [번역 규칙 구성,](translation-rules.md) 여기서 번역할 컨텐츠를 정의하는 방법을 배웁니다.
+이 지식을 바탕으로 작성하며 다음 번에 문서를 검토하여 AEM 헤드리스 번역 여정을 계속 진행합니다 [컨텐츠 번역,](translation-rules.md) 여기에서 지금까지 구성을 사용하여 컨텐츠를 실제로 번역하는 방법을 알아봅니다.
 
 ## 추가 리소스 {#additional-resources}
 
@@ -143,4 +140,3 @@ AEM은 유연하고 강력한 툴이며 여러 커넥터와 여러 구성을 통
 
 * [번역 통합 프레임워크 구성](/help/sites-cloud/administering/translation/integration-framework.md) - 선택한 번역 커넥터 목록을 검토하고 타사 번역 서비스와 통합하도록 Translation Integration Framework를 구성하는 방법을 알아봅니다.
 * [Microsoft Translator에 연결](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM은 테스트 목적으로 체험판 Microsoft 번역 계정을 제공합니다.
-* [AEM as a Cloud Service 사전 릴리스 채널](/help/release-notes/prerelease.md#enable-prerelease) - AEM as a Cloud Service의 사전 릴리스 채널에서 새로운 기능과 향후 기능을 사용해 보는 방법을 알아봅니다.

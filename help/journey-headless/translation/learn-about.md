@@ -1,10 +1,10 @@
 ---
-title: 헤드리스 콘텐츠 및 AEM에서 번역하는 방법에 대해 알아봅니다
+title: 헤드리스 컨텐츠 및 AEM에서 번역에 대해 알아봅니다.
 description: 헤드리스 개념, AEM에 매핑하는 방법, AEM 번역 이론에 대해 알아봅니다.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---

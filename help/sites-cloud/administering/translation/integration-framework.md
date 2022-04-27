@@ -4,9 +4,9 @@ description: 타사 번역 서비스와 통합하도록 번역 통합 프레임�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 5ef9ac087ec3feab9c68935b81882451c308daed
+source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1522'
 ht-degree: 2%
 
 ---
@@ -39,8 +39,8 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [린고텍](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [시스트란](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 커넥터 패키지를 설치한 후 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스를 사용하여 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터에 대한 클라우드 구성 추가에 대한 자세한 내용은 [Microsoft Translator와 통합](connect-ms-translator.md).
@@ -109,13 +109,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 | 태그 번역 | 이 속성을 활성화하여 자산과 연결된 태그를 변환합니다. |
 | 번역 자동 실행 | 번역 프로젝트를 만든 후 번역 작업을 자동으로 실행하려면 이 속성을 선택합니다. 이 옵션을 선택하면 번역 작업을 검토하거나 범위를 지정할 수 없습니다. |
 | 업데이트 전용 번역 비활성화 | 이 옵션을 선택하면 번역 프로젝트를 업데이트하면 마지막 번역 이후 변경된 필드뿐만 아니라 번역 가능한 모든 필드가 번역 가능합니다. |
-| 변환용 컨텐츠 모델 필드 활성화* | 이 옵션을 활성화하면 **번역 가능** 필드 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#properties) 를 클릭하여 필드가 번역되었는지 확인합니다. 이 경우 [번역 규칙](rules.md) 이 대체되었습니다. |
-
->[!NOTE]
->
->*이 기능은 출시 전 채널에서 사용할 수 있습니다.
-> 
->자세한 내용은 [사전 릴리스 채널 설명서](/help/release-notes/prerelease.md#enable-prerelease) 을 참조하십시오.
+| 번역을 위한 컨텐츠 모델 필드 활성화 | 이 옵션을 활성화하면 **번역 가능** 필드 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#properties) 필드를 번역할지 여부를 확인하고 자동으로 만들어집니다 [번역 규칙](rules.md) 따라서, 이 옵션은 만든 번역 규칙보다 우선합니다. |
 
 ## 번역 페이지 구성 {#configuring-pages-for-translation}
 

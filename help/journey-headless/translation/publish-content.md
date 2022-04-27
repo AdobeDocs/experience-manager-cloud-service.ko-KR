@@ -1,15 +1,15 @@
 ---
-title: 번역된 컨텐츠 게시(AEM 헤드리스)
+title: 번역된 헤드리스 컨텐츠 게시
 description: 번역된 콘텐츠를 게시하고 번역을 콘텐츠 업데이트로 업데이트하는 방법을 알아봅니다.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
 
 ---
 
-# 번역된 컨텐츠 게시 {#publish-content}
+# 번역된 헤드리스 컨텐츠 게시 {#publish-content}
 
 번역된 콘텐츠를 게시하고 번역을 콘텐츠 업데이트로 업데이트하는 방법을 알아봅니다.
 

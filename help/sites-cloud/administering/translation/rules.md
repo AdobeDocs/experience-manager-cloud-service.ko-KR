@@ -4,9 +4,9 @@ description: 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
+source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1297'
 ht-degree: 1%
 
 ---
@@ -23,15 +23,9 @@ ht-degree: 1%
 
 이 문서에 설명된 번역 규칙은 **번역을 위한 컨텐츠 모델 필드 활성화** 옵션이에서 활성화되지 않았습니다. [번역 통합 프레임워크 구성 수준.](integration-framework.md#assets-configuration-properties)
 
-만약 **번역을 위한 컨텐츠 모델 필드 활성화** 옵션이 활성화되어 있으면 AEM에서 **번역 가능** 필드 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#properties) 를 클릭하여 필드를 번역할지 여부를 결정합니다. 이 경우 [번역 규칙](rules.md) 이 대체되었습니다.
+만약 **번역을 위한 컨텐츠 모델 필드 활성화** 옵션이 활성화되어 있으면 AEM에서 **번역 가능** 필드 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#properties) 를 클릭하여 필드를 번역할지 여부를 확인하고 그에 따라 번역 규칙을 자동으로 만듭니다. 이 옵션은 사용자가 생성할 수 있는 모든 번역 규칙보다 대체되며 개입 또는 추가 단계가 필요하지 않습니다.
 
-컨텐츠 조각을 번역하기 위해 번역 규칙을 사용하려면 **번역을 위한 컨텐츠 모델 필드 활성화** 번역 통합 프레임워크 구성의 옵션을 비활성화해야 합니다.
-
->[!NOTE]
->
->이 기능은 사전 릴리스 채널에서 사용할 수 있습니다.
-> 
->자세한 내용은 [사전 릴리스 채널 설명서](/help/release-notes/prerelease.md#enable-prerelease) 을 참조하십시오.
+컨텐츠 조각을 번역하기 위해 번역 규칙을 사용하려면 **번역을 위한 컨텐츠 모델 필드 활성화** 번역 통합 프레임워크 구성에 대한 옵션을 비활성화해야 하며 규칙을 만들려면 아래에 설명된 단계를 따라야 합니다.
 
 ## 개요 {#overview}
 

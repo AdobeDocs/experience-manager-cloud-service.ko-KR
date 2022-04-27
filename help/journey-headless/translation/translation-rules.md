@@ -1,10 +1,10 @@
 ---
-title: 번역 규칙 구성(AEM headless)
+title: 헤드리스 컨텐츠에 대한 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역 콘텐츠를 식별하는 방법을 알아봅니다.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ AEM 헤드리스 번역 여정의 이전 문서에서, [번역 커넥터 구성]
 
 >[!CAUTION]
 >
->설명서 여정의 이 단계는 AEM as a Cloud Service 사전 릴리스 채널에 없는 경우에만 필요합니다.
+>설명서 여정의 이 단계는 **번역 가능** 컨텐츠 조각에 플래그 지정
 >
->* 사전 릴리스 채널을 사용하는 경우 여정의 다음 단계로 건너뛰십시오 [컨텐츠 번역.](translate-content.md)
->* 사전 릴리스 채널에 없는 경우 이 문서를 계속 읽으십시오.
->
->자세한 내용은 [추가 리소스 섹션](#additional-resources) 를 참조하십시오.
+>* 다음 **번역 가능** 플래그는 자동으로 번역 규칙을 만들며, 작업을 수행할 필요가 없습니다.
+>* 다음 **번역 가능** 플래그는 번역 통합 프레임워크 구성이 로 설정된 경우에만 사용됩니다 **[번역을 위해 컨텐츠 모델 필드를 활성화합니다.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* TIF 구성에서 이 옵션을 활성화하면 수동으로 생성한 번역 규칙이 대체됩니다.|
+
 
 ## 목표 {#objective}
 
@@ -108,4 +108,3 @@ AEM 헤드리스 번역 여정의 이전 문서에서, [번역 커넥터 구성]
 문서를 검토하여 헤드리스 번역 여정의 다음 부분으로 이동하는 것이 좋습니다 [컨텐츠 번역,](translate-content.md) 다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 하지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
 
 * [번역할 컨텐츠 식별](/help/sites-cloud/administering/translation/rules.md) - 번역 규칙이 번역할 컨텐츠를 식별하는 방법을 알아봅니다.
-* [AEM as a Cloud Service 사전 릴리스 채널](/help/release-notes/prerelease.md#enable-prerelease) - AEM as a Cloud Service의 사전 릴리스 채널에서 새로운 기능과 향후 기능을 사용해 보는 방법을 알아봅니다.
