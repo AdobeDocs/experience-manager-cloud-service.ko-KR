@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media 여정
+title: Dynamic Media 여정, 제1부
 description: 'Dynamic Media 여정은 Dynamic Media의 기본 사항, 작동 방법, 사용자에게 유용한 정보, 작업 및 고객에게 제공하는 가치 등을 다룹니다. '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Dynamic Media에 대해 이해할 수 있는 주요 사항 중 하나는 *무한
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media은 동일한 기본 이미지를 다양한 크기 및 형식의 다양한 미디어에 제공합니다.](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media은 동일한 기본 이미지를 다양한 크기 및 형식의 다양한 미디어에 제공합니다.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *Adobe Dynamic Media을 사용하면 크기나 대역폭에 관계없이 모든 화면에 일관된 품질 경험을 제공할 수 있습니다.*
 
 읽으면서 &quot;하나의 기본 자산 파일, 끝없는 가능성&quot;의 개념이 중요한 이유에 대해 더 자세히 알게 될 것입니다.
@@ -104,7 +105,7 @@ Smart Imaging은 고객의 브라우저 기능을 기반으로 이미지의 형�
 
 전반적으로 스마트 이미징을 사용하면 기존 이미지 사전 설정 설정과 특정 최종 사용자 특성에 따라 22%~47% 성능 향상을 기대할 수 있습니다. 이미지 품질은 마치 전혀 만져지지 않은 것처럼 유지하면서도.
 
-![스마트 이미징](/help/assets/assets-dm/dm-smart-imaging.png)
+![스마트 이미징](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *스마트 이미징은 고객의 브라우저 기능과 네트워크 속도에 따라 이미지의 형식과 파일 크기를 자동으로 최적화합니다.*
 
 스마트 이미징은 사용자와 Dynamic Media 기술 지원 Adobe 간에 협력하여 작업해야 하므로 기본적으로 켜져 있지 않습니다. 또한, Smart Imaging을 활성화하려면 CDN 캐시를 완전히 지운 다음, 시간에 따라 다시 채워야 합니다. 스마트 이미징을 사용하는 데 관심이 있는 경우 기술 지원 티켓을 제출하여 Adobe을 사용하여 켜지도록 할 수 있습니다. 기술 지원을 통해 미리 스마트 이미징을 시도할 수 있는 URL 매개 변수를 제공합니다. 어떤 웹 페이지나 이미지에서도 사용해 볼 수 있으므로 원하는 성능과 절감율을 얻을 수 있습니다. 그런 다음 전체 사이트에 대해 스마트 이미징을 설정할 수 있습니다.
@@ -117,7 +118,7 @@ Smart Imaging은 고객의 브라우저 기능을 기반으로 이미지의 형�
 
 이 문제를 해결하기 위해 Dynamic Media은 다음을 생성할 수 있는 기능을 제공합니다 *응용 비디오 세트*.
 
-![응용 비디오 세트](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![응용 비디오 세트](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *응용 비디오 세트는 다른 비트율 및 형식으로 인코딩된 동일한 비디오의 버전을 그룹화합니다.*
 
 먼저 시스템에 업로드하는 원본 기본 비디오로 시작합니다. Dynamic Media 자동 크기 또는 *코드 변환*: 해당 비디오를 여러 비디오로 분할합니다. 그런 다음 제공 시 지능적으로 어떤 비디오 화면, 어떤 품질 및 어떤 포맷을 사용할 것인지 결정하고 휴대폰, 태블릿 또는 데스크탑 컴퓨터로 전달합니다.
