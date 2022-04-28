@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
+source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2420'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ AEM as a Cloud Service을 통해 Adobe은 AEM 인스턴스 중심 모델에서 C
 
 그 다음 `ui.apps/src/main/content/jcr_root`. 현재는 하위 루트 폴더가 지원되지 않습니다.
 
-기존(기본 제공 인덱스)가 유지되도록 패키지 필터를 설정해야 합니다. 다음 두 가지 방법으로 데이터를 수집할 수 있습니다. 또는 필터가 `<filter root="/oak:index/" mode="merge"/>` 파일에서 `ui.apps/src/main/content/META-INF/vault/filter.xml`또는 각 사용자 지정(또는 사용자 지정) 인덱스를 필터 섹션에 개별적으로 나열해야 합니다(예: ). `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 나중에 이 경우 버전을 변경할 때마다 필터를 조정해야 합니다.
+기존(기본 제공 인덱스)가 유지되도록 패키지 필터를 설정해야 합니다. 파일에서 `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 지정(또는 사용자 지정) 인덱스를 나열해야 합니다(예: ). `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 인덱스 버전을 나중에 변경하면 필터를 조정해야 합니다.
 
 위의 샘플의 패키지는 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
