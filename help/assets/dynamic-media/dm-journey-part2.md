@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 94d77e08e5df82f9bb432bb06c4f05301d119f9e
+source-git-commit: 69d2121323d8a8ab54db3fb0a56195a1271e6112
 workflow-type: tm+mt
-source-wordcount: '2817'
+source-wordcount: '2829'
 ht-degree: 0%
 
 ---
@@ -220,3 +220,7 @@ _Dynamic Media 자습서_
 
 * [Experience Manager Assets과 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
 * [Adobe Experience Manager 콘텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (검색) _Dynamic Media_)
+
+_Dynamic Media 뷰어_
+
+* [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
