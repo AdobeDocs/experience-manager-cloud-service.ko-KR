@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '822'
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,7 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 
 * [런타임 시 /apps 및 /libs를 변경할 수 없습니다](#apps-libs-immutable)
 
-* [OSGi 번들 및 설정은 저장소 기반이어야 합니다](#osgi)
+* [OSGi 번들 및 구성은 코드로 처리되어야 합니다](#osgi)
 
 * [게시 저장소에 대한 변경이 허용되지 않습니다](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 
 * `/libs`의 변경 사항이 전혀 허용되지 않습니다.
    * 이것이 새로운 규칙은 아니지만, AEM의 이전 온프레미스 버전에서는 강제 사항이 아니었습니다.
-* 오버레이가 허용된 `/libs`의 영역에 대한 오버레이가 여전히 `/apps` 내에서 허용됩니다.
+* 의 영역에 대한 오버레이 `/libs` 오버레이가 허용된 `/apps`.
    * 이러한 오버레이는 CI/CD 파이프라인을 통해 Git에서 가져와야 합니다.
 * `/apps`에 저장된 정적 템플릿 디자인 정보는 UI를 통해 편집할 수 없습니다.
    * 대신 편집 가능한 템플릿을 사용하는 것이 좋습니다.
@@ -62,12 +62,14 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 * MSM 블루프린트 및 사용자 지정 MSM 롤아웃 구성은 CI/CD 파이프라인을 통해 Git에서 설치해야 합니다.
 * I18n 번역 변경 사항은 CI/CD 파이프라인을 통해 Git에서 가져와야 합니다.
 
-## OSGi 번들 및 설정은 저장소 기반이어야 합니다 {#osgi}
+## OSGi 번들 및 구성은 코드로 처리되어야 합니다 {#osgi}
 
-이전 AEM 버전에서 OSGi 설정을 변경하는 데 사용되는 웹 콘솔을 AEM 클라우드 서비스에서는 사용할 수 없습니다. 따라서 OSGi에 대한 변경 사항은 CI/CD 파이프라인을 통해 가져와야 합니다.
+OSGi 번들 및 구성에 대한 변경 사항은 CI/CD 파이프라인을 통해 가져와야 합니다.
 
-* OSGi 설정에 대한 변경은 JCR 기반 OSGi 설정으로서 Git 지속성을 통해서만 가능합니다.
-* 새로운 OSGi 번들이나 업데이트된 OSGi 번들은 CI/CD 파이프라인 빌드 프로세스의 일부로서 Git을 통해 가져와야 합니다.
+* 새로운 OSGi 번들이나 업데이트된 OSGi 번들은 CI/CD 파이프라인을 통해 Git을 통해 가져와야 합니다.
+* OSGi 구성에 대한 변경 사항은 CI/CD 파이프라인을 통해서만 Git에서 가져올 수 있습니다.
+
+이전 AEM 버전에서 OSGi 번들 및 구성을 변경하는 데 사용되는 웹 콘솔을 AEM Cloud Service에서 사용할 수 없습니다.
 
 ## 게시 저장소에 대한 변경이 허용되지 않습니다 {#changes-to-publish-repo}
 
@@ -114,4 +116,4 @@ AMS 또는 온프레미스 설치에서 프로젝트 전환의 경우에는 AEM 
 
 ## 에셋 처리 및 전달 {#asset-handling}
 
-에셋 업로드, 처리 및 다운로드는 [!DNL Experience Manager Assets]에서 [!DNL Cloud Service]로 최적화됩니다. [!DNL Assets]는 이제 더 효율적이고 더 많은 확장이 가능하며 훨씬 더 빠른 속도로 업로드 및 다운로드할 수 있습니다. 또한 기존 맞춤형 코드 및 일부 작업에도 영향을 줍니다. 변경 사항 목록 및 [!DNL Experience Manager] 6.5 기능과의 패리티는 [ [!DNL Assets]](/help/assets/assets-cloud-changes.md) 변경 사항을 참조하십시오.
+자산 업로드, 처리 및 다운로드가에 최적화되어 있습니다. [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service]. [!DNL Assets]는 이제 더 효율적이고 더 많은 확장이 가능하며 훨씬 더 빠른 속도로 업로드 및 다운로드할 수 있습니다. 또한 기존 맞춤형 코드 및 일부 작업에도 영향을 줍니다. 변경 사항 목록 및 [!DNL Experience Manager] 6.5 기능과의 패리티는 [ [!DNL Assets]](/help/assets/assets-cloud-changes.md) 변경 사항을 참조하십시오.
