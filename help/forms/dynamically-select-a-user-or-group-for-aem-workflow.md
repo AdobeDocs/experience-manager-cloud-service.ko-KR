@@ -1,16 +1,12 @@
 ---
 title: AEM Forms 중심 워크플로우 단계의 사용자 또는 그룹을 동적으로 선택
-seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
 description: '에 대한 사용자 또는 그룹을 선택하는 방법 알아보기 [!DNL AEM Forms] 런타임 시 워크플로우입니다. '
-seo-description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime.
-uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
-discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 1%
+source-wordcount: '901'
+ht-degree: 0%
 
 ---
 
@@ -116,9 +112,9 @@ function getAdobeSignRecipients() {
 
 ## Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택합니다 {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-를 사용할 수 있습니다 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) 사용자 또는 그룹을 동적으로 선택하는 Java 인터페이스 [!DNL Adobe Sign] 및 작업 단계를 할당합니다. 를 사용하는 OSGi 번들을 만들 수 있습니다 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 [!DNL AEM Forms] server. 이 옵션을 사용하면 작업 할당에서 선택 가능한 옵션을 사용할 수 있습니다. [!DNL Adobe Sign] AEM Workflow 구성 요소입니다.
+를 사용할 수 있습니다 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) 사용자 또는 그룹을 동적으로 선택하는 Java 인터페이스 [!DNL Adobe Sign] 및 작업 단계를 할당합니다. 를 사용하는 OSGi 번들을 만들 수 있습니다 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 [!DNL AEM Forms] server. 이 옵션을 사용하면 작업 할당에서 선택 가능한 옵션을 사용할 수 있습니다. [!DNL Adobe Sign] AEM Workflow 구성 요소입니다.
 
-필요한 경우 [[!DNL AEM Forms] 클라이언트 SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar 및 [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 아래 나열된 코드 샘플을 컴파일할 파일입니다. 이러한 jar 파일을 OSGi 번들 프로젝트에 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
+필요한 경우 [[!DNL AEM Forms] 클라이언트 SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar 및 [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 아래 나열된 코드 샘플을 컴파일할 파일입니다. 이러한 jar 파일을 OSGi 번들 프로젝트에 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
 
 1. Eclipse IDE를 엽니다. 다음으로 이동 **[!UICONTROL 파일]**> **[!UICONTROL 새 프로젝트]**.
 1. 마법사 선택 화면에서 을 선택합니다 **[!UICONTROL Maven 프로젝트]**&#x200B;를 클릭하고 **[!UICONTROL 다음]**.
@@ -141,7 +137,7 @@ function getAdobeSignRecipients() {
            <repository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </repository>
        </repositories>
@@ -149,7 +145,7 @@ function getAdobeSignRecipients() {
            <pluginRepository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </pluginRepository>
        </pluginRepositories>
@@ -225,7 +221,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. 를 사용하는 소스 코드 추가 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 할당 작업 단계에서 사용자 또는 그룹을 동적으로 선택합니다. 샘플 코드에 대해서는 다음을 참조하십시오 [Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택하는 샘플입니다](#-sample-scripts-for).
+1. 를 사용하는 소스 코드 추가 [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 할당 작업 단계에서 사용자 또는 그룹을 동적으로 선택합니다. 샘플 코드에 대해서는 다음을 참조하십시오 [Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택하는 샘플입니다](#-sample-scripts-for).
 1. 명령 프롬프트를 열고 OSGi 번들 프로젝트가 포함된 디렉토리로 이동합니다. 다음 명령을 사용하여 OSGi 번들을 만듭니다.
 
    `mvn clean install`
@@ -349,4 +345,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-

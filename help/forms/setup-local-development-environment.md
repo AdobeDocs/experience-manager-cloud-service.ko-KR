@@ -2,7 +2,7 @@
 title: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 131b17f53b364138d2cea7648d4c23a8480740bf
+source-git-commit: 921975034035f9b6a07ae2b76f433cef30f307a3
 workflow-type: tm+mt
 source-wordcount: '2647'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 을 설정하고 구성할 때 [!DNL  Adobe Experience Manager Forms] 로서의 [!DNL  Cloud Service] 환경에서는 클라우드에 개발, 스테이징 및 프로덕션 환경을 설정합니다. 또한 로컬 개발 환경을 설정하고 구성할 수도 있습니다.
 
-로컬 개발 환경을 사용하여 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업 등)을 만들고 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko-KR) 클라우드 개발 환경에 로그인하지 않아도 됩니다. 적응형 양식 또는 관련 자산이 로컬 개발 인스턴스에서 준비되면 추가 테스트 및 게시를 위해 로컬 개발 환경에서 Cloud Service 환경으로 적응형 양식 및 관련 자산을 내보낼 수 있습니다.
+로컬 개발 환경을 사용하여 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업 등)을 만들고 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko) 클라우드 개발 환경에 로그인하지 않아도 됩니다. 적응형 양식 또는 관련 자산이 로컬 개발 인스턴스에서 준비되면 추가 테스트 및 게시를 위해 로컬 개발 환경에서 Cloud Service 환경으로 적응형 양식 및 관련 자산을 내보낼 수 있습니다.
 
 로컬 개발 환경에서 사용자 지정 구성 요소 및 미리 채우기 서비스와 같은 사용자 지정 코드를 개발하고 테스트할 수도 있습니다. 사용자 지정 코드가 테스트되고 준비되면 Cloud Service 개발 환경의 Git 저장소를 사용하여 사용자 지정 코드를 배포할 수 있습니다.
 
@@ -55,7 +55,7 @@ Use a local development environment:
 
 You can use the local development environment to create and test Adaptive Forms without connecting to the service. Adobe provides a SDK for the local development to help test all the cloud-ready functionalities. When your forms and related assets are ready and tested on the local development environment, you can import these forms and related assets to an [!DNL AEM Forms] as a Cloud Service instance for publishing. 
 
-You can use the [development tools](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/dev-tools.html) to write custom code, customize or create new Adaptive Forms components, create a custom prefill service, or modify default configurations of an [!DNL AEM Forms] as a Cloud Service instance. 
+You can use the [development tools](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/dev-tools.html) to write custom code, customize or create new Adaptive Forms components, create a custom prefill service, or modify default configurations of an [!DNL AEM Forms] as a Cloud Service instance. 
 
 -->
 
@@ -142,7 +142,7 @@ Form Developer 및 Form Programming 및 [이러한 사용자를 사전 정의된
 
 Perform the following steps in the listed order to set up and configure your local development environment:
 
-1. **Set up an AEM author instance:** You require an author instance to create Adaptive Forms. Download and extract the latest AEM SDK archive. Run the quick start file in author run mode to set up an author instance. For detailed instructions, see [default local instance](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html).  
+1. **Set up an AEM author instance:** You require an author instance to create Adaptive Forms. Download and extract the latest AEM SDK archive. Run the quick start file in author run mode to set up an author instance. For detailed instructions, see [default local instance](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html).  
 
 1. **Install the latest [!DNL AEM Forms] add-on feature archive:** [!DNL AEM Forms] add-on feature archive provides tools to create, style, and optimize Adaptive Forms on the local development environment. Install the package to create an Adaptive Form and use various other features of [!DNL AEM Forms]. To install the package:
 
@@ -167,11 +167,11 @@ Perform the following steps in the listed order to set up and configure your loc
 
 Use this project to update configurations, create overlays, develop custom Adaptive Form components, and custom code using the local development environment. To set up the project:
 
-1. **Install and configure Maven and set up an AEM project based on Apache Maven:** Apache Maven is an open-source tool for managing software projects. It helps automate builds and provides quality project information. It is the recommended build management tool for AEM projects. For detailed instructions to set up an AEM project based on Apache Maven, see [How to Build AEM Projects using Apache Maven](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html).
+1. **Install and configure Maven and set up an AEM project based on Apache Maven:** Apache Maven is an open-source tool for managing software projects. It helps automate builds and provides quality project information. It is the recommended build management tool for AEM projects. For detailed instructions to set up an AEM project based on Apache Maven, see [How to Build AEM Projects using Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html).
 
-1. Configure the project to use [uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#install-aem-forms-jee-installer) version 6.5.5 or later and [[!DNL AEM Forms] Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/) version 6.0.160 or later.  
+1. Configure the project to use [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#install-aem-forms-jee-installer) version 6.5.5 or later and [[!DNL AEM Forms] Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/) version 6.0.160 or later.  
 
-1. **Set Up an Integrated Development Environment:**  Set up an IDE of your choice for development, see [Set Up an Integrated Development Environment](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) for detailed instructions.
+1. **Set Up an Integrated Development Environment:**  Set up an IDE of your choice for development, see [Set Up an Integrated Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) for detailed instructions.
  -->
 
 ## 기록 문서(DoR)에 대한 로컬 개발 환경 설정{#docker-microservices}
@@ -242,9 +242,9 @@ AEM Forms as a Cloud Services은 문서 작성 및 다른 마이크로서비스 
 1. **로컬 개발 인스턴스에서 Cloud Manager Git 리포지토리 복제:**  Cloud Manager Git 리포지토리에는 기본 AEM 프로젝트가 포함되어 있습니다. 이것은 [AEM Archetype](https://github.com/adobe/aem-project-archetype/). Cloud Manager UI에서 셀프 서비스 Git 계정 관리를 사용하여 Cloud Manager Git 리포지토리를 복제하여 로컬 개발 환경에서 프로젝트를 가져올 수 있습니다. 리포지토리 액세스에 대한 자세한 내용은 [저장소 액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
 
 <!-- 1. 
-After the repository is cloned, [integrate your Git repo with Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
+After the repository is cloned, [integrate your Git repo with Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
 
-**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
+**Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
 1. **만들기 [!DNL Experience Manager Forms] 로서의 [Cloud Service] 프로젝트:** 만들기 [!DNL Experience Manager Forms] 로서의 [Cloud Service] 프로젝트 기반 [AEM Archetype 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 또는 나중에 사용합니다. Archetype은 개발자가 을 위한 개발을 쉽게 시작할 수 있도록 지원합니다 [!DNL AEM Forms] as a Cloud Service. 또한 빠르게 시작할 수 있도록 몇 가지 샘플 테마 및 템플릿이 포함되어 있습니다.
 
