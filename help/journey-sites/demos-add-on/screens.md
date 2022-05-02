@@ -2,9 +2,9 @@
 title: 데모 사이트용 AEM Screens 활성화
 description: 데모 사이트에서 전체 AEM Screens as a Cloud Service 경험을 활성화하는 단계를 알아봅니다.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2671'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,7 @@ AEM Screens은 컨텍스트에 따라 컨텐츠를 동적으로 변경할 수 �
 
    ![디스플레이 만들기](assets/create-display.png)
 
-1. 채널이 만들어지면 해당 채널을 클릭하여 세부 정보를 확인합니다. 데모 사이트에서 동기화된 채널을 디스플레이에 지정해야 합니다. 클릭 **채널 할당** 화면 오른쪽 상단에 있습니다.
+1. 디스플레이를 만든 후 디스플레이 이름을 클릭하여 디스플레이 세부 사항 화면을 엽니다. 데모 사이트에서 동기화된 채널을 디스플레이에 지정해야 합니다. 클릭 **채널 할당** 화면 오른쪽 상단에 있습니다.
 
    ![채널 세부 사항](assets/channel-detail.png)
 
