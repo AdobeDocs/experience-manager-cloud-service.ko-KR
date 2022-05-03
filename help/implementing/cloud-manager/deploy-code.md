@@ -2,9 +2,9 @@
 title: 코드 배포
 description: AEM as a Cloud Service에서 Cloud Manager 파이프라인을 사용하여 코드를 배포하는 방법을 알아봅니다.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,18 @@ ht-degree: 1%
 
 # 코드 배포 {#deploy-your-code}
 
-AEM as a Cloud Service에서 Cloud Manager 파이프라인을 사용하여 코드를 배포하는 방법을 알아봅니다.
+AEM as a Cloud Service에서 Cloud Manager 파이프라인을 사용하여 프로덕션에 코드를 배포하는 방법을 알아봅니다.
+
+![프로덕션 파이프라인 다이어그램](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+코드를 스테이징에 원활하게 배포한 다음 프로덕션에 배포합니다. 프로덕션 파이프라인 실행은 두 개의 논리 단계로 분할됩니다.
+
+1. 스테이지 환경에 배포
+   * 이 코드는 자동화된 기능 테스트, UI 테스트, 경험 감사 및 UAT(사용자 수락 테스트)를 위해 스테이지 환경에 구축되고 배포됩니다.
+1. 프로덕션 환경에 배포
+   * 빌드가 스테이지에서 검증되고 프로덕션으로 승격되도록 승인되면 동일한 빌드 아티팩트가 프로덕션 환경에 배포됩니다.
+
+_전체 스택 코드 파이프라인 유형만 코드 스캔, 함수 테스트, UI 테스트 및 경험 감사를 지원합니다._
 
 ## AEM에서 Cloud Manager와 함께 코드 배포 as a Cloud Service {#deploying-code-with-cloud-manager}
 

@@ -3,16 +3,16 @@ title: 프로덕션 파이프라인 구성
 description: 코드를 프로덕션 환경에 빌드 및 배포하도록 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
+source-git-commit: 94e37ae6aef64ec61e633e4c034ceefe5e75c7c8
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
 
 # 프로덕션 파이프라인 구성 {#configure-production-pipeline}
 
-코드를 프로덕션 환경에 빌드 및 배포하도록 프로덕션 파이프라인을 구성하는 방법을 알아봅니다.
+코드를 프로덕션 환경에 빌드 및 배포하도록 프로덕션 파이프라인을 구성하는 방법을 알아봅니다. 프로덕션 파이프라인은 코드를 먼저 스테이지 환경에 배포하며, 승인 시 프로덕션 환경에 동일한 코드를 배포합니다.
 
 사용자에게 **[배포 관리자](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** 프로덕션 파이프라인을 구성하는 역할입니다.
 
