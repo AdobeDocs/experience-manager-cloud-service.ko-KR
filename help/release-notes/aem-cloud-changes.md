@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 description: Adobe Experience Manager (AEM) as a Cloud Service의 주요 변경 사항
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
+source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 86%
+source-wordcount: '846'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ AEM 클라우드 서비스는 AEM 프로젝트 관리를 위한 많은 새로운
 
 * [맞춤형 실행 모드가 허용되지 않습니다](#custom-runmodes)
 
-* [복제 에이전트 제거](#replication-agents)
+* [복제 에이전트 제거 및 관련 변경 사항](#replication-agents)
 
 * [클래식 UI 제거](#classic-ui)
 
@@ -96,13 +96,15 @@ AEM 클라우드 서비스에 대해 즉시 사용할 수 있도록 다음 실�
 
 추가적인 실행 모드나 사용자 지정 실행 모드는 AEM 클라우드 서비스에서 사용할 수 없습니다.
 
-## 복제 에이전트 제거 {#replication-agents}
+## 복제 에이전트 제거 및 관련 변경 사항 {#replication-agents}
 
 AEM 클라우드 서비스에서는 컨텐츠가 [Sling 컨텐츠 배포](https://sling.apache.org/documentation/bundles/content-distribution.html)를 사용하여 게시됩니다. 이전 AEM 버전에서 사용된 복제 에이전트는 이제 사용되지 않거나 제공되지 않으며, 이것은 기존 AEM 프로젝트의 다음 영역에 영향을 줄 수 있습니다.
 
 * 예를 들어 미리 보기 서버의 복제 에이전트에 컨텐츠를 푸시하는 사용자 지정 워크플로우.
 * 컨텐츠를 변환하기 위한 복제 에이전트에 대한 사용자 지정
 * 역복제를 사용하여 게시의 컨텐츠를 다시 작성으로 가져오기
+
+또한 복제 에이전트 관리 콘솔에서 일시 중지 및 비활성화 단추가 제거되었습니다.
 
 ## 클래식 UI 제거 {#classic-ui}
 
