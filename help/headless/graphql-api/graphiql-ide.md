@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: ht
-source-wordcount: '964'
-ht-degree: 100%
+source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+workflow-type: tm+mt
+source-wordcount: '978'
+ht-degree: 98%
 
 ---
 
@@ -39,9 +39,10 @@ ht-degree: 100%
 * 이전 쿼리의 **내역** 참조
 * **설명서 탐색기**&#x200B;를 사용하여 설명서에 액세스합니다. 이를 통해 사용 가능한 방법을 쉽게 배우고 이해할 수 있습니다.
 
-예:
+다음 중 하나에서 쿼리 편집기에 액세스할 수 있습니다.
 
-* `http://localhost:4502/aem/graphiql.html`
+* **도구** -> **일반** -> **GraphQL 쿼리 편집기**
+* 직접 예 `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL 인터페이스](assets/cfm-graphiql-interface.png "GraphiQL 인터페이스")
 

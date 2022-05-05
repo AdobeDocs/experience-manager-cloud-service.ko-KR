@@ -1,22 +1,17 @@
 ---
-title: Adobe Analytics과 통합할 때 사용할 IMS 구성
+title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics과 통합할 때 사용할 IMS 구성에 대해 알아봅니다
-source-git-commit: 7686329de2ef621f69899e07efa9af16e50a35f9
+exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 3%
+source-wordcount: '893'
+ht-degree: 5%
 
 ---
 
-# Adobe Analytics과 통합할 때 사용할 IMS 구성 {#ims-configuration-for-integration-with-adobe-analytics}
+# Adobe Analytics와 통합할 때 사용되는 IMS 구성 {#ims-configuration-for-integration-with-adobe-analytics}
 
-Analytics Standard API를 통해 Adobe Analytics과 Adobe Experience Manager as a Cloud Service(AEMaaCS)를 통합하려면 Adobe IMS(Identity Management 시스템)를 구성해야 합니다. 구성은 Adobe 개발자 콘솔로 실현됩니다.
-
->[!NOTE]
-> 
->이 기능은 사전 릴리스 채널에서 사용할 수 있습니다.
->
->자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 을 참조하십시오.
+Analytics Standard API를 통해 Adobe Analytics과 Adobe Experience Manager as a Cloud Service(AEMaaCS)를 통합하려면 Adobe IMS(Identity Management 시스템)를 구성해야 합니다. Adobe Developer 콘솔으로 구성이 구현되었습니다.
 
 >[!NOTE]
 >
@@ -39,7 +34,7 @@ Analytics Standard API를 통해 Adobe Analytics과 Adobe Experience Manager as 
 
 * 조직의 시스템 관리자는 Admin Console을 사용하여 조직의 필수 개발자를 관련 제품 프로필에 추가해야 합니다.
 
-   * 이렇게 하면 특정 개발자에게 Adobe 개발자 콘솔을 사용하여 통합을 활성화할 수 있는 권한이 제공됩니다.
+   * 이렇게 하면 특정 개발자에게 Adobe Developer 콘솔을 사용하여 통합을 활성화할 수 있는 권한이 제공됩니다.
    * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -70,7 +65,7 @@ Adobe 개발자 콘솔을 사용하여 Adobe Analytics(AEM에서 사용)와 프�
 
 ### 프로젝트 만들기 {#creating-the-project}
 
-AEM에서 사용할 Adobe Analytics으로 프로젝트를 만들려면 Adobe 개발자 콘솔을 엽니다.
+Adobe Developer 콘솔을 열어 AEM에서 사용할 Adobe Analytics으로 프로젝트를 만듭니다.
 
 1. 프로젝트용 Adobe 개발자 콘솔을 엽니다.
 
@@ -129,7 +124,7 @@ AEM에서 사용할 Adobe Analytics으로 프로젝트를 만들려면 Adobe 개
 
 ## Adobe 개발자 콘솔 통합 프로젝트에 대해 저장된 세부 사항 {#details-stored-for-the-ims-integration-project}
 
-Adobe 개발자 콘솔 - 프로젝트에서 모든 통합 프로젝트 목록을 볼 수 있습니다.
+Adobe Developer 콘솔에서 - 프로젝트에서 모든 통합 프로젝트 목록을 볼 수 있습니다.
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 

@@ -2,16 +2,22 @@
 title: AEM 배달 API를 통해 콘텐츠에 액세스하는 방법
 description: AEM 헤드리스 개발자 여정의 이 부분에서 GraphQL 쿼리를 사용하여 컨텐츠 조각 컨텐츠에 액세스하는 방법을 알아봅니다.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 8%
+source-wordcount: '1410'
+ht-degree: 11%
 
 ---
 
 # AEM 배달 API를 통해 콘텐츠에 액세스하는 방법 {#access-your-content}
 
 의 이 부분에서 [AEM Headless Developer 여정,](overview.md) GraphQL 쿼리를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 이를 앱에 제공하는 방법(헤드리스 게재)을 배울 수 있습니다.
+
+>[!NOTE]
+>
+>이 기능 중 일부는 프리릴리스 채널에서 사용할 수 있습니다. 특히 지속 쿼리와 관련된 기능이 사용될 수 있습니다.
+> 
+>환경에 맞는 기능을 활성화하는 방법에 대한 자세한 내용은 [프리릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease)를 참조하십시오.
 
 ## 지금까지 그 이야기 {#story-so-far}
 
@@ -242,7 +248,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 컨텐츠에 대한 쿼리를 시작하기 전에 다음을 수행해야 합니다.
 
 * 엔드포인트 활성화
-   * 도구 -> 자산 -> GraphQL 사용
+   * 도구 사용 -> 일반 -> GraphQL
    * [GraphQL 끝점 활성화하기](/help/headless/graphql-api/graphql-endpoint.md)
 
 * GraphiQL 설치(필요한 경우)
@@ -270,9 +276,10 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ### 쿼리를 테스트할 위치 {#where-to-test-your-queries}
 
-쿼리는 GraphiQL 인터페이스에 입력할 수 있습니다. 예를 들면 다음과 같습니다.
+쿼리는 GraphiQL 인터페이스에 입력할 수 있습니다. 다음 중 하나에서 쿼리 편집기에 액세스할 수 있습니다.
 
-* `http://localhost:4502/aem/graphiql.html`
+* **도구** -> **일반** -> **GraphQL 쿼리 편집기**
+* 직접 예 `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL 인터페이스](assets/graphiql-interface.png "GraphiQL 인터페이스")
 

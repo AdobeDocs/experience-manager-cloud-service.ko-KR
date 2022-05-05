@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -90,12 +90,6 @@ Date24/08/2021
    ![추가 태그](assets/add-tags-to-asset.png)
 
 1. 클릭 **저장** 자산 메타데이터 변경 사항을 업데이트하려면
-
->[!NOTE]
->
->스마트 태그를 만드는 동안 태그 구조를 정렬하고 태그 설명을 사용하여 검색 필터를 적용할 수 있습니다.
->
->태그 정렬 기능은 사전 릴리스 채널에서 사용할 수 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](/help/release-notes/prerelease.md#enable-prerelease) 을 참조하십시오.
 
 자세한 내용은 다음 문서를 참조하십시오.
 

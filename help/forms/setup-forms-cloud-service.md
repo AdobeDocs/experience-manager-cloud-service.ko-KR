@@ -2,9 +2,9 @@
 title: '을(를) 설정하는 방법 [!DNL AEM Forms] as a Cloud Service 환경? '
 description: 을(를) 설정하고 구성하는 방법을 알아봅니다 [!DNL AEM Forms] as a Cloud Service 환경
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '588'
 ht-degree: 2%
 
 ---
@@ -39,10 +39,32 @@ ht-degree: 2%
 
 * (샌드박스만 해당) 서비스를 온보딩한 후, [만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 및 [run](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 프로덕션 파이프라인과 비프로덕션 파이프라인 모두. Labs는 의 최신 기능을 활성화하고 제공합니다. [!DNL AEM Forms] 환경에 as a Cloud Service
 
+Forms as a Cloud Service을 사용하여 적응형 양식(디지털 등록)을 만들거나 고객 커뮤니케이션을 생성할 수 있습니다. 완료 후 [온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) 변환 후 [!DNL Adobe Experience Manager] as a Cloud Service, 다음 작업 중 하나를 수행하여 디지털 등록 또는 고객 커뮤니케이션 기능을 활성화합니다. 다음 두 기능을 모두 활성화할 수도 있습니다.
+
+1. Cloud Manager에 로그인하고 AEM Forms as a Cloud Service 인스턴스를 엽니다.
+
+1. 프로그램 편집 옵션을 열고 솔루션 및 추가 기능 탭으로 이동한 다음 **[!UICONTROL Forms - 통신]** 선택 사항입니다.
+
+   ![통신](assets/communications.png)
+
+   이미 을(를) 활성화한 경우 **[!UICONTROL Forms - 디지털 등록]** 옵션을 선택한 다음 **[!UICONTROL Forms - 통신 추가 기능]** 선택 사항입니다.
+
+   ![Addon](assets/add-on.png)
+
+1. 클릭 **[!UICONTROL 업데이트]**.
+
+1. 빌드 파이프라인을 실행합니다. 빌드 파이프라인이 성공하면 환경에 대해 Communications API가 활성화됩니다.
+
+>[!NOTE]
+>
+> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
+
 ## 사용자 구성 {#config-users}
 
 서비스에 대한 온보딩을 완료하면, [!DNL AEM Forms] as a Cloud Service 환경, 작성자 및 게시 인스턴스 열기, Forms에 사용자 추가 [AEM 그룹](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)Analytics JavaScript에 대해 자세히 알아보십시오. 다음 표에는 Forms 관련 AEM 그룹, 기본 제공 및 해당 사용자 유형이 나와 있습니다. 이 표에서는 각 사용자 유형에 대한 AEM 인스턴스 유형을 제공합니다.
-
 
 | 사용자 유형(가상 사용자) | 사용자 그룹 | AEM 인스턴스 |
 |---|---|---|
@@ -57,10 +79,9 @@ Forms 관련 AEM 그룹 및 해당 권한에 대한 자세한 내용은 [그룹 
 
 ## 다음 단계 {#next-steps}
 
-[로컬 개발 환경 설정](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업, 사전 채우기 서비스 등)을 만들 수 있습니다 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR) 클라우드 개발 환경에 로그인하지 않아도 됩니다.
+[로컬 개발 환경 설정](setup-local-development-environment.md). 로컬 개발 환경을 사용하여 적응형 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업, 사전 채우기 서비스 등)을 만들 수 있습니다 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko) 클라우드 개발 환경에 로그인하지 않아도 됩니다.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
-
 
 | Role| Organization| Description|
 |-----|-------|-----|
@@ -90,10 +111,7 @@ After you onboard the service, configure a [local development environment](setup
 
 Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title ‘You now have administrator rights to manage Adobe software and services for your organization’. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) via IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
-
 ## Next step {#next-steps} -->
-
-
 
 <!-- ## Prerequisites {#prerequisites}
 

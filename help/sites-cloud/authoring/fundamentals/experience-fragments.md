@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 95%
+source-wordcount: '1560'
+ht-degree: 93%
 
 ---
 
@@ -354,6 +354,12 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 >[!NOTE]
 >
 >브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 타사 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 컨텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
+
+## 경험 조각 게시 {#publishing-experience-fragments}
+
+경험 조각 게시는 기본적으로 와 동일합니다 [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) ( 경험 조각 콘솔 또는 편집기에서 사용)
+
+또는 다음을 수행할 수도 있습니다 [미리 보기에 게시](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (경험 조각 콘솔 또는 편집기에서 다시)
 
 ## 경험 조각 내보내기 {#exporting-experience-fragments}
 

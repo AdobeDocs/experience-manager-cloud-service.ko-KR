@@ -3,10 +3,10 @@ title: AEM에서 GraphQL 끝점 관리
 description: Headless 콘텐츠 전달용 Adobe Experience Manager as a Cloud Service에서 GraphQL 끝점을 관리하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ GraphQL 끝점을 활성화하려면 먼저 적절한 구성이 필요합니다.
 
 해당 끝점을 활성화하려면 다음을 수행하십시오.
 
-1. **도구**, **에셋**&#x200B;으로 이동한 다음 **GraphQL**&#x200B;을 선택합니다.
+1. 다음으로 이동 **도구**, **일반**&#x200B;를 선택하고 을 선택합니다. **GraphQL**.
 1. **만들기**&#x200B;를 선택합니다.
 1. **새 GraphQL 끝점 만들기** 대화 상자가 열립니다. 여기에서 다음을 지정할 수 있습니다.
    * **이름**: 끝점의 이름입니다. 어떤 텍스트든 입력할 수 있습니다.

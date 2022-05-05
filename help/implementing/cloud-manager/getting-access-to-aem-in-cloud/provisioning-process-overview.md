@@ -1,7 +1,7 @@
 ---
 title: 프로비저닝 프로세스 - 개요
 description: 프로비저닝 프로세스 - 개요
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 8%
@@ -31,7 +31,7 @@ ht-degree: 8%
 * 관리자는 Admin Console을 통해 추가 팀 구성원의 사용자와 역할을 추가할 수 있습니다
 * 사용자의 역할 기반 권한을 검토하여 Cloud Manager에서 권한 할당을 결정하십시오
 
-> ![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
 
 
 자세한 내용은 [Experience League에서 Experience Manager as a Cloud Service으로 온보딩](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
@@ -49,7 +49,7 @@ ht-degree: 8%
 
 ### 2. Adobe Admin Console에 온보드 조직
 
-![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](assets/processOverview2.jpg)
 
 * 시스템 관리자:
    * AEM 프로그램 및 환경을 프로비저닝합니다.
@@ -62,7 +62,7 @@ ht-degree: 8%
 
 ### 3. Admin Console에서 온보드 사용자 및 액세스 관리
 
-![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](assets/processOverview3.jpg)
 
 크기 및 선호도에 따라 사용자를 온보딩하는 세 가지 방법:
 * Admin Console에서 수동으로 사용자 만들기

@@ -3,16 +3,22 @@ title: AEM으로 GraphQL을 사용하는 방법 배우기 - 샘플 콘텐츠 및
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: ht
-source-wordcount: '1416'
-ht-degree: 100%
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+workflow-type: tm+mt
+source-wordcount: '1474'
+ht-degree: 98%
 
 ---
 
 # AEM으로 GraphQL을 사용하는 방법 배우기 - 샘플 콘텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
 AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
+
+>[!NOTE]
+>
+>이 기능 중 일부는 프리릴리스 채널에서 사용할 수 있습니다. 특히 지속 쿼리와 관련된 기능이 사용될 수 있습니다.
+> 
+>환경에 맞는 기능을 활성화하는 방법에 대한 자세한 내용은 [프리릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -40,7 +46,11 @@ GraphQL 쿼리를 시작하고 GraphQL 쿼리가 AEM 콘텐츠 조각과 함께 
 >
 >인스턴스에 따라 쿼리를 제출하고 테스트하기 위해 [AEM GraphQL API에 포함되어 있는 GraphiQL 인터페이스](/help/headless/graphql-api/graphiql-ide.md)에 직접 액세스할 수 있습니다.
 >
->예를 들어`http://localhost:4502/aem/graphiql.html`
+>다음 중 하나에서 쿼리 편집기에 액세스할 수 있습니다.
+>
+>* **도구** -> **일반** -> **GraphQL 쿼리 편집기**
+>* 직접 예 `http://localhost:4502/aem/graphiql.html`
+
 
 >[!NOTE]
 >
@@ -1576,7 +1586,7 @@ query {
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+| NextStep Inc. | 스티브 잡스 | Joe Smith<br>Abe Lincoln |
 
 #### 개인 {#fragment-person}
 
@@ -1596,7 +1606,7 @@ query {
 | 단축키/ID | 제목 |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
+|  GS | 가메스타르 |
 |  OSC | Oscar |
 
 #### 도시 {#fragment-city}

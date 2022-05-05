@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 82%
+source-wordcount: '1791'
+ht-degree: 81%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 82%
 이를 페이지 게시라고도 합니다. 게시 환경에서 페이지를 제거하려는 경우 게시 취소라고 합니다. 게시 및 게시 취소할 때 작성 환경에서 페이지를 삭제할 때까지 계속 변경할 수 있습니다.
 
 페이지를 즉시 또는 미래의 미리 정의된 날짜/시간에 게시/게시 취소할 수 있습니다.
+
+>[!NOTE]
+>
+>경험 조각을 게시하면 기본적으로 경험 조각 콘솔 또는 편집기에서 페이지를 게시하는 것과 동일한 절차를 따릅니다.
 
 ## 용어 {#terminology}
 

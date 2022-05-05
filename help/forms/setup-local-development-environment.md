@@ -2,9 +2,9 @@
 title: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 921975034035f9b6a07ae2b76f433cef30f307a3
+source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
 workflow-type: tm+mt
-source-wordcount: '2647'
+source-wordcount: '2704'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 2%
 
 을 설정하고 구성할 때 [!DNL  Adobe Experience Manager Forms] 로서의 [!DNL  Cloud Service] 환경에서는 클라우드에 개발, 스테이징 및 프로덕션 환경을 설정합니다. 또한 로컬 개발 환경을 설정하고 구성할 수도 있습니다.
 
-로컬 개발 환경을 사용하여 양식 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업 등)을 만들고 [적응형 Forms으로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko) 클라우드 개발 환경에 로그인하지 않아도 됩니다. 적응형 양식 또는 관련 자산이 로컬 개발 인스턴스에서 준비되면 추가 테스트 및 게시를 위해 로컬 개발 환경에서 Cloud Service 환경으로 적응형 양식 및 관련 자산을 내보낼 수 있습니다.
+로컬 개발 환경을 사용하여 클라우드 개발 환경에 로그인하지 않고 다음 작업을 수행할 수 있습니다.
+
+* [양식 만들기](creating-adaptive-form.md) 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업 등)
+* [PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko)
+* 생성할 응용 프로그램 빌드 [고객 커뮤니케이션](aem-forms-cloud-service-communications-introduction.md) 요청 시 또는 배치 모드에서 사용할 수 있습니다.
+
+응용 양식 또는 관련 자산이 로컬 개발 인스턴스 또는 애플리케이션에서 생성하여 생성할 준비가 되면 [고객 커뮤니케이션] 준비가 되면 추가 테스트 또는 프로덕션 환경으로 이동하기 위해 적응형 양식 또는 고객 커뮤니케이션 애플리케이션을 로컬 개발 환경에서 Cloud Service 환경으로 내보낼 수 있습니다.
 
 로컬 개발 환경에서 사용자 지정 구성 요소 및 미리 채우기 서비스와 같은 사용자 지정 코드를 개발하고 테스트할 수도 있습니다. 사용자 지정 코드가 테스트되고 준비되면 Cloud Service 개발 환경의 Git 저장소를 사용하여 사용자 지정 코드를 배포할 수 있습니다.
 
@@ -66,15 +72,15 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 | 소프트웨어 | 설명 | 다운로드 링크 |
 |---|---|---|
 | Adobe Experience Manager as a Cloud Service SDK | SDK에 포함 [!DNL Adobe Experience Manager] QuickStart 및 Dispatcher 도구 | 에서 최신 SDK를 다운로드합니다. [소프트웨어 배포](#software-distribution) |  |
-| Adobe Experience Manager Forms 기능 아카이브(AEM Forms 추가 기능) | 적응형 Forms 및 기타 Adobe Experience Manager 양식 기능을 만들고, 스타일을 지정하고, 최적화하는 도구 | 다운로드 위치 [소프트웨어 배포](#software-distribution) |
-| (선택 사항) Adobe Experience Manager Forms 참조 컨텐츠 | 적응형 Forms 및 기타 Adobe Experience Manager 양식 기능을 만들고, 스타일을 지정하고, 최적화하는 도구 | 다운로드 위치 [소프트웨어 배포](#software-distribution) |
-| (선택 사항) Adobe Experience Manager Forms Designer | 적응형 Forms 및 기타 Adobe Experience Manager 양식 기능을 만들고, 스타일을 지정하고, 최적화하는 도구 | 다운로드 위치 [소프트웨어 배포](#software-distribution) |
+| Adobe Experience Manager Forms 기능 아카이브(AEM Forms 추가 기능) | 적응형 Forms 및 기타 Adobe Experience Manager Forms 기능을 만들고, 스타일을 지정하고, 최적화하는 도구 | 다운로드 위치 [소프트웨어 배포](#software-distribution) |
+| (선택 사항) Adobe Experience Manager Forms 참조 컨텐츠 | 적응형 Forms 및 기타 Adobe Experience Manager Forms 기능을 만들고, 스타일을 지정하고, 최적화하는 도구 | 다운로드 위치 [소프트웨어 배포](#software-distribution) |
+| (선택 사항) Adobe Experience Manager Forms Designer | 적응형 Forms 및 기타 Adobe Experience Manager Forms 기능을 만들고, 스타일을 지정하고, 최적화하는 도구 | 다운로드 위치 [소프트웨어 배포](#software-distribution) |
 
 ### 소프트웨어 배포에서 최신 버전의 소프트웨어를 다운로드합니다 {#software-distribution}
 
 최신 버전의 Adobe Experience Manager as a Cloud Service SDK를 다운로드하려면 Experience Manager Forms 기능 아카이브(AEM Forms 추가 기능), 양식 참조 자산 또는 Forms 디자이너를 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html):
 
-1. Adobe ID을 사용하여 https://experience.adobe.com/#/downloads에 로그인합니다
+1. 에 로그인합니다. <https://experience.adobe.com/#/downloads> Adobe ID 사용
 
    >[!NOTE]
    >
@@ -176,18 +182,18 @@ Use this project to update configurations, create overlays, develop custom Adapt
 
 ## 기록 문서(DoR)에 대한 로컬 개발 환경 설정{#docker-microservices}
 
-AEM Forms as a Cloud Services은 문서 작성 및 다른 마이크로서비스 사용을 위한 문서 기반 SDK 환경을 제공합니다. 플랫폼 특정 바이너리 및 적응성을 수동으로 구성할 수 있습니다. 환경을 설정하려면 다음을 수행하십시오.
+AEM Forms as a Cloud Services은 문서 작성 및 다른 마이크로서비스 사용을 위한 문서 기반 SDK 환경을 제공합니다. 플랫폼별 바이너리 및 적응을 수동으로 구성할 수 있습니다. 환경을 설정하려면 다음을 수행하십시오.
 
 1. 설치 및 구성 Docker:
 
-   * (Microsoft Windows의 경우) 설치 [Docker Desktop](https://www.docker.com/products/docker-desktop). 컴퓨터에서 Docker 엔진 및 Docker-compose를 구성합니다.
+   * (Microsoft® Windows용) 설치 [Docker Desktop](https://www.docker.com/products/docker-desktop). 다음을 구성합니다 `Docker Engine` 및 `docker-compose` 사용자 시스템에 있는
 
    * (Apple macOS) 설치 [Mac용 Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-mac). 여기에는 Docker 엔진, Docker CLI 클라이언트, Docker Compose, Docker Content Trust, Kubernetes 및 Credential Helper가 포함됩니다.
 
-   * (Linux용) 설치 [Docker 엔진](https://docs.docker.com/engine/install/#server) 및 [Docker 작성](https://docs.docker.com/compose/install/) 사용자 시스템에 있는
+   * (Linux®의 경우) 설치 [Docker 엔진](https://docs.docker.com/engine/install/#server) 및 [Docker 작성](https://docs.docker.com/compose/install/) 사용자 시스템에 있는
    >[!NOTE]
    >
-   > * Apple macOS의 경우 로컬 AEM 작성자 인스턴스가 포함된 폴더를 화이트리스트에 추가합니다.
+   > * Apple macOS의 허용 목록에 추가하다 경우 로컬 AEM 작성자 인스턴스가 포함된 폴더를 게시합니다.
    >
    > * Windows용 Docker Desktop은 두 개의 백엔드인 Hyper-V를 지원합니다.
       > (기존) 및 WSL2(최신). 파일 공유 자동
@@ -209,8 +215,8 @@ AEM Forms as a Cloud Services은 문서 작성 및 다른 마이크로서비스 
 
 1. 로컬 AEM 작성자 인스턴스가 작동되고 실행 중인지 확인합니다. 다음 명령을 실행하여 SDK를 시작합니다.
 
-   * (Microsoft Windows의 경우) `sdk.bat start`
-   * (Linux 또는 Apple Mac OS의 경우) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * (Microsoft® Windows) `sdk.bat start`
+   * (Linux® 또는 Apple macOS의 경우) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
 
    >[!NOTE]
    >
@@ -218,7 +224,7 @@ AEM Forms as a Cloud Services은 문서 작성 및 다른 마이크로서비스 
 
    ![start-sdk-command](assets/start-sdk.png)
 
-이제 로컬 개발 환경을 사용하여 기록 문서를 렌더링할 수 있습니다. 테스트하려면 XDP 파일을 환경에 업로드하고 렌더링합니다. 예를 들어 http://localhost:4502/libs/xfaforms/profiles/default.print.pdf?template=crx:///content/dam/formsanddocuments/check-request.xdp 은 XDP 파일을 PDF 문서로 변환합니다.
+이제 로컬 개발 환경을 사용하여 기록 문서를 렌더링할 수 있습니다. 테스트하려면 XDP 파일을 환경에 업로드하고 렌더링합니다. 예, <http://localhost:4502/libs/xfaforms/profiles/default.print.pdf?template=crx:///content/dam/formsanddocuments/cheque-request.xdp> xdp 파일을 PDF 문서로 변환합니다.
 
 ## Experience Manager 원형 기반 Forms용 개발 프로젝트 설정 {#forms-cloud-service-local-development-environment}
 
@@ -226,7 +232,7 @@ AEM Forms as a Cloud Services은 문서 작성 및 다른 마이크로서비스 
 
 | 테마 | 템플릿 | 양식 데이터 모델 |
 ---------|----------|---------
-| 캔버스 3.0 | 기본 | Microsoft Dynamics 365 |
+| 캔버스 3.0 | 기본 | Microsoft® Dynamics 365 |
 | 조용한 | 비어 있음 | Salesforce |
 | Urbane |  |  |
 | 울트라마린 |  |  |
@@ -234,7 +240,7 @@ AEM Forms as a Cloud Services은 문서 작성 및 다른 마이크로서비스 
 
 >[!NOTE]
 >
-> AEM Archetype 버전 30 이상 기반 프로젝트를 설정하여 AEM Forms Dynamics 365 및 Salesforce 양식 데이터 모델을 가져오고 사용할 수 있습니다. 이 모델은 Microsoft as a Cloud Service으로 제공됩니다.
+> AEM Archetype 버전 30 이상 기반 프로젝트를 설정하여 Microsoft® Dynamics 365 및 Salesforce Form Data Models를 AEM Forms as a Cloud Service으로 가져오고 사용할 수 있습니다.
 > AEM Archetype 버전 32 이상 기반 프로젝트를 설정하여 AEM Forms as a Cloud Service으로 Tranquil, Urbane 및 Ultramarine 테마를 가져오고 사용할 수 있습니다.
 
 프로젝트를 설정하려면 다음을 수행하십시오.
@@ -248,13 +254,17 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 1. **만들기 [!DNL Experience Manager Forms] 로서의 [Cloud Service] 프로젝트:** 만들기 [!DNL Experience Manager Forms] 로서의 [Cloud Service] 프로젝트 기반 [AEM Archetype 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 또는 나중에 사용합니다. Archetype은 개발자가 을 위한 개발을 쉽게 시작할 수 있도록 지원합니다 [!DNL AEM Forms] as a Cloud Service. 또한 빠르게 시작할 수 있도록 몇 가지 샘플 테마 및 템플릿이 포함되어 있습니다.
 
-   명령 프롬프트를 열고 아래 명령을 실행하여 [!DNL Experience Manager Forms] as a Cloud Service 프로젝트. 포함하려면 [!DNL Forms] 특정 구성, 테마 및 템플릿, `includeFormsenrollment=y`.
+   명령 프롬프트를 열고 아래 명령을 실행하여 [!DNL Experience Manager Forms] as a Cloud Service 프로젝트.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
    ```
 
-   또한, `appTitle`, `appId`, 및 `groupId`를 입력하여 환경을 반영하십시오.
+   변경 `appTitle`, `appId`, 및 `groupId` 위 명령에서 사용자 환경을 반영합니다.
+
+   * 를 사용하십시오 `includeFormsenrollment=y` 적응형 Forms을 만드는 데 필요한 Forms 관련 구성, 테마, 템플릿, 핵심 구성 요소 및 종속성을 포함하는 선택 사항입니다. Forms Portal을 사용하는 경우 `includeExamples=y` 선택 사항입니다. 프로젝트에 Forms Portal 핵심 구성 요소가 추가됩니다.
+
+   * 를 사용하십시오 `includeFormscommunications=y` 옵션에는 고객 커뮤니케이션 기능을 포함하는 데 필요한 Forms 핵심 구성 요소 및 종속성이 포함되어 있습니다.
 
 1. 프로젝트를 로컬 개발 환경에 배포합니다. 다음 명령을 사용하여 로컬 개발 환경에 배포할 수 있습니다
 
@@ -263,8 +273,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    전체 명령 목록이 필요하면 [빌드 및 설치](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
 1. [코드를 [!DNL AEM Forms] as a Cloud Service 환경](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
-
-
 
 ## 로컬 Dispatcher 도구 설정 {#setup-local-dispatcher-tools}
 

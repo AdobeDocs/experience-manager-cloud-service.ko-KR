@@ -2,9 +2,9 @@
 title: 콘텐츠 미리보기
 description: 라이브로 전환하기 전에 AEM 미리 보기 서비스를 사용하여 컨텐츠를 미리 보는 방법을 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,10 @@ AEM에서는 사이트 미리 보기 서비스를 제공하여 개발자와 컨�
 페이지 전환 및 기타 게시 측 전용 콘텐츠와 같이 작성 환경에서 볼 수 없는 페이지 경험을 쉽게 미리 볼 수 있습니다.
 
 미리 보기 환경에 대한 자세한 내용은 문서를 참조하십시오 [환경 관리.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
+>[!NOTE]
+>
+>경험 조각 을 미리 보기에 게시하면 기본적으로 경험 조각 콘솔 또는 편집기에서 페이지에 대해 와 동일한 절차를 따릅니다.
 
 ## 미리 보기에 컨텐츠 게시 {#publishing-content-to-preview}
 
