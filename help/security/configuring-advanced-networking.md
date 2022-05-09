@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
+source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2964'
 ht-degree: 99%
 
 ---
@@ -70,11 +70,11 @@ API는 몇 초 안에 응답하여 업데이트 상태를 표시해야 하고, �
 
 ### 유연한 포트 이그레스 삭제 또는 비활성화 {#deleting-disabling-flexible-port-egress-provision}
 
-종료 **delete** 프로그램의 네트워크 인프라, *DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}* 자세한 내용은 Cloud Manager API 설명서 를 참조하십시오.
+종료 **delete** 프로그램의 네트워크 인프라, `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
 
 특정 환경에서 유연한 포트 이그레스를 **비활성화**&#x200B;하려면 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`를 호출하십시오.
 
-자세한 내용은 [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)를 참조하십시오.
+API에 대한 자세한 내용은 [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### 트래픽 라우팅 {#flexible-port-egress-traffic-routing}
 
