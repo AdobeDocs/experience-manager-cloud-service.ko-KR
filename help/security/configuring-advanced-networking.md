@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
+source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
 workflow-type: tm+mt
-source-wordcount: '2964'
-ht-degree: 99%
+source-wordcount: '2977'
+ht-degree: 98%
 
 ---
 
@@ -71,6 +71,10 @@ API는 몇 초 안에 응답하여 업데이트 상태를 표시해야 하고, �
 ### 유연한 포트 이그레스 삭제 또는 비활성화 {#deleting-disabling-flexible-port-egress-provision}
 
 종료 **delete** 프로그램의 네트워크 인프라, `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> 이 인프라를 사용하는 환경이 있는 경우 삭제 는 인프라를 삭제하지 않습니다.
 
 특정 환경에서 유연한 포트 이그레스를 **비활성화**&#x200B;하려면 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`를 호출하십시오.
 
