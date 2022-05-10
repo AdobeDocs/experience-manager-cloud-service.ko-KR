@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
+source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 7%
 | ------------- | --------------------------- |
 | ✓ | 지원됨 |
 | * | 표 아래의 참고 설명을 참조하십시오 |
-| - | 해당 사항 없음 |
+| - | 해당되지 않음 |
 
 ## Adobe 형식 {#adobe-formats}
 
@@ -195,7 +195,7 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3(IV30), MJPEG, Microsoft 비디오 1(MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
-| M4V | Apple iTunes | H264/AVC | - |
+| M4V | Apple iTunes | H264/AVC | − |
 | MKV | 마트로스카 | H264/AVC | - |
 | 이동, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV(DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | MP4 | MPEG-4 | H264/AVC(모든 프로필) | - |
@@ -213,7 +213,11 @@ ht-degree: 7%
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF(아래 참고 참조) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>보안 PDF의 경우 업로드만 지원됩니다.
 
 ## Dynamic Media - 지원되는 래스터 이미지 형식 {#image-support-dynamic-media}
 
