@@ -3,9 +3,9 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3449'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
 1. 콘솔 왼쪽에서 도구 아이콘을 선택한 다음 로 이동합니다 **[!UICONTROL Cloud Services > Dynamic Media 구성]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 글로벌]** (폴더 아이콘을 의 왼쪽에 선택하지 마십시오.) **[!UICONTROL 글로벌]**). 그런 다음 을(를) 선택합니다 **[!UICONTROL 만들기]**.
-1. 설정 **[!UICONTROL Dynamic Media 구성 만들기]** 페이지에서 제목과 Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. 이 정보는 규정 이메일에서 Adobe이 제공합니다. 이 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
+1. 설정 **[!UICONTROL Dynamic Media 구성 만들기]** 페이지에서 Dynamic Media 계정의 회사 관리자의 제목, Dynamic Media 계정 이메일 주소 및 암호를 입력한 다음 해당 지역을 선택합니다. 이 정보는 규정 이메일에서 Adobe이 제공합니다. 이 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
 1. 선택 **[!UICONTROL Dynamic Media에 연결]**.
 1. 에서 **[!UICONTROL 암호 변경]** 대화 상자, **[!UICONTROL 새 암호]** 필드에 8-25자로 구성된 새 암호를 입력합니다. 암호는 다음 중 적어도 하나를 포함해야 합니다.
 
@@ -282,7 +282,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
    * 두 번 탭하기 **[!UICONTROL 활성화됨]** 필드. 기본적으로 모든 자산 MIME 유형이 활성화되어 있습니다(다음으로 설정). **[!UICONTROL true]**). 즉, 자산이 처리를 위해 Dynamic Media에 동기화됩니다. 이 자산 MIME 유형을 처리하지 않도록 제외하려면 이 설정을 다음으로 변경하십시오 **[!UICONTROL false]**.
 
-   * 두 번 탭 **[!UICONTROL jobParam]** 연결된 텍스트 필드를 엽니다. 자세한 내용은 [지원되는 MIME 유형](/help/assets/file-format-support.md) 허용되는 처리 매개 변수 값 목록에 대해서는 주어진 MIME 유형에 사용할 수 있습니다.
+   * 두 번 탭 **[!UICONTROL jobParam]** 연결된 텍스트 필드를 엽니다. 자세한 내용은 [지원되는 MIME 유형](/help/assets/file-format-support.md) 을 참조하십시오.
 
 1. 다음 중 하나를 수행하십시오.
    * 추가 MIME 유형을 편집하려면 3-4단계를 반복합니다.
@@ -292,7 +292,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 #### 지원되지 않는 형식에 대한 MIME 유형 추가 {#adding-mime-types-for-unsupported-formats}
 
-Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에서 추가하는 새 노드가 Experience Manager에서 삭제되지 않도록 하려면 먼저 MIME 유형을 이동합니다 `image_`. 또한 이 활성화된 값이 **[!UICONTROL false]**.
+Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에 추가한 새 노드가 Experience Manager에서 삭제되지 않도록 하려면 먼저 MIME 유형을 이동합니다 `image_`. 또한 이 활성화된 값이 **[!UICONTROL false]**.
 
 **지원되지 않는 형식에 대한 MIME 유형을 추가하려면 다음을 수행합니다.**
 
