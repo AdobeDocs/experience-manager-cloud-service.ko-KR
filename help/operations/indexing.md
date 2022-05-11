@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
+source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
 workflow-type: tm+mt
-source-wordcount: '2420'
-ht-degree: 98%
+source-wordcount: '2535'
+ht-degree: 90%
 
 ---
 
@@ -64,13 +64,13 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 >[!NOTE]
 >
->`damAssetLucene-6`과 같이 기본 제공 색인을 사용자 정의하는 경우 CRX DE 패키지 관리자(`/crx/packmgr/`)를 사용해 *Cloud Service 환경*&#x200B;의 개발 환경에서 최신 기본 제공 색인 정의를 복사하십시오. 그 다음 `damAssetLucene-6-custom-1`과 같이 구성의 이름을 바꾸고 상단에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 지워지지 않도록 할 수 있습니다. 예를 들어 `/oak:index/damAssetLucene-6/tika`의 `tika` 노드는 클라우드 서비스의 맞춤화된 색인에 필요합니다. Cloud SDK에는 없습니다.
+>기본 인덱스를 사용자 지정하는 경우(예: ) `damAssetLucene-6`에서 최신 기본 인덱스 정의를 복사하십시오 *Cloud Service 환경* crx DE 패키지 관리자 사용(`/crx/packmgr/`). 그 다음 `damAssetLucene-6-custom-1`과 같이 구성의 이름을 바꾸고 상단에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 지워지지 않도록 할 수 있습니다. 예를 들어 `/oak:index/damAssetLucene-6/tika`의 `tika` 노드는 클라우드 서비스의 맞춤화된 색인에 필요합니다. Cloud SDK에는 없습니다.
 
 이 이름 지정 패턴에 따라 실제 색인 정의가 포함된 새 색인 정의 패키지를 준비해야 합니다.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-그런 후 `ui.apps/src/main/content/jcr_root`로 전환해야 합니다. 하위 루트 폴더는 이제 지원되지 않습니다.
+그런 후 `ui.apps/src/main/content/jcr_root`로 전환해야 합니다. 사용자 지정 및 사용자 지정 인덱스 정의는 모두 아래에 저장해야 합니다 `/oak:index`.
 
 기존 색인(기본 제공 색인)이 유지되고 있는 것과 같이 패키지의 필터를 설정해야 합니다. 파일에서 `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 지정(또는 사용자 지정) 인덱스를 나열해야 합니다(예: ). `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 인덱스 버전을 나중에 변경하면 필터를 조정해야 합니다.
 
@@ -84,15 +84,69 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 ## 색인 정의 배포 {#deploying-index-definitions}
 
->[!NOTE]
->
->Jackrabbit FileVault Maven Package 플러그인 버전 **1.1.0**&#x200B;과 관련하여 `<packageType>application</packageType>`의 모듈에 `oak:index`를 추가할 수 없는 문제가 있습니다. 이 플러그인의 최신 버전으로 업데이트해야 합니다.
-
-색인 정의는 이제 사용자 정의로 표시되며 다음 버전입니다.
+색인 정의는 사용자 정의 및 버전이 지정됨으로 표시됩니다.
 
 * 색인 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
 
-그러므로 색인을 배포하기 위해 색인 정의(`/oak:index/definitionname`)는 Git과 Cloud Manager 배포 프로세스를 통해 `ui.apps`로 게시되어야 합니다.
+사용자 지정 또는 사용자 지정 인덱스를 배포하려면 인덱스 정의(`/oak:index/definitionname`)을 전달해야 합니다. `ui.apps` Git 및 Cloud Manager 배포 프로세스를 통해 다음을 수행할 수 있습니다. FileVault 필터에서(예: ) `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 지정 및 사용자 지정 인덱스를 개별적으로 나열하십시오(예: ) `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 사용자 지정/사용자 지정된 인덱스 정의 자체가 파일에 저장됩니다 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`를 채울 수 있습니다.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="[async,nrt]"
+        compatVersion="{Long}2"
+        ...
+        </indexRules>
+        <tika jcr:primaryType="nt:unstructured">
+            <config.xml jcr:primaryType="nt:file"/>
+        </tika>
+</jcr:root>
+```
+
+위의 예에는 Apache Tika에 대한 구성이 포함되어 있습니다. Tika 구성 파일은 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+
+### 프로젝트 구성
+
+사용되는 Jackrabbit Filerabbit Maven 패키지 플러그인의 버전에 따라 프로젝트에서의 몇 가지 추가 구성이 필요합니다. Jackrabbit Filerabbit Maven 패키지 플러그인 버전을 사용할 때 **1.1.6** 또는 그 이상인 경우 `pom.xml` 는 다음에 대한 플러그인 구성에 다음 섹션을 포함해야 합니다. `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (바로 그 전에) `jackrabbit-nodetypes`):
+
+```xml
+<jackrabbit-packagetype>
+    <options>
+        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+    </options>
+</jackrabbit-packagetype>
+```
+
+또한 이 경우 `vault-validation` 버전을 최신 버전으로 업그레이드해야 합니다.
+
+```xml
+<dependency>
+    <groupId>org.apache.jackrabbit.vault</groupId>
+    <artifactId>vault-validation</artifactId>
+    <version>3.5.6</version>
+</dependency>
+```
+
+그런 다음 `ui.apps.structure/pom.xml` 및 `ui.apps/pom.xml`, 의 구성 `filevault-package-maven-plugin` 다음을 수행해야 함 `allowIndexDefinitions` 뿐만 아니라 `noIntermediateSaves` 활성화되었습니다. 옵션 `noIntermediateSaves` 인덱스 구성이 자동으로 추가되도록 합니다.
+
+```xml
+<groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <properties>
+            <cloudManagerTarget>none</cloudManagerTarget>
+            <noIntermediateSaves>true</noIntermediateSaves>
+        </properties>
+    ...
+```
+
+in `ui.apps.structure/pom.xml`, `filters` 이 플러그인의 섹션은 다음과 같이 필터 루트를 포함해야 합니다.
+
+```xml
+<filter><root>/oak:index</root></filter>
+```
 
 새 색인 정의가 추가되면 새 애플리케이션이 Cloud Manager를 통해 배포되어야 합니다. 배포되면 두 개의 작업이 시작되어 색인 정의를 MongoDB와 Azure Segment Store에 추가(필요한 경우 병합)해 각각 작성 및 게시할 수 있게 됩니다. 파란색-녹색 변환이 일어나기 전에 기본 저장소가 새 색인 정의로 다시 지정됩니다.
 
