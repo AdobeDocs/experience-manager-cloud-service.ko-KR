@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 작업 및 유지 관리
-description: Adobe Experience Manager as a Cloud Service 작업 및 유지 관리 자습 리소스 및 설명서 링크
-landing-page-description: 색인 및 유지 관리 작업과 같은 AEM as a Cloud Service의 백엔드 작업에 대해 알아봅니다.
+description: '색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service의 백엔드 작업에 대해 알아보고 질문에 대한 답변을 얻을 수 있습니다. '
+landing-page-description: 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service의 백엔드 작업에 대해 알아보고 질문에 대한 답변을 얻을 수 있습니다.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 81%
 
 ---
 
 # Experience Manager as a Cloud Service 작업 및 유지 관리 {#aem-operations-guide}
 
-이 페이지에는 Experience Manager as a Cloud Service 작업 및 유지 관리에 대한 자습 리소스들이 나열됩니다.
+색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service의 백엔드 작업에 대해 알아보고 질문에 대한 답변을 얻을 수 있습니다.
 
 ## 주요 작업 문서 {#key-articles}
 

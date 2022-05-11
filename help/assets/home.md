@@ -1,20 +1,20 @@
 ---
-title: '"[!DNL Assets] 로서의 [!DNL Cloud Service] 안내서"'
-description: '"[!DNL Adobe Experience Manager Assets] 로서의 [!DNL Cloud Service] 자습 리소스 및 설명서 링크"'
+title: Assets as a Cloud Service 안내서
+description: Assets에 대해 as a Cloud Service으로 알아보고 새로운 기능에 대해 업데이트됩니다.
 landing-page-description: Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 38%
+source-wordcount: '293'
+ht-degree: 37%
 
 ---
 
-# [!DNL Assets] 로서의 [!DNL Cloud Service] 안내서 {#aem-assets-guide}
+# [!DNL Assets as a Cloud Service] 안내서 {#aem-assets-guide}
 
-다음에 대한 자습 리소스를 사용할 수 있습니다 [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service].
+알아보기 [!DNL AEM Assets as a Cloud Service] 새로운 기능에 대해 업데이트를 받습니다.
 
 ## 키 [!DNL Assets] 문서 {#key-articles}
 

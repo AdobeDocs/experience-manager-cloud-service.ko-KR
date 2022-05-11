@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 보안
-description: Adobe Experience Manager as a Cloud Service 보안 자습 리소스 및 설명서 링크
+description: 'Adobe Experience Manager as a Cloud Service의 보안 기능에 대해 자세히 알아보십시오. '
 landing-page-description: Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다.
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 100%
+source-wordcount: '382'
+ht-degree: 92%
 
 ---
 
 # Experience Manager as a Cloud Service 보안 {#aem-security-guide}
 
-이 페이지에는 Experience Manager as a Cloud Service 보안에 대한 자습 리소스가 나열됩니다.
+Adobe Experience Manager as a Cloud Service의 보안 기능에 대해 자세히 알아보십시오.
 
 ## 주요 보안 문서 {#key-articles}
 

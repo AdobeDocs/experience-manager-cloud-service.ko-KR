@@ -1,18 +1,18 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Adobe Experience Manager Screens as a Cloud Service 개요 자가 진단 리소스 및 설명서 링크
+description: AEM Screens 및 이 디지털 서명 솔루션이 작동하는 방식에 대해 자세히 알아보십시오.
 landing-page-description: AEM Screens as a Cloud Service에 대해 이해합니다.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 74%
+source-wordcount: '418'
+ht-degree: 69%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-이 페이지에는 AEM Screens as a Cloud Service과 관련된 자습 리소스들이 나열됩니다.
+이 페이지는 AEM Screens과 이 디지털 서명 솔루션의 작동 방식에 대한 자세한 내용을 이해하는 데 도움이 됩니다. 자가 진단 리소스를 가져와 새로운 기능에 대해 알아보십시오.
 
 >[!NOTE]
 >AEM 6.5가 포함된 AEM Screens의 경우 [AEM Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).

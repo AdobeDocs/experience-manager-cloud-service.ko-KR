@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 개요
-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
+title: Experience Manager as a Cloud Service 시작하기
+description: Experience Manager as a Cloud Service 작동 방식과 소프트웨어가 제공하는 기능을 알아봅니다.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 87%
 
 ---
 
 # Experience Manager as a Cloud Service 개요 {#aem-overview-guide}
 
-이 페이지에는 Experience Manager as a Cloud Service에 대한 소개 및 개요를 제공하는 자습 리소스가 기재되어 있습니다.
+여기서 Experience Manager as a Cloud Service 작동 방식과 소프트웨어가 제공하는 기능을 살펴보십시오.
 
 ## 주요 개요 문서 {#key-articles}
 

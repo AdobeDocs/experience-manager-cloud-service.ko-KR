@@ -1,18 +1,18 @@
 ---
 title: AEM Content and Commerce
-description: AEM Content 및 Commerce 자가 진단 리소스 및 설명서 링크
+description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
 landing-page-description: Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 84%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
 
 # AEM Content and Commerce {#commerce-guide}
 
-이 페이지에는 AEM Content and Commerce와 관련된 자습 리소스들이 나열됩니다.
+Experience Manager Content 및 Commerce as a Cloud Service를 사용하고 관리하는 방법을 알아봅니다.
 
 >[!NOTE]
 >
