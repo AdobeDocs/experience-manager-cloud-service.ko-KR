@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 마이그레이션 여정 시작하기
 description: AEM as a Cloud Service로의 전환에 대한 기본 사항을 숙지하여 마이그레이션 여정 시작
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '587'
 ht-degree: 11%
 
 ---
@@ -35,9 +35,13 @@ Cloud Service으로 마이그레이션 여정에는 다음 단계가 포함됩�
 * 모든 것이 준비되면 다음을 사용하여 마이그레이션을 수행할 수 있습니다. [Go-Live 단계](/help/journey-migration/go-live.md)
 * 마지막으로, 마이그레이션 완료 후 문제를 모니터링하고 성능을 개선해야 합니다. [Go-live 후 단계](/help/journey-migration/post-go-live.md).
 
-아래 그림은 권장되는 AEM as a Cloud Service 전환 여정을 시각적으로 보여줍니다.
+아래 그림은 권장되는 AEM as a Cloud Service 전환 여정을 높은 수준으로 보여 줍니다.
 
 ![이미지](/help/journey-migration/assets/move-aemcloud-process.png)
+
+마이그레이션 여정에 대한 보다 세밀하게 보려면 아래 다이어그램을 참조할 수도 있습니다.
+
+![이미지](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
