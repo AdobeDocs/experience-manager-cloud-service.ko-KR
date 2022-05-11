@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
+source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
 workflow-type: tm+mt
-source-wordcount: '2977'
-ht-degree: 98%
+source-wordcount: '2981'
+ht-degree: 97%
 
 ---
 
@@ -518,7 +518,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>VPN의 AEM측에서 고객측으로 이동하는 트래픽의 IP입니다. 고객의 구성 허용 목록에 추가하여 AEM으로부터의 연결만 허용할 수 있습니다.</td>
-    <td>고객이 AEM으로의 VPN 액세스만 허용하고자 하는 경우 해당 액세스에 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 및/또는 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>을 매핑하도록 CNAME DNS 항목을 구성해야 합니다.</td>
+    <td>고객이 AEM에 대한 VPN 액세스를 허용하려면 고객이 자신의 사용자 지정 도메인 및/또는 을 매핑하도록 CNAME DNS 항목을 구성해야 합니다 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 및/또는 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 아래와 같이 변경하는 것을 의미합니다.</td>
   </tr>
 </tbody>
 </table>
