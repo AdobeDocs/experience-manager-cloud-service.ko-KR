@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
+source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
-source-wordcount: '2981'
-ht-degree: 97%
+source-wordcount: '3053'
+ht-degree: 94%
 
 ---
 
@@ -68,13 +68,7 @@ API는 몇 초 안에 응답하여 업데이트 상태를 표시해야 하고, �
 
 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 끝점을 다시 호출하여 환경당 포트 전달 규칙을 하위 집합이 아닌 전체 구성 매개 변수 집합을 포함하도록 업데이트할 수 있습니다.
 
-### 유연한 포트 이그레스 삭제 또는 비활성화 {#deleting-disabling-flexible-port-egress-provision}
-
-종료 **delete** 프로그램의 네트워크 인프라, `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
-
->[!NOTE]
->
-> 이 인프라를 사용하는 환경이 있는 경우 삭제 는 인프라를 삭제하지 않습니다.
+### 유연한 포트 송신 비활성화 {#disabling-flexible-port-egress-provision}
 
 특정 환경에서 유연한 포트 이그레스를 **비활성화**&#x200B;하려면 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`를 호출하십시오.
 
@@ -206,6 +200,12 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 끝점의 유연한 포트 이그레스에서는 라우팅 규칙을 지원하며 전용 이그레스 IP 주소에서는 `nonProxyHosts` 매개 변수를 지원합니다. 이를 통해 전용 IP가 아닌 공유 IP 주소 범위를 통해 라우팅해야 하는 호스트 집합을 선언할 수 있습니다. 이렇게 하면 공유 IP를 통해 이그레스되는 트래픽이 더욱 최적화될 수 있습니다. `nonProxyHost` URL은 `example.com` 또는 `*.example.com`의 패턴을 따르며, 여기서 와일드카드는 도메인의 시작 위치에서만 지원됩니다.
 
 유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때, 특정 IP 주소가 필요하지 않은 경우 Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있으므로 유연한 포트 이그레스를 선택해야 합니다.
+
+### 전용 송신 IP 주소 비활성화 {#disabling-dedicated-egress-IP-address}
+
+다음 **disable** 특정 환경의 전용 송신 IP 주소, 호출 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+API에 대한 자세한 내용은 [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### 트래픽 라우팅 {#dedcated-egress-ip-traffic-routing}
 
@@ -395,9 +395,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
 
 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 끝점을 다시 호출하여 환경당 라우팅 규칙을 하위 집합이 아닌 전체 구성 매개 변수 집합을 포함하도록 업데이트할 수 있습니다. 일반적으로 환경 업데이트가 적용되는 데 5~10분 정도 소요됩니다.
 
-### VPN 삭제 또는 비활성화 {#deleting-or-disabling-the-vpn}
-
-네트워크 인프라를 삭제하려면 고객 지원 센터에 티켓을 제출하여 기존 내용과 삭제 사유에 대해 설명하고 도움을 얻으십시오.
+### VPN 사용 안 함 {#disabling-the-vpn}
 
 특정 환경에 대한 VPN을 비활성화하려면 `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`을 호출하십시오. 자세한 내용은 [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)를 참조하십시오.
 
@@ -538,6 +536,25 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
+## 프로그램의 네트워크 인프라 삭제 {#deleting-network-infrastructure}
+
+종료 **delete** 프로그램의 네트워크 인프라, `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> 삭제는 모든 환경에서 고급 네트워크 작업이 비활성화된 경우에만 인프라를 삭제합니다.
+
 ## 고급 네트워킹 유형 간 전환 {#transitioning-between-advanced-networking-types}
 
-`kind` 매개 변수는 수정할 수 없으므로 도움이 필요하면 고객 지원 센터에 문의하여 기존 내용과 변경 사유에 대해 설명하고 도움을 얻으십시오.
+다음 절차에 따라 고급 네트워킹 유형 간에 마이그레이션할 수 있습니다.
+
+* 모든 환경에서 고급 네트워킹 비활성화
+* 고급 네트워킹 인프라 삭제
+* 올바른 값으로 고급 네트워킹 인프라를 다시 만듭니다.
+* 환경 수준 고급 네트워킹 사용
+
+>[!WARNING]
+>
+> 이 절차는 삭제와 레크리에이션 간에 고급 네트워킹 서비스를 다운타임으로 만듭니다
+
+다운타임으로 인해 중요한 비즈니스 영향이 발생하는 경우 고객 지원 센터에 문의하여 이미 생성된 내용과 변경 이유를 설명하십시오.
