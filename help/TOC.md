@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 45db4869de68627f0ae76798481b96fb4a3e960a
+source-git-commit: ee92bfcf4ed00d8b508f1b6f7d21f73fb4c9029e
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 99%
    + [설명서 여정](/help/journey-documentation/documentation-journeys.md)
 + 릴리스 정보 {#release-notes}
    + [릴리스 정보](/help/release-notes/home.md)
-   + 릴리스 정보 {#release-notes}
+   + 일반 AEMaaCS 릴리스 노트 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
          + [2022.3.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -59,6 +59,47 @@ ht-degree: 99%
          + [2020.4.0 릴리스 정보](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [2020.3.0 릴리스 정보](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [2020.2.0 릴리스 정보](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+   + Cloud Manager 릴리스 정보 {#cloud-manager}
+      + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2022년 {#2022}
+         + [2022.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
+         + [2022.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+      + 2021년 {#2021}
+         + [2021.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
+         + [2021.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
+         + [2021.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
+         + [2021.8.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
+         + [2021.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
+         + [2021.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+         + [2021.5.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+         + [2021.4.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+         + [2021.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+         + [2021.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+         + [2021.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + 2020년 {#2020}
+         + [2020.12.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+         + [2020.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+         + [2020.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+         + [2020.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+         + [2020.8.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+         + [2020.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+         + [2020.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+         + [2020.5.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+         + [2020.4.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+         + [2020.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+         + [2020.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + 마이그레이션 도구 릴리스 정보 {#migration-tools}
+      + [현재 릴리스 노트(2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2022년 {#2022}
+         + [2022.3.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
+         + [2022.2.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+         + [2022.1.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+      + 2021년 {#2021}
+         + [2021.12.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
+         + [2021.11.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
+   + Experience Manager 강화 커넥터용 Workfront 릴리스 정보{#workfront}
+      + [Experience Manager Enhanced Connector용 Workfront의 현재 릴리스 노트](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
    + [알려진 문제](/help/release-notes/known-issues.md)
@@ -105,15 +146,6 @@ ht-degree: 99%
    + [실행](/help/journey-migration/go-live.md)
    + [실행 이후](/help/journey-migration/post-go-live.md)
    + [파트너용 Experience Manager as a Cloud Service 마이그레이션 안내서](/help/journey-migration/getting-started-partners.md)
-   + 마이그레이션 도구 릴리스 정보 {#release-notes-migration-tools}
-      + [현재 릴리스 노트(2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [2022.3.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
-      + [2022.2.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
-      + [2022.1.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021년 {#2021}
-         + [2021.12.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
-         + [2021.11.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Cloud Acceleration Manager 소개 {#introduction-cam}
          + [개요](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
@@ -393,7 +425,6 @@ ht-degree: 99%
       + [Flash 뷰어 서비스 종료](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Adobe Workfront와 통합 {#integrations}
-      + [Experience Manager 강화 커넥터용 Workfront 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [ [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
       + [ [!DNL Workfront]에 [!DNL enhanced connector] 설치](/help/assets/workfront-connector-install.md)
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
@@ -619,37 +650,6 @@ ht-degree: 99%
 + 구현 {#implementing}
    + [AEM as a Cloud Service용 애플리케이션 구현](/help/implementing/home.md)
    + Cloud Manager 사용 {#using-cloud-manager}
-      + Cloud Manager 릴리스 정보 {#release-notes-cloud-manager}
-         + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022년 {#2022}
-            + [2022.4.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
-            + [2022.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
-            + [2022.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
-            + [2022.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-         + 2021년 {#2021}
-            + [2021.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
-            + [2021.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
-            + [2021.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
-            + [2021.8.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
-            + [2021.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
-            + [2021.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
-            + [2021.5.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
-            + [2021.4.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
-            + [2021.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-            + [2021.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-            + [2021.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-         + 2020년 {#2020}
-            + [2020.12.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
-            + [2020.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
-            + [2020.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
-            + [2020.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
-            + [2020.8.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
-            + [2020.7.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
-            + [2020.6.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
-            + [2020.5.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
-            + [2020.4.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
-            + [2020.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
-            + [2020.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
       + 프로그램 {#programs}
          + [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [제작 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)

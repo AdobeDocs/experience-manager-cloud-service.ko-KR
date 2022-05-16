@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 릴리스 2022.02.0의 Cloud Manager 릴리스 노
 description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2022.02.0.
 feature: Release Information
 exl-id: da0643a0-78f8-4e9d-9cc9-a1a17067a08c
-source-git-commit: 8162d1d6ddeff867507f749f223c0111b6856122
+source-git-commit: 0c4a42595800f7f1d0869bf647c3ec99023b12c5
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,16 +24,16 @@ AEM as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 날짜는 2022년 2�
 
 ## 새로운 기능 {#what-is-new}
 
-* 새로운 가속 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 은 HTTPD/dispatcher 구성을 독점적으로 배포하기 위해 도입되었습니다.
-   * AEM 버전을 사용해야 합니다. `2021.12.6151.20211217T120950Z` 또는 이상 [dispatcher 도구의 유연한 모드로 옵트인합니다.](/help/implementing/dispatcher/disp-overview.md#validation-debug) 을 클릭하여 이 기능을 사용할 수 있습니다.
-   * 이 기능은 2022.02.0 릴리스 후 2주에 걸쳐 단계적인 접근 방식으로 롤아웃됩니다.
-* Cloud Manager 랜딩 페이지 환경을 새로 고쳐 향상된 탐색, 그리드/타일 보기 및 팝업 오버를 제공하여 빠른 프로그램 요약을 제공합니다.
-* 실패한 새 임계값(`< D`)이 에 추가되었습니다. [신뢰성 등급 지표.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-   * 시스템 안정성에 영향을 주는 심각한 품질 문제가 있는 고객(주로 잘못된 인덱스 및 워크플로우 프로세스와 관련이 있음)은 이러한 문제가 해결될 때까지 배포할 수 없습니다.
-* 의 심각도 `BannedPath` [품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) 이 차단기에서 위험으로 변경되었습니다.
-* 파이프라인 마법사는 를 구성하기 전에 AEM 환경 업데이트가 필요할 수 있음을 사용자에게 알려줍니다 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 관련 항목.
+* 가속화된 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)이 새로 도입되어 HTTPD/dispatcher 구성을 독점적으로 배포할 수 있습니다.
+   * 이 기능을 사용하려면 AEM 버전 `2021.12.6151.20211217T120950Z` 이상을 사용하고 [유연한 Dispatcher 도구 모드를 옵트인](/help/implementing/dispatcher/disp-overview.md#validation-debug)해야 합니다.
+   * 이 기능은 2022.02.0 출시 후 2 주에 걸쳐 주 단계별 접근 방식으로 제공될 예정입니다.
+* Cloud Manage 랜딩 페이지 경험이 새로워져 탐색 기능이 개선되고, 간단하게 그리드/타일 보기로 전환되고, 빠른 프로그램 요약을 위한 팝업이 제공됩니다.
+* 새 실패 임계값(`< D`)이 [안정성 평가 지표](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)에 추가되었습니다.
+   * 주로 잘못된 인덱스 및 워크플로 프로세스와 관련하여, 시스템 안정성에 영향을 미치는 심각한 품질 문제가 발생하면 고객은 해당 문제가 해결될 때까지 배포할 수 없습니다.
+* `BannedPath` [품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)의 심각도가 차단에서 심각으로 변경되었습니다.
+* 파이프라인 마법사는 관련 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)을 구성하기 전에 AEM 환경 업데이트가 필요한 시기를 사용자에게 알려줍니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 새 암호가 생성되면 이전 Git 리포지토리 암호가 항상 무효화됩니다.
-* API를 통해 환경 변수를 업데이트해도 드물게 발생하는 경우 파이프라인 실행이 더 이상 방해되지 않습니다.
+* 새 암호가 생성되면 이제 기존 Git 저장소 암호는 항상 무효화됩니다.
+* API를 통해 환경 변수를 업데이트하면 특수한 환경에서는 파이프라인이 더 이상 실행되지 않습니다.
