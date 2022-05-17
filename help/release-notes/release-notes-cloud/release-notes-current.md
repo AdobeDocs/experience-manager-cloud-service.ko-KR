@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
+source-git-commit: 9857376cb196b8aaa9fac64636727b5ad20a0360
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '617'
+ht-degree: 32%
 
 ---
 
@@ -44,7 +44,6 @@ ht-degree: 0%
 
 * 이제 다음을 수행할 수 있습니다 [태그 정렬](/help/assets/organize-assets.md#use-tags-to-organize-assets) 태그 선택기 창에서 태그 이름, 작성 날짜 또는 수정 날짜를 기준으로 오름차순 또는 내림차순으로 선택합니다.
 
-
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
@@ -80,6 +79,14 @@ AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속
 * `content-packages-validation` - 배포 중에 설치할 패키지의 올바른 형식의 콘텐츠 구문 및 구조를 확인합니다.
 
 최신 버전의 분석기로 maven 프로젝트를 업데이트하거나 아직 업데이트하지 않았다면 분석기를 포함하는 것이 좋습니다. 자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html).
+
+## [!DNL Experience Manager] 로서의 [!DNL Cloud Service] 기초 보안 {#foundation-security}
+
+### TLS 1.0, 1.1 사용 중단
+
+2022년 6월 30일부터 Experience Manager as a Cloud Service은 보다 안전한 네트워크 통신 및 사용자 시스템과의 데이터 교환을 필요로 합니다. AEM은 TLS(전송 계층 보안), 1.2 프로토콜만 사용합니다. 이전 TLS 버전 1.0 및 1.1은 더 이상 사용되지 않습니다.
+
+이전 버전의 TLS를 1.0, 1.1로 계속 사용하는 경우 Experience Manager as a Cloud Service에 대한 액세스 권한을 잃을 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 
