@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2877'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Dynamic Media 여정 시작: 다음 사항을 학습할 수 있는 기본 사항
 
 >[!TIP]
 >
->최상의 결과를 얻으려면 데스크톱 컴퓨터에서 Dynamic Media 여정을 읽고 보는 것이 좋습니다.
+>최상의 결과를 얻으려면 데스크톱 컴퓨터에서 이 Dynamic Media 여정을 읽고 보는 것이 좋습니다.
 
 ## Dynamic Media URL의 구조 및 Dynamic Media이 컨텐츠를 제공하는 방법 {#dm-journey-d}
 
@@ -43,7 +43,7 @@ _Dynamic Media URL 구조._
 
 계정 이름은 자주색 부분입니다. 이 경우 계정을 라고 합니다 `jpearldemo`.
 
-자산 ID 또는 이름, `AdobeStock_28563982` 녹색입니다. 자산이 *아니요* 파일 확장명(예: `.png` 또는 `.jpg`. 자산을 Dynamic Media에 수집하면 파일 확장명이 제거되고 다른 종류의 파일이 만들어집니다. 피라미드 TIFF 파일. 피라미드형 TIFF을 사용하면 Dynamic Media에서 신속하게 렌디션을 만들 수 있습니다.
+자산 ID 또는 이름, `AdobeStock_28563982` 녹색입니다. 자산이 _아니요_ 파일 확장명(예: `.png` 또는 `.jpg`. 자산을 Dynamic Media에 수집하면 파일 확장명이 제거되고 다른 종류의 파일이 만들어집니다. 피라미드 TIFF 파일. 피라미드형 TIFF을 사용하면 Dynamic Media에서 신속하게 렌디션을 만들 수 있습니다.
 
 그리고 마지막으로, 몇 가지 이미지 처리 매개 변수가 있는데 `?wid=1000&fmt=jpeg&qlt=85`끝에 노란색으로 표시됩니다.
 
@@ -68,7 +68,7 @@ Dynamic Media에는 웹 페이지에서 이미지 자산을 세밀하게 조정�
 
 그 시계는 여전히 왼쪽으로 약간 기울어져 있다. 의 회전 값 변경 `90` to `92`를 누른 다음 키를 누릅니다. **[!UICONTROL Enter 키]**. [사용해 보세요](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-다시 한번, 당신이 압박하는 순간 **[!UICONTROL Enter 키]**&#x200B;를 입력하면 시계의 새 표현물이 즉시 생성됩니다. 제공되는 성능의 종류를 확인할 수 있으므로 Dynamic Media에서 80만 개 이상의 이미지 요청을 제공하는 이유를 설명합니다. *초당*&#x200B;바쁜 주말, 또는 주요 공휴일에.
+다시 한번, 당신이 압박하는 순간 **[!UICONTROL Enter 키]**&#x200B;를 입력하면 시계의 새 표현물이 즉시 생성됩니다. 제공되는 성능의 종류를 확인할 수 있으므로 Dynamic Media에서 80만 개 이상의 이미지 요청을 제공하는 이유를 설명합니다. _초당_&#x200B;바쁜 주말, 또는 주요 공휴일에.
 
 이미지별 URL로 이미지 처리 매개 변수를 변경할 수 있지만, 특히 웹 사이트를 구성하는 수만 개의 이미지가 있는 경우에는 효율적이지 않습니다. 이미지 사전 설정을 사용하는 것이 훨씬 좋습니다.
 
@@ -204,17 +204,19 @@ _다음 `Running` 플라이아웃 뷰어가 적용된 이미지 세트입니다.
 * `ZoomVertical_dark` 이미지 자산에 적용된 뷰어. [사용해 보세요](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` 이미지에 적용된 뷰어. [사용해 보세요](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
 
-## 추가 정보
+## 선택 사항 - 자세히 알아보기
 
-_Dynamic Media 항목_
+방금 읽은 내용을 자세히 알아보려면 아래 자료를 사용하여 개념을 자세히 살펴보십시오. 그렇지 않으면 Dynamic Media 여정이 완료되었습니다!
 
-* [이미지 사전 설정 만들기](/help/assets/dynamic-media/image-presets.md)
+_Dynamic Media 도움말 항목_
+
+* [이미지 사전 설정을 만드는 방법](/help/assets/dynamic-media/image-presets.md)
 * 목록 [이미지 처리 매개 변수](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) 이미지 사전 설정을 생성할 때 이미지 수정자 필드에서 사용할 수 있습니다
-* [에셋 미리보기](/help/assets/dynamic-media/previewing-assets.md)
-* [3D 에셋 미리보기](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [이미지 세트](/help/assets/dynamic-media/image-sets.md)
-* [스핀 세트](/help/assets/dynamic-media/spin-sets.md)
-* [혼합 미디어 세트](/help/assets/dynamic-media/mixed-media-sets.md)
+* [자산을 미리 보는 방법](/help/assets/dynamic-media/previewing-assets.md)
+* [3D 자산을 미리 보는 방법](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [이미지 세트를 만드는 방법](/help/assets/dynamic-media/image-sets.md)
+* [스핀 세트를 만드는 방법](/help/assets/dynamic-media/spin-sets.md)
+* [혼합 미디어 세트를 만드는 방법](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Dynamic Media 자습서_
 
@@ -223,6 +225,6 @@ _Dynamic Media 자습서_
 
 _Dynamic Media 뷰어_
 
-* [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) 각 뷰어의
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ _2부_
 
 >[!TIP]
 >
->최상의 결과를 얻으려면 데스크톱 컴퓨터에서 Dynamic Media 여정을 읽고 보는 것이 좋습니다.
+>최상의 결과를 얻으려면 데스크톱 컴퓨터에서 이 Dynamic Media 여정을 읽고 보는 것이 좋습니다.
 
 ## Dynamic Media이란 무엇이며, 이를 통해 어떤 도움을 얻을 수 있습니까? {#dm-journey-a}
 
@@ -249,44 +249,50 @@ Adobe은 자산을 무손실 형식으로 업로드하는 것을 권장합니다
 
 자산을 수동으로 게시하는 것 외에 업로드 시 사용자 개입 없이 자산을 즉시 게시하도록 Dynamic Media을 구성할 수 있습니다.
 
-업로드 후에 Dynamic Media에서 자산의 렌디션을 미리 보는 방법은 다릅니다. 표현물 미리 보기를 사용하면 고객이 보게 되는 내용을 이해할 수 있습니다. 일반적인 미리 보기 방법은 자산을 선택한 다음, 자산을 선택하여 해당 표현물을 보는 것입니다 *이미지 사전 설정* 다음을 참조하십시오.
+업로드 후에 Dynamic Media에서 자산의 렌디션을 미리 보는 방법은 다릅니다. 표현물 미리 보기를 사용하면 고객이 보게 되는 내용을 이해할 수 있습니다. 일반적인 미리 보기 방법은 자산을 선택한 다음, 자산을 선택하여 해당 표현물을 보는 것입니다 _이미지 사전 설정_ 다음을 참조하십시오.
 
 ![큰 이미지 사전 설정을 기반으로 자산의 렌디션 미리 보기](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _선택한 &quot;큰&quot; 이미지 사전 설정을 기반으로 자산의 렌디션을 미리 봅니다. URL 단추를 클릭합니다. 결과 URL 경로에는 &quot;큰&quot; 이미지 사전 설정 이름이 포함되어 있으며 웹 페이지에서 사용할 수 있습니다._
 
 위의 URL은 live입니다! [사용해 보세요](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-자산을 미리 보는 또 다른 방법은 이미지 자산을 선택한 다음 *뷰어* 사전 설정 을 참조하십시오.
+자산을 미리 보는 또 다른 방법은 이미지 자산을 선택한 다음 _뷰어_ 사전 설정 을 참조하십시오.
 
 ![확대/축소 세로 광원 뷰어 사전 설정을 기반으로 자산 미리 보기](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _선택한 &quot;ZoomVertical_light&quot; 뷰어 사전 설정을 기반으로 자산을 미리 봅니다. 마우스 포인터(`+`)가 확대하기 위해 시계 위로 이동되었습니다. URL 및 포함 단추에 주목합니다._
 
 위의 표현물은 라이브입니다! [사용해 보세요](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
 
-진행 상황을 더 잘 이해할 수 있도록 이러한 URL을 좀 더 가깝게 살펴보겠습니다. 다음 위치로 이동 [Dynamic Media 여정: 기초, 2부](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+## 선택 사항 - 자세히 알아보기
 
-## 추가 정보
+이 여정의 1부는 다양한 Dynamic Media 주제에 대한 기본 사항을 다룹니다. 방금 읽은 내용을 자세히 알아보려면 아래 자료를 사용하여 개념을 자세히 살펴보십시오. 그렇지 않으면 여정의 2부를 계속 사용할 수 있습니다. 자세한 내용은 [이 Dynamic Media 여정의 다음 기능](#whats-next).
 
-_Dynamic Media 항목_
+_Dynamic Media 도움말 항목_
 
-* [Dynamic Media를 사용하여 작업](/help/assets/dynamic-media/dynamic-media.md)
-* [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
-* [응용 비디오 세트](/help/assets/dynamic-media/video.md)
+* [Experience Manager에서 Dynamic Media 작업](/help/assets/dynamic-media/dynamic-media.md)
+* [스마트 이미징 정보](/help/assets/dynamic-media/imaging-faq.md)
+* [응용 비디오 세트를 만드는 방법](/help/assets/dynamic-media/video.md)
 * [이미지 품질 최적화 모범 사례](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [에셋 업로드](/help/assets/add-assets.md#upload-assets)
-* [에셋 미리보기](/help/assets/dynamic-media/previewing-assets.md)
-* [3D 에셋 미리보기](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Dynamic Media 자산 제공](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [자산을 업로드하는 방법](/help/assets/add-assets.md#upload-assets)
+* [자산을 미리 보는 방법](/help/assets/dynamic-media/previewing-assets.md)
+* [3D 자산을 미리 보는 방법](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Dynamic Media 자산을 제공하는 방법](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [자산을 게시하는 방법](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Dynamic Media의 선택적 게시를 사용하여 작업](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media 자습서_
 
 * [Experience Manager Assets과 Dynamic Media 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager 콘텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (검색) *Dynamic Media*)
+* [Adobe Experience Manager 콘텐츠 라이브러리](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (검색) _Dynamic Media_)
 
 _Dynamic Media 뷰어_
 
-* [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) 각 뷰어의
+
+## 이 Dynamic Media 여정의 다음 기능 {#whats-next}
+
+이 여정에서 II 부분에서는 Dynamic Media URL을 좀 더 자세히 확인하여 자산이 전달될 때 일어나는 상황을 더 잘 이해할 수 있습니다. 또한 자산을 렌더링하기 위해 이미지 사전 설정을 만드는 기본 사항과 이미지 세트, 스핀 세트 및 혼합 미디어 세트를 만드는 방법에 대해 자세히 알아봅니다.
+
+다음 위치로 이동 [Dynamic Media 여정: 기초, 2부](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
