@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -181,6 +181,10 @@ Define DISABLE_DEFAULT_CACHING
          Header set Age 0
       </LocationMatch>
       ```
+
+### HEAD 요청 동작 {#request-behavior}
+
+인 리소스에 대해 Adobe CDN에 HEAD 요청이 수신되는 경우 **not** 캐시되면 요청이 디스패처 및/또는 AEM 인스턴스에 의해 GET 요청으로 변환되고 수신됩니다. 응답을 캐시할 수 있으면 CDN에서 후속 HEAD 요청이 제공됩니다. 응답을 캐시할 수 없는 경우에는 후속 HEAD 요청이 Dispatcher 및/또는 AEM 인스턴스에 적용되는 기간에 대해 `Cache-Control` TTL.
 
 ## Dispatcher 캐시 무효화 {#disp}
 
