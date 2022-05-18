@@ -2,9 +2,9 @@
 title: 도메인 이름 상태 확인
 description: 사용자 지정 도메인 이름이 Cloud Manager에서 성공적으로 확인되었는지 확인하는 방법을 알아봅니다.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,24 @@ Cloud Manager는 TXT 값을 통해 도메인 소유권을 확인하고 다음 �
    * 문서를 참조하십시오 [사용자 지정 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) 추가 정보
 
 선택하면 Cloud Manager에서 자동으로 TXT 확인을 트리거합니다 **저장** 의 검증 단계에서 **사용자 지정 도메인 추가** 마법사 이후 확인을 위해 상태 옆에 있는 확인 아이콘을 다시 선택해야 합니다.
+
+## 도메인 이름 오류 {#domain-error}
+
+이 섹션에서는 표시되는 오류와 이를 해결하는 방법에 대해 설명합니다.
+
+**도메인이 설치되지 않음** - 레코드가 적절히 업데이트되었는지 확인한 후에도 TXT 레코드의 도메인 유효성 검사 중에 이 오류가 표시됩니다.
+
+**오류 설명** - 도메인을 등록한 초기 계정에 제대로 잠글 수 있으며, 다른 계정은 권한을 요청하지 않고 하위 도메인을 등록할 수 없습니다. 또한 Apex 도메인과 연관된 하위 도메인만 하나의 기본 서비스 및 계정에 할당할 수 있습니다. AEM Cloud Service 도메인에 사용된 동일한 Apex 및 하위 도메인을 연결하는 기존 Apple 계정이 있는 경우 이 오류가 표시됩니다.
+
+**오류 해결** - 다음과 같이 오류가 수정되었습니다.
+
+* Cloud Manager에 도메인을 설치하기 전에 기존 계정에서 에이펙스 및 하위 도메인을 제거하십시오. 이 옵션을 사용하여 Apex 도메인 및 모든 하위 도메인을 AEM as a Cloud Service 기본 계정에 연결합니다. 자세한 내용은 [기본 설명서에서 도메인 작업](https://docs.fastly.com/en/guides/working-with-domains) 추가 세부 정보.
+
+* Apex 도메인에 다른 Apple 계정에 연결하려는 AEM as a Cloud Service 및 비AEM as a Cloud Service 사이트에 대한 하위 도메인이 여러 개 있는 경우 Cloud Manager에 도메인을 설치하려고 하며, 도메인 설치에 실패하면 Apple과 함께 고객 지원 티켓을 만들어 고객을 대신하여 직접 추적할 수 있습니다.
+
+>[!NOTE]
+>
+>참고: 도메인이 제대로 설치되지 않은 경우 사이트의 DNS를 AEM as a Cloud Service IP로 라우팅하지 마십시오.
 
 ## 사용자 지정 도메인 이름에 대한 기존 CDN 구성 {#pre-existing-cdn}
 
