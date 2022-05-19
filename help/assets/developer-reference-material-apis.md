@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 3%
+source-wordcount: '1795'
+ht-degree: 4%
 
 ---
 
@@ -167,6 +167,8 @@ CDN 에지 노드는 요청된 바이너리 업로드 속도를 높이는 데 �
 | `versionLabel` | 문자열 | 선택 사항입니다 | 새 버전이 만들어지면 자산의 새 버전과 연결된 레이블 . |
 | `versionComment` | 문자열 | 선택 사항입니다 | 새 버전을 만들면 버전과 연관된 주석이 됩니다. |
 | `replace` | 부울 | 선택 사항입니다 | If `True` 지정한 이름의 자산이 있고 [!DNL Experience Manager] 자산을 삭제한 다음 다시 만듭니다. |
+| `uploadDuration` | 숫자 | 선택 사항입니다 | 파일을 완전히 업로드하는 데 걸린 총 시간(밀리초)입니다. 지정된 경우 전송 속도 분석을 위해 시스템의 로그 파일에 업로드 기간이 포함됩니다. |
+| `fileSize` | 숫자 | 선택 사항입니다 | 파일의 크기(바이트)입니다. 지정한 경우 파일 크기는 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
 
 >[!NOTE]
 자산이 있고 둘 다 없는 경우 `createVersion` 아니요 `replace` 지정한 후 [!DNL Experience Manager] 자산의 현재 버전을 새 바이너리로 업데이트합니다.
