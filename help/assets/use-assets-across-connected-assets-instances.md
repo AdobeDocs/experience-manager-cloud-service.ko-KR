@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
+source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3763'
 ht-degree: 15%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 15%
 
 작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 드래그합니다. 문서가 `Download` 구성 요소 및 이미지를 `Image` 구성 요소. 작성자가 사용자 지정 항목에 원격 자산을 추가할 수도 있습니다 [!DNL Experience Manager] 기본값을 확장하는 구성 요소 `Download` 또는 `Image` 구성 요소. 지원되는 형식은 다음과 같습니다.
 
-* **이미지 형식**: 다음 형식의 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 을 지원합니다.
+* **이미지 형식**: 다음 형식의 [이미지 구성 요소](file-format-support.md#image-formats) 을 지원합니다.
 * **문서 형식**: 자세한 내용은 [지원되는 문서 형식](file-format-support.md#document-formats).
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
