@@ -2,10 +2,10 @@
 title: '"[!DNL Adobe Experience Manager] as a Cloud Service 프리릴리스 채널"'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service 프리릴리스 채널"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '805'
+ht-degree: 84%
 
 ---
 
@@ -29,28 +29,42 @@ ht-degree: 100%
 
 ### 클라우드 환경 {#cloud-environments}
 
-클라우드 개발 환경의 Sites 콘솔에서 새 기능 및 프로젝트 맞춤화 결과를 확인하려면 다음을 수행하십시오.
+사전 릴리스를 사용하도록 클라우드 환경을 업데이트하려면 새 다음을 추가하십시오 [환경 변수](../implementing/cloud-manager/environment-variables.md) cloud Manager에서 환경 구성 UI 사용:
 
-* [Cloud Manager API의 환경 변수 끝점](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)을 사용하여 **AEM_RELEASE_CHANNEL** 환경 변수를 **프리릴리스** 값으로 설정합니다.
+1. 로 이동합니다 **프로그램** > **환경** > **환경 구성** 업데이트하려고 합니다.
+1. 새 추가 [환경 변수](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | 이름 | 값 | 서비스 적용됨 | 유형 |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | 모든 | 변수 |
 
-[https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)의 지침에 따라 Cloud Manager CLI를 사용할 수도 있습니다.
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. 변경 사항을 저장하면 환경 은 사전 릴리스 기능 토글이 활성화되어 새로 고침됩니다.
+
+   ![새 환경 변수](assets/env-configuration-prerelease.png)
 
 
-환경을 정기적인(비 프리릴리스) 채널의 비헤이비어로 복원하고자 하는 경우 변수를 삭제하거나 다른 값으로 다시 설정할 수 있습니다.
+**또는** cloud Manager API 및 CLI를 사용하여 환경 변수를 업데이트할 수 있습니다.
 
-* 또는 [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md)에서 환경 변수를 구성할 수도 있습니다.
+* 사용 [Cloud Manager API의 환경 변수 엔드포인트](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), 설정 **AEM_RELEASE_CHANNEL** 값에 대한 환경 변수 **사전 릴리스**.
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)의 지침에 따라 Cloud Manager CLI를 사용할 수도 있습니다.
+
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+
+
+환경을 일반(사전 릴리스가 아닌) 채널의 동작으로 복원하려는 경우 변수를 삭제하거나 다른 값으로 설정할 수 있습니다.
 
 ### 로컬 SDK {#local-sdk}
 
