@@ -2,9 +2,9 @@
 title: '등록, 로그인 및 사용자 프로필 '
 description: AEM as a Cloud Service에 대한 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
+source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1174'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 1%
 >
 >사용자 자격 증명의 초기 인증만 IdP에 의해 인증되고, 쿠키를 사용할 수 있는 한 AEM 로그인 토큰 쿠키를 사용하여 AEM에 대한 후속 요청이 수행됩니다.
 
-에 대한 자세한 내용은 설명서 를 참조하십시오. [SAML 2.0 인증 핸들러](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=en#saml-authentication-handler).
+에 대한 자세한 내용은 설명서 를 참조하십시오. [SAML 2.0 인증 핸들러](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html).
 
 **OAuth/SSO**
 
