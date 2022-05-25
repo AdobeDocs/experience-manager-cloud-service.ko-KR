@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 0%
+source-wordcount: '2184'
+ht-degree: 1%
 
 ---
 
@@ -83,31 +83,42 @@ Define DISABLE_DEFAULT_CACHING
 * AEM 클라이언트측 라이브러리 프레임워크를 사용하면 변경 사항이 고유한 경로가 있는 새 파일로 매니페스트되므로 브라우저에서 무기한 캐싱할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다.  즉, 클라이언트 라이브러리를 참조하는 HTML이 필요에 따라 생성되므로 고객이 게시되는 새로운 컨텐츠를 경험할 수 있습니다. cache-control은 &quot;변경할 수 없음&quot; 값을 준수하지 않는 이전 브라우저의 경우 30일로 설정됩니다.
 * 섹션을 참조하십시오. [클라이언트 측 라이브러리 및 버전 일관성](#content-consistency) 추가 세부 정보.
 
-### 이미지 및 Blob 저장소에 충분히 저장될 수 있는 큰 컨텐츠 {#images}
+### 이미지 및 Blob 저장소에 저장할 수 있을 만큼 큰 모든 콘텐츠 {#images}
 
-* 기본적으로 캐시되지 않음
-* 다음 apache를 통해 보다 자세한 세분화된 수준에서 설정할 수 있습니다 `mod_headers` 지시문:
+2022년 5월 중순 이후에 생성된 프로그램(특히 65000 이상인 프로그램 ID의 경우)의 기본 동작은 요청의 인증 컨텍스트를 준수하면서 기본적으로 캐시되는 것입니다. 이전 프로그램(프로그램 ID가 65000 이하)은 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+두 경우 모두 apache를 사용하여 apache/dispatcher 계층에서 캐싱 헤더를 보다 세밀하게 조정할 수 있습니다 `mod_headers` 지시어(예:
 
-   너무 많이 캐시하지 않도록 주의하고 AEM에서 항상 &quot;always&quot; 옵션을 사용하여 캐싱을 적용하도록 하는 방법에 대해서는 위의 html/text 섹션에서 토론을 참조하십시오.
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   파일이 `src/conf.dispatcher.d/`캐시에 기본 구성에 있는 다음 규칙이 있습니다.
+디스패처 계층에서 캐싱 헤더를 수정할 때는 너무 많이 캐시하지 않도록 주의하십시오(HTML/텍스트 섹션의 토론 참조) [위](#html-text)). 또한 캐시되지 않고 비공개로 유지되어야 하는 자산이 의 일부가 아닌지 확인합니다 `LocationMatch` 지시어 필터.
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### 새로운 기본 캐싱 동작 {#new-caching-behavior}
 
-   캐시되지 않고 비공개로 유지되어야 하는 자산이 LocationMatch 지시어 필터의 일부가 아닌지 확인합니다.
+AEM 계층은 캐시 헤더가 이미 설정되었는지 여부 및 요청 유형의 값에 따라 캐시 헤더를 설정합니다. 설정된 캐시 제어 헤더가 없으면 공용 콘텐츠가 캐시되고 인증된 트래픽이 전용으로 설정됩니다. 캐시 제어 헤더가 설정된 경우 캐시 헤더에 영향을 주지 않습니다.
 
-   >[!NOTE]
-   >다음을 포함한 다른 메서드 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)은 값을 성공적으로 재정의하지 않습니다.
+| 캐시 제어 헤더가 존재합니까? | 요청 유형 | AEM에서 캐시 헤더를 로 설정합니다. |
+|------------------------------|---------------|------------------------------------------------|
+| 아니요 | 공용 | 캐시 제어: public, max-age=600, 변경할 수 없음 |
+| 아니요 | 인증됨 | 캐시 제어: private, max-age=600, 변경할 수 없음 |
+| 예 | 임의 | 변경되지 않음 |
+
+권장되지는 않지만, Cloud Manager 환경 변수를 설정하여 이전 동작(프로그램 ID가 65000보다 작거나 같음)을 따르도록 새로운 기본 동작을 변경할 수 있습니다 `AEM_BLOB_ENABLE_CACHING_HEADERS` false입니다.
+
+#### 이전 기본 캐싱 동작 {#old-caching-behavior}
+
+AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
+
+>[!NOTE]
+>Cloud Manager 환경 변수 AEM_BLOB_ENABLE_CACHING_HEADERS를 true로 설정하여 새 동작(65000 이상인 프로그램 ID의 경우)과 일치하도록 이전 기본 동작을 변경하는 것이 좋습니다. 프로그램이 이미 활성 상태인 경우 변경 후 컨텐츠가 예상대로 동작하는지 확인하십시오.
+
+>[!NOTE]
+>다음을 포함한 다른 메서드 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)은 값을 성공적으로 재정의하지 않습니다.
 
 ### 노드 저장소의 다른 컨텐츠 파일 유형 {#other-content}
 
@@ -115,7 +126,7 @@ Define DISABLE_DEFAULT_CACHING
 * 기본값은 `EXPIRATION_TIME` html/text 파일 유형에 사용되는 변수입니다
 * 캐시 만료는 적절한 regex를 지정하여 html/text 섹션에 설명된 것과 동일한 LocationMatch 전략으로 설정할 수 있습니다
 
-### 추가 최적화
+### 추가 최적화 {#further-optimizations}
 
 * 사용하지 마십시오 `User-Agent` 의 일부로 `Vary` 헤더. 기본 Dispatcher 설정의 이전 버전(원형 버전 28 이전)에는 이 설정이 포함되었으며 아래 단계를 사용하여 이 설정을 제거하는 것이 좋습니다.
    * 에서 vhost 파일을 찾습니다. `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
