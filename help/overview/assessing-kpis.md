@@ -2,9 +2,9 @@
 title: KPI 액세스
 description: KPI 액세스
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: 6c6412a05bc00480623ee0d08106f53f4c0c416a
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '539'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,3 @@ Experience Manager 출시 후 강력한 KPI 세트를 통해 귀사의 진행 �
 >[!TIP]
 >
 > 귀사의 KPI에 대해 추가적인 도움을 받고 싶다면 [Adobe 컨설팅 서비스](https://www.adobe.com/kr/experience-cloud/consulting-services.html) 또는 귀사의 구현 파트너에 문의하십시오.
-
-주요 기업이 Adobe Experience Manager를 사용하여 얻은 결과의 더 많은 예를 확인하려면 IDC 보고서를 다운로드하십시오.
-* [Adobe Experience Manager Sites의 비즈니스 가치](https://www.adobe.com/kr/content/dam/acom/en/modal-offers/idc-aem-sites-q218/pdfs/22037555.en.aem.whitepaper.IDCBusinessValueAEMSites.pdf)
-* [Adobe Experience Manager Assets의 비즈니스 가치](https://wwwimages2.adobe.com/content/dam/acom/en/modal-offers/idc-aem-Assets-q218/pdfs/220380622.en.aem.whitepaper.IDCBusinessValueAEMAssets.pdf)
