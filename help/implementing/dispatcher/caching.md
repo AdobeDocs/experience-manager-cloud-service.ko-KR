@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
+source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -96,7 +96,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-디스패처 계층에서 캐싱 헤더를 수정할 때는 너무 많이 캐시하지 않도록 주의하십시오. HTML/텍스트 섹션의 토론을 참조하십시오 [위](#html-text)). 또한 비공개(캐시되지 않음)로 유지되어야 하는 자산이 의 일부가 아닌지 확인합니다 `LocationMatch` 지시어 필터.
+디스패처 계층에서 캐싱 헤더를 수정할 때는 너무 많이 캐시하지 않도록 주의하십시오. HTML/텍스트 섹션의 토론을 참조하십시오 [위](#html-text). 또한 비공개(캐시되지 않음)로 유지되어야 하는 자산이 의 일부가 아닌지 확인합니다 `LocationMatch` 지시어 필터.
 
 #### 새로운 기본 캐싱 동작 {#new-caching-behavior}
 
