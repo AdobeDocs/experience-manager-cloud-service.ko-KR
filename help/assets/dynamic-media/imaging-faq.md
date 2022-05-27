@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 70d472776b5530cbb1048b7284780408326df604
+source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3524'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 |---|---|
 | `network=off` | 개별 이미지 URL 수준에서 네트워크 최적화를 해제합니다. |
 
-DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어, DPR=2가 있는 iPhone 5 및 iPhone12 `dpr=3`, 둘 다 표시 `dpr=2`. 여전히 고해상도 장치의 경우 `dpr=2` 보내는 것보다 낫습니다. `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->.
+DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어, DPR=2가 있는 iPhone 5 및 iPhone12 `dpr=3`, 둘 다 표시 `dpr=2`. 여전히 고해상도 장치의 경우 `dpr=2` 보내는 것보다 낫습니다. `dpr=1`. 그러나 이러한 부정확성을 극복하는 가장 좋은 방법은 클라이언트측 DPR을 사용하여 100% 정확한 값을 제공하는 것입니다. 그리고 Apple이든 다른 어떤 장치든 그것은 실행된 모든 장치에서 작동합니다. 자세한 내용은 [클라이언트 측 장치 픽셀 비율이 있는 스마트 이미징 사용](/help/assets/dynamic-media/client-side-dpr.md).
 
 ### 스마트 이미징의 추가적인 주요 이점
 
