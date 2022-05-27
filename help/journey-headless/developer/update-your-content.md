@@ -2,9 +2,9 @@
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: AEM Headless Developer 여정의 이 부분에서 REST API를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 3%
 
 ---
@@ -303,7 +303,7 @@ AEM Assets REST API 사용에 대한 자세한 내용은 다음을 참조할 수
 * Adobe Experience Manager Assets HTTP API(추가 리소스)
 * AEM Assets HTTP API의 컨텐츠 조각 지원(추가 리소스)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
 
@@ -318,7 +318,7 @@ AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수�
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-다음에 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다 [헤드리스 애플리케이션을 사용하여 라이브로 전환하는 방법](go-live.md) AEM Headless 프로젝트를 라이브로 전환하는 곳!
+다음에 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다 [AEM 헤드리스에서 앱과 콘텐츠를 모두 통합하는 방법](put-it-all-together.md) 애플리케이션을 함께 배치하는 데 필요한 AEM 아키텍처 기본 사항과 도구를 잘 알고 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
