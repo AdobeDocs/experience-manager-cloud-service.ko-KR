@@ -4,9 +4,9 @@ description: Adobe Sensei AI를 사용한 스마트 이미징이 각 사용자�
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2629'
 ht-degree: 1%
 
 ---
@@ -78,9 +78,10 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 |---|---|
 | `network=off` | 개별 이미지 URL 수준에서 네트워크 최적화를 해제합니다. |
 
->[!NOTE]
->
->DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone 5 및 DPR=3이 있는 iPhone12는 모두 DPR=2를 보여줍니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중: Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
+DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어, DPR=2가 있는 iPhone 5 및 iPhone12 `dpr=3`, 둘 다 표시 `dpr=2`. 여전히 고해상도 장치의 경우 `dpr=2` 보내는 것보다 낫습니다. `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+클라이언트측 DPR은 100% 정확한 값을 제공하며, Apple이든 방금 시작한 다른 새로운 장치이든 관계없이 모든 장치에서 작동합니다.
 
 ## 최신 스마트 이미징의 주요 이점은 무엇입니까? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -98,7 +99,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 
 ## 스마트 이미징과 관련된 라이센스 비용이 있습니까? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-아니오. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(On-prem, AMS 및 Experience Manager)에 대해 적용됩니다.
+아니요. 스마트 이미징은 기존 라이선스에 포함되어 있습니다. 이 규칙은 Dynamic Media Classic 또는 Experience Manager - Dynamic Media(On-prem, AMS 및 Experience Manager)에 대해 적용됩니다.
 
 >[!NOTE]
 >
