@@ -1,21 +1,21 @@
 ---
 title: AEM Headless 소개
-description: 자세한 설명서와 헤드리스 여정의 조합으로 Adobe Experience Manager (AEM) as a Headless CMS에 대해 알아보십시오. 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 기능을 사용하여 AEM으로 Headless 경험을 제공하는 방법을 알아봅니다.
+description: 자세한 설명서와 헤드리스 여정의 조합으로 Adobe Experience Manager (AEM) as a Headless CMS에 대해 알아보십시오. 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 헤드리스 경험을 향상시키는 방법을 알아봅니다.
 landing-page-description: Experience Manager Headless as a Cloud Service를 사용하고 관리하는 방법을 이해합니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 2771dfde3b20f3867bc96dedd744d8dd7ab4fed9
+source-git-commit: 30272a4729bc2e2b5213796789eb1422ba105074
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 93%
+source-wordcount: '667'
+ht-degree: 84%
 
 ---
 
 
-# Adobe Experience Manager Headless 소개  {#introduction-aem-headless}
+# Adobe Experience Manager as a Headless CMS 소개 {#introduction-aem-headless}
 
-콘텐츠 모델, 콘텐츠 조각 및 GraphQL API와 같은 Adobe Experience Manager(AEM)의 기능을 사용하여 대규모 Headless 경험을 제공하는 방법을 알아봅니다.
+컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 헤드리스 CMS로 Adobe Experience Manager(AEM)을 사용하는 방법을 규모에 맞게 헤드리스 경험을 향상시키는 방법을 알아봅니다.
 
-모든 기능에 대한 세부 설명서를 읽거나 다음 중 하나를 선택할 수 있습니다 [헤드리스 여정(빠른 시작)](#first-steps).
+관련된 다양한 기능에 대한 자세한 설명서를 읽거나 다음 중 하나를 선택할 수 있습니다 [첫 번째 단계에 대한 개요를 알 수 있는 헤드리스 여정](#first-steps).
 
 ## 개요 {#overview}
 
