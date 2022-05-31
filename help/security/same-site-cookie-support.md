@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 Same Site 쿠키 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 Same Site 쿠키 지원
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '287'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,15 @@ ht-degree: 100%
 
 이 문제를 해결하려면 로그인 토큰에 대해 SameSite 쿠키 속성을 `None`으로 설정해야 합니다.
 
-아래 단계를 따라 이 작업을 수행할 수 있습니다.
+>[!CAUTION]
+>
+>다음 `SameSite=None` 설정은 프로토콜이 보안(HTTPS)인 경우에만 적용됩니다.
+>
+>프로토콜이 안전하지 않은 경우(HTTP) 설정이 무시되고 서버에 다음 WARN 메시지가 표시됩니다.
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+아래 단계에 따라 설정을 추가할 수 있습니다.
 
 1. 로컬에서 AEM SDK 빠른 시작 버전을 설치합니다.
 1. `http://serveraddress:serverport/system/console/configMgr`의 웹 콘솔로 이동합니다.
