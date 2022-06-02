@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
+source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 3%
+source-wordcount: '1716'
+ht-degree: 5%
 
 ---
 
@@ -16,13 +16,16 @@ ht-degree: 3%
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 그러나 사용자 지정이 거의 없는 경우에도 다른 데이터 소스를 통합할 수 있습니다.
+[!DNL Experience Manager Forms] 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다.
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * RESTful 웹 서비스
 * SOAP 기반 웹 서비스
-* OData 서비스
+* OData 서비스(버전 4.0)
+* Microsoft Dynamics
+* SalesForce
+* Microsoft Azure Blob 저장소
 
 데이터 통합은 OAuth2.0, 기본 인증 및 API 키 인증 유형을 즉시 지원하며, 웹 서비스에 액세스하기 위한 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP 기반 및 OData 서비스는 [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> 및 커넥터 [!DNL Experience Manager] 사용자 프로필은 [!DNL Experience Manager] 웹 콘솔.
 
@@ -110,7 +113,7 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
-RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/) JSON 또는 YAML 형식으로 [!DNL Swagger] 정의 파일입니다. 에서 RESTful 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service, [!DNL Swagger] 파일 시스템 또는 파일이 호스팅되는 URL의 파일입니다.
+RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) JSON 또는 YAML 형식으로 [!DNL Swagger] 정의 파일입니다. 에서 RESTful 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service, [!DNL Swagger] 파일([Swagger 버전 2.0](https://swagger.io/specification/v2/))을 클릭하여 파일을 호스팅할 URL을 지정합니다.
 
 RESTful 서비스를 구성하려면 다음을 수행하십시오.
 
@@ -139,6 +142,35 @@ RESTful 서비스를 구성하려면 다음을 수행하십시오.
 ### 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함됩니다.
+
+다음 속성을 **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성]** 정규 표현식을 지정하는 구성:
+
+* 를 사용하십시오 `http.connection.max.per.route` 양식 데이터 모델과 RESTful 웹 서비스 간에 허용되는 최대 연결 수를 설정하는 속성입니다. 기본값은 20개의 연결입니다.
+
+* 를 사용하십시오 `http.connection.max` 각 경로에 대해 허용되는 최대 연결 수를 지정하는 속성입니다. 기본값은 40개의 연결입니다.
+
+* 를 사용하십시오 `http.connection.keep.alive.duration` 속성을 사용하여 영구 HTTP 연결을 유지할 기간을 지정합니다. 기본값은 15초입니다.
+
+* 를 사용하십시오 `http.connection.timeout` 지속 시간을 지정할 속성입니다. [!DNL Experience Manager Forms] 서버는 연결이 설정될 때까지 기다립니다. 기본값은 10초입니다.
+
+* 를 사용하십시오 `http.socket.timeout` 두 데이터 패킷 간에 비활성 상태에 대한 최대 기간을 지정하는 속성입니다. 기본값은 30초입니다.
+
+다음 JSON 파일에는 샘플이 표시됩니다.
+
+```json
+{   
+   "http.connection.keep.alive.duration":"15",   
+   "http.connection.max.per.route":"20",   
+   "http.connection.timeout":"10",   
+   "http.socket.timeout":"30",   
+   "http.connection.idle.connection.timeout":"15",   
+   "http.connection.max":"40" 
+} 
+```
+
+구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.
+
+
 양식 데이터 모델 HTTP 클라이언트를 구성하려면 다음 단계를 수행하십시오.
 
 1. 에 로그인합니다. [!DNL Experience Manager Forms] 관리자로 작성자 인스턴스 및 다음 위치로 이동 [!DNL Experience Manager] 웹 콘솔 번들. 기본 URL은 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
@@ -156,7 +188,6 @@ RESTful 서비스를 구성하려면 다음을 수행하십시오.
    * 지속 기간을 지정합니다. [!DNL Experience Manager Forms] 서버는 연결이 설정될 때까지 기다렸다가 **[!UICONTROL 연결 시간 초과]** 필드. 기본값은 10초입니다.
 
    * 에서 두 데이터 패킷 간에 비활성 상태에 대한 최대 기간을 지정합니다 **[!UICONTROL 소켓 시간 제한]** 필드. 기본값은 30초입니다.
-
 
 ## SOAP 웹 서비스 구성 {#configure-soap-web-services}
 

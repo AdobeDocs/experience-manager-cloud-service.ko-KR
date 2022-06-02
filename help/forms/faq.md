@@ -3,9 +3,9 @@ title: 'Forms as a Cloud Service 자주 묻는 질문 '
 description: Forms as a Cloud Service 자주 묻는 질문
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: a5cd8a49a74eb8372d1d363ff859e1aef921859b
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '993'
 ht-degree: 2%
 
 ---
@@ -89,3 +89,7 @@ Custom parameters are planned for an upcoming release. -->
 
 * **초기 GA 릴리스의 일부가 아닌 기능은 무엇입니까?**
 Forms 포털, [!DNL AEM Forms] 앱, Adobe Analytics와의 통합 및 Adobe Target과의 통합은 초기 GA 릴리스의 일부가 아닙니다. 새로운 기능에 대한 정보는 월별 릴리스 노트를 참조하십시오.
+
+* **저는 [적응형 양식을 만들기 위한 JSON 스키마](adaptive-form-json-schema-form-model.md). JSON 스키마는 적응형 양식의 일부 구성 요소에 대한 이벤트를 정의합니다. AEM Forms은 이벤트를 as a Cloud Service으로 지원합니까?**
+Experience Manager 6.5 Forms 환경에서 JSON 스키마를 기반으로 하여 적응형 양식을 작성하고 을 사용합니다. [마이그레이션 유틸리티](migrate-to-forms-as-a-cloud-service.md) 이러한 적응형 Forms을 AEM Forms as a Cloud Service으로 마이그레이션하려면 다음을 수행하십시오. 이 유틸리티는 이러한 이벤트를 클라이언트 라이브러리로 변환하며 Cloud Service 환경에서 이벤트와 함께 응용 Forms을 계속 사용할 수 있습니다.
+

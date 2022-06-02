@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4bfd1c144642f5c2f3b2bf4cd7469b0a7ce8f8fe
+source-git-commit: 333653e42de895fdd2097ad52ed3904192c57437
 workflow-type: tm+mt
-source-wordcount: '3497'
+source-wordcount: '3502'
 ht-degree: 97%
 
 ---
@@ -437,6 +437,7 @@ ht-degree: 97%
    + [소개](/help/forms/home.md)
    + [주요 기능](/help/forms/key-features.md)
    + [주요 변경 내용](/help/forms/notable-changes.md)
+   + [아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
    + 서비스 설정 및 구성 {#setup-environment}
       + [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
       + [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
@@ -477,6 +478,7 @@ ht-degree: 97%
          + [리디렉션 페이지 구성](/help/forms/configuring-redirect-page.md)
          + [적응형 양식에 대한 비동기 제출 구성](/help/forms/asynchronous-submissions-adaptive-forms.md)
          + [맞춤형 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
+      + [적응형 양식 필드 미리 채우기](/help/forms/prepopulate-adaptive-form-fields.md)
       + [기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + 메타데이터 추가 또는 개선 {#manage-metadata}
          + [적응형 양식의 메타데이터 추가, 제거 또는 편집](/help/forms/manage-form-metadata.md)
