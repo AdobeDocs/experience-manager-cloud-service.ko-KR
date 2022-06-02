@@ -3,10 +3,10 @@ title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 2%
+source-wordcount: '1135'
+ht-degree: 1%
 
 ---
 
@@ -169,53 +169,71 @@ ht-degree: 2%
 
 뷰어에 문제가 있는 경우 다음 문제 해결 지침을 참조하십시오.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>문제</strong></td>
-   <td><strong>디버그 방법</strong></td>
-   <td><strong>솔루션</strong></td>
-  </tr>
-  <tr>
-   <td>뷰어 사전 설정이 게시되지 않음</td>
-   <td><p>샘플 관리자 진단 페이지로 진행합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>계산된 값을 관찰합니다. 올바르게 작동하면 다음을 볼 수 있습니다.</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>: 뷰어 자산을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 다음 중 하나를 선택합니다 <strong>활성화되지 않은 모든 자산 나열</strong> 자세한 내용을 볼 수 있는 단추.</p> </td>
-   <td>
-    <ol>
-     <li>관리 도구의 뷰어 사전 설정 목록으로 이동합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>모든 뷰어 사전 설정을 선택한 다음 를 선택합니다 <strong>게시</strong>.</li>
-     <li>샘플 관리자로 돌아가서 활성화되지 않은 자산 수가 이제 0임을 확인합니다.</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>뷰어 사전 설정 아트웍은 자산 세부 정보에서 미리 보기에서 404를 반환하거나 URL/포함 코드 복사</td>
-   <td><p>CRXDE Lite에서 다음을 수행합니다.</p>
-    <ol>
-     <li>다음으로 이동 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> Dynamic Media 동기화 폴더 내 폴더(예: <code>/content/dam/_CSS/_OOTB</code>),</li>
-     <li>문제가 있는 자산의 메타데이터 노드를 찾습니다(예: <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>다음 항목이 있는지 확인합니다. <code>dam:scene7*</code> 속성을 사용합니다. 자산이 성공적으로 동기화되고 게시되면 <code>dam:scene7FileStatus</code> 설정 <strong>게시 완료</strong>.</li>
-     <li>다음 속성 및 문자열 리터럴의 값을 연결하여 Dynamic Media에서 직접 아트웍을 요청합니다
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>예: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>샘플 자산 또는 뷰어 사전 설정 아트워크가 동기화되거나 게시되지 않은 경우 전체 복사/동기화 프로세스를 다시 시작합니다.</p>
-    <ol>
-     <li>다음으로 이동 <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
-     </li>
-     <li>다음 작업을 순서대로 선택합니다.
-      <ol>
-       <li>동기화 폴더를 삭제합니다.</li>
-       <li>사전 설정 폴더 삭제(아래) <code>/conf</code>).
-       <li>DM 설정 비동기 작업을 트리거합니다.</li>
-      </ol> </li>
-     <li>Experience Manager 받은 편지함에서 성공적인 동기화 알림을 기다립니다.
-     </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### 문제: 뷰어 사전 설정이 게시되지 않음 {#viewers-not-published}
+
+**디버그 방법**
+
+1. 샘플 관리자 진단 페이지로 진행합니다. `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. 계산된 값을 관찰합니다. 올바르게 작동하면 다음 내용이 표시됩니다. `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >뷰어 자산을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.
+
+1. 활성화되지 않은 자산이 남아 있는 경우 다음 중 하나를 선택합니다 **활성화되지 않은 모든 자산 나열** 자세한 내용을 볼 수 있는 단추.
+
+**솔루션**
+
+1. 관리 도구의 뷰어 사전 설정 목록으로 이동합니다. `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. 모든 뷰어 사전 설정을 선택한 다음 를 선택합니다 **게시**.
+1. 샘플 관리자로 돌아가서 활성화되지 않은 자산 수가 이제 0임을 확인합니다.
+
+### 문제: 뷰어 사전 설정 아트웍은 자산 세부 정보나 URL/포함 코드 복사의 미리 보기에서 404를 반환합니다 {#viewer-preset-404}
+
+**디버그 방법**
+
+CRXDE Lite에서 다음을 수행합니다.
+
+1. 다음으로 이동 `<sync-folder>/_CSS/_OOTB` Dynamic Media 동기화 폴더 내 폴더(예: `/content/dam/_CSS/_OOTB`).
+1. 문제가 있는 자산의 메타데이터 노드를 찾습니다(예: `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. 다음 항목이 있는지 확인합니다. `dam:scene7*` 속성을 사용합니다. 자산이 성공적으로 동기화되고 게시되면 `dam:scene7FileStatus` 설정 **게시 완료**.
+1. 다음 속성 및 문자열 리터럴의 값을 연결하여 Dynamic Media에서 직접 아트웍을 요청합니다.
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+예: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**솔루션**
+
+샘플 자산 또는 뷰어 사전 설정 아트워크가 동기화되거나 게시되지 않은 경우 전체 복사/동기화 프로세스를 다시 시작합니다.
+
+1. CRXDE Lite으로 이동합니다.
+1. 삭제 `<sync-folder>/_CSS/_OOTB`.
+1. CRX 패키지 관리자로 이동합니다. `https://localhost:4502/crx/packmgr/`.
+1. 목록에서 뷰어 패키지를 검색합니다. 다음으로 시작 `cq-dam-scene7-viewers-content`.
+1. 선택 **다시 설치**.
+1. Cloud Services에서 Dynamic Media 구성 페이지로 이동한 다음 Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
+1. 변경하지 않고, **저장**.
+이 저장 작업은 논리를 다시 트리거하여 샘플 자산, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화합니다.
+
+### 문제: 이미지 미리 보기가 뷰어 사전 설정 작성에서 로드되지 않습니다 {#image-preview-not-loading}
+
+**솔루션**
+
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**.
+1. 왼쪽 레일에서 다음 위치의 샘플 컨텐츠 폴더로 이동합니다.
+
+   `/content/dam/_DMSAMPLE`
+
+1. 삭제 `_DMSAMPLE` 폴더를 입력합니다.
+1. 왼쪽 레일에서 다음 위치의 사전 설정 폴더로 이동합니다.
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. 삭제 `viewer` 폴더를 입력합니다.
+1. CRXDE Lite 페이지의 왼쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 모두 저장]**.
+1. CRXDE Lite 페이지의 왼쪽 위 모서리에서 **백 홈** 아이콘.
+1. 다시 만들기 [Cloud Services의 Dynamic Media 구성](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
