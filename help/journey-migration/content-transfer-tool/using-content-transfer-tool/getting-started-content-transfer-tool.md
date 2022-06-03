@@ -2,7 +2,7 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구 시작하기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
+source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 9%
@@ -102,7 +102,7 @@ ht-degree: 9%
 
 Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려면 소스 Adobe Experience Manager(AEM) 인스턴스에 최신 버전의 컨텐츠 전송 도구를 설치해야 합니다. 마이그레이션 세트를 채우는 방법을 알려면 이 섹션을 따르십시오.
 
-1. 소스 Adobe Experience Manager 인스턴스에 컨텐츠 전송 도구의 최신 버전(Vxxx)을 설치한 후 다음 위치로 이동하십시오. **작업 - 컨텐츠 마이그레이션**
+1. 소스 Adobe Experience Manager 인스턴스에 컨텐츠 전송 도구의 최신 버전(v2.0.10)을 설치한 후 로 이동합니다. **작업 - 컨텐츠 마이그레이션**
 
 1. 클릭 **마이그레이션 세트 만들기**
 
