@@ -4,7 +4,7 @@ description: 이미지 사전 설정 및 이미지 사전 설정을 만들고, �
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 10%
@@ -129,7 +129,7 @@ DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구�
 |---|---|---|
 | ThumbnailExport.jsx | 예 | 300PPI 생성 `thumbnail.jpg` 최적화되어 PTIFF 표현물로 전환된 변환 `Dynamic Media Process Image Assets` 프로세스 구성 요소입니다. |
 | JPEGPagesExport.jsx | 예 | 각 페이지에 대해 300PPI JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화된 상태이며 `DAM Update Asset` 워크플로우. |
-| PDFPagesExport.jsx | 아니오 | 각 페이지에 대한 PDF 하위 자산을 생성합니다. PDF 하위 자산은 앞에서 설명한 대로 처리됩니다. PDF에 단일 페이지만 포함되어 있으므로 하위 자산이 생성되지 않습니다. |
+| PDFPagesExport.jsx | 아니요 | 각 페이지에 대한 PDF 하위 자산을 생성합니다. PDF 하위 자산은 앞에서 설명한 대로 처리됩니다. PDF에 단일 페이지만 포함되어 있으므로 하위 자산이 생성되지 않습니다. |
 
 ### 이미지 축소판 크기 구성 {#configuring-image-thumbnail-size}
 
@@ -236,7 +236,7 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
 
 * **[!UICONTROL Enable Simple Sharpening]** - Do not select **[!UICONTROL Enable Simple Sharpening]** (this sharpening filter offers less control than Unsharp Masking settings).
 
-* **[!UICONTROL 선명하게 하기: 재샘플링 모드]** - 선택 **[!UICONTROL 2입방]**.
+* **[!UICONTROL 선명하게 하기: 재샘플링 모드]** - 선택 **[!UICONTROL Sharp2]**.
 
 #### 기본 탭 옵션 {#basic-tab-options}
 
