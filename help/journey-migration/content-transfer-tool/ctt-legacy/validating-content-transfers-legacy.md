@@ -1,15 +1,16 @@
 ---
-title: 콘텐츠 전송 확인
+title: 컨텐츠 전송 유효성 확인(이전)
 description: 컨텐츠 전송 도구를 사용하여 컨텐츠 전송의 유효성을 검사합니다
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '950'
+ht-degree: 1%
 
 ---
 
-# 콘텐츠 전송 확인 {#validating-content-transfers}
+# 컨텐츠 전송 유효성 확인(이전) {#validating-content-transfers}
 
 ## 시작하기 {#getting-started}
 
@@ -44,11 +45,11 @@ If **추출 중에 스테이징 컨테이너 덮어쓰기** 이 활성화되어 
 
 * **추출(덮어쓰기)**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **수집(지우기)**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **메모**
 
@@ -58,11 +59,11 @@ If **추출 중에 스테이징 컨테이너 덮어쓰기** 이 활성화되어 
 
 * **추출**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **수집**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **메모**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 위의 실패 예제는 수집을 실행한 다음 동일한 수집을 다시 실행(지우기 사용)하여 재실행하여 수집 중에 노드가 없으므로 대상에 이미 모든 항목이 있습니다.
 
-수집 로그에 포함될 뿐만 아니라 **수집 작업** Cloud Acceleration Manager의 사용자 인터페이스. 이렇게 하려면 세 점(**...**)을 클릭한 다음 **유효성 검사 보고서** 을 눌러 검증 보고서를 봅니다.
+수집 로그에 포함될 뿐만 아니라 컨텐츠 전송 도구 사용자 인터페이스에서 유효성 검사 보고서에 액세스할 수도 있습니다. 이렇게 하려면 마이그레이션 세트를 선택하고 을(를) 클릭합니다. **유효성 검사** 작업 표시줄의 단추:
 
 
-![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![이미지](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+유효성 검사 로그 대화 상자가 열립니다.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+를 사용하십시오 **유효성 검사 게시/작성자 보고서** 버튼을 클릭하여 타겟 환경의 지정된 계층에 대한 최근 섭취에 대한 유효성 검사 보고서를 봅니다. 작은 게시 수집에서 아래 예를 참조하십시오.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>다음 **유효성 검사 게시/작성자 보고서** 수집이 완료되면 링크가 표시됩니다. 또한 유효성 검사 보고서는 지속되므로 수집 로그처럼 수집이 완료된 후 만료되지 않습니다.
 
 ## 문제 해결 {#troubleshooting}
 

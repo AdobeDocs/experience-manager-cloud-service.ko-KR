@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager의 구현 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계에 대한 개요를 제공합니다.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 2%
+source-wordcount: '793'
+ht-degree: 4%
 
 ---
 
@@ -89,24 +89,32 @@ AEM as a Cloud Service 배포 카드는 AEM as a Cloud Service에 코드를 배�
 
 ## 컨텐츠 전송 카드 사용 {#content-transfer}
 
-컨텐츠 전송 활동 카드는 컨텐츠 전송 도구를 사용하여 컨텐츠를 현재 AEM 인스턴스에서 AEM as a Cloud Service으로 이동할 때 검토해야 하는 지침 및 고려 사항을 제공합니다.
+컨텐츠 전송 카드를 사용하면 현재 AEM 인스턴스에서 AEM as a Cloud Service으로 컨텐츠 전송을 시작 및 관리할 수 있습니다.
 
 컨텐츠 전송 활동 카드를 탐색하려면 이 섹션을 따르십시오.
 
-1. 을(를) 클릭합니다. **보기** 단추 **컨텐츠 전송** 활동 카드.
+1. 을(를) 클릭합니다. **검토** 단추 **컨텐츠 전송** 활동 카드.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
+   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. 컨텐츠 회전판에 마이그레이션 여정의 이 단계에 대한 관련 정보가 표시됩니다.
+1. 컨텐츠 전송을 시작하려면 마이그레이션 세트를 만들어야 합니다. 클릭 **마이그레이션 세트 만들기**. 마이그레이션 세트를 사용하면 컨텐츠를 AEM as a Cloud Service으로 전송할 수 있습니다.
 
-   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >다음 문서를 검토하십시오 [전제 조건](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) 그리고 [모범 사례 및 지침](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) 컨텐츠 전송 도구를 사용하기 전에
 
+1. 컨텐츠 전송 도구를 다운로드하고 설치하여 마이그레이션 세트를 채우고 컨텐츠 전송의 추출 단계를 완료해야 합니다. 검토 [컨텐츠 전송 도구 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko) 컨텐츠 전송 도구 사용 방법을 알아봅니다.
+
+1. 마이그레이션 세트의 컨텐츠를 AEM as a Cloud Service의 환경으로 수집하려면 수집을 시작해야 합니다. 다음으로 이동 **수집 작업** 을(를) 클릭합니다. **새 수집**. 검토 [Target에 컨텐츠 수집](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) 컨텐츠 전송의 수집 단계를 완료하는 방법을 알아봅니다.
+
+   ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+
 ### 컨텐츠 전송 시간 추정 {#calculating}
 
-컨텐츠 전송 활동을 완료하는 데 걸리는 시간을 예상하기 위해 새로운 컨텐츠 전송 도구 계산기가 제공되었습니다. 컨텐츠 저장소 크기 슬라이더를 사용하여 프로젝트에 적용되는 크기를 선택할 수 있습니다. 전송 시간은 추출 및 수집 단계에 따라 다릅니다.
+컨텐츠 전송 활동을 완료하는 데 걸리는 시간을 예상하기 위해 컨텐츠 전송 도구 계산기가 제공되었습니다. 컨텐츠 저장소 크기 슬라이더를 사용하여 프로젝트에 적용되는 크기를 선택할 수 있습니다. 전송 시간은 추출 및 수집 단계에 따라 다릅니다.
+
+![이미지](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
 >[!NOTE]
 >지금은 추정일 뿐입니다. 이러한 추정치에는 네트워크 속도 및 인스턴스 확장 시간과 같은 요소가 언급되지 않았습니다.
@@ -115,6 +123,6 @@ AEM Repository의 크기를 추정하는 데 필요한 디스크 사용량 보�
 
 를 사용하여 특정 저장소 경로의 크기를 예측할 수도 있습니다 `path` 매개 변수(예: `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 Cloud Acceleration Manager에 로그인하는 방법과 구현 단계를 활용하는 방법을 학습하면 이제 의 다음 단계를 검토할 준비가 되었습니다. [라이브 단계 이동](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en).

@@ -1,46 +1,20 @@
 ---
-title: 컨텐츠 전송 도구 개요
+title: 컨텐츠 전송 도구 개요(이전)
 description: 컨텐츠 전송 도구 개요
-exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 43%
+source-wordcount: '476'
+ht-degree: 63%
 
 ---
 
-# 개요 {#overview-content-transfer-tool}
-
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="개요"
->abstract="컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM Cloud Service 인스턴스로 이동하는 데 사용할 수 있습니다. 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="지침 및 우수 사례"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+# 컨텐츠 전송 도구 개요(이전) {#overview-content-transfer-tool}
 
 컨텐츠 전송 도구는 Adobe에서 개발한 도구로, 기존 컨텐츠를 소스 AEM 인스턴스(온-프레미스 또는 AMS)에서 대상 AEM 클라우드 서비스 인스턴스로 이동하는 데 사용할 수 있습니다.
 
 이 도구는 주체(사용자 또는 그룹)도 자동으로 전송합니다.
-
-컨텐츠 전송 프로세스를 Cloud Acceleration Manager와 통합하는 새로운 버전의 컨텐츠 전송 도구를 사용할 수 있습니다. 이 새로운 버전으로 전환하여 제공되는 모든 이점을 활용하는 것이 좋습니다.
-
-* 마이그레이션 세트를 한 번 추출하여 여러 환경에 동시에 수집하는 셀프 서비스 방법
-* 향상된 로드 상태, 보호 기능 및 오류 처리를 통해 사용자 경험이 개선되었습니다
-* 수집 로그는 지속되며 문제 해결에 항상 사용할 수 있습니다
-
-새 버전(Vxx)을 사용하려면 <!-- update when version is available --> 도구에 주요 아키텍처 변경 사항이 있으므로 이전 버전의 컨텐츠 전송 도구를 제거해야 합니다.
-
->[!NOTE]
->
-> 마이그레이션이 이미 진행 중인 경우 마이그레이션이 완료될 때까지 이전 버전의 CTT를 계속 사용할 수 있습니다. 이전 버전의 CTT와 관련된 설명서는 [이전 설명서](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## 컨텐츠 전송 도구의 단계 {#phases-content-transfer-tool}
 
@@ -61,8 +35,11 @@ ht-degree: 43%
 
 마이그레이션 세트에는 다음 속성이 있습니다.
 
-* 새 버전을 사용하면 Cloud Acceleration Manager에서 만든 프로젝트 내에 최대 5개의 마이그레이션 세트를 만들 수 있습니다.
+* 컨텐츠 전송 작업 중에 한 번에 최대 10개의 마이그레이션 세트를 만들고 유지 관리할 수 있습니다.
 * 각 마이그레이션 세트의 이름은 고유해야 합니다.
+* 마이그레이션 세트가 30일 이상 비활성 상태이면 자동으로 삭제됩니다.
+* 마이그레이션 세트를 만들 때마다 특정 환경과 연결됩니다. 동일한 환경의 작성자 또는 게시 인스턴스로만 수집할 수 있습니다.
+
 
 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 추가를 지원하는 기능이 있습니다.
 

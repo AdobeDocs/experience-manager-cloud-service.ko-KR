@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 333653e42de895fdd2097ad52ed3904192c57437
+source-git-commit: 689a9212d2b2a9c4459f1e0f9e5f580d8972b1d0
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3565'
 ht-degree: 97%
 
 ---
@@ -178,6 +178,19 @@ ht-degree: 97%
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [중요 고려 사항](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+         + 이전 컨텐츠 전송 도구 {#legacy}
+            + [개요](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
+            + [콘텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
+            + [콘텐츠 전송 도구 사용을 위한 지침 및 모범 사례](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
+            + [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
+            + [콘텐츠 전송 확인](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
+            + [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
+            + [소스에서 콘텐츠 추출](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
+            + [대상에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
+            + [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
+            + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
+            + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
+            + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
    + 코드 리팩터링 도구 {#refactoring-tools}
       + [통합 경험](/help/journey-migration/unified-experience.md)
       + [저장소 현대화 도구](/help/journey-migration/refactoring-tools/repo-modernizer.md)

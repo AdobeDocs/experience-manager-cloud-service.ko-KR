@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구의 마이그레이션 세트에 대한 로그 보기
 description: 컨텐츠 전송 도구의 마이그레이션 세트에 대한 로그 보기
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 52%
+source-wordcount: '238'
+ht-degree: 12%
 
 ---
 
@@ -23,20 +23,17 @@ ht-degree: 52%
 
 ## 로그 보기 단계 {#viewing-logs}
 
-*개요* 페이지에서 기존 마이그레이션 세트에 대한 로그를 볼 수 있습니다.
-아래 단계를 따르십시오.
+추출 로그를 보려면 소스 Adobe Experience Manager 인스턴스로 이동한 다음, 원하는 마이그레이션 세트를 선택합니다.
 
-1. *개요* 페이지로 이동하여 삭제할 마이그레이션 세트를 선택하고 작업 표시줄에서 **로그 보기**&#x200B;를 클릭합니다.
+그런 다음 아래 단계를 수행합니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
+1. 마이그레이션 세트를 선택하고 을(를) 클릭합니다 **로그 보기** 작업 표시줄. 그러면 로그 대화 상자가 표시됩니다. 클릭 **추출 로그** 를 클릭하여 새 탭에서 로그를 확인합니다.
 
-1. **로그** 대화 상자가 표시됩니다. **추출 로그**&#x200B;를 클릭하여 새 탭에서 로그를 확인합니다.
-
-   ![이미지](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
-또는,
-
-   *개요* 화면에서 마이그레이션 세트에 대한 로그를 볼 수도 있습니다. 마이그레이션 세트를 선택하고 **추출** 필드 아래에서 상태를 클릭합니다. 이 경우 **완료됨**&#x200B;을 클릭하여 새 탭에서 로그를 봅니다.
-
-   ![이미지](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   또는 **완료됨** 새 탭에서 로그를 보는 상태.
 
 1. 사용자 인터페이스를 사용하지 않고 로그를 추적하려면 소스 AEM 환경에 SSH를 사용하여 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`를 추적할 수 있습니다.
+
+1. 수집 로그를 보려면 Cloud Acceleration Manager의 수집 작업 목록으로 이동한 후 세 점( )을 클릭합니다&#x200B;**...**). 그런 다음 을(를) 클릭합니다 **다운로드 로그** 로그를 다운로드하려면 다음을 수행하십시오.
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

@@ -1,15 +1,16 @@
 ---
-title: 게시 인스턴스에서 콘텐츠 전송 도구 실행
+title: 게시 인스턴스에서 컨텐츠 전송 도구 실행(이전)
 description: 게시 인스턴스에서 콘텐츠 전송 도구 실행
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '272'
+ht-degree: 4%
 
 ---
 
-# 게시 인스턴스에서 콘텐츠 전송 도구 실행 {#run-content-transfer-tool-publish-instance}
+# 게시 인스턴스에서 컨텐츠 전송 도구 실행(이전) {#run-content-transfer-tool-publish-instance}
 
 ## 소개 {#introduction}
 
@@ -25,6 +26,8 @@ ht-degree: 11%
 * 작성자 인스턴스에서 사용한 것과 동일한 버전의 컨텐츠 전송 도구를 사용합니다.
 
 * 단일 게시 노드만 마이그레이션해야 합니다. 추출 작업을 시작하기 전에 로드 밸런서에서 제거해야 합니다.
+
+* 마이그레이션 세트를 만들 때 작성 AEM as a Cloud Service 환경의 URL을 사용합니다.
 
 * 게시하기 위해 수집하는 동안 게시 계층의 크기가 조정되지 않습니다(작성자와 다름).
 

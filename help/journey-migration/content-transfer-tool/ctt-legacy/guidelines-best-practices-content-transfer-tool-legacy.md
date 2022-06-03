@@ -1,34 +1,20 @@
 ---
-title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
+title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례(이전)
 description: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
-exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9ee931223c3600643fbaeefd790f5f23827da367
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 21%
+source-wordcount: '1512'
+ht-degree: 25%
 
 ---
 
-# 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례 {#guidelines}
+# 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례(이전) {#guidelines}
 
 ## 지침 및 우수 사례 {#best-practices}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_guidelines"
->title="지침 및 우수 사례"
->abstract="수정 정리 작업, 디스크 공간 고려 사항 등을 비롯하여 컨텐츠 전송 도구를 사용하기 위한 지침과 모범 사례를 검토하십시오."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="컨텐츠 전송 도구 사용에 대한 중요한 고려 사항"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="사용자 매핑 도구 사용에 대한 중요한 고려 사항"
-
-컨텐츠 전송 프로세스를 Cloud Acceleration Manager와 통합하는 새로운 버전의 컨텐츠 전송 도구를 사용할 수 있습니다. 이 새로운 버전으로 전환하여 제공되는 모든 이점을 활용하는 것이 좋습니다.
-
-* 마이그레이션 세트를 한 번 추출하여 여러 환경에 동시에 수집하는 셀프 서비스 방법
-* 향상된 로드 상태, 보호 기능 및 오류 처리를 통해 사용자 경험이 개선되었습니다
-* 수집 로그는 지속되며 문제 해결에 항상 사용할 수 있습니다
-
-새 버전(Vxx)을 사용하려면 이전 버전의 컨텐츠 전송 도구를 제거해야 합니다. 이것은 새로운 버전이 주요한 아키텍처 변화와 함께 제공되기 때문에 필요합니다. Vxx를 사용하면 새 마이그레이션 세트를 만들고 새 마이그레이션 세트에 대한 추출 및 수집을 다시 실행해야 합니다. 마이그레이션이 이미 진행 중인 경우 마이그레이션이 완료될 때까지 이전 버전의 CTT를 계속 사용할 수 있습니다.
-
-다음 지침 및 우수 사례는 새 버전의 컨텐츠 전송 도구에 적용됩니다.
+컨텐츠 전송 도구를 사용하기 위한 지침과 우수 사례를 이해하려면 아래 섹션을 따르십시오.
 
 * 잠재적인 문제를 식별하고 저장소의 크기를 줄이기 위해 [소스](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 저장소에서 [수정 정리](https://helpx.adobe.com/kr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) 및 **데이터 저장소 일관성 검사**&#x200B;를 실행하는 것이 좋습니다.
 
@@ -46,7 +32,7 @@ ht-degree: 21%
    * *노드 저장소 크기*: 세그먼트 저장소 디렉토리 크기 또는 MongoDB 데이터베이스 크기입니다.
 따라서 세그먼트 저장소 크기가 20GB인 경우 필요한 여유 디스크 공간은 94GB입니다.
 
-* 컨텐츠 추가를 지원하려면 컨텐츠 전송 활동 전체에서 마이그레이션 세트를 유지 관리해야 합니다. Cloud Acceleration Manager에서는 컨텐츠 전송 활동 중에 한 번에 5개의 프로젝트당 최대 마이그레이션 세트를 만들고 유지 관리할 수 있습니다. 5개 이상의 마이그레이션 세트가 필요한 경우 Cloud Acceleration Manager에서 두 번째 프로젝트를 만들어야 합니다. 그러나 여러 사용자가 타겟 콘텐츠를 덮어쓰지 않도록 하려면 추가 프로젝트 관리 및 제품 외 거버넌스가 필요합니다.
+* 컨텐츠 추가를 지원하려면 컨텐츠 전송 활동 전체에서 마이그레이션 세트를 유지 관리해야 합니다. 컨텐츠 전송 작업 중에 한 번에 최대 10개의 마이그레이션 세트를 만들고 유지 관리할 수 있으므로 마이그레이션 세트가 부족하지 않도록 컨텐츠 저장소를 그에 따라 분류하는 것이 좋습니다.
 
 ## 컨텐츠 전송 도구를 사용하기 전에 고려해야 할 사항 {#important-considerations}
 
@@ -56,17 +42,19 @@ ht-degree: 21%
 
 * AEM 환경에서 Java를 구성해야 `java` 명령은 AEM을 시작하는 사용자가 실행할 수 있습니다.
 
+* 도구에 주요 아키텍처 변경 사항이 있으므로 버전 1.3.0을 설치할 때 이전 버전의 컨텐츠 전송 도구를 제거하는 것이 좋습니다. 1.3.0을 사용하면 새 마이그레이션 세트를 만들고 새 마이그레이션 세트에서 추출 및 수집을 다시 실행해야 합니다.
+
 * 컨텐츠 전송 도구는 다음 유형의 데이터 저장소와 함께 사용할 수 있습니다. 파일 데이터 저장소, S3 데이터 저장소, 공유 S3 데이터 저장소 및 Azure Blob 저장소 데이터 저장소.
 
 * 를 사용 중인 경우 *샌드박스 환경*&#x200B;를 입력하여 환경이 최신 상태인지 확인하고 최신 릴리스로 업그레이드되었는지 확인하십시오. *프로덕션 환경*&#x200B;을 사용하는 경우 자동으로 업데이트됩니다.
 
-* 컨텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리 사용자여야 하며 로컬 AEM에 속해야 합니다 **관리자** 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 처리를 시작할 수 없습니다.
+* 컨텐츠 전송 도구를 사용하려면 소스 인스턴스의 관리 사용자여야 하며 로컬 AEM에 속해야 합니다 **관리자** 그룹에 속해 있어야 합니다. 권한이 없는 사용자는 액세스 토큰을 검색하여 컨텐츠 전송 도구를 사용할 수 없습니다.
 
 * 설정이 **수집하기 전에 클라우드 인스턴스에서 기존 컨텐츠를 지웁니다.** 옵션이 활성화되면 기존 저장소 전체를 삭제하고 컨텐츠를 수집할 새 저장소를 만듭니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. 또한 **관리자** 그룹에 속해 있어야 합니다. 사용자를 다시 **관리자** 그룹화하여 컨텐츠 전송 도구의 액세스 토큰을 검색합니다.
 
 * 두 소스의 컨텐츠를 대상에서 동일한 경로로 이동하는 경우 컨텐츠 전송 도구 는 여러 소스의 컨텐츠를 타겟 Cloud Service 인스턴스로 병합하는 것을 지원하지 않습니다. 여러 소스의 컨텐츠를 단일 타겟 Cloud Service 인스턴스로 이동하려면 소스의 컨텐츠 경로가 겹치지 않도록 해야 합니다.
 
-* 추출 키는 생성/갱신된 후 14일 동안 유효합니다. 언제든지 갱신할 수 있습니다. 추출 키가 만료된 경우에는 추출을 수행할 수 없습니다.
+* 액세스 토큰은 특정 기간 후 또는 Cloud Service 환경이 업그레이드된 후 주기적으로 만료될 수 있습니다. 액세스 토큰이 만료되면 Cloud Service 인스턴스에 연결할 수 없으며 새 액세스 토큰을 검색해야 합니다. 기존 마이그레이션 세트와 연결된 상태 아이콘은 빨간색 클라우드로 변경되며, 마우스로 가리키면 메시지가 표시됩니다.
 
 * 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 CTT(컨텐츠 전송 도구)가 컨텐츠 분석을 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스 또는 게시 인스턴스 또는 둘 다에 수집할 수 있습니다. 컨텐츠를 프로덕션 인스턴스로 이동하는 동안 컨텐츠를 타겟 작성자 인스턴스로 이동하도록 소스 작성자 인스턴스에 CTT를 설치하여 컨텐츠를 타겟 게시 인스턴스로 이동시키는 것이 좋습니다. 을(를) 참조하십시오. [게시 인스턴스에서 컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) 자세한 내용
 

@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 31%
+source-wordcount: '701'
+ht-degree: 17%
 
 ---
 
@@ -21,55 +21,90 @@ ht-degree: 31%
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
 >[!NOTE]
->선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) 자세한 내용
+>선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 통합에 가장 효과적입니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 자세한 내용
 
-1. 마이그레이션 세트 선택 **컨텐츠 전송** 페이지를 클릭하고 **수집** 수집
+1. Cloud Acceleration Manager로 이동합니다. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 을(를) 클릭합니다. **새 수집**
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. **마이그레이션 세트 수집** 대화 상자가 표시됩니다. 컨텐츠를 한 번에 작성자 인스턴스 또는 게시 인스턴스에 수집할 수 있습니다. 컨텐츠를 수집할 인스턴스를 선택합니다. 클릭 **수집** 수집 단계를 시작합니다.
+1. 새 수집을 만드는 데 필요한 정보를 제공합니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
+   * 소스로 추출한 마이그레이션 세트를 선택합니다
+   * 대상 환경을 선택합니다. 여기서 마이그레이션 세트의 컨텐츠를 수집합니다. 계층을 선택합니다. (작성자/게시).
 
-   >[!IMPORTANT]
+   >[!NOTE]
+   >
+   >소스가 작성자인 경우 타겟의 작성자 계층으로 가져오는 것이 좋습니다. 마찬가지로 소스가 게시인 경우 Target도 게시여야 합니다.
+
+   >[!NOTE]
+   >
+   >선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 자세한 내용
+   > 
    >사전 복사로 섭취를 사용하는 경우(S3 또는 Azure Data Store용) 먼저 작성자 수집만 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
 
    >[!IMPORTANT]
-   >이 **수집하기 전에 클라우드 인스턴스에서 기존 컨텐츠를 지웁니다.** 옵션이 활성화되면 기존 저장소 전체를 삭제하고 컨텐츠를 수집할 새 저장소를 만듭니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. 또한 **관리자** 그룹에 속해 있어야 합니다.
+   >
+   >로컬 환경에 속하는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** Cloud Service 인스턴스에서 컨텐츠를 전송하는 그룹입니다. AEM 관리자 그룹에 속하지 않는 경우 수집을 시작하려고 하면 아래에 표시된 오류가 표시됩니다.
+   >![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
+   >[!IMPORTANT]
+   >
+   >설정이 **지우기** 수집 전에 활성화되어 있으면 기존 저장소 전체가 삭제되고 컨텐츠를 수집할 새 저장소가 만들어집니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. 또한 **관리자** 그룹에 속해 있어야 합니다. 수집을 시작하려면 관리자 그룹에 다시 추가해야 합니다.
 
-   또한 **고객 지원 센터** 를 입력하여 티켓을 기록하십시오.
+1. 클릭 **수집**
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-   또한 [컨텐츠 전송 도구 사용에 대한 중요한 고려 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) 추가 정보
+1. 그런 다음 수집 작업 목록 보기에서 수집 단계를 모니터링할 수 있습니다
 
-1. 수집이 완료되면 **작성자 수집** 업데이트 **완료됨**.
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
+1. 수집이 완료되면 화면 오른쪽 위의 (i) 버튼을 클릭하여 수집 작업에 대한 자세한 정보를 얻습니다.
+
+<!-- Alexandru: hiding temporarily, until it's reviewed 
+
+1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
+
+   >[!IMPORTANT]
+   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
+
+   >[!IMPORTANT]
+   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
+
+   Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
+   
+   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
+
+1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
 ## 추가 수집 {#top-up-ingestion-process}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
+>abstract="이전 컨텐츠 전송 활동 이후 수정된 컨텐츠를 이동하려면 상단 기능을 사용하십시오. 수집이 완료되면 로그에서 오류/경고를 확인합니다. 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결되어야 합니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="로그 보기"
 
 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 *추가*&#x200B;를 지원하는 기능이 있습니다.
 
 >[!NOTE]
->처음 컨텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다.
+>처음 컨텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 처리에 사전 복사 단계를 사용한 경우, 전체 프로세스에 시간을 추가할 수 있으므로 후속 추가 수집 시 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우).
 
-수집 프로세스가 완료되면 추가 수집 방법을 사용하여 델타 컨텐츠를 사용할 수 있습니다. 아래 단계를 따르십시오.
+수집 프로세스가 완료되면 델타 컨텐츠를 수집하려면 다음을 실행해야 합니다. [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 그런 다음 추가 수집 방법을 사용합니다.
 
-1. 로 이동합니다 **컨텐츠 전송** 마법사를 열고 추가 수집을 수행할 마이그레이션 세트를 선택합니다. **수집**&#x200B;을 클릭하여 추가 추출을 시작합니다.
+이렇게 하려면 새 수집 작업을 만들고 다음을 확인합니다 **지우기** 은 아래와 같이 수집 단계 동안 비활성화됩니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest1.png)
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 
-1. **마이그레이션 세트 수집** 대화 상자가 표시됩니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest2.png)
-
-   >[!IMPORTANT]
-   >를 비활성화해야 합니다 **수집하기 전에 클라우드 인스턴스에서 기존 컨텐츠를 지웁니다.** 옵션을 선택합니다. 또한 **고객 지원 센터** 를 입력하여 티켓을 기록하십시오.
-
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 컨텐츠 전송 도구에서 컨텐츠를 Target에 섭취한 후 각 단계가 완료되면(추출 및 섭취) 로그를 보고 오류를 찾을 수 있습니다. 자세한 내용은 [마이그레이션 세트에 대한 로그 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 추가 정보
