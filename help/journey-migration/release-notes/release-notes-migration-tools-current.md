@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 릴리스 2022.6.0의 마이그레이션 도구에 대한 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2022.6.0의 마이그레이션 도구에 대한 릴리스 노트
 feature: Release Information
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 5%
@@ -22,11 +22,8 @@ Best Practices Analyzer v2.1.30 릴리스 날짜는 2022년 6월 1일입니다.
 ### 새로운 기능 {#what-is-new-bpa}
 
 * CoralUI 및 클래식 대화 상자 위젯을 사용하여 사용자 지정 대화 상자 위젯의 사용을 감지하고 보고하는 기능. 사용자 지정 클래식 대화 상자 위젯을 ExtJS에서 CoralUI로 변환하는 것이 좋습니다. 사용자 지정 Coral 대화 상자 위젯을 CoralUI3로 업데이트해야 합니다.
-
 * Assets Share Commons의 사용 및 버전을 감지하고 보고하는 기능. Asset Share Commons 1.x는 AEM as a Cloud Service에서 지원되지 않으므로 2.x로 업그레이드해야 합니다.
-
 * 버전의 노드 수를 감지하고 보고할 수 있습니다.
-
 * 사용자 지정 복제 에이전트 또는 수정된 즉시 복제 에이전트를 감지하여 보고하는 기능.
 
 ### 버그 수정 {#bug-fixes-bpa}
