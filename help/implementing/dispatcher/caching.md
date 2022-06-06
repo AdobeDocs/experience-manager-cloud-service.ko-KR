@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
+source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -206,7 +206,7 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 이전 AEM 버전과 마찬가지로 페이지를 게시하거나 게시 취소하면 Dispatcher 캐시에서 콘텐츠가 지워집니다. 캐싱 문제가 의심되는 경우 고객은 해당 페이지를 다시 게시하고 ServerAlias localhost와 일치하는 가상 호스트를 사용할 수 있는지 확인해야 합니다. 이 호스트는 디스패처 캐시 무효화에 필요합니다.
 
 
-게시 인스턴스가 작성자로부터 페이지 또는 자산의 새 버전을 받으면 초기화 에이전트를 사용하여 해당 디스패처에서 적절한 경로를 무효화합니다. 업데이트된 경로는 디스패처 캐시에서 해당 상위 항목과 함께 최대 수준에서 제거됩니다(를 사용하여 구성할 수 있습니다. [statefileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+게시 인스턴스가 작성자로부터 페이지 또는 자산의 새 버전을 받으면 초기화 에이전트를 사용하여 해당 디스패처에서 적절한 경로를 무효화합니다. 업데이트된 경로는 디스패처 캐시에서 해당 상위 항목과 함께 최대 수준에서 제거됩니다(를 사용하여 구성할 수 있습니다. [statefileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ### 명시적 디스패처 캐시 무효화 {#explicit-invalidation}
 
