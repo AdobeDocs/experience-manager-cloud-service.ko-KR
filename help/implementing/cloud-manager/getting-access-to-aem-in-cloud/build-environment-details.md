@@ -2,9 +2,9 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드를 빌드하고 테스트하는 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
+source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
@@ -94,6 +94,12 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 >[!NOTE]
 >
 >2022년 4월부터 AEM 애플리케이션 개발 및 작업을 위한 기본 JDK는 Oracle JDK입니다. Cloud Manager의 빌드 프로세스는 Maven 도구 체인에서 대체 옵션을 명시적으로 선택한 경우에도 Oracle JDK를 사용하여 자동으로 로 전환됩니다. 자세한 내용은 4월 릴리스 노트를 게시된 후 참조하십시오.
+
+#### 대체 Maven 실행 JDK 버전 {#alternate-maven-jdk-version}
+
+또한 전체 Maven 실행에 대한 JDK로 Java 8 또는 Java 11을 선택할 수도 있습니다. 도구 체인 옵션과 달리 도구 체인 구성이 도구 체인 인식 Maven 플러그인에 대해 여전히 도구 체인 구성이 적용되는 경우에도 도구 체인 구성이 설정되어 있지 않으면 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 를 사용하여 Java 버전을 확인하고 적용합니다 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 사용할 수 있습니다.
+
+이렇게 하려면 이름이 인 파일을 만듭니다 `.cloudmanager/java-version` 파이프라인에서 사용하는 git 리포지토리 분기입니다. 이 파일에는 콘텐츠 11 또는 8이 있을 수 있습니다. 다른 값은 무시됩니다. 11을 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.2`. 8을 지정하면 Oracle 8이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_202`.
 
 ## 환경 변수 {#environment-variables}
 
