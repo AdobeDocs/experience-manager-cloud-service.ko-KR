@@ -1,13 +1,13 @@
 ---
 title: Experience Manager [!DNL AEM Forms] as a Cloud Service 아키텍처
 description: 의 아키텍처 이해 [!DNL AEM Forms] 플랫폼의 확장성, 탄력성 및 성능 측면에 대해 as a Cloud Service을 이용할 수 있습니다.
-source-git-commit: cb7b417b9b4898b0656e79d6f699e8d5cd611e76
+exl-id: 9d677bee-50ca-460e-b503-6b7799900735
+source-git-commit: cd9ef0db59f07173c8c5bd4b38ff946b774ce53c
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1045'
 ht-degree: 3%
 
 ---
-
 
 # [!DNL AEM] Forms as a Cloud Service 아키텍처 {#architecture}
 
@@ -15,13 +15,11 @@ ht-degree: 3%
 
 AEM Forms 는 두 가지 주요 사용 사례를 지원합니다. 디지털 등록 및 고객 커뮤니케이션. 다음 그림은 두 사용 사례 모두에 대한 아키텍처를 설명합니다.
 
-## 아키텍처 및 흐름 다이어그램
-
-**Forms 디지털 등록**
+## Forms 디지털 등록
 
 ![Forms-디지털 등록](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
 
-**Forms Communications**
+## Forms Communications
 
 ![Forms-통신](assets/forms-cloud-service-architecture-forms-communications.svg)
 
