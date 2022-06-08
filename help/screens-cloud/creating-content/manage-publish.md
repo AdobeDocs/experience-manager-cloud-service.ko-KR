@@ -2,10 +2,10 @@
 title: 화면에서 채널 게시 as a Cloud Service
 description: 이 페이지에서는 Screens에서 채널을 as a Cloud Service으로 게시하는 방법에 대해 설명합니다.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -47,6 +47,6 @@ AEM Screens에서 콘텐츠를 게시할 수 있습니다. 게시 관리 기능�
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
-이제 프로젝트에 채널을 게시했으므로, 다음 번에 문서를 검토하여 스크린 as a Cloud Service 여정을 계속해야 합니다. [Screens에서 플레이어 설치 및 구성 as a Cloud Service](/help/screens-cloud/creating-content/manage-publish.md).
+이제 프로젝트에 채널을 게시했으므로, 다음 번에 문서를 검토하여 스크린 as a Cloud Service 여정을 계속해야 합니다. [Screens에서 플레이어 설치 및 구성 as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

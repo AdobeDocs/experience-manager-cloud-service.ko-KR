@@ -2,9 +2,9 @@
 title: 화면에서 프로젝트 만들기 as a Cloud Service
 description: 이 페이지에서는 Screens에서 프로젝트를 만드는 방법을 as a Cloud Service으로 설명합니다.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 7a11ce1ce5862068b3087848065b661b13bed1e0
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,6 @@ Screens as a Cloud Service에서 새 프로젝트를 구현하는 첫 번째 단
    >[!NOTE]
    >여러 프로젝트를 선택할 수 있으므로 한 단계에서 여러 프로젝트를 삭제할 수 있습니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
-이제 AEM Screens 프로젝트를 설정했으므로 새 채널을 만들고 컨텐츠를 채널에 추가할 수 있습니다. 을(를) 참조하십시오. [채널 생성 및 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) 채널에서 컨텐츠를 만들고 관리하는 방법을 알아봅니다.
+이제 AEM Screens 프로젝트를 설정했으므로 새 채널을 만들고 컨텐츠를 채널에 추가할 수 있습니다. 을(를) 참조하십시오. [채널 생성 및 관리](creating-channels-screens-cloud.md) 채널에서 컨텐츠를 만들고 관리하는 방법을 알아봅니다.
