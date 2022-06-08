@@ -2,10 +2,10 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -58,9 +58,9 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 
 최상의 성능을 위해 이 기능을 사용할 때는 다음 지침을 따르십시오.
 * 한 번에 500개 이하의 경로를 복제하여 100개 이하의 경로를 복제하는 것이 좋습니다.
-* 복제된 컨텐츠의 총 크기는 5MB 미만이어야 합니다. 여기에는 워크플로우 패키지 및 컨텐츠 패키지를 포함하는 바이너리는 포함되지 않고 노드 및 속성만 포함됩니다.
+* 복제된 컨텐츠의 총 크기는 10MB 미만이어야 합니다. 여기에는 워크플로우 패키지 및 컨텐츠 패키지를 포함하는 바이너리는 포함되지 않고 노드 및 속성만 포함됩니다.
 
-### 컨텐츠 트리 게시 워크플로우 {#publish-content-tree-workflow}
+### 게시 콘텐츠 트리 워크플로 {#publish-content-tree-workflow}
 
 다음을 선택하여 트리 복제를 트리거할 수 있습니다 **도구 - 워크플로우 - 모델** 복사 **컨텐츠 트리 게시** 아래와 같이 기본 워크플로우 모델:
 
@@ -194,7 +194,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 **복제 API 경로 및 크기 제한**
 
-최대 한계인 500개의 경로를 사용하여 100개 이하의 경로를 복제하는 것이 좋습니다. 하드 제한 위에 ReplicationException이 발생합니다. 응용 프로그램 논리에 원자 복제를 필요로 하지 않는 경우 ReplicationOptions.setUseAtomicCalls를 false로 설정하여 이 제한을 극복할 수 있으며, 이 제한은 경로 수를 허용하지만 내부적으로 버킷을 만들어 이 제한을 유지할 수 있습니다. 복제 호출당 전송된 컨텐츠의 양은 5MB를 초과할 수 없습니다. 여기에는 노드 및 속성이 포함되지만 바이너리는 없어야 합니다(워크플로우 패키지 및 컨텐츠 패키지는 바이너리로 간주됨).
+최대 한계인 500개의 경로를 사용하여 100개 이하의 경로를 복제하는 것이 좋습니다. 하드 제한 위에 ReplicationException이 발생합니다. 응용 프로그램 논리에 원자 복제를 필요로 하지 않는 경우 ReplicationOptions.setUseAtomicCalls를 false로 설정하여 이 제한을 극복할 수 있으며, 이 제한은 경로 수를 허용하지만 내부적으로 버킷을 만들어 이 제한을 유지할 수 있습니다. 복제 호출당 전송된 컨텐츠의 양은 10MB를 초과할 수 없습니다. 여기에는 노드 및 속성이 포함되지만 바이너리는 없어야 합니다(워크플로우 패키지 및 컨텐츠 패키지는 바이너리로 간주됨).
 
 ## 문제 해결 {#troubleshooting}
 
