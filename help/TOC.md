@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9a4e50f56b4b1c9dd7634475e418b4301820efaa
+source-git-commit: dec3dc0f310b24f37f37b45636b17e08e1bb5edf
 workflow-type: tm+mt
 source-wordcount: '3568'
 ht-degree: 97%
@@ -557,7 +557,7 @@ ht-degree: 97%
       + [Screens 플레이어 설치](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [플레이어 등록](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [디스플레이에 플레이어 할당](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + 코드 제품 기능 사용 {#core-product-features}
+   + 핵심 제품 기능 사용 {#core-product-features}
       + [비디오에 대한 썸네일 지원](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
    + Screens as a Cloud Service에서 개발 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)

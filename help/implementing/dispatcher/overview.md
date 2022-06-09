@@ -2,9 +2,9 @@
 title: 컨텐츠 전달 흐름 개요
 description: 컨텐츠 전달 흐름 개요
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 1%
 
 ---
@@ -29,6 +29,9 @@ ht-degree: 1%
 
 기본적으로 컨텐츠 유형 HTML/텍스트는 디스패처 캐시와 CDN이 모두 준수하는 임계값인 디스패처 레이어에서 300초(5분) 후에 만료되도록 설정됩니다. 게시 서비스를 다시 배포하는 동안 디스패처 캐시가 지워지고 후에 새 게시 노드가 트래픽을 허용하기 전에 데워집니다.
 
-아래 섹션에서는 CDN 구성 및 캐싱을 포함한 컨텐츠 전달에 대해 더 자세히 설명합니다.
+다음 섹션에서는 컨텐츠 전달에 대해 더 자세히 설명합니다.
+* [CDN 구성](/help/implementing/dispatcher/cdn.md)
+* [캐싱](/help/implementing/dispatcher/caching.md)
+
 
 작성자 서비스에서 게시 서비스로의 복제에 대한 정보를 사용할 수 있습니다 [여기](/help/operations/replication.md).
