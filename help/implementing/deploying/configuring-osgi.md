@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: '암호 값 및 환경별 값으로 OSGi 구성 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
+source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3240'
 ht-degree: 1%
 
 ---
@@ -38,13 +38,17 @@ osgI 구성 파일은 다음 위치에 정의되어 있습니다.
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-cfg.json OSGi 구성 형식을 따릅니다.
+다음을 수행합니다. `cfg.json` OSGi 구성 형식입니다.
 
 >[!NOTE]
 >
->이전 버전의 AEM에서는 .cfg, .config 및 XML sling:OsgiConfig 리소스 정의와 같은 다양한 파일 형식을 사용하여 OSGi 구성 파일을 지원합니다. 이러한 형식은 cfg.json OSGi 구성 형식으로 대체됩니다.
+>이전 버전의 AEM에서 지원하는 OSGi 구성 파일은 다음과 같은 다양한 파일 형식을 사용합니다 `.cfg`, `.config` 및 XML로 `sling:OsgiConfig` 리소스 정의. 이러한 형식은 `.cfg.json` OSGi 구성 형식입니다.
 
 ## 런타임 모드 해상도 {#runmode-resolution}
+
+>[!TIP]
+>
+>AEM 6.x는 사용자 지정 실행 모드를 지원하지만 AEM as a Cloud Service은 지원하지 않습니다. AEM as a Cloud Service 지원 [정확한 런타임 모드 집합](./overview.md#runmodes). AEM as a Cloud Service 환경 간의 OSGi 구성의 모든 변형은 [OSGi 구성 환경 변수](#environment-specific-configuration-values).
 
 특정 OSGi 구성은 런타임 모드를 사용하여 특정 AEM 인스턴스에 타깃팅할 수 있습니다. 실행 모드를 사용하려면 아래에 구성 폴더를 만드십시오. `/apps/example` (예제에서 는 프로젝트 이름) 형식으로
 
@@ -60,9 +64,35 @@ cfg.json OSGi 구성 형식을 따릅니다.
 
 >[!NOTE]
 >
->A `config.preview` OSGI 구성 폴더 **사용할 수 없음** 같은 방법으로 선언되다 `config.publish` 폴더를 선언할 수 있습니다. 대신 미리 보기 계층은 게시 계층의 값에서 해당 OSGI 구성을 상속합니다.
+>A `config.preview` OSGi 구성 폴더 **사용할 수 없음** 같은 방법으로 선언되다 `config.publish` 폴더를 선언할 수 있습니다. 대신 미리 보기 계층은 게시 계층의 값에서 해당 OSGi 구성을 상속합니다.
 
-로컬에서 개발할 때 런타임 모드 시작 매개 변수를 전달하여 어떤 런타임 모드 OSGI 구성이 사용되는지를 지시할 수 있습니다.
+로컬에서 개발할 때 실행 모드 시작 매개 변수 `-r`은 런타임 모드 OSGI 구성을 지정하는 데 사용됩니다.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
+
+### 실행 모드 확인
+
+AEM as a Cloud Service 실행 모드는 환경 유형 및 서비스를 기반으로 잘 정의됩니다. 를 검토합니다. [사용 가능한 AEM as a Cloud Service 실행 모드 전체 목록](./overview.md#runmodes).
+
+실행 모드에서 지정한 OSGi 구성 값은 다음 방법으로 확인할 수 있습니다.
+
+1. AEM을 Cloud Services 환경으로 열기 [개발자 콘솔](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. 검사하려는 서비스 계층 선택, __Pod__ 드롭다운
+1. 선택 __상태__ 탭
+1. 선택 __구성__ 에서 __상태 덤프__ 드롭다운
+1. 선택 __상태 가져오기__ 버튼
+
+결과 보기에는 해당 OSGi 구성 값이 있는 선택한 계층의 모든 OSGi 구성 요소 구성이 표시됩니다. 이러한 값은 아래의 AEM 프로젝트의 소스 코드에 있는 OSGi 구성 값과 상호 참조할 수 있습니다 `/apps/example/osgiconfig/config.<runmode(s)>`.
+
+
+적절한 OSGi 구성 값이 적용되었는지 확인하려면:
+
+1. 개발자 콘솔의 구성 출력에서
+1. 을(를) 찾습니다 `pid` 확인할 OSGi 구성 표시; AEM 프로젝트의 소스 코드에 있는 OSGi 구성 파일의 이름입니다.
+1. Inspect `properties` 목록 `pid` 및 키 및 값이 검증되는 실행 모드에 대한 AEM 프로젝트 소스 코드의 OSGi 구성 파일과 일치하는지 확인합니다.=
+
 
 ## OSGi 구성 값 유형 {#types-of-osgi-configuration-values}
 
@@ -200,7 +230,7 @@ OSGi 구성은 환경별로 정의될 변수에 대한 자리 표시자를 지�
 use $[env:ENV_VAR_NAME]
 ```
 
-고객은 사용자 지정 코드와 관련된 OSGI 구성 속성에만 이 기술을 사용해야 합니다. Adobe 정의 OSGI 구성을 재정의하는 데 이 구성 요소를 사용하지 않아야 합니다.
+고객은 사용자 지정 코드와 관련된 OSGi 구성 속성에만 이 기술을 사용해야 합니다. Adobe 정의 OSGi 구성을 재정의하는 데 이 구성 요소를 사용하지 않아야 합니다.
 
 >[!NOTE]
 >
@@ -268,12 +298,12 @@ AEM을 시작하기 전에 구성에 사용되는 환경 변수를 설정하고 
 
 ### 작성자 및 게시 구성 {#author-vs-publish-configuration}
 
-OSGI 속성에 작성자와 게시에 대해 다른 값이 필요한 경우:
+OSGi 속성에 작성자와 게시에 대해 다른 값이 필요한 경우:
 
 * 별도의 `config.author` 및 `config.publish` 에 설명된 대로 OSGi 폴더를 사용해야 합니다. [런타임 모드 해상도 섹션](#runmode-resolution).
 * 사용해야 하는 독립 변수 이름을 만드는 두 가지 옵션이 있습니다.
-   * 첫 번째 옵션인 가 권장됩니다. 모든 OSGI 폴더(예: `config.author` 및 `config.publish`) 다른 값을 정의하기 위해 선언된 경우 동일한 변수 이름을 사용합니다. 예
-      `$[env:ENV_VAR_NAME;default=<value>]`: 기본값이 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. 를 통해 환경 변수를 설정할 때 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 또는 클라이언트를 통해, 여기에서 설명한 대로 &quot;service&quot; 매개 변수를 사용하여 계층을 구분합니다 [API 참조 설명서](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGI 계층에 바인딩합니다. &quot;작성자&quot;, &quot;게시&quot; 또는 &quot;미리 보기&quot;일 수 있습니다.
+   * 첫 번째 옵션인 가 권장됩니다. 모든 OSGi 폴더(예: `config.author` 및 `config.publish`) 다른 값을 정의하기 위해 선언된 경우 동일한 변수 이름을 사용합니다. 예
+      `$[env:ENV_VAR_NAME;default=<value>]`: 기본값이 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. 를 통해 환경 변수를 설정할 때 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 또는 클라이언트를 통해, 여기에서 설명한 대로 &quot;service&quot; 매개 변수를 사용하여 계층을 구분합니다 [API 참조 설명서](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGi 계층에 바인딩합니다. &quot;작성자&quot;, &quot;게시&quot; 또는 &quot;미리 보기&quot;일 수 있습니다.
    * 두 번째 옵션은 다음과 같은 접두사를 사용하여 고유 변수를 선언하는 것입니다. `author_<samevariablename>` 및 `publish_<samevariablename>`
 
 ### 구성 예 {#configuration-examples}
@@ -282,7 +312,7 @@ OSGI 속성에 작성자와 게시에 대해 다른 값이 필요한 경우:
 
 **예제 1**
 
-목적은 OSGI 속성 값에 대한 것입니다 `my_var1` 스테이지와 프로덕션에 대해 동일하지만 세 가지 개발 환경에 대해 각각 다릅니다.
+목적은 OSGi 속성 값에 대한 것입니다 `my_var1` 스테이지와 프로덕션에 대해 동일하지만 세 가지 개발 환경에 대해 각각 다릅니다.
 
 <table>
 <tr>
@@ -317,7 +347,7 @@ config.dev
 
 **예제 2**
 
-목적은 OSGI 속성 값에 대한 것입니다 `my_var1` 단계, prod 및 세 가지 개발 환경에 대해 각각 다릅니다. 따라서 값을 설정하려면 Cloud Manager API를 호출해야 합니다 `my_var1` 각 dev env.
+목적은 OSGi 속성 값에 대한 것입니다 `my_var1` 단계, prod 및 세 가지 개발 환경에 대해 각각 다릅니다. 따라서 값을 설정하려면 Cloud Manager API를 호출해야 합니다 `my_var1` 각 dev env.
 
 <table>
 <tr>

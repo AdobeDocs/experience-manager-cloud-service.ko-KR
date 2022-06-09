@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3360'
 ht-degree: 2%
 
 ---
@@ -191,7 +191,7 @@ Cloud Manager를 통해 설치된 모든 컨텐츠 패키지(변경할 수 있�
 
 일반적으로 고객은 Adobe의 번역 파트너와 같은 소프트웨어 공급업체로부터 사전 빌드된 패키지를 포함합니다. 원격 리포지토리에서 이러한 패키지를 호스팅하고 `pom.xml`. 이 기능은 다음과 같이 암호를 보호하는 공용 저장소 및 개인 저장소에 사용할 수도 있습니다. [암호로 보호된 maven 저장소](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-원격 저장소에 패키지를 저장할 수 없는 경우, 고객은 프로젝트의 일부로 SCM에 커밋되고 이 패키지에 종속되는 모든 항목에서 참조하는 로컬 파일 시스템 기반 Maven 리포지토리에 배치할 수 있습니다. 저장소는 아래 그림과 같이 프로젝트 상태에 선언됩니다.
+원격 저장소에 패키지를 저장할 수 없는 경우, 고객은 프로젝트의 일부로 SCM에 커밋되고 이 패키지에 종속되는 모든 항목에서 참조하는 로컬 파일 시스템 기반 Maven 리포지토리에 배치할 수 있습니다. 리포지토리는 아래 그림과 같이 프로젝트 pom에서 선언됩니다.
 
 
 ```
@@ -309,13 +309,17 @@ Cloud Ready AEM 빠른 시작을 사용하여 복제를 개발하고 테스트�
 * **config.publish.dev** (*AEM 개발 게시 서비스에 적용됩니다*)
 * **config.publish.stage** (*AEM 스테이징 게시 서비스에 적용됩니다*)
 * **config.publish.prod** (*AEM Production Publish 서비스에 적용됩니다*)
-* **config.dev** (*AEM 개발 서비스에 적용)
-* **config.stage** (*AEM 스테이징 서비스에 적용)
-* **config.prod** (*AEM Production Services에 적용)
+* **config.dev** (*AEM 개발 서비스에 적용됩니다*)
+* **config.stage** (*AEM 스테이징 서비스에 적용됩니다*)
+* **config.prod** (*AEM Production Services에 적용됩니다*)
 
 가장 일치하는 실행 모드가 있는 OSGI 구성이 사용됩니다.
 
-로컬에서 개발할 때 런타임 모드 시작 매개 변수를 전달하여 사용할 런타임 모드 OSGI 구성을 지정할 수 있습니다.
+로컬에서 개발할 때 실행 모드 시작 매개 변수 `-r`은 런타임 모드 OSGI 구성을 지정하는 데 사용됩니다.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
