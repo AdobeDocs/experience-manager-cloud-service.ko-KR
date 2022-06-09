@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
+source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
 workflow-type: tm+mt
-source-wordcount: '3576'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 97%
    + [용어 - 클라우드용 새로운 용어](/help/overview/terminology.md)
    + [AEM as a Cloud Service 아키텍처 소개](/help/overview/architecture.md)
    + [SEO 및 URL 관리](/help/overview/seo-and-url-management.md)
+   + [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [KPI 평가](/help/overview/assessing-kpis.md)
    + [KPI 정렬](/help/overview/aligning-kpis.md)
    + [적합한 팀 선택](/help/overview/choose-right-team.md)
@@ -33,6 +34,7 @@ ht-degree: 97%
    + 일반 AEMaaCS 릴리스 노트 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [2022.4.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [2022.3.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [2022.1.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
@@ -358,6 +360,7 @@ ht-degree: 97%
       + [에셋용 디지털 권한 관리](/help/assets/drm.md)
       + [에셋에 워터마크 추가](/help/assets/watermark-assets.md)
       + [ [!DNL Creative Cloud] API를 사용하여 에셋 처리](/help/assets/cc-api-integration.md)
+      + [이미지용 색상 태그](/help/assets/color-tag-images.md)
    + [!DNL Assets] 구성, 관리 및 확장 {#admin}
       + [개발자 문서 및 API 참조](/help/assets/developer-reference-material-apis.md)
       + [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)
@@ -612,6 +615,7 @@ ht-degree: 97%
       + [GraphQL 끝점](/help/headless/setup/create-api-request.md)
    + 콘텐츠 조각 {#content-fragments}
       + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ko)
+      + [컨텐츠 조각 콘솔](/help/headless/content-fragments/content-fragment-console.md)
       + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ko)
       + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ko)
       + 작성{#authoring}

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service Cloud Manager 2022.5.0의 릴리스 노트
 description: 다음은 AEM as a Cloud Service의 Cloud Manager 2022.5.0에 대한 릴리스 노트입니다.
 feature: Release Information
-source-git-commit: 47a8f736a74b26e0b9748a74488d2abacd48f6cc
+source-git-commit: a7f8d39c74d4f6bfe34b9e6b11f5ec9e4ffb34db
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service 릴리스 2022년 5월 5일에 Cloud Manager 릴리스 2022.5.0의 릴리스 날짜입니다. 다음 릴리스는 2022년 6월 9일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 릴리스 2022.5.0의 출시일은 2022년 5월 5일입니다. 다음 릴리스는 2022년 6월 9일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 

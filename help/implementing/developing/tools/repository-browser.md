@@ -4,7 +4,7 @@ seo-title: Repository Browser
 description: 저장소 브라우저는 작성자, 게시 및 미리 보기 계층의 모든 환경을 위한 저장소에 읽기 전용 보기를 제공합니다.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
+source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
@@ -65,6 +65,18 @@ ht-degree: 2%
 왼쪽 탐색 창을 사용하여 컨텐츠 계층 구조를 탐색할 수 있습니다. 각 폴더 또는 노드를 클릭하면 하위 폴더가 표시됩니다. 폴더 구조는 JCR 노드 트리의 수퍼 셋인 Sling 리소스 트리를 반영합니다.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
+
+<!-- Alexandru: temporarily commenting this out, please don't delete. 
+
+Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+
+![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
+
+Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+
+Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
+
+-->
 
 게시의 경우 기본적으로 저장소 브라우저에는 공개 컨텐츠만 표시되므로 다음과 같은 특정 폴더가 표시됩니다 `/conf` 또는 `/home` 표시되지 않습니다.
 

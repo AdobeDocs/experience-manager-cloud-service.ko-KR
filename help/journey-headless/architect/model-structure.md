@@ -2,10 +2,10 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 컨텐츠 조각 모델을 사용하여 헤드리스 CMS용 컨텐츠 모델링 컨텐츠의 개념과 역학에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 컨텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 
-그런 다음 컨텐츠 조각 모델 을 만들고 구조를 정의할 수 있습니다. 도구 -> 자산 -> 컨텐츠 조각 모델에서 이 작업을 수행할 수 있습니다.
+그런 다음 컨텐츠 조각 모델 을 만들고 구조를 정의할 수 있습니다. 이 작업은 아래에서 수행할 수 있습니다 **도구** -> **일반** -> **컨텐츠 조각 모델**.
 
 ![도구의 컨텐츠 조각 모델](assets/cfm-tools.png)
 
@@ -102,7 +102,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 모델이 인 경우 **잠김** (읽기 전용 모드에서) 모델의 내용 및 구조를 볼 수 있지만 직접 편집할 수는 없습니다. 관리 **잠김** 콘솔 또는 모델 편집기에서 모델을 생성합니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 기본 사항을 배웠으므로 다음 단계는 고유한 컨텐츠 조각 모델 만들기를 시작하는 것입니다.
 
@@ -110,7 +110,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔의 대부분/대부분 기능은 이동 및 작업 수행에도 관련이 있습니다. **컨텐츠 조각 모델** 아래에 **자산** 콘솔.
+* [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔의 대부분/대부분 기능은 이동 및 작업 수행에도 관련이 있습니다. **컨텐츠 조각 모델** 아래에 **일반** 콘솔.
 
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 

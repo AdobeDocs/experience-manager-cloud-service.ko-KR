@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 98%
+source-wordcount: '960'
+ht-degree: 87%
 
 ---
 
@@ -16,13 +16,9 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->이 기능 중 일부는 프리릴리스 채널에서 사용할 수 있습니다. 특히 지속 쿼리와 관련된 기능이 사용될 수 있습니다.
-> 
->환경에 맞는 기능을 활성화하는 방법에 대한 자세한 내용은 [프리릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease)를 참조하십시오.
-
->[!NOTE]
+>GraphiQL은 AEM의 모든 환경에 포함되어 있지만 엔드포인트를 구성할 때만 액세스/볼 수 있습니다.
 >
->GraphiQL이 AEM에 포함되지만 기본적으로 `dev-authors` 환경에서만 활성화됩니다.
+>이전 릴리스에서는 GraphiQL IDE를 설치하려면 패키지가 필요합니다. 설치된 경우 이제 제거할 수 있습니다.
 
 >[!NOTE]
 >GraphiQL IDE를 사용하기 전에 [구성 브라우저](/help/assets/content-fragments/content-fragments-configuration-browser.md)에서 [끝점을 구성](/help/headless/graphql-api/graphql-endpoint.md)해야 합니다.
@@ -35,7 +31,7 @@ ht-degree: 98%
 * 바로 결과를 조회하기 위해 쿼리 실행
 * **쿼리 변수** 관리
 * **지속 쿼리** 저장 및 관리
-* **지속 쿼리** 게시 또는 게시 취소(`dev-publish`에/에서)
+* 게시 또는 게시 취소, **지속되는 쿼리** (예: to/from `dev-publish`)
 * 이전 쿼리의 **내역** 참조
 * **설명서 탐색기**&#x200B;를 사용하여 설명서에 액세스합니다. 이를 통해 사용 가능한 방법을 쉽게 배우고 이해할 수 있습니다.
 
@@ -46,7 +42,7 @@ ht-degree: 98%
 
 ![GraphiQL 인터페이스](assets/cfm-graphiql-interface.png "GraphiQL 인터페이스")
 
-GET 요청을 사용하고 쿼리를 게시하여 클라이언트 애플리케이션에서 요청할 수 있도록 개발 제작자 시스템에서 GraphiQL을 사용할 수 있습니다. 프로덕션을 사용하는 경우 [쿼리를 프로덕션 환경으로 이전](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)해야 합니다. 처음은 쿼리로 새로 작성된 콘텐츠를 확인하기 위해 프로덕션 작성자로 복제되고, 마지막은 라이브 소비를 위해 프로덕션 게시로 복제됩니다.
+시스템에서 GraphiQL을 사용하여 GET 요청을 사용하여 클라이언트 애플리케이션에서 쿼리를 요청하고 쿼리를 게시할 수 있습니다. 프로덕션 사용의 경우 다음 작업을 수행할 수 있습니다 [쿼리를 프로덕션 환경으로 이동](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 처음은 쿼리로 새로 작성된 콘텐츠를 확인하기 위해 프로덕션 작성자로 복제되고, 마지막은 라이브 소비를 위해 프로덕션 게시로 복제됩니다.
 
 ## 끝점 선택 중 {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 
 ![GraphQL 변수](assets/cfm-graphqlapi-03.png "GraphQL 변수")
 
-## 지속 쿼리 게시 중(개발-게시) {#publishing-persisted-queries}
+## 지속되는 쿼리 게시 {#publishing-persisted-queries}
 
-목록(왼쪽 패널)에서 지속 쿼리가 선택되면 **게시** 및 **게시 취소** 액션을 사용할 수 있습니다. 테스트할 때 애플리케이션에서 간편하게 액세스할 수 있도록 개발 게시 환경(`dev-publish`)에 맞게 액션을 활성화합니다.
+목록(왼쪽 패널)에서 지속 쿼리가 선택되면 **게시** 및 **게시 취소** 액션을 사용할 수 있습니다. 이렇게 하면 게시 환경에 활성화됩니다(예: `dev-publish`) 테스트 시 애플리케이션에서 쉽게 액세스할 수 있습니다.
 
 >[!NOTE]
 >
