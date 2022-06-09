@@ -2,10 +2,10 @@
 title: 프로그램 편집
 description: 프로덕션 및 샌드박스 프로그램을 편집하여 옵션을 만든 후 조정하는 방법을 알아봅니다.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -32,13 +32,13 @@ ht-degree: 1%
 
    ![프로그램 편집 옵션](assets/edit-program-overview.png)
 
-1. 다음 **프로그램 편집** 페이지에 두 개의 탭이 표시됩니다. **일반** 및 **솔루션 및 추가 기능**. 을(를) 선택합니다 **일반** 탭하여 프로그램 이름과 설명을 편집합니다.
+1. 다음 **프로그램 편집** 페이지가 열립니다. 설정 **일반** 탭에서 프로그램 이름과 설명을 편집합니다.
 
    * 프로그램에 대해 하나 이상의 솔루션을 선택해야 합니다.
 
    ![일반 탭](assets/edit-program-prod1.png)
 
-1. 을(를) 선택합니다 **솔루션 및 추가 기능** 탭을 사용하여 프로그램의 솔루션을 수정합니다.
+1. 설정 **솔루션 및 추가 기능** 탭에서 프로그램의 솔루션을 수정합니다.
 
    ![솔루션 선택](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ ht-degree: 1%
 
    ![추가 기능 편집](assets/edit-program-add-on.png)
 
+1. 설정 **라이브 설정으로 이동** 탭에서 프로그램에 대한 계획된 go-live 날짜를 수정합니다.
+
+   ![Go-live 설정 편집](assets/edit-program-go-live.png)
+
+   * 이 날짜는 정보 제공용으로만 사용되며 프로그램 개요 페이지에서 Go Live 위젯을 트리거하여 여정을 성공적이고 원활한 Go Live 경험으로 정점에 맞게 AEM as a Cloud Service Best Practice 설명서에 대한 제품 내 링크를 적시에 제공합니다.
+
 1. 클릭 **업데이트** 프로그램에 변경 사항을 저장하려면 다음을 수행합니다.
 
-업데이트가 수행되면 선택한 솔루션이 변경되면 다음 배포 후 해당 변경 사항이 적용됩니다.
+솔루션 추가 또는 제거를 포함하여 프로그램을 편집할 때마다 이러한 변경 사항은 다음 배포 후 적용됩니다.
 
 ## 샌드박스 프로그램 삭제 {#delete-sandbox-program}
 

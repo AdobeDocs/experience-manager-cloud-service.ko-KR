@@ -2,9 +2,9 @@
 title: '제작 프로그램 만들기 '
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하기 위한 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '442'
 ht-degree: 2%
 
 ---
@@ -34,11 +34,11 @@ ht-degree: 2%
 
    ![Cloud Manager 랜딩 페이지](assets/first_timelogin1.png)
 
-1. 선택 **프로덕션에 대해 설정** 프로그램 만들기 마법사에서 프로덕션 프로그램을 만듭니다. 선택 전에 기본 프로그램 이름을 적용하거나 편집할 수 있습니다 **만들기**.
+1. 선택 **프로덕션에 대해 설정** 프로그램 만들기 마법사에서 프로덕션 프로그램을 만듭니다. 기본 프로그램 이름을 적용하거나 편집하려면 먼저 **계속**.
 
    ![프로그램 마법사 만들기](assets/create-prod1.png)
 
-1. 다음 탭에서 프로그램에 포함할 솔루션을 선택합니다.
+1. 설정 **솔루션 및 추가 기능** 탭에서 프로그램에 포함할 솔루션을 선택합니다.
 
    ![솔루션 선택](assets/setup-prod-select.png)
 
@@ -46,7 +46,16 @@ ht-degree: 2%
 
    ![추가 기능 선택](assets/setup-prod-commerce.png)
 
-1. 솔루션 및 추가 기능을 선택하고 **만들기**.
+1. 솔루션 및 추가 기능을 선택하고 **계속**.
+
+1. 설정 **Go-Live 날짜** 탭에서 생산 프로그램을 실행할 일자를 입력합니다.
+
+   ![계획된 go-live 날짜 정의](assets/setup-go-live.png)
+
+   * 이 날짜는 언제든지 편집할 수 있습니다.
+   * 이 날짜는 정보 제공용으로만 사용되며 프로그램 개요 페이지에서 Go Live 위젯을 트리거하여 여정을 성공적이고 원활한 Go Live 경험으로 정점에 맞게 AEM as a Cloud Service Best Practice 설명서에 대한 제품 내 링크를 적시에 제공합니다.
+
+1. **만들기**&#x200B;를 클릭합니다.
 
 프로그램은 Cloud Manager에서 만들며 랜딩 페이지에서 표시되고 선택할 수 있습니다.
 
