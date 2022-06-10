@@ -2,9 +2,9 @@
 title: Cloud Manager FAQ
 description: AEM as a Cloud Service에서 Cloud Manager에 대해 자주 묻는 질문에 대한 답변을 확인하십시오.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
+source-git-commit: 8e02f470b474ad448a5fb80dd3b410d414d78a3b
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,9 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin` 이 오류로 실패할 �
 
 예. 보안 등급을 제외한 모든 코드 품질 검사 오류는 중요하지 않은 지표이므로 결과 UI에서 항목을 확장하여 배포 파이프라인의 일부로 우회할 수 있습니다.
 
-문서 보기 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 자세한 내용
+을 사용하는 사용자 [배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) 역할은 문제를 재정의할 수 있습니다. 이 경우 파이프라인이 진행되거나 해당 문제를 수락할 수 있습니다. 이 경우 파이프라인이 오류로 중지됩니다.
+
+문서 보기 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) 자세한 내용
 
 ## Maven 프로젝트 버전에 SNAPSHOT을 사용할 수 있습니까? {#use-snapshot}
 
