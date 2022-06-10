@@ -2,9 +2,9 @@
 title: Cloud Manager FAQ
 description: AEM as a Cloud Service에서 Cloud Manager에 대해 자주 묻는 질문에 대한 답변을 확인하십시오.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin` 이 오류로 실패할 �
 
 ## 코드 품질 검사에 실패하여 배포가 중단되었습니다. 이 수표를 우회할 수 있는 방법이 있나요? {#deployment-stuck}
 
-예. 보안 등급을 제외한 모든 코드 품질 확인 오류는 중요하지 않은 지표이므로 결과 UI에서 항목을 확장하여 생략할 수 있습니다.
+예. 보안 등급을 제외한 모든 코드 품질 검사 오류는 중요하지 않은 지표이므로 결과 UI에서 항목을 확장하여 배포 파이프라인의 일부로 우회할 수 있습니다.
 
-문서를 참조하십시오 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md) 자세한 내용
+문서 보기 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md) 및 [비프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 자세한 내용
 
 ## Maven 프로젝트 버전에 SNAPSHOT을 사용할 수 있습니까? {#use-snapshot}
 
