@@ -4,9 +4,9 @@ description: 통합 소개 [!DNL Assets] 및 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 1a0718d317f13924cd4da273f9184b4f165bbc7e
+source-git-commit: 8dd16d0ef18cba90417fe97bc51a1d3de899296f
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 4%
 >
 >* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 사전 릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 [향상된 커넥터 설치 지침](workfront-connector-install.md).
 >
->* 자세한 내용은 [Experience Manager Assets Enhanced Connector용 Workfront의 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 시험에 관한 정보는 [시험 안내서](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* 자세한 내용은 [Experience Manager Assets Enhanced Connector용 Workfront의 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 시험에 대한 자세한 내용은 [시험 안내서](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 
 ## 서로 다른 통합 비교 [!DNL Assets] 및 [!DNL Workfront] {#feature-parity-matrix}
