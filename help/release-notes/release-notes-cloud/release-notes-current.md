@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a2cdc7c4e9d3dfd52ca76afcf951fa67b279918a
+source-git-commit: e5b0bee3e2e4a10b3015f115d5193c43a1e15c1b
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 18%
+source-wordcount: '821'
+ht-degree: 17%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 18%
 ### [!DNL Sites] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-sites}
 
 * 다양한 GraphQL 기능
-* 컨텐츠 조각의 헤드리스 사용에 최적화된 새로운 콘솔
+* A [새 콘솔](/help/headless/content-fragments/content-fragment-console.md) 컨텐츠 조각의 헤드리스 사용을 위해 최적화되었습니다.
 
 ## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
 
@@ -89,6 +89,10 @@ Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이제 [이�
 * 복제 에이전트 관리 화면의 &quot;트리 추가&quot; 옵션 **배포 탭**&#x200B;이전에 더 이상 사용되지 않음으로 발표된 는 2022년 6월 20일에 제거되거나 곧 그 이후에 제거됩니다. 컨텐츠 계층 구조의 패키지를 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [컨텐츠 트리 게시 워크플로우](/help/operations/replication.md#publish-content-tree-workflow).
 
 * 10MB보다 큰 컨텐츠 패키지(바이너리를 포함하지 않는 속성이 있는 노드)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 것은 더 이상 사용되지 않으며, 2022년 9월 12일 또는 그 다음 단계에 적용됩니다. 대신, [게시 관리](/help/operations/replication.md#manage-publication) 또는 [컨텐츠 트리 게시 워크플로우](/help/operations/replication.md#publish-content-tree-workflow) 이 큰 컨텐츠 패키지를 복제하려면 를 사용해야 합니다. 7월에 복제 에이전트 관리 화면에 경고 메시지가 표시됩니다 **배포 탭** 복제 API를 사용하여 이러한 큰 컨텐츠 패키지를 복제할 때마다 이러한 큰 컨텐츠 패키지 및 AEM 오류 로그도 복제하려는 경우 9월에는 경고가 오류로 대체됩니다. 그에 따라 프로세스를 조정하십시오.
+
+### [!DNL Experience Manager] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-foundation}
+
+* AEM as a Cloud Service은 이제 통합 셸과 통합되어 사용자 경험을 향상하고 다른 모든 Experience Cloud 애플리케이션과 통합할 수 있습니다. 을(를) 참조하십시오. [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 자세한 내용
 
 ## [!DNL Experience Manager] 로서의 [!DNL Cloud Service] 기초 보안 {#foundation-security}
 
