@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달용 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
-workflow-type: ht
-source-wordcount: '2569'
-ht-degree: 100%
+source-git-commit: 71dc0f18dfea348ab291ac1a32f38d6b03ac577c
+workflow-type: tm+mt
+source-wordcount: '2664'
+ht-degree: 96%
 
 ---
 
@@ -104,6 +104,27 @@ GraphQL을 사용하여 다음 중 하나를 반환하는 쿼리를 수행할 �
 다음 작업도 수행할 수 있습니다.
 
 * [캐시된 지속 쿼리](/help/headless/graphql-api/persisted-queries.md)
+
+### GraphQL 쿼리 우수 사례(Dispatcher) {#graphql-query-best-practices}
+
+다음 [지속되는 쿼리](/help/headless/graphql-api/persisted-queries.md) 권장되는 방법은 다음과 같습니다.
+
+* 캐시됩니다
+* AEM as a Cloud Service을 통해 중앙 집중식으로 관리됩니다.
+
+직접 및/또는 POST 쿼리는 캐시되지 않으므로 권장되지 않으므로 기본 인스턴스에서 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
+
+>[!NOTE]
+>
+>Dispatcher에서 직접 및/또는 POST을 허용하려면 시스템 관리자에게 다음 작업을 요청할 수 있습니다.
+>
+>* 라는 Cloud Manager 환경 변수를 만듭니다. `ENABLE_GRAPHQL_ENDPOINT`
+>* 값 사용 `true`
+
+
+>[!NOTE]
+>
+>직접 쿼리를 수행하는 기능은 향후의 어느 시점에서 더 이상 사용되지 않을 수 있습니다.
 
 ### GraphiQL IDE {#graphiql-ide}
 
