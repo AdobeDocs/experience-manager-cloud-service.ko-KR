@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 75%
@@ -43,7 +43,7 @@ ht-degree: 75%
    >
    >적응형 양식을 만들 때 **[!UICONTROL 구성 컨테이너]** 필드.
 
-1. 구성 페이지에서 **[!UICONTROL 만들기]** 만들기 [!DNL Adobe Sign]AEM Forms의 구성.
+1. 구성 페이지에서 **[!UICONTROL 만들기]** 만들기 [!DNL Adobe Sign] AEM Forms의 구성.
 1. 에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL Adobe Sign 구성 만들기]** 페이지에서, **[!UICONTROL 이름]** 구성에 대해 를 탭하고 **[!UICONTROL 다음]**. 원할 경우 **[!UICONTROL 제목]** 을(를) 찾아 **[!UICONTROL 축소판]** 참조하십시오.
 
 1. 현재 브라우저 창의 URL을 메모장에 복사합니다. 이 URL은 이후 단계에서 [!DNL AEM Forms]를 사용해 [!DNL Adobe Sign]을 구성하는 데 필요합니다.
