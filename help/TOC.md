@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
+source-git-commit: d634c6f3707b0fef444e0e84945727b52d2ec2c6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3599'
+ht-degree: 97%
 
 ---
 
@@ -605,6 +605,7 @@ ht-degree: 0%
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Headless {#headless}
+   + [헤드리스 CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
