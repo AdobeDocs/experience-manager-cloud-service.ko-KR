@@ -4,7 +4,7 @@ description: 사이트 테마를 쉽게 사용자 지정하고 관리하는 데 
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 >
 >를 검토합니다. [빠른 사이트 만들기 여정](/help/journey-sites/quick-site/overview.md) 빠른 사이트 생성 도구 및 프런트 엔드 파이프라인에 익숙해져 사이트 테마를 쉽게 사용자 지정할 수 있습니다.
 
-##  테마 소스 다운로드 {#downloading-theme-sources}
+## 테마 소스 다운로드 {#downloading-theme-sources}
 
 AEM에서 을 기반으로 사이트를 만들 때 [사이트 템플릿,](site-templates.md) 다음 파일을 다운로드할 수 있습니다. [사이트 테마](site-themes.md) 사이트 레일 사용.
 
@@ -40,7 +40,7 @@ AEM에서 을 기반으로 사이트를 만들 때 [사이트 템플릿,](site-t
 
 탭 또는 클릭 **테마 소스 다운로드** 사이트 테마의 로컬 복사본을 `.zip` 사용자 지정을 위한 파일입니다.
 
-##  템플릿 리소스 다운로드 {#downloading-template-resources}
+## 템플릿 리소스 다운로드 {#downloading-template-resources}
 
 [사이트 템플릿](site-templates.md) 에는 사이트 컨텐츠 구조 및 [사이트 테마.](site-themes.md) 사이트 템플릿에는 와이어프레임 디자인 또는 기타 사이트 관련 파일이 포함될 수 있습니다.
 
