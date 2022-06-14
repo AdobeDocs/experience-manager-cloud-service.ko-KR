@@ -1,13 +1,13 @@
 ---
 title: 이미지용 색상 태그
 description: Experience Manager Assets을 사용하면 이미지에서 색상을 구별하고 자동으로 태그로 적용할 수 있습니다. 그런 다음 이러한 태그를 사용하여 이미지를 검색하고 필터링할 수 있습니다.
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # 이미지용 색상 태그 {#color-tag-images}
 
@@ -106,6 +106,24 @@ Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이미지의
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## DAM에서 기존 이미지에 대한 색상 태그 {#color-tags-existing-images}
+
+DAM에 있는 기존 이미지에는 자동으로 색상 태그가 지정되지 않습니다. 다음을 수행해야 합니다. [!UICONTROL 자산 재처리] 수동으로 색상 태그를 생성합니다.
+
+자산 저장소에 이미 있는 자산의 이미지 또는 폴더(하위 폴더 포함)에 색상을 지정하려면 다음 단계를 수행합니다.
+
+1. 을(를) 선택합니다 [!DNL Adobe Experience Manager] 로고를 클릭한 다음, [!UICONTROL 탐색] 페이지.
+
+1. 선택 [!UICONTROL 파일] 자산 인터페이스를 표시합니다.
+
+1. 색상 태그를 적용할 폴더로 이동합니다.
+
+1. 전체 폴더 또는 특정 이미지를 선택합니다.
+
+1. 선택 ![자산 재처리 아이콘](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 자산 재처리] 아이콘을 클릭하고 [!UICONTROL 전체 프로세스] 선택 사항입니다.
+
+프로세스가 완료되면 을(를) 통해 [!UICONTROL 속성] 폴더 내의 모든 이미지 페이지입니다. 자동으로 추가된 태그는 [!UICONTROL 스마트 색상 태그] 섹션 [!UICONTROL 기본] 탭.
+
 
 ## 이미지용 스마트 색상 태그 보기 {#view-color-tags}
 
@@ -167,7 +185,3 @@ Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이미지의
    한 가지 색상 선택에 따라 이미지를 필터링할 수 있습니다. 선택한 색상을 스마트 색상 태그 중 하나 이상과 [범위/우위 임계값 %](#manage-color-tagging-settings) 오른쪽 창에 를 표시합니다.
 
 1. 검색 막대에서 x 를 클릭하여 필터를 지웁니다.
-
-
-
-
