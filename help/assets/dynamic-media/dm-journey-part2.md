@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media 여정, 제2부
+title: Dynamic Media으로 여정, 2부
 description: Dynamic Media 여정은 Dynamic Media의 기본 사항, 작동 방법, 사용자에게 유용한 정보, 작업 및 고객에게 제공하는 가치 등을 다룹니다.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
 workflow-type: tm+mt
-source-wordcount: '2877'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---
