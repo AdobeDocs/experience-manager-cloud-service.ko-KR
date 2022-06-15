@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
+source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1811'
 ht-degree: 4%
 
 ---
@@ -183,6 +183,9 @@ CDN 에지 노드는 요청된 바이너리 업로드 속도를 높이는 데 �
 
 * [오픈 소스 aem-upload 라이브러리](https://github.com/adobe/aem-upload).
 * [오픈 소스 명령줄 도구](https://github.com/adobe/aio-cli-plugin-aem).
+
+>[!NOTE]
+aem 업로드 라이브러리와 명령줄 도구는 모두 를 사용합니다 [node-httptransfer library](https://github.com/adobe/node-httptransfer/)
 
 ### 이제 사용되지 않는 자산 업로드 API {#deprecated-asset-upload-api}
 
