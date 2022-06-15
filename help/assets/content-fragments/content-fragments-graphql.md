@@ -5,9 +5,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: f296e8cbc12c9426e0fefe6f5342374ba9b21291
+source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '751'
 ht-degree: 17%
 
 ---
@@ -20,7 +20,12 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->자세한 내용은 [헤드리스 및 AEM](/help/headless/introduction.md) AEM Sites as a Cloud Service용 헤드리스 개발에 대한 소개.
+>추가 참조:
+>
+>* [헤드리스란?](/help/headless/what-is-headless.md) 헤드리스 개념 및 용어를 소개합니다.
+>
+>* [헤드리스 및 AEM](/help/headless/introduction.md) AEM Sites as a Cloud Service용 헤드리스 개발에 대한 소개.
+
 
 >[!NOTE]
 >
