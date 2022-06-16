@@ -2,7 +2,7 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드를 빌드하고 테스트하는 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
+source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 
 * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
 * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
+* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven은 `settings.xml` 파일 - 이름이 지정된 프로파일을 사용하여 공용 Adobe 객체 저장소를 자동으로 포함합니다 `adobe-public`. (자세한 내용은 [Adobe Public Maven 저장소](https://repo1.maven.org/) 자세한 내용).
 
 >[!NOTE]

@@ -2,7 +2,7 @@
 title: 경험 감사 테스트
 description: Experience Auditor는 배포 프로세스를 확인하고 배포된 변경 사항이 성능, 액세스 가능성, 모범 사례 및 SEO에 대한 기본 표준을 충족하는지 확인하는 데 도움이 됩니다.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
+source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 1%

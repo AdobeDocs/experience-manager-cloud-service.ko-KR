@@ -2,10 +2,10 @@
 title: Adobe 컨텐츠 패키지 Maven 플러그인
 description: Content Package Maven 플러그인을 사용하여 AEM 응용 프로그램을 배포합니다.
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
+source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 5%
+source-wordcount: '1851'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,10 @@ AEM에 구축된 패키지의 배포는 Adobe Content Package Maven 플러그인
 
 >[!NOTE]
 >
->이제 패키지 만들기가 [Apache Jackrabbit FileVault Package Maven 플러그인](https://jackrabbit.apache.org/filevault-package-maven-plugin/). AEM에 구축된 패키지의 배포는 여기에 설명된 대로 Adobe Content Package Maven 플러그인에 의해 수행됩니다.
+>패키지 **생성** 는 이제 가 소유합니다 [Apache Jackrabbit FileVault Package Maven 플러그인입니다.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>* 다음 `content-package-maven-plugin` 더 이상 릴리스 1.0.2에서 패키지를 지원하지 않습니다.
+>* 이 문서에서는 **배포** AEM에 구축된 패키지 중 하나는 Adobe Content Package Maven 플러그인에 의해 수행됩니다.
+
 
 ## 패키지 및 AEM 프로젝트 구조 {#aem-project-structure}
 
@@ -47,7 +50,7 @@ Content Package Maven 플러그인을 사용하려면 POM 파일의 빌드 요�
 <plugin>
  <groupId>com.day.jcr.vault</groupId>
  <artifactId>content-package-maven-plugin</artifactId>
- <version>0.0.24</version>
+ <version>1.0.4</version>
  <configuration>
        <!-- parameters and values common to all goals, as required -->
  </configuration>
@@ -86,15 +89,15 @@ AEM용 프록시를 사용하는 목표는 Maven 설정에 있는 첫 번째 유
 
 | 이름 | 유형 | 필수 | 기본 값 | 설명 | 목표 |
 |---|---|---|---|---|---|
-| `failOnError` | `boolean` | 아니오 | `false` | 값 `true` 오류가 발생하면 빌드가 실패합니다. 값 `false` 빌드가 오류를 무시합니다. | 목표를 제외한 모든 목표 `package` |
+| `failOnError` | `boolean` | 아니요 | `false` | 값 `true` 오류가 발생하면 빌드가 실패합니다. 값 `false` 빌드가 오류를 무시합니다. | 목표를 제외한 모든 목표 `package` |
 | `name` | `String` | `build`: 예, `install`: 아니요 `rm`: 예 | `build`: 기본값 없음, `install`: 의 값 `artifactId` Maven 프로젝트의 속성 | 작업할 패키지의 이름입니다. | 목표를 제외한 모든 목표 `ls` |
 | `password` | `String` | 예 | `admin` | AEM을 사용한 인증에 사용되는 암호 | 목표를 제외한 모든 목표 `package` |
-| `serverId` | `String` | 아니오 | 인증을 위해 사용자 이름 및 암호를 검색할 서버 ID입니다 | 목표를 제외한 모든 목표 `package` |
+| `serverId` | `String` | 아니요 | 인증을 위해 사용자 이름 및 암호를 검색할 서버 ID입니다 | 목표를 제외한 모든 목표 `package` |
 | `targetURL` | `String` | 예 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM 패키지 관리자의 HTTP 서비스 API의 URL입니다 | 목표를 제외한 모든 목표 `package` |
-| `timeout` | `int` | 아니오 | `5` | 패키지 관리자 서비스와 통신하는 데 필요한 연결 제한 시간(초)입니다 | 목표를 제외한 모든 목표 `package` |
-| `useProxy` | `boolean` | 아니오 | `true` | 값 `true` 패키지 관리자에 요청을 프록시하기 위해 Maven이 찾은 첫 번째 활성 프록시 구성을 사용하도록 합니다. | 목표를 제외한 모든 목표 `package` |
+| `timeout` | `int` | 아니요 | `5` | 패키지 관리자 서비스와 통신하는 데 필요한 연결 제한 시간(초)입니다 | 목표를 제외한 모든 목표 `package` |
+| `useProxy` | `boolean` | 아니요 | `true` | 값 `true` 패키지 관리자에 요청을 프록시하기 위해 Maven이 찾은 첫 번째 활성 프록시 구성을 사용하도록 합니다. | 목표를 제외한 모든 목표 `package` |
 | `userId` | `String` | 예 | `admin` | AEM에 인증할 사용자 이름 | 목표를 제외한 모든 목표 `package` |
-| `verbose` | `boolean` | 아니오 | `false` | 자세한 로깅 활성화 또는 비활성화 | 목표를 제외한 모든 목표 `package` |
+| `verbose` | `boolean` | 아니요 | `false` | 자세한 로깅 활성화 또는 비활성화 | 목표를 제외한 모든 목표 `package` |
 
 ### 빌드 {#build}
 
@@ -118,18 +121,18 @@ AEM 인스턴스에 이미 정의된 컨텐츠 패키지를 만듭니다.
 
 | 이름 | 유형 | 필수 | 기본 값 | 설명 |
 |---|---|---|---|---|
-| `artifact` | `String` | 아니오 | 의 값 `artifactId` Maven 프로젝트의 속성 | 양식의 문자열입니다 `groupId:artifactId:version[:packaging]` |
-| `artifactId` | `String` | 아니오 | 없음 | 설치할 아티팩트의 ID입니다 |
-| `groupId` | `String` | 아니오 | 없음 | 다음 `groupId` 설치할 아티팩트 |
-| `install` | `boolean` | 아니오 | `true` | 패키지를 업로드할 때 자동으로 압축 해제할지 여부를 결정합니다 |
-| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | 아니오 | 의 값 `localRepository` 시스템 변수 | 시스템 속성이 항상 사용되므로 플러그인 구성을 사용하여 구성할 수 없는 로컬 Maven 저장소 |
-| `packageFile` | `java.io.File` | 아니오 | Maven 프로젝트에 대해 정의된 기본 객체 | 설치할 패키지 파일의 이름입니다 |
-| `packaging` | `String` | 아니오 | `zip` | 설치할 아티팩트의 패키징 유형입니다 |
+| `artifact` | `String` | 아니요 | 의 값 `artifactId` Maven 프로젝트의 속성 | 양식의 문자열입니다 `groupId:artifactId:version[:packaging]` |
+| `artifactId` | `String` | 아니요 | 없음 | 설치할 아티팩트의 ID입니다 |
+| `groupId` | `String` | 아니요 | 없음 | 다음 `groupId` 설치할 아티팩트 |
+| `install` | `boolean` | 아니요 | `true` | 패키지를 업로드할 때 자동으로 압축 해제할지 여부를 결정합니다 |
+| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | 아니요 | 의 값 `localRepository` 시스템 변수 | 시스템 속성이 항상 사용되므로 플러그인 구성을 사용하여 구성할 수 없는 로컬 Maven 저장소 |
+| `packageFile` | `java.io.File` | 아니요 | Maven 프로젝트에 대해 정의된 기본 객체 | 설치할 패키지 파일의 이름입니다 |
+| `packaging` | `String` | 아니요 | `zip` | 설치할 아티팩트의 패키징 유형입니다 |
 | `pomRemoteRepositories` | `java.util.List` | 예 | 의 값 `remoteArtifactRepositories` Maven 프로젝트에 대해 정의된 속성 | 이 값은 플러그인 구성을 사용하여 구성할 수 없으며 프로젝트에 지정해야 합니다. |
 | `project` | `org.apache.maven.project.MavenProject` | 예 | 플러그인이 구성된 프로젝트 | 프로젝트에 플러그인 구성이 포함되어 있으므로 암시적 Maven 프로젝트 |
-| `repositoryId` (POM), `repoID` (명령줄) | `String` | 아니오 | `temp` | 아티팩트가 검색되는 저장소의 ID입니다 |
-| `repositoryUrl` (POM), `repoURL` (명령줄) | `String` | 아니오 | 없음 | 아티팩트가 검색되는 저장소의 URL입니다 |
-| 버전 | 문자열 | 아니오 | 없음 | 설치할 아티팩트 버전 |
+| `repositoryId` (POM), `repoID` (명령줄) | `String` | 아니요 | `temp` | 아티팩트가 검색되는 저장소의 ID입니다 |
+| `repositoryUrl` (POM), `repoURL` (명령줄) | `String` | 아니요 | 없음 | 아티팩트가 검색되는 저장소의 URL입니다 |
+| 버전 | 문자열 | 아니요 | 없음 | 설치할 아티팩트 버전 |
 
 ### ls {#ls}
 
@@ -165,22 +168,22 @@ rm 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 
 
 | 이름 | 유형 | 필수 | 기본 값 | 설명 |
 |---|---|---|---|---|
-| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | 아니오 | 없음 | 사용할 아카이브 구성 |
+| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | 아니요 | 없음 | 사용할 아카이브 구성 |
 | `builtContentDirectory` | `java.io.File` | 예 | Maven 빌드의 출력 디렉터리 값 | 패키지에 포함할 컨텐츠가 들어 있는 디렉토리 |
-| `dependencies` | `java.util.List` | 아니오 | 없음 |  |
-| `embeddedTarget` | `java.lang.String` | 아니오 | 없음 |  |
-| `embeddeds` | `java.util.List` | 아니오 | 없음 |  |
+| `dependencies` | `java.util.List` | 아니요 | 없음 |  |
+| `embeddedTarget` | `java.lang.String` | 아니요 | 없음 |  |
+| `embeddeds` | `java.util.List` | 아니요 | 없음 |  |
 | `failOnMissingEmbed` | `boolean` | 예 | `false` | 값 `true` 포함된 아티팩트가 프로젝트 종속성에 없으면 빌드가 실패합니다. 값 `false` 빌드가 이러한 오류를 무시합니다. |
-| `filterSource` | `java.io.File` | 아니오 | 없음 | 이 매개 변수는 작업 공간 필터의 소스를 지정하는 파일을 정의합니다. 구성에 지정되고 포함 또는 하위 패키지를 통해 삽입된 필터는 파일 컨텐츠와 병합됩니다. |
-| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | 아니오 | 없음 | 이 매개 변수에는 패키지 컨텐츠를 정의하는 필터 요소가 포함됩니다. 가 실행되면 필터가 `filter.xml` 파일. 자세한 내용은 [필터 사용](#using-filters) 섹션을 참조하십시오. |
+| `filterSource` | `java.io.File` | 아니요 | 없음 | 이 매개 변수는 작업 공간 필터의 소스를 지정하는 파일을 정의합니다. 구성에 지정되고 포함 또는 하위 패키지를 통해 삽입된 필터는 파일 컨텐츠와 병합됩니다. |
+| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | 아니요 | 없음 | 이 매개 변수에는 패키지 컨텐츠를 정의하는 필터 요소가 포함됩니다. 가 실행되면 필터가 `filter.xml` 파일. 자세한 내용은 [필터 사용](#using-filters) 섹션을 참조하십시오. |
 | `finalName` | `java.lang.String` | 예 | 다음 `finalName` maven 프로젝트에 정의됨(빌드 단계) | 생성된 패키지 ZIP 파일의 이름으로, `.zip` 파일 확장명 |
 | `group` | `java.lang.String` | 예 | 다음 `groupID` maven 프로젝트에 정의됨 | 다음 `groupId` 컨텐츠 패키지에 대한 대상 설치 경로의 일부인 생성된 컨텐츠 패키지 |
 | `outputDirectory` | `java.io.File` | 예 | Maven 프로젝트에 정의된 빌드 디렉터리 | 컨텐츠 패키지가 저장되는 로컬 디렉토리 |
-| `prefix` | `java.lang.String` | 아니오 | 없음 |  |
+| `prefix` | `java.lang.String` | 아니요 | 없음 |  |
 | `project` | `org.apache.maven.project.MavenProject` | 예 | 없음 | Maven 프로젝트 |
-| `properties` | `java.util.Map` | 아니오 | 없음 | 이러한 매개 변수는에서 설정할 수 있는 추가 속성을 정의합니다 `properties.xml` 파일. 이러한 속성은 다음 사전 정의된 속성을 덮어쓸 수 없습니다. `group` (사용) `group` 설정할 매개 변수), `name` (사용) `name` 설정할 매개 변수), `version` (사용) `version` 설정할 매개 변수), `description` (프로젝트 설명에서 설정), `groupId` (`groupId` Maven 프로젝트 설명자), `artifactId` (`artifactId` Maven 프로젝트 설명자), `dependencies` (사용) `dependencies` 설정할 매개 변수), `createdBy` (값 `user.name` 시스템 등록 정보), `created` (현재 시스템 시간), `requiresRoot` (사용) `requiresRoot` 설정할 매개 변수), `packagePath` (그룹 및 패키지 이름에서 자동으로 생성됨) |
+| `properties` | `java.util.Map` | 아니요 | 없음 | 이러한 매개 변수는에서 설정할 수 있는 추가 속성을 정의합니다 `properties.xml` 파일. 이러한 속성은 다음 사전 정의된 속성을 덮어쓸 수 없습니다. `group` (사용) `group` 설정할 매개 변수), `name` (사용) `name` 설정할 매개 변수), `version` (사용) `version` 설정할 매개 변수), `description` (프로젝트 설명에서 설정), `groupId` (`groupId` Maven 프로젝트 설명자), `artifactId` (`artifactId` Maven 프로젝트 설명자), `dependencies` (사용) `dependencies` 설정할 매개 변수), `createdBy` (값 `user.name` 시스템 등록 정보), `created` (현재 시스템 시간), `requiresRoot` (사용) `requiresRoot` 설정할 매개 변수), `packagePath` (그룹 및 패키지 이름에서 자동으로 생성됨) |
 | `requiresRoot` | `boolean` | 예 | false | 패키지에 루트가 필요한지 여부를 정의합니다. 이렇게 되면 `requiresRoot` 속성 `properties.xml` 파일. |
-| `subPackages` | `java.util.List` | 아니오 | 없음 |  |
+| `subPackages` | `java.util.List` | 아니요 | 없음 |  |
 | `version` | `java.lang.String` | 예 | Maven 프로젝트에 정의된 버전 | 컨텐츠 패키지의 버전입니다. |
 | `workDirectory` | `java.io.File` | 예 | Maven 프로젝트(빌드 단계)에 정의된 디렉터리 | 패키지에 포함할 컨텐츠가 들어 있는 디렉토리 |
 
@@ -220,10 +223,10 @@ rm 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 
 
 | 이름 | 유형 | 필수 | 기본 값 | 설명 |
 |---|---|---|---|---|
-| `detail` | `boolean` | 아니오 | `false` | 각 목표에 대한 모든 설정 가능한 속성을 표시할지 여부를 결정합니다 |
-| `goal` | `String` | 아니오 | 없음 | 이 매개 변수는 도움말을 표시할 목표의 이름을 정의합니다. 값을 지정하지 않으면 모든 목표에 대한 도움말이 표시됩니다. |
-| `indentSize` | `int` | 아니오 | `2` | 각 레벨의 들여쓰기에 사용할 공백 수(정의된 경우 양수여야 함) |
-| `lineLength` | `int` | 아니오 | `80` | 디스플레이 라인의 최대 길이(정의된 경우 양수여야 함) |
+| `detail` | `boolean` | 아니요 | `false` | 각 목표에 대한 모든 설정 가능한 속성을 표시할지 여부를 결정합니다 |
+| `goal` | `String` | 아니요 | 없음 | 이 매개 변수는 도움말을 표시할 목표의 이름을 정의합니다. 값을 지정하지 않으면 모든 목표에 대한 도움말이 표시됩니다. |
+| `indentSize` | `int` | 아니요 | `2` | 각 레벨의 들여쓰기에 사용할 공백 수(정의된 경우 양수여야 함) |
+| `lineLength` | `int` | 아니요 | `80` | 디스플레이 라인의 최대 길이(정의된 경우 양수여야 함) |
 
 ## 패키지에 축소판 이미지 또는 속성 파일 포함 {#including-a-thumbnail-image-or-properties-file-in-the-package}
 

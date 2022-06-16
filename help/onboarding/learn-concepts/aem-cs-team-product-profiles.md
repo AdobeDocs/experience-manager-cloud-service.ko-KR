@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 팀 및 제품 프로필
 description: AEM as a Cloud Service 팀 및 제품 프로필에 대해 알려면 이 페이지를 따르십시오.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
+source-git-commit: fd23701414a2ae4142ea2a11cef92bc0cb202421
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -34,7 +34,7 @@ AEM as a Cloud Service 팀 구성원이 온보딩 중에 Admin Console을 통해
 
 ## Cloud Manager 제품 프로필 {#cloud-manager-product-profiles}
 
-Cloud Manager에는 미리 구성된 제품 프로필 또는 보다 간단한 역할 기반 권한이 있습니다. 시스템 관리자는 이러한 제품 프로필에 를 할당하여 Cloud Manager 팀을 설정할 책임이 있으며, 이러한 제품 프로필과 해당 제품 프로필에 할당할 팀 구성원을 숙지해야 합니다.
+Cloud Manager에는 미리 구성된 제품 프로필 또는 보다 간단한 역할 기반 권한이 있습니다. 시스템 관리자는 이러한 제품 프로필에 Cloud Manager 팀을 할당하여 Cloud Manager 팀을 설정할 책임이 있으며, 이러한 제품 프로필과 이 팀을 할당할 팀 구성원을 숙지해야 합니다.
 >[!NOTE]
 >을(를) 참조하십시오. [Cloud Manager의 역할 기반 권한](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions) 자세한 내용
 

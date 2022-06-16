@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager의 구현 단계
 description: 이 페이지에서는 Cloud Acceleration Manager의 구현 단계에 대한 개요를 제공합니다.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
+source-git-commit: 24331b974ded34ef949cc3d6fb157b124c145dee
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '792'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 ## 코드 리팩터링 카드 사용 {#code-refactoring}
 
-코드 리팩터링 활동 카드 카드는 모든 관련 정보를 제공하며 AEM as a Cloud Service으로 이동할 때 검토하고 해결해야 하는 코드 리팩터링 영역을 강조 표시합니다.
+코드 리팩터링 활동 카드는 모든 관련 정보를 제공하며 AEM as a Cloud Service으로 이동할 때 검토하고 해결해야 하는 코드 리팩터링 영역을 강조 표시합니다.
 
 코드 리팩터링 활동 카드를 탐색하려면 다음 섹션을 따르십시오.
 

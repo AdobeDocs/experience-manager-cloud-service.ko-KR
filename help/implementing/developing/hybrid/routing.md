@@ -2,7 +2,7 @@
 title: SPA 모델 라우팅
 description: AEM의 단일 페이지 애플리케이션의 경우, 앱은 라우팅을 담당합니다. 이 문서에서는 사용 가능한 라우팅 메커니즘, 계약 및 옵션에 대해 설명합니다.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 1%
@@ -44,7 +44,7 @@ AEM의 단일 페이지 애플리케이션의 경우, 앱은 라우팅을 담당
 기본적으로 이 동작은 자동으로 활성화됩니다. 비활성화하려면 SPA에서 다음 메타 속성을 렌더링해야 합니다.
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 SPA의 모든 경로는 AEM에서 액세스할 수 있는 리소스(예: &quot;)에 해당해야 합니다. `/content/mysite/mypage"`) 이후 `PageModelManager` 경로가 선택되면 은 자동으로 해당 페이지 모델을 로드합니다. 그러나 필요한 경우 SPA에서 무시해야 하는 경로의 &quot;차단 목록&quot;도 정의할 수 있습니다 `PageModelManager`:
