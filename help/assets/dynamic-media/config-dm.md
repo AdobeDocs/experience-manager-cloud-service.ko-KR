@@ -3,9 +3,9 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3537'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 3%
 >* [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
 >* [캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [핫링크 보호](/help/assets/dynamic-media/hotlink-protection.md)
->* [컨텐츠의 HTTP/2 전달](/help/assets/dynamic-media/http2faq.md)
+>* [콘텐츠의 HTTP/2 전달](/help/assets/dynamic-media/http2faq.md)
 >* CDN 수준에서 URL 리디렉션
 >* Akamai ChinaCDN(중국에서 최적의 전달을 위한)
 
@@ -270,6 +270,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 **지원되는 형식에 대한 MIME 유형을 편집하려면:**
 
+1. 제품 관리자로 Experience Manager as a Cloud Service에 로그인합니다.
 1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 로 이동합니다. **[!UICONTROL 일반 > CRXDE Lite]**.
 1. 왼쪽 레일에서 다음 위치로 이동합니다.
 
@@ -296,6 +297,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
 **지원되지 않는 형식에 대한 MIME 유형을 추가하려면 다음을 수행합니다.**
 
+1. 제품 관리자로 Experience Manager as a Cloud Service에 로그인합니다.
 1. Experience Manager as a Cloud Service에서 로 이동합니다. **[!UICONTROL 도구 > 작업 > 웹 콘솔]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Adobe은 PDF, PostScript® 및 PSD 파일에 다음과 같은 &quot;튜닝된&qu
 
 Granite 워크플로우 큐는 비임시 워크플로우에 사용됩니다. Dynamic Media에서는 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우.
 
+>[!NOTE]
+>
+>이 작업을 완료하려면 제품 관리자로 as a Cloud Service으로 Experience Manager에 로그인해야 합니다.
+
 **사전 정의된 Granite 워크플로우 큐(비디오 자산) 작업자 스레드를 업데이트하려면:**
 
 1. 다음으로 이동 `https://<server>/system/console/configMgr` 및 검색 **큐: Granite Workflow 큐**.
@@ -398,6 +404,10 @@ Granite 워크플로우 큐는 비임시 워크플로우에 사용됩니다. Dyn
 #### 사전 정의된 Granite Transient 워크플로 큐 작업자 스레드 업데이트 {#update-granite-transient-workflow-queue-worker-threads-images}
 
 Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 워크플로우. Dynamic Media에서 이미지 및 비비디오 자산 수집 및 처리에 사용됩니다.
+
+>[!NOTE]
+>
+>이 작업을 완료하려면 제품 관리자로 as a Cloud Service으로 Experience Manager에 로그인해야 합니다.
 
 **사전 정의된 Granite Transient 워크플로 큐 작업자 스레드를 업데이트하려면:**
 
@@ -422,7 +432,11 @@ Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 
 
 #### Dynamic Media Classic(Scene7) 서버에 대한 최대 업로드 연결 업데이트 {#update-max-s7-upload-connections}
 
-Dynamic Media Classic(Scene7) 업로드 연결 설정은 Experience Manager 자산을 Dynamic Media Classic 서버에 동기화합니다.
+Dynamic Media Classic(Scene7) 연결 업로드 설정은 Experience Manager 자산을 Dynamic Media Classic 서버에 동기화합니다.
+
+>[!NOTE]
+>
+>이 작업을 완료하려면 제품 관리자로 as a Cloud Service으로 Experience Manager에 로그인해야 합니다.
 
 **Dynamic Media Classic(Scene7) 서버에 대한 최대 업로드 연결을 업데이트하려면:**
 
