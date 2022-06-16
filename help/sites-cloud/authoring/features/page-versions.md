@@ -2,7 +2,7 @@
 title: 페이지 버전 사용
 description: 페이지 버전 생성, 비교 및 복원
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 66%
@@ -193,9 +193,9 @@ ht-degree: 66%
 
 타임워프는 과거의 특정 시점에 *게시된* 페이지의 상태를 시뮬레이션하도록 디자인된 기능입니다.
 
->[!NOTE]
+>[!TIP]
 >
->[타임워프는 론치와 함께 사용하여 미래를 미리 볼 수도 있습니다](/help/sites-cloud/authoring/launches/preview.md).
+>[타임워프는 론치와 함께 사용하여 미래를 미리 볼 수도 있습니다.](/help/sites-cloud/authoring/launches/preview.md)
 
 컨텐츠 작성은 지속적인 공동 작업 프로세스이므로 타임워프는 컨텐츠 작성자가 컨텐츠가 변경된 방식을 파악하기 위해 시간에 따라 게시된 웹 사이트를 추적할 수 있도록 하는 데 목적이 있습니다. 이 기능은 페이지 버전을 사용하여 게시 환경의 상태를 확인합니다.
 

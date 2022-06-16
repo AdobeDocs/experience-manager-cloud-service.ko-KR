@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
+source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 2%
+source-wordcount: '3358'
+ht-degree: 1%
 
 ---
 
@@ -206,7 +206,7 @@ Cloud Manager를 통해 설치된 모든 컨텐츠 패키지(변경할 수 있�
 
 포함된 타사 패키지는 이 문서에 설명된 AEM as a Cloud Service 서비스 코딩 및 패키징 지침을 따라야 하며, 그렇지 않으면 포함 시 배포 오류가 발생합니다.
 
-The following Maven POM XML snippet shows how 3rd party packages can be embedded in the project&#39;s &quot;Container&quot; package, typically named **&#39;all&#39;**, via the **filevault-package-maven-plugin** Maven plugin configuration.
+다음 Maven `POM.xml` 코드 조각은 일반적으로 이름이 인 프로젝트의 &quot;컨테이너&quot; 패키지에 타사 패키지를 포함할 수 있는 방법을 보여 줍니다 **&#39;all&#39;**&#x200B;를 통해 **filervault-package-maven-plugin** Maven 플러그인 구성.
 
 ```
 ...
@@ -216,26 +216,18 @@ The following Maven POM XML snippet shows how 3rd party packages can be embedded
   <extensions>true</extensions>
   <configuration>
       ...
-      <subPackages>
-           
-          <!-- Include the application's ui.apps and ui.content packages -->
+      <embeddeds>
+
           ...
- 
-          <!-- Include any other extra packages such as AEM WCM Core Components -->
-          <!-- Set the version for all dependencies, including 3rd party packages, in the project's Reactor POM -->
-          <subPackage>
-              <groupId>com.adobe.cq</groupId>
-              <artifactId>core.wcm.components.all</artifactId>
-              <filter>true</filter>
-          </subPackage>
- 
- 
-          <subPackage>
-              <groupId>com.3rdparty.groupId</groupId>
-              <artifactId>core.3rdparty.artifactId</artifactId>
-              <filter>true</filter>
-          </subPackage>
-      <subPackages>
+
+          <!-- Include any other extra packages  -->
+          <embedded>
+              <groupId>com.vendor.x</groupId>
+              <artifactId>vendor.plug-in.all</artifactId>
+              <type>zip</type>
+              <target>/apps/vendor-packages/container/install</target>
+          </embedded>
+      <embeddeds>
   </configuration>
 </plugin>
 ...
