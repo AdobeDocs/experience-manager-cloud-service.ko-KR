@@ -1,13 +1,13 @@
 ---
 title: 통합 셸의 AEM as a Cloud Service
 description: 통합 셸의 AEM as a Cloud Service
-source-git-commit: 09f4620ed871b012b4550bc05cfe7f4622f02833
+exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
+source-git-commit: 9ef6bda76667b08b5fb62b90acdc75002889d420
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 6%
+source-wordcount: '402'
+ht-degree: 5%
 
 ---
-
 
 # 통합 셸의 AEM as a Cloud Service {#aem-as-a-cloud-service-on-unified-shell}
 
@@ -17,6 +17,9 @@ ht-degree: 6%
 >이는 2022년 6월 릴리스에서 일반적으로 사용할 수 있는 새로운 기능을 소개하기 위한 것입니다.
 >
 >환경에 맞는 기능을 활성화하는 방법에 대한 자세한 내용은 [프리릴리스 채널 설명서](/help/release-notes/prerelease.md#enable-prerelease)를 참조하십시오.
+
+>[!INFO]
+>최근에 발견된 문제로 인해 AEM as a Cloud Service와의 통합 셸 통합이 일시적으로 비활성화되었습니다. 문제가 해결되면 다시 활성화됩니다. 이해해주셔서 감사합니다
 
 ## 개요 {#overview}
 
@@ -72,4 +75,3 @@ AEM 받은 편지함은 통합 쉘에서 벨 아이콘을 클릭하여 액세스
 팝업에서 받은 편지함 단추를 클릭하여 AEM 받은 편지함으로 이동합니다.
 
 ![이미지](/help/overview/assets/unifiedshell6.png)
-
