@@ -4,9 +4,9 @@ description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2894'
 ht-degree: 17%
 
 ---
@@ -25,7 +25,7 @@ AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠
 ## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
 
 1. 다음으로 이동 **도구**, **일반**, 그런 다음 엽니다. **컨텐츠 조각 모델**.
-1. [구성](/help/assets/content-fragments/content-fragments-configuration-browser.md)에 적절한 폴더로 이동합니다.
+1. 해당 폴더로 이동합니다 [구성 또는 하위 구성](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. **만들기**&#x200B;를 사용하여 마법사를 엽니다.
 
    >[!CAUTION]

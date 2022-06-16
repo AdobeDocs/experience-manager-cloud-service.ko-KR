@@ -4,10 +4,10 @@ description: AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 31%
+source-wordcount: '339'
+ht-degree: 27%
 
 ---
 
@@ -43,9 +43,20 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
 >
 >자세한 내용은 [구성 브라우저:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
->[!CAUTION]
+>[!NOTE]
 >
->하위 구성(구성 내에 중첩된 구성)은 컨텐츠 조각에서 사용할 수 있지만 GraphQL 쿼리에 사용할 수 없습니다.
+>[하위 구성](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (다른 구성 내에서 중첩된 구성)은 컨텐츠 조각, 컨텐츠 조각 모델 및 GraphQL 쿼리에서 사용할 수 있도록 완전히 지원됩니다.
+>
+>참고 사항:
+>
+>
+>* 하위 구성에서 모델을 생성한 후에는 모델을 다른 하위 구성으로 이동하거나 복사할 수 없습니다.
+>
+>* GraphQL 엔드포인트는 상위(루트) 구성을 기반으로 합니다.
+>
+>* 지속형 쿼리는 상위(루트) 구성과 관련하여 저장됩니다.
+
+
 
 1. **도구**, **일반**&#x200B;으로 이동한 후 **Configuration Browser**&#x200B;를 엽니다.
 
