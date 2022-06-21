@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 API에 관련된 릴리스 정보입니다.'
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 8325d8a69f453573a177a46cde54afe5365b17f8
+source-git-commit: d64e69e9662449e25cb12d7cdd415494cb6b6c7d
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '1051'
+ht-degree: 95%
 
 ---
 
@@ -179,6 +179,24 @@ ht-degree: 100%
     <td>이 내부 log4j API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
+    <td>Apache Log4j 1은 2015년에 수명이 종료되었으며 더 이상 지원되지 않습니다.</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
+    <td>이 내부 로그백 API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
+    <td>1/27/2022</td>
+    <td>3/24/2022</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars.js</td>
+    <td>보안 취약성 때문에 Handlebars 업그레이드는 4.0.5에서 4.3.0으로 필요합니다. 이 패키지는 업그레이드된 handlebars에 더 이상 없습니다.</td>
+    <td>5/5/2022</td>
+    <td>8/5/2022</td>
   </tr>
 </tbody>
 </table>
