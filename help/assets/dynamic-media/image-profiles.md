@@ -4,9 +4,9 @@ description: 언샵 마스크, 스마트 자르기 또는 스마트 견본 또�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '3234'
+source-wordcount: '3271'
 ht-degree: 9%
 
 ---
@@ -54,6 +54,14 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 
 ## 자르기 옵션 {#crop-options}
 
+이미지에서 스마트 자르기를 구현할 때 Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
+
+| 제한 유형 | 우수 사례 | 구현된 제한 |
+| --- | --- | --- |
+| 이미지당 스마트 자르기 수 | 5 | 100 |
+
+참조 - [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md).
+
 <!-- CQDOC-16069 for the paragraph directly below -->
 
 스마트 자르기 좌표는 종횡비에 따라 다릅니다. 이미지 프로필의 스마트 자르기 설정의 경우 종횡비가 이미지 프로필에 추가된 차원에 대해 동일하면 동일한 종횡비가 Dynamic Media으로 전송됩니다. Adobe은 동일한 자르기 영역을 사용할 것을 권장합니다. 이렇게 하면 이미지 프로필에 사용되는 다른 차원에 영향을 주지 않습니다.
@@ -80,14 +88,14 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 | 이미지 형식 | 대소문자를 구분하지 않는 파일 확장명 | MIME 유형 | 지원되는 입력 색상 공간 | 지원되는 최대 입력 파일 크기 | 지원되는 이미지 형식입니까? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4GB | 예 |
-| EPS |  |  |  |  | 아니오 |
+| EPS |  |  |  |  | 아니요 |
 | GIF | `.gif` | image/gif | sRGB | 15GB | 예; 애니메이션된 GIF의 첫 번째 프레임이 표현물에 사용됩니다. 첫 번째 프레임을 구성하거나 변경할 수 없습니다. |
 | JPEG | `.jpg` 및 `.jpeg` | image/jpeg | sRGB | 15GB | 예 |
 | PNG | `.png` | image/png | sRGB | 15GB | 예 |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2GB | 예 |
-| SVG |  |  |  |  | 아니오 |
+| SVG |  |  |  |  | 아니요 |
 | TIFF | `.tif` 및 `.tiff` | image/tiff | sRGB<br>CMYK | 4GB | 예 |
-| WebP/Animated WebP |  |  |  |  | 아니오 |
+| WebP/Animated WebP |  |  |  |  | 아니요 |
 
 ## Dynamic Media 이미지 프로필 만들기 {#creating-image-profiles}
 

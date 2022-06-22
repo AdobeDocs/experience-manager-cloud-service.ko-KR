@@ -2,11 +2,11 @@
 title: 디지털 에셋 관리
 description: 다양한 자산 관리 및 편집 방법에 대해 알아봅니다
 contentOwner: AG
-mini-toc-levels: 1
+mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 12%
@@ -477,7 +477,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ### 저장된 주석 보기 {#viewing-saved-annotations}
 
-주석을 한 번에 한 개만 볼 수 있습니다.
+주석을 한 번에 하나씩만 볼 수 있습니다.
 
 >[!NOTE]
 >
@@ -636,7 +636,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## 컬렉션 {#collections}
 
-컬렉션은 순서가 지정된 자산 세트입니다. 컬렉션을 사용하여 사용자 간에 자산을 공유합니다.
+컬렉션은 순서가 지정된 자산 세트입니다. 컬렉션을 사용하여 사용자 간에 에셋을 공유합니다.
 
 * 컬렉션에는 이러한 자산에 대한 참조만 포함되므로 다른 위치의 자산이 포함될 수 있습니다. 각 컬렉션은 자산의 참조 무결성을 유지합니다.
 * 편집, 보기 등을 포함하여 권한 수준이 다른 여러 사용자와 컬렉션을 공유할 수 있습니다.
