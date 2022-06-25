@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 4%
 
 ---
@@ -136,7 +136,7 @@ Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지 관
 
 ### PDF 탭 {#pdf-tab}
 
-추출을 위해 고려할 PDF의 최대 페이지 수는 새 업로드를 위해 5000개입니다. 이 제한은 2022년 12월 31일에 100페이지로 변경됩니다. 참조 - [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md).
+추출을 위해 고려할 PDF의 최대 페이지 수는 새 업로드를 위해 5000개입니다. 이 제한은 2022년 12월 31일에 100페이지(모든 PDF의 경우)로 변경됩니다. 참조 - [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md).
 
 파일을 래스터화하고, 검색어와 링크를 추출하고, 해상도를 설정하고, 색상 공간을 선택하도록 선택할 수 있습니다.
 
