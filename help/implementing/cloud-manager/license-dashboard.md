@@ -1,13 +1,13 @@
 ---
 title: 라이선스 대시보드
 description: Cloud Manager는 조직 또는 임차인이 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있는 대시보드를 제공합니다.
-source-git-commit: 82b4a4c8da9f42de08c19eb3caf25ff3a1bad4d4
+exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
+source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
-
 
 # 라이선스 대시보드 {#license-dashboard}
 
@@ -57,13 +57,15 @@ Cloud Manager 라이선스 대시보드는 다음 정보에 쉽게 액세스할 
 
 콘텐츠 요청은 AEM Sites 또는 콘텐츠 전달 네트워크와 같이 고객이 제공하는 캐싱 시스템에 오는 요청이며, 콘텐츠 또는 데이터를 HTML 형식으로 페이지 보기 또는 API 호출로 JSON 형식으로 게재하도록 합니다.
 
-하나의 콘텐츠 요청은 각 페이지 보기 또는 5개의 API 호출마다 계산되며, 첫 번째 캐싱 시스템의 수신에서 측정됩니다.
+하나의 콘텐츠 요청은 각 페이지 보기 또는 5개의 API 호출마다 계산되며, 첫 번째 캐싱 시스템의 수신에서 측정됩니다. 컨텐츠 요청은 프로덕션 환경에서만 계산됩니다.
 
 컨텐츠 요청은 제품 및 서비스를 제공하는 유일한 목적으로 Adobe을 대신하여 또는 가 시작한 요청이나 활동을 제외합니다. 일반적인 검색 엔진 및 소셜 미디어 서비스와 관련된 보트, 크롤러 및 스파이더에서 Adobe 식별된 사용자 에이전트 트래픽도 제외됩니다.
 
 ### Adobe Experience Manager은 콘텐츠 요청을 어떻게 측정합니까? {#how-are-content-requests-measured}
 
-컨텐츠 요청은 Cloud Service 내에서 서버측에서 추적됩니다. AEM에 내장된 CDN은 유효한 HTML 및 JSON 요청을 as a Cloud Service으로 추적합니다. AEM에는 검색 색인 또는 서비스를 새로 고치기 위해 정기적으로 사이트를 방문하는 알려진 서비스를 포함하여 잘 알려진 보트가 제외되는 규칙도 있습니다.
+컨텐츠 요청은 AEM as a Cloud Service Edge Server에서 추적됩니다. 원본 트래픽은 콘텐츠 요청에 계산되지 않습니다. AEM에 내장된 CDN은 유효한 HTML 및 JSON 요청을 as a Cloud Service으로 추적합니다.
+
+AEM에는 검색 색인 또는 서비스를 새로 고치기 위해 정기적으로 사이트를 방문하는 알려진 서비스를 포함하여 잘 알려진 보트가 제외되는 규칙도 있습니다.
 
 다음은 제외된 잘 알려진 서비스의 비완전한 예입니다.
 
