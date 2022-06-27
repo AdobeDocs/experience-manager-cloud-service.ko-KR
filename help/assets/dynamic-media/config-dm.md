@@ -3,9 +3,9 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3574'
 ht-degree: 3%
 
 ---
@@ -272,6 +272,9 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 1. 제품 관리자로 Experience Manager as a Cloud Service에 로그인합니다.
 1. Experience Manager as a Cloud Service에서 Experience Manager as a Cloud Service 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 로 이동합니다. **[!UICONTROL 일반 > CRXDE Lite]**.
+
+   CRXDE Lite에 액세스할 수 없는 경우 다음을 참조하십시오 [CRXDE Lite 사용](/help/implementing/developing/tools/crxde.md).
+
 1. 왼쪽 레일에서 다음 위치로 이동합니다.
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
 1. 열려 있는 Experience Manager as a Cloud Service 콘솔이 있는 브라우저 탭으로 돌아갑니다.
 1. Experience Manager as a Cloud Service에서 로 이동합니다. **[!UICONTROL 도구 > 일반 > CRXDE Lite]**.
+
+   CRXDE Lite에 액세스할 수 없는 경우 다음을 참조하십시오 [CRXDE Lite 사용](/help/implementing/developing/tools/crxde.md).
 
    ![도구 > 일반 > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ Granite 워크플로우 큐는 비임시 워크플로우에 사용됩니다. Dyn
 >[!NOTE]
 >
 >이 작업을 완료하려면 제품 관리자로 as a Cloud Service으로 Experience Manager에 로그인해야 합니다.
+
+OSGi에 액세스할 수 없는 경우 다음을 참조하십시오 [OSGi 구성](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **사전 정의된 Granite 워크플로우 큐(비디오 자산) 작업자 스레드를 업데이트하려면:**
 
