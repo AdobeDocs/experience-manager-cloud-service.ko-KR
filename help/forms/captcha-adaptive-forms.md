@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
+source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 3%
@@ -88,7 +88,7 @@ CAPTCHA(컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공
 1. 에서 **[!UICONTROL Captcha 서비스]** 드롭다운에서 을 선택합니다. **[!UICONTROL reCaptcha]** reCAPTCHA 서비스를 사용하도록 설정하려면 [Google ReCAPTCHA 서비스](#google-recaptcha). 설정 드롭다운에서 구성을 선택합니다.
 1. 유형을 (으)로 선택합니다. **[!UICONTROL 일반]** 또는 **[!UICONTROL 컴팩트]** reCAPTCHA 위젯용. 을(를) 선택할 수도 있습니다 **[!UICONTROL 보이지 않음]** 의심스러운 활동의 경우에만 CAPTCHA 문제를 표시하는 옵션입니다. 아래에 표시되는 reCAPTCHA 배지로 보호된 양식은 보호된 양식에 표시됩니다.
 
-   ![reCAPTCHA 배지가 제공하는 Google](assets/google-recaptcha-v2.png)
+   ![reCAPTCHA 배지로 보호된 Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
