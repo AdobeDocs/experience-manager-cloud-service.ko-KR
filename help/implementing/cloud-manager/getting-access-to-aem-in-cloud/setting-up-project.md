@@ -2,7 +2,7 @@
 title: 프로젝트 설정
 description: AEM 프로젝트를 만들 때 Maven과 따라야 하는 표준을 사용하여 프로젝트를 만드는 방법을 알아봅니다.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 3bd3221676a3558225baa7a3b0c78174e21091be
+source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 1%
@@ -143,7 +143,7 @@ Cloud Manager 빌드 프로세스가 시작될 때:
            <server>
                <id>myco-repository</id>
                <username>cloudmanager</username>
-              <password>${secret.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
            </server>
        </servers>
    </settings>

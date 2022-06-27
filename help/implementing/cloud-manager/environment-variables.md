@@ -2,9 +2,9 @@
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 런타임 환경에 제공하여 OSGi 구성에서 사용할 수 있습니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 7f8d6afdb5e3aecc90fdeb870eaaa0a5c5d29ca9
+source-git-commit: 4b2ea300f61ad7d1218a984f7238365c5b170a8e
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -96,9 +96,10 @@ ht-degree: 0%
 
 환경 변수가 `pom.xml` 보다 안전하고 유연한 구성 예를 들어, 암호를 하드 코딩할 필요가 없으며 구성이 환경 변수의 값을 기준으로 조정될 수 있습니다.
 
-다음과 같이 XML을 통해 각각 환경 변수와 비밀에 액세스할 수 있습니다.
+다음과 같이 XML을 통해 환경 변수 및 기밀에 액세스할 수 있습니다.
 
 * `${env.VARIABLE_NAME}`
-* `${secret.SECRET_NAME}`
 
 문서를 참조하십시오 [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) 에서 두 유형의 변수를 모두 사용하는 방법의 예 `pom.xml` 파일.
+
+자세한 내용은 [공식 Maven 설명서](https://maven.apache.org/settings.html#quick-overview) 자세한 내용
