@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 54%
+source-wordcount: '1987'
+ht-degree: 53%
 
 ---
 
@@ -98,7 +98,8 @@ ht-degree: 54%
 
    * **언어** - 페이지 언어
    * **언어 루트** - 페이지가 언어 사본의 루트인 경우 선택해야 합니다
-   * **리디렉션** - 이 페이지에서 자동으로 리디렉션할 페이지를 나타냅니다.
+   * **리디렉션** - 이 페이지가 HTML으로 자동으로 리디렉션되는 페이지를 나타냅니다. `302 Found` 상태.
+      * **영구 리디렉션** - 이 확인란을 선택하면 페이지가 HTML과 함께 제공된 대상 경로로 리디렉션됩니다 `301 Moved Permanently` 상태.
    * **디자인** - 결과 사이트의 페이지 탐색에 페이지가 표시되거나 숨겨지는지 여부를 나타냅니다
    * **별칭** - 이 페이지에 사용할 별칭을 지정합니다
       * 예를 들어 `private` 해당 페이지 `/content/wknd/us/en/magazine/members-only`, 다음 링크를 통해 이 페이지에 액세스할 수도 있습니다. `/content/wknd/us/en/magazine/private`
