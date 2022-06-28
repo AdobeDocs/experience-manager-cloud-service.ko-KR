@@ -2,7 +2,7 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM quickstart의 일부이며 브라우저 내에서 로컬 개발 환경에서 리포지토리에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
+source-git-commit: a9c646d24378e67df84c00a4355c692cac85e50b
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 1%
@@ -94,7 +94,7 @@ CRXDE Lite의 사용자 인터페이스에는 많은 부분이 있으며 많은 
 
 다음 **복제 탭** 현재 노드의 복제 상태를 표시합니다. 현재 노드를 복제하고 삭제할 수 있습니다.
 
-###  콘솔 탭 {#console-tab}
+### 콘솔 탭 {#console-tab}
 
 다음 **콘솔 탭** 로그 메시지를 표시합니다. 로그 수준을 구성하고, 콘솔을 지우고, 선택한 스크롤 위치에 고정하여 메시지 표시를 활성화/비활성화할 수 있습니다.
 
