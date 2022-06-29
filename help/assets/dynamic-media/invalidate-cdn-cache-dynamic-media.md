@@ -4,9 +4,9 @@ description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하여 �
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1384'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,20 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되므로 
 
 >[!NOTE]
 >
->이 기능을 사용하려면 Adobe Experience Manager Dynamic Media과 함께 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media과 함께 제공되는 Adobe 번들 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
+
+활성화한 경우 [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md) Adobe 번들 CDN을 사용하는 계정에서, 단일 기본 URL을 제거하여 다른 쿼리 문자열로 모든 URL을 삭제할 수 있습니다.
+
+예: 무효화 `https://weekendsite.scene7.com/is/image/grundfos/image`도 다음 URL을 무효화합니다.
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* 기타.
+
+그러나 이 무효화는 처럼 Smart Imaging을 지원하지 않는 일반 도메인에 대해서는 해당되지 않습니다 `s7d1.scene7.com`. 이러한 도메인에는 무효화 작업이 성공적으로 수행되려면 여전히 전체 URL이 필요합니다.
 
 **Dynamic Media을 통해 CDN 캐시를 무효화하려면 다음을 수행하십시오.**
 
