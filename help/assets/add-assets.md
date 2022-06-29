@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
+source-wordcount: '3029'
 ht-degree: 1%
 
 ---
@@ -155,6 +155,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >저장소 계정 컨테이너 또는 버킷을 비공개로 만들고 승인된 요청에서만 연결을 허용합니다. 그러나 송신 네트워크 연결에 대한 추가 제한 사항은 지원되지 않습니다.
 
+>[!NOTE]
+>
+>외부 저장소 계정에는 벌크 가져오기 도구와 다른 파일/폴더 이름 규칙이 있을 수 있습니다. 자세한 내용은 [벌크 가져오기 중 파일 이름 처리](#filename-handling-bulkimport) 허용되지 않거나 이스케이프 처리된 이름에 대한 자세한 내용을 참조하십시오.
+
+
 ### 대량 가져오기 도구 구성 {#configure-bulk-ingestor-tool}
 
 대량 가져오기 도구를 구성하려면 다음 단계를 수행합니다.
@@ -216,6 +221,15 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 자산 또는 폴더를 일괄적으로 가져오는 경우 [!DNL Experience Manager Assets] 가져오기 소스에 있는 모든 구조를 가져옵니다. [!DNL Experience Manager] 에서는 자산 및 폴더 이름에 특수 문자의 기본 제공 규칙을 따르므로 이러한 파일 이름은 정리해야 합니다. 폴더 이름과 자산 이름 모두에 대해 사용자가 정의한 제목은 변경되지 않고 그대로 유지되며 `jcr:title`.
 
 벌크 가져오기 중에 [!DNL Experience Manager] 기존 폴더를 찾아 자산 및 폴더를 다시 가져오지 않고 가져오기가 발생하는 상위 폴더에 적용된 기밀 정보 처리 규칙을 확인합니다. 상위 폴더에 정리 규칙이 적용되는 경우 가져오기 원본에 동일한 규칙이 적용됩니다. 새 가져오기의 경우 자산 및 폴더의 파일 이름을 관리하기 위해 다음 산화 규칙이 적용됩니다.
+
+**대량 가져오기에서 허용되지 않는 이름**
+
+파일 및 폴더 이름에는 다음 문자를 사용할 수 없습니다.
+
+* 제어 및 개인 사용 문자(0x00~0x1F, \u0081, \uE000)
+* 점(.)으로 끝나는 파일 또는 폴더 이름
+
+가져오기 프로세스 중에 이러한 조건과 일치하는 이름을 가진 파일 또는 폴더를 건너뛰고 실패로 표시됩니다.
 
 **일괄 가져오기에서 자산 이름 처리**
 
