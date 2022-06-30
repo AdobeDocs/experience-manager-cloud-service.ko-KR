@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 문제 해결 복제
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
+source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1216'
 ht-degree: 4%
 
 ---
@@ -40,25 +40,6 @@ Adobe Experience Manager as a Cloud Service은 [Sling 컨텐츠 배포](https://
 나중에 게시 옵션에 대한 폴더의 하위 항목을 포함하면 이 문서에 설명된 컨텐츠 트리 게시 작업 과정이 호출됩니다.
 
 게시 관리에 대한 자세한 내용은 [Fundamentals 설명서 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
-
-### 트리 활성화 {#tree-activation}
-
->[!NOTE]
->
->이 방법은 더 이상 사용되지 않는 것으로 간주되어야 하며, 상태가 지속되지 않으며 다른 접근 방법보다 확장 가능성이 낮으므로 2021년 9월 30일 이후에 제거됩니다. Adobe의 추천은 대신 게시 관리 또는 워크플로우 메서드를 사용하는 것입니다
-
-트리 활성화를 수행하려면 다음을 수행합니다.
-
-1. AEM 시작 메뉴에서 **도구 > 배포 > 배포**
-2. 카드를 선택합니다 **게시**
-3. 웹 콘솔 게시 UI에서 한 번, **배포 선택**
-
-   ![배포](assets/publish-distribute.png "배포")
-4. 경로 브라우저에서 경로를 선택하고 필요에 따라 노드 추가, 트리 또는 삭제를 선택하고 을 선택합니다 **제출**
-
-최상의 성능을 위해 이 기능을 사용할 때는 다음 지침을 따르십시오.
-* 한 번에 500개 이하의 경로를 복제하여 100개 이하의 경로를 복제하는 것이 좋습니다.
-* 복제된 컨텐츠의 총 크기는 10MB 미만이어야 합니다. 여기에는 워크플로우 패키지 및 컨텐츠 패키지를 포함하는 바이너리는 포함되지 않고 노드 및 속성만 포함됩니다.
 
 ### 게시 콘텐츠 트리 워크플로 {#publish-content-tree-workflow}
 
@@ -192,9 +173,12 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 전체 `ReplicationStatus` 기본적으로 활성 상태인 에이전트가 복제 작업에 하나 이상 포함된 경우에만 리소스의 가 수정됩니다. 위의 예에서 이는 복제가 &quot;미리 보기&quot; 에이전트를 사용하고 있기 때문에 해당되지 않습니다. 따라서 새 `getStatusForAgent()` 특정 에이전트에 대한 상태를 쿼리할 수 있는 메소드. 이 메서드는 &quot;게시&quot; 에이전트에서도 작동합니다. 제공된 에이전트를 사용하여 복제 작업이 수행된 경우 null이 아닌 값을 반환합니다.
 
 
-**복제 API 경로 및 크기 제한**
+**복제 API 용량 제한**
 
-최대 한계인 500개의 경로를 사용하여 100개 이하의 경로를 복제하는 것이 좋습니다. 하드 제한 위에 ReplicationException이 발생합니다. 응용 프로그램 논리에 원자 복제를 필요로 하지 않는 경우 ReplicationOptions.setUseAtomicCalls를 false로 설정하여 이 제한을 극복할 수 있으며, 이 제한은 경로 수를 허용하지만 내부적으로 버킷을 만들어 이 제한을 유지할 수 있습니다. 복제 호출당 전송된 컨텐츠의 양은 10MB를 초과할 수 없습니다. 여기에는 노드 및 속성이 포함되지만 바이너리는 없어야 합니다(워크플로우 패키지 및 컨텐츠 패키지는 바이너리로 간주됨).
+한 번에 100개 이하의 경로를 복제하여 500개를 하드 한도로 복제하는 것이 좋습니다. 하드 한도 위, `ReplicationException` 이 Throw됩니다.
+응용 프로그램 로직에 원자성 복제가 필요하지 않으면 `ReplicationOptions.setUseAtomicCalls` false로 설정하면 경로 수가 허용되지만, 내부적으로 버킷을 만들어 이 제한 수준을 유지할 수 있습니다.
+
+복제 호출당 전송되는 컨텐츠 크기는 초과해서는 안 됩니다 `10 MB`. 여기에는 노드 및 속성이 포함되지만 바이너리는 포함되지 않습니다(워크플로우 패키지 및 컨텐츠 패키지는 바이너리로 간주됨).
 
 ## 문제 해결 {#troubleshooting}
 

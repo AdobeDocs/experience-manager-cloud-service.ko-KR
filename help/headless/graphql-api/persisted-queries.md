@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 47%
+source-wordcount: '1311'
+ht-degree: 48%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 47%
 
 다양한 방법으로 쿼리를 지속합니다(다음 포함).
 
-* GraphiQL IDE - 참조 [지속되는 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (기본 설정 메서드)
+* GraphiQL IDE - 참조 [지속되는 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (기본 설정 메서드)
 * curl - 다음 예제 참조
 * 기타 도구, [Postman](https://www.postman.com/) 포함
 
@@ -258,6 +258,45 @@ query getAdventuresByActivity($activity: String!) {
 ```
 
 참고 사항 `%3B` 는 `;` 및 `%3D` 은 의 인코딩입니다. `=`. 쿼리 변수와 특수 문자는 [인코딩이 올바르게 수행됨](#encoding-query-url) 지속형 쿼리를 실행할 수 있습니다.
+
+## 지속 쿼리 캐싱 중 {#caching-persisted-queries}
+
+지속되는 쿼리는 디스패처 및 CDN 레이어에서 캐시될 수 있으므로 권장되며, 궁극적으로 요청 클라이언트 애플리케이션의 성능을 향상시킬 수 있습니다.
+
+기본적으로 AEM은 기본 TTL(Time To Live)을 기반으로 CDN(Content Delivery Network) 캐시를 무효화합니다.
+
+이 값을 다음으로 설정:
+
+* Dispatcher 및 CDN(*공유 캐시*&#x200B;로도 알려짐)의 기본 TTL은 7,200초입니다.
+   * 기본: s-maxage=7200
+* 클라이언트(예: 브라우저)의 기본 TTL은 60초입니다.
+   * 기본: maxage=60
+
+GraphLQ 쿼리의 TTL을 변경하려면 쿼리가 다음 중 하나여야 합니다.
+
+* 관리 후 지속됨 [HTTP 캐시 헤더 - GraphQL IDE에서](#http-cache-headers)
+* 를 사용하여 지속됨 [API 메서드](#cache-api).
+
+### GraphQL에서 HTTP 캐시 헤더 관리  {#http-cache-headers-graphql}
+
+GraphiQL IDE - 참조 [지속되는 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### API에서 캐시 관리 {#cache-api}
+
+이는 명령줄 인터페이스의 CURL을 사용하여 AEM에 쿼리를 게시하는 것과 관련되어 있습니다.
+
+예:
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 선택 사항입니다. CURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)을 참조하십시오.
 
 ## 앱에서 사용하기 위해 쿼리 URL 인코딩 {#encoding-query-url}
 

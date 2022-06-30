@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e5b0bee3e2e4a10b3015f115d5193c43a1e15c1b
+source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 17%
+source-wordcount: '678'
+ht-degree: 19%
 
 ---
 
@@ -25,40 +25,37 @@ ht-degree: 17%
 
 ## 릴리스 날짜 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2022.5.0)는 2022년 6월 9일입니다.
-다음 릴리스(2022.6.0)는 2022년 6월 30일에 예정되어 있습니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2022.6.0)는 2022년 6월 30일입니다.
+
+다음 릴리스(2022.7.0)는 2022년 7월 28일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
-2022.5.0 릴리스에 추가된 기능에 대한 요약을 보려면 2022년 5월 릴리스 개요 비디오를 보십시오.
+2022.6.0 릴리스에 추가된 기능에 대한 요약을 보려면 2022년 6월 릴리스 개요 비디오를 보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/344308/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-sites}
+### [!DNL Sites]의 새로운 기능 {#sites-features}
 
-* 다양한 GraphQL 기능
-* A [새 콘솔](/help/headless/content-fragments/content-fragment-console.md) 컨텐츠 조각의 헤드리스 사용을 위해 최적화되었습니다.
+* 새로운 [사용자 인터페이스](/help/headless/content-fragments/content-fragment-console.md) 이제 컨텐츠 관리자 및 컨텐츠 작성자가 헤드리스 사용 사례에서 효율적으로 관리(게시, 게시 취소, 복사, 이동 등의 작업 수행), 검색/필터를 수행하고 컨텐츠 조각을 만들 수 있습니다.
+
+   ![컨텐츠 조각 콘솔](/help/release-notes/assets/cf-ui.png)
+
+* 새로운 [목차 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html) 는 핵심 구성 요소뿐만 아니라 모든 구성 요소에서 작동하므로 컨텐츠 페이지에서 자동으로 ToCs 렌더링됩니다. 또한 서버 측에서 렌더링되고 디스패처에 의해 완전히 캐시되므로 로드하는 것도 효율적입니다.
 
 ## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* [Dynamic Media 스마트 이미징](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) 이제 AVIF 파일 형식을 지원합니다. AVIF를 사용하면 WebP에 비해 20% 더 큰 크기를 줄일 수 있으므로 Google Core Web Vital(가장 큰 내용물 페인트)을 더욱 향상시킬 수 있습니다. 총 AVIF는 JPEG에 비해 최대 41%의 평균 크기 감소를 제공합니다(일부 이미지에서 76%까지 높이).
-
-* [!UICONTROL Experience Manager Assets Brand Portal] 이제 자동 작업을 12시간마다 실행하여 AEM에 게시된 모든 Brand Portal 자산을 삭제합니다. 따라서 폴더 크기를 임계값 제한 이하로 유지하려면 기여도 폴더에서 자산을 수동으로 삭제할 필요가 없습니다. 자세한 내용은 [Experience Manager Assets Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
-
-### [!DNL Assets] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-assets}
-
 Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이제 [이미지의 색상을 구별하고 수집 시 자동으로 태그로 적용합니다](../../assets/color-tag-images.md). 이러한 태그는 이미지 색상 구성에 따라 향상된 검색 환경을 제공합니다. 이미지에 태그가 지정된 색상의 수를 1~40개 범위에서 구성할 수 있으므로 나중에 해당 색상을 기준으로 이미지를 검색할 수 있습니다.
-
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
+### [!DNL Forms]의 새로운 기능 {#forms-features}
 
-* **Microsoft® Power Automate와 적응형 Forms 통합**: 이제 제출 시 Microsoft® Power Automated Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 Power Automatic Cloud Flow로 전송하여 처리합니다. Microsoft® Power Automate의 기능을 활용하여 사용자 정의 데이터 캡처 경험을 구축하고 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로우를 자동화할 수 있습니다.
+* **[Microsoft® Power Automate와 적응형 Forms 통합](/help/forms/forms-microsoft-power-automate-integration.md)**: 이제 제출 시 Microsoft® Power Automated Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 Power Automatic Cloud Flow로 전송하여 처리합니다. Microsoft® Power Automate의 기능을 활용하여 사용자 정의 데이터 캡처 경험을 구축하고 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로우를 자동화할 수 있습니다.
 
 * **적응형 양식 만들기 마법사**: 비즈니스 사용자에게 친숙한 마법사를 사용하여 응용 Forms을 빠르게 작성할 수 있습니다. 이 마법사는 적응형 양식을 만들기 위해 사전 구성된 템플릿, 스타일 지정, 필드 및 제출 옵션을 쉽게 선택할 수 있도록 빠른 탭 탐색을 제공합니다.
 
@@ -76,31 +73,32 @@ Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 * GQL 클라이언트 구성 덮어쓰기(예: 사용자 지정 캐싱 동작 설정)에 대한 지원이 개선되었습니다
 
+* 이제 여러 상거래 종단점이 기본적으로 지원되며 Cloud Manager를 통해 구성할 수 있습니다. 자세한 내용은 CIF 블로그에서 확인할 수 있습니다 [여기](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
+
+
 ### 버그 수정 {#bug-fixes-cif}
 
 * 다중 값 제품 선택기 필드에 두 번째 제품과 다른 제품이 잘못된 것으로 표시됩니다
 
 * 구성 요소 뒤에 제품 선택기가 숨겨지는 경우가 있습니다
 
+## 참조 데모 추가 기능 {#cloud-services-demos}
+
+### 새로운 기능 {#what-is-new-demos}
+
+* 제품 카탈로그, 장바구니, 체크아웃 및 myAccount를 제공하는 E2E 쇼핑 경험으로 WKND를 확장하는 새로운 WKND Content &amp; Commerce 템플릿입니다. 이 템플릿은 CIF 및 해당 CIF 핵심 구성 요소를 사용하므로 CIF 추가 기능을 설치해야 합니다. 자세한 내용은 CIF 블로그에서 확인할 수 있습니다 [여기](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+
+![WKND shop](/help/assets/CIF/wknd_shop.png)
+
+![WKND pdp](/help/assets/CIF/wknd_pdp.png)
+
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 복제 에이전트 관리 화면의 &quot;트리 추가&quot; 옵션 **배포 탭**&#x200B;이전에 더 이상 사용되지 않음으로 발표된 는 2022년 6월 20일에 제거되거나 곧 그 이후에 제거됩니다. 컨텐츠 계층 구조의 패키지를 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [컨텐츠 트리 게시 워크플로우](/help/operations/replication.md#publish-content-tree-workflow).
-
-* 10MB보다 큰 컨텐츠 패키지(바이너리를 포함하지 않는 속성이 있는 노드)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 것은 더 이상 사용되지 않으며, 2022년 9월 12일 또는 그 다음 단계에 적용됩니다. 대신, [게시 관리](/help/operations/replication.md#manage-publication) 또는 [컨텐츠 트리 게시 워크플로우](/help/operations/replication.md#publish-content-tree-workflow) 이 큰 컨텐츠 패키지를 복제하려면 를 사용해야 합니다. 7월에 복제 에이전트 관리 화면에 경고 메시지가 표시됩니다 **배포 탭** 복제 API를 사용하여 이러한 큰 컨텐츠 패키지를 복제할 때마다 이러한 큰 컨텐츠 패키지 및 AEM 오류 로그도 복제하려는 경우 9월에는 경고가 오류로 대체됩니다. 그에 따라 프로세스를 조정하십시오.
-
-### [!DNL Experience Manager] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-foundation}
-
 * AEM as a Cloud Service은 이제 통합 셸과 통합되어 사용자 경험을 향상하고 다른 모든 Experience Cloud 애플리케이션과 통합할 수 있습니다. 을(를) 참조하십시오. [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 자세한 내용
 
-## [!DNL Experience Manager] 로서의 [!DNL Cloud Service] 기초 보안 {#foundation-security}
-
-### TLS 1.0, 1.1 사용 중단
-
-2022년 6월 30일부터 Experience Manager as a Cloud Service은 보다 안전한 네트워크 통신 및 사용자 시스템과의 데이터 교환을 필요로 합니다. AEM은 TLS(전송 계층 보안), 1.2 프로토콜만 사용합니다. 이전 TLS 버전 1.0 및 1.1은 더 이상 사용되지 않습니다.
-
-이전 버전의 TLS를 1.0, 1.1로 계속 사용하는 경우 Experience Manager as a Cloud Service에 대한 액세스 권한을 잃을 수 있습니다.
+* 5월(2022.5.0) 릴리스 노트에서 언급한 대로, 복제 에이전트 관리 화면의 &quot;트리 추가&quot; 선택 사항 **배포** 탭이 제거되었습니다. 컨텐츠 계층 구조의 패키지를 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [컨텐츠 트리 게시](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 워크플로우.
 
 ## Cloud Manager {#cloud-manager}
 

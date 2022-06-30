@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 87%
+source-wordcount: '1008'
+ht-degree: 66%
 
 ---
 
@@ -96,6 +96,33 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 
 ![GraphQL 변수](assets/cfm-graphqlapi-03.png "GraphQL 변수")
 
+## 지속되는 쿼리에 대한 캐시 관리 {#managing-cache}
+
+[지속되는 쿼리](/help/headless/graphql-api/persisted-queries.md) dispatcher 및 CDN 레이어에서 캐시될 수 있으므로 궁극적으로 요청하는 클라이언트 애플리케이션의 성능을 향상시키는 것이 좋습니다. 기본적으로 AEM은 기본 TTL(Time To Live)을 기반으로 CDN(Content Delivery Network) 캐시를 무효화합니다.
+
+GraphQL을 사용하여 HTTP 캐시 헤더를 구성하여 개별 지속적인 쿼리에 대해 이러한 매개 변수를 제어할 수 있습니다.
+
+1. 다음 **머리글** 옵션은 지속되는 쿼리 이름(맨 왼쪽 패널)의 오른쪽에 있는 세 개의 세로 점을 통해 액세스할 수 있습니다.
+
+   ![지속된 쿼리 HTTP 캐시 헤더](assets/cfm-graphqlapi-headers-01.png "지속된 쿼리 HTTP 캐시 헤더")
+
+1. 이 옵션을 선택하면 **캐시 구성** 대화 상자:
+
+   ![지속된 쿼리 HTTP 캐시 헤더 설정](assets/cfm-graphqlapi-headers-02.png "지속된 쿼리 HTTP 캐시 헤더 설정")
+
+1. 적절한 매개 변수를 선택한 다음 필요에 따라 값을 조정합니다.
+
+   * **cache-control** - **최대 연령**
+캐시는 지정된 시간(초) 동안 이 콘텐츠를 저장할 수 있습니다. 일반적으로 브라우저 TTL(Time To Live)입니다.
+   * **대리 제어** - **s-maxage**
+최대 페이지와 동일하지만 특히 프록시 캐시에 적용됩니다.
+   * **대리 제어** - **부실-while-revalidate**
+캐시는 지정된 시간(초) 동안 캐시가 오래된 후 캐시된 응답을 계속 제공할 수 있습니다.
+   * **대리 제어** - **부실 오류**
+캐시는 지정된 시간(초)까지 또는 원본 오류가 발생한 경우 캐시된 응답을 계속 제공할 수 있습니다.
+
+1. 선택 **저장** 변경 사항을 유지하려면
+
 ## 지속되는 쿼리 게시 {#publishing-persisted-queries}
 
 목록(왼쪽 패널)에서 지속 쿼리가 선택되면 **게시** 및 **게시 취소** 액션을 사용할 수 있습니다. 이렇게 하면 게시 환경에 활성화됩니다(예: `dev-publish`) 테스트 시 애플리케이션에서 쉽게 액세스할 수 있습니다.
@@ -103,32 +130,6 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 >[!NOTE]
 >
 >지속 쿼리의 캐시 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 기본값은 2시간(7,200초)입니다.
-
-## 지속 쿼리 캐싱 중 {#caching-persisted-queries}
-
-AEM은 기본 TTL(Time to Live)에 따라 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다.
-
-이 값을 다음으로 설정:
-
-* Dispatcher 및 CDN(*공유 캐시*&#x200B;로도 알려짐)의 기본 TTL은 7,200초입니다.
-   * 기본: s-maxage=7200
-* 클라이언트(예: 브라우저)의 기본 TTL은 60초입니다.
-   * 기본: maxage=60
-
-GraphiQL UI로 지속되었던 AEM GraphQL 쿼리는 실행 시 기본 TTL을 사용합니다. GraphLQ 쿼리의 TTL을 변경하려는 경우 API 메서드를 사용하여 쿼리를 지속해야 합니다. 이는 명령줄 인터페이스의 CURL을 사용하여 AEM에 쿼리를 게시하는 것과 관련되어 있습니다.
-
-예:
-
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
-
-`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 선택 사항입니다. CURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)을 참조하십시오.
 
 ## URL을 복사하여 쿼리에 직접 액세스합니다. {#copy-url}
 

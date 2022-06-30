@@ -2,10 +2,10 @@
 title: 알려진 문제
 description: Adobe Experience Manager as a Cloud Service 관련 알려진 문제
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,16 @@ ht-degree: 100%
 
 <!-- 
 ## Platform {#platform}
-
-## Sites {#sites}
 -->
+
+## 사이트 {#sites}
+
+일부 [!DNL Sites]의 알려진 문제는 다음과 같습니다.
+
+* GraphQL IDE에서 다음 작업을 수행할 수 있습니다 [지속되는 쿼리에 대한 캐시 관리](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
+   * 첫 번째 저장에서 헤더에 대해 저장된 값은 로 설정됩니다 `0` (기본값 대신) - 사용자가 대화 상자에서 해당 값을 변경하지 않은 경우
+   * 이후에 저장하면 값이 올바르게 저장됩니다.
+   * 따라서 사용자는 헤더를 두 번 저장해야 합니다.
 
 ## [!DNL Assets] {#assets}
 

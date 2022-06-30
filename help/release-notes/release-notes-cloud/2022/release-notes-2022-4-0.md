@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.4.0 릴리스 정보.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.4.0 릴리스 정보.'
-source-git-commit: 53d5dbd53ec1e2dcb20b2b91f0cb020e9e35659c
+exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
+source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 32%
+source-wordcount: '573'
+ht-degree: 34%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
 
@@ -55,17 +55,6 @@ ht-degree: 32%
 
 * **양식 데이터 모델 구성**: 이제 다음을 수행할 수 있습니다 [여러 환경에서 양식 데이터 모델 구성 재사용](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config)데이터 통합을 간소화하고 IT 비용을 절감할 수 있습니다.
 
-## CIF 추가 기능 {#cloud-services-cif}
-
-### 새로운 기능 {#what-is-new-cif}
-
-* 제품 조종실에 대한 빠른 액세스: 사이트 편집기에서 한 번의 클릭으로 전체 세부 제품 정보에 쉽게 액세스할 수 있습니다
-
-   ![wishlist 사용](/help/assets/CIF/enable-wishlist.png)
-
-* 추가 마케팅 상거래 구성 요소에 대한 지원: 장바구니에 추가 및 wishlist 호출에 대한 작업을 표시하도록 구성 요소를 구성할 수 있습니다
-
-   ![제품 조종실에 대한 사이트 편집기 바로 가기](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
