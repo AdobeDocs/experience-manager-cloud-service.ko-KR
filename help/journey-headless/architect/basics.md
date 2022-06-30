@@ -2,7 +2,7 @@
 title: 컨텐츠 모델링 기본 사항 학습
 description: 컨텐츠 조각을 사용하여 헤드리스 CMS용 컨텐츠를 모델링하는 기본 사항을 알아봅니다.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 5%
@@ -143,18 +143,18 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 
 이러한 상호 관계를 나타내는 것은 조각 참조(설계자), 컨텐츠 작성자 및 헤드리스 애플리케이션에서 이해할 수 있으므로 조각 참조에서 수행할 수 있습니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 기본 사항을 익혔으므로 다음 단계는 다음과 같습니다 [AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다](model-structure.md). 여기에는 사용 가능한 다양한 참조 및 헤드리스를 위한 모델링의 주요 부분인 조각 참조를 사용하여 구조 수준을 만드는 방법이 소개되고 논의됩니다.
 
 ## 추가 리소스 {#additional-resources}
 
-* [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+* [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-   * [컨텐츠 조각 모델 - 데이터 유형](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [컨텐츠 조각 모델 - 데이터 유형](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔은 하지만 대부분의 기능은 작성에도 관련이 있습니다 **컨텐츠 조각** 아래에 **자산** 콘솔.
 
-* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
+* [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)

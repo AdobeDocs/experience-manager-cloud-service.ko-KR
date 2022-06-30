@@ -3,7 +3,7 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달용 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 71dc0f18dfea348ab291ac1a32f38d6b03ac577c
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '2664'
 ht-degree: 96%
@@ -152,7 +152,7 @@ GraphQL은 강력한 형식의 API입니다. 즉, 데이터는 유형별로 명�
 
 GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해 강력한 API를 만드는 방법에 대한 일련의 지침을 제공합니다. 이렇게 하려면 클라이언트가 쿼리에 필요한 모든 유형을 포함하는 [스키마](#schema-generation)를 가져와야 합니다.
 
-콘텐츠 조각의 경우 GraphQL 스키마(구조 및 유형)는 **활성화됨** 상태인 [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) 및 해당 데이터 형식을 기반으로 합니다.
+콘텐츠 조각의 경우 GraphQL 스키마(구조 및 유형)는 **활성화됨** 상태인 [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) 및 해당 데이터 형식을 기반으로 합니다.
 
 >[!CAUTION]
 >

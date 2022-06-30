@@ -2,7 +2,7 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -474,4 +474,4 @@ WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별
 
 ![구성 요소 콘솔에 표시되는 README.md](assets/components-documentation-console.png)
 
-지원되는 Markdown은 과 동일합니다 [컨텐츠 조각 을 참조하십시오.](/help/assets/content-fragments/content-fragments.md)
+지원되는 Markdown은 과 동일합니다 [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md).

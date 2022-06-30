@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
+source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
-source-wordcount: '2954'
-ht-degree: 95%
+source-wordcount: '2993'
+ht-degree: 94%
 
 ---
 
@@ -73,6 +73,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 | 경험 조각 | [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)은 여러 채널 간에 재사용할 수 있으며 변형이 있는 독립형 환경으로, 경험 또는 경험 일부를 반복해서 복사하고 붙여넣는 단조로운 작업을 수행할 필요를 없애줍니다. |
 | 자산 | Assets 콘솔을 사용하여 가져오고 관리할 수 있습니다 [이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 자산](/help/assets/overview.md). 그런 다음 동일한 AEM 인스턴스에서 실행되는 사이트에서 이러한 자산을 사용할 수 있습니다. 또한 만들고 관리할 수 있습니다 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) 자산 콘솔에서 게시할 수 있습니다. |
 | 개인화 | [이 콘솔은 타게팅된 컨텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다.](/help/sites-cloud/authoring/personalization/overview.md) |
+| 콘텐츠 조각 | [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md) 페이지에 영향을 받지 않는 컨텐츠를 디자인, 작성, 조정 및 게시할 수 있습니다. 이 도구를 사용하면 여러 위치/여러 채널에서 사용할 수 있도록 구조화된 컨텐츠를 준비할 수 있으며, 페이지 작성과 헤드리스 게재 모두에 이상적입니다. |
 
 ## 도구 패널 {#tools-panel}
 

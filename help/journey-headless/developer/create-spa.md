@@ -2,10 +2,10 @@
 title: 선택 사항 - AEM을 사용하여 단일 페이지 애플리케이션(SPA)을 만드는 방법
 description: AEM Headless Developer 여정의 이 선택적 연속에서 AEM에서 기존의 전체 스택 CMS 기능과 헤드리스 게재를 결합하는 방법과 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법을 알아봅니다.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -101,7 +101,7 @@ RemotePage 구성 요소를 사용하면 AEM에서 외부 SPA을 렌더링할 �
 
 AEM에서 외부 SPA을 편집 가능하게 만드는 방법에 대한 전체 설명은 다음을 참조하십시오. [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 고유한 SPA for AEM 개발을 시작하려면 다음 문서를 검토하십시오.
 
@@ -126,5 +126,5 @@ AEM에서 사용하려면 기존 SPA을 조정해야 하는 경우 다음 문서
 * [SPA 편집기 개요](/help/implementing/developing/hybrid/editor-overview.md) - SPA 편집기 작동 방식 세부 사항
 * [서버 측 렌더링](/help/implementing/developing/hybrid/ssr.md) - AEM SPA용 SSR을 구성하는 방법
 * [SPA 참조 문서](/help/implementing/developing/hybrid/reference-materials.md) - JavaScript API가 열려 있는 소스 AEM SPA GitHub 프로젝트에 대한 참조 및 링크
-* [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) - 컨텐츠 조각을 만드는 방법
+* [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md) - 컨텐츠 조각을 만드는 방법
 * [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - 웹 사이트의 시작점으로 최소한의 우수 사례 기반 Adobe Experience Manager(AEM) 프로젝트를 만드는 Maven 템플릿

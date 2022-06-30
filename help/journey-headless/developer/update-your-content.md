@@ -2,7 +2,7 @@
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: AEM Headless Developer 여정의 이 부분에서 REST API를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -326,7 +326,7 @@ AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수�
 * [콘텐츠 조각 REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
-* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
+* [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [비디오 - AEM을 사용한 CORS용 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

@@ -4,10 +4,10 @@ description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 A
 feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 65%
+source-wordcount: '1778'
+ht-degree: 63%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->컨텐츠 조각은 **자산**&#x200B;으로 저장되므로 **자산** 콘솔에서 주로 관리됩니다.
+>컨텐츠 조각은 **자산**. 이제 주로 **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 콘솔에서 계속 관리할 수 있지만 **자산** 콘솔. 이 섹션에서는 **자산** 콘솔.
 
 ## 컨텐츠 조각 만들기 {#creating-content-fragments}
 

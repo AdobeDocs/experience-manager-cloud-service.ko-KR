@@ -2,7 +2,7 @@
 title: 콘텐츠 조각 모델 만들기 - Headless 설정
 description: 콘텐츠 조각 모델을 사용하여 AEM의 Headless 기능으로 만들고 제공할 콘텐츠의 구조를 정의합니다.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 96%
@@ -69,4 +69,4 @@ ht-degree: 96%
 
 >[!TIP]
 >
->콘텐츠 조각 모델에 대한 자세한 내용은 [콘텐츠 조각 모델 설명서](/help/assets/content-fragments/content-fragments-models.md)를 참조하십시오.
+>콘텐츠 조각 모델에 대한 자세한 내용은 [콘텐츠 조각 모델 설명서](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)를 참조하십시오.

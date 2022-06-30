@@ -2,7 +2,7 @@
 title: AEM Headless를 사용하여 첫 번째 경험에 대한 경로
 description: AEM Headless Developer 여정의 이 부분에서 계획 고려 사항을 포함하여 AEM에서 첫 번째 헤드리스 경험을 구현하는 단계를 이해하고, 가능한 한 원활한 경로를 만드는 우수 사례를 알아봅니다.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 1%
@@ -120,7 +120,7 @@ AEM을 사용하여 콘텐츠를 전달하는 데 첫 번째 헤드리스 앱을
 * 번역 메모리와 같이 AEM과 통합할 수 있는 번역 기술 시스템에서 제공하는 모든 기능을 활용하십시오.
 * 이미지 및 비디오와 같은 리치 미디어 컨텐츠에 현지화가 필요한지 이해합니다.
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
 
@@ -149,6 +149,6 @@ Adobe은 학습 스타일이 무엇이든 AEM Headless 프로젝트를 시작할
 * [AEM 안내서 WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM GraphQL API를 강조 표시하는 예제 애플리케이션이 포함되어 있습니다.
 * [Adobe Experience Manager as a Cloud Service 아키텍처 소개](/help/overview/architecture.md) - AEM 아키텍처에 대한 전체 개요
 * [헤드리스 설정](/help/headless/introduction.md#getting-started) - AEM에 대해 이미 잘 알고 있는 사용자를 위한 AEM 헤드리스 기능에 대한 빠른 소개입니다.
-* [컨텐츠 조각 모델 만들기](/help/assets/content-fragments/content-fragments-models.md) - 컨텐츠 조각 모델에 대한 기술 설명서
-* [컨텐츠 조각 만들기](/help/assets/content-fragments/content-fragments.md) - 컨텐츠 조각에 대한 기술 설명서
+* [컨텐츠 조각 모델 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - 컨텐츠 조각 모델에 대한 기술 설명서
+* [컨텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments.md) - 컨텐츠 조각에 대한 기술 설명서
 * [GraphQL을 사용하여 쿼리 컨텐츠](/help/headless/graphql-api/content-fragments.md) - GraphQL API에 대한 기술 설명서

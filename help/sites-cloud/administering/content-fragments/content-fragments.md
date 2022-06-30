@@ -1,23 +1,20 @@
 ---
 title: 콘텐츠 조각을 사용하여 작업
-description: AEM(Adobe Experience Manager) as a Cloud Service의 컨텐츠 조각을 사용하여 헤드리스 게재에 적합한 페이지에 구애받지 않고 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법을 알아봅니다.
-feature: Content Fragments
-role: User
-exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
+description: AEM(Adobe Experience Manager) as a Cloud Service의 컨텐츠 조각을 사용하여 페이지 작성 및 헤드리스 게재에 이상적인 페이지에 적합한 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있는 방법을 알아봅니다.
+source-git-commit: 6de4120a5b8b312ca1a665b7d7ef7686670c4997
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2068'
 ht-degree: 75%
 
 ---
 
 # 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
 
-Adobe Experience Manager(AEM) as a Cloud Service 컨텐츠 조각을 사용하면 컨텐츠 조각을 디자인, 작성, 조정 및 조정할 수 있습니다 [페이지에 영향을 받지 않는 컨텐츠 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 이를 통해 헤드리스 게재에 이상적인 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service 컨텐츠 조각을 사용하면 컨텐츠 조각을 디자인, 작성, 조정 및 조정할 수 있습니다 [페이지에 영향을 받지 않는 컨텐츠 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 이를 통해 여러 위치/여러 채널에서 사용할 수 있는 컨텐츠를 준비할 수 있으므로 페이지 작성 및 헤드리스 게재에 이상적입니다.
 
 컨텐츠 조각에는 구조화된 컨텐츠가 포함되어 있습니다.
 
-* 이러한 ID는 [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)- 결과 조각의 구조를 사전 정의합니다.
+* 이러한 ID는 [컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)- 결과 조각의 구조를 사전 정의합니다.
 * 구조가 다음 범위 사이에 있을 수 있습니다.
    * 기본
       * 예를 들어, 여러 줄 텍스트 필드를 한 개 입력합니다.
@@ -34,20 +31,21 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * 구성 요소를 사용하여 게재할 조각의 요소를 관리할 수 있습니다.
 * API 게재에 사용되는 페이지에서 여러 컨텐츠 조각 핵심 구성 요소를 추가하여 벌크 게재를 수행할 수 있습니다.
 
->[!NOTE]
->
->컨텐츠 조각은 **자산**. 이제 주로 **[컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 콘솔에서 계속 관리할 수 있지만 **자산** 콘솔. 이 섹션에서는 **자산** 콘솔.
-
 이 페이지와 다음 페이지에서는 컨텐츠 조각을 생성, 구성, 유지 관리 및 사용하는 작업을 다룹니다.
 
-* [인스턴스에 대해 컨텐츠 조각 기능을 사용할 수 있도록 설정](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md) - 모델 활성화, 생성 및 정의
-* [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) - 컨텐츠 조각 만든 후 편집, 게시 및 참조
-* [변형 - 조각 컨텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md) - 조각 컨텐츠를 작성 및 마스터의 변형 만들기
-* [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - 조각에 Markdown 구문 사용
-* [관련 컨텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md) - 관련 컨텐츠 추가
-* [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
-* 사용 [GraphQL과 함께 컨텐츠를 제공할 컨텐츠 조각](/help/assets/content-fragments/content-fragments-graphql.md) 을 사용하도록 선택할 수 있습니다. 이 작업에 도움이 되도록 미리 볼 수 있습니다 [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [인스턴스에 대해 컨텐츠 조각 기능을 사용할 수 있도록 설정](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+* [컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) - 모델 활성화, 생성 및 정의
+* [컨텐츠 조각 콘솔 사용](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) - 조각에 액세스, 만들기, 편집, 게시 및 참조하려면
+* [컨텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - 컨텐츠 조각 만든 후 편집, 게시 및 참조
+* [변형 - 조각 컨텐츠 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) - 조각 컨텐츠를 작성 및 마스터의 변형 만들기
+* [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md) - 조각에 Markdown 구문 사용
+* [관련 컨텐츠 사용](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) - 관련 컨텐츠 추가
+* [메타데이터 - 조각 속성](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
+* 컨텐츠 조각 사용:
+
+   * [페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+   * [GraphQL과 함께 사용하여 헤드리스 방식으로 애플리케이션을 전송할 수 있습니다](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
+이 작업에 도움이 되도록 [구조 트리](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md) 및 [JSON 출력](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -120,9 +118,11 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 컨텐츠 조각은
 
+* A **Sites** 기능.
+
 * **자산**&#x200B;으로 저장됩니다.
 
-   * 컨텐츠 조각(및 그 변형)은 **자산** 콘솔에서 만들고 유지 관리할 수 있습니다.
+   * 컨텐츠 조각(및 그 변형)은 모두 **컨텐츠 조각** 콘솔 및 **자산** 콘솔.
    * 컨텐츠 조각 편집기에서 작성 및 편집됩니다.
 
 * [컨텐츠 조각 구성 요소(참조 구성 요소)를 통해 페이지 편집기](/help/sites-cloud/authoring/fundamentals/content-fragments.md)에서 사용됩니다.
@@ -150,7 +150,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
    * 조각의 필수 부분입니다([컨텐츠 조각의 구성 성분 부분](#constituent-parts-of-a-content-fragment) 참조).
    * 자산의 위치를 정의합니다.
-   * 자세한 내용은 조각 편집기에서 [조각에 자산 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 참조하십시오.
+   * 자세한 내용은 조각 편집기에서 [조각에 자산 삽입](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 참조하십시오.
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
    * 조각에 연결되어 있지만 조각의 고정 부분이 아닙니다([컨텐츠 조각의 구성 성분 부분](#constituent-parts-of-a-content-fragment) 참조).
    * 위치에 대해 어느 정도 유연합니다.
    * 페이지에서 조각을 사용할 때(중간적 컨텐츠로서) 쉽게 사용할 수 있습니다.
-   * 자세한 내용은 [관련 컨텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)를 참조하십시오.
+   * 자세한 내용은 [관련 컨텐츠](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)를 참조하십시오.
 
 * 페이지 편집기의 **자산 브라우저**&#x200B;에서 사용할 수 있는 자산
 
@@ -183,7 +183,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
    * 개별 엔티티로 구분된 텍스트 블록(종종 여러 줄)입니다.
 
-   * [리치 텍스트](/help/assets/content-fragments/content-fragments-variations.md#rich-text) 및 [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) 모드에서 단락 서식을 헤더로 지정할 수 있습니다. 이렇게 하면 해당 단락과 그다음 단락이 한 단위로 묶입니다.
+   * [리치 텍스트](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#rich-text) 및 [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#markdown) 모드에서 단락 서식을 헤더로 지정할 수 있습니다. 이렇게 하면 해당 단락과 그다음 단락이 한 단위로 묶입니다.
 
    * 페이지 작성 중 컨텐츠를 제어할 수 있도록 해줍니다.
 
@@ -193,7 +193,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
    * 조각의 단락 시스템에 포함됩니다.
    * [페이지에서 조각을 사용/참조](/help/sites-cloud/authoring/fundamentals/content-fragments.md)할 때 형식을 지정할 수 있습니다.
    * 조각 편집기를 사용해야 조각에 추가, 조각에서 삭제 또는 조각 내에서 이동할 수 있습니다. 페이지 편집기에서는 이러한 작업을 수행할 수 없습니다.
-   * [조각 편집기에서 리치 텍스트 형식](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 사용해야 조각에 추가, 조각에서 삭제 또는 조각 내에서 이동할 수 있습니다.
+   * [조각 편집기에서 리치 텍스트 형식](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)을 사용해야 조각에 추가, 조각에서 삭제 또는 조각 내에서 이동할 수 있습니다.
    * 여러 줄 텍스트 요소(임의의 조각 유형)에만 추가할 수 있습니다.
    * 선행하는 텍스트(단락)에 첨부됩니다.
 
@@ -209,7 +209,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
    * 조각의 외부 컨텐츠지만 조각에 대한 편집 관련 연관성이 있는 컨텐츠입니다. 일반적으로 이미지, 비디오 또는 기타 조각입니다.
    * 컬렉션 내의 개별 자산은 페이지에 추가될 때 페이지 편집기에서 조각에 사용할 수 있습니다. 이것은 특정 채널의 요구 사항에 따라 이러한 자산을 선택할 수 있음을 의미합니다.
-   * 자산은 [컬렉션을 통해 조각에 연결](/help/assets/content-fragments/content-fragments-assoc-content.md)됩니다. 연결된 컬렉션은 작성자가 페이지를 작성할 때 사용할 자산을 결정할 수 있도록 해줍니다.
+   * 자산은 [컬렉션을 통해 조각에 연결](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)됩니다. 연결된 컬렉션은 작성자가 페이지를 작성할 때 사용할 자산을 결정할 수 있도록 해줍니다.
 
       * 컬렉션은 조각에 기본 컨텐츠로 연결하거나 조각 작성 중 작성자가 연결할 수 있습니다.
       * [자산(DAM) 컬렉션](/help/assets/manage-collections.md)은 조각과 관련된 컨텐츠의 기초입니다.
@@ -236,7 +236,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
       * 모든 컨텐츠 조각에는 하나의 마스터 인스턴스가 있습니다.
       * 마스터는 삭제할 수 없습니다.
-   * 마스터는 **[변형](/help/assets/content-fragments/content-fragments-variations.md)** 아래의 조각 편집기에서 액세스할 수 있습니다.
+   * 마스터는 **[변형](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)** 아래의 조각 편집기에서 액세스할 수 있습니다.
    * 마스터는 그러한 변형이 아니라 모든 변형의 기초입니다.
 
 
@@ -246,9 +246,9 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
    * **마스터**&#x200B;의 사본으로 만들어지지만 필요에 따라 편집할 수 있습니다. 일반적으로 변형 간에 컨텐츠가 겹치게 됩니다.
    * 조각 작성 중에 정의할 수 있습니다.
    * 조각 내에 저장되므로 컨텐츠 사본 살포를 방지할 수 있습니다.
-   * 마스터 컨텐츠가 업데이트된 경우 변형을 마스터와 [동기화](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)할 수 있습니다.
-   * [요약](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text)하여 텍스트를 사전 정의된 길이로 신속히 자를 수 있습니다.
-   * 조각 편집기의 [변형](/help/assets/content-fragments/content-fragments-variations.md) 탭에서 사용할 수 있습니다.
+   * 마스터 컨텐츠가 업데이트된 경우 변형을 마스터와 [동기화](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#synchronizing-with-master)할 수 있습니다.
+   * [요약](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#summarizing-text)하여 텍스트를 사전 정의된 길이로 신속히 자를 수 있습니다.
+   * 조각 편집기의 [변형](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md) 탭에서 사용할 수 있습니다.
 
 ### 컨텐츠 조각으로 페이지 작성 시 중간적 컨텐츠 {#in-between-content-when-page-authoring-with-content-fragments}
 
@@ -270,9 +270,9 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 
 * **컨텐츠 모델**
 
-   * 다음 [구성 브라우저를 사용하여 활성화됨](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * 다음 [도구를 사용하여 생성](/help/assets/content-fragments/content-fragments-models.md).
-   * 필수 여부 [조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
+   * 다음 [구성 브라우저를 사용하여 활성화됨](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+   * 다음 [도구를 사용하여 생성](/help/sites-cloud/administering/content-fragments/content-fragments-models.md).
+   * 필수 여부 [조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * 조각(제목, 컨텐츠 요소, 태그 정의)의 구조를 정의합니다.
    * 컨텐츠 모델 정의는 제목과 하나의 데이터 요소를 필요로 합니다. 그 외의 모든 것은 선택 사항입니다.
    * 기본 컨텐츠(해당되는 경우)를 정의할 수 있습니다.

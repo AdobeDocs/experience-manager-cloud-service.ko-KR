@@ -2,10 +2,10 @@
 title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 컨텐츠 조각, 컨텐츠, 기타 조각 및 기타 자산(미디어)에 대한 참조를 사용하는 방법에 대해 알아봅니다. 헤드리스 CMS 작성을 위한 중첩된 조각의 필요성 및 역학을 소개합니다.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -96,7 +96,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 >
 >기본 패널에서 탐색 표시를 사용하여 시작 지점으로 다시 이동할 수 있습니다.
 
-![컨텐츠 조각 구조 트리](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![컨텐츠 조각 구조 트리](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## 애드혹 참조 {#adhoc-references}
 
@@ -104,26 +104,26 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 
 ![컨텐츠 조각 - Ad Hoc 참조](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 컨텐츠 조각에서 참조 및 구조에 대해 배웠으므로 다음 단계는 다음과 같습니다 [메타데이터 및 태깅에 대해 알아보기](metadata-tagging.md). 컨텐츠 조각에 대한 메타데이터 및 태그를 정의하는 방법을 소개하고 설명합니다.
 
 ## 추가 리소스 {#additional-resources}
 
-* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
+* [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
+   * [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [자산 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [자산 폴더에 구성 적용](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [변형 - 컨텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
+      * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [변형 - 컨텐츠 조각 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [컨텐츠 조각 모델 - 데이터 유형](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [컨텐츠 조각 모델 - 데이터 유형](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [컨텐츠 조각 모델 - 속성](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [컨텐츠 조각 모델 - 속성](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
 
 * 시작 안내서

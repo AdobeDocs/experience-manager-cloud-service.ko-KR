@@ -2,10 +2,10 @@
 title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 컨텐츠 조각 모델을 사용하여 헤드리스 CMS용 컨텐츠 모델링 컨텐츠의 개념과 역학에 대해 알아봅니다.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '688'
+ht-degree: 9%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
 
-![Define configuration](/help/assets/content-fragments/assets/cfm-conf-01.png)
+![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 옵션 **모델 활성화** 은 기본적으로 활성화됩니다. 즉, 컨텐츠 조각을 저장하자마자 모델을 사용할 수 있습니다(컨텐츠 조각 만들기에서). 원할 경우 이 모델을 비활성화할 수 있습니다. 나중에 기존 모델을 활성화(또는 비활성화)할 기회가 있습니다.
 
-![컨텐츠 조각 모델 만들기](/help/assets/content-fragments/assets/cfm-models-02.png)
+![컨텐츠 조각 모델 만들기](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
 다음으로 확인 **만들기** 그러면 **열기** 구조 정의를 시작할 모델입니다.
 
@@ -55,21 +55,21 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 새 모델을 처음 열면 왼쪽에 큰 공백, 긴 목록 등이 표시됩니다 **데이터 유형** 오른쪽:
 
-![빈 모델](/help/assets/content-fragments/assets/cfm-models-03.png)
+![빈 모델](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 
 그럼 어떻게 해야 하죠?
 
 인스턴스를 **데이터 유형** 왼쪽 공간에 있습니다. 이미 모델을 정의하고 있습니다.
 
-![필드 정의](/help/assets/content-fragments/assets/cfm-models-04.png)
+![필드 정의](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
 데이터 유형을 추가하면 다음을 정의해야 합니다 **속성** 해당 필드에 대해 입력합니다. 사용 유형에 따라 다릅니다. 예:
 
-![데이터 속성](/help/assets/content-fragments/assets/cfm-models-05.png)
+![데이터 속성](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
 필요한 만큼 필드를 추가할 수 있습니다. 예:
 
-![콘텐츠 조각 모델](/help/assets/content-fragments/assets/cfm-models-07.png)
+![콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
 
 ### 컨텐츠 작성자 {#your-content-authors}
 
@@ -112,23 +112,23 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [기본 처리](/help/sites-cloud/authoring/getting-started/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔의 대부분/대부분 기능은 이동 및 작업 수행에도 관련이 있습니다. **컨텐츠 조각 모델** 아래에 **일반** 콘솔.
 
-* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
+* [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [컨텐츠 조각 모델 정의](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [컨텐츠 조각 모델 정의](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [컨텐츠 조각 모델 활성화 또는 비활성화](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [컨텐츠 조각 모델 활성화 또는 비활성화](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [자산 폴더에서 컨텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [자산 폴더에서 컨텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [컨텐츠 조각 모델 삭제](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [컨텐츠 조각 모델 삭제](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [컨텐츠 조각 모델 게시](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [컨텐츠 조각 모델 게시](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [컨텐츠 조각 모델 게시 취소](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [컨텐츠 조각 모델 게시 취소](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [잠김(게시된) 컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [잠김(게시된) 컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 시작 안내서
 

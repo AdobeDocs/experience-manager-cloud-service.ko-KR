@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0f6546d4a25a59a93090952f0ee58e27f0f0f838
+source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
-source-wordcount: '3612'
-ht-degree: 96%
+source-wordcount: '3682'
+ht-degree: 94%
 
 ---
 
@@ -274,6 +274,20 @@ ht-degree: 96%
          + [ContextHub를 사용하여 세그먼테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + 관리 {#administering}
+      + 콘텐츠 조각 {#content-fragments}
+         + [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+         + [콘텐츠 조각 및 GraphQL을 사용하여 헤드리스 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+         + [인스턴스용 콘텐츠 조각 기능 활성화](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+         + [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+         + [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+         + [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+         + [변형 - 조각 콘텐츠 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+         + [콘텐츠 조각 관련 콘텐츠](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+         + [메타데이터 - 조각 속성](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+         + [콘텐츠 조각 - 삭제 고려 사항](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+         + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+         + [구조 트리](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+         + [미리보기 - JSON 표시](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
          + [프런트-엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -619,18 +633,18 @@ ht-degree: 96%
       + [콘텐츠 조각](/help/headless/setup/create-content-fragment.md)
       + [GraphQL 끝점](/help/headless/setup/create-api-request.md)
    + 콘텐츠 조각 {#content-fragments}
-      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ko)
+      + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
       + [컨텐츠 조각 콘솔](/help/headless/content-fragments/content-fragment-console.md)
-      + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ko)
-      + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ko)
+      + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
+      + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + 작성{#authoring}
-         + [작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko)
-         + [텍스트 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ko)
-         + [관련 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ko)
-         + [변형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ko#managing-variations)
-      + [메타데이터](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ko)
-      + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ko)
-      + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ko)
+         + [작성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+         + [텍스트 편집기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
+         + [관련 콘텐츠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
+         + [변형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
+      + [메타데이터](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
+      + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
+      + [JSON 미리보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
    + GraphQL API {#graphql-api}
       + [콘텐츠 조각용 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL 엔드포인트 관리](/help/headless/graphql-api/graphql-endpoint.md)

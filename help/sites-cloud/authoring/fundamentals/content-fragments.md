@@ -2,16 +2,16 @@
 title: 컨텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 컨텐츠 조각을 사용하면 페이지 독립적 컨텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 100%
+source-wordcount: '1164'
+ht-degree: 98%
 
 ---
 
 # 콘텐츠 조각 {#content-fragments}
 
-Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 제작되고 관리됩니다](/help/assets/content-fragments/content-fragments.md).
+Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이지에 영향을 받지 않는 자산으로 제작되고 관리됩니다](/help/sites-cloud/administering/content-fragments/content-fragments.md).
 
 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 컨텐츠를 만들 수 있습니다. 그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
@@ -28,7 +28,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 
 >[!CAUTION]
 >
->이 페이지는 [컨텐츠 조각에서 사용](/help/assets/content-fragments/content-fragments.md) 및 관련 페이지와 함께 읽어야 합니다. 기본 용어 및 개념뿐 아니라 조각 생성과 관리를 소개합니다.
+>이 페이지는 [컨텐츠 조각에서 사용](/help/sites-cloud/administering/content-fragments/content-fragments.md) 및 관련 페이지와 함께 읽어야 합니다. 기본 용어 및 개념뿐 아니라 조각 생성과 관리를 소개합니다.
 
 컨텐츠 조각을 사용하여 다음을 수행할 수 있습니다.
 
@@ -105,7 +105,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 
 ### 조각 편집기에 대한 빠른 연결 {#quick-connection-to-fragment-editor}
 
-구성 요소 도구 모음에서 **편집** 아이콘을 사용하여 자산을 편집할 조각 소스를 열 수 있습니다. 이 경우 [컨텐츠 조각을 편집하고 관리](/help/assets/content-fragments/content-fragments.md)할 수 있습니다.
+구성 요소 도구 모음에서 **편집** 아이콘을 사용하여 자산을 편집할 조각 소스를 열 수 있습니다. 이 경우 [컨텐츠 조각을 편집하고 관리](/help/sites-cloud/administering/content-fragments/content-fragments.md)할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -115,7 +115,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 
 특정 컨텐츠 조각이 페이지에 추가되면 조각의 각 HTML 단락 사이(및 상단/하단)에 **구성 요소를 여기로 드래그하십시오.** 자리 표시자가 있습니다.
 
-이렇게 하면 루트 조각을 변경하지 않고도 조각 컨텐츠 [사이(즉, 중간 컨텐츠)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)(사용 가능한 모든 지점)에 컨텐츠를 더 추가할 수 있습니다.
+이렇게 하면 루트 조각을 변경하지 않고도 조각 컨텐츠 [사이(즉, 중간 컨텐츠)](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)(사용 가능한 모든 지점)에 컨텐츠를 더 추가할 수 있습니다.
 
 중간 컨텐츠에서 다음 작업을 수행할 수 있습니다.
 
@@ -131,9 +131,9 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 
 >[!NOTE]
 >
->또한 조각 자체에 [시각적 자산(이미지)을 삽입](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)할 수도 있습니다.
+>또한 조각 자체에 [시각적 자산(이미지)을 삽입](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)할 수도 있습니다.
 >
->조각 자체에 삽입된 시각적 자산은 조각의 이전 단락에 첨부됩니다. 즉, 시각적 자산과 이전 단락 간에 중간 컨텐츠를 배치할 수 없음을 의미합니다. 이 연결 수준이 필요한 경우 조각([혼합 미디어 조각](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)으로)에 이미지를 추가할 수 있습니다.
+>조각 자체에 삽입된 시각적 자산은 조각의 이전 단락에 첨부됩니다. 즉, 시각적 자산과 이전 단락 간에 중간 컨텐츠를 배치할 수 없음을 의미합니다. 이 연결 수준이 필요한 경우 조각([혼합 미디어 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)으로)에 이미지를 추가할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -149,11 +149,11 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 
 ### 관련 콘텐츠 사용 {#using-associated-content}
 
-[관련 컨텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)를 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)과 연결한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)의 특별한 컨텐츠 소스입니다.
+[관련 컨텐츠](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)를 [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)과 연결한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)의 특별한 컨텐츠 소스입니다.
 
 >[!NOTE]
 >
->[시각적 자산(예: 이미지)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
+>[시각적 자산(예: 이미지)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 
 ### 조각에 삽입된 자산 {#assets-inserted-into-the-fragment}
 
-자산(예: 이미지)이 조각 자체에 삽입된 경우([혼합 미디어 조각](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)으로), 페이지 편집기에서 이러한 자산을 편집하는 옵션은 제한됩니다.
+자산(예: 이미지)이 조각 자체에 삽입된 경우([혼합 미디어 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)으로), 페이지 편집기에서 이러한 자산을 편집하는 옵션은 제한됩니다.
 
 예를 들어, 이미지의 경우 다음 작업을 수행할 수 있습니다.
 
@@ -182,5 +182,5 @@ Adobe Experience Manager (AEM) as a Cloud Service의 컨텐츠 조각은 [페이
 
 게시된 웹 페이지에서 조각을 사용할 수 있도록 조각을 게시해야 합니다.
 
-* [자산 콘솔에서 조각을 만든](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment) 후에 조각을 게시할 수 있습니다.
+* 조각은 나중에 게시할 수 있습니다 [컨텐츠 조각 콘솔에서 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * *게시 취소된 조각*&#x200B;을 게시 중인 페이지에서 사용하는 경우 그때 조각이 게시될 수도 있습니다.

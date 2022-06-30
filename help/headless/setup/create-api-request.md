@@ -2,7 +2,7 @@
 title: API 요청 만들기 - Headless 설정
 description: 콘텐츠 조각 콘텐츠의 Headless 전달을 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 에셋 REST API를 사용하는 방법을 알아봅니다.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 93%
@@ -96,6 +96,6 @@ GraphQL은 반복적인 API 요청과 초과 전달을 방지할 수 있으며 �
 
 이번 단계가 끝났습니다! 이제 AEM의 Headless 콘텐츠 관리에 대한 기본 사항을 이해했습니다. 물론 사용 가능한 기능을 포괄적으로 이해하기 위해 더 깊이 파고들 수 있는 더 많은 리소스가 있습니다.
 
-* **[콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)** - 콘텐츠 조각 생성 및 관리에 대한 자세한 내용
+* **[콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)** - 콘텐츠 조각 생성 및 관리에 대한 자세한 내용
 * **[AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)** - CRUD(만들기, 읽기, 업데이트, 삭제) 작업을 통해 HTTP API로 직접 AEM 콘텐츠에 액세스하는 방법에 대한 자세한 내용
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** - 콘텐츠 조각을 Headless 방식으로 전달하는 방법에 대한 자세한 내용

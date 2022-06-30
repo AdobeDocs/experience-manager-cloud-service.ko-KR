@@ -2,7 +2,7 @@
 title: SPA 소개 및 워크스루
 description: 이 문서에서는 SPA의 개념을 소개하고 기본 SPA 응용 프로그램을 사용하여 기본 AEM SPA 편집기와 관련된 방법을 설명합니다.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 2%
@@ -177,7 +177,7 @@ SPA이 최종 사용자에 대해 동작하는 방식을 경험하고 SPA 페이
 
    ![WKND SPA 프로젝트 홈 페이지의 JSON입니다.](assets/wknd-json.png)
 
-   AEM SPA 편집기는 [AEM 컨텐츠 서비스](/help/assets/content-fragments/content-fragments.md) 페이지의 전체 컨텐츠를 JSON 모델로 전달하는 데 사용됩니다.
+   AEM SPA 편집기는 [AEM 컨텐츠 서비스](/help/sites-cloud/administering/content-fragments/content-fragments.md) 페이지의 전체 컨텐츠를 JSON 모델로 전달하는 데 사용됩니다.
 
    Sling 모델은 특정 인터페이스를 구현하여 SPA에 필요한 정보를 제공합니다. JSON 데이터 전달은 각 구성 요소(페이지, 단락, 구성 요소 등)에 하향 전달됩니다.
 

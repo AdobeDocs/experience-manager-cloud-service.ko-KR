@@ -2,10 +2,10 @@
 title: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 description: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 14%
+source-wordcount: '241'
+ht-degree: 15%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 14%
 
 메타데이터 및 태그를 추가하는 데 사용할 수 있는 방법에는 세 가지가 있습니다.
 
-* 조각을 처음 만들 때:
+* 조각을 처음 생성할 때(에서) **자산** 콘솔):
 
    ![컨텐츠 조각 만들기 - 제공 이름](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -38,14 +38,14 @@ ht-degree: 14%
 
    * 또한 **속성** 옵션을 클릭합니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 이 모든 지식을 사용하여 프로젝트에 대한 컨텐츠 조각 만들기를 시작할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
-* [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md)
+* [메타데이터 - 조각 속성](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [태그 사용](/help/sites-cloud/authoring/features/tags.md)
 
-* [컨텐츠 조각 모델 - 자산 폴더에서 컨텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [컨텐츠 조각 모델 - 자산 폴더에서 컨텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

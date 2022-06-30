@@ -2,7 +2,7 @@
 title: 콘텐츠 조각 맞춤화 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 Adobe Experience Manager as a Cloud Service 내에서 컨텐츠 조각은 표준 자산을 확장합니다. 다음을 참조하십시오.
 
-* [컨텐츠 조각 만들기 및 관리](/help/assets/content-fragments/content-fragments.md) 및 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 컨텐츠 조각에 대한 자세한 정보.
+* [컨텐츠 조각 만들기 및 관리](/help/sites-cloud/administering/content-fragments/content-fragments.md) 및 [컨텐츠 조각으로 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 컨텐츠 조각에 대한 자세한 정보.
 
 * [자산 관리](/help/assets/manage-digital-assets.md) 표준 자산에 대한 추가 정보.
 
 ## 아키텍처 {#architecture}
 
-기본 [구성 부분](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 컨텐츠 조각의 유형은 다음과 같습니다.
+기본 [구성 부분](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 컨텐츠 조각의 유형은 다음과 같습니다.
 
 * A *컨텐츠 조각*,
 * 하나 이상으로 구성 *컨텐츠 요소*,
@@ -79,7 +79,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 #### 자산 권한 {#asset-permissions}
 
-자세한 내용은 [컨텐츠 조각 - 삭제 고려 사항](/help/assets/content-fragments/content-fragments-delete.md).
+자세한 내용은 [컨텐츠 조각 - 삭제 고려 사항](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 
 #### 기능 통합 {#feature-integration}
 
@@ -326,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 예: 자동 저장 간격 지정 {#example-specifying-the-auto-save-interval}
 
-다음 [자동 저장 간격](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) 구성 관리자(ConfMgr)를 사용하여 (초 단위 측정)를 정의할 수 있습니다.
+다음 [자동 저장 간격](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) 구성 관리자(ConfMgr)를 사용하여 (초 단위 측정)를 정의할 수 있습니다.
 
 * 노드: `<conf-root>/settings/dam/cfm/jcr:content`
 * 속성 이름: `autoSaveInterval`

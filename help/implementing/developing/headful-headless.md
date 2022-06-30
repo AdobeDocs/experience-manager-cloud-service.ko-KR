@@ -2,7 +2,7 @@
 title: AEM 헤드풀 및 헤드리스
 description: AEM 프로젝트는 headful 및 headless 모델로 구현할 수 있지만 선택은 바이너리가 아닙니다. AEM은 한 프로젝트에서 두 모델의 장점을 모두 활용할 수 있는 유연성을 제공합니다.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 1%
@@ -53,18 +53,18 @@ SPA 통합은 AEM에서 네 가지 수준의 스펙트럼에 해당합니다.
    * SPA과 AEM은 별도로 존재하며 정보를 교환하지 않습니다.
    * 컨텐츠는 두 개의 별도 시스템에서 독립적으로 생성, 관리 및 전달됩니다.
 * **수준 1: 컨텐츠 조각 통합**
-   * [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) AEM에서 SPA에 대한 제한된 컨텐츠를 만들고 관리하는 데 사용됩니다.
+   * [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md) AEM에서 SPA에 대한 제한된 컨텐츠를 만들고 관리하는 데 사용됩니다.
    * SPA은 AEM을 통해 이 컨텐츠를 검색합니다 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * 일부 컨텐츠는 AEM에서 관리되고 일부는 외부 시스템에서 관리됩니다.
    * 콘텐츠는 SPA에서만 볼 수 있습니다.
 * **레벨 2: AEM에 SPA 포함**
-   * [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) SPA용 컨텐츠를 만들고 관리하는 데 AEM에서 사용됩니다.
+   * [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md) SPA용 컨텐츠를 만들고 관리하는 데 AEM에서 사용됩니다.
    * SPA은 AEM을 통해 이 컨텐츠를 검색합니다 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * 일부 컨텐츠는 AEM에서 관리되고 일부는 외부 시스템에서 관리됩니다.
    * 컨텐츠는 AEM 내에서 컨텍스트 내에서 볼 수 있습니다.
    * 제한된 컨텐츠는 AEM 내에서 편집할 수 있습니다.
 * **레벨 3: AEM에서 SPA 포함 및 전체 활성화**
-   * [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) SPA용 컨텐츠를 만들고 관리하는 데 AEM에서 사용됩니다.
+   * [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md) SPA용 컨텐츠를 만들고 관리하는 데 AEM에서 사용됩니다.
    * SPA은 AEM을 통해 이 컨텐츠를 검색합니다 [GraphQL API.](/help/headless/graphql-api/content-fragments.md)
    * 컨텐츠는 AEM 내에서 컨텍스트 내에서 볼 수 있습니다.
    * 대부분의 컨텐츠는 AEM 내에서 편집할 수 있습니다.
