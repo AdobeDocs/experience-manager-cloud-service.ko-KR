@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 19%
+source-wordcount: '639'
+ht-degree: 20%
 
 ---
 
@@ -95,8 +95,6 @@ Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이제 [이�
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 새로운 기능 {#what-is-new-foundation}
-
-* AEM as a Cloud Service은 이제 통합 셸과 통합되어 사용자 경험을 향상하고 다른 모든 Experience Cloud 애플리케이션과 통합할 수 있습니다. 을(를) 참조하십시오. [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 자세한 내용
 
 * 5월(2022.5.0) 릴리스 노트에서 언급한 대로, 복제 에이전트 관리 화면의 &quot;트리 추가&quot; 선택 사항 **배포** 탭이 제거되었습니다. 컨텐츠 계층 구조의 패키지를 대신 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [컨텐츠 트리 게시](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) 워크플로우.
 
