@@ -4,18 +4,14 @@ description: 적응형 양식을 Microsoft® Power Automate와 통합합니다.
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 27aa5016d6bdc4a101ba044bf9e49c483ecdae13
+source-git-commit: ccc4d487cb180273284276cf9cdf18680a3efcb8
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1183'
 ht-degree: 1%
 
 ---
 
 # Microsoft® Power Automate로 적응형 양식 연결 {#connect-adaptive-form-with-power-automate}
-
->[!NOTE]
->
->이 기능은 출시 전 프로그램에 포함되어 있으며 공개 릴리스 전에 크게 변경될 수 있습니다.
 
 제출 시 Microsoft® Power Automated Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 Power Automatic Cloud Flow로 전송하여 처리합니다. Microsoft® Power Automate의 기능을 활용하여 사용자 정의 데이터 캡처 경험을 구축하고 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로우를 자동화할 수 있습니다. 다음은 적응형 양식을 Microsoft® Power 자동화와 통합한 후 수행할 수 있는 작업의 몇 가지 예입니다.
 
