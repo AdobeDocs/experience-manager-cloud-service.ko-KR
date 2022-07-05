@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
+source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 1%
+source-wordcount: '1137'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Communications API를 사용하여 신용 카드 명세서를 만들 수 있습�
 
 ## 문서 생성
 
-템플릿(XFA 또는 PDF)을 고객 데이터( )와 결합하는 데 도움이 되는 통신 문서 생성 API[XML 데이터](#form-data)) PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성할 수 있습니다. 이러한 API는 [PDF 및 XFA 템플릿](#supported-document-types) with [XML 데이터](communications-known-issues-limitations.md#form-data) 배치 작업을 사용하여 단일 요청 문서 또는 여러 문서를 생성할 수 있습니다.
+통신 문서 생성 API는 템플릿(XFA 또는 PDF)을 고객 데이터(XML)와 결합하여 PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성하는 데 도움이 됩니다. 이러한 API는 [XML 데이터](communications-known-issues-limitations.md#form-data) 배치 작업을 사용하여 단일 요청 문서 또는 여러 문서를 생성할 수 있습니다.
 
 일반적으로 [디자이너](use-forms-designer.md) 및 를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션이 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템으로 전송하여 아카이빙할 수 있습니다. 일반적인 기본 제공 및 사용자 지정 워크플로우는 다음과 같습니다.
 
@@ -99,9 +99,9 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 통신 문서 조작 API를 사용하여 PDF 문서를 결합, 재정렬 및 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. 다음 [DDX 문서](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 소스 문서를 사용하여 필수 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
 
-### PDF 문서 조합
+### PDF 문서를 어셈블합니다
 
-문서 작성 API를 사용하여 두 개 이상의 PDF 또는 XDP 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
+문서 조작 API를 사용하여 두 개 이상의 PDF 또는 XDP 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
 
 * 간단한 PDF 문서 조합
 * PDF Portfolio 만들기
@@ -112,9 +112,9 @@ When such an interactive PDF document is flattened using the Communications APIs
 ![여러 PDF 문서에서 간단한 PDF 문서 조립](assets/as_document_assembly.png)
 그림: 여러 PDF 문서에서 간단한 PDF 문서 조립
 
-### PDF 문서 분해
+### PDF 문서를 디스어셈블합니다
 
-문서 작성 API를 사용하여 PDF 문서를 분해할 수 있습니다. API는 소스 문서에서 페이지를 추출하거나 책갈피를 기반으로 소스 문서를 나눌 수 있습니다. 일반적으로 이 작업은 PDF 문서가 원래 문 컬렉션과 같은 여러 개별 문서에서 만들어진 경우에 유용합니다.
+문서 조작 API를 사용하여 PDF 문서를 분해할 수 있습니다. API는 소스 문서에서 페이지를 추출하거나 책갈피를 기반으로 소스 문서를 나눌 수 있습니다. 일반적으로 이 작업은 PDF 문서가 원래 문 컬렉션과 같은 여러 개별 문서에서 만들어진 경우에 유용합니다.
 
 * 소스 문서에서 페이지 추출
 * 책갈피를 기준으로 소스 문서 나누기
@@ -122,9 +122,9 @@ When such an interactive PDF document is flattened using the Communications APIs
 ![책갈피를 기반으로 하는 소스 문서를 여러 문서로 분할](assets/as_intro_pdfsfrombookmarks.png)
 그림: 책갈피를 기반으로 하는 소스 문서를 여러 문서로 분할
 
-### PDF/A 호환 문서로 변환 및 유효성 검사
+### PDF/A호환 문서로 변환하고 확인합니다
 
-문서 작성 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 규격 문서인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
+문서 조작 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 규격 문서인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
 
 ## 통신 API 유형
 
