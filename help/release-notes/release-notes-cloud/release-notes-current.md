@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 20%
@@ -39,7 +39,7 @@ ht-degree: 20%
 
 ### [!DNL Sites]의 새로운 기능 {#sites-features}
 
-* 새로운 [사용자 인터페이스](/help/headless/content-fragments/content-fragment-console.md) 이제 컨텐츠 관리자 및 컨텐츠 작성자가 헤드리스 사용 사례에서 효율적으로 관리(게시, 게시 취소, 복사, 이동 등의 작업 수행), 검색/필터를 수행하고 컨텐츠 조각을 만들 수 있습니다.
+* 새로운 [사용자 인터페이스](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 이제 컨텐츠 관리자 및 컨텐츠 작성자가 헤드리스 사용 사례에서 효율적으로 관리(게시, 게시 취소, 복사, 이동 등의 작업 수행), 검색/필터를 수행하고 컨텐츠 조각을 만들 수 있습니다.
 
    ![컨텐츠 조각 콘솔](/help/release-notes/assets/cf-ui.png)
 

@@ -2,7 +2,7 @@
 title: 콘텐츠 조각 만들기 - Headless 설정
 description: Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 78%
@@ -37,7 +37,7 @@ Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독�
 
    제목, 이름 및 필요한 경우 설명을 추가합니다.
 
-   ![새 컨텐츠 조각 만들기 대화 상자](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![새 컨텐츠 조각 만들기 대화 상자](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. 탭 또는 클릭 **만들기** 또는  **만들기 및 열기**.
 
