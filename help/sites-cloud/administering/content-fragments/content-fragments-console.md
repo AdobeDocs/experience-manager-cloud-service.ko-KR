@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 콘솔
 description: 컨텐츠 조각 콘솔에서 컨텐츠 조각을 관리하는 방법을 알아봅니다.
 landing-page-description: 헤드리스 사용 사례용 컨텐츠 조각을 많이 사용하지만 페이지 작성 시에도 사용되는 컨텐츠 조각 콘솔에서 컨텐츠 조각을 관리하는 방법을 알아봅니다.
-source-git-commit: 19ec74f98bf0dedb768db5c4ec7eb6063779b03c
+source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
