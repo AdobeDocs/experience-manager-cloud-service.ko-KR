@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
+source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
 workflow-type: tm+mt
-source-wordcount: '3053'
-ht-degree: 94%
+source-wordcount: '3006'
+ht-degree: 93%
 
 ---
 
@@ -209,29 +209,7 @@ API에 대한 자세한 내용은 [Cloud Manager API 설명서](https://develope
 
 ### 트래픽 라우팅 {#dedcated-egress-ip-traffic-routing}
 
-표준 Java 네트워킹 라이브러리를 사용한다고 가정하면 포트 80 또는 443을 통해 대상으로 이동하는 HTTP 또는 HTTPS 트래픽은 사전 구성된 프록시를 통과합니다. 다른 포트를 거치는 HTTP 또는 HTTPS 트래픽의 경우 다음 속성을 사용하여 프록시를 구성해야 합니다.
-
-```
-AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
-AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
-```
-
-`www.example.com:8443`으로 요청을 전송하는 샘플 코드로 예를 들어 보겠습니다.
-
-```java
-String url = "www.example.com:8443"
-String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
-
-HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
-      .build();
- 
-HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
-HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-```
-
-비표준 Java 네트워킹 라이브러리를 사용하는 경우 모든 트래픽에 대해 위의 속성을 사용하여 프록시를 구성할 수 있습니다.
+프록시 구성에 표준 Java 시스템 속성을 사용하는 경우 Http 또는 https 트래픽은 사전 구성된 프록시를 통해 전달됩니다.
 
 `portForwards` 매개 변수에 선언된 포트를 통한 대상이 있는 비 HTTP/S 트래픽은 매핑된 포트와 함께 `AEM_PROXY_HOST`라는 속성을 참조해야 합니다. 예:
 
