@@ -2,7 +2,7 @@
 title: 더 이상 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 API에 관련된 릴리스 정보입니다.'
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: d64e69e9662449e25cb12d7cdd415494cb6b6c7d
+source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 95%
@@ -190,7 +190,7 @@ ht-degree: 95%
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
     <td>이 내부 로그백 API는 AEM as a Cloud Service에서 지원되지 않습니다.</td>
     <td>1/27/2022</td>
-    <td>3/24/2022</td>
+    <td>제거됨</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
