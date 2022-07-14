@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 778a3687447c1e07605fdb95b3934b10d22483e8
+source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
-source-wordcount: '3691'
-ht-degree: 94%
+source-wordcount: '3674'
+ht-degree: 92%
 
 ---
 
@@ -123,24 +123,19 @@ ht-degree: 94%
    + [AEM as a Cloud Service에 대한 Same Site 쿠키 지원](/help/security/same-site-cookie-support.md)
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
 + 온보딩 {#onboarding}
-   + [AEM as a Cloud Service에 온보딩](/help/onboarding/home.md)
-   + 온보딩 개념 학습 {#onboarding-concepts}
-      + [시스템 관리자](/help/onboarding/learn-concepts/system-administrator.md)
-      + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
-      + [Adobe ID 관리 시스템](/help/onboarding/learn-concepts/ims.md)
-      + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
-      + [Cloud Manager 소개](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
-      + [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-      + [Adobe 지원](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+   + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 온보딩 여정 {#journey}
-      + [온보딩 여정](/help/journey-onboarding/home.md)
-      + [온보딩 여정 개요](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
-      + [온보딩 프로세스 시작하기](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
-      + [Cloud Manager 제품 프로필에 팀 멤버 할당](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
-      + [Cloud Manager를 통해 클라우드 리소스 설정](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
-      + [AEM as a Cloud Service 제품 프로필에 팀 멤버 할당](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-      + [개발자 및 배포 관리자를 위한 학습 경로](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
-      + [AEM 사용자를 위한 학습 경로](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+      + [온보딩 여정 개요](/help/journey-onboarding/overview.md)
+      + [온보딩 준비](/help/journey-onboarding/preparation.md)
+      + [AEM as a Cloud Service 용어](/help/journey-onboarding/terminology.md)
+      + [Admin Console](/help/journey-onboarding/admin-console.md)
+      + [Cloud Manager 제품 프로필 할당](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [Cloud Manager 액세스](/help/journey-onboarding/cloud-manager.md)
+      + [프로그램 제작](/help/journey-onboarding/create-program.md)
+      + [환경 만들기](/help/journey-onboarding/create-environments.md)
+      + [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md)
+      + [개발자 및 배포 관리자 작업](/help/journey-onboarding/developers.md)
+      + [AEM 사용자 작업](/help/journey-onboarding/aem-users.md)
    + AEM 참조 데모 추가 기능 여정 {#demo-add-on}
       + [개요](/help/journey-sites/demos-add-on/overview.md)
       + [설치](/help/journey-sites/demos-add-on/installation.md)
@@ -148,6 +143,9 @@ ht-degree: 94%
       + [데모 사이트 만들기](/help/journey-sites/demos-add-on/create-site.md)
       + [스크린 활성화](/help/journey-sites/demos-add-on/screens.md)
       + [데모 사이트 관리](/help/journey-sites/demos-add-on/manage.md)
+   + 기타 온보딩 개념 {#concepts}
+      + [Cloud Manager 소개](/help/onboarding/cloud-manager-introduction.md)
+      + [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
    + [준비 단계](/help/journey-migration/readiness.md)
@@ -750,7 +748,7 @@ ht-degree: 94%
          + [IP 허용 목록 적용 및 적용 취소](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)
-      + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+      + [Cloud Manager FAQ](/help/implementing/cloud-manager/faqs.md)
    + AEM as a Cloud Service용 개발 {#developing}
       + [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 프로젝트 저장소 구조 패키지](/help/implementing/developing/introduction/repository-structure-package.md)

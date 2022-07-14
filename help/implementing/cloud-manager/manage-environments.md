@@ -2,10 +2,10 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용 환경 유형을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 * [사이트](/help/sites-cloud/home.md)
 * [에셋](/help/assets/home.md)
-* [Forms](/help/forms/home.md)
+* [양식](/help/forms/home.md)
 * [스크린](/help/screens-cloud/home.md)
 
 >[!NOTE]

@@ -2,10 +2,10 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 96%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -125,10 +125,6 @@ Cloud Manager는 여러 지역 전역에 걸쳐 데이터센터에 환경을 생
 
 ## 온보딩 {#onboarding}
 
->[!NOTE]
->
->자세한 내용은 [온보딩](/help/onboarding/home.md)을 참조하십시오.
-
 Adobe에서 많은 측면을 담당하므로 AEM as a Cloud service를 사용하면 AEM 프로젝트를 매우 간단하게 시작하고 관리할 수 있습니다.
 
 * 기준선 AEM 이미지가 특정 사용 사례에 최적화되어 있습니다.
@@ -150,6 +146,10 @@ Adobe에서 많은 측면을 담당하므로 AEM as a Cloud service를 사용하
    * 코드 업데이트. 이전 버전의 AEM용으로 개발된 고객 애플리케이션은 검토 및 업데이트되어야 합니다.
 
    * 콘텐츠 마이그레이션
+
+>[!TIP]
+>
+>온보딩 프로세스에 대한 전체 개요는 를 참조하십시오. [온보딩 여정.](/help/journey-onboarding/overview.md)
 
 ## 개발 {#developing}
 
@@ -273,6 +273,6 @@ Assets 제품에는 클라우드에서의 차세대 에셋 프로세싱과 고�
 
 >[!TIP]
 >
->AEM as a Cloud Service에 대한 개요가 있으면 [온보딩 여정](/help/journey-onboarding/home.md)을 검토하여 빠르게 온보딩할 수 있습니다.
+>AEM as a Cloud Service에 대한 개요가 있으면 [온보딩 여정](/help/journey-onboarding/overview.md)을 검토하여 빠르게 온보딩할 수 있습니다.
 >
 >이미 온보딩했거나 AEM의 기능을 테스트할 준비가 되었습니까? [AEM 참조 데모 추가 기능](/help/journey-sites/demos-add-on/overview.md)을 설치하여 풍부한 예제를 통해 AEM의 강력한 기능을 살펴보십시오.

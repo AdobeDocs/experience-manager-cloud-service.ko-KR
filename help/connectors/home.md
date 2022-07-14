@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 커넥터
-description: Connectors, 커넥터에서 수행할 수 있는 작업 및 Experience Manager에서 이러한 중요한 도구를 구현하는 방법에 대해 알아봅니다.
-landing-page-description: Connectors, 커넥터에서 수행할 수 있는 작업 및 Experience Manager에서 이러한 중요한 도구를 구현하는 방법에 대해 알아봅니다.
+description: 커넥터와 그 기능에 대해 자세히 알아보고 Experience Manager에서 이들 유용한 도구를 구현하는 방법에 대해 알아봅니다.
+landing-page-description: 커넥터와 그 기능에 대해 자세히 알아보고 Experience Manager에서 이들 유용한 도구를 구현하는 방법에 대해 알아봅니다.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 80%
+source-wordcount: '395'
+ht-degree: 93%
 
 ---
 
@@ -24,10 +24,10 @@ Experience Manager as a Cloud Service용 커넥터, 수행할 수 있는 작업 
 
 | 사용 안내서 | 설명 |
 |---|---|
-| [개요](/help/overview/home.md) | 이 안내서에서는 Experience Manager as a Cloud Service 소개, 용어, 아키텍처 등 입문용 개요를 제공합니다. |
+| [개요](/help/overview/home.md) | 이 안내서에서는 소개, 용어, 아키텍처 등을 포함하여 Experience Manager as a Cloud Service에 대한 간단한 개요를 제공합니다. |
 | [릴리스 정보](/help/release-notes/home.md) | 이 안내서에서는 새로운 기능, 더 이상 사용되지 않거나 제거된 기능 및 알려진 문제 등 Experience Manager as a Cloud Service의 최신 릴리스에 대한 중요 정보를 제공합니다. |
 | [보안 사용 안내서](/help/security/home.md) | Experience Manager as a Cloud Service에 대한 중요 보안 항목에 대해 알아봅니다. |
-| [온보딩](/help/onboarding/home.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
+| [온보딩 여정](/help/journey-onboarding/overview.md) | 이 안내서에서는 액세스 방법, 중요한 데이터 보호 정보 등 Experience Manager as a Cloud Service를 시작하는 방법에 대한 요약을 제공합니다. |
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
 | [에셋 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
 | [AEM as a Cloud Service로 이동](/help/journey-migration/getting-started.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
@@ -42,7 +42,7 @@ Experience Manager as a Cloud Service용 커넥터, 수행할 수 있는 작업 
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
-* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)
+* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 준비](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

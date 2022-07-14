@@ -2,9 +2,9 @@
 title: 준비 단계
 description: AEM 설치를 클라우드로 이동할 준비가 되었는지 확인하기 위해 수행해야 하는 단계에 대해 알아봅니다
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2079'
 ht-degree: 7%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 7%
 >id="aemcloud_cam_planning"
 >title="전환 계획"
 >abstract="클라우드 서비스로 전환 여정을 시작하기 전에 먼저 AEM as a Cloud Service를 숙지하고, 이에 대한 주목할 만한 변경 사항을 검토하고, 교체되거나 더 이상 사용되지 않는 기능을 검토해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="모범 사례 분석기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
 
 AEM as a Cloud Service 마이그레이션 여정의 이 단계에서는 AEM을 숙지하고, 도입된 주목할 만한 변경 사항을 검토하고, 클라우드로 성공적인 마이그레이션을 계획하는 데 필요한 사항을 이해할 수 있습니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 이전 문서 [AEM으로 이동 시작 as a Cloud Service](/help/journey-migration/getting-started.md)에서는 AEM as a Cloud Service으로 마이그레이션하기 위해 수행해야 하는 단계 목록과 이러한 작업의 이점을 간략하게 설명합니다.
 
@@ -210,7 +210,7 @@ Cloud Service으로 이동하는 데 필요한 작업 수준을 예측했으면 
 
 자세한 내용은 [KPI 개발](https://guided.adobe.com/welcome/aem/part6.html) 비즈니스 목표에 적합한 KPI를 선택하는 방법을 알아봅니다.
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 AEM as a Cloud Service으로 이동하는 데 필요한 변경 사항의 범위를 이해하면 됩니다. [코드 및 컨텐츠 클라우드를 준비합니다.](/help/journey-migration/implementation.md) 마이그레이션을 실제로 수행하기 전에 이 작업을 수행하십시오.
 
@@ -220,4 +220,4 @@ AEM as a Cloud Service으로 이동하는 데 필요한 변경 사항의 범위�
 * [AEM as a Cloud Service: 소개, 건축, 사고방식이 다르다](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
 * [AEM a Cloud Service 홈](/help/overview/home.md) - Experience Manager as a Cloud Service 설명서에 대한 개요를 알려면 여기에서 시작하십시오.
 * [AEM as a Cloud Service 개요](/help/overview/home.md) - 이 안내서에서는 소개, 용어 및 아키텍처 등 Experience Manager as a Cloud Service에 대한 개요를 제공합니다.
-* [온보딩](/help/onboarding/home.md)- 이 안내서에서는 액세스 및 팀 설정 방법 등 Experience Manager as a Cloud Service으로 시작하는 방법에 대한 요약을 제공합니다
+* [온보딩 여정](/help/journey-onboarding/overview.md)- 이 안내서에서는 액세스 및 팀 설정 방법 등 Experience Manager as a Cloud Service으로 시작하는 방법에 대한 요약을 제공합니다

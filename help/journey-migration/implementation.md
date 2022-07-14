@@ -2,9 +2,9 @@
 title: 구현 단계
 description: 코드와 컨텐츠가 클라우드로 마이그레이션할 준비가 되었는지 확인합니다.
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2416'
 ht-degree: 9%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 여정의 구현 단계에서 코드 및 컨텐츠를 AEM as a Cloud Service 으로 이동할 수 있도록 하는 도구를 살펴봅니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 여정의 이전 부분에서 다음을 수행했습니다 [AEM as a Cloud Service의 변경 사항을 잘 알고 있습니다.](/help/journey-migration/getting-started.md)를 사용하여 배포가 클라우드로 이동할 준비가 되었는지 확인할 수 있습니다. [준비 단계](/help/journey-migration/readiness.md).
 
@@ -35,7 +35,7 @@ ht-degree: 9%
 
 아래 리소스를 참조하여 Cloud Manager 사용을 잘 알 수 있습니다.
 
-* [Experience Manager as a Cloud Service에 온보딩](/help/onboarding/home.md): Experience Manager as a Cloud Service에 온보딩에 대한 셀프 헬프 리소스를 이해합니다.
+* [온보딩 여정](/help/journey-onboarding/overview.md) Experience Manager as a Cloud Service 온보딩에 대한 자습 리소스를 이해합니다.
 
 * [Git와 Adobe Cloud Manager 통합](/help/implementing/cloud-manager/managing-code/integrating-with-git.md): 단일 Git 저장소를 사용하여 코드 배포에 대해 자세히 알아봅니다.
 
@@ -249,6 +249,6 @@ Cloud Manager 파이프라인은 스테이지 환경에서 실행되는 테스�
    * 일주일에 얼마나 많은 콘텐츠가 추가되는지 알아보십시오
    * 마이그레이션 증명에서 측정한 시간을 추출하여 [마이그레이션 계획](#migration-plan).
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 AEM 설치를 클라우드로 이동할 준비가 되었는지 평가하는 방법을 완전히 이해한 후 준비하는 데 필요한 도구를 사용하는 방법을 학습하므로 이제 로 이동할 차례입니다. [go-live 단계](/help/journey-migration/go-live.md).
