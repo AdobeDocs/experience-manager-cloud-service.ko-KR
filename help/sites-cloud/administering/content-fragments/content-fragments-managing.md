@@ -1,10 +1,10 @@
 ---
 title: 콘텐츠 조각 관리
 description: 컨텐츠 조각 콘솔을 사용하여 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다. 페이지 작성을 위해 또는 헤드리스 컨텐츠를 기반으로 사용할 수 있습니다.
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 2c5b04d297a71a276ef3e85386f052de36337622
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 41%
+source-wordcount: '2043'
+ht-degree: 39%
 
 ---
 
@@ -64,6 +64,21 @@ ht-degree: 41%
 
 1. 선택 **만들기**, 또는 **만들기 및 열기** 정의를 유지합니다.
 
+## 컨텐츠 조각 상태 {#statuses-content-fragments}
+
+컨텐츠 조각이 있는 동안에 와 같이 여러 상태가 있을 수 있습니다. [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md):
+
+* **새로 만들기**
+새 컨텐츠 조각이 생성되었지만 컨텐츠 조각 편집기에서 편집하거나 연 적이 없습니다.
+* **초안**
+누군가 컨텐츠 조각 편집기에서 컨텐츠 조각을 편집하거나 연 후에 게시됩니다.
+* **게시됨**
+컨텐츠 조각이 게시되었습니다.
+* **수정됨**
+컨텐츠 조각이 게시 후(다시 게시하기 전에) 편집되었습니다.
+* **게시 취소됨**
+컨텐츠 조각 의 게시가 취소되었습니다.
+
 ## 컨텐츠 조각 콘솔의 컨텐츠 조각에 대한 작업 {#actions-content-fragment-console}
 
 에서 **컨텐츠 조각** 콘솔에서 도구 모음의 컨텐츠 조각에 다양한 작업을 사용할 수 있습니다.
@@ -106,7 +121,7 @@ ht-degree: 41%
 
 콘솔에 표시할 컨텐츠 조각을 검색 및/또는 필터링할 수 있습니다.
 
-다음을 작업을 수행할 수 있습니다.
+다음과 같은 작업을 수행할 수 있습니다.
 
 * 필요한 폴더 선택
 * 을 사용하여 필터 선택 **필터 표시** 아이콘을 클릭하고 검색 상자를 동시에 사용합니다.
@@ -158,7 +173,7 @@ ht-degree: 41%
 * [관련 컨텐츠](#associating-content-with-your-fragment)
 * [메타데이터](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 * [구조 트리](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-* [미리 보기](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+* [미리보기](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 
 ![모드](assets/cfm-managing-04.png)
 
