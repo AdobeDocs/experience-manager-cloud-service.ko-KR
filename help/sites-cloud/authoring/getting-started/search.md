@@ -1,21 +1,21 @@
 ---
 title: 검색
-description: 포괄적인 검색으로 신속하게 컨텐츠 찾기
+description: 포괄적인 검색으로 신속하게 콘텐츠 찾기
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '494'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # 검색 {#search-feature}
 
-AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
+AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
 
 ## 검색 기본 사항 {#search-basics}
 
-검색은 맨 위 도구 모음에서 사용할 수 있습니다.
+검색은 상단 도구 모음에서 사용할 수 있습니다.
 
 ![검색 아이콘](/help/sites-cloud/authoring/assets/search-icon.png)
 
@@ -29,7 +29,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 >
 >검색 레일이 표시될 때마다 핫키 `/`(슬래시)를 사용하여 검색을 호출할 수 있습니다.
 
-## 검색 및 필터 {#search-and-filter}
+## 검색 및 필터링 {#search-and-filter}
 
 리소스를 검색하고 필터링하려면:
 
@@ -50,14 +50,14 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 1. 추가로 드릴다운하려면 레일 기호(왼쪽 상단)를 선택하여 사이드 패널 **필터 및 옵션**&#x200B;을 엽니다.
 
-   ![레일 단추](/help/sites-cloud/authoring/assets/rail-button.png)
+   ![레일 버튼](/help/sites-cloud/authoring/assets/rail-button.png)
 
    리소스 유형에 따라 검색에 미리 정의된 검색/필터 기준이 표시됩니다.
 
    사이드 패널에서 다음을 선택할 수 있습니다.
 
    * 저장된 검색
-   * 검색 디렉토리
+   * 검색 디렉터리
    * 태그
    * 검색 기준(예: 수정한 날짜, 게시 상태, Live Copy 상태)
 
@@ -65,8 +65,8 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    >
    >검색 기준은 다음과 같이 다양할 수 있습니다.
    >
-   >* 선택한 리소스 유형에 따라(예: 자산 및 커뮤니티) 기준이 세분화됩니다.
-   >* 검색 양식과 같은 인스턴스는 AEM 내의 위치에 맞게 사용자 지정할 수 있습니다.
+   >* 선택한 리소스 유형에 따라(예: 에셋 및 커뮤니티) 기준이 세분화됩니다.
+   >* 검색 양식과 같은 인스턴스는 AEM 내의 위치에 맞게 사용자 정의할 수 있습니다.
 
 
 <!--
@@ -77,13 +77,13 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 1. 검색어를 추가할 수도 있습니다.
 
-1. Close **Search** with the **X** (top right).
+1. **X**&#x200B;를 클릭하여(오른쪽 상단) **검색**&#x200B;을 닫습니다.
 
 >[!NOTE]
 >
 >검색 기준은 검색 결과에서 항목을 선택해도 유지됩니다.
 >
->검색 결과 페이지에서 항목을 선택하고, 브라우저의 뒤로 단추를 사용하여 검색 페이지로 돌아가도 검색 기준은 유지됩니다.
+>검색 결과 페이지에서 항목을 선택하고, 브라우저의 뒤로 버튼을 사용하여 검색 페이지로 돌아가도 검색 기준은 유지됩니다.
 
 ## 저장된 검색 {#saved-searches}
 
@@ -101,11 +101,11 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
    ![저장된 검색](/help/sites-cloud/authoring/assets/saved-searches.png)
 
-1. 저장했으면 다음을 수행할 수 있습니다.
+1. 저장했으면 다음과 같은 작업을 수행할 수 있습니다.
 
    * **x**(저장된 검색 이름에 대해)를 사용하여 새 쿼리를 시작합니다(저장된 검색 자체는 삭제되지 않음).
    * **저장한 검색을 편집**&#x200B;하고, 검색 조건을 변경한 다음 다시 **저장**&#x200B;합니다.
 
-Saved searches can be modified by selecting the saved search and clicking **Edit Saved Search** at the bottom of the search panel.
+검색 패널 하단에서 저장된 검색을 선택한 다음 **저장된 검색 편집**&#x200B;을 클릭하여 저장된 검색을 수정할 수 있습니다.
 
 ![저장된 검색 수정](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
