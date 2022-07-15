@@ -1,25 +1,25 @@
 ---
-title: ' [!DNL Adobe Experience Manager] 에서 리치 텍스트 편집기를 사용하여 컨텐츠를 작성합니다.'
-description: ' [!DNL Experience Manager] 리치 텍스트 편집기를 사용하여 컨텐츠를 작성합니다.'
+title: ' [!DNL Adobe Experience Manager] 에서 리치 텍스트 편집기를 사용하여 콘텐츠를 작성합니다.'
+description: ' [!DNL Experience Manager] 리치 텍스트 편집기를 사용하여 콘텐츠를 작성합니다.'
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# 리치 텍스트 편집기를 사용하여 컨텐츠를 작성합니다 {#use-rich-text-editor-to-author-content}
+# 리치 텍스트 편집기를 사용하여 콘텐츠를 작성합니다. {#use-rich-text-editor-to-author-content}
 
-리치 텍스트 편집기(RTE)는 텍스트 컨텐츠를 [!DNL Adobe Experience Manager]에 추가할 수 있는 기본 빌딩 블록입니다. 또한 작성을 허용하는 다른 많은 구성 요소는 RTE를 기반으로 합니다. Experience Manager 개발자는 RTE를 사용자 지정하고 관리자는 작성자가 사용하도록 RTE를 구성할 수 있습니다.
+리치 텍스트 편집기(RTE)는 텍스트 콘텐츠를 [!DNL Adobe Experience Manager]에 추가할 수 있는 기본 빌딩 블록입니다. 또한 작성을 허용하는 다른 많은 구성 요소는 RTE를 기반으로 합니다. Experience Manager 개발자는 RTE를 사용자 정의하고 관리자는 작성자가 사용하도록 RTE를 구성할 수 있습니다.
 
-## 즉석 편집 {#in-place-editing}
+## 바로 편집 {#in-place-editing}
 
 한 번의 클릭으로 텍스트 기반 구성 요소를 선택하여 [구성 요소 도구 모음](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)을 표시합니다.
 
 ![구성 요소 도구 모음](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
-다시 클릭하거나 처음에 구성 요소를 선택하고 느리게 두 번 클릭하면 즉석 편집이 열립니다. 편집 모드에는 도구 모음이 포함되어 있습니다. 컨텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
+다시 클릭하거나 처음에 구성 요소를 선택하고 느리게 더블 클릭하면 즉석 편집이 열립니다. 편집 모드에는 도구 모음이 포함되어 있습니다. 콘텐츠를 편집하고 기본적인 서식 변경을 수행할 수 있습니다.
 
 ![RTE를 사용하여 즉석 편집](/help/sites-cloud/authoring/assets/rte-in-place-editing.png)
 
@@ -35,9 +35,9 @@ ht-degree: 97%
 
 ## 전체 화면 편집 {#full-screen-editing}
 
-텍스트 기반 구성 요소의 경우 ![도구 모음](/help/sites-cloud/authoring/assets/editing-full-screen.png)에서 전체 화면 모드 [RTE 전체 화면 단추](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)를 클릭하여 리치 텍스트 편집기를 열고 나머지 페이지 컨텐츠를 숨깁니다.
+텍스트 기반 구성 요소의 경우 ![도구 모음](/help/sites-cloud/authoring/assets/editing-full-screen.png)에서 전체 화면 모드 [RTE 전체 화면 버튼](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)을 클릭하여 리치 텍스트 편집기를 열고 나머지 페이지 콘텐츠를 숨깁니다.
 
-전체 화면 모드에서는 작성에 사용할 수 있는 구성된 모든 옵션이 표시됩니다. 옵션 사용 가능 [구성에 따라 다릅니다](/help/implementing/developing/extending/rich-text-editor.md).
+전체 화면 모드에서는 작성에 사용할 수 있는 구성된 모든 옵션이 표시됩니다. 사용 가능한 옵션은 [구성에 따라 달라집니다](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![전체 화면 모드의 RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
