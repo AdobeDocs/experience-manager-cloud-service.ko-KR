@@ -3,7 +3,7 @@ title: 받은 편지함
 description: 받은 편지함에서 작업 관리
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -11,14 +11,14 @@ ht-degree: 100%
 
 # 받은 편지함 {#your-inbox}
 
-워크플로우 및 프로젝트를 포함하여 다양한 AEM 영역에서 알림을 받을 수 있습니다. 예를 들어 다음 항목에 대한 알림을 받을 수 있습니다.
+워크플로 및 프로젝트를 포함하여 다양한 AEM 영역에서 알림을 받을 수 있습니다. 예를 들어 다음 항목에 대한 알림을 받을 수 있습니다.
 
 * 작업:
    * AEM UI 내의 다양한 지점(예: **프로젝트** 아래)에서 생성할 수 있습니다.
-   * 워크플로우 **작업 만들기** 또는 **프로젝트 작업 만들기** 단계의 결과일 수 있습니다.
-* 워크플로우:
-   * 페이지 컨텐츠에서 수행해야 하는 작업을 나타내는 작업 항목입니다.
-      * 워크플로우 **참가자** 단계의 결과입니다.
+   * 워크플로 **작업 만들기** 또는 **프로젝트 작업 만들기** 단계의 결과일 수 있습니다.
+* 워크플로:
+   * 페이지 콘텐츠에서 수행해야 하는 작업을 나타내는 작업 항목입니다.
+      * 워크플로 **참가자** 단계의 결과입니다.
    * 관리자가 실패한 단계를 재시도할 수 있도록 허용하는 실패 항목입니다.
 
 사용자의 받은 편지함에서 이러한 알림을 받고 확인하여 작업을 수행할 수 있습니다.
@@ -29,7 +29,7 @@ ht-degree: 100%
 >
 >* [프로젝트](/help/sites-cloud/authoring/projects/overview.md)
 >* [프로젝트 - 작업 중](/help/sites-cloud/authoring/projects/tasks.md)
->* [워크플로우](/help/sites-cloud/authoring/workflows/overview.md)
+>* [워크플로](/help/sites-cloud/authoring/workflows/overview.md)
 
 
 ## 헤더의 받은 편지함 {#inbox-in-the-header}
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->특정 작업이 [해당 리소스의 카드 보기에도](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view) 표시됩니다.
+>특정 작업은 [해당 리소스의 카드 보기](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)에도 표시됩니다.
 
 ## 받은 편지함 열기 {#opening-the-inbox}
 
@@ -48,7 +48,7 @@ AEM 알림 받은 편지함 열기
 
 1. 도구 모음에서 표시기를 클릭/탭합니다.
 
-1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로우, 프로젝트 및 작업의 항목을 표시합니다.
+1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로, 프로젝트 및 작업의 항목을 표시합니다.
 1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
 
    두 보기 모두에 대해 [보기 설정](#inbox-view-settings)을 정의할 수 있습니다. 사용 가능한 옵션은 현재 보기에 따라 다릅니다.
@@ -65,13 +65,13 @@ AEM 알림 받은 편지함 열기
 
 ![받은 편지함 목록 보기](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
-### 받은 편지함 - 달력 보기 {#inbox-calendar-view}
+### 받은 편지함 - 캘린더 보기 {#inbox-calendar-view}
 
 이 보기는 달력에서 해당 위치에 따라 항목을 표시합니다.
 
 ![받은 편지함 달력 보기](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
 
-다음을 작업을 수행할 수 있습니다.
+다음과 같은 작업을 수행할 수 있습니다.
 
 * 특정 보기, 즉 **타임라인**, **열**, **목록**&#x200B;을 선택합니다.
 * **예약**&#x200B;에 따라 표시할 작업, 즉 **모두**, **계획됨**, **진행 중**, **곧**, **기한 초과** 작업을 지정할 수 있습니다.
@@ -84,7 +84,7 @@ AEM 알림 받은 편지함 열기
 
 두 가지 보기(목록 및 달력)에 대해 다음과 같이 설정을 정의할 수 있습니다.
 
-* **Calendar View**
+* **캘린더 보기**
 
    **달력 보기**&#x200B;의 경우 다음을 구성할 수 있습니다.
 
@@ -127,14 +127,14 @@ AEM 알림 받은 편지함 열기
       * 추가 작업을 위해 적절한 대시보드 또는 마법사 열기
       * 관련 문서 열기
    * 이전 단계로 **돌아갑니다**
-   * 워크플로우에 대한 페이로드를 확인합니다
+   * 워크플로에 대한 페이로드를 확인합니다
    * 항목에서 프로젝트를 생성합니다
 
    >[!NOTE]
    >
    >자세한 내용은 다음을 참조하십시오.
    >
-   >* 워크플로우 항목 - [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)
+   >* 워크플로 항목 - [워크플로에 참여](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
@@ -147,7 +147,7 @@ AEM 알림 받은 편지함 열기
 
    ![받은 편지함 작업 위임](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
-   대화 상자, 마법사, 문서 페이지가 열렸는지 여부에 따라 다음을 수행할 수 있습니다.
+   대화 상자, 마법사, 문서 페이지가 열렸는지 여부에 따라 다음과 같은 작업을 수행할 수 있습니다.
 
    * 적절한 작업을 확인합니다(예: 재지정).
    * 작업을 취소합니다
@@ -166,7 +166,7 @@ AEM 알림 받은 편지함 열기
       * **제목**
       * **프로젝트**
       * **할당자**
-      * **컨텐츠** - 페이로드와 유사하며 작업에서 리포지토리의 위치에 대한 참조입니다.
+      * **콘텐츠** - 페이로드와 유사하며 작업에서 저장소의 위치에 대한 참조입니다.
       * **설명**
       * **작업 우선순위**
       * **시작 날짜**
@@ -182,7 +182,7 @@ AEM 알림 받은 편지함 열기
 
 1. **제출**&#x200B;을 선택합니다.
 
-## 프로젝트 제작 {#creating-a-project}
+## 프로젝트 만들기 {#creating-a-project}
 
 특정 작업의 경우, 다음과 같이 해당 작업에 따라 [프로젝트](/help/sites-cloud/authoring/projects/overview.md)를 만들 수 있습니다.
 
@@ -192,9 +192,9 @@ AEM 알림 받은 편지함 열기
    >
    >**받은 편지함**&#x200B;의 **만들기** 옵션을 사용하여 생성된 작업만 프로젝트를 만드는 데 사용할 수 있습니다.
    >
-   >워크플로우의 작업 항목은 프로젝트를 만드는 데 사용할 수 없습니다.
+   >워크플로의 작업 항목은 프로젝트를 만드는 데 사용할 수 없습니다.
 
-1. Select **Create Project** from the toolbar to open the wizard.
+1. 도구 모음에서 **프로젝트 만들기**&#x200B;를 선택하여 마법사를 엽니다.
 1. 해당 템플릿을 선택한 뒤 **다음**&#x200B;을 선택합니다.
 1. 필수 속성을 지정합니다.
 
@@ -224,7 +224,7 @@ AEM 알림 받은 편지함 열기
 
    ![받은 편지함 검색](/help/sites-cloud/authoring/assets/inbox-search.png)
 
-1. 기준의 범위에 따라 나열된 항목을 필터링할 수 있습니다. 예를 들어, 다음과 같이 정의할 수 있습니다.
+1. 기준의 범위에 따라 나열된 항목을 필터링할 수 있습니다. 예를 들어 다음과 같이 정의할 수 있습니다.
 
    ![받은 편지함 검색 필터](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
