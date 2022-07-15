@@ -3,7 +3,7 @@ title: CSV로 내보내기
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 **CSV 보고서 만들기**&#x200B;를 사용하여 페이지에 대한 정보를 로컬 시스템의 CSV 파일로 내보낼 수 있습니다.
 
 * 다운로드한 파일은 `export.csv`라고 합니다.
-* 컨텐츠는 사용자가 선택한 속성에 따라 다릅니다.
+* 콘텐츠는 사용자가 선택한 속성에 따라 다릅니다.
 * 내보내기에 대한 깊이와 함께 경로를 정의할 수 있습니다.
 
 >[!NOTE]
@@ -29,11 +29,11 @@ ht-degree: 100%
       * 수정됨
       * 게시됨
       * 템플릿
-      * 워크플로우
+      * 워크플로
    * 번역
       * 번역됨
    * 분석
-      * 페이지 보기 수
+      * 페이지 조회수
       * 고유 방문자 수
       * 페이지 시간
 * 깊이
