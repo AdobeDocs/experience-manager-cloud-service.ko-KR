@@ -4,9 +4,9 @@ description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2890'
 ht-degree: 17%
 
 ---
@@ -75,7 +75,7 @@ AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠
 
          >[!CAUTION]
          >
-         >속성을 수동으로 업데이트할 때 **속성 이름** 데이터 유형의 경우 이름에는 특수 문자로 라틴 문자, 숫자 및 밑줄 &quot;_&quot;만 포함해야 합니다.
+         >속성을 수동으로 업데이트할 때 **속성 이름** 데이터 유형의 경우 이름에 특수 문자로 A-Z, a-z, 0-9 및 밑줄 &quot;_&quot;만 포함해야 합니다.
          >
          >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우 해당 문자를 제거하거나 업데이트하십시오.
       예:
@@ -141,7 +141,7 @@ AEM의 컨텐츠 조각 모델은 컨텐츠 구조를 정의합니다 [컨텐츠
 
 * **속성 이름**
 
-   데이터 유형에 대해 이 속성을 수동으로 업데이트하는 경우 이름이 **반드시** contain *전용* 특수 문자로 라틴 문자, 숫자 및 밑줄 &quot;_&quot;.
+   데이터 유형에 대해 이 속성을 수동으로 업데이트하는 경우 이름이 **반드시** contain *전용* A-Z, a-z, 0-9 및 밑줄 &quot;_&quot;을 특수 문자로 사용합니다.
 
    >[!CAUTION]
    >
