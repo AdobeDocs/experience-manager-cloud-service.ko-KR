@@ -3,7 +3,7 @@ title: 구성 요소 콘솔
 description: 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색할 수 있습니다.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -23,11 +23,11 @@ ht-degree: 100%
 
 ## 검색 {#search-field}
 
-**컨텐츠 전용** 아이콘(왼쪽 상단)을 사용하여 구성 요소를 검색 및/또는 필터링할 **검색** 패널을 열 수 있습니다.
+**콘텐츠 전용** 아이콘(왼쪽 상단)을 사용하여 구성 요소를 검색 및/또는 필터링할 **검색** 패널을 열 수 있습니다.
 
 ![구성 요소 콘솔에서 검색](/help/sites-cloud/authoring/assets/components-console-search.png)
 
-### 구성 요소 세부 사항 {#component-details}
+### 구성 요소 세부 정보 {#component-details}
 
 특정 구성 요소에 대한 세부 사항을 보려면 필수 리소스를 탭하거나 클릭합니다. 세 탭에서 다음 정보를 제공합니다.
 
