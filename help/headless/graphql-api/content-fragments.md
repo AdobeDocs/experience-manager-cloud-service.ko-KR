@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달용 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 4f81a315d637b567fc6a6038b192f048bb462b4d
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 96%
+source-wordcount: '2708'
+ht-degree: 94%
 
 ---
 
@@ -346,6 +346,10 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오.
 
+>[!NOTE]
+>
+>제공된 변형이 컨텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -450,42 +454,47 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 * 결과 목록을 기대하는 경우:
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
-   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](#sample-all-information-all-cities)를 참조하십시오
+   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
 
 * 논리적 OR을 사용하려는 경우:
    * ` _logOp: OR` 사용
-   * [샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람](#sample-all-persons-jobs-smith)을 참조하십시오
+   * [샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)을 참조하십시오
 
 * 논리적 AND도 존재하지만 (흔히) 암시적
 
 * 콘텐츠 조각 모델 내의 필드에 해당하는 필드 이름을 쿼리할 수 있습니다.
-   * [샘플 쿼리 - 회사 CEO 및 직원의 전체 세부 정보](#sample-full-details-company-ceos-employees)를 참조하십시오
+   * [샘플 쿼리 - 회사 CEO 및 직원의 전체 세부 정보](/help/headless/graphql-api/sample-queries.md#sample-full-details-company-ceos-employees)를 참조하십시오
 
 * 모델의 필드 외에도 일부 시스템 생성 필드(앞에 밑줄 표시)가 있습니다.
 
    * 콘텐츠의 경우:
 
       * `_locale`: 언어 표시, 언어 관리자 기반
-         * [주어진 로케일의 복수 콘텐츠 조각에 대한 샘플 쿼리](#sample-wknd-multiple-fragments-given-locale)를 참조하십시오
+         * [주어진 로케일의 복수 콘텐츠 조각에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)를 참조하십시오
       * `_metadata`: 조각에 대한 메타데이터 표시
-         * [메타데이터에 대한 샘플 쿼리 - GB라는 제목의 상에 대한 메타데이터 나열](#sample-metadata-awards-gb)을 참조하십시오
+         * [메타데이터에 대한 샘플 쿼리 - GB라는 제목의 상에 대한 메타데이터 나열](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)을 참조하십시오
       * `_model`: 콘텐츠 조각 모델에 대한 쿼리 허용(경로 및 제목)
-         * [모델의 콘텐츠 조각 모델에 대한 샘플 쿼리](#sample-wknd-content-fragment-model-from-model)를 참조하십시오
+         * [모델의 콘텐츠 조각 모델에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)를 참조하십시오
       * `_path`: 저장소 내의 콘텐츠 조각에 대한 경로
-         * [샘플 쿼리 - 단일 특정 도시 조각](#sample-single-specific-city-fragment)을 참조하십시오
+         * [샘플 쿼리 - 단일 특정 도시 조각](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)을 참조하십시오
       * `_reference`: 참조 표시, 서식 있는 텍스트 편집기에 인라인 참조 포함
-         * [프리페치된 참조가 포함된 복수 콘텐츠 조각에 대한 샘플 쿼리](#sample-wknd-multiple-fragments-prefetched-references)를 참조하십시오
+         * [프리페치된 참조가 포함된 복수 콘텐츠 조각에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)를 참조하십시오
       * `_variation`: 콘텐츠 조각 내 특정 변형 표시
+
+         >[!NOTE]
+         >
+         >제공된 변형이 컨텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
+
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](#sample-cities-named-variation)를 참조하십시오
    * 작업:
 
       * `_operator`: 특정 연산자 적용 - `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * [샘플 쿼리 - 이름이 “Jobs”가 아닌 모든 사람](#sample-all-persons-not-jobs)을 참조하십시오
-         * [샘플 쿼리 - `_path`가 특정 접두사로 시작하는 모든 모험](#sample-wknd-all-adventures-cycling-path-filter)을 참조하십시오
+         * [샘플 쿼리 - 이름이 “Jobs”가 아닌 모든 사람](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)을 참조하십시오
+         * [샘플 쿼리 - `_path`가 특정 접두사로 시작하는 모든 모험](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)을 참조하십시오
       * `_apply`: 특정 조건 적용. 예: `AT_LEAST_ONCE`
-         * [샘플 쿼리 - 적어도 한 번은 발생해야 하는 항목이 있는 배열 필터링](#sample-array-item-occur-at-least-once)을 참조하십시오
+         * [샘플 쿼리 - 적어도 한 번은 발생해야 하는 항목이 있는 배열 필터링](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)을 참조하십시오
       * `_ignoreCase`: 쿼리할 때 대소문자 무시
-         * [샘플 쿼리 - 대소문자에 관계없이 이름에 SAN이 있는 모든 도시](#sample-all-cities-san-ignore-case)를 참조하십시오
+         * [샘플 쿼리 - 대소문자에 관계없이 이름에 SAN이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)를 참조하십시오
 
 
 
@@ -498,7 +507,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 * GraphQL 공용 구조체 형식이 지원됩니다.
 
    * `... on` 사용
-      * [콘텐츠 참조가 있는 특정 모델의 콘텐츠 조각에 대한 샘플 쿼리](#sample-wknd-fragment-specific-model-content-reference)를 참조하십시오
+      * [콘텐츠 참조가 있는 특정 모델의 콘텐츠 조각에 대한 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-content-reference)를 참조하십시오
 
 * 중첩된 조각 쿼리 시 대체:
 
