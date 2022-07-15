@@ -1,9 +1,9 @@
 ---
 title: 계정 환경 구성
-description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다
+description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 **사용자 설정** 대화 상자에서는 다음에 액세스할 수 있습니다.
 
-* 가장 대상 
+* 가장 대상
    * 가장 대상 기능을 사용하면 사용자는 다른 사용자를 대신하여 작업할 수 있습니다. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * 프로필
    * 사용자 설정을 연결하는 편리한 링크를 제공합니다. <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
@@ -54,7 +54,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
       * 현재 창에 페이지가 열립니다.
 
 
-* **자산에 대한 데스크톱 작업 표시**
+* **에셋에 대한 데스크탑 작업 표시**
 
    이 옵션을 사용하려면 AEM 데스크탑 앱을 사용해야 합니다.
 
@@ -80,16 +80,16 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * **단축키 사용**
 
-   AEM에서는 작성의 효율성을 개선하는 다양한 키보드 단축키를 지원합니다.
+   AEM은 작성의 효율성을 개선하는 다양한 키보드 단축키를 지원합니다.
 
    * [페이지 편집을 위한 키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [콘솔용 키보드 단축키](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
    키보드 단축키를 사용할 수 있도록 합니다. 기본적으로 사용할 수 있지만 사용자에게 특정 액세스 가능성 요구 사항이 있는 경우처럼 원하는 경우에는 사용하지 않도록 설정할 수 없습니다.
 
-* **자산 홈페이지 활성화**
+* **에셋 홈페이지 활성화**
 
-   이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
+   이 선택 사항은 시스템 관리자가 전체 조직에 대해 [에셋 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
 
 * **Stock 구성**
 
