@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 17%
+source-wordcount: '908'
+ht-degree: 13%
 
 ---
 
@@ -44,8 +44,7 @@ ht-degree: 17%
 
    >[!IMPORTANT]
    >
-   >로컬 환경에 속하는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** Cloud Service 인스턴스에서 컨텐츠를 전송하는 그룹입니다. AEM 관리자 그룹에 속하지 않는 경우 수집을 시작하려고 하면 아래에 표시된 오류가 표시됩니다.
-   >![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >로컬 환경에 속하는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** 대상 Cloud Service 작성자 서비스의 그룹입니다. 수집을 시작할 수 없는 경우 다음을 참조하십시오. [수집을 시작할 수 없음](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 자세한 내용
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ ht-degree: 17%
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## 문제 해결 {#troubleshooting}
 
+### CAM에서 마이그레이션 토큰을 검색할 수 없습니다. {#cam-unable-to-retrieve-the-migration-token}
+
+사용자를 포함하여 다양한 이유로 마이그레이션 토큰의 자동 검색이 실패할 수 있습니다 [Cloud Manager를 통해 IP 허용 목록 설정](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 설정 및 해제 할 수 있습니다.  이러한 시나리오에서는 수집을 시작하려고 하면 다음 대화 상자가 표시됩니다.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+대화 상자에서 &quot;토큰 가져오기&quot; 링크를 클릭하여 마이그레이션 토큰을 수동으로 검색해야 합니다. 그러면 토큰이 표시되는 다른 탭이 열립니다. 그런 다음 토큰을 복사하여 **마이그레이션 토큰 입력** 필드. 이제 수집을 시작할 수 있습니다.
+
+>[!NOTE]
+>
+>토큰은 로컬 그룹에 속하는 사용자가 사용할 수 있습니다 **AEM 관리자** 대상 Cloud Service 작성자 서비스의 그룹입니다.
+
+### 수집을 시작할 수 없음 {#unable-to-start-ingestion}
+
+로컬 환경에 속하는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** 대상 Cloud Service 작성자 서비스의 그룹입니다. AEM 관리자 그룹에 속하지 않는 경우 수집을 시작하려고 하면 아래에 표시된 오류가 표시됩니다. 관리자에게 사용자를 로컬 그룹에 추가하도록 요청할 수 있습니다 **AEM 관리자** 토큰에 붙여넣을 수 있는 토큰 자체를 요청하거나 **마이그레이션 토큰 입력** 필드.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## 다음 단계 {#whats-next}
 
