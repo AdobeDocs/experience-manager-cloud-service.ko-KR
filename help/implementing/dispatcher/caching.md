@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
+source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2591'
+ht-degree: 1%
 
 ---
 
@@ -205,36 +205,232 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 
 이전 AEM 버전과 마찬가지로 페이지를 게시하거나 게시 취소하면 Dispatcher 캐시에서 콘텐츠가 지워집니다. 캐싱 문제가 의심되는 경우 고객은 해당 페이지를 다시 게시하고 ServerAlias localhost와 일치하는 가상 호스트를 사용할 수 있는지 확인해야 합니다. 이 호스트는 디스패처 캐시 무효화에 필요합니다.
 
-
 게시 인스턴스가 작성자로부터 페이지 또는 자산의 새 버전을 받으면 초기화 에이전트를 사용하여 해당 디스패처에서 적절한 경로를 무효화합니다. 업데이트된 경로는 디스패처 캐시에서 해당 상위 항목과 함께 최대 수준에서 제거됩니다(를 사용하여 구성할 수 있습니다. [statefileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
-### 명시적 디스패처 캐시 무효화 {#explicit-invalidation}
+## 디스패처 캐시의 명시적 무효화 {#explicit-invalidation}
 
-일반적으로 Dispatcher에서 콘텐츠를 수동으로 무효화할 필요는 없지만 필요한 경우 무효화할 수 있습니다.
+Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 제어할 것을 권장합니다. 그러나 필요한 경우 Dispatcher에서 직접 콘텐츠를 무효화할 수 있습니다.
+
+다음 목록에는 캐시를 명시적으로 무효화하려 할 수 있는 시나리오가 포함되어 있습니다(선택적으로 무효화 완료를 수신하는 동안).
+
+* 경험 조각이나 컨텐츠 조각과 같은 컨텐츠를 게시한 후 해당 요소를 참조하는 게시된 컨텐츠와 캐시된 컨텐츠를 무효화합니다.
+* 참조된 페이지가 성공적으로 무효화된 경우 외부 시스템에 알림
+
+캐시를 명시적으로 무효화하는 방법에는 두 가지가 있습니다.
+
+* 기본 접근 방법은 작성자의 Sling 컨텐츠 배포(SCD)를 사용하는 것입니다.
+* 복제 API를 사용하여 게시 디스패처 초기화 복제 에이전트를 호출하여
+
+계층 가용성, 이벤트 중복 제거 기능 및 이벤트 처리 보장 측면에서 접근 방식이 다릅니다. 아래 표에는 다음 옵션이 요약되어 있습니다.
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>해당 없음</th>
+    <th>계층 가용성</th>
+    <th>중복 제거 </th>
+    <th>보증 </th>
+    <th>작업 </th>
+    <th>영향 </th>
+    <th>설명 </th>
+  </tr>  
+  <tr>
+    <td>Sling 컨텐츠 배포(SCD) API</td>
+    <td>작성</td>
+    <td>Discovery API를 사용하거나 <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">중복 제거 모드</a>.</td>
+    <td>적어도 한 번</td>
+    <td>
+     <ol>
+       <li>추가</li>
+       <li>삭제</li>
+       <li>무효화</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>계층/통계 수준</li>
+       <li>계층/통계 수준</li>
+       <li>레벨 리소스 전용</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>콘텐츠를 게시하고 캐시를 무효화합니다.</li>
+       <li>컨텐츠를 제거하고 캐시를 무효화합니다.</li>
+       <li>게시하지 않고 콘텐츠를 무효화합니다.</li>
+     </ol>
+     </td>
+  </tr>
+  <tr>
+    <td>복제 API</td>
+    <td>게시</td>
+    <td>모든 게시 인스턴스에서 발생한 이벤트입니다.</td>
+    <td>최선의 노력</td>
+    <td>
+     <ol>
+       <li>활성화</li>
+       <li>비활성화</li>
+       <li>삭제</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>계층/통계 수준</li>
+       <li>계층/통계 수준</li>
+       <li>계층/통계 수준</li>
+     </ol>
+     </td>
+    <td>
+     <ol>
+       <li>콘텐츠를 게시하고 캐시를 무효화합니다.</li>
+       <li>작성자/게시 계층에서 - 컨텐츠를 제거하고 캐시를 무효화합니다.</li>
+       <li><p><strong>작성 계층에서</strong> - 컨텐츠를 제거하고 캐시를 무효화합니다(게시 에이전트의 AEM 작성자 계층에서 트리거된 경우).</p>
+           <p><strong>게시 계층에서</strong> - 캐시만 무효화합니다(플러시 또는 리소스 전용 플러시 에이전트의 AEM 게시 계층에서 트리거된 경우).</p>
+       </li>
+     </ol>
+     </td>
+  </tr>
+  </tbody>
+</table>
+
+캐시 무효화와 직접 관련된 두 가지 작업은 SCD(Sling Content Distribution) API Invalidate 및 Replication API Deactivate입니다.
+
+또한, 테이블에서, 우리는 그것을 관찰합니다.
+
+* SCD API는 정확한 지식이 필요한 외부 시스템과 동기화하는 등 모든 이벤트를 보장해야 할 때 필요합니다. 무효화 호출 시 게시 계층 업스케일링 이벤트가 있는 경우 각 새 게시가 무효화를 처리할 때 추가 이벤트가 발생합니다.
+
+* 복제 API를 사용하는 것은 일반적인 사용 사례는 아니지만 캐시를 무효화하는 트리거가 작성 계층이 아니라 게시 계층에서 가져오는 경우에 사용해야 합니다. 이 기능은 Dispatcher TTL이 구성된 경우 유용합니다.
+
+마지막으로 디스패처 캐시를 무효화하려는 경우 권장되는 옵션은 작성자에서 SCD API 무효화 작업을 사용하는 것입니다. 또한 이벤트를 수신하여 추가로 다운스트림 작업을 트리거할 수도 있습니다.
+
+### Sling 컨텐츠 배포(SCD) {#sling-distribution}
 
 >[!NOTE]
->AEM as a Cloud Service 이전에는 디스패처 캐시를 무효화하는 두 가지 방법이 있었습니다.
->
->1. 게시 디스패처 초기화 에이전트를 지정하여 복제 에이전트를 호출합니다
->2. 직접 호출 `invalidate.cache` API(예: `POST /dispatcher/invalidate.cache`)
+>아래 표시된 지침을 사용할 때는 로컬이 아니라 AEM Cloud Service 개발 환경에서 사용자 지정 코드를 테스트해야 합니다.
 
->
->디스패처의 `invalidate.cache` API 접근 방식은 특정 디스패처 노드만 처리하므로 더 이상 지원되지 않습니다. AEM as a Cloud Service은 개별 노드 수준이 아니라 서비스 수준에서 작동하므로 [AEM에서 캐시된 페이지 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) AEM as a Cloud Service 페이지는 더 이상 유효하지 않습니다.
+작성자에서 SCD 작업을 사용할 때 구현 패턴은 다음과 같습니다.
 
-복제 초기화 에이전트를 사용해야 합니다. 이 작업은 를 사용하여 수행할 수 있습니다. [복제 API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). 플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트를 실행하는 게시 서비스와 일치하면서 디스패처를 가리키도록 사전 구성되어 있습니다. 플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우에 의해 트리거될 수 있습니다.
+1. 작성자에서 사용자 지정 코드를 작성하여 sling 컨텐츠 배포를 호출합니다 [API](https://sling.apache.org/documentation/bundles/content-distribution.html), 경로 목록으로 무효화 작업 전달:
+
+```
+@Reference
+private Distributor distributor;
+
+ResourceResolver resolver = ...; // the resource resolver used for authorizing the request
+String agentName = "publish";    // the name of the agent used to distribute the request
+
+String pathToInvalidate = "/content/to/invalidate";
+DistributionRequest distributionRequest = new SimpleDistributionRequest(DistributionRequestType.INVALIDATE, false, pathToInvalidate);
+distributor.distribute(agentName, resolver, distributionRequest);
+```
+
+* (선택 사항) 모든 Dispatcher 인스턴스에 대해 무효화되는 리소스를 반영하는 이벤트를 수신합니다.
+
+
+```
+package org.apache.sling.distribution.journal.shared;
+
+import org.apache.sling.discovery.DiscoveryService;
+import org.apache.sling.distribution.journal.impl.event.DistributionEvent;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.event.Event;
+import org.osgi.service.event.EventHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import static org.apache.sling.distribution.DistributionRequestType.INVALIDATE;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_PATHS;
+import static org.apache.sling.distribution.event.DistributionEventProperties.DISTRIBUTION_TYPE;
+import static org.apache.sling.distribution.event.DistributionEventTopics.AGENT_PACKAGE_DISTRIBUTED;
+import static org.osgi.service.event.EventConstants.EVENT_TOPIC;
+
+@Component(immediate = true, service = EventHandler.class, property = {
+        EVENT_TOPIC + "=" + AGENT_PACKAGE_DISTRIBUTED
+})
+public class InvalidatedHandler implements EventHandler {
+    private static final Logger LOG = LoggerFactory.getLogger(InvalidatedHandler.class);
+
+    @Reference
+    private DiscoveryService discoveryService;
+
+    @Override
+    public void handleEvent(Event event) {
+
+        String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
+
+        if (INVALIDATE.name().equals(distributionType)) {
+            boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
+            // process the OSGi event on the leader author instance
+            if (isLeader) {
+                String[] paths = (String[]) event.getProperty(DISTRIBUTION_PATHS);
+                String packageId = (String) event.getProperty(DistributionEvent.PACKAGE_ID);
+                invalidated(paths, packageId);
+            }
+        }
+    }
+
+    private void invalidated(String[] paths, String packageId) {
+        // custom logic
+        LOG.info("Successfully applied package with id {}, paths {}", packageId, paths);
+    }
+}
+```
+
+<!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
+
+* (선택 사항) `invalidated(String[] paths, String packageId)` 메서드를 사용합니다.
+
+>[!NOTE]
+>
+>디스패처가 무효화되면 Adobe CDN이 플러시되지 않습니다. Adobe 관리 CDN은 TTL을 준수하므로 플러시할 필요가 없습니다.
+
+### 복제 API {#replication-api}
+
+다음은 복제 API 비활성화 작업을 사용할 때의 구현 패턴입니다.
+
+1. 게시 계층에서 복제 API를 호출하여 게시 디스패처 초기화 복제 에이전트를 트리거합니다.
+
+플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트와 함께 실행 중인 게시 서비스와 일치하는 디스패처를 가리키도록 미리 구성되어 있습니다.
+
+플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우를 기반으로 사용자 지정 코드에 의해 트리거될 수 있습니다.
+
+```
+String[] paths = …
+ReplicationOptions options = new ReplicationOptions();
+options.setSynchronous(true);
+options.setFilter( new AgentFilter {
+  public boolean isIncluded (Agent agent) {
+   return agent.getId().equals(“flush”);
+  }
+});
+
+Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
+```
+
+<!-- In general, it will not be necessary to manually invalidate content in the dispatcher, but it is possible if needed.
+
+>[!NOTE]
+>Prior to AEM as a Cloud Service, there were two ways of invalidating the dispatcher cache.
+>
+>1. Invoke the replication agent, specifying the publish dispatcher flush agent
+>2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
+>
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+
+The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
 <!-- Need to find a new link and/or example -->
 <!-- 
 and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
--->
 
-아래 표시된 다이어그램은 이를 보여줍니다.
+The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-디스패처 캐시가 지워지지 않을 우려가 있는 경우 문의하십시오. [고객 지원](https://helpx.adobe.com/support.ec.html) 필요한 경우 디스패처 캐시를 플러시할 수 있는 사람.
+If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
-Adobe 관리 CDN은 TTL을 준수하므로 플러시할 필요가 없습니다. 만약 문제가 의심된다면 [고객 지원 문의](https://helpx.adobe.com/support.ec.html) 필요에 따라 Adobe 관리 CDN 캐시를 플러시할 수 있는 사용자를 지원합니다.
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## 클라이언트 측 라이브러리 및 버전 일관성 {#content-consistency}
 
