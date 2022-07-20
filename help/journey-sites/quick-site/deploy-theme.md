@@ -3,8 +3,8 @@ title: 맞춤화된 테마 배포
 description: 파이프라인을 사용하여 사이트 테마를 배포하는 방법에 대해 알아봅니다.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1027'
 ht-degree: 100%
 
 ---
