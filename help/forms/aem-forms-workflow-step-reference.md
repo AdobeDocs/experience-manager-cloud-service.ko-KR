@@ -2,7 +2,8 @@
 title: '워크플로우를 다른 사용자에게 할당하고, 이메일을 보내고, 워크플로우에서 Adobe Sign을 사용하는 방법 '
 description: Forms 중심의 워크플로우를 통해 적응형 Forms 기반 워크플로우를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색 및 여러 데이터 소스로 보내고, 이메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
+google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
+source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 1%
@@ -166,7 +167,7 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
 * **[!UICONTROL 워크플로우 메타데이터]**: 사용할 값이 워크플로우 메타데이터 속성에 저장되면 옵션을 사용합니다. 옵션을 선택한 후 워크플로우 메타데이터 옵션 아래의 빈 텍스트 상자에 메타데이터 속성 이름을 입력합니다. 예를 들어 emailAddress가 있습니다.
 
 <!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
-* **[!UICONTROL 이미지]**: 이메일에 이미지를 포함하려면 옵션을 사용합니다. 옵션을 선택한 후 이미지를 찾아 선택합니다. 이미지 옵션은 이메일 템플릿에서 사용할 수 있는 이미지 태그(&lt;img src=&quot;*&quot; />)에만 사용할 수 있습니다.
+* **[!UICONTROL 이미지]**: 이메일에 이미지를 포함하려면 옵션을 사용합니다. 옵션을 선택한 후 이미지를 찾아 선택합니다. 이미지 옵션은 이메일 템플릿에서 사용할 수 있는 이미지 태그(&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>)에만 사용할 수 있습니다.&#42;
 
 **[!UICONTROL 보낸 사람 / 받는 사람의 이메일 주소]**: 을(를) 선택합니다 **[!UICONTROL 리터럴]** 이메일 주소를 수동으로 지정하거나 선택하는 옵션 **[!UICONTROL 워크플로우 메타데이터에서 검색]** 메타데이터 속성에서 이메일 주소를 검색하는 옵션입니다. 에 대한 메타데이터 속성 배열 목록을 지정할 수도 있습니다 **[!UICONTROL 워크플로우 메타데이터에서 검색]** 선택 사항입니다. 을(를) 선택합니다 **[!UICONTROL 변수]** 문자열 데이터 유형의 변수에 저장된 값에서 이메일 주소를 검색하는 옵션입니다.
 
