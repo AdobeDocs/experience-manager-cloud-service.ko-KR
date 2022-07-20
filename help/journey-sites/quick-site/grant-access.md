@@ -3,8 +3,8 @@ title: 프론트엔드 개발자에게 액세스 권한 부여
 description: AEM 사이트 git 저장소 및 파이프라인에 액세스할 수 있도록 프론트엔드 개발자를 Cloud Manager에 온보드합니다.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: tm+mt
-source-wordcount: '785'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
