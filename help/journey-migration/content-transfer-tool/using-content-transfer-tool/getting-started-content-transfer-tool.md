@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구 시작하기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
+source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1341'
 ht-degree: 9%
 
 ---
@@ -44,6 +44,18 @@ ht-degree: 9%
 
 >[!NOTE]
 >다음과 같은 경우 `HTTP/2 200` 이(가) 수신되면 AEM as a Cloud Service에 대한 연결이 성공적으로 수행되었습니다.
+
+### SSL 로깅 활성화 {#enable-ssl-logging}
+
+SSL/TLS 연결 문제를 이해하는 것이 어려울 수 있습니다. 추출 프로세스 중에 연결 문제를 해결하기 위해 다음 단계에 따라 소스 AEM 환경의 시스템 콘솔을 통해 SSL 로깅을 활성화할 수 있습니다.
+
+1. 다음 위치로 이동하여 소스 인스턴스에서 Adobe Experience Manager 웹 콘솔로 이동합니다 **도구 - 작업 - 웹 콘솔** 또는에서 URL로 바로 이동 *https://serveraddress:serverport/system/console/configMgr*
+1. 검색 대상 **컨텐츠 전송 도구 추출 서비스 구성**
+1. 연필 아이콘 버튼을 사용하여 구성 값을 편집합니다
+1. 를 활성화합니다 **추출에 대한 SSL 로깅 활성화** 설정 후 키를 누릅니다 **저장**:
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
 
 ## 컨텐츠 전송 도구 실행 {#running-tool}
 
