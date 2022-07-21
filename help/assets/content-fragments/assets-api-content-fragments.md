@@ -3,9 +3,9 @@ title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 컨텐츠 
 description: AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 
 
 예, [단일 페이지 애플리케이션(SPA)](/help/implementing/developing/hybrid/introduction.md), 프레임워크 기반 또는 사용자 지정 환경에서는 HTTP API를 통해 제공되는 컨텐츠(일반적으로 JSON 형식)가 필요합니다.
 
-While [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 는 이 용도로 필요한 읽기 작업을 제공할 수 있고 사용자 지정할 수 있는 매우 포괄적이고 유연한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
+While [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 이 용도로 필요한 읽기 작업을 제공할 수 있고 사용자 지정할 수 있는 매우 포괄적이고 유연한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 먼저 포함할 필요 없이 자산(예: 이미지 및 컨텐츠 조각)에 직접 액세스하여 직렬화된 JSON 형식으로 콘텐츠를 제공할 수 있습니다.
 
@@ -47,7 +47,7 @@ Assets REST API를 사용하면 기존 자산, 컨텐츠 조각 및 폴더를 �
 
 * 구현 [사이렌 형식](https://github.com/kevinswiber/siren)
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전을 바로 설치할 때마다 사용할 수 있습니다.
 
@@ -255,47 +255,6 @@ A [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 >[!NOTE]
 >
 >자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 특히, [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
-
-### 읽기/전달 {#read-delivery}
-
-사용 방법:
-
-`GET /{cfParentPath}/{cfName}.json`
-
-예:
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-응답은 컨텐츠 조각에서와 같이 구조화된 컨텐츠와 함께 일련화된 JSON입니다. 참조는 참조 URL로 전달됩니다.
-
-두 가지 유형의 읽기 작업이 가능합니다.
-
-* 특정 컨텐츠 조각을 경로별로 읽으면 컨텐츠 조각의 JSON 표현이 반환됩니다.
-* 경로별 컨텐츠 조각 폴더 읽기: 이렇게 하면 폴더 내에 있는 모든 컨텐츠 조각의 JSON 표현이 반환됩니다.
-
-### 만들기 {#create}
-
-사용 방법:
-
-`POST /{cfParentPath}/{cfName}`
-
-본문에는 컨텐츠 조각 요소에서 설정해야 하는 초기 컨텐츠를 포함하여 만들 컨텐츠 조각의 JSON 표현이 포함되어 있어야 합니다. 을(를) 설정해야 합니다 `cq:model` 속성 및 유효한 컨텐츠 조각 모델을 가리켜야 합니다. 실패하면 오류가 발생합니다. 헤더를 추가해야 합니다 `Content-Type` 설정됨 `application/json`.
-
-### 업데이트 {#update}
-
-사용 방법
-
-`PUT /{cfParentPath}/{cfName}`
-
-본문에는 주어진 컨텐츠 조각에 대해 업데이트할 사항에 대한 JSON 표현이 포함되어 있어야 합니다.
-
-컨텐츠 조각, 단일 요소 또는 모든 요소 값 및/또는 메타데이터의 제목 또는 설명일 수 있습니다.
-
-### 삭제 {#delete}
-
-사용 방법:
-
-`DELETE /{cfParentPath}/{cfName}`
 
 ## 제한 사항 {#limitations}
 
