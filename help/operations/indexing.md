@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 90%
+source-wordcount: '2251'
+ht-degree: 88%
 
 ---
 
@@ -280,17 +280,7 @@ Adobe에서 “damAssetLucene” 또는 “cqPageLucene” 같은 기본 제공 
 
 기본 제공 색인의 맞춤화가 더 이상 필요하지 않은 경우 기본 제공 색인 정의를 복사해야 합니다. 예를 들어, 이미 `damAssetLucene-8-custom-3`을 배포했지만 더 이상 맞춤화가 필요하지 않고 기본 `damAssetLucene-8` 색인으로 다시 바꾸고 싶다면 `damAssetLucene-8`의 색인 정의가 포함된 색인 `damAssetLucene-8-custom-4`를 추가해야 합니다.
 
-## 색인 최적화 {#index-optimizations}
+## 인덱스 및 쿼리 최적화 {#index-query-optimizations}
 
-Apache Jackrabbit Oak는 유연한 색인 구성을 통해 효율적으로 검색 쿼리를 처리할 수 있도록 해 줍니다. 색인은 특히 대형 저장소에서 중요합니다. 모든 쿼리가 적절한 색인에 의해 지원되는지 확인하십시오. 적절한 색인 없는 쿼리는 수천 개의 노드를 읽을 수 있어 경고로 기록됩니다. 색인 정의를 최적화할 수 있도록 이러한 쿼리가 로그 파일을 분석해 식별되어야 합니다. 자세한 내용은 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=ko#tips-for-creating-efficient-indexes)를 참조하십시오.
-
-### AEM as a Cloud Service에 대한 Lucene 전체 텍스트 색인 {#index-lucene}
-
-전체 텍스트 색인 `/oak:index/lucene-2`는 기본적으로 AEM 저장소의 모든 노드를 색인 지정하기 때문에 크기가 커질 수 있습니다.  이 색인을 폐기하려는 Adobe의 계획에 따라 AEM as a Cloud Service의 제품 부분에서는 이 색인이 더 이상 사용되지 않으며 고객 코드를 실행시키는 데 필요하지 않습니다. 일반적인 Lucene 색인을 가진 AEM as a Cloud Service 환경을 위해 Adobe는 이 색인에 대한 보상과 더 나은 최적화 색인을 사용할 수 있는 접근법을 고객들에게 제공하려고 노력하고 있습니다. Adobe에서 추가적으로 알림이 보내지 않는 한 고객은 어떤 작업도 할 필요가 없습니다. AEM as a Cloud Service 고객은 이 최적화와 관련해 작업이 필요한 경우 Adobe에서 안내를 받게 됩니다. 이 색인이 사용자 정의 쿼리에 필요한 경우 [여기](/help/operations/indexing.md)에 설명된 것과 같이 `/oak:index/acme.lucene-1-custom-1` 등의 다른 이름을 사용해 임시 해결 방법으로 색인의 복사본을 생성해야 합니다
-이 최적화는 기본적으로 온프레미스에 호스팅되거나 Adobe Managed Services에 의해 관리되는 다른 AEM 환경에는 적용되지 않습니다.
-
-## 쿼리 최적화 {#index-query}
-
-**쿼리 성능** 도구를 통해 많이 사용되면서 천천히 움직이는 JCR 쿼리를 확인할 수 있습니다. 또한 쿼리를 분석하고 색인이 이 쿼리에 사용되는지 여부 등의 다양한 정보를 볼 수 있습니다.
-
-AEM 온프레미스와 달리 AEM as a Cloud Service는 더 이상 UI에 **쿼리 성능** 도구를 표시하지 않습니다. 대신 이제 [쿼리](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) 탭의 개발자 콘솔(Cloud Manager)을 통해 사용할 수 있습니다.
+Apache Jackrabbit Oak는 유연한 색인 구성을 통해 효율적으로 검색 쿼리를 처리할 수 있도록 해 줍니다. 색인은 특히 대형 저장소에서 중요합니다. 모든 쿼리가 적절한 색인에 의해 지원되는지 확인하십시오. 적절한 색인 없는 쿼리는 수천 개의 노드를 읽을 수 있어 경고로 기록됩니다.
+자세한 내용은 [이 페이지](best-practices-for-querying-and-indexing.md) 쿼리 및 인덱스를 최적화하는 방법에 대해 설명합니다.
