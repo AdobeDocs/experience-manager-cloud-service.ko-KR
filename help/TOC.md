@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7f8686cb9ca5121d1921dfdd64c152d14ebff2b6
+source-git-commit: e936e15a23fc0630d0e1054b117f141e23ce947d
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3685'
 ht-degree: 92%
 
 ---
@@ -889,7 +889,7 @@ ht-degree: 92%
    + [백업 및 복원](/help/operations/backup.md)
    + [비동기 작업](/help/operations/asynchronous-jobs.md)
    + [일반 Lucene 인덱스 제거](/help/operations/removal-generic-lucene-index.md)
-   + [쿼리 및 색인 생성에 대한 우수 사례](/help/operations/best-practices-for-querying-and-indexing.md)
+   + [쿼리 및 색인 지정 우수 사례](/help/operations/query-and-indexing-best-practices.md)
 + 규정 준수 {#compliance}
    + [AEM as a Cloud Service 규정 준수](/help/compliance/home.md)
    + 데이터 개인정보 보호 및 보호 준비 {#data-privacy}

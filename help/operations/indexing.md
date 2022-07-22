@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인 지정
 description: 콘텐츠 검색 및 색인 지정
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 88%
 
 ---
@@ -283,4 +283,5 @@ Adobe에서 “damAssetLucene” 또는 “cqPageLucene” 같은 기본 제공 
 ## 인덱스 및 쿼리 최적화 {#index-query-optimizations}
 
 Apache Jackrabbit Oak는 유연한 색인 구성을 통해 효율적으로 검색 쿼리를 처리할 수 있도록 해 줍니다. 색인은 특히 대형 저장소에서 중요합니다. 모든 쿼리가 적절한 색인에 의해 지원되는지 확인하십시오. 적절한 색인 없는 쿼리는 수천 개의 노드를 읽을 수 있어 경고로 기록됩니다.
-자세한 내용은 [이 페이지](best-practices-for-querying-and-indexing.md) 쿼리 및 인덱스를 최적화하는 방법에 대해 설명합니다.
+
+자세한 내용은 [이 문서](query-and-indexing-best-practices.md) 쿼리 및 인덱스를 최적화하는 방법에 대한 자세한 정보.
