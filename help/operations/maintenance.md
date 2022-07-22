@@ -2,14 +2,14 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 1dc6e66fdd4115834bc0eba2be25c196cf5362b7
+source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 4%
 
 ---
 
-# AEM as a Cloud Service에서의 유지 관리 작업
+# AEM as a Cloud Service에서의 유지 관리 작업 {#maintenance-tasks-in-aem-as-a-cloud-service}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
@@ -102,7 +102,7 @@ ht-degree: 4%
     <th>유지 관리 창 구성</th>
     <th>구성을 소유하는 사용자</th>
     <th>구성 유형</th>
-    <th>매개 변수</th>
+    <th>매개변수</th>
   </tr>
   <tr>
     <td>일별</td>
