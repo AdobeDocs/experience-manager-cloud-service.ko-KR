@@ -2,10 +2,10 @@
 title: SSL 인증서 관리 소개
 description: Cloud Manager에서 SSL 인증서를 설치하는 셀프 서비스 도구를 제공하는 방법을 알아봅니다.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
+source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 1%
+source-wordcount: '638'
+ht-degree: 2%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 1%
 >id="aemcloud_golive_sslcert"
 >title="SSL 인증서 관리"
 >abstract="Cloud Manager는 사용자를 위한 사이트를 보호하기 위해 SSL 인증서를 설치 및 관리하는 셀프 서비스 도구를 제공하는 방법을 알아봅니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하며 타사 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="SSL 인증서 보기, 업데이트 및 바꾸기"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="SSL 인증서 상태 확인"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="SSL 인증서 보기, 업데이트 및 바꾸기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="SSL 인증서 상태 확인"
 
 Cloud Manager는 사용자를 위한 사이트를 보호하기 위해 SSL 인증서를 설치 및 관리하는 셀프서비스 도구를 제공합니다. Cloud Manager는 플랫폼 TLS 서비스를 사용하여 고객이 소유하며 Let&#39;s Encrypt와 같은 타사 인증 기관에서 얻은 SSL 인증서 및 개인 키를 관리합니다.
 
