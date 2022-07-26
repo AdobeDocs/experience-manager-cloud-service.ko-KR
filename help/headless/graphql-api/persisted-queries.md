@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 48%
+ht-degree: 47%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 48%
 >
 >자세한 내용은 [구성 브라우저에서 콘텐츠 조각 기능 활성화](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)를 참조하십시오.
 >
->적절한 Sites 구성을 위해 **GraphQL 지속 쿼리**&#x200B;를 활성화해야 합니다.
+>다음 **GraphQL 지속적인 쿼리** 적절한 사이트 구성에 대해 를 활성화해야 합니다.
 
 예를 들어 Sites 구성 `my-conf`의 모델 `my-model`을 사용하는 `my-query`라는 특정 쿼리가 있는 경우:
 
@@ -194,9 +194,9 @@ GraphiQL IDE는 다음과 같습니다 **기본** 쿼리를 유지하는 방법 
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 ```
 
-위치 `PERSISTENT_PATH` 은 영구 쿼리가 저장된 위치에 대한 단축된 경로입니다.
+위치 `PERSISTENT_PATH` 는 지속형 쿼리가 저장된 위치에 대한 단축된 경로입니다.
 
-1. 예 `wknd` 구성 이름 및 `plain-article-query` 은 영구 쿼리의 이름입니다. 쿼리를 실행하려면
+1. 예 `wknd` 구성 이름 및 `plain-article-query` 는 지속형 쿼리의 이름입니다. 쿼리를 실행하려면
 
    ```shell
    $ curl -X GET \
@@ -207,7 +207,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
    >[!NOTE]
    >
-   > 쿼리 변수와 값이 올바르게 되어야 합니다. [인코딩됨](#encoding-query-url) 영구적 쿼리를 실행할 때
+   > 쿼리 변수와 값이 올바르게 되어야 합니다. [인코딩됨](#encoding-query-url) 지속형 쿼리를 실행할 때
 
    예:
 
@@ -312,8 +312,8 @@ URL은 다음 부분으로 나눌 수 있습니다.
 
 | URL 부분 | 설명 |
 |----------| -------------|
-| `/graphql/execute.json` | 영구 쿼리 끝점 |
-| `/wknd/adventure-by-path` | 영구 쿼리 경로 |
+| `/graphql/execute.json` | 지속되는 쿼리 끝점 |
+| `/wknd/adventure-by-path` | 지속되는 쿼리 경로 |
 | `%3B` | 인코딩 `;` |
 | `adventurePath` | 쿼리 변수 |
 | `%3D` | 인코딩 `=` |
@@ -332,9 +332,9 @@ URL은 다음 부분으로 나눌 수 있습니다.
 
 지속되는 쿼리는 항상 AEM 작성자 서비스에서 만든 다음, AEM 게시 서비스에 게시(복제)해야 합니다. 자주, 지속적인 쿼리는 로컬 또는 개발 환경과 같은 낮은 환경에서 만들어지고 테스트됩니다. 그런 다음 클라이언트 애플리케이션에서 사용할 수 있도록 프로덕션 AEM 게시 환경에서 사용할 수 있도록 하려면, 지속형 쿼리를 더 높은 수준의 환경으로 프로모션해야 합니다.
 
-### 패키지 영구 쿼리
+### 지속되는 쿼리 패키지
 
-영구 쿼리는 [AEM 패키지](/help/implementing/developing/tools/package-manager.md). 그런 다음 AEM 패키지를 다운로드하여 다른 환경에 설치할 수 있습니다. AEM 패키지는 AEM 작성자 환경에서 AEM 게시 환경으로 복제할 수도 있습니다.
+지속되는 쿼리는 [AEM 패키지](/help/implementing/developing/tools/package-manager.md). 그런 다음 AEM 패키지를 다운로드하여 다른 환경에 설치할 수 있습니다. AEM 패키지는 AEM 작성자 환경에서 AEM 게시 환경으로 복제할 수도 있습니다.
 
 패키지를 만들려면:
 

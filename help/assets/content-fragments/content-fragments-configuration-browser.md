@@ -4,10 +4,10 @@ description: AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 27%
+source-wordcount: '371'
+ht-degree: 32%
 
 ---
 
@@ -20,7 +20,7 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
 컨텐츠 조각을 사용하기 전에 **구성 브라우저** 를 사용하려면 다음을 수행하십시오.
 
 * **컨텐츠 조각 모델** - 필수
-* **GraphQL 영구 쿼리** - 선택 사항
+* **GraphQL 지속적인 쿼리** - 선택 사항
 
 >[!CAUTION]
 >
@@ -63,6 +63,9 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
 1. **만들기**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
    1. **제목**&#x200B;을 지정합니다.
+   1. **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
+      * 제목을 기반으로 자동으로 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
+      * 필요한 경우 조정할 수 있습니다.
    1. 사용을 활성화하려면 를 선택합니다
       * **콘텐츠 조각 모델**
       * **GraphQL 지속 쿼리**

@@ -1,10 +1,11 @@
 ---
 title: 컨텐츠 조각 - 구성 브라우저
 description: 구성 브라우저에서 특정 컨텐츠 조각 기능을 활성화하는 방법을 알아봅니다.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 26%
+source-wordcount: '358'
+ht-degree: 31%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 26%
 컨텐츠 조각을 사용하기 전에 **구성 브라우저** 를 사용하려면 다음을 수행하십시오.
 
 * **컨텐츠 조각 모델** - 필수
-* **GraphQL 영구 쿼리** - 선택 사항
+* **GraphQL 지속적인 쿼리** - 선택 사항
 
 >[!CAUTION]
 >
@@ -60,6 +61,9 @@ ht-degree: 26%
 1. **만들기**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
    1. **제목**&#x200B;을 지정합니다.
+   1. **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
+      * 제목을 기반으로 자동으로 생성되고 [AEM 명명 규칙](/help/implementing/developing/introduction/naming-conventions.md)에 따라 조정됩니다.
+      * 필요한 경우 조정할 수 있습니다.
    1. 사용을 활성화하려면 를 선택합니다
       * **콘텐츠 조각 모델**
       * **GraphQL 지속 쿼리**
