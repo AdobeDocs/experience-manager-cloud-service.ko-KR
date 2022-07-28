@@ -4,10 +4,10 @@ description: AEM에서 기계 번역 및 사람 번역을 만들고 관리하는
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: ht
-source-wordcount: '3863'
-ht-degree: 100%
+source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
+workflow-type: tm+mt
+source-wordcount: '3920'
+ht-degree: 98%
 
 ---
 
@@ -178,6 +178,11 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 ![번역 메모리에 대한 변경 내용 비교](../assets/update-translation-memory-compare.png)
 
 AEM은 번역 관리 시스템에 선택한 문자열을 다시 전송합니다.
+
+* 이 작업은 구성된 TMS(Translation Management Systems)의 번역 메모리에서 기존 문자열의 번역을 업데이트합니다.
+* 새 번역 작업이 생성되지 않습니다.
+* AEM 번역 API를 통해 문자열 값 쌍과 해당 번역을 TMS로 다시 보냅니다.
+* 이 기능을 사용하려면 번역 관리 시스템이 AEM에서 사용하도록 구성되어 있어야 합니다.
 
 ### 페이지 번역 상태 확인 {#check-translation-status}
 
