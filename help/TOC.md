@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자습 리소스 및 설명서 링크
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e936e15a23fc0630d0e1054b117f141e23ce947d
+source-git-commit: f70b361dd58d362338473a2fa213e8604ca2daee
 workflow-type: tm+mt
-source-wordcount: '3685'
+source-wordcount: '3696'
 ht-degree: 92%
 
 ---
@@ -338,6 +338,8 @@ ht-degree: 92%
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Target과 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Adobe Campaign Classic과 통합](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+      + [Adobe Experience Manager 뉴스레터 만들기](/help/sites-cloud/integrating/creating-newsletter.md)
 + 에셋 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [개요 및 새로운 기능](/help/assets/overview.md)
