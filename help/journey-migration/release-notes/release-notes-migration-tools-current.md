@@ -2,9 +2,10 @@
 title: AEM as a Cloud Service 릴리스 2022.7.0의 마이그레이션 도구에 대한 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2022.7.0의 마이그레이션 도구에 대한 릴리스 노트
 feature: Release Information
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
+exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
+source-git-commit: ad9edf7bc164ea7e03496680dff8df6d1ebe266a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '430'
 ht-degree: 9%
 
 ---
@@ -12,6 +13,22 @@ ht-degree: 9%
 # AEM as a Cloud Service 릴리스 2022.7.0의 마이그레이션 도구에 대한 릴리스 노트 {#release-notes}
 
 이 페이지에서는 AEM as a Cloud Service 2022.7.0의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다.
+
+## Best Practices Analyzer {#bpa-release}
+
+### 릴리스 날짜 {#release-date-bpa}
+
+Best Practices Analyzer v2.1.30 릴리스 날짜는 2022년 7월 27일입니다.
+
+### 새로운 기능 {#what-is-new-bpa}
+
+* 이제 BPA는 Total Lucene Index를 제외한 마이그레이션 가능한 총 Lucene Index 크기를 감지하고 보고할 수 있습니다 `/oak:index/lucene` 및 `/oak:index/damAssetLucene`.
+* 사용자 지정 i18n 사전 사용을 감지하고 보고하기 위해 BPA에 새로운 패턴이 추가되었습니다. Translator.html은 AEM as a Cloud Service에서 사용할 수 없으며 사용자 지정 i18n 사전을 Cloud Manager CI/CD 파이프라인을 통해 Git에서 배포해야 합니다.
+
+### 버그 수정 {#bug-fixes-bpa}
+
+* BPA가 컨텐츠 조각에 대한 원래 표현물이 누락되었다고 보고했습니다. 컨텐츠 조각에 표현물이 없으므로 이제 컨텐츠 조각에 대해 이 검사를 건너뜁니다.
+* ACS Commons 결과를 필터링하는 옵션이 BPA UI에서 누락되었습니다. 이 문제가 해결되었습니다.
 
 ## 콘텐츠 전송 도구 {#ctt-release}
 
@@ -44,4 +61,3 @@ Cloud Acceleration Manager 릴리스 날짜는 2022년 7월 15일입니다.
 
 * 이제 Cloud Acceleration Manager에서는 자동 검색이 실패할 때 수집을 시작할 수 있도록 마이그레이션 토큰을 수동으로 검색하는 기능을 제공합니다. 고객이 CAM을 차단하는 IP 허용 목록을 설정하거나 관리자가 아닌 사용자가 수집을 시작하려고 시도하는 경우 자동 검색이 실패할 수 있습니다. 을(를) 참조하십시오. [문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) 추가 정보.
 * 이제 마이그레이션 복잡도 페이지의 긴 테이블을 쉽게 사용할 수 있도록 축소됩니다.
-
