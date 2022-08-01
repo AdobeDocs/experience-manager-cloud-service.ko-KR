@@ -3,9 +3,9 @@ title: 디스패처 도구를 사용하여 확인 및 디버깅
 description: 디스패처 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
+source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2536'
 ht-degree: 2%
 
 ---
@@ -78,6 +78,10 @@ ht-degree: 2%
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
 이러한 파일을 하나 이상 보유할 수 있습니다. 여기에는 다음이 포함됩니다 `<VirtualHost>` 호스트 이름과 일치하고 Apache가 다른 규칙으로 각 도메인 트래픽을 처리할 수 있도록 허용하는 항목입니다. 파일은 `available_vhosts` 디렉토리 및 `enabled_vhosts` 디렉토리. 에서 `.vhost` 파일, rewrites 및 변수와 같은 기타 파일이 포함됩니다.
+
+>[!NOTE]
+>
+>유연한 모드에서는 절대 경로 대신 상대 경로를 사용해야 합니다.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -481,11 +485,15 @@ $ docker exec d75fbd23b29 httpd-test
 새 Cloud Manager 프로그램은 Cloud Manager 2021.7.0 릴리스를 통해 [AEM 원형 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 또는 그 이상이며 **opt-in/USE_SOURCES_DIRECT**. 따라서 의 이전 제한 사항이 제거됩니다 [이전 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 에서는 파일 수 및 크기 때문에 SDK 및 런타임에서 개선된 방식으로 구성을 확인하고 배포합니다. Dispatcher 구성에 이 파일이 없는 경우에는 마이그레이션하는 것이 좋습니다. 안전한 전환을 확인하려면 다음 단계를 사용하십시오.
 
 1. **로컬 테스트.** 최신 Dispatcher 도구 SDK를 사용하여 폴더 및 파일을 추가합니다 `opt-in/USE_SOURCES_DIRECTLY`. 이 문서의 &quot;로컬 유효성 검사&quot; 지침에 따라 디스패처가 로컬로 작동하는지 테스트합니다.
-2. **클라우드 개발 테스트:**
+1. **클라우드 개발 테스트:**
    * 파일 커밋 `opt-in/USE_SOURCES_DIRECTLY` 비프로덕션 파이프라인에 의해 클라우드 개발 환경에 배포되는 git 분기로 이동합니다.
    * Cloud Manager를 사용하여 클라우드 개발 환경에 배포합니다.
    * 철저하게 테스트합니다. 상위 환경에 변경 사항을 배포하기 전에 Apache 및 Dispatcher 구성이 예상대로 작동하는지 확인해야 합니다. 사용자 지정 구성과 관련된 모든 동작을 확인합니다! 배포된 디스패처 구성이 사용자 지정 구성을 반영하지 않는다고 생각되는 경우 고객 지원 티켓을 제출합니다.
-3. **프로덕션에 배포:**
+
+   >[!NOTE]
+   >
+   >유연한 모드에서는 절대 경로 대신 상대 경로를 사용해야 합니다.
+1. **프로덕션에 배포:**
    * 파일 커밋 `opt-in/USE_SOURCES_DIRECTLY` 프로덕션 파이프라인에 의해 클라우드 스테이지 및 프로덕션 환경에 배포되는 git 분기로 이동합니다.
    * Cloud Manager를 사용하여 스테이징에 배포합니다.
    * 철저하게 테스트합니다. 상위 환경에 변경 사항을 배포하기 전에 Apache 및 Dispatcher 구성이 예상대로 작동하는지 확인해야 합니다. 사용자 지정 구성과 관련된 모든 동작을 확인합니다! 배포된 디스패처 구성이 사용자 지정 구성을 반영하지 않는다고 생각되는 경우 고객 지원 티켓을 제출합니다.
