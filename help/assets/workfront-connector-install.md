@@ -4,7 +4,7 @@ description: ' 설치  [!DNL Workfront for Experience Manager enhanced connector
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 6e1408abde71c5400adaeaea130e4b7f9287169a
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 1%
@@ -39,6 +39,7 @@ ht-degree: 1%
    * `/apps/dam/gui/content/foldermetadataschemaeditor`
    * `/apps/dam/cfm/models/editor/components/datatypeproperties`
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
+   * `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
 1. 이 설치에서 Maven 프로젝트를 설정하는 데 필요한 지식이 필요합니다. [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. Maven 프로젝트에 타사 패키지를 포함하는 방법을 이해하려면 다음 리소스를 사용하십시오.
 
