@@ -2,10 +2,10 @@
 title: ' 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]'
 description: ' 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
+source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -15,23 +15,19 @@ ht-degree: 3%
 
 ## 릴리스 날짜 {#release-date}
 
-최신 버전 1.9.1의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2022년 7월 1일입니다.
+최신 버전 1.9.2의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2022년 8월 3일입니다.
 
 ## 릴리스 특징 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음과 같은 개선 사항 및 버그 수정 사항이 포함되어 있습니다.
 
-* Adobe IMS로 마이그레이션된 인스턴스에 대해 Workfront API 키를 사용하는 Experience Manager과 Workfront 애플리케이션 간 인증 지원이 추가되었습니다.
+* 다음 **[!UICONTROL 문서 업로드]** 워크플로우 단계에서 Workfront에 문서를 첨부할 수 없습니다.
 
-* 외부 파일 또는 폴더를 연결하면 Workfront 애플리케이션에서 `SERVER_ERROR` 오류 메시지. 오류 메시지가 API 키의 불일치로 인해 허가되지 않은 예외를 참조합니다.
-
-* 자산에 대한 작업 만들기 워크플로우를 실행하면 로그 메시지에 Null 포인터 예외가 표시됩니다.
-
-* 를 활성화하면 `Replace Spaces with DASH` 구성 옵션이 Experience Manager의 고급 설정에서 제공되면 Workfront에 중복 폴더가 생성됩니다.
+* 다음 **[!UICONTROL 문서 업로드]** 워크플로우 단계에서 Workfront의 작업 및 문제에 문서를 첨부하지 못했습니다. 워크플로우 단계에서는 문서를 프로젝트에 첨부합니다.
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.1 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.2 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 알려진 문제 {#known-issues}
 
@@ -40,6 +36,18 @@ ht-degree: 3%
 * 클래식 Workfront 경험을 사용하는 경우 **[!UICONTROL 보내기]** 선택 사항은 **[!UICONTROL 자세히]** 드롭다운 목록에서 Experience Manager 내에서 대상 대상을 선택할 수 없습니다. 다음 **[!UICONTROL 보내기]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록. 다음 **[!UICONTROL 보내기]** 옵션이 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
 
 ## 이전 릴리스 {#previous-releases}
+
+### 2022년 7월 릴리스 {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 버전 1.9.1에는 다음 업데이트가 포함되어 있습니다.
+
+* Adobe IMS로 마이그레이션된 인스턴스에 대해 Workfront API 키를 사용하는 Experience Manager과 Workfront 애플리케이션 간 인증 지원이 추가되었습니다.
+
+* 외부 파일 또는 폴더를 연결하면 Workfront 애플리케이션에서 `SERVER_ERROR` 오류 메시지. 오류 메시지가 API 키의 불일치로 인해 허가되지 않은 예외를 참조합니다.
+
+* 자산에 대한 작업 만들기 워크플로우를 실행하면 로그 메시지에 Null 포인터 예외가 표시됩니다.
+
+* 를 활성화하면 `Replace Spaces with DASH` 구성 옵션이 Experience Manager의 고급 설정에서 제공되면 Workfront에 중복 폴더가 생성됩니다.
 
 ### 2022년 6월 릴리스 {#june-2022-release}
 
