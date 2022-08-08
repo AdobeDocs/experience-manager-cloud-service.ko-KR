@@ -4,15 +4,15 @@ description: Headless 콘텐츠 전달용 Adobe Experience Manager as a Cloud Se
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # AEM에서 GraphQL 끝점 관리 {#graphql-aem-endpoint}
 
-끝점은 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 이 경로를 사용하여 사용자(또는 앱)는 다음을 수행할 수 있습니다.
+끝점은 AEM용 GraphQL에 액세스하는 데 사용되는 경로입니다. 이 경로를 사용하여 사용자(또는 앱)는 다음과 같은 작업을 수행할 수 있습니다.
 
 * GraphQL 스키마에 액세스,
 * GraphQL 쿼리 보내기,
@@ -45,7 +45,7 @@ AEM용 GraphQL 전역 끝점의 저장소 경로는 다음과 같습니다.
 
 `/content/_cq_graphql/global/endpoint.json`
 
-AEM용 GraphQL의 끝점을 활성화하려면 다음을 수행해야 합니다.
+AEM용 GraphQL의 끝점을 활성화하려면 다음 작업을 수행해야 합니다.
 
 * [GraphQL 끝점 활성화](#enabling-graphql-endpoint)
 * [GraphQL 끝점 게시](#publishing-graphql-endpoint)
@@ -58,9 +58,9 @@ GraphQL 끝점을 활성화하려면 먼저 적절한 구성이 필요합니다.
 >
 >[콘텐츠 조각 모델 사용이 활성화되지 않은](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) 경우 **만들기** 옵션을 사용할 수 없습니다.
 
-해당 끝점을 활성화하려면 다음을 수행하십시오.
+해당 끝점을 활성화하려면 다음 작업을 수행하십시오.
 
-1. 다음으로 이동 **도구**, **일반**&#x200B;를 선택하고 을 선택합니다. **GraphQL**.
+1. **도구**, **일반**&#x200B;으로 이동한 다음 **GraphQL**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택합니다.
 1. **새 GraphQL 끝점 만들기** 대화 상자가 열립니다. 여기에서 다음을 지정할 수 있습니다.
    * **이름**: 끝점의 이름입니다. 어떤 텍스트든 입력할 수 있습니다.
