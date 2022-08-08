@@ -3,9 +3,9 @@ title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2993'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,15 +69,15 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 | 콘솔 | 목적 |
 |---|---|
 | 프로젝트 | 프로젝트 콘솔에서는 프로젝트에 직접 액세스할 수 있습니다. [프로젝트는 가상 대시보드](/help/sites-cloud/authoring/projects/overview.md)로서 팀을 만드는 데 사용할 수 있습니다. 팀을 만든 후에는 공동 목표를 위한 작업을 수행할 수 있도록 이 팀에 리소스, 워크플로 및 작업에 대한 액세스 권한을 부여할 수 있습니다. |
-| 사이트 | Sites 콘솔에서는 AEM 인스턴스에서 실행되는 [사이트를 만들고, 보고, 관리](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)할 수 있습니다. 이 콘솔을 통해 페이지를 만들고, 편집하고, 복사하고, 이동하고, 삭제하며 워크플로를 시작하고, 페이지를 게시할 수 있습니다. |
+| Sites | Sites 콘솔에서는 AEM 인스턴스에서 실행되는 [사이트를 만들고, 보고, 관리](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)할 수 있습니다. 이 콘솔을 통해 페이지를 만들고, 편집하고, 복사하고, 이동하고, 삭제하며 워크플로를 시작하고, 페이지를 게시할 수 있습니다. |
 | 경험 조각 | [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)은 여러 채널 간에 재사용할 수 있으며 변형이 있는 독립형 환경으로, 경험 또는 경험 일부를 반복해서 복사하고 붙여넣는 단조로운 작업을 수행할 필요를 없애줍니다. |
 | 에셋 | 에셋 콘솔을 사용하여 [이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 에셋](/help/assets/overview.md)을 가져오고 관리할 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 사이트에서 이러한 에셋을 사용할 수 있습니다. 또한 에셋 콘솔에서는 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)을 만들고 관리할 수도 있습니다. |
 | 개인화 | [이 콘솔은 타게팅된 콘텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다.](/help/sites-cloud/authoring/personalization/overview.md) |
-| 콘텐츠 조각 | [컨텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md) 페이지에 영향을 받지 않는 컨텐츠를 디자인, 작성, 조정 및 게시할 수 있습니다. 이 도구를 사용하면 여러 위치/여러 채널에서 사용할 수 있도록 구조화된 컨텐츠를 준비할 수 있으며, 페이지 작성과 헤드리스 게재 모두에 이상적입니다. |
+| 콘텐츠 조각 | [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)을 사용하여 페이지 독립적인 콘텐츠를 디자인하고, 만들고, 선별하고, 게시할 수 있습니다. 이를 통해 페이지 작성과 Headless 전달 모두에 이상적인, 여러 위치/여러 채널에서 사용할 수 있도록 구조화된 콘텐츠를 준비할 수 있습니다. |
 
 ## 도구 패널 {#tools-panel}
 
-도구 패널에는 유사한 도구 콘솔을 함께 그룹화하는 다양한 카테고리가 포함된 사이드 패널이 있습니다. 도구 콘솔에서는 웹 사이트, 디지털 에셋 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구 및 콘솔에 액세스할 수 있습니다.<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+도구 패널에는 유사한 도구 콘솔을 함께 그룹화하는 다양한 범주가 포함된 사이드 패널이 있습니다. 도구 콘솔에서는 웹 사이트, 디지털 에셋 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구 및 콘솔에 액세스할 수 있습니다.<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![도구 패널](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -460,7 +460,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ![참조 예](/help/sites-cloud/authoring/assets/references-example.png)
 
-### 사이트 {#site}
+### Site {#site}
 
 **사이트**&#x200B;에는 [사이트 템플릿을 사용하여 생성한](/help/sites-cloud/administering/site-creation/create-site.md) 사이트의 세부 정보가 표시됩니다.
 
