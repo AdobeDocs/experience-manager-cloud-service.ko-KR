@@ -4,9 +4,9 @@ description: Headless 콘텐츠 전달용 AEM GraphQL API와 함께 Adobe Experi
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 4f81a315d637b567fc6a6038b192f048bb462b4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2708'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ AEM에서 GraphQL API를 사용하면 Headless CMS 구현에서 JavaScript 클�
 >
 >GraphQL은 현재 Adobe Experience Manager(AEM) as a Cloud Service의 두 가지 (별도) 시나리오에서 사용됩니다.
 >
->* [AEM Commerce는 GraphQL을 통해 Commerce 플랫폼의 데이터를 사용합니다](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce는 GraphQL을 통해 상거래 플랫폼의 데이터를 사용합니다](/help/commerce-cloud/integrating/magento.md).
 >* AEM 콘텐츠 조각은 AEM GraphQL API(표준 GraphQL 기반의 맞춤화된 구현)와 함께 작동하여 애플리케이션에서 사용할 구조화된 콘텐츠를 제공합니다.
 
 
@@ -105,21 +105,21 @@ GraphQL을 사용하여 다음 중 하나를 반환하는 쿼리를 수행할 �
 
 * [캐시된 지속 쿼리](/help/headless/graphql-api/persisted-queries.md)
 
-### GraphQL 쿼리 우수 사례(Dispatcher) {#graphql-query-best-practices}
+### GraphQL 쿼리 모범 사례(Dispatcher) {#graphql-query-best-practices}
 
-다음 [지속되는 쿼리](/help/headless/graphql-api/persisted-queries.md) 권장되는 방법은 다음과 같습니다.
+다음과 같은 이유로 [지속 쿼리](/help/headless/graphql-api/persisted-queries.md)를 사용하는 것이 좋습니다.
 
-* 캐시됩니다
+* 캐시됩니다.
 * AEM as a Cloud Service을 통해 중앙 집중식으로 관리됩니다.
 
-직접 및/또는 POST 쿼리는 캐시되지 않으므로 권장되지 않으므로 기본 인스턴스에서 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
+직접 및/또는 POST 쿼리는 캐시되지 않으므로 권장되지 않습니다. 따라서 기본 인스턴스에서는 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
 
 >[!NOTE]
 >
->Dispatcher에서 직접 및/또는 POST을 허용하려면 시스템 관리자에게 다음 작업을 요청할 수 있습니다.
+>Dispatcher에서 직접 및/또는 POST 쿼리를 허용하려면 시스템 관리자에게 다음 작업을 요청할 수 있습니다.
 >
->* 라는 Cloud Manager 환경 변수를 만듭니다. `ENABLE_GRAPHQL_ENDPOINT`
->* 값 사용 `true`
+>* `ENABLE_GRAPHQL_ENDPOINT`라는 Cloud Manager 환경 변수 생성
+>* (`true` 값 포함)
 
 
 >[!NOTE]
@@ -134,10 +134,10 @@ GraphQL을 사용하여 다음 중 하나를 반환하는 쿼리를 수행할 �
 
 사용 사례는 AEM as a Cloud Service 환경 유형에 따라 달라질 수 있습니다.
 
-* Publish 환경, 다음을 수행하는 데 사용됨:
+* Publish 환경, 다음과 같은 작업을 수행하는 데 사용됨:
    * JS 애플리케이션용 쿼리 데이터(표준 사용 사례)
 
-* Author 환경, 다음을 수행하는 데 사용됨:
+* Author 환경, 다음과 같은 작업을 수행하는 데 사용됨:
    * “콘텐츠 관리 목적”용 쿼리 데이터:
       * AEM as a Cloud Service의 GraphQL은 현재 읽기 전용 API입니다.
       * REST API는 CR(u)D 작업에 사용할 수 있습니다.
@@ -160,7 +160,7 @@ GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해
 >
 >즉, 이런 식으로 유출될 수 있기 때문에 민감한 데이터가 없는지 확인해야 합니다. 예를 들어 모델 정의에서 필드 이름으로 나타날 수 있는 정보가 여기에 포함됩니다.
 
-예를 들어 사용자가 `Article`이라는 콘텐츠 조각 모델을 만든 경우 AEM은 `ArticleModel` 유형의 개체 `article` that is of a type 를 생성합니다. 이 유형 내의 필드는 모델에서 정의된 필드 및 데이터 형식에 해당합니다.
+예를 들어 사용자가 `Article`이라는 콘텐츠 조각 모델을 만든 경우 AEM은 `ArticleModel` 유형의 개체인 `article`을 생성합니다. 이 유형 내의 필드는 모델에서 정의된 필드 및 데이터 형식에 해당합니다.
 
 1. 콘텐츠 조각 모델:
 
@@ -348,7 +348,7 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 >[!NOTE]
 >
->제공된 변형이 컨텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
+>지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -483,7 +483,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
          >[!NOTE]
          >
-         >제공된 변형이 컨텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
+         >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
 
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](#sample-cities-named-variation)를 참조하십시오
    * 작업:
