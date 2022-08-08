@@ -3,9 +3,9 @@ title: 더 이상 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 API에 관련된 릴리스 정보입니다.'
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1051'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 95%
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
-    <td>2015년</td>
+    <td>2015</td>
     <td>7/30/21</td>
   </tr>
   <tr>
     <td>com.day.cq.jcrclustersupport</td>
     <td>대안으로 Sling의 검색 API를 사용하십시오.</td>
-    <td>2015년</td>
+    <td>2015</td>
     <td>제거됨</td>
   </tr>
   <tr>
@@ -182,7 +182,7 @@ ht-degree: 95%
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1은 2015년에 수명이 종료되었으며 더 이상 지원되지 않습니다.</td>
+    <td>Apache Log4j 1은 2015년에 서비스가 종료되었으며 더 이상 지원되지 않습니다.</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
@@ -194,7 +194,7 @@ ht-degree: 95%
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>보안 취약성 때문에 Handlebars 업그레이드는 4.0.5에서 4.3.0으로 필요합니다. 이 패키지는 업그레이드된 handlebars에 더 이상 없습니다.</td>
+    <td>보안 취약성으로 인해 Handlebars를 4.0.5에서 4.3.0으로 업그레이드해야 합니다. 업그레이드된 Handlebars에는 이 패키지가 더 이상 존재하지 않습니다.</td>
     <td>5/5/2022</td>
     <td>8/5/2022</td>
   </tr>
