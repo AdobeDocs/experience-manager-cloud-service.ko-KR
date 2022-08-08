@@ -3,9 +3,9 @@ title: 콘텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1164'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 2. **구성 요소** 브라우저 또는 **새 구성 요소 삽입**&#x200B;에서 **콘텐츠 조각** 구성 요소를 추가합니다.
 3. 다음과 같은 작업을 수행할 수 있습니다.
    * **에셋** 브라우저를 열고 **콘텐츠 조각**&#x200B;을 필터링합니다(기본값은 이미지). 그런 다음 필수 조각을 구성 요소 인스턴스에 드래그합니다.
-   * 콘텐츠 조각 구성 요소를 선택한 다음, 도구 모음에서 **구성**&#x200B;을 선택하십시오. 대화 상자에서 선택 대화 상자를 열어 필요한 **콘텐츠 조각**&#x200B;을 찾아 선택할 수 있습니다.
+   * 콘텐츠 조각 구성 요소를 선택한 다음 도구 모음에서 **구성**&#x200B;을 선택하십시오. 대화 상자에서 선택 대화 상자를 열어 필요한 **콘텐츠 조각**&#x200B;을 찾아 선택할 수 있습니다.
 
    >[!NOTE]
    >
@@ -121,7 +121,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 * [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 구성 요소를 추가합니다.
 * [에셋 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)에서 에셋을 추가합니다.
-* 중간 콘텐츠 소스로 [연관된 콘텐츠](#using-associated-content)를 사용합니다.
+* 중간 콘텐츠 소스로 [연결된 콘텐츠](#using-associated-content)를 사용합니다.
 
 >[!CAUTION]
 >
@@ -149,7 +149,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 ### 관련 콘텐츠 사용 {#using-associated-content}
 
-[관련 콘텐츠](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)를 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)과 연결한 경우 이러한 에셋은 사이드 패널에서 사용할 수 있습니다(조각을 콘텐츠 페이지에 배치한 후에). 연관된 콘텐츠는 [중간 콘텐츠](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)의 특별한 콘텐츠 소스입니다.
+[관련 콘텐츠](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)를 [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)과 연결한 경우 이러한 에셋은 사이드 패널에서 사용할 수 있습니다(조각을 콘텐츠 페이지에 배치한 후에). 연결된 콘텐츠는 [중간 콘텐츠](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)의 특별한 콘텐츠 소스입니다.
 
 >[!NOTE]
 >
@@ -182,5 +182,5 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 게시된 웹 페이지에서 조각을 사용할 수 있도록 조각을 게시해야 합니다.
 
-* 조각은 나중에 게시할 수 있습니다 [컨텐츠 조각 콘솔에서 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
+* [콘텐츠 조각 콘솔에서 조각을 만든](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment) 후에 조각을 게시할 수 있습니다.
 * *게시 취소된 조각*&#x200B;을 게시 중인 페이지에서 사용하는 경우 그때 조각이 게시될 수도 있습니다.
