@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
+source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3697'
+ht-degree: 99%
 
 ---
 
@@ -274,8 +274,7 @@ ht-degree: 0%
          + [ContextHub를 사용하여 세그먼테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
       + 캠페인 {#campaign}
-         + 
-            + [AEM으로 뉴스레터 만들기](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
+         + [AEM으로 뉴스레터 만들기](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 관리 {#administering}
       + 콘텐츠 조각 {#content-fragments}
          + [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
