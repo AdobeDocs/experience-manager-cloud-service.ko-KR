@@ -3,9 +3,9 @@ title: '"[!DNL Adobe Experience Manager] as a Cloud Service 프리릴리스 채�
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service 프리릴리스 채널"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 84%
 
 ## 소개 {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR#aem-as-cloud-service)의 일정에 따라 월간 케이던스로 새로운 기능을 제공합니다. 다음 달 출시가 예정된 기능에 익숙해지려면 표준 프로그램 개발 환경 또는 샌드박스 프로그램 환경에 적절하게 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. Sites 콘솔 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
+[!DNL Adobe Experience Manager] as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-kr#aem-as-cloud-service)의 일정에 따라 월간 케이던스로 새로운 기능을 제공합니다. 다음 달 출시가 예정된 기능에 익숙해지려면 표준 프로그램 개발 환경 또는 샌드박스 프로그램 환경에 적절하게 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. Sites 콘솔 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
 
 지정된 달에 대한 프리릴리스 기능 목록은 [월별 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)에 게시됩니다.
 
@@ -29,23 +29,23 @@ ht-degree: 84%
 
 ### 클라우드 환경 {#cloud-environments}
 
-사전 릴리스를 사용하도록 클라우드 환경을 업데이트하려면 새 다음을 추가하십시오 [환경 변수](../implementing/cloud-manager/environment-variables.md) cloud Manager에서 환경 구성 UI 사용:
+프리릴리스를 사용할 수 있도록 클라우드 환경을 업데이트하려면 Cloud Manager의 환경 구성 UI를 사용하여 새 [환경 변수](../implementing/cloud-manager/environment-variables.md)를 추가하십시오.
 
-1. 로 이동합니다 **프로그램** > **환경** > **환경 구성** 업데이트하려고 합니다.
-1. 새 추가 [환경 변수](../implementing/cloud-manager/environment-variables.md):
+1. **프로그램** > **환경** > 업데이트하고자 하는 **환경 구성**&#x200B;으로 이동합니다.
+1. 새 [환경 변수](../implementing/cloud-manager/environment-variables.md) 추가
 
-   | 이름 | 값 | 서비스 적용됨 | 유형 |
+   | 이름 | 값 | 적용된 서비스 | 유형 |
    |------|-------|-----------------|------|
-   | `AEM_RELEASE_CHANNEL` | `prerelease` | 모든 | 변수 |
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | 모두 | 변수 |
 
-1. 변경 사항을 저장하면 환경 은 사전 릴리스 기능 토글이 활성화되어 새로 고침됩니다.
+1. 변경 내용을 저장하면 환경은 프리릴리스 기능 전환이 활성화되며 새로 고침됩니다.
 
    ![새 환경 변수](assets/env-configuration-prerelease.png)
 
 
-**또는** cloud Manager API 및 CLI를 사용하여 환경 변수를 업데이트할 수 있습니다.
+**또는** Cloud Manager API 및 CLI를 사용하여 환경 변수를 업데이트할 수 있습니다.
 
-* 사용 [Cloud Manager API의 환경 변수 엔드포인트](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), 설정 **AEM_RELEASE_CHANNEL** 값에 대한 환경 변수 **사전 릴리스**.
+* [Cloud Manager API의 환경 변수 끝점](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)을 사용하여 **AEM_RELEASE_CHANNEL** 환경 변수를 **프리릴리스** 값으로 설정합니다.
 
    ```
    PATCH /program/{programId}/environment/{environmentId}/variables
@@ -60,11 +60,10 @@ ht-degree: 84%
 
 * [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)의 지침에 따라 Cloud Manager CLI를 사용할 수도 있습니다.
 
-
    ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
-환경을 일반(사전 릴리스가 아닌) 채널의 동작으로 복원하려는 경우 변수를 삭제하거나 다른 값으로 설정할 수 있습니다.
+환경을 정기적인(비 프리릴리스) 채널의 비헤이비어로 복원하고자 하는 경우 변수를 삭제하거나 다른 값으로 다시 설정할 수 있습니다.
 
 ### 로컬 SDK {#local-sdk}
 
