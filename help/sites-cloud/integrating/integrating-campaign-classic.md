@@ -4,7 +4,7 @@ description: AEM as a Cloud Service과 Adobe Campaign Classic을 통합하여 �
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 9ad97fdb26c0049f1b6a4b0958c93e2d4af803fb
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 0%
@@ -225,4 +225,4 @@ When [설치 **AEM 통합** 패키지,](#install-package) AEM용으로 외부 �
 
 Adobe Campaign Classic과 AEM as a Cloud Service이 모두 구성되어 이제 통합이 완료됩니다.
 
-이제 다음을 계속 진행하여 Adobe Experience Manager에서 뉴스레터를 만드는 방법을 배울 수 있습니다 [이 문서는](/help/sites-cloud/integrating/creating-newsletter.md)
+이제 다음을 계속 진행하여 Adobe Experience Manager에서 뉴스레터를 만드는 방법을 배울 수 있습니다 [이 문서는](/help/sites-cloud/authoring/campaign/creating-newsletters.md)

@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5de4f8642d6dfae2697bd2fc18b8b9845b883e18
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
-source-wordcount: '3698'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 92%
    + [용어 - 클라우드용 새로운 용어](/help/overview/terminology.md)
    + [AEM as a Cloud Service 아키텍처 소개](/help/overview/architecture.md)
    + [SEO 및 URL 관리](/help/overview/seo-and-url-management.md)
-   + [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
+   + [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [KPI 평가](/help/overview/assessing-kpis.md)
    + [KPI 정렬](/help/overview/aligning-kpis.md)
    + [적합한 팀 선택](/help/overview/choose-right-team.md)
    + [설명서 여정](/help/journey-documentation/documentation-journeys.md)
 + 릴리스 정보 {#release-notes}
    + [릴리스 정보](/help/release-notes/home.md)
-   + 일반 AEMaaCS 릴리스 노트 {#release-notes}
+   + 일반 AEMaaCS 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
          + [2022.5.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
@@ -110,7 +110,7 @@ ht-degree: 92%
          + [2021.11.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Experience Manager 강화 커넥터용 Workfront 릴리스 정보{#workfront}
-      + [Experience Manager Enhanced Connector용 Workfront의 현재 릴리스 노트](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
    + [알려진 문제](/help/release-notes/known-issues.md)
@@ -185,7 +185,7 @@ ht-degree: 92%
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [중요 고려 사항](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
-         + 이전 컨텐츠 전송 도구 {#legacy}
+         + 레거시 콘텐츠 전송 도구 {#legacy}
             + [개요](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
             + [콘텐츠 전송 도구 사전 요구 사항](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
             + [콘텐츠 전송 도구 사용을 위한 지침 및 모범 사례](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
@@ -264,7 +264,7 @@ ht-degree: 92%
       + 개인 맞춤화 {#personalization}
          + [개인 맞춤화 개요](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-cloud/authoring/personalization/contexthub.md)
-         + [타기팅 모드를 사용하여 대상 콘텐츠 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)
+         + [타겟팅 모드를 사용하여 대상 콘텐츠 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)
          + [다중 사이트에서 대상 콘텐츠를 사용하여 작업](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
          + [대상 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [활동 관리](/help/sites-cloud/authoring/personalization/activities.md)
@@ -273,13 +273,16 @@ ht-degree: 92%
          + [세그먼테이션 이해](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub를 사용하여 세그먼테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + 캠페인 {#campaign}
+         + 
+            + [AEM으로 뉴스레터 만들기](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 관리 {#administering}
       + 콘텐츠 조각 {#content-fragments}
          + [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-         + [콘텐츠 조각 및 GraphQL을 사용하여 헤드리스 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
-         + [인스턴스용 콘텐츠 조각 기능 활성화](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+         + [콘텐츠 조각 및 GraphQL을 사용하여 Headless 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+         + [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
          + [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-         + [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+         + [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
          + [콘텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
          + [변형 - 조각 콘텐츠 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
          + [콘텐츠 조각 관련 콘텐츠](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
@@ -287,7 +290,7 @@ ht-degree: 92%
          + [콘텐츠 조각 - 삭제 고려 사항](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [구조 트리](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
-         + [미리보기 - JSON 표시](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [미리보기 - JSON 표현식](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
          + [프런트-엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -340,7 +343,6 @@ ht-degree: 92%
       + [Adobe Target과 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign Classic과 통합](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-      + [Adobe Experience Manager 뉴스레터 만들기](/help/sites-cloud/integrating/creating-newsletter.md)
 + 에셋 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [개요 및 새로운 기능](/help/assets/overview.md)
@@ -401,8 +403,8 @@ ht-degree: 92%
       + [ [!DNL Brand Portal] 에서 [!DNL Assets]로 에셋 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko)
    + 콘텐츠 조각 {#content-fragments}
       + [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
-      + [콘텐츠 조각 및 GraphQL을 사용하여 헤드리스 게재](/help/assets/content-fragments/content-fragments-graphql.md)
-      + [인스턴스용 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+      + [콘텐츠 조각 및 GraphQL을 사용하여 Headless 게재](/help/assets/content-fragments/content-fragments-graphql.md)
+      + [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
       + [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
       + [변형 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
@@ -411,10 +413,10 @@ ht-degree: 92%
       + [콘텐츠 조각 - 삭제 고려 사항](/help/assets/content-fragments/content-fragments-delete.md)
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
-      + [미리보기 - JSON 표시](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + [미리보기 - JSON 표현식](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 여정: 기본 사항 {#dm-journey}
-         + [1부: Dynamic Media 소개 - 사용 사례 - 자산이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [1부: Dynamic Media 소개 - 사용 사례 - 에셋이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
          + [2부: Dynamic Media URL의 구조 - 이미지 사전 설정의 기본 사항 - 이미지 세트, 스핀 세트 및 혼합 미디어 세트 정보](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League의 Dynamic Media 뉴스레터 아카이브](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media 설정](/help/assets/dynamic-media/administering-dynamic-media.md)
@@ -437,7 +439,7 @@ ht-degree: 92%
       + [Dynamic Media의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Dynamic Media Classic의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
-      + [클라이언트 측 장치 픽셀 비율을 갖는 스마트 이미징](/help/assets/dynamic-media/client-side-dpr.md)
+      + [클라이언트측 디바이스 픽셀 비율을 갖는 스마트 이미징](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media 에셋 전송](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media의 핫링크 보호 활성화](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 지원](/help/assets/dynamic-media/assets-3d.md)
@@ -471,7 +473,7 @@ ht-degree: 92%
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
       + [업데이트 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-      + [자산 메타데이터 매핑 구성](/help/assets/configure-asset-metadata-mapping.md)
+      + [에셋 메타데이터 매핑 구성](/help/assets/configure-asset-metadata-mapping.md)
 + 양식 {#forms}
    + [소개](/help/forms/home.md)
    + [주요 기능](/help/forms/key-features.md)
@@ -538,7 +540,7 @@ ht-degree: 92%
    + [DocuSign과 통합](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Sites와 통합](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Adobe Analytics와 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-   + [Microsoft Power와 적응형 양식 통합 자동화](/help/forms/forms-microsoft-power-automate-integration.md)
+   + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
    + 워크플로 제작 및 사용 {#create-form-centric-workflows}
       + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
       + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
@@ -626,7 +628,7 @@ ht-degree: 92%
    + [마이그레이션](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Headless {#headless}
-   + [헤드리스 CMS란 무엇입니까?](/help/headless/what-is-headless.md)
+   + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
@@ -637,7 +639,7 @@ ht-degree: 92%
       + [GraphQL 끝점](/help/headless/setup/create-api-request.md)
    + 콘텐츠 조각 {#content-fragments}
       + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [컨텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
+      + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
       + [콘텐츠 조각 모델](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
       + [관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + 작성{#authoring}
@@ -663,35 +665,35 @@ ht-degree: 92%
       + [Dispatcher](/help/headless/deployment/dispatcher.md)
       + [CORS 구성](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [레퍼러 필터](/help/headless/deployment/referrer-filter.md)
-   + 헤드리스 여정 {#journeys}
-      + 헤드리스 개발자 여정 {#developer}
-         + [AEM 헤드리스 이해](/help/journey-headless/developer/overview.md)
-         + [CMS 헤드리스 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
+   + Headless 여정 {#journeys}
+      + Headless 개발자 여정 {#developer}
+         + [AEM Headless 이해](/help/journey-headless/developer/overview.md)
+         + [CMS Headless 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
          + [AEM Headless as a Cloud Service 시작하기](/help/journey-headless/developer/getting-started.md)
          + [AEM Headless를 사용한 첫 번째 경험으로의 경로](/help/journey-headless/developer/path-to-first-experience.md)
          + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](/help/journey-headless/developer/model-your-content.md)
          + [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](/help/journey-headless/developer/access-your-content.md)
          + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](/help/journey-headless/developer/update-your-content.md)
          + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
-         + [헤드리스 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
+         + [Headless 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
          + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
       + Headless 콘텐츠 설계 여정 {#architect}
-         + [AEM 헤드리스 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
-         + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
-         + [AEM을 통한 헤드리스용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
+         + [AEM Headless 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
+         + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
+         + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
          + [AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
-      + 헤드리스 번역 여정 {#translation}
-         + [AEM에서의 헤드리스 번역 이해](/help/journey-headless/translation/overview.md)
-         + [AEM 헤드리스 번역 시작하기](/help/journey-headless/translation/getting-started.md)
-         + [헤드리스 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기](/help/journey-headless/translation/learn-about.md)
+      + Headless 번역 여정 {#translation}
+         + [AEM에서의 Headless 번역 이해](/help/journey-headless/translation/overview.md)
+         + [AEM Headless 번역 시작하기](/help/journey-headless/translation/getting-started.md)
+         + [Headless 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기](/help/journey-headless/translation/learn-about.md)
          + [번역 커넥터 구성](/help/journey-headless/translation/configure-connector.md)
          + [번역 규칙 구성](/help/journey-headless/translation/translation-rules.md)
          + [콘텐츠 번역](/help/journey-headless/translation/translate-content.md)
          + [번역된 콘텐츠 게시](/help/journey-headless/translation/publish-content.md)
-      + 헤드리스 콘텐츠 작성 여정 {#author}
-         + [AEM 헤드리스 콘텐츠 작성 여정 - 개요](/help/journey-headless/author/overview.md)
-         + [AEM을 통한 헤드리스 작성 - 소개](/help/journey-headless/author/introduction.md)
-         + [AEM을 통한 헤드리스 작성 기본 사항 - 소개](/help/journey-headless/author/basics.md)
+      + Headless 콘텐츠 작성 여정 {#author}
+         + [AEM Headless 콘텐츠 작성 여정 - 개요](/help/journey-headless/author/overview.md)
+         + [AEM을 통한 Headless 작성 - 소개](/help/journey-headless/author/introduction.md)
+         + [AEM을 통한 Headless 작성 기본 사항 - 소개](/help/journey-headless/author/basics.md)
          + [콘텐츠 조각의 참조 사용에 대해 알아보기](/help/journey-headless/author/references.md)
          + [콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기](/help/journey-headless/author/metadata-tagging.md)
 + 구현 {#implementing}
@@ -767,7 +769,7 @@ ht-degree: 92%
       + [빠른 사이트 생성 및 프론트엔드 맞춤화](/help/implementing/developing/introduction/quick-site-creation.md)
       + [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [사이트 템플릿 및 테마 맞춤화](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
-      + [AEM 헤드풀 및 헤드리스](/help/implementing/developing/headful-headless.md)
+      + [AEM 헤드풀 및 Headless](/help/implementing/developing/headful-headless.md)
       + 전체 스택 AEM 개발 {#full-stack}
          + [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI 구조](/help/implementing/developing/introduction/ui-structure.md)
