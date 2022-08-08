@@ -1,13 +1,13 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보.'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보.'
-source-git-commit: 5d0f6fb726527434c57dc058bcf3a7b9d512b551
-workflow-type: tm+mt
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
+exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
+source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
 
@@ -34,15 +34,15 @@ ht-degree: 94%
 
 ### [!DNL Sites] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-sites}
 
-* 이제 컨텐츠 모델 편집기에서 간단한 확인란을 사용하여 컨텐츠 모델 데이터 유형을 변환 가능한 것으로 정의할 수 있습니다. 또한 AEM 번역 규칙 및 구성이 자동으로 업데이트됩니다.
+* 이제 콘텐츠 모델 편집기의 간단한 확인란을 사용하여 콘텐츠 모델 데이터 유형을 변환 가능한 것으로 정의할 수 있습니다. 또한 AEM 번역 규칙 및 구성이 자동으로 업데이트됩니다.
 
-## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
 * [!DNL AEM Dynamic Media] 이제 즉시 사용 가능한 Dynamic Media URL 및 뷰어 임베드 코드를 업데이트하도록 사용자 인터페이스에서 [하나의 별칭 계정](/help/assets/dynamic-media/dm-alias-account.md)을 구성할 수 있습니다. 이는 리브랜딩과 같은 비즈니스 컨텍스트에 대한 업데이트를 반영하여 SEO에 긍정적인 영향을 미칩니다.
 
-* 이제 [!DNL Experience Manager Assets] 사용자 인터페이스를 사용하여 다음을 수행할 수 있습니다.
+* 이제 [!DNL Experience Manager Assets] 사용자 인터페이스를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
    * 저장소에서 [중복 에셋 감지](/help/assets/manage-digital-assets.md#detect-duplicate-assets)를 구성합니다.
 
@@ -54,9 +54,9 @@ ht-degree: 94%
 
 ### [!DNL Assets] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-assets}
 
-* 이제 다음을 수행할 수 있습니다 [태그 정렬](/help/assets/organize-assets.md#use-tags-to-organize-assets) 태그 선택기 창에서 태그 이름, 작성 날짜 또는 수정 날짜를 기준으로 오름차순 또는 내림차순으로 선택합니다.
+* 이제 태그 이름, 작성 날짜 또는 수정 날짜를 기준으로 태그 선택기 창에서 오름차순 또는 내림차순으로 [태그를 정렬](/help/assets/organize-assets.md#use-tags-to-organize-assets)할 수 있습니다.
 
-## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
@@ -83,9 +83,9 @@ ht-degree: 94%
 * 구성 프록시 URL 대신 CIF Cloud 구성 이름을 시용하여 CIF 구성 관리 및 오류 처리 간소화
 * 수동으로 제품 목록 및 슬라이드 구성 요소의 범주 선택. 따라서 콘텐츠 제공자는 카탈로그 경험 이외의 콘텐츠 페이지에서 이들 구성 요소를 사용할 수 있습니다.
 
-### CIF 사전 릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-cif}
+### CIF 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-cif}
 
-* AEM CIF 검색 핵심 구성 요소 지원 Commerce 라이브 검색
+* AEM CIF 검색 핵심 구성 요소는 Commerce LiveSearch를 지원합니다.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -95,7 +95,7 @@ ht-degree: 94%
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Developer Console에서 셀프 서비스 방식으로 만료되기 전에 서버 간 API 호출 인증에 사용되는 자격 증명(예: GraphQL API 요청의 경우)을 새로 고칠 수 있습니다. 자세한 내용은 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)를 참조하십시오.
+* Developer Console에서 셀프서비스 방식으로 만료되기 전에 서버 간 API 호출 인증에 사용되는 자격 증명(예: GraphQL API 요청의 경우)을 새로 고칠 수 있습니다. 자세한 내용은 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)를 참조하십시오.
 
 * 이전에 활성화되지 않은 버전 제거 및 감사 로그 제거 유지 관리 작업이 새 환경에서 활성화될 수 있습니다. [유지 관리 작업](/help/operations/maintenance.md) 문서에서 관련된 값을 참조하십시오.
 
@@ -113,7 +113,7 @@ ht-degree: 94%
 
 ### 새로운 기능 {#what-is-new-ctt}
 
-* 점검 크기 가드레일 - 콘텐츠 전송 도구 점검 크기 기능을 사용하여 콘텐트 전송 실패율을 줄일 수 있습니다.  점검 크기 기능을 사용하여 1) 추출하기 전에 `crx-quickstart` 하위 디렉터리에 디스크 공간이 충분한지 결정하고, 2) 마이그레이션 세트 크기를 예측하고 현재 지원되는지 확인할 수 있습니다. 점검 사항 중 하나 또는 두 개 모두 위반한 경우 CTT UI에 경고가 표시됩니다. 이 가드레일을 사용하여 콘텐츠 전송 실패를 방지하고, Adobe 고객 지원 센터와 주도적으로 마이그레이션 옵션에 대해 논의할 수 있습니다. 자세한 내용은 [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko#migration-set-size)을 참조하십시오.
+* 점검 크기 가드레일 - 콘텐츠 전송 도구 점검 크기 기능을 사용하여 콘텐츠 전송 실패율을 줄일 수 있습니다.  점검 크기 기능을 사용하여 1) 추출하기 전에 `crx-quickstart` 하위 디렉터리에 디스크 공간이 충분한지 결정하고, 2) 마이그레이션 세트 크기를 예측하고 현재 지원되는지 확인할 수 있습니다. 점검 사항 중 하나 또는 두 개 모두 위반한 경우 CTT UI에 경고가 표시됩니다. 이 가드레일을 사용하여 콘텐츠 전송 실패를 방지하고, Adobe 고객 지원 센터와 주도적으로 마이그레이션 옵션에 대해 논의할 수 있습니다. 자세한 내용은 [마이그레이션 세트 크기 및 디스크 공간 확인](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ko#migration-set-size)을 참조하십시오.
 
 ## Best Practices Analyzer {#bpa-release}
 
