@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3006'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service는 Cloud Manager API를 사용하여 구성할 수 있는
 * [전용 이그레스 IP 주소](#dedicated-egress-IP-address) - AEM as a Cloud Service의 트래픽을 고유 IP에서 생성되도록 구성합니다.
 * [Virtual Private Network(VPN)](#vpn) - VPN 기술을 보유한 고객에 대해 고객 인프라 및 AEM as a Cloud Service 간의 트래픽을 보호합니다.
 
-이 문서에서는 구성 방법을 포함하여 이러한 옵션 각각에 대해 자세히 설명합니다. 일반적인 구성 전략으로, 프로그램 수준에서 `/networkInfrastructures` API 끝점이 호출되어 원하는 고급 네트워킹 유형을 선언한 다음 각 환경에 대해 `/advancedNetworking` 끝점이 호출되어 인프라를 활성화하고 환경별 매개 변수를 구성합니다. 각 형식 구문, 샘플 요청 및 응답은 Cloud Manager API 설명서에 기재된 적절한 끝점을 참조하십시오.
+이 문서에서는 구성 방법을 포함하여 이러한 옵션 각각에 대해 자세히 설명합니다. 일반적인 구성 전략으로, 프로그램 수준에서 `/networkInfrastructures` API 끝점이 호출되어 원하는 고급 네트워킹 유형을 선언한 다음 각 환경에 대해 `/advancedNetworking` 끝점이 호출되어 인프라를 활성화하고 환경별 매개변수를 구성합니다. 각 형식 구문, 샘플 요청 및 응답은 Cloud Manager API 설명서에 기재된 적절한 끝점을 참조하십시오.
 
 프로그램에서 단일 고급 네트워킹 변형을 프로비저닝할 수 있습니다. 유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때, 특정 IP 주소가 필요하지 않은 경우 Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있으므로 유연한 포트 이그레스를 선택하는 것이 좋습니다.
 
@@ -48,11 +48,11 @@ VPN 및 전용 이그레스 IP 주소가 필요하지 않은 경우 전용 이�
 
 ### 구성 {#configuring-flexible-port-egress-provision}
 
-프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 `kind` 매개 변수 및 지역에 대한 `flexiblePortEgress` 값이 간단히 전달됩니다. 해당 끝점은 `network_id` 및 상태와 같은 기타 정보에 응답합니다. API 문서에 전체 매개 변수 및 정확한 구문 집합이 참조되어야 합니다.
+프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 `kind` 매개변수 및 지역에 대한 `flexiblePortEgress` 값이 간단히 전달됩니다. 해당 끝점은 `network_id` 및 상태와 같은 기타 정보에 응답합니다. API 문서에 전체 매개변수 및 정확한 구문 집합이 참조되어야 합니다.
 
 호출되면 네트워킹 인프라가 프로비저닝되는 데 일반적으로 약 15분이 소요됩니다. Cloud Manager의 [네트워크 인프라 GET 끝점](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 호출은 “준비됨” 상태로 표시됩니다.
 
-프로그램에서 설정한 유연한 포트 이그레스 구성이 준비되면 환경별로 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 끝점을 호출하여 환경 수준에서 네트워킹을 활성화하고 필요한 경우 포트 전달 규칙을 선언해야 합니다. 유연성을 제공하기 위해 환경별로 매개 변수를 구성할 수 있습니다.
+프로그램에서 설정한 유연한 포트 이그레스 구성이 준비되면 환경별로 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 끝점을 호출하여 환경 수준에서 네트워킹을 활성화하고 필요한 경우 포트 전달 규칙을 선언해야 합니다. 유연성을 제공하기 위해 환경별로 매개변수를 구성할 수 있습니다.
 
 포트 전달 규칙은 80/443 이외의 모든 포트에 대해 대상 호스트(포트 포함, 이름 또는 IP) 집합을 지정하여 선언해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
 
@@ -64,15 +64,15 @@ API는 몇 초 안에 응답하여 업데이트 상태를 표시해야 하고, �
 
 >[!NOTE]
 >
-> “종류” 매개 변수(`flexiblePortEgress`, `dedicatedEgressIP` 또는 `VPN`)는 수정할 수 없습니다. 도움이 필요하면 고객 지원 센터에 문의하여 기존 내용과 변경 사유에 대해 설명하고 도움을 얻으십시오.
+> “종류” 매개변수(`flexiblePortEgress`, `dedicatedEgressIP` 또는 `VPN`)는 수정할 수 없습니다. 도움이 필요하면 고객 지원 센터에 문의하여 기존 내용과 변경 사유에 대해 설명하고 도움을 얻으십시오.
 
-`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 끝점을 다시 호출하여 환경당 포트 전달 규칙을 하위 집합이 아닌 전체 구성 매개 변수 집합을 포함하도록 업데이트할 수 있습니다.
+`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 끝점을 다시 호출하여 환경당 포트 전달 규칙을 하위 집합이 아닌 전체 구성 매개변수 집합을 포함하도록 업데이트할 수 있습니다.
 
-### 유연한 포트 송신 비활성화 {#disabling-flexible-port-egress-provision}
+### 유연한 포트 이그레스 비활성화 {#disabling-flexible-port-egress-provision}
 
 특정 환경에서 유연한 포트 이그레스를 **비활성화**&#x200B;하려면 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`를 호출하십시오.
 
-API에 대한 자세한 내용은 [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+API에 대한 자세한 내용은 [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)를 참조하십시오.
 
 ### 트래픽 라우팅 {#flexible-port-egress-traffic-routing}
 
@@ -97,7 +97,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 비표준 Java 네트워킹 라이브러리를 사용하는 경우 모든 트래픽에 대해 위의 속성을 사용하여 프록시를 구성할 수 있습니다.
 
-`portForwards` 매개 변수에 선언된 포트를 통한 대상이 있는 비 HTTP/S 트래픽은 매핑된 포트와 함께 `AEM_PROXY_HOST`라는 속성을 참조해야 합니다. 예:
+`portForwards` 매개변수에 선언된 포트를 통한 대상이 있는 비 HTTP/S 트래픽은 매핑된 포트와 함께 `AEM_PROXY_HOST`라는 속성을 참조해야 합니다. 예:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -125,7 +125,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr> 
   <tr>
     <td></td>
-    <td>다음 환경 변수 및 프록시 포트 번호를 사용하여 구성된 HTTP 프록시를 통한 80 또는 443 이외의 포트의 비표준 트래픽. Cloud Manager API 호출의 portForwards 매개 변수에서 대상 포트를 선언하지 마십시오.<br><ul>
+    <td>다음 환경 변수 및 프록시 포트 번호를 사용하여 구성된 HTTP 프록시를 통한 80 또는 443 이외의 포트의 비표준 트래픽. Cloud Manager API 호출의 portForwards 매개변수에서 대상 포트를 선언하지 마십시오.<br><ul>
      <li>AEM_PROXY_HOST (default to `proxy.tunnel` in AEM releases &lt; 6094)</li>
      <li>AEM_HTTPS_PROXY_PORT (default to port 3128 in AEM releases &lt; 6094)</li>
     </ul>
@@ -142,7 +142,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td><b>비 HTTP 또는 비 HTTPS</b></td>
-    <td>클라이언트가 <code>portForwards</code> API 매개 변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수를 연결합니다.</td>
+    <td>클라이언트가 <code>portForwards</code> API 매개변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수를 연결합니다.</td>
     <td>임의</td>
     <td>허용됨</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -197,21 +197,21 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 주요 차이점은 트래픽은 항상 전용 고유 IP에서 이그레스된다는 것입니다. 해당 IP를 찾으려면 DNS Resolver를 사용하여 `p{PROGRAM_ID}.external.adobeaemcloud.com`과 연계된 IP 주소를 식별하십시오. 해당 IP 주소는 변경되지 않지만, 향후에 변경해야 하는 경우 고급 알림이 제공됩니다.
 
-`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 끝점의 유연한 포트 이그레스에서는 라우팅 규칙을 지원하며 전용 이그레스 IP 주소에서는 `nonProxyHosts` 매개 변수를 지원합니다. 이를 통해 전용 IP가 아닌 공유 IP 주소 범위를 통해 라우팅해야 하는 호스트 집합을 선언할 수 있습니다. 이렇게 하면 공유 IP를 통해 이그레스되는 트래픽이 더욱 최적화될 수 있습니다. `nonProxyHost` URL은 `example.com` 또는 `*.example.com`의 패턴을 따르며, 여기서 와일드카드는 도메인의 시작 위치에서만 지원됩니다.
+`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 끝점의 유연한 포트 이그레스에서는 라우팅 규칙을 지원하며 전용 이그레스 IP 주소에서는 `nonProxyHosts` 매개변수를 지원합니다. 이를 통해 전용 IP가 아닌 공유 IP 주소 범위를 통해 라우팅해야 하는 호스트 집합을 선언할 수 있습니다. 이렇게 하면 공유 IP를 통해 이그레스되는 트래픽이 더욱 최적화될 수 있습니다. `nonProxyHost` URL은 `example.com` 또는 `*.example.com`의 패턴을 따르며, 여기서 와일드카드는 도메인의 시작 위치에서만 지원됩니다.
 
 유연한 포트 이그레스와 전용 이그레스 IP 주소 사이에서 결정할 때, 특정 IP 주소가 필요하지 않은 경우 Adobe에서 유연한 포트 이그레스 트래픽의 성능을 최적화할 수 있으므로 유연한 포트 이그레스를 선택해야 합니다.
 
-### 전용 송신 IP 주소 비활성화 {#disabling-dedicated-egress-IP-address}
+### 전용 이그레스 IP 주소 비활성화 {#disabling-dedicated-egress-IP-address}
 
-다음 **disable** 특정 환경의 전용 송신 IP 주소, 호출 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+특정 환경에서 전용 이그레스 IP 주소를 **비활성화**&#x200B;하려면 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`를 호출하십시오.
 
-API에 대한 자세한 내용은 [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+API에 대한 자세한 내용은 [Cloud Manager API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)를 참조하십시오.
 
 ### 트래픽 라우팅 {#dedcated-egress-ip-traffic-routing}
 
-프록시 구성에 표준 Java 시스템 속성을 사용하는 경우 Http 또는 https 트래픽은 사전 구성된 프록시를 통해 전달됩니다.
+프록시 구성에 표준 Java 시스템 속성을 사용하는 경우 http 또는 https 트래픽은 사전 구성된 프록시를 통해 전달됩니다.
 
-`portForwards` 매개 변수에 선언된 포트를 통한 대상이 있는 비 HTTP/S 트래픽은 매핑된 포트와 함께 `AEM_PROXY_HOST`라는 속성을 참조해야 합니다. 예:
+`portForwards` 매개변수에 선언된 포트를 통한 대상이 있는 비 HTTP/S 트래픽은 매핑된 포트와 함께 `AEM_PROXY_HOST`라는 속성을 참조해야 합니다. 예:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -237,14 +237,14 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td></td>
-    <td><code>nonProxyHosts</code> 매개 변수와 일치하는 호스트</td>
+    <td><code>nonProxyHosts</code> 매개변수와 일치하는 호스트</td>
     <td>80 또는 443</td>
     <td>공유 클러스터 IP를 통해</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td><code>nonProxyHosts</code> 매개 변수와 일치하는 호스트</td>
+    <td><code>nonProxyHosts</code> 매개변수와 일치하는 호스트</td>
     <td>80 또는 443 이외의 포트</td>
     <td>차단됨</td>
     <td></td>
@@ -272,7 +272,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr>
   <tr>
     <td><b>비 HTTP 또는 비 HTTPS</b></td>
-    <td>클라이언트가 <code>portForwards</code> API 매개 변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수 연결</td>
+    <td>클라이언트가 <code>portForwards</code> API 매개변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수 연결</td>
     <td>임의</td>
     <td>전용 이그레스 IP를 통해</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -351,15 +351,15 @@ VPN을 사용하면 작성자, 게시 또는 미리보기에서 온프레미스 
 
 ### 만들기 {#vpn-creation}
 
-프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 `kind` 매개 변수, 지역, 주소 공간(CIDR 목록 - 나중에 수정할 수 없음)에 대한 “vpn” 값, 고객 네트워크의 이름 확인을 위한 DNS Resolver 및 게이트웨이 구성, 공유 VPN 키 및 IP 보안 정책과 같은 VPN 연결 정보 등을 포함하는 구성 정보 페이로드를 전달합니다. 해당 끝점은 `network_id` 및 상태와 같은 기타 정보에 응답합니다. [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)에 전체 매개 변수 및 정확한 구문 집합이 참조되어야 합니다.
+프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 `kind` 매개변수, 지역, 주소 공간(CIDR 목록 - 나중에 수정할 수 없음)에 대한 “vpn” 값, 고객 네트워크의 이름 확인을 위한 DNS Resolver 및 게이트웨이 구성, 공유 VPN 키 및 IP 보안 정책과 같은 VPN 연결 정보 등을 포함하는 구성 정보 페이로드를 전달합니다. 해당 끝점은 `network_id` 및 상태와 같은 기타 정보에 응답합니다. [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)에 전체 매개변수 및 정확한 구문 집합이 참조되어야 합니다.
 
 호출되면 네트워킹 인프라가 프로비저닝되는 데 일반적으로 약 45분에서 60분이 소요됩니다. API의 GET 메서드를 호출하여 현재 상태를 반환하고 `creating`에서 `ready`로 전환할 수 있습니다. 모든 상태에 대한 내용은 API 설명서를 참조하십시오.
 
-프로그램에서 설정한 VPN 구성이 준비되면 환경별로 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 끝점을 호출하여 환경 수준에서 네트워킹을 활성화하고 포트 전달 규칙을 선언해야 합니다. 유연성을 제공하기 위해 환경별로 매개 변수를 구성할 수 있습니다.
+프로그램에서 설정한 VPN 구성이 준비되면 환경별로 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 끝점을 호출하여 환경 수준에서 네트워킹을 활성화하고 포트 전달 규칙을 선언해야 합니다. 유연성을 제공하기 위해 환경별로 매개변수를 구성할 수 있습니다.
 
 자세한 내용은 [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)를 참조하십시오.
 
-포트 전달 규칙은 VPN을 통해 라우팅되어야 하는 비 HTTP/S 프로토콜 TCP 트래픽에 대해 대상 호스트(포트 포함, 이름 또는 IP) 집합을 지정하여 선언해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다. 이 값은 프로그램의 환경 간에 고유한 값이어야 합니다. 또한 고객은 `nonProxyHosts` 매개 변수에 트래픽이 VPN 라우팅은 우회하고 공유 IP 범위를 거쳐야 하는 URL 세트를 나열할 수도 있습니다. 해당 URL 세트는 `example.com` 또는 `*.example.com`의 패턴을 따르며, 여기서 와일드카드는 도메인의 시작 위치에서만 지원됩니다.
+포트 전달 규칙은 VPN을 통해 라우팅되어야 하는 비 HTTP/S 프로토콜 TCP 트래픽에 대해 대상 호스트(포트 포함, 이름 또는 IP) 집합을 지정하여 선언해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다. 이 값은 프로그램의 환경 간에 고유한 값이어야 합니다. 또한 고객은 `nonProxyHosts` 매개변수에 트래픽이 VPN 라우팅은 우회하고 공유 IP 범위를 거쳐야 하는 URL 세트를 나열할 수도 있습니다. 해당 URL 세트는 `example.com` 또는 `*.example.com`의 패턴을 따르며, 여기서 와일드카드는 도메인의 시작 위치에서만 지원됩니다.
 
 API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 후 Cloud Manager의 환경 GET 끝점에 대한 호출에 환경 업데이트가 적용되었음을 나타내는 `ready` 상태가 표시됩니다.
 
@@ -369,11 +369,11 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
 
 `PUT /api/program/<program_id>/network/<network_id>` 끝점을 호출하여 프로그램 수준 VPN 구성을 업데이트할 수 있습니다.
 
-최초 VPN 프로비저닝 후에는 주소 공간을 변경할 수 없습니다. 필요한 경우 고객 지원 팀에 문의하십시오. 또한 `kind` 매개 변수(`flexiblePortEgress`, `dedicatedEgressIP` 또는 `VPN`)는 수정할 수 없습니다. 도움이 필요하면 고객 지원 센터에 문의하여 기존 내용과 변경 사유에 대해 설명하고 도움을 얻으십시오.
+최초 VPN 프로비저닝 후에는 주소 공간을 변경할 수 없습니다. 필요한 경우 고객 지원 팀에 문의하십시오. 또한 `kind` 매개변수(`flexiblePortEgress`, `dedicatedEgressIP` 또는 `VPN`)는 수정할 수 없습니다. 도움이 필요하면 고객 지원 센터에 문의하여 기존 내용과 변경 사유에 대해 설명하고 도움을 얻으십시오.
 
-`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 끝점을 다시 호출하여 환경당 라우팅 규칙을 하위 집합이 아닌 전체 구성 매개 변수 집합을 포함하도록 업데이트할 수 있습니다. 일반적으로 환경 업데이트가 적용되는 데 5~10분 정도 소요됩니다.
+`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 끝점을 다시 호출하여 환경당 라우팅 규칙을 하위 집합이 아닌 전체 구성 매개변수 집합을 포함하도록 업데이트할 수 있습니다. 일반적으로 환경 업데이트가 적용되는 데 5~10분 정도 소요됩니다.
 
-### VPN 사용 안 함 {#disabling-the-vpn}
+### VPN 비활성화 {#disabling-the-vpn}
 
 특정 환경에 대한 VPN을 비활성화하려면 `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`을 호출하십시오. 자세한 내용은 [API 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)를 참조하십시오.
 
@@ -401,14 +401,14 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
   </tr>
   <tr>
     <td></td>
-    <td><code>nonProxyHosts</code> 매개 변수와 일치하는 호스트</td>
+    <td><code>nonProxyHosts</code> 매개변수와 일치하는 호스트</td>
     <td>80 또는 443</td>
     <td>공유 클러스터 IP를 통해</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td><code>nonProxyHosts</code> 매개 변수와 일치하는 호스트</td>
+    <td><code>nonProxyHosts</code> 매개변수와 일치하는 호스트</td>
     <td>80 또는 443 이외의 포트</td>
     <td>차단됨</td>
     <td></td>
@@ -444,14 +444,14 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
   </tr>
   <tr>
     <td><b>비 HTTP 또는 비 HTTPS</b></td>
-    <td>IP가 <i>VPN 게이트웨이 주소 공간</i> 범위에 해당하고 클라이언트가 <code>portForwards</code> API 매개 변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수를 연결하는 경우</td>
+    <td>IP가 <i>VPN 게이트웨이 주소 공간</i> 범위에 해당하고 클라이언트가 <code>portForwards</code> API 매개변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수를 연결하는 경우</td>
     <td>임의</td>
     <td>VPN을 통해</td>
     <td><code>10.0.0.1:3306</code>호스트 이름일 수도 있습니다.</td>
   </tr>
   <tr>
     <td></td>
-    <td>IP가 <i>VPN 게이트웨이 주소 공간</i> 범위에 해당하지 않고 클라이언트가 <code>portForwards</code> API 매개 변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수를 연결하는 경우</td>
+    <td>IP가 <i>VPN 게이트웨이 주소 공간</i> 범위에 해당하지 않고 클라이언트가 <code>portForwards</code> API 매개변수에서 선언된 <code>portOrig</code>를 사용하여 <code>AEM_PROXY_HOST</code> 환경 변수를 연결하는 경우</td>
     <td>임의</td>
     <td>전용 이그레스 IP를 통해</td>
     <td></td>
@@ -494,7 +494,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>VPN의 AEM측에서 고객측으로 이동하는 트래픽의 IP입니다. 고객의 구성 허용 목록에 추가하여 AEM으로부터의 연결만 허용할 수 있습니다.</td>
-    <td>고객이 AEM에 대한 VPN 액세스를 허용하려면 고객이 자신의 사용자 지정 도메인 및/또는 을 매핑하도록 CNAME DNS 항목을 구성해야 합니다 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 및/또는 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 아래와 같이 변경하는 것을 의미합니다.</td>
+    <td>고객이 AEM으로의 VPN 액세스를 허용하고자 하는 경우 해당 액세스에 사용자 지정 도메인 및/또는 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 및/또는 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>을 매핑하도록 CNAME DNS 항목을 구성해야 합니다.</td>
   </tr>
 </tbody>
 </table>
@@ -516,7 +516,7 @@ Header always set Cache-Control private
 
 ## 프로그램의 네트워크 인프라 삭제 {#deleting-network-infrastructure}
 
-종료 **delete** 프로그램의 네트워크 인프라, `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+프로그램의 네트워크 인프라를 **삭제**&#x200B;하려면 `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`를 호출하십시오.
 
 >[!NOTE]
 >
@@ -528,11 +528,11 @@ Header always set Cache-Control private
 
 * 모든 환경에서 고급 네트워킹 비활성화
 * 고급 네트워킹 인프라 삭제
-* 올바른 값으로 고급 네트워킹 인프라를 다시 만듭니다.
-* 환경 수준 고급 네트워킹 사용
+* 올바른 값으로 고급 네트워킹 인프라 다시 생성
+* 환경 수준의 고급 네트워킹 다시 활성화
 
 >[!WARNING]
 >
-> 이 절차는 삭제와 레크리에이션 간에 고급 네트워킹 서비스를 다운타임으로 만듭니다
+> 이 절차를 사용하면 삭제와 재생성 사이에 고급 네트워킹 서비스의 가동이 중단될 수 있습니다.
 
-다운타임으로 인해 중요한 비즈니스 영향이 발생하는 경우 고객 지원 센터에 문의하여 이미 생성된 내용과 변경 이유를 설명하십시오.
+가동 중단으로 인해 심각한 비즈니스 영향이 발생하는 경우 고객 지원 센터에 문의하여 이미 생성된 내용과 변경 이유를 설명하십시오.
