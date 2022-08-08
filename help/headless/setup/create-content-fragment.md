@@ -3,9 +3,9 @@ title: 콘텐츠 조각 만들기 - Headless 설정
 description: Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독립적 콘텐츠를 디자인하고 만들고 선별하고 사용하는 방법을 알아봅니다.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ Headless 전달을 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독�
 
 콘텐츠 작성자는 자신이 만드는 콘텐츠를 표시하기 위해 콘텐츠 조각을 원하는 수만큼 만듭니다. 이것이 AEM에서 작성자의 주요 작업이 될 것입니다. 이 시작 안내서에서는 하나만 만들면 됩니다.
 
-1. AEM as a Cloud Service에 로그인하고 기본 메뉴에서 를 선택합니다. **탐색** -> **컨텐츠 조각**.
+1. AEM as a Cloud Service에 로그인하고 메인 메뉴에서 **탐색** -> **콘텐츠 조각**&#x200B;을 선택합니다.
 
 1. [이전에 만든 폴더](create-assets-folder.md)를 탭하거나 클릭합니다.
 1. **만들기**&#x200B;를 탭하거나 클릭합니다.
-1. 컨텐츠 조각 만들기는 대화 상자로 표시됩니다.
-컨텐츠 조각을 만드는 데 사용할 위치 및 모델을 선택합니다.
+1. 콘텐츠 조각 만들기는 대화 상자로 표시됩니다.
+콘텐츠 조각을 만드는 데 사용할 위치 및 모델을 선택합니다.
 
    * 사용 가능한 모델은 콘텐츠 조각을 생성하고 있는 에셋 폴더](create-assets-folder.md)에 대해 정의한 [**클라우드 구성**&#x200B;에 따라 다릅니다.
-   * 모델을 사용할 수 없는 경우 자산 폴더의 구성을 확인합니다.
+   * 모델을 사용할 수 없는 경우 에셋 폴더의 구성을 확인하십시오.
 
    제목, 이름 및 필요한 경우 설명을 추가합니다.
 
-   ![새 컨텐츠 조각 만들기 대화 상자](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+   ![새 콘텐츠 조각 만들기 대화 상자](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. 탭 또는 클릭 **만들기** 또는  **만들기 및 열기**.
+1. **만들기** 또는 **만들기 및 열기**&#x200B;를 탭하거나 클릭합니다.
 
 콘텐츠 조각은 다른 콘텐츠 조각을 참조할 수 있으므로 필요한 경우 중첩된 콘텐츠 구조를 허용합니다.
 
