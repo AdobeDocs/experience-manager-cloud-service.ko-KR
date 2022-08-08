@@ -1,16 +1,16 @@
 ---
-title: AEM으로 GraphQL을 사용하는 방법 배우기 - 샘플 콘텐츠 및 쿼리
+title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# AEM으로 GraphQL을 사용하는 방법 배우기 - 샘플 콘텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
+# AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리 {#learn-graphql-with-aem-sample-content-queries}
 
 AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 
@@ -23,7 +23,7 @@ AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 �
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 
-GraphQL 쿼리를 시작하고 GraphQL 쿼리가 AEM 콘텐츠 조각과 함께 작동하는 방법을 알아보려면 몇 가지 실제 사례를 보는 것이 도움이 됩니다.
+GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 작동하는 방법을 알아보려면 몇 가지 실제 사례를 살펴보는 것이 도움이 됩니다.
 
 도움이 필요하면 다음을 참조하십시오.
 
@@ -43,7 +43,7 @@ GraphQL 쿼리를 시작하고 GraphQL 쿼리가 AEM 콘텐츠 조각과 함께 
 >다음 중 하나에서 쿼리 편집기에 액세스할 수 있습니다.
 >
 >* **도구** -> **일반** -> **GraphQL 쿼리 편집기**
->* 직접 예 `http://localhost:4502/aem/graphiql.html`
+>* 직접(예: `http://localhost:4502/aem/graphiql.html`)
 
 
 >[!NOTE]
@@ -1580,7 +1580,7 @@ query {
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | 스티브 잡스 | Joe Smith<br>Abe Lincoln |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### 개인 {#fragment-person}
 
@@ -1600,7 +1600,7 @@ query {
 | 단축키/ID | 제목 |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | 가메스타르 |
+|  GS | Gamestar |
 |  OSC | Oscar |
 
 #### 도시 {#fragment-city}
