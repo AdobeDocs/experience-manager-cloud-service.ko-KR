@@ -3,9 +3,9 @@ title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Serv
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1904'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -149,7 +149,7 @@ Adobe에서 많은 측면을 담당하므로 AEM as a Cloud service를 사용하
 
 >[!TIP]
 >
->온보딩 프로세스에 대한 전체 개요는 를 참조하십시오. [온보딩 여정.](/help/journey-onboarding/overview.md)
+>온보딩 프로세스에 대한 전체 개요는 [온보딩 여정](/help/journey-onboarding/overview.md)을 참조하십시오.
 
 ## 개발 {#developing}
 
@@ -171,7 +171,7 @@ AEM as a Cloud Service를 지원하는 새 아키텍처에는 전반적인 개�
 
 일반적으로 이 프로세스를 클라우드 기반 개발이라고 합니다. 애플리케이션의 복잡성에 따라 전반적인 지속 시간이 20분에서 50분까지 소요될 것으로 예상되므로 클라우드에서 보류 중인 코드 및 구성 변경이 수행되기 전에 신속한 개발 방법을 수용해야 합니다.
 
-OSGI 번들 및 관련 구성이 관리되고 AEM QuickStart의 이전 일부인 웹 콘솔은 더 이상 AEM as a Cloud Service에서 사용할 수 없습니다. 새 개발자 콘솔에서는 대부분의 런타임 정보를 위한 읽기 전용 인터페이스를 제공합니다. 이 콘솔을 사용하여 개발자는 작성자 또는 게시 서비스의 특정 노드를 선택하여 직접 로그인하고 관련 정보를 볼 수 있습니다.
+AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 웹 콘솔 및 AEM 빠른 시작의 이전 부분에 더 이상 액세스할 수 없습니다. 새 개발자 콘솔에서는 대부분의 런타임 정보를 위한 읽기 전용 인터페이스를 제공합니다. 개발자는 이 콘솔을 통해 작성자 또는 게시 서비스의 특정 노드를 선택하고 바로 로그인할 수 있으며 관련 정보를 확인할 수 있습니다.
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ Assets 제품에는 클라우드에서의 차세대 에셋 프로세싱과 고�
 * [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service [아키텍처](/help/overview/architecture.md)
 * [AEM as a Cloud Service에 대한 주요 변경 내용(릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
-* [AEM Sites as a Cloud Service에 대한 주요 변경 내용](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Sites as a Cloud Service의 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
