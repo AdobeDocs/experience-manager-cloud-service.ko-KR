@@ -3,9 +3,9 @@ title: 콘텐츠 미리보기
 description: AEM 미리보기 서비스를 사용하여 콘텐츠를 시작하기 전에 미리 보는 방법에 대해 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 경험이 �
 
 >[!NOTE]
 >
->경험 조각 을 미리 보기에 게시하면 기본적으로 경험 조각 콘솔 또는 편집기에서 페이지에 대해 와 동일한 절차를 따릅니다.
+>경험 조각을 미리보기에 게시하는 것은 기본적으로 경험 조각 콘솔 또는 편집기를 통해 페이지를 게시하는 것과 동일한 절차를 따릅니다.
 
 ## 미리보기에 콘텐츠 게시 {#publishing-content-to-preview}
 
