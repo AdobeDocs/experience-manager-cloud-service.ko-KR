@@ -3,9 +3,9 @@ title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1560'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 * 작성자가 페이지의 일부(경험 조각)를 재사용하려는 경우 경험 조각을 사용할 수 있습니다.
 경험 조각이 없으면 작성자는 해당 조각을 복사하여 붙여넣어야 합니다. 이러한 복사/붙여넣기 경험을 생성하고 유지 관리하는 데는 시간이 오래 걸리고 사용자 오류가 발생합니다.
 경험 조각은 복사/붙여넣기가 필요하지 않습니다.
-* 경험 조각을 사용하여 헤드리스 CMS 사용 사례를 지원할 수 있습니다.
+* 경험 조각을 사용하여 Headless CMS 사용 사례를 지원할 수 있습니다.
 작성자는 작성에만 AEM을 사용하고 고객에게 전달하는 데에는 사용하지 않습니다. 서드파티 시스템/터치포인트는 이러한 경험을 소모한 다음 최종 사용자에게 전달합니다.
 
 >[!NOTE]
@@ -51,8 +51,8 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 
 경험 조각은 다음과 같은 경우 사용해야 합니다.
 
-* 경험을 재사용하려고 할 때
-   * 경험을 동일하거나 유사한 콘텐츠에서 재사용.
+* 경험을 재사용하고자 할 때
+   * 경험을 동일하거나 유사한 콘텐츠에서 재사용하고자 할 때
 * 서드파티의 콘텐츠 전달 플랫폼으로 AEM을 사용할 때
    * AEM을 콘텐츠 전달 플랫폼으로 사용하려는 솔루션.
    * 서드파티 터치포인트에 콘텐츠 임베드.
@@ -111,7 +111,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. 필수 **경험 조각** 폴더로 이동합니다.
 
-1. 폴더를 선택한 다음, **속성**&#x200B;을 선택합니다.
+1. 폴더를 선택한 다음 **속성**&#x200B;을 선택합니다.
 
 1. **허용된 템플릿** 필드에서 필요한 템플릿을 검색할 정규 표현식을 지정합니다.
 
@@ -135,7 +135,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 >
 >지정된 템플릿은 업그레이드 시 덮어쓸 수 있으므로 이 방법으로 **허용된 템플릿**&#x200B;을 변경하지 않는 것이 좋습니다.
 >
->이 대화 상자는 정보용으만 사용하십시오.
+>이 대화 상자는 정보용으로만 사용하십시오.
 
 1. 필요한 **경험 조각** 콘솔로 이동합니다.
 
@@ -357,9 +357,9 @@ URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌
 
 ## 경험 조각 게시 {#publishing-experience-fragments}
 
-경험 조각 게시는 기본적으로 와 동일합니다 [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) ( 경험 조각 콘솔 또는 편집기에서 사용)
+경험 조각을 게시하는 것은 기본적으로 경험 조각 콘솔 또는 편집기를 통해 [페이지를 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)하는 것과 동일한 절차를 따릅니다.
 
-또는 다음을 수행할 수도 있습니다 [미리 보기에 게시](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (경험 조각 콘솔 또는 편집기에서 다시)
+또는 경험 조각 콘솔 및 편집기를 통해 [미리보기에 게시](/help/sites-cloud/authoring/fundamentals/previewing-content.md)할 수도 있습니다.
 
 ## 경험 조각 내보내기 {#exporting-experience-fragments}
 
