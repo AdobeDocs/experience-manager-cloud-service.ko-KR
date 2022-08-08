@@ -3,9 +3,9 @@ title: API 요청 만들기 - Headless 설정
 description: 콘텐츠 조각 콘텐츠의 Headless 전달을 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 에셋 REST API를 사용하는 방법을 알아봅니다.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 GraphQL API를 사용하려면 먼저 GraphQL 끝점을 만들어야 합니다.
 
-1. 다음으로 이동 **도구**, **일반**&#x200B;를 선택하고 을 선택합니다. **GraphQL**.
+1. **도구**, **일반**&#x200B;으로 이동한 다음 **GraphQL**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택합니다.
 1. **새 GraphQL 끝점 만들기** 대화 상자가 열립니다. 여기에서 다음을 지정할 수 있습니다.
    * **이름**: 끝점의 이름입니다. 어떤 텍스트든 입력할 수 있습니다.
@@ -45,14 +45,14 @@ GraphQL 끝점 활성화에 대한 자세한 내용은 [여기](/help/headless/g
 
 정보 설계자는 콘텐츠를 전달하기 위해 채널 끝점에 대한 쿼리를 설계해야 합니다. 일반적으로 이러한 쿼리는 모델당 끝점당 한 번만 고려하면 됩니다. 이 시작 안내서에서는 하나만 만들면 됩니다.
 
-GraphiQL은 AEM 환경에 포함된 IDE입니다. 다음에 액세스 가능/볼 수 있습니다 [엔드포인트 구성](#enable-graphql-endpoint).
+GraphiQL은 AEM 환경에 포함된 IDE입니다. [끝점을 구성](#enable-graphql-endpoint)한 다음 액세스/볼 수 있습니다.
 
-1. AEM as a Cloud Service에 클라우드 서비스로 로그인하고 GraphiQL 인터페이스에 액세스합니다.
+1. AEM as a Cloud Service에 로그인한 다음 GraphiQL 인터페이스에 액세스합니다.
 
    다음 중 하나에서 쿼리 편집기에 액세스할 수 있습니다.
 
    * **도구** -> **일반** -> **GraphQL 쿼리 편집기**
-   * 직접 예 `http://localhost:4502/aem/graphiql.html`
+   * 직접(예: `http://localhost:4502/aem/graphiql.html`)
 
 1. GraphiQL IDE는 GraphQL을 위한 브라우저 내 쿼리 편집기입니다. 이를 사용하여 콘텐츠 조각을 검색하는 쿼리를 작성하여 JSON으로 Headless 방식으로 전달할 수 있습니다.
    * 드롭다운 오른쪽 위를 클릭하면 끝점을 선택할 수 있습니다.
