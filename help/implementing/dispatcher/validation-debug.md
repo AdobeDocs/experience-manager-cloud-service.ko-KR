@@ -3,9 +3,9 @@ title: 디스패처 도구를 사용하여 확인 및 디버깅
 description: 디스패처 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
+source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2653'
 ht-degree: 2%
 
 ---
@@ -229,6 +229,10 @@ Phase 3 finished
 
 Cloud Manager 배포 중 `httpd -t` 구문 검사가 실행되며 모든 오류가 Cloud Manager에 포함됩니다 `Build Images step failure` 로그.
 
+>[!NOTE]
+>
+>자세한 내용은 [자동 로드 및 유효성 검사](#automatic-loading) 실행할 수 있는 효율적인 대체 요소를 위한 섹션 `validate.sh` 각 구성을 수정한 후.
+
 ### 1단계 {#first-phase}
 
 지시어가 허용 목록에추가된이 아닌 경우 도구에서 오류를 기록하고 0이 아닌 종료 코드를 반환합니다. 또한 패턴이 있는 모든 파일을 추가로 스캔합니다 `conf.dispatcher.d/enabled_farms/*.farm` 및 는 다음을 확인합니다.
@@ -418,6 +422,42 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 Dispatcher를 로컬에서 실행할 때 로그가 터미널 출력에 직접 인쇄됩니다. 대부분의 경우 이러한 로그가 DEBUG에 있어야 하며 Docker를 실행할 때 디버그 수준을 매개 변수로 전달하여 수행할 수 있습니다. 예: `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 클라우드 환경에 대한 로그는 Cloud Manager에서 사용할 수 있는 로깅 서비스를 통해 노출됩니다.
+
+### 자동 로드 및 유효성 검사 {#automatic-loading}
+
+>[!NOTE]
+>
+>Windows 운영 체제 제한 사항으로 인해 이 기능은 Linux 사용자만 사용할 수 있습니다.
+
+로컬 유효성 검사를 실행하는 대신`validate.sh`) 및 docker 컨테이너 시작(`docker_run.sh`) 구성을 수정할 때마다 또는 `docker_run_hot_reload.sh` 스크립트.  스크립트는 구성에 대한 변경 사항을 확인하고 자동으로 다시 로드하고 유효성 검사를 다시 실행합니다. 이 옵션을 사용하면 디버깅할 때 상당한 시간을 절약할 수 있습니다.
+
+다음 명령을 사용하여 스크립트를 실행할 수 있습니다. `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+출력의 첫 번째 행은 다음에 대해 실행되는 줄과 비슷합니다 `docker_run.sh`, 예:
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
 
 ## 환경마다 다른 Dispatcher 구성 {#different-dispatcher-configurations-per-environment}
 
