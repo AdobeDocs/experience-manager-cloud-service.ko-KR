@@ -3,10 +3,10 @@ title: 클라우드의 디스패처
 description: '클라우드의 디스패처 '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
+source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '952'
+ht-degree: 6%
 
 ---
 
@@ -86,6 +86,8 @@ AEM Archetype 28 이상에서 제공되는 레거시 구성 모델에서 보다 
 | `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
+| `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+
 
 고객은 임의의 모듈을 추가할 수 없지만, 추가 모듈은 나중에 포함할 수 있습니다. 고객은 SDK에서 유효성 검사기의 명령을 실행하여 주어진 Dispatcher 버전에 사용할 수 있는 허용 목록에 추가하다 지시어 목록을 찾을 수 있습니다.
 
