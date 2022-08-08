@@ -2,16 +2,16 @@
 title: 콘솔용 키보드 단축키
 description: 이러한 키보드 단축키를 사용하여 작성할 때 시간을 절약합니다.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 92%
 
 ---
 
 # 콘솔용 키보드 단축키 {#keyboard-shortcuts-for-consoles}
 
-다음 단축키는 사이트, 에셋, 사용자, 그룹, 프로젝트 및 경험 조각 콘솔에 사용할 수 있습니다.
+다음 단축키는 사이트, 에셋, 사용자, 그룹, 프로젝트 및 경험 조각 콘솔에 사용할 수 있습니다. 에는 특정 단축키도 있습니다 [컨텐츠 조각 콘솔](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
@@ -81,3 +81,7 @@ AEM은 자주 사용하는 일부 기능(편집, 속성, 복사/붙여넣기, �
 ## 페이지 편집기의 키보드 단축키 {#keyboard-shortcuts-for-the-page-editor}
 
 AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 콘솔에 사용되는 키보드 단축키도 있고 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)에 사용되는 키보드 단축키도 있습니다.
+
+## 컨텐츠 조각 콘솔의 키보드 단축키 {#keyboard-shortcuts-for-the-content-fragments-console}
+
+일부 키보드 단축키는 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)

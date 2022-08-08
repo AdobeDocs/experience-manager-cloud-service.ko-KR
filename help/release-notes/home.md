@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 57e1f39394f501b8fc2ab8ff5f7d12f6365016e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '616'
+ht-degree: 95%
 
 ---
 
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2022.6.0 |
+| 버전 | 2022.7.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 
 ## 릴리스 준비 방법 {#how-to-prepare}
 
-[!DNL Adobe Experience Manager] as a Cloud Service의 지속적인 릴리스 모델과 함께, 애플리케이션은 지속적으로 업데이트됩니다. 업데이트에는 기능 릴리스와 주요 업데이트의 두 가지 유형이 있습니다.
+[!DNL Adobe Experience Manager] as a Cloud Service의 지속적인 릴리스 모델과 함께, 애플리케이션은 지속적으로 업데이트됩니다. 업데이트, 기능 릴리스 및 유지 관리 릴리스에는 두 가지 유형이 있습니다.
 
 * 기능 릴리스는 예측 가능한 월별 주기로 수행되며 새로운 기능 및 제품 혁신에 초점을 맞춥니다.
-* 주요 업데이트는 수시로 수행되며 보안 업데이트, 버그 수정 및 성능 개선에 초점을 맞춥니다. 이를 통해 [!DNL Adobe Experience Manager] as a Cloud Service는 항상 중요한 수정 사항을 최신 상태로 유지할 수 있습니다.
+* 유지 관리 릴리스는 자주 수행되며 보안 업데이트, 버그 수정 및 성능 향상에 중점을 둡니다. 이를 통해 [!DNL Adobe Experience Manager] as a Cloud Service는 항상 중요한 수정 사항을 최신 상태로 유지할 수 있습니다.
 
 [!DNL Adobe Experience Manager] as a Cloud Service는 혁신의 속도와 더불어 예정된 기능을 프로덕션으로 출시하기 한 달 전에 미리 볼 수 있는 유연성도 제공합니다. 이를 통해 사전에 자체 맞춤형 환경에서 기능을 테스트하고, 내부 사용자를 교육하고 준비시킴으로써 예정된 릴리스가 조직에 미치는 영향력을 평가할 수 있습니다.
 
@@ -56,9 +56,9 @@ ht-degree: 0%
 | [에셋 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
 | [AEM as a Cloud Service로 이동](/help/journey-migration/getting-started.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 살펴보고 AEM의 강력한 기능을 사용하여 경험을 구축하고 맞춤화하는 방법에 대해 알아봅니다. |
-| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 헤드리스 기능을 통한 가이드 여정을 살펴보고 귀하의 첫 헤드리스 프로젝트를 준비하십시오. |
+| [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 Headless 기능을 통한 가이드 여정을 살펴보고 귀하의 첫 Headless 프로젝트를 준비하십시오. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
-| [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
+| [작업 사용 안내서](/help/operations/home.md) | 색인화 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
 | [Commerce 사용 안내서](/help/commerce-cloud/home.md) | AEM as a Cloud Service의 Commerce Integration Framework에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}

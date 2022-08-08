@@ -3,10 +3,10 @@ title: 콘텐츠 조각 콘솔
 description: 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 중점을 두고 있지만 페이지 작성 시에도 사용되는 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '551'
-ht-degree: 100%
+source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 97%
 
 ---
 
@@ -27,6 +27,10 @@ ht-degree: 100%
 >* 이 **콘텐츠 조각** 콘솔
 >* **에셋** 콘솔 - [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) 참조
 
+
+>[!NOTE]
+>
+>선택 항목 [이 콘솔에서는 키보드 단축키를 사용할 수 있습니다](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 콘텐츠 조각 콘솔은 전역 탐색의 최상위 수준에서 직접 액세스할 수 있습니다.
 

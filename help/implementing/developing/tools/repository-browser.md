@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: 저장소 브라우저는 작성자, 게시 및 미리 보기 계층의 모든 환경을 위한 저장소에 읽기 전용 보기를 제공합니다.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
+source-git-commit: 46d8d78bd14f6e311d62266aa19825f82f82030d
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
@@ -66,17 +66,13 @@ ht-degree: 2%
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-<!-- Alexandru: temporarily commenting this out, please don't delete. 
+또는 경로에 직접 을 입력하여 경로를 탐색할 수 있습니다 **경로** 필드 를 채울 수 있습니다. 이렇게 하면 왼쪽의 컨텐츠 계층 보기에서 해당 위치도 확장됩니다.
 
-Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+![reportBrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
+왼쪽의 폴더를 클릭할 때마다 경로 필드가 자동으로 해당 위치로 채워집니다. 이 메서드는 나중에 사용하기 위해 값을 복사하여 붙여넣는 데 유용합니다.
 
-Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
-
-Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
-
--->
+또한 폴더를 클릭하면 해당 폴더의 경로를 포함하도록 URL이 동적으로 수정됩니다. 이렇게 하면 책갈피가 가능한 URL이 허용됩니다.
 
 게시의 경우 기본적으로 저장소 브라우저에는 공개 컨텐츠만 표시되므로 다음과 같은 특정 폴더가 표시됩니다 `/conf` 또는 `/home` 표시되지 않습니다.
 

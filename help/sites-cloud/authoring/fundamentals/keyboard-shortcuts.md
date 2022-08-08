@@ -2,16 +2,16 @@
 title: 페이지 편집을 위한 키보드 단축키
 description: 페이지 편집을 위한 일부를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '219'
-ht-degree: 100%
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 82%
 
 ---
 
 # 페이지 편집을 위한 키보드 단축키 {#keyboard-shortcuts-when-editing-pages}
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지 편집에 적용되고 일부는 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)에 적용됩니다.
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지를 편집할 때 적용되고 일부는 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)및 특히 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 >
 >사용자가 미리보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키는 더 이상 사용할 수 없습니다. 이 단축키를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
 
-데스크탑 사용자는 [콘솔](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
+데스크톱 사용자는 [콘솔](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)및 특히 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

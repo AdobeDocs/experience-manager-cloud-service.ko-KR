@@ -3,22 +3,15 @@ title: Adobe Analytics와 Experience Cloud 설정 자동화 통합
 description: Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 통해 Experience Platform Launch 및 Adobe Analytics와 Experience Manager Sites를 통합하고 측정하는 간단하고 자동화된 방법을 제공합니다. 내 사이트에 자동화된 설정을 사용하는 방법에 대해 알아보십시오.
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
-index: false
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
-source-wordcount: '639'
-ht-degree: 100%
+source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 83%
 
 ---
 
 # Adobe Analytics와 Experience Cloud 설정 자동화 통합 {#integrate-adobe-analytics-automation-setup}
-
->[!CAUTION]
->
-> 이 기능은 현재 내부 Beta 상태입니다. 목표 릴리스 날짜는 2022년 1분기입니다.
 
 Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 통해 Experience Platform Launch 및 Adobe Analytics와 Experience Manager Sites를 통합하고 측정하는 간단하고 자동화된 방법을 제공합니다.
 
@@ -26,11 +19,27 @@ Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 �
 
 이 비디오에서는 Experience Cloud 설정 자동화를 사용하여 AEM 사이트를 Experience Platform Launch 및 Analytics와 통합하는 방법에 대해 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/339605/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
 ## 요구 사항
 
 자동화 설정은 특히 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)가 활성화된 [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)를 사용하여 구축된 AEM 사이트를 사용하여 작업하도록 설계되었습니다. [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용하거나 [사이트 템플릿](/help/journey-sites/quick-site/create-site.md)을 사용하여 사이트를 생성함으로써 이러한 기능이 자동으로 활성화되어 있는 새 사이트를 생성할 수 있습니다.
+
+## 사전 요구 사항 {#prerequisites}
+
+이 기능을 사용하기 전에 다음 지침에 따라 전제 조건 서비스가 사용자 환경에서 올바르게 설정되었는지 확인하는 것이 중요합니다.
+
+1. Adobe Admin Console에 로그인합니다(https://adminconsole.adobe.com/).
+1. 오른쪽 상단 모서리에서 적절한 IMS 조직 ID를 선택했는지 확인합니다.
+1. 제품 탐색 옵션을 클릭합니다.
+1. IMS 조직에 &quot;Adobe Experience Manager as a Cloud Service&quot;이 프로비저닝되었는지 확인합니다.
+1. IMS 조직에 &quot;Adobe Analytics&quot;이 프로비저닝되었는지 확인합니다.
+1. Cloud Manager (https://experience.adobe.com/cloud-manager)으로 이동합니다.
+1. 적절한 프로그램을 선택합니다.
+1. 환경이 최신 버전의 Cloud Service에 있는지 확인합니다(없는 경우 메뉴 옵션에서 업데이트 를 선택합니다).
+1. Cloud Manager에서 전체 스택 파이프라인을 실행합니다.
+
+이제 Experience Cloud 설정 자동화를 위해 환경을 준비해야 합니다.
 
 ## 설정 방법
 

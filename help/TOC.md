@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
+source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
 workflow-type: tm+mt
-source-wordcount: '3697'
+source-wordcount: '3709'
 ht-degree: 99%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 99%
    + 일반 AEMaaCS 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [2022.6.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [2022.5.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
          + [2022.4.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [2022.3.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -290,6 +291,7 @@ ht-degree: 99%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [구조 트리](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [미리보기 - JSON 표현식](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [컨텐츠 조각 콘솔 - 키보드 단축키](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
          + [프런트-엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -396,6 +398,7 @@ ht-degree: 99%
       + [XMP 메타데이터](/help/assets/xmp-metadata.md)
       + [MediaLibrary 기능](/help/assets/medialibrary.md)
       + [에셋 메타데이터 가져오기 및 내보내기](/help/assets/metadata-import-export.md)
+      + [자산 업로드 제한 구성](/help/assets/configure-asset-upload-restrictions.md)
    + 에셋 공유 및 배치 {#brand-portal}
       + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [ [!DNL Brand Portal]에 에셋 게시](/help/assets/publish-to-brand-portal.md)

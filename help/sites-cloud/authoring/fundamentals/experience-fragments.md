@@ -2,9 +2,9 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
-workflow-type: ht
-source-wordcount: '1560'
+source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
+workflow-type: tm+mt
+source-wordcount: '1566'
 ht-degree: 100%
 
 ---
@@ -346,6 +346,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
       * **Pinterest 보드**
    * **참조**
       * 참조 목록입니다
+   * **개인화**
+      * **ContextHub 경로**
+      * **세그먼트 경로**
+      * **브랜드**
 
 ## 일반 HTML 렌디션 {#the-plain-html-rendition}
 
