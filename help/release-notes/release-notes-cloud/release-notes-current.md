@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
+source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 22%
+source-wordcount: '955'
+ht-degree: 21%
 
 ---
 
@@ -111,6 +111,11 @@ ht-degree: 22%
 ### [!DNL Experience Manager] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-foundation}
 
 * 이제 AEM as a Cloud Service가 통합 쉘과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
+
+## Adobe Learning Manager 커넥터 {#learn-manage}
+
+* 새로운 Adobe Learning Manager에는 Adobe Experience Manager Sites, Marketo Engage 및 Adobe Commerce에 대한 커넥터가 있습니다. 자세한 내용은 다음을 참조하십시오. [Adobe Learning Manager 사용 안내서](https://helpx.adobe.com/learning-manager/user-guide.html).
+
 
 ## Cloud Manager {#cloud-manager}
 
