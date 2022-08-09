@@ -3,7 +3,7 @@ title: '워크플로우를 다른 사용자에게 할당하고, 이메일을 보
 description: Forms 중심의 워크플로우를 통해 적응형 Forms 기반 워크플로우를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색 및 여러 데이터 소스로 보내고, 이메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
+source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
 workflow-type: tm+mt
 source-wordcount: '6098'
 ht-degree: 1%
@@ -54,18 +54,25 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
 * **[!UICONTROL 기한 후 시간 초과]**: 시간 초과 처리기 선택 필드를 사용하려면 이 옵션을 선택합니다.
 * **[!UICONTROL 시간 제한 처리기]**: 작업 할당 단계가 기한 일자를 넘을 때 실행할 스크립트를 선택합니다. 다음 위치의 CRX 저장소에 배치된 스크립트 [앱]/fd/dashboard/scripts/timeoutHandler 를 선택할 수 있습니다. 지정된 경로가 crx-repository에 없습니다. 관리자는 이 경로를 사용하기 전에 만듭니다.
 * **[!UICONTROL 작업 세부 정보의 마지막 작업에서 작업 및 주석 강조 표시]**: 작업의 작업 세부 사항 섹션에서 마지막으로 수행한 작업과 받은 설명을 표시하려면 이 옵션을 선택합니다.
-* **[!UICONTROL 유형]**: 워크플로우를 시작할 때 채울 문서 유형을 선택합니다. 적응형 양식, 읽기 전용 적응형 양식, 비대화형 PDF 문서를 선택할 수 있습니다. <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+* **[!UICONTROL 유형]**: 워크플로우를 시작할 때 채울 문서 유형을 선택합니다. 적응형 양식, 읽기 전용 적응형 양식, 비대화형 PDF 문서를 선택할 수 있습니다.
+
+<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+
+
 * **[!UICONTROL 적응형 양식 사용]**: 입력 적응형 양식을 찾을 방법을 지정합니다. 유형 드롭다운 목록에서 적응형 양식 또는 읽기 전용 적응형 양식을 선택하는 경우 이 옵션을 사용할 수 있습니다. 워크플로우에 제출된 적응형 양식을 사용하거나, 절대 경로에서 사용하거나, 변수의 경로에서 사용할 수 있습니다. 문자열 유형의 변수를 사용하여 경로를 지정할 수 있습니다.\
    여러 적응형 Forms을 워크플로우와 연결할 수 있습니다. 따라서 사용 가능한 입력 방법을 사용하여 런타임에 적응형 양식을 지정할 수 있습니다.
 
 <!-- 
+
 * **[!UICONTROL Use Interactive Communication]**: Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
 
 > [!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  -->
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
-* **[!UICONTROL 적응형 양식 경로]**: 적응형 양식의 경로를 지정합니다.<!--  or Interactive Communication.--> 적응형 양식을 사용할 수 있습니다 <!-- or interactive communication --> 워크플로우에 제출되거나, 절대 경로에서 사용할 수 있거나, 문자열 데이터 유형의 변수에 저장된 경로에서 적응형 양식을 검색합니다.
+-->
+
+* **[!UICONTROL 적응형 양식 경로]**: 적응형 양식의 경로를 지정합니다. 워크플로우에 제출되거나, 절대 경로에서 사용할 수 있는 적응형 양식을 사용하거나, 문자열 데이터 유형의 변수에 저장된 경로에서 적응형 양식을 검색할 수 있습니다.
 * **[!UICONTROL 을 사용하여 입력 PDF 선택]**: 비대화형 PDF 문서의 경로를 지정합니다. 유형 필드에서 비대화형 PDF 문서를 선택하면 필드를 사용할 수 있습니다. 페이로드를 기준으로 하거나 절대 경로에 저장하거나 문서 데이터 유형의 변수를 사용하여 입력 PDF을 선택할 수 있습니다. 예, [Payload_Directory]/Workflow/PDF/credit-card.pdf 경로가 crx-repository에 없습니다. 관리자는 이 경로를 사용하기 전에 만듭니다. PDF 경로 옵션을 사용하려면 레코드 문서 옵션을 활성화하거나 적응형 Forms 기반의 양식 템플릿이 필요합니다.
 * **[!UICONTROL 완료된 작업의 경우 적응형 양식을 다음으로 렌더링합니다.]**: 작업이 완료됨으로 표시되면 적응형 양식을 읽기 전용 적응형 양식 또는 PDF 문서로 렌더링할 수 있습니다. 적응형 양식을 기록 문서로 렌더링하려면 기록 문서 옵션이 활성화되거나 양식 서식 파일 기반의 적응형 Forms이 필요합니다.
 * **[!UICONTROL 미리 채워짐]**: 아래 나열된 다음 필드는 작업에 대한 입력으로 사용됩니다.
@@ -73,14 +80,23 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
    * **[!UICONTROL 을 사용하여 입력 데이터 파일 선택]**: 입력 데이터 파일의 경로(.json, .xml, .doc 또는 양식 데이터 모델). 페이로드를 기준으로 하는 경로를 사용하여 입력 데이터 파일을 검색하거나 Document, XML 또는 JSON 데이터 유형의 변수에 저장된 파일을 검색할 수 있습니다. 예를 들어 파일에는 AEM 받은 편지함 애플리케이션을 통해 양식에 대해 제출된 데이터가 포함되어 있습니다. 경로의 예는 다음과 같습니다 [Payload_Directory]/workflow/data.
    * **[!UICONTROL 을 사용하여 입력 첨부 파일 선택]**: 위치에서 사용할 수 있는 첨부 파일은 작업과 관련된 양식에 첨부됩니다. 페이로드에 상대적인 경로를 사용하거나 문서의 변수에 저장된 첨부 파일을 검색할 수 있습니다. 경로의 예는 다음과 같습니다 [Payload_Directory]/attachments/. 페이로드를 기준으로 배치된 첨부 파일을 지정하거나 문서 유형(배열 목록 > 문서) 변수를 사용하여 적응형 양식의 입력 첨부 파일을 지정할 수 있습니다.
 
-   <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+   <!-- 
+    
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
-    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. -->
+    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. 
+    
+    -->
+
    * **[!UICONTROL 요청 속성 매핑]**: 요청 속성 매핑 섹션을 사용하여 [요청 속성의 이름 및 값](work-with-form-data-model.md#bindargument). 요청에 지정된 속성 이름 및 값을 기반으로 데이터 소스에서 세부 정보를 검색합니다. 리터럴 값 또는 문자열 데이터 유형의 변수를 사용하여 요청 속성 값을 정의할 수 있습니다.
 
-   <!--  The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. -->
+   <!--  
+     
+     The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
+     
+     -->
 
 * **[!UICONTROL 제출된 정보]**: 아래 나열된 다음 필드는 작업의 출력 위치로 사용됩니다.
 
@@ -88,9 +104,13 @@ Forms 중심의 워크플로우 단계는 AEM Workflow에서 AEM Forms 관련 �
    * **[!UICONTROL 을 사용하여 첨부 파일 저장]**: 작업에 제공된 양식 첨부 파일을 저장합니다. 페이로드를 기준으로 하는 경로를 사용하여 첨부 파일을 저장하거나 문서 데이터 유형의 배열 목록에 저장할 수 있습니다.
    * **[!UICONTROL 다음을 사용하여 기록 문서 저장]**: 레코드 문서를 저장하는 경로입니다. 예, [Payload_Directory]/DocumentofRecord/credit-card.pdf 페이로드를 기준으로 하는 경로를 사용하여 레코드 문서를 저장하거나 문서 데이터 유형의 변수에 저장할 수 있습니다. 선택하는 경우 **[!UICONTROL 페이로드에 대한 상대]** 옵션을 선택하면 경로 필드가 비어 있는 경우 기록 문서가 생성되지 않습니다. 이 옵션은 유형 드롭다운 목록에서 적응형 양식을 선택하는 경우에만 사용할 수 있습니다.
 
-   <!-- * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+   <!-- 
+    
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
+    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
+    
+    -->
 
 * **[!UICONTROL 할당자]** > **[!UICONTROL 옵션 할당]**: 사용자에게 작업을 할당할 방법을 지정합니다. 참가자 선택기 스크립트를 사용하여 사용자 또는 그룹에 작업을 동적으로 할당하거나 특정 AEM 사용자 또는 그룹에 작업을 지정할 수 있습니다.
 * **[!UICONTROL 참가자 선택기]**: 이 옵션은 **[!UICONTROL 동적으로 사용자 또는 그룹에 추가]** 옵션 지정 필드에서 옵션이 선택되어 있습니다. ECMAScript 또는 서비스를 사용하여 사용자나 그룹을 동적으로 선택할 수 있습니다. 자세한 내용은 [사용자에게 워크플로우를 동적으로 할당](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 및 [사용자 지정 Adobe Experience Manager 동적 참가자 단계 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
@@ -183,7 +203,12 @@ PDF/A 단계로 변환하려면 다음 속성을 사용합니다.
 
 * **[!UICONTROL 워크플로우 메타데이터]**: 사용할 값이 워크플로우 메타데이터 속성에 저장되면 옵션을 사용합니다. 옵션을 선택한 후 워크플로우 메타데이터 옵션 아래의 빈 텍스트 상자에 메타데이터 속성 이름을 입력합니다. 예를 들어 emailAddress가 있습니다.
 
-<!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
+<!-- 
+
+* **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. 
+
+-->
+
 * **[!UICONTROL 이미지]**: 이메일에 이미지를 포함하려면 옵션을 사용합니다. 옵션을 선택한 후 이미지를 찾아 선택합니다. 이미지 옵션은 이메일 템플릿에서 사용할 수 있는 이미지 태그(&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>)에만 사용할 수 있습니다.&#42;
 
 **[!UICONTROL 보낸 사람 / 받는 사람의 이메일 주소]**: 을(를) 선택합니다 **[!UICONTROL 리터럴]** 이메일 주소를 수동으로 지정하거나 선택하는 옵션 **[!UICONTROL 워크플로우 메타데이터에서 검색]** 메타데이터 속성에서 이메일 주소를 검색하는 옵션입니다. 에 대한 메타데이터 속성 배열 목록을 지정할 수도 있습니다 **[!UICONTROL 워크플로우 메타데이터에서 검색]** 선택 사항입니다. 을(를) 선택합니다 **[!UICONTROL 변수]** 문자열 데이터 유형의 변수에 저장된 값에서 이메일 주소를 검색하는 옵션입니다.
@@ -367,7 +392,9 @@ DDX 호출 단계에는 다음 속성이 있습니다.
 * **[!UICONTROL 서명자를 선택하는 스크립트 또는 서비스]**: 이 옵션은 서명자 선택 필드에서 동적으로 옵션을 선택한 경우에만 사용할 수 있습니다. ECMAScript 또는 서비스를 지정하여 문서에 대한 서명자 및 확인 옵션을 선택할 수 있습니다.
 * **[!UICONTROL 서명자 세부 정보]**: 서명자 선택 필드에서 수동 옵션을 선택한 경우에만 옵션을 사용할 수 있습니다. 이메일 주소를 지정하고 선택적 확인 메커니즘을 선택합니다. 2단계 확인 메커니즘을 선택하기 전에 구성된 [!DNL Adobe Sign] 계정이 필요합니다. 문자열 데이터 유형의 변수를 사용하여 이메일, 국가 코드 및 전화 번호 필드에 대한 값을 정의할 수 있습니다. 국가 코드 및 전화 번호 필드는 2단계 확인 드롭다운 목록에서 전화 확인을 선택한 경우에만 표시됩니다.
 
-<!-- ## Document Services steps {#document-services-steps}
+<!-- 
+
+## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
@@ -519,4 +546,6 @@ The Generate Printed Output step has the following properties:
 * **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.-->
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
+    
+    -->

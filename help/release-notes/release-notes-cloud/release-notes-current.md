@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
+source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '956'
 ht-degree: 21%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 21%
 
 ### [!DNL Forms]의 새로운 기능 {#forms-features}
 
-* **스크리블 서명에 대한 키보드 입력 지원**: 적응형 Forms이 터치 장치에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구 사항은 서명을 지원하는 것입니다. 터치 장치에서 문서에 서명하는 것은 허용되는 양식 서명 방법이 되었다. 적응형 Forms에는 스크리블 서명 및 Adobe Sign에 대한 기본 지원 기능이 있습니다. 이제 이미 지원되는 다른 옵션과 함께 키보드를 사용하여 적응형 양식에서 스크리블 서명을 사용할 수도 있습니다. 또한 접근성 준수를 강화하는 데에도 도움이 됩니다.
+* **[스크리블 서명에 대한 키보드 입력 지원](/help/forms/signing-forms-using-scribble.md)**: 적응형 Forms이 터치 장치에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구 사항은 서명을 지원하는 것입니다. 터치 장치에서 문서에 서명하는 것은 허용되는 양식 서명 방법이 되었다. 적응형 Forms에는 스크리블 서명 및 Adobe Sign에 대한 기본 지원 기능이 있습니다. 이제 이미 지원되는 다른 옵션과 함께 키보드를 사용하여 적응형 양식에서 스크리블 서명을 사용할 수도 있습니다. 또한 접근성 준수를 강화하는 데에도 도움이 됩니다.
 
 ![iphone에서 스크리블 서명을 위한 키보드 입력 지원](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
@@ -72,13 +72,17 @@ ht-degree: 21%
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
-<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+<!-- 
 
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
 
-* **호출 - AEM 워크플로우 단계**: DDX(Document Description XML)는 요소가 문서 빌딩 블록을 나타내는 선언적 마크업 언어입니다. 이러한 빌딩 블록에는 PDF 및 XDP 문서와 주석, 책갈피 및 스타일이 지정된 텍스트와 같은 기타 요소가 포함됩니다. DDX 문서는 문서의 템플릿이며 결과 문서에 표시되어야 하는 소스 문서의 원하는 특성을 설명합니다. 하나의 DDX를 다양한 소스 문서와 함께 사용할 수 있습니다. 호출 단계 및 AEM Workflow를 사용하여 문서 조립, Acrobat 및 XFA Forms 작성 및 수정, 및 [DDX 참조](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 설명서.
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
 
-* **PDF/A로 변환 - AEM 워크플로우 단계**: PDF/A는 문서의 컨텐츠를 장기 보존하기 위한 보관 형식이며 모든 글꼴이 포함되고 파일의 압축이 해제됩니다. 이제 AEM Workflow에서 PDF/A로 변환 단계를 사용하여 문서 또는 파일을 어떤 형식의 형식으로든 PDF/A 형식으로 변환할 수 있습니다.
+-->
+
+* **[DDX 호출 - AEM 워크플로우 단계](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: DDX(Document Description XML)는 요소가 문서 빌딩 블록을 나타내는 선언적 마크업 언어입니다. 이러한 빌딩 블록에는 PDF 및 XDP 문서와 주석, 책갈피 및 스타일이 지정된 텍스트와 같은 기타 요소가 포함됩니다. DDX 문서는 문서의 템플릿이며 결과 문서에 표시되어야 하는 소스 문서의 원하는 특성을 설명합니다. 하나의 DDX를 다양한 소스 문서와 함께 사용할 수 있습니다. 호출 단계 및 AEM Workflow를 사용하여 문서 조립, Acrobat 및 XFA Forms 작성 및 수정, 및 [DDX 참조](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 설명서.
+
+* **[PDF/A로 변환 - AEM 워크플로우 단계](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A는 문서의 컨텐츠를 장기 보존하기 위한 보관 형식이며 모든 글꼴이 포함되고 파일의 압축이 해제됩니다. 이제 AEM Workflow에서 PDF/A로 변환 단계를 사용하여 문서 또는 파일을 어떤 형식의 형식으로든 PDF/A 형식으로 변환할 수 있습니다.
 
 
 ## CIF 추가 기능 {#cloud-services-cif}
