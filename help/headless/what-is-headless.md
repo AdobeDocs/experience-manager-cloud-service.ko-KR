@@ -2,10 +2,10 @@
 title: Headless CMS란 무엇입니까?
 description: Headless CMS에 대해 알아봅니다. 어떻게 작동합니까? 대안 및 차이점은 무엇입니까? Headless CMS를 사용하려는 이유는 무엇입니까?
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
-source-git-commit: bd333d17f96e74227ac148be7164986ea11a0a23
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 94%
 
 ---
 
@@ -31,11 +31,7 @@ CMS(콘텐츠 관리 시스템)는 온라인 경험을 제공하는 데 사용�
 
 이제 Headless 콘텐츠 관리 시스템을 통해 백엔드와 프론트엔드가 분리됩니다.
 
-Headless 부분은 콘텐츠 백엔드입니다.
-
-* “*Headless 콘텐츠 관리 시스템 또는 Headless CMS는 철저하게 콘텐츠 저장소로 구축된 백엔드 전용 콘텐츠 관리 시스템(CMS)으로, API를 통해 콘텐츠에 액세스하여 이를 모든 디바이스에 표시할 수 있도록 합니다.*
-
-   [위키백과](https://en.wikipedia.org/wiki/Headless_content_management_system)를 참조하십시오.
+헤드리스 부분은 컨텐츠 백엔드입니다. 헤드리스 CMS(Content Management System)는 백 엔드 전용 컨텐츠 관리 시스템으로, API를 통해 컨텐츠를 액세스할 수 있도록 하는 컨텐츠 저장소로서 명시적으로 설계되고 구축됩니다.
 
 독립적으로 개발 및 유지 관리되는 프론트엔드는 일반적으로 JSON 형식인 콘텐츠 배달 API를 사용하여 Headless 백엔드의 콘텐츠를 가져옵니다. 예를 들어 React 또는 Angular 애플리케이션(SPA(단일 페이지 애플리케이션))일 수 있습니다.
 

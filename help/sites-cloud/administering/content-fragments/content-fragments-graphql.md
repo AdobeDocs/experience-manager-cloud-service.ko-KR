@@ -2,10 +2,10 @@
 title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달
 description: GraphQL에서 Headless 콘텐츠 전달을 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '751'
-ht-degree: 100%
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,11 +34,7 @@ ht-degree: 100%
 
 ## Headless CMS {#headless-cms}
 
-Headless CMS(콘텐츠 관리 시스템)은 다음과 같이 설명할 수 있습니다.
-
-* “*Headless 콘텐츠 관리 시스템 또는 Headless CMS는 철저하게 콘텐츠 저장소로 구축된 백엔드 전용 콘텐츠 관리 시스템(CMS)으로, API를 통해 콘텐츠에 액세스하여 이를 모든 디바이스에 표시할 수 있도록 합니다.*
-
-   [위키백과](https://en.wikipedia.org/wiki/Headless_content_management_system)를 참조하십시오.
+CMS(Headless Content Management System)는 백엔드 전용 컨텐츠 관리 시스템으로, API를 통해 컨텐츠를 액세스하여 모든 장치에 표시할 수 있도록 하는 컨텐츠 저장소로 명시적으로 설계되고 빌드됩니다.
 
 AEM에서의 콘텐츠 조각 작성 측면에서 볼 때 이는 다음을 의미합니다.
 
