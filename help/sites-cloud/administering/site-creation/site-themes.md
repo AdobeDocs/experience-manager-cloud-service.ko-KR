@@ -4,10 +4,10 @@ description: AEM 사이트 테마를 사용하여 사이트의 스타일 및 디
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: 62ae8bf09e616135cbd5498d1d083a74bb6b0e2a
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 사이트 템플릿을 통해 생성되는 사이트를 사용하면 테마�
 
 ## 표준 사이트 테마 {#standard-site-theme}
 
-Adobe는 나만의 테마를 만들 때 기준으로 사용할 수 있는 모범 참조 테마를 제공합니다. [표준 사이트 테마는 GitHub에서 사용할 수 있습니다.](https://github.com/adobe/aem-site-template-standard-theme-e2e)
+Adobe는 나만의 테마를 만들 때 기준으로 사용할 수 있는 모범 참조 테마를 제공합니다. [표준 사이트 테마는 GitHub에서 사용할 수 있습니다](https://github.com/adobe/aem-site-template-standard/tree/main/theme).
 
 ## 사이트 테마 개발 {#developing-themes}
 
