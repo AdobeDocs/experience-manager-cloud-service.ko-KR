@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: e34759aeea2e3819cf76a8bba433b96ae201c16f
-workflow-type: ht
-source-wordcount: '3006'
-ht-degree: 100%
+source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
+workflow-type: tm+mt
+source-wordcount: '3016'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ VPN 및 전용 이그레스 IP 주소가 필요하지 않은 경우 전용 이�
 
 프로그램에서 설정한 유연한 포트 이그레스 구성이 준비되면 환경별로 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 끝점을 호출하여 환경 수준에서 네트워킹을 활성화하고 필요한 경우 포트 전달 규칙을 선언해야 합니다. 유연성을 제공하기 위해 환경별로 매개변수를 구성할 수 있습니다.
 
-포트 전달 규칙은 80/443 이외의 모든 포트에 대해 대상 호스트(포트 포함, 이름 또는 IP) 집합을 지정하여 선언해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
+포트 전달 규칙은 80/443 이외의 대상 포트에 대해 선언되어야 하지만, http 또는 https 프로토콜을 사용하지 않는 경우에만 대상 호스트 집합(이름 또는 IP, 포트 포함)을 지정하여 선언해야 합니다. 각 대상 호스트에 대해 고객은 원하는 대상 포트를 30000에서 30999 사이의 포트에 매핑해야 합니다.
 
 API는 몇 초 안에 응답하여 업데이트 상태를 표시해야 하고, 약 10분 후 끝점의 `GET` 메서드는 고급 네트워킹이 활성화되었음을 표시해야 합니다.
 
