@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 21%
@@ -109,7 +109,7 @@ ht-degree: 21%
 
 ### AEM as a Cloud Service SDK Dispatcher 도구 개선 사항 {#dispatcher-tools-enhancements}
 
-* Apache는 `update_sdk.sh` 스크립트. apache 및 dispatcher 구성에 대한 후속 변경 사항을 자동으로 로드 및 확인하므로 개발자 속도가 향상됩니다. 디스패처 도구 유연한 모드에서만 지원됩니다. 또한, [Apache 및 Dispatcher 구성 디버깅](/help/implementing/dispatcher/validation-debug.md#automatic-loading) 자동 로드 및 유효성 검사에 대한 자세한 내용은 를 참조하십시오.
+* Apache는 `docker_run_hot_reload.sh` 스크립트. apache 및 dispatcher 구성에 대한 후속 변경 사항을 자동으로 로드 및 확인하므로 개발자 속도가 향상됩니다. 디스패처 도구 유연한 모드에서만 지원됩니다. 또한, [Apache 및 Dispatcher 구성 디버깅](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) 자동 재로드 및 유효성 검사에 대한 자세한 내용은 를 참조하십시오.
 * 로컬 Apache/Dispatcher 구성은 클라우드 환경의 변경 사항을 보다 밀접하게 추적하여 두 환경 간의 패리티를 증가시킵니다.
 
 ### [!DNL Experience Manager] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-foundation}
