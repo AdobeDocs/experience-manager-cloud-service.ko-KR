@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Cloud Manager 2022.7.0의 릴리스 노트
-description: 다음은 AEM as a Cloud Service의 Cloud Manager 2022.7.0에 대한 릴리스 노트입니다.
+title: Adobe Experience Manager as a Cloud Service Cloud Manager 2022.8.0의 릴리스 노트
+description: 다음은 AEM as a Cloud Service의 Cloud Manager 2022.8.0에 대한 릴리스 노트입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 9f76f77365c0e9b2986e9bb3560bc039e0ca7961
+source-git-commit: 0476fda614ce693222ae2e2fb62ea2f84243f80c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 3%
+source-wordcount: '187'
+ht-degree: 7%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service Cloud Manager 2022.7.0의 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service Cloud Manager 2022.8.0의 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2022.7.0에 대한 릴리스 노트를 문서화합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2022.8.0에 대한 릴리스 노트를 문서화합니다.
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ ht-degree: 3%
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 릴리스 2022.7.0의 출시일은 2022년 8월 8일입니다. 다음 릴리스는 2022년 8월 11일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 릴리스 2022.8.0의 릴리스 날짜는 2022년 8월 11일입니다. 다음 릴리스는 2022년 9월 9일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 Cloud Manager 사용자는 **시작** 언제든지 랜딩 페이지에 카드를 넣을 수 있습니다.
-* The popuover on the **[컨텐츠 복원](/help/operations/backup.md)** 이제 환경 세부 사항 페이지의 탭에 사용자가 변경 사항을 로컬로 볼 수 있도록 해주는 유용한 git 명령 목록이 표시됩니다.
+* 에는 새로 고친 UI 경험이 있습니다 [환경 추가 워크플로우.](/help/implementing/cloud-manager/manage-environments.md)
+* [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) cloud Manager에 포함된 가 버전 37으로 업데이트되었습니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 프로그램 작성 중 New Relic 하위 계정 만들기와 관련된 UI의 피드백 메시지가 개선되었습니다.
-* 이제 사용자는 Cloud Manager UI에서 사용자 지정 UI 테스트 로그를 다운로드할 수 있습니다.
-* 프런트 엔드 파이프라인의 승인 후 배포 단계를 실행하기 위한 호출이 수행되지 않던 문제가 수정되었습니다.
+* Cloud Manager UI에서 New Relic 사용자를 만들거나 삭제하지 않은 문제가 수정되었습니다.
+* 자주 사용하지 않는 저장소 생성 오류가 발생하는 경우가 더 탄력적으로 되었습니다.
+* 이제 다시 시도 도입으로 인해 VSTS 조직 설정 오류가 거의 발생하지 않습니다.
+* 이제 New Relic 하위 계정 사용자 생성 중에 유효성 검사가 개선되어 특정 오류가 방지됩니다.
