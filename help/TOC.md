@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d84e6f2cc8345598af64f5b33ef88b26faa15fa
+source-git-commit: 5e8f70da6de27bf59e4a89e196a016820245a068
 workflow-type: tm+mt
-source-wordcount: '3717'
+source-wordcount: '3709'
 ht-degree: 99%
 
 ---
@@ -503,7 +503,6 @@ ht-degree: 99%
       + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
          + [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
          + [적응형 양식에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)
-         + [적응형 양식에 대한 XML 스키마 디자인](/help/forms/adaptive-form-xml-schema-form-model.md)
          + [Forms Designer 사용](/help/forms/use-forms-designer.md)
          + [소극적 로드 옵션이 있는 대용량 양식의 성능 향상](/help/forms/lazy-loading-adaptive-forms.md)
       + 적응형 양식에 구성 요소 추가 {#add-components-to-an-adaptive-form}
