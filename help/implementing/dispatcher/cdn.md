@@ -3,9 +3,9 @@ title: AEM as a Cloud Service의 CDN
 description: AEM as a Cloud Service의 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
+source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1042'
 ht-degree: 8%
 
 ---
@@ -61,7 +61,7 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 
 구성 지침:
 
-1. CDN을 Adobe CDN의 주소를 원래 도메인으로 가리킵니다. 예, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. CDN을 Adobe CDN의 주소를 원래 도메인으로 가리킵니다. (예: `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`)
 1. SNI는 Adobe CDN의 수신로도 설정되어야 합니다.
 1. 호스트 헤더를 원본 도메인으로 설정합니다. 예: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. 설정 `X-Forwarded-Host` 헤더에 사용할 수 있습니다. 예: `X-Forwarded-Host:example.com`.
@@ -69,6 +69,8 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 
    * Adobe CDN이 요청 소스의 유효성을 확인하고 를 전달할 수 있도록 필요합니다 `X-Forwarded-*` 헤더 를 AEM 애플리케이션에 추가합니다. 예,`X-Forwarded-For` 클라이언트 IP를 확인하는 데 사용됩니다. 따라서 는 신뢰할 수 있는 호출자(즉, 고객 관리 CDN)의 책임이 되므로 `X-Forwarded-*` header(아래 참고 참조).
    * 선택적으로, `X-AEM-Edge-Key` 이 없습니다. Adobe CDN 수신(차단하려면)에 직접 액세스해야 하는 경우 Adobe에 알려주십시오.
+
+자세한 내용은 [샘플 CDN 공급업체 구성](#sample-configurations) 주요 CDN 공급업체의 구성 예에 대한 섹션을 참조하십시오.
 
 라이브 트래픽을 수락하기 전에 엔드 투 엔드 트래픽 라우팅이 올바르게 작동하는지 Adobe의 고객 지원 센터에서 확인해야 합니다.
 
@@ -99,6 +101,25 @@ CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할
 고객 CDN에서 AEM 관리 CDN까지 홉이 효율적일 수 있지만 추가 홉으로 인해 작은 성능 히트가 발생할 수 있습니다.
 
 이 고객 CDN 구성은 게시 계층에 대해 지원되지만 작성 계층 앞에는 있지 않습니다.
+
+### 샘플 CDN 공급업체 구성 {#sample-configurations}
+
+아래에 나와 있는 예는 여러 주요 CDN 공급업체의 몇 가지 구성 예입니다.
+
+**Akamai**
+
+![Akamai1](assets/akamai1.png "Akamai")
+![Akamai2](assets/akamai2.png "Akamai")
+
+**Amazon CloudFront**
+
+![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
+![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
+
+**Cloudflare**
+
+![Cloudflare1](assets/cloudflare1.png "Cloudflare")
+![Cloudflare2](assets/cloudflare2.png "Cloudflare")
 
 ## 지리적 위치 헤더 {#geo-headers}
 
