@@ -3,7 +3,7 @@ title: CIF 코어 구성 요소 사용자 지정
 description: AEM CIF 코어 구성 요소를 사용자 지정하는 방법을 알아봅니다. 이 자습서에서는 비즈니스 특정 요구 사항을 충족하도록 CIF 코어 구성 요소를 안전하게 확장하는 방법을 설명합니다. GraphQL 쿼리를 확장하여 사용자 지정 속성을 반환하고 CIF 코어 구성 요소에 새 속성을 표시하는 방법을 알아봅니다.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 ![친환경 배지 최종 구현](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 인스턴스가 포함됩니다. 다음 요구 사항 및 단계를 검토하십시오 [AEM as a Cloud Service SDK를 사용하여 로컬 개발 설정](../develop.md). 자습서를 완전히 따르려면 추가 권한이 필요합니다 [제품에 대한 속성](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerce.
 
@@ -500,5 +500,5 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 - [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components)
 - [AEM CIF 핵심 구성 요소 사용자 정의](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 - [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)

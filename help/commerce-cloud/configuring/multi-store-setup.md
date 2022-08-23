@@ -2,7 +2,7 @@
 title: 상거래 다중 스토어 설정
 description: Adobe Commerce에서 AEM에 여러 스토어 보기를 매핑하는 방법을 알아봅니다. 이를 통해 프로젝트에서 다중 임차인 및 다중 언어 사용 사례를 지원할 수 있습니다.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -62,4 +62,4 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 저장소 보기에 연
 * [Adobe Commerce 웹 사이트, 저장소 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF 코어 구성 요소 - 다중 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [컨텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-cloud/administering/msm/overview.md)
+* [콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피](/help/sites-cloud/administering/msm/overview.md)

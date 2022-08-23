@@ -3,12 +3,12 @@ title: AEM Commerce as a Cloud Service 시작하기
 description: 실행 중인 AEM as a Cloud Service 환경에 상거래 지원 AEM 프로젝트를 배포하는 방법을 알아봅니다. Adobe Cloud Manager 및 CI/CD 파이프라인의 기능을 사용하여 Venia 참조 저장소를 실행 환경에 구축할 수 있습니다.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 2%
@@ -69,7 +69,7 @@ Adobe I/O CLI를 통해 AEM과 상거래 솔루션을 연결하려면 다음 단
 
 1. Cloud Manager 플러그인을 사용하여 Adobe I/O CLI 가져오기
 
-   을(를) 확인합니다. [Adobe Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR) 다운로드, 설정 및 사용 방법 [Adobe I/O CLI](https://github.com/adobe/aio-cli) 사용 [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   을(를) 확인합니다. [Adobe Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) 다운로드, 설정 및 사용 방법 [Adobe I/O CLI](https://github.com/adobe/aio-cli) 사용 [Cloud Manager CLI 플러그인](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. AEM as a Cloud Service 프로그램으로 Adobe I/O CLI 인증
 

@@ -3,7 +3,7 @@ title: AEM CIF 핵심 구성 요소 스타일 지정
 description: AEM CIF 코어 구성 요소 스타일을 지정하는 방법을 알아봅니다. 이 자습서에서는 클라이언트측 라이브러리 또는 clientlibs를 사용하여 AEM(Adobe Experience Manager) Commerce 구현을 위한 CSS 및 Javascript를 배포하고 관리하는 방법을 설명합니다. 또한 이 자습서에서는 ui.frontend 모듈 및 웹 팩 프로젝트를 엔드 투 엔드 빌드 프로세스에 통합하는 방법을 다룹니다.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '2550'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 ![빌드할 내용](../assets/style-cif-component/what-you-will-build.png)
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 인스턴스가 포함됩니다. 다음 요구 사항 및 단계를 검토하십시오 [AEM as a Cloud Service SDK를 사용하여 로컬 개발 설정](../develop.md).
 
@@ -178,7 +178,7 @@ ht-degree: 2%
 
    이러한 클라이언트 라이브러리는 `ui.frontend` 모듈. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 clientlibraries에 대한 정의는 `.content.xml` 각 폴더 아래의 파일.
 
-   **clientlib-base** - 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko). 카테고리는 다음과 같습니다 `venia.base`.
+   **clientlib-base** - 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 카테고리는 다음과 같습니다 `venia.base`.
 
    **clientlib-cif** - 또한 필요한 종속성을 단순히 포함하는 빈 클라이언트 라이브러리입니다. [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components). 카테고리는 다음과 같습니다 `venia.cif`.
 
@@ -483,5 +483,5 @@ IDE 및 생성된 프로젝트로 돌아갑니다.
 * [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components)
 * [로컬 AEM 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [클라이언트측 라이브러리](/help/implementing/developing/introduction/clientlibs.md)
-* [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+* [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [스타일 시스템을 사용한 개발](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)

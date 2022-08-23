@@ -2,7 +2,7 @@
 title: 관련 AEM 콘텐츠으로 제품 데이터 보강
 description: 마케터가 Adobe Experience Manager의 관련 콘텐츠로 제품 데이터를 보강하는 방법을 알아봅니다. AEM의 자산 및 경험 조각과 같은 컨텐츠는 상거래 제품과 연결할 수 있습니다. 연결된 컨텐츠 유형은 제품 페이지 또는 카테고리 페이지 내의 자리 표시자에 동적으로 삽입할 수 있습니다. 이렇게 하면 마케터가 이미지 및 비디오와 같은 추가 콘텐츠로 특정 제품 페이지를 타깃팅할 수 있는 다양한 가능성이 열립니다.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 2%

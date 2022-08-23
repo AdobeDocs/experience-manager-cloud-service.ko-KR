@@ -2,7 +2,7 @@
 title: 고급 URL 구성
 description: 제품 및 카테고리 페이지의 URL을 사용자 지정하는 방법을 알아봅니다. 이를 통해 구현은 검색 엔진에 대한 URL을 최적화하고 검색을 승격할 수 있습니다.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 3%
@@ -199,7 +199,7 @@ CIF 구성에서 편집기는 대체 제품 또는 카테고리 페이지 URL �
 
 URL 다시 쓰기는 AEM Dispatcher HTTP 서버를 `mod_rewrite` 모듈. 다음 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype) 에서는 이미 기본 항목이 포함된 참조 AEM Dispatcher 구성을 제공합니다 [rewrite 규칙](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 생성되었습니다.
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 ### 최상의 URL 형식 선택 {#choose-url-format}
 
@@ -233,7 +233,7 @@ _**URL 길이와 인코딩된 정보 간의 균형.**_
 
 >[!NOTE]
 >
->이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 구성 을 참조하십시오.
+>이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 프로젝트에 대한 구성.
 
 ## 추가 리소스 {#additional}
 

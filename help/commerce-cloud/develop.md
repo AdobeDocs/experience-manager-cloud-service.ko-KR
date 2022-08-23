@@ -3,12 +3,12 @@ title: AEM as a Cloud Service용 AEM Commerce 개발
 description: AEM 프로젝트 원형 을 사용하여 상거래 지원 AEM 프로젝트를 생성하는 방법을 알아봅니다. AEM as a Cloud Service SDK를 사용하여 프로젝트를 빌드 및 로컬 개발 환경에 배포하는 방법을 알아봅니다.
 topics: Commerce, Development
 feature: Commerce Integration Framework
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 8%
