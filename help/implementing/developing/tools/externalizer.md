@@ -2,10 +2,10 @@
 title: URL 표면화
 description: Externalizer는 리소스 경로를 프로그래밍 방식으로 외부 및 절대 URL로 변환할 수 있는 OSGi 서비스입니다.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 1%
+source-wordcount: '660'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +19,28 @@ AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없
 
 ## Externalizer의 기본 동작 및 무시 방법 {#default-behavior}
 
-기본적으로 Externalizer 서비스에는 다음과 같은 값이 있습니다. `author-p12345-e6789.adobeaemcloud.com` 및 `publish-p12345-e6789.adobeaemcloud.com`.
+기본적으로 Externalizer 서비스는 소수의 도메인 식별자를 환경에 대해 생성된 AEM 서비스 URL과 일치하는 절대 URL 접두사에 매핑합니다(예: ) `author https://author-p12345-e6789.adobeaemcloud.com` 및 `publish https://publish-p12345-e6789.adobeaemcloud.com`. 이러한 각 기본 도메인의 기본 URL은 Cloud Manager에서 정의한 환경 변수에서 읽습니다.
 
-이러한 값을 무시하려면 문서에 설명된 대로 Cloud Manager 환경 변수를 사용합니다 [AEM as a Cloud Service OSGi 구성](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 및 `AEM_CDN_DOMAIN_AUTHOR` 및 `AEM_CDN_DOMAIN_PUBLISH` 변수를 채우는 방법을 설명합니다.
+참조용 의 기본 OSGi 구성 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 효과적으로 다음을 수행할 수 있습니다.
+
+```json
+{
+   "externalizer.domains": [
+      "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+      "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+      "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]",
+      "preview $[env:AEM_EXTERNALIZER_PREVIEW;default=http://localhost:4503]"
+   ]
+}
+```
+
+>[!CAUTION]
+>
+>기본값 `local`, `author`, `preview`, 및 `publish` OSGi 구성의 외부 도우미 도메인 매핑은 원본과 함께 유지되어야 합니다 `$[env:...]` 위에 나열된 값.
+>
+>사용자 지정 배포 `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` 파일을 AEM에 as a Cloud Service 로 전송하면 이러한 기본 도메인 매핑을 생략하면 응용 프로그램 동작을 예측할 수 있습니다.
+
+를 재정의하려면 `preview` 및 `publish` 값에서 설명한 대로 Cloud Manager 환경 변수를 사용합니다 [AEM as a Cloud Service OSGi 구성](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 및 `AEM_CDN_DOMAIN_PUBLISH` 및 `AEM_CDN_DOMAIN_PREVIEW` 변수를 채우는 방법을 설명합니다.
 
 ## 외부 도우미 서비스 구성 {#configuring-the-externalizer-service}
 
