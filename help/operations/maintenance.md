@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: def7f7071dac447397f40186de1380b8e5575608
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 유지 관리 작업은 저장소를 최적화하기 위해 일정에 따라 실행되는 프로세스입니다. AEM as a Cloud Service을 사용하면 고객이 유지 관리 작업의 운영 속성을 구성할 필요가 거의 없습니다. 고객은 애플리케이션 수준의 문제에 집중할 수 있으므로 인프라 운영을 Adobe에 집중할 수 있습니다.
 
-## 유지 관리 작업 구성
+## 유지 관리 작업 구성 {#maintenance-tasks-configuring}
 
 이전 버전의 AEM에서는 유지 관리 카드( 도구 > 작업 > 유지 관리)를 사용하여 유지 관리 작업을 구성할 수 있습니다. AEM as a Cloud Service의 경우 유지 관리 카드를 더 이상 사용할 수 없으므로 Cloud Manager를 사용하여 소스 제어에 구성을 커밋하고 배포해야 합니다. Adobe은 고객이 구성할 수 없는 설정(예: 데이터 저장소 가비지 수집, 감사 로그 삭제, 버전 삭제)이 있는 유지 관리 작업을 관리합니다. 아래 표에 설명된 대로 기타 유지 관리 작업은 고객이 구성할 수 있습니다.
 
