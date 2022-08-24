@@ -1,15 +1,15 @@
 ---
-title: 콘텐츠 검색 및 색인 지정
-description: 콘텐츠 검색 및 색인 지정
+title: 콘텐츠 검색 및 색인화
+description: 콘텐츠 검색 및 색인화
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
 source-wordcount: '2253'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
-# 콘텐츠 검색 및 색인 지정 {#indexing}
+# 콘텐츠 검색 및 색인화 {#indexing}
 
 ## AEM as a Cloud Service의 변경 내용 {#changes-in-aem-as-a-cloud-service}
 
@@ -17,13 +17,13 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 다음은 AEM 6.5 및 이전 버전과 비교한 주요 변경 사항 목록입니다.
 
-1. 사용자는 색인 지정을 디버그, 구성 또는 유지하기 위해 단일 AEM 인스턴스의 색인 관리자에 액세스할 권한이 더 이상 없습니다. 로컬 개발 및 온프레미스 배포에 대해서만 사용됩니다.
+1. 사용자는 색인화을 디버그, 구성 또는 유지하기 위해 단일 AEM 인스턴스의 색인 관리자에 액세스할 권한이 더 이상 없습니다. 로컬 개발 및 온프레미스 배포에 대해서만 사용됩니다.
 
 1. 사용자는 단일 AEM 인스턴스의 색인을 변경하지 못하거나 일관성 확인 또는 색인 재지정에 대해 더 이상 걱정하지 않아도 됩니다.
 
 1. 일반적으로 프로덕션 진행 전 색인 변경을 초기화해 Cloud Manager CI/CD 파이프라인의 품질 게이트웨이를 피하지 않도록 하고 프로덕션의 비즈니스 KPI에 영향을 주지 않도록 합니다.
 
-1. 검색과 색인 지정의 주제에 대한 거시적으로 볼 수 있도록 런타임 시 프로덕션의 검색 성능 등 모든 관련 지수를 고객이 사용할 수 있습니다.
+1. 검색과 색인화의 주제에 대한 거시적으로 볼 수 있도록 런타임 시 프로덕션의 검색 성능 등 모든 관련 지수를 고객이 사용할 수 있습니다.
 
 1. 고객은 자신들의 필요에 따라 알람을 설정할 수 있습니다.
 
@@ -33,12 +33,12 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 1. [파란색-녹색 배포 모델](#index-management-using-blue-green-deployments)을 도입해 AEM as a Cloud Service의 고레벨에는 두 세트의 색인이 존재합니다. 한 세트는 이전 버전(파란색), 다른 한 세트는 새 버전(녹색)입니다.
 
-1. 고객은 Cloud Manager 빌드 페이지에서 색인 지정 작업이 완료되었는지 여부를 확인할 수 있으며 새 버전이 트래픽을 가져올 수 있게 되면 알림을 받게 됩니다.
+1. 고객은 Cloud Manager 빌드 페이지에서 색인화 작업이 완료되었는지 여부를 확인할 수 있으며 새 버전이 트래픽을 가져올 수 있게 되면 알림을 받게 됩니다.
 
 1. 제한 사항:
 * 현재 AEM as a Cloud Service의 색인 관리는 `lucene` 색인 유형만 지원됩니다.
 * 표준 분석기만 지원됩니다(제품으로 제공되는 분석기). 사용자 정의 분석기는 지원되지 않습니다.
-* 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다. 예를 들어, `damAssetLucene` 색인에 대해 작성된 Skyline의 쿼리는 이 색인의 Elasticsearch 버전에 대해 실행됩니다. 이 차이는 일반적으로 애플리케이션과 사용자에게는 표시되지 않지만 `explain` 기능과 같은 특정 도구에서는 다른 색인임을 보고합니다. Lucene 색인과 Elastic 색인의 차이에 대해서는 [Apache Jackrabbit Oak의 Elastic 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html)를 참조하십시오. 고객은 Elasticsearch 색인을 직접 구성할 필요가 없으며 구성할 수 없습니다.
+* 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다. 예를 들어 `damAssetLucene` 색인에 대해 작성된 Skyline의 쿼리는 이 색인의 Elasticsearch 버전에 대해 실행됩니다. 이 차이는 일반적으로 애플리케이션과 사용자에게는 표시되지 않지만 `explain` 기능과 같은 특정 도구에서는 다른 색인임을 보고합니다. Lucene 색인과 Elastic 색인의 차이에 대해서는 [Apache Jackrabbit Oak의 Elastic 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html)를 참조하십시오. 고객은 Elasticsearch 색인을 직접 구성할 필요가 없으며 구성할 수 없습니다.
 
 ## 사용 방법 {#how-to-use}
 
@@ -64,15 +64,15 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 >[!NOTE]
 >
->기본 인덱스를 사용자 지정하는 경우(예: ) `damAssetLucene-6`에서 최신 기본 인덱스 정의를 복사하십시오 *Cloud Service 환경* crx DE 패키지 관리자 사용(`/crx/packmgr/`). 그 다음 `damAssetLucene-6-custom-1`과 같이 구성의 이름을 바꾸고 상단에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 지워지지 않도록 할 수 있습니다. 예를 들어 `/oak:index/damAssetLucene-6/tika`의 `tika` 노드는 클라우드 서비스의 맞춤화된 색인에 필요합니다. Cloud SDK에는 없습니다.
+>`damAssetLucene-6`과 같이 기본 제공 인덱스를 맞춤화하는 경우 CRX DE 패키지 관리자(`/crx/packmgr/`)를 사용하여 *Cloud Service 환경*&#x200B;에서 최신 기본 제공 인덱스 정의를 복사하십시오. 그 다음 `damAssetLucene-6-custom-1`과 같이 구성의 이름을 바꾸고 상단에 사용자 정의를 추가합니다. 이렇게 하면 필요한 구성이 실수로 지워지지 않도록 할 수 있습니다. 예를 들어 `/oak:index/damAssetLucene-6/tika`의 `tika` 노드는 클라우드 서비스의 맞춤화된 색인에 필요합니다. Cloud SDK에는 없습니다.
 
 이 이름 지정 패턴에 따라 실제 색인 정의가 포함된 새 색인 정의 패키지를 준비해야 합니다.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-그런 후 `ui.apps/src/main/content/jcr_root`로 전환해야 합니다. 사용자 지정 및 사용자 지정 인덱스 정의는 모두 아래에 저장해야 합니다 `/oak:index`.
+그런 후 `ui.apps/src/main/content/jcr_root`로 전환해야 합니다. 맞춤화된 인덱스 정의 및 사용자 지정 인덱스 정의는 모두 `/oak:index` 아래에 저장해야 합니다.
 
-기존 색인(기본 제공 색인)이 유지되고 있는 것과 같이 패키지의 필터를 설정해야 합니다. 파일에서 `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 지정(또는 사용자 지정) 인덱스를 나열해야 합니다(예: ). `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 인덱스 버전을 나중에 변경하면 필터를 조정해야 합니다.
+기존 인덱스(기본 제공 인덱스)이 유지되고 있는 것과 같이 패키지의 필터를 설정해야 합니다. `ui.apps/src/main/content/META-INF/vault/filter.xml` 파일에 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`과 같은 각 사용자 지정(또는 맞춤화된) 인덱스를 나열해야 합니다. 인덱스 버전을 나중에 변경하면 필터를 조정해야 합니다.
 
 위 샘플의 패키지는 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`(으)로 작성됩니다.
 
@@ -84,11 +84,11 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 ## 색인 정의 배포 {#deploying-index-definitions}
 
-색인 정의는 사용자 정의 및 버전이 지정됨으로 표시됩니다.
+인덱스 정의는 사용자 정의로 표시되며 다음 버전입니다.
 
-* 색인 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
+* 인덱스 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
 
-사용자 지정 또는 사용자 지정 인덱스를 배포하려면 인덱스 정의(`/oak:index/definitionname`)을 전달해야 합니다. `ui.apps` Git 및 Cloud Manager 배포 프로세스를 통해 다음을 수행할 수 있습니다. FileVault 필터에서(예: ) `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 지정 및 사용자 지정 인덱스를 개별적으로 나열하십시오(예: ) `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 사용자 지정/사용자 지정된 인덱스 정의 자체가 파일에 저장됩니다 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`를 채울 수 있습니다.
+사용자 지정 인덱스 또는 맞춤화된 인덱스를 배포하려면 Git 및 Cloud Manager 배포 프로세스를 통해 `ui.apps`를 통해 인덱스 정의(`/oak:index/definitionname`)를 전달해야 합니다. FileVault 필터(예: `ui.apps/src/main/content/META-INF/vault/filter.xml`)에서 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`과 같은 각 사용자 지정 인덱스 및 맞춤화된 인덱스를 개별적으로 나열합니다. 이렇게 하면 사용자 지정/맞춤화된 인덱스 정의 자체가 다음과 같이 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` 파일에 저장됩니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -104,11 +104,11 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 </jcr:root>
 ```
 
-위의 예에는 Apache Tika에 대한 구성이 포함되어 있습니다. Tika 구성 파일은 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+위의 예에는 Apache Tika에 대한 구성이 포함되어 있습니다. Tika 구성 파일은 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml` 아래에 저장됩니다.
 
 ### 프로젝트 구성
 
-사용되는 Jackrabbit Filerabbit Maven 패키지 플러그인의 버전에 따라 프로젝트에서의 몇 가지 추가 구성이 필요합니다. Jackrabbit Filerabbit Maven 패키지 플러그인 버전을 사용할 때 **1.1.6** 또는 그 이상인 경우 `pom.xml` 는 다음에 대한 플러그인 구성에 다음 섹션을 포함해야 합니다. `filevault-package-maven-plugin`, in `configuration/validatorsSettings` (바로 그 전에) `jackrabbit-nodetypes`):
+사용되는 Jackrabbit Filerabbit Maven 패키지 플러그인의 버전에 따라 프로젝트에서의 몇 가지 추가 구성이 필요합니다. Jackrabbit Filerabbit Maven 패키지 플러그인 버전 **1.1.6** 또는 그 이상을 사용하는 경우 `pom.xml` 파일은 `configuration/validatorsSettings`에서 `filevault-package-maven-plugin`에 대한 플러그인 구성에 다음 섹션을 포함해야 합니다(`jackrabbit-nodetypes` 바로 전).
 
 ```xml
 <jackrabbit-packagetype>
@@ -128,7 +128,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 </dependency>
 ```
 
-그런 다음 `ui.apps.structure/pom.xml` 및 `ui.apps/pom.xml`, 의 구성 `filevault-package-maven-plugin` 다음을 수행해야 함 `allowIndexDefinitions` 뿐만 아니라 `noIntermediateSaves` 활성화되었습니다. 옵션 `noIntermediateSaves` 인덱스 구성이 자동으로 추가되도록 합니다.
+그런 다음 `ui.apps.structure/pom.xml` 및 `ui.apps/pom.xml`에서 `filevault-package-maven-plugin` 구성은 `allowIndexDefinitions` 및 `noIntermediateSaves`를 활성화해야 합니다. `noIntermediateSaves` 옵션은 인덱스 구성이 올바르게 추가되었는지 확인합니다.
 
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
@@ -142,7 +142,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
     ...
 ```
 
-in `ui.apps.structure/pom.xml`, `filters` 이 플러그인의 섹션은 다음과 같이 필터 루트를 포함해야 합니다.
+`ui.apps.structure/pom.xml`에서 이 플러그인의 `filters` 섹션은 다음과 같이 필터 루트를 포함해야 합니다.
 
 ```xml
 <filter><root>/oak:index</root></filter>
@@ -158,7 +158,7 @@ in `ui.apps.structure/pom.xml`, `filters` 이 플러그인의 섹션은 다음�
 
 ### 색인 관리 개요 {#what-is-index-management}
 
-색인 관리는 색인을 추가, 삭제 및 변경하는 것을 의미합니다. 색인의 *정의* 변경은 빠르게 진행되지만 변경(“색인 작성”, 기존 색인의 경우, “색인 재지정”) 적용은 시간이 소요됩니다. 즉시 확인할 수 없으며 저장소에서 데이터를 색인 지정하기 위해 스캔해야 합니다.
+색인 관리는 색인을 추가, 삭제 및 변경하는 것을 의미합니다. 색인의 *정의* 변경은 빠르게 진행되지만 변경(“색인 작성”, 기존 색인의 경우, “색인 재지정”) 적용은 시간이 소요됩니다. 즉시 확인할 수 없으며 저장소에서 데이터를 색인화하기 위해 스캔해야 합니다.
 
 ### 파란색-녹색 배포 개요 {#what-is-blue-green-deployment}
 
@@ -188,7 +188,7 @@ in `ui.apps.structure/pom.xml`, `filters` 이 플러그인의 섹션은 다음�
 
 파란색-녹색 배포를 사용하면 중단 시간이 없습니다. 업그레이드 시 잠시 동안 애플리케이션의 이전 버전(예: 버전 1)과 새 버전(버전 2)이 동일한 저장소에서 동시에 실행됩니다. 버전 1이 특정 색인을 사용해야 하는 경우 이 색인을 버전 2에서 삭제해야 합니다. 이 색인을 이후, 예를 들어 버전 3에서 삭제해야 하는데 이는 애플리케이션의 버전 1이 더 이상 수행되지 않는 지점입니다. 또한 애플리케이션은 버전 2가 수행되고 버전 2의 색인이 사용 가능한 상태여도 버전 1이 잘 작동되는 것처럼 작성되어야 합니다.
 
-새 버전으로 업그레이드가 완료된 후, 이전 버전은 시스템에서 수집된 불필요한 정보가 될 수 있습니다. 이전 색인은 롤백의 속도를 높이기 위해(롤백이 필요한 경우) 잠시 동안 남아 있을 수 있습니다.
+새 버전으로 업그레이드가 완료되면 이전 버전은 시스템에서 수집된 불필요한 정보가 될 수 있습니다. 이전 색인은 롤백의 속도를 높이기 위해(롤백이 필요한 경우) 잠시 동안 남아 있을 수 있습니다.
 
 다음 테이블은 다섯 개의 색인 정의를 나타냅니다. 색인 `cqPageLucene`는 두 버전 모두에서 사용되지만 색인 `damAssetLucene-custom-1`은 버전 2에서만 사용됩니다.
 
@@ -278,7 +278,7 @@ Adobe에서 “damAssetLucene” 또는 “cqPageLucene” 같은 기본 제공 
     </acme.product-custom-3>
 ```
 
-기본 제공 색인의 맞춤화가 더 이상 필요하지 않은 경우 기본 제공 색인 정의를 복사해야 합니다. 예를 들어, 이미 `damAssetLucene-8-custom-3`을 배포했지만 더 이상 맞춤화가 필요하지 않고 기본 `damAssetLucene-8` 색인으로 다시 바꾸고 싶다면 `damAssetLucene-8`의 색인 정의가 포함된 색인 `damAssetLucene-8-custom-4`를 추가해야 합니다.
+기본 제공 색인의 맞춤화가 더 이상 필요하지 않은 경우 기본 제공 색인 정의를 복사해야 합니다. 예를 들어 이미 `damAssetLucene-8-custom-3`을 배포했지만 더 이상 맞춤화가 필요하지 않고 기본 `damAssetLucene-8` 색인으로 다시 바꾸고 싶다면 `damAssetLucene-8`의 색인 정의가 포함된 색인 `damAssetLucene-8-custom-4`를 추가해야 합니다.
 
 ## 인덱스 및 쿼리 최적화 {#index-query-optimizations}
 

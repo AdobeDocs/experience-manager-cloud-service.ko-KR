@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->경험 조각을 게시하면 기본적으로 경험 조각 콘솔 또는 편집기에서 페이지를 게시하는 것과 동일한 절차를 따릅니다.
+>경험 조각을 게시하는 것은 기본적으로 경험 조각 콘솔 또는 편집기에서 페이지를 게시하는 것과 동일한 절차를 따릅니다.
 
 ## 용어 {#terminology}
 
@@ -31,7 +31,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 * **활성화/비활성화**
    * 게시/게시 취소와 동의어입니다.
    * 이 용어는 이전 AEM 버전에서 사용되었습니다.
-* **복제**
+* **복제하기 / 복제**
    * 페이지를 게시할 때 한 환경에서 다른 환경으로의 데이터(예: 페이지 콘텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
    * 주로 개발자가 사용하는 용어입니다.
 
@@ -101,7 +101,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 빠른 게시로 페이지를 게시하려면 다음 작업을 수행하십시오.
 
-1. Sites 콘솔에서 페이지를 선택하고 **빠른 게시** 버튼을 누릅니다.
+1. Sites 콘솔에서 페이지를 선택하고 **빠른 게시** 버튼을 클릭합니다.
 
    ![게시할 페이지 선택](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -234,7 +234,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 [게시하기 위해 게시 관리를 사용](#manage-publication)하는 것과 같은 방식으로 게시 취소할 수 있습니다.
 
-1. Sites 콘솔에서 페이지를 선택하고 **게시 관리** 버튼을 누릅니다.
+1. Sites 콘솔에서 페이지를 선택하고 **게시 관리** 버튼을 클릭합니다.
 1. **게시 관리** 마법사가 시작됩니다. 첫 번째 단계인 **옵션**&#x200B;에서 기본 옵션인 **게시**&#x200B;를 선택하는 대신 **게시 취소**&#x200B;를 선택합니다.
 
    ![게시 취소 - 옵션](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

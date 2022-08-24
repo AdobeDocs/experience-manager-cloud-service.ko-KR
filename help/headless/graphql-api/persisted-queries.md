@@ -6,7 +6,7 @@ exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 47%
+ht-degree: 94%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->지속되는 쿼리를 사용하는 것이 좋습니다. 자세한 내용은 [GraphQL 쿼리 우수 사례(Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) 자세한 내용 및 관련 Dispatcher 구성을 참조하십시오.
+>지속 쿼리를 사용하는 것이 좋습니다. 자세한 내용은 [GraphQL 쿼리 모범 사례(Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) 자세한 내용 및 관련 Dispatcher 구성을 참조하십시오.
 
-다음 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) GraphQL 쿼리를 개발, 테스트 및 유지할 수 있도록 AEM에서 이 기능을 사용할 수 있습니다. [프로덕션 환경으로 전송](#transfer-persisted-query-production). 맞춤화가 필요한 경우(예: [캐시를 사용자 지정](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)하는 경우) API를 사용할 수 있습니다. [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)에 제시된 curl 예제를 참조하십시오.
+[프로덕션 환경으로 이전](#transfer-persisted-query-production)하기 전에 GraphQL 쿼리를 개발, 테스트 및 지속할 수 있도록 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)가 AEM에 제공됩니다. 맞춤화가 필요한 경우(예: [캐시를 사용자 지정](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)하는 경우) API를 사용할 수 있습니다. [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)에 제시된 curl 예제를 참조하십시오.
 
 ## 지속 쿼리 및 끝점 {#persisted-queries-and-endpoints}
 
@@ -55,11 +55,11 @@ ht-degree: 47%
 
 다양한 방법으로 쿼리를 지속합니다(다음 포함).
 
-* GraphiQL IDE - 참조 [지속되는 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (기본 설정 메서드)
+* GraphiQL IDE - [지속 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) 참조(기본 방법)
 * curl - 다음 예제 참조
 * 기타 도구, [Postman](https://www.postman.com/) 포함
 
-GraphiQL IDE는 다음과 같습니다 **기본** 쿼리를 유지하는 방법 특정 쿼리를 **curl** 명령줄 도구:
+GraphiQL IDE는 쿼리를 지속할 수 있는 **기본** 방법입니다. **curl** 명령줄 도구를 사용하여 지정된 쿼리를 지속하려면 다음 작업을 수행하십시오.
 
 1. 쿼리를 새 끝점 URL `/graphql/persist.json/<config>/<persisted-label>`에 PUT하여 준비합니다.
 
@@ -159,7 +159,7 @@ GraphiQL IDE는 다음과 같습니다 **기본** 쿼리를 유지하는 방법 
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. 매개 변수를 사용하여 지속 쿼리를 만듭니다.
+1. 매개변수를 사용하여 지속 쿼리를 만듭니다.
 
    예:
 
@@ -186,9 +186,9 @@ GraphiQL IDE는 다음과 같습니다 **기본** 쿼리를 유지하는 방법 
    ```
 
 
-## 지속형 쿼리를 실행하는 방법 {#execute-persisted-query}
+## 지속 쿼리 실행 방법 {#execute-persisted-query}
 
-지속형 쿼리를 실행하기 위해 클라이언트 응용 프로그램은 다음 구문을 사용하여 GET 요청을 수행합니다.
+지속 쿼리를 실행하기 위해 클라이언트 애플리케이션은 다음 구문을 사용하여 GET 요청을 수행합니다.
 
 ```
 GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
@@ -196,14 +196,14 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 위치 `PERSISTENT_PATH` 는 지속형 쿼리가 저장된 위치에 대한 단축된 경로입니다.
 
-1. 예 `wknd` 구성 이름 및 `plain-article-query` 는 지속형 쿼리의 이름입니다. 쿼리를 실행하려면
+1. 예 `wknd` 구성 이름 및 `plain-article-query` 는 지속형 쿼리의 이름입니다. 쿼리를 실행하려면 다음 작업을 수행하십시오.
 
    ```shell
    $ curl -X GET \
        https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. 매개 변수를 사용하여 쿼리를 실행합니다.
+1. 매개변수를 사용하여 쿼리를 실행합니다.
 
    >[!NOTE]
    >
@@ -216,11 +216,11 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
        "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
 
-   사용 을 참조하십시오 [쿼리 변수](#query-variables) 자세한 내용
+   자세한 내용은 [쿼리 변수](#query-variables) 사용을 참조하십시오.
 
 ## 쿼리 변수 사용 {#query-variables}
 
-쿼리 변수는 지속되는 쿼리와 함께 사용할 수 있습니다. 쿼리 변수는 세미콜론(`;`) 변수 이름과 값을 사용하여 규칙 세트를 만듭니다. 여러 변수는 세미콜론으로 구분됩니다.
+쿼리 변수를 지속 쿼리와 함께 사용할 수 있습니다. 쿼리 변수는 변수 이름과 값을 사용하여 앞에 세미콜론(`;`)이 붙은 요청에 추가됩니다. 여러 변수는 세미콜론으로 구분됩니다.
 
 패턴은 다음과 같습니다.
 
@@ -228,7 +228,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-예를 들어 다음 쿼리에 변수가 포함되어 있습니다 `activity` 활동 값을 기반으로 목록을 필터링하려면 다음을 수행하십시오.
+예를 들어 다음 쿼리에는 활동 값을 기반으로 목록을 필터링하기 위한 변수 `activity`가 포함되어 있습니다.
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -251,19 +251,19 @@ query getAdventuresByActivity($activity: String!) {
   }
 ```
 
-이 쿼리는 경로 아래에서 유지할 수 있습니다 `wknd/adventures-by-activity`. 지속형 쿼리를 호출하려면 `activity=Camping` 요청은 다음과 같습니다.
+이 쿼리는 경로 `wknd/adventures-by-activity`에서 지속할 수 있습니다. `activity=Camping` 요청이 다음과 같이 표시되는 지속 쿼리를 호출하려면 다음 작업을 수행하십시오.
 
 ```
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-참고 사항 `%3B` 는 `;` 및 `%3D` 은 의 인코딩입니다. `=`. 쿼리 변수와 특수 문자는 [인코딩이 올바르게 수행됨](#encoding-query-url) 지속형 쿼리를 실행할 수 있습니다.
+`%3B`는 `;`에 대한 UTF-8 인코딩이며 `%3D`는 `=`에 대한 인코딩입니다. 실행할 지속 쿼리에 대해 쿼리 변수 및 특수 문자를 [올바르게 인코딩](#encoding-query-url)해야 합니다.
 
-## 지속 쿼리 캐싱 중 {#caching-persisted-queries}
+## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
-지속되는 쿼리는 디스패처 및 CDN 레이어에서 캐시될 수 있으므로 권장되며, 궁극적으로 요청 클라이언트 애플리케이션의 성능을 향상시킬 수 있습니다.
+지속 쿼리는 Dispatcher 및 CDN 계층에서 캐시될 수 있어 궁극적으로 요청하는 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다.
 
-기본적으로 AEM은 기본 TTL(Time To Live)을 기반으로 CDN(Content Delivery Network) 캐시를 무효화합니다.
+기본적으로 AEM은 기본 TTL(Time to Live)에 따라 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다.
 
 이 값을 다음으로 설정:
 
@@ -274,12 +274,12 @@ query getAdventuresByActivity($activity: String!) {
 
 GraphLQ 쿼리의 TTL을 변경하려면 쿼리가 다음 중 하나여야 합니다.
 
-* 관리 후 지속됨 [HTTP 캐시 헤더 - GraphQL IDE에서](#http-cache-headers)
-* 를 사용하여 지속됨 [API 메서드](#cache-api).
+* [GraphQL IDE에서 HTTP 캐시 헤더](#http-cache-headers) 관리 후 지속됨
+* [API 메서드](#cache-api)를 사용하여 지속됨
 
 ### GraphQL에서 HTTP 캐시 헤더 관리  {#http-cache-headers-graphql}
 
-GraphiQL IDE - 참조 [지속되는 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+GraphiQL IDE - [지속 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md#managing-cache) 참조
 
 ### API에서 캐시 관리 {#cache-api}
 
@@ -298,9 +298,9 @@ curl -X PUT \
 
 `cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 선택 사항입니다. CURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)을 참조하십시오.
 
-## 앱에서 사용하기 위해 쿼리 URL 인코딩 {#encoding-query-url}
+## 앱에서 사용할 쿼리 URL 인코딩 {#encoding-query-url}
 
-응용 프로그램에서 사용하는 경우 쿼리 변수를 구성할 때 사용되는 모든 특수 문자(즉, 세미콜론(`;`), 등호( )`=`), 슬래시 `/`)에서 해당 UTF-8 인코딩을 사용하도록 변환해야 합니다.
+애플리케이션에서 사용하는 경우 쿼리 변수를 구성할 때 사용되는 모든 특수 문자(예: 세미콜론(`;`), 등호(`=`), 슬래시(`/`))를 해당 UTF-8 인코딩을 사용하도록 변환해야 합니다.
 
 예:
 
@@ -308,17 +308,17 @@ curl -X PUT \
 curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
 ```
 
-URL은 다음 부분으로 나눌 수 있습니다.
+URL은 다음과 같은 부분들로 나눌 수 있습니다.
 
 | URL 부분 | 설명 |
 |----------| -------------|
 | `/graphql/execute.json` | 지속되는 쿼리 끝점 |
 | `/wknd/adventure-by-path` | 지속되는 쿼리 경로 |
-| `%3B` | 인코딩 `;` |
+| `%3B` | `;`의 인코딩 |
 | `adventurePath` | 쿼리 변수 |
-| `%3D` | 인코딩 `=` |
-| `%2F` | 인코딩 `/` |
-| `%2Fcontent%2Fdam...` | 컨텐츠 조각의 인코딩된 경로 |
+| `%3D` | `=`의 인코딩 |
+| `%2F` | `/`의 인코딩 |
+| `%2Fcontent%2Fdam...` | 콘텐츠 조각의 인코딩된 경로 |
 
 일반 텍스트에서 요청 URI는 다음과 같습니다.
 
@@ -326,30 +326,30 @@ URL은 다음 부분으로 나눌 수 있습니다.
 /graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
 ```
 
-클라이언트 앱에서 지속형 쿼리를 사용하려면 AEM 헤드리스 클라이언트 SDK를에 사용해야 합니다 [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java), 또는 [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). 헤드리스 클라이언트 SDK는 요청에서 적절하게 모든 쿼리 변수를 자동으로 인코딩합니다.
+클라이언트 앱에서 지속 쿼리를 사용하려면 AEM Headless 클라이언트 SDK는 [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java) 또는 [NodeJS](https://github.com/adobe/aem-headless-client-nodejs)용으로 사용해야 합니다. Headless 클라이언트 SDK는 요청에서 모든 쿼리 변수를 자동으로 적절하게 인코딩합니다.
 
-## 프로덕션 환경에 지속 쿼리 전송 중  {#transfer-persisted-query-production}
+## 프로덕션 환경에 지속 쿼리 전송  {#transfer-persisted-query-production}
 
-지속되는 쿼리는 항상 AEM 작성자 서비스에서 만든 다음, AEM 게시 서비스에 게시(복제)해야 합니다. 자주, 지속적인 쿼리는 로컬 또는 개발 환경과 같은 낮은 환경에서 만들어지고 테스트됩니다. 그런 다음 클라이언트 애플리케이션에서 사용할 수 있도록 프로덕션 AEM 게시 환경에서 사용할 수 있도록 하려면, 지속형 쿼리를 더 높은 수준의 환경으로 프로모션해야 합니다.
+지속 쿼리는 항상 AEM 작성자 서비스에서 만든 다음 AEM 게시 서비스에 게시(복제)해야 합니다. 지속 쿼리는 종종 로컬 또는 개발 환경과 같은 하위 수준 환경에서 생성되고 테스트됩니다. 그런 다음 지속 쿼리를 더 높은 수준의 환경으로 승격하여 궁극적으로 클라이언트 애플리케이션이 사용할 수 있도록 프로덕션 AEM 게시 환경에서 사용할 수 있도록 해야 합니다.
 
 ### 지속되는 쿼리 패키지
 
-지속되는 쿼리는 [AEM 패키지](/help/implementing/developing/tools/package-manager.md). 그런 다음 AEM 패키지를 다운로드하여 다른 환경에 설치할 수 있습니다. AEM 패키지는 AEM 작성자 환경에서 AEM 게시 환경으로 복제할 수도 있습니다.
+지속되는 쿼리는 [AEM 패키지](/help/implementing/developing/tools/package-manager.md). 그런 다음 AEM 패키지를 다운로드하여 다른 환경에 설치할 수 있습니다. AEM 패키지를 AEM 작성자 환경에서 AEM 게시 환경으로 복제할 수도 있습니다.
 
-패키지를 만들려면:
+패키지를 제작하려면 다음 작업을 수행하십시오.
 
-1. 다음으로 이동 **도구** > **배포** > **패키지**.
-1. 를 탭하여 새 패키지 만들기 **패키지 만들기**. 그러면 패키지를 정의하는 대화 상자가 열립니다.
-1. 패키지 정의 대화 상자의 **일반** 입력 **이름** &quot;wknd-persistent-queries&quot;와 같습니다.
-1. &quot;1.0&quot;과 같은 버전 번호를 입력합니다.
-1. 아래 **필터** 새로 추가 **필터**. 경로 파인더를 사용하여 `persistentQueries` 폴더 아래에 표시됩니다. 예: `wknd` 전체 경로 구성 `/conf/wknd/settings/graphql/persistentQueries`.
-1. 탭 **저장** 새 패키지 정의를 저장하고 대화 상자를 닫으려면 를 클릭합니다.
-1. 탭하기 **빌드** 새로 만든 패키지 정의에 있는 단추입니다.
+1. **도구** > **배포** > **패키지**&#x200B;로 이동합니다.
+1. **패키지 만들기**&#x200B;를 탭하여 새 패키지를 만듭니다. 이렇게 하면 패키지를 정의하는 대화 상자가 열립니다.
+1. 패키지 정의 대화 상자에서 **일반**&#x200B;에 “wknd-persistent-queries”와 같은 **이름**&#x200B;을 입력합니다.
+1. “1.0”과 같은 버전 번호를 입력합니다.
+1. **필터** 아래에 새 **필터**&#x200B;를 추가합니다. 경로 파인더를 사용하여 구성 아래에서 `persistentQueries` 폴더를 선택합니다. 예를 들어 `wknd` 구성의 경우 전체 경로는 `/conf/wknd/settings/graphql/persistentQueries`입니다.
+1. **저장**&#x200B;을 탭하여 새 패키지 정의를 저장하고 대화 상자를 닫습니다.
+1. 새로 생성된 패키지 정의에 있는 **빌드** 버튼을 탭합니다.
 
-패키지를 빌드하면 다음을 수행할 수 있습니다.
+패키지를 빌드하면 다음과 같은 작업을 수행할 수 있습니다.
 
-* **다운로드** 패키지를 다시 업로드하고 다른 환경에서 다시 업로드합니다.
-* **복제** 를 탭하여 패키지 **자세히** > **복제**. 이렇게 하면 연결된 AEM 게시 환경에 패키지가 복제됩니다.
+* 패키지를 **다운로드**&#x200B;하고 다른 환경에 다시 업로드할 수 있습니다.
+* **기타** > **복제**&#x200B;를 탭하여 패키지를 **복제**&#x200B;할 수 있습니다. 이렇게 하면 연결된 AEM 게시 환경에 패키지가 복제됩니다.
 
 <!--
 1. Using replication/distribution tool:

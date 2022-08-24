@@ -5,7 +5,7 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 99%
 
 ### ID 공급자와 통합 {#integration-with-an-idp}
 
-고객은 사용자를 인증하는 IdP(ID 공급자)와 통합될 수 있습니다. 통합 기술에는 아래 설명된 것 처럼 SAML 및 OAuth/SSO가 포함되어 있습니다.
+고객은 사용자를 인증하는 IdP(ID 공급자)와 통합될 수 있습니다. 통합 기술에는 아래 설명된 것처럼 SAML 및 OAuth/SSO가 포함되어 있습니다.
 
 **SAML 기반**
 

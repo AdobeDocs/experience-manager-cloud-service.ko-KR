@@ -5,27 +5,27 @@ landing-page-description: Experience Manager Headless as a Cloud Service를 사�
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager as a Headless CMS 소개 {#introduction-aem-headless}
 
-컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 헤드리스 CMS로 Adobe Experience Manager(AEM)을 사용하는 방법을 규모에 맞게 헤드리스 경험을 향상시키는 방법을 알아봅니다.
+규모에 맞게 Headless 경험을 지원하는 콘텐츠 모델, 콘텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 Adobe Experience Manager(AEM) as a Headless CMS를 사용하는 방법에 대해 알아봅니다.
 
-관련된 다양한 기능에 대한 자세한 설명서를 읽거나 다음 중 하나를 선택할 수 있습니다 [첫 번째 단계에 대한 개요를 알 수 있는 헤드리스 여정](#first-steps).
+관련된 다양한 기능에 대한 자세한 설명서를 읽어보고 [첫 번째 단계에 대한 개요를 살펴보기 위한 Headless 여정](#first-steps)을 따를 수 있습니다.
 
 >[!NOTE]
 >
->참조 - [헤드리스란?](/help/headless/what-is-headless.md) 헤드리스 개념 및 용어를 소개합니다.
+>또한 Headless 개념 및 용어 소개가 포함되어 있는 [Headless 소개](/help/headless/what-is-headless.md)를 참조하십시오.
 
 ## 개요 {#overview}
 
 AEM Headless는 GraphQL을 사용한 HTTP를 통해 AEM의 구조화된 콘텐츠(콘텐츠 조각)를 모든 앱에서 사용할 수 있도록 하는 Experience Manager의 CMS 솔루션입니다. Headless 구현을 통해 플랫폼과 채널 전반에 걸쳐 대규모로 경험을 전달할 수 있습니다.
 
-Headless 구현은 전체 스택 및 하이브리드 솔루션의 기존 방식과 마찬가지로 페이지 및 구성 요소 관리를 생략하고 채널 중립적이고 재사용 가능한 콘텐츠 조각 생성 및 교차 채널 전달에 중점을 둡니다. 웹 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
+Headless 구현은 전체 스택 및 하이브리드 솔루션의 기존 방식과 마찬가지로 페이지 및 구성 요소 관리를 생략하고 채널 중립적이고 재사용 가능한 콘텐츠 조각 생성 및 크로스 채널 전달에 중점을 둡니다. 웹 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
 
 ![AEM 구현 모델](assets/aem-implementation-models.png)
 
