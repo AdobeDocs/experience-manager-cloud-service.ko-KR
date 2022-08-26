@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
+source-git-commit: 5319eca105564843f26e7fb6d9cfd5aa065b8ca0
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2683'
 ht-degree: 1%
 
 ---
@@ -197,6 +197,18 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 
 인 리소스에 대해 Adobe CDN에 HEAD 요청이 수신되는 경우 **not** 캐시되면 요청이 디스패처 및/또는 AEM 인스턴스에 의해 GET 요청으로 변환되고 수신됩니다. 응답을 캐시할 수 있으면 CDN에서 후속 HEAD 요청이 제공됩니다. 응답을 캐시할 수 없는 경우에는 후속 HEAD 요청이 Dispatcher 및/또는 AEM 인스턴스에 적용되는 기간에 대해 `Cache-Control` TTL.
 
+### 마케팅 캠페인 매개 변수
+
+마케팅 캠페인 매개 변수가 웹 사이트에 추가되어 서로 다른 마케팅 캠페인을 추적하지만 웹 사이트의 모양에는 거의 영향을 주지 않습니다. 디스패처에서 디스패처 캐싱 결정에 대해 대부분 무시할 수 있는 이유입니다. 이를 위해서는 [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+Adobe은 파일에서 일반적으로 사용되는 마케팅 쿼리 매개 변수 목록을 유지합니다 `conf.dispatcher.d/cache/marketing_query_parameters.any`. 웹 사이트 마케팅 캠페인에서 사용하는 줄의 주석을 해제하고 주석 처리를 해제합니다 `/ignoreUrlParams` 섹션을 사용할 수 있습니다.
+
+```
+/ignoreUrlParams {
+ 	/0001 { /glob "*" /type "deny" }
+ 	$include "../cache/marketing_query_parameters.any"
+}
+```
+
 ## Dispatcher 캐시 무효화 {#disp}
 
 일반적으로 디스패처 캐시를 무효화할 필요는 없습니다. 대신 컨텐츠가 다시 게시되는 경우 Dispatcher가 캐시를 새로 고침하고 캐시 만료 헤더를 준수하는 CDN에 의존해야 합니다.
@@ -236,7 +248,7 @@ Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 
   </tr>  
   <tr>
     <td>Sling 컨텐츠 배포(SCD) API</td>
-    <td>작성</td>
+    <td>작성자</td>
     <td>Discovery API를 사용하거나 <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">중복 제거 모드</a>.</td>
     <td>적어도 한 번</td>
     <td>
