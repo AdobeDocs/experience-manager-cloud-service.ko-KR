@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
+source-git-commit: 28bf3e1c33def6c8a17b39a6bd9abca10faa1bd8
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 75%
+source-wordcount: '1024'
+ht-degree: 70%
 
 ---
 
@@ -46,14 +46,32 @@ ht-degree: 75%
 1. 구성 페이지에서 **[!UICONTROL 만들기]** 만들기 [!DNL Adobe Sign] AEM Forms의 구성.
 1. 에서 **[!UICONTROL 일반]** 의 탭 **[!UICONTROL Adobe Sign 구성 만들기]** 페이지에서, **[!UICONTROL 이름]** 구성에 대해 를 탭하고 **[!UICONTROL 다음]**. 원할 경우 **[!UICONTROL 제목]** 을(를) 찾아 **[!UICONTROL 축소판]** 참조하십시오.
 
-1. 현재 브라우저 창의 URL을 메모장에 복사합니다. 이 URL은 이후 단계에서 [!DNL AEM Forms]를 사용해 [!DNL Adobe Sign]을 구성하는 데 필요합니다.
+1. 현재 브라우저 창의 URL을 메모장에 복사합니다. 이 URL은 이후 단계에서 [!DNL AEM Forms]를 사용해 [!DNL Adobe Sign]을 구성하는 데 필요합니다. 탭 **[!UICONTROL 다음]**.
+
+1. 에서 **[!UICONTROL 설정]** 탭, **[!UICONTROL OAuth URL]** 필드에 기본 URL이 포함되어 있습니다. URL 형식은 다음과 같습니다.
+
+   `https://<shard>/public/oAuth/v2`
+
+   예:
+   `https://secure.na1.echosign.com/public/oauth/v2`
+
+   여기에서
+
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+
+   Adobe Experience Manager 기능이나 구성 요소에 대한 또 다른 [!DNL Adobe Sign] 구성을 생성하는 경우, 모든 [!DNL Adobe Sign] 클라우드 구성이 동일한 분할을 가리켜야 합니다.
+
+   >[!NOTE]
+   >
+   > 유지 **Adobe Sign 구성 만들기** 페이지를 엽니다. 닫지 마세요. 검색할 수 있습니다 **클라이언트 Id** 및 **클라이언트 암호** 및에 대한 OAuth 설정 구성 후 [!DNL Adobe Sign] 향후 단계에 설명된 대로 응용 프로그램을 사용할 수 있습니다.
+
 
 1. [!DNL Adobe Sign] 애플리케이션에 대한 OAuth 설정을 구성합니다.
 
    1. 브라우저 창을 열고 [!DNL Adobe Sign] 개발자 계정에 로그인합니다.
    1. 에 대해 구성된 응용 프로그램을 선택합니다 [!DNL AEM Forms], 탭 **[!UICONTROL 애플리케이션에 대한 OAuth 구성]**.
-   1. 에서 **[!UICONTROL 리디렉션 URL]** 상자에서 이전 단계에서 복사한 URL을 추가하고 을(를) 클릭합니다 **[!UICONTROL 저장]**.
-   1. 에 대해 다음 OAuth 설정을 사용하도록 설정합니다. [!DNL Adobe Sign] 응용 프로그램을 클릭하고 **[!UICONTROL 저장]**.
+   1. 에서 **[!UICONTROL 리디렉션 URL]** 상자에서 이전 단계(7단계)에서 복사한 URL을 추가하고 를 클릭합니다 **[!UICONTROL 저장]**.
+   1. 에 대해 다음 범위를 활성화합니다 [!DNL Adobe Sign] 응용 프로그램을 클릭하고 **[!UICONTROL 저장]**.
    * [!DNL aggrement_read]
    * [!DNL aggrement_write]
    * [!DNL aggrement_send]
@@ -65,20 +83,7 @@ ht-degree: 75%
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. 로 돌아갑니다. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지. 에서 **[!UICONTROL 설정]** 탭, **[!UICONTROL OAuth URL]** 필드에 기본 URL이 설명되어 있습니다. URL 형식은 다음과 같습니다.
-
-   `https://<shard>/public/oAuth/v2`
-
-   예:
-   `https://secure.na1.echosign.com/public/oauth/v2`
-
-   여기에서
-
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL Adobe Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
-
-   Adobe Experience Manager 기능이나 구성 요소에 대한 또 다른 [!DNL Adobe Sign] 구성을 생성하는 경우, 모든 [!DNL Adobe Sign] 클라우드 구성이 동일한 분할을 가리켜야 합니다.
-
-1. 을(를) 지정합니다. **[!UICONTROL 클라이언트 ID]** (응용 프로그램 ID라고도 함) 및 **[!UICONTROL 클라이언트 암호]**. 이전 단계에서 생성한 Adobe Sign 애플리케이션의 클라이언트 ID와 클라이언트 보안을 사용합니다.
+1. 로 돌아갑니다. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지. [**[!UICONTROL 클라이언트 ID]** (응용 프로그램 ID라고도 함) 및 **[!UICONTROL 클라이언트 암호]**] 를 사용하십시오 [Adobe Sign 애플리케이션의 클라이언트 ID 및 클라이언트 암호](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 이전 단계에서 생성했습니다.
 
 1. 을(를) 선택합니다 **[!UICONTROL 첨부 파일용 Adobe Sign 활성화]** 적응형 양식에 첨부된 파일을 해당 양식에 추가 옵션 [!DNL Adobe Sign] 서명을 위해 문서를 보냈습니다.
 
