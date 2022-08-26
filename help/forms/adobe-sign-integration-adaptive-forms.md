@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 28bf3e1c33def6c8a17b39a6bd9abca10faa1bd8
+source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1028'
 ht-degree: 70%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 70%
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. 로 돌아갑니다. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지. [**[!UICONTROL 클라이언트 ID]** (응용 프로그램 ID라고도 함) 및 **[!UICONTROL 클라이언트 암호]**] 를 사용하십시오 [Adobe Sign 애플리케이션의 클라이언트 ID 및 클라이언트 암호](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 이전 단계에서 생성했습니다.
+1. 로 돌아갑니다. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지. 에서 **[!UICONTROL 설정]** 탭에서 [**[!UICONTROL 클라이언트 ID]** (응용 프로그램 ID라고도 함) 및 **[!UICONTROL 클라이언트 암호]**] 를 사용하십시오 [Adobe Sign 애플리케이션의 클라이언트 ID 및 클라이언트 암호](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) 이전 단계에서 생성했습니다.
 
 1. 을(를) 선택합니다 **[!UICONTROL 첨부 파일용 Adobe Sign 활성화]** 적응형 양식에 첨부된 파일을 해당 양식에 추가 옵션 [!DNL Adobe Sign] 서명을 위해 문서를 보냈습니다.
 
