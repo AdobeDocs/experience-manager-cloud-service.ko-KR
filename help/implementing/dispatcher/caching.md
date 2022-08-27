@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서 캐싱
 description: 'AEM as a Cloud Service에서 캐싱 '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a624b4f1999238adae2f6a03c2169cb30de9f730
+source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
 workflow-type: tm+mt
 source-wordcount: '2591'
 ht-degree: 1%
@@ -196,19 +196,6 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 ### HEAD 요청 동작 {#request-behavior}
 
 인 리소스에 대해 Adobe CDN에 HEAD 요청이 수신되는 경우 **not** 캐시되면 요청이 디스패처 및/또는 AEM 인스턴스에 의해 GET 요청으로 변환되고 수신됩니다. 응답을 캐시할 수 있으면 CDN에서 후속 HEAD 요청이 제공됩니다. 응답을 캐시할 수 없는 경우에는 후속 HEAD 요청이 Dispatcher 및/또는 AEM 인스턴스에 적용되는 기간에 대해 `Cache-Control` TTL.
-
-<!---### Marketing campaign parameters {#marketing-parameters}
-
-Marketing campaign parameters are added to a website to track different marketing campaigns but rarely have impact on how the website should look like. That's why in the dispatcher they can mostly be ignored for dispatcher caching decisions. This can be achieved by setting the [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters) parameter.
-Adobe maintains a list of commonly used marketing query parameters in the file `conf.dispatcher.d/cache/marketing_query_parameters.any`. Uncomment the lines that are used by the websites marketing campaigns and uncomment the `/ignoreUrlParams` section in the enabled farm.
-
-```
-/ignoreUrlParams {
- 	/0001 { /glob "*" /type "deny" }
- 	$include "../cache/marketing_query_parameters.any"
-}
-```
--->
 
 ## Dispatcher 캐시 무효화 {#disp}
 
