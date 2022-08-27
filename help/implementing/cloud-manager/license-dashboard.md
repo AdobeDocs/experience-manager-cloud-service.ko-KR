@@ -2,10 +2,10 @@
 title: 라이선스 대시보드
 description: Cloud Manager는 조직 또는 임차인이 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있는 대시보드를 제공합니다.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
+source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 1%
+source-wordcount: '787'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ Cloud Manager 라이선스 대시보드는 다음 정보에 쉽게 액세스할 
 >
 >의 사용자 **비즈니스 소유자** 라이선스 대시보드를 보려면 역할을 로그인해야 합니다.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 제품 개요 페이지에서 **라이선스** 탭.
 
@@ -67,35 +67,21 @@ Cloud Manager 라이선스 대시보드는 다음 정보에 쉽게 액세스할 
 
 AEM에는 검색 색인 또는 서비스를 새로 고치기 위해 정기적으로 사이트를 방문하는 알려진 서비스를 포함하여 잘 알려진 보트가 제외되는 규칙도 있습니다.
 
-다음은 제외된 잘 알려진 서비스의 비완전한 예입니다.
-
-* AddSearchBot
-* ArefsBot
-* Applebot
-* Jeeves Corporate Spider에게 묻기
-* 빙보트
-* BingPreview
-* BLEXBot
-* BuildWith
-* Bytepider
-* 크롤러켄고
-* Facebook Externalhit
-* Google AdsBot
-* Google AdsBot Mobile
-
 ### Analytics 보고서에 AEM 컨텐츠 요청과 다른 결과가 표시되는 이유는 무엇입니까? {#why-are-reports-different}
 
 컨텐츠 요청에는 이 표에 요약된 대로 조직의 Analytics 보고 도구와 차이가 있습니다.
 
 | 분산 이유 | 설명 |
 |---|---|
-| 태깅 | AEM 컨텐츠 요청으로 추적되는 모든 페이지는 Analytics 추적으로 태그가 지정되거나 지정되지 않을 수 있습니다.<br>AEM 컨텐츠 요청으로 추적되는 모든 API 호출은 조직의 Analytics 도구에서 태깅하지 않습니다.<br>페이지 또는 API 호출에 태그를 지정하여 보기 대신 작업을 추적할 수 있습니다. |
+| 태깅 | AEM 컨텐츠 요청으로 추적되는 모든 페이지는 Analytics 추적으로 태그가 지정되거나 지정되지 않을 수 있습니다. AEM 컨텐츠 요청으로 추적되는 모든 API 호출은 조직의 Analytics 도구에서 태깅하지 않습니다.<br>페이지 또는 API 호출에 태그를 지정하여 작업을 추적하거나 모든 보기 대신 고유한 페이지 보기 수를 추적할 수 있습니다. |
 | Tag Management 규칙 | 태그 관리 규칙 설정으로 인해 페이지에 다양한 데이터 수집 구성이 생성되어 컨텐츠 요청 추적과 불일치가 일부 조합될 수 있습니다. |
 | 보트 수 | AEM에서 미리 식별하거나 제거하지 않은 알 수 없는 보트는 추적 불일치를 초래할 수 있습니다. |
 | 보고서 세트 | 동일한 AEM 인스턴스 및 도메인에 속하는 페이지는 데이터를 다른 Analytics 보고서 세트에 보낼 수 있습니다. |
 | 타사 모니터링 및 보안 도구 | 모니터링 및 보안 검색 도구는 Analytics 보고서에서 추적되지 않은 AEM에 대한 컨텐츠 요청을 생성할 수 있습니다. |
 | 요청 미리 가져오기 | 미리 가져오기 서비스를 사용하여 페이지를 미리 로드하여 속도를 높이면 콘텐츠 요청 트래픽이 크게 증가할 수 있습니다. |
-| DDOS | Adobe은 DDOS 공격에서 트래픽을 자동으로 감지하고 필터링하기 위해 모든 노력을 하지만 가능한 모든 DDOS 공격이 탐지된다는 보장은 없습니다. |
+| DDOS | Adobe은 DDOS 공격에서 트래픽을 자동으로 감지하고 필터링하기 위해 모든 노력을 하지만 가능한 모든 DDOS 공격이 탐지된다는 보장은 없습니다 |
+| 트래픽 차단기 | 브라우저에서 추적기 차단기를 사용하면 일부 요청이 추적되지 않을 수 있습니다. |
+| 방화벽 | 방화벽이 Analytics 추적을 차단할 수 있습니다. 이것은 회사 방화벽과 함께 더 빈번합니다. |
 
 ### 내 CDN을 사용하는 경우 어떻게 합니까? {#using-own-cdn}
 
