@@ -2,10 +2,10 @@
 title: Go-Live
 description: 코드와 컨텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 0%
+source-wordcount: '1718'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 여정의 이 부분에서 코드와 컨텐츠가 AEM as a Cloud Service 으로 이동할 준비가 되면 마이그레이션을 계획하고 수행하는 방법을 알아봅니다. 또한 마이그레이션을 수행할 때 모범 사례와 알려진 제한 사항을 학습하게 됩니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 여정의 이전 단계에서
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 또한 최종 컨텐츠 추가 작업이 예약될 때 컨텐츠가 동결되도록 계획해야 합니다.
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 마이그레이션을 계획하거나 수행할 때 다음 지침을 고려해야 합니다.
 
@@ -144,6 +144,7 @@ AEM 소스의 부하가 추출 단계 중에 더 크게 된다는 것을 기억�
          * [SSL 인증서 관리 소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * DNS(사용자 지정 도메인 이름) 관리
+         * DNS 컷오버에서 예기치 않은 문제가 발생하지 않도록 하려면 라이브로 전환하고 UAT 테스트 라운드를 수행하기 전에 프로덕션 인스턴스를 연결하는 테스트 하위 도메인을 만드는 것이 가장 좋습니다. 따라서 도메인이 example.com인 경우 하위 도메인 test.example.com 을 만들어 프로덕션에 적용할 수 있습니다. 도메인을 UAT로 테스트하는 동안 적절한 링크 리디렉션, 캐싱 및 디스패처 구성과 같은 사항을 찾을 수 있습니다.
          * [사용자 지정 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [맞춤형 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [사용자 지정 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
@@ -155,6 +156,6 @@ AEM 소스의 부하가 추출 단계 중에 더 크게 된다는 것을 기억�
 
 마이그레이션을 수행하는 동안 작업을 재조정해야 하는 경우 언제든지 목록을 참조할 수 있습니다.
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 AEM as a Cloud Service로의 마이그레이션을 수행하는 방법을 이해하면 다음을 확인할 수 있습니다 [Go-Live 후](/help/journey-migration/post-go-live.md) 페이지를 사용하여 인스턴스를 원활하게 실행할 수 있습니다.
