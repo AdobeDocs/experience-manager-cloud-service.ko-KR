@@ -8,9 +8,9 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
+source-git-commit: 7a7a3de89d02ac34d40a59e87cc049652730a72d
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 <!-- hide: yes
 hidefromtoc: yes -->
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->Dynamic Media 회사 별칭 계정을 만드는 이 기능은 2022년 1월 베타 채널에 있습니다. 자세한 내용은 [사전 릴리스 채널 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 을 참조하십시오. 이 기능은 일반적으로 2022년 2월 릴리스에서 제공됩니다.
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature will be generally available in the February 2022 release. -->
 
 Dynamic Media URL 및 뷰어 포함 코드에 회사 계정 이름이 포함되어 있습니다. 이 계정 이름은 Dynamic Media 프로비저닝 시 생성되었습니다. 비즈니스에서 획득이나 리브랜딩을 받았거나, 더 기억에 남을 이름을 사용하고 싶은 시나리오가 있을 수 있습니다. 이러한 시나리오에서는 즉시 제공되는 모든 URL 및 뷰어 포함 코드에서 회사 계정 이름을 수동으로 업데이트하는 것이 쉽지 않습니다. 또한 기존 Dynamic Media 저장소에 영향을 주거나 라이브 컨텐츠에 영향을 줄 수 있습니다. 이 문제를 해결하려면 Dynamic Media 회사 별칭 계정을 구성할 수 있습니다.
 
