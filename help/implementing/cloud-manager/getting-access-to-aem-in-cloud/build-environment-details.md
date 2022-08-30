@@ -2,9 +2,9 @@
 title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드를 빌드하고 테스트하는 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
+source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -84,12 +84,12 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 
 | 공급업체 | 버전 |
 |---|---|
-| `oracle` | `1.8` |
-| `oracle` | `1.11` |
+| `oracle` | `8` |
 | `oracle` | `11` |
-| `sun` | `1.8` |
-| `sun` | `1.11` |
+| `sun` | `8` |
 | `sun` | `11` |
+
+이 표는 제품 버전 번호를 나타냅니다. Java 빌드 번호 또는 설치 경로는 Java 8용 1.8과 같은 이전 Java 버전 규칙을 반영할 수 있습니다.
 
 >[!NOTE]
 >

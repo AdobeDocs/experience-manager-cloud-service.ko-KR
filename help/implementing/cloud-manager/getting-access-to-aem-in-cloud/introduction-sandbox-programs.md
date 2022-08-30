@@ -2,10 +2,10 @@
 title: '샌드박스 프로그램 소개 '
 description: 샌드박스 프로그램은 프로덕션 프로그램과 어떻게 다른지 알아봅니다.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 0%
+source-wordcount: '437'
+ht-degree: 2%
 
 ---
 
@@ -46,6 +46,10 @@ ht-degree: 0%
 ### 사용자 지정 도메인 또는 IP 허용 목록 없음 {#ip-allow}
 
 사용자 지정 도메인 및 IP 허용 목록은 샌드박스 프로그램에서 사용할 수 없습니다.
+
+### 고급 네트워킹 없음 {#advanced-networking}
+
+[고급 네트워킹 기능](/help/security/configuring-advanced-networking.md) (예: VPN, 비표준 포트, 전용 송신 IP 주소 등의 셀프 서비스 프로비저닝) 을 샌드박스 프로그램에서 사용할 수 없습니다.
 
 ### 수동 AEM 업데이트 {#updates}
 
