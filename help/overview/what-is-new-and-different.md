@@ -2,10 +2,10 @@
 title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Service
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: ht
-source-wordcount: '1904'
-ht-degree: 100%
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
+workflow-type: tm+mt
+source-wordcount: '1903'
+ht-degree: 93%
 
 ---
 
@@ -67,26 +67,27 @@ ht-degree: 100%
 
 ## AEM 업데이트 {#aem-updates}
 
->[!NOTE]
->자세한 내용은 [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)를 참조하십시오.
-
-AEM as a Cloud Service는 이제 지속적인 통합 및 연속 제공(CI/CD)을 사용하여 프로젝트를 가장 최신 AEM 버전에서 작업할 수 있습니다. 이는 사용자에 대한 서비스 중단 없이 프로덕션 및 스테이지 인스턴스가 최신 AEM 버전으로 업데이트됨을 의미합니다.
+이제 AEM as a Cloud Service에서는 CI/CD(지속적 통합 및 지속적 전달)를 사용하여 프로젝트가 최신 AEM 버전을 사용하고 있는지 확인합니다. 즉, 프로덕션 및 스테이징 인스턴스가 사용자를 위한 서비스를 중단 없이 최신 AEM 버전으로 업데이트됩니다.
 
 >[!NOTE]
-> 프로덕션 환경 업데이트에 실패하는 경우 Cloud Manager에서 자동으로 스테이징 환경을 롤백합니다. 이 작업은 업데이트가 완료된 후 스테이징 및 프로덕션 환경이 동일한 AEM 버전에 있도록 자동으로 수행됩니다.
+>
+>프로덕션 환경에 대한 업데이트가 실패하면 Cloud Manager는 자동으로 스테이징 환경을 롤백합니다. 이 작업은 업데이트가 완료된 후 스테이징과 프로덕션 환경이 모두 동일한 AEM 버전을 사용하도록 자동으로 수행됩니다.
 
 AEM 버전 업데이트에는 두 가지 유형이 있습니다.
 
-* **AEM 푸시 업데이트**
+* **AEM 유지 관리 업데이트**
 
    * 일별로 릴리스될 수 있습니다.
-   * 대부분 유지 관리이며, 최신 버그 수정 및 보안 업데이트가 여기에 포함됩니다.
-
-      변경 내용이 정기적으로 적용됨에 따라 그 영향이 증분되어 서비스에 미치는 영향은 줄어듭니다.
+   * 최신 버그 수정 및 보안 업데이트를 포함하여 대부분의 경우 유지 관리를 목적으로 합니다.
+   * 변경 사항이 정기적으로 적용되므로 영향을 최소화할 수 있습니다.
 
 * **새로운 기능 업데이트**
 
    * 예측 가능한 월별 일정을 통해 릴리스됩니다.
+
+>[!TIP]
+>
+>자세한 내용은 [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)를 참조하십시오.
 
 ## Cloud Manager {#cloud-manager}
 

@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 릴리스 2021.3.0의 Cloud Manager 릴리스 노�
 description: AEM as a Cloud Service 릴리스 2021.3.0의 Cloud Manager 릴리스 노트
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -29,7 +29,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 날짜는 2021년 3�
    * 사이트 및 자산을 모두 사용하는 기존 프로그램에서 사이트 또는 자산을 제거합니다.
    * 기존 프로그램 또는 새 프로그램으로 사용하지 않는 두 번째 솔루션 권한을 추가합니다.
 
-* **AEM 푸시 업데이트** 이제 파이프라인 실행 및 활동 화면 모두에 대한 레이블이 표시됩니다.
+* **AEM 유지 관리 업데이트** 이제 파이프라인 실행 및 활동 화면 모두에 대한 레이블이 표시됩니다.
 
 * 환경이 최대 절전 모드이지만 AEM 업데이트도 사용 가능한 경우 **최대 절전 모드** 상태가 우선함 **업데이트 사용 가능**.
 
