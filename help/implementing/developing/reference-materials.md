@@ -2,7 +2,7 @@
 title: API 참조 자료
 description: AEM에는 디지털 경험 프로젝트에 활용할 수 있는 강력하고 광범위한 API가 있습니다.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 6%
@@ -34,7 +34,7 @@ AEM은 많은 추가 오픈 소스 API를 사용합니다.
 | API | 설명 |
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | JCR(Java Content Repository)을 사용하여 컨텐츠를 저장하고 관리하는 웹 프레임워크 |
-| [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 최신 세계적 수준의 웹 사이트의 기반으로 사용할 확장 가능하고 고성능 계층적 Java Content Repository(JCR) 구현 |
+| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 최신 세계적 수준의 웹 사이트의 기반으로 사용할 확장 가능하고 고성능 계층적 Java Content Repository(JCR) 구현 |
 | [Java Content Repository](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR 버전 2.0의 사양 |
 | [Apache Felix](https://felix.apache.org) | OSGi(Open Services Gateway Initiative) 프레임워크 및 서비스 플랫폼 구현 |
 
@@ -46,7 +46,7 @@ AEM은 다음 네 개의 기본 Java API 세트를 기본 설정의 내림차순
 |---|---|---|
 | 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 페이지, 자산, 워크플로우 등과 같은 제품 추상 |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | 리소스, 값 맵 및 HTTP 요청과 같은 REST 및 리소스 기반 추상화. |
-| 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 노드, 속성 및 세션과 같은 데이터 및 컨텐츠 추상. |
+| 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 노드, 속성 및 세션과 같은 데이터 및 컨텐츠 추상. |
 | 4 | [Apache Felix](https://felix.apache.org/) | 서비스 및 (OSGi) 구성 요소와 같은 OSGi 애플리케이션 컨테이너 추상. |
 
 API가 AEM에서 제공되는 경우 Sling, JCR 및 OSGi보다 선호합니다. AEM에서 API를 제공하지 않는 경우 JCR 및 OSGi보다 Sling을 선호합니다.
@@ -61,7 +61,7 @@ AEM에서는 사용자 정의 가능한 구성 요소 및 콘텐츠 전달 옵�
 
 | 기능 | 설명 |
 |---|---|
-| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) | AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소를 통해 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감할 수 있습니다 |
+| [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | AEM용 WCM(표준화된 웹 컨텐츠 관리) 구성 요소를 통해 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감할 수 있습니다 |
 | [JSON 내보내기](/help/implementing/developing/components/json-exporter.md) | JSON 데이터 모델 형식으로 AEM 페이지의 콘텐츠를 전달합니다 |
 | [구성 요소에 대해 JSON 내보내기 활성화](/help/implementing/developing/components/enabling-json-exporter.md) | 모델러 프레임워크를 기반으로 구성 요소 컨텐츠의 JSON 내보내기 생성 |
 | [자산 API](/help/assets/mac-api-assets.md) | 이진, 메타데이터, 표현물 및 주석을 포함하여 자산에 대한 CRUD(Create-Read-update-delete) 작업을 허용합니다. AEM Assets HTTP API 를 참조하십시오 |

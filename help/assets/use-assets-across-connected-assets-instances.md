@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3763'
 ht-degree: 15%
@@ -162,7 +162,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
    * 로컬 [!DNL Sites]에서 **[!UICONTROL 자산 게시]** 선택 **[!UICONTROL 선택적 게시]**. 선택하지 않음 **[!UICONTROL 모든 콘텐츠 동기화]**.
    * 원격 [!DNL Assets] 배포, [!UICONTROL Dynamic Media 동기화 모드], 선택 **[!UICONTROL 기본적으로 활성화됨]**.
 
-1. 활성화 [[!DNL Dynamic Media] 이미지 코어 구성 요소 의 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능은 기본값을 활성화합니다 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 표시 [!DNL Dynamic Media] 이미지 이미지 [!DNL Dynamic Media] 로컬 웹 페이지의 작성자가 이미지를 사용합니다 [!DNL Sites] 배포.
+1. 활성화 [[!DNL Dynamic Media] 이미지 코어 구성 요소 의 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능은 기본값을 활성화합니다 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) 표시 [!DNL Dynamic Media] 이미지 이미지 [!DNL Dynamic Media] 로컬 웹 페이지의 작성자가 이미지를 사용합니다 [!DNL Sites] 배포.
 
 ## 원격 자산 사용 {#use-remote-assets}
 

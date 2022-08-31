@@ -2,10 +2,10 @@
 title: AEM 커넥터 구현
 description: AEM 커넥터 구현
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '968'
-ht-degree: 100%
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ AEM은 혁신적인 웹 경험 관리 솔루션으로, 다양한 잠재적 통�
 
 Experience Manager as a Cloud Service [설명서](../overview/introduction.md)는 AEM에서의 개발 작업에 관련하여 중요한 통찰력을 제공합니다. 아래는 AEM 커넥터 구현 시 유용하게 사용할 수 있는 몇 가지 특정 기술 주제 및 참고 자료입니다.
 
-* AEM 개발자를 교육할 때 도움이 되도록 작성된 코드에 대한 Adobe 컨설팅 서비스(ACS) [AEM 샘플](http://adobe-consulting-services.github.io/acs-aem-samples/)
+* AEM 개발자를 교육할 때 도움이 되도록 작성된 코드에 대한 Adobe 컨설팅 서비스(ACS) [AEM 샘플](https://adobe-consulting-services.github.io/acs-aem-samples/)
 * 이 문서의 [일반적인 통합 패턴] 섹션에 있는 다양한 설명서 링크
 
 커뮤니티 리소스
@@ -45,9 +45,9 @@ Experience Manager as a Cloud Service [설명서](../overview/introduction.md)�
 
 위의 정적 설명서 이외에도 Adobe 및 AEM 커뮤니티는 커넥터를 시장에 출시하는 데 도움이 되는 리소스를 제공합니다.
 
-* Adobe 커뮤니티의 [AEM 포럼](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)은 동료들이 질문을 묻고 답하는 활성 사이트입니다.
+* Adobe 커뮤니티의 [AEM 포럼](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)은 동료들이 질문을 묻고 답하는 활성 사이트입니다.
 * 추가적인 Adobe 기술 리소스는 특정 파트너 수준으로 사용할 수 있습니다. [Adobe Exchange 프로그램](https://partners.adobe.com/exchangeprogram/experiencecloud)에 대해 자세히 알아보십시오.
-* 구현 관련 도움이 필요한 경우 Adobe의 [전문 서비스](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) 팀에 문의하거나 [솔루션 파트너 파인더](https://solutionpartners.adobe.com/home/partnerFinder.html)를 참조하여 전 세계의 Adobe 파트너 목록을 확인하십시오.
+* 구현 관련 도움이 필요한 경우 Adobe의 [전문 서비스](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) 팀에 문의하거나 [솔루션 파트너 파인더](https://solutionpartners.adobe.com/home/partnerFinder.html)를 참조하여 전 세계의 Adobe 파트너 목록을 확인하십시오.
 
 패키지 구조 규칙
 -----------------------

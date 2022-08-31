@@ -2,10 +2,10 @@
 title: 코드 배포
 description: AEM as a Cloud Service에서 Cloud Manager 파이프라인을 사용하여 코드를 배포하는 방법을 알아봅니다.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1199'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ _전체 스택 코드 파이프라인 유형만 코드 스캔, 함수 테스트,
 
 한번 드시면 [프로덕션 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 저장소, 환경 및 테스트 환경을 포함하여 코드를 배포할 준비가 되었습니다.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 코드를 배포할 프로그램을 클릭합니다.
 
@@ -149,20 +149,20 @@ AEM 사이트에 방문자가 미치는 영향을 최소화하기 위해 프로�
 
 ### 새 실행 트리거
 
-재실행을 트리거하려면 HAL 링크 &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> 를 클릭하여 제품에서 사용할 수 있습니다. 이 링크가 있으면 해당 단계에서 실행을 다시 시작할 수 있습니다. 없는 경우 해당 단계에서 실행을 다시 시작할 수 없습니다. 초기 릴리스에서는 이 링크가 프로덕션 배포 단계에만 존재하지만 이후 릴리스에서는 다른 단계에서 파이프라인을 시작할 수 있습니다. 예:
+재실행을 트리거하려면 HAL 링크 &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> 를 클릭하여 제품에서 사용할 수 있습니다. 이 링크가 있으면 해당 단계에서 실행을 다시 시작할 수 있습니다. 없는 경우 해당 단계에서 실행을 다시 시작할 수 없습니다. 초기 릴리스에서는 이 링크가 프로덕션 배포 단계에만 존재하지만 이후 릴리스에서는 다른 단계에서 파이프라인을 시작할 수 있습니다. 예:
 
 ```Javascript
  {
   "_links": {
-    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
       "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
       "templated": false
     },
-    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+    "https://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
       "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
       "templated": false
     },

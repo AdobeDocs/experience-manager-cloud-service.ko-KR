@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에 배포
 description: 'AEM as a Cloud Service에 배포 '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Blue-Green 배포 패턴으로 인한 응용 프로그램 변경 사항은 스�
 
 기존 코드 베이스를 사용하는 고객의 경우 AEM 설명서에 설명된 저장소 구조 변경 연습을 통해 이전에 /etc 아래에 있던 컨텐츠가 올바른 위치로 이동되도록 하는 것이 중요합니다.
 
-예를 들어, 이러한 코드 패키지에 일부 추가 제한이 적용됩니다 [후크 설치](http://jackrabbit.apache.org/filevault/installhooks.html) 지원되지 않습니다.
+예를 들어, 이러한 코드 패키지에 일부 추가 제한이 적용됩니다 [후크 설치](https://jackrabbit.apache.org/filevault/installhooks.html) 지원되지 않습니다.
 
 ## OSGi 구성 {#osgi-configuration}
 
@@ -104,7 +104,7 @@ Cloud Manager에서 가변 저장소, 변경 가능한 컨텐츠 패키지 및 �
    * 폴더(추가, 수정, 제거)
    * 편집 가능한 템플릿(추가, 수정, 제거)
    * 컨텍스트 인식 구성(아래에 있는 모든 것) `/conf`)(추가, 수정, 제거)
-   * 스크립트(패키지)는 패키지 설치 프로세스의 다양한 단계에서 설치 후크를 트리거할 수 있습니다. 자세한 내용은 [Jackrabbit filerabbit 설명서](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) 설치 후크 정보. AEM CS는 현재 Filerabault 버전 3.4.0을 사용하여 관리자 사용자, 시스템 사용자 및 관리자 그룹의 구성원에게 설치 후크를 제한합니다.)
+   * 스크립트(패키지)는 패키지 설치 프로세스의 다양한 단계에서 설치 후크를 트리거할 수 있습니다. 자세한 내용은 [Jackrabbit filerabbit 설명서](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) 설치 후크 정보. AEM CS는 현재 Filerabault 버전 3.4.0을 사용하여 관리자 사용자, 시스템 사용자 및 관리자 그룹의 구성원에게 설치 후크를 제한합니다.)
 
 아래의 install.author 또는 install.publish 폴더에 패키지를 포함하여 가변 컨텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다 `/apps`. 이러한 분리를 반영하도록 재구성을 AEM 6.5에서 수행했으며 권장 프로젝트 재구성에 대한 세부 사항은 [AEM 6.5 설명서.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 

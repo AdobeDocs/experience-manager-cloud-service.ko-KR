@@ -2,10 +2,10 @@
 title: 'AEM 프로젝트 저장소 구조 패키지  '
 description: Adobe Experience Manager as a Cloud Service Maven 프로젝트에서는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 유일한 목적이 되는 저장소 구조 하위 패키지 정의가 필요합니다.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Maven 프로젝트에 대한 저장소 구조 패키지를 생성하려면 다�
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- ====================================================================== -->
@@ -182,4 +182,4 @@ Filter root's ancestor '/apps/some/path' is not covered by any of the specified 
 
 ## 추가 리소스
 
-+ [FileVault 콘텐츠 패키지 Maven 플러그인](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault 콘텐츠 패키지 Maven 플러그인](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

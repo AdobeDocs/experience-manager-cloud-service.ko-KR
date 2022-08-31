@@ -2,10 +2,10 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -144,12 +144,12 @@ Oak 인덱스(`/oak:index`)은 특히 AEM as a Cloud Service 배포 프로세스
 
 패키지는 선언된 패키지 유형으로 표시됩니다. 패키지 유형은 패키지의 목적과 배포를 확인하는 데 도움이 됩니다.
 
-+ 컨테이너 패키지는 `packageType` to `container`. 컨테이너 패키지에는 일반 노드가 들어 있지 않아야 합니다. OSGi 번들, 구성 및 하위 패키지만 사용할 수 있습니다. AEM as a Cloud Service의 컨테이너는 사용할 수 없습니다 [후크 설치](http://jackrabbit.apache.org/filevault/installhooks.html).
++ 컨테이너 패키지는 `packageType` to `container`. 컨테이너 패키지에는 일반 노드가 들어 있지 않아야 합니다. OSGi 번들, 구성 및 하위 패키지만 사용할 수 있습니다. AEM as a Cloud Service의 컨테이너는 사용할 수 없습니다 [후크 설치](https://jackrabbit.apache.org/filevault/installhooks.html).
 + 코드(변경할 수 없는) 패키지는 `packageType` to `application`.
 + 콘텐츠(가변) 패키지는 `packageType` to `content`.
 
 
-자세한 내용은 [Apache Jackrabbit FileVault - Package Maven 플러그인 설명서](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit 패키지 유형](http://jackrabbit.apache.org/filevault/packagetypes.html), 및 [FileVault Maven 구성 코드 조각](#marking-packages-for-deployment-by-adoube-cloud-manager) 아래의 제품에서 사용할 수 있습니다.
+자세한 내용은 [Apache Jackrabbit FileVault - Package Maven 플러그인 설명서](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit 패키지 유형](https://jackrabbit.apache.org/filevault/packagetypes.html), 및 [FileVault Maven 구성 코드 조각](#marking-packages-for-deployment-by-adoube-cloud-manager) 아래의 제품에서 사용할 수 있습니다.
 
 >[!TIP]
 >
@@ -625,4 +625,4 @@ In the `all` project&#39;s `filter.xml` (`all/src/main/content/jcr_root/META-INF
 ## 추가 리소스 {#additional-resources}
 
 + [Maven을 사용한 패키지 관리](/help/implementing/developing/tools/maven-plugin.md)
-+ [FileVault 콘텐츠 패키지 Maven 플러그인](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault 콘텐츠 패키지 Maven 플러그인](https://jackrabbit.apache.org/filevault-package-maven-plugin/)

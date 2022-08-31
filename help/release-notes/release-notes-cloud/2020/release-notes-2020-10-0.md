@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 릴리스의 릴리스 노트'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.10.0 릴리스 정보입니다.'
 description: '"[!DNL Adobe Experience Manager] 2020.10.0용 as a Cloud Service 릴리스 노트"'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 23%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 23%
 
 ### [!DNL Sites]의 새로운 기능 {#what-is-new-sites}
 
-* **[핵심 구성 요소 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)**: Adobe Experience Manager as a Cloud Service은 핵심 구성 요소의 최신 릴리스에 대한 자동 업데이트를 통해 이점을 제공합니다. 릴리스 2.12.0에는 커뮤니티에서 제공한 최신 개선 사항이 포함되어 있습니다. 개선 사항은 다음과 같습니다 [새 POST 양식 처리기;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 사용자 지정 CSS, JavaScript 및 메타데이터를 포함하는 기능 [컨텍스트 인식 구성을 통한 태그](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 그리고 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 사용자 지정 구성 요소에서 Adobe 데이터 레이어 통합을 단순화하는 유틸리티입니다. 자세한 내용은 [변경 사항 목록](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0.
+* **[핵심 구성 요소 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**: Adobe Experience Manager as a Cloud Service은 핵심 구성 요소의 최신 릴리스에 대한 자동 업데이트를 통해 이점을 제공합니다. 릴리스 2.12.0에는 커뮤니티에서 제공한 최신 개선 사항이 포함되어 있습니다. 개선 사항은 다음과 같습니다 [새 POST 양식 처리기;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 사용자 지정 CSS, JavaScript 및 메타데이터를 포함하는 기능 [컨텍스트 인식 구성을 통한 태그](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 그리고 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 사용자 지정 구성 요소에서 Adobe 데이터 레이어 통합을 단순화하는 유틸리티입니다. 자세한 내용은 [변경 사항 목록](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 2.12.0.
 
 * **[Project Archetype 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**: 새 Experience Manager 프로젝트를 시작하는 권장 기반이 개선되었습니다. 이제 새 항목이 포함됩니다 [Adobe 클라이언트 데이터 레이어](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html), 옵션 [amp에서 사이트 제공,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 및 새로운 [확장은 프로젝트 CSS/JS를 추가할 수 있는 지점입니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
@@ -55,7 +55,7 @@ ht-degree: 23%
 
 ### [!DNL Forms]의 베타 기능 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [통신 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=ko-KR) 서식 파일과 XML 데이터를 결합하여 다양한 형식으로 문서를 생성하는 데 도움이 됩니다. 이 서비스를 사용하면 문서를 동기식으로 일괄 처리할 수 있습니다.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [통신 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 서식 파일과 XML 데이터를 결합하여 다양한 형식으로 문서를 생성하는 데 도움이 됩니다. 이 서비스를 사용하면 문서를 동기식으로 일괄 처리할 수 있습니다.
 
 Beta 프로그램에 등록하려면 [!DNL formscsbeta@adobe.com]에 문의하십시오.
 
@@ -112,7 +112,7 @@ Experience Manager as a Cloud Service 2020.10.0의 Cloud Manager 릴리스 날�
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
-### 워크플로우 {#workflows}
+### 워크플로 {#workflows}
 
 * 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다. 자세한 내용은 [검색 워크플로우 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 

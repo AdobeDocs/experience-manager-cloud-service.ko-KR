@@ -2,7 +2,7 @@
 title: Cloud Manager 저장소
 description: Cloud Manager에서 Git 리포지토리를 생성, 보기 및 삭제하는 방법을 알아봅니다.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -80,8 +80,8 @@ $ git submodule update --init
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
    
     <groupId>customer.group.id</groupId>
@@ -119,7 +119,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 Git 하위 모듈에 대한 자세한 내용은 [Git 참조 설명서.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-### 제한 사항 및 Recommendations {#limitations-recommendations}
+### 제한 사항 및 권장 사항 {#limitations-recommendations}
 
 Git 하위 모듈을 사용할 때는 다음 제한 사항을 알아 두십시오.
 

@@ -2,10 +2,10 @@
 title: UI 테스트
 description: 사용자 지정 UI 테스트는 사용자 지정 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택 기능입니다
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -79,7 +79,7 @@ Docker 빌드 컨텍스트를 생성하려면 다음과 같은 Maven 모듈이 �
 * 가 포함된 아카이브를 생성합니다. `Dockerfile` 테스트로 Docker 이미지를 빌드하는 데 필요한 모든 다른 파일입니다.
 * 를 사용하여 아카이브에 태그 지정 `ui-test-docker-context` 분류자.
 
-이렇게 하는 가장 간단한 방법은 [Maven 어셈블리 플러그인](http://maven.apache.org/plugins/maven-assembly-plugin/) docker 빌드 컨텍스트 아카이브를 만들고 이 설명서에 올바른 분류자를 할당합니다.
+이렇게 하는 가장 간단한 방법은 [Maven 어셈블리 플러그인](https://maven.apache.org/plugins/maven-assembly-plugin/) docker 빌드 컨텍스트 아카이브를 만들고 이 설명서에 올바른 분류자를 할당합니다.
 
 다양한 기술 및 프레임워크를 사용하여 UI 테스트를 작성할 수 있지만, 이 섹션에서는 프로젝트가 다음과 유사한 방식으로 표현된다고 가정합니다.
 

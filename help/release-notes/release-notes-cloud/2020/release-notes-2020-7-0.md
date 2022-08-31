@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 릴리스의 릴리스 노트'
 description: '"[!DNL Adobe Experience Manager] 2020.7.0용 as a Cloud Service 릴리스 노트"'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 76%
@@ -61,9 +61,9 @@ ht-degree: 76%
 
 ### 새로운 기능 {#what-is-new-core-components}
 
-[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.11.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
-* 새로운 [PDF 뷰어 구성 요소](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html) 소개
+* 새로운 [PDF 뷰어 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html) 소개
 
 * 이제 코어 구성 요소에 대한 AMP(Accelerated Mobile Page) 지원을 사용할 수 있습니다. Google 모바일 검색 결과에서 사이트 방문 시 즉시 페이지를 전환하여 더 빠른 고객 경험을 제공하고 사용자 참여도와 SEO를 향상합니다.
 자세한 내용은 [코어 구성 요소에 대한 AMP 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)을 참조하십시오.

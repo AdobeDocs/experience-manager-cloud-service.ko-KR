@@ -2,10 +2,10 @@
 title: '등록, 로그인 및 사용자 프로필 '
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 고객은 사용자 정의 구성 요소를 작성할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 
 * [Sling 인증 프레임워크](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* 또한 로그인에 관련하여 [AEM 커뮤니티 전문가 세션에 문의](http://bit.ly/ATACEFeb15)할 수도 있습니다.
+* 또한 로그인에 관련하여 [AEM 커뮤니티 전문가 세션에 문의](https://bit.ly/ATACEFeb15)할 수도 있습니다.
 
 ### ID 공급자와 통합 {#integration-with-an-idp}
 

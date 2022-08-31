@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 릴리스의 릴리스 노트'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 릴리스의 릴리스 노트'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.7.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.7.0 릴리스 정보입니다.'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 27%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko-KR)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
@@ -88,7 +88,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 에서 사용할 수 없음 
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=ko-KR)를 통해 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기화 모드에서 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [커뮤니케이션 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html)를 통해 XDP 템플릿과 XML 데이터를 결합하여 다양한 형식의 인쇄 문서를 생성할 수 있습니다. 이 서비스를 사용하면 동기 모드로 문서를 생성할 수 있습니다. API를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
    * XML 데이터로 템플릿 파일을 채워 문서를 생성합니다.
    * 비대화형 PDF 인쇄 스트림을 포함하여 다양한 형식의 출력 양식을 생성합니다.
    * XFA 양식 PDF 및 Adobe Acrobat Form에서 인쇄 PDF 파일을 생성합니다.
@@ -134,11 +134,11 @@ API `com.day.cq.dam.api.collection.SmartCollection` 에서 사용할 수 없음 
 
 * 이름이 동일하지만 네임스페이스가 다른 태그를 일찍 만들 수 없습니다.
 
-## Experience Manager as a Cloud Service용 XML 설명서 {#xml-documentation}
+## XML Documentation for Experience Manager as a Cloud Service {#xml-documentation}
 
 ### 새로운 기능 {#what-is-new-xml-documentation}
 
-일반적으로 Experience Manager as a Cloud Service용 XML 설명서를 사용할 수 있습니다. 이 솔루션을 통해 Experience Manager as a Cloud Service 고객은 XML Documentation을 통해 Experience Manager Sites을 비롯한 여러 채널에서 기술 컨텐츠를 가져오고, 만들고, 관리하고, 전달할 수 있습니다.
+일반적으로 Experience Manager as a Cloud Service용 XML Documentation을 사용할 수 있습니다. 이 솔루션을 통해 Experience Manager as a Cloud Service 고객은 XML Documentation addon 을 통해 Experience Manager Sites을 비롯한 여러 채널에서 기술 콘텐츠를 가져오고, 만들고, 관리하고, 전달할 수 있습니다.
 
 ## Cloud Manager {#cloud-manager}
 

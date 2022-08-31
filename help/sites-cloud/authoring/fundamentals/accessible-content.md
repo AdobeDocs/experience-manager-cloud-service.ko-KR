@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 액세스 가능한 콘텐츠 만들기(WCAG 2.1 준수)
 description: 장애가 있는 사용자가 액세스하여 사용할 수 있는 웹 콘텐츠를 만드는 데 도움이 되는 AEM as a Cloud Service 사용
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
-source-wordcount: '14050'
-ht-degree: 100%
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -362,6 +362,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
       >
       >* `<b>` 대상 `<strong>`
       >* `<i>` 대상 `<em>`
+
       >
       >이러한 요소는 효과가 동일하지만 `<strong>`과 `<em>`이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 `<strong>`과 `<em>`(`<b>`와 `<i>` 대신)을 사용하도록 RTE를 구성할 수 있습니다.
 
@@ -568,7 +569,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 >
 >* [Px에서 Em으로 계산기 - 옴니](https://www.omnicalculator.com/conversion/px-to-em)
 >* [글꼴 크기 변환: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX에서 EM으로 간단하게 변환](http://pxtoem.com)
+>* [PMtoEM.com: PX에서 EM으로 간단하게 변환](https://pxtoem.com)
 
 
 대비율을 확인하려면 [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html)나 [WebAIM 색상 대비 검사기와 같은 색상 대비 도구](https://www.webaim.org/resources/contrastchecker/)를 사용하십시오. 이러한 도구를 사용하면 색상 쌍을 검사하고 대비 문제에 대해 보고할 수 있습니다.

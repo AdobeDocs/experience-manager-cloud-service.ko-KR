@@ -2,10 +2,10 @@
 title: Adobe Target으로 경험 조각 내보내기
 description: Adobe Target으로 경험 조각 내보내기
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 8e13f671ada67e4e22b66094ad23bf5a0508ccba
-workflow-type: ht
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+workflow-type: tm+mt
 source-wordcount: '2259'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역 또는 Adobe Target의
 >
 >또한 자세한 내용은 다음을 참조하십시오.
 >
->* [Adobe Target 개발](http://developers.adobetarget.com/)
+>* [Adobe Target 개발](https://developers.adobetarget.com/)
 >* [핵심 구성 요소 - 경험 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 >* [Adobe Target - Adobe Experience Manager(AEM) 경험 조각 사용 방법](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=ko)
 >* [AEM 6.5 - 수동으로 Adobe Target과의 통합 구성 - Target 클라우드 구성 만들기](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
@@ -209,6 +209,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
       >* 보안 개선
       >* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
       >* AT.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 더 이상 target.js를 호출할 필요가 없습니다.
+
       >
       >**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 
