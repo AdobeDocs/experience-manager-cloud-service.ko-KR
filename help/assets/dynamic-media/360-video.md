@@ -4,9 +4,9 @@ description: Dynamic Media에서 360 및 VR(Virtual Reality) 비디오로 작업
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Dynamic Media에는 360개의 비디오 자산 전달에 대한 기본 지원이
 
 ## 360 비디오 작동 {#video-in-action}
 
-선택 [우주 정거장 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) 브라우저 창을 열고 360° 비디오를 시청하십시오. 비디오 재생 중에 포인터를 새 위치로 드래그하여 보기 각도를 변경합니다.
+선택 [우주 정거장 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) 브라우저 창을 열고 360° 비디오를 시청하십시오. 비디오 재생 중에 포인터를 새 위치로 드래그하여 보기 각도를 변경합니다.
 
 ![360 비디오 샘플](assets/6_5_360videoiss_simplified.png)
 *스페이스 스테이션 360의 비디오 프레임*
@@ -43,16 +43,16 @@ Adobe Premier Pro를 사용하여 360/VR 푸티지를 보고 편집할 수 있�
 에 업로드된 360개의 비디오 자산 [!DNL Experience Manager] 에는 **멀티미디어** 일반 비디오 자산과 유사한 자산 페이지.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*카드 보기에서 표시된 업로드된 360개의 비디오 자산. 자산 레이블이 멀티미디어로 지정됩니다.*
+*카드 보기에서 표시된 업로드된 360-비디오 자산. 자산 레이블이 멀티미디어로 지정됩니다.*
 
 **360 비디오 뷰어에서 사용할 자산을 업로드합니다.**
 
 1. 360 비디오 자산 전용 폴더를 만들었습니다.
 1. [폴더에 응용 비디오 프로필 적용](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   360개의 비디오 컨텐츠를 렌더링하면 표준 비360 비디오 컨텐츠보다 소스 비디오 해상도와 인코딩된 변환 해상도에 대한 요구 사항이 더 높습니다.
+   360개의 비디오 컨텐츠를 렌더링하면 표준 비360개의 비디오 컨텐츠보다 소스 비디오 해상도와 인코딩된 변환 해상도에 대한 요구 사항이 더 높습니다.
 
-   Dynamic Media과 함께 이미 제공되는 기본 응용 비디오 프로필을 사용할 수 있습니다. 그러나 360이 아닌 비디오 뷰어로 렌더링되는 것과 동일한 설정으로 인코딩된 비360 비디오에 대해 가져올 수 있는 것보다 360개 비디오 품질이 확실히 더 낮습니다. 따라서 고품질 360 비디오가 필요한 경우 다음을 수행하십시오.
+   Dynamic Media과 함께 이미 제공되는 기본 응용 비디오 프로필을 사용할 수 있습니다. 그러나 360이 아닌 비디오 뷰어로 렌더링되는 것과 동일한 설정으로 인코딩된 비360 비디오에 대해 가져올 수 있는 것보다 훨씬 낮은 360 비디오 품질을 얻을 수 있습니다. 따라서 고품질 360 비디오가 필요한 경우 다음을 수행하십시오.
 
    * 가장 좋은 방법은 원래 360 비디오 컨텐츠에 다음 해상도 중 하나를 사용하는 것입니다.
 
@@ -108,7 +108,7 @@ Start by uploading 360 Videos.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
-   비디오를 미리 보려면 360 비디오 자산을 선택합니다.
+   비디오를 미리 보려면 360-비디오 자산을 선택합니다.
 
 1. 미리 보기 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록을 선택한 다음 을 선택합니다 **[!UICONTROL 뷰어]**.
 
