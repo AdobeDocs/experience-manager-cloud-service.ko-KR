@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3992'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,8 +39,8 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 
 예를 들어 `/content/wknd/fr` 언어 루트는 `/content/wknd/en` 마스터 언어의 프랑스어 번역에 생성됩니다. 프랑스어 사본에는 다른 페이지가 없습니다.
 
-* 번역 프로젝트는 프랑스어 사본을 타겟팅하는 `/content/wknd/en/products` 페이지 및 모든 하위 페이지에 대해 생성됩니다. 언어 사본에 `/content/wknd/fr/products` 페이지가 포함되어 있지 않으므로, AEM은 즉시 `/content/wknd/en/products` 페이지 및 모든 하위 페이지를 프랑스어 사본에 복사합니다. 복사된 항목은 번역 프로젝트에도 포함됩니다.
-* 번역 프로젝트는 프랑스어 사본을 타겟팅하는 `/content/wknd/en` 페이지 및 모든 하위 페이지에 대해 생성됩니다. 언어 사본에 `/content/wknd/en` 페이지(언어 루트)에 해당하는 페이지가 포함되어 있으므로, AEM은 `/content/wknd/en` 페이지 및 모든 하위 페이지를 복사한 다음 론치에 추가합니다. 복사된 항목은 번역 프로젝트에도 포함됩니다.
+* 번역 프로젝트는 프랑스어 사본을 타겟팅하는 `/content/wknd/en/products` 페이지 및 모든 하위 페이지에 대해 생성됩니다. 언어 사본에 `/content/wknd/fr/products` 페이지가 포함되어 있지 않으므로 AEM은 즉시 `/content/wknd/en/products` 페이지 및 모든 하위 페이지를 프랑스어 사본에 복사합니다. 복사된 항목은 번역 프로젝트에도 포함됩니다.
+* 번역 프로젝트는 프랑스어 사본을 타겟팅하는 `/content/wknd/en` 페이지 및 모든 하위 페이지에 대해 생성됩니다. 언어 사본에 `/content/wknd/en` 페이지(언어 루트)에 해당하는 페이지가 포함되어 있으므로 AEM은 `/content/wknd/en` 페이지 및 모든 하위 페이지를 복사한 다음 론치에 추가합니다. 복사된 항목은 번역 프로젝트에도 포함됩니다.
 
 ## 사이트 콘솔에서 번역 {#performing-initial-translations-and-updating-existing-translations}
 
@@ -170,27 +170,27 @@ AEM은 번역 작업이 콘텐츠의 초기 작업을 위해 생성되는지 또
 
 ### 번역 메모리 업데이트 {#updating-translation-memory}
 
-번역된 컨텐츠의 수동 편집 내용을 TMS(Translation Management System)에 다시 동기화하여 번역 메모리를 학습할 수 있습니다.
+번역된 콘텐츠의 수동 편집 내용을 번역 관리 시스템(TMS)과 다시 동기화하여 번역 메모리를 트레이닝할 수 있습니다.
 
 1. 사이트 콘솔에서 번역된 페이지의 텍스트 콘텐츠를 업데이트한 다음 **번역 메모리 업데이트**&#x200B;를 선택합니다.
 1. 편집된 모든 텍스트 구성 요소에 대해 소스와 번역의 병렬 비교가 목록 보기에 표시됩니다. 번역 메모리에 동기화할 번역 업데이트를 선택한 다음 **메모리 업데이트**&#x200B;를 선택합니다.
 
 ![번역 메모리에 대한 변경 내용 비교](../assets/update-translation-memory-compare.png)
 
-AEM은 구성된 TMS의 번역 메모리에서 기존 문자열의 번역을 업데이트합니다.
+AEM은 구성된 TMS의 번역 메모리에 기존 문자열의 번역을 업데이트합니다.
 
-* 작업은 구성된 TMS의 번역 메모리에서 기존 문자열의 번역을 업데이트합니다.
-* 새 번역 작업이 생성되지 않습니다.
-* AEM 번역 API를 통해 번역을 TMS로 다시 보냅니다(아래 참조).
+* 이 작업은 구성된 TMS의 번역 메모리에 기존 문자열의 번역을 업데이트합니다.
+* 이는 새로운 번역 작업을 생성하지 않습니다.
+* 이는 AEM 번역 API를 통해 TMS로 번역을 다시 전달합니다(아래 참조).
 
-이 기능을 사용하려면
+이 기능을 사용하려면 다음 작업을 수행하십시오.
 
-* AEM에서 사용하도록 TMS를 구성해야 합니다.
-* 커넥터는 메서드를 구현해야 합니다 [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * 이 메서드 내의 코드는 번역 메모리 업데이트 요청에 대한 작업을 결정합니다.
-   * AEM 번역 프레임워크는 이 메서드 구현을 통해 문자열 값 쌍(원래 및 업데이트된 번역)을 다시 TMS로 전송합니다.
+* TMS를 AEM과 사용할 수 있도록 구성해야 합니다.
+* 커넥터가 방법 [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)를 구현해야 합니다.
+   * 이 방법에 포함되는 코드는 번역 메모리 업데이트 요청에 발생하는 일을 결정합니다.
+   * 이 방법의 구현을 통해 AEM 번역 프레임워크는 문자열 값 쌍(원본 번역과 업데이트된 번역)을 TMS로 다시 전달합니다.
 
-번역 메모리 업데이트는 독점적 번역 메모리를 사용하는 경우 가로채서 사용자 지정 대상으로 전송될 수 있습니다.
+독점 번역 메모리를 사용하는 경우 번역 메모리 업데이트가 이전되어 사용자 정의 대상으로 전달될 수 있습니다.
 
 ### 페이지 번역 상태 확인 {#check-translation-status}
 
