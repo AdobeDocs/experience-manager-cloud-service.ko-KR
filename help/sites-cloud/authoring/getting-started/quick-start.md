@@ -3,7 +3,7 @@ title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![만들기 버튼](/help/sites-cloud/authoring/assets/create.png)
 
-1. 이렇게 하면 [새 페이지를 만들 때 ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면의 지시를 따르십시오.
+1. 이렇게 하면 [새 페이지를 만들 때 ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면에 표시되는 안내를 따르십시오.
 
 ### 추가 작업을 수행할 페이지 선택 {#selecting-your-page-for-further-action}
 
@@ -246,10 +246,10 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * [복사](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
-      * 새 위치로 이동한 후 붙여넣어야 합니다.
+      * 이후 새 위치로 이동하여 붙여넣어야 합니다.
    * [이동](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
-      * 마법사가 열리고 페이지 이동에 필요한 정보를 수집합니다. 화면의 지시를 따르십시오.
+      * 마법사가 열리고 페이지 이동에 필요한 정보를 수집합니다. 화면에 표시되는 안내를 따르십시오.
    * [삭제](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * 작업을 확인하는 메시지가 나타납니다.
