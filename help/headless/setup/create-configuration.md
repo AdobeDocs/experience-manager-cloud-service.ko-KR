@@ -3,9 +3,9 @@ title: 구성 만들기 - Headless 설정
 description: AEM as a Cloud Service에서 Headless를 시작하기 위한 첫 번째 단계로 구성을 만듭니다.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 �
 
 >[!NOTE]
 >
->구성 옵션 및 **컨텐츠 조각 모델** 및 **GraphQL 지속적인 쿼리** 은 구현 요구 사항에 따라 필요할 수 있습니다.
+>구현 요구 사항에 따라 **콘텐츠 조각 모델** 및 **GraphQL 지속 쿼리** 외에 구성 옵션이 필요할 수 있습니다.
 
 ## 다음 단계 {#next-steps}
 
