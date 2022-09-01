@@ -2,9 +2,9 @@
 title: 맞춤형 코드 품질 규칙
 description: 이 페이지에서는 [코드 품질 테스트]의 일부로 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대해 설명합니다. AEM Engineering의 우수 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3493'
 ht-degree: 4%
 
 ---
@@ -772,7 +772,7 @@ OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` AEM 내에서 
 * 클래식 UI 디자인 대화 상자(예: `design_dialog` 노드)에는 해당 Touch UI 디자인 대화 상자(즉, `cq:design_dialog` 하위 노드).
 * 클래식 UI 대화 상자와 클래식 UI 디자인 대화 상자가 모두 있는 구성 요소에는 해당 터치 UI 대화 상자와 해당 터치 UI 디자인 대화 상자가 모두 있어야 합니다.
 
-AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 Touch UI로 변환하는 방법에 대한 설명서 및 도구를 제공합니다. 자세한 내용은 [AEM 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) 자세한 내용
+AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 Touch UI로 변환하는 방법에 대한 설명서 및 도구를 제공합니다. 자세한 내용은 [AEM 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/) 자세한 내용
 
 ### 패키지는 가변 콘텐츠와 변경할 수 없는 콘텐츠를 혼합하지 않아야 합니다. {#oakpal-packages-immutable}
 

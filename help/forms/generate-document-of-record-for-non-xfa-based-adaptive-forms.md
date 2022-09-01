@@ -2,9 +2,9 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: e9f235f4e4a1d314370a423ee8a2ef997346a794
+source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
 workflow-type: tm+mt
-source-wordcount: '3677'
+source-wordcount: '3659'
 ht-degree: 2%
 
 ---
@@ -408,8 +408,8 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 
 | XCI 옵션 | 설명 |
 |--- |--- |
-| config/present/pdf/creator | 문서 정보 사전의 작성자 항목을 사용하여 문서 작성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
-| config/present/pdf/producer | 문서 정보 사전의 생성자 항목을 사용하여 문서 생성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/creator | 문서 정보 사전의 작성자 항목을 사용하여 문서 작성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | 문서 정보 사전의 생성자 항목을 사용하여 문서 생성자를 식별합니다. 이 사전에 대한 자세한 내용은 [PDF 참조 안내서](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | 구성/현재/레이아웃 | 출력이 단일 패널인지 페이지로 매기는지 여부를 제어합니다. |
 | config/present/pdf/compression/level | PDF 문서를 생성할 때 사용할 압축 정도를 지정합니다. |
 | config/present/pdf/fontInfo/embed | 출력 문서에 글꼴 포함을 제어합니다. |

@@ -2,7 +2,7 @@
 title: 구성 요소 참조 안내서
 description: 구성 요소 및 해당 구조에 대한 세부 사항에 대한 개발자 참조 안내서
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # 구성 요소 참조 안내서 {#components-reference-guide}
 
-구성 요소는 AEM에서 경험을 작성하는 데 핵심입니다. 다음 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 그리고 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 준비가 완료된 강력한 구성 요소 도구 세트를 간단하게 시작할 수 있습니다. 다음 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 개발자는 이러한 도구를 사용하는 방법과 새 AEM 사이트를 만들기 위해 사용자 지정 구성 요소를 만드는 방법을 알아봅니다.
+구성 요소는 AEM에서 경험을 작성하는 데 핵심입니다. 다음 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 그리고 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 준비가 완료된 강력한 구성 요소 도구 세트를 간단하게 시작할 수 있습니다. 다음 [WKND 자습서](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 개발자는 이러한 도구를 사용하는 방법과 새 AEM 사이트를 만들기 위해 사용자 지정 구성 요소를 만드는 방법을 알아봅니다.
 
 >[!TIP]
 >
@@ -59,11 +59,11 @@ Sling Resource Merger를 사용하여 구성 요소 대화 상자를 재정의�
 
 구성 요소의 컨텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와는 별도로 마크업 및 렌더링에 대한 코드를 유지하는 것이 좋습니다.
 
-이 철학은 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR), 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어가 사용되도록 의도적으로 제한되는 템플릿 언어입니다. 이 메커니즘은 지정된 보기에 대해 호출되는 코드를 강조 표시하며, 필요한 경우 동일한 구성 요소의 다른 보기에 대해 특정 논리를 허용합니다.
+이 철학은 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어가 사용되도록 의도적으로 제한되는 템플릿 언어입니다. 이 메커니즘은 지정된 보기에 대해 호출되는 코드를 강조 표시하며, 필요한 경우 동일한 구성 요소의 다른 보기에 대해 특정 논리를 허용합니다.
 
 이(선택 사항) 로직은 다른 방식으로 구현될 수 있으며 특정 명령을 사용하여 HTL에서 호출됩니다.
 
-* Java 사용 - [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) 사용자 지정 Java 클래스의 보조 메서드에 액세스할 수 있도록 HTL 파일을 활성화합니다. 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현하는 데 Java 코드를 사용할 수 있습니다.
+* Java 사용 - [HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) 사용자 지정 Java 클래스의 보조 메서드에 액세스할 수 있도록 HTL 파일을 활성화합니다. 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현하는 데 Java 코드를 사용할 수 있습니다.
 * JavaScript 사용 - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) 는 HTL 파일이 JavaScript로 작성된 도우미 코드에 액세스할 수 있도록 합니다. 이렇게 하면 JavaScript 코드를 사용하여 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현할 수 있습니다.
 * 클라이언트측 라이브러리 사용 - 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 주로 의존합니다. 문서를 참조하십시오 [AEM에서 클라이언트측 라이브러리 사용 as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) 추가 정보.
 

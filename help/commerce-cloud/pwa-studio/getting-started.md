@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 1%
 
 ---
 
@@ -62,9 +62,9 @@ PWA Studio을 AEM의 GraphQL 종단점과 연결하려면 [PWA Studio용 AEM 확
 
    에서 탐색 구성 요소의 사용자 지정에 대한 자세한 내용을 찾을 수 있습니다 [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) 그리고 [확장성 프레임워크](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) PWA Studio 설명서.
 
-1. Apollo 클라이언트는 AEM GraphQL 종단점을 <https://pwa-studio/endpoint.js>. 끝점을 이 위치에 매핑하려면 PWA Studio 애플리케이션의 위쪽 구성을 사용자 지정해야 합니다. a. AEM_CFM_GRAPHQL 변수를 pwa-root/.env에 추가하고 AEM 컨텐츠 조각 GraphQL 엔드포인트를 가리키도록 조정합니다.
+1. Apollo 클라이언트는 AEM GraphQL 종단점을 `<https://pwa-studio/endpoint.js>`. 끝점을 이 위치에 매핑하려면 PWA Studio 애플리케이션의 위쪽 구성을 사용자 지정해야 합니다. a. AEM_CFM_GRAPHQL 변수를 pwa-root/.env에 추가하고 AEM 컨텐츠 조각 GraphQL 엔드포인트를 가리키도록 조정합니다.
 
-   예: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
+   예: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    나. 프록시 확인자를 위쪽 구성에 추가합니다. 다음은 샘플 상향 구성입니다.
 
@@ -95,13 +95,13 @@ AEM 컨텐츠 조각 설명서에 따라 AEM 프로젝트에 대한 GraphQL 엔�
 
    할당된 원본 속성을 PWA 응용 프로그램의 전체 호스트 이름으로 설정합니다.
 
-   예:  <https://pwa-studio-test-vflyn.local.pwadev:9366>
+   예:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer Filter(org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
    allow.hosts 속성을 PWA 응용 프로그램의 호스트 이름으로 설정합니다.
 
-   예: pwa-studio-test-vflyn.local.pwadev
+   예: `pwa-studio-test-vflyn.local.pwadev`
 
 두 구성에 대한 전체 예는 다음과 같습니다. <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

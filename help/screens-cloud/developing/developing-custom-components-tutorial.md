@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service에 대한 맞춤형 구성 요소 개발
 description: 다음 자습서에서는 AEM Screens용 사용자 지정 구성 요소를 만드는 단계를 안내합니다. AEM Screens은 다른 AEM 제품의 많은 기존 디자인 패턴과 기술을 재사용합니다. 이 자습서에서는 AEM Screens용 개발 시 차이점과 특별한 고려 사항을 중점적으로 설명합니다.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 3%
+source-wordcount: '2115'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 이 튜토리얼은 AEM Screens을 처음 사용하는 개발자를 위한 것입니다. 이 자습서에서는 AEM Screens의 시퀀스 채널용으로 간단한 &quot;Hello World&quot; 구성 요소가 빌드되었습니다. 대화 상자에서는 작성자가 표시된 텍스트를 업데이트할 수 있습니다.
 
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
@@ -155,7 +155,7 @@ AEM Screens에는 기존 WCM Sites 구성 요소에 반드시 true일 필요는 
 
    구성 요소가 `div` 그리고 `h1` 태그와 함께 사용할 수 있습니다. `${properties.message}` 는 이름이 지정된 JCR 속성의 내용을 출력하는 HTL 스크립트의 일부입니다. `message`. 나중에 사용자가 값을 입력할 수 있는 대화 상자가 만들어집니다 `message` 속성 텍스트입니다.
 
-   또한 BEM(블록 요소 수정자) 표기법은 구성 요소와 함께 사용됩니다. BEM은 재사용 가능한 구성 요소를 쉽게 만들 수 있는 CSS 코딩 규칙입니다. BEM은 [AEM 코어 구성 요소](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). 자세한 정보는 다음을 참조하십시오. [https://getbem.com/](https://getbem.com/)
+   또한 BEM(블록 요소 수정자) 표기법은 구성 요소와 함께 사용됩니다. BEM은 재사용 가능한 구성 요소를 쉽게 만들 수 있는 CSS 코딩 규칙입니다. BEM은 [AEM 코어 구성 요소](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/wiki/CSS-coding-conventions). <!-- WEBSITE WAS NOT ACCESSIBLE AS OF SEPTEMBER 1, 2022 More info can be found at: [https://getbem.com/](https://getbem.com/) -->
 
 1. 아래의 파일 만들기 `/apps/weretail-run/components/content/helloworld` 명명된 이름 `edit.html.`
 

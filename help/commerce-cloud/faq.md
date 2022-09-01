@@ -2,9 +2,9 @@
 title: AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
 description: AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Adobe은 모든 상거래 관련 데이터에 대해 Adobe Commerce의 GraphQL A
 
 ## 2. 제품 자산(이미지)을 Adobe Commerce 관리자를 통해 AEM에서 저장 및 참조할 수 있습니까? Dynamic Media의 자산을 어떻게 사용할 수 있습니까?
 
-공식적인 AEM Assets - Adobe Commerce 통합을 사용할 수 없습니다. 에는 파트너 커넥터가 있습니다 [marketplace](https://marketplace.magento.com/bounteous-dam.html).
+공식적인 AEM Assets - Adobe Commerce 통합을 사용할 수 없습니다. 에는 파트너 커넥터가 있습니다 [marketplace](https://marketplace.magento.com) <!-- THIS IS THE OLD URL THAT WAS USED. IT WAS 404 (https://marketplace.magento.com/bounteous-dam.html) -->
 
-또는 해결 방법으로, 제품 자산(이미지)을 AEM Assets에 저장할 수 있지만, Adobe Commerce에 자산 URL을 수동으로 저장해야 합니다. Dynamic Media은 현재 AEM Assets의 일부이며 동일한 방식으로 작동합니다.
+또는 해결 방법으로, 제품 자산(이미지)을 AEM Assets에 저장할 수 있지만, Adobe Commerce에 자산 URL을 수동으로 저장해야 합니다. Dynamic Media은 이제 AEM Assets의 일부이며 동일한 방식으로 작동합니다.
 
 ## 3. 상거래 솔루션이 배포되는 위치에 문제가 있습니까? (온프레미스 또는 클라우드에서)
 
-아니요. 상거래 솔루션이 배포되는 위치에는 문제가 없습니다. CIF 및 AEM 스토어프런트는 배포 모델에 관계없이 작동합니다. 그러나 솔루션이 권장 E2E 참조 아키텍처와 함께 배포되는 경우 일반적인 엔터프라이즈 고객 프로필을 나타내는 성능 KPI에 대해 E2E 테스트를 실행할 수 있습니다. 벤치마크로 사용할 수 있는 추가 정보가 제공됩니다.
+아니요. 상거래 솔루션이 배포되는 위치에는 문제가 없습니다. 배포 모델에 관계없이 CIF 및 AEM Storefront가 작동합니다. 그러나 솔루션이 권장 E2E 참조 아키텍처와 함께 배포되는 경우 일반적인 엔터프라이즈 고객 프로필을 나타내는 성능 KPI에 대해 E2E 테스트를 실행할 수 있습니다. 이 메서드는 벤치마크로 사용할 수 있는 추가 정보를 제공합니다.
 
 ## 4. AEM에서 카탈로그 페이지 또는 제품 페이지를 작성하는 방법 AEM에서는 어떻게 지속됩니까?
 
@@ -47,11 +47,11 @@ PIM 데이터는 GraphQL 요청을 통해 AEM 및 클라이언트에 노출됩�
 
 ## 9. AEM Dispatcher에 대한 캐시 무효화는 AEM 및 Commerce에서 어떻게 작동합니까?
 
-Dispatcher에 캐시된 페이지에 대해 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 주식 등의 동적 정보는 데이터 클라이언트측에서 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 다음을 참조하십시오. [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+Dispatcher에 캐시된 페이지에 대해 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 주식 등의 동적 정보는 데이터 클라이언트측에서 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 다음을 참조하십시오 [Dispatcher 캐시 최적화](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html) 및 [AEM 성능 최적화](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/performance.html).
 
 ## 10. Commerce를 사용하여 AEM 컨텐츠 간에 통합 검색에 대한 권장 사항이 있습니까?
 
-제품 검색 참조 구현이 제공되지만 콘텐츠가 있는 통합 검색이 없습니다. 이 기능은 일반적으로 고객별로 다르며 프로젝트별 수준에서 더 잘 해결됩니다.
+제품 검색 참조 구현이 제공되지만 콘텐츠가 있는 통합 검색이 없습니다. 이 기능은 고객별로 다르며 프로젝트별 수준에서 더 잘 해결되었습니다.
 
 ## 11. CIF를 사용하여 Search는 AEM 및 Commerce에서 어떻게 작동합니까?
 
@@ -59,7 +59,7 @@ CIF에서는 검색 창 및 검색 결과 구성 요소를 제공합니다. 검�
 
 ## 12. MSM 또는 번역에서 제품 데이터를 어떻게 사용할 수 있습니까?
 
-제품 데이터는 일반적으로 PIM 또는 Adobe Commerce에서 이미 번역됩니다. AEM - Adobe Commerce 통합은 여러 Adobe Commerce 스토어 및 저장소 보기에 대한 연결을 지원합니다. MSM 설정에서 일반적으로 하나의 AEM 사이트가 하나의 Adobe Commerce 저장소 보기에 연결됩니다.
+제품 데이터가 이미 PIM 또는 Adobe Commerce에서 번역되었습니다. AEM - Adobe Commerce 통합은 여러 Adobe Commerce 스토어 및 저장소 보기에 대한 연결을 지원합니다. MSM 설정에서 일반적으로 하나의 AEM 사이트가 하나의 Adobe Commerce 스토어 보기에 연결됩니다.
 
 ## 13. 상업용 텍스트로 제품 데이터를 향상시키는 방법이 있습니까? 이 작업은 어디에서 수행합니까? AEM에서 또는 상거래 솔루션에서는?
 
@@ -67,7 +67,7 @@ AEM에서 마케팅 관련 데이터 및 컨텐츠를 관리하는 것이 좋습
 
 ## 14. 전체 프레젠테이션 계층에서 AEM을 사용할 때 PCI 규정 준수를 어떻게 보장할 수 있습니까?
 
-추상적인 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션도 카드 소지자 데이터를 보유하거나 전달할 수 없습니다. 이 접근 방식에서는 레벨 3 PCI 규정 준수가 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방법과 같이 PCI를 완벽하게 준수하도록 고려해야 할 추가 사항이 있습니다. Adobe Commerce PCI 준수에 대한 자세한 내용은 다음을 참조하십시오. [PCI 규정 준수 요구 사항](https://business.adobe.com/products/magento/pci-compliance.html).
+추상적인 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션도 카드 소지자 데이터를 보유하거나 전달할 수 없습니다. 이 접근 방식에서는 레벨 3 PCI 규정 준수가 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방법과 같이 PCI 규정을 완벽하게 준수하도록 고려해야 할 사항이 추가로 있습니다. Adobe Commerce PCI 준수에 대한 자세한 내용은 다음을 참조하십시오. [PCI 규정 준수 요구 사항](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15. AEM 및 Adobe Commerce 클라우드 버전을 사용하는 경우 이 공동 솔루션 PCI를 준수합니까?
 

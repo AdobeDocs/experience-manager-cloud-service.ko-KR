@@ -2,7 +2,7 @@
 title: Eclipse용 AEM 개발자 도구
 description: Eclipse용 AEM 개발자 도구
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 2%
@@ -38,9 +38,9 @@ AEM 개발자 도구를 사용하려면 먼저 다음을 수행해야 합니다.
 
 ## Eclipse용 AEM 개발자 도구를 설치하는 방법 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-일단 당신이 [요구 사항](#requirements) 위에서 다음과 같이 플러그인을 설치할 수 있습니다.
+당신이 [요구 사항](#requirements) 위에서 다음과 같이 플러그인을 설치할 수 있습니다.
 
-1. 를 엽니다. [AEM 개발자 도구 웹 사이트.](https://eclipse.adobe.com/aem/dev-tools/)
+1. 를 엽니다. [AEM Developer Tools 웹 사이트](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. 를 복사합니다. **설치 링크**.
 

@@ -2,9 +2,9 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트 작동 방식과 배포 품질을 향상시키는 방법을 알아봅니다.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1176'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->을(를) 참조하십시오. [SonarQube의 지표 정의](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) 를 참조하십시오.
+>을(를) 참조하십시오. [SonarQube의 지표 정의](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) 를 참조하십시오.
 
 >[!NOTE]
 >

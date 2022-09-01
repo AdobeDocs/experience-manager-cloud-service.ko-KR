@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: '암호 값 및 환경별 값으로 OSGi 구성 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3240'
+source-wordcount: '3216'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 [OSGi](https://www.osgi.org/) 는 AEM(Adobe Experience Manager)의 기술 스택에서 기본적인 요소입니다. AEM 및 해당 구성의 복합 번들을 제어하는 데 사용됩니다.
 
-OSGi는 소규모, 재사용 가능한, 공동 작업 구성 요소에서 애플리케이션을 구축할 수 있도록 해주는 표준화된 프리미티브(primitives)를 제공합니다. 이러한 구성 요소는 응용 프로그램으로 작성하고 배포할 수 있습니다. 이를 통해 OSGi 번들을 개별적으로 시작, 중지, 설치 및 설치할 수 있으므로 쉽게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소는 다양한 번들 중 하나에 포함되어 있습니다. 자세한 내용은 [OSGi 사양](https://www.osgi.org/Specifications/HomePage).
+OSGi는 소규모, 재사용 가능한, 공동 작업 구성 요소에서 애플리케이션을 구축할 수 있도록 해주는 표준화된 프리미티브(primitives)를 제공합니다. 이러한 구성 요소는 응용 프로그램으로 작성하고 배포할 수 있습니다. 이를 통해 OSGi 번들을 개별적으로 시작, 중지, 설치 및 설치할 수 있으므로 쉽게 관리할 수 있습니다. 상호 종속성은 자동으로 처리됩니다. 각 OSGi 구성 요소는 다양한 번들 중 하나에 포함되어 있습니다. 자세한 내용은 [OSGi 사양](https://help.eclipse.org/latest/index.jsp).
 
 AEM 코드 프로젝트의 일부인 구성 파일을 통해 OSGi 구성 요소에 대한 구성 설정을 관리할 수 있습니다.
 
@@ -122,7 +122,7 @@ Adobe Experience Manager as a Cloud Service에서 사용할 수 있는 OSGi 구�
    }
    ```
 
-   단일 OSGi 구성 파일은 이러한 구성 값 유형의 모든 조합을 함께 사용할 수 있습니다. 예:
+   단일 OSGi 구성 파일은 이러한 구성 값 유형의 조합을 함께 사용할 수 있습니다. 예:
 
    ```json
    {
@@ -174,7 +174,7 @@ Adobe Experience Manager as a Cloud Service에는 환경별 구성(`$[secret:SEC
 JSON 형식 OSGi 구성 파일은 AEM 프로젝트에서 직접 작성하여 사용할 수 있습니다. 이는 알려진 OSGi 구성 요소 및 특히 구성을 정의하는 동일한 개발자가 디자인하고 개발한 사용자 정의 OSGi 구성 요소에 대한 OSGi 구성을 만드는 가장 빠른 방법입니다. 이 접근 방식은 다양한 런타임 모드 폴더에서 동일한 OSGi 구성 요소에 대한 구성을 복사/붙여넣기와 업데이트하는 데도 사용할 수 있습니다.
 
 1. IDE에서 `ui.apps` 구성 폴더(`/apps/.../config.<runmode>`) 새 OSGi 구성을 적용해야 하는 런타임 모드를 대상으로 합니다
-1. 이 구성 폴더에서 새 구성 폴더를 만듭니다 `<PID>.cfg.json` 파일. PID는 OSGi 구성 요소의 영구 ID입니다. 일반적으로 OSGi 구성 요소 구현의 전체 클래스 이름입니다. 예:
+1. 이 구성 폴더에서 `<PID>.cfg.json` 파일. PID는 OSGi 구성 요소의 영구 ID입니다. 일반적으로 OSGi 구성 요소 구현의 전체 클래스 이름입니다. 예:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 OSGi 구성 팩토리 파일 이름은 `<factoryPID>-<name>.cfg.json` 명명 규칙
 1. 새 `.cfg.json` 파일에서 다음을 수행하여 OSGi 속성 및 값 쌍에 대한 키/값 조합을 정의합니다 [JSON OSGi 구성 형식](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -202,7 +202,7 @@ AEM SDK Quickstart Jar의 AEM Web Console을 사용하여 OSGi 구성 요소를 
 1. JSON 형식의 OSGi 구성은 직렬화된 구성 속성 섹션에 표시됩니다
    ![OSGi 설치 프로그램 구성 프린터](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. IDE에서 `ui.apps` 구성 폴더(`/apps/.../config.<runmode>`) 새 OSGi 구성을 적용해야 하는 런타임 모드를 대상으로 합니다.
-1. 이 구성 폴더에서 새 구성 폴더를 만듭니다 `<PID>.cfg.json` 파일. PID는 5단계의 값과 동일합니다.
+1. 이 구성 폴더에서 `<PID>.cfg.json` 파일. PID는 5단계의 값과 동일합니다.
 1. 10단계의 Serialized Configuration Properties를 `.cfg.json` 파일.
 1. 변경 사항을 새 `.cfg.json` 파일.
 1. 새로운 OSGi 구성 파일을 Git에 추가하고 커밋합니다.
@@ -303,7 +303,7 @@ OSGi 속성에 작성자와 게시에 대해 다른 값이 필요한 경우:
 * 별도의 `config.author` 및 `config.publish` 에 설명된 대로 OSGi 폴더를 사용해야 합니다. [런타임 모드 해상도 섹션](#runmode-resolution).
 * 사용해야 하는 독립 변수 이름을 만드는 두 가지 옵션이 있습니다.
    * 첫 번째 옵션인 가 권장됩니다. 모든 OSGi 폴더(예: `config.author` 및 `config.publish`) 다른 값을 정의하기 위해 선언된 경우 동일한 변수 이름을 사용합니다. 예
-      `$[env:ENV_VAR_NAME;default=<value>]`: 기본값이 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. 를 통해 환경 변수를 설정할 때 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 또는 클라이언트를 통해, 여기에서 설명한 대로 &quot;service&quot; 매개 변수를 사용하여 계층을 구분합니다 [API 참조 설명서](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGi 계층에 바인딩합니다. &quot;작성자&quot;, &quot;게시&quot; 또는 &quot;미리 보기&quot;일 수 있습니다.
+      `$[env:ENV_VAR_NAME;default=<value>]`: 기본값이 해당 계층(작성자 또는 게시)의 기본값에 해당합니다. 를 통해 환경 변수를 설정할 때 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 또는 클라이언트를 통해, 여기에서 설명한 대로 &quot;service&quot; 매개 변수를 사용하여 계층을 구분합니다 [API 참조 설명서](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). &quot;service&quot; 매개 변수는 변수의 값을 적절한 OSGi 계층에 바인딩합니다. &quot;작성자&quot;, &quot;게시&quot; 또는 &quot;미리 보기&quot;일 수 있습니다.
    * 두 번째 옵션은 다음과 같은 접두사를 사용하여 고유 변수를 선언하는 것입니다. `author_<samevariablename>` 및 `publish_<samevariablename>`
 
 ### 구성 예 {#configuration-examples}
@@ -460,7 +460,7 @@ config.dev
 
 ## 속성 설정을 위한 Cloud Manager API 형식 {#cloud-manager-api-format-for-setting-properties}
 
-자세한 내용은 [이 페이지](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) api 구성 방법에 대한 정보.
+자세한 내용은 [이 페이지](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) api 구성 방법에 대한 정보.
 >[!NOTE]
 >
 >사용된 Cloud Manager API에 &quot;Deployment Manager - Cloud Service&quot; 역할이 할당되었는지 확인합니다. 다른 역할은 아래의 명령을 모두 실행할 수 없습니다.
@@ -491,7 +491,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >기본 변수는 API를 통해 설정되지 않고 OSGi 속성 자체에서 설정됩니다.
 >
->자세한 내용은 [이 페이지](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) 추가 정보.
+>자세한 내용은 [이 페이지](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) 추가 정보.
 
 ### API를 통해 값 가져오기 {#getting-values-via-api}
 
@@ -499,7 +499,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-자세한 내용은 [이 페이지](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) 추가 정보.
+자세한 내용은 [이 페이지](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) 추가 정보.
 
 ### API를 통해 값 삭제 {#deleting-values-via-api}
 
@@ -509,7 +509,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 변수를 삭제하려면 빈 값과 함께 포함하십시오.
 
-자세한 내용은 [이 페이지](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) 추가 정보.
+자세한 내용은 [이 페이지](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) 추가 정보.
 
 ### 명령줄에서 값 가져오기 {#getting-values-via-cli}
 

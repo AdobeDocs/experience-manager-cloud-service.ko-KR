@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 description: Adobe Experience Manager as a Cloud Service를 위한 SEO 및 URL 관리 모범 사례
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '3787'
-ht-degree: 100%
+source-wordcount: '3714'
+ht-degree: 75%
 
 ---
 
@@ -21,11 +21,11 @@ SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었�
 
 ### URL {#urls}
 
-URL과 관련하여 일반적으로 받아들여지는 모범 사례가 있습니다.
+URL에 몇 가지 허용된 우수 사례가 있습니다.
 
 AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보십시오.
 
-*사용자가 이 URL은 보고 페이지에 있는 콘텐츠는 보지 못하는 경우 이 페이지의 내용을 설명할 수 있습니까?*
+*&quot;사용자가 이 URL은 보고 페이지에 있는 컨텐츠는 보지 못하는 경우 이 페이지의 내용을 설명할 수 있습니까?&quot;*
 
 답변이 예라면 검색 엔진에서 URL이 제대로 작동할 가능성이 높습니다.
 
@@ -39,9 +39,9 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 * 가능하면 쿼리 매개 변수를 사용하지 않습니다. 필요할 경우 두 개 이하로 제한합니다.
 
    * 사용 가능한 경우 디렉터리 구조를 사용하여 정보 아키텍처를 나타냅니다.
-   * 디렉터리 구조가 선택 사항이 아닌 경우 쿼리 문자열보다는 URL에서 Sling 선택기를 사용합니다. Sling 선택기를 사용하면 SEO 값이 제공될 뿐 아니라 디스패처의 페이지를 캐시할 수 있습니다.
+   * 디렉토리 구조가 선택 사항이 아닌 경우 쿼리 문자열보다는 URL에서 Sling 선택기를 사용합니다. Sling 선택기를 사용하면 SEO 값이 제공될 뿐 아니라 Dispatcher에 대해 페이지를 캐시할 수 있습니다.
 
-* URL은 사람이 읽기 쉬울수록 더 좋습니다. 따라서 URL에 키워드가 있으면 더욱 효과적입니다.
+* URL은 사람이 읽기 쉬울수록 더 좋습니다. url에 키워드가 있으면 값이 증가합니다.
 
    * 페이지에서 선택기를 사용하는 경우 의미론적 가치를 제공하는 선택기가 선호됩니다.
    * 사람이 읽을 수 없는 URL은 검색 엔진도 읽을 수 없습니다.
@@ -53,7 +53,7 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
    * 대신 첫 번째 수준 하위 경로를 사용합니다. 예를 들어, `es.mybrand.com/home.html` 대신 `www.mybrand.com/es/home.html`을 사용합니다.
 
-   * 이 지침에 따라 콘텐츠가 표시되는 방식과 일치하도록 콘텐츠 계층 구조를 계획합니다.
+   * 이 지침에 따라 컨텐츠가 표시되는 방식과 일치하도록 컨텐츠 계층 구조를 계획합니다.
 
 * URL의 키워드 효과는 URL의 길이와 키워드 위치가 증가하면 감소합니다. 즉, 짧을수록 좋습니다.
 
@@ -72,12 +72,12 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
 * URL 요청에서 대소문자를 구분하지 않습니다.
 
-   * 모든 인바운드 요청을 소문자로 다시 작성하도록 디스패처를 구성합니다.
+   * 모든 인바운드 요청을 소문자로 다시 작성하도록 Dispatcher를 구성합니다.
    * 모든 페이지를 소문자를 사용하여 만들도록 콘텐츠 작성자를 교육합니다.
 
 * 각 페이지가 하나의 프로토콜에서만 제공되어야 합니다.
 
-   * 경우에 따라 사이트는 사용자가 체크아웃이나 로그인 양식 등이 있는 페이지에 도달하기 전까지 `http`를 통해 제공되고, 이러한 페이지에 도달하면 `https`로 전환됩니다. 이 페이지에서 연결할 때 사용자가 `http` 페이지로 돌아가서 `https`를 통해 해당 페이지에 액세스할 수 있으면 검색 엔진은 해당 페이지를 두 개의 개별 페이지로 추적하게 됩니다.
+   * 경우에 따라 사이트는 사용자가 체크아웃이나 로그인 양식 등이 있는 페이지에 도달하기 전까지 `http`를 통해 제공되고, 이러한 페이지에 도달하면 `https`로 전환됩니다. 이 페이지에서 연결할 때 사용자가 `http` 페이지를 통해 페이지 및 액세스 `https`를 입력하면 검색 엔진은 해당 페이지를 두 개의 개별 페이지로 추적합니다.
 
    * 현재 Google에서는 `http` 페이지보다 `https` 페이지를 선호합니다. 따라서 전체 사이트를 `https`로 제공하는 것이 모든 사용자의 생활을 편리하게 만드는 경우가 많습니다.
 
@@ -99,13 +99,13 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
 ### Sling 선택기 사용 {#using-sling-selectors}
 
-이전에는 엔터프라이즈 웹 애플리케이션을 만들 때 쿼리 매개 변수를 사용하는 것이 일반적으로 인정받는 방법이었습니다.
+이전에는 엔터프라이즈 웹 애플리케이션을 작성할 때 쿼리 매개 변수를 사용하는 것이 허용되었습니다.
 
-최근 몇 년간의 경향은 URL을 더 읽기 쉽게 만들기 위해 이러한 매개 변수를 제거하는 것이었습니다. 많은 플랫폼에서 이렇게 하려면 웹 서버나 CDN(Content Delivery Network)에서 리디렉션을 구현해야 하지만 Sling은 이 작업을 간단하게 해 줍니다. Sling 선택기는
+최근 몇 년간의 경향은 URL을 더 읽기 쉽도록 이러한 매개 변수를 제거하는 것이었습니다. 많은 플랫폼에서 이렇게 하려면 웹 서버나 CDN(Content Delivery Network)에서 리디렉션을 구현해야 하지만 Sling은 이 작업을 간단하게 해 줍니다. Sling 선택기는
 
 * URL 가독성을 개선합니다.
-* 페이지를 디스패처에서 캐싱할 수 있도록 하고 종종 보안을 개선합니다.
-* 콘텐츠를 검색하는 일반 서블릿을 보유하는 대신 콘텐츠 주소를 바로 지정할 수 있도록 해 줍니다. 따라서 저장소에 적용하는 ACL과 디스패처에 적용하는 필터의 이점을 이용할 수 있습니다.
+* 페이지를 Dispatcher에 캐시하여 종종 보안을 개선합니다.
+* 콘텐츠를 검색하는 일반 서블릿을 보유하는 대신 콘텐츠 주소를 바로 지정할 수 있도록 해 줍니다. 따라서 저장소에 적용하는 ACL과 Dispatcher에 적용하는 필터의 이점을 이용할 수 있습니다.
 
 #### 서블릿에 선택기 사용 {#using-selectors-for-servlets}
 
@@ -139,9 +139,9 @@ String myParam = req.getParameter("myParam");
 이 접근 방식에서는 몇 가지 사항을 고려해야 합니다.
 
 * URL 자체는 SEO 값을 잃습니다. URL은 콘텐츠 계층 구조가 아니라 프로그래밍 방식에 따른 경로를 나타내므로 검색 엔진을 포함하여 사이트에 액세스하는 사용자는 URL에서 어떠한 의미 있는 가치도 받지 못합니다.
-* URL에 쿼리 매개 변수가 있으면 이는 디스패처가 응답을 캐시할 수 없음을 의미합니다.
+* URL에 쿼리 매개 변수가 있으면 Dispatcher가 응답을 캐시할 수 없음을 의미합니다.
 * 이 서블릿을 보호하려면 서블릿에 사용자 지정 보안 로직을 구현해야 합니다.
-* 디스패처는 `/bin/myApp/myServlet`을 노출하도록 (신중하게) 구성되어야 합니다. 단순히 `/bin`을 노출하면 사이트 방문자에게 공개되어서는 안 되는 특정 서블릿에 대한 액세스가 허용될 수 있습니다.
+* Dispatcher는 다음을 노출하도록 (신중하게) 구성되어야 합니다 `/bin/myApp/myServlet`. 단순히 `/bin`을 노출하면 사이트 방문자에게 공개되어서는 안 되는 특정 서블릿에 대한 액세스가 허용될 수 있습니다.
 
 #### Sling 서블릿(한 수준 아래로) {#sling-servlets-one-level-down}
 
@@ -166,9 +166,9 @@ Resource myPage = req.getResource();
 이 접근 방식의 장점은 다음과 같습니다.
 
 * 사이트 계층 구조 및 페이지 이름에 있는 의미 체계로 얻은 SEO 값을 포함할 수 있습니다.
-* 쿼리 매개 변수가 없으므로 디스패처가 응답을 캐시할 수 있습니다. 또한, 페이지가 활성화되어 있으면 주소가 지정된 페이지에 대한 모든 업데이트는 이 캐시를 무효화합니다.
-* 사용자가 이 서블릿에 액세스하려고 하면 `/content/my-brand/my-page`에 적용되는 모든 ACL이 적용됩니다.
-* 디스패처는 이미 웹 사이트를 제공하는 기능으로서 이 콘텐츠를 제공하도록 구성됩니다. 추가적인 구성은 필요하지 않습니다.
+* 쿼리 매개 변수가 없으므로 Dispatcher가 응답을 캐시할 수 있습니다. 또한, 주소가 지정된 페이지에 대한 모든 업데이트는 페이지가 활성화될 때 이 캐시를 무효화합니다.
+* 에 적용된 모든 ACL `/content/my-brand/my-page` 사용자가 이 서블릿에 액세스하려고 하면 이 적용됩니다.
+* Dispatcher는 이미 웹 사이트를 제공하는 기능으로서 이 콘텐츠를 제공하도록 구성됩니다. 추가적인 구성은 필요하지 않습니다.
 
 ### URL 재작성 {#url-rewriting}
 
@@ -228,19 +228,19 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 이 위치에 매핑 정의를 추가하여 인바운드 요청을 매핑하거나 AEM의 페이지에서 URL을 다시 작성하거나 두 작업을 모두 수행할 수 있습니다.
 
-새 매핑을 생성하려면 `/http` 또는 `/https`를 사용하여 이 위치에서 새 `sling:Mapping` 노드를 만드십시오. AEM은 이 노드에 설정된 `sling:match` 및 `sling:internalRedirect` 속성을 기반으로 일치하는 URL의 모든 트래픽을 `internalRedirect` 속성에 지정된 값에 리디렉션합니다.
+매핑을 생성하려면 `sling:Mapping` 노드 아래에 있는 이 위치의 노드 `/http` 또는 `/https`. AEM은 이 노드에 설정된 `sling:match` 및 `sling:internalRedirect` 속성을 기반으로 일치하는 URL의 모든 트래픽을 `internalRedirect` 속성에 지정된 값에 리디렉션합니다.
 
-이것이 공식 AEM 및 Sling 설명서에 정리된 접근 방법인데, 이 구현에서 제공하는 정규식 지원은 `SlingResourceResolver`를 바로 사용함으로써 사용 가능한 옵션과 비교할 때 범위가 제한됩니다. 또한 이 방식으로 매핑을 구현하면 디스패처 캐시 무효화에 문제가 발생할 수 있습니다.
+이것이 공식 AEM 및 Sling 설명서에 정리된 접근 방법인데, 이 구현에서 제공하는 정규식 지원은 `SlingResourceResolver`를 바로 사용함으로써 사용 가능한 옵션과 비교할 때 범위가 제한됩니다. 또한 이 방식으로 매핑을 구현하면 Dispatcher 캐시 무효화에 문제가 발생할 수 있습니다.
 
 이 문제가 발생하는 방법의 예는 다음과 같습니다.
 
 1. 사용자가 웹 사이트를 방문하여 `https://www.mydomain.com/my-page.html`을 요청합니다.
-1. 디스패처가 이 요청을 게시 서버에 전달합니다.
+1. Dispatcher는 이 요청을 게시 서버에 전달합니다.
 1. `/etc/map`을 사용하여 게시 서버가 이 요청을 `/content/my-brand/my-page`에 확인하고 페이지를 렌더링합니다.
 
-1. 디스패처가 `/my-page.html`에서 응답을 캐시하고 응답을 사용자에게 반환합니다.
-1. 콘텐츠 작성자가 이 페이지를 변경하고 활성화합니다.
-1. 디스패처 초기화 에이전트가 `/content/my-brand/my-page`**에 대한 무효화 요청을 보냅니다.** 디스패처에는 이 경로에 캐시된 페이지가 없으므로 이전 콘텐츠는 캐시된 상태로 유지되며 시기적으로 적절하지 않게 됩니다.
+1. 디스패처가에서 응답을 캐시합니다 `/my-page.html` 및 은 사용자에게 응답을 반환합니다.
+1. 컨텐츠 작성자가 이 페이지를 변경하고 활성화합니다.
+1. 디스패처 초기화 에이전트가 `/content/my-brand/my-page`**.** Dispatcher에 이 경로에 캐시된 페이지가 없으므로 이전 컨텐츠는 캐시된 상태로 유지됩니다.
 
 캐시 무효화를 위해 짧은 URL을 긴 URL에 매핑하는 사용자 지정 발송-초기화 규칙을 구성하는 방법이 있습니다.
 
@@ -287,7 +287,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 지금까지는 구성 요소의 논리와 함께 매핑을 구현하여 URL을 Adobe 페이지에 출력할 때 이 매핑을 사용했습니다.
 
-퍼즐의 마지막 조각은 이 단축된 URL을 디스패처에 들어올 때 처리하는 것입니다. `mod_rewrite`은 여기에서 작동합니다. `mod_rewrite`를 사용할 때 가장 큰 이점은 URL이 디스패처 모듈로 전송되기 *전에* 긴 형식으로 다시 매핑된다는 것입니다. 이는 디스패처가 게시 서버에서 긴 URL을 요청하고 적절하게 캐시할 것임을 의미합니다. 따라서 게시 서버에서 들어오는 모든 디스패처 초기화 요청은 이 콘텐츠를 무효화할 수 있습니다.
+퍼즐의 마지막 조각은 이 단축된 URL을 Dispatcher에 들어올 때 처리하는 것입니다. 여기서 `mod_rewrite` 놀기 시작해요 사용 시 가장 큰 이점 `mod_rewrite` 는 URL이 긴 형식으로 다시 매핑된다는 의미입니다 *이전* 디스패처 모듈로 전송됩니다. 즉, Dispatcher가 게시 서버에서 긴 URL을 요청하고 적절하게 캐시합니다. 따라서 게시 서버에서 들어오는 모든 Dispatcher 플러시는 이 콘텐츠를 무효화할 수 있습니다.
 
 이러한 규칙을 구현하기 위해 Apache HTTP Server 구성에서 가상 호스트 아래에 `RewriteRule` 요소를 추가할 수 있습니다. 이전 예에서 단축된 URL을 확장하려는 경우 다음과 같은 규칙을 구현할 수 있습니다.
 
@@ -304,12 +304,12 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 정식 URL 태그는 콘텐츠를 색인화하는 동안 검색 엔진이 페이지를 처리하는 방식을 명확히 하기 위해 HTML 문서의 헤드에 배치된 링크 태그입니다. 이 태그가 제공하는 이점은 (다양한 버전의)페이지가 페이지의 URL에 차이가 있더라도 동일하게 색인화되도록 하는 것입니다.
 
-예를 들어 사이트에서 프린터에 적절한 버전의 페이지를 제공하는 경우 검색 엔진은 이 페이지를 일반 버전의 페이지와 별도로 색인화할 가능성이 있습니다. 정식 태그는 검색 엔진에 이 페이지들이 동일하다고 알려 줍니다.
+예를 들어 사이트에서 프린터에 적절한 버전의 페이지를 제공하는 경우 검색 엔진은 이 페이지를 일반 버전의 페이지와 별도로 색인화할 가능성이 있습니다. 정식 태그는 검색 엔진에 이 페이지들이 동일하다고 알려줍니다.
 
 예:
 
-* https://www.mydomain.com/my-brand/my-page.html
-* https://www.mydomain.com/my-brand/my-page.print.html
+* `<https://www.mydomain.com/my-brand/my-page.html>`
+* `<https://www.mydomain.com/my-brand/my-page.print.html>`
 
 두 페이지 모두 페이지 헤드에 다음 태그를 적용합니다.
 
@@ -319,9 +319,9 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
 `href`는 상대적이거나 절대적일 수 있습니다. 페이지 마크업에 코드가 포함되어야 페이지의 정식 URL을 확인하고 이 태그를 출력할 수 있습니다.
 
-### 대소문자 구분에 대한 디스패처 구성 {#configuring-the-dispatcher-for-case-insensitivity}
+### 대소문자 구분에 대한 Dispatcher 구성 {#configuring-the-dispatcher-for-case-insensitivity}
 
-가장 좋은 방법은 모든 페이지를 소문자를 사용하여 제공하는 것입니다. 그러나 사용자가 URL에서 대문자를 사용하여 웹 사이트에 액세스할 때 404 오류가 표시되는 것은 원하지 않습니다. 그렇다면 Apache HTTP Server 구성에 재작성 규칙을 추가하여 들어오는 모든 URL을 소문자로 매핑하는 것이 좋습니다. 또한 콘텐츠 작성자는 소문자로 페이지를 만들도록 교육해야 합니다.
+가장 좋은 방법은 모든 페이지를 소문자를 사용하여 제공하는 것입니다. 그러나 사용자가 URL에서 대문자를 사용하여 웹 사이트에 액세스할 때 404 오류가 표시되는 것은 원하지 않습니다. 그렇다면 Apache HTTP Server 구성에 재작성 규칙을 추가하여 들어오는 모든 URL을 소문자로 매핑하는 것이 좋습니다. 또한 컨텐츠 작성자는 소문자로 페이지를 만들도록 교육해야 합니다.
 
 모든 인바운드 트래픽을 소문자로 강제하도록 Apache를 구성하려면 다음 내용을 `vhost` 구성에 추가하십시오.
 
@@ -330,7 +330,7 @@ RewriteEngine On
 RewriteMap lowercase int:tolower
 ```
 
-또한 `htaccess` 파일의 맨 위에 다음 내용을 추가하십시오.
+또한 다음 내용을 `htaccess` 파일:
 
 ```xml
 RewriteCond $1 [A-Z]
@@ -339,7 +339,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### 개발 환경 보호를 위한 robots.txt 구현 {#implementing-robots-txt-to-protect-development-environments}
 
-검색 엔진은 사이트를 크롤링하기 전에 사이트 루트에 `robots.txt` 파일이 있는지 *확인해야* 합니다. Google, Yahoo 또는 Bing과 같은 주요 검색 엔진은 모두 이 점을 준수하지만 일부 외국 검색 엔진은 이를 준수하지 않기 때문에 여기서 강조합니다.
+검색 엔진은 사이트를 크롤링하기 전에 사이트 루트에 `robots.txt` 파일이 있는지 *확인해야* 합니다. Google, Yahoo 또는 Bing과 같은 주요 검색 엔진은 모두 이를 준수하지만 일부 외국 검색 엔진은 이를 준수하지 않습니다.
 
 전체 사이트에 대한 액세스를 차단하는 가장 간단한 방법은 다음 콘텐츠로 사이트 루트에 `robots.txt`라는 파일을 배치하는 것입니다.
 
@@ -350,21 +350,21 @@ Disallow: /
 
 또는 실제 환경에서는 색인화하지 않을 특정 경로를 허용하지 않도록 선택할 수 있습니다.
 
-`robots.txt` 파일을 사이트 루트에 배치할 때 주의해야 할 사항은 디스패처 초기화 요청이 이 파일을 지우고 URL 매핑이 Apache HTTP Server 구성에 정의된 대로 `DOCROOT`와 다른 위치에 사이트 루트를 배치할 수 있다는 것입니다. 이러한 이유로 이 파일을 사이트 루트의 작성자 인스턴스에 배치하고 게시 인스턴스에 복제하는 것이 일반적입니다.
+를 배치할 때의 주의 사항 `robots.txt` 사이트 루트의 파일은 Dispatcher 초기화 요청이 이 파일을 지우고 URL 매핑이 사이트 루트와 다른 위치에 사이트 루트를 배치할 수 있다는 것입니다 `DOCROOT` Apache HTTP Server 구성에 정의된 바와 같습니다. 이러한 이유로 이 파일을 사이트 루트의 작성자 인스턴스에 배치하고 게시 인스턴스에 복제하는 것이 일반적입니다.
 
 ### AEM에서 XML 사이트 맵 작성 {#building-an-xml-sitemap-on-aem}
 
-크롤러는 웹 사이트의 구조를 더 잘 파악하기 위해 XML 사이트 맵을 사용합니다. 사이트 맵을 제공하는 것이 SEO 등급을 개선한다는 보장은 없지만, 이것은 합의된 모범 사례입니다. 사이트 맵으로 사용할 XML 파일은 웹 서버에서 수동으로 유지 관리할 수 있지만, 사이트 맵은 프로그래밍 방식으로 생성하는 것이 좋습니다. 이렇게 하면 작성자가 새 콘텐츠를 만들 때 사이트 맵이 변경 사항을 자동으로 반영하게 됩니다.
+크롤러는 웹 사이트의 구조를 더 잘 파악하기 위해 XML 사이트 맵을 사용합니다. 사이트 맵을 제공하는 것이 SEO 등급을 개선한다는 보장은 없지만, 이것은 합의된 우수 사례입니다. 사이트 맵으로 사용할 XML 파일은 웹 서버에서 수동으로 유지 관리할 수 있지만, 사이트 맵은 프로그래밍 방식으로 생성하는 것이 좋습니다. 이렇게 하면 작성자가 컨텐츠를 만들 때 사이트 맵이 변경 사항을 자동으로 반영하게 됩니다.
 
 AEM은 [Apache Sling 사이트 맵 모듈](https://github.com/apache/sling-org-apache-sling-sitemap)을 사용하여 개발자 및 편집자가 사이트 XML 사이트 맵을 최신 상태로 유지할 수 있도록 광범위한 옵션을 제공하는 XML 사이트 맵을 생성합니다.
 
-Apache Sling 사이트 맵 모듈은 최상위 수준의 사이트 맵과 중첩된 사이트 맵을 구별하며, 두 사이트 맵은 모두 `sling:sitemapRoot` 속성이 `true`로 설정된 모든 리소스에 대해 생성됩니다. 일반적으로 사이트 맵은 선택기를 사용하여 트리의 최상위 수준 사이트 맵(다른 사이트 맵 루트 상위 요소가 없는 리소스)의 경로에 렌더링됩니다. 이 최상위 수준의 사이트 맵 루트는 일반적으로 사이트 소유자가 검색 엔진의 구성 포털에서 구성하거나 사이트의 `robots.txt`에 추가하는 사이트 맵 인덱스를 노출하기도 합니다.
+Apache Sling Sitemap 모듈은 최상위 사이트 맵과 중첩된 사이트 맵을 구별하며, 둘 다 가 있는 리소스에 대해 생성됩니다 `sling:sitemapRoot` 속성 설정 `true`. 일반적으로 사이트 맵은 다른 사이트 맵 루트 상위 항목이 없는 리소스인 트리의 최상위 사이트 맵의 경로에서 선택기를 사용하여 렌더링됩니다. 이 최상위 사이트 맵 루트는 사이트 맵 색인도 노출합니다. 사이트 인덱스는 일반적으로 사이트 소유자가 검색 엔진의 구성 포털에서 구성하거나 사이트의 사이트에 추가하는 것입니다 `robots.txt`.
 
-예를 들어 `my-page`에 최상위 수준의 사이트 맵 루트를 정의하고 `my-page/news`에 중첩된 사이트 맵 루트를 정의하여 뉴스 하위 트리의 페이지에 대해 전용 사이트 맵을 생성하는 사이트를 가정해 보도록 하겠습니다. 그 결과 생성되는 관련 URL은 다음과 같습니다.
+예를 들어, 다음 위치에 최상위 사이트 맵 루트를 정의하는 사이트를 생각해 보십시오. `my-page` 및 중첩된 사이트 맵 루트( `my-page/news`를 눌러 뉴스 하위 트리의 페이지에 대한 전용 사이트 맵을 생성합니다. 그 결과 생성되는 관련 URL은 다음과 같습니다.
 
-* https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
-* https://www.mydomain.com/my-brand/my-page.sitemap.xml
-* https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html
+* `<https://www.mydomain.com/my-brand/my-page.sitemap-index.xml>`
+* `<https://www.mydomain.com/my-brand/my-page.sitemap.xml>`
+* `<https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html>`
 
 >[!NOTE]
 >
@@ -378,14 +378,14 @@ XML 사이트 맵을 생성하는 백그라운드 작업을 활성화하려면 `
 
 사이트 맵 생성 작업은 작성자 및 게시 계층 인스턴스 모두에서 실행할 수 있습니다. 대부분의 경우 게시 계층 인스턴스에서만 적절한 표준 URL을 생성할 수 있으므로(Sling 리소스 매핑 규칙이 일반적으로 게시 계층 인스턴스에만 있기 때문) 게시 계층 인스턴스에서 생성 작업을 실행하는 것이 권장됩니다. 그러나 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 인터페이스를 구현하여 표준 URL을 생성하는 데 사용되는 외부화 메커니즘의 맞춤형 구현을 플러그인할 수 있습니다. 맞춤형 구현이 작성자 계층 인스턴스에서 사이트 맵의 표준 URL을 생성할 수 있는 경우 작성자 실행 모드에 대해 `SitemapScheduler`를 구성할 수 있으며 작성자 서비스 클러스터 인스턴스에 XML 사이트 맵 생성 워크로드를 배포할 수 있습니다. 이 시나리오에서는 아직 게시되지 않았거나, 수정되었거나, 제한된 사용자 그룹에게만 표시되는 콘텐츠를 처리할 때 특히 주의해야 합니다.
 
-AEM Sites에는 페이지 트리 사이를 이동하여 사이트 맵을 생성하는 `SitemapGenerator`의 기본 구현이 포함되어 있습니다. 사이트의 표준 URL 및 대체 언어(가능한 경우)만 출력하도록 사전 구성되어 있습니다. 또한 필요한 경우 페이지의 마지막 수정 날짜를 포함하도록 구성되어 있습니다. 이를 위해 _Adobe AEM SEO - 페이지 트리 사이트 맵 생성기_ 구성에서 _마지막 수정 날짜 추가_ 옵션을 활성화하고 _마지막으로 수정된 소스_&#x200B;를 선택하십시오. 사이트 맵이 게시 계층에서 생성되는 경우에는 `cq:lastModified` 날짜를 사용하는 것이 좋습니다.
+AEM Sites에는 페이지 트리 사이를 이동하여 사이트 맵을 생성하는 `SitemapGenerator`의 기본 구현이 포함되어 있습니다. 사이트의 표준 URL 및 대체 언어(가능한 경우)만 출력하도록 사전 구성되어 있습니다. 또한 필요한 경우 페이지의 마지막 수정 날짜를 포함하도록 구성되어 있습니다. 이를 위해 *Adobe AEM SEO - 페이지 트리 사이트 맵 생성기* 구성에서 *마지막 수정 날짜 추가* 옵션을 활성화하고 *마지막으로 수정된 소스*&#x200B;를 선택하십시오. 게시 계층에서 사이트 맵이 생성되면 `cq:lastModified` 날짜.
 
 ![Adobe AEM SEO - 페이지 트리 사이트 맵 생성기 구성](assets/sling-sitemap-pagetreegenerator.png)
 
 사이트 맵의 콘텐츠를 제한하려면 필요한 경우 다음 서비스 인터페이스를 구현할 수 있습니다.
 
 * AEM Sites의 특정 사이트 맵 생성기를 통해 생성된 XML 사이트 맵에서 페이지를 숨기도록 [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html)를 구현할 수 있습니다.
-* [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)의 특정 사이트 맵 생성기를 통해 생성된 XML 사이트 맵에서 제품 또는 범주를 필터링하도록 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 또는 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)를 구현할 수 있습니다.
+* [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)의 특정 사이트 맵 생성기를 통해 생성된 XML 사이트 맵에서 제품 또는 범주를 필터링하도록 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 또는 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)를 구현할 수 있습니다.
 
 기본 구현이 특정 사용 사례에서 작동하지 않거나 확장 지점이 충분히 유연하지 않은 경우 생성된 사이트 맵의 콘텐츠를 완전히 제어하도록 맞춤형 `SitemapGenerator`를 구현할 수 있습니다. 다음 예에서는 AEM Sites의 기본 구현 논리를 활용하여 이 작업을 수행하는 방법을 보여 줍니다. [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html)를 시작점으로 사용하여 페이지 트리 사이를 이동합니다.
 
@@ -487,7 +487,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 * [https://httpd.apache.org/docs/current/mod/mod_rewrite.html](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
 * [https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps](https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps)
 * [https://www.robotstxt.org/robotstxt.html](https://www.robotstxt.org/robotstxt.html)
-* [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
+* [https://www.internetmarketingninjas.com/blog/search-engine-optimization/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
 * [https://github.com/apache/sling-org-apache-sling-sitemap](https://github.com/apache/sling-org-apache-sling-sitemap)

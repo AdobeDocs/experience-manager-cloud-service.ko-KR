@@ -4,10 +4,10 @@ description: 'Adobe Target과 통합 '
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: a2fa676de0d6ca6d7cde3beedd5cc63850966b56
-workflow-type: ht
-source-wordcount: '1035'
-ht-degree: 100%
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target
 
 ### IMS 구성 {#ims-configuration}
 
-Launch 및 Target에 대한 IMS 구성은 Target과 AEM 및 Launch를 올바르게 통합하는 데 필요합니다. Launch에 대한 IMS 구성은 AEM as a Cloud Service에 사전 구성되어 있는 반면 Target IMS 구성은 Target을 프로비저닝한 다음 직접 만들어야 합니다. [이 비디오](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) 및 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)를 참조하여 Target IMS 구성을 만드는 방법에 대해 알아보십시오.
+Launch 및 Target에 대한 IMS 구성은 Target과 AEM 및 Launch를 올바르게 통합하는 데 필요합니다. Launch에 대한 IMS 구성은 AEM as a Cloud Service에 사전 구성되어 있는 반면 Target IMS 구성은 Target을 프로비저닝한 다음 직접 만들어야 합니다. [이 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) 및 [이 페이지](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)를 참조하여 Target IMS 구성을 만드는 방법에 대해 알아보십시오.
 
 ### Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 {#tenant-client}
 

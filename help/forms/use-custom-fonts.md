@@ -2,7 +2,7 @@
 title: 사용자 정의 글꼴 사용
 description: 사용자 정의 글꼴 사용
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Forms as a Cloud Service Communications를 사용하여 XDP 템플릿, XDP 기�
 
 ## PDF 문서 동작
 
-다음을 수행할 수 있습니다 [글꼴 포함](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) PDF 문서로 이동합니다. 글꼴을 포함하면 PDF 문서가 모든 플랫폼에서 동일하게 표시됩니다. 포함된 글꼴을 사용하여 일관된 모양과 느낌을 보장합니다. 글꼴이 포함되지 않은 경우 글꼴 렌더링은 Acrobat 또는 Acrobat Reader과 같은 PDF 뷰어 클라이언트의 렌더링 설정에 따라 달라집니다. 클라이언트 컴퓨터에서 글꼴을 사용할 수 있는 경우 PDF은 지정된 글꼴을 사용하고, 그렇지 않으면 PDF이 기본 대체 글꼴로 렌더링됩니다.
+다음을 수행할 수 있습니다 [글꼴 포함](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) PDF 문서로 이동합니다. 글꼴을 포함하면 PDF 문서가 모든 플랫폼에서 동일하게 표시됩니다. 포함된 글꼴을 사용하여 일관된 모양과 느낌을 보장합니다. 글꼴이 포함되지 않은 경우 글꼴 렌더링은 Acrobat 또는 Acrobat Reader과 같은 PDF 뷰어 클라이언트의 렌더링 설정에 따라 달라집니다. 클라이언트 컴퓨터에서 글꼴을 사용할 수 있는 경우 PDF은 지정된 글꼴을 사용하고, 그렇지 않으면 PDF이 기본 대체 글꼴로 렌더링됩니다.
 
 ## Forms as a Cloud Service 환경에 사용자 정의 글꼴 추가 {#custom-fonts-cloud-service}
 
