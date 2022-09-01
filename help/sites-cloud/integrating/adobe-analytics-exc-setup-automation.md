@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '756'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,19 +27,19 @@ Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 �
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 기능을 사용하기 전에 다음 지침에 따라 전제 조건 서비스가 사용자 환경에서 올바르게 설정되었는지 확인하는 것이 중요합니다.
+이 기능을 사용하기 전에 사전 요구 사항 서비스가 해당 환경에 올바르게 설정되도록 아래 지침을 따르는 것이 중요합니다.
 
-1. Adobe Admin Console에 로그인합니다(https://adminconsole.adobe.com/).
-1. 오른쪽 상단 모서리에서 적절한 IMS 조직 ID를 선택했는지 확인합니다.
+1. Adobe Admin Console(https://adminconsole.adobe.com/)에 로그인합니다.
+1. 오른쪽 상단에서 올바른 IMS Org ID가 선택되어 있어야 합니다.
 1. 제품 탐색 옵션을 클릭합니다.
-1. IMS 조직에 &quot;Adobe Experience Manager as a Cloud Service&quot;이 프로비저닝되었는지 확인합니다.
-1. IMS 조직에 &quot;Adobe Analytics&quot;이 프로비저닝되었는지 확인합니다.
-1. Cloud Manager (https://experience.adobe.com/cloud-manager)으로 이동합니다.
+1. &quot;Adobe Experience Manager as a Cloud Service&quot;가 IMS Org에 대해 프로비저닝되었는지 확인합니다.
+1. &quot;Adobe Analytics&quot;가 IMS Org에 대해 프로비저닝되었는지 확인합니다.
+1. Cloud Manager(https://experience.adobe.com/cloud-manager)로 이동합니다.
 1. 적절한 프로그램을 선택합니다.
-1. 환경이 최신 버전의 Cloud Service에 있는지 확인합니다(없는 경우 메뉴 옵션에서 업데이트 를 선택합니다).
-1. Cloud Manager에서 전체 스택 파이프라인을 실행합니다.
+1. 환경이 Cloud Service 최신 버전인지 확인합니다(아닌 경우, 메뉴 옵션에서 업데이트를 선택).
+1. Cloud Manager에서 Full Stack 파이프라인을 실행합니다.
 
-이제 Experience Cloud 설정 자동화를 위해 환경을 준비해야 합니다.
+이제 환경이 Experience Cloud 설정 자동화를 수행할 준비가 되었습니다.
 
 ## 설정 방법
 
