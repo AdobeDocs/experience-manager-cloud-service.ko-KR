@@ -1,41 +1,42 @@
 ---
-title: 컨텐츠 조각 콘솔의 키보드 단축키
-description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있으며 여기에는 컨텐츠 조각 관리를 위한 단축키가 포함되어 있습니다
-source-git-commit: 7fe9689e31d29e2dd6c2812742c158723d7c2c15
-workflow-type: tm+mt
+title: Content 조각 콘솔의 키보드 단축키
+description: 콘텐츠 조각 관리를 위한 일부 키보드 단축키를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
+exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
-# 컨텐츠 조각 콘솔의 키보드 단축키 {#keyboard-shortcuts-content-fragments-console}
+# Content 조각 콘솔의 키보드 단축키 {#keyboard-shortcuts-content-fragments-console}
 
-컨텐츠 조각 콘솔에서 다양한 키보드 단축키를 사용할 수 있습니다.
+몇 가지 키보드 단축키를 콘텐츠 조각 콘솔에서 사용할 수 있습니다.
 
-AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 경우에 따라 적용되는 경우도 있습니다 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), 기타 일반 사용자 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)에 적용되고 일부는 일반적인 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)에 적용됩니다.
 
 >[!NOTE]
 >
 >AEM 키보드 단축키에 필요한 [보조 키](#os-specific-modifier-keys)는 운영 체제에 따라 다릅니다.
 
-## 컨텐츠 조각 콘솔 - 키보드 단축키 {#content-fragments-console-keyboard-shortcuts}
+## 콘텐츠 조각 콘솔 - 키보드 단축키 {#content-fragments-console-keyboard-shortcuts}
 
 >[!NOTE]
 >
->바로 가기는 대/소문자를 구분하지 않습니다.
+>단축키는 대/소문자를 구분하지 않습니다.
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
-| 컨텐츠 조각을 선택하지 않음 | `n` | 만들기 대화 상자를 엽니다. |
-| 컨텐츠 조각을 하나 이상 선택합니다 | `m` | 이동 대화 상자를 엽니다. |
-| 컨텐츠 조각을 하나 이상 선택합니다 | `Backspace` | 삭제 대화 상자를 엽니다. |
-| 컨텐츠 조각을 하나 이상 선택합니다 | `r` | 이름 변경 대화 상자를 엽니다. |
-| 컨텐츠 조각을 하나 이상 선택합니다 | `Ctrl-c` | 복사 대화 상자를 엽니다. |
-| 컨텐츠 조각을 하나 이상 선택합니다 | `p` | 지금 게시 대화 상자를 엽니다. |
-| 컨텐츠 조각을 하나 이상 선택합니다 | `u` | 지금 게시 취소 대화 상자를 엽니다. |
-| 열려 있는 대화 상자 | `esc` | 대화 상자가 취소됨 |
+| 선택된 콘텐츠 조각이 없습니다 | `n` | 생성 대화 상자를 엽니다 |
+| 하나 이상의 콘텐츠 조각을 선택합니다 | `m` | 새 이동 대화 상자를 엽니다 |
+| 하나 이상의 콘텐츠 조각을 선택합니다 | `Backspace` | 삭제 대화 상자를 엽니다 |
+| 하나 이상의 콘텐츠 조각을 선택합니다 | `r` | 이름 바꾸기 대화 상자를 엽니다 |
+| 하나 이상의 콘텐츠 조각을 선택합니다 | `Ctrl-c` | 복사 대화 상자를 엽니다 |
+| 하나 이상의 콘텐츠 조각을 선택합니다 | `p` | 지금 게시 대화 상자를 엽니다 |
+| 하나 이상의 콘텐츠 조각을 선택합니다 | `u` | 게시 취소 대화 상자를 엽니다 |
+| 모든 열린 대화 상자 | `esc` | 대화 상자가 해제됩니다 |
 
-데스크톱 사용자도 다양한 키보드 단축키를 사용할 수 있습니다. 경우에 따라 적용되는 경우도 있습니다 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), 기타 일반 사용자 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+데스크탑 사용자는 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 [페이지 편집](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)에 적용되고 일부는 일반적인 [콘솔 사용](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)에 적용됩니다.
 
 >[!NOTE]
 >
