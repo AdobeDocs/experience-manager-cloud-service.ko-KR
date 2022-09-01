@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
+source-git-commit: 962b027521e6ca2d1da8e8d2f98c6227ea496743
 workflow-type: tm+mt
-source-wordcount: '3713'
+source-wordcount: '3716'
 ht-degree: 99%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 99%
    + 일반 AEMaaCS 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [2022.7.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-7-0.md)
          + [2022.6.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [2022.5.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
          + [2022.4.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)

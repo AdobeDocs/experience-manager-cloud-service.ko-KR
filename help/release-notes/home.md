@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 57e1f39394f501b8fc2ab8ff5f7d12f6365016e9
+source-git-commit: 9dc9bd253ea2df30ad287f5d8d5ffa99e3a6b092
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | 제품 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 버전 | 2022.7.0 |
+| 버전 | 2022.8.0 |
 | 유형 | 지속적인 업데이트 |
 | 가용 일자 | 연속 업데이트 |
 

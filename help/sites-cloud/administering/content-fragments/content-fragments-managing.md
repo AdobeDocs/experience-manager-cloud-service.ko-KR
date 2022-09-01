@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 관리
 description: 페이지 작성을 위해 또는 Headless 콘텐츠의 기반으로 콘텐츠 조각 콘솔을 사용하여 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
-source-wordcount: '2047'
-ht-degree: 100%
+source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
+workflow-type: tm+mt
+source-wordcount: '1915'
+ht-degree: 95%
 
 ---
 
@@ -36,6 +36,20 @@ ht-degree: 100%
 >[!NOTE]
 >
 >콘텐츠 조각은 **에셋**&#x200B;으로 저장됩니다. 주로 **콘텐츠 조각** 콘솔에서 관리되지만 **에셋** 콘솔에서도 관리할 수 있습니다.
+
+## 컨텐츠 조각 콘솔 {#content-fragments-console}
+
+컨텐츠 조각 콘솔에서는 조각 및 관련 작업에 직접 액세스할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+
+* [컨텐츠 조각 콘솔의 기초 구조 및 처리](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+
+* [컨텐츠 조각에 대해 제공된 정보](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+
+* [콘텐츠 조각 콘솔의 콘텐츠 조각에 대한 작업](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
+
+* [컨텐츠 조각 콘솔에서 사용할 수 있는 열 사용자 지정](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+
+* [콘텐츠 조각 콘솔에서 검색 및 필터링](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
 
@@ -79,61 +93,6 @@ ht-degree: 100%
 콘텐츠 조각이 게시된 후 수정을 게시하기 전에 편집되었습니다.
 * **게시 취소됨**
 콘텐츠 조각의 게시가 취소되었습니다.
-
-## 콘텐츠 조각 콘솔의 콘텐츠 조각에 대한 작업 {#actions-content-fragment-console}
-
-**콘텐츠 조각** 콘솔에서는 도구 모음에서 콘텐츠 조각에 대해 다양한 작업을 사용할 수 있습니다.
-
-![콘솔 작업](assets/cfm-managing-cf-console-01.png)
-
-* **에셋에서 열기**
-* **만들기**
-* **참조자** 열은 해당 조각의 모든 상위 참조를 표시하는 직접 링크도 제공합니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다.
-* 폴더 이름에 마우스를 가져다 대면 JCR 경로가 표시됩니다.
-
-조각 선택 후 모든 적절한 작업을 사용할 수 있습니다.
-
-![콘솔 작업 - 선택한 조각](assets/cfm-managing-cf-console-selected-01.png)
-
-* **열기**
-* **게시**(및 **게시 취소**)
-* **복사**
-* **이동**
-* **이름 변경**
-* **삭제**
-
->[!NOTE]
->
->게시, 게시 취소, 삭제, 이동, 이름 변경, 복사, 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
-
-## 콘텐츠 조각 콘솔에서 보기 맞춤화 {#viewing-content-fragment-console}
-
-콘솔에는 현재 폴더 및 모든 하위 폴더에 있는 콘텐츠 조각에 대한 정보가 표시됩니다.
-
-**표 맞춤화** 아이콘을 사용하여 표시되는 정보를 맞춤화할 수 있습니다.
-
-![표 맞춤화 아이콘](assets/cfm-managing-cf-console-customize-table-icon.png)
-
-이렇게 하면 사용할 수 잇는 열을 선택/선택 해제할 수 있는 **표 맞춤화** 대화 상자가 열립니다.
-
-![표 맞춤화](assets/cfm-managing-cf-console-customize-table.png)
-
-## 콘텐츠 조각 콘솔에서 검색 및 필터링 {#search-filter-content-fragment-console}
-
-콘솔에 표시할 콘텐츠 조각을 검색 및/또는 필터링할 수 있습니다.
-
-다음과 같은 작업을 수행할 수 있습니다.
-
-* 필요한 폴더 선택
-* **필터 표시** 아이콘을 사용하여 하여 필터를 선택하고 검색 상자를 동시에 사용
-
-![표 맞춤화 아이콘](assets/cfm-managing-cf-console-filter-search-01.png)
-
-다양한 필터를 사용할 수 있습니다.
-
-![필터링 및 검색](assets/cfm-managing-cf-console-filter-search-02.png)
-
-나중에 참조할 수 있도록 필터 및 검색 조합을 저장할 수도 있습니다.
 
 ## 조각 편집기 열기 {#opening-the-fragment-editor}
 
@@ -280,12 +239,12 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 조각 게시 및 참조 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
->모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
+모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다. 이 작업은 표준 Assets 기능을 사용하여 수행됩니다.
 
-* [콘텐츠 조각 콘솔](#actions-content-fragment-console)의 도구 모음에 있는 **게시** 옵션에서
+* [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)의 도구 모음에 있는 **게시** 옵션에서
    * **지금** - 확인 후 조각이 즉시 게시됩니다.
    * **예약** - 조각을 게시할 날짜 및 시간을 선택할 수 있습니다.
 
@@ -299,17 +258,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 또한 [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)하면 해당 조각은 페이지 참조에 나열됩니다.
 
 >[!CAUTION]
->조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
+조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
 
 ## 조각 게시 취소 {#unpublishing-a-fragment}
 
 콘텐츠 조각 게시를 취소하려면 하나 이상의 조각을 선택한 다음 **게시 취소**&#x200B;를 선택합니다.
 
 >[!NOTE]
->게시된 조각을 사용할 수 있는 경우 **게시 취소** 작업이 표시됩니다.
+게시된 조각을 사용할 수 있는 경우 **게시 취소** 작업이 표시됩니다.
 
 >[!CAUTION]
->다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
+다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
 
 ## 조각 삭제 {#deleting-a-fragment}
 
@@ -319,18 +278,26 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. 조각을 선택합니다.
 
    >[!NOTE]
-   >**삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
+   **삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
 
 3. 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 4. **삭제** 작업을 확인합니다.
 
    >[!CAUTION]
-   >다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 **강제 삭제**&#x200B;를 진행할지 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
+   다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 **강제 삭제**&#x200B;를 진행할지 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
+
+## 조각의 상위 참조 찾기 {#parent-references-fragment}
+
+상위 참조의 세부 사항은 **참조** 열 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+
+## 조각의 언어 사본 찾기 {#language-copies-fragment}
+
+언어 사본 상세 정보는 **언어** 열 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## 콘텐츠 조각 타임라인 {#timeline-for-content-fragments}
 
 >[!NOTE]
->이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 표준 옵션뿐만 아니라 [타임라인](/help/assets/manage-digital-assets.md#timeline)도 콘텐츠 조각과 관련된 정보와 작업을 모두 제공합니다.
 
@@ -350,13 +317,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **삭제**
 
 >[!NOTE]
->댓글은
->* 모든 에셋에 대한 표준 기능입니다.
->* 타임라인에서 만들어집니다.
->* 조각 에셋과 관련되어 있습니다.
->주석(콘텐츠 조각)은
->* 조각 편집기에서 입력됩니다.
->* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
+댓글은
+* 모든 에셋에 대한 표준 기능입니다.
+* 타임라인에서 만들어집니다.
+* 조각 에셋과 관련되어 있습니다.
+>
+주석(콘텐츠 조각)은
+* 조각 편집기에서 입력됩니다.
+* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
 >
 
 
@@ -367,7 +335,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 조각 버전 비교 {#comparing-fragment-versions}
 
 >[!NOTE]
->이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 **현재 항목에 비교** 작업은 특정 버전을 선택한 후 [타임라인](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 사용할 수 있습니다.
 
@@ -390,14 +358,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * **완료**&#x200B;를 선택하면 콘솔로 돌아갑니다.
 
 >[!NOTE]
->조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
+조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
 
 ![비교](assets/cfm-managing-06.png)
 
 ## 버전으로 되돌리기  {#reverting-to-a-version}
 
 >[!NOTE]
->이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 조각을 특정 버전으로 되돌릴 수 있습니다.
 

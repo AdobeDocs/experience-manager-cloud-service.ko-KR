@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c27b66bcd0536ec10a878b39b9ec76073634c06
+source-git-commit: bcd62d1d1a66e17585e35c11c12cd72067e0e46e
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 100%
+source-wordcount: '626'
+ht-degree: 28%
 
 ---
 
@@ -25,101 +25,58 @@ ht-degree: 100%
 
 ## 릴리스 날짜 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]의 현재 릴리스(2022.7.0) 날짜는 2022년 8월 8일입니다.
-
-다음 릴리스(2022.8.0)는 2022년 9월 1일에 예정되어 있습니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 릴리스(2022.8.0)는 2022년 9월 1일입니다.
+다음 릴리스(2022.9.0)는 2022년 9월 29일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
-2022년 7월 릴리스 개요 비디오를 통해 2022.7.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+2022.8.0 릴리스에 추가된 기능에 대한 요약을 보려면 2022년 8월 릴리스 개요 비디오를 보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites]의 새로운 기능 {#sites-features}
 
-* [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)은 이제 [키보드 단축키](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)를 지원합니다.
+* 이메일 구성 요소를 사용하면 AEM에서 컨텐츠를 만든 다음 Campaign Classic을 통해 이메일로 배달됩니다. 핵심 이메일 구성 요소:
+   * 는 [코어 WCM 구성 요소](https://github.com/adobe/aem-core-wcm-components) 편집 가능한 템플릿 및 스타일 시스템을 지원합니다.
+   * 은 10개의 전자 메일에 최적화된 프로덕션 준비 구성 요소(페이지, 컨테이너, 제목, 텍스트, 이미지, 단추, 티저, 경험 조각, 컨텐츠 조각, 세그멘테이션)를 제공합니다.
+   * 은 고급 개인화 및 세그멘테이션을 제공합니다. [campaign 변수 삽입](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) 대부분의 대화 상자 필드에서 및 [세그먼테이션 구성 요소](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * 은 이메일 친화적인 HTML 출력을 제공합니다. [CSS 스타일 삽입](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), [HTML 속성 인라인](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), 및 [HTML 소독기](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * 어디서나 이메일을 만들 수 있습니다.
 
-* AEM as Cloud Service의 [웹 최적화 이미지 게재](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)는 WebP와 같은 형식을 제공함으로써 페이지 속도를 향상시킬 수 있습니다. 또한 이 새로운 서비스는 보다 유연한 이미지 크기 조정 및 변환 옵션을 제공합니다. 모든 버전의 [핵심 이미지 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)에서, 이 서비스를 사용하여 이미지 구성 요소 정책에서 옵션을 클릭하는 것으로 WebP로 이미지를 게재할 수 있습니다.
+### [!DNL Sites] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-sites}
 
-* AEM 개인화 활동에서 이제 레거시 오퍼 대신 경험 조각을 사용할 수 있습니다. 이 기능은 다음의 특징을 포함합니다.
-   * 레거시 라이브러리가 아닌 AEM 콘텐츠가 경험 조각 오퍼를 촉진하는 마이그레이션 경로를 통해 향후 규모에 맞는 개인화에 적합한 스타일의 콘텐츠를 제공할 수 있습니다.
-   * 콘텐츠 작성자가 사이트에서 스타일이 지정되지 않은 콘텐츠를 실수로 제공하는 것을 방지합니다.
-   * 모든 구성 요소의 타겟팅 모드를 편집 가능한 템플릿을 사용하는 경험 조각(JSON 및 HTML 유형 모두)으로 변환할 수 있습니다.
+* 다음 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 사용자에게 컨텐츠 조각과 연관된 총 언어 사본 수를 표시하는 옵션을 제공합니다. 모든 언어 사본도 보려면 1번의 클릭으로 액세스할 수 있습니다. 사용자는 원하는 로케일별로 테이블 보기를 필터링할 수도 있습니다.
 
->[!NOTE]
->
->이미 레거시 오퍼를 사용 중인 기존 개인화 활동은 계속해서 레거시 오퍼를 사용할 수 있으나 새 개인화 활동의 경우 경험 조각이 앞으로의 권장 접근법이기 때문에 경험 조각으로 생성해야 합니다.
+![컨텐츠 조각 언어](/help/release-notes/assets/cfconsole-languages.png)
 
 ## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-assets}
+### [!DNL Assets]의 새로운 기능 {#features-assets}
 
-이제 [사용자가 MIME 유형에 따라 업로드할 수 있는 에셋 유형을 제한](/help/assets/configure-asset-upload-restrictions.md)하도록 Adobe Experience Manager Assets를 구성할 수 있습니다.
+* 이제 [사용자가 MIME 유형에 따라 업로드할 수 있는 에셋 유형을 제한](/help/assets/configure-asset-upload-restrictions.md)하도록 Adobe Experience Manager Assets를 구성할 수 있습니다.
 
-![에셋 업로드 제한 사항](/help/assets/assets/asset-upload-restrictions.png)
+   ![에셋 업로드 제한 사항](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]의 새로운 기능 {#forms-features}
-
-* **[스크리블 서명을 위한 키보드 입력 지원](/help/forms/signing-forms-using-scribble.md)**: 적응형 양식은 터치 디바이스에서 점점 더 많이 사용되고 있으며, 한 가지 일반적인 요구사항은 서명을 지원하는 것입니다. 터치 디바이스에서 문서에 서명하는 것은 양식 서명에서 허용되는 방법이 되었습니다. 적응형 양식은 이러한 사용 사례에 대해 스크리블 서명 및 Adobe Sign을 기본 지원합니다. 이제 이미 지원되는 다른 옵션과 더불어 키보드를 사용하여 적응형 양식에 스크리블 서명을 할 수도 있습니다. 또한 접근성 규정 준수를 개선하는 데도 도움이 됩니다.
-
-![iphone에서 스크리블 서명을 위한 키보드 입력 지원](/help/release-notes/assets/scribble-keyboard-mobile.png)
-
-* **로컬 언어로 적응형 양식 마법사 사용**&quot; 선택한 언어로 마법사를 사용할 수 있습니다. 이제 Adobe Experience Manager에서 지원하는 모든 언어를 지원합니다.
-
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
-<!-- 
+* [응용 Forms 마법사](/help/forms/creating-adaptive-form.md): AEM Forms은 적응형 Forms을 빠르게 작성할 수 있는 비즈니스 사용자에게 친숙한 마법사를 제공합니다. 마법사에는 적응형 양식을 만들기 위해 사전 구성된 템플릿, 스타일 지정, 필드 및 제출 옵션을 쉽게 선택할 수 있는 빠른 탭 탐색 기능이 있습니다. 이 릴리스에서는 마법사에 다음과 같은 개선 사항이 제공됩니다.
 
-* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+   * 필드 선택 또는 선택 취소: 마법사를 사용하면 JSON 및 양식 데이터 모델 스키마를 기반으로 적응형 양식을 만들 수 있습니다. 이제 스키마 내의 필드 하위 집합을 선택하여 적응형 양식에 포함할 수 있습니다. 선택한 필드가 해당 적응형 양식 데이터 캡처 구성 요소로 변환되어 원하는 적응형 양식을 빠르게 만듭니다.
 
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
+   * 정적 템플릿 사용: 기존 정적 템플릿에 대한 기존 투자를 사용하는 고객은 마법사에서 정적 템플릿을 사용하여 적응형 양식을 작성함으로써 클라우드 채택 여정을 계속할 수 있습니다. 이를 통해 고객은 기존의 정적 템플릿을 편집 가능한 최신 템플릿으로 마이그레이션할 수 있습니다.
 
--->
-
-* **[DDX 호출 - AEM 워크플로 단계](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: DDX(Document Description XML)는 문서의 구성 요소를 나타내는 선언적 마크업 언어입니다. 이러한 구성 요소에는 PDF 및 XDP 문서는 물론 댓글, 책갈피 및 스타일이 지정된 텍스트와 같은 기타 요소가 포함됩니다. DDX 문서는 문서용 템플릿이며 결과 문서에 나타나야 하는 원본 문서의 원하는 특성을 설명합니다. 단일 DDX를 다양한 원본 문서와 함께 사용할 수 있습니다. AEM 워크플로 호출 단계를 사용하여 문서 어셈블/디스어셈블, Acrobat 및 XFA 양식 작성 및 수정, [DDX 참조](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 설명서에 설명된 기타 작업과 같은 다양한 작업을 수행할 수 있습니다.
-
-* **[PDF/A로 변환 - AEM 워크플로 단계](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A는 문서 내용을 장기간 보존하기 위한 보관 형식이며, 모든 글꼴이 임베드되어 있고 파일이 압축 해제되어 있습니다. 이제 AEM 워크플로의 PDF/A로 변환 단계를 사용하여 모든 형식의 문서 또는 파일을 PDF/A 형식으로 변환할 수 있습니다.
-
+* [서버측 처리 중 레코드 문서(DoR)에서 숨겨진 필드를 제거합니다](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): 데이터 캡처 경험 중에 표시되는 필드만 포함하는 최종 사용자에 대한 레코드 PDF 문서를 생성할 수 있습니다. 양식 제출 시 서버는 제출된 데이터를 기반으로 최종 사용자에게 숨겨진 필드를 확인하고 일관성을 위해 기록 문서에서 제외합니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
 ### 새로운 기능 {#what-is-new-cif}
 
-* 제품 카탈로그 보강으로 이제 AEM 페이지가 지원됩니다. 이에 따라 제작자가 페이지-제품 연계를 관리할 수 있습니다.
-
-* 다양한 CIF 핵심 구성 요소 개선
-
-### 버그 수정 {#bug-fixes-cif}
-
-* 클라이언트측 가격 가져오기에 로그인 토큰 추가
-
-* 데이터레이어 내 잘못된 페이지 구성 요소
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### 새로운 기능 {#what-is-new-foundation}
-
-* 이제 [저장소 브라우저](/help/implementing/developing/tools/repository-browser.md)에 경로 입력 필드가 있으므로 저장소 계층의 특정 폴더로 직접 이동할 수 있습니다.
-* Sling 콘텐츠 배포(SCD)는 이제 해당 콘텐츠가 게시되지 않은 콘텐츠를 무효화하기 위해 명시적인 &quot;무효화&quot; 작업을 지원합니다. 자세한 내용은 [AEM as a Cloud Service의 캐싱](/help/implementing/dispatcher/caching.md#explicit-invalidation)을 참조하십시오.
-* 이제 AEM as a Cloud Service에서 mod_macro를 이용할 수 있습니다. 지원되는 Apache 모듈의 목록은 [이 표](/help/implementing/dispatcher/disp-overview.md)를 참조하십시오.
-
-### AEM as a Cloud Service SDK Dispatcher 도구 개선 사항 {#dispatcher-tools-enhancements}
-
-* Apache 및 Dispatcher 구성에 대한 모든 변경 사항을 자동으로 로드하고 유효성을 검사하는 `docker_run_hot_reload.sh` 스크립트로 Apache를 시작할 수 있으므로 개발자 속도가 향상됩니다. Dispatcher 도구 유연한 모드에서만 지원됩니다. 자동 다시 로드 및 유효성 검사에 대한 자세한 내용은 [Apache 및 Dispatcher 구성 디버깅](/help/implementing/dispatcher/validation-debug.md#automatic-reloading)을 참조하십시오.
-* 로컬 Apache/Dispatcher 구성이 클라우드 환경의 변화를 더욱 면밀히 추적하여 두 환경 간의 유사성을 증가시킵니다.
-
-### [!DNL Experience Manager] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-foundation}
-
-* 이제 AEM as a Cloud Service가 통합 쉘과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
-
-## Adobe Learning Manager 커넥터 {#learn-manage}
-
-* 새로운 Adobe Learning Manager에는 Adobe Experience Manager Sites, Marketo Engage 및 Adobe Commerce에 대한 커넥터가 있습니다. 자세한 내용은 [Adobe Learning Manager 사용 안내서](https://helpx.adobe.com/kr/learning-manager/user-guide.html)를 참조하십시오.
-
+* AEM 페이지 속성 및 제품 조종실의 개요를 통해 제품 및 카테고리에 대한 AEM 페이지 연결
+   ![제품 조종실 페이지 협회](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
