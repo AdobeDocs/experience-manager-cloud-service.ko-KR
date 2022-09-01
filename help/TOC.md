@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
 workflow-type: tm+mt
 source-wordcount: '3709'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -276,7 +276,7 @@ ht-degree: 99%
          + [ContextHub를 사용하여 세그먼테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
       + 캠페인 {#campaign}
-         + [AEM으로 뉴스레터 만들기](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
+         + [AEM으로 뉴스레터 생성](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 관리 {#administering}
       + 콘텐츠 조각 {#content-fragments}
          + [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -292,7 +292,7 @@ ht-degree: 99%
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [구조 트리](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [미리보기 - JSON 표현식](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-         + [컨텐츠 조각 콘솔 - 키보드 단축키](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+         + [콘텐츠 조각 콘솔 - 키보드 단축키](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
          + [프런트-엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -341,7 +341,7 @@ ht-degree: 99%
       + [Adobe Analytics와 통합](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics 자동 설정과 통합](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Adobe Analytics와 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
-      + [Adobe Learning Manager와 통합 사용](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
+      + [Adobe Learning Manager와 통합](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Target과 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
@@ -400,7 +400,7 @@ ht-degree: 99%
       + [XMP 메타데이터](/help/assets/xmp-metadata.md)
       + [MediaLibrary 기능](/help/assets/medialibrary.md)
       + [에셋 메타데이터 가져오기 및 내보내기](/help/assets/metadata-import-export.md)
-      + [자산 업로드 제한 구성](/help/assets/configure-asset-upload-restrictions.md)
+      + [에셋 업로드 제한 사항 구성](/help/assets/configure-asset-upload-restrictions.md)
    + 에셋 공유 및 배치 {#brand-portal}
       + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [ [!DNL Brand Portal]에 에셋 게시](/help/assets/publish-to-brand-portal.md)
@@ -772,7 +772,7 @@ ht-degree: 99%
       + [빠른 사이트 생성 및 프론트엔드 맞춤화](/help/implementing/developing/introduction/quick-site-creation.md)
       + [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [사이트 템플릿 및 테마 맞춤화](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
-      + [AEM 헤드풀 및 Headless](/help/implementing/developing/headful-headless.md)
+      + [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
       + 전체 스택 AEM 개발 {#full-stack}
          + [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI 구조](/help/implementing/developing/introduction/ui-structure.md)
@@ -897,7 +897,7 @@ ht-degree: 99%
    + [백업 및 복원](/help/operations/backup.md)
    + [비동기 작업](/help/operations/asynchronous-jobs.md)
    + [일반 Lucene 인덱스 제거](/help/operations/removal-generic-lucene-index.md)
-   + [쿼리 및 색인 지정 우수 사례](/help/operations/query-and-indexing-best-practices.md)
+   + [쿼리 및 색인화 모범 사례](/help/operations/query-and-indexing-best-practices.md)
 + 규정 준수 {#compliance}
    + [AEM as a Cloud Service 규정 준수](/help/compliance/home.md)
    + 데이터 개인정보 보호 및 보호 준비 {#data-privacy}

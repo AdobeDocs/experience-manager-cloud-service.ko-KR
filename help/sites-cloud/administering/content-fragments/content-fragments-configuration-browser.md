@@ -5,7 +5,7 @@ exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 콘텐츠 조각을 사용하기 전에 **구성 브라우저**&#x200B;를 사용하여 다음을 활성화해야 합니다.
 
 * **콘텐츠 조각 모델** - 필수
-* **GraphQL 지속적인 쿼리** - 선택 사항
+* **GraphQL 지속 쿼리** - 선택 사항
 
 >[!CAUTION]
 >

@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 57e1f39394f501b8fc2ab8ff5f7d12f6365016e9
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 95%
 
 ## 릴리스 준비 방법 {#how-to-prepare}
 
-[!DNL Adobe Experience Manager] as a Cloud Service의 지속적인 릴리스 모델과 함께, 애플리케이션은 지속적으로 업데이트됩니다. 업데이트, 기능 릴리스 및 유지 관리 릴리스에는 두 가지 유형이 있습니다.
+[!DNL Adobe Experience Manager] as a Cloud Service의 지속적인 릴리스 모델과 함께, 애플리케이션은 지속적으로 업데이트됩니다. 업데이트에는 기능 릴리스와 유지 관리 릴리스의 두 가지 유형이 있습니다.
 
 * 기능 릴리스는 예측 가능한 월별 주기로 수행되며 새로운 기능 및 제품 혁신에 초점을 맞춥니다.
-* 유지 관리 릴리스는 자주 수행되며 보안 업데이트, 버그 수정 및 성능 향상에 중점을 둡니다. 이를 통해 [!DNL Adobe Experience Manager] as a Cloud Service는 항상 중요한 수정 사항을 최신 상태로 유지할 수 있습니다.
+* 유지 관리 릴리스는 수시로 수행되며 보안 업데이트, 버그 수정 및 성능 개선에 초점을 맞춥니다. 이를 통해 [!DNL Adobe Experience Manager] as a Cloud Service는 항상 중요한 수정 사항을 최신 상태로 유지할 수 있습니다.
 
 [!DNL Adobe Experience Manager] as a Cloud Service는 혁신의 속도와 더불어 예정된 기능을 프로덕션으로 출시하기 한 달 전에 미리 볼 수 있는 유연성도 제공합니다. 이를 통해 사전에 자체 맞춤형 환경에서 기능을 테스트하고, 내부 사용자를 교육하고 준비시킴으로써 예정된 릴리스가 조직에 미치는 영향력을 평가할 수 있습니다.
 
