@@ -3,9 +3,9 @@ title: 콘텐츠 검색 및 색인화
 description: 콘텐츠 검색 및 색인화
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2253'
+ht-degree: 100%
 
 ---
 
@@ -70,9 +70,9 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-그런 후 `ui.apps/src/main/content/jcr_root`로 전환해야 합니다. 맞춤화된 인덱스 정의 및 사용자 지정 인덱스 정의는 모두 `/oak:index` 아래에 저장해야 합니다.
+그런 후 `ui.apps/src/main/content/jcr_root`로 전환해야 합니다. 맞춤화된 인덱스 정의 및 사용자 정의 인덱스 정의는 모두 `/oak:index` 아래에 저장해야 합니다.
 
-기존 인덱스(기본 제공 인덱스)이 유지되고 있는 것과 같이 패키지의 필터를 설정해야 합니다. `ui.apps/src/main/content/META-INF/vault/filter.xml` 파일에 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`과 같은 각 사용자 지정(또는 맞춤화된) 인덱스를 나열해야 합니다. 인덱스 버전을 나중에 변경하면 필터를 조정해야 합니다.
+기존 인덱스(기본 제공 인덱스)이 유지되고 있는 것과 같이 패키지의 필터를 설정해야 합니다. `ui.apps/src/main/content/META-INF/vault/filter.xml` 파일에 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`과 같은 각 사용자 정의(또는 맞춤화된) 인덱스를 나열해야 합니다. 인덱스 버전을 나중에 변경하면 필터를 조정해야 합니다.
 
 위 샘플의 패키지는 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`(으)로 작성됩니다.
 
@@ -88,7 +88,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 * 인덱스 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
 
-사용자 지정 인덱스 또는 맞춤화된 인덱스를 배포하려면 Git 및 Cloud Manager 배포 프로세스를 통해 `ui.apps`를 통해 인덱스 정의(`/oak:index/definitionname`)를 전달해야 합니다. FileVault 필터(예: `ui.apps/src/main/content/META-INF/vault/filter.xml`)에서 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`과 같은 각 사용자 지정 인덱스 및 맞춤화된 인덱스를 개별적으로 나열합니다. 이렇게 하면 사용자 지정/맞춤화된 인덱스 정의 자체가 다음과 같이 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` 파일에 저장됩니다.
+사용자 정의 인덱스 또는 맞춤화된 인덱스를 배포하려면 Git 및 Cloud Manager 배포 프로세스를 통해 `ui.apps`를 통해 인덱스 정의(`/oak:index/definitionname`)를 전달해야 합니다. FileVault 필터(예: `ui.apps/src/main/content/META-INF/vault/filter.xml`)에서 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`과 같은 각 사용자 정의 인덱스 및 맞춤화된 인덱스를 개별적으로 나열합니다. 이렇게 하면 사용자 정의/맞춤화된 인덱스 정의 자체가 다음과 같이 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` 파일에 저장됩니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -280,8 +280,8 @@ Adobe에서 “damAssetLucene” 또는 “cqPageLucene” 같은 기본 제공 
 
 기본 제공 색인의 맞춤화가 더 이상 필요하지 않은 경우 기본 제공 색인 정의를 복사해야 합니다. 예를 들어 이미 `damAssetLucene-8-custom-3`을 배포했지만 더 이상 맞춤화가 필요하지 않고 기본 `damAssetLucene-8` 색인으로 다시 바꾸고 싶다면 `damAssetLucene-8`의 색인 정의가 포함된 색인 `damAssetLucene-8-custom-4`를 추가해야 합니다.
 
-## 인덱스 및 쿼리 최적화 {#index-query-optimizations}
+## 색인 및 쿼리 최적화 {#index-query-optimizations}
 
 Apache Jackrabbit Oak는 유연한 색인 구성을 통해 효율적으로 검색 쿼리를 처리할 수 있도록 해 줍니다. 색인은 특히 대형 저장소에서 중요합니다. 모든 쿼리가 적절한 색인에 의해 지원되는지 확인하십시오. 적절한 색인 없는 쿼리는 수천 개의 노드를 읽을 수 있어 경고로 기록됩니다.
 
-자세한 내용은 [이 문서](query-and-indexing-best-practices.md) 쿼리 및 인덱스를 최적화하는 방법에 대한 자세한 정보.
+쿼리와 색인을 최적화하는 방법에 관한 정보는 [본 문서](query-and-indexing-best-practices.md)를 참조하십시오.
