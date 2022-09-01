@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
+source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 4%
+source-wordcount: '1869'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 | × | 지원되지 않음. 사용하지 마십시오. |
 | - | 사용할 수 없음 |
 
-| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) |
+| 사용 사례 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset compute 서비스](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) 서블릿 | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **원본 이진** |  |  |  |  |  |  |
 | 원본 만들기 | ✓ | × | - | × | × | - |
@@ -84,6 +84,8 @@ in [!DNL Experience Manager] 로서의 [!DNL Cloud Service]HTTP API를 사용하
 
 >[!NOTE]
 오픈 소스에서 이 접근 방식을 구현하려면 클라이언트 코드 를 참조하십시오 [aem-upload 라이브러리](https://github.com/adobe/aem-upload).
+[!IMPORTANT]
+특정 상황에서 Cloud Service에 있는 스토리지의 일관된 특성으로 인해 변경 사항이 요청 간에 완전히 전달되지 않을 수 있습니다. 이렇게 하면 전파되지 않는 필수 폴더 생성으로 인해 업로드 호출을 시작하거나 완료하는 404 응답이 발생합니다. 클라이언트는 404 응답을 예상하고 백오프 전략을 사용하여 다시 시도를 구현하여 처리해야 합니다.
 
 ### 업로드 시작 {#initiate-upload}
 
