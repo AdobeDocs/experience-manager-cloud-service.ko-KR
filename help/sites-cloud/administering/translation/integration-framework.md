@@ -4,10 +4,10 @@ description: 서드파티 번역 서비스와 통합한 번역 통합 프레임�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 294743b3ca309cc0de3295cb55679e647bb10756
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 100%
+source-wordcount: '1523'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ AEM을 번역 서비스 공급업체에 연결하는 클라우드 구성을 만�
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
-* [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
+* [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
 커넥터 패키지를 설치하면 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스로 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터 클라우드 구성에 대한 자세한 내용은 [Microsoft Translator와 통합](connect-ms-translator.md)을 참조합시오.
