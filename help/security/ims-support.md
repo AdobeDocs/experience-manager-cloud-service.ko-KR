@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ IMS 인증은 AEM과 Adobe IMS 엔드포인트 간 OAuth 프로토콜을 사용�
 
 Adobe Admin Console에 대한 고객 온보딩은 AEM 인증에 Adobe IMS를 사용하기 위한 사전 요구 사항입니다.
 
-첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe Enterprise 고객은 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)에서 IMS 조직으로 표시됩니다. 이것은 Adobe 고객이 사용자 및 그룹에 대한 제품 권한을 관리하는 데 사용하는 포털입니다.
+첫 번째 단계로, 고객은 Adobe IMS에서 조직이 프로비저닝되어 있어야 합니다. Adobe Enterprise 고객은 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)에서 IMS 조직으로 표시됩니다. 이는 Adobe 고객이 사용자 및 그룹에 대한 제품 권한을 관리하는 데 사용하는 포털입니다.
 
 AEM 고객은 이미 조직이 프로비저닝되어 있어야 하며 IMS 프로비저닝의 일부로서, 고객 인스턴스는 사용자 권한 및 액세스를 관리하기 위해 Admin Console에서 사용할 수 있게 됩니다.
 
@@ -84,9 +84,9 @@ IDP 구성을 비롯한 Adobe Identity Management 기본 사항은 [여기에서
 
 **사용자 동기화 도구**
 
-UST(사용자 동기화 도구)를 사용하면 기업 고객은 Active Directory를 활용하여 Adobe 사용자를 만들고 관리할 수 있습니다. 이것은 다른 테스트된 OpenLDAP 디렉터리 서비스에도 적용됩니다. 타겟 사용자는 도구를 설치 및 구성할 수 있는 IT ID 관리자(Enterprise Directory 또는 시스템 관리자)입니다. 오픈소스 도구는 고객이 특정 요구 사항에 맞게 수정할 수 있도록 사용자 지정할 수 있습니다.
+UST(사용자 동기화 도구)를 사용하면 기업 고객은 Active Directory를 활용하여 Adobe 사용자를 만들고 관리할 수 있습니다. 이는 다른 테스트된 OpenLDAP 디렉터리 서비스에도 적용됩니다. 타겟 사용자는 도구를 설치 및 구성할 수 있는 IT ID 관리자(Enterprise Directory 또는 시스템 관리자)입니다. 오픈소스 도구는 고객이 특정 요구 사항에 맞게 수정할 수 있도록 사용자 지정할 수 있습니다.
 
-사용자 동기화가 실행되면 이 기능은 조직의 Active Directory의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다.  그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉터리와 동기화되도록 합니다. 변화 흐름은 완전히 한 가지 방향입니다. Admin Console에서 편집한 내용은 디렉터리에 푸시되지 않습니다.
+사용자 동기화가 실행되면 이 기능은 조직의 Active Directory의 사용자 목록을 가져와서 Admin Console 내의 사용자 목록과 비교합니다. 그런 다음 Adobe User Management API를 호출하여 Admin Console이 조직의 디렉터리와 동기화되도록 합니다. 변화 흐름은 완전히 한 가지 방향입니다. Admin Console에서 편집한 내용은 디렉터리에 푸시되지 않습니다.
 
 시스템 관리자는 이 도구를 사용하여 고객 디렉터리에 있는 사용자 그룹을 Admin Console의 제품 구성 및 사용자 그룹과 매핑할 수 있습니다.
 
@@ -120,7 +120,7 @@ Adobe I/O 콘솔 설명서는 [여기에서](https://www.adobe.io/apis/cloudplat
 >
 >필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다. 그러나 관리자는 [여기에서](/help/implementing/deploying/overview.md) 설명하는 방법을 사용하여 필요한 대로 수정할 수 있습니다.
 
-필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다.  고객 관리자는 요구 사항에 따라 구성 일부를 수정할 수 있습니다.
+필요한 AEM IMS 구성은 AEM 환경 및 인스턴스가 프로비저닝될 때 자동으로 구성됩니다. 고객 관리자는 요구 사항에 따라 구성 일부를 수정할 수 있습니다.
 
 전반적인 접근 방식은 Adobe IMS를 OAuth 공급자로 구성하는 것입니다. **Apache Jackrabbit Oak Default Sync Handler**&#x200B;는 LDAP 동기화의 경우처럼 수정할 수 있습니다.
 
