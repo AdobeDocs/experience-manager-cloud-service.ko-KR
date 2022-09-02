@@ -3,9 +3,9 @@ title: '등록, 로그인 및 사용자 프로필 '
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1174'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 0%
    1. UserManager API의 `findAuthorizables()` 방법 중 하나를 사용하여 기존 사용자가 이미 존재하지 않는지 확인
    1. UserManager API의 `createUser()` 방법 중 하나를 사용하여 사용자 레코드 생성
    1. Authorizable 인터페이스의 `setProperty()` 방법을 사용하여 캡처된 프로필 데이터 유지
-1. 선택적 플로우(예: 사용자에게 이메일 유효성 확인 요구)
+1. 선택적 플로우 (예: 사용자에게 이메일 유효성 확인 요구)
 
 ### 외부 {#external-managed-registration}
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 다음과 같은 두 가지 접근 방식을 통해 로그인을 구현할 수 있습니다.
 
-### AEM 관리 {#aem-managed-implementation}
+### AEM Managed {#aem-managed-implementation}
 
 고객은 사용자 정의 구성 요소를 작성할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 
@@ -102,7 +102,7 @@ AEM as a Cloud Service에서는 쿠키 기반의 고정 세션이 활성화되�
 
 프로필 속성을 검색하기 위해 서드파티 서비스에 실시간으로 액세스할 수 있지만, 이것이 AEM에서의 요청 처리에 물리적으로 영향을 미치지 않도록 해야 합니다.
 
-## 권한(폐쇄형 사용자 그룹) {#permissions-closed-user-groups}
+## 권한 (폐쇄형 사용자 그룹) {#permissions-closed-user-groups}
 
 폐쇄형 사용자 그룹(CUG)이라고도 하는 게시 계층 액세스 정책은 [여기에 설명된 대로](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ko#applying-your-closed-user-group-to-content-pages) AEM 작성자에 정의되어 있습니다. 일부 사용자로부터 웹 사이트의 특정 섹션 또는 페이지를 제한하려면 여기에 설명된 대로 AEM 작성자를 사용하여 필요에 따라 CUG를 적용한 다음 게시 계층에 복제하십시오.
 
