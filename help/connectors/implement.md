@@ -3,9 +3,9 @@ title: AEM 커넥터 구현
 description: AEM 커넥터 구현
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '968'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM은 혁신적인 웹 경험 관리 솔루션으로, 다양한 잠재적 통�
 
 * 외부 시스템에서 AEM으로 데이터 가져오기 예: CRM에서 연락처 정보를 가져와 AEM 기반 웹 사이트를 방문하는 더 많은 대상자가 이를 사용할 수 있도록 지원 구현은 컨테이너가 다운되더라도 작업이 실행될 수 있도록 하는 Sling의 [예정된 작업](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)을 사용해야 합니다. 코드는 작업이 잠재적으로 한 번 이상 트리거될 수 있음을 가정하고 설계되어야 합니다.
 * AEM에서 외부 시스템으로 데이터 가져오기 예: AEM 기반 웹 사이트에서 CRM으로 제출된 뉴스레터 구독 설정
-* AEM에서 에셋 검색 예: AEM Assets에 저장된 에셋을 참조하는 외부 콘텐츠 관리 시스템(CMS) 또 다른 예: AEM Assets의 이미지에 연결된 PIM 시스템
+* AEM에서 에셋 검색 예: AEM Assets에 저장된 에셋을 참조하는 외부 콘텐츠 관리 시스템 (CMS) 또 다른 예: AEM Assets의 이미지에 연결된 PIM 시스템
 * AEM 인프라에 에셋 저장 예: AEM Assets에 승인된 에셋을 저장하는 마케팅 리소스 관리(MRM) 시스템
 * 사용자 정의 UI 구성 요소 구성 및 렌더링 예: 작성자가 비디오 구성 요소를 드래그하여 놓고 특정 비디오를 라이브 사이트에서 재생하도록 구성할 수 있도록 허용
 * 파트너 서비스를 통해 에셋을 사용하여 작업 예: 페이지가 게시될 때 에셋을 비디오 플랫폼에 전송
