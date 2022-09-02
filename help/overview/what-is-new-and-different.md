@@ -3,9 +3,9 @@ title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Serv
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1903'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,19 +67,19 @@ ht-degree: 93%
 
 ## AEM 업데이트 {#aem-updates}
 
-이제 AEM as a Cloud Service에서는 CI/CD(지속적 통합 및 지속적 전달)를 사용하여 프로젝트가 최신 AEM 버전을 사용하고 있는지 확인합니다. 즉, 프로덕션 및 스테이징 인스턴스가 사용자를 위한 서비스를 중단 없이 최신 AEM 버전으로 업데이트됩니다.
+AEM as a Cloud Service는 이제 지속적인 통합 및 연속 제공(CI/CD)을 사용하여 프로젝트를 가장 최신 AEM 버전에서 작업할 수 있도록 해 줍니다. 이는 사용자에 대한 서비스 중단 없이 프로덕션 및 스테이징 인스턴스가 최신 AEM 버전으로 업데이트됨을 의미합니다.
 
 >[!NOTE]
 >
->프로덕션 환경에 대한 업데이트가 실패하면 Cloud Manager는 자동으로 스테이징 환경을 롤백합니다. 이 작업은 업데이트가 완료된 후 스테이징과 프로덕션 환경이 모두 동일한 AEM 버전을 사용하도록 자동으로 수행됩니다.
+>프로덕션 환경 업데이트에 실패하는 경우 Cloud Manager에서 자동으로 스테이징 환경을 롤백합니다. 이 작업은 업데이트가 완료된 후 스테이징 및 프로덕션 환경이 동일한 AEM 버전에 있도록 자동으로 수행됩니다.
 
-AEM 버전 업데이트에는 두 가지 유형이 있습니다.
+AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다.
 
-* **AEM 유지 관리 업데이트**
+* **AEM 유지 보수 업데이트**
 
    * 일별로 릴리스될 수 있습니다.
-   * 최신 버그 수정 및 보안 업데이트를 포함하여 대부분의 경우 유지 관리를 목적으로 합니다.
-   * 변경 사항이 정기적으로 적용되므로 영향을 최소화할 수 있습니다.
+   * 대부분 유지 관리 목적이며, 최신 버그 수정 및 보안 업데이트가 여기에 포함됩니다.
+   * 변경 사항이 정기적으로 적용되므로 최소한의 영향만 미치게 됩니다.
 
 * **새로운 기능 업데이트**
 
@@ -107,7 +107,7 @@ Cloud Manager의 특징은 다음과 같습니다.
 
 * 고객 라이선싱 계약
 
-* 내부 발생 요소(AEM as a Cloud Service를 강화 또는 교육용으로 사용하는 경우)
+* 내부 발생 요소 (AEM as a Cloud Service를 강화 또는 교육용으로 사용하는 경우)
 
 * Adobe.com에서 시작된 체험판과 같은 외부 발생 프로세스
 
@@ -119,7 +119,7 @@ Cloud Manager는 다음과 같은 AEM as a Cloud Service의 주요 구성 요소
 
 * 고객 코드 및 관련 구성을 특정 환경에 배포하기 위한 파이프라인 생성 및 관리 자세한 내용은 [CI-CD 파이프라인 구성](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)을 참조하십시오.
 
-* 이들 구성 요소에 대한 중요 라이프사이클 이벤트 알림(예: 제품 업데이트)
+* 이들 구성 요소에 대한 중요 라이프사이클 이벤트 알림 (예: 제품 업데이트)
 
 Cloud Manager는 여러 지역 전역에 걸쳐 데이터센터에 환경을 생성합니다. CDN PoPs(Points of Presence)를 통해 전 세계 고객에게 짧은 지연 시간 내에 콘텐츠를 전송할 수 있습니다.
 
@@ -182,7 +182,7 @@ AEM as a Cloud Service에서는 OSGi 번들 및 관련 구성이 관리되는 �
 
 코드와 콘텐츠의 명확하게 분리되어 있으므로 개발자는 특정 프로세스를 사용하여 개발의 일부로 콘텐츠를 업데이트할 수 있습니다. 변경 가능한 콘텐츠의 일반적인 사용 사례는 다음과 같습니다.
 
-* 고객 프로젝트의 일부인 표준 *기본* 콘텐츠(예: 폴더, 템플릿, 워크플로 등)
+* 고객 프로젝트의 일부인 표준 *기본* 콘텐츠 (예: 폴더, 템플릿, 워크플로 등)
 
 * 검색 색인 정의
 
@@ -266,7 +266,7 @@ Assets 제품에는 클라우드에서의 차세대 에셋 프로세싱과 고�
 
 * [Adobe Experience Manager as a Cloud Service 소개](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service [아키텍처](/help/overview/architecture.md)
-* [AEM as a Cloud Service에 대한 주요 변경 내용(릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
+* [AEM as a Cloud Service에 대한 주요 변경 내용 (릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
 * [AEM Sites as a Cloud Service의 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 소개](/help/assets/overview.md)
