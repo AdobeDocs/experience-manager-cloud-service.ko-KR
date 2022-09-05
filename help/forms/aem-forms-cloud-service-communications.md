@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - 통신
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
+source-git-commit: 07b9118b8cfc27bc9e2bfa134fbb57c7ae2728ad
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '731'
+ht-degree: 1%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 * 템플릿에서 PDF 문서를 생성하고 여기에 데이터를 병합합니다.
 * XDP 파일 또는 PDF 문서에서 PS(PostScript), PCL(Printer Command Language), ZPL(Zebra Printing Language) 문서를 생성합니다.
-* PDF 문서 조합
-* PDF 문서 분해
+* PDF 문서를 어셈블합니다
+* PDF 문서를 디스어셈블합니다
 * 문서를 PDF/A 호환 문서로 변환
 * PDF/A 호환 문서 유효성 검사
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ### API 호출
 
-다음 [API 참조 설명서](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) 는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로 API 정의 파일도 제공합니다. .yaml 파일을 다운로드하여 postman에 업로드하여 API의 기능을 확인할 수 있습니다.
+다음 [API 참조 설명서](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) 는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로 API 정의 파일도 제공합니다. .yaml 파일을 다운로드하여 postman에 업로드하여 API의 기능을 확인할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
