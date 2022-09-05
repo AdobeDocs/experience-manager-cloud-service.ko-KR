@@ -1,13 +1,13 @@
 ---
-title: Markdown
+title: Markdown(자산 - 컨텐츠 조각)
 description: 컨텐츠 조각 편집기에서 Markdown 구문을 사용하여 헤드리스 컨텐츠를 쉽게 만들 수 있는 방법을 이해합니다.
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 90%
+source-wordcount: '525'
+ht-degree: 92%
 
 ---
 
@@ -165,7 +165,7 @@ ht-degree: 90%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-코드 범위를 나타내려면 백틱 따옴표(&amp;grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
+코드 범위를 나타내려면 백틱 따옴표(&grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
 
 예:
 
