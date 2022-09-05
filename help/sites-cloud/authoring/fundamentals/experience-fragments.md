@@ -2,8 +2,8 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0199291bf4c0bb938072e601a9d1cc6d2940d4f0
-workflow-type: ht
+source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
+workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 100%
 
@@ -313,7 +313,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 조각의 세부 사항을 볼 수 있습니다.
 
 1. 경험 조각의 위치로 이동합니다(조각 내에서 더 아래쪽 변형으로 이동하지는 마십시오.).
-세부 사항은 Target으로 내보내기의 세부 사항을 포함하여 **목록 보기**&#x200B;와 함께 **경험 조각** 콘솔의 모두 보기에 표시됩니다. <!--Details are shown in all views of the **Experience Fragments** console, with the **List View** including details of an [export to Target](/help/sites-administering/experience-fragments-target.md):-->
+Details are shown in all views of the **Experience Fragments** console, with the **List View**[ including details of an export to Target](/help/sites-cloud/integrating/integrating-adobe-target.md):
 
    ![경험 조각 세부 사항](/help/sites-cloud/authoring/assets/xf-15.png)
 
