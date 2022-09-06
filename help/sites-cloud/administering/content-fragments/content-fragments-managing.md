@@ -3,9 +3,9 @@ title: 콘텐츠 조각 관리
 description: 페이지 작성을 위해 또는 Headless 콘텐츠의 기반으로 콘텐츠 조각 콘솔을 사용하여 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1915'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,17 +37,17 @@ ht-degree: 95%
 >
 >콘텐츠 조각은 **에셋**&#x200B;으로 저장됩니다. 주로 **콘텐츠 조각** 콘솔에서 관리되지만 **에셋** 콘솔에서도 관리할 수 있습니다.
 
-## 컨텐츠 조각 콘솔 {#content-fragments-console}
+## 콘텐츠 조각 콘솔 {#content-fragments-console}
 
-컨텐츠 조각 콘솔에서는 조각 및 관련 작업에 직접 액세스할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+콘텐츠 조각 콘솔에서 조각 및 관련 작업에 직접 액세스할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 
-* [컨텐츠 조각 콘솔의 기초 구조 및 처리](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+* [콘텐츠 조각 콘솔의 기본 구조 및 처리](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
 
-* [컨텐츠 조각에 대해 제공된 정보](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+* [콘텐츠 조각에 대한 정보 제공](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
 
 * [콘텐츠 조각 콘솔의 콘텐츠 조각에 대한 작업](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
 
-* [컨텐츠 조각 콘솔에서 사용할 수 있는 열 사용자 지정](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+* [콘텐츠 조각 콘솔에서 사용 가능한 열 맞춤화](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
 
 * [콘텐츠 조각 콘솔에서 검색 및 필터링](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
@@ -288,11 +288,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 조각의 상위 참조 찾기 {#parent-references-fragment}
 
-상위 참조의 세부 사항은 **참조** 열 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+상위 참조에 대한 세부 정보는 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)의 **참조** 열에서 액세스할 수 있습니다.
 
 ## 조각의 언어 사본 찾기 {#language-copies-fragment}
 
-언어 사본 상세 정보는 **언어** 열 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+언어 사본에 대한 세부 정보는 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)의 **언어** 열에서 액세스할 수 있습니다.
 
 ## 콘텐츠 조각 타임라인 {#timeline-for-content-fragments}
 
@@ -304,13 +304,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 버전, 댓글 및 주석에 대한 정보 보기
 * 버전에 대한 작업
 
-   * **[이 버전으로 되돌리기](#reverting-to-a-version)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[이 버전으로 되돌리기](#reverting-to-a-version)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **[현재 항목에 비교](#comparing-fragment-versions)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[현재 항목에 비교](#comparing-fragment-versions)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **레이블** 및/또는 **댓글** 추가(기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **레이블** 및/또는 **댓글** 추가 (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **다른 버전으로 저장**(기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
+   * **다른 버전으로 저장** (기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
 
 * 주석에 대한 작업
 
@@ -341,9 +341,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 이 옵션을 선택하면 다음 항목이 열립니다.
 
-* **현재**(최신) 버전(왼쪽)
+* **현재** (최신) 버전 (왼쪽)
 
-* 선택한 버전 **v&lt;*x.y*>**(오른쪽)
+* 선택한 버전 **v&lt;*x.y*>** (오른쪽)
 
 이는 나란히 표시되며, 여기에서
 
