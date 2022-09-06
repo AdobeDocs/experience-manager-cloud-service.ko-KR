@@ -3,9 +3,9 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 7a7a3de89d02ac34d40a59e87cc049652730a72d
+source-git-commit: 58aee2ad24b38fd8abc197961adda524832d2614
 workflow-type: tm+mt
-source-wordcount: '3566'
+source-wordcount: '3596'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | 속성 | 설명 |
    |---|---|
-   | 회사 | Dynamic Media 계정의 이름입니다. Experience Manager에 하나의 Dynamic Media 계정이 있을 수 있습니다.<!-- CQDOC-19579 and CQDOC-19612 --><br>참조 - [Dynamic Media 회사 별칭 계정 구성](/help/assets/dynamic-media/dm-alias-account.md). |
+   | 회사 | Dynamic Media 계정의 이름입니다.<br>**중요 사항**: Experience Manager 인스턴스에서는 Cloud Services에서 하나의 Dynamic Media 구성만 지원됩니다. 두 개 이상의 구성을 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성은 _not_ Adobe이 지원하거나 권장합니다.<!-- CQDOC-19579 and CQDOC-19612 --><br>참조 - [Dynamic Media 회사 별칭 계정 구성](/help/assets/dynamic-media/dm-alias-account.md). |
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
    | 자산 게시 | 다음 세 가지 옵션 중에서 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**- 자산이 업로드되면 시스템이 자산을 수집하여 URL/포함 기능을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다.<br>**[!UICONTROL 활성화 시]** - URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**- 자산이 보안 미리 보기용으로만 자동 게시됩니다. 공용 도메인에서 전달을 위해 DMS7에 게시하지 않고 as a Cloud Service에 명시적으로 게시할 수도 있습니다. 나중에 이 옵션은 자산을 as a Cloud Service으로 게시하고 자산을 Dynamic Media에 게시하며 상호 배타적으로 게시하려고 합니다. 즉, 자산을 DMS7에 게시하여 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있습니다. 또는 미리 보기를 위해 Experience Manager as a Cloud Service에만 자산을 게시할 수 있습니다. 동일한 자산이 공용 도메인에 전달되도록 DMS7에 게시되지 않습니다. |
    | 보안 미리 보기 서버 | 보안 표현물 미리 보기 서버의 URL 경로를 지정할 수 있도록 해줍니다. 즉, 표현물이 생성되면 Experience Manager as a Cloud Service이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리는 Experience Manager as a Cloud Service 인스턴스로 다시 전송되지 않음).<br>회사의 서버나 특수 서버를 사용하기 위해 특별한 계획이 없는 한 Adobe은 이 설정을 지정된 대로 유지하는 것을 권장합니다. |
