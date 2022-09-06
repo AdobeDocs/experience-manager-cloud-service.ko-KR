@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,6 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
       >[!NOTE]
       >
       >나중에 게시/게시 취소를 취소하려면 [워크플로 콘솔](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)로 이동하여 해당 워크플로를 종료합니다.
-   
    ![게시 관리 옵션](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 계속하려면 **다음**&#x200B;을 클릭하십시오.
@@ -216,9 +215,9 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 ## 페이지 게시 취소 {#unpublishing-pages}
 
-페이지 게시를 취소하면 더 이상 읽을 수 없도록 페이지가 게시 환경에서 제거됩니다.
+페이지 게시를 취소하면 게시에서 해당 페이지가 제거됩니다. 또는 [미리 보기](/help/sites-cloud/authoring/fundamentals/previewing-content.md): 더 이상 독자가 사용할 수 없도록 환경.
 
-[게시와 유사한 방식으로](#publishing-pages) 하나 이상의 페이지에 대한 게시를 취소할 수 있습니다.
+다음 [게시와 유사한 방법](#publishing-pages), 원하는 대상에서 하나 이상의 페이지에 대한 게시를 취소할 수 있습니다.
 
 * [페이지 편집기에서](#unpublishing-from-the-editor)
 * [사이트 콘솔에서](#unpublishing-from-the-console)
@@ -245,6 +244,9 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
    >[!NOTE]
    >
    >나중에 게시/게시 취소를 취소하려면 [워크플로 콘솔](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)로 이동하여 해당 워크플로를 종료합니다.
+
+   >[!NOTE]
+   >만약 [미리 보기](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 환경을 선택할 수 있습니다 **대상** 게시 관리 중에
 
 1. 게시 취소를 완료하려면 [페이지를 게시](#manage-publication)하는 것처럼 마법사를 계속 사용하십시오.
 
