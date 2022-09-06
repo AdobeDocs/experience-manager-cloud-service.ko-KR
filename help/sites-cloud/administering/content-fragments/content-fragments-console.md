@@ -4,9 +4,9 @@ description: 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방�
 landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 중점을 두고 있지만 페이지 작성 시에도 사용되는 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '882'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 68%
 
 ![전역 탐색 - 콘텐츠 조각 콘솔](assets/cfc-global-navigation.png)
 
-## 콘솔의 기초 구조 및 처리 {#basic-structure-handling-content-fragments-console}
+## 콘솔의 기본 구조 및 처리 {#basic-structure-handling-content-fragments-console}
 
 **콘텐츠 조각**&#x200B;을 선택하면 새 탭에서 콘솔이 열립니다.
 
@@ -54,11 +54,11 @@ ht-degree: 68%
    * 선택한 트리 분기에 있는 모든 콘텐츠 조각 목록 표시:
       * 위치는 탐색 표시로 표시됩니다. 위치를 변경하는 데에도 사용할 수 있습니다.
       * 선택한 폴더의 콘텐츠 조각이 표시되고 모든 하위 폴더가 표시됩니다.:
-         * [다양한 정보 필드](#selectuse-available-columns) 컨텐츠 조각에서 링크를 제공하는 정보 필드에 따라 다음 작업을 수행할 수 있습니다.
-            * 편집기에서 해당 조각을 엽니다
+         * 콘텐츠 조각에 대한 [다양한 정보 필드](#selectuse-available-columns)에서 링크가 제공됩니다. 필드에 따라 다음 작업을 수행할 수 있습니다.
+            * 편집기에서 적절한 조각 열기
             * 참조에 대한 정보 표시
-            * 조각의 언어 버전에 대한 정보를 표시합니다
-         * 다음을 수행할 수 있습니다 [컨텐츠 조각을 하나 이상 선택하여 사용 가능한 작업을 표시합니다](#actions-selected-content-fragment)
+            * 조각의 언어 버전에 대한 정보 표시
+         * [하나 이상의 콘텐츠 조각을 선택하여 사용 가능한 작업을 표시](#actions-selected-content-fragment)할 수 있습니다.
       * 열 헤더를 선택하여 해당 열에 따라 테이블을 정렬할 수 있습니다. 오름차순과 내림차순 간을 전환하려면 다시 선택하십시오.
    * 새 콘텐츠 조각 **[만들기](#creating-new-content-fragment)**
    * 다양한 술어에 따라 콘텐츠 조각을 [필터링](#filtering-fragments)하고 나중에 사용할 수 있도록 해당 필터 저장
@@ -74,7 +74,7 @@ ht-degree: 68%
       >* 전역 탐색 창에서 바로 액세스
 
 
-## (선택된) 컨텐츠 조각에 대한 작업 {#actions-selected-content-fragment}
+## (선택한) 콘텐츠 조각 작업 {#actions-selected-content-fragment}
 
 특정 조각을 선택하면 해당 조각에 사용할 수 있는 작업에 초점을 둔 도구 모음이 열립니다. 여러 조각을 선택할 수도 있습니다. 그에 따라 작업 선택이 조정됩니다.
 
@@ -91,52 +91,52 @@ ht-degree: 68%
 >
 >게시, 게시 취소, 삭제, 이동, 이름 변경, 복사, 비동기 작업 트리거와 같은 작업입니다. AEM 비동기 작업 UI를 통해 해당 작업의 진행 상태를 모니터링할 수 있습니다.
 
-## 컨텐츠 조각에 대해 제공된 정보 {#information-content-fragments}
+## 콘텐츠 조각에 대한 정보 제공 {#information-content-fragments}
 
-콘솔의 기본/오른쪽 패널(표 보기)에는 컨텐츠 조각에 대한 다양한 정보가 있습니다. 일부 항목에서는 추가 작업 및/또는 정보에 대한 직접 링크를 제공합니다.
+콘솔의 기본/오른쪽 패널(테이블 보기)에 콘텐츠 조각에 대한 다양한 정보가 표시됩니다. 일부 항목에서는 추가 작업 및/또는 정보로 직접 연결될 수도 있습니다.
 
 * **이름**
-   * 편집기에서 조각을 여는 링크를 제공합니다.
+   * 편집기에서 조각 열기 링크 제공.
 * **모델**
-   * 편집기에서 조각을 여는 링크를 제공합니다.
+   * 편집기에서 조각 열기 링크 제공.
 * **폴더**
-   * 콘솔에서 폴더를 여는 링크를 제공합니다.
+   * 콘솔에서 폴더 열기 링크 제공.
 폴더 이름에 마우스를 가져다 대면 JCR 경로가 표시됩니다.
 * **상태**
    * 정보만
 * **수정됨**
    * 정보만
-* **수정한 사람:**
+* **수정한 사람**
    * 정보만
-* **게시 위치**
+* **게시일**
    * 정보만
-* **게시자:**
+* **게시자**
    * 정보만
 * **참조자**
 
-   * 해당 조각의 모든 상위 참조를 나열하는 대화 상자를 여는 링크를 제공합니다. 컨텐츠 조각, 경험 조각 및 페이지 참조 포함. 특정 참조를 열려면 **제목** 클릭합니다.
+   * 해당 조각의 모든 상위 참조를 표시하는 대화 상자를 여는 링크가 제공됩니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다. 특정 참조를 열려면 대화 상자에서 **제목**&#x200B;을 클릭합니다.
 
-      ![컨텐츠 조각 콘솔 - 참조 대화 상자](assets/cfc-console-references-dialog.png)
+      ![콘텐츠 조각 콘솔 - 참조 대화 상자](assets/cfc-console-references-dialog.png)
 
 * **언어**
 
-   * 컨텐츠 조각의 로케일과 컨텐츠 조각과 연관된 총 로케일/언어 사본 수를 나타냅니다.
+   * 콘텐츠 조각과 관련된 총 로케일/언어 사본 수와 함께 콘텐츠 조각 로케일을 표시합니다.
 
-      ![컨텐츠 조각 콘솔 - 언어 표시기](assets/cfc-console-language-indicator.png)
+      ![콘텐츠 조각 콘솔 - 언어 표시기](assets/cfc-console-language-indicator.png)
 
-      * 카운트를 클릭/탭하여 모든 언어 사본을 표시하는 대화 상자를 엽니다. 특정 언어 사본을 열려면 **제목** 클릭합니다.
+      * 개수를 클릭/탭하여 모든 언어 사본을 표시하는 대화 상자를 엽니다. 특정 언어 사본을 열려면 대화 상자에서 **제목**&#x200B;을 클릭합니다.
 
-         ![컨텐츠 조각 콘솔 - 언어 대화 상자](assets/cfc-console-languages-dialog.png)
+         ![콘텐츠 조각 콘솔 - 언어 대화 상자](assets/cfc-console-languages-dialog.png)
 
 ## 사용 가능한 열 선택 {#select-available-columns}
 
-다른 콘솔과 마찬가지로 표시되는 열을 구성할 수 있으며 작업을 수행할 수 있습니다.
+다른 콘솔과 마찬가지로 다음 작업에 표시된 열을 구성할 수 있습니다.
 
-![컨텐츠 조각 콘솔 - 열 구성](assets/cfc-console-column-icon.png)
+![콘텐츠 조각 콘솔 - 열 구성](assets/cfc-console-column-icon.png)
 
-숨기거나 표시할 수 있는 열 목록이 표시됩니다.
+숨기거나 표시할 수 있는 열 목록이 나타납니다.
 
-![컨텐츠 조각 콘솔 - 열 구성](assets/cfc-console-column-selection.png)
+![콘텐츠 조각 콘솔 - 열 구성](assets/cfc-console-column-selection.png)
 
 ## 새 콘텐츠 조각 만들기 {#creating-new-content-fragment}
 
