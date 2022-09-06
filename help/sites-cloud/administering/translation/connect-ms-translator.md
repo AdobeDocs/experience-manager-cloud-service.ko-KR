@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 | 속성 | 설명 |
 |---|---|
 | 번역 레이블 | 번역 서비스의 표시 이름 |
-| 번역 속성 | (선택 사항) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성(예: `Translations by Microsoft`) |
+| 번역 속성 | (선택 사항) 사용자 생성 콘텐츠의 경우, 번역된 텍스트 옆에 표시되는 속성 (예: `Translations by Microsoft`) |
 | 작업 영역 ID | (선택 사항) 사용할 맞춤화된 Microsoft Translator 엔진의 ID |
 | 구독 키 | Microsoft Translator에 대한 Microsoft 구독 키 |
 
