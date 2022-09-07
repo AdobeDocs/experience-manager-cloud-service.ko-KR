@@ -3,9 +3,9 @@ title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2992'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -110,23 +110,23 @@ ht-degree: 97%
 
 ![여러 워크플로 알림](/help/sites-cloud/authoring/assets/editing-workflow-notification-multiple.png)
 
-## 구성 요소 자리표시자 {#component-placeholder}
+## 구성 요소 플레이스홀더 {#component-placeholder}
 
-구성 요소 자리 표시자는 구성 요소를 놓을 때 배치될 위치를 보여 주는 표시기입니다(현재 마우스로 가리키고 있는 구성 요소 위에 있음).
+구성 요소 플레이스홀더는 구성 요소를 놓을 때 배치될 위치를 보여 주는 표시기입니다(현재 마우스로 가리키고 있는 구성 요소 위에 있음).
 
 * 페이지에 새 구성 요소를 추가할 때(구성 요소 브라우저로부터 끌기):
 
-   ![페이지에 새 구성 요소를 추가할 때의 자리 표시자](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+   ![페이지에 새 구성 요소를 추가할 때의 플레이스홀더](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
 * 기존 구성 요소를 이동할 때:
 
-   ![페이지에서 기존 구성 요소를 이동할 때의 자리 표시자](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+   ![페이지에서 기존 구성 요소를 이동할 때의 플레이스홀더](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## 구성 요소 삽입 {#inserting-a-component}
 
 ### 구성 요소 브라우저에서 구성 요소 삽입 {#inserting-a-component-from-the-components-browser}
 
-[구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. [구성 요소 자리 표시자](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다:
+[구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
 1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)를 엽니다.
@@ -166,7 +166,7 @@ ht-degree: 97%
 
 1. 페이지가 [**편집** 모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)인지 확인합니다.
 1. [에셋 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)를 엽니다.
-1. 필요한 에셋을 필요한 위치로 끕니다. [구성 요소 자리 표시자](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
+1. 필요한 에셋을 필요한 위치로 끕니다. [구성 요소 플레이스홀더](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
    에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 에셋이 포함됩니다.
 
@@ -271,7 +271,7 @@ ht-degree: 97%
 
 ### 구성 요소 편집 대화 상자 {#component-edit-dialog}
 
-[구성 요소 도구 모음의 편집(연필) 아이콘](#component-toolbar)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
+[구성 요소 도구 모음의 편집(연필) 아이콘](#component-toolbar)을 사용하여 콘텐츠를 편집할 구성 요소를 열 수 있습니다.
 
 정확한 편집 옵션은 구성 요소에 따라 다릅니다. 일부 구성 요소의 경우 [모든 작업이 전체 화면 모드에서만 사용](#edit-content-full-screen-mode)할 수 있습니다. 예:
 
@@ -466,7 +466,7 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
 
 >[!CAUTION]
 >
->사용자를 가장할 때 페이지 잠금이 수행될 수 있습니다. 그러나 이 방법으로 잠긴 페이지는 가장된 사용자 또는 관리자 권한이 있는 사용자(AEM Administrator IMS 프로필의 구성원)가 잠글 수 있습니다.
+>사용자를 가장할 때 페이지 잠금이 수행될 수 있습니다. 단, 이 방법으로 잠긴 페이지는 가장한 사용자나 관리자 권한을 가진 사용자(AEM 관리자 IMS 프로필의 멤버)만 잠금 해제할 수 있습니다.
 >
 >페이지를 잠근 사용자를 가장하는 것으로는 페이지 잠금을 해제할 수 없습니다.
 <!--
@@ -483,7 +483,7 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
 
 >[!CAUTION]
 >
->사용자를 가장할 때 페이지 잠금이 수행될 수 있습니다. 그러나 이 방법으로 잠긴 페이지는 가장된 사용자 또는 관리자 권한이 있는 사용자(AEM Administrator IMS 프로필의 구성원)가 잠글 수 있습니다.
+>사용자를 가장할 때 페이지 잠금이 수행될 수 있습니다. 단, 이 방법으로 잠긴 페이지는 가장한 사용자나 관리자 권한을 가진 사용자(AEM 관리자 IMS 프로필의 멤버)만 잠금 해제할 수 있습니다.
 >
 >페이지를 잠근 사용자를 가장하는 것으로는 페이지 잠금을 해제할 수 없습니다.
 <!--
