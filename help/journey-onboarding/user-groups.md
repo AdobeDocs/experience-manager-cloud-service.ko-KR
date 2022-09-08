@@ -3,7 +3,7 @@ title: 알림에 대한 사용자 그룹
 description: Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수신 기능을 관리하는 방법을 알아봅니다.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
+source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수
 
 1. 을(를) 선택합니다 **사용자** 위쪽 탐색에서 tab 키를 누른 다음 을 선택합니다 **사용자 추가**.
 
-![사용자](assets/cloud_manager_add_user.png)
+   ![사용자](assets/cloud_manager_add_user.png)
 
 1. 에서 **팀에 사용자 추가** 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다.
 
