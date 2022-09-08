@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Cloud Manager 2022.8.0의 릴리스 노트
-description: 다음은 AEM as a Cloud Service의 Cloud Manager 2022.8.0에 대한 릴리스 노트입니다.
+title: Adobe Experience Manager as a Cloud Service Cloud Manager 2022.9.0의 릴리스 노트
+description: 다음은 AEM as a Cloud Service의 Cloud Manager 2022.9.0에 대한 릴리스 노트입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
+source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 7%
+source-wordcount: '212'
+ht-degree: 2%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service Cloud Manager 2022.8.0의 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service Cloud Manager 2022.9.0의 릴리스 노트 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2022.8.0에 대한 릴리스 노트를 문서화합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2022.9.0에 대한 릴리스 노트를 문서화합니다.
 
 >[!NOTE]
 >
@@ -21,16 +21,16 @@ ht-degree: 7%
 
 ## 릴리스 날짜 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 릴리스 2022.8.0의 릴리스 날짜는 2022년 8월 11일입니다. 다음 릴리스는 2022년 9월 9일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 릴리스 2022.9.0의 릴리스 날짜는 2022년 9월 8일입니다. 다음 릴리스는 2022년 10월 6일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 에는 새로 고친 UI 경험이 있습니다 [환경 추가 워크플로우.](/help/implementing/cloud-manager/manage-environments.md)
-* [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) cloud Manager에 포함된 가 버전 37으로 업데이트되었습니다.
+* 이제 샌드박스 프로그램에서 셀프 서비스 방식으로 AEM 안내서를 구성할 수 있습니다.
+* Cloud Manager 역할이 없는 고객은 프로그램 세부 사항에 액세스할 수 없습니다. 그러나 Cloud Manager 랜딩 페이지에서 작성자 끝점(Author end point)으로 이동할 수 있습니다.
+* 고객은 다음을 설정할 수 있습니다 **사고 및 사전 알림** Adobe에서 해당 AEMaaCS 애플리케이션과 관련된 장애나 권장 사항에 대해 들을 수 있는 그룹입니다.
+* UI에서 프로그램 추가 기능을 사용하면 권한 또는 자격 관련 이유로 인해 비활성화될 때 일관되게 도구 설명이 제공됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* Cloud Manager UI에서 New Relic 사용자를 만들거나 삭제하지 않은 문제가 수정되었습니다.
-* 자주 사용하지 않는 저장소 생성 오류가 발생하는 경우가 더 탄력적으로 되었습니다.
-* 이제 다시 시도 도입으로 인해 VSTS 조직 설정 오류가 거의 발생하지 않습니다.
-* 이제 New Relic 하위 계정 사용자 생성 중에 유효성 검사가 개선되어 특정 오류가 방지됩니다.
+* 환경 추가 워크플로우에는 성공적인 결과를 보장하는 추가 유효성 검사가 포함되어 있습니다.
+* maven이 개인 보고서에 대한 연결 문제가 발생할 때 customer AEM 앱 빌드와 관련된 고객 피드백이 개선되었습니다.
