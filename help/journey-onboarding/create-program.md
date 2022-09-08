@@ -2,13 +2,13 @@
 title: 프로그램 제작
 description: Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 방법을 알아봅니다.
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
+source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 2%
+source-wordcount: '648'
+ht-degree: 4%
 
 ---
-
 
 # 프로그램 제작 {#create-program}
 
@@ -39,11 +39,15 @@ Cloud Manager 프로그램은 Cloud Manager 환경 세트를 나타냅니다. �
 
 다른 용도로 사용되기 때문에 다른 환경에 다른 옵션이 있습니다. 하지만 만드는 과정은 비슷합니다. 이 온보딩 여정을 위해 샌드박스 환경을 만듭니다.
 
+>[!NOTE]
+>
+>기본적으로 AEM 환경에 액세스할 수 있는 사용자도 Cloud >Manager 사용자 역할을 갖습니다. 의 이 역할 자체는 사용자에게 프로그램 세부 사항 보기에 대한 액세스 권한을 제공하기에 충분하지 않습니다. 이러한 Cloud Manager 사용자 역할만 있는 사용자는 프로그램 메뉴 옵션을 통해 AEM 환경 작성자 URL로 이동할 수 있습니다(환경이 있는 경우). 이러한 사용자는 프로그램 수준 액세스 권한을 얻으려면 관리자에게 문의해야 합니다.
+
 ## 샌드박스 프로그램 만들기 {#create-sandbox}
 
 다음 단계에 따라 샌드박스 프로그램을 만듭니다.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. Cloud Manager의 랜딩 페이지에서 클릭 **프로그램 추가** 화면 오른쪽 상단 모서리에서 을(를) 클릭합니다.
 
