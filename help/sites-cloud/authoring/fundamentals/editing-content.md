@@ -2,10 +2,10 @@
 title: 페이지 콘텐츠 편집
 description: 페이지를 생성하면 콘텐츠를 편집하여 필요한 업데이트를 수행할 수 있습니다.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
-workflow-type: ht
-source-wordcount: '2992'
-ht-degree: 100%
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
+workflow-type: tm+mt
+source-wordcount: '3019'
+ht-degree: 96%
 
 ---
 
@@ -271,7 +271,7 @@ ht-degree: 100%
 
 ### 구성 요소 편집 대화 상자 {#component-edit-dialog}
 
-[구성 요소 도구 모음의 편집(연필) 아이콘](#component-toolbar)을 사용하여 콘텐츠를 편집할 구성 요소를 열 수 있습니다.
+[구성 요소 도구 모음의 편집(연필) 아이콘](#component-toolbar)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
 
 정확한 편집 옵션은 구성 요소에 따라 다릅니다. 일부 구성 요소의 경우 [모든 작업이 전체 화면 모드에서만 사용](#edit-content-full-screen-mode)할 수 있습니다. 예:
 
@@ -466,12 +466,11 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
 
 >[!CAUTION]
 >
->사용자를 가장할 때 페이지 잠금이 수행될 수 있습니다. 단, 이 방법으로 잠긴 페이지는 가장한 사용자나 관리자 권한을 가진 사용자(AEM 관리자 IMS 프로필의 멤버)만 잠금 해제할 수 있습니다.
+>사용자를 가장할 때 페이지 잠금이 수행될 수 있습니다. 그러나 이 방법으로 잠긴 페이지는 가장된 사용자를 사용해야 (고객이) 잠금을 해제할 수 있습니다.
 >
 >페이지를 잠근 사용자를 가장하는 것으로는 페이지 잠금을 해제할 수 없습니다.
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>
+>페이지를 잠근 사용자가 페이지의 잠금을 해제할 수 없는 경우 고객 지원 센터에 문의하여 잠금을 제거하는 옵션을 평가하십시오.
 
 ## 페이지 잠금 해제 {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ AEM에서는 다른 사람이 콘텐츠를 수정할 수 없도록 페이지를 
 
 >[!CAUTION]
 >
->사용자를 가장할 때 페이지 잠금이 수행될 수 있습니다. 단, 이 방법으로 잠긴 페이지는 가장한 사용자나 관리자 권한을 가진 사용자(AEM 관리자 IMS 프로필의 멤버)만 잠금 해제할 수 있습니다.
+>사용자를 가장할 때 페이지 잠금이 수행될 수 있습니다. 그러나 이 방법으로 잠긴 페이지는 가장된 사용자를 사용하여 잠글 수 있습니다(고객이).
 >
 >페이지를 잠근 사용자를 가장하는 것으로는 페이지 잠금을 해제할 수 없습니다.
+>
+>페이지를 잠근 사용자가 페이지의 잠금을 해제할 수 없는 경우 고객 지원 센터에 문의하여 잠금을 제거하는 옵션을 평가하십시오.
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
