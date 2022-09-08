@@ -2,9 +2,9 @@
 title: Go-Live
 description: 코드와 컨텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
+source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -153,6 +153,7 @@ AEM 소스의 부하가 추출 단계 중에 더 크게 된다는 것을 기억�
       * 매우 높은 TTL을 갖는 경우 DNS 레코드에 대한 업데이트를 전파하는 데 시간이 오래 걸립니다.
 * 비즈니스 요구 사항 및 목표를 충족하는 성능 및 보안 테스트를 실행합니다.
 * 마우스를 가져간 후 새 배포나 콘텐츠 업데이트 없이 실제 Go-Live가 수행되었는지 확인합니다.
+* Admin Console 사용자 알림 그룹을 만듭니다. 자세한 내용은 [알림에 대한 사용자 그룹](/help/journey-onboarding/user-groups.md)
 
 마이그레이션을 수행하는 동안 작업을 재조정해야 하는 경우 언제든지 목록을 참조할 수 있습니다.
 
