@@ -3,7 +3,7 @@ title: 알림에 대한 사용자 그룹
 description: Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수신 기능을 관리하는 방법을 알아봅니다.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: a663e21d100953f87c012a1d7962fb0e88e6a7f2
+source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -49,17 +49,17 @@ Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수
 
    ![사용자 그룹 만들기](assets/cloud_manager_profiles.png)
 
-1. 새 프로필 을 클릭하고 다음 세부 정보를 제공합니다.
+1. 클릭 **새 프로필** 다음 세부 사항을 소개합니다.
 
-* 제품 프로필 이름: 인시던트 알림 - Cloud Service
-* 표시 이름: 인시던트 알림 - Cloud Service
-* 설명: 인시던트 중에 알림을 받을 사용자 또는 Adobe이 AEM as a Cloud Service 환경에서 잠재적인 가용성 문제를 확인한 사용자의 Cloud Manager 프로필입니다.
+   * 제품 프로필 이름: 인시던트 알림 - Cloud Service
+   * 표시 이름: 인시던트 알림 - Cloud Service
+   * 설명: 인시던트 중에 알림을 받을 사용자 또는 Adobe이 AEM as a Cloud Service 환경에서 잠재적인 가용성 문제를 확인한 사용자의 Cloud Manager 프로필입니다.
 
-1. 저장 을 클릭하고 다음 세부 정보를 사용하여 4단계를 반복합니다.
+1. 클릭 **저장** 다음 세부 사항을 사용하여 5단계를 반복합니다.
 
-* 제품 프로필 이름: 사전 알림 - Cloud Service
-* 표시 이름: 사전 알림 - Cloud Service
-* 설명: Adobe 지원 팀 구성원이 AEM as a Cloud Service 환경 구성으로 수행할 잠재적 최적화 또는 권장 사항에 대한 지침을 제공하려고 할 때 알림을 받을 사용자를 위한 Cloud Manager 프로필입니다.
+   * 제품 프로필 이름: 사전 알림 - Cloud Service
+   * 표시 이름: 사전 알림 - Cloud Service
+   * 설명: Adobe 지원 팀 구성원이 AEM as a Cloud Service 환경 구성으로 수행할 잠재적 최적화 또는 권장 사항에 대한 지침을 제공하려고 할 때 알림을 받을 사용자를 위한 Cloud Manager 프로필입니다.
 
 >[!NOTE]
 >
@@ -83,10 +83,10 @@ Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수
 
 ![사용자](assets/cloud_manager_add_user.png)
 
-1. 팀에 사용자 추가 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다.
+1. 에서 **팀에 사용자 추가** 대화 상자에서 추가할 사용자의 이메일 ID를 입력합니다.
 
-* 팀 구성원의 페더레이션 ID가 아직 설정되지 않은 경우 ID 유형에 대해 Adobe ID 을 선택합니다.
-* 사용자가 이미 존재하는 경우 7단계를 참조하십시오.
+   * 팀 구성원의 페더레이션 ID가 아직 설정되지 않은 경우 ID 유형에 대해 Adobe ID 을 선택합니다.
+   * 사용자가 이미 존재하는 경우 9단계를 참조하십시오.
 
 1. 아래의 더하기 단추를 클릭합니다. **제품 선택** 제품 선택을 시작하고 을(를) 선택합니다. **Adobe Experience Manager as a Cloud Service** 다음 중 하나를 지정합니다. **인시던트 알림 - Cloud Service** 또는 **사전 알림 - Cloud Service**&#x200B;또는 둘 다 사용자에게 할당할 수 있습니다.
 
@@ -96,7 +96,7 @@ Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수
 
 1. 사용자가 이미 존재하는 경우 사용자의 이름을 검색하고 다음을 수행합니다.
 
-* 사용자 이름을 클릭합니다.
-* 에서 **제품** 섹션을 클릭합니다. **편집**.
-* 연필 단추를 클릭합니다. **제품 선택** 제품 선택을 시작하고 을(를) 선택합니다. **Adobe Experience Manager as a Cloud Service** 다음 중 하나를 지정합니다. **인시던트 알림 - Cloud Service** 또는 **사전 알림 - Cloud Service**&#x200B;또는 둘 다 사용자에게 할당할 수 있습니다.
-* 클릭 **저장** 추가한 사용자에게 환영 이메일이 전송됩니다. 이제 초대된 사용자가 알림을 받게 됩니다.
+   * 사용자 이름을 클릭합니다.
+   * 에서 **제품** 섹션을 클릭합니다. **편집**.
+   * 연필 단추를 클릭합니다. **제품 선택** 제품 선택을 시작하고 을(를) 선택합니다. **Adobe Experience Manager as a Cloud Service** 다음 중 하나를 지정합니다. **인시던트 알림 - Cloud Service** 또는 **사전 알림 - Cloud Service**&#x200B;또는 둘 다 사용자에게 할당할 수 있습니다.
+   * 클릭 **저장** 추가한 사용자에게 환영 이메일이 전송됩니다. 이제 초대된 사용자가 알림을 받게 됩니다.
