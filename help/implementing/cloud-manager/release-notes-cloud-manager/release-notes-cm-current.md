@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service Cloud Manager 2022.9.0의 릴
 description: 다음은 AEM as a Cloud Service의 Cloud Manager 2022.9.0에 대한 릴리스 노트입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: f7f4f1c81b1dd611b723514b8c06aad6909a73c1
+source-git-commit: 4c04ab85f8760b9f72f7540b991edc7691995f66
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '220'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service의 Cloud Manager 릴리스 2022.9.0의 릴리스 날짜�
 
 * 이제 샌드박스 프로그램에서 셀프 서비스 방식으로 AEM 안내서를 구성할 수 있습니다.
 * Cloud Manager 역할이 없는 고객은 프로그램 세부 사항에 액세스할 수 없습니다. 그러나 Cloud Manager 랜딩 페이지에서 작성자 끝점(Author end point)으로 이동할 수 있습니다.
-* 고객은 다음을 설정할 수 있습니다 **사고 및 사전 알림** Adobe에서 해당 AEMaaCS 애플리케이션과 관련된 장애나 권장 사항에 대해 들을 수 있는 그룹입니다.
+* 고객은 다음을 설정할 수 있습니다 **사고 및 사전 알림** Adobe에서 해당 AEMaaCS 애플리케이션과 관련된 장애나 권장 사항에 대해 들을 수 있는 그룹입니다. 자세한 내용은 [알림에 대한 사용자 그룹](/help/journey-onboarding/user-groups.md) 자세한 내용
 * UI에서 프로그램 추가 기능을 사용하면 권한 또는 자격 관련 이유로 인해 비활성화될 때 일관되게 도구 설명이 제공됩니다.
 
 ## 버그 수정 {#bug-fixes}
