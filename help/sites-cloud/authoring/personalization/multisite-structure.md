@@ -3,7 +3,7 @@ title: 타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식
 description: 다이어그램은 타겟팅된 콘텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여 줍니다.
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 

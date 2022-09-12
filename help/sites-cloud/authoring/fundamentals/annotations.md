@@ -3,7 +3,7 @@ title: 페이지 주석 추가
 description: 주석 모드를 사용해 콘텐츠 검토 프로세스를 지원하기 위해 스티커 메모를 사용하듯이 페이지에 주석 및 스케치를 남깁니다.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 100%
 
@@ -129,7 +129,7 @@ ht-degree: 100%
 
 ## 기타 리소스에 주석 달기 {#annotating-other-resources}
 
-구성 요소 외에, 다양한 리소스에 주석을 달 수 있습니다.
+구성 요소 외에도 다양한 리소스에 주석을 달 수 있습니다.
 
 * 에셋에 주석 달기 [에셋에 주석 달기](/help/assets/manage-digital-assets.md#annotating)
 * 비디오 에셋에 주석 달기 [비디오 에셋에 주석 달기](/help/assets/manage-video-assets.md#annotate-video-assets)

@@ -2,13 +2,13 @@
 title: Adobe Experience Manager as a Cloud Service Cloud Manager 2022.6.0의 릴리스 노트
 description: 다음은 AEM as a Cloud Service의 Cloud Manager 2022.6.0에 대한 릴리스 노트입니다.
 feature: Release Information
-source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
+exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service Cloud Manager 2022.6.0의 릴리스 노트 {#release-notes}
 
@@ -41,4 +41,3 @@ AEM as a Cloud Service의 Cloud Manager 릴리스 2022.6.0의 출시일은 2022�
 * 다음 [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API는 더 이상 사용되지 않으며 [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) 을 대신 사용해야 합니다.
    * `List Programs` 계속 작동하지만 이 사용법은 로그에 경고 메시지를 생성합니다.
    * 3개월 이후에는 더 이상 지원되지 않습니다.
-

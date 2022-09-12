@@ -28,7 +28,7 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 자�
 1. 에서 **[!UICONTROL 메타데이터 가져오기]** 페이지를 클릭한 다음 **[!UICONTROL 파일 선택]**. Select the CSV file with the metadata.
 1. 다음 매개 변수를 제공합니다.
 
-   | 매개 변수 | 설명 |
+   | 매개변수 | 설명 |
    | ---------------------- | ------- |
    | 배치 크기 | 메타데이터를 가져올 일괄 처리의 자산 수입니다. 기본값은 50입니다. 최대값은 100입니다. |
    | 필드 분리 기호 | 기본값은 입니다. `,` (쉼표) 다른 문자를 지정할 수 있습니다. |
@@ -71,7 +71,7 @@ Adobe Experience Manager Assets를 사용하면 CSV 파일을 사용하여 자�
 1. 에서 **[!UICONTROL 내보낼 속성]** 필드에서 모든 속성을 내보내할지 특정 속성을 내보내할지를 지정합니다. 내보낼 선택적 속성 을 선택하는 경우 원하는 속성을 추가합니다.
 
 1. 도구 모음에서 탭/클릭 **[!UICONTROL 내보내기]**. 메타데이터가 내보내지는지 확인하는 메시지가 나타납니다. 메시지를 닫습니다.
-1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
+1. Open the inbox notification for the export job. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
 
    ![대량으로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자](assets/csv_download.png)
 

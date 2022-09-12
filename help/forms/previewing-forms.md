@@ -28,7 +28,7 @@ in [!DNL AEM Forms]저장소에 있는 양식 및 문서를 미리 볼 수 있�
 <table>
  <tbody>
   <tr>
-   <td><strong>자산 유형</strong><br /> </td>
+   <td><strong>에셋 유형</strong><br /> </td>
    <td><strong>사용 가능한 미리 보기 옵션</strong><br /> </td>
   </tr>
   <tr>

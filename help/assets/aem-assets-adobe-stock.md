@@ -8,7 +8,7 @@ exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
 source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
 source-wordcount: '2441'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -26,12 +26,12 @@ ht-degree: 13%
 
 **전제 조건**
 
-통합에는 다음이 필요합니다.
+통합하려면 다음 작업을 수행해야 합니다.
 
 * 실행 [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] 인스턴스
 * An [enterprise [!DNL Adobe Stock] 계획](https://stockenterprise.adobe.com/)
 * 기본 Stock 제품 프로필에 대한 Admin Console 권한이 있는 사용자
-* 개발자 콘솔에서 통합을 만들기 위해 개발자 액세스 프로필에 대한 권한이 있는 사용자
+* Adobe Developer 콘솔에서 통합을 만들기 위해 개발자 액세스 프로필에 대한 권한이 있는 사용자
 
 엔터프라이즈 [!DNL Adobe Stock] 계획,
 
@@ -111,7 +111,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 ### 공개 인증서 받기 {#public-certificate}
 
-공개 키(인증서)는 Adobe 개발자 콘솔에서 제품 프로필을 인증합니다.
+공개 키(인증서)는 Adobe Developer 콘솔에서 제품 프로필을 인증합니다.
 
 1. 에 로그인합니다. [!DNL Experience Manager Assets] 클라우드 인스턴스.
 
@@ -127,7 +127,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 그런 다음 **[!UICONTROL 확인]** 공개 키를 생성합니다.
 
-1. 을(를) 클릭합니다. **[!UICONTROL 공개 키 다운로드]** 아이콘을 클릭하고 공개 키(.crt) 파일을 컴퓨터에 저장합니다. 공개 키는 나중에 Brand Portal 테넌트에 대한 API를 구성하고 Adobe 개발자 콘솔에서 서비스 계정 자격 증명을 생성하는 데 사용됩니다.
+1. 을(를) 클릭합니다. **[!UICONTROL 공개 키 다운로드]** 아이콘을 클릭하고 공개 키(.crt) 파일을 컴퓨터에 저장합니다. 공개 키는 나중에 Brand Portal 테넌트에 대한 API를 구성하고 Adobe Developer 콘솔에서 서비스 계정 자격 증명을 생성하는 데 사용됩니다.
 
    **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
@@ -135,15 +135,15 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. 에서 **계정** 탭에서 서비스 계정 자격 증명이 필요한 Adobe IMS 계정이 만들어집니다.
 
-   새 탭을 열고 [Adobe 개발자 콘솔에서 서비스 계정(JWT) 연결 만들기](#createnewintegration).
+   새 탭을 열고 [Adobe Developer 콘솔에서 서비스 계정(JWT) 연결 만들기](#createnewintegration).
 
 ### 서비스 계정(JWT) 연결 만들기 {#createnewintegration}
 
-Adobe 개발자 콘솔에서 프로젝트 및 API는 조직 수준에서 구성됩니다. API를 구성하면 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 이 예에서는 서비스 계정 자격 증명이 공개 키를 업로드하여 생성됩니다.
+Adobe Developer 콘솔에서 프로젝트 및 API는 조직 수준에서 구성됩니다. API를 구성하면 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 이 예에서는 서비스 계정 자격 증명이 공개 키를 업로드하여 생성됩니다.
 
 서비스 계정 자격 증명과 JWT 페이로드를 생성하려면 다음을 수행합니다.
 
-1. 시스템 관리자 권한으로 Developer Console에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. 시스템 관리자 권한으로 Adobe Developer 콘솔에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    드롭다운(조직) 목록에서 올바른 IMS 조직(Stock entitlement)을 선택했는지 확인합니다.
@@ -219,7 +219,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
    사용자 [!DNL Experience Manager Assets] 이제 작성자 인스턴스가 [!DNL Adobe Stock]. 여러 항목을 만들 수 있습니다 [!DNL Adobe Stock] 구성(예: 로케일 기반 구성) 이제 액세스, 검색 및 라이선스를 제공할 수 있습니다 [!DNL Adobe Stock] 내 자산 [!DNL Experience Manager] 사용자 인터페이스.
 
@@ -266,7 +266,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. 을(를) 선택합니다 [!DNL Adobe Stock] 클라우드 구성 을 클릭하고 **[!UICONTROL 속성]**.
 
-1. 새로 만든 사용자 그룹을 [!DNL Adobe Stock] 구성. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. 새로 만든 사용자 그룹을 [!DNL Adobe Stock] 구성. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
    ![사용자 지정](assets/aem-stock-adduser.png)
 
@@ -313,10 +313,10 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 | 사용자 | 그룹 | 권한 | 사용자 기본 설정에서 Stock 구성 수락 | 자산 액세스 | Adobe Stock 액세스 |
 | --- | --- | --- | --- | --- | --- |
-| admin | 해당 없음 | 모든 | 해당 없음 | 예 | 예 |
+| admin | 해당 없음 | 모두 | 해당 없음 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 예 | 예 | 예 |
-| test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 아니오 | 오류: 데이터를 로드하지 못했습니다. | 아니오 |
-| test-doc1 | DAM 사용자 | **허용**: /conf/global/settings/stock **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니오 |
+| test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 아니요 | 오류: 데이터를 로드하지 못했습니다. | 아니요 |
+| test-doc1 | DAM 사용자 | **허용**: /conf/global/settings/stock **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니요 |
 
 ## 사용 및 관리 [!DNL Adobe Stock] 자산 [!DNL Experience Manager] {#usemanage}
 

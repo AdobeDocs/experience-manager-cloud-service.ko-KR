@@ -3,7 +3,7 @@ title: 페이지 비교
 description: 페이지 비교 기능을 사용하면 두 페이지를 둘 사이의 차이점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 100%
 

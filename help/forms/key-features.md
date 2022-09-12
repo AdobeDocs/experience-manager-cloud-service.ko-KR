@@ -1,6 +1,6 @@
 ---
-title: 'Adobe Experience Manager(AEM) Forms as a Cloud Service의 주요 기능 및 기능 '
-description: '"[!DNL AEM Forms] as a Cloud Service는 엔터프라이즈급 양식 및 비즈니스 프로세스를 생성하고, 관리하고, 게시하기 위한 플랫폼입니다."'
+title: Adobe Experience Manager(AEM) Forms as a Cloud Service의 주요 기능 및 기능
+description: "[!DNL AEM Forms] as a Cloud Service는 엔터프라이즈급 양식 및 비즈니스 프로세스를 생성하고, 관리하고, 게시하기 위한 플랫폼입니다."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
@@ -29,7 +29,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 * [픽셀 퍼펙트 PDF forms 만들기](use-forms-designer.md#create-an-adaptive-form) 거의 종이와 비슷하네요
 
-* 사용 [automated forms conversion 서비스](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko-KR) PDF 양식을 적응형 양식으로 전환하려면 다음을 수행하십시오. 조직의 데이터 캡처 경험을 디지털화하고 현대화할 수 있습니다.
+* 사용 [automated forms conversion 서비스](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ko) PDF 양식을 적응형 양식으로 전환하려면 다음을 수행하십시오. 조직의 데이터 캡처 경험을 디지털화하고 현대화할 수 있습니다.
 
    ![automated forms conversion 서비스](assets/pdf-to-adaptive-form-gitx50.gif)
 

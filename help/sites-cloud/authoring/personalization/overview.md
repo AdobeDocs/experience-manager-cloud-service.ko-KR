@@ -3,7 +3,7 @@ title: 개인화 및 콘텐츠 타겟팅
 description: AEM이 개인화된 콘텐츠를 만드는 방법
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 

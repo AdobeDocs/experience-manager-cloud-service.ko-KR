@@ -7,9 +7,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1218'
 ht-degree: 3%
 
 ---
@@ -27,9 +27,9 @@ ht-degree: 3%
 
 * 이 서비스는 콘텐츠만 마이그레이션하는 데 도움이 됩니다 [!DNL AEM Forms] OSGi 환경에서 사용할 수 있습니다. 다음에서 컨텐츠 마이그레이션 [!DNL AEM Forms] Cloud Service 환경에서 JEE의 는 지원되지 않습니다.
 
-* (AEM 6.3 Forms 또는 이전 버전 환경이 AEM 6.4 Forms 또는 AEM 6.5 Forms으로 업그레이드된 경우에만 해당) AEM 6.3 Forms 또는 이전 버전에서 사용할 수 있는 기본 템플릿 및 테마를 기반으로 하는 적응형 Forms은 [!DNL]에서 지원되지 않습니다 [!DNL AEM Forms]] as a Cloud Service 로
+* (AEM 6.3 Forms 또는 AEM 6.4 Forms 또는 AEM 6.5 Forms으로 업그레이드된 이전 버전 환경의 경우에만 해당) AEM 6.3 Forms 또는 이전 버전에서 사용할 수 있는 기본 템플릿 및 테마를 기반으로 하는 적응형 Forms은 지원되지 않습니다 [!DNL AEM Forms] as a Cloud Service.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 * [Forms 활성화 - 디지털 등록](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) Forms Cloud Service 프로그램 및 [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 ## 다양한 AEM Forms 관련 자산의 경로
 
 * **응용 Forms**: 에서 적응형 양식을 찾을 수 있습니다 `/content/dam/formsanddocuments/`및 /content/forms/af. 예를 들어 WKND Registration이라는 적응형 양식의 경우 경로를 추가합니다 `/content/dam/formsanddocuments/wknd-registration` 및 `/content/forms/af/wknd-registration`.
-* **양식 데이터 모드**: 모든 양식 데이터 모델은 `/content/dam/formsanddocuments-fdm`. 예, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
+* **양식 데이터 모드**: 모든 양식 데이터 모델은 `/content/dam/formsanddocuments-fdm`. (예: `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`)
 
 * **클라이언트 라이브러리**: 클라이언트 라이브러리의 기본 경로는 입니다. `/etc/clientlibs/fd/theme`.
 

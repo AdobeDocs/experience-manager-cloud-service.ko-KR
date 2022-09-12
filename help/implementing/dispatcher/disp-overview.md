@@ -1,6 +1,6 @@
 ---
 title: 클라우드의 디스패처
-description: '클라우드의 디스패처 '
+description: 클라우드의 디스패처
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 90a49312d4609c2de992a93926a329bf50861801

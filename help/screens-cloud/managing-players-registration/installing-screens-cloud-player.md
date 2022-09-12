@@ -86,6 +86,6 @@ AEM Screens 플레이어의 기본 재생 모니터링을 통해 다음을 수�
 
 * 이 지표는 아직 고객에게 완전히 노출되지 않았으며, 가까운 시일 내에 대시보드와 유사한 보고 및 경고 메커니즘을 사용하기 위해 노력하고 있습니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 플레이어를 클라우드 모드로 설치 및 구성했으므로 다음 번 문서를 검토하여 Screens as a Cloud Service 여정을 계속해야 합니다. [Screens의 플레이어 등록 as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) 스크린 서비스 공급자에서

@@ -2,7 +2,8 @@
 title: AEM as a Cloud Service 릴리스 2022.5.0의 마이그레이션 도구에 대한 릴리스 노트
 description: AEM as a Cloud Service 릴리스 2022.5.0의 마이그레이션 도구에 대한 릴리스 노트
 feature: Release Information
-source-git-commit: 6196f3fc67dbcfe03a71bb6a0796dd5d1d0f8546
+exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
+source-git-commit: 8b7427ff99343741f62c7d0f42a6c4b3ea19bcb3
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 5%

@@ -1,5 +1,5 @@
 ---
-title: '자산 가져오기 및 내보내기 '
+title: 자산 가져오기 및 내보내기
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: 적응형 Forms 및 관련 자산을 AEM 인스턴스로 가져오고 내보낼 수 있습니다. 따라서 양식을 마이그레이션하거나 시스템 간에 이동하는 데 도움이 됩니다.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
@@ -46,7 +46,7 @@ Forms 및 문서 자산을 다운로드하려면 다음을 수행하십시오.
    >
    >AEM 패키지와 이진 파일은 모두 보관 파일(.zip 파일)로 다운로드됩니다. 자산에 대한 템플릿은 자산과 함께 다운로드되지 않습니다. 자산 템플릿을 별도로 내보내야 합니다.
 
-### 자산 업로드 {#upload-forms-amp-documents-assets}
+### 에셋 업로드 {#upload-forms-amp-documents-assets}
 
 Forms 및 문서 자산을 업로드하려면
 

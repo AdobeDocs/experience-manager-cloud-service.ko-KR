@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0 릴리스의 릴리스 노트'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0 릴리스의 릴리스 노트'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.10.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.10.0 릴리스 정보입니다.'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -172,7 +172,7 @@ AEM as a Cloud Service 2021.10.0의 Cloud Manager 릴리스 날짜는 2021년 10
 
 * 도메인 이름 확인 후 배포 실패 오류가 발생하면 고객이 Adobe 담당자에게 문의하도록 오류 메시지가 수정되었습니다.
 
-## 모범 사례 분석기 {#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 릴리스 날짜 {#release-date-bpa-latest}
 

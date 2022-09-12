@@ -4,7 +4,7 @@ description: Adobe의 모범 사례 가이드라인에 기반하여 색인 및 �
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 100%
 

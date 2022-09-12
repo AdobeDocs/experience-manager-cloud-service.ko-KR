@@ -3,8 +3,8 @@ title: KPI 정렬
 description: KPI 정렬
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '483'
 ht-degree: 100%
 
 ---

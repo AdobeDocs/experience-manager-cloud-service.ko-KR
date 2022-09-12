@@ -5,7 +5,7 @@ exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -55,6 +55,6 @@ Screens 컨텐츠 공급자에 로그인하려면 아래 절차를 따르십시�
    * 채널
    * 위치
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 스크린 컨텐츠 제공업체로 이동하는 방법을 배웠으며, 다음 번에 문서를 검토하여 스크린 as a Cloud Service 여정을 계속해야 합니다. [화면에서 프로젝트 생성 및 관리 as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).

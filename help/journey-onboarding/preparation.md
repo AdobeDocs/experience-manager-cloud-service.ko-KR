@@ -1,13 +1,13 @@
 ---
 title: 온보딩 준비
 description: 온보딩 프로세스가 시작되기 전에 시스템 관리자가 시스템에 로그인하기 전에 알고 있어야 하는 몇 가지 또는 준비 단계가 있습니다.
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 온보딩 준비 {#onboarding-preparation}
 

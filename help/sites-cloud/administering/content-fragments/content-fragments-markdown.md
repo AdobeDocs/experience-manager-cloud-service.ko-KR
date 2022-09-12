@@ -3,7 +3,7 @@ title: Markdown
 description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 손쉽게 페이지 작성 및 Headless 전달에 필요한 콘텐츠를 만들 수 있도록 하는 방법을 이해합니다.
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
 

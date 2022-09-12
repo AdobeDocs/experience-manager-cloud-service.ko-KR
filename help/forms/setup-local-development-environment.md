@@ -65,7 +65,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
 -->
 
-## 전제 조건
+## 사전 요구 사항
 
 로컬 개발 환경을 설정하려면 다음 소프트웨어가 필요합니다. 로컬 개발 환경 설정을 시작하기 전에 다음 코드를 다운로드하십시오.
 
@@ -293,7 +293,7 @@ Dispatcher 설정에 대한 자세한 지침은 [로컬 Dispatcher 도구 설정
 다음 단계를 수행하여 Experience Manager Forms as a Cloud Service에 대한 Dispatcher 캐시를 구성합니다.
 
 1. AEM 프로젝트를 열고 다음 위치로 이동합니다. `\src\conf.dispatcher.d\available_farms`
-1. 의 사본 만들기 `default.farm` 파일. 예, `forms.farm`.
+1. 의 사본 만들기 `default.farm` 파일. (예: `forms.farm`)
 1. 새로 만든 `forms.farm` 파일을 편집하고 다음 코드를 바꿉니다.
 
    ```json

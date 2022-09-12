@@ -1,6 +1,6 @@
 ---
 title: 여러 단계 양식 시퀀스를 만드는 방법
-description: '사용 [!DNL Experience Manager Forms]로 지정하는 경우 사용자가 적응형 양식을 탐색하고 채울 수 있도록 양식 패널 시퀀스를 정의할 수 있습니다. 사용 사례 접근 방식을 예로 들어 여러 단계로 구성된 양식 시퀀스를 만들어 보다 깊이 있게 살펴보십시오. '
+description: 사용 [!DNL Experience Manager Forms]로 지정하는 경우 사용자가 적응형 양식을 탐색하고 채울 수 있도록 양식 패널 시퀀스를 정의할 수 있습니다. 사용 사례 접근 방식을 예로 들어 여러 단계로 구성된 양식 시퀀스를 만들어 보다 깊이 있게 살펴보십시오.
 feature: Adaptive Forms
 role: User
 level: Intermediate

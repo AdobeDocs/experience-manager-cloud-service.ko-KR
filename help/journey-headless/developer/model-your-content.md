@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 의 이 부분에서 [AEM Headless Developer 여정](overview.md)를 통해 컨텐츠 구조를 모델링하는 방법을 배울 수 있습니다. 그런 다음 컨텐츠 조각 모델 및 컨텐츠 조각을 사용하여 AEM(Adobe Experience Manager)의 구조를 사용하여 여러 채널에서 재사용할 수 있습니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 시작 시 [CMS 헤드리스 개발에 대해 알아보기](learn-about.md) 헤드리스 콘텐츠 전달 및 사용해야 하는 이유를 다룹니다. Then [AEM Headless as a Cloud Service 시작하기](getting-started.md) 프로젝트 컨텍스트에서 AEM Headless에 대해 설명합니다.
 
@@ -149,7 +149,7 @@ AEM은 컨텐츠 조각을 사용하여 컨텐츠를 애플리케이션에 헤�
 
 컨텐츠에 대한 요청은 표준 GraphQL API의 사용자 정의된 구현인 AEM GraphQL API를 사용하여 수행됩니다. AEM GraphQL API를 사용하면 특정 모델 유형에 따라 각 쿼리를 사용하여 컨텐츠 조각에 대한 (복잡한) 쿼리를 수행할 수 있습니다.
 
-그런 다음 반환된 컨텐츠를 애플리케이션에서 사용할 수 있습니다.
+그런 다음 반환된 콘텐츠를 애플리케이션에서 사용할 수 있습니다.
 
 ## 컨텐츠 조각 모델을 사용하여 구조 만들기 {#create-structure-content-fragment-models}
 
@@ -187,7 +187,7 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 * 태그
 * 콘텐츠 참조
 * 조각 참조
-* JSON 개체
+* JSON 오브젝트
 
 ### 참조 및 중첩 컨텐츠 {#references-nested-content}
 
@@ -200,9 +200,9 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 * **조각 참조**
 이 섹션에서는 다른 컨텐츠 조각에 대한 참조를 제공합니다.
 이 유형의 참조는 중첩된 콘텐츠를 만드는 데 사용되며 콘텐츠를 모델링하는 데 필요한 관계를 도입합니다.
-조각 작성자가 다음을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
-   * 참조된 조각을 직접 편집합니다.
-   * 적절한 모델을 기반으로 새 컨텐츠 조각을 만듭니다
+조각 작성자가 다음과 같은 작업을 수행할 수 있도록 데이터 유형을 구성할 수 있습니다.
+   * 참조된 조각 직접 편집
+   * 적절한 모델을 기반으로 새 콘텐츠 조각 생성
 
 ### 컨텐츠 조각 모델 만들기 {#creating-content-fragment-models}
 
@@ -242,9 +242,9 @@ AEM에서는 컨텐츠를 모델링하는 데 사용할 다음 데이터 유형�
 * 컨텐츠 연결.
 * 메타데이터를 편집합니다.
 * 트리 구조를 표시합니다.
-* JSON 표현을 미리 봅니다.
+* JSON 표현식 미리보기.
 
-### 컨텐츠 조각 만들기 {#creating-content-fragments}
+### 콘텐츠 조각 만들기 {#creating-content-fragments}
 
 적절한 모델을 선택하면 컨텐츠 조각 편집기에서 편집할 컨텐츠 조각이 열립니다.
 
@@ -276,5 +276,5 @@ tbc...
    * [컨텐츠 조각 관리](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) - 컨텐츠 조각 만들기 및 작성 이 페이지에서는 다른 세부 섹션으로 연결됩니다.
 * [AEM GraphQL 스키마](access-your-content.md) - GraphQL에서 모델을 구현하는 방법
 * [샘플 컨텐츠 조각 구조](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) - 컨텐츠 모델링 및 GraphQL을 포함하여 AEM 헤드리스 기능을 사용하는 방법에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다
+* [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 컨텐츠 모델링 및 GraphQL을 포함하여 AEM 헤드리스 기능을 사용하는 방법에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다
    * [GraphQL 모델링 기본 사항](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - GraphQL에서 사용할 수 있도록 Adobe Experience Manager(AEM)에서 컨텐츠 조각을 정의하고 사용하는 방법을 알아봅니다.

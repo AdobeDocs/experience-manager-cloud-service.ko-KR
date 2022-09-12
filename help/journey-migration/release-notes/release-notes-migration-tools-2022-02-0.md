@@ -14,7 +14,7 @@ ht-degree: 79%
 
 이 페이지에서는 AEM as a Cloud Service 2022.2.0의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다.
 
-## 모범 사례 분석기 {#bpa-release}
+## Best Practices Analyzer {#bpa-release}
 
 ### 릴리스 날짜 {#release-date-bpa}
 

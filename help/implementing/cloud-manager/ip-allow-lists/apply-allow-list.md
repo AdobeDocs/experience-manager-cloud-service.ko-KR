@@ -1,16 +1,16 @@
 ---
-title: 'IP 허용 목록 적용 및 적용 해제 '
+title: IP 허용 목록 적용 및 적용 취소
 description: IP 허용 목록을 환경에 적용하고 적용하는 방법을 알아봅니다.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# IP 허용 목록 적용 및 적용 해제 {#apply-allow-list}
+# IP 허용 목록 적용 및 적용 취소 {#apply-allow-list}
 
 IP 허용 목록을 적용할 때 목록 정의에 포함된 모든 IP 범위는 환경 내의 작성자 또는 게시 서비스와 연결됩니다. 목록 적용 취소는 이 프로세스의 역수입니다.
 

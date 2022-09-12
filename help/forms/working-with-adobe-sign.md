@@ -42,7 +42,7 @@ ht-degree: 1%
 
 <!-- * In-form and out-of-form signing experiences -->
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 사용하기 전 [!DNL Adobe Sign] 적응형 양식에서:
 

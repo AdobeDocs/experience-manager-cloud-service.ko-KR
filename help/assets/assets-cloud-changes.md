@@ -78,5 +78,5 @@ ht-degree: 6%
 >* [아키텍처](/help/overview/architecture.md)
 >* [주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
 >* [주요 변경 내용 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ko-KR)
+>* [비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 

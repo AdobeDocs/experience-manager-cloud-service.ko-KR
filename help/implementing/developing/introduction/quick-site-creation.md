@@ -5,7 +5,7 @@ exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Quick Site Creation Tool은 사용하기 쉬운 도구로, 관리자는 프런�
 1. An **AEM 사이트 테마** 는 템플릿에 포함되며 사이트의 스타일을 정의하는 CSS, JavaScript 및 정적 리소스를 포함합니다.
 1. 다음 **프런트엔드 파이프라인** 를 사용하여 백엔드 개발과는 별도로 사이트 테마에 사용자 지정 사항을 배포할 수 있습니다.
 
-## 빠른 사이트 만들기 여정 {#quick-site-creation-journey}
+## AEM 빠른 사이트 생성 여정 {#quick-site-creation-journey}
 
 빠른 사이트 만들기 도구의 작동 방식에 대한 전체 개요와 이러한 강력한 도구를 사용하여 자신의 사이트를 즉시 배포하고 사용자 지정하는 것을 시작하려면 다음을 검토하십시오 [빠른 사이트 만들기 여정.](/help/journey-sites/quick-site/overview.md)
 

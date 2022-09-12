@@ -3,7 +3,7 @@ title: 페이지 작성에 대한 빠른 시작 안내서
 description: 페이지 콘텐츠 작성을 시작하는 데 도움이 되는 빠른 개요 안내서
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 

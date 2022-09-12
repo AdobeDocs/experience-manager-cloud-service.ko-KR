@@ -3,7 +3,7 @@ title: AEM Sites 여정
 description: 여기에서 AEM의 강력한 사이트 도구를 이해하는 데 사용할 수 있는 가이드 여정 개요를 살펴보십시오.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 

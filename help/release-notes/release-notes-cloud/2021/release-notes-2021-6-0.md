@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 릴리스의 릴리스 노트'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 릴리스의 릴리스 노트'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.6.0 릴리스 정보입니다.'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
@@ -19,7 +19,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko-KR)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
@@ -30,12 +30,12 @@ ht-degree: 25%
 
 을(를) 보십시오. [2021년 6월 릴리스 개요](https://video.tv.adobe.com/v/334296) 비디오 를 참조하십시오.
 
-## AEM as a cloud Service용 XML Documentation {#xml-documentation}
+## XML Documentation for AEM as a cloud Service {#xml-documentation}
 
 ### 새로운 기능 {#what-is-new-xml-documentation}
 
-* AEM as a Cloud Service용 XML 설명서는 이제 GA입니다.
-* 이를 통해 기존 AEM Cloud Service 고객은 AEM 사이트를 비롯한 여러 채널에서 기술 콘텐츠를 가져오기, 제작, 관리 및 전달하는 데 필요한 XML 설명서 추가 기능을 획득할 수 있습니다
+* XML Documentation for AEM as a Cloud Service은 현재 GA입니다.
+* 이를 통해 기존 AEM Cloud Service 고객은 AEM 사이트를 비롯한 여러 채널에서 기술 컨텐츠를 가져오고, 만들고, 관리하고, 전달하는 XML Documentation addon 을 확보할 수 있습니다
 
 ## Cloud Manager {#cloud-manager}
 
@@ -194,7 +194,7 @@ AEM Screens as a Cloud Service 릴리스 날짜는 2021년 6월 24일입니다.
 
 * 작성자 인스턴스에서 수집을 정지하는 동안 UI는 이전에 완료된 수집 항목을 게시 인스턴스에서에 오버라이드했습니다. `STOPPED` 변환 전: `FINISHED`. 이 문제가 해결되었습니다.
 
-## 모범 사례 분석기 {#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 릴리스 날짜 {#release-date-bpa}
 

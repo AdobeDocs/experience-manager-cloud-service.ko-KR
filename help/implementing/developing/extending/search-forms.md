@@ -19,7 +19,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
 
 이러한 목적을 함께 사용하면 다음과 같이 컨텐츠를 빠르고 쉽게 찾을 수 있습니다.
 
-* [검색 및 필터](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [검색 및 필터링](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [레일 선택기](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 * a [자산 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (페이지 편집 시)
 
@@ -101,7 +101,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
    </td>
   </tr>
   <tr>
-   <td>작성</td>
+   <td>작성자</td>
    <td>작성자에 따라 검색합니다.</td>
    <td>
     <ul>
@@ -268,7 +268,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
     </ul> </td>
   </tr>
   <tr>
-   <td>Options 속성</td>
+   <td>옵션 속성</td>
    <td>옵션의 속성을 하나 이상 검색합니다.</td>
    <td>
     <ul>
@@ -702,7 +702,7 @@ Adobe Experience Manager as a Cloud Service은 강력한 [검색](/help/sites-cl
    <td>에 대한 읽기, 쓰기, 삭제 권한 <code>/apps</code> 노드</td>
   </tr>
   <tr>
-   <td>미리 보기</td>
+   <td>미리보기</td>
    <td>에 대한 읽기, 쓰기, 삭제 권한 <code>/var/dam/content</code> 노드 아래에 있어야 합니다.<br /> 읽기, 쓰기 권한 <code>/apps</code> 노드 아래에 있어야 합니다.</td>
   </tr>
  </tbody>

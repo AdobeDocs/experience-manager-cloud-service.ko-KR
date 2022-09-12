@@ -3,7 +3,7 @@ title: 프로젝트
 description: 프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화하여 공통, 공유 환경에서 프로젝트를 쉽게 관리할 수 있습니다.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
 

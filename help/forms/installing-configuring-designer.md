@@ -1,5 +1,5 @@
 ---
-title: 'Forms 디자이너를 다운로드하여 설치하여 레코드 템플릿 문서를 만드는 방법  '
+title: Forms 디자이너를 다운로드하여 설치하여 레코드 템플릿 문서를 만드는 방법
 description: Forms 디자이너를 사용하여 레코드 문서의 템플릿으로 사용되는 XDP 및 PDF 양식 템플릿을 만들 수 있습니다. 디자이너는 [!DNL AEM Forms] 라이센스.
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4

@@ -3,7 +3,7 @@ title: ContextHub 데이터를 사용하여 페이지 미리보기
 description: ContextHub 도구 모음은 ContextHub 저장소의 데이터를 표시하고 저장소 데이터를 변경할 수 있도록 해 주며 콘텐츠를 미리 보는 데 유용합니다.
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 100%
 

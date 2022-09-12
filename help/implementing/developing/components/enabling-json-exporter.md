@@ -70,7 +70,7 @@ JSON Exporter 프레임워크에서 고려하려면 모델 인터페이스가 �
 
 ## 예 {#example}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) json 내보내기를 지원하고 참조로 사용할 수 있습니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) json 내보내기를 지원하고 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 코어 구성 요소의 Sling 모델 구현과 주석으로 구성된 인터페이스를 참조하십시오.
 
@@ -81,4 +81,4 @@ JSON Exporter 프레임워크에서 고려하려면 모델 인터페이스가 �
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 그리고 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko-KR)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 그리고 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

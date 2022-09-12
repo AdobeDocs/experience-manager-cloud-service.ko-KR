@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.11.0 릴리스의 릴리스 노트'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.11.0 릴리스의 릴리스 노트'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.11.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.11.0 릴리스 정보입니다.'
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt

@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리�
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
 source-git-commit: bcd62d1d1a66e17585e35c11c12cd72067e0e46e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ ht-degree: 100%
    * 편집 가능한 템플릿과 스타일 시스템을 지원하는 [Core WCM Component](https://github.com/adobe/aem-core-wcm-components)를 기반으로 함.
    * 이메일에 최적화되고 제작 준비가 완료된 구성 요소(페이지, 컨테이너, 제목, 텍스트, 이미지, 버튼, 티저, 경험 조각, 콘텐츠 조각, 세그먼테이션) 10개 제공.
    * 대화 상자 필드에서의 [Campaign 변수 삽입](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) 및 유연한 [세그먼테이션 구성 요소](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(기술 설명서))를 통해 고급 개인화 및 세그먼테이션 기능 제공.
-   * [CSS 스타일 인라이너](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-기술 설명서), [HTML 속성 인라이너](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-기술 설명서) 및 [HTML 삭제](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-기술 설명서)를 통해 이메일에 최적화된 HTML 출력 제공.
+   * [CSS 스타일 인라이너](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-기술 설명서), [HTML 속성 인라이너](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation) 및 [HTML 삭제](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-기술 설명서)를 통해 이메일에 최적화된 HTML 출력 제공.
    * 장소에 상관없이 이메일 생성.
 
 ### [!DNL Sites] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-sites}
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 ![콘텐츠 조각 언어](/help/release-notes/assets/cfconsole-languages.png)
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#features-assets}
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
    ![에셋 업로드 제한 사항](/help/assets/assets/asset-upload-restrictions.png)
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 

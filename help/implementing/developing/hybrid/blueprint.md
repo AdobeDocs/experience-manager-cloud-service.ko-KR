@@ -77,7 +77,7 @@ SPA 구성 요소는 페이지 모델과 동기화 상태여야 하며 그에 �
 * `:itemsOrder`: 하위 항목의 순서가 지정된 목록입니다. JSON 맵 개체는 해당 필드의 순서를 보증하지 않습니다. 맵과 현재 배열을 모두 사용하므로 API의 소비자에게는 두 구조의 이점이 있습니다
 * `:path`: 항목의 컨텐츠 경로(페이지를 나타내는 항목에 있음)
 
-참조 - [AEM 컨텐츠 서비스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko-KR)
+참조 - [AEM 컨텐츠 서비스 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
 ### 프레임워크별 모듈 {#framework-specific-module}
 

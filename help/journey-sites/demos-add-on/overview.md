@@ -3,7 +3,7 @@ title: AEM 참조 데모 추가 기능 여정
 description: 최소한의 AEM 구성으로 AEM 참조 데모 추가 기능을 샌드박스 환경에 손쉽게 추가하는 방법과 모범 사례를 기반으로 하는 풍부한 예제를 통해 AEM의 강력한 기능을 테스트하는 방법에 대한 가이드 여정을 시작해 보십시오.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
 

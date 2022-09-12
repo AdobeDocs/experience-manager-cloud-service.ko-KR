@@ -1,7 +1,7 @@
 ---
 title: 적응형 양식 조각 참조
 seo-title: Reference Adaptive Form Fragments
-description: 'AEM Forms은 자산을 사용하여 신속하게 양식을 만들 수 있는 적응형 양식 조각을 제공합니다. '
+description: AEM Forms은 자산을 사용하여 신속하게 양식을 만들 수 있는 적응형 양식 조각을 제공합니다.
 seo-description: AEM Forms provides Adaptive Form Fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

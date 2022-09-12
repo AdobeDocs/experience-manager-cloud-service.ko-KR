@@ -123,7 +123,7 @@ AEM as a Cloud Service는 AEM 프로젝트 관리를 위한 많은 새로운 기
     <td>사용자 지정 표현물 생성, 이미지 전환 또는 비디오 인코딩은 해당 처리 프로필을 만들어 자산 처리 서비스로 오프로드해야 합니다.</td>
   </tr>
   <tr>
-    <td>콘텐츠 검색 및 색인 지정</td>
+    <td>콘텐츠 검색 및 색인화</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en">컨텐츠 검색 및 색인 지정 변경 사항</a></td>
     <td>지표의 기본 처리에 상당한 변화가 있으며, 인덱스가 들어올 때 발생합니다.<br>배포할 코드에서 Oak 인덱스를 관리하기 전에 Oak 인덱스를 완전히 이해하고 리팩터링합니다.</td>
   </tr>

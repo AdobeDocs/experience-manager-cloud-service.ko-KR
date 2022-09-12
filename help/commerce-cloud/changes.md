@@ -43,7 +43,7 @@ AEM CIF 추가 기능은 Cloud Manager를 통해 설치됩니다. 크레딧이 �
 **이전 CIF 버전**
 
 * CIF Classic: AEM 패키지 설치를 통해
-* CIF 오픈 소스: Via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)
+* CIF 오픈 소스: Via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 
 ## 제품 카탈로그 데이터
 

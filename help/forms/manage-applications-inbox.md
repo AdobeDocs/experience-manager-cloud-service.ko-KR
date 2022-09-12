@@ -74,12 +74,12 @@ Forms 워크플로우가 트리거되고 사용자가 할당자 또는 할당자
 
 세부 작업 보기는 다음 섹션으로 구성됩니다.
 
-* 작업 세부 사항
+* 작업 세부 정보
 * 양식
 * 워크플로우 세부 정보
 * 작업 도구 모음
 
-#### 작업 세부 사항 {#task-details}
+#### 작업 세부 정보 {#task-details}
 
 작업 세부 정보 섹션에는 작업에 대한 정보가 표시됩니다. 표시되는 정보는 [작업 단계 할당](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) 을 입력합니다. 위의 예에는 작업에 사용된 설명, 상태, 시작 날짜 및 워크플로우가 표시됩니다. 또한 작업에 파일을 첨부할 수도 있습니다.
 

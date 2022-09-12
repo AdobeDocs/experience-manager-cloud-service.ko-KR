@@ -27,8 +27,8 @@ TXT 레코드를 추가하기 전에 이러한 요구 사항을 충족해야 합
 
 | 도메인 | 이름 | TXT 값 |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. 예를 들어<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
-| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. 예를 들어<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
+| `example.com` | `_aemverification.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. 예:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
+| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI에 표시된 전체 값을 복사합니다. 도메인과 환경에 따라 다릅니다. 예:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
 
 완료되면 다음 명령을 실행하여 결과를 확인할 수 있습니다
 

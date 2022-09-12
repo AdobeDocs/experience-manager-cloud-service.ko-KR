@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 구현
 description: Adobe Experience Manager as a Cloud Service 구현 자습 리소스 및 설명서 링크
-landing-page-description: 'Experience Manager as a Cloud Service 배포로 사용자 지정하는 방법을 알아봅니다. 애플리케이션 배포 및 구현을 위해 AEM Cloud Services 설명서를 살펴보십시오. '
+landing-page-description: Experience Manager as a Cloud Service 배포로 사용자 지정하는 방법을 알아봅니다. 애플리케이션 배포 및 구현을 위해 AEM Cloud Services 설명서를 살펴보십시오.
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '413'
+ht-degree: 94%
 
 ---
 
@@ -33,10 +33,10 @@ Experience Manager as a Cloud Service 구현에 대한 자습 리소스를 찾�
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 제작 및 관리하는 방법을 이해합니다. |
 | [에셋 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 사용 및 관리하는 방법을 이해합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | AEM의 강력한 기능을 사용하여 경험을 구축하고 사용자 지정하는 방법을 이해합니다. |
-| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 헤드리스 기능을 통한 가이드 여정을 살펴보고 귀하의 첫 헤드리스 프로젝트를 준비하십시오. |
+| [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 Headless 기능을 통한 가이드 여정을 살펴보고 귀하의 첫 Headless 프로젝트를 준비하십시오. |
 | [AEM as a Cloud Service로 이동](/help/journey-migration/getting-started.md) | 클라우드 서비스로의 전환 여정을 이해합니다. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 커넥터를 통합하는 방법을 알아봅니다. |
-| [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
+| [작업 사용 안내서](/help/operations/home.md) | 색인화 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
 | [Commerce 사용 안내서](/help/commerce-cloud/home.md) | AEM as a Cloud Service의 Commerce Integration Framework에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}

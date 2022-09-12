@@ -60,7 +60,7 @@ Cloud Service 인스턴스에서 만들어진 테마:
 
 1. 테마 페이지에서 **[!UICONTROL 선택]** 테마를 클릭하고 **[!UICONTROL 다운로드]**. 테마 세부 정보가 포함된 대화 상자가 표시됩니다.
 
-1. 클릭 **[!UICONTROL 다운로드]**. 테마는 zip 파일로 다운로드됩니다.
+1. **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다. 테마는 zip 파일로 다운로드됩니다.
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ Cloud Service 인스턴스에서 만들어진 테마:
   <tr>
    <td>3.</td>
    <td>유형</td>
-   <td>아니오</td>
+   <td>아니요</td>
    <td>
     <ul>
      <li>자산 유형입니다.</li>
@@ -115,7 +115,7 @@ Cloud Service 인스턴스에서 만들어진 테마:
   <tr>
    <td>4.</td>
    <td>작성일</td>
-   <td>아니오</td>
+   <td>아니요</td>
    <td>테마 만든 날짜</td>
   </tr>
   <tr>
@@ -127,13 +127,13 @@ Cloud Service 인스턴스에서 만들어진 테마:
   <tr>
    <td>6.</td>
    <td>마지막 수정 날짜</td>
-   <td>아니오</td>
+   <td>아니요</td>
    <td>테마를 마지막으로 수정한 날짜입니다.</td>
   </tr>
   <tr>
    <td>7.</td>
    <td>상태</td>
-   <td>아니오</td>
+   <td>아니요</td>
    <td>테마 상태(수정됨/게시됨).</td>
   </tr>
   <tr>
@@ -246,7 +246,7 @@ Cloud Service 인스턴스에서 만들어진 테마:
 * 왼쪽 탭
 * 상단 탭
 * 아코디언
-* 응답형
+* 반응형
 * 마법사
 * 모바일 레이아웃
 
@@ -384,7 +384,7 @@ Cloud Service 인스턴스에서 만들어진 테마:
  <tbody>
   <tr>
    <td><strong>속성</strong></td>
-   <td><strong> 사용 </strong></td>
+   <td><strong>사용</strong></td>
   </tr>
   <tr>
    <td><p>치수 및 위치</p> </td>

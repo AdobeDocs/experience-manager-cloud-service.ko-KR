@@ -108,7 +108,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 다른 자산인 정적
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-         예, `https://aem.com/is/content/adobe/image.gif`.
+         (예: `https://aem.com/is/content/adobe/image.gif`)
    * 선택 **[!UICONTROL 자산]** > **[!UICONTROL 동적 표현물]**&#x200B;그런 다음 정적 자산의 동적 렌디션을 선택하고 URL을 복사합니다.
 
       복사된 URL을 사용하여 변경합니다 `is/content` 대신 경로에서 `is/image/`.

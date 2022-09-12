@@ -95,7 +95,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 >[!CAUTION]
 >
->다음 [컨텐츠 조각 구성 요소는 핵심 구성 요소의 일부입니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko-KR). 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) 자세한 내용
+>다음 [컨텐츠 조각 구성 요소는 핵심 구성 요소의 일부입니다](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html). 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) 자세한 내용
 
 컨텐츠 조각은 다른 자산 유형처럼 AEM 페이지에서 참조할 수 있습니다. AEM에서 **[컨텐츠 조각 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** - a [페이지에 컨텐츠 조각을 포함할 수 있는 구성 요소](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). 이를 확장할 수도 있습니다 **[컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** 코어 구성 요소입니다.
 

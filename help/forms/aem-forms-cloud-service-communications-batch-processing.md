@@ -56,7 +56,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/338349)
 
-비디오를 보거나 아래 지침을 수행하여 배치 작업을 사용하여 문서를 생성하는 방법을 배울 수 있습니다. 비디오에 사용된 API 참조 설명서는 .yaml 형식으로 사용할 수 있습니다. 을 다운로드할 수 있습니다 [배치 API](assets/batch-api.yaml) 파일을 업로드하고 Postman에 업로드하여 API의 기능을 확인하고 비디오를 따라 가세요.
+비디오를 보거나 아래 지침을 수행하여 배치 작업을 사용하여 문서를 생성하는 방법을 배울 수 있습니다. 비디오에 사용된 API 참조 설명서는 .yaml 형식으로 사용할 수 있습니다. 을 다운로드할 수 있습니다 [배치 API](assets/batch-api.yaml) 파일을 만든 다음 Postman에 업로드하여 API의 기능을 확인하고 비디오를 따라 합니다.
 
 ### 전제 조건 {#pre-requisites}
 
@@ -121,7 +121,7 @@ Microsoft Azure 저장소에서 [컨테이너](https://docs.microsoft.com/en-us/
 
 ## 배치 API를 사용하여 문서 생성 {#use-batch-API-to-generate-documents}
 
-배치 API를 사용하려면 배치 구성을 만들고 해당 구성을 기반으로 실행을 실행합니다. API 설명서는 일괄 처리, 해당 매개 변수 및 가능한 오류를 만들고 실행하기 위한 API에 대한 정보를 제공합니다. 을 다운로드할 수 있습니다 [API 정의 파일](assets/batch-api.yaml) 파일을 만든 다음 업로드합니다 [포스트맨](https://go.postman.co/home) 또는 유사한 소프트웨어를 사용하여 API를 테스트하여 배치 작업을 만들고 실행합니다.
+배치 API를 사용하려면 배치 구성을 만들고 해당 구성을 기반으로 실행을 실행합니다. API 설명서는 일괄 처리, 해당 매개 변수 및 가능한 오류를 만들고 실행하기 위한 API에 대한 정보를 제공합니다. 을 다운로드할 수 있습니다 [API 정의 파일](assets/batch-api.yaml) 파일을 만든 다음 업로드합니다 [Postman](https://go.postman.co/home) 또는 유사한 소프트웨어를 사용하여 API를 테스트하여 배치 작업을 만들고 실행합니다.
 
 ### 배치 만들기 {#create-a-batch}
 
@@ -171,4 +171,4 @@ Microsoft Azure 저장소에서 [컨테이너](https://docs.microsoft.com/en-us/
 
 ## API 참조 설명서
 
-API 참조 설명서는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로 제공됩니다. 을 다운로드할 수 있습니다 [배치 API](assets/batch-api.yaml) 파일을 업로드하고 Postman에 업로드하여 API의 기능을 확인합니다.
+API 참조 설명서는 API에서 제공하는 모든 매개 변수, 인증 방법 및 다양한 서비스에 대한 자세한 정보를 제공합니다. API 참조 설명서는 .yaml 형식으로 제공됩니다. 을 다운로드할 수 있습니다 [배치 API](assets/batch-api.yaml) 파일을 업로드하여 Postman에 업로드하여 API의 기능을 확인합니다.

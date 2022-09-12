@@ -13,7 +13,7 @@ ht-degree: 0%
 
 의 이 부분에서 [AEM Headless Developer 여정](overview.md), Git에서 로컬 코드를 가져와서 CI/CD 파이프라인용 Cloud Manager Git으로 이동하여 헤드리스 애플리케이션을 라이브로 배포하는 방법을 알아봅니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 AEM 헤드리스 여정의 이전 문서에서, [AEM 헤드리스에서 앱과 콘텐츠를 모두 통합하는 방법](put-it-all-together.md) AEM 개발 도구를 사용하여 프로젝트의 모든 패싯을 통합하는 방법을 알아보았습니다.
 

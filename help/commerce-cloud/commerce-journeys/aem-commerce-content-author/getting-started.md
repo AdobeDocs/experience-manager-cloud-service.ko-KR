@@ -13,7 +13,7 @@ ht-degree: 2%
 
 AEM CIF 작성에 대해 알아봅니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 이 AEM Content and Commerce 여정의 이전 문서에서, [AEM 콘텐츠 및 상거래에 대해 알아보기](/help/commerce-cloud/introduction.md), 헤드리스 CMS가 무엇인지 기본 이론을 배웠고 이제 AEM 컨텐츠 및 커머스 의 기본 개념을 이해해야 합니다.
 
@@ -91,7 +91,7 @@ Omnisearch를 사용하면 전체 텍스트 검색을 사용하여 AEM 컨텐츠
 
 Omnisearch는 모든 관련 제품을 찾기 위해 상거래 백엔드에서 전체 텍스트 검색을 실행합니다. 결과는 다음과 같습니다 **모든 제품 보기**. Omnisearch는 또한 AEM에서 검색한 제품과 연결된 콘텐츠를 검색합니다. 각 AEM 카테고리 아래에 결과가 나열됩니다. 이 예에서는 하나의 컨텐츠 조각이 제품과 관련되어 있습니다.
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
 

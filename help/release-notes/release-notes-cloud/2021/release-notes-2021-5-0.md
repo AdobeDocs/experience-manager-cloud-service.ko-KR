@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 릴리스의 릴리스 노트'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 릴리스의 릴리스 노트'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.5.0 릴리스 정보입니다.'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko-KR)를 참조하십시오.
+>릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 

@@ -4,7 +4,7 @@ description: Dispatcher는 Adobe Experience Manager Publish 환경 앞에 있는
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Dispatcher에 대한 자세한 문서는 [Dispatcher 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 를 참조하십시오.
+>Dispatcher에 대한 자세한 문서는 [Dispatcher 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 를 참조하십시오.
 
 AEM Project의 일부로 Dispatcher에 대한 구성이 포함된 Dispatcher 모듈이 포함되어 있습니다. [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)에서 새로 생성된 프로젝트에는 GraphQL 끝점을 활성화하는 [필터](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko-KR?#defining-a-filter)가 자동으로 포함됩니다.
 

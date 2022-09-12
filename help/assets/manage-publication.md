@@ -59,13 +59,13 @@ ht-degree: 8%
 
 ![게시 범위 관리](assets/manage-publication-aem-scope.png)
 
-### 컨텐트 추가 {#add-content}
+### 콘텐츠 추가 {#add-content}
 
 에 게시 [!DNL Experience Manager Assets] 게시 목록에 컨텐츠(자산 및 폴더)를 더 추가할 수 있습니다. DAM 저장소의 목록에 자산 또는 폴더를 더 추가할 수 있습니다. 클릭 **[!UICONTROL 컨텐츠 추가]** 단추를 클릭하여 콘텐츠를 더 추가합니다.
 
 폴더에서 여러 자산을 추가하거나 한 번에 여러 폴더를 추가할 수 있습니다. 그러나 여러 폴더에서 자산을 한 번에 추가할 수는 없습니다.
 
-![컨텐트 추가](assets/manage-publication-add-content.png)
+![콘텐츠 추가](assets/manage-publication-add-content.png)
 
 ### 폴더 설정 포함 {#include-folder-settings}
 
@@ -150,7 +150,7 @@ Only the selected folder content and references are published.
 1. 에서 **[!UICONTROL 범위]** 탭, **[!UICONTROL 컨텐츠 추가]** (필요한 경우). **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 에서 **[!UICONTROL 워크플로우]** 탭에서 워크플로우 제목을 지정합니다. **[!UICONTROL 나중에 게시]**&#x200B;를 클릭합니다.
 
-   ![워크플로우 제목](assets/manage-publication-workflow-title.png)
+   ![워크플로 제목](assets/manage-publication-workflow-title.png)
 
    대상 인스턴스에 로그인하여 게시된 자산을 확인합니다(예약된 날짜 또는 시간에 따라 다름).
 

@@ -1,7 +1,7 @@
 ---
 title: 적응형 Forms 캐시 구성
 seo-title: Configure Adaptive Forms cache
-description: '적응형 Forms 캐시는 특히 적응형 Forms 및 문서를 위해 설계되었습니다. 클라이언트에서 적응형 양식 또는 문서를 렌더링하는 데 필요한 시간을 줄이기 위해 응용 Forms 및 응용 문서를 캐시합니다. '
+description: 적응형 Forms 캐시는 특히 적응형 Forms 및 문서를 위해 설계되었습니다. 클라이언트에서 적응형 양식 또는 문서를 렌더링하는 데 필요한 시간을 줄이기 위해 응용 Forms 및 응용 문서를 캐시합니다.
 seo-description: The Adaptive Forms cache is designed specifically for Adaptive Forms and documents. It caches Adaptive Forms and adaptive documents with the objective of reducing the time required to render an Adaptive Form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference

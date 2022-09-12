@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '2360'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -273,4 +273,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### 워크플로우 인스턴스 제거 {#purge-workflow-instances}
 
-워크플로우 인스턴스 수를 최소화하면 워크플로우 엔진의 성능이 높아지므로 리포지토리에서 완료되거나 실행되는 워크플로우 인스턴스를 정기적으로 제거할 수 있습니다. 자세한 내용은 다음을 참조하십시오. [워크플로우 인스턴스 일반 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) 워크플로우 인스턴스 삭제
+워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다. 자세한 내용은 다음을 참조하십시오. [워크플로우 인스턴스 일반 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) 워크플로우 인스턴스 삭제

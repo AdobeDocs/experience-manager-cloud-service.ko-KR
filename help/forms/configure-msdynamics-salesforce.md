@@ -82,7 +82,7 @@ A [!DNL Salesforce] 양식 데이터 모델은 [!DNL AEM Forms] 서버 [Experien
    1. 값 입력 **[!UICONTROL 서비스 루트]** 필드. Dynamics 인스턴스로 이동하고 [개발자 리소스](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/view-download-developer-resources) 서비스 루트 필드의 값을 보려면 예, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. 연결된 응용 프로그램의 클라이언트 ID(응용 프로그램 ID라고도 함)와 클라이언트 암호를 지정합니다.
    1. 바꾸기 `{tenant}` 에서 테넌트 ID를 사용하여 **[!UICONTROL OAuth URL]**, **[!UICONTROL 토큰 URL 새로 고침]**, 및 **[!UICONTROL 액세스 토큰 URL]** 필드.
-   1. 에서 dynamics 인스턴스 URL을 지정합니다 **[!UICONTROL 리소스]** 구성할 필드 [!UICONTROL Microsoft Dynamics] ( 양식 데이터 모델 사용) 서비스 루트 URL을 사용하여 Dynamics 인스턴스 URL을 파생하십시오. 예, `https://<tenant-name>.dynamics.com`.
+   1. 에서 dynamics 인스턴스 URL을 지정합니다 **[!UICONTROL 리소스]** 구성할 필드 [!UICONTROL Microsoft Dynamics] ( 양식 데이터 모델 사용) 서비스 루트 URL을 사용하여 Dynamics 인스턴스 URL을 파생하십시오. (예: `https://<tenant-name>.dynamics.com`)
 
    1. 지정 `openid` 에서 **[!UICONTROL 권한 부여 범위]** 인증 프로세스 필드 [!DNL Microsoft Dynamics 365].
    1. 로 로그인 [!DNL Microsoft Dynamics 365] 클라우드 서비스 구성이 연결되도록 하는 자격 증명 및 동의 [!DNL Microsoft Dynamics 365] 서비스. 연결에 성공하면 [!DNL Microsoft Dynamics 365] 성공 메시지를 표시하는 클라우드 서비스 구성 페이지입니다.

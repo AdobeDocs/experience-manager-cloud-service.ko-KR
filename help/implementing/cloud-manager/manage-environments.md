@@ -24,7 +24,7 @@ ht-degree: 2%
 
 개별 환경의 기능은 포함 내용에서 활성화된 솔루션에 따라 다릅니다 [프로그램.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
-* [사이트](/help/sites-cloud/home.md)
+* [Sites](/help/sites-cloud/home.md)
 * [에셋](/help/assets/home.md)
 * [양식](/help/forms/home.md)
 * [스크린](/help/screens-cloud/home.md)
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 ## 환경 추가 {#adding-environments}
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 환경을 추가할 프로그램을 클릭합니다.
 

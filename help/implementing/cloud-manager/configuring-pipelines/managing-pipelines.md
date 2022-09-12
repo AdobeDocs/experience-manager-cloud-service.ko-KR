@@ -6,7 +6,7 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 1. 실행 중인 파이프라인의 세부 사항 페이지로 이동합니다.
 
-![파이프라인 세부 사항](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
+![파이프라인 세부 정보](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
 여기에서 파이프라인의 다양한 단계 상태를 확인하고 진단 목적으로 빌드 로그를 검색할 수 있습니다. 문서를 참조하십시오 [코드 배포](/help/implementing/cloud-manager/deploy-code.md) 추가 정보.
 

@@ -4,7 +4,7 @@ description: 확장 [!DNL Adobe Experience Manager] as a Cloud Service App Build
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---

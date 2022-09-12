@@ -1,13 +1,13 @@
 ---
 title: Admin Console 액세스
 description: AEMaaCS 구조의 온보딩에 필요한 준비와 기본 사항을 이해하면 Admin Console에 처음으로 로그인할 수 있습니다.
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 2%
 
 ---
-
 
 # Admin Console 액세스 {#accessing-admin-console}
 

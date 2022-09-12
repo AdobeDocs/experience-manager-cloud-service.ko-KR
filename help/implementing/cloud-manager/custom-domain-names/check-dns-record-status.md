@@ -30,14 +30,14 @@ Cloud Manager는 도메인 이름에 대한 DNS 조회를 수행하고 다음 �
 * **DNS가 잘못 확인됨** - DNS 레코드 구성이 확인되지 않았거나 잘못된 것임을 나타냅니다.
 
    * 문서를 참조하십시오 [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 추가 정보
-   * When ready, you must select the **Resolve Again** icon next to the status.
+   * 준비가 완료된 경우 **다시 해결** 아이콘 옆에 표시됩니다.
 
-* **DNS Resolution In Progress** - The resolution is in progress.
+* **DNS 확인 진행 중** - 결의안이 진행 중입니다.
 
-   * This status is typically seen after you select the **Resolve Again** icon next to the status.
+   * 이 상태는 일반적으로 **다시 해결** 아이콘 옆에 표시됩니다.
 
-* **DNS Resolves Correctly** - Your DNS settings are properly configured.
+* **DNS가 올바르게 확인됨** - DNS 설정이 올바르게 구성되었습니다.
 
    * 사이트가 방문자를 제공하고 있습니다.
 
-Cloud Manager will automatically trigger a DNS lookup when your custom domain name is first successfully verified and deployed. For subsequent attempts, you must actively select the **Resolve Again** icon next to the status.
+사용자 지정 도메인 이름을 먼저 확인하고 배포하면 Cloud Manager가 DNS 조회를 자동으로 트리거합니다. 이후에 시도하려면 **다시 해결** 아이콘 옆에 표시됩니다.

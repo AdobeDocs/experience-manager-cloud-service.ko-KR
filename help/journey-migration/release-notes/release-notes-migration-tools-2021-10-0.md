@@ -15,7 +15,7 @@ ht-degree: 8%
 이 페이지에서는 AEM as a Cloud Service의 마이그레이션 도구에 대한 릴리스 노트를 간략하게 설명합니다2021.10.0.
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+>Adobe Experience Manager as a Cloud Service의 현재 릴리스 노트를 보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=ko-kr).
 
 ## Cloud Acceleration Manager {#cam-release}
 
@@ -53,7 +53,7 @@ Cloud Acceleration Manager 릴리스 날짜는 2021년 10월 4일입니다.
 
 * 버전이 포함되면 경로는 `/var/audit` 은 감사 이벤트를 마이그레이션하기 위해 자동으로 포함됩니다.
 
-## 모범 사례 분석기 {#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 릴리스 날짜 {#release-date-bpa-latest}
 

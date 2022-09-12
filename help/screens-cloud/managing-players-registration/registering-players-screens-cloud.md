@@ -68,6 +68,6 @@ Screens용 플레이어를 설치하고 as a Cloud Service으로 구성한 후�
    >가장 좋은 방법은 등록 코드 사용을 제한할 수 있습니다. 등록 코드가 손상되었지만 100개의 등록 제한이 있는 경우 공격자는 해당 번호까지만 등록할 수 있지만 더 이상 등록할 수 없습니다. 등록 코드가 생성되고 일부 고객의 플레이어가 이미 등록된 후에는 항상 사용 제한을 업데이트할 수 있습니다. 고객이 특정 등록 코드에 대한 비정상적인 등록 활동을 관찰하면 실시간으로 제한 사항을 낮출 수 있고, 잘못된 경보였다면 등록된 플레이어에게 영향을 주지 않고 숫자를 다시 늘릴 수 있습니다.
 
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 플레이어를 클라우드 모드로 설치 및 구성했으므로 다음 번 문서를 검토하여 Screens as a Cloud Service 여정을 계속해야 합니다. [Screens에서 디스플레이에 플레이어 할당 as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) 스크린 서비스 공급자에서

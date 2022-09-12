@@ -3,7 +3,7 @@ title: 템플릿으로 사이트 생성
 description: 사이트 템플릿을 사용하여 간편하게 새 AEM 사이트를 만드는 방법에 대해 알아봅니다.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 100%
 

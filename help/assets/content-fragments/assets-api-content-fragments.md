@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# AEM Assets HTTP API의 컨텐츠 조각 지원 {#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API의 콘텐츠 조각 지원 {#content-fragments-support-in-aem-assets-http-api}
 
 ## 개요 {#overview}
 
@@ -233,7 +233,7 @@ A [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 새 컨텐츠 조각을 생성하려면 모델의 (내부 저장소) 경로를 제공해야 합니다.
 
-#### 관련 컨텐츠 {#associated-content}
+#### 관련 콘텐츠 {#associated-content}
 
 연관된 컨텐츠는 현재 노출되지 않습니다.
 

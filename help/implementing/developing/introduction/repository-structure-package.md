@@ -1,11 +1,11 @@
 ---
-title: 'AEM 프로젝트 저장소 구조 패키지  '
+title: AEM 프로젝트 저장소 구조 패키지
 description: Adobe Experience Manager as a Cloud Service Maven 프로젝트에서는 프로젝트의 코드 하위 패키지가 배포되는 JCR 저장소 루트를 정의하는 유일한 목적이 되는 저장소 구조 하위 패키지 정의가 필요합니다.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '526'
+ht-degree: 9%
 
 ---
 

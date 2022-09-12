@@ -2,13 +2,13 @@
 title: 환경 만들기
 description: Cloud Manager를 사용하여 첫 번째 환경을 만드는 방법을 알아봅니다.
 role: Admin, User, Developer
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # 환경 만들기 {#create-environments}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 환경 만들기 {#creating-environments}
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 환경을 추가할 프로그램을 클릭합니다.
 

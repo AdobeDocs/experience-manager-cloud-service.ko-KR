@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 릴리스의 릴리스 노트'
-description: '"[!DNL Adobe Experience Manager] 2020.11.0용 as a Cloud Service 릴리스 노트"'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.11.0 릴리스 정보입니다.'
+description: "[!DNL Adobe Experience Manager] 2020.11.0용 as a Cloud Service 릴리스 노트"
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -103,7 +103,7 @@ AEM as a Cloud Service 2020.11.0의 Cloud Manager 릴리스 날짜는 2020년 11
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
-### 워크플로우 {#workflows}
+### 워크플로 {#workflows}
 
 * 워크플로우 제목, 워크플로우 모델, 상태, 개시자, 페이로드 경로 및 시작 날짜를 기반으로 워크플로우 인스턴스 검색에 대한 지원이 추가되었습니다. 자세한 내용은 [검색 워크플로우 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html).
 
@@ -111,9 +111,9 @@ AEM as a Cloud Service 2020.11.0의 Cloud Manager 릴리스 날짜는 2020년 11
 
 * 프로필 속성 및 그룹 멤버십을 포함한 사용자 데이터는 게시 계층에서 유지할 수 있습니다. 에서 이 기능에 대해 자세히 알아보십시오 [등록, 로그인 및 사용자 프로필 설명서](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md).
 
-### SDK 빌드 분석기 {#analyzers}
+### SDK Build Analyzer {#analyzers}
 
-AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속성을 포함하여 전문 프로젝트의 문제를 감지합니다. Cloud Manager를 사용하여 클라우드 환경에 배포하기 전에 개발자에게 로컬 개발 중에 문제를 발견할 수 있는 기회를 제공합니다. 자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko-KR#developing) 및 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
+AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속성을 포함하여 Maven 프로젝트의 문제를 감지합니다. Cloud Manager를 사용하여 클라우드 환경에 배포하기 전에 개발자에게 로컬 개발 중에 문제를 발견할 수 있는 기회를 제공합니다. 자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko-KR#developing) 및 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk).
 
 ### 기타 {#others-foundation}
 
@@ -131,7 +131,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속
 
 * 마이그레이션 세트에 부분적으로 유사한 파일 이름이 있는 경로가 포함된 경우 컨텐츠 전송 도구에서 컨텐츠 파일을 건너뛰었습니다. 이 문제가 해결되었습니다.
 
-## 모범 사례 분석기 {#best-practices-analyzer}
+## Best Practices Analyzer {#best-practices-analyzer}
 
 ### 릴리스 날짜 {#release-date-bpa}
 

@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # 응용 Forms에 대한 스타일 지정 구문{#styling-constructs-for-adaptive-forms}
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 CSS 및 LESS 프레임워크에 대한 지식.
 

@@ -5,7 +5,7 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -95,6 +95,6 @@ CAM(Cloud Acceleration Manager)의 랜딩 페이지에서 여러 프로젝트를
 
 1. 클릭 **삭제** 을 클릭하여 단계를 확인합니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 의 다음 단계를 검토할 준비가 되었습니다 [준비 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en).

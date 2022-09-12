@@ -17,7 +17,7 @@ ht-degree: 1%
 
 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고 편집 가능한 컨텐츠 섹션을 추가하고 작성을 활성화하기 위한 권장 단계에 대해 설명합니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 전제 조건은 간단합니다.
 
@@ -363,7 +363,7 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 다음 참조 자료는 AEM 컨텍스트에서 SPA을 이해하는 데 도움이 될 수 있습니다.
 
-* [AEM 헤드풀 및 헤드리스](/help/implementing/developing/headful-headless.md)
+* [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
 * [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
 * [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)

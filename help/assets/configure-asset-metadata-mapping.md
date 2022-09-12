@@ -1,7 +1,8 @@
 ---
 title: Workfront과 Experience Manager Assets 간 자산 메타데이터 매핑 구성
 description: Adobe Workfront과 Experience Manager as a Cloud Service 애플리케이션 간에 자산 메타데이터 필드를 매핑합니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 자산을 전송하면 Experience Manager Assets에서 매핑된 자산 메타데이터를 볼 수 있습니다.
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -24,7 +25,7 @@ Adobe Workfront과 Experience Manager as a Cloud Service 애플리케이션 간�
 
 * 문서 설명
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 * Workfront 및 Experience Manager Assets as a Cloud Service 애플리케이션에 대한 관리자 액세스 권한.
 
@@ -127,6 +128,3 @@ Experience Manager as a Cloud Service 애플리케이션에서 메타데이터 �
 1. 대상 폴더를 선택합니다 [Adobe Workfront 애플리케이션에서 이미지가 전송됩니다](#send-image-workfront-assets) 을(를) 클릭합니다. **[!UICONTROL 적용]**.
 
 Experience Manager Assets에서 이미지로 이동하고 이미지와 연관된 메타데이터를 볼 수 있습니다. 이미지를 선택하고 을(를) 클릭합니다 **[!UICONTROL 속성]** 이미지 메타데이터를 보려면
-
-
-

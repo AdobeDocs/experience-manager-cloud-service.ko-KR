@@ -364,7 +364,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 특정 폴더에 비디오 프로필을 적용하거나 모든 자산에 전체적으로 적용할 수 있습니다.
 
-나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더에서 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
+나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더에서 에셋 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)를 참조하십시오.
 
 ### 특정 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-specific-folders}
 

@@ -3,7 +3,8 @@ title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례(이전)
 description: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 25%

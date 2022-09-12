@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# 에서 자산 검색 [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# [!DNL Adobe Experience Manager]에서 에셋 검색 {#search-assets-in-aem}
 
 [!DNL Adobe Experience Manager Assets] 는 컨텐츠 속도를 높이는 데 도움이 되는 강력한 자산 검색 방법을 제공합니다. 팀은 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 검색 경험을 통해 출시 시간을 단축할 수 있습니다. 자산을 검색하는 것은 디지털 자산 관리 시스템의 용도의 핵심입니다. 이를 통해 크리에이티브, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자의 관리를 수행할 수 있습니다. 를 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색 [!DNL Assets] 사용자 인터페이스 또는 기타 앱과 표면은 이러한 사용 사례를 이행하는 데 도움이 됩니다.
 
@@ -111,7 +111,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 에서 [!DNL Assets] 사용자 인터페이스에서 자산의 속성 페이지를 엽니다. 클릭 **[!UICONTROL 고급]** 을(를) 클릭합니다. **[!UICONTROL 추가]** 아래에 **[!UICONTROL 검색 키워드 승격]**.
 1. 에서 **[!UICONTROL Search Promote]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 를 클릭합니다 **[!UICONTROL 추가]**. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 내에 나타납니다.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 내에 나타납니다.
 
 타깃팅된 키워드에 대한 검색 결과에 있는 일부 자산의 등급을 강화하여 이 기능을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 내용은 [검색 위치 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
@@ -204,7 +204,7 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 크리에이티브 전문가가 데스크탑 앱을 사용하여 [!DNL Experience Manager Assets] 로컬 데스크탑에서 손쉽게 검색 및 사용 가능(Win 또는 Mac) 광고 팀은 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시하고 데스크탑 애플리케이션에서 열고 로컬로 변경할 수 있습니다. 변경 사항은 다시 [!DNL Experience Manager] 저장소에서 생성된 새 버전을 사용하여 새 버전을 만들 수 있습니다. 응용 프로그램은 하나 이상의 키워드를 사용하여 기본 검색을 지원합니다. `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용할 수 있습니다. 자세한 내용은 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 데스크탑 앱에서 생성합니다.
 
-### 에서 자산 검색 [!DNL Brand Portal] {#brand-portal}
+### [!DNL Brand Portal]에서 에셋 검색 {#brand-portal}
 
 LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 승인된 디지털 자산을 확장 내부 팀, 파트너 및 리셀러와 효율적이고 안전하게 공유할 수 있습니다. 자세한 내용은 [Brand Portal에서 자산 검색](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 

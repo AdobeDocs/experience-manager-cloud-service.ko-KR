@@ -51,6 +51,6 @@ Screens 서비스 공급자를 설정하려면 아래 절차를 따르십시오.
 
    ![이미지](/help/screens-cloud/assets/configure/configure-screens2.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 탐색할 수 있는 Screens 서비스 공급자를 설정하는 방법을 알게 되면, [스크린 컨텐츠 공급자 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) 자세한 내용

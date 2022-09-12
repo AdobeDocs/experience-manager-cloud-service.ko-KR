@@ -1,6 +1,6 @@
 ---
 title: AEM Forms 중심 워크플로우 단계의 사용자 또는 그룹을 동적으로 선택
-description: '에 대한 사용자 또는 그룹을 선택하는 방법 알아보기 [!DNL AEM Forms] 런타임 시 워크플로우입니다. '
+description: 에 대한 사용자 또는 그룹을 선택하는 방법 알아보기 [!DNL AEM Forms] 런타임 시 워크플로우입니다.
 content-type: troubleshooting
 topic-tags: publish
 source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0

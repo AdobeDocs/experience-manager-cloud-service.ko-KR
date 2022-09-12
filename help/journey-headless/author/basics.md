@@ -5,11 +5,11 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 5%
+ht-degree: 12%
 
 ---
 
-# AEM을 통한 헤드리스 작성 기본 사항 - 소개 {#author-headless-basics}
+# AEM을 통한 Headless 작성 기본 사항 - 소개 {#author-headless-basics}
 
 ## 지금까지 이야기 {#story-so-far}
 
@@ -72,21 +72,21 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 ### 작업, 선택, 보기 {#actions-selecting-viewing}
 
-에서 **컨텐츠 조각** 콘솔에서 도구 모음의 컨텐츠 조각에 다양한 작업을 사용할 수 있습니다.
+**콘텐츠 조각** 콘솔에서는 도구 모음에서 콘텐츠 조각에 대해 다양한 작업을 사용할 수 있습니다.
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-* **자산에서 열기**
+* **에셋에서 열기**
 * **만들기**
-* 다음 **참조자** 열은 해당 조각의 모든 상위 참조를 표시하는 직접 링크도 제공합니다. 컨텐츠 조각, 경험 조각 및 페이지 참조 포함.
-* 폴더 이름을 마우스로 가리키면 JCR 경로가 표시됩니다.
+* **참조자** 열은 해당 조각의 모든 상위 참조를 표시하는 직접 링크도 제공합니다. 여기에는 콘텐츠 조각, 경험 조각 및 페이지 참조가 포함됩니다.
+* 폴더 이름에 마우스를 가져다 대면 JCR 경로가 표시됩니다.
 
-조각을 선택한 후 모든 적절한 작업을 사용할 수 있습니다.
+조각 선택 후 모든 적절한 작업을 사용할 수 있습니다.
 
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
 * **열기**
-* **게시** (및 **게시 취소**)
+* **게시**(및 **게시 취소**)
 * **복사**
 * **이동**
 * **이름 변경**
@@ -168,7 +168,7 @@ You can view additional information about items using the Rail Selector. This al
 
 에서 **컨텐츠 조각** 콘솔 **만들기** 열다 **새 컨텐츠 조각** 대화 상자:
 
-![컨텐츠 조각 콘솔 - 새 조각 만들기](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
+![콘텐츠 조각 콘솔 - 새 조각 만들기](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 다음을 지정합니다.
 
@@ -249,11 +249,11 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    컨텐츠 조각은 AEM에서 상당히 많은 버전 동안 사용할 수 있었습니다. 원래 이 템플릿은 페이지를 작성할 때 &quot;기존&quot; 용도로 사용할 수 있도록 만들어졌습니다..그리고 여전히 이런 맥락에서 사용됩니다. 여기에는 조각에 임베드되지 않았더라도 페이지를 작성할 때 작성자가 사용할 수 있어야 하는 자산(예: 이미지)과 연관될 수 있습니다.
 
-* **미리 보기**
+* **미리보기**
 
    이는 편집기의 다른 탭이며, 주로 개발자를 위한 기술 보기를 제공합니다.
 
-* **업데이트 페이지 참조**
+* **페이지 참조 업데이트**
 
    이 작업은 **...** (줄임표) 드롭다운. 머리글 없는 작성자는 페이지 작성과 관련되어 있으므로 흥미롭지는 않습니다.
 
@@ -304,7 +304,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
       * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
    * [변형 - 컨텐츠 조각 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [컨텐츠 조각 모델 - 데이터 유형](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 

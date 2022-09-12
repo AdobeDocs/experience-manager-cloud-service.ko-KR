@@ -297,7 +297,7 @@ property.value=Cycling Tuscany
 p.hits=full
 ```
 
- 사용 
+사용
 
 ```xml
 p.hits=selective

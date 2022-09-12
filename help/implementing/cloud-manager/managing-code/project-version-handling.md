@@ -1,6 +1,6 @@
 ---
 title: Maven 프로젝트 버전 처리
-description: 'AEM as a Cloud Service의 스테이징 및 프로덕션 배포를 위해 Cloud Manager는 고유한 증분 버전을 생성합니다. '
+description: AEM as a Cloud Service의 스테이징 및 프로덕션 배포를 위해 Cloud Manager는 고유한 증분 버전을 생성합니다.
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
 workflow-type: tm+mt
@@ -24,7 +24,7 @@ AEM as a Cloud Service의 스테이징 및 프로덕션 배포를 위해 Cloud M
 
 원래 버전이 이러한 기준을 충족한다면 생성된 버전이 원래 버전에 새 버전 세그먼트로 추가됩니다. 생성된 버전은 적절한 정렬 및 버전 처리를 포함하도록 약간 수정됩니다. 예를 들어, `2019.926.121356.0000020490` 결과는 다음과 같습니다.
 
-| 버전 | 버전 `pom.xml` | 주석 |
+| 버전 | 버전 `pom.xml` | 댓글 |
 |---|---|---|
 | `1.0.0` | `1.0.0.2019_0926_121356_0000020490` | 올바르게 형식화된 원래 버전 |
 | `1.0.0-SNAPSHOT` | `2019.926.121356.0000020490` | 스냅샷 버전, 덮어쓰기 |

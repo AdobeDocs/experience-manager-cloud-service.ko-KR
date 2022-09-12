@@ -5,7 +5,7 @@ exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 준비된 제품 카탈로그 경험을 관리하는 방법을 알아봅니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 AEM Content and Commerce 여정의 이전 문서에서, [제품 카탈로그 페이지 및 템플릿 관리](catalog-templates.md), 템플릿을 기반으로 제품 카탈로그 경험을 관리 및 구축하는 방법을 알아보았습니다.
 
@@ -57,14 +57,14 @@ AEM Launches에서 준비된 제품 데이터에 대한 컨텐츠를 만들 수 
 
 ![단계 선택기](assets/staged-picker.png)
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
 
 * launches에서 준비된 제품 카탈로그 및 컨텐츠의 개념 이해
 * 제품 조종실 및 편집기를 통해 준비된 제품 카탈로그 데이터에 액세스할 수 있습니다.
 
-이제 관리할 준비가 되었습니다. [제품 경험](product-experience-management.md). 그러나 AEM 컨텐츠 및 상거래 에는 다양한 추가 옵션이 있습니다. 에서 사용할 수 있는 추가 리소스 중 일부를 확인하십시오 [추가 리소스 섹션](#additional-resources) 추가 정보를 확인하십시오.
+이제 관리할 준비가 되었습니다. [제품 경험](product-experience-management.md). 그러나 AEM 컨텐츠 및 상거래 에는 다양한 추가 옵션이 있습니다. 이 여정에서 확인한 기능들에 대한 자세한 내용은 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오.
 
 ## 추가 리소스 {#additional-resources}
 

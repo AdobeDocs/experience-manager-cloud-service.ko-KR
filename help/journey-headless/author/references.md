@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -24,7 +24,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 * **Audience**: 고급
 * **목표**: 헤드리스 CMS 작성에 대한 참조를 도입합니다. 어떤 종류의 참조를 사용할 수 있으며 그 목적은 무엇입니까?
 
-   * 컨텐츠 참조
+   * 콘텐츠 참조
    * 자산/미디어 참조
    * 조각 참조
    * 텍스트 블록 내에서 Ad Hoc 참조
@@ -37,7 +37,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 
 ![컨텐츠 조각 - 참조](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
-## 컨텐츠 참조 {#content-references}
+## 콘텐츠 참조 {#content-references}
 
 컨텐츠 참조는 다른 컨텐츠를 참조할 수 있도록 해줍니다. 이렇게 하면 컨텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
 
@@ -90,13 +90,13 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 
 ### 중첩된 조각을 탐색하는 방법 {#navigate-nested-fragment}
 
-사용 **구조 트리** 컨텐츠 조각 편집기의 탭에서는 조각에서 참조한 조각을 탐색한 다음, 조각이 포함할 수 있는 참조를 통해 이동할 수 있습니다. 참조를 선택하면 해당 조각이 편집을 위해 열립니다.
+사용 **구조 트리** 컨텐츠 조각 편집기의 탭에서는 조각에서 참조한 조각을 탐색한 다음, 조각이 포함할 수 있는 참조를 통해 이동할 수 있습니다. 참조를 선택하면 편집용 조각이 열립니다.
 
 >[!NOTE]
 >
 >기본 패널에서 탐색 표시를 사용하여 시작 지점으로 다시 이동할 수 있습니다.
 
-![컨텐츠 조각 구조 트리](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![콘텐츠 조각 구조 트리](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## 애드혹 참조 {#adhoc-references}
 
@@ -119,7 +119,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
       * [콘텐츠 조각 만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
    * [변형 - 컨텐츠 조각 작성](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [컨텐츠 조각 모델 - 데이터 유형](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 

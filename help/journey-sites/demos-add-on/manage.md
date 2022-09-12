@@ -3,7 +3,7 @@ title: 데모 사이트 관리
 description: 내 데모 사이트를 관리하는 데 도움이 되는 도구 및 이를 제거하는 방법에 대해 알아봅니다.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 100%
 

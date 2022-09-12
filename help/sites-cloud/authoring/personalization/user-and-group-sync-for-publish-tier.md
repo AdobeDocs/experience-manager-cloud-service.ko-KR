@@ -1,9 +1,9 @@
 ---
-title: '등록, 로그인 및 사용자 프로필 '
+title: 등록, 로그인 및 사용자 프로필
 description: AEM as a Cloud Service의 등록, 로그인, 사용자 데이터 및 그룹 동기화에 대해 알아봅니다.
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 다음과 같은 두 가지 접근 방식을 통해 로그인을 구현할 수 있습니다.
 
-### AEM Managed {#aem-managed-implementation}
+### AEM 관리 {#aem-managed-implementation}
 
 고객은 사용자 정의 구성 요소를 작성할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 

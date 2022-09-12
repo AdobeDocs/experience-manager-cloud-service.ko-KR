@@ -4,8 +4,8 @@ description: Adobe Experience Manager Cloud Service에 배포할 패키지 구�
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2930'
+ht-degree: 13%
 
 ---
 

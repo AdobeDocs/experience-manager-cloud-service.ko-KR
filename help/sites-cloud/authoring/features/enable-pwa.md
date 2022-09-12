@@ -3,7 +3,7 @@ title: 점진적 웹 앱 기능 활성화
 description: 콘텐츠 작성자는 AEM Sites를 사용하여 코딩이 아닌 간단한 구성을 통해 모든 사이트에 대해 점진적 웹 앱 기능을 활성화할 수 있습니다.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 100%
 

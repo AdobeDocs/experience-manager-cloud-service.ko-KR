@@ -17,7 +17,7 @@ ht-degree: 19%
 
 디스플레이가 준비되고 채널에 컨텐츠를 추가하고 게시하면 디스플레이에 채널을 할당하는 방법을 이해하는 데 도움이 됩니다. 읽기 후에는 Screens 서비스 제공업체에서 디스플레이에 채널을 할당하는 방법을 이해할 수 있어야 합니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 디스플레이에 채널을 지정하려면 아래 단계를 수행해야 합니다.
 
@@ -66,6 +66,6 @@ ht-degree: 19%
    ![이미지](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 디스플레이에 채널을 지정했으므로, 다음 번에 문서를 검토하여 스크린 as a Cloud Service 여정을 계속해야 합니다 [AEM as a Cloud Service Screens 플레이어 설치 및 구성](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

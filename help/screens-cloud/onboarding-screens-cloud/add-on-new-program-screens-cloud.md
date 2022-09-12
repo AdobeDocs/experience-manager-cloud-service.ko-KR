@@ -5,7 +5,7 @@ exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -45,6 +45,6 @@ Cloud Manager의 새 프로그램에 추가 기능으로 화면을 추가하려�
 
    ![이미지](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 기존 Cloud Manager 프로그램에 Screens를 추가 기능으로 추가하는 방법을 학습하고 Cloud Manager의 프로그램 및 제품에 따라 프로그램을 확인하면 이제 온보딩 프로세스의 다음 단계로 이동할 수 있습니다. [Cloud Manager에서 프로젝트에 대한 분기 만들기](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

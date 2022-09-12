@@ -186,7 +186,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 을(를) 선택합니다 **[!UICONTROL 가져오기 모드]**. 선택 **건너뛰기**, **바꾸기**, 또는 **버전 만들기**. 건너뛰기 모드는 기본값이며 이 모드에서는 자산이 이미 존재하는 경우 수집기가 자산을 가져오기 위해 건너뜁니다. 의 의미 보기 [버전 바꾸기 및 만들기 옵션](#handling-upload-existing-file).
 
-1. DAM에서 을 사용하여 자산을 가져올 위치를 정의할 경로를 지정합니다. **[!UICONTROL 자산 Target 폴더]** 필드. 예, `/content/dam/imported_assets`.
+1. DAM에서 을 사용하여 자산을 가져올 위치를 정의할 경로를 지정합니다. **[!UICONTROL 자산 Target 폴더]** 필드. (예: `/content/dam/imported_assets`)
 
 1. (선택 사항) CSV 형식으로 제공되는 가져올 메타데이터 파일을 **[!UICONTROL 메타데이터 파일]** 필드. 소스 Blob 위치에 CSV 파일을 지정하고 벌크 가져오기 도구를 구성하는 동안 경로를 참조하십시오. 이 필드에서 참조되는 CSV 파일 형식은 CSV 파일 형식 및 [자산 메타데이터 일괄적으로 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 을(를) 선택하는 경우 **가져온 후 소스 파일 삭제** 옵션을 선택하는 경우 **제외** 또는 **MIME 유형 포함** 또는 **경로/파일별 필터링** 필드. 정규 표현식을 사용하여 이러한 필드에 있는 CSV 파일을 필터링할 수 있습니다.
 

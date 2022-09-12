@@ -3,7 +3,7 @@ title: 작성 환경 및 도구
 description: AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2154'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: 미리보기 - JSON 표현식
 description: AEM Headless 솔루션을 구현할 때 콘텐츠 조각의 JSON 표현식을 쉽게 미리 보는 방법에 대해 알아봅니다.
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 

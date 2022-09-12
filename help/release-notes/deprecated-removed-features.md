@@ -3,7 +3,7 @@ title: 더 이상 사용되지 않는/제거된 기능
 description: ' [!DNL Adobe Experience Manager]  [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 기능에 관련된 릴리스 정보입니다.'
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 100%
 

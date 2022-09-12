@@ -282,13 +282,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 버전, 댓글 및 주석에 대한 정보 보기
 * 버전에 대한 작업
 
-   * **[이 버전으로 되돌리기](#reverting-to-a-version)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[이 버전으로 되돌리기](#reverting-to-a-version)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **[현재 항목에 비교](#comparing-fragment-versions)**(기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **[현재 항목에 비교](#comparing-fragment-versions)** (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **레이블** 및/또는 **댓글** 추가(기존 조각을 선택한 후 특정 버전을 선택합니다.)
+   * **레이블** 및/또는 **댓글** 추가 (기존 조각을 선택한 후 특정 버전을 선택합니다.)
 
-   * **다른 버전으로 저장**(기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
+   * **다른 버전으로 저장** (기존 조각을 선택한 후 타임라인 하단의 위쪽 화살표를 선택합니다.)
 
 * 주석에 대한 작업
 
@@ -316,9 +316,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 이 옵션을 선택하면 다음 항목이 열립니다.
 
-* **현재**(최신) 버전(왼쪽)
+* **현재** (최신) 버전 (왼쪽)
 
-* 선택한 버전 **v&lt;*x.y*>**(오른쪽)
+* 선택한 버전 **v&lt;*x.y*>** (오른쪽)
 
 이는 나란히 표시되며, 여기에서
 

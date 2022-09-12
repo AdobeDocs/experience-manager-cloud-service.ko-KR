@@ -3,7 +3,7 @@ title: 페이지에 워크플로 적용
 description: 작성 시 페이지에서 수행할 워크플로를 불러올 수 있습니다. 하나 이상의 워크플로를 적용할 수도 있습니다.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 

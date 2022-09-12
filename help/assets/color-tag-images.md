@@ -5,7 +5,7 @@ exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 3%
 
 ![색상 태깅 배너](assets/banner-image.png)
 
-Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이미지의 색상을 구별하고 수집 시 자동으로 태그로 적용합니다. 이러한 태그는 이미지 색상 구성에 따라 향상된 검색 환경을 제공합니다.
+Experience Manager Assets은 Adobe Sensei AI 기능을 사용하여 이미지의 색상을 구별하고 수집 시 자동으로 태그로 적용합니다. 이러한 태그를 통해 이미지 색상 구성에 따라 향상된 검색 환경을 사용할 수 있습니다.
 
-이미지에 태그가 지정된 색상의 수를 1~40개 범위에서 구성할 수 있으므로 나중에 해당 색상을 기준으로 이미지를 검색할 수 있습니다. Experience Manager Assets은 이미지의 색상 범위를 기반으로 태그를 적용합니다. 색상 태그에 대한 표시 형식을 구성할 수도 있습니다.
+이미지에 태그 지정되는 색상 수를 1~40개 범위에서 구성하여 나중에 해당 색상을 기준으로 이미지를 검색할 수 있습니다. Experience Manager Assets은 이미지의 색상 범위를 기반으로 태그를 적용합니다. 색상 태그에 대한 표시 형식을 구성할 수도 있습니다.
 
 다음 그림은 Experience Manager Assets에서 이미지에 대한 색상 태깅을 구성하고 관리하기 위해 수행하는 작업 순서를 보여줍니다.
 

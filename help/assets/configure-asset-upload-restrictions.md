@@ -1,14 +1,15 @@
 ---
-title: 자산 업로드 제한 구성
-description: 'MIME 유형에 따라 사용자가 업로드할 수 있는 자산 유형을 제한하도록 Adobe Experience Manager Assets를 구성합니다. 원치 않는 포맷과 악성 파일이 우발적으로 업로드되는 것을 방지할 수 있습니다. '
-source-git-commit: 3be29e4f76b53b4be7815e50ec42c627fec84b68
+title: 에셋 업로드 제한 사항 구성
+description: MIME 유형에 따라 사용자가 업로드할 수 있는 자산 유형을 제한하도록 Adobe Experience Manager Assets를 구성합니다. 원치 않는 포맷과 악성 파일이 우발적으로 업로드되는 것을 방지할 수 있습니다.
+exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
+source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# 자산 업로드 제한 구성 {#configure-asset-upload-restrictions}
+# 에셋 업로드 제한 사항 구성 {#configure-asset-upload-restrictions}
 
 MIME 유형에 따라 사용자가 업로드할 수 있는 자산 유형을 제한하도록 Adobe Experience Manager Assets를 구성할 수 있습니다.
 
@@ -38,7 +39,7 @@ MIME 유형에 따라 사용자가 업로드할 수 있는 자산 유형을 제�
 
 모든 형식의 이미지를 업로드하고 Experience Manager Assets에 PDF 파일을 업로드하도록 허용하려면 다음 설정을 수행합니다.
 
-![자산 업로드 제한](assets/asset-upload-restrictions.png)
+![에셋 업로드 제한 사항](assets/asset-upload-restrictions.png)
 
 `image/*` mime 유형으로 모든 형식의 이미지를 업로드할 수 있습니다. `application/pdf` mime 유형으로 Experience Manager Assets에 PDF 파일을 업로드할 수 있습니다.
 
@@ -49,7 +50,3 @@ MIME 유형에 따라 사용자가 업로드할 수 있는 자산 유형을 제�
 ![자산 제한](assets/asset-restrictions.png)
 
 이미지에 표시된 설정에 따라 .JPG, .PNG 및 .GIF 형식의 이미지를 Experience Manager Assets에 업로드할 수 있습니다.
-
-
-
-

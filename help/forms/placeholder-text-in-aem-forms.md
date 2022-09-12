@@ -1,5 +1,5 @@
 ---
-title: '의 자리 표시자 텍스트 [!DNL AEM Forms] '
+title: 의 자리 표시자 텍스트 [!DNL AEM Forms]
 description: 자리 표시자 텍스트는 컨트롤에 값이 없을 때 사용자에게 데이터 항목을 제공하기 위한 것입니다. 샘플 값이거나 예상 형식에 대한 간단한 설명일 수 있습니다.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt

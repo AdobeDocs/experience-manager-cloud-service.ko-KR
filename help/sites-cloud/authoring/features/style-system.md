@@ -3,7 +3,7 @@ title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 콘텐츠 작성자가 선택할 수 있도록 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 100%
 
@@ -155,6 +155,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 >1. HTL이 모든 것에 우선합니다. `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 그런 다음 여러 활성 스타일 중에서 구성 요소의 정책에 구성된 스타일 목록의 첫 번째 스타일이 적용됩니다.
 >1. 마지막으로 구성 요소의 `cq:htmlTag`/ `cq:tagName`은 폴백 값으로 간주됩니다.
+
 >
 
 

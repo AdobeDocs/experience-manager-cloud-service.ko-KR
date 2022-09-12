@@ -5,7 +5,7 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 이 선택적 연속 [AEM Headless Developer 여정,](overview.md) AEM에서 헤드리스 게재를 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만들고 외부 SPA을 통합하여 필요에 따라 편집 기능을 활성화하는 방법을 살펴볼 수 있습니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 이 시점에서 전체 [AEM Headless Developer 여정](overview.md) 다음을 이해할 수 있도록 AEM에서 헤드리스 전달의 기본 사항을 이해합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 ## 목표 {#objective}
 
-이 문서는 AEM SPA 편집기 프레임워크를 사용하여 단일 페이지 애플리케이션을 개발하는 방법을 이해하는 데 도움이 됩니다. 이 문서를 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 AEM SPA 편집기 프레임워크를 사용하여 단일 페이지 애플리케이션을 개발하는 방법을 이해하는 데 도움이 됩니다. 이 문서를 읽고 나면
 
 * SPA 편집기의 기본 기능을 이해합니다.
 * 편집 가능한 SPA for AEM을 빌드하기 위한 요구 사항을 알아봅니다.
@@ -118,7 +118,7 @@ AEM에서 사용하려면 기존 SPA을 조정해야 하는 경우 다음 문서
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 이 문서에서 언급된 몇 가지 개념을 자세히 설명하는 몇 가지 추가 리소스입니다.
+다음은 이 문서에서 언급한 몇 가지 개념에 대해 자세히 설명하는 몇 가지 추가 리소스입니다.
 
 * [AEM의 헤드리스 및 헤드리스](/help/implementing/developing/headful-headless.md) - AEM에서 사용할 수 있는 다양한 게재 모델에 대한 설명입니다
 * [SPA 소개 및 워크스루.](/help/implementing/developing/hybrid/introduction.md) AEM에서 SPA을 잘 소개하다

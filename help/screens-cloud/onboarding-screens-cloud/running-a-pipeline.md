@@ -5,7 +5,7 @@ exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -54,6 +54,6 @@ ht-degree: 7%
 
    ![이미지](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 Cloud Manager에서 프로그램에 대한 환경을 설정하는 방법을 학습하면 이제 온보딩 프로세스의 다음 단계로 이동할 수 있으며, [Screens 서비스 공급자로 이동](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).

@@ -1,5 +1,5 @@
 ---
-title: '샌드박스 프로그램 소개 '
+title: 샌드박스 프로그램 소개
 description: 샌드박스 프로그램은 프로덕션 프로그램과 어떻게 다른지 알아봅니다.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: 05cba12cdd14c2e29f6a471047ce95fcf720abc4

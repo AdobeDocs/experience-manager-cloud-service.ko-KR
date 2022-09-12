@@ -1,7 +1,7 @@
 ---
 title: 적응형 Forms, PDF forms 및 기타 자산 가져오기, 내보내기 및 구성
 seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
-description: '적응형 Forms 및 자산을 AEM 인스턴스로 마이그레이션하려고 합니까? 에서 응용 Forms, PDF forms, 테마 및 기타 지원 자산을 가져오고 내보내는 방법을 알아봅니다 [!DNL AEM Forms] 인스턴스. '
+description: 적응형 Forms 및 자산을 AEM 인스턴스로 마이그레이션하려고 합니까? 에서 응용 Forms, PDF forms, 테마 및 기타 지원 자산을 가져오고 내보내는 방법을 알아봅니다 [!DNL AEM Forms] 인스턴스.
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0

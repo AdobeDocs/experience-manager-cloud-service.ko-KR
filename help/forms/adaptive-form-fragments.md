@@ -197,7 +197,7 @@ XFA 양식 템플릿 또는 XSD 복합 유형을 사용하여 적응형 양식 �
    <td><p>선택한 조각을 다운로드합니다.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>미리 보기</p> </td>
+   <td><p>미리보기</p> </td>
    <td><p>XML 파일의 데이터를 조각과 병합하여 조각을 HTML 또는 사용자 지정 미리 보기로 미리 보는 옵션을 제공합니다. <!-- For more information, see <a href="previewing-forms.md" target="_blank">Previewing a form</a>.<br /> <br /> --></p> </td>
   </tr>
   <tr>

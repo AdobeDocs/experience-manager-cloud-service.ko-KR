@@ -126,7 +126,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 1. 관리자 액세스 권한 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 처리 프로필]**. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 클릭 **[!UICONTROL 사용자 지정]** 탭. 클릭 **[!UICONTROL 새로 추가]**. 표현물의 원하는 파일 이름을 입력합니다.
-1. 다음 정보를 제공합니다.
+1. 다음 정보를 입력하십시오.
 
    * 각 변환의 파일 이름 및 지원되는 파일 확장자입니다.
    * [Firefly 사용자 지정 앱의 끝점 URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 앱은 Experience Manager 계정이 있는 조직과 동일해야 합니다.

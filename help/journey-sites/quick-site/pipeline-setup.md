@@ -3,7 +3,7 @@ title: 파이프라인 설정
 description: 프론트엔드 파이프라인을 만들어 사이트 테마의 맞춤화를 관리할 수 있습니다.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 100%
 

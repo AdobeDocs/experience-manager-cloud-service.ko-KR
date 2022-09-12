@@ -3,7 +3,7 @@ title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: def7f7071dac447397f40186de1380b8e5575608
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 100%
 

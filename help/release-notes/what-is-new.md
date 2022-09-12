@@ -27,5 +27,5 @@ Assets에 대한 개요를 알려면 [Assets as a Cloud Service 소개](/help/as
 이전 AEM 버전에 익숙한 경우 AEM as a Cloud Service의 주요 변경 사항에 대한 개요를 알려면 다음을 참조하십시오.
 
 * [AEM as a Cloud Service에 대한 주요 변경 내용(릴리스 정보)](/help/release-notes/aem-cloud-changes.md)
-* [AEM Sites as a Cloud Service에 대한 주요 변경 내용](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Sites as a Cloud Service의 주요 변경 사항](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service에 대한 주요 변경 내용](/help/assets/assets-cloud-changes.md)

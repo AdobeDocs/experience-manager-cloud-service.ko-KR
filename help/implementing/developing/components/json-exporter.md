@@ -1,6 +1,6 @@
 ---
 title: 콘텐츠 서비스에 대한 JSON 내보내기
-description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 컨텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 게재할 수 있습니다.
+description: AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘텐츠 설명 및 게재를 일반화하기 위해 디자인되었습니다. 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠를 게재할 수 있습니다.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
@@ -13,9 +13,9 @@ ht-degree: 31%
 
 AEM Content Services는 웹 페이지의 초점 외에 AEM 내/에서 컨텐츠의 설명 및 전달을 일반화하도록 설계되었습니다.
 
-모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 컨텐츠를 게재할 수 있습니다. 이러한 채널에는 다음과 같은 것들이 포함될 수 있습니다.
+모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠를 게재할 수 있습니다. 이러한 채널에는 다음과 같은 것들이 포함될 수 있습니다.
 
-* SPA(Single Page Applications)
+* SPA (Single Page Applications)
 * 기본 모바일 애플리케이션
 * AEM 외부의 기타 채널 및 터치 포인트
 
@@ -67,7 +67,7 @@ AEM 내에서 선택기를 사용하여 게재를 수행합니다 `model` 및 `.
 
 ### 추가 정보 {#further-information}
 
-추가 참조:
+또한 Headless 개념 및 용어 소개가 포함되어 있는
 
 * Assets HTTP API
    * [자산 HTTP API](/help/assets/developer-reference-material-apis.md)
@@ -83,4 +83,4 @@ AEM 내에서 선택기를 사용하여 게재를 수행합니다 `model` 및 `.
 * [콘텐츠 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 그리고 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko-KR)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 그리고 [컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

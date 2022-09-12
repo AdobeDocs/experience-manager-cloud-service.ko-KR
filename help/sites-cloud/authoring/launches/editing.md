@@ -3,7 +3,7 @@ title: 론치 편집
 description: 페이지(또는 페이지 세트)에 대한 론치를 만들면 페이지의 론치 카피에서 콘텐츠를 편집할 수 있습니다.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 100%
 

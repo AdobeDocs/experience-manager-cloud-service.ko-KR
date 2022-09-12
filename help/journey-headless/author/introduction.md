@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 CMS(Content Management System)는 컨텐츠 관리에 사용되는 컴퓨터 시스템이라는 뜻입니다. 이는 일반적으로 웹 사이트에서 사용할 수 있도록 하려는 컨텐츠를 관리하는 데 사용됩니다. 더 자세하게는 일반적으로 웹 사이트에서 사용할 수 있는 컨텐츠를 관리하는 데 사용됩니다.
 
-## 헤드리스 CMS {#headless-cms}
+## Headless CMS {#headless-cms}
 
 헤드리스는 컨텐츠를 웹에 표시하는 방식에서 효과적으로 컨텐츠를 탐지하는 시스템을 설명하는 데 사용되는 용어입니다.
 
@@ -69,7 +69,7 @@ AEM의 경우 컨텐츠 설계자 역할(종종 다른 사람)은 데이터 모�
 >
 >데이터 모델링에 대해 자세히 알려면 AEM Headless Content Architect 여정 아래에서 자세히 읽어볼 수 있습니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 개념과 용어를 학습했으므로 다음 단계는 다음과 같습니다 [컨텐츠 조각 작성에 대한 기본 사항을 알아봅니다](basics.md). 이렇게 하면 컨텐츠 조각을 작성하는 방법과 함께 AEM의 기본 처리가 도입됩니다.
 

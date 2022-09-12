@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # 적응형 양식에 대한 JSON 스키마 디자인 {#creating-adaptive-forms-using-json-schema}
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 JSON 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려면 JSON 스키마에 대한 기본적인 이해가 필요합니다. 이 문서 전에 다음 내용을 읽는 것이 좋습니다.
 

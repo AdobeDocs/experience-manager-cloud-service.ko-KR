@@ -3,7 +3,7 @@ title: 계정 환경 구성
 description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
 

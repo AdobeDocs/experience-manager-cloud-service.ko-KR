@@ -3,7 +3,7 @@ title: 활동 관리
 description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 100%
 

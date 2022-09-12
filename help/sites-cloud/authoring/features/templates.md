@@ -3,7 +3,7 @@ title: 페이지 템플릿 만들기
 description: 템플릿은 결과 페이지의 구조를 정의하며, 템플릿 편집기를 사용하여 템플릿을 만들고 유지 관리하는 것은 더 이상 개발자 전용 작업이 아닙니다.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4596'
 ht-degree: 100%
 

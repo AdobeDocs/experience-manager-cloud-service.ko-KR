@@ -23,7 +23,7 @@ AEM as a Cloud Service 릴리스 2020.6.0에 있는 AEM Sites의 새로운 기�
 
 ### 새로운 기능 {#whats-new-2020.6.0}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.9.0은 이제 다음을 포함하여 AEM Sites의 일부로 사용할 수 있습니다.
 
 * [Adobe 클라이언트 데이터 레이어](https://github.com/adobe/adobe-client-data-layer)와 핵심 구성 요소 간의 통합
 * 모든 구성 요소에 대해 구성 가능한 HTML ID 속성

@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 프로그램을 편집하려면 다음 단계를 따르십시오.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 편집할 프로그램을 클릭하여 세부 정보를 표시합니다.
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 샌드박스 프로그램을 삭제하려면 다음 단계를 따르십시오.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 편집할 프로그램을 클릭하여 세부 정보를 표시합니다.
 

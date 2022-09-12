@@ -5,7 +5,7 @@ exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -38,6 +38,6 @@ ht-degree: 3%
 
    ![이미지](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 Cloud Manager에서 프로그램에 대한 환경을 설정하는 방법을 학습하면 이제 온보딩 프로세스의 다음 단계로 이동할 수 있으며, [파이프라인 실행](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 description: Adobe Experience Manager as a Cloud Service에 대한 IMS 지원
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
 

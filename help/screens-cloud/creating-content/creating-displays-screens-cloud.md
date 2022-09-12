@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ## 목표 {#objective}
 
-이 문서는 Screens 서비스 공급자에서 디스플레이를 만들고 관리하는 방법을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 Screens 서비스 공급자에서 디스플레이를 만들고 관리하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
 * 디스플레이를 만들고 삭제하는 방법을 이해합니다
 * 디스플레이를 폴더로 구성하는 방법을 이해합니다
@@ -131,6 +131,6 @@ Screens 서비스 공급자에서 디스플레이를 생성하려면 아래 절�
 1. 을(를) 클릭합니다. **삭제** 작업 표시줄에서 작업을 수행합니다. 폴더가 비어 있지 않으면 작업이 비활성화됩니다.
 
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 프로젝트용 디스플레이를 만들고 관리하는 방법을 배웠으므로, 다음 번에 문서를 검토하여 Screens as a Cloud Service 여정을 계속해야 합니다 [화면의 디스플레이에 채널 as a Cloud Service 할당](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).

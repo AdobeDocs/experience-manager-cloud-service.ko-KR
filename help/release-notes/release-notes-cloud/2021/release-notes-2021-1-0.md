@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 릴리스의 릴리스 노트'
-description: '"[!DNL Adobe Experience Manager] 2021.1.0용 as a Cloud Service 릴리스 노트"'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.1.0 릴리스 정보입니다.'
+description: "[!DNL Adobe Experience Manager] 2021.1.0용 as a Cloud Service 릴리스 노트"
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 7%
+ht-degree: 14%
 
 ---
 
@@ -90,22 +90,22 @@ AEM as a Cloud Service 2021.1.0의 Cloud Manager 릴리스 날짜는 2021년 1�
 
 * 서버 간 인증된 API 호출 - 적절한 액세스 토큰을 생성하여 외부 애플리케이션과 AEM as a Cloud Service 환경 간에 인증된 서버 간 API 호출을 생성합니다. 자세한 내용 읽기 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 또는 컨설팅 [튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
 
-### SDK 빌드 분석기 {#sdk-build-analyzers}
+### SDK Build Analyzer {#sdk-build-analyzers}
 
-AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속성을 포함하여 전문 프로젝트의 문제를 감지합니다. Cloud Manager를 사용하여 클라우드 환경에 배포하기 전에 개발자에게 로컬 개발 중에 문제를 발견할 수 있는 기회를 제공합니다.
+AEM as a Cloud Service SDK Build Analyzer Maven 플러그인은 누락된 종속성을 포함하여 Maven 프로젝트의 문제를 감지합니다. Cloud Manager를 사용하여 클라우드 환경에 배포하기 전에 개발자에게 로컬 개발 중에 문제를 발견할 수 있는 기회를 제공합니다.
 
 이 릴리스에 대해 두 개의 새로운 분석 기능이 추가되었습니다.
 
 * 포인트 분석기
 * bundle-nativecode
 
-자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko-KR#developing).
+자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ko-KR#developing)에서 설명서를 참조하십시오.
 
 ## 클라우드 전환 도구 {#code-transition-tools}
 
 ### 릴리스 날짜 {#release-date-ctt}
 
-컨텐츠 전송 도구 v1.2.2의 릴리스 날짜는 2021년 2월 1일입니다.
+콘텐츠 전송 도구 v1.2.2의 릴리스 날짜는 2021년 2월 01일입니다.
 
 ### [!DNL Content Transfer Tool]의 새로운 기능 {#what-is-new-ctt}
 

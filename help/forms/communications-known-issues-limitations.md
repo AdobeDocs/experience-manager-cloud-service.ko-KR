@@ -169,7 +169,7 @@ Communications API를 사용하는 동안 수정된 XCI 파일을 전달할 수 
 
 
 
-## 우수 사례
+## 모범 사례
 
 * Adobe은 AEM Cloud Service에서 사용하는 클라우드 영역에서 데이터 파일 blob 컨테이너 저장소를 호스팅하도록 권장합니다.
 

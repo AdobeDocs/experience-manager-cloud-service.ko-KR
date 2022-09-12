@@ -115,7 +115,7 @@ PID를 사용하여 OSGi Factory 구성 파일 만들기
       1. 로컬 개발 인스턴스에서 `/system/console/configMgr`, 이름이 인 공장 OSGi 구성을 선택합니다. **[!UICONTROL Apache Sling 컨텍스트 인식 구성 무시 공급자: OSGi 구성]**.
       1. 설명을 제공합니다.
       1. 선택 **[!UICONTROL 활성화됨]**.
-      1. 재정의에서 sling 재정의 구문의 환경을 기반으로 변경해야 하는 필드를 제공합니다. 자세한 내용은 [Apache Sling 컨텍스트 인식 구성 - 재정의](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 예, `cloudconfigs/fdm/{configName}/url="newURL"`.
+      1. 재정의에서 sling 재정의 구문의 환경을 기반으로 변경해야 하는 필드를 제공합니다. 자세한 내용은 [Apache Sling 컨텍스트 인식 구성 - 재정의](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). (예: `cloudconfigs/fdm/{configName}/url="newURL"`)
 여러 항목을 선택하여 추가할 수 있습니다 **[!UICONTROL +]**.
       1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
       1. OSGi 구성 JSON을 가져오려면 다음 단계를 수행하십시오. [AEM SDK Quickstart를 사용하여 OSGi 구성 생성](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).

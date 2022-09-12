@@ -1,11 +1,11 @@
 ---
-title: '샌드박스 프로그램 만들기 '
+title: 샌드박스 프로그램 만들기
 description: Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적으로 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 다음 단계에 따라 샌드박스 프로그램을 만듭니다.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. Cloud Manager의 랜딩 페이지에서 클릭 **프로그램 추가** 화면 오른쪽 상단 모서리에서 을(를) 클릭합니다.
 

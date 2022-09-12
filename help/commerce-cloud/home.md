@@ -5,8 +5,8 @@ landing-page-description: Experience Manager 콘텐츠 및 상거래 as a Cloud 
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
 
@@ -35,9 +35,9 @@ Experience Manager 콘텐츠 및 상거래 as a Cloud Service를 사용하고 �
 | [사이트 사용 안내서](/help/sites-cloud/home.md) | Experience Manager Sites as a Cloud Service를 관리하는 방법을 이해합니다. |
 | [자산 사용 안내서](/help/assets/home.md) | Experience Manager Assets as a Cloud Service를 관리하는 방법을 이해합니다. |
 | [구현 사용 안내서](/help/implementing/home.md) | 개발 및 배포 항목을 살펴보고 AEM의 강력한 기능을 사용하여 경험을 구축하고 맞춤화하는 방법에 대해 알아봅니다. |
-| [헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 헤드리스 기능을 통한 가이드 여정을 살펴보고 귀하의 첫 헤드리스 프로젝트를 준비하십시오. |
+| [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | AEM의 강력하고 유연한 Headless 기능을 통한 가이드 여정을 살펴보고 귀하의 첫 Headless 프로젝트를 준비하십시오. |
 | [커넥터 사용 안내서](/help/connectors/home.md) | Experience Manager as a Cloud Service에 솔루션을 통합하는 방법을 알아봅니다. |
-| [작업 사용 안내서](/help/operations/home.md) | 색인 지정 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
+| [작업 사용 안내서](/help/operations/home.md) | 색인화 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
 
 ## 기타 Experience Manager 리소스 {#other-resources}
 

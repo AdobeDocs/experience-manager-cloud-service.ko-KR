@@ -3,7 +3,7 @@ title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5342'
 ht-degree: 100%
 

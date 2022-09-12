@@ -13,7 +13,7 @@ ht-degree: 4%
 
 의 이 부분에서 [AEM Headless Developer 여정,](overview.md) AEM Headless로 직접 프로젝트를 시작하는 데 필요한 사항에 대해 알아봅니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 AEM 헤드리스 여정의 이전 문서에서, [CMS 헤드리스 개발에 대해 알아보기](learn-about.md) 헤드리스 CMS가 무엇인지에 대한 기본 이론을 배우셨고, 이제
 
@@ -25,7 +25,7 @@ AEM 헤드리스 여정의 이전 문서에서, [CMS 헤드리스 개발에 대�
 
 ## 목표 {#objective}
 
-이 문서는 프로젝트 컨텍스트에서 AEM 헤드리스를 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 프로젝트 컨텍스트에서 AEM 헤드리스를 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
 * AEM 헤드리스 기능의 기본 사항을 이해합니다.
 * AEM 헤드리스 기능을 사용하기 위한 사전 요구 사항을 알아봅니다.
@@ -148,8 +148,8 @@ SPA 편집기를 사용하면 SPA에서 AEM의 컨텐츠를 소비할 뿐만 아
 개별 프로젝트에 대한 역할은 다르지만, AEM 헤드리스 개발 컨텐츠에서 고려해야 할 중요한 역할은 다음과 같습니다.
 
 * [관리자](#administrator)
-* [컨텐츠 작성자](#content-author)
-* [컨텐츠 설계자](#content-architect)
+* [콘텐츠 작성자](#content-author)
+* [콘텐츠 설계자](#content-architect)
 * [개발자](#developer)
 
 #### 관리자 {#administrator}
@@ -160,7 +160,7 @@ SPA 편집기를 사용하면 SPA에서 AEM의 컨텐츠를 소비할 뿐만 아
 
 관리자는 AEM을 설정하고 런타임 환경을 준비하여 사용하도록 설정해야 합니다 [컨텐츠 작성자](#content-author) 컨텐츠를 만들고 업데이트하기 [개발자](#developer) 경험 애플리케이션에 대한 컨텐츠를 가져오거나 수정하는 API를 사용하기 위해.
 
-#### 컨텐츠 작성자 {#content-author}
+#### 콘텐츠 작성자 {#content-author}
 
 컨텐츠 작성자는 AEM에서 헤드라인으로 전달하는 콘텐츠를 만들고 관리합니다. 컨텐츠 작성자는 컨텐츠 조각 및 자산 콘솔과 같은 AEM 기능을 사용하여 컨텐츠를 관리합니다.
 
@@ -212,7 +212,7 @@ AEM을 사용하면 유연한 컨텐츠 구조를 만들 수 있으며 계층 �
 
 일반적인 경험상 컨텐츠 조각 참조는 5개 수준 이상으로 중첩되어서는 안 됩니다.
 
-#### 컨텐츠 설계자 {#content-architect}
+#### 콘텐츠 설계자 {#content-architect}
 
 컨텐츠 설계자는 헤드리스 없이 전달해야 하는 데이터에 대한 요구 사항을 분석하고 이 데이터의 구조를 정의합니다. 이러한 구조체들을 라고 합니다 [컨텐츠 조각 모델](#content-fragment-models) AEM에서 확인하십시오. 컨텐츠 조각 모델은 컨텐츠 작성자가 만드는 컨텐츠 조각의 기초로 사용됩니다.
 
@@ -277,7 +277,7 @@ AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수�
 
 * [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
 * [Adobe Experience Manager as a Cloud Service 건축 소개](/help/overview/architecture.md) AEM as a Cloud Service 구조 이해
-* [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko-KR) - 이 실습 자습서를 통해 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
+* [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 자습서를 통해 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
 * [GraphQL API를 사용한 헤드리스 컨텐츠 관리](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM에서 구현된 GraphQL API에 대한 개요를 알려면 이 과정을 따르십시오. AdobeID를 통한 인증이 필요합니다.
 * [AEM 안내서 WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 이 GitHub 프로젝트에는 AEM GraphQL API를 강조 표시하는 예제 애플리케이션이 포함되어 있습니다.
 * [작성 개념](/help/sites-cloud/authoring/getting-started/concepts.md) - 작성자-게시 설정에 대한 세부 정보를 포함하여 AEM 작성 환경을 위한 기술 설명서

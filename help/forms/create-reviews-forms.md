@@ -1,7 +1,7 @@
 ---
 title: 양식의 자산에 대한 검토 만들기 및 관리
 seo-title: Creating and managing reviews for assets in forms
-description: '검토는 한 명 이상의 검토자가 양식에서 사용할 수 있는 자산에 대해 주석을 달 수 있는 메커니즘입니다. '
+description: 검토는 한 명 이상의 검토자가 양식에서 사용할 수 있는 자산에 대해 주석을 달 수 있는 메커니즘입니다.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference

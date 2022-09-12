@@ -1,6 +1,6 @@
 ---
-title: ' 설치  [!DNL Workfront for Experience Manager enhanced connector]'
-description: ' 설치  [!DNL Workfront for Experience Manager enhanced connector]'
+title: 설치  [!DNL Workfront for Experience Manager enhanced connector]
+description: 설치  [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a

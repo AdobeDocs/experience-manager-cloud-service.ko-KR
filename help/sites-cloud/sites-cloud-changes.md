@@ -3,7 +3,7 @@ title: AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용
 description: AEM Cloud Service의 AEM Sites에 대한 주요 변경 내용
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
 

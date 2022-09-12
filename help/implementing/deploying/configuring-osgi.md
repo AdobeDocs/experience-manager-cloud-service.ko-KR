@@ -122,7 +122,7 @@ Adobe Experience Manager as a Cloud Service에서 사용할 수 있는 OSGi 구�
    }
    ```
 
-   단일 OSGi 구성 파일은 이러한 구성 값 유형의 조합을 함께 사용할 수 있습니다. 예:
+   단일 OSGi 구성 파일은 이러한 구성 값 유형의 모든 조합을 함께 사용할 수 있습니다. 예:
 
    ```json
    {

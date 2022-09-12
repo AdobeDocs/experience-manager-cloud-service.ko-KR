@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL AEM Forms] as a Cloud Service 릴리스 정보"'
-description: '"[!DNL AEM Forms] as a Cloud Service 릴리스 정보"'
+title: "[!DNL AEM Forms] as a Cloud Service 릴리스 정보"
+description: "[!DNL AEM Forms] as a Cloud Service 릴리스 정보"
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt

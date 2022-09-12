@@ -3,7 +3,7 @@ title: 에셋 폴더 만들기 - Headless 설정
 description: AEM 콘텐츠 조각 모델을 사용하여 Headless 콘텐츠의 기반이 되는 콘텐츠 조각의 구조를 정의합니다.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 

@@ -5,7 +5,7 @@ exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -40,6 +40,6 @@ ht-degree: 3%
 
    ![이미지](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 Cloud Manager에서 프로젝트에 대한 분기를 만드는 방법을 학습하면 이제 온보딩 프로세스의 다음 단계로 이동할 수 있으며, [환경 만들기 및 설정](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).

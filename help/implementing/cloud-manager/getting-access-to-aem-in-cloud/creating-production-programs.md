@@ -1,11 +1,11 @@
 ---
-title: '제작 프로그램 만들기 '
+title: 제작 프로그램 만들기
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하기 위한 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 다음 단계에 따라 프로덕션 프로그램을 만듭니다.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 클릭 **프로그램 추가** 화면 오른쪽 상단 모서리에서 을(를) 클릭합니다.
 

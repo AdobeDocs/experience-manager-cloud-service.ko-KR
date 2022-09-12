@@ -5,7 +5,7 @@ exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 제품 경험을 관리하는 방법을 알아봅니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 AEM Content and Commerce 여정의 이전 문서에서, [준비된 제품 카탈로그 경험 관리](staged-catalog.md), 준비된 제품 카탈로그 경험을 관리하는 방법을 알아보았습니다.
 
@@ -101,15 +101,15 @@ AEM에서 다양한 유형의 컨텐츠를 만들어 제품 카탈로그에 연�
 
 ![보강된 페이지](assets/pem-page-enriched.png)
 
-## 여정 종료? {#end-of-journey}
+## 여정의 끝 {#end-of-journey}
 
-축하합니다! AEM Content and Commerce Developer 여정을 완료했습니다! 이제 다음을 수행해야 합니다.
+축하합니다! AEM Content and Commerce Developer 여정을 완료했습니다! 이제
 
 * 모든 AEM 컨텐츠를 제품 카탈로그 개체에 연결하는 방법 이해
 * 자리 표시자를 사용하여 제품 및 카테고리 페이지를 개별적으로 보강합니다.
 * 컨텐츠 쇼퍼블 을 만들고 관련 컨텐츠 탭을 사용하는 방법을 알아봅니다
 
-이제 AEM Content and Commerce를 사용하여 제품 경험을 관리할 준비가 되었습니다. 그러나 AEM 콘텐츠 및 커머스 에는 다양한 추가 옵션을 사용할 수 있습니다. 에서 사용할 수 있는 추가 리소스 중 일부를 확인하십시오 [추가 리소스 섹션](#additional-resources) 추가 정보를 확인하십시오.
+이제 AEM Content and Commerce를 사용하여 제품 경험을 관리할 준비가 되었습니다. 그러나 AEM 콘텐츠 및 커머스 에는 다양한 추가 옵션을 사용할 수 있습니다. 이 여정에서 확인한 기능들에 대한 자세한 내용은 [추가 리소스 섹션](#additional-resources)에서 사용할 수 있는 몇 가지 추가 리소스를 확인하십시오.
 
 ## 추가 리소스 {#additional-resources}
 

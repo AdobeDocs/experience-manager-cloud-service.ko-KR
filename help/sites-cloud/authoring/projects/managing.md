@@ -3,7 +3,7 @@ title: 프로젝트 관리
 description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ The procedure of creating a project is the same from project to project. The dif
 
 현재 타일에 포함된 항목을 보거나 타일의 항목을 수정 또는 삭제할 수 있습니다.
 
-항목을 보거나 수정할 수 있도록 타일을 열려면 다음 작업을 수행하십시오.
+항목을 보거나 수정할 수 있도록 타일을 열려면 다음을 수행하십시오.
 
 1. 프로젝트 콘솔에서 줄임표(...)를 탭/클릭합니다. 이 아이콘은 카드 하단에 있습니다.
 
@@ -134,7 +134,7 @@ The procedure of creating a project is the same from project to project. The dif
 1. **프로젝트** 콘솔에서 프로젝트를 열고 **프로젝트 정보** 타일을 찾습니다.
 
    >[!NOTE]
-   >프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
+   프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
 
 1. **편집**&#x200B;을 탭/클릭합니다.
 1. 선택기를 **활성**&#x200B;에서 **비활성**(또는 그 반대)으로 변경합니다.

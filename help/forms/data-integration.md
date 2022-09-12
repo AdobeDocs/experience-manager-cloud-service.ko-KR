@@ -1,5 +1,5 @@
 ---
-title: '데이터베이스를 연결하는 방법 [!DNL AEM Forms] as a Cloud Service? '
+title: 데이터베이스를 연결하는 방법 [!DNL AEM Forms] as a Cloud Service?
 seo-title: AEM Forms Data Integration
 description: RESTful 웹 서비스, SOAP 기반 웹 서비스 및 OData 서비스에 데이터를 검색하고 저장할 수 있습니다. [!DNL AEM Forms] as a Cloud Service. 이 서비스는 다양한 유형의 데이터 소스에 데이터를 검색, 테스트, 유효성 검사 및 전송할 수 있는 전용 도구를 제공합니다.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3

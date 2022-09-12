@@ -69,7 +69,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 >
 >세트를 만드는 데 문제가 있다면 다음을 참조하십시오 [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md).
 
-## 자산 업로드 {#uploading-assets}
+## 에셋 업로드 {#uploading-assets}
 
 먼저 혼합 미디어 세트에 대한 이미지 및 비디오를 업로드하십시오. 사용자는 혼합 미디어 세트 뷰어에서 이미지를 확대할 수 있습니다. 따라서 확대/축소 기능을 염두에 두고 이미지를 선택합니다. 이미지의 크기가 가장 큰 2000픽셀 이상인지 확인하십시오.
 

@@ -11,7 +11,7 @@ exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -141,5 +141,5 @@ CIF 추가 기능 및 [CIF 코어 구성 요소](https://github.com/adobe/aem-co
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
 - [상거래 다중 스토어 설정](configuring/multi-store-setup.md)
-- [다중 상거래 시스템 설정](configuring/multiple-commerce-systems-setup.md)
+- [여러 상거래 시스템 설정](configuring/multiple-commerce-systems-setup.md)
 

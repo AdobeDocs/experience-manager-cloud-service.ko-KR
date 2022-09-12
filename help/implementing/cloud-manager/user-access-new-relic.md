@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 >
 >의 사용자 **비즈니스 소유자** 또는 **배포 관리자** New Relic One 사용자를 관리하려면 역할에 로그인해야 합니다.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. New Relic One 사용자를 관리할 프로그램을 클릭합니다.
 
@@ -92,7 +92,7 @@ New Relic에서 확인 이메일을 받지 못한 경우 다음을 참조하십�
 
 Cloud Manager를 통해 New Relic One에 액세스하려면 다음을 수행하십시오.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. New Relic One에 액세스할 프로그램을 클릭합니다.
 

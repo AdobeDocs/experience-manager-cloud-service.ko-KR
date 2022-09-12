@@ -2,9 +2,9 @@
 title: Experience Manager Sites 페이지에서 Forms 포털을 만드는 방법
 description: AEM Sites 페이지에서 Forms Portal을 만들고 기본 제공 코어 구성 요소를 사용하는 방법을 알아봅니다.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1784'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,9 @@ AEM Forms as a Cloud Service에서 바로 사용 가능한 Forms Portal 구성 �
 
    또한, `appTitle`, `appId`, 및 `groupId`를 입력하여 환경을 반영하십시오.
 
-   프로젝트가 준비되면 `<core.forms.components.version>x.y.z</core.forms.components.version>` 최상위 수준의 속성 `pom.xml` 최신 버전의 Archetype을 반영하도록 Archetype 프로젝트 [core-forms-components](https://github.com/adobe/aem-core-forms-components) 다음 위치에서 `AEM Archetype` 프로젝트.
+1. **사전 릴리스에서 다음 단계를 수행하여 Forms Portal 구성 요소를 사용합니다.**
+   * [사전 릴리스 채널 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * 바꾸기 `core-forms-components-*` 원하는 시험판 버전(예: 1.0.4-PRERELEASE-20211223)이 있는 버전 `Cloud Manager/AEM Archetype` 프로젝트를 업데이트하여 `<core.forms.components.version>x.y.z</core.forms.components.version>` 최상위 수준의 속성 `pom.xml` Archetype 프로젝트의 예입니다.
 
 1. **프로젝트를 로컬 개발 환경에 배포합니다.** 다음 명령을 사용하여 로컬 개발 환경에 배포할 수 있습니다
 

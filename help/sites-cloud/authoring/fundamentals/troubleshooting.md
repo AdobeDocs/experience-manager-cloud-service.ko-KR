@@ -3,7 +3,7 @@ title: 작성 시의 AEM 문제 해결
 description: AEM을 사용할 때 발생할 수 있는 몇 가지 문제
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%
 

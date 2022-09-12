@@ -107,7 +107,7 @@ AEM 인스턴스에 이미 정의된 컨텐츠 패키지를 만듭니다.
 >
 >이 목표를 Maven 프로젝트 내에서 실행할 필요가 없습니다.
 
-#### 매개 변수 {#parameters}
+#### 매개변수 {#parameters}
 
 빌드 목표에 대한 모든 매개 변수는 [공통 매개 변수](#common-parameters) 섹션을 참조하십시오.
 
@@ -115,7 +115,7 @@ AEM 인스턴스에 이미 정의된 컨텐츠 패키지를 만듭니다.
 
 저장소에 패키지를 설치합니다. 이 목표를 실행할 때에는 Maven 프로젝트가 필요하지 않습니다. 그 목표는 . `install` Maven 빌드 라이프사이클의 단계입니다.
 
-#### 매개 변수 {#parameters-1}
+#### 매개변수 {#parameters-1}
 
 다음 매개 변수 외에 의 설명을 참조하십시오. [공통 매개 변수](#common-parameters) 섹션을 참조하십시오.
 
@@ -138,7 +138,7 @@ AEM 인스턴스에 이미 정의된 컨텐츠 패키지를 만듭니다.
 
 에 배포되는 패키지를 나열합니다 [패키지 관리자.](/help/implementing/developing/tools/package-manager.md)
 
-#### 매개 변수 {#parameters-2}
+#### 매개변수 {#parameters-2}
 
 ls 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 섹션을 참조하십시오.
 
@@ -146,7 +146,7 @@ ls 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 
 
 에서 패키지 제거 [패키지 관리자.](/help/implementing/developing/tools/package-manager.md)
 
-#### 매개 변수 {#parameters-3}
+#### 매개변수 {#parameters-3}
 
 rm 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 섹션을 참조하십시오.
 
@@ -154,7 +154,7 @@ rm 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 
 
 패키지를 제거합니다. 패키지는 제거된 상태로 서버에 남아 있습니다.
 
-#### 매개 변수 {#parameters-4}
+#### 매개변수 {#parameters-4}
 
 제거 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 섹션을 참조하십시오.
 
@@ -162,7 +162,7 @@ rm 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 
 
 컨텐츠 패키지를 만듭니다. 패키지 목표의 기본 구성에는 컴파일된 파일이 저장된 디렉토리의 내용이 포함됩니다. 패키지 목표를 실행하려면 컴파일 빌드 단계가 완료되어야 합니다. 패키지 목표는 Maven 빌드 라이프사이클의 패키지 단계에 바인딩됩니다.
 
-#### 매개 변수 {#parameters-5}
+#### 매개변수 {#parameters-5}
 
 다음 매개 변수 외에 `name` 의 매개 변수 [공통 매개 변수](#common-parameters) 섹션을 참조하십시오.
 
@@ -219,7 +219,7 @@ rm 목표의 모든 매개 변수는 [공통 매개 변수](#common-parameters) 
 
 ### 도움말 {#help}
 
-#### 매개 변수 {#parameters-6}
+#### 매개변수 {#parameters-6}
 
 | 이름 | 유형 | 필수 | 기본 값 | 설명 |
 |---|---|---|---|---|

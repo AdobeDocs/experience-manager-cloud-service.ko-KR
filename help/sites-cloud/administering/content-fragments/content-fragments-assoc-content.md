@@ -3,7 +3,7 @@ title: 관련 콘텐츠
 description: AEM의 관련 콘텐츠 기능이 연결을 제공하여 콘텐츠 페이지에 에셋을 추가할 때 조각과 함께 해당 에셋을 선택적으로 사용할 수 있도록 함으로써 페이지 작성과 Headless 콘텐츠 전달 모두에 유연성을 더하는 방법을 이해합니다.
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 100%
 

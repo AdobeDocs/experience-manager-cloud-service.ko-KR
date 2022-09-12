@@ -3,7 +3,7 @@ title: API 요청 만들기 - Headless 설정
 description: 콘텐츠 조각 콘텐츠의 Headless 전달을 위해 GraphQL API를 사용하는 방법과 콘텐츠 조각을 관리하기 위해 AEM의 에셋 REST API를 사용하는 방법을 알아봅니다.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 100%
 

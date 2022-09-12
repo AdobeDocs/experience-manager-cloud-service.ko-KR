@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 동적으로 드롭다운 목록 채우기 {#dynamically-populating-drop-down-lists}
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 * [OSGI 번들 만들기](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [AEM 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/overview.html#developing)

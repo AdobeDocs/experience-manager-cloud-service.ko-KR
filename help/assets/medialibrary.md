@@ -1,6 +1,6 @@
 ---
 title: 기본 디지털 자산 관리에 Media Library 사용
-description: '"[!DNL Experience Manager Assets] 및 Media Library for asset management를 참조하십시오."'
+description: "[!DNL Experience Manager Assets] 및 Media Library for asset management를 참조하십시오."
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
@@ -59,7 +59,7 @@ Media Library은 다음과 같은 사용 사례를 광범위하게 다룹니다.
 Media Library 기능을 사용하려면 기본값을 사용할 수 있습니다 [!DNL Experience Manager] 사용자 인터페이스. Media Library이 [!DNL Experience Manager Sites] 별도의 인터페이스나 추가 기능을 설치할 필요가 없습니다. 기존 인터페이스를 사용하는 Media Library 사용자는 다음 작업을 수행할 수 있습니다.
 
 * 자산을 구성할 폴더를 만듭니다.
-* 자산을 업로드합니다.
+* 에셋 업로드.
 * 자산을 게시합니다.
 * 자산 편집, 이동 및 복사.
 * 자산을 탐색, 필터링 및 검색(유사성 검색 포함).

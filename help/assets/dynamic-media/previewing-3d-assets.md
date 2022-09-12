@@ -15,7 +15,7 @@ ht-degree: 10%
 
 Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전달 및 대화형 미리 보기를 지원합니다.
 
-대화형 3D 뷰어는 Experience Manager의 자산 세부 사항 페이지에서 사용할 수 있습니다. 이 뷰어에는 3D 자산을 궤도를 따라 이동하고, 확대/축소하고, 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
+대화형 3D 뷰어는 Experience Manager의 자산 세부 사항 페이지에서 사용할 수 있습니다. 이 뷰어에는 3D 에셋을 궤도를 따라 이동하고, 확대/축소하고, 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 

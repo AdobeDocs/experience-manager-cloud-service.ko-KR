@@ -41,7 +41,7 @@ Adobe Creative Cloud은 크리에이티브 팀이 디지털 자산을 만드는 
 | 크리에이티브 사용자가 [!DNL Experience Manager], 열기 및 사용 변경 내용 편집 및 업로드 [!DNL Experience Manager]및에 새 파일을 업로드합니다. [!DNL Experience Manager]에 대해 [!DNL Creative Cloud] 앱. | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator 및 InDesign. |
 | 비즈니스 사용자는 자산 열기 및 사용, 변경 내용 편집 및 업로드 작업을 단순화합니다. [!DNL Experience Manager], 및에 새 파일 업로드 [!DNL Experience Manager] 데스크탑 환경에서 실행할 수 있습니다. 일반 통합을 사용하여 비Adobe을 포함하여 기본 데스크탑 애플리케이션에서 자산 유형을 엽니다. | [[!DNL Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win 및 Mac 데스크탑의 데스크탑 앱 Experience Manager |
 | 마케터와 비즈니스 사용자는 Experience Manager 내에서 Adobe Stock 자산을 검색, 미리 보기, 라이선스 및 저장 및 관리합니다. 라이선스와 저장된 자산은 더 나은 거버넌스를 위해 선별된 Adobe Stock 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
-| 디지털 제품 디자이너와 마케터 간의 공동 작업을 개선합니다. 디자이너는 디자인에서 디지털 자산을 사용하고 Adobe XD 캔버스에서 와이어프레임 모델을 사용할 수 있습니다. | [[!DNL Adobe Asset Link] 대상 [!DNL Adobe XD]](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| 디지털 제품 디자이너와 마케터 간의 공동 작업을 개선합니다. 디자이너는 디자인에서 디지털 자산을 사용하고 Adobe XD 캔버스에서 와이어프레임 모델을 사용할 수 있습니다. | [[!DNL Adobe Asset Link] 대상 [!DNL Adobe XD]](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | 마케터는 사용자 지정을 사용하여 만든 업로드된 자산 및 사전 정의된 작업을 기반으로 변형 및 파생물을 자동으로 만들 수 있습니다. 이 자동화를 사용하여 컨텐츠 속도를 향상시키고 수작업 부담을 줄일 수 있습니다. | [컨텐츠 자동화](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] 웹 인터페이스 |
 
 This article focuses primarily on the first two aspects of the collaboration needs. Distribution and sourcing of assets at scale is briefly mentioned as a use case. For such needs solutions, consider Adobe Brand Portal or Asset Share Commons. 과 같은 대체 솔루션 [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), 다음을 기반으로 구축 가능한 솔루션 [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) 구성 요소, [링크 공유](share-assets.md), 사용 [Experience Manager Assets 웹 UI](/help/assets/manage-digital-assets.md) 구체적인 요구 사항에 따라 검토해야 합니다.
@@ -63,7 +63,7 @@ This article focuses primarily on the first two aspects of the collaboration nee
 | 편집 - Experience Manager 외부에서 진행 중 | 예 - 데스크탑에 동기화된 사용자의 Creative Cloud 저장소 계정에서 사용할 수 있는 자산입니다. | 예 |  |
 | 편집 - 변경 내용 업로드 | 예 - [체크인 작업](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 선택적 주석 | 예 |  |
 | 업로드 - 단일 파일 | 예 - 현재 활성 문서 업로드 | 예 | [웹 인터페이스를 통해 업로드](/help/assets/manage-digital-assets.md#uploading-assets) |
-| 업로드 - 여러 파일/계층 폴더 구조 | 아니오 | 예 | [웹 인터페이스를 통해 업로드](/help/assets/manage-digital-assets.md#uploading-assets); 사용자 정의 스크립팅 또는 도구 |
+| 업로드 - 여러 파일/계층 폴더 구조 | 아니요 | 예 | [웹 인터페이스를 통해 업로드](/help/assets/manage-digital-assets.md#uploading-assets); 사용자 정의 스크립팅 또는 도구 |
 | 기타 - 사용자 및 로그인 | Creative Cloud 사용자가 Creative Cloud 데스크탑 앱에 로그인되어 인식됨(SSO) | Experience Manager 사용자 / 로그인 | 두 솔루션의 사용자는 Experience Manager 사용자 할당량에 따라 계산됩니다. |
 | 기타 - 네트워크 및 액세스 | 네트워크를 통한 Experience Manager 배포를 위해 사용자의 데스크탑에서 액세스 필요 | 네트워크를 통한 Experience Manager 배포를 위해 사용자의 데스크탑에서 액세스 필요 | Adobe 자산 링크가 네트워크 프록시 환경을 공유하지 않습니다. |
 

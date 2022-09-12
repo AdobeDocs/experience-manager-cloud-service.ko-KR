@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.7.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.7.0 릴리스 정보입니다.'
 source-git-commit: b1c4706d2d148c136eed66b0bff6f792a89e9d8c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 >
 >이미 레거시 오퍼를 사용 중인 기존 개인화 활동은 계속해서 레거시 오퍼를 사용할 수 있으나 새 개인화 활동의 경우 경험 조각이 앞으로의 권장 접근법이기 때문에 경험 조각으로 생성해야 합니다.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-assets}
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 ![에셋 업로드 제한 사항](/help/assets/assets/asset-upload-restrictions.png)
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#forms-features}
 

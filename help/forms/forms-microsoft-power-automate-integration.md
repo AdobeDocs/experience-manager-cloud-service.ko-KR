@@ -7,13 +7,13 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 source-git-commit: ccc4d487cb180273284276cf9cdf18680a3efcb8
 workflow-type: tm+mt
 source-wordcount: '1183'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
 # Microsoft® Power Automate로 적응형 양식 연결 {#connect-adaptive-form-with-power-automate}
 
-제출 시 Microsoft® Power Automated Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 Power Automatic Cloud Flow로 전송하여 처리합니다. Microsoft® Power Automate의 기능을 활용하여 사용자 정의 데이터 캡처 경험을 구축하고 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로우를 자동화할 수 있습니다. 다음은 적응형 양식을 Microsoft® Power 자동화와 통합한 후 수행할 수 있는 작업의 몇 가지 예입니다.
+제출 시 Microsoft® Power Automated Cloud Flow를 실행하도록 적응형 양식을 구성할 수 있습니다. 구성된 적응형 양식은 캡처된 데이터, 첨부 파일 및 기록 문서를 처리를 위해 Power Automate Cloud Flow로 전송합니다. 이렇게 하면 Microsoft® Power Automate의 강력한 기능을 활용하면서 사용자 정의 데이터 캡처 환경을 구축하여 캡처된 데이터를 중심으로 비즈니스 로직을 구축하고 고객 워크플로를 자동화할 수 있습니다. 다음은 적응형 양식을 Microsoft® Power 자동화와 통합한 후 수행할 수 있는 작업의 몇 가지 예입니다.
 
 * 고급 자동화 비즈니스 프로세스에서 적응형 Forms 데이터 사용
 * Power Automate를 사용하여 캡처된 데이터를 500개 이상의 데이터 소스 또는 공개적으로 사용 가능한 API로 전송
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 응용 Forms 편집기에서는 다음을 제공합니다. **Microsoft® 전원 자동화 흐름 호출** 적응형 양식 데이터, 첨부 파일 및 기록 문서를 전송하는 제출 작업은 Power Automate Cloud Flow로 전송됩니다. 제출 작업을 사용하여 캡처한 데이터를 Microsoft® Power Automate로 보내려면 [Forms as a Cloud Service 인스턴스를 Microsoft® Power Automate로 연결](forms-microsoft-power-automate-integration.md#connect-forms-server-with-power-automate)
 
-## 전제 조건
+## 사전 요구 사항
 
 적응형 양식을 Microsoft® Power Automate와 연결하려면 다음이 필요합니다.
 

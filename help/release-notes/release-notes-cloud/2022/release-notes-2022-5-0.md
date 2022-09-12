@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.5.0 릴리스 정보입니다.'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 * 다양한 GraphQL 기능
 * 콘텐츠 조각의 Headless 사용에 최적화된 [새 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이미지의 색상을 구분하고 수집 시 태그로 자동 적용합니다](/help/assets/color-tag-images.md). 이러한 태그를 통해 이미지 색상 구성에 따라 향상된 검색 환경을 사용할 수 있습니다. 이미지에 태그 지정되는 색상 수를 1~40개 범위에서 구성하여 나중에 해당 색상을 기준으로 이미지를 검색할 수 있습니다.
 
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 

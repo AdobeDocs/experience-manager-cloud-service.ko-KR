@@ -3,7 +3,7 @@ title: 다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업
 description: 사이트 간 활동, 경험 및 오퍼와 같은 타겟팅된 콘텐츠를 관리해야 하는 경우 타겟팅된 콘텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2893'
 ht-degree: 100%
 

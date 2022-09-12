@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.4.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.4.0 릴리스 정보입니다.'
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
 source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
 
@@ -36,14 +36,14 @@ ht-degree: 100%
 
 * 이제 콘텐츠 모델 편집기의 간단한 확인란을 사용하여 콘텐츠 모델 데이터 유형을 [변환 가능](/help/assets/content-fragments/content-fragments-models.md#properties)한 것으로 정의할 수 있습니다. 또한 AEM 번역 규칙 및 구성이 자동으로 업데이트됩니다.
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
 * 이제 태그 이름, 작성 날짜 또는 수정 날짜를 기준으로 태그 선택기 창에서 오름차순 또는 내림차순으로 [태그를 정렬](/help/assets/organize-assets.md#use-tags-to-organize-assets)할 수 있습니다.
 
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 

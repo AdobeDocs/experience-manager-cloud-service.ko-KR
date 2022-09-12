@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 9%
+ht-degree: 13%
 
 ---
 
@@ -92,7 +92,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 <!-- needs more details -->
 
-컨텐츠 조각 모델은 종속된 컨텐츠 조각이 게시될 때/게시되기 전에 게시해야 합니다.
+콘텐츠 조각 모델은 종속된 콘텐츠 조각이 게시될 때/게시되기 전에 게시해야 합니다.
 
 >[!NOTE]
 >
@@ -116,19 +116,19 @@ At the very start you need to enable Content Fragment Models for your site, this
 
    * [콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [컨텐츠 조각 모델 정의](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [콘텐츠 조각 모델 정의](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [컨텐츠 조각 모델 활성화 또는 비활성화](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [콘텐츠 조각 모델 활성화 또는 비활성화](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [자산 폴더에서 컨텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [에셋 폴더에서 콘텐츠 조각 모델 허용](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [컨텐츠 조각 모델 삭제](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [콘텐츠 조각 모델 삭제](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [컨텐츠 조각 모델 게시](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [콘텐츠 조각 모델 게시](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [컨텐츠 조각 모델 게시 취소](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [콘텐츠 조각 모델 게시 취소](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [잠김(게시된) 컨텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [잠긴(게시된) 콘텐츠 조각 모델](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 시작 안내서
 

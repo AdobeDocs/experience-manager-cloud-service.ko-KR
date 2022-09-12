@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.1.0 릴리�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.1.0 릴리스 정보.'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 
 * 원본 렌디션이 없는 처리되지 않은 에셋은 AEM on-premise에서 클라우드 서비스로 에셋을 마이그레이션하는 동안 처리를 위해 Asset Compute로 전송됩니다.
 
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 

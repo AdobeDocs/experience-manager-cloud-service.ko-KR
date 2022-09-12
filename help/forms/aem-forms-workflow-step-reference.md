@@ -1,5 +1,5 @@
 ---
-title: '워크플로우를 다른 사용자에게 할당하고, 이메일을 보내고, 워크플로우에서 Adobe Sign을 사용하는 방법 '
+title: 워크플로우를 다른 사용자에게 할당하고, 이메일을 보내고, 워크플로우에서 Adobe Sign을 사용하는 방법
 description: Forms 중심의 워크플로우를 통해 적응형 Forms 기반 워크플로우를 신속하게 구축할 수 있습니다. Adobe Sign을 사용하여 문서에 전자 서명하고, 양식 기반 비즈니스 프로세스를 만들고, 데이터를 검색 및 여러 데이터 소스로 보내고, 이메일 알림을 보낼 수 있습니다
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
@@ -242,7 +242,7 @@ PDF/A 단계로 변환하려면 다음 속성을 사용합니다.
 
 ## DDX 단계 호출 {#invokeddx}
 
-DDX(Document Description XML)는 요소가 문서 빌딩 블록을 나타내는 선언적 마크업 언어입니다. 이러한 빌딩 블록에는 PDF 및 XDP 문서와 주석, 책갈피 및 스타일이 지정된 텍스트와 같은 기타 요소가 포함됩니다. DDX는 하나 이상의 입력 문서에 적용하여 하나 이상의 출력 문서를 생성할 수 있는 일련의 작업을 정의합니다.  하나의 DDX를 다양한 소스 문서와 함께 사용할 수 있습니다. 를 사용할 수 있습니다 ***DDX 단계 호출*** AEM Workflow에서 문서 조립, 생성 및 수정, Acrobat 및 XFA Forms, 기타, [DDX 참조 설명서](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+DDX(Document Description XML)는 요소가 문서 빌딩 블록을 나타내는 선언적 마크업 언어입니다. 이러한 구성 요소에는 PDF 및 XDP 문서는 물론 댓글, 책갈피 및 스타일이 지정된 텍스트와 같은 기타 요소가 포함됩니다. DDX는 하나 이상의 입력 문서에 적용하여 하나 이상의 출력 문서를 생성할 수 있는 일련의 작업을 정의합니다.  단일 DDX를 다양한 원본 문서와 함께 사용할 수 있습니다. 를 사용할 수 있습니다 ***DDX 단계 호출*** AEM Workflow에서 문서 조립, 생성 및 수정, Acrobat 및 XFA Forms, 기타, [DDX 참조 설명서](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
 
 DDX 호출 단계에는 다음 속성이 있습니다.
 

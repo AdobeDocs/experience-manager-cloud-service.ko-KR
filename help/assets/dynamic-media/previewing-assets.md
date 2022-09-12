@@ -1,5 +1,5 @@
 ---
-title: 자산 미리 보기
+title: 에셋 미리보기
 description: Dynamic Media에서 자산을 미리 보는 방법을 알아봅니다.
 feature: Asset Management
 role: User
@@ -7,11 +7,11 @@ exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '1212'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 자산 미리 보기{#previewing-assets}
+# 에셋 미리보기{#previewing-assets}
 
 미리 보기 를 사용하여 고객이 자체 웹 브라우저에서 볼 때 업로드한 디지털 자산이 어떻게 표시되는지 확인할 수 있습니다. 미리 보기에 자산에 지정된 기본 내장된 교차 장치 뷰어가 사용됩니다.
 
@@ -45,7 +45,7 @@ ht-degree: 1%
       </tr>
       <tr>
       <td><p>3D</p> </td>
-      <td>아니오</td>
+      <td>아니요</td>
       <td>예</td>
       <td><p><strong>차원 뷰어에서 3D 자산을 미리 보려면</strong></p>
       <ul>
@@ -86,7 +86,7 @@ ht-degree: 1%
       </tr>
       <tr>
       <td>이미지 세트</td>
-      <td>아니오</td>
+      <td>아니요</td>
       <td>예</td>
       <td><p><strong>특정 뷰어에서 자산을 미리 보려면</strong></p>
         <ul>
@@ -95,7 +95,7 @@ ht-degree: 1%
       </tr>
       <tr>
       <td>스핀 세트</td>
-      <td>아니오</td>
+      <td>아니요</td>
       <td>예</td>
       <td><p><strong>특정 뷰어에서 자산을 미리 보려면</strong></p>
         <ul>
@@ -104,7 +104,7 @@ ht-degree: 1%
       </tr>
       <tr>
       <td>혼합 미디어 세트</td>
-      <td>아니오</td>
+      <td>아니요</td>
       <td>예</td>
       <td><p><strong>특정 뷰어에서 자산을 미리 보려면</strong></p>
         <ul>
@@ -113,7 +113,7 @@ ht-degree: 1%
       </tr>
       <tr>
       <td>회전판 세트</td>
-      <td>아니오</td>
+      <td>아니요</td>
       <td>예</td>
       <td><strong>특정 뷰어에서 자산을 미리 보려면</strong>
         <ul>

@@ -3,7 +3,7 @@ title: 콘텐츠 조각을 사용하여 작업
 description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 100%
 

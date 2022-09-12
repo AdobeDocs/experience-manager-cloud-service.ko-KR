@@ -3,7 +3,7 @@ title: Adobe Target과 통합
 description: Adobe Target과 통합
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 100%
 

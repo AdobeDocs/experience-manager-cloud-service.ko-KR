@@ -1,11 +1,11 @@
 ---
-title: '샌드박스 환경 절전 모드 설정 및 해제 '
+title: 샌드박스 환경 절전 모드 설정 및 해제
 description: 샌드박스 프로그램 환경에서 자동으로 최대 절전 모드 모드로 들어가는 방법과 최대 절전 모드 해제 방법을 알아봅니다.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 샌드박스 프로그램 환경의 최대 절전 모드를 수동으로 수행하려면 다음 단계를 따르십시오.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 최대 절전 모드로 전환하려는 프로그램을 클릭하여 세부 사항을 표시합니다.
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 >
 >사용자가 **개발자** 역할은 샌드박스 프로그램 환경의 최대 절전 모드를 해제할 수 있습니다.
 
-1. Cloud Manager에 로그인 위치 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
 1. 최대 절전 모드로 전환하려는 프로그램을 클릭하여 세부 사항을 표시합니다.
 

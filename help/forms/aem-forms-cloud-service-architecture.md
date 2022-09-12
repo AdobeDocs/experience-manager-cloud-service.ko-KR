@@ -31,7 +31,7 @@ Forms as a Cloud Service은 여러 구성 요소를 포함합니다.
 
 모든 AEM Forms as a Cloud Service 프로그램에는 [기본 제공 CDN 서비스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). Forms as a Cloud Services 라이센스에 포함되어 있습니다.
 
-### 작성
+### 작성자
 
 작성자는 표준 작성자 실행 모드에서 실행되는 AEM Forms as a Cloud Service 인스턴스입니다. 내부 사용자, 양식 디자이너 및 개발자를 위한 것입니다. 작성 환경에서는 다음 기능을 사용할 수 있습니다.
 
@@ -96,7 +96,7 @@ Cloud Manager는 [AEM as a Cloud Service](https://experienceleague.adobe.com/doc
 * 프로그램 만들기 및 관리
 * 프로그램 내에서 AEM 환경 만들기 및 관리
 * 고객 코드 및 구성을 특정 환경에 배포하기 위한 파이프라인 만들기 및 관리
-* 이러한 구성 요소에 대한 중요한 라이프사이클 이벤트(예: 제품 업데이트)에 대한 알림 받기 Cloud Manager에 대한 자세한 내용은 [Cloud Manager Adobe 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) 및 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR).
+* 이러한 구성 요소에 대한 중요한 라이프사이클 이벤트(예: 제품 업데이트)에 대한 알림 받기 Cloud Manager에 대한 자세한 내용은 [Cloud Manager Adobe 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) 및 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
 ### 개발자 콘솔
 

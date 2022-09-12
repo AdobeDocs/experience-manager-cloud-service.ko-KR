@@ -3,7 +3,7 @@ title: 사이트 테마 맞춤화
 description: 라이브 AEM 콘텐츠를 사용하여 사이트 테마를 구축하고, 맞춤화하고, 테스트하는 방법에 대해 알아봅니다.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
 

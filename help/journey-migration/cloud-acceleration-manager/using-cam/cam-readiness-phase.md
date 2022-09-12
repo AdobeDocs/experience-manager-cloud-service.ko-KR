@@ -224,6 +224,6 @@ Cloud Acceleration Manager에서 인쇄 미리 보기 옵션을 선택하여 보
 
    ![이미지](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 Cloud Acceleration Manager에 로그인하는 방법과 프로젝트를 만드는 방법을 학습하면 이제 의 다음 단계를 검토할 준비가 되었습니다 [구현 단계](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).

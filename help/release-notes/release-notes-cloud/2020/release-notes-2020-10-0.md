@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2020.10.0 릴리스 정보입니다.'
-description: '"[!DNL Adobe Experience Manager] 2020.10.0용 as a Cloud Service 릴리스 노트"'
+description: "[!DNL Adobe Experience Manager] 2020.10.0용 as a Cloud Service 릴리스 노트"
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1197'
+ht-degree: 24%
 
 ---
 

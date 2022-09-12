@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # 적응형 양식을 위한 XML 스키마 디자인 {#creating-adaptive-forms-using-xml-schema}
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 XML 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려면 XML 스키마를 기본 이해해야 합니다. 또한 이 문서 전에 다음 내용을 읽는 것이 좋습니다.
 

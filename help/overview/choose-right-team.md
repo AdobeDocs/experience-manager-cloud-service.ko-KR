@@ -3,7 +3,7 @@ title: 적합한 사람, 적합한 역할
 description: 적합한 사람, 적합한 역할
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 100%
 

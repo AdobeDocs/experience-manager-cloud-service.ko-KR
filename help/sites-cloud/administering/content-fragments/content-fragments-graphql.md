@@ -3,7 +3,7 @@ title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전
 description: GraphQL에서 Headless 콘텐츠 전달을 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 100%
 

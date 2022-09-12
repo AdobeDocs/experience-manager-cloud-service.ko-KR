@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 22%
 
 여정의 마지막 부분이므로 마이그레이션이 완료되면 문제를 모니터링하고 성능을 향상시키는 방법을 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 여정의 이전 단계에서 마이그레이션 및 [Go-live](/help/journey-migration/go-live.md) 코드와 컨텐츠를 AEM as a Cloud Service으로 이동할 준비가 되면.
 

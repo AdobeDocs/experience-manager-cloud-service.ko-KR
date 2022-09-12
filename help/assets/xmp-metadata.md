@@ -102,7 +102,7 @@ XMP에서는 다음을 추가할 수 있습니다 `xml:lang` 속성을 텍스트
 
    ![DAM 메타데이터 원본에 쓰기 런처를 선택하여 속성을 수정하고 활성화합니다](assets/launcher-properties-metadata-writeback1.png)
 
-1. 선택 **[!UICONTROL 활성화]** on **[!UICONTROL 시작 관리자 속성]** 페이지. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. 선택 **[!UICONTROL 활성화]** on **[!UICONTROL 시작 관리자 속성]** 페이지. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
 워크플로우를 자산에 수동으로 적용하려면 을 적용합니다 [!UICONTROL DAM 메타데이터 원본에 쓰기] 왼쪽 레일의 워크플로우입니다.
 

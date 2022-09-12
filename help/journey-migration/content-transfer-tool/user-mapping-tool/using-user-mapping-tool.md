@@ -17,7 +17,7 @@ ht-degree: 4%
 
 아래 절차에 따라 이 설정을 수행하십시오.
 
-1. 다음으로 이동 [Adobe 개발자 콘솔](https://console.adobe.io) Adobe ID 사용.
+1. 다음으로 이동 [Adobe Developer 콘솔](https://console.adobe.io) Adobe ID 사용.
 1. 새 프로젝트를 만들거나 기존 프로젝트를 엽니다.
 1. API 추가 - 클릭 **프로젝트에 추가** 을(를) 선택합니다. **API**
 1. 사용자 관리 API를 선택합니다.  이 옵션을 사용하려면 권한을 가져와야 할 수 있습니다.
@@ -54,14 +54,14 @@ ht-degree: 4%
    * **조직 ID**: 사용자를 마이그레이션하고 있는 조직의 IMS(Identity Management 시스템) 조직 ID를 입력합니다.
 
       >[!NOTE]
-      >조직 ID를에 로그인합니다 [Admin Console](https://adminconsole.adobe.com/) 두 개 이상에 속해 있는 경우 조직(오른쪽 상단 영역)을 선택합니다. 조직 ID는 해당 페이지의 URL에 다음 형식으로 표시됩니다 `xx@AdobeOrg`여기서 xx 는 IMS 조직 ID입니다.  또는 에서 조직 ID를 찾을 수 있습니다 [Adobe 개발자 콘솔](https://console.adobe.io) 액세스 토큰을 생성하는 페이지입니다.
+      >조직 ID를에 로그인합니다 [Admin Console](https://adminconsole.adobe.com/) 두 개 이상에 속해 있는 경우 조직(오른쪽 상단 영역)을 선택합니다. 조직 ID는 해당 페이지의 URL에 다음 형식으로 표시됩니다 `xx@AdobeOrg`여기서 xx 는 IMS 조직 ID입니다.  또는 에서 조직 ID를 찾을 수 있습니다 [Adobe Developer 콘솔](https://console.adobe.io) 액세스 토큰을 생성하는 페이지입니다.
 
    * **클라이언트 ID**: 설정 단계에서 저장한 클라이언트 ID를 입력합니다.
 
    * **액세스 토큰**: 설정 단계에서 저장한 액세스 토큰을 입력합니다.
 
       >[!NOTE]
-      >액세스 토큰이 24시간마다 만료되며 새 토큰을 만들어야 합니다. 새 토큰을 만들려면 다음 위치로 돌아갑니다 [Adobe 개발자 콘솔](https://console.adobe.io)를 클릭하고 프로젝트를 선택한 다음 **사용자 관리 API** 같은 개인 키를 상자에 붙여 넣습니다.
+      >액세스 토큰이 24시간마다 만료되며 새 토큰을 만들어야 합니다. 새 토큰을 만들려면 다음 위치로 돌아갑니다 [Adobe Developer 콘솔](https://console.adobe.io)를 클릭하고 프로젝트를 선택한 다음 **사용자 관리 API** 같은 개인 키를 상자에 붙여 넣습니다.
 
 1. 필드를 채운 후 **구성 테스트** 를 클릭하여 사용자 관리 API 서비스에 대한 연결을 테스트합니다. 연결에 성공하면 를 클릭하면 됩니다 **저장** 구성을 저장합니다.
 

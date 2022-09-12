@@ -381,7 +381,7 @@ Quickview URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예�
 
    ![experience_fragment-carousselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. **[!UICONTROL 미리 보기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 미리보기]**&#x200B;를 선택합니다.
 1. 연결된 작업을 테스트하려면 이미지에서 핫스팟이나 이미지 맵을 선택합니다.
 
 **뷰어 목록에서 회전 배너를 미리 보려면:**
@@ -450,7 +450,7 @@ Experience Manager Assets에서 반환한 포함 코드에는 이미 주석 처�
 
 자세한 내용은 [핫스팟 및 이미지 맵 변수 식별](#identifying-hotspot-and-image-map-variables).
 
-빠른 보기 URL을 트리거하고 빠른 보기 패널을 활성화하는 마지막 단계는 IT 부서의 프런트엔드 IT 담당자의 지원이 필요할 수 있습니다. They have the knowledge to know best how to accurately trigger the Quick view implementation from the proper step, having a ready-to-use Quick view URL.
+빠른 보기 URL을 트리거하고 빠른 보기 패널을 활성화하는 마지막 단계는 IT 부서의 프런트엔드 IT 담당자의 지원이 필요할 수 있습니다. 이들은 사용하기 쉬운 빠른 보기 URL을 사용하여 적절한 단계에서 빠른 보기 구현을 정확하게 트리거하는 방법을 잘 알고 있습니다.
 
 ## Quickview를 사용하여 사용자 지정 팝업 Windows® 만들기 {#using-quickviews-to-create-custom-pop-ups}
 

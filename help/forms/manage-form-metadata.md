@@ -7,7 +7,7 @@ exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 <!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
-## 의 메타데이터 [!DNL AEM Forms] {#metadata-in-aem-forms}
+## [!DNL AEM Forms]의 메타데이터 {#metadata-in-aem-forms}
 
 in [!DNL AEM Forms], 자산과 연결된 메타데이터 속성 목록은 해당 유형에 따라 다릅니다. 또한 사용자 지정 메타데이터 속성을 추가하면 사용자 지정 메타데이터가 추가된 유형의 모든 자산에 추가됩니다.
 
@@ -42,7 +42,7 @@ in [!DNL AEM Forms], 자산과 연결된 메타데이터 속성 목록은 해당
  <tbody> 
   <tr> 
    <td><strong>속성 이름</strong></td> 
-   <td><strong>자산 유형</strong></td> 
+   <td><strong>에셋 유형</strong></td> 
    <td><strong>설명</strong><br /> </td> 
   </tr> 
   <tr> 
@@ -57,7 +57,7 @@ in [!DNL AEM Forms], 자산과 연결된 메타데이터 속성 목록은 해당
   </tr> 
   <tr> 
    <td>유형</td> 
-   <td>모든</td> 
+   <td>모두</td> 
    <td><p>자산 유형을 지정하는 읽기 전용 값입니다. 다음 값 중 하나를 보유할 수 있습니다.</p> 
     <ul> 
      <li>양식 템플릿</li> 
@@ -70,16 +70,16 @@ in [!DNL AEM Forms], 자산과 연결된 메타데이터 속성 목록은 해당
   </tr> 
   <tr> 
    <td>작성일</td> 
-   <td>모든</td> 
+   <td>모두</td> 
    <td>자산 생성 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 
   <tr> 
    <td>마지막 수정 날짜</td> 
-   <td>모든</td> 
+   <td>모두</td> 
    <td>자산을 마지막으로 수정한 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 
   <tr> 
-   <td>작성</td> 
+   <td>작성자</td> 
    <td>리소스를 제외한 모든 항목</td> 
    <td><p>양식 유형에 따라 자동으로 계산되는 읽기 전용 값입니다.</p> 
     <ul> 

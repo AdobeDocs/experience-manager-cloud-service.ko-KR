@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6351'
+source-wordcount: '6346'
 ht-degree: 0%
 
 ---
@@ -628,7 +628,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 1. 입력 숫자 상자를 선택하고 를 누릅니다 ![편집 규칙](assets/edit-rules-icon.svg) 규칙 편집기를 엽니다.
 1. 탭 **[!UICONTROL 규칙 만들기]**. 아래 표시된 옵션을 사용하여 양식의 출력 필드에 입력의 사각형 값을 저장하는 규칙을 만듭니다.
 
-[![사용자 지정 함수를 사용하여 규칙 만들기](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![사용자 지정 함수를 사용하여 규칙 만들기](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. **[!UICONTROL Done]**&#x200B;을 누릅니다. 사용자 지정 함수가 추가되었습니다.
 

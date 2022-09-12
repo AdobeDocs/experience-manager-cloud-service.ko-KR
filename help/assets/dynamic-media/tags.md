@@ -654,7 +654,7 @@ Experience Platform 태그에는 여러 개발 환경, 하나의 스테이징 �
 
 <!-- Prerequisites list below should be verified by Sasha -->
 
-전제 조건:
+사전 요구 사항:
 
 * Experience Manager은 작성자 및 게시 인스턴스를 모두 실행합니다.
 * Experience Manager 작성자 노드가 Dynamic Media에 설정되어 있습니다. <!-- Scene7 run mode (dynamicmedia_s7) -->
@@ -797,7 +797,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 1. 페이지의 왼쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 만들기]**.
 1. 설정 **[!UICONTROL 일반]** 페이지의 페이지(1/3페이지) **[!UICONTROL Experience Platform 태그 구성 만들기]** 창에서 다음 필드를 입력합니다.
 
-   * **[!UICONTROL 제목]** - 설명 구성 제목을 입력합니다. 예, `We.Retail Tags cloud configuration`.
+   * **[!UICONTROL 제목]** - 설명 구성 제목을 입력합니다. (예: `We.Retail Tags cloud configuration`)
 
    * **[!UICONTROL 연결된 Adobe IMS 구성]** - 이전에 만든 IMS 구성을 선택합니다 [Experience Manager IMS 구성](#configuring-aem-ims).
 

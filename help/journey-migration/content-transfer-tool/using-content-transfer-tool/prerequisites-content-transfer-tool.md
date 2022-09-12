@@ -32,6 +32,6 @@ ht-degree: 4%
 | 변경할 수 없는 경로의 콘텐츠 | 컨텐츠 전송 도구를 사용하여 변경할 수 없는 경로에서 컨텐츠를 마이그레이션할 수 없습니다. 컨텐츠를 `/etc` 단지 `/etc` 경로는 선택할 수 있지만 지원에만 사용할 수 있습니다 [AEM Forms에서 AEM Forms as a Cloud Service으로](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). 기타 모든 사용 사례는 다음을 참조하십시오. [공통 저장소 구조 변경](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) 저장소 구조 변경에 대해 자세히 알아보십시오. |
 | MongoDB의 노드 속성 값 | MongoDB에 저장된 노드 속성 값은 16MB를 초과할 수 없습니다. 이는 MongoDB에 의해 적용됩니다. 이 제한보다 큰 속성 값이 있는 경우 처리가 실패합니다. 추출을 실행하기 전에 다음을 실행하십시오 [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) 스크립트. 모든 큰 속성 값을 검토하고 필요한 경우 확인합니다. 16MB를 초과하는 값은 이진 값으로 변환해야 합니다. |
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 사전 요구 사항을 검토하고 마이그레이션 프로젝트에서 컨텐츠 전송 도구를 사용할 수 있는지 여부를 결정했으면 을 참조하십시오 [컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).

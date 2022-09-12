@@ -3,7 +3,7 @@ title: 반응형 레이아웃
 description: AEM에서는 페이지에 대한 응답형 레이아웃을 실현할 수 있습니다.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 100%
 

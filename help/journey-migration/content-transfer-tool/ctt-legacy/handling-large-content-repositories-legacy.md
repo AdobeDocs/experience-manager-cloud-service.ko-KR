@@ -3,7 +3,8 @@ title: 대용량 컨텐츠 저장소 처리(이전)
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: 19021f40-d0a5-4e0c-a213-c421338cedeb
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 1%
@@ -43,7 +44,7 @@ CTT(컨텐츠 전송 도구)를 사용하여 많은 수의 블롭을 복사하�
 
 ### 소스 AEM 인스턴스가 파일 데이터 저장소를 사용하도록 구성된 경우 추가적인 고려 사항 {#additional-considerations-aem-instance-filedatastore}
 
-* 로컬 시스템의 사용 가능한 공간이 원본 데이터 저장소1/256 크기보다 훨씬 크어야 합니다. 예를 들어 데이터 저장소 크기가 3TB이면 11.72GB보다 큰 여유 공간이 `crx-quickstart/cloud-migration` AzCopy를 사용할 소스의 폴더입니다. 최소한 소스 시스템의 여유 공간은 1GB여야 합니다. 사용 가능한 공간은 `df -h` Linux 인스턴스의 명령 및 Windows 인스턴스의 dir 명령
+* 로컬 시스템의 사용 가능한 공간이 원본 데이터 저장소1/256 크기보다 훨씬 크어야 합니다. 예를 들어 데이터 저장소 크기가 3TB이면 11.72GB보다 큰 여유 공간이 `crx-quickstart/cloud-migration` AzCopy를 사용할 소스의 폴더입니다. 적어도 소스 시스템의 여유 공간은 1GB여야 합니다. 사용 가능한 공간은 `df -h` Linux 인스턴스의 명령 및 Windows 인스턴스의 dir 명령
 
 * AzCopy가 활성화된 상태에서 추출을 실행할 때마다 전체 파일 데이터 저장소가 변환되어 클라우드 마이그레이션 컨테이너에 복사됩니다. 마이그레이션 세트가 데이터 저장소 크기보다 상당히 작은 경우 AzCopy 추출이 최적의 방법이 아닙니다.
 

@@ -3,7 +3,7 @@ title: CSV로 내보내기
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 100%
 

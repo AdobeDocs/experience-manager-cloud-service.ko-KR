@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 뉴스레터 아카이브
-description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스레터입니다. Adobe Campaign은 Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다. 이 원스톱 상점 뉴스레터에서 유용한 지식 구축 리소스를 이용할 수 있습니다. 예를 들어 방법 비디오 및 솔루션 개요 가 있습니다. 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 몇 가지 주요 기능과 성능에 대해 알아보십시오. '
+description: Experience League의 Dynamic Media 뉴스레터는 월간 뉴스레터입니다. Adobe Campaign은 Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다. 이 원스톱 상점 뉴스레터에서 유용한 지식 구축 리소스를 이용할 수 있습니다. 예를 들어 방법 비디오 및 솔루션 개요 가 있습니다. 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 몇 가지 주요 기능과 성능에 대해 알아보십시오.
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
