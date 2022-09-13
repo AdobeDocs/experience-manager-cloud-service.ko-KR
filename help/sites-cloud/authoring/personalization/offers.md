@@ -2,10 +2,10 @@
 title: 오퍼 생성 및 관리(오퍼 콘솔)
 description: 오퍼 콘솔을 사용하여 활동 경험에서 사용할 수 있는 오퍼를 생성하십시오.
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 67%
+source-wordcount: '1393'
+ht-degree: 63%
 
 ---
 
@@ -88,6 +88,23 @@ A **경험 조각 변형으로 변환** 선택 사항 및 워크플로우가 기
 1. 다음으로 확인 **완료**.
 
    이제 **경험 조각 오퍼** 콘솔에는 관련 변형과 함께 새 경험 조각이 표시됩니다.
+
+### 오퍼 템플릿으로 타깃팅 {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>이 선택 사항은 기존 레거시 오퍼가 있는 고객에게만 제공됩니다.
+>
+>과 마찬가지로 **오퍼** 콘솔에서 더 이상 사용할 수 없습니다.
+>
+>* 마지막 기존 오퍼가 경험 조각으로 변환된 후
+>* 레거시 오퍼가 더 이상 사용되지 않는 경우(향후에)
+>
+>따라서 이 선택 사항이 아닌 경험 조각을 사용하는 것이 좋습니다.
+
+기존 레거시 오퍼를 보유한 고객의 경우, **오퍼 템플릿 사용** 구성 요소를 타깃팅할 때 옵션이 표시됩니다 **not** 경험 구성요소:
+
+![경험 조각 변형 대화 상자로 변환](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## 오퍼 콘솔 {#offers-console}
 
