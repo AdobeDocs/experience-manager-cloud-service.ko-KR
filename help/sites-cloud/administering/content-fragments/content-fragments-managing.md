@@ -2,10 +2,10 @@
 title: 콘텐츠 조각 관리
 description: 페이지 작성을 위해 또는 Headless 콘텐츠의 기반으로 콘텐츠 조각 콘솔을 사용하여 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 28a3e8fe6ca16d20f5b4264e386154e95b55dc77
+source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 100%
+source-wordcount: '1947'
+ht-degree: 98%
 
 ---
 
@@ -52,6 +52,11 @@ ht-degree: 100%
 * [콘텐츠 조각 콘솔에서 검색 및 필터링](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
 ## 콘텐츠 조각 만들기 {#creating-content-fragments}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="새 컨텐츠 만들기"
+>abstract="모듈 1에서 만든 모델을 기반으로 하여 페이지 작성에 사용할 수 있는 컨텐츠 또는 헤드리스 컨텐츠를 기반으로 만드는 방법을 알아봅니다."
 
 ### 콘텐츠 모델 만들기 {#creating-a-content-model}
 
@@ -239,8 +244,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 조각 게시 및 참조 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
->모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
+모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다. 이 작업은 표준 Assets 기능을 사용하여 수행됩니다.
 
@@ -258,17 +263,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 또한 [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)하면 해당 조각은 페이지 참조에 나열됩니다.
 
 >[!CAUTION]
->조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
+조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
 
 ## 조각 게시 취소 {#unpublishing-a-fragment}
 
 콘텐츠 조각 게시를 취소하려면 하나 이상의 조각을 선택한 다음 **게시 취소**&#x200B;를 선택합니다.
 
 >[!NOTE]
->게시된 조각을 사용할 수 있는 경우 **게시 취소** 작업이 표시됩니다.
+게시된 조각을 사용할 수 있는 경우 **게시 취소** 작업이 표시됩니다.
 
 >[!CAUTION]
->다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
+다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
 
 ## 조각 삭제 {#deleting-a-fragment}
 
@@ -278,13 +283,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. 조각을 선택합니다.
 
    >[!NOTE]
-   >**삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
+   **삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
 
 3. 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 4. **삭제** 작업을 확인합니다.
 
    >[!CAUTION]
-   >다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 **강제 삭제**&#x200B;를 진행할지 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
+   다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 **강제 삭제**&#x200B;를 진행할지 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
 
 ## 조각의 상위 참조 찾기 {#parent-references-fragment}
 
@@ -297,7 +302,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 콘텐츠 조각 타임라인 {#timeline-for-content-fragments}
 
 >[!NOTE]
->이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 표준 옵션뿐만 아니라 [타임라인](/help/assets/manage-digital-assets.md#timeline)도 콘텐츠 조각과 관련된 정보와 작업을 모두 제공합니다.
 
@@ -317,13 +322,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **삭제**
 
 >[!NOTE]
->댓글은
->* 모든 에셋에 대한 표준 기능입니다.
->* 타임라인에서 만들어집니다.
->* 조각 에셋과 관련되어 있습니다.
->주석(콘텐츠 조각)은
->* 조각 편집기에서 입력됩니다.
->* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
+댓글은
+* 모든 에셋에 대한 표준 기능입니다.
+* 타임라인에서 만들어집니다.
+* 조각 에셋과 관련되어 있습니다.
+>
+주석(콘텐츠 조각)은
+* 조각 편집기에서 입력됩니다.
+* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
 >
 
 
@@ -334,7 +340,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 조각 버전 비교 {#comparing-fragment-versions}
 
 >[!NOTE]
->이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 **현재 항목에 비교** 작업은 특정 버전을 선택한 후 [타임라인](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 사용할 수 있습니다.
 
@@ -357,14 +363,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * **완료**&#x200B;를 선택하면 콘솔로 돌아갑니다.
 
 >[!NOTE]
->조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
+조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
 
 ![비교](assets/cfm-managing-06.png)
 
 ## 버전으로 되돌리기  {#reverting-to-a-version}
 
 >[!NOTE]
->이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 조각을 특정 버전으로 되돌릴 수 있습니다.
 
