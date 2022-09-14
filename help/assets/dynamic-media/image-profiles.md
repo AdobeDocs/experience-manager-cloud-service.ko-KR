@@ -4,9 +4,9 @@ description: 언샵 마스크, 스마트 자르기 또는 스마트 견본 또�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3277'
+source-wordcount: '3333'
 ht-degree: 9%
 
 ---
@@ -84,6 +84,10 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 ### 스마트 자르기 및 색상 견본에 대해 지원되는 이미지 파일 형식
 
 지원되는 최대 입력 파일 크기 해상도는 16K입니다.
+
+>[!NOTE]
+>
+>16K 해상도는 가로 방향으로 약 16,000픽셀의 디스플레이 해상도입니다. 가장 일반적으로 논의되는 16K 해상도는 153608640이며, 이 해상도는 각 차원에서의 8K UHD의 픽셀 수가 총 4배 많은 픽셀들에 대해 두 배가 됩니다. 이 해상도는 132.7메가픽셀이며, 4K 해상도보다 16배, 1080p 해상도보다 64배 많은 화소입니다.
 
 | 이미지 형식 | 대소문자를 구분하지 않는 파일 확장명 | MIME 유형 | 지원되는 입력 색상 공간 | 지원되는 최대 입력 파일 크기 | 지원되는 이미지 형식입니까? |
 | --- | --- | --- | --- | --- | --- |
