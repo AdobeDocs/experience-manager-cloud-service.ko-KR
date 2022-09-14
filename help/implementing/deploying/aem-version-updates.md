@@ -3,10 +3,10 @@ title: AEM 버전 업데이트
 description: AEM 버전 업데이트
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 37%
+source-wordcount: '399'
+ht-degree: 36%
 
 ---
 
@@ -39,7 +39,7 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 
 >[!NOTE]
 >
->사용자 지정 코드가 스테이징에 푸시된 다음 사용자가 거부하는 경우, 다음 AEM 업데이트는 이러한 변경 사항을 제거하여 마지막으로 성공한 고객 릴리스의 git 태그를 프로덕션에 반영합니다.
+>사용자 지정 코드가 스테이징에 푸시되고 프로덕션에 푸시되지 않은 경우 다음 AEM 업데이트에서는 마지막으로 성공한 고객 릴리스의 Git 태그를 프로덕션에 반영하도록 이러한 변경 사항을 제거합니다. 따라서 스테이징에서만 사용할 수 있었던 사용자 지정 코드는 다시 배포해야 합니다.
 
 ## 복합 노드 저장소 {#composite-node-store}
 
