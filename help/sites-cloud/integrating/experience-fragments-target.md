@@ -2,10 +2,10 @@
 title: Adobe Target으로 경험 조각 내보내기
 description: Adobe Target으로 경험 조각 내보내기
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
 workflow-type: tm+mt
-source-wordcount: '2259'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -209,6 +209,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
       >* 보안 개선
       >* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
       >* AT.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 더 이상 target.js를 호출할 필요가 없습니다.
+
       >
       >**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 
@@ -227,8 +228,6 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
       >타겟팅된 구성 요소를 ***이미*** 만든 다음 이 설정을 변경하는 경우, 해당 변경 내용은 이들 구성 요소에 영향을 미치지 않습니다. 이들 구성 요소는 직접 변경해야 합니다.
 
 1. Target에 연결하려면 **Adobe Target에 연결**&#x200B;을 클릭하십시오. 정상적으로 연결되면 **연결 성공**&#x200B;이라는 메시지가 표시됩니다. 메시지에서 **확인**&#x200B;을 클릭한 다음 대화 상자에서 **확인**&#x200B;을 클릭합니다.
-
-   Target에 연결할 수 없는 경우 [문제 해결](#troubleshooting-target-connection-problems) 섹션을 참조하십시오.
 
 ### Target 프레임워크 추가 {#adding-a-target-framework}
 
@@ -311,17 +310,6 @@ When you associate a page with the framework, the child pages inherit the associ
    >[!NOTE]
    >
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
--->
-
-<!--
-### Troubleshooting Target Connection Problems {#troubleshooting-target-connection-problems}
-
-Perform the following tasks to troubleshoot problems that occur when connecting to Target:
-
-* Make sure that the user credentials that you provide are correct.
-* Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies.
-* Look for helpful messages in the AEM error log. The error.log file is located in the **crx-quickstart/logs** directory where AEM is installed.
-* When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
 -->
 
 ## Adobe Target으로 경험 조각 내보내기 {#exporting-an-experience-fragment-to-adobe-target}
