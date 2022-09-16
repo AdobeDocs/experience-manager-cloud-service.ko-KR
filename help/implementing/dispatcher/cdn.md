@@ -3,9 +3,9 @@ title: AEM as a Cloud Service의 CDN
 description: AEM as a Cloud Service의 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
+source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1056'
 ht-degree: 8%
 
 ---
@@ -98,7 +98,7 @@ CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할
 >
 >샌드박스 프로그램 환경은 고객이 제공하는 CDN을 지원하지 않습니다.
 
-고객 CDN에서 AEM 관리 CDN까지 홉이 효율적일 수 있지만 추가 홉으로 인해 작은 성능 히트가 발생할 수 있습니다.
+고객 CDN과 AEM CDN 간의 추가 홉은 캐시 누락 경우에만 필요합니다. 이 문서에 설명된 캐시 최적화 전략을 사용하여 고객 CDN을 추가하면 지연 시간이 거의 발생하지 않습니다.
 
 이 고객 CDN 구성은 게시 계층에 대해 지원되지만 작성 계층 앞에는 있지 않습니다.
 
