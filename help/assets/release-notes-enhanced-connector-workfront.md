@@ -2,9 +2,9 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
+source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -15,19 +15,24 @@ ht-degree: 2%
 
 ## 릴리스 날짜 {#release-date}
 
-최신 버전 1.9.2의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2022년 8월 3일입니다.
+최신 버전 1.9.3의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2022년 9월 16일입니다.
 
 ## 릴리스 특징 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음과 같은 개선 사항 및 버그 수정 사항이 포함되어 있습니다.
 
-* 다음 **[!UICONTROL 문서 업로드]** 워크플로우 단계에서 Workfront에 문서를 첨부할 수 없습니다.
+* 크기가 8GB를 초과하는 파일을 업로드할 수 없습니다.
+* Workfront에서 AEM으로 전송되는 자산을 자동으로 게시하는 동안 문제가 발생합니다.
+* 기본 메타데이터 스키마 양식을 편집하는 동안 태그 필드에 루트 경로 필드를 사용할 수 없습니다.
+* AEM 워크플로우를 사용하여 Workfront에서 새 버전을 추가하는 동안 문제가 발생했습니다
+* Workfront에서 사용할 수 있는 자산에 대한 AEM 검색을 실행하면 AEM에 오류 메시지가 표시됩니다.
+* 자산에서 작업 생성을 위한 AEM 워크플로우를 만들고 상위 작업 이름을 정의하지 않으면 작업이 Workfront에 생성되지 않습니다.
 
-* 다음 **[!UICONTROL 문서 업로드]** 워크플로우 단계에서 Workfront의 작업 및 문제에 문서를 첨부하지 못했습니다. 워크플로우 단계에서는 문서를 프로젝트에 첨부합니다.
+
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.2 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.3 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 알려진 문제 {#known-issues}
 
@@ -35,7 +40,17 @@ ht-degree: 2%
 
 * 클래식 Workfront 경험을 사용하는 경우 **[!UICONTROL 보내기]** 선택 사항은 **[!UICONTROL 자세히]** 드롭다운 목록에서 Experience Manager 내에서 대상 대상을 선택할 수 없습니다. 다음 **[!UICONTROL 보내기]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록. 다음 **[!UICONTROL 보내기]** 옵션이 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
 
+* Workfront에 `SERVER_ERROR` 릴리스 8316으로 업그레이드한 후 문서를 AEM에 연결하는 동안 메시지가 표시됩니다. 문제를 해결하려면 `rep:readProperties` to `content/dam/collections` 대상 `wf-workfront-user` AEM 사용자 그룹.
+
 ## 이전 릴리스 {#previous-releases}
+
+### 2022년 8월 릴리스 {#august-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 버전 1.9.2는 8월 3일에 릴리스되었습니다.
+
+* 다음 **[!UICONTROL 문서 업로드]** 워크플로우 단계에서 Workfront에 문서를 첨부할 수 없습니다.
+
+* 다음 **[!UICONTROL 문서 업로드]** 워크플로우 단계에서 Workfront의 작업 및 문제에 문서를 첨부하지 못했습니다. 워크플로우 단계에서는 문서를 프로젝트에 첨부합니다.
 
 ### 2022년 7월 릴리스 {#july-2022-release}
 
