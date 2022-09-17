@@ -2,7 +2,7 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 * 크기가 8GB를 초과하는 파일을 업로드할 수 없습니다.
 * Workfront에서 AEM으로 전송되는 자산을 자동으로 게시하는 동안 문제가 발생합니다.
 * 기본 메타데이터 스키마 양식을 편집하는 동안 태그 필드에 루트 경로 필드를 사용할 수 없습니다.
-* AEM 워크플로우를 사용하여 Workfront에서 새 버전을 추가하는 동안 문제가 발생했습니다
+* AEM 워크플로우를 사용하여 Workfront에서 새 버전을 추가하는 동안 문제가 발생합니다.
 * Workfront에서 사용할 수 있는 자산에 대한 AEM 검색을 실행하면 AEM에 오류 메시지가 표시됩니다.
 * 자산에서 작업 생성을 위한 AEM 워크플로우를 만들고 상위 작업 이름을 정의하지 않으면 작업이 Workfront에 생성되지 않습니다.
 
