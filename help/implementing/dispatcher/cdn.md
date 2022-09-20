@@ -3,9 +3,9 @@ title: AEM as a Cloud Service의 CDN
 description: AEM as a Cloud Service의 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
+source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1093'
 ht-degree: 8%
 
 ---
@@ -127,6 +127,10 @@ AEM 관리 CDN은 다음을 사용하여 각 요청에 헤더를 추가합니다
 
 * 국가 코드: `x-aem-client-country`
 * 대륙 코드: `x-aem-client-continent`
+
+>[!NOTE]
+>
+>고객 관리 CDN의 경우 이러한 헤더는 실제 클라이언트가 아닌 고객 CDN 프록시 서버의 위치를 반영합니다.  따라서 고객 관리 CDN의 경우 지리적 위치 헤더를 고객 CDN에서 관리해야 합니다.
 
 국가 코드 값은 설명된 알파-2 코드입니다 [여기](https://en.wikipedia.org/wiki/ISO_3166-1).
 
