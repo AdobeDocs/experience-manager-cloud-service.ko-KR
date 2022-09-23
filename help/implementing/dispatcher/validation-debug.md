@@ -3,10 +3,10 @@ title: 디스패처 도구를 사용하여 확인 및 디버깅
 description: 디스패처 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -313,13 +313,26 @@ Alternatively, you can include the **default** version of those files, whose nam
 
 **포함된 파일(...)과 알려진 파일이 일치하지 않습니다.**
 
-Apache 가상 호스트 구성에는 다음과 같이 지정할 수 있는 두 가지 유형의 파일이 있습니다. rewrites 및 variables.
-포함된 파일의 이름은 다음과 같이 지정해야 합니다.
+기본적으로 Apache 가상 호스트 구성에 포함되는 두 가지 유형의 파일을 지정할 수 있습니다. rewrites 및 variables.
 
 | 유형 | 파일 이름 포함 |
 |-----------|---------------------------------|
 | Rewrites | `conf.d/rewrites/rewrite.rules` |
 | 변수 | `conf.d/variables/custom.vars` |
+
+유연한 모드에서 다른 파일이 하위 디렉토리(임의 수준)에 있는 한 포함될 수도 있습니다 `conf.d` 디렉토리 접두사가 다음과 같습니다.
+
+| 파일 상위 디렉토리 접두사 포함 |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+예를 들어, `conf.d/includes` 디렉토리
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 또는 다음을 포함할 수 있습니다 **기본** 이름이 인 rewrite 규칙 버전 `conf.d/rewrites/default_rewrite.rules`.
 변수 파일의 기본 버전은 없습니다.

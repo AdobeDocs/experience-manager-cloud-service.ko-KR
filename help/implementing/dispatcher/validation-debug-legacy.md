@@ -4,10 +4,10 @@ description: Dispatcher 도구(기존)를 사용하여 유효성 검사 및 디�
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -309,6 +309,10 @@ Apache 가상 호스트 구성에는 다음과 같이 지정할 수 있는 두 �
 |-----------|---------------------------------|
 | Rewrites | `conf.d/rewrites/rewrite.rules` |
 | 변수 | `conf.d/variables/custom.vars` |
+
+>[!TIP]
+>
+>훨씬 덜 제한된 방식으로 더 많은 파일을 포함할 수 있도록 유연한 디스패처 구성 모드로 전환할 수 있습니다. 문서 보기 [Dispatcher 도구를 사용하여 유효성 검사 및 디버깅](/help/implementing/dispatcher/validation-debug.md) 를 참조하십시오.
 
 또는 다음을 포함할 수 있습니다 **기본** 이름이 인 rewrite 규칙 버전 `conf.d/rewrites/default_rewrite.rules`.
 변수 파일의 기본 버전은 없습니다.
