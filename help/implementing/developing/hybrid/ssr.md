@@ -2,9 +2,9 @@
 title: SPA 및 서버측 렌더링
 description: SPA에서 SSR(서버 측 렌더링)을 사용하면 페이지의 초기 로드를 가속화한 다음 클라이언트에 추가 렌더링을 전달할 수 있습니다.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
+source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ SSR 구현을 결정할 때 먼저 SSR을 추가함으로써 장기적인 유지
 * **SEO:** 트래픽을 가져오는 검색 엔진에서 사이트를 제대로 인덱싱하려면 SSR이 여전히 필요합니까? 기본 검색 엔진 크롤러가 이제 JS를 평가한다는 것을 잊지 마십시오.
 * **페이지 속도:** SSR은 실제 환경에서 측정 가능한 속도 개선 기능을 제공하고 전체 사용자 경험에 추가할 수 있습니까?
 
-이 두 질문 중 하나 이상이 프로젝트에 대해 명확한 &quot;예&quot;로 답변되는 경우에만 Adobe에서 SSR 구현을 추천합니다. 다음 섹션에서는 Adobe I/O Runtime을 사용하여 이 작업을 수행하는 방법에 대해 설명합니다.
+이 두 질문 중 하나 이상이 프로젝트에 대해 명확한 &quot;예&quot;로 답변되는 경우에만 Adobe에서 SSR 구현을 추천합니다. 다음 섹션에서는 다음의 일부인 Adobe I/O Runtime을 사용하여 이 작업을 수행하는 방법에 대해 설명합니다 [App Builder](https://developer.adobe.com/app-builder).
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
@@ -34,8 +34,9 @@ SSR 구현을 결정할 때 먼저 SSR을 추가함으로써 장기적인 유지
 
 Adobe I/O Runtime에 대한 자세한 내용은
 
-* [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - 서비스 개요
-* [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - 플랫폼에 대한 자세한 설명서
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - App Builder의 런타임 기능 개요
+* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - 전체 App Builder 제품에 대한 자세한 내용
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) - 자세한 설명서
 
 다음 섹션에서는 Adobe I/O Runtime을 사용하여 두 개의 다른 모델에서 SPA용 SSR을 구현하는 방법에 대해 자세히 설명합니다.
 
@@ -44,7 +45,7 @@ Adobe I/O Runtime에 대한 자세한 내용은
 
 >[!NOTE]
 >
->Adobe은 환경(스테이지, 제품, 테스트 등)별로 별도의 Adobe I/O Runtime 작업 공간을 권장합니다. 이렇게 하면 다른 환경에 배포된 단일 애플리케이션의 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다. 문서를 참조하십시오 [Project Firefly 애플리케이션용 CI/CD](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) 추가 정보.
+>Adobe은 환경(스테이지, 제품, 테스트 등)별로 별도의 Adobe I/O Runtime 작업 공간을 권장합니다. 이렇게 하면 다른 환경에 배포된 단일 애플리케이션의 다른 버전을 사용하는 일반적인 SDLC(시스템 개발 수명 주기) 패턴을 사용할 수 있습니다.  문서를 참조하십시오 [App Builder 애플리케이션용 CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 추가 정보.
 >
 >인스턴스 유형별 런타임 구현에 차이가 없으면 인스턴스(작성자, 게시)당 별도의 작업 공간이 필요하지 않습니다.
 
