@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: b8a827e73d8eba9184be352d0aa4705dfb24b642
+source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 100%
+source-wordcount: '3036'
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ VPN 및 전용 이그레스 IP 주소가 필요하지 않은 경우 전용 이�
 
 ### 구성 {#configuring-flexible-port-egress-provision}
 
-프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 `kind` 매개변수 및 지역에 대한 `flexiblePortEgress` 값이 간단히 전달됩니다. 해당 끝점은 `network_id` 및 상태와 같은 기타 정보에 응답합니다. API 문서에 전체 매개변수 및 정확한 구문 집합이 참조되어야 합니다.
+프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 `kind` 매개변수 및 지역에 대한 `flexiblePortEgress` 값이 간단히 전달됩니다. 해당 끝점은 `network_id` 및 상태와 같은 기타 정보에 응답합니다. 전체 매개 변수 및 정확한 구문 세트와 나중에 변경할 수 없는 매개 변수와 같은 중요한 정보입니다. [api 문서에서 참조할 수 있습니다.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 호출되면 네트워킹 인프라가 프로비저닝되는 데 일반적으로 약 15분이 소요됩니다. Cloud Manager의 [네트워크 인프라 GET 끝점](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 호출은 “준비됨” 상태로 표시됩니다.
 
