@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 99%
+source-wordcount: '3053'
+ht-degree: 98%
 
 ---
 
@@ -335,7 +335,7 @@ Adobe 조직의 모든 고객 프로그램 및 각 프로그램의 모든 환경
 ## 레거시 전용 이그레스 주소 고객 {#legacy-dedicated-egress-address-customers}
 
 2021년 9월 30일 이전에 전용 이그레스 IP로 프로비저닝된 경우, 전용 이그레스 IP 기능은 HTTP 및 HTTPS 포트만 지원합니다.
-여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다.
+여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다. 또한 하나의 전용 송신 엔드포인트는 포트 80/443의 HTTP/HTTPS를 통해서만 모든 대상에 연결할 수 있습니다.
 
 ## Virtual Private Network(VPN) {#vpn}
 
