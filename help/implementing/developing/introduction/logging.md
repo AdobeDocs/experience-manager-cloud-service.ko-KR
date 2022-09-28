@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 로깅
 description: 중앙 로깅 서비스에 대한 글로벌 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 위해 AEM as a Cloud Service에 대한 로깅을 사용하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 197bff164df83788b4b8b16ba4c7a82021f86002
+source-git-commit: 4b737e1b9355cbb5c4532e0a614c18f5679d61f2
 workflow-type: tm+mt
-source-wordcount: '2334'
-ht-degree: 2%
+source-wordcount: '2347'
+ht-degree: 3%
 
 ---
 
@@ -559,6 +559,10 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 >[!NOTE]
 >
 >샌드박스 프로그램 환경에 대한 Splunk 전달이 지원되지 않습니다.
+
+>[!NOTE]
+>
+>전용 이그레스 IP 주소에서는 Splunk 전달 기능을 사용할 수 없습니다.
 
 초기 요청에 단계/prod 환경 외에 활성화해야 하는 모든 개발 환경이 포함되었는지 확인해야 합니다. Splunk에는 SSL 인증서가 있고 공개 대상이 되어야 합니다.
 
