@@ -1,8 +1,10 @@
 ---
 title: 콘텐츠 조각 관리
 description: 페이지 작성을 위해 또는 Headless 콘텐츠의 기반으로 콘텐츠 조각 콘솔을 사용하여 AEM 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
+feature: Content Fragments
+role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 3260cd8c9c0e121048b4403217b68500be37ddda
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '1947'
 ht-degree: 98%

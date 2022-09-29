@@ -1,13 +1,11 @@
 ---
 title: 관련 컨텐츠(자산 - 컨텐츠 조각)
-description: AEM 관련 컨텐츠 기능이 연결을 제공하여 컨텐츠 페이지에 자산을 추가할 때 조각과 함께 선택적으로 사용할 수 있도록 함으로써 헤드리스 컨텐츠 전달에 추가 유연성을 추가하는 방법을 이해합니다.
-feature: Content Fragments
-role: User
+description: AEM 관련 컨텐츠 기능이 조각과 함께 자산을 선택적으로 사용할 수 있도록 연결을 제공하는 방법을 이해합니다.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 58%
+source-wordcount: '232'
+ht-degree: 62%
 
 ---
 

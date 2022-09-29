@@ -1,10 +1,8 @@
 ---
 title: 컨텐츠 조각 구조 트리(자산 - 컨텐츠 조각)
 description: AEM의 콘텐츠 조각 편집기의 구조 트리 기능을 사용하여 Headless 콘텐츠를 더 잘 이해할 수 있습니다.
-feature: Content Fragments
-role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 93%

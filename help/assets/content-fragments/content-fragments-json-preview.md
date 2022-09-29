@@ -1,13 +1,11 @@
 ---
 title: 미리 보기 - JSON 표시(자산 - 컨텐츠 조각)
-description: AEM Headless 솔루션을 구현할 때 콘텐츠 조각의 JSON 표현식을 쉽게 미리 보는 방법에 대해 알아봅니다.
-feature: Content Fragments
-role: User
+description: AEM 헤드리스 솔루션을 구현할 때 컨텐츠 조각의 JSON 표현을 쉽게 미리 보는 방법을 알아봅니다.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 94%
+source-wordcount: '117'
+ht-degree: 79%
 
 ---
 

@@ -1,11 +1,13 @@
 ---
 title: 관련 콘텐츠
-description: AEM의 관련 콘텐츠 기능이 연결을 제공하여 콘텐츠 페이지에 에셋을 추가할 때 조각과 함께 해당 에셋을 선택적으로 사용할 수 있도록 함으로써 페이지 작성과 Headless 콘텐츠 전달 모두에 유연성을 더하는 방법을 이해합니다.
+description: 컨텐츠 조각에 관련 컨텐츠 기능이 어떻게 조각에 사용할 자산에 대한 연결을 제공하는지 이해하여 페이지 작성과 헤드리스 컨텐츠 전달 모두에 추가 유연성을 추가합니다.
+feature: Content Fragments
+role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 100%
+source-wordcount: '243'
+ht-degree: 86%
 
 ---
 

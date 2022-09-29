@@ -1,10 +1,8 @@
 ---
 title: 변형 - 조각 콘텐츠 작성 (자산 - 컨텐츠 조각)
 description: 변형에서 조각에 대한 컨텐츠를 작성한 다음 목적에 따라 해당 컨텐츠의 변형을 만들 수 있도록 함으로써 AEM에서 헤드리스 컨텐츠를 더욱 유연하게 만드는 방법을 이해합니다.
-feature: Content Fragments
-role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2286'
 ht-degree: 96%

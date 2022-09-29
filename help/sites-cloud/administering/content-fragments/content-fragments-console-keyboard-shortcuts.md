@@ -1,8 +1,10 @@
 ---
 title: Content 조각 콘솔의 키보드 단축키
 description: 콘텐츠 조각 관리를 위한 일부 키보드 단축키를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
+feature: Content Fragments
+role: User
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
-source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%

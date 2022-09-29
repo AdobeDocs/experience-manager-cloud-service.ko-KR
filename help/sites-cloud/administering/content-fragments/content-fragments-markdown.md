@@ -1,11 +1,13 @@
 ---
 title: Markdown
-description: 콘텐츠 조각 편집기에서 Markdown 구문을 사용하여 손쉽게 페이지 작성 및 Headless 전달에 필요한 콘텐츠를 만들 수 있도록 하는 방법을 이해합니다.
+description: 컨텐츠 조각 편집기에서 Markdown 구문을 사용하는 방법을 이해하면 페이지 작성과 헤드리스 전달을 위해 컨텐츠를 쉽게 만들 수 있습니다.
+feature: Content Fragments
+role: User
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 

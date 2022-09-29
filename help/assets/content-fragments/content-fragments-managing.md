@@ -1,10 +1,8 @@
 ---
 title: 컨텐츠 조각 관리 (자산 - 컨텐츠 조각)
 description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
-feature: Content Fragments
-role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '1781'
 ht-degree: 91%

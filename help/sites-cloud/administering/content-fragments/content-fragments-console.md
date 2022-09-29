@@ -1,12 +1,14 @@
 ---
 title: 콘텐츠 조각 콘솔
 description: 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
-landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 중점을 두고 있지만 페이지 작성 시에도 사용되는 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
+landing-page-description: 헤드리스 사용 사례에는 컨텐츠 조각을 많이 사용하지만 페이지 작성 시에도 사용되는 컨텐츠 조각 콘솔에서 컨텐츠 조각을 관리하는 방법을 알아봅니다.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 96%
 
 ---
 

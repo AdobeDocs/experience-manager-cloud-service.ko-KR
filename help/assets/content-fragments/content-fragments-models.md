@@ -1,10 +1,8 @@
 ---
 title: 컨텐츠 조각 모델(자산 - 컨텐츠 조각)
 description: 컨텐츠 조각 모델 이 AEM에서 헤드리스 컨텐츠의 기초로서 사용되는 방법과 구조화된 컨텐츠로 컨텐츠 조각을 생성하는 방법을 알아봅니다.
-feature: Content Fragments
-role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2893'
 ht-degree: 98%

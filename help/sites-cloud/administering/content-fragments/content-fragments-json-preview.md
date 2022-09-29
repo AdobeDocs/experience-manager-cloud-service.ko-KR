@@ -1,11 +1,13 @@
 ---
 title: 미리보기 - JSON 표현식
-description: AEM Headless 솔루션을 구현할 때 콘텐츠 조각의 JSON 표현식을 쉽게 미리 보는 방법에 대해 알아봅니다.
+description: AEM 헤드리스 솔루션을 구현할 때 컨텐츠 조각의 JSON 표현을 쉽게 미리 보는 방법을 알아봅니다.
+feature: Content Fragments
+role: User
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 84%
 
 ---
 
