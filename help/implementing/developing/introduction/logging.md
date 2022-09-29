@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 로깅
 description: 중앙 로깅 서비스에 대한 글로벌 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 위해 AEM as a Cloud Service에 대한 로깅을 사용하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 4b737e1b9355cbb5c4532e0a614c18f5679d61f2
+source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2351'
 ht-degree: 3%
 
 ---
@@ -549,7 +549,7 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 
 지원 요청에서 고객은 다음을 표시해야 합니다.
 
-* Splunk HEC 끝점 주소입니다. 이 끝점에 유효한 SSL 인증서가 있어야 합니다.
+* Splunk HEC 끝점 주소입니다. 이 끝점에 유효한 SSL 인증서가 있어야 하며 공개적으로 액세스할 수 있어야 합니다.
 * Splunk 색인
 * Splunk 포트
 * Splunk HEC 토큰. 자세한 내용은 [이 페이지](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) 추가 정보.
