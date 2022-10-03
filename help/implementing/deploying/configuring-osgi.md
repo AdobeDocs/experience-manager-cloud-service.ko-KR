@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 암호 값 및 환경별 값으로 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: aeff6c3e81eb71521dbd75fc73d3e177aac60abd
+source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3311'
 ht-degree: 1%
 
 ---
@@ -298,7 +298,9 @@ AEM을 시작하기 전에 구성에 사용되는 환경 변수를 설정하고 
 
 >[!CAUTION]
 >
->텍스트 파일의 이름은 지정해야 합니다 **server_password** - 파일 확장명이 없습니다.
+>텍스트 파일에는 파일 확장자를 사용할 수 없습니다.
+>
+>따라서 위의 예에서 텍스트 파일의 이름은 지정해야 합니다 **server_password** - 파일 확장명이 없습니다.
 
 다음 `org.apache.felix.configadmin.plugin.interpolation.secretsdir` 는 Sling 프레임워크 속성입니다. 따라서 이 속성은 felix 콘솔(/system/console)에서 설정되지 않지만 시스템이 부팅될 때 사용되는 sling.properties 파일에 설정됩니다. 이 파일은 추출된 Jar/install 폴더(crx-quickstart/conf)의 /conf 하위 디렉토리에서 찾을 수 있습니다.
 
