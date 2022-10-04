@@ -41,8 +41,8 @@ ht-degree: 98%
 * 이메일 구성 요소를 사용하여 Campaign Classic을 통해 이메일로 제공되는 AEM의 콘텐츠를 만들 수 있습니다. 핵심 이메일 구성 요소
    * 편집 가능한 템플릿과 스타일 시스템을 지원하는 [Core WCM Component](https://github.com/adobe/aem-core-wcm-components)를 기반으로 함.
    * 이메일에 최적화되고 제작 준비가 완료된 구성 요소(페이지, 컨테이너, 제목, 텍스트, 이미지, 버튼, 티저, 경험 조각, 콘텐츠 조각, 세그먼테이션) 10개 제공.
-   * 대화 상자 필드에서의 [Campaign 변수 삽입](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) 및 유연한 [세그먼테이션 구성 요소](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(기술 설명서))를 통해 고급 개인화 및 세그먼테이션 기능 제공.
-   * [CSS 스타일 인라이너](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-기술 설명서), [HTML 속성 인라이너](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation) 및 [HTML 삭제](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-기술 설명서)를 통해 이메일에 최적화된 HTML 출력 제공.
+   * 대화 상자 필드에서의 [Campaign 변수 삽입](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) 및 유연한 [세그먼테이션 구성 요소](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation))를 통해 고급 개인화 및 세그먼테이션 기능 제공.
+   * [CSS 스타일 인라이너](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), [HTML 속성 인라이너](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation) 및 [HTML 삭제](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation)를 통해 이메일에 최적화된 HTML 출력 제공.
    * 장소에 상관없이 이메일 생성.
 
 ### [!DNL Sites] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-sites}
