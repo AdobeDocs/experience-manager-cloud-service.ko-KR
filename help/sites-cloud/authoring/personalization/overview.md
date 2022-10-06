@@ -2,10 +2,10 @@
 title: 개인화 및 콘텐츠 타겟팅
 description: AEM을 사용하여 개인화된 타깃팅된 컨텐츠를 만드는 방법을 알아봅니다
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
+source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 12%
+source-wordcount: '1056'
+ht-degree: 10%
 
 ---
 
@@ -111,29 +111,32 @@ AEM ContextHub 내에서 대상은 규칙(조건)을 기반으로 하여 세그�
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM은 페이지 요청을 처리하고 표시할 콘텐츠를 결정하는 내장 타깃팅 엔진 ContextHub를 제공합니다. AEM 타겟팅 엔진을 사용하는 경우 경험의 대상을 정의하기 위해 AEM에서 만들어진 세그먼트를 사용해야 하는 제한이 있습니다.
+AEM에서 내장된 타깃팅 엔진 제공 [ContextHub](/help/implementing/developing/personalization/contexthub.md) 페이지 요청을 처리하고 표시할 콘텐츠를 결정합니다. AEM 타겟팅 엔진을 사용하는 경우 경험의 대상을 정의하기 위해 AEM에서 만들어진 세그먼트를 사용해야 하는 제한이 있습니다.
 
 ### Adobe Target {#adobe-target}
 
-Adobe Target 타겟팅 엔진을 사용하면 페이지 방문에서 수집된 정보가 Adobe Target에서 추적됩니다.
+다음 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 타깃팅 엔진으로 인해 페이지 방문에서 수집된 정보가 Adobe Target에서 추적됩니다.
 
 * 이 타겟팅 엔진을 사용하는 경우, Adobe Target에서 가져오는 세그먼트를 사용하여 경험의 대상을 정의합니다.
 * Adobe Target 엔진을 사용하는 활동은 [Target에 동기화](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)됩니다.
 
-이 엔진을 사용하면 [Adobe Target 통합](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+이 엔진을 사용하면 [Adobe Target 통합](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ## 개인화된 콘텐츠를 설정하는 방법 {#how-to-setup-personalized-content}
 
 개인화된 콘텐츠를 전달하는 데 필요한 다양한 단계 및 정의가 있습니다.
 
-1. 타깃팅 엔진과 AEM 통합.
+1. 다음 방법 중 하나를 사용하여 타깃팅 엔진을 설정합니다.
+
+   1. 구성 [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
+   1. 통합 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
 1. 대상자를 구성합니다.
 
-   1. 타깃팅 엔진에 따라 규칙과 함께 대상 또는 세그먼트를 정의합니다.
+   1. 타깃팅 엔진에 따라 을(를) 정의합니다 [Target 대상](https://experienceleague.adobe.com/docs/target/using/audiences/target.html) 또는 [ContextHub 세그먼트](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)와 함께 사용할 수도 있습니다.
 
-1. 브랜드 및 활동을 만듭니다.
+1. 만들기 [브랜드 및 활동](/help/sites-cloud/authoring/personalization/activities.md).
 
 1. 다양한 대상에게 표시할 경험의 선택을 작성하십시오.
 
-1. 특정 대상(세그먼트)에 타깃팅하여 이러한 경험을 개인화합니다.
+1. 다음을 수행하여 이러한 경험을 개인화합니다. [타겟팅](/help/sites-cloud/authoring/personalization/targeted-content.md) 세그먼트를 특정 대상(세그먼트)에 전달할 수 있습니다.
