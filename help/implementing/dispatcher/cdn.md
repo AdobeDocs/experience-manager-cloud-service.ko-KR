@@ -3,9 +3,9 @@ title: AEM as a Cloud Service의 CDN
 description: AEM as a Cloud Service의 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
+source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1139'
 ht-degree: 8%
 
 ---
@@ -120,6 +120,19 @@ CDN을 사용하는 경우 Cloud Manager에 도메인 및 인증서를 설치할
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+## 컨텐츠 처리 {#content-disposition}
+
+게시 계층의 경우 BLOB 제공 기본값은 첨부 파일로 사용됩니다. 이 값은 표준을 사용하여 대체할 수 있습니다 [콘텐츠 처리 헤더](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) 참조하십시오.
+
+다음은 구성이 어떻게 표시되어야 하는지에 대한 예입니다.
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## 지리적 위치 헤더 {#geo-headers}
 
