@@ -2,7 +2,7 @@
 title: 소스에서 콘텐츠 추출
 description: 소스에서 콘텐츠 추출
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: a2e14d73fd6b8138799799c6408a0846224cd8c9
+source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 21%
@@ -35,7 +35,7 @@ ht-degree: 21%
    >[!IMPORTANT]
    >
    >추출 키가 유효하고 만료 기한이 아닌지 확인합니다. 만료 날짜가 가까워지면 마이그레이션 세트를 선택하고 속성을 클릭하여 추출 키를 갱신할 수 있습니다. 클릭 **갱신**. 클릭하면 Cloud Acceleration Manager가 표시됩니다 **추출 키 복사**. 클릭할 때마다 **추출 키 복사**를 입력하면 생성 후 14일 동안 유효한 새 추출 키가 생성됩니다.
-   >[!이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. 그러면 추출 대화 상자가 표시됩니다. 클릭 **Extract** 추출 단계를 시작하려면 다음을 수행하십시오.
 
