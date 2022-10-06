@@ -2,10 +2,10 @@
 title: 라이선스 대시보드
 description: Cloud Manager는 조직 또는 임차인이 사용할 수 있는 AEMaaCS 제품 권한을 쉽게 볼 수 있는 대시보드를 제공합니다.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 4%
+source-wordcount: '876'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager 라이선스 대시보드는 다음 정보에 쉽게 액세스할 
 
 >[!TIP]
 >
->을(를) 참조하십시오. [Admin Console 개요](https://helpx.adobe.com/enterprise/using/admin-console.html) Admin Console에서 전체 조직에서 Adobe 자격을 관리하는 방법을 알아봅니다.
+>을(를) 참조하십시오. [Admin Console 개요](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) Admin Console에서 전체 조직에서 Adobe 자격을 관리하는 방법을 알아봅니다.
 
 ## FAQ {#faq}
 
@@ -83,6 +83,10 @@ AEM에는 검색 색인 또는 서비스를 새로 고치기 위해 정기적으
 | 트래픽 차단기 | 브라우저에서 추적기 차단기를 사용하면 일부 요청이 추적되지 않을 수 있습니다. |
 | 방화벽 | 방화벽이 Analytics 추적을 차단할 수 있습니다. 이것은 회사 방화벽과 함께 더 빈번합니다. |
 
+### 콘텐츠 요청 볼륨에 대해 자세히 알려면 어떻게 합니까? {#current-request-volumes}
+
+라이센스 대시보드에 표시된 컨텐츠 요청 볼륨에 대한 추가 인사이트를 원하는 경우 Adobe 팀이 컨텐츠 요청의 최상위 볼륨 드라이버를 보여주는 보고서를 제공할 수 있습니다. 최상위 사용량 보고서를 요청하려면 Adobe 팀이나 고객 지원 센터에 문의하십시오.
+
 ### 내 CDN을 사용하는 경우 어떻게 합니까? {#using-own-cdn}
 
-Cloud Manager의 컨텐츠 요청 대시보드는 자신의 CDN에 대한 추적을 표시하지 않습니다.
+라이선스 대시보드는 Cloud Service CDN에서 추적한 데이터만 표시합니다.  BYOCDN(Your Own Cdn)을 가져오도록 선택하는 경우 계약에 명시된 대로 컨텐츠 요청 볼륨을 Adobe에 매년 다시 보고합니다.
