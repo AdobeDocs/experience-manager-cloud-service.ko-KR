@@ -2,10 +2,10 @@
 title: AEM 프로젝트 구조
 description: Adobe Experience Manager Cloud Service에 배포할 패키지 구조를 정의하는 방법에 대해 알아봅니다.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 13%
+source-wordcount: '2931'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 13%
 
 AEM 애플리케이션 배포는 단일 AEM 패키지로 구성되어야 합니다. 따라서 이 패키지에는 코드, 구성 및 지원 기준선 컨텐츠를 포함하여 응용 프로그램이 작동하는 데 필요한 모든 것을 구성하는 하위 패키지가 들어 있어야 합니다.
 
-AEM requires a separation of **content** and **code**, which means a single content package **cannot** deploy to **both** `/apps` and runtime-writable areas (e.g. `/content`, `/conf`, `/home`, or anything not `/apps`) of the repository. Instead, the application must separate code and content into discrete packages for deployment into AEM.
+AEM을 사용하려면 **콘텐츠** 및 **코드**: 단일 컨텐츠 패키지를 의미합니다 **사용할 수 없음** 배포 대상 **둘 다** `/apps` 및 런타임 쓰기 가능 영역(예: `/content`, `/conf`, `/home`또는 어떤 것도 `/apps`) 내의 아무 곳에나 삽입할 수 있습니다. Instead, the application must separate code and content into discrete packages for deployment into AEM.
 
 The package structure outlined in this document is compatible with **both** local development deployments and AEM Cloud Service deployments.
 

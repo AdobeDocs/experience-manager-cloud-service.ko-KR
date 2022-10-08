@@ -2,9 +2,9 @@
 title: 쿼리 빌더 API
 description: Asset Share Query Builder의 기능은 Java API 및 REST API를 통해 노출됩니다.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2040'
 ht-degree: 0%
 
 ---

@@ -2,10 +2,10 @@
 title: 페이지 편집을 위한 키보드 단축키
 description: 페이지 편집을 위한 일부를 포함하여 AEM 전체에서 사용할 수 있는 다양한 키보드 단축키
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '238'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
-| 임의 편집 창 모드 | `Ctrl-Shift-m` | **미리보기**&#x200B;와 현재 선택한 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a>(예: **편집**, **레이아웃** 등) 간을 전환합니다.* |
+| 임의 편집 창 모드 | `Ctrl-Shift-m` | 전환 **미리 보기** 및 현재 선택된 [모드](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (예: **편집**, **레이아웃**, etc)* |
 | **편집** 모드 | `Ctrl-z` | [마지막 변경 내용을 실행 취소합니다](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [마지막 변경 내용을 재실행합니다](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 여러 단락을 선택합니다 |

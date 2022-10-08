@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인화
 description: 콘텐츠 검색 및 색인화
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 100%
+source-wordcount: '2255'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 1. 기본 제공 색인. 예: `/oak:index/cqPageLucene-2`
 1. 기본 제공 색인의 사용자 정의. 이러한 사용자 정의는 고객이 정의합니다. 예: `/oak:index/cqPageLucene-2-custom-1`
-1. 완전히 맞춤화된 색인. 예: `/oak:index/acme.product-1-custom-2`. 이름 지정에서 충돌하지 않도록 완전히 맞춤화된 색인에는 접두사(예: `acme.`)를 사용해야 합니다.
+1. 완전히 맞춤화된 색인. 예: `/oak:index/acme.product-1-custom-2`. 이름 지정 충돌을 피하려면 전체 사용자 지정 인덱스에 접두사가 있어야 합니다(예: `acme.`
 
 기본 제공 색인의 사용자 정의와 완전히 맞춤화된 색인에는 모두 `-custom-`이 포함되어야 합니다. 완전히 맞춤화된 색인만 접두사로 시작합니다.
 
@@ -88,7 +88,7 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 * 인덱스 정의 자체(예: `/oak:index/ntBaseLucene-custom-1`)
 
-사용자 정의 인덱스 또는 맞춤화된 인덱스를 배포하려면 Git 및 Cloud Manager 배포 프로세스를 통해 `ui.apps`를 통해 인덱스 정의(`/oak:index/definitionname`)를 전달해야 합니다. FileVault 필터(예: `ui.apps/src/main/content/META-INF/vault/filter.xml`)에서 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`과 같은 각 사용자 정의 인덱스 및 맞춤화된 인덱스를 개별적으로 나열합니다. 이렇게 하면 사용자 정의/맞춤화된 인덱스 정의 자체가 다음과 같이 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` 파일에 저장됩니다.
+사용자 정의 인덱스 또는 맞춤화된 인덱스를 배포하려면 Git 및 Cloud Manager 배포 프로세스를 통해 `ui.apps`를 통해 인덱스 정의(`/oak:index/definitionname`)를 전달해야 합니다. 예를 들어, FileVault 필터에서 `ui.apps/src/main/content/META-INF/vault/filter.xml`, 각 사용자 지정 및 사용자 지정 인덱스를 개별적으로 나열하십시오(예: ) `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. 이렇게 하면 사용자 정의/맞춤화된 인덱스 정의 자체가 다음과 같이 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml` 파일에 저장됩니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -2,9 +2,9 @@
 title: SPA 블루프린트
 description: 이 문서에서는 AEM 내에서 편집 가능한 SPA 구성 요소를 구현하기 위해 모든 SPA 프레임워크이 수행해야 하는 일반적인 프레임워크에 대해 설명합니다.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2057'
 ht-degree: 1%
 
 ---

@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '385'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 저장소 보기에 연
 4. AEM 사이트에 하위 구성 할당
 
    * AEM Sites 콘솔으로 이동
-   * 사이트 구조의 지역 또는 언어 루트로 이동합니다(예: ). /content/venia/us _또는_ Venia 샘플 페이지의 /content/venia/us/en
+   * 사이트 구조의 지역 또는 언어 루트로 이동합니다(예: /content/venia/us). _또는_ Venia 샘플 페이지의 /content/venia/us/en
    * 페이지를 선택하고 페이지 속성을 엽니다
    * 고급 탭을 선택합니다
    * 에서 `Configuration` 섹션에서 3단계에서 작성한 구성을 선택합니다.

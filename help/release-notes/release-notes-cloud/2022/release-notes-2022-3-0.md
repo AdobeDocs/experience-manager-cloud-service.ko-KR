@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1153'
+ht-degree: 97%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 100%
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Developer Console에서 셀프서비스 방식으로 만료되기 전에 서버 간 API 호출 인증에 사용되는 자격 증명(예: GraphQL API 요청의 경우)을 새로 고칠 수 있습니다. 자세한 내용은 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)를 참조하십시오.
+* 서버 간 API 호출을 인증하는 데 사용되는 자격 증명(예: GraphQL API 요청)은 이제 개발자 콘솔에서 제공하는 방식으로 만료되기 전에 새로 고칠 수 있습니다. 자세한 내용은 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)를 참조하십시오.
 
 * 이전에 활성화되지 않은 버전 제거 및 감사 로그 제거 유지 관리 작업이 새 환경에서 활성화될 수 있습니다. [유지 관리 작업](/help/operations/maintenance.md) 문서에서 관련된 값을 참조하십시오.
 

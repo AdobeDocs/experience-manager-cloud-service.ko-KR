@@ -4,10 +4,10 @@ description: 사용할 수 있는 강력한 라이브 카피 동기화 옵션 �
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | 블루프린트 활성화에서 활성화 | 소스가 게시되면 라이브 카피 게시 | 활성화 시 | `targetActivate` |
 | 블루프린트 비활성화에서 비활성화 | 소스가 비활성화되면 라이브 카피 비활성화 | 비활성화 시 | `targetDeactivate` |
 | 수정되면 푸시 | 소스가 수정되면 콘텐츠를 라이브 카피로 푸시합니다.<br>이 롤아웃 구성은 수정 시 트리거를 사용하므로 제한적으로 사용하십시오. | 수정 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| 수정되면 푸시(약식) | 블루프린트 페이지가 수정되면 참조(예: 약식 사본 참조)를 업데이트하지 않고 콘텐츠를 라이브 카피로 푸시합니다.<br>이 롤아웃 구성은 수정 시 트리거를 사용하므로 제한적으로 사용하십시오. | 수정 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| 수정되면 푸시(약식) | 블루프린트 페이지가 수정될 때 참조를 업데이트하지 않고 컨텐츠를 Live Copy에 푸시합니다(예: 약식 사본의 경우)<br>이 롤아웃 구성은 수정 시 트리거를 사용하므로 제한적으로 사용합니다. | 수정 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | 출시 홍보 | 시작 페이지를 홍보하기 위한 표준 롤아웃 구성입니다. | 롤아웃 시 | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### 동기화 작업 {#synchronization-actions}

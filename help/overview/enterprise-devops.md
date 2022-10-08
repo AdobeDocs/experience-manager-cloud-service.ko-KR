@@ -2,10 +2,10 @@
 title: 엔터프라이즈 DevOps
 description: 배포를 지우고 공동 작업을 간소화하는 데 필요한 프로세스, 방법 및 커뮤니케이션에 대해 알아봅니다.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 98eaa1390e499f48bb1a615e21b2dfb7a0523c57
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '1002'
+ht-degree: 97%
 
 ---
 
@@ -108,7 +108,7 @@ Adobe Experience Manager (AEM) as a Cloud Service는 일반적으로 서로 다�
 * 그런 다음 스테이징 환경에서 다시 테스트됨
 * 그런 다음 코드를 프로덕션 환경에 배포해야 함
 
-일반적으로 코드(예: 사용자 지정된 웹 애플리케이션 기능 및 디자인 템플릿)는 다른 콘텐츠 저장소 간에 패키지를 내보내고 가져와서 전송합니다. 이 복제를 자동 프로세스로 구성할 수 있습니다.
+일반적으로 코드(예: 사용자 지정된 웹 애플리케이션 기능 및 디자인 템플릿)는 다른 컨텐츠 저장소 간에 패키지를 내보내고 가져와서 전송합니다. 이 복제를 자동 프로세스로 구성할 수 있습니다.
 
 AEM as a Cloud Service 프로젝트는 종종 코드 배포를 다음과 같은 방법으로 트리거합니다.
 

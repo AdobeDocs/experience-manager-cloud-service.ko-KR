@@ -2,9 +2,9 @@
 title: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 description: 렌더링용 구성 요소를 구성하는 콘텐츠 조각
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '522'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 6%
 >
 >* **이 필요하지 않으면 [고급 서비스](#definition-of-advanced-services-that-need-configuration)** 아래에 설명된 대로 이 구성을 무시할 수 있습니다.
 >
->* **확장 또는 기본 제공 구성 요소를 사용하는 경우**&#x200B;를 설정하는 경우에는 OSGi 구성을 변경하지 않는 것이 좋습니다.
+>* **확장 또는 기본 구성 요소를 사용하는 경우**&#x200B;를 설정하는 경우에는 OSGi 구성을 변경하지 않는 것이 좋습니다.
 >
 >* **고급 서비스 없이 컨텐츠 조각 API만 사용하는 구성 요소를 처음부터 작성할 수 있습니다**. 그러나 이러한 경우 적절한 처리를 수행하기 위해 구성 요소를 개발해야 합니다.
 >

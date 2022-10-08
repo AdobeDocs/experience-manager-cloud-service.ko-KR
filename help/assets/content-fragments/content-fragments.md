@@ -2,10 +2,10 @@
 title: 콘텐츠 조각을 사용하여 작업 (자산 - 컨텐츠 조각)
 description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 95%
+source-wordcount: '2075'
+ht-degree: 93%
 
 ---
 
@@ -60,8 +60,8 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 통신 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
-* 물리적 채널 - 예: 데스크탑, 모바일
-* 실제 채널에서의 게재 형태 - 예: 데스크탑의 &quot;제품 세부 정보 페이지&quot;, &quot;제품 범주 페이지&quot; 또는 모바일의 &quot;모바일 웹&quot;, &quot;모바일 앱&quot;
+* 물리적 채널 예를 들어 데스크탑, 모바일 등이 있습니다.
+* 실제 채널에서의 전달 형식 예를 들어, 데스크탑의 &quot;제품 세부 사항 페이지&quot;, &quot;제품 카테고리 페이지&quot; 또는 모바일의 &quot;모바일 웹&quot;, &quot;모바일 앱&quot; 등이 있습니다.
 
 그러나 대개 모든 채널에 대해 동일한 콘텐츠를 사용하고 싶지 않을 것이므로 특정 채널에 따라 콘텐츠를 최적화해야 합니다.
 

@@ -3,9 +3,9 @@ title: 소개 및 개요
 description: 컨텐츠 및 상거래 소개 및 개요. CIF(Experience Manager Commerce Integration Framework)는 Adobe Commerce 및 기타 타사 상거래 솔루션에서 Experience Cloud을 사용하여 상거래 서비스를 통합 및 확장하는 Adobe의 권장 패턴입니다.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '895'
 ht-degree: 2%
 
 ---

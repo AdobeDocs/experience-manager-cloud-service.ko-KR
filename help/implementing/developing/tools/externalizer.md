@@ -2,16 +2,16 @@
 title: URL 표면화
 description: Externalizer는 리소스 경로를 프로그래밍 방식으로 외부 및 절대 URL로 변환할 수 있는 OSGi 서비스입니다.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
 
 # URL 표면화 {#externalizing-urls}
 
-AEM에서 **외부 도우미** 는 리소스 경로(예: )를 프로그래밍 방식으로 변환할 수 있는 OSGi 서비스입니다. `/path/to/my/page`)을 외부 및 절대 URL에 넣습니다(예: `https://www.mycompany.com/path/to/my/page`) 접두사가 있는 DNS로 경로를 고정합니다.
+AEM에서 **외부 도우미** 은 리소스 경로를 프로그래밍 방식으로 변환할 수 있는 OSGi 서비스입니다(예: `/path/to/my/page`)을 외부 및 절대 URL에 넣습니다(예: `https://www.mycompany.com/path/to/my/page`) 접두사가 있는 DNS로 경로를 고정합니다.
 
 AEM as a Cloud Service 인스턴스는 외부에 표시되는 URL을 알 수 없고, 경우에 따라 요청 범위 외부에서 링크를 만들어야 하기 때문에 이 서비스는 이러한 외부 URL을 구성하고 빌드할 수 있는 중앙 위치를 제공합니다.
 

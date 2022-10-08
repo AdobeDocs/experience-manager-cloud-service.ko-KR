@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service 개발 지침
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2445'
 ht-degree: 2%
 
 ---
@@ -206,7 +206,7 @@ Adobe은 응용 프로그램 성능을 모니터링하고 노후화가 확인되
 
 ### 아웃바운드 이메일 활성화 {#enabling-outbound-email}
 
-기본적으로 이메일을 보내는 데 사용되는 포트는 비활성화됩니다. 포트를 활성화하려면 [고급 네트워킹](/help/security/configuring-advanced-networking.md)를 설정하는 것이 좋습니다 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 의도한 포트(예: 465 또는 587)를 프록시 포트에 매핑하는 엔드포인트의 포트 전달 규칙.
+기본적으로 이메일을 보내는 데 사용되는 포트는 비활성화됩니다. 포트를 활성화하려면 [고급 네트워킹](/help/security/configuring-advanced-networking.md)를 설정하는 것이 좋습니다 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 대상 포트(예: 465 또는 587)를 프록시 포트에 매핑하는 엔드포인트의 포트 전달 규칙입니다.
 
 고급 네트워킹을 `kind` 매개 변수가 `flexiblePortEgress` Adobe은 유연한 포트 송신 트래픽의 성능을 최적화할 수 있으므로 고유 송신 IP 주소가 필요한 경우 `kind` 매개 변수 `dedicatedEgressIp`. 다른 이유로 이미 VPN을 구성한 경우 해당 고급 네트워킹 변형에서 제공하는 고유한 IP 주소도 사용할 수 있습니다.
 

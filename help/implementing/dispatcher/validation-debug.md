@@ -3,10 +3,10 @@ title: 디스패처 도구를 사용하여 확인 및 디버깅
 description: 디스패처 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2693'
+ht-degree: 1%
 
 ---
 
@@ -282,11 +282,11 @@ use the prefix `etc/httpd` in your archive.
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, e.g. `../filters/default_filters.any`.
+또는 다음을 포함할 수 있습니다 **기본** 해당 파일 버전에는 이름이 `default_`예: `../filters/default_filters.any`.
 
 **알려진 위치 외부의 (...)에 문을 포함합니다. ...**
 
-위의 단락에 언급된 6개 섹션과 별도로 `$include` 예: 다음 문으로 인해 이 오류가 발생합니다.
+위의 단락에 언급된 6개 섹션과 별도로 `$include` 예를 들어, 다음과 같이 이 오류가 생성됩니다.
 
 ```
 /invalidate {
@@ -301,7 +301,7 @@ Alternatively, you can include the **default** version of those files, whose nam
 
 **요청을 허용하려면 glob 패턴을 사용하지 않아야 합니다.**
 
-가 있는 요청을 허용하는 것은 안전하지 않습니다. `/glob` 스타일 규칙. 전체 요청 라인에 대해 일치합니다(예: ).
+가 있는 요청을 허용하는 것은 안전하지 않습니다. `/glob` 전체 요청 라인에 대해 일치하는 스타일 규칙(예:
 
 ```
 /0100 {
@@ -535,7 +535,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 기존 모드에서 유연한 모드로 마이그레이션 {#migrating}
 
-새 Cloud Manager 프로그램은 Cloud Manager 2021.7.0 릴리스를 통해 [AEM 원형 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 또는 그 이상이며 **opt-in/USE_SOURCES_DIRECT**. 따라서 의 이전 제한 사항이 제거됩니다 [이전 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 에서는 파일 수 및 크기 때문에 SDK 및 런타임에서 개선된 방식으로 구성을 확인하고 배포합니다. Dispatcher 구성에 이 파일이 없는 경우에는 마이그레이션하는 것이 좋습니다. 안전한 전환을 확인하려면 다음 단계를 사용하십시오.
+새 Cloud Manager 프로그램은 Cloud Manager 2021.7.0 릴리스를 통해 [AEM 원형 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 또는 그 이상이며 **opt-in/USE_SOURCES_DIRECT**. 따라서 의 이전 제한 사항이 제거됩니다 [이전 모드](/help/implementing/dispatcher/validation-debug-legacy.md) 에서는 파일 수 및 크기 때문에 SDK 및 런타임에서 개선된 방식으로 구성을 확인하고 배포합니다. Dispatcher 구성에 이 파일이 없는 경우에는 마이그레이션하는 것이 좋습니다. 안전한 전환을 확인하려면 다음 단계를 사용하십시오.
 
 1. **로컬 테스트.** 최신 Dispatcher 도구 SDK를 사용하여 폴더 및 파일을 추가합니다 `opt-in/USE_SOURCES_DIRECTLY`. 이 문서의 &quot;로컬 유효성 검사&quot; 지침에 따라 디스패처가 로컬로 작동하는지 테스트합니다.
 1. **클라우드 개발 테스트:**

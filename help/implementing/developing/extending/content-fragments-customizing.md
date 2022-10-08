@@ -2,9 +2,9 @@
 title: 콘텐츠 조각 맞춤화 및 확장
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 3%
 
 ---
@@ -65,7 +65,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
    * 변형은 변형의 이름을 전달하는 하위 노드 아래에 저장됩니다. 예 `jcr:content/data/myvariation`
 
-   * 각 요소의 데이터는 각 하위 노드에 요소 이름을 사용하는 속성으로 저장됩니다. 예: 요소의 컨텐츠 `text` 는 속성으로 저장됩니다. `text` on `jcr:content/data/master`
+   * 각 요소의 데이터는 각 하위 노드에 요소 이름을 사용하는 속성으로 저장됩니다. 예를 들어 요소의 컨텐츠가 `text` 는 속성으로 저장됩니다. `text` on `jcr:content/data/master`
 
 * 메타데이터 및 관련 컨텐츠는 아래에 저장됩니다 `jcr:content/metadata`
 일반 메타데이터로 간주되지 않고 
@@ -180,7 +180,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
    인터페이스는 다음 방법을 제공합니다.
 
-   * 기본 데이터 관리(예: 이름 가져오기; get/set title/description)
+   * 기본 데이터를 관리합니다(예: get name; get/set title/description)
    * 메타데이터 액세스
    * 액세스 요소:
 
@@ -250,7 +250,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
    * `ContentFragment`
 
-### 경고 {#caveats}
+### 주의 사항 {#caveats}
 
 다음과 같이 명시해야 합니다.
 

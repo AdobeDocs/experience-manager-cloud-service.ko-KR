@@ -2,9 +2,9 @@
 title: SPA 편집기 개요
 description: 이 문서에서는 SPA 편집기에 대한 포괄적인 개요를 제공하며 AEM 내에서 SPA 편집기의 상호 작용에 대한 세부 워크플로우를 포함하는 작동 방식을 설명합니다.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1636'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ SPA 페이지 구성 요소가 페이지 코어 구성 요소에서 상속되는
 
 ![SPA 통신](assets/communication.png)
 
-## 워크플로 {#workflow}
+## 워크플로우 {#workflow}
 
 SPA Editor를 두 Target의 매개로 하여 SPA과 AEM 간의 상호 작용 흐름을 파악할 수 있습니다.
 
@@ -171,7 +171,7 @@ AEM SPA Editor SDK에서 작동하도록 추가 SPA 프레임워크을 구현할
 SPA에서 만든 텍스트 구성 요소의 즉석 편집기를 사용하려면 추가 구성이 필요합니다.
 
 1. 텍스트 HTML을 포함하는 컨테이너 래퍼 요소에서 속성(임의의 항목일 수 있음)을 설정합니다. WKND SPA 프로젝트의 경우 `<div>` 요소 및 사용된 선택기는 `data-rte-editelement`.
-1. 구성 설정 `editElementQuery` 해당 AEM 텍스트 구성 요소의 `cq:InplaceEditingConfig` 해당 선택기를 가리킵니다(예: ). `data-rte-editelement`. 이렇게 하면 편집기에서 HTML 텍스트를 래핑하는 HTML 요소를 알 수 있습니다.
+1. 구성 설정 `editElementQuery` 해당 AEM 텍스트 구성 요소의 `cq:InplaceEditingConfig` 예를 들어 해당 선택기를 가리킵니다. `data-rte-editelement`. 이렇게 하면 편집기에서 HTML 텍스트를 래핑하는 HTML 요소를 알 수 있습니다.
 
 에 대한 추가 정보 `editElementQuery` 속성 및 리치 텍스트 편집기의 구성은 [리치 텍스트 편집기를 구성합니다.](/help/implementing/developing/extending/rich-text-editor.md)
 

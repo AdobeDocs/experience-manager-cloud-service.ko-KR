@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 기본적으로 PWA Studio은 GraphQL을 통해 Adobe Commerce과 원활하게 통합되며 혁신적이고 매력적인 상점 및 기타 디지털 경험을 생성하는 무제한 옵션을 제공합니다.
 
-컨텐츠 조각은 GraphQL을 다양한 형식(예: JSON, Markdown)에서 API로 사용하고 독립적으로 렌더링되는 방식으로 헤드리스 방식으로 사용할 수 있도록 미리 정의된 구조를 갖는 컨텐츠 조각입니다. 컨텐츠 조각에는 GraphQL에서 필요한 모든 데이터 유형과 필드가 포함되어 있으므로 애플리케이션에서 사용 가능한 항목만 요청하고 예상대로 수신됩니다. 구조화 방식에 따라 유연하게 제공되므로 여러 위치 및 여러 채널에서 사용할 수 있습니다.
+컨텐츠 조각 은 GraphQL을 다른 형식(예: JSON, Markdown)으로 API로 사용하고 독립적으로 렌더링되는 방식으로 헤드리스 방식으로 사용할 수 있도록 미리 정의된 구조를 갖는 컨텐츠 조각입니다. 컨텐츠 조각에는 GraphQL에서 필요한 모든 데이터 유형과 필드가 포함되어 있으므로 애플리케이션에서 사용 가능한 항목만 요청하고 예상대로 수신됩니다. 구조화 방식에 따라 유연하게 제공되므로 여러 위치 및 여러 채널에서 사용할 수 있습니다.
 
 Adobe Experience Manager 내의 컨텐츠 조각 모델 편집기를 사용하면 필요한 구조를 쉽게 디자인할 수 있습니다. Adobe Experience Manager 컨텐츠 조각(또는 기타 데이터)과 PWA Studio 애플리케이션을 통합해야 하는 주요 문제는 여러 GraphQL 종단점에서 데이터를 가져오는 것입니다. 이는 PWA Studio이 단일 Adobe Commerce GraphQL 종단점에서 작동하기 때문입니다.
 

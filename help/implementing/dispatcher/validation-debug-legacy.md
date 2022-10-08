@@ -4,10 +4,10 @@ description: Dispatcher 도구(기존)를 사용하여 유효성 검사 및 디�
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2345'
+ht-degree: 1%
 
 ---
 
@@ -271,11 +271,11 @@ use the prefix `etc/httpd` in your archive.
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Alternatively, you can include the **default** version of those files, whose names are prepended with the word `default_`, e.g. `../filters/default_filters.any`.
+또는 다음을 포함할 수 있습니다 **기본** 해당 파일 버전에는 이름이 `default_`예: `../filters/default_filters.any`.
 
 **알려진 위치 외부의 (...)에 문을 포함합니다. ...**
 
-위의 단락에 언급된 6개 섹션과 별도로 `$include` 예: 다음 문으로 인해 이 오류가 발생합니다.
+위의 단락에 언급된 6개 섹션과 별도로 `$include` 예를 들어, 다음과 같이 이 오류가 생성됩니다.
 
 ```
 /invalidate {
@@ -290,7 +290,7 @@ Alternatively, you can include the **default** version of those files, whose nam
 
 **요청을 허용하려면 glob 패턴을 사용하지 않아야 합니다.**
 
-가 있는 요청을 허용하는 것은 안전하지 않습니다. `/glob` 스타일 규칙. 전체 요청 라인에 대해 일치합니다(예: ).
+가 있는 요청을 허용하는 것은 안전하지 않습니다. `/glob` 전체 요청 라인에 대해 일치하는 스타일 규칙(예:
 
 ```
 /0100 {

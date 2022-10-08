@@ -2,10 +2,10 @@
 title: AEM에서 외부 SPA 편집
 description: 이 문서에서는 독립 실행형 SPA을 AEM 인스턴스에 업로드하고 편집 가능한 컨텐츠 섹션을 추가하고 작성을 활성화하기 위한 권장 단계에 대해 설명합니다.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 1%
+source-wordcount: '2402'
+ht-degree: 2%
 
 ---
 
@@ -188,7 +188,7 @@ mvn clean install -PautoInstallSinglePackage
 ### AEM 작성 가능한 페이지 {#aem-authorable-pages}
 
 1. SPA에서 작성할 페이지를 식별합니다. 이 예에서는 을 사용합니다 `/content/wknd-spa-react/us/en/home.html`.
-1. 새 파일(예: `Page.js`) 내의 아무 곳에나 삽입할 수 있습니다. 여기에서 제공된 페이지 구성 요소를 다시 사용할 수 있습니다 `@adobe/cq-react-editable-components`.
+1. 새 파일 만들기(예: `Page.js`) 내의 아무 곳에나 삽입할 수 있습니다. 여기에서 제공된 페이지 구성 요소를 다시 사용할 수 있습니다 `@adobe/cq-react-editable-components`.
 1. 섹션에서 4단계를 반복합니다 [AEM 작성 가능한 리프 구성 요소.](#authorable-leaf-components) 래퍼 함수 사용 `withMappable` 추가 작업이 필요합니다.
 1. 이전에 수행한 대로 적용합니다. `MapTo` 페이지 내의 모든 하위 구성 요소에 대한 AEM 리소스 유형.
 

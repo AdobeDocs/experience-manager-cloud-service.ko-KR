@@ -2,9 +2,9 @@
 title: Query Builder의 사용자 지정 설명 평가기 구현
 description: AEM의 Query Builder 는 컨텐츠 리포지토리를 쿼리하는 쉽고 사용자 지정 가능한 방법을 제공합니다
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 2%
 
 조건자 평가기는 쿼리의 제약 조건을 정의하는 특정 조건자에 대한 평가를 처리합니다.
 
-상위 수준 검색 제약 조건(예: )을 매핑합니다 `width>200`)을 실제 컨텐츠 모델에 맞는 특정 JCR 쿼리(예: `metadata/@width > 200`). 또는 노드를 수동으로 필터링하고 해당 제약 조건을 확인할 수 있습니다.
+상위 수준 검색 제약 조건(예: )을 매핑합니다 `width>200`)을 실제 컨텐츠 모델에 맞는 특정 JCR 쿼리에 추가합니다(예: `metadata/@width > 200`). 또는 노드를 수동으로 필터링하고 해당 제약 조건을 확인할 수 있습니다.
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 * `cq:lastReplicated` 마지막 복제 작업의 날짜를 저장합니다.
 * `cq:lastReplicatedBy` 마지막 복제 작업을 트리거한 사용자의 id를 저장합니다
-* `cq:lastReplicationAction` 마지막 복제 작업(예: 활성화, 비활성화)을 저장하는 스토리지
+* `cq:lastReplicationAction` 는 마지막 복제 작업(예: 활성화, 비활성화)을 저장합니다
 
 #### 기본 설명 평가자를 사용하여 복제 메타데이터 쿼리 {#querying-replication-metadata-with-default-predicate-evaluators}
 

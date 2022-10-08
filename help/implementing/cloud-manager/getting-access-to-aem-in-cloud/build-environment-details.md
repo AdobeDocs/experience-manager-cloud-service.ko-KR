@@ -1,26 +1,26 @@
 ---
 title: 빌드 환경
-description: Cloud Manager의 빌드 환경과 코드를 빌드하고 테스트하는 방법에 대해 알아봅니다.
+description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 1%
+source-wordcount: '986'
+ht-degree: 98%
 
 ---
 
 # 빌드 환경 {#build-environment}
 
-Cloud Manager의 빌드 환경과 코드를 빌드하고 테스트하는 방법에 대해 알아봅니다.
+Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 
 ## 빌드 환경 세부 정보 {#build-environment-details}
 
-Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테스트합니다.
+Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테스트합니다.
 
-* 빌드 환경은 Ubuntu 18.04에서 파생된 Linux 기반입니다.
-* Apache Maven 3.6.0이 설치됩니다.
+* 빌드 환경은 Linux 기반이며, Ubuntu 18.04에서 파생되었습니다.
+* Apache Maven 3.6.0이 설치되어 있습니다.
 * 설치된 Java 버전은 Oracle JDK 8u202 및 Oracle JDK 11.0.2입니다.
-* 기본적으로 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_202`  에는 Oracle JDK 8u202가 포함되어 있습니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션을 참조하십시오.
+* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u202를 포함하는 `/usr/lib/jvm/jdk1.8.0_202`로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven-jdk-version) 섹션을 참조하십시오.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
 
    * `bzip2`
@@ -29,29 +29,29 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
    * `imagemagick`
    * `graphicsmagick`
 
-* 섹션에 설명된 대로 빌드 시 다른 패키지를 설치할 수 있습니다 [추가 시스템 패키지를 설치하는 중입니다.](#installing-additional-system-packages)
-* 모든 빌드는 원시 환경에서 수행됩니다. 빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
+* [추가 시스템 패키지 설치](#installing-additional-system-packages) 섹션에 설명된 대로 빌드 시 다른 패키지를 설치할 수 있습니다.
+* 모든 빌드는 깨끗한 환경에서 수행되며, 빌드 컨테이너는 실행 사이에 어떤 상태도 유지하지 않습니다.
 * Maven은 항상 다음 세 가지 명령을 사용하여 실행됩니다.
 
 * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
 * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
 * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven은 `settings.xml` 파일 - 이름이 지정된 프로파일을 사용하여 공용 Adobe 객체 저장소를 자동으로 포함합니다 `adobe-public`. (자세한 내용은 [Adobe Public Maven 저장소](https://repo1.maven.org/) 자세한 내용).
+* Maven은 `adobe-public`이라는 프로필을 사용하여 자동으로 공개 Adobe 아티팩트 저장소를 포함하는 `settings.xml` 파일로 시스템 수준에서 구성됩니다. 자세한 내용은 [Adobe 공개 Maven 저장소](https://repo1.maven.org/)를 참조하십시오.
 
 >[!NOTE]
 >
->Cloud Manager는 `jacoco-maven-plugin`, 사용된 버전은 적어도 `0.7.5.201505241946`.
+>Cloud Manager에서는 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만 사용되는 버전은 `0.7.5.201505241946` 이상이어야 합니다.
 
 ### 특정 Java 버전 사용 {#using-java-support}
 
-기본적으로 프로젝트는 Oracle 8 JDK를 사용하여 Cloud Manager 빌드 프로세스에서 빌드됩니다. 대체 JDK를 사용하려는 고객은 두 가지 옵션을 사용할 수 있습니다.
+기본적으로 프로젝트는 Oracle 8 JDK를 사용하여 Cloud Manager 빌드 프로세스를 통해 구축됩니다. 대체 JDK를 사용하려는 고객은 두 가지 옵션이 있습니다.
 
-* [Maven 도구 모음을 사용합니다.](#maven-toolchains)
-* [전체 Maven 실행 프로세스에 대한 대체 JDK 버전을 선택합니다.](#alternate-maven-jdk-version)
+* [Maven 툴체인 사용](#maven-toolchains)
+* [전체 Maven 실행 프로세스에 대한 대체 JDK 버전 선택](#alternate-maven-jdk-version)
 
-#### Maven 도구 체인 {#maven-toolchains}
+#### Maven 툴체인 {#maven-toolchains}
 
-다음 [Maven 도구 체인 플러그인](https://maven.apache.org/plugins/maven-toolchains-plugin/) 프로젝트에서 도구 체인 인식 Maven 플러그인 컨텍스트에서 사용할 특정 JDK(또는 도구 체인)를 선택할 수 있습니다. 이 작업은 프로젝트의 `pom.xml` 공급업체 및 버전 값을 지정하여 파일을 작성합니다.
+[Maven 툴체인 플러그인](https://maven.apache.org/plugins/maven-toolchains-plugin/)을 사용하면 프로젝트가 툴체인 인식 Maven 플러그인의 맥락에서 사용될 특정 JDK(또는 툴체인)를 선택할 수 있습니다. 공급업체 및 버전 값을 지정하여 프로젝트의 `pom.xml` 파일에서 이 작업을 수행합니다.
 
 ```xml
 <plugin>
@@ -76,9 +76,9 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 </plugin>
 ```
 
-이렇게 하면 모든 도구 체인 인식 Maven 플러그인이 Oracle JDK, 버전 11을 사용하게 됩니다.
+그러면 모든 툴체인 인식 Maven 플러그인이 Oracle JDK 버전 11을 사용하게 됩니다.
 
-이 메서드를 사용하는 경우 Maven 자체는 기본 JDK(Oracle 8) 및 `JAVA_HOME`  환경 변수가 변경되지 않았습니다. 따라서 Apache Maven Enforcer 플러그인과 같은 플러그인을 통해 Java 버전을 확인하거나 적용하면 작동하지 않으므로 이러한 플러그인을 사용하지 않아야 합니다.
+이 방법을 사용하면 Maven 자체는 기본 JDK(Oracle 8)를 사용하여 계속 실행되며 `JAVA_HOME` 환경 변수는 변경되지 않습니다. 따라서 Apache Maven Enforcer 플러그인과 같은 플러그인을 통해 Java 버전의 확인 또는 적용은 작동하지 않으며 이러한 플러그인은 사용해서는 안 됩니다.
 
 현재 사용 가능한 공급업체/버전 조합은 다음과 같습니다.
 
@@ -89,44 +89,44 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 | `sun` | `8` |
 | `sun` | `11` |
 
-이 표는 제품 버전 번호를 나타냅니다. Java 빌드 번호 또는 설치 경로는 Java 8용 1.8과 같은 이전 Java 버전 규칙을 반영할 수 있습니다.
+이 표에는 제품 버전 번호가 나와 있습니다. Java 빌드 번호 또는 설치 경로는 Java 8용 1.8과 같은 이전 Java 버전 규칙을 반영할 수 있습니다.
 
 >[!NOTE]
 >
->2022년 4월부터 AEM 애플리케이션 개발 및 작업을 위한 기본 JDK는 Oracle JDK입니다. Cloud Manager의 빌드 프로세스는 Maven 도구 체인에서 대체 옵션을 명시적으로 선택한 경우에도 Oracle JDK를 사용하여 자동으로 로 전환됩니다. 자세한 내용은 4월 릴리스 노트를 게시된 후 참조하십시오.
+>2022년 4월부터 Oracle JDK는 AEM 애플리케이션의 개발과 운영을 위한 기본 JDK가 될 것입니다. Cloud Manager의 빌드 프로세스는 Maven 툴체인에 대체 옵션이 명시적으로 선택되어 있더라도 Oracle JDK를 사용하는 것으로 자동 전환됩니다. 자세한 내용은 4월 릴리스 정보가 게시되면 이를 참조하십시오.
 
 #### 대체 Maven 실행 JDK 버전 {#alternate-maven-jdk-version}
 
-또한 전체 Maven 실행에 대한 JDK로 Java 8 또는 Java 11을 선택할 수도 있습니다. 도구 체인 옵션과 달리 도구 체인 구성이 도구 체인 인식 Maven 플러그인에 대해 여전히 도구 체인 구성이 적용되는 경우에도 도구 체인 구성이 설정되어 있지 않으면 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 를 사용하여 Java 버전을 확인하고 적용합니다 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 사용할 수 있습니다.
+전체 Maven 실행에 대한 JDK로 Java 8 또는 Java 11을 선택할 수도 있습니다. 툴체인 옵션과 달리 툴체인 구성이 툴체인 인식 Maven 플러그인에 여전히 적용되는 경우 툴체인 구성도 설정되어 있지 않는 한 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 작동합니다.
 
-이렇게 하려면 이름이 인 파일을 만듭니다 `.cloudmanager/java-version` 파이프라인에서 사용하는 git 리포지토리 분기입니다. 이 파일에는 콘텐츠 11 또는 8이 있을 수 있습니다. 다른 값은 무시됩니다. 11을 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.2`. 8을 지정하면 Oracle 8이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_202`.
+이렇게 하려면 파이프라인에서 사용하는 git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. 이 파일은 콘텐츠 11 또는 8을 가질 수 있습니다. 다른 모든 값은 무시됩니다. 11을 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.2`로 설정됩니다. 8을 지정하면 Oracle 8이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_202`로 설정됩니다.
 
 ## 환경 변수 {#environment-variables}
 
 ### 표준 환경 변수 {#standard-environ-variables}
 
-프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 할 수 있습니다.
+프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 할 수도 있습니다.
 
-예를 들어, gulp와 같은 도구를 통해 빌드 시간 JavaScript 축소를 수행하는 경우 스테이징 및 프로덕션을 위해 빌드하는 것이 아니라 개발 환경을 위해 빌드할 때 다른 축소 수준을 사용하려는 경우가 있을 수 있습니다.
+예를 들어, 작성 시간 JavaScript 축소가 gulp와 같은 도구를 통해 이루어진다면, 스테이징과 프로덕션을 위한 빌드가 아닌 개발 환경을 위한 빌드를 만들 때 다른 축소 수준을 사용하려는 욕구가 있을 수 있습니다.
 
-이를 지원하기 위해 Cloud Manager는 모든 실행을 위해 이러한 표준 환경 변수를 빌드 컨테이너에 추가합니다.
+이를 지원하기 위해 Cloud Manager는 모든 실행 시 빌드 컨테이너에 이러한 표준 환경 변수를 추가합니다.
 
 | 변수 이름 | 정의 |
 |---|---|
-| `CM_BUILD` | 항상 로 설정 `true` |
-| `BRANCH` | 실행을 위해 구성된 분기 |
+| `CM_BUILD` | 항상 `true`로 설정 |
+| `BRANCH` | 실행에 대해 구성된 분기 |
 | `CM_PIPELINE_ID` | 숫자 파이프라인 식별자 |
 | `CM_PIPELINE_NAME` | 파이프라인 이름 |
 | `CM_PROGRAM_ID` | 숫자 프로그램 식별자 |
 | `CM_PROGRAM_NAME` | 프로그램 이름 |
-| `ARTIFACTS_VERSION` | 스테이지 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성한 가상 버전 |
+| `ARTIFACTS_VERSION` | 스테이징 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 통합 버전 |
 | `CM_AEM_PRODUCT_VERSION` | 릴리스 버전 |
 
 ### 파이프라인 변수 {#pipeline-variables}
 
-빌드 프로세스는 Git 리포지토리에 배치하기에 부적절한 특정 구성 변수에 따라 다르거나, 동일한 분기를 사용하여 파이프라인 실행 간에 변경해야 할 수 있습니다.
+빌드 프로세스가 git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라져야 하는 특정 구성 변수에 따라 달라질 수 있습니다.
 
-Cloud Manager를 사용하면 이러한 변수를 파이프라인별로 Cloud Manager API 또는 Cloud Manager CLI를 통해 구성할 수 있습니다. 변수는 일반 텍스트로 저장되거나, 나머지는 암호화될 수 있습니다. 어느 경우든 변수는 빌드 환경 내에서 환경 변수로 사용할 수 있으며 이 변수는 빌드 환경에서 참조할 수 있습니다 `pom.xml` 파일 또는 기타 빌드 스크립트.
+Cloud Manager를 사용하면 파이프라인 단위로 Cloud Manager API 또는 Cloud Manager CLI를 통해 이러한 변수를 구성할 수 있습니다. 변수는 일반 텍스트로 저장되거나 사용하지 않을 때 암호화될 수 있습니다. 두 경우 모두 `pom.xml` 파일 또는 다른 빌드 스크립트 내에서 참조할 수 있는 환경 변수로 빌드 환경 내에서 변수를 사용할 수 있습니다.
 
 이 CLI 명령은 변수를 설정합니다.
 
@@ -142,14 +142,14 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 변수 이름은 다음 규칙을 준수해야 합니다.
 
-* 변수에는 영숫자와 밑줄(`_`).
-* 이름은 모두 대문자로 입력해야 합니다.
-* 파이프라인당 200개의 변수가 제한됩니다.
+* 변수에는 영숫자와 밑줄(`_`)만 포함될 수 있습니다.
+* 이름은 모두 대문자로 해야 합니다.
+* 파이프라인당 200개의 변수 제한이 있습니다.
 * 각 이름은 100자 미만이어야 합니다.
 * 각 `string` 변수 값은 2048자 미만이어야 합니다.
-* 각 `secretString` 유형 변수 값은 500자 미만이어야 합니다.
+* 각 `secretString` 유형의 변수 값은 500자 미만이어야 합니다.
 
-Maven 내에서 사용하는 경우 `pom.xml` 파일에서 이러한 변수는 일반적으로 이와 유사한 구문을 사용하여 Maven 속성에 매핑하는 데 유용합니다.
+Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다.
 
 ```xml
         <profile>
@@ -167,7 +167,7 @@ Maven 내에서 사용하는 경우 `pom.xml` 파일에서 이러한 변수는 �
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-일부 빌드는 완전히 작동하려면 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 해석기를 설치해야 합니다. 이 작업은 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) 다음 위치에서 `pom.xml` APT를 호출합니다. 일반적으로 이 실행은 Cloud Manager 관련 Maven 프로필에 래핑되어야 합니다. 이 예에서는 Python을 설치합니다.
+완벽한 작동을 위해서는 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어, 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어야 합니다. 이 작업은 APT를 호출하기 위해 `pom.xml`에서 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)를 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
 
 ```xml
         <profile>
@@ -224,4 +224,4 @@ Maven 내에서 사용하는 경우 `pom.xml` 파일에서 이러한 변수는 �
 
 >[!NOTE]
 >
->이러한 방식으로 시스템 패키지를 설치해도 Adobe Experience Manager 실행에 사용되는 런타임 환경에 설치되지 않습니다. AEM 환경에 시스템 패키지가 설치되어 필요한 경우 Adobe 담당자에게 문의하십시오.
+>이 방법으로 시스템 패키지를 설치하면 Adobe Experience Manager 실행에 사용되는 런타임 환경에 설치되지 않습니다. AEM 환경에 시스템 패키지를 설치해야 하는 경우 Adobe 담당자에게 문의하십시오.

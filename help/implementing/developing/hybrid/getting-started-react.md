@@ -2,9 +2,9 @@
 title: React를 사용하여 AEM에서 SPA 시작하기
 description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하며 이 응용 프로그램을 구성하는 방법을 설명하고 React 프레임워크를 사용하여 신속하게 자체 SPA을 사용하여 실행 및 실행할 수 있도록 해줍니다.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 3%
 
 ---
@@ -140,7 +140,7 @@ ReactDOM.render(
 
 #### 정적 인스턴스화 {#static-instantiation}
 
-구성 요소 템플릿(예: JSX)을 사용하여 구성 요소가 정적으로 인스턴스화될 때, 이 값은 모델에서 구성 요소의 속성으로 전달되어야 합니다.
+구성 요소가 구성 요소 템플릿(예: JSX)을 사용하여 정적으로 인스턴스화될 때, 이 값은 모델에서 구성 요소의 속성으로 전달되어야 합니다.
 
 ### App.js {#app-js}
 

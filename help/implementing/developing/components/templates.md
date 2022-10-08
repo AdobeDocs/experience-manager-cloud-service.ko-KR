@@ -2,9 +2,9 @@
 title: 페이지 템플릿
 description: 페이지 템플릿 은 새 페이지의 기반으로 사용할 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3297'
 ht-degree: 9%
 
 ---
@@ -188,7 +188,7 @@ ht-degree: 9%
    * 유형: `String`
    * 값: 에 표시할 제목(폴더의 경우)입니다 **템플릿** 콘솔.
 
-1. 표준 작성 권한 및 권한 외에도(예: `content-authors`) 이제 그룹을 할당하고 작성자가 새 폴더에 템플릿을 만들 수 있도록 필요한 ACL(액세스 권한)을 정의해야 합니다.
+1. 표준 작성 권한 및 권한 외에도 다음과 같은 권한이 있습니다. `content-authors`) 이제 그룹을 할당하고 작성자가 새 폴더에 템플릿을 만들 수 있도록 필요한 ACL(액세스 권한)을 정의해야 합니다.
 
    다음 `template-authors` 그룹은 할당해야 하는 기본 그룹입니다. 섹션을 참조하십시오 [ACL 및 그룹](#acls-and-groups) 자세한 내용
 

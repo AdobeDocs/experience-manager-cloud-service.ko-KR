@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.6.0 릴리스 정보입니다.'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 100%
+source-wordcount: '642'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 * I/O Runtime의 서드파티 커넥터에 대한 호환성 및 견고함이 개선되었습니다.
 
-* GQL 클라이언트 구성 덮어쓰기(예: 사용자 정의 캐싱 비헤이비어 설정)에 대한 지원이 개선되었습니다.
+* GQL 클라이언트 구성 덮어쓰기(예: 사용자 지정 캐싱 동작 설정)에 대한 지원이 개선되었습니다
 
 * 이제 여러 상거래 끝점이 기본적으로 지원되며 Cloud Manager를 통해 구성할 수 있습니다. 자세한 내용은 [이](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554) CIF 블로그에서 확인할 수 있습니다.
 

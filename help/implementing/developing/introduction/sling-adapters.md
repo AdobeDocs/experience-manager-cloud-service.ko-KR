@@ -2,9 +2,9 @@
 title: Sling 어댑터 사용
 description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 간편하게 번역합니다
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2221'
 ht-degree: 1%
 
 ---
@@ -346,7 +346,7 @@ null 케이스를 적절하게 처리하는 것이 중요합니다. jsp 렌더�
 | [노드](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 자산의 노드입니다. |
 | ... | 자산의 리소스를 조정할 수 있는 모든 것입니다. |
 
-#### 태깅 {#tagging}
+#### 태그 지정 {#tagging}
 
 **태그** 다음 사항에 맞게 조정:
 

@@ -2,9 +2,9 @@
 title: AEM 기술 재단
 description: AEM이 JCR, Sling 및 OSGi와 같은 구조화되고 기본적인 기술을 제공하는 방법을 포함하여 AEM의 기술 기반에 대한 개요입니다.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 
 주목할 다른 몇 가지 사항은 다음과 같습니다.
 
-* 메서드(GET, POST)이 필요한 경우 HTTP 사양에 따라 대문자로 지정됩니다(예: ). `jobs.POST.esp`
+* 메서드(GET, POST)이 필요한 경우 HTTP 사양에 따라 다음과 같이 대문자로 지정됩니다. `jobs.POST.esp`
 * 다양한 스크립트 엔진이 지원되지만 일반적으로 권장되는 스크립트는 HTL 및 JavaScript입니다.
 
 AEM의 특정 인스턴스에서 지원하는 스크립트 엔진 목록은 Felix Management Console( `http://<host>:<port>/system/console/slingscripting`).

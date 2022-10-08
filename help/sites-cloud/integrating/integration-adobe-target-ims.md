@@ -2,10 +2,10 @@
 title: Adobe Target과 통합할 때 사용되는 IMS 구성
 description: Adobe Target과 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 100%
+source-wordcount: '860'
+ht-degree: 97%
 
 ---
 
@@ -161,7 +161,7 @@ AEM으로 돌아가 Target용 IMS 통합에서 필요한 값을 추가하여 IMS
 1. 여기에서 [Adobe Developer Console의 프로젝트 구성에서 세부 정보](#details-stored-for-the-ims-integration-project)를 사용할 수 있습니다.
 
    * **제목**: 텍스트를 입력하십시오.
-   * **인증 서버**: 아래 **페이로드** 섹션의 `aud` 줄에서 이 인증 서버를 복사하여 붙여넣습니다(아래 예에서 `https://ims-na1.adobelogin.com`).
+   * **인증 서버**: 에서 이 복사/붙여넣기 `aud` 라인 **페이로드** 아래의 섹션(예: `https://ims-na1.adobelogin.com` 아래 예에서
    * **API 키**: 프로젝트 [개요](#details-stored-for-the-ims-integration-project) 섹션에서 이 API 키를 복사합니다.
    * **클라이언트 보안**: 프로젝트 [개요](#details-stored-for-the-ims-integration-project) 섹션에서 이 클라이언트 보안을 생성한 다음 복사합니다.
    * **페이로드**: [JWT 생성](#details-stored-for-the-ims-integration-project) 섹션에서 이 페이로드를 복사합니다.

@@ -2,9 +2,9 @@
 title: Screens Services Provider로 이동
 description: 이 페이지에서는 Screens 서비스 제공업체로 이동하는 방법을 설명합니다.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '266'
 ht-degree: 6%
 
 ---

@@ -2,10 +2,10 @@
 title: 콘텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 96%
 
 ---
 
@@ -153,7 +153,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 >[!NOTE]
 >
->[시각적 에셋(예: 이미지)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
+>다음과 같은 여러 가지 방법을 추가합니다 [시각적 자산(예: 이미지)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) 를 눌러 조각 및/또는 페이지로 이동합니다.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 ### 조각에 삽입된 에셋 {#assets-inserted-into-the-fragment}
 
-에셋(예: 이미지)이 조각 자체에 삽입된 경우([혼합 미디어 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)으로), 페이지 편집기에서 이러한 에셋을 편집하는 옵션은 제한됩니다.
+자산(예: 이미지)이 조각 자체에 삽입된 경우(과) [혼합 미디어 조각](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets))이면, 페이지 편집기에서 이러한 자산을 편집하는 옵션은 제한됩니다.
 
 예를 들어 이미지의 경우 다음 작업을 수행할 수 있습니다.
 

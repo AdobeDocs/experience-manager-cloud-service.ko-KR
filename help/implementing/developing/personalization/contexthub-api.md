@@ -2,9 +2,9 @@
 title: ContextHub Javascript API 참조
 description: ContextHub 구성 요소를 페이지에 추가한 경우 스크립트에 ContextHub Javascript API를 사용할 수 있습니다
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4622'
 ht-degree: 2%
 
 ---

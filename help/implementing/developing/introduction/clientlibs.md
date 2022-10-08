@@ -2,9 +2,9 @@
 title: AEM에서 클라이언트측 라이브러리 사용 as a Cloud Service
 description: AEM에서는 클라이언트 측 코드(clientlibs)를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리를 클라이언트에 제공할 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 1%
 
 ---
@@ -348,5 +348,5 @@ YUI가 AEM에서 기본 축소기로 설정됩니다. GCC로 변경하려면 다
 1. 을(를) 찾아 편집합니다 **Adobe Granite HTML 라이브러리 관리자**.
 1. 를 활성화합니다 **축소** 옵션(아직 활성화되지 않은 경우).
 1. 값 설정 **JS 프로세서 기본 구성** to `min:gcc`.
-   * 세미콜론으로 구분하여 선택 사항을 전달할 수 있습니다(예: ). `min:gcc;obfuscate=true`.
+   * 세미콜론으로 구분하여 다음과 같이 옵션을 전달할 수 있습니다. `min:gcc;obfuscate=true`.
 1. 클릭 **저장** 변경 사항을 저장하려면 을 클릭합니다.

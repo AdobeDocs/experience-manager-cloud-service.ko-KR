@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 로깅
 description: 중앙 로깅 서비스에 대한 글로벌 매개 변수, 개별 서비스에 대한 특정 설정 또는 데이터 로깅을 요청하는 방법을 위해 AEM as a Cloud Service에 대한 로깅을 사용하는 방법을 알아봅니다.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 3%
@@ -61,7 +61,7 @@ DEBUG 로깅이 활성화되면 어떤 활동이 발생하는지 명확하게 �
 </tr>
 <tr>
 <td>
-단계</td>
+스테이징</td>
 <td>
 경고</td>
 <td>
@@ -71,7 +71,7 @@ WARN 로깅이 활성화되면 하위 최적화에 근접하는 조건을 나타
 <ul>
 <li> 로컬 개발</li>
 <li>개발</li>
-<li>단계</li>
+<li>스테이징</li>
 </ul></td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ ERROR 로깅이 활성화되면 실패를 나타내는 문만 기록됩니다. �
 <ul>
 <li> 로컬 개발</li>
 <li>개발</li>
-<li>단계</li>
+<li>스테이징</li>
 <li>프로덕션</li>
 </ul></td>
 </tr>
@@ -163,7 +163,7 @@ Sling LogManager 팩토리에 대한 OSGi 구성을 통해 사용자 지정 Java
 }
 ```
 
-### 단계 {#stage}
+### 스테이징 {#stage}
 
 /apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
 
@@ -554,7 +554,7 @@ Splunk로 전송된 로그와 연결된 네트워크 대역폭은 고객의 네�
 * Splunk 포트
 * Splunk HEC 토큰. 자세한 내용은 [이 페이지](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) 추가 정보.
 
-위의 속성은 각 관련 프로그램/환경 유형 조합에 대해 지정해야 합니다.  예를 들어 고객이 개발, 스테이징 및 프로덕션 환경을 원하는 경우 아래에 표시된 대로 3개의 정보 세트를 제공해야 합니다.
+위의 속성은 각 관련 프로그램/환경 유형 조합에 대해 지정해야 합니다. 예를 들어 고객이 개발, 스테이징 및 프로덕션 환경을 원하는 경우 아래에 표시된 대로 3개의 정보 세트를 제공해야 합니다.
 
 >[!NOTE]
 >

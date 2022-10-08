@@ -2,10 +2,10 @@
 title: 페이지 게시
 description: AEM을 사용하여 페이지를 게시 및 게시 취소하는 방법
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 97%
+source-wordcount: '1812'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
    * 게시/게시 취소와 동의어입니다.
    * 이 용어는 이전 AEM 버전에서 사용되었습니다.
 * **복제하기 / 복제**
-   * 페이지를 게시할 때 한 환경에서 다른 환경으로의 데이터(예: 페이지 콘텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
+   * 페이지를 게시할 때 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
    * 주로 개발자가 사용하는 용어입니다.
 
 ## 페이지 게시 {#publishing-pages-1}

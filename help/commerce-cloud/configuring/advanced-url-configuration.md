@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2043'
 ht-degree: 3%
 
 ---
@@ -50,10 +50,10 @@ ht-degree: 3%
 의 경우 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` 교체 `/content/venia/us/en/products/product-page`
-* `{{sku}}` 은 제품의 sku(예: )로 대체됩니다. `VP09`
+* `{{sku}}` 은 제품의 sku로 대체됩니다(예: ). `VP09`
 * `{{url_key}}` 이 제품의 `url_key` 속성(예: `lenora-crochet-shorts`
 * `{{url_path}}` 이 제품의 `url_path`예: `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` 은 현재 선택한 변형으로 대체됩니다(예: ). `VP09-KH-S`
+* `{{variant_sku}}` 은 현재 선택된 변형으로 대체됩니다(예: ). `VP09-KH-S`
 
 다음 이후 `url_path` 가 더 이상 사용되지 않는 경우, 사전 정의된 제품 URL 형식은 제품의 `url_rewrites` 및 를 선택하는 경우 경로 세그먼트가 가장 큰 세그먼트를 대체 항목으로 선택합니다 `url_path` 을(를) 사용할 수 없습니다.
 

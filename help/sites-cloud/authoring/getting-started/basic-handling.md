@@ -2,10 +2,10 @@
 title: 기본 처리
 description: AEM 탐색 및 기본 사용 방법 익히기
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 100%
+source-wordcount: '2994'
+ht-degree: 99%
 
 ---
 
@@ -208,7 +208,7 @@ AEM의 기본 사용 방법을 이해할 수 있도록 이 문서는 **사이트
 
 ## 작업 도구 모음 {#actions-toolbar}
 
-리소스를 선택하면(예: 페이지 또는 에셋) 도구 모음에 설명 텍스트가 있는 아이콘으로 다양한 작업이 표시됩니다. 이러한 작업은 다음 항목에 따라 달라집니다.
+리소스를 선택할 때마다(예: 페이지 또는 자산) 도구 모음에 설명 텍스트가 있는 아이콘으로 다양한 작업이 표시됩니다. 이러한 작업은 다음 항목에 따라 달라집니다.
 
 * 현재 콘솔
 * 현재 컨텍스트

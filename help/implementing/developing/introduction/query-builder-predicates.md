@@ -2,9 +2,9 @@
 title: 쿼리 빌더 술어 참조
 description: Query Builder API에 대한 설명 참조입니다.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2221'
 ht-degree: 2%
 
 ---
@@ -370,7 +370,7 @@ group.2_group.type=dam:Asset
 
 * **`tagsearch`** - 태그 제목에서 검색할 키워드
 * **`property`** - 고려할 속성(또는 속성의 상대 경로)(기본값) `cq:tags`)
-* **`lang`** - 현지화된 특정 태그 제목으로만 검색할 수 있습니다(예: `de`)
+* **`lang`** - 현지화된 특정 태그 제목으로만 검색하려면(예: `de`)
 * **`all`** - 전체 태그 전체 텍스트, 즉 모든 제목, 설명 등을 검색하는 부울 값 (보다 우선함) `lang`)
 
 ### 유형 {#type}

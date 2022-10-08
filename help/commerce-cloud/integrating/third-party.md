@@ -3,9 +3,9 @@ title: Commerce Integration Framework를 사용하여 AEM 및 타사 상거래 �
 description: 엔터프라이즈 기업에서는 상점 전원을 공급하기 위해 추가 타사 상거래 솔루션이 필요할 수 있습니다. CIF(Commerce Integration Framework)는 이러한 통합 시나리오에서 I/O Runtime을 사용하여 타사 상거래 솔루션을 Adobe Experience Manager에 연결하는 데 사용할 수 있습니다.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
-source-git-commit: a53ef07cd9da636c8d938c711de6defb9eb8e05f
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ CIF는 실시간 제품 카탈로그 액세스 및 제품 경험 관리 도구�
 
 다음 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference) 는 상거래 솔루션에 대한 통합을 구축하는 중요한 시작점입니다. GraphQL을 지원하지만 REST 등 다른 유형의 API와 통합할 수도 있습니다.
 
-타사 계층을 사용할 수 있거나(예: Mulesoft) 통합이 타사 솔루션을 기반으로 구축된 경우에는 이 통합 레이어가 필요하지 않습니다.
+타사 레이어(예: Mulesoft)를 사용할 수 있거나 통합 이 타사 솔루션 위에 빌드되는 경우에는 이 통합 레이어가 필요하지 않습니다.
 
 ## 사전 설치된 커넥터 {#connectors}
 

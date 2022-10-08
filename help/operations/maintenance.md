@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: def7f7071dac447397f40186de1380b8e5575608
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 100%
+source-wordcount: '1001'
+ht-degree: 92%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 100%
     <p><strong>windowSchedule=weekly</strong>(이 값은 변경해서는 안 됨)</p>
     <p>24시간 시계로 사용하는 <strong>windowStartTime=HH:MM</strong>입니다. 주별 유지 관리 창과 연계된 유지 관리 작업을 실행해야 하는 시점을 정의합니다.</p>
     <p>24시간 시계로 사용하는 <strong>windowEndTime=HH:MM</strong>입니다. 주별 유지 관리 창과 연계된 유지 관리 작업이 완료된 상태가 아닌 경우 실행을 정지해야 하는 시점을 정의합니다.</p>
-    <p><strong>windowScheduleWeekdays= Array of 2 values from 1-7 (e.g. [5,5])</strong> 배열의 첫 번째 값은 작업이 예약된 시작일이며 두 번째 값은 작업이 정지되어야 하는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
+    <p><strong>windowScheduleWeekle= 1-7에서 2개의 값 배열(예: [5,5])</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
     </td>
   </tr>
   <tr>
@@ -133,7 +133,7 @@ ht-degree: 100%
     <p><strong>windowSchedule=daily</strong>(이 값은 변경해서는 안 됨)</p>
     <p>24시간 시계로 사용하는 <strong>windowStartTime=HH:MM</strong>입니다. 월별 유지 관리 창과 연계된 유지 관리 작업을 실행해야 하는 시점을 정의합니다.</p>
     <p>24시간 시계로 사용하는 <strong>windowEndTime=HH:MM</strong>입니다. 월별 유지 관리 창과 연계된 유지 관리 작업이 완료된 상태가 아닌 경우 실행을 정지해야 하는 시점을 정의합니다.</p>
-    <p><strong>windowScheduleWeekdays=Array of 2 values from 1-7 (e.g. [5,5])</strong> 배열의 첫 번째 값은 작업이 예약된 시작일이며 두 번째 값은 작업이 정지되어야 하는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
+    <p><strong>windowScheduleWeekle=1-7에서 2개의 값 배열(예: [5,5])</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0은 당월의 첫째 주에 예약하는 것이며 1은 당월 마지막 주에 예약하는 것을 뜻합니다. 아무 값도 없을 경우, 매월 windowScheduleWeekdays의 제어에 따라 매일 효과적으로 작업을 예약합니다.</p>
     </td> 
     </tr>

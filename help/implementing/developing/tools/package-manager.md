@@ -4,9 +4,9 @@ description: AEM의 기본 사항을 알아봅니다. 패키지 관리자를 사
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3584'
+source-wordcount: '3585'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ AEM as a Cloud Service 애플리케이션용으로 생성된 컨텐츠 패키지
 
 >[!NOTE]
 >
->패키지에는 콘텐츠만 포함할 수 있습니다. 모든 기능(예: 아래에 저장된 컨텐츠) `/apps`)여야 합니다. [cloud Manager에서 CI/CD 파이프라인을 사용하여 배포됩니다.](/help/implementing/cloud-manager/deploy-code.md)
+>패키지에는 콘텐츠만 포함할 수 있습니다. 모든 기능(예: 에 저장된 컨텐츠) `/apps`)여야 합니다. [cloud Manager에서 CI/CD 파이프라인을 사용하여 배포됩니다.](/help/implementing/cloud-manager/deploy-code.md)
 
 >[!IMPORTANT]
 >

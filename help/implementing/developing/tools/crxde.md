@@ -2,9 +2,9 @@
 title: CRXDE Lite 사용
 description: CRXDE Lite은 AEM quickstart의 일부이며 브라우저 내에서 로컬 개발 환경에서 리포지토리에 액세스하고 수정할 수 있습니다.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: a9c646d24378e67df84c00a4355c692cac85e50b
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1694'
 ht-degree: 1%
 
 ---
@@ -189,7 +189,7 @@ CRXDE Lite이 있는 노드를 생성하려면
 
 >[!NOTE]
 다음을 포함한 대부분의 편집 작업 **노드 만들기**&#x200B;를 사용하면 모든 변경 사항이 메모리에 저장되고 저장 시(를 사용하여 저장 시) 저장소에만 저장됩니다 [**모두 저장 단추**](#save-all-button)). 그러나 이동과 같은 일부 작업은 자동으로 유지됩니다.
-변경 사항을 저장할 때 리포지토리에서 상위 노드의 노드 유형에 의해 새로 생성된 노드를 허용할지 여부에 대한 유효성 검사도 수행됩니다. 노드를 저장하는 동안 오류 메시지가 표시되는 경우, 컨텐츠 구조가 유효한지 확인하십시오(예: 를 만들 수 없음) `nt:unstructured` 노드 `nt:folder` 노드)에 속해 있어야 합니다.
+변경 사항을 저장할 때 리포지토리에서 상위 노드의 노드 유형에 의해 새로 생성된 노드를 허용할지 여부에 대한 유효성 검사도 수행됩니다. 노드를 저장하는 동안 오류 메시지가 표시되는 경우, 컨텐츠 구조가 유효한지 확인하십시오(예: 다음을 만들 수 없음) `nt:unstructured` 노드 `nt:folder` 노드)에 속해 있어야 합니다.
 
 ## 속성 만들기 {#creating-a-property}
 

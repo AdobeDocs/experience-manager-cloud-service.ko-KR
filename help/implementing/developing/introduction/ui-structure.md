@@ -2,9 +2,9 @@
 title: AEM UI 구조
 description: AEM UI에는 몇 가지 기본 원칙이 있으며, 몇 가지 주요 요소로 구성됩니다
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---

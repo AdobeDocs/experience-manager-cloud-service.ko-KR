@@ -2,9 +2,9 @@
 title: AEM 애플리케이션에 태그 지정 구축
 description: 프로그래밍 방식으로 사용자 지정 AEM 애플리케이션 내에서 태그를 사용하거나 태그를 확장하는 작업을 합니다
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-를 매핑하는 JCR 기반 구현의 경우 `Tags` JCR `Nodes`를 채울 때는 Sling을 직접 사용할 수 있습니다 `adaptTo` 리소스가 있는 경우(예: ) `/content/cq:tags/default/my/tag`):
+를 매핑하는 JCR 기반 구현의 경우 `Tags` JCR `Nodes`를 채울 때는 Sling을 직접 사용할 수 있습니다 `adaptTo` 리소스가 있는 경우(예: `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## 태그 가비지 수집기 {#the-tag-garbage-collector}
 
-태그 가비지 수집기는 숨겨지고 사용하지 않는 태그를 정리하는 백그라운드 서비스입니다. 숨겨진 태그와 사용하지 않는 태그는 아래에 있는 태그입니다 `/content/cq:tags` 그거 `cq:movedTo` 속성 및 이 컨텐츠 노드에서 사용되지 않습니다. 그들은 0을 가지고 있다. 이러한 지연 삭제 프로세스를 사용하여 컨텐츠 노드(즉, `cq:tags` 속성)은 이동 또는 병합 작업의 일부로 업데이트할 필요가 없습니다. 의 참조 `cq:tags` 속성은 `cq:tags` 속성이 업데이트됩니다(예: 페이지 속성 대화 상자 사용).
+태그 가비지 수집기는 숨겨지고 사용하지 않는 태그를 정리하는 백그라운드 서비스입니다. 숨겨진 태그와 사용하지 않는 태그는 아래에 있는 태그입니다 `/content/cq:tags` 그거 `cq:movedTo` 속성 및 이 컨텐츠 노드에서 사용되지 않습니다. 그들은 0을 가지고 있다. 이러한 지연 삭제 프로세스를 사용하여 컨텐츠 노드(즉, `cq:tags` 속성)은 이동 또는 병합 작업의 일부로 업데이트할 필요가 없습니다. 의 참조 `cq:tags` 속성은 `cq:tags` 예를 들어 페이지 속성 대화 상자를 통해 속성이 업데이트됩니다.
 
 태그 가비지 수집기는 기본적으로 하루에 한 번 실행됩니다. 다음 위치에서 구성할 수 있습니다.
 
