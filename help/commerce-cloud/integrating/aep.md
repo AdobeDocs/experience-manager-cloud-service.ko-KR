@@ -10,9 +10,9 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2010'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 다음 [CIF(Commerce Integration Framework)](https://github.com/adobe/aem-core-cif-components) 핵심 구성 요소는 원활한 통합을 제공합니다 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) storefront 이벤트 및 해당 데이터를 __장바구니에 추가__.
 
-다음 [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components) 프로젝트는 [Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) commerce storefront에서 이벤트 데이터를 수집하기 위해 이 이벤트 데이터는 고객 여정을 포함하는 360도 프로필을 빌드하기 위해 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 사용되는 Experience Platform으로 전송됩니다. 상거래 데이터를 Adobe Experience Cloud의 다른 제품에 연결하여 사이트에서 사용자 행동을 분석하고 AB 테스트를 수행하고 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
+다음 [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components) 프로젝트는 [Adobe Commerce용 Adobe Experience Platform 커넥터](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) commerce storefront에서 이벤트 데이터를 수집하기 위해 이 이벤트 데이터는 고객 여정을 포함하는 360도 프로필을 빌드하기 위해 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 사용되는 Experience Platform으로 전송됩니다. 상거래 데이터를 Adobe Experience Cloud의 다른 제품에 연결하여 사이트에서 사용자 행동을 분석하고 AB 테스트를 수행하고 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
 
 추가 정보 [Experience Platform 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) 클라이언트측 소스에서 고객 경험 데이터를 수집할 수 있는 기술 세트.
 
