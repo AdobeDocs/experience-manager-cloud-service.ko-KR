@@ -10,7 +10,7 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 6b91c47f741f12cf66efd6a2ad6d9c1f4531ac70
+source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
 workflow-type: tm+mt
 source-wordcount: '2006'
 ht-degree: 1%
@@ -148,7 +148,7 @@ Barel 로더를 사용하여 JavaScript 파일을 전달하려면`babel-loader`)
 
 다음 [아폴로 클라이언트](https://www.apollographql.com/docs/react/) GraphQL을 사용하여 로컬 데이터와 원격 데이터를 모두 관리하는 데 사용됩니다. 또한 GraphQL 쿼리 결과를 로컬에서 정규화된 인메모리 캐시에 저장합니다.
 
-대상 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 효과적으로 작업하려면 `possibleTypes.js` 파일. 이 파일을 생성하려면 [가능한 유형 자동 생성](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). 또한 [PWA Studio 참조 구현](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) 그리고 [`possibleTypes.js`](../assets/possibleTypes.js) 파일.
+대상 [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) 효과적으로 작업하려면 `possibleTypes.js` 파일. 이 파일을 생성하려면 [가능한 유형 자동 생성](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). 또한 [PWA Studio 참조 구현](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) 그리고 [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) 파일.
 
 
 1. 로 이동합니다 `ui.frontend` 모듈 및 다른 이름으로 파일 저장 `./src/main/possibleTypes.js`
