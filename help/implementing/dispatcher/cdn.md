@@ -3,7 +3,7 @@ title: AEM as a Cloud Service의 CDN
 description: AEM as a Cloud Service의 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: 95ec89fa4bb71a63121bc86a74a15cc7812ae342
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 8%
@@ -32,7 +32,7 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 
 >[!NOTE]
 >
->사용자 지정 도메인은 Cloud Manager에서 지원됩니다 **전용** AEM 관리 CDN을 사용하는 경우. CDN을 가져와서 [AEM 관리 CDN에 가리키기](/help/implementing/dispatcher/cdn.md) 해당 특정 CDN을 사용하여 Cloud Manager가 아닌 도메인을 관리해야 합니다.
+>사용자 지정 도메인은 Cloud Manager에서 지원됩니다 **전용** AEM 관리 CDN을 사용하는 경우. CDN을 가져와서 [AEM 관리 CDN에 가리키기](#point-to-point-CDN) 해당 특정 CDN을 사용하여 Cloud Manager가 아닌 도메인을 관리해야 합니다.
 
 **트래픽 제한**
 
