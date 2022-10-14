@@ -1,22 +1,22 @@
 ---
-title: AEM as a Cloud Service 릴리스 2020.2.0의 Cloud Manager 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2020.2.0의 Cloud Manager 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2020.2.0의 Cloud Manager 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2020.2.0의 Cloud Manager 릴리스 정보
 feature: Release Information
 exl-id: 3f3324d9-53db-458d-9523-2e0d5d6dc3f7
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.2.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.2.0의 Cloud Manager 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2020.2.0에서 Cloud Manager에 대한 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2020.2.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service 2020.2.0의 Cloud Manager 릴리스 날짜는 2020년 2월 13일입니다.
+AEM as a Cloud Service 2020.2.0의 Cloud Manager 릴리스 일자는 2020년 2월 13일입니다.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -31,6 +31,6 @@ AEM as a Cloud Service 2020.2.0의 Cloud Manager 릴리스 날짜는 2020년 2�
 
 ### 버그 수정  {#bug-fixes}
 
-* 브라우저 보안 정책으로 인해 파이프라인 실행 화면에 있는 특정 단추가 제대로 작동하지 않는 경우가 있습니다.
+* 브라우저 보안 정책으로 인해 파이프라인 실행 화면에 있는 특정 버튼이 제대로 작동하지 않는 경우가 있습니다.
 * 개요, 환경 및 활동 링크를 Cloud Manager 랜딩 페이지에서 사용할 수 있는 경우가 있었습니다.
 * 배포 시 특정 오류로 인해 새 파이프라인이 생성되지 않을 수 있습니다.

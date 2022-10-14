@@ -1,26 +1,26 @@
 ---
-title: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 노트
-description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2021.11.0입니다.
+title: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2021.11.0의 Cloud Manager 릴리스 정보입니다.
 feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 source-git-commit: 4505f703754fa46cd746ae4794a3cab65cb19976
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service Manager에 대한 릴리스 노트를 간략하게 설명합니다2021.11.0.
+이 페이지에서는 AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
 >[!NOTE]
 >
->을(를) 참조하십시오. [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md) Adobe Experience Manager as a Cloud Service에 대한 최신 릴리스 노트 를 참조하십시오.
+>Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 날짜는 2021년 11월 4일입니다.
+AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 일자는 2021년 11월 4일입니다.
 다음 릴리스는 2021년 12월 16일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
@@ -28,7 +28,7 @@ AEM as a Cloud Service 2021.11.0의 Cloud Manager 릴리스 날짜는 2021년 11
 * 이제 새로운 프론트엔드 파이프라인을 활용하여 가속화된 방식으로 프론트엔드 코드를 독점적으로 배포할 수 있습니다. 자세히 알아보려면 [Cloud Manager 프론트엔드 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)을 참조하십시오.
 
    >[!IMPORTANT]
-   >AEM 버전을 사용해야 합니다. `2021.10.5933.20211012T154732Z` 최신 프런트 엔드 파이프라인을 활용합니다.
+   >새 프론트엔드 파이프라인을 활용하려면 AEM 버전 `2021.10.5933.20211012T154732Z`를 사용해야 합니다.
 
 * 전체 AEM 이미지를 구축할 필요 없이 더 효율적인 방식으로 코드 분석을 수행함으로써 코드 품질 파이프라인 지속 시간이 크게 단축됩니다. 이러한 변경 내용은 출시 후 몇 주 동안 점진적으로 적용될 예정입니다.
 

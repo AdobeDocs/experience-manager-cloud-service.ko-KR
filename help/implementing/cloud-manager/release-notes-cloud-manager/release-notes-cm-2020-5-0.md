@@ -1,22 +1,22 @@
 ---
-title: AEM as a Cloud Service 릴리스 2020.5.0의 Cloud Manager 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2020.5.0의 Cloud Manager 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2020.5.0의 Cloud Manager 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2020.5.0의 Cloud Manager 릴리스 정보
 feature: Release Information
 exl-id: 9f534858-d18f-4224-8b94-9583a05aed95
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.5.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.5.0의 Cloud Manager 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2020.5.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2020.5.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service 2020.5.0의 Cloud Manager 릴리스 날짜는 2020년 5월 7일입니다.
+AEM as a Cloud Service 2020.5.0의 Cloud Manager 릴리스 일자는 2020년 5월 7일입니다.
 
 ## 새로운 기능 {#whats-new-cloud-manager}
 

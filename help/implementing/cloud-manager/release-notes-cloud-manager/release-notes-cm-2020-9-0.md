@@ -1,29 +1,29 @@
 ---
-title: AEM as a Cloud Service 릴리스 2020.9.0의 Cloud Manager 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2020.9.0의 Cloud Manager 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2020.9.0의 Cloud Manager 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2020.9.0의 Cloud Manager 릴리스 정보
 feature: Release Information
 exl-id: 874ece8d-206a-4081-94c4-c82a375720c5
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '125'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.9.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.9.0의 Cloud Manager 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2020.9.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2020.9.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service 2020.9.0의 Cloud Manager 릴리스 날짜는 2020년 9월 3일입니다.
+AEM as a Cloud Service 2020.9.0의 Cloud Manager 릴리스 일자는 2020년 9월 3일입니다.
 
 ## 새로운 기능 {#whats-new-cloud-manager}
 
-* 컨텐츠 감사 기능은 경험 감사로 레이블이 재지정되었습니다.
-* 빌드 프로세스는 세 개의 별도 Maven 명령으로 분리되었습니다.
-* Git 리포지토리를 복제하지 않으면 최대 3회 다시 시도됩니다.
+* 콘텐츠 감사가 경험 감사로 이름이 변경되었습니다.
+* 빌드 프로세스가 세 개의 별도 Maven 명령으로 분리되었습니다.
+* Git 저장소 복제에 실패한 경우 최대 3번까지 재시도합니다.
 
 ### 버그 수정 {#bug-fixes-cm}
 
-* 컨텐츠 감사 탭이 게시 도메인 대신 작성 도메인을 사용하여 기본 URL을 잘못 표시합니다.
+* 콘텐츠 감사 탭에 게시 도메인 대신 작성자 도메인을 사용하는 기본 URL이 잘못 표시되었습니다.

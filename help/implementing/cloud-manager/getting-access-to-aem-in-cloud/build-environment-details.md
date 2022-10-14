@@ -107,7 +107,7 @@ Cloud Manager는 특수 빌드 환경을 사용하여 코드를 빌드하고 테
 
 프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 할 수도 있습니다.
 
-예를 들어, 작성 시간 JavaScript 축소가 gulp와 같은 도구를 통해 이루어진다면, 스테이징과 프로덕션을 위한 빌드가 아닌 개발 환경을 위한 빌드를 만들 때 다른 축소 수준을 사용하려는 욕구가 있을 수 있습니다.
+예를 들어 작성 시간 JavaScript 축소가 gulp와 같은 도구를 통해 이루어진다면 스테이징과 프로덕션을 위한 빌드가 아닌 개발 환경을 위한 빌드를 만들 때 다른 축소 수준을 사용하려는 욕구가 있을 수 있습니다.
 
 이를 지원하기 위해 Cloud Manager는 모든 실행 시 빌드 컨테이너에 이러한 표준 환경 변수를 추가합니다.
 
@@ -167,7 +167,7 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-완벽한 작동을 위해서는 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어, 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어야 합니다. 이 작업은 APT를 호출하기 위해 `pom.xml`에서 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)를 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
+완벽한 작동을 위해서는 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며 적절한 언어 인터프리터가 설치되어야 합니다. 이 작업은 APT를 호출하기 위해 `pom.xml`에서 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)를 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 이 예에서는 Python을 설치합니다.
 
 ```xml
         <profile>

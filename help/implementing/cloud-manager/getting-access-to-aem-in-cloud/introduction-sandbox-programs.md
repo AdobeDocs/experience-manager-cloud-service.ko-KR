@@ -22,7 +22,7 @@ ht-degree: 96%
 
 ## 자동 생성 {#auto-creation}
 
-샌드박스 프로그램에는 자동 생성 기능이 있습니다. 새 샌드박스 프로그램을 만들 때마다 Cloud Manager는 자동으로 다음을 수행합니다.
+샌드박스 프로그램에는 자동 생성 기능이 있습니다. 새 샌드박스 프로그램을 만들 때마다 Cloud Manager는 자동으로 다음 작업을 수행합니다.
 
 * AEM Sites 및 AEM Assets를 프로그램의 솔루션으로 추가합니다.
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 기반으로 하는 샘플 프로젝트로 프로젝트 git 저장소를 설정합니다.

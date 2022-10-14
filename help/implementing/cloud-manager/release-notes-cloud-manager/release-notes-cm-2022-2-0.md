@@ -1,26 +1,26 @@
 ---
-title: AEM as a Cloud Service 릴리스 2022.02.0의 Cloud Manager 릴리스 노트
-description: 다음은 AEM as a Cloud Service 릴리스의 Cloud Manager에 대한 릴리스 2022.02.0.
+title: AEM as a Cloud Service 릴리스 2022.02.0의 Cloud Manager 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2022.02.0의 Cloud Manager 릴리스 정보입니다.
 feature: Release Information
 exl-id: da0643a0-78f8-4e9d-9cc9-a1a17067a08c
 source-git-commit: 0c4a42595800f7f1d0869bf647c3ec99023b12c5
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service에서 Cloud Manager에 대한 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
 >[!NOTE]
 >
->을(를) 참조하십시오. [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md) Adobe Experience Manager as a Cloud Service에 대한 최신 릴리스 노트 를 참조하십시오.
+>Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보는 [이 페이지](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 날짜는 2022년 2월 10일입니다. 다음 릴리스는 2022년 3월 10일에 예정되어 있습니다.
+AEM as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 일자는 2022년 2월 10일입니다. 다음 릴리스는 2022년 3월 10일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service 2022.02.0의 Cloud Manager 릴리스 날짜는 2022년 2�
 * 새 실패 임계값(`< D`)이 [안정성 평가 지표](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)에 추가되었습니다.
    * 주로 잘못된 인덱스 및 워크플로 프로세스와 관련하여, 시스템 안정성에 영향을 미치는 심각한 품질 문제가 발생하면 고객은 해당 문제가 해결될 때까지 배포할 수 없습니다.
 * `BannedPath` [품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)의 심각도가 차단에서 심각으로 변경되었습니다.
-* 파이프라인 마법사는 관련 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)을 구성하기 전에 AEM 환경 업데이트가 필요한 시기를 사용자에게 알려줍니다.
+* 파이프라인 마법사는 관련 [웹 계층 구성 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)을 구성하기 전에 AEM 환경 업데이트가 필요한 시기를 사용자에게 알려 줍니다.
 
 ## 버그 수정 {#bug-fixes}
 

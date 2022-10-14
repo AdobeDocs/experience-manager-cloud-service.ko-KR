@@ -1,30 +1,30 @@
 ---
-title: AEM as a Cloud Service 릴리스 2020.6.0의 Cloud Manager 릴리스 노트
-description: AEM as a Cloud Service 릴리스 2020.6.0의 Cloud Manager 릴리스 노트
+title: AEM as a Cloud Service 릴리스 2020.6.0의 Cloud Manager 릴리스 정보
+description: AEM as a Cloud Service 릴리스 2020.6.0의 Cloud Manager 릴리스 정보
 feature: Release Information
 exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.6.0의 Cloud Manager 릴리스 노트 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.6.0의 Cloud Manager 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service 2020.6.0에 있는 Cloud Manager 릴리스 노트를 간략하게 설명합니다.
+이 페이지에서는 AEM as a Cloud Service 2020.6.0의 Cloud Manager 릴리스 정보에 대해 간략히 설명합니다.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service 2020.6.0의 Cloud Manager 릴리스 날짜는 2020년 6월 4일입니다.
+AEM as a Cloud Service 2020.6.0의 Cloud Manager 릴리스 일자는 2020년 6월 4일입니다.
 
 ## 새로운 기능 {#whats-new-cloud-manager}
 
-* Cloud Manager의 *비즈니스 소유자* 역할의 사용자는 이제 랜딩 페이지(프로그램 카드의 빠른 작업 단추)나 프로그램 내에서 샌드박스 프로그램을 삭제할 수 있습니다.
+* Cloud Manager의 *비즈니스 소유자* 역할의 사용자는 이제 랜딩 페이지(프로그램 카드의 빠른 작업 버튼)나 프로그램 내에서 샌드박스 프로그램을 삭제할 수 있습니다.
 
    자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
-* Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이지 환경 세트를 삭제할 수 있습니다. 이제 **프로그램 개요** 페이지와 **환경** 페이지의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다 . 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
+* Cloud Manager의 *비즈니스 소유자* 또는 *배포 관리자* 역할의 샌드박스 프로그램 사용자는 이제 클라우드 관리자 UI를 통해 프로덕션 및 스테이징 환경 세트를 삭제할 수 있습니다. 이제 **프로그램 개요** 페이지와 **환경** 페이지의 환경 카드 모두에서 삭제 옵션을 사용할 수 있습니다. 프로덕션 또는 스테이지에서 삭제 옵션을 선택하면 세트에 있는 다른 옵션도 삭제됩니다.
 
    자세한 내용은 [샌드박스 프로그램 삭제](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)를 참조하십시오.
 
@@ -32,11 +32,11 @@ AEM as a Cloud Service 2020.6.0의 Cloud Manager 릴리스 날짜는 2020년 6�
 
 * **프로그램 개요** 페이지의 코치 표시의 내용을 참조하여 Cloud Manager 내의 기본 탐색에 대해 알리고 지시할 수 있습니다.
 
-* 이제 **LEARN** 페이지를 Cloud Manager에서 사용할 수 있으며 위쪽 탐색을 통해 액세스할 수 있습니다. 이 페이지에는 Cloud Manager에서 할당된 역할과 관련하여 가장 자주 사용되는 워크플로우에 대한 사용자 학습을 돕는 리소스가 포함되어 있습니다.
+* 이제 **LEARN** 페이지를 Cloud Manager에서 사용할 수 있으며 위쪽 탐색을 통해 액세스할 수 있습니다. 이 페이지에는 Cloud Manager에서 할당된 역할과 관련하여 가장 자주 사용되는 워크플로에 대한 사용자 학습을 돕는 리소스가 포함되어 있습니다.
 
 * 이제 샌드박스 프로그램은 **프로그램 개요** 페이지의 프로그램 이름 옆에 있을 뿐 아니라 랜딩 페이지의 프로그램 카드에 표시될 **샌드박스** 배지로 식별됩니다.
 
-* 이제 SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 권한을 관리할 수 있는 Admin Console의 위치에 클릭 한 번으로 액세스할 수 있습니다. 이제 **액세스 관리** 단추를 **프로그램 추가** 단추 옆에 있는 랜딩 페이지에서 사용할 수 있습니다.
+* 이제 SysAdmin 역할의 사용자는 Cloud Manager에 대한 사용자 역할이나 권한을 관리할 수 있는 Admin Console의 위치에 클릭 한 번으로 액세스할 수 있습니다. 이제 **액세스 관리** 버튼을 **프로그램 추가** 버튼 옆에 있는 랜딩 페이지에서 사용할 수 있습니다.
 
    자세한 내용은 [SysAdmin 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)을 참조하십시오.
 
@@ -44,11 +44,11 @@ AEM as a Cloud Service 2020.6.0의 Cloud Manager 릴리스 날짜는 2020년 6�
 
    자세한 내용은 [작성자 인스턴스에 대한 액세스 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)를 참조하십시오.
 
-* 이제 빌드 로그에는 생략된 컨텐츠 패키지를 포함하여 검색된 객체 목록이 포함됩니다.
+* 이제 빌드 로그에는 생략된 콘텐츠 패키지를 포함하여 검색된 객체 목록이 포함됩니다.
 
-* 빌드 단계에서 이제 생성된 모든 컨텐츠 패키지에 이름, 그룹 및 버전과 같은 모든 필수 속성이 포함되어 있는지 확인합니다.
+* 빌드 단계에서 이제 생성된 모든 콘텐츠 패키지에 이름, 그룹 및 버전과 같은 모든 필수 속성이 포함되어 있는지 확인합니다.
 
-* 빌드 단계에서 이제 빌드가 하나 이상의 컨텐츠 패키지를 생성했는지 확인합니다.
+* 빌드 단계에서 이제 빌드가 하나 이상의 콘텐츠 패키지를 생성했는지 확인합니다.
 
 ### 버그 수정 {#bug-fixes-cm}
 
