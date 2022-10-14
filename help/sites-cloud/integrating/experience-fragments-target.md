@@ -3,9 +3,9 @@ title: Adobe Target으로 경험 조각 내보내기
 description: Adobe Target으로 경험 조각 내보내기
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2249'
+ht-degree: 100%
 
 ---
 
