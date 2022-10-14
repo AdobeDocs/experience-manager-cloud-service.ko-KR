@@ -3,7 +3,7 @@ title: 기능 테스트
 description: 코드의 품질과 신뢰성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아봅니다.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
 ht-degree: 100%
 
