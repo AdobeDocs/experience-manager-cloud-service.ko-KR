@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 AEM 엔지니어링의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: d7509556e4ae7a377498f2de2bae57f3557522ac
 workflow-type: tm+mt
 source-wordcount: '3493'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >title="사용자 정의 코드 품질 규칙"
 >abstract="이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 AEM 엔지니어링의 모범 사례를 기반으로 합니다."
 
-이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 [사용자 정의 코드 품질 규칙](/help/implementing/cloud-manager/code-quality-testing.md)에 대해 설명합니다. 이 규칙은 AEM 엔지니어링의 모범 사례를 기반으로 합니다.
+이 페이지에서는 Cloud Manager가 의 일부로 실행하는 사용자 지정 코드 품질 규칙에 대해 설명합니다 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md). 이 규칙은 AEM 엔지니어링의 모범 사례를 기반으로 합니다.
 
 >[!NOTE]
 >
