@@ -3,10 +3,10 @@ title: 클라우드의 디스패처
 description: 클라우드의 디스패처
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 6%
+source-wordcount: '998'
+ht-degree: 7%
 
 ---
 
@@ -50,11 +50,24 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 디스패처 도구는 프로젝트의 Dispatcher 구성을 확인하고 디버깅하는 데 사용됩니다. 프로젝트의 Dispatcher 구성이 유연한 모드에서 구성되어 있는지 아니면 레거시 모드로 구성되어 있는지에 따라 아래 참조 페이지에서 이러한 도구를 사용하는 방법에 대해 자세히 알아보십시오.
 
-* **유연한 모드** - 권장 모드 및 [AEM 원형 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) 및 그 이상. Cloud Manager 2021.7.0 릴리스 이후 작성된 새 환경에서도 Cloud Manager에서 사용됩니다. 고객은 폴더 및 파일을 추가하여 이 모드를 활성화할 수 있습니다 `opt-in/USE_SOURCES_DIRECTLY`. 이 보다 유연한 모드를 사용하면 레거시 모드에서 단일 파일이 필요한 rewrites 폴더 아래에 파일 구조에 제한이 없습니다 `rewrite.rules` 파일. 또한 추가할 수 있는 규칙 수에는 제한이 없습니다. 폴더 구조 및 로컬 유효성 검사에 대한 자세한 내용은 [Dispatcher 도구를 사용하여 유효성 검사 및 디버깅](/help/implementing/dispatcher/validation-debug.md).
+* **유연한 모드** - 권장 모드 및 [AEM 원형 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) 및 그 이상. Cloud Manager 2021.7.0 릴리스 이후 작성된 새 환경에서도 Cloud Manager에서 사용됩니다. 고객은 폴더 및 파일을 추가하여 이 모드를 활성화할 수 있습니다 `opt-in/USE_SOURCES_DIRECTLY`. 이 보다 유연한 모드를 사용하면 레거시 모드에서 단일 파일이 필요한 rewrites 폴더 아래에 파일 구조에 제한이 없습니다 `rewrite.rules` 파일. 또한 추가할 수 있는 규칙 수에는 제한이 없습니다. 폴더 구조 및 로컬 유효성 검사에 대한 자세한 내용은 [Dispatcher 도구를 사용하여 유효성 검사 및 디버깅](/help/implementing/dispatcher/validation-debug.md).
 
 * **기존 모드** - 디스패처 구성 레거시 모드에 대한 폴더 구조 및 로컬 유효성 검사에 대한 자세한 내용은 [Dispatcher 도구(기존)를 사용하여 유효성 검사 및 디버깅](/help/implementing/dispatcher/validation-debug-legacy.md)
 
 AEM Archetype 28 이상에서 제공되는 레거시 구성 모델에서 보다 유연한 구성 모델로 마이그레이션하는 방법에 대한 자세한 내용은 다음을 참조하십시오 [이 설명서](/help/implementing/dispatcher/validation-debug.md#migrating).
+
+## 컨텐츠 처리 {#content-disposition}
+
+게시 계층의 경우 BLOB 제공 기본값은 첨부 파일로 사용됩니다. 이 값은 표준을 사용하여 대체할 수 있습니다 [콘텐츠 처리 헤더](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) 참조하십시오.
+
+다음은 구성이 어떻게 표시되어야 하는지에 대한 예입니다.
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## 지원되는 Apache 모듈 {#supported-directives}
 
