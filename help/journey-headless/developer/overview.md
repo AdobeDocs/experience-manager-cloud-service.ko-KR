@@ -1,11 +1,11 @@
 ---
 title: AEM Headless Developer 여정
-description: CMS(헤드리스 컨텐츠 관리 시스템)로 사용 중일 때 Adobe Experience Manager(AEM) as a Cloud Service을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오. 강력하고 유연한 헤드리스 기능, 그리고 첫 번째 헤드리스 개발 프로젝트에서 이러한 기능을 활용하는 방법에 대해 알아볼 수 있습니다. 이 여정은 첫 번째 헤드리스 애플리케이션을 개발하는 데 필요한 모든 정보를 제공합니다.
+description: AEM(Adobe Experience Manager)을 Headless CMS로 사용하여 헤드리스 컨텐츠 전달을 위한 프로젝트를 개발하는 방법을 알아봅니다. 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 헤드리스 경험을 향상시키는 방법을 알아봅니다.
 landing-page-description: 헤드리스 컨텐츠 전달 및 구현에 대한 이해를 얻습니다. 비즈니스 내에서 전략을 개발하는 방법에 대해 자세히 알아보십시오.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
+source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1273'
 ht-degree: 26%
 
 ---
@@ -55,7 +55,7 @@ AEM에서 헤드리스 비즈니스 사례를 해결하는 방법을 Adobe이 �
 
 이 여정에서 다양한 주제들을 살펴보게 됩니다. 다음 문서는 AEM의 헤드리스에 대한 기본 지식을 제공하고 자세한 기술 설명서에 연결합니다.
 
-여정의 특정 부분으로 바로 이동할 수 있지만, 많은 개념이 이전 문서의 개념을 기반으로 합니다. 따라서 AEM에서 헤드리스를 처음 사용하는 경우 시작 및 진행 순서로 시작하는 것이 좋습니다.
+여정의 특정 부분으로 바로 이동할 수 있지만 많은 개념이 이전 문서의 개념을 기반으로 합니다. 따라서 AEM에서 헤드리스를 처음 사용하는 경우 시작 및 진행 순서로 시작하는 것이 좋습니다.
 
 | # | 문서 | 설명 |
 |---|---|---|
