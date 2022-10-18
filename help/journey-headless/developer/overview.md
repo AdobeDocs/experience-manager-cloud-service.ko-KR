@@ -1,12 +1,12 @@
 ---
 title: AEM Headless Developer 여정
-description: AEM(Adobe Experience Manager)을 Headless CMS로 사용하여 헤드리스 컨텐츠 전달을 위한 프로젝트를 개발하는 방법을 알아봅니다. 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 헤드리스 경험을 향상시키는 방법을 알아봅니다.
+description: Adobe Experience Manager (AEM)을 Headless CMS로 사용하여 헤드리스 개발에 대해 알아봅니다. 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 헤드리스 컨텐츠 전달을 수행하는 방법을 알아봅니다.
 landing-page-description: 헤드리스 컨텐츠 전달 및 구현에 대한 이해를 얻습니다. 비즈니스 내에서 전략을 개발하는 방법에 대해 자세히 알아보십시오.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
+source-git-commit: 8932a8f158fe478d23457ac24afdd17f05a048f5
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 26%
+source-wordcount: '1268'
+ht-degree: 27%
 
 ---
 
