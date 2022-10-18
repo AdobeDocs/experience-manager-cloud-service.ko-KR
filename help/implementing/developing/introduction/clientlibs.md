@@ -2,9 +2,9 @@
 title: AEM에서 클라이언트측 라이브러리 사용 as a Cloud Service
 description: AEM에서는 클라이언트 측 코드(clientlibs)를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리를 클라이언트에 제공할 시기와 방법을 정의할 수 있는 클라이언트측 라이브러리 폴더를 제공합니다
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
+source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2567'
 ht-degree: 1%
 
 ---
@@ -114,7 +114,7 @@ AEM에서는 사이트의 CSS 및 Javascript를 중앙 위치의 단일 파일�
 
 다음 `allowProxy` 속성을 사용하여 다음을 요청할 수 있습니다.
 
-* j를 통한 clientlib`/etc.clientlibs/myprojects/clientlibs/foo.js`
+* 를 통해 clientlib `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * 를 통한 정적 이미지 `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
 
 ### HTL을 통해 클라이언트 라이브러리 로드 {#loading-via-htl}
