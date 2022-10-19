@@ -2,10 +2,10 @@
 title: 통합 쉘의 AEM as a Cloud Service
 description: 통합 쉘의 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
+source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '370'
+ht-degree: 91%
 
 ---
 
@@ -30,14 +30,14 @@ AEM as a Cloud Service는 통합 쉘과 통합되어 사용자 경험을 개선�
 * 간편한 조직 간 전환 또는 다른 애플리케이션으로의 전환
 * 제품 도움말 개선
 * 문제를 보고하거나 Adobe와 아이디어를 공유할 수 있는 간편한 제품 내 피드백 버튼
-* AEM as a Cloud Service 관련 알림과 더불어 글로벌 제품 공지 및 알림에 대한 액세스 권한
+* AEM as a Cloud Service에 대한 알림뿐 아니라 글로벌 제품 공지 및 알림에 액세스할 수 있습니다
 
 ## 통합 쉘 비활성화 {#disabling-unified-shell}
 
 기본적으로 AEM as a Cloud Service에서는 통합 쉘이 활성화되어 있습니다. 그러나 최상위 헤더를 맞춤화한 경우 맞춤화와 관련된 문제를 방지하기 위해 통합 쉘을 비활성화하는 것이 좋습니다. 통합 쉘을 비활성화하려면 아래 단계를 따르십시오.
 
 >[!NOTE]
->관리 권한이 있는 계정에서만 통합 쉘을 비활성화할 수 있습니다.
+>관리 권한이 있는 계정으로만 통합 셸을 비활성화할 수 있습니다.
 
 1. **도구 - 클라우드 서비스**&#x200B;로 이동합니다.
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service는 통합 쉘과 통합되어 사용자 경험을 개선�
 
    ![이미지](/help/overview/assets/unifiedshell3.png)
 
-## 어두운 테마로 변경 {#chaning-to-dark-theme}
+## 어두운 테마로 변경 {#changing-to-dark-theme}
 
 어두운 테마로 변경하려면 프로필 아이콘을 클릭합니다. 아래와 같이 팝업이 표시됩니다. 토글을 사용하여 통합 쉘의 어두운 테마로 전환할 수 있습니다.
 
