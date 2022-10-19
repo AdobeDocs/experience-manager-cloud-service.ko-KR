@@ -2,9 +2,9 @@
 title: 콘텐츠 검색 및 색인화
 description: 콘텐츠 검색 및 색인화
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2246'
 ht-degree: 98%
 
 ---
@@ -74,7 +74,9 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 
 기존 인덱스(기본 제공 인덱스)이 유지되고 있는 것과 같이 패키지의 필터를 설정해야 합니다. `ui.apps/src/main/content/META-INF/vault/filter.xml` 파일에 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`과 같은 각 사용자 정의(또는 맞춤화된) 인덱스를 나열해야 합니다. 인덱스 버전을 나중에 변경하면 필터를 조정해야 합니다.
 
-위 샘플의 패키지는 `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`(으)로 작성됩니다.
+<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
 
 >[!NOTE]
 >
