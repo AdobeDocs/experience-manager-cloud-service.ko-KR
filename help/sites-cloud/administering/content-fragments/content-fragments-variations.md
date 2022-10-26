@@ -4,9 +4,9 @@ description: 변형을 통해 조각에 대한 콘텐츠를 작성한 다음 목
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
+source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 98%
 
 ---
@@ -372,7 +372,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
-title="변형 관리"
+title="변형 - 조각 콘텐츠 작성"
 abstract="특정 채널에 사용할 컨텐츠를 어떻게 변형하는지 알아봅니다."
 additional-url="https://video.tv.adobe.com/v/333295" text="컨텐츠 조각 변형"
 
