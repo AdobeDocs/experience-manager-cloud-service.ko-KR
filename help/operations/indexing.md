@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인화
 description: 콘텐츠 검색 및 색인화
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: ac7e4f7d7b771c392d8f67bd0751dfeede970a5f
+source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 98%
+source-wordcount: '2289'
+ht-degree: 90%
 
 ---
 
@@ -34,11 +34,6 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 1. [파란색-녹색 배포 모델](#index-management-using-blue-green-deployments)을 도입해 AEM as a Cloud Service의 고레벨에는 두 세트의 색인이 존재합니다. 한 세트는 이전 버전(파란색), 다른 한 세트는 새 버전(녹색)입니다.
 
 1. 고객은 Cloud Manager 빌드 페이지에서 색인화 작업이 완료되었는지 여부를 확인할 수 있으며 새 버전이 트래픽을 가져올 수 있게 되면 알림을 받게 됩니다.
-
-1. 제한 사항:
-* 현재 AEM as a Cloud Service의 색인 관리는 `lucene` 색인 유형만 지원됩니다.
-* 표준 분석기만 지원됩니다(제품으로 제공되는 분석기). 사용자 정의 분석기는 지원되지 않습니다.
-* 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다. 예를 들어 `damAssetLucene` 색인에 대해 작성된 Skyline의 쿼리는 이 색인의 Elasticsearch 버전에 대해 실행됩니다. 이 차이는 일반적으로 애플리케이션과 사용자에게는 표시되지 않지만 `explain` 기능과 같은 특정 도구에서는 다른 색인임을 보고합니다. Lucene 색인과 Elastic 색인의 차이에 대해서는 [Apache Jackrabbit Oak의 Elastic 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html)를 참조하십시오. 고객은 Elasticsearch 색인을 직접 구성할 필요가 없으며 구성할 수 없습니다.
 
 ## 사용 방법 {#how-to-use}
 
@@ -221,7 +216,11 @@ Adobe에서 “damAssetLucene” 또는 “cqPageLucene” 같은 기본 제공 
 
 ### 현재 제한 사항 {#current-limitations}
 
-현재 색인 관리는 `lucene` 색인 유형만 지원됩니다. 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다. 예: 탄력적인 색인.
+인덱스 관리는 현재 유형 인덱스의 경우에만 지원됩니다 `lucene`, 사용 `compatVersion` 설정 `2`. 내부적으로 다른 인덱스를 구성하여 쿼리에 사용할 수 있습니다(예: Elasticsearch 인덱스). 에 대해 작성된 쿼리 `damAssetLucene` 인덱스는 AEM as a Cloud Service에서 실제로 이 인덱스의 Elasticsearch 버전에 대해 실행될 수 있습니다. 이러한 차이는 응용 프로그램 최종 사용자에게 표시되지 않지만 `explain` 기능이 다른 인덱스를 보고합니다. Lucene과 Elasticsearch 인덱스 간의 차이에 대해서는 [Apache Jackrabbit Oak의 Elasticsearch 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 고객은 Elasticsearch 인덱스를 직접 구성할 필요가 없고 구성할 필요가 없습니다.
+
+내장된 분석기만 지원됩니다(즉, 제품과 함께 제공된 분석기만 지원). 사용자 정의 분석기는 지원되지 않습니다.
+
+최상의 운영 성능을 위해 인덱스가 지나치게 크지 않아야 합니다. 모든 인덱스의 총 크기는 가이드로 사용할 수 있습니다. 사용자 정의 인덱스가 추가되고 개발 환경에서 표준 인덱스가 조정된 후 이 값이 100% 이상 증가하면 사용자 지정 인덱스 정의를 조정해야 합니다. AEM as a Cloud Service은 시스템 안정성 및 성능에 부정적인 영향을 주는 인덱스의 배포를 방지할 수 있습니다.
 
 ### 색인 추가 {#adding-an-index}
 
