@@ -3,25 +3,25 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service에서 캐싱
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 42c1d4fcfef4487aca6225821c16304ccf4deb04
+source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2580'
 ht-degree: 1%
 
 ---
 
 # 소개 {#intro}
 
-트래픽은 CDN을 통해 디스패처를 포함한 모듈을 지원하는 Apache 웹 서버 레이어에 전달됩니다. 성능을 향상시키기 위해 디스패처가 주로 게시 노드에서 처리를 제한하는 캐시로 사용됩니다.
-규칙을 Dispatcher 구성에 적용하여 모든 기본 캐시 만료 설정을 수정할 수 있으므로 CDN에서 캐싱이 가능합니다. Dispatcher는 다음의 경우 결과 캐시 만료 헤더를 준수합니다 `enableTTL` 는 dispatcher 구성에서 활성화되어 있습니다. 즉, 다시 게시되는 컨텐츠 외부에서 특정 컨텐츠를 새로 고침합니다.
+트래픽은 CDN을 통해 Dispatcher를 포함한 모듈을 지원하는 Apache 웹 서버 레이어에 전달됩니다. 성능을 향상시키기 위해 Dispatcher가 주로 게시 노드에서 처리를 제한하는 캐시로 사용됩니다.
+Dispatcher 구성에 규칙을 적용하여 모든 기본 캐시 만료 설정을 수정할 수 있으므로 CDN에서 캐싱이 가능합니다. Dispatcher는 다음의 경우 결과 캐시 만료 헤더를 준수합니다 `enableTTL` 는 Dispatcher 구성에서 활성화되어 있습니다. 즉, 다시 게시되는 컨텐츠 외부에서 특정 컨텐츠를 새로 고침합니다.
 
-이 페이지에서는 디스패처 캐시가 무효화되는 방법과 클라이언트측 라이브러리와 관련하여 브라우저 수준에서 캐싱이 작동하는 방식을 설명합니다.
+이 페이지에서는 Dispatcher 캐시가 무효화되는 방법과 클라이언트 측 라이브러리와 관련하여 브라우저 수준에서 캐싱이 작동하는 방식을 설명합니다.
 
 ## 캐싱 {#caching}
 
 ### HTML/텍스트 {#html-text}
 
-* 기본적으로 브라우저에 의해 5분 동안 캐시되며, `cache-control` apache 레이어에서 방출하는 헤더. CDN은 이 값도 따릅니다.
+* 기본적으로 브라우저에 의해 5분 동안 캐시되며, `cache-control` Apache 레이어에서 방출하는 헤더. CDN은 이 값도 따릅니다.
 * 기본 HTML/텍스트 캐싱 설정은 `DISABLE_DEFAULT_CACHING` 변수 `global.vars`:
 
 ```
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 예를 들어, 비즈니스 로직에서는 기본적으로 연령 헤더가 0으로 설정되므로 페이지 헤더를 세밀하게 조정해야 하는 경우(달력 일을 기반으로 하는 값 포함) 유용합니다. 그건, **기본 캐싱을 해제할 때는 주의하십시오.**
 
 * 모든 HTML/텍스트 컨텐츠에 대해 `EXPIRATION_TIME` 변수 `global.vars` AEM as a Cloud Service SDK Dispatcher 도구 사용.
-* 다음 apache mod_headers 지시문을 사용하여 CDN과 브라우저 캐시를 독립적으로 제어하는 것을 포함하여 보다 세밀하게 조정된 수준에서 재정의할 수 있습니다.
+* 다음 Apache를 사용하여 CDN과 브라우저 캐시를 독립적으로 제어하는 것을 포함하여 보다 세분화된 수준에서 재정의할 수 있습니다 `mod_headers` 지시문:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -44,7 +44,7 @@ Define DISABLE_DEFAULT_CACHING
    >[!NOTE]
    >Surrogate-Control 헤더는 Adobe 관리 CDN에 적용됩니다. 를 사용하는 경우 [고객 관리 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), CDN 공급자에 따라 다른 헤더가 필요할 수 있습니다.
 
-   전역 캐시 제어 헤더 또는 광범위한 정규식과 일치하는 헤더를 설정하여 비공개로 유지할 콘텐츠에 적용하지 않도록 주의하십시오. 여러 지시어를 사용하여 규칙이 세밀하게 적용되도록 합니다. 이를 통해 AEM as a Cloud Service은 디스패처 설명서에 설명된 대로 디스패처가 사용할 수 없음을 감지하는 대상에 적용되었음을 감지하는 경우 캐시 헤더를 제거합니다. AEM에서 항상 캐싱 헤더를 적용하도록 하기 위해 **항상** 다음과 같이 옵션을 선택합니다.
+   전역 캐시 제어 헤더나 광범위한 정규식과 일치하는 헤더를 설정하여 비공개로 유지해야 하는 콘텐츠에 적용하지 않도록 주의하십시오. 여러 지시어를 사용하여 규칙이 세밀하게 적용되도록 합니다. 이를 통해 AEM as a Cloud Service은 Dispatcher 설명서에 설명된 대로 Dispatcher에서 캐시할 수 없음을 감지하는 대상에 적용되었음을 감지하면 캐시 헤더를 제거합니다. AEM에서 항상 캐싱 헤더를 적용하도록 하기 위해 **항상** 다음과 같이 옵션을 선택합니다.
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Define DISABLE_DEFAULT_CACHING
    >다음을 포함한 다른 메서드 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)은 값을 성공적으로 재정의하지 않습니다.
 
    >[!NOTE]
-   >Dispatcher가 여전히 자체 콘텐츠를 캐시할 수 있습니다 [캐싱 규칙](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 컨텐츠를 정말로 비공개로 만들려면 Dispatcher가 캐시하지 않도록 해야 합니다.
+   >Dispatcher가 여전히 자체 콘텐츠를 캐시할 수 있습니다 [캐싱 규칙](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 컨텐츠를 정말로 비공개로 만들려면 Dispatcher에서 캐시하지 않도록 해야 합니다.
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
@@ -87,7 +87,7 @@ Define DISABLE_DEFAULT_CACHING
 
 2022년 5월 중순 이후에 생성된 프로그램(특히 65000 이상인 프로그램 ID의 경우)의 기본 동작은 요청의 인증 컨텍스트를 준수하면서 기본적으로 캐시되는 것입니다. 이전 프로그램(프로그램 ID가 65000 이하)은 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 
-두 경우 모두 apache를 사용하여 apache/dispatcher 계층에서 캐싱 헤더를 보다 세밀하게 조정할 수 있습니다 `mod_headers` 지시어(예:
+두 경우 모두 Apache를 사용하여 Apache/Dispatcher 계층에서 캐싱 헤더를 보다 세밀하게 정의할 수 있습니다 `mod_headers` 지시어(예:
 
 ```
    <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -96,11 +96,11 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-디스패처 계층에서 캐싱 헤더를 수정할 때는 너무 많이 캐시하지 않도록 주의하십시오. HTML/텍스트 섹션의 토론을 참조하십시오 [위](#html-text). 또한 비공개(캐시되지 않음)로 유지되어야 하는 자산이 의 일부가 아닌지 확인합니다 `LocationMatch` 지시어 필터.
+Dispatcher 계층에서 캐싱 헤더를 수정할 때는 너무 많이 캐시하지 않도록 주의하십시오. HTML/텍스트 섹션의 토론을 참조하십시오 [위](#html-text). 또한 비공개(캐시되지 않음)로 유지되어야 하는 자산이 의 일부가 아닌지 확인합니다 `LocationMatch` 지시어 필터.
 
 #### 새로운 기본 캐싱 동작 {#new-caching-behavior}
 
-AEM 계층은 캐시 헤더가 이미 설정되었는지 여부 및 요청 유형의 값에 따라 캐시 헤더를 설정합니다. 설정된 캐시 제어 헤더가 없으면 공용 콘텐츠가 캐시되고 인증된 트래픽이 전용으로 설정됩니다. 캐시 제어 헤더가 설정된 경우 캐시 헤더에 영향을 주지 않습니다.
+AEM 계층은 캐시 헤더가 이미 설정되었는지 여부 및 요청 유형의 값에 따라 캐시 헤더를 설정합니다. 설정된 캐시 제어 헤더가 없으면 공용 콘텐츠가 캐시되고 인증된 트래픽이 전용으로 설정됩니다. 캐시 제어 헤더가 설정된 경우 캐시 헤더는 그대로 유지됩니다.
 
 | 캐시 제어 헤더가 존재합니까? | 요청 유형 | AEM에서 캐시 헤더를 로 설정합니다. |
 |------------------------------|---------------|------------------------------------------------|
@@ -128,7 +128,7 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 
 ### 추가 최적화 {#further-optimizations}
 
-* 사용하지 마십시오 `User-Agent` 의 일부로 `Vary` 헤더. 기본 Dispatcher 설정의 이전 버전(원형 버전 28 이전)에는 이 설정이 포함되었으며 아래 단계를 사용하여 이 설정을 제거하는 것이 좋습니다.
+* 사용하지 마십시오 `User-Agent` 의 일부로 `Vary` 헤더. 기본 Dispatcher 설정의 이전 버전(Archetype 버전 28 이전)에는 이 설정이 포함되어 있으므로 아래 단계를 사용하여 제거하는 것이 좋습니다.
    * 에서 vhost 파일을 찾습니다. `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
    * 다음 줄을 제거하거나 주석을 답니다. `Header append Vary User-Agent env=!dont-vary` 모든 vhost 파일에서 읽기 전용 default.vhost를 제외하고
 * 를 사용하십시오 `Surrogate-Control` 브라우저 캐싱과 독립적으로 CDN 캐싱을 제어하는 헤더
@@ -154,7 +154,7 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
       </LocationMatch>
       ```
 
-   * 브라우저 의 경우 5분, CDN의 경우 12시 및 배경 새로 고침으로 HTML 페이지를 캐시합니다. Cache-Control 헤더는 항상 추가되므로 /content/* 아래에 있는 일치하는 html 페이지가 공개되도록 하는 것이 중요합니다. 그렇지 않은 경우 더 구체적인 regex를 사용하는 것이 좋습니다.
+   * 브라우저 의 경우 5분, CDN의 경우 12시 및 배경 새로 고침으로 HTML 페이지를 캐시합니다. Cache-Control 헤더는 항상 추가되므로 /content/* 아래에 있는 일치하는 html 페이지가 공개되도록 하는 것이 중요합니다. 그렇지 않은 경우 더 구체적인 정규 표현식을 사용하는 것이 좋습니다.
 
       ```
       <LocationMatch "^/content/.*\.html$">
@@ -195,19 +195,19 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 
 ### HEAD 요청 동작 {#request-behavior}
 
-인 리소스에 대해 Adobe CDN에 HEAD 요청이 수신되는 경우 **not** 캐시되면 요청이 디스패처 및/또는 AEM 인스턴스에 의해 GET 요청으로 변환되고 수신됩니다. 응답을 캐시할 수 있으면 CDN에서 후속 HEAD 요청이 제공됩니다. 응답을 캐시할 수 없는 경우에는 후속 HEAD 요청이 Dispatcher 및/또는 AEM 인스턴스에 적용되는 기간에 대해 `Cache-Control` TTL.
+인 리소스에 대해 Adobe CDN에 HEAD 요청이 수신되는 경우 **not** 캐시되면 요청이 Dispatcher 및/또는 AEM 인스턴스에 의해 GET 요청으로 변환되고 수신됩니다. 응답을 캐시할 수 있으면 CDN에서 후속 HEAD 요청이 제공됩니다. 응답을 캐시할 수 없는 경우에는 다음 HEAD 요청이 Dispatcher 및/또는 AEM 인스턴스에 전달되는 기간에 대해 `Cache-Control` TTL.
 
 ## Dispatcher 캐시 무효화 {#disp}
 
-일반적으로 디스패처 캐시를 무효화할 필요는 없습니다. 대신 컨텐츠가 다시 게시되는 경우 Dispatcher가 캐시를 새로 고침하고 캐시 만료 헤더를 준수하는 CDN에 의존해야 합니다.
+일반적으로 Dispatcher 캐시를 무효화할 필요는 없습니다. 대신 컨텐츠가 다시 게시되는 경우 Dispatcher가 캐시를 새로 고침하고 캐시 만료 헤더를 준수하는 CDN에 의존해야 합니다.
 
 ### 활성화/비활성화 중 Dispatcher 캐시 무효화 {#cache-activation-deactivation}
 
-이전 AEM 버전과 마찬가지로 페이지를 게시하거나 게시 취소하면 Dispatcher 캐시에서 콘텐츠가 지워집니다. 캐싱 문제가 의심되는 경우 고객은 해당 페이지를 다시 게시하고 ServerAlias localhost와 일치하는 가상 호스트를 사용할 수 있는지 확인해야 합니다. 이 호스트는 디스패처 캐시 무효화에 필요합니다.
+이전 AEM 버전과 마찬가지로 페이지를 게시하거나 게시 취소하면 Dispatcher 캐시에서 콘텐츠가 지워집니다. 캐싱 문제가 의심되는 경우, 고객은 해당 페이지를 다시 게시하고 와 일치하는 가상 호스트를 사용할 수 있는지 확인해야 합니다 `ServerAlias` localhost - Dispatcher 캐시 무효화에 필요합니다.
 
-게시 인스턴스가 작성자로부터 페이지 또는 자산의 새 버전을 받으면 초기화 에이전트를 사용하여 해당 디스패처에서 적절한 경로를 무효화합니다. 업데이트된 경로는 디스패처 캐시에서 해당 상위 항목과 함께 최대 수준에서 제거됩니다(를 사용하여 구성할 수 있습니다. [statefileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+게시 인스턴스가 작성자로부터 페이지 또는 자산의 새 버전을 받으면 초기화 에이전트를 사용하여 해당 Dispatcher에 대한 적절한 경로를 무효화합니다. 업데이트된 경로는 Dispatcher 캐시에서 상위 항목과 함께 최대 수준에서 제거됩니다(를 사용하여 구성할 수 있습니다. [statefileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
-## 디스패처 캐시의 명시적 무효화 {#explicit-invalidation}
+## Dispatcher 캐시의 명시적 무효화 {#explicit-invalidation}
 
 Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 제어할 것을 권장합니다. 그러나 필요한 경우 Dispatcher에서 직접 콘텐츠를 무효화할 수 있습니다.
 
@@ -219,14 +219,14 @@ Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 
 캐시를 명시적으로 무효화하는 방법에는 두 가지가 있습니다.
 
 * 기본 접근 방법은 작성자의 Sling 컨텐츠 배포(SCD)를 사용하는 것입니다.
-* 복제 API를 사용하여 게시 디스패처 초기화 복제 에이전트를 호출하여
+* 복제 API를 사용하여 게시 Dispatcher 초기화 복제 에이전트를 호출합니다.
 
 계층 가용성, 이벤트 중복 제거 기능 및 이벤트 처리 보장 측면에서 접근 방식이 다릅니다. 아래 표에는 다음 옵션이 요약되어 있습니다.
 
 <table style="table-layout:auto">
  <tbody>
   <tr>
-    <th>해당 없음</th>
+    <th>N/A</th>
     <th>계층 가용성</th>
     <th>중복 제거 </th>
     <th>보증 </th>
@@ -301,7 +301,7 @@ Adobe은 표준 캐시 헤더를 사용하여 콘텐츠 전달 수명 주기를 
 
 * 복제 API를 사용하는 것은 일반적인 사용 사례는 아니지만 캐시를 무효화하는 트리거가 작성 계층이 아니라 게시 계층에서 가져오는 경우에 사용해야 합니다. 이 기능은 Dispatcher TTL이 구성된 경우 유용합니다.
 
-마지막으로 디스패처 캐시를 무효화하려는 경우 권장되는 옵션은 작성자에서 SCD API 무효화 작업을 사용하는 것입니다. 또한 이벤트를 수신하여 추가로 다운스트림 작업을 트리거할 수도 있습니다.
+마지막으로 Dispatcher 캐시를 무효화하려는 경우 권장되는 옵션은 작성자에서 SCD API 무효화 작업을 사용하는 것입니다. 또한 이벤트를 수신하여 추가로 다운스트림 작업을 트리거할 수도 있습니다.
 
 ### Sling 컨텐츠 배포(SCD) {#sling-distribution}
 
@@ -383,15 +383,15 @@ public class InvalidatedHandler implements EventHandler {
 
 >[!NOTE]
 >
->디스패처가 무효화되면 Adobe CDN이 플러시되지 않습니다. Adobe 관리 CDN은 TTL을 준수하므로 플러시할 필요가 없습니다.
+>Dispatcher가 무효화되면 Adobe CDN이 플러시되지 않습니다. Adobe 관리 CDN은 TTL을 준수하므로 플러시할 필요가 없습니다.
 
 ### 복제 API {#replication-api}
 
 다음은 복제 API 비활성화 작업을 사용할 때의 구현 패턴입니다.
 
-1. 게시 계층에서 복제 API를 호출하여 게시 디스패처 초기화 복제 에이전트를 트리거합니다.
+1. 게시 계층에서 복제 API를 호출하여 게시 Dispatcher 초기화 복제 에이전트를 트리거합니다.
 
-플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트와 함께 실행 중인 게시 서비스와 일치하는 디스패처를 가리키도록 미리 구성되어 있습니다.
+플러시 에이전트 종단점은 구성할 수 없지만 플러시 에이전트와 함께 실행 중인 게시 서비스와 일치하는 Dispatcher를 가리키도록 미리 구성되어 있습니다.
 
 플러시 에이전트는 일반적으로 OSGi 이벤트 또는 워크플로우를 기반으로 사용자 지정 코드에 의해 트리거될 수 있습니다.
 
