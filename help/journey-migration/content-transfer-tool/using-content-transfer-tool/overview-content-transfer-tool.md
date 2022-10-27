@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 개요
 description: 컨텐츠 전송 도구 개요
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 43%
+source-wordcount: '629'
+ht-degree: 44%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 43%
 * 향상된 로드 상태, 보호 기능 및 오류 처리를 통해 사용자 경험이 개선되었습니다
 * 수집 로그는 지속되며 문제 해결에 항상 사용할 수 있습니다
 
-새 버전 사용을 시작하려면(v2.0.10) <!-- update when version is available --> 도구에 주요 아키텍처 변경 사항이 있으므로 이전 버전의 컨텐츠 전송 도구를 제거해야 합니다.
+새 버전을 사용하려면 도구에 주요 아키텍처 변경 사항이 있으므로 이전 버전의 컨텐츠 전송 도구를 제거해야 합니다.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구 시작하기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1292'
 ht-degree: 9%
 
 ---
@@ -34,16 +34,8 @@ ht-degree: 9%
 
 소스 AEM 인스턴스는 허용 목록에 추가된 특정 호스트에만 연결할 수 있는 방화벽 뒤에서 실행될 수 있습니다. 추출을 성공적으로 실행하려면 AEM을 실행 중인 인스턴스에서 다음 엔드포인트에 액세스할 수 있어야 합니다.
 
-* 대상 AEM as a Cloud Service 환경: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * Azure Blob 저장소 서비스: `casstorageprod.blob.core.windows.net`
 * 사용자 매핑 IO 끝점: `usermanagement.adobe.io`
-
-대상 AEM as a Cloud Service 환경에 대한 연결을 테스트하려면 소스 인스턴스의 셸에서 다음 cURL 명령을 실행합니다(replace) `program_id`, `environment_id`, 및 `migration_token`):
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->다음과 같은 경우 `HTTP/2 200` 이(가) 수신되면 AEM as a Cloud Service에 대한 연결이 성공적으로 수행되었습니다.
 
 ### SSL 로깅 활성화 {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ SSL/TLS 연결 문제를 이해하는 것이 어려울 수 있습니다. 추출 
 
 Cloud Acceleration Manager에서 만든 마이그레이션 세트를 채우려면 소스 Adobe Experience Manager(AEM) 인스턴스에 최신 버전의 컨텐츠 전송 도구를 설치해야 합니다. 마이그레이션 세트를 채우는 방법을 알려면 이 섹션을 따르십시오.
 
-1. 소스 Adobe Experience Manager 인스턴스에 컨텐츠 전송 도구의 최신 버전(v2.0.10)을 설치한 후 로 이동합니다. **작업 - 컨텐츠 마이그레이션**
+1. 소스 Adobe Experience Manager 인스턴스에 최신 버전의 컨텐츠 전송 도구를 설치한 후 **작업 - 컨텐츠 마이그레이션**
 
 1. 클릭 **마이그레이션 세트 만들기**
 
