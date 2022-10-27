@@ -2,9 +2,9 @@
 title: 쿼리 빌더 술어 참조
 description: Query Builder API에 대한 설명 참조입니다.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2268'
 ht-degree: 2%
 
 ---
@@ -244,10 +244,12 @@ group.2_group.type=dam:Asset
 * **`path`** - 경로 패턴을 정의합니다.
    * 에 따라 `exact` 속성, 전체 하위 트리가 일치합니다(예: 추가 `//*` xpath에는 기본 경로가 포함되지 않으며 와일드카드()를 포함할 수 있는 정확한 경로 일치만 포함한다는 점에 유의하십시오.`*`).
       * 기본값은 입니다.`true`
-   * 만약 `self`속성이 설정되면 기본 노드를 포함하는 전체 하위 트리가 검색됩니다.
+
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** - if `exact` is `true`, 정확한 경로는 일치해야 하지만, 단순 와일드카드(`*`), 이름이 일치하지만 `/`; 만약 `false` (기본값) 모든 하위 항목이 포함됩니다(선택 사항).
 * **`flat`** - 직접 하위만 검색합니다(예: 추가 `/*` xpath에서 (다음 경우에만 사용됨) `exact` 가 true가 아님, 선택 사항임)
 * **`self`** - 하위 트리를 검색하지만 경로(와일드카드 없음)로 제공된 기본 노드를 포함합니다.
+   * *중요 정보*: 문제가 `self` queryBuilder의 현재 구현에서 속성을 사용하고 쿼리에서 사용하면 올바른 검색 결과가 생성되지 않을 수 있습니다. 의 현재 구현 변경 `self` 속성을 사용하는 기존 응용 프로그램을 손상시킬 수 있으므로 속성 또한 적합하지 않습니다. 이로 인해 `self` 속성은 더 이상 사용되지 않으며 사용하지 않는 것이 좋습니다.
 
 ### 속성 {#property}
 
