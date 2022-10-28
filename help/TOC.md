@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
+source-git-commit: 733a4e6a4b4d485a36bcc2b9f043bd6295920bb9
 workflow-type: tm+mt
-source-wordcount: '3731'
+source-wordcount: '3725'
 ht-degree: 99%
 
 ---
@@ -280,8 +280,6 @@ ht-degree: 99%
          + [세그먼테이션 이해](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub를 사용하여 세그먼테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-      + 캠페인 {#campaign}
-         + [AEM으로 뉴스레터 생성](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + 관리 {#administering}
       + 콘텐츠 조각 {#content-fragments}
          + [콘텐츠 조각을 사용하여 작업](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -350,7 +348,7 @@ ht-degree: 99%
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Target과 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [Adobe Campaign Classic과 통합](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+      + [Adobe Campaign과 통합](/help/sites-cloud/integrating/campaign.md)
 + 에셋 {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [개요 및 새로운 기능](/help/assets/overview.md)
