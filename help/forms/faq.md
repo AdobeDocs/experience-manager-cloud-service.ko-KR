@@ -3,10 +3,11 @@ title: Forms as a Cloud Service 자주 묻는 질문
 description: Forms as a Cloud Service 자주 묻는 질문
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: a5cd8a49a74eb8372d1d363ff859e1aef921859b
+index: false
+source-git-commit: 6355a6241c5b53585b80b2c2bc00556297766b49
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -55,7 +56,7 @@ ht-degree: 2%
 Custom parameters are planned for an upcoming release. -->
 
 * **보안 콘텐츠를 캐시할 수 있습니까?**
-보안 콘텐츠 기능 캐싱은 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+보안 콘텐츠 기능 캐싱은 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR).
 
 * **현지화된 적응형 양식; 현지화된 버전을 렌더링하고 있지 않습니까? 원인이 무엇이고 어떻게 해결할 수 있습니까?**
 
@@ -92,4 +93,34 @@ Forms 포털, [!DNL AEM Forms] 앱, Adobe Analytics와의 통합 및 Adobe Targe
 
 * **저는 [적응형 양식을 만들기 위한 JSON 스키마](adaptive-form-json-schema-form-model.md). JSON 스키마는 적응형 양식의 일부 구성 요소에 대한 이벤트를 정의합니다. AEM Forms은 이벤트를 as a Cloud Service으로 지원합니까?**
 Experience Manager 6.5 Forms 환경에서 JSON 스키마를 기반으로 하여 적응형 양식을 작성하고 을 사용합니다. [마이그레이션 유틸리티](migrate-to-forms-as-a-cloud-service.md) 이러한 적응형 Forms을 AEM Forms as a Cloud Service으로 마이그레이션하려면 다음을 수행하십시오. 이 유틸리티는 이러한 이벤트를 클라이언트 라이브러리로 변환하며 Cloud Service 환경에서 이벤트와 함께 응용 Forms을 계속 사용할 수 있습니다.
+
+<!-- 
+
+* **Is there any AEM Forms as a Cloud Service connector for Microsoft Power Automate?**
+
+  Yes, Adobe provides an Adobe Experience Manager connector to access [Adobe Experience Manager Forms - Communication capabilities](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) through Microsoft Power Automate. You can create a PDF document that is based on a form design and XML form data or create PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) and other Printer Definition Language documents. 
+
+  You can get started with Adobe Experience Manager easily with just a few steps:
+
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
+  
+  1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
+
+    * AEM Server
+    * Organization ID 
+    * Client ID
+    * Client Secret
+    * Technical Account ID
+    * Meta Scopes
+    * Private Key - base64 encoded keys are accepted
+    * Adobe IMS Host URL
+
+    <br> 
+    
+    ![Use your Service Credential JSON for credential details](assets/forms-aem-pa-connector-connection.png)
+
+    A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
+
+    -->
+
 
