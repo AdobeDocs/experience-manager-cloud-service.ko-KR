@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 소개
 description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 92%
+source-wordcount: '665'
+ht-degree: 84%
 
 ---
 
@@ -64,3 +64,7 @@ AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 여러
 | 5 | DNS 레코드 상태 확인 | 고객 | [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5a | DNS 레코드 상태가 `DNS status not detected` 메시지와 함께 실패하는 경우 | 고객 | [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5b | DNS 레코드 상태가 `DNS resolves incorrectly` 메시지와 함께 실패하는 경우 | 고객 | [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+
+>[!TIP]
+>
+>AEM as a Cloud Service를 사용하여 사용자 지정 도메인 이름을 설정하는 것은 일반적으로 간단한 프로세스입니다. 그러나 경우에 따라 도메인 위임 문제가 발생할 수 있으며 이는 문제를 해결하는 데 영업일 1~2일이 걸릴 수 있습니다. 따라서 Live Date 훨씬 전에 도메인을 설치하는 것이 좋습니다. 문서를 참조하십시오 [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 추가 정보.

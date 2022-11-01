@@ -2,10 +2,10 @@
 title: 도메인 이름 상태 확인
 description: Cloud Manager에서 사용자 정의 도메인 이름이 성공적으로 인증되었는지 확인하는 방법을 알아봅니다.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
 
@@ -52,23 +52,35 @@ Cloud Manager는 TXT 값을 통해 도메인 소유권을 확인하고 다음 �
 
 ## 도메인 이름 오류 {#domain-error}
 
-이 섹션에서는 표시될 수 있는 오류와 해결 방법에 대해 설명합니다.
+다음은 몇 가지 일반적인 도메인 이름 오류와 일반적인 해결 방법입니다.
 
-**도메인이 설치되지 않음** - 레코드가 적절하게 업데이트되었는지 확인한 후에도 TXT 레코드의 도메인 유효성 검사 중에 이 오류가 표시됩니다.
+### 도메인이 설치되지 않음 오류 {#domain-not-installed}
 
-**오류 설명** - 도메인을 등록한 초기 계정으로 빠르게 잠그고 다른 계정은 권한을 요청하지 않고 하위 도메인을 등록할 수 없습니다. 또한 Fastly를 사용하면 하나의 Fastly 서비스 및 계정에 Apex 도메인 및 관련 하위 도메인만 할당할 수 있습니다. AEM Cloud Service 도메인에 사용되는 동일한 apex 및 하위 도메인을 연결하는 기존 Fastly 계정이 있는 경우 이 오류가 표시됩니다.
+이 오류는 레코드가 적절히 업데이트되었는지 확인한 후에도 TXT 레코드의 도메인 유효성 검사 중에 발생할 수 있습니다.
 
-**오류 해결** - 오류는 다음과 같이 수정됩니다.
+#### 오류 원인 {#cause}
 
-* Cloud Manager에 도메인을 설치하기 전에 기존 계정에서 apex 및 하위 도메인을 제거합니다. 이 옵션을 사용하여 Apex 도메인과 모든 하위 도메인을 AEM as a Cloud Service Fastly 계정에 연결합니다. 자세한 내용은 [Fastly에서 도메인 작업 설명서](https://docs.fastly.com/en/guides/working-with-domains)를 참조하십시오.
+도메인을 등록한 초기 계정에 제대로 잠근 상태로 있고 다른 계정은 권한을 요청하지 않고 하위 도메인을 등록할 수 없습니다. 또한 Fastly를 사용하면 하나의 Fastly 서비스 및 계정에 Apex 도메인 및 관련 하위 도메인만 할당할 수 있습니다. AEM Cloud Service 도메인에 사용되는 동일한 apex 및 하위 도메인을 연결하는 기존 Fastly 계정이 있는 경우 이 오류가 표시됩니다.
 
-* Apex 도메인에 AEM as a Cloud Service 및 비 AEM as a Cloud Service 사이트에 대한 여러 하위 도메인이 있고 이 도메인들이 서로 다른 Fastly 계정에 연결하려는 경우 Cloud Manager에 도메인을 설치하십시오. 만약 도메인 설치에 실패한 경우 Fastly를 사용하여 고객 지원 티켓을 생성하면 Fastly를 통해 후속 조치를 대신 취할 수 있습니다.
+#### 오류 해결 {#resolution}
+
+이 오류는 다음과 같이 수정되었습니다.
+
+* Cloud Manager에 도메인을 설치하기 전에 기존 계정에서 apex 및 하위 도메인을 제거합니다.
+
+* 이 옵션을 사용하여 Apex 도메인과 모든 하위 도메인을 AEM as a Cloud Service Fastly 계정에 연결합니다. 자세한 내용은 [Fastly에서 도메인 작업 설명서](https://docs.fastly.com/en/guides/working-with-domains)를 참조하십시오.
+
+* Apex 도메인에 다른 Apple 계정에 연결하려는 AEM as a Cloud Service 및 비 AEM as a Cloud Service 사이트에 대한 하위 도메인이 여러 개 있는 경우 Cloud Manager에 도메인을 설치하려고 합니다. 도메인 설치에 실패하는 경우 Adobe이 사용자를 대신하여 Apple을 추적할 수 있도록 Apple으로 고객 지원 티켓을 만듭니다.
+
+>[!TIP]
+>
+>일반적으로 Apple과 관련된 도메인 위임 문제를 해결하는 데 1~2일이 소요됩니다. 따라서 Live Date 훨씬 전에 도메인을 설치하는 것이 좋습니다.
 
 >[!NOTE]
 >
->도메인이 성공적으로 설치되지 않은 경우 사이트의 DNS를 AEM as a Cloud Service IP로 라우팅하지 마십시오.
+>도메인이 제대로 설치되지 않은 경우 사이트의 DNS를 AEM as a Cloud Service IP로 라우팅하지 마십시오.
 
-## 사용자 정의 도메인 이름에 대한 기존 CDN 구성 {#pre-existing-cdn}
+## 사용자 지정 도메인 이름에 대한 기존 CDN 구성 {#pre-existing-cdn}
 
 사용자 정의 도메인 이름에 대한 기존 CDN 구성이 있는 경우 Cloud Manager에서 UI를 통해 보고 구성할 수 있도록 이러한 구성을 추가하라는 정보 메시지가 **사용자 정의 도메인 이름** 및 **환경** 페이지에 표시됩니다.
 
