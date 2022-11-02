@@ -2,9 +2,9 @@
 title: 복제
 description: 배포 및 복제 문제 해결
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
+source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1262'
 ht-degree: 99%
 
 ---
@@ -84,7 +84,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 * `enableVersion`(부울 값, 기본값: `true`) 이 매개변수는 복제 시 새 버전을 만들지 여부를 결정합니다.
 * `agentId`(문자열 값, 기본값은 게시용 에이전트만 사용됨을 의미합니다.) agentId를 명시하는 것이 좋습니다(예: 값을 “게시”로 설정). 에이전트를 `preview`로 설정하면 미리보기 서비스가 게시됩니다.
 * `filters`(문자열 값, 기본값은 모든 경로가 활성화됨을 의미합니다.) 사용 가능한 값은 다음과 같습니다.
-   * `onlyActivated` - 활성화됨으로 표시된 경로만 활성화됩니다.
+   * `onlyActivated` - (이미) 활성화된 페이지만 활성화합니다. 일종의 재활성화 기능입니다.
    * `onlyModified` - 이미 활성화된 경로만 활성화하며 활성화 날짜 이후의 수정 날짜가 있습니다.
    * 위에서는 파이프 “|”을 사용하여 OR 구문을 만들 수 있습니다. (예: `onlyActivated|onlyModified`)
 
