@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2022.6.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2022.6.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,8 +24,6 @@ AEM as a Cloud Service의 Cloud Manager 2022.6.0 릴리스 일자는 2022년 6�
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 Cloud Manager UI를 통해 [셀프서비스 콘텐츠](/help/operations/backup.md)를 AEM 클라우드 환경의 알려진 양호한 상태로 복원할 수 있습니다.
-   * 이 기능은 2022.06.0 릴리스 이후 몇 주에 걸쳐 단계적으로 출시될 예정입니다.
 * Cloud Manager 랜딩 페이지의 새로운 시작 카드를 통해 사용자는 테넌트와 관련된 온보딩 튜토리얼 및 진행률 지표에 빠르게 액세스할 수 있습니다.
    * 이 기능은 2022.06.0 릴리스 다음 주에 단계적으로 출시될 예정입니다.
 * 필수 권한이 있는 사용자는 Cloud Manager 랜딩 페이지에서 새 [라이선스 대시보드](/help/implementing/cloud-manager/license-dashboard.md)에 액세스하여 테넌트가 사용할 수 있는 권한의 세부 정보를 볼 수 있습니다.

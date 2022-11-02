@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2022.7.0 릴
 description: AEM as a Cloud Service의 Cloud Manager 2022.7.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: c19e4efb-69d6-4915-9e63-c47cd91e941b
-source-git-commit: 1ec1b3f58f7614140d584d3bc7fc113527d6511d
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,6 @@ AEM as a Cloud Service의 Cloud Manager 2022.7.0 릴리스 일자는 2022년 8�
 ## 새로운 기능 {#what-is-new}
 
 * 이제 Cloud Manager 사용자는 언제든지 랜딩 페이지의 **시작** 카드에서 유용한 비디오 튜토리얼에 액세스할 수 있습니다.
-* 이제 환경 세부 정보 페이지의 **[콘텐츠 복원](/help/operations/backup.md)** 탭에 나타나는 팝오버에 변경 내용을 로컬로 확인할 수 있도록 하는 유용한 git 명령 목록이 표시됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
