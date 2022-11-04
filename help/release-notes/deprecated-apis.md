@@ -2,10 +2,10 @@
 title: 더 이상 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 API에 관련된 릴리스 정보입니다.'
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
+source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 99%
+source-wordcount: '1076'
+ht-degree: 98%
 
 ---
 
@@ -203,6 +203,12 @@ ht-degree: 99%
     <td>이 API는 더 이상 지원되지 않습니다. org.apache.sling.api.resource.ResourceResolverFactory 를 대신 사용합니다.</td>
     <td>9/29/2022</td>
     <td>11/24/2022</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>이 API는 더 이상 사용되지 않습니다. 대신 Apache Sling의 빌더를 사용하십시오.</td>
+    <td>10/31/2022</td>
+    <td>01/01/2023</td>
   </tr>
 </tbody>
 </table>
