@@ -2,10 +2,10 @@
 title: 통합 쉘의 AEM as a Cloud Service
 description: 통합 쉘의 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 53e22737e62835872e47ac07530078c3d1dfcf31
+source-git-commit: 5d9acdd9b6a377a7509e0638984cb40983fa6652
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 71%
+source-wordcount: '372'
+ht-degree: 84%
 
 ---
 
@@ -58,12 +58,6 @@ AEM as a Cloud Service(작성자 서비스)는 사용자 경험을 향상하고 
 >어두운 테마는 통합 쉘(상단 막대)에만 적용됩니다.
 
 ![이미지](/help/overview/assets/unifiedshell4.png)
-
-## AEM as a Cloud Service 환경 식별 {#identify-aemaacs-environment}
-
-AEM as a Cloud Service은 세 가지 유형의 환경을 제공합니다. 프로덕션, 스테이지 및 개발 을(를) 참조하십시오. [환경 유형](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) 자세한 내용 통합 셸과 통합하면, 사용자가 작성 서비스에 로그인하는 환경 유형이 아래 표시된 것처럼 레이블을 통해 상단 헤더에 표시됩니다.
-
-![이미지](/help/overview/assets/unifiedshell_header_label.png)
 
 
 ## AEM 받은 편지함 액세스 {#accessing-the-aem-inbox}
