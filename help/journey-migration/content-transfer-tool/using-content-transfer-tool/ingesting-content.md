@@ -2,9 +2,9 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
+source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '916'
 ht-degree: 13%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 13%
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. 그런 다음 수집 작업 목록 보기에서 수집 단계를 모니터링할 수 있습니다
+1. 그런 다음 수집 작업 목록 보기에서 수집 단계를 모니터링하고 수집 작업 메뉴를 사용하여 처리가 진행될 때 로그를 볼 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -124,4 +124,4 @@ ht-degree: 13%
 
 ## 다음 단계 {#whats-next}
 
-컨텐츠 전송 도구에서 컨텐츠를 Target에 섭취한 후 각 단계가 완료되면(추출 및 섭취) 로그를 보고 오류를 찾을 수 있습니다. 자세한 내용은 [마이그레이션 세트에 대한 로그 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 추가 정보
+Target으로 컨텐츠 섭취를 완료하면 각 단계의 로그(추출 및 수집)를 보고 오류를 찾을 수 있습니다. 자세한 내용은 [마이그레이션 세트에 대한 로그 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 추가 정보
