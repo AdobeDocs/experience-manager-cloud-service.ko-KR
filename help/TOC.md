@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 435d42e750f868970bed8f6b3f30a2762c5ce395
+source-git-commit: 28c64256c64bf3f7f2e38e1f52a615ff8ca457bb
 workflow-type: tm+mt
-source-wordcount: '3728'
+source-wordcount: '3738'
 ht-degree: 99%
 
 ---
@@ -899,6 +899,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service에서의 작업 및 유지 관리](/help/operations/home.md)
    + [콘텐츠 검색 및 색인화](/help/operations/indexing.md)
    + [콘텐츠 복제 서비스](/help/operations/replication.md)
+   + [AEM as a Cloud Service의 인프라 및 서비스 모니터링](/help/operations/monitoring.md)
    + [유지 관리 작업](/help/operations/maintenance.md)
    + [백업 및 복원](/help/operations/backup.md)
    + [비동기 작업](/help/operations/asynchronous-jobs.md)
