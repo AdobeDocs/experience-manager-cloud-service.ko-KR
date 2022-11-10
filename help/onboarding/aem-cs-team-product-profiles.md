@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 팀 및 제품 프로필
 description: AEM as a Cloud Service 팀 및 제품 프로필 방식과 사용 허가된 Adobe 솔루션에 대한 액세스 권한 부여 및 제한 방법에 대해 알아봅니다.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
+source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '687'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,9 @@ AEM as a Cloud Service 팀원은 온보딩 중에 Admin Console을 통해 다음
 
 >[!TIP]
 >
->[온보딩 프로세스](/help/journey-onboarding/overview.md)에 대한 자세한 내용은 온보딩 여정을 참조하십시오.
+>* AEM 제품 프로필에 대한 자세한 내용은 문서를 참조하십시오 [AEM 제품 프로필 할당.](/help/journey-onboarding/assign-profiles-aem.md)
+>* [온보딩 프로세스](/help/journey-onboarding/overview.md)에 대한 자세한 내용은 온보딩 여정을 참조하십시오.
+
 
 ## Cloud Manager 제품 프로필 {#cloud-manager-product-profiles}
 
@@ -63,3 +65,9 @@ Cloud Manager 팀에는 최소한 다음 역할이 포함됩니다.
 >[!NOTE]
 >
 >AEM as a Cloud Service에 대한 액세스 권한을 부여받으려면 사용자가 `AEM Users` 또는 `AEM Administrators` 제품 프로필 중 하나에 속해야 합니다. Cloud Manager를 관리할 수 있는 권한은 충분하지 않습니다.
+
+>[!TIP]
+>
+>* Cloud Manager 제품 프로필에 대한 자세한 내용은 문서를 참조하십시오 [Cloud Manager 제품 프로필에 팀 구성원 할당.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* [온보딩 프로세스](/help/journey-onboarding/overview.md)에 대한 자세한 내용은 온보딩 여정을 참조하십시오.
+
