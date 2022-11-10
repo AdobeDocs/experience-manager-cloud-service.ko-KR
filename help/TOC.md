@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 28c64256c64bf3f7f2e38e1f52a615ff8ca457bb
+source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
 workflow-type: tm+mt
-source-wordcount: '3738'
+source-wordcount: '3739'
 ht-degree: 99%
 
 ---
@@ -145,7 +145,6 @@ ht-degree: 99%
       + [AEM 제품 프로필 할당](/help/journey-onboarding/assign-profiles-aem.md)
       + [개발자 및 배포 관리자 작업](/help/journey-onboarding/developers.md)
       + [AEM 사용자 작업](/help/journey-onboarding/aem-users.md)
-      + [사용자 그룹](/help/journey-onboarding/user-groups.md)
    + AEM 참조 데모 추가 기능 여정 {#demo-add-on}
       + [개요](/help/journey-sites/demos-add-on/overview.md)
       + [설치](/help/journey-sites/demos-add-on/installation.md)
@@ -156,6 +155,7 @@ ht-degree: 99%
    + 기타 온보딩 개념 {#concepts}
       + [Cloud Manager 소개](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [알림 사용자 그룹](/help/journey-onboarding/user-groups.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
    + [준비 단계](/help/journey-migration/readiness.md)

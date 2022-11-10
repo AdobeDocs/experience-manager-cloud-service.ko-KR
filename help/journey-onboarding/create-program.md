@@ -3,10 +3,10 @@ title: 프로그램 제작
 description: Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 88%
+source-wordcount: '604'
+ht-degree: 95%
 
 ---
 
@@ -38,10 +38,6 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 * **샌드박스 프로그램**&#x200B;은 일반적으로 교육, 데모 실행, 활성화, POC 또는 문서화 목적으로 만들어집니다.
 
 각각 용도가 다르기 때문에 환경마다 옵션이 다릅니다. 그러나 만드는 과정은 비슷합니다. 이 온보딩 여정을 위해 샌드박스 환경을 만듭니다.
-
->[!NOTE]
->
->기본적으로 AEM 환경에 액세스할 수 있는 사용자도 Cloud >Manager 사용자 역할을 갖습니다. 의 이 역할 자체는 사용자에게 프로그램 세부 사항 보기에 대한 액세스 권한을 제공하기에 충분하지 않습니다. 이러한 Cloud Manager 사용자 역할만 있는 사용자는 프로그램 메뉴 옵션을 통해 AEM 환경 작성자 URL로 이동할 수 있습니다(환경이 있는 경우). 이러한 사용자는 프로그램 수준 액세스 권한을 얻으려면 관리자에게 문의해야 합니다.
 
 ## 샌드박스 프로그램 만들기 {#create-sandbox}
 
@@ -75,3 +71,4 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 * [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적을 위한 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.
 * [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 * [Adobe Cloud Manager 사용 - 프로그램](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) - Cloud Manager 프로그램은 논리적 비즈니스 이니셔티브를 지원하는 일련의 AEM 환경을 나타내며, 일반적으로 구매한 SLA(Service Level Agreement)에 해당합니다.
+* [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필이 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한할 수 있는 방법을 알아봅니다.
