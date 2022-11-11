@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b1715c819a6d049c88de8f0bc7061951bbcd5248
+source-git-commit: a8d632818dd0514d63a5cb544e4b64301819483f
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '896'
 ht-degree: 19%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 19%
 # [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
 
 다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 버전 일반 릴리스 정보에 대해 간략히 소개합니다.
-
->[!NOTE]
->
->해당 AEM as a Cloud Service SDK의 가용성은 11월 11일 목표를 가지고 지연됩니다.
 
 >[!NOTE]
 >
