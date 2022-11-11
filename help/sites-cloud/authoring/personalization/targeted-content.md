@@ -2,10 +2,10 @@
 title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
 workflow-type: tm+mt
-source-wordcount: '5342'
-ht-degree: 100%
+source-wordcount: '5414'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,25 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 * 사용자 경험을 시뮬레이션합니다.
 * 사용자 정의가 더 필요하면 타겟 구성 요소를 구성합니다.
 
-타겟팅 엔진으로 AEM 또는 Adobe Target을 사용할 수 있습니다(Adobe Target을 사용하려면 올바른 Adobe Target 계정이 있어야 합니다). Adobe Target을 사용하는 경우 먼저 통합을 구성해야 합니다. Adobe Target과의 통합에 대한 지침을 참조하십시오. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+>[!NOTE]
+>
+>타깃팅 모드는 페이지 편집기와 경험 조각 편집기 모두에서 사용할 수 있습니다.
+>
+>다음 설명서는 페이지 편집기용으로 작성되었지만 두 설명서 모두(동일한 기준으로 작동함)에 적용됩니다.
+
+>[!CAUTION]
+>
+>페이지 편집기에서 타깃팅할 때 경험 조각 구성 요소만 타깃팅할 수 있습니다.
+>
+>다른 구성 요소 유형은 **경험 조각 변형으로 변환** 아이콘 사용 안 함
+
+<!--
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+-->
+
+타겟팅 엔진으로 AEM 또는 Adobe Target을 사용할 수 있습니다(Adobe Target을 사용하려면 올바른 Adobe Target 계정이 있어야 합니다). Adobe Target을 사용하는 경우 먼저 통합을 구성해야 합니다. 자세한 내용은 [Adobe Target과 통합하기 지침](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![콘텐츠 타겟팅](../assets/targeted-content.png)
 

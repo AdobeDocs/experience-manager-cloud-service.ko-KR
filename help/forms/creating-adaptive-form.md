@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,15 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    로그인하고 왼쪽 위 모서리에서 을(를) 탭합니다 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
 
-1. 탭 **[!UICONTROL 만들기]**  > **[!UICONTROL 응용 Forms]**. 마법사가 열립니다.s
+1. 탭 **[!UICONTROL 만들기]**  > **[!UICONTROL 응용 Forms]**. 마법사가 열립니다.
 1. 소스 탭에서 템플릿을 선택합니다.
 
    * 편집 가능 템플릿을 선택하면 템플릿에 지정된 테마 및 제출 작업이 자동으로 선택되고 **[!UICONTROL 만들기]** 단추가 활성화되어 있습니다. 로 이동할 수 있습니다. **[!UICONTROL 스타일]** 또는 **[!UICONTROL 제출]** 탭하여 다른 테마를 선택하거나 작업을 제출합니다. 선택한 편집 가능 템플릿에서 테마를 지정하지 않으면 만들기 단추가 비활성화됩니다. 로 이동할 수 있습니다. **[!UICONTROL 스타일]** 탭을 클릭하여 수동으로 테마를 선택합니다.
+
+      >[!NOTE]
+      >
+      > 만들 수도 있습니다 [!UICONTROL 기록 문서] 적응형 양식 편집기를 사용한 템플릿. 자세한 내용은 [적응형 양식 편집기의 레코드 지원 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 전달 및 미리 보기 옵션을 사용할 수 없습니다. 새 적응형 양식을 만들 때는 편집 가능한 템플릿을 사용하는 것이 좋습니다.
 
 1. 스타일 탭에서 테마를 선택합니다.
@@ -159,3 +164,15 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
    * 적응형 양식이 양식 모델을 기반으로 하는 경우 다른 양식을 선택할 수 있습니다 <!-- form template, --> XML 또는 JSON 스키마 또는 동일한 양식 모델의 양식 데이터 모델 .
 
 1. 탭 **[!UICONTROL 저장]** 속성을 저장합니다.
+
+적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 양식 모델 속성을 수정할 수도 있습니다.
+
+1. 을(를) 선택합니다 **[!UICONTROL 적응형 양식 컨테이너(루트)]** 구성 요소.
+1. 클릭 ![구성 아이콘](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 열기 **[!UICONTROL 속성]** 적응형 양식 컨테이너 내에 포함되어 있습니다.
+1. 을(를) 선택합니다 **[!UICONTROL 데이터 모델]** 탭하고 다음 중 하나를 수행합니다.
+
+   * 적응형 양식이 양식 모델이 없는 경우 양식 모델을 선택하고 그에 따라 을 선택할 수 있습니다 <!-- a form template, --> XML 또는 JSON 스키마 또는 양식 데이터 모델.
+   * 적응형 양식이 양식 모델을 기반으로 하는 경우에는 양식 모델을 변경할 수 없습니다. 다른 항목을 선택할 수 있습니다 <!-- form template, --> 해당하는 것과 동일한 양식 모델을 위한 XML 또는 JSON 스키마 또는 양식 데이터 모델 .
+1. 탭 ![저장](/help/forms/assets/check-button.png) 속성을 저장합니다.
+
+![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

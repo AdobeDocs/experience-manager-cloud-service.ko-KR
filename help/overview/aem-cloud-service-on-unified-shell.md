@@ -2,21 +2,14 @@
 title: 통합 쉘의 AEM as a Cloud Service
 description: 통합 쉘의 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 5d9acdd9b6a377a7509e0638984cb40983fa6652
+source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 84%
+source-wordcount: '328'
+ht-degree: 82%
 
 ---
 
 # 통합 쉘의 AEM as a Cloud Service {#aem-as-a-cloud-service-on-unified-shell}
-
->[!NOTE]
->이 기능은 2022년 7월 프리릴리스 채널에 있습니다.
->
->이는 2022년 8월 릴리스에서 일반적으로 사용할 수 있는 새로운 기능을 소개하기 위한 것입니다.
->
->환경에 맞는 기능을 활성화하는 방법에 대한 자세한 내용은 [프리릴리스 채널 설명서](/help/release-notes/prerelease.md#enable-prerelease)를 참조하십시오.
 
 ## 개요 {#overview}
 

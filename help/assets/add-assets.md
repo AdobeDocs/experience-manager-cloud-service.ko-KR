@@ -4,9 +4,9 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
+source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3064'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 업로드된 자산에 대한 추가 처리를 수행하도록 선택할 수도 있습니다. 특정 메타데이터, 표현물 또는 이미지 처리 서비스를 추가하기 위해 자산이 업로드되는 폴더에 많은 자산 처리 프로필을 구성할 수 있습니다. 자세한 내용은 [업로드 시 자산 처리](#process-when-uploaded).
 
-[!DNL Assets] 은 다음 업로드 방법을 제공합니다. Adobe은 업로드 옵션을 사용하기 전에 사용 사례 및 적용 가능성을 이해할 것을 권장합니다.
+[!DNL Assets] 다음 업로드 방법을 제공합니다. Adobe은 업로드 옵션을 사용하기 전에 사용 사례 및 적용 가능성을 이해할 것을 권장합니다.
 
 | 업로드 메서드 | 사용 시기? | 기본 성향 |
 |---------------------|----------------|-----------------|
@@ -172,6 +172,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 데이터 소스와의 연결을 만들 값을 제공합니다. 예를 들어 **Azure Blob 저장소** 데이터 소스로 Azure 저장소 계정, Azure blob 컨테이너 및 Azure 액세스 키의 값을 지정합니다.
 
+1. 드롭다운 목록에서 필요한 인증 모드를 선택합니다. **Azure 액세스 키** 는 Azure 저장소 계정에 대한 전체 액세스 권한을 제공하는 반면, **Azure SAS 토큰** 관리자는 권한 및 만료 정책을 사용하여 토큰의 기능을 제한할 수 있습니다.
+
 1. 의 데이터 소스에 있는 자산이 들어 있는 루트 폴더의 이름을 입력합니다 **[!UICONTROL 소스 폴더]** 필드.
 
 1. (선택 사항) 자산의 최소 파일 크기를 MB로 제공하여 자산의 수집 프로세스를 **[!UICONTROL 최소 크기별 필터링]** 필드.
@@ -220,7 +222,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 자산 또는 폴더를 일괄적으로 가져오는 경우 [!DNL Experience Manager Assets] 가져오기 소스에 있는 모든 구조를 가져옵니다. [!DNL Experience Manager] 에서는 자산 및 폴더 이름에 특수 문자의 기본 제공 규칙을 따르므로 이러한 파일 이름은 정리해야 합니다. 폴더 이름과 자산 이름 모두에 대해 사용자가 정의한 제목은 변경되지 않고 그대로 유지되며 `jcr:title`.
 
-벌크 가져오기 중에 [!DNL Experience Manager] 기존 폴더를 찾아 자산 및 폴더를 다시 가져오지 않고 가져오기가 발생하는 상위 폴더에 적용된 기밀 정보 처리 규칙을 확인합니다. 상위 폴더에 정리 규칙이 적용되는 경우 가져오기 원본에 동일한 규칙이 적용됩니다. 새 가져오기의 경우 자산 및 폴더의 파일 이름을 관리하기 위해 다음 산화 규칙이 적용됩니다.
+벌크 가져오기 중에 [!DNL Experience Manager] 기존 폴더를 찾아 자산 및 폴더를 다시 가져오지 않고 가져오기가 발생하는 상위 폴더에 적용된 기밀 정보 처리 규칙을 확인합니다. 상위 폴더에 정리 규칙이 적용되는 경우 가져오기 원본에 동일한 규칙이 적용됩니다. 새 가져오기의 경우 자산 및 폴더의 파일 이름을 관리하기 위해 다음 정리 규칙이 적용됩니다.
 
 **대량 가져오기에서 허용되지 않는 이름**
 

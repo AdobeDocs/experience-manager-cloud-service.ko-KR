@@ -2,9 +2,9 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '4100'
 ht-degree: 2%
 
 ---
@@ -330,27 +330,35 @@ When you select a form model, configure Document of Record using options availab
 1. [기록 문서]에서 패널(루트 패널)을 선택한 다음 ![구성](assets/configure.png).
 1. 탭 ![도트](assets/dortab.png). 기록 문서 탭이 나타납니다.
 1. 기본 템플릿 또는 레코드 문서 렌더링을 위한 사용자 지정 템플릿을 선택합니다. 기본 템플릿을 선택하면 템플릿 드롭다운 아래에 레코드 문서의 축소판 미리 보기가 나타납니다.
+1. 기본값을 선택하는지 사용자 지정 템플릿을 선택하는지 여부에 따라 다음 속성 중 일부 또는 전부가 기록 문서 탭에 나타납니다. 아래 등록 정보를 지정하여 기록 문서의 모양을 정의합니다.
 
-   ![브랜딩 템플릿](assets/brandingtemplate.png)
+   1. **기본 속성**:
+      * **템플릿**: 사용자 지정 템플릿을 선택하도록 선택하는 경우, [!DNL AEM Forms] server. 아직 페이지에 없는 템플릿을 사용하려면 [!DNL AEM Forms] server, 먼저 XDP를 업로드해야 합니다 [!DNL AEM Forms] server.
+      * **강조색**: 문서 또는 레코드 PDF에서 머리글 텍스트 및 구분선이 렌더링되는 색상입니다.
+      * **글꼴 패밀리**: 레코드 PDF 문서에 있는 텍스트의 글꼴 패밀리입니다.
+      * **데이터 모델에 바인딩되지 않은 양식 개체 포함**: 속성을 설정하면 스키마 기반 적응형 양식의 레코드 문서에서 바인딩되지 않은 필드가 포함됩니다.
+      * **레코드 문서에서 숨겨진 필드 제외**: 속성을 설정하면 레코드 문서에서 제외하기 위해 숨겨진 필드가 식별됩니다.
+      * **패널 설명 숨기기**: 속성을 설정하면 레코드 문서에서 패널/테이블의 설명이 제외됩니다. 패널 및 테이블에 적용 가능합니다.
 
-   사용자 지정 템플릿을 선택하도록 선택하는 경우, [!DNL AEM Forms] server. 아직 페이지에 없는 템플릿을 사용하려면 [!DNL AEM Forms] server, 먼저 XDP를 업로드해야 합니다 [!DNL AEM Forms] server.
+      ![기본 속성](/help/forms/assets/basicpropertiesdor.png)
 
-1. 기본값을 선택하는지 사용자 지정 템플릿을 선택하는지 여부에 따라 다음 속성 중 일부 또는 전부가 기록 문서 탭에 나타납니다. 다음 사항을 적절히 지정합니다.
+   1. **양식 필드 속성**:
+      * **확인란 및 라디오 단추 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 확인란 및 라디오 단추의 선택한 값만 표시됩니다 [!UICONTROL 기록 문서].
+      * **여러 값에 대한 구분자**: 쉼표나 줄바꿈 같은 구분자를 선택하여 여러 값을 표시할 수 있습니다.
+      * **옵션 정렬**: 원하는 정렬(가로, 세로, 적응형 양식과 동일함)을 선택하여 표시할 확인란 또는 라디오 단추와 같은 필드에 대한 정렬을 설정할 수 있습니다 [!UICONTROL 기록 문서]. 기본적으로 의 필드에 대해 세로 맞춤이 설정됩니다 [!UICONTROL 기록 문서]. 에서 속성 설정 [!UICONTROL 양식 필드 속성] DoR은 [!UICONTROL 항목 정렬] 추가 정보. 경우에 따라 [!UICONTROL 적응형 양식과 동일] 옵션에는 적응형 양식 작성자 인스턴스에 구성된 정렬이 사용됩니다 [!UICONTROL 기록 문서] 필드.
+      * **가로 정렬을 위한 옵션 수**: 가로 정렬을 위해 기록 문서에 표시할 옵션 수를 설정할 수 있습니다.
 
-   * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 선택하거나, 컴퓨터에서 로고 이미지를 업로드하도록 선택할 수 있습니다.
-   * **양식 제목**
-   * **머리글 텍스트**
-   * **면책 조항 레이블**
-   * **면책조항**
-   * **면책조항 텍스트**
-   * **강조색**: 문서 또는 레코드 PDF에서 머리글 텍스트 및 구분선이 렌더링되는 색상입니다
-   * **글꼴 패밀리**: 레코드 PDF 문서에 있는 텍스트의 글꼴 패밀리입니다
-   * **확인란 및 라디오 단추 구성 요소의 경우 선택한 값만 표시합니다**
-   * **다중 선택 값에 대한 구분 기호**
-   * **데이터 모델에 바인딩되지 않은 양식 개체 포함**
-   * **레코드 문서에서 숨겨진 필드 제외**
-   * **패널 설명 숨기기**
+      ![양식 필드 속성](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **마스터 페이지  속성**:
+      * **로고 이미지**: 적응형 양식에서 로고 이미지를 사용하거나, DAM에서 선택하거나, 컴퓨터에서 로고 이미지를 업로드하도록 선택할 수 있습니다.
+      * **양식 제목**: DoR의 제목입니다.
+      * **머리글 텍스트**: 레코드 문서의 머리글 섹션에 표시되는 텍스트입니다.
+      * **면책조항 레이블**: 면책조항 레이블.
+      * **면책조항**: 기록 문서에 대한 권한 및 의무의 범위를 지정하는 텍스트입니다.
+      * **면책조항 텍스트**: 면책조항 텍스트입니다.
+
+      ![마스터 페이지  속성](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >6.3 이전 버전의 디자이너로 만든 적응형 양식 서식 파일을 사용하는 경우, 강조색 및 글꼴 패밀리 속성이 작동하려면 루트 하위 양식 아래의 적응형 양식 서식 파일에 다음 내용이 있는지 확인하십시오.
@@ -367,7 +375,30 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. 브랜딩 변경 사항을 저장하려면 완료를 누릅니다.
+1. 브랜딩 변경 사항을 저장하려면 **[!UICONTROL 완료]**.
+
+## 적응형 양식 편집기의 레코드 지원 문서 {#dor-support-in-adaptiveform}
+
+을 구성할 수 있습니다 [!UICONTROL 기록 문서] 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 바로 템플릿을 생성할 수 있습니다.
+
+적응형 양식 편집기의 작성자 인스턴스에서 다음 단계를 수행합니다.
+
+1. 을(를) 선택합니다 **[!UICONTROL 적응형 양식 컨테이너(루트)]** 구성 요소.
+1. 클릭 ![구성 아이콘](/help/forms/assets/configure-icon.svg) 아이콘을 클릭하여 열기 **[!UICONTROL 속성]** 적응형 양식 컨테이너 내에 포함되어 있습니다.
+1. 를 엽니다. **[!UICONTROL 레코드 서식 파일 문서]** 탭하고 다음 옵션 중에서 선택합니다.
+   * **[!UICONTROL 없음]**: 이 옵션을 선택하면 [!UICONTROL 기록 문서] 적응형 양식에 대해 만들어진 템플릿입니다.
+
+   * **[!UICONTROL 양식 서식 파일을 레코드 서식 파일 문서로 연결]**: 이 옵션을 선택하면 XFA 양식이 레코드 문서의 템플릿으로 사용됩니다.
+
+   * **[!UICONTROL 기록 문서 생성]**: 이 옵션을 선택하면 [!UICONTROL 기록 문서] 적응형 양식에 대해 템플릿이 자동으로 생성됩니다.
+
+1. 탭 ![저장](/help/forms/assets/check-button.png) 속성을 저장합니다.
+
+![레코드 서식 파일 지원 문서](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>When [!UICONTROL 기록 문서] 적응형 양식 템플릿 편집기를 사용하여 템플릿을 만든 다음 아래에 두 가지 옵션만 사용할 수 있습니다. [!UICONTROL 레코드 서식 파일 문서] 탭으로 탭 [!UICONTROL 없음] 및 [!UICONTROL 기록 문서 생성].
 
 ## 레코드 문서의 패널에 대한 표 및 열 레이아웃 {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -400,7 +431,7 @@ When you select a form model, configure Document of Record using options availab
 **양식 수준 설정**
 
 * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 스키마 기반 적응형 양식의 레코드 문서에서 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-* **숨겨진 경우 DoR에서 필드 제외:** 속성이 true가 아닌 경우 속성을 설정하면 &quot;레코드의 문서에서 제외&quot; 필드 수준 속성의 동작이 무시됩니다. 양식 제출 시 필드가 숨겨져 있으면 속성이 true로 설정되어 있으면 Document of Record에서 제외됩니다. &quot;Exclude From Document of Record&quot; 속성이 설정되지 않은 경우 이러한 필드가 제외됩니다. 설정 [서버에서 유효성 검사](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) true일 속성은 서버측 레코드 문서에서 제외하기 위해 숨겨진 필드를 식별합니다.
+* **숨겨진 경우 DoR에서 필드 제외:** 속성이 true가 아닌 경우 속성을 설정하면 &quot;레코드의 문서에서 제외&quot; 필드 수준 속성의 동작이 무시됩니다. 양식 제출 시 필드가 숨겨져 있으면 속성이 true로 설정되어 있으면 Document of Record에서 제외됩니다. &quot;Exclude From Document of Record&quot; 속성이 설정되지 않은 경우 이러한 필드가 제외됩니다. 설정 [서버에서 유효성 검사](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) true일 속성은 서버 쪽의 레코드 문서에서 제외하기 위해 숨겨진 필드를 식별합니다.
 
 ## 사용자 지정 XCI 파일 사용
 

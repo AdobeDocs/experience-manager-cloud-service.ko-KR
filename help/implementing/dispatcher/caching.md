@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service에서 캐싱
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
+source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
 workflow-type: tm+mt
-source-wordcount: '2580'
+source-wordcount: '2663'
 ht-degree: 1%
 
 ---
@@ -196,6 +196,19 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 ### HEAD 요청 동작 {#request-behavior}
 
 인 리소스에 대해 Adobe CDN에 HEAD 요청이 수신되는 경우 **not** 캐시되면 요청이 Dispatcher 및/또는 AEM 인스턴스에 의해 GET 요청으로 변환되고 수신됩니다. 응답을 캐시할 수 있으면 CDN에서 후속 HEAD 요청이 제공됩니다. 응답을 캐시할 수 없는 경우에는 다음 HEAD 요청이 Dispatcher 및/또는 AEM 인스턴스에 전달되는 기간에 대해 `Cache-Control` TTL.
+
+### 마케팅 캠페인 매개 변수 {#marketing-parameters}
+
+웹 사이트 URL에는 캠페인의 성공을 추적하는 데 사용되는 마케팅 캠페인 매개 변수가 자주 포함됩니다. Dispatcher의 캐시를 효과적으로 사용하려면 Dispatcher 구성을 구성하는 것이 좋습니다 `ignoreUrlParams` property as [문서화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
+다음 `ignoreUrlParams` 섹션은 주석 처리를 해제해야 하며 파일을 참조해야 합니다. `conf.dispatcher.d/cache/marketing_query_parameters.any`- 마케팅 채널과 관련된 매개 변수에 해당하는 라인의 주석을 취소하여 수정할 수 있습니다. 다른 매개 변수도 추가할 수 있습니다.
+
+```
+/ignoreUrlParams {
+{{ /0001 { /glob "*" /type "deny" }}}
+{{ $include "../cache/marketing_query_parameters.any"}}
+}
+```
 
 ## Dispatcher 캐시 무효화 {#disp}
 

@@ -9,9 +9,9 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2409'
 ht-degree: 4%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 4%
 
 적응형 Forms을 사용하면 매력적인 반응형, 동적 및 적응형 양식을 만들 수 있습니다. [!DNL AEM Forms] 은 응용 Forms을 만들고 사용하기 위한 직관적인 사용자 인터페이스와 기본 구성 요소를 제공합니다. 양식 모델이나 스키마를 기반으로 하거나 양식 모델 없이 적응형 양식을 만들도록 선택할 수 있습니다. 고객의 요구 사항에 부합할 뿐만 아니라 기존 인프라 투자 및 자산을 확장하는 양식 모델을 신중하게 선택하는 것이 중요합니다. 다음 옵션 중에서 선택하여 적응형 양식을 만들 수 있습니다.
 
-<!-- * **Using a form data model**
-  [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source. -->
+* **양식 데이터 모델 사용**
+   [데이터 통합](data-integration.md) 의 서로 다른 데이터 소스에서 온 엔티티와 서비스를 적응형 Forms을 만드는 데 사용할 수 있는 양식 데이터 모델에 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져오고 쓰는 작업이 포함된 경우 양식 데이터 모델 을 선택합니다.
 
 * **XDP 양식 템플릿 사용**
 XFA 기반 또는 XDP 양식에 투자를 한 경우 이상적인 양식 모델입니다. XFA 기반 양식을 적응형 Forms으로 변환하는 직접적인 방법을 제공합니다. 기존 XFA 규칙은 연결된 적응형 Forms에 유지됩니다. 결과 적용형 Forms은 유효성 검사, 이벤트, 속성 및 패턴과 같은 XFA 구문을 지원합니다.
@@ -35,7 +35,11 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 * **없음 또는 양식 모델 없이 사용**
 이 옵션을 사용하여 만든 응용 Forms에서는 양식 모델을 사용하지 않습니다. 이러한 양식에서 생성된 데이터 XML은 필드 및 해당 값이 있는 플랫 구조를 갖습니다.
 
-<!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
+   >[!NOTE]
+   >
+   > 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 양식 모델 속성을 수정할 수 있습니다. 자세한 내용은 [적응형 양식의 양식 모델 속성 편집](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+
+적응형 양식을 만들려면 다음을 참조하십시오 [적응형 양식 만들기](creating-adaptive-form.md).
 
 ## 적응형 양식 작성 UI {#adaptive-form-authoring-ui}
 

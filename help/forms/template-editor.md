@@ -2,9 +2,9 @@
 title: 적응형 양식 템플릿을 만드는 방법
 description: 적응형 양식 템플릿을 만들어 템플릿 편집기를 사용하여 기본 구조 및 초기 컨텐츠를 정의합니다.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1806'
 ht-degree: 1%
 
 ---
@@ -153,9 +153,17 @@ Experience Manager은 템플릿을 구성하는 전역 폴더를 제공합니다
 
 양식은 해당 템플릿에서 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드하면 템플릿이 다운로드되지 않습니다. 다른 형식으로 ftocorm을 가져올 때 [!DNL AEM Forms] 예를 들어 템플릿 없이 가져옵니다. 양식을 가져오지만 해당 템플릿을 사용할 수 없으면 양식이 렌더링되지 않습니다. 에서 사용자 지정 템플릿을 패키지할 수 있습니다. `/conf` 노드 `https://<server>:<port>/crx/packmgr`를 입력하여 [!DNL AEM Forms] 양식을 업로드할 인스턴스. 다음을 수행할 수도 있습니다 [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Services 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
+>[!NOTE]
+>
+> * 을(를) 연결할 수 있습니다 [!UICONTROL 양식 데이터 모델 스키마] 템플릿 편집기의 적응형 양식 템플릿에 추가합니다. 자세한 내용은 [적응형 양식 만들기](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) 추가 정보.
+> * 를 구성할 수도 있습니다 [!UICONTROL 기록 문서] 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 바로 템플릿을 생성할 수 있습니다. 자세한 내용은 [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
 ## 템플릿을 사용하여 적응형 양식 만들기 {#creating-an-adaptive-form-using-the-template}
 
 템플릿을 만들고 활성화하면 적응형 양식을 만들 때 양식 관리자에서 사용할 수 있습니다. 템플릿을 사용하고 적응형 양식을 만들려면 다음을 참조하십시오 [적응형 양식 만들기](creating-adaptive-form.md).
+
 
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
@@ -177,7 +185,7 @@ Perform the following steps to show and hide templates:
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 
-## 추천 {#recommendations}
+## 권장 사항 {#recommendations}
 
 * 템플릿 편집기에서 폼의 속성을 수정할 때는 BindReference 속성을 사용하지 마십시오.
 * 중단점을 추가하려면 적응형 양식 템플릿을 작성할 때 만듭니다.
