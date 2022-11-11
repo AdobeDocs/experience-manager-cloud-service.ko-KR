@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a8d632818dd0514d63a5cb544e4b64301819483f
+source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 19%
@@ -36,7 +36,7 @@ ht-degree: 19%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 월별 릴리스(2022.10.0)은 2022년 11월 10일입니다. 다음 월별 릴리스(2023.1.0)는 2022년 1월 26일에 제공될 예정입니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 월별 릴리스(2022.10.0)은 2022년 11월 10일입니다. 다음 월별 릴리스(2023.1.0)는 2023년 1월 26일에 제공될 예정입니다.
 
 ## 릴리스 비디오 {#release-video}
 
