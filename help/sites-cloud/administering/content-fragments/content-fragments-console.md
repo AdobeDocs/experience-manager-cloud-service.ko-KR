@@ -5,10 +5,10 @@ landing-page-description: 헤드리스 사용 사례에는 컨텐츠 조각을 �
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 96%
+source-wordcount: '901'
+ht-degree: 94%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 96%
 >[!NOTE]
 >
 >몇 가지 [키보드 단축키를 이 콘솔에서 사용할 수 있습니다](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+
+>[!NOTE]
+>
+>필요한 경우 프로젝트 팀이 콘솔을 사용자 지정할 수 있습니다. 자세한 내용은 [컨텐츠 조각 콘솔 사용자 지정](/help/implementing/developing/extending/content-fragment-console-customizing.md) 자세한 내용
 
 콘텐츠 조각 콘솔은 전역 탐색의 최상위 수준에서 직접 액세스할 수 있습니다.
 

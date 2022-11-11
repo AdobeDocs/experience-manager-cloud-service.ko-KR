@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 50b2859dc2a8a83a007bfef30d5c0959e92aa212
+source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
 workflow-type: tm+mt
-source-wordcount: '3759'
-ht-degree: 99%
+source-wordcount: '3764'
+ht-degree: 98%
 
 ---
 
@@ -872,6 +872,7 @@ ht-degree: 99%
       + [경험 조각 확장](/help/implementing/developing/extending/experience-fragments.md)
       + [콘텐츠 조각 맞춤화 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+      + [컨텐츠 조각 콘솔 사용자 지정](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + 검색 양식 관리 {#manage-search-forms}
          + [검색 양식 구성](/help/implementing/developing/extending/search-forms.md)
          + [받은 편지함용 검색 필터 구성](/help/implementing/developing/extending/configure-inbox-search-rail.md)
