@@ -4,10 +4,10 @@ description: 언샵 마스크, 스마트 자르기 또는 스마트 견본 또�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
+source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
 workflow-type: tm+mt
-source-wordcount: '3333'
-ht-degree: 9%
+source-wordcount: '3351'
+ht-degree: 8%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->이미지 프로필은 PDF, 애니메이션 GIF 또는 INDD(Adobe InDesign) 파일에는 적용할 수 없습니다.
+>・ 스마트 자르기에서 CMYK 이미지 형식이 지원되지 않습니다.
+・ 이미지 프로필은 PDF, 애니메이션 GIF 또는 INDD(Adobe InDesign) 파일에 적용할 수 없습니다.
 
 ## 언샵 마스크 옵션 {#unsharp-mask}
 
 이미지 프로필을 만들 때 **[!UICONTROL 언샵 마스크]** 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하는 옵션입니다. 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
 
 >[!NOTE]
->
->언샵 마스크는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 표현물에만 적용됩니다. 즉, ptiff 내에서 가장 큰 크기의 표현물이 언샵 마스크의 영향을 받지 않습니다. 반면 축소판과 같은 작은 크기의 렌디션은 변경되고 언샵 마스크를 표시합니다.
+언샵 마스크는 50% 이상 다운샘플링된 PTIFF(피라미드형 tiff) 내의 축소된 표현물에만 적용됩니다. 즉, ptiff 내에서 가장 큰 크기의 표현물이 언샵 마스크의 영향을 받지 않습니다. 반면 축소판과 같은 작은 크기의 렌디션은 변경되고 언샵 마스크를 표시합니다.
 
 in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 옵션이 있습니다.
 
@@ -71,8 +71,7 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 선택할 이미지 자르기 옵션이 두 개 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하거나 대상 해상도의 자르기 컨텐츠를 보존하도록 선택할 수도 있습니다.
 
 >[!IMPORTANT]
->
->Adobe은 생성된 농작물과 견본이 브랜드와 값에 적절하고 적절한지 확인하기 위해 모든 농작물과 견본을 검토할 것을 권장합니다.
+Adobe은 생성된 농작물과 견본이 브랜드와 값에 적절하고 적절한지 확인하기 위해 모든 농작물과 견본을 검토할 것을 권장합니다.
 
 | 옵션 | 사용 시기 | 설명 |
 | --- | --- | --- |
@@ -85,9 +84,10 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 
 지원되는 최대 입력 파일 크기 해상도는 16K입니다.
 
+스마트 자르기에서는 CMYK 이미지 형식이 지원되지 않습니다.
+
 >[!NOTE]
->
->16K 해상도는 가로 방향으로 약 16,000픽셀의 디스플레이 해상도입니다. 가장 일반적으로 논의되는 16K 해상도는 153608640이며, 이 해상도는 각 차원에서의 8K UHD의 픽셀 수가 총 4배 많은 픽셀들에 대해 두 배가 됩니다. 이 해상도는 132.7메가픽셀이며, 4K 해상도보다 16배, 1080p 해상도보다 64배 많은 화소입니다.
+16K 해상도는 가로 방향으로 약 16,000픽셀의 디스플레이 해상도입니다. 가장 일반적으로 논의되는 16K 해상도는 153608640이며, 이 해상도는 각 차원에서의 8K UHD의 픽셀 수가 총 4배 많은 픽셀들에 대해 두 배가 됩니다. 이 해상도는 132.7메가픽셀이며, 4K 해상도보다 16배, 1080p 해상도보다 64배 많은 화소입니다.
 
 | 이미지 형식 | 대소문자를 구분하지 않는 파일 확장명 | MIME 유형 | 지원되는 입력 색상 공간 | 지원되는 최대 입력 파일 크기 | 지원되는 이미지 형식입니까? |
 | --- | --- | --- | --- | --- | --- |
@@ -200,17 +200,15 @@ Folders that have a profile already assigned to it are indicated by the display 
 ## 단일 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
->
->Adobe은 생성된 스마트 자르기 및 스마트 견본을 검토하여 해당 브랜드 및 값과 관련이 있는지 확인하는 것을 권장합니다.
+Adobe은 생성된 스마트 자르기 및 스마트 견본을 검토하여 해당 브랜드 및 값과 관련이 있는지 확인하는 것을 권장합니다.
 
 이미지의 스마트 자르기 창을 수동으로 다시 정렬하거나 크기를 조정하여 초점을 더 세분화할 수 있습니다.
 
 스마트 자르기를 편집하고 저장하면 특정 이미지에 자르기를 사용하는 모든 위치에 변경 사항이 전파됩니다.
 
 >[!IMPORTANT]
->
->자산의 스마트 자르기 창을 수동으로 다시 정렬하거나 크기를 변경하면 나중에 자산을 재처리하기로 하더라도 해당 편집이 유지 및 유지됩니다. 그러나 너비, 높이 또는 둘 다를 편집하는 경우 **[!UICONTROL 응답형 이미지 자르기]** 이미지 프로필의 영역에서 해당 자산을 재처리할 수 있습니다.
->자세한 내용은 [폴더에서 Dynamic Media 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+자산의 스마트 자르기 창을 수동으로 다시 정렬하거나 크기를 변경하면 나중에 자산을 재처리하기로 하더라도 해당 편집이 유지 및 유지됩니다. 그러나 너비, 높이 또는 둘 다를 편집하는 경우 **[!UICONTROL 응답형 이미지 자르기]** 이미지 프로필의 영역에서 해당 자산을 재처리할 수 있습니다.
+자세한 내용은 [폴더에서 Dynamic Media 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.
 
@@ -240,9 +238,8 @@ Folders that have a profile already assigned to it are indicated by the display 
 스마트 자르기를 편집하고 저장하면 특정 이미지에 자르기를 사용하는 모든 위치에 변경 사항이 전파됩니다.
 
 >[!IMPORTANT]
->
->여러 에셋의 스마트 자르기 창을 수동으로 재정렬하거나 크기를 조정하면 나중에 해당 에셋을 재처리하는 경우에도 이러한 편집 내용이 유지되고 보존됩니다. 단, 이미지 프로필의 **[!UICONTROL 반응형 이미지 자르기]** 영역에서 폭, 높이 또는 두 가지 모두를 편집하면 해당 에셋이 재처리됩니다.
->자세한 내용은 [폴더에서 Dynamic Media 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+여러 에셋의 스마트 자르기 창을 수동으로 재정렬하거나 크기를 조정하면 나중에 해당 에셋을 재처리하는 경우에도 이러한 편집 내용이 유지되고 보존됩니다. 단, 이미지 프로필의 **[!UICONTROL 반응형 이미지 자르기]** 영역에서 폭, 높이 또는 두 가지 모두를 편집하면 해당 에셋이 재처리됩니다.
+자세한 내용은 [폴더에서 Dynamic Media 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.
 
