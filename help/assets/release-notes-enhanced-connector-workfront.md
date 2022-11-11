@@ -2,10 +2,10 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 1509afad94208e62d5222f4c95c98d90f95be30e
+source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 2%
+source-wordcount: '825'
+ht-degree: 1%
 
 ---
 
@@ -15,19 +15,54 @@ ht-degree: 2%
 
 ## 릴리스 일자 {#release-date}
 
-최신 버전 1.9.4의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2022년 10월 7일입니다.
+최신 버전 1.9.5의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2022년 11월 11일입니다.
 
 ## 릴리스 특징 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음과 같은 개선 사항 및 버그 수정 사항이 포함되어 있습니다.
 
-* 많은 수의 이벤트로 인해 향상된 커넥터 구성 페이지에서 이벤트 구독 탭을 볼 수 없습니다.
+* Workfront에서 다중 값 필드에 대해 하나의 값만 정의하면 필드 값이 Experience Manager에 적절하게 매핑되지 않습니다.
 
-* Workfront이 프로젝트에 있는 기존 폴더 목록을 가져올 수 없으므로 중복 폴더가 생성됩니다.
+* Experience Manager은 `SERVER_ERROR` on **[!UICONTROL 외부 파일 및 폴더 연결]** 에 대한 잘못된 권한으로 인해 자산 폴더에 액세스하는 동안 화면 `/content/dam/collections`.
+
+* 활성화 **[!UICONTROL Brand Portal에 자산 게시]** Workfront 향상된 커넥터 구성 페이지의 옵션에서 잘못된 이벤트를 만듭니다. 옵션을 비활성화한 후에도 이벤트가 삭제되지 않습니다.
+
+   문제를 해결하려면
+
+   1. 향상된 커넥터 버전 1.9.5로 업그레이드하십시오.
+
+   1. 비활성화 **[!UICONTROL Brand Portal에 자산 게시]** 고급 설정 아래의 옵션.
+
+   1. 를 활성화합니다 **[!UICONTROL Brand Portal에 자산 게시]** 선택 사항입니다.
+
+   1. 잘못된 이벤트 구독을 삭제합니다.
+
+      1. 에 대한 GET 호출 수행 `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+
+         각 페이지 번호에 대해 하나의 API 호출을 실행합니다.
+
+      1. 다음 텍스트를 검색하여 다음 URL과 일치하고 URL이 없는 이벤트 구독을 찾습니다 `objId`:
+
+         ```
+              "objId": "",
+             "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
+         ```
+
+         다음 사이 의 `"objId": "",` 및 `"url"` 는 JSON 응답과 일치합니다. 이 작업을 수행하는 데 권장되는 방법은 를 포함하는 모든 이벤트 구독에서 복사하는 것입니다 `objId` 번호를 삭제합니다.
+
+      1. 이벤트 구독 ID를 확인합니다.
+
+      1. 잘못된 이벤트 구독을 삭제합니다. 에 대한 삭제 API 호출 만들기 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+
+         `200` 응답 코드가 잘못된 이벤트 구독을 성공적으로 삭제했음을 의미하므로
+   >[!NOTE]
+   >
+   >이 절차에서 언급된 단계를 실행하기 전에 잘못된 이벤트 구독을 이미 삭제한 경우 4단계를 건너뛸 수 있습니다.
+
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.4 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.5 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 알려진 문제 {#known-issues}
 
@@ -35,9 +70,15 @@ ht-degree: 2%
 
 * 클래식 Workfront 경험을 사용하는 경우 **[!UICONTROL 보내기]** 선택 사항은 **[!UICONTROL 자세히]** 드롭다운 목록에서 Experience Manager 내에서 대상 대상을 선택할 수 없습니다. 다음 **[!UICONTROL 보내기]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록. 다음 **[!UICONTROL 보내기]** 옵션이 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
 
-* Workfront에 `SERVER_ERROR` 릴리스 8316으로 업그레이드한 후 문서를 AEM에 연결하는 동안 메시지가 표시됩니다. 문제를 해결하려면 `rep:readProperties` to `content/dam/collections` 대상 `wf-workfront-user` AEM 사용자 그룹.
-
 ## 이전 릴리스 {#previous-releases}
+
+### 2022년 10월 릴리스 {#october-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 10월 7일에 릴리스된 버전 1.9.4에는 다음 업데이트가 포함됩니다.
+
+* 많은 수의 이벤트로 인해 향상된 커넥터 구성 페이지에서 이벤트 구독 탭을 볼 수 없습니다.
+
+* Workfront이 프로젝트에 있는 기존 폴더 목록을 가져올 수 없으므로 중복 폴더가 생성됩니다.
 
 ### 2022년 9월 릴리스 {#september-2022-release}
 
