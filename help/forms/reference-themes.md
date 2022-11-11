@@ -4,27 +4,31 @@ seo-title: Reference Themes
 description: AEM Forms은 소프트웨어 배포에서 가져오고 양식 스타일을 지정하는 데 사용할 수 있는 적응형 양식 테마를 제공합니다.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: ad1035e9d8f3a40d6211c9396e2a052ad54817e5
+source-git-commit: 3ca1996ac3a19151c0c05bd972f0aec07edabf69
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 0%
+source-wordcount: '514'
+ht-degree: 3%
 
 ---
 
-# 참조 테마{#reference-themes}
 
-[테마](/help/forms/themes.md) css에 대한 자세한 지식이 없는 경우 양식의 스타일을 지정할 수 있습니다. 기본 테마 외에 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+# Forms as a Cloud Service에 대한 참조 자산 {#reference-themes}
+
+를 설치하면 참조 테마, 템플릿 및 양식 데이터 모델을 얻을 수 있습니다 [참조 자산 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 적응형 Forms 개발을 빠르게 시작하고 가속화하는 데 도움이 됩니다. 다음을 사용할 수 있습니다 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 이 패키지를 AEM Forms as a Cloud Service 환경에 배포하려면 다음을 수행하십시오.
+
+패키지에 포함된 참조 자산은 다음과 같습니다.
+
+## 테마 {#themes}
+
+[테마](/help/forms/themes.md) css에 대한 자세한 지식이 없는 경우 양식의 스타일을 지정할 수 있습니다. 다음 주제가 포함되어 있습니다.
 
 * 베릴
-* 경영진
-* Exec-Light
-* 자유
+* 조용한
 * 울트라마린
 * Urbane
-* 미국 웹 디자인 표준
-* 조용한
+* 칸바
 
-각 주제에는 사용자에게 쾌적한 적응형 양식을 만드는 데 사용할 수 있는 고유하고 우아한 스타일이 포함되어 있습니다. 여기에는 패널, 텍스트 상자, 숫자 상자, 라디오 단추, 표 및 스위치와 같은 선택기에 대한 고유한 스타일이 포함되어 있습니다. 이러한 테마의 스타일은 요구 사항을 기반으로 합니다. 예를 들어, 특정 시나리오에서는 깨끗한 글꼴이 포함된 미니멀리즘 테마가 필요합니다. 자유 테마를 사용하면 그 모습을 달성할 수 있습니다.
+각 주제에는 사용자에게 쾌적한 적응형 양식을 만드는 데 사용할 수 있는 고유하고 우아한 스타일이 포함되어 있습니다. 여기에는 패널, 텍스트 상자, 숫자 상자, 라디오 단추, 표 및 스위치와 같은 선택기에 대한 고유한 스타일이 포함되어 있습니다. 이러한 테마의 스타일은 요구 사항을 기반으로 합니다. 예를 들어, 특정 시나리오에서는 깨끗한 글꼴이 포함된 미니멀리즘 테마가 필요합니다. Urbane 테마는 그러한 모양을 달성할 수 있도록 해줍니다.
 
 ![참조 테마](/help/forms/assets/ref-themes.png)
 
@@ -32,7 +36,7 @@ ht-degree: 0%
 
 패키지 설치에 대한 자세한 내용은 [패키지 작업 방법](/help/implementing/developing/tools/package-manager.md).
 
-## 베릴 {#beryl}
+### 베릴 {#beryl}
 
 We.Gov의 적응형 양식에서 Beryl 테마는 배경 이미지, 투명도 및 큰 평면 아이콘 사용을 강조합니다. 아래 스크린샷에서는 Beryl 테마가 어떻게 생겼고 양식의 스타일을 어떻게 향상시킬 수 있는지 확인할 수 있습니다.
 
@@ -42,66 +46,87 @@ We.Gov의 적응형 양식에서 Beryl 테마는 배경 이미지, 투명도 및
 
 ](assets/beryl-1.png)-->
 
-## 경영진 {#exec}
+<!-- ## Exec {#exec}
 
-Exec 테마는 솔리드 배경 채우기를 방지하여 양식 구성 요소를 강조합니다. 구성 요소를 선택하고 클릭하면 글꼴 색상이 변경됩니다. 기본 캔버스 테마와 비교하여 선택한 탭의 텍스트 글꼴 색상이 진한 파란색으로 변경됩니다. 탐색 및 제출 단추가 Beryl 테마와 어떻게 다른지 확인합니다.
+Exec theme avoids solid background fills to emphasize form components. Selecting and clicking components changes font colors. In comparison to the default Canvas theme, font color of the text in the selected tab changes to dark blue. Notice how the navigation and submit buttons are different from the Beryl theme.
 
-![실행 테마](/help/forms/assets/exec.png)
+![Exec theme](/help/forms/assets/exec.png) -->
 
 <!--[Click to enlarge
 
 ](assets/exec-1.png)-->
 
-## 실행 표시등 {#exec-light}
+<!-- ## Exec Light {#exec-light}
 
-Exec Light 테마는 공백을 사용하여 원활한 경험을 만듭니다. [다음] 및 [제출] 단추에는 솔리드 채우기와 3D 그림자가 표시됩니다. 왼쪽의 선택한 탭에는 두 번 확인 표시 대신 화살표가 표시됩니다.
+Exec Light theme uses white space to create a seamless experience. The Next and Submit buttons get a solid fill and 3D shadow. Selected tabs on the left get an arrow instead of double-check marks.
 
-![실행 밝은 테마](/help/forms/assets/exec-light.png)
+![Exec light theme](/help/forms/assets/exec-light.png) -->
 
 <!--[Click to enlarge
 
 ](assets/exec-light-1.png)-->
 
-## 자유 {#liberty}
+<!-- ## Liberty {#liberty}
 
-자유의 테마는 가장 중요한 것을 강조하기 위해 미니멀리즘 방식을 사용합니다. 예를 들어 방문한 탭의 글꼴 색상이 녹색으로 바뀝니다. 줄이 있는 종이 기반 양식의 모양을 에뮬레이션하는 텍스트 상자의 아래쪽 윤곽만 볼 수 있습니다. 활성 텍스트 상자에는 검은색 아래쪽 윤곽선이 있고 다른 텍스트 상자는 연한 회색 아래쪽 윤곽선이 있습니다.
+Liberty theme uses a minimalist approach to highlight the important. For example, the font color of the visited tab changes to green. You can only see the bottom-outline of the text box which emulates the look of a paper-based form with lines. The active text box has a black bottom-outline while others get light gray bottom-outline.
 
-![자유 주제](/help/forms/assets/liberty.png)
-<!--[Click to enlarge
+![Liberty theme](/help/forms/assets/liberty.png) -->
+<!--[Click to enlarge](assets/liberty-1.png)-->
 
-](assets/liberty-1.png)-->
-
-## 조용한 {#tranquil}
+### 조용한 {#tranquil}
 
 조용한 테마는 양식의 다른 구성 요소를 강조 표시하는 Tranquil 색상 구성표의 밝고 어두운 색조를 제공합니다. 예를 들어 라디오 단추, 패널 및 탭은 다른 녹색 음영률을 가져옵니다.
 
 ![조용한 테마](/help/forms/assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--[Click to enlarge](assets/tranquil-1.png)-->
 
-](assets/tranquil-1.png)-->
-
-## 울트라마린 {#ultramarine}
+### 울트라마린 {#ultramarine}
 
 Ultramarine 테마는 짙은 파란색 음영을 사용하여 탭, 패널, 텍스트 상자 및 단추와 같은 구성 요소를 강조 표시합니다.
 
 ![초마린 테마](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
-## Urbane {#urbane}
+### Urbane {#urbane}
 
 도시 테마는 간결하고 기능적으로 형태를 강조한다. 양식에 Urbine 테마를 적용하면 구성 요소가 균일하고 있음을 알 수 있습니다. 패널은 얇은 윤곽선을 만들어 현대적인 모양을 만듭니다.
 
 ![도시 테마](/help/forms/assets/urbane.png)
-<!--[Click to enlarge
+<!--[Click to enlarge](assets/urbane-1.png)-->
 
-](assets/urbane-1.png)-->
+<!-- ## U.S. Web Design Standards {#u-s-web-design-standards}
 
-## 미국 웹 디자인 표준 {#u-s-web-design-standards}
+U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles described in the Draft U.S. Web Design Standards site. The web standard is used by federal organizations to create consistent web experiences across federal government websites.
 
-U.S. Web Design Standard 테마는 Draft US Web Design Standard 사이트에 설명된 서체 및 스타일을 사용합니다. 웹 표준은 연방 정부 웹 사이트에서 일관된 웹 경험을 만드는 데 연방 조직에서 사용합니다.
+![U.S. Web Design Standards Theme](/help/forms/assets/us-web-standards.png) -->
+<!--[Click to enlarge](assets/usgov.png)-->
 
-![미국 웹 디자인 표준 테마](/help/forms/assets/us-web-standards.png)
-<!--[Click to enlarge
 
-](assets/usgov.png)-->
+## 템플릿
+
+템플릿을 사용하면 구성 요소를 드래그 앤 드롭하여 적응형 양식의 초기 구조를 정의할 수 있습니다. 다음 자산이 포함됩니다.
+
+### 기본 {#basic}
+
+기본 템플릿은 등록 양식을 빠르게 만드는 데 도움이 됩니다.
+
+![기본 테마](/help/forms/assets/exec.png)
+
+### 비어 있음 {#blank}
+
+기본 템플릿은 조직에 대한 적응형 양식의 초기 구조를 만들 수 있는 빈 캔버스를 제공합니다.
+
+## 양식 데이터 모델
+
+### Microsoft® Dynamics 365
+
+Microsoft Dynamics 365 데이터 모델은 Microsoft Dynamics 365를 데이터 소스로 사용하는 데 도움이 됩니다. 또한 Microsoft Dynamics 365 데이터 소스에 데이터를 읽기, 업데이트, 삭제 및 추가할 수 있는 샘플 서비스도 제공합니다.
+
+![Microsoft® Dynamics 365 양식 데이터 모델](/help/forms/assets/microsoft-dynamic-fdm.png)
+
+### Salesforce
+
+Salesforce 데이터 모델은 Salesforce를 데이터 소스로 사용하는 데 도움이 됩니다. 또한 Salesforce에 데이터를 읽기, 업데이트, 삭제 및 추가할 수 있는 샘플 서비스를 제공합니다.
+
+![Salesforce 양식 데이터 모델](/help/forms/assets/salesforce-fdm.png)
