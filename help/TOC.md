@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dce60b09a93ddf09b6b9285b832de91f6233bdae
+source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3766'
 ht-degree: 98%
 
 ---
@@ -489,8 +489,6 @@ ht-degree: 98%
    + [주요 기능](/help/forms/key-features.md)
    + [주요 변경 내용](/help/forms/notable-changes.md)
    + [아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
-   + AEM Forms 참조 자료 {#formsreference-themes}
-      + [참조 테마](/help/forms/reference-themes.md)
    + 서비스 설정 및 구성 {#setup-environment}
       + [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
       + [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
@@ -509,6 +507,7 @@ ht-degree: 98%
          + [템플릿 만들기](/help/forms/template-editor.md)
          + [테마 만들기](/help/forms/themes.md)
          + [데이터 소스를 클라우드 서비스에 연결](/help/forms/data-integration.md)
+         + [참조 자산](/help/forms/reference-assets.md)
       + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
          + [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
          + [적응형 양식에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)
