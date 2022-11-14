@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 92%
+source-wordcount: '1013'
+ht-degree: 81%
 
 ---
 
@@ -44,23 +44,23 @@ ht-degree: 92%
   <tr>
     <td>버전 삭제</td>
     <td>Adobe</td>
-    <td>제작자 계층이 성능 기준에 맞게 유지되도록 하기 위해, 저장소의 <code>/content</code> 노드 아래에 있는 각 콘텐츠 조각의 구 버전들은 다음 동작에 따라 삭제됩니다.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>기존 환경(2023년 3월 1일 이전에 만들어진 환경)의 경우, 제거를 사용할 수 없으며, 고객이 명시적으로 활성화하지 않는 한 향후에 제거가 활성화되지 않으며, 이 경우 사용자 지정 값으로 구성할 수도 있습니다.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->새 환경(2023년 3월 1일부터 작성됨)에는 고객이 사용자 지정 값으로 구성할 수 있으므로 아래 값으로 기본적으로 제거를 사용할 수 있습니다.
      <ol>
        <li>30일 넘는 구 버전 삭제</li>
        <li>지난 30일 이내 가장 최근의 5개 버전은 유지</li>
        <li>위의 규칙과 관계없이 가장 최근 버전은 보존됩니다.</li>
-     </ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 이후에 생성된 새 환경에서 기본적으로 실행됩니다. 다른 설정이 필요하신 경우 고객 지원 티켓을 제출하시기 바랍니다.</td>
+     </ol></td>
   </td>
   </tr>
   <tr>
     <td>감사 로그 삭제</td>
     <td>Adobe</td>
-    <td>제작자 계층이 성능 기준에 맞게 유지되도록 하기 위해, 저장소의 <code>/content</code> 노드 아래에 오래된 감사 로그가 다음 동작에 따라 삭제됩니다.<br><br> <!-- See above for the two line breaks -->
+    <td>기존 환경(2023년 3월 1일 이전에 만들어진 환경)의 경우, 제거를 사용할 수 없으며, 고객이 명시적으로 활성화하지 않는 한 향후에 제거가 활성화되지 않으며, 이 경우 사용자 지정 값으로 구성할 수도 있습니다.<br><br> <!-- See above for the two line breaks -->새 환경(2023년 3월 1일부터 만들어짐)은 <code>/content</code> 다음 동작에 따라 저장소의 노드입니다.
      <ol>
        <li>복제 감사의 경우, 3일 넘는 감사 로그 삭제</li>
        <li>DAM(애셋) 감사의 경우, 30일 넘는 감사 로그 삭제</li>
        <li>페이지 감사의 경우, 3일 넘는 감사 로그 삭제</li>
-     </ol><br>참고: 위에 설명된 동작은 2022년 3월 14일 이후에 생성된 새 환경에서 기본적으로 실행됩니다. 다른 설정이 필요하신 경우 고객 지원 티켓을 제출하시기 바랍니다.</td>
+     </ol></td>
    </td>
   </tr>
   <tr>
