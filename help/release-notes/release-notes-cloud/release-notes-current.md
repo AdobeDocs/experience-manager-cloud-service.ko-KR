@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
+source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 34%
 
 ---
@@ -76,7 +76,8 @@ ht-degree: 34%
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
 
-### 에서 사용할 수 있는 새로운 기능 [!DNL Forms] channel {#new-features-available-in-channel}
+### 에서 사용할 수 있는 새로운 기능 [!DNL Forms] {#new-features-available-in-channel}
+
 
 * [적응형 양식 마법사](/help/forms/creating-adaptive-form.md): AEM Forms에서는 적응형 양식을 신속하게 작성할 수 있는 비즈니스 사용자 친화적 마법사를 제공합니다. 마법사에는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능이 있습니다. 이번 릴리스에서 마법사 기능이 다음과 같이 개선되었습니다.
 
@@ -85,8 +86,6 @@ ht-degree: 34%
    * 정적 템플릿 사용: 레거시 정적 템플릿에 투자한 기존 고객들은 적응형 양식을 작성할 수 있는 마법사의 정적 템플릿을 사용하여 클라우드 채택 여정을 계속 진행할 수 있습니다. 이로써 고객이 이전 정적 템플릿을 최신 편집 가능한 템플릿으로 마이그레이션하는 데 시간이 더 걸릴 수 있습니다.
 
 * [서버측 처리 도중 기록 문서(DoR)에서 숨겨진 필드 제거](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): 데이터 캡처 경험 중에 표시되는 해당 필드만 포함하는 최종 사용자용 기록 문서 PDF를 생성할 수 있습니다. 양식 제출 시 서버는 제출된 데이터를 기반으로 최종 사용자에게 숨겨진 필드를 확인하고 일관성을 위해 기록 문서에서 제외합니다.
-
-
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
