@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 19%
+source-wordcount: '1107'
+ht-degree: 34%
 
 ---
 
@@ -75,6 +75,18 @@ ht-degree: 19%
 * 지금 Experience Manager Assets [SAS 토큰 지원](/help/assets/add-assets.md#asset-bulk-ingestor) 대량 가져오기 도구를 사용하여 자산을 수집하기 위해 Azure Blob 저장소 데이터 원본에 연결하는 동안 인증을 위한 액세스 키 외에,
 
 ## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+
+### 에서 사용할 수 있는 새로운 기능 [!DNL Forms] channel {#new-features-available-in-channel}
+
+* [적응형 양식 마법사](/help/forms/creating-adaptive-form.md): AEM Forms에서는 적응형 양식을 신속하게 작성할 수 있는 비즈니스 사용자 친화적 마법사를 제공합니다. 마법사에는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능이 있습니다. 이번 릴리스에서 마법사 기능이 다음과 같이 개선되었습니다.
+
+   * 필드 선택 또는 선택 해제: 마법사를 사용하여 JSON 및 양식 데이터 모델 스키마를 기준으로 적응형 양식을 만들 수 있습니다. 이제 적응형 양식에 포함되도록 스키마 내 필드의 하위 집합을 선택할 수 있습니다. 선택한 필드가 해당되는 적응형 양식 데이터 캡처 구성 요소로 변환되면 간단하게 원하는 적응형 양식을 만들 수 있습니다.
+
+   * 정적 템플릿 사용: 레거시 정적 템플릿에 투자한 기존 고객들은 적응형 양식을 작성할 수 있는 마법사의 정적 템플릿을 사용하여 클라우드 채택 여정을 계속 진행할 수 있습니다. 이로써 고객이 이전 정적 템플릿을 최신 편집 가능한 템플릿으로 마이그레이션하는 데 시간이 더 걸릴 수 있습니다.
+
+* [서버측 처리 도중 기록 문서(DoR)에서 숨겨진 필드 제거](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): 데이터 캡처 경험 중에 표시되는 해당 필드만 포함하는 최종 사용자용 기록 문서 PDF를 생성할 수 있습니다. 양식 제출 시 서버는 제출된 데이터를 기반으로 최종 사용자에게 숨겨진 필드를 확인하고 일관성을 위해 기록 문서에서 제외합니다.
+
+
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 

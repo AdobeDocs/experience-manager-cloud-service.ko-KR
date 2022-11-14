@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: AEM Forms은 소프트웨어 배포에서 가져오고 양식 스타일을 지정하는 데 사용할 수 있는 적응형 양식 테마를 제공합니다.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 3%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 3%
 
 # Forms as a Cloud Service에 대한 참조 자산 {#reference-themes}
 
-를 설치하면 참조 테마, 템플릿 및 양식 데이터 모델을 얻을 수 있습니다 [참조 자산 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 적응형 Forms 개발을 빠르게 시작하고 가속화하는 데 도움이 됩니다. 다음을 사용할 수 있습니다 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 이 패키지를 AEM Forms as a Cloud Service 환경에 배포하려면 다음을 수행하십시오.
-
+를 설치하면 참조 테마, 템플릿 및 양식 데이터 모델을 얻을 수 있습니다 [참조 자산 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 적응형 Forms 개발을 빠르게 시작하고 가속화하는 데 도움이 됩니다. 다음을 사용할 수 있습니다 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 이 패키지를 Forms as a Cloud Service 환경에 배포하려면 다음을 수행하십시오.
 패키지에 포함된 참조 자산은 다음과 같습니다.
 
 ## 테마 {#themes}
