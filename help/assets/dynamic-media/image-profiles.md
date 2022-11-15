@@ -4,10 +4,10 @@ description: 언샵 마스크, 스마트 자르기 또는 스마트 견본 또�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
-ht-degree: 8%
+source-wordcount: '3344'
+ht-degree: 9%
 
 ---
 
@@ -84,14 +84,13 @@ Adobe은 생성된 농작물과 견본이 브랜드와 값에 적절하고 적�
 
 지원되는 최대 입력 파일 크기 해상도는 16K입니다.
 
-스마트 자르기에서는 CMYK 이미지 형식이 지원되지 않습니다.
-
 >[!NOTE]
 16K 해상도는 가로 방향으로 약 16,000픽셀의 디스플레이 해상도입니다. 가장 일반적으로 논의되는 16K 해상도는 153608640이며, 이 해상도는 각 차원에서의 8K UHD의 픽셀 수가 총 4배 많은 픽셀들에 대해 두 배가 됩니다. 이 해상도는 132.7메가픽셀이며, 4K 해상도보다 16배, 1080p 해상도보다 64배 많은 화소입니다.
 
 | 이미지 형식 | 대소문자를 구분하지 않는 파일 확장명 | MIME 유형 | 지원되는 입력 색상 공간 | 지원되는 최대 입력 파일 크기 | 지원되는 이미지 형식입니까? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRGB | 4GB | 예 |
+| CMYK |  |  |  |  | 아니요 |
 | EPS |  |  |  |  | 아니요 |
 | GIF | `.gif` | image/gif | sRGB | 15GB | 예; 애니메이션된 GIF의 첫 번째 프레임이 표현물에 사용됩니다. 첫 번째 프레임을 구성하거나 변경할 수 없습니다. |
 | JPEG | `.jpg` 및 `.jpeg` | image/jpeg | sRGB | 15GB | 예 |
