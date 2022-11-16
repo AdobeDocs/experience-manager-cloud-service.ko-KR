@@ -4,10 +4,10 @@ description: 언샵 마스크, 스마트 자르기 또는 스마트 견본 또�
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
+source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
 workflow-type: tm+mt
-source-wordcount: '3344'
-ht-degree: 9%
+source-wordcount: '3390'
+ht-degree: 8%
 
 ---
 
@@ -56,9 +56,9 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 
 이미지에서 스마트 자르기를 구현할 때 Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
 
-| 제한 유형 | 우수 사례 | 제한 적용 | 2022년 12월 31일에 제한하는 것으로 변경 |
-| --- | --- | --- | --- |
-| 이미지당 스마트 자르기 수 | 5 | 100 | 20 |
+| 제한 유형 | 우수 사례 | 제한 적용 |
+| --- | --- | --- |
+| 이미지당 스마트 자르기 수 | 5 | 100 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md).
 
@@ -71,7 +71,8 @@ in **[!UICONTROL 언샵 마스크]**&#x200B;에는 다음과 같은 필터링 �
 선택할 이미지 자르기 옵션이 두 개 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하거나 대상 해상도의 자르기 컨텐츠를 보존하도록 선택할 수도 있습니다.
 
 >[!IMPORTANT]
-Adobe은 생성된 농작물과 견본이 브랜드와 값에 적절하고 적절한지 확인하기 위해 모든 농작물과 견본을 검토할 것을 권장합니다.
+・ Adobe은 생성된 농작물과 견본이 브랜드와 값에 적절하고 적절한지 확인하기 위해 모든 농작물과 견본을 검토할 것을 권장합니다.
+・ 스마트 자르기에서 CMYK 이미지 형식이 지원되지 않습니다.
 
 | 옵션 | 사용 시기 | 설명 |
 | --- | --- | --- |
@@ -199,7 +200,8 @@ Folders that have a profile already assigned to it are indicated by the display 
 ## 단일 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Adobe은 생성된 스마트 자르기 및 스마트 견본을 검토하여 해당 브랜드 및 값과 관련이 있는지 확인하는 것을 권장합니다.
+・ Adobe은 생성된 스마트 자르기 및 스마트 견본을 검토하여 해당 브랜드 및 값과 관련이 있는지 확인할 것을 권장합니다.
+・ 스마트 자르기에서 CMYK 이미지 형식이 지원되지 않습니다.
 
 이미지의 스마트 자르기 창을 수동으로 다시 정렬하거나 크기를 조정하여 초점을 더 세분화할 수 있습니다.
 
@@ -231,6 +233,10 @@ Adobe은 생성된 스마트 자르기 및 스마트 견본을 검토하여 해�
 1. 페이지의 오른쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장]**&#x200B;를 선택하고 을 선택합니다. **[!UICONTROL 닫기]** 를 입력하여 자산의 폴더로 돌아갑니다.
 
 ## 여러 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ Adobe은 생성된 스마트 자르기 및 스마트 견본을 검토하여 해당 브랜드 및 값과 관련이 있는지 확인할 것을 권장합니다.
+・ 스마트 자르기에서 CMYK 이미지 형식이 지원되지 않습니다.
 
 스마트 자르기가 포함된 이미지 프로필을 폴더에 적용하면 해당 폴더의 모든 이미지에 자르기가 적용됩니다. 원하는 경우 다음을 수행할 수 있습니다 *수동* 여러 이미지에서 스마트 자르기 창을 재정렬하거나 크기를 조정하여 초점을 더 세분화합니다.
 
