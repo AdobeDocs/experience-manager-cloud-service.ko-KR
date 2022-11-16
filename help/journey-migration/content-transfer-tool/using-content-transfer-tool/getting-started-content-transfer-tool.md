@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구 시작하기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1327'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,9 @@ ht-degree: 9%
 
 * Azure Blob 저장소 서비스: `casstorageprod.blob.core.windows.net`
 * 사용자 매핑 IO 끝점: `usermanagement.adobe.io`
+
+>[!NOTE]
+>다음 오류로 인해 추출이 실패하는 경우: &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX 경로 작성 실패: sun.security.provider.certpath.SunCertPathBuilderException: 요청된 타겟에 대한 유효한 인증 경로를 찾을 수 없습니다.&quot;를 찾으면 관련 CA 인증서를 가져와서 이를 확인할 수 있습니다.
 
 ### SSL 로깅 활성화 {#enable-ssl-logging}
 
