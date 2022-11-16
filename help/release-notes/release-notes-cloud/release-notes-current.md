@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
+source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 34%
+source-wordcount: '1092'
+ht-degree: 35%
 
 ---
 
@@ -25,14 +25,13 @@ ht-degree: 34%
 
 >[!CAUTION]
 >
->**블랙 프라이데이 및 크리스마스 유지 관리 제외 기간**
+>**계획된 유지 관리 제외 기간**
 >
 > 다음 기간 동안 자정 (00:00) CET에서 시작하여 끝나는 자동 AEMaaCS 유지 관리가 실행되지 않습니다.
 >
 >* 11월 21일 월요일~12월 5일 월요일
 >* 12월 19일 월요일~1월 3일 화요일
->
-> 이 기간들은 블랙 프라이데이, 사이버 먼데이, 크리스마스 그리고 설날을 다룹니다.
+
 
 ## 릴리스 일자 {#release-date}
 
