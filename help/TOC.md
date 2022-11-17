@@ -8,9 +8,9 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 6d5ca58e8545da89dc424304586bc8a1afc07540
 workflow-type: tm+mt
-source-wordcount: '3766'
+source-wordcount: '3786'
 ht-degree: 98%
 
 ---
@@ -645,6 +645,7 @@ ht-degree: 98%
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
+   + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
       + [구성](/help/headless/setup/create-configuration.md)
@@ -692,6 +693,7 @@ ht-degree: 98%
          + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
          + [Headless 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
          + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
+         + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + Headless 콘텐츠 설계 여정 {#architect}
          + [AEM Headless 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
          + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
