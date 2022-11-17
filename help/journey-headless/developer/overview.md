@@ -3,9 +3,9 @@ title: AEM Headless CMS Developer 여정
 description: Adobe Experience Manager (AEM)을 Headless CMS로 사용하여 헤드리스 개발에 대해 알아봅니다. 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 헤드리스 컨텐츠 전달을 수행하는 방법을 알아봅니다.
 landing-page-description: 헤드리스 컨텐츠 전달 및 구현에 대한 이해를 얻습니다. 비즈니스 내에서 전략을 개발하는 방법에 대해 자세히 알아보십시오.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 06aec2fa43db2393416dd5efab886d9c301ffdb2
+source-git-commit: 64862456bfbffe1799a3f0b6ea3353f45e60c52f
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 16%
 
 ---
@@ -61,6 +61,8 @@ AEM에서 헤드리스에 대한 기본 지식을 제공하는 이 여정의 많
 | 7 | [AEM Headless에서 앱과 컨텐츠를 모두 통합하는 방법](put-it-all-together.md) | AEM Headless SDK를 사용하여 AEM 프로젝트를 라이브로 전환하는 방법을 알아봅니다. |
 | 8 | [Headless 애플리케이션 실행 방법](go-live.md) | 애플리케이션을 라이브로 배포하고 Git에서 로컬 코드를 가져와 CI/CD용 Cloud Manager Git 파이프라인으로 이동하는 방법을 알아봅니다. |
 | 9 | [선택 사항 - AEM을 사용하여 단일 페이지 애플리케이션(SPA)을 만드는 방법](create-spa.md) | 헤드리스 및 헤드리스 게재를 결합하는 방법을 살펴보고 AEM SPA 편집기 프레임워크를 사용하여 편집 가능한 SPA을 만드는 방법을 알아봅니다. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 다음 단계 {#what-is-next}
 
