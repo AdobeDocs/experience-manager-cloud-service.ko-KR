@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4e820caa043eeba22d14894d6943c957ea0bf80a
+source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 81%
+source-wordcount: '1023'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 81%
     <td>고객</td>
     <td>
     <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에서 속성을 생성하여 <code>/libs</code> 아래의 기본 제공 유지 관리 창 구성 노드를 오버라이드합니다.</p>
-    <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오. 적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_TaskPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. OSGI 속성을 구성합니다.</p>
+    <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. 이름을 지정합니다 <code>granite_TaskPurgeTask</code>, 속성 사용 <code>sling:resourceType</code> 설정 <code>granite/operations/components/maintenance/task</code> 및 속성 <code>granite.maintenance.name</code> 설정 <code>TaskPurge</code>. OSGI 속성을 구성합니다. <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> 를 입력합니다.</p>
   </td>
   </tr>
     <tr>
