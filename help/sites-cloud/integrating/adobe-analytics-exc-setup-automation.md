@@ -1,23 +1,23 @@
 ---
 title: Adobe Analytics와 Experience Cloud 설정 자동화 통합
-description: Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 통해 Experience Platform Launch 및 Adobe Analytics와 Experience Manager Sites를 통합하고 측정하는 간단하고 자동화된 방법을 제공합니다. 내 사이트에 자동화된 설정을 사용하는 방법에 대해 알아보십시오.
+description: Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 통해 Experience Manager Sites을 Experience Platform 태그 및 Adobe Analytics과 통합 및 계측하는 간단하고 자동화된 방법을 제공합니다. 내 사이트에 자동화된 설정을 사용하는 방법에 대해 알아보십시오.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 8b8811decee087291b74fa0e3839991f6a7f3850
+source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
 # Adobe Analytics와 Experience Cloud 설정 자동화 통합 {#integrate-adobe-analytics-automation-setup}
 
-Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 통해 Experience Platform Launch 및 Adobe Analytics와 Experience Manager Sites를 통합하고 측정하는 간단하고 자동화된 방법을 제공합니다.
+Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 통해 Experience Manager Sites을 Experience Platform 태그 및 Adobe Analytics과 통합 및 계측하는 간단하고 자동화된 방법을 제공합니다.
 
 이제 그 어느 때보다 간단하게 Adobe Analytics와 AEM Sites를 통합할 수 있습니다. Experience Cloud 설정 자동화를 통해 몇 번의 클릭으로 사이트를 설정하고, 통합하고, 측정하여 성능 분석을 캡처함으로써 고객이 얼마나 효율적으로 참여하고 전환하는지 파악할 수 있습니다.
 
-이 비디오에서는 Experience Cloud 설정 자동화를 사용하여 AEM 사이트를 Experience Platform Launch 및 Analytics와 통합하는 방법에 대해 살펴봅니다.
+이 비디오에서는 Experience Cloud 설정 자동화를 사용하여 AEM 사이트를 Experience Platform 태그 및 Analytics와 통합하는 방법을 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -57,7 +57,7 @@ Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 �
    자동화 설정은 비동기적으로 발생합니다. **통합 상태 확인**&#x200B;에는 현재 통합 상태가 표시됩니다.
 
    * **진행 중** - 작업이 실행 중임을 나타냅니다.
-   * **통합 완료** - 작업이 Analytics 및 Launch 통합, Launch 확장 및 Launch 규칙 설정 및 Adobe Analytics에서의 새 보고서 세트 생성을 완료했음을 나타냅니다.
+   * **통합 완료** - 작업이 Analytics와 태그 통합, 태그 확장 및 태그 규칙 설정, Adobe Analytics에서 새 보고서 세트 만들기를 완료했음을 나타냅니다.
    * **실패** - 자동화된 작업이 정상적으로 완료되지 않았음을 나타냅니다. 로그 링크를 클릭하여 이 작업에 대한 로그 파일을 확인하십시오.
 
 ## AEM 설정 유효성 검사
@@ -66,7 +66,7 @@ Experience Cloud 설정 자동화는 간단한 UI 마법사 인터페이스를 �
 
 1. **사이트 편집기**&#x200B;를 사용하여 사이트의 페이지를 엽니다.
 1. **게시됨으로 보기** 옵션을 사용하여 게시된 페이지 버전을 로드합니다.
-1. 브라우저의 개발자 도구를 사용하여 네트워크 트래픽을 검사하고 **Launch** 및 `AppMeasurement.js` 파일이 로드되는지 검사합니다.
+1. 브라우저의 개발자 도구를 사용하여 네트워크 트래픽과 이를 검사합니다 **태그** 및 `AppMeasurement.js` 이제 파일을 로드하는 중입니다.
 1. 브라우저의 콘솔을 검사하여 Adobe 클라이언트 데이터 레이어에 의해 페이지 및 구성 요소 수준 이벤트가 실행되고 수집되는지 확인합니다.
 
 ## Analytics 설정 유효성 검사
