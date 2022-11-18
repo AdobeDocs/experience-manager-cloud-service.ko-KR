@@ -3,9 +3,9 @@ title: 클라우드의 디스패처
 description: 클라우드의 디스패처
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 10da82c572682156534f7a897715d703ba3bde3d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1010'
 ht-degree: 7%
 
 ---
@@ -100,6 +100,7 @@ AEM Archetype 28 이상에서 제공되는 레거시 구성 모델에서 보다 
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 | `mod_macro` | [https://httpd.apache.org/docs/2.4/mod/mod_macro.html](https://httpd.apache.org/docs/2.4/mod/mod_macro.html) |
+| `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
 고객은 임의의 모듈을 추가할 수 없지만, 추가 모듈은 나중에 포함할 수 있습니다. 고객은 SDK에서 유효성 검사기의 명령을 실행하여 주어진 Dispatcher 버전에 사용할 수 있는 허용 목록에 추가하다 지시어 목록을 찾을 수 있습니다.
