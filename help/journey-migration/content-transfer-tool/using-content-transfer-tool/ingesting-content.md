@@ -2,9 +2,9 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '956'
 ht-degree: 13%
 
 ---
@@ -26,6 +26,11 @@ ht-degree: 13%
 1. Cloud Acceleration Manager로 이동합니다. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 을(를) 클릭합니다. **새 수집**
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. 수집 확인 목록을 검토하고 모든 단계가 완료되었는지 확인합니다. 이는 성공적인 수집을 위해 필요한 단계입니다. 을(를) 진행할 수 있습니다. **다음** 검사 목록이 완료된 경우에만 단계입니다.
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. 새 수집을 만드는 데 필요한 정보를 제공합니다.
 
