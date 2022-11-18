@@ -4,10 +4,10 @@ description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
-source-wordcount: '2904'
-ht-degree: 100%
+source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
+workflow-type: tm+mt
+source-wordcount: '2898'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
 
 1. [인스턴스에 대해 콘텐츠 조각 모델 기능 활성화](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. 콘텐츠 조각 모델 [생성](#creating-a-content-fragment-model) 및 [구성](#defining-your-content-fragment-model)
-1. 콘텐츠 조각 생성 시 사용할 [콘텐츠 조각 모델](#enabling-disabling-a-content-fragment-model) 활성화
+1. [컨텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model) 컨텐츠 조각을 만들 때 사용할 수 있습니다.
 1. **정책**&#x200B;을 구성하여 [필요한 에셋 폴더에서 콘텐츠 조각 모델 허용](#allowing-content-fragment-models-assets-folder)
 
 ## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
@@ -78,7 +78,6 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
          >데이터 유형의 **속성 이름** 속성을 수동으로 업데이트할 때에는 이름에 A-Z, a-z, 0-9 및 밑줄(_)만 포함해야 합니다.
          >
          >이전 버전의 AEM에서 만든 모델에 잘못된 문자가 포함되어 있는 경우 해당 문자를 제거하거나 업데이트하십시오.
-
       예:
 
       ![필드 속성](assets/cfm-models-05.png)
@@ -230,10 +229,10 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
 >AEM은 다음에 대한 재발 방지 기능을 제공합니다.
 >
 >* 콘텐츠 참조
->  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
+   >  따라서 사용자가 현재 조각에 대한 참조를 추가할 수 없습니다. 이로 인해 빈 조각 참조 선택기 대화 상자가 나타날 수 있습니다.
 >
 >* GraphQL의 조각 참조
->  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
+   >  서로 참조하는 여러 콘텐츠 조각을 반환하는 복합 쿼리를 만들면 첫 번째 발생 시 null을 반환합니다.
 
 
 ### 콘텐츠 참조 {#content-reference}
