@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 13%
+source-wordcount: '1029'
+ht-degree: 12%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 13%
    >[!NOTE]
    >
    >소스가 작성자인 경우 타겟의 작성자 계층으로 가져오는 것이 좋습니다. 마찬가지로 소스가 게시인 경우 Target도 게시여야 합니다.
+
+   >[!NOTE]
+   >
+   >대상 계층이 `Author`를 입력하면 수집 시간 중에 작성자 인스턴스가 종료되며 사용자(예: 작성자 또는 유지 관리를 수행하는 모든 사용자)는 사용할 수 없습니다. 시스템을 보호하고, 변경 사항이 손실되거나 수집 충돌이 발생할 수 있는 것을 방지하기 위한 것입니다. 팀이 이 사실을 알고 있는지 확인하십시오. 또한 환경은 작성 중에 최대 절전 모드로 전환됩니다.
 
    >[!NOTE]
    >
