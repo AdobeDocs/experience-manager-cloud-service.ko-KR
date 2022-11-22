@@ -2,9 +2,9 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '753'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 1. 다음으로 이동 [Adobe Developer 콘솔](https://console.adobe.io) Adobe ID 사용.
 1. 새 프로젝트를 만들거나 기존 프로젝트를 엽니다.
 1. API 추가 - 클릭 **프로젝트에 추가** 을(를) 선택합니다. **API**
-1. 사용자 관리 API를 선택합니다.  이 옵션을 사용하려면 권한을 가져와야 할 수 있습니다.
+1. 사용자 관리 API를 선택합니다.  이 옵션을 사용하려면 시스템 관리자 권한이 있어야 합니다.
 1. JWT 자격 증명을 만듭니다.
 1. 키 쌍을 생성하거나 공개 키를 업로드합니다(rsa는 좋지 않음).  버튼이 있는데 **공용/개인 키 쌍 생성**&#x200B;그러면 어떤 것이 여러분을 위해 이 작업을 수행합니다.  공개 키와 개인 키를 모두 저장해야 합니다.
 1. 사용자 관리 API로 이동합니다.
