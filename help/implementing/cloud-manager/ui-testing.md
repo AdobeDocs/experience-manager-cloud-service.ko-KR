@@ -2,10 +2,10 @@
 title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 31e84b7383cd9774b0eaf8ee0f2fe39bcd77fa15
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 100%
+source-wordcount: '1407'
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ Cloud Manager가 UI 테스트를 빌드하고 실행하려면 저장소에 파�
 <includes>
     <include>Dockerfile</include>
     <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
 </includes>
 [...]
 ```
@@ -194,6 +194,24 @@ Selenium의 상태 끝점이 긍정 응답을 보내면 테스트를 시작할 �
 도커 이미지는 JUnit XML 형식으로 테스트 보고서를 생성하고 환경 변수 `REPORTS_PATH`에 지정된 경로에 저장해야 합니다. JUnit XML 형식은 테스트 결과를 보고하는 데 널리 사용되는 형식입니다. 도커 이미지가 Java 및 Maven을 사용하는 경우 [Maven Surefire 플러그인](https://maven.apache.org/surefire/maven-surefire-plugin/) 및 [Maven Failsafe 플러그인](https://maven.apache.org/surefire/maven-failsafe-plugin/)과 같은 표준 테스트 모듈은 즉시 이러한 보고서를 생성할 수 있습니다
 
 도커 이미지가 다른 프로그래밍 언어 또는 테스트 실행자로 구현된 경우 선택한 도구에 대한 설명서에서 JUnit XML 보고서를 생성하는 방법을 확인하십시오.
+
+### 스크린샷 및 비디오 캡처 {#capture-screenshots}
+
+Docker 이미지는 추가 테스트 출력(예: 스크린샷, 비디오)을 생성하고 환경 변수에 지정된 경로에 저장할 수 있습니다 `REPORTS_PATH`. 아래에 있는 모든 파일 `REPORTS_PATH` 테스트 결과 아카이브에 포함됩니다.
+
+UI 테스트 실행 중에 테스트 결과 아카이브를 만든 경우 테스트 로그 파일의 끝에 테스트 결과 아카이브 위치에 대한 참조가 포함됩니다.
+
+```
+[...]
+
+===============================================================
+The detailed test results can be downloaded from the URL below.
+Note: the link will expire after 60 days
+
+    https://results-host/test-results.zip
+
+===============================================================
+```
 
 ### 파일 업로드 {#upload-files}
 
