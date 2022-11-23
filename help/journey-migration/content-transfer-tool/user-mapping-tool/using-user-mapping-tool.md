@@ -2,9 +2,9 @@
 title: 사용자 매핑 도구 사용
 description: 사용자 매핑 도구 사용
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '816'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 4%
 사용자 매핑 도구는 API를 사용하여 이메일로 IMS(Adobe Identity Management System) 사용자를 조회하고 IMS ID를 반환할 수 있습니다. 이 API를 사용하려면 사용자가 조직의 클라이언트 ID, 클라이언트 암호 및 액세스 또는 베어러 토큰을 만들어야 합니다.
 
 ## 사용자 매핑 도구 설정 {#setting-up-user-mapping}
+
+**전제 조건:** 사용자 매핑을 사용하려면 각 사용자를 해당 IMS ID에 매핑해야 합니다. AEM 및 IMS의 프로필에는 이메일 주소가 있습니다.  사용자가 이메일 주소를 로그인에 사용자 ID로 사용하더라도 이메일 주소가 프로필에도 있고 IMS에도 있지 않으면 해당 사용자에 대한 매핑이 작동하지 않습니다.
 
 아래 절차에 따라 이 설정을 수행하십시오.
 
