@@ -2,16 +2,20 @@
 title: 데모 사이트에 대해 AEM Screens 활성화
 description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하기 위한 단계에 대해 알아봅니다.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
+source-git-commit: 71e318f93b6edab5d2ae685d8603c3d0040f72a3
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 100%
+source-wordcount: '2699'
+ht-degree: 98%
 
 ---
 
 # 데모 사이트에 대해 AEM Screens 활성화 {#enable-screens}
 
 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하기 위한 단계에 대해 알아봅니다.
+
+>[!NOTE]
+>
+>AEM Screens 데모를 사용하려면 Cloud Manager 프로그램에 Screens 추가 기능을 추가해야 합니다. 학습 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html) 추가하는 방법
 
 ## 지금까지의 이야기 {#story-so-far}
 
