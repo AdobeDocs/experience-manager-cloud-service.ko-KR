@@ -2,10 +2,10 @@
 title: 맞춤형 오류 페이지
 description: AEM에는 사용자 지정할 수 있는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 포함되어 있습니다.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: db997127c6cbba434b86990852d1ba590d5f12a5
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
@@ -67,6 +67,12 @@ HTTP [500 내부 서버 오류](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 그렇지 않으면 응답 코드가 500으로 설정되지만 `500.jsp` 스크립트가 실행되지 않습니다.
 
 500 오류를 처리하려면 오류 처리기 스크립트의 파일 이름이 예외 클래스(또는 슈퍼클래스)와 같아야 합니다. 이러한 모든 예외를 처리하려면 스크립트를 만들 수 있습니다 `/apps/sling/servlet/errorhandler/Throwable.jsp` 또는 `/apps/sling/servlet/errorhandler/Exception.jsp`.
+
+>[!NOTE]
+>
+>AEM as Cloud Service에서 CDN은 백엔드에서 5XX 오류가 수신될 때마다 일반 오류 페이지 역할을 합니다. 백엔드의 실제 응답이 전달되도록 하려면 응답에 다음 헤더를 추가해야 합니다.
+>`x-aem-error-pass: true`
+>이 작업은 AEM 또는 Apache/Dispatcher 레이어에서 오는 응답에만 작동합니다. 중간 인프라 레이어에서 발생하는 다른 예기치 않은 오류는 여전히 일반 오류 페이지를 표시합니다.
 
 >[!CAUTION]
 >
