@@ -2,9 +2,9 @@
 title: 사용자 매핑 도구에 대한 중요한 고려 사항
 description: 사용자 매핑 도구에 대한 중요한 고려 사항
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 18047b129a9a347cbf6edcdc07dc6570fca26d3b
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,15 @@ ht-degree: 0%
 
 다음과 같은 특정 사례가 기록됩니다.
 
-1. 사용자에게 `profile/email` 그들의 필드 *jcr* 해당 사용자 또는 그룹이 마이그레이션되지만 매핑되지 않습니다.
+1. 사용자에게 `profile/email` 그들의 필드 *jcr* 해당 사용자 또는 그룹이 마이그레이션되지만 매핑되지 않습니다.  이는 이메일 주소가 로그인하기 위한 사용자 이름으로 사용되는 경우에도 마찬가지입니다.
 
 1. 제공된 이메일이 사용된 조직 ID에 대한 IMS(Adobe Identity Management 시스템) 시스템에 없는 경우(또는 다른 이유로 IMS ID를 검색할 수 없는 경우) 해당 사용자 또는 그룹은 마이그레이션되지만 매핑되지 않습니다.
 
 1. 현재 사용자가 비활성화되어 있으면 비활성화되어 있지 않은 것처럼 처리됩니다. 매핑되고 일반으로 마이그레이션되며, 클라우드 인스턴스에서 비활성화됩니다.
 
 1. 사용자가 소스 AEM 인스턴스의 사용자 이름(rep:principalName)과 동일한 사용자 이름을 가진 target AEM Cloud Service 인스턴스에 있으면 해당 사용자 또는 그룹은 마이그레이션되지 않습니다.
+
+1. 사용자 매핑을 통해 먼저 매핑하지 않고 사용자를 마이그레이션한 경우 대상 클라우드 시스템에서 IMS ID를 사용하여 로그인할 수 없습니다.  기존 AEM 방법을 사용하여 로그인할 수 있지만 일반적으로 이러한 방법이 필요하거나 예상된 것은 아닙니다.
 
 ## 추가 고려 사항 {#additional-considerations}
 
@@ -36,6 +38,6 @@ ht-degree: 0%
 
 * 소스 AEM 인스턴스의 두 사용자에게 동일한 이메일 주소가 있고 사용자 매핑이 활성화되어 있으면 오류 메시지가 로그에 기록되고 소스 AEM 사용자 중 하나는 전송되지 않습니다. 이는 지정된 이메일 주소를 가진 한 명의 사용자만 대상 시스템에서 허용되기 때문입니다.
 
-### 다음은 무엇입니까? {#whats-next}
+### 다음 단계 {#whats-next}
 
 중요한 고려 사항과 특별한 사례를 알게 되면 이제 도구를 사용할 준비가 되었습니다. 자세한 내용은 [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) 자세한 내용
