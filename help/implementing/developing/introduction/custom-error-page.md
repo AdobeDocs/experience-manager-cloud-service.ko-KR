@@ -2,7 +2,7 @@
 title: 맞춤형 오류 페이지
 description: AEM에는 사용자 지정할 수 있는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 포함되어 있습니다.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 570e7d71fc8b3db33e93394d0aa53cb159636fb7
+source-git-commit: ab68c03b29f3d2179b33c61a6d853d80ccb17615
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -71,7 +71,6 @@ HTTP [500 내부 서버 오류](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >[!NOTE]
 >
 >AEM as Cloud Service에서 CDN은 백엔드에서 5XX 오류가 수신되면 일반 오류 페이지 역할을 합니다. 백엔드의 실제 응답이 전달되도록 하려면 응답에 다음 헤더를 추가해야 합니다. `x-aem-error-pass: true`.
->
 >AEM 또는 Apache/Dispatcher 레이어에서 오는 응답에만 작동합니다. 중간 인프라 레이어에서 발생하는 다른 예기치 않은 오류는 여전히 일반 오류 페이지를 표시합니다.
 
 >[!CAUTION]
