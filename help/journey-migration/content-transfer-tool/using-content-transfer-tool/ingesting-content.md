@@ -2,9 +2,9 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
+source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1072'
 ht-degree: 12%
 
 ---
@@ -22,6 +22,9 @@ ht-degree: 12%
 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
 >[!NOTE]
 >선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 통합에 가장 효과적입니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 자세한 내용
+
+>[!NOTE]
+>이 통합에 대한 지원 티켓을 기록해야 합니까? 자세한 내용은 [컨텐츠 전송 도구를 사용하기 전에 고려해야 할 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 을 참조하십시오.
 
 1. Cloud Acceleration Manager로 이동합니다. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 을(를) 클릭합니다. **새 수집**
 
@@ -96,7 +99,8 @@ ht-degree: 12%
 ## 추가 수집 {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
->id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
+>id="aemcloud_ctt_ingestion_topup"
+>title="추가 수집"
 >abstract="이전 컨텐츠 전송 활동 이후 수정된 컨텐츠를 이동하려면 상단 기능을 사용하십시오. 수집이 완료되면 로그에서 오류/경고를 확인합니다. 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결되어야 합니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="로그 보기"
 
