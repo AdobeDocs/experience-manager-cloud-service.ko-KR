@@ -3,9 +3,9 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 58aee2ad24b38fd8abc197961adda524832d2614
+source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3795'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 회사 루트 폴더 경로 | 회사의 루트 폴더 경로입니다. |
    | 자산 게시 | 다음 세 가지 옵션 중에서 선택할 수 있습니다.<br>**[!UICONTROL 즉시&#x200B;]**- 자산이 업로드되면 시스템이 자산을 수집하여 URL/포함 기능을 즉시 제공합니다. 자산을 게시하는 데 필요한 사용자 개입이 없습니다.<br>**[!UICONTROL 활성화 시]** - URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 합니다.<br>**[!UICONTROL 선택적 게시&#x200B;]**- 자산이 보안 미리 보기용으로만 자동 게시됩니다. 공용 도메인에서 전달을 위해 DMS7에 게시하지 않고 as a Cloud Service에 명시적으로 게시할 수도 있습니다. 나중에 이 옵션은 자산을 as a Cloud Service으로 게시하고 자산을 Dynamic Media에 게시하며 상호 배타적으로 게시하려고 합니다. 즉, 자산을 DMS7에 게시하여 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있습니다. 또는 미리 보기를 위해 Experience Manager as a Cloud Service에만 자산을 게시할 수 있습니다. 동일한 자산이 공용 도메인에 전달되도록 DMS7에 게시되지 않습니다. |
    | 보안 미리 보기 서버 | 보안 표현물 미리 보기 서버의 URL 경로를 지정할 수 있도록 해줍니다. 즉, 표현물이 생성되면 Experience Manager as a Cloud Service이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리는 Experience Manager as a Cloud Service 인스턴스로 다시 전송되지 않음).<br>회사의 서버나 특수 서버를 사용하기 위해 특별한 계획이 없는 한 Adobe은 이 설정을 지정된 대로 유지하는 것을 권장합니다. |
-   | 모든 컨텐츠 동기화 | 기본적으로 선택됩니다. Dynamic Media에 대한 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 선택 사항을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.<br>**[!UICONTROL Dynamic Media 동기화 모드]**<br>**[!UICONTROL 기본적으로 활성화&#x200B;]**- 제외용으로 특별히 폴더를 표시하지 않으면 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]** - Dynamic Media에 동기화할 선택한 폴더를 명시적으로 표시할 때까지 해당 구성은 폴더에 적용되지 않습니다.<br>Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 를 선택합니다 **[!UICONTROL 속성]**. 설정 **[!UICONTROL 세부 사항]** 탭, **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택합니다. 완료되면 을 선택합니다 **[!UICONTROL 저장]**. *기억: 이 세 옵션을 선택한 경우에는 사용할 수 없습니다&#x200B;**모든 콘텐츠 동기화**더 일찍* 참조 - [Dynamic Media의 폴더 수준에서 선택적 게시 작업](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL 상속됨&#x200B;]**- 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속받습니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태입니다.<br>**[!UICONTROL 하위 폴더에 사용]** - Dynamic Media에 동기화할 이 하위 트리에 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 사용 안 함&#x200B;]**- 이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다. |
+   | 모든 컨텐츠 동기화 | 기본적으로 선택됩니다. Dynamic Media에 대한 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 선택 사항을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.<br>**[!UICONTROL Dynamic Media 동기화 모드]**<br>**[!UICONTROL 기본적으로 활성화&#x200B;]**- 제외용으로 특별히 폴더를 표시하지 않으면 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 기본적으로 비활성화됨]** - Dynamic Media에 동기화할 선택한 폴더를 명시적으로 표시할 때까지 해당 구성은 폴더에 적용되지 않습니다.<br>Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 를 선택합니다 **[!UICONTROL 속성]**. 설정 **[!UICONTROL 세부 사항]** 탭, **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택합니다. 완료되면 을 선택합니다 **[!UICONTROL 저장]**. _기억: 이 세 옵션을 선택한 경우에는 사용할 수 없습니다&#x200B;**모든 콘텐츠 동기화**더 일찍_ 참조 - [Dynamic Media의 폴더 수준에서 선택적 게시 작업](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL 상속됨&#x200B;]**- 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속받습니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태입니다.<br>**[!UICONTROL 하위 폴더에 사용]** - Dynamic Media에 동기화할 이 하위 트리에 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.<br>**[!UICONTROL 하위 폴더에 대해 사용 안 함&#x200B;]**- 이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다. |
 
    >[!NOTE]
    >
@@ -129,7 +129,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 이제 기본 구성을 완료했습니다. Dynamic Media을 사용할 준비가 되었습니다.
 
-구성을 추가로 사용자 지정하려면 아래의 작업을 선택적으로 완료할 수 있습니다 [Dynamic Media에서 고급 설정 구성](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+ACL(액세스 제어 목록) 권한 활성화와 같이 구성을 추가로 사용자 정의하려면 [Dynamic Media에서 고급 설정 구성](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### 새 Dynamic Media 구성 문제 해결 {#troubleshoot-dm-config}
 
@@ -185,8 +185,9 @@ Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 
 
 ## (선택 사항) Dynamic Media에서 고급 설정 구성{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Dynamic Media의 구성 및 설정을 추가로 사용자 지정하거나 성능을 최적화하기 위해 다음 중 하나 이상을 완료할 수 있습니다 *옵션* 작업:
+Dynamic Media의 구성 및 설정을 추가로 사용자 지정하거나 성능을 최적화하기 위해 다음 중 하나 이상을 완료할 수 있습니다 _옵션_ 작업:
 
+* [(선택 사항) Dynamic Media에서 ACL 권한을 활성화합니다](#optional-enable-acl)
 * [(선택 사항) Dynamic Media 설정 설정 및 구성](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(선택 사항) Dynamic Media의 성능 조정](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -195,6 +196,33 @@ Dynamic Media의 구성 및 설정을 추가로 사용자 지정하거나 성능
 * [(Optional) Filtering assets for replication](#optional-filtering-assets-for-replication)
 
 -->
+
+### (선택 사항) Dynamic Media에서 액세스 제어 목록 권한을 활성화합니다 {#optional-enable-acl}
+
+AEM에서 Dynamic Media을 실행하면 현재 전달됩니다 `/is/image` platformServerServlet에 대한 ACL(액세스 제어 목록) 권한을 확인하지 않고 보안 미리 보기 이미지 제공 요청을 수행합니다. 하지만, _활성화_ ACL 권한. 그렇게 하면 권한이 부여된 `/is/image` 요청. 사용자에게 자산에 대한 액세스 권한이 없는 경우 &quot;403 - 금지됨&quot; 오류가 표시됩니다.
+
+**Dynamic Media에서 ACL 권한을 활성화하려면**
+
+1. Experience Manager에서 로 이동합니다. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**.
+
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+
+1. 새 브라우저 탭이 **[!UICONTROL Adobe Experience Manager 웹 콘솔 구성]** 페이지.
+
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+
+1. 페이지에서 이름으로 스크롤합니다 _Adobe CQ Scene7 PlatformServer_.
+
+1. 이름 오른쪽에서 연필 아이콘(**[!UICONTROL 구성 값 편집]**).
+
+1. 설정 **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** 페이지에서 다음 두 가지 설정에 대한 확인란을 선택합니다.
+
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - 활성화되면 이 설정은 권한 결과를 2분(기본값) 동안 캐시하여 저장합니다.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - 이 옵션이 활성화되면 Dynamic Media Image Server를 통해 자산을 미리 보는 동안 사용자의 액세스를 확인합니다.
+
+   ![Dynamic Media - Scene7 모드에서 액세스 제어 목록 설정 활성화](/help/assets/dynamic-media/assets/acl.png)
+
+1. 페이지의 오른쪽 아래 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장]**.
 
 ### (선택 사항) Dynamic Media 설정 설정 및 구성 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
