@@ -2,10 +2,10 @@
 title: 콘텐츠 검색 및 색인화
 description: 콘텐츠 검색 및 색인화
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
+source-git-commit: 7e32c997a69feb8447609bf984ba731008489095
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 90%
+source-wordcount: '2498'
+ht-degree: 88%
 
 ---
 
@@ -18,22 +18,20 @@ AEM as a Cloud Service를 통해 Adobe는 AEM 인스턴스 중심 모델에서 C
 다음은 AEM 6.5 및 이전 버전과 비교한 주요 변경 사항 목록입니다.
 
 1. 사용자는 색인화을 디버그, 구성 또는 유지하기 위해 단일 AEM 인스턴스의 색인 관리자에 액세스할 권한이 더 이상 없습니다. 로컬 개발 및 온프레미스 배포에 대해서만 사용됩니다.
-
 1. 사용자는 단일 AEM 인스턴스의 색인을 변경하지 못하거나 일관성 확인 또는 색인 재지정에 대해 더 이상 걱정하지 않아도 됩니다.
-
 1. 일반적으로 프로덕션 진행 전 색인 변경을 초기화해 Cloud Manager CI/CD 파이프라인의 품질 게이트웨이를 피하지 않도록 하고 프로덕션의 비즈니스 KPI에 영향을 주지 않도록 합니다.
-
 1. 검색과 색인화의 주제에 대한 거시적으로 볼 수 있도록 런타임 시 프로덕션의 검색 성능 등 모든 관련 지수를 고객이 사용할 수 있습니다.
-
 1. 고객은 자신들의 필요에 따라 알람을 설정할 수 있습니다.
-
 1. SRE는 시스템 상태를 연중무휴 모니터링하며 필요할 때 가능한 빨리 조치를 취합니다.
-
 1. 색인 구성은 배포를 통해 변경됩니다. 색인 정의 변경은 다른 콘텐츠 변경과 같은 방식으로 구성됩니다.
-
 1. [파란색-녹색 배포 모델](#index-management-using-blue-green-deployments)을 도입해 AEM as a Cloud Service의 고레벨에는 두 세트의 색인이 존재합니다. 한 세트는 이전 버전(파란색), 다른 한 세트는 새 버전(녹색)입니다.
-
 1. 고객은 Cloud Manager 빌드 페이지에서 색인화 작업이 완료되었는지 여부를 확인할 수 있으며 새 버전이 트래픽을 가져올 수 있게 되면 알림을 받게 됩니다.
+
+제한 사항:
+
+* 현재 AEM as a Cloud Service의 색인 관리는 `lucene` 색인 유형만 지원됩니다.
+* 표준 분석기만 지원됩니다(제품으로 제공되는 분석기). 사용자 정의 분석기는 지원되지 않습니다.
+* 내부적으로 다른 색인을 구성하고 쿼리에 사용할 수 있습니다. 예를 들어 `damAssetLucene` 색인에 대해 작성된 Skyline의 쿼리는 이 색인의 Elasticsearch 버전에 대해 실행됩니다. 이 차이는 일반적으로 애플리케이션과 사용자에게는 표시되지 않지만 `explain` 기능과 같은 특정 도구에서는 다른 색인임을 보고합니다. Lucene 색인과 Elastic 색인의 차이에 대해서는 [Apache Jackrabbit Oak의 Elastic 설명서](https://jackrabbit.apache.org/oak/docs/query/elastic.html)를 참조하십시오. 고객은 Elasticsearch 색인을 직접 구성할 필요가 없으며 구성할 수 없습니다.
 
 ## 사용 방법 {#how-to-use}
 
@@ -146,6 +144,64 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 ```
 
 새 색인 정의가 추가되면 새 애플리케이션이 Cloud Manager를 통해 배포되어야 합니다. 배포되면 두 개의 작업이 시작되어 색인 정의를 MongoDB와 Azure Segment Store에 추가(필요한 경우 병합)해 각각 작성 및 게시할 수 있게 됩니다. 파란색-녹색 변환이 일어나기 전에 기본 저장소가 새 색인 정의로 다시 지정됩니다.
+
+### 메모
+
+파일 유효성 검사에서 다음 오류를 확인한 경우 <br>
+`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
+그러면 다음 단계 중 하나를 수행하여 문제를 해결할 수 있습니다. <br>
+1. 파일을 버전 1.0.4로 다운그레이드하고 다음을 최상위 pom에 추가합니다.
+
+```xml
+<allowIndexDefinitions>true</allowIndexDefinitions>
+```
+
+다음은 pom에서 위의 구성을 배치할 위치의 예입니다.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <properties>
+        ...
+        </properties>
+        ...
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <repositoryStructurePackages>
+        ...
+        </repositoryStructurePackages>
+        <dependencies>
+        ...
+        </dependencies>
+    </configuration>
+</plugin>
+```
+
+1. nodetype 유효성 검사를 비활성화합니다. filerabbit 플러그인 구성의 jackrabbit-nodetypes 섹션에서 다음 속성을 설정합니다.
+
+```xml
+<isDisabled>true</isDisabled>
+```
+
+다음은 pom에서 위의 구성을 배치할 위치의 예입니다.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    ...
+    <configuration>
+    ...
+        <validatorsSettings>
+        ...
+            <jackrabbit-nodetypes>
+                <isDisabled>true</isDisabled>
+            </jackrabbit-nodetypes>
+        </validatorsSettings>
+    </configuration>
+</plugin>
+```
 
 >[!TIP]
 >
@@ -276,7 +332,7 @@ Adobe에서 “damAssetLucene” 또는 “cqPageLucene” 같은 기본 제공 
                 </properties>
             </rep:root>
         </indexRules>
-    </acme.product-custom-3>
+</acme.product-custom-3>
 ```
 
 기본 제공 색인의 맞춤화가 더 이상 필요하지 않은 경우 기본 제공 색인 정의를 복사해야 합니다. 예를 들어 이미 `damAssetLucene-8-custom-3`을 배포했지만 더 이상 맞춤화가 필요하지 않고 기본 `damAssetLucene-8` 색인으로 다시 바꾸고 싶다면 `damAssetLucene-8`의 색인 정의가 포함된 색인 `damAssetLucene-8-custom-4`를 추가해야 합니다.
