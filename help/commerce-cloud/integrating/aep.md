@@ -10,13 +10,13 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
+exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
+source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
-
 
 # AEM-CIF 핵심 구성 요소 및 Adobe Experience Platform 통합 {#aem-cif-aep-integration}
 
@@ -471,10 +471,31 @@ PWA Studio 프로젝트를 사용하면 Adobe Commerce 또는 Magento Open Sourc
 
 현재 다음 이벤트가 지원됩니다.
 
-- addToCart
-- pageView
-- customUrl
-- referrerUrl
+__Experience XDM 이벤트:__
+
+1. 장바구니에 추가(AEM)
+1. 페이지 보기(AEM)
+1. 제품 보기(AEM)
+1. 검색 요청이 전송됨(AEM)
+1. 검색 응답 수신(AEM)
+
+When [페레그린 구성 요소](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) AEM Commerce 프로젝트에서 재사용됩니다.
+
+__Experience XDM 이벤트:__
+
+1. 장바구니에서 제거
+1. 장바구니 열기
+1. 장바구니 보기
+1. 즉시 구매
+1. 체크아웃 시작
+1. 전체 체크아웃
+
+__프로필 XDM 이벤트:__
+
+1. 로그인
+1. 계정 만들기
+1. 계정 편집
+
 
 ## 추가 리소스 {#additional-resources}
 
@@ -482,5 +503,5 @@ PWA Studio 프로젝트를 사용하면 Adobe Commerce 또는 Magento Open Sourc
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Experience Platform 커넥터 개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Experience Platform 커넥터 이벤트](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
 - [Adobe Experience Platform 개요](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-

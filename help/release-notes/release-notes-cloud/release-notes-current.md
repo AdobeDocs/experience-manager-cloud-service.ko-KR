@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
+source-git-commit: 218dd65d1969f92317ae1d9877e2e37bb201ea6a
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 35%
@@ -29,7 +29,7 @@ ht-degree: 35%
 >
 > 다음 기간 동안 자정 (00:00) CET에서 시작하여 끝나는 자동 AEMaaCS 유지 관리가 실행되지 않습니다.
 >
->* 11월 21일 월요일~12월 5일 월요일
+>* 11월 21일 월요일~12월 12일 월요일
 >* 12월 19일 월요일~1월 3일 화요일
 
 
