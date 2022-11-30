@@ -3,10 +3,10 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service에서 캐싱
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
+source-git-commit: 6c2baf7fde73abc831db906c7a6471751be3572d
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 1%
+source-wordcount: '2753'
+ht-degree: 2%
 
 ---
 
@@ -72,6 +72,8 @@ Define DISABLE_DEFAULT_CACHING
      </LocationMatch>
    ```
 
+* 비공개로 설정된 HTML 컨텐츠는 CDN에서 캐시되지 않지만, [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR) 는 구성된 것으로, 인증된 사용자만 컨텐츠를 제공할 수 있도록 효율적으로 구성됩니다.
+
    >[!NOTE]
    >다음을 포함한 다른 메서드 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)은 값을 성공적으로 재정의하지 않습니다.
 
@@ -80,7 +82,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 클라이언트측 라이브러리(js,css) {#client-side-libraries}
 
-* AEM 클라이언트측 라이브러리 프레임워크를 사용하면 변경 사항이 고유한 경로가 있는 새 파일로 매니페스트되므로 브라우저에서 무기한 캐싱할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다.  즉, 클라이언트 라이브러리를 참조하는 HTML이 필요에 따라 생성되므로 고객이 게시되는 새로운 컨텐츠를 경험할 수 있습니다. cache-control은 &quot;변경할 수 없음&quot; 값을 준수하지 않는 이전 브라우저의 경우 30일로 설정됩니다.
+* AEM 클라이언트측 라이브러리 프레임워크를 사용할 때, 변경 사항이 고유한 경로가 있는 새 파일로 매니페스트되므로 브라우저에서 무기한 캐싱할 수 있는 방식으로 JavaScript 및 CSS 코드가 생성됩니다.  즉, 클라이언트 라이브러리를 참조하는 HTML이 필요에 따라 생성되므로 고객이 게시되는 새로운 컨텐츠를 경험할 수 있습니다. cache-control은 &quot;변경할 수 없음&quot; 값을 준수하지 않는 이전 브라우저의 경우 30일로 설정됩니다.
 * 섹션을 참조하십시오. [클라이언트 측 라이브러리 및 버전 일관성](#content-consistency) 추가 세부 정보.
 
 ### 이미지 및 Blob 저장소에 저장할 수 있을 만큼 큰 모든 콘텐츠 {#images}
@@ -116,6 +118,8 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 
 >[!NOTE]
 >Cloud Manager 환경 변수 AEM_BLOB_ENABLE_CACHING_HEADERS를 true로 설정하여 새 동작(65000보다 높은 프로그램 ID)과 일관되도록 이전 기본 동작을 변경하는 것이 좋습니다. 프로그램이 이미 활성 상태인 경우 변경 후 컨텐츠가 예상대로 동작하는지 확인하십시오.
+
+현재, 비공개 로 표시된 Blob 저장소의 이미지는 를 사용하여 디스패처에서 캐시할 수 없습니다 [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 이미지는 항상 AEM 원본에서 요청되며 사용자가 인증되면 제공됩니다.
 
 >[!NOTE]
 >다음을 포함한 다른 메서드 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)은 값을 성공적으로 재정의하지 않습니다.
