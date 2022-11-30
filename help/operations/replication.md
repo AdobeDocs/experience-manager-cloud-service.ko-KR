@@ -2,10 +2,10 @@
 title: 복제
 description: 배포 및 복제 문제 해결
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
 >자세한 내용은 [배포](/help/overview/architecture.md#content-distribution)를 읽어 보십시오.
 
 ## 콘텐츠 게시 방법 {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>콘텐츠를 대량으로 게시하는 데 관심이 있는 경우 [컨텐츠 트리 게시 워크플로우](#publish-content-tree-workflow).
+>이 워크플로우 단계는 Cloud Service을 위해 특별히 빌드되었으며 큰 페이로드를 효율적으로 처리할 수 있습니다.
+>고유한 벌크 게시 사용자 지정 코드를 빌드하는 것은 권장되지 않습니다.
+>어떤 이유로든 사용자 지정해야 하는 경우 기존 워크플로우 API를 사용하여 이 워크플로우/워크플로우 단계를 트리거할 수 있습니다.
+>게시해야 하는 컨텐츠만 게시하고, 필요하지 않은 경우 많은 컨텐츠를 게시하지 않도록 신중하게 설정하는 것이 좋지만 컨텐츠 트리 워크플로우를 통해 보낼 수 있는 컨텐츠 양에 제한이 없습니다.
 
 ### 빠른 게시 취소/게시 - 예정된 게시 취소/게시 {#publish-unpublish}
 
