@@ -8,10 +8,10 @@ user-guide-description: Adobe Experience Manager as a Cloud Service 개요 자�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce2866c90353a086cd9288c0209bf624c597922d
+source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
-source-wordcount: '3789'
-ht-degree: 98%
+source-wordcount: '3816'
+ht-degree: 97%
 
 ---
 
@@ -158,6 +158,12 @@ ht-degree: 98%
       + [Cloud Manager 소개](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md)
       + [알림 사용자 그룹](/help/journey-onboarding/user-groups.md)
++ AEMaaCS 평가판 {#trials}
+   + 헤드리스 평가판 {#headless}
+      + [샘플 React 앱에서 컨텐츠 사용자 지정](/help/trials/headless/customize-app.md)
+      + [앱의 컨텐츠 구조 만들기](/help/trials/headless/content-structure.md)
+      + [헤드리스 컨텐츠 만들기](/help/trials/headless/create-content.md)
+      + [GraphQL API를 통해 컨텐츠 추출](/help/trials/headless/extract-content.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
    + [준비 단계](/help/journey-migration/readiness.md)
