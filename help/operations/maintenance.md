@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
+source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 78%
+source-wordcount: '1068'
+ht-degree: 75%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 78%
        <li>30일 넘는 구 버전 삭제</li>
        <li>지난 30일 이내 가장 최근의 5개 버전은 유지</li>
        <li>위의 규칙과 관계없이 가장 최근 버전은 보존됩니다.</li>
+       <li>사이트 페이지를 특정 날짜에 표시된 대로 정확하게 렌더링하기 위한 규정 요구 사항이 있는 고객은 전문 외부 서비스와 통합하는 것이 좋습니다.<li>
      </ol></td>
   </td>
   </tr>
@@ -60,6 +61,7 @@ ht-degree: 78%
        <li>복제 감사의 경우, 3일 넘는 감사 로그 삭제</li>
        <li>DAM(애셋) 감사의 경우, 30일 넘는 감사 로그 삭제</li>
        <li>페이지 감사의 경우, 3일 넘는 감사 로그 삭제</li>
+       <li>편집할 수 없는 감사 로그를 생성하기 위한 규제 요구 사항이 있는 고객은 전문 외부 서비스와 통합하는 것이 좋습니다.<li>
      </ol></td>
    </td>
   </tr>
