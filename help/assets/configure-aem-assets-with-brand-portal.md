@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 18%
+source-wordcount: '2420'
+ht-degree: 17%
 
 ---
 
@@ -29,11 +29,11 @@ Experience Manager Assets as a에서 Brand Portal을 활성화하려면 다음 �
 
 >[!NOTE]
 >
->Experience Manager Assets as a [!DNL Cloud Service] 인스턴스는 하나의 Brand Portal 테넌트와만 연결할 수 있습니다. Experience Manager Assets as a에 여러 환경(개발, 프로덕션 및 스테이지)을 사용할 수 있습니다. [!DNL Cloud Service] 예. Brand Portal은 한 환경에서 활성화됩니다.
+>Experience Manager Assets as a [!DNL Cloud Service] Brand Portal 테넌트와 연결할 인스턴스입니다.
 
 **Brand Portal 활성화 절차**
 
-Brand Portal as a Experience Manager Assets용 환경을 만드는 동안를 활성화할 수 있습니다 [!DNL Cloud Service] 인스턴스 또는 별도입니다. 환경이 이미 만들어졌다고 가정하고 이제 Brand Portal을 활성화해야 합니다.
+Brand Portal as a Experience Manager Assets용 프로덕션 환경을 만드는 동안를 활성화할 수 있습니다. [!DNL Cloud Service] 인스턴스 또는 별도입니다. 환경이 이미 만들어졌다고 가정하고 이제 Brand Portal을 활성화해야 합니다.
 
 1. Cloud Manager에 로그인하고 다음 위치로 이동합니다. **[!UICONTROL 환경]**.
 
@@ -80,7 +80,7 @@ Brand Portal 테넌트의 기본 URL은 다음과 같습니다. `https://<tenant
 Brand Portal URL을 모르는 경우 다음 단계를 수행하십시오.
 
 1. 에 로그인합니다. [Admin Console](https://adminconsole.adobe.com/) 및 **[!UICONTROL 제품]**.
-1. 왼쪽 레일에서 를 선택합니다. **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
+1. 왼쪽 패널에서 **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. 클릭 **[!UICONTROL Brand Portal으로 이동]** 브라우저에서 Brand Portal을 직접 엽니다.
 
    또는 Brand Portal 테넌트 URL을 **[!UICONTROL Brand Portal으로 이동]** 를 링크하고 브라우저에서 붙여 넣어 Brand Portal 인터페이스를 엽니다.
@@ -147,7 +147,7 @@ Experience Manager Assets as a [!DNL Cloud Service] 인스턴스 및 Brand Porta
 
 이제 Experience Manager Assets에서 Brand Portal으로 자산을 게시하여 로그를 보도록 하겠습니다.
 
-1. 에 표시된 대로 절차(1에서 4 사이)를 수행합니다. **연결 테스트** 섹션을 검색하고 분배 에이전트 페이지로 이동합니다.
+1. 에 표시된 대로 절차(1에서 4 사이)를 수행합니다. **연결 테스트** 섹션을 탐색하고 분배 에이전트 페이지로 이동합니다.
 1. 클릭 **[!UICONTROL 로그]** 를 눌러 처리 및 오류 로그를 확인합니다.
 
    ![](assets/test-bpconfig5.png)
@@ -256,7 +256,7 @@ Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
 
 서비스 계정 자격 증명과 JWT 페이로드를 생성하려면 다음 단계를 수행합니다.
 
-1. IMS 조직(Brand Portal 테넌트)에 대한 시스템 관리자 권한으로 Adobe 개발자 콘솔에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. IMS 조직(Brand Portal 테넌트)에 대한 시스템 관리자 권한으로 Adobe Developer Console에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -403,7 +403,7 @@ Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
