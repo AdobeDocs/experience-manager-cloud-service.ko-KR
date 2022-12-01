@@ -4,9 +4,9 @@ description: 통합 소개 [!DNL Assets] 및 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
+source-git-commit: 20dbcff249e3fc1beab24600cd54ce1bf4085d38
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1267'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 4%
 
 | 기능 | 설명 | [!DNL Workfront] 및 [!DNL Assets Essentials] *커넥터 없음(OOTB)* | [!DNL Workfront] 대상 [!DNL AEM] 커넥터 *커넥터 필요* | [!DNL Workfront for Experience Manager enhanced connector] *커넥터 필요* | Workfront 및 [!DNL Experience Manager as a Cloud Service] *커넥터 없음(OOTB)* |
 |----|----|----|------|-----|-----|
-| 배포 메서드 | 적합한 [!DNL Assets] 제공 | Assets Essentials | Cloud Service, Adobe Managed Services, 온-프레미스 | Cloud Service, Adobe Managed Services, 온-프레미스 | Cloud Service, Adobe Managed Services, 온-프레미스 |
+| 배포 메서드 | 적합한 [!DNL Assets] 제공 | Assets Essentials | Cloud Service, Adobe Managed Services, 온-프레미스 | Cloud Service, Adobe Managed Services, 온-프레미스 | 클라우드 서비스 |
 | **일반** |
 | 에서 디지털 파일 보내기 [!DNL Workfront] to [!DNL Assets] | 최신 버전의 WF 문서를 AEM Assets에 업로드하여 새로운 버전의 문서로 연결할 수 있습니다. | ✓ | ✓ | ✓ | ✓ |
 | 수동으로 AEM 폴더를 Workfront 개체에 연결 | 기존 AEM 폴더를 Workfront 폴더로 연결할 수 있으며 하위 자산이 새 Workfront 문서로 연결됩니다. | ✓ | ✓ | ✓ | ✓ |
@@ -66,7 +66,7 @@ ht-degree: 4%
 | AEM에 직접 사용자를 클릭할 때 Workfront에 연결된 자산 | 사용자는 Workfront 내에서 연결된 자산을 미리 보기 위해 AEM으로 이동됩니다. | ✓ | ✓ | ✓ | 예정된 날짜 |
 | Workfront에서 연결된 AEM 폴더를 자동으로 만들기 | 프로젝트 상태를 사용하여 Workfront에서 연결된 AEM 폴더를 자동으로 만듭니다. Workfront Portfolio, 프로그램 및 프로젝트를 기반으로 AEM 폴더를 자동으로 구성합니다. | 아니요 | 아니요 | ✓ | 아니요 |
 | Workfront에서 AEM 리포지토리로 직접 이동합니다. | Workfront 내에 구성된 사용 가능한 AEM 리포지토리로 이동할 수 있습니다. | ✓ | 아니요 | 아니요 | ✓ |
-| Workfront에서 연결된 AEM 폴더를 자동으로 만들기 | 문서 탭에서 사용할 수 있는 옵션을 사용하여 Workfront에서 연결된 AEM 폴더를 자동으로 만듭니다. | ✓ | 아니요 | 아니요 | ✓ |
+| Workfront에서 연결된 AEM 폴더 만들기 | 문서 탭에서 사용할 수 있는 옵션을 사용하여 Workfront에서 연결된 AEM 폴더를 수동으로 만듭니다. | ✓ | 아니요 | 아니요 | ✓ |
 | 주석 동기화 | 다음에서 자산에 대한 주석을 자동으로 동기화 [!DNL Workfront] to [!DNL Assets] | 아니요 | ✓ | ✓ | 아니요 |
 | 단일 AEM 환경에 연결하는 여러 Workfront 환경 지원 | 여러 Workfront 환경의 사용자가 단일 AEM 환경에 연결할 수 있습니다. | ✓ | 아니요 | 아니요 | ✓ |
 | 단일 Workfront 환경에 연결하는 여러 AEM 환경 지원 | 단일 Workfront 환경 내의 사용자는 여러 AEM 환경 간에 자산을 전송하거나 연결할 수 있습니다. | ✓ | ✓ | ✓ | ✓ |
