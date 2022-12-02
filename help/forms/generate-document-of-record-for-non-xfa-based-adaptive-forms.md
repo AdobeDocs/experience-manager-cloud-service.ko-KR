@@ -2,9 +2,9 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 8d6a5aceaf930c6597f570cdaec44015b86e20cd
 workflow-type: tm+mt
-source-wordcount: '4100'
+source-wordcount: '4065'
 ht-degree: 2%
 
 ---
@@ -431,7 +431,7 @@ When you select a form model, configure Document of Record using options availab
 **양식 수준 설정**
 
 * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 스키마 기반 적응형 양식의 레코드 문서에서 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-* **숨겨진 경우 DoR에서 필드 제외:** 속성이 true가 아닌 경우 속성을 설정하면 &quot;레코드의 문서에서 제외&quot; 필드 수준 속성의 동작이 무시됩니다. 양식 제출 시 필드가 숨겨져 있으면 속성이 true로 설정되어 있으면 Document of Record에서 제외됩니다. &quot;Exclude From Document of Record&quot; 속성이 설정되지 않은 경우 이러한 필드가 제외됩니다. 설정 [서버에서 유효성 검사](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) true일 속성은 서버 쪽의 레코드 문서에서 제외하기 위해 숨겨진 필드를 식별합니다.
+* **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 기록 문서에서 숨김 필드를 제외하려면 속성을 설정하십시오. 사용 설정 시 [서버에서 유효성 검사](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)를 지정하면 서버는 숨겨진 필드를 다시 계산하여 레코드 문서에서 해당 필드를 제외합니다.
 
 ## 사용자 지정 XCI 파일 사용
 
