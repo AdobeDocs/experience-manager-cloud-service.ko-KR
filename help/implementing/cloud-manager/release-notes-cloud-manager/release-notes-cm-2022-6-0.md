@@ -5,8 +5,8 @@ feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
 source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '313'
+ht-degree: 100%
 
 ---
 

@@ -4,7 +4,7 @@ description: AEM as a Cloud Service의 Cloud Manager 2022.10.0 릴리스 정보�
 feature: Release Information
 exl-id: 2e502ead-8515-4594-becc-caa207643a36
 source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
 

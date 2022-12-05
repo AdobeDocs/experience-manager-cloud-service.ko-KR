@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: aa7f2175e2a43a318a6171e622d292ed3a8e958b
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 38%
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service의 Cloud Manager 릴리스 2022.12.0은 2022년 11월 29�
 
 * 알림 대상 [AEM 유지 관리 업데이트](/help/overview/what-is-new-and-different.md#aem-updates) 은 Cloud Manager UI에서 표시됩니다. 이 변경 사항은 2022.12.0 릴리스 후 몇 주 내에 단계적인 방식으로 롤아웃됩니다.
 * 를 통해 수집되는 경우 [CTT(컨텐츠 전송 도구)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 가 진행 중인 경우 개발자 콘솔과 Cloud Manager 모두의 환경 상태가 `Ingestion in Progress`.
-* 의 가용성 및 신뢰성 향상 [Cloud Manager 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 만들어졌어요
+* [Cloud Manager 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)의 가용성 및 안정성이 개선되었습니다.
 
 ## 버그 수정 {#bug-fixes}
 
