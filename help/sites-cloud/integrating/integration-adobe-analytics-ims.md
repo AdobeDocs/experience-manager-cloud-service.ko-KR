@@ -3,9 +3,9 @@ title: Adobe Analytics와 통합할 때 사용되는 IMS 구성
 description: Adobe Analytics와 통합할 때 사용되는 IMS 구성 알아보기
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Analytics Standard API를 통해 Adobe Experience Manager as a Cloud Service(AEM
 * 귀사의 시스템 관리자는 Admin Console을 사용하여 필요한 개발자를 관련 제품 프로필에 추가해야 합니다.
 
    * 이렇게 하면 관련 개발자에게 Adobe Developer Console을 사용하여 통합을 활성화할 수 있는 권한이 제공됩니다.
-   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
+   * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
 
 
 ## IMS 구성 - 공개 키 생성 {#configuring-ims-generating-a-public-key}
@@ -151,7 +151,7 @@ AEM으로 돌아가 Analytics용 IMS 통합에서 필요한 값을 추가하여 
 1. 여기에서 [Adobe Developer Console의 프로젝트 구성에서 세부 정보](#details-stored-for-the-ims-integration-project)를 사용할 수 있습니다.
 
    * **제목**: 텍스트를 입력하십시오.
-   * **인증 서버**: 에서 이 복사/붙여넣기 `aud` 라인 **페이로드** 아래의 섹션(예: `https://ims-na1.adobelogin.com` 아래 예에서
+   * **인증 서버**: 아래 `aud`페이로드&#x200B;**섹션의** 줄에서 이 인증 서버를 복사하여 붙여넣습니다(아래 예에서 `https://ims-na1.adobelogin.com`).
    * **API 키**: [프로젝트 개요](#details-stored-for-the-ims-integration-project)의 **자격 증명** 섹션에서 이 API 키를 복사합니다.
    * **클라이언트 보안**: [서비스 계정(JWT) 섹션의 클라이언트 보안 탭](#details-stored-for-the-ims-integration-project)에서 이 클라이언트 보안을 생성한 다음 복사합니다.
    * **페이로드**: [서비스 계정(JWT) 섹션의 JWT 생성 탭](#details-stored-for-the-ims-integration-project)에서 이 페이로드를 복사합니다.
