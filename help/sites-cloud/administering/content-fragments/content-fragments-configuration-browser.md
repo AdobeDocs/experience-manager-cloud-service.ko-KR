@@ -1,13 +1,13 @@
 ---
 title: 콘텐츠 조각 - 구성 브라우저
-description: 구성 브라우저에서 컨텐츠 조각 및 GraphQL 기능을 활성화하여 AEM 헤드리스 게재 기능을 활용하는 방법을 알아봅니다.
+description: 구성 브라우저에서 콘텐츠 조각 및 GraphQL 기능을 활성화하여 AEM Headless 게재 기능을 활용하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
