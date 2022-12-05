@@ -3,9 +3,9 @@ title: 더 이상 사용되지 않는 API
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]에서 더 이상 사용되지 않으며 제거된 API에 관련된 릴리스 정보입니다.'
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1076'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ ht-degree: 98%
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
-    <td>2015년</td>
+    <td>2015</td>
     <td>7/30/21</td>
   </tr>
   <tr>
     <td>com.day.cq.jcrclustersupport</td>
     <td>대안으로 Sling의 검색 API를 사용하십시오.</td>
-    <td>2015년</td>
+    <td>2015</td>
     <td>제거됨</td>
   </tr>
   <tr>
@@ -111,7 +111,7 @@ ht-degree: 98%
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>Apache Felix 메타타입 및 SCR API는 더 이상 사용되지 않습니다. 대신 OSGi 메타타입 및 선언 서비스 API를 사용하십시오.</td>
+    <td>Apache Felix 메타타입 및 SCR API는 더 이상 사용되지 않습니다.  대신 OSGi 메타타입 및 선언 서비스 API를 사용하십시오.</td>
     <td>5/27/21</td>
     <td>제거됨</td>
   </tr>
@@ -200,7 +200,7 @@ ht-degree: 98%
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
-    <td>이 API는 더 이상 지원되지 않습니다. org.apache.sling.api.resource.ResourceResolverFactory 를 대신 사용합니다.</td>
+    <td>이 API는 더 이상 지원되지 않습니다. 대신 org.apache.sling.api.resource.ResourceResolverFactory를 사용하십시오.</td>
     <td>9/29/2022</td>
     <td>11/24/2022</td>
   </tr>
