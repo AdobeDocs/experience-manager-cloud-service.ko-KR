@@ -1,14 +1,14 @@
 ---
 title: 콘텐츠 조각 콘솔
 description: 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
-landing-page-description: 헤드리스 사용 사례에는 컨텐츠 조각을 많이 사용하지만 페이지 작성 시에도 사용되는 컨텐츠 조각 콘솔에서 컨텐츠 조각을 관리하는 방법을 알아봅니다.
+landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 중점을 두고 있지만 페이지 작성 시에도 사용되는 콘텐츠 조각 콘솔에서 콘텐츠 조각을 관리하는 방법에 대해 알아봅니다.
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->필요한 경우 프로젝트 팀이 콘솔을 사용자 지정할 수 있습니다. 자세한 내용은 [컨텐츠 조각 콘솔 사용자 지정](/help/implementing/developing/extending/content-fragment-console-customizing.md) 자세한 내용
+>프로젝트 팀은 필요한 경우 콘솔을 사용자 정의할 수 있습니다. 자세한 내용은 [콘텐츠 조각 콘솔 사용자 정의](/help/implementing/developing/extending/content-fragment-console-customizing.md)를 참조하십시오.
 
 콘텐츠 조각 콘솔은 전역 탐색의 최상위 수준에서 직접 액세스할 수 있습니다.
 
@@ -74,7 +74,7 @@ ht-degree: 94%
 
       >[!NOTE]
       >
-      >**에셋** 콘솔을 사용하여 이미지, 비디오 등의 에셋에 액세스할 수 있습니다. 이 콘솔은 다음과 같은 방법으로 액세스할 수 있습니다.
+      >**에셋** 콘솔을 사용하여 이미지, 비디오 등의 에셋에 액세스할 수 있습니다.  이 콘솔은 다음과 같은 방법으로 액세스할 수 있습니다.
       >
       >* 콘텐츠 조각 콘솔에서 **에셋에서 열기** 링크 사용
       >* 전역 탐색 창에서 바로 액세스
