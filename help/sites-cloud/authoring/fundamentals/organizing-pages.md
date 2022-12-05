@@ -3,9 +3,9 @@ title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 구성하는 방법
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2561'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -352,7 +352,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 >[!NOTE]
 >
->If the page was already published, moving the page will automatically unpublish it. 기본적으로 이동이 완료되면 다시 게시되지만 **조정/다시 게시** 단계에서 **다시 게시** 필드를 선택 취소하여 변경할 수 있습니다.
+>If the page was already published, moving the page will automatically unpublish it. 기본적으로 이동이 완료되면 다시 게시되지만 **조정/다시 게시** 단계에서 **다시 게시** 필드를 선택 해제하여 변경할 수 있습니다.
 
 >[!NOTE]
 >
