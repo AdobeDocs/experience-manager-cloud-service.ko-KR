@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 소개 - 용어
 description: Adobe Experience Manager as a Cloud Service 소개 - 용어.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: aa55c2579f3a1361f263c7681eca8d3b4b7c963b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,8 +40,8 @@ Adobe Experience Manager(AEM) as a Cloud Service와 관련하여 다음과 같�
 | AEM 이미지 | AEM 제품 코드를 고객 코드와 함께 포함하는 배포 가능한 아티팩트. |
 | 에셋 마이크로서비스 | 렌디션 생성, PDF 처리, 하위 에셋 처리, 텍스트 추출 등과 같은 다양한 에셋 처리 사용 사례를 충족하는 클라우드 기반의 디지털 에셋 처리 서비스입니다. 자세한 내용은 [에셋 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)를 참조하십시오. |
 | Cloud Manager Git 리포지토리 | 고객이 자신의 코드 및 구성 설정을 저장하는 곳. |
-| 클라우드 제공업체 | AEM as a Cloud Service은 계약된 SLA로 서비스를 제공하기 위해 현장 뒤에서 여러 공급업체(예: Microsoft Azure 또는 Amazon Web Services)의 공용 클라우드 인프라에서 실행되고 있습니다. |
-| CDN(Content Delivery Network) | AEM as Cloud Service가 기본 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 전달하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다. |
+| 클라우드 제공업체 | AEM as a Cloud Service는 계약된 SLA로 서비스를 제공하기 위해 보이지 않는 여러 공급업체(예: Microsoft Azure 또는 Amazon Web Services)의 공개 클라우드 인프라에서 실행되고 있습니다. |
+| CDN(Content Delivery Network) | AEM as Cloud Service가 기본 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 게재하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다. |
 | 콘텐츠 리포지토리 | 콘텐츠가 계속 유지되는 곳. |
 | 엔터프라이즈 분리 | AEM as a Cloud Service의 각 인스턴스는 다른 인스턴스와 분리되어 있습니다. |
 | 골든 마스터 | AEM 게시 계층. |
