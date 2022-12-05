@@ -3,9 +3,9 @@ title: 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성
 description: 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5414'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 
 >[!NOTE]
 >
->타깃팅 모드는 페이지 편집기와 경험 조각 편집기 모두에서 사용할 수 있습니다.
+>타겟팅 모드는 페이지 편집기와 경험 조각 편집기 모두에서 사용할 수 있습니다.
 >
->다음 설명서는 페이지 편집기용으로 작성되었지만 두 설명서 모두(동일한 기준으로 작동함)에 적용됩니다.
+>다음 문서는 페이지 편집기용으로 작성되었지만 양쪽 모두 동일한 기준으로 작동하므로 양쪽 모두에 적용할 수 있습니다.
 
 >[!CAUTION]
 >
->페이지 편집기에서 타깃팅할 때 경험 조각 구성 요소만 타깃팅할 수 있습니다.
+>페이지 편집기에서 타겟팅하는 경우 경험 조각 구성 요소만 타겟팅할 수 있습니다.
 >
->다른 구성 요소 유형은 **경험 조각 변형으로 변환** 아이콘 사용 안 함
+>다른 구성 요소 유형은 구성 요소 도구 모음의 **경험 조각 변형으로 변환** 아이콘을 사용하여 경험 조각으로 변환할 수 있습니다.
 
 <!--
 >Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
@@ -40,7 +40,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 >![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 -->
 
-타겟팅 엔진으로 AEM 또는 Adobe Target을 사용할 수 있습니다(Adobe Target을 사용하려면 올바른 Adobe Target 계정이 있어야 합니다). Adobe Target을 사용하는 경우 먼저 통합을 구성해야 합니다. 자세한 내용은 [Adobe Target과 통합하기 지침](/help/sites-cloud/integrating/integrating-adobe-target.md).
+타겟팅 엔진으로 AEM 또는 Adobe Target을 사용할 수 있습니다(Adobe Target을 사용하려면 올바른 Adobe Target 계정이 있어야 합니다). Adobe Target을 사용하는 경우 먼저 통합을 구성해야 합니다. [Adobe Target과의 통합에 대한 지침](/help/sites-cloud/integrating/integrating-adobe-target.md)을 참조하십시오.
 
 ![콘텐츠 타겟팅](../assets/targeted-content.png)
 
@@ -55,7 +55,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 >
 >동일한 캠페인 유형에서 동일한 이름을 사용하는 경우 기존 캠페인을 덮어쓰게 됩니다.
 >
->동기화 중에 &quot;Request Failed. `thirdPartyId` already exists&quot;(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
+>동기화 중에 “Request Failed. `thirdPartyId` already exists”(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 
 타겟 엔진(AEM 또는 Adobe Target)을 선택하거나 활동 유형(경험 타겟팅 또는 A/B 테스트)을 선택하는 선택 사항을 사용하여 AEM에서 Adobe Target 활동을 생성하고 관리할 수도 있습니다.
 
-또한 모든 Adobe Target 활동에 대한 목표와 지표를 관리하고 Adobe Target 대상을 관리할 수도 있습니다. A/B 테스트에 대한 우승자 변환을 포함하여 Adobe Target 활동을 보고할 수도 있습니다.
+또한 모든 Adobe Target 활동에 대한 목표와 지표를 관리하고 Adobe Target 대상자를 관리할 수도 있습니다. A/B 테스트에 대한 우승자 변환을 포함하여 Adobe Target 활동을 보고할 수도 있습니다.
 
 활동을 추가하면 [활동 콘솔](/help/sites-cloud/authoring/personalization/activities.md)에도 나타납니다.
 
@@ -120,7 +120,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 타겟팅 모드를 사용하면 활동의 몇 가지 측면을 구성할 수 있습니다. 브랜드 활동을 위한 타겟팅된 콘텐츠를 생성하는 다음의 3단계 프로세스를 사용하십시오.
 
 1. [만들기](#create-authoring-the-experiences): 경험을 추가 또는 제거하고 각 경험에 대한 오퍼를 추가합니다.
-1. [타겟](#target-configuring-the-audiences): 각 경험이 타겟팅하는 대상을 지정합니다. 특정 대상을 타겟팅할 수 있으며, A/B 테스트를 사용하는 경우에는 트래픽 중 어느 정도의 비율이 어느 경험으로 가는지를 결정할 수 있습니다.
+1. [타겟](#target-configuring-the-audiences): 각 경험이 타겟팅하는 대상자를 지정합니다. 특정 대상자를 타겟팅할 수 있으며, A/B 테스트를 사용하는 경우에는 트래픽 중 어느 정도의 비율이 어느 경험으로 가는지를 결정할 수 있습니다.
 1. [목표 및 설정](#goals-settings-configuring-the-activity-and-setting-goals): 활동을 예약하고 우선 순위를 설정합니다. 또한 성공 지표 목표를 설정할 수도 있습니다.
 
 다음 절차를 사용하여 활동에 대한 콘텐츠 타겟팅 프로세스를 시작하십시오.
@@ -192,7 +192,7 @@ When an experience is selected and the targeted component does not include an of
 경험을 추가하려면 다음 작업을 수행하십시오.
 
 1. 경험을 추가하려면 **대상자** 창에서 기존 경험 아래에 나타나는 **+** **경험 타겟팅 추가**&#x200B;를 클릭하거나 탭합니다.
-1. 대상을 선택합니다. 기본적으로 해당 이름은 경험의 이름입니다. 원하는 경우 다른 이름을 입력할 수 있습니다. **확인**&#x200B;을 클릭하거나 탭하십시오.
+1. 대상자를 선택합니다. 기본적으로 해당 이름은 경험의 이름입니다. 원하는 경우 다른 이름을 입력할 수 있습니다. **확인**&#x200B;을 클릭하거나 탭하십시오.
 
 #### 타겟팅 모드를 사용한 경험 제거 {#removing-experiences-using-targeting-mode}
 
@@ -403,7 +403,7 @@ When an experience is selected and the targeted component does not include an of
 
 ## 타겟: 대상자 구성 {#target-configuring-the-audiences}
 
-[타겟팅 프로세스](#the-targeting-process-create-target-and-goals-settings)의 타겟 단계에는 만들기 단계에서 작업에 사용한 경험과 대상을 매핑하는 작업이 포함됩니다. 타겟 페이지에는 각 경험이 타겟팅하는 대상이 표시됩니다. 각 경험의 대상을 지정하거나 변경할 수 있습니다. Adobe Target을 사용하는 경우 대상에 대한 트래픽 비율을 특정 경험으로 타겟팅할 수 있도록 해 주는 A/B 테스트를 생성할 수도 있습니다.
+[타겟팅 프로세스](#the-targeting-process-create-target-and-goals-settings)의 타겟 단계에는 만들기 단계에서 작업에 사용한 경험과 대상자를 매핑하는 작업이 포함됩니다. 타겟 페이지에는 각 경험이 타겟팅하는 대상자가 표시됩니다. 각 경험의 대상자를 지정하거나 변경할 수 있습니다. Adobe Target을 사용하는 경우 대상자에 대한 트래픽 비율을 특정 경험으로 타겟팅할 수 있도록 해 주는 A/B 테스트를 생성할 수도 있습니다.
 
 ### AEM 타겟팅 또는 Adobe Target(경험 타겟팅)을 사용하는 경우 {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -411,36 +411,36 @@ When an experience is selected and the targeted component does not include an of
 
 ![대상자 매핑](../assets/targeted-diagram.png)
 
-세그먼트를 사용하여 대상을 정의하십시오. 페이지에 대한 클라우드 구성은 사용할 수 있는 세그먼트를 결정합니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있지 않으면 대상을 정의하는 데 AEM 세그먼트를 사용할 수 있습니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있으면 타겟 세그먼트를 사용합니다.
+세그먼트를 사용하여 대상자를 정의합니다. 페이지에 대한 클라우드 구성은 사용할 수 있는 세그먼트를 결정합니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있지 않으면 대상자를 정의하는 데 AEM 세그먼트를 사용할 수 있습니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있으면 타겟 세그먼트를 사용합니다.
 
 타겟팅 엔진에 대한 자세한 내용은 [타겟팅 엔진](/help/sites-cloud/authoring/personalization/overview.md#targeting-engine)을 참조하십시오.
 
-한 대상을 두 개 이상의 경험이 사용해서는 안 됩니다. 경험이 다른 경험에 매핑된 대상에 매핑되면 경험 옆에 경고 기호가 나타납니다.
+한 대상자를 두 개 이상의 경험이 사용해서는 안 됩니다. 경험이 다른 경험에 매핑된 대상자에 매핑되면 경험 옆에 경고 기호가 나타납니다.
 
 ![경고 아이콘](../assets/targeted-warn.png)
 
-### 경험을 대상(AEM 또는 Adobe Target)과 연결 {#associating-experiences-with-audiences-aem-or-adobe-target}
+### 경험을 대상자(AEM 또는 Adobe Target)와 연결 {#associating-experiences-with-audiences-aem-or-adobe-target}
 
-AEM 타겟팅(또는 Adobe Target 경험 타겟팅)을 사용할 때 경험을 대상과 연결하려면 다음 절차를 사용하십시오.
+AEM 타겟팅(또는 Adobe Target 경험 타겟팅)을 사용할 때 경험을 대상자와 연결하려면 다음 절차를 사용하십시오.
 
-1. 경험에 매핑된 대상 상자 옆의 드롭다운 화살표를 클릭하거나 탭합니다.
+1. 경험에 매핑된 대상자 상자 옆의 드롭다운 화살표를 클릭하거나 탭합니다.
 1. (선택 사항) **편집**&#x200B;을 클릭하거나 탭한 다음, 키워드를 입력하여 원하는 세그먼트를 검색합니다.
 1. 대상자 목록에서 대상자를 선택하고 **확인**&#x200B;을 클릭하거나 탭합니다.
 
 ### A/B 테스트(Adobe Target)를 사용하는 경우 {#if-you-are-using-a-b-testing-adobe-target}
 
-A/B 테스트 활동이 있는 경우, 대상은 왼쪽에 있고, 각 경험이 표시되는 비율은 가운데에 있으며, 경험은 오른쪽에 있습니다.
+A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험이 표시되는 비율은 가운데에 있으며 경험은 오른쪽에 있습니다.
 
-비율을 최대 100%까지 변경할 수 있습니다. 대상은 A/B 테스트의 여러 경험에서 사용할 수 있습니다.
+비율을 최대 100%까지 변경할 수 있습니다. 대상자는 A/B 테스트의 여러 경험에서 사용할 수 있습니다.
 
 ![A/B 타겟팅](../assets/targeted-ab.png)
 
 ### 대상자 및 트래픽 비율을 A/B 테스트와 연결 {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
-1. 경험에 매핑된 대상의 옆에 있는 드롭다운 화살표를 클릭하거나 탭합니다.
+1. 경험에 매핑된 대상자의 옆에 있는 드롭다운 화살표를 클릭하거나 탭합니다.
 1. (선택 사항) **편집**&#x200B;을 클릭한 다음, 키워드를 입력하여 원하는 세그먼트를 검색합니다.
 1. **확인**&#x200B;을 클릭하거나 탭합니다.
-1. 대상 트래픽이 각 경험으로 라우팅되는 방법을 구성하려면 비율(%)을 입력하십시오. 합계는 100이어야 합니다.
+1. 대상자 트래픽이 각 경험으로 라우팅되는 방법을 구성하려면 비율(%)을 입력하십시오. 합계는 100이어야 합니다.
 1. (선택 사항) 경험 이름 옆의 드롭다운 메뉴를 클릭하여 경험 이름을 편집합니다.
 
 ## 목표 및 설정: 활동 및 설정 목표 구성 {#goals-settings-configuring-the-activity-and-setting-goals}
