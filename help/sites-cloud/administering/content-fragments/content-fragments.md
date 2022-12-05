@@ -5,15 +5,15 @@ feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2109'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 콘텐츠 조각을 사용하여 작업 {#working-with-content-fragments}
 
-Adobe Experience Manager(AEM) as a Cloud Service와 함께 콘텐츠 조각을 사용하면 [페이지 독립적인 콘텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md)를 디자인하고, 작성하고, 선별하고, 게시할 수 있습니다. 이를 통해 여러 위치에서/여러 채널에 걸쳐 사용할 수 있는, 페이지 작성 및 Headless 전달에 이상적인 콘텐츠를 준비할 수 있습니다.
+Adobe Experience Manager(AEM) as a Cloud Service와 함께 콘텐츠 조각을 사용하면 [페이지 독립적인 콘텐츠](/help/sites-cloud/authoring/fundamentals/content-fragments.md)를 디자인하고, 작성하고, 선별하고, 게시할 수 있습니다. 이를 통해 여러 위치에서/여러 채널에 걸쳐 사용할 수 있는, 페이지 작성 및 Headless 게재에 이상적인 콘텐츠를 준비할 수 있습니다.
 
 콘텐츠 조각에는 구조화된 콘텐츠가 포함되어 있습니다.
 
@@ -55,7 +55,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >이들 페이지는 다음과 함께 읽을 수 있습니다.
 >
 >* [콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
->* [콘텐츠 조각 사용자 지정 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
+>* [콘텐츠 조각 사용자 정의 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [콘텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
@@ -63,8 +63,8 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 통신 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
-* 물리적 채널 예를 들어 데스크탑, 모바일 등이 있습니다.
-* 실제 채널에서의 전달 형식 예를 들어, 데스크탑의 &quot;제품 세부 사항 페이지&quot;, &quot;제품 카테고리 페이지&quot; 또는 모바일의 &quot;모바일 웹&quot;, &quot;모바일 앱&quot; 등이 있습니다.
+* 물리적 채널 - 예: 데스크탑, 모바일
+* 실제 채널에서의 게재 형태 - 예: 데스크탑의 “제품 세부 정보 페이지”, “제품 범주 페이지” 또는 모바일의 “모바일 웹”, “모바일 앱”
 
 그러나 대개 모든 채널에 대해 동일한 콘텐츠를 사용하고 싶지 않을 것이므로 특정 채널에 따라 콘텐츠를 최적화해야 합니다.
 
@@ -91,8 +91,8 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
->title="앱의 컨텐츠 구조를 만듭니다"
->abstract="일련의 대화형 지침을 따라 헤드리스 모든 컨텐츠의 기초 역할을 하는 구조(컨텐츠 조각 모델이라고도 함)를 만드는 방법을 알아봅니다."
+>title="앱의 콘텐츠 구조 만들기"
+>abstract="대화형 안내서 시리즈를 따라가면서 모든 Headless 콘텐츠의 기반 역할을 하는 구조(콘텐츠 조각 모델이라고도 함)를 만드는 방법을 알아봅니다."
 
 ## 콘텐츠 조각 및 콘텐츠 서비스 {#content-fragments-and-content-services}
 
