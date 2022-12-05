@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ _Dynamic Media URL 구조._
 
 시계의 새 표현물이 생성된다는 점에 주의하십시오. 이미지의 너비를 변경하는 간단한 연습에서 이해하려면 보이는 이미지가 동적으로 100% 생성된다는 것입니다.
 
-이제 너비 값을 `500` 픽셀 단위 `1000` 픽셀을 누르고 **[!UICONTROL Enter 키]**. [사용해 보세요](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
+이제 너비 값을 `500` 픽셀 단위 `1000` 픽셀을 누르고 **[!UICONTROL Enter 키]**. [사용해 보세요](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 당신이 압박하는 순간 **[!UICONTROL Enter 키]**&#x200B;로 설정되면 브라우저가 Dynamic Media 이미지 서버로 돌아갑니다. 방금 입력한 새 너비 값에 따라 시계의 새 렌디션을 생성하고 새 이미지를 다시 브라우저에 전달하고 캐시합니다.
 
 Dynamic Media에는 웹 페이지에서 이미지 자산을 세밀하게 조정하는 데 사용할 수 있는 다양한 이미지 처리 매개 변수가 있습니다. 다음을 수행할 수 있습니다 [여기 있는 목록 보기](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
@@ -128,7 +128,9 @@ _고급 탭에서 옵션을 선택하여 이미지 사전 설정을 만듭니다
 ![이미지 사전 설정 적용 *Medium* 이미지의 렌디션을 생성하려면](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _이미지 사전 설정 Medium을 적용하여 이미지의 렌디션을 생성합니다._
 
-URL을 복사한 다음 브라우저에 붙여 넣어 이미지의 모양을 확인합니다. [사용해 보세요](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. 브라우저에서 이미지 사전 설정의 이름을 확인합니다 _Medium_ 를 입력합니다.
+URL을 복사한 다음 브라우저에 붙여 넣어 이미지의 모양을 확인합니다. [사용해 보세요](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+
+브라우저에서 이미지 사전 설정의 이름을 확인합니다 _Medium_ 를 입력합니다.
 
 이미지에 표시되는 명확성의 종류를 볼 수 있습니다. 그 질은 부분적으로 초콜릿 그릇이 탄 방식 때문입니다. 또한 Dynamic Media을 사용하면 디지털 채널에 전달되는 이미지보다 더 큰 이미지를 저장할 수 있기 때문입니다.
 
