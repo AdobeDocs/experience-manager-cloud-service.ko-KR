@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1947'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 98%
 >다음과 같은 경우 콘텐츠 조각을 사용할 수 있습니다.
 >
 >* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 참조)
->* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md) 시
+>* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md) 시
 
 
 >[!NOTE]
@@ -57,8 +57,8 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="새 컨텐츠 만들기"
->abstract="모듈 1에서 만든 모델을 기반으로 하여 페이지 작성에 사용할 수 있는 컨텐츠 또는 헤드리스 컨텐츠를 기반으로 만드는 방법을 알아봅니다."
+>title="새 콘텐츠 만들기"
+>abstract="모듈 1에서 만든 모델을 기반으로 페이지 작성에 사용할 수 있거나 Headless 콘텐츠의 기반으로 사용할 수 있는 콘텐츠를 만드는 방법을 알아봅니다."
 
 ### 콘텐츠 모델 만들기 {#creating-a-content-model}
 
