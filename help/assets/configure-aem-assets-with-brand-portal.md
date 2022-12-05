@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
+source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2478'
 ht-degree: 17%
 
 ---
@@ -397,6 +397,16 @@ Adobe Developer 콘솔에서 프로젝트 및 API는 Brand Portal 테넌트(조�
    Experience Manager Assets as a [!DNL Cloud Service] 이제 인스턴스가 Brand Portal 테넌트로 구성됩니다.
 
 이제 분배 에이전트를 확인하고 자산을 Brand Portal에 게시하여 구성을 테스트할 수 있습니다.
+
+**보안 미리 허용 목록에 추가하다 보기가 활성화된 경우 SPS에서 IP 송신**
+Dynamic Media-Scene7을 사용하는 경우 [보안 미리 보기 사용](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) 회사)의 경우 Scene7 회사 관리자에게 문의하십시오 [공용 송신 허용 목록에 추가하다 IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) SPS(Scene7 Publishing System) 플래시 UI를 사용하는 각 지역.
+송신 IP는 다음과 같습니다.
+
+| **지역** | **송신 IP** |
+|--- |--- |
+| NA | 130.248.160.68, 20.94.203.130 |
+| EMEA | 185.34.189.3, 51.132.146.75 |
+| APAC | 63.140.44.54 |
 
 <!--
 ### Test configuration {#test-configuration}
