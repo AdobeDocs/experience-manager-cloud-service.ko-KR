@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3053'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ VPN 및 전용 이그레스 IP 주소가 필요하지 않은 경우 전용 이�
 
 ### 구성 {#configuring-flexible-port-egress-provision}
 
-프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 `kind` 매개변수 및 지역에 대한 `flexiblePortEgress` 값이 간단히 전달됩니다. 해당 끝점은 `network_id` 및 상태와 같은 기타 정보에 응답합니다. 전체 매개 변수 및 정확한 구문 세트와 나중에 변경할 수 없는 매개 변수와 같은 중요한 정보입니다. [api 문서에서 참조할 수 있습니다.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+프로그램당 한 번씩 POST `/program/<programId>/networkInfrastructures` 끝점이 호출되어 `kind` 매개변수 및 지역에 대한 `flexiblePortEgress` 값이 간단히 전달됩니다. 해당 끝점은 `network_id` 및 상태와 같은 기타 정보에 응답합니다. 전체 매개변수 세트 및 정확한 구문은 물론 나중에 변경할 수 없는 매개변수와 같은 중요한 정보는 [API 문서에서 참조할 수 있습니다.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 호출되면 네트워킹 인프라가 프로비저닝되는 데 일반적으로 약 15분이 소요됩니다. Cloud Manager의 [네트워크 인프라 GET 끝점](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 호출은 “준비됨” 상태로 표시됩니다.
 
@@ -335,7 +335,7 @@ Adobe 조직의 모든 고객 프로그램 및 각 프로그램의 모든 환경
 ## 레거시 전용 이그레스 주소 고객 {#legacy-dedicated-egress-address-customers}
 
 2021년 9월 30일 이전에 전용 이그레스 IP로 프로비저닝된 경우, 전용 이그레스 IP 기능은 HTTP 및 HTTPS 포트만 지원합니다.
-여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다. 또한 하나의 전용 송신 엔드포인트는 포트 80/443의 HTTP/HTTPS를 통해서만 모든 대상에 연결할 수 있습니다.
+여기에는 암호화 시 HTTP/1.1 및 HTTP/2가 포함됩니다. 또한 하나의 전용 이그레스 엔드포인트는 각각 포트 80/443에서 HTTP/HTTPS를 통해서만 타겟과 통신할 수 있습니다.
 
 ## Virtual Private Network(VPN) {#vpn}
 
