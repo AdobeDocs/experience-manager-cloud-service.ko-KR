@@ -3,9 +3,9 @@ title: 콘텐츠 미리보기
 description: AEM 미리보기 서비스를 사용하여 콘텐츠를 시작하기 전에 미리 보는 방법에 대해 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 `agentId` 매개변수가 `preview`로 설정된 [콘텐츠 트리 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 사용하거나 미리보기에 대해 `AgentFilter`가 구성된 [복제 API](/help/operations/replication.md#replication-api)를 사용하여 콘텐츠를 미리보기에 게시할 수도 있습니다.
 
-## 미리 보기에서 컨텐츠 게시 취소 {#unpublishing-content-from-preview}
+## 미리보기에서 콘텐츠 게시 취소 {#unpublishing-content-from-preview}
 
-에서 컨텐츠 게시 취소 **미리 보기** 환경은 기본적으로 과 동일한 프로세스입니다 [페이지 게시 취소](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 에서 **게시** 환경.
+**미리보기** 환경에서 콘텐츠를 게시 취소하는 작업은 **게시** 환경의 [페이지 게시 취소](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 프로세스와 기본적으로 동일합니다.
 
-유일한 차이점은 **대상** 대상 **미리 보기**.
+유일한 차이점은 **대상**&#x200B;이 **미리보기**&#x200B;가 되도록 선택할 수 있다는 것입니다.
 
 ## 게시 계층에 대해 OSGi 설정 구성 {#configuring-osgi-settings-for-the-preview-tier}
 
