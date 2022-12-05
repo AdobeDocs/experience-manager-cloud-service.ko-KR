@@ -1,17 +1,17 @@
 ---
-title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달
-description: GraphQL에서 Headless 콘텐츠 전달을 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
+title: GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재
+description: GraphQL에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하여 AEM Headless CMS를 구현하기 위한 기본 개념을 알아봅니다.
 feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: bdbd78f0fdb14113d0eddccf4faba499849d48fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달 {#headless-content-delivery-using-content-fragments-with-graphQL}
+# GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 콘텐츠 조각 및 GraphQL API를 통해 Adobe Experience Manager(AEM) as a Cloud Service를 Headless CMS(콘텐츠 관리 시스템)로 사용할 수 있습니다.
 
@@ -36,8 +36,8 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
->title="GraphQL API를 사용하여 컨텐츠 추출"
->abstract="이 단원에서는 컨텐츠 조각 및 GraphQL API를 헤드리스 컨텐츠 관리 시스템으로 사용하는 방법을 알아봅니다."
+>title="GraphQL API를 사용하여 콘텐츠 추출"
+>abstract="이 모듈에서는 Headless 콘텐츠 관리 시스템으로 콘텐츠 조각 및 GraphQL API를 사용하는 방법을 알아봅니다."
 
 ## Headless CMS {#headless-cms}
 
