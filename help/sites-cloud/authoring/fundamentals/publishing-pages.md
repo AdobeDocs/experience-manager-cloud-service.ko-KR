@@ -140,6 +140,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
       >[!NOTE]
       >
       >나중에 게시/게시 취소를 취소하려면 [워크플로 콘솔](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)로 이동하여 해당 워크플로를 종료합니다.
+
    ![게시 관리 옵션](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 계속하려면 **다음**&#x200B;을 클릭하십시오.
@@ -285,7 +286,7 @@ Adobe Experience Manager(AEM) as a Cloud Service를 사용하여 작업할 때 �
 
 페이지의 게시 상태를 확인할 수 있습니다.
 
-* ](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)사이트 콘솔의 리소스 개요 정보[에서
+* [&#128279;](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)사이트 콘솔의 리소스 개요 정보에서
 
    ![카드 보기의 게시 상태](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
