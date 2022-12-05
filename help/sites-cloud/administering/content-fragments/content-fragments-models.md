@@ -1,13 +1,13 @@
 ---
 title: 콘텐츠 조각 모델
-description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역할을 하는 방법에 대해 알아봅니다. 이를 통해 Headless 전달 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만들 수 있습니다.
+description: 콘텐츠 조각 모델이 AEM에서 콘텐츠 조각의 기반 역할을 하는 방법에 대해 알아봅니다. 이를 통해 Headless 게재 또는 페이지 작성에 사용할 구조화된 콘텐츠를 만들 수 있습니다.
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 17705b698915d4fac1e60ad06396d40f2e19ebd5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2898'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
 
 1. [인스턴스에 대해 콘텐츠 조각 모델 기능 활성화](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
 1. 콘텐츠 조각 모델 [생성](#creating-a-content-fragment-model) 및 [구성](#defining-your-content-fragment-model)
-1. [컨텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model) 컨텐츠 조각을 만들 때 사용할 수 있습니다.
+1. 콘텐츠 조각 생성 시 사용할 [콘텐츠 조각 모델 활성화](#enabling-disabling-a-content-fragment-model)
 1. **정책**&#x200B;을 구성하여 [필요한 에셋 폴더에서 콘텐츠 조각 모델 허용](#allowing-content-fragment-models-assets-folder)
 
 ## 콘텐츠 조각 모델 만들기 {#creating-a-content-fragment-model}
@@ -221,7 +221,7 @@ AEM의 콘텐츠 조각 모델은 [콘텐츠 조각](/help/sites-cloud/administe
 
       >[!NOTE]
       >
-      >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 전달](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
+      >이 방법은 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
    * 최종 조각에서 하나 이상의 참조에 대해 구성할 수 있습니다.
 
 >[!NOTE]
@@ -275,7 +275,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->이는 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 전달](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
+>이는 특히 [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠를 게재](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)할 때 함께 사용할 수 있습니다.
 
 표준 속성 외에 다음을 정의할 수 있습니다.
 
@@ -454,7 +454,7 @@ type CompanyModel {
 
    * AEM GraphQL 스키마는 콘텐츠 조각 모델 생성 직후 생성되며 작성자 및 게시 환경 모두에 존재할 수 있습니다.
 
-   * 게시의 스키마는 JSON 형식으로 콘텐츠 조각 콘텐츠를 실시간으로 전달할 수 있는 기반을 제공하므로 가장 중요합니다.
+   * 게시의 스키마는 JSON 형식으로 콘텐츠 조각 콘텐츠를 실시간으로 게재할 수 있는 기반을 제공하므로 가장 중요합니다.
 
 * 콘텐츠 조각 모델을 수정할 때, 즉 편집할 때 문제가 발생할 수 있습니다. 즉, 스키마가 변경되어 기존 GraphQL 쿼리에 영향을 줄 수 있습니다.
 
@@ -462,7 +462,7 @@ type CompanyModel {
 
 ### 요구 사항 {#the-requirements}
 
-* 사용자가 라이브 콘텐츠 전달에 이미 사용된 모델(즉, 게시된 모델)을 편집할 때의 위험을 인식하도록 합니다.
+* 사용자가 라이브 콘텐츠 게재에 이미 사용된 모델(즉, 게시된 모델)을 편집할 때의 위험을 인식하도록 합니다.
 
 * 또한 의도하지 않은 변경을 피하도록 합니다.
 
