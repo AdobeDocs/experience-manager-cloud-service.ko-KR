@@ -3,9 +3,9 @@ title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 78c0ea75affc2d2f691ef983385b188b35c10120
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '616'
+ht-degree: 100%
 
 ---
 
