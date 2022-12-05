@@ -3,9 +3,9 @@ title: ContextHub를 사용하여 세그먼테이션 구성
 description: ContextHub를 사용하여 세그먼테이션을 구성하는 방법에 대해 알아봅니다.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1697'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM을 통해 손쉽게 사용자의 경험을 개인화할 수 있습니다. �
 
 [대상자](audiences.md) 콘솔을 사용하여 ContextHub용 세그먼트와 더불어 Adobe Target 계정에 대한 대상자를 관리할 수 있습니다. 이 설명서에서는 ContextHub용 세그먼트 관리 방법에 대해 다룹니다.
 
-세그먼트에 액세스하려면 전역 탐색에서 **탐색 > 개인화 > 대상자**&#x200B;를 선택하십시오. 구성(예: WKND 사이트)을 선택하여 세그먼트를 확인합니다.
+세그먼트에 액세스하려면 전역 탐색에서 **탐색 > 개인화 > 대상자**&#x200B;를 선택하십시오. 세그먼트를 보려면 구성(예: WKND 사이트)을 선택하십시오.
 
 ![대상자 관리](../assets/contexthub-segmentation-audiences.png)
 
@@ -86,7 +86,7 @@ AEM을 통해 손쉽게 사용자의 경험을 개인화할 수 있습니다. �
 
 새 세그먼트를 정의하려면 다음 작업을 수행하십시오.
 
-1. 후 [세그먼트 액세스](#accessing-segments), [폴더로 이동합니다](#organizing-segments) 세그먼트를 만들 위치.
+1. [세그먼트에 액세스](#accessing-segments)한 후 세그먼트를 만들고자 하는 [폴더로 이동](#organizing-segments)합니다.
 
 1. **만들기** 버튼을 탭하거나 클릭한 다음 **ContextHub 세그먼트 작성**&#x200B;을 선택합니다.
 
