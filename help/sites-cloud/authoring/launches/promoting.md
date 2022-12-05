@@ -3,9 +3,9 @@ title: 론치 홍보
 description: 게시 전에 콘텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 98%
 1. 열기:
    * 소스 페이지 탐색 시 **사이트 콘솔**:
       1. [참조 레일](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)을 연 다음 [선택 모드](/help/sites-cloud/authoring/getting-started/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 순서는 중요하지 않으므로 필요한 소스 페이지를 선택한 다음 참조 레일을 열 수도 있습니다. 모든 참조가 표시됩니다.
-      1. 선택 **론치** (예: 론치 (1))를 사용하여 특정 론치 목록을 표시할 수 있습니다.
+      1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
       1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
    * 론치 페이지 탐색 시 **사이트 콘솔**:
