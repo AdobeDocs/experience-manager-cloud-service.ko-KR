@@ -3,9 +3,9 @@ title: Adobe Target과 통합
 description: Adobe Target과 통합
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 source-git-commit: e6fc31a5c4b3bb62f7d6e639eae7e1f222b2f5ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ AEM 사이트와 Adobe Target을 통합함으로써 페이지의 콘텐츠를 �
 
 >[!NOTE]
 >
->기존 Target 계정이 없는 Adobe Experience Manager as a Cloud Service 고객은 Experience Cloud의 Target Foundation Pack에 대한 액세스 권한을 요청할 수 있습니다. Foundation Pack은 제한된 볼륨의 Target을 사용할 수 있도록 제공합니다.
+>기존 Target 계정이 없는 Adobe Experience Manager as a Cloud Service 고객은 Experience Cloud의 Target Foundation Pack에 대한 액세스 권한을 요청할 수 있습니다.  Foundation Pack은 제한된 볼륨의 Target을 사용할 수 있도록 제공합니다.
 
 
 Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
@@ -72,8 +72,8 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 AEM as a Cloud Service와 Adobe Target을 통합하려면 Adobe Target, AEM 활동 관리 및 AEM 대상자 관리에 대한 지식이 필요합니다. 다음과 같은 정보를 숙지해야 합니다.
 
 * Adobe Target ([Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/target-home.html) 참조)
-* AEM 활동 콘솔(참조) [활동 관리](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)).
-* AEM 대상(참조) [대상자 관리](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html)).
+* AEM 활동 콘솔([활동 관리](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html) 참조)
+* AEM 대상자([대상자 관리](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html) 참조)
 
 >[!NOTE]
 >
