@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: f1e1e12d9a19afd6c98029fc5b7a7b73ebf41686
 workflow-type: tm+mt
 source-wordcount: '3816'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -280,12 +280,12 @@ ht-degree: 97%
       + 개인 맞춤화 {#personalization}
          + [개인 맞춤화 개요](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-cloud/authoring/personalization/contexthub.md)
-         + [타겟팅 모드를 사용하여 대상 콘텐츠 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)
-         + [다중 사이트에서 대상 콘텐츠를 사용하여 작업](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
-         + [대상 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
+         + [타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성](/help/sites-cloud/authoring/personalization/targeted-content.md)
+         + [다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
+         + [타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [활동 관리](/help/sites-cloud/authoring/personalization/activities.md)
          + [대상자 관리](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [오퍼 생성 및 관리 (오퍼 콘솔)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [오퍼 생성 및 관리 (콘솔 제공)](/help/sites-cloud/authoring/personalization/offers.md)
          + [세그먼테이션 이해](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub를 사용하여 세그먼테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -510,11 +510,11 @@ ht-degree: 97%
       + [전환된 양식 검토 및 수정](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ko#welcome-to-review-and-correct-editor)
    + 적응형 양식 만들기 및 게시 {#create-an-adaptive-form}
       + 시작하기 전 {#before-you-start}
-         + [응용 Forms 작성 소개](/help/forms/introduction-forms-authoring.md)
+         + [적응형 양식 작성 소개](/help/forms/introduction-forms-authoring.md)
          + [템플릿 만들기](/help/forms/template-editor.md)
          + [테마 만들기](/help/forms/themes.md)
          + [데이터 소스를 클라우드 서비스에 연결](/help/forms/data-integration.md)
-         + [참조 자산](/help/forms/reference-assets.md)
+         + [참조 에셋](/help/forms/reference-assets.md)
       + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
          + [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
          + [적응형 양식에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)
@@ -546,7 +546,7 @@ ht-degree: 97%
       + 적응형 양식의 접근성 개선 {#accessible-adaptive-forms}
          + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
       + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
-   + 통합 {#integrate}
+   + {#integrate} 통합
       + 하나 이상의 데이터 소스와 양식 통합 {#use-form-data-model}
          + [데이터 소스 구성](/help/forms/configure-data-sources.md)
          + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
@@ -560,7 +560,7 @@ ht-degree: 97%
       + [Sites와 통합](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
       + [Adobe Analytics와 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [AEM Sites에 적응형 Forms 포함](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [AEM Sites에 적응형 양식 임베드](/help/forms/embed-adaptive-form-aem-sites.md)
    + 워크플로 제작 및 사용 {#create-form-centric-workflows}
       + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
       + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
@@ -652,7 +652,7 @@ ht-degree: 97%
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
-   + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
       + [구성](/help/headless/setup/create-configuration.md)
@@ -759,7 +759,7 @@ ht-degree: 97%
          + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
       + [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
-      + [새 Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [알림](/help/implementing/cloud-manager/notifications.md)
       + SSL 인증서 {#manage-ssl-certificates}
          + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -882,7 +882,7 @@ ht-degree: 97%
       + [경험 조각 확장](/help/implementing/developing/extending/experience-fragments.md)
       + [콘텐츠 조각 맞춤화 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [컨텐츠 조각 콘솔 사용자 지정](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+      + [콘텐츠 조각 콘솔 맞춤화](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + 검색 양식 관리 {#manage-search-forms}
          + [검색 양식 구성](/help/implementing/developing/extending/search-forms.md)
          + [받은 편지함용 검색 필터 구성](/help/implementing/developing/extending/configure-inbox-search-rail.md)
