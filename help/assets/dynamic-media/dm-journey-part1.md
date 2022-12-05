@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
 workflow-type: tm+mt
-source-wordcount: '3708'
+source-wordcount: '3710'
 ht-degree: 1%
 
 ---
@@ -261,7 +261,7 @@ _선택한 &quot;큰&quot; 이미지 사전 설정을 기반으로 자산의 렌
 ![확대/축소 세로 광원 뷰어 사전 설정을 기반으로 자산 미리 보기](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _선택한 &quot;ZoomVertical_light&quot; 뷰어 사전 설정을 기반으로 자산을 미리 봅니다. 마우스 포인터(`+`)가 확대하기 위해 시계 위로 이동되었습니다. URL 및 포함 단추에 주목합니다._
 
-위의 표현물은 라이브입니다! [사용해 보세요](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
+위의 표현물은 라이브입니다! [사용해 보세요](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
 
 ## 선택 사항 - 자세히 알아보기
 
