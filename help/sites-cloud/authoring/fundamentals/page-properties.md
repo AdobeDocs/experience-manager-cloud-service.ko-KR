@@ -3,7 +3,7 @@ title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1975'
 ht-degree: 100%
 
@@ -290,7 +290,7 @@ From the **Sites** console you can select several pages then use **View Properti
 * **보기**
 
    * 영향 받는 페이지 목록
-      * 필요한 경우 선택/선택 취소할 수 있습니다.
+      * 필요한 경우 선택/선택 해제할 수 있습니다.
       * 탭
          * 단일 페이지의 속성을 볼 때처럼 탭 아래에 속성이 정렬됩니다.
    * 속성 하위 집합
@@ -306,7 +306,7 @@ From the **Sites** console you can select several pages then use **View Properti
    * 사용 가능한 필드의 값을 업데이트할 수 있습니다.
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
       * 필드가 다중 값(예: 태그)이면 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
-   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다. 
+   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다.
 
 >[!NOTE]
 >
