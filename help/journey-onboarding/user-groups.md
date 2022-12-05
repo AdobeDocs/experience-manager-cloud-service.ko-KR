@@ -1,47 +1,47 @@
 ---
-title: 알림에 대한 사용자 그룹
-description: Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수신 기능을 관리하는 방법을 알아봅니다.
+title: 알림을 위한 사용자 그룹
+description: 중요한 이메일 알림 수신을 관리하기 위해 Admin Console에서 사용자 그룹을 만드는 방법에 대해 알아봅니다.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: b56bb15f8330deefc11d19e784e36590ef674dd8
-workflow-type: tm+mt
+exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
+source-git-commit: 83e49215eff975300f263dcf0215081b02260e70
+workflow-type: ht
 source-wordcount: '908'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# 알림을 위한 사용자 그룹 {#user-groups}
 
-# 알림에 대한 사용자 그룹 {#user-groups}
-
-Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수신 기능을 관리하는 방법을 알아봅니다.
+중요한 이메일 알림 수신을 관리하기 위해 Admin Console에서 사용자 그룹을 만드는 방법에 대해 알아봅니다.
 
 ## 개요 {#overview}
 
-수시로 Adobe은 AEM as a Cloud Service 환경에 대해 사용자에게 문의해야 합니다. Adobe은 제품 내 알림 외에도 가끔 알림에 이메일을 사용합니다. 다음과 같은 두 가지 유형의 전자 메일 알림이 있습니다.
+때때로 Adobe는 AEM as a Cloud Service 환경과 관련하여 사용자에게 연락을 취해야 합니다. 제품 내 알림 외에도 Adobe는 때때로 알림을 위해 이메일을 사용합니다. 이러한 이메일 알림에는 두 가지 유형이 있습니다.
 
-* **인시던트 알림** - 이러한 알림은 사고 중 또는 Adobe이 AEM as a Cloud Service 환경에서 발생할 수 있는 가용성 문제를 확인한 경우 전송됩니다.
-* **사전 알림** - 이러한 알림은 Adobe 지원 팀 구성원이 AEM as a Cloud Service 환경에 도움이 될 수 있는 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하려는 경우 전송됩니다.
+* **문제 알림** - 이러한 알림은 문제 중에 또는 Adobe가 AEM as a Cloud Service 환경의 잠재적 가용성 문제를 식별한 경우 전송됩니다.
+* **사전 알림** - 이러한 알림은 Adobe 지원 팀원이 AEM as a Cloud Service 환경에 도움이 될 수 있는 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하고자 할 때 전송됩니다.
 
-올바른 사용자가 이러한 알림을 수신하려면 이 문서에 설명된 사용자 그룹을 구성하고 지정해야 합니다.
+올바른 사용자가 이러한 알림을 받으려면 사용자 그룹을 구성하고 할당해야 하며 이 문서에 방법이 설명되어 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
-사용자 그룹은 Admin Console에서 생성 및 유지 관리되므로 알림에 대한 사용자 그룹을 생성하기 전에 다음을 수행해야 합니다.
+사용자 그룹은 Admin Console에서 만들고 유지 관리하기 때문에 알림을 위한 사용자 그룹을 만들기 전에 다음을 충족해야 합니다.
 
-* 그룹 멤버십을 추가 및 편집할 수 있는 권한이 있습니다.
+* 그룹 멤버십을 추가하고 편집할 수 있는 권한이 있습니다.
 * 유효한 Adobe Admin Console 프로필이 있습니다.
 
 ## 새 Cloud Manager 제품 프로필 만들기 {#create-groups}
 
-알림 수신을 제대로 설정하려면 두 개의 사용자 그룹을 만들어야 합니다. 이러한 단계는 한 번만 수행해야 합니다.
+알림 수신을 올바르게 설정하려면 두 개의 사용자 그룹을 생성해야 합니다. 이러한 단계는 한 번만 수행해야 합니다.
 
-1. Admin Console에 로그인합니다. [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Admin Console([`https://adminconsole.adobe.com`)에 로그인합니다.](https://adminconsole.adobe.com)
 
-1. 에서 **개요** 페이지를 선택하고 **Adobe Experience Manager as a Cloud Service** 에서 **제품 및 서비스** 카드.
+1. **개요** 페이지의 **제품 및 서비스** 카드에서 **Adobe Experience Manager as a Cloud Service**&#x200B;를 선택합니다.
 
    ![사용자 그룹](assets/products_services.png)
 
-1. 로 이동합니다 **Cloud Manager** 모든 인스턴스 목록에서 인스턴스를 생성합니다.
+1. 모든 인스턴스 목록에서 **Cloud Manager** 인스턴스로 이동합니다.
 
    ![사용자 그룹 만들기](assets/cloud_manager_instance.png)
 
@@ -49,19 +49,19 @@ Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수
 
    ![사용자 그룹 만들기](assets/cloud_manager_profiles.png)
 
-1. 클릭 **새 프로필** 다음 세부 사항을 제공합니다.
+1. **새 프로필**&#x200B;을 클릭하고 다음 세부 정보를 제공합니다.
 
    * **제품 프로필 이름**: `Incident Notification - Cloud Service`
-   * **디스플레이 이름**: `Incident Notification - Cloud Service`
-   * **설명**: 인시던트 중에 알림을 받을 사용자 또는 Adobe이 AEM as a Cloud Service 환경에서 잠재적인 가용성 문제를 확인한 사용자의 Cloud Manager 프로필
+   * **표시 이름**: `Incident Notification - Cloud Service`
+   * **설명**: 문제 중에 또는 Adobe가 AEM as a Cloud Service 환경에서 잠재적인 가용성 문제를 식별한 경우 알림을 받을 사용자를 위한 Cloud Manager 프로필
 
 1. **저장**&#x200B;을 클릭합니다.
 
-1. 클릭 **새 프로필** 를 한 번 더 확인하고 다음 세부 정보를 제공합니다.
+1. **새 프로필**&#x200B;을 한 번 더 클릭하고 다음 세부 정보를 제공합니다.
 
    * **제품 프로필 이름**: `Proactive Notification - Cloud Service`
-   * **디스플레이 이름**: `Proactive Notification - Cloud Service`
-   * **설명**: Adobe 지원 팀 구성원이 AEM as a Cloud Service 환경 구성을 위해 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하려고 할 때 알림을 받을 사용자를 위한 Cloud Manager 프로필
+   * **표시 이름**: `Proactive Notification - Cloud Service`
+   * **설명** - Adobe 지원 팀원이 AEM as a Cloud Service 환경 구성과 관련해 잠재적인 최적화 또는 권장 사항에 대한 지침을 제공하고자 할 때 알림을 받을 사용자를 위한 Cloud Manager 프로필
 
 1. **저장**&#x200B;을 클릭합니다.
 
@@ -69,66 +69,66 @@ Admin Console에서 사용자 그룹을 만들어 중요한 이메일 알림 수
 
 >[!NOTE]
 >
->Cloud Manager가 **제품 프로필 이름** 은 제공된 것과 정확히 같습니다. 오류를 방지하려면 제공된 제품 프로필 이름을 복사하여 붙여 넣으십시오. 임의 편차나 오타가 원하는 대로 알림이 전송되지 않습니다.
+>Cloud Manager **제품 프로필 이름**&#x200B;이 제공된 것과 정확히 동일해야 합니다. 오류를 방지하려면 제공된 제품 프로필 이름을 복사하여 붙여넣으십시오. 변동이나 오타가 있으면 알림이 원하는 대로 전송되지 않습니다.
 >
->오류가 발생하거나 프로필이 정의되지 않은 경우, Adobe은 기본적으로 **Cloud Manager 개발자** 또는 **배포 관리자** 프로필 .
+>오류가 있거나 프로필이 정의되지 않은 경우 Adobe는 기본적으로 **Cloud Manager 개발자** 또는 **개발 관리자** 프로필에 할당된 기존 사용자에게 알립니다.
 
 ## 새 알림 제품 프로필에 사용자 할당 {#add-users}
 
-그룹이 생성되었으므로 적절한 사용자를 할당해야 합니다. 새 사용자를 만들거나 기존 사용자를 업데이트하여 이 작업을 수행할 수 있습니다.
+이제 그룹이 만들어졌으므로 적절한 사용자를 할당해야 합니다. 새 사용자를 만들거나 기존 사용자를 업데이트하여 이 작업을 수행할 수 있습니다.
 
 ### 그룹에 새 사용자 추가 {#new-user}
 
-다음 단계에 따라 페더레이션 ID가 아직 설정되지 않은 사용자를 추가합니다.
+Federated ID가 아직 설정되지 않은 사용자를 추가하려면 다음 단계를 따르십시오.
 
-1. 인시던트 또는 사전 알림을 받아야 하는 사용자를 식별합니다.
+1. 문제 또는 사전 알림을 수신해야 하는 사용자를 식별합니다.
 
-1. Admin Console에 로그인합니다. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 아직 로그인하지 않은 경우
+1. 아직 로그인하지 않은 경우 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에서 Admin Console에 로그인합니다.
 
-1. 에서 **개요** 페이지를 선택하고 **Adobe Experience Manager as a Cloud Service** 에서 **제품 및 서비스** 카드.
+1. **개요** 페이지의 **제품 및 서비스** 카드에서 **Adobe Experience Manager as a Cloud Service**&#x200B;를 선택합니다.
 
    ![사용자](assets/product_services.png)
 
-1. 팀 구성원의 페더레이션 ID를 아직 설정하지 않은 경우 **사용자** 위쪽 탐색에서 tab 키를 누른 다음 을 선택합니다 **사용자 추가**. 그렇지 않으면 섹션으로 건너뜁니다 [그룹에 기존 사용자 추가.](#existing-users)
+1. 팀원의 Federated ID가 아직 설정되지 않은 경우 상단 탐색에서 **사용자** 탭을 선택한 다음 **사용자 추가**&#x200B;를 선택합니다. 또는 섹션 [그룹에 기존 사용자 추가](#existing-users)로 건너뜁니다.
 
    ![사용자](assets/cloud_manager_add_user.png)
 
-1. 에서 **팀에 사용자 추가** 대화 상자에서 추가할 사용자의 이메일 ID를 입력하고 선택합니다 `Adobe ID` 대상 **ID 유형**.
+1. **팀에 사용자 추가** 대화 상자에서 추가하려는 사용자의 이메일 ID를 입력하고 **ID 유형**&#x200B;으로 `Adobe ID`를 선택합니다.
 
-1. 아래의 더하기 단추를 클릭합니다. **제품 선택** 제품 선택을 시작하는 제목.
+1. **제품 선택** 제목 아래의 더하기 버튼을 클릭하여 제품 선택을 시작합니다.
 
-1. 선택 **Adobe Experience Manager as a Cloud Service** 새 그룹 중 하나 또는 둘 다 사용자에게 할당합니다.
+1. **Adobe Experience Manager as a Cloud Service**&#x200B;를 선택하고 새 그룹 중 하나 또는 모두를 사용자에게 할당합니다.
 
-   * **인시던트 알림 - Cloud Service**
+   * **문제 알림 - Cloud Service**
    * **사전 알림 - Cloud Service**
 
-1. 클릭 **저장** 추가한 사용자에게 환영 이메일이 전송됩니다.
+1. **저장**&#x200B;을 클릭하면 추가한 사용자에게 시작 이메일이 전송됩니다.
 
-이제 초대된 사용자가 알림을 받게 됩니다. 팀의 사용자에게 알림을 받을 수 있도록 이 단계를 반복합니다.
+이제 초대된 사용자가 알림을 받게 됩니다. 알림을 받으려는 팀의 사용자에 대해 이 단계를 반복합니다.
 
 ### 그룹에 기존 사용자 추가 {#existing-user}
 
-페더레이션 ID가 이미 있는 사용자를 추가하려면 다음 단계를 따르십시오.
+Federated ID가 이미 존재하는 사용자를 추가하려면 다음 단계를 따르십시오.
 
-1. 인시던트 또는 사전 알림을 받아야 하는 사용자를 식별합니다.
+1. 문제 또는 사전 알림을 수신해야 하는 사용자를 식별합니다.
 
-1. Admin Console에 로그인합니다. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 아직 로그인하지 않은 경우
+1. 아직 로그인하지 않은 경우 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에서 Admin Console에 로그인합니다.
 
-1. 에서 **개요** 페이지를 선택하고 **Adobe Experience Manager as a Cloud Service** 에서 **제품 및 서비스** 카드.
+1. **개요** 페이지의 **제품 및 서비스** 카드에서 **Adobe Experience Manager as a Cloud Service**&#x200B;를 선택합니다.
 
-1. 을(를) 선택합니다 **사용자** 위쪽 탐색에서 Tab 키를 누릅니다.
+1. 상단 탐색에서 **사용자** 탭을 선택합니다.
 
-1. 알림 그룹에 추가하려는 팀 구성원에 대해 이미 페더레이션 ID가 존재하는 경우 목록에서 해당 사용자를 찾아 클릭합니다. 그렇지 않으면 섹션으로 건너뜁니다 [그룹에 새 사용자 추가.](#add-user)
+1. 알림 그룹에 추가하려는 팀원의 Federated ID가 이미 있는 경우 목록에서 해당 사용자를 찾아 클릭합니다. 또는 섹션 [그룹에 새 사용자 추가](#add-user)로 건너뜁니다.
 
-1. 에서 **제품** 사용자 세부 사항 창의 섹션에서 줄임표 단추를 클릭한 다음 을 선택합니다 **편집**.
+1. 사용자 세부 정보 창의 **제품** 섹션에서 줄임표 버튼을 클릭한 다음 **편집**&#x200B;을 선택합니다.
 
-1. 에서 **제품 편집** 창의 아래에 있는 연필 단추를 클릭합니다 **제품 선택** 제품 선택을 시작하는 제목.
+1. **제품 편집** 창에서 **제품 선택** 제목 아래의 연필 버튼을 클릭하여 제품 선택을 시작합니다.
 
-1. 선택 **Adobe Experience Manager as a Cloud Service** 새 그룹 중 하나 또는 둘 다 사용자에게 할당합니다.
+1. **Adobe Experience Manager as a Cloud Service**&#x200B;를 선택하고 새 그룹 중 하나 또는 모두를 사용자에게 할당합니다.
 
-   * **인시던트 알림 - Cloud Service**
+   * **문제 알림 - Cloud Service**
    * **사전 알림 - Cloud Service**
 
-1. 클릭 **저장** 추가한 사용자에게 환영 이메일이 전송됩니다.
+1. **저장**&#x200B;을 클릭하면 추가한 사용자에게 시작 이메일이 전송됩니다.
 
-이제 초대된 사용자가 알림을 받게 됩니다. 팀의 사용자에게 알림을 받을 수 있도록 이 단계를 반복합니다.
+이제 초대된 사용자가 알림을 받게 됩니다. 알림을 받으려는 팀의 사용자에 대해 이 단계를 반복합니다.
