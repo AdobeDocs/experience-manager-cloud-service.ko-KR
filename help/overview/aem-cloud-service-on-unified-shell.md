@@ -3,9 +3,9 @@ title: 통합 쉘의 AEM as a Cloud Service
 description: 통합 쉘의 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 82%
 
 ## 개요 {#overview}
 
-AEM as a Cloud Service(작성자 서비스)는 사용자 경험을 향상하고 다른 모든 Experience Cloud 애플리케이션과 통합할 수 있도록 통합 셸과 통합됩니다. 이 통합의 영향은 아래와 같이 애플리케이션의 상단 헤더에서 볼 수 있습니다.
+AEM as a Cloud Service(작성자 서비스)가 통합 쉘과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 이 통합의 영향은 아래와 같이 애플리케이션의 상단 헤더에서 볼 수 있습니다.
 
 ![이미지](/help/overview/assets/unifiedshell_header.png)
 
@@ -23,14 +23,14 @@ AEM as a Cloud Service(작성자 서비스)는 사용자 경험을 향상하고 
 * 간편한 조직 간 전환 또는 다른 애플리케이션으로의 전환
 * 제품 도움말 개선
 * 문제를 보고하거나 Adobe와 아이디어를 공유할 수 있는 간편한 제품 내 피드백 버튼
-* AEM as a Cloud Service에 대한 알림뿐 아니라 글로벌 제품 공지 및 알림에 액세스할 수 있습니다
+* AEM as a Cloud Service 관련 알림과 더불어 글로벌 제품 공지 및 알림에 대한 액세스 권한
 
 ## 통합 쉘 비활성화 {#disabling-unified-shell}
 
 기본적으로 AEM as a Cloud Service에서는 통합 쉘이 활성화되어 있습니다. 그러나 최상위 헤더를 맞춤화한 경우 맞춤화와 관련된 문제를 방지하기 위해 통합 쉘을 비활성화하는 것이 좋습니다. 통합 쉘을 비활성화하려면 아래 단계를 따르십시오.
 
 >[!NOTE]
->관리 권한이 있는 계정으로만 통합 셸을 비활성화할 수 있습니다.
+>관리 권한이 있는 계정에서만 통합 쉘을 비활성화할 수 있습니다.
 
 1. **도구 - 클라우드 서비스**&#x200B;로 이동합니다.
 
