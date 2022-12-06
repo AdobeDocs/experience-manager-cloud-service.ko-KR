@@ -2,9 +2,9 @@
 title: 경험 조각 개요
 description: Adobe Experience Manager as a Cloud Service 경험 구성 요소를 확장합니다.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1651'
 ht-degree: 3%
 
 ---
@@ -48,6 +48,19 @@ ht-degree: 3%
 일반 표현물 선택기는 추가 스크립트와 반대로 변압기를 사용합니다. a [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 는 변압기로 사용됩니다. 다음 위치에서 구성됩니다.
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### HTML 표현물 생성 구성 {#configuring-html-rendition-generation}
+
+HTML 표현물은 Sling 재작성기 파이프라인을 사용하여 생성됩니다. 파이프라인은에서 정의됩니다. `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML 변압기는 다음 옵션을 지원합니다.
+
+* `allowedCssClasses`
+   * 최종 변환에 두어야 하는 CSS 클래스와 일치하는 RegEx 표현식입니다.
+   * 이 기능은 고객이 일부 특정 CSS 클래스를 제거하려는 경우에 유용합니다
+* `allowedTags`
+   * 최종 변환에서 허용할 HTML 태그 목록입니다.
+   * 기본적으로 다음 태그가 허용됩니다(구성이 필요 없음). html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link 및 script
+
+오버레이를 사용하여 재작성기를 구성하는 것이 좋습니다. 자세한 내용은 [AEM as a Cloud Service의 오버레이](/help/implementing/developing/introduction/overlays.md)
 
 ## 경험 조각용 템플릿 {#templates-for-experience-fragments}
 
