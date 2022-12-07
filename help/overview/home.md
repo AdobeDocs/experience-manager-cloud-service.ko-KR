@@ -2,14 +2,14 @@
 title: Experience Manager as a Cloud Service 시작하기
 description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 93%
 
 ---
 
-# Experience Manager as a Cloud Service 개요 {#aem-overview-guide}
+# Experience Manager as a Cloud Service 설명서 {#aem-overview-guide}
 
 여기에서 Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능을 살펴보십시오.
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 | [작업 사용 안내서](/help/operations/home.md) | 색인화 및 유지 관리 작업과 같은 Experience Manager as a Cloud Service가 수행하는 백엔드 작업에 대해 알아봅니다. |
 | [Commerce 사용 안내서](/help/commerce-cloud/home.md) | AEM as a Cloud Service의 Commerce Integration Framework에 대해 알아봅니다. |
 
-## 기타 Experience Manager 리소스 {#other-resources}
+## 기타 Experience Manager 도움말 리소스 {#other-resources}
 
 * [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [디스패처 설명서](/help/implementing/dispatcher/overview.md)
