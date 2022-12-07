@@ -2,10 +2,10 @@
 title: 프로덕션 프로그램 만들기
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
+source-git-commit: c68d4240fb70cc1d533c5fad6472c6c192085603
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 80%
 
 ---
 
@@ -32,13 +32,26 @@ ht-degree: 100%
 
 1. 화면 오른쪽 상단에서 **프로그램 추가**&#x200B;를 클릭합니다.
 
-   ![Cloud Manager 랜딩 페이지](assets/first_timelogin1.png)
+   ![Cloud Manager 랜딩 페이지](assets/log-in.png)
 
-1. 프로그램 만들기 마법사에서 **프로덕션 설정**&#x200B;을 선택하여 프로덕션 프로그램을 만듭니다. **계속**&#x200B;을 클릭하기 전에 기본 프로그램 이름을 승인하거나 편집할 수 있습니다.
+1. 프로그램 만들기 마법사에서 **프로덕션 설정**&#x200B;을 선택하여 프로덕션 프로그램을 만듭니다.
 
-   ![프로그램 만들기 마법사](assets/create-prod1.png)
+   1. 기본 프로그램 이름을 적용하거나 편집할 수 있습니다.
+   1. 선택적으로 축소판 이미지를 드래그하여 놓아 프로그램을 식별할 수 있습니다.
+   1. **계속**&#x200B;을 탭하거나 클릭합니다.
+
+   ![프로그램 만들기 마법사](assets/create-production-program.png)
+
+1. 보안 권한을 강화한 경우에는 **향상된 보안** 탭에는 다음과 같은 옵션이 제공됩니다 **고급 보안 사용** 제작 프로그램의 경우 필요한 경우 옵션을 선택하여 고급 보안을 활성화하고 를 탭하거나 클릭합니다 **계속**.
+
+   * 프로그램을 만든 후에는 향상된 보안을 사용하거나 사용하지 않도록 설정할 수 없습니다.
+   * [추가 정보](https://www.adobe.com/go/hipaa-ready) Adobe의 HIPAA 지원 솔루션 구현에 대해 설명합니다.
+
+   ![향상된 보안 옵션](assets/create-production-program-enhanced.png)
 
 1. **솔루션 및 추가 기능** 탭에서 프로그램에 포함할 솔루션을 선택합니다.
+
+   * 을(를) 선택한 경우 **고급 보안 사용** 이전에는 HIPAA 자격을 사용할 수 있는 솔루션만 선택할 수 있었습니다.
 
    ![솔루션 선택](assets/setup-prod-select.png)
 

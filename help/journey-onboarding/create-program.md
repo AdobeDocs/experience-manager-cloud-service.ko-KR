@@ -3,10 +3,10 @@ title: 프로그램 제작
 description: Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 228330465b6266590a5badbfa84644b3d1329033
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 95%
+source-wordcount: '626'
+ht-degree: 91%
 
 ---
 
@@ -38,6 +38,10 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 * **샌드박스 프로그램**&#x200B;은 일반적으로 교육, 데모 실행, 활성화, POC 또는 문서화 목적으로 만들어집니다.
 
 각각 용도가 다르기 때문에 환경마다 옵션이 다릅니다. 그러나 만드는 과정은 비슷합니다. 이 온보딩 여정을 위해 샌드박스 환경을 만듭니다.
+
+>[!TIP]
+>
+>프로덕션 프로그램을 만들어야 하는 경우 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
 ## 샌드박스 프로그램 만들기 {#create-sandbox}
 
