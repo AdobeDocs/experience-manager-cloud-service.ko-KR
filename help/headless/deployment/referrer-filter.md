@@ -3,16 +3,21 @@ title: AEM Headless로 레퍼러 필터 구성
 description: Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스트에서 액세스할 수 있습니다. Headless 애플리케이션용 GraphQL 끝점 액세스를 활성화하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d8cc024fa5128e4b27098d1bff92588487fe101a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 69%
 
 ---
 
 # 레퍼러 필터 {#referrer-filter}
 
-Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스트에서 액세스할 수 있습니다. Headless 애플리케이션용 GraphQL 끝점 액세스를 활성화하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다.
+Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스트에서 액세스할 수 있습니다.
+
+HTTP POST을 통해 헤드리스 애플리케이션의 GraphQL 종단점에 액세스할 수 있도록 하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다. HTTP GET을 통해 AEM에 액세스하는 AEM 헤드리스 지속적인 쿼리를 사용할 때는 레퍼러 필터 구성이 필요하지 않습니다.
+
+>[!WARNING]
+> AEM 레퍼러 필터는 OSGi 구성 팩토리가 아닙니다. 즉, 한 번에 하나의 구성만 AEM 서비스에서 활성 상태입니다. 가능하면 사용자 지정 레퍼러 필터 구성을 추가하지 마십시오. 이 구성은 AEM 기본 구성을 덮어쓰고 제품 기능을 손상시킬 수 있습니다.
 
 다음과 같은 레퍼러 필터에 대한 적절한 OSGi 구성 추가를 통해 수행됩니다.
 
@@ -25,21 +30,21 @@ Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스
 
 ```xml
 {
-    "allow.empty":false,
-    "allow.hosts":[
+    "allow.empty": false,
+    "allow.hosts": [
       "my.domain"
     ],
-    "allow.hosts.regexp":[
+    "allow.hosts.regexp": [
       ""
     ],
-    "filter.methods":[
+    "filter.methods": [
       "POST",
       "PUT",
       "DELETE",
       "COPY",
       "MOVE"
     ],
-    "exclude.agents.regexp":[
+    "exclude.agents.regexp": [
       ""
     ]
 }
