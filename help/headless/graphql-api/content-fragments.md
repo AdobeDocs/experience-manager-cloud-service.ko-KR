@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달용 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
+source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
 workflow-type: tm+mt
-source-wordcount: '2708'
-ht-degree: 100%
+source-wordcount: '4179'
+ht-degree: 60%
 
 ---
 
@@ -101,18 +101,22 @@ GraphQL을 사용하여 다음 중 하나를 반환하는 쿼리를 수행할 �
 
 * **[항목 목록](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-다음 작업도 수행할 수 있습니다.
+AEM은 쿼리(두 유형 모두)를 [캐시할 수 있는 지속적인 쿼리](/help/headless/graphql-api/persisted-queries.md) Dispatcher 및 CDN에 의해 변경되었습니다.
 
-* [캐시된 지속 쿼리](/help/headless/graphql-api/persisted-queries.md)
+### GraphQL 쿼리 우수 사례(Dispatcher 및 CDN) {#graphql-query-best-practices}
 
-### GraphQL 쿼리 모범 사례(Dispatcher) {#graphql-query-best-practices}
-
-다음과 같은 이유로 [지속 쿼리](/help/headless/graphql-api/persisted-queries.md)를 사용하는 것이 좋습니다.
+다음 [지속되는 쿼리](/help/headless/graphql-api/persisted-queries.md) 게시 인스턴스에서 사용할 권장 방법은 다음과 같습니다.
 
 * 캐시됩니다.
 * AEM as a Cloud Service을 통해 중앙 집중식으로 관리됩니다.
 
-직접 및/또는 POST 쿼리는 캐시되지 않으므로 권장되지 않습니다. 따라서 기본 인스턴스에서는 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
+>[!NOTE]
+>
+>일반적으로 작성자에는 디스패처/CDN이 없으므로 여기에 지속되는 쿼리를 사용할 수 있는 이득 사항은 없습니다. 테스트 빼고요
+
+POST 요청을 사용하는 GraphQL 쿼리는 캐시되지 않으므로 권장되지 않습니다. 따라서 기본 인스턴스에서 Dispatcher가 이러한 쿼리를 차단하도록 구성됩니다.
+
+GraphQL은 GET 요청도 지원하지만, 지속적인 쿼리를 사용하여 피할 수 있는 제한(예: URL 길이)에 도달할 수 있습니다.
 
 >[!NOTE]
 >
@@ -121,6 +125,8 @@ GraphQL을 사용하여 다음 중 하나를 반환하는 쿼리를 수행할 �
 >* `ENABLE_GRAPHQL_ENDPOINT`라는 Cloud Manager 환경 변수 생성
 >* (`true` 값 포함)
 
+
+<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -146,6 +152,10 @@ GraphQL을 사용하여 다음 중 하나를 반환하는 쿼리를 수행할 �
 
 권한은 Assets에 액세스하는 데 필요한 권한입니다.
 
+GraphQL 쿼리는 기본 요청의 AEM 사용자의 권한으로 실행됩니다. 사용자에게 일부 조각(자산으로 저장됨)에 대한 읽기 권한이 없는 경우 결과 세트의 일부가 되지 않습니다.
+
+또한 GraphQL 쿼리를 실행할 수 있으려면 사용자가 GraphQL 종단점에 액세스할 수 있어야 합니다.
+
 ## 스키마 생성 {#schema-generation}
 
 GraphQL은 강력한 형식의 API입니다. 즉, 데이터는 유형별로 명확하게 구조화되고 구성되어야 합니다.
@@ -160,7 +170,7 @@ GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해
 >
 >즉, 이런 식으로 유출될 수 있기 때문에 민감한 데이터가 없는지 확인해야 합니다. 예를 들어 모델 정의에서 필드 이름으로 나타날 수 있는 정보가 여기에 포함됩니다.
 
-예를 들어 사용자가 `Article`이라는 콘텐츠 조각 모델을 만든 경우 AEM은 `ArticleModel` 유형의 개체인 `article`을 생성합니다. 이 유형 내의 필드는 모델에서 정의된 필드 및 데이터 형식에 해당합니다.
+예를 들어 사용자가 `Article`로 설정되면 AEM에서 GraphQL 유형을 생성합니다 `ArticleModel`. 이 유형 내의 필드는 모델에서 정의된 필드 및 데이터 형식에 해당합니다. 또한 이 유형에서 작동하는 쿼리에 대한 진입점을 만듭니다(예: ) `articleByPath` 또는 `articleList`.
 
 1. 콘텐츠 조각 모델:
 
@@ -173,11 +183,15 @@ GraphQL 사양은 특정 인스턴스에서 데이터의 정보를 얻기 위해
 
    * 그 중 `author`, `main`, `referencearticle` 세 가지 필드는 사용자가 제어했습니다.
 
-   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 콘텐츠 조각에 대한 정보를 제공하는 유용한 방법을 표시합니다. 이 예에서는 `_path`, `_metadata`, `_variations`입니다. 이 [도우미 필드](#helper-fields)는 사용자가 정의한 것과 자동 생성된 것을 구별하기 위해 앞에 `_` 로 표시됩니다.
+   * 다른 필드는 AEM에 의해 자동으로 추가되었으며 특정 컨텐츠 조각에 대한 정보를 제공하는 유용한 방법을 나타냅니다. 이 예에서 [도우미 필드](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. 사용자가 Article 모델을 기반으로 콘텐츠 조각을 만든 경우 GraphQL을 통해 정보를 얻을 수 있습니다. 예를 들어 [샘플 쿼리](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries)([GraphQL과 함께 사용하기 위한 샘플 콘텐츠 조각 구조](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql) 기반)를 참조하십시오.
 
 AEM용 GraphQL에서 스키마는 유연합니다. 즉, 콘텐츠 조각 모델이 만들어지거나 업데이트되거나 삭제될 때마다 자동 생성됩니다. 콘텐츠 조각 모델을 업데이트할 때도 데이터 스키마 캐시가 새로 고쳐집니다.
+
+<!-- move the following to a separate "in depth" page -->
+
+콘텐츠 조각 모델을 업데이트할 때도 데이터 스키마 캐시가 새로 고쳐집니다.
 
 Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 백그라운드에서 수신 대기합니다. 업데이트가 감지되면 스키마의 해당 부분만 다시 생성됩니다. 이 최적화는 시간을 절약하고 안정성을 제공합니다.
 
@@ -199,6 +213,8 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
 스키마는 GraphQL 쿼리와 동일한 끝점을 통해 제공되며 스키마가 확장자 `GQLschema`로 호출되는 것을 처리하는 클라이언트가 있습니다. 예를 들어 `/content/cq:graphql/global/endpoint.GQLschema`에 대해 간단한 `GET` 요청을 수행하면 콘텐츠 유형이 있는 스키마의 출력이 됩니다. `text/x-graphql-schema;charset=iso-8859-1`.
 
+<!-- move through to here to a separate "in depth" page -->
+
 ### 스키마 생성 - 게시되지 않은 모델 {#schema-generation-unpublished-models}
 
 콘텐츠 조각이 중첩되면 상위 콘텐츠 조각 모델은 게시되지만 참조된 모델은 게시되지 않을 수 있습니다.
@@ -215,46 +231,46 @@ Sites GraphQL 서비스는 콘텐츠 조각 모델에 대한 수정 사항을 �
 
 * 귀하가 생성하는 필드입니다.
 
-   선택한[필드 유형](#field-types)은 콘텐츠 조각 모델을 구성하는 방법을 기반으로 필드를 만드는 데 사용됩니다. 필드 이름은 **데이터 형식**&#x200B;의 **속성 이름** 필드에서 가져옵니다.
+   선택 항목 [데이터 유형](#Data-types) 컨텐츠 조각 모델을 구성하는 방법에 따라 필드를 만드는 데 사용됩니다. 필드 이름은 **속성 이름** 필드 **데이터 유형** 탭.
 
-   * 사용자가 특정 데이터 형식을 구성할 수 있기 때문에(예를 들어 한 줄 텍스트 또는 다중 필드로) **Render As** 속성도 고려해야 합니다.
+   * 또한 **다음으로 렌더링** 사용자가 특정 데이터 유형을 구성할 수 있으므로 고려해야 할 사항입니다. 예를 들어, 단일 행 텍스트 필드를 선택하여 여러 단일 행 텍스트를 포함하도록 구성할 수 있습니다 `multifield` 드롭다운
 
 * AEM용 GraphQL은 또한 여러 [도우미 필드](#helper-fields)를 생성합니다.
 
-   도우미 필드는 콘텐츠 조각을 식별하거나 콘텐츠 조각에 대한 자세한 정보를 얻는 데 사용됩니다.
-
-### 필드 유형 {#field-types}
+### 데이터 유형 {#data-types}
 
 AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐츠 조각 모델 데이터 형식 및 해당 GraphQL 유형이 표시됩니다.
 
 | 콘텐츠 조각 모델 - 데이터 형식 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
 | 한 줄 텍스트 | 문자열, [문자열] |  작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됨 |
-| 여러 줄 텍스트 | 문자열 |  기사의 본문과 같은 텍스트 출력에 사용됨 |
+| 여러 줄 텍스트 | 문자열, [문자열] |  기사의 본문과 같은 텍스트 출력에 사용됨 |
 | 숫자 |  부동, [Float] | 부동 소수점 숫자 및 일반 숫자를 표시하는 데 사용됨 |
 | 부울 |  부울 |  확인란을 표시하는 데 사용됨 → 간단한 참/거짓 진술 |
 | 날짜 및 시간 | 달력 |  ISO 8086 형식으로 날짜와 시간을 표시하는 데 사용됨. 선택한 유형에 따라 AEM GraphQL에서 세 가지 버전(`onlyDate`, `onlyTime`, `dateTime`)을 사용할 수 있습니다. |
 | 열거 |  문자열 |  모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됨 |
 |  태그 |  [문자열] |  AEM에서 사용되는 태그를 나타내는 문자열 목록을 표시하는 데 사용됨 |
-| 콘텐츠 참조 |  문자열 |  AEM에서 다른 에셋에 대한 경로를 표시하는 데 사용됨 |
+| 콘텐츠 참조 |  문자열, [문자열] |  AEM에서 다른 에셋에 대한 경로를 표시하는 데 사용됨 |
 | 조각 참조 |  *모델 유형* |  모델이 생성될 때 정의된 특정 모델 유형의 다른 콘텐츠 조각을 참조하는 데 사용됨 |
 
 ### 도우미 필드 {#helper-fields}
 
 사용자 생성 필드의 데이터 형식 외에도 AEM용 GraphQL은 콘텐츠 조각 식별을 돕거나 콘텐츠 조각에 대한 추가 정보를 제공하기 위해 많은 *도우미* 필드도 생성합니다.
 
+이 [도우미 필드](#helper-fields)는 사용자가 정의한 것과 자동 생성된 것을 구별하기 위해 앞에 `_` 로 표시됩니다.
+
 #### 경로 {#path}
 
-경로 필드는 GraphQL에서 식별자로 사용됩니다. AEM 저장소 내 콘텐츠 조각 에셋의 경로를 나타냅니다. 다음과 같은 이유로 콘텐츠 조각의 식별자로 선택되었습니다.
+경로 필드는 AEM GraphQL에서 식별자로 사용됩니다. AEM 저장소 내 콘텐츠 조각 에셋의 경로를 나타냅니다. 다음과 같은 이유로 콘텐츠 조각의 식별자로 선택되었습니다.
 
 * AEM 내에서 고유합니다.
 * 쉽게 가져올 수 있습니다.
 
-다음 코드는 콘텐츠 조각 모델 `Person`을 기반으로 생성된 모든 콘텐츠 조각의 경로를 표시합니다.
+다음 코드는 컨텐츠 조각 모델을 기반으로 만들어진 모든 컨텐츠 조각의 경로를 표시합니다 `Author`WKND 자습서에서 제공한 대로,
 
-```xml
+```graphql
 {
-  personList {
+  authorList {
     items {
       _path
     }
@@ -264,13 +280,13 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 특정 유형의 단일 콘텐츠 조각을 검색하려면 먼저 해당 경로도 결정해야 합니다. 예:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/sofia-sj-berg") {
     item {
       _path
       firstName
-      name
+      lastName
     }
   }
 }
@@ -303,11 +319,10 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 메타데이터를 쿼리하려면:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/sofia-sj-berg") {
     item {
-      _path
       _metadata {
         stringMetadata {
           name
@@ -334,9 +349,9 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 `_variations` 필드는 콘텐츠 조각에 있는 변형 쿼리를 단순화하기 위해 구현되었습니다. 예:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo") {
     item {
       _variations
     }
@@ -344,11 +359,15 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 }
 ```
 
+>[!NOTE]
+>
+>다음 사항에 유의하십시오. `_variations` 필드에 가 없습니다. `master` 기본적으로 원본 데이터(다음에서 참조)로서 변형 *기본* ui에서)는 명시적 변형으로 간주되지 않습니다.
+
 [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오.
 
 >[!NOTE]
 >
->지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
+>제공된 변형이 컨텐츠 조각에 존재하지 않는 경우 원본 데이터(마스터 변형이라고도 함)가 (대체) 기본값으로 반환됩니다.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -358,24 +377,51 @@ AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합
 
 GraphQL을 사용하면 쿼리에 변수를 배치할 수 있습니다. 보다 자세한 정보는 [변수에 대한 GraphQL 설명서](https://graphql.org/learn/queries/#variables)를 참조하십시오.
 
-예를 들어 특정 변형이 있는 `Article` 유형의 모든 콘텐츠 조각을 가져오려면 GraphiQL에서 `variation` 변수를 지정할 수 있습니다.
+예를 들어 모든 컨텐츠 조각 유형 `Author` 특정 변형(가능한 경우)에서 인수를 지정할 수 있습니다 `variation` GraphiQL에서 생성합니다.
 
 ![GraphQL 변수](assets/cfm-graphqlapi-03.png "GraphQL 변수")
 
-```xml
-### query
-query GetArticlesByVariation($variation: String!) {
-    articleList(variation: $variation) {
-        items {
-            _path
-            author
-        }
+**쿼리**:
+
+```graphql
+query($variation: String!) {
+  authorList(variation: $variation) {
+    items {
+      _variation
+      lastName
+      firstName
     }
+  }
 }
- 
-### in query variables
+```
+
+**쿼리 변수**:
+
+```json
 {
-    "variation": "Introduction"
+  "variation": "another"
+}
+```
+
+이 쿼리는 작성자의 전체 목록을 반환합니다. 가 없는 작성자 `another` 변형은 원래 데이터로 폴백됩니다(`_variation` 보고서 `master` 이 경우)
+
+지정된 변형을 제공하는 작성자(그리고 원래 데이터로 폴백되는 작성자 건너뛰기)로 목록을 제한하려면 [필터](#filtering):
+
+```graphql
+query($variation: String!) {
+  authorList(variation: $variation, filter: {
+    _variation: {
+      _expressions: {
+        value: $variation
+      }
+    }
+  }) {
+    items {
+      _variation
+      lastName
+      firstName
+    }
+  }
 }
 ```
 
@@ -387,18 +433,22 @@ GraphQL에서는 GraphQL 지시문이라고 하는 변수를 기반으로 쿼리
 
 ![GraphQL 지시문](assets/cfm-graphqlapi-04.png "GraphQL 지시문")
 
-```xml
-### query
+**쿼리**:
+
+```graphql
 query GetAdventureByType($includePrice: Boolean!) {
   adventureList {
     items {
-      adventureTitle
-      adventurePrice @include(if: $includePrice)
+      title
+      price @include(if: $includePrice)
     }
   }
 }
- 
-### in query variables
+```
+
+**쿼리 변수**:
+
+```json
 {
     "includePrice": true
 }
@@ -410,30 +460,93 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 필터링은 논리 연산자 및 표현식을 기반으로 하는 구문을 사용합니다.
 
-예를 들어 다음(기본) 쿼리는 이름이 `Jobs` 또는 `Smith`인 모든 사람을 필터링합니다.
+대부분의 원자부는 특정 필드의 컨텐츠에 적용할 수 있는 단일 표현식입니다. 필드의 내용을 주어진 상수 값과 비교합니다.
 
-```xml
-query {
-  personList(filter: {
-    name: {
+예: 표현식
+
+```graphql
+{
+  value: "some text"
+  _op: EQUALS
+}
+```
+
+필드의 내용을 값과 비교합니다 `some text` 콘텐츠가 값과 같은 경우 성공합니다. 그렇지 않으면 표현식이 실패합니다.
+
+The
+
+다음 연산자를 사용하여 필드를 특정 값과 비교할 수 있습니다.
+
+| 연산자 | 유형 | .. |
+|--- |--- |--- |
+| `EQUALS` | `String`, `ID`, `Boolean` | ...값은 필드의 컨텐츠와 정확히 동일합니다 |
+| `EQUALS_NOT` | `String`, `ID` | ...값: *not* 필드의 콘텐츠와 동일합니다 |
+| `CONTAINS` | `String` | ...필드의 컨텐츠에 값( )이 포함됩니다.`{ value: "mas", _op: CONTAINS }` 일치함 `Christmas`, `Xmas`, `master`,..) |
+| `CONTAINS_NOT` | `String` | ...필드의 콘텐츠는 다음을 수행합니다 *not* 값 포함 |
+| `STARTS_WITH` | `ID` | ...ID는 특정 값(`{ value: "/content/dam/", _op: STARTS_WITH` 일치함 `/content/dam/path/to/fragment`, 하지만 아님 `/namespace/content/dam/something` |
+| `EQUAL` | `Int`, `Float` | ...값은 필드의 컨텐츠와 정확히 동일합니다 |
+| `UNEQUAL` | `Int`, `Float` | ...값: *not* 필드의 콘텐츠와 동일합니다 |
+| `GREATER` | `Int`, `Float` | ...필드의 내용이 값보다 큽니다 |
+| `GREATER_EQUAL` | `Int`, `Float` | ...필드의 내용이 값보다 크거나 같음 |
+| `LOWER` | `Int`, `Float` | ...필드의 내용이 값보다 낮습니다 |
+| `LOWER_EQUAL` | `Int`, `Float` | ...필드의 내용이 값보다 작거나 같습니다 |
+| `AT` | `Calendar`, `Date`, `Time` | ...필드의 컨텐츠는 값과 동일합니다(시간대 설정 포함). |
+| `NOT_AT` | `Calendar`, `Date`, `Time` | ...필드의 컨텐츠는 다음과 같습니다 *not* 값과 동일 |
+| `BEFORE` | `Calendar`, `Date`, `Time` | ...값으로 표시된 때가 필드의 내용으로 표시되는 시점 이전입니다 |
+| `AT_OR_BEFORE` | `Calendar`, `Date`, `Time` | ... 값으로 표시된 시점은 필드의 컨텐츠로 나타내는 이전 또는 동일한 시점입니다 |
+| `AFTER` | `Calendar`, `Date`, `Time` | ...값으로 표시된 시점은 필드의 컨텐츠로 표시된 시점 이후입니다 |
+| `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... 값으로 표시된 시점은 필드의 컨텐츠로 표현되는 시간의 다음 또는 과 같습니다 |
+
+일부 유형에서는 표현식의 평가 방식을 수정하는 추가 옵션을 지정할 수도 있습니다.
+
+| 옵션 | 유형 | 설명 |
+|--- |--- |--- |
+| _ignoreCase | 문자열 | 문자열의 대/소문자를 무시합니다(예: 값 `time` 일치함 `TIME`, `time`, `tImE`,.. |
+| _민감성 | 부동 | 부동 소수점 값에 대한 특정 여백을 동일하게 간주할 수 있습니다(부동 소수점 값의 내부 표현으로 인한 기술 제한 관련 작업). 이 옵션은 성능에 부정적인 영향을 줄 수 있으므로 사용하지 않아야 합니다 |
+
+표현식은 논리 연산자의 도움을 받아 집합에 결합할 수 있습니다(`_logOp`):
+
+* `OR` - 하나 이상의 표현식이 성공하면 표현식 세트가 성공합니다
+* `AND` - 모든 표현식이 성공하면 표현식 세트가 성공합니다(기본값)
+
+각 필드는 고유한 표현식 세트로 필터링할 수 있습니다. 필터 인수에 언급된 모든 필드의 표현식 세트는 결국 자체 논리 연산자로 결합됩니다.
+
+필터 정의( `filter` 쿼리 인수)에는 다음이 포함됩니다.
+
+* 각 필드에 대한 하위 정의(예: `lastName` 필터에 있는 필드 `lastName` 필드 유형의 필드)
+* 각 하위 정의에는 가 포함됩니다 `_expressions` 배열, 표현식 세트 및 `_logOp` 식을 결합해야 하는 논리 연산자를 정의하는 필드입니다.
+* 각 표현식은 값(`value` 필드)와 연산자(`_operator` 필드) 필드의 내용을
+
+생략할 수 있습니다 `_logOp` 항목을 `AND` 및 `_operator` 기본 값이므로 같음을 확인하려면 다음과 같이 하십시오.
+
+다음 예제에서는 `lastName` 의 `Provo` 포함 `sjö`과 별도로,
+
+```graphql
+{
+  authorList(filter: {
+    lastname: {
       _logOp: OR
       _expressions: [
         {
-          value: "Jobs"
+          value: "sjö",
+          _operator: CONTAINS,
+          _ignoreCase: true
         },
         {
-          value: "Smith"
+          value: "Provo"
         }
       ]
     }
   }) {
     items {
-      name
+      lastName
       firstName
     }
   }
 }
 ```
+
+중첩된 필드도 필터링할 수 있지만, 이로 인해 성능 문제가 발생할 수 있으므로 필터링하지 않는 것이 좋습니다.
 
 더 많은 예는 다음을 참조하십시오.
 
@@ -445,67 +558,121 @@ query {
 
 * [WKND 프로젝트 기반 샘플 쿼리](/help/headless/graphql-api/sample-queries.md#sample-queries-using-wknd-project)
 
-<!-- CQDOC-19418 -->
+## 정렬 {#sorting}
 
-<!--
-## Sorting {#sorting}
+이 기능을 사용하면 지정된 필드에 따라 쿼리 결과를 정렬할 수 있습니다.
 
-This feature allows you to sort the query results according to a specified field.
+정렬 기준:
 
-For example:
+* 는 필드 경로를 나타내는 쉼표로 구분된 값 목록입니다
+   * 목록의 첫 번째 필드는 기본 정렬 순서를 정의하고, 기본 정렬 기준의 두 값이 동일한 경우 두 번째 필드가 사용되고, 첫 번째 두 기준이 동일한 경우 세 번째 필드가 사용됩니다.
+   * 점선 표기법, 즉 field1.subfield.subfield 등은
+* 선택 주문 방향 사용
+   * ASC(오름차순) 또는 DESC(내림차순); 기본 ASC가 적용됨
+   * 방향을 필드 별로 지정할 수 있습니다. 즉, 필드를 오름차순으로 정렬하거나 내림차순으로 정렬할 수 있습니다(name, firstName DESC)
+
+예:
 
 ```graphql
 query {
-  articleList(sort:"author, _uuid DESC") {
+  authorList(sort: "lastName, firstName") {
     items {
-      author
-      _path
+      firstName
+      lastName
     }
   }
 }
 ```
 
-## Paging {#paging}
-
-This feature allows you to perform paging on query types that returns a list. Two methods are provided:
-
-* `offset` and `limit` in a `List` query
-* `first` and `after` in a `Paginated` query
-
-### List query - offset and limit {#list-offset-limit}
-
-In a `...List`query you can use `offset` and `limit` to return a specific subset of results:
-
-* `offset`: Specifies the first data set to return
-* `limit`: Specifies the maximum number of data sets to be returned
-
-For example, to output the page of results containing up to five articles, starting from the fifth article from the *complete* results list:
+또한
 
 ```graphql
-query {
-   articleList(offset: 5, limit:5) {
+{
+  authorList(sort: "lastName DESC, firstName DESC") {
     items {
-      author
-      _path
+        lastName
+        firstName
     }
   }
 }
 ```
+
+<!-- to be included? -->
+
+중첩된 조각 내의 필드에서 의 형식을 사용하여 정렬할 수도 있습니다. `nestedFragmentname.fieldname`.
 
 >[!NOTE]
 >
->* Paging is impacted by the order to the jcr query result set. By default it uses `jcr:path` to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the paging cannot be done in memory.
+>성능에 부정적인 영향을 줄 수 있습니다.
+
+예:
+
+```graphql
+query {
+  articleList(sort: "authorFragment.lastName")  {
+    items {
+      title
+      authorFragment {
+        firstName
+        lastName
+        birthDay
+      }
+      slug
+    }
+  }
+}
+```
+
+## 페이징 {#paging}
+
+이 기능을 사용하면 목록을 반환하는 쿼리 유형에 대해 페이징을 수행할 수 있습니다. 다음 두 가지 방법이 제공됩니다.
+
+* `offset` 및 `limit` 에서 `List` 쿼리
+* `first` 및 `after` 에서 `Paginated` 쿼리
+
+### 목록 쿼리 - 오프셋 및 제한 {#list-offset-limit}
+
+다음 `...List`쿼리 사용 `offset` 및 `limit` 특정 결과 하위 집합을 반환하려면 다음을 수행합니다.
+
+* `offset`: 반환할 첫 번째 데이터 세트를 지정합니다
+* `limit`: 반환할 최대 데이터 세트 수를 지정합니다
+
+예를 들어, *complete* 결과 목록:
+
+```graphql
+query {
+   articleList(offset: 5, limit: 5) {
+    items {
+      authorFragment {
+        lastName
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+
+<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+
+>[!NOTE]
 >
->* The higher the offset, the more time it will take to skip the items from the complete jcr query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
+>* 페이징은 동일한 결과 세트의 다른 페이지를 요청하는 여러 쿼리에서 올바르게 작동하려면 안정적인 정렬 순서가 필요합니다. 기본적으로 결과 세트의 각 항목의 저장소 경로를 사용하여 순서가 항상 동일한지 확인합니다. 다른 정렬 순서를 사용하고 jcr 쿼리 수준에서 정렬을 수행할 수 없는 경우 전체 결과 세트를 메모리에 로드해야 페이지를 결정할 수 있으므로 성능에 부정적인 영향을 줍니다.
+>
+>* 오프셋이 높을수록 전체 jcr 쿼리 결과 세트에서 항목을 건너뛸 시간이 많이 걸립니다. 큰 결과 집합에 대한 대체 해결 방법은 Paginated 쿼리를 `first` 및 `after` 메서드를 사용합니다.
 
-### Paginated query - first and after {#paginated-first-after}
 
-The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the standard `first`/`after` arguments defined by [GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
+### 페이지 매김된 쿼리 - 처음 및 이후 {#paginated-first-after}
 
-* `first`: The `n` first items to return. The default is `50`.
-* `after`: The cursor-id as returned in the complete result set - if `cursor` is selected.
+다음 `...Paginated` 쿼리 유형은 대부분 다시 사용합니다 `...List` 쿼리 유형 기능(필터링, 정렬)을 사용하지만 `offset`/`limit` 인수를 사용하면 `first`/`after` 정의한 인수 [GraphQL 커서 연결 사양](https://relay.dev/graphql/connections.htm). 에서 보다 덜 형식적인 소개를 찾을 수 있습니다 [GraphQL 소개](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
+* `first`: 다음 `n` 반환할 첫 번째 항목.
+기본값은 `50`입니다.
+최대값은 다음과 같습니다 `100`.
+* `after`: 요청한 페이지의 시작을 결정하는 커서입니다. 커서로 표시되는 항목은 결과 세트에 포함되지 않습니다. 항목의 커서는 `cursor` 필드 `edges` 구조.
+
+예를 들어, 에서는 지정된 커서 항목에서 시작하여 최대 5개의 모험이 포함된 결과 페이지를 출력합니다 *complete* 결과 목록:
 
 ```graphql
 query {
@@ -513,7 +680,7 @@ query {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -524,34 +691,37 @@ query {
 }
 ```
 
+<!-- When available link to BP -->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link). -->
+
 >[!NOTE]
 >
->* Paging defaults use `_uuid` for ordering to ensure the order of results is always the same. When `sort` is used, `_uuid` is added as a last order-by field.
+>* 기본적으로 페이징은 순서 지정을 위해 조각을 나타내는 저장소 노드의 UUID를 사용하여 결과 순서가 항상 동일한지 확인합니다. When `sort` 가 사용되면 UUID가 암시적으로 사용되어 고유한 정렬을 보장합니다. 동일한 정렬 키가 있는 두 항목의 경우에도 마찬가지입니다.
 >
->* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
--->
+>* 내부 기술 제한으로 인해 중첩 필드에 정렬 및 필터링이 적용되는 경우 성능이 저하됩니다. 따라서 루트 수준에 저장된 필터/정렬 필드를 사용하는 것이 좋습니다. 큰 페이지 매김된 결과 세트를 쿼리하려는 경우에도 이 방법이 권장됩니다.
+
 
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
 
 AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM의 GraphQL 쿼리에 몇 가지 확장이 있습니다.
 
-<!-- CQDOC-19418 -->
+* 결과 목록을 기대하는 경우:
+   * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
+   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
 
-<!--
-* If you expect a list of results:
-  * add `List` to the model name; for example,  `cityList`
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-  
-  You can then:
-  
-  * [Sort the results](#sorting)
+   이후에 다음을 수행할 수 있습니다.
 
-  * Return a page of results using either:
+   * [결과 정렬](#sorting)
 
-    * [A List query with offset and limit](#list-offset-limit)
-    * [A Paginated query with first and after](#paginated-first-after)
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
--->
+      * `ASC` : 오름차순
+      * `DESC` : 내림차순
+   * 다음 중 하나를 사용하여 결과 페이지를 반환합니다.
+
+      * [오프셋과 제한이 있는 목록 쿼리](#list-offset-limit)
+      * [첫 번째 및 그 이후에 페이지 매김된 쿼리](#paginated-first-after)
+   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
+
+
 
 * 하나의 결과가 필요한 경우:
    * 모델 이름을 사용하십시오. 예: 도시
@@ -627,18 +797,6 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 ## 인증 {#authentication}
 
 [콘텐츠 조각의 원격 AEM GraphQL 쿼리 인증](/help/headless/security/authentication.md)을 참조하십시오.
-
-<!-- to be addressed later -->
-
-<!--
-## Sorting {#sorting}
--->
-
-<!-- to be addressed later -->
-
-<!--
-## Paging {#paging}
--->
 
 ## FAQ {#faqs}
 

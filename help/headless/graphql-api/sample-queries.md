@@ -3,10 +3,10 @@ title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: ht
-source-wordcount: '1456'
-ht-degree: 100%
+source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
+workflow-type: tm+mt
+source-wordcount: '1554'
+ht-degree: 94%
 
 ---
 
@@ -60,7 +60,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -73,7 +73,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -152,7 +152,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 모든 도시에 대한 모든 정보를 검색하려면 다음과 같은 매우 기본적인 쿼리를 사용하면 됩니다.
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -162,7 +162,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 실행되면 시스템은 모든 필드를 포함하도록 쿼리를 자동으로 확장합니다.
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -177,7 +177,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -236,7 +236,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList {
     items {
@@ -248,7 +248,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -286,7 +286,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -302,7 +302,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -327,7 +327,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -343,7 +343,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -370,7 +370,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -399,7 +399,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -498,7 +498,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -523,7 +523,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -552,7 +552,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -574,7 +574,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -619,7 +619,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -641,7 +641,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -664,7 +664,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -700,7 +700,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -727,7 +727,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -751,7 +751,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -778,7 +778,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -802,7 +802,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -836,7 +836,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -862,7 +862,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -888,7 +888,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -920,7 +920,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -954,7 +954,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -996,7 +996,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1046,7 +1046,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1073,7 +1073,7 @@ query {
 
 **샘플 결과**:
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1110,27 +1110,40 @@ query {
 * 콘텐츠 조각(및 기타 콘텐츠)은 다음에서 사용할 수 있습니다.
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
+   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+
 >[!NOTE]
 >
 >결과가 광범위해질 수 있으므로 여기에서 재현하지는 않습니다.
+
+>[!NOTE]
+>
+>다양한 쿼리는 변형을 참조합니다 `variation1`. 표준 WKND 패키지에 없습니다. 테스트를 위해 만들어야 합니다.
+>
+>If `variation1` 존재하지 않는 경우 `master`변형이 기본값으로 반환됩니다.
 
 ### 지정된 속성을 가진 특정 모델의 모든 콘텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-all-model-properties}
 
 이 샘플 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `article` 유형의 모든 콘텐츠 조각
-* `path` 및 `author` 속성 포함.
+* 사용 `_path` 및 속성 `authorFragment`.
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   articleList {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
     }
-  }
+ }
 }
 ```
 
@@ -1143,7 +1156,7 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1208,12 +1221,17 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
         _path
-        author
+        authorFragment {
+          _path
+          firstName
+          lastName
+          birthDay
+        }
         main {
           html
           markdown
@@ -1234,12 +1252,12 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
-  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
       _path
-      adventureTitle
+      title
       _model {
         _path
         title
@@ -1262,15 +1280,15 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1288,7 +1306,9 @@ query {
 >
 >`fragments` 필드에는 `fragment-reference` 데이터 유형이 있습니다. `Article`, `Adventure` 모델이 선택되어 있습니다.
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1323,7 +1343,9 @@ query {
 
 다음 쿼리는 `_references`를 사용하여 모든 콘텐츠 참조를 반환합니다.
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
      _references {
@@ -1363,7 +1385,9 @@ query {
 >
 >`attachments` 필드에는 `content-reference` 데이터 형식이 있고, 다양한 형태가 선택되어 있습니다.
 
-```xml
+<!-- need replacement query -->
+
+```graphql
 {
   bookmarkList {
     items {
@@ -1405,9 +1429,11 @@ query {
 >
 >RTE 인라인 참조는 `_references`에서 하이드레이션됩니다.
 
+<!-- need replacement query -->
+
 **샘플 쿼리**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1449,12 +1475,17 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+  articleByPath(_path: "/content/dam/wknd-shared/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
-      _path
-      author
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1474,12 +1505,19 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 {
-  articleList (variation: "variation1") {
+  articleList(variation: "variation1") {
     items {
       _path
-      author
+      _variation
+      authorFragment {
+        _path
+        _variation
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1499,12 +1537,17 @@ query {
 
 **샘플 쿼리**
 
-```xml
+```graphql
 { 
-  articleList (_locale: "fr") {
+  articleList(_locale: "fr") {
     items {
       _path
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       main {
         html
         markdown
@@ -1516,44 +1559,45 @@ query {
 }
 ```
 
-<!-- CQDOC-19418 -->
+### 오프셋 및 제한을 사용하는 샘플 목록 쿼리 {#sample-list-offset-limit}
 
-<!--
+이 쿼리는 다음에 대한 정보를 얻습니다.
 
-### Sample List Query using offset and limit {#sample-list-offset-limit}
+* 최대 5개의 문서가 포함된 결과 페이지의 *complete* 결과 목록
 
-This query interrogates:
+**샘플 쿼리**
 
-* for the page of results containing up to five articles, starting from the fifth article from the *complete* results list
-
-**Sample Query**
-
-```xml
-query {
-   articleList(offset: 5, limit:5) {
+```graphql
+{
+   articleList(offset: 5, limit: 5) {
     items {
-      author
+      authorFragment {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
       _path
     }
   }
 }
 ```
 
-### Sample Pagination Query using first and after  {#sample-pagination-first-after}
+### 첫 번째 및 그 후를 사용하는 샘플 페이지 매김 쿼리  {#sample-pagination-first-after}
 
-This query interrogates:
+이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* for the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list
+* 에 지정된 커서 항목에서 시작하여 최대 5개의 모험이 포함된 결과 페이지의 *complete* 결과 목록
 
-**Sample Query**
+**샘플 쿼리**
 
-```xml
-query {
+```graphql
+{
     adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -1563,8 +1607,6 @@ query {
     }
 }
 ```
-
--->
 
 ## 샘플 콘텐츠 조각 구조(GraphQL과 함께 사용) {#content-fragment-structure-graphql}
 
@@ -1634,7 +1676,7 @@ query {
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
+| NextStep Inc. | 스티브 잡스 | Joe Smith<br>Abe Lincoln |
 
 #### 개인 {#fragment-person}
 
@@ -1654,7 +1696,7 @@ query {
 | 단축키/ID | 제목 |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | Gamestar |
+|  GS | 가메스타르 |
 |  OSC | Oscar |
 
 #### 도시 {#fragment-city}
