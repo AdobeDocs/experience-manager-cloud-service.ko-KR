@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 71370cf59bd1f65db78c2818c118e7d9ec2c9196
+source-git-commit: ee2240eac76d4df372d94152a7c17b6e449ef7c8
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 12%
+source-wordcount: '1181'
+ht-degree: 11%
 
 ---
 
@@ -119,7 +119,7 @@ ht-degree: 12%
 
 ### CAM에서 마이그레이션 토큰을 검색할 수 없습니다. {#cam-unable-to-retrieve-the-migration-token}
 
-사용자를 포함하여 다양한 이유로 마이그레이션 토큰의 자동 검색이 실패할 수 있습니다 [Cloud Manager를 통해 IP 허용 목록 설정](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 설정 및 해제 할 수 있습니다.  이러한 시나리오에서는 수집을 시작하려고 하면 다음 대화 상자가 표시됩니다.
+사용자를 포함하여 다양한 이유로 마이그레이션 토큰의 자동 검색이 실패할 수 있습니다 [Cloud Manager를 통해 IP 허용 목록 설정](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 설정 및 해제 할 수 있습니다. 이러한 시나리오에서는 수집을 시작하려고 하면 다음 대화 상자가 표시됩니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
 
@@ -134,6 +134,14 @@ ht-degree: 12%
 로컬 환경에 속하는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** 대상 Cloud Service 작성자 서비스의 그룹입니다. AEM 관리자 그룹에 속하지 않는 경우 수집을 시작하려고 하면 아래에 표시된 오류가 표시됩니다. 관리자에게 사용자를 로컬 그룹에 추가하도록 요청할 수 있습니다 **AEM 관리자** 토큰에 붙여넣을 수 있는 토큰 자체를 요청하거나 **마이그레이션 토큰 입력** 필드.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
+
+### Release Orchestrator를 통한 자동 업데이트가 계속 활성화되어 있습니다.
+
+Release Orchestrator는 업데이트를 자동으로 적용하여 환경을 최신 상태로 자동으로 유지합니다. 수집이 수행될 때 업데이트가 트리거되면 환경의 손상을 포함하여 예기치 않은 결과가 발생할 수 있습니다. 이는 수집을 시작하기 전에 지원 티켓을 기록해야 하는 이유 중 하나입니다(위의 &quot;참고&quot; 참조). 이때 Release Orchestrator를 일시적으로 비활성화할 수 있습니다.
+
+수집을 시작할 때 Release Orchestrator가 여전히 실행 중인 경우 UI에 이 오류 메시지가 표시됩니다. 위험을 감수하면서 계속 진행할 수도 있습니다. 필드를 확인하고 버튼을 다시 누르면 됩니다.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
 ## 다음 단계 {#whats-next}
 
