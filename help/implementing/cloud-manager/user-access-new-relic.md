@@ -2,15 +2,15 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
+source-git-commit: 9089c66a2fdb5a05eb888e2af736862aff1b7a11
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 100%
+source-wordcount: '1607'
+ht-degree: 99%
 
 ---
 
 
-# 신유교 원 {#user-access}
+# New Relic One {#user-access}
 
 AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 
@@ -26,7 +26,7 @@ Adobe는 애플리케이션의 모니터링, 가용성 및 성능에 중점을 �
 
 AEM as a Cloud Service용 New Relic One APM에는 많은 기능이 있습니다.
 
-* 전용 New Relic One 계정에 대한 직접 액세스 (Adobe 지원에서 관리하는 액세스)
+* 전용 New Relic One 계정에 직접 액세스
 
 * 외부 종속성 및 데이터베이스를 포함하여 행 번호와 함께 정확한 메서드 호출을 표시하는 계측된 New Relic One APM 에이전트
 
