@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달용 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '4179'
-ht-degree: 60%
+source-wordcount: '4174'
+ht-degree: 58%
 
 ---
 
@@ -122,11 +122,9 @@ GraphQL은 GET 요청도 지원하지만, 지속적인 쿼리를 사용하여 �
 >
 >Dispatcher에서 직접 및/또는 POST 쿼리를 허용하려면 시스템 관리자에게 다음 작업을 요청할 수 있습니다.
 >
->* `ENABLE_GRAPHQL_ENDPOINT`라는 Cloud Manager 환경 변수 생성
+>* 만들기 [Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) called `ENABLE_GRAPHQL_ENDPOINT`
 >* (`true` 값 포함)
 
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 #### 경로 {#path}
 
-경로 필드는 AEM GraphQL에서 식별자로 사용됩니다. AEM 저장소 내 콘텐츠 조각 에셋의 경로를 나타냅니다. 다음과 같은 이유로 콘텐츠 조각의 식별자로 선택되었습니다.
+경로 필드는 AEM GraphQL에서 식별자로 사용됩니다. AEM 저장소 내 콘텐츠 조각 에셋의 경로를 나타냅니다. 이 변수는 다음과 같은 이유로 컨텐츠 조각의 식별자로 선택했습니다.
 
 * AEM 내에서 고유합니다.
 * 쉽게 가져올 수 있습니다.
@@ -296,7 +294,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 #### 메타데이터 {#metadata}
 
-AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합니다. 메타데이터는 콘텐츠 조각을 설명하는 정보이며, 예를 들어 콘텐츠 조각의 제목, 썸네일 경로, 콘텐츠 조각에 대한 설명, 생성 날짜 등이 있습니다.
+AEM은 또한 GraphQL을 통해 콘텐츠 조각의 메타데이터를 노출합니다. 메타데이터는 컨텐츠 조각의 제목, 축소판 경로, 컨텐츠 조각의 설명, 컨텐츠 조각의 생성일 등과 같이 컨텐츠 조각을 설명하는 정보입니다.
 
 메타데이터는 스키마 편집기를 통해 생성되기 때문에 특정한 구조를 가지고 있지 않으므로 콘텐츠 조각의 메타데이터를 노출하기 위해 `TypedMetaData` GraphQL 유형이 구현되었습니다. `TypedMetaData`은 다음 스칼라 유형으로 그룹화된 정보를 노출합니다.
 
@@ -501,8 +499,8 @@ The
 
 | 옵션 | 유형 | 설명 |
 |--- |--- |--- |
-| _ignoreCase | 문자열 | 문자열의 대/소문자를 무시합니다(예: 값 `time` 일치함 `TIME`, `time`, `tImE`,.. |
-| _민감성 | 부동 | 부동 소수점 값에 대한 특정 여백을 동일하게 간주할 수 있습니다(부동 소수점 값의 내부 표현으로 인한 기술 제한 관련 작업). 이 옵션은 성능에 부정적인 영향을 줄 수 있으므로 사용하지 않아야 합니다 |
+| `_ignoreCase` | `String` | 문자열의 대/소문자를 무시합니다(예: 값 `time` 일치함 `TIME`, `time`, `tImE`,.. |
+| `_sensitiveness` | `Float` | 에 대해 특정 여백을 허용합니다. `float` 동일한 값으로 간주할 수 있습니다(의 내부 표현으로 인한 기술 제한 사항 해결). `float` 값; 이 옵션은 성능에 부정적인 영향을 줄 수 있으므로 사용하지 않아야 합니다 |
 
 표현식은 논리 연산자의 도움을 받아 집합에 결합할 수 있습니다(`_logOp`):
 
@@ -513,7 +511,7 @@ The
 
 필터 정의( `filter` 쿼리 인수)에는 다음이 포함됩니다.
 
-* 각 필드에 대한 하위 정의(예: `lastName` 필터에 있는 필드 `lastName` 필드 유형의 필드)
+* 각 필드에 대한 하위 정의(예: `lastName` 필터에 있는 필드 `lastName` 데이터(필드) 유형의 필드
 * 각 하위 정의에는 가 포함됩니다 `_expressions` 배열, 표현식 세트 및 `_logOp` 식을 결합해야 하는 논리 연산자를 정의하는 필드입니다.
 * 각 표현식은 값(`value` 필드)와 연산자(`_operator` 필드) 필드의 내용을
 
@@ -652,15 +650,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
->* 페이징은 동일한 결과 세트의 다른 페이지를 요청하는 여러 쿼리에서 올바르게 작동하려면 안정적인 정렬 순서가 필요합니다. 기본적으로 결과 세트의 각 항목의 저장소 경로를 사용하여 순서가 항상 동일한지 확인합니다. 다른 정렬 순서를 사용하고 jcr 쿼리 수준에서 정렬을 수행할 수 없는 경우 전체 결과 세트를 메모리에 로드해야 페이지를 결정할 수 있으므로 성능에 부정적인 영향을 줍니다.
+>* 페이징은 동일한 결과 세트의 다른 페이지를 요청하는 여러 쿼리에서 올바르게 작동하려면 안정적인 정렬 순서가 필요합니다. 기본적으로 결과 세트의 각 항목의 저장소 경로를 사용하여 순서가 항상 동일한지 확인합니다. 다른 정렬 순서를 사용하고 해당 정렬을 JCR 쿼리 수준에서 수행할 수 없는 경우 전체 결과 세트를 메모리에 로드해야 페이지를 결정할 수 있으므로 부정적인 성능 영향을 받습니다.
 >
->* 오프셋이 높을수록 전체 jcr 쿼리 결과 세트에서 항목을 건너뛸 시간이 많이 걸립니다. 큰 결과 집합에 대한 대체 해결 방법은 Paginated 쿼리를 `first` 및 `after` 메서드를 사용합니다.
+>* 오프셋이 높을수록 전체 JCR 쿼리 결과 세트에서 항목을 건너뛸 시간이 많이 걸립니다. 큰 결과 집합에 대한 대체 해결 방법은 Paginated 쿼리를 `first` 및 `after` 메서드를 사용합니다.
 
 
 ### 페이지 매김된 쿼리 - 처음 및 이후 {#paginated-first-after}

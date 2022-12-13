@@ -2,7 +2,7 @@
 title: 경험 조각 개요
 description: Adobe Experience Manager as a Cloud Service 경험 구성 요소를 확장합니다.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
+source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 3%

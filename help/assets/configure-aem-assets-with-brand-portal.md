@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 85de154adbd0bc09aa9960665826c36af05b3a56
+source-git-commit: 4f58f36e646677071d7f9a4aa56238d68c7689ba
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 17%
@@ -135,7 +135,7 @@ Experience Manager Assets as a [!DNL Cloud Service] 인스턴스 및 Brand Porta
 * [Experience Manager Assets의 자산을 Brand Portal에 게시](publish-to-brand-portal.md)
 * [Experience Manager Assets의 폴더를 Brand Portal에 게시](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Experience Manager Assets의 컬렉션을 Brand Portal에 게시](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand Portal의 자산을 Experience Manager Assets에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ko) - Brand Portal의 자산 소싱
+* [Brand Portal의 자산을 Experience Manager Assets에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Brand Portal의 자산 소싱
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [태그를 Brand Portal에 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

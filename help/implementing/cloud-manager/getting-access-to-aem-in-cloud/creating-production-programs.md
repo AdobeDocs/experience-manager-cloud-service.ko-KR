@@ -2,7 +2,7 @@
 title: 프로덕션 프로그램 만들기
 description: Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: c68d4240fb70cc1d533c5fad6472c6c192085603
+source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 80%

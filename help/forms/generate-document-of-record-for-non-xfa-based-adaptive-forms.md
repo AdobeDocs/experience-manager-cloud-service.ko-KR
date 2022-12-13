@@ -2,7 +2,7 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 8d6a5aceaf930c6597f570cdaec44015b86e20cd
+source-git-commit: d9b67c80c2e96b0403f801a20b72c9ed41d021aa
 workflow-type: tm+mt
 source-wordcount: '4065'
 ht-degree: 2%

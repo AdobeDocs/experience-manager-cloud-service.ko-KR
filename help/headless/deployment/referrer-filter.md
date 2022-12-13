@@ -3,7 +3,7 @@ title: AEM Headless로 레퍼러 필터 구성
 description: Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스트에서 액세스할 수 있습니다. Headless 애플리케이션용 GraphQL 끝점 액세스를 활성화하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: d8cc024fa5128e4b27098d1bff92588487fe101a
+source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 69%

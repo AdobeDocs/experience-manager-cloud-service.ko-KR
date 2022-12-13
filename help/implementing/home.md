@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 구현
 description: Adobe Experience Manager as a Cloud Service 구현 자습 리소스 및 설명서 링크
 landing-page-description: Experience Manager as a Cloud Service 배포로 사용자 지정하는 방법을 알아봅니다.
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: 76eb13cc1efeb8617b48b7e6134bdf1c7d324e27
+source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 92%

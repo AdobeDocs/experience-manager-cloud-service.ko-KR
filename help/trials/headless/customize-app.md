@@ -4,8 +4,8 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 63b3eccbe1fb4c4b4c61a30f75f10d749635f095
-workflow-type: ht
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 100%
 

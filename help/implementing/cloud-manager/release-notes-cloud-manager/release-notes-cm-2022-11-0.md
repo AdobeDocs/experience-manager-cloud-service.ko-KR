@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2022.11.0 �
 description: AEM as a Cloud Service의 Cloud Manager 2022.11.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 1014efb5-dddb-4997-8cef-afe6dfa61462
-source-git-commit: 000b07d8068100d63f86a704830668b05da5aac1
+source-git-commit: 5d9cd24ad11d03f61fa1a84227423d833e00841a
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -20,18 +20,18 @@ ht-degree: 62%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 릴리스 2022.11.0 릴리스 날짜는 2022년 11월 3일입니다. 다음 릴리스는 2022년 11월 29일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 2022.11.0 릴리스 날짜는 2022년 11월 3일입니다. 다음 릴리스는 2022년 11월 29일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 AEM Sites 솔루션에 대한 라이선스 대시보드에 테넌트가 구독 내에 있는지 여부를 포함한 계약 세부 사항이 표시됩니다.
+* AEM Sites 솔루션에 대한 라이선스 대시보드는 이제 테넌트가 해당 구독 내에 있는지 여부 등의 계약 세부 정보를 표시합니다.
 
 >[!NOTE]
 >
-> 이 기능은 앞으로 몇 주 동안 모든 테넌트에 대해 단계적인 방식으로 롤아웃됩니다.
+> 이 기능은 앞으로 몇 주에 걸쳐 모든 테넌트에게 단계적으로 출시될 예정입니다.
 
 * 파이프라인과 연결된 환경이 파이프라인을 실행할 수 없는 상태인 경우 설명 툴팁과 함께 실행 작업이 비활성화됩니다.
-* UI에 **프로그램 추가** 테넌트에 대한 권한 부족으로 단추가 비활성화됩니다.
+* 테넌트에 대한 권한 부족으로 인해 **프로그램 추가** 버튼이 비활성화될 때 개선된 메시지가 UI에 추가되었습니다.
 
 ## 버그 수정 {#bug-fixes}
 
