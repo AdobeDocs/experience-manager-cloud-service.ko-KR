@@ -4,10 +4,10 @@ description: AEM의 콘텐츠 조각 모델을 사용하여 모든 headless 콘�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '1149'
+ht-degree: 90%
 
 ---
 
@@ -16,6 +16,21 @@ ht-degree: 100%
 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고 만들고 선별하고 게시할 수 있습니다. 이를 사용하여 headless 게재에 적합한 여러 위치 및 여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다. 콘텐츠 조각 모델을 사용하여 콘텐츠 구조를 정의할 수 있으며, 이는 headless 콘텐츠를 관리하기 위해 가장 먼저 만들어야 하는 모델입니다.
 
 이 AEM 체험판 모듈은 이러한 작업의 수행 방법을 이해할 수 있도록 먼저 모델을 만든 다음 해당 구조를 추가하는 빠른 대화형 둘러보기를 통해 프로세스를 안내합니다. 이 문서는 제품 내 둘러보기를 보완하는 역할을 하며, 동일한 단계를 다루고 해당하는 경우 추가 리소스에 대한 링크를 제공합니다.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
+>title="모델 편집기를 시작합니다"
+>abstract="컨텐츠 조각 모델 작성은 모델 관리 워크플로우에서 모델 항목을 만든 다음 컨텐츠 조각 모델 편집기를 사용하여 구조 요소를 컨텐츠 조각 모델에 추가하는 것으로 시작합니다.<br><br>아래 를 클릭하여 새 탭에서 기능을 시작하고 이 학습 문서에 따라 첫 번째 컨텐츠 조각을 만듭니다."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
+>title="모델 편집기를 시작합니다"
+>abstract="컨텐츠 조각 모델 작성은 모델 관리 워크플로우에서 모델 항목을 만든 다음 컨텐츠 조각 모델 편집기를 사용하여 구조 요소를 컨텐츠 조각 모델에 추가하는 것으로 시작합니다.\n\n새 탭에서 기능을 시작하려면 아래를 클릭하고 이 학습 문서에 따라 첫 번째 컨텐츠 조각을 만듭니다."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="앱의 콘텐츠 구조 만들기"
+>abstract="대화형 안내서 시리즈를 따라가면서 모든 Headless 콘텐츠의 기반 역할을 하는 구조(콘텐츠 조각 모델이라고도 함)를 만드는 방법을 알아봅니다."
 
 ## 콘텐츠 조각 모델 콘솔 {#content-fragment-model-console}
 

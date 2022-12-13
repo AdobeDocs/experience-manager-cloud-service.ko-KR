@@ -4,9 +4,9 @@ description: 콘텐츠 조각 및 GraphQL API를 headless 콘텐츠 관리 시�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1216'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,11 @@ GraphQL은 외부 클라이언트 애플리케이션이 단일 API 호출을 사
 >[!TIP]
 >
 >GraphQL API에 대한 자세한 내용은 GraphQL API 안내서에 대한 이 모듈의 끝에 있는 [추가 리소스 섹션](#additional-resources)을 참조하십시오.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="GraphQL API를 사용하여 콘텐츠 추출"
+>abstract="이 모듈에서는 Headless 콘텐츠 관리 시스템으로 콘텐츠 조각 및 GraphQL API를 사용하는 방법을 알아봅니다."
 
 ## GraphQL 탐색기 {#graphql-explorer}
 

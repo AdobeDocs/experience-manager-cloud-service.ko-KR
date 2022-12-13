@@ -4,10 +4,10 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 100%
+source-wordcount: '1400'
+ht-degree: 97%
 
 ---
 
@@ -16,6 +16,11 @@ ht-degree: 100%
 headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간단한 React 앱이 미리 로드되어 있습니다. 이 모듈에서는 이미지를 교체하고 구매 가능한 순간을 만들어 해당 앱을 미리보고 콘텐츠를 수정하는 방법에 대해 배우게 됩니다.
 
 앱 자체는 콘텐츠 조각 구조를 기반으로 합니다. AEM에서 콘텐츠 조각 편집기를 사용하여 앱 콘텐츠를 수정할 수 있습니다. 빠른 대화형 둘러보기를 통해 프로세스를 안내하는 이 AEM 체험판 모듈에서는 해당 작업을 수행하는 방법에 대해 알아볼 수 있습니다. 이 문서는 대화형 둘러보기를 보완하는 역할을 하며, 동일한 단계를 다루고 해당하는 경우 추가 리소스에 대한 링크를 제공합니다.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="샘플 React 앱에서 컨텐츠 사용자 지정"
+>abstract="헤드리스 기능 세트를 사용하여 컨텐츠를 사용자 지정하는 방법을 배우는 데 사용할 수 있는 최신 React 앱을 설정했습니다."
 
 ## 콘텐츠 조각 편집기 {#fragment-editor}
 
