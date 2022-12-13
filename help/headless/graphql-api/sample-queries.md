@@ -3,7 +3,7 @@ title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 31bd142b6748f2367f136975ead583982aab1b6e
+source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 93%
@@ -1464,7 +1464,7 @@ query {
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 특정 경로에서 `article` 유형의 단일 콘텐츠 조각
+* 특정 경로에서 `author` 유형의 단일 콘텐츠 조각
    * 그 안에 있는 변형: `another`과 관련된 데이터
 
 **샘플 쿼리**
@@ -1487,7 +1487,7 @@ query {
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 특정 변형: `another`이 포함된 `article` 유형의 콘텐츠 조각
+* 특정 변형: `another`이 포함된 `author` 유형의 콘텐츠 조각
 
 >[!NOTE]
 >
