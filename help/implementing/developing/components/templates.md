@@ -2,9 +2,9 @@
 title: 페이지 템플릿
 description: 페이지 템플릿 은 새 페이지의 기반으로 사용할 페이지를 만들 때 사용됩니다
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3300'
 ht-degree: 9%
 
 ---
@@ -357,7 +357,7 @@ When creating a new editable template, the value is copied from the template typ
 1. 모든 페이지 템플릿과 마찬가지로 템플릿을 만듭니다 [여기에 설명된 대로](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author): 템플릿 유형의 기반이 됩니다.
 1. CRXDE Lite을 사용하여 새 템플릿을 `templates` 노드 `template-types` 아래의 노드 [템플릿 폴더](#template-folders).
 1. 에서 템플릿을 삭제합니다. `templates` 아래의 노드 [템플릿 폴더](#template-folders).
-1. 의 아래에 있는 템플릿의 복사본에서 `template-types` 노드, 모두 삭제 `cq:template` 및 `cq:templateType` `jcr:content` 속성을 사용합니다.
+1. 의 아래에 있는 템플릿의 복사본에서 `template-types` 노드, 모두 삭제 `cq:template` 및 `cq:templateType` 모든 속성의 등록 정보 `jcr:content` 노드 아래에 나열됩니다.
 
 GitHub에서 사용할 수 있는 편집 가능한 템플릿 예제 를 사용하여 고유한 템플릿 유형을 개발할 수도 있습니다.
 
