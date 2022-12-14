@@ -3,7 +3,7 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: Headless 콘텐츠 전달용 AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 58%
@@ -245,7 +245,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 | 여러 줄 텍스트 | 문자열, [문자열] |  기사의 본문과 같은 텍스트 출력에 사용됨 |
 | 숫자 |  부동, [Float] | 부동 소수점 숫자 및 일반 숫자를 표시하는 데 사용됨 |
 | 부울 |  부울 |  확인란을 표시하는 데 사용됨 → 간단한 참/거짓 진술 |
-| 날짜 및 시간 | 달력 |  ISO 8086 형식으로 날짜와 시간을 표시하는 데 사용됨. 선택한 유형에 따라 AEM GraphQL에서 세 가지 버전(`onlyDate`, `onlyTime`, `dateTime`)을 사용할 수 있습니다. |
+| 날짜 및 시간 | 달력 |  ISO 8601 형식으로 날짜와 시간을 표시하는 데 사용됨. 선택한 유형에 따라 AEM GraphQL에서 세 가지 버전(`onlyDate`, `onlyTime`, `dateTime`)을 사용할 수 있습니다. |
 | 열거 |  문자열 |  모델 생성 시 정의된 옵션 목록에서 옵션을 표시하는 데 사용됨 |
 |  태그 |  [문자열] |  AEM에서 사용되는 태그를 나타내는 문자열 목록을 표시하는 데 사용됨 |
 | 콘텐츠 참조 |  문자열, [문자열] |  AEM에서 다른 에셋에 대한 경로를 표시하는 데 사용됨 |
