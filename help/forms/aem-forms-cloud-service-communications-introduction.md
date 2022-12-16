@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 3%
+source-wordcount: '1442'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 외부 시스템과의 쉬운 통합을 위한 HTTP API. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다.
 
-* 데이터에 대한 보안 액세스. 통신 API는 고객이 지정한 데이터 저장소에서만 데이터를 연결 및 액세스하므로 커뮤니케이션을 매우 안전하게 만듭니다.
+* 데이터에 대한 보안 액세스. 통신 API는 고객이 지정한 데이터 저장소에서만 데이터를 연결하고 액세스하므로 커뮤니케이션을 매우 안전하게 만듭니다.
 
 ![신용 카드 명세서 샘플](assets/statement.png)
 Communications API를 사용하여 신용 카드 명세서를 만들 수 있습니다. 이 샘플 문은 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 별도의 데이터를 사용합니다.
@@ -126,13 +126,37 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 문서 조작 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 규격 문서인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
 
+## 문서 유틸리티
+
+문서 유틸리티 동기 API는 PDF과 XDP 파일 형식 간에 문서를 변환하고 PDF 문서에 대한 정보를 쿼리하는 데 도움이 됩니다. 예를 들어 PDF 문서에 주석이나 첨부 파일이 포함되어 있는지 확인할 수 있습니다.
+
+### PDF 문서 속성 검색
+
+다음을 수행할 수 있습니다 [PDF 문서 쿼리](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) 을 참조하십시오.
+
+* PDF 문서입니다. 소스 문서가 PDF 문서인지 확인합니다.
+* 입력 가능한 양식입니다. 소스 PDF 문서가 입력 가능한 양식인지 확인합니다.
+* 양식 유형: 문서의 양식 유형을 검색합니다.
+* 첨부 파일 확인: 소스 PDF 문서에 첨부 파일이 있는지 확인합니다.
+* 주석 확인: 소스 PDF 문서에 검토 주석이 있는지 확인합니다.
+* PDF 패키지입니다. 문서가 PDF 패키지인지 확인합니다.
+* PDF 버전 가져오기: 검색 [PDF 문서 버전](https://en.wikipedia.org/wiki/History_of_PDF).
+* 권장 Acrobat 버전: 필요한 버전의 Acrobat(Reader)을 검색하여 PDF 문서를 엽니다.
+* XFA 문서입니다. 소스 PDF 문서가 XFA 기반 PDF 문서인지 확인합니다.
+* 셸 PDF: 소스 PDF 문서가 셸 PDF인지 확인합니다. 셸 PDF은 XFA 스트림, 글꼴 및 이미지 리소스만 포함하고, 비어 있거나 Acrobat 또는 Adobe Reader을 사용하여 문서를 열어야 한다는 경고가 포함된 페이지를 하나 포함합니다. 셸 PDF은 PDFForm 변환의 전달만 최적화하기 위해 PDF 변환에 사용됩니다.
+* XFA 버전 가져오기: 검색 [XFA 기반 PDF 문서에 대한 XFA 버전](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+
+### PDF 문서를 XDP 문서로 변환
+
+다음 [XDP API에 PDF](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) PDF 문서를 XDP 파일로 변환합니다. PDF 문서를 XDP 파일로 성공적으로 변환하려면 사전에서 PDF 문서에 XFA 스트림을 포함해야 합니다.
+
 ## 통신 API 유형
 
 통신은 주문형 및 배치 문서 생성을 위한 HTTP API를 제공합니다.
 
-* **[동기 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
+* **[동기 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
 
-* **[배치 API(비동기 API)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
+* **[배치 API(비동기 API)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
 
 ## 온보딩
 

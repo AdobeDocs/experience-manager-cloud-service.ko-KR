@@ -3,7 +3,7 @@ title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: df1bccc632b3287c73a926bc5f9c6b63d51d8de6
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 93%
@@ -1655,29 +1655,29 @@ query {
 | 회사 이름 | CEO | 직원 |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
-| NextStep Inc. | 스티브 잡스 | Joe Smith<br>Abe Lincoln |
+| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+| NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### 개인 {#fragment-person}
 
 | 이름 | 이름 | 상 |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
-| Smith | Adam |   |
-| Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
-|  Smith |  Joe |   |
-| Croft |  Lara | Gamestar |
-| Caulfield |  Max |  Gameblitz |
-|  Jobs |  Steve |   |
+| Lincoln | Abe |  |
+| Smith | Adam |  |
+| Slade | Cutter | Gameblitz<br>Gamestar |
+| Marsh | Duke |  |
+| Smith | Joe |  |
+| Croft | Lara | Gamestar |
+| Caulfield | Max | Gameblitz |
+| 작업 | Steve |  |
 
 #### 상 {#fragment-award}
 
 | 단축키/ID | 제목 |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | 가메스타르 |
-|  OSC | Oscar |
+| GS | Gamestar |
+| OSC | Oscar |
 
 #### 도시 {#fragment-city}
 
@@ -1685,8 +1685,8 @@ query {
 |--- |--- |--- |--- |
 | 바젤 | 스위스 | 172258 | city:emea |
 | 베를린 | 독일 | 3669491 | city:capital<br>city:emea |
-| 부쿠레슈티 | 루마니아 | 1821000 |  city:capital<br>city:emea |
-| 샌프란시스코 |  미국 |  883306 |  city:beach<br>city:na |
-| 새너제이 |  미국 |  102635 |  city:na |
-| 슈투트가르트 |  독일 |  634830 |  city:emea |
-|  취리히 |  스위스 |  415367 |  city:capital<br>city:emea |
+| 부쿠레슈티 | 루마니아 | 1821000 | city:capital<br>city:emea |
+| 샌프란시스코 | 미국 | 883306 | city:beach<br>city:na |
+| 새너제이 | 미국 | 102635 | city:na |
+| 슈투트가르트 | 독일 | 634830 | city:emea |
+| 취리히 | 스위스 | 415367 | city:capital<br>city:emea |
