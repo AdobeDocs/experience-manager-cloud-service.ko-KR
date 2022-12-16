@@ -2,9 +2,9 @@
 title: SPA 소개 및 워크스루
 description: 이 문서에서는 SPA의 개념을 소개하고 기본 SPA 응용 프로그램을 사용하여 기본 AEM SPA 편집기와 관련된 방법을 설명합니다.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '2076'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,18 @@ SPA 편집기는 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을 제
 
 이 소개 및 연습의 목표는 AEM 개발자에게 SPA이 적절한 이유, 일반적으로 작동하는 방법, AEM SPA 편집기에서 SPA을 처리하는 방법, 표준 AEM 애플리케이션과 어떻게 다른지를 보여 주기 위한 것입니다.
 
-이 연습은 표준 AEM 기능과 샘플 WKND SPA Project 앱을 기반으로 합니다. 따라가려면, [gitHub에서 샘플 WKND SPA Project 앱을 다운로드하여 설치합니다.](https://github.com/adobe/aem-guides-wknd-spa)
+## 요구 사항 {#requirements}
+
+이 연습은 표준 AEM 기능과 샘플 WKND SPA Project 앱을 기반으로 합니다. 이 연습을 따라 다음을 사용할 수 있어야 합니다.
+
+* [AEMaaCS의 최신 개발 SDK](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * 로컬 개발 환경으로 실행 중이어야 합니다.
+   * 시스템에 대한 관리자 권한이 있어야 합니다.
+* [GitHub에서 사용할 수 있는 샘플 WKND SPA Project 앱](https://github.com/adobe/aem-guides-wknd-spa)
+   * 다운로드 [React 앱의 최신 릴리스](https://github.com/adobe/aem-guides-wknd-spa/releases) 이름이 비슷함 `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * 다운로드 [앱용 최신 샘플 이미지](https://github.com/adobe/aem-guides-wknd-spa/releases) 이름이 비슷함 `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [패키지 관리자 사용](/help/implementing/developing/tools/package-manager.md) 두 패키지를 모두 AEM에 다른 패키지와 마찬가지로 설치하려면
+   * 이 연습에서는 Maven을 사용하여 앱을 설치할 필요가 없습니다.
 
 >[!CAUTION]
 >
