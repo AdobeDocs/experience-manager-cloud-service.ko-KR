@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
+source-git-commit: 91d3e2ea02f34963688dd9ee44aed17f55752587
 workflow-type: tm+mt
-source-wordcount: '3820'
+source-wordcount: '3823'
 ht-degree: 100%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 100%
          + [2020.2.0 릴리스 정보](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-      + 2022년 {#2022}
+      + 2022 {#2022}
          + [2022.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-11-0.md)
          + [2022.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
          + [2022.9.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
@@ -80,7 +80,7 @@ ht-degree: 100%
          + [2022.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
          + [2022.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
          + [2022.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-      + 2021년 {#2021}
+      + 2021 {#2021}
          + [202.12.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
          + [2021.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
          + [2021.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -93,7 +93,7 @@ ht-degree: 100%
          + [2021.3.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
          + [2021.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
          + [2021.1.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-      + 2020년 {#2020}
+      + 2020 {#2020}
          + [2020.12.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
          + [2020.11.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
          + [2020.10.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
@@ -107,14 +107,15 @@ ht-degree: 100%
          + [2020.2.0 릴리스 정보](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
    + 마이그레이션 도구 릴리스 정보 {#migration-tools}
       + [최신 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + 2022년 {#2022}
+      + 2022 {#2022}
+         + [2022.9.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-09-0.md)
          + [2022.7.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-07-0.md)
          + [2022.5.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-05-0.md)
          + [2022.4.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-04-0.md)
          + [2022.3.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
          + [2022.2.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
          + [2022.1.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021년 {#2021}
+      + 2021 {#2021}
          + [2021.12.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [2021.11.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [2021.10.0 릴리스 정보](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
