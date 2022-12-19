@@ -1,17 +1,17 @@
 ---
-title: 샘플 React 앱에서 콘텐츠 사용자 지정
+title: 샘플 React 앱에서 콘텐츠 사용자 정의
 description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정된 headless 기능으로 콘텐츠를 사용자 정의하는 방법에 대해 알아보십시오.
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# 샘플 React 앱에서 콘텐츠 사용자 지정 {#customize-app}
+# 샘플 React 앱에서 콘텐츠 사용자 정의 {#customize-app}
 
 headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간단한 React 앱이 미리 로드되어 있습니다. 이 모듈에서는 이미지를 교체하고 구매 가능한 순간을 만들어 해당 앱을 미리보고 콘텐츠를 수정하는 방법에 대해 배우게 됩니다.
 
@@ -19,8 +19,8 @@ headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app"
->title="샘플 React 앱에서 컨텐츠 사용자 지정"
->abstract="헤드리스 기능 세트를 사용하여 컨텐츠를 사용자 지정하는 방법을 배우는 데 사용할 수 있는 최신 React 앱을 설정했습니다."
+>title="샘플 React 앱에서 콘텐츠 사용자 정의"
+>abstract="Adobe에서 설정한 최신 React 앱을 통해 헤드리스 기능 세트를 사용하여 콘텐츠를 맞춤화하는 방법에 대해 알아볼 수 있습니다."
 
 ## 콘텐츠 조각 편집기 {#fragment-editor}
 
@@ -104,17 +104,17 @@ headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간�
 
    ![조각에서 제거된 이미지](assets/customize-app/mtn-biking-biker-no-image.png)
 
-1. **자산 추가**&#x200B;를 탭하거나 클릭하고 **sample-wknd-app** > **en** > **image-file**&#x200B;에서 노란색 바이커 이미지를 찾습니다. 콘텐츠 계층을 탐색하려면 **자산 선택** 대화 상자의 왼쪽에 있는 트리 보기를 사용합니다.
+1. **에셋 추가**&#x200B;를 탭하거나 클릭하고 **sample-wknd-app** > **en** > **image-file**&#x200B;에서 노란색 바이커 이미지를 찾습니다. 콘텐츠 계층을 탐색하려면 **에셋 선택** 대화 상자의 왼쪽에 있는 트리 보기를 사용합니다.
 
-   ![자산 선택 대화 상자](assets/customize-app/select-assets.png)
+   ![에셋 선택 대화 상자](assets/customize-app/select-assets.png)
 
-1. `yellow` 텍스트를 필터링합니다. **자산 선택** 창 상단의 **모든 자산 검색** 필드를 사용하여 이미지를 검색합니다. 검색 텍스트를 입력하고 Enter 키를 누르거나 검색으로 돌아갑니다.
+1. `yellow` 텍스트를 필터링합니다. **에셋 선택** 창 상단의 **모든 에셋 검색** 필드를 사용하여 이미지를 검색합니다. 검색 텍스트를 입력하고 Enter 키를 누르거나 검색으로 돌아갑니다.
 
-   ![자산 검색](assets/customize-app/search-assets.png)
+   ![에셋 검색](assets/customize-app/search-assets.png)
 
 1. `biker-yellow.png`이미지를 탭하거나 클릭하여 선택한 다음 **선택**&#x200B;을 탭하거나 클릭합니다.
 
-   ![자산 선택](assets/customize-app/select-asset.png)
+   ![에셋 선택](assets/customize-app/select-asset.png)
 
 1. 바이커 이미지가 선택한 이미지로 교체되었습니다. 편집기는 변경 사항을 자동으로 저장합니다.
 
@@ -163,9 +163,9 @@ headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간�
 
    ![새로운 구매 가능한 순간 미리보기](assets/customize-app/preview-demo-app-shoppable.png)
 
-## 샘플 React 앱을 사용자 지정하는 방법을 배웠습니다! {#conclusion}
+## 샘플 React 앱을 사용자 정의하는 방법을 배웠습니다! {#conclusion}
 
-이 모듈에서는 샘플 React 앱을 사용자 지정하는 방법을 배웠습니다. 먼저 기존 텍스트를 편집하는 방법을 배웠습니다. 그런 다음 이미지가 해당 이미지의 다른 인스턴스와 교체되었습니다. 마지막으로 구매 가능한 순간 항목이 생성되고 배치되는 방법을 확인했습니다.
+이 모듈에서는 샘플 React 앱을 사용자 정의하는 방법을 배웠습니다. 먼저 기존 텍스트를 편집하는 방법을 배웠습니다. 그런 다음 이미지가 해당 이미지의 다른 인스턴스와 교체되었습니다. 마지막으로 구매 가능한 순간 항목이 생성되고 배치되는 방법을 확인했습니다.
 
 AEM 및 해당 콘텐츠 조각 사용에 대한 추가 리소스는 [추가 리소스 섹션](#additional-resources)을 확인하십시오.
 
