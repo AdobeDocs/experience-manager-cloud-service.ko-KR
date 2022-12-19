@@ -1,12 +1,12 @@
 ---
 title: AEM Headless로 레퍼러 필터 구성
-description: Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스트에서 액세스할 수 있습니다. Headless 애플리케이션용 GraphQL 끝점 액세스를 활성화하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다.
+description: Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스트에서 액세스할 수 있습니다. Headless 애플리케이션용 GraphQL 엔드포인트 액세스를 활성화하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 69%
 
 Adobe Experience Manager의 레퍼러 필터를 사용하면 서드파티 호스트에서 액세스할 수 있습니다.
 
-HTTP POST을 통해 헤드리스 애플리케이션의 GraphQL 종단점에 액세스할 수 있도록 하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다. HTTP GET을 통해 AEM에 액세스하는 AEM 헤드리스 지속적인 쿼리를 사용할 때는 레퍼러 필터 구성이 필요하지 않습니다.
+HTTP POST를 통해 헤드리스 애플리케이션용 GraphQL 엔드포인트 액세스를 활성화하려면 레퍼러 필터에 대한 OSGi 구성이 필요합니다. HTTP GET을 통해 AEM에 액세스하는 AEM Headless 지속 쿼리를 사용하는 경우 레퍼러 필터 구성이 필요하지 않습니다.
 
 >[!WARNING]
-> AEM 레퍼러 필터는 OSGi 구성 팩토리가 아닙니다. 즉, 한 번에 하나의 구성만 AEM 서비스에서 활성 상태입니다. 가능하면 사용자 지정 레퍼러 필터 구성을 추가하지 마십시오. 이 구성은 AEM 기본 구성을 덮어쓰고 제품 기능을 손상시킬 수 있습니다.
+> AEM의 레퍼러 필터는 OSGi 구성 팩토리가 아니므로 한 번에 하나의 구성만 AEM 서비스에서 활성화됩니다. 가능한 경우 사용자 정의 레퍼러 필터 구성을 추가하지 마십시오. AEM의 기본 구성을 덮어쓰고 제품 기능을 손상시킬 수 있습니다.
 
 다음과 같은 레퍼러 필터에 대한 적절한 OSGi 구성 추가를 통해 수행됩니다.
 
@@ -56,11 +56,11 @@ HTTP POST을 통해 헤드리스 애플리케이션의 GraphQL 종단점에 액�
 >
 >* 신뢰할 수 있는 도메인에만 액세스 권한을 부여하는 것
 >* 민감한 정보가 노출되지 않도록 하는 것
->* 와일드카드 [*] 구문을 사용하지 않는 것. 사용하면 GraphQL 끝점에 대한 인증된 액세스가 비활성화되고 전 세계에 노출됩니다.
+>* 와일드카드 [*] 구문을 사용하지 않는 것. 사용하면 GraphQL 엔드포인트에 대한 인증된 액세스가 비활성화되고 전 세계에 노출됩니다.
 
 
 >[!CAUTION]
 >
->모든 GraphQL [스키마](#schema-generation)(**활성화됨** 상태인 콘텐츠 조각 모델에서 파생)는 GraphQL 끝점을 통해 읽을 수 있습니다.
+>모든 GraphQL [스키마](#schema-generation)(**활성화됨** 상태인 콘텐츠 조각 모델에서 파생)는 GraphQL 엔드포인트를 통해 읽을 수 있습니다.
 >
 >즉, 이런 식으로 유출될 수 있기 때문에 민감한 데이터가 없는지 확인해야 합니다. 예를 들어 모델 정의에서 필드 이름으로 나타날 수 있는 정보가 여기에 포함됩니다.
