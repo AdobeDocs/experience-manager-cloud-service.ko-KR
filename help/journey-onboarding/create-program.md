@@ -4,9 +4,9 @@ description: Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '626'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 
 >[!TIP]
 >
->프로덕션 프로그램을 만들어야 하는 경우 [추가 리소스](#additional-resources) 섹션을 참조하십시오.
+>프로덕션 프로그램을 제작해야 하는 경우 [추가 리소스](#additional-resources) 섹션의 링크에서 프로그램에 대한 자세한 내용을 참조하십시오.
 
 ## 샌드박스 프로그램 만들기 {#create-sandbox}
 
@@ -75,4 +75,4 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 * [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) - Cloud Manager를 사용하여 교육, 데모, POC 또는 기타 비프로덕션 목적을 위한 자체 샌드박스 프로그램을 만드는 방법을 알아봅니다.
 * [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) - Cloud Manager를 사용하여 라이브 트래픽을 호스팅하는 자체 프로덕션 프로그램을 만드는 방법을 알아봅니다.
 * [Adobe Cloud Manager 사용 - 프로그램](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) - Cloud Manager 프로그램은 논리적 비즈니스 이니셔티브를 지원하는 일련의 AEM 환경을 나타내며, 일반적으로 구매한 SLA(Service Level Agreement)에 해당합니다.
-* [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필이 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한할 수 있는 방법을 알아봅니다.
+* [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필로 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한하는 방법에 대해 알아봅니다.
