@@ -1,13 +1,14 @@
 ---
 title: 프론트엔드 파이프라인으로 Sites 개발
-description: 프런트엔드 파이프라인을 통해 프런트엔드 개발자에게 더 많은 독립성이 부여되며, 개발 프로세스를 통해 상당한 속도를 향상시킬 수 있습니다.
+description: 프런트엔드 파이프라인을 통해 프런트엔드 개발자에게 더 많은 독립성이 부여되며, 개발 프로세스를 통해 상당한 속도를 향상시킬 수 있습니다. 이 문서에서는 제공해야 하는 프런트 엔드 빌드 프로세스의 몇 가지 특정 고려 사항에 대해 설명합니다.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 2%
+source-wordcount: '1157'
+ht-degree: 1%
 
 ---
+
 
 # 프론트엔드 파이프라인으로 Sites 개발 {#developing-site-with-front-end-pipeline}
 
@@ -16,6 +17,20 @@ ht-degree: 2%
 >[!TIP]
 >
 >프런트엔드 파이프라인의 사용 방법과 이 파이프라인이 가져올 수 있는 이점을 아직 잘 모를 경우, [빠른 사이트 만들기 여정](/help/journey-sites/quick-site/overview.md) 백 엔드 개발과는 완전히 독립적으로 새 사이트를 신속하게 배포하고 해당 테마를 사용자 지정하는 방법에 대한 예입니다.
+
+## 프런트 엔드 빌드 계약 {#front-end-build-contract}
+
+와 비슷합니다 [전체 스택 빌드 환경,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 프런트 엔드 파이프라인에는 자체 환경이 있습니다. 개발자는 다음의 프런트 엔드 빌드 계약을 준수하는 한 이 파이프라인에서 약간의 유연성을 얻을 수 있습니다.
+
+프런트엔드 파이프라인을 사용하려면 프런트 엔드 Node.js 프로젝트가 필요합니다 `build` 프런트엔드 파이프라인에 의해 배포되는 빌드를 생성하는 스크립트 지시문입니다. 즉, Cloud Manager는 명령을 사용합니다 `npm run build` 배포 가능한 프로젝트를 `dist` 폴더를 입력합니다.
+
+의 컨텐츠 `dist` 폴더는 Cloud Manager 파이프라인에서 AEM as a Cloud Service에 배포되는 것입니다.
+
+### 노드 버전 {#node-versions}
+
+기본적으로 프런트 엔드 파이프라인은 노드 14를 사용하지만, 16과 16도 사용할 수 있습니다.
+
+를 사용할 수 있습니다 `CM_CUSTOM_VAR_NODE_VERSION` 환경 변수를 사용하십시오.
 
 ## 단일 진실 {#single-source-of-truth}
 

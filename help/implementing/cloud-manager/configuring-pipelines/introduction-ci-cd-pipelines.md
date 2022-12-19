@@ -3,12 +3,13 @@ title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 100%
+source-wordcount: '1368'
+ht-degree: 99%
 
 ---
+
 
 # Cloud Manager CI/CD 파이프라인 {#intro-cicd}
 
@@ -120,9 +121,9 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 >
 >**배포 관리자** 역할이 있는 사용자는 여러 프론트엔드 파이프라인을 동시에 만들고 실행할 수 있습니다.
 >
->그러나 프로그램당 최대 300개의 파이프라인으로 제한됩니다(모든 유형에서). 이는 프론트엔드 코드 품질 또는 프론트엔드 배포 파이프라인일 수 있습니다.
+>그러나 프로그램당 최대 300개의 파이프라인으로 제한됩니다(모든 유형에서).
 
-프론트엔드 파이프라인은 코드 품질 파이프라인 또는 배포일 수 있습니다.
+프런트엔드 파이프라인은 코드 품질 파이프라인 또는 배포 파이프라인일 수 있습니다.
 
 ### 프론트엔드 파이프라인을 구성하기 전에 {#before-start}
 
