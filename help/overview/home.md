@@ -3,9 +3,9 @@ title: Experience Manager as a Cloud Service 시작하기
 description: Experience Manager as a Cloud Service의 작동 방식과 소프트웨어가 제공하는 기능에 대해 알아봅니다.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
