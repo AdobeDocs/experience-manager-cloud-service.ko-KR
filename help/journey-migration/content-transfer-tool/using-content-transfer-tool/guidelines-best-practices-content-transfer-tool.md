@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
 description: 컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: b0d219f712b1dbbfa70d66ac14c0a66dc89ebbab
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1595'
 ht-degree: 19%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 19%
 
 * 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 CTT(컨텐츠 전송 도구)가 컨텐츠 분석을 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스 또는 게시 인스턴스 또는 둘 다에 수집할 수 있습니다. 컨텐츠를 프로덕션 인스턴스로 이동하는 동안 컨텐츠를 타겟 작성자 인스턴스로 이동하도록 소스 작성자 인스턴스에 CTT를 설치하여 컨텐츠를 타겟 게시 인스턴스로 이동시키는 것이 좋습니다. 을(를) 참조하십시오. [게시 인스턴스에서 컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) 자세한 내용
 
-* 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에 의해 권한을 충족하기 위해 필요한 사용자 및 그룹에만 해당합니다. 다음 *추출* 프로세스 전체 `/home` 마이그레이션 세트 및 *수집* 마이그레이션된 컨텐츠 ACL에서 참조되는 모든 사용자와 그룹을 복사합니다. 기존 사용자 및 그룹을 IMS ID에 자동으로 매핑하려면 다음을 참조하십시오 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
+* 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에 의해 권한을 충족하기 위해 필요한 사용자 및 그룹에만 해당합니다. 다음 *추출* 프로세스 전체 `/home` 마이그레이션 세트 및 *수집* 마이그레이션된 컨텐츠 ACL에서 참조되는 모든 사용자와 그룹을 복사합니다. 기존 사용자를 IMS ID에 자동으로 매핑하려면 다음을 참조하십시오 [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * 추출 단계 중에 컨텐츠 전송 도구는 활성 AEM 소스 인스턴스에서 실행됩니다.
 
