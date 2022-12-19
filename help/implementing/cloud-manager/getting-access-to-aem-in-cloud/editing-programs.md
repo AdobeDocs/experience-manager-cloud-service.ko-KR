@@ -3,9 +3,9 @@ title: 프로그램 편집
 description: 프로덕션 및 샌드박스 프로그램을 만든 후 옵션을 조정하도록 편집하는 방법을 알아봅니다.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '513'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -56,11 +56,11 @@ ht-degree: 87%
 
 솔루션 또는 추가 기능 추가 또는 제거를 포함하여 프로그램을 편집할 때마다 이러한 변경 사항은 다음 배포 이후에 적용됩니다.
 
-프로덕션 프로그램에서 보안을 강화한 경우 **향상된 보안** 탭에서 **프로그램 편집** 창이 열려 있는지 확인합니다.
+프로덕션 프로그램에 향상된 보안이 활성화된 경우 **프로그램 편집** 창에서 추가적인 **향상된 보안** 탭을 사용하여 프로그램에 대해 기능이 활성화되어 있는지 확인할 수 있습니다.
 
-![프로그램에 대해 활성화된 보안 향상](assets/edit-program-enhanced.png)
+![프로그램에 대해 활성화된 향상된 보안](assets/edit-program-enhanced.png)
 
-프로그램을 만든 후에는 이 설정을 수정할 수 없습니다. 향상된 보안 옵션에 대한 자세한 내용은 [프로덕션 프로그램 생성](creating-production-programs.md) 문서.
+프로그램 생성 이후에는 이 설정을 수정할 수 없습니다. 향상된 보안 옵션에 대한 자세한 내용은 [프로덕션 프로그램 만들기](creating-production-programs.md) 문서를 참조하십시오.
 
 ## 샌드박스 프로그램 삭제 {#delete-sandbox-program}
 
