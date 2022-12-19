@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1149'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 90%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
->title="모델 편집기를 시작합니다"
->abstract="컨텐츠 조각 모델 작성은 모델 관리 워크플로우에서 모델 항목을 만든 다음 컨텐츠 조각 모델 편집기를 사용하여 구조 요소를 컨텐츠 조각 모델에 추가하는 것으로 시작합니다.<br><br>아래 를 클릭하여 새 탭에서 기능을 시작하고 이 학습 문서에 따라 첫 번째 컨텐츠 조각을 만듭니다."
+>title="모델 편집기 실행"
+>abstract="콘텐츠 조각 모델 구축은 모델 관리 워크플로에서 모델 항목을 만든 다음 콘텐츠 조각 모델 편집기를 사용하여 여기에 구조 요소를 추가하는 것으로 시작됩니다.<br><br>아래를 클릭하여 새 탭에서 기능을 실행하고 이 학습 문서에 따라 첫 번째 콘텐츠 조각을 만들어 보십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
->title="모델 편집기를 시작합니다"
->abstract="컨텐츠 조각 모델 작성은 모델 관리 워크플로우에서 모델 항목을 만든 다음 컨텐츠 조각 모델 편집기를 사용하여 구조 요소를 컨텐츠 조각 모델에 추가하는 것으로 시작합니다.\n\n새 탭에서 기능을 시작하려면 아래를 클릭하고 이 학습 문서에 따라 첫 번째 컨텐츠 조각을 만듭니다."
+>title="모델 편집기 실행"
+>abstract="콘텐츠 조각 모델 구축은 모델 관리 워크플로에서 모델 항목을 만든 다음 콘텐츠 조각 모델 편집기를 사용하여 여기에 구조 요소를 추가하는 것으로 시작됩니다.\n\n아래를 클릭하여 새 탭에서 기능을 실행하고 이 학습 문서에 따라 첫 번째 콘텐츠 조각을 만들어 보십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
