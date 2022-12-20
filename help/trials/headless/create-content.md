@@ -4,10 +4,10 @@ description: 이전에 만든 콘텐츠 조각 모델을 사용하여 페이지 
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -19,6 +19,13 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="새 콘텐츠 만들기"
 >abstract="모듈 1에서 만든 모델을 기반으로 페이지 작성에 사용할 수 있거나 Headless 콘텐츠의 기반으로 사용할 수 있는 콘텐츠를 만드는 방법을 알아봅니다."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
+>title="컨텐츠 조각 콘솔 시작"
+>abstract="AEM 헤드리스 CMS에서 &quot;컨텐츠 조각&quot;은 &quot;컨텐츠 조각 모델&quot;이라는 사전 정의된 구조에 맞는 모든 컨텐츠 조각입니다. 이 연습에서는 컨텐츠 조각 모델의 컨텐츠를 만드는 방법을 알아봅니다.<br><br>아래를 클릭하여 새 탭에서 기능을 실행하고 이 학습 문서에 따라 첫 번째 콘텐츠 조각을 만들어 보십시오."
+>additional-url="https://video.tv.adobe.com/v/328618" text="소개 비디오의 자리 표시자"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="비디오 축소판: 컨텐츠 추가 - 우승 레서피"
 
 ## 콘텐츠 조각 {#introduction}
 
