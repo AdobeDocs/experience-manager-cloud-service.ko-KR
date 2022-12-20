@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - 통신
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 1%
+source-wordcount: '684'
+ht-degree: 0%
 
 ---
 
@@ -31,9 +31,11 @@ Forms as a Cloud Service - Communications에서는 예약된 문서 생성을 �
 * 문서 생성 API
 * 문서 조작 API
 
-### 다중 임차인 API
+<!-- 
+### Multi-tenant APIs
 
-* 문서 유틸리티 API
+* Document utility APIs -->
+
 
 ### 단일 테넌트 API 인증
 
@@ -53,47 +55,52 @@ Forms as a Cloud Service - Communications에서는 예약된 문서 생성을 �
    >
    >Adobe은 프로덕션 환경에서 토큰 기반 인증을 사용하는 것을 권장합니다.
 
-### 다중 임차인 API 인증
+<!-- 
 
-#### 인증 헤더
+### Authenticate a multi-tenant API
 
-Cloud Manager API에 대한 모든 인바운드 HTTP API 호출에는 다음 세 개의 헤더를 포함해야 합니다.
+#### Authentication Headers
+
+Every inbound HTTP API call to the multi-tenant API must contain these three headers:
+
 
 * `x-api-key`
 * `x-gw-ims-org-id`
 * `Authorization`
 
-에서 전송해야 하는 값 `x-api-key` 및 `x-gw-ims-org-id` 머리글은 [Adobe Developer 콘솔](https://developer.adobe.com/console). 의 값 `x-api-key` header 는 클라이언트 ID이고 `x-gw-ims-org-id` header 는 조직 ID입니다.
+The values which should be sent in the `x-api-key` and `x-gw-ims-org-id` headers are provided in the Credentials details screen in the [Adobe Developer Console](https://developer.adobe.com/console). The value of the `x-api-key` header is the Client ID and the value for the `x-gw-ims-org-id` header is the Organization ID.
 
-#### 액세스 토큰을 생성하도록 Adobe Developer 콘솔 구성
+#### Configure Adobe Developer console to generate an access token
 
-인증 API를 설정하려면 Adobe Developer Console에서 프로젝트를 만들고 Communication API를 Adobe Developer Console의 프로젝트에 추가합니다. 통합은 API 키, 클라이언트 암호, 페이로드(JWT)를 생성합니다.
+To set up authentication APIs, create a project in Adobe Developer Console and add Communication APIs to the project on Adobe Developer Console. The integration generates API Key, Client Secret, Payload (JWT):
 
-1. Adobe Developer 콘솔 관리자에게 문의하십시오. 개발자로 추가하도록 관리자에게 요청합니다.
-1. 에 로그인합니다. `https://developer.adobe.com/console/`. 관리자가 Adobe Developer 콘솔에 로그인하도록 제공한 개발자 계정을 사용합니다.
-1. 오른쪽 상단 모서리에서 조직을 선택합니다. 조직을 모르는 경우에는 관리자에게 문의하십시오.
-1. 탭 **[!UICONTROL 새 프로젝트 만들기]**. 새 프로젝트를 시작할 화면이 나타납니다. 탭 **[!UICONTROL API 추가]**. 계정에 대해 모든 API 목록이 활성화된 화면이 나타납니다.
-1. 선택 **[!UICONTROL AEM Forms - 통신]** 탭 **[!UICONTROL 다음]**. API를 구성하는 화면이 나타납니다.
-1. 선택 **[!UICONTROL 옵션 1 키 쌍 생성]** 탭 **[!UICONTROL 키 쌍 생성]**. 구성 파일을 만들고 다운로드합니다. 다운로드한 구성 파일에는 모든 앱 설정과 개인 키의 유일한 사본이 포함되어 있습니다. Adobe이 개인 키를 기록하지 않으므로 다운로드한 파일을 안전하게 저장해야 합니다. 탭 **[!UICONTROL 다음]**.
-1. 선택 **[!UICONTROL 통합 - Cloud Service]** 탭 **[!UICONTROL 구성된 API 저장]**. 탭 **[!UICONTROL 서비스 계정(JWT)]** api 키, 클라이언트 암호 및 API에 액세스하는 데 필요한 기타 정보를 보려면 다음을 수행하십시오. 토큰을 사용하여 API에 액세스하도록 설정합니다.
+1. Contact you Adobe Developer Console administrator. Ask the administrator to add as a developer.
+1. Log in to `https://developer.adobe.com/console/`. Use your developer account that your administrator has provisioned to log in to Adobe Developer Console.
+1. Select your organization from the top-right corner. If you do not know your organization, contact your administrator.
+1. Tap **[!UICONTROL Create new project]**. A screen to get started with your new project appears. Tap **[!UICONTROL Add API]**. A screen with list of all the APIs enabled for your account appears.
+1. Select **[!UICONTROL AEM Forms - Communications]** and tap **[!UICONTROL Next]**. A screen to configure the API appears.
+1. Select **[!UICONTROL OPTION 1 Generate a key pair]** and tap **[!UICONTROL Generate keypair]**. It creates and downloads the configuration file. The downloaded configuration file contains all your app settings, along with the only copy of your private key. Adobe does not record your private key, make sure to securely store the downloaded file. Tap **[!UICONTROL Next]**.
+1. Select **[!UICONTROL Integrations - Cloud Service]** and tap **[!UICONTROL Save configured API]**. Tap **[!UICONTROL Service Account (JWT)]** to view the API Key, Client Secret, and other information required to access the APIs. You set to use the token to access the APIs.
 
-#### 프로그래밍 방식으로 액세스 토큰을 생성하고 사용합니다
+#### Programmatically generate and use an access token
 
-액세스 토큰을 프로그래밍 방식으로 생성하려면 JSON 웹 토큰(JWT)을 생성하고 액세스 토큰을 위한 IMS(Adobe Identity Management Service)와 교환하십시오.
+To programmatically generate an access token, generate a JSON Web Token (JWT) and exchange it with the Adobe Identity Management Service (IMS) for an access token.
 
-JWT JSON 개체를 구성하려면 청구라고도 하는 다음 키를 사용합니다.
+Use the following keys, referred to as claims, to construct JWT JSON object:
 
-* `exp`- 1970년 1월 1일 GMT 이후 시간(초)으로 표시되는 액세스 토큰의 요청된 만료. 대부분의 사용 사례에서 이는 상대적으로 작은 값입니다. 예를 들어 5분, 지금부터 5분 동안 이 값은 1670923791이어야 합니다.
-* `iss` - Adobe Developer 콘솔 프로젝트의 조직 ID는 org_ident@AdobeOrg 형식입니다.
-* `sub` - Adobe Developer 콘솔 통합에서 기술 계정 ID(다음 형식)입니다. id@techacct.adobe.com
-* `aud` - Adobe Developer 콘솔 통합에서 가져온 클라이언트 ID 앞에 `https://ims-na1.adobelogin.com/c/`.
-* `https://ims-na1-stg1.adobelogin.com/s/ent_aemforms_docprocessing` - 리터럴 값으로 설정 `true`
 
-그런 다음 이 JSON 개체는 base64로 인코딩되고 프로젝트의 개인 키를 사용하여 서명해야 합니다. 마지막으로 인코딩된 값은 POST 요청 본문에 `https://ims-na1.adobelogin.com/ims/exchange/jwt` ( 는 프로젝트에 대한 클라이언트 ID 및 클라이언트 암호 와 함께 사용됩니다.
+* `exp`- the requested expiration of the access token, expressed as a number of seconds since January 1, 1970 GMT. For most use cases, this is a relatively small value. For example, 5 minutes, for five minutes from now, this value should be 1670923791.
+* `iss` - the Organization ID from the Adobe Developer Console project, in the format org_ident@AdobeOrg.
+* `sub` - the Technical Account ID from the Adobe Developer Console integration, in the format: id@techacct.adobe.com.
+* `aud` - the Client ID from the Adobe Developer Console integration prepended with `https://ims-na1.adobelogin.com/c/`.
+* `https://ims-na1-stg1.adobelogin.com/s/ent_aemforms_docprocessing` - set to the literal value `true`
 
-##### 예
+This JSON object must be then base64 encoded and signed using the private key for the project. Finally, the encoded value is sent in the body of a POST request to `https://ims-na1.adobelogin.com/ims/exchange/jwt` along with the Client ID and Client Secret for the project.
+
+##### Example
 
 ```JSON
+
     ========================= REQUEST ==========================
     POST https://ims-na1.adobelogin.com/ims/exchange/jwt
     -------------------------- body ----------------------------
@@ -101,11 +108,14 @@ JWT JSON 개체를 구성하려면 청구라고도 하는 다음 키를 사용�
     ------------------------- headers --------------------------
     Content-Type: application/x-www-form-urlencoded
     Cache-Control: no-cache
+
 ```
 
-#### JWT에 대한 언어 지원
+#### Language Support for JWT
 
-사용자 지정 코드에서 전체 JWT 생성 및 교환 프로세스를 수행할 수 있지만 더 높은 수준의 라이브러리를 사용하는 것이 일반적입니다. 이러한 라이브러리 수는 [Adobe I/O JWT 설명서](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+While it is possible to do the entire JWT generation and exchange process in custom code, it is more common to use a higher-level library to do so. A number of such libraries are listed on the [Adobe I/O JWT Documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+
+-->
 
 ### (문서 생성 API에 대해서만) 자산 및 권한 구성
 

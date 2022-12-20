@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service Communications 소개
 description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 2%
+source-wordcount: '1136'
+ht-degree: 3%
 
 ---
 
@@ -126,29 +126,31 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 문서 조작 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 규격 문서인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
 
-## 문서 유틸리티
+<!-- 
 
-문서 유틸리티 동기 API는 PDF과 XDP 파일 형식 간에 문서를 변환하고 PDF 문서에 대한 정보를 쿼리하는 데 도움이 됩니다. 예를 들어 PDF 문서에 주석이나 첨부 파일이 포함되어 있는지 확인할 수 있습니다.
+## Document utilities
 
-### PDF 문서 속성 검색
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
 
-다음을 수행할 수 있습니다 [PDF 문서 쿼리](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) 을 참조하십시오.
+### Retrieve PDF document properties
 
-* PDF 문서입니다. 소스 문서가 PDF 문서인지 확인합니다.
-* 입력 가능한 양식입니다. 소스 PDF 문서가 입력 가능한 양식인지 확인합니다.
-* 양식 유형: 문서의 양식 유형을 검색합니다.
-* 첨부 파일 확인: 소스 PDF 문서에 첨부 파일이 있는지 확인합니다.
-* 주석 확인: 소스 PDF 문서에 검토 주석이 있는지 확인합니다.
-* PDF 패키지입니다. 문서가 PDF 패키지인지 확인합니다.
-* PDF 버전 가져오기: 검색 [PDF 문서 버전](https://en.wikipedia.org/wiki/History_of_PDF).
-* 권장 Acrobat 버전: 필요한 버전의 Acrobat(Reader)을 검색하여 PDF 문서를 엽니다.
-* XFA 문서입니다. 소스 PDF 문서가 XFA 기반 PDF 문서인지 확인합니다.
-* 셸 PDF: 소스 PDF 문서가 셸 PDF인지 확인합니다. 셸 PDF은 XFA 스트림, 글꼴 및 이미지 리소스만 포함하고, 비어 있거나 Acrobat 또는 Adobe Reader을 사용하여 문서를 열어야 한다는 경고가 포함된 페이지를 하나 포함합니다. 셸 PDF은 PDFForm 변환의 전달만 최적화하기 위해 PDF 변환에 사용됩니다.
-* XFA 버전 가져오기: 검색 [XFA 기반 PDF 문서에 대한 XFA 버전](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+You can [query a PDF document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) for the following information:
 
-### PDF 문서를 XDP 문서로 변환
+* Is a PDF Document: Check whether the source document is a PDF document.
+* Is a fillable form: Check whether the source PDF document is a fillable form.
+* Form Type: Retrieve the form type of the document.
+* Check for Attachments: Check whether the source PDF document has any attachments.
+* Check for Comments: Check whether the source PDF document has any review comments.
+* Is a PDF Package: Check whether the document is a PDF package.
+* Get the PDF Version: Retrieve the [version of the PDF document](https://en.wikipedia.org/wiki/History_of_PDF).
+* Recommended Acrobat Version: Retrieve the required version of Acrobat (Reader) to open the PDF document.
+* Is an XFA Document: Check whether the source PDF document is an XFA-based PDF document.
+* Is Shell PDF: Check whether the source PDF document is shell PDF. A shell PDF contains only an XFA stream, font and image resources, and one page that is either blank or contains a warning that the document must be opened using Acrobat or Adobe Reader. The shell PDF is used with PDF transformation to optimize delivery of PDFForm transformations only.
+* Get the XFA Version: Retrieve the [XFA Version for an XFA-based PDF document](https://en.wikipedia.org/wiki/XFA#XFA_versions).
 
-다음 [XDP API에 PDF](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) PDF 문서를 XDP 파일로 변환합니다. PDF 문서를 XDP 파일로 성공적으로 변환하려면 사전에서 PDF 문서에 XFA 스트림을 포함해야 합니다.
+### Convert PDF Documents into XDP Documents
+
+The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
 ## 통신 API 유형
 
