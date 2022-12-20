@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ GraphQL 쿼리를 시작하고 이들 쿼리가 AEM 콘텐츠 조각과 함께 �
 
 * [샘플 콘텐츠 조각 구조](#content-fragment-structure-graphql)
 
-* 그리고 [샘플 GraphQL 쿼리](#graphql-sample-queries)샘플 컨텐츠 조각 구조(컨텐츠 조각 모델 및 관련 컨텐츠 조각)를 기반으로 합니다.
+* 샘플 콘텐츠 조각 구조(콘텐츠 조각 모델 및 관련 콘텐츠 조각)를 기반으로 하는 몇 가지 [샘플 GraphQL 쿼리](#graphql-sample-queries)
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -660,7 +660,7 @@ query {
 
 ### 샘플 쿼리 - 독일 또는 스위스에 위치한 인구 400000~999999의 모든 도시 {#sample-all-cities-d-ch-population}
 
-여기에서는 필드를 조합하여 필터링됩니다. An `AND`(암시적)는 `population`범위를 선택하는 데 사용되며, `OR`(명시적)은 필요한 도시를 선택하는 데 사용됩니다.
+여기에서는 필드를 조합하여 필터링됩니다. An `AND`(묵시적)는 `population`범위를 선택하는 데 사용되며, `OR`(명시적)는 필요한 도시를 선택하는 데 사용됩니다.
 
 **샘플 쿼리**
 
@@ -1121,7 +1121,7 @@ query {
 이 샘플 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `article` 유형의 모든 콘텐츠 조각
-* 사용 `_path` 및 속성 `authorFragment`.
+* `_path` 및 `authorFragment`의 속성
 
 **샘플 쿼리**
 
@@ -1328,7 +1328,7 @@ query {
 1. 모든 콘텐츠 참조 반환.
 1. `attachments` 유형의 특정 콘텐츠 참조 반환.
 
-이 쿼리는 다음에 대한 정보를 얻습니다.
+이들 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `bookmark` 유형의 복수 콘텐츠 조각
    * 다른 조각에 대한 콘텐츠 참조 포함
@@ -1491,7 +1491,7 @@ query {
 
 >[!NOTE]
 >
->이 경우 가 없는 컨텐츠 조각에 대한 폴백이 표시됩니다 [변형](/help/headless/graphql-api/content-fragments.md#variations) 지정한 이름의 경로입니다.
+>지정된 이름의 [변형](/help/headless/graphql-api/content-fragments.md#variations)이 없는 콘텐츠 조각에 대한 폴백을 보여 줍니다.
 
 **샘플 쿼리**
 
@@ -1543,7 +1543,7 @@ query {
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 최대 5개의 문서가 포함된 결과 페이지의 *complete* 결과 목록
+* *전체* 결과 목록의 다섯 번째 문서부터 시작하여 최대 5개의 문서를 포함하는 결과 페이지
 
 **샘플 쿼리**
 
@@ -1563,11 +1563,11 @@ query {
 }
 ```
 
-### 첫 번째 및 그 후를 사용하는 샘플 페이지 매김 쿼리  {#sample-pagination-first-after}
+### 첫 번째 및 그 다음 페이지를 사용하는 샘플 페이지 매김 쿼리  {#sample-pagination-first-after}
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
-* 에 지정된 커서 항목에서 시작하여 최대 5개의 모험이 포함된 결과 페이지의 *complete* 결과 목록
+* *전체* 결과 목록의 주어진 커서 항목부터 시작하여 최대 5개의 모험을 포함하는 결과 페이지
 
 **샘플 쿼리**
 
@@ -1588,7 +1588,7 @@ query {
 }
 ```
 
-## 샘플 콘텐츠 조각 구조(GraphQL과 함께 사용) {#content-fragment-structure-graphql}
+## 샘플 콘텐츠 조각 구조 (GraphQL과 함께 사용) {#content-fragment-structure-graphql}
 
 샘플 쿼리는 다음 구조를 기반으로 합니다. 사용:
 
@@ -1596,7 +1596,7 @@ query {
 
 * 위 모델을 기반으로 하는 [샘플 콘텐츠 모델](#sample-content-fragments)
 
-### 샘플 콘텐츠 조각 모델(스키마) {#sample-content-fragment-models-schemas}
+### 샘플 콘텐츠 조각 모델 (스키마) {#sample-content-fragment-models-schemas}
 
 샘플 쿼리의 경우 다음 콘텐츠 모델 및 해당 상호 관계를 사용합니다(참조 ->):
 
@@ -1613,8 +1613,8 @@ query {
 | 필드 이름 | 데이터 형식 | 참조 |
 |--- |--- |--- |
 | 회사 이름 | 한 줄 텍스트 |  |
-| CEO | 조각 참조(단일) | [개인](#model-person) |
-| 직원 | 조각 참조(다중 필드) | [개인](#model-person) |
+| CEO | 조각 참조 (단일) | [개인](#model-person) |
+| 직원 | 조각 참조 (다중 필드) | [개인](#model-person) |
 
 #### 개인 {#model-person}
 
@@ -1624,7 +1624,7 @@ query {
 |--- |--- |--- |
 | 이름 | 한 줄 텍스트 |  |
 | 이름 | 한 줄 텍스트 |  |
-| 상 | 조각 참조(다중 필드) | [상](#model-award) |
+| 상 | 조각 참조 (다중 필드) | [상](#model-award) |
 
 #### 상 {#model-award}
 

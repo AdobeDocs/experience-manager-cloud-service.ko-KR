@@ -25,7 +25,7 @@ ht-degree: 100%
    + [용어 - 클라우드용 새로운 용어](/help/overview/terminology.md)
    + [AEM as a Cloud Service 아키텍처 소개](/help/overview/architecture.md)
    + [SEO 및 URL 관리](/help/overview/seo-and-url-management.md)
-   + [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
+   + [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [KPI 평가](/help/overview/assessing-kpis.md)
    + [KPI 정렬](/help/overview/aligning-kpis.md)
    + [적합한 팀 선택](/help/overview/choose-right-team.md)
@@ -161,7 +161,7 @@ ht-degree: 100%
       + [알림 사용자 그룹](/help/journey-onboarding/user-groups.md)
 + AEMaaCS 체험판 {#trials}
    + Headless 체험판 {#headless}
-      + [샘플 React 앱에서 콘텐츠 사용자 지정](/help/trials/headless/customize-app.md)
+      + [샘플 React 앱에서 콘텐츠 사용자 정의](/help/trials/headless/customize-app.md)
       + [앱의 콘텐츠 구조 만들기](/help/trials/headless/content-structure.md)
       + [Headless 콘텐츠 만들기](/help/trials/headless/create-content.md)
       + [GraphQL API를 통한 콘텐츠 추출](/help/trials/headless/extract-content.md)
@@ -250,7 +250,7 @@ ht-degree: 100%
          + [CSV로 내보내기](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [구성 요소](/help/sites-cloud/authoring/fundamentals/components.md)
          + [모바일 디바이스용 작성](/help/sites-cloud/authoring/fundamentals/mobile.md)
-         + [액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+         + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
          + [문제 해결](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
          + [키보드 단축키](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
       + 작성 기능 {#features}
@@ -482,7 +482,7 @@ ht-degree: 100%
       + [Dynamic Media 에셋 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Dynamic Media의 선택적 게시를 사용하여 작업](/help/assets/dynamic-media/selective-publishing.md)
       + [선택기를 사용하여 작업](/help/assets/dynamic-media/working-with-selectors.md)
-      + [콘텐츠 FAQ의 HTTP2 전송](/help/assets/dynamic-media/http2faq.md)
+      + [콘텐츠 FAQ의 HTTP2 게재](/help/assets/dynamic-media/http2faq.md)
       + [Flash 뷰어 서비스 종료](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Adobe Workfront와 통합 {#integrations}
@@ -653,14 +653,14 @@ ht-degree: 100%
 + Headless {#headless}
    + [Headless CMS란 무엇입니까?](/help/headless/what-is-headless.md)
    + [AEM Headless 소개](/help/headless/introduction.md)
-   + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [개발자 포털 (추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + 설정 {#setup}
       + [소개](/help/headless/setup/introduction.md)
       + [구성](/help/headless/setup/create-configuration.md)
       + [콘텐츠 조각 모델](/help/headless/setup/create-content-model.md)
       + [Assets 폴더](/help/headless/setup/create-assets-folder.md)
       + [콘텐츠 조각](/help/headless/setup/create-content-fragment.md)
-      + [GraphQL 끝점](/help/headless/setup/create-api-request.md)
+      + [GraphQL 엔드포인트](/help/headless/setup/create-api-request.md)
    + 콘텐츠 조각 {#content-fragments}
       + [개요](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
       + [콘텐츠 조각 콘솔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
@@ -696,12 +696,12 @@ ht-degree: 100%
          + [AEM Headless as a Cloud Service 시작하기](/help/journey-headless/developer/getting-started.md)
          + [AEM Headless를 사용한 첫 번째 경험으로의 경로](/help/journey-headless/developer/path-to-first-experience.md)
          + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](/help/journey-headless/developer/model-your-content.md)
-         + [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](/help/journey-headless/developer/access-your-content.md)
+         + [AEM 게재 API를 통해 콘텐츠에 액세스하는 방법](/help/journey-headless/developer/access-your-content.md)
          + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](/help/journey-headless/developer/update-your-content.md)
          + [결합 방법](/help/journey-headless/developer/put-it-all-together.md)
          + [Headless 애플리케이션 실행 방법](/help/journey-headless/developer/go-live.md)
          + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](/help/journey-headless/developer/create-spa.md)
-         + [개발자 포털(추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [개발자 포털 (추가 리소스)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + Headless 콘텐츠 설계 여정 {#architect}
          + [AEM Headless 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
          + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
@@ -727,7 +727,7 @@ ht-degree: 100%
       + 프로그램 {#programs}
          + [프로그램 및 프로그램 유형](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [제작 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [제작 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [프로덕션 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [샌드박스 프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [샌드박스 프로그램 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [프로그램 편집](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
@@ -899,8 +899,8 @@ ht-degree: 100%
    + 작성자 계층 {#author-tier}
       + [작성자 계층에 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
-   + 콘텐츠 전송 개요 {#content-delivery}
-      + [콘텐츠 전송 플로우](/help/implementing/dispatcher/overview.md)
+   + 콘텐츠 게재 개요 {#content-delivery}
+      + [콘텐츠 게재 플로우](/help/implementing/dispatcher/overview.md)
       + [클라우드의 디스패처](/help/implementing/dispatcher/disp-overview.md)
       + [디스패처 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md)
       + [AMS에서 AEM as a Cloud Service로 디스패처 구성 마이그레이션](/help/implementing/dispatcher/ams-aem.md)
