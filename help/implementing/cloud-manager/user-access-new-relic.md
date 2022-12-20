@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: abc3be85679724fd4a8ce1ddcbd2ac5cca151953
-workflow-type: ht
-source-wordcount: '1607'
-ht-degree: 100%
+source-git-commit: 524212d1c68ef31d7fa01dc22296ddae54a0a3d1
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -146,7 +146,7 @@ New Relic에서 이메일을 받지 못한 경우 다음 작업을 수행하십�
 
 New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니다.
 
-* 최대 25명의 사용자를 추가할 수 있습니다. 최대 사용자 수에 도달한 경우 새 사용자를 추가할 수 있도록 사용자를 제거하십시오.
+* 최대 30명의 사용자를 추가할 수 있습니다. 최대 사용자 수에 도달한 경우 새 사용자를 추가할 수 있도록 사용자를 제거하십시오.
 * New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. 자세한 내용은 [New Relic 설명서를 참조하십시오.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
@@ -172,7 +172,7 @@ New Relic One 계정은 Adobe에서 관리하는 주 계정에 연결되어 있�
 
 ### New Relic One Cloud Service 데이터에 접근할 수 있는 권한은 누구에게 있습니까? {#access-new-relic-cloud}
 
-최대 10명의 팀원에게 전체 읽기 액세스 권한이 부여됩니다. 읽기 액세스에는 New Relic One 에이전트가 수집한 모든 APM 지표가 포함됩니다.
+최대 30명의 팀원에게 전체 읽기 액세스 권한이 부여됩니다. 읽기 액세스에는 New Relic One 에이전트가 수집한 모든 APM 지표가 포함됩니다.
 
 ### 사용자 정의 SSO 구성이 지원됩니까? {#custom-sso}
 
