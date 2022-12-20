@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
+source-wordcount: '2902'
 ht-degree: 2%
 
 ---
@@ -111,10 +111,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 개발자는 [!DNL Asset Compute Service] to [사용자 지정 애플리케이션 만들기](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) 지원되는 사용 사례에 대해 를 참조하십시오. [!DNL Experience Manager] 관리자는 사용자 정의 프로파일을 사용하여 사용자 인터페이스에서 이러한 사용자 정의 애플리케이션을 호출할 수 있습니다. [!DNL Asset Compute Service] 에서는 외부 서비스를 호출하는 다음과 같은 사용 사례를 지원합니다.
 
-* 사용 [!DNL Adobe Photoshop]s [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 결과를 변환으로 저장합니다.
+* 사용 [!DNL Adobe Photoshop]s [ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 결과를 변환으로 저장합니다.
 * 서드파티 시스템에 문의하여 데이터를 업데이트하십시오(예: PIM 시스템).
 * 사용 [!DNL Photoshop] Photoshop 템플릿을 기반으로 다양한 표현물을 생성하는 API입니다.
-* 사용 [Adobe Lightroom API](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) 수집된 자산을 최적화하고 표현물로 저장합니다.
+* 사용 [Adobe Lightroom API](https://developer.adobe.com/photoshop/photoshop-api-docs/) 수집된 자산을 최적화하고 표현물로 저장합니다.
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 다음 정보를 입력하십시오.
 
    * 각 변환의 파일 이름 및 지원되는 파일 확장자입니다.
-   * [Firefly 사용자 지정 앱의 끝점 URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 앱은 Experience Manager 계정이 있는 조직과 동일해야 합니다.
+   * [App Builder 사용자 지정 앱의 끝점 URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html). 앱은 Experience Manager 계정이 있는 조직과 동일해야 합니다.
    * 에 서비스 매개 변수 추가 [사용자 지정 애플리케이션에 추가 정보 또는 매개 변수 전달](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend).
    * 처리를 몇 가지 특정 파일 형식으로 제한하는 MIME 유형을 포함 및 제외합니다.
 
    **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-사용자 지정 애플리케이션은 헤드리스 [Project Firefly](https://github.com/AdobeDocs/project-firefly) 앱을 사용할 수 없습니다. 사용자 지정 응용 프로그램은 처리 프로필로 설정된 경우 제공된 모든 파일을 가져옵니다. 응용 프로그램에서 파일을 필터링해야 합니다.
+사용자 지정 애플리케이션은 헤드리스 [프로젝트 앱 빌더](https://developer.adobe.com/app-builder/docs/overview/) 앱을 사용할 수 없습니다. 처리 프로필로 설정된 경우 사용자 지정 애플리케이션에서 제공된 모든 파일을 가져옵니다. 응용 프로그램에서 파일을 필터링해야 합니다.
 
 >[!CAUTION]
 >
->Firefly 앱에서 [!DNL Experience Manager] 계정이 동일한 조직의 계정이 아니므로 통합이 작동하지 않습니다.
+>App Builder 앱과 [!DNL Experience Manager] 계정이 동일한 조직의 계정이 아니므로 통합이 작동하지 않습니다.
 
 ### 사용자 지정 프로필의 예 {#custom-profile-example}
 
