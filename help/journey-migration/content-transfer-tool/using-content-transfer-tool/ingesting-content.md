@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 11%
+source-wordcount: '1375'
+ht-degree: 9%
 
 ---
 
@@ -142,6 +142,18 @@ Release Orchestrator는 업데이트를 자동으로 적용하여 환경을 최�
 수집을 시작할 때 Release Orchestrator가 여전히 실행 중인 경우 UI에 이 오류 메시지가 표시됩니다. 위험을 감수하면서 계속 진행할 수도 있습니다. 필드를 확인하고 버튼을 다시 누르면 됩니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+
+### 추가 수집 실패
+
+일반적인 원인 [추가 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 오류는 노드 id의 충돌입니다. 이 오류를 식별하려면 Cloud Acceleration Manager UI를 사용하여 수집 로그를 다운로드하고 다음과 같은 항목을 찾습니다.
+
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: 고유성 제약 조건이 속성을 위반했습니다 [jcr:uuid] 값 a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
+
+AEM의 각 노드에는 고유한 uuid가 있어야 합니다. 이 오류는 수집되고 있는 노드의 uuid가 대상 인스턴스의 다른 경로에 이미 있는 것과 동일함을 나타냅니다.
+이 문제는 추출과 후속 간 소스에서 노드를 이동하는 경우 발생할 수 있습니다 [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+대상에 있는 노드가 수집과 후속 추가 수집 간에 이동하는 경우에도 발생할 수 있습니다.
+
+이 충돌을 수동으로 해결해야 합니다. 컨텐츠를 잘 알고 있는 사람은 두 노드 중 어느 노드를 삭제해야 하는지 결정하고 해당 노드를 참조하는 다른 컨텐츠를 기억합니다. 문제를 일으키는 노드 없이 추가 추출을 다시 수행해야 할 수 있습니다.
 
 ## 다음 단계 {#whats-next}
 
