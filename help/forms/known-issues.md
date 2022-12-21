@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 12%
+source-wordcount: '324'
+ht-degree: 11%
 
 ---
 
@@ -28,6 +28,10 @@ ht-degree: 12%
 * Apple iOS 장치에서 표준 HTML 업로드 필드가 포함된 적응형 양식을 제출하면 파일의 컨텐츠가 전송되지 않고, 다른 끝에는 0바이트 파일이 수신됩니다. 이 문제는 간헐적으로 그리고 동기 전송 사용 시에만 발생합니다. 이것은 [알려진 문제](https://feedbackassistant.apple.com/feedback/9117687) Apple iOS.
 
 * Apple iOS 장치에서 표준 HTML 업로드 필드가 포함된 양식을 제출하는 경우 때로 파일의 컨텐츠가 전송되지 않고 다른 끝에는 0바이트 파일이 수신됩니다. Apple iOS에서 알려진 문제입니다. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+* AEM Forms as a Cloud Service은 XDP 및 JSON 스키마 파일에 대한 축소판을 생성하지 않습니다. 축소판 대신 기본 아이콘이 표시됩니다.
+
+   ![Forms 축소판 그림 알려진 문제](/help/forms/assets/forms-tumbnail-known-issue.png)
 
 
 ## 제한 사항 {#limitations}
