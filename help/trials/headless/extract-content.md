@@ -4,10 +4,10 @@ description: 콘텐츠 조각 및 GraphQL API를 headless 콘텐츠 관리 시�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 93%
+source-wordcount: '1287'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,6 @@ GraphQL은 외부 클라이언트 애플리케이션이 단일 API 호출을 사
 >title="GraphQL Explorer 시작"
 >abstract="GraphQL은 단일 API 호출을 사용하여 외부 클라이언트 애플리케이션이 필요한 컨텐츠에만 AEM을 쿼리할 수 있도록 하는 쿼리 기반 API를 제공합니다. 이 안내서에 따라 두 가지 유형의 쿼리를 실행한 다음 이전 모듈에서 만든 컨텐츠 조각에서 컨텐츠를 검색하는 방법을 알아봅니다.<br><br>아래 를 클릭하여 새 탭에서 기능을 시작합니다."
 >additional-url="https://video.tv.adobe.com/v/328618" text="소개 비디오의 자리 표시자"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="비디오 축소판: GraphQL 빠른 컨텐츠 추출"
 
 ## GraphQL 탐색기 {#graphql-explorer}
 

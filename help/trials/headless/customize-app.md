@@ -4,10 +4,10 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 95%
+source-wordcount: '1465'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,6 @@ headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간�
 >title="컨텐츠 조각 편집기를 시작합니다"
 >abstract="headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간단한 React 앱이 미리 로드되어 있습니다. 앱은 컨텐츠 조각의 구조를 기반으로 합니다. AEM에서 컨텐츠 조각 편집기를 사용하여 앱의 컨텐츠를 수정할 수 있습니다.<br><br>아래 를 클릭하여 새 탭에서 기능을 시작한 다음 이 안내서를 따르십시오."
 >additional-url="https://video.tv.adobe.com/v/328618" text="소개 비디오의 자리 표시자"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="비디오 축소판: flash에서 앱 콘텐츠 수정"
 
 ## 콘텐츠 조각 편집기 {#fragment-editor}
 
