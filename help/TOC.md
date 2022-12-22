@@ -308,7 +308,7 @@ ht-degree: 100%
          + [콘텐츠 조각 콘솔 - 키보드 단축키](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
-         + [프런트-엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
+         + [프론트-엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Site Rail 사용](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md)
