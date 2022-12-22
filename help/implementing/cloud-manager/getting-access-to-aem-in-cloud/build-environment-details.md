@@ -3,9 +3,9 @@ title: 빌드 환경
 description: Cloud Manager의 빌드 환경과 코드 빌드 및 테스트 방법에 대해 알아봅니다.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -221,7 +221,7 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
         </profile>
 ```
 
-이와 동일한 기술을 사용하여 언어별 패키지를 설치할 수 있습니다(예: `gem` RubyGems 또는 `pip` Python 패키지
+이와 동일한 기술을 사용하여 언어별 패키지를 설치할 수 있습니다. 예를 들어 RubyGems의 경우 `gem` 또는 Python 패키지의 경우 `pip`를 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -229,4 +229,4 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
 
 >[!TIP]
 >
->프런트 엔드 빌드 환경에 대한 자세한 내용은 문서를 참조하십시오 [프런트엔드 파이프라인을 사용하여 사이트 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>프론트엔드 빌드 환경에 대한 자세한 내용은 [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)을 참조하십시오.
