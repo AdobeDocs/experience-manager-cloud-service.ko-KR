@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1287'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ GraphQL은 외부 클라이언트 애플리케이션이 단일 API 호출을 사
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
->title="GraphQL Explorer 시작"
->abstract="GraphQL은 단일 API 호출을 사용하여 외부 클라이언트 애플리케이션이 필요한 컨텐츠에만 AEM을 쿼리할 수 있도록 하는 쿼리 기반 API를 제공합니다. 이 안내서에 따라 두 가지 유형의 쿼리를 실행한 다음 이전 모듈에서 만든 컨텐츠 조각에서 컨텐츠를 검색하는 방법을 알아봅니다.<br><br>아래 를 클릭하여 새 탭에서 기능을 시작합니다."
->additional-url="https://video.tv.adobe.com/v/328618" text="소개 비디오의 자리 표시자"
+>title="GraphQL 탐색기 실행"
+>abstract="GraphQL은 외부 클라이언트 애플리케이션이 단일 API 호출을 사용하여 필요한 콘텐츠에 대해서만 AEM을 쿼리할 수 있도록 하는 쿼리 기반 API를 제공합니다. 이 안내서를 따라 두 가지 다른 유형의 쿼리를 실행한 다음 이전 모듈에서 만든 콘텐츠 조각에서 콘텐츠를 검색하는 방법을 알아보십시오.<br><br>아래를 클릭하여 새 탭에서 기능을 실행하십시오."
+>additional-url="https://video.tv.adobe.com/v/328618" text="인트로 비디오용 플레이스홀더"
 
 ## GraphQL 탐색기 {#graphql-explorer}
 
@@ -50,7 +50,7 @@ AEM 체험판에는 테스트 목적으로 콘텐츠를 추출할 수 있는 콘
 
 ![엔드포인트 선택](assets/extract-content/select-endpoint.png)
 
-편집기의 오른쪽 상단 모서리에 있는 **엔드포인트** 드롭다운 메뉴에서 **AEM 데모 자산** 엔드포인트를 선택합니다(아직 해당되지 않은 경우).
+편집기의 오른쪽 상단에 있는 **엔드포인트** 드롭다운 메뉴에서 **AEM 데모 자산** 엔드포인트를 선택합니다(아직 해당되지 않은 경우).
 
 ## 목록 쿼리 복사 및 실행 {#list-query}
 
@@ -85,7 +85,7 @@ AEM as a Cloud Service에서 GraphQL API를 작동하는 방식을 파악하기 
 
 1. 붙여넣기가 완료되면 쿼리 편집기 왼쪽 상단의 **재생** 버튼을 클릭하여 쿼리를 실행합니다.
 
-1. 쿼리가 실행되면 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다. 쿼리가 잘못된 경우, 오른쪽 패널에 오류가 나타납니다.
+1. 쿼리가 실행되면 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다. 쿼리가 잘못된 경우, 오른쪽 패널에 오류가 표시됩니다.
 
    ![목록 쿼리 결과](assets/extract-content/list-query-results.png)
 
@@ -128,9 +128,9 @@ byPath 쿼리를 실행하면 특정 콘텐츠 조각에 대한 자산을 검색
 
 1. 붙여넣기가 완료되면 쿼리 편집기 왼쪽 상단의 **재생** 버튼을 클릭하여 쿼리를 실행합니다.
 
-1. 쿼리가 실행되면 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다. 쿼리가 잘못된 경우, 오른쪽 패널에 오류가 나타납니다.
+1. 쿼리가 실행되면 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다. 쿼리가 잘못된 경우, 오른쪽 패널에 오류가 표시됩니다.
 
-1. 쿼리가 실행되면 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다. 쿼리가 잘못된 경우, 오른쪽 패널에 오류가 나타납니다.
+1. 쿼리가 실행되면 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다. 쿼리가 잘못된 경우, 오른쪽 패널에 오류가 표시됩니다.
 
    ![byPath 쿼리 결과](assets/extract-content/bypath-query-results.png)
 
