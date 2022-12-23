@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
->title="컨텐츠 조각 콘솔 시작"
->abstract="AEM 헤드리스 CMS에서 &quot;컨텐츠 조각&quot;은 &quot;컨텐츠 조각 모델&quot;이라는 사전 정의된 구조에 맞는 모든 컨텐츠 조각입니다. 이 연습에서는 컨텐츠 조각 모델의 컨텐츠를 만드는 방법을 알아봅니다.<br><br>아래를 클릭하여 새 탭에서 기능을 실행하고 이 학습 문서에 따라 첫 번째 콘텐츠 조각을 만들어 보십시오."
->additional-url="https://video.tv.adobe.com/v/328618" text="소개 비디오의 자리 표시자"
+>title="콘텐츠 조각 콘솔 실행"
+>abstract="AEM Headless CMS에서 “콘텐츠 조각”은 “콘텐츠 조각 모델”이라고 불리는 사전 정의된 구조에 맞는 콘텐츠의 모든 부분입니다. 이 연습에서는 콘텐츠 조각 모델에 대한 콘텐츠를 만드는 방법을 알아봅니다.<br><br>아래를 클릭하여 새 탭에서 기능을 실행하고 이 학습 문서에 따라 첫 번째 콘텐츠 조각을 만들어 보십시오."
+>additional-url="https://video.tv.adobe.com/v/328618" text="인트로 비디오용 플레이스홀더"
 
 ## 콘텐츠 조각 {#introduction}
 
