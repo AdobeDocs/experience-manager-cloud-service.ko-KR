@@ -5,15 +5,15 @@ hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1465'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 샘플 React 앱에서 콘텐츠 사용자 정의 {#customize-app}
 
-headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간단한 React 앱이 미리 로드되어 있습니다. 이 모듈에서는 이미지를 교체하고 구매 가능한 순간을 만들어 해당 앱을 미리보고 콘텐츠를 수정하는 방법에 대해 배우게 됩니다.
+headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간단한 React 앱이 미리 로드되어 있습니다. 이 모듈에서는 이미지를 교체하고 구매 가능한 순간을 만들어 해당 앱을 미리 보고 콘텐츠를 수정하는 방법에 대해 배우게 됩니다.
 
 앱 자체는 콘텐츠 조각 구조를 기반으로 합니다. AEM에서 콘텐츠 조각 편집기를 사용하여 앱 콘텐츠를 수정할 수 있습니다. 빠른 대화형 둘러보기를 통해 프로세스를 안내하는 이 AEM 체험판 모듈에서는 해당 작업을 수행하는 방법에 대해 알아볼 수 있습니다. 이 문서는 대화형 둘러보기를 보완하는 역할을 하며, 동일한 단계를 다루고 해당하는 경우 추가 리소스에 대한 링크를 제공합니다.
 
@@ -24,9 +24,9 @@ headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
->title="컨텐츠 조각 편집기를 시작합니다"
->abstract="headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간단한 React 앱이 미리 로드되어 있습니다. 앱은 컨텐츠 조각의 구조를 기반으로 합니다. AEM에서 컨텐츠 조각 편집기를 사용하여 앱의 컨텐츠를 수정할 수 있습니다.<br><br>아래 를 클릭하여 새 탭에서 기능을 시작한 다음 이 안내서를 따르십시오."
->additional-url="https://video.tv.adobe.com/v/328618" text="소개 비디오의 자리 표시자"
+>title="콘텐츠 조각 편집기 실행"
+>abstract="Headless용 AEM 체험판에는 Headless 콘텐츠를 선보일 수 있는 간단한 React 앱이 미리 로드되어 있습니다. 이 앱은 콘텐츠 조각 구조를 기반으로 합니다. AEM에서 콘텐츠 조각 편집기를 사용하여 앱 콘텐츠를 수정할 수 있습니다.<br><br>아래를 클릭하여 새 탭에서 기능을 실행한 다음 이 안내서를 따르십시오."
+>additional-url="https://video.tv.adobe.com/v/328618" text="인트로 비디오용 플레이스홀더"
 
 ## 콘텐츠 조각 편집기 {#fragment-editor}
 
@@ -48,7 +48,7 @@ headless용 AEM 체험판에는 headless 콘텐츠를 선보일 수 있는 간�
 
 ## 앱 미리보기 {#preview}
 
-앱 수정을 시작하기 전에 먼저 현재 상태를 미리보고 앱에 익숙해집니다. 편집기 화면의 오른쪽 상단에서 **미리보기** 버튼을 탭하거나 클릭합니다.
+앱 수정을 시작하기 전에 먼저 현재 상태를 미리 보고 앱에 익숙해집니다. 편집기 화면의 오른쪽 상단에서 **미리보기** 버튼을 탭하거나 클릭합니다.
 
 데모 앱이 새 탭에서 열립니다.
 
