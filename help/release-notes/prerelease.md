@@ -4,7 +4,7 @@ description: 프리릴리스 채널을 사용하여 AEM as a Cloud Service에 �
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
 workflow-type: ht
-source-wordcount: '1306'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
