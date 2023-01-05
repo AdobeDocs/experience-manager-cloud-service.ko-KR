@@ -2,8 +2,8 @@
 title: 여러 저장소 사용
 description: Cloud Manager로 작업할 때 여러 git 저장소를 관리하는 방법을 알아봅니다.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: a7ae6d75d6820f48d3d45cb5830f888a87d51de1
-workflow-type: tm+mt
+source-git-commit: 5ea5c3f03642ae2f7471165d4d0ee33c2cc31b6b
+workflow-type: ht
 source-wordcount: '757'
 ht-degree: 100%
 
