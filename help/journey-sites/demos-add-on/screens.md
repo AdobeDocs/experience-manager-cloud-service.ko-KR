@@ -3,7 +3,7 @@ title: 데모 사이트에 대해 AEM Screens 활성화
 description: 제작한 데모 사이트에서 전체 AEM Screens as a Cloud Service 환경을 활성화하기 위한 단계에 대해 알아봅니다.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2699'
 ht-degree: 100%
 
