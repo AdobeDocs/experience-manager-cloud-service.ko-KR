@@ -369,7 +369,7 @@ RemotePage 구성 요소는 구현에서 다음과 같은 자산 매니페스트
 
 * [AEM Headful 및 Headless](/help/implementing/developing/headful-headless.md)
 * [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
+* [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko-KR)
 * [React를 사용하여 AEM에서 SPA 시작하기](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA 참조 자료(API 참조)](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA 블루프린트 및 PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)

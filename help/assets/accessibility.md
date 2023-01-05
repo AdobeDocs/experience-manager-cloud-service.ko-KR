@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 201f365643d82cb3c7d43fa8c31650ee46dc3b29
+source-git-commit: 3130f374859c1bb67f6311d2decfdd537eabf14f
 workflow-type: tm+mt
 source-wordcount: '1913'
 ht-degree: 2%
@@ -228,5 +228,5 @@ CRUD 작업, 자산 다운로드, 메타데이터 추가와 같은 많은 자산
 >
 >* [각 릴리스에서 수행한 개선 사항에 대한 릴리스 노트입니다](/help/release-notes/release-notes-cloud/release-notes-current.md).
 >* [[!DNL Adobe Experience Manager] 액세스 가능성 지침](/help/compliance/accessibility/web-accessibility.md).
->* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/accessibility/compliance.html).
+>* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/kr/accessibility/compliance.html).
 

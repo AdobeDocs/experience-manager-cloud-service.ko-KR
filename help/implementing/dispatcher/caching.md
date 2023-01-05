@@ -119,7 +119,7 @@ AEM 레이어는 기본적으로 Blob 컨텐츠를 캐시하지 않습니다.
 >[!NOTE]
 >Cloud Manager 환경 변수 AEM_BLOB_ENABLE_CACHING_HEADERS를 true로 설정하여 새 동작(65000보다 높은 프로그램 ID)과 일관되도록 이전 기본 동작을 변경하는 것이 좋습니다. 프로그램이 이미 활성 상태인 경우 변경 후 컨텐츠가 예상대로 동작하는지 확인하십시오.
 
-현재, 비공개 로 표시된 Blob 저장소의 이미지는 를 사용하여 디스패처에서 캐시할 수 없습니다 [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). 이미지는 항상 AEM 원본에서 요청되며 사용자가 인증되면 제공됩니다.
+현재, 비공개 로 표시된 Blob 저장소의 이미지는 를 사용하여 디스패처에서 캐시할 수 없습니다 [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR). 이미지는 항상 AEM 원본에서 요청되며 사용자가 인증되면 제공됩니다.
 
 >[!NOTE]
 >다음을 포함한 다른 메서드 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)은 값을 성공적으로 재정의하지 않습니다.

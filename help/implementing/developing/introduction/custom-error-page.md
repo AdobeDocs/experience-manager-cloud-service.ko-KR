@@ -2,7 +2,7 @@
 title: 맞춤형 오류 페이지
 description: AEM에는 사용자 지정할 수 있는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 포함되어 있습니다.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: ab68c03b29f3d2179b33c61a6d853d80ccb17615
+source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%

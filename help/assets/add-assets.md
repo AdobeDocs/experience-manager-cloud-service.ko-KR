@@ -394,7 +394,7 @@ Experience Manager에 작업 기록이 표시됩니다. [대량 가져오기 작
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [ [!DNL Adobe Asset Link] 정보](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
->* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [정보 [!DNL Adobe Asset Link]](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [[!DNL Adobe Asset Link] 설명서](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [자산 업로드에 대한 기술 참조](developer-reference-material-apis.md#asset-upload)
 

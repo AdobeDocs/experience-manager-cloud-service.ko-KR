@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service을 개발하는 지침과 AEM 온프레미스 및 AMS의 AEM과 다른 중요한 방법에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
+source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
 workflow-type: tm+mt
 source-wordcount: '2590'
 ht-degree: 2%

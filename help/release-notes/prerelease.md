@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service 프리릴리스 채널
 description: 프리릴리스 채널을 사용하여 AEM as a Cloud Service에 대한 예정된 기능을 미리 보는 방법에 대해 알아보십시오.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1306'
 ht-degree: 100%
 
 ---

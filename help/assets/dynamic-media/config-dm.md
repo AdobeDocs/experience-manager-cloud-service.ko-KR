@@ -3,7 +3,7 @@ title: Dynamic Media Cloud Service 구성
 description: Adobe Experience Manager as a Cloud Service에서 Dynamic Media을 구성하는 방법을 알아봅니다.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 50a7db14a378f99eeadc3f9cb91f228ea4139ff4
+source-git-commit: 8066d24193822a79d88f564a2db26b3acbb4e918
 workflow-type: tm+mt
 source-wordcount: '3795'
 ht-degree: 3%
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >
    >자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
 
-   ![dynamicmediaconfiguration2업데이트됨](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 새 Dynamic Media 암호 및 구성이 저장됩니다. 선택한 경우 **[!UICONTROL 취소]** 대신 암호 업데이트가 발생하지 않습니다.
 1. 에서 **[!UICONTROL Dynamic Media 구성]** 대화 상자, 선택 **[!UICONTROL 확인]** 구성을 시작합니다.

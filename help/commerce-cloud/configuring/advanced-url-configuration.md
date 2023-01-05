@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
+source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
 workflow-type: tm+mt
 source-wordcount: '2214'
 ht-degree: 3%
@@ -219,7 +219,7 @@ URL 다시 쓰기는 AEM Dispatcher HTTP 서버를 `mod_rewrite` 모듈. 다음 
 
 _**sku를 포함하는 제품 페이지 URL 형식을 사용합니다.**_
 
-CIF 코어 구성 요소 는 모든 구성 요소에서 sku를 기본 식별자로 사용합니다. 제품 페이지 URL 형식에 sku가 포함되어 있지 않은 경우 GraphQL 쿼리가 이를 해결해야 합니다. 이 경우 1바이트 시간에 영향을 줄 수 있습니다. 또한 고객이 검색 기호를 사용하여 sku로 제품을 찾을 수 있다는 것이 필요할 수 있습니다.
+CIF 코어 구성 요소 는 모든 구성 요소에서 sku를 기본 식별자로 사용합니다. 제품 페이지 URL 형식에 sku가 포함되어 있지 않은 경우 이를 해결하기 위해 GraphQL 쿼리가 필요합니다. 이 경우 1바이트 시간에 영향을 줄 수 있습니다. 또한 고객이 검색 기호를 사용하여 sku로 제품을 찾을 수 있다는 것이 필요할 수 있습니다.
 
 _**카테고리 컨텍스트를 포함하는 제품 페이지 URL 형식을 사용합니다.**_
 
@@ -245,7 +245,7 @@ _**URL 길이와 인코딩된 정보 간의 균형.**_
 
 >[!NOTE]
 >
->이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 구성 을 참조하십시오.
+>이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 프로젝트에 대한 구성.
 
 ## 추가 리소스 {#additional}
 

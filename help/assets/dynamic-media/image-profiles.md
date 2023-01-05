@@ -170,7 +170,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 선택 **[!UICONTROL 폴더에 처리 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 을(를) 선택합니다 **[!UICONTROL 적용]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 선택 **[!UICONTROL 폴더에 처리 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 을(를) 선택합니다 **[!UICONTROL 적용]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
 #### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
@@ -182,7 +182,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 1. 도구 모음에서 를 선택합니다 **[!UICONTROL 속성]**.
 1. 을(를) 선택합니다 **[!UICONTROL Dynamic Media 처리]** 탭.
 1. 아래 **[!UICONTROL 이미지 프로필]**: **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 적용할 프로필을 선택합니다.
-1. 페이지의 오른쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장 및 닫기]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장 및 닫기]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -321,4 +321,4 @@ Folders that have a profile already assigned to it are indicated by the display 
 1. 을(를) 선택합니다 **[!UICONTROL 이미지 프로필]** 탭.
 1. 에서 **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 **[!UICONTROL 없음]**&#x200B;를 선택하고 을 선택합니다. **[!UICONTROL 저장 및 닫기]**.
 
-   프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+   Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
