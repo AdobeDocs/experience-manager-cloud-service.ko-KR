@@ -4,7 +4,7 @@ description: Experience Cloud 설정 자동화는 간단한 UI 마법사 인터�
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 539d3947964652dd92620ce0b0b057754742be96
+source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
 workflow-type: ht
 source-wordcount: '756'
 ht-degree: 100%
