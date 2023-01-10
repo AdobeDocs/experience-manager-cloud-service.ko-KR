@@ -3,9 +3,9 @@ title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -185,9 +185,9 @@ Maven 프로젝트는 도커 빌드 컨텍스트를 생성합니다. 이 도커 
 테스트가 시작되기 전에 Selenium 서버가 실행 중인지 확인하는 것은 도커 이미지의 책임입니다. Selenium 서비스 대기는 2단계 프로세스입니다.
 
 1. `SELENIUM_BASE_URL` 환경 변수에서 Selenium 서비스의 URL을 읽습니다.
-1. Selenium API에 의해 노출된 [상태 끝점](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)에 정기적으로 폴링합니다.
+1. Selenium API에 의해 노출된 [상태 엔드포인트](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)에 정기적으로 폴링합니다.
 
-Selenium의 상태 끝점이 긍정 응답을 보내면 테스트를 시작할 수 있습니다.
+Selenium의 상태 엔드포인트가 긍정 응답을 보내면 테스트를 시작할 수 있습니다.
 
 ### 테스트 보고서 생성 {#generate-test-reports}
 
@@ -197,9 +197,9 @@ Selenium의 상태 끝점이 긍정 응답을 보내면 테스트를 시작할 �
 
 ### 스크린샷 및 비디오 캡처 {#capture-screenshots}
 
-Docker 이미지는 추가 테스트 출력(예: 스크린샷, 비디오)을 생성하고 환경 변수에 지정된 경로에 저장할 수 있습니다 `REPORTS_PATH`. 아래에 있는 모든 파일 `REPORTS_PATH` 테스트 결과 아카이브에 포함됩니다.
+도커 이미지는 추가 테스트 출력(예: 스크린샷, 비디오)을 생성하고 환경 변수 `REPORTS_PATH`에 의해 지정된 경로에 저장할 수 있습니다. `REPORTS_PATH` 아래에 있는 모든 파일은 테스트 결과 아카이브에 포함됩니다.
 
-UI 테스트 실행 중에 테스트 결과 아카이브를 만든 경우 테스트 로그 파일의 끝에 테스트 결과 아카이브 위치에 대한 참조가 포함됩니다.
+UI 테스트 실행 도중 테스트 결과 아카이브가 생성된 경우 테스트 로그 파일의 끝에 테스트 결과 아카이브 위치에 대한 참조가 포함됩니다.
 
 ```
 [...]
