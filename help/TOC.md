@@ -9,9 +9,9 @@ breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 156cf55a33184bd986628d775475ed1f841e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3827'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -393,7 +393,7 @@ ht-degree: 99%
       + [에셋 다운로드](/help/assets/download-assets-from-aem.md)
       + [편집할 에셋 체크인 및 체크아웃](/help/assets/check-out-and-submit-assets.md)
       + [비공개 폴더 생성 및 공유](/help/assets/private-folder.md)
-      + [에셋용 디지털 권한 관리](/help/assets/drm.md)
+      + [에셋용 Digital Rights Management](/help/assets/drm.md)
       + [에셋에 워터마크 추가](/help/assets/watermark-assets.md)
       + [ [!DNL Creative Cloud] API를 사용하여 에셋 처리](/help/assets/cc-api-integration.md)
       + [이미지용 색상 태그](/help/assets/color-tag-images.md)
@@ -768,7 +768,7 @@ ht-degree: 99%
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + 맞춤형 도메인 이름 {#custom-domain-names}
          + [소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [맞춤형 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         + [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [맞춤형 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
@@ -785,7 +785,7 @@ ht-degree: 99%
       + [AEM 프로젝트 구조](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 프로젝트 저장소 구조 패키지](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM 빠른 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [AEM 신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [AEM as a Cloud Service 개발 지침](/help/implementing/developing/introduction/development-guidelines.md)
       + [로깅](/help/implementing/developing/introduction/logging.md)
       + [구성 및 구성 브라우저](/help/implementing/developing/introduction/configurations.md)
