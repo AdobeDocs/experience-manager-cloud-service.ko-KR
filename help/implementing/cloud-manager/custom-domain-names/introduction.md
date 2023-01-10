@@ -3,9 +3,9 @@ title: 사용자 정의 도메인 이름 소개
 description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 여러
 
 >[!NOTE]
 >
->사용자 지정 도메인은 Cloud Manager에서 지원됩니다 **전용** AEM 관리 CDN을 사용하는 경우. CDN을 가져와서 [AEM 관리 CDN에 가리키기](/help/implementing/dispatcher/cdn.md) 해당 특정 CDN을 사용하여 Cloud Manager가 아닌 도메인을 관리해야 합니다.
+>사용자 정의 도메인은 AEM 관리 CDN을 사용하는 **경우에만** Cloud Manager에서 지원됩니다. 자체 CDN을 가져오고 [AEM 관리 CDN을 지정](/help/implementing/dispatcher/cdn.md)하는 경우 Cloud Manager가 아닌 도메인을 관리하려면 해당 특정 CDN을 사용해야 합니다.
 
 ## 워크플로 {#workflow}
 
@@ -67,4 +67,4 @@ AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 여러
 
 >[!TIP]
 >
->AEM as a Cloud Service를 사용하여 사용자 지정 도메인 이름을 설정하는 것은 일반적으로 간단한 프로세스입니다. 그러나 경우에 따라 도메인 위임 문제가 발생할 수 있으며 이는 문제를 해결하는 데 영업일 1~2일이 걸릴 수 있습니다. 따라서 Live Date 훨씬 전에 도메인을 설치하는 것이 좋습니다. 문서를 참조하십시오 [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 추가 정보.
+>AEM as a Cloud Service를 사용하여 사용자 정의 도메인 이름을 설정하는 것은 일반적으로 간단한 프로세스입니다. 그러나 경우에 따라 도메인 위임 문제가 발생할 수 있으며 해결하는 데 영업일 기준 1~2일이 소요될 수 있습니다. 이러한 이유로 활성화 날짜 이전에 도메인을 설치하는 것이 좋습니다. 자세한 내용은 [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서를 참조하십시오.
