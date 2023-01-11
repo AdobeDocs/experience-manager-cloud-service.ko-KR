@@ -2,9 +2,9 @@
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
+source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1021'
 ht-degree: 88%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 88%
 
 ### Dispatcher {#dispatcher}
 
-일반 환경 변수만 디스패처에서 사용할 수 있습니다. 암호는 사용할 수 없습니다.
+일반 환경 변수만 [디스패처.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 암호는 사용할 수 없습니다.
 
 그러나 환경 변수는에서 사용할 수 없습니다 `IfDefine` 지시어
 
@@ -128,7 +128,7 @@ ht-degree: 88%
 
 ### OSGi 구성 {#osgi}
 
-OSGi 구성에서 일반 환경 변수와 암호를 모두 사용할 수 있습니다.
+일반 환경 변수와 암호는 [OSGi 구성.](/help/implementing/deploying/configuring-osgi.md)
 
 ### 파이프라인 변수 {#pipeline}
 
