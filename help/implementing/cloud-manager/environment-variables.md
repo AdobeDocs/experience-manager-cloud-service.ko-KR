@@ -2,10 +2,10 @@
 title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 100%
+source-wordcount: '1015'
+ht-degree: 88%
 
 ---
 
@@ -107,3 +107,29 @@ ht-degree: 100%
 `pom.xml` 파일에서 두 가지 유형의 변수를 모두 사용하는 방법에 대한 예는 [프로젝트 설정](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) 문서를 참조하십시오.
 
 자세한 내용은 [공식 Maven 설명서](https://maven.apache.org/settings.html#quick-overview)를 참조하십시오.
+
+## 환경 변수 가용성 {#availability}
+
+환경 변수는 여러 위치에서 사용할 수 있습니다.
+
+### 작성자, 미리 보기 및 게시 {#author-preview-publish}
+
+일반 환경 변수와 암호는 작성, 미리 보기 및 게시 환경에서 사용할 수 있습니다.
+
+### Dispatcher {#dispatcher}
+
+일반 환경 변수만 디스패처에서 사용할 수 있습니다. 암호는 사용할 수 없습니다.
+
+그러나 환경 변수는에서 사용할 수 없습니다 `IfDefine` 지시어
+
+>[!TIP]
+>
+>를 사용하여 환경 변수를 사용하는지 확인해야 합니다. [dispatcher 로컬로](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) 배포하기 전에
+
+### OSGi 구성 {#osgi}
+
+OSGi 구성에서 일반 환경 변수와 암호를 모두 사용할 수 있습니다.
+
+### 파이프라인 변수 {#pipeline}
+
+환경 변수 외에 빌드 단계 동안 표시되는 파이프라인 변수도 있습니다. [여기에서 파이프라인 변수에 대해 자세히 알아보십시오.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
