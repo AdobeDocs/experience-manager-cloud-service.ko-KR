@@ -3,8 +3,8 @@ title: New Relic One
 description: AEM as a Cloud Service를 위한 New Relic One APM(Application Performance Monitoring) 서비스에 대한 정보와 액세스하는 방법에 대해 알아봅니다.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: c265ce6f29dee1760049a8d296f00a3c2484fb77
-workflow-type: tm+mt
-source-wordcount: '1603'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -147,7 +147,7 @@ New Relic에서 이메일을 받지 못한 경우 다음 작업을 수행하십�
 New Relic One에 사용자를 추가하는 경우 다음 제한이 적용됩니다.
 
 * 최대 30명의 사용자를 추가할 수 있습니다. 최대 사용자 수에 도달한 경우 새 사용자를 추가할 수 있도록 사용자를 제거하십시오.
-* New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. 자세한 내용은 [New Relic 설명서를 참조하십시오.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)을 따르지 않는 경우입니다
+* New Relic에 추가된 사용자는 **제한됨** 유형이 됩니다. 자세한 내용은 [New Relic 설명서를 참조하십시오.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service는 New Relic One APM 솔루션만 제공하며 경고, 로깅 또는 API 통합에 대한 지원은 제공하지 않습니다.
 
 AEM as a Cloud Service 프로그램용 New Relic One에 대한 추가 도움말 또는 추가 지침을 보려면 [AEM 지원 포털](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)을 통해 지원 티켓을 엽니다.
