@@ -2,9 +2,9 @@
 title: Eclipse용 AEM 개발자 도구
 description: Eclipse용 AEM 개발자 도구
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
+source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1182'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ AEM 개발자 도구를 사용하려면 먼저 다음을 수행해야 합니다.
 
 당신이 [요구 사항](#requirements) 위에서 다음과 같이 플러그인을 설치할 수 있습니다.
 
-1. 를 엽니다. [AEM Developer Tools 웹 사이트](https://eclipse.adobe.com/aem/dev-tools/).
+1. 를 엽니다. [AEM Developer Tools 웹 사이트](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. 를 복사합니다. **설치 링크**.
 
-   또는 설치 링크를 사용하는 대신 아카이브를 다운로드할 수 있습니다. 이렇게 하면 오프라인 설치가 허용되지만 이 방법으로 자동 업데이트 알림이 누락됩니다.
+   또는 설치 링크를 사용하는 대신 아카이브를 다운로드할 수 있습니다. 이 방법을 사용하면 오프라인 설치가 허용되지만 이 방법으로 자동 업데이트 알림을 받지 않습니다.
 
 1. Eclipse에서 **도움말** 메뉴 아래의 제품에서 사용할 수 있습니다.
 1. 클릭 **새 소프트웨어 설치**.
