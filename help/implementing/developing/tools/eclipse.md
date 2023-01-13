@@ -2,9 +2,9 @@
 title: Eclipse용 AEM 개발자 도구
 description: Eclipse용 AEM 개발자 도구
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1179'
 ht-degree: 3%
 
 ---
@@ -196,7 +196,7 @@ AEM Developer Tools for Eclipse에는 여러 AEM 기능에 대한 모범 사례 
 
 프로젝트에서 패키지를 다시 빌드하려면 `PROJECT.ui.apps` 또는 `PROJECT.ui.content` 및 **다음으로 실행** -> **Maven 설치**.
 
-이제 안에 패키지를 사용하여 만든 대상 폴더가 있습니다(예: `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+이제 패키지가 내부에 생성되어(예: `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## 문제 해결 {#troubleshooting}
 
