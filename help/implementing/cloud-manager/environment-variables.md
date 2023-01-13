@@ -3,9 +3,9 @@ title: Cloud Manager 환경 변수
 description: 표준 환경 변수는 Cloud Manager를 통해 구성 및 관리할 수 있으며 OSGi 구성에서 사용할 런타임 환경에 제공됩니다.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1021'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 88%
 
 환경 변수를 사용하는 일반적인 사용 사례는 다음과 같습니다.
 
-* AEM 애플리케이션을 다양한 외부 끝점과 연결
+* AEM 애플리케이션을 다양한 외부 엔드포인트와 연결
 * 코드베이스에 직접 저장하는 대신 암호 저장 시 참조 사용
 * 프로그램에 여러 개발 환경이 존재하고 일부 구성이 환경마다 다른 경우
 
@@ -110,26 +110,26 @@ ht-degree: 88%
 
 ## 환경 변수 가용성 {#availability}
 
-환경 변수는 여러 위치에서 사용할 수 있습니다.
+환경 변수는 여러 곳에서 사용할 수 있습니다.
 
-### 작성자, 미리 보기 및 게시 {#author-preview-publish}
+### 작성, 미리보기 및 게시 {#author-preview-publish}
 
-일반 환경 변수와 암호는 작성, 미리 보기 및 게시 환경에서 사용할 수 있습니다.
+일반 환경 변수와 비밀은 작성, 미리보기 및 게시 환경에서 사용할 수 있습니다.
 
 ### Dispatcher {#dispatcher}
 
-일반 환경 변수만 [디스패처.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 암호는 사용할 수 없습니다.
+[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 비밀은 사용할 수 없습니다.
 
-그러나 환경 변수는에서 사용할 수 없습니다 `IfDefine` 지시어
+그러나 환경 변수는 `IfDefine` 지침에서 사용할 수 없습니다.
 
 >[!TIP]
 >
->를 사용하여 환경 변수를 사용하는지 확인해야 합니다. [dispatcher 로컬로](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) 배포하기 전에
+>배포하기 전에 [로컬에서 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html)를 사용하여 환경 변수 사용을 확인해야 합니다.
 
 ### OSGi 구성 {#osgi}
 
-일반 환경 변수와 암호는 [OSGi 구성.](/help/implementing/deploying/configuring-osgi.md)
+일반 환경 변수와 비밀 모두 [OSGi 구성](/help/implementing/deploying/configuring-osgi.md)에서 사용할 수 있습니다.
 
 ### 파이프라인 변수 {#pipeline}
 
-환경 변수 외에 빌드 단계 동안 표시되는 파이프라인 변수도 있습니다. [여기에서 파이프라인 변수에 대해 자세히 알아보십시오.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+환경 변수 외에도 빌드 단계 중에 노출되는 파이프라인 변수도 있습니다. [여기에서 파이프라인 변수에 대해 자세히 알아보십시오.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
