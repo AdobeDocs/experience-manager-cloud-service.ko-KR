@@ -4,9 +4,9 @@ description: Experience Platform 태그 및 Dynamic Media Viewers 5.13용 Dynami
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6679'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ Adobe 확장 또는 타사 확장에 대한 자세한 내용은 [Adobe 확장](h
 * Dynamic Media 뷰어에 대한 Experience Platform 태그 통합이 Experience Manager 작성자 노드에서 작동하지 않습니다. WCM 페이지에서 추적이 게시될 때까지 이를 볼 수 없습니다.
 * Dynamic Media 뷰어에 대한 Experience Platform 태그 통합은 자산 세부 사항 페이지의 &quot;URL&quot; 단추를 사용하여 뷰어 URL을 가져오는 &quot;팝업&quot; 작업 모드에서 지원되지 않습니다.
 * Experience Platform 태그 통합을 이전 뷰어 Analytics 통합과 동시에 사용할 수 없습니다( `config2=` 매개 변수)를 참조하십시오.
-* 비디오 추적에 대한 지원은 다음에 설명된 대로 코어 재생 추적으로만 제한됩니다 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
+* 비디오 추적에 대한 지원은 다음에 설명된 대로 코어 재생 추적으로만 제한됩니다 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events). 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
 * 데이터 요소에 대한 저장 유지 시간 구성은 *Dynamic Media 뷰어* 확장. 저장 기간을 **[!UICONTROL 없음]**.
 
 ### 통합에 대한 사용 사례 {#use-cases-for-the-integration}
@@ -127,7 +127,7 @@ Experience Cloud 계정이 오디오 및 비디오용 Adobe Analytics을 사용�
 
 자세한 내용은 [확장 설치 및 설정](#installing-and-setup-of-extensions).
 
-현재 비디오 추적에 대한 지원은 다음에 설명된 대로 &quot;코어 재생&quot; 추적으로만 제한됩니다 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
+현재 비디오 추적에 대한 지원은 다음에 설명된 대로 &quot;코어 재생&quot; 추적으로만 제한됩니다 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en#player-events). 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
 
 ## Dynamic Media Viewers 확장 사용 {#using-the-dynamic-media-viewers-extension}
 
@@ -149,7 +149,7 @@ Experience Manager Sites을 사용하지 않거나 Dynamic Media 뷰어를 Exper
 
 적절한 구성에 따라 Dynamic Media 뷰어가 있는 웹 페이지에 Experience Platform 태그 지원을 추가할 수 있습니다.
 
-자세한 내용은 [Experience Platform 태그 포함 코드 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) 태그 라이브러리 포함 코드 사용 방법에 대해 자세히 알아보십시오.
+자세한 내용은 [Experience Platform 태그 포함 코드 추가](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html) 태그 라이브러리 포함 코드 사용 방법에 대해 자세히 알아보십시오.
 
 Dynamic Media Experience Manager의 포함 코드 기능을 사용하는 방법에 대한 자세한 내용은 [웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/dynamic-media/embed-code.md).
 
@@ -224,7 +224,7 @@ Any Dynamic Media viewer has a unique identifier on the web page. 데이터 요�
 
 최종 사용자의 활동으로 인해 Adobe Analytics에 다음과 같은 두 개의 추적 호출이 수행됩니다.
 
-* 첫 번째 호출은 **[!UICONTROL TrackPan]** 사용자가 이동할 때 규칙이 트리거됩니다 *뷰어1*. 해당 호출은 값으로 50%를 보냅니다. **[!UICONTROL 확대/축소 비율]** 데이터 요소는 규칙이 *뷰어1* 해당 크기 조정 값을 가져옵니다.
+* 첫 번째 호출은 **[!UICONTROL TrackPan]** 사용자가 이동할 때 규칙이 트리거됩니다 *뷰어1*. 해당 호출은 값으로 50%를 보냅니다. **[!UICONTROL 확대/축소 비율]** 데이터 요소는 규칙이 *뷰어1* 및 는 해당 크기 값을 가져옵니다.
 * 두 번째 호출은 **[!UICONTROL TrackKey]** 사용자가 키보드에서 키를 누르면 규칙이 트리거됩니다. 해당 호출은 값으로 25%를 보냅니다. **[!UICONTROL 확대/축소 비율]** 규칙이 뷰어에 의해 트리거되지 않았으므로 데이터 요소를 참조하십시오. 따라서 데이터 요소는 최신 값을 반환합니다.
 
 위에 설정된 샘플 세트는 데이터 요소 값의 수명 범위에도 영향을 줍니다. Dynamic Media 뷰어에서 관리하는 데이터 요소의 값은 뷰어 자체가 웹 페이지에 배치된 후에도 Experience Platform 태그 라이브러리 코드에 저장됩니다. 이 기능은 Dynamic Media이 아닌 뷰어 확장에 의해 트리거되고 이러한 데이터 요소를 참조하는 규칙이 있는 경우 데이터 요소는 마지막으로 알려진 값을 반환합니다. 뷰어가 더 이상 웹 페이지에 없는 경우에도.
@@ -412,7 +412,7 @@ Adobe은 전체 통합을 이해하도록 이 섹션 전에 모든 설명서를 
 
 또한 이 통합 솔루션을 Experience Manager Sites과 함께 사용하는 경우 다음 구성을 수행해야 합니다.
 
-* Adobe I/O 콘솔 - Experience Platform 태그에 대해 통합이 생성됩니다.
+* [Adobe Developer 콘솔](https://developer.adobe.com/console/home) - Experience Platform 태그에 대해 통합이 생성됩니다.
 * Experience Manager 작성자 노드 - IMS 구성 및 Experience Platform 태그 클라우드 구성
 
 구성의 일부로서, Adobe Analytics 및 Experience Platform 태그가 이미 활성화되어 있는 Adobe Experience Cloud의 회사에 대한 액세스 권한이 있는지 확인합니다.
@@ -443,7 +443,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    사용 가능한 보고서 세트가 없는 경우 구성을 계속 진행하려면 먼저 사용자 또는 Adobe Analytics 관리자가 보고서 세트를 만들어야 합니다.
 
-   자세한 내용은 [보고서 및 보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) 및 [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites).
+   자세한 내용은 [보고서 및 보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html) 및 [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
 
    Adobe Analytics에서 보고서 세트는 **[!UICONTROL 관리]** > **[!UICONTROL 보고서 세트]**.
 
@@ -505,7 +505,7 @@ Experience Platform 태그를 구성한 후 통합에 대해 다음과 같이 �
 
 Experience Platform 태그의 속성은 모든 설정을 함께 유지하는 명명된 구성입니다. 구성 설정의 라이브러리가 생성되고 다른 환경 수준(개발, 스테이징 및 프로덕션)에 게시됩니다.
 
-참조 - [태그 속성 만들기](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
+참조 - [탭 속성 구성](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **Experience Platform 태그에서 속성을 만들려면:**
 
@@ -532,7 +532,7 @@ Experience Platform 태그의 사용 가능한 모든 확장은 **[!UICONTROL �
 
 추가 구성이 필요하지 않으며, 제안된 값에 대해 수락합니다. 작업이 끝나면 반드시 **[!UICONTROL 저장]**.
 
-자세한 내용은 [Experience Cloud ID 서비스 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html).
+자세한 내용은 [Experience Cloud ID 서비스 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html).
 
 * (필수) *Adobe Analytics* 확장
 
@@ -552,15 +552,15 @@ On the Install Extension page, enter the Report Suite ID in the **[!UICONTROL De
 
 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-자세한 내용은 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+자세한 내용은 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
-* (선택 사항입니다. 비디오 추적이 필요한 경우에만 필요합니다.) *오디오 및 비디오용 Adobe Medium 분석* 확장
+* (선택 사항. 비디오 추적이 필요한 경우에만 필요합니다.) *오디오 및 비디오용 Adobe Medium 분석* 확장
 
 추적 서버 필드를 입력합니다. 에 대한 추적 서버 *오디오 및 비디오용 Adobe Medium 분석* 확장은 Adobe Analytics에 사용되는 추적 서버와 다릅니다. 템플릿을 따릅니다 `<trackingNamespace>.hb.omtrdc.net`, 위치 `<trackingNamespace>` 는 프로비저닝 이메일의 정보입니다.
 
 다른 모든 필드는 선택 사항입니다.
 
-자세한 내용은 [Adobe Medium Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html).
+자세한 내용은 [Adobe Medium Analytics for Audio 및 Video 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 
 * (필수) *Dynamic Media 뷰어* 확장
 
@@ -677,7 +677,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    다음 정보 메시지가 표시됩니다.
 
-   *올바른 액세스 토큰을 검색하려면 새 인증서의 공개 키를 Adobe I/O의 기술 계정에 추가해야 합니다!*
+   *유효한 액세스 토큰을 검색하려면 새 인증서의 공개 키를 Adobe Developer의 기술 계정에 추가해야 합니다!*
 
    정보 대화 상자를 닫으려면 **[!UICONTROL 확인]**.
 
@@ -691,12 +691,12 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. 새 브라우저 탭에서 [Adobe I/O 콘솔](https://console.adobe.io/integrations).
+1. 새 브라우저 탭에서 [Adobe Developer 콘솔](https://developer.adobe.com/console/integrations).
 
 1. 에서 **[!UICONTROL Adobe I/O 콘솔 통합]** 페이지 오른쪽 상단 모서리에서 을(를) 선택합니다. **[!UICONTROL 새로운 통합]**.
 1. 에서 **[!UICONTROL 새 통합 만들기]** 대화 상자 **[!UICONTROL API 액세스]** 라디오 단추를 선택한 다음 을 선택합니다 **[!UICONTROL 계속]**.
 
-   ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
+![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
 1. 두 번째 **[!UICONTROL 새 통합 만들기]** 페이지, 활성화(켜기) **[!UICONTROL Experience Platform 태그 API]** 라디오 단추입니다. 페이지의 오른쪽 아래 모서리에서 을(를) 선택합니다. **[!UICONTROL 계속]**.
 
@@ -728,19 +728,19 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    >***Leave open this Integration details page***. 당신은 다음과 같은 다양한 정보가 필요할 것이다 **[!UICONTROL 개요]** 및 **[!UICONTROL JWT]** 잠시 후 탭으로 이동합니다.
 
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
-   _통합 세부 사항 페이지_
+   *통합 세부 사항 페이지*
 
 1. Return to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page that you left open previously. 페이지의 오른쪽 위 모서리에서 을(를) 선택합니다 **[!UICONTROL 다음]** 열다 **[!UICONTROL 계정]** 페이지의 **[!UICONTROL Adobe IMS 기술 계정 구성]** 창을 엽니다.
 
    (페이지를 이전에 닫은 경우 Experience Manager 작성자로 돌아가서 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 에서 **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform 태그]**. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
-   _Adobe IMS 기술 계정 구성 - 인증서 페이지_
+   *Adobe IMS 기술 계정 구성 - 인증서 페이지*
 
 1. 다음 **[!UICONTROL 계정]** 페이지에는 이전 단계의 통합 세부 사항 페이지에서 정보를 사용하여 입력해야 하는 5개의 필드가 있습니다.
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
-   _Adobe IMS 기술 계정 구성 - 계정 페이지_
+   *Adobe IMS 기술 계정 구성 - 계정 페이지*
 
 1. 설정 **[!UICONTROL 계정]** 페이지에서 다음 필드를 입력합니다.
 
@@ -752,25 +752,25 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 (예제 서버 이름은 설명 목적으로만 사용됩니다.)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
-   _통합 세부 사항 페이지 - JWT 탭_
+   *통합 세부 사항 페이지 - JWT 탭*
 
 1. **[!UICONTROL API Key]** - Return to the Integration details page. 을(를) 선택합니다 **[!UICONTROL 개요]** 탭을 클릭한 다음 오른쪽의 **[!UICONTROL API 키(클라이언트 ID)]** 필드, 선택 **[!UICONTROL 복사]**.
 
    Return to the **[!UICONTROL Account]** page, then paste the key into the respective field.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
-   _통합 세부 사항 페이지_
+   *통합 세부 사항 페이지*
 
 1. **[!UICONTROL Client Secret]**- Return to the Integration details page. 에서 **[!UICONTROL 개요]** 탭, 선택 **[!UICONTROL 클라이언트 암호 검색]**. 오른쪽 **[!UICONTROL 클라이언트 암호]** 필드, 선택 **[!UICONTROL 복사]**.
 
-   로 돌아갑니다. **[!UICONTROL 계정]** 페이지를 만든 다음 키를 각 필드에 붙여넣습니다.
+   Return to the **[!UICONTROL Account]** page, then paste the key into the respective field.
 
 1. **[!UICONTROL 페이로드]** - 통합 세부 사항 페이지로 돌아갑니다. 에서 **[!UICONTROL JWT]** 탭의 JWT 페이로드 필드에서 전체 JSON 개체 코드를 복사합니다.
 
    Return to the **[!UICONTROL Account]** page, then paste the code into the respective field.
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
-   _통합 세부 사항 페이지 - JWT 탭_
+   *통합 세부 사항 페이지 - JWT 탭*
 
    모든 필드가 채워져 있는 계정 페이지는 다음과 같이 표시됩니다.
 
@@ -804,9 +804,10 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
    * **[!UICONTROL 회사]** - 다음에서 **[!UICONTROL 회사]** 드롭다운 목록에서 Experience Cloud 회사를 선택합니다. 목록이 자동으로 채워집니다.
 
    * **[!UICONTROL 속성]** - 속성 드롭다운 목록에서 이전에 만든 Experience Platform 태그 속성을 선택합니다. 목록이 자동으로 채워집니다.
-   모든 필드를 완료한 후 **[!UICONTROL 일반]** 페이지 모습은 다음과 유사합니다.
 
-   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
+모든 필드를 완료한 후 **[!UICONTROL 일반]** 페이지 모습은 다음과 유사합니다.
+
+![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
 1. 왼쪽 위 모서리에서 을(를) 선택합니다. **[!UICONTROL 다음]**.
 1. 설정 **[!UICONTROL 스테이징]** 페이지의 페이지(2/3페이지) **[!UICONTROL Experience Platform 태그 구성 만들기]** 창에서 다음 필드를 입력합니다.
