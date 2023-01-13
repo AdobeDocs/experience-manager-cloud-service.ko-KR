@@ -4,10 +4,10 @@ description: AEM의 콘텐츠 조각 모델을 사용하여 모든 headless 콘�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
+source-git-commit: 900f9fc951a2b95b77abc5835ef9651128824826
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 100%
+source-wordcount: '1129'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,12 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="모델 편집기 실행"
 >abstract="콘텐츠 조각 모델 구축은 모델 관리 워크플로에서 모델 항목을 만든 다음 콘텐츠 조각 모델 편집기를 사용하여 여기에 구조 요소를 추가하는 것으로 시작됩니다.<br><br>아래를 클릭하여 새 탭에서 기능을 실행하고 이 학습 문서에 따라 첫 번째 콘텐츠 조각 모델을 만들어 보십시오."
->additional-url="https://video.tv.adobe.com/v/328618" text="인트로 비디오용 플레이스홀더"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="컨텐츠 구조 소개 비디오"
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
+>title="모델 편집기 실행"
+>abstract="축하합니다! 컨텐츠 조각 모델을 만들어 옴니채널 컨텐츠를 규모에 맞게 표준 방식으로 전달하는 첫 번째 단계를 수행했습니다."
 
 ## 콘텐츠 조각 모델 콘솔 {#content-fragment-model-console}
 
