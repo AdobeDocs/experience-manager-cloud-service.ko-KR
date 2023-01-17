@@ -1,26 +1,22 @@
 ---
-title: 적응형 Forms의 표
-seo-title: Tables in Adaptive Forms
-description: 의 표 구성 요소 [!DNL AEM Forms] 에서는 모바일 레이아웃에 응답하는 적응형 Forms에서 표를 만들고 XDP 표 구성 요소도 사용할 수 있습니다.
-seo-description: The Table component in [!DNL AEM Forms] lets you create tables in Adaptive Forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: 적응형 양식의 표
+seo-title: Tables in adaptive forms
+description: AEM Forms의 표 구성 요소를 사용하면 모바일 레이아웃에 응답하는 적응형 양식으로 표를 만들 수 있고 XDP 표 구성 요소를 사용할 수도 있습니다.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms
+source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2418'
 ht-degree: 0%
 
 ---
 
-
-# 적응형 Forms의 표 {#tables-in-adaptive-forms}
+# 적응형 양식의 표 {#tables-in-adaptive-forms}
 
 표를 사용하는 것은 복잡한 데이터를 효과적으로 단순화하고 체계적으로 제공하는 방법입니다. 사용자가 정보를 쉽게 식별하고 행과 열을 순서대로 배열하여 입력을 제공하는 데 도움이 됩니다. 금융 서비스 및 정부 조직의 대부분의 양식에서는 숫자를 지정하고 계산을 수행하기 위해 큰 데이터 테이블이 필요합니다.
 
-[!DNL AEM Forms] 은 적응형 Forms에서 표를 만들 수 있는 사이드바의 구성 요소 브라우저에서 표 구성 요소를 제공합니다. 이 기능이 제공하는 몇 가지 주요 기능은 다음과 같습니다.
+AEM Forms은 사이드바의 구성 요소 브라우저에서 적응형 양식으로 표를 만들 수 있는 표 구성 요소를 제공합니다. 이 기능이 제공하는 몇 가지 주요 기능은 다음과 같습니다.
 
 * 모바일 장치의 응답형 레이아웃
 * 구성 가능한 행 및 열
@@ -42,7 +38,7 @@ ht-degree: 0%
 
 헤더 셀은 텍스트 필드입니다. 헤더의 레이블을 변경하려면 헤더 셀을 마우스 오른쪽 단추로 클릭하고 를 클릭합니다. **편집**. 편집 대화 상자에서 **값** 필드를 입력하고 **확인**.
 
-본문 셀은 기본적으로 텍스트 상자입니다. 본문 셀을 숫자 상자, 날짜 선택기 또는 드롭다운 목록과 같이 사이드 킥에서 사용할 수 있는 다른 적응형 Forms 구성 요소로 바꿀 수 있습니다.
+본문 셀은 기본적으로 텍스트 상자입니다. 본문 셀을 숫자 상자, 날짜 선택기 또는 드롭다운 목록과 같이 사이드 킥에서 사용할 수 있는 다른 적응형 양식 구성 요소로 바꿀 수 있습니다.
 
 예를 들어, 다음 표의 첫 번째 본문 행에는 텍스트 상자, 날짜 선택기 및 드롭다운 목록 구성 요소가 셀로 포함되어 있습니다.
 
@@ -54,25 +50,30 @@ ht-degree: 0%
 
 행이나 열을 추가 및 삭제하고 테이블에서 행을 위아래로 이동할 수 있습니다.
 
-행이나 열을 추가 또는 삭제하거나 행을 이동하려면 행이나 열의 셀을 클릭합니다. 열 상단과 행 왼쪽에 드롭다운 메뉴가 나타납니다. 맨 위의 메뉴에서는 열을 추가 또는 삭제할 수 있는 옵션을 제공하지만 왼쪽에 있는 메뉴를 사용하면 행을 추가, 삭제 또는 이동할 수 있습니다.
+#### 행 추가, 삭제 또는 이동
 
-* 추가 작업은 선택한 행 또는 열의 오른쪽에 행 또는 열을 추가합니다.
-* 삭제 작업은 선택한 행이나 열을 삭제합니다.
-* 위로 이동 및 아래로 이동 작업은 선택한 행을 위아래로 이동합니다.
+행을 추가, 삭제 또는 이동하려면 행의 셀을 누릅니다. 컨텐츠 브라우저 열기 ![컨텐츠 브라우저](/help/forms/assets/Smock_Layers_18_N.svg) 해당 행을 선택하면 선택한 행이 강조 표시되고, 이 도구 모음 옵션은 행을 추가, 삭제 또는 이동할 수 있는 위쪽 또는 아래쪽의 도구 모음 옵션을 사용합니다.
+* 다음 **[!UICONTROL 위로 이동]** 및 **[!UICONTROL 아래로 이동]** 작업은 선택한 행을 위아래로 이동합니다.
 
-행의 드롭다운 메뉴에서는 행 속성, 설정 및 스타일 옵션을 편집하기 위한 편집 작업도 제공합니다.
+* 다음 **[!UICONTROL 열 추가]** 선택한 행 아래에 행이 추가됩니다.
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+* 다음 **[!UICONTROL 열 삭제]** 선택한 행을 삭제합니다.
+
+![add-delete-move-row-column](assets/add-delete-move-row.png)
+
+행을 두 번 클릭하여 이름, 바인딩 참조, 반복 설정, CSS 클래스와 같은 행의 속성을 구성합니다.
+![add-delete-move-row-column](assets/row-properties-image.png)
+
+
+#### 열 추가 또는 삭제
+
+열을 추가하거나 삭제하려면, 헤더 섹션에서 텍스트 셀을 클릭하면, 열을 추가 또는 삭제하는 옵션이 있는 도구 모음이 열립니다.
+
+![add-delete-move-row-column](assets/add-delet-column.png)
 
 >[!NOTE]
 >
->* 테이블에 행 수를 추가할 수 있지만 추가할 수 있는 최대 열 수는 6개입니다. 또한 테이블에서 머리글 행을 삭제할 수 없습니다.
->
->* PDF 양식을 적응형 양식으로 자동 변환하면 머리글 없이 테이블을 만들 수 있습니다. 머리글 없이 테이블에 열을 추가하고 삭제할 수 있습니다. 열을 추가 및 삭제하는 데 도움이 되도록 숨겨진 머리글이 해당 테이블에 추가됩니다. 이러한 헤더는 작성 중에 볼 수 있지만 게시된 양식에 숨겨진 상태로 유지됩니다.
-
-
-
-
+>테이블에 행 수를 추가할 수 있지만 추가할 수 있는 최대 열 수는 6개입니다. 또한 테이블에서 머리글 행을 삭제할 수 없습니다.
 
 ### 테이블 설명 추가 {#add-table-description}
 
@@ -113,6 +114,14 @@ ht-degree: 0%
 
    또한 **미리 보기** 모드를 선택하고 열 헤더를 다시 클릭하여 열 값을 정렬합니다.
 
+## 표의 열 너비 설정 {#set-column-width}
+
+다음 단계를 실행하여 테이블의 열 너비를 설정합니다.
+
+1. 에서 **[!UICONTROL 컨텐츠]** 탭에서 **[!UICONTROL 표]** 구성 요소를 선택하고 구성 (![구성](assets/configure-icon.svg)) 아이콘을 클릭합니다.
+
+1.쉼표로 구분된 값 목록을 **[!UICONTROL 열 너비]** 필드에 추가하여 표에 있는 각 열의 비율을 지정합니다. 예를 들어, 3개의 열이 포함된 테이블의 경우 **[!UICONTROL 열 너비]** 필드의 경우 첫 번째 열에 2/12, 두 번째 열에 4/12, 세 번째 열에 6/12 열 너비가 설정됩니다. 첫 번째 열의 너비는 표 너비의 1/6을 나타내므로 2/12. 마찬가지로 4/12 두 번째 열 너비를 표 너비의 1/3으로 설정하고 세 번째 열 너비를 표 너비의 반으로 6/12.
+
 ## 표 스타일 구성 {#configure}
 
 페이지 도구 모음에서 스타일 모드를 사용하여 표의 스타일을 정의할 수 있습니다. 스타일 모드로 전환하고 테이블 스타일을 편집하려면 다음 단계를 수행하십시오
@@ -126,7 +135,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->LESS 변수의 값을 변경하여 머리글 및 본문 행의 색상 테마를 변경할 수 있습니다. 자세한 내용은 [의 테마 [!DNL AEM Forms]](themes.md)
+>의 값을 변경하여 머리글 및 본문 행의 색상 테마를 변경할 수 있습니다 [LESS 변수](https://lesscss.org//). 자세한 내용은 [AEM Forms의 테마](/help/forms/themes.md).
 
 ## 동적으로 행 추가 또는 삭제 {#add-or-delete-a-row-dynamically}
 
@@ -136,9 +145,9 @@ ht-degree: 0%
 1. 반복 설정 탭에서 최소 및 최대 개수를 지정하여 테이블의 행 수를 제한합니다.
 1. 클릭 **완료**.
 
-런타임 시 **+** 및 *-* 행을 추가하거나 삭제할 단추
+런타임 또는 미리 보면 **+** 및 ![삭제 단추](/help/forms/assets/Smock_Delete.svg) 행을 추가하거나 삭제할 단추
 
-![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
+![add-delete-rows-dynamically](assets/add-delete-layout.png)
 
 >[!NOTE]
 >
@@ -146,7 +155,7 @@ ht-degree: 0%
 
 ## 테이블의 표현식 {#expressions-in-a-table}
 
-적응형 Forms의 표를 사용하면 JavaScript에서 표현식을 작성하여 표 또는 행 표시 또는 숨기기, 모든 숫자 추가 및 셀에서 합계 표시, 셀 활성화 또는 비활성화, 사용자 입력 확인 등과 같은 동작을 유도할 수 있습니다. 이러한 표현식은 적응형 Forms 스크립팅 모델 API를 사용합니다.
+적응형 양식의 표를 사용하면 JavaScript에서 표현식을 작성하여 표 또는 행 표시 또는 숨기기, 모든 숫자 추가 및 셀에서 합계 표시, 셀 활성화 또는 비활성화, 사용자 입력 확인 등과 같은 동작을 유도할 수 있습니다. 이러한 표현식은 적응형 양식 스크립팅 모델 API를 사용합니다.
 
 테이블과 행은 표현식에서 반환된 값을 기반으로 가시성을 제어하는 가시성 표현식만 지원하는 반면 셀에서는 다음 표현식을 지원합니다.
 
@@ -164,11 +173,11 @@ ht-degree: 0%
 
 테이블 또는 행의 가시성 표현식은 해당 편집 구성 요소 대화 상자의 패널 속성 탭에서 정의할 수 있습니다. 셀의 표현식은 해당 편집 구성 요소 대화 상자의 스크립트 탭에서 정의할 수 있습니다.
 
-응용 Forms 클래스, 이벤트, 개체 및 공용 API의 전체 목록은 다음을 참조하십시오 [응용 Forms에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+적응형 양식 클래스, 이벤트, 개체 및 공용 API의 전체 목록은 다음을 참조하십시오 [적응형 양식에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## 모바일 레이아웃 {#mobile-layouts}
 
-적응형 Forms의 표는 유동적이고 반응형 레이아웃으로 인해 탁월한 경험 모바일 장치를 제공합니다. [!DNL AEM Forms] 에서는 표에 대한 두 가지 유형의 모바일 레이아웃, 즉 왼쪽 및 축소 가능한 열을 제공합니다.
+적응형 양식의 표는 유동적이고 반응형 레이아웃으로 인해 탁월한 경험 모바일 장치를 제공합니다. AEM Forms에서는 표에 대한 두 가지 유형의 모바일 레이아웃, 즉 왼쪽 및 축소 가능한 열을 제공합니다.
 
 테이블에 대한 구성 요소 편집 대화 상자의 스타일 지정 탭에서 표에 대한 모바일 레이아웃을 구성할 수 있습니다.
 
@@ -204,7 +213,7 @@ ht-degree: 0%
 
 ## 테이블의 데이터 병합 {#merge-data-in-a-table}
 
-적응형 Forms의 표를 사용하면 XML 파일의 데이터를 사용하여 런타임 시 테이블을 채울 수 있습니다. 데이터 XML 파일은 시스템의 로컬 파일 시스템에 있을 수 있습니다 [!DNL AEM Forms] 서버가 실행 중이거나 CRX 리포지토리에서 실행 중입니다.
+적응형 양식의 표를 사용하면 XML 파일의 데이터를 사용하여 런타임 시 테이블을 채울 수 있습니다. 데이터 XML 파일은 AEM Forms 서버가 실행되는 시스템의 로컬 파일 시스템 또는 CRX 저장소에 있을 수 있습니다.
 
 XML 파일의 데이터로 채울 다음 은행 거래 요약 테이블을 예로 들어 보겠습니다.
 
@@ -278,17 +287,17 @@ XML 파일의 데이터로 채울 다음 은행 거래 요약 테이블을 예�
 
 샘플 XML에서 행의 데이터는 `<Row1>` 태그 - 테이블의 행에 대한 요소 이름입니다. 내 `<Row1>` 태그로, 각 셀의 데이터는 요소 이름에 대한 태그 내에 정의됩니다(예: ). `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, 및 `<type>`.
 
-런타임 시 이 데이터를 테이블과 병합하려면 테이블이 포함된 적응형 양식을 wcmmode가 비활성화된 절대 XML 위치로 가리켜야 합니다. 예를 들어 적응형 양식이 *https://`servername`/myForms/bankTransaction.html* 데이터 XML 파일은 *C:/myTransactions/bankSummary.xml*, 다음 URL에서 데이터가 있는 테이블을 볼 수 있습니다.
+런타임 시 이 데이터를 테이블과 병합하려면 테이블이 포함된 적응형 양식을 wcmmode가 비활성화된 절대 XML 위치로 가리켜야 합니다. 예를 들어 적응형 양식이 *https://localhost:4502/myForms/bankTransaction.html* 데이터 XML 파일은 *C:/myTransactions/bankSummary.xml*, 다음 URL에서 데이터가 있는 테이블을 볼 수 있습니다.
 
-*https://`servername`/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![데이터 병합 테이블](assets/data-merged-table.png)
 
 ## XDP 구성 요소 및 XSD 복합 형식 사용 {#use-xdp-components-and-xsd-complex-types}
 
-XFA 양식 템플릿을 기반으로 적응형 양식을 만든 경우 AEM 컨텐츠 파인더의 데이터 모델 탭에서 XFA 요소를 사용할 수 있습니다. 적응형 양식에 표를 포함한 이러한 XFA 요소를 드래그하여 놓을 수 있습니다.
+XFA 양식 템플릿을 기반으로 적응형 양식을 만든 경우 AEM 컨텐츠 파인더의 데이터 모델 탭에서 XFA 요소를 사용할 수 있습니다. 테이블을 포함한 이러한 XFA 요소를 적응형 양식에 드래그하여 놓을 수 있습니다.
 
-XFA 테이블 요소는 표 구성 요소에 매핑되고 응용 Forms에서 즉시 작동합니다. XDP 테이블의 모든 속성 및 기능은 적응형 양식으로 이동할 때 유지되며, 기본 적응형 양식 테이블을 사용하는 것처럼 이 테이블에서 모든 작업을 수행할 수 있습니다. 예를 들어 XDP 테이블의 행이 반복 가능으로 표시된 경우 적응형 Forms에서도 드롭될 때 반복됩니다.
+XFA 테이블 요소는 표 구성 요소에 매핑되고 적응형 양식에서 즉시 작동합니다. XDP 테이블의 모든 속성 및 기능은 적응형 양식으로 이동할 때 유지되며 네이티브 적응형 양식 테이블을 사용하는 것처럼 이 테이블에서 모든 작업을 수행할 수 있습니다. 예를 들어 XDP 테이블의 행이 반복 가능으로 표시된 경우 적응형 양식에서 드롭될 때도 반복됩니다.
 
 또한 XDP 하위 양식을 끌어 놓아 테이블에 새 행을 추가할 수 있습니다. 그러나 중첩된 하위 폼을 삭제하는 것은 작동하지 않습니다.
 
@@ -307,7 +316,6 @@ XFA 테이블 요소는 표 구성 요소에 매핑되고 응용 Forms에서 즉
 ## 주요 고려 사항 {#key-considerations}
 
 * XSD 기반 테이블을 작성하는 동안 행을 위아래로 이동하는 경우 양식 제출 시 생성된 데이터 XML에 테이블 행의 일부 데이터 손실이 표시됩니다.
-* 기본 테이블의 각 본문 셀에는 사전 정의된 요소 이름이 연결되어 있습니다. 적응형 양식에 다른 테이블을 추가하면 새 테이블의 기본 본문 셀은 첫 번째 테이블과 동일한 요소 이름을 갖게 됩니다. 이러한 시나리오에서는 양식 제출 시 생성된 데이터에 테이블 중 하나에만 있는 기본 본문 셀에 데이터가 포함됩니다. 따라서 기본 본문 셀의 요소 이름을 변경하여 테이블 간에 고유하고 데이터 손실을 방지해야 합니다.
+* 기본 테이블의 각 본문 셀에는 사전 정의된 요소 이름이 연결되어 있습니다. 적응형 양식에 다른 테이블을 추가하면 새 테이블의 기본 본문 셀이 첫 번째 테이블과 동일한 요소 이름을 갖게 됩니다. 이러한 시나리오에서는 양식 제출 시 생성된 데이터에 테이블 중 하나에만 있는 기본 본문 셀에 데이터가 포함됩니다. 따라서 기본 본문 셀의 요소 이름을 변경하여 테이블 간에 고유하고 데이터 손실을 방지해야 합니다.
 
    기본 본문 셀에만 적용할 수 있습니다. 테이블에 행 또는 열을 더 추가하면 기본값이 아닌 본문 셀에 대한 고유 요소 이름이 자동으로 생성됩니다.
-
