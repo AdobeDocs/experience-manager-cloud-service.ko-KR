@@ -2,14 +2,14 @@
 title: 서버측 API용 액세스 토큰 생성
 description: 보안 JWT 토큰을 생성하여 타사 서버와 AEM as a Cloud Service 간의 통신을 용이하게 하는 방법을 알아봅니다
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
+source-git-commit: dd6753c6605d5c48c54d173803a541db54991481
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# 소개 {#introduction}
+# 서버측 API용 액세스 토큰 생성 {#generating-access-tokens-for-server-side-apis}
 
 일부 아키텍처에서는 AEM 인프라 외부의 서버에 호스팅된 애플리케이션에서 AEM as a Cloud Service을 호출하는 데 사용합니다. 예를 들어 서버를 호출한 다음 AEM as a Cloud Service에 API 요청을 수행하는 모바일 애플리케이션입니다.
 
