@@ -9,9 +9,9 @@ breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 077ab3c83e3d97cfdec939081b5862e173f17603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3834'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -308,7 +308,7 @@ ht-degree: 99%
          + [콘텐츠 조각 콘솔 - 키보드 단축키](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + 사이트 생성 {#site-creation}
          + [새 사이트 생성](/help/sites-cloud/administering/site-creation/create-site.md)
-         + [프론트-엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
+         + [프론트엔드 파이프라인 활성화](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Site Rail 사용](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [사이트 템플릿](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [사이트 테마](/help/sites-cloud/administering/site-creation/site-themes.md)
@@ -525,7 +525,7 @@ ht-degree: 99%
          + [적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
          + [핵심 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
          + [스크리블 서명 적용](/help/forms/signing-forms-using-scribble.md)
-         + [적응형 양식에 표 추가](/help/forms/adaptive-forms-tables.md)
+         + [적응형 양식에 테이블 추가](/help/forms/adaptive-forms-tables.md)
       + 적응형 양식에 레이아웃 구성 및 스타일 적용{#configure-layout-of-an-adaptive-form}
          + [적응형 양식의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms.md)
          + [레이아웃 모드를 사용하여 구성 요소 크기 변경](/help/forms/resize-using-layout-mode.md)
