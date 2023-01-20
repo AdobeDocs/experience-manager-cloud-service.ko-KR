@@ -4,10 +4,10 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
-workflow-type: ht
-source-wordcount: '1070'
-ht-degree: 100%
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+workflow-type: tm+mt
+source-wordcount: '1035'
+ht-degree: 88%
 
 ---
 
@@ -32,19 +32,15 @@ ht-degree: 100%
 
 ## 앱 미리보기 {#preview}
 
-위의 **콘텐츠 조각 편집기 실행** 버튼을 클릭하면 콘텐츠 조각 편집기가 새 탭에서 열립니다.
-
-![콘텐츠 조각 편집기](assets/customize-app/content-fragment-editor.png)
-
-AEM Headless 체험판과 함께 제공되는 샘플 앱은 GraphQL을 통해 제공되는 콘텐츠 조각으로 구동됩니다. 콘텐츠 조각 편집기를 사용하여 샘플을 미리 보고 콘텐츠에 익숙해질 수 있습니다.
+컨텐츠 조각 편집기에서 AEM 헤드리스 평가판이 이미 로드된 상태로 제공된 샘플 앱을 시작합니다. 샘플 앱은 GraphQL을 통해 전달된 컨텐츠 조각에서 지원합니다. 컨텐츠 조각 편집기를 사용하여 샘플 앱을 미리 보고 편집기를 익숙해지십시오.
 
 1. 편집기 화면의 오른쪽 상단에서 **미리보기** 버튼을 탭하거나 클릭합니다.
 
 1. 데모 앱이 새 탭에서 열립니다. 해당 앱은 가상의 WKND 아웃도어 라이프스타일 브랜드를 위한 앱입니다. 주변을 클릭하여 샘플 콘텐츠를 탐색합니다.
 
-   ![데모 앱 미리보기](assets/customize-app/preview-demo-app.png)
-
 1. 계속하려면 콘텐츠 조각 편집기의 브라우저 탭으로 돌아갑니다.
+
+![앱 미리 보기](assets/do-not-localize/preview-app-1.png)
 
 ## 앱에서 헤더 편집 {#edit-app}
 
@@ -52,25 +48,19 @@ AEM Headless 체험판과 함께 제공되는 샘플 앱은 GraphQL을 통해 �
 
 1. **패널** 섹션에서 **캐년의 산악 바이커**&#x200B;를 탭하거나 클릭합니다.
 
-   ![캐년의 산악 바이커 조각 탭하기](assets/customize-app/mtn-biker-in-canyon.png)
+   ![텍스트 패널 선택](assets/do-not-localize/edit-header-1.png)
 
 1. 편집기는 산악 바이커에 대한 앱의 헤더 패널을 엽니다. 각 패널은 경험을 구성하는 다양한 이미지와 텍스트를 나타내는 레이어로 구성됩니다.
 
-   ![패널](assets/customize-app/panels.png)
+1. 텍스트 레이어를 선택합니다 **캐년 텍스트 레이어의 Mtn Biker** 를 클릭하여 편집기에서 레이어의 세부 사항을 엽니다. 레이어는 앱의 이 패널에 표시되는 텍스트를 제어하는 여러 콘텐츠 조각으로 구성됩니다.
 
-1. **캐년의 산악 바이커 텍스트 레이어** 텍스트 레이어를 선택합니다. 이렇게 하면 편집기에서 레이어의 세부 정보가 열립니다. 레이어는 앱의 이 패널에 표시되는 텍스트를 제어하는 여러 콘텐츠 조각으로 구성됩니다.
-
-   ![캐년의 산악 바이커 제목 선택](assets/customize-app/mtn-biker-in-canyon-text-layer.png)
-
-1. **캐년의 산악 바이커 제목** 텍스트 항목을 선택합니다. 콘텐츠 조각 편집기가 열립니다.
-
-   ![캐년의 산악 바이커 제목 텍스트 항목 선택](assets/customize-app/mtn-biker-in-canyon-title.png)
+1. **캐년의 산악 바이커 제목** 텍스트 항목을 선택합니다. 이 경우 이 조각의 컨텐츠를 보여주는 컨텐츠 조각 편집기가 열리고 수정할 수 있습니다.
 
 1. 텍스트를 `Your next great adventure is calling`에서 `Choose your own adventure`로 변경합니다. 편집기에 변경 사항이 자동으로 저장됩니다.
 
 1. 변경 내용을 보려면 창의 오른쪽 상단에서 **미리보기** 버튼을 탭하거나 클릭합니다. 데모 앱의 미리보기가 새 탭에서 열립니다.
 
-   ![데모 앱 미리보기](assets/customize-app/preview-demo-app-text.png)
+   ![데모 앱 미리보기](assets/do-not-localize/edit-header-5-6.png)
 
 AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트하는 것이 이렇게 간단합니다.
 
@@ -78,19 +68,17 @@ AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트�
 
 앱에서 헤드라인을 수정했으므로 이미지를 변경해 보십시오.
 
-1. 콘텐츠 조각 편집기의 브라우저 탭으로 돌아갑니다.
+1. 미리 보기에서 컨텐츠 조각 편집기의 브라우저 탭으로 돌아갑니다.
 
 1. 콘텐츠 조각 편집기에서 올바른 위치로 돌아가야 합니다. 편집기의 왼쪽 상단에 있는 이동 경로는 콘텐츠 계층에서 현재 위치를 보여 줍니다. 이동 경로에서 **캐년의 산악 바이커**&#x200B;를 탭하거나 클릭하여 해당 페이지로 돌아갑니다.
 
-   ![탐색 표시](assets/customize-app/breadcrumbs.png)
+   ![탐색 표시](assets/do-not-localize/swap-image-2.png)
 
 1. **산악 바이킹 - 바이커** 이미지 레이어를 선택합니다. 콘텐츠 조각 편집기가 열립니다.
 
-   ![이미지 조각 편집](assets/customize-app/mtn-biking-biker.png)
-
 1. 바이커 이미지를 제거하려면 **X**&#x200B;를 탭하거나 클릭합니다. 이 콘텐츠 조각 모델에 필요한 데이터이므로 이미지가 사라지고 편집기에 오류가 표시됩니다.
 
-   ![조각에서 제거된 이미지](assets/customize-app/mtn-biking-biker-no-image.png)
+   ![조각에서 이미지 제거](assets/do-not-localize/swap-image-4.png)
 
 1. **에셋 추가**&#x200B;를 탭하거나 클릭합니다.
 
@@ -98,11 +86,7 @@ AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트�
 
 1. `biker-yellow.png`이미지를 선택한 다음 **선택**&#x200B;을 클릭합니다.
 
-   ![에셋 선택](assets/customize-app/select-asset.png)
-
 1. 바이커 이미지가 선택한 이미지로 교체됩니다. 편집기는 변경 사항을 자동으로 저장합니다.
-
-   ![바이커 이미지의 편집된 조각](assets/customize-app/mtn-biking-biker-edited.png)
 
 1. 변경 내용을 보려면 창의 오른쪽 상단에서 **미리보기** 버튼을 탭하거나 클릭합니다. 데모 앱의 미리보기가 새 탭에서 열립니다. 브라우저에서 새로 고침을 클릭하면 앱에서 노란색 반바지가 있는 새 바이커 이미지를 볼 수 있습니다.
 
@@ -112,44 +96,39 @@ AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트�
 
 바이커 이미지를 업데이트했으므로 이제 새 콘텐츠 조각을 만들고 참조하여 앱에 새 콘텐츠를 추가하는 방법을 살펴보겠습니다. 앱의 두 번째 패널에 “구매 가능한 순간” 콘텐츠 조각으로 관리되는 제품 콜아웃을 추가할 것입니다.
 
-![구매 가능한 순간의 예](assets/customize-app/example-shoppable-moment.png)
+![구매 가능한 순간의 예](assets/do-not-localize/example-shoppable-moment.png)
 
-1. 콘텐츠 조각 편집기의 브라우저 탭으로 돌아갑니다.
+1. 미리 보기 탭에서 컨텐츠 조각 편집기의 브라우저 탭으로 돌아갑니다.
 
 1. 콘텐츠 조각 편집기에서 올바른 위치로 돌아가야 합니다. 편집기의 왼쪽 상단에 있는 이동 경로는 콘텐츠 계층에서 현재 위치를 보여 줍니다. 이동 경로에서 **WKND Home**&#x200B;을 탭하거나 클릭하여 해당 페이지로 돌아갑니다.
 
-   ![레이아웃 화면으로 다시 이동](assets/customize-app/breadcrumbs-2.png)
-
 1. **WKND Yellow를 타는 산악 바이커** 패널을 선택합니다.
-
-   ![구매 가능한 순간 만들기](assets/customize-app/mtn-biker-on-wknd-yellow.png)
 
 1. **산악 바이킹 - 구매 가능** 레이어를 선택합니다.
 
-   ![구매 가능한 순간 레이어 선택](assets/customize-app/mtn-biking-shoppable.png)
-
 1. 이 패널에서 새 콜아웃을 만들려면 새로운 구매 가능한 순간 콘텐츠 조각을 만들어야 합니다. **+ 새 조각 만들기** 버튼을 클릭하거나 탭합니다.
 
-   ![구매 가능한 순간 추가](assets/customize-app/create-new-fragment.png)
+   ![구매 가능한 순간 추가](assets/do-not-localize/add-reference-1-5.png)
 
 1. 새 콘텐츠 조각을 기반으로 할 모델을 먼저 선택해야 합니다. **콘텐츠 조각 모델** 드롭다운에서 **구매 가능한 순간 항목** 모델을 선택합니다.
 
 1. 콘텐츠 조각의 이름을 지정합니다. 예를 들어 `Shorts`를 **이름** 필드에 입력합니다.
 
-   ![구매 가능한 순간 이름 지정](assets/customize-app/new-content-fragment.png)
-
 1. **만들기 및 열기**&#x200B;를 탭하거나 클릭합니다.
+
+   ![구매 가능한 순간 이름 지정](assets/do-not-localize/add-reference-6-7-8.png)
 
 1. 새 콘텐츠 조각에 대한 편집기가 열립니다.
 
 1. 구매 가능한 순간에 **텍스트** 필드에 `Yellow shorts`와 같은 이름을 지정합니다.
 
 1. **X** 및 **Y**&#x200B;에 대한 값을 설정합니다. 이 콜아웃이 패널에 오버레이되어야 하는 위치입니다. 조각에 대한 변경 사항은 편집기에서 자동으로 저장됩니다.
-   * **X**: `-18`
-   * **Y**: `-28`
 
-   ![구매 가능한 순간 편집](assets/customize-app/edit-shoppable-moment.png)
+   * **X**: `-5`
+   * **Y**: `-10`
 
 1. 변경 내용을 보려면 창의 오른쪽 상단에서 **미리보기** 버튼을 탭하거나 클릭합니다. 데모 앱의 미리보기가 새 탭에서 열립니다. 브라우저에서 새로 고침을 클릭하여 위치를 테스트하고 편집기에서 필요에 따라 조정합니다.
+
+   ![미리보기](assets/do-not-localize/add-reference-10-11-12.png)
 
 개발 주기 없이 앱에서 새 콘텐츠를 만들고 콘텐츠 조각으로 참조하는 방법에 대해 알아보았습니다.

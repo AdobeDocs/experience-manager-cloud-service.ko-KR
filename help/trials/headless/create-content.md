@@ -4,10 +4,10 @@ description: 이전에 만든 콘텐츠 조각 모델을 사용하여 페이지 
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
-workflow-type: ht
-source-wordcount: '515'
-ht-degree: 100%
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+workflow-type: tm+mt
+source-wordcount: '478'
+ht-degree: 96%
 
 ---
 
@@ -32,17 +32,11 @@ ht-degree: 100%
 
 ## 콘텐츠 조각 만들기 {#create-fragment}
 
-위의 **콘텐츠 조각 콘솔 실행** 버튼을 클릭하면 콘텐츠 조각 콘솔이 새 탭에서 열립니다.
-
-![조각 콘텐츠 편집](assets/create-content/content-fragment-console.png)
-
-콘텐츠 조각은 Headless 콘텐츠를 나타내며 콘텐츠 조각 모델이라고 하는 사전 정의된 구조를 기반으로 합니다. 콘텐츠 조각 콘솔은 Headless 콘텐츠 라이브러리로 간주할 수 있습니다. 콘솔을 사용하여 새 콘텐츠 조각을 만들고 기존 조각을 관리합니다. 콘솔이 비어 있으므로 새 조각을 만들어 봅시다!
+콘텐츠 조각은 Headless 콘텐츠를 나타내며 콘텐츠 조각 모델이라고 하는 사전 정의된 구조를 기반으로 합니다. 콘텐츠 조각 콘솔은 Headless 콘텐츠 라이브러리로 간주할 수 있습니다. 이 조각을 사용하여 새 컨텐츠 조각을 만들고 기존 조각을 관리합니다.
 
 1. 콘솔의 오른쪽 상단에서 **만들기** 버튼을 탭하거나 클릭합니다.
 
 1. 새 콘텐츠 조각을 만들기를 시작할 수 있는 **새 콘텐츠 조각** 대화 상자가 열립니다. **위치**&#x200B;는 새 콘텐츠가 저장될 위치로 자동으로 채워집니다.
-
-   ![콘텐츠 조각 만들기 대화 상자](assets/create-content/create-content-fragment.png)
 
 1. **콘텐츠 조각 모델** 드롭다운에서 이전에 만든 콘텐츠 조각 모델을 선택합니다.
 
@@ -50,26 +44,24 @@ ht-degree: 100%
 
 1. **만들기 및 열기**&#x200B;를 탭하거나 클릭합니다.
 
+![새 콘텐츠 조각 만들기](assets/do-not-localize/create-content-3-4-5.png)
+
 ## 콘텐츠 조각에 콘텐츠 추가 {#add-content}
 
 새 콘텐츠 조각을 저장하고 열면 콘텐츠 조각 편집기가 새 탭에서 열립니다. 여기에서 새 조각의 콘텐츠를 추가할 수 있습니다.
 
 1. 콘텐츠 조각 편집기에는 선택한 모델에서 정의한 필드가 표시됩니다. 여기에서 각 필드에 내용을 추가하여 콘텐츠 조각을 완성할 수 있습니다. 진행 상황이 자동으로 저장됩니다.
 
-   ![콘텐츠 조각 편집기](assets/create-content/content-fragment-editor.png)
-
 1. 콘텐츠를 프로젝트에 추가하고 나면 편집기의 오른쪽 상단에서 **게시** 버튼을 탭하거나 클릭합니다. 이렇게 하면 콘텐츠 조각을 외부 앱에서 사용할 수 있습니다.
 
 1. 드롭다운에서 **지금**&#x200B;을 선택합니다. 나중에 게시하도록 예약할 수도 있습니다.
 
-   ![게시 버튼](assets/create-content/publish.png)
+   ![콘텐츠 만들기](assets/do-not-localize/add-content-1-2.png)
 
 1. **콘텐츠 조각 게시** 대화 상자가 표시됩니다. AEM은 참조 확인을 자동으로 수행하여 콘텐츠 조각에 필요한 모든 리소스가 게시되었는지 확인합니다. 이 경우 만든 모델도 게시해야 합니다. **게시**&#x200B;를 탭하거나 클릭합니다.
 
-   ![참조 확인](assets/create-content/references.png)
+   ![게시 및 참조 확인](assets/do-not-localize/publish-4.png)
 
 1. 발행물은 배너에서 확인합니다.
-
-   ![발행물 확인](assets/create-content/publish-confirm.png)
 
 콘텐츠가 게시되고 콘텐츠 조각으로 앱이나 웹 사이트에 게재할 준비가 완료되었습니다.

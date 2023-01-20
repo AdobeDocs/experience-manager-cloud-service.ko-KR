@@ -4,10 +4,10 @@ description: 콘텐츠 조각 및 GraphQL API를 Headless 콘텐츠 관리 시�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
-workflow-type: ht
-source-wordcount: '847'
-ht-degree: 100%
+source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 85%
 
 ---
 
@@ -32,15 +32,9 @@ ht-degree: 100%
 
 ## 샘플 콘텐츠 목록 쿼리 {#list-query}
 
-위의 **GraphQL 탐색기 실행** 버튼을 클릭하면 새 탭에서 GraphQL 탐색기가 열립니다.
+새 탭에서 GraphQL 탐색기를 시작합니다. 여기에서 헤드리스 컨텐츠에 대한 쿼리를 작성하고 확인한 다음 이를 사용하여 앱 또는 웹 사이트의 컨텐츠를 작동할 수 있습니다.
 
-![GraphQL 쿼리 편집기](assets/extract-content/query-editor.png)
-
-GraphQL Explorer를 사용하면 Headless 콘텐츠를 사용하여 앱이나 웹 사이트의 콘텐츠를 구동하기 전에 이에 대한 쿼리를 작성하고 유효성을 검사할 수 있습니다. 어떻게 수행되는지 알아보겠습니다.
-
-1. AEM Headless 체험판에는 테스트 목적으로 콘텐츠를 추출할 수 있는 콘텐츠 조각이 미리 로드된 엔드포인트가 함께 제공됩니다. 편집기의 오른쪽 상단에 있는 **엔드포인트** 드롭다운 메뉴에서 **AEM 데모 에셋** 엔드포인트를 선택합니다.
-
-   ![엔드포인트 선택](assets/extract-content/select-endpoint.png)
+1. AEM Headless 체험판에는 테스트 목적으로 콘텐츠를 추출할 수 있는 콘텐츠 조각이 미리 로드된 엔드포인트가 함께 제공됩니다. 다음을 확인합니다. **AEM 데모 자산** 엔드포인트가 **끝점** 편집기의 오른쪽 위 모서리에 있는 드롭다운 메뉴.
 
 1. 미리 로드된 **AEM 데모 에셋** 엔드포인트의 목록 쿼리에 대해 다음 코드 조각을 복사합니다. 목록 쿼리는 특정 콘텐츠 조각 모델을 사용하는 모든 콘텐츠 목록을 반환합니다. 인벤토리 및 카테고리 페이지는 일반적으로 이 쿼리 형식을 사용합니다.
 
@@ -67,19 +61,17 @@ GraphQL Explorer를 사용하면 Headless 콘텐츠를 사용하여 앱이나 �
 
 1. 복사한 코드를 붙여넣어 쿼리 편집기의 기존 콘텐츠를 바꿉니다.
 
-   ![목록 쿼리](assets/extract-content/list-query.png)
-
 1. 붙여넣기가 완료되면 쿼리 편집기 왼쪽 상단의 **재생** 버튼을 클릭하여 쿼리를 실행합니다.
 
 1. 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다. 쿼리가 잘못된 경우, 오른쪽 패널에 오류가 표시됩니다.
 
-   ![목록 쿼리 결과](assets/extract-content/list-query-results.png)
+   ![목록 쿼리](assets/do-not-localize/list-query-1-3-4-5.png)
 
 모든 콘텐츠 조각의 전체 목록에 대한 목록 쿼리의 유효성을 검사했습니다. 이 프로세스를 사용하면 앱과 웹 사이트에서 AEM에서 만든 콘텐츠를 검색하는 방법을 보여 주는 결과와 함께 앱이 기대하는 응답을 보장할 수 있습니다.
 
 ## 특정 샘플 콘텐츠에 대한 쿼리 {#bypath-query}
 
-byPath 쿼리를 실행하면 특정 콘텐츠 조각에 대한 콘텐츠를 검색할 수 있습니다. 특정 콘텐츠 세트에 중점을 둔 페이지 및 제품 세부 정보 페이지에는 일반적으로 이러한 유형의 쿼리가 필요합니다. 어떻게 작동하는지 알아보겠습니다.
+byPath 쿼리를 실행하면 특정 콘텐츠 조각에 대한 콘텐츠를 검색할 수 있습니다. 특정 콘텐츠 세트에 중점을 둔 페이지 및 제품 세부 정보 페이지에는 일반적으로 이러한 유형의 쿼리가 필요합니다.
 
 1. 미리 로드된 **AEM 데모 에셋** 엔드포인트의 byPath 쿼리에 대해 다음 코드 조각을 복사합니다.
 
@@ -90,11 +82,11 @@ byPath 쿼리를 실행하면 특정 콘텐츠 조각에 대한 콘텐츠를 검
      ) {
        item {
          _path
-         adventureTitle
-         adventureDescription {
+         title
+         description {
            json
          }
-         adventurePrimaryImage {
+         primaryImage {
            ... on ImageRef {
              _path
              width
@@ -108,46 +100,32 @@ byPath 쿼리를 실행하면 특정 콘텐츠 조각에 대한 콘텐츠를 검
 
 1. 복사한 코드를 붙여넣어 쿼리 편집기의 기존 콘텐츠를 바꿉니다.
 
-   ![byPath 쿼리](assets/extract-content/bypath-query.png)
-
 1. 붙여넣기가 완료되면 쿼리 편집기 왼쪽 상단의 **재생** 버튼을 클릭하여 쿼리를 실행합니다.
 
 1. 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다. 쿼리가 잘못된 경우, 오른쪽 패널에 오류가 표시됩니다.
 
-   ![byPath 쿼리 결과](assets/extract-content/bypath-query-results.png)
+   ![byPath 쿼리 결과](assets/do-not-localize/bypath-query-2-3-4.png)
 
 해당 조각의 경로로 식별되는 특정 콘텐츠 조각을 검색하기 위해 byPath 쿼리의 유효성을 검사했습니다.
 
 ## 자체 콘텐츠 쿼리 {#own-queries}
 
-두 가지 기본 유형의 쿼리를 실행했으므로 자체 콘텐츠를 쿼리할 준비가 되었습니다.
+이제 두 가지 기본 유형의 쿼리를 실행했으므로 자신의 콘텐츠를 쿼리할 준비가 되었습니다.
 
 1. 자체 콘텐츠 조각에 대해 쿼리를 실행하려면 **AEM 데모 에셋** 폴더에서 **사용자 프로젝트** 폴더로 엔드포인트를 변경합니다.
 
-   ![자체 엔드포인트 선택](assets/extract-content/select-endpoint.png)
-
 1. 쿼리 편집기에서 기존 콘텐츠를 모두 삭제합니다. 그런 다음 여는 괄호 `{`를 입력하고 Ctrl+Space 또는 Option+Space를 누르면 엔드포인트에 정의된 모델의 자동 완성 목록이 표시됩니다. 옵션에서 `List`로 끝나는 생성 모델을 선택합니다.
 
-   ![쿼리 편집기의 자동 완성 모델](assets/extract-content/auto-complete-models.png)
+   ![사용자 지정 쿼리 시작](assets/do-not-localize/custom-query-1-2.png)
 
 1. 선택한 콘텐츠 조각 모델의 쿼리에 포함되어야 하는 항목을 정의합니다. 다시 여는 괄호 `{`를 입력한 다음 Ctrl+Space 또는 Option+Space를 눌러 자동 완성 목록을 표시합니다. 옵션에서 `items`를 선택합니다.
 
-   ![쿼리 편집기의 자동 완성 항목](assets/extract-content/auto-complete-items.png)
+1. 을(를) 탭하거나 클릭합니다 **수정** 읽기 쉽게 코드 형식을 자동으로 지정하는 단추.
 
-1. 선택한 콘텐츠 조각 모델의 쿼리에 포함되어야 하는 필드를 정의합니다. 여는 괄호 `{`를 한 번 더 입력한 다음 Ctrl+Space 또는 Option+Space를 누르면 콘텐츠 조각 모델에서 사용 가능한 자동 완성 목록 필드가 표시됩니다. 목록에서 원하는 모델 필드를 선택합니다.
-
-   ![쿼리 편집기의 자동 완성 필드](assets/extract-content/auto-complete-fields.png)
-
-1. 여러 필드를 쉼표(`,`) 또는 공백으로 구분하고, Ctrl+Space 또는 Option+Space를 다시 눌러 추가 필드를 선택합니다.
-
-1. 작업하는 동안 **정렬** 버튼을 탭하거나 클릭하여 읽기 쉽도록 코드 서식을 자동으로 지정할 수 있습니다.
-
-   ![정렬](assets/extract-content/prettify.png)
-
-1. 완료되면 쿼리 편집기 왼쪽 상단의 **재생** 버튼을 탭하거나 클릭하여 쿼리를 실행합니다.
-
-   ![자체 쿼리 결과](assets/extract-content/custom-query-results.png)
+1. 완료되면 쿼리 편집기 왼쪽 상단의 **재생** 버튼을 탭하거나 클릭하여 쿼리를 실행합니다. 편집기는 `items` 쿼리가 실행됩니다.
 
 1. 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다.
+
+   ![사용자 지정 쿼리 실행](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 사용자의 콘텐츠를 옴니채널 디지털 환경에 구현하는 방식입니다.
