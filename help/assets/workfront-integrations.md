@@ -4,7 +4,7 @@ description: 통합 소개 [!DNL Assets] 및 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5bc048052ca579707fb2508d3f436f1755a5d218
+source-git-commit: 269dff32b41dba86fb048418da3f3b3ef8a6781e
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 3%
@@ -49,7 +49,7 @@ ht-degree: 3%
 다음은 다양한 유형의 통합을 통해 사용할 수 있는 기능에 대한 세부 사항입니다 [!DNL Assets] 및 [!DNL Workfront].
 
 | 기능 | 설명 | [!DNL Workfront] 및 [!DNL Assets Essentials] *커넥터 없음(OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *커넥터 필요* | Workfront 및 [!DNL Experience Manager as a Cloud Service] *커넥터 없음(OOTB)* |
-|----|----|----|------|-----|-----|
+|----|----|----|-----|-----|
 | 배포 메서드 | 적합한 [!DNL Assets] 제공 | Assets Essentials | Cloud Service, Adobe Managed Services, 온-프레미스 | 클라우드 서비스 |
 | **일반** |
 | 에서 디지털 파일 보내기 [!DNL Workfront] to [!DNL Assets] | 최신 버전의 WF 문서를 AEM Assets에 업로드하여 새로운 버전의 문서로 연결할 수 있습니다. | ✓ | ✓ | ✓ |
