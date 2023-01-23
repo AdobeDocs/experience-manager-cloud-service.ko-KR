@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5877f3c84ab6303520dd4697144e9b18d717b74f
+source-git-commit: a3f7a6759ca41d929e250171e52e43c21ad9450b
 workflow-type: tm+mt
-source-wordcount: '3837'
-ht-degree: 100%
+source-wordcount: '3845'
+ht-degree: 99%
 
 ---
 
@@ -794,6 +794,7 @@ ht-degree: 100%
       + [AEM 기술 재단](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 참조 자료](/help/implementing/developing/reference-materials.md)
       + [서버측 API용 액세스 토큰 생성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+      + [서버 측 API에 대한 액세스 토큰 생성(이전)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [빠른 사이트 생성 및 프론트엔드 맞춤화](/help/implementing/developing/introduction/quick-site-creation.md)
       + [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [사이트 템플릿 및 테마 맞춤화](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
