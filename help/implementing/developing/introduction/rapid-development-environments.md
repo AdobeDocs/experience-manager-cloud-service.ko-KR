@@ -2,10 +2,10 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
 hidefromtoc: true
-source-git-commit: 983901387d059a98942b4f7c533770a55dd4ff4a
+source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 7%
+source-wordcount: '2350'
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 >[!AVAILABILITY]
 >
->이 기능은 아직 사용할 수 없습니다.
+>이 기능은 2월 한 달 동안 고객에게 점진적으로 출시될 예정입니다.
 
 변경 사항을 배포하려면 현재 클라우드 개발 환경에서 CI/CD 파이프라인이라는 광범위한 코드 보안 및 품질 규칙을 사용하는 프로세스를 사용해야 합니다. Adobe은 빠르고 반복적인 변경이 필요한 상황에서 RDE(Rapid Development Environments)를 도입했습니다.
 
@@ -30,9 +30,7 @@ RDE는 코드, 컨텐츠, Apache 또는 Dispatcher 구성에 사용할 수 있�
 
 일반적으로 RDE는 특정 기능을 테스트하고 디버깅하기 위해 특정 시간에 단일 개발자가 사용합니다. 개발 세션이 완료되면 다음 사용을 위해 RDE를 기본 상태로 재설정할 수 있습니다.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
-
-Additional RDEs may be purchased for Production programs -->
+추가 RDE는 프로덕션(샌드박스 아님) 프로그램에 대해 라이센스가 부여될 수 있습니다.
 
 ## 프로그램에서 RDE 활성화 {#enabling-rde-in-a-program}
 
@@ -388,14 +386,17 @@ RDE는 클라우드 개발 환경과 유사한 여러 가지 방식으로 사용
 
 이러한 이유로 RDE 환경에서 코드를 확인한 후 비프로덕션 파이프라인을 사용하여 클라우드 개발 환경에 코드를 배포해야 합니다. 마지막으로 프로덕션 파이프라인과 함께 배포하기 전에 코드를 테스트합니다.
 
-<!-- Temporarily hiding this. See CQDOC-19795 for more details
+다음 솔루션별 고려 사항도 확인합니다.
 
-## How many RDEs do I need? {#how-many-rds-do-i-need}
+* 현재 RDE는 Cloud Manager 프런트 엔드 파이프라인을 사용하여 배포된 프런트 엔드 코드 보기 및 디버깅을 지원하지 않습니다.
 
-The purchase of additional RDEs for Production programs will be possible beginning with late January.
 
-The number of RDEs needed depends on the make-up and processes of an organization. The most flexible model is where an organization purchases a dedicated RDE for each one of their AEM CS developers. In this model, each developer can test their code on the RDE without needing to coordinate with other team members around whether an RDE environment is available.
+## 몇 개의 RDE가 필요합니까? {#how-many-rds-do-i-need}
 
-At the other extreme, a team with a single RDE may use internal processes to coordinate which developer can use the environment at a given time. This can possibly be whenever a developer has hit an intermediate feature milestone and is ready to validate in a Cloud environment where they can quickly make the changes they need.
+RDE는 라이센스가 있는 각 솔루션에 대해 사용할 수 있으며 Adobe은 프로덕션(샌드박스 아님) 프로그램에 대해 라이센스를 제공할 수 있는 추가 RDE를 제공합니다.
 
-An intermediate model is one where an organization purchases a number of RDEs that will create a situation in which not every developer will have a dedicated environment, but there is a greater likelihood of an unused RDE being available. One strategy could be to allocate an RDE per scrum team or major feature. Internal processes may be used to coordinate usage of the environments. -->
+필요한 RDE 수는 조직의 구성 및 프로세스에 따라 다릅니다. 가장 유연한 모델은 조직이 AEM Cloud Service 개발자마다 전용 RDE를 구매하는 위치입니다. 이 모델에서 각 개발자는 RDE 환경을 사용할 수 있는지 여부에 대해 다른 팀 구성원과 조정하지 않고 RDE에서 코드를 테스트할 수 있습니다.
+
+다른 극단적인 경우에는 단일 RDE를 사용하는 팀이 내부 프로세스를 사용하여 개발자가 지정된 시간에 환경을 사용할 수 있도록 조정할 수 있습니다. 개발자가 중간 기능 이정표에 도달하여 클라우드 환경에서 유효성을 검사할 준비가 되면 개발자가 필요한 변경을 신속하게 수행할 수 있을 때마다 이러한 작업이 발생할 수 있습니다.
+
+중간적 모델은 조직이 많은 RDE를 구매하므로 사용되지 않는 RDE를 사용할 수 있는 가능성이 높습니다. 하나의 전략은 스크럼 팀 또는 주요 기능별로 RDE를 할당하는 것입니다. 내부 프로세스는 환경의 사용을 조정하는 데 사용할 수 있습니다.
