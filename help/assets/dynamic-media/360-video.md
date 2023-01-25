@@ -4,9 +4,9 @@ description: Dynamic Media에서 360 및 VR(Virtual Reality) 비디오로 작업
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dynamic Media에는 360개의 비디오 자산 전달에 대한 기본 지원이
 
 선택 [우주 정거장 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) 브라우저 창을 열고 360° 비디오를 시청하십시오. 비디오 재생 중에 포인터를 새 위치로 드래그하여 보기 각도를 변경합니다.
 
-![360 비디오 샘플](assets/6_5_360videoiss_simplified.png)
+![Space Station 360 비디오 프레임](assets/6_5_360videoiss_simplified.png)
 *스페이스 스테이션 360의 비디오 프레임*
 
 ## 360/VR 비디오 및 Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -42,7 +42,7 @@ Adobe Premier Pro를 사용하여 360/VR 푸티지를 보고 편집할 수 있�
 
 에 업로드된 360개의 비디오 자산 [!DNL Experience Manager] 에는 **멀티미디어** 일반 비디오 자산과 유사한 자산 페이지.
 
-![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
+![카드 보기에서 표시된 업로드된 360-비디오 자산](assets/6_5_360video-selecttopreview.png)
 *카드 보기에서 표시된 업로드된 360-비디오 자산. 자산 레이블이 멀티미디어로 지정됩니다.*
 
 **360 비디오 뷰어에서 사용할 자산을 업로드합니다.**
@@ -106,25 +106,25 @@ Start by uploading 360 Videos.
 
 1. in **[!UICONTROL 자산]**&#x200B;를 만든 기존 360 비디오로 이동합니다. 미리 보기 모드에서 열려면 360 비디오 자산을 선택합니다.
 
-   ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
+   ![Experience Manager 카드 보기에 표시된 업로드된 360개의 비디오 자산의 스크린샷입니다.](assets/6_5_360video-selecttopreview-1.png)
 
    비디오를 미리 보려면 360-비디오 자산을 선택합니다.
 
 1. 미리 보기 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록을 선택한 다음 을 선택합니다 **[!UICONTROL 뷰어]**.
 
-   ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
+   ![사용 가능한 비디오 뷰어 목록을 보기 위해 뷰어를 선택하는 스크린샷.](assets/6_5_360video-preview-viewers.png)
 
    뷰어 목록에서 를 선택합니다. **[!UICONTROL Video360_social]**&#x200B;를 입력한 후 다음 중 하나를 수행합니다.
 
    * 정적 장면의 보기 각도를 변경하려면 포인터를 비디오 위로 드래그합니다.
    * 재생을 시작하려면 비디오의 을(를) 선택합니다 **[!UICONTROL 재생]** 버튼을 클릭합니다. 비디오가 재생될 때 포인터를 비디오 위로 드래그하여 보기 각도를 변경합니다.
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*360개의 비디오 스크린샷입니다.*
+   ![Video360_Social 뷰어를 선택하여 360도 비디오를 미리 보는 사용자의 스크린샷입니다.](assets/6_5_360video-preview-video360-social.png)*360개의 비디오 스크린샷입니다.*
 
    * 뷰어 목록에서 를 선택합니다. **[!UICONTROL Video360VR]**.
 
       VR(Virtual Reality) 비디오는 가상 현실 헤드셋을 사용하여 액세스하는 몰입형 비디오 콘텐츠입니다. 일반 비디오처럼 360° 비디오 카메라를 사용하여 비디오를 녹화하거나 캡처할 때 VR 비디오를 만들 수 있습니다.
-   ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
+   ![Video360VR 뷰어 옵션 위로 마우스 포인터를 가져간 사용자의 스크린샷입니다.](assets/6_5_360video-preview-video360vr.png)
    *360 VR 비디오 스크린샷입니다.*
 
 1. 미리 보기 페이지의 오른쪽 상단에서 을(를) 선택합니다 **[!UICONTROL 닫기]**.

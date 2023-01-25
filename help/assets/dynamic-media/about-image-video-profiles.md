@@ -4,9 +4,9 @@ description: 이미지 프로필 또는 비디오 프로필은 폴더에 업로�
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f2f805043ab3037cb8dcc8636ab162c9d0f80e19
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Dynamic Media 이미지 프로필 또는 Dynamic Media 비디오 프로필을 �
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
@@ -74,13 +74,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 을(를) 선택합니다 **[!UICONTROL 타임라인]**.
 1. 페이지의 왼쪽 아래 모서리, 페이지의 오른쪽 [!UICONTROL 댓글] 필드에서 캐럿 아이콘( **^** ).
 
-   ![자산 워크플로우 재처리 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![선택한 자산 폴더, 강조 표시된 타임라인 드롭다운 목록, 강조 표시된 워크플로우 시작 단추 및 주석 필드 오른쪽에 있는 캐럿 아이콘을 보여주는 Experience Manager의 자산 스크린샷도 강조 표시되어 있습니다.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. 선택 **[!UICONTROL 워크플로우 시작]**.
 1. 에서 **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7: 자산 재처리]**.
 1. (선택 사항)에서 **워크플로우의 제목 입력** 텍스트 필드에서 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로우 인스턴스를 참조할 수 있습니다.
 
-   ![자산 재처리 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![&quot;Scene7: 워크플로우 시작 드롭다운 목록에서 선택한 &quot;자산 재처리&quot;와 강조 표시된 시작 단추가 강조 표시되어 있습니다.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
 1. 선택 **[!UICONTROL 시작]**&#x200B;를 선택하고 을 선택합니다. **[!UICONTROL 확인]**.
 
@@ -95,13 +95,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. in [!DNL Experience Manager], 선택 **[!UICONTROL Adobe Experience Manager]** 전역 탐색 콘솔에 액세스하려면 **[!UICONTROL 도구]** (망치) 아이콘 > **[!UICONTROL Workflow > 모델]**.
 1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 을 선택합니다 **[!UICONTROL Scene7: 자산 재처리]**.
 
-   ![Scene7이 있는 워크플로우 모델 페이지: 카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![&quot;Scene7: Experience Manager의 카드 보기에서 선택한 자산 재처리 워크플로우입니다.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
 1. 도구 모음에서 를 선택합니다 **[!UICONTROL 편집]**. 새 브라우저 탭에서 Scene7을 엽니다. 자산 워크플로우 모델 페이지를 재처리합니다.
 1. Scene7에서: 오른쪽 상단 모서리 근처에 있는 자산 워크플로우 페이지 재처리를 선택합니다. **[!UICONTROL 편집]** 워크플로우 &quot;잠금 해제&quot;하기.
 1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 을 선택합니다 **[!UICONTROL 구성]** 클릭합니다.
 
-   ![Scene7 배치 업로드 구성 요소](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![&quot;Scene7: &quot;구성&quot; 아이콘 위로 마우스 포인터를 가져가면 자산 재처리&quot; 페이지가 표시됩니다.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
 1. 설정 **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자에서 다음을 설정합니다.
    * 에서 **[!UICONTROL 제목]** 및 **[!UICONTROL 설명]** 텍스트 필드에 작업의 새 제목과 설명을 입력합니다(원하는 경우).
@@ -111,13 +111,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * 에서 **[!UICONTROL 배치 필드]**&#x200B;를 Dynamic Media 서버 일괄 처리 업로드 작업에서 처리할 최대 자산 수(50~1000)를 입력합니다.
    * 선택 **[!UICONTROL 시간 제한 시 고급]** 시간 초과에 도달했을 때 진행하려는 경우 시간 초과에 도달하면 받은 편지함으로 계속 진행하려면 선택 취소합니다.
 
-   ![속성 대화 상자](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Scene7에 일괄 업로드 - 단계 속성 페이지의 스크린샷입니다.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
 1. 의 오른쪽 위 모서리에서 **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자, 선택 **[!UICONTROL 완료]**.
 
 1. Scene7의 오른쪽 위 모서리: 자산 워크플로우 모델 페이지를 재처리하고 을 선택합니다. **[!UICONTROL 동기화]**. 다음에 **[!UICONTROL 동기화됨]**&#x200B;를 설정하는 경우 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 재처리할 준비가 되었습니다.
 
-   ![워크플로우 모델 동기화](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![선택한 자산 폴더, 강조 표시된 타임라인 드롭다운 목록, 강조 표시된 워크플로우 시작 단추 및 주석 필드 오른쪽에 있는 캐럿 아이콘을 보여주는 Experience Manager의 자산 스크린샷도 강조 표시되어 있습니다.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. Scene7을 표시하는 브라우저 탭을 닫습니다. 자산 워크플로우 모델을 재처리합니다.
 
