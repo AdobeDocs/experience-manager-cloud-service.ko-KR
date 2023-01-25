@@ -98,7 +98,7 @@ ht-degree: 99%
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 이제 AEM as a Cloud Service(작성자 서비스)가 통합 쉘과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 쉘의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
+* 이제 AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
 
 * 앞서 릴리스 정보에서 언급한 바와 같이, 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 향후 시행될 예정입니다. 이러한 대용량 콘텐츠 패키지를 복제하는 데 대한 권장 접근 방식은 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 참조하십시오.
 
