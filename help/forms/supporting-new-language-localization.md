@@ -3,7 +3,7 @@ title: 적응형 양식 현지화를 위한 새 로케일 지원
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms에서는 적응형 양식을 현지화하기 위해 새 로케일을 추가할 수 있습니다. 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(pt-BR), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일.
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
+source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -34,8 +34,8 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. [리포지토리 복제](#1-clone-the-repository-clone-the-repository)
 1. [GuideLocalizationService 서비스에 로케일 추가](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [로케일 이름 특정 폴더 추가](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-3.1 [로케일에 대한 XFA 클라이언트 라이브러리 추가](#3-add-xfa-client-library-for-a-locale)
-3.2 [로케일에 대한 적응형 양식 클라이언트 라이브러리 추가](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+   * [로케일에 대한 XFA 클라이언트 라이브러리 추가](#3-add-xfa-client-library-for-a-locale)
+   * [로케일에 대한 적응형 양식 클라이언트 라이브러리 추가](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [사전에 대한 로케일 지원 추가](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [리포지토리에서 변경 사항을 커밋하고 파이프라인을 배포합니다.](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
@@ -63,9 +63,9 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 #### 3.1 locale-name 폴더의 로케일에 대한 XFA 클라이언트 라이브러리 추가
 
 1. 이름이 인 노드 만들기 `[locale-name]_xfa` 을(를) 다음과 같이 입력합니다. `cq:ClientLibraryFolder` 아래에 `etc/clientlibs/locale_name`, 카테고리 포함 `xfaforms.I18N.<locale>`를 누르고 다음 파일을 추가합니다.
-* **I18N.js** 정의 `xfalib.locale.Strings` 대상 `<locale>` 에 정의된 대로 `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-* **js.txt** 다음 포함:
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+   * **I18N.js** 정의 `xfalib.locale.Strings` 대상 `<locale>` 에 정의된 대로 `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+   * **js.txt** 다음 포함:
+      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 #### 3.2. locale-name 폴더에 대한 적응형 양식 클라이언트 라이브러리 추가 {#add-adaptive-form-client-library-for-a-locale-br}
 
@@ -77,9 +77,9 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 1. 추가 **js.txt** 다음 포함:
 
-   ```text
+   ```
      i18n.js
-       LogMessages.js
+     LogMessages.js
    ```
 
 ### 4. 사전에 대한 로케일 지원 추가 {#add-locale-support-for-the-dictionary-br}
@@ -143,7 +143,7 @@ Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hie
 
 Get [샘플 클라이언트 라이브러리](/help/forms/assets/locale-support-sample.zip) 새 로케일에 대한 지원을 추가하려면 필요한 로케일에서 폴더 내용을 변경해야 합니다.
 
-### 새로운 지역화를 지원하는 우수 사례 {#best-practices}
+## 새로운 지역화를 지원하는 우수 사례 {#best-practices}
 
 * Adobe은 적응형 양식을 만든 후 번역 프로젝트를 만들 것을 권장합니다.
 
