@@ -3,7 +3,7 @@ title: 적응형 양식 현지화를 위한 새 로케일 지원
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms에서는 적응형 양식을 현지화하기 위해 새 로케일을 추가할 수 있습니다. 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(pt-BR), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일.
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: f8bbc6605e77cf2858c69dae96e9ab32698d1f16
+source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -34,8 +34,8 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. [리포지토리 복제](#1-clone-the-repository-clone-the-repository)
 1. [GuideLocalizationService 서비스에 로케일 추가](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [로케일 이름 특정 폴더 추가](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-1. [로케일에 대한 XFA 클라이언트 라이브러리 추가](#3-add-xfa-client-library-for-a-locale)
-1. [로케일에 대한 적응형 양식 클라이언트 라이브러리 추가](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+3.1 [로케일에 대한 XFA 클라이언트 라이브러리 추가](#3-add-xfa-client-library-for-a-locale)
+3.2 [로케일에 대한 적응형 양식 클라이언트 라이브러리 추가](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [사전에 대한 로케일 지원 추가](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [리포지토리에서 변경 사항을 커밋하고 파이프라인을 배포합니다.](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
