@@ -2,7 +2,7 @@
 title: 프론트엔드 파이프라인으로 Sites 개발
 description: 프런트엔드 파이프라인을 통해 프런트엔드 개발자에게 더 많은 독립성이 부여되며, 개발 프로세스를 통해 상당한 속도를 향상시킬 수 있습니다. 이 문서에서는 제공해야 하는 프런트 엔드 빌드 프로세스의 몇 가지 특정 고려 사항에 대해 설명합니다.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ### 노드 버전 {#node-versions}
 
-기본적으로 프런트 엔드 파이프라인은 노드 14를 사용하지만, 16과 16도 사용할 수 있습니다.
+기본적으로 프런트 엔드 파이프라인은 노드 14를 사용하지만, 12와 16도 사용할 수 있습니다.
 
 를 사용할 수 있습니다 `CM_CUSTOM_VAR_NODE_VERSION` 환경 변수를 사용하십시오.
 
