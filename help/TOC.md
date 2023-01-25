@@ -360,7 +360,7 @@ ht-degree: 99%
       + [Adobe Target과 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign과 통합](/help/sites-cloud/integrating/campaign.md)
-+ 에셋 {#assets}
++ Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [개요 및 새로운 기능](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] 주요 변경 내용](/help/assets/assets-cloud-changes.md)
@@ -795,7 +795,7 @@ ht-degree: 99%
       + [AEM 기술 재단](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 참조 자료](/help/implementing/developing/reference-materials.md)
       + [서버측 API용 액세스 토큰 생성](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [서버 측 API에 대한 액세스 토큰 생성(이전)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + [서버측 API용 액세스 토큰 생성 (레거시)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [빠른 사이트 생성 및 프론트엔드 맞춤화](/help/implementing/developing/introduction/quick-site-creation.md)
       + [프론트엔드 파이프라인으로 Sites 개발](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [사이트 템플릿 및 테마 맞춤화](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
