@@ -4,10 +4,10 @@ description: 이전에 만든 콘텐츠 조각 모델을 사용하여 페이지 
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 96%
+source-wordcount: '459'
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="콘텐츠 조각 콘솔 실행"
->abstract="앱과 웹 사이트에서 원활하게 작동하는 일관된 고품질 콘텐츠를 만들면 훌륭한 고객 경험을 구축할 수 있습니다. 이 모듈에서는 이를 수행하는 방법을 설명하기 위해 첫 번째 콘텐츠 조각을 만드는 과정을 안내합니다. 비디오를 시청하여 이 단계가 중요한 이유에 대해 알아보십시오.<br><br>아래 버튼을 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
->additional-url="https://video.tv.adobe.com/v/328618" text="새로운 콘텐츠 소개 비디오 만들기"
+>abstract="앱과 웹 사이트에서 원활하게 작동하는 일관된 고품질 콘텐츠를 만들면 훌륭한 고객 경험을 구축할 수 있습니다. 이 모듈에서는 이를 수행하는 방법을 설명하기 위해 첫 번째 콘텐츠 조각을 만드는 과정을 안내합니다.<br><br>아래 버튼을 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
@@ -32,7 +31,7 @@ ht-degree: 96%
 
 ## 콘텐츠 조각 만들기 {#create-fragment}
 
-콘텐츠 조각은 Headless 콘텐츠를 나타내며 콘텐츠 조각 모델이라고 하는 사전 정의된 구조를 기반으로 합니다. 콘텐츠 조각 콘솔은 Headless 콘텐츠 라이브러리로 간주할 수 있습니다. 이 조각을 사용하여 새 컨텐츠 조각을 만들고 기존 조각을 관리합니다.
+콘텐츠 조각은 Headless 콘텐츠를 나타내며 콘텐츠 조각 모델이라고 하는 사전 정의된 구조를 기반으로 합니다. 콘텐츠 조각 콘솔은 Headless 콘텐츠 라이브러리로 간주할 수 있습니다. 콘솔을 사용하여 새 콘텐츠 조각을 만들고 기존 조각을 관리할 수 있습니다.
 
 1. 콘솔의 오른쪽 상단에서 **만들기** 버튼을 탭하거나 클릭합니다.
 
