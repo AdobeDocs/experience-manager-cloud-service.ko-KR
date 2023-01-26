@@ -3,10 +3,10 @@ title: AEM 버전 업데이트
 description: AEM 버전 업데이트
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
+source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 36%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 36%
 
 ## 소개 {#introduction}
 
-AEM as a Cloud Service는 이제 지속적인 통합 및 연속 제공(CI/CD)을 사용하여 프로젝트를 가장 최신 AEM 버전에서 작업할 수 있도록 해 줍니다. 이는 사용자에 대한 서비스 중단 없이 프로덕션 및 스테이징 인스턴스가 최신 AEM 버전으로 업데이트됨을 의미합니다.
+AEM as a Cloud Service는 이제 지속적인 통합 및 연속 제공(CI/CD)을 사용하여 프로젝트를 가장 최신 AEM 버전에서 작업할 수 있도록 해 줍니다. 즉, 프로덕션 및 스테이징 인스턴스는 사용자를 위한 서비스를 중단 없이 최신 AEM 버전으로 업데이트됩니다.
 
 >[!NOTE]
 >

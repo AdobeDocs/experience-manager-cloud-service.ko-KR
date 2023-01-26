@@ -2,10 +2,10 @@
 title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
-workflow-type: ht
-source-wordcount: '1407'
-ht-degree: 100%
+source-git-commit: 00cbf0b9fa50ab3f42a0a3917caf40708c7209b9
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 
 
 ### 고객 옵트인 {#customer-opt-in}
 
-Cloud Manager가 UI 테스트를 빌드하고 실행하려면 저장소에 파일을 추가하여 이 기능을 선택해야 합니다.
+Cloud Manager에서 UI 테스트를 빌드하고 실행하려면 저장소에 파일을 추가하여 이 기능에 옵트인해야 합니다.
 
 * 파일 이름은 `testing.properties`여야 합니다.
 * 파일 콘텐츠는 `ui-tests.version=1`이어야 합니다.
