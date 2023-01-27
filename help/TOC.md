@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
 workflow-type: tm+mt
 source-wordcount: '3849'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -526,7 +526,7 @@ ht-degree: 99%
          + [적응형 양식에서 CAPTCHA 사용](/help/forms/captcha-adaptive-forms.md)
          + [핵심 구성 요소 사용](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
          + [스크리블 서명 적용](/help/forms/signing-forms-using-scribble.md)
-         + [새 언어 로컬라이제이션 지원](/help/forms/supporting-new-language-localization.md)
+         + [새로운 언어 현지화 지원](/help/forms/supporting-new-language-localization.md)
          + [적응형 양식에 테이블 추가](/help/forms/adaptive-forms-tables.md)
       + 적응형 양식에 레이아웃 구성 및 스타일 적용{#configure-layout-of-an-adaptive-form}
          + [적응형 양식의 레이아웃 설정](/help/forms/layout-capabilities-adaptive-forms.md)
