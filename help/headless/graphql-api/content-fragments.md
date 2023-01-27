@@ -4,9 +4,9 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -241,7 +241,7 @@ AEM용 GraphQL은 유형 목록을 지원합니다. 지원되는 모든 콘텐�
 
 | 콘텐츠 조각 모델 - 데이터 형식 | GraphQL 유형 | 설명 |
 |--- |--- |--- |
-| 한 줄 텍스트 | 문자열, [문자열] | 작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됩니다. |
+| 한 줄 텍스트 | 문자열, [문자열] | 작성자 이름, 위치 이름 등과 같은 간단한 문자열에 사용됨 |
 | 여러 줄 텍스트 | 문자열, [문자열] | 기사의 본문과 같은 텍스트 출력에 사용됨 |
 | 숫자 | 부동, [Float] | 부동 소수점 숫자 및 일반 숫자를 표시하는 데 사용됨 |
 | 부울 | 부울 | 확인란을 표시하는 데 사용됨 → 간단한 참/거짓 진술 |
@@ -707,7 +707,7 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
 
-   이후에 다음을 수행할 수 있습니다.
+   이후에 다음과 같은 작업을 수행할 수 있습니다.
 
    * [결과 정렬](#sorting)
 
