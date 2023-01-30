@@ -2,10 +2,10 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
 hidefromtoc: true
-source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
+source-git-commit: c8cb222cdba805652123df852410ffed8b047ceb
 workflow-type: tm+mt
-source-wordcount: '2396'
-ht-degree: 7%
+source-wordcount: '2446'
+ht-degree: 6%
 
 ---
 
@@ -390,6 +390,20 @@ RDE 재설정 프로세스가 시작되면 일반적으로 완료하고 환경�
 ![환경 카드에서 RDE 재설정](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
 Cloud Manager를 사용하여 환경을 관리하는 방법에 대한 자세한 내용은 [Cloud Manager 설명서.](/help/implementing/cloud-manager/manage-environments.md)
+
+## 실행 모드 {#runmodes}
+
+아래 예와 같이 폴더 이름에 접미사를 사용하여 RDE별 OSGI 구성을 적용할 수 있습니다.
+
+* `config.rde`
+* `config.author.rde`
+* `config.publish.rde`
+
+자세한 내용은 [runmode 설명서](/help/implementing/deploying/overview.md#runmodes) 런타임 모드에 대한 일반 정보입니다.
+
+>[!NOTE]
+>
+>RDE OSGI 구성은 번들의 `dev` 실행 모드.
 
 ## 로깅 {#logging}
 
