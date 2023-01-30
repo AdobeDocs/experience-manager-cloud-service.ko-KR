@@ -2,10 +2,10 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
 hidefromtoc: true
-source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
+source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 6%
+source-wordcount: '2396'
+ht-degree: 7%
 
 ---
 
@@ -72,6 +72,11 @@ Cloud Manager를 사용하여 환경을 만들고, 환경에 액세스할 수 �
 
 Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 다음 단계에 설명된 대로 명령줄 도구를 설정하여 상호 작용할 수 있습니다.
 
+>[!IMPORTANT]
+>
+>최신 버전의 가 있는지 확인하십시오 [노드 및 NPM이 설치됨](https://nodejs.org/en/download/) Adobe I/O CLI 및 관련 플러그인이 제대로 작동하려면 다음을 수행하십시오.
+
+
 1. 절차에 따라 Adobe I/O CLI 도구를 설치합니다 [여기](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Adobe I/O CLI tools cloud manager 플러그인을 설치하고 설명된 대로 구성합니다 [여기](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. 다음 명령을 실행하여 Adobe I/O CLI tools AEM RDE 플러그인을 설치합니다.
@@ -120,6 +125,16 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
    또는 이 명령을 실행하여 개발자 콘솔에 로그인할 수 있는 경우 이 개발자 역할이 있는지 확인할 수 있습니다.
 
    `aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>   만약 `Warning: cloudmanager:list-programs is not a aio command.` 오류가 발생하면 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 아래 명령을 실행하여 다음을 수행합니다.
+>
+>   
+```
+>   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>   ```
+
 
 ## 새 기능을 개발할 때 RDE 사용 {#using-rde-while-developing-a-new-feature}
 
