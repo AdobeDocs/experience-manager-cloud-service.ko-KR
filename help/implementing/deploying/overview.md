@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 배포
 description: AEM as a Cloud Service에 배포
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3415'
 ht-degree: 1%
 
 ---
@@ -171,6 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="패키지 관리자 - 가변 컨텐츠 패키지 마이그레이션"
 >abstract="프로덕션 문제를 디버깅하기 위해 프로덕션 환경에서 스테이징으로 특정 콘텐츠를 가져오는 작업, 온-프레미스 환경에서 AEM 클라우드 환경으로 작은 컨텐츠 패키지를 전송하는 작업 등을 포함하는 컨텐츠 패키지를 설치해야 하는 사용 사례에 대해 패키지 관리자의 사용을 탐색합니다."
+>abstract="프로덕션 문제를 디버깅하기 위해 프로덕션 환경에서 스테이징으로 특정 컨텐츠를 가져오는 작업을 포함하는 컨텐츠 패키지를 &#39;오프&#39;로 설치해야 하는 사용 사례와 온-프레미스 환경에서 AEM 클라우드 환경으로 작은 컨텐츠 패키지를 전송하는 사용 사례를 살펴보십시오."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="콘텐츠 전송 도구"
 
 컨텐츠 패키지를 &quot;일회성&quot;으로 설치해야 하는 사용 사례가 있습니다. 예를 들어 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오는 경우가 있습니다. 이러한 시나리오에서는 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) AEM as a Cloud Service 환경에서 사용할 수 있습니다.
@@ -281,11 +282,11 @@ Cloud Ready AEM 빠른 시작을 사용하여 복제를 개발하고 테스트�
 
 ## 실행 모드 {#runmodes}
 
-기존 AEM 솔루션에서는 고객이 임의 실행 모드로 인스턴스를 실행하고 OSGI 구성을 적용하거나 특정 인스턴스에 OSGI 번들을 설치할 수 있습니다. 일반적으로 정의된 실행 모드에는 *서비스* (작성 및 게시) 및 환경(dev, stage, prod)
+기존 AEM 솔루션에서는 고객이 임의 실행 모드로 인스턴스를 실행하고 OSGI 구성을 적용하거나 특정 인스턴스에 OSGI 번들을 설치할 수 있습니다. 일반적으로 정의된 실행 모드에는 *서비스* (작성자 및 게시) 및 환경(rde, dev, stage, prod).
 
 반면 AEM as a Cloud Service에서는 사용 가능한 실행 모드와 OSGI 번들 및 OSGI 구성을 매핑하는 방법에 대해 더 자세히 설명합니다.
 
-* OSGI 구성 실행 모드는 개발, 스테이지, 환경을 참조하거나, 작성자를 참조하고, 서비스에 대해 게시해야 합니다. 의 조합 `<service>.<environment_type>` 지원되지만 이 순서를 특정 순서로 사용해야 합니다(예: `author.dev` 또는 `publish.prod`). OSGI 토큰은 `getRunModes` 메서드를 포함할 필요가 없습니다. `environment_type` 런타임 시 자세한 내용은 [AEM as a Cloud Service OSGi 구성](/help/implementing/deploying/configuring-osgi.md).
+* OSGI 구성 실행 모드는 RDE, dev, stage, prod for the environment 또는 author, publish for the service를 참조해야 합니다. 의 조합 `<service>.<environment_type>` 지원되지만 이 순서를 특정 순서로 사용해야 합니다(예: `author.dev` 또는 `publish.prod`). OSGI 토큰은 `getRunModes` 메서드를 포함할 필요가 없습니다. `environment_type` 런타임 시 자세한 내용은 [AEM as a Cloud Service OSGi 구성](/help/implementing/deploying/configuring-osgi.md).
 * OSGI 번들 실행 모드는 서비스(작성자, 게시)로 제한됩니다. 실행 단위 모드 OSGI 번들은 다음 중 하나의 컨텐츠 패키지에 설치해야 합니다 `install/author` 또는 `install/publish`.
 
 기존 AEM 솔루션과 마찬가지로 실행 모드를 사용하여 특정 환경 또는 서비스의 콘텐츠만 설치할 방법이 없습니다. 스테이지 또는 프로덕션에 없는 데이터 또는 HTML을 사용하여 개발 환경을 시드하려는 경우 패키지 관리자를 사용할 수 있습니다.
@@ -295,13 +296,16 @@ Cloud Ready AEM 빠른 시작을 사용하여 복제를 개발하고 테스트�
 * **config** (*기본값은 모든 AEM 서비스에 적용됩니다*)
 * **config.author** (*모든 AEM 작성자 서비스에 적용됩니다*)
 * **config.author.dev** (*AEM 개발 작성자 서비스에 적용됩니다*)
+* **config.author.rde** (*AEM RDE 작성자 서비스에 적용됩니다*)
 * **config.author.stage** (*AEM 스테이징 작성자 서비스에 적용됩니다*)
 * **config.author.prod** (*AEM Production Author 서비스에 적용됩니다*)
 * **config.publish** (*AEM 게시 서비스에 적용됩니다*)
 * **config.publish.dev** (*AEM 개발 게시 서비스에 적용됩니다*)
+* **config.publish.rde** (*AEM RDE 게시 서비스에 적용됩니다*)
 * **config.publish.stage** (*AEM 스테이징 게시 서비스에 적용됩니다*)
 * **config.publish.prod** (*AEM Production Publish 서비스에 적용됩니다*)
 * **config.dev** (*AEM 개발 서비스에 적용됩니다*)
+* **config.rde** (*RDE 서비스에 적용됩니다*)
 * **config.stage** (*AEM 스테이징 서비스에 적용됩니다*)
 * **config.prod** (*AEM Production Services에 적용됩니다*)
 
