@@ -1,10 +1,11 @@
 ---
 title: 3D 에셋 미리보기
 description: Experience Manager에서 3D 자산을 미리 보는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 10%

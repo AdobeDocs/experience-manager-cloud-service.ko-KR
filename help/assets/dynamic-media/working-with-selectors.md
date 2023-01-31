@@ -1,9 +1,10 @@
 ---
 title: 선택기를 사용하여 작업
 description: Dynamic Media에서 대화형 이미지, 대화형 비디오 및 회전 배너용 자산을 선택하는 데 사용할 수 있는 방법에 대해 알아봅니다.
+contentOwner: Rick Brough
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 3%
@@ -68,7 +69,7 @@ ht-degree: 3%
 
 1. 회전 메뉴 세트, 대화형 이미지 또는 대화형 비디오로 이동하고 다음을 선택합니다 **[!UICONTROL 작업]** 탭(핫스팟이나 이미지 맵을 정의한 경우에만 사용할 수 있습니다.)
 
-   사이트 선택기는 **[!UICONTROL 작업 유형]** 영역.
+   The Site Selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 

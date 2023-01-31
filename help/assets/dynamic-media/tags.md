@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media 뷰어를 Analytics 및 Adobe Experience Platform 태그와 통합
 description: Experience Platform 태그 및 Dynamic Media Viewers 5.13용 Dynamic Media Viewer 확장에 대해 알아봅니다. Adobe Analytics 및 Platform Tags 고객은 Experience Platform 태그 구성에서 Dynamic Media Viewer에 대한 특정 이벤트 및 데이터를 사용할 수 있습니다.
+contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '6679'
 ht-degree: 7%

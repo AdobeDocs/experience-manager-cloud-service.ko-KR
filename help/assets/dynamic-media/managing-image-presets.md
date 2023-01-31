@@ -1,13 +1,14 @@
 ---
 title: 이미지 사전 설정 관리
 description: 이미지 사전 설정 및 이미지 사전 설정을 만들고, 수정하고, 관리하는 방법에 대해 알아봅니다.
+contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3629'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -98,8 +99,8 @@ PDF 또는 AI 워크플로우를 래스터화하는 인수
 | 프로세스 인수 | 기본 설정 | 설명 |
 |---|---|---|
 | MIME 유형 | application/pdf<br>application/postscript<br>응용 프로그램/illustrator | PDF 또는 Illustrator 문서로 간주되는 문서 MIME 유형 목록입니다. |
-| 최대 너비 | 2048년 | 생성된 미리 보기 표현물의 최대 너비(픽셀 단위)입니다. |
-| 최대 높이 | 2048년 | 생성된 미리 보기 표현물의 최대 높이(픽셀 단위)입니다. |
+| 최대 너비 | 2048 | 생성된 미리 보기 표현물의 최대 너비(픽셀 단위)입니다. |
+| 최대 높이 | 2048 | 생성된 미리 보기 표현물의 최대 높이(픽셀 단위)입니다. |
 | 해결 | 72 | 첫 번째 페이지를 ppi(인치당 픽셀 수)로 래스터화하는 해상도. |
 
 기본 프로세스 인수를 사용하면 PDF/AI 문서의 첫 번째 페이지가 72ppi로 래스터화되고 생성된 미리 보기 이미지의 크기가 2048 x 2048픽셀로 지정됩니다. 일반적인 배포의 경우 해상도를 최소 150ppi 이상으로 높일 수 있습니다. 예를 들어, 300ppi의 미국 문자 크기 문서는 각각 최대 너비 및 높이가 2550 x 3300픽셀이어야 합니다.
@@ -287,7 +288,7 @@ With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails ar
     <ul>
      <li>선택 <strong>없음</strong> 선명하게 하기를 사용하지 않으려면</li>
      <li>선택 <strong>선명 효과 </strong>모든 크기 조절이 수행된 후 이미지에 기본 선명하게 하기 필터를 적용합니다. 선명하게 하면 이미지를 다른 크기로 표시할 때 나타날 수 있는 흐림 효과를 보상하는 데 도움이 됩니다. </li>
-     <li>선택<strong> 언샵 마스크</strong> 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하려면 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. This effect uses the same options as Photoshop’s “Unsharp Mask” filter.</li>
+     <li>선택<strong> 언샵 마스크</strong> 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하려면 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. 이 효과는 Photoshop의 "언샵 마스크" 필터와 동일한 옵션을 사용합니다.</li>
     </ul> <p>in <strong>언샵 마스크</strong>에는 다음 선택 사항이 있습니다.</p>
     <ul>
      <li><strong>금액</strong> - 가장자리 픽셀에 적용된 대비 크기를 제어합니다. 기본 실수 값은 1.0입니다. 고해상도 이미지의 경우 최대 5.0까지 늘릴 수 있습니다. [금액]을 필터 강도 측정에 대해 생각해 보십시오.</li>

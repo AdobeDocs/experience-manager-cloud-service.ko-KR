@@ -1,10 +1,11 @@
 ---
 title: 혼합 미디어 세트
 description: Dynamic Media에서 혼합 미디어 세트를 사용하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 14%
@@ -71,7 +72,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
 ## 에셋 업로드 {#uploading-assets}
 
-먼저 혼합 미디어 세트에 대한 이미지 및 비디오를 업로드하십시오. 사용자는 혼합 미디어 세트 뷰어에서 이미지를 확대할 수 있습니다. 따라서 확대/축소 기능을 염두에 두고 이미지를 선택합니다. 이미지의 크기가 가장 큰 2000픽셀 이상인지 확인하십시오.
+Start by uploading the images and videos for your Mixed Media Sets. 사용자는 혼합 미디어 세트 뷰어에서 이미지를 확대할 수 있습니다. 따라서 확대/축소 기능을 염두에 두고 이미지를 선택합니다. 이미지의 크기가 가장 큰 2000픽셀 이상인지 확인하십시오.
 
 또한 혼합 미디어 세트에 스핀 세트 또는 이미지 세트를 추가하려면 해당 세트도 만듭니다.
 

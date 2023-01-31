@@ -1,9 +1,10 @@
 ---
 title: Flash 뷰어 지원 중단 알림
 description: 2017년 1월 31일부터 Flash 뷰어 플랫폼에 대한 지원이 공식적으로 종료됩니다.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 15%

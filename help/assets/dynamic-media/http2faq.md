@@ -1,16 +1,17 @@
 ---
-title: 콘텐츠 FAQ의 HTTP2 전송
+title: 콘텐츠 FAQ의 HTTP2 게재
 description: HTTP2 콘텐츠 전달에 대해 알아봅니다.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
 
 ---
 
-# 콘텐츠 FAQ의 HTTP2 전송{#http-delivery-of-content-faq}
+# 콘텐츠 FAQ의 HTTP2 게재{#http-delivery-of-content-faq}
 
 Adobe은 컨텐츠의 HTTP/2 게재 가용성을 발표하게 되어 매우 기쁘게 생각합니다. HTTP/2를 사용하는 경우 전반적인 성능 증가가 발생합니다.
 

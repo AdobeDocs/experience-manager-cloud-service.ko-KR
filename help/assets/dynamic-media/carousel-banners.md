@@ -1,10 +1,11 @@
 ---
 title: 회전 배너
 description: Dynamic Media에서 회전 배너를 사용하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4535'
 ht-degree: 1%

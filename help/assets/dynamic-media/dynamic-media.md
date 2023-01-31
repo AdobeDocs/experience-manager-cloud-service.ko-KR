@@ -1,9 +1,10 @@
 ---
 title: Dynamic Media를 사용하여 작업
 description: Dynamic Media을 사용하여 웹, 모바일 및 소셜 사이트에서 소비할 자산을 제공하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 20%
@@ -37,7 +38,7 @@ Dynamic Media 전용 기능에는 다음이 포함됩니다.
 * [비디오](video.md)
 * [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
 * [자산 관리](managing-assets.md)
-* [빠른 보기를 사용하여 사용자 지정 팝업 Windows® 만들기](custom-pop-ups.md)
+* [빠른 보기를 사용하여 사용자 지정 팝업 창 만들기](custom-pop-ups.md)
 
 참조 - [Dynamic Media 설정](administering-dynamic-media.md).
 

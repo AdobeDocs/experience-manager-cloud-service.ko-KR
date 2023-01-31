@@ -1,10 +1,11 @@
 ---
 title: 빠른 보기를 사용하여 맞춤형 팝업 제작
-description: 제품 정보와 함께 팝업 창이 표시되어 구매를 유도하는 전자 상거래 경험에서 기본 Quickview가 어떻게 사용되는지 알아보십시오. 사용자 지정 콘텐츠를 트리거하여 팝업 창에 표시할 수 있습니다."
+description: 제품 정보와 함께 팝업 창이 표시되어 구매를 유도하는 전자 상거래 경험에서 기본 Quickview가 어떻게 사용되는지 알아봅니다. 팝업 창에 표시할 사용자 지정 콘텐츠를 트리거할 수 있습니다.
+contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 2%

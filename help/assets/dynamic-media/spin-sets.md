@@ -1,10 +1,11 @@
 ---
 title: 스핀 세트
 description: Dynamic Media에서 스핀 세트를 사용하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 10%
@@ -37,7 +38,7 @@ ht-degree: 10%
 
 스핀 세트를 사용하여 빠르게 시작하고 실행하려면 다음 단계를 수행합니다.
 
-1. 선택 사항입니다. [배치 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 새 자산 폴더에 적용합니다.
+1. 선택 사항. [배치 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 새 자산 폴더에 적용합니다.
 
    배치 세트 사전 설정을 사용하면 스핀 세트 생성을 자동화할 수 있습니다.
 
@@ -121,7 +122,7 @@ ht-degree: 10%
 
 | 제한 유형 | 우수 사례 | 제한 적용 |
 | --- | --- | --- |
-| 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000년 |
+| 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md).
 

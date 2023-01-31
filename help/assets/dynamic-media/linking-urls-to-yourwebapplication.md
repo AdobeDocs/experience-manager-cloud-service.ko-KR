@@ -1,9 +1,10 @@
 ---
 title: 웹 애플리케이션에 URL 연결
 description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 7%
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 웹 사이트 및 애플리케이션이 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 자산을 게시하면 Dynamic Media에서 자산을 참조하는 URL 문자열을 활성화합니다. 이러한 URL을 테스트하기 위해 웹 브라우저에 붙여넣을 수 있습니다.
 
-URL은 아래와 같은 경우에만 연결합니다 *not* Adobe Experience Manager을 WCM으로 사용. 연결 - 대 포함 - 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우 사용됩니다. Experience Manager을 WCM으로 사용하는 경우, [자산을 페이지에 직접 추가합니다.](adding-dynamic-media-assets-to-pages.md)
+URL은 다음과 같은 경우에만 연결합니다 *not* Adobe Experience Manager을 WCM으로 사용. 연결 - 대 포함 - 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우 사용됩니다. Experience Manager을 WCM으로 사용하는 경우, [자산을 페이지에 직접 추가합니다.](adding-dynamic-media-assets-to-pages.md)
 
 웹 페이지 및 애플리케이션에 이러한 URL 문자열을 배치하려면 Dynamic Media에서 복사합니다.
 

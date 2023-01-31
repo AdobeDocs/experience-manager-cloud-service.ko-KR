@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media 자산 제공
 description: Dynamic Media 자산을 제공하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 11%

@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media의 비디오
 description: 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고서 보기, 비디오에 자막, 자막 또는 장 마커 추가 등과 같은 Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 22718edcfb6d233a1316fcf2546e685b57609e8c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '9349'
 ht-degree: 4%
@@ -132,9 +133,9 @@ Dynamic Media의 비디오는 데스크탑, 태블릿 및 모바일 장치를 �
 
 응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. 자세한 내용은 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
-<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that support this video format at the following [Supported video formats on Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * 다음을 포함하여 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
@@ -244,7 +245,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
-   <td>BlackBerry®</td>
+   <td>BlackBerry&reg;</td>
    <td>HLS</td>
   </tr>
  -->
@@ -337,9 +338,9 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 
 | 속도(Kbps) | 연결 유형 |
 |--- |--- |
-| 256년 | 전화 접속 연결입니다. |
+| 256 | 전화 접속 연결입니다. |
 | 800 | 일반적인 모바일 연결. 이 연결의 경우 3G 경험에 대해 400~최대 800 범위의 데이터 전송률을 타깃팅하십시오. |
-| 2000년 | 일반 광대역 데스크탑 연결. 이 연결의 경우 평균 1200-1500Kbps로 800-2000Kbps 범위의 데이터 속도를 타깃팅합니다. |
+| 2000 | 일반 광대역 데스크탑 연결. 이 연결의 경우 평균 1200-1500Kbps로 800-2000Kbps 범위의 데이터 속도를 타깃팅합니다. |
 | 5000 | 일반적인 고속 광대역 연결 대부분의 소비자는 이 속도로 비디오를 전달할 수 없으므로 이 상위 범위의 인코딩을 사용하지 않는 것이 좋습니다. |
 
 ### 해결 {#resolution}
@@ -366,12 +367,12 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 
 | 해결 | 높이(픽셀) | 화면 크기 |
 |--- |--- |--- |
-| 240p | 240년 | 작은 화면 |
+| 240p | 240 | 작은 화면 |
 | 300p | 300 | 일반적으로 모바일 장치용 작은 화면 |
 | 360p | 360 | 작은 화면 |
 | 480p | 480 | 미디어 화면 |
-| 720p | 720년 | 대형 화면 |
-| 1080p | 1080년 | HD 대형 화면 |
+| 720p | 720 | 대형 화면 |
+| 1080p | 1080 | HD 대형 화면 |
 
 ### Fps(초당 프레임 수) {#fps-frames-per-second}
 
@@ -392,7 +393,7 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
 | 소스 | 1920x1080 | 1 | 1 |
-| 인코딩됨 | 960 x 540 | 2 | 2개 |
+| 인코딩됨 | 960 x 540 | 2 | 2 |
 | 인코딩됨 | 640 x 360 | 3 | 3 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
 
@@ -627,7 +628,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 곧 다시 돌아오실
 
 1. 일반 텍스트 편집기를 사용하여 Google Cloud 설정 구성 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
-1. YouTube 계정 설정 대화 상자로 돌아갑니다. 에서 **[!UICONTROL JSON 구성]** 필드에 JSON 텍스트를 붙여넣습니다.
+1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
 1. 선택 **[!UICONTROL 확인]**.
 
    이제 Experience Manager에서 YouTube 채널을 설정합니다.
@@ -1066,7 +1067,7 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로
 1. Experience Manager에서 WebVTT 캡션 파일을 DAM에 업로드합니다.
 1. 로 이동합니다 *게시됨* 업로드한 캡션 파일과 연결할 비디오 자산입니다.
 
-   URL은 복사에만 사용할 수 있습니다 *after* 먼저 *게시됨* 자산.
+   Remember that URLs are only available to copy *after* you have first *published* the assets.
 
    자세한 내용은 [자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
@@ -1091,7 +1092,7 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로
 >[!NOTE]
 사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장 마커를 지원하지만 타사 비디오 플레이어를 사용하지 않을 수 있습니다.
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 캡션을 만드는 것과 거의 동일한 방식으로 비디오에 대한 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 WebVTT 캡션 파일과 분리되어야 합니다. 캡션과 장을 하나의 WebVTT 파일에 결합할 수 없습니다.
 
@@ -1150,7 +1151,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
        <td>포함된 비디오 뷰어 경험의 경우<br /> </td>
        <td>
        <ol>
-       <li>로 이동합니다 <i>게시됨 </i>업로드한 장 파일과 연결할 비디오 자산입니다. URL은 복사에만 사용할 수 있습니다 <i>after</i> 먼저 <i>게시됨</i> 자산. 자세한 내용은 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">자산 게시.</a></li>
+       <li>로 이동합니다 <i>게시됨 </i>업로드한 장 파일과 연결할 비디오 자산입니다. Remember that URLs are only available to copy <i>after</i> you have first <i>published</i> the assets. 자세한 내용은 <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">자산 게시.</a></li>
        <li>드롭다운 메뉴에서 을(를) 선택한 다음 <strong>뷰어</strong>.</li>
        <li>왼쪽 레일에서 비디오 뷰어 사전 설정 이름을 선택합니다. 비디오 미리 보기가 별도의 페이지에 열립니다.</li>
        <li>왼쪽 레일의 하단에서 을 선택합니다 <strong>포함</strong>.</li>

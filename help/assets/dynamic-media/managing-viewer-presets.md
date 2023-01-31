@@ -1,10 +1,11 @@
 ---
 title: 뷰어 사전 설정 관리
 description: Dynamic Media에서 뷰어 사전 설정을 만들고 관리하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 9%
@@ -69,7 +70,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 * Android™ Smartphone
 * Android™ 태블릿
 
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### 뷰어 사전 설정에 대한 리치 미디어 유형 {#rich-media-types-for-viewer-presets}
 
@@ -577,7 +578,7 @@ Dynamic Media에 만들어 추가한 뷰어 사전 설정을 삭제할 수 있�
 
 1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 선택한 다음 왼쪽 레일에서 를 선택합니다 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산] > [!UICONTROL 뷰어 사전 설정]**.
 1. 뷰어 사전 설정 페이지에서 사전 설정 제목을 선택한 다음, **[!UICONTROL 휴지통]** 아이콘.
-1. 선택 **[!UICONTROL 삭제]**.
+1. **[!UICONTROL 삭제]**&#x200B;를 선택합니다.
 
 ## 자산에 뷰어 사전 설정 적용 {#applying-a-viewer-preset-to-an-asset}
 
@@ -589,7 +590,7 @@ If you have already published both the asset and the selected viewer, the **[!UI
 
    >[!NOTE]
    >
-   >자산과 선택한 뷰어를 모두 이미 게시한 경우 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 뷰어 사전 설정을 선택하면 버튼이 표시됩니다.
+   >If you have already published both the asset and the selected viewer, the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons appear after you select a viewer preset.
 
 1. 자산에 적용하려면 왼쪽 창에서 뷰어 사전 설정을 선택합니다.
 

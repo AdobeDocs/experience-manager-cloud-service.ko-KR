@@ -1,10 +1,11 @@
 ---
 title: 파노라마 이미지
 description: Dynamic Media에서 파노라마 이미지로 작업하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 15%
@@ -17,7 +18,7 @@ ht-degree: 15%
 
 참조 - [뷰어 사전 설정 관리](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![파노라마 이미지2](assets/panoramic-image2.png)
+![panoramic-image2](assets/panoramic-image2.png)
 
 ## 파노라마 이미지 뷰어에서 사용할 자산을 업로드합니다 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 

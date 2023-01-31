@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media 비디오 프로필
 description: Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하도록 최적화되었습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3656'
 ht-degree: 7%
@@ -63,30 +64,30 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
    <td>auto</td>
    <td>360</td>
    <td>예</td>
-   <td>730년</td>
+   <td>730</td>
    <td>30</td>
    <td>Dolby HE-AAC</td>
-   <td>128년</td>
+   <td>128</td>
   </tr>
   <tr>
    <td><p>MP4 H.264(mp4)</p> </td>
-   <td>자동</td>
-   <td>540년</td>
+   <td>auto</td>
+   <td>540</td>
    <td>예</td>
-   <td>2000년<br /> </td>
+   <td>2000<br /> </td>
    <td>30</td>
-   <td>돌비 HE-AAC</td>
-   <td>128년</td>
+   <td>Dolby HE-AAC</td>
+   <td>128</td>
   </tr>
   <tr>
    <td><p>MP4 H.264(mp4)</p> </td>
-   <td>자동</td>
-   <td>720년<br /> </td>
+   <td>auto</td>
+   <td>720<br /> </td>
    <td>예</td>
-   <td>3000년<br /> </td>
+   <td>3000<br /> </td>
    <td>30</td>
-   <td>돌비 HE-AAC</td>
-   <td>128년</td>
+   <td>Dolby HE-AAC</td>
+   <td>128</td>
   </tr>
  </tbody>
 </table>
@@ -385,7 +386,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]** 비디오 프로필을 적용할 폴더로 드래그합니다.
 1. 폴더에서 확인 표시를 선택하여 선택한 다음 선택합니다 **[!UICONTROL 속성]**.
-1. 을(를) 선택합니다 **[!UICONTROL 비디오 프로필]** 탭을 클릭하고 드롭다운 메뉴에서 프로필을 선택한 다음 를 선택합니다 **[!UICONTROL 저장 및 닫기]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 을(를) 선택합니다 **[!UICONTROL 비디오 프로필]** 탭을 클릭하고 드롭다운 메뉴에서 프로필을 선택한 다음 를 선택합니다 **[!UICONTROL 저장 및 닫기]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 다음을 수행할 수 있습니다 [비디오 프로필 처리 작업 진행 상태 모니터링](#monitoring-the-progress-of-an-encoding-job).
@@ -427,4 +428,4 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]** 비디오 프로필을 제거할 폴더로 드래그합니다.
 1. 폴더에서 확인 표시를 선택하여 선택한 다음 선택합니다 **[!UICONTROL 속성]**.
-1. 을(를) 선택합니다 **[!UICONTROL 비디오 프로필]** 탭을 선택하고 **[!UICONTROL 없음]** 드롭다운 메뉴에서 을(를) 선택하고 **[!UICONTROL 저장 및 닫기]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 을(를) 선택합니다 **[!UICONTROL 비디오 프로필]** 탭을 선택하고 **[!UICONTROL 없음]** 드롭다운 메뉴에서 을(를) 선택하고 **[!UICONTROL 저장 및 닫기]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.

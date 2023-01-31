@@ -1,10 +1,11 @@
 ---
 title: 이미지 세트
 description: Dynamic Media에서 이미지 세트를 사용하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 6%
@@ -42,7 +43,7 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 빠르게 시작하고 실행하려면
 
-1. 선택 사항입니다. [배치 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 스핀 세트 이미지가 업로드되는 새 폴더에 적용합니다.
+1. 선택 사항. [배치 집합 사전 설정 만들기](/help/assets/dynamic-media/batch-set-presets-dm.md) 스핀 세트 이미지가 업로드되는 새 폴더에 적용합니다.
 
    배치 세트 사전 설정을 사용하면 이미지 세트 생성을 자동화할 수 있습니다.
 
@@ -140,8 +141,8 @@ Image Sets are designated by a banner with the word `IMAGESET`. 또한 이미지
 
 | 제한 유형 | 우수 사례 | 제한 적용 |
 | --- | --- | --- |
-| 세트당 중복 자산 수 | 중복 없음 | 20년 |
-| 설정당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
+| 세트당 중복 자산 수 | 중복 없음 | 20 |
+| 설정당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md).
 

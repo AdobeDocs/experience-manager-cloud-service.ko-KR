@@ -1,10 +1,11 @@
 ---
 title: 대화형 이미지
 description: Dynamic Media에서 대화형 이미지로 작업하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4176'
 ht-degree: 2%
@@ -64,7 +65,7 @@ Experience Manager Assets 및 Dynamic Media 독립 실행형 을 사용하는 �
 >* 빠른 보기에 트리거하여 이미지에 상호 작용을 추가하려고 합니다.
 >* Experience Manager 구현은 다음을 수행합니다 *not* eCommerce 통합 프레임워크를 사용하여 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져옵니다. 이러한 솔루션에는 IBM® WebSphere® Commerce, Elastic Path, SAP Hybris 또는 Intershop이 포함됩니다.
 >
->Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
+Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
 먼저 핫스팟 데이터를 입력하여 대화형 이미지를 만들 수 있도록 기존 Quickview 구현에서 사용하는 동적 변수를 식별합니다.
 
@@ -220,8 +221,7 @@ Quickview URL 및 그 결과 핫스팟 변수의 다음 예를 생각해 보십�
 자세한 내용은 [경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->경험 조각에 뷰어를 포함할 때 대화형 이미지의 소셜 미디어 공유 도구는 지원되지 않습니다. 대신, 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
+경험 조각에 뷰어를 포함할 때 대화형 이미지의 소셜 미디어 공유 도구는 지원되지 않습니다. 대신, 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만듭니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
 
 현재 작성/편집 세션 중에 페이지의 오른쪽 위 모서리 근처에 있는 실행 취소 및 재실행 옵션이 지원됩니다.
 
@@ -230,8 +230,7 @@ Quickview URL 및 그 결과 핫스팟 변수의 다음 예를 생각해 보십�
 자세한 내용은 [(선택 사항) 대화형 이미지 미리 보기](#optional-previewing-interactive-images).
 
 >[!NOTE]
->
->대화형 이미지 또는 회전 배너의 이미지에 핫스팟을 추가하면 핫스팟이 동일한 메타데이터 위치에 저장됩니다. 이 위치는 대화형 이미지나 회전 배너 여부에 관계없이 이미지의 위치를 기준으로 합니다. 이 기능은 두 뷰어에서 동일한 이미지를 정의된 핫스팟 데이터와 함께 쉽게 다시 사용할 수 있음을 의미합니다.
+대화형 이미지 또는 회전 배너의 이미지에 핫스팟을 추가하면 핫스팟이 동일한 메타데이터 위치에 저장됩니다. 이 위치는 대화형 이미지나 회전 배너 여부에 관계없이 이미지의 위치를 기준으로 합니다. 이 기능은 두 뷰어에서 동일한 이미지를 정의된 핫스팟 데이터와 함께 쉽게 다시 사용할 수 있음을 의미합니다.
 그러나 회전 배너는 핫스팟도 포함될 수 있는 이미지에서 이미지 맵을 지원합니다. 대화형 이미지는 표시되지 않습니다. 동일한 이미지를 사용하는 대화형 이미지나 회전 배너를 만들려는 경우에는 이러한 점을 염두에 두십시오. 대신 동일한 이미지의 별도의 복사본을 사용하여 대화형 이미지와 회전 배너를 만들 수 있습니다.
 참조 - [회전 배너](/help/assets/dynamic-media/carousel-banners.md).
 

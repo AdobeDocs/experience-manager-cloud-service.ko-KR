@@ -1,9 +1,10 @@
 ---
 title: Dynamic Media 문제 해결
 description: Dynamic Media 사용 시 문제 해결 팁.
+contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 1%
@@ -115,7 +116,7 @@ ht-degree: 1%
    <td>비디오를 미리 볼 수 없습니다.</td>
    <td>
     <ul>
-     <li>폴더에 비디오 프로필이 할당되어 있는지 확인합니다(지원되지 않는 파일 형식인 경우). 지원되지 않는 경우에는 이미지만 표시됩니다.</li>
+     <li>폴더에 비디오 프로필이 할당되어 있는지 확인합니다(지원되지 않는 파일 형식). 지원되지 않는 경우에는 이미지만 표시됩니다.</li>
      <li>비디오 프로필에는 AVS 세트를 생성하려면 둘 이상의 인코딩 사전 설정이 포함되어야 합니다(단일 인코딩은 MP4 파일에 대한 비디오 컨텐츠로 처리됨). 지원되지 않는 파일의 경우 처리되지 않은 것으로 처리됨).</li>
      <li>확인 을 통해 비디오 처리가 완료되었는지 확인합니다 <code>dam:scene7FileAvs</code> 의 <code>dam:scene7File</code> 메타데이터.</li>
     </ul> </td>

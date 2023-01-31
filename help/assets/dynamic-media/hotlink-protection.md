@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media의 핫링크 보호 활성화
 description: Dynamic Media에서 핫링크 보호를 활성화하는 방법을 알아봅니다.
+contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 9%

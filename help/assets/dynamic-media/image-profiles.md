@@ -1,10 +1,11 @@
 ---
 title: Dynamic Media 이미지 프로필
 description: 언샵 마스크, 스마트 자르기 또는 스마트 견본 또는 둘 다에 대한 설정이 포함된 Dynamic Media 이미지 프로필을 만드는 방법을 알아봅니다. 그런 다음 프로필을 이미지 자산 폴더에 적용합니다.
+contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 163b6b19f0401213813d8de30caf8144855b4e4c
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3488'
 ht-degree: 8%
