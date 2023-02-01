@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
+source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 100%
+source-wordcount: '1050'
+ht-degree: 96%
 
 ---
 
@@ -99,6 +99,12 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 ## 지속 쿼리에 대한 캐시 관리 {#managing-cache}
 
 [지속 쿼리](/help/headless/graphql-api/persisted-queries.md)는 Dispatcher 및 CDN 계층에서 캐시될 수 있어 궁극적으로 요청하는 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다. 기본적으로 AEM은 기본 TTL(Time to Live)에 따라 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다.
+
+>[!NOTE]
+>
+>Dispatcher에 대한 사용자 지정 재작성 규칙은 AEM 게시의 기본값을 무시할 수 있습니다.
+>
+>위치 일치 패턴을 기반으로 Dispatcher에서 TTL 기반 캐시 제어 헤더를 보내는 경우 필요한 경우 제외할 수 있습니다 `/graphql/execute.json/*` 를 반환합니다.
 
 GraphQL을 사용하여 HTTP 캐시 헤더를 구성하여 개별 지속 쿼리에 대해 이러한 매개변수를 제어할 수 있습니다.
 
