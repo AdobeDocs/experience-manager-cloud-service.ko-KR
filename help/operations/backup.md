@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 백업 및 복원
 description: AEM as a Cloud Service 백업 및 복원
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 12e747ff73e9416775a3f26040ac7e15c21505ec
+source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '515'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ AEM as a Cloud Service 지원:
 
 모든 경우 사용자 지정 코드 버전은 복원 지점 이전에 마지막으로 성공한 배포에서 가져옵니다.
 
-RTO(복구 시간 목표)는 다를 수 있지만 일반적인 지침으로서, 복구 시퀀스는 저장소 크기와 같은 여러 요인에 따라 평균 60~90분 정도 소요됩니다.
+RTO(복구 시간 목표)는 다를 수 있지만 일반적인 지침으로서, 복구 시퀀스는 저장소 크기와 같은 여러 요인에 따라 평균 60~90분 정도 소요됩니다. 미리 보기 환경 및 다중 영역 게시자는 복원 시간 목표를 확장할 수 있습니다.
 
 복원 후 AEM 버전이 최신 버전으로 업데이트됩니다.
 
