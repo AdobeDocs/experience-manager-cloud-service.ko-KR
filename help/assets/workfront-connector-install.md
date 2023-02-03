@@ -4,9 +4,9 @@ description: 설치  [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 6e1408abde71c5400adaeaea130e4b7f9287169a
+source-git-commit: 68f84de83873029f7cd16cb9ed70f916170cb566
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '635'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 추가 기능을 설치하려면 다음을 수행하십시오 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]다음 단계를 수행합니다.
 
-1. 에서 향상된 커넥터를 다운로드합니다. [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. 에서 향상된 커넥터를 다운로드합니다. [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
 1. [액세스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) Cloud Manager에서 AEM as a Cloud Service 저장소를 복제하고
 
