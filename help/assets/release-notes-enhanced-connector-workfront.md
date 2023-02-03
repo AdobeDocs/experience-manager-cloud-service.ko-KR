@@ -2,9 +2,9 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '987'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,32 @@ ht-degree: 1%
 
 ## 릴리스 일자 {#release-date}
 
-최신 버전 1.9.6의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2022년 12월 09일입니다.
+최신 버전 1.9.7의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2023년 2월 2일입니다.
 
 ## 릴리스 특징 {#release-highlights}
 
-최신 버전의 [!DNL Workfront for Experience Manager enhanced connector] 에는 다음과 같은 개선 사항 및 버그 수정 사항이 포함되어 있습니다.
+최신 버전의 [!DNL Workfront for Experience Manager enhanced connector] 다음 업데이트를 포함합니다.
+
+* 1.9.6 릴리스를 설치한 후 메타데이터 편집기에 Workfront 사용자 지정 양식 속성이 나열되지 않습니다.
+
+* 개발 콘솔이 표시됩니다 `/content/dam/jcr:content/metadata/wfProjectURL not found` Workfront enhanced connector를 설치하고 Assets 홈 페이지를 연 후 오류 메시지가 표시됩니다.
+
+
+>[!IMPORTANT]
+>
+>Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.7 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
+
+## 알려진 문제 {#known-issues}
+
+* AEM 6.4로 프로젝트 연결 폴더를 구성하는 동안 Experience Manager은 **[!UICONTROL 하위 폴더]** 및 **[!UICONTROL 포트폴리오를 사용하여 프로젝트에서 연결된 폴더 만들기]** 필드. 에 대한 값 **[!UICONTROL 하위 폴더]** 필드 업데이트 **[!UICONTROL 정의되지 않음]** 및 **[!UICONTROL 포트폴리오를 사용하여 프로젝트에서 연결된 폴더 만들기]** 필드 업데이트 **[!UICONTROL 기본 Portfolio]** 구성을 저장한 후 자동으로 수행합니다.
+
+* 클래식 Workfront 경험을 사용하는 경우 **[!UICONTROL 보내기]** 선택 사항은 **[!UICONTROL 자세히]** 드롭다운 목록에서 Experience Manager 내에서 대상 대상을 선택할 수 없습니다. 다음 **[!UICONTROL 보내기]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록. 다음 **[!UICONTROL 보내기]** 옵션이 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
+
+## 이전 릴리스 {#previous-releases}
+
+### 2022년 12월 릴리스 {#december-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 2009년 12월 릴리스된 버전 1.9.6에는 다음 업데이트가 포함됩니다.
 
 **개선 사항**
 
@@ -36,18 +57,6 @@ ht-degree: 1%
 * 문서 버전 메타데이터는 Workfront과 Experience Manager 간에 적절히 동기화되지 않습니다.
 * 폴더가 글로벌 구성에 정의가 없는 스키마를 사용하는 경우 Workfront의 Experience Manager에 연결된 폴더를 만들 때 문제가 발생합니다.
 * 예상보다 긴 로드 시간으로 인해 임의의 필드를 클릭하면 메타데이터 스키마 편집기 양식이 응답하지 않습니다. 이 문제를 해결하기 위해 사용자 지정 양식에 대한 특정 OSGi 구성을 추가했습니다. 메타데이터 스키마 편집기에 추가하는 사용자 지정 양식의 이름은 로그에서 사용할 수 있습니다.
-
->[!IMPORTANT]
->
->Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.6 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
-
-## 알려진 문제 {#known-issues}
-
-* AEM 6.4로 프로젝트 연결 폴더를 구성하는 동안 Experience Manager은 **[!UICONTROL 하위 폴더]** 및 **[!UICONTROL 포트폴리오를 사용하여 프로젝트에서 연결된 폴더 만들기]** 필드. 에 대한 값 **[!UICONTROL 하위 폴더]** 필드 업데이트 **[!UICONTROL 정의되지 않음]** 및 **[!UICONTROL 포트폴리오를 사용하여 프로젝트에서 연결된 폴더 만들기]** 필드 업데이트 **[!UICONTROL 기본 Portfolio]** 구성을 저장한 후 자동으로 수행합니다.
-
-* 클래식 Workfront 경험을 사용하는 경우 **[!UICONTROL 보내기]** 선택 사항은 **[!UICONTROL 자세히]** 드롭다운 목록에서 Experience Manager 내에서 대상 대상을 선택할 수 없습니다. 다음 **[!UICONTROL 보내기]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록. 다음 **[!UICONTROL 보내기]** 옵션이 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
-
-## 이전 릴리스 {#previous-releases}
 
 ### 2022년 11월 릴리스 {#november-2022-release}
 
