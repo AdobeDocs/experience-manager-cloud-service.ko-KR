@@ -1,15 +1,17 @@
 ---
 title: 의 최신 유지 관리 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 description: 의 최신 유지 관리 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 23c4b815c0485286806ca76796460ef4fd81951c
+source-git-commit: bb310f87a3bbc114e971dc2dca5eab6a028d140a
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 4%
+source-wordcount: '153'
+ht-degree: 3%
 
 ---
 
 
 # 유지 관리 릴리스 노트 {#maintenance-release-notes}
+
+다음 섹션에서는 Experience Manager as a Cloud Service의 최신 유지 관리 릴리스에 대한 기술 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 10912 {#release-10912}
 
