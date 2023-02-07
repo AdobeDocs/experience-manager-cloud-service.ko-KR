@@ -4,10 +4,10 @@ description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
 workflow-type: tm+mt
-source-wordcount: '2070'
-ht-degree: 100%
+source-wordcount: '2066'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >[!NOTE]
 >
 >**콘텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
->* **콘텐츠 조각**&#x200B;은 텍스트, 숫자 및 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있는 에디토리얼 콘텐츠입니다. 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃을 포함하지 않는 순수 콘텐츠입니다.
+>* **컨텐츠 조각** 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 편집 가능한 컨텐츠입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 콘텐츠, 즉 웹 페이지 조각입니다.
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.

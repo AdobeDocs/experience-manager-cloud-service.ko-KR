@@ -2,9 +2,9 @@
 title: 콘텐츠 조각을 사용하여 작업 (자산 - 컨텐츠 조각)
 description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조각을 사용하여 페이지 작성 및 Headless 게재에 이상적인 페이지 독립적 콘텐츠를 디자인하고, 작성하고, 선별하고, 사용하는 방법에 대해 알아봅니다.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
+source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
 workflow-type: tm+mt
-source-wordcount: '2075'
+source-wordcount: '2071'
 ht-degree: 93%
 
 ---
@@ -45,14 +45,14 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - 조각에 Markdown 구문 사용
 * [관련 콘텐츠 사용](/help/assets/content-fragments/content-fragments-assoc-content.md) - 관련 콘텐츠 추가
 * [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md) - 조각 속성 보기 및 편집
-* 사용 [GraphQL과 함께 컨텐츠를 제공할 컨텐츠 조각](/help/assets/content-fragments/content-fragments-graphql.md) 을 사용하도록 선택할 수 있습니다. 이 작업에 도움이 되도록 미리 볼 수 있습니다 [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md).
+* 사용 [컨텐츠 조각을 GraphQL과 함께 사용하여 컨텐츠를 전달합니다](/help/assets/content-fragments/content-fragments-graphql.md) 을 사용하도록 선택할 수 있습니다. 이 작업에 도움이 되도록 미리 볼 수 있습니다 [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
 >이들 페이지는 다음과 함께 읽을 수 있습니다.
 >
 >* [콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
->* [콘텐츠 조각 사용자 지정 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
+>* [콘텐츠 조각 사용자 정의 및 확장](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [콘텐츠 조각 렌더링용 구성 요소 구성](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
@@ -60,8 +60,8 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 통신 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
-* 물리적 채널 예를 들어 데스크탑, 모바일 등이 있습니다.
-* 실제 채널에서의 전달 형식 예를 들어, 데스크탑의 &quot;제품 세부 사항 페이지&quot;, &quot;제품 카테고리 페이지&quot; 또는 모바일의 &quot;모바일 웹&quot;, &quot;모바일 앱&quot; 등이 있습니다.
+* 물리적 채널 - 예: 데스크탑, 모바일
+* 실제 채널에서의 게재 형태 - 예: 데스크탑의 “제품 세부 정보 페이지”, “제품 범주 페이지” 또는 모바일의 “모바일 웹”, “모바일 앱”
 
 그러나 대개 모든 채널에 대해 동일한 콘텐츠를 사용하고 싶지 않을 것이므로 특정 채널에 따라 콘텐츠를 최적화해야 합니다.
 
@@ -79,7 +79,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >[!NOTE]
 >
 >**콘텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
->* **콘텐츠 조각**&#x200B;은 텍스트, 숫자 및 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있는 에디토리얼 콘텐츠입니다. 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃을 포함하지 않는 순수 콘텐츠입니다.
+>* **컨텐츠 조각** 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 편집 가능한 컨텐츠입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 콘텐츠, 즉 웹 페이지 조각입니다.
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.

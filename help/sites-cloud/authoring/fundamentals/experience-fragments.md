@@ -2,10 +2,10 @@
 title: 경험 조각
 description: Adobe Experience Manager as a Cloud Service 경험 조각을 사용하여 경험을 재사용이 가능하고 및 유연하게 만듭니다.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
-workflow-type: ht
-source-wordcount: '1971'
-ht-degree: 100%
+source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+workflow-type: tm+mt
+source-wordcount: '2064'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,16 @@ Adobe Experience Manager as a Cloud Service 내 경험 조각은
 경험 조각은 복사/붙여넣기가 필요하지 않습니다.
 * 경험 조각을 사용하여 Headless CMS 사용 사례를 지원할 수 있습니다.
 작성자는 작성에만 AEM을 사용하고 고객에게 게재하는 데에는 사용하지 않습니다. 서드파티 시스템/터치포인트는 이러한 경험을 소모한 다음 최종 사용자에게 게재합니다.
+
+>[!NOTE]
+>
+>**[콘텐츠 조각](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** 및 **경험 조각**&#x200B;은 AEM 내의 다양한 기능입니다.
+>* **컨텐츠 조각** 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 편집 가능한 컨텐츠입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
+>* **경험 조각**&#x200B;은 전체적으로 배치된 콘텐츠, 즉 웹 페이지 조각입니다.
+>
+>경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
+>
+>자세한 내용은 [AEM의 콘텐츠 조각 및 경험 조각 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -346,11 +356,11 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    >**개인화** 탭에서 선택한 **ContextHub 경로**&#x200B;는 다음 중 하나여야 합니다.
    >
    >* 조각이 렌더링될 페이지에 대해 구성된 것과 동일한 경로
-   >또는:
+      >또는:
    >* 페이지에 대해 구성된 ContextHub에 정의된 저장소의 하위 집합을 포함하는 경로
+
    >
    > 
-
 **개인화** 탭에서 선택한 **세그먼트 경로**&#x200B;는 다음 중 하나여야 합니다.
    * 조각이 렌더링될 페이지에 대해 구성된 것과 동일한 경로
 또는
@@ -381,8 +391,8 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    속성은 여러 탭에서 사용할 수 있습니다.
 
    >[!CAUTION]
-   >이러한 탭은 경험 조각 콘솔에서 **속성**&#x200B;을 열면 표시됩니다.
-   >경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)이 표시됩니다.
+   이러한 탭은 경험 조각 콘솔에서 **속성**&#x200B;을 열면 표시됩니다.
+   경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-cloud/authoring/fundamentals/page-properties.md)이 표시됩니다.
 
    ![경험 조각 속성](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -411,7 +421,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌디션에 액세스할 수 있습니다.
 
 >[!NOTE]
->브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
+브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
 ## 경험 조각 게시 {#publishing-experience-fragments}
 
