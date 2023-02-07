@@ -2,18 +2,14 @@
 title: 서버측 API용 액세스 토큰 생성
 description: 보안 JWT 토큰을 생성하여 타사 서버와 AEM as a Cloud Service 간의 통신을 용이하게 하는 방법을 알아봅니다
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 41458eb1fba12e8ef45a32d3bb6fc5dd732f78ec
+source-git-commit: 9f7157be1a9e7b635b9c7d0f0c653646e6f1b43b
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2132'
 ht-degree: 1%
 
 ---
 
 # 서버측 API용 액세스 토큰 생성 {#generating-access-tokens-for-server-side-apis}
-
->[!AVAILABILITY]
->
->Adobe은 이 문서에 설명된 새로운 다중 자격 증명 및 자격 증명 해지 기능을 점진적으로 실행하는 중입니다. 조직의 AEM 개발자 콘솔에서 통합 탭을 선택하면 화면이 아래 스크린샷과 다르게 나타나는 경우 새 변경 사항이 아직 조직에 롤아웃되지 않았음을 의미합니다. 이 경우 [이전 설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
 
 일부 아키텍처에서는 AEM 인프라 외부의 서버에 호스팅된 애플리케이션에서 AEM as a Cloud Service을 호출하는 데 사용합니다. 예를 들어 서버를 호출한 다음 AEM as a Cloud Service에 API 요청을 수행하는 모바일 애플리케이션입니다.
 
