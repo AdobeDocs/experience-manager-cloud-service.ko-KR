@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에서 캐싱
 description: AEM as a Cloud Service에서 캐싱
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
+source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
      </LocationMatch>
    ```
 
-* 비공개로 설정된 HTML 컨텐츠는 CDN에서 캐시되지 않지만, [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR) 는 구성된 것으로, 인증된 사용자만 컨텐츠를 제공할 수 있도록 효율적으로 구성됩니다.
+* 비공개로 설정된 HTML 컨텐츠는 CDN에서 캐시되지 않지만, [권한 구분 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko-KR) 가 구성되어 있어서 인증된 사용자만 컨텐츠를 제공할 수 있도록 합니다.
 
    >[!NOTE]
    >다음을 포함한 다른 메서드 [dispatcher-ttl AEM ACS Commons 프로젝트](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)은 값을 성공적으로 재정의하지 않습니다.
