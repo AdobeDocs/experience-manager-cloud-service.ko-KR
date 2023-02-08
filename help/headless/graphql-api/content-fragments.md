@@ -3,9 +3,9 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
-workflow-type: ht
-source-wordcount: '4174'
+source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
+workflow-type: tm+mt
+source-wordcount: '4173'
 ht-degree: 100%
 
 ---
@@ -470,8 +470,6 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 ```
 
 필드의 내용을 `some text` 값과 비교하고 내용이 값과 동일하면 성공한 것입니다. 그렇지 않으면 해당 표현식은 실패한 것입니다.
-
-다음
 
 연산자를 사용하여 필드를 특정 값과 비교할 수 있습니다.
 
