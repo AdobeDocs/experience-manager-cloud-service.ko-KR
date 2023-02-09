@@ -4,10 +4,10 @@ description: 클라우드 리소스를 구성한 후에는 AEM 제품 프로필�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 96%
 
 ---
 
@@ -33,6 +33,10 @@ AEM을 사용하려면 팀원이 하나 이상의 AEM 제품 프로필에 할당
 * `AEM Administrators` - 이 그룹에는 고급 기능 또는 AEM을 담당하는 사용자가 포함됩니다.
 
 AEM 제품 프로필에 할당된 모든 사용자는 Cloud Manager에 대한 읽기 전용 액세스 권한도 갖게 됩니다. Cloud Manager에 대한 쓰기 액세스 권한은 다른 제품 프로필을 통해 부여될 수 있습니다.
+
+>[!CAUTION]
+>
+>AEM 관리자 또는 AEM 사용자라는 제품 프로필을 편집하거나 삭제하지 마십시오. 이러한 프로필 이름을 편집하면 AEM 클라우드 인스턴스에 로그인하지 않을 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 
