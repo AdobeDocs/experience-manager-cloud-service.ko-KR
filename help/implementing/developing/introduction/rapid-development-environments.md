@@ -2,9 +2,9 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
 hidefromtoc: true
-source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
+source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2664'
 ht-degree: 6%
 
 ---
@@ -201,9 +201,13 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 원격 저장소를 참조할 수도 있습니다(선택 사항).
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 기본적으로 아티팩트는 작성 계층과 게시 계층 모두에 배포되지만, &quot;-s&quot; 플래그를 사용하여 특정 계층을 타깃팅할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>WKND 프로젝트에 대한 Dispatcher 구성은 위의 컨텐츠 패키지 설치를 통해 배포되지 않습니다. &quot;Apache/Dispatcher 구성 배포&quot; 단계에 따라 별도로 배포해야 합니다.
 
 <u>OSGI 구성 배포</u>
 
