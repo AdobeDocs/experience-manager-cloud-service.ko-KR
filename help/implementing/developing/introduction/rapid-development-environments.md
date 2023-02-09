@@ -2,9 +2,9 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2634'
 ht-degree: 6%
 
 ---
@@ -406,6 +406,20 @@ Cloud Manager를 사용하여 환경을 관리하는 방법에 대한 자세한 
 >[!NOTE]
 >
 >RDE OSGI 구성은 번들의 `dev` 실행 모드.
+
+RDE는 /apps 아래의 install.rde 폴더(또는 install.author.rde 또는 install.publish.rde)에 컨텐츠를 설치할 수 있다는 점에서 다른 환경과 구별됩니다. 이를 통해 내용을 git에 커밋하고 명령줄 도구를 사용하여 RDE에 전달할 수 있습니다.
+
+## 컨텐츠로 채우기 {#populating-content}
+
+RDE를 재설정하면 모든 컨텐츠가 제거되므로, 원하는 경우 컨텐츠를 추가하려면 명시적 작업을 수행해야 합니다. 가장 좋은 방법으로서, RDE에서 기능을 검증하거나 디버깅하기 위해 테스트 컨텐츠로 사용할 컨텐츠 세트를 어셈블하는 것이 좋습니다. 다음 몇 가지 가능한 방법으로 RDE를 해당 컨텐츠로 채울 수 있습니다.
+
+1. 명령줄 도구를 사용하여 컨텐츠 패키지를 RDE에 명시적으로 동기화합니다
+
+1. /apps 아래의 install.rde 폴더에 샘플 컨텐츠를 git에 넣고 커밋한 다음 명령줄 도구 를 사용하여 중요한 컨텐츠 패키지를 RDE에 동기화합니다.
+
+1. 패키지 관리자 사용
+
+컨텐츠 패키지를 동기화할 때는 1GB로 제한됩니다.
 
 ## 로깅 {#logging}
 
