@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 5%
+source-wordcount: '2227'
+ht-degree: 4%
 
 ---
 
@@ -33,40 +33,43 @@ ht-degree: 5%
 >
 >[!UICONTROL Experience Manager Forms] 은 관계형 데이터베이스를 지원하지 않습니다.
 
-<!-- ## Configure relational database {#configure-relational-database}
+## 관계형 데이터베이스 구성 {#configure-relational-database}
 
-You can configure relational databases using [!DNL Experience Manager] Web Console Configuration. Do the following:
+### 전제 조건
 
-1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
-1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Tap to open the configuration in edit mode.
-1. In the configuration dialog, specify the details for the database you want to configure, such as:
+을 사용하여 관계형 데이터베이스를 구성하기 전에 [!DNL Experience Manager] 웹 콘솔 구성에서는 다음을 수행해야 합니다. [cloud manager API를 통해 고급 네트워킹 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)로 설정되면 기본적으로 포트가 비활성화되어 있습니다.
 
-    * Name of the data source
-    * Data source service property that stores the data source name
-    * Java class name for the JDBC driver
-    * JDBC connection URI
-    * Username and password to establish connection with the JDBC driver
+### 관계형 데이터베이스를 구성하는 단계
+
+을 사용하여 관계형 데이터베이스를 구성할 수 있습니다 [!DNL Experience Manager] 웹 콘솔 구성. 다음을 수행합니다.
+
+1. 이동 [!DNL Experience Manager] 웹 콘솔 `https://server:host/system/console/configMgr`.
+1. 찾기 **[!UICONTROL Day Commons JDBC 접속 풀]** 구성. 편집 모드에서 구성을 열려면 탭합니다.
+<br>
+
+![JDBC 커넥터 풀](/help/forms/assets/jdbc_connector.png)
+<br>
+1. 구성 대화 상자에서 다음과 같이 구성할 데이터베이스에 대한 세부 정보를 지정합니다.
+
+   * JDBC 드라이버의 Java 클래스 이름
+   * JDBC 연결 URI
+   * JDBC 드라이버와의 연결을 설정하기 위한 사용자 이름 및 암호
+   * SQL SELECT 쿼리를 **[!UICONTROL 유효성 검사 쿼리]** 풀에서 연결을 확인하는 필드입니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 데이터베이스를 기준으로 다음 중 하나를 지정합니다.
+      * 선택 1(MySQL 및 MS SQL)
+      * 이중(Oracle)에서 1을 선택합니다
+   * 을(를) 선택합니다 **기본적으로 읽기 전용** 수정할 수 없도록 확인란을 선택합니다.
+   * 선택 **기본적으로 자동 커밋** 변경 사항을 자동으로 커밋하는 확인란을 선택합니다.
+   * 풀 크기 및 풀 대기 시간(밀리초)을 지정합니다.
+   * 데이터 소스의 이름
+   * 데이터 소스 이름을 저장하는 데이터 소스 서비스 속성
 
    >[!NOTE]
    >
-   >Ensure that you encrypt sensitive information like passwords before configuring the data source. To encrypt:
-   >
-   >    
-   >    
-   >    1. Go to https://'[server]:[port]'/system/console/crypto.
-   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
-   >    
-   >    
-   >    
-   >The encrypted text appears in the Protected Text field that you can specify in the configuration.
+   > 참조 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html#mysql-driver-dependencies) 를 참조하십시오.
 
-1. Enable **[!UICONTROL Test on Borrow]** or **[!UICONTROL Test on Return]** to specify that the objects are validated before being borrowed or returned from and to the pool, respectively.
-1. Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+1. 탭 **[!UICONTROL 저장]** 구성을 저장합니다.
 
-    * SELECT 1 (MySQL and MS SQL) 
-    * SELECT 1 from dual (Oracle)
-
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+이제 양식 데이터 모델과 함께 구성된 관계형 데이터베이스를 사용할 수 있습니다.
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -113,9 +116,9 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 
 ## RESTful 웹 서비스 구성 {#configure-restful-web-services}
 
-RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) JSON 또는 YAML 형식으로 [!DNL Swagger] 정의 파일입니다. 에서 RESTful 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service, [!DNL Swagger] 파일([Swagger 버전 2.0](https://swagger.io/specification/v2/))을 클릭하여 파일을 호스팅할 URL을 지정합니다.
+RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) JSON 또는 YAML 형식으로 [!DNL Swagger] 정의 파일입니다. 에서 RESTful 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service, [!DNL Swagger] 파일([Swagger 버전 2.0](https://swagger.io/specification/v2/)) 또는 [!DNL Swagger] 파일([Swagger 버전 3.0](https://swagger.io/specification/v3/))을 클릭하여 파일을 호스팅할 URL을 지정합니다.
 
-RESTful 서비스를 구성하려면 다음을 수행하십시오.
+### Open API 사양 버전 2.0에 대한 RESTful 서비스 구성 {#configure-restful-services-swagger-version2.0}
 
 1. 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.
 
@@ -125,7 +128,7 @@ RESTful 서비스를 구성하려면 다음을 수행하십시오.
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
    * 에서 URL 또는 파일 을 선택합니다 [!UICONTROL Swagger 소스] 드롭다운 및 그에 따라 [!DNL Swagger URL] 변환 후[!DNL  Swagger] 정의 파일 또는 업로드 [!DNL Swagger] 파일을 로컬 파일 시스템에서 가져옵니다.
-   * 기준[!DNL  Swagger] 소스 입력, 다음 필드는 값으로 미리 채워집니다.
+   * 기준[!DNL  Swagger] 소스 입력. 다음 필드는 값으로 미리 채워집니다.
 
       * 구성표: REST API에서 사용하는 전송 프로토콜입니다. 드롭다운 목록에 표시되는 체계 유형의 수는 [!DNL Swagger] 소스.
       * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
@@ -138,6 +141,33 @@ RESTful 서비스를 구성하려면 다음을 수행하십시오.
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 탭 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
+
+### RESTful 서비스 Open API Specification 버전 2.0 구성 {#configure-restful-services-swagger-version3.0}
+
+1. 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.
+
+   자세한 내용은 [클라우드 서비스 구성에 대한 폴더 구성](configure-data-sources.md#cloud-folder) 클라우드 서비스 구성용 폴더 만들기 및 구성에 대한 자세한 내용은 을 참조하십시오.
+
+1. 탭 **[!UICONTROL 만들기]** 열다 **[!UICONTROL 데이터 소스 구성 만들기 마법사]**. 구성 이름과 선택적으로 제목을 지정하고 **[!UICONTROL RESTful 서비스]** 에서 **[!UICONTROL 서비스 유형]** 드롭다운, 원하는 경우 구성에 대한 축소판 이미지를 찾아 선택한 다음 탭합니다 **[!UICONTROL 다음]**.
+1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
+
+   * 에서 URL 또는 파일 을 선택합니다 [!UICONTROL Swagger 소스] 드롭다운 및 그에 따라 [!DNL Swagger 3.0 URL] 변환 후[!DNL  Swagger] 정의 파일 또는 업로드 [!DNL Swagger] 파일을 로컬 파일 시스템에서 가져옵니다.
+   * 기준[!DNL  Swagger] 소스 입력 시 서버 이름이 자동으로 나타납니다.
+   * 인증 유형(없음, OAuth2.0, 기본 인증, API 키 또는 사용자 지정 인증)을 선택하여 RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
+
+   선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키의 값을 지정합니다. API 키는 요청 헤더로 또는 쿼리 매개 변수로 보낼 수 있습니다. 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록에서 헤더 또는 쿼리 매개 변수의 이름을 지정합니다 **[!UICONTROL 매개 변수 이름]** 그에 따라 필드가 표시됩니다.
+
+   <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+
+1. 탭 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
+
+RESTful 서비스 Swagger 버전 3.0에서 지원하지 않는 작업 중 일부는 다음과 같습니다.
+* 콜백
+* 임의
+* 원격 참조
+* 단일 작업에 대한 다른 MIME 유형에 대한 다른 요청 본문
+
+다음을 의미할 수 있습니다 [OpenAPI 3.0 사양](https://swagger.io/specification/v3/) 자세한 정보
 
 ### 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 
@@ -256,7 +286,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other’s identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.

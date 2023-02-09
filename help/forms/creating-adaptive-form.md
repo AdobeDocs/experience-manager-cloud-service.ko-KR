@@ -5,17 +5,22 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
-# 적응형 양식 만들기 {#creating-an-adaptive-form}
+# 적응형 양식 만들기(기초 구성 요소) {#creating-an-adaptive-form}
 
 
 적응형 Forms을 사용하면 매력적인 반응형, 동적 및 적응형 양식을 만들 수 있습니다. AEM Forms은 적응형 Forms을 빠르게 작성할 수 있는 비즈니스 사용자에게 친숙한 마법사를 제공합니다. 마법사에는 적응형 양식을 만들기 위해 사전 구성된 템플릿, 스타일 지정, 필드 및 제출 옵션을 쉽게 선택할 수 있는 빠른 탭 탐색 기능이 있습니다.
+
+>[!NOTE]
+>
+> 이 문서에서는 적응형 양식을 만드는 이전 접근 방식을 설명합니다. 최신 접근 방식을 기반으로 적응형 Forms을 만들려면 다음을 참조하십시오 [적응형 양식 만들기(핵심 구성 요소)](creating-adaptive-form.md).
+
 
 <!-- 
 
@@ -39,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option don’t use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
 ## 전제 조건
 
@@ -54,6 +59,8 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **권한**: 사용자를 [!DNL forms-users] 적응형 양식을 만들 수 있는 권한을 그들에게 제공하기 위한 것입니다. 양식의 특정 사용자 그룹에 대한 자세한 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md).
 
+## 적응형 양식 만들기(기초 구성 요소) {#create-an-adaptive-form-foundation-components}
+
 1. 액세스 [!DNL Experience Manager Forms] 작성자 인스턴스. 클라우드 인스턴스 또는 로컬 개발 인스턴스일 수 있습니다.
 
 1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다.
@@ -67,15 +74,19 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
       >[!NOTE]
       >
-      > 만들 수도 있습니다 [!UICONTROL 기록 문서] 적응형 양식 편집기를 사용한 템플릿. 자세한 내용은 [적응형 양식 편집기의 레코드 지원 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > 만들 수도 있습니다 [!UICONTROL 기록 문서] 적응형 Forms 편집기를 사용한 템플릿. 자세한 내용은 [적응형 양식 편집기의 레코드 지원 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * 정적 템플릿을 선택하면 데이터, 스타일, 제출, 전달 및 미리 보기 옵션을 사용할 수 없습니다. 새 적응형 양식을 만들 때는 편집 가능한 템플릿을 사용하는 것이 좋습니다.
 
-1. 스타일 탭에서 테마를 선택합니다.
+1. 에서 **[!UICONTROL 스타일]** 탭에서 테마를 선택합니다.
+
    * 선택한 서식 파일이 테마를 지정하면 마법사에서 테마가 자동으로 선택됩니다. 스타일 탭에서 다른 테마를 선택할 수도 있습니다.
    * 선택한 서식 파일에서 테마를 지정하지 않으면 [스타일] 탭을 사용하여 테마를 선택할 수 있습니다. 다음 **[!UICONTROL 만들기]** 테마를 선택한 후에만 단추가 활성화됩니다.
-1. (선택 사항) 데이터 탭에서 데이터 모델을 선택합니다.
+
+1. (선택 사항)에서 **[!UICONTROL 데이터]** 탭에서 데이터 모델을 선택합니다.
+
    * **양식 데이터 모델**: A [양식 데이터 모델](data-integration.md) 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식에 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서 데이터를 가져오고 쓰는 작업이 포함된 경우 양식 데이터 모델 을 선택합니다.
+
    * **JSON 스키마**: [JSON 스키마](adaptive-form-json-schema-form-model.md) 조직의 백엔드 시스템에서 데이터를 만들거나 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 적응형 양식에 동적 컨텐츠를 추가할 수 있습니다. 스키마의 요소는 적응형 Forms을 작성할 때 컨텐츠 브라우저의 데이터 모델 개체 탭에서 사용할 수 있으며, 모든 필드가 새로 만든 적응형 양식에 추가됩니다.
 
    기본적으로 데이터 모델의 모든 필드가 선택됩니다. 적응형 양식을 만들면 선택한 모든 데이터 모델 필드가 해당 적응형 양식 구성 요소로 변환됩니다. 마법사는 적응형 양식에 포함해야 하는 필드만 선택하는 확인란을 제공합니다.
@@ -86,7 +97,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    
    -->
 
-1. 제출 탭에서 제출 작업을 선택합니다.
+1. 에서 **[!UICONTROL 제출]** 탭에서 제출 작업을 선택합니다.
 
    * 템플릿을 선택하면 템플릿에 지정된 제출 작업이 자동으로 선택됩니다. 제출 탭에서 다른 제출 작업을 선택할 수 있습니다. 다음 **[!UICONTROL 제출]** 탭에는 사용 가능한 모든 제출 작업이 표시됩니다.
 
@@ -176,3 +187,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 탭 ![저장](/help/forms/assets/check-button.png) 속성을 저장합니다.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
+
+>[!NOTE]
+>
+> 적응형 양식을 템플릿으로 저장할 수도 있습니다. 자세한 내용은 [적응형 양식을 사용하여 템플릿 만들기](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).

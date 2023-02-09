@@ -1,11 +1,10 @@
 ---
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
-hidefromtoc: true
-source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 6%
+source-wordcount: '2903'
+ht-degree: 5%
 
 ---
 
@@ -450,3 +449,20 @@ RDE는 라이센스가 있는 각 솔루션에 대해 사용할 수 있으며 Ad
 다른 극단적인 경우에는 단일 RDE를 사용하는 팀이 내부 프로세스를 사용하여 개발자가 지정된 시간에 환경을 사용할 수 있도록 조정할 수 있습니다. 개발자가 중간 기능 이정표에 도달하여 클라우드 환경에서 유효성을 검사할 준비가 되면 개발자가 필요한 변경을 신속하게 수행할 수 있을 때마다 이러한 작업이 발생할 수 있습니다.
 
 중간적 모델은 조직이 많은 RDE를 구매하므로 사용되지 않는 RDE를 사용할 수 있는 가능성이 높습니다. 하나의 전략은 스크럼 팀 또는 주요 기능별로 RDE를 할당하는 것입니다. 내부 프로세스는 환경의 사용을 조정하는 데 사용할 수 있습니다.
+
+## AEM Forms Cloud Service RDE(Rapid Development Environment)가 다른 환경과 어떻게 다릅니까? {#how-are-forms-rds-different-from-cloud-development-environments}
+
+Forms 개발자는 AEM Forms Cloud Service Rapid Development Environment를 사용하여 핵심 구성 요소 사용자 지정, 타사 시스템과의 통합 등과 같은 적응형 Forms, 워크플로우 및 사용자 지정을 신속하게 개발할 수 있습니다. AEM Forms Cloud Service RDE(Rapid Development Environment)는 적응형 양식 제출 시 기록 문서 생성과 같이 기록 문서가 필요한 기능을 지원하지 않습니다. 아래 나열된 기능은 기록 문서를 사용합니다. RDE(Rapid Development Environment)에는 사용할 수 없습니다.
+
+* 적응형 양식에 대한 기록 문서 구성
+* 적응형 양식 제출 또는 워크플로우 단계를 사용하여 기록 문서 생성
+* 기록 문서를 전자 메일 전송 작업을 통해 첨부 파일로 전송하거나 워크플로우의 전자 메일 단계를 사용하여 전송합니다
+* 적응형 양식 또는 워크플로우 단계에서 Adobe Sign 사용
+* 통신 API
+
+레코드 문서가 필요한 기능을 사용할 때 오류 메시지가 표시됩니다.
+
+>[!NOTE]
+>
+> RDE(Rapid Development Environment)의 UI와 Forms을 위한 기타 Cloud Service 환경은 변경되지 않습니다. 적응형 양식에 대한 레코드 템플릿 문서 선택과 같은 모든 기록 관련 옵션이 UI에 계속 표시됩니다. 이러한 환경에는 이러한 옵션을 테스트할 수 있는 기록 문서 기능이 없습니다. 따라서 기록 문서 옵션을 선택하면 작업이 수행되지 않으며 오류 메시지가 표시되거나 반환됩니다.
+

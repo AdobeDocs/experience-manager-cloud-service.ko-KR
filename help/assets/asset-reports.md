@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '890'
 ht-degree: 8%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 8%
 [!DNL Experience Manager Assets] 는 다음과 같은 표준 보고서를 생성합니다.
 
 * 업로드
+* 다운로드
 * 만료
 * 수정
 * 게시
@@ -60,7 +61,7 @@ ht-degree: 8%
 
    ![보고서 유형 선택](assets/choose_report.png)
 
-1. 보고서가 저장되는 CRX 저장소에서 제목, 설명, 축소판 및 폴더 경로와 같은 보고서 세부 정보를 구성합니다. 기본적으로 폴더 경로는 다음과 같습니다 `/content/dam`. 다른 경로를 지정할 수 있습니다.
+1. 제목, 설명, 축소판 및 폴더 경로와 같은 보고서 세부 정보를 구성합니다. 기본적으로 폴더 경로는 다음과 같습니다 `/content/dam`. 특정 폴더에서 보고서를 실행할 다른 경로를 지정할 수 있습니다.
 
    ![보고서 세부 사항을 추가하는 페이지](assets/report_configuration.png)
 
@@ -104,6 +105,10 @@ ht-degree: 8%
    ![생성된 보고서](assets/report_page.png)
 
    클릭 **[!UICONTROL 다운로드]** 를 클릭하여 보고서를 CSV 형식으로 다운로드합니다.
+
+   >[!NOTE]
+   >
+   >지난 360일 동안 생성된 이벤트를 기반으로 보고서를 생성할 수 있습니다. Experience Manager은 30일 동안 사용자 ID 데이터를 유지합니다.
 
 ## 보고서에 사용자 지정 열 추가 {#add-custom-columns}
 

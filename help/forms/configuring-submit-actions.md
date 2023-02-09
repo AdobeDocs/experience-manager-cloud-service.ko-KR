@@ -2,10 +2,10 @@
 title: 적응형 양식에 대한 제출 작업을 구성하는 방법
 description: 적응형 양식은 여러 제출 작업을 제공합니다. 제출 작업은 제출 후 적응형 양식을 처리하는 방법을 정의합니다. 기본 제공 제출 작업을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 3%
+source-wordcount: '3065'
+ht-degree: 2%
 
 ---
 
@@ -17,6 +17,9 @@ ht-degree: 3%
 * [이메일 보내기](#send-email)
 * [양식 데이터 모델을 사용하여 제출](#submit-using-form-data-model)
 * [AEM 워크플로우 호출](#invoke-an-aem-workflow)
+* [SharePoint에 제출](#submit-to-sharedrive)
+* [OneDrive에 제출](#submit-to-onedrive)
+* [Azure Blob 스토리지에 제출](#azure-blob-storage)
 
 다음을 수행할 수도 있습니다 [기본 제출 작업 확장](custom-submit-action-form.md) 을 눌러 고유한 제출 작업을 생성합니다.
 
@@ -46,9 +49,6 @@ ht-degree: 3%
 
 
 -->
-
-
-
 
 ## REST 엔드포인트에 제출 {#submit-to-rest-endpoint}
 
@@ -162,6 +162,159 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 * **[!UICONTROL 처리 서버 사용자 이름]**: 워크플로우 사용자의 사용자 이름
 
 * **[!UICONTROL 처리 서버 암호]**: 워크플로우 사용자 암호
+
+## SharePoint에 제출 {#submit-to-sharedrive}
+
+다음 **[!UICONTROL SharePoint에 제출]** 제출 작업은 적응형 양식을 Microsoft SharePoint 저장소에 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft Sharepoint 저장소에 제출할 수 있습니다. 를 사용하려면 **[!UICONTROL SharePoint에 제출]** 적응형 양식으로 작업 제출:
+
+1. [SharePoint 구성 만들기](#create-a-sharepoint-configuration-create-sharepoint-configuration): AEM Forms을 Microsoft Sharepoint 저장소에 연결합니다.
+2. [적응형 양식의 SharePoint에 제출 작업을 사용합니다](#use-sharepoint-configuartion-in-af): 적응형 양식을 구성된 Microsoft SharePoint에 연결합니다.
+
+### SharePoint 구성 만들기 {#create-sharepoint-configuration}
+
+AEM Forms을 Microsoft Sharepoint 저장소에 연결하려면
+
+1. 다음 위치로 이동 **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft SharePoint]**.
+1. 을(를) 선택하면 **[!UICONTROL Microsoft SharePoint]**, 으로 리디렉션됩니다. **[!UICONTROL SharePoint 브라우저]**.
+1. 선택 **구성 컨테이너**. 구성은 선택한 구성 컨테이너에 저장됩니다.
+1. **[!UICONTROL 만들기]**를 클릭합니다. SharePoint 구성 마법사가 나타납니다.
+   ![Sharepoint 구성](/help/forms/assets/sharepoint_configuration.png)
+1. 을(를) 지정합니다. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]** 및 **[!UICONTROL OAuth URL]**. 클라이언트 ID, 클라이언트 암호, OAuth URL용 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft 설명서](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 를 검색할 수 있습니다 `Client ID` 및 `Client Secret` Microsoft Azure 포털에서 앱을 다운로드할 수 있습니다.
+   * Microsoft Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. 바꾸기 `[author-instance]` (작성자 인스턴스의 URL로 표시됨)
+   * API 권한 추가 `offline_access` 및 `Sites.Manage.All` 읽기/쓰기 권한을 제공합니다.
+   * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 바꾸기 `<tenant-id>` 사용 `tenant-id` Microsoft Azure 포털에서 앱을 다운로드할 수 있습니다.
+
+1. 클릭 **[!UICONTROL Connect]**. 연결된 경우 `Connection Successful` 메시지가 나타납니다.
+
+1. 이제 을(를) 선택합니다. **SharePoint 사이트** > **문서 라이브러리** > **SharePoint 폴더**: 데이터를 저장합니다.
+
+   >[!NOTE]
+   >
+   >* 기본적으로 `forms-ootb-storage-adaptive-forms-submission` 선택한 SharePoint 사이트에 있습니다.
+   >* 폴더를 다음으로 만들기 `forms-ootb-storage-adaptive-forms-submission`에 아직 없는 경우 `Documents` 를 클릭하여 선택한 SharePoint 사이트의 라이브러리 **폴더 만들기**.
+
+
+이제 적응형 양식의 제출 작업에 이 SharePoint 사이트 구성을 사용할 수 있습니다.
+
+### 적응형 양식에서 SharePoint 구성 사용 {#use-sharepoint-configuartion-in-af}
+
+적응형 양식에서 만든 SharePoint 구성을 사용하여 데이터를 저장하거나 생성된 기록 문서를 SharePoint 폴더에 저장할 수 있습니다. 적응형 양식에서 SharePoint 저장소 구성을 다음과 같이 사용하려면 다음 단계를 수행하십시오.
+1. 만들기 [적응형 양식](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * 동일한 항목 선택 [!UICONTROL 구성 컨테이너] 적응형 양식에 대해 SharePoint 저장소를 만든 경우
+   > * 없는 경우 [!UICONTROL 구성 컨테이너] 이 선택되면 전역 [!UICONTROL 스토리지 구성] 폴더는 작업 등록 정보 제출 창에 나타납니다.
+
+
+1. 선택 **작업 제출** 로서의 **[!UICONTROL SharePoint에 제출]**.
+   ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
+1. 을(를) 선택합니다 **[!UICONTROL 스토리지 구성]**: 데이터를 저장할 위치입니다.
+1. 클릭 **[!UICONTROL 저장]** 전송 설정을 저장하려면 을 클릭합니다.
+
+양식을 제출하면 데이터가 지정된 Microsoft Sharepoint 저장소에 저장됩니다.
+데이터를 저장할 폴더 구조는 다음과 같습니다 `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## OneDrive에 제출 {#submit-to-onedrive}
+
+다음 **[!UICONTROL OneDrive에 제출]** 제출 작업은 적응형 양식을 Microsoft OneDrive에 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft OneDrive 저장소에 제출할 수 있습니다. 를 사용하려면 [!UICONTROL OneDrive에 제출] 적응형 양식으로 작업 제출:
+
+1. [OneDrive 구성 만들기](#create-a-onedrive-configuration-create-onedrive-configuration): AEM Forms을 Microsoft OneDrive 저장소에 연결합니다.
+2. [적응형 양식에서 OneDrive에 제출 작업을 사용합니다](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): 적응형 양식을 구성된 Microsoft OneDrive에 연결합니다.
+
+### OneDrive 구성 만들기 {#create-onedrice-configuration}
+
+AEM Forms을 Microsoft OneDrive 저장소에 연결하려면 다음을 수행하십시오.
+
+1. 다음 위치로 이동 **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
+1. 을(를) 선택하면 **[!UICONTROL Microsoft OneDrive]**, 으로 리디렉션됩니다. **[!UICONTROL OneDrive 브라우저]**.
+1. 선택 **구성 컨테이너**. 구성은 선택한 구성 컨테이너에 저장됩니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. OneDrive 구성 마법사가 나타납니다.
+
+   ![OneDrive 구성 화면](/help/forms/assets/onedrive-configuration.png)
+
+1. 을(를) 지정합니다. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]** 및 **[!UICONTROL OAuth URL]**. 클라이언트 ID, 클라이언트 암호, OAuth URL용 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft 설명서](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * 를 검색할 수 있습니다 `Client ID` 및 `Client Secret` Microsoft Azure 포털에서 앱을 다운로드할 수 있습니다.
+   * Microsoft Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 바꾸기 `[author-instance]` (작성자 인스턴스의 URL로 표시됨)
+   * API 권한 추가 `offline_access` 및 `Files.ReadWrite.All` 읽기/쓰기 권한을 제공합니다.
+   * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 바꾸기 `<tenant-id>` 사용 `tenant-id` Microsoft Azure 포털에서 앱을 다운로드할 수 있습니다.
+
+1. 클릭 **[!UICONTROL Connect]**. 연결된 경우 `Connection Successful` 메시지가 나타납니다.
+
+1. 이제 을(를) 선택합니다. **[!UICONTROL OneDrive 컨테이너]** > **[OneDrive 폴더]**  데이터를 저장합니다.
+
+   >[!NOTE]
+   >
+   >* 기본적으로 `forms-ootb-storage-adaptive-forms-submission` OneDrive 컨테이너에 있습니다.
+   > * 폴더를 다음으로 만들기 `forms-ootb-storage-adaptive-forms-submission`를 클릭하여 아직 없는 경우 **폴더 만들기**.
+
+
+이제 적응형 양식의 제출 작업에 이 OneDrive 저장소 구성을 사용할 수 있습니다.
+
+### 적응형 양식에 OneDrive 구성 사용 {#use-onedrive-configuartion-in-af}
+
+작성된 OneDrive 저장소 구성을 응용 양식에 사용하여 OneDrive 폴더에 데이터나 생성된 레코드 문서를 저장할 수 있습니다. 적응형 양식에서 OneDrive 저장소 구성을 사용할 때는 다음 단계를 수행하십시오.
+1. 만들기 [적응형 양식](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * 동일한 항목 선택 [!UICONTROL 구성 컨테이너] OneDrive 저장소를 만든 적응형 양식의 경우 입니다.
+   > * 없는 경우 [!UICONTROL 구성 컨테이너] 이 선택되면 전역 [!UICONTROL 스토리지 구성] 폴더는 작업 등록 정보 제출 창에 나타납니다.
+
+
+1. 선택 **작업 제출** 로서의 **[!UICONTROL OneDrive에 제출]**.
+   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+1. 을(를) 선택합니다 **[!UICONTROL 스토리지 구성]**: 데이터를 저장할 위치입니다.
+1. 클릭 **[!UICONTROL 저장]** 전송 설정을 저장하려면 을 클릭합니다.
+
+양식을 제출하면 데이터가 지정된 Microsoft OneDrive 저장소에 저장됩니다.
+데이터를 저장할 폴더 구조는 다음과 같습니다 `/folder_name/form_name/year/month/date/submission_id/data`.
+
+## Azure Blob 스토리지에 제출 {#submit-to-azure-blob-storage}
+
+다음 **[!UICONTROL Azure Blob 저장 공간에 제출]**  제출 작업은 적응형 양식을 Microsoft Azure 포털과 연결합니다. 양식 데이터, 파일, 첨부 파일 또는 레코드 문서를 연결된 Azure 저장소 컨테이너에 제출할 수 있습니다. Azure Blob 저장소에 대한 제출 작업을 사용하려면 다음을 수행하십시오.
+
+1. [Azure Blob 저장 공간 컨테이너 만들기](#create-a-azure-blob-storage-container-create-azure-configuration): AEM Forms을 Azure 저장소 컨테이너에 연결합니다.
+2. [적응형 양식에서 Azure 저장소 구성 사용 ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): 적응형 양식을 구성된 Azure 저장소 컨테이너에 연결합니다.
+
+### Azure Blob 저장 공간 컨테이너 만들기 {#create-azure-configuration}
+
+AEM Forms을 Azure 저장소 컨테이너에 연결하려면 다음을 수행하십시오.
+1. 다음 위치로 이동 **AEM Forms 작성자** 인스턴스 > **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Azure 저장소]**.
+1. 을(를) 선택하면 **[!UICONTROL Azure 저장소]**, 으로 리디렉션됩니다. **[!UICONTROL Azure 저장소 브라우저]**.
+1. 선택 **구성 컨테이너**. 구성은 선택한 구성 컨테이너에 저장됩니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. Azure 저장소 구성 만들기 마법사가 나타납니다.
+
+   ![Azure 저장소 구성](/help/forms/assets/azure-storage-configuration.png)
+
+1. 을(를) 지정합니다. **[!UICONTROL 제목]**, **[!UICONTROL Azure 저장소 계정]** 및 **[!UICONTROL Azure 액세스 키]**.
+
+   * 검색할 수 있습니다 `Azure Storage Account` 이름 및 `Azure Access key` Microsoft Azure 포털의 저장소 계정
+
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+이제 적응형 양식의 제출 작업에 이 Azure 저장 공간 컨테이너 구성을 사용할 수 있습니다.
+
+### 적응형 양식에서 Azure 저장소 구성 사용 {#use-azure-storage-configuartion-in-af}
+
+응용 양식에 생성된 Azure 저장 공간 컨테이너 구성을 사용하여 데이터를 저장하거나 생성된 기록 문서를 Azure 저장 공간 컨테이너에 저장할 수 있습니다. 적응형 양식에서 Azure 저장 공간 컨테이너 구성을 다음으로 사용하려면 다음 단계를 수행하십시오.
+1. 만들기 [적응형 양식](/help/forms/creating-adaptive-form.md).
+
+   >[!NOTE]
+   >
+   > * 동일한 항목 선택 [!UICONTROL 구성 컨테이너] OneDrive 저장소를 만든 적응형 양식의 경우 입니다.
+   > * 없는 경우 [!UICONTROL 구성 컨테이너] 이 선택되면 전역 [!UICONTROL 스토리지 구성] 폴더는 작업 등록 정보 제출 창에 나타납니다.
+
+
+1. 선택 **작업 제출** 로서의 **[!UICONTROL Azure Blob 저장 공간에 제출]**.
+   ![Azure Blob 저장 공간 GIF](/help/forms/assets/azure-submit-video.gif)
+
+1. 을(를) 선택합니다 **[!UICONTROL 스토리지 구성]**: 데이터를 저장할 위치입니다.
+1. 클릭 **[!UICONTROL 저장]** 전송 설정을 저장하려면 을 클릭합니다.
+
+양식을 제출하면 데이터가 지정된 Azure 저장소 컨테이너 구성에 저장됩니다.
+데이터를 저장할 폴더 구조는 다음과 같습니다 `/configuration_container/form_name/year/month/date/submission_id/data`.
 
 구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.
 

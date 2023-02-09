@@ -6,21 +6,15 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3072'
 ht-degree: 1%
 
 ---
 
 
 # 사용 [!DNL Adobe Sign] 적응형 양식에 {#using-adobe-sign-in-an-adaptive-form}
-
-
->[!NOTE]
->
->적응형 양식에서 Adobe Sign 역할을 사용하는 기능은 2021년 8월 사전 릴리스 채널에 있습니다. 이 기능은 일반적으로 2021년 9월 릴리스에서 제공됩니다.
-
 
 [!DNL Adobe Sign]은 적응형 양식용 전자 서명 워크플로를 가능하게 합니다. 전자 서명은 법률, 영업, 급여, 인적 자원 관리 등 다양한 분야에 대한 문서를 처리하기 위한 워크플로우를 개선합니다.
 

@@ -2,9 +2,9 @@
 title: 적응형 양식 템플릿을 만드는 방법
 description: 적응형 양식 템플릿을 만들어 템플릿 편집기를 사용하여 기본 구조 및 초기 컨텐츠를 정의합니다.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -184,6 +184,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## 적응형 양식을 템플릿으로 저장 {#saving-adaptive-form-as-template}
+
+나중에 사용할 수 있도록 적응형 양식을 템플릿으로 저장할 수도 있습니다. 적응형 양식을 템플릿으로 저장하려면 다음을 수행합니다.
+
+1. 적응형 양식을 선택하여 템플릿으로 저장합니다.
+1. 클릭 **[!UICONTROL 템플릿으로 저장]**. 대화 상자가 나타납니다.
+1. 지정 **[!UICONTROL 제목]** (필수 필드), **[!UICONTROL 위치]** (필수 필드) 및 **[!UICONTROL 설명]** (선택 사항 필드) 를 포함할 수 없습니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+
+   ![양식으로 저장](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>소스 적응형 양식과 동일한 컨테이너 정책을 사용하려면 소스 적응형 양식과 동일한 폴더에 템플릿을 저장하는 것이 좋습니다. 생성된 템플릿이 기본 컨테이너 정책을 사용하는 경우를 제외하고 템플릿이 다른 폴더에 저장되는 경우가 있습니다.
 
 ## 권장 사항 {#recommendations}
 

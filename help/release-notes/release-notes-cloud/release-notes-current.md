@@ -3,87 +3,80 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b54f3fd476fb9537184e423c6506e0485092b451
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 100%
+source-wordcount: '1031'
+ht-degree: 23%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
 
-다음 섹션에서는 [!DNL Experience Manager] as a Cloud Service의 최신 버전 일반 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 의 현재(최신) 버전에 대한 기능 릴리스 노트를 간략하게 설명합니다 [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->여기에서 2020, 2021 버전 등 이전 버전의 릴리스 정보로 이동할 수 있습니다.
+>여기에서 2021, 2022 버전 등 이전 버전의 릴리스 정보로 이동할 수 있습니다.
+>
+>을(를) 보십시오. [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR) 에 예정된 기능 활동에 대해 자세히 알아보십시오 [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
 >릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
-## 릴리스 일자 {#release-date}
+## 릴리스 날짜 {#release-date}
 
-[!DNL Adobe Experience Manager]인 [!DNL Cloud Service]의 현재 월별 릴리스(2022.10.0)의 날짜는 2022년 11월 10일입니다. 다음 월별 릴리스(2023.1.0)는 2023년 9월 2일로 예정되어 있습니다.
+의 릴리스 날짜 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 현재 기능 릴리스(2023.1.0)는 2023년 2월 9일입니다. 다음 기능 릴리스(2023.2.0)는 2023년 3월 2일에 제공될 예정입니다.
 
 ## 릴리스 비디오 {#release-video}
 
-2022년 10월 릴리스 개요 비디오를 통해 2022.10.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오.
+2023년 1월 릴리스 개요 비디오를 통해 2023.1.0 릴리스에 추가된 기능에 대한 간단한 요약을 살펴보십시오:
 
->[!VIDEO](https://video.tv.adobe.com/v/3409801/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3413479/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
+### [!DNL Sites] 프리릴리스의 새로운 기능 {#prerelease-features-sites}
 
-### [!DNL Sites]의 새로운 기능 {#sites-features}
-
-* [경험 조각의 개인화 탭](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)을 통해 경험 조각 편집기에서 세분화 사양 기능을 사용할 수 있으며, 여러 세그먼트에 대해 머리글 및 바닥글 변형을 만들 수 있는 중첩된 경험 조각을 자유롭게 만들 수 있습니다. 이 기능이 출시되기 전에는 AEM에서 제공하는 개인화를 사이트 페이지에만 사용할 수 있고 경험 조각에는 사용할 수 없습니다.
-
-* 이제 사용자는 [콘텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)에서 번역된 콘텐츠 조각을 효율적으로 관리할 수 있습니다. 클릭 한 번으로 언어 사본을 모두 조회할 수도 있습니다. 사용자는 관심 있는 로케일로 테이블 보기를 필터링할 수도 있습니다.
-
-![콘텐츠 조각 언어](/help/release-notes/assets/cfconsole-languages.png)
-
-* 템플릿의 이미지 크기 설정을 최적화하여 방문자의 페이지 로드 시간을 한층 더 줄입니다. [핵심 WCM 구성 요소](https://github.com/adobe/aem-core-wcm-components)에서 이미지 구성 요소에 대해 자세히 알아보십시오.
+* 이제 AEM GraphQL 컨텐츠 전달 API가 GraphQL을 지원합니다 [페이징](/help/headless/graphql-api/content-fragments.md#paging) 및 [정렬](/help/headless/graphql-api/content-fragments.md#sorting)를 사용하여 큰 컨텐츠 세트를 보다 효율적으로 가져오고 렌더링할 수 있습니다. GraphQL 페이지 매김을 사용하면 결과를 한 번에 모두와 대조적으로 하위 집합에 반환하여 쿼리 응답 시간을 향상시킬 수 있습니다. GraphQL 정렬을 사용하면 컨텐츠 세트를 원하는 순서로 배치할 수 있으므로 클라이언트 애플리케이션에서 컨텐츠를 보다 쉽게 처리할 수 있습니다.  AEM GraphQL 엔진의 하이브리드 필터링을 사용하여 쿼리 응답 시간을 추가로 개선했습니다. 이제 쿼리 필터에 해당하는 작은 세트에서 JCR에서 컨텐츠를 읽습니다.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
-* 이제 Experience Manager Assets를 사용하여 지원되는 다른 형식 유형의 문서를 업로드할 수 있으며[ 포함된 Document Cloud 뷰어를 사용하여 미리보기](/help/assets/manage-pdf-documents.md)가 가능합니다. 지원되는 형식 유형은 TXT, RTF, DOC, DOCX, PPT, PPTX, XLS, XLSX입니다.
+* 이제 자산 보고서에는 관리자가 [자산 다운로드 보고서 생성](/help/assets/asset-reports.md) Experience Manager Assets as a Cloud Service 배포에서 확인하십시오. 이 데이터는 관리자가 엔터프라이즈 및 고객별로 자산의 채택을 측정하기 위해 주요 성공 지표에서 통찰력을 도출할 수 있도록 해줍니다.
 
-   ![다른 형식의 PDF 렌디션](/help/release-notes/assets/multi-page-other-formats.png)
+   ![다른 형식의 PDF 렌디션](/help/release-notes/assets/choose_report.png)
 
+* 이제 Experience Manager Assets는 일괄 가져오기 도구를 사용하여 에셋을 수집하기 위해 Azure Blob Storage 데이터 소스에 연결할 때 인증에 액세스 키 외에 [SAS 토큰을 지원](/help/assets/add-assets.md#asset-bulk-ingestor)합니다.
+
+* CMYK 이미지용 스마트 자르기 및 스마트 태그를 생성할 수 있도록 Asset compute에서 CMYK 이미지 관리를 개선했습니다.
 
 ### [!DNL Assets] 프리릴리스의 새로운 기능 {#prerelease-features-assets}
 
-* Experience Manager Assets는 이제 이미지 스마트 태그에 대해 향상된 인공 지능 프레임워크를 사용합니다. 이 콘텐츠 인텔리전스는 수집 시 모든 이미지 에셋에 사용할 수 있는 스마트 태그의 관련성과 정확성을 향상시킵니다. 또한 `cq:tags`에 방향 정보가 채워지므로 방향 필터를 사용하여 더 나은 검색 결과를 얻을 수 있습니다.
-
-   Beta 참여에 관심이 있는 경우 11월 14일까지 [이 양식을 작성](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u)하시기 바랍니다.
-
-* 이제 Experience Manager Assets는 일괄 가져오기 도구를 사용하여 에셋을 수집하기 위해 Azure Blob Storage 데이터 소스에 연결할 때 인증에 액세스 키 외에 [SAS 토큰을 지원](/help/assets/add-assets.md#asset-bulk-ingestor)합니다.
+* 이제 Experience Manager Assets에서 을 지원합니다 [Google Cloud Platform에서 대규모로 자산 수집](/help/assets/add-assets.md#asset-bulk-ingestor) 대량 가져오기 도구 사용.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 프리릴리스에서 사용 가능한 새로운 기능 {#new-features-available-in-channel}
 
+* **[비대화형 PDF 문서 및 인쇄 가능한 출력을 생성하는 워크플로우 단계](/help/forms/aem-forms-workflow-step-reference.md)**: AEM Workflow 단계를 통해 비대화형 PDF 문서 및 인쇄 가능한 출력 생성을 자동화하여 문서 생성 프로세스를 간소화하고 시간을 절약할 수 있습니다.
+* **[각주를 사용하여 적응형 Forms에 인용 또는 추가 정보를 제공합니다](/help/forms/footnotes-richtextsupport.md)**: 적응형 양식의 각주를 사용하여 양식을 작성하거나 사용하는 방법에 대한 정보를 표시할 수 있습니다. 또한 이 정보를 사용하여 부모 정보, 저작권 권한 및 기타 유용한 정보를 제공할 수도 있습니다.
 
-* [적응형 양식 마법사](/help/forms/creating-adaptive-form.md): AEM Forms에서는 적응형 양식을 신속하게 작성할 수 있는 비즈니스 사용자 친화적 마법사를 제공합니다. 마법사에는 미리 구성된 템플릿, 스타일, 필드 및 제출 옵션을 손쉽게 선택하여 적응형 양식을 만들 수 있는 빠른 탭 탐색 기능이 있습니다. 이번 릴리스에서 마법사 기능이 다음과 같이 개선되었습니다.
+### [!DNL Forms] 프리릴리스의 새로운 기능 {#prerelease-features-forms}
 
-   * 필드 선택 또는 선택 해제: 마법사를 사용하여 JSON 및 양식 데이터 모델 스키마를 기준으로 적응형 양식을 만들 수 있습니다. 이제 적응형 양식에 포함되도록 스키마 내 필드의 하위 집합을 선택할 수 있습니다. 선택한 필드가 해당되는 적응형 양식 데이터 캡처 구성 요소로 변환되면 간단하게 원하는 적응형 양식을 만들 수 있습니다.
+* **[데이터 캡처 핵심 구성 요소를 사용하여 응용 Forms을 구축합니다.](/help/forms/creating-adaptive-form-core-components.md)**: 적응형 Forms 편집기를 사용하여 표준화된 데이터 캡처 구성 요소(핵심 구성 요소)를 기반으로 양식을 만듭니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고, 개발 시간을 단축하며, 디지털 참여 경험에 대한 유지 관리 비용을 절감합니다.
+* **[적응형 Forms 기반의 코어 구성 요소 스타일을 위한 프런트 엔드 파이프라인 지원](/help/forms/using-themes-in-core-components.md)**: Frontend Deployment 파이프라인과 함께 배포하여 핵심 구성 요소 기반의 적응형 Forms에 대해 손쉽게 사용자 정의 가능한 BEM 기반 테마를 활용하여 양식의 모양과 느낌을 향상시킬 수 있습니다.
+* **[적응형 Forms 기반의 핵심 구성 요소에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)**: 장기 보관, 인쇄 또는 문서 형식으로 전송할 때 핵심 구성 요소의 적응형 양식을 위한 레코드를 만듭니다.
 
-   * 정적 템플릿 사용: 레거시 정적 템플릿에 투자한 기존 고객들은 적응형 양식을 작성할 수 있는 마법사의 정적 템플릿을 사용하여 클라우드 채택 여정을 계속 진행할 수 있습니다. 이로써 고객이 이전 정적 템플릿을 최신 편집 가능한 템플릿으로 마이그레이션하는 데 시간이 더 걸릴 수 있습니다.
+![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* [서버측 처리 도중 기록 문서(DoR)에서 숨겨진 필드 제거](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): 데이터 캡처 경험 중에 표시되는 해당 필드만 포함하는 최종 사용자용 기록 문서 PDF를 생성할 수 있습니다. 양식 제출 시 서버는 제출된 데이터를 기반으로 최종 사용자에게 숨겨진 필드를 확인하고 일관성을 위해 기록 문서에서 제외합니다.
-
-### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
-
-* **적응형 양식 템플릿 편집기**: 템플릿 편집기를 사용하면 조직 적응형 양식의 기본 구조와 모양을 미리 정의할 수 있습니다. 이번 릴리스에서 템플릿 편집기 기능이 다음과 같이 개선되었습니다.
-   * **[템플릿 편집기의 양식 데이터 모델](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**: 템플릿 편집기에서 양식 데이터 모델 스키마를 적응형 양식 템플릿에 연결할 수 있습니다. 적응형 양식을 만드는 데 걸리는 시간을 줄이는 데 도움이 됩니다. 또한 이 옵션은 적응형 양식 편집기에도 추가되어 사용자가 기존 양식에 대한 양식 데이터 모델을 선택하거나 변경할 수 있습니다.
-   * **[템플릿 편집기의 기록 문서](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**: 이제 템플릿을 사용하여 생성된 모든 양식에 대해 레코드 문서 생성을 표준화할 수 있습니다. 이는 조직 요구 사항에 대한 규정 준수 및 표준화를 강화하는 데 도움이 됩니다.
-
-* **[AEM Sites 페이지에서 적응형 양식 마법사 시작](/help/forms/embed-adaptive-form-aem-sites.md)**: AEM Sites 페이지의 적응형 양식 지원이 확장되었습니다. 이제 AEM Sites 페이지에서 바로 새 적응형 양식을 만들거나 기존 적응형 양식을 임베드할 수 있습니다.
-* **[DoR에서 확인란 및 라디오 버튼의 표시 정렬 변경](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**: 이제 기록 문서의 확인란 및 라디오 버튼에 대해 원하는 정렬(가로, 세로, 적응형 양식과 동일)을 설정할 수 있습니다. 이 옵션은 기록 문서에서 확인란 및 라디오 버튼 옵션의 위치를 결정합니다.
+* **검토할 적응형 양식 공유**: 응용 Forms 검토 메커니즘을 사용하여 한 명 이상의 검토자가 양식을 검토할 수 있습니다.
+* **[Microsoft SharePoint 및 Microsoft OneDrive에 적응형 Forms 제출](/help/forms/configuring-submit-actions.md)**: 적응형 양식 데이터를 Microsoft SharePoint과 Microsoft OneDrive로 직접 전송할 수 있으므로 데이터 전송을 간소화할 수 있습니다. 스키마 기반 데이터와 스키마 없는 데이터를 모두 제출할 수 있습니다. 이러한 제출 작업은 이미 사용 가능한 제출 작업 외에 있습니다.
+* **[적응형 양식을 템플릿으로 저장 기능을 사용하여 효율적인 양식 작성](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: 적응형 양식을 템플릿으로 저장하고 다음 적응형 양식에 대해 템플릿을 재사용하여 양식 작성 프로세스를 간소화합니다.
+* **[JDBC를 지원하는 데이터베이스에 Forms 데이터 모델 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**: JDBC를 지원하는 데이터베이스에 AEM Forms as a Cloud Service을 연결하여 해당 데이터베이스에 데이터를 읽고 쓸 수 있습니다.
+* **Open API 사양 버전 3.0을 지원하는 REST 종단점에 양식 데이터 모델 연결**: Open API 사양 버전 3.0을 지원하는 REST 종단점에 AEM Forms as a Cloud Service을 연결하여 데이터를 보내고 받습니다.
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
@@ -98,11 +91,25 @@ ht-degree: 100%
 
 ### 새로운 기능 {#what-is-new-foundation}
 
-* 이제 AEM as a Cloud Service(작성자 서비스)가 통합 셸과 통합되어 사용자 경험을 개선하고 다른 모든 Experience Cloud 애플리케이션과 통합합니다. 자세한 내용은 [통합 셸의 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)를 참조하십시오.
+* [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE를 통해 개발자는 빠르게 문제를 해결하고 AEM as a Cloud Service에 새로운 기능을 배포할 수 있습니다.
 
-* 앞서 릴리스 정보에서 언급한 바와 같이, 10MB 이상의 콘텐츠 패키지(속성이 있는 노드, 바이너리를 포함하지 않음)를 배포하기 위해 복제 에이전트 관리 화면 또는 복제 API를 사용하는 방법은 더 이상 사용되지 않으며 향후 시행될 예정입니다. 이러한 대용량 콘텐츠 패키지를 복제하는 데 대한 권장 접근 방식은 [게시 관리](/help/operations/replication.md#manage-publication) 또는 [콘텐츠 트리 게시 워크플로](/help/operations/replication.md#publish-content-tree-workflow)를 참조하십시오.
+   Rapid Development Environments는 Cloud에서 정상적으로 작동하는 코드를 빠르고, 일관되고, 확장 가능한 방식으로 확인할 수 있는 새로운 유형의 클라우드 환경입니다. 명령줄 도구를 사용하여 RDE에 컨텐츠 패키지, 번들, 컨텐츠 파일, OSGI 구성 또는 Dispatcher 구성을 빠르게 &quot;동기화&quot;합니다. 아래 비디오에서 이 작업을 확인하십시오.
 
-* 이제 Dispatcher 구성은 일반적인 마케팅 캠페인 쿼리 매개변수를 나열하는 파일을 참조합니다. 고객은 원하는 경우 자신과 관련된 매개변수의 주석을 해제할 수 있으므로 더 나은 캐싱이 가능합니다. 자세한 내용은 [마케팅 캠페인 매개변수](/help/implementing/dispatcher/caching.md#marketing-parameters)를 참조하십시오.
+   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+
+   RDE에서 코드의 유효성을 성공적으로 검사한 후에는 프로덕션 파이프라인을 통해 스테이지 및 프로덕션 환경에 배포하기 전에 Cloud Manager 품질 게이트를 실행하도록 Cloud 개발 환경에 배포하는 것이 좋습니다.
+
+   각 프로그램에는 하나의 RDE가 포함되며 선택적으로 더 많은 라이센스가 부여될 수 있습니다.
+
+   >[!NOTE]
+   >
+   >RDE는 다음 몇 주 동안 점진적으로 롤아웃될 것입니다. aemcs-rde-support@adobe.com으로 이메일을 보내 줄 맨 앞으로 건너뛸 수 있습니다.
+
+* [서버측 API 액세스 토큰에 대한 지원 확장](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) - 이제 여러 자격 증명을 생성할 수 있습니다. 이 기능은 API의 특성이 다른 시나리오에 유용합니다. 이제 셀프 서비스 방식으로 자격 증명을 취소할 수도 있습니다.
+
+## 유지 관리 릴리스 노트 {#maintenance}
+
+최신 유지 관리 릴리스 정보를 확인할 수 있습니다 [여기](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 
