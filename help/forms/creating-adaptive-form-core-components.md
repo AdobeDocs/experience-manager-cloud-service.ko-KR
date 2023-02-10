@@ -4,9 +4,9 @@ description: 을 사용하여 적응형 양식을 만드는 방법을 알아봅�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # 적응형 양식 만들기(핵심 구성 요소) {#creating-an-adaptive-form-core-components}
 
-적응형 Forms을 사용하면 매력적인 반응형, 동적 및 적응형 양식을 만들 수 있습니다. AEM Forms은 적응형 Forms을 신속하게 만들 수 있는 비즈니스 사용자에게 친숙한 마법사를 제공합니다. 마법사에는 적응형 양식을 만들기 위해 사전 구성된 템플릿, 스타일 지정, 필드 및 제출 옵션을 쉽게 선택할 수 있는 빠른 탭 탐색 기능이 있습니다. 응용 Forms에서는 두 가지 유형의 구성 요소를 제공합니다.
+적응형 Forms을 사용하면 매력적인 반응형, 동적 및 적응형 양식을 만들 수 있습니다. AEM Forms은 적응형 Forms을 신속하게 만들 수 있는 비즈니스 사용자에게 친숙한 마법사를 제공합니다. 마법사에는 적응형 양식을 만들기 위해 사전 구성된 템플릿, 스타일 지정, 필드 및 제출 옵션을 쉽게 선택할 수 있는 빠른 탭 탐색 기능이 있습니다.
 
-* 응용 Forms 코어 구성 요소는 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고, 개발 시간을 단축하며, 디지털 참여 경험에 대한 유지 관리 비용을 절감합니다. 개발자는 이러한 구성 요소를 쉽게 사용자 지정할 수 있습니다. Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 활용하여 적응형 Forms을 개발할 것을 권장합니다.
+시작하기 전에 사용 가능한 Forms 구성 요소의 유형에 대해 알아봅니다.
 
-* 응용 Forms 기초 구성 요소는 클래식(이전) 데이터 캡처 구성 요소입니다.
+* [응용 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고, 개발 시간을 단축하며, 디지털 참여 경험에 대한 유지 관리 비용을 절감합니다. 개발자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다. Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 활용하여 적응형 Forms을 개발할 것을 권장합니다.
 
-이 문서에서는 적응형 양식을 만드는 최신 접근 방식을 설명합니다. 이전 접근 방식을 기반으로 적응형 Forms을 만들려면 다음을 참조하십시오 [적응형 양식 만들기(기초 구성 요소)](creating-adaptive-form.md)
+* [응용 Forms 기초 구성 요소](creating-adaptive-form.md): 클래식(이전) 데이터 캡처 구성 요소입니다. 적응형 양식을 기반으로 하는 기존 기초 구성 요소를 계속 사용하여 편집할 수 있습니다. 새 양식을 만드는 경우  [응용 Forms 핵심 구성 요소](creating-adaptive-form-core-components.md) 적용형 Forms을 만들려면
 
 ![적응형 양식 만들기 마법사](/help/release-notes/assets/wizard.png)
 
@@ -89,30 +89,7 @@ ht-degree: 0%
 
 ## 사용 가능한 응용 Forms 핵심 구성 요소
 
-응용 Forms 코어 구성 요소는 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고, 개발 시간을 단축하며, 디지털 참여 경험에 대한 유지 관리 비용을 절감합니다. 곧바로 사용할 수 있는 핵심 구성 요소는 다음과 같습니다.
-
-* 적응형 Forms 아코디언: 아코디언 기능을 사용하면 사용자가 적응형 양식에 관련 컨텐츠의 섹션을 표시하거나 숨길 수 있습니다.
-
-* 응용 Forms 단추
-* 적응형 Forms 확인란 그룹
-* 적응형 Forms 날짜 선택기
-* 적응형 Forms 드롭다운 목록
-* 적응형 Forms 이메일 입력
-* 적응형 Forms 파일 첨부
-* 적응형 Forms 가로 탭
-* 응용 Forms 이미지
-* 적응형 Forms 번호 입력
-* 응용 Forms 패널
-* 응용 Forms 라디오 단추
-* 적응형 Forms 재설정 단추
-* 응용 Forms 제출 단추
-* 적응형 Forms 전화 입력
-* 응용 Forms 텍스트
-* 응용 Forms 텍스트 상자
-* 응용 Forms 제목
-* 응용 Forms 마법사 레이아웃
-* 헤더
-* 바닥글
+응용 Forms 코어 구성 요소는 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고, 개발 시간을 단축하며, 디지털 참여 경험에 대한 유지 관리 비용을 절감합니다. [응용 Forms 코어 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 에는 각 구성 요소의 기능에 대한 자세한 정보와 함께 사용 가능한 구성 요소의 세부 목록이 있습니다. 또한 [https://aemcomponents.dev/](https://aemcomponents.dev/) 사용 가능한 핵심 구성 요소를 보려면 클릭하십시오.
 
 ## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model}
 

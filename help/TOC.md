@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3932'
 ht-degree: 96%
 
 ---
@@ -511,10 +511,10 @@ ht-degree: 96%
       + [통합 스토리지 커넥터 구성](/help/forms/configure-unified-storage-connector.md)
    + 마이그레이션 {#setup-environment}
       + [ [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + 관리 {#administering}
+   + 구성 및 관리 {#administering}
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
       + [적응형 양식, PDF 양식 및 기타 에셋 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
-   + 통합 {#integrate}
+   + {#integrate} 통합
       + [Adobe Sign과 AEM Forms as a Cloud Service 통합](/help/forms/adobe-sign-integration-adaptive-forms.md)
       + [AEM Forms as a Cloud Service과 DocuSign 통합](/help/forms/integrate-docusign-adaptive-forms.md)
       + [Adobe Analytics과 AEM Forms as a Cloud Service 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
@@ -562,26 +562,28 @@ ht-degree: 96%
             + [맞춤형 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
          + [적응형 양식 필드 미리 채우기](/help/forms/prepopulate-adaptive-form-fields.md)
          + [기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [적응형 양식에 새 로케일 지원 추가](/help/forms/supporting-new-language-localization.md)
          + 메타데이터 추가 또는 개선 {#manage-metadata}
             + [적응형 양식의 메타데이터 추가, 제거 또는 편집](/help/forms/manage-form-metadata.md)
             + [적응형 양식의 메타데이터 속성 재사용](/help/forms/reusing-adaptive-forms.md)
          + 적응형 양식의 접근성 개선 {#accessible-adaptive-forms}
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
-      + 양식 데이터 모델 {#use-form-data-model}
-         + [데이터 소스를 클라우드 서비스에 연결](/help/forms/data-integration.md)
-         + [데이터 소스 구성](/help/forms/configure-data-sources.md)
-         + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
-         + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
-         + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스 구성](/help/forms/configure-msdynamics-salesforce.md)
-         + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
-         + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
-         + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
-      + Forms 중심 워크플로우 {#create-form-centric-workflows}
-         + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
-         + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
-         + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
-   + 통신 API 사용 {#using-communications}
+         + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
+   + 양식 데이터 모델 {#use-form-data-model}
+      + [데이터 소스를 클라우드 서비스에 연결](/help/forms/data-integration.md)
+      + [데이터 소스 구성](/help/forms/configure-data-sources.md)
+      + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
+      + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
+      + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스 구성](/help/forms/configure-msdynamics-salesforce.md)
+      + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+      + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
+      + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
+   + Forms 중심 워크플로우 {#create-form-centric-workflows}
+      + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
+      + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
+      + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
+   + 통신 API {#using-communications}
       + [통신 API 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [통신 API - 동기 처리](/help/forms/aem-forms-cloud-service-communications.md)
       + [통신 API - 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

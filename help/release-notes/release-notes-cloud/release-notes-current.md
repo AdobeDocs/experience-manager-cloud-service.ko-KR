@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1032'
 ht-degree: 23%
 
 ---
@@ -66,17 +66,18 @@ ht-degree: 23%
 
 ### [!DNL Forms] 프리릴리스의 새로운 기능 {#prerelease-features-forms}
 
-* **[데이터 캡처 핵심 구성 요소를 사용하여 응용 Forms을 구축합니다.](/help/forms/creating-adaptive-form-core-components.md)**: 적응형 Forms 편집기를 사용하여 표준화된 데이터 캡처 구성 요소(핵심 구성 요소)를 기반으로 양식을 만듭니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고, 개발 시간을 단축하며, 디지털 참여 경험에 대한 유지 관리 비용을 절감합니다.
+* **[데이터 캡처 핵심 구성 요소를 사용하여 응용 Forms을 구축합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [적응형 Forms 편집기 사용](/help/forms/creating-adaptive-form-core-components.md) 표준화된 데이터 캡처 구성 요소를 기반으로 양식을 만들려면(핵심 구성 요소) 이러한 구성 요소는 사용자 정의 기능을 제공하고, 개발 시간을 단축하며, 디지털 참여 경험에 대한 유지 관리 비용을 절감합니다.
 * **[적응형 Forms 기반의 코어 구성 요소 스타일을 위한 프런트 엔드 파이프라인 지원](/help/forms/using-themes-in-core-components.md)**: Frontend Deployment 파이프라인과 함께 배포하여 핵심 구성 요소 기반의 적응형 Forms에 대해 손쉽게 사용자 정의 가능한 BEM 기반 테마를 활용하여 양식의 모양과 느낌을 향상시킬 수 있습니다.
 * **[적응형 Forms 기반의 핵심 구성 요소에 대한 기록 문서 생성](/help/forms/generate-document-of-record-core-components.md)**: 장기 보관, 인쇄 또는 문서 형식으로 전송할 때 핵심 구성 요소의 적응형 양식을 위한 레코드를 만듭니다.
 
-![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **검토할 적응형 양식 공유**: 응용 Forms 검토 메커니즘을 사용하여 한 명 이상의 검토자가 양식을 검토할 수 있습니다.
 * **[Microsoft SharePoint 및 Microsoft OneDrive에 적응형 Forms 제출](/help/forms/configuring-submit-actions.md)**: 적응형 양식 데이터를 Microsoft SharePoint과 Microsoft OneDrive로 직접 전송할 수 있으므로 데이터 전송을 간소화할 수 있습니다. 스키마 기반 데이터와 스키마 없는 데이터를 모두 제출할 수 있습니다. 이러한 제출 작업은 이미 사용 가능한 제출 작업 외에 있습니다.
 * **[적응형 양식을 템플릿으로 저장 기능을 사용하여 효율적인 양식 작성](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: 적응형 양식을 템플릿으로 저장하고 다음 적응형 양식에 대해 템플릿을 재사용하여 양식 작성 프로세스를 간소화합니다.
-* **[JDBC를 지원하는 데이터베이스에 Forms 데이터 모델 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**: JDBC를 지원하는 데이터베이스에 AEM Forms as a Cloud Service을 연결하여 해당 데이터베이스에 데이터를 읽고 쓸 수 있습니다.
-* **Open API 사양 버전 3.0을 지원하는 REST 종단점에 양식 데이터 모델 연결**: Open API 사양 버전 3.0을 지원하는 REST 종단점에 AEM Forms as a Cloud Service을 연결하여 데이터를 보내고 받습니다.
+* **[AEM Forms을 JDBC 지원 데이터베이스에 연결](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: AEM Forms 데이터 모델을 JDBC를 지원하는 데이터베이스에 쉽게 연결하여 데이터를 원활하게 읽고 쓸 수 있습니다.
+* **[Open API 3.0을 사용하여 REST 종단점과 통합](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: AEM Forms as a Cloud Service 양식 데이터 모델을 Open API 사양 버전 3.0을 지원하는 REST 종단점에 연결하여 데이터를 손쉽게 보내고 받을 수 있습니다.
+* **[검토할 적응형 양식 공유](/help/forms/create-reviews-forms.md)**: 응용 Forms 검토 메커니즘을 사용하여 한 명 이상의 검토자가 양식을 검토할 수 있습니다.
+
 
 ## CIF 추가 기능 {#cloud-services-cif}
 
