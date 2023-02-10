@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: ef617b38c8dec355a0fa8ca72af652f37d6668a4
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3931'
 ht-degree: 96%
 
 ---
@@ -504,22 +504,30 @@ ht-degree: 96%
       + [아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
       + [자주 묻는 질문](/help/forms/faq.md)
       + [알려진 문제](/help/forms/known-issues.md)
-   + 설정 {#setup-environment}
+   + 설정 및 마이그레이션 {#setup-configure-migrate}
       + [Cloud Service 환경에 온보드](/help/forms/setup-forms-cloud-service.md)
       + [로컬 개발 환경 설정](/help/forms/setup-local-development-environment.md)
       + [Forms Designer 설치 및 구성](/help/forms/installing-configuring-designer.md)
       + [통합 스토리지 커넥터 구성](/help/forms/configure-unified-storage-connector.md)
-   + 마이그레이션 {#setup-environment}
       + [ [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + 구성 및 관리 {#administering}
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
       + [적응형 양식, PDF 양식 및 기타 에셋 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
    + {#integrate} 통합
-      + [Adobe Sign과 AEM Forms as a Cloud Service 통합](/help/forms/adobe-sign-integration-adaptive-forms.md)
-      + [AEM Forms as a Cloud Service과 DocuSign 통합](/help/forms/integrate-docusign-adaptive-forms.md)
-      + [Adobe Analytics과 AEM Forms as a Cloud Service 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-      + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [AEM Sites 페이지에 적응형 Forms 포함](/help/forms/embed-adaptive-form-aem-sites.md)
+      + 서비스 {#services}
+         + [Adobe Sign과 AEM Forms as a Cloud Service 통합](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [AEM Forms as a Cloud Service과 DocuSign 통합](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [Adobe Analytics과 AEM Forms as a Cloud Service 통합](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [Microsoft Power Automate와 적응형 양식 통합](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [AEM Sites 페이지에 적응형 Forms 포함](/help/forms/embed-adaptive-form-aem-sites.md)
+      + 양식 데이터 모델 {#use-form-data-model}
+         + [데이터 소스를 클라우드 서비스에 연결](/help/forms/data-integration.md)
+         + [데이터 소스 구성](/help/forms/configure-data-sources.md)
+         + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
+         + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
+         + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스 구성](/help/forms/configure-msdynamics-salesforce.md)
+         + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
+         + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
+         + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
    + 적응형 양식 {#adaptive-forms-authoring}
       + 응용 Forms 작성 - 핵심 구성 요소 {#authoring-adaptive-forms-core-components}
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
@@ -570,15 +578,6 @@ ht-degree: 96%
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
-   + 양식 데이터 모델 {#use-form-data-model}
-      + [데이터 소스를 클라우드 서비스에 연결](/help/forms/data-integration.md)
-      + [데이터 소스 구성](/help/forms/configure-data-sources.md)
-      + [ [!DNL Microsoft Dynamics] OData 구성](/help/forms/ms-dynamics-odata-configuration.md)
-      + [ [!DNL Azure] 스토리지 구성](/help/forms/configure-azure-storage.md)
-      + [ [!DNL Microsoft Dynamics 365] 및 [!DNL Salesforce] 클라우드 서비스 구성](/help/forms/configure-msdynamics-salesforce.md)
-      + [양식 데이터 모델 만들기](/help/forms/create-form-data-models.md)
-      + [양식 데이터 모델을 사용하여 작업](/help/forms/work-with-form-data-model.md)
-      + [양식 데이터 모델 사용](/help/forms/using-form-data-model.md)
    + Forms 중심 워크플로우 {#create-form-centric-workflows}
       + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
       + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
@@ -589,7 +588,7 @@ ht-degree: 96%
       + [통신 API - 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [PDF 문서에서 맞춤형 글꼴 사용하기](/help/forms/use-custom-fonts.md)
       + [알려진 문제, 모범 사례 및 FAQ](/help/forms/communications-known-issues-limitations.md)
-      + 개발자 API 참조 {#aem-forms-developer-api-reference}
+   + 개발자 API 참조 {#aem-forms-developer-api-reference}
       + [AEM Forms Cloud Service 통신 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms Cloud Service Java API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
