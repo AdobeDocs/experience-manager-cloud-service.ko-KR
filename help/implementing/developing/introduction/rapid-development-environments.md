@@ -1,9 +1,9 @@
 ---
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '3062'
 ht-degree: 5%
 
 ---
@@ -26,6 +26,8 @@ RDE에서 변경 사항을 테스트하면 Cloud Manager 파이프라인을 통�
 RDE는 코드, 컨텐츠, Apache 또는 Dispatcher 구성에 사용할 수 있습니다. 일반적인 클라우드 개발 환경과 달리 개발자는 로컬 명령줄 도구를 사용하여 로컬로 빌드된 코드를 RDE에 동기화할 수 있습니다.
 
 모든 프로그램에 RDE가 제공됩니다. 샌드박스 계정의 경우 몇 시간 동안 사용하지 않으면 최대 절전 모드로 전환됩니다.
+
+생성 시 RDE가 가장 최근에 사용 가능한 AEM 버전으로 설정됩니다. Cloud Manager를 사용하여 수행할 수 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
 
 일반적으로 RDE는 특정 기능을 테스트하고 디버깅하기 위해 특정 시간에 단일 개발자가 사용합니다. 개발 세션이 완료되면 다음 사용을 위해 RDE를 기본 상태로 재설정할 수 있습니다.
 
@@ -64,6 +66,8 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 만들려면 다음 
 1. **저장**&#x200B;을 클릭하여 지정된 환경을 추가합니다.
 
 이제 **개요** 화면의 **환경** 카드에 새 환경이 표시됩니다.
+
+생성 시 RDE가 가장 최근에 사용 가능한 AEM 버전으로 설정됩니다. Cloud Manager를 사용하여 수행할 수도 있는 RDE 재설정은 RDE를 순환시키고 가장 최근에 사용 가능한 AEM 버전으로 설정합니다.
 
 Cloud Manager를 사용하여 환경을 만들고, 환경에 액세스할 수 있는 사용자를 관리하고 사용자 지정 도메인을 지정하는 방법에 대한 자세한 내용은 다음을 참조하십시오 [Cloud Manager 설명서.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -141,7 +145,12 @@ Adobe은 새 기능을 개발하기 위해 다음 워크플로우를 권장합�
 
 * 중간 이정표에 도달하여 AEM as a Cloud Service SDK를 사용하여 로컬로 유효성이 확인되면 git에 커밋하는 것은 선택 사항이지만, 아직 기본 줄의 일부가 아닌 Git 기능 분기로 코드를 커밋해야 합니다. 중간 이정표를 구성하는 것은 팀 습관에 따라 다릅니다. 예로는 몇 가지 새로운 코드 줄, 반일 작업 또는 하위 기능 완료가 있습니다.
 
-* RDE가 다른 기능에서 사용되어 다음 작업을 수행하려는 경우 재설정합니다 [기본 상태로 재설정합니다.](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분 정도 걸리고 기존의 모든 콘텐츠와 코드가 삭제됩니다. RDE 상태 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다.
+* RDE가 다른 기능에서 사용되어 다음 작업을 수행하려는 경우 재설정합니다 [기본 상태로 재설정합니다.](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->재설정하는 데 몇 분 정도 걸리고 기존의 모든 콘텐츠와 코드가 삭제됩니다. RDE 상태 명령을 사용하여 RDE가 준비되었는지 확인할 수 있습니다. RDE는 최신 AEM 릴리스 버전을 사용하여 다시 실행됩니다.
+
+   >[!IMPORTANT]
+   >
+   > 스테이징 및 프로덕션 환경에서 자동 AEM 릴리스 업데이트를 받지 못하고 최신 AEM 릴리스 버전을 훨씬 뒤처진 경우, RDE에서 실행되는 코드가 스테이징 및 프로덕션에서 코드가 작동하는 방식과 일치하지 않을 수 있습니다. 이 경우 프로덕션에 배포하기 전에 스테이징에서 코드를 철저히 테스트하는 것이 특히 중요합니다.
+
 
 * RDE 명령줄 인터페이스를 사용하여 로컬 코드를 RDE에 동기화합니다. 옵션에는 컨텐츠 패키지, 특정 번들, OSGI 구성 파일, 컨텐츠 파일 및 Apache/Dispatcher 구성의 zip 파일을 설치하는 것이 포함됩니다. 원격 콘텐츠 패키지를 참조할 수도 있습니다. 자세한 내용은 [RDE 명령줄 도구](#rde-cli-commands) 섹션을 참조하십시오. 상태 명령을 사용하여 배포가 성공했는지 확인할 수 있습니다. 선택적으로 패키지 관리자를 사용하여 컨텐츠 패키지를 설치합니다.
 
@@ -337,6 +346,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ## 재설정 {#reset-rde}
 
 RDE를 재설정하면 작성 인스턴스와 게시 인스턴스 모두에서 모든 사용자 지정 코드, 구성 및 컨텐츠가 제거됩니다. 이 기능은 예를 들어, RDE를 사용하여 특정 기능을 테스트하고 다른 기능을 테스트하기 위해 기본 상태로 재설정하려는 경우 유용합니다.
+
+재설정하면 RDE가 가장 최근에 사용 가능한 AEM 버전으로 설정됩니다.
 
 <!-- Alexandru: hiding for now, please don't delete
 
