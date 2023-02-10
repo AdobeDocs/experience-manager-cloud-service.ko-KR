@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 4%
+source-wordcount: '2139'
+ht-degree: 2%
 
 ---
 
@@ -18,14 +18,13 @@ ht-degree: 4%
 
 [!DNL Experience Manager Forms] 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다.
 
-<!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
-* [!DNL Experience Manager] user profile  -->
+* 관계형 데이터베이스 - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], 및 [!DNL Oracle RDBMS]
 * RESTful 웹 서비스
 * SOAP 기반 웹 서비스
 * OData 서비스(버전 4.0)
-* Microsoft Dynamics
+* Microsoft® Dynamics
 * SalesForce
-* Microsoft Azure Blob 저장소
+* Microsoft® Azure Blob 저장 공간
 
 데이터 통합은 OAuth2.0, 기본 인증 및 API 키 인증 유형을 즉시 지원하며, 웹 서비스에 액세스하기 위한 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP 기반 및 OData 서비스는 [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> 및 커넥터 [!DNL Experience Manager] 사용자 프로필은 [!DNL Experience Manager] 웹 콘솔.
 
@@ -35,9 +34,12 @@ ht-degree: 4%
 
 ## 관계형 데이터베이스 구성 {#configure-relational-database}
 
-### 전제 조건
+### 사전 요구 사항
 
-을 사용하여 관계형 데이터베이스를 구성하기 전에 [!DNL Experience Manager] 웹 콘솔 구성에서는 다음을 수행해야 합니다. [cloud manager API를 통해 고급 네트워킹 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)로 설정되면 기본적으로 포트가 비활성화되어 있습니다.
+을 사용하여 관계형 데이터베이스를 구성하기 전에 [!DNL Experience Manager] 웹 콘솔 구성에서는 다음을 수행해야 합니다.
+* [cloud manager API를 통해 고급 네트워킹 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)로 설정되면 기본적으로 포트가 비활성화되어 있습니다.
+* [Maven에서 JDBC 드라이버 종속성 추가](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+
 
 ### 관계형 데이터베이스를 구성하는 단계
 
@@ -45,27 +47,30 @@ ht-degree: 4%
 
 1. 이동 [!DNL Experience Manager] 웹 콘솔 `https://server:host/system/console/configMgr`.
 1. 찾기 **[!UICONTROL Day Commons JDBC 접속 풀]** 구성. 편집 모드에서 구성을 열려면 탭합니다.
-<br>
 
-![JDBC 커넥터 풀](/help/forms/assets/jdbc_connector.png)
-<br>
+   ![JDBC 커넥터 풀](/help/forms/assets/jdbc_connector.png)
+
 1. 구성 대화 상자에서 다음과 같이 구성할 데이터베이스에 대한 세부 정보를 지정합니다.
 
-   * JDBC 드라이버의 Java 클래스 이름
+   * JDBC 드라이버의 Java™ 클래스 이름
    * JDBC 연결 URI
    * JDBC 드라이버와의 연결을 설정하기 위한 사용자 이름 및 암호
    * SQL SELECT 쿼리를 **[!UICONTROL 유효성 검사 쿼리]** 풀에서 연결을 확인하는 필드입니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 데이터베이스를 기준으로 다음 중 하나를 지정합니다.
       * 선택 1(MySQL 및 MS SQL)
       * 이중(Oracle)에서 1을 선택합니다
-   * 을(를) 선택합니다 **기본적으로 읽기 전용** 수정할 수 없도록 확인란을 선택합니다.
-   * 선택 **기본적으로 자동 커밋** 변경 사항을 자동으로 커밋하는 확인란을 선택합니다.
-   * 풀 크기 및 풀 대기 시간(밀리초)을 지정합니다.
    * 데이터 소스의 이름
-   * 데이터 소스 이름을 저장하는 데이터 소스 서비스 속성
+
+   관계형 데이터베이스를 구성하기 위한 샘플 문자열:
+
+   ```text
+      "datasource.name": "sqldatasourcename-mysql",
+      "jdbc.driver.class": "com.mysql.jdbc.Driver",
+      "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
+   ```
 
    >[!NOTE]
    >
-   > 참조 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html#mysql-driver-dependencies) 를 참조하십시오.
+   > 참조 [JDBC DataSourcePool을 사용한 SQL 연결](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 를 참조하십시오.
 
 1. 탭 **[!UICONTROL 저장]** 구성을 저장합니다.
 
@@ -118,7 +123,7 @@ RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하�
 
 RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) JSON 또는 YAML 형식으로 [!DNL Swagger] 정의 파일입니다. 에서 RESTful 웹 서비스를 구성하려면 [!DNL Experience Manager] as a Cloud Service, [!DNL Swagger] 파일([Swagger 버전 2.0](https://swagger.io/specification/v2/)) 또는 [!DNL Swagger] 파일([Swagger 버전 3.0](https://swagger.io/specification/v3/))을 클릭하여 파일을 호스팅할 URL을 지정합니다.
 
-### Open API 사양 버전 2.0에 대한 RESTful 서비스 구성 {#configure-restful-services-swagger-version2.0}
+### Open API 사양 버전 2.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-2.0}
 
 1. 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.
 
@@ -142,7 +147,7 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 
 1. 탭 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
 
-### RESTful 서비스 Open API Specification 버전 2.0 구성 {#configure-restful-services-swagger-version3.0}
+### Open API 사양 버전 3.0에 대한 RESTful 서비스 구성 {#configure-restful-services-open-api-3.0}
 
 1. 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.
 
@@ -152,7 +157,7 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 1. RESTful 서비스에 대해 다음 세부 정보를 지정합니다.
 
    * 에서 URL 또는 파일 을 선택합니다 [!UICONTROL Swagger 소스] 드롭다운 및 그에 따라 [!DNL Swagger 3.0 URL] 변환 후[!DNL  Swagger] 정의 파일 또는 업로드 [!DNL Swagger] 파일을 로컬 파일 시스템에서 가져옵니다.
-   * 기준[!DNL  Swagger] 소스 입력 시 서버 이름이 자동으로 나타납니다.
+   * 기준[!DNL  Swagger] 소스 입력 시 대상 서버와의 연결 정보가 표시됩니다.
    * 인증 유형(없음, OAuth2.0, 기본 인증, API 키 또는 사용자 지정 인증)을 선택하여 RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
 
    선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키의 값을 지정합니다. API 키는 요청 헤더로 또는 쿼리 매개 변수로 보낼 수 있습니다. 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록에서 헤더 또는 쿼리 매개 변수의 이름을 지정합니다 **[!UICONTROL 매개 변수 이름]** 그에 따라 필드가 표시됩니다.
@@ -161,10 +166,11 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 
 1. 탭 **[!UICONTROL 만들기]** RESTful 서비스에 대한 클라우드 구성을 만듭니다.
 
-RESTful 서비스 Swagger 버전 3.0에서 지원하지 않는 작업 중 일부는 다음과 같습니다.
+RESTful 서비스 Open API Specification 버전 3.0에서 지원하지 않는 작업 중 일부는 다음과 같습니다.
 * 콜백
 * 임의
 * 원격 참조
+* 링크
 * 단일 작업에 대한 다른 MIME 유형에 대한 다른 요청 본문
 
 다음을 의미할 수 있습니다 [OpenAPI 3.0 사양](https://swagger.io/specification/v3/) 자세한 정보
@@ -187,6 +193,7 @@ RESTful 서비스 Swagger 버전 3.0에서 지원하지 않는 작업 중 일부
 
 다음 JSON 파일에는 샘플이 표시됩니다.
 
+
 ```json
 {   
    "http.connection.keep.alive.duration":"15",   
@@ -198,20 +205,13 @@ RESTful 서비스 Swagger 버전 3.0에서 지원하지 않는 작업 중 일부
 } 
 ```
 
-구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.
-
-
-양식 데이터 모델 HTTP 클라이언트를 구성하려면 다음 단계를 수행하십시오.
-
-1. 에 로그인합니다. [!DNL Experience Manager Forms] 관리자로 작성자 인스턴스 및 다음 위치로 이동 [!DNL Experience Manager] 웹 콘솔 번들. 기본 URL은 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
 1. 탭 **[!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성]**.
 
 1. 에서 [!UICONTROL REST 데이터 소스에 대한 양식 데이터 모델 HTTP 클라이언트 구성] 대화 상자:
 
    * 에서 양식 데이터 모델과 RESTful 웹 서비스 간에 허용되는 최대 연결 수를 지정합니다 **[!UICONTROL 총 연결 제한]** 필드. 기본값은 20개의 연결입니다.
 
-   * 각 경로에 대해 허용되는 최대 연결 수를 **[!UICONTROL 경로별 연결 제한]** 필드. 기본값은 2개의 연결입니다.
+   * 각 경로에 대해 허용되는 최대 연결 수를 **[!UICONTROL 경로별 연결 제한]** 필드. 기본값은 두 개의 연결입니다.
 
    * 영구 HTTP 연결이 유지되는 기간을 **[!UICONTROL 살아있도록 유지]** 필드. 기본값은 15초입니다.
 
@@ -249,11 +249,13 @@ SOAP 웹 서비스 WSDL의 가져오기 구문으로 허용되는 절대 URL의 
 
 설정 `importAllowlistPattern` 속성 **[!UICONTROL 양식 데이터 모델 SOAP 웹 서비스 가져오기 허용 목록에 추가하다]** 정규 표현식을 지정하는 구성입니다. 다음 JSON 파일에는 샘플이 표시됩니다.
 
+
 ```json
 {
   "importAllowlistPattern": ".*"
 }
 ```
+
 
 구성의 값을 설정하려면 [AEM SDK를 사용해 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)하십시오.
 
@@ -264,7 +266,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 >[!NOTE]
 >
 > 양식 데이터 모델은 [OData 버전 4](https://www.odata.org/documentation/).
->구성을 위한 단계별 안내서입니다. [!DNL Microsoft Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
+>구성을 위한 단계별 안내서입니다. [!DNL Microsoft® Dynamics 365], 온라인 또는 온프레미스에서 다음을 참조하십시오. [[!DNL Microsoft® Dynamics] OData 구성](ms-dynamics-odata-configuration.md).
 
 1. 이동 **[!UICONTROL 도구 > Cloud Services > 데이터 소스]**. 클라우드 구성을 만들 폴더를 선택하려면 탭합니다.
 
@@ -280,7 +282,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 
    >[!NOTE]
    >
-   >연결하려면 OAuth 2.0 인증 유형을 선택해야 합니다 [!DNL Microsoft Dynamics] OData 끝점을 서비스 루트로 사용하는 서비스입니다.
+   >연결하려면 OAuth 2.0 인증 유형을 선택해야 합니다 [!DNL Microsoft® Dynamics] OData 끝점을 서비스 루트로 사용하는 서비스입니다.
 
 1. 탭 **[!UICONTROL 만들기]** OData 서비스에 대한 클라우드 구성을 만들려면
 
@@ -299,4 +301,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 다음 단계 {#next-steps}
 
-데이터 소스를 구성했습니다. 다음으로 양식 데이터 모델을 만들거나 데이터 소스 없이 양식 데이터 모델을 이미 만든 경우 방금 구성한 데이터 소스와 연결할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md) 자세한 내용
+데이터 소스를 구성했습니다. 다음으로 양식 데이터 모델을 만들거나 데이터 소스 없이 양식 데이터 모델을 이미 만든 경우 구성한 데이터 소스와 연결할 수 있습니다. 자세한 내용은 [양식 데이터 모델 만들기](create-form-data-models.md) 자세한 내용
