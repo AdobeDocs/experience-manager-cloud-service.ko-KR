@@ -2,10 +2,10 @@
 title: 환경 관리
 description: 만들 수 있는 환경 유형과 Cloud Manager 프로젝트용으로 환경을 만드는 방법에 대해 알아봅니다.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
+source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 100%
+source-wordcount: '1826'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,13 @@ ht-degree: 100%
 
 필수 권한이 있는 사용자는 특정 테넌트가 사용할 수 있는 범위 내에서 다음과 같은 환경 유형을 만들 수 있습니다.
 
-* **프로덕션 및 스테이징** - 프로덕션 환경 및 스테이징 환경은 쌍으로 구성되며 각각 프로덕션 및 테스트 목적으로 사용됩니다.
+* **프로덕션 + 스테이지** - 프로덕션 및 스테이징 환경은 쌍으로 사용할 수 있으며, 각각 프로덕션 및 테스트 용도로 사용됩니다.
 
 * **개발** - 개발 환경은 개발 목적뿐만 아니라 테스트 목적으로도 만들 수 있으며 비프로덕션 파이프라인에만 연결할 수 있습니다.
 
+* **신속한 개발** - RDE(Rapid Development Environment)를 통해 개발자가 변경 사항을 신속하게 배포하고 검토할 수 있으므로 로컬 개발 환경에서 작동하는 것으로 입증된 기능을 테스트하는 데 필요한 시간을 최소화할 수 있습니다. 자세한 내용은 [신속한 개발 환경 설명서](/help/implementing/developing/introduction/rapid-development-environments.md) 를 참조하십시오.
 
-개별 환경의 기능은 포함된 [프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)에서 활성화된 솔루션에 따라 다릅니다.
+개별 환경의 기능은 [프로그램](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 환경.
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -51,13 +52,14 @@ ht-degree: 100%
 
 1. **환경 추가** 대화 상자가 나타나면 다음 작업을 수행하십시오.
 
-   * **환경 유형**&#x200B;을 선택합니다.
-      * 사용 가능한/사용된 환경의 수가 개발 환경 유형 뒤의 괄호 안에 표시됩니다.
-   * **환경 이름**&#x200B;을 제공합니다.
-   * **환경 설명**&#x200B;을 제공합니다.
-   * **클라우드 영역**&#x200B;을 선택합니다.
-
-   ![환경 추가 대화 상자](assets/add-environment2.png)
+   * 선택 [**환경 유형**.](#environment-types)
+      * 사용 가능한/사용된 환경 수는 환경 유형 이름 뒤에 괄호로 표시됩니다.
+   * 환경 제공 **이름**.
+   * 환경 제공 **설명**.
+   * 선택 **기본 지역** 드롭다운
+      * 만든 후에는 변경할 수 없습니다.
+   * 를 추가하는 경우 **프로덕션 + 스테이지** 환경을 사용하려면 프로덕션 환경과 스테이징 환경 모두에 대한 환경 이름과 설명을 제공해야 합니다.
+      ![환경 추가 대화 상자](assets/add-environment2.png)
 
 1. **저장**&#x200B;을 클릭하여 지정된 환경을 추가합니다.
 
@@ -101,7 +103,7 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 
 ![미리보기 서비스 및 해당 허용 목록](assets/preview-ip-allow.png)
 
-필수 권한이 있는 사용자는 미리보기 URL에 대한 액세스를 보장하기 위해 미리보기 서비스 URL을 팀과 공유하기 전에 다음 옵션 단계를 완료해야 합니다.
+필수 권한을 가진 사용자는 해당 URL에 액세스하려면 미리 보기 서비스 URL을 공유하기 전에 다음 단계를 완료해야 합니다.
 
 1. 적절한 IP 허용 목록을 만들어 미리보기 서비스에 적용하고 `Preview Default [<envId>]` 허용 목록을 즉시 적용 취소합니다.
 
@@ -109,13 +111,13 @@ Cloud Manager는 AEM as a Cloud Service 환경에 미리보기 서비스(추가 
 
 1. **IP 허용 목록** 업데이트 워크플로를 사용하여 기본 IP를 제거하고 적절하게 IP를 추가합니다. 자세한 내용은 [IP 허용 목록 관리](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)를 참조하십시오.
 
-미리보기 서비스에 대한 액세스가 잠금 해제되면 미리보기 서비스 이름 앞의 잠금 아이콘이 더 이상 표시되지 않습니다.
+미리 보기 서비스에 대한 액세스 잠금이 해제되면 미리 보기 서비스 이름 앞에 있는 잠금 아이콘이 더 이상 표시되지 않습니다.
 
 활성화되면 AEM 내 게시 관리 UI를 사용하여 미리보기 서비스에 콘텐츠를 게시할 수 있습니다. 자세한 내용은 [콘텐츠 미리보기](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 문서를 참조하십시오.
 
 >[!NOTE]
 >
->환경은 AEM 버전 `2021.05.5368.20210529T101701Z` 이상이어야 합니다. 이를 수행하려면 업데이트 파이프라인이 환경에서 성공적으로 실행되었는지 확인하십시오.
+>환경이 AEM 버전이어야 합니다. `2021.05.5368.20210529T101701Z` 미리 보기 서비스를 사용하려면 그 이상이 필요합니다. 이를 수행하려면 업데이트 파이프라인이 환경에서 성공적으로 실행되었는지 확인하십시오.
 
 ## 환경 업데이트 {#updating-dev-environment}
 
