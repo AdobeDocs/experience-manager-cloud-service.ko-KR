@@ -1,9 +1,9 @@
 ---
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
-source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
+source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3069'
 ht-degree: 5%
 
 ---
@@ -447,6 +447,7 @@ RDE는 클라우드 개발 환경과 유사한 여러 가지 방식으로 사용
 
 다음 고려 사항도 확인합니다.
 
+* RDE에는 미리 보기 계층이 포함되지 않습니다
 * 현재 RDE는 Cloud Manager 프런트 엔드 파이프라인을 사용하여 배포된 프런트 엔드 코드 보기 및 디버깅을 지원하지 않습니다.
 * 현재 RDE는 사전 릴리스 채널을 지원하지 않습니다.
 
