@@ -2,10 +2,10 @@
 title: 사이트 테마 맞춤화
 description: 라이브 AEM 콘텐츠를 사용하여 사이트 테마를 구축하고, 맞춤화하고, 테스트하는 방법에 대해 알아봅니다.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '963'
+ht-degree: 97%
 
 ---
 
@@ -67,6 +67,10 @@ AEM 관리자가 제공한 테마를 편집하고자 하는 위치로 추출하�
 1. 프록시 서버가 시작되면 `http://localhost:7001/`로의 브라우저가 자동으로 열립니다. **로컬에서 로그인(관리 작업만 해당)**&#x200B;을 탭하거나 클릭하여 AEM 관리자가 제공한 프록시 사용자 자격 증명을 사용하여 로그인합니다.
 
    ![로컬에서 로그인](assets/sign-in-locally.png)
+
+   >[!TIP]
+   >
+   >이러한 자격 증명이 없는 경우 관리자에게 문의하여 [템플릿에서 사이트 만들기 문서의 프록시 사용자 섹션 설정](/help/journey-sites/quick-site/create-site.md#proxy-user) 여정에서 확인하십시오.
 
 1. 로그인한 후 브라우저에서 AEM 관리자가 제공한 샘플 콘텐츠로의 경로를 표시하도록 URL을 변경합니다.
 
