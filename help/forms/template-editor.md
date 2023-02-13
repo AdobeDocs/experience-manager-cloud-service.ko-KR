@@ -2,7 +2,7 @@
 title: 적응형 양식 템플릿을 만드는 방법
 description: 적응형 양식 템플릿을 만들어 템플릿 편집기를 사용하여 기본 구조 및 초기 컨텐츠를 정의합니다.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -158,7 +158,7 @@ Experience Manager은 템플릿을 구성하는 전역 폴더를 제공합니다
 
 
 
-### 양식 데이터 모델 스키마를 템플릿에 연결 {#associating-form-data-model-schema-in-template}
+## 양식 데이터 모델 스키마를 템플릿에 연결 {#associating-form-data-model-schema-in-template}
 
 작성자가 [!UICONTROL 양식 데이터 모델 스키마] 추가 정보 작성자는 템플릿 편집기에서 스키마를 선택할 수 있습니다. 스키마를 템플릿에 연결하고 양식 작성자가 템플릿을 기반으로 양식을 만들면 해당 스키마에 대해 스키마가 미리 선택됩니다. 양식 작성자가 스키마 사용을 규제하고 양식 작성자를 위한 시간도 절약할 수 있습니다. 템플릿 편집기에서 양식 데이터 모델 스키마를 선택하려면 다음을 수행합니다.
 
