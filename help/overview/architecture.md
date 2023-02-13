@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 100%
+source-wordcount: '1797'
+ht-degree: 98%
 
 ---
 
@@ -79,6 +79,8 @@ AEM as a Cloud Service에서 사용할 수 있는 환경에는 세 가지 유형
 
    자세한 내용은 [환경 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko-kr#using-cloud-manager)를 참조하십시오.
 
+* **신속한 개발 환경**: 새 코드 또는 기존 코드를 디버깅하기 위한 신속한 개발 반복을 허용합니다.
+
 ## 프로그램 {#programs}
 
 모든 새 AEM 프로젝트는 항상 프로젝트에 대한 구성 및 사용자 지정 코드를 모두 저장할 수 있는 하나의 특정 코드 베이스에 연결되어 있습니다. 이 정보는 일반적인 Git 클라이언트를 통해 액세스할 수 있는 코드 리포지토리에 저장되며, 새 프로그램을 만들 때 사용할 수 있습니다.
@@ -90,7 +92,7 @@ AEM 프로그램은 다음을 포함하는 컨테이너입니다.
 | 코드 리포지토리(Git) |  1 |
 | 기준 이미지(사이트 또는 에셋) |  1 |
 | 스테이지 및 프로덕션 환경 세트(1:1) | 0 또는 1 |
-| 비프로덕션 환경(개발 또는 데모) | 0 ~ N |
+| 비프로덕션 환경(RDE, 개발 또는 데모) | 0 ~ N |
 | 각 환경을 위한 파이프라인 | 0 또는 1 |
 
 처음에는 AEM as a Cloud Service에 두 가지 프로그램을 사용할 수 있습니다.

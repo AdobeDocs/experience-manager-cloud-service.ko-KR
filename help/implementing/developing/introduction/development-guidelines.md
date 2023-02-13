@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 개발 지침
 description: AEM as a Cloud Service을 개발하는 지침과 AEM 온프레미스 및 AMS의 AEM과 다른 중요한 방법에 대해 알아봅니다.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2591'
 ht-degree: 2%
 
 ---
@@ -162,7 +162,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 대신 개발자 콘솔에서 저장소 브라우저를 시작할 수 있으므로 작성, 게시 및 미리 보기 계층의 모든 환경에 대한 저장소에 읽기 전용 보기를 제공합니다. 저장소 브라우저에 대해 자세히 보기 [여기](/help/implementing/developing/tools/repository-browser.md).
 
-AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개발자 콘솔에서 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
+AEM as a Cloud Service 개발자 환경을 디버깅하는 도구 세트는 개발자 콘솔에서 RDE, 개발, 스테이지 및 프로덕션 환경에 사용할 수 있습니다. URL은 다음과 같이 작성자 또는 게시 서비스 URL을 조정하여 결정할 수 있습니다.
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 

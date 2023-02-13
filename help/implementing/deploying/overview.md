@@ -3,9 +3,9 @@ title: AEM as a Cloud Service에 배포
 description: AEM as a Cloud Service에 배포
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3497'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 소개 {#introduction}
 
-코드 개발의 기본 사항은 AEM On Premise 및 Managed Services 솔루션과 비교하여 AEM as a Cloud Service에서 유사합니다. 개발자가 코드를 작성하고 로컬로 테스트한 다음 원격 AEM as a Cloud Service 환경에 푸시됩니다. Managed Services용 선택적 콘텐츠 전달 도구인 Cloud Manager가 필요합니다. 이제 AEM as a Cloud Service 환경에 코드를 배포하는 유일한 메커니즘이 됩니다.
+코드 개발의 기본 사항은 AEM On Premise 및 Managed Services 솔루션과 비교하여 AEM as a Cloud Service에서 유사합니다. 개발자가 코드를 작성하고 로컬로 테스트한 다음 원격 AEM as a Cloud Service 환경에 푸시됩니다. Managed Services용 선택적 콘텐츠 전달 도구인 Cloud Manager가 필요합니다. 이제 AEM as a Cloud Service 개발, 스테이지 및 프로덕션 환경에 코드를 배포하는 유일한 메커니즘입니다. 위의 환경을 배포하기 전에 빠른 기능 유효성 검사 및 디버깅을 위해 코드를 로컬 환경에서 로 동기화할 수 있습니다. [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 의 업데이트 [AEM 버전](/help/implementing/deploying/aem-version-updates.md) 는 푸싱에서 항상 별도의 배포 이벤트입니다 [사용자 지정 코드](#customer-releases). 다른 방식으로 보면, 사용자 지정 코드 릴리스는 맨 위에 배포되기 때문에 프로덕션 상태에 있는 AEM 버전에 대해 테스트해야 합니다. 이후 발생하는 AEM 버전 업데이트로, 자주 업데이트되며 자동으로 적용됩니다. 이미 배포된 고객 코드와 역호환되도록 하기 위한 것입니다.
 
@@ -170,7 +170,6 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="패키지 관리자 - 가변 컨텐츠 패키지 마이그레이션"
->abstract="프로덕션 문제를 디버깅하기 위해 프로덕션 환경에서 스테이징으로 특정 콘텐츠를 가져오는 작업, 온-프레미스 환경에서 AEM 클라우드 환경으로 작은 컨텐츠 패키지를 전송하는 작업 등을 포함하는 컨텐츠 패키지를 설치해야 하는 사용 사례에 대해 패키지 관리자의 사용을 탐색합니다."
 >abstract="프로덕션 문제를 디버깅하기 위해 프로덕션 환경에서 스테이징으로 특정 컨텐츠를 가져오는 작업을 포함하는 컨텐츠 패키지를 &#39;오프&#39;로 설치해야 하는 사용 사례와 온-프레미스 환경에서 AEM 클라우드 환경으로 작은 컨텐츠 패키지를 전송하는 사용 사례를 살펴보십시오."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="콘텐츠 전송 도구"
 
@@ -279,6 +278,12 @@ Cloud Ready AEM 빠른 시작을 사용하여 복제를 개발하고 테스트�
 ### 롤백 시 보수적인 코딩 {#conservative-coding-for-rollbacks}
 
 구축 후 오류를 보고하거나 감지하면 파란색 버전으로 롤백해야 할 수 있습니다. 새로운 구조(가변 컨텐츠 컨텐츠 컨텐츠)가 롤백되지 않으므로 파란색 코드가 녹색 버전에서 만든 모든 새 구조와 호환되는지 확인하는 것이 좋습니다. 이전 코드가 호환하지 않는 경우, 후속 고객 릴리스에서 수정 사항을 적용해야 합니다.
+
+## 신속한 개발 환경(RDE) {#rde}
+
+[신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md) (또는 RDE 를 짧게 사용하면) 개발자가 변경 사항을 신속하게 배포하고 검토할 수 있으므로 로컬 개발 환경에서 이미 작동하는 것으로 입증된 기능을 테스트하는 데 필요한 시간을 최소화할 수 있습니다.
+
+Cloud Manager 파이프라인을 통해 코드를 배포하는 일반적인 개발 환경과 달리 개발자는 명령줄 도구를 사용하여 로컬 개발 환경의 코드를 RDE에 동기화합니다. 변경 사항이 RDE에서 성공적으로 테스트되면 적절한 품질 게이트를 통해 코드를 지정하는 Cloud Manager 파이프라인을 통해 일반 클라우드 개발 환경에 배포해야 합니다.
 
 ## 실행 모드 {#runmodes}
 
