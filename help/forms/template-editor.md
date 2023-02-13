@@ -2,9 +2,9 @@
 title: 적응형 양식 템플릿을 만드는 방법
 description: 적응형 양식 템플릿을 만들어 템플릿 편집기를 사용하여 기본 구조 및 초기 컨텐츠를 정의합니다.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -50,8 +50,7 @@ Experience Manager은 템플릿을 구성하는 전역 폴더를 제공합니다
    * **페이지 정보**: 게시/게시 취소 시간, 축소판, 클라이언트측 라이브러리, 페이지 정책 및 페이지 디자인 클라이언트측 라이브러리와 같은 정보를 지정할 수 있습니다.
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **모드 선택기:** 모드를 변경할 수 있습니다.
-선택할 수 있습니다 **[!UICONTROL 구조]** 모드, **[!UICONTROL 초기 컨텐츠]**, **[!UICONTROL 레이아웃 컨트롤]** 모드. 구조 모드에서 머리글 및 바닥글을 추가하고 사용자 지정할 수 있습니다. 초기 컨텐츠 모드에서는 양식 컨텐츠를 사용자 지정할 수 있습니다.
+   * **모드 선택기:** 모드를 변경할 수 있습니다. **[!UICONTROL 구조]** 모드, **[!UICONTROL 초기 컨텐츠]**, **[!UICONTROL 레이아웃 컨트롤]** 모드. 구조 모드에서 머리글 및 바닥글을 추가하고 사용자 지정할 수 있습니다. 초기 컨텐츠 모드에서는 양식 컨텐츠를 사용자 지정할 수 있습니다.
    * **미리 보기:** 게시할 때 템플릿이 어떻게 보이는지 미리 볼 수 있습니다. 레이어 선택기 및 미리 보기 를 사용하여 편집 및 미리 보기 모드를 전환할 수 있습니다.
 * **사이드바:** 컨텐츠, 속성, 자산 및 구성 요소 브라우저를 제공합니다.
 * **구성 요소 도구 모음:** 구성 요소를 선택하면 구성 요소를 사용자 지정할 수 있는 도구 모음이 표시됩니다.
@@ -151,12 +150,24 @@ Experience Manager은 템플릿을 구성하는 전역 폴더를 제공합니다
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}
 
-양식은 해당 템플릿에서 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드하면 템플릿이 다운로드되지 않습니다. 다른 형식으로 ftocorm을 가져올 때 [!DNL AEM Forms] 예를 들어 템플릿 없이 가져옵니다. 양식을 가져오지만 해당 템플릿을 사용할 수 없으면 양식이 렌더링되지 않습니다. 에서 사용자 지정 템플릿을 패키지할 수 있습니다. `/conf` 노드 `https://<server>:<port>/crx/packmgr`를 입력하여 [!DNL AEM Forms] 양식을 업로드할 인스턴스. 다음을 수행할 수도 있습니다 [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Services 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+양식은 해당 템플릿에서 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드하면 템플릿이 다운로드되지 않습니다. 다른 형식으로 양식을 가져올 때 [!DNL AEM Forms] 예를 들어 템플릿 없이 가져옵니다. 양식을 가져오지만 해당 템플릿을 사용할 수 없으면 양식이 렌더링되지 않습니다. 에서 사용자 지정 템플릿을 패키지할 수 있습니다. `/conf` 노드 `https://<server>:<port>/crx/packmgr`를 입력하여 [!DNL AEM Forms] 양식을 업로드할 인스턴스. 다음을 수행할 수도 있습니다 [AEM Archetype을 사용하여 템플릿을 만들고 Cloud Services 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * 을(를) 연결할 수 있습니다 [!UICONTROL 양식 데이터 모델 스키마] 템플릿 편집기의 적응형 양식 템플릿에 추가합니다. 자세한 내용은 [적응형 양식 만들기](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) 추가 정보.
 > * 를 구성할 수도 있습니다 [!UICONTROL 기록 문서] 적응형 양식 편집기 또는 적응형 양식 템플릿 편집기에서 바로 템플릿을 생성할 수 있습니다. 자세한 내용은 [적응형 Forms에 대한 기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
+### 양식 데이터 모델 스키마를 템플릿에 연결 {#associating-form-data-model-schema-in-template}
+
+작성자가 [!UICONTROL 양식 데이터 모델 스키마] 추가 정보 작성자는 템플릿 편집기에서 스키마를 선택할 수 있습니다. 스키마를 템플릿에 연결하고 양식 작성자가 템플릿을 기반으로 양식을 만들면 해당 스키마에 대해 스키마가 미리 선택됩니다. 양식 작성자가 스키마 사용을 규제하고 양식 작성자를 위한 시간도 절약할 수 있습니다. 템플릿 편집기에서 양식 데이터 모델 스키마를 선택하려면 다음을 수행합니다.
+
+1. 탭 **[!UICONTROL 컨텐츠 브라우저]** 왼쪽에 있습니다.
+1. 양식 컨테이너로 이동합니다. **[!UICONTROL 설정]**.
+1. 선택 **[!UICONTROL 데이터 모델]**.
+1. 을 통해 양식 데이터 모델 선택 **[!UICONTROL 양식 데이터 모델 선택]** 구성을 저장합니다.
+
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 

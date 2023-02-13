@@ -2,9 +2,9 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3172'
 ht-degree: 2%
 
 ---
@@ -116,11 +116,16 @@ In the following video Adaptive Form components are binded with corresponding Ac
 
 ![업데이트된 템플릿](assets/we-retail-new-invoice.png)
 
-개발자는 업데이트된 템플릿을 업로드하고 적응형 양식에 적용합니다. 적응형 양식은 바인딩이 변경된 필드 목록을 자동으로 감지하고 표시합니다.
+<!--
 
-![바인딩 오류](assets/we-retail-binding-error.png)
+The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
-양식 개발자는 적응형 Forms 필드를 해당 레코드 문서 템플릿에 바인딩합니다.
+![Binding Error](assets/we-retail-binding-error.png)
+
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 이제 적응형 양식이 제출되면 업데이트된 레코드 문서가 생성됩니다.
