@@ -4,9 +4,9 @@ description: 에 대한 주요 변경 사항 [!DNL Adobe Experience Manager Asse
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
+source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1004'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,6 @@ ht-degree: 6%
 | ZIP 보관소에서 자산 추출 | 지원되지 않음 | 자세한 내용은 [의 ZIP 추출 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | 자산 등급 | 지원되지 않음 | 메타데이터 스키마 편집기의 등급 위젯은 지원되지 않습니다. |
 | 콘텐츠 처리 필터 | 지원되지 않음 | 의 일반적인 사용 사례 `ContentDispositionFilter` 는 관리자가 구성할 수 있도록 하는 것입니다 [!DNL Experience Manager] HTML 파일을 제공하고 PDF 파일을 다운로드하는 대신 인라인으로 엽니다. 게시 인스턴스에서 Dispatcher 구성을 사용하여 처리를 관리할 수 있습니다. 작성자 인스턴스에서 Adobe은 컨텐츠 처리 헤더를 수정하는 것을 권장하지 않습니다. 자세한 내용은 [의 콘텐츠 처리 필터 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
-| [보고서 다운로드](/help/assets/asset-reports.md) | 지원되지 않음 | 현재, 자산 사용을 알리는 다운로드 보고서를 사용할 수 없습니다. 자세한 내용은 [보고서 다운로드 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | 제품 사진 촬영 템플릿 | 지원되지 않음 | 자세한 내용은 [제품 사진 촬영 템플릿 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | 스마트 번역 | 지원되지 않음 | [스마트 번역](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) 에서 지원되지 않음 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]. |
 | WebDAV | 지원되지 않음 | 대체 요소에 대해서는 [[!DNL Creative Cloud] 통합](/help/assets/aem-cc-integration-best-practices.md) 또는 [개발자 참조 자료](/help/assets/developer-reference-material-apis.md). |
