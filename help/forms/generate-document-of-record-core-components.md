@@ -2,9 +2,9 @@
 title: 적응형 Forms에 대한 기록 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3109'
 ht-degree: 2%
 
 ---
@@ -326,8 +326,10 @@ When you select a form model, configure Document of Record using options availab
       * **템플릿**: 사용자 지정 템플릿을 선택하려면 [!DNL AEM Forms] server. 에서 사용할 수 없는 템플릿을 사용하려면 [!DNL AEM Forms] server, 먼저 XDP를 업로드해야 합니다 [!DNL AEM Forms] server.
       * **강조색**: 레코드 PDF 문서에서 머리글 텍스트 및 구분선이 렌더링되는 색상입니다.
       * **글꼴 패밀리**: 레코드 PDF 문서에 있는 텍스트의 글꼴 패밀리입니다.
+
       * **데이터 모델에 바인딩되지 않은 양식 개체 포함**: 속성을 설정하면 레코드 문서에서 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다.
-      * **레코드 문서에서 숨겨진 필드 제외**: 속성을 설정하면 레코드 문서에서 제외하기 위해 숨겨진 필드가 식별됩니다.
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **패널 설명 숨기기**: 속성을 설정하면 레코드 문서에서 패널/테이블의 설명이 제외됩니다. 패널 및 테이블에 적용 가능합니다.
    1. **양식 필드 속성**:
       * **확인란 및 라디오 단추 구성 요소의 경우 선택한 값만 표시합니다**: 속성을 설정하면 확인란 및 라디오 단추의 선택한 값만 표시됩니다 [!UICONTROL 기록 문서].
@@ -341,7 +343,6 @@ When you select a form model, configure Document of Record using options availab
       * **면책조항 레이블**: 면책조항 레이블.
       * **면책조항**: 기록 문서에 대한 권한 및 의무의 범위를 지정하는 텍스트입니다.
       * **면책조항 텍스트**: 면책조항 텍스트입니다.
-
       ![마스터 페이지  속성](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ When you select a form model, configure Document of Record using options availab
 **양식 수준 설정**
 
 * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 스키마 기반 적응형 양식의 레코드 문서에서 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-* **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 기록 문서에서 숨김 필드를 제외하려면 속성을 설정하십시오. 사용 설정 시 [서버에서 유효성 검사](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)를 지정하면 서버는 숨겨진 필드를 다시 계산하여 레코드 문서에서 해당 필드를 제외합니다.
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
