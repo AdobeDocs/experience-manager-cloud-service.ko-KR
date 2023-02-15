@@ -1,9 +1,9 @@
 ---
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
-source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
+source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
 workflow-type: tm+mt
-source-wordcount: '3069'
+source-wordcount: '3259'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,11 @@ ht-degree: 5%
 RDE를 통해 개발자는 변경 사항을 신속하게 배포하고 검토할 수 있으므로 로컬 개발 환경에서 작동하는 것으로 입증된 기능을 테스트하는 데 필요한 시간을 최소화할 수 있습니다.
 
 RDE에서 변경 사항을 테스트하면 Cloud Manager 파이프라인을 통해 일반적인 클라우드 개발 환경에 배포할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
+
+
+자세한 내용은 [설정 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html), [사용 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html), 및 [개발 수명 주기](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) RDE 사용.
 
 ## 소개 {#introduction}
 
@@ -138,6 +143,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
+자세한 내용 및 데모는 [RDE를 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) 비디오 자습서입니다.
 
 ## 새 기능을 개발할 때 RDE 사용 {#using-rde-while-developing-a-new-feature}
 
@@ -256,13 +262,23 @@ RDE는 한 번에 하나의 프로젝트를 지원합니다. 코드는 로컬 �
 
 <u>Apache/Dispatcher 구성 배포</u>
 
-전체 폴더 구조는 이러한 유형의 구성에 대해 zip 파일 형식이어야 합니다. 디스패처 구성 폴더의 루트에서 이 명령을 실행하여 압축할 수 있습니다.
+전체 폴더 구조는 이러한 유형의 구성에 대해 zip 파일 형식이어야 합니다.
 
-`zip -y -r dispatcher.zip`
+에서 `dispathcer` AEM 프로젝트의 모듈에서는 아래 maven 명령을 실행하여 dispatcher 구성을 압축할 수 있습니다.
+
+`mvn clean package`
+
+또는 `src` 의 디렉토리 `dispatcher` 모듈:
+
+`zip -y -r dispatcher.zip .`
 
 그런 다음 이 명령으로 구성을 배포합니다.
 
-`aio aem:rde:install -t dispatcher-config dispatcher-wknd-2.1.0.zip`
+`aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-X.X.X-SNAPSHOT.zip`
+
+>[!TIP]
+>
+>위의 명령은 사용자가 [WKND](https://github.com/adobe/aem-guides-wknd) 프로젝트의 dispatcher 구성입니다. 을(를) 교체해야 합니다 `X.X.X` 프로젝트의 dispatcher 구성을 배포할 때 해당 WKND 프로젝트 버전 번호 또는 프로젝트별 버전 번호와 함께 사용하십시오.
 
 성공적으로 배포하면 다음과 유사한 응답이 생성됩니다.
 
@@ -342,6 +358,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
+
+자세한 내용 및 데모는 [RDE 명령 사용 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html) 비디오 자습서입니다.
 
 ## 재설정 {#reset-rde}
 
@@ -474,5 +492,9 @@ Forms 개발자는 AEM Forms Cloud Service Rapid Development Environment를 사�
 
 >[!NOTE]
 >
-> RDE(Rapid Development Environment)의 UI와 Forms을 위한 기타 Cloud Service 환경은 변경되지 않습니다. 적응형 양식에 대한 레코드 템플릿 문서 선택과 같은 모든 기록 관련 옵션이 UI에 계속 표시됩니다. 이러한 환경에는 이러한 옵션을 테스트할 Communication API 및 Document of Record 기능이 없습니다. 따라서 Communication API 또는 레코드 문서 기능이 필요한 옵션을 선택하면 작업이 수행되지 않으며 오류 메시지가 표시되거나 반환됩니다.
+> RDE(Rapid Development Environment)의 UI와 Forms을 위한 기타 Cloud Service 환경에는 차이가 없습니다. 적응형 양식에 대한 레코드 템플릿 문서 선택과 같은 모든 기록 관련 옵션이 UI에 계속 표시됩니다. 이러한 환경에는 이러한 옵션을 테스트할 Communication API 및 Document of Record 기능이 없습니다. 따라서 Communication API 또는 레코드 문서 기능이 필요한 옵션을 선택하면 작업이 수행되지 않으며 오류 메시지가 표시되거나 반환됩니다.
+
+## RDE 자습서
+
+AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 주기를 보여주는 비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
