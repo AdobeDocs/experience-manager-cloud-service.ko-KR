@@ -2,9 +2,9 @@
 title: 적응형 양식에 대한 제출 작업을 구성하는 방법
 description: 적응형 양식은 여러 제출 작업을 제공합니다. 제출 작업은 제출 후 적응형 양식을 처리하는 방법을 정의합니다. 기본 제공 제출 작업을 사용하거나 직접 만들 수 있습니다.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
+source-wordcount: '3131'
 ht-degree: 2%
 
 ---
@@ -185,6 +185,10 @@ AEM Forms을 Microsoft Sharepoint 저장소에 연결하려면
    * API 권한 추가 `offline_access` 및 `Sites.Manage.All` 읽기/쓰기 권한을 제공합니다.
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 바꾸기 `<tenant-id>` 사용 `tenant-id` Microsoft Azure 포털에서 앱을 다운로드할 수 있습니다.
 
+   >[!NOTE]
+   >
+   > 다음 **클라이언트 암호** 필드는 필수 또는 선택 사항이며 Azure Active Directory 응용 프로그램 구성에 따라 다릅니다. 응용 프로그램이 클라이언트 암호를 사용하도록 구성된 경우 클라이언트 암호를 제공해야 합니다.
+
 1. 클릭 **[!UICONTROL Connect]**. 연결된 경우 `Connection Successful` 메시지가 나타납니다.
 
 1. 이제 을(를) 선택합니다. **SharePoint 사이트** > **문서 라이브러리** > **SharePoint 폴더**: 데이터를 저장합니다.
@@ -239,6 +243,10 @@ AEM Forms을 Microsoft OneDrive 저장소에 연결하려면 다음을 수행하
    * Microsoft Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. 바꾸기 `[author-instance]` (작성자 인스턴스의 URL로 표시됨)
    * API 권한 추가 `offline_access` 및 `Files.ReadWrite.All` 읽기/쓰기 권한을 제공합니다.
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. 바꾸기 `<tenant-id>` 사용 `tenant-id` Microsoft Azure 포털에서 앱을 다운로드할 수 있습니다.
+
+   >[!NOTE]
+   >
+   > 다음 **클라이언트 암호** 필드는 필수 또는 선택 사항이며 Azure Active Directory 응용 프로그램 구성에 따라 다릅니다. 응용 프로그램이 클라이언트 암호를 사용하도록 구성된 경우 클라이언트 암호를 제공해야 합니다.
 
 1. 클릭 **[!UICONTROL Connect]**. 연결된 경우 `Connection Successful` 메시지가 나타납니다.
 
