@@ -8,7 +8,7 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ef617b38c8dec355a0fa8ca72af652f37d6668a4
+source-git-commit: 5eeece66bb4d13ac9d40a18514332133dc980325
 workflow-type: tm+mt
 source-wordcount: '3931'
 ht-degree: 96%
@@ -773,8 +773,8 @@ ht-degree: 96%
          + [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)
          + [맞춤형 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + [기능 테스트](/help/implementing/cloud-manager/functional-testing.md)
-         + [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
+         + [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
