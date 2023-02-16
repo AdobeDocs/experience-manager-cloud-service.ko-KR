@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.3.0 릴리스 정보입니다.'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1153'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 97%
 
 * 이제 콘텐츠 모델 편집기의 간단한 확인란을 사용하여 콘텐츠 모델 데이터 유형을 변환 가능한 것으로 정의할 수 있습니다. 또한 AEM 번역 규칙 및 구성이 자동으로 업데이트됩니다.
 
-## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
@@ -56,7 +56,7 @@ ht-degree: 97%
 
 * 이제 태그 이름, 작성 날짜 또는 수정 날짜를 기준으로 태그 선택기 창에서 오름차순 또는 내림차순으로 [태그를 정렬](/help/assets/organize-assets.md#use-tags-to-organize-assets)할 수 있습니다.
 
-## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#what-is-new-forms}
 
@@ -95,7 +95,7 @@ ht-degree: 97%
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* 서버 간 API 호출을 인증하는 데 사용되는 자격 증명(예: GraphQL API 요청)은 이제 개발자 콘솔에서 제공하는 방식으로 만료되기 전에 새로 고칠 수 있습니다. 자세한 내용은 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)를 참조하십시오.
+* 서버 간 API 호출을 인증하는 데 사용되는 자격 증명(예: GraphQL API 요청)은 이제 개발자 콘솔에서 제공하는 셀프 서비스 방식으로 만료되기 전에 새로 고칠 수 있습니다. 자세한 내용은 [설명서](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)를 참조하십시오.
 
 * 이전에 활성화되지 않은 버전 제거 및 감사 로그 제거 유지 관리 작업이 새 환경에서 활성화될 수 있습니다. [유지 관리 작업](/help/operations/maintenance.md) 문서에서 관련된 값을 참조하십시오.
 
@@ -103,7 +103,7 @@ ht-degree: 97%
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다 [여기 있습니다.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 콘텐츠 전송 도구 {#ctt-release}
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.6.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.6.0 릴리스 정보입니다.'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -43,13 +43,13 @@ ht-degree: 97%
 
 * 새로운 [목차 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html)는 핵심 구성 요소뿐만 아니라 모든 구성 요소와 함께 작동하므로 자동으로 콘텐츠 페이지에 목차를 렌더링합니다. 또한 서버측에서 렌더링되고 디스패처에 의해 완전히 캐시되므로 로드하는 것도 효율적입니다.
 
-## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#assets-features}
 
 Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이미지의 색상을 구분하고 수집 시 이러한 차이를 태그로 자동 적용합니다](/help/assets/color-tag-images.md). 이러한 태그를 통해 이미지 색상 구성에 따라 향상된 검색 환경을 사용할 수 있습니다. 이미지에 태그 지정되는 색상 수를 1~40개 범위에서 구성하여 나중에 해당 색상을 기준으로 이미지를 검색할 수 있습니다.
 
-## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms]의 새로운 기능 {#forms-features}
 
@@ -98,7 +98,7 @@ Experience Manager Assets는 Adobe Sensei AI 기능을 사용하여 이제 [이�
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다 [여기 있습니다.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 마이그레이션 도구 {#migration-tools}
 

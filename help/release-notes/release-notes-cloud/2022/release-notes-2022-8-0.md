@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.8.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.8.0 릴리스 정보입니다.'
-source-git-commit: 6a4e9015e18556c04a71cba0dfa6c7f688c36cb6
+exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보 {#release-notes}
 
@@ -49,7 +49,7 @@ ht-degree: 98%
 
 ![콘텐츠 조각 언어](/help/release-notes/assets/cfconsole-languages.png)
 
-## [!DNL Experience Manager Assets] 로서의 [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]의 새로운 기능 {#features-assets}
 
@@ -57,7 +57,7 @@ ht-degree: 98%
 
    ![에셋 업로드 제한 사항](/help/assets/assets/asset-upload-restrictions.png)
 
-## [!DNL Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 프리릴리스 채널에서 사용할 수 있는 새로운 기능 {#prerelease-features-forms}
 
@@ -78,7 +78,7 @@ ht-degree: 98%
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다 [여기 있습니다.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 마이그레이션 도구 {#migration-tools}
 

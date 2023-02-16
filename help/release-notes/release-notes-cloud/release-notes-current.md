@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2216d4a299c23a88659692d600b5995ff98cdde7
+source-git-commit: 0c7ed29e53d9315ad45102eef5d4e1f66ab4b4ae
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 23%
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다 [여기 있습니다.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 마이그레이션 도구 {#migration-tools}
 

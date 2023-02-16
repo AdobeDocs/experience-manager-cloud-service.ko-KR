@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2022.10.0 릴리스 정보입니다.'
-source-git-commit: 151cc9777b40bb79f9035c99ec587a9a9285f2df
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 100%
 
 ## Cloud Manager {#cloud-manager}
 
-[여기](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)에서 Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다.
+Cloud Manager 월별 릴리스의 전체 목록을 찾을 수 있습니다 [여기 있습니다.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## 마이그레이션 도구 {#migration-tools}
 
