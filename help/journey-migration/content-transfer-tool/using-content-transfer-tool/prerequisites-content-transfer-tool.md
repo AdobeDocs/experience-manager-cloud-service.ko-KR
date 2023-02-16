@@ -2,7 +2,7 @@
 title: 콘텐츠 전송 도구 사전 요구 사항
 description: 콘텐츠 전송 도구 사전 요구 사항
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: 4ccebe19d38f1ece58ea7170344ef2fd86a513d2
+source-git-commit: 048f358ed125e3627896aeeb86242340e2db9272
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 4%
@@ -25,7 +25,7 @@ ht-degree: 4%
 | 고려 사항 | 현재 지원되는 항목 |
 |--- |--- |
 | AEM 버전 | 컨텐츠 전송 도구는 AEM 6.3 이상 버전에서만 실행할 수 있습니다. |
-| 세그먼트 저장소 크기 | 5,500만 개 미만의 JCR 노드와 최대 83GB(온라인 압축 크기)의 기존 저장소 *작성자* 및 50GB *게시* 은 현재 지원됩니다. Adobe 고객 지원 센터를 통해 지원 티켓을 만들어 이러한 제한을 초과하는 세그먼트 저장소 크기에 대한 옵션을 논의합니다. |
+| 세그먼트 저장소 크기 | 5,500만 개 미만의 JCR 노드와 최대 250GB(온라인 압축 크기)의 기존 저장소 *작성자* 및 50GB *게시* 은 현재 지원됩니다. Adobe 고객 지원 센터를 통해 지원 티켓을 만들어 이러한 제한을 초과하는 세그먼트 저장소 크기에 대한 옵션을 논의합니다. |
 | 컨텐츠 저장소의 총 크기 <br>*(세그먼트 저장소 + 데이터 저장소)* | 컨텐츠 전송 도구는 파일 데이터 저장소 유형의 데이터 저장소에 대해 최대 20TB의 컨텐츠를 전송하도록 설계되었습니다. 현재 20TB를 초과하는 항목은 지원되지 않습니다. 20TB 이상의 컨텐츠에 대한 옵션을 논의하려면 Adobe 고객 지원 팀과 지원 티켓을 작성합니다. <br>대용량 리포지토리에 대한 컨텐츠 전송 프로세스를 획기적으로 단축하려면 선택 사항입니다 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) 단계를 사용할 수 있습니다. 이는 데이터 저장소의 파일 데이터 저장소, Amazon S3 및 Azure 데이터 저장소 유형에 적용됩니다. Amazon S3 및 Azure Data Store의 경우 20TB보다 큰 저장소 크기가 지원됩니다. |
 | 총 Lucene 인덱스 크기 | 최대 25GB의 총 Lucene 인덱스 크기(제외) `/oak:index/lucene` 및 `/oak:index/damAssetLucene` 은 현재 지원됩니다. 이 제한을 초과하는 색인 크기에 대한 옵션을 토론하려면 Adobe 고객 지원 센터에서 지원 티켓을 만드십시오. |
 | 노드 이름 길이 | 노드 부모 경로가 350바이트보다 크거나 같은 경우 노드 이름의 길이는 150바이트 이하여야 합니다. AEM as a Cloud Service의 문서 노드 저장소에서 지원하려면 이러한 노드 이름을 150바이트 미만으로 단축해야 합니다. 이러한 긴 노드 이름이 수정되지 않으면 처리가 실패합니다. |
