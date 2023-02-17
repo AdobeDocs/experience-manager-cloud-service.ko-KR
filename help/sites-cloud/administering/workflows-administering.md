@@ -4,10 +4,10 @@ description: 워크플로 인스턴스 관리 방법 알아보기
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 95%
 
 ---
 
@@ -63,6 +63,12 @@ ht-degree: 100%
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >워크플로우를 종료하거나 중단하려면 참가자 단계에서와 같이 사용자 개입을 기다리는 상태여야 합니다. 현재 실행 중인 작업(실행 중인 활성 스레드)을 중단하려고 하면 예상 결과가 생성되지 않을 수 있습니다.
+
+
 ## 보관된 워크플로 보기 {#viewing-archived-workflows}
 
 1. 탐색을 사용하여 **도구**&#x200B;를 선택한 다음 **워크플로**&#x200B;를 선택합니다.
@@ -76,6 +82,7 @@ ht-degree: 100%
    >
    >* **종료** 작업 사용
    >* 워크플로의 대상인 페이지가 (강제로) 삭제되면 워크플로가 종료됩니다.
+
 
 
 1. 특정 항목을 선택한 다음 **내역 열기**&#x200B;를 선택하여 세부 정보를 표시합니다.
