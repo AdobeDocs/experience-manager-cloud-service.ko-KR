@@ -2,9 +2,9 @@
 title: 대형 콘텐츠 저장소 처리
 description: 이 섹션에서는 대용량 컨텐츠 리포지토리의 처리에 대해 설명합니다
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1771'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ AzCopy를 사용한 사전 복사는 현재 CTT 추출 중에 Windows에서 지�
 
 ### 소스 AEM 인스턴스가 파일 데이터 저장소를 사용하도록 구성된 경우 추가적인 고려 사항 {#additional-considerations-aem-instance-filedatastore}
 
-* 로컬 시스템의 사용 가능한 공간이 원본 데이터 저장소1/256 크기보다 훨씬 크어야 합니다. 예를 들어 데이터 저장소 크기가 3TB이면 11.72GB보다 큰 여유 공간이 `crx-quickstart/cloud-migration` AzCopy를 사용할 소스의 폴더입니다. 최소한 소스 시스템의 여유 공간은 1GB여야 합니다. 사용 가능한 공간은 `df -h` Linux 인스턴스의 명령 및 Windows 인스턴스의 dir 명령
+* 로컬 시스템의 사용 가능한 공간이 원본 데이터 저장소1/256 크기보다 훨씬 크어야 합니다. 예를 들어 데이터 저장소 크기가 3TB이면 11.72GB보다 큰 여유 공간이 `crx-quickstart/cloud-migration` AzCopy를 사용할 소스의 폴더입니다. 적어도 소스 시스템의 여유 공간은 1GB여야 합니다. 사용 가능한 공간은 `df -h` Linux 인스턴스의 명령 및 Windows 인스턴스의 dir 명령
 
 * AzCopy가 활성화된 상태에서 추출을 실행할 때마다 전체 파일 데이터 저장소가 변환되어 클라우드 마이그레이션 컨테이너에 복사됩니다. 마이그레이션 세트가 데이터 저장소 크기보다 상당히 작은 경우 AzCopy 추출이 최적의 방법이 아닙니다.
 
@@ -101,7 +101,7 @@ Azure 포털의 기존 컨테이너 속성 페이지에서 **크기 계산** 단
 
 Amazon S3, Azure Blob 저장 공간 및 파일 데이터 저장소에 대한 AzCopy 지원이 최신 CTT 릴리스에 포함되어 있습니다.
 에서 CTT 최신 릴리스를 다운로드할 수 있습니다 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털.
-
+버전 2.0.0 이상만 지원되며 최신 버전을 사용하는 것이 좋습니다.
 
 ### 3. azcopy.config 파일 구성 {#configure-azcopy-config-file}
 
