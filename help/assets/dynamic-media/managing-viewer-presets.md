@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
 workflow-type: tm+mt
-source-wordcount: '4194'
+source-wordcount: '4369'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >
 >기본적으로 자산의 세부 사항 보기에서 뷰어 를 선택하면 시스템에 15개의 뷰어 사전 설정이 표시됩니다. You can increase this limit. 자세한 내용은 [표시되는 뷰어 사전 설정 수를 늘립니다](#increasing-the-number-of-viewer-presets-that-display).
 
-### 반응형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
+### 응답형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
 
 웹 페이지마다 요구 사항이 다릅니다. 예를 들어, 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지를 원하는 경우가 있습니다. 다른 경우 HTML5 뷰어를 호스팅 페이지에 직접 포함해야 합니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있습니다. 또는 &quot;응답형&quot;이며 다른 장치 또는 다른 브라우저 창 크기에 대해 다르게 표시됩니다. 이러한 요구 사항을 수용하기 위해 Dynamic Media과 함께 제공되는 사전 정의된 모든 기본 HTML5 뷰어는 정적 웹 페이지와 응답형 디자인 웹 페이지를 모두 지원합니다.
 
@@ -440,6 +440,19 @@ Experience Manager에서 자산을 볼 때 광범위한 뷰어 사전 설정이 
 
 1. (선택 사항) [뷰어 사전 설정 편집] 페이지의 맨 위에서 다음을 선택합니다 **[!UICONTROL 데스크탑]**, **[!UICONTROL 태블릿]**, 또는 **[!UICONTROL 전화]** 다양한 장치 및 화면 유형에 대한 시각적 스타일을 고유하게 정의하기 위한 .
 1. 뷰어 사전 설정 편집기 페이지에서 **[!UICONTROL 비헤이비어]** 탭. 또는 뷰어에서 시각적 요소를 선택하여 구성에 대해 선택할 수 있습니다.
+예를 들어 *VideoPlayer* 유형, 다음 **[!UICONTROL 수정자]** > **[!UICONTROL 재생]**&#x200B;에서는 세 가지 적응형 스트리밍 옵션 중 하나를 선택할 수 있습니다.
+
+   * **[!UICONTROL 대시]** - 비디오 스트림은 대시로만 표시됩니다.
+   * **[!UICONTROL hls]** - 비디오만 hls로 스트리밍됩니다.
+   * **[!UICONTROL 자동]** - 우수 사례. DASH 및 HLS 스트림 생성은 저장 영역에 최적화되어 있습니다. 따라서 Adobe은 항상 **[!UICONTROL 자동]** 재생 유형으로 사용할 수 있습니다. 비디오 스트림은 다음과 같이 대시, hls 또는 progressive로 스트리밍됩니다.
+      * 브라우저가 DASH를 지원하는 경우 먼저 DASH 스트리밍이 사용됩니다.
+      * 브라우저가 DASH를 지원하지 않으면 HLS 스트리밍이 사용됩니다.
+      * 브라우저가 DASH 또는 HLS를 지원하지 않으면 마지막으로 점진적 재생이 사용됩니다.
+
+   >[!NOTE]
+   >
+   >를 보고 사용하려면 **[!UICONTROL 대시]** 옵션을 사용하려면 먼저 계정의 Adobe 기술 지원 팀에서 이를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](/help/assets/dynamic-media/video.md#enable-dash).
+
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 
    시각적 편집기의 많은 구성 요소에는 관련된 자세한 설명이 있습니다. 이러한 설명은 구성 요소를 확장하여 연결된 매개 변수를 표시할 때 파란색 상자 내에 표시됩니다.
@@ -454,15 +467,19 @@ Experience Manager에서 자산을 볼 때 광범위한 뷰어 사전 설정이 
    >텍스트 필드에 값을 입력한 후 사용자 인터페이스의 다른 곳을 선택하여 변경 사항을 제출하고 가상 키보드를 닫습니다. 선택하는 경우 **[!UICONTROL Enter 키]**&#x200B;인 경우 작업이 발생하지 않습니다.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장]**.
-1. 새 뷰어 사전 설정을 게시합니다. 웹 사이트에서 사전 설정을 사용하려면 먼저 사전 설정을 게시해야 합니다.
+1. 새 뷰어 사전 설정을 게시합니다. 웹 사이트에서 해당 결과 URL을 사용할 수 있도록 사전 설정을 게시해야 합니다.
 
    자세한 내용은 [뷰어 사전 설정 게시](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >적응형 스트리밍 프로필을 사용하는 이전 비디오의 경우, HLS 스트리밍을 사용하면 사용자가 계속 URL을 재생할 수 있습니다 [비디오 자산 재처리](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). 재처리 후 동일한 URL이 계속 작동하지만 이제는 *둘 다* DASH 및 HLS 스트리밍이 활성화되었습니다.
 
 ### 대화형 뷰어 사전 설정을 만들기 위한 특수 고려 사항 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **패널의 이미지 축소판 표시 모드 정보:**
 
-대화형 비디오 뷰어 사전 설정을 만들거나 편집할 때 사용할 표시 모드 설정을 선택할 수 있습니다. 이 선택 사항은 `InteractiveSwatches` 에서 **[!UICONTROL 선택한 구성 요소]** 아래의 풀다운 메뉴 **[!UICONTROL 비헤이비어]** 탭. The Display mode you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`Display mode (default) or a `continuous` Display mode.
+대화형 비디오 뷰어 사전 설정을 만들거나 편집할 때 사용할 표시 모드 설정을 선택할 수 있습니다. 이 선택 사항은 `InteractiveSwatches` 에서 **[!UICONTROL 선택한 구성 요소]** 아래의 풀다운 메뉴 **[!UICONTROL 비헤이비어]** 탭. 선택한 디스플레이 모드는 비디오가 재생되는 동안 축소판이 표시되는 방법과 시기에 영향을 줍니다. You can choose either a `segment`Display mode (default) or a `continuous` Display mode.
 
 <table>
  <tbody>

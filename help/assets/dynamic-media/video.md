@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media의 비디오
-description: 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고서 보기, 비디오에 자막, 자막 또는 장 마커 추가 등과 같은 Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다.
+description: Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다. 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고서 보기, 비디오에 자막, 자막 또는 장 마커 추가 등에 대한 우수 사례를 검토할 수 있습니다.
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: d711057024e62aab00d76f40a729ee59590bbb59
 workflow-type: tm+mt
-source-wordcount: '9349'
+source-wordcount: '10264'
 ht-degree: 4%
 
 ---
@@ -122,7 +122,7 @@ Dynamic Media의 비디오는 데스크탑, 태블릿 및 모바일 장치를 �
 
 단일 비디오 및 응용 비디오 세트를 관리하는 경우 다음과 같이 지원됩니다.
 
-* 지원되는 다양한 비디오 형식 및 오디오 포맷의 비디오를 업로드하고 여러 화면에서 재생되도록 비디오를 MP4 H.264 형식으로 인코딩합니다. 사전 정의된 응용 비디오 사전 설정, 단일 비디오 인코딩 사전 설정을 사용하거나 자체 인코딩을 사용자 지정하여 비디오의 품질과 크기를 제어할 수 있습니다.
+* 다양한 비디오 형식 및 오디오 포맷에서 비디오를 업로드하고 여러 화면에서 재생되도록 비디오를 MP4 H.264 형식으로 인코딩합니다. 사전 정의된 응용 비디오 사전 설정, 단일 비디오 인코딩 사전 설정을 사용하거나 자체 인코딩을 사용자 지정하여 비디오의 품질과 크기를 제어할 수 있습니다.
 
    * 응용 비디오 세트가 생성되면 MP4 비디오가 포함됩니다.
    * **참고**: 기본/소스 비디오는 응용 비디오 세트에 추가되지 않습니다.
@@ -155,19 +155,30 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 플레이어의 디자인 측면에서는 표준 웹 개발 도구를 사용하여 비디오 플레이어의 기능을 디자인할 수 있습니다. 예를 들어 HTML5 및 CSS를 사용하여 단추, 컨트롤 및 사용자 지정 포스터 이미지 배경을 디자인하여 고객에게 맞춤형 모양을 만들어 줄 수 있습니다.
 
-뷰어의 재생 측에서 브라우저의 비디오 기능을 자동으로 감지합니다. 그런 다음 응용 비디오 스트리밍이라고도 하는 HLS(HTTP Live Streaming)를 사용하여 비디오를 제공합니다. 또는 이러한 배달 방법이 없으면 HTML 5 프로그레시브가 대신 사용됩니다.
+뷰어의 재생 측에서 브라우저의 비디오 기능을 자동으로 감지합니다. 응용 비디오 스트리밍이라고도 하는 HLS 또는 DASH를 사용하여 비디오를 제공합니다. 또는 이러한 배달 방법이 없으면 HTML 5 프로그레시브가 대신 사용됩니다.
+
+>[!IMPORTANT]
+>
+>DASH를 보거나 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 DASH를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
 
 HTML 5 및 CSS를 사용하여 재생 구성 요소를 디자인하는 기능을 단일 플레이어로 결합할 수 있습니다. 포함된 재생을 가질 수 있으며 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용할 수 있습니다. 이 모든 기능은 데스크탑 및 모바일 사용자 모두에게 리치 미디어 콘텐츠의 범위를 확장하고 간소화된 비디오 경험을 제공할 수 있음을 의미합니다.
 
 참조 - [Experience Manager Assets 전용 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) 에서 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
+
 ### HTML 5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 데스크탑 및 모바일 적응형 비디오 스트리밍의 경우 비트율 전환에 사용되는 비디오는 응용 비디오 세트의 모든 MP4 비디오를 기반으로 합니다.
 
-비디오 재생은 HLS 또는 점진적 비디오 다운로드를 사용하여 발생합니다. 6.0, 6.1 및 6.2와 같은 이전 버전의 Experience Manager에서는 비디오가 HTTP를 통해 스트리밍되었습니다.
+비디오 재생은 HLS 또는 DASH 또는 점진적 비디오 다운로드를 사용하여 발생합니다. 6.0, 6.1 및 6.2와 같은 이전 버전의 Experience Manager에서는 비디오가 HTTP를 통해 스트리밍되었습니다.
 
-그러나 Experience Manager 6.3 이상에서는 DM 게이트웨이 서비스 URL이 항상 HTTPS를 사용하므로 비디오가 HTTPS(즉, HLS)를 통해 스트리밍됩니다. 이 기본 동작에는 고객이 영향을 주지 않습니다. 즉, 비디오 스트리밍은 브라우저가 지원하지 않는 한 항상 HTTPS를 통해 발생합니다. (다음 표를 참조하십시오.) 따라서,
+그러나 Experience Manager 6.3 이상에서는 DM 게이트웨이 서비스 URL이 항상 HTTPS를 사용하므로 비디오가 HTTPS(즉, HLS 또는 DASH)를 통해 스트리밍됩니다. 이 기본 동작에는 고객이 영향을 주지 않습니다. 즉, 비디오 스트리밍은 브라우저가 지원하지 않는 한 항상 HTTPS를 통해 발생합니다. (다음 표를 참조하십시오.)
+
+>[!IMPORTANT]
+>
+>DASH를 보거나 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 DASH를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
+
+따라서,
 
 * HTTPS 비디오 스트리밍이 있는 HTTPS 웹 사이트가 있는 경우 스트리밍이 좋습니다.
 * HTTPS 비디오 스트리밍이 있는 HTTP 웹 사이트가 있는 경우 스트리밍이 문제가 해결되고 웹 브라우저에서 혼합 콘텐츠 문제가 발생하지 않습니다.
@@ -203,17 +214,17 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   <tr>
    <td>데스크톱</td>
    <td>Firefox 45 이상</td>
-   <td>HLS</td>
+   <td>HLS 또는 DASH* 응용 스트리밍</td>
   </tr>
   <tr>
    <td>데스크톱</td>
    <td>Chrome</td>
-   <td>HLS</td>
+   <td>HLS 또는 DASH* 응용 스트리밍</td>
   </tr>
   <tr>
    <td>데스크톱</td>
    <td>Safari(Mac)</td>
-   <td>HLS</td>
+   <td>HLS 또는 DASH* 응용 스트리밍</td>
   </tr>
   <tr>
    <td>모바일</td>
@@ -223,7 +234,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   <tr>
    <td>모바일</td>
    <td>Chrome(Android™ 7 이상)</td>
-   <td>HLS</td>
+   <td>HLS 또는 DASH* 응용 스트리밍/td&gt;
   </tr>
   <tr>
    <td>모바일</td>
@@ -233,20 +244,24 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   <tr>
    <td>모바일</td>
    <td>Safari(iOS)</td>
-   <td>HLS</td>
+   <td>HLS 또는 DASH* 응용 스트리밍</td>
   </tr>
   <tr>
    <td>모바일</td>
    <td>Chrome(iOS)</td>
-   <td>HLS</td>
+   <td>HLS 또는 DASH* 응용 스트리밍</td>
   </tr>
  </tbody>
 </table>
 
+>[!IMPORTANT]
+>
+>*DASH를 보거나 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 DASH를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
+
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>HLS</td>
+   <td>HLS or DASH</td>
   </tr>
  -->
 
@@ -288,7 +303,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 ### 파일의 메타데이터 가져오기 {#obtaining-a-file-s-metadata}
 
-비디오 편집 도구를 사용하여 파일의 메타데이터를 보거나 메타데이터를 얻기 위해 디자인된 응용 프로그램을 사용하여 파일의 메타데이터를 가져올 수 있습니다. 다음은 타사 응용 프로그램인 MediaInfo를 사용하여 비디오 파일의 메타데이터를 가져오는 방법에 대한 지침입니다.
+비디오용 편집 도구를 사용하여 파일의 메타데이터를 보거나 메타데이터를 얻기 위해 디자인된 응용 프로그램을 사용하여 파일의 메타데이터를 볼 수 있습니다. 다음은 타사 응용 프로그램인 MediaInfo를 사용하여 비디오 파일의 메타데이터를 가져오는 방법에 대한 지침입니다.
 
 1. 이동 [MediaInfo 다운로드](https://mediaarea.net/en/MediaInfo/Download).
 1. GUI 버전에 대한 설치 프로그램을 선택하여 다운로드하고 설치 지침을 따르십시오.
@@ -326,7 +341,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 * **[!UICONTROL 상수 비트율 인코딩]** (CBR) - CBR 인코딩 중에 비트율 또는 초당 비트 수가 인코딩 프로세스 전체에서 동일하게 유지됩니다. CBR 인코딩은 전체 비디오에서 설정에 설정된 데이터 속도를 유지합니다. 또한 CBR 인코딩은 품질을 위해 미디어 파일을 최적화하지는 않지만 저장 공간에 저장합니다.
 비디오가 전체 비디오 전체에서 유사한 동작 수준을 포함하는 경우 CBR을 사용합니다. CBR은 비디오 컨텐츠를 스트리밍하는 데 가장 일반적으로 사용됩니다. 참조 - [사용자가 추가한 비디오 인코딩 매개 변수 사용](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL 변수 비트율 인코딩]** (VBR) - VBR 인코딩은 압축기에 필요한 데이터를 기준으로 사용자가 설정한 상한과 데이터 속도를 조절합니다. 이 기능은 VBR 인코딩 프로세스 중에 미디어 파일의 비트율이 미디어 파일 비트율 요구 사항에 따라 동적으로 증가 또는 감소함을 의미합니다.
+* **[!UICONTROL 변수 비트율 인코딩]** (VBR) - VBR 인코딩은 압축기에 필요한 데이터를 기반으로 사용자가 설정한 상한과 데이터 속도를 조절합니다. 이 기능은 VBR 인코딩 프로세스 중에 미디어 파일의 비트율이 미디어 파일 비트율 요구 사항에 따라 동적으로 증가 또는 감소함을 의미합니다.
 VBR은 인코딩하는 데 더 오래 걸리지만 가장 유리한 결과를 생성합니다. 미디어 파일의 품질이 우수합니다. VBR은 비디오 컨텐츠의 http 점진적 게재에 가장 일반적으로 사용됩니다.
 
 VBR 대 CRB는 언제 사용합니까?
@@ -400,6 +415,41 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 ### 인코딩된 비디오 파일 형식 {#encoded-video-file-format}
 
 Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것이 좋습니다. MP4 파일은 H.264 비디오 코덱을 사용하기 때문에 고품질의 비디오를 제공하지만 압축된 파일 크기로 제공합니다.
+
+### 계정에서 DASH 사용 {#enable-dash}
+
+DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 국제 표준이며, 다양한 비디오 뷰어에서 광범위하게 채택됩니다. DASH를 활성화하면 응용 비디오 스트리밍을 위한 HLS 또는 DASH 중에서 선택할 수 있는 옵션이 제공됩니다. 플레이어 간에 자동 전환을 사용하여 둘 다 선택할 수도 있습니다.
+
+계정에서 DASH를 활성화하면 다음과 같은 주요 이점이 있습니다.
+
+* 적응형 스트리밍을 위한 DASH 스트림 비디오를 패키지화합니다. 이 방법을 사용하면 전달 효율성이 향상됩니다. 적응형 스트리밍을 통해 고객에게 최상의 시청 경험을 제공합니다.
+* Dynamic Media 플레이어에서 최적화된 스트리밍은 HLS와 DASH 스트리밍 간에 전환되므로 최상의 서비스 품질을 보장합니다. Safari 브라우저를 사용하면 비디오 플레이어가 HLS로 자동 전환됩니다.
+* 비디오 뷰어 사전 설정을 편집하여 선호하는 스트리밍 방법(HLS 또는 DASH)을 구성할 수 있습니다.
+* 최적화된 비디오 인코딩을 통해 DASH 기능을 활성화하는 동안 추가 스토리지를 사용하지 않습니다. HLS 및 DASH 모두에 대해 하나의 비디오 코드 세트가 생성되어 비디오 저장 비용을 최적화합니다.
+* 고객이 보다 쉽게 비디오를 게재할 수 있도록 지원합니다.
+* API를 통해 스트리밍 URL도 가져옵니다.
+
+DASH 사용 요청을 시작합니다. 계정에서 자동으로 활성화되지 않습니다.
+
+>[!IMPORTANT]
+>
+>계정에서 DASH 활성화는 현재 북미에서만 사용할 수 있습니다.
+
+아래 설명된 대로 지원 사례를 만듭니다. 지원 사례에서 계정에 DASH를 사용하도록 설정해야 한다고 명시해야 합니다.
+
+**계정에서 DASH를 사용하려면**
+
+1. [Admin Console을 사용하여 새 지원 사례 만들기를 시작합니다](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
+1. 다음 정보를 제공하는지 확인하면서 지원 사례를 만들려면 지침을 따르십시오.
+
+   * 기본 연락처 이름, 이메일, 전화
+   * Dynamic Media 계정에서 DASH를 활성화하려는 경우.
+
+1. Adobe 고객 지원에서는 요청을 제출하는 순서에 따라 DASH 고객 대기 목록에 사용자를 추가합니다.
+1. Adobe이 요청을 처리할 준비가 되면 고객 지원에서 DASH 활성화를 위한 대상 날짜를 조정하고 설정할 수 있도록 사용자에게 연락합니다.
+1. 고객 지원 센터에서 완료 후 알림을 받습니다.
+1. 만들기 [비디오 뷰어 사전 설정](#creating-a-new-viewer-preset) 평소대로요
+
 
 ## YouTube에 비디오 게시 {#publishing-videos-to-youtube}
 
@@ -609,7 +659,7 @@ YouTube 구성 만들기 페이지를 열어 둡니다. 곧 다시 돌아오실 
 
    추가한 태그를 삭제하려면 태그를 선택하고 을(를) 선택합니다 **[!UICONTROL X]**.
 
-1. 원하는 태그 추가를 마치면 를 선택합니다 **[!UICONTROL 저장]**.
+1. 원하는 태그를 추가했으면 을 선택합니다 **[!UICONTROL 저장]**.
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
@@ -655,7 +705,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 곧 다시 돌아오실
 
    추가한 태그를 삭제하려면 태그를 선택하고 을(를) 선택합니다 **X**.
 
-1. 원하는 태그 추가를 마치면 를 선택합니다 **[!UICONTROL 확인]**.
+1. 원하는 태그를 추가했으면 을 선택합니다 **[!UICONTROL 확인]**.
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
@@ -1028,7 +1078,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## 비디오에 자막 또는 자막 추가 {#adding-captions-to-video}
 
-단일 비디오나 응용 비디오 세트에 자막을 추가하여 비디오의 범위를 글로벌 마켓플레이스로 확장할 수 있습니다. 자막을 추가하면 오디오를 다시 녹음할 필요가 없거나, 각 다른 언어의 오디오를 다시 녹음하기 위해 기본 스피커를 사용할 필요가 없습니다. 비디오는 녹음된 언어로 재생됩니다. 외국어 자막이 나타나므로 다른 언어를 사용하는 사람들이 오디오 부분을 계속 이해할 수 있습니다.
+단일 비디오나 응용 비디오 세트에 자막을 추가하여 비디오의 범위를 글로벌 마켓플레이스로 확장할 수 있습니다. 자막을 추가하면 오디오를 더하거나 각 다른 언어에 대해 오디오를 다시 녹음하기 위해 기본 스피커를 사용할 필요가 없습니다. 비디오는 녹음된 언어로 재생됩니다. 외국어 자막이 나타나므로 다른 언어를 사용하는 사람들이 오디오 부분을 계속 이해할 수 있습니다.
 
 또한 자막은 청각 장애나 난청인 사람들에게 더 많은 접근성을 가능하게 해줍니다.
 
@@ -1296,3 +1346,330 @@ T**o add a custom video thumbnail**,
    The custom thumbnail is added to your video.
 
 -->
+
+## Dynamic Media 자산에 대한 Dynamic Media URL 변경
+
+Dynamic Media에 처리된 비디오는 기본 제공 뷰어 및 매니페스트 URL에 직접 액세스하여 사용자 지정 뷰어를 통해 재생함으로써 사용할 수 있습니다. 다음은 비디오의 매니페스트 URL을 가져오기 위한 API입니다.
+
+### getVideoManifestURI API 정보
+
+다음 `getVideoManifestURI`API는 c를 통해 노출됩니다`q-scene7-api:com.day.cq.dam.scene7.api` 및 를 사용하여 다음 매니페스트 URL을 생성할 수 있습니다.
+
+```java
+/**   
+* Returns the manifest url for videos 
+* @param resource video resource 
+* @param manifestType type of video streaming manifest being requested 
+* @param onlyIfPublished return a manifest only if the video is published 
+* @return the manifest url for videos 
+* 
+* @throws Exception 
+*/
+@Nullable 
+String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean onlyIfPublished) throws Exception;
+```
+
+#### getVideoManifestURI API 매개 변수
+
+이 API는 다음 세 가지 매개 변수를 사용합니다.
+
+| 매개변수 | 설명 |
+| --- | --- |
+| `resource` | Dynamic Media이 수집한 비디오에 해당하는 리소스입니다. |
+| `manifestType` | 다음 중 하나일 수 있습니다 `ManifestType.DASH` 또는 `ManifestType.HLS` |
+| `onlyIfPublished` | 매니페스트 URI가 게시되어 게재 계층에서 사용할 수 있는 경우에만 매니페스트 URI가 생성되는 경우 true로 설정합니다. |
+
+위의 메서드를 사용하여 비디오에 대한 매니페스트 URL을 가져오려면 다음을 추가하십시오 [비디오 인코딩 프로필](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 를 &quot;비디오 업로드&quot; 폴더로 업로드합니다. Dynamic Media은 폴더에 할당된 비디오 인코딩 파일에 있는 인코딩을 기반으로 이러한 비디오를 처리합니다. 이제 업로드된 비디오의 매니페스트 URL을 가져오기 위해 위의 API를 호출할 수 있습니다.
+
+### 오류 시나리오
+
+오류가 있으면 API가 null을 반환합니다. 예외가 Experience Manager 오류 로그에 기록됩니다. 이러한 모든 로그된 오류는 `Could not generate Video Manifest URI`. 다음 시나리오에서는 이러한 오류가 발생할 수 있습니다.
+
+* An `IllegalArgumentException` 다음 중 하나에 대해 기록됩니다.
+
+   * 다음 `resource` 전달된 매개 변수가 null입니다.
+   * 다음 `resource` 전달된 매개 변수가 비디오가 아닙니다.
+   * 다음 `manifestType` 전달된 매개 변수가 null입니다.
+   * 다음 `onlyIfPublished` 매개 변수가 true로 전달되지만 비디오가 게시되지 않습니다.
+   * Dynamic Media에서 가져온 응용 비디오 세트를 사용하여 비디오를 수집하지 않았습니다.
+
+* `IOException` Dynamic Media에 연결하는 데 문제가 있으면 기록됩니다.
+* `UnsupportedOperationException` 은 `manifestType` 전달된 매개 변수 `ManifestType.DASH`인 경우 문제가 발생합니다.
+
+다음은 에 작성된 서블릿을 사용하는 위의 API의 예입니다 *HTTPWhiteBoard* 사양.
+
+**pom.xml에 종속성 추가**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
+**샘플 서블릿**
+
+```java
+@Component
+        service = Servlet.class 
+) 
+@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
+@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
+public class ManifestServlet extends HttpServlet { 
+
+   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
+
+   private final ObjectMapper objectMapper; 
+
+    @Reference 
+    private Scene7Service scene7Service; 
+
+   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
+
+   public ManifestServlet() {
+         this.objectMapper = new ObjectMapper(); 
+         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
+   }
+
+   @Override 
+
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        final ResourceResolver resolver = getResourceResolver(request); 
+        String assetPath = request.getParameter("assetPath"); 
+        String manifest = request.getParameter("manifestType"); 
+        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
+        Resource resource = resolver.getResource(assetPath); 
+        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
+        response.setContentType("application/json"); 
+        if(resource == null) { 
+            LOGGER.info("could not retrieve the resource from JCR"); 
+            error("could not retrieve the resource from JCR", response); 
+            return; 
+        }
+
+        String manifestUri = null; 
+
+        try{ 
+            ManifestType manifestType =  ManifestType.DASH; 
+            if(manifest != null) { 
+                manifestType = ManifestType.valueOf(manifest); 
+            } 
+            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
+            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
+            response.setContentType("application/json"); 
+        } catch (Exception e) { 
+            LOGGER.error(e.getMessage(), e); 
+            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
+        } 
+    } 
+
+    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
+        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
+        if (!(rr instanceof ResourceResolver)) { 
+            throw new IllegalStateException( 
+                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
+        } else { 
+            return (ResourceResolver) rr; 
+        } 
+    } 
+
+    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
+        ManifestUrl errorManifest = new ManifestUrl(null); 
+        errorManifest.setErrorMessage(errorMessage); 
+        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        objectMapper.writeValue(response.getWriter(), errorManifest); 
+    } 
+} 
+```
+
++++
+
++++
+**서블릿에 대한 응답 클래스**
+
+```java
+public class ManifestUrl extends VideoResponse { 
+     String manifestUrl; 
+     public ManifestUrl(String manifestUrl) { 
+         this.manifestUrl = manifestUrl; 
+     } 
+     public String getManifestUrl() { 
+         return manifestUrl; 
+     } 
+} 
+
+public abstract class VideoResponse { 
+     String errorString; 
+
+     public String getErrorString() { 
+         return errorString; 
+     } 
+
+     public void setErrorMessage(String errorString) { 
+         this.errorString = errorString; 
+     } 
+} 
+```
+
++++
+
+
++++
+**서블릿에서 참조되는 상수 파일**
+
+```java
+public final class Constants { 
+
+     private Constants() { 
+     } 
+
+     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
+     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
+             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
+
+ } 
+```
+
++++
+
++++
+**ServletContext**
+
+를 사용하여 위의 서블릿 마운트 `servletContext`. 다음은 의 예입니다 `servletContext`.
+
+```java
+public class DMSampleApiHttpContext extends ServletContextHelper { 
+
+ public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
+ public static final String CONTEXT_PATH = "/dmSample"; 
+
+ private final MimeTypeService mimeTypeService; 
+
+ private final AuthenticationSupport authenticationSupport; 
+
+ /** 
+  * Constructs a new context that will use the given dependencies. 
+  * 
+  * @param mimeTypeService Used when providing mime type of requests. 
+  * @param authenticationSupport Used to authenticate requests with sling. 
+  */ 
+ @Activate 
+ public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
+                               @Reference final AuthenticationSupport authenticationSupport) { 
+     this.mimeTypeService = mimeTypeService; 
+     this.authenticationSupport = authenticationSupport; 
+ } 
+
+ // ---------- HttpContext interface ---------------------------------------- 
+ /** 
+  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
+  * <code>null</code> if the service is not available. 
+  */ 
+ @Override 
+ public String getMimeType(String name) { 
+     MimeTypeService mtservice = mimeTypeService; 
+     if (mtservice != null) { 
+         return mtservice.getMimeType(name); 
+     } 
+     return null; 
+ } 
+
+ /** 
+  * Returns the real context path that is used to mount this context. 
+  * @param req servlet request 
+  * @return the context path 
+  */ 
+ public static String getRealContextPath(HttpServletRequest req) { 
+     final String path = req.getContextPath(); 
+     if (path.equals(CONTEXT_PATH)) { 
+         return ""; 
+     } 
+     return path.substring(CONTEXT_PATH.length()); 
+ } 
+
+ /** 
+  * Returns a request wrapper that transforms the context path back to the original one 
+  * @param req request 
+  * @return the request wrapper 
+  */ 
+ public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
+     return new HttpServletRequestWrapper(req) { 
+
+         @Override 
+         public String getContextPath() { 
+             return getRealContextPath((HttpServletRequest) getRequest()); 
+         } 
+
+     }; 
+
+ } 
+
+ /** 
+  * Always returns <code>null</code> because resources are all provided 
+  * through individual endpoint implementations. 
+  */ 
+ @Override 
+ public URL getResource(String name) { 
+     return null; 
+ } 
+
+ /** 
+  * Tries to authenticate the request using the 
+  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
+  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
+  * UNAVAILABLE status back to the client. 
+  */ 
+ @Override 
+ public boolean handleSecurity(HttpServletRequest request, 
+                               HttpServletResponse response) throws IOException { 
+
+     final AuthenticationSupport authenticator = this.authenticationSupport; 
+     if (authenticator != null) { 
+         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
+     } 
+
+     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
+     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
+             "AuthenticationSupport service missing. Cannot authenticate request."); 
+     response.flushBuffer(); 
+
+     // terminate this request now 
+     return false; 
+ } 
+}
+```
+
++++
+
+### 샘플 서블릿 사용
+
+을 수행하여 서블릿을 호출합니다 `GET` 작업 `/dmSample/dynamicmedia/video/manifestUrl`. 다음 쿼리 매개 변수가 전달됩니다.
+
+| 쿼리 매개 변수 | 설명 |
+| --- | --- |
+| `assetPath` | 필수. 비디오에 사용할 경로입니다 `manifestUrl` 가 생성됩니다. |
+| `manifestType` | 선택 사항. 매개 변수는 DASH 또는 HLS일 수 있습니다. 전달되지 않으면 기본값이 DASH로 설정됩니다. |
+| `onlyIfPublished` | 선택 사항. 전달된 경우 `manifestUrl` 가 반환되는 것은 비디오가 게시되는 경우에만 해당됩니다. |
+
+이 예에서 다음 설정을 가정해 보겠습니다.
+
+* 회사가 `samplecompany`.
+* 작성 인스턴스는 `http://sample-aem-author.com`.
+* 폴더 `/content/dam/video-example` 에는 비디오 인코딩 프로필이 적용되어 있습니다.
+* 비디오 `scenery.mp4` 폴더에 업로드됩니다 `/content/dam/video-example`.
+
+다음과 같은 방법으로 서블릿을 호출할 수 있습니다.
+
+| 유형 | 설명 |
+| :--- | --- |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>DASH 전달이 활성화된 경우:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>DASH 전달이 비활성화된 경우:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| 대시 | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>DASH 전달이 활성화된 경우:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>DASH 전달이 비활성화된 경우:<br>`{}` |
+| 오류: 자산 경로가 잘못되었습니다. | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+
+
+
+
