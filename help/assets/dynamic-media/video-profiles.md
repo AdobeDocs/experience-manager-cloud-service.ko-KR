@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
 workflow-type: tm+mt
-source-wordcount: '3705'
+source-wordcount: '3707'
 ht-degree: 7%
 
 ---
@@ -274,7 +274,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
    <td><code>keyframe</code></td>
    <td>키프레임 사이의 대상 프레임 수입니다. 2-10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임에서 키프레임 간격은 60-300입니다.<br /> <br /> 키프레임 간격이 낮을수록 적응형 비디오 인코딩에 대한 스트림 찾기 및 스트림 전환 동작이 향상되며, 동작이 많은 비디오의 품질이 향상됩니다. 그러나 키프레임은 파일의 크기를 늘리므로 키프레임 간격이 낮을수록 일반적으로 지정된 비트율이 전체 비디오 품질이 저하됩니다.</td>
    <td><code>String</code></td>
-   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>HLS 또는 DASH(적응형 스트리밍)에 권장되는 값은 60-90입니다. (DASH를 보거나 사용하려면 먼저 계정의 Adobe 기술 지원 팀에서 이 기능을 활성화해야 합니다. 자세한 내용은 <a href="/help/assets/dynamic-media/video.md#enable-dash">계정에서 DASH 사용</a>)</p> </td>
+   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>HLS 또는 DASH(적응형 스트리밍)에 권장되는 값은 60-90입니다. (DASH를 사용하려면 먼저 계정의 Adobe 기술 지원에서 DASH를 활성화해야 합니다. 자세한 내용은 <a href="/help/assets/dynamic-media/video.md#enable-dash">계정에서 DASH 사용</a>)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
    <td><code>audioBitrateCustom</code></td>
    <td>값을 다음으로 설정 <code>true</code> 오디오 코덱에서 지원하는 경우 오디오 스트림에 대해 일정한 비트율을 강제 적용합니다.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 입니다. <code>false</code>.</p> <p>HLS 또는 DASH에 권장되는 값은 다음과 같습니다 <code>false</code>. (DASH를 보거나 사용하려면 먼저 계정의 Adobe 기술 지원 팀에서 이 기능을 활성화해야 합니다. 자세한 내용은 <a href="/help/assets/dynamic-media/video.md#enable-dash">계정에서 DASH 사용</a>)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 입니다. <code>false</code>.</p> <p>HLS 또는 DASH에 권장되는 값은 다음과 같습니다 <code>false</code>. (비디오에 DASH를 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 이 기능을 활성화해야 합니다. 자세한 내용은 <a href="/help/assets/dynamic-media/video.md#enable-dash">계정에서 DASH 사용</a>)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

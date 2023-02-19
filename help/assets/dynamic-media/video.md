@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '10300'
+source-wordcount: '10318'
 ht-degree: 4%
 
 ---
@@ -157,9 +157,9 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 뷰어의 재생 측에서 브라우저의 비디오 기능을 자동으로 감지합니다. 응용 비디오 스트리밍이라고도 하는 HLS 또는 DASH를 사용하여 비디오를 제공합니다. 또는 이러한 배달 방법이 없으면 HTML 5 프로그레시브가 대신 사용됩니다.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->DASH를 보거나 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 DASH를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
+>비디오에 DASH를 사용하려면 먼저 계정에 대한 Adobe 기술 지원 기능을 통해 해당 비디오를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
 
 HTML 5 및 CSS를 사용하여 재생 구성 요소를 디자인하는 기능을 단일 플레이어로 결합할 수 있습니다. 포함된 재생을 가질 수 있으며 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용할 수 있습니다. 이 모든 기능은 데스크탑 및 모바일 사용자 모두에게 리치 미디어 콘텐츠의 범위를 확장하고 간소화된 비디오 경험을 제공할 수 있음을 의미합니다.
 
@@ -174,9 +174,9 @@ HTML 5 및 CSS를 사용하여 재생 구성 요소를 디자인하는 기능을
 
 그러나 Experience Manager 6.3 이상에서는 DM 게이트웨이 서비스 URL이 항상 HTTPS를 사용하므로 비디오가 HTTPS(즉, HLS 또는 DASH)를 통해 스트리밍됩니다. 이 기본 동작에는 고객이 영향을 주지 않습니다. 즉, 비디오 스트리밍은 브라우저가 지원하지 않는 한 항상 HTTPS를 통해 발생합니다. (다음 표를 참조하십시오.)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->DASH를 보거나 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 DASH를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
+>비디오에 DASH를 사용하려면 먼저 계정에 대한 Adobe 기술 지원 기능을 통해 해당 비디오를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
 
 따라서,
 
@@ -256,7 +256,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 >[!IMPORTANT]
 >
->*DASH를 보거나 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 DASH를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
+>*비디오에 DASH를 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 DASH를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1396,9 +1396,13 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 * `IOException` Dynamic Media에 연결하는 데 문제가 있으면 기록됩니다.
 * `UnsupportedOperationException` 은 `manifestType` 전달된 매개 변수 `ManifestType.DASH`인 경우 문제가 발생합니다.
 
-다음은 에 작성된 서블릿을 사용하는 위의 API의 예입니다 *HTTPWhiteBoard* 사양.
+다음은 에 작성된 서블릿을 사용하는 위의 API의 예입니다 *HTTPWhiteBoard* 사양. 코드 구문에 사용할 각 탭을 선택합니다.
 
-**pom.xml에 종속성 추가**
+>[!BEGINTABS]
+
+>[!TAB pom.xml에 종속성 추가]
+
++++**pom.xml에 종속성 추가**
 
 ```java
 dependency> 
@@ -1409,7 +1413,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB 샘플 서블릿]
 
@@ -1650,6 +1654,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**pom.xml에 종속성 추가**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**샘플 서블릿**
 
