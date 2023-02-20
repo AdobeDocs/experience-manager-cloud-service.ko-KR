@@ -2,9 +2,9 @@
 title: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2974'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 로컬 개발 환경을 사용하여 클라우드 개발 환경에 로그인하지 않고 다음 작업을 수행할 수 있습니다.
 
 * [양식 만들기](creating-adaptive-form.md) 및 관련 자산(테마, 템플릿, 사용자 지정 제출 작업 등)
-* [PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ko)
+* [PDF 양식을 적응형 양식으로 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
 * 생성할 응용 프로그램 빌드 [고객 커뮤니케이션](aem-forms-cloud-service-communications-introduction.md) 요청 시 또는 배치 모드에서 사용할 수 있습니다.
 
 응용 양식 또는 관련 자산이 로컬 개발 인스턴스 또는 애플리케이션에서 생성하여 생성할 준비가 되면 [고객 커뮤니케이션] 준비가 되면 추가 테스트 또는 프로덕션 환경으로 이동하기 위해 적응형 양식 또는 고객 커뮤니케이션 애플리케이션을 로컬 개발 환경에서 Cloud Service 환경으로 내보낼 수 있습니다.
@@ -241,7 +241,7 @@ AEM Forms as a Cloud Services은 문서 작성 및 다른 마이크로서비스 
 >[!NOTE]
 >
 > AEM Archetype 버전 30 이상 기반 프로젝트를 설정하여 Microsoft® Dynamics 365 및 Salesforce Form Data Models를 AEM Forms as a Cloud Service으로 가져오고 사용할 수 있습니다.
-> AEM Archetype 버전 32 이상 기반 프로젝트를 설정하여 AEM Forms as a Cloud Service으로 Tranquil, Urbane 및 Ultramarine 테마를 가져오고 사용할 수 있습니다.
+AEM Archetype 버전 32 이상 기반 프로젝트를 설정하여 AEM Forms as a Cloud Service으로 Tranquil, Urbane 및 Ultramarine 테마를 가져오고 사용할 수 있습니다.
 
 프로젝트를 설정하려면 다음을 수행하십시오.
 
@@ -252,19 +252,21 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **만들기 [!DNL Experience Manager Forms] 로서의 [Cloud Service] 프로젝트:** 만들기 [!DNL Experience Manager Forms] 로서의 [Cloud Service] 프로젝트 기반 [AEM Archetype 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 또는 나중에 사용합니다. Archetype은 개발자가 을 위한 개발을 쉽게 시작할 수 있도록 지원합니다 [!DNL AEM Forms] as a Cloud Service. 또한 빠르게 시작할 수 있도록 몇 가지 샘플 테마 및 템플릿이 포함되어 있습니다.
+1. **만들기 [!DNL Experience Manager Forms] 로서의 [Cloud Service] 프로젝트:** 만들기 [!DNL Experience Manager Forms] 로서의 [Cloud Service] 최신 프로젝트 기반 [AEM Archetype](https://github.com/adobe/aem-project-archetype) 또는 나중에 사용합니다. Archetype은 개발자가 을 위한 개발을 쉽게 시작할 수 있도록 지원합니다 [!DNL AEM Forms] as a Cloud Service. 또한 빠르게 시작할 수 있도록 몇 가지 샘플 테마 및 템플릿이 포함되어 있습니다.
 
    명령 프롬프트를 열고 아래 명령을 실행하여 [!DNL Experience Manager Forms] as a Cloud Service 프로젝트.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
    ```
 
-   변경 `appTitle`, `appId`, 및 `groupId` 위 명령에서 사용자 환경을 반영합니다.
+   변경 `appTitle`, `appId`, 및 `groupId` 위 명령에서 사용자 환경을 반영합니다. 또한 includeFormsenrolment, includeFormscommunications 및 includeFormsheadless에 대한 값을 로 설정합니다. `y` 또는 `n` 라이선스 및 요구 사항에 따라 다릅니다. includeFormsadless는 코어 구성 요소를 기반으로 적응형 Forms을 만들어야 합니다.
 
-   * 를 사용하십시오 `includeFormsenrollment=y` 적응형 Forms을 만드는 데 필요한 Forms 관련 구성, 테마, 템플릿, 핵심 구성 요소 및 종속성을 포함하는 선택 사항입니다. Forms Portal을 사용하는 경우 `includeExamples=y` 선택 사항입니다. 프로젝트에 Forms Portal 핵심 구성 요소가 추가됩니다.
+   * 를 사용하십시오 `includeFormsenrollment=y` 적응형 Forms을 만드는 데 필요한 Forms 관련 구성, 테마, 템플릿, 핵심 구성 요소 및 종속성을 포함하는 선택 사항입니다. Forms Portal을 사용하는 경우 `includeExamples=y` 선택 사항입니다. 또한 프로젝트에 Forms Portal 핵심 구성 요소가 추가됩니다.
 
-   * 를 사용하십시오 `includeFormscommunications=y` 옵션에는 고객 커뮤니케이션 기능을 포함하는 데 필요한 Forms 핵심 구성 요소 및 종속성이 포함되어 있습니다.
+   * 를 사용하십시오 `includeFormscommunications=y` 고객 커뮤니케이션 기능을 포함하는 데 필요한 Forms 핵심 구성 요소 및 종속성을 포함하는 옵션.
+
+   * 를 사용하십시오 `includeFormsheadless` 헤드리스 적응형 Forms을 만드는 데 필요한 객체 및 라이브러리를 추가하는 옵션.
 
 1. 프로젝트를 로컬 개발 환경에 배포합니다. 다음 명령을 사용하여 로컬 개발 환경에 배포할 수 있습니다
 
@@ -328,6 +330,101 @@ Dispatcher 설정에 대한 자세한 지침은 [로컬 Dispatcher 도구 설정
 * URL 형식을 사용하는 경우 `http://host:port/content/forms/af/<adaptivefName>.html`, 구성 관리자에서 브라우저 로케일 사용 을 활성화하면 현지화된 버전의 적응형 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저(브라우저 로케일)에 대해 구성된 로케일을 기반으로 합니다. 이로 인해 [적응형 양식의 첫 번째 인스턴스만 캐싱]. 인스턴스에서 문제가 발생하지 않도록 하려면 다음을 참조하십시오 [적응형 양식의 첫 번째 인스턴스만 캐시됩니다](troubleshooting-caching-performance.md) 문제 해결 섹션 을 참조하십시오.
 
 로컬 개발 환경이 준비되었습니다.
+
+## 기존 AEM Archetype 기반 프로젝트에 대한 응용 Forms 코어 구성 요소 활성화 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+
+AEM Forms as a Cloud Service용 AEM Archetype 버전 40 이상 기반 프로그램을 사용하는 경우 코어 구성 요소 가 사용자 환경에 자동으로 활성화됩니다.
+
+이전 버전의 Archetype을 기반으로 AEM Forms as a Cloud Service 환경에 적응형 Forms 코어 구성 요소를 활성화하려면 WCM 코어 구성 요소 예 아티팩트와 Forms 코어 구성 요소 아티팩트(예 포함)를 프로젝트에 포함합니다.
+
+1. 일반 텍스트 코드 편집기에서 AEM Archetype 프로젝트 폴더를 엽니다. 예: VS 코드.
+
+1. 로컬 환경에서 AEM Archetype 프로젝트의 최상위 .pom 파일(상위 pom)을 열고 다음 속성을 파일에 추가하고 저장합니다.
+
+   ```XML
+   <properties>
+       <core.forms.components.version>2.0.4</core.forms.components.version> <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
+       <core.wcm.components.version>2.21.2</core.wcm.components.version>
+   </properties>
+   ```
+
+   최신 버전의 경우 `core.forms.components` 및 `core.wcm.components`, check [핵심 구성 요소 설명서](https://github.com/adobe/aem-core-forms-components).
+
+1. 최상위 수준(상위) ppm.xml 파일의 종속성 섹션에서 다음 종속성을 추가합니다.
+
+   ```XML
+       <!-- Forms Core Component Dependencies -->
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-core</artifactId>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-af-apps</artifactId>
+                   <version>${core.forms.components.version}</version>
+                   <type>zip</type>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-apps</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+               <dependency>
+                   <groupId>com.adobe.aem</groupId>
+                   <artifactId>core-forms-components-examples-content</artifactId>
+                   <type>zip</type>
+                   <version>${core.forms.components.version}</version>
+               </dependency>
+       <!-- End of AEM Forms Core Component Dependencies -->
+   ```
+
+1. all/pom.xml 파일을 열고 다음 종속성을 추가하여 응용 Forms 코어 구성 요소 아티팩트를 AEM Archetype 프로젝트에 추가합니다.
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-af-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-apps</artifactId>
+           <type>zip</type>
+       </dependency>
+       <dependency>
+           <groupId>com.adobe.aem</groupId>
+           <artifactId>core-forms-components-examples-content</artifactId>
+           <type>zip</type>
+       </dependency>
+   ```
+
+   >[!NOTE]
+   다음 응용 Forms 코어 구성 요소 가공물이 프로젝트에 포함되어 있지 않은지 확인하십시오.
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-apps</artifactId>`
+   `</dependency>`
+   및
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-core</artifactId>`
+   `</dependency>`
+
+1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 성공적인 파이프라인 실행 후 환경에 적응형 Forms 코어 구성 요소 가 활성화됩니다. 또한 적응형 Forms(핵심 구성 요소) 템플릿 및 캔버스 테마가 Forms as a Cloud Service 환경에 추가됩니다.
+
 
 ## 로컬 개발 환경 업그레이드 {#upgrade-your-local-development-environment}
 

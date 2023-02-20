@@ -4,9 +4,9 @@ description: 을 사용하여 적응형 양식을 만드는 방법을 알아봅�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 0%
 
 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
+* **환경을 위한 적응형 Forms 핵심 구성 요소 활성화**: AEM Archetype 버전 40 이상 기반 프로그램을 사용하는 경우 환경에 대해 코어 구성 요소 가 자동으로 활성화됩니다. 이전 버전의 Archetype을 기반으로 AEM Forms as a Cloud Service 환경에 적응형 Forms 핵심 구성 요소를 활성화하려면 다음을 참조하십시오. [환경을 위한 적응형 Forms 핵심 구성 요소 활성화](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 컨텐츠 구조를 포함하는 사전 형식의 구성 요소가 있습니다. 또한 테마 및 제출 작업을 정의하는 옵션을 제공합니다. 테마는 모양과 느낌을 정의하고 제출 작업을 정의하여 적응형 양식 제출 시 수행할 작업을 정의합니다. 예를 들어, 수집된 데이터를 데이터 소스로 전송합니다. 클라우드 서비스는 라는 OOTB 템플릿을 제공합니다.
 
    * 다음 `blank` 템플릿은 모든 새로운 AEM Forms as a Cloud Service 프로그램에 포함되어 있습니다.
