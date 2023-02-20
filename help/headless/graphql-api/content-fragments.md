@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
+source-git-commit: e156ed7348815e02c942cb8feace70c675956752
 workflow-type: tm+mt
-source-wordcount: '4173'
-ht-degree: 100%
+source-wordcount: '4203'
+ht-degree: 99%
 
 ---
 
@@ -556,6 +556,10 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 ## 정렬 {#sorting}
 
+>[!NOTE]
+>
+>최상의 성능을 얻으려면 다음 사항을 고려하십시오. [GraphQL 필터링에서 페이징 및 정렬을 위한 컨텐츠 조각 업데이트](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+
 이 기능을 사용하면 지정된 필드에 따라 쿼리 결과를 정렬할 수 있습니다.
 
 다음은 정렬 기준에 대한 설명입니다.
@@ -593,8 +597,6 @@ query {
 }
 ```
 
-<!-- to be included? -->
-
 `nestedFragmentname.fieldname` 형식을 사용하여 중첩된 조각 내의 필드를 정렬할 수도 있습니다.
 
 >[!NOTE]
@@ -620,6 +622,10 @@ query {
 ```
 
 ## 페이징 {#paging}
+
+>[!NOTE]
+>
+>최상의 성능을 얻으려면 다음 사항을 고려하십시오. [GraphQL 필터링에서 페이징 및 정렬을 위한 컨텐츠 조각 업데이트](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
 
 이 기능을 사용하면 목록을 반환하는 쿼리 유형에 대해 페이징을 수행할 수 있습니다. 제공되는 메서드는 두 가지가 있습니다.
 
