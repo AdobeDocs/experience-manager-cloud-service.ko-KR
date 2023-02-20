@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
+source-git-commit: f3d8f0a7a5c41ecca7bced1d5de9017ada422f7a
 workflow-type: tm+mt
-source-wordcount: '10318'
+source-wordcount: '10322'
 ht-degree: 4%
 
 ---
@@ -204,7 +204,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   <tr>
    <td>데스크톱</td>
    <td>Internet Explorer 11+</td>
-   <td>Windows® 8 및 Windows® 10의 경우 - HLS가 요청될 때마다 HTTPS를 강제로 사용합니다. 알려진 제한 사항: HLS의 HTTP가 이 브라우저/운영 체제 조합에서 작동하지 않습니다<br /> <br /> Windows® 7 - 점진적 다운로드의 경우. HTTP 및 HTTPS 프로토콜을 선택하는 표준 로직을 사용합니다.</td>
+   <td>Windows® 8 및 Windows® 10의 경우 - DASH 또는 HLS가 요청될 때마다 HTTPS를 강제 사용합니다. 알려진 제한 사항: DASH 또는 HLS의 HTTP가 이 브라우저/운영 체제 조합에서 작동하지 않습니다<br /> <br /> Windows® 7 - 점진적 다운로드의 경우. HTTP 및 HTTPS 프로토콜을 선택하는 표준 로직을 사용합니다.</td>
   </tr>
   <tr>
    <td>데스크톱</td>
@@ -448,8 +448,7 @@ DASH 사용 요청을 시작합니다. 계정에서 자동으로 활성화되지
 1. Adobe 고객 지원에서는 요청을 제출하는 순서에 따라 DASH 고객 대기 목록에 사용자를 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원에서 DASH 활성화를 위한 대상 날짜를 조정하고 설정할 수 있도록 사용자에게 연락합니다.
 1. 고객 지원 센터에서 완료 후 알림을 받습니다.
-1. 만들기 [비디오 뷰어 사전 설정](#creating-a-new-viewer-preset) 평소대로요
-
+1. 만들기 [비디오 뷰어 사전 설정](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) 평소대로요
 
 ## YouTube에 비디오 게시 {#publishing-videos-to-youtube}
 
