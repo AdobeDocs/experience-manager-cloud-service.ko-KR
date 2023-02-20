@@ -4,9 +4,9 @@ description: 을 사용하여 적응형 양식을 만드는 방법을 알아봅�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,8 @@ ht-degree: 0%
 
 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
-* **환경을 위한 적응형 Forms 핵심 구성 요소 활성화**: AEM Archetype 버전 40 이상 기반 프로그램을 사용하는 경우 환경에 대해 코어 구성 요소 가 자동으로 활성화됩니다. 이전 버전의 Archetype을 기반으로 AEM Forms as a Cloud Service 환경에 적응형 Forms 핵심 구성 요소를 활성화하려면 다음을 참조하십시오. [환경을 위한 적응형 Forms 핵심 구성 요소 활성화](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
+* **환경을 위한 적응형 Forms 핵심 구성 요소 활성화**: 새 프로그램을 만들 때 환경에 대해 응용 Forms 코어 구성 요소 가 이미 활성화되었습니다. Archetype 39 이하 버전을 기반으로 하는 Forms as a Cloud Service 환경이 있는 경우, [환경을 위한 적응형 Forms 핵심 구성 요소 활성화](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). 환경에 대한 코어 구성 요소 활성화 시 **응용 Forms(핵심 구성 요소)** 템플릿 및 캔버스 테마가 환경에 추가됩니다.
+
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 컨텐츠 구조를 포함하는 사전 형식의 구성 요소가 있습니다. 또한 테마 및 제출 작업을 정의하는 옵션을 제공합니다. 테마는 모양과 느낌을 정의하고 제출 작업을 정의하여 적응형 양식 제출 시 수행할 작업을 정의합니다. 예를 들어, 수집된 데이터를 데이터 소스로 전송합니다. 클라우드 서비스는 라는 OOTB 템플릿을 제공합니다.
 
    * 다음 `blank` 템플릿은 모든 새로운 AEM Forms as a Cloud Service 프로그램에 포함되어 있습니다.
@@ -55,6 +56,11 @@ ht-degree: 0%
    ![핵심 구성 요소 템플릿](/help/forms/assets/core-components-template.png)
 
    템플릿을 선택하면 템플릿에 지정된 테마 및 제출 작업이 자동으로 선택되고 **[!UICONTROL 만들기]** 단추가 활성화되어 있습니다. 로 이동할 수 있습니다. **[!UICONTROL 스타일]** 또는 **[!UICONTROL 제출]** 탭하여 다른 테마를 선택하거나 작업을 제출합니다. 선택한 템플릿에서 테마를 지정하지 않으면 만들기 단추가 비활성화된 상태로 유지됩니다. 로 이동할 수 있습니다. **[!UICONTROL 스타일]** 탭을 클릭하여 수동으로 테마를 선택합니다.
+
+   >[!NOTE]
+   >
+   >
+   > 없는 경우 **응용 Forms(핵심 구성 요소)** 환경에 있는 템플릿, [환경을 위한 적응형 Forms 핵심 구성 요소 활성화](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). 환경에 대한 코어 구성 요소 활성화 시 **응용 Forms(핵심 구성 요소)** 템플릿이 환경에 추가됩니다.
 
 1. 에서 **[!UICONTROL 스타일]** 탭에서 테마를 선택합니다.
 
