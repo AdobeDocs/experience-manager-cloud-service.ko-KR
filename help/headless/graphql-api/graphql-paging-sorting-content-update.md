@@ -1,7 +1,7 @@
 ---
 title: 페이징 및 정렬을 위한 컨텐츠 조각 업데이트
 description: 헤드리스 컨텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 페이징과 정렬에 대한 컨텐츠 조각을 업데이트하는 방법을 알아봅니다.
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
@@ -32,7 +32,7 @@ AEM as a Cloud Service 2023.1.0 릴리스의 최소 릴리스가 있는지 확�
 
    사용 가능한 변수는 다음과 같습니다.
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
