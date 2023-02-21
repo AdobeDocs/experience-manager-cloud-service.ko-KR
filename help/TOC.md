@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1b9817005ec40d61e9fa613dbd8c56912605040b
+source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
 workflow-type: tm+mt
-source-wordcount: '3944'
+source-wordcount: '3946'
 ht-degree: 95%
 
 ---
@@ -699,7 +699,7 @@ ht-degree: 95%
       + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
       + [지속 GraphQL 쿼리](/help/headless/graphql-api/persisted-queries.md)
       + [GraphQL 쿼리 최적화](/help/headless/graphql-api/graphql-optimization.md)
-      + [GraphQL 필터링을 위한 콘텐츠 조각 업데이트](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
+      + [최적화된 GraphQL 필터링을 위해 컨텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [샘플 GraphQL 쿼리](/help/headless/graphql-api/sample-queries.md)
    + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 보안 {#security}

@@ -1,7 +1,7 @@
 ---
 title: GraphQL 쿼리 최적화
 description: 헤드리스 컨텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 컨텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법을 알아봅니다.
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이러한 최적화 권장 사항을 적용하기 전에 다음 사항을 고려하십시오 [GraphQL 필터링에서 페이징 및 정렬을 위한 컨텐츠 조각 업데이트](/help/headless/graphql-api/graphql-paging-sorting-content-update.md) 최상의 성능.
+>이러한 최적화 권장 사항을 적용하기 전에 다음 사항을 고려하십시오 [GraphQL 필터링에서 페이징 및 정렬을 위한 컨텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) 최상의 성능.
 
 동일한 모델을 공유하는 컨텐츠 조각이 많은 AEM 인스턴스에서 GraphQL 목록 쿼리는 비용이 많이 들 수 있습니다(리소스 측면에서).
 
