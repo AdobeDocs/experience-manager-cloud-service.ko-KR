@@ -1,7 +1,7 @@
 ---
 title: 최적화된 GraphQL 필터링을 위한 컨텐츠 조각 업데이트
 description: 헤드리스 컨텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 최적화된 GraphQL 필터링을 위한 컨텐츠 조각을 업데이트하는 방법을 알아봅니다.
-source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
+source-git-commit: 7c6dcf4548972740803d64e21a74e885caf8b487
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 6%
@@ -158,7 +158,7 @@ AEM as a Cloud Service 2023.1.0 릴리스의 최소 릴리스가 있는지 확�
 
    업데이트 절차가 실행된 후 클라우드 환경 변수를 재설정합니다 `CF_MIGRATION_ENABLED` &#39;0&#39;으로 변경하여 모든 pod의 재활용을 트리거합니다.
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
