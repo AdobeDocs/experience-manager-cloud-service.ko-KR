@@ -2,9 +2,9 @@
 title: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 55a53f23ee81877bd3a6ba3b9b0a1c3c98edb764
 workflow-type: tm+mt
-source-wordcount: '2974'
+source-wordcount: '2960'
 ht-degree: 2%
 
 ---
@@ -257,7 +257,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    명령 프롬프트를 열고 아래 명령을 실행하여 [!DNL Experience Manager Forms] as a Cloud Service 프로젝트.
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y" includeFormsheadless="y"    
+   mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=40 -D aemVersion="cloud" -D appTitle="Borgo AEM Forms" -D appId="bgaemforms" -D groupId="com.bgaemforms" -D includeFormsenrollment="y" -D includeFormscommunications="y" -D includeExamples="y" -D 
    ```
 
    변경 `appTitle`, `appId`, 및 `groupId` 위 명령에서 사용자 환경을 반영합니다. 또한 includeFormsenrolment, includeFormscommunications 및 includeFormsheadless에 대한 값을 로 설정합니다. `y` 또는 `n` 라이선스 및 요구 사항에 따라 다릅니다. includeFormsadless는 코어 구성 요소를 기반으로 적응형 Forms을 만들어야 합니다.
@@ -265,8 +265,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    * 를 사용하십시오 `includeFormsenrollment=y` 적응형 Forms을 만드는 데 필요한 Forms 관련 구성, 테마, 템플릿, 핵심 구성 요소 및 종속성을 포함하는 선택 사항입니다. Forms Portal을 사용하는 경우 `includeExamples=y` 선택 사항입니다. 또한 프로젝트에 Forms Portal 핵심 구성 요소가 추가됩니다.
 
    * 를 사용하십시오 `includeFormscommunications=y` 고객 커뮤니케이션 기능을 포함하는 데 필요한 Forms 핵심 구성 요소 및 종속성을 포함하는 옵션.
-
-   * 를 사용하십시오 `includeFormsheadless` 헤드리스 적응형 Forms을 만드는 데 필요한 객체 및 라이브러리를 추가하는 옵션.
 
 1. 프로젝트를 로컬 개발 환경에 배포합니다. 다음 명령을 사용하여 로컬 개발 환경에 배포할 수 있습니다
 
