@@ -3,10 +3,10 @@ title: ' [!DNL AEM Forms] as a Cloud Service 소개'
 description: AEM Forms를 살펴보고 업무용 문서 및 양식 콘텐츠를 제작하는 데 어떻게 도움이 되는지 알아봅니다. PaaS(Platform-as-a-Service)에 대해 자세히 알아보고 엔터프라이즈급 디지털 양식 및 비즈니스 프로세스를 관리하는 방법을 포함하여 Forms를 현재 데이터 소스에 연결하는 방법도 알아봅니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+source-git-commit: f8e229820bb7aef3923e955c928033ef7d3d9460
 workflow-type: tm+mt
-source-wordcount: '1592'
-ht-degree: 25%
+source-wordcount: '1108'
+ht-degree: 33%
 
 ---
 
@@ -18,32 +18,45 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 는 제출된 데이터
 
 이 조직은 [!DNL AEM Forms] as a Cloud Service를 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, [!DNL Adobe Sign]과 양식을 통합하여 양식에 전자 서명을 추가하고, DoR(문서 기록)을 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 서비스를 사용하여 기존 PDF 양식을 디지털 양식으로 변환할 수도 있습니다.
 
-조직은 [!DNL AEM Forms] as a Cloud Service를 사용하여 로컬 인프라 없이도 클라우드에서 이러한 모든 기능을 사용할 수 있습니다. 또한 이 서비스는 항상 최신 기능을 유지하므로 조직은 복잡한 업그레이드 주기를 겪을 필요가 없습니다. 서비스에 대해 자세히 알아보려면 다음을 참조하십시오.
+조직은 [!DNL AEM Forms] as a Cloud Service를 사용하여 로컬 인프라 없이도 클라우드에서 이러한 모든 기능을 사용할 수 있습니다. 또한 이 서비스는 항상 최신 기능을 유지하므로 조직은 복잡한 업그레이드 주기를 겪을 필요가 없습니다.
 
 ## 주요 기능 {#key-features}
 
-
+<!-- 
 >[!BEGINTABS]
 
->[!TAB 적응형 양식]
+>[!TAB Adaptive Forms]
 
-적응형 Forms을 통해 기업은 웹 사이트 및 기타 디지털 채널을 위한 대화형 데이터 기반의 양식을 제작 및 관리할 수 있으며, 이러한 양식에는 모바일 친화적인 양식이 없습니다. </br> </br> AEM의 적응형 Forms에도 드래그하여 놓기 양식 빌더가 포함되어 있으므로 기술 전문가가 아닌 사용자가 텍스트 상자, 드롭다운 메뉴 및 날짜 선택기와 같은 사전 빌드된 양식 구성 요소를 사용하여 양식을 쉽게 만들고 사용자 지정할 수 있습니다. 따라서 양식 작성이 빨라지고 광범위한 코딩 및 개발 작업이 필요 없습니다. </br> </br> 또한 AEM 적응형 Forms은 다음을 포함한 몇 가지 다른 기능을 제공합니다. <ul><li>양식 데이터의 라우팅, 승인 및 제출을 위한 고급 워크플로우 실시간 유효성 검사 및 오류 검사를 통해 데이터 정확성 확인 </li><li>양식 필드를 미리 채우거나 데이터 유효성을 확인하기 위한 타사 데이터 소스 및 API와 통합 </li><li>양식 사용량, 전환율 및 기타 주요 지표를 추적하는 고급 분석 및 보고 기능 </li><li>전자 서명을 위해 Adobe Sign 및 DocuSign과 통합 </li>
+Adaptive Forms allows businesses to create and manage interactive, data-driven forms for their websites and other digital channels responsive, mobile-friendly forms without. </br> </br> Adaptive Forms in AEM also include a drag-and-drop form builder, which enables non-technical users to easily create and customize forms using pre-built form components such as text boxes, dropdown menus, and date pickers. This enables faster form creation and eliminates the need for extensive coding and development. </br> </br> In addition, AEM Adaptive Forms offer several other features, including: <ul><li>Advanced workflows for routing, approval, and submission of form data Real-time validation and error checking to ensure data accuracy </li><li>Integration with third-party data sources and APIs for pre-filling form fields or validating data </li><li>Advanced analytics and reporting capabilities to track form usage, conversion rates, and other key metrics </li><li>Integration with Adobe Sign and DocuSign for e-signatures </li>
 
->[!TAB automated forms conversion 서비스]
+>[!TAB Automated Forms Conversion Service]
 
-automated forms conversion 서비스를 통해 기업은 기존의 PDF 기반 양식을 대화형 디지털 양식으로 전환하여 온라인으로 쉽게 관리 및 배포할 수 있습니다. 이 서비스는 다음과 같은 이점을 제공합니다. <ul><li>인쇄 양식을 적응형 양식으로 전환하는 데 필요한 수작업 절감.</li><li>전환 중 패턴 및 적절한 유효성 검사 적용</li><li>전환 중 기록 문서 생성 </li><li>일반적으로 발생하는 필드를 재사용 가능한 양식 단편으로 그룹화 </li> <li>전환 중 Adobe Analytics 사용</li>
+Automated Forms Conversion Service allows businesses to convert legacy PDF-based forms into interactive, digital forms that can be easily managed and distributed online. The service helps: <ul><li>Save manual effort required to convert print forms to adaptive forms.</li><li>Applies patterns and appropriate validations during conversion</li><li>Generate Document of Record during conversion </li><li>Group commonly occurring fields into reusable form fragments </li> <li>Enables Adobe Analytics during conversion</li>
 
->[!TAB Communications API(문서 서비스)]
+>[!TAB Communications API (Document Services)]
 
-Communications API는 기업이 개인화된 데이터 기반 통신의 작성, 관리 및 전달을 자동화할 수 있는 RESTful API(Application Programming Interface) 세트입니다. </br> </br> 또한 이러한 API를 통해 기업이 커뮤니케이션 워크플로우를 타사 시스템 및 데이터 소스와 통합하여 특정 이벤트 또는 사용자 행동에 의해 트리거되는 고도로 타겟팅되고 개인화된 메시지를 만들 수 있습니다. AEM Forms Communications API의 몇 가지 주요 기능은 다음과 같습니다.<ul><li> 다이내믹 콘텐츠 전달: API를 사용하면 기업이 선호도, 행동 및 과거 비즈니스 상호 작용에 따라 개별 사용자에 맞게 조정된 동적 콘텐츠를 작성하고 전달할 수 있습니다.</li> <li>개인화된 메시징: API를 사용하면 이름, 주소 및 구매 내역 등의 사용자별 데이터를 포함하여 비즈니스를 개인화할 수 있습니다.</li><li>백엔드 시스템과 통합: API는 CRM, 데이터베이스 및 마케팅 자동화 플랫폼을 비롯한 다양한 백엔드 시스템과 통합할 수 있습니다.</li><li> Pixel Perfect PDF 문서 생성: API는 사용자별 데이터 및 컨텐츠로 사용자 지정된 픽셀-퍼펙트 PDF 문서를 생성합니다. 이 기능을 통해 기업은 PDF 형식으로 사용자에게 전달되는 송장, 계약, 명세서 등의 전문적인 문서를 만들 수 있습니다.
+Communications APIs are a set of RESTful APIs (Application Programming Interfaces) that enable businesses to automate the creation, management, and delivery of personalized, data-driven communications. </br> </br> These APIs also enable businesses to integrate their communications workflows with third-party systems and data sources, allowing them to create highly targeted and personalized messages that are triggered by specific events or user behaviors. Some key features of AEM Forms Communications APIs include:<ul><li> Dynamic content delivery: The APIs allow businesses to create and deliver dynamic content that is tailored to individual users based on their preferences, behaviors, and past interactions with the business.</li> <li>Personalized messaging: The APIs enable businesses to personalize their communications by including user-specific data such as names, addresses, and purchase history.</li><li>Integration with back-end systems: The APIs can be integrated with a wide range of back-end systems, including CRMs, databases, and marketing automation platforms.</li><li> Generate Pixel Perfect PDF documents: The APIs generate pixel-perfect PDF documents that are customized with user-specific data and content. This feature enables businesses to create highly professional and polished documents, such as invoices, contracts, and statements, that are delivered to users in PDF format.
 
->[!TAB 고급 분석]
+>[!TAB Advanced Analytics]
 
-이 서비스는 Adobe Analytics과 연결하기 위해 OOTB 지원을 제공합니다. 양식을 Adobe Analytics과 연결하면 다음과 같은 비즈니스를 위한 몇 가지 이점이 있습니다. <ul><li> 사용자 행동에 대한 이해 기능이 개선되었습니다. 양식은 Adobe Analytics과 연결되므로 기업이 사용자의 양식 상호 작용을 세부적으로 파악할 수 있습니다. 여기에는 사용자 참여, 전환율, 드롭오프 포인트 및 기타 주요 지표에 대한 통찰력이 포함되어 있으며 이를 통해 기업은 개선 사항을 위한 영역을 식별하고 더 나은 사용자 경험을 위해 양식을 최적화할 수 있습니다. </li><li>마케팅 활동의 효과적인 타겟팅: 양식에 대한 사용자 행동을 분석함으로써 비즈니스는 사용자 환경 설정 및 관심 사항에 대한 중요한 통찰력을 얻을 수 있습니다. 이 정보를 사용하여 마케팅 노력을 향상시키고 참여와 전환을 구현하는 보다 효과적인 캠페인을 만들 수 있습니다. </li><li> 감소된 오류 비율: 양식을 Adobe Analytics과 통합하면 대부분의 오류가 있는 필드에 대한 통찰력을 찾을 수 있고 데이터 품질을 향상시킬 수 있으므로 의사 결정 및 보다 정확한 통찰력을 얻을 수 있습니다. </li><li> 향상된 ROI: Adobe Analytics에서 얻은 인사이트를 기반으로 양식을 최적화함으로써 기업은 전환율을 향상시키고 디지털 채널에서 더 많은 매출을 높일 수 있습니다. 이를 통해 마케팅 및 디지털 이니셔티브에 대한 ROI(투자수익률)가 높아지므로 기업이 목표를 달성하고 성장을 촉진할 수 있습니다.</li>
+The service provides OOTB support to connect with Adobe Analytics. Connecting forms with Adobe Analytics provides several benefits for businesses, including: <ul><li> Improved understanding of user behavior: By connecting forms with Adobe Analytics, businesses can gain a deeper understanding of how users are interacting with their forms. This includes insights into user engagement, conversion rates, drop-off points, and other key metrics that can help businesses identify areas for improvement and optimize their forms for better user experiences. </li><li>Better targeting of marketing efforts: By analyzing user behavior on forms, businesses can gain valuable insights into user preferences and interests. This information can be used to better target marketing efforts and create more effective campaigns that drive engagement and conversions. </li><li> Reduced error rate: By integrating forms with Adobe Analytics, you can find insights about field with most errors and improve data quality, leading to better decision-making and more accurate insights. </li><li> Improved ROI: By optimizing forms based on insights gained from Adobe Analytics, businesses can improve conversion rates and drive more revenue from their digital channels. This can lead to a higher return on investment (ROI) for marketing and digital initiatives, helping businesses to achieve their goals and drive growth.</li>
 
 
->[!ENDTABS]
+>[!ENDTABS] -->
 
+| 적응형 양식 | automated forms conversion 서비스 | 통신 API | Forms Analytics |
+|---|---|---|---|
+| 적응형 Forms을 통해 기업은 웹 사이트 및 기타 디지털 채널에 응답하고 모바일에 친숙한 양식을 위한 대화형 데이터 기반의 양식을 만들고 관리할 수 있습니다. | automated forms conversion 서비스를 통해 기업은 기존의 PDF 기반 양식을 대화형 디지털 양식으로 전환하여 온라인으로 쉽게 관리 및 배포할 수 있습니다. | Communications API는 기업이 개인화된 데이터 기반 통신의 작성, 관리 및 전달을 자동화할 수 있는 RESTful API(Application Programming Interface) 세트입니다. | 이 서비스는 Adobe Analytics과 연결하기 위해 OOTB 지원을 제공합니다. 양식을 Adobe Analytics과 연결하면 비즈니스에 대해 사용자 행동에 대한 이해 향상, 마케팅 활동의 더 나은 타겟팅, 오류 상태 감소, ROI 향상 등 몇 가지 이점이 있습니다. |
+
+<!--
+| | |
+|---|---|
+| Adaptive Forms | Adaptive Forms allows businesses to create and manage interactive, data-driven forms for their websites and other digital channels responsive, mobile-friendly forms without. </br> </br> Adaptive Forms in AEM also include a drag-and-drop form builder, which enables non-technical users to easily create and customize forms using pre-built form components such as text boxes, dropdown menus, and date pickers. This enables faster form creation and eliminates the need for extensive coding and development. </br> </br> In addition, AEM Adaptive Forms offer several other features, including: <ul><li>Advanced workflows for routing, approval, and submission of form data Real-time validation and error checking to ensure data accuracy </li><li>Integration with third-party data sources and APIs for pre-filling form fields or validating data </li><li>Advanced analytics and reporting capabilities to track form usage, conversion rates, and other key metrics </li><li>Integration with Adobe Sign and DocuSign for e-signatures </li>|
+| Automated Forms Conversion Service | Automated Forms Conversion Service allows businesses to convert legacy PDF-based forms into interactive, digital forms that can be easily managed and distributed online. The service helps: <ul><li>Save manual effort required to convert print forms to adaptive forms.</li><li>Applies patterns and appropriate validations during conversion</li><li>Generate Document of Record during conversion </li><li>Group commonly occurring fields into reusable form fragments </li> <li>Enables Adobe Analytics during conversion</li>|
+| Communications API (Document Services) | Communications APIs are a set of RESTful APIs (Application Programming Interfaces) that enable businesses to automate the creation, management, and delivery of personalized, data-driven communications. </br> </br> These APIs also enable businesses to integrate their communications workflows with third-party systems and data sources, allowing them to create highly targeted and personalized messages that are triggered by specific events or user behaviors. Some key features of AEM Forms Communications APIs include:<ul><li> Dynamic content delivery: The APIs allow businesses to create and deliver dynamic content that is tailored to individual users based on their preferences, behaviors, and past interactions with the business.</li> <li>Personalized messaging: The APIs enable businesses to personalize their communications by including user-specific data such as names, addresses, and purchase history.</li><li>Integration with back-end systems: The APIs can be integrated with a wide range of back-end systems, including CRMs, databases, and marketing automation platforms.</li><li> Generate Pixel Perfect PDF documents: The APIs generate pixel-perfect PDF documents that are customized with user-specific data and content. This feature enables businesses to create highly professional and polished documents, such as invoices, contracts, and statements, that are delivered to users in PDF format.|
+|Advanced Analytics| The service provides OOTB support to connect with Adobe Analytics. Connecting forms with Adobe Analytics provides several benefits for businesses, including: <ul><li> Improved understanding of user behavior: By connecting forms with Adobe Analytics, businesses can gain a deeper understanding of how users are interacting with their forms. This includes insights into user engagement, conversion rates, drop-off points, and other key metrics that can help businesses identify areas for improvement and optimize their forms for better user experiences. </li><li>Better targeting of marketing efforts: By analyzing user behavior on forms, businesses can gain valuable insights into user preferences and interests. This information can be used to better target marketing efforts and create more effective campaigns that drive engagement and conversions. </li><li> Reduced error rate: By integrating forms with Adobe Analytics, you can find insights about field with most errors and improve data quality, leading to better decision-making and more accurate insights. </li><li> Improved ROI: By optimizing forms based on insights gained from Adobe Analytics, businesses can improve conversion rates and drive more revenue from their digital channels. This can lead to a higher return on investment (ROI) for marketing and digital initiatives, helping businesses to achieve their goals and drive growth.</li>|
+
+-->
 
 ## 최신 혁신 내용 {#latest-innovations}
 
@@ -157,6 +170,7 @@ Overall, AEM Adaptive Forms provide businesses with a powerful tool for creating
 | Acroform-based Document of Record | &#x2611; | &#x2611; | 
 | Government ID based identity authentication for Adobe Sign enabled Adaptive Forms | &#x2611; | &#x2611; | 
 | Document Security | &#x2612; | &#x2611; |
+
 
 * [Notable changes in comparison to AEM 6.5 Forms](notable-changes.md)
 * [Frequently asked questions](faq.md)
