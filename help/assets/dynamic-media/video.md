@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10103'
 ht-degree: 4%
 
 ---
@@ -245,7 +245,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   <tr>
    <td>모바일</td>
    <td>Chrome(iOS)</td>
-   <td>HLS 또는 DASH* 응용 스트리밍</td>
+   <td>HLS 적응형 스트리밍</td>
   </tr>
  </tbody>
 </table>
@@ -414,7 +414,7 @@ Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하�
 
 ### 계정에서 DASH 사용 {#enable-dash}
 
-DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 국제 표준이며, 다양한 비디오 뷰어에서 광범위하게 채택됩니다. DASH를 활성화하면 응용 비디오 스트리밍을 위한 HLS 또는 DASH 중에서 선택할 수 있는 옵션이 제공됩니다. 플레이어 간에 자동 전환을 사용하여 둘 다 선택할 수도 있습니다.
+DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 국제 표준이며, 다양한 비디오 뷰어에서 광범위하게 채택됩니다. 계정에 DASH가 활성화되면 응용 비디오 스트리밍을 위한 DASH 또는 HLS에서 선택할 수 있는 옵션이 제공됩니다. 또는 플레이어 간에 자동 전환을 선택할 수 있습니다. **[!UICONTROL 자동]** 뷰어 사전 설정에서 재생 유형으로 선택됩니다.
 
 계정에서 DASH를 활성화하면 다음과 같은 주요 이점이 있습니다.
 
@@ -425,13 +425,13 @@ DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍을 위한 �
 * 고객이 보다 쉽게 비디오를 게재할 수 있도록 지원합니다.
 * API를 통해 스트리밍 URL도 가져옵니다.
 
+   >[!IMPORTANT]
+   >
+   >계정에서 DASH 활성화는 현재 북미에서만 사용할 수 있습니다.
+
 DASH 사용 요청을 시작합니다. 계정에서 자동으로 활성화되지 않습니다.
 
->[!IMPORTANT]
->
->계정에서 DASH 활성화는 현재 북미에서만 사용할 수 있습니다.
-
-아래 설명된 대로 지원 사례를 만듭니다. 지원 사례에서 계정에 DASH를 사용하도록 설정해야 한다고 명시해야 합니다.
+계정에서 DASH를 활성화하려면 아래 설명에 따라 고객 지원 사례를 만드십시오. 지원 사례에서 Dynamic Media 계정 및 Experience Manager에서 DASH를 활성화하도록 지정합니다.
 
 **계정에서 DASH를 사용하려면**
 
@@ -439,7 +439,8 @@ DASH 사용 요청을 시작합니다. 계정에서 자동으로 활성화되지
 1. 다음 정보를 제공하는지 확인하면서 지원 사례를 만들려면 지침을 따르십시오.
 
    * 기본 연락처 이름, 이메일, 전화
-   * Dynamic Media 계정에서 DASH를 활성화하려는 경우.
+   * Dynamic Media 계정 이름입니다.
+   * Dynamic Media 계정 및 Experience Manager에서 DASH를 활성화하도록 지정합니다.
 
 1. Adobe 고객 지원에서는 요청을 제출하는 순서에 따라 DASH 고객 대기 목록에 사용자를 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 고객 지원에서 DASH 활성화를 위한 대상 날짜를 조정하고 설정할 수 있도록 사용자에게 연락합니다.

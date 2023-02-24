@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4382'
 ht-degree: 9%
 
 ---
@@ -442,8 +442,8 @@ Experience Manager에서 자산을 볼 때 광범위한 뷰어 사전 설정이 
 1. 뷰어 사전 설정 편집기 페이지에서 **[!UICONTROL 비헤이비어]** 탭. 또는 뷰어에서 시각적 요소를 선택하여 구성에 대해 선택할 수 있습니다.
 예를 들어 *VideoPlayer* 유형, 다음 **[!UICONTROL 수정자]** > **[!UICONTROL 재생]**&#x200B;에서는 세 가지 적응형 스트리밍 옵션 중 하나를 선택할 수 있습니다.
 
-   * **[!UICONTROL 대시]** - 비디오 스트림은 대시로만 표시됩니다.
-   * **[!UICONTROL hls]** - 비디오만 hls로 스트리밍됩니다.
+   * **[!UICONTROL 대시]** - 비디오 스트림을 DASH로만 스트리밍합니다. 그러나 Safari/iOS 장치에서 선택해야 합니다 **[!UICONTROL hls]** 를 입력합니다.
+   * **[!UICONTROL hls]** - 비디오만 HLS로 스트리밍됩니다.
    * **[!UICONTROL 자동]** - 우수 사례. DASH 및 HLS 스트림 생성은 저장 영역에 최적화되어 있습니다. 따라서 Adobe은 항상 **[!UICONTROL 자동]** 재생 유형으로 사용할 수 있습니다. 비디오 스트림은 다음과 같이 대시, hls 또는 progressive로 스트리밍됩니다.
       * 브라우저가 DASH를 지원하는 경우 먼저 DASH 스트리밍이 사용됩니다.
       * 브라우저가 DASH를 지원하지 않으면 HLS 스트리밍이 사용됩니다.
