@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
+source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 3%
+source-wordcount: '1816'
+ht-degree: 8%
 
 ---
 
@@ -28,6 +28,21 @@ ht-degree: 3%
 * 이 서비스는 콘텐츠만 마이그레이션하는 데 도움이 됩니다 [!DNL AEM Forms] OSGi 환경에서 사용할 수 있습니다. 다음에서 컨텐츠 마이그레이션 [!DNL AEM Forms] Cloud Service 환경에서 JEE의 는 지원되지 않습니다.
 
 * (AEM 6.3 Forms 또는 AEM 6.4 Forms 또는 AEM 6.5 Forms으로 업그레이드된 이전 버전 환경의 경우에만 해당) AEM 6.3 Forms 또는 이전 버전에서 사용할 수 있는 기본 템플릿 및 테마를 기반으로 하는 적응형 Forms은 지원되지 않습니다 [!DNL AEM Forms] as a Cloud Service.
+
+* 확인 단계를 사용할 수 없습니다. 이러한 양식을 Cloud Service 환경으로 이동하기 전에 기존 적응형 Forms에서 확인 단계를 제거합니다.
+
+* 응용 Forms에 대한 서명 단계는 사용할 수 없습니다. 기존 적응형 양식에서 서명 단계를 제거하십시오. 브라우저 내 서명 경험을 사용하도록 적응형 양식을 구성하십시오. 브라우저 내 서명 경험은 적응형 양식 제출 시 브라우저 내에 서명할 Adobe Sign 계약서를 표시합니다. 브라우저 내 서명 경험은 서명 속도를 높이고 서명자의 시간을 절약하는 데 도움이 됩니다.
+
+## AEM 6.5 Forms와의 차이점
+
+| 기능 | AEM 6.5 Forms와의 차이점 |
+|--------------|-----------|
+| HTML5 Forms(모바일 Forms) | 이 서비스는 HTML 5 Forms(Mobile Forms)을 지원하지 않습니다. XDP 기반 양식을 HTML 5 Forms으로 렌더링하는 경우 AEM 6.5 Forms에서 기능을 계속 사용할 수 있습니다. |
+| 적응형 양식 | <li><b>XSD 기반 응용 Forms:</b> 이 서비스는 HTML 5 Forms(Mobile Forms)을 지원하지 않습니다. XDP 기반 양식을 HTML 5 Forms으로 렌더링하는 경우 AEM 6.5 Forms에서 기능을 계속 사용할 수 있습니다. </li> <li><b> 적응형 양식 템플릿:</b> 빌드 파이프라인 및 프로그램의 해당 Git 저장소를 사용하여 기존 적응형 양식 템플릿을 가져옵니다. </li><li><b>규칙 편집기:</b> AEM Forms as a Cloud Service [규칙 편집기](rule-editor.md#visual-rule-editor). 코드 편집기는 Forms as a Cloud Service에서 사용할 수 없습니다. 마이그레이션 유틸리티는 코드 편집기에서 만든 사용자 지정 규칙이 있는 양식을 마이그레이션하는 데 도움이 됩니다. 이 유틸리티는 이러한 규칙을 Forms as a Cloud Service에서 지원되는 사용자 지정 함수로 변환합니다. 규칙 편집기와 함께 재사용 가능한 함수를 사용하여 규칙 스크립트로 얻은 결과를 계속 얻을 수 있습니다. `onSubmitError` 또는 `onSubmitSuccess` 이제 함수를 규칙 편집기에서 작업으로 사용할 수 있습니다. </li> <li><b>초안 및 제출:</b> 이 서비스는 초안 및 제출된 적응형 Forms에 대한 메타데이터를 유지하지 않습니다. </li> <li><b> 미리 채우기 서비스:</b> 기본적으로 미리 채우기 서비스는 AEM 6.5 Forms에서 서버의 데이터를 병합하는 대신 클라이언트의 적응형 양식과 데이터를 병합합니다. 이 기능은 적응형 양식을 미리 채우는 데 필요한 시간을 개선하는 데 도움이 됩니다. 항상 Adobe Experience Manager Forms 서버에서 병합 작업을 실행하도록 구성할 수 있습니다. </li><li><b>작업 제출:</b> 다음 **전자 메일을 PDF으로 보내기** 작업을 사용할 수 없습니다. 다음 **이메일** 제출 작업은 첨부 파일을 보내고 전자 메일에 기록 문서(DoR)를 첨부하는 옵션을 제공합니다. </li> |
+| 양식 데이터 모델 | <li>Forms 데이터 모델은 데이터를 제출할 HTTP 및 HTTP 끝점만 지원합니다. </li><li>Forms as a Cloud Service에서는 일반 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 지원하는 Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive 및 서비스를 데이터 저장소로 사용할 수 있습니다. 이 서비스는 JDBC 커넥터, Rest 커넥터에 대한 상호 SSL 및 SOAP 데이터 소스에 대한 x509 인증서 기반 인증을 지원하지 않습니다. </li> |
+| automated forms conversion 서비스 | 이 서비스는 Automated forms conversion 서비스에 대한 메타 모델을 제공하지 않습니다. 다음을 수행할 수 있습니다 [automated forms conversion 서비스 설명서에서 다운로드](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
+| 구성 | <li>이메일은 기본적으로 HTTP 및 HTTP 프로토콜만 지원합니다. [지원 팀에 문의](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 전자 메일 전송을 위한 포트를 활성화하고 환경에 대해 SMTP 프로토콜을 사용하도록 설정합니다. </li> <li>사용자 지정 번들을 사용하는 경우 Forms as a Cloud Service에서 이러한 번들을 사용하기 전에 최신 버전의 adobe-aemfd-docmanager로 코드를 다시 컴파일하십시오.</li> |
+| 문서 조작 API(어셈블러 서비스) | 서비스는 다른 서비스 또는 응용 프로그램에 종속된 작업을 지원하지 않습니다. <li>PDF이 아닌 형식의 문서를 PDF 형식으로 변환할 수 없습니다. 예를 들어 Microsoft Word에서 PDF으로, Microsoft Excel에서 PDF으로, PDF으로 HTML은 지원되지 않습니다</li><li>Adobe Distiller 기반 전환은 지원되지 않습니다. 예를 들어 PostScript(PS)에서 PDF</li><li>Forms 서비스 기반 전환은 지원되지 않습니다. 예를 들어 XDP에서 PDF forms으로 이동합니다.</li><li>이 서비스는 서명된 PDF 또는 투명 PDF을 다른 PDF 형식으로 변환하는 것을 지원하지 않습니다.</li> |
 
 ## 사전 요구 사항 {#prerequisites}
 
