@@ -3,10 +3,10 @@ title: ' [!DNL AEM Forms] as a Cloud Service 소개'
 description: AEM Forms를 살펴보고 업무용 문서 및 양식 콘텐츠를 제작하는 데 어떻게 도움이 되는지 알아봅니다. PaaS(Platform-as-a-Service)에 대해 자세히 알아보고 엔터프라이즈급 디지털 양식 및 비즈니스 프로세스를 관리하는 방법을 포함하여 Forms를 현재 데이터 소스에 연결하는 방법도 알아봅니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 95e1981faf9532aa56cc8a2e18166d08f35ecf29
+source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 29%
+source-wordcount: '1158'
+ht-degree: 31%
 
 ---
 
@@ -44,11 +44,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-
-| 적응형 양식 | automated forms conversion 서비스 | 통신 API | 통합 | Forms Workflow |
-|---|---|---|---|---|
-| 적응형 Forms을 통해 기업은 웹 사이트 및 기타 디지털 채널에 응답하고 모바일에 친숙한 양식을 위한 대화형 데이터 기반의 양식을 만들고 관리할 수 있습니다. | automated forms conversion 서비스를 통해 기업은 기존의 PDF 기반 양식을 대화형 디지털 양식으로 전환하여 온라인으로 쉽게 관리 및 배포할 수 있습니다. | Communications API는 기업이 개인화된 데이터 기반 통신의 작성, 관리 및 전달을 자동화할 수 있는 RESTful API(Application Programming Interface) 세트입니다. | 플랫폼은 Adobe Sign 및 DocuSign과 통합할 수 있으므로 사용자가 적응형 양식에서 직접 디지털 서명 요청을 전송하고 추적할 수 있습니다. </br></br>또한 플랫폼을 Adobe Analytics과 통합하여 조직에서 사용자 행동 및 환경 설정에 대한 중요한 통찰력을 얻을 수 있습니다. </br></br> 마지막으로 AEM Forms Cloud Service을 사용하면 적응형 양식을 AEM Sites 페이지에 직접 포함할 수 있으므로 원활한 사용자 경험을 만들 수 있습니다 | AEM(Adobe Experience Manager) Forms의 Forms 중심 워크플로우는 양식과 관련된 비즈니스 프로세스를 자동화할 수 있도록 설계되었습니다. 이러한 워크플로우는 비즈니스 프로세스의 여러 단계를 거쳐서 양식의 라우팅, 검토 및 승인을 자동화합니다. Forms 중심의 워크플로우는 AEM Forms 워크플로우 디자이너를 사용하여 시각적으로 만들 수 있으며 AEM Forms과 통합하여 양식을 제출할 때 워크플로우를 트리거할 수 있습니다. 워크플로우는 특정 기준에 따라 다양한 사용자 또는 그룹으로 양식을 라우팅하도록 구성할 수 있으며, 자동 알림 및 미리 알림을 포함하여 양식이 적시에 처리되도록 할 수 있습니다. AEM Forms의 양식 중심의 전반적인 워크플로우는 조직의 비즈니스 프로세스를 간소화하고 효율성을 높이며 오류를 줄일 수 있도록 해줍니다. |
-
+| 적응형 양식 | automated forms conversion 서비스 | 통신 API | Forms Workflow | E-Sign | Forms Analytics |
+|---|---|---|---|---|---|
+| 적응형 Forms을 통해 기업은 웹 사이트 및 기타 디지털 채널에 응답하고 모바일에 친숙한 양식을 위한 대화형 데이터 기반의 양식을 만들고 관리할 수 있습니다. | automated forms conversion 서비스를 통해 기업은 기존의 PDF 기반 양식을 대화형 디지털 양식으로 전환하여 온라인으로 쉽게 관리 및 배포할 수 있습니다. | Communications API는 기업이 개인화된 데이터 기반 통신의 작성, 관리 및 전달을 자동화할 수 있는 RESTful API(Application Programming Interface) 세트입니다. | Forms 중심 워크플로우는 양식 및 문서 서비스와 관련된 비즈니스 프로세스를 자동화하기 위해 설계되었습니다. 이러한 워크플로우는 비즈니스 프로세스의 여러 단계를 거치며 양식 및 문서 생성 과정을 자동화합니다. | 플랫폼은 Adobe Analytics과 통합할 수 있으므로 조직에서 사용자 행동 및 환경 설정에 대한 중요한 통찰력을 얻을 수 있습니다. | 플랫폼은 Adobe Sign과 즉시 통합합니다. 또한 및 DocuSign과 통합할 수 있으므로 사용자가 전자 서명을 위해 Forms을 쉽게 전송할 수 있습니다. |
 
 <!--
 | | |
