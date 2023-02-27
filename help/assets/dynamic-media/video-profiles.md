@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '3707'
+source-wordcount: '3716'
 ht-degree: 7%
 
 ---
 
 # Dynamic Media 비디오 프로필{#video-profiles}
 
-Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하도록 최적화되었습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩할 때 재생 중에 비디오 플레이어는 고객의 인터넷 연결 속도에 따라 비디오 스트림의 품질을 자동으로 조정합니다. 이 작업을 적응형 스트리밍이라고 합니다.
+Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하도록 최적화되었습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩할 때 재생 중에 비디오 플레이어는 고객의 인터넷 연결 속도에 따라 비디오 스트림의 품질을 자동으로 조정합니다. 이 작업을 적응형 비트율 스트리밍이라고 합니다.
 
 다음은 비디오의 품질을 결정하는 다른 요소입니다.
 
@@ -124,7 +124,7 @@ Adobe Sensei은 9,000프레임으로 제한됩니다. 즉, 30FPS로 5분 비디�
 
 참조 - [이미지용 스마트 자르기](image-profiles.md).
 
-## 적응형 스트리밍을 위한 비디오 프로필 만들기 {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## 응용 비트율 스트리밍을 위한 비디오 프로필 만들기 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용 비디오 업로드 설정 그룹인 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 비디오를 업로드할 때 이 프로필을 사용할 수 있습니다.
 
@@ -132,7 +132,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 비디오 인코딩 프로필을 만들면 대부분의 인코딩 옵션이 권장 기본 설정으로 미리 채워져 있어 도움이 됩니다. 그러나 권장 기본값 이외의 값을 선택하면 재생 중 비디오 품질이 저하되고 다른 성능 문제가 발생할 수 있습니다.
 
-따라서 프로필의 모든 MP4 H.264 비디오 인코딩 사전 설정에 대해 다음 값의 유효성을 검사하여 프로필의 개별 인코딩 사전 설정에서 동일한지 확인하여 적응형 스트리밍이 가능합니다.
+따라서 프로필의 모든 MP4 H.264 비디오 인코딩 사전 설정에 대해 다음 값의 유효성을 검사하여 프로필의 개별 인코딩 사전 설정에서 동일한지 확인하여 적응형 비트율 스트리밍을 수행할 수 있습니다.
 
 * 비디오 포맷 코덱을 - MP4 H.264(.mp4)
 * 오디오 코덱
@@ -143,7 +143,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 * H264 프로필
 * 오디오 샘플링 속도
 
-값이 동일하지 않으면 프로파일을 그대로 계속 생성할 수 있습니다. 그러나 적응형 스트리밍은 불가능합니다. 대신 사용자가 단일 비트율 스트리밍을 경험합니다. 프로필의 개별 인코딩 사전 설정에서 동일한 값을 사용하도록 인코딩 설정을 편집하는 것이 좋습니다. (비디오 프로필/사전 설정 편집기에서는 &quot;적응형 스트리밍을 위해 인코딩&quot;이 활성화된 경우 적응형 비디오 인코딩 설정의 패리티를 적용합니다.)
+값이 동일하지 않으면 프로파일을 그대로 계속 생성할 수 있습니다. 그러나 적응형 비트율 스트리밍은 불가능합니다. 대신 사용자가 단일 비트율 스트리밍을 경험합니다. 프로필의 개별 인코딩 사전 설정에서 동일한 값을 사용하도록 인코딩 설정을 편집하는 것이 좋습니다. (비디오 프로필/사전 설정 편집기에서는 &quot;적응형 스트리밍을 위해 인코딩&quot;이 활성화된 경우 적응형 비디오 인코딩 설정의 패리티를 적용합니다.)
 
 참조 - [점진적 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -151,7 +151,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 다른 자산 유형에 대한 고급 처리 매개 변수를 정의하려면 [자산 처리 구성](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**응용 스트리밍을 위한 비디오 프로필을 만들려면**,
+**응용 비트율 스트리밍을 위한 비디오 프로필을 만들려면**,
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -194,7 +194,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 지원되는 비디오 형식 코덱은 H.264(.mp4) 및 WebM입니다.
 
-참조 - [적응형 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-adaptive-streaming).
+참조 - [응용 비트율 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 참조 - [비디오 인코딩 우수 사례](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -274,7 +274,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
    <td><code>keyframe</code></td>
    <td>키프레임 사이의 대상 프레임 수입니다. 2-10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임에서 키프레임 간격은 60-300입니다.<br /> <br /> 키프레임 간격이 낮을수록 적응형 비디오 인코딩에 대한 스트림 찾기 및 스트림 전환 동작이 향상되며, 동작이 많은 비디오의 품질이 향상됩니다. 그러나 키프레임은 파일의 크기를 늘리므로 키프레임 간격이 낮을수록 일반적으로 지정된 비트율이 전체 비디오 품질이 저하됩니다.</td>
    <td><code>String</code></td>
-   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>HLS 또는 DASH(적응형 스트리밍)에 권장되는 값은 60-90입니다. (비디오에 DASH를 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 이 기능을 활성화해야 합니다. 자세한 내용은 <a href="/help/assets/dynamic-media/video.md#enable-dash">계정에서 DASH 사용</a>)</p> </td>
+   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>HLS 또는 DASH(적응형 비트율 스트리밍)에 권장되는 값은 60-90입니다. (비디오에 DASH를 사용하려면 먼저 계정에 대한 Adobe 기술 지원 팀에서 이 기능을 활성화해야 합니다. 자세한 내용은 <a href="/help/assets/dynamic-media/video.md#enable-dash">계정에서 DASH 사용</a>)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -324,7 +324,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 1. 도구 모음에서 를 선택합니다 **[!UICONTROL 편집]**.
 1. 비디오 인코딩 프로필 페이지에서 원하는 이름과 설명을 편집합니다.
 1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected.
-적응형 스트리밍에 대한 설명은 정보 아이콘을 선택합니다. (점진적 비디오 프로필을 편집하는 경우 이 확인란을 선택하지 마십시오.)
+적응형 비트율 스트리밍에 대한 설명은 정보 아이콘을 선택합니다. (점진적 비디오 프로필을 편집하는 경우 이 확인란을 선택하지 마십시오.)
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
 
    의 각 옵션 옆에 있는 정보 아이콘을 선택합니다 **[!UICONTROL 기본]** 및 **[!UICONTROL 고급]** 탭에서 선택한 비디오 형식 코덱에 따라 더 자세히 설명하거나 권장 설정을 지정할 수 있습니다.
@@ -337,7 +337,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 선택합니다.
 1. 도구 모음에서 를 선택합니다 **[!UICONTROL 복사]**.
 1. 비디오 인코딩 프로필 페이지에서 프로필의 새 이름을 입력합니다.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. 적응형 스트리밍에 대한 설명은 정보 아이콘을 선택합니다. (점진적 비디오 프로필을 복사하는 경우 확인란을 선택하지 마십시오.)
+1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. 적응형 비트율 스트리밍에 대한 설명은 정보 아이콘을 선택합니다. (점진적 비디오 프로필을 복사하는 경우 확인란을 선택하지 마십시오.)
 
    Dynamic Media - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필의 일부인 경우 **[!UICONTROL 적응형 스트리밍을 위한 인코딩]** 모든 사전 설정은 MP4여야 하므로 사용할 수 없습니다.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
