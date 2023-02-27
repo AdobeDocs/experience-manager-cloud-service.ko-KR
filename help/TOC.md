@@ -8,7 +8,7 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '3946'
 ht-degree: 95%
@@ -501,7 +501,7 @@ ht-degree: 95%
 + 양식 {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
-      + [주요 기능](/help/forms/key-features.md)
+      + [최신 혁신 내용](/help/forms/latest-innovations.md)
       + [주요 변경 내용](/help/forms/notable-changes.md)
       + [아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
       + [자주 묻는 질문](/help/forms/faq.md)

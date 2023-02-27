@@ -1,9 +1,9 @@
 ---
 title: AEM 6.5 Forms과 AEM 클라우드 서비스 간에 변경된 사항
 description: Experience Manager Forms 사용자로서 Adobe Experience Manager Forms as a Cloud Service으로 업그레이드하려고 합니까? Cloud Service으로 업그레이드하거나 마이그레이션하기 전에 가장 눈에 띄는 변경 사항에 대해 알아봅니다.
-contentOwner: khsingh
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
-source-git-commit: d77b8d389be4b5c0ffa262ad6f1ff8b4d899e82b
+contentOwner: khsingh
+source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 3%
@@ -16,39 +16,39 @@ Adobe Experience Manager Forms은 Adobe Experience Manager Forms 온-프레미�
 
 | 기능/기능 | [!DNL AEM Forms] as a Cloud Service | AEM 6.5 Forms |
 |---|---|---|
-| 클라우드 기반의 아키텍처 | ☑ | ☒ |
-| 로드 기반 자동 크기 조절 | ☑ | ☒ |
-| 업그레이드에 대한 다운타임 없음 | ☑ | ☒ |
+| 클라우드 기반의 아키텍처 | ✅ | ⛌ |
+| 로드 기반 자동 크기 조절 | ✅ | ⛌ |
+| 업그레이드에 대한 다운타임 없음 | ✅ | ⛌ |
 | 기능 롤아웃 빈도 | 애자일* | 분기별 |
-| CDN(컨텐츠 전달 네트워크) 포함 | ☑ | ☒ |
-| 최고의 복원력과 효율성을 제공하도록 최적화된 토폴로지 | ☑ | ☒ |
-| 클라우드 기반의 개발 환경 | ☑ | ☒ |
-| Cloud Manager를 통한 셀프 서비스 | ☑ | ☒ |
-| CI/CD(Continuous Integration and Continuous Delivery)를 사용한 자동화된 업그레이드 | ☑ | ☒ |
-| [!DNL Micosoft Power Automate]와 통합  | ☑ | ☒ |
-| [!DNL DocuSign]와 통합  | ☑ | ☒ |
-| Microsoft Dynamics 및 Salesforce와의 쉬운 연결 | ☑ | ☒ |
-| Microsoft Azure 데이터 스토어를 통한 편리한 연결 | ☑ | ☒ |
-| 경화된 규칙 편집기 | ☑ | ☒ |
-| 양식 만들기 마법사 | ☑ | ☒ |
-| 기록 문서에 대한 사용자 지정 XCI 지원 | ☑ | ☒ |
-| 응용 Forms <sup>1</sup> | ☑ | ☑ |
-| 여러 데이터 소스와 데이터 통합 | ☑ | ☑ |
-| 통신 API(문서 서비스) <sup>2,3</sup> | ☑ | ☑ |
-| automated forms conversion 서비스 <sup>4</sup> | ☑ | ☑ |
-| [!DNL Adobe Sign]와 통합  | ☑ | ☑ |
-| [!DNL AEM Sites]와 통합  | ☑ | ☑ |
-| [!DNL Adobe Launch]와 통합  | ☑ | ☑ |
-| [!DNL Adobe Analytics]와 통합  | ☑ | ☑ |
-| Forms 포털 <sup>5개</sup> | ☑ | ☑ |
-| AEM 워크플로우 | ☑ | ☑ |
-| 기록 문서 | ☑ | ☑ |
-| Captcha 숨김 | ☑ | ☑ |
-| 재사용 가능한 양식 데이터 모델 구성 | ☑ | ☑ |
-| Acroform 기반 레코드 문서 | ☑ | ☑ |
-| Adobe Sign에 대한 정부 ID 기반 ID 인증 활성화 응용 Forms | ☑ | ☑ |
-| HTML5 <sup>6</sup> | ☒ | ☑ |
-| 문서 보안 | ☒ | ☑ |
+| CDN(컨텐츠 전달 네트워크) 포함 | ✅ | ⛌ |
+| 최고의 복원력과 효율성을 제공하도록 최적화된 토폴로지 | ✅ | ⛌ |
+| 클라우드 기반의 개발 환경 | ✅ | ⛌ |
+| Cloud Manager를 통한 셀프 서비스 | ✅ | ⛌ |
+| CI/CD(Continuous Integration and Continuous Delivery)를 사용한 자동화된 업그레이드 | ✅ | ⛌ |
+| [!DNL Micosoft Power Automate]와 통합  | ✅ | ⛌ |
+| [!DNL DocuSign]와 통합  | ✅ | ⛌ |
+| Microsoft Dynamics 및 Salesforce와의 쉬운 연결 | ✅ | ⛌ |
+| Microsoft Azure 데이터 스토어를 통한 편리한 연결 | ✅ | ⛌ |
+| 경화된 규칙 편집기 | ✅ | ⛌ |
+| 양식 만들기 마법사 | ✅ | ⛌ |
+| 기록 문서에 대한 사용자 지정 XCI 지원 | ✅ | ⛌ |
+| 응용 Forms <sup>1</sup> | ✅ | ✅ |
+| 여러 데이터 소스와 데이터 통합 | ✅ | ✅ |
+| 통신 API(문서 서비스) <sup>2,3</sup> | ✅ | ✅ |
+| automated forms conversion 서비스 <sup>4</sup> | ✅ | ✅ |
+| [!DNL Adobe Sign]와 통합  | ✅ | ✅ |
+| [!DNL AEM Sites]와 통합  | ✅ | ✅ |
+| [!DNL Adobe Launch]와 통합  | ✅ | ✅ |
+| [!DNL Adobe Analytics]와 통합  | ✅ | ✅ |
+| Forms 포털 <sup>5개</sup> | ✅ | ✅ |
+| AEM 워크플로우 | ✅ | ✅ |
+| 기록 문서 | ✅ | ✅ |
+| Captcha 숨김 | ✅ | ✅ |
+| 재사용 가능한 양식 데이터 모델 구성 | ✅ | ✅ |
+| Acroform 기반 레코드 문서 | ✅ | ✅ |
+| Adobe Sign에 대한 정부 ID 기반 ID 인증 활성화 응용 Forms | ✅ | ✅ |
+| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| 문서 보안 | ⛌ | ✅ |
 
 서비스를 계속 진행하기 전에 다음 예외적인 경우를 고려하십시오.
 
