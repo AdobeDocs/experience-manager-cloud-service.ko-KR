@@ -3,10 +3,10 @@ title: ' [!DNL AEM Forms] as a Cloud Service 소개'
 description: AEM Forms를 살펴보고 업무용 문서 및 양식 콘텐츠를 제작하는 데 어떻게 도움이 되는지 알아봅니다. PaaS(Platform-as-a-Service)에 대해 자세히 알아보고 엔터프라이즈급 디지털 양식 및 비즈니스 프로세스를 관리하는 방법을 포함하여 Forms를 현재 데이터 소스에 연결하는 방법도 알아봅니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
+source-git-commit: 2f9c4d85c55ee63a769c0137d4a70b2126228d5b
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 31%
+source-wordcount: '1144'
+ht-degree: 34%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 31%
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 는 제출된 데이터를 백엔드 프로세스, 비즈니스 규칙 및 외부 데이터 저장소에 통합하는 동시에 복잡한 디지털 양식을 작성, 관리, 게시 및 업데이트하는 클라우드 기반의 PaaS(Platform as a Service) 솔루션을 제공합니다. 이 서비스는 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습합니다.
 
 이 서비스를 사용하여 대화형의 매력적인 디지털 양식을 제작하고 배포할 수 있습니다. 예를 들어, 고객 등록 여정을 디지털화하고자 하는 조직을 생각해 보십시오. 이 조직은 기존 고객 데이터가 포함된 여러 데이터 소스를 보유하고 있습니다. 양식을 미리 채우고, 양식에 전자 서명을 추가하고, 채워진 양식을 PDF 파일로 보관하고자 합니다. 또한 조직에는 여러 인쇄 양식(PDF 양식)이 있으며 모든 인쇄 양식을 디지털 양식으로 변환하고자 합니다.
+
+
 
 이 조직은 [!DNL AEM Forms] as a Cloud Service를 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, [!DNL Adobe Sign]과 양식을 통합하여 양식에 전자 서명을 추가하고, DoR(문서 기록)을 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 서비스를 사용하여 기존 PDF 양식을 디지털 양식으로 변환할 수도 있습니다.
 
@@ -44,9 +46,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| 적응형 양식 | automated forms conversion 서비스 | 통신 API | Forms Workflow | E-Sign | Forms Analytics |
-|---|---|---|---|---|---|
-| 적응형 Forms을 통해 기업은 웹 사이트 및 기타 디지털 채널에 응답하고 모바일에 친숙한 양식을 위한 대화형 데이터 기반의 양식을 만들고 관리할 수 있습니다. | automated forms conversion 서비스를 통해 기업은 기존의 PDF 기반 양식을 대화형 디지털 양식으로 전환하여 온라인으로 쉽게 관리 및 배포할 수 있습니다. | Communications API는 기업이 개인화된 데이터 기반 통신의 작성, 관리 및 전달을 자동화할 수 있는 RESTful API(Application Programming Interface) 세트입니다. | Forms 중심 워크플로우는 양식 및 문서 서비스와 관련된 비즈니스 프로세스를 자동화하기 위해 설계되었습니다. 이러한 워크플로우는 비즈니스 프로세스의 여러 단계를 거치며 양식 및 문서 생성 과정을 자동화합니다. | 플랫폼은 Adobe Analytics과 통합할 수 있으므로 조직에서 사용자 행동 및 환경 설정에 대한 중요한 통찰력을 얻을 수 있습니다. | 플랫폼은 Adobe Sign과 즉시 통합합니다. 또한 및 DocuSign과 통합할 수 있으므로 사용자가 전자 서명을 위해 Forms을 쉽게 전송할 수 있습니다. |
+| 적응형 양식 | 통신 API | automated forms conversion 서비스 | Forms Workflow | E-Sign | Forms Analytics | 데이터 모델 |
+|---|---|---|---|---|---| ---|
+| 웹 사이트, 앱, 기타 디지털 및 인쇄 채널을 위한 대화형, 동적, 응답형, 모바일 친화적, 데이터 기반의 양식을 작성하고 관리합니다. | RESTful API(Application Programming Interface)를 통해 주문형 또는 일정 간격으로 개인화된 데이터 기반 커뮤니케이션의 작성, 관리 및 전달을 자동화합니다. | 레거시 PDF 기반 양식을 온라인으로 쉽게 관리하고 배포할 수 있는 적응형 Forms으로 변환합니다. | 양식 및 문서 서비스와 관련된 비즈니스 프로세스를 자동화합니다. 다양한 업무 프로세스 단계를 거쳐서 양식 및 문서를 할당, 경로 지정, 검토 및 승인합니다. | Adobe Sign 및 DocuSign과 통합하여 Forms 및 문서를 사용자에게 손쉽게 전자 서명을 전송할 수 있습니다. | Adobe Analytics을 사용하여 사용자 행동 및 환경 설정에 대한 중요한 통찰력을 얻을 수 있습니다. | 양식 및 문서를 외부 데이터 소스와 쉽게 연결하여 데이터를 검색하고 전송할 수 있습니다. |
 
 <!--
 | | |
@@ -64,51 +66,28 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!TAB 헤드리스 적응형 Forms]
 
-[헤드리스 적응형 Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 은 Adobe Experience Manager 플랫폼 내에서 헤드리스 웹 양식을 만들고 관리하는 솔루션입니다. 이 기능을 사용하면 기존 그래픽 사용자 인터페이스를 통해서가 아니라 API를 통해 액세스 및 상호 작용할 수 있는 대화형 양식을 작성, 게시 및 관리할 수 있습니다. AEM Headless Adaptive Forms을 사용하면 양식 개발 및 배포에서 유연성과 확장성을 향상시킬 수 있을 뿐만 아니라, 특정 요구에 맞게 양식 디자인 및 기능을 조정할 수 있는 기능을 통해 사용자 경험을 향상시킬 수 있습니다. 이 솔루션은 AEM 및 헤드리스 기술의 기능을 활용하여 다양한 사용 사례 및 애플리케이션을 위한 웹 양식을 작성, 관리 및 배포할 수 있는 강력한 플랫폼을 제공합니다.
+|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?lang=en)| 만들기 및 관리 [헤드리스 웹 양식](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) Adobe Experience Manager 플랫폼 내에서 사용할 수 있습니다. 개발자는 기존의 그래픽 사용자 인터페이스를 통해서가 아니라 API를 통해 액세스 및 상호 작용할 수 있는 대화형 양식을 작성, 게시 및 관리할 수 있습니다. <br/> <br/> 이러한 양식은 기존 HTML 양식 인터페이스 없이도 제출할 수 있도록 설계되었습니다. 즉, 프런트 엔드에 표시되는 양식 요소를 필요로 하지 않고 API 또는 백엔드 코드를 통해 양식 데이터를 프로그래밍 방식으로 제출할 수 있습니다. <br/> <br/> 헤드리스 양식은 단일 페이지 애플리케이션, 점진적 웹 앱 또는 모바일 애플리케이션을 작성할 때와 같이 기존 HTML 양식 인터페이스가 필요하지 않거나 실용적이지 않을 수 있는 다양한 시나리오에서 유용합니다. 개발자가 API 또는 백엔드 코드를 통해 직접 양식 데이터를 제출할 수 있도록 함으로써, 헤드리스 양식을 통해 워크플로우를 간소화하고 웹 애플리케이션의 전반적인 성능을 향상시킬 수 있습니다.|
+
+
 
 
 >[!TAB 코어 구성 요소]
 
-다음 [응용 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 는 Adobe Experience Manager WCM 코어 구성 요소의 기초 위에 구축된 24개의 오픈 소스 BEM 준수 구성 요소 세트입니다. 사용자의 디바이스, 브라우저 및 화면 크기에 맞춰 조정되는 양식인 적응형 양식을 만드는 데 사용하도록 특별히 설계되었습니다.
+|||
+|--|--|
+|![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?lang=en) | 적응형 양식 핵심 구성 요소는 Adobe Experience Manager WCM 핵심 구성 요소를 기반으로 구축된 24개의 오픈 소스 BEM 호환 구성 요소 세트입니다. [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) 사용자의 디바이스, 브라우저 및 화면 크기에 맞춰 조정되는 양식인 적응형 양식을 만드는 데 사용하도록 특별히 설계되었습니다. <br/> <br/> 이러한 구성 요소를 사용하면 텍스트 필드, 확인란, 드롭다운 메뉴 등을 포함한 다양한 양식 필드 옵션을 제공하여 탁월한 데이터 캡처 및 등록 경험을 만들 수 있습니다. 또한 여기에는 사용자 친화적이고 사용하기 쉬운 양식을 만드는 데 사용할 수 있는 유효성 검사, 조건부 논리 및 반응형 디자인과 같은 기능이 포함되어 있습니다. <br/> <br/>  이와 더불어 이러한 구성 요소는 오픈 소스이므로 개발자가 조직의 특정 요구 사항에 맞게 구성 요소를 쉽게 사용자 정의하고 확장할 수 있습니다. 그리고 이러한 구성 요소는 BEM 방법론을 기반으로 구축되어 있으므로 확장 및 유지 관리가 가능합니다.|
 
-이러한 구성 요소를 사용하면 텍스트 필드, 확인란, 드롭다운 메뉴 등을 포함한 다양한 양식 필드 옵션을 제공하여 탁월한 데이터 캡처 및 등록 경험을 만들 수 있습니다. 또한 여기에는 사용자 친화적이고 사용하기 쉬운 양식을 만드는 데 사용할 수 있는 유효성 검사, 조건부 논리 및 반응형 디자인과 같은 기능이 포함되어 있습니다.
-
-이와 더불어 이러한 구성 요소는 오픈 소스이므로 개발자가 조직의 특정 요구 사항에 맞게 구성 요소를 쉽게 사용자 정의하고 확장할 수 있습니다. 그리고 이러한 구성 요소는 BEM 방법론을 기반으로 구축되어 있으므로 확장 및 유지 관리가 가능합니다.
 
 
 >[!TAB Microsoft PowerAutomate &#x200B; 커넥터]
 
-Microsoft Power Automate Connector for AEM Forms은 AEM(Adobe Experience Manager) Forms을 Microsoft Power Automate(이전에 Microsoft Flow)와 통합할 수 있는 커넥터입니다. Power Automate 는 클라우드 기반 서비스로, 다양한 애플리케이션과 서비스 간에 자동화된 워크플로우를 만들 수 있습니다.
+|| |—|—| |![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999)| AEM Forms Power Automate Connector를 사용하면 Adobe Experience Manager(AEM) Forms을 Microsoft Power Automate(이전에 Microsoft Flow)와 통합할 수 있습니다. Power Automate 는 클라우드 기반 서비스로, 다양한 애플리케이션과 서비스 간에 자동화된 워크플로우를 만들 수 있습니다.  <br/> <br/> AEM Form Power 자동 커넥터를 사용하면 적응형 양식 제출을 기반으로 자동으로 트리거되는 워크플로우를 만들 수 있습니다. 예를 들어, 사용자가 양식을 제출하거나 사용자가 양식을 완료할 때 Microsoft Planner에서 작업을 만들 때 특정 사용자에게 전자 메일 알림을 자동으로 보내는 워크플로우를 만들 수 있습니다.  <br/> <br/> AEM Forms Power Automate Connector는 Microsoft Power Automate와 연결된 다른 애플리케이션 및 서비스와 Adaptive Forms을 자동화하고 통합할 수 있는 강력한 도구로서, 더 다양한 도구를 사용하여 작업할 수 있습니다. 사용자 지정 작업, 조건 및 트리거를 추가하는 기능을 사용하여 특정 요구에 맞는 워크플로우를 만들 수 있습니다. 또한 Power Automate는 세부 분석 및 보고를 제공하여 시간에 따라 워크플로우를 모니터링하고 최적화할 수 있습니다.|
 
-Power Automate Connector for AEM Form을 사용하면 적응형 양식 제출을 기반으로 자동으로 트리거되는 워크플로우를 만들 수 있습니다. 예를 들어, 사용자가 양식을 제출하거나 사용자가 양식을 완료할 때 Microsoft Planner에서 작업을 만들 때 특정 사용자에게 전자 메일 알림을 자동으로 보내는 워크플로우를 만들 수 있습니다.
-
-AEM Forms용 Power Automate Connector를 사용하면 다음과 같은 많은 이점이 있습니다.
-
-* **자동화**: 일상적인 작업을 자동화하고 프로세스를 간소화하여 시간을 절약하고 오류를 줄일 수 있습니다.
-
-* **통합**: 커넥터를 사용하면 Adobe Experience Manager Forms을 다른 애플리케이션 및 서비스와 통합하여 다양한 도구를 사용하여 작업할 수 있습니다.
-
-* **사용자 지정**: 사용자 지정 작업, 조건 및 트리거를 추가하는 기능을 사용하여 특정 요구에 맞는 워크플로우를 만들 수 있습니다.
-
-* **Analytics**: Power Automate는 상세 분석 및 보고를 제공하여 시간에 따라 워크플로우를 모니터링하고 최적화할 수 있습니다.
-
-전반적으로 AEM Forms용 Power Automate Connector는 AEM Forms을 다른 애플리케이션 및 서비스와 자동화 및 통합하여 효율성 및 생산성을 향상시킬 수 있는 강력한 도구입니다.
 
 >[!TAB Microsoft Storage Connectors: OneDrive 및 Sharepoint]
 
-OneDrive 및 SharePoint용 AEM Forms Microsoft Storage Connectors 는 AEM(Adobe Experience Manager) Forms을 Microsoft OneDrive 및 SharePoint과 통합할 수 있는 커넥터입니다. 이러한 커넥터를 사용하면 Microsoft의 클라우드 기반 스토리지 솔루션 내에 AEM Forms 데이터 및 문서를 저장하고 관리할 수 있습니다.
+|| |—|—| |![](/help/forms/assets/onedrive-and-sharepoint.jpg)|OneDrive 및 SharePoint용 AEM Forms Microsoft Storage Connectors는 Adobe Experience Manager(AEM) Forms을 Microsoft OneDrive 및 SharePoint과 통합할 수 있는 커넥터입니다. 이러한 커넥터를 사용하면 Microsoft의 클라우드 기반 스토리지 솔루션 내에 AEM Forms 데이터 및 문서를 저장하고 관리할 수 있습니다. <br/> <br/> 이러한 커넥터를 사용하면 Microsoft OneDrive 내에 AEM Forms 데이터 및 문서를 저장하고 관리할 수 있습니다. 이 커넥터를 사용하여 AEM Forms에서 직접 OneDrive 및 SharePoint에 데이터 파일과 첨부 파일을 업로드할 수 있습니다. <br/> <br/> OneDrive 및 SharePoint용 AEM Forms Microsoft Storage Connectors를 사용하면 다음과 같은 몇 가지 이점이 있습니다. <ul><li> **통합**: 이러한 커넥터를 사용하면 AEM Forms을 Microsoft의 클라우드 기반 스토리지 솔루션과 통합하여 이러한 플랫폼의 기능을 활용할 수 있습니다. </li> <li> **공동 작업**: OneDrive와 SharePoint은 팀 구성원이 파일과 문서에서 함께 작업할 수 있도록 하는 공동 작업 플랫폼입니다. 이러한 플랫폼과 AEM Forms을 통합함으로써 공동 작업 및 팀워크를 향상시킬 수 있습니다. </li> <li> **보안**: OneDrive 및 SharePoint은 강력한 보안 기능을 제공하여 데이터와 문서를 안전하게 저장하고 액세스할 수 있도록 합니다. </li> <br/> 전반적으로 OneDrive 및 SharePoint용 AEM Forms Microsoft Storage Connectors는 Microsoft의 클라우드 기반 스토리지 솔루션 내에서 AEM Forms 데이터 및 문서를 저장 및 관리하고 공동 작업 및 보안을 향상시킬 수 있는 강력한 도구입니다.|
 
-이러한 커넥터를 사용하면 Microsoft OneDrive 내에 AEM Forms 데이터 및 문서를 저장하고 관리할 수 있습니다. 이 커넥터를 사용하여 AEM Forms에서 직접 OneDrive 및 SharePoint에 데이터 파일과 첨부 파일을 업로드할 수 있습니다.
-
-OneDrive 및 SharePoint용 AEM Forms Microsoft Storage Connectors를 사용하면 다음과 같은 몇 가지 이점이 있습니다.
-
-* **통합**: 이러한 커넥터를 사용하면 AEM Forms을 Microsoft의 클라우드 기반 스토리지 솔루션과 통합하여 이러한 플랫폼의 기능을 활용할 수 있습니다.
-
-* **공동 작업**: OneDrive와 SharePoint은 팀 구성원이 파일과 문서에서 함께 작업할 수 있도록 하는 공동 작업 플랫폼입니다. 이러한 플랫폼과 AEM Forms을 통합함으로써 공동 작업 및 팀워크를 향상시킬 수 있습니다.
-
-* **보안**: OneDrive 및 SharePoint은 강력한 보안 기능을 제공하여 데이터와 문서를 안전하게 저장하고 액세스할 수 있도록 합니다.
-
-전반적으로 OneDrive 및 SharePoint용 AEM Forms Microsoft Storage Connectors는 Microsoft의 클라우드 기반 스토리지 솔루션 내에서 AEM Forms 데이터 및 문서를 저장 및 관리하고 공동 작업 및 보안을 향상시킬 수 있는 강력한 도구입니다.
 
 >[!ENDTABS]
 
