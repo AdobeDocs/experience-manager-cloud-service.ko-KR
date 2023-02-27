@@ -1,7 +1,7 @@
 ---
 title: 테마 만들기 및 사용
 description: 테마를 사용하여 핵심 구성 요소를 사용하여 적응형 양식에 시각화를 지정하고 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 5%
@@ -86,7 +86,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 테마를 사용자 지정하기 위해 로컬 프록시 서버를 시작하여 실제 AEM 컨텐츠를 기반으로 테마 사용자 지정을 실시간으로 볼 수 있습니다.
 
-### 4. 캔버스 테마의 package.json 및 package_lock.json에서 이름을 변경합니다 {#changename-packagelock-packagelockjson}
+### 3. 캔버스 테마의 package.json 및 package_lock.json에서 이름을 변경합니다 {#changename-packagelock-packagelockjson}
 
 캔버스 테마의 이름과 버전을 `package.json` 및 `package_lock.json` 파일.
 
@@ -96,7 +96,7 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 ![캔버스 테마 사진](/help/forms/assets/changename_canvastheme.png)
 
-### 3. 테마 폴더에 .env 파일을 만듭니다. {#creating-env-file-theme-folder}
+### 4. 테마 폴더에 .env 파일을 만듭니다. {#creating-env-file-theme-folder}
 
 만들기 `.env` 파일을 테마 폴더에 넣고 다음 매개 변수를 추가합니다.
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![캔버스 테마 구조](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4. 로컬 프록시 서버 시작 {#starting-a-local-proxy-server}
+### 5. 로컬 프록시 서버 시작 {#starting-a-local-proxy-server}
 
 1. 명령줄에서 로컬 컴퓨터의 테마 루트로 이동합니다.
 1. `npm install`을 실행하면 npm이 종속성을 가져오고 프로젝트를 설치합니다.
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 적응형 양식으로 이동하여 적응형 양식에 적용된 캔버스 테마를 확인합니다.
 
-### 5. 테마 사용자 정의 {#customize-theme}
+### 6. 테마 사용자 정의 {#customize-theme}
 
 1. 편집기에서 파일을 엽니다 `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ AEM_PROXY_PORT=7000
 
 변경 사항을 AEM Git 리포지토리에 커밋하기 전에 [Git 리포지토리 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6. 변경 사항 커밋 {#committing-the-changes}
+### 7. 변경 사항 커밋 {#committing-the-changes}
 
 테마를 변경하고 로컬 프록시 서버로 테스트한 후 변경 사항을 AEM Forms Cloud Service의 Git 리포지토리에 커밋하십시오. 따라서 적응형 Forms 작성자가 사용할 수 있도록 Forms Cloud Service 환경에서 사용자 지정된 테마를 사용할 수 있습니다.
 
@@ -216,7 +216,7 @@ AEM Forms Cloud Service의 Git 리포지토리에 변경 사항을 커밋하기 
 사용자 지정은 이제 Git 리포지토리에 안전하게 저장됩니다.
 
 
-### 7. 프런트 엔드 파이프라인 실행 {#deploy-pipeline}
+### 8. 프런트 엔드 파이프라인 실행 {#deploy-pipeline}
 
 1. 프런트 엔드 파이프라인을 만들어 사용자 지정된 테마를 배포합니다. 학습 [맞춤형 테마를 배포하기 위해 전방 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. 생성된 프런트 엔드 파이프라인을 실행하여 사용자 지정된 테마 폴더를 **[!UICONTROL 스타일]** 적응형 양식 만들기 마법사의 탭입니다.
