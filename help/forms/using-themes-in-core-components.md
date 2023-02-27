@@ -1,10 +1,10 @@
 ---
 title: 테마 만들기 및 사용
 description: 테마를 사용하여 핵심 구성 요소를 사용하여 적응형 양식에 시각화를 지정하고 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 6%
+source-wordcount: '1669'
+ht-degree: 5%
 
 ---
 
@@ -51,6 +51,7 @@ ht-degree: 6%
 캔버스 테마를 사용자 지정하는 방법:
 1. [캔버스 테마 복제](#1-download-canvas-theme-download-canvas-theme)
 1. [테마 구조 이해](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [package.json 및 package_lock.json의 이름 변경](#changename-packagelock-packagelockjson)
 1. [만들기 ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [로컬 프록시 서버 시작](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [테마 사용자 지정](#customize-the-theme-customizing-theme)
@@ -67,9 +68,9 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> 양식 작성 마법사의 스타일 탭에 package.json 과 동일한 테마 이름이 표시됩니다.
+> 양식 작성 마법사의 스타일 탭에 package.json 파일과 동일한 테마 이름이 표시됩니다.
 
-### 2. 주제 구조의 이해 {#structure-of-canvas-theme}
+### 2. 주제 구조를 이해합니다 {#structure-of-canvas-theme}
 
 적응형 양식 테마는 CSS, JavaScript 및 양식 스타일을 정의하고 적응형 양식 테마의 구조를 준수하는 정적 리소스가 포함된 패키지입니다. 적응형 양식 테마는 프런트 엔드 프로젝트의 일반적인 다음 구조를 갖습니다.
 
@@ -85,12 +86,22 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 테마를 사용자 지정하기 위해 로컬 프록시 서버를 시작하여 실제 AEM 컨텐츠를 기반으로 테마 사용자 지정을 실시간으로 볼 수 있습니다.
 
+### 4. 캔버스 테마의 package.json 및 package_lock.json에서 이름을 변경합니다 {#changename-packagelock-packagelockjson}
+
+캔버스 테마의 이름과 버전을 `package.json` 및 `package_lock.json` 파일.
+
+>[!NOTE]
+>
+> 이름에 `@aemforms` 태그에 가깝게 포함했습니다. 사용자가 제공한 이름으로 간단한 텍스트여야 합니다.
+
+![캔버스 테마 사진](/help/forms/assets/changename_canvastheme.png)
+
 ### 3. 테마 폴더에 .env 파일을 만듭니다. {#creating-env-file-theme-folder}
 
 만들기 `.env` 파일을 테마 폴더에 넣고 다음 매개 변수를 추가합니다.
 
 * **AEM url**
-AEM_URL=https://[author-instance] 또는 http://localhost:[포트]/
+AEM_URL=https://[author-instance]
 
 * **AEM 사이트 이름**
 AEM_ADAPTIVE_FORM=Form_name
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm 실행](/help/forms/assets/theme_proxy.png)
 
-1. 프록시 서버가 시작되면 `http://localhost:[port]/`로의 브라우저가 자동으로 열립니다. 
+
 1. 탭 또는 클릭 **로컬로 로그인(관리 작업만 해당)** AEM 관리자가 제공한 프록시 사용자 자격 증명으로 로그인합니다.
 
    ![로컬에서 로그인](/help/forms/assets/local_signin.png)
@@ -168,18 +179,33 @@ AEM_PROXY_PORT=7000
 
 AEM Forms Cloud Service의 Git 리포지토리에 변경 사항을 커밋하기 전에 로컬 시스템에서 리포지토리의 복제가 필요합니다. 저장소를 복제하려면
 
-1. 명령 프롬프트를 열고 교체 후 아래 명령을 실행합니다. [my-org] 및 [내 프로그램] (AEM 관리자가 제공한 값 포함). 자세한 내용은 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. 을(를) 클릭하여 새 테마 저장소를 만듭니다 **[!UICONTROL 저장소]** 선택 사항입니다.
+
+   ![새 테마 리포지토리 만들기](/help/forms/assets/createrepo_canvastheme.png)
+
+1. 클릭 **[!UICONTROL 저장소 추가]** 그리고 **저장소 이름** 에서 **저장소 추가** 대화 상자 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+   ![캔버스 테마 리포지토리 추가](/help/forms/assets/addcanvasthemerepo.png)
+
+1. 클릭 **[!UICONTROL 저장소 URL 복사]** 생성된 저장소의 URL을 복사하기 위해
+
+   ![캔버스 테마 URL](/help/forms/assets/copyurl_canvastheme.png)
+
+1. 명령 프롬프트를 열고 위에 생성한 클라우드 저장소를 복제합니다.
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. 편집 중인 테마 프로젝트를 다음과 유사한 명령을 사용하여 복제된 보고서로 이동합니다. `mv <theme-sources> <cloned-repo>`.
-1. CSS 파일을 수정하여 테마 구성 요소 폴더에서 원하는 대로 변경합니다.
-1. 복제된 리포지토리의 디렉토리에서 다음 명령을 사용하여 방금 이동한 테마 파일을 커밋합니다.
+
+1. 편집 중인 테마 리포지토리의 파일을 다음과 유사한 명령을 사용하여 클라우드 저장소로 이동합니다
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+예를 들어 이 명령을 사용합니다 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. 클라우드 저장소의 디렉토리에서 다음 명령을 사용하여 이동한 테마 파일을 커밋합니다.
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ AEM Forms Cloud Service의 Git 리포지토리에 변경 사항을 커밋하기 
 사용자 지정은 이제 Git 리포지토리에 안전하게 저장됩니다.
 
 
-### 7. 프런트 엔드 파이프라인 배포 {#deploy-pipeline}
+### 7. 프런트 엔드 파이프라인 실행 {#deploy-pipeline}
 
-프런트 엔드 파이프라인을 사용하여 사용자 지정된 테마를 배포합니다. 학습 [맞춤형 테마를 배포하기 위해 전방 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. 프런트 엔드 파이프라인을 만들어 사용자 지정된 테마를 배포합니다. 학습 [맞춤형 테마를 배포하기 위해 전방 파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. 생성된 프런트 엔드 파이프라인을 실행하여 사용자 지정된 테마 폴더를 **[!UICONTROL 스타일]** 적응형 양식 만들기 마법사의 탭입니다.
 
 >[!NOTE]
 >
@@ -205,15 +231,15 @@ AEM Forms Cloud Service의 Git 리포지토리에 변경 사항을 커밋하기 
 1. 핵심 구성 요소를 사용하여 만든 적응형 양식을 엽니다.
 1. 명령 프롬프트를 사용하여 로컬 프록시 서버를 시작하고 **로컬로 로그인(관리 작업만 해당)**.
 1. 로그인하면 브라우저로 리디렉션되고 적용된 테마를 볼 수 있습니다.
-1. 캔버스 테마를 다운로드하고 다운로드한 zip 폴더를 추출합니다.
+1. 다운로드 [캔버스 테마](https://github.com/adobe/aem-forms-theme-canvas) 다운로드한 zip 폴더를 추출합니다.
 1. 기본 설정 편집기에서 추출된 zip 폴더를 엽니다.
 1. 만들기 `.env` 테마 폴더에 있는 파일 및 매개 변수 추가: **AEM URL**, **AEM_ADAPTIVE_FORM** 및 **AEM_PROXY_PORT**.
 1. 캔버스 테마 폴더에서 텍스트 상자의 CSS 파일을 열고 테두리 색상을 다음과 같이 변경합니다 `red` 색상을 지정하고 변경 내용을 저장합니다.
 1. 브라우저를 다시 열면 변경 사항이 적응형 양식에 즉시 반영됩니다.
 1. 복제된 저장소에서 캔버스 테마 폴더를 이동합니다.
-1. 변경 사항을 커밋하고 프런트 엔드 파이프라인을 배포합니다.
+1. 변경 사항을 커밋하고 프런트 엔드 파이프라인을 실행합니다.
 
-파이프라인이 실행되면 스타일 탭에서 테마를 사용할 수 있습니다.
+파이프라인이 실행되면 스타일 탭 아래에서 테마를 사용할 수 있습니다.
 
 ## 우수 사례 {#best-practices}
 
