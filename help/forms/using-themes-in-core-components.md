@@ -1,15 +1,15 @@
 ---
 title: 테마 만들기 및 사용
 description: 테마를 사용하여 핵심 구성 요소를 사용하여 적응형 양식에 시각화를 지정하고 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
-source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
+source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 5%
 
 ---
 
 
-# 핵심 구성 요소를 사용한 적응형 양식의 테마 소개 {#introduction-to-themes-for-af-using-core-components}
+# 응용 Forms의 테마(핵심 구성 요소) {#themes-for-af-using-core-components}
 
 핵심 구성 요소를 사용하여 테마를 만들고 적용하여 적응형 양식의 스타일을 조정할 수 있습니다. 테마에는 구성 요소 및 패널에 대한 스타일 세부 사항이 포함되어 있습니다. 스타일은 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성을 포함합니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소를 반영합니다. 테마는 적응형 양식에 대한 참조 없이 독립적으로 관리됩니다.
 
