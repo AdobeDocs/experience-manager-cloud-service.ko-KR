@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 9%
+source-wordcount: '1660'
+ht-degree: 8%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="컨텐츠 수집"
->abstract="수집은 마이그레이션 세트 의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 것입니다. 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 추가를 지원하는 기능이 있습니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="추가 수집"
+>abstract="수집은 마이그레이션 세트 의 컨텐츠를 대상 Cloud Service 인스턴스로 수집하는 것입니다. 콘텐츠 전송 도구에는 이전 콘텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 콘텐츠 추가를 지원하는 기능이 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="추가 수집"
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
 >[!NOTE]
@@ -107,7 +107,7 @@ ht-degree: 9%
 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 *추가*&#x200B;를 지원하는 기능이 있습니다.
 
 >[!NOTE]
->처음 컨텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 컨텐츠 전송에 대한 컨텐츠 고정 기간을 단축하기 위해 자주 차등 컨텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 처리에 사전 복사 단계를 사용한 경우, 전체 프로세스에 시간을 추가할 수 있으므로 후속 추가 수집 시 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우).
+>처음 콘텐츠 전송 후 클라우드 서비스에서 라이브로 전환되기 전에 최종 차등 콘텐츠 전송에 대한 콘텐츠 고정 기간을 단축하기 위해 자주 차등 콘텐츠 추가를 수행하는 것이 좋습니다. 첫 번째 전체 처리에 사전 복사 단계를 사용한 경우, 전체 프로세스에 시간을 추가할 수 있으므로 후속 추가 수집 시 사전 복사를 건너뛸 수 있습니다(추가 마이그레이션 세트 크기가 200GB 미만인 경우).
 
 수집 프로세스가 완료되면 델타 컨텐츠를 수집하려면 다음을 실행해야 합니다. [추가 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 그런 다음 추가 수집 방법을 사용합니다.
 
@@ -135,11 +135,28 @@ ht-degree: 9%
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### 마이그레이션 서비스에 연결할 수 없습니다. {#unable-to-reach-migration-service}
+
+수집이 요청되면 사용자에게 다음과 같은 메시지가 표시될 수 있습니다. &quot;대상 환경의 마이그레이션 서비스에 현재 연결할 수 없습니다. 나중에 다시 시도하거나 Adobe 지원에 문의하십시오.&quot;
+
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+이는 Cloud Acceleration Manager가 대상 환경의 마이그레이션 서비스에 도달하여 수집을 시작할 수 없음을 나타냅니다. 이는 여러 가지 이유로 발생할 수 있습니다.
+
+>[!NOTE]
+> 
+> &quot;마이그레이션 토큰&quot; 필드는 일부 경우 해당 토큰을 검색하는 것이 실제로 허용되지 않으므로 표시됩니다. 수동으로 제공할 수 있도록 허용하면 추가 도움말 없이 사용자가 수집을 신속하게 시작할 수 있습니다. 토큰이 제공되고 메시지가 여전히 나타나면 토큰을 검색하는 것이 문제가 아닙니다.
+
+* AEM as a Cloud Service은 환경 상태를 유지 관리하며, 종종 일반적인 여러 이유로 마이그레이션 서비스를 다시 시작해야 할 수도 있습니다. 서비스를 다시 시작하는 경우에는 연결할 수 없지만 곧 사용할 수 있습니다.
+* 인스턴스에서 다른 프로세스가 실행 중일 수 있습니다. 예를 들어 Release Orchestrator가 업데이트를 적용하는 경우 시스템이 사용 중일 수 있으며 마이그레이션 서비스를 정기적으로 사용할 수 없습니다. 따라서 수집 중 업데이트를 일시 중지하는 것이 매우 좋습니다. 따라서 단계 또는 프로덕션 인스턴스를 손상시킬 수 있습니다.
+* 다음과 같은 경우 [IP허용 목록에 추가하다가 적용됨](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) cloud Manager를 통해 Cloud Acceleration Manager가 마이그레이션 서비스에 도달하지 못하도록 차단합니다. IP 주소는 매우 동적이므로 인제션에 추가할 수 없습니다. 현재 유일한 해결 방법은 처리가 실행되는 동안 IP 허용 목록을 비활성화하는 것입니다.
+* 조사가 필요한 다른 이유들이 있을 수 있습니다. 여전히 수집이 실패하면 Adobe 고객 지원 센터에 문의하십시오.
+
 ### Release Orchestrator를 통한 자동 업데이트가 계속 활성화되어 있습니다.
 
 Release Orchestrator는 업데이트를 자동으로 적용하여 환경을 최신 상태로 자동으로 유지합니다. 수집이 수행될 때 업데이트가 트리거되면 환경의 손상을 포함하여 예기치 않은 결과가 발생할 수 있습니다. 이는 수집을 시작하기 전에 지원 티켓을 기록해야 하는 이유 중 하나입니다(위의 &quot;참고&quot; 참조). 이때 Release Orchestrator를 일시적으로 비활성화할 수 있습니다.
 
-수집을 시작할 때 Release Orchestrator가 여전히 실행 중인 경우 UI에 이 오류 메시지가 표시됩니다. 위험을 감수하면서 계속 진행할 수도 있습니다. 필드를 확인하고 버튼을 다시 누르면 됩니다.
+수집을 시작할 때 Release Orchestrator가 계속 실행되고 있는 경우 UI가 이 메시지를 표시합니다. 위험을 감수하면서 계속 진행할 수도 있습니다. 필드를 확인하고 버튼을 다시 누르면 됩니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
