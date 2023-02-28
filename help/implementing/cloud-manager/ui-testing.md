@@ -2,9 +2,9 @@
 title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
+source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2141'
 ht-degree: 56%
 
 ---
@@ -221,7 +221,7 @@ Adobe에서 제공하는 샘플을 사용하는 경우:
 Adobe 테스트 샘플은 구성 매개 변수에 액세스할 수 있는 도우미 함수를 제공합니다.
 
 * JavaScript: 자세한 내용은 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 모듈
-* Java: 자세한 내용은 [구성](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 클래스
+* Java: 자세한 내용은 [구성](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 클래스
 
 ### Selenium이 준비될 때까지 대기 {#waiting-for-selenium}
 
@@ -255,21 +255,9 @@ Docker 이미지는 추가 테스트 출력(예: 스크린샷 또는 비디오)�
 도우미 함수를 사용하여 테스트를 통해 스크린샷을 만들 수 있습니다.
 
 * JavaScript: [takeScreenshot 명령](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [명령](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java: [명령](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-UI 테스트 실행 중에 테스트 결과 아카이브가 생성되면 테스트 로그 파일에 테스트 결과 아카이브의 끝 위치에 대한 참조가 포함됩니다.
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-```
+UI 테스트 실행 중에 테스트 결과 아카이브를 만든 경우 `Download Details` 아래의 단추 [**사용자 지정 UI 테스트** 단계.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### 파일 업로드 {#upload-files}
 
@@ -282,7 +270,7 @@ Note: the link will expire after 60 days
    * 이러한 HTTP 요청을 수행하는 방법을 알아보려면 도커 이미지에 사용된 프로그래밍 언어의 문서 및 라이브러리를 참조하십시오.
    * Adobe 테스트 샘플은 파일을 업로드하기 위한 도우미 기능을 제공합니다.
       * JavaScript: 자세한 내용은 [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) 명령.
-      * Java: 자세한 내용은 [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 클래스 이름을 지정합니다.
+      * Java: 자세한 내용은 [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) 클래스 이름을 지정합니다.
 1. 업로드가 성공하면 요청은 `text/plain` 유형의 `200 OK` 응답을 반환합니다.
    * 응답의 내용은 불투명한 파일 핸들입니다.
    * `<input>` 요소의 파일 경로 대신 이 핸들을 사용하여 애플리케이션에서 파일 업로드를 테스트할 수 있습니다.
@@ -344,4 +332,4 @@ Cloud Manager의 테스트는 기술 관리자 사용자를 사용하여 실행�
 >
 >* 로그 파일은 `target/reports` 저장소의 폴더입니다.
 >
->자세한 내용은 [AEM 테스트 샘플 저장소.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>자세한 내용은 [AEM 테스트 샘플 저장소.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)

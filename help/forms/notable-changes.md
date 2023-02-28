@@ -3,10 +3,10 @@ title: AEM 6.5 Forms과 AEM 클라우드 서비스 간에 변경된 사항
 description: Experience Manager Forms 사용자로서 Adobe Experience Manager Forms as a Cloud Service으로 업그레이드하려고 합니까? Cloud Service으로 업그레이드하거나 마이그레이션하기 전에 가장 눈에 띄는 변경 사항에 대해 알아봅니다.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 3%
+source-wordcount: '1179'
+ht-degree: 2%
 
 ---
 
@@ -33,21 +33,11 @@ Adobe Experience Manager Forms은 Adobe Experience Manager Forms 온-프레미�
 | 양식 만들기 마법사 | ✅ | ⛌ |
 | 기록 문서에 대한 사용자 지정 XCI 지원 | ✅ | ⛌ |
 | 응용 Forms <sup>1</sup> | ✅ | ✅ |
-| 여러 데이터 소스와 데이터 통합 | ✅ | ✅ |
 | 통신 API(문서 서비스) <sup>2,3</sup> | ✅ | ✅ |
 | automated forms conversion 서비스 <sup>4</sup> | ✅ | ✅ |
-| [!DNL Adobe Sign]와 통합  | ✅ | ✅ |
-| [!DNL AEM Sites]와 통합  | ✅ | ✅ |
-| [!DNL Adobe Launch]와 통합  | ✅ | ✅ |
-| [!DNL Adobe Analytics]와 통합  | ✅ | ✅ |
 | Forms 포털 <sup>5개</sup> | ✅ | ✅ |
-| AEM 워크플로우 | ✅ | ✅ |
-| 기록 문서 | ✅ | ✅ |
-| Captcha 숨김 | ✅ | ✅ |
-| 재사용 가능한 양식 데이터 모델 구성 | ✅ | ✅ |
-| Acroform 기반 레코드 문서 | ✅ | ✅ |
-| Adobe Sign에 대한 정부 ID 기반 ID 인증 활성화 응용 Forms | ✅ | ✅ |
-| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Forms 데이터 모델 <sup>6</sup> | ✅ | ✅ |
+| HTML5 Forms <sup>7</sup> | ⛌ | ✅ |
 | 문서 보안 | ⛌ | ✅ |
 
 서비스를 계속 진행하기 전에 다음 예외적인 경우를 고려하십시오.
@@ -96,27 +86,29 @@ Adobe Experience Manager Forms은 Adobe Experience Manager Forms 온-프레미�
 
 +++ 5. Forms 포털
 
-즉시 사용 가능한 Forms 포털(OOTB)에 대한 익명 사용 지원을 사용할 수 없습니다. 로그인하지 않은 사용자에 대해 양식을 표시할 수 있도록 양식 포털을 사용자 지정할 수 있습니다.
+즉시 사용 가능한 Forms Portal(OOTB)에 대한 익명 사용 지원을 사용할 수 없습니다. Forms Portal 을 사용자 지정하여 로그인하지 않은 사용자의 양식을 표시할 수 있습니다.
 
 +++
 
-
-+++ 6. HTML5 Forms(모바일 Forms)
-
-* 이 서비스는 HTML 5 Forms(Mobile Forms)을 지원하지 않습니다. XDP 기반 양식을 HTML 5 Forms으로 렌더링하는 경우 AEM 6.5 Forms에서 기능을 계속 사용할 수 있습니다.
-
-* 오프라인으로 데이터를 캡처하고 다음에 온라인으로 돌아올 때 동기화하기 위한 사용 사례가 있을 경우 [AEM Forms 작업 공간](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) AEM 6.5 Forms의 기능입니다.
-
-+++
-
-
-+++ 7. 양식 데이터 모델
++++ 6. 양식 데이터 모델
 
 * Forms 데이터 모델은 데이터를 제출할 HTTP 및 HTTP 끝점만 지원합니다. 이 서비스는 REST 커넥터에 대한 상호 SSL 및 SOAP 데이터 소스에 대한 x509 인증서 기반 인증을 지원하지 않습니다.
 
 * Forms as a Cloud Service에서는 일반 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 지원하는 Microsoft Azure Blob, Microsoft Sharepoint, Microsoft OneDrive 및 서비스를 데이터 저장소로 사용할 수 있으며, Open API 사양 2.0 및 Open API 사양이 모두 지원됩니다. 이 서비스는 JDBC 커넥터를 지원합니다.
 
 +++
+
+
++++ 7. HTML5 Forms(모바일 Forms)
+
+* 이 서비스는 HTML 5 Forms(Mobile Forms)을 지원하지 않습니다. XDP 기반 양식을 HTML 5 Forms으로 렌더링하는 경우 AEM 6.5 Forms에서 기능을 계속 사용할 수 있습니다.
+
+* 오프라인으로 데이터를 캡처하고 다음에 온라인으로 돌아올 때 동기화하는 데 사용 사례가 있을 경우 [AEM Forms 작업 공간](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) AEM 6.5 Forms의 기능입니다.
+
++++
+
+
+
 
 
 +++ 8. 개발자 환경
