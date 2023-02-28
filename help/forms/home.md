@@ -3,9 +3,9 @@ title: ' [!DNL AEM Forms] as a Cloud Service 소개'
 description: AEM Forms를 살펴보고 업무용 문서 및 양식 콘텐츠를 제작하는 데 어떻게 도움이 되는지 알아봅니다. PaaS(Platform-as-a-Service)에 대해 자세히 알아보고 엔터프라이즈급 디지털 양식 및 비즈니스 프로세스를 관리하는 방법을 포함하여 Forms를 현재 데이터 소스에 연결하는 방법도 알아봅니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '940'
 ht-degree: 25%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 25%
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 는 제출된 데이터를 백엔드 프로세스, 비즈니스 규칙 및 외부 데이터 저장소에 통합하는 동시에 복잡한 디지털 양식을 작성, 관리, 게시 및 업데이트하는 클라우드 기반의 PaaS(Platform as a Service) 솔루션을 제공합니다.
 
-## 데이터 수집
+## 등록 및 온보딩 환경을 디지털화하고 간소화합니다.
 
 이 서비스를 사용하여 대화형의 매력적인 디지털 양식을 제작하고 배포할 수 있습니다. 예를 들어, 고객 등록 여정을 디지털화하고자 하는 조직을 생각해 보십시오. 이 조직은 기존 고객 데이터가 포함된 여러 데이터 소스를 보유하고 있습니다. 양식을 미리 채우고, 양식에 전자 서명을 추가하고, 채워진 양식을 PDF 파일로 보관하고자 합니다. 또한 조직에는 여러 인쇄 양식(PDF 양식)이 있으며 모든 인쇄 양식을 디지털 양식으로 변환하고자 합니다.
 
