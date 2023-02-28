@@ -3,7 +3,7 @@ title: ' [!DNL AEM Forms] as a Cloud Service 소개'
 description: AEM Forms를 살펴보고 업무용 문서 및 양식 콘텐츠를 제작하는 데 어떻게 도움이 되는지 알아봅니다. PaaS(Platform-as-a-Service)에 대해 자세히 알아보고 엔터프라이즈급 디지털 양식 및 비즈니스 프로세스를 관리하는 방법을 포함하여 Forms를 현재 데이터 소스에 연결하는 방법도 알아봅니다.
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 6861f83b292dfb8a8e62e685830289e3a2eded2d
+source-git-commit: c51aa20a37e27252a8c1e6a72d4bc6ffacea46f7
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 25%
@@ -20,7 +20,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 는 제출된 데이터
 
 이 조직은 [!DNL AEM Forms] as a Cloud Service를 사용하여 디지털 양식을 만들고, 양식을 기존 데이터 소스에 연결하고, [!DNL Adobe Sign]과 양식을 통합하여 양식에 전자 서명을 추가하고, DoR(문서 기록)을 생성하여 제출된 양식을 PDF 파일로 보관할 수 있습니다. 서비스를 사용하여 기존 PDF 양식을 디지털 양식으로 변환할 수도 있습니다.
 
-![데이터 수집 - 반응형 양식 디자인](/help/forms/assets/data-collection.jpeg)
+![데이터 수집 - 반응형 양식 디자인](/help/forms/assets/data-collection.jpeg){width="40%"}
 반응형 양식 디자인
 
 대기업은 양식을 한 번 만든 후 컨텐츠 관리 시스템에 복사하여 재사용하는 경우가 많습니다. 대용량 데이터 베이스를 최신 상태로 유지하고 이를 검색할 수 있게 만드는 것은 상당한 어려움이 될 수 있습니다. AEM은 고객이 웹 및 모바일 채널 모두에서 필요한 양식을 찾고 액세스할 수 있도록 사용자 지정 가능한 Forms 포털을 제공합니다.
@@ -34,7 +34,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 는 제출된 데이터
 영수증, 환영 키트, 명세서 등 개인화된 문서를 손쉽게 생성할 수 있습니다. 조직은 개인화된 웹 포털로 트래픽을 유도하여 추가 서비스를 등록 또는 구매할 수 있습니다.
 
 
-![개인화된 커뮤니케이션 - 반응형 디자인](/help/forms/assets/personalized-communication.jpeg)
+![개인화된 커뮤니케이션 - 반응형 디자인](/help/forms/assets/personalized-communication.jpeg){width="40%"}
 개인화된 송장
 
 이 서비스는 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습합니다. 조직은 [!DNL AEM Forms] 로컬 인프라가 필요 없이 클라우드에서 as a Cloud Service으로 이러한 기능을 모두 이용할 수 있습니다. 또한 이 서비스는 항상 최신 기능을 유지하므로 조직은 복잡한 업그레이드 주기를 겪을 필요가 없습니다.
