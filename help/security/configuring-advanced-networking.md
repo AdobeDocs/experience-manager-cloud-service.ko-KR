@@ -2,8 +2,8 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: ht
+source-git-commit: 9efa730f7a8bdc01d19511100e611f9f15c64f19
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 
@@ -488,7 +488,7 @@ API는 몇 초 안에 응답하여 `updating` 상태를 표시하고, 약 10분 
     <td>VPN으로부터의 연결은 CDN에 이 IP로부터 오는 연결로 표시됩니다. VPN에서 AEM으로 이동하는 연결만 허용하려면 이 IP만 허용하고 그 외 다른 모든 IP는 차단하도록 Cloud Manager를 구성하십시오. 자세한 내용은 “VPN 연결 인그레스 제한” 섹션을 확인하십시오.</td>
   </tr>
   <tr>
-    <td><code>p{PROGRAM_ID}-gateway.external.adobeaemcloud.com</code></td>
+    <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>해당 없음</td>
     <td>AEM측 VPN 게이트웨이의 IP입니다. 고객의 네트워크 엔지니어링 팀에서 이 IP를 사용하여 특정 IP 주소의 VPN 게이트웨이에 대한 VPN 연결만 허용할 수 있습니다. </td>
   </tr>
