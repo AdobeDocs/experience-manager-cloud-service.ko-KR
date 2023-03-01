@@ -2,10 +2,10 @@
 title: 경험 감사 테스트
 description: 경험 감사를 통해 배포 프로세스를 검증하고 배포된 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 방법을 알아봅니다.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
+source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 97%
 
 ---
 
@@ -33,6 +33,10 @@ Cloud Manager의 경험 감사를 통해 최종 사용자의 사이트 경험을
 
 경험 감사는 Google의 오픈 소스 도구인 Google Lighthouse를 기반으로 하며 모든 Cloud Manager 프로덕션 파이프라인에서 사용할 수 있습니다.
 
+>[!TIP]
+>
+>다음과 같은 경우 경험 감사에 포함될 페이지를 구성합니다 [파이프라인을 설정합니다.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## 경험 감사 결과 이해 {#understanding-experience-audit-results}
 
 경험 감사는 [프로덕션 파이프라인 실행 페이지](/help/implementing/cloud-manager/deploy-code.md)를 통해 집계되고 상세한 페이지 수준 테스트 결과를 제공합니다.
@@ -59,7 +63,6 @@ Cloud Manager의 경험 감사를 통해 최종 사용자의 사이트 경험을
 * **해당 사항 없음** - 비교할 수 있는 이전 점수가 없습니다.
 
 ![경험 감사 결과](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### 페이지 수준 점수 {#page-level-scores}
 
