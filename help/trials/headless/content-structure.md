@@ -4,10 +4,10 @@ description: AEM의 콘텐츠 조각 모델을 사용하여 모든 Headless 콘�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
-workflow-type: ht
+source-git-commit: fa36470e50abdf6dd019a91665945ff6e68e40c2
+workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
