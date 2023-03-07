@@ -1,6 +1,6 @@
 ---
 title: App Builder 소개
-description: 비즈니스 가치부터 아키텍처에 이르기까지 App Builder의 기본 사항을 알아봅니다.
+description: 비즈니스 가치에서 아키텍처에 이르기까지 App Builder의 기본 사항에 대해 알아봅니다.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -10,9 +10,9 @@ kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg
 exl-id: c6fc96a0-ff95-4fb9-8674-71e60d23ef5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
@@ -20,28 +20,28 @@ ht-degree: 11%
 
 >[!IMPORTANT]
 >
-> _이 시리즈의 비디오에서 언급한 대로, 이제 Adobe Project Firefly를 App Builder라고 합니다_
+> 이 시리즈의 비디오에서 언급한 대로 _Adobe Project Firefly는 이름이 이제 App Builder_&#x200B;로 지정됩니다.
 
 ## 소개
 
-App Builder, 기능 및 App Builder가 제공하는 비즈니스 가치에 대해 알아봅니다.
+App Builder, 자체 기능과 App Builder가 제공하는 비즈니스 가치에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339158/?quality=12&learn=on)
 
 ## 터치포인트
 
-최종 사용자가 App Builder SPA과 상호 작용하는 방법 및 개발자가 App Builder 개발에 대해 배울 수 있는 위치를 알아봅니다.
+최종 사용자가 App Builder SPA와 상호 작용하는 방법과 개발자가 App Builder 개발에 대해 알아볼 수 있는 위치에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339159/?quality=12&learn=on)
 
 ## 아키텍처
 
-App Builder의 애플리케이션 아키텍처와 이점을 알아봅니다.
+App Builder의 애플리케이션 아키텍처와 장점에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339160/?quality=12&learn=on)
 
 ## 비즈니스 가치 및 사용 사례
 
-App Builder의 디자인 원칙 및 일반적인 사용 사례에 대해 알아봅니다.
+App Builder의 디자인 원칙과 일반적인 사용 사례에 대해 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339161/?quality=12&learn=on)
