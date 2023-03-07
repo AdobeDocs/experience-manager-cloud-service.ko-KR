@@ -2,8 +2,8 @@
 title: AEM as a Cloud Service에 대한 고급 네트워킹 구성
 description: AEM as a Cloud Service에 대해 VPN 또는 유연한/전용 이그레스 IP 주소와 같은 고급 네트워킹 기능을 구성하는 방법에 대해 알아봅니다.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9efa730f7a8bdc01d19511100e611f9f15c64f19
-workflow-type: tm+mt
+source-git-commit: 8ca2340bf6d39248ed3596828f27745dcaff2c75
+workflow-type: ht
 source-wordcount: '3053'
 ht-degree: 100%
 
