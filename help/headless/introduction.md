@@ -1,9 +1,9 @@
 ---
 title: AEM용 Headless 소개
-description: 자세한 설명서와 헤드리스 여정의 조합으로 Adobe Experience Manager(AEM)의 헤드리스에 대해 알아봅니다. 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 기능을 사용하여 Headless 경험을 제공하는 방법을 알아봅니다.
-landing-page-description: Adobe Experience Manager as a Cloud Service에서 헤드리스를 사용하고 관리하는 방법을 이해합니다.
+description: 자세한 설명서와 Headless 여정의 조합으로 Adobe Experience Manager(AEM)의 Headless에 대해 알아봅니다. 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 기능을 사용하여 Headless 경험을 제공하는 방법을 알아봅니다.
+landing-page-description: Adobe Experience Manager as a Cloud Service에서 Headless를 사용하고 관리하는 방법을 이해합니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
+source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 94%
@@ -41,10 +41,10 @@ AEM as a Cloud Service는 다음과 같은 세 가지 강력한 기능을 제공
    * 콘텐츠 조각은 콘텐츠 모델을 기반으로 만들어집니다.
    * AEM 콘텐츠 조각 편집기를 사용하여 콘텐츠 작성자가 만듭니다.
    * 콘텐츠 조각은 AEM Assets에 저장되고 Assets Admin UI에서 관리됩니다.
-1. **전달을 위한 콘텐츠 API**
-   * AEM GraphQL API는 콘텐츠 조각 전달을 지원합니다.
+1. **게재를 위한 콘텐츠 API**
+   * AEM GraphQL API는 콘텐츠 조각 게재를 지원합니다.
    * AEM Assets REST API는 콘텐츠 조각 CRUD 작업을 지원합니다.
-   * [콘텐츠 조각 핵심 구성 요소의 JSON 내보내기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko-KR)를 통해 직접 콘텐츠 전달도 가능합니다.
+   * [콘텐츠 조각 핵심 구성 요소의 JSON 내보내기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko-KR)를 통해 직접 콘텐츠 게재도 가능합니다.
 
 ## 첫 단계 {#first-steps}
 
