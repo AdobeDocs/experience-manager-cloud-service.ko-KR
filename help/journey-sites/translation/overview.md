@@ -1,24 +1,24 @@
 ---
-title: AEM 사이트 번역 여정
+title: AEM Sites 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 AEM Sites 콘텐츠 번역을 통한 가이드 여정을 시작해 보십시오.
 index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
 ht-degree: 100%
 
 ---
 
-# AEM 사이트 번역 여정 {#aem-sites-translation-journey}
+# AEM Sites 번역 여정 {#aem-sites-translation-journey}
 
 AEM의 강력한 번역 도구를 사용하여 AEM Sites 콘텐츠 번역을 통한 가이드 여정을 시작해 보십시오.
 
 ## 소개 {#introduction}
 
-AEM Sites는 디지털 환경 제작 및 관리를 위한 강력한 도구 세트입니다. 콘텐츠 작성자는 사이트 편집기를 사용하여 디지털 환경을 손쉽게 제작하고 사이트 콘솔을 사용하여 콘텐츠를 구성할 수 있으며, 모든 콘텐츠가 AEM을 통해 서로 다른 채널의 대상자에게 전달되므로 콘텐츠를 라이브로 확인할 수 있습니다.
+AEM Sites는 디지털 환경 제작 및 관리를 위한 강력한 도구 세트입니다. 콘텐츠 작성자는 사이트 편집기를 사용하여 디지털 환경을 손쉽게 제작하고 Sites 콘솔을 사용하여 콘텐츠를 구성할 수 있으며, 모든 콘텐츠가 AEM을 통해 서로 다른 채널의 대상자에게 전달되므로 콘텐츠를 라이브로 확인할 수 있습니다.
 
 AEM은 콘텐츠 번역을 위한 강력한 도구를 제공하므로 다른 지역 또는 로케일의 대상자에게 번역된 콘텐츠를 최대한 신속하게 전달할 수 있습니다. 이 설명서 여정에서는 AEM에서 콘텐츠를 만들고 관리하는 방법을 이해할 수 있는 작성 도구를 소개하고 나만의 번역 프로젝트를 관리하기 위해 알아야 할 사항을 안내합니다.
 
@@ -47,9 +47,9 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 | 관리자 | AEM의 기본 설정 및 구성 관리 | 번역 전문가는 관리자와 함께 작업하여 번역 커넥터 설치와 같은 번역에 필요한 구성 변경을 수행합니다. |
 | 콘텐츠 설계자 | 사이트로 제공할 데이터에 대한 요구 사항 분석 및 이러한 데이터의 구조 정의 | 번역 전문가는 콘텐츠 설계자와 함께 작업하여 콘텐츠를 간편하게 번역할 수 있도록 콘텐츠의 구성을 정의합니다. |
 
-이 여정에서 제공하는 정보는 모든 담당자에게 유용하지만, 일부 정보는 특정 역할에게 불필요할 수 있습니다. [추가 역할을 다루는 다가오는 여정](/help/journey-documentation/documentation-journeys.md#journeys)은 추후에 업데이트될 예정입니다.
+이 여정에서 제공하는 정보는 모든 담당자에게 유용하지만 일부 정보는 특정 역할에 불필요할 수 있습니다. [추가 역할을 다루는 다가오는 여정](/help/journey-documentation/documentation-journeys.md#journeys)은 추후에 업데이트될 예정입니다.
 
-## 사이트 번역 여정 {#the-journey}
+## Sites 번역 여정 {#the-journey}
 
 이 여정에서 다양한 주제들을 살펴보게 됩니다. 다음 문서는 AEM에서의 사이트 콘텐츠 번역에 대한 기초 지식을 제공하며 상세 기술 설명서와 연결됩니다.
 
@@ -57,7 +57,7 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 | # | 문서 | 설명 |
 |---|---|---|
-| 0 | AEM 사이트 번역 여정 | 이 문서 |
+| 0 | AEM Sites 번역 여정 | 이 문서 |
 | 1 | [사이트 콘텐츠 및 AEM에서의 사이트 콘텐츠 번역 방법에 대해 알아보기](learn-about.md) | 사이트 개념 및 AEM 번역 이론에 대해 알아봅니다. |
 | 2 | [AEM Sites 번역 시작하기](getting-started.md) | 사이트 콘텐츠를 구성하는 방법 및 AEM의 번역 도구의 작동 방식에 대해 알아봅니다. |
 | 3 | [번역 커넥터 구성](configure-connector.md) | AEM을 번역 서비스에 연결하는 방법에 대해 알아봅니다. |
@@ -67,14 +67,14 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 ## 다음 단계 {#what-is-next}
 
-이제 Adobe 사이트 번역 여정을 시작할 준비가 되었습니다. 여정의 다음 단계로 넘어가 다음 문서인 [AEM의 사이트 콘텐츠 및 번역 방법 알아보기](learn-about.md)를 읽어보시기 바랍니다.
+이제 Adobe Sites 번역 여정을 시작할 준비가 되었습니다. 여정의 다음 단계로 넘어가 다음 문서인 [AEM의 사이트 콘텐츠 및 번역 방법 알아보기](learn-about.md)를 읽어보시기 바랍니다.
 
 ## 추가 리소스 {#additional-resources}
 
 AEM의 강력한 기능들이 함께 작동하는 방법에 대한 자세한 내용은 이들 추가 리소스를 확인하십시오.
 
-* [헤드리스 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 헤드리스 기능과 각각의 능력, 그리고 귀하의 첫 헤드리스 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
-* [헤드리스 설계 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager as a Cloud Service의 강력하고 유연한 헤드리스 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.
-* [AEM 헤드리스 개발자 여정](/help/journey-headless/developer/overview.md) - 여기에서 AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 시작해 보십시오.
-* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM 및 헤드리스 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
-* [AEM 헤드리스 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해보면서 배우는 것을 선호하고 기술 관련 소양을 갖추고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM 헤드리스에 구축된 애플리케이션을 만들고 사용해 보십시오.
+* [Headless 작성 여정](/help/journey-headless/author/overview.md) - AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오.
+* [Headless 설계자 여정](/help/journey-headless/architect/overview.md) - 여기에서 Adobe Experience Manager as a Cloud Service의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오.
+* [AEM Headless 개발자 여정](/help/journey-headless/developer/overview.md) - 여기에서 AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 사용자의 첫 개발 프로젝트에서 이들 기능을 활용하는 방법에 대한 가이드 여정을 시작해 보십시오.
+* [AEM as a Cloud Service 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - AEM 및 Headless 기술에 대해 확실히 이해하고 있다면 바로 심화 기술 문서를 참조할 수 있습니다.
+* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 직접 해보면서 배우는 것을 선호하고 기술 관련 소양을 갖추고 있다면 API 및 프레임워크로 구성된 실습형 튜토리얼을 사용하여 AEM Headless에 구축된 애플리케이션을 만들고 사용해 보십시오.
