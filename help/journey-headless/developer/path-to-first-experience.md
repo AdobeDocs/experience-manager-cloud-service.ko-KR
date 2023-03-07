@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM Headless 번역 여정의 이전 문서인 [}AEM Headless as a Cloud Service 시작하기](getting-started.md)에서 Headless CMS의 기본 이론에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
+AEM Headless 번역 여정의 이전 문서인 [AEM Headless as a Cloud Service 시작하기](getting-started.md)에서 Headless CMS의 기본 이론에 대해 알아보았습니다. 여기에서 알게 된 내용은 다음과 같습니다.
 
 * AEM의 Headless 기능에 대한 기본 사항을 이해합니다.
 * AEM의 Headless 기능 사용에 대한 사전 요구 사항을 알아봅니다.
