@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 지금까지의 스토리 {#story-so-far}
 
-AEM Headless 번역 여정의 이전 문서인 [결합 방법 - AEM Headless의 앱과 콘텐츠{](put-it-all-together.md)에서는 AEM 개발 도구를 사용하여 프로젝트의 모든 측면을 결합하는 방법에 대해 알아보았습니다.
+AEM Headless 번역 여정의 이전 문서인 [결합 방법 - AEM Headless의 앱과 콘텐츠](put-it-all-together.md)에서는 AEM 개발 도구를 사용하여 프로젝트의 모든 측면을 결합하는 방법에 대해 알아보았습니다.
 
 이 문서는 이러한 기본 사항을 기본으로 하며, 이를 통해 자체 AEM Headless 프로젝트를 준비하여 실행하는 방법을 이해할 수 있습니다.
 
