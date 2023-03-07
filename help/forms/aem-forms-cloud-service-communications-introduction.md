@@ -1,53 +1,53 @@
 ---
-title: Forms as a Cloud Service Communications 소개
-description: 데이터를 XDP 및 PDF 템플릿과 자동으로 병합하거나 PCL, ZPL 및 PostScript 형식으로 출력을 생성합니다
+title: AEM Forms as a Cloud Service 커뮤니케이션 소개
+description: XDP 및 PDF 템플릿과 데이터 자동 병합 또는 PCL, ZPL 및 PostScript 형식으로 출력 생성
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# AEM Forms as a Cloud Service 통신 사용 {#frequently-asked-questions}
+# AEM Forms as a Cloud Service 커뮤니케이션 사용 {#frequently-asked-questions}
 
-커뮤니케이션 기능을 사용하면 비즈니스 서신, 명세서, 청구 처리 편지, 혜택 공지, 월별 청구서 또는 환영 키트와 같은 브랜드 승인, 개인화 및 표준화된 문서를 만들 수 있습니다.
+커뮤니케이션 기능은 비즈니스 서신, 명세서, 요청 처리 레터, 혜택 공지, 월별 청구서 또는 시작 키트 등 개인화 및 표준화된 브랜드 승인 문서를 만드는 데 도움이 됩니다.
 
-이 기능은 문서를 생성하고 조작하는 API를 제공합니다. 필요에 따라 문서를 생성 또는 조작하거나 배치 작업을 만들어 정의된 간격으로 여러 문서를 생성할 수 있습니다. 통신 API는 다음을 제공합니다.
+이 기능은 문서를 생성하고 조작하는 API를 제공합니다. 주문형 문서를 생성 또는 조작하거나 배치 작업을 생성하여 정의된 간격으로 여러 문서를 생성할 수 있습니다. 통신 API는 다음 사항을 제공합니다.
 
-* 온디맨드 및 배치 문서 생성 기능이 간소화되었습니다.
+* 간소화된 온디맨드 및 배치 문서 생성 기능.
 
-* PDF 문서를 필요에 따라 결합, 재정렬 및 검증할 수 있습니다.
+* 주문형 PDF 문서를 결합하고, 재배열하고 확인하는 기능.
 
-* 외부 시스템과의 쉬운 통합을 위한 HTTP API. 주문형(지연 시간) 및 배치 작업(높은 처리량 작업)에 대한 별도의 API가 포함됩니다.
+* 더 쉽게 외부 시스템과 통합할 수 있는 HTTP API. 온디맨드(낮은 대기 시간) 및 배치 작업(처리량이 많은 작업)용 별도 API가 포함됩니다.
 
-* 데이터에 대한 보안 액세스. 통신 API는 고객이 지정한 데이터 저장소에서만 데이터를 연결하고 액세스하므로 커뮤니케이션을 매우 안전하게 만듭니다.
+* 데이터에 대한 보안 액세스. 통신 API는 고객이 지정한 데이터 저장소의 데이터에만 연결하고 액세스하여 커뮤니케이션의 보안 수준을 높입니다.
 
-![신용 카드 명세서 샘플](assets/statement.png)
-Communications API를 사용하여 신용 카드 명세서를 만들 수 있습니다. 이 샘플 문은 동일한 템플릿을 사용하지만 신용 카드 사용에 따라 각 고객에 대해 별도의 데이터를 사용합니다.
+![샘플 신용카드 명세서](assets/statement.png)
+신용카드 명세서는 통신 API를 통해 생성될 수 있습니다. 이 샘플 명세서는 동일한 템플릿을 사용하지만 신용카드 사용량에 따라 각 고객별로 별도의 데이터를 사용합니다.
 
 ## 문서 생성
 
-통신 문서 생성 API는 템플릿(XFA 또는 PDF)을 고객 데이터(XML)와 결합하여 PS, PCL, DPL, IPL 및 ZPL 포맷과 같은 PDF 및 인쇄 형식으로 문서를 생성하는 데 도움이 됩니다. 이러한 API는 [XML 데이터](communications-known-issues-limitations.md#form-data) 배치 작업을 사용하여 단일 요청 문서 또는 여러 문서를 생성할 수 있습니다.
+통신 문서 생성 API는 템플릿(XFA 또는 PDF)을 고객 데이터(XML)와 결합하여 PS, PCL, DPL, IPL, ZPL 등 PDF 및 인쇄 형식으로 문서를 생성하는 데 도움이 됩니다. 해당 API는 [XML 데이터](communications-known-issues-limitations.md#form-data)가 포함된 PDF 및 XFA 템플릿을 활용하여 배치 작업을 통해 주문형 단일 문서이나 여러 문서를 생성합니다.
 
-일반적으로 [디자이너](use-forms-designer.md) 및 를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션이 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템으로 전송하여 아카이빙할 수 있습니다. 일반적인 기본 제공 및 사용자 지정 워크플로우는 다음과 같습니다.
+일반적으로 [디자이너](use-forms-designer.md)를 사용하여 템플릿을 만들고 통신 API를 사용하여 데이터를 템플릿과 병합합니다. 애플리케이션은 출력 문서를 네트워크 프린터, 로컬 프린터 또는 스토리지 시스템에 전송하여 보관합니다. 일반적인 기본 제공 및 사용자 지정 워크플로는 다음과 같습니다.
 
-![통신 문서 생성 워크플로우](assets/communicaions-workflow.png)
+![통신 문서 생성 워크플로](assets/communicaions-workflow.png)
 
-사용 사례에 따라 웹 사이트나 스토리지 서버를 통해 이러한 문서를 다운로드할 수 있도록 할 수도 있습니다.
+사용 사례에 따라 웹 사이트나 스토리지 서버를 통해 해당 문서를 다운로드할 수도 있습니다.
 
 문서 생성 API의 몇 가지 예는 다음과 같습니다.
 
 ### PDF 문서 만들기 {#create-pdf-documents}
 
-문서 생성 API를 사용하여 양식 디자인 및 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력은 비대화형 PDF 문서입니다. 즉, 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다. 기본 워크플로우는 XML 양식 데이터를 양식 디자인과 병합하여 PDF 문서를 만드는 것입니다. 다음 그림은 양식 디자인과 XML 양식 데이터를 병합하여 PDF 문서를 생성하는 방법을 보여 줍니다.
+문서 생성 API를 사용하여 양식 디자인과 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력은 비대화형 PDF 문서입니다. 즉, 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다. 기본 워크플로는 XML 양식 데이터를 양식 디자인과 병합하여 PDF 문서를 만드는 것입니다. 다음 일러스트레이션은 양식 디자인과 XML 양식 데이터를 병합하여 PDF 문서를 생성하는 모습을 보여 줍니다.
 
 ![PDF 문서 만들기](assets/outPutPDF_popup.png)
-그림: PDF 문서를 만드는 일반적인 워크플로우
+그림: PDF 문서를 만드는 일반적인 워크플로
 
-### PostScript(PS), 프린터 명령 언어(PCL), Zebra Printing Language(ZPL) 문서 작성 {#create-PS-PCL-ZPL-documents}
+### PS(PostScript), PCL(Printer Command Language), ZPL(Zebra Printing Language) 문서 만들기 {#create-PS-PCL-ZPL-documents}
 
-문서 생성 API를 사용하여 XDP 양식 디자인 또는 PDF 문서를 기반으로 하는 PS(PostScript), PCL(Printer Command Language) 및 ZPL(Zebra Printing Language) 문서를 만들 수 있습니다. 이러한 API는 양식 디자인을 양식 데이터와 병합하여 문서를 생성하는 데 도움이 됩니다. 문서를 파일에 저장하고 사용자 정의 프로세스를 개발하여 프린터로 보낼 수 있습니다.
+문서 생성 API를 사용하여 XDP 양식 디자인 또는 PDF 문서를 기반으로 하는 PS(PostScript), PCL(Printer Command Language), ZPL(Zebra Printing Language) 문서를 만들 수 있습니다. 해당 API는 양식 디자인을 양식 데이터와 병합하여 문서를 생성하는 데 도움이 됩니다. 문서를 파일에 저장하고, 사용자 지정 프로세스를 개발하여 프린터에 전송할 수 있습니다.
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -59,9 +59,9 @@ The following illustration shows Communications APIs processing an XML data file
 
  -->
 
-### 배치 데이터를 처리하여 여러 문서 작성 {#processing-batch-data-to-create-multiple-documents}
+### 배치 데이터를 처리하여 여러 문서 만들기 {#processing-batch-data-to-create-multiple-documents}
 
-문서 생성 API를 사용하여 XML 배치 데이터 소스 내의 각 레코드에 대해 별도의 문서를 만들 수 있습니다. 대량 및 비동기 모드로 문서를 생성할 수 있습니다. 변환에 대한 다양한 매개 변수를 구성한 다음 배치 프로세스를 시작할 수 있습니다.
+문서 생성 API를 사용하여 XML 배치 데이터 소스 내의 각 기록에 별도의 문서를 만들 수 있습니다. 비동기화 모드에서 문서를 일괄 생성할 수 있습니다. 다양한 매개변수를 구성하여 변환한 다음 배치 프로세스를 시작할 수 있습니다.
 
 ![PDF 문서 만들기](assets/ou_OutputBatchMany_popup.png)
 
@@ -97,34 +97,34 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 문서 조작
 
-통신 문서 조작 API를 사용하여 PDF 문서를 결합, 재정렬 및 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 어셈블하거나 다시 배치합니다. 다음 [DDX 문서](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) 소스 문서를 사용하여 필수 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 설명서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작의 몇 가지 예는 다음과 같습니다.
+통신 문서 조작 API를 통해 PDF 문서를 결합하고, 재배열하고 확인할 수 있습니다. 일반적으로 DDX를 만들어 문서 조작 API에 제출하여 문서를 조합하거나 재정렬합니다. [DDX 문서](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)에서는 소스 문서를 사용하여 필요한 문서 세트를 생성하는 방법에 대한 지침을 제공합니다. DDX 참조 문서에서는 지원되는 모든 작업에 대한 자세한 정보를 제공합니다. 문서 조작 API의 몇 가지 예는 다음과 같습니다.
 
-### PDF 문서를 어셈블합니다
+### PDF 문서 어셈블
 
-문서 조작 API를 사용하여 두 개 이상의 PDF 또는 XDP 문서를 하나의 PDF 문서 또는 PDF Portfolio으로 어셈블할 수 있습니다. PDF 문서를 취합할 수 있는 몇 가지 방법은 다음과 같습니다.
+문서 조작 API를 사용하여 두 개 이상의 PDF 또는 XDP 문서를 단일 PDF 문서 또는 PDF 포트폴리오로 어셈블할 수 있습니다. 다음은 PDF 문서를 어셈블할 수 있는 몇 가지 방법입니다.
 
-* 간단한 PDF 문서 조합
-* PDF Portfolio 만들기
-* 암호화된 문서 조합
-* Bates 번호를 사용하여 문서 조합
-* 문서 평면화 및 조합
+* 간단한 PDF 문서 어셈블
+* PDF 포트폴리오 만들기
+* 암호화된 문서 어셈블
+* Bates 번호 매기기를 사용하여 문서 어셈블
+* 문서 변환 및 어셈블
 
-![여러 PDF 문서에서 간단한 PDF 문서 조립](assets/as_document_assembly.png)
-그림: 여러 PDF 문서에서 간단한 PDF 문서 조립
+![여러 PDF 문서에서 간단한 PDF 어셈블하기](assets/as_document_assembly.png)
+그림: 여러 PDF 문서에서 간단한 PDF 문서 어셈블하기
 
-### PDF 문서를 디스어셈블합니다
+### PDF 문서 디스어셈블
 
-문서 조작 API를 사용하여 PDF 문서를 분해할 수 있습니다. API는 소스 문서에서 페이지를 추출하거나 책갈피를 기반으로 소스 문서를 나눌 수 있습니다. 일반적으로 이 작업은 PDF 문서가 원래 문 컬렉션과 같은 여러 개별 문서에서 만들어진 경우에 유용합니다.
+문서 조작 API를 사용하여 PDF 문서를 디스어셈블할 수 있습니다. API는 소스 문서에서 페이지를 추출하거나 책갈피를 기준으로 소스 문서를 나눌 수 있습니다. 일반적으로 이 작업은 명령문 컬렉션 등 여러 개별 문서에서 PDF 문서가 만들어진 경우에 유용합니다.
 
 * 소스 문서에서 페이지 추출
 * 책갈피를 기준으로 소스 문서 나누기
 
-![책갈피를 기반으로 하는 소스 문서를 여러 문서로 분할](assets/as_intro_pdfsfrombookmarks.png)
-그림: 책갈피를 기반으로 하는 소스 문서를 여러 문서로 분할
+![책갈피를 기준으로 소스 문서를 여러 문서로 나누기](assets/as_intro_pdfsfrombookmarks.png)
+그림: 책갈피를 기준으로 소스 문서를 여러 문서로 나누기
 
-### PDF/A호환 문서로 변환하고 확인합니다
+### PDF/A호환 문서로 변환하고 확인합니다.
 
-문서 조작 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 규격 문서인지 확인할 수 있습니다. PDF/A는 문서 컨텐츠를 장기 보존하기 위한 보관 형식입니다. 글꼴은 문서 내에 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/문서에 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다.
+문서 조작 API를 사용하여 PDF 문서를 PDF/A 호환 문서로 변환하고 PDF 문서가 PDF/A 호환인지 여부를 확인할 수 있습니다. PDF/A는 문서 콘텐츠를 장기간 보존하기 위한 보관 형식입니다. 글꼴이 문서 내에 임베드되어 있고 파일이 압축 해제되어 있습니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 콘텐츠가 포함되지 않습니다.
 
 <!-- 
 
@@ -154,35 +154,35 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## 통신 API 유형
 
-통신은 주문형 및 배치 문서 생성을 위한 HTTP API를 제공합니다.
+커뮤니케이션은 주문형 및 배치 문서 생성에 HTTP API를 제공합니다.
 
-* **[동기 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 은 온디맨드, 낮은 지연 및 단일 레코드 문서 생성 시나리오에 적합합니다. 이러한 API는 사용자 작업 기반 사용 사례에 더 적합합니다. 예를 들어, 사용자가 양식 작성을 완료한 후 문서를 생성합니다.
+* **[동기식 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;는 주문형, 대기 시간이 낮은 단일 기록 문서 생성 시나리오에 적합합니다. 해당 API는 사용자 액션 기반 사용 사례에 보다 적합합니다. 예: 사용자 양식 작성 완료 후 문서 생성.
 
-* **[배치 API(비동기 API)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** 는 스케줄 지정, 높은 처리량 및 여러 문서 생성 시나리오에 적합합니다. 이러한 API는 문서를 일괄로 생성합니다. 예를 들어, 매월 생성된 전화 요금 청구서, 신용 카드 명세서 및 혜택 명세서 등이 있습니다.
+* **[배치 API(비동기 API)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;는 처리량이 높은 예약된 문서 생성 시나리오에 적합합니다. 해당 API는 배치 문서를 생성합니다. 예: 매월 생성되는 전화요금 청구서, 신용카드 명세서와 혜택 명세서.
 
 ## 온보딩
 
-통신 기능은 Forms as a Cloud Service 사용자를 위한 독립형 및 추가 기능 모듈로 제공됩니다. Adobe 영업 팀이나 Adobe 담당자에게 문의하여 액세스를 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 조직의 Forms as a Cloud Service 개발자(사용자)에게 API를 사용할 수 있는 액세스 권한을 부여할 수 있습니다.
+커뮤니케이션 기능은 Forms as a Cloud Service 사용자용 독립 실행형 모듈과 추가 기능 모듈로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 액세스 권한을 요청할 수 있습니다. Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 조직의 Forms as a Cloud Service 개발자(사용자)에 대한 액세스 권한을 부여하여 API를 사용할 수 있습니다.
 
-온보딩 후 Forms as a Cloud Service 환경에 대한 통신 기능을 활성화하려면
+온보딩 후 Forms as a Cloud Service 환경의 커뮤니케이션 기능을 활성화하려면
 
 1. Cloud Manager에 로그인하고 AEM Forms as a Cloud Service 인스턴스를 엽니다.
 
-1. 프로그램 편집 옵션을 열고 솔루션 및 추가 기능 탭으로 이동한 다음 **[!UICONTROL Forms - 통신]** 선택 사항입니다.
+1. 프로그램 편집 옵션을 열고 솔루션 및 추가 기능 탭으로 이동하여 **[!UICONTROL 양식 - 커뮤니케이션]** 옵션을 선택합니다.
 
-   ![통신](assets/communications.png)
+   ![커뮤니케이션](assets/communications.png)
 
-   이미 을(를) 활성화한 경우 **[!UICONTROL Forms - 디지털 등록]** 옵션을 선택한 다음 **[!UICONTROL Forms - 통신 추가 기능]** 선택 사항입니다.
+   **[!UICONTROL 양식 - 디지털 등록]** 옵션이 이미 활성화된 경우 **[!UICONTROL 양식 - 커뮤니케이션 추가 기능]** 옵션을 선택합니다.
 
-   ![Addon](assets/add-on.png)
+   ![추가 기능](assets/add-on.png)
 
-1. 클릭 **[!UICONTROL 업데이트]**.
+1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
 
-1. 빌드 파이프라인을 실행합니다. 빌드 파이프라인이 성공하면 환경에 대해 Communications API가 활성화됩니다.
+1. 빌드 파이프라인을 실행합니다. 빌드 파이프라인이 성공하면 환경에 통신 API가 활성화됩니다.
 
 >[!NOTE]
 >
-> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> 문서 조작 API를 활성화하고 구성하려면 다음 규칙을 [Dispatcher 구성](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)에 추가합니다.
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
