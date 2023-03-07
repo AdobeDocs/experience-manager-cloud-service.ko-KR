@@ -1,27 +1,27 @@
 ---
-title: AEM Commerce Content Author 여정
-description: AEM Commerce Authoring을 통해 안내식 여정을 보려면 여기에서 시작하십시오
+title: AEM Commerce 콘텐츠 작성자 여정
+description: AEM Commerce 작성을 통한 가이드 여정을 시작해 보십시오.
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '458'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
-# AEM Content and Commerce 콘텐츠 작성 여정 {#aem-commerce-author-journey}
+# AEM Content and Commerce 콘텐츠 작성자 여정 {#aem-commerce-author-journey}
 
-AEM Content and Commerce를 통해 제공되는 여정에서 제품 경험을 관리하는 방법을 살펴보려면 여기에서 시작하십시오.
+제품 경험을 관리하는 방법을 알아보려면 AEM Content and Commerce를 통한 가이드 여정을 시작해 보십시오.
 
 ## 소개 {#introduction}
 
-이 안내서는 가장 중요한 AEM 컨텐츠 및 상거래 작성 주제를 안내하여 작성 시 다음과 같이 안내합니다.
+이 안내서는 가장 중요한 AEM Content and Commerce 작성 주제를 안내하므로 완료 시 다음과 같은 작업을 수행할 수 있습니다.
 
-* AEM 컨텐츠 및 상거래 기본 사항 학습
-* AEM CIF 작성 기본 사항 시작
-* 개별 템플릿 및 콘텐츠를 사용하여 제품 카탈로그 경험 만들기
-* 준비된 제품 카탈로그 경험 관리
-* 제품 경험 관리 도구를 사용하여 콘텐츠로 제품 데이터 보강
+* AEM Content and Commerce 기본 사항 알아보기
+* AEM CIF 작성 기본 사항 시작하기
+* 개별 템플릿 및 콘텐츠를 사용하여 제품 카탈로그 경험 생성
+* 단계적 제품 카탈로그 경험 관리
+* 제품 경험 관리 도구를 통해 콘텐츠를 사용하여 제품 데이터 강화
 
 ## AEM 설명서 여정 {#documentation-journeys}
 
@@ -33,25 +33,25 @@ Adobe가 AEM을 통해 AEM 관련 사이트 비즈니스 사례를 해결하는 
 
 ## 대상자 {#audience}
 
-이 여정은 AEM Commerce 컨텐츠 작성자를 위해 설계되었습니다. 이 여정은 카탈로그 페이지, 템플릿 및 전체 제품 경험을 시작하고 관리하는 요구 사항, 단계 및 접근 방식을 설명합니다.
+이 여정은 AEM Commerce 콘텐츠 작성자를 위해 설계되었습니다. 이 여정은 카탈로그 페이지, 템플릿 및 전체 제품 경험을 시작하고 관리하기 위한 요구 사항, 단계 및 접근 방식을 제시합니다.
 
-이 여정의 정보는 물론 다른 사용자에게 유용할 수 있지만, 일부 정보는 특정 역할에 유용할 것입니다. 추가 역할을 다루는 다가오는 여정은 추후에 업데이트될 예정입니다.
+이 여정에서 제공하는 정보는 다른 담당자에게 유용하지만, 일부 정보는 특정 역할에 불필요할 수 있습니다. 추가 역할을 다루는 다가오는 여정은 추후에 업데이트될 예정입니다.
 
 ## 여정 {#the-journey}
 
-이 여정에서 다양한 주제들을 살펴보게 됩니다. 다음 문서는 기초 지식을 제공하고 자세한 기술 설명서에 연결합니다.
+이 여정에서 다양한 주제들을 살펴보게 됩니다. 다음 문서는 기초 지식을 제공하며 상세 기술 설명서와 연결됩니다.
 
-여정의 특정 부분으로 바로 이동할 수 있지만, 많은 개념이 이전 문서의 개념을 기반으로 합니다. 따라서 AEM Content and Commerce를 처음 사용하는 경우 시작 부분부터 시작하여 순차적으로 진행되는 것이 좋습니다.
+여정의 특정 부분으로 바로 이동할 수 있지만 많은 개념이 이전 문서의 개념을 기반으로 합니다. 따라서 AEM Content and Commerce를 처음 사용하는 경우 처음부터 시작하여 순차적으로 진행하는 것이 좋습니다.
 
 | # | 문서 | 설명 |
 |---|---|---|
-| 0 | AEM Content and Commerce Developer 여정 | 이 문서 |
-| 1 | [AEM 콘텐츠 및 상거래에 대해 알아보기](/help/commerce-cloud/introduction.md) | AEM Content and Commerce에 대한 개념과 기본 사항을 알아봅니다. |
-| 2 | [AEM CIF 작성 기본 사항 시작하기](getting-started.md) | 작성 사용 사례에 대한 제품 데이터에 액세스하고 사용하는 방법을 알아봅니다. |
-| 3 | [제품 카탈로그 페이지 및 템플릿 관리](catalog-templates.md) | 일반적인 제품 카탈로그 경험을 만드는 방법을 알아봅니다. |
-| 4 | [준비된 제품 카탈로그 경험 관리](staged-catalog.md) | 준비된 데이터 및 AEM Launches에서 향후 제품 카탈로그 경험을 만드는 방법을 알아봅니다. |
-| 5 | [제품 경험 구축](product-experience-management.md) | AEM에서 몰입형 콘텐츠를 사용하여 제품 데이터를 늘리는 방법을 알아봅니다. |
+| 0 | AEM Content and Commerce 개발자 여정 | 이 문서 |
+| 1 | [AEM Content and Commerce에 대해 알아보기](/help/commerce-cloud/introduction.md) | AEM Content and Commerce에 대한 개념과 기본 사항을 알아봅니다. |
+| 2 | [AEM CIF 작성 기본 사항 시작하기](getting-started.md) | 작성 사용 사례의 경우 제품 데이터에 액세스하고 사용하는 방법을 대해 알아봅니다. |
+| 3 | [제품 카탈로그 페이지 및 템플릿 관리](catalog-templates.md) | 일반적인 제품 카탈로그 경험을 만드는 방법에 대해 알아봅니다. |
+| 4 | [단계적 제품 카탈로그 경험 관리](staged-catalog.md) | 스테이징된 데이터와 AEM 런치를 사용하여 미래의 제품 카탈로그 경험을 만드는 방법에 대해 알아봅니다. |
+| 5 | [제품 경험 구축](product-experience-management.md) | AEM에서 몰입형 콘텐츠로 제품 데이터를 증강하는 방법에 대해 알아봅니다. |
 
 ## 다음 단계 {#what-is-next}
 
-이제 AEM Content and Commerce Development 여정을 시작할 준비가 되었습니다. 여정의 다음 부분으로 계속 이동하여 문서를 읽어 보십시오 [AEM 콘텐츠 및 상거래에 대해 알아보기](/help/commerce-cloud/introduction.md).
+이제 AEM Content and Commerce 개발 여정을 시작할 준비가 되었습니다. 여정의 다음 단계로 넘어가 다음 문서인 [AEM Content and Commerce에 대해 알아보기](/help/commerce-cloud/introduction.md)를 읽어보시기 바랍니다.
