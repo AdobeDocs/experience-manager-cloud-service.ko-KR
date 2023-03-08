@@ -2,9 +2,9 @@
 title: 대형 콘텐츠 저장소 처리
 description: 이 섹션에서는 대용량 콘텐츠 저장소 처리에 대해 설명합니다
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1846'
 ht-degree: 2%
 
 ---
@@ -37,9 +37,6 @@ CTT(콘텐츠 전송 도구)를 사용하여 많은 수의 Blob를 복사하는 
 * 설치하려면 액세스 권한이 필요합니다. [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 소스 AEM 인스턴스를 실행하는 인스턴스(또는 VM)에서
 
 * 데이터 저장소 가비지 수집이 소스에서 이전 7일 내에 실행되었습니다. 자세한 내용은 다음을 참조하십시오. [데이터 저장소 가비지 수집](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->현재 Windows 시스템에서 텍스트 렌디션이 제대로 작동하지 않으며 이는 알려진 문제입니다. 그러나 향후 릴리스에서 이 문제를 해결하고 수정 사항을 제공합니다.
 
 ### 소스 AEM 인스턴스가 Amazon S3 또는 Azure Blob 저장 공간 데이터 저장소를 사용하도록 구성된 경우 추가 고려 사항 {#additional-considerations-amazons3-azure}
 
