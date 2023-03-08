@@ -2,10 +2,10 @@
 title: 활동 관리
 description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 100%
+source-wordcount: '2019'
+ht-degree: 99%
 
 ---
 
@@ -81,6 +81,10 @@ ht-degree: 100%
 * **Duration:** The period of time when the activity is applied.
 * **Priority:** The relative priority of the activity. When activities provide content for the same user segments, the activity of the higher priority takes precedence.
 * **목표 지표:** 타겟팅 엔진으로 Adobe Target이 선택되면 활동에 성공 지표를 추가할 수 있습니다. One success metric is required.
+
+>[!NOTE]
+>
+>다음을 수행할 수 있습니다. **Target 구성 선택** 다음에 있어야 합니다. **Target 활동 작성자** 그룹입니다.
 
 >[!NOTE]
 >
@@ -213,4 +217,4 @@ AEM이 활동을 Adobe Target과 동기화할 때 AEM은 `thirdPartyId`라는 �
 >
 >동일한 캠페인 유형에서 동일한 이름을 사용하는 경우 기존 캠페인을 덮어쓰게 됩니다.
 >
->동기화 중에 &quot;Request Failed. `thirdPartyId` already exists&quot;(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
+>동기화 중에 “Request Failed. `thirdPartyId` already exists&quot;(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
