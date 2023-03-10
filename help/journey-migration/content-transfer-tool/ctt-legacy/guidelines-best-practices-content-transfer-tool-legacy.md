@@ -4,9 +4,9 @@ description: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 hide: true
 hidefromtoc: true
 exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1476'
 ht-degree: 14%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 14%
 
 * 액세스 토큰은 특정 기간 후 또는 Cloud Service 환경이 업그레이드된 후 주기적으로 만료될 수 있습니다. 액세스 토큰이 만료된 경우 Cloud Service 인스턴스에 연결할 수 없습니다. 이러한 경우 새 액세스 토큰을 검색해야 합니다. 기존 마이그레이션 세트와 연결된 상태 아이콘이 빨간색 클라우드로 변경되고 마우스로 가리키면 메시지가 표시됩니다.
 
-* CTT(컨텐츠 전송 도구)는 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 어떠한 종류의 컨텐츠 분석도 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스나 게시 인스턴스 또는 둘 다에 수집할 수 있습니다. 프로덕션 인스턴스로 콘텐츠를 이동하는 동안 소스 작성자 인스턴스에 CTT를 설치하여 콘텐츠를 타겟 작성자 인스턴스로 이동합니다. 마찬가지로 소스 게시 인스턴스에 CTT를 설치하여 콘텐츠를 타겟 게시 인스턴스로 이동합니다. 을(를) 참조하십시오 [게시 인스턴스에서 컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 을 참조하십시오.
+* CTT(컨텐츠 전송 도구)는 소스 인스턴스에서 대상 인스턴스로 컨텐츠를 전송하기 전에 어떠한 종류의 컨텐츠 분석도 수행하지 않습니다. 예를 들어 CTT는 컨텐츠를 게시 환경에 수집하는 동안 게시된 컨텐츠와 게시되지 않은 컨텐츠를 구분하지 않습니다. 마이그레이션 세트에 지정된 모든 콘텐츠는 선택한 대상 인스턴스로 수집됩니다. 사용자는 마이그레이션 세트를 작성자 인스턴스나 게시 인스턴스 또는 둘 다에 수집할 수 있습니다. 프로덕션 인스턴스로 콘텐츠를 이동하는 동안 소스 작성자 인스턴스에 CTT를 설치하여 콘텐츠를 타겟 작성자 인스턴스로 이동합니다. 마찬가지로 소스 게시 인스턴스에 CTT를 설치하여 콘텐츠를 타겟 게시 인스턴스로 이동합니다. 다음을 참조하십시오 [게시 인스턴스에서 컨텐츠 전송 도구 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 을 참조하십시오.
 
 * 컨텐츠 전송 도구에서 전송한 사용자 및 그룹은 컨텐츠에서 권한을 충족하기 위해 필요한 사용자 및 그룹입니다. 다음 *추출* 전체 복사 처리 `/home` 마이그레이션 세트 및 *수집* 프로세스는 마이그레이션된 콘텐츠 ACL에서 참조된 모든 사용자 및 그룹을 복사합니다. 기존 사용자 및 그룹을 IMS ID에 자동으로 매핑하려면 다음을 참조하십시오. [사용자 매핑 도구 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
 

@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service에 대한 액세스 가능한 콘텐츠 만들기 (WCAG 2.1 준수)
 description: 장애가 있는 사용자가 액세스하여 사용할 수 있는 웹 콘텐츠를 만드는 데 도움이 되는 AEM as a Cloud Service 사용
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
+source-wordcount: '13870'
 ht-degree: 73%
 
 ---
@@ -101,7 +101,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 특정 정보를 전달하는 작은 그림 문자(그래픽)로서, 페이지와 사이트에서 일관되게 사용되어야 합니다. 인접한 텍스트의 불필요한 복제가 초래되는 경우가 아니라면 이 아이콘의 인스턴스는 페이지나 사이트에서 표시될 때마다 동일한 짧고 간결한 대체 텍스트를 포함해야 합니다.
 * 차트 및 그래프: 일반적으로 숫자 데이터를 나타냅니다. 따라서 텍스트 대체 요소를 제공하기 위한 한 가지 옵션은 차트나 그래픽에 표시된 주요 경향에 대한 간단한 요약을 포함하는 것일 수 있습니다. 필요한 경우 를 사용하여 보다 자세한 설명을 텍스트로 제공할 수도 있습니다. **설명** 의 필드 **고급** 이미지 속성 탭입니다. 또한 소스 데이터를 페이지나 사이트의 다른 위치에서 표 형식으로 제공할 수 있습니다.
 * 맵, 다이어그램, 순서도: 공간 데이터를 제공하는 그래픽의 경우(예: 오브젝트나 프로세스 간의 관계를 설명하는 지원을 위해), 주요 메시지가 텍스트 형식으로 제공되는지, 그리고 이 텍스트 정보가 연관된 각 데이터 포인트 근처에 위치하는지 확인합니다. 맵의 경우, 상응하는 전체 텍스트를 제공하는 것은 비현실적일 수 있지만, 맵이 특정 위치까지 가는 방법을 찾는 사람들을 돕는 방법으로 제공되는 경우, 맵 이미지의 대체 텍스트는 간단히 *X 지도*&#x200B;를 가리킨 다음, 페이지의 다른 곳이나 **이미지** 구성 요소의 **고급** 탭에 있는 **설명** 필드를 통해 해당 위치로 가는 방향을 텍스트로 제공할 수 있습니다.
-* CAPTCHA: CAPTCHA는 *컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트*. 웹 페이지에서 악의적인 소프트웨어와 사람을 구별하기 위해 사용되는 보안 검사이지만, 이는 접근성 장벽을 야기할 수 있습니다. 보안 테스트를 통과하기 위해 사용자에게 표시되는 내용을 설명해야 하는 이미지입니다. 이미지에 대한 텍스트 대체 요소를 제공할 수는 없으므로 대신 그래픽이 아닌 대체 솔루션을 고려해야 합니다. W3C에서는 몇 가지 제안을 제공합니다. 이러한 접근 방식들은 각각 나름의 장점과 단점이 있다.
+* CAPTCHA: CAPTCHA는 *컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트*. 이 테스트는 인간을 악성 소프트웨어로부터 구별하기 위해 웹 페이지에서 사용되는 보안 검사지만, 액세서빌러티 장벽을 생성할 수 있습니다. 보안 테스트를 통과하기 위해 보이는 내용을 설명할 것을 사용자에게 요구하는 이미지가 여기에 해당합니다. 이미지에 대한 텍스트 대체 요소를 제공할 수는 없으므로 대신 그래픽이 아닌 대체 솔루션을 고려해야 합니다. W3C에서는 몇 가지 제안을 제공합니다. 이러한 접근 방식들은 각각 나름의 장점과 단점이 있다.
 
    * 논리 퍼즐
    * 이미지 대신 사운드 출력 사용
@@ -116,7 +116,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * [성공 기준 이해 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [성공 기준을 충족하는 방법 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [CAPTCHA에 대한 W3C 설명 및 대체 요소](https://www.w3.org/TR/turingtest/)
+* [CAPTCHA에 대한 W3C 설명 및 대안](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -198,9 +198,9 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 * [성공 기준 이해 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [성공 기준을 충족하는 방법 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+c
+* [W3C: 동기화된 멀티미디어](https://www.w3.org/AudioVideo/)
+* [캡션, 텍스트 스크립트 및 오디오 설명 - WebAIM 사용](https://webaim.org/techniques/captions/)
 -->
 
 ### 오디오 설명 또는 미디어 대체 요소 (사전 기록됨) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
@@ -252,7 +252,7 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 
 상세한 지침은 이 문서의 범위를 벗어나지만 다음 리소스는 유용한 정보를 제공합니다.
 
-* [WebAIM: 실시간 캡션 기능](https://webaim.org/techniques/captions/realtime)
+* [WebAIM: 실시간 캡션](https://webaim.org/techniques/captions/realtime)
 
 * [AccessComputing 프로젝트(워싱턴 대학교): 음성 인식 기능을 사용하여 캡션을 자동으로 생성할 수 있습니까?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -539,13 +539,13 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 적절한 글꼴을 선택하고 웹 컨텐츠에 맞게 크기를 조정할 때 가독성과 유용성의 측면에서 판단력과 오류를 사용하십시오.
 
 >[!NOTE]
-다음 도구를 사용하여 다른 단위로 변환할 수 있습니다.
-* [Px에서 Em으로 계산기](https://www.omnicalculator.com/conversion/px-to-em)
-* [글꼴 크기 변환: pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
-* [픽셀에서 EM으로 변환기](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+다음 구문에 대해 웹 검색을 수행하여 다른 단위로 전환하는 데 도움이 되는 도구를 찾습니다.
+* Px에서 Em으로 계산기 <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* 글꼴 크기 변환: pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* 픽셀에서 EM으로 변환기 <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-대비율을 확인하려면 [Paciello Group Color Contrast Analyser](https://www.tpgi.com/resources/contrast-analyser.html)나 [WebAIM 색상 대비 검사기와 같은 색상 대비 도구](https://webaim.org/resources/contrastchecker/)를 사용하십시오. 이러한 도구를 사용하면 색상 쌍을 검사하고 대비 문제에 대해 보고할 수 있습니다.
+대비 비율을 확인하려면 다음과 같은 색상 대비 도구를 사용합니다. [Paciello Group 색상 대비 분석기](https://www.tpgi.com/resources/contrast-analyser.html) 또는 [WebAIM 색상 대비 검사기](https://webaim.org/resources/contrastchecker/). 이러한 도구를 사용하면 색상 쌍을 검사하고 대비 문제에 대해 보고할 수 있습니다.
 
 또는 페이지의 모양을 지정하는 것에 대해 관심이 별로 없다면 배경과 전경 텍스트 색상을 지정하지 않도록 선택할 수 있습니다. 사용자의 브라우저가 텍스트 및 배경의 색상을 결정하므로 대비 검사가 필요하지 않습니다.
 
@@ -810,7 +810,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 
 #### 목적 - 링크 목적 (컨텍스트 내) (2.4.4) {#purpose-link-purpose-in-context}
 
-장애에 상관없이 모든 사용자에 대해, 적절한 링크 텍스트를 통해 링크의 방향을 명확히 나타내는 것이 매우 중요합니다. 이렇게 하면 사용자가 실제로 링크를 따라갈 것인지 여부를 결정하는 데 도움이 됩니다. 시력이 정상인 사용자의 경우, 의미 있는 링크 텍스트가 대상 페이지의 기능을 더 명확하게 보여 주기 때문에, 페이지에 여러 링크가 있는 경우(특히 페이지에 텍스트가 많은 경우) 의미 있는 링크 텍스트가 유용합니다. 하나의 페이지에 있는 모든 링크의 목록을 생성할 수 있는 일부 보조 기술 사용자는 링크 텍스트가 고유하고 유용한 정보일 경우 컨텍스트에서 벗어난 링크 텍스트를 더 쉽게 이해할 수 있습니다. 하지만, 인지 장애가 있는 시력이 정상인 사용자는 링크가 어디로 이동하는지 정확히 설명할 만큼 충분한 정보를 제공하지 않는다면 혼란스러울 수 있습니다.
+장애에 상관없이 모든 사용자에 대해, 적절한 링크 텍스트를 통해 링크의 방향을 명확히 나타내는 것이 매우 중요합니다. 이렇게 하면 사용자가 실제로 링크를 따라갈 것인지 여부를 결정하는 데 도움이 됩니다. 시력이 정상인 사용자의 경우, 의미 있는 링크 텍스트가 대상 페이지의 기능을 더 명확하게 보여 주기 때문에, 페이지에 여러 링크가 있는 경우(특히, 페이지가 텍스트가 많은 경우) 의미 있는 링크 텍스트가 유용합니다. 하나의 페이지에 있는 모든 링크의 목록을 생성할 수 있는 일부 보조 기술 사용자는 링크 텍스트가 고유하고 유용한 정보일 경우 컨텍스트에서 벗어난 링크 텍스트를 더 쉽게 이해할 수 있습니다. 하지만, 인지 장애가 있는 시력이 정상인 사용자는 링크가 어디로 이동하는지 정확히 설명할 만큼 충분한 정보를 제공하지 않는다면 혼란스러울 수 있습니다.
 
 #### 충족하는 방법 - 링크 목적 (컨텍스트 내) (2.4.4) {#how-to-meet-link-purpose-in-context}
 
@@ -847,7 +847,7 @@ John Smith's publications
 >[!NOTE]
 위의 스니펫은 일러스트레이션이며, **이미지** 구성 요소를 사용하는 것이 좋습니다.
 
-추가 컨텍스트를 필요로 하지 않고 링크의 목적을 알려 주는 링크 텍스트를 제공하는 것이 좋지만, 이것이 항상 가능하지는 않습니다. 컨텍스트가 없는 링크는 다음과 같은 경우에 사용할 수 있으며, HTML 예는 다음에서 찾을 수 있습니다. [충족하는 방법 - 성공 기준 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+추가 컨텍스트를 필요로 하지 않고 링크의 목적을 알려주는 링크 텍스트를 제공하는 것이 좋지만, 이것이 항상 가능하지는 않습니다. 컨텍스트가 없는 링크는 다음과 같은 경우에 사용할 수 있으며, HTML 예는 다음에서 찾을 수 있습니다. [충족하는 방법 - 성공 기준 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * 링크 텍스트가 밀접히 관련된 링크의 일부이고 이 링크를 둘러싼 목록 항목에서 컨텍스트를 충분히 제공하는 경우
 * 링크의 목적을 *이전*(이후가 아닌) 단락 텍스트에서 명확히 식별할 수 있는 경우
