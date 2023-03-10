@@ -2,9 +2,9 @@
 title: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 description: 컨텐츠 전송 도구 사용을 위한 지침 및 우수 사례
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1554'
 ht-degree: 23%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 23%
 * 효율적인 로딩 상태, 가드레일 및 오류 처리를 통해 개선된 사용자 경험
 * 수집 로그는 유지되고 문제 해결에 항시 사용 가능합니다.
 
-새 버전을 사용하려면 이전 버전의 콘텐츠 전송 도구를 제거해야 합니다. 새로운 버전은 주요 아키텍처 변경과 함께 제공되기 때문에 필요합니다. v2.0.10에서는 새 마이그레이션 세트를 만들고 새 마이그레이션 세트에서 추출 및 수집을 다시 실행해야 합니다. 마이그레이션이 이미 진행 중인 경우, 마이그레이션이 완료될 때까지 이전 버전의 CTT를 계속 사용할 수 있습니다.
+새 버전을 사용하려면 이전 버전의 콘텐츠 전송 도구를 제거해야 합니다. 새로운 버전은 주요 아키텍처 변경과 함께 제공되기 때문에 필요합니다. 버전 2.x에서는 새 마이그레이션 세트를 만들고 새 마이그레이션 세트에서 추출 및 수집을 다시 실행해야 합니다.
 2.0.0 이전 버전은 더 이상 지원되지 않으며 최신 버전을 사용하는 것이 좋습니다.
 
 다음 지침 및 모범 사례는 새 버전의 콘텐츠 전송 도구에 적용됩니다.
@@ -87,11 +87,13 @@ ht-degree: 23%
 
 * 사용 시 `Amazon S3` 또는 `Azure` 소스 AEM 시스템의 데이터 저장소로, 저장된 블롭을 삭제(가비지 수집)할 수 없도록 데이터 저장소를 구성해야 합니다. 이렇게 하면 인덱스 데이터의 무결성이 보장되며 이러한 방식을 구성하지 않으면 인덱스 데이터의 무결성이 부족하여 추출에 실패할 수 있습니다.
 
-* 사용자 지정 색인을 사용하는 경우 다음을 사용하여 사용자 지정 색인을 구성해야 합니다 `tika` 컨텐츠 전송 도구를 실행하기 전의 노드입니다. 을(를) 참조하십시오 [새 색인 정의 준비](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) 을 참조하십시오.
+* 사용자 지정 색인을 사용하는 경우 다음을 사용하여 사용자 지정 색인을 구성해야 합니다 `tika` 컨텐츠 전송 도구를 실행하기 전의 노드입니다. 을(를) 참조하십시오 [새 색인 정의 준비](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 을 참조하십시오.
 
 * 추가 추출을 하려는 경우 기존 콘텐츠의 콘텐츠 구조를 초기 추출 시점부터 추가 추출을 실행할 때까지 변경하지 않는 것이 중요합니다. 초기 추출 이후 구조가 변경된 콘텐츠에서는 추가 작업을 실행할 수 없습니다. 마이그레이션 프로세스 중에 이를 제한하십시오.
 
 * 버전을 마이그레이션 세트의 일부로 포함하려는 경우 다음을 사용하여 추가 작업을 수행합니다 `wipe=false`, 콘텐츠 전송 도구의 현재 제한으로 인해 버전 지우기를 비활성화해야 합니다. 버전 삭제를 활성화하고 마이그레이션 세트에 대해 추가 작업을 수행하는 경우 수집 작업을 다음과 같이 수행해야 합니다. `wipe=true`.
+
+* 오랫동안 사용하지 않으면 마이그레이션 세트가 만료되며 그 이후에는 데이터를 더 이상 사용할 수 없습니다. 검토하십시오. [마이그레이션 세트 만료](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 을 참조하십시오.
 
 ## 다음 단계 {#whats-next}
 

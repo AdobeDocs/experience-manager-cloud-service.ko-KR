@@ -2,9 +2,9 @@
 title: 소스에서 콘텐츠 추출
 description: 소스에서 콘텐츠 추출
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '663'
 ht-degree: 24%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 24%
 컨텐츠 전송 도구에서 마이그레이션 세트를 추출하려면 아래 단계를 따르십시오.
 
 >[!NOTE]
->Amazon S3, Azure Data Store 또는 파일 데이터 저장소를 데이터 저장소 유형으로 사용하는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 가속화할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 이렇게 하려면 를 구성해야 합니다. `azcopy.config` 추출 실행 전 파일. 을(를) 참조하십시오 [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 을 참조하십시오.
+>Amazon S3, Azure Data Store 또는 파일 데이터 저장소를 데이터 저장소 유형으로 사용하는 경우 선택적 사전 복사 단계를 실행하여 추출 단계를 크게 가속화할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 수집에 가장 효과적입니다. 을(를) 참조하십시오 [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 을 참조하십시오.
 
 1. 다음에서 마이그레이션 세트 선택 **컨텐츠 전송** 마법사 및 클릭 **Extract** 추출을 시작하려면
 

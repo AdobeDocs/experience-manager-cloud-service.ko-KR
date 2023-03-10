@@ -2,10 +2,10 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구 시작하기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 9%
+source-wordcount: '1388'
+ht-degree: 8%
 
 ---
 
@@ -60,7 +60,7 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >title="컨텐츠 전송 도구 실행"
 >abstract="AEM 컨텐츠 전송 도구를 사용하여 컨텐츠를 as a Cloud Service(작성자/게시)로 마이그레이션하는 방법에 대해 알아봅니다."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 데모 보기"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="자습서 - 컨텐츠 전송 도구 사용"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="자습서 - 컨텐츠 전송 도구 사용"
 
 다음 섹션은 새 버전의 콘텐츠 전송 도구에 적용됩니다. 이 섹션을 따라 컨텐츠 전송 도구를 사용하여 컨텐츠를 AEM as a Cloud Service으로 마이그레이션하는 방법을 알아보십시오.
 
@@ -69,8 +69,8 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="추출 설정 단계"
->abstract="마이그레이션 세트를 만들고 추출 키를 복사하는 방법을 알아봅니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="자습서 - 컨텐츠 전송 도구 사용"
+>abstract="마이그레이션 세트를 만들고 관리하는 방법과 추출 키를 복사하는 방법을 알아봅니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="자습서 - 컨텐츠 전송 도구 사용"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
@@ -84,9 +84,11 @@ SSL/TLS 연결 문제를 이해하는 것은 때때로 어려울 수 있습니�
 
    >[!NOTE]
    >
-   >Cloud Acceleration Manager에서는 프로젝트당 최대 5개의 마이그레이션 세트를 만들 수 있습니다.
+   >Cloud Acceleration Manager의 프로젝트당 만료된 세트를 포함하여 최대 5개의 마이그레이션 세트를 만들 수 있습니다.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
+
+   다음 대화 상자가 표시됩니다. 오랫동안 사용하지 않으면 마이그레이션 세트가 만료됩니다. 일정 기간 동안 프로젝트 카드 및 마이그레이션 작업 테이블 행에 경고가 표시되면 마이그레이션 세트가 만료되어 해당 데이터를 더 이상 사용할 수 없습니다. 리뷰 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 을 참조하십시오.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 

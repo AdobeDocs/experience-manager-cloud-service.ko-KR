@@ -2,10 +2,10 @@
 title: 컨텐츠 전송 도구 개요
 description: 콘텐츠 전송 도구 개요
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 94%
+source-wordcount: '708'
+ht-degree: 77%
 
 ---
 
@@ -63,6 +63,25 @@ ht-degree: 94%
 추출 단계에서 기존 마이그레이션 세트를 ***추가***&#x200B;하려면 *덮어쓰기* 옵션을 비활성화해야 합니다. 자세한 내용은 [추출 추가](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)를 참조하십시오.
 
 수집 단계에서 델타 콘텐츠를 현재 콘텐츠 위에 적용하려면 *지우기* 옵션을 비활성화해야 합니다. 자세한 내용은 [수집 추가](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)를 참조하십시오.
+
+## 마이그레이션 세트 만료 {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="마이그레이션 세트 만료"
+>abstract="마이그레이션 세트의 만료에 대해 알아봅니다."
+
+모든 마이그레이션 세트는 약 90일 동안 비활성 상태가 지속되면 만료됩니다. 일정 기간 동안 프로젝트 카드 및 마이그레이션 작업 테이블 행에 표시기가 표시되면 마이그레이션 세트가 만료되어 해당 데이터를 더 이상 사용할 수 없게 됩니다. 다음과 같이 설정된 마이그레이션에 따라 쉽게 만료 시간을 연장할 수 있습니다.
+
+* 설명 편집
+* 추출 키를 가져오는 중
+* 추출 수행
+* 수집 수행
+
+마이그레이션 세트 행에서 마이그레이션 세트의 만료를 모니터링할 수 있습니다. 마이그레이션 세트가 만료 날짜에 도달하고 있다는 유용한 시각적 표시기도 프로젝트 카드를 추가했습니다.
+
+![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## 다음 단계 {#whats-next}
 
