@@ -1,12 +1,12 @@
 ---
-title: AEM용 Headless 소개
-description: 자세한 설명서와 Headless 여정의 조합으로 Adobe Experience Manager(AEM)의 Headless에 대해 알아봅니다. 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 기능을 사용하여 Headless 경험을 제공하는 방법을 알아봅니다.
+title: AEM Headless 소개
+description: 상세한 설명서와 Headless 여정의 결합을 통해 Adobe Experience Manager(AEM)의 Headless에 대해 알아봅니다. 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 기능을 사용하여 Headless 경험을 제공하는 방법을 알아봅니다.
 landing-page-description: Adobe Experience Manager as a Cloud Service에서 Headless를 사용하고 관리하는 방법을 이해합니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

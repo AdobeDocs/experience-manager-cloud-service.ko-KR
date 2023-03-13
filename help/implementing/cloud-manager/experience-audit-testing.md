@@ -2,10 +2,10 @@
 title: 경험 감사 테스트
 description: 경험 감사를 통해 배포 프로세스를 검증하고 배포된 변경 사항이 성능, 접근성, 모범 사례 및 SEO에 대한 기준 표준을 충족하는지 확인하는 방법을 알아봅니다.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
+source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager의 경험 감사를 통해 최종 사용자의 사이트 경험을
 
 >[!TIP]
 >
->다음과 같은 경우 경험 감사에 포함될 페이지를 구성합니다 [파이프라인을 설정합니다.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>[파이프라인을 설정](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)할 때 경험 감사에 포함되는 페이지를 구성합니다.
 
 ## 경험 감사 결과 이해 {#understanding-experience-audit-results}
 
