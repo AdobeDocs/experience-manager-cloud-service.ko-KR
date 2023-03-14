@@ -4,10 +4,10 @@ description: Adobe Target과 통합
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
+source-git-commit: c69f0b838638b4a2c2ea9f54836954f72710594f
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 Adobe Marketing Cloud의 일부인 Adobe Target을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. Adobe Target과 AEM as a Cloud Service를 통합하려면 다음 작업을 수행하십시오.
 
 * Touch UI를 사용하여 AEM as a Cloud Service에 Target 구성을 만듭니다(IMS 구성 필요).
-* Adobe Target을 [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)에 확장 프로그램으로 추가하고 구성합니다.
+* Adobe Target을 [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)에 확장 기능으로 추가하고 구성합니다.
 
 Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target에 대한 클라이언트측 속성을 관리하는 데 필요합니다. 즉, “경험 타겟팅”을 위해서는 Launch와의 통합이 필요합니다. 경험 조각을 Target으로 내보내려면 Adobe Target 구성과 IMS만 있으면 됩니다.
 
@@ -36,7 +36,7 @@ Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target
 
 ### IMS 구성 {#ims-configuration}
 
-Launch 및 Target에 대한 IMS 구성은 Target과 AEM 및 Launch를 올바르게 통합하는 데 필요합니다. Launch에 대한 IMS 구성은 AEM as a Cloud Service에 사전 구성되어 있는 반면 Target IMS 구성은 Target을 프로비저닝한 다음 직접 만들어야 합니다. 을(를) 참조하십시오. [Adobe Target과 통합할 때 사용할 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md) 비디오 [Experience Platform Launch 및 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) Target IMS 구성을 만드는 방법을 알아봅니다.
+Launch 및 Target에 대한 IMS 구성은 Target과 AEM 및 Launch를 올바르게 통합하는 데 필요합니다. Launch에 대한 IMS 구성은 AEM as a Cloud Service에 사전 구성되어 있는 반면 Target IMS 구성은 Target을 프로비저닝한 다음 직접 만들어야 합니다. Target IMS 구성을 만드는 방법을 알아보려면 [Adobe Target과 통합할 때 사용할 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md), 그리고 [Experience Platform Launch 및 AEM 통합](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) 비디오를 참조하십시오.
 
 ### Adobe Target 테넌트 ID 및 Adobe Target 클라이언트 코드 {#tenant-client}
 
@@ -77,7 +77,7 @@ Target 구성을 편집하려면 다음 단계를 따르십시오.
 
 ## Adobe Launch를 사용하여 AEM 사이트에서 Adobe Target 통합 {#integrate-target-launch}
 
-AEM은 Experience Platform Launch와의 획기적인 통합 기능을 제공합니다. Experience Platform Launch에 Adobe Target 확장 프로그램을 추가하여 AEM 웹 페이지에서 Adobe Target의 기능을 사용할 수 있습니다. Launch를 사용하면 Target 라이브러리를 렌더링하는 것 이외의 작업을 수행할 수 없습니다.
+AEM은 Experience Platform Launch와의 획기적인 통합 기능을 제공합니다. Experience Platform Launch에 Adobe Target 확장 기능을 추가하여 AEM 웹 페이지에서 Adobe Target의 기능을 사용할 수 있습니다. Launch를 사용하면 Target 라이브러리를 렌더링하는 것 이외의 작업을 수행할 수 없습니다.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ AEM은 Experience Platform Launch와의 획기적인 통합 기능을 제공합�
 
 ### 데이터 요소 만들기 {#data-element}
 
-**데이터 요소**&#x200B;는 ContextHub 매개변수를 매핑할 수 있는 자리표시자입니다.
+**데이터 요소**&#x200B;는 ContextHub 매개변수를 매핑할 수 있는 플레이스홀더입니다.
 
 1. **데이터 요소**&#x200B;를 선택합니다.
 2. **데이터 요소 추가**&#x200B;를 선택합니다.

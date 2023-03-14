@@ -4,10 +4,10 @@ description: 워크플로 인스턴스 관리 방법 알아보기
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
+source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
 workflow-type: tm+mt
 source-wordcount: '1165'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 95%
    >[!NOTE]
    >
    >
-   >워크플로우를 종료하거나 중단하려면 참가자 단계에서와 같이 사용자 개입을 기다리는 상태여야 합니다. 현재 실행 중인 작업(실행 중인 활성 스레드)을 중단하려고 하면 예상 결과가 생성되지 않을 수 있습니다.
+   >워크플로를 종료하거나 중단하려면 참가자 단계와 같이 사용자 개입을 기다리는 상태여야 합니다. 현재 실행 중인 작업(실행 중인 활성 스레드)을 중단하려고 하면 예상한 결과가 나오지 않을 수 있습니다.
 
 
 ## 보관된 워크플로 보기 {#viewing-archived-workflows}
@@ -137,7 +137,7 @@ ht-degree: 95%
   <tr>
    <td>작업 이름</td>
    <td>scheduledpurge.name</td>
-   <td>예약된 제거의 수사적 이름입니다.</td>
+   <td>예약된 제거의 설명적인 이름입니다.</td>
   </tr>
   <tr>
    <td>워크플로 상태</td>
@@ -169,7 +169,7 @@ ht-degree: 95%
 >저장소에 구성을 추가하는 경우 서비스 PID는 다음과 같습니다.
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
-| 속성 이름(웹 콘솔) | OSGi 속성 이름 |
+| 속성 이름 (웹 콘솔) | OSGi 속성 이름 |
 |---|---|
 | 최대 받은 편지함 쿼리 크기 | granite.workflow.inboxQuerySize |
 

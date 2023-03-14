@@ -2,10 +2,10 @@
 title: Cloud Manager 소개
 description: Cloud Manager가 프로그램, 환경 및 파이프라인을 통해 AEM 프로젝트를 지원하는 방법에 대해 알아봅니다.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 50217b0ff63eb87123c3a1238822441a56c1995e
+source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager는 AEM as a Cloud Service의 필수 구성 요소이며 팀의 단
 | 파이프라인 삭제 | 파이프라인 삭제 허용 |  | x |  |  |
 | 실행 취소 | 현재 실행 취소 |  | x |  |  |
 | 개인 액세스 토큰 생성 | git 액세스 |  | x |  | x |
-| RDE 만들기 | 신속한 개발 환경 구축 | x |  |  | x |
+| RDE 만들기 | 신속한 개발 환경 만들기 | x |  |  | x |
 | RDE 재설정 | 신속한 개발 환경 재설정 | x |  |  | x |
 
 >[!NOTE]

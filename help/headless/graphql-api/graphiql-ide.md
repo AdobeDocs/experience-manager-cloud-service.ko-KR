@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
+source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,37 +16,37 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->GraphiQL은 AEM의 모든 환경에 포함되어 있지만 끝점을 구성할 때만 액세스/볼 수 있습니다.
+>GraphiQL은 AEM의 모든 환경에 포함되어 있지만 엔드포인트를 구성할 때만 액세스/볼 수 있습니다.
 >
 >이전 릴리스에서는 GraphiQL IDE를 설치하려면 패키지가 필요했습니다. 이를 설치했다면 이제 제거할 수 있습니다.
 
 >[!NOTE]
->GraphiQL IDE를 사용하기 전에 [구성 브라우저](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)에서 [끝점을 구성](/help/headless/graphql-api/graphql-endpoint.md)해야 합니다.
+>GraphiQL IDE를 사용하기 전에 [구성 브라우저](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)에서 [엔드포인트를 구성](/help/headless/graphql-api/graphql-endpoint.md)해야 합니다.
 
 
 **GraphiQL** 도구를 통해 다음 작업을 수행하여 GraphQL 쿼리를 테스트하고 디버그할 수 있습니다.
-* 쿼리에 사용하려는 Sites 구성에 적합한 **끝점**&#x200B;을 선택합니다.
+* 쿼리에 사용하려는 Sites 구성에 적합한 **엔드포인트**&#x200B;를 선택합니다.
 * 새 쿼리 직접 입력
 * **[지속 쿼리](/help/headless/graphql-api/persisted-queries.md)** 제작 및 액세스
 * 바로 결과를 조회하기 위해 쿼리 실행
 * **쿼리 변수** 관리
 * **지속 쿼리** 저장 및 관리
-* **지속 쿼리** 게시 또는 게시 취소(예: `dev-publish`에/에서)
+* **지속 쿼리** 게시 또는 게시 취소 (예: `dev-publish`에/에서)
 * 이전 쿼리의 **내역** 참조
 * **설명서 탐색기**&#x200B;를 사용하여 설명서에 액세스합니다. 이를 통해 사용 가능한 방법을 쉽게 배우고 이해할 수 있습니다.
 
 다음 중 하나에서 쿼리 편집기에 액세스할 수 있습니다.
 
 * **도구** -> **일반** -> **GraphQL 쿼리 편집기**
-* 직접(예: `http://localhost:4502/aem/graphiql.html`)
+* 직접 (예: `http://localhost:4502/aem/graphiql.html`)
 
 ![GraphiQL 인터페이스](assets/cfm-graphiql-interface.png "GraphiQL 인터페이스")
 
 GET 요청을 사용하고 쿼리를 게시하여 클라이언트 애플리케이션에서 쿼리를 요청할 수 있도록 시스템에서 GraphiQL을 사용할 수 있습니다. 프로덕션을 사용하는 경우 [쿼리를 프로덕션 환경으로 이전](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)할 수 있습니다. 처음은 쿼리로 새로 작성된 콘텐츠를 확인하기 위해 프로덕션 작성자로 복제되고, 마지막은 라이브 소비를 위해 프로덕션 게시로 복제됩니다.
 
-## 끝점 선택 중 {#selecting-endpoint}
+## 엔드포인트 선택 중 {#selecting-endpoint}
 
-첫 번째 단계로, 쿼리에 사용하려는 Sites 구성에 적합한 **[끝점](/help/headless/graphql-api/graphql-endpoint.md)**&#x200B;을 선택해야 합니다. 끝점은 쿼리에 사용하려는 Sites 구성에 적합합니다.
+첫 번째 단계로, 쿼리에 사용하려는 Sites 구성에 적합한 **[엔드포인트](/help/headless/graphql-api/graphql-endpoint.md)**&#x200B;를 선택해야 합니다. 엔드포인트는 쿼리에 사용하려는 Sites 구성에 적합합니다.
 
 오른쪽 상단의 드롭다운 목록에서 사용할 수 있습니다.
 
@@ -102,9 +102,9 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 
 >[!NOTE]
 >
->Dispatcher에 대한 사용자 지정 재작성 규칙은 AEM 게시의 기본값을 무시할 수 있습니다.
+>Dispatcher의 사용자 정의 재작성 규칙은 AEM 게시의 기본값을 재정의할 수 있습니다.
 >
->위치 일치 패턴을 기반으로 Dispatcher에서 TTL 기반 캐시 제어 헤더를 보내는 경우 필요한 경우 제외할 수 있습니다 `/graphql/execute.json/*` 를 반환합니다.
+>위치 일치 패턴을 기반으로 Dispatcher에서 TTL 기반 캐시 제어 헤더를 보내는 경우 필요 시 일치에서 `/graphql/execute.json/*`를 제외할 수 있습니다.
 
 GraphQL을 사용하여 HTTP 캐시 헤더를 구성하여 개별 지속 쿼리에 대해 이러한 매개변수를 제어할 수 있습니다.
 

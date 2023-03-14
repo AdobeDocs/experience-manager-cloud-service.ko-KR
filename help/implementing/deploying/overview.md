@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 0d586bf7e9ad6653f9a45c2fe9f0f8a156de5133
 workflow-type: tm+mt
 source-wordcount: '3497'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 92%
 
 ## 소개 {#introduction}
 
-코드 개발의 기본 사항은 AEM On Premise 및 Managed Services 솔루션과 비교할 경우 AEM as a Cloud Service의 기본 사항과 유사합니다. 개발자는 코드를 작성하고 로컬에서 테스트한 다음 원격 AEM as a Cloud Service 환경에 푸시합니다. Managed Services용 선택적 콘텐츠 게재 도구였던 Cloud Manager가 필요합니다. 이제 AEM as a Cloud Service 개발, 스테이지 및 프로덕션 환경에 코드를 배포하는 유일한 메커니즘입니다. 앞서 설명한 환경을 배포하기 전에 기능을 확인하고 디버깅하기 위해 로컬 환경에서 로 코드를 동기화할 수 있습니다. [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md).
+코드 개발의 기본 사항은 AEM On Premise 및 Managed Services 솔루션과 비교할 경우 AEM as a Cloud Service의 기본 사항과 유사합니다. 개발자는 코드를 작성하고 로컬에서 테스트한 다음 원격 AEM as a Cloud Service 환경에 푸시합니다. Managed Services용 선택적 콘텐츠 게재 도구였던 Cloud Manager가 필요합니다. 이는 코드를 AEM as a Cloud Service 개발, 스테이징 및 프로덕션 환경에 배포하기 위한 유일한 메커니즘입니다. 앞서 언급한 환경을 배포하기 전에 빠른 기능 검증 및 디버깅을 위해 코드를 로컬 환경에서 [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)으로 동기화할 수 있습니다.
 
-[AEM 버전](/help/implementing/deploying/aem-version-updates.md) 업데이트는 항상 [사용자 지정 코드](#customer-releases) 푸시와는 별도의 배포 이벤트입니다. 다른 관점에서 보면 사용자 지정 코드 릴리스는 상단에 배포되는 항목이므로 프로덕션에 있는 AEM 버전과 비교하여 테스트해야 합니다. 이후 발생하는 AEM 버전 업데이트는 자주 발생하고 자동으로 적용됩니다. 이미 배포된 사용자 지정 코드와 역으로 호환하기 위해 업데이트됩니다.
+[AEM 버전](/help/implementing/deploying/aem-version-updates.md) 업데이트는 항상 [사용자 정의 코드](#customer-releases) 푸시와는 별도의 배포 이벤트입니다. 다른 관점에서 보면 사용자 정의 코드 릴리스는 상단에 배포되는 항목이므로 프로덕션에 있는 AEM 버전과 비교하여 테스트해야 합니다. 이후 발생하는 AEM 버전 업데이트는 자주 발생하고 자동으로 적용됩니다. 이미 배포된 사용자 정의 코드와 역으로 호환하기 위해 업데이트됩니다.
 
 이 문서의 나머지 부분에서는 개발자가 AEM as a Cloud Service의 버전 업데이트와 고객 업데이트로 작업하도록 사례를 조정하는 방법에 대해 설명합니다.
 
@@ -29,14 +29,14 @@ ht-degree: 92%
 
 ### 올바른 AEM 버전에 대한 코딩 {#coding-against-the-right-aem-version}
 
-이전 AEM 솔루션의 경우 가장 최신 AEM 버전이 자주 변경되지 않고(분기별 서비스 팩으로 거의 매년 사용) 고객은 API Jar를 참조하여 프로덕션 인스턴스를 최신 빠른 시작으로 업데이트합니다. 단, AEM as a Cloud Service 애플리케이션은 최신 버전의 AEM으로 더 자주 자동으로 업데이트되므로 내부 릴리스에 대한 사용자 지정 코드는 최신 AEM 버전에 대해 빌드해야 합니다.
+이전 AEM 솔루션의 경우 가장 최신 AEM 버전이 자주 변경되지 않고(분기별 서비스 팩으로 거의 매년 사용) 고객은 API Jar를 참조하여 프로덕션 인스턴스를 최신 빠른 시작으로 업데이트합니다. 단, AEM as a Cloud Service 애플리케이션은 최신 버전의 AEM으로 더 자주 자동으로 업데이트되므로 내부 릴리스에 대한 사용자 정의 코드는 최신 AEM 버전에 대해 빌드해야 합니다.
 
 기존 비클라우드 AEM과 마찬가지로 특정 빠른 시작을 기반으로 하는 로컬 오프라인 개발이 지원되고 대다수의 경우 누구나 원하는 도구가 될 것으로 예상합니다.
 
 >[!NOTE]
->애플리케이션이 로컬 시스템과 Adobe Cloud에서 동작하는 방식에는 운영상 미묘한 차이점이 있습니다. 이러한 구조적 차이는 로컬 개발 도중에 적용되어야 하고 이를 통해 클라우드 인프라에 배포 시 다른 비헤이비어가 발생할 수 있습니다. 이러한 차이로 인해 프로덕션에서 새 사용자 지정 코드를 롤아웃하기 전에 개발 및 스테이징 환경에서 완벽한 테스트를 수행해야 합니다.
+>애플리케이션이 로컬 시스템과 Adobe Cloud에서 동작하는 방식에는 운영상 미묘한 차이점이 있습니다. 이러한 구조적 차이는 로컬 개발 도중에 적용되어야 하고 이를 통해 클라우드 인프라에 배포 시 다른 비헤이비어가 발생할 수 있습니다. 이러한 차이로 인해 프로덕션에서 새 사용자 정의 코드를 롤아웃하기 전에 개발 및 스테이징 환경에서 완벽한 테스트를 수행해야 합니다.
 
-내부 릴리스용 사용자 지정 코드를 개발하려면 관련 버전의 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)를 다운로드하고 설치해야 합니다. AEM as a Cloud Service Dispatcher 도구로 AEM을 사용하는 방법에 대한 자세한 내용은 [이 페이지](/help/implementing/dispatcher/disp-overview.md)를 참조하십시오.
+내부 릴리스용 사용자 정의 코드를 개발하려면 관련 버전의 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)를 다운로드하고 설치해야 합니다. AEM as a Cloud Service Dispatcher 도구로 AEM을 사용하는 방법에 대한 자세한 내용은 [이 페이지](/help/implementing/dispatcher/disp-overview.md)를 참조하십시오.
 
 다음 비디오는 AEM as a Cloud Service에 코드를 배포하는 방법에 대한 높은 수준의 개요를 제공합니다.
 
@@ -51,7 +51,7 @@ ht-degree: 92%
 
 ### Cloud Manager를 통한 배포 {#deployments-via-cloud-manager}
 
-고객은 Cloud Manager를 통해 클라우드 환경에 사용자 지정 코드를 배포합니다. Cloud Manager는 Sling 기능 모델에 따라 로컬에서 취합된 콘텐츠 패키지를 아티팩트로 변환해야 합니다. 이는 클라우드 환경에서 실행 시 AEM as a Cloud Service 애플리케이션을 설명하는 방식입니다. 따라서 클라우드 환경의 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)에서 패키지를 찾을 때 이름에는 “cp2fm”이 포함되고 변환된 패키지에서 모든 메타데이터가 제거됩니다. 상호 작용할 수 없다는 것은 다운로드, 복제 또는 열 수 없다는 의미입니다. 변환기에 대한 세부 문서는 [여기](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)에서 확인할 수 있습니다.
+고객은 Cloud Manager를 통해 클라우드 환경에 사용자 정의 코드를 배포합니다. Cloud Manager는 Sling 기능 모델에 따라 로컬에서 취합된 콘텐츠 패키지를 아티팩트로 변환해야 합니다. 이는 클라우드 환경에서 실행 시 AEM as a Cloud Service 애플리케이션을 설명하는 방식입니다. 따라서 클라우드 환경의 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)에서 패키지를 찾을 때 이름에는 “cp2fm”이 포함되고 변환된 패키지에서 모든 메타데이터가 제거됩니다. 상호 작용할 수 없다는 것은 다운로드, 복제 또는 열 수 없다는 의미입니다. 변환기에 대한 세부 문서는 [여기](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)에서 확인할 수 있습니다.
 
 AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지는 변경 불가능한 콘텐츠와 변경 가능한 콘텐츠를 명확하게 구분해야 하고 Cloud Manager는 변경 가능한 콘텐츠만 설치하고 다음의 메시지도 출력할 수 있습니다.
 
@@ -170,8 +170,8 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="패키지 관리자 - 변경 가능한 콘텐츠 패키지 마이그레이션"
->abstract="프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠를 가져오고, 소규모 콘텐츠 패키지를 온프레미스 환경에서 AEM Cloud 환경으로 전송하는 등의 작업을 포함하는 &#39;일회성&#39;으로 콘텐츠 패키지를 설치해야 하는 사용 사례에 대한 패키지 관리자 사용을 살펴봅니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="콘텐츠 전송 도구"
+>abstract="온프레미스 환경에서 AEM Cloud 환경 등으로 소형 콘텐츠 패키지를 이전하면서 프로덕션 문제를 디버깅하려면 프로덕션에서 스테이징으로 특정 콘텐츠 가져오기 등 콘텐츠 패키지를 ‘일회성’으로 설치해야 하는 사용 사례에서 패키지 관리자 사용에 대해 알아봅니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ko#cloud-migration" text="콘텐츠 전송 도구"
 
 콘텐츠 패키지를 “일회성”으로 설치해야 하는 사용 사례가 있습니다. 예: 프로덕션 문제를 디버깅하기 위해 프로덕션에서 스테이징으로 특정 콘텐츠 가져오기. 해당 시나리오의 경우 [패키지 관리자](/help/implementing/developing/tools/package-manager.md)를 AEM as a Cloud Service 환경으로 사용할 수 있습니다.
 
@@ -257,13 +257,13 @@ AEM 업데이트와 마찬가지로 적절한 상황에서 작성 클러스터 �
 
 ## 복제 {#replication}
 
-게시 메커니즘은 [AEM 복제 Java API](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)와 역으로 호환됩니다.
+게시 메커니즘은 [AEM 복제 Java API](https://helpx.adobe.com/kr/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)와 역으로 호환됩니다.
 
 클라우드 기반 AEM 빠른 시작으로 복제를 개발하고 테스트하려면 작성자/게시 설정과 함께 클래식 복제 기능을 사용해야 합니다. 클라우드에 대한 AEM 작성자의 UI 진입점이 제거된 경우 사용자는 `http://localhost:4502/etc/replication`으로 이동하여 구성합니다.
 
 ## 롤링 배포에 대한 역으로 호환 가능한 코드 {#backwards-compatible-code-for-rolling-deployments}
 
-위에서 설명한 AEM as a Cloud Service의 롤링 배포 전략은 이전 버전과 새 버전이 동시에 작동할 수 있음을 의미합니다. 따라서, 계속 작동 중인 이전 AEM 버전과 역으로 호환되지 않는 코드 변경에 주의합니다.
+위에서 설명한 AEM as a Cloud Service의 롤링 배포 전략은 이전 버전과 새 버전이 동시에 작동할 수 있음을 의미합니다. 따라서 계속 작동 중인 이전 AEM 버전과 역으로 호환되지 않는 코드 변경에 주의합니다.
 
 또한, 변형 가능한 콘텐츠가 제거되어 롤백이 발생하는 경우 새 릴리스에서 변경 가능한 새 콘텐츠 구조를 적용하면서 이전 릴리스의 호환성을 테스트해야 합니다.
 
@@ -279,40 +279,40 @@ AEM 업데이트와 마찬가지로 적절한 상황에서 작성 클러스터 �
 
 배포 후 오류를 보고하거나 감지하는 경우 파란색 버전으로 롤백해야 합니다. 새 구조(변경 가능한 콘텐츠)는 롤백되지 않으므로 파란색 코드가 녹색 버전에서 생성된 새 구조와 호환되는지 확인하는 것이 좋습니다. 이전 코드가 호환되지 않는 경우 후속 고객 릴리스에 수정 사항이 적용되어야 합니다.
 
-## 신속한 개발 환경(RDE) {#rde}
+## 신속한 개발 환경 (RDE) {#rde}
 
-[신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md) (또는 간단히 RDE) 개발자는 변경 사항을 신속하게 배포하고 검토할 수 있으므로 로컬 개발 환경에서 작동하는 것으로 이미 입증된 기능을 테스트하는 데 필요한 시간을 최소화할 수 있습니다.
+[신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)(약자: RDE)을 사용하면 개발자는 변경 사항을 빠르게 배포하고 검토할 수 있으므로 로컬 개발 환경에서 작동하는 것으로 이미 입증된 기능을 테스트하는 데 필요한 시간을 최소화할 수 있습니다.
 
-Cloud Manager 파이프라인을 통해 코드를 배포하는 일반 개발 환경과 달리 개발자는 명령줄 도구를 사용하여 로컬 개발 환경에서 RDE로 코드를 동기화합니다. 변경 사항이 RDE에서 성공적으로 테스트되면 Cloud Manager 파이프라인을 통해 일반 클라우드 개발 환경에 배포해야 합니다. 그러면 코드가 적절한 품질 게이트를 통해 전달됩니다.
+Cloud Manager 파이프라인을 통해 코드를 배포하는 일반 개발 환경과 달리 개발자는 명령줄 도구를 사용하여 로컬 개발 환경에서 RDE로 코드를 동기화합니다. 변경 사항이 RDE에서 성공적으로 테스트되면 Cloud Manager 파이프라인을 통해 일반 클라우드 개발 환경에 배포해야 합니다. 이때 파이프라인에서 코드가 적절한 품질 게이트를 통과합니다.
 
 ## 실행 모드 {#runmodes}
 
-기존 AEM 솔루션에서 고객은 임의의 실행 모드로 인스턴스를 실행하고, OSGI 구성을 적용하거나 해당 특정 인스턴스에 OSGI 번들을 설치할 수 있습니다. 정의된 실행 모드는 일반적으로 다음을 포함합니다. *서비스* (작성자 및 게시)와 환경(읽기, 개발, 스테이지, 프로덕션).
+기존 AEM 솔루션에서 고객은 임의의 실행 모드로 인스턴스를 실행하고, OSGI 구성을 적용하거나 해당 특정 인스턴스에 OSGI 번들을 설치할 수 있습니다. 일반적으로 정의된 실행 모드에는 *서비스*(작성자 및 게시) 및 환경(RDE, 개발, 스테이징, 프로덕션)이 포함됩니다.
 
 반면에 AEM as a Cloud Service는 사용 가능한 실행 모드와 OSGI 번들 및 OSGI 구성을 매핑할 수 있는 방법에 있어 보다 독창적입니다.
 
-* OSGI 구성 실행 모드는 환경에 대한 RDE, 개발, 스테이지, 프로덕션 또는 서비스에 대한 작성자, 게시를 참조해야 합니다. `<service>.<environment_type>` 조합은 지원되는 반면에 이 특정 순서로 사용되어야 합니다(예: `author.dev` 또는 `publish.prod`). OSGI 토큰은 런타임 시 `environment_type`이 더 이상 포함되지 않는 `getRunModes` 메서드를 사용하는 대신 코드에서 직접 참조해야 합니다. 자세한 내용은 [AEM as a Cloud Service용 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
+* OSGI 구성 실행 모드는 환경의 경우 RDE, 개발, 스테이징, 프로덕션을 참조하고 서비스의 경우 작성자 또는 게시를 참조해야 합니다. `<service>.<environment_type>` 조합은 지원되는 반면에 이 특정 순서로 사용되어야 합니다(예: `author.dev` 또는 `publish.prod`). OSGI 토큰은 런타임 시 `environment_type`이 더 이상 포함되지 않는 `getRunModes` 메서드를 사용하는 대신 코드에서 직접 참조해야 합니다. 자세한 내용은 [AEM as a Cloud Service용 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
 * OSGI 번들 실행 모드는 서비스(작성자, 게시)로 제한됩니다. 실행별 모드 OSGI 번들은 `install/author` 또는 `install/publish` 아래의 콘텐츠 패키지에 설치해야 합니다.
 
 기존 AEM 솔루션과 마찬가지로 실행 모드를 사용하여 특정 환경이나 서비스에 대해서만 콘텐츠를 설치할 방법이 없습니다. 스테이징 또는 프로덕션에 없는 데이터나 HTML로 개발 환경을 시드하려는 경우 패키지 관리자를 사용할 수 있습니다.
 
 지원되는 실행 모드 구성은 다음과 같습니다.
 
-* **config** (*기본값은 모든 AEM 서비스에 적용됩니다*)
-* **구성 작성자** (*모든 AEM 작성자 서비스에 적용됨*)
-* **구성 작성자 개발** (*모든 AEM 개발 작성자 서비스에 적용됨*)
-* **config.author.rde** (*AEM RDE Author 서비스에 적용됩니다.*)
-* **구성 작성자 단계** (*모든 AEM 스테이징 작성자 서비스에 적용됨*)
-* **구성 작성자 프로덕션** (*모든 AEM 프로덕션 작성자 서비스에 적용됨*)
-* **구성 게시** (*AEM 게시 서비스에 적용됨*)
-* **구성 게시 개발** (*AEM 개발 게시 서비스에 적용됨*)
-* **config.publish.rde** (*AEM RDE 게시 서비스에 적용됩니다.*)
-* **구성 게시 단계** (*모든 AEM 스테이징 게시 서비스에 적용됨*)
-* **구성 게시 프로덕션** (*모든 AEM 프로덕션 게시 서비스에 적용됨*)
-* **구성 개발** (*AEM 개발 서비스에 적용됨*)
-* **config.rde** (*RDE 서비스에 적용*)
-* **구성 단계** (*AEM 스테이징 서비스에 적용됨*)
-* **구성 프로덕션** (*AEM 프로덕션 서비스에 적용됨*)
+* **config** (*기본값, 모든 AEM 서비스*&#x200B;에 적용됨)
+* **config.author** (*모든 AEM 작성자 서비스에 적용됨*)
+* **config.author.dev** (*모든 AEM 개발 작성자 서비스에 적용됨*)
+* **config.author.rde** (*모든 AEM RDE 작성자 서비스에 적용됨*)
+* **config.author.stag** (*모든 AEM 스테이징 작성자 서비스에 적용됨*)
+* **config.author.prod** (*모든 AEM 프로덕션 작성자 서비스에 적용됨*)
+* **config.publish** (*AEM 게시 서비스에 적용됨*)
+* **config.publish.dev** (*AEM 개발 게시 서비스에 적용됨*)
+* **config.publish.rde** (*AEM RDE 게시 서비스에 적용됨*)
+* **config.publish.stage** (*모든 AEM 스테이징 게시 서비스에 적용됨*)
+* **config.publish.prod** (*모든 AEM 프로덕션 게시 서비스에 적용됨*)
+* **config.dev** (*AEM 개발 서비스에 적용됨*)
+* **config.rde** (*RDE 서비스에 적용됨*)
+* **config.stage** (*AEM 스테이징 서비스에 적용됨*)
+* **config.prod** (*AEM 프로덕션 서비스에 적용됨*)
 
 가장 일치하는 실행 모드가 있는 OSGI 구성을 사용합니다.
 

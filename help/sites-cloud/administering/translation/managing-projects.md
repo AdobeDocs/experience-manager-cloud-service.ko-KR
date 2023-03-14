@@ -4,10 +4,10 @@ description: AEM에서 기계 번역 및 사람 번역을 만들고 관리하는
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
+source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
 workflow-type: tm+mt
 source-wordcount: '4086'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -448,11 +448,11 @@ AEM의 번역 프로젝트는 표준 [AEM 프로젝트 콘솔을 사용합니다
 
 ## 소스 페이지 이동 또는 이름 바꾸기 {#move-source}
 
-이미 번역된 소스 페이지를 [이름이 변경되거나 이동됨](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)를 클릭하고 이동한 후 페이지를 다시 변환하면 새 페이지 이름/위치를 기반으로 새 언어 복사본이 만들어집니다. 이전 이름/위치를 기반으로 한 이전 언어 사본은 계속 있습니다.
+이미 번역된 소스 페이지의 [이름을 변경하거나 위치를 이동](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)해야 하는 경우 이동 후 페이지를 다시 번역하면 새 페이지 이름/위치를 기반으로 새 언어 사본이 만들어집니다. 이전 이름/위치를 기반으로 하는 이전 언어 사본은 여전히 존재합니다.
 
-이 시나리오에서 가장 좋은 방법은 다음 절차를 수행하는 것입니다.
-1. 이동할 소스 페이지와 연결된 언어 사본 게시를 취소합니다.
-1. 삭제할 수 있습니다.
+이 시나리오에서 가장 좋은 방법은 다음 절차를 따르는 것입니다.
+1. 이동하려는 소스 페이지와 연결된 언어 사본을 게시 취소합니다.
+1. 이 사본을 삭제합니다.
 1. 새로 이동한 소스 페이지에서 새 언어 사본을 만듭니다.
 1. 새로 만든 언어 사본을 게시합니다.
 

@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
+source-git-commit: cda6d7e382b090fd726b27e565da08c8b1c80008
 workflow-type: tm+mt
 source-wordcount: '4203'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -139,7 +139,7 @@ GraphQL은 GET 요청도 지원하지만 이러한 요청은 지속 쿼리를 �
 사용 사례는 AEM as a Cloud Service 환경 유형에 따라 달라질 수 있습니다.
 
 * Publish 환경, 다음과 같은 작업을 수행하는 데 사용됨:
-   * JS 애플리케이션용 쿼리 데이터(표준 사용 사례)
+   * JS 애플리케이션용 쿼리 데이터 (표준 사용 사례)
 
 * Author 환경, 다음과 같은 작업을 수행하는 데 사용됨:
    * “콘텐츠 관리 목적”용 쿼리 데이터:
@@ -558,7 +558,7 @@ GraphQL 쿼리에서 필터링을 사용하여 특정 데이터를 반환할 수
 
 >[!NOTE]
 >
->최상의 성능을 얻으려면 다음 사항을 고려하십시오. [GraphQL 필터링에서 페이징 및 정렬을 위한 컨텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>최고의 성능을 위해 [GraphQL 필터링 시 페이징 및 정렬을 위한 콘텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)를 고려하십시오.
 
 이 기능을 사용하면 지정된 필드에 따라 쿼리 결과를 정렬할 수 있습니다.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->최상의 성능을 얻으려면 다음 사항을 고려하십시오. [GraphQL 필터링에서 페이징 및 정렬을 위한 컨텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>최고의 성능을 위해 [GraphQL 필터링 시 페이징 및 정렬을 위한 콘텐츠 조각 업데이트](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)를 고려하십시오.
 
 이 기능을 사용하면 목록을 반환하는 쿼리 유형에 대해 페이징을 수행할 수 있습니다. 제공되는 메서드는 두 가지가 있습니다.
 
@@ -812,4 +812,4 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
 
 ## 튜토리얼 - AEM Headless 및 GraphQL 시작하기 {#tutorial}
 
-실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서, AEM의 GraphQL API를 사용하여 콘텐츠를 구축하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) 엔드투엔드 튜토리얼을 확인하십시오.
+실습형 튜토리얼을 찾고 계십니까? Headless CMS 시나리오에서 AEM의 GraphQL API를 사용하여 콘텐츠를 빌드하고 노출하고 외부 앱에서 사용하는 방법을 보여 주는 [AEM Headless 및 GraphQL 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ko-KR) 엔드투엔드 튜토리얼을 확인하십시오.

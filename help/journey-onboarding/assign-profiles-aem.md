@@ -4,10 +4,10 @@ description: 클라우드 리소스를 구성한 후에는 AEM 제품 프로필�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
+source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
 workflow-type: tm+mt
 source-wordcount: '769'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ AEM 제품 프로필에 할당된 모든 사용자는 Cloud Manager에 대한 �
 
 >[!CAUTION]
 >
->AEM 관리자 또는 AEM 사용자라는 제품 프로필을 편집하거나 삭제하지 마십시오. 이러한 프로필 이름을 편집하면 AEM 클라우드 인스턴스에 로그인하지 않을 수 있습니다.
+>제품 프로필 중 AEM 관리자 또는 AEM 사용자를 편집하거나 삭제하지 마십시오. 이러한 프로필 이름을 편집하면 AEM 클라우드 인스턴스에 대한 로그인이 중단될 수 있습니다.
 
 ## 사전 요구 사항 {#prerequisites}
 

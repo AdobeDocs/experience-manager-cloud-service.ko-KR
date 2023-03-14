@@ -5,10 +5,10 @@ landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 �
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 96%
             * 참조에 대한 정보 표시
             * 조각의 언어 버전에 대한 정보 표시
          * [하나 이상의 콘텐츠 조각을 선택하여 사용 가능한 작업을 표시](#actions-selected-content-fragment)할 수 있습니다.
-      * 열 헤더를 선택하여 해당 열에 따라 테이블을 정렬할 수 있습니다. 오름차순과 내림차순 간을 전환하려면 다시 선택하십시오. 현재 정렬은 **제목**, **수정됨**, 및 **수정한 사람** 열.
+      * 열 헤더를 선택하여 해당 열에 따라 테이블을 정렬할 수 있습니다. 오름차순과 내림차순 간을 전환하려면 다시 선택하십시오. 현재 정렬은 **제목**, **수정일** 및 **수정한 사람** 열에서 지원됩니다.
    * 새 콘텐츠 조각 **[만들기](#creating-new-content-fragment)**
    * 다양한 술어에 따라 콘텐츠 조각을 [필터링](#filtering-fragments)하고 나중에 사용할 수 있도록 해당 필터 저장
    * 콘텐츠 조각 [검색](#searching-fragments)
@@ -87,7 +87,7 @@ ht-degree: 96%
 ![콘텐츠 조각 콘솔 - 선택한 조각에 대한 도구 모음](assets/cfc-fragment-toolbar.png)
 
 * **열기**
-* **게시**(및 **게시 취소**)
+* **게시** (및 **게시 취소**)
 * **복사**
 * **이동**
 * **이름 변경**

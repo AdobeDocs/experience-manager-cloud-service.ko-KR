@@ -1,23 +1,23 @@
 ---
-title: 의 최신 유지 보수 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service.
-description: 의 최신 유지 보수 릴리스 정보 [!DNL Adobe Experience Manager] as a Cloud Service.
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 최신 유지 관리 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 최신 유지 관리 릴리스 정보입니다.'
 source-git-commit: edb8949b532b80a55106e706a49e2ada68722a67
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 7%
+ht-degree: 33%
 
 ---
 
 
-# 유지 관리 릴리스 노트 {#maintenance-release-notes}
+# 유지 관리 릴리스 정보 {#maintenance-release-notes}
 
-다음 섹션에서는 Experience Manager as a Cloud Service의 최신 유지 관리 릴리스에 대한 기술 릴리스 노트에 대해 간략히 소개합니다.
+다음 섹션에서는 Experience Manager as a Cloud Service 최신 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
 ## 릴리스 11289 {#release-11289}
 
 다음은 2023년 3월 7일에 공개적으로 릴리스된 유지 보수 릴리스 11289에 대한 지속적인 개선 사항을 요약한 것입니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 정보의 10912.
 
-이 유지 관리 릴리스에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 다음을 참조하십시오. [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md) 전체 세부 정보.
+이 유지 관리 릴리스에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
 ### 알려진 문제 {#known-issues}
 
@@ -44,11 +44,11 @@ CORS를 사용하는 경우 업그레이드하지 마십시오. 이 릴리스에
 
 - GRANITE-44467 - 기존 노드를 업데이트할 때 특정 인스턴스에서 Filevault가 mixin 유형 및 하위 노드를 유지하지 않아 가져오기에 실패하는 문제가 해결되었습니다.
 
-### 임베디드 기술 {#embedded-tech}
+### 임베드된 기술 {#embedded-tech}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
 | AEM OAK | 1.44-T20221206170501-6d59064 | [Oak API 1.44.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
 | AEM SLING API | 버전 2.27.0 | [Apache Sling API 2.27.0 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 버전 1.4.20-1.4.0 | [HTML 템플릿 언어 사양](https://github.com/adobe/htl-spec) |
-| AEM 핵심 구성 요소 | 버전 2.21.2 | [AEM WCM 코어 구성 요소](https://github.com/adobe/aem-core-wcm-components) |
+| AEM 핵심 구성 요소 | 버전 2.21.2 | [AEM WCM 핵심 구성 요소](https://github.com/adobe/aem-core-wcm-components) |

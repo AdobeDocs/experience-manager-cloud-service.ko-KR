@@ -4,10 +4,10 @@ description: Adobe Experience Manager(AEM) as a Cloud Service의 콘텐츠 조�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
+source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,10 +24,10 @@ Adobe Experience Manager(AEM) as a Cloud Service와 함께 콘텐츠 조각을 �
       * 페이지 작성 시 사용할 간단한 콘텐츠를 준비하는 데 사용할 수 있습니다.
    * 복합
       * 텍스트, 숫자, 부울, 데이터 및 시간 등 다양한 데이터 유형의 여러 필드 조합입니다.
-      * 페이지 작성을 위해 보다 구조화된 콘텐츠를 준비하거나 애플리케이션에 전송하는 데 사용할 수 있습니다.
+      * 페이지 작성을 위해 보다 구조화된 콘텐츠를 준비하거나 애플리케이션에 게재하는 데 사용할 수 있습니다.
    * 중첩
       * 사용 가능한 참조 데이터 유형을 사용하면 콘텐츠를 중첩할 수 있습니다.
-      * 주로 애플리케이션에 전송하는 데 사용됩니다.
+      * 주로 애플리케이션에 게재하는 데 사용됩니다.
 
 AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하여 콘텐츠 조각을 JSON 형식으로 게재할 수도 있습니다. 이 게재 형식을 사용하면
 
@@ -47,7 +47,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 * 페이지 작성을 위한
 
    * [콘텐츠 조각을](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-   * [GraphQL과 함께 사용하여 Headless 방식으로 애플리케이션을 전송할 수 있습니다](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
+   * [GraphQL과 함께 사용하여 Headless 방식으로 애플리케이션에 게재할 수 있습니다](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
 이를 위해 [구조 트리](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md) 및 [JSON 출력](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)을 미리 볼 수 있습니다.
 
 >[!NOTE]
@@ -61,7 +61,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >* [콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 
-통신 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
+커뮤니케이션 채널의 수는 매년 증가하고 있습니다. 일반적으로 채널은 다음 중 하나로서 게재 메커니즘을 나타냅니다.
 
 * 물리적 채널 - 예: 데스크탑, 모바일
 * 실제 채널에서의 게재 형태 - 예: 데스크탑의 “제품 세부 정보 페이지”, “제품 범주 페이지” 또는 모바일의 “모바일 웹”, “모바일 앱”
@@ -72,7 +72,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 
 * 다양한 채널에서 효율적으로 타겟 대상자에게 도달하는 방법을 고려할 수 있습니다.
 * 채널 중립적인 에디토리얼 콘텐츠를 만들고 관리할 수 있습니다.
-* 다양한 채널을 위한 콘텐츠 풀을 구축할 수 있습니다.
+* 다양한 채널을 위한 콘텐츠 풀을 빌드할 수 있습니다.
 * 특정 채널에 맞는 콘텐츠 변형을 디자인할 수 있습니다.
 * 에셋(혼합 미디어 조각)을 삽입하여 텍스트에 이미지를 추가합니다.
 * 데이터의 복잡성을 반영하도록 중첩된 콘텐츠를 만듭니다.
@@ -82,7 +82,7 @@ AEM 핵심 구성 요소의 Sling Model(JSON) 내보내기 기능을 사용하�
 >[!NOTE]
 >
 >**콘텐츠 조각** 및 **[경험 조각](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
->* **컨텐츠 조각** 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃이 없는 편집 가능한 컨텐츠입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
+>* **콘텐츠 조각**&#x200B;은 정의 및 구조를 갖지만 추가적인 시각적 디자인 및/또는 레이아웃을 포함하지 않는 에디토리얼 콘텐츠입니다. 텍스트, 숫자, 날짜 등과 같은 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 콘텐츠, 즉 웹 페이지 조각입니다.
 >
 >경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
@@ -192,7 +192,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * **조각에 삽입된 에셋(혼합 미디어 조각)**
 
-   * 실제 조각에 삽입되고 조각의 내부 콘텐츠로 사용된 에셋(이미지)
+   * 실제 조각에 삽입되고 조각의 내부 콘텐츠로 사용된 에셋 (이미지)
    * 조각의 단락 시스템에 임베드됩니다.
    * [페이지에서 조각을 사용/참조](/help/sites-cloud/authoring/fundamentals/content-fragments.md)할 때 형식을 지정할 수 있습니다.
    * 조각 편집기를 사용해야 조각에 추가, 조각에서 삭제 또는 조각 내에서 이동할 수 있습니다. 페이지 편집기에서는 이러한 작업을 수행할 수 없습니다.
@@ -210,7 +210,7 @@ AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관�
 
 * **관련 콘텐츠**
 
-   * 조각의 외부 콘텐츠지만 조각에 대한 편집 관련 연관성이 있는 콘텐츠입니다. 일반적으로 이미지, 비디오 또는 기타 조각입니다.
+   * 조각의 외부 콘텐츠지만 조각에 대한 에디토리얼 관련 연관성이 있는 콘텐츠입니다. 일반적으로 이미지, 비디오 또는 기타 조각입니다.
    * 컬렉션 내의 개별 에셋은 페이지에 추가될 때 페이지 편집기에서 조각에 사용할 수 있습니다. 이는 특정 채널의 요구 사항에 따라 이러한 에셋을 선택할 수 있음을 의미합니다.
    * 에셋은 [컬렉션을 통해 조각에 연결](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)됩니다. 연결된 컬렉션은 작성자가 페이지를 작성할 때 사용할 에셋을 결정할 수 있도록 해 줍니다.
 
