@@ -2,10 +2,10 @@
 title: 콘솔용 키보드 단축키
 description: 이러한 키보드 단축키를 사용하여 작성할 때 시간을 절약합니다.
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
-workflow-type: tm+mt
+source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
+workflow-type: ht
 source-wordcount: '376'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 |  | `Left Arrow` | 트리 구조 위로 이동하거나 트리 노드를 축소합니다. |
 |  | `Down Arrow` | 동일한 수준의 페이지 목록 아래로 이동합니다. |
 |  | `Up Arrow` | 동일한 수준의 페이지 목록 위로 이동합니다. |
-| 콘솔 - 열 보기 | `Shift-Up/Down Arrow` | 동일한 수준의 페이지 목록을 위로/아래로 이동하고 선택합니다. |
+| 콘솔 - 열 보기 | `Shift-Up/Down Arrow` | 동일한 수준의 페이지 목록 위로/아래로 이동하고 해당 목록을 선택합니다. |
 |  | `Esc` | 동일한 수준의 페이지 목록 위로 이동합니다. |
 | 콘솔 | `?` | 키보드 단축키 도움말 |
 |  | `/` | [검색](/help/sites-cloud/authoring/getting-started/search.md) 호출 |
