@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6d7fefce814063476aae8cdafc9cc6b084361a3
+source-git-commit: 4c5c5eed984dcc9361ae2316ce466b4a73c0bf19
 workflow-type: tm+mt
-source-wordcount: '3967'
+source-wordcount: '3969'
 ht-degree: 99%
 
 ---
@@ -229,7 +229,7 @@ ht-degree: 99%
       + [통합 경험](/help/journey-migration/unified-experience.md)
       + [저장소 현대화 도구](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [인덱스 변환기](/help/journey-migration/refactoring-tools/index-converter.md)
-      + [자산 워크플로우 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [에셋 워크플로 마이그레이션](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 변환기](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 현대화 도구](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
@@ -276,7 +276,7 @@ ht-degree: 99%
          + [프로젝트를 사용하여 작업](/help/sites-cloud/authoring/projects/overview.md)
          + [프로젝트 관리](/help/sites-cloud/authoring/projects/managing.md)
          + [작업](/help/sites-cloud/authoring/projects/tasks.md)
-         + [프로젝트 워크플로우를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
+         + [프로젝트 워크플로를 사용하여 작업](/help/sites-cloud/authoring/projects/workflows.md)
       + 런치 {#launches}
          + [런치를 사용하여 작업](/help/sites-cloud/authoring/launches/overview.md)
          + [런치 만들기](/help/sites-cloud/authoring/launches/creating.md)
@@ -284,10 +284,10 @@ ht-degree: 99%
          + [런치 편집](/help/sites-cloud/authoring/launches/editing.md)
          + [타임워프를 사용하여 런치 미리보기](/help/sites-cloud/authoring/launches/preview.md)
          + [런치 홍보](/help/sites-cloud/authoring/launches/promoting.md)
-      + 워크플로우 {#workflows}
-         + [워크플로우를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
-         + [페이지에 워크플로우 적용](/help/sites-cloud/authoring/workflows/applying.md)
-         + [워크플로우에 참여](/help/sites-cloud/authoring/workflows/participating.md)
+      + 워크플로 {#workflows}
+         + [워크플로를 사용하여 작업](/help/sites-cloud/authoring/workflows/overview.md)
+         + [페이지에 워크플로 적용](/help/sites-cloud/authoring/workflows/applying.md)
+         + [워크플로에 참여](/help/sites-cloud/authoring/workflows/participating.md)
       + 개인 맞춤화 {#personalization}
          + [개인 맞춤화 개요](/help/sites-cloud/authoring/personalization/overview.md)
          + [ContextHub 데이터를 사용하여 페이지 미리보기](/help/sites-cloud/authoring/personalization/contexthub.md)
@@ -331,7 +331,7 @@ ht-degree: 99%
             + [git 저장소 액세스 정보 가져오기](/help/journey-sites/quick-site/retrieve-access.md)
             + [사이트 테마 맞춤화](/help/journey-sites/quick-site/customize-theme.md)
             + [맞춤화된 테마 배포](/help/journey-sites/quick-site/deploy-theme.md)
-      + [워크플로우 관리](/help/sites-cloud/administering/workflows-administering.md)
+      + [워크플로 관리](/help/sites-cloud/administering/workflows-administering.md)
       + 재사용 등급 {#reusing-content}
          + [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)
          + 다중 사이트 관리자 {#msm}
@@ -375,60 +375,60 @@ ht-degree: 99%
    + [ [!DNL Assets] as a [!DNL Cloud Service] 주요 변경 내용](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 아키텍처](/help/assets/architecture.md)
    + [지원되는 파일 형식](/help/assets/file-format-support.md)
-   + [자산 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
+   + [에셋 마이크로서비스 개요](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets]에서의 접근성](/help/assets/accessibility.md)
-   + 디지털 자산 관리 {#manage}
-      + [자산 공유](/help/assets/share-assets.md)
+   + 디지털 에셋 관리 {#manage}
+      + [에셋 공유](/help/assets/share-assets.md)
       + [활동 및 DAM 작업 모니터링](/help/assets/assets-activity-history.md)
-      + [자산 마이크로서비스 사용 시작하기](/help/assets/asset-microservices-configure-and-use.md)
-      + [자산 추가 및 업로드](/help/assets/add-assets.md)
-      + [자산 검색](/help/assets/search-assets.md)
-      + [일반적인 자산 관리 작업](/help/assets/manage-digital-assets.md)
+      + [에셋 마이크로서비스 사용 시작하기](/help/assets/asset-microservices-configure-and-use.md)
+      + [에셋 추가 및 업로드](/help/assets/add-assets.md)
+      + [에셋 검색](/help/assets/search-assets.md)
+      + [일반적인 에셋 관리 작업](/help/assets/manage-digital-assets.md)
       + [게시 관리](/help/assets/manage-publication.md)
-      + [3D 자산 미리보기](/help/assets/dynamic-media/previewing-3d-assets.md)
+      + [3D 에셋 미리보기](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [이미지용 스마트 태그](/help/assets/smart-tags.md)
-      + [비디오 자산에 스마트 태그 지정](/help/assets/smart-tags-video-assets.md)
-      + [자산 구성 방법](/help/assets/organize-assets.md)
-      + [ [!DNL Adobe Stock] 자산 사용](/help/assets/aem-assets-adobe-stock.md)
+      + [비디오 에셋에 스마트 태그 지정](/help/assets/smart-tags-video-assets.md)
+      + [에셋 구성 방법](/help/assets/organize-assets.md)
+      + [ [!DNL Adobe Stock] 에셋 사용](/help/assets/aem-assets-adobe-stock.md)
       + [컬렉션 관리](/help/assets/manage-collections.md)
       + [메타데이터 개요](/help/assets/manage-metadata.md)
       + [ [!DNL Adobe Creative Cloud]와 통합](/help/assets/aem-cc-integration-best-practices.md)
       + [메타데이터 추가 또는 편집 방법](/help/assets/meta-edit.md)
-      + [폴더 자산 및 컬렉션 검토](/help/assets/bulk-approval.md)
+      + [폴더 에셋 및 컬렉션 검토](/help/assets/bulk-approval.md)
       + [Assets Insights 사용 및 구성](/help/assets/assets-insights.md)
       + [메타데이터 프로필](/help/assets/metadata-profiles.md)
       + [메타데이터 스키마](/help/assets/metadata-schemas.md)
-      + [비디오 자산 관리](/help/assets/manage-video-assets.md)
-      + [MSM을 사용하여 자산 재사용](/help/assets/reuse-assets-using-msm.md)
-      + [자산 다운로드](/help/assets/download-assets-from-aem.md)
-      + [편집할 자산 체크인 및 체크아웃](/help/assets/check-out-and-submit-assets.md)
+      + [비디오 에셋 관리](/help/assets/manage-video-assets.md)
+      + [MSM을 사용하여 에셋 재사용](/help/assets/reuse-assets-using-msm.md)
+      + [에셋 다운로드](/help/assets/download-assets-from-aem.md)
+      + [편집할 에셋 체크인 및 체크아웃](/help/assets/check-out-and-submit-assets.md)
       + [비공개 폴더 생성 및 공유](/help/assets/private-folder.md)
-      + [자산용 Digital Rights Management](/help/assets/drm.md)
-      + [자산에 워터마크 추가](/help/assets/watermark-assets.md)
-      + [ [!DNL Creative Cloud] API를 사용하여 자산 처리](/help/assets/cc-api-integration.md)
+      + [에셋용 Digital Rights Management](/help/assets/drm.md)
+      + [에셋에 워터마크 추가](/help/assets/watermark-assets.md)
+      + [ [!DNL Creative Cloud] API를 사용하여 에셋 처리](/help/assets/cc-api-integration.md)
       + [이미지용 색상 태그](/help/assets/color-tag-images.md)
       + [PDF 문서 관리](/help/assets/manage-pdf-documents.md)
    + [!DNL Assets] 구성, 관리 및 확장 {#admin}
       + [개발자 문서 및 API 참조](/help/assets/developer-reference-material-apis.md)
       + [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)
       + [이미지 및 비디오 프로필을 사용하여 작업](/help/assets/dynamic-media/about-image-video-profiles.md)
-      + [오디오 및 비디오 자산의 트랜스크립션 구성](/help/assets/configure-transcription.md)
-      + [다국어 자산 및 번역](/help/assets/translate-assets.md)
+      + [오디오 및 비디오 에셋의 트랜스크립션 구성](/help/assets/configure-transcription.md)
+      + [다국어 에셋 및 번역](/help/assets/translate-assets.md)
       + [검색 패싯](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [연결된 자산](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [연결된 에셋](/help/assets/use-assets-across-connected-assets-instances.md)
       + [배치 전용 렌디션 생성](/help/assets/configure-fpo-renditions.md)
-      + [자산 보고서](/help/assets/asset-reports.md)
+      + [에셋 보고서](/help/assets/asset-reports.md)
       + [연속 메타데이터](/help/assets/cascading-metadata.md)
       + [XMP 메타데이터](/help/assets/xmp-metadata.md)
       + [MediaLibrary 기능](/help/assets/medialibrary.md)
-      + [자산 메타데이터 가져오기 및 내보내기](/help/assets/metadata-import-export.md)
-      + [자산 업로드 제한 사항 구성](/help/assets/configure-asset-upload-restrictions.md)
-   + 자산 공유 및 배치 {#brand-portal}
+      + [에셋 메타데이터 가져오기 및 내보내기](/help/assets/metadata-import-export.md)
+      + [에셋 업로드 제한 사항 구성](/help/assets/configure-asset-upload-restrictions.md)
+   + 에셋 공유 및 배치 {#brand-portal}
       + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [ [!DNL Brand Portal]에 자산 게시](/help/assets/publish-to-brand-portal.md)
-      + [ [!DNL Brand Portal] 에서 [!DNL Assets]로 자산 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+      + [ [!DNL Brand Portal]에 에셋 게시](/help/assets/publish-to-brand-portal.md)
+      + [ [!DNL Brand Portal] 에서 [!DNL Assets]로 에셋 게시](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
    + 콘텐츠 조각 {#content-fragments}
       + [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
       + [콘텐츠 조각 및 GraphQL을 사용하여 Headless 게재](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -444,7 +444,7 @@ ht-degree: 99%
       + [미리보기 - JSON 표현식](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 여정: 기본 사항 {#dm-journey}
-         + [1부: Dynamic Media 소개 - 사용 사례 - 자산이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [1부: Dynamic Media 소개 - 사용 사례 - 에셋이 시스템을 통해 이동하는 방법](/help/assets/dynamic-media/dm-journey-part1.md)
          + [2부: Dynamic Media URL의 구조 - 이미지 사전 설정의 기본 사항 - 이미지 세트, 스핀 세트 및 혼합 미디어 세트 정보](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League의 Dynamic Media 뉴스레터 아카이브](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media 설정](/help/assets/dynamic-media/administering-dynamic-media.md)
@@ -455,7 +455,7 @@ ht-degree: 99%
       + [Dynamic Media 문제 해결](/help/assets/dynamic-media/troubleshoot-dm.md)
       + [Dynamic Media 별칭 계정 구성](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media에서의 접근성](/help/assets/dynamic-media/accessibility-dm.md)
-      + [Dynamic Media 자산 관리](/help/assets/dynamic-media/managing-assets.md)
+      + [Dynamic Media 에셋 관리](/help/assets/dynamic-media/managing-assets.md)
       + [이미지 품질 최적화 모범 사례](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [이미지 프로필](/help/assets/dynamic-media/image-profiles.md)
       + [비디오 프로필](/help/assets/dynamic-media/video-profiles.md)
@@ -468,7 +468,7 @@ ht-degree: 99%
       + [Dynamic Media Classic의 방식으로 CDN 캐시 무효화](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [스마트 이미징](/help/assets/dynamic-media/imaging-faq.md)
       + [클라이언트측 디바이스 픽셀 비율을 갖는 스마트 이미징](/help/assets/dynamic-media/client-side-dpr.md)
-      + [Dynamic Media 자산 전송](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+      + [Dynamic Media 에셋 전송](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media의 핫링크 보호 활성화](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D 지원](/help/assets/dynamic-media/assets-3d.md)
       + [Dynamic Media 제한 사항](/help/assets/dynamic-media/limitations.md)
@@ -484,12 +484,12 @@ ht-degree: 99%
       + [Dynamic Media 뷰어를 Adobe Analytics 및 Adobe Experience Platform 태그와 통합](/help/assets/dynamic-media/tags.md)
       + [빠른 보기를 사용하여 맞춤형 팝업 제작](/help/assets/dynamic-media/custom-pop-ups.md)
       + [반응형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)
-      + [Dynamic Media 자산 미리보기](/help/assets/dynamic-media/previewing-assets.md)
-      + [페이지에 Dynamic Media 자산 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+      + [Dynamic Media 에셋 미리보기](/help/assets/dynamic-media/previewing-assets.md)
+      + [페이지에 Dynamic Media 에셋 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [웹 페이지에 Dynamic Video 또는 Dynamic Image 뷰어 임베드](/help/assets/dynamic-media/embed-code.md)
       + [웹 애플리케이션에 URL 연결](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
       + [규칙 세트를 사용하여 URL 변환](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
-      + [Dynamic Media 자산 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+      + [Dynamic Media 에셋 게시](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Dynamic Media의 선택적 게시를 사용하여 작업](/help/assets/dynamic-media/selective-publishing.md)
       + [선택기를 사용하여 작업](/help/assets/dynamic-media/working-with-selectors.md)
       + [콘텐츠 FAQ의 HTTP2 게재](/help/assets/dynamic-media/http2faq.md)
@@ -497,7 +497,7 @@ ht-degree: 99%
       + [DHTML 뷰어 서비스 종료](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Adobe Workfront와 통합 {#integrations}
       + [ [!DNL Adobe Workfront]와 통합](/help/assets/workfront-integrations.md)
-      + [자산 메타데이터 매핑 구성](/help/assets/configure-asset-metadata-mapping.md)
+      + [에셋 메타데이터 매핑 구성](/help/assets/configure-asset-metadata-mapping.md)
       + [ [!DNL Workfront]에 [!DNL enhanced connector] 설치](/help/assets/workfront-connector-install.md)
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
@@ -516,7 +516,7 @@ ht-degree: 99%
       + [통합 스토리지 커넥터 구성](/help/forms/configure-unified-storage-connector.md)
       + [ [!DNL AEM 6.5 Forms] 이하 버전에서 [!DNL AEM Forms] as a Cloud Service로 마이그레이션](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [그룹 및 권한](/help/forms/forms-groups-privileges-tasks.md)
-      + [적응형 양식, PDF 양식 및 기타 자산 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
+      + [적응형 양식, PDF 양식 및 기타 에셋 가져오기, 내보내기 및 구성](/help/forms/import-export-forms-templates.md)
    + 통합 {#integrate}
       + 서비스 {#services}
          + [Adobe Sign과 AEM Forms as a Cloud Service 통합](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -549,7 +549,7 @@ ht-degree: 99%
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
             + [템플릿 만들기](/help/forms/template-editor.md)
             + [테마 만들기](/help/forms/themes.md)
-            + [참조 자산](/help/forms/reference-assets.md)
+            + [참조 에셋](/help/forms/reference-assets.md)
             + [적응형 양식에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)
             + [소극적 로드 옵션이 있는 대용량 양식의 성능 향상](/help/forms/lazy-loading-adaptive-forms.md)
          + 적응형 양식에 구성 요소 추가 {#add-components-to-an-adaptive-form}
@@ -582,9 +582,9 @@ ht-degree: 99%
             + [접근성 높은 적응형 양식 만들기](/help/forms/creating-accessible-adaptive-forms.md)
          + [Forms 포털 구성](/help/forms/configure-forms-portal.md)
          + [검토 만들기 및 관리](/help/forms/create-reviews-forms.md)
-   + 양식 중심 워크플로우 {#create-form-centric-workflows}
-      + [워크플로우 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
-      + [양식 중심 워크플로우에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
+   + 양식 중심 워크플로 {#create-form-centric-workflows}
+      + [워크플로 + 단계 참조에서 양식 중심 단계 사용](/help/forms/aem-forms-workflow-step-reference.md)
+      + [양식 중심 워크플로에서 변수 사용](/help/forms/variable-in-aem-workflows.md)
       + [[Out of Office] 옵션 사용](/help/forms/configure-out-of-office-settings.md)
    + 커뮤니케이션 API {#using-communications}
       + [커뮤니케이션 API 소개](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -791,14 +791,14 @@ ht-degree: 99%
          + [소개](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 맞춤형 도메인 이름 {#custom-domain-names}
+      + 사용자 정의 도메인 이름 {#custom-domain-names}
          + [소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [TXT 레코드 추가](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
-         + [맞춤형 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+         + [사용자 정의 도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [DNS 설정 구성](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS 레코드 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-         + [맞춤형 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         + [사용자 정의 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + IP 허용 목록 {#ip-allow-lists}
          + [소개](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 허용 목록 추가](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -941,6 +941,7 @@ ht-degree: 99%
    + [AEM 커넥터 유지 관리](/help/connectors/maintain.md)
 + 작업 {#operations}
    + [AEM as a Cloud Service에서의 작업 및 유지 관리](/help/operations/home.md)
+   + [알림 센터](/help/operations/notification-center.md)
    + [콘텐츠 검색 및 색인화](/help/operations/indexing.md)
    + [콘텐츠 복제 서비스](/help/operations/replication.md)
    + [AEM as a Cloud Service의 인프라 및 서비스 모니터링](/help/operations/monitoring.md)
