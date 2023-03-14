@@ -5,9 +5,10 @@ description: 핵심 구성 요소 및 Headless를 사용하여 매력적인 Form
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
-source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
+hidefromtoc: true
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2465'
 ht-degree: 1%
 
 ---
@@ -242,8 +243,6 @@ AEM Forms as a Cloud Service 환경을 숙지하십시오.
 
    ![](/help/forms/assets/screenshot2028116429.png)
 
-   ![](/help/forms/assets/screenshot20228116569.png)
-
 
 1. 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
@@ -271,8 +270,7 @@ AEM Forms as a Cloud Service 환경을 숙지하십시오.
 
    >[!NOTE]
    >
-   >를 실행한 후 브라우저에서 빈 화면이 표시되는 경우 `npm run live` 명령, 변경 `localhost` 를 브라우저 URL에서 127.0.0.1로 변경하고 히트합니다. **입력**.
-
+   >를 실행한 후 브라우저에서 빈 화면이 표시되는 경우 `npm run live` 3-4분 이상 명령, 변경 `localhost` 를 브라우저 URL에서 127.0.0.1로 변경하고 히트합니다. **입력**.
 
 
    ![](/help/forms/assets/screenshot2028115129.png)
@@ -381,7 +379,8 @@ Cloud Service 게시 환경에서 호스팅된 양식을 렌더링하려면 다�
 
    >[!NOTE]
    >
-   >를 실행한 후 브라우저에서 빈 화면이 표시되는 경우 `npm start` 명령, 변경 `localhost` 를 브라우저 URL에서 127.0.0.1로 변경하고 히트합니다. **입력**.
+   > 
+   > 를 실행한 후 브라우저에서 빈 화면이 표시되는 경우 `npm start` 3-4분 이상 명령, 변경 `localhost` 를 브라우저 URL에서 127.0.0.1로 변경하고 히트합니다. **입력**.
 
    ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -529,7 +528,7 @@ Cloud Service 게시 환경에서 호스팅된 양식을 렌더링하려면 다�
 
    >[!NOTE]
    >
-   >를 실행한 후 브라우저에서 빈 화면이 표시되는 경우 `npm start` 명령, 변경 `localhost` 를 브라우저 URL에서 127.0.0.1로 변경하고 히트합니다. **입력**.
+   >를 실행한 후 브라우저에서 빈 화면이 표시되는 경우 `npm start` 3-4분 이상 명령, 변경 `localhost` 를 브라우저 URL에서 127.0.0.1로 변경하고 히트합니다. **입력**.
 
    ![](/help/forms/assets/screenshot2028127229.png)
 
