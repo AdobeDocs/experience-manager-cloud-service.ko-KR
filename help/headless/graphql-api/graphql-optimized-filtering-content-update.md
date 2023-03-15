@@ -119,8 +119,7 @@ AEM as a Cloud Service의 2023.1.0 이상 릴리스가 있는지 확인하십시
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60(초)
    >* 마이그레이션 완료에 필요한 대략적인 시간 = 60 + (20,000/1000 * 60) = 1260초 = 21분
-      >  시작 시 추가된 &quot;60&quot;초는 작업 시작 시 초기 지연으로 인한 것입니다.
-
+   >  시작 시 추가된 &quot;60&quot;초는 작업 시작 시 초기 지연으로 인한 것입니다.
    >
    >이는 작업을 완료하는 데 필요한 *최소한의* 시간이며 I/O 시간은 포함하지 않습니다. 소요되는 실제 시간은 이 추정치보다 훨씬 더 클 수 있습니다.
 
@@ -139,6 +138,7 @@ AEM as a Cloud Service의 2023.1.0 이상 릴리스가 있는지 확인하십시
          
          23.01.2023 13:20:40.960 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 6m, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+
    * 골든 게시 로그, 예:
 
       ```shell
