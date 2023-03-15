@@ -9,18 +9,14 @@ level: Beginner
 kt: 9455, 9471, 9472, 9473
 thumbnail: 339168.jpg
 exl-id: 6e080945-8789-4dfa-b093-9df10c278e11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
 
 # App Builder 애플리케이션 만들기
-
->[!IMPORTANT]
->
-> _이 시리즈의 비디오에서 언급한 대로, 이제 Adobe Project Firefly를 App Builder라고 합니다_
 
 ## 첫 번째 프로젝트 설정
 

@@ -9,18 +9,14 @@ level: Beginner
 kt: 9457,9479,9480
 thumbnail: 339238.jpg
 exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '85'
 ht-degree: 0%
 
 ---
 
 # App Builder 저장소 라이브러리
-
->[!IMPORTANT]
->
-> _이 시리즈의 비디오에서 언급한 대로, 이제 Adobe Project Firefly를 App Builder라고 합니다_
 
 ## 스토리지 라이브러리 소개
 

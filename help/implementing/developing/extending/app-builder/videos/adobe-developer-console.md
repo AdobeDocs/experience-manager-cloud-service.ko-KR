@@ -9,20 +9,14 @@ level: Beginner
 kt: 9453, 9467, 9468, 9469
 thumbnail: 339162.jpg
 exl-id: bf358ead-cd39-4284-86d5-5b4ab0cf1ae3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
 # App Builder용 Adobe Developer 콘솔
-
->[!IMPORTANT]
->
-> _이 시리즈의 비디오에서 언급한 대로, 이제 Adobe Project Firefly를 App Builder라고 합니다_
-
-## Adobe Developer 콘솔 시작하기
 
 Adobe Developer 콘솔의 정의 및 액세스 및 탐색 방법을 알아봅니다.
 

@@ -2,16 +2,16 @@
 title: 확장 [!DNL Adobe Experience Manager] as a Cloud Service App Builder 사용.
 description: 확장 [!DNL Adobe Experience Manager] as a Cloud Service App Builder 사용.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # 확장 [!DNL Adobe Experience Manager] Adobe Developer App Builder를 사용한 as a Cloud Service {#extend-using-app-builder}
 
-## AEM용 App Builder as a Cloud Service {#project-firefly}
+## AEM용 App Builder as a Cloud Service {#project-appbuilder}
 
 새로운 Adobe Developer 앱 빌더는 개발자가 AEM as a Cloud Service 기능을 쉽게 확장할 수 있는 확장성 프레임워크를 제공합니다.
 
@@ -23,7 +23,7 @@ App Builder 는 고객이 다양한 사용 사례에서 Adobe Experience Manager
 * 핵심 서비스 확장성 - 사용자 지정 기능 및 비즈니스 로직과 함께 기본 동작을 확장하여 코어 애플리케이션 기능을 확장합니다.
 * 사용자 경험 확장성 - 핵심 경험을 확장하여 비즈니스 요구 사항을 지원하거나 고객별 디지털 속성, 상점 및 백엔드 앱을 구축할 수 있습니다.
 
-App Builder(이전에 Project Firefly라고 알려짐)는 2020년 여름 이후 Adobe의 개발자 미리 보기를 통해 엔터프라이즈 고객 및 파트너가 사용할 수 있습니다. App Builder의 GA(일반 출시)는 2021년 12월로 예약되었습니다. 개발자가 Adobe를 통해 앱 빌더를 사용해 볼 것을 환영합니다 [평가판 프로그램](https://adobe.ly/appbuilder-trial).
+App Builder는 2020년 여름 이후 Adobe의 개발자 미리 보기를 통해 엔터프라이즈 고객 및 파트너가 사용할 수 있었습니다. App Builder의 GA(일반 출시)는 2021년 12월로 예약되었습니다. 개발자가 Adobe를 통해 앱 빌더를 사용해 볼 것을 환영합니다 [평가판 프로그램](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Adobe Developer App Builder는 기본적으로 제공되는 솔루션 대신 다
 
 다음 다이어그램은 App Builder에 구축된 표준 애플리케이션이 이러한 기능을 활용하는 방법을 보여줍니다.
 
-![아키텍처](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
+![아키텍처](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
 App Builder 아키텍처에 대한 자세한 내용은 [아키텍처 개요](https://www.adobe.io/app-builder/docs/guides/).
 
@@ -62,7 +62,3 @@ App Builder는 안내서와 참조 설명서를 비롯한 개발자를 위한 �
 개발을 시작할 준비가 되었습니까? 신속한 지원을 위해 다양한 샘플 애플리케이션을 보유하고 있습니다.
 
 * [Adobe Developer 웹 사이트의 App Builder 코드 Labs](https://www.adobe.io/app-builder/docs/resources/)
-
-## 지원 {#support}
-
-개발자 지원 요청 유형의 경우 개발자가 [Experience League 포럼](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).

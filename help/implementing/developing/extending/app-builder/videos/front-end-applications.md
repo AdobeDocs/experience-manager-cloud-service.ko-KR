@@ -9,18 +9,14 @@ level: Beginner
 kt: 9459,9483
 thumbnail: 339244.jpg
 exl-id: 0e5319ea-b053-44bf-ac9c-9b0dee51eac4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '63'
 ht-degree: 0%
 
 ---
 
 # App Builder용 프런트 엔드 애플리케이션
-
->[!IMPORTANT]
->
-> _이 시리즈의 비디오에서 언급한 대로, 이제 Adobe Project Firefly를 App Builder라고 합니다_
 
 ## 프런트 엔드 App Builder 애플리케이션 소개
 

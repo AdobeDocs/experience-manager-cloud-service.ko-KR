@@ -3,10 +3,10 @@ title: CI/CD 파이프라인
 description: Cloud Manager의 CI/CD 파이프라인과 이를 사용하여 코드를 효율적으로 배포하는 방법에 대해 알아봅니다.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 100%
+source-wordcount: '1367'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Cloud Manager는 두 가지 유형의 파이프라인을 제공합니다.
 
 ## 프론트엔드 파이프라인 {#front-end}
 
-프론트엔드 코드는 정적 파일로 제공되는 모든 코드입니다. AEM에서 제공하는 UI 코드와 별개이며 사이트 테마, 고객 정의 SPA, Firefly SPA 및 기타 솔루션을 포함할 수 있습니다.
+프론트엔드 코드는 정적 파일로 제공되는 모든 코드입니다. AEM에서 제공하는 UI 코드와는 별도이며 사이트 테마, 고객 정의 SPA, SPA 및 기타 솔루션을 포함할 수 있습니다.
 
 프론트엔드 파이프라인은 백엔드 개발과 비동기식 프론트엔드 코드 배포를 가속화하여 팀이 설계 및 개발 프로세스를 간소화할 수 있습니다. 이 전용 파이프라인은 JavaScript 및 CSS를 AEM 배포 계층에 테마로 배포하므로 AEM에서 제공하는 페이지에서 참조할 수 있는 새 테마 버전이 생성됩니다.
 

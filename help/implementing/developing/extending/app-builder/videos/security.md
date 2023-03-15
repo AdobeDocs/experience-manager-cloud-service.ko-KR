@@ -9,18 +9,14 @@ level: Beginner
 kt: 9460
 thumbnail: 339249.jpg
 exl-id: f0f3f254-0efa-4fab-b2fd-96571bbb719f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '24'
 ht-degree: 0%
 
 ---
 
 # App Builder 보안
-
->[!IMPORTANT]
->
-> _이 시리즈의 비디오에서 언급한 대로, 이제 Adobe Project Firefly를 App Builder라고 합니다_
 
 Adobe 런타임 작업 보안, 사용자 및 AppBuilder 인증 및 권한 부여에 대해 알아봅니다.
 

@@ -9,18 +9,14 @@ level: Beginner
 kt: 9462
 thumbnail: 339251.jpg
 exl-id: ebbc1249-ed82-47c3-96ce-27a4d9c8ee99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
 # App Builder 애플리케이션 게시
-
->[!IMPORTANT]
->
-> _이 시리즈의 비디오에서 언급한 대로, 이제 Adobe Project Firefly를 App Builder라고 합니다_
 
 검토 및 승인을 위해 App Builder 애플리케이션을 제출하는 방법과 새로 게시된 애플리케이션을 실행하는 방법을 알아봅니다.
 
