@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service의 최신 혁신적인 기능을 살펴보십시오.
 description: "의 최신 기능 살펴보기 [!DNL AEM Forms] 엔터프라이즈급 양식 및 비즈니스 프로세스를 작성, 관리 및 게시할 수 있도록 as a Cloud Service 제공"
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 6949e35b65f4c21b4304fb99bfe71bd4b952ef20
+source-git-commit: 5c4248d520cb0f956206d76692041ef980099002
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 10%
+source-wordcount: '1123'
+ht-degree: 11%
 
 ---
 
@@ -20,9 +20,9 @@ The organization can use [!DNL AEM Forms] as a Cloud Service to create digital f
 An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
 
 
-# 최신 혁신 사항 {#latest-innovations}
+# Adobe Experience Manager Forms의 주요 혁신 내용 {#latest-innovations}
 
-AEM Forms as a Cloud Service의 최신 혁신 내용 중 일부는 다음과 같습니다.
+Adobe Experience Manager Forms의 몇 가지 주요 혁신 사항은 다음과 같습니다.
 
 | 혁신 | 세부 사항 |
 |---|---|
@@ -32,4 +32,4 @@ AEM Forms as a Cloud Service의 최신 혁신 내용 중 일부는 다음과 같
 | Microsoft Storage Connectors | AEM Forms Microsoft Storage Connectors for <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-sharedrive">OneDrive</a>, <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-sharedrive"> SharePoint, </a> 및 <a href="https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?#submit-to-azure-blob-storage"> Azure Blob 저장소 </a> Adobe Experience Manager(AEM) Forms을 Microsoft OneDrive 및 SharePoint과 통합할 수 있는 커넥터입니다. 이 커넥터를 사용하여 적응형 Forms에서 직접 OneDrive 및 SharePoint에 데이터 파일과 첨부 파일을 업로드할 수 있습니다. <br/> ![](/help/forms/assets/onedrive-and-sharepoint.jpg) <br/>OneDrive와 SharePoint은 CRM 시스템, 회계 소프트웨어 및 프로젝트 관리 도구와 같은 다른 비즈니스 애플리케이션과 통합할 수 있습니다. 이를 통해 비즈니스 프로세스를 간소화하고, 수동 데이터 입력을 줄이고, 전체 효율성을 향상시킬 수 있습니다. |
 | 마법사 UI | 적응형 Forms 마법사 UI는 적응형 양식을 빠르고 쉽게 생성할 수 있는 강력한 도구입니다. 사용자에게 친숙한 인터페이스 및 사용자 지정 옵션을 통해 기술 수준에 관계없이 모든 사용자가 액세스할 수 있습니다. <br/> <br/> 마법사 UI는 사용자를 양식 작성 프로세스를 단계별로 안내하여 적응형 양식을 만드는 프로세스를 단순화합니다. 마법사-UI는 여러 탭으로 나뉘어 있으며 각 탭에는 적응형 양식을 구성하는 옵션이 명확히 제공됩니다. 양식 작성자는 탭을 선형 방식으로 진행하여 템플릿, 제출 작업 및 양식 구성 요소에 대한 데이터 소스 등의 옵션을 선택합니다. <br/> ![](/help/release-notes/assets/wizard.png) <br/>마법사 인터페이스를 사용하면 적응형 양식에 필요한 모든 옵션을 살펴보는 프로세스를 간소화할 수 있으며, 이 기술을 잘 모르는 사용자도 양식을 쉽게 만들 수 있습니다. |
 | 빠른 추적 분석 | 양식 분석은 사용자 참여를 측정하고, 전환율을 최적화하고, 양식 성능을 모니터링하고, 사용자 경험을 개선하여 양식의 성능에 대한 중요한 통찰력을 제공할 수 있습니다.  사용자 행동 및 피드백을 추적하여 analytics는 양식의 영역에 좌절감이나 혼란을 주어 양식의 디자인 및 기능 개선을 안내할 수 있습니다. <br/> <br/> Fast Track Analytics를 사용하면 한 번의 버튼을 사용하여 Forms Analytics를 활성화할 수 있습니다. 빠른 추적 분석을 사용하면 AEM Forms을 Experience Platform 태그 및 Adobe Analytics과 as a Cloud Service으로 연결하여 게시된 양식에 대한 성능 지표를 캡처하고 추적할 수 있습니다. <br/> <br/> ![](/help/forms/assets/forms-analytics-report.png) <br/><br/> Forms as a Cloud Service은 Adobe Analytics 보고서 OOTB를 제공합니다. 양식의 성능을 쉽게 이해할 수 있도록 해줍니다. 양식 수준 지표는 변환, 방문자, 제출, 평균 채우기 시간과 같은 여러 주요 성과 지표(KPI)에서 양식이 어떻게 수행되는지에 대한 통찰력을 제공합니다. <br/> <br/> 또한 사용자가 정보를 제공하기 전에 정보를 찾고 중지하게 하는 필드를 확인하는 데 도움이 되도록 패널의 필드에 대한 컨텍스트 내 도움말에 액세스한 평균 횟수에 대한 세부 사항을 제공합니다. 이러한 필드를 더 단순화하거나 콘텐츠를 활용하여 전환을 개선할 수 있습니다. |
-| 다음 세대 합성 | 차세대 Composability를 사용하면 모든 사용자가 양식을 작성하여 전사적으로 Microsoft Excel 및 Google Sheet와 같이 원하는 도구에 양식을 만들 수 있습니다. 따라서 컨텐츠 속도가 빨라지고 새로운 UI 워크플로우에 대한 교육이 필요하지 않습니다. 또한 Next-gen Composability는 Office365 및 Google Suite 제품의 기본 기능을 활용하여 직접적인 공동 작업 및 버전 제어를 가능하게 합니다. <br/> <br/> 차세대 합성 기능을 사용하면 개발 시간을 최소화하고 라이브 이동 경로를 간소화하는 간단한 도구를 통해 빠르고 손쉽게 양식을 배포할 수 있습니다. 또한 탁월한 속도로 로드되는 양식을 통해 탁월한 경험을 제공할 수 있습니다. 라이브 페이지에서 Google Lighthouse 점수가 약 100점이어야 합니다. <br/> <br/> ![](/help/forms/assets/web-vitals.jpeg) <br/> <br/> 전반적으로 차세대 Composability는 컨텐츠 작성 및 게시를 간소화하는 동시에 뛰어난 웹 성능과 공동 작업 기능을 제공합니다. 팀원이 친숙한 저작 도구를 사용할 수 있도록 하고 컨텐츠 관리 시스템에 대한 광범위한 교육이 필요치 않게 함으로써, 기업은 컨텐츠 속도를 높이고 운영을 간소화할 수 있습니다. 차세대 복합성을 통해 고객은 빠르고 잘 디자인된 웹 경험을 즐길 수 있을 뿐만 아니라 비즈니스의 효율성 및 생산성을 높일 수 있습니다. |
+| 다음 세대 합성 | 차세대 Composability는 모든 사용자에게 양식 작성 기능을 제공하므로, 전사적으로 Microsoft Excel 및 Google Sheet처럼 원하는 도구에 양식을 만들 수 있습니다. 따라서 컨텐츠 속도가 빨라지고 새로운 UI 워크플로우에 대한 교육이 필요하지 않습니다. 또한 Next Gen Composability는 Office365 및 Google Suite 제품의 기본 기능을 활용하여 직접적인 공동 작업 및 버전 제어를 가능하게 합니다. <br/> <br/> 차세대 구성 기능을 사용하면 개발 시간을 최소화하고 라이브 이동 경로를 간소화하는 간단한 도구를 통해 빠르고 손쉽게 양식을 배포할 수 있습니다. 또한 탁월한 속도로 로드되는 양식을 통해 탁월한 경험을 제공할 수 있습니다. 라이브 페이지에서 Google Lighthouse 점수가 약 100점이어야 합니다. <br/> ![](/help/forms/assets/web-vitals.jpeg) |
