@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.2.0 릴리스 정보
-description: AEM as a Cloud Service의 Cloud Manager 2023.2.0 릴리스 정보입니다.
+title: Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.3.0 릴리스 정보
+description: AEM as a Cloud Service의 Cloud Manager 2023.3.0 릴리스 정보입니다.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a38eb247fd90197f23bfaea59b8fc734ff9e4942
-workflow-type: ht
-source-wordcount: '212'
-ht-degree: 100%
+source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 64%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.2.0 릴리스 정보 {#release-notes}
+# Adobe Experience Manager as a Cloud Service의 Cloud Manager 2023.3.0 릴리스 정보 {#release-notes}
 
-이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.2.0 릴리스 정보에 대해 설명합니다.
+이 페이지에서는 AEM as a Cloud Service의 Cloud Manager 2023.3.0 릴리스 정보에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -21,16 +21,9 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-AEM as a Cloud Service의 Cloud Manager 2023.2.0 릴리스 일자는 2023년 2월 16일입니다. 다음 릴리스는 2023년 3월 16일에 예정되어 있습니다.
+AEM as a Cloud Service의 Cloud Manager 릴리스 2023.3.0의 릴리스 날짜는 2023년 3월 16일입니다. 다음 릴리스는 2023년 4월 13일에 예정되어 있습니다.
 
-## 새로운 기능 {#what-is-new}
+## 버그 수정 {#bug-fixes}
 
-* 사용자는 UI에서 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md) 결과를 다운로드할 수 있습니다.
-* [신속한 개발 환경](/help/implementing/developing/introduction/rapid-development-environments.md)(RDE)은 로컬에서 작동하는 코드가 클라우드에서도 예상대로 작동하는지 빠르고 일관적이고 확장 가능한 방식으로 검증하는 새로운 유형의 클라우드 환경입니다.
-   * RDE를 사용하여 개발자는 신속하게 문제를 해결하고 AEM as a Cloud Service의 새로운 기능을 배포할 수 있습니다.
-   * 명령줄 도구를 사용하여 개발자는 RDE에 콘텐츠 패키지, 번들, 콘텐츠 파일, OSGi 구성 또는 Dispatcher 구성을 빠르게 동기화할 수 있습니다.
-
-## API 변경 사항 {#api-changes}
-
-* [RDE](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Rapid-Development-Environments)를 지원하도록 API가 변경되었습니다.
-* 이제 API를 사용하여 [실행 아티팩트](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Execution-Artifacts)를 검색할 수 있습니다.
+* go-live 위젯이 이전에 설정한 날짜를 잘못 설정한 문제가 해결되었습니다.
+* 의 상거래 타일 **학습** 이제 Cloud Manager의 탭에서 사용자가 올바른 페이지로 이동합니다.
