@@ -3,10 +3,10 @@ title: 비프로덕션 파이프라인 구성
 description: 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: aac397310babe1aa1e950c176459beaf665b72ce
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,10 @@ ht-degree: 100%
 
    ![비프로덕션 파이프라인 추가](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. **비프로덕션 파이프라인 추가** 대화 상자의 **구성** 탭에서 추가할 비프로덕션 파이프라인 유형(**코드 품질 파이프라인** 또는 **배포 파이프라인**)을 선택합니다.
+1. **비프로덕션 파이프라인 추가** 대화 상자의 **구성** 탭에서 추가할 비프로덕션 파이프라인 유형을 선택합니다.
+
+   * **코드 품질 파이프라인** - 코드를 빌드하고 단위 테스트를 실행하고 코드 품질을 평가하지만 배포하지는 않는 파이프라인을 만듭니다.
+   * **배포 파이프라인** - 코드를 빌드하고 단위 테스트를 실행하고 코드 품질을 평가하고 환경에 배포하는 파이프라인을 만듭니다.
 
    ![비프로덕션 파이프라인 추가 대화 상자](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -48,6 +51,12 @@ ht-degree: 100%
 
       * **수동** - 파이프라인을 수동으로 시작하려면 이 옵션을 사용합니다.
       * **Git 변경 시** - 이 옵션은 구성된 git 분기에 커밋이 추가될 때마다 CI/CD 파이프라인을 시작합니다. 이 옵션을 사용하면 필요에 따라 파이프라인을 수동으로 시작할 수 있습니다.
+
+1. 을(를) 생성하도록 선택하는 경우 **배포 파이프라인** 또한 **중요한 지표 실패 동작**.
+
+   * **매번 묻기** - 이 설정은 기본 설정이며 중요한 장애에 대해 수동 개입이 필요합니다.
+   * **즉시 실패** - 이 옵션을 선택하면 중요한 오류가 발생할 때마다 파이프라인이 취소됩니다. 이는 본질적으로 각 실패를 수동으로 거부하는 사용자를 에뮬레이션하는 것입니다.
+   * **즉시 계속** - 이 옵션을 선택하면 중요한 오류가 발생할 때마다 파이프라인이 자동으로 계속됩니다. 이는 본질적으로 각 실패를 수동으로 승인하는 사용자를 에뮬레이션하는 것입니다.
 
 1. **계속**&#x200B;을 클릭합니다.
 
@@ -106,6 +115,12 @@ ht-degree: 100%
    * **Git 분기** - 이 옵션은 선택한 파이프라인에서 코드를 검색해야 하는 분기를 정의합니다.
       * 분기 이름의 처음 몇 글자를 입력하면 이 필드의 자동 완성 기능이 일치하는 분기를 찾아 선택하는 데 도움이 됩니다.
    * **웹 계층 구성 무시** - 이 옵션을 선택하면 파이프라인이 웹 계층 구성을 배포하지 않습니다.
+
+   * **파이프라인** - 파이프라인이 배포 파이프라인인 경우 테스트 단계를 실행하도록 선택할 수 있습니다. 이 단계에서 활성화할 옵션을 선택합니다. 선택한 옵션이 없으면 파이프라인 실행 중에 테스트 단계가 표시되지 않습니다.
+
+      * **제품 기능 테스트** - 실행 [제품 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) 개발 환경에 영향을 줍니다.
+      * **사용자 지정 기능 테스트** - 실행 [사용자 지정 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 개발 환경에 영향을 줍니다.
+      * **사용자 지정 UI 테스트** - 실행 [사용자 지정 UI 테스트](/help/implementing/cloud-manager/ui-testing.md) 사용자 정의 응용 프로그램용.
 
    ![전체 스택 파이프라인](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

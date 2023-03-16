@@ -2,10 +2,10 @@
 title: Cloud Manager 테스트 개요
 description: Cloud Manager가 사용자 정의 코드의 품질을 보장하기 위해 자동으로 실행하는 세 가지 테스트 유형에 대한 개요를 확인합니다.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: 94f818b7622e0f878d15ba30e2f07a169bd114c3
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 100%
+source-wordcount: '164'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager for Cloud Services 파이프라인에서 지원하는 테스트에
 
 1. [기능 테스트](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 기능 테스트는 프로덕션 파이프라인의 스테이지 테스트 단계의 일부입니다.
+   * 기능 테스트는 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 및 선택적으로 [비프로덕션 파이프라인.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
 1. [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
 
