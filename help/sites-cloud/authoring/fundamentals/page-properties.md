@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 82%
+source-wordcount: '2387'
+ht-degree: 81%
 
 ---
 
@@ -168,17 +168,6 @@ ht-degree: 82%
    * **이미지 선택** - 썸네일로 사용할 기존 에셋을 선택합니다.
    * **되돌리기** - 이 옵션은 썸네일에 변경 내용을 적용한 다음 사용할 수 있습니다. 변경 사항을 유지하지 않으려면 저장하기 전에 해당 변경 사항을 되돌릴 수 있습니다.
 
-### 소셜 미디어 {#social-media}
-
-* **소셜 미디어 공유**
-
-   페이지에서 사용 가능한 공유 옵션을 정의합니다. [핵심 구성 요소 공유](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html)에 사용 가능한 옵션이 표시됩니다.
-
-   * **Facebook에 대한 사용자 공유 활성화**
-   * **Pinterest에 대한 사용자 공유 활성화**
-   * **선호하는 XF 변형**
-      * 페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의합니다.
-
 ### 클라우드 서비스 {#cloud-services}
 
 * **클라우드 서비스 구성** - 클라우드 서비스 속성을 정의합니다.
@@ -208,7 +197,7 @@ ht-degree: 82%
 
 ### 블루프린트 {#blueprint}
 
-이 탭은 블루프린트 역할을 하는 페이지에만 표시됩니다. 블루프린트는 [다중 사이트 관리](/help/sites-cloud/administering/msm/overview.md)의 일부인 라이브 카피의 기반이 됩니다.
+이 탭은 블루프린트 역할을 하는 페이지에만 표시됩니다. Live Copy의 기반이 되는 블루프린트가 [다중 사이트 관리.](/help/sites-cloud/administering/msm/overview.md)
 
 * **현재 라이브 카피** - 이 블루프린트 페이지를 기반으로 하는(이 블루프린트 페이지의 라이브 카피인) 페이지를 나열합니다.
 
@@ -216,7 +205,7 @@ ht-degree: 82%
 
 ### 라이브 카피 {#live-copy}
 
-이 탭은 Live Copy로 구성된 페이지에만 표시됩니다.
+이 탭은 Live Copy로 구성된 페이지에만 표시됩니다. Blueprint와 마찬가지로 Live Copy도 의 일부입니다 [다중 사이트 관리.](/help/sites-cloud/administering/msm/overview.md).
 
 * **동기화** - 로컬 수정 사항을 유지하면서 라이브 카피와 블루프린트를 동기화합니다.
 * **재설정** - 로컬 수정 사항을 제거하고 라이브 카피를 블루프린트 상태로 재설정합니다.
