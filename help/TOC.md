@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 050491bb8d2e9387719bea35a3869a0fb9a7f726
+source-git-commit: c37c1c3eca0ae9d457f422efdaf5e29be03e6014
 workflow-type: tm+mt
-source-wordcount: '3978'
+source-wordcount: '4006'
 ht-degree: 99%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 99%
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [최신 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [2023.1.0 유지 관리 릴리스 노트](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [2023.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
@@ -202,14 +202,14 @@ ht-degree: 99%
          + [콘텐츠 전송 도구 시작하기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [콘텐츠 전송 확인](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [대형 콘텐츠 저장소 처리](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [사용자 매핑 및 보안 주체 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [사용자 매핑 및 주요 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [소스에서 콘텐츠 추출](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [대상에 콘텐츠 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [마이그레이션 세트에 대한 로그 보기](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + 이전 사용자 매핑 도구(이전){#legacy-user-mapping-tool}
+         + 기존 사용자 매핑 도구(기존){#legacy-user-mapping-tool}
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [중요 고려 사항](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -336,17 +336,17 @@ ht-degree: 99%
       + 재사용 등급 {#reusing-content}
          + [MSM 및 번역](/help/sites-cloud/administering/msm-and-translation.md)
          + 다중 사이트 관리자 {#msm}
-            + [MSM 및 라이브 카피 개요](/help/sites-cloud/administering/msm/overview.md)
-            + [라이브 카피 동기화 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
-            + [라이브 카피 생성 및 동기화](/help/sites-cloud/administering/msm/creating-live-copies.md)
-            + [라이브 카피 개요 콘솔](/help/sites-cloud/administering/msm/live-copy-overview.md)
+            + [MSM 및 Live Copy 개요](/help/sites-cloud/administering/msm/overview.md)
+            + [Live Copy 동기화 구성](/help/sites-cloud/administering/msm/live-copy-sync-config.md)
+            + [Live Copy 생성 및 동기화](/help/sites-cloud/administering/msm/creating-live-copies.md)
+            + [Live Copy 개요 콘솔](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [롤아웃 충돌](/help/sites-cloud/administering/msm/rollout-conflicts.md)
             + [MSM 모범 사례](/help/sites-cloud/administering/msm/best-practices.md)
             + [문제 해결 및 FAQ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 번역 {#translation}
-            + 사이트 번역 여정 {#sites}
+            + Sites 번역 여정 {#sites}
                + [AEM에서의 사이트 번역 이해](/help/journey-sites/translation/overview.md)
-               + [AEM 사이트 번역 시작하기](/help/journey-sites/translation/getting-started.md)
+               + [AEM Sites 번역 시작하기](/help/journey-sites/translation/getting-started.md)
                + [사이트 콘텐츠 및 AEM에서의 번역 방법에 대해 알아보기](/help/journey-sites/translation/learn-about.md)
                + [번역 커넥터 구성](/help/journey-sites/translation/configure-connector.md)
                + [번역 규칙 구성](/help/journey-sites/translation/translation-rules.md)
@@ -503,7 +503,7 @@ ht-degree: 99%
       + [기존 설치에 대해 외부 종속성 제거](/help/assets/remove-external-dependencies.md)
       + [ [!DNL Workfront]용 [!DNL enhanced connector] 구성](/help/assets/workfront-connector-configure.md)
       + [업데이트 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-+ 양식 {#forms}
++ Forms {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
       + [Adobe Experience Manager Forms의 주요 혁신 내용](/help/forms/latest-innovations.md)
@@ -602,7 +602,7 @@ ht-degree: 99%
       + [AEM Forms 클라우드 서비스 Java API 참조](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + 문제 해결 {#troubleshooting-aem-forms-cloud-service}
       + [설치 및 구성](/help/forms/troubleshooting-installation-and-configuration.md)
-      + [디스패처 및 CDN 캐싱](/help/forms/troubleshooting-caching-performance.md)
+      + [Dispatcher 및 CDN 캐싱](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
    + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service 개요 {#overview}
@@ -620,7 +620,7 @@ ht-degree: 99%
       + [Screens Services Provider로 이동](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
       + [Screens Content Provider 사용](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Screens 비디오 렌디션 만들기](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
-      + [Screens as a Cloud Service에 대한 디스패처 구성](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+      + [Screens as a Cloud Service에 대한 Dispatcher 구성](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
    + 콘텐츠 만들기 {#create-content}
       + [Screens Content Provider에서 프로젝트 만들기 및 관리](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Screens Content Provider에서 채널 만들기 및 관리](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -930,10 +930,10 @@ ht-degree: 99%
       + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
    + 콘텐츠 게재 개요 {#content-delivery}
       + [콘텐츠 게재 플로우](/help/implementing/dispatcher/overview.md)
-      + [클라우드의 디스패처](/help/implementing/dispatcher/disp-overview.md)
-      + [디스패처 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md)
-      + [AMS에서 AEM as a Cloud Service로 디스패처 구성 마이그레이션](/help/implementing/dispatcher/ams-aem.md)
-      + [디스패처 도구 레거시를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug-legacy.md)
+      + [클라우드의 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
+      + [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md)
+      + [AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션](/help/implementing/dispatcher/ams-aem.md)
+      + [Dispatcher 도구 레거시를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service의 CDN](/help/implementing/dispatcher/cdn.md)
       + [AEM as a Cloud Service에서 캐싱](/help/implementing/dispatcher/caching.md)
 + 커넥터 {#connectors}
@@ -961,3 +961,10 @@ ht-degree: 99%
    + 접근성 {#accessibility}
       + [AEM as a Cloud Service 및 웹 접근성 지침](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)
++ 범용 편집기 {#universal-editor}
+   + [범용 편집기 소개](/help/implementing/universal-editor/introduction.md)
+   + [범용 편집기를 사용하여 컨텐츠 작성](/help/implementing/universal-editor/authoring.md)
+   + [AEM에서 범용 편집기 시작하기](/help/implementing/universal-editor/getting-started.md)
+   + [범용 편집기 아키텍처](/help/implementing/universal-editor/architecture.md)
+   + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)
+   + [범용 편집기 인증](/help/implementing/universal-editor/authentication.md)
