@@ -2,10 +2,10 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: ht
-source-wordcount: '1975'
-ht-degree: 100%
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+workflow-type: tm+mt
+source-wordcount: '2428'
+ht-degree: 82%
 
 ---
 
@@ -37,10 +37,12 @@ ht-degree: 100%
 
    각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
-   * **오버라이드** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
-      * 하위 페이지에 **오버라이드** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.
-   * **오버라이드 값** - 페이지 제목에 추가될 브랜드 슬러그의 텍스트입니다.
-      * 이 값은 페이지에서 파이프 문자 뒤에 추가됩니다(예: “Cycling Tuscany | Always ready for the WKND”)
+   * **브랜드 개요**
+
+      * **오버라이드** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
+         * 하위 페이지에 **오버라이드** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.
+      * **오버라이드 값** - 페이지 제목에 추가될 브랜드 슬러그의 텍스트입니다.
+         * 이 값은 페이지에서 파이프 문자 뒤에 추가됩니다(예: “Cycling Tuscany | Always ready for the WKND”)
 
 * **HTML ID**
 
@@ -105,14 +107,13 @@ ht-degree: 100%
       * 예를 들어 페이지 `/content/wknd/us/en/magazine/members-only`에 대한 `private`의 별칭을 정의하면 `/content/wknd/us/en/magazine/private`을 통해서도 이 페이지에 액세스할 수 있습니다.
       * 별칭을 만들면 페이지 노드의 `sling:alias` 속성이 설정되며, 이는 저장소 경로가 아닌 리소스에만 영향을 미칩니다.
       * 편집기의 별칭을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * 자세한 내용은 [SEO 및 URL 관리 우수 사례에서 현지화된 페이지 이름](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **구성**
 
-   * **클라우드 구성** - 구성으로의 경로
+   * **상속됨 &lt;path>** - 상속 활성화/비활성화 가용성 전환 **클라우드 구성** 선택
+
+   * **클라우드 구성** - 선택한 구성의 경로
 
 * **템플릿 설정**
 
@@ -132,14 +133,40 @@ ht-degree: 100%
 
    * **내보내기 구성** - 내보내기 구성 지정
 
-### 썸네일 {#thumbnail}
+* **SEO**
 
-페이지 썸네일 구성
+   * **정식 Url** - 페이지의 정식 Url을 덮어쓰는 데 사용할 수 있습니다. 비워 두면 페이지의 URL이 정식 URL이 됩니다
 
-* **미리보기 생성** - 썸네일로 사용할 페이지의 미리보기를 생성합니다.
-* **이미지 업로드** - 썸네일로 사용할 이미지를 업로드합니다.
-* **이미지 선택** - 썸네일로 사용할 기존 에셋을 선택합니다.
-* **되돌리기** - 이 옵션은 썸네일에 변경 내용을 적용한 다음 사용할 수 있습니다. 변경 사항을 유지하지 않으려면 저장하기 전에 해당 변경 사항을 되돌릴 수 있습니다.
+   * **로봇 태그** - 검색 엔진 크롤러의 동작을 제어할 로봇 태그를 선택합니다.
+
+      >[!NOTE]
+      >
+      >일부 옵션은 서로 충돌합니다. 충돌의 경우 보다 관대한 옵션이 우선합니다.
+
+   * **사이트 맵 생성** - 선택하면 이 페이지에 대해 sitemap.xml이 생성되고 하위 페이지가 생성됩니다
+
+### 이미지 {#images}
+
+* **추천 이미지**
+
+   표시할 이미지를 선택하고 구성합니다. 페이지를 참조하는 구성 요소에 사용됩니다. 티저, 페이지 목록 등과 같은 작업을 수행할 수 있습니다.
+
+   * **이미지**
+
+      다음을 수행할 수 있습니다 **선택** 자산을 선택하거나 업로드할 파일을 찾은 다음 **편집**, 또는 **지우기**.
+
+   * **대체 텍스트** - 이미지의 의미와 기능을 나타내는 데 사용되는 텍스트입니다. 예를 들어 화면 판독기에서 사용할 수 있습니다.
+
+   * **상속 - DAM 자산에서 가져온 값** - 이 옵션을 선택하면 `dc:description`DAM의 메타데이터
+
+* **썸네일**
+
+   페이지 썸네일 구성
+
+   * **미리보기 생성** - 썸네일로 사용할 페이지의 미리보기를 생성합니다.
+   * **이미지 업로드** - 썸네일로 사용할 이미지를 업로드합니다.
+   * **이미지 선택** - 썸네일로 사용할 기존 에셋을 선택합니다.
+   * **되돌리기** - 이 옵션은 썸네일에 변경 내용을 적용한 다음 사용할 수 있습니다. 변경 사항을 유지하지 않으려면 저장하기 전에 해당 변경 사항을 되돌릴 수 있습니다.
 
 ### 소셜 미디어 {#social-media}
 
@@ -156,12 +183,11 @@ ht-degree: 100%
 
 * **클라우드 서비스 구성** - 클라우드 서비스 속성을 정의합니다.
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### 개인화 {#personalization}
 
 * **ContextHub 구성**
+
+   * **상속됨 &lt;path>** - 상속 활성화/비활성화 가용성 전환 **ContextHub 경로** 및 **세그먼트 경로** 선택
 
    * **ContextHub 경로** - [ContextHub 구성](/help/sites-cloud/authoring/personalization/contexthub.md)을 정의합니다.
    * **세그먼트 경로** - [세그먼트 경로](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)를 정의합니다.
@@ -176,15 +202,9 @@ ht-degree: 100%
 
 * **권한**
 
-   * 권한 추가
-   * 폐쇄된 사용자 그룹 편집
-   * 유효 권한 보기
-
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * **권한 추가**
+   * **폐쇄된 사용자 그룹 편집**
+   * **유효 권한** 보기
 
 ### 블루프린트 {#blueprint}
 
@@ -195,6 +215,8 @@ ht-degree: 100%
 * **롤아웃 구성** - 수정 사항이 라이브 카피에 반영되는 상황을 제어합니다.
 
 ### 라이브 카피 {#live-copy}
+
+이 탭은 Live Copy로 구성된 페이지에만 표시됩니다.
 
 * **동기화** - 로컬 수정 사항을 유지하면서 라이브 카피와 블루프린트를 동기화합니다.
 * **재설정** - 로컬 수정 사항을 제거하고 라이브 카피를 블루프린트 상태로 재설정합니다.
@@ -220,6 +242,33 @@ ht-degree: 100%
 미리보기 환경이 활성화되어 있으면 다음이 표시됩니다.
 
 * 미리보기 URL - 미리보기 환경의 콘텐츠에 액세스하는 데 사용되는 URL
+
+### 점진적 웹 앱 {#progressive-web-app}
+
+이제 간단한 구성을 통해 콘텐츠 작성자는 AEM Sites에서 생성된 경험에 대해 점진적 웹 앱(PWA) 기능을 활성화할 수 있습니다.
+
+>[!NOTE]
+>
+>자세한 내용은 [점진적 웹 앱 기능 활성화](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **설치 가능한 경험 구성**
+
+   * **PWA 활성화** - 기능을 활성화/비활성화합니다. 을(를) PWA으로 설치할 수 있습니다.
+   * **StartupURL** - 기본 설정 시작 Url
+   * **표시 모드** - 브라우저를 숨기거나 로컬 장치에서 사용자에게 표시하는 방법
+   * **화면 방향** - PWA이 장치 방향을 처리하는 방법
+   * **테마 색상** - 로컬 사용자의 운영 체제가 기본 UI 도구 모음 및 탐색 컨트롤을 표시하는 방식에 영향을 주는 앱의 색상
+   * **배경색** - 앱이 로드될 때 표시되는 앱의 배경색
+   * **아이콘** - 사용자 장치의 앱을 나타내는 아이콘
+
+* **캐시 관리(고급)**
+
+   * **컨텐츠 새로 고침 빈도 및 캐싱 전략** - PWA의 캐싱 모델을 정의합니다.
+   * **오프라인 사용을 위해 캐시할 파일**
+      * **파일 사전 캐싱(기술 미리 보기)** - AEM에 호스팅된 파일은 서비스 작업자가 설치 중일 때와 사용되기 전에 로컬 브라우저 캐시에 저장됩니다
+      * **클라이언트 측 라이브러리** - 오프라인 환경을 위해 캐시할 클라이언트 측 라이브러리
+      * **경로 포함** - 정의된 경로에 대한 네트워크 요청이 가로채지고 캐시된 컨텐츠는 구성된 캐싱 전략 및 컨텐츠 새로 고침 빈도에 따라 반환됩니다
+      * **경로 제외** - 이러한 파일은 파일 사전 캐싱 및 경로 포함에 있는 설정에 관계없이 캐시되지 않습니다
 
 ## 페이지 속성 편집 {#editing-page-properties-1}
 
