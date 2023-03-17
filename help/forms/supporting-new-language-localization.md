@@ -3,10 +3,10 @@ title: 적응형 양식에 새 로케일 지원 추가
 seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms에서는 적응형 양식을 현지화하기 위해 새 로케일을 추가할 수 있습니다. 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(pt-BR), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일.
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 00fcdb3530a441bde2f7f91515aaaec341615a3f
 workflow-type: tm+mt
-source-wordcount: '1180'
-ht-degree: 0%
+source-wordcount: '1188'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 적응형 양식의 현지화는 다음 두 가지 로케일 사전 유형을 사용합니다.
 
-* **양식별 사전** 적응형 양식에 사용된 문자열을 포함합니다. 예를 들어 레이블, 필드 이름, 오류 메시지, 도움말 설명 등이 있습니다. 이 파일은 각 로케일에 대한 XLIFF 파일 세트로 관리되며, 여기에서 액세스할 수 있습니다 `[author-instance]/libs/cq/i18n/gui/translator.html`.
+* **양식별 사전** 적응형 양식에 사용된 문자열을 포함합니다. 예를 들어 레이블, 필드 이름, 오류 메시지, 도움말 설명이 있습니다. 이 파일은 각 로케일에 대한 XLIFF 파일 세트로 관리되며, 여기에서 액세스할 수 있습니다 `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
 * **글로벌 사전** AEM 클라이언트 라이브러리에는 JSON 개체로 관리되는 두 개의 글로벌 사전이 있습니다. 이러한 사전은 기본 오류 메시지, 월 이름, 통화 기호, 날짜 및 시간 패턴 등을 포함합니다. 이 사전은 `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. 이러한 위치에는 각 로케일에 대해 별도의 폴더가 있습니다. 글로벌 사전은 자주 업데이트되지 않으므로 각 로케일에 대해 별도의 JavaScript 파일을 유지하면 브라우저에서 캐싱하고 동일한 서버에서 다른 적응형 양식에 액세스할 때 네트워크 대역폭 사용을 줄일 수 있습니다.
 
@@ -26,8 +26,8 @@ AEM Forms은 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it)
 
 새 로케일에 대한 지원을 추가하는 단계는 다음을 수행합니다.
 
-1. [지원되지 않는 로케일에 대한 지역화 지원 추가](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
-1. [적응형 Forms에서 추가된 로케일 사용](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
+1. [지원되지 않는 로케일에 대한 지역화 지원 추가](#add-localization-support-for-non-supported-locales)
+1. [적응형 Forms에서 추가된 로케일 사용](#use-added-locale-in-af)
 
 ### 지원되지 않는 로케일에 대한 지역화 지원 추가 {#add-localization-support-for-non-supported-locales}
 
@@ -35,11 +35,11 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 적응형 Forms 런타임 시 새 로케일에 대한 지원을 추가하려면 다음을 수행합니다.
 
-1. [리포지토리 복제](#1-clone-the-repository-clone-the-repository)
-1. [GuideLocalizationService 서비스에 로케일 추가](#2-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
-1. [로케일 이름 특정 폴더 추가](#3-add-locale-name-specific-folder-client-library-add-locale-name-specific-folder)
-1. [사전에 대한 로케일 지원 추가](#about-locale-dictionaries-about-locale-dictionaries)
-1. [리포지토리에서 변경 사항을 커밋하고 파이프라인을 배포합니다.](#5-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-chnages-in-repo-deploy-pipeline)
+1. [리포지토리 복제](#clone-the-repository)
+1. [GuideLocalizationService 서비스에 로케일 추가](#add-a-locale-to-the-guide-localization-service)
+1. [로케일 이름 특정 폴더 추가](#add-locale-name-specific-folder)
+1. [사전에 대한 로케일 지원 추가](#add-locale-support-for-the-dictionary)
+1. [리포지토리에서 변경 사항을 커밋하고 파이프라인을 배포합니다.](#commit-changes-in-repo-deploy-pipeline)
 
 #### 1. 리포지토리 복제 {#clone-the-repository}
 
@@ -48,14 +48,13 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. Git 사용자 이름 및 암호를 사용하여 리포지토리를 복제합니다.
 1. 복제된 Forms Cloud Service 저장소 폴더를 기본 편집기에서 엽니다.
 
-#### 2. Guide Localization 서비스에 로케일을 추가합니다. {#add-a-locale-to-the-guide-localization-service-br}
+#### 2. Guide Localization 서비스에 로케일을 추가합니다. {#add-a-locale-to-the-guide-localization-service}
 
 1. 을(를) 찾습니다 `Guide Localization Service.cfg.json` 파일을 추가하고 지원되는 로케일 목록에 추가할 로케일을 추가합니다.
 
    >[!NOTE]
    >
-   >* 이름이 인 파일을 만듭니다. `Guide Localization Service.cfg.json` 파일(아직 없음)
-
+   > 이름이 인 파일을 만듭니다. `Guide Localization Service.cfg.json` 파일(아직 없음)
 
 #### 3. 로케일 이름 특정 폴더 클라이언트 라이브러리 추가 {#add-locale-name-specific-folder}
 
@@ -70,9 +69,9 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 * **js.txt** 다음 포함:
    */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
-##### 3.2. locale-name 폴더에 대한 적응형 양식 클라이언트 라이브러리 추가 {#add-adaptive-form-client-library-for-a-locale-br}
+##### 3.2. locale-name 폴더에 대한 적응형 양식 클라이언트 라이브러리 추가
 
-1. 이름이 인 노드 만들기 `[locale-name]_af` 을(를) 다음과 같이 입력합니다. `cq:ClientLibraryFolder` 아래에 `etc/clientlibs/locale_name`, 카테고리를 로 사용 `guides.I18N.<locale>` 및 종속 항목을 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`.
+1. 이름이 인 노드 만들기 `[locale-name]_af` 을(를) 다음과 같이 입력합니다. `cq:ClientLibraryFolder` 아래에 `etc/clientlibs/locale_name`, 카테고리를 로 사용 `guides.I18N.<locale>` 및 상관 관계 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`.
 1. 이름이 인 폴더를 만듭니다. `javascript` 및 다음 파일을 추가합니다.
 
    * **i18n.js** 정의 `guidelib.i18n`, &quot;calendarSymbol&quot; 패턴이 있는 경우 `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 대상 `<locale>` 에 설명된 대로 [로케일 집합 사양](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf).
@@ -85,7 +84,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
      LogMessages.js
    ```
 
-#### 4. 사전에 대한 로케일 지원 추가 {#add-locale-support-for-the-dictionary-br}
+#### 4. 사전에 대한 로케일 지원 추가 {#add-locale-support-for-the-dictionary}
 
 다음 경우에만 이 단계를 수행합니다. `<locale>` 을(를) 추가할 때 `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -95,20 +94,18 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. 추가 `<locale-name>` 기본 로케일 값 `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`: 아직 없는 경우.
 
 1. 추가 `<locale>` 의 값으로 `languages` 속성 `/etc/languages`.
+1. 새로 만든 폴더를 `filter.xml` etc/META-INF/[폴더 계층] 로서의:
 
-
-```text
-Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as:
-<filter root="/etc/clientlibs/[locale-name]"/>
-<filter root="/etc/languages"/>
-```
+   ```
+   <filter root="/etc/clientlibs/[locale-name]"/>
+   <filter root="/etc/languages"/>
+   ```
 
 변경 사항을 AEM Git 리포지토리에 커밋하기 전에 [Git 리포지토리 정보](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-#### 5. 리포지토리에서 변경 사항을 커밋하고 파이프라인을 배포합니다. {#commit-chnages-in-repo-deploy-pipeline}
+#### 5. 리포지토리에서 변경 사항을 커밋하고 파이프라인을 배포합니다. {#commit-changes-in-repo-deploy-pipeline}
 
 새 로케일 지원을 추가한 후 변경 사항을 GIT 리포지토리에 커밋합니다. 전체 스택 파이프라인을 사용하여 코드를 배포합니다. 학습 [파이프라인을 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 새 로케일 지원을 추가하려면
-
 파이프라인이 완료되면 새로 추가된 로케일이 AEM 환경에 나타납니다.
 
 ### 응용 Forms에서 추가된 로케일 사용 {#use-added-locale-in-af}
