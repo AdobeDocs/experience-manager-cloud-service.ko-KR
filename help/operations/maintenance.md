@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
+source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 75%
+source-wordcount: '1075'
+ht-degree: 74%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 75%
   <tr>
     <td>버전 삭제</td>
     <td>Adobe</td>
-    <td>기존 환경(2023년 3월 1일 이전에 만들어진 환경)의 경우, 제거를 사용할 수 없으며, 고객이 명시적으로 활성화하지 않는 한 향후에 제거가 활성화되지 않으며, 이 경우 사용자 지정 값으로 구성할 수도 있습니다.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->새 환경(2023년 3월 1일부터 작성됨)에는 고객이 사용자 지정 값으로 구성할 수 있으므로 아래 값으로 기본적으로 제거를 사용할 수 있습니다.
+    <td>기존 환경(2023년 6월 1일 이전에 만들어진 환경)의 경우, 지우기 는 고객이 명시적으로 활성화하지 않는 한 향후에 사용할 수 없으며, 이 경우 사용자 지정 값으로 구성할 수도 있습니다.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->새 환경(2023년 6월 1일부터 만들어짐)에는 기본적으로 아래 값으로 삭제가 활성화되며 고객은 사용자 지정 값으로 구성할 수 있습니다.
      <ol>
        <li>30일 넘는 구 버전 삭제</li>
        <li>지난 30일 이내 가장 최근의 5개 버전은 유지</li>
@@ -56,7 +56,7 @@ ht-degree: 75%
   <tr>
     <td>감사 로그 삭제</td>
     <td>Adobe</td>
-    <td>기존 환경(2023년 3월 1일 이전에 만들어진 환경)의 경우, 제거를 사용할 수 없으며, 고객이 명시적으로 활성화하지 않는 한 향후에 제거가 활성화되지 않으며, 이 경우 사용자 지정 값으로 구성할 수도 있습니다.<br><br> <!-- See above for the two line breaks -->새 환경(2023년 3월 1일부터 만들어짐)은 <code>/content</code> 다음 동작에 따라 저장소의 노드입니다.
+    <td>기존 환경(2023년 6월 1일 이전에 만들어진 환경)의 경우, 지우기 는 고객이 명시적으로 활성화하지 않는 한 향후에 사용할 수 없으며, 이 경우 사용자 지정 값으로 구성할 수도 있습니다.<br><br> <!-- See above for the two line breaks -->새 환경(2023년 6월 1일부터 만들어짐)은 <code>/content</code> 다음 동작에 따라 저장소의 노드입니다.
      <ol>
        <li>복제 감사의 경우, 3일 넘는 감사 로그 삭제</li>
        <li>DAM(애셋) 감사의 경우, 30일 넘는 감사 로그 삭제</li>
@@ -92,7 +92,7 @@ ht-degree: 75%
     <td>고객</td>
     <td>
     <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에서 속성을 생성하여 <code>/libs</code> 아래의 기본 제공 유지 관리 창 구성 노드를 오버라이드합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
-    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. OSGI 속성을 구성합니다.</p>
+    <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. "프로젝트 제거 구성 Adobe"에서 OSGI 속성 목록을 참조하십시오.</p>
   </td>
   </tr>
   </tbody>
