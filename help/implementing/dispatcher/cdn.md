@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 8%
+ht-degree: 12%
 
 ---
 
@@ -32,7 +32,7 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 
 >[!NOTE]
 >
->사용자 지정 도메인은 Cloud Manager에서 지원됩니다 **전용** AEM 관리 CDN을 사용하는 경우. CDN을 가져와서 [AEM 관리 CDN에 가리키기](#point-to-point-CDN) 해당 특정 CDN을 사용하여 Cloud Manager가 아닌 도메인을 관리해야 합니다.
+>사용자 정의 도메인은 AEM 관리 CDN을 사용하는 **경우에만** Cloud Manager에서 지원됩니다. 자체 CDN을 가져오고 [AEM 관리 CDN을 지정](#point-to-point-CDN)하는 경우 Cloud Manager가 아닌 도메인을 관리하려면 해당 특정 CDN을 사용해야 합니다.
 
 **트래픽 제한**
 

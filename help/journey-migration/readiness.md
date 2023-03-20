@@ -19,7 +19,7 @@ ht-degree: 7%
 
 AEM as a Cloud Service 마이그레이션 여정의 이 단계에서는 AEM을 숙지하고, 도입된 주목할 만한 변경 사항을 검토하고, 클라우드로 성공적인 마이그레이션을 계획하는 데 필요한 사항을 이해할 수 있습니다.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
 이전 문서 [AEM으로 이동 시작 as a Cloud Service](/help/journey-migration/getting-started.md)에서는 AEM as a Cloud Service으로 마이그레이션하기 위해 수행해야 하는 단계 목록과 이러한 작업의 이점을 간략하게 설명합니다.
 

@@ -4,8 +4,8 @@ description: Best Practices Analyzer 사용
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 42%
+source-wordcount: '2490'
+ht-degree: 41%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="모범 사례 분석기 사용"
 >abstract="모범 사례 분석기(이전 클라우드 준비 분석기)를 사용하기 위한 설명서 및 생성된 보고서를 검토하십시오. 모범 사례 분석기 보고서는 일반적인 업그레이드 준비 상태를 세부적으로 파악하는 데 사용됩니다."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[웨비나] Adobe Experience Manager as a Cloud Service에 대한 여정 시간을 단축하는 도구 소개"
 
 ## 모범 사례 분석기 사용에 대한 중요 고려 사항 {#imp-considerations}
 
@@ -28,12 +28,12 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 * BPA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
 
    >[!NOTE]
-자세한 내용은 [AEM 6.1에 설치](#installing-on-aem61) AEM 6.1에 BPA 설치를 위한 특별 요구 사항입니다.
+   > 자세한 내용은 [AEM 6.1에 설치](#installing-on-aem61) AEM 6.1에 BPA 설치를 위한 특별 요구 사항입니다.
 
 * BPA는 모든 환경에서 실행할 수 있지만 *단계* 환경.
 
    >[!NOTE]
-비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 BPA를 *작성자* 가능한 가까운 환경 *프로덕션* 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 환경입니다. 또는 프로덕션 *작성* 환경의 복제본에서 실행할 수 있습니다.
+   >비즈니스 크리티컬 인스턴스에 영향을 주지 않도록 BPA를 *작성자* 가능한 가까운 환경 *프로덕션* 사용자 지정, 구성, 컨텐츠 및 사용자 애플리케이션 영역의 환경입니다. 또는 프로덕션 *작성* 환경의 복제본에서 실행할 수 있습니다.
 
 * BPA 보고서 컨텐츠를 생성하는 데 몇 분에서 몇 시간 정도의 시간이 걸릴 수 있습니다. 필요한 시간은 AEM 저장소 컨텐츠, AEM 버전 및 기타 요소에 따라 크게 달라집니다.
 
@@ -41,15 +41,15 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 
 ## 사용 가능 {#availability}
 
-[!CONTEXTUALHELP]
-id="aemcloud_bpa_download"
-title="모범 사례 분석기 다운로드"
-abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다."
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_download"
+>title="모범 사례 분석기 다운로드"
+>abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 패키지 관리자를 통해 소스 AEM(Adobe Experience Manager) 인스턴스에 패키지를 설치할 수 있습니다."
 
 소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파일로 다운로드할 수 있습니다. 를 통해 패키지를 설치할 수 있습니다 [패키지 관리자](/help/implementing/developing/tools/package-manager.md) 소스 AEM(Adobe Experience Manager) 인스턴스에 배치합니다.
 
 >[!NOTE]
-에서 모범 사례 분석기 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털.
+>에서 모범 사례 분석기 다운로드 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 포털.
 
 ## 모범 사례 분석기 보고서 보기 {#viewing-report}
 
@@ -83,12 +83,12 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-를 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다 **보고서 새로 고침**.
+   >를 클릭하여 BPA가 캐시를 지우고 보고서를 다시 생성하도록 할 수 있습니다 **보고서 새로 고침**.
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-보고서를 다시 생성하는 동안 아래 그림과 같이 완료됨 백분율로 진행 상태가 표시됩니다.
+   >보고서를 다시 생성하는 동안 아래 그림과 같이 완료됨 백분율로 진행 상태가 표시됩니다.
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -103,14 +103,14 @@ abstract="소프트웨어 배포 포털에서 모범 사례 분석기를 zip 파
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-왼쪽 레일 아이콘은 BPA에서 ACS Commons 사용을 감지하는 경우에만 나타납니다.
+   > 왼쪽 레일 아이콘은 BPA에서 ACS Commons 사용을 감지하는 경우에만 나타납니다.
 
 1. ACS Commons와 관련된 모든 결과를 필터링하려면 상자를 선택 취소합니다. 다음 항목이 표시됩니다. **필터링된 검색 횟수** 를 클릭하십시오. 필터가 CSV(쉼표로 구분된 값) 형식으로 내보낼 때에도 보고서에 적용됩니다.
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-ACS Commons 결과는 무시되어서는 안 됩니다. 을(를) 참조하십시오. [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Service와의 호환성을 확인합니다.
+   > ACS Commons 결과는 무시되어서는 안 됩니다. 을(를) 참조하십시오. [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Service와의 호환성을 확인합니다.
 
 
 <!--
@@ -126,12 +126,12 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 
 ## 모범 사례 분석기 보고서 해석 {#cra-report}
 
-[!CONTEXTUALHELP]
-id="aemcloud_bpa_interpreting"
-title="모범 사례 분석기 보고서 해석"
-abstract="BPA 보고서 출력을 보는 두 가지 옵션이 있습니다. UI 및 CSV입니다. AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 UI 보고서가 도구 창의 결과로 표시됩니다. 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 카테고리 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="우수 사례 분석 보고서 검토"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="우수 사례 분석기 보고서 범주 이해"
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_interpreting"
+>title="모범 사례 분석기 보고서 해석"
+>abstract="BPA 보고서 출력을 보는 두 가지 옵션이 있습니다. UI 및 CSV입니다. AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 UI 보고서가 도구 창의 결과로 표시됩니다. 보고서의 CSV 형식에는 패턴 탐지기 출력에서 생성된 정보가 포함되어 있으며 카테고리 유형, 하위 유형 및 중요도 수준별로 정렬 및 구성됩니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="우수 사례 분석 보고서 검토"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="우수 사례 분석기 보고서 범주 이해"
 
 AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서가 도구 창의 결과로 표시됩니다.
 
@@ -148,7 +148,7 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
 작업의 대략적인 우선순위를 나타내기 위해 각 검색 결과에 중요도 수준이 지정됩니다.
 
 >[!NOTE]
-각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지기 카테고리](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>각 검색 카테고리에 대한 자세한 내용은 [패턴 탐지기 카테고리](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 아래 표에 따라 중요도 수준을 파악하십시오.
 

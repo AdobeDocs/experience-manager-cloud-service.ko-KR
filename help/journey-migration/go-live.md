@@ -1,15 +1,15 @@
 ---
-title: Go-Live
+title: 실행
 description: 코드와 컨텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
+source-git-commit: 7f43e09c411b0402701b5c65639ca988702ab75e
 workflow-type: tm+mt
 source-wordcount: '1729'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Go-Live {#go-live}
+# 실행 {#go-live}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_prep"
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 여정의 이 부분에서 코드와 컨텐츠가 AEM as a Cloud Service 으로 이동할 준비가 되면 마이그레이션을 계획하고 수행하는 방법을 알아봅니다. 또한 마이그레이션을 수행할 때 모범 사례와 알려진 제한 사항을 학습하게 됩니다.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
 여정의 이전 단계에서
 
@@ -117,7 +117,7 @@ AEM 소스의 부하가 추출 단계 중에 더 크게 된다는 것을 기억�
 
 * 기능 및 UI 테스트를 통해 종단 간 프로덕션 파이프라인을 실행하여 **항상 전류** AEM 제품 경험. 다음 리소스를 참조하십시오.
    * [AEM 버전 업데이트](/help/implementing/deploying/aem-version-updates.md)
-   * [사용자 지정 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [사용자 정의 기능 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
 * 컨텐츠를 프로덕션으로 마이그레이션하고 테스트용 스테이징에서 관련 하위 집합을 사용할 수 있는지 확인하십시오.
    * AEM에 대한 DevOps 우수 사례에서는 컨텐츠가 프로덕션 환경에서 아래로 이동하는 동안 코드가 개발 환경에서 프로덕션 환경으로 이동한다는 점을 참고하십시오.
@@ -145,8 +145,8 @@ AEM 소스의 부하가 추출 단계 중에 더 크게 된다는 것을 기억�
          * [SSL 인증서 관리](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * DNS(사용자 지정 도메인 이름) 관리
          * DNS 컷오버에서 예기치 않은 문제가 발생하지 않도록 하려면 라이브로 전환하고 UAT 테스트 라운드를 수행하기 전에 프로덕션 인스턴스를 연결하는 테스트 하위 도메인을 만드는 것이 가장 좋습니다. 따라서 도메인이 example.com인 경우 하위 도메인 test.example.com 을 만들어 프로덕션에 적용할 수 있습니다. 도메인을 UAT로 테스트하는 동안 적절한 링크 리디렉션, 캐싱 및 디스패처 구성과 같은 사항을 찾을 수 있습니다.
-         * [사용자 지정 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         * [맞춤형 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [사용자 정의 도메인 이름 소개](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [사용자 정의 도메인 이름 추가](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [사용자 지정 도메인 이름 관리](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
    * DNS 레코드에 대한 TTL 집합의 유효성을 검사해야 합니다.
       * TTL은 서버에서 업데이트를 요청하기 전에 DNS 레코드가 캐시에 남아 있는 시간입니다.

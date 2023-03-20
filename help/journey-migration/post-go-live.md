@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 23%
+ht-degree: 25%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 23%
 
 여정의 마지막 부분이므로 마이그레이션이 완료되면 문제를 모니터링하고 성능을 향상시키는 방법을 알아봅니다. 임시 파일을 정리하고, 지속적인 개발을 위한 우수 사례를 검토하고, 로그를 관리해야 합니다.
 
-## 지금까지의 이야기 {#story-so-far}
+## 지금까지의 스토리 {#story-so-far}
 
 여정의 이전 단계에서 마이그레이션 및 [Go-live](/help/journey-migration/go-live.md) 코드와 컨텐츠를 AEM as a Cloud Service으로 이동할 준비가 되면.
 
@@ -59,7 +59,7 @@ UI를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 
 >id="aemcloud_golive_support"
 >title="도움말 및 지원"
 >abstract="AEM 지원 팀에 문의하여 명확히 하거나 문제를 해결할 수 있습니다."
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
+>additional-url="https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
 
 Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 자세한 내용
 
@@ -73,7 +73,7 @@ Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 
 
 그런 다음 이러한 마이그레이션 후 지식을 조직 내의 이해 관계자 및 팀과 공유해야 합니다.
 
-## 여정이 끝나요? 아니면 끝나요? {#journey-ends}
+## 여정 종료 - 종료되었습니까? {#journey-ends}
 
 축하합니다! AEM as a Cloud Service 마이그레이션 여정을 완료했습니다! 다음 방법을 이해해야 합니다.
 

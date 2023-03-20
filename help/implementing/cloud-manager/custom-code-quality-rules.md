@@ -2,8 +2,8 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 2935338b847f7e852dfd31c93a61e737e8a3ec80
-workflow-type: ht
+source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+workflow-type: tm+mt
 source-wordcount: '3485'
 ht-degree: 100%
 
@@ -183,7 +183,7 @@ public void orDoThis() {
 * **심각도**: 주요
 * **이후**: 버전 2018.4.0
 
-`ResourceResolverFactory`에서 가져온 `ResourceResolver` 개체는 시스템 리소스를 사용합니다. `ResourceResolver`가 더 이상 사용되지 않을 때 이러한 리소스를 회수하는 방법이 있지만 `close()` 메서드를 호출하여 열려 있는 `ResourceResolver` 개체를 명시적으로 닫는 것이 더 효율적입니다.
+`ResourceResolverFactory`에서 가져온 `ResourceResolver` 오브젝트는 시스템 리소스를 사용합니다. `ResourceResolver`가 더 이상 사용되지 않을 때 이러한 리소스를 회수하는 방법이 있지만 `close()` 메서드를 호출하여 열려 있는 `ResourceResolver` 오브젝트를 명시적으로 닫는 것이 더 효율적입니다.
 
 비교적 일반적인 오해 중 하나는 기존 JCR 세션을 사용하여 생성된 `ResourceResolver` 오브젝트를 명시적으로 닫지 말아야 하거나 그렇게 하면 기본 JCR 세션이 닫힐 것이라는 것입니다. 이는 사실이 아닙니다. `ResourceResolver`를 여는 방법과 상관없이 더 이상 사용하지 않을 때는 닫아야 합니다. `ResourceResolver`는 `Closeable` 인터페이스를 구현하기 때문에 `close()`를 명시적으로 호출하는 대신 `try-with-resources` 구문을 사용하는 것도 가능합니다.
 

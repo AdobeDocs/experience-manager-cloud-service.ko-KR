@@ -50,7 +50,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 이 섹션에서는 [!DNL Experience Manager] 및 [!DNL Experience Manager] as a [!DNL Cloud Service]에서 제거된 기능이 나열됩니다.
 
-| 영역 | 기능 | 대체 | 목표 제거 날짜 |
+| 영역 | 특별 포함 | 대체 | 목표 제거 날짜 |
 | ------------ | ------------------ | ----------- | ------------------- |
 | 사용자 인터페이스 | 클래식 UI는 제품 사용자 인터페이스에서 제거됩니다. 링크 검사기, 버전 제거 및 일부 클라우드 서비스 구성과 같은 일부 선택 기능에서 몇 가지 클래식 UI 대화 상자를 사용할 수 있습니다. 예정된 [제품 업데이트](/help/release-notes/home.md) 이후에는 클래식 UI를 사용할 수 없습니다. | 표준 UI | 제거됨 |
 | [!DNL Dynamic Media] | [!DNL Experience Manager] as a [!DNL Cloud Service]에서 [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=ko-KR#integration)과 [Dynamic Media 하이브리드 모드](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=ko-KR#dynamic)와의 이전 통합을 사용할 수 없습니다. | [!DNL Experience Manager] as a [!DNL Cloud Service]에 제공되는 [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)를 사용하십시오. | 제거됨 |
