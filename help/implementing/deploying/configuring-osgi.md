@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service에 대한 OSGi 구성
 description: 암호 값 및 환경별 값으로 OSGi 구성
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3312'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ osgI 구성 파일은 다음 위치에 정의되어 있습니다.
 >
 >A `config.preview` OSGi 구성 폴더 **사용할 수 없음** 같은 방법으로 선언되다 `config.publish` 폴더를 선언할 수 있습니다. 대신 미리 보기 계층은 게시 계층의 값에서 해당 OSGi 구성을 상속합니다.
 
-로컬에서 개발할 때 실행 모드 시작 매개 변수 `-r`은 런타임 모드 OSGI 구성을 지정하는 데 사용됩니다.
+로컬에서 개발할 때 실행 모드 시작 매개변수 `-r`를 사용하여 실행 모드 OSGI 구성을 지정합니다.
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
@@ -165,7 +165,7 @@ Adobe Experience Manager as a Cloud Service에는 환경별 구성(`$[secret:SEC
 
 보안 환경별 구성을 사용하여 단계 및 프로덕션을 포함하여 모든 Adobe Experience Manager as a Cloud Service 환경에 기밀에 대한 값을 저장합니다.
 
-## OSGi 구성 만들기 {#creating-sogi-configurations}
+## OSGi 구성 만들기 {#creating-osgi-configurations}
 
 아래에 설명된 대로 OSGi 구성을 만드는 방법에는 두 가지가 있습니다. 이전의 접근 방식은 일반적으로 개발자가 잘 알려진 OSGi 속성 및 값을 가지고 있고 AEM에서 제공한 OSGi 구성 요소에 대해 후자가 있는 사용자 지정 OSGi 구성 요소를 구성하는 데 사용됩니다.
 
@@ -189,8 +189,8 @@ AEM SDK Quickstart Jar의 AEM Web Console을 사용하여 OSGi 구성 요소를 
 >
 >AEM 웹 콘솔의 구성 UI가 쓰기 작업을 수행합니다 `.cfg.json` 파일을 저장소에 저장합니다. 따라서 AEM 프로젝트 정의 OSGi 구성이 생성된 구성과 다를 수 있는 경우 로컬 개발 중에 예상치 못한 잠재적인 동작을 방지하기 위해 이러한 점에 유의하십시오.
 
-1. 관리 사용자로 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다
-1. OSGi > 구성으로 이동합니다.
+1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 관리자
+1. 다음으로 이동 **OSGi** > **구성**
 1. 구성하려면 OSGi 구성 요소를 찾아 편집할 제목을 누릅니다
    ![OSGi 구성](./assets/configuring-osgi/configuration.png)
 1. 필요에 따라 웹 UI를 통해 OSGi 구성 속성 값을 편집합니다

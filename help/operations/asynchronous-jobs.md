@@ -1,17 +1,17 @@
 ---
 title: 비동기 작업
-description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 비동기식으로 완료하여 성능을 최적화합니다.
+description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 백그라운드 작업으로 비동기식으로 완료하여 성능을 최적화합니다.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 98%
+source-wordcount: '971'
+ht-degree: 70%
 
 ---
 
 # 비동기 작업 {#asynchronous-operations}
 
-성능에 대한 부정적인 영향을 줄이기 위해 Adobe Experience Manager는 장시간 실행되는 특정 리소스 집약적인 작업을 비동기식으로 처리합니다. 비동기 처리에는 시스템 리소스의 가용성에 따라 여러 작업을 대기열에 넣고 이를 연속적으로 실행하는 작업이 포함됩니다.
+성능에 대한 부정적인 영향을 줄이기 위해 Adobe Experience Manager는 장시간 실행되는 특정 리소스 집약적인 작업을 백그라운드 작업처럼 비동기적으로 처리합니다. 비동기 처리에는 시스템 리소스의 가용성에 따라 여러 작업을 대기열에 넣고 이를 연속적으로 실행하는 작업이 포함됩니다.
 
 이러한 작업은 다음과 같습니다.
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 * 페이지 이동
 * Live Copy 롤아웃
 
-**전역 탐색** -> **도구** -> **작업** -> **작업**&#x200B;의 **[!UICONTROL 비동기 작업 상태]** 대시보드에서 비동기 작업 상태를 볼 수 있습니다.
+에서 비동기 작업 상태를 볼 수 있습니다 **[!UICONTROL 백그라운드 작업]** 대시보드 위치 **전역 탐색** -> **도구** -> **일반** -> **작업**.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ ht-degree: 98%
 
 AEM이 비동기 방식으로 작업을 처리할 때마다 [받은 편지함](/help/sites-cloud/authoring/getting-started/inbox.md) 및 이메일(활성화된 경우)을 통해 알림을 받게 됩니다.
 
-비동기 작업의 상태를 자세히 보려면 **[!UICONTROL 비동기 작업 상태]** 페이지로 이동합니다.
+비동기 작업의 상태를 자세히 보려면 **[!UICONTROL 백그라운드 작업]** 페이지.
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 작업]** > **[!UICONTROL 작업]**&#x200B;을 클릭합니다.
+1. Experience Manager 인터페이스에서 을 선택합니다. **전역 탐색** -> **도구** -> **일반** -> **작업**.
 
-1. **[!UICONTROL 비동기 작업 상태]** 페이지에서 작업 세부 사항을 검토합니다.
+1. 에서 **[!UICONTROL 백그라운드 작업]** 페이지에서 작업 세부 사항을 검토합니다.
 
    ![비동기 작업의 상태 및 세부 정보](assets/async-operation-status.png)
 
@@ -70,13 +70,22 @@ AEM이 비동기 방식으로 작업을 처리할 때마다 [받은 편지함](/
    >
    >상태가 **활성** 또는 **큐에 있음**&#x200B;인 경우 작업을 삭제할 수 없습니다.
 
-## 완료된 작업 제거 {#purging-completed-jobs}
+## 비동기 작업 처리 옵션 구성 {#configure}
+
+비동기 작업을 구성할 수 있는 여러 가지 옵션이 있습니다. 다음 예는 로컬 개발 시스템에서 구성 관리자를 사용하여 이 작업을 수행하는 방법을 보여줍니다.
+
+>[!NOTE]
+>
+>[OSGi 구성](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 는 변경할 수 있는 컨텐츠로 간주되며 그러한 구성은 프로덕션 환경을 위한 컨텐츠 패키지로 배포해야 합니다.
+
+### 완료된 작업 제거 {#purging-completed-jobs}
 
 AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완료된 비동기 작업을 삭제합니다.
 
 삭제 작업에 대한 일정 및 완료된 작업의 세부 사항이 삭제되기 전에 보존 기간을 수정할 수 있습니다. 특정 시점에 세부 사항이 유지되도록 완료된 작업의 최대 수를 구성할 수도 있습니다.
 
-1. 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
+1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 을 관리자 사용자로 전환합니다.
+1. 다음으로 이동 **OSGi** > **구성**
 1. **[!UICONTROL Adobe Granite 비동기 작업 제거 예약 작업]** 작업을 엽니다.
 1. 지정:
    * 완료된 작업을 삭제한 후 임계 기간(일)입니다.
@@ -87,15 +96,12 @@ AEM은 매일 01:00에 제거 작업을 실행하여 하루 이상 경과한 완
 
 1. 변경 사항을 저장합니다.
 
-## 비동기 처리 구성 {#configuring-asynchronous-processing}
-
-AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 특정 작업을 비동기적으로 처리하고 작업 처리 시 이메일 알림을 전환할 수 있습니다.
-
 ### 비동기 자산 삭제 작업 구성 {#configuring-synchronous-delete-operations}
 
 삭제할 자산 또는 폴더의 수가 임계값 수를 초과하는 경우 삭제 작업이 비동기적으로 수행됩니다.
 
-1. 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
+1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 을 관리자 사용자로 전환합니다.
+1. 다음으로 이동 **OSGi** > **구성**
 1. 웹 콘솔에서 **[!UICONTROL 비동기 프로세스 기본 큐 구성]**&#x200B;을 엽니다.
 1. **[!UICONTROL 자산 임계값 수]** 상자에서 삭제 작업의 비동기 처리를 위한 자산/폴더의 임계값 수를 지정합니다.
 
@@ -108,7 +114,8 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 
 이동할 자산/폴더 또는 참조 수가 임계값 수를 초과하는 경우 이동 작업이 비동기식으로 수행됩니다.
 
-1. 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
+1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 을 관리자 사용자로 전환합니다.
+1. 다음으로 이동 **OSGi** > **구성**
 1. 웹 콘솔에서 **[!UICONTROL 비동기 이동 작업 처리 구성]**&#x200B;을 엽니다.
 1. **[!UICONTROL 자산/참조 임계값 수]** 상자에서 이동 작업의 비동기 처리를 위한 자산/폴더 또는 참조의 임계값 수를 지정합니다.
 
@@ -121,7 +128,8 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 
 이동할 페이지에 대한 참조 수가 임계값 수를 초과하는 경우 이동 작업이 비동기식으로 수행됩니다.
 
-1. 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
+1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 을 관리자 사용자로 전환합니다.
+1. 다음으로 이동 **OSGi** > **구성**
 1. 웹 콘솔에서 **[!UICONTROL 비동기 페이지 이동 작업 처리 구성]**&#x200B;을 엽니다.
 1. **[!UICONTROL 참조 임계값 수]** 필드에서 페이지 이동 작업의 비동기 처리를 위한 참조 임계값 수를 지정합니다.
 
@@ -132,7 +140,8 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 
 ### 비동기 MSM 작업 구성 {#configuring-asynchronous-msm-operations}
 
-1. 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
+1. 에서 AEM SDK Quickstart Jar의 AEM 웹 콘솔에 로그인합니다. `https://<host>:<port>/system/console` 을 관리자 사용자로 전환합니다.
+1. 다음으로 이동 **OSGi** > **구성**
 1. 웹 콘솔에서 **[!UICONTROL 비동기 페이지 이동 작업 처리 구성]**&#x200B;을 엽니다.
 1. 이 작업 상태에 대한 이메일 알림을 수신하려면 **이메일 알림 활성화** 옵션을 선택합니다. 예: 성공, 실패
 
