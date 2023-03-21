@@ -2,7 +2,7 @@
 title: Best Practices Analyzer 사용
 description: Best Practices Analyzer 사용
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 41%
@@ -69,7 +69,6 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-
 1. BPA 보고서가 생성되면 요약 및 결과의 수가 검색 유형 및 중요도 수준별로 구성된 표 형식으로 표시됩니다. 특정 검색 결과에 대한 자세한 내용을 보려면 테이블에서 검색 유형에 해당하는 숫자를 클릭합니다.
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
@@ -92,8 +91,6 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
-
-
 #### 우수 사례 분석기 보고서에서 필터 사용 {#bpa-filters}
 
 관련 결과를 필터링하려면 [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), 아래 절차를 따르십시오.
@@ -111,7 +108,6 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 
    >[!NOTE]
    > ACS Commons 결과는 무시되어서는 안 됩니다. 을(를) 참조하십시오. [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Service와의 호환성을 확인합니다.
-
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -158,7 +154,6 @@ AEM 인스턴스에서 모범 사례 분석기 도구를 실행하면 보고서�
 | 권고 조치 | 이 검색 결과는 잠재적으로 업그레이드 문제가 될 수 있습니다. 추가 조사가 권장됩니다. |
 | 주요 | 이 검색 결과는 해결해야 하는 업그레이드 문제가 될 수 있습니다. |
 | 위험 | 이 검색 결과는 기능 또는 성능 손실을 방지하기 위해 해결해야 하는 업그레이드 문제가 될 가능성이 높습니다. |
-
 
 ## 우수 사례 분석기 CSV 보고서 해석 {#cra-csv-report}
 
