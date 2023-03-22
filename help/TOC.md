@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c37c1c3eca0ae9d457f422efdaf5e29be03e6014
+source-git-commit: 5f664b92d9e5ff31e90ce8a5d7c35db683c4ef03
 workflow-type: tm+mt
-source-wordcount: '4006'
+source-wordcount: '4005'
 ht-degree: 99%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 99%
    + 기타 온보딩 개념 {#concepts}
       + [Cloud Manager 소개](/help/onboarding/cloud-manager-introduction.md)
       + [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md)
-      + [알림 사용자 그룹](/help/journey-onboarding/user-groups.md)
+      + [알림 프로필](/help/journey-onboarding/notification-profiles.md)
 + AEMaaCS 체험판 {#trials}
    + Headless 체험판 {#headless}
       + [샘플 React 앱에서 콘텐츠 사용자 정의](/help/trials/headless/customize-app.md)
