@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5f664b92d9e5ff31e90ce8a5d7c35db683c4ef03
+source-git-commit: c5395c9c844744655054bb15e1b9b2178792b8b5
 workflow-type: tm+mt
-source-wordcount: '4005'
-ht-degree: 99%
+source-wordcount: '4011'
+ht-degree: 98%
 
 ---
 
@@ -964,6 +964,7 @@ ht-degree: 99%
 + 범용 편집기 {#universal-editor}
    + [범용 편집기 소개](/help/implementing/universal-editor/introduction.md)
    + [범용 편집기를 사용하여 컨텐츠 작성](/help/implementing/universal-editor/authoring.md)
+   + [범용 편집기를 사용하여 컨텐츠 게시](/help/implementing/universal-editor/publishing.md)
    + [AEM에서 범용 편집기 시작하기](/help/implementing/universal-editor/getting-started.md)
    + [범용 편집기 아키텍처](/help/implementing/universal-editor/architecture.md)
    + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)

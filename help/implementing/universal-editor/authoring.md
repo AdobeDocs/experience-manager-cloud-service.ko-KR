@@ -1,9 +1,9 @@
 ---
 title: 범용 편집기를 사용하여 컨텐츠 작성
 description: 컨텐츠 작성자가 범용 편집기를 사용하여 컨텐츠를 만드는 것이 얼마나 쉽고 직관적인지를 알아봅니다.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->범용 편집기는 아직 개발 중이며 현재 텍스트만 작성할 수 있습니다.
+>범용 편집기는 아직 개발 중이며 현재 모든 컨텐츠 유형을 편집할 수 없습니다.
 
 ## 앱 준비 {#prepare-app}
 
@@ -106,11 +106,11 @@ Experience Cloud 헤더는 항상 화면 맨 위에 있습니다. Experience Clo
 
 ![햄버거 메뉴](assets/hamburger-menu.png)
 
-#### 주소 표시줄 {#address-bar}
+#### 위치 표시줄 {#Location-bar}
 
-주소 표시줄에 편집 중인 페이지의 위치가 표시됩니다. 편집할 다른 페이지의 주소를 입력하려면 탭하거나 클릭하십시오.
+위치 모음에는 편집 중인 페이지의 주소가 표시됩니다. 편집할 다른 페이지의 주소를 입력하려면 탭하거나 클릭하십시오.
 
-![주소 표시줄](assets/address-bar.png)
+![위치 표시줄](assets/address-bar.png)
 
 >[!TIP]
 >
@@ -119,12 +119,6 @@ Experience Cloud 헤더는 항상 화면 맨 위에 있습니다. Experience Clo
 >[!NOTE]
 >
 >범용 편집기로 편집할 모든 페이지는 [범용 편집기를 지원하도록 계측되었습니다.](getting-started.md)
-
-#### 공동 작업 표시기 {#collaboration}
-
-범용 편집기에 동일한 페이지를 로드한 다른 작성자가 있는 경우 해당 작성자의 이미지가 표시됩니다. 이미지 위에 마우스를 올려 놓아 전체 사용자 이름을 확인합니다
-
-![공동 작업 표시기](assets/collaboration.png)
 
 #### 앱 미리 보기 열기 {#open-app-preview}
 
@@ -141,6 +135,10 @@ Experience Cloud 헤더는 항상 화면 맨 위에 있습니다. Experience Clo
 독자가 사용할 수 있도록 컨텐츠 변경 사항을 라이브로 게시하려면 게시 단추를 탭하거나 클릭합니다.
 
 ![게시 버튼](assets/publish.png)
+
+>[!TIP]
+>
+>문서를 참조하십시오 [범용 시각적 편집기를 사용하여 컨텐츠 게시](publishing.md) 범용 편집기를 사용한 게시에 대한 자세한 내용을 살펴보십시오.
 
 ### 레일 {#rail}
 
@@ -195,6 +193,7 @@ Experience Cloud 헤더는 항상 화면 맨 위에 있습니다. Experience Clo
 범용 편집기에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * [범용 편집기 소개](introduction.md) - 범용 편집기를 사용하면 모든 구현에서 컨텐츠의 모든 측면을 편집할 수 있어 뛰어난 경험을 제공하고 컨텐츠 속도를 높이며 최신 개발자 경험을 제공할 수 있습니다.
+* [범용 편집기를 사용하여 컨텐츠 게시](publishing.md) - 유니버설 시각적 편집기에서 콘텐츠를 게시하는 방법과 앱이 게시된 콘텐츠를 처리하는 방법을 알아봅니다.
 * [AEM에서 범용 편집기 시작하기](getting-started.md) - 범용 편집기에 액세스하는 방법과 첫 번째 AEM 앱 계측을 시작하여 이를 사용하는 방법을 알아봅니다.
 * [범용 편집기 아키텍처](architecture.md) - 범용 편집기의 아키텍처와 서비스 및 레이어 간에 데이터가 어떻게 이동되는지 알아봅니다.
 * [속성 및 유형](attributes-types.md) - 범용 편집기에 필요한 데이터 속성 및 유형에 대해 알아봅니다.

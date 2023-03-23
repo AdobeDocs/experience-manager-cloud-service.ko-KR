@@ -1,9 +1,9 @@
 ---
 title: AEM에서 범용 편집기 시작하기
 description: 범용 편집기에 액세스하는 방법과 첫 번째 AEM 앱 계측을 시작하여 이를 사용하는 방법을 알아봅니다.
-source-git-commit: acafa752c354781e41b11e46ac31a59feb8d94e7
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ import "@adobe/universal-editor-cors";
 
 ### 비반응 앱에 대한 대체 요소 {#alternative}
 
-React 앱을 구현하지 않거나, 서버측 렌더링이 필요한 경우 및 대체 방법은 문서 본문에 다음 내용을 포함하는 것입니다.
+React 앱을 구현하지 않거나, 서버측 렌더링이 필요한 경우, 대체 방법은 문서 본문에 다음 내용을 포함하는 것입니다.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -157,50 +157,6 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### 범용 편집기 번역 서비스 {#translation}
-
-범용 편집기는 계측 메타데이터를 기반으로 변환을 수행합니다.
-
-#### 기본 번역 원칙 {#principle}
-
-앞의 예에서 다음 선택을 고려하십시오.
-
-```html
-<meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-```
-
-편집기가 교체 및 내부 작업을 수행합니다 `itemid` 은 다음 사항에 다시 작성됩니다.
-
-```html
-itemid="urn:aem:https://localhost:4502/content/example/list"
-```
-
-이 경우 용어 `aemconnection` 의 컨텐츠로 대체되는 `<meta>` 태그에 가깝게 포함했습니다.
-
-#### 쿼리 선택기 {#query-selector}
-
-이 대체 항목은 John Smith에 대한 다음 쿼리 문자열로 이어집니다.
-
-```html
-<ul itemscope itemid="urn:aemconnection:/content/example/list" itemtype="urn:fcs:type/list">
-  <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="urn:fcs:type/fragment">.  
-    <p itemprop="name" itemtype="text">John Smith</p>
-    <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
-    <img itemprop="avatar" src="urn:fcs:missing" itemtype="image" alt="avatar"/>
-  </li>
-```
-
-`[itemid="urn:fcs:https://example.franklin.adobe.com/345fcdd/content/example/list][itemprop="name"]`
-
-John Smith의 타일을 변경하려면 선택기가 다음과 같습니다.
-
-`[itemid="urn:aem:https://localhost:4502/content/example/another-source"][itemprop="title"]`
-
-상속 대신 `itemid`및 리소스에서 범용 편집기는 범위에서 작동합니다. 범위는 노드 수준에서 정의될 수 있으며 전체 하위 구조에 의해 상속될 수 있습니다.
-
-구조 내의 하위 구조체 또는 정의된 레프트를 위해 다른 범위가 필요한 경우 다른 구조가 필요합니다 `itemid` 정의할 수 있습니다.
-
 ## 범용 편집기를 사용할 준비가 되었습니다. {#youre-ready}
 
 이제 앱이 범용 편집기를 사용하도록 구현되었습니다!
@@ -213,6 +169,7 @@ John Smith의 타일을 변경하려면 선택기가 다음과 같습니다.
 
 * [범용 편집기 소개](introduction.md) - 범용 편집기를 사용하면 모든 구현에서 컨텐츠의 모든 측면을 편집할 수 있어 뛰어난 경험을 제공하고 컨텐츠 속도를 높이며 최신 개발자 경험을 제공할 수 있습니다.
 * [범용 편집기를 사용하여 컨텐츠 작성](authoring.md) - 컨텐츠 작성자가 범용 편집기를 사용하여 컨텐츠를 만드는 것이 얼마나 쉽고 직관적인지를 알아봅니다.
+* [범용 편집기를 사용하여 컨텐츠 게시](publishing.md) - 유니버설 시각적 편집기에서 콘텐츠를 게시하는 방법과 앱이 게시된 콘텐츠를 처리하는 방법을 알아봅니다.
 * [범용 편집기 아키텍처](architecture.md) - 범용 편집기의 아키텍처와 서비스 및 레이어 간에 데이터가 어떻게 이동되는지 알아봅니다.
 * [속성 및 유형](attributes-types.md) - 범용 편집기에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 * [범용 편집기 인증](authentication.md) - 유니버설 편집기가 인증되는 방법을 알아봅니다.

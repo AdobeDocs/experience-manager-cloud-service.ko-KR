@@ -1,9 +1,9 @@
 ---
 title: Universal Visual Editor 소개
 description: 범용 편집기(범용 편집기)를 사용하여 헤드리스 및 헤드리스 환경에서 WYSIWYG(What-You-See-is-what-you-get) 편집을 활성화하는 방법을 알아봅니다. 컨텐츠 작성자가 우수한 경험을 제공하고 컨텐츠 속도를 높이며 최신 개발자 경험을 제공하는 방법에 대해 파악하는 것이 가능합니다.
-source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,7 @@ AEM 컨텐츠 작성자에게 가장 강력한 도구는 페이지 편집기입�
 범용 편집기에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * [범용 편집기를 사용하여 컨텐츠 작성](authoring.md) - 컨텐츠 작성자가 범용 편집기를 사용하여 컨텐츠를 만드는 것이 얼마나 쉽고 직관적인지를 알아봅니다.
+* [범용 편집기를 사용하여 컨텐츠 게시](publishing.md) - 유니버설 시각적 편집기에서 콘텐츠를 게시하는 방법과 앱이 게시된 콘텐츠를 처리하는 방법을 알아봅니다.
 * [AEM에서 범용 편집기 시작하기](getting-started.md) - 범용 편집기에 액세스하는 방법과 첫 번째 AEM 앱 계측을 시작하여 이를 사용하는 방법을 알아봅니다.
 * [범용 편집기 아키텍처](architecture.md) - 범용 편집기의 아키텍처와 서비스 및 레이어 간에 데이터가 어떻게 이동되는지 알아봅니다.
 * [속성 및 유형](attributes-types.md) - 범용 편집기에 필요한 데이터 속성 및 유형에 대해 알아봅니다.

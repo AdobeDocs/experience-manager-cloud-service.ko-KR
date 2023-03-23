@@ -1,9 +1,9 @@
 ---
 title: 범용 편집기 아키텍처
 description: 범용 편집기의 아키텍처와 서비스 및 레이어 간에 데이터가 이동하는 방식에 대해 알아봅니다.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '662'
 ht-degree: 1%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 1%
 
 * [범용 편집기 소개](introduction.md) - 범용 편집기를 사용하면 모든 구현에서 컨텐츠의 모든 측면을 편집할 수 있어 뛰어난 경험을 제공하고 컨텐츠 속도를 높이며 최신 개발자 경험을 제공할 수 있습니다.
 * [범용 편집기를 사용하여 컨텐츠 작성](authoring.md) - 컨텐츠 작성자가 범용 편집기를 사용하여 컨텐츠를 만드는 것이 얼마나 쉽고 직관적인지를 알아봅니다.
+* [범용 편집기를 사용하여 컨텐츠 게시](publishing.md) - 유니버설 시각적 편집기에서 콘텐츠를 게시하는 방법과 앱이 게시된 콘텐츠를 처리하는 방법을 알아봅니다.
 * [AEM에서 범용 편집기 시작하기](getting-started.md) - 범용 편집기에 액세스하는 방법과 첫 번째 AEM 앱 계측을 시작하여 이를 사용하는 방법을 알아봅니다.
 * [속성 및 유형](attributes-types.md) - 범용 편집기에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 * [범용 편집기 인증](authentication.md) - 유니버설 편집기가 인증되는 방법을 알아봅니다.
