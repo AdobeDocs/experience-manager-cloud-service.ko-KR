@@ -1,19 +1,19 @@
 ---
 title: AEM Headless 소개
-description: 상세한 설명서와 Headless 여정의 결합을 통해 Adobe Experience Manager(AEM)의 Headless에 대해 알아봅니다. 콘텐츠 모델, 콘텐츠 조각, GraphQL API와 같은 기능을 사용하여 Headless 경험을 제공하는 방법을 알아봅니다.
+description: 상세한 설명서와 Headless 여정의 결합을 통해 Adobe Experience Manager(AEM)의 Headless에 대해 알아봅니다. 컨텐츠 조각 모델, 컨텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 헤드리스 경험을 제공하는 방법을 알아봅니다.
 landing-page-description: Adobe Experience Manager as a Cloud Service에서 Headless를 사용하고 관리하는 방법을 이해합니다.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
+source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 76%
 
 ---
 
 
 # Adobe Experience Manager as a Headless CMS 소개 {#introduction-aem-headless}
 
-규모에 맞게 Headless 경험을 지원하는 콘텐츠 모델, 콘텐츠 조각 및 GraphQL API와 같은 기능을 사용하여 Adobe Experience Manager(AEM) as a Headless CMS를 사용하는 방법에 대해 알아봅니다.
+AEM(Adobe Experience Manager)을 컨텐츠 조각 모델, 컨텐츠 조각 및 헤드리스 경험을 규모에 맞게 결합하는 GraphQL API와 같은 기능과 함께 헤드리스 CMS(컨텐츠 관리 시스템)로 사용하는 방법을 알아봅니다.
 
 관련된 다양한 기능에 대한 자세한 설명서를 읽어보고 [첫 번째 단계에 대한 개요를 살펴보기 위한 Headless 여정](#first-steps)을 따를 수 있습니다.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 AEM Headless는 GraphQL을 사용한 HTTP를 통해 AEM의 구조화된 콘텐츠(콘텐츠 조각)를 모든 앱에서 사용할 수 있도록 하는 Experience Manager의 CMS 솔루션입니다. Headless 구현을 통해 플랫폼과 채널 전반에 걸쳐 대규모로 경험을 전달할 수 있습니다.
 
-Headless 구현은 전체 스택 및 하이브리드 솔루션의 기존 방식과 마찬가지로 페이지 및 구성 요소 관리를 생략하고 채널 중립적이고 재사용 가능한 콘텐츠 조각 생성 및 크로스 채널 게재에 중점을 둡니다. 웹 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
+전체 스택 및 하이브리드 솔루션에서와 마찬가지로 페이지 및 구성 요소 관리를 위한 헤드리스 구현입니다. 대신 채널 중립적이고 재사용 가능한 컨텐츠 조각 만들기 및 채널 간 게재에 중점을 둡니다. 웹 경험을 구현하기 위한 현대적이고 동적인 개발 패턴입니다.
 
 ![AEM 구현 모델](assets/aem-implementation-models.png)
 
@@ -33,14 +33,14 @@ Headless 구현은 전체 스택 및 하이브리드 솔루션의 기존 방식�
 
 AEM as a Cloud Service는 다음과 같은 세 가지 강력한 기능을 제공하는 Headless 구현 모델을 위한 유연한 도구입니다.
 
-1. **콘텐츠 모델**
-   * 콘텐츠 모델은 콘텐츠를 구조적으로 표시한 것입니다.
-   * 콘텐츠 모델은 AEM 콘텐츠 조각 모델 편집기에서 정보 설계자가 정의합니다.
-   * 콘텐츠 모델은 콘텐츠 조각의 기초 역할을 합니다.
+1. **콘텐츠 조각 모델**
+   * 컨텐츠 조각 모델은 컨텐츠의 구조화된 표현입니다.
+   * 컨텐츠 조각 모델은 AEM 컨텐츠 조각 모델 편집기에서 정보 설계자에 의해 정의됩니다.
+   * 컨텐츠 조각 모델은 컨텐츠 조각의 토대 역할을 합니다.
 1. **콘텐츠 조각**
-   * 콘텐츠 조각은 콘텐츠 모델을 기반으로 만들어집니다.
-   * AEM 콘텐츠 조각 편집기를 사용하여 콘텐츠 작성자가 만듭니다.
-   * 콘텐츠 조각은 AEM Assets에 저장되고 Assets Admin UI에서 관리됩니다.
+   * 컨텐츠 조각은 컨텐츠 조각 모델을 기반으로 만들어집니다.
+   * 컨텐츠 조각은 AEM 컨텐츠 조각 편집기를 사용하여 컨텐츠 작성자가 작성합니다.
+   * 컨텐츠 조각은 AEM Assets으로 저장되지만 자산 콘솔 또는 [컨텐츠 조각 콘솔](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
 1. **게재를 위한 콘텐츠 API**
    * AEM GraphQL API는 콘텐츠 조각 게재를 지원합니다.
    * AEM Assets REST API는 콘텐츠 조각 CRUD 작업을 지원합니다.
