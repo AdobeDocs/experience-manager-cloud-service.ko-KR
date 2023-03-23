@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 25%
+ht-degree: 39%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 문제 해결"
->abstract="개발자 콘솔 및 CRXDE Lite과 같은 도구와 함께 지속적인 개발에 대한 우수 사례를 검토하고 로그를 관리하여 AEM의 문제 해결을 지원합니다"
+>abstract="지속적인 개발을 목적으로 모범 사례를 검토하고 개발자 콘솔 및 CRXDE Lite 등의 도구와 함께 로그를 관리하여 AEM 문제를 해결할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="로그 액세스 및 관리"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 개발 도구"
 
@@ -58,7 +58,7 @@ UI를 통해 또는 Cloud Manager를 통해 API에서 로그에 액세스하고 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="도움말 및 지원"
->abstract="AEM 지원 팀에 문의하여 명확히 하거나 문제를 해결할 수 있습니다."
+>abstract="자세한 설명이 필요하거나 문제를 해결하려면 AEM 지원 팀에 문의하십시오."
 >additional-url="https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html" text="Experience Cloud 지원"
 
 Cloud Service 액세스에 대한 질문이 있는 경우 Adobe 담당자에게 문의하거나 [Experience Cloud 지원](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html) 자세한 내용

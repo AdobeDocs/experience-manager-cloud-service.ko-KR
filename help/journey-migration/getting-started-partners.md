@@ -5,7 +5,7 @@ exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 14%
+ht-degree: 21%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
 >title="AEM as a cloud Service로 마이그레이션"
->abstract="다양한 Experience Manager 배포에서 Experience Manager as a Cloud Service으로 고객을 전환하고 기존 고객이 연결되고 지속적인 경험을 제공할 수 있도록 지원하기 위해 권장되는 단계별 접근 방식을 간략하게 설명합니다"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="새로운 기능 및 다른 기능"
+>abstract="고객을 다양한 Experience Manager 배포에서 Experience Manager as a Cloud Service로 전환하고, 기존 고객이 연결된 경험을 지속적으로 제공할 수 있도록 지원하는 단계적 접근 방식에 대해 설명합니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="새로운 기능 및 차이점은?"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html" text="AEM as a Cloud Service 소개."
 
 Adobe Experience Manager(AEM) as a Cloud Service은 컨테이너 기반 인프라, API 기반 개발 및 DevOps 프로세스를 기반으로 구축된 Experience Manager을 위한 재설계 기반을 제공하므로 마케터와 개발자는 고객 경험 관리 혁신에서 항상 앞서나갈 수 있습니다.
 
 Cloud Service은 브랜드가 항상 진화하는 소비자 요구를 충족할 수 있도록 최신 클라우드 기본 아키텍처의 민첩성을 통해 Adobe Experience Manager의 다양한 기본 기능 및 확장성을 제공합니다.
 
-이 안내서는 다양한 Experience Manager 배포에서 Experience Manager as a Cloud Service으로 고객을 전환하고 기존 고객이 최신 맞춤형 경험 관리를 위한 연결 및 지속적인 경험을 제공할 수 있도록 지원하기 위한 권장 단계적 접근 방식을 간략하게 설명합니다.
+이 한 페이지 분량의 문서에서는 고객을 다양한 Experience Manager 배포에서 Experience Manager as a Cloud Service로 전환하고 기존 고객이 경험 관리를 위해 특별히 제작된 이 현대적인 플랫폼에서 연결된 경험을 지속적으로 제공할 수 있도록 지원하는 단계적 접근 방식에 대해 설명합니다.
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -101,12 +101,12 @@ AEM as a Cloud Service 환경을 구성 및 배포하는 방법에 대한 자습
 
 <br>
 
-## Adobe Experience Manager as a Cloud Service으로 이동 {#move-to-cloud}
+## Adobe Experience Manager as a Cloud Service로 이동 {#move-to-cloud}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_move_to_cloud"
->title="Adobe Experience Manager as a Cloud Service으로 이동"
->abstract="이 안내서는 다양한 Experience Manager 배포에서 Experience Manager as a Cloud Service으로 고객을 전환하고 기존 고객이 최신 맞춤형 경험 관리를 위한 연결 및 지속적인 경험을 제공할 수 있도록 지원하기 위한 권장 단계적 접근 방식을 간략하게 설명합니다."
+>title="Adobe Experience Manager as a Cloud Service로 이동"
+>abstract="이 한 페이지 분량의 문서에서는 고객을 다양한 Experience Manager 배포에서 Experience Manager as a Cloud Service로 전환하고 기존 고객이 경험 관리를 위해 특별히 제작된 이 현대적인 플랫폼에서 연결된 경험을 지속적으로 제공할 수 있도록 지원하는 단계적 접근 방식에 대해 설명합니다."
 
 **Experience Manager as a Cloud Service은 Experience Manager Sites 및 자산에 확장 가능하고 안전하며 민첩한 기술 기반을 제공하므로 마케터와 IT 담당자가 규모에 맞게 효과적인 경험을 전달하는 데 주력할 수 있습니다.**
 
