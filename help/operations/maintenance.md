@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service에서의 유지 관리 작업
 description: AEM as a Cloud Service에서의 유지 관리 작업
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
+source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 74%
+ht-degree: 67%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 74%
     <td>애드혹 작업 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에서 속성을 생성하여 <code>/libs</code> 아래의 기본 제공 유지 관리 창 구성 노드를 오버라이드합니다.</p>
+    <p>git에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 만들면 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code>.</p>
     <p>추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오. 위의 노드 아래에 다른 노드를 추가하여 유지 관리 작업을 활성화합니다. 이름을 지정합니다 <code>granite_TaskPurgeTask</code>, 속성 사용 <code>sling:resourceType</code> 설정 <code>granite/operations/components/maintenance/task</code> 및 속성 <code>granite.maintenance.name</code> 설정 <code>TaskPurge</code>. OSGI 속성을 구성합니다. <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> 를 입력합니다.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ ht-degree: 74%
     <td>워크플로 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에서 속성을 생성하여 <code>/libs</code> 아래의 기본 제공 유지 관리 창 구성 노드를 오버라이드합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 만들면 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code>. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
     <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_WorkflowPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. OSGI 속성을 구성합니다. <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5 유지 관리 작업 문서</a>를 참조하십시오.</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ ht-degree: 74%
     <td>프로젝트 삭제</td>
     <td>고객</td>
     <td>
-    <p>git에서 수행해야 합니다. <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> 또는 <code>granite_daily</code> 폴더 아래에서 속성을 생성하여 <code>/libs</code> 아래의 기본 제공 유지 관리 창 구성 노드를 오버라이드합니다. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
+    <p>git에서 수행해야 합니다. 아래의 기본 제공 유지 관리 창 구성 노드 재정의 <code>/libs</code> 폴더 아래에 속성을 만들면 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> 또는 <code>granite_monthly</code>. 추가적인 구성 세부 정보는 아래의 유지 관리 창 표를 참조하십시오.</p>
     <p>적절한 속성을 사용해 위 노드 아래에서 또 다른 노드를 추가하여(<code>granite_ProjectPurgeTask</code>로 이름 지정) 유지 관리 작업을 활성화합니다. "프로젝트 제거 구성 Adobe"에서 OSGI 속성 목록을 참조하십시오.</p>
   </td>
   </tr>
@@ -132,12 +132,12 @@ ht-degree: 74%
     <td>고객</td>
     <td>JCR 노드 정의</td>
     <td>
-    <p><strong>windowSchedule=daily</strong>(이 값은 변경해서는 안 됨)</p>
+    <p><strong>windowSchedule=monthly</strong> (이 값은 변경할 수 없습니다.)</p>
     <p>24시간 시계로 사용하는 <strong>windowStartTime=HH:MM</strong>입니다. 월별 유지 관리 창과 연계된 유지 관리 작업을 실행해야 하는 시점을 정의합니다.</p>
     <p>24시간 시계로 사용하는 <strong>windowEndTime=HH:MM</strong>입니다. 월별 유지 관리 창과 연계된 유지 관리 작업이 완료된 상태가 아닌 경우 실행을 정지해야 하는 시점을 정의합니다.</p>
     <p><strong>windowScheduleWeekle=1-7에서 2개의 값 배열(예: [5,5])</strong> 배열의 첫 번째 값은 작업이 예약되는 시작일이고 두 번째 값은 작업이 중지되는 종료일입니다. 정확한 시작 및 종료 시간은 각각 windowStartTime과 windowEndTime이 제어합니다.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0은 당월의 첫째 주에 예약하는 것이며 1은 당월 마지막 주에 예약하는 것을 뜻합니다. 아무 값도 없을 경우, 매월 windowScheduleWeekdays의 제어에 따라 매일 효과적으로 작업을 예약합니다.</p>
-    </td> 
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0은 당월의 첫째 주에 예약하는 것이며 1은 당월 마지막 주에 예약하는 것을 뜻합니다. 값이 없으면 windowScheduleWeekle(매월)이 적용되는 날에 효과적으로 작업을 예약할 수 있습니다.</p>
+    </td>
     </tr>
     </tbody>
 </table>
