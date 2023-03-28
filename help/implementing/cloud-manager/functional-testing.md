@@ -3,9 +3,9 @@ title: 기능 테스트
 description: 코드의 품질과 신뢰성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아봅니다.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1124'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,14 +37,14 @@ AEM as a Cloud Service의 기능 테스트에는 세 가지 유형이 있습니�
 
 제품 기능 테스트는 작성 및 복제 작업과 같은 AEM의 핵심 기능에 대한 안정적인 HTTP 통합 테스트(IT) 세트입니다. 이러한 테스트는 Adobe에서 유지 관리하며 핵심 기능이 손상된 경우 사용자 정의 애플리케이션 코드에 대한 변경 사항이 배포되는 것을 방지하기 위함이 목적입니다.
 
-* [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): 제품 기능 테스트는 Cloud Manager에 새 코드를 배포할 때마다 자동으로 실행되며 건너뛸 수 없습니다.
-* [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): 비프로덕션 파이프라인을 실행할 때마다 실행하도록 제품 기능 테스트를 선택적으로 선택할 수 있습니다.
+* [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): 제품 기능 테스트는 새 코드를 Cloud Manager에 배포할 때마다 자동으로 실행되며 건너뛸 수 없습니다.
+* [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): 비프로덕션 파이프라인을 실행할 때마다 실행되도록 제품 기능 테스트를 선택적으로 선택할 수 있습니다.
 
 제품 기능 테스트는 오픈 소스 프로젝트로 유지 관리됩니다. 자세한 내용은 GitHub의 [제품 기능 테스트](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 문서를 참조하십시오.
 
 ### 사용자 정의 기능 테스트 {#custom-functional-testing}
 
-제품 기능 테스트는 Adobe에 의해 정의되지만 자체 애플리케이션에 대한 자체 품질 테스트를 작성할 수 있습니다. 이 작업은 의 일부로 사용자 지정 기능 테스트로 실행됩니다 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 또는 원할 경우 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 응용 프로그램의 품질을 확인합니다.
+제품 기능 테스트는 Adobe에 의해 정의되지만 자체 애플리케이션에 대한 자체 품질 테스트를 작성할 수 있습니다. 이는 애플리케이션 품질을 보장하기 위해 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)의 일부이거나 선택적으로 [비프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)의 일부인 사용자 정의 기능 테스트로 실행됩니다.
 
 사용자 정의 기능 테스트는 사용자 정의 코드 배포와 푸시 업그레이드 모두에 대해 실행되므로 AEM 코드 변경으로 인해 애플리케이션 코드가 손상되지 않도록 우수한 기능 테스트를 작성하는 것이 특히 중요합니다. 사용자 정의 기능 테스트 단계는 항상 존재하며 건너뛸 수 없습니다.
 
@@ -143,7 +143,7 @@ Cloud Manager의 테스트는 기술 관리 사용자를 통해 실행됩니다.
 
 테스트 클래스는 JUnit 테스트이므로 Eclipse, IntelliJ, NetBeans와 같은 주요 Java IDE에서 실행할 수 있습니다. 제품 기능 테스트와 사용자 정의 기능 테스트는 모두 동일한 기술을 기반으로 하므로 둘 다 제품 테스트를 사용자 정의 테스트에 복사하여 로컬로 실행할 수 있습니다.
 
-그러나 이러한 테스트를 실행할 때 `aem-testing-clients`(및 기본 Sling 테스트 클라이언트) 라이브러리에서 예상하는 다양한 시스템 속성을 설정해야 합니다.
+단, 이러한 테스트를 실행할 때 `aem-testing-clients`(및 기본 Sling 테스트 클라이언트) 라이브러리에서 예상하는 다양한 시스템 속성을 설정해야 합니다.
 
 시스템 속성은 다음과 같습니다.
 
