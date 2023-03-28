@@ -4,7 +4,7 @@ description: AEM Forms를 살펴보고 업무용 양식 및 문서 콘텐츠를 
 landing-page-description: AEM as a Cloud Service에서 양식을 사용하는 방법을 이해합니다.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
 ht-degree: 100%
 
