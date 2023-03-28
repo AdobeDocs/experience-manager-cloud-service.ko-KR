@@ -3,9 +3,9 @@ title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2147'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM은 사용자 정의 애플리케이션에 대한 원활한 업데이트를 �
 
 UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 빌드된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
 
-UI 테스트는 [**사용자 지정 UI 테스트** 단계](/help/implementing/cloud-manager/deploy-code.md) in [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 또는 원할 경우 [비프로덕션 파이프라인.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 회귀 및 새로운 기능을 포함한 모든 UI 테스트를 통해 오류를 감지하고 보고할 수 있습니다.
+UI 테스트는 [프로덕션 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)의 [**사용자 정의 UI 테스트** 단계](/help/implementing/cloud-manager/deploy-code.md)를 통해 또는 선택적으로 [비프로덕션 파이프라인의 같은 단계를 통해 각 Cloud Manager 파이프라인에 대한 특정 품질 게이트의 일부로 실행됩니다.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 회귀 및 새로운 기능을 포함한 모든 UI 테스트를 통해 오류를 감지하고 보고할 수 있습니다.
 
 Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 UI 테스트는 [UI 테스트 빌드](#building-ui-tests) 섹션에 정의된 규칙을 따르는 한 모든 언어로 작성된 테스트가 포함된 도커 이미지가 될 수 있습니다.
 
