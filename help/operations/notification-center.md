@@ -3,7 +3,7 @@ title: 알림 센터
 description: 알림 센터를 활용하여 인시던트 및 기타 중요한 정보에 대해 편리하게 조치
 hidefromtoc: true
 source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
 
