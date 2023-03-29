@@ -1,48 +1,45 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 최신 유지 관리 릴리스 정보입니다.'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 최신 유지 관리 릴리스 정보입니다.'
-source-git-commit: edb8949b532b80a55106e706a49e2ada68722a67
+title: 의 현재 유지 관리 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
+description: 의 현재 유지 관리 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
+source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 100%
+source-wordcount: '265'
+ht-degree: 36%
 
 ---
 
 
 # 유지 관리 릴리스 정보 {#maintenance-release-notes}
 
-다음 섹션에서는 Experience Manager as a Cloud Service 최신 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
+다음 섹션에서는 Experience Manager as a Cloud Service의 현재 유지 관리 릴리스에 대한 기술 릴리스 노트를 간략하게 설명합니다.
 
-## 릴리스 11289 {#release-11289}
+## 릴리스 11382 {#release-11382}
 
-2023년 3월 7일에 릴리스된 유지 관리 릴리스 11289의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 10912의 업데이트입니다.
+2023년 3월 28일에 릴리스된 유지 관리 릴리스 11382에 대한 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 11289의 업데이트입니다.
 
 이 유지 관리 릴리스에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-### 알려진 문제 {#known-issues}
-
-CORS를 사용하는 경우 업그레이드하지 마십시오. 이 릴리스에서 GraphQL 콘텐츠 게재 기능에 영향을 미치는 문제가 확인되었습니다. GraphQL 지속 쿼리가 캐시되는 방식에 대한 기본 AEM Dispatcher 구성의 변경으로 인해, CORS 구성을 사용하는 고객의 경우 이러한 쿼리의 GraphQL 콘텐츠 게재가 중단될 수 있습니다. 이 문제는 다음 유지 관리 릴리스에서 해결될 예정입니다.
-
 ### 해결된 문제 {#fixed-issues}
+
+- ASSETS-21023 - API를 통해 이러한 변환에 액세스하려고 할 때 고객이 모든 AEM 환경의 게시자 인스턴스에서 Null 포인터 예외를 관찰할 수 있는 스마트 자르기 렌디션이 수정되었습니다.
+- SKYOPS-49280 - RDE를 사용하여 구성 또는 번들 업데이트를 게시에 설치하는 경우 게시 디스패처 캐시가 무효화되지 않으므로 결과를 확인할 수 없습니다
 
 #### Sites {#sites-issues}
 
-- SITES-11584 주석이 있는 페이지에 대해 생성할 수 없는 Live Copy 관련 문제가 해결되었습니다.
-- SITES-11683 상속이 부분적으로 손상된 MSM Live Copy가 비활성화되었습니다.
+- SITES-7796 - target으로 내보낼 때 컨텐츠 작성자가 기본 컨텐츠 조각 및 해당 변형을 게시할 수 있는 기능입니다
 
 #### Assets {#assets-issues}
 
-- ASSETS-20879 에셋 보고서 UI가 올바르게 작동하지 못하게 하고 생성된 보고서에서 잘못된 결과를 초래하는 회귀 문제가 해결되었습니다.
-- ASSETS-21020 에셋 이동 후 이미지 프로필이 존재하지 않는 손상된 에셋 다운로드 관련 문제가 해결되었습니다.
-- ASSETS-21023 API를 통한 액세스를 방해하는 Dynamic Media의 이미지 렌디션 관련 문제가 해결되었습니다.
+- ASSETS-20076 - 현재 이미지 워터마크 지원과 일치하는 비디오 워터마킹을 위한 지원을 추가합니다
+- ASSETS-21428 - CSS 변경 사항에 대한 제외가 추가되었습니다.
 
 #### Forms {#forms-issues}
 
-- 없음
+- CQ-4351502 - 사이트에서 읽기 액세스를 허용하도록 서비스 사용자 매핑 업데이트
 
 #### Platform {#platform-issues}
 
-- GRANITE-44467 - 기존 노드를 업데이트할 때 특정 인스턴스에서 Filevault가 믹스인 유형 및 하위 노드를 유지하지 않아 가져오기가 실패하는 문제가 해결되었습니다.
+- SITES-11040 - Dispatcher에서 GraphQL 지속적인 쿼리 캐싱의 조건부 지원
 
 ### 임베드된 기술 {#embedded-tech}
 

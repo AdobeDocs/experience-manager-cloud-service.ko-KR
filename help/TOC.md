@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c5395c9c844744655054bb15e1b9b2178792b8b5
+source-git-commit: 1d192c1b568aeec2fd40ff47e63fe9dae9a9932b
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 98%
+source-wordcount: '4009'
+ht-degree: 99%
 
 ---
 
@@ -133,7 +133,6 @@ ht-degree: 98%
       + [Experience Manager 강화 커넥터용 Workfront 최신 릴리스 정보](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [새로운 기능](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service의 주요 변경 내용](/help/release-notes/aem-cloud-changes.md)
-   + [알려진 문제](/help/release-notes/known-issues.md)
    + [더 이상 사용되지 않는/제거된 기능](/help/release-notes/deprecated-removed-features.md)
    + [더 이상 사용되지 않는 API](/help/release-notes/deprecated-apis.md)
    + [프리릴리스 채널](/help/release-notes/prerelease.md)
@@ -209,7 +208,7 @@ ht-degree: 98%
          + [마이그레이션 세트 삭제](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [게시 인스턴스에서 콘텐츠 전송 도구 실행](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [콘텐츠 전송 도구 문제 해결](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + 기존 사용자 매핑 도구(기존){#legacy-user-mapping-tool}
+         + 기존 사용자 매핑 도구 (레거시){#legacy-user-mapping-tool}
             + [개요](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [중요 고려 사항](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [사용자 매핑 도구 사용](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -297,7 +296,7 @@ ht-degree: 98%
          + [타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [활동 관리](/help/sites-cloud/authoring/personalization/activities.md)
          + [대상자 관리](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [오퍼 생성 및 관리 (콘솔 제공)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [오퍼 생성 및 관리 (오퍼 콘솔)](/help/sites-cloud/authoring/personalization/offers.md)
          + [세그먼테이션 이해](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub를 사용하여 세그먼테이션 구성](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [등록, 로그인 및 사용자 프로필](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -506,7 +505,7 @@ ht-degree: 98%
 + Forms {#forms}
    + 개요 {#forms-overview}
       + [소개](/help/forms/home.md)
-      + [Adobe Experience Manager Forms의 주요 혁신 내용](/help/forms/latest-innovations.md)
+      + [주요 Adobe Experience Manager Forms 혁신 사항](/help/forms/latest-innovations.md)
       + [주요 변경 내용](/help/forms/notable-changes.md)
       + [아키텍처](/help/forms/aem-forms-cloud-service-architecture.md)
       + [자주 묻는 질문](/help/forms/faq.md)
@@ -929,7 +928,7 @@ ht-degree: 98%
       + [작성자 계층에 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
    + 콘텐츠 게재 개요 {#content-delivery}
-      + [콘텐츠 게재 플로우](/help/implementing/dispatcher/overview.md)
+      + [콘텐츠 게재 흐름](/help/implementing/dispatcher/overview.md)
       + [클라우드의 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
       + [Dispatcher 도구를 사용하여 확인 및 디버깅](/help/implementing/dispatcher/validation-debug.md)
       + [AMS에서 AEM as a Cloud Service로 Dispatcher 구성 마이그레이션](/help/implementing/dispatcher/ams-aem.md)
@@ -961,11 +960,11 @@ ht-degree: 98%
    + 접근성 {#accessibility}
       + [AEM as a Cloud Service 및 웹 접근성 지침](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1에 대한 빠른 안내서](/help/compliance/accessibility/quick-guide-wcag.md)
-+ 범용 편집기 {#universal-editor}
-   + [범용 편집기 소개](/help/implementing/universal-editor/introduction.md)
-   + [범용 편집기를 사용하여 컨텐츠 작성](/help/implementing/universal-editor/authoring.md)
++ Universal Editor {#universal-editor}
+   + [Universal Editor 소개](/help/implementing/universal-editor/introduction.md)
+   + [Universal Editor로 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)
    + [범용 편집기를 사용하여 컨텐츠 게시](/help/implementing/universal-editor/publishing.md)
-   + [AEM에서 범용 편집기 시작하기](/help/implementing/universal-editor/getting-started.md)
-   + [범용 편집기 아키텍처](/help/implementing/universal-editor/architecture.md)
+   + [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md)
+   + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
    + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)
-   + [범용 편집기 인증](/help/implementing/universal-editor/authentication.md)
+   + [Universal Editor 인증](/help/implementing/universal-editor/authentication.md)
