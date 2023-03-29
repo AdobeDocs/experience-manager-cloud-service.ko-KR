@@ -1,10 +1,10 @@
 ---
 title: 의 현재 유지 관리 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
 description: 의 현재 유지 관리 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
+source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 36%
+source-wordcount: '306'
+ht-degree: 32%
 
 ---
 
@@ -27,6 +27,11 @@ ht-degree: 36%
 #### Sites {#sites-issues}
 
 - SITES-7796 - target으로 내보낼 때 컨텐츠 작성자가 기본 컨텐츠 조각 및 해당 변형을 게시할 수 있는 기능입니다
+- SITES-97 - GraphQL: 페이지 매김 및 정렬, 하이브리드 필터링
+
+>[!NOTE]
+>
+> SITES-97에서는 GraphQL 구현에서 일부 개선 사항이 적용되어 예기치 않은 동작이 발생할 수 있습니다. 자세한 내용은 [Null 값 처리와 관련된 AEM GraphQL 변경 사항](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) 추가 정보.
 
 #### Assets {#assets-issues}
 
