@@ -3,10 +3,10 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1541'
+ht-degree: 73%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >지속 쿼리를 사용하는 것이 좋습니다. 자세한 내용은 [GraphQL 쿼리 모범 사례(Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) 자세한 내용 및 관련 Dispatcher 구성을 참조하십시오.
 
-[프로덕션 환경으로 이전](#transfer-persisted-query-production)하기 전에 GraphQL 쿼리를 개발, 테스트 및 지속할 수 있도록 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)가 AEM에 제공됩니다. 맞춤화가 필요한 경우(예: [캐시를 사용자 정의](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)하는 경우) API를 사용할 수 있습니다. [GraphQL 쿼리를 지속하는 방법](#how-to-persist-query)에 제시된 curl 예제를 참조하십시오.
+[프로덕션 환경으로 이전](#transfer-persisted-query-production)하기 전에 GraphQL 쿼리를 개발, 테스트 및 지속할 수 있도록 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)가 AEM에 제공됩니다. 사용자 지정이 필요한 경우(예: [캐시 사용자 정의](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) API를 사용할 수 있습니다. 에 제공된 cURL 예를 참조하십시오. [GraphQL 쿼리를 유지하는 방법](#how-to-persist-query).
 
 ## 지속 쿼리 및 끝점 {#persisted-queries-and-endpoints}
 
@@ -56,10 +56,10 @@ ht-degree: 100%
 다양한 방법으로 쿼리를 지속합니다(다음 포함).
 
 * GraphiQL IDE - [지속 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) 참조(기본 방법)
-* curl - 다음 예제 참조
+* cURL - 다음 예를 참조하십시오.
 * 기타 도구, [Postman](https://www.postman.com/) 포함
 
-GraphiQL IDE는 쿼리를 지속할 수 있는 **기본** 방법입니다. **curl** 명령줄 도구를 사용하여 지정된 쿼리를 지속하려면 다음 작업을 수행하십시오.
+GraphiQL IDE는 쿼리를 지속할 수 있는 **기본** 방법입니다. 특정 쿼리를 **cURL** 명령줄 도구:
 
 1. 쿼리를 새 끝점 URL `/graphql/persist.json/<config>/<persisted-label>`에 PUT하여 준비합니다.
 
@@ -261,42 +261,110 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
-지속 쿼리는 Dispatcher 및 CDN 계층에서 캐시될 수 있어 궁극적으로 요청하는 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다.
+지속되는 쿼리는 [Dispatcher](/help/headless/deployment/dispatcher.md) 및 CDN(Content Delivery Network) 레이어를 사용하면 궁극적으로 요청 클라이언트 애플리케이션의 성능을 향상시킬 수 있습니다.
 
-기본적으로 AEM은 기본 TTL(Time to Live)에 따라 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다.
+기본적으로 AEM은 TTL(Time To Live) 정의에 따라 캐시를 무효화합니다. 이러한 TTL은 다음 매개 변수로 정의할 수 있습니다. 이러한 매개 변수는 사용된 메커니즘에 따라 이름에 대한 변형을 사용하여 다양한 방법으로 액세스할 수 있습니다.
 
-이 값을 다음으로 설정:
+| 캐시 유형 | [HTTP 헤더](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 구성  | Cloud Manager |
+|--- |--- |--- |--- |--- |
+| 브라우저 | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
+| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
+| CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
-* Dispatcher 및 CDN(*공유 캐시*&#x200B;로도 알려짐)의 기본 TTL은 7,200초입니다.
-   * 기본: s-maxage=7200
-* 클라이언트(예: 브라우저)의 기본 TTL은 60초입니다.
-   * 기본: maxage=60
+### 작성자 인스턴스 {#author-instances}
 
-GraphLQ 쿼리의 TTL을 변경하려면 쿼리가 다음 중 하나여야 합니다.
+작성 인스턴스의 경우 기본값은 다음과 같습니다.
 
-* [GraphQL IDE에서 HTTP 캐시 헤더](#http-cache-headers) 관리 후 지속됨
-* [API 메서드](#cache-api)를 사용하여 지속됨
+* `max-age`  : 60
+* `s-maxage` : 60
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
 
-### GraphQL에서 HTTP 캐시 헤더 관리  {#http-cache-headers-graphql}
+다음 중 하나를 수행합니다.
+
+* 덮어쓸 수 없음:
+   * OSGi 구성 사용
+* 덮어쓸 수 있습니다.
+   * cURL을 사용하여 HTTP 헤더 설정을 정의하는 요청에 의해 에는 `cache-control` 및/또는 `surrogate-control`; 예를 보려면 [지속되는 쿼리 수준에서 캐시 관리](#cache-persisted-query-level)
+   * 값을 **머리글** 대화 상자 [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+
+### 게시 인스턴스 {#publish-instances}
+
+게시 인스턴스의 경우 기본값은 다음과 같습니다.
+
+* `max-age`  : 60
+* `s-maxage` : 7200
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
+
+덮어쓸 수 있는 항목은 다음과 같습니다.
+
+* [GraphQL IDE에서](#http-cache-headers-graphiql-ide)
+
+* [지속형 쿼리 수준에서](#cache-persisted-query-level); 이 작업에는 명령줄 인터페이스에서 cURL을 사용하여 AEM에 쿼리를 게시하고 지속된 쿼리를 게시합니다.
+
+* [Cloud Manager 변수 사용](#cache-cloud-manager-variables)
+
+* [OSGi 구성 사용](#cache-osgi-configration)
+
+### GraphiQL IDE에서 HTTP 캐시 헤더 관리 {#http-cache-headers-graphiql-ide}
 
 GraphiQL IDE - [지속 쿼리 저장](/help/headless/graphql-api/graphiql-ide.md#managing-cache) 참조
 
-### API에서 캐시 관리 {#cache-api}
+### 지속되는 쿼리 수준에서 캐시 관리 {#cache-persisted-query-level}
 
-이는 명령줄 인터페이스의 CURL을 사용하여 AEM에 쿼리를 게시하는 것과 관련되어 있습니다.
+이 작업에는 명령줄 인터페이스에서 cURL을 사용하여 AEM에 쿼리를 게시하는 작업이 포함됩니다.
 
-예:
+PUT(create) 메서드의 경우:
 
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```bash
+curl -u admin:admin -X PUT \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 선택 사항입니다. CURL을 사용하여 쿼리를 지속하는 사례는 [GraphQL 쿼리를 지속하는 방법](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query)을 참조하십시오.
+POST(업데이트) 메서드의 경우
+
+```bash
+curl -u admin:admin -X POST \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
+```
+
+`cache-control`은 생성 시간(PUT) 또는 그 이후에 설정될 수 있습니다(예: 인스턴스의 POST 요청을 통해 설정). AEM에서 기본값을 제공하기 때문에 지속 쿼리 생성 시 캐시 제어는 선택 사항입니다. 자세한 내용은 [GraphQL 쿼리를 유지하는 방법](#how-to-persist-query)예: cURL을 사용하여 쿼리를 유지하는 예
+
+### Cloud Manager 변수를 사용하여 캐시 관리 {#cache-cloud-manager-variables}
+
+[Cloud Manager 환경 변수](/help/implementing/cloud-manager/environment-variables.md) 는 Cloud Manager를 사용하여 정의하여 필요한 값을 정의할 수 있습니다.
+
+| 이름 | 값 | 적용된 서비스 | 유형 |
+|--- |--- |--- |--- |
+| `graphqlStaleIfError` | 86400 | *적절하다* | *적절하다* |
+| `graphqlSurrogateControl` | 600 | *적절하다* | *적절하다* |
+
+### OSGi 구성을 사용하여 캐시 관리 {#cache-osgi-configration}
+
+캐시를 전체적으로 관리하기 위해 다음을 수행할 수 있습니다 [osgI 설정 구성](/help/implementing/deploying/configuring-osgi.md) 대상 **지속된 쿼리 서비스 구성**.
+
+>[!NOTE]
+>
+>OSGi 구성은 게시 인스턴스에만 적합합니다. 작성자 인스턴스에 구성이 있지만 은 무시됩니다.
+
+게시 인스턴스에 대한 기본 OSGi 구성:
+
+* 가능한 경우 Cloud Manager 변수를 읽습니다.
+
+   | OSGi 구성 속성 | 읽기 | Cloud Manager 변수 |
+   |--- |--- |--- |
+   | `cacheControlMaxAge` | 읽기 | `graphqlCacheControl` |
+   | `surrogateControlMaxAge` | 읽기 | `graphqlSurrogateControl` |
+   | `surrogateControlStaleWhileRevalidate` | 읽기 | `graphqlStaleWhileRevalidate` |
+   | `surrogateControlStaleIfError` | 읽기 | `graphqlStaleIfError` |
+
+* 사용할 수 없는 경우 OSGi 구성에서 [게시 인스턴스의 기본값](#publish-instances).
 
 ## 앱에서 사용할 쿼리 URL 인코딩 {#encoding-query-url}
 

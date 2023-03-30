@@ -3,10 +3,10 @@ title: AEM에서 GraphiQL IDE 사용
 description: Adobe Experience Manager에서 GraphiQL IDE를 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 68b16052bd050d881e82be4ef57b9623f6021a89
+source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 100%
+source-wordcount: '1058'
+ht-degree: 99%
 
 ---
 
@@ -88,8 +88,6 @@ GraphiQL 로고 바로 아래 왼쪽 중간 패널에 있는 편집기에 새 �
 
 ## 쿼리 변수 {#query-variables}
 
-<!-- more details needed here? -->
-
 GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-fragments.md#graphql-variables)를 관리할 수 있습니다.
 
 예:
@@ -99,6 +97,10 @@ GraphiQL IDE를 사용하여 [쿼리 변수](/help/headless/graphql-api/content-
 ## 지속 쿼리에 대한 캐시 관리 {#managing-cache}
 
 [지속 쿼리](/help/headless/graphql-api/persisted-queries.md)는 Dispatcher 및 CDN 계층에서 캐시될 수 있어 궁극적으로 요청하는 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다. 기본적으로 AEM은 기본 TTL(Time to Live)에 따라 CDN(Content Delivery Network) 캐시를 무효화할 수 있습니다.
+
+>[!NOTE]
+>
+>자세한 내용은 [지속되는 쿼리 캐싱](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
