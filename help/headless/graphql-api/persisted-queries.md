@@ -3,7 +3,7 @@ title: 지속 GraphQL 쿼리
 description: 성능을 최적화하기 위해 Adobe Experience Manager as a Cloud Service에서 GraphQL 쿼리를 지속하는 방법을 알아봅니다. HTTP GET 메서드를 사용하여 클라이언트 애플리케이션에서 지속 쿼리를 요청할 수 있으며 응답을 Dispatcher 및 CDN 계층에서 캐시할 수 있으므로 궁극적으로 클라이언트 애플리케이션의 성능이 향상됩니다.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 73%
@@ -272,6 +272,8 @@ query getAdventuresByActivity($activity: String!) {
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### 작성자 인스턴스 {#author-instances}
 
 작성 인스턴스의 경우 기본값은 다음과 같습니다.
@@ -345,6 +347,8 @@ curl -u admin:admin -X POST \
 | `graphqlStaleIfError` | 86400 | *적절하다* | *적절하다* |
 | `graphqlSurrogateControl` | 600 | *적절하다* | *적절하다* |
 
+{style="table-layout:auto"}
+
 ### OSGi 구성을 사용하여 캐시 관리 {#cache-osgi-configration}
 
 캐시를 전체적으로 관리하기 위해 다음을 수행할 수 있습니다 [osgI 설정 구성](/help/implementing/deploying/configuring-osgi.md) 대상 **지속된 쿼리 서비스 구성**.
@@ -363,6 +367,8 @@ curl -u admin:admin -X POST \
    | `surrogateControlMaxAge` | 읽기 | `graphqlSurrogateControl` |
    | `surrogateControlStaleWhileRevalidate` | 읽기 | `graphqlStaleWhileRevalidate` |
    | `surrogateControlStaleIfError` | 읽기 | `graphqlStaleIfError` |
+
+   {style="table-layout:auto"}
 
 * 사용할 수 없는 경우 OSGi 구성에서 [게시 인스턴스의 기본값](#publish-instances).
 
