@@ -4,9 +4,9 @@ description: AEM as a Cloud Service에 배포
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3509'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ AEM as a Cloud Service 애플리케이션용으로 작성된 콘텐츠 패키지
    * 폴더 (추가, 수정, 제거)
    * 편집 가능한 템플릿 (추가, 수정, 제거)
    * 컨텍스트 인식 구성 (`/conf` 아래의 모든 항목) (추가, 수정, 제거)
-   * 스크립트 (패키지는 패키지 설치의 여러 설치 프로세스 단계에서 설치 후크를 트리거할 수 있습니다. 자세한 내용은 [Jackrabbit filerabbit 설명서](https://jackrabbit.apache.org/filevault/installhooks.html) 설치 후크 정보. AEM CS는 현재 Filevault 버전 3.4.0을 사용합니다. 이 버전은 설치 후크를 관리 사용자, 시스템 사용자 및 관리자 그룹의 멤버로 제한)).
+   * 스크립트 (패키지는 패키지 설치의 여러 설치 프로세스 단계에서 설치 후크를 트리거할 수 있습니다. 설치 후크에 대한 [Jackrabbit filevault 설명서](https://jackrabbit.apache.org/filevault/installhooks.html)를 참조하십시오. AEM CS는 현재 Filevault 버전 3.4.0을 사용합니다. 이 버전은 설치 후크를 관리 사용자, 시스템 사용자 및 관리자 그룹의 멤버로 제한합니다.
 
 `/apps` 아래의 install.author 또는 install.publish 폴더에 패키지를 임베드하여 변경 가능한 콘텐츠 설치를 작성자 또는 게시로 제한할 수 있습니다. AEM 6.5에서 재구성을 수행하여 이 분리를 반영합니다. 권장되는 프로젝트 재구성에 대한 자세한 내용은 [AEM 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)에서 확인할 수 있습니다.
 
@@ -294,7 +294,7 @@ Cloud Manager 파이프라인을 통해 코드를 배포하는 일반 개발 환
 * OSGI 구성 실행 모드는 환경의 경우 RDE, 개발, 스테이징, 프로덕션을 참조하고 서비스의 경우 작성자 또는 게시를 참조해야 합니다. `<service>.<environment_type>` 조합은 지원되는 반면에 이 특정 순서로 사용되어야 합니다(예: `author.dev` 또는 `publish.prod`). OSGI 토큰은 런타임 시 `environment_type`이 더 이상 포함되지 않는 `getRunModes` 메서드를 사용하는 대신 코드에서 직접 참조해야 합니다. 자세한 내용은 [AEM as a Cloud Service용 OSGi 구성](/help/implementing/deploying/configuring-osgi.md)을 참조하십시오.
 * OSGI 번들 실행 모드는 서비스(작성자, 게시)로 제한됩니다. 실행별 모드 OSGI 번들은 `install.author` 또는 `install.publish` 아래의 콘텐츠 패키지에 설치해야 합니다.
 
-AEM as a Cloud Service에서는 실행 모드를 사용하여 특정 환경 또는 서비스에 대한 컨텐츠를 설치할 수 없습니다. 개발 환경을 스테이징 또는 프로덕션 환경에 없는 데이터 또는 HTML으로 초기 설정해야 하는 경우에는 패키지 관리자를 사용할 수 있습니다.
+AEM as a Cloud Service에서는 실행 모드를 사용하여 특정 환경 또는 서비스에 대한 콘텐츠를 설치할 수 없습니다. 스테이징 또는 프로덕션 환경에 없는 데이터 또는 HTML로 개발 환경을 시드해야 하는 경우 패키지 관리자를 사용할 수 있습니다.
 
 지원되는 실행 모드 구성은 다음과 같습니다.
 
