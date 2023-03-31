@@ -1,17 +1,17 @@
 ---
 title: Universal Visual Editor 소개
-description: 범용 편집기(범용 편집기)를 사용하여 헤드리스 및 헤드리스 환경에서 WYSIWYG(What-You-See-is-what-you-get) 편집을 활성화하는 방법을 알아봅니다. 컨텐츠 작성자가 우수한 경험을 제공하고 컨텐츠 속도를 높이며 최신 개발자 경험을 제공하는 방법에 대해 파악하는 것이 가능합니다.
+description: Universal Visual Editor(Universal Editor)가 헤드리스 및 헤드풀 환경의 WYSIWYG(what-you-see-is-what-you-get) 편집을 가능하게 하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
 # Universal Visual Editor 소개 {#introduction}
 
-범용 편집기(범용 편집기)를 사용하여 헤드리스 및 헤드리스 환경에서 WYSIWYG(What-You-See-is-what-you-get) 편집을 활성화하는 방법을 알아봅니다. 컨텐츠 작성자가 우수한 경험을 제공하고 컨텐츠 속도를 높이며 최신 개발자 경험을 제공하는 방법에 대해 파악하는 것이 가능합니다.
+Universal Visual Editor(Universal Editor)가 헤드리스 및 헤드풀 환경의 WYSIWYG(what-you-see-is-what-you-get) 편집을 가능하게 하는 방법에 대해 알아봅니다. 콘텐츠 작성자가 탁월한 경험을 제공하고 콘텐츠 속도를 높이며 최신 개발자 경험을 제공하는 데 도움이 되는 방식에 대해 살펴보십시오.
 
 ## 배경 {#background}
 
@@ -43,13 +43,13 @@ Universal Editor를 활용하기 위한 구현 요구 사항은 매우 간단하
 
 * **AEM 페이지 구조** - 경험 조각을 포함하여 `cq:Pages`의 중첩된 `cq:Components`
 * **AEM 콘텐츠 조각** - 경험의 맥락에서 표시되는 콘텐츠 조각에서 콘텐츠 편집.
-* **문서** - 개념 증명을 통해 Word, Excel, Google 문서 또는 Markdown 문서도 동일한 방식으로 편집할 수 있습니다(WIP).
+* **문서** - 개념 증명에 따르면 Word, Excel, Google Docs 또는 Markdown 문서도 같은 방식으로 편집할 수 있습니다(WIP).
 
 ### 모든 측면 {#any-aspect}
 
 콘텐츠 작성자에게는 콘텐츠에 포함된 정보도 중요하지만 콘텐츠가 렌더링되고 수신되는 방법도 중요합니다. 콘텐츠에는 추가 메타 데이터 및 계측 규칙이 들어 있는데, Universal Editor에서는 다음과 같이 이를 이해하고 편집할 수 있습니다.
 
-* **레이아웃 및 스타일 적용** - 스타일 시스템을 사용하여 마케팅 담당자 및 컨텐츠 작성자는 컨텐츠에 다른 스타일을 적용하고 열, 회전 메뉴, 탭, 아코디언 등과 같은 컨텐츠에 대해 다른 레이아웃을 만들 수 있습니다.
+* **레이아웃 및 스타일 적용** - 스타일 시스템을 사용하여 마케팅 실무자와 콘텐츠 작성자는 콘텐츠에 다양한 스타일을 적용하고 열, 캐러셀, 탭, 아코디언 등과 같은 콘텐츠에 대한 다양한 레이아웃을 만들 수 있습니다.
 
 ## 값 {#value}
 
@@ -61,9 +61,9 @@ Universal Editor를 활용하기 위한 구현 요구 사항은 매우 간단하
 * **콘텐츠 속도 증가** - 실무자의 관리 워크플로를 간소화해 주는 Universal Editor를 사용하면 미리보기 내에서 콘텐츠를 편집할 수 있습니다. 이때 해당 컨텍스트와 관련된 옵션만 표시하고 워크플로와 콘텐츠 소스를 분리하므로 실무자에게 도움이 됩니다.
 * **첨단 개발자 경험** - 실질적인 이기종 애플리케이션 환경을 지원하는 Universal Editor는 완전히 분리되고 기술에 구애받지 않으므로 개발자가 선호하는 기술 스택을 사용하여 경험을 구현할 수 있습니다.
 
-## 범용 시각적 편집기 및 컨텐츠 조각 편집기 {#universal-editor-content-fragment-editor}
+## Universal Visual Editor 및 콘텐츠 조각 편집기 {#universal-editor-content-fragment-editor}
 
-언뜻 보면 범용 시각적 편집기와 컨텐츠 조각 편집기가 유사한 편집 기능을 제공하는 것처럼 보일 수 있습니다. 단, 두 편집기는 서로 매우 다른 기능을 제공하며 마케팅 실무자의 다른 작업을 담당합니다.
+Universal Visual Editor와 콘텐츠 조각 모델 편집기는 유사한 편집 기능을 제공하는 것처럼 보일 수 있습니다. 그러나 두 편집기는 서로 매우 다른 기능을 제공하며 마케팅 실무자의 다른 작업을 담당합니다.
 
 ### 콘텐츠 조각 편집기 {#content-fragment-editor}
 
@@ -71,7 +71,7 @@ Universal Editor를 활용하기 위한 구현 요구 사항은 매우 간단하
 
 * 수행해야 할 기본 작업은 콘텐츠 전략을 확장하는 것입니다.
 
-### 범용 시각적 편집기 {#universal-editor}
+### Universal Visual Editor {#universal-editor}
 
 마케팅 실무자가 뛰어난 경험을 제공하기 위해 주어진 컨텍스트의 레이아웃에 맞는 콘텐츠를 만들고자 합니다.
 
@@ -79,7 +79,7 @@ Universal Editor를 활용하기 위한 구현 요구 사항은 매우 간단하
 
 ## 로드맵 {#road-map}
 
-범용 편집기는 진행 중인 작업이며 이 문서에서 제공하는 기능 중 일부는 최종 편집기의 비전을 나타내며 반드시 현재 기능을 대표할 필요는 없습니다.
+Universal Editor는 개발이 진행 중이므로 이 문서에 설명된 일부 기능은 최종 편집기에 대한 것이며 현재 기능을 나타내지 않을 수 있습니다.
 
 Universal Editor에 예정된 향후 기능에 대한 자세한 내용은 Adobe 담당자에게 문의하십시오.
 
@@ -88,7 +88,7 @@ Universal Editor에 예정된 향후 기능에 대한 자세한 내용은 Adobe 
 Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
 * [Universal Editor로 콘텐츠 작성](authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
-* [범용 편집기를 사용하여 컨텐츠 게시](publishing.md) - 유니버설 시각적 편집기에서 콘텐츠를 게시하는 방법과 앱이 게시된 콘텐츠를 처리하는 방법을 알아봅니다.
+* [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.

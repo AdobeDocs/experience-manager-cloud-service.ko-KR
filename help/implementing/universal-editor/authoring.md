@@ -4,7 +4,7 @@ description: 콘텐츠 작성자가 Universal Editor를 사용하여 얼마나 �
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면�
 
 >[!NOTE]
 >
->범용 편집기는 아직 개발 중이며 현재 모든 컨텐츠 유형을 편집할 수 없습니다.
+>Universal Editor는 아직 개발 중이며 현재 모든 콘텐츠 유형을 편집할 수 없습니다.
 
 ## 앱 준비 {#prepare-app}
 
@@ -108,7 +108,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 #### 위치 표시줄 {#Location-bar}
 
-위치 모음에는 편집 중인 페이지의 주소가 표시됩니다. 편집할 다른 페이지의 주소를 입력하려면 탭하거나 클릭합니다.
+위치 표시줄에 편집 중인 페이지의 주소가 표시됩니다. 편집할 다른 페이지의 주소를 입력하려면 탭하거나 클릭합니다.
 
 ![위치 표시줄](assets/address-bar.png)
 
@@ -138,7 +138,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 
 >[!TIP]
 >
->문서를 참조하십시오 [범용 시각적 편집기를 사용하여 컨텐츠 게시](publishing.md) 범용 편집기를 사용한 게시에 대한 자세한 내용을 살펴보십시오.
+>Universal Editor로 게시하는 방법에 대한 자세한 내용은 [Universal Visual Editor로 콘텐츠 게시](publishing.md) 문서를 참조하십시오.
 
 ### 레일 {#rail}
 
@@ -193,7 +193,7 @@ Universal Editor 헤더는 항상 화면 상단의 [Experience Cloud 헤더 바�
 Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하십시오.
 
 * [Universal Editor 소개](introduction.md) - Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있기 때문에 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공할 수 있다는 점에 대해 알아봅니다.
-* [범용 편집기를 사용하여 컨텐츠 게시](publishing.md) - 유니버설 시각적 편집기에서 콘텐츠를 게시하는 방법과 앱이 게시된 콘텐츠를 처리하는 방법을 알아봅니다.
+* [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [AEM에서 Universal Editor 시작하기](getting-started.md) - Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.

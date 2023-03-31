@@ -4,7 +4,7 @@ description: Universal Editor에 액세스하는 방법과 이를 사용하기 �
 source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ import "@adobe/universal-editor-cors";
 
 ### 비 React 앱의 대안 {#alternative}
 
-React 앱을 구현하지 않거나, 서버측 렌더링이 필요한 경우, 대체 방법은 문서 본문에 다음 내용을 포함하는 것입니다.
+React 앱을 구현하지 않거나 서버측 렌더링이 필요한 경우 다음을 문서 본문에 포함하는 방법이 있습니다.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -96,7 +96,7 @@ X-Frame-Options: SAMEORIGIN은 iframe 내에서 AEM 페이지 렌더링을 방�
 
 ## 페이지 계측 {#instrument-page}
 
-Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바른 백엔드 시스템을 식별하고 활용하기 위해 [균일 리소스 이름(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)이 필요합니다. 따라서 콘텐츠를 다시 콘텐츠 리소스에 매핑하려면 URN 스키마가 필요합니다.
+Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바른 백엔드 시스템을 식별하고 활용하기 위해 [균일 리소스 이름(URN)](https://ko.wikipedia.org/wiki/Uniform_Resource_Name)이 필요합니다. 따라서 콘텐츠를 다시 콘텐츠 리소스에 매핑하려면 URN 스키마가 필요합니다.
 
 페이지에 추가된 계측 속성은 대부분 [HTML 마이크로데이터](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)로 구성되는데, 이는 HTML을 더 의미 있게 만들고 HTML 문서를 색인화하는 등의 작업에 사용할 수 있는 업계 표준입니다.
 
@@ -169,7 +169,7 @@ Universal Editor에 대해 자세히 알아보려면 다음 문서를 참조하�
 
 * [Universal Editor 소개](introduction.md) - Universal Editor를 사용하면 모든 구현에서 콘텐츠의 모든 측면을 편집할 수 있기 때문에 뛰어난 경험을 제공하고, 콘텐츠 속도를 높이고, 최신 개발자 경험을 제공할 수 있다는 점에 대해 알아봅니다.
 * [Universal Editor로 콘텐츠 작성](authoring.md) - 콘텐츠 작성자가 Universal Editor를 사용하여 콘텐츠를 만드는 것이 얼마나 쉽고 직관적인지 알아봅니다.
-* [범용 편집기를 사용하여 컨텐츠 게시](publishing.md) - 유니버설 시각적 편집기에서 콘텐츠를 게시하는 방법과 앱이 게시된 콘텐츠를 처리하는 방법을 알아봅니다.
+* [Universal Editor로 콘텐츠 게시](publishing.md) - Universal Visual Editor에서 콘텐츠를 게시하는 방법과 앱에서 게시된 콘텐츠를 처리하는 방법에 대해 알아봅니다.
 * [Universal Editor 아키텍처](architecture.md) - Universal Editor의 아키텍처 및 해당 서비스와 계층 간에 데이터가 흐르는 방식에 대해 알아봅니다.
 * [속성 및 유형](attributes-types.md) - Universal Editor에 필요한 데이터 속성 및 유형에 대해 알아봅니다.
 * [Universal Editor 인증](authentication.md) - Universal Editor의 인증 방법에 대해 알아봅니다.

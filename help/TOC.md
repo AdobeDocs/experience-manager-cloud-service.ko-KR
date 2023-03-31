@@ -963,7 +963,7 @@ ht-degree: 99%
 + Universal Editor {#universal-editor}
    + [Universal Editor 소개](/help/implementing/universal-editor/introduction.md)
    + [Universal Editor로 콘텐츠 작성](/help/implementing/universal-editor/authoring.md)
-   + [범용 편집기를 사용하여 컨텐츠 게시](/help/implementing/universal-editor/publishing.md)
+   + [Universal Editor로 콘텐츠 게시](/help/implementing/universal-editor/publishing.md)
    + [AEM에서 Universal Editor 시작하기](/help/implementing/universal-editor/getting-started.md)
    + [Universal Editor 아키텍처](/help/implementing/universal-editor/architecture.md)
    + [속성 및 유형](/help/implementing/universal-editor/attributes-types.md)
