@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
+source-git-commit: a7545f0f2143983a052f272992d5e27b78f271a1
 workflow-type: tm+mt
-source-wordcount: '3797'
+source-wordcount: '3768'
 ht-degree: 15%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 15%
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS에서 | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]로서의[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
+   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5 [!DNL Assets] AMS에서** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
@@ -59,7 +59,7 @@ ht-degree: 15%
 | [!DNL Sites] administrator | 로컬 | [!DNL Experience Manager] `administrators` | 설정 [!DNL Experience Manager] 원격 사이트와의 통합 구성 [!DNL Assets] 배포. |
 | DAM 사용자 | 로컬 | `Authors` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
 | [!DNL Sites] 작성자 | 로컬 | <ul><li>`Authors` (원격 DAM에 대한 읽기 권한과 로컬 작성자 액세스 사용) [!DNL Sites]) </li> <li>`dam-users` 로컬 [!DNL Sites]</li></ul> | 최종 사용자는 [!DNL Sites] 이 통합을 사용하여 콘텐츠 속도를 향상시키는 작성자 작성자가 다음을 사용하여 원격 DAM에서 자산을 검색하고 검색할 수 있습니다 [!UICONTROL 컨텐츠 파인더] 로컬 웹 페이지에서 필요한 이미지를 사용하는 중입니다. |
-| [!DNL Assets] 관리자 | 원격 | [!DNL Experience Manager] `administrators` | CORS(원본 간 리소스 공유)를 구성합니다. |
+| [!DNL Assets] administrator | 원격 | [!DNL Experience Manager] `administrators` | CORS(원본 간 리소스 공유)를 구성합니다. |
 | DAM 사용자 | 원격 | `Authors` | 작성 원격에서 역할 [!DNL Experience Manager] 배포. 를 사용하여 연결된 자산에서 자산을 검색하고 찾아봅니다. [!UICONTROL 컨텐츠 파인더]. |
 | DAM 배포자(기술 사용자) | 원격 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | 원격 배포에 있는 이 사용자는 [!DNL Experience Manager] 로컬 서버(아님) [!DNL Sites] 작성자 역할) 을 대신하여 원격 자산을 가져옵니다. [!DNL Sites] 작성자. |
 | [!DNL Sites] 기술 사용자 | 로컬 | `connectedassets-sites-techaccts` | 허용 [!DNL Assets] 배포에서 자산에 대한 참조를 검색합니다. [!DNL Sites] 웹 페이지. |
@@ -245,10 +245,6 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서 자산을 사용하지 못하도록 하는 원격 자산 콘텐츠 파인더의 자산에 대한 상태 시각적 표시기입니다. 와 함께 자산을 사용하는 경우 `expired` 사이트 페이지의 상태. 자산이 Experience Manager 게시 인스턴스에 표시되지 않습니다.
 
->[!NOTE]
->
->원격 DAM 및 사이트 배포가 Experience Manager as a Cloud Service에 있는 경우에만 원격 DAM의 자산에 대한 업데이트를 사이트 배포에서 사용할 수 있습니다.
-
 ## FAQ {#frequently-asked-questions}
 
 +++**에서 사용 가능한 자산을 사용해야 하는 경우 연결된 자산을 구성해야 합니다 [!DNL Sites] 배포?**
@@ -335,7 +331,7 @@ Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서
 * 라이센스 [!DNL Assets] 원격 저장소로 작업해야 합니다.
 * 하나 이상의 [!DNL Sites] 로컬 작성 배포로 작업해야 합니다.
 
-### 사용량 {#usage}
+### 사용 {#usage}
 
 * 사용자는 원격 자산을 검색하고 작성할 때 로컬 페이지에서 드래그할 수 있습니다. 다른 기능은 지원되지 않습니다.
 * 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자가 원격 자산을 [!UICONTROL 컨텐츠 파인더] to [!UICONTROL 페이지 편집기].
