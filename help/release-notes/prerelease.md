@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 프리릴리스 채널
 description: 프리릴리스 채널을 사용하여 AEM as a Cloud Service에 대한 예정된 기능을 미리 보는 방법에 대해 알아보십시오.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1311'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,22 +16,22 @@ ht-degree: 86%
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager as a Cloud Service은 일반적인 케이던스에 새로운 기능을 제공합니다 [Experience Manager 릴리스 로드맵.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service는 [Experience Manager 릴리스 로드맵](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 따라 정기적으로 새로운 기능을 제공합니다.
 
-다음 기능 릴리스에서 활성화되도록 예약된 기능을 잘 이해하려면 개발 환경 또는 샌드박스 환경을 구성하여 액세스할 수 있는 사전 릴리스 채널에 가입할 수 있습니다. AEM UI를 통해 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
+다음 기능 릴리스에서 실행할 예정인 기능에 익숙해지려면 개발 환경 또는 원하는 샌드박스 환경을 구성하여 액세스할 수 있는 프리릴리스 채널을 구독하면 됩니다. AEM UI를 통해 변경 내용을 미리 볼 수 있으며 새 프리릴리스 API에 대해 코드를 작성할 수 있습니다.
 
-지정된 기능 릴리스의 사전 릴리스 기능 목록은 다음 사이트에 게시됩니다 [릴리스 노트.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+지정된 기능 릴리스에 대한 프리릴리스 기능 목록은 [릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)에 게시됩니다.
 
 ## AEM as a Cloud Service 릴리스 {#releases}
 
 AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
-* **기능 릴리스** 활성화 시 AEM as a Cloud Service에 기능 및 기능 추가
-* **유지 관리 릴리스** 보안 업데이트, 성능 개선 사항 및 버그 수정을 추가하고 정기적으로 자주 적용됩니다.
+* **기능 릴리스**&#x200B;에서는 활성화 시 AEM as a Cloud Service에 기능이 추가됩니다.
+* **유지 관리 릴리스**&#x200B;에는 보안 업데이트, 성능 향상 및 버그 수정이 추가되며 정기적으로 자주 적용됩니다.
 
 이러한 패턴으로 서비스 중단 없이 지속적인 릴리스가 이루어집니다.
 
-사전 릴리스 채널을 사용하면 예정된 기능을 평가하고 자체 프로젝트에 대해 가능한 구현을 계획하기 위해 예정된 기능 릴리스에 예약된 기능을 미리 볼 수 있습니다. 이 기능을 사용하면 다음 기능 릴리스에 대해 미리 계획할 수 있습니다.
+프리릴리스 채널을 사용하면 다가오는 기능 릴리스에 예정된 기능을 미리 확인하여 예정된 기능을 평가하고 프로젝트에 대해 가능한 구현을 계획할 수 있습니다. 이를 통해 다음 기능 릴리스를 미리 계획할 수 있습니다.
 
 예를 들어 지금이 5월이고 프리릴리스 채널을 구독 중인 경우 다가오는 6월 릴리스의 기능을 미리 평가할 수 있습니다.
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 ## 달력 표시 {#mark-calendars}
 
-기능 릴리스는 미리 예약되어 있으며 기능 릴리스 활성화 날짜는 다음 위치에 게시됩니다. [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+기능 릴리스는 미리 일정이 예정되어 있으며 기능 릴리스 활성화 날짜는 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)에 게시됩니다.
 
 예정된 기능을 검토하고 테스트할 시간을 계획할 수 있도록 릴리스 날짜를 기록해 두십시오.
 
@@ -62,7 +62,7 @@ AEM as a Cloud Service에는 두 가지 유형의 릴리스가 있습니다.
 
 ## 프리릴리스 채널을 활성화하여 새로운 기능 액세스 및 사용 {#new-features}
 
-프리릴리스 채널은 모든 개발 또는 샌드박스 환경에서 활성화할 수 있습니다. 스테이징 또는 프로덕션 환경에서는 사전 릴리스를 활성화할 수 없습니다.
+프리릴리스 채널은 모든 개발 또는 샌드박스 환경에서 활성화할 수 있습니다. 스테이징 또는 프로덕션 환경에서는 프리릴리스를 활성화할 수 없습니다.
 
 다음과 같이 다양한 방식으로 프리릴리스 기능을 경험할 수 있습니다.
 
