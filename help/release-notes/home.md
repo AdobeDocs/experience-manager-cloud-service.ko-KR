@@ -3,9 +3,9 @@ title: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 description: Adobe Experience Manager (AEM) as a Cloud Service 릴리스 정보
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: 9a00889f06a5ecf277cd99d4adbc8341480caa17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 99%
 
 ## 주요 릴리스 정보 {#key-articles}
 
-* [기능 릴리스 노트](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [기능 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
 * [새로운 기능](what-is-new.md)
 * [주요 변경 내용](aem-cloud-changes.md)
@@ -64,7 +64,7 @@ ht-degree: 99%
 ## 기타 Experience Manager 리소스 {#other-resources}
 
 * [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
-* [디스패처 설명서](/help/implementing/dispatcher/overview.md)
+* [Dispatcher 설명서](/help/implementing/dispatcher/overview.md)
 * [HTL 설명서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
