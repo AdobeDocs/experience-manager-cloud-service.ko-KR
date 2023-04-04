@@ -6,9 +6,9 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager Assets as a[!DNL Cloud Service]는 클라우드 기반�
 
 우선 [클라우드 기반 제품의 이점](#solution-benefits)을 이해합니다. Experience Manager Assets에도 영향을 미치는 [Experience Manager as a  [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)에 대한 주요 변경 사항을 확인한 다음 [Assets](/help/assets/assets-cloud-changes.md)에 대한 주요 변경 사항을 확인합니다.
 
-[새 에셋 기능에 대한 세부 정보](#whats-new-assets) 및 [알려진 문제](/help/release-notes/maintenance/latest.md)에 대해 알아봅니다. 목록 보기 [더 이상 사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md) 가 이 릴리스에서 제거된 내용을 알고 있어야 합니다. 마지막으로 이 [용어집](/help/overview/terminology.md)을 참조하여 Experience Manager 용어를 숙지합니다.
+[새 에셋 기능에 대한 세부 정보](#whats-new-assets) 및 [알려진 문제](/help/release-notes/maintenance/latest.md)에 대해 알아봅니다. 이 릴리스에서 제거된 기능을 확인하려면 [더 이상 사용되지 않거나 제거된 기능](/help/release-notes/deprecated-removed-features.md) 목록을 참조하십시오. 마지막으로 이 [용어집](/help/overview/terminology.md)을 참조하여 Experience Manager 용어를 숙지합니다.
 
 ## 솔루션 이점 {#solution-benefits}
 
