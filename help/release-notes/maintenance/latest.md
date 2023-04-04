@@ -1,50 +1,50 @@
 ---
-title: 의 현재 유지 관리 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
-description: 의 현재 유지 관리 릴리스 노트 [!DNL Adobe Experience Manager] as a Cloud Service.
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 
 # 유지 관리 릴리스 정보 {#maintenance-release-notes}
 
-다음 섹션에서는 Experience Manager as a Cloud Service의 현재 유지 관리 릴리스에 대한 기술 릴리스 노트를 간략하게 설명합니다.
+다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
 ## 릴리스 11382 {#release-11382}
 
-2023년 3월 28일에 릴리스된 유지 관리 릴리스 11382에 대한 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 11289의 업데이트입니다.
+2023년 3월 28일에 릴리스된 유지 관리 릴리스 11382의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 11289의 업데이트입니다.
 
 이 유지 관리 릴리스에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
 ### 해결된 문제 {#fixed-issues}
 
-- ASSETS-21023 - API를 통해 이러한 변환에 액세스하려고 할 때 고객이 모든 AEM 환경의 게시자 인스턴스에서 Null 포인터 예외를 관찰할 수 있는 스마트 자르기 렌디션이 수정되었습니다.
-- SKYOPS-49280 - RDE를 사용하여 구성 또는 번들 업데이트를 게시에 설치하는 경우 게시 디스패처 캐시가 무효화되지 않으므로 결과를 확인할 수 없습니다
+- ASSETS-21023 - 고객이 API를 통해 이러한 렌디션에 액세스하려고 할 때 모든 AEM 환경의 게시자 인스턴스에서 Null 포인터 예외가 발생할 수 있는 스마트 자르기 렌디션을 해결했습니다.
+- SKYOPS-49280 - RDE를 사용하여 구성 또는 번들 업데이트를 게시에 설치할 때 게시 Dispatcher 캐시가 무효화되지 않아 결과가 표시되지 않을 수 있음
 
 #### Sites {#sites-issues}
 
-- SITES-7796 - target으로 내보낼 때 컨텐츠 작성자가 기본 컨텐츠 조각 및 해당 변형을 게시할 수 있는 기능입니다
-- SITES-97 - GraphQL: 페이지 매김 및 정렬, 하이브리드 필터링
+- SITES-7796 - 콘텐츠 작성자가 대상으로 내보낼 때 마스터 콘텐츠 조각 및 해당 변형을 게시할 수 있는 기능
+- SITES-97 - GraphQL: 페이지 매김, 정렬 및 하이브리드 필터링
 
 >[!NOTE]
 >
-> SITES-97에서는 GraphQL 구현에서 일부 개선 사항이 적용되어 예기치 않은 동작이 발생할 수 있습니다. 자세한 내용은 [Null 값 처리와 관련된 AEM GraphQL 변경 사항](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html) 추가 정보.
+> SITES-97에서는 예기치 않은 동작을 유발할 수 있는 GraphQL 구현이 일부 개선되었습니다. 자세한 내용은 [Null 값 처리와 관련된 AEM GraphQL 변경 사항](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html)을 참조하십시오.
 
 #### Assets {#assets-issues}
 
-- ASSETS-20076 - 현재 이미지 워터마크 지원과 일치하는 비디오 워터마킹을 위한 지원을 추가합니다
-- ASSETS-21428 - CSS 변경 사항에 대한 제외가 추가되었습니다.
+- ASSETS-20076 - 현재 이미지 워터마킹 지원과 일치하는 비디오 워터마킹 지원 추가
+- ASSETS-21428 - CSS 변경에 대한 제외 사항 추가
 
 #### Forms {#forms-issues}
 
-- CQ-4351502 - 사이트에서 읽기 액세스를 허용하도록 서비스 사용자 매핑 업데이트
+- CQ-4351502 - Sites에서 읽기 액세스를 허용하도록 서비스 사용자 매핑 업데이트
 
 #### Platform {#platform-issues}
 
-- SITES-11040 - Dispatcher에서 GraphQL 지속적인 쿼리 캐싱의 조건부 지원
+- SITES-11040 - Dispatcher에서 GraphQL 지속 쿼리 캐싱의 조건부 활성화
 
 ### 임베드된 기술 {#embedded-tech}
 
