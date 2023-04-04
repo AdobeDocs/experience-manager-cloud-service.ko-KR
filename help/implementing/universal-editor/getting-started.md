@@ -1,10 +1,10 @@
 ---
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
-source-git-commit: 7389e20ba73e84c2320ea8a834b381f415ad3983
+source-git-commit: 031117db4154dc605ae8b0c95f87b829bb5cacd8
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 95%
+source-wordcount: '809'
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ AEM 앱을 온보딩하고 Universal Editor를 사용하도록 계측하는 데�
 
 ![Universal Editor에 대한 액세스 권한을 요청합니다](assets/request-access.png)
 
-클릭 **액세스 요청** 및 Adobe 담당자가 귀하의 요청을 검토하고 귀하의 사용 사례를 논의하기 위해 연락합니다.
+클릭 **액세스 요청** 액세스 권한을 요청하는 대로 양식을 작성합니다. Adobe 담당자가 귀하의 요청을 검토하고 사용 사례를 논의하기 위해 연락합니다.
 
 ## Universal Editor 핵심 라이브러리 포함 {#core-library}
 
