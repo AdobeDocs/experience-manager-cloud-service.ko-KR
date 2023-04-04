@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
+source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 시작하기 전에 사용 가능한 Forms 구성 요소의 유형에 대해 알아봅니다.
 
-* [응용 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고, 개발 시간을 단축하며, 디지털 참여 경험에 대한 유지 관리 비용을 절감합니다. 개발자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다. Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 활용하여 적응형 Forms을 개발할 것을 권장합니다.
+* [응용 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 표준화된 데이터 캡처 구성 요소입니다. 이 구성 요소는 맞춤화 기능을 제공하고, 개발 시간을 단축하고, 유지 관리 비용을 줄여 디지털 등록 경험을 개선합니다. 개발자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다. Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 활용하여 적응형 Forms을 개발할 것을 권장합니다.
 
 * [응용 Forms 기초 구성 요소](creating-adaptive-form.md) 클래식(이전) 데이터 캡처 구성 요소입니다. 적응형 양식을 기반으로 하는 기존 기초 구성 요소를 계속 사용하여 편집할 수 있습니다. 새 양식을 만드는 경우  [응용 Forms 핵심 구성 요소](creating-adaptive-form-core-components.md) 적용형 Forms을 만들려면
 
@@ -49,18 +49,21 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 * **Using none or without a form model**
    Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
 
-## 전제 조건
+## 사전 요구 사항
 
 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
-* **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 컨텐츠 구조를 포함하는 사전 형식의 구성 요소가 있습니다. 또한 테마 및 제출 작업을 정의하는 옵션을 제공합니다. 테마는 모양과 느낌을 정의하고 제출 작업을 정의하여 적응형 양식 제출 시 수행할 작업을 정의합니다. 예를 들어, 수집된 데이터를 데이터 소스로 전송합니다. 클라우드 서비스는 두 가지 유형의 템플릿을 지원합니다.
-
-* **편집 가능한 템플릿**: 다음을 수행할 수 있습니다 [새로 만들기](template-editor.md) 또는 [기존 편집 가능한 템플릿 가져오기](migrate-to-forms-as-a-cloud-service.md). 를 배포할 수도 있습니다 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20is%20Java 기반%20integration%20tests 테스트.) 샘플 편집 가능한 템플릿을 가져오려면 다음을 수행하십시오.
-* **정적 템플릿**: 이러한 템플릿은 기존 템플릿이며 Adobe Managed Services(AMS) 및 온-프레미스 AEM Forms 설치(AEM 6.5 Forms 또는 이전 버전)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존 투자를 계속 활용할 수 있습니다. 새 적응형 양식을 만들 때는 편집 가능한 템플릿을 사용하는 것이 좋습니다.
+* **권한**: 사용자를 [!DNL forms-users] 적응형 양식을 만들 수 있는 권한을 그들에게 제공하기 위한 것입니다. 양식의 특정 사용자 그룹에 대한 자세한 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md).
 
 * **적응형 양식 테마**: 테마에는 구성 요소 및 패널에 대한 스타일 세부 사항이 포함되어 있습니다. 스타일은 배경색, 상태 색상, 투명도, 정렬 및 크기와 같은 속성을 포함합니다. 테마를 적용하면 지정된 스타일이 해당 구성 요소를 반영합니다. 다음을 수행할 수 있습니다 [새 테마 만들기](themes.md) 또는 [기존 테마 가져오기](import-export-forms-templates.md#uploading-a-theme). 를 배포할 수도 있습니다 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) 일부 샘플 테마
 
-* **권한**: 사용자를 [!DNL forms-users] 적응형 양식을 만들 수 있는 권한을 그들에게 제공하기 위한 것입니다. 양식의 특정 사용자 그룹에 대한 자세한 목록은 [그룹 및 권한](forms-groups-privileges-tasks.md).
+* **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 컨텐츠 구조를 포함하는 사전 형식의 구성 요소가 있습니다. 또한 테마 및 제출 작업을 정의하는 옵션을 제공합니다. 테마는 모양과 느낌을 정의하고 제출 작업을 정의하여 적응형 양식 제출 시 수행할 작업을 정의합니다. 예를 들어, 수집된 데이터를 데이터 소스로 전송합니다. 클라우드 서비스는 두 가지 유형의 템플릿을 지원합니다.
+
+   * **편집 가능한 템플릿**: 다음을 수행할 수 있습니다 [새로 만들기](template-editor.md) 또는 [기존 편집 가능한 템플릿 가져오기](migrate-to-forms-as-a-cloud-service.md). 를 배포할 수도 있습니다 [최신 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20is%20Java 기반%20integration%20tests 테스트.) 샘플 편집 가능한 템플릿을 가져오려면 다음을 수행하십시오.
+
+   * **정적 템플릿**: 이러한 템플릿은 기존 템플릿이며 Adobe Managed Services(AMS) 및 온-프레미스 AEM Forms 설치(AEM 6.5 Forms 또는 이전 버전)에서 마이그레이션하는 고객에게만 권장됩니다. 이를 통해 정적 템플릿에 대한 기존 투자를 계속 활용할 수 있습니다. 새 적응형 양식을 만들 때는 편집 가능한 템플릿을 사용하는 것이 좋습니다.
+
+
 
 ## 적응형 양식 만들기(기초 구성 요소) {#create-an-adaptive-form-foundation-components}
 
