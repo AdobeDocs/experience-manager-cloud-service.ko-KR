@@ -4,10 +4,10 @@ description: 콘텐츠 조각 및 GraphQL API를 Headless 콘텐츠 관리 시�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,10 @@ ht-degree: 100%
 새 탭에서 GraphQL 탐색기를 시작합니다. 여기에서는 Headless 콘텐츠를 사용하여 앱이나 웹 사이트에서 콘텐츠를 구동하기 전에 이에 대한 쿼리를 작성하고 유효성을 검사할 수 있습니다.
 
 1. AEM Headless 체험판은 테스트 목적으로 콘텐츠를 추출할 수 있는 콘텐츠 조각이 미리 로드된 엔드포인트가 함께 제공됩니다. 편집기의 오른쪽 상단에 있는 **에셋** 드롭다운 메뉴에서 **AEM 데모 에셋** 엔드포인트를 선택해야 합니다.
+
+1. 알려진 문제: if **AEM 데모 자산** 끝점을 드롭다운 메뉴에 없습니다. 패키지 관리자(`/crx/packmgr` AEM 환경의 경로)를 재설치합니다. `aem-demo-assets.ui.content-{VERSION}.zip` 패키지:
+
+   ![패키지 재설치](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. 미리 로드된 **AEM 데모 에셋** 엔드포인트의 목록 쿼리에 대해 다음 코드 조각을 복사합니다. 목록 쿼리는 특정 콘텐츠 조각 모델을 사용하는 모든 콘텐츠 목록을 반환합니다. 인벤토리 및 카테고리 페이지는 일반적으로 이 쿼리 형식을 사용합니다.
 
