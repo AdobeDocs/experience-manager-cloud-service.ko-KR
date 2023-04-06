@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
+source-git-commit: 7c67b72a5dd10dd6c9db8be1812f66dc20e0f85a
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 8%
@@ -166,7 +166,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## 문제 해결 정보 {#tips-troubleshoot}
 
-* 만약 [!UICONTROL 디스크 사용량 보고서] 는 생성되지 않으며 [!DNL Dynamic Media]를 눌러 모든 자산이 올바르게 진행되는지 확인합니다. 해결하려면 자산을 재처리하고 보고서를 다시 생성합니다.
+* 만약 [!UICONTROL 디스크 사용량 보고서] 는 생성되지 않으며 [!DNL Dynamic Media]를 눌러 모든 자산이 올바르게 처리되는지 확인합니다. 해결하려면 자산을 재처리하고 보고서를 다시 생성합니다.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
