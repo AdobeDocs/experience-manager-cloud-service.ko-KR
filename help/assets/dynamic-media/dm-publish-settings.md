@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
+source-git-commit: 26f697dab03e0a3387669304b7f7f14dc2182a6d
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3483'
 ht-degree: 3%
 
 ---
@@ -195,9 +195,13 @@ Secure Testing Services는 현재 다음과 같은 자산 유형 및 기능을 �
 * Web-to-print
 * UGC(사용자 생성 컨텐츠) 서비스
 
->[!IMPORTANT]
->
->Adobe Dynamic Media의 신규 또는 기존 UGC 벡터 이미지 자산에 대한 지원은 2021년 9월 30일에 종료되었습니다.
+   >[!IMPORTANT]
+   >
+   >2023년 5월 1일부터 Dynamic Media의 UGC 자산은 업로드한 날부터 최대 60일 동안 사용할 수 있습니다. 60일 후 자산이 제거됩니다.
+
+   >[!NOTE]
+   >
+   >Adobe Dynamic Media의 신규 또는 기존 UGC 벡터 이미지 자산에 대한 지원은 2021년 9월 30일에 종료되었습니다.
 
 ### Secure Testing 서비스 테스트 {#test-secure-testing-service}
 
