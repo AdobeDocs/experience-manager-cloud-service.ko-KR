@@ -9,9 +9,9 @@ breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4013'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -548,7 +548,7 @@ ht-degree: 99%
          + 적응형 양식 만들기 {#create-an-adaptive-form-on-forms-cs}
             + [적응형 양식 작성 소개](/help/forms/introduction-forms-authoring.md)
             + [적응형 양식 만들기](/help/forms/creating-adaptive-form.md)
-            + [테마, 템플릿 및 데이터 모델 참조](/help/forms/reference-themes-templates-data-models.md)
+            + [참조 테마, 템플릿 및 데이터 모델](/help/forms/reference-themes-templates-data-models.md)
             + [템플릿 만들기](/help/forms/template-editor.md)
             + [테마 만들기](/help/forms/themes.md)
             + [적응형 양식에 대한 JSON 스키마 디자인](/help/forms/adaptive-form-json-schema-form-model.md)
