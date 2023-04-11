@@ -4,8 +4,8 @@ description: 콘텐츠 전송 도구 사전 요구 사항
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
