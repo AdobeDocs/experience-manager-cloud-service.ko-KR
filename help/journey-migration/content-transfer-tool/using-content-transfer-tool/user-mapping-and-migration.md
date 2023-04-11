@@ -1,10 +1,10 @@
 ---
 title: 사용자 매핑 및 주요 마이그레이션
 description: 사용자 매핑 및 주체 마이그레이션 개요
-source-git-commit: aeb8f633b45908a87f15f9feeb3723f90470be92
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 23%
+source-wordcount: '757'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 23%
 
 Adobe Experience Manager(AEM) as a Cloud Service로의 전환 여정의 일부로 사용자 및 그룹을 기존 AEM 시스템에서 AEM as a Cloud Service로 이동해야 합니다. 이는 콘텐츠 전송 도구를 통해 수행됩니다.
 
-AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다. 이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보는 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 Adobe 클라우드 애플리케이션에 SSO(Single Sign-On)를 제공할 수 있습니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)를 참조하십시오. 이러한 변경으로 인해 기존 사용자는 Cloud Service 작성자 인스턴스에서 중복 사용자를 방지하기 위해 IMS ID에 매핑해야 합니다. 기존 AEM의 그룹은 IMS의 그룹과 기본적으로 다르므로 그룹은 매핑되지 않지만, 마이그레이션이 완료된 후 두 그룹 집합을 조정해야 합니다.
+AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 대한 Adobe ID 사용이 완전히 통합된다는 것입니다. 이를 위해서는 사용자 및 사용자 그룹 관리에 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용해야 합니다. 사용자 프로필 정보는 Adobe Identity Management System(IMS)에서 중앙 집중식으로 관리되어 모든 Adobe 클라우드 애플리케이션에 SSO(Single Sign-On)를 제공할 수 있습니다. 자세한 내용은 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html#identity-management)를 참조하십시오. 이러한 변경으로 인해 기존 사용자는 Cloud Service 작성자 인스턴스에서 중복 사용자를 방지하기 위해 IMS ID에 매핑해야 합니다. 기존 AEM의 그룹은 IMS의 그룹과 기본적으로 다르므로 그룹은 매핑되지 않지만, 마이그레이션이 완료된 후 두 그룹 집합을 조정해야 합니다.
 
 ## 사용자 매핑 및 마이그레이션 세부 정보 {#user-mapping-detail}
 
@@ -49,6 +49,6 @@ AEM as a Cloud Service의 주요 변경 내용은 작성자 계층 액세스에 
 
 ## 추가 고려 사항 {#additional-considerations}
 
-* 설정이 **수집하기 전에 클라우드 인스턴스에서 기존 컨텐츠를 지웁니다.** 이(가) 설정되어 있으면, Cloud Service 인스턴스에 이미 전송된 사용자가 전체 기존 저장소와 함께 삭제되고 컨텐츠를 수집하기 위한 새 저장소가 작성됩니다. 또한 이 작업은 Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정하며, Target에 추가된 관리자 사용자에 대해 True입니다. **관리자** 그룹에 속해 있어야 합니다. 관리자 사용자는 **관리자** 그룹 을 사용하여 CTT에 대한 액세스 토큰을 검색할 수 있습니다.
+* 설정이 **수집하기 전에 클라우드 인스턴스에서 기존 컨텐츠를 지웁니다.** 이(가) 설정되어 있으면, Cloud Service 인스턴스에 이미 전송된 사용자가 전체 기존 저장소와 함께 삭제되고 컨텐츠를 수집하기 위한 새 저장소가 작성됩니다. 또한 이 작업은 Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정하며, Target에 추가된 관리자 사용자에 대해 True입니다. **관리자** 그룹에 속해 있어야 합니다. 관리자 사용자를 **관리자** 그룹 을 사용하여 CTT에 대한 액세스 토큰을 검색할 수 있습니다.
 * 컨텐츠 추가를 수행할 때 컨텐츠가 이전 전송 이후 변경되지 않아 전송되지 않으면 해당 컨텐츠와 연관된 사용자 및 그룹도 그 동안 사용자와 그룹이 변경되었더라도 전송되지 않습니다. 사용자 및 그룹은 연결된 컨텐츠와 함께 마이그레이션되기 때문입니다.
 * 대상 AEM Cloud Service 인스턴스에 다른 사용자 이름은 있지만 소스 AEM 인스턴스의 사용자 중 하나와 동일한 이메일 주소를 가진 사용자가 있고 사용자 매핑이 활성화되어 있으면 오류 메시지가 로그에 기록되고 소스 AEM 사용자는 전송되지 않습니다. 이는 지정된 이메일 주소를 가진 한 명의 사용자만 대상 시스템에서 허용되기 때문입니다.

@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 12%
+source-wordcount: '1722'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 12%
 
    * 추출된 데이터를 소스로 포함하는 마이그레이션 세트를 선택합니다.
       * 마이그레이션 세트 는 장기간 동안 활동이 없으면 만료되므로 추출을 수행한 후 비교적 빨리 수집이 발생할 것으로 예상됩니다. 검토 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 자세한 내용
-   * 대상 환경을 선택합니다. 여기서 마이그레이션 세트의 컨텐츠를 수집합니다. 계층을 선택합니다. (작성자/게시).
+   * 대상 환경을 선택합니다. 여기서 마이그레이션 세트의 컨텐츠를 수집합니다. 계층을 선택합니다. (작성자/게시). 빠른 개발 환경은 지원되지 않습니다.
 
    >[!NOTE]
    >
@@ -54,6 +54,10 @@ ht-degree: 12%
    >선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 자세한 내용
    > 
    >사전 복사로 섭취를 사용하는 경우(S3 또는 Azure Data Store용) 먼저 작성자 수집만 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
+
+   >[!NOTE]
+   >
+   >수집은 RDE(Rapid Development Environment) 대상을 지원하지 않습니다. 사용자가 액세스할 수 있어도 가능한 대상 선택으로 표시되지 않습니다.
 
    >[!IMPORTANT]
    >
@@ -71,7 +75,7 @@ ht-degree: 12%
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 수집이 완료되면 화면 오른쪽 위의 (i) 버튼을 클릭하여 수집 작업에 대한 자세한 정보를 얻습니다.
+1. 수집이 완료되면 화면 오른쪽 상단 모서리에서 (i) 단추를 클릭하여 수집 작업에 대한 자세한 정보를 확인하십시오.
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
@@ -103,7 +107,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_topup"
 >title="추가 수집"
 >abstract="추가 기능을 사용하여 이전 콘텐츠 전송 활동 이후 수정된 콘텐츠를 이동합니다. 수집이 완료되면 로그에서 오류/경고를 확인하십시오. 모든 오류는 보고된 문제를 처리하거나 Adobe 고객 지원 센터에 문의하여 즉시 해결해야 합니다."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ko" text="로그 보기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="로그 보기"
 
 컨텐츠 전송 도구에는 이전 컨텐츠 전송 활동 이후 수행된 변경 사항만 전송할 수 있는 차등 컨텐츠 *추가*&#x200B;를 지원하는 기능이 있습니다.
 
@@ -175,4 +179,4 @@ AEM의 각 노드에는 고유한 uuid가 있어야 합니다. 이 오류는 수
 
 ## 다음 단계 {#whats-next}
 
-Target으로 컨텐츠 섭취를 완료하면 각 단계의 로그(추출 및 수집)를 보고 오류를 찾을 수 있습니다. 자세한 내용은 [마이그레이션 세트에 대한 로그 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) 추가 정보
+Target으로 컨텐츠 섭취를 완료하면 각 단계의 로그(추출 및 수집)를 보고 오류를 찾을 수 있습니다. 자세한 내용은 [마이그레이션 세트에 대한 로그 보기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) 추가 정보

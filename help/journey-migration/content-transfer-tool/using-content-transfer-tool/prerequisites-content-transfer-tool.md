@@ -2,10 +2,10 @@
 title: 콘텐츠 전송 도구 사전 요구 사항
 description: 콘텐츠 전송 도구 사전 요구 사항
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 15%
+source-wordcount: '547'
+ht-degree: 11%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="콘텐츠 전송 도구 사용에 대한 중요 고려 사항"
->abstract="Java 및 AEM 버전, 지원되는 데이터 저장소 유형, 사용자 그룹 고려 사항 등 콘텐츠 전송 도구를 사용하기 위한 중요 고려 사항을 검토하십시오."
+>abstract="Java 및 AEM 버전, 지원되는 데이터 저장소 유형, 사용자 그룹 고려 사항 등을 포함한 컨텐츠 전송 도구를 사용하기 위한 중요한 고려 사항을 검토하십시오."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#pre-reqs" text="컨텐츠 전송 도구 사용에 대한 중요한 고려 사항"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#best-practices" text="모범 사례 및 지침"
 
@@ -23,7 +23,7 @@ ht-degree: 15%
 아래 나열된 모든 고려 사항을 검토하십시오.
 
 | 고려 사항 | 현재 지원되는 항목 |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AEM 버전 | 컨텐츠 전송 도구는 AEM 6.3 이상 버전에서만 실행할 수 있습니다. |
 | 세그먼트 저장소 크기 | 5,500만 개 미만의 JCR 노드와 최대 250GB(온라인 압축 크기)의 기존 저장소 *작성자* 및 50GB *게시* 은 현재 지원됩니다. Adobe 고객 지원 센터를 통해 지원 티켓을 만들어 이러한 제한을 초과하는 세그먼트 저장소 크기에 대한 옵션을 논의합니다. |
 | 컨텐츠 저장소의 총 크기 <br>*(세그먼트 저장소 + 데이터 저장소)* | 컨텐츠 전송 도구는 파일 데이터 저장소 유형의 데이터 저장소에 대해 최대 20TB의 컨텐츠를 전송하도록 설계되었습니다. 현재 20TB를 초과하는 항목은 지원되지 않습니다. 20TB 이상의 컨텐츠에 대한 옵션을 논의하려면 Adobe 고객 지원 팀과 지원 티켓을 작성합니다. <br>대용량 리포지토리에 대한 컨텐츠 전송 프로세스를 획기적으로 단축하려면 선택 사항입니다 [사전 복사](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step) 단계를 사용할 수 있습니다. 이는 데이터 저장소의 파일 데이터 저장소, Amazon S3 및 Azure 데이터 저장소 유형에 적용됩니다. Amazon S3 및 Azure Data Store의 경우 20TB보다 큰 저장소 크기가 지원됩니다. |
@@ -34,4 +34,4 @@ ht-degree: 15%
 
 ## 다음 단계 {#whats-next}
 
-사전 요구 사항을 검토하고 마이그레이션 프로젝트에서 컨텐츠 전송 도구를 사용할 수 있는지 여부를 결정했으면 을 참조하십시오 [컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
+사전 요구 사항을 검토하고 마이그레이션 프로젝트에서 컨텐츠 전송 도구를 사용할 수 있는지 여부를 결정했으면 을 참조하십시오 [컨텐츠 전송 도구 사용에 대한 지침 및 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).
