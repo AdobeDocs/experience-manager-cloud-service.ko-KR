@@ -2,7 +2,7 @@
 title: 실행
 description: 코드와 컨텐츠가 클라우드에 준비되면 마이그레이션을 수행하는 방법을 알아봅니다
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 4%
@@ -107,7 +107,7 @@ AEM 소스의 부하가 추출 단계 중에 더 크게 된다는 것을 기억�
 섭취 위의 섹션과 비교 **포함하지 않음** 다음 자산 문제로 인해 실패합니다. 그러나 다음 시나리오에서는 적절한 단계를 수행하는 것이 좋습니다.
 
 * 원본 표현물이 없는 모든 자산
-* 누락된 폴더가 있는 모든 폴더 `jcr:content` 노드
+* 누락된 폴더가 있는 모든 폴더 `jcr:content` 노드 아래에 있어야 합니다.
 
 위의 두 항목은 모두 [모범 사례 분석기](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 보고서 세트에 대해 설명합니다.
 
