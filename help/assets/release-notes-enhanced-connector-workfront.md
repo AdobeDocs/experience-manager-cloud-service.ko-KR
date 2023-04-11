@@ -2,9 +2,9 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: a65f736f922bcb58c09773ff9c6d6f7104b6157d
+source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1090'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 릴리스 특징 {#release-highlights}
 
-최신 버전의 [!DNL Workfront for Experience Manager enhanced connector] 업데이트 포함:
+최신 버전의 [!DNL Workfront for Experience Manager enhanced connector] 다음 업데이트를 포함합니다.
 
 * Experience Manager에 `DateTimeParseException` 연결된 폴더를 만드는 동안 Workfront에서 마지막으로 수정한 날짜를 받은 경우 예외가 발생합니다.
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 * 이제 Workfront에서 주석 삭제를 Experience Manager에 반영합니다.
 
-* Experience Manager에서 as a Cloud Service으로 커넥터를 구성할 수 없는 차단 네트워크 신규 고객을 관리하는 기능입니다.
+* Experience Manager에서 as a Cloud Service으로 커넥터를 구성할 수 없는 차단 net-new 고객을 관리하는 기능입니다.
 
 
 ### 2023년 1월 릴리스 {#january-2022-release}
