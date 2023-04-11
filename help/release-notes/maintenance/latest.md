@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
-source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
+source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 90%
+source-wordcount: '402'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 90%
 
 ### 알려진 문제 {#known-issues-11382}
 
-- SITES-12573 - 필터 내에 변수를 사용하는 GraphQL 쿼리는 하나의 변수를 지정하지 않으면 실패합니다. AEM as a Cloud Service에서 GraphQL을 사용하려면 이 릴리스를 업데이트하지 마십시오.
+- SITES-12573 - 하나의 변수가 지정되지 않으면 필터 내부의 변수를 사용하는 GraphQL 쿼리가 실패합니다. GraphQL을 AEM as a Cloud Service&#39;와 함께 사용하려면 이 릴리스로 업데이트하지 마십시오.
+- SKYOPS-51970 - buildImage 단계에서 사용되는 FACT 버전의 회귀로 인해 사용자 매핑이 일치하지 않습니다.
+- GRANITE-44542 - 패키지 필터에 포함된 폴더에 대해 .content.xml을 제공하여 패키지 노드(jcr:primaryType)를 지정하지 않은 고객에 대해 문제가 보고되었습니다. 이로 인해 이러한 폴더가 nt:folder로 처리되어 다양한 경우에 문제가 발생합니다.
 
 ### 해결된 문제 {#fixed-issues-11382}
 
