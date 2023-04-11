@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '755'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
 
 1. AEM Headless 체험판은 테스트 목적으로 콘텐츠를 추출할 수 있는 콘텐츠 조각이 미리 로드된 엔드포인트가 함께 제공됩니다. 편집기의 오른쪽 상단에 있는 **에셋** 드롭다운 메뉴에서 **AEM 데모 에셋** 엔드포인트를 선택해야 합니다.
 
-1. 알려진 문제: if **AEM 데모 자산** 끝점을 드롭다운 메뉴에 없습니다. 패키지 관리자(`/crx/packmgr` AEM 환경의 경로)를 재설치합니다. `aem-demo-assets.ui.content-{VERSION}.zip` 패키지:
+1. 알려진 문제: 드롭다운 메뉴에 **AEM 데모 에셋** 엔드포인트가 없는 경우 패키지 관리자(AEM 환경의 `/crx/packmgr` 경로)로 이동하여 `aem-demo-assets.ui.content-{VERSION}.zip` 패키지를 다시 설치합니다.
 
    ![패키지 재설치](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
