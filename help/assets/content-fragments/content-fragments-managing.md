@@ -2,9 +2,9 @@
 title: 컨텐츠 조각 관리 (자산 - 컨텐츠 조각)
 description: 자산 콘솔을 사용하여 헤드리스 컨텐츠의 기반인 AEM 컨텐츠 조각을 관리하는 방법을 알아봅니다.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1761'
 ht-degree: 91%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 91%
 >다음과 같은 경우 콘텐츠 조각을 사용할 수 있습니다.
 >
 >* 페이지 작성 시([콘텐츠 조각을 사용하여 페이지 작성](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 참조)
->* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 전달](/help/assets/content-fragments/content-fragments-graphql.md) 시
+>* [GraphQL을 통해 콘텐츠 조각을 사용하여 Headless 콘텐츠 게재](/help/assets/content-fragments/content-fragments-graphql.md) 시
 
 
 >[!NOTE]
@@ -131,10 +131,6 @@ ht-degree: 91%
 >[!CAUTION]
 >
 >콘텐츠 조각을 편집하려면 [적절한 권한](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
-
->[!CAUTION]
->
->콘텐츠 조각을 편집하려면 적절한 권한이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
 1. **자산** 콘솔을 사용하여 컨텐츠 조각의 위치로 이동합니다.
 1. 다음 방법 중 하나를 사용하여 편집할 조각을 엽니다.

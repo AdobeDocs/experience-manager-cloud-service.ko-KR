@@ -5,7 +5,7 @@ landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 �
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -69,7 +69,7 @@ ht-degree: 100%
    * 새 콘텐츠 조각 **[만들기](#creating-new-content-fragment)**
    * 다양한 술어에 따라 콘텐츠 조각을 [필터링](#filtering-fragments)하고 나중에 사용할 수 있도록 해당 필터 저장
    * 콘텐츠 조각 [검색](#searching-fragments)
-   * [선택한 정보 열을 표시하도록 테이블 보기 맞춤화](#selectuse-available-columns)
+   * [선택한 정보 열을 표시하도록 테이블 보기 맞춤화](#select-available-columns)
    * **에셋에서 열기**&#x200B;를 사용하여 **에셋** 콘솔에서 현재 위치를 바로 열 수 있습니다
 
       >[!NOTE]
