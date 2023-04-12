@@ -2,10 +2,10 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 11%
+source-wordcount: '1687'
+ht-degree: 12%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 11%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="추가 수집"
 
 컨텐츠 전송 도구에서 마이그레이션 세트를 수집하려면 아래 단계를 따르십시오.
->[!NOTE]
->선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 사전 복사 단계는 첫 번째 전체 추출 및 통합에 가장 효과적입니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 자세한 내용
 
 >[!NOTE]
 >이 통합에 대한 지원 티켓을 기록해야 합니까? 자세한 내용은 [컨텐츠 전송 도구를 사용하기 전에 고려해야 할 사항](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 을 참조하십시오.
@@ -29,7 +27,6 @@ ht-degree: 11%
 1. Cloud Acceleration Manager로 이동합니다. 프로젝트 카드를 클릭하고 컨텐츠 전송 카드를 클릭합니다. 다음으로 이동 **수집 작업** 을(를) 클릭합니다. **새 수집**
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. 수집 확인 목록을 검토하고 모든 단계가 완료되었는지 확인합니다. 이는 성공적인 수집을 위해 필요한 단계입니다. 을(를) 진행할 수 있습니다. **다음** 검사 목록이 완료된 경우에만 단계입니다.
 
