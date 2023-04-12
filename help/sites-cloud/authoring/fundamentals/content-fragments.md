@@ -2,10 +2,10 @@
 title: 콘텐츠 조각
 description: Adobe Experience Manager as a Cloud Service 콘텐츠 조각을 사용하면 페이지 독립적 콘텐츠를 디자인, 작성, 조정 및 사용할 수 있습니다.
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 7ce05d282d553c5552cd828d08aaf6b7b5fb4e05
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 100%
+source-wordcount: '1227'
+ht-degree: 87%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 * **마케팅 및 캠페인 전략**
    * 중앙에서 관리되는 콘텐츠 조각을 통해 콘텐츠를 검토합니다.
-* **Creative 프로그램**
+* **Creative Pro**
    * 콘텐츠 조각과 관련된 컬렉션을 통해 Creative 에셋을 추적합니다.
 * **사본 작성자**
    * AEM 콘텐츠 조각 편집기에서 작성합니다.
@@ -44,8 +44,8 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
    * 버전 관리/워크플로를 사용할 수 있습니다.
    * 콘텐츠 조각을 공유할 수 있습니다.
    * 번역을 중앙에서 관리할 수 있습니다.
-* **제작자 및 과정 관리자**
-   * AEM에서 작성하여 사전 정의된 조각 및 변형에서 선택합니다.
+* **제작자 및 여정 관리자**
+   * AEM에서 작성하여 사전 정의된 조각 및 변형 중에서 선택합니다.
    * 사본 작성자와 크리에이티브가 중앙에서 관리되는 조각 및 에셋을 업데이트할 때 항상 최신으로 유지되는 조각 및 관련 콘텐츠를 사용할 수 있습니다.
    * 관련성에 대해 조정되는 관련 미디어 콘텐츠를 사용할 수 있습니다.
    * 임시 콘텐츠 변형이 조각에서 중앙 관리되는 상태로 유지되도록 하면서 그러한 변형을 즉석으로 만들 수 있습니다.
@@ -55,7 +55,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 1. 편집할 페이지를 엽니다.
 2. **구성 요소** 브라우저 또는 **새 구성 요소 삽입**&#x200B;에서 **콘텐츠 조각** 구성 요소를 추가합니다.
 3. 다음과 같은 작업을 수행할 수 있습니다.
-   * **에셋** 브라우저를 열고 **콘텐츠 조각**&#x200B;을 필터링합니다(기본값은 이미지). 그런 다음 필수 조각을 구성 요소 인스턴스에 드래그합니다.
+   * **에셋** 브라우저를 열고 **콘텐츠 조각**&#x200B;을 필터링합니다(기본값은 이미지). 그런 다음 필요한 조각을 구성 요소 인스턴스로 드래그합니다.
    * 콘텐츠 조각 구성 요소를 선택한 다음 도구 모음에서 **구성**&#x200B;을 선택하십시오. 대화 상자에서 선택 대화 상자를 열어 필요한 **콘텐츠 조각**&#x200B;을 찾아 선택할 수 있습니다.
 
    >[!NOTE]
@@ -68,7 +68,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
    >[!NOTE]
    >
-   >추가 편집 기능에 대한 자세한 정보는 다음을 참조하십시오.
+   >추가 편집 기능에 대한 자세한 내용은 다음을 참조하십시오.
    >
    >* [응답형 레이아웃](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [페이지 콘텐츠 편집](/help/sites-cloud/authoring/fundamentals/editing-content.md)
@@ -76,7 +76,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 ### 요소 또는 변형 선택 {#selecting-the-element-or-variation}
 
-조각의 **구성** 대화 상자를 열어 현재 페이지에서 사용할 조각을 구성합니다. 이 대화 상자는 사용된 구성 요소에 따라 달라질 수 있습니다.
+조각의 **구성** 대화 상자를 열어 현재 페이지에서 사용할 조각을 구성합니다. 대화 상자는 사용된 구성 요소에 따라 달라질 수 있습니다.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 중간 콘텐츠에서 다음 작업을 수행할 수 있습니다.
 
-* [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)에서 구성 요소를 추가합니다.
+* 에서 구성 요소 추가 [구성 요소 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 * [에셋 브라우저](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)에서 에셋을 추가합니다.
 * 중간 콘텐츠 소스로 [연결된 콘텐츠](#using-associated-content)를 사용합니다.
 
@@ -142,7 +142,7 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 >
 >이 경우 중간 콘텐츠가 그대로 유지됩니다.
 >
->* 중간 구성 요소는 조각 플로우의 구성 요소 순서 내에서 절대 위치에 있습니다. 조각 내의 단락 콘텐츠가 변경되더라도 이 위치는 변경되지 않습니다.
+>* 중간 구성 요소는 조각 플로우의 구성 요소 시퀀스 내에 절대 위치를 갖습니다. 조각 내의 단락 콘텐츠가 변경되더라도 이 위치는 변경되지 않습니다.
 >
 >  중간 단락은 옆에 배치된(조각) 단락과 문맥적 관계가 없으므로 상대적 위치가 변경된 것처럼 보일 수 있습니다.
 >* 두 단락 구조가 충돌하지 않는 경우에는 중간 콘텐츠가 내부에 여전히 있어도 표시되지 않습니다.
@@ -172,12 +172,12 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 예를 들어 이미지의 경우 다음 작업을 수행할 수 있습니다.
 
-* 이미지를 자르고 회전하거나 뒤집습니다.
+* 이미지를 자르거나 회전하거나 뒤집습니다.
 * 제목 또는 대체 텍스트를 추가합니다.
 * 크기를 지정합니다.
 * 레이아웃을 구성할 수도 있습니다.
 
-이동, 복사, 삭제와 같은 기타 변경 사항은 조각 편집기에서 작성해야 합니다.
+이동, 복사, 삭제와 같은 기타 변경 사항은 조각 편집기에서 수행해야 합니다.
 
 ### 게시 {#publishing}
 
@@ -185,3 +185,10 @@ Adobe Experience Manager (AEM) as a Cloud Service의 콘텐츠 조각은 [페이
 
 * [콘텐츠 조각 콘솔에서 조각을 만든](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment) 후에 조각을 게시할 수 있습니다.
 * *게시 취소된 조각*&#x200B;을 게시 중인 페이지에서 사용하는 경우 그때 조각이 게시될 수도 있습니다.
+
+## 컨텐츠 조각 내보내기 {#exporting-content-fragments}
+
+Adobe Target으로 내보내기의 경우 JSON을 사용하여 조각을 전달할 수 있습니다. 다음을 참조하십시오.
+
+* [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
+* [컨텐츠 조각을 Adobe Target으로 내보내기](/help/sites-cloud/integrating/content-fragments-target.md)

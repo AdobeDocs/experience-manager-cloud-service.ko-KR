@@ -8,10 +8,10 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
-workflow-type: ht
-source-wordcount: '4013'
-ht-degree: 100%
+source-git-commit: af3b5950a36bbd4a8d1e0de9591d31c50fa774c8
+workflow-type: tm+mt
+source-wordcount: '4023'
+ht-degree: 99%
 
 ---
 
@@ -34,6 +34,8 @@ ht-degree: 100%
    + [릴리스 정보](/help/release-notes/home.md)
    + AEMaaCS 기능 릴리스 정보 {#release-notes}
       + [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2023 {#2023}
+         + [2023.1.0 릴리스 정보](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
       + 2022 {#2022}
          + [2022.10.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [2022.8.0 릴리스 정보](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -367,6 +369,7 @@ ht-degree: 100%
       + [Adobe Learning Manager와 통합](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Target과 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [컨텐츠 조각을 Adobe Target으로 내보내기](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign과 통합](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
