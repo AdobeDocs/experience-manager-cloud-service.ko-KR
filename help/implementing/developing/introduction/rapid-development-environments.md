@@ -1,19 +1,15 @@
 ---
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
-source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
+source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3304'
 ht-degree: 5%
 
 ---
 
 
 # 신속한 개발 환경 {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->이 기능은 고객에게 점진적으로 출시될 예정입니다.
 
 변경 사항을 배포하려면 현재 클라우드 개발 환경에서 CI/CD 파이프라인이라는 광범위한 코드 보안 및 품질 규칙을 사용하는 프로세스를 사용해야 합니다. Adobe은 빠르고 반복적인 변경이 필요한 상황에서 RDE(Rapid Development Environments)를 도입했습니다.
 
