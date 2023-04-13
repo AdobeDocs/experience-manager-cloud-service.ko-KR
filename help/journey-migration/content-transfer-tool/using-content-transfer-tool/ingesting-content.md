@@ -2,9 +2,9 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
+source-git-commit: b0723faa23d77ac6b747f189e0643db59ddb2802
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1702'
 ht-degree: 12%
 
 ---
@@ -39,30 +39,19 @@ ht-degree: 12%
    * 대상 환경을 선택합니다. 여기서 마이그레이션 세트의 컨텐츠를 수집합니다. 계층을 선택합니다. (작성자/게시). 빠른 개발 환경은 지원되지 않습니다.
 
    >[!NOTE]
-   >
-   >소스가 작성자인 경우 타겟의 작성자 계층으로 가져오는 것이 좋습니다. 마찬가지로 소스가 게시인 경우 Target도 게시여야 합니다.
-
-   >[!NOTE]
-   >
-   >대상 계층이 `Author`를 입력하면 수집 시간 중에 작성자 인스턴스가 종료되며 사용자(예: 작성자 또는 유지 관리를 수행하는 모든 사용자)는 사용할 수 없습니다. 시스템을 보호하고, 변경 사항이 손실되거나 수집 충돌이 발생할 수 있는 것을 방지하기 위한 것입니다. 팀이 이 사실을 알고 있는지 확인하십시오. 또한 환경은 작성 중에 최대 절전 모드로 전환됩니다.
-
-   >[!NOTE]
-   >
-   >선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 자세한 내용
-   > 
-   >사전 복사로 섭취를 사용하는 경우(S3 또는 Azure Data Store용) 먼저 작성자 수집만 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
-
-   >[!NOTE]
-   >
-   >수집은 RDE(Rapid Development Environment) 대상을 지원하지 않습니다. 사용자가 액세스할 수 있어도 가능한 대상 선택으로 표시되지 않습니다.
+   >다음 참고는 컨텐츠를 수집하는 데 적용됩니다.
+   * 소스가 작성자인 경우 타겟의 작성자 계층으로 가져오는 것이 좋습니다. 마찬가지로 소스가 게시인 경우 Target도 게시여야 합니다.
+   * 대상 계층이 `Author`를 입력하면 수집 시간 중에 작성자 인스턴스가 종료되며 사용자(예: 작성자 또는 유지 관리를 수행하는 모든 사용자)는 사용할 수 없습니다. 시스템을 보호하고, 변경 사항이 손실되거나 수집 충돌이 발생할 수 있는 것을 방지하기 위한 것입니다. 팀이 이 사실을 알고 있는지 확인하십시오. 또한 환경은 작성 중에 최대 절전 모드로 전환됩니다.
+   * 선택적 사전 복사 단계를 실행하여 수집 단계를 크게 단축할 수 있습니다. 을(를) 참조하십시오. [AzCopy를 사용한 수집](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 자세한 내용
+   * 사전 복사로 섭취를 사용하는 경우(S3 또는 Azure Data Store용) 먼저 작성자 수집만 실행하는 것이 좋습니다. 이 경우 나중에 실행될 때 게시 수집 속도가 빨라집니다.
+   * 수집은 RDE(Rapid Development Environment) 대상을 지원하지 않습니다. 사용자가 액세스할 수 있어도 가능한 대상 선택으로 표시되지 않습니다.
 
    >[!IMPORTANT]
-   >
-   >로컬 환경에 속하는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** 대상 Cloud Service 작성자 서비스의 그룹입니다. 수집을 시작할 수 없는 경우 다음을 참조하십시오. [수집을 시작할 수 없음](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 자세한 내용
+   > 다음 중요 알림은 컨텐츠 섭취에 적용됩니다.
+   * 로컬 환경에 속하는 경우에만 대상 환경에 대한 수집을 시작할 수 있습니다 **AEM 관리자** 대상 Cloud Service 작성자 서비스의 그룹입니다. 수집을 시작할 수 없는 경우 다음을 참조하십시오. [수집을 시작할 수 없음](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 자세한 내용
+   * 설정이 **지우기** 수집 전에 활성화되어 있으면 기존 저장소 전체가 삭제되고 컨텐츠를 수집할 새 저장소가 만들어집니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. 또한 **관리자** 그룹에 속해 있어야 합니다. 수집을 시작하려면 관리자 그룹에 다시 추가해야 합니다.
 
-   >[!IMPORTANT]
-   >
-   >설정이 **지우기** 수집 전에 활성화되어 있으면 기존 저장소 전체가 삭제되고 컨텐츠를 수집할 새 저장소가 만들어집니다. 즉, Target Cloud Service 인스턴스에 대한 권한을 포함한 모든 설정을 재설정합니다. 또한 **관리자** 그룹에 속해 있어야 합니다. 수집을 시작하려면 관리자 그룹에 다시 추가해야 합니다.
+
 
 1. 클릭 **수집**
 
