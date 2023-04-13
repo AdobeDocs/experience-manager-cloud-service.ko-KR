@@ -5,10 +5,10 @@ landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 �
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 91%
+source-wordcount: '1028'
+ht-degree: 85%
 
 ---
 
@@ -162,6 +162,22 @@ ht-degree: 91%
 * 재사용을 위해 저장된 검색 필터를 검색할 수 있는 옵션
 
 ![콘텐츠 조각 콘솔 - 필터링](assets/cfc-console-filter.png)
+
+### 빠른 필터링 {#fast-filtering}
+
+목록에서 특정 열 값을 클릭하여 조건자를 선택할 수도 있습니다. 하나 이상의 값을 선택하여 조건자를 결합할 수 있습니다.
+
+예를 들어, **게시됨** 에서 **상태** 열:
+
+>[!NOTE]
+>
+>빠른 필터링은 **모델**, **상태**, **수정한 사람**, 및 **게시자** 열.
+
+![콘텐츠 조각 콘솔 - 필터링](assets/cfc-console-fast-filter-01.png)
+
+선택하면 필터 조건자로 표시되고 목록이 그에 따라 필터링됩니다.
+
+![콘텐츠 조각 콘솔 - 필터링](assets/cfc-console-fast-filter-02.png)
 
 ## 조각 검색 {#searching-fragments}
 
