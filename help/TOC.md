@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0529156e83ebb4d74d76ebc5c0bf882bd09f7b43
+source-git-commit: 18549d90d9e326e30c5835a97c2c446dff616ee7
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4031'
 ht-degree: 99%
 
 ---
@@ -177,6 +177,7 @@ ht-degree: 99%
       + [앱의 콘텐츠 구조 만들기](/help/trials/headless/content-structure.md)
       + [Headless 콘텐츠 만들기](/help/trials/headless/create-content.md)
       + [GraphQL API를 통한 콘텐츠 추출](/help/trials/headless/extract-content.md)
+      + [JavaScript를 사용하여 JSON 콘텐츠 가져오기](/help/trials/headless/code-playground.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
    + [준비 단계](/help/journey-migration/readiness.md)
