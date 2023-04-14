@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 18549d90d9e326e30c5835a97c2c446dff616ee7
+source-git-commit: ca28ed2b9d566015bd62e54d27e69629650f9e82
 workflow-type: tm+mt
-source-wordcount: '4031'
+source-wordcount: '4038'
 ht-degree: 99%
 
 ---
@@ -146,6 +146,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service에 대한 IMS 지원](/help/security/ims-support.md)
    + [AEM as a Cloud Service에 대한 Same Site 쿠키 지원](/help/security/same-site-cookie-support.md)
    + [메일 서비스에 대한 OAuth2 지원](/help/security/oauth2-support-for-mail-service.md)
+   + [AEM as a Cloud Service 보안 고려 사항](/help/security/security-considerations.md)
 + 온보딩 {#onboarding}
    + [여기에서 시작](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 온보딩 여정 {#journey}
