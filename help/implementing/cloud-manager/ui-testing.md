@@ -3,9 +3,9 @@ title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2147'
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 AEM은 사용자 정의 애플리케이션에 대한 원활한 업데이트를 보장하기 위해 통합된 [Cloud Manager 품질 게이트](/help/implementing/cloud-manager/custom-code-quality-rules.md) 제품군을 제공합니다 특히 IT 테스트 게이트는 이미 AEM API를 사용한 사용자 정의 테스트의 만들기 및 자동화를 지원합니다.
 
-UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 빌드된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다. 또한, UI 테스트 프로젝트를 이용하여 손쉽게 생성할 수 있다 [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+UI 테스트는 언어 및 프레임워크(예: Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 빌드된 기타 프레임워크 및 기술)에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다. 또한 UI 테스트 프로젝트는 [AEM 프로젝트 아키타입](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용해서 쉽게 생성할 수 있습니다.
 
-UI 테스트는 [**프로덕션 파이프라인**&#x200B;의 ](/help/implementing/cloud-manager/deploy-code.md)사용자 정의 UI 테스트[ 단계](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)를 통해 또는 선택적으로 [비프로덕션 파이프라인의 같은 단계를 통해 각 Cloud Manager 파이프라인에 대한 특정 품질 게이트의 일부로 실행됩니다](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 회귀 및 새로운 기능을 포함한 모든 UI 테스트를 통해 오류를 감지하고 보고할 수 있습니다.
+UI 테스트는 [**프로덕션 파이프라인**&#x200B;의 ](/help/implementing/cloud-manager/deploy-code.md)사용자 정의 UI 테스트[ 단계](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)를 통해 또는 선택적으로 [비프로덕션 파이프라인의 같은 단계를 통해 각 Cloud Manager 파이프라인에 대한 특정 품질 게이트의 일부로 실행됩니다](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 회귀 및 새로운 기능을 포함한 모든 UI 테스트를 통해 오류를 감지 및 보고할 수 있습니다.
 
-Java로 작성된 HTTP 테스트인 사용자 지정 기능 테스트와 달리, UI 테스트는 섹션에 정의된 규칙을 따르는 한 모든 언어로 작성된 테스트가 있는 Docker 이미지가 될 수 있습니다 [UI 테스트 작성](#building-ui-tests).
+Java로 작성된 HTTP 테스트인 사용자 정의 기능 테스트와 달리 UI 테스트는 [UI 테스트 빌드](#building-ui-tests) 섹션에 정의된 컨벤션을 따르는 한 어떤 언어로든 작성할 수 있는 테스트가 담긴 도커 이미지입니다.
 
 >[!TIP]
 >
->Adobe은 [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+>Adobe는 [AEM 프로젝트 아키타입](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)에 제시된 구조와 언어(JavaScript 및 WDIO)를 따를 것을 권장합니다.
 >
 >Adobe는 또한 Java 및 WebDriver를 기반으로 하는 UI 테스트 모듈 예제를 제공합니다. 자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)를 참조하십시오.
 
@@ -45,15 +45,15 @@ Java로 작성된 HTTP 테스트인 사용자 지정 기능 테스트와 달리,
 
       >[!NOTE]
       >
-      >Cloud Manager가 자동으로 생성되기 전에 저장소가 생성된 경우 `it.tests` 폴더, [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
+      >Cloud Manager가 자동으로 `it.tests` 폴더를 생성하기 전에 사용자 저장소가 생성되었다면 [AEM 프로젝트 아키타입](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)을 사용해서 최신 버전도 생성할 수 있습니다.
 
-   * Java 및 WebDriver의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Java 및 WebDriver의 경우 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)에 있는 샘플 코드를 사용하십시오.
 
    * 다른 프로그래밍 언어의 경우 이 문서의 [UI 테스트 빌드](#building-ui-tests) 섹션을 참조하여 테스트 프로젝트를 설정합니다.
 
 1. 이 문서의 [고객 옵트인](#customer-opt-in) 섹션에 따라 UI 테스트가 활성화되어 있는지 확인합니다.
 
-1. 테스트 사례 개발 및 [로컬에서 테스트 실행](#run-ui-tests-locally).
+1. 자신의 테스트 케이스를 개발하고 [테스트를 로컬로 실행](#run-ui-tests-locally)하십시오.
 
 1. Cloud Manager 저장소에 코드를 커밋하고 Cloud Manager 파이프라인을 실행합니다.
 
@@ -309,7 +309,7 @@ Cloud Manager의 테스트는 기술 관리 사용자를 통해 실행됩니다.
 >* 로그 파일은 저장소의 `target/reports` 폴더에 저장됩니다.
 >* 테스트에서 테스트를 위해 ChromeDriver의 최신 릴리스를 자동으로 다운로드하므로 최신 Chrome 버전을 사용 중인지 확인해야 합니다.
 >
->자세한 내용은 [AEM 프로젝트 원형 저장소](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>자세한 내용은 [AEM 프로젝트 아키타입 저장소](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)를 참고하십시오.
 
 ### Java 테스트 샘플 {#java-sample}
 
@@ -332,4 +332,4 @@ Cloud Manager의 테스트는 기술 관리 사용자를 통해 실행됩니다.
 >
 >* 로그 파일은 저장소의 `target/reports` 폴더에 저장됩니다.
 >
->자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>자세한 내용은 [AEM 테스트 샘플 저장소](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)를 참고하십시오.
