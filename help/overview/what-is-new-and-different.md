@@ -3,9 +3,9 @@ title: 차이점 및 새로운 기능 - Adobe Experience Manager as a Cloud Serv
 description: 차이점 및 새로운 기능 - Adobe Experience Manager(AEM) as a Cloud Service
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1903'
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ ht-degree: 0%
 
 이제 AEM as a Cloud Service에는
 
-* AEM 이미지의 수가 다양한 동적 아키텍처가 있습니다.
+* AEM 이미지의 수가 다양한 다이내믹 아키텍처가 있습니다.
 
-![동적 아키텍처](assets/introduction-03.png "동적 아키텍처")
+![다이내믹 아키텍처](assets/introduction-03.png "다이내믹 아키텍처")
 
 이 아키텍처는
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## AEM 업데이트 {#aem-updates}
 
-AEM as a Cloud Service는 이제 지속적인 통합 및 연속 제공(CI/CD)을 사용하여 프로젝트를 가장 최신 AEM 버전에서 작업할 수 있도록 해 줍니다. 즉, 프로덕션 및 스테이징 인스턴스는 사용자를 위한 서비스를 중단 없이 최신 AEM 버전으로 업데이트됩니다.
+AEM as a Cloud Service는 이제 지속적인 통합 및 연속 게재(CI/CD)를 사용하여 프로젝트를 가장 최신 AEM 버전에서 작업할 수 있도록 해 줍니다. 이는 프러덕션 및 스테이징 인스턴스가 사용자에 대한 서비스 중단 없이 최신 AEM 버전으로 업데이트된다는 것을 뜻합니다.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Cloud Manager는 다음과 같은 AEM as a Cloud Service의 주요 구성 요소
 
 * 이들 구성 요소에 대한 중요 라이프사이클 이벤트 알림 (예: 제품 업데이트)
 
-Cloud Manager는 여러 지역 전역에 걸쳐 데이터센터에 환경을 생성합니다. CDN PoPs(Points of Presence)를 통해 전 세계 고객에게 짧은 지연 시간 내에 콘텐츠를 전송할 수 있습니다.
+Cloud Manager는 여러 지역 전역에 걸쳐 데이터센터에 환경을 생성합니다. CDN PoPs(Points of Presence)를 통해 전 세계 고객에게 짧은 지연 시간 내에 콘텐츠를 게재할 수 있습니다.
 
 
 ## 온보딩 {#onboarding}
@@ -158,7 +158,7 @@ Adobe에서 많은 측면을 담당하므로 AEM as a Cloud service를 사용하
 >
 >자세한 내용을 알아보려면 [개발 가이드라인](/help/implementing/developing/introduction/development-guidelines.md) 및 [개발 - WKND 튜토리얼](/help/implementing/developing/introduction/develop-wknd-tutorial.md)을 시작할 수 있습니다.
 
-AEM as a Cloud Service를 지원하는 새 아키텍처에는 전반적인 개발자 경험에 대한 몇 가지 주요 변경 내용이 포함됩니다. AEM as a Cloud Service의 주요 목표 중 하나는 숙련된 고객(온프레미스 또는 Adobe Managed Services의 컨텍스트에서 AEM을 사용한 고객)이 맞춤화된 코드 대부분을 다시 작성하지 않고도 AEM as a Cloud Service로 가능한 한 빨리 마이그레이션할 수 있도록 하는 것입니다. 그러나 여전히 일부 조정이 필요할 수 있습니다.
+AEM as a Cloud Service를 지원하는 새 아키텍처에는 전반적인 개발자 경험에 대한 몇 가지 주요 변경 내용이 포함됩니다. AEM as a Cloud Service의 주요 목표 중 하나는 숙련된 고객(온프레미스 또는 Adobe Managed Services의 컨텍스트에서 AEM을 사용한 고객)이 맞춤화된 코드 대부분을 다시 작성하지 않고도 AEM as a Cloud Service로 가능한 한 빨리 마이그레이션할 수 있도록 하는 것입니다. 단, 여전히 일부 조정이 필요할 수 있습니다.
 
 ### 클라우드 개발 {#aem-as-a-cloud-service-developing-cloud-development}
 
