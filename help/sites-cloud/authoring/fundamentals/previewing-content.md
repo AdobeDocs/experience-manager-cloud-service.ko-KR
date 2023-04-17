@@ -2,10 +2,10 @@
 title: 콘텐츠 미리보기
 description: AEM 미리보기 서비스를 사용하여 콘텐츠를 시작하기 전에 미리 보는 방법에 대해 알아봅니다.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 95%
 
 ---
 
@@ -16,11 +16,7 @@ AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 경험이 �
 
 이를 사용하면 페이지 전환 및 게시측 전용 콘텐츠와 같은 작성자 환경에는 표시되지 않는 페이지 경험을 미리 볼 수 있습니다.
 
-환경 미리보기에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 문서를 참조하십시오.
-
->[!NOTE]
->
->경험 조각을 미리보기에 게시하는 것은 기본적으로 경험 조각 콘솔 또는 편집기를 통해 페이지를 게시하는 것과 동일한 절차를 따릅니다.
+미리 보기 환경에 대한 자세한 내용은 문서를 참조하십시오 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## 미리보기에 콘텐츠 게시 {#publishing-content-to-preview}
 
@@ -52,27 +48,10 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 유일한 차이점은 **대상**&#x200B;이 **미리보기**&#x200B;가 되도록 선택할 수 있다는 것입니다.
 
-## 게시 계층에 대해 OSGi 설정 구성 {#configuring-osgi-settings-for-the-preview-tier}
+## 추가 정보 {#further-information}
 
-미리보기 계층의 OSGi 속성 값은 게시 계층에서 상속됩니다. 그러나 `service` 매개변수를 `preview` 값으로 설정하여 미리보기 계층 값을 게시 계층과 다르게 할 수 있습니다. 다음 OSGi 속성의 예제는 통합 끝점의 URL을 결정합니다.
+또한 Headless 개념 및 용어 소개가 포함되어 있는
 
-```
-[
-{
-"name":"INTEGRATION_URL",
-"type":"string",
-"value":"http://s2.integrationvendor.com",
-"service": "preview"
-}
-]
-```
+* [게시 계층에 대해 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
-자세한 내용은 OSGi 구성 설명서의 [이 섹션](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration)을 참조하십시오.
-
-## Developer Console을 사용하여 미리보기 디버깅 {#debugging-preview-using-the-developer-console}
-
-다음 단계를 따라 Developer Console을 사용하여 게시 계층을 디버깅합니다.
-
-* [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)에서 **-- 모두 미리보기 --** 또는 이름에 **prev**&#x200B;가 포함된 프로덕션 환경을 선택합니다.
-* 미리보기 인스턴스에 대한 관련 정보 생성
-환경에 대한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 문서를 참조하십시오.
+* [Developer Console을 사용하여 미리보기 디버깅](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

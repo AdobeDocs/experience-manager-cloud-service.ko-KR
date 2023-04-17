@@ -1,0 +1,47 @@
+---
+title: 게시 계층에 대해 OSGi 설정 구성
+description: 라이브로 전환하기 전에 컨텐츠를 미리 보도록 AEM 미리 보기 서비스를 구성하는 방법을 알아봅니다.
+source-git-commit: 7b56bb05e31d7a61d7a8fb13e2bd0ff6e4fb301d
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 64%
+
+---
+
+
+# 게시 계층에 대해 OSGi 설정 구성 {#configure-osgi-preview-tier}
+
+AEM은 웹 사이트가 게시 환경에 도달하기 전에 개발자와 컨텐츠 작성자가 웹 사이트의 최종 경험을 미리 볼 수 있도록 해주는 사이트 미리 보기 서비스를 제공하며 공개적으로 사용할 수 있습니다.
+
+작성 환경에서 볼 수 없는 다양한 경험을 쉽게 미리 볼 수 있습니다. 예를 들어 페이지 전환, 경험 조각 및 기타 게시 측 전용 콘텐츠가 있습니다.
+
+미리보기 계층의 OSGi 속성 값은 게시 계층에서 상속됩니다. 그러나 `service` 매개변수를 `preview` 값으로 설정하여 미리보기 계층 값을 게시 계층과 다르게 할 수 있습니다. 
+
+>[!NOTE]
+>
+>환경 미리보기에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) 문서를 참조하십시오.
+
+## 미리 보기 계층에 대한 OSGi 설정 구성 {#configuring-osgi-settings-for-the-preview-tier}
+
+다음 OSGi 속성의 예제는 통합 끝점의 URL을 결정합니다.
+
+```
+[
+{
+"name":"INTEGRATION_URL",
+"type":"string",
+"value":"http://s2.integrationvendor.com",
+"service": "preview"
+}
+]
+```
+
+자세한 내용은 OSGi 구성 설명서의 [이 섹션](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration)을 참조하십시오.
+
+## Developer Console을 사용하여 미리보기 디버깅 {#debugging-preview-using-the-developer-console}
+
+다음 단계를 따라 Developer Console을 사용하여 게시 계층을 디버깅합니다.
+
+* [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)에서 **-- 모두 미리보기 --** 또는 이름에 **prev**&#x200B;가 포함된 프로덕션 환경을 선택합니다.
+* 미리보기 인스턴스에 대한 관련 정보 생성
+환경에 대한 URL을 가져오는 방법에 대한 자세한 내용은 [환경 관리](/help/implementing/cloud-manager/manage-environments.md) 문서를 참조하십시오.
