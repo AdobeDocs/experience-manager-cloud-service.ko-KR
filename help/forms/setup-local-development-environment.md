@@ -2,9 +2,9 @@
 title: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '3020'
 ht-degree: 2%
 
 ---
@@ -333,7 +333,7 @@ Dispatcher 설정에 대한 자세한 지침은 [로컬 Dispatcher 도구 설정
 
 ## 기존 AEM Archetype 기반 프로젝트에 대한 응용 Forms 코어 구성 요소 활성화 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-AEM Forms as a Cloud Service용 AEM Archetype 버전 40 이상 기반 프로그램을 사용하는 경우 코어 구성 요소 가 사용자 환경에 자동으로 활성화됩니다.
+AEM Forms as a Cloud Service용 AEM Archetype 버전 40 이상 기반 프로그램을 사용하는 경우 코어 구성 요소 가 사용자 환경에 자동으로 활성화됩니다. 환경에 대한 코어 구성 요소 활성화 시 **응용 Forms(핵심 구성 요소)** 템플릿 및 캔버스 테마가 환경에 추가됩니다. AEM SDK 버전이 2023.02.0보다 오래된 경우, [확인 `prerelease` 환경에 활성화된 플래그](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) 적응형 Forms 코어 구성 요소는 2023.02.0 릴리스 전 사전 릴리스의 일부입니다.
 
 이전 버전의 Archetype을 기반으로 AEM Forms as a Cloud Service 환경에 적응형 Forms 코어 구성 요소를 활성화하려면 WCM 코어 구성 요소 예 아티팩트와 Forms 코어 구성 요소 아티팩트(예 포함)를 프로젝트에 포함합니다.
 

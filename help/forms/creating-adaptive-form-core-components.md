@@ -4,10 +4,10 @@ description: 을 사용하여 적응형 양식을 만드는 방법을 알아봅�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 1%
+source-wordcount: '1496'
+ht-degree: 2%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 1%
 
 시작하기 전에 사용 가능한 Forms 구성 요소의 유형에 대해 알아봅니다.
 
-* [응용 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 디지털 등록 환경을 위한 사용자 정의 기능, 개발 시간 단축 및 유지 관리 비용을 제공합니다. 개발자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다. Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 활용하여 적응형 Forms을 개발할 것을 권장합니다.
+* [응용 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko): 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 디지털 등록 환경을 위한 사용자 정의 기능, 개발 시간 단축 및 유지 관리 비용을 제공합니다. 개발자는 이러한 구성 요소를 쉽게 사용자 지정하고 스타일을 지정할 수 있습니다. Adobe은 이러한 현대적이고 확장 가능한 구성 요소를 활용하여 적응형 Forms을 개발할 것을 권장합니다.
 
 * [응용 Forms 기초 구성 요소](creating-adaptive-form.md): 클래식(이전) 데이터 캡처 구성 요소입니다. 적응형 양식을 기반으로 하는 기존 기초 구성 요소를 계속 사용하여 편집할 수 있습니다. 새 양식을 만드는 경우  [응용 Forms 핵심 구성 요소](creating-adaptive-form-core-components.md) 적용형 Forms을 만들려면
 
 ![적응형 양식 만들기 마법사](/help/release-notes/assets/wizard.png)
 
 
-## 전제 조건
+## 사전 요구 사항
 
 적응형 양식을 만들려면 다음 항목이 필요합니다.
 
-* **환경을 위한 적응형 Forms 핵심 구성 요소 활성화**: 새 프로그램을 만들 때 환경에 대해 응용 Forms 코어 구성 요소 가 이미 활성화되었습니다. Archetype 39 이하 버전을 기반으로 하는 Forms as a Cloud Service 환경이 있는 경우, [환경을 위한 적응형 Forms 핵심 구성 요소 활성화](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). 환경에 대한 코어 구성 요소 활성화 시 **응용 Forms(핵심 구성 요소)** 템플릿 및 캔버스 테마가 환경에 추가됩니다.
+* **환경을 위한 적응형 Forms 핵심 구성 요소 활성화**: 새 프로그램을 만들 때 환경에 대해 응용 Forms 코어 구성 요소 가 이미 활성화되었습니다. Archetype 39 이하 버전을 기반으로 하는 Forms as a Cloud Service 환경이 있는 경우, [환경을 위한 적응형 Forms 핵심 구성 요소 활성화](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). 환경에 대한 코어 구성 요소 활성화 시 **응용 Forms(핵심 구성 요소)** 템플릿 및 캔버스 테마가 환경에 추가됩니다. AEM SDK 버전이 2023.02.0보다 오래된 경우, [확인 `prerelease` 환경에 활성화된 플래그](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) 적응형 Forms 코어 구성 요소는 2023.02.0 릴리스 전 사전 릴리스의 일부입니다.
 
 * **적응형 양식 템플릿**: 템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 컨텐츠 구조를 포함하는 사전 형식의 구성 요소가 있습니다. 또한 테마 및 제출 작업을 정의하는 옵션을 제공합니다. 테마는 모양과 느낌을 정의하고 제출 작업을 정의하여 적응형 양식 제출 시 수행할 작업을 정의합니다. 예를 들어, 수집된 데이터를 데이터 소스로 전송합니다. 클라우드 서비스는 라는 OOTB 템플릿을 제공합니다.
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 ## 사용 가능한 응용 Forms 핵심 구성 요소
 
-응용 Forms 코어 구성 요소는 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고 개발 시간을 단축하며 디지털 등록 경험에 대한 유지 관리 비용을 절감합니다. [응용 Forms 코어 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) 에는 각 구성 요소의 기능에 대한 자세한 정보와 함께 사용 가능한 구성 요소의 세부 목록이 있습니다. 또한 [https://aemcomponents.dev/](https://aemcomponents.dev/) 사용 가능한 핵심 구성 요소를 보려면 클릭하십시오.
+응용 Forms 코어 구성 요소는 표준화된 데이터 캡처 구성 요소입니다. 이러한 구성 요소는 사용자 정의 기능을 제공하고 개발 시간을 단축하며 디지털 등록 경험에 대한 유지 관리 비용을 절감합니다. [응용 Forms 코어 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko) 에는 각 구성 요소의 기능에 대한 자세한 정보와 함께 사용 가능한 구성 요소의 세부 목록이 있습니다. 또한 [https://aemcomponents.dev/](https://aemcomponents.dev/) 사용 가능한 핵심 구성 요소를 보려면 클릭하십시오.
 
 ## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model}
 
