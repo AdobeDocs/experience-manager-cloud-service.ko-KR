@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 57666d474cd2ae41048e2d30eb27b0719a447005
+source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
 workflow-type: tm+mt
-source-wordcount: '5899'
+source-wordcount: '5887'
 ht-degree: 3%
 
 ---
@@ -95,7 +95,6 @@ ht-degree: 3%
 
       * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
          [웹 페이지에 비디오 뷰어 포함](/help/assets/dynamic-media/embed-code.md).
-   * [YouTube에 비디오 게시](#publishing-videos-to-youtube).
    * [비디오 보고서 생성](#viewing-video-reports).
 
    * [비디오에 캡션 추가](#adding-captions-to-video).
@@ -273,7 +272,7 @@ DASH는 국제 표준이며 HLS는 Apple 표준입니다. 둘 다 응용 비디�
 
 ## 비디오 인코딩 우수 사례 {#best-practices-for-encoding-videos}
 
-다음 **Dynamic Media 인코딩 비디오** Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 워크플로우가 비디오를 인코딩합니다. This workflow captures workflow process history and failure information. 자세한 내용은 [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress). Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우, **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우는 비디오를 업로드할 때 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우, **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
+다음 **Dynamic Media 인코딩 비디오** Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우 워크플로우가 비디오를 인코딩합니다. This workflow captures workflow process history and failure information. Dynamic Media을 활성화하고 비디오 Cloud Services을 설정한 경우, **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우는 비디오를 업로드할 때 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우, **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 
 다음은 소스 비디오 파일을 인코딩하기 위한 우수 사례 팁입니다.
 
