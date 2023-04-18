@@ -1,31 +1,31 @@
 ---
-title: JavaScript를 사용하여 JSON 콘텐츠 가져오기
-description: CodePen 앱 및 AEM Headless Client for JavaScript를 사용하여 평가판 환경에서 JSON 컨텐츠 가져오기를 탐색합니다.
+title: JavaScript로 JSON 콘텐츠 가져오기
+description: CodePen 앱 및 JavaScript용 AEM Headless 클라이언트를 사용하여 체험판 환경에서 JSON 콘텐츠를 가져오는 방법을 살펴보십시오.
 hidefromtoc: true
 index: false
 source-git-commit: 3aff5ef2fb9ecdd815f0bc1a813d3a3982b4e0ed
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# JavaScript를 사용하여 JSON 콘텐츠 가져오기 {#fetch-json}
+# JavaScript로 JSON 콘텐츠 가져오기 {#fetch-json}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="JavaScript를 사용하여 JSON 콘텐츠 가져오기"
->abstract="CodePen 앱 및 AEM Headless Client for JavaScript를 사용하여 평가판 환경에서 JSON 컨텐츠 가져오기를 탐색합니다."
+>title="JavaScript로 JSON 콘텐츠 가져오기"
+>abstract="CodePen 앱 및 JavaScript용 AEM Headless 클라이언트를 사용하여 체험판 환경에서 JSON 콘텐츠를 가져오는 방법을 살펴보십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="샘플 CodePen 앱 실행"
->abstract="GraphQL 지속적인 쿼리를 사용하여 평가판 환경에서 JSON 데이터를 가져오기 위해 최소한의 CodePen 앱을 사용했습니다.<br><br>아래 를 클릭하여 CodePen 예를 시작한 다음, 이 안내서에 따라 자세한 내용을 확인하십시오."
+>abstract="GraphQL 지속 쿼리를 사용하여 체험판 환경에서 JSON 데이터를 가져오는 방법을 소개하기 위해 최소한의 CodePen 앱을 구축했습니다.<br><br>아래를 클릭하여 CodePen 예제를 시작한 다음 이 안내서를 따라 자세한 내용을 확인하십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="이 단원에서는 GraphQL 지속적인 쿼리를 사용하여 JavaScript용 AEM Headless Client를 사용하여 평가판 환경에서 JSON 데이터를 가져오는 방법을 배웁니다.<br><br>이제 이 클라이언트를 사용하여 웹 애플리케이션 내에서 데이터를 사용하는 방법을 이해할 수 있습니다."
+>title="이 모듈에서는 JavaScript용 AEM Headless 클라이언트를 사용하여 GraphQL 지속 쿼리를 통해 체험판 환경에서 JSON 데이터를 가져오는 방법을 배웠습니다.<br><br>이제 이 클라이언트를 사용하여 자체 웹 애플리케이션 내에서 데이터를 사용하는 방법을 이해했습니다."
 >abstract=""
 
 ## 소개 {#intro}
