@@ -2,10 +2,10 @@
 title: 샌드박스 프로그램 소개
 description: 샌드박스 프로그램이 프로덕션 프로그램과 어떻게 다른지 알아봅니다.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 96%
+source-wordcount: '493'
+ht-degree: 85%
 
 ---
 
@@ -70,3 +70,9 @@ AEM 업데이트는 샌드박스 프로그램에 자동으로 푸시되지 않�
 샌드박스 프로그램은 연속 최대 절전 모드에서 6개월 후에 삭제되며 그 후 다시 만들 수 있습니다.
 
 자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) 문서를 참조하십시오.
+
+### 기술 지원 없음 {#no-support}
+
+샌드박스 프로그램은 일반적으로 교육, 데모 실행, 지원 또는 개념 증명(POC)의 목적을 위해 생성되므로 샌드박스 프로그램에서 경험하는 문제에 대해서는 기술 지원을 사용할 수 없습니다.
+
+샌드박스 프로그램을 만들고 관리하는 데 문제가 발생하는 경우 기술 지원 범위에 계속 포함됩니다.
