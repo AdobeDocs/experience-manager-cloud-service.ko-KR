@@ -5,10 +5,10 @@ landing-page-description: Headless 사용 사례에 대한 콘텐츠 조각에 �
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 85%
+source-wordcount: '1051'
+ht-degree: 80%
 
 ---
 
@@ -68,22 +68,33 @@ ht-degree: 85%
       * 열 헤더에서 마우스를 위에 놓으면 드롭다운 작업 선택기 및 너비 슬라이더가 표시됩니다. 이를 통해 다음을 수행할 수 있습니다.
          * 정렬 - 오름차순이나 내림차순에 적절한 작업을 선택합니다. 그러면 해당 열에 따라 전체 테이블이 정렬됩니다. 정렬은 적절한 열에서만 사용할 수 있습니다.
          * 작업 또는 너비 슬라이더를 사용하여 열 크기 조정
-      * [하나 이상의 콘텐츠 조각을 선택하여 사용 가능한 작업을 표시](#actions-selected-content-fragment)할 수 있습니다.
-   * 새 콘텐츠 조각 **[만들기](#creating-new-content-fragment)**
-   * 다양한 술어에 따라 콘텐츠 조각을 [필터링](#filtering-fragments)하고 나중에 사용할 수 있도록 해당 필터 저장
-   * 콘텐츠 조각 [검색](#searching-fragments)
-   * [선택한 정보 열을 표시하도록 테이블 보기 맞춤화](#select-available-columns)
-   * **에셋에서 열기**&#x200B;를 사용하여 **에셋** 콘솔에서 현재 위치를 바로 열 수 있습니다
 
-      >[!NOTE]
-      >
-      >**에셋** 콘솔을 사용하여 이미지, 비디오 등의 에셋에 액세스할 수 있습니다.  이 콘솔은 다음과 같은 방법으로 액세스할 수 있습니다.
-      >
-      >* 콘텐츠 조각 콘솔에서 **에셋에서 열기** 링크 사용
-      >* 전역 탐색 창에서 바로 액세스
+## 액션 {#actions}
+
+콘솔 내에 직접 또는 특정 조각을 선택한 후 사용할 수 있는 다양한 작업이 있습니다.
+
+* 다양한 작업이 직접 수행됩니다 [콘솔에서 사용 가능](#available-actions)
+* 다음을 수행할 수 있습니다 [컨텐츠 조각을 하나 이상 선택하여 적절한 작업을 표시합니다](#actions-selected-content-fragment)
+
+### 작업(선택하지 않음) {#actions-unselected}
+
+특정 작업은 특정 컨텐츠 조각을 선택하지 않고 콘솔에서 사용할 수 있습니다.
+
+* 새 콘텐츠 조각 **[만들기](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)**
+* 다양한 술어에 따라 콘텐츠 조각을 [필터링](#filtering-fragments)하고 나중에 사용할 수 있도록 해당 필터 저장
+* 콘텐츠 조각 [검색](#searching-fragments)
+* [선택한 정보 열을 표시하도록 테이블 보기 맞춤화](#select-available-columns)
+* **에셋에서 열기**&#x200B;를 사용하여 **에셋** 콘솔에서 현재 위치를 바로 열 수 있습니다
+
+   >[!NOTE]
+   >
+   >**에셋** 콘솔을 사용하여 이미지, 비디오 등의 에셋에 액세스할 수 있습니다.  이 콘솔은 다음과 같은 방법으로 액세스할 수 있습니다.
+   >
+   >* 콘텐츠 조각 콘솔에서 **에셋에서 열기** 링크 사용
+   >* 전역 탐색 창에서 바로 액세스
 
 
-## (선택한) 콘텐츠 조각 작업 {#actions-selected-content-fragment}
+### (선택한) 콘텐츠 조각 작업 {#actions-selected-content-fragment}
 
 특정 조각을 선택하면 해당 조각에 사용할 수 있는 작업에 초점을 둔 도구 모음이 열립니다. 여러 조각을 선택할 수도 있습니다. 그에 따라 작업 선택이 조정됩니다.
 
@@ -146,12 +157,6 @@ ht-degree: 85%
 숨기거나 표시할 수 있는 열 목록이 나타납니다.
 
 ![콘텐츠 조각 콘솔 - 열 구성](assets/cfc-console-column-selection.png)
-
-## 새 콘텐츠 조각 만들기 {#creating-new-content-fragment}
-
-**만들기**&#x200B;를 선택하면 간결한 **새 콘텐츠 조각** 대화 상자가 열립니다.
-
-![콘텐츠 조각 콘솔 - 새 조각 만들기](assets/cfc-console-create.png)
 
 ## 조각 필터링 {#filtering-fragments}
 
