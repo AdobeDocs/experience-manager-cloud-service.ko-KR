@@ -2,10 +2,10 @@
 title: 샌드박스 프로그램 소개
 description: 샌드박스 프로그램이 프로덕션 프로그램과 어떻게 다른지 알아봅니다.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
+source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 85%
+source-wordcount: '514'
+ht-degree: 78%
 
 ---
 
@@ -67,7 +67,11 @@ AEM 업데이트는 샌드박스 프로그램에 자동으로 푸시되지 않�
 샌드박스 프로그램의 환경은 8시간 동안 비활성 상태인 경우 자동으로 최대 절전 모드로 전환됩니다. 최대
 절전 모드로 전환되면 수동으로 최대 절전 모드를 해제할 수 있습니다.
 
-샌드박스 프로그램은 연속 최대 절전 모드에서 6개월 후에 삭제되며 그 후 다시 만들 수 있습니다.
+샌드박스 환경은 6개월의 연속적인 최대 절전 모드 후 삭제되며 그 후에 다시 생성할 수 있습니다.
+
+>[!NOTE]
+>
+>샌드박스 환경만 6개월의 연속 최대 절전 모드 후 자동으로 삭제됩니다. 저장소 및 코드가 있는 샌드박스 프로그램은 유지됩니다.
 
 자세한 내용은 [샌드박스 환경 최대 절전 모드 설정 및 해제](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) 문서를 참조하십시오.
 
