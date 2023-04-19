@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 968cf51b3c13ecba7230a222edf695fdef69450d
+source-git-commit: d6242e12f650845c778a0cc0850dacdd18dc7a0e
 workflow-type: tm+mt
-source-wordcount: '4047'
+source-wordcount: '4051'
 ht-degree: 99%
 
 ---
@@ -72,6 +72,7 @@ ht-degree: 99%
    + AEMaaCS 유지 관리 릴리스 정보 {#maintenance}
       + [현재 유지 관리 릴리스 정보](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [2023.2.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [2023.1.0 유지 관리 릴리스 정보](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Cloud Manager 릴리스 정보 {#cloud-manager}
       + [최신 릴리스 정보](/help/implementing/cloud-manager/release-notes/current.md)
@@ -178,7 +179,7 @@ ht-degree: 99%
       + [앱의 콘텐츠 구조 만들기](/help/trials/headless/content-structure.md)
       + [Headless 콘텐츠 만들기](/help/trials/headless/create-content.md)
       + [GraphQL API를 통한 콘텐츠 추출](/help/trials/headless/extract-content.md)
-      + [JavaScript를 사용하여 JSON 콘텐츠 가져오기](/help/trials/headless/code-playground.md)
+      + [JavaScript로 JSON 콘텐츠 가져오기](/help/trials/headless/code-playground.md)
 + AEM as a Cloud Service 마이그레이션 여정 {#migration-journey}
    + [AEM as a Cloud Service 이동 시작하기](/help/journey-migration/getting-started.md)
    + [준비 단계](/help/journey-migration/readiness.md)

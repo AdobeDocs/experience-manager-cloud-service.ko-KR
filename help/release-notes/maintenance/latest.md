@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
-source-git-commit: 3378322c16f12c5ec4a741b912bbe0833f68d8e4
+source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 85%
+source-wordcount: '275'
+ht-degree: 82%
 
 ---
 
@@ -13,52 +13,20 @@ ht-degree: 85%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 11382 {#release-11382}
+## 릴리스 11835 {#release-11835}
 
-2023년 3월 28일에 릴리스된 유지 관리 릴리스 11382의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 11289의 업데이트입니다.
+다음은 2023년 4월 19일에 릴리스된 유지 관리 릴리스 11835에 대한 지속적인 개선 사항입니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 11382의 업데이트입니다.
 
 이 유지 관리 릴리스에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
->[!IMPORTANT]
->
-> CloudManager UI에 &quot;2023.3.11382&quot;이 표시되고 공식 릴리스는 &quot;2023.02&quot;가 표시됩니다. 이것은 2023.02 기능의 지연된 활성화 때문입니다.
-> 향후 릴리스에 대해 이 문제를 해결하기 위해 노력하고 있습니다.
-
-### 알려진 문제 {#known-issues-11382}
+### 해결된 문제 {#fixed-issues-11835}
 
 - SITES-12573 - 하나의 변수가 지정되지 않으면 필터 내부의 변수를 사용하는 GraphQL 쿼리가 실패합니다. GraphQL을 AEM as a Cloud Service&#39;와 함께 사용하려면 이 릴리스로 업데이트하지 마십시오.
 - SKYOPS-51970 - buildImage 스텝에서 사용된 FACT 버전의 확인된 회귀, 불일치 사용자 매핑 초래
 - GRANITE-44542 - 문제가 패키지 필터에 포함된 폴더를 위한 패키지 노드 유형을 지정하지 않은(.content.xml with jcr:primaryType을 입력해서) 고객을 위해서 보고되었습니다. 이 때문에 이들 폴더가 nt:folder로 취급되며 다양한 사례에서 문제가 발생하고 있습니다.
 - SKYOPS-56928 - Apache HTTPD 회귀로 인해 404 오류가 발생할 수 있습니다. 안전상의 이유로 이러한 문제가 발생하는 경우 이전 버전으로 롤백하는 것이 좋습니다. 파이프라인은 해당 기간 동안 실행되지 않습니다.
 
-### 해결된 문제 {#fixed-issues-11382}
-
-- ASSETS-21023 - 고객이 API를 통해 이러한 렌디션에 액세스하려고 할 때 모든 AEM 환경의 게시자 인스턴스에서 Null 포인터 예외가 발생할 수 있는 스마트 자르기 렌디션을 해결했습니다.
-- SKYOPS-49280 - RDE를 사용하여 구성 또는 번들 업데이트를 게시에 설치할 때 게시 Dispatcher 캐시가 무효화되지 않아 결과가 표시되지 않을 수 있음
-
-#### Sites {#sites-issues-11382}
-
-- SITES-7796 - 콘텐츠 작성자가 대상으로 내보낼 때 마스터 콘텐츠 조각 및 해당 변형을 게시할 수 있는 기능
-- SITES-97 - GraphQL: 페이지 매김, 정렬 및 하이브리드 필터링
-
->[!NOTE]
->
-> SITES-97에서는 예기치 않은 동작을 유발할 수 있는 GraphQL 구현이 일부 개선되었습니다. 자세한 내용은 [Null 값 처리와 관련된 AEM GraphQL 변경 사항](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html)을 참조하십시오.
-
-#### Assets {#assets-issues-11382}
-
-- ASSETS-20076 - 현재 이미지 워터마킹 지원과 일치하는 비디오 워터마킹 지원 추가
-- ASSETS-21428 - CSS 변경에 대한 제외 사항 추가
-
-#### Forms {#forms-issues-11382}
-
-- CQ-4351502 - Sites에서 읽기 액세스를 허용하도록 서비스 사용자 매핑 업데이트
-
-#### Platform {#platform-issues-11382}
-
-- SITES-11040 - Dispatcher에서 GraphQL 지속 쿼리 캐싱의 조건부 활성화
-
-### 임베드된 기술 {#embedded-tech-11382}
+### 임베드된 기술 {#embedded-tech-11835}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
