@@ -2,10 +2,10 @@
 title: 작성 개념
 description: AEM의 작성 개념
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 91%
 
 ---
 
@@ -51,6 +51,12 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 >[!NOTE]
 >
 >AEM은 작성 환경에서도 관리됩니다.
+
+## 콘텐츠 미리보기 {#previewing-content}
+
+또한 AEM은 웹 사이트가 게시 환경에 도달하기 전에 개발자와 컨텐츠 작성자가 웹 사이트의 최종 경험을 미리 볼 수 있도록 해주는 사이트 미리 보기 서비스를 제공하며 공개적으로 사용할 수 있습니다.
+
+자세한 내용은 [컨텐츠 미리 보기](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 자세한 내용
 
 ## 게시 환경 {#publish-environment}
 
