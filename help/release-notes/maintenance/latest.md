@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유�
 source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 82%
 - SITES-12573 - 하나의 변수가 지정되지 않으면 필터 내부의 변수를 사용하는 GraphQL 쿼리가 실패합니다. GraphQL을 AEM as a Cloud Service&#39;와 함께 사용하려면 이 릴리스로 업데이트하지 마십시오.
 - SKYOPS-51970 - buildImage 스텝에서 사용된 FACT 버전의 확인된 회귀, 불일치 사용자 매핑 초래
 - GRANITE-44542 - 문제가 패키지 필터에 포함된 폴더를 위한 패키지 노드 유형을 지정하지 않은(.content.xml with jcr:primaryType을 입력해서) 고객을 위해서 보고되었습니다. 이 때문에 이들 폴더가 nt:folder로 취급되며 다양한 사례에서 문제가 발생하고 있습니다.
-- SKYOPS-56928 - Apache HTTPD 회귀로 인해 404 오류가 발생할 수 있습니다. 안전상의 이유로 이러한 문제가 발생하는 경우 이전 버전으로 롤백하는 것이 좋습니다. 파이프라인은 해당 기간 동안 실행되지 않습니다.
+- SKYOPS-56928 - Apache HTTPD 회귀로 인해 404 오류가 발생할 수 있습니다. 이러한 문제가 발생하면 안전상의 이유로 이전 버전으로 롤백하고 해당 기간 동안 실행되는 파이프라인을 피하는 것이 좋습니다.
 
 ### 임베드된 기술 {#embedded-tech-11835}
 

@@ -373,7 +373,7 @@ ht-degree: 99%
       + [Adobe Learning Manager와 통합](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Adobe Target과 통합](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Target과 통합할 때 사용되는 IMS 구성](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [컨텐츠 조각을 Adobe Target으로 내보내기](/help/sites-cloud/integrating/content-fragments-target.md)
+      + [Adobe Target으로 콘텐츠 조각 내보내기](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target으로 경험 조각 내보내기](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign과 통합](/help/sites-cloud/integrating/campaign.md)
 + Assets {#assets}
@@ -490,7 +490,7 @@ ht-degree: 99%
       + [360 VR 비디오](/help/assets/dynamic-media/360-video.md)
       + [Dynamic Media 뷰어를 Adobe Analytics 및 Adobe Experience Platform 태그와 통합](/help/assets/dynamic-media/tags.md)
       + [빠른 보기를 사용하여 맞춤형 팝업 제작](/help/assets/dynamic-media/custom-pop-ups.md)
-      + [반응형 사이트에 최적화된 이미지 제공](/help/assets/dynamic-media/responsive-site.md)
+      + [반응형 사이트에 최적화된 이미지 게재](/help/assets/dynamic-media/responsive-site.md)
       + [Dynamic Media 에셋 미리보기](/help/assets/dynamic-media/previewing-assets.md)
       + [페이지에 Dynamic Media 에셋 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [웹 페이지에 Dynamic Video 또는 Dynamic Image 뷰어 임베드](/help/assets/dynamic-media/embed-code.md)
