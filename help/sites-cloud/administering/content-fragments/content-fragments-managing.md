@@ -241,8 +241,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 조각 게시 및 참조 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
-모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+>
+>조각이 모델을 기반으로 한다면 [모델이 게시되었는지](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model) 확인해야 합니다.
+>모델이 아직 게시되지 않은 콘텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
 게시 환경에서 사용하려면 콘텐츠 조각을 게시해야 합니다.
 
@@ -260,17 +261,20 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 또한 [조각을 사용하는 페이지를 게시](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)하면 해당 조각은 페이지 참조에 나열됩니다.
 
 >[!CAUTION]
-조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
+>
+>조각이 게시 및/또는 참조된 후 작성자가 편집을 위해 조각을 다시 열면 AEM에 경고가 표시됩니다. 조각 변경 사항이 참조된 페이지에도 영향을 준다는 것을 경고하기 위한 것입니다.
 
 ## 조각 게시 취소 {#unpublishing-a-fragment}
 
 콘텐츠 조각 게시를 취소하려면 하나 이상의 조각을 선택한 다음 **게시 취소**&#x200B;를 선택합니다.
 
 >[!NOTE]
-게시된 조각을 사용할 수 있는 경우 **게시 취소** 작업이 표시됩니다.
+>
+>게시된 조각을 사용할 수 있는 경우 **게시 취소** 작업이 표시됩니다.
 
 >[!CAUTION]
-다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
+>
+>다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 계속 진행할지 확인해야 합니다.
 
 ## 조각 삭제 {#deleting-a-fragment}
 
@@ -299,7 +303,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 콘텐츠 조각 타임라인 {#timeline-for-content-fragments}
 
 >[!NOTE]
-이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+>
+>이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 표준 옵션뿐만 아니라 [타임라인](/help/assets/manage-digital-assets.md#timeline)도 콘텐츠 조각과 관련된 정보와 작업을 모두 제공합니다.
 
@@ -319,14 +324,15 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **삭제**
 
 >[!NOTE]
-댓글은
-* 모든 에셋에 대한 표준 기능입니다.
-* 타임라인에서 만들어집니다.
-* 조각 에셋과 관련되어 있습니다.
 >
-주석(콘텐츠 조각)은
-* 조각 편집기에서 입력됩니다.
-* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
+>댓글은
+>* 모든 에셋에 대한 표준 기능입니다.
+>* 타임라인에서 만들어집니다.
+>* 조각 에셋과 관련되어 있습니다.
+>
+>주석(콘텐츠 조각)은
+>* 조각 편집기에서 입력됩니다.
+>* 조각 내의 선택된 텍스트 세그먼트에 대한 것입니다.
 >
 
 
@@ -337,7 +343,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 조각 버전 비교 {#comparing-fragment-versions}
 
 >[!NOTE]
-이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+>
+>이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 **현재 항목에 비교** 작업은 특정 버전을 선택한 후 [타임라인](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에서 사용할 수 있습니다.
 
@@ -367,7 +374,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 버전으로 되돌리기  {#reverting-to-a-version}
 
 >[!NOTE]
-이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
+>
+>이 기능은 **에셋** 콘솔에서만 사용할 수 있습니다.
 
 조각을 특정 버전으로 되돌릴 수 있습니다.
 
