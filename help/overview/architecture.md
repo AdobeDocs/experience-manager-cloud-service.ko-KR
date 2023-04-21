@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 아키텍처 소개
 description: Adobe Experience Manager as a Cloud Service 아키텍처 소개.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
+source-wordcount: '1807'
+ht-degree: 96%
 
 ---
 
@@ -24,9 +24,9 @@ Adobe Experience Manager(AEM) as a Cloud Service의 아키텍처가 변경되었
 
 이제 AEM as a Cloud Service에는
 
-* AEM 이미지의 수가 다양한 동적 아키텍처가 있습니다.
+* AEM 이미지의 수가 다양한 다이내믹 아키텍처가 있습니다.
 
-![동적 아키텍처](assets/concepts-01.png "동적 아키텍처")
+![다이내믹 아키텍처](assets/concepts-01.png "다이내믹 아키텍처")
 
 이 아키텍처는
 
@@ -56,11 +56,11 @@ AEM as a Cloud Service은 다음과 같은 작업을 수행하는 오케스트�
 
 * 트래픽 패턴이 변화할 때 AEM as a Cloud Service이 트래픽 패턴을 수용할 수 있도록 해 줍니다.
 
-서비스의 테넌트당 인스턴스에 대한 크기 조절은 두 축에서 자동 또는 수동으로 수행될 수 있습니다.
+서비스의 테넌트당 인스턴스에 대한 크기 조절은 두 축에 적용됩니다.
 
-* 세로: 할당된 메모리 및 CPU 용량은 고정된 수의 노드에 대해 확대하거나 축소할 수 있습니다.
+* 가로: 지정된 서비스의 노드 수는 자동으로 증가 또는 감소되므로 개별 기본 구성을 계속 허용합니다.
 
-* 가로: 주어진 서비스에 대한 노드 수는 늘리거나 줄일 수 있습니다.
+* 세로: 할당된 메모리 및 CPU 용량은 필요한 경우 개별 요구 사항을 해결하기 위해 고정된 수의 노드에 대한 구성을 통해 확대하거나 축소할 수 있습니다.
 
 ## 환경 {#environments}
 
