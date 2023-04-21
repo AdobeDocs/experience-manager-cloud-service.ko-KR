@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe Marketing Cloud의 일부인 Adobe Target을 사용하여 모든 채널에
 * Touch UI를 사용하여 AEM as a Cloud Service에 Target 구성을 만듭니다(IMS 구성 필요).
 * Adobe Target을 [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)에 확장 기능으로 추가하고 구성합니다.
 
-Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target에 대한 클라이언트측 속성을 관리하는 데 필요합니다. 즉, “경험 타겟팅”을 위해서는 Launch와의 통합이 필요합니다. 
+Adobe Launch는 AEM 페이지(JS 라이브러리/태그)의 Analytics 및 Target에 대한 클라이언트측 속성을 관리하는 데 필요합니다. 즉, “경험 타겟팅”을 위해서는 Launch와의 통합이 필요합니다.
 
-경험 조각 및/또는 컨텐츠 조각을 Target으로 내보내려면 [Adobe Target 구성 및 IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+경험 조각 및/또는 콘텐츠 조각을 Target으로 내보내려면 [Adobe Target 구성과 IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md)만 있으면 됩니다.
 
 >[!NOTE]
 >
