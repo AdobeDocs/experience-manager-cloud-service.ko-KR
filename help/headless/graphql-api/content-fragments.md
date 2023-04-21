@@ -4,9 +4,9 @@ description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud 
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4768'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -705,59 +705,59 @@ query {
 
 ## GraphQL 쿼리에서 웹에 최적화된 이미지 게재 {#web-optimized-image-delivery-in-graphql-queries}
 
-웹에 최적화된 이미지 전달을 통해 Graphql 쿼리를 사용하여 다음을 수행할 수 있습니다.
+웹에 최적화된 이미지 게재를 통해 Graphql 쿼리를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
-* AEM 자산 이미지에 URL 요청
+* AEM Assets 이미지에 대한 URL 요청
 
-* 이미지의 특정 표현물이 자동으로 생성되어 반환되도록 쿼리를 사용하여 매개 변수를 전달합니다
+* 이미지의 특정 렌디션이 자동으로 생성되고 반환되도록 쿼리와 함께 매개변수 전달
 
    >[!NOTE]
    >
-   >지정된 표현물은 AEM Assets에 저장되지 않습니다. 렌디션이 생성되고 짧은 기간 동안 캐시에 보관됩니다.
+   >지정된 변환은 AEM Assets에 저장되지 않습니다. 렌디션이 생성되어 짧은 기간 동안 캐시에 보관됩니다.
 
 * JSON 게재의 일부로 URL 반환
 
-AEM을 사용하여 다음을 수행할 수 있습니다.
+AEM을 사용해 다음을 할 수 있습니다.
 
-* 패스 [웹에 최적화된 이미지 제공](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) GraphQL 쿼리 사용.
+* [웹에 최적화된 이미지 게재](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)를 GraphQL 쿼리에 전달합니다.
 
-즉, 쿼리 실행 중에 해당 이미지에 대한 GET 요청에 대한 URL 매개 변수와 같은 방식으로 명령이 적용됩니다.
+즉, 해당 이미지에 대한 GET 요청의 URL 매개변수와 동일한 방식으로 쿼리 실행 중에 명령이 적용됩니다.
 
-이를 통해 JSON 전달을 위한 이미지 표현물을 동적으로 만들 수 있으므로 리포지토리에 이러한 표현물을 수동으로 만들고 저장할 필요가 없습니다.
+이를 통해 JSON 게재를 위한 이미지 렌디션을 동적으로 생성할 수 있으므로 해당 렌디션을 저장소에 수동으로 만들고 저장할 필요가 없습니다.
 
-GraphQL의 솔루션을 사용하면 다음 작업을 수행할 수 있습니다.
+GraphQL의 솔루션으로 다음과 같은 작업을 수행할 수 있습니다.
 
-* 사용 `_dynamicUrl` on `ImageRef` 참조
+* `ImageRef` 참조에 `_dynamicUrl` 사용
 
-* 추가 `_assetTransform` 필터가 정의된 목록 헤더로 이동합니다
+* 필터가 정의된 목록 헤더에 `_assetTransform` 추가
 
-### 변형 요청의 구조 {#structure-transformation-request}
+### 변환 요청의 구조 {#structure-transformation-request}
 
-`AssetTransform` (`_assetTransform`)가 URL 변환 요청을 하는 데 사용됩니다.
+`AssetTransform`(`_assetTransform`)은 URL 변환 요청을 만드는 데 사용됩니다.
 
 구조 및 구문은 다음과 같습니다.
 
-* `format`: 확장 프로그램에서 지원되는 모든 형식을 사용하는 열거형: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL 또는 WEBPLY
-* `seoName`: 노드 이름 대신 파일 이름으로 사용할 문자열입니다
-* `crop`: 폭 또는 높이를 생략하면 높이 또는 너비가 동일한 값으로 사용됩니다
-   * `xOrigin`: 프레임의 x 원본 및 는 필수입니다
-   * `yOrigin`: 프레임의 y개 원본이며 필수입니다
-   * `width`: 프레임 너비
-   * `height`: 프레임 높이
-* `size`: 너비 또는 높이를 생략하면 높이 또는 너비가 동일한 값으로 사용됩니다
-   * `width`: 차원의 너비
+* `format`: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL, WEBPLY와 같이 확장자가 지원하는 모든 형식이 포함된 열거형
+* `seoName`: 노드 이름 대신 파일 이름으로 사용할 문자열
+* `crop`: 프레임 하위 구조(폭 또는 높이가 생략되면 높이 또는 폭이 동일한 값으로 사용됨)
+   * `xOrigin`: 프레임의 x 원점(필수)
+   * `yOrigin`: 프레임의 y 원점(필수)
+   * `width`: 프레임의 폭
+   * `height`: 프레임의 높이
+* `size`: 차원 하위 구조(폭 또는 높이가 생략되면 높이 또는 폭이 동일한 값으로 사용됨)
+   * `width`: 차원의 폭
    * `height`: 차원의 높이
-* `rotation`: 지원되는 모든 순환의 열거형: R90, R180, R270
+* `rotation`: 지원되는 모든 회전의 열거형: R90, R180, R270
 * `flip`: HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL의 열거형
-* `quality`: 이미지 품질 비율을 1에서 100 사이의 정수
-* `width`: 출력 이미지의 너비를 정의하지만 이미지 생성기에 의해 무시됩니다.
-* `preferWebp`: webp가 선호되는지 여부를 나타내는 부울(기본값은 false)입니다.
+* `quality`: 이미지 품질의 백분율을 나타내는 1에서 100 사이의 정수
+* `width`: 출력 이미지의 폭을 정의하지만 이미지 생성기에서 무시되는 정수
+* `preferWebp`: webp가 선호되는지 여부를 나타내는 부울(기본값은 false)
 
-URL 변환은 모든 쿼리 유형에 사용할 수 있습니다. 경로별, 목록 또는 페이지 매김
+URL 변환은 경로, 목록 또는 페이지 지정과 같은 모든 쿼리 유형에 사용할 수 있습니다.
 
-### 전체 매개 변수를 사용하여 웹에 최적화된 이미지 제공 {#web-optimized-image-delivery-full-parameters}
+### 전체 매개변수로 웹에 최적화된 이미지 게재 {#web-optimized-image-delivery-full-parameters}
 
-다음은 전체 매개 변수 세트가 있는 샘플 쿼리입니다.
+다음은 전체 매개변수 세트가 포함된 샘플 쿼리입니다.
 
 ```graphql
 {
@@ -794,9 +794,9 @@ URL 변환은 모든 쿼리 유형에 사용할 수 있습니다. 경로별, 목
 }
 ```
 
-### 단일 쿼리 변수를 사용하여 웹에 최적화된 이미지 제공 {#web-optimized-image-delivery-single-query-variable}
+### 단일 쿼리 변수로 웹에 최적화된 이미지 게재 {#web-optimized-image-delivery-single-query-variable}
 
-다음 예는 단일 쿼리 변수를 사용하는 방법을 보여줍니다.
+다음 예에서는 단일 쿼리 변수의 사용을 보여 줍니다.
 
 ```graphql
 query ($seoName: String!) {
@@ -833,9 +833,9 @@ query ($seoName: String!) {
 }
 ```
 
-### 여러 쿼리 변수를 사용한 웹에 최적화된 이미지 전달 {#web-optimized-image-delivery-multiple-query-variables}
+### 다중 쿼리 변수로 웹에 최적화된 이미지 게재 {#web-optimized-image-delivery-multiple-query-variables}
 
-다음 예제에서는 여러 쿼리 변수를 사용하는 방법을 보여줍니다.
+다음 예에서는 다중 쿼리 변수의 사용을 보여 줍니다.
 
 ```graphql
 query ($seoName: String!, $format: AssetTransformFormat!) {
@@ -872,38 +872,38 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 }
 ```
 
-### URL별 웹 최적화 이미지 전달 요청 {#web-optimized-image-delivery-request-url}
+### URL을 통한 웹에 최적화된 이미지 게재 요청 {#web-optimized-image-delivery-request-url}
 
-쿼리를 지속적인 쿼리로 저장하는 경우(예: 이름 포함) `dynamic-url-x`) 그런 다음 수행할 수 있습니다. [지속형 쿼리 직접 실행](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+쿼리를 지속 쿼리로 저장하는 경우(예: `dynamic-url-x` 이름으로) [지속 쿼리를 직접 실행](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query)할 수 있습니다.
 
-예를 들어, 이전 샘플(지속적인 쿼리로 저장됨)을 직접 실행하려면 다음 URL을 사용합니다.
+예를 들어 이전 샘플(지속 쿼리로 저장된 샘플)을 직접 실행하려면 다음 URL을 사용합니다.
 
-* [단일 매개 변수](#dynamic-image-delivery-single-specified-parameter); 이름이 지정된 지속되는 쿼리 `dynamic-url-x`
+* [단일 매개변수](#dynamic-image-delivery-single-specified-parameter), 이름이 `dynamic-url-x`인 지속 쿼리
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      응답은 다음과 같습니다.
+      응답은 다음과 같이 표시됩니다.
 
-      ![매개 변수를 사용한 이미지 전달](assets/cfm-graphiql-sample-image-delivery.png "매개 변수를 사용한 이미지 전달")
+      ![매개변수를 사용한 이미지 게재](assets/cfm-graphiql-sample-image-delivery.png "매개변수를 사용한 이미지 게재")
 
-* [여러 매개 변수](#dynamic-image-delivery-multiple-specified-parameters); 이름이 지정된 지속되는 쿼리 `dynamic`
+* [다중 매개변수](#dynamic-image-delivery-multiple-specified-parameters), 이름이 `dynamic`인 지속 쿼리
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
       >[!CAUTION]
       >
-      >후행 `;`는 매개변수 목록을 완전히 종료해야 합니다.
+      >후행 `;`은 매개변수 목록을 완전히 종료하려면 필수입니다.
 
-### 이미지 전달 제한 사항 {#image-delivery-limitations}
+### 이미지 게재의 제한 사항 {#image-delivery-limitations}
 
 다음과 같은 제한 사항이 있습니다.
 
-* 쿼리의 모든 이미지 부분에 적용된 수정자(전역 매개 변수)
+* 쿼리의 모든 이미지 부분에 적용되는 수정자(전역 매개변수)
 
-* 헤더 캐싱
+* 캐싱 헤더
 
-   * 작성자에 캐싱 없음
-   * 게시 시 캐싱 - 최대 10분(클라이언트가 변경할 수 없음)
+   * 작성자에 대한 캐싱 없음
+   * 게시 시 캐싱 - 최대 수명 10분(클라이언트에서 변경할 수 없음)
 
 ## AEM용 GraphQL - 확장 요약 {#graphql-extensions}
 
@@ -964,17 +964,17 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
          >지정된 변형이 콘텐츠 조각에 존재하지 않는 경우 마스터 변형은 (대체) 기본값으로 반환됩니다.
 
          * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)를 참조하십시오
-   * 대상 [이미지 전달](#image-delivery):
+   * [이미지 게재](#image-delivery):
 
-      * `_dynamicUrl`: on `ImageRef` 참조
+      * `ImageRef`: `_dynamicUrl` 참조
 
-      * `_assetTransform`: 필터가 정의된 목록 헤더에서
+      * `_assetTransform`: 필터가 정의된 목록 헤더
 
       * 다음을 참조하십시오.
 
-         * [전체 매개 변수가 있는 이미지 전달을 위한 샘플 쿼리](#image-delivery-full-parameters)
+         * [전체 매개변수가 포함된 이미지 게재를 위한 샘플 쿼리](#image-delivery-full-parameters)
 
-         * [지정된 단일 매개 변수를 사용하여 이미지 전달을 위한 샘플 쿼리](#image-delivery-single-specified-parameter)
+         * [지정된 단일 매개변수가 있는 이미지 게재를 위한 샘플 쿼리](#image-delivery-single-specified-parameter)
    * 작업:
 
       * `_operator`: 특정 연산자 적용 - `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
