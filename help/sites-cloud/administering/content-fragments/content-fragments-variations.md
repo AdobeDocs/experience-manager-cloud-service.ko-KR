@@ -215,7 +215,6 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
->
 >영어는 즉시 이용 가능합니다.
 >다른 언어는 소프트웨어 배포의 언어 모델 패키지로 사용할 수 있습니다.
 >* [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
