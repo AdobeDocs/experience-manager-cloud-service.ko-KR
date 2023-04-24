@@ -284,13 +284,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. 조각을 선택합니다.
 
    >[!NOTE]
-   **삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
+   >**삭제** 작업은 빠른 작업으로 사용할 수 없습니다.
 
 3. 도구 모음에서 **삭제**&#x200B;를 선택합니다.
 4. **삭제** 작업을 확인합니다.
 
    >[!CAUTION]
-   다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 **강제 삭제**&#x200B;를 진행할지 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
+   >다른 조각 또는 페이지에서 조각이 이미 참조된 경우 경고 메시지가 나타나고 **강제 삭제**&#x200B;를 진행할지 확인해야 합니다. 해당 콘텐츠 조각 구성 요소와 함께 조각이 모든 콘텐츠 페이지에서 삭제됩니다.
 
 ## 조각의 상위 참조 찾기 {#parent-references-fragment}
 
@@ -367,7 +367,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * **완료**&#x200B;를 선택하면 콘솔로 돌아갑니다.
 
 >[!NOTE]
-조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
+>조각을 비교할 때에는 조각 콘텐츠를 편집할 수 없습니다.
 
 ![비교](assets/cfm-managing-06.png)
 
