@@ -3,10 +3,10 @@ title: 콘텐츠 조각과 함께 사용하기 위한 AEM GraphQL API
 description: AEM GraphQL API와 함께 Adobe Experience Manager(AEM) as a Cloud Service에서 Headless 콘텐츠 게재를 위해 콘텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
-workflow-type: ht
-source-wordcount: '4768'
-ht-degree: 100%
+source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
+workflow-type: tm+mt
+source-wordcount: '4746'
+ht-degree: 99%
 
 ---
 
@@ -698,7 +698,7 @@ query {
 
 >[!NOTE]
 >
->* 기본적으로 페이징은 결과의 순서가 항상 동일하도록 순서를 지정하기 위한 조각을 나타내는 저장소 노드의 UUID를 사용합니다. `sort` 사용 시 고유한 정렬을 위해 UUID가 암묵적으로 사용됩니다. 정렬 키가 동일한 두 항목의 경우에도 마찬가지입니다.
+>* 기본적으로 페이징은 순서 지정을 위해 조각을 나타내는 저장소 노드의 UUID를 사용하여 결과 순서가 항상 동일하도록 합니다. `sort` 사용 시 고유한 정렬을 위해 UUID가 암묵적으로 사용됩니다. 정렬 키가 동일한 두 항목의 경우에도 마찬가지입니다.
 >
 >* 내부 기술적 제한으로 인해 중첩된 필드에 정렬 및 필터링을 적용하면 성능이 저하됩니다. 따라서 루트 수준에서 저장된 필터/정렬 필드를 사용하는 것이 좋습니다. 페이지가 매겨진 대용량 결과 세트를 쿼리하려는 경우에도 권장되는 방법입니다.
 
@@ -909,6 +909,9 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 따릅니다. AEM의 GraphQL 쿼리에 몇 가지 확장이 있습니다.
 
+* 하나의 결과가 필요한 경우:
+   * 모델 이름을 사용하십시오. 예: 도시
+
 * 결과 목록을 기대하는 경우:
    * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
@@ -926,13 +929,6 @@ AEM용 GraphQL을 사용한 쿼리의 기본 작업은 표준 GraphQL 사양을 
    * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
 
 
-
-* 하나의 결과가 필요한 경우:
-   * 모델 이름을 사용하십시오. 예: 도시
-
-* 결과 목록을 기대하는 경우:
-   * 모델 이름에 `List`를 추가하십시오. 예: `cityList`
-   * [샘플 쿼리 - 모든 도시에 대한 모든 정보](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)를 참조하십시오
 
 * 논리적 OR을 사용하려는 경우:
    * ` _logOp: OR` 사용
