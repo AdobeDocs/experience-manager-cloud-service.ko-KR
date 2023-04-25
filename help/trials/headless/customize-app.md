@@ -4,10 +4,10 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
-workflow-type: ht
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -91,7 +91,7 @@ AEM Headless CMS에 통합될 때 React 앱 내에서 콘텐츠를 업데이트�
 
 이렇게 AEM Headless CMS를 사용하여 앱의 이미지와 에셋을 쉽게 업데이트할 수 있습니다.
 
-## 앱에서 새 콘텐츠 조각에 대한 참조 추가 {#create-moment}
+## 앱의 새 컨텐츠 조각에 대한 참조 추가 {#create-moment}
 
 바이커 이미지를 업데이트했으므로 이제 새 콘텐츠 조각을 만들고 참조하여 앱에 새 콘텐츠를 추가하는 방법을 살펴보겠습니다. 앱의 두 번째 패널에 “구매 가능한 순간” 콘텐츠 조각으로 관리되는 제품 콜아웃을 추가할 것입니다.
 
