@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 - 구성 브라우저(자산 - 컨텐츠 조각)
 description: 구성 브라우저에서 컨텐츠 조각 기능을 활성화하는 방법을 알아봅니다.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 84%
@@ -75,7 +75,7 @@ AEM의 강력한 헤드리스 게재 기능을 활용하기 위해 구성 브라
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### 자산 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
+### 에셋 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
 
 구성 시 **글로벌** 컨텐츠 조각 기능에 대해 활성화되어 있으면 모든 자산 폴더에 적용됩니다.
 
