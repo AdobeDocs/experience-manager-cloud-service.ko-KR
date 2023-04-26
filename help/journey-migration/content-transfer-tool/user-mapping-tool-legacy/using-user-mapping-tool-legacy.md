@@ -4,7 +4,7 @@ description: 사용자 매핑 도구 사용(이전)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
+source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!INFO]
 >
->이 설명서는 이 도구의 더 이상 사용되지 않는 버전을 참조합니다. 최신 버전에 대한 자세한 내용은 [사용자 매핑 및 보안 주체 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>이 설명서는 더 이상 사용되지 않는 버전의 도구를 참조합니다. 최신 버전에 대한 자세한 내용은 [사용자 매핑 및 보안 주체 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 사용자 매핑 도구는 API를 사용하여 이메일로 IMS(Adobe Identity Management System) 사용자를 조회하고 IMS ID를 반환할 수 있습니다. 이 API를 사용하려면 사용자가 조직의 클라이언트 ID, 클라이언트 암호 및 액세스 또는 베어러 토큰을 만들어야 합니다.
 
