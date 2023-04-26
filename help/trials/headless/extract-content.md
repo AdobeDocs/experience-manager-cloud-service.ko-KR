@@ -4,10 +4,10 @@ description: 콘텐츠 조각 및 GraphQL API를 Headless 콘텐츠 관리 시�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 72%
+source-wordcount: '1114'
+ht-degree: 69%
 
 ---
 
@@ -117,19 +117,19 @@ byPath 쿼리를 실행하면 특정 콘텐츠 조각에 대한 콘텐츠를 검
 
 1. 자체 콘텐츠 조각에 대해 쿼리를 실행하려면 **AEM 데모 에셋** 폴더에서 **사용자 프로젝트** 폴더로 엔드포인트를 변경합니다.
 
-1. 쿼리 편집기에서 기존 콘텐츠를 모두 삭제합니다. 그런 다음 여는 괄호 `{`를 입력하고 Ctrl+Space 또는 Option+Space를 누르면 엔드포인트에 정의된 모델의 자동 완성 목록이 표시됩니다. 옵션에서 `List`로 끝나는 생성 모델을 선택합니다.
+1. 쿼리 편집기에서 기존 콘텐츠를 모두 삭제합니다. 그런 다음 여는 괄호 `{`를 입력하고 Ctrl+Space 또는 Option+Space를 누르면 엔드포인트에 정의된 모델의 자동 완성 목록이 표시됩니다. 옵션에서 `List`로 끝나는 생성 모델을 선택합니다. 이전 모듈의 예제를 따르는 경우 `adventureList` 자동 완료 목록에서 를 선택합니다.
 
-   ![사용자 지정 쿼리 시작](assets/do-not-localize/custom-query-1-2.png)
+   ![사용자 지정 쿼리 시작](assets/do-not-localize/custom-query-1.png)
 
 1. 선택한 콘텐츠 조각 모델의 쿼리에 포함되어야 하는 항목을 정의합니다. 다시 여는 괄호 `{`를 입력한 다음 Ctrl+Space 또는 Option+Space를 눌러 자동 완성 목록을 표시합니다. 옵션에서 `items`를 선택합니다.
 
 1. **정렬** 버튼을 탭하거나 클릭하여 읽기 쉽도록 코드 서식을 자동으로 지정할 수 있습니다.
 
-1. 완료되면 쿼리 편집기 왼쪽 상단의 **재생** 버튼을 탭하거나 클릭하여 쿼리를 실행합니다. 편집기가 `items`을 자동 완성하고 쿼리가 실행됩니다.
+1. 완료되면 쿼리 편집기 왼쪽 상단의 **재생** 버튼을 탭하거나 클릭하여 쿼리를 실행합니다. 편집기는 `items`: 노란색으로 잠시 강조 표시되고 쿼리가 실행됩니다.
 
 1. 쿼리 편집기 옆의 오른쪽 패널에 결과가 표시됩니다.
 
-   ![사용자 지정 쿼리 실행](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![사용자 지정 쿼리 실행](assets/do-not-localize/custom-query-2.png)
 
 이와 같은 방법으로 사용자의 콘텐츠를 옴니채널 디지털 환경에 구현할 수 있습니다.
 
@@ -151,7 +151,6 @@ byPath 쿼리를 실행하면 특정 콘텐츠 조각에 대한 콘텐츠를 검
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {

@@ -4,9 +4,9 @@ description: AEM 컨텐츠 조각 모델을 사용하여 헤드리스 컨텐츠�
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 37%
 
 ---
@@ -68,11 +68,9 @@ ht-degree: 37%
 
 1. 필드의 속성을 정의하면 다시 로 전환할 수 있습니다. **데이터 유형** 오른쪽 패널에서 탭을 선택하고 을(를) 끌어다 놓아 추가 필드를 추가합니다.
 
-1. 탭 또는 클릭 **저장** 모델을 저장합니다.
-
 이러한 방식으로 필요한 데이터 구조를 지원하기 위해 모델에 필요한 만큼 필드를 추가할 수 있습니다. 데이터 필드 유형은 다르지만 모델에 데이터 필드를 추가하는 프로세스는 동일하게 유지됩니다.
 
-다음 섹션으로 계속 이동하여 을 완료하는 데 필요한 필드를 추가합니다. **모험** 모델.
+다음 섹션으로 계속 이동하여 을 완료하고 저장하는 데 필요한 필드를 추가합니다. **모험** 모델
 
 ![모델에 필드 추가 1, 2, 3단계](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ ht-degree: 37%
 1. 콘텐츠 조각 모델에 필요한 모든 필드가 추가되었으면 창의 오른쪽 상단에 있는 **저장**&#x200B;을 클릭합니다.
 
 1. 모델이 저장되면 콘텐츠 조각 모델 콘솔로 돌아갑니다.
-
