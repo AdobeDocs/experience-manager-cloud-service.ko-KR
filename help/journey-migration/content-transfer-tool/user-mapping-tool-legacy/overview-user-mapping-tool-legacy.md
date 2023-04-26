@@ -4,15 +4,18 @@ description: 사용자 매핑 도구 개요(이전)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
+source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 95%
+source-wordcount: '306'
+ht-degree: 88%
 
 ---
 
 # 사용자 매핑 도구 개요(이전) {#overview-user-mapping-tool}
 
+>[!INFO]
+>
+>이 설명서는 이 도구의 더 이상 사용되지 않는 버전을 참조합니다. 최신 버전에 대한 자세한 내용은 [사용자 매핑 및 보안 주체 마이그레이션](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 
