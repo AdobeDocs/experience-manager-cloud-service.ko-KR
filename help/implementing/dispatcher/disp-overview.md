@@ -3,10 +3,10 @@ title: 클라우드의 Dispatcher
 description: 클라우드의 Dispatcher
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 6ea869b3067d168c661ea925e112857c4bbd70e9
+source-git-commit: c61cd92acd416b1c463f5359f66be8199acf08c3
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Dispatcher 도구는 전체 AEM as a Cloud Service SDK의 일부이며 다음을
 
 [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) 포털의 zip 파일에서 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)의 일부인 Dispatcher 도구를 다운로드할 수 있습니다. 새 Dispatcher 도구 버전에 사용 가능한 새 구성을 사용하여 클라우드에서 해당 버전의 AEM 이상을 실행 중인 클라우드 환경에 배포할 수 있습니다.
 
-macOS/Linux 및 Windows용 Dispatcher 도구를 번들로 제공하는 SDK의 압축을 풉니다.
+macOS, Linux 및 Windows용 Dispatcher 도구를 번들로 제공하는 SDK의 압축을 해제합니다.
 
 **macOS/Linux**&#x200B;의 경우 실행 가능한 Dispatcher 도구 아티팩트를 만들어 실행합니다. 파일을 저장한 디렉터리에서 Dispatcher Tools 파일이 자동으로 압축 해제됩니다(여기서 `version`은 Dispatcher 도구 버전임).
 

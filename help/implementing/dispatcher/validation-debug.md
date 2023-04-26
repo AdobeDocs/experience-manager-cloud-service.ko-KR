@@ -3,10 +3,10 @@ title: Dispatcher 도구를 사용하여 확인 및 디버깅
 description: Dispatcher 도구를 사용하여 확인 및 디버깅
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
+source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 2%
+source-wordcount: '2865'
+ht-degree: 1%
 
 ---
 
@@ -86,6 +86,27 @@ ht-degree: 2%
 >
 >유연한 모드에서는 절대 경로 대신 상대 경로를 사용해야 합니다.
 
+ServerAlias와 일치하는 가상 호스트를 항상 하나 이상 사용할 수 있는지 확인하십시오 `\*.local`, `localhost` 및 `127.0.0.1` 디스패처 무효화에 필요합니다. 서버 별칭 `*.adobeaemcloud.net` 및 `*.adobeaemcloud.com` 또한 하나 이상의 vhost 구성에 필요하며 내부 Adobe 프로세스에 필요합니다.
+
+여러 개의 vhost 파일이 있으므로 정확한 호스트를 일치시키려면 아래 예를 따르십시오.
+
+```
+<VirtualHost *:80>
+	ServerName	"example.com"
+	# Put names of which domains are used for your published site/content here
+	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+	# Use a document root that matches the one in conf.dispatcher.d/default.farm
+	DocumentRoot "${DOCROOT}"
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish-example-com"
+	</IfModule>
+  ...
+</VirtualHost>
+```
+
 * `conf.d/rewrites/rewrite.rules`
 
 이 파일은 `.vhost` 파일. 에 대한 재작성 규칙 세트가 있습니다 `mod_rewrite`.
@@ -135,7 +156,7 @@ ht-degree: 2%
 샘플 가상 호스트를 포함합니다. 가상 호스트의 경우 이 파일의 복사본을 만들고 사용자 지정한 다음 `conf.d/enabled_vhosts` 그리고 사용자 지정된 복사본에 대한 심볼 링크를 만듭니다.
 default.vhost 파일을에 직접 복사하지 마십시오 `conf.d/enabled_vhosts`.
 
-ServerAlias와 일치하는 가상 호스트를 항상 사용할 수 있는지 확인합니다. `\*.local` 내부 Adobe 프로세스에 필요한 localhost 도 참조하십시오.
+ServerAlias와 일치하는 가상 호스트를 항상 사용할 수 있는지 확인합니다. `\*.local`, `localhost` 및 `127.0.0.1` 디스패처 무효화에 필요합니다. 서버 별칭 `*.adobeaemcloud.net` 및 `*.adobeaemcloud.com` 내부 Adobe 프로세스에 필요합니다.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -229,7 +250,7 @@ Phase 3 finished
 
 1. 유효성 검사기를 실행합니다. 구성이 올바르지 않으면 스크립트가 실패합니다.
 2. 이 변수는 `httpd -t` apache httpd를 시작할 수 있도록 구문이 올바른지 테스트하는 명령입니다. 성공하면 구성을 배포할 준비가 되어 있어야 합니다.
-3. 에 설명된 대로 변경할 수 없도록 만들어진 Dispatcher SDK 구성 파일의 하위 집합을 확인합니다. [파일 구조 섹션](##flexible-mode-file-structure)이 수정되지 않았습니다.
+3. 에 설명된 대로 변경할 수 없도록 만들어진 Dispatcher SDK 구성 파일의 하위 집합을 확인합니다. [파일 구조 섹션](##flexible-mode-file-structure)가 수정되지 않았으며 현재 SDK 버전과 일치합니다.
 
 Cloud Manager 배포 중 `httpd -t` 구문 검사가 실행되며 모든 오류가 Cloud Manager에 포함됩니다 `Build Images step failure` 로그.
 
@@ -371,11 +392,12 @@ Windows 탐색기에서 경로를 복사하여 붙여넣은 다음 명령 프롬
 
 ### 2단계 {#second-phase}
 
-이 단계에서는 이미지에서 Docker를 시작하여 Apache 구문을 확인합니다. Docker는 로컬에 설치해야 하지만 AEM을 실행할 필요는 없습니다.
+이 단계에서는 Docker 컨테이너에서 Apache HTTPD를 시작하여 Apache 구문을 확인합니다. Docker는 로컬에 설치해야 하지만 AEM을 실행할 필요는 없습니다.
 
 >[!NOTE]
 >
 >Windows 사용자는 Windows 10 Professional이나 Docker를 지원하는 다른 배포를 사용해야 합니다. 로컬 컴퓨터에서 Dispatcher를 실행하고 디버깅하기 위한 전제 조건입니다.
+>Windows와 macOS 모두에 대해 Docker Desktop을 사용하는 것이 좋습니다.
 
 이 단계는 를 통해 독립적으로 실행할 수도 있습니다. `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -403,6 +425,8 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 ```
 
 이 단계는 를 통해 독립적으로 실행할 수도 있습니다. `bin/docker_immutability_check.sh src/dispatcher`.
+
+로컬 변경할 수 없는 파일은 `bin/update_maven.sh src/dispatcher` dispatcher 폴더에서 스크립트 작성, 여기서 `src/dispatcher` 는 dispatcher 구성 디렉토리입니다. 이렇게 하면 maven 불변성 확인도 업데이트되도록 상위 디렉토리의 pom.xml 파일도 업데이트됩니다.
 
 ## Apache 및 Dispatcher 구성 디버깅 {#debugging-apache-and-dispatcher-configuration}
 
