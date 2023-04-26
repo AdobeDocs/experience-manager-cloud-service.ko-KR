@@ -3,9 +3,9 @@ title: 작성 개념
 description: AEM의 작성 개념
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 * 사전 정의된 템플릿을 사용하여 새 콘텐츠 페이지 작성
 * 에셋 및 컬렉션 만들기, 편집 및 관리
 * 콘텐츠 페이지, 에셋 등의 이동, 복사 및 삭제
-* 페이지, 에셋 등의 게시(또는 게시 취소)
+* 페이지, 에셋 등의 게시 (또는 게시 취소)
 
 콘텐츠를 관리하는 데 도움이 되는 관리 작업들도 있습니다.
 
@@ -54,13 +54,13 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 ## 콘텐츠 미리보기 {#previewing-content}
 
-또한 AEM은 웹 사이트가 게시 환경에 도달하기 전에 개발자와 컨텐츠 작성자가 웹 사이트의 최종 경험을 미리 볼 수 있도록 해주는 사이트 미리 보기 서비스를 제공하며 공개적으로 사용할 수 있습니다.
+AEM은 개발자 및 콘텐츠 작성자가 웹 사이트의 최종 결과물이 게시 환경에 도달하고 공개적으로 사용할 수 있게 되기 전에 이를 미리 볼 수 있도록 하는 Sites 미리보기 서비스를 제공합니다.
 
-자세한 내용은 [컨텐츠 미리 보기](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 자세한 내용
+자세한 내용은 [콘텐츠 미리보기](/help/sites-cloud/authoring/fundamentals/previewing-content.md)를 참조하십시오.
 
 ## 게시 환경 {#publish-environment}
 
-준비가 완료된 사이트 콘텐츠는 **게시 환경**&#x200B;에 게시됩니다. 이 환경에서는 의도했던 대상이 디자인된 인터페이스의 모양 및 느낌에 따라 웹 사이트의 페이지를 사용할 수 있게 되어 있습니다.
+준비가 완료된 사이트 콘텐츠는 **게시 환경**&#x200B;에 게시됩니다. 이 환경에서는 의도했던 대상자가 디자인된 인터페이스의 모양 및 느낌에 따라 웹 사이트의 페이지를 사용할 수 있게 되어 있습니다.
 
 페이지 게시 및 게시 취소에 대한 자세한 내용은 [페이지 게시](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 문서를 참조하십시오.
 
