@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
 workflow-type: tm+mt
-source-wordcount: '4062'
+source-wordcount: '4068'
 ht-degree: 99%
 
 ---
@@ -789,8 +789,10 @@ ht-degree: 99%
          + [개요](/help/implementing/cloud-manager/overview-test-results.md)
          + [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)
          + [맞춤형 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-         + [기능 테스트](/help/implementing/cloud-manager/functional-testing.md)
-         + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
+         + 기능 테스트 {#functional-testing}
+            + [기능 테스트 개요](/help/implementing/cloud-manager/functional-testing.md)
+            + [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md)
+            + [UI 테스트](/help/implementing/cloud-manager/ui-testing.md)
          + [경험 감사 테스트](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [로그 액세스 및 관리](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA 보고](/help/implementing/cloud-manager/sla-reporting.md)
@@ -935,8 +937,8 @@ ht-degree: 99%
    + 작성자 계층 {#author-tier}
       + [작성자 계층에 액세스](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [작성자 계층 보호](/help/implementing/author-tier/securing-the-author-tier.md)
-   + 미리 보기 계층 {#preview-tier}
-      + [게시 계층에 대해 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
+   + 미리보기 계층 {#preview-tier}
+      + [미리보기 계층을 위한 OSGi 설정 구성](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + 콘텐츠 게재 개요 {#content-delivery}
       + [콘텐츠 게재 흐름](/help/implementing/dispatcher/overview.md)
       + [클라우드의 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
