@@ -4,10 +4,10 @@ description: 이 문서에서는 Experience Manager에서 검색 패싯을 만�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2397'
-ht-degree: 20%
+source-wordcount: '2425'
+ht-degree: 21%
 
 ---
 
@@ -124,7 +124,7 @@ Instead of manually creating a node structure for the options in the CRX reposit
 1. 에서 **[!UICONTROL 설정]** 탭에서 조건자의 레이블과 자리 표시자 텍스트를 입력합니다. 속성 필드에서 검색을 수행할 속성 이름을 지정합니다(예: ) `jcr:content/metadata/dc:value`. 선택 대화 상자에서 노드를 선택할 수도 있습니다.
 1. Ensure that **[!UICONTROL Delimiter Support]** is selected. In the **[!UICONTROL Input Delimiters]** field, specify delimiters to separate individual values. By default, comma is specified as the delimiter. You can specify a different delimiter.
 1. 에서 **설명** 필드, 선택적 설명 입력 및 탭 **[!UICONTROL 완료]**.
-1. 자산 사용자 인터페이스의 필터 패널로 이동합니다. The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
+1. Navigate to the Filters panel in the Assets user interface. The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
 1. 복수 값 필드에 구분 기호로 구분된 여러 값을 지정하고 검색을 수행합니다. 조건부는 지정한 값에 대해 정확한 텍스트 일치를 가져옵니다.
 
 ## 태그 설명 추가 {#adding-a-tags-predicate}
@@ -322,6 +322,20 @@ Forms 검색 페이지의 옵션에 대한 잠금 아이콘은 기본 설정이 
 | 편집 | 에 대한 읽기 및 쓰기 권한 `/apps` 노드 아래에 있어야 합니다. |
 | 삭제 | 에서 사용 권한을 읽기, 쓰기 및 삭제합니다. `/apps` 노드 아래에 있어야 합니다. |
 | 미리보기 | 에서 사용 권한을 읽기, 쓰기 및 삭제합니다. `/var/dam/content` 노드 아래에 있어야 합니다. 또한 다음 항목에 대한 읽기 및 쓰기 권한 `/apps` 노드 아래에 있어야 합니다. |
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 2%
+source-wordcount: '1345'
+ht-degree: 4%
 
 ---
 
@@ -149,3 +149,18 @@ DRM 기능은 라이선스 자산을 [!DNL Assets].
    >다음 **[!UICONTROL 다운로드]** 이 옵션은 보호된 자산에 대한 사용권 계약에 동의하도록 선택한 경우에만 활성화됩니다. 그러나 선택한 항목에 보호된 자산과 보호되지 않은 자산이 모두 포함되어 있으면 창과 창에 보호된 자산만 나열됩니다 **[!UICONTROL 다운로드]** 보호되지 않은 자산을 다운로드할 수 있는 옵션이 제공됩니다. To simultaneously accept license agreements for multiple protected assets, select the assets from the list and then choose **[!UICONTROL Agree]**.
 
 1. 자산 또는 해당 표현물을 다운로드하려면 다음을 선택합니다 **[!UICONTROL 다운로드]** 클릭합니다.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

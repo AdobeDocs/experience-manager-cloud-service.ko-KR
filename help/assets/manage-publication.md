@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 8%
+source-wordcount: '1465'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 8%
 
 다음 옵션은 [!UICONTROL 게시 관리] 인터페이스:
 
-* [!UICONTROL 액션]
+* [!UICONTROL 작업]
    * `Publish`: 선택한 대상에 자산 및 폴더 게시
    * `Unpublish`: 대상에서 자산 및 폴더 게시 취소
 
@@ -105,7 +105,7 @@ Only the selected folder content and references are published.
 | 게시 | 선택적 게시 | `AEM` | 자산 및(또는) 폴더 |
 | 게시 | 즉시 | `AEM` 및 `Dynamic Media` | 자산 및(또는) 폴더 |
 | 게시 | 활성화 시 | `AEM` 및 `Dynamic Media` | 자산 및(또는) 폴더 |
-| Dynamic Media | 선택적 게시 | `Dynamic Media` | 에셋 |
+| Dynamic Media | 선택적 게시 | `Dynamic Media` | Assets |
 | Dynamic Media | 즉시 | `None` | 자산을 게시할 수 없습니다. |
 | Dynamic Media | 활성화 시 | `None` | 자산을 게시할 수 없습니다. |
 
@@ -183,3 +183,18 @@ Only the selected folder content and references are published.
 * 빈 폴더가 게시되지 않습니다.
 * 처리 중인 자산을 게시하면 원래 컨텐츠만 게시됩니다. 표현물이 없습니다. 처리가 완료될 때까지 기다렸다가 처리가 완료되면 자산을 게시하거나 다시 게시하십시오.
 * 복잡한 자산의 게시를 취소하는 동안 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 게시를 취소하지 마십시오.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

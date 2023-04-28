@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2902'
-ht-degree: 2%
+source-wordcount: '2932'
+ht-degree: 3%
 
 ---
 
@@ -265,6 +265,21 @@ OSGi 구성을 배포하는 방법은 를 참조하십시오 [배포 대상 [!DN
 * 워크플로우를 디자인할 때 모든 유형의 표현물에 대한 요구 사항을 고려합니다. 나중에 표현물이 필요할 것으로 예상하지 않으면 워크플로우에서 해당 작성 단계를 제거합니다. 변환은 나중에 일괄 삭제할 수 없습니다. 원치 않는 표현물은 장기간 사용 후 많은 저장 공간이 필요할 수 있습니다. [!DNL Experience Manager]. 개별 자산의 경우 사용자 인터페이스에서 렌디션을 수동으로 제거할 수 있습니다. 여러 자산의 경우, 사용자 지정할 수 있습니다 [!DNL Experience Manager] 특정 표현물을 삭제하거나 자산을 삭제하고 다시 업로드하려면.
 * 현재, 지원은 표현물 생성으로 제한됩니다. 새 자산을 생성할 수 없습니다.
 * 현재 메타데이터 추출의 파일 크기 제한은 약 15GB입니다. 매우 큰 자산을 업로드할 때 메타데이터 추출 작업이 실패하는 경우가 있습니다.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

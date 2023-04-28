@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 7%
+source-wordcount: '883'
+ht-degree: 9%
 
 ---
 
@@ -109,7 +109,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    *그림: 에서 자산 통찰력에 대한 Adobe Analytics 구성[!DNL Experience Manager]*
 
-1. 인증이 성공하면 드롭다운에 보고서 세트 가 표시됩니다. Adobe Analytics 선택 **[!UICONTROL 보고서 세트]** 자산 인사이트에서 데이터를 가져오려는 위치에서. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. 인증이 성공하면 드롭다운에 보고서 세트 가 표시됩니다. Adobe Analytics 선택 **[!UICONTROL 보고서 세트]** 자산 인사이트에서 데이터를 가져오려는 위치에서. 클릭 **[!UICONTROL 추가]**.
 
 1. 후 [!DNL Experience Manager] 보고서 세트를 설정하고 **[!UICONTROL 완료]**.
 
@@ -175,3 +175,18 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
    >The external web page can be in [!DNL Experience Manager] itself.
 
 -->
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

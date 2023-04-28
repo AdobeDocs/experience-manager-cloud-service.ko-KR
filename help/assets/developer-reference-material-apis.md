@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 3%
+source-wordcount: '1899'
+ht-degree: 6%
 
 ---
 
@@ -165,12 +165,12 @@ CDN 에지 노드는 요청된 바이너리 업로드 속도를 높이는 데 �
 | `fileName` | 문자열 | 필수 | 초기화 데이터에서 제공한 자산의 이름입니다. |
 | `mimeType` | 문자열 | 필수 | 시작 데이터에서 제공한 바이너리의 HTTP 컨텐츠 유형입니다. |
 | `uploadToken` | 문자열 | 필수 | 시작 데이터에서 제공한 대로 바이너리에 대한 업로드 토큰. |
-| `createVersion` | 부울 | 선택 사항입니다 | If `True` 지정한 이름의 자산이 있는 경우 [!DNL Experience Manager] 자산의 새 버전을 만듭니다. |
-| `versionLabel` | 문자열 | 선택 사항입니다 | 새 버전이 만들어지면 자산의 새 버전과 연결된 레이블 . |
-| `versionComment` | 문자열 | 선택 사항입니다 | 새 버전을 만들면 버전과 연관된 주석이 됩니다. |
-| `replace` | 부울 | 선택 사항입니다 | If `True` 지정한 이름의 자산이 있고 [!DNL Experience Manager] 자산을 삭제한 다음 다시 만듭니다. |
-| `uploadDuration` | 숫자 | 선택 사항입니다 | 파일을 완전히 업로드하는 데 걸린 총 시간(밀리초)입니다. 지정된 경우 전송 속도 분석을 위해 시스템의 로그 파일에 업로드 기간이 포함됩니다. |
-| `fileSize` | 숫자 | 선택 사항입니다 | 파일의 크기(바이트)입니다. 지정한 경우 파일 크기는 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
+| `createVersion` | 부울 | 선택 사항 | If `True` 지정한 이름의 자산이 있는 경우 [!DNL Experience Manager] 자산의 새 버전을 만듭니다. |
+| `versionLabel` | 문자열 | 선택 사항 | 새 버전이 만들어지면 자산의 새 버전과 연결된 레이블 . |
+| `versionComment` | 문자열 | 선택 사항 | 새 버전을 만들면 버전과 연관된 주석이 됩니다. |
+| `replace` | 부울 | 선택 사항 | If `True` 지정한 이름의 자산이 있고 [!DNL Experience Manager] 자산을 삭제한 다음 다시 만듭니다. |
+| `uploadDuration` | 숫자 | 선택 사항 | 파일을 완전히 업로드하는 데 걸린 총 시간(밀리초)입니다. 지정된 경우 전송 속도 분석을 위해 시스템의 로그 파일에 업로드 기간이 포함됩니다. |
+| `fileSize` | 숫자 | 선택 사항 | 파일의 크기(바이트)입니다. 지정한 경우 파일 크기는 전송 속도 분석을 위해 시스템의 로그 파일에 포함됩니다. |
 
 >[!NOTE]
 자산이 있고 둘 다 없는 경우 `createVersion` 아니요 `replace` 지정한 후 [!DNL Experience Manager] 자산의 현재 버전을 새 바이너리로 업데이트합니다.
@@ -289,6 +289,21 @@ in [!DNL Experience Manager]로 설정되면 자산 처리는 **[!UICONTROL 처�
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 * [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

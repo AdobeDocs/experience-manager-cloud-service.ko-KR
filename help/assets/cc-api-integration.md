@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,7 @@ Cloud Manager를 사용하여 AEM as a Cloud Service 프로그램에 대한 컨�
 1. Content Automation 추가 기능의 라이센스를 얻으려면 계정 담당자에게 문의하십시오.
 1. Cloud Manager에 액세스하고 조직 선택기를 사용하여 조직으로 전환합니다.
 1. 클릭 **[!UICONTROL 프로그램 추가]** 그리고 프로그램 이름을 지정합니다.
-1. 클릭 **[!UICONTROL 계속]**.
+1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 확장 **[!UICONTROL 자산]** 을(를) 선택합니다. **[!UICONTROL 컨텐츠 자동화]**.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 다음 대상 파이프라인 실행 [cloud Manager에 변경 사항 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
@@ -69,7 +69,7 @@ Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동�
 1. 선택 **[!UICONTROL 프로그램 편집]** 그런 다음 **[!UICONTROL 솔루션 및 추가 기능]** 탭.
 
 1. 확장 **[!UICONTROL 자산]** 을(를) 선택합니다. **[!UICONTROL 컨텐츠 자동화]**.
-1. 클릭 **[!UICONTROL 업데이트]**.
+1. **[!UICONTROL 업데이트]**&#x200B;를 클릭합니다.
 1. 다음 대상 파이프라인 실행 [cloud Manager에 변경 사항 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## 처리 프로필을 사용하여 크리에이티브 자산을 일괄적으로 편집 {#process-assets}
@@ -100,6 +100,21 @@ Cloud Manager의 기존 AEM as a Cloud Service 프로그램에 컨텐츠 자동�
 
 * [!DNL Experience Manager] 자산 처리를 환경당 분당 300개의 요청 및 조직당 분당 700개의 요청으로 제한합니다.
 * 파일 크기는 4GB로 제한됩니다 [!DNL Adobe Photoshop] API 작업 및 1GB의 경우 [!DNL Adobe Lightroom] 작업.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

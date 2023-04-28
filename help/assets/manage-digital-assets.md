@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4326'
-ht-degree: 12%
+source-wordcount: '4356'
+ht-degree: 11%
 
 ---
 
@@ -269,10 +269,10 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 1. 확인 대화 상자에서 다음을 클릭합니다.
 
    * **[!UICONTROL 취소]** 작업을 중지하려면
-   * 해당 작업을 승인하려면 **[!UICONTROL 삭제]**
+   * **[!UICONTROL 삭제]** 작업을 확인하려면:
 
       * 자산에 참조가 없으면, 자산이 삭제됩니다.
-      * 자산에 참조가 있으면, 오류 메시지에 다음 내용이 표시됩니다 **[!UICONTROL 하나 이상의 자산을 참조했습니다.]**. **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
+      * 자산에 참조가 있으면, 오류 메시지에 다음 내용이 표시됩니다 **[!UICONTROL 하나 이상의 자산을 참조했습니다.]**. 선택할 수 있습니다 **[!UICONTROL 강제 삭제]** 또는 **[!UICONTROL 취소]**.
 
    >[!NOTE]
    >
@@ -301,7 +301,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 게시할 때 자산이 다른 자산을 참조하는 경우 해당 참조가 마법사에 나열됩니다. 마지막 게시 이후 게시 취소되거나 수정된 참조만 표시됩니다. 게시할 참조를 선택합니다.
 
-1. 게시를 취소할 때 자산이 다른 자산을 참조하는 경우 게시를 취소하려는 참조를 선택합니다. 클릭 **[!UICONTROL 게시 취소]**. 확인 대화 상자에서 **[!UICONTROL 취소]** 작업을 중지하려면 를 클릭하거나 **[!UICONTROL 게시 취소]** 지정된 날짜에 자산의 게시를 취소할지 확인합니다.
+1. 게시를 취소할 때 자산이 다른 자산을 참조하는 경우 게시를 취소하려는 참조를 선택합니다. **[!UICONTROL 게시 취소]**&#x200B;를 클릭합니다. 확인 대화 상자에서 **[!UICONTROL 취소]** 작업을 중지하려면 를 클릭하거나 **[!UICONTROL 게시 취소]** 지정된 날짜에 자산의 게시를 취소할지 확인합니다.
 
 자산 또는 폴더의 게시 또는 게시 취소와 관련된 다음 제한 사항과 팁을 이해합니다.
 
@@ -340,7 +340,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 ## 빠른 작업 {#quick-actions}
 
-빠른 작업 아이콘은 한 번에 한 자산에 사용할 수 있습니다. 장치에 따라 다음 작업을 수행하여 빠른 작업 아이콘을 표시합니다.
+빠른 작업 아이콘은 한 번에 단일 자산에 사용할 수 있습니다. 장치에 따라 다음 작업을 수행하여 빠른 작업 아이콘을 표시합니다.
 
 * 터치 장치: 길게 터치하세요. 예를 들어 iPad에서 자산을 길게 탭하여 빠른 작업이 표시됩니다.
 * 비터치 장치: 포인터를 가져갑니다. 예를 들어, 데스크탑 장치에서 포인터를 자산 축소판 위에 두면 빠른 작업 모음이 표시됩니다.
@@ -662,3 +662,18 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 ```
 
 자세한 내용은 방법 을 참조하십시오. [데스크탑 앱을 사용하여 DAM 자산 찾아보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 자산 링크 사용 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

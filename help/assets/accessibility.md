@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 3130f374859c1bb67f6311d2decfdd537eabf14f
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 2%
+source-wordcount: '1943'
+ht-degree: 3%
 
 ---
 
@@ -216,6 +216,21 @@ CRUD 작업, 자산 다운로드, 메타데이터 추가와 같은 많은 자산
 * 이미지 및 그림에는 대체 텍스트를 사용할 수 있습니다.
 * 키보드 탐색을 할 수 있습니다.
 * 대비율은 설명서 웹 사이트의 일부 부분을 강조 표시하는 데 도움이 됩니다.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 ## 피드백 제공 {#a11y-feedback}
 

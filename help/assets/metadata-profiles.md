@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 18%
+source-wordcount: '1386'
+ht-degree: 19%
 
 ---
 
@@ -55,7 +55,7 @@ Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념�
 1. 에서 **[!UICONTROL 메타데이터 프로필]** 페이지에서 메타데이터 프로필을 선택하여 복사본을 만듭니다.
 1. 클릭 **[!UICONTROL 복사]** 를 클릭합니다.
 1. 에서 **[!UICONTROL 메타데이터 프로필 복사]** 대화 상자에서 메타데이터 프로필의 새 사본의 제목을 입력합니다.
-1. **[!UICONTROL 복사]**&#x200B;를 클릭합니다. The copy of the Metadata Profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
+1. 클릭 **[!UICONTROL 복사]**. The copy of the Metadata Profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
 
 ## 메타데이터 프로필 삭제 {#deleting-a-metadata-profile}
 
@@ -85,13 +85,13 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. 다음으로 이동 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필]**.
 1. 폴더 또는 여러 폴더에 적용할 메타데이터 프로필을 선택합니다.
-1. 클릭 **[!UICONTROL 폴더에 메타데이터 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 클릭 **[!UICONTROL 완료]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 클릭 **[!UICONTROL 폴더에 메타데이터 프로필 적용]** 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 클릭 **[!UICONTROL 완료]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
 #### 속성의 폴더에 메타데이터 프로필 적용 {#applying-metadata-profiles-to-folders-from-properties}
 
 1. 왼쪽 레일에서 를 클릭합니다. **[!UICONTROL 자산]** 그런 다음 메타데이터 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 을 클릭하거나 확인 표시를 클릭하여 선택한 다음 클릭하거나 클릭합니다 **속성**.
-1. 을(를) 선택합니다 **[!UICONTROL 메타데이터 프로필]** 탭을 클릭하고 드롭다운 메뉴에서 프로필을 선택한 다음 를 클릭합니다 **[!UICONTROL 저장]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 을(를) 선택합니다 **[!UICONTROL 메타데이터 프로필]** 탭을 클릭하고 드롭다운 메뉴에서 프로필을 선택한 다음 를 클릭합니다 **[!UICONTROL 저장]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
 
 ### 메타데이터 프로필을 전체적으로 적용 {#applying-a-metadata-profile-globally}
 
@@ -123,4 +123,19 @@ You can remove a metadata profile from a folder from within the **Tools** menu o
 
 1. Experience Manager 로고를 클릭하고 탐색합니다 **[!UICONTROL 자산]** 을 클릭하여 메타데이터 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 클릭하여 선택한 다음 를 클릭합니다 **[!UICONTROL 속성]**.
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save]**. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

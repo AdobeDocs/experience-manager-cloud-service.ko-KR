@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 12%
+source-wordcount: '987'
+ht-degree: 14%
 
 ---
 
@@ -88,9 +88,9 @@ ht-degree: 12%
    >
    >수동으로 사전 정의된 값이 있는 드롭다운을 규칙과 함께 사용할 수 있습니다. 구성된 JSON 경로가 있는 드롭다운 메뉴는 사전 정의된 값을 사용하여 조건을 적용하는 규칙과 함께 사용할 수 없습니다. 런타임 시 JSON에서 값이 로드되는 경우 사전 정의된 규칙을 적용할 수 없습니다.
 
-1. 아래 **[!UICONTROL 가시성]**&#x200B;을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 표시, 새 규칙에 따라]** 선택 사항입니다.
+1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
-1. 탭/클릭 **[!UICONTROL 규칙 추가]** 그리고 **[!UICONTROL 자산 유형]** 종속성을 만드는 필드입니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오]**. 탭/클릭 **[!UICONTROL 완료]** 변경 사항을 저장하려면 을 클릭합니다.
+1. Tap/click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
 
    ![define_visityrule](assets/define_visibilityrule.png)
 
@@ -113,3 +113,18 @@ ht-degree: 12%
 
    ![문서 자산에 대한 계단식 메타데이터](assets/doc_type_fields.png)
    *그림: 문서 자산에 대한 계단식 메타데이터*
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

@@ -4,10 +4,10 @@ description: 디지털 자산에 [!DNL Adobe Experience Manager] 로서의 [!DNL
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 1%
+source-wordcount: '3094'
+ht-degree: 2%
 
 ---
 
@@ -390,6 +390,21 @@ Experience Manager에 작업 기록이 표시됩니다. [대량 가져오기 작
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

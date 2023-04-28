@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2620'
 ht-degree: 10%
 
 ---
@@ -238,7 +238,7 @@ Create a form under the appropriate form type. For example, to add a template fo
 >
 >메타데이터 필드는 다른 필드의 값을 기준으로 필수로 정의할 수 있습니다. 카드 보기에서는 이러한 필수 메타데이터 필드에 대한 누락된 메타데이터에 대한 경고 메시지가 표시되지 않습니다.
 
-1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**. 다음 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지가 표시됩니다.
+1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. 기본 메타데이터 양식을 사용자 지정 양식으로 저장합니다. 예를 들어 다른 이름으로 저장합니다 `my_default`.
 1. 사용자 지정 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 **[!UICONTROL 카테고리]** 필드를 필수 필드로 만듭니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식은 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지. 양식을 선택한 다음 을(를) 클릭하거나 탭합니다 **[!UICONTROL 폴더에 적용]** 도구 모음에서 사용자 지정 메타데이터를 폴더에 적용합니다.
@@ -254,3 +254,17 @@ Create a form under the appropriate form type. For example, to add a template fo
    >[!CAUTION]
    >
    >메타데이터 유효성 검사는 리소스를 많이 사용하므로 시스템 성능에 영향을 줄 수 있습니다. 그에 따라 검사를 예약합니다. 서버가 부하를 처리할 수 없는 경우 이 작업을 사용하지 않도록 설정하십시오
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

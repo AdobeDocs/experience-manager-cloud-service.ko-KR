@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a7545f0f2143983a052f272992d5e27b78f271a1
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3768'
-ht-degree: 15%
+source-wordcount: '3796'
+ht-degree: 16%
 
 ---
 
@@ -355,3 +355,17 @@ Experience Manager에 `expired` 사이트 작성자가 사이트 페이지에서
 * 원격 참조가 검색되지 않고 오류 메시지가 나타나면 [!DNL Sites] 배포를 사용할 수 있으며 네트워크 연결 문제를 확인합니다. 나중에 다시 시도하여 확인합니다. [!DNL Assets] 배포는 [!DNL Sites] 배포를 수행한 다음 오류를 보고합니다.
 
    ![자산 원격 참조를 검색하지 못했습니다.](assets/reference-report-failure.png)
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

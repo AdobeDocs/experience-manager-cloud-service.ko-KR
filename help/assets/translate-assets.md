@@ -1,26 +1,26 @@
 ---
-title: 여러 언어로 디지털 자산 만들기 및 관리
-description: 이진, 메타데이터 및 태그를 포함한 자산을 여러 언어로 번역하는 워크플로우를 자동화하는 방법을 알아봅니다.
+title: AEM에서 자산을 번역하는 방법
+description: 이진, 메타데이터 및 태그를 포함하여 AEM에서 자산을 여러 언어로 번역하는 워크플로우를 자동화하는 방법을 알아봅니다.
 contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2620'
 ht-degree: 24%
 
 ---
 
-# 다국어 자산 {#multilingual-assets}
+# AEM에서 자산 번역 {#multilingual-assets}
 
-다국어 자산은 바이너리, 메타데이터 및 태그가 여러 언어로 있는 자산을 의미합니다. 일반적으로 자산에 대한 이진, 메타데이터 및 태그는 한 언어로 존재하며 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 변환됩니다. Adobe Experience Manager Assets를 사용하면 자산(바이너리, 메타데이터 및 태그 포함)에 대한 번역 워크플로우를 자동화하여 다국어 프로젝트에서 사용할 다른 언어로 자산을 생성할 수 있습니다.
+다국어 자산은 바이너리, 메타데이터 및 태그가 여러 언어로 있는 자산을 의미합니다. 일반적으로 자산에 대한 이진, 메타데이터 및 태그는 한 언어로 존재하며 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 변환됩니다. Adobe Experience Manager Assets를 사용하면 워크플로우를 자동화하여 자산(바이너리, 메타데이터 및 태그 포함)을 번역하여 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 자산을 생성할 수 있습니다.
 
-번역 워크플로우를 자동화하기 위해 번역 서비스 공급자를 Experience Manager과 통합하고 자산을 여러 언어로 번역할 프로젝트를 만듭니다. Experience Manager은 인간 및 기계 번역 워크플로우를 지원합니다.
+AEM 자산 번역을 자동화하기 위해 번역 서비스 공급자를 Experience Manager과 통합하고 자산을 여러 언어로 번역할 프로젝트를 만듭니다. Experience Manager은 인간 및 기계 번역 워크플로우를 지원합니다.
 
-인간 번역: 번역된 자산이 반환되고 Experience Manager으로 가져옵니다. 번역 공급자가 Experience Manager과 통합되면 Experience Manager과 번역 공급자 간에 자산이 자동으로 전송됩니다.
+AEM의 인적 자산 번역: 번역된 자산이 반환되고 Experience Manager으로 가져옵니다. 번역 공급자가 Experience Manager과 통합되면 Experience Manager과 번역 공급자 간에 자산이 자동으로 전송됩니다.
 
-기계 번역: 기계 번역 서비스는 자산의 메타데이터와 태그를 즉시 변환합니다.
+AEM의 기계 자산 번역: 기계 번역 서비스는 자산의 메타데이터와 태그를 즉시 변환합니다.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -48,7 +48,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 -->
 
-## 자산 번역 준비 {#prepare-assets-for-translation}
+## 자산 번역 준비 {#prepare-to-translate-assets}
 
 다국어 자산은 바이너리, 메타데이터 및 태그가 여러 언어로 있는 자산을 의미합니다. 일반적으로 자산에 대한 이진, 메타데이터 및 태그는 한 언어로 존재하며 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 변환됩니다.
 
@@ -125,13 +125,13 @@ Adobe Experience Manager Assets에서 다국어 자산은 폴더에 포함되며
 1. Select an asset you want to translate, and open the **[!UICONTROL Reference pane]**. The **[!UICONTROL Language Copies]** section displays the number of translation copies that are currently available.
 1. Click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. A list of available translation copies is displayed.
 1. 클릭/탭 **[!UICONTROL 작성 및 번역]** 아래에 있습니다.
-1. 에서 **[!UICONTROL Target 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
+1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
    >[!NOTE]
    >
    >을(를) 선택하는 경우 **[!UICONTROL 기존 번역 프로젝트에 추가]** 옵션을 선택하면 프로젝트 설정이 기존 프로젝트의 설정과 정확히 일치하는 경우에만 번역 프로젝트가 기존 프로젝트에 추가됩니다. 그렇지 않으면 새 프로젝트가 만들어집니다.
 1. 에서 **[!UICONTROL 기존 번역 프로젝트]** 목록에서 프로젝트를 선택하여 변환할 자산을 추가합니다.
-1. 클릭/탭 **[!UICONTROL 만들기]**. The assets to be translated are added to the target folder. The updated folder is listed under the **[!UICONTROL Language Copies]** section.
+1. Click/tap **[!UICONTROL Create]**. The assets to be translated are added to the target folder. The updated folder is listed under the **[!UICONTROL Language Copies]** section.
 1. 프로젝트 콘솔로 이동하고 추가한 기존 번역 프로젝트를 엽니다.
 1. 프로젝트 세부 사항 페이지에서 번역 프로젝트 보기를 클릭/탭합니다.
 1. 아래쪽의 줄임표를 클릭/탭합니다 **번역 작업** 타일을 사용하여 번역 워크플로우에서 자산을 볼 수 있습니다. 번역 작업 목록에는 에셋 메타데이터와 태그에 대한 항목도 표시됩니다. 이 항목들은 에셋의 메타데이터와 태그도 번역됨을 나타냅니다.
@@ -225,11 +225,11 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 Use the **Create structure only** option to create a target folder hierarchy within the target language root to match the hierarchy of the source folder within the source language root. In this case, source assets are copied to the destination folder. However, no translation project is generated.
 
 1. Assets UI에서 대상 언어 루트에서 구조를 만들 소스 폴더를 선택합니다.
-1. 를 엽니다. **[!UICONTROL 참조]** 창 및 클릭/탭하기 **[!UICONTROL 언어 복사]** 아래에 **[!UICONTROL 복사]**.
+1. Open the **[!UICONTROL References]** pane and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
 1. 클릭/탭 **[!UICONTROL 작성 및 번역]** 아래에 있습니다.
 1. 에서 **[!UICONTROL Target 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Create structure only]**.
-1. 클릭/탭 **[!UICONTROL 만들기]**. 대상 언어의 새 구조는 아래에 나와 있습니다 **[!UICONTROL 언어 복사]**.
+1. Click/tap **[!UICONTROL Create]**. 대상 언어의 새 구조는 아래에 나와 있습니다 **[!UICONTROL 언어 복사]**.
 1. 목록에서 구조를 클릭/탭한 다음, 클릭/탭합니다 **[!UICONTROL 자산에 표시]** 대상 언어 내에서 폴더 구조로 이동합니다.
 
 ## 폴더에 번역 클라우드 서비스 적용 {#applying-translation-cloud-services-to-folders}
@@ -276,3 +276,17 @@ If you want to apply a custom connector for the translation services you want to
 1. Run any translation workflow described in creating translation projects after you apply the custom connector. Verify the details of the connector in the **[!UICONTROL Translation Summary]** tile of the translation project in the **[!UICONTROL Projects]** console.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
+
+**추가 참조**
+
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

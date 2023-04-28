@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
-workflow-type: ht
-source-wordcount: '457'
-ht-degree: 100%
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 98%
 
 ---
 
@@ -43,3 +43,18 @@ Adobe Experience Manager Assets as a[!DNL Cloud Service]는 클라우드 기반�
 
 * [에셋 마이크로서비스](/help/assets/asset-microservices-overview.md)
 * [에셋 업로드 메서드](/help/assets/add-assets.md)
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

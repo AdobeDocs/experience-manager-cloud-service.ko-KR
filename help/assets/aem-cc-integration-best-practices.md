@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3473'
 ht-degree: 15%
 
 ---
@@ -61,7 +61,7 @@ This article focuses primarily on the first two aspects of the collaboration nee
 | 사용 - Experience Manager의 자산을 문서에 배치 | 예 - 포함 | 예 - 연결 또는 포함 | Experience Manager 데스크탑 앱에서는 로컬 파일 시스템에서 자산으로 자산에 대한 액세스를 제공합니다. 기본 앱의 이러한 링크는 로컬 경로로 표시됩니다. |
 | 편집 - 열어서 편집합니다. | 예 - 체크아웃 작업 | 예 - 열린 작업(네트워크 공유에서) | [AAL에서 체크아웃](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 기본적으로 자산을 사용자의 creative cloud 저장소 계정(Creative Cloud 앱별로 동기화)에 저장합니다. |
 | 편집 - Experience Manager 외부에서 진행 중 | 예 - 데스크탑에 동기화된 사용자의 Creative Cloud 저장소 계정에서 사용할 수 있는 자산입니다. | 예 |  |
-| 편집 - 변경 내용 업로드 | 예 - [체크인 작업](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 선택적 주석 | 예 |  |
+| 편집 - 변경 내용 업로드 | 예 - [체크인 작업](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 선택적 주석 | 예 |  |
 | 업로드 - 단일 파일 | 예 - 현재 활성 문서 업로드 | 예 | [웹 인터페이스를 통해 업로드](/help/assets/manage-digital-assets.md#uploading-assets) |
 | 업로드 - 여러 파일/계층 폴더 구조 | 아니요 | 예 | [웹 인터페이스를 통해 업로드](/help/assets/manage-digital-assets.md#uploading-assets); 사용자 정의 스크립팅 또는 도구 |
 | 기타 - 사용자 및 로그인 | Creative Cloud 사용자가 Creative Cloud 데스크탑 앱에 로그인되어 인식됨(SSO) | Experience Manager 사용자 / 로그인 | 두 솔루션의 사용자는 Experience Manager 사용자 할당량에 따라 계산됩니다. |
@@ -228,3 +228,18 @@ Experience Manager 데스크탑 앱에서는 기본 앱에서 열린 자산에 �
 네트워크 파일 공유를 사용하여 디지털 자산을 관리하는 경우, Experience Manager 데스크탑 앱에서 매핑되는 네트워크 공유를 사용하는 것만으로 편리하게 대체할 수 있습니다. 네트워크 파일 공유에서 전환할 때 Experience Manager 웹 인터페이스는 네트워크 공유(검색, 컬렉션, 메타데이터, 공동 작업, 미리 보기 등)에서 가능한 것 이상으로 풍부한 디지털 자산 관리 기능 세트를 제공하고 Experience Manager 데스크탑 앱에서는 서버측 DAM 저장소를 데스크탑의 작업과 연결하는 편리한 링크를 제공합니다.
 
 Experience Manager 데스크탑 앱을 사용하여 Experience Manager Assets의 네트워크 공유에서 직접 자산을 관리하지 마십시오. 예를 들어 Experience Manager 데스크탑 앱을 사용하여 여러 파일을 이동/복사하지 마십시오. 대신 Experience Manager Assets 웹 UI를 사용하여 폴더를 Finder/Explorer에서 네트워크 공유로 드래그하거나 Experience Manager Assets 폴더 업로드 기능을 사용하십시오.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

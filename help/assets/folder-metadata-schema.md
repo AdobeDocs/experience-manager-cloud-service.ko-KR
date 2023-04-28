@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 9%
+source-wordcount: '1090'
+ht-degree: 11%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 9%
    ![select_schema](assets/select_schema.png)
 
 1. 메타데이터 스키마를 적용한 폴더의 메타데이터 속성을 엽니다.
-1. 폴더 메타데이터 필드를 보려면 **[!UICONTROL 폴더 메타데이터]** 탭.
+1. To view the folder metadata fields, tap/click the **[!UICONTROL Folder Metadata]** tab.
 
 ## 폴더 메타데이터 스키마 사용 {#use-the-folder-metadata-schema}
 
@@ -172,3 +172,18 @@ Open the properties for a folder configured with a folder metadata schema. A **[
 다양한 필드에 메타데이터 값을 입력하고 탭/클릭합니다 **[!UICONTROL 저장]** 값을 저장합니다. 지정하는 값은 CRX 저장소의 폴더 노드에 저장됩니다.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

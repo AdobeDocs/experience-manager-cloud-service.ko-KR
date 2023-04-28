@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4897'
+source-wordcount: '4925'
 ht-degree: 6%
 
 ---
@@ -159,7 +159,7 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 | 설명 | description:&quot;샘플 이미지&quot; |
 | 작성자 도구 | creatortool:&quot;Adobe Photoshop&quot; |
 | 저작권 소유자 | copyrightowner:&quot;Adobe Systems&quot; |
-| 내용 작성자 | 기여자:John |
+| 참여자 | 기여자:John |
 | 사용 약관 | usagterms:&quot;CopyRights Reserved&quot; |
 | 작성일 | created:YYYY-MM-DDHH |
 | 만료 날짜 | expires:YYYY-MM-DDHH |
@@ -214,7 +214,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ### 검색 [!DNL Dynamic Media] assets {#search-dynamic-media-assets}
 
-을(를) 선택하여 Dynamic Media 이미지를 필터링할 수 있습니다 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]** 에서 **[!UICONTROL 필터]** 패널. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets. While authoring web pages, the authors can search for sets from within the Content Finder. A filter for sets is available in a pop-up menu.
+You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets. While authoring web pages, the authors can search for sets from within the Content Finder. A filter for sets is available in a pop-up menu.
 
 ### 웹 페이지를 작성할 때 컨텐츠 파인더에서 자산 검색 {#content-finder}
 
@@ -232,13 +232,13 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 다음 요청 매개 변수를 URL에 전달하여 특정 컨텍스트에서 자산 선택기를 시작합니다.
 
-| 이름 | 값 | 예 | 목적 |
+| 이름 | 값 | 예 | 용도 |
 |---|---|---|---|
 | 리소스 접미사(B) | 폴더 경로는 URL에 리소스 접미사로 사용됩니다. [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 예를 들어 폴더를 선택한 특정 폴더가 있는 자산 선택기를 시작하려면 `/content/dam/we-retail/en/activities` 선택한 경우 URL은 다음과 같은 형식이어야 합니다. `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 이 폴더를 리소스 접미사로 전달합니다. |
 | `mode` | 단일, 다중 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 여러 모드에서 자산 선택기를 사용하여 여러 자산을 동시에 선택할 수 있습니다. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 Granite 대화 상자로 엽니다. 이 옵션은 Granite Path Field를 통해 자산 선택기를 시작하고 pickerSrc URL로 구성하는 경우에만 적용할 수 있습니다. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 이 옵션을 사용하여 자산 선택기의 루트 폴더를 지정합니다. 이 경우 자산 선택기를 사용하여 루트 폴더 아래에 하위 자산(직접/간접)만 선택할 수 있습니다. |
-| `viewmode` | 검색을 |  | 검색 모드에서 자산 선택기를 실행하려면 `assettype` 및 `mimetype` 매개 변수. |
+| `viewmode` | 검색 |  | 검색 모드에서 자산 선택기를 실행하려면 `assettype` 및 `mimetype` 매개 변수. |
 | `assettype` | 이미지, 문서, 멀티미디어, 아카이브 | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | 제공된 값에 따라 자산 유형을 필터링하려면 옵션을 사용합니다. |
 | `mimetype` | MIME 유형 (`/jcr:content/metadata/dc:format`) of an asset(와일드카드)도 지원됩니다. | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | MIME 유형에 따라 자산을 필터링하려면 사용하십시오. |
 
@@ -463,6 +463,20 @@ You can create smart collections based on the search criteria. From the **[!UICO
 | 시각적으로 유사한 이미지를 검색할 때 예상 이미지가 누락됩니다. | <ul><li>에서 이미지를 사용할 수 없습니다. [!DNL Experience Manager].</li><li>이미지가 인덱싱되지 않았습니다. 일반적으로 최근에 업로드된 경우입니다.</li><li>이미지에 스마트 태그가 지정되어 있지 않습니다.</li></ul> | <ul><li>이미지를 [!DNL Assets].</li><li>관리자에게 문의하여 리포지토리를 다시 색인화하십시오. 또한 적절한 인덱스를 사용하고 있는지 확인합니다.</li><li>관리자에게 문의하여 관련 자산에 스마트 태그를 지정합니다.</li></ul> |
 | 시각적으로 유사한 이미지를 검색할 때 관련이 없는 이미지가 표시됩니다. | 시각적 검색 동작입니다. | [!DNL Experience Manager] 가능한 한 많은 관련 자산을 표시합니다. 관련성이 낮은 이미지가 있는 경우 결과에 추가되지만 검색 등급이 낮습니다. 검색 결과를 아래로 스크롤하면 검색된 자산의 일치 항목 및 관련성이 줄어듭니다. |
 | 검색 결과를 선택하고 실행할 때 검색된 모든 자산이 작동하지 않습니다. | 다음 [!UICONTROL 모두 선택] 선택 사항은 카드 보기에서 처음 100개의 검색 결과와 목록 보기에서 처음 200개의 검색 결과만 선택합니다. |  |
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

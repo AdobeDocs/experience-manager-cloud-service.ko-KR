@@ -2,10 +2,10 @@
 title: Workfront과 Experience Manager Assets 간 자산 메타데이터 매핑 구성
 description: Adobe Workfront과 Experience Manager as a Cloud Service 애플리케이션 간에 자산 메타데이터 필드를 매핑합니다. 메타데이터 필드를 매핑한 결과, Workfront에서 Experience Manager Assets으로 자산을 전송하면 Experience Manager Assets에서 매핑된 자산 메타데이터를 볼 수 있습니다.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 0%
+source-wordcount: '1025'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Workfront에서 Experience Manager Assets으로 이미지를 보내려면
 
 1. 클릭 **[!UICONTROL 보내기]**&#x200B;그런 다음 Experience Manager Assets Essentials 통합 이름을 선택합니다.
 
-   ![AEM에 보내기](assets/send-to-aem.png)
+   ![AEM으로 전송](assets/send-to-aem.png)
 
 1. 자산의 대상 폴더를 선택한 다음 를 클릭합니다 **[!UICONTROL 폴더 선택]**.
 
@@ -95,7 +95,7 @@ Experience Manager Assets as a Cloud Service에서 새 메타데이터 양식을
 
       `wm` 는 네임스페이스 이름 및 `projectName` 는 속성 제목을 나타냅니다. 를 사용하십시오 `namespace:propertyTitle` 메타데이터 필드 매핑을 정의하는 형식입니다.
 
-      ![AEM에 보내기](assets/metadata-schema-mapping.png)
+      ![AEM으로 전송](assets/metadata-schema-mapping.png)
 
 1. 을(를) 클릭합니다. **[!UICONTROL 양식 작성]** 탭을 선택하고 **[!UICONTROL 단일 행 텍스트]** 구성 요소를 생성하지 않습니다. 양식에서 구성 요소를 클릭합니다. 에서 **[!UICONTROL 양식 작성]** 탭:
 
@@ -128,3 +128,18 @@ Experience Manager as a Cloud Service 애플리케이션에서 메타데이터 �
 1. 대상 폴더를 선택합니다 [Adobe Workfront 애플리케이션에서 이미지가 전송됩니다](#send-image-workfront-assets) 을(를) 클릭합니다. **[!UICONTROL 적용]**.
 
 Experience Manager Assets에서 이미지로 이동하고 이미지와 연관된 메타데이터를 볼 수 있습니다. 이미지를 선택하고 을(를) 클릭합니다 **[!UICONTROL 속성]** 이미지 메타데이터를 보려면
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

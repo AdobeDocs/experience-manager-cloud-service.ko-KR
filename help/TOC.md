@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
+source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
-source-wordcount: '4068'
+source-wordcount: '4066'
 ht-degree: 99%
 
 ---
@@ -420,7 +420,7 @@ ht-degree: 99%
       + [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)
       + [이미지 및 비디오 프로필을 사용하여 작업](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [오디오 및 비디오 에셋의 트랜스크립션 구성](/help/assets/configure-transcription.md)
-      + [다국어 에셋 및 번역](/help/assets/translate-assets.md)
+      + [자산 번역](/help/assets/translate-assets.md)
       + [검색 패싯](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)

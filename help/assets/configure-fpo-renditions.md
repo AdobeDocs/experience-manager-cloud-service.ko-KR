@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 7cc0bd5bbd51edb6f3bc2cfcccfa0a35a0d7a790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 0%
+source-wordcount: '485'
+ht-degree: 4%
 
 ---
 
@@ -56,3 +56,18 @@ FPO 변환을 생성하려면 다음을 생성합니다 **[!UICONTROL 처리 프
 클릭 **[!UICONTROL FPO 표현물]** 미리 보기를 로드하려면 다음을 수행하십시오. 선택적으로 변환을 마우스 오른쪽 단추로 클릭하고 파일 시스템에 저장할 수 있습니다. 왼쪽 레일에서 사용 가능한 렌디션을 확인합니다.
 
 ![rendition_list](assets/list-renditions.png)
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

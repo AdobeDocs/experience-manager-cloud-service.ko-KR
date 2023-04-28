@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 1%
+source-wordcount: '909'
+ht-degree: 3%
 
 ---
 
@@ -109,6 +109,21 @@ Date24/08/2021
 처리 프로필에는 [!DNL Assets] 사전 정의된 폴더에 업로드되는 자산에 적용되는 처리 명령. 프로필은 폴더 또는 새로 업로드한 자산의 컨텐츠 처리를 자동화하는 데 사용됩니다. 프로필을 사용하여 자산을 더 잘 구성할 수 있습니다.
 
 메타데이터 사용, 파일 이름 지정 및 폴더 구조를 표준화하면 디지털 자산 풀이 증가함에 따라 처리 프로필을 보다 정밀하고 일관성 있게 폴더에 적용할 수 있습니다.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 10%
+source-wordcount: '3251'
+ht-degree: 11%
 
 ---
 
@@ -171,7 +171,7 @@ Live Copy 자산 또는 폴더의 경우 다음 정보를 확인하고 참조 �
 * 에 특정 Live Copy를 열거나 표시합니다 [!DNL Experience Manager] 사용자 인터페이스.
 * 업데이트를 롤아웃합니다.
 
-Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 연 다음 를 클릭합니다 **[!UICONTROL 참조]**. 또는, 자산 또는 폴더를 선택하고 키보드 단축키를 사용합니다 `Alt + 4`.
+Select a live copy asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
 
 ![Actions available in the References rail for the selected live copy](assets/referencerail_livecopy.png)
 
@@ -186,7 +186,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 연 다음 를 �
 소스 자산에서 롤아웃 작업을 시작하고 전체 또는 일부 선택 Live Copy를 업데이트할 수 있습니다.
 
 1. Live Copy 자산 또는 폴더를 선택합니다. 클릭 **[!UICONTROL 속성]** 를 클릭합니다. 또는 키보드 단축키를 사용합니다 `p`.
-1. 클릭 **[!UICONTROL Live Copy 소스]**. 클릭 **[!UICONTROL 롤아웃]** 를 클릭합니다.
+1. Click **[!UICONTROL Live Copy Source]**. 클릭 **[!UICONTROL 롤아웃]** 를 클릭합니다.
 1. 업데이트할 Live Copy를 선택합니다. 클릭 **[!UICONTROL 롤아웃]**.
 1. 하위 자산에 대한 업데이트를 롤아웃하려면 다음을 선택합니다 **[!UICONTROL 롤아웃 소스 및 모든 하위]**.
 
@@ -264,14 +264,14 @@ However, you have the flexibility to make local modifications to a live copy to 
    >
    >를 클릭하면 관계가 즉시 제거됩니다 **[!UICONTROL 분리]** 클릭합니다. 를 클릭하여 실행 취소할 수 없습니다 **[!UICONTROL 취소]** 를 클릭합니다.
 
-또는 Live Copy 폴더에서 여러 자산을 빠르게 분리할 수 있습니다 **[!UICONTROL Live Copy 개요]** 콘솔. 자세한 내용은 [Live Copy 폴더의 많은 자산에 대해 작업을 수행합니다](#bulk-actions).
+또는 Live Copy 폴더에서 여러 자산을 빠르게 분리할 수 있습니다 **[!UICONTROL Live Copy 개요]** 콘솔. See [Take actions on many assets in live copy folders](#bulk-actions).
 
 ## Live Copy 폴더의 벌크 작업 {#bulk-actions}
 
 Live Copy 폴더에 여러 개의 자산이 있는 경우 각 자산에 대해 작업을 시작하는 것은 지루할 수 있습니다. 의 여러 자산에 대한 기본 작업을 빠르게 시작할 수 있습니다 [!UICONTROL Live Copy 콘솔]. 위의 방법은 개별 자산에 대해 계속 작동합니다.
 
 1. 소스 폴더를 선택합니다. 클릭 **[!UICONTROL 속성]** 를 클릭합니다. 또는 키보드 단축키를 사용합니다 `p`.
-1. 클릭 **[!UICONTROL Live Copy 소스]**. To open the console, click **[!UICONTROL Live Copy Overview]**.
+1. Click **[!UICONTROL Live Copy Source]**. To open the console, click **[!UICONTROL Live Copy Overview]**.
 1. In this dashboard, select a live copy asset from a live copy folder. Click the desired actions from the toolbar. The actions available are **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**. 선택한 소스 폴더와 라이브 관계가 있는 임의의 Live Copy 폴더의 모든 자산에서 이러한 작업을 빠르게 시작할 수 있습니다.
 
    ![Live Copy 개요 콘솔에서 Live Copy 폴더의 많은 자산을 쉽게 업데이트할 수 있습니다](assets/livecopyconsole_update_many_assets.png)
@@ -321,3 +321,18 @@ Live Copy 및 소스는 디지털 자산으로서 어느 정도 관리할 수 �
 * 컨텐츠 조각은 지원되지 않습니다. Live Copy를 만들려고 하면 컨텐츠 조각이 관계 없이 그대로 복사됩니다. 복사된 컨텐츠 조각은 시간 내 스냅샷이며 원래 컨텐츠 조각을 업데이트할 때에는 업데이트되지 않습니다.
 
 * MSM이 메타데이터 원본에 쓰기 기능을 사용하도록 설정되어 있지 않습니다. 원본에 쓰기 시작하면 상속이 중단됩니다.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

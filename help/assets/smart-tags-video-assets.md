@@ -4,10 +4,10 @@ description: Experience Manager은 다음을 사용하여 상황에 맞는 및 �
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 0%
+source-wordcount: '1213'
+ht-degree: 2%
 
 ---
 
@@ -133,6 +133,21 @@ DAM에 이미 있는 기존 비디오 자산은 자동으로 태그가 지정되
 * 파일 크기가 300MB보다 작은 비디오만 자동 태그가 지정됩니다. 다음 [!DNL Adobe Sensei] 서비스에서 크기가 큰 비디오 파일을 건너뜁니다.
 
 * 에 언급된 파일 형식 및 지원되는 코덱의 비디오만 [스마트 태그](/help/assets/smart-tags.md#smart-tags-supported-file-formats) 태그가 지정되어 있습니다.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 3%
+source-wordcount: '1322'
+ht-degree: 4%
 
 ---
 
@@ -67,7 +67,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
    * 에서 **[!UICONTROL 만료]** 필드에서 날짜 선택기를 사용하여 링크에 대한 만료 날짜 및 시간을 지정합니다.
    * 를 활성화합니다 **[!UICONTROL 원본 파일 다운로드 허용]** 수신자가 원본 변환을 다운로드할 수 있도록 하는 확인란을 선택합니다.
 
-1. **[!UICONTROL 공유]**&#x200B;를 클릭합니다. 링크가 사용자와 공유되는지 확인하는 메시지가 나타납니다. 사용자는 공유 링크가 포함된 이메일을 받게 됩니다.
+1. 클릭 **[!UICONTROL 공유]**. 링크가 사용자와 공유되는지 확인하는 메시지가 나타납니다. 사용자는 공유 링크가 포함된 이메일을 받게 됩니다.
 
 ![링크 공유 전자 메일](assets/link-sharing-email-notification.png)
 
@@ -256,3 +256,18 @@ Adobe 자산 링크를 사용하면 컨텐츠 작성 프로세스에서 광고 �
 
 <!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)

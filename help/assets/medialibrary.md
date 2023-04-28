@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '572'
+ht-degree: 5%
 
 ---
 
@@ -71,7 +71,7 @@ Media Library 기능을 사용하려면 기본값을 사용할 수 있습니다 
 * 자산에 주석 달기.
 * 에 자산 추가 [!DNL Sites] Content Finder를 통해 페이지를 표시합니다.
 * 사용 [!DNL Content Fragments].
-* 에 HTTP REST 및 GraphQL API 사용 [!DNL Content Fragments] 및 참조된 미디어 자산을 사이트 라이센스에서 확인합니다.
+* 용 HTTP REST 및 GraphQL API 사용 [!DNL Content Fragments] 및 참조된 미디어 자산을 사이트 라이센스에서 확인합니다.
 * Marketing Cloud 통합.
 * 자산 관리 사용자 인터페이스를 사용자 지정하고 확장합니다.
 * Query Builder(API)에 액세스하여 검색 기능을 확장합니다.
@@ -92,6 +92,21 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 스마트 태그는 사용할 수 없습니다. [!DNL Asset] 링크, [!DNL Asset] 선택기, 벌크 태그 지정, 자산 워크플로우 수정 또는 표준 [!DNL Adobe Experience Manager] 사용자 인터페이스를 사용하여 [!DNL Assets] 라이센스.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

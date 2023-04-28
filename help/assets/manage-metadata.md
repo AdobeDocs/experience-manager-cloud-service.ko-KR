@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
+source-git-commit: 91af800c8b2f83e689e057f304a8e144ae4cc5ed
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 7%
+source-wordcount: '1981'
+ht-degree: 8%
 
 ---
 
@@ -242,6 +242,20 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 워크플로우는 이미지에 제목이 있는지 여부를 확인할 수 있습니다. 표시되지 않으면 시스템에서 제목을 추가하라는 메시지를 표시합니다.
 * 워크플로우는 자산에 대한 저작권 공지가 배포를 허용하는지 여부를 확인할 수 있습니다. 따라서 시스템이 자산을 한 서버나 다른 서버로 전송합니다.
 * 워크플로우는 사전 정의된 필수 메타데이터 또는 *잘못된* 메타데이터.
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

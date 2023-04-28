@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2471'
 ht-degree: 14%
 
 ---
@@ -260,7 +260,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
    * 권한: `jcr:read`
    * 권한 유형: `Allow`
 
-   **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+   클릭 **[!UICONTROL 추가]**.
 
    ![user-permissions](assets/aem-stock-user-permissions.png)
 
@@ -313,7 +313,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 | 사용자 | 그룹 | 권한 | 사용자 기본 설정에서 Stock 구성 수락 | 자산 액세스 | Adobe Stock 액세스 |
 | --- | --- | --- | --- | --- | --- |
-| admin | 해당 없음 | 모두 | 해당 없음 | 예 | 예 |
+| admin | N/A | 모두 | N/A | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 예 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 아니요 | 오류: 데이터를 로드하지 못했습니다. | 아니요 |
 | test-doc1 | DAM 사용자 | **허용**: /conf/global/settings/stock **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니요 |
@@ -451,6 +451,21 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 * **Reference fields and metadata are not synced**: When a user updates a license reference field, the license reference information is updated in [!DNL Experience Manager] but not on the [!DNL Adobe Stock] website. Similarly, if the user updates the reference fields on the [!DNL Adobe Stock] website, the updates are not synchronized in [!DNL Experience Manager].
 -->
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

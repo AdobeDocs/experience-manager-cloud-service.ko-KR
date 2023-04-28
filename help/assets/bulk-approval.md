@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '823'
 ht-degree: 24%
 
 ---
@@ -57,7 +57,7 @@ Adobe Experience Manager Assets를 사용하여 폴더 또는 컬렉션에 있�
 
    ![review_task](assets/review_task.png)
 
-1. 도구 모음에서 **[!UICONTROL 완료]** 아이콘을 탭/클릭합니다. 대화 상자에서 댓글을 입력하고 탭/클릭합니다  **[!UICONTROL 완료]** 확인합니다.
+1. 을 탭/클릭합니다. **[!UICONTROL 완료]** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다. 대화 상자에서 댓글을 입력하고 탭/클릭합니다  **[!UICONTROL 완료]** 확인합니다.
 1. 자산 UI로 이동하고 폴더를 엽니다. 자산에 대한 승인 상태 아이콘은 카드 및 목록 보기 모두에 표시됩니다.
 
    **카드 보기**
@@ -71,7 +71,7 @@ Adobe Experience Manager Assets를 사용하여 폴더 또는 컬렉션에 있�
 ## 컬렉션에 대한 검토 작업 만들기 {#creating-a-review-task-for-collections}
 
 1. 컬렉션 페이지에서 검토 작업을 생성할 컬렉션을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 검토 작업 만들기]** 아이콘을 클릭하여 열기 **[!UICONTROL 작업 검토]** 페이지. 도구 모음에 아이콘이 표시되지 않으면 탭/클릭합니다 **[!UICONTROL 자세히]** 그런 다음 아이콘을 선택합니다.
+1. From the toolbar, tap/click the **[!UICONTROL Create Review Task]** icon to open the **[!UICONTROL Review Task]** page. If you cannot see the icon in the toolbar, tap/click **[!UICONTROL More]** and then select the icon.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -91,14 +91,14 @@ Adobe Experience Manager Assets를 사용하여 폴더 또는 컬렉션에 있�
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. 탭/클릭 **[!UICONTROL 제출]**, 탭/클릭 **[!UICONTROL 완료]** 확인 메시지를 닫습니다. 새 작업에 대한 알림이 승인자에게 전송됩니다.
+1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. A notification for the new task is sent to the approver.
 1. 에 로그인합니다. [!DNL Experience Manager Assets] 승인자로 이동하고 자산 콘솔로 이동합니다. 자산을 승인하려면 **[!UICONTROL 알림 을 참조하십시오]** 아이콘을 클릭한 다음 목록에서 검토 작업을 선택합니다.
-1. 에서 **[!UICONTROL 작업 검토]** 페이지에서 검토 작업의 세부 사항을 검토한 다음 탭/클릭합니다 **[!UICONTROL 검토]**.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
 1. 컬렉션의 모든 자산이 검토 페이지에 표시됩니다. 자산을 선택하고 **[!UICONTROL 승인/거부]** 아이콘을 사용하여 자산을 승인하거나 거부할 수 있습니다.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. 도구 모음에서 **[!UICONTROL 완료]** 아이콘을 탭/클릭합니다. 대화 상자에서 댓글을 입력하고 탭/클릭합니다 **[!UICONTROL 완료]** 확인합니다.
+1. 을 탭/클릭합니다. **[!UICONTROL 완료]** 아이콘 을 클릭하여 제품에서 사용할 수 있습니다. 대화 상자에서 댓글을 입력하고 탭/클릭합니다 **[!UICONTROL 완료]** 확인합니다.
 1. 컬렉션 콘솔로 이동하고 컬렉션을 엽니다. 자산에 대한 승인 상태 아이콘은 카드 및 목록 보기 모두에 표시됩니다.
 
    **카드 보기**
@@ -108,3 +108,18 @@ Adobe Experience Manager Assets를 사용하여 폴더 또는 컬렉션에 있�
    **목록 보기**
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
+
+**추가 참조**
+
+* [에셋 번역](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [자산 지원 파일 형식](file-format-support.md)
+* [에셋 검색](search-assets.md)
+* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [에셋 보고서](asset-reports.md)
+* [메타데이터 스키마](metadata-schemas.md)
+* [에셋 다운로드](download-assets-from-aem.md)
+* [메타데이터 관리](manage-metadata.md)
+* [검색 패싯](search-facets.md)
+* [컬렉션 관리](manage-collections.md)
+* [벌크 메타데이터 가져오기](metadata-import-export.md)
