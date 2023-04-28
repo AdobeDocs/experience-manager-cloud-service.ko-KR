@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
 source-wordcount: '1062'
-ht-degree: 37%
+ht-degree: 43%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="앱의 콘텐츠 구조 만들기"
->abstract="이 일련의 대화형 지침을 따라 헤드리스 컨텐츠의 기본 구조 역할을 하는 구조(컨텐츠 조각 모델이라고 함)를 만드는 방법을 알아봅니다."
+>abstract="대화형 안내서 시리즈를 따라가면서 Headless 콘텐츠의 기반 구조 역할을 하는 구조(콘텐츠 조각 모델이라고 함)를 만드는 방법을 알아봅니다."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="모델 콘솔 실행"
->abstract="Adobe Experience Manager as a Cloud Service에서 콘텐츠에 대한 재사용 가능한 스키마(콘텐츠 조각 모델)를 만드는 방법에 대해 살펴보겠습니다. 비디오를 시청하여 이 단계가 중요한 이유에 대해 알아보십시오. <br><br>이 학습 모듈에서는 여행 사이트를 예로 사용하고 여행을 나타내는 모델을 만드는 과정을 거칩니다. 이후 모듈에서 이 모델을 참조하므로 제공된 대로 이름 지정 스키마를 따라야 합니다.<br><br>아래 버튼을 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
+>abstract="Adobe Experience Manager as a Cloud Service에서 콘텐츠에 대한 재사용 가능한 스키마(콘텐츠 조각 모델)를 만드는 방법에 대해 살펴보겠습니다. 비디오를 시청하여 이 단계가 중요한 이유에 대해 알아보십시오. <br><br>이 학습 모듈에서는 여행 사이트를 예로 들어 여행을 나타내는 모델을 만드는 과정을 안내합니다. 이후 모듈에서 이 모델을 참조할 예정이므로 제공된 명명 스키마를 따라야 합니다.<br><br>아래 버튼을 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
 >additional-url="https://video.tv.adobe.com/v/3413261" text="콘텐츠 구조 소개 비디오"
 
 >[!CONTEXTUALHELP]

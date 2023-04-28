@@ -1,13 +1,13 @@
 ---
 title: 단순 앱에서 콘텐츠 렌더링
-description: CodePen 예제 앱 및 AEM Headless Client for JavaScript를 사용하여 평가판 환경에서 JSON 컨텐츠 가져오기를 탐색합니다.
+description: CodePen 예제 앱 및 JavaScript용 AEM Headless 클라이언트를 사용하여 체험판 환경에서 JSON 콘텐츠를 가져오는 방법을 살펴보십시오.
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 42%
+ht-degree: 53%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 42%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
 >title="간단한 앱에서 콘텐츠 렌더링"
->abstract="CodePen 예제 앱 및 AEM Headless Client for JavaScript를 사용하여 평가판 환경에서 JSON 컨텐츠 가져오기를 탐색합니다."
+>abstract="CodePen 예제 앱 및 JavaScript용 AEM Headless 클라이언트를 사용하여 체험판 환경에서 JSON 콘텐츠를 가져오는 방법을 살펴보십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="샘플 CodePen 앱 실행"
->abstract="이 안내서는 평가판 환경에서 기본 JavaScript 웹 앱으로 JSON 데이터를 쿼리하는 과정을 안내합니다. 이전 학습 모듈에서 모델링하고 만든 컨텐츠 조각을 사용할 예정이므로 이 학습 모듈로 이동하기 전에 먼저 해당 안내서를 통해 작업하십시오.<br><br>JavaScript 웹 앱에서 콘텐츠를 쿼리하는 방법을 보여주기 위해 현재 상태로 사용하거나 사용자 계정에 포크를 설정하여 추가 사용자 지정할 수 있습니다."
+>abstract="이 안내서는 체험판 환경의 JSON 데이터를 기본 JavaScript 웹 앱으로 쿼리하는 방법을 설명합니다. 이전 학습 모듈에서 모델링하여 만든 콘텐츠 조각을 사용할 예정이므로 이 모듈로 넘어가기 전에 해당 안내서를 먼저 살펴보시기 바랍니다.<br><br>JavaScript 웹 앱에서 콘텐츠를 쿼리하는 방법을 설명하기 위해 그대로 사용하거나 자체 계정으로 포크하여 추가로 사용자 정의할 수 있는 CodePen을 설정했습니다."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
