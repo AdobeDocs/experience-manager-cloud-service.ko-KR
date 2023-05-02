@@ -2,10 +2,10 @@
 title: 사용자 정의 도메인 이름 소개
 description: Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 셀프서비스 방식을 사용하여 사이트를 고유한 브랜드 이름으로 식별할 수 있습니다.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc6910bad0d0a62232bd66e0080b6802b9a1110b
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 81%
 
 ---
 
@@ -33,21 +33,16 @@ Cloud Manager의 UI를 사용하면 사용자 정의 도메인을 추가하여 �
 >
 >Cloud Manager는 도메인 이름 등록자가 아니므로 DNS 서비스를 제공하지 않습니다.
 
-## 제한 사항 {#limitations}
+## 사용자 지정 도메인 이름 및 BYO CDN {#byo-cdn}
 
-AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 여러 가지 제한 사항이 있습니다.
+AEM as a Cloud Service은 CDN(Content Delivery Network) 서비스를 제공하지만 AEM과 함께 사용할 BYO(Your Own) CDN을 가져올 수도 있습니다. 사용자 지정 도메인은 AEM 관리 CDN 또는 관리하는 CDN에 설치할 수 있습니다.
 
-* 사용자 정의 도메인 이름은 Cloud Manager에서 Sites 프로그램을 위한 게시 및 미리보기 서비스 모두에 대해 지원됩니다. 작성자 서비스를 위한 사용자 정의 도메인은 지원되지 않습니다.
-* 각 Cloud Manager 환경은 환경당 최대 500개의 사용자 정의 도메인을 호스팅할 수 있습니다.
-* 현재 실행 중인 파이프라인이 해당 환경에 연결되어 있는 동안에는 환경에 도메인 이름을 추가할 수 없습니다.
-* 동일한 도메인 이름을 둘 이상의 환경에서 사용할 수 없습니다.
-* 한 번에 하나의 도메인 이름만 추가할 수 있습니다.
-* AEM as a Cloud Service는 `*.example.com`와 같은 와일드카드 도메인을 지원하지 않습니다.
-* 사용자 정의 도메인 이름을 추가하기 전에 사용자 정의 도메인 이름이 포함된 유효한 SSL 인증서가(와일드카드 인증서가 유효함) 프로그램에 설치되어 있어야 합니다. 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
+* AEM 관리 CDN에 설치된 사용자 지정 도메인 이름(및 인증서)은 Cloud Manager를 통해 관리됩니다.
+* 고유한 CDN에 설치된 사용자 지정 도메인 이름(및 인증서)은 해당 특정 CDN에서 관리됩니다.
 
->[!NOTE]
->
->사용자 정의 도메인은 AEM 관리 CDN을 사용하는 **경우에만** Cloud Manager에서 지원됩니다. 자체 CDN을 가져오고 [AEM 관리 CDN을 지정](/help/implementing/dispatcher/cdn.md)하는 경우 Cloud Manager가 아닌 도메인을 관리하려면 해당 특정 CDN을 사용해야 합니다.
+자체 CDN에서 관리되는 도메인은 Cloud Manager를 통해 설치할 필요가 없습니다. X-Forwarded-Host를 통해 AEM에서 사용할 수 있게 되며, 디스패처에 정의된 방문자와 일치합니다. [자세한 내용은 CDN 설명서를 참조하십시오.](/help/implementing/dispatcher/cdn.md)
+
+한 환경에서 AEM 관리 CDN에 두 도메인을 설치하고 자신의 CDN에 설치할 수 있습니다.
 
 ## 워크플로 {#workflow}
 
@@ -68,3 +63,15 @@ AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 여러
 >[!TIP]
 >
 >AEM as a Cloud Service를 사용하여 사용자 정의 도메인 이름을 설정하는 것은 일반적으로 간단한 프로세스입니다. 그러나 경우에 따라 도메인 위임 문제가 발생할 수 있으며 해결하는 데 영업일 기준 1~2일이 소요될 수 있습니다. 이러한 이유로 활성화 날짜 이전에 도메인을 설치하는 것이 좋습니다. 자세한 내용은 [도메인 이름 상태 확인](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 문서를 참조하십시오.
+
+## 제한 사항 {#limitations}
+
+AEMaaCS에서 사용자 정의 도메인 이름을 사용하는 데에는 여러 가지 제한 사항이 있습니다.
+
+* 사용자 정의 도메인 이름은 Cloud Manager에서 Sites 프로그램을 위한 게시 및 미리보기 서비스 모두에 대해 지원됩니다. 작성자 서비스를 위한 사용자 정의 도메인은 지원되지 않습니다.
+* 각 Cloud Manager 환경은 환경당 최대 500개의 사용자 정의 도메인을 호스팅할 수 있습니다.
+* 현재 실행 중인 파이프라인이 해당 환경에 연결되어 있는 동안에는 환경에 도메인 이름을 추가할 수 없습니다.
+* 동일한 도메인 이름을 둘 이상의 환경에서 사용할 수 없습니다.
+* 한 번에 하나의 도메인 이름만 추가할 수 있습니다.
+* AEM as a Cloud Service는 `*.example.com`와 같은 와일드카드 도메인을 지원하지 않습니다.
+* 사용자 정의 도메인 이름을 추가하기 전에 사용자 정의 도메인 이름이 포함된 유효한 SSL 인증서가(와일드카드 인증서가 유효함) 프로그램에 설치되어 있어야 합니다. 자세한 내용은 [SSL 인증서 추가](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)를 참조하십시오.
