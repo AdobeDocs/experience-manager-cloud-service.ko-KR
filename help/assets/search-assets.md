@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
+source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4934'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 [!DNL Adobe Experience Manager Assets] 는 컨텐츠 속도를 높이는 데 도움이 되는 강력한 자산 검색 방법을 제공합니다. 팀은 기본 기능과 사용자 지정 방법을 사용하여 매끄럽고 지능적인 자산 검색 경험을 통해 출시 시간을 단축할 수 있습니다. 자산 검색 기능은 디지털 자산 관리 시스템의 사용에 핵심입니다. 크리에이티브, 비즈니스 사용자 및 마케터의 강력한 자산 관리 또는 DAM 관리자가 관리하는 데 사용할 수 있습니다. 를 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색 [!DNL Assets] 사용자 인터페이스 또는 기타 앱과 표면은 이러한 사용 사례를 이행하는 데 도움이 됩니다.
 
-[!DNL Experience Manager Assets] 에서는 자산을 검색할 수 있는 다음 사용 사례를 지원하며 이 문서에서는 이러한 사용 사례에 대한 사용, 개념, 구성, 제한 사항 및 문제 해결에 대해 설명합니다.
+AEM의 자산 검색은 다음 사용 사례를 지원하며 이 사용 사례에 대한 사용, 개념, 구성, 제한 사항 및 문제 해결을 설명합니다.
 
 | 에셋 검색 | 검색 기능 구성 및 관리 | 자산 검색 결과 작업 |
 |---|---|---|
@@ -38,9 +38,9 @@ ht-degree: 6%
 
 [!DNL Experience Manager] 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 자세한 내용은 [컬렉션 검색](/help/assets/manage-collections.md).
 
-## 검색 인터페이스 이해 {#searchui}
+## 자산 검색 인터페이스 이해 {#searchui}
 
-검색 인터페이스 및 사용 가능한 작업에 대해 숙지하십시오.
+자산 검색 인터페이스 및 사용 가능한 작업에 대해 숙지하십시오.
 
 ![Experience Manager Assets 검색 결과 인터페이스 이해](assets/aem_search_results.png)
 
