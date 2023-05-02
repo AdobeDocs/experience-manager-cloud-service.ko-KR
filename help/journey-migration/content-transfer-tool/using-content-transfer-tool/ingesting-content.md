@@ -2,9 +2,9 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1722'
 ht-degree: 12%
 
 ---
@@ -146,6 +146,10 @@ ht-degree: 12%
 Release Orchestrator는 업데이트를 자동으로 적용하여 환경을 최신 상태로 자동으로 유지합니다. 수집이 수행될 때 업데이트가 트리거되면 환경의 손상을 포함하여 예기치 않은 결과가 발생할 수 있습니다. 이는 수집을 시작하기 전에 지원 티켓을 기록해야 하는 이유 중 하나입니다(위의 &quot;참고&quot; 참조). 이때 Release Orchestrator를 일시적으로 비활성화할 수 있습니다.
 
 수집을 시작할 때 Release Orchestrator가 계속 실행되고 있는 경우 UI가 이 메시지를 표시합니다. 위험을 감수하면서 계속 진행할 수도 있습니다. 필드를 확인하고 버튼을 다시 누르면 됩니다.
+
+>[!NOTE]
+>
+> 이제 개발 환경에 Orchestrator 릴리스 가 배포되고 있으므로 해당 환경의 업데이트를 일시 중지해야 합니다.
 
 ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
