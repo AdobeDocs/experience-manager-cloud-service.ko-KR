@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 13a1915e9aca812024e8eb27c131500cdc8e01b2
+source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
 workflow-type: tm+mt
 source-wordcount: '5887'
 ht-degree: 3%
@@ -158,7 +158,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 >[!NOTE]
 >
->비디오에 DASH를 사용하려면 먼저 계정에 대한 Adobe 기술 지원 기능을 통해 해당 비디오를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash))
+>비디오에 DASH를 사용하려면 먼저 계정에 대한 Adobe 기술 지원 기능을 통해 해당 비디오를 활성화해야 합니다. 자세한 내용은 [계정에서 DASH 사용](#enable-dash).
 
 HTML 5 및 CSS를 사용하여 재생 구성 요소를 디자인하는 기능을 단일 플레이어로 결합할 수 있습니다. 포함된 재생을 가질 수 있으며 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용할 수 있습니다. 이 모든 기능은 데스크탑 및 모바일 사용자 모두에게 리치 미디어 콘텐츠의 범위를 확장하고 간소화된 비디오 경험을 제공할 수 있음을 의미합니다.
 
