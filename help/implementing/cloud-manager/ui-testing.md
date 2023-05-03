@@ -3,9 +3,9 @@ title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2238'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -283,24 +283,23 @@ UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud M
 >
 >로컬 시스템에서 기능 테스트를 실행하려면 동일한 동작이 가능하도록 관리자와 유사한 권한을 가진 사용자를 만드십시오.
 
-1. 기능 테스트를 위해 범위가 제공되는 컨테이너화된 인프라는 다음 경계로 제한됩니다.
+1. 기능 테스트 범위가 지정된 컨테이너화된 인프라는 다음 경계로 제한됩니다.
 
 | 유형 | 값 | 설명 |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 2.0 | 테스트 실행당 예약된 CPU 시간 |
-| 메모리 | 1Gi | 테스트에 할당된 메모리 양, GB 값 |
-| 시간 초과 | 30m | 테스트가 종료되는 기간입니다. |
-| 권장 기간 | 15m | 이 시간보다 오래 걸리지 않도록 테스트를 적는 것이 좋습니다. |
+| 메모리 | 1Gi | 테스트에 할당된 메모리 양, 값(기비바이트) |
+| 시간 초과 | 30m | 테스트가 종료되기까지의 기간입니다. |
+| 권장 기간 | 15m | 이 시간보다 오래 걸리지 않도록 테스트를 작성하는 것이 좋습니다. |
 
 >[!NOTE]
 >
-> 추가 리소스가 필요한 경우 고객 지원 사례를 만들고 사용 사례를 설명하십시오. 저희 팀이 귀하의 요청을 검토하고 적절한 지원을 제공해 드릴 것입니다.
+> 더 많은 리소스가 필요한 경우 고객 지원 사례를 만들고 사용 사례를 설명하십시오. 저희 팀이 귀하의 요청을 검토하고 적절한 지원을 제공할 것입니다.
 
 
 ## 로컬에서 UI 테스트 실행 {#run-ui-tests-locally}
 
-Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에에 대해 로컬로 UI 테스트를 실행하는 것이 좋습니다 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-또는 실제 AEM as a Cloud Service 인스턴스에 대해 사용할 수 있습니다.
+Cloud Manager 파이프라인에서 UI 테스트를 활성화하기 전에 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 또는 실제 AEM as a Cloud Service 인스턴스에 대해 로컬에서 UI 테스트를 실행하는 것이 좋습니다.
 
 ### JavaScript 테스트 샘플 {#javascript-sample}
 
