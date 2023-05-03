@@ -3,9 +3,9 @@ title: 기능 테스트
 description: 코드의 품질과 신뢰성을 보장하기 위해 AEM as a Cloud Service 배포 프로세스에 내장된 세 가지 유형의 기능 테스트에 대해 알아봅니다.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 83%
 
 ## 범위
 
-Cloud Manager 파이프라인에서 기능 테스트 단계를 수행하는 목적은 애플리케이션의 필수 기능이 예상대로 작동하는지 확인하는 것입니다.
+Cloud Manager 파이프라인의 기능 테스트 단계의 목적은 애플리케이션의 필수 기능이 예상대로 작동하는지 확인하는 것입니다.
 
-이 테스트 단계는 코드를 프로덕션에 배포하기 전의 마지막 자동화된 테스트 단계입니다.
+이 테스트 단계는 코드를 프로덕션에 배포하기 전에 자동화된 테스트의 마지막 단계입니다.
 
-기능 테스트는 Cloud Manager에서 파이프라인 실행 외부에서 수행된 단위 테스트, 통합 테스트 또는 기능 테스트와 같은 다른 테스트 전략을 보완하고 확장해야 합니다.
+기능 테스트는 Cloud Manager의 파이프라인 실행 외부에서 수행되는 유닛 테스트, 통합 테스트 또는 기능 테스트와 같은 다른 테스트 전략을 대체하는 것이 아니라 보완하고 확장해야 합니다.
 
 ## 개요 {#overview}
 
@@ -56,12 +56,12 @@ AEM as a Cloud Service의 기능 테스트에는 세 가지 유형이 있습니�
 
 사용자 정의 기능 테스트는 사용자 정의 코드 배포와 푸시 업그레이드 모두에 대해 실행되므로 AEM 코드 변경으로 인해 애플리케이션 코드가 손상되지 않도록 우수한 기능 테스트를 작성하는 것이 특히 중요합니다. 사용자 정의 기능 테스트 단계는 항상 존재하며 건너뛸 수 없습니다.
 
-자세한 내용은 [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md) 추가 정보.
+자세한 내용은 [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md)를 참조하십시오.
 
 
 ### 사용자 정의 UI 테스트 {#custom-ui-testing}
 
 사용자 정의 UI 테스트는 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다. UI 테스트는 Java 및 Maven, Node 및 WebDriver.io 또는 Selenium을 기반으로 빌드된 기타 프레임워크와 기술 등의 언어 및 프레임워크에서 다양한 선택을 허용하도록 도커 이미지에 패키징된 Selenium 기반 테스트입니다.
 
-자세한 내용은 [사용자 지정 UI 테스트](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 추가 정보.
+자세한 내용은 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)를 참조하십시오.
 
