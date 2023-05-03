@@ -3,10 +3,10 @@ title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -1291,16 +1291,40 @@ query {
 
 ### 중첩된 콘텐츠 조각에 대한 샘플 쿼리 - 복수 모델 유형{#sample-wknd-nested-fragment-multiple-model}
 
+#### 단일 참조 모델 유형
+
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `bookmark` 유형의 복수 콘텐츠 조각
-   * 특정 모델 유형 `article` 및 `adventure`의 다른 조각에 대한 조각 참조 포함
+   * 특정 모델 유형의 다른 조각에 대한 조각 참조 사용 `article`
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있습니다. `Article`, `Adventure` 모델이 선택되어 있습니다.
+>필드 `fragments` 에는 데이터 유형이 있습니다 `fragment-reference`, 모델 사용 `Article` 선택됨. 쿼리 전달 `fragments` 일련의 `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### 여러 참조된 모델 유형
+
+이 쿼리는 다음에 대한 정보를 얻습니다.
+
+* `bookmark` 유형의 복수 콘텐츠 조각
+   * 특정 모델 유형 `Article` 및 `Adventure`의 다른 조각에 대한 조각 참조 포함
+
+>[!NOTE]
+>
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있습니다. `Article`, `Adventure` 모델이 선택되어 있습니다. 게재 쿼리 `fragments` 일련의 `[AllFragmentModels]` 공용 구조체 유형(공용 구조체 유형)으로 역참조됩니다.
 
 ```graphql
 {
