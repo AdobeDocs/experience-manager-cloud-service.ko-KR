@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 온보딩 여정 소개
 description: AEM as a Cloud Service로의 온보드 프로세스를 통해 안내하는 여정에 대한 개요를 보려면 여기를 클릭하십시오.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 100%
 
