@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 9abafe051672de65f042332314445b239f95852b
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2423'
 ht-degree: 5%
 
 ---
@@ -236,7 +236,7 @@ ht-degree: 5%
 
 * 이미지의 미묘한 차이를 인식하지 못합니다. 예를 들어, 슬림형 셔츠와 보통형 셔츠입니다.
 * 이미지의 작은 패턴이나 부분을 기반으로 태그를 식별할 수 없음 예를 들어 셔츠에 로고들이 있습니다.
-* 태깅은 [!DNL Experience Manager] 을 지원합니다. 언어 목록이 필요하면 [스마트 컨텐츠 서비스 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* 태깅은 [!DNL Experience Manager] 을 지원합니다.
 * 처리되지 않는 태그는 다음과 관련이 있습니다.
 
    * 비시각적이고 추상적인 측면. 예컨대, 출시 연도, 출시 시기는 이미지에 의한 감정, 감정을 분출시키는 의미와 비디오의 주관적인 의미가 담긴 개념이다.

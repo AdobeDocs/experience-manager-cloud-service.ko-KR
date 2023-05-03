@@ -2,9 +2,9 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3473'
 ht-degree: 100%
 
 ---
@@ -757,7 +757,7 @@ Experience Manager 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
-`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` OSGi 구성은 Experience Manager 내의 기본 작성 모드를 정의합니다. [Experience Manager 6.4 이후 Classic UI가 더 이상 사용되지 않으므로](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) 기본 작성 모드가 Classic UI로 구성되면 문제가 발생합니다.
+`com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` OSGi 구성은 Experience Manager 내의 기본 작성 모드를 정의합니다. Experience Manager 6.4 이후 Classic UI가 더 이상 사용되지 않으므로 기본 작성 모드가 Classic UI로 구성되면 문제가 발생합니다.
 
 ### 대화 상자가 있는 구성 요소에 Touch UI 대화 상자를 포함해야 함 {#oakpal-components-dialogs}
 
@@ -860,7 +860,7 @@ Experience Manager as a Cloud Service에서의 에셋 처리를 위해 Asset 마
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-기존 기초 구성 요소(즉, `/libs/foundation` 아래의 구성 요소)는 핵심 구성 요소를 위한 [여러 Experience Manager 릴리스에서 더 이상 사용되지 않습니다](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). 오버레이 또는 상속 여부에 관계없이 기존 기초 구성 요소를 사용자 정의 구성 요소의 기반으로 사용하는 것은 권장되지 않으며 해당 핵심 구성 요소로 변환해야 합니다.
+기존 기초 구성 요소(즉, `/libs/foundation` 아래의 구성 요소)는 핵심 구성 요소를 위한 여러 Experience Manager 릴리스에서 더 이상 사용되지 않습니다. 오버레이 또는 상속 여부에 관계없이 기존 기초 구성 요소를 사용자 정의 구성 요소의 기반으로 사용하는 것은 권장되지 않으며 해당 핵심 구성 요소로 변환해야 합니다.
 
 이러한 전환은 [Experience Manager 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 통해 용이하게 수행할 수 있습니다.
 
