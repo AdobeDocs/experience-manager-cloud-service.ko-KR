@@ -2,10 +2,10 @@
 title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Adobe Experience Manager as a Cloud Service에서 Headless 콘텐츠 게재를 위한 GraphQL 필터링 최적화 목적으로 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: e18a60197aab3866b839ff7b923f1aa135c594cc
-workflow-type: ht
-source-wordcount: '738'
-ht-degree: 100%
+source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
+workflow-type: tm+mt
+source-wordcount: '925'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,13 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
 ## 사전 요구 사항 {#prerequisites}
 
-AEM as a Cloud Service의 2023.1.0 이상 릴리스가 있는지 확인하십시오.
+이 작업에 대한 필수 구성 요소가 있습니다.
+
+1. AEM as a Cloud Service의 2023.1.0 이상 릴리스가 있는지 확인하십시오.
+
+1. 작업을 수행하는 사용자에게 필요한 권한이 있는지 확인합니다.
+
+   * 최소한 `Deployment Manager` cloud Manager의 역할이 필요합니다.
 
 ## 콘텐츠 조각 업데이트 {#updating-content-fragments}
 
@@ -119,7 +125,8 @@ AEM as a Cloud Service의 2023.1.0 이상 릴리스가 있는지 확인하십시
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60(초)
    >* 마이그레이션 완료에 필요한 대략적인 시간 = 60 + (20,000/1000 * 60) = 1260초 = 21분
-   >  시작 시 추가된 &quot;60&quot;초는 작업 시작 시 초기 지연으로 인한 것입니다.
+      >  시작 시 추가된 &quot;60&quot;초는 작업 시작 시 초기 지연으로 인한 것입니다.
+
    >
    >이는 작업을 완료하는 데 필요한 *최소한의* 시간이며 I/O 시간은 포함하지 않습니다. 소요되는 실제 시간은 이 추정치보다 훨씬 더 클 수 있습니다.
 
@@ -148,6 +155,44 @@ AEM as a Cloud Service의 2023.1.0 이상 릴리스가 있는지 확인하십시
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
+   Splunk를 사용하여 환경 로그에 액세스할 수 있는 고객은 아래 예제 쿼리를 사용하여 업그레이드 프로세스를 모니터링할 수 있습니다. Splunk 로깅 활성화에 대한 자세한 내용은 [프로덕션 및 스테이지 디버깅](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 페이지.
+
+   ```splunk
+   index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
+   (aem_tier=golden-publish OR aem_tier=author) | table _time aem_tier pod_name msg | sort -_time desc
+   ```
+
+   위치:
+
+   * `environmentId` - 고객 환경 식별자 예 `e1234`
+   * `indexName` - 고객 인덱스 이름, 수집 `aemerror` events
+
+   출력 예:
+
+   <table style="table-layout:auto">
+     <thead>
+       <tr>
+       <th>_time</th>
+       <th>aem_tier</th>
+       <th>pod_name</th>
+       <th>msg</th>
+       </tr>
+     </thead> 
+     <tbody>
+       <tr>
+         <td>2023-04-21 06:00:35.723</td>
+         <td>작성자</td>
+         <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob 완료된 컨텐츠 조각 업그레이드를 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, 상태: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='버전 '1'으로 업그레이드했습니다.', 오류=[], successCount=36756, failedCount=0, skededCount=0}</td>
+       </tr>
+       <tr>
+         <td>2023-04-21 06:05:48.207</td>
+         <td>골든 게시</td>
+         <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
+         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6dfb1-(apache-sling-job-thread-pool)-1-Content Fragment 업그레이드 작업 큐 구성(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJobJob에서 컨텐츠 조각 업그레이드를 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0, 상태: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='버전 '1'으로 업그레이드했습니다.', 오류=[], successCount=19557, failedCount=0, skededCount=0}</td>
+       </tr>
+     </tbody>
+   <table>
 
 1. 업데이트 절차를 비활성화합니다.
 
