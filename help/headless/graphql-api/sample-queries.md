@@ -3,10 +3,10 @@ title: AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐
 description: AEM으로 GraphQL을 사용하여 샘플 콘텐츠 및 쿼리 탐색을 통해 콘텐츠를 Headless 방식으로 제공하는 방법을 배웁니다.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
+source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1596'
+ht-degree: 97%
 
 ---
 
@@ -1296,11 +1296,11 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `bookmark` 유형의 복수 콘텐츠 조각
-   * 특정 모델 유형의 다른 조각에 대한 조각 참조 사용 `article`
+   * 조각 참조 를 사용하여 특정 모델 유형의 다른 조각에 대한 참조 `Article`
 
 >[!NOTE]
 >
->필드 `fragments` 에는 데이터 유형이 있습니다 `fragment-reference`, 모델 사용 `Article` 선택됨. 쿼리 전달 `fragments` 일련의 `[Article]`
+>필드 `fragments` 에는 데이터 유형이 있습니다 `fragment-reference`, 모델 사용 `Article` 선택됨. 쿼리 전달 `fragments` 일련의 `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ query {
 }
 ```
 
-#### 여러 참조된 모델 유형
+#### 여러 참조 모델 유형
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
@@ -1324,7 +1324,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있습니다. `Article`, `Adventure` 모델이 선택되어 있습니다. 게재 쿼리 `fragments` 일련의 `[AllFragmentModels]` 공용 구조체 유형(공용 구조체 유형)으로 역참조됩니다.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있습니다. `Article`, `Adventure` 모델이 선택되어 있습니다. 쿼리 전달 `fragments` 일련의 `[AllFragmentModels]`- 공용 구조체 유형으로 참조되지 않습니다.
 
 ```graphql
 {
