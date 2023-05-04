@@ -2,7 +2,7 @@
 title: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 description: Adobe Experience Manager Forms as a Cloud Service에 대한 로컬 개발 환경 설정
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2a2becb12b7724720821f895b0631d8d82e4cd79
+source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
 workflow-type: tm+mt
 source-wordcount: '3042'
 ht-degree: 4%
@@ -523,7 +523,7 @@ AEM Forms as a Cloud Service용 AEM Archetype 버전 40 이상 기반 프로그�
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 성공적인 파이프라인 실행 후 환경에 적응형 Forms 코어 구성 요소 가 활성화됩니다. 또한 적응형 Forms(핵심 구성 요소) 템플릿 및 캔버스 테마가 Forms as a Cloud Service 환경에 추가됩니다.
+1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 성공적인 파이프라인 실행 후 환경에 적응형 Forms 코어 구성 요소 가 활성화됩니다. 또한 적응형 Forms(코어 구성 요소) 템플릿 및 캔버스 테마가 Forms as a Cloud Service 환경에 추가됩니다.
 
 
 ## 로컬 개발 환경 업그레이드 {#upgrade-your-local-development-environment}
