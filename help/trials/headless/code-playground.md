@@ -4,10 +4,10 @@ description: CodePen 예제 앱 및 JavaScript용 AEM Headless 클라이언트�
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
+source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 100%
+source-wordcount: '987'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="샘플 CodePen 앱 실행"
->abstract="이 안내서는 체험판 환경의 JSON 데이터를 기본 JavaScript 웹 앱으로 쿼리하는 방법을 설명합니다. 이전 학습 모듈에서 모델링하여 만든 콘텐츠 조각을 사용할 예정이므로 이 모듈로 넘어가기 전에 해당 안내서를 먼저 살펴보시기 바랍니다.<br><br>JavaScript 웹 앱에서 콘텐츠를 쿼리하는 방법을 설명하기 위해 그대로 사용하거나 자체 계정으로 포크하여 추가로 사용자 정의할 수 있는 CodePen을 설정했습니다."
+>abstract="이 안내서는 체험판 환경의 JSON 데이터를 기본 JavaScript 웹 앱으로 쿼리하는 방법을 설명합니다. 이전 학습 모듈에서 모델링하여 만든 콘텐츠 조각을 사용할 예정이므로 이 모듈로 넘어가기 전에 해당 안내서를 먼저 살펴보시기 바랍니다."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -61,7 +61,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 6행에서 `publishHost` 쿼리 매개변수를 통해 게시 호스트 세부 정보를 읽습니다. 이는 AEM Headless 클라이언트가 데이터를 가져올 호스트입니다. 이 내용은 일반적으로 앱에 코딩되지만, CodePen 앱이 다른 환경에서 더 쉽게 작동할 수 있도록 쿼리 매개변수를 사용하는 것입니다.
 
-CORS 문제를 방지하기 위해 프록시 Adobe IO 런타임 기능을 사용하도록 12행에서 AEM Headless 클라이언트를 구성합니다. 이 내용은 사용자의 자체 프로젝트에는 필요하지 않지만 CodePen 앱이 체험판 환경에서 작동하려면 필요합니다. 프록시 기능은 쿼리 매개변수에 제공된 `publishHost` 값을 사용하도록 구성됩니다.
+12번에 AEM Headless 클라이언트를 구성함:
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -72,6 +72,10 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   }
 });
 ```
+
+>[!NOTE]
+>
+>다음 **serviceURL** 는 CORS 문제를 방지하기 위해 프록시 Adobe IO 런타임 함수를 사용하도록 설정되어 있습니다. 이 내용은 사용자의 자체 프로젝트에는 필요하지 않지만 CodePen 앱이 체험판 환경에서 작동하려면 필요합니다. 프록시 함수는 **publishHost** 쿼리 매개 변수에 제공된 값입니다.
 
 마지막으로 AEM Headless 클라이언트를 사용하여 가져오기 요청을 수행하는 데 `fetchJsonFromGraphQL()` 함수가 사용됩니다. 코드가 변경될 때마다 호출되거나 **다시 가져오기** 링크를 누르면 트리거될 수 있습니다. 실제 `aemHeadlessClient.runPersistedQuery(..)` 호출은 34행에서 발생합니다. 잠시 후 이 JSON 데이터가 렌더링되는 방식을 변경할 예정이지만, 일단은 `resultToPreTag(queryResult)` 함수를 사용해 `#output` div에 출력하겠습니다.
 
