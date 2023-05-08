@@ -3,7 +3,7 @@ title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3473'
 ht-degree: 100%
 
@@ -341,7 +341,7 @@ public void doGet() throws Exception {
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
-가장 좋은 방법은 로그 메시지가 애플리케이션에서 예외가 발생한 위치에 대한 상황별 정보를 제공하는 것입니다. 스택 추적을 사용하여 컨텍스트를 결정할 수도 있지만, 일반적으로 로그 메시지는 읽고 이해하는 것이 더 쉬울 것입니다. 따라서 예외를 기록할 때 예외 메시지를 로그 메시지로 사용하는 것은 잘못된 관행입니다. 예외 메시지에는 잘못된 항목을 포함하지만 로그 메시지는 예외 발생 시 애플리케이션이 무엇을 하고 있는지 로그 판독기에 알려 주는 데 사용해야 합니다. 예외 메시지는 계속 기록됩니다. 고유한 메시지를 지정하면 로그를 쉽게 이해할 수 있습니다.
+가장 좋은 방법은 로그 메시지가 애플리케이션에서 예외가 발생한 위치에 대한 상황별 정보를 제공하는 것입니다. 스택 추적을 사용하여 컨텍스트를 결정할 수도 있지만 일반적으로 로그 메시지는 읽고 이해하는 것이 더 쉬울 것입니다. 따라서 예외를 기록할 때 예외 메시지를 로그 메시지로 사용하는 것은 잘못된 관행입니다. 예외 메시지에는 잘못된 항목을 포함하지만 로그 메시지는 예외 발생 시 애플리케이션이 무엇을 하고 있는지 로그 판독기에 알려 주는 데 사용해야 합니다. 예외 메시지는 계속 기록됩니다. 고유한 메시지를 지정하면 로그를 쉽게 이해할 수 있습니다.
 
 #### 비준수 코드 {#non-compliant-code-9}
 
@@ -768,9 +768,9 @@ Experience Manager 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 
 
 Classic UI 대화 상자가 있는 Experience Manager 구성 요소에는 항상 해당하는 Touch UI 대화 상자가 있어야 합니다. 두 대화 상자 모두 최적의 작성 환경을 제공하며 Classic UI가 지원되지 않는 Cloud Service 배포 모델과 호환됩니다. 이 규칙은 다음 시나리오를 확인합니다.
 
-* 클래식 UI 대화 상자(즉, `dialog` 하위 노드)가 있는 구성 요소에는 해당 터치 UI 대화 상자(즉, `cq:dialog` 하위 노드)가 있어야 합니다.
-* 클래식 UI 디자인 대화 상자(즉, `design_dialog` 노드)가 있는 구성 요소에는 해당 터치 UI 디자인 대화 상자(즉, `cq:design_dialog` 하위 노드)가 있어야 합니다.
-* 클래식 UI 대화 상자 및 클래식 UI 디자인 대화 상자가 모두 있는 구성 요소에는 해당 터치 UI 대화 상자 및 해당 터치 UI 디자인 대화 상자가 모두 있어야 합니다.
+* Classic UI 대화 상자(즉, `dialog` 하위 노드)가 있는 구성 요소에는 해당 터치 UI 대화 상자(즉, `cq:dialog` 하위 노드)가 있어야 합니다.
+* Classic UI 디자인 대화 상자(즉, `design_dialog` 노드)가 있는 구성 요소에는 해당 터치 UI 디자인 대화 상자(즉, `cq:design_dialog` 하위 노드)가 있어야 합니다.
+* Classic UI 대화 상자 및 Classic UI 디자인 대화 상자가 모두 있는 구성 요소에는 해당 터치 UI 대화 상자 및 해당 터치 UI 디자인 대화 상자가 모두 있어야 합니다.
 
 Experience Manager 현대화 도구 설명서는 구성 요소를 Classic UI에서 Touch UI로 변환하는 방법에 대한 문서와 도구를 제공합니다. 자세한 내용은 [Experience Manager 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/)를 참조하십시오.
 
@@ -849,7 +849,7 @@ Experience Manager as a Cloud Service에서의 에셋 처리를 위해 Asset 마
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-이전까지는 Experience Manager 프로젝트에서 정적 템플릿을 매우 흔히 사용했지만, 이제는 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하는 편집 가능한 템플릿을 사용하는 것이 좋습니다. 자세한 내용은 [페이지 템플릿](/help/implementing/developing/components/templates.md) 문서에서 확인할 수 있습니다.
+이전까지는 Experience Manager 프로젝트에서 정적 템플릿을 매우 흔히 사용했지만 이제는 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하는 편집 가능한 템플릿을 사용하는 것이 좋습니다. 자세한 내용은 [페이지 템플릿](/help/implementing/developing/components/templates.md) 문서에서 확인할 수 있습니다.
 
 정적 템플릿에서 편집 가능한 템플릿으로의 마이그레이션은 [Experience Manager 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 대부분 자동화할 수 있습니다.
 
