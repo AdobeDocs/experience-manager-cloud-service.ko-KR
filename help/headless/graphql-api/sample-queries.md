@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -1291,7 +1291,7 @@ query {
 
 ### 중첩된 콘텐츠 조각에 대한 샘플 쿼리 - 복수 모델 유형{#sample-wknd-nested-fragment-multiple-model}
 
-#### 단일 참조 모델 유형
+#### 단일 참조된 모델 유형
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
@@ -1300,7 +1300,7 @@ query {
 
 >[!NOTE]
 >
->필드 `fragments` 에는 데이터 유형이 있습니다 `fragment-reference`, 모델 사용 `Article` 선택됨. 쿼리 전달 `fragments` 일련의 `[Article]`.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article` 모델이 선택됩니다. 쿼리는 `fragments`의 배열로 `[Article]` 제공.
 
 ```graphql
 {
@@ -1324,7 +1324,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있습니다. `Article`, `Adventure` 모델이 선택되어 있습니다. 쿼리 전달 `fragments` 일련의 `[AllFragmentModels]`- 공용 구조체 유형으로 참조되지 않습니다.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article`, `Adventure` 모델이 선택됩니다. 쿼리 전달 `fragments` 일련의 `[AllFragmentModels]`- 공용 구조체 유형으로 참조되지 않습니다.
 
 ```graphql
 {

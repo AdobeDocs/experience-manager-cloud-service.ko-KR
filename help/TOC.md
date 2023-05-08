@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
 source-wordcount: '4066'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -420,7 +420,7 @@ ht-degree: 99%
       + [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)
       + [이미지 및 비디오 프로필을 사용하여 작업](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [오디오 및 비디오 에셋의 트랜스크립션 구성](/help/assets/configure-transcription.md)
-      + [자산 번역](/help/assets/translate-assets.md)
+      + [에셋 번역](/help/assets/translate-assets.md)
       + [검색 패싯](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API의 콘텐츠 조각 지원](/help/assets/content-fragments/assets-api-content-fragments.md)
@@ -489,7 +489,7 @@ ht-degree: 99%
       + [대화형 비디오](/help/assets/dynamic-media/interactive-videos.md)
       + [360 VR 비디오](/help/assets/dynamic-media/360-video.md)
       + [Dynamic Media 뷰어를 Adobe Analytics 및 Adobe Experience Platform 태그와 통합](/help/assets/dynamic-media/tags.md)
-      + [빠른 보기를 사용하여 맞춤형 팝업 제작](/help/assets/dynamic-media/custom-pop-ups.md)
+      + [빠른 보기를 사용하여 사용자 정의 팝업 제작](/help/assets/dynamic-media/custom-pop-ups.md)
       + [반응형 사이트에 최적화된 이미지 게재](/help/assets/dynamic-media/responsive-site.md)
       + [Dynamic Media 에셋 미리보기](/help/assets/dynamic-media/previewing-assets.md)
       + [페이지에 Dynamic Media 에셋 추가](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -580,7 +580,7 @@ ht-degree: 99%
             + [적응형 양식에 대한 제출 액션 설정](/help/forms/configuring-submit-actions.md)
             + [리디렉션 페이지 구성](/help/forms/configuring-redirect-page.md)
             + [적응형 양식에 대한 비동기 제출 구성](/help/forms/asynchronous-submissions-adaptive-forms.md)
-            + [맞춤형 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
+            + [사용자 정의 제출 액션 만들기](/help/forms/custom-submit-action-form.md)
          + [적응형 양식 필드 미리 채우기](/help/forms/prepopulate-adaptive-form-fields.md)
          + [기록 문서 생성](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [적응형 양식에 새 로케일 지원 추가](/help/forms/supporting-new-language-localization.md)
@@ -601,7 +601,7 @@ ht-degree: 99%
       + [커뮤니케이션 API - 일괄 처리](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [Forms Designer 설치 및 구성](/help/forms/installing-configuring-designer.md)
       + [Forms Designer를 사용하여 템플릿 만들기](/help/forms/use-forms-designer.md)
-      + [PDF 문서에서 맞춤형 글꼴 사용하기](/help/forms/use-custom-fonts.md)
+      + [PDF 문서에서 사용자 정의 글꼴 사용하기](/help/forms/use-custom-fonts.md)
       + [알려진 문제, 모범 사례 및 FAQ](/help/forms/communications-known-issues-limitations.md)
    + 개발자 API 참조 {#aem-forms-developer-api-reference}
       + [AEM Forms 클라우드 서비스 커뮤니케이션 API 참조](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -643,7 +643,7 @@ ht-degree: 99%
    + Screens as a Cloud Service에서 개발 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [구성 요소 만들기](/help/screens-cloud/developing/creating-components.md)
-      + [Screens as a Cloud Service에 대한 맞춤형 구성 요소 개발](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
+      + [Screens as a Cloud Service에 대한 사용자 정의 구성 요소 개발](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Screens as a Cloud Service FAQ](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [AEM Content and Commerce](/help/commerce-cloud/home.md)
@@ -673,7 +673,7 @@ ht-degree: 99%
          + [여러 상거래 시스템 설정](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
          + [SEO에 대한 URL 구성](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [캐싱 옵션](/help/commerce-cloud/configuring/caching.md)
-         + [맞춤형 HTTP 헤더](/help/commerce-cloud/configuring/custom-http-headers.md)
+         + [사용자 정의 HTTP 헤더](/help/commerce-cloud/configuring/custom-http-headers.md)
       + 개발 {#developing}
          + [AEM Cloud Service SDK를 사용하여 개발](/help/commerce-cloud/develop.md)
          + [CIF 구성 요소 스타일링](/help/commerce-cloud/customizing/style-cif-component.md)
@@ -788,7 +788,7 @@ ht-degree: 99%
       + 테스트 결과 이해 {#test-results}
          + [개요](/help/implementing/cloud-manager/overview-test-results.md)
          + [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)
-         + [맞춤형 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+         + [사용자 정의 코드 품질 규칙](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + 기능 테스트 {#functional-testing}
             + [기능 테스트 개요](/help/implementing/cloud-manager/functional-testing.md)
             + [Java 기능 테스트](/help/implementing/cloud-manager/java-functional-testing.md)
@@ -860,8 +860,8 @@ ht-degree: 99%
          + 검색 {#search}
             + [쿼리 빌더 API](/help/implementing/developing/introduction/query-builder-api.md)
             + [쿼리 빌더 술어 참조](/help/implementing/developing/introduction/query-builder-predicates.md)
-            + [맞춤형 술어 평가자 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
-         + [맞춤형 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
+            + [사용자 정의 술어 평가자 구현](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
+         + [사용자 정의 오류 페이지](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 노드 유형](/help/implementing/developing/introduction/node-types.md)
       + [Headless 경험 관리](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + 하이브리드 및 SPA 개발 {#hybrid}
