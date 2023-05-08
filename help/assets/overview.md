@@ -6,17 +6,17 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Assets as a[!DNL Cloud Service] 소개 {#assets-cloud-service-introduction}
+# Assets as a [!DNL Cloud Service] 소개 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
-Adobe Experience Manager Assets as a[!DNL Cloud Service]는 클라우드 기반의 비즈니스용 PaaS 솔루션을 제공하여 빠르고 효과적으로 디지털 에셋 관리 및 Dynamic Media 작업을 수행할 뿐만 아니라 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습하는 시스템 내에서 AI/ML과 같은 차세대 스마트 기능도 사용합니다.
+Adobe Experience Manager Assets as a [!DNL Cloud Service]는 클라우드 기반의 비즈니스용 PaaS 솔루션을 제공하여 빠르고 효과적으로 디지털 에셋 관리 및 Dynamic Media 작업을 수행할 뿐만 아니라 항상 최신 상태를 유지하고 항상 사용 가능하며 항상 학습하는 시스템 내에서 AI/ML과 같은 차세대 스마트 기능도 사용합니다.
 
 여러 에셋 또는 복합 에셋의 동시 수집은 Experience Manager Author 인스턴스에 대한 리소스 집약적인 작업입니다. 기본 인스턴스는 에셋이 추가, 처리나 마이그레이션될 때 상당한 양의 CPU, 메모리 및 I/O 리소스를 사용합니다. 해당 성능 문제는 최종 사용자의 작성 및 탐색 경험에 영향을 미칩니다.
 
@@ -48,13 +48,13 @@ Adobe Experience Manager Assets as a[!DNL Cloud Service]는 클라우드 기반�
 
 * [에셋 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [자산 지원 파일 형식](file-format-support.md)
+* [에셋이 지원되는 파일 형식](file-format-support.md)
 * [에셋 검색](search-assets.md)
-* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [연결된 에셋](use-assets-across-connected-assets-instances.md)
 * [에셋 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
 * [에셋 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
-* [벌크 메타데이터 가져오기](metadata-import-export.md)
+* [일괄 메타데이터 가져오기](metadata-import-export.md)
