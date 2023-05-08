@@ -3,9 +3,9 @@ title: 샌드박스 환경 최대 절전 모드 설정 및 해제
 description: 샌드박스 프로그램의 환경이 자동으로 최대 절전 모드로 전환되는 방법과 최대 절전 모드를 해제하는 방법에 대해 알아봅니다.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '691'
+ht-degree: 100%
 
 ---
 
@@ -112,9 +112,9 @@ AEM as a Cloud Service에 액세스할 수 있는 제품 프로필을 가진 모
 
 ## 최대 절전 모드 및 삭제 {#hibernation-deletion}
 
-* 샌드박스 프로그램의 환경은 8시간 동안 비활성 상태인 경우 자동으로 최대 절전 모드로 전환됩니다.
+* 샌드박스 프로그램의 환경은 8시간 동안 비활성 상태인 경우 자동으로 절전 모드로 전환됩니다.
    * 비활성은 작성자 서비스나 미리보기 또는 게시 서비스에서 요청을 수신하지 않는 것으로 정의됩니다.
-   * 최대 절전 모드까지 제공되면 [수동으로 최대 절전 모드 해제.](#de-hibernation-introduction)
+   * 일단 절전 모드로 전환되면 [수동으로 절전 모드를 해제할 수 있습니다.](#de-hibernation-introduction)
 * 샌드박스 프로그램은 연속 최대 절전 모드에서 6개월 후에 삭제되며 그 후 다시 만들 수 있습니다.
 
 >[!NOTE]
