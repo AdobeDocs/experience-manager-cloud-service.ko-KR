@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '208'
+ht-degree: 65%
 
 ---
 
@@ -13,20 +13,29 @@ ht-degree: 100%
 
 다음 섹션에서는 Experience Manager as a Cloud Service 현재 유지 관리 릴리스의 기술 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 11835 {#release-11835}
+## 릴리스 11873 {#release-11873}
 
-2023년 4월 19일에 공개된 유지 관리 릴리스 11835의 지속적인 개선 사항이 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 11382의 업데이트입니다.
+2023년 5월 3일에 발표된 유지 관리 릴리스 11873에 대한 지속적인 개선 사항은 아래에 요약되어 있습니다. 이 유지 관리 릴리스는 이전 유지 관리 릴리스 11835의 업데이트입니다.
 
 이 유지 관리 릴리스에 대한 기능 활성화는 전체 기능 세트를 제공합니다. 자세한 내용은 [최신 릴리스 정보](/help/release-notes/release-notes-cloud/release-notes-current.md)를 참조하십시오.
 
-### 해결된 문제 {#fixed-issues-11835}
+### 향상된 기능 {#enhancements}
 
-- SITES-12573 - 하나의 변수가 지정되지 않으면 필터 내부의 변수를 사용하는 GraphQL 쿼리가 실패합니다. GraphQL을 AEM as a Cloud Service&#39;와 함께 사용하려면 이 릴리스로 업데이트하지 마십시오.
-- SKYOPS-51970 - buildImage 스텝에서 사용된 FACT 버전의 확인된 회귀, 불일치 사용자 매핑 초래
-- GRANITE-44542 - 문제가 패키지 필터에 포함된 폴더를 위한 패키지 노드 유형을 지정하지 않은(.content.xml with jcr:primaryType을 입력해서) 고객을 위해서 보고되었습니다. 이 때문에 이들 폴더가 nt:folder로 취급되며 다양한 사례에서 문제가 발생하고 있습니다.
-- SKYOPS-56928 - Apache HTTPD 회귀로 인해 404 오류가 발생할 수 있습니다. 이러한 문제가 발생하면 안전상의 이유로 이전 버전으로 롤백하고 해당 기간 동안 실행되는 파이프라인을 피하는 것이 좋습니다.
+- SITES-1200 - 태그 기반 필터링을 통해 검색 API 개선 사항
+- GRANITE-42939 - oauth 서버 코드에 사용 중단 주석 및 경고 추가
 
-### 임베드된 기술 {#embedded-tech-11835}
+### 알려진 문제 {#known-issues-11873}
+
+없음.
+
+### 해결된 문제 {#fixed-issues-11873}
+
+- SKYSI-19884/SKYOPS-53745 - PublishPageRenderingErrorsHigh 관련 문제가 해결되었습니다.
+- GRANITE-4388 - Mongo에서 많은 DAM 자산 쓰기 이후 처리량 저하를 해결했습니다
+- SITES-11922 - 동기화 상태를 제거하지 않은 미리 보기에서 게시 취소 문제가 해결되었습니다
+- ASSETS-21648 - 자산 관련 기능의 권한 문제가 해결되었습니다.
+
+### 임베드된 기술 {#embedded-tech-11873}
 
 | 기술 | 버전 | 링크 |
 |---|---|---|
