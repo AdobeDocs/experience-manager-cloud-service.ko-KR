@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 2021.3.0 릴리스 정보입니다.'
 description: "[!DNL Adobe Experience Manager] 2021.3.0용 as a Cloud Service 릴리스 노트"
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 10%
+source-wordcount: '1297'
+ht-degree: 40%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 10%
 >
 >릴리스와 직접적으로 관련되지 않는 설명서 업데이트의 세부 정보는 [설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)를 참조하십시오.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
 에 대한 릴리스 날짜 [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0은 2021년 3월 25일입니다.
 다음 릴리스(2021.4.0)는 2021년 4월 29일에 있습니다.
@@ -58,11 +58,11 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * 폴더 메타데이터 속성은 폴더의 속성 페이지의 팝업 메뉴에서 설정 및 저장할 수 있습니다. 선택한 항목이 저장소에 저장되지만 폴더 메타데이터 속성을 다시 열면 표시되지 않습니다. (CQ-4314429)
 * 공백 또는 특수 문자가 포함된 파일 이름이 있는 자산은 브라우저를 사용하여 업로드됩니다. (CQ-4318381)
 
-## [!DNL Adobe Experience Manager Forms] 로서의 [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 AEM Forms은 여러 해에 걸쳐 많은 조직이 뛰어난 온보딩 및 등록 경험을 제공할 수 있도록 지원했습니다. 이러한 경험은 조직에서 리드를 판매로 전환하고 캡처된 고객 데이터를 처리하며 대상 프로필에 따른 반응형 경험을 전달하는 데 도움이 되었습니다. 이제 AEM Forms을 클라우드 서비스로 사용할 수 있습니다.
 
-다음을 사용할 수 있습니다 [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) 디지털 양식을 만들려면 기존 데이터 소스에 양식을 연결하고, 양식을 Adobe Sign과 통합하여 양식에 전자 서명을 추가하고, DoR(Document of Record)을 생성하여 제출된 양식을 PDF 파일로 보관하십시오. 이 서비스는 기존 PDF forms을 디지털 양식으로 전환할 수도 있습니다. 이 서비스는 표준 AEM Forms 기능 외에도 자동 크기 조정, 업그레이드에 대한 다운타임 없음, 클라우드 기반의 개발 환경과 같은 클라우드 기반의 다양한 기능을 제공합니다. 읽기 [이 블로그 게시물](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html) AEM Forms as a Cloud Service의 기능 및 기능에 대해 알아보십시오.
+다음을 사용할 수 있습니다 [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) 디지털 양식을 만들려면 기존 데이터 소스에 양식을 연결하고, 양식을 Adobe Sign과 통합하여 양식에 전자 서명을 추가하고, DoR(Document of Record)을 생성하여 제출된 양식을 PDF 파일로 보관하십시오. 이 서비스는 기존 PDF forms을 디지털 양식으로 전환할 수도 있습니다. 이 서비스는 표준 AEM Forms 기능 외에도 자동 크기 조정, 업그레이드에 대한 다운타임 없음, 클라우드 기반의 개발 환경과 같은 클라우드 기반의 다양한 기능을 제공합니다.
 
 데모를 위해 Adobe 담당자에게 문의하거나 서비스에 등록할 수 있습니다.
 
@@ -83,50 +83,50 @@ AEM Forms은 여러 해에 걸쳐 많은 조직이 뛰어난 온보딩 및 등�
 
 이 섹션에서는 AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 정보에 대해 간략히 소개합니다.
 
-## 릴리스 날짜 {#release-date-cm-march}
+## 릴리스 일자 {#release-date-cm-march}
 
-AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 날짜는 2021년 3월 11일입니다.
-다음 릴리스는 2021년 4월 8일에 예정되어 있습니다.
+AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 일자는 2021년 3월 11일입니다.
+다음 릴리스는 2021년 4월 08일에 예정되어 있습니다.
 
 ### 새로운 기능 {#what-is-new-march}
 
-* 에 대한 기존 사용자 지정 도메인 이름 구성이 있는 환경이 있는 고객 [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 및 [사용자 지정 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 은 이전 기존 구성에 대한 메시지를 볼 수 있고 UI를 통해 자체 제공할 수 있습니다.
+* [IP 허용 목록](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [SSL 인증서](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) 및 [사용자 정의 도메인 이름](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)에 대한 기존 사용자 정의 도메인 이름 구성이 있는 환경의 고객은 이전의 기존 구성에 대한 메시지를 보고 UI를 통해 셀프서비스를 수행할 수 있습니다.
 
-* 필수 권한이 있는 사용자는 이제 프로그램을 편집하여 셀프 서비스 방식으로 다음을 수행할 수 있습니다.
+* 이제 필수 권한이 있는 사용자는 프로그램을 편집하여 셀프서비스 방식으로 다음과 같은 작업을 수행할 수 있습니다.
 
-   * 자산을 사용하여 기존 프로그램에 사이트 솔루션을 추가하거나 그 반대로 추가합니다.
-   * 사이트 및 자산을 모두 사용하는 기존 프로그램에서 사이트 또는 자산을 제거합니다.
-   * 기존 프로그램 또는 새 프로그램으로 사용하지 않는 두 번째 솔루션 권한을 추가합니다.
+   * Assets가 있는 기존 프로그램에 Sites 솔루션을 추가하거나 그 반대로 할 수 있습니다.
+   * Sites와 Assets가 모두 있는 기존 프로그램에서 Sites 또는 Assets를 제거할 수 있습니다.
+   * 두 번째 미사용 솔루션 권한을 기존 프로그램에 추가하거나 새 프로그램으로 추가합니다.
 
 * **AEM 푸시 업데이트** 이제 두 항목에 대해 레이블이 표시됩니다. *파이프라인 실행* 및 *활동* 스크린.
 
-* 환경이 최대 절전 모드이지만 AEM 업데이트도 사용 가능한 경우 **최대 절전 모드** 상태가 우선함 **업데이트 사용 가능**.
+* 환경이 최대 절전 모드이지만 사용 가능한 AEM 업데이트도 있는 경우 **최대 절전 모드** 상태가 **사용 가능한 업데이트**&#x200B;보다 우선합니다.
 
-* 이제 사용자는 통합 셸의 사용자 프로필 아이콘(오른쪽 상단)으로 이동한 후 &#39;Cloud Manager 역할 보기&#39; 옵션을 선택하여 Cloud Manager 역할을 볼 수 있습니다.
+* 이제 사용자는 통합 셸의 사용자 프로필 아이콘(오른쪽 위)으로 이동한 후 Cloud Manager 역할 보기 옵션을 선택하여 사용자 자신의 Cloud Manager 역할을 볼 수 있습니다.
 
-* 레이블 **승인 신청** 의 레이블이 **프로덕션 승인** 더 명확해지려고
+* 보다 명확하게 하기 위해 **승인 신청** 레이블이 **생산 승인**&#x200B;로 다시 라벨링되었습니다.
 
-* 다음 **버전** 레이블의 레이블이 **Git 태그** 를 클릭합니다.
+* 프로덕션 파이프라인 실행 화면에서 **버전** 레이블이 **Git Tag**&#x200B;로 다시 라벨링되었습니다.
 
-* 중요한 지표가 정의된 임계값을 충족하지 못할 때 동작을 정의하는 레이블을 실제 동작을 반영하도록 재설정했습니다. **즉시 취소** 및 **즉시 승인**.
+* 중요 지표가 정의된 임계값에 부합하지 않을 때 동작을 정의하는 레이블은 실제 동작을 반영하도록 다시 라벨링되었습니다. **즉시 취소** 및 **즉시 승인**.
 
-* 클래스 및 메서드 사용 중단 목록이 버전을 기준으로 업데이트되었습니다 `2021.3.4997.20210303T022849Z-210225` AEM Cloud Service SDK의 구성 요소 중 하나를 선택합니다.
+* 클래스 및 메서드 사용 중단 목록은 `2021.3.4997.20210303T022849Z-210225` 버전 AEM Cloud Service SDK를 기반으로 업데이트되었습니다.
 
-* 이제 Cloud Manager 프로덕션 파이프라인에 다음이 포함됩니다 [사용자 지정 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 기능.
+* Cloud Manager 프로덕션 파이프라인에는 이제 [사용자 정의 UI 테스트](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 기능이 포함됩니다.
 
 ### 버그 수정 {#bug-fixes-cm-march}
 
-* AEM 푸시 업그레이드 중에 일부 경우에 패키지 버전 관리를 건너뛰었습니다.
+* AEM 푸시 업그레이드 중에 패키지 버전을 건너뛰는 경우가 있었습니다.
 
-* 패키지가 다른 패키지에 포함된 경우 일부 품질 문제가 제대로 검색되지 않았습니다.
+* 패키지가 다른 패키지에 임베드된 경우 일부 품질 문제가 제대로 검색되지 않았습니다.
 
-* 프로그램 추가 대화 상자를 열 때 생성되는 기본 프로그램 이름이 기존 프로그램 이름과 중복될 수 있습니다.
+* 불명확한 상황에서 프로그램 추가 대화 상자를 열 때 생성되는 기본 프로그램 이름이 기존 프로그램 이름과 중복될 수 있었습니다.
 
-* 경우에 따라 사용자가 파이프라인을 시작한 후 바로 파이프라인 실행 페이지에서 나가는 경우 실행이 실제로 시작되지만 작업이 실패했음을 나타내는 오류 메시지가 표시됩니다.
+* 사용자가 파이프라인을 시작한 직후 파이프라인 실행 페이지에서 벗어나면 실행이 실제로 시작되지만 작업이 실패했다는 오류 메시지가 표시되는 경우가 있었습니다.
 
-* 고객 빌드에 잘못된 패키지가 발생하여 빌드 단계가 불필요하게 다시 시작되었습니다.
+* 고객 빌드로 인해 잘못된 패키지가 발생한 경우 빌드 단계가 불필요하게 다시 시작되었습니다.
 
-* 경우에 따라 해당 구성이 배포되지 허용 목록에 추가하다 않은 경우에도 IP 옆에 녹색 &quot;활성&quot; 상태가 표시될 수 있습니다.
+* 해당 구성이 배포되지 않은 경우에도 IP 허용 목록 옆에 녹색 “활성” 상태가 표시되는 경우가 있었습니다.
 
 * 모든 기존 프로덕션 파이프라인은 경험 감사 단계에서 자동으로 활성화됩니다.
 
@@ -140,7 +140,7 @@ AEM as a Cloud Service 2021.3.0의 Cloud Manager 릴리스 날짜는 2021년 3�
 
 * CTT는 이름이 같지만 이름에 하이픈이 있는 폴더에서 컨텐츠를 건너뛰었습니다. 이 문제가 해결되었습니다.
 
-### 릴리스 날짜 {#release-date-ctt-march}
+### 릴리스 일자 {#release-date-ctt-march}
 
 컨텐츠 전송 도구 v1.3.0의 릴리스 날짜는 2021년 3월 4일입니다.
 

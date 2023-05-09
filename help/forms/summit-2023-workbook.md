@@ -6,13 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-source-git-commit: f65c5241e1e61e5a0bd9981778939caa313de76a
-workflow-type: ht
-source-wordcount: '3412'
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+workflow-type: tm+mt
+source-wordcount: '3360'
 ht-degree: 100%
 
 ---
-
 
 # 핵심 구성 요소 및 Headless를 사용하여 매력적인 양식 작성
 
@@ -60,8 +60,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
 ### 연습
 
-1. 브라우저를 열고 Cloud Service 작성자 환경의 URL을 입력합니다. 예:
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. 브라우저를 열고 Cloud Service 작성자 환경의 URL을 입력합니다.
 
 1. Cloud Service 작성자 환경에 로그인합니다. 작성자 환경의 로그인 자격 증명은 랩 시간 중에 공유됩니다.
 
@@ -407,8 +406,8 @@ React 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
 비즈니스 사용자로서 서버의 양식을 변경하고 자동으로 Headless 양식에 반영된 변경 사항을 확인해 보겠습니다.
 
-1. 브라우저에서 AEM Forms 관리 인터페이스를 엽니다. 예: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1. 브라우저에서 AEM Forms 관리 인터페이스를 엽니다.
+\
 1. **등록** 양식을 선택하고 **편집을 클릭합니다.** 적응형 양식 편집기에서 양식이 열립니다.
 
    ![](/help/forms/assets/screenshot2028118529.png)
@@ -513,7 +512,7 @@ Material UI 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
 1. .env 파일의 변수에 대해 다음 값을 설정합니다. 변수를 업데이트한 후 파일을 저장합니다. **CTRL + S** 스위치 조합을 사용하여 파일을 저장합니다.
 
-   * **AEM_URL**: 클라우드 서비스 게시 환경의 URL을 지정합니다. 예: [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+   * **AEM_URL**: 클라우드 서비스 게시 환경의 URL을 지정합니다.
 
    * **AEM_FORM_PATH**: 이전 수업에서 만든 적응형 양식의 경로를 지정합니다. 예: /content/forms/af/registration/
 
@@ -639,12 +638,10 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 * [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
 
-* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 * [핵심 구성 요소 기반 AF의 스타일링 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=en)
 
 * [Headless 적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
 * [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
-
-

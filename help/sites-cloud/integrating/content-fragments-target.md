@@ -1,10 +1,11 @@
 ---
 title: Adobe Target으로 콘텐츠 조각 내보내기
 description: Adobe Target으로 콘텐츠 조각 내보내기
-source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
-workflow-type: ht
-source-wordcount: '2228'
-ht-degree: 100%
+exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+workflow-type: tm+mt
+source-wordcount: '2229'
+ht-degree: 99%
 
 ---
 
@@ -193,7 +194,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
       >[!NOTE]
       >
-      >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
+      >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
       >
       >mbox.js는 더 이상 사용되지 않으며 이후 단계에서 제거될 예정입니다.
       >
@@ -205,6 +206,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
       >* 보안 개선
       >* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
       >* AT.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 더 이상 target.js를 호출할 필요가 없습니다.
+
       >
       >**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 

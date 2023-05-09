@@ -5,7 +5,7 @@ description: 검토는 검토자가 작업 할당 단계를 사용하여 적응�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 4%
@@ -29,8 +29,8 @@ ht-degree: 4%
 1. 탭 ![settings_icon](assets/settings_icon.png) 를 클릭합니다. 다음 **[!UICONTROL 작업 할당]** 대화 상자가 열립니다.
 1. 열기 [!UICONTROL 양식 및 문서] 탭 및 열기 [!UICONTROL 미리 채워짐] 드롭다운 및 지정:
 
-* 다음을 사용하여 입력 데이터 파일 선택
-* 다음을 사용하여 입력 첨부 파일 선택
+   * 다음을 사용하여 입력 데이터 파일 선택
+   * 다음을 사용하여 입력 첨부 파일 선택
 
    ![검토 단계](/help/forms/assets/assigntask-review1.gif)
 

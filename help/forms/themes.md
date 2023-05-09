@@ -1,10 +1,10 @@
 ---
-title: 테마 만들기 및 사용
+title: 테마를 만들어 사용하여 적응형 양식 스타일 지정
 description: 테마를 사용하여 스타일을 지정하고 적응형 양식에 시각적 ID를 제공할 수 있습니다. 여러 적응형 Forms에서 테마를 공유할 수 있습니다.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '5494'
+source-wordcount: '5499'
 ht-degree: 1%
 
 ---

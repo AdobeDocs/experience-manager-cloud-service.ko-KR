@@ -1,8 +1,8 @@
 ---
-title: 적응형 Forms에 대한 기록 문서 생성
+title: 적응형 Forms에 대한 레코드 문서 생성
 description: 적응형 Forms용 레코드 문서(DoR)에 대한 템플릿을 생성하는 방법을 설명합니다.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
 source-wordcount: '3109'
 ht-degree: 2%
@@ -130,7 +130,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 이제 적응형 양식이 제출되면 업데이트된 레코드 문서가 생성됩니다.
 
-![세션 속성을 사용하도록-](assets/we-retail-new-invoice-sent-to-customer.png)
+![업데이트됨-](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 레코드 문서로 작업할 때 주요 고려 사항 {#key-considerations-when-working-with-document-of-record}
 
@@ -203,8 +203,8 @@ When you select a form model, configure Document of Record using options availab
    <td> </td>
   </tr>
   <tr>
-   <td>라디오 단추</td>
-   <td>라디오 단추</td>
+   <td>라디오 버튼</td>
+   <td>라디오 버튼</td>
    <td>true</td>
    <td> </td>
   </tr>
@@ -216,12 +216,12 @@ When you select a form model, configure Document of Record using options availab
   </tr>
   <tr>
    <td>재설정 버튼</td>
-   <td>재설정 단추</td>
+   <td>재설정 버튼</td>
    <td>false</td>
    <td> </td>
   </tr>
   <tr>
-   <td>제출 단추</td>
+   <td>제출 버튼</td>
    <td><p>전자 메일 전송 단추</p> <p>HTTP 전송 단추</p> </td>
    <td>false</td>
    <td> </td>

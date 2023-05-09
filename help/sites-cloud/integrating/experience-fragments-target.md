@@ -2,10 +2,10 @@
 title: Adobe Target으로 경험 조각 내보내기
 description: Adobe Target으로 경험 조각 내보내기
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
-workflow-type: ht
-source-wordcount: '2249'
-ht-degree: 100%
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+workflow-type: tm+mt
+source-wordcount: '2250'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역 또는 Adobe Target의
 
 >[!NOTE]
 >
->Adobe Target 작업 영역은 Adobe Target 자체에 존재하지 않습니다. Adobe IMS(ID 관리 시스템)에서 정의되고 관리된 다음 Adobe Developer Console을 사용하여 솔루션 전체에 걸쳐 사용하도록 선택됩니다.
+>Adobe Target 작업 영역은 Adobe Target 자체에 존재하지 않습니다. Adobe IMS(Identity Management System)에서 정의되고 관리된 다음 Adobe Developer Console을 사용하여 솔루션 전체에 걸쳐 사용하도록 선택됩니다.
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
 
       >[!NOTE]
       >
-      >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
+      >Target 라이브러리 파일인 [AT.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)는 일반적인 웹 구현과 단일 페이지 애플리케이션 모두에 맞게 디자인된 새로운 Adobe Target용 구현 라이브러리입니다.
       >
       >mbox.js는 더 이상 사용되지 않으며 이후 단계에서 제거될 예정입니다.
       >
@@ -209,6 +209,7 @@ Adobe Target의 세그먼트를 동기화하도록 클라우드 구성을 구성
       >* 보안 개선
       >* 단일 페이지 애플리케이션에 대한 구현 옵션 개선
       >* AT.js에는 target.js에 포함된 구성 요소도 포함되어 있으므로 더 이상 target.js를 호출할 필요가 없습니다.
+
       >
       >**클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 
