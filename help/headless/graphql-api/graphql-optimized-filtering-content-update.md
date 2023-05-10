@@ -3,9 +3,9 @@ title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Adobe Experience Manager as a Cloud Service에서 Headless 콘텐츠 게재를 위한 GraphQL 필터링 최적화 목적으로 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
 ## 사전 요구 사항 {#prerequisites}
 
-이 작업에 대한 필수 구성 요소가 있습니다.
+이 작업에 대한 사전 요구 사항은 다음과 같습니다.
 
 1. AEM as a Cloud Service의 2023.1.0 이상 릴리스가 있는지 확인하십시오.
 
-1. 작업을 수행하는 사용자에게 필요한 권한이 있는지 확인합니다.
+1. 작업을 수행하는 사용자에게 필요한 권한이 있는지 확인하십시오.
 
-   * 최소한 `Deployment Manager` cloud Manager의 역할이 필요합니다.
+   * 최소한 Cloud Manager의 `Deployment Manager` 역할이 필요합니다.
 
 ## 콘텐츠 조각 업데이트 {#updating-content-fragments}
 
@@ -155,7 +155,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
-   Splunk를 사용하여 환경 로그에 액세스할 수 있는 고객은 아래 예제 쿼리를 사용하여 업그레이드 프로세스를 모니터링할 수 있습니다. Splunk 로깅 활성화에 대한 자세한 내용은 [프로덕션 및 스테이지 디버깅](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 페이지.
+   Splunk를 사용하여 환경 로그에 대한 액세스를 활성화한 고객은 아래 예제 쿼리를 사용하여 업그레이드 프로세스를 모니터링할 수 있습니다. Splunk 로깅 활성화에 대한 자세한 내용은 [프로덕션 및 스테이지 디버깅](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 페이지를 참조하십시오.
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -164,8 +164,8 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
 
    위치:
 
-   * `environmentId` - 고객 환경 식별자 예 `e1234`
-   * `indexName` - 고객 인덱스 이름, 수집 `aemerror` events
+   * `environmentId` - 고객 환경 식별자 (예: `e1234`)
+   * `indexName` - 고객 색인 이름, `aemerror` 이벤트 수집
 
    출력 예:
 
@@ -183,13 +183,13 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
          <td>2023-04-21 06:00:35.723</td>
          <td>작성자</td>
          <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
-         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob 완료된 컨텐츠 조각 업그레이드를 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, 상태: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='버전 '1'으로 업그레이드했습니다.', 오류=[], successCount=36756, failedCount=0, skededCount=0}</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
        </tr>
        <tr>
          <td>2023-04-21 06:05:48.207</td>
          <td>골든 게시</td>
          <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
-         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6dfb1-(apache-sling-job-thread-pool)-1-Content Fragment 업그레이드 작업 큐 구성(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJobJob에서 컨텐츠 조각 업그레이드를 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0, 상태: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='버전 '1'으로 업그레이드했습니다.', 오류=[], successCount=19557, failedCount=0, skededCount=0}</td>
+         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
        </tr>
      </tbody>
    <table>
