@@ -2,9 +2,9 @@
 title: 콘텐츠 전송 도구 시작하기
 description: 콘텐츠 전송 도구 시작하기
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1406'
 ht-degree: 22%
 
 ---
@@ -91,6 +91,10 @@ SSL/TLS 연결 문제를 이해하는 것이 어려울 수 있습니다. 추출 
    다음 대화 상자가 표시됩니다. 마이그레이션 세트는 장기간 동안 활동이 없으면 만료됩니다. 일정 시간 동안 프로젝트 카드 및 마이그레이션 작업 테이블 행에 경고가 표시되면 마이그레이션 세트가 만료되고 해당 데이터를 더 이상 사용할 수 없게 됩니다. 검토 [마이그레이션 세트 만료](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 자세한 내용
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >이름은 AEM 노드의 동일한 규칙을 따르므로 다음 문자를 포함할 수 없습니다. / : [ ] | *
 
 1. 이제 목록 보기에 마이그레이션 목록이 표시됩니다. 세 점 기호(**...**) 드롭다운을 열고 을(를) 클릭합니다. **추출 키 복사**. 추출 단계 중에 이 키가 필요합니다. 이 추출 키를 복사합니다.
 

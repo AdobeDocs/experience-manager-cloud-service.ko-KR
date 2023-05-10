@@ -2,10 +2,10 @@
 title: 소스에서 콘텐츠 추출
 description: 소스에서 콘텐츠 추출
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,13 +49,13 @@ ht-degree: 29%
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   컨텐츠 전송 페이지를 방문하여 Cloud Acceleration Manager에서 추출 단계 진행 상태를 모니터링할 수도 있습니다.
+   컨텐츠 전송 페이지를 방문하여 Cloud Acceleration Manager에서 추출 단계 진행 상태를 모니터링하고 아이콘을 클릭하여 자세히 볼 수도 있습니다 **...** 그런 다음 **세부 사항 보기**.
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. 추출이 완료되면 다른 열(예: **소스** 및 **경로** 를 클릭하여 채운 마이그레이션 세트의 세부 사항을 보려면 **...** 그런 다음 **세부 사항 보기**.
+1. 추출이 완료되면 다른 열(예: **소스** 및 **경로** 를 클릭하여 채운 마이그레이션 세트의 세부 사항을 보려면 **...** 그런 다음 **세부 사항 보기** 추출의 각 단계의 기간을 포함하여 세부 사항을 확인합니다. 추출 중에 이 대화 상자를 보고 단계가 진행되는 방식을 확인합니다.
 
-   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## 추가 추출 {#top-up-extraction-process}

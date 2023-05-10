@@ -2,9 +2,9 @@
 title: 대상에 콘텐츠 수집
 description: 대상에 콘텐츠 수집
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1753'
 ht-degree: 12%
 
 ---
@@ -59,7 +59,9 @@ ht-degree: 12%
 
    ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. 수집이 완료되면 화면 오른쪽 상단 모서리에서 (i) 단추를 클릭하여 수집 작업에 대한 자세한 정보를 확인하십시오.
+1. 클릭 **자.** 섹션에 있는 버튼을 클릭하여 수집 작업에 대한 자세한 정보를 확인합니다. 을(를) 클릭하여 수집 실행 또는 완료될 때 각 수집 단계의 지속 시간을 볼 수 있습니다 **...** 그런 다음 **기간 보기**. 추출에서 얻은 정보는 수집 중인 것을 깨닫도록 표시됩니다.
+
+   ![이미지](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 
