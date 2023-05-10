@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
-workflow-type: ht
-source-wordcount: '3473'
-ht-degree: 100%
+source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+workflow-type: tm+mt
+source-wordcount: '3508'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 >abstract="이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다."
 
 이 페이지에서는 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Experience Manager Engineering의 모범 사례를 기반으로 합니다.
+
+>[!NOTE]
+>
+>Adobe 소유 정보로 인해 전체 SonarQube 규칙을 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) 규칙의 설명 및 예제를 보려면 이 문서를 계속 읽으십시오.
 
 >[!NOTE]
 >
