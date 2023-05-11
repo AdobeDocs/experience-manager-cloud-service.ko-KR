@@ -2,7 +2,7 @@
 title: Best Practices Analyzer 사용
 description: Best Practices Analyzer 사용
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
+source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 49%
@@ -28,7 +28,7 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
 * BPA는 버전 6.1 이상의 AEM 인스턴스에서 지원됩니다.
 
    >[!NOTE]
-   > 자세한 내용은 [AEM 6.1에 설치](#installing-on-aem61) AEM 6.1에 BPA 설치를 위한 특별 요구 사항입니다.
+   >자세한 내용은 [AEM 6.1에 설치](#installing-on-aem61) AEM 6.1에 BPA 설치를 위한 특별 요구 사항입니다.
 
 * BPA는 모든 환경에서 실행할 수 있지만 *단계* 환경.
 
@@ -100,14 +100,14 @@ BPA(Best Practices Analyzer)를 실행하기 위한 중요한 고려 사항을 �
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-   > 왼쪽 레일 아이콘은 BPA에서 ACS Commons 사용을 감지하는 경우에만 나타납니다.
+   >왼쪽 레일 아이콘은 BPA에서 ACS Commons 사용을 감지하는 경우에만 나타납니다.
 
 1. ACS Commons와 관련된 모든 결과를 필터링하려면 상자를 선택 취소합니다. 다음 항목이 표시됩니다. **필터링된 검색 횟수** 를 클릭하십시오. 필터가 CSV(쉼표로 구분된 값) 형식으로 내보낼 때에도 보고서에 적용됩니다.
 
    ![이미지](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   > ACS Commons 결과는 무시되어서는 안 됩니다. 을(를) 참조하십시오. [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Service와의 호환성을 확인합니다.
+   >ACS Commons 결과는 무시되어서는 안 됩니다. 을(를) 참조하십시오. [설명서](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) AEM as a Cloud Service와의 호환성을 확인합니다.
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
