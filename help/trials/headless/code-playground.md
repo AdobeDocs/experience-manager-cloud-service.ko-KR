@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '987'
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ CodePen은 프론트 엔드 웹 개발을 위한 온라인 코드 편집기 및 
 
 ## JavaScript 코드 연습 {#code-walkthrough}
 
-CodePen의 오른쪽에 있는 **JS** 창에는 예제 앱의 Javascript가 포함되어 있습니다. 2행부터 Skypack CDN에서 JavaScript용 AEM Headless 클라이언트를 가져옵니다. Skypack은 빌드 단계 없이 개발을 용이하게 하는 데 사용되지만, 자체 프로젝트에서 NPM 또는 Yarn과 함께 AEM Headless 클라이언트를 사용할 수도 있습니다. 자세한 내용은 [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript)의 사용 지침을 확인하십시오.
+CodePen의 오른쪽에 있는 **JS** 창에는 예제 앱의 JavaScript가 포함되어 있습니다. 2행부터 Skypack CDN에서 JavaScript용 AEM Headless 클라이언트를 가져옵니다. Skypack은 빌드 단계 없이 개발을 용이하게 하는 데 사용되지만, 자체 프로젝트에서 NPM 또는 Yarn과 함께 AEM Headless 클라이언트를 사용할 수도 있습니다. 자세한 내용은 [README](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript)의 사용 지침을 확인하십시오.
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
@@ -61,7 +61,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 6행에서 `publishHost` 쿼리 매개변수를 통해 게시 호스트 세부 정보를 읽습니다. 이는 AEM Headless 클라이언트가 데이터를 가져올 호스트입니다. 이 내용은 일반적으로 앱에 코딩되지만, CodePen 앱이 다른 환경에서 더 쉽게 작동할 수 있도록 쿼리 매개변수를 사용하는 것입니다.
 
-12번에 AEM Headless 클라이언트를 구성함:
+12행에서 AEM Headless 클라이언트를 구성합니다.
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -75,7 +75,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->다음 **serviceURL** 는 CORS 문제를 방지하기 위해 프록시 Adobe IO 런타임 함수를 사용하도록 설정되어 있습니다. 이 내용은 사용자의 자체 프로젝트에는 필요하지 않지만 CodePen 앱이 체험판 환경에서 작동하려면 필요합니다. 프록시 함수는 **publishHost** 쿼리 매개 변수에 제공된 값입니다.
+>CORS 문제를 방지하기 위해 **serviceURL**&#x200B;은 프록시 Adobe IO 런타임 함수를 사용하도록 설정되어 있습니다. 이 내용은 사용자의 자체 프로젝트에는 필요하지 않지만 CodePen 앱이 체험판 환경에서 작동하려면 필요합니다. 프록시 함수는 쿼리 매개변수에 제공된 **publishHost** 값을 사용하도록 구성됩니다.
 
 마지막으로 AEM Headless 클라이언트를 사용하여 가져오기 요청을 수행하는 데 `fetchJsonFromGraphQL()` 함수가 사용됩니다. 코드가 변경될 때마다 호출되거나 **다시 가져오기** 링크를 누르면 트리거될 수 있습니다. 실제 `aemHeadlessClient.runPersistedQuery(..)` 호출은 34행에서 발생합니다. 잠시 후 이 JSON 데이터가 렌더링되는 방식을 변경할 예정이지만, 일단은 `resultToPreTag(queryResult)` 함수를 사용해 `#output` div에 출력하겠습니다.
 
@@ -94,7 +94,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 1. 이 변경 사항이 적용되면 앱이 자동으로 새로 고쳐지고 지속 쿼리의 원시 JSON 응답이 `#output` div로 출력됩니다. 오류 메시지가 표시되면 콘솔에서 자세한 내용을 확인하십시오. 이 단계에서 여전히 문제가 있을 경우 [Slack](https://adobe-dx-support.slack.com)을 확인하십시오.
 
-1. 앱에 필요한 정확한 속성이 이 JSON에 포함되어 있습니까? 그렇지 않은 경우 다시 변경을 위한 [ GraphQL API를 사용하여 콘텐츠 추출](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) 학습 안내서를 확인하십시오. 완료한 후 쿼리를 저장하고 게시하는 것을 잊지 마십시오.
+1. 앱에 필요한 정확한 속성이 이 JSON에 포함되어 있습니까? 그렇지 않은 경우 다시 변경을 위한 [GraphQL API를 사용하여 콘텐츠 추출](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) 학습 안내서를 확인하십시오. 완료한 후 쿼리를 저장하고 게시하는 것을 잊지 마십시오.
 
 ## JSON 렌더링 변경 {#change-rendering}
 
