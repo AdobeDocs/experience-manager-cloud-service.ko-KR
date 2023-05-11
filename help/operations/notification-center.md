@@ -2,8 +2,9 @@
 title: 알림 센터
 description: 알림 센터를 활용하여 인시던트 및 기타 중요한 정보에 대해 편리하게 조치
 hidefromtoc: true
+hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
+source-git-commit: 3aa753fb5cc5130ced7e9baafde63e8825394dce
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 95%
