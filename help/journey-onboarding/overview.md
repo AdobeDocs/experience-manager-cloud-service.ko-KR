@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 온보딩 여정 소개
 description: AEM as a Cloud Service로의 온보드 프로세스를 통해 안내하는 여정에 대한 개요를 보려면 여기를 클릭하십시오.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
@@ -95,3 +95,9 @@ AEM as a Cloud Service를 시작할 때 알아야 할 것이 많은 것처럼 �
 설명서 여정은 Adobe의 최신 연구, Adobe 컨설턴트의 입증된 구현 경험 및 고객 프로젝트의 피드백을 통해 제공되는 모범 사례 원칙을 중심으로 설계되었습니다.
 
 Adobe에서 권장하는 새로운 AEM as a Cloud Service 애플리케이션에 팀을 온보딩하는 방법을 알고 싶다면 여기에서 시작해야 합니다!
+
+## 추가 리소스 {#additional-resources}
+
+다음은 온보딩 여정의 컨텐츠를 벗어나려면 추가 선택적 리소스입니다.
+
+* [AEM Champion 팁과 트릭 - Cloud Manager 온보딩 Playbook](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - 이 비디오를 시청하여 AEM 챔피언으로부터 Cloud Manager 온보딩 팁과 트릭을 학습할 수 있습니다.

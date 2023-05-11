@@ -4,10 +4,10 @@ description: 시스템 관리자가 필요한 클라우드 리소스를 설정�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 96%
 
 ---
 
@@ -80,6 +80,8 @@ AEM 작성자는 AEM에 로그인해야 콘텐츠 생성을 시작할 수 있습
 >이제 온보딩되었으므로 최소한의 AEM 구성으로 [AEM 참조 데모 추가 기능을 샌드박스 환경에 손쉽게 추가](/help/journey-sites/demos-add-on/overview.md)하는 방법을 배우고 모범 사례를 기반으로 하는 풍부한 예를 통해 AEM의 강력한 기능을 테스트할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
+
+다음은 온보딩 여정의 컨텐츠를 벗어나려면 추가 선택적 리소스입니다.
 
 [페이지 작성에 대한 빠른 시작 안내서](/help/sites-cloud/authoring/getting-started/quick-start.md) - AEM의 작성 기본 사항에 대한 간략한 개요를 보려면 여기에서 시작하십시오.
 [Headless 제작 여정](/help/journey-headless/author/overview.md) - Headless 콘텐츠를 작성하려면 이 안내서 소개를 따르십시오.

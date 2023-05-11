@@ -4,10 +4,10 @@ description: 클라우드 리소스를 구성한 후에는 AEM 제품 프로필�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: fd0716a95d66908e215ed44bc773ed3c26e0382b
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 97%
 
 ---
 
@@ -100,6 +100,8 @@ Admin Console에서 AEM 제품 프로필을 보려면 다음 단계를 따르십
 * [AEM 사용자 작업](aem-users.md) - 콘텐츠 작성을 시작할 수 있는 AEM 환경에 액세스하는 방법을 배울 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
+
+다음은 온보딩 여정의 컨텐츠를 벗어나려면 추가 선택적 리소스입니다.
 
 * [Admin Console에서 제품 및 사용자 액세스 관리](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Admin Console을 사용하여 사용 액세스를 관리하는 방법을 알아봅니다.
 * [AEM에 대한 액세스 구성 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ko) - Admin Console에서 Adobe IMS 사용자, 사용자 그룹 및 제품 프로필을 구성하는 방법에 대해 알아보려면 이 간략한 설명을 확인합니다.

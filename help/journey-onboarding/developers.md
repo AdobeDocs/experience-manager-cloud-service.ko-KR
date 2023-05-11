@@ -4,10 +4,10 @@ description: 시스템 관리자가 필요한 클라우드 리소스를 설정�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,8 @@ Cloud Manager뿐 아니라 작업 환경, 저장소 및 파이프라인에 대�
 >이제 온보딩되었으므로 최소한의 AEM 구성으로 [AEM 참조 데모 추가 기능을 샌드박스 환경에 손쉽게 추가](/help/journey-sites/demos-add-on/overview.md)하는 방법을 배우고 모범 사례를 기반으로 하는 풍부한 예를 통해 AEM의 강력한 기능을 테스트할 수 있습니다.
 
 ## 추가 리소스 {#additional-resources}
+
+다음은 온보딩 여정의 컨텐츠를 벗어나려면 추가 선택적 리소스입니다.
 
 * [저장소 액세스](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - Cloud Manager의 셀프서비스 git 계정 관리를 사용하여 git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 * [Cloud Manager와 함께 git 사용](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Cloud Manager의 git 저장소를 사용하는 방법과 자체 On-Premise 고객 관리 git 저장소를 Cloud Manager와 통합하는 방법을 알아봅니다.

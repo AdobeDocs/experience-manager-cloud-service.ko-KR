@@ -3,10 +3,10 @@ title: Cloud Manager 액세스
 description: 프로젝트 리소스를 설정할 수 있도록 Cloud Manager에 액세스하는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 97%
+source-wordcount: '1097'
+ht-degree: 95%
 
 ---
 
@@ -130,8 +130,9 @@ Cloud Manager에 비즈니스 소유자로 로그인했습니다! **비즈니스
 
 ## 추가 리소스 {#additional-resources}
 
-자세한 내용은 추가 리소스를 참조하십시오.
+다음은 온보딩 여정의 컨텐츠를 벗어나려면 추가 선택적 리소스입니다.
 
 * [Cloud Manager 소개](/help/onboarding/cloud-manager-introduction.md) -
 Cloud Manager, Cloud Manager 프로그램 및 환경에 대해 알아봅니다.
-* [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필이 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한할 수 있는 방법을 알아봅니다.
+* [AEM as a Cloud Service 팀 및 제품 프로필](/help/onboarding/aem-cs-team-product-profiles.md) - AEM as a Cloud Service 팀 및 제품 프로필로 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한하는 방법에 대해 알아봅니다.
+* [AEM Champion 팁과 트릭 - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - AEM 챔피언의 Cloud Manager UI에 대한 개요를 보려면 이 비디오를 시청하십시오.
