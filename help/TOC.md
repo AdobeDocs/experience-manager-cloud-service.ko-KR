@@ -8,9 +8,9 @@ user-guide-description: Experience Manager as a Cloud Service의 작동 방식�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
+source-git-commit: 6e451739a2d2f9cd045824658fe0f3c5bd1d245b
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4068'
 ht-degree: 100%
 
 ---
@@ -888,6 +888,7 @@ ht-degree: 100%
    + 개발자 도구 {#developer-tools}
       + [개발자 모드](/help/implementing/developing/tools/developer-mode.md)
       + [Eclipse용 AEM 개발자 도구](/help/implementing/developing/tools/eclipse.md)
+      + [콘텐츠 복사](/help/implementing/developing/tools/content-copy.md)
       + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
       + [AEM 저장소 도구](/help/implementing/developing/tools/repo-tool.md)
       + [CRXDE Lite 사용](/help/implementing/developing/tools/crxde.md)
