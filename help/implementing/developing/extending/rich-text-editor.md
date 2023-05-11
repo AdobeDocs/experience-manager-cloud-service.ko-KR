@@ -3,9 +3,9 @@ title: 에서 컨텐츠를 작성하도록 리치 텍스트 편집기 구성 [!D
 description: 에서 컨텐츠를 작성하도록 리치 텍스트 편집기 구성 [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
@@ -95,14 +95,14 @@ RTE의 기본 기능은 `features` 적절한 플러그인과 관련된 노드의
 | 플러그인 ID | 기능 | 설명 |
 |--- |--- |--- |
 | 편집 | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [잘라내기, 복사 및 세 가지 붙여넣기 모드](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [칠드레플레이스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | 찾기 및 바꾸기. |
-| [포맷](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [기본 텍스트 서식](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [이미지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | 기본 이미지 지원(컨텐츠 또는 컨텐츠 파인더에서 드래그). 브라우저에 따라 작성자를 위한 다양한 동작이 지원됩니다 |
-| [키](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | 이 값을 정의하려면 [탭 크기](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [정당화](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | 단락 맞춤. |
-| [링크](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [목록](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | 이 플러그인은 모두 제어합니다 [들여쓰기 및 목록](configure-rich-text-editor-plug-ins.md#indentmargin); 중첩된 목록을 포함합니다. |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | 기타 도구를 사용하여 작성자가 입력할 수 있습니다 [특수 문자](configure-rich-text-editor-plug-ins.md#spchar) 또는 HTML 소스를 편집합니다. 또한 [특수 문자 범위](configure-rich-text-editor-plug-ins.md#definerangechar) 나만의 목록을 정의하려는 경우. |
+| 칠드레플레이스 | `find`, `replace` | 찾기 및 바꾸기. |
+| 포맷 | `bold`, `italic`, `underline` | [기본 텍스트 서식](configure-rich-text-editor-plug-ins.md#textstyles). |
+| 이미지 | `image` | 기본 이미지 지원(컨텐츠 또는 컨텐츠 파인더에서 드래그). 브라우저에 따라 작성자를 위한 다양한 동작이 지원됩니다 |
+| 키 | - | 이 값을 정의하려면 [탭 크기](configure-rich-text-editor-plug-ins.md#tabsize). |
+| 정당화 | `justifyleft`, `justifycenter`, `justifyright` | 단락 맞춤. |
+| 링크 | `modifylink`, `unlink`, `anchor` | [하이퍼링크 및 앵커](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| 목록 | `ordered`, `unordered`, `indent`, `outdent` | 이 플러그인은 모두 제어합니다 [들여쓰기 및 목록](configure-rich-text-editor-plug-ins.md#indentmargin); 중첩된 목록을 포함합니다. |
+| misctools | `specialchars`, `sourceedit` | 기타 도구를 사용하여 작성자가 입력할 수 있습니다 [특수 문자](configure-rich-text-editor-plug-ins.md#spchar) 또는 HTML 소스를 편집합니다. 또한 [특수 문자 범위](configure-rich-text-editor-plug-ins.md#definerangechar) 나만의 목록을 정의하려는 경우. |
 | Paraformat | `paraformat` | 기본 단락 형식은 단락, 제목 1, 제목 2 및 제목 3(`<p>`, `<h1>`, `<h2>`, 및 `<h3>`). 다음을 수행할 수 있습니다 [단락 서식 추가](configure-rich-text-editor-plug-ins.md#paraformats) 또는 목록을 확장합니다. |
 | 맞춤법 검사 | `checktext` | [언어 인식 맞춤법 검사기](configure-rich-text-editor-plug-ins.md#adddict). |
 | 스타일 | `styles` | CSS 클래스를 사용하는 스타일링을 지원합니다. [새 텍스트 스타일 추가](configure-rich-text-editor-plug-ins.md#textstyles) 텍스트에 사용할 고유한 스타일 범위를 추가(또는 확장)하려면 다음을 수행합니다. |
