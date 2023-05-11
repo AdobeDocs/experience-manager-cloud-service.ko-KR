@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -1296,7 +1296,7 @@ query {
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
 * `bookmark` 유형의 복수 콘텐츠 조각
-   * 조각 참조 를 사용하여 특정 모델 유형의 다른 조각에 대한 참조 `Article`
+   * 특정 모델 유형 `Article`의 다른 조각에 대한 조각 참조 포함
 
 >[!NOTE]
 >
@@ -1315,7 +1315,7 @@ query {
 }
 ```
 
-#### 여러 참조 모델 유형
+#### 다중 참조된 모델 유형
 
 이 쿼리는 다음에 대한 정보를 얻습니다.
 
@@ -1324,7 +1324,7 @@ query {
 
 >[!NOTE]
 >
->`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article`, `Adventure` 모델이 선택됩니다. 쿼리 전달 `fragments` 일련의 `[AllFragmentModels]`- 공용 구조체 유형으로 참조되지 않습니다.
+>`fragments` 필드에는 `fragment-reference` 데이터 유형이 있고, `Article`, `Adventure` 모델이 선택됩니다. 쿼리는 공용 구조체 형식으로 참조되지 않은 `[AllFragmentModels]`의 배열로 `fragments`을 제공합니다.
 
 ```graphql
 {
