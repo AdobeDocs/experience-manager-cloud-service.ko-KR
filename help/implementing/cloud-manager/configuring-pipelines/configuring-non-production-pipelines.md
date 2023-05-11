@@ -3,9 +3,9 @@ title: 비프로덕션 파이프라인 구성
 description: 프로덕션 환경에 배포하기 전에 비프로덕션 파이프라인을 구성하여 코드 품질을 테스트하는 방법을 알아봅니다.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
-workflow-type: ht
-source-wordcount: '1403'
+source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+workflow-type: tm+mt
+source-wordcount: '1369'
 ht-degree: 100%
 
 ---
@@ -94,12 +94,6 @@ ht-degree: 100%
 파이프라인이 저장되고 이제 **프로그램 개요** 페이지의 **파이프라인** 카드에서 [파이프라인을 관리](managing-pipelines.md)할 수 있습니다.
 
 ### 전체 스택 코드 {#full-stack-code}
-
->[!NOTE]
->
->* 이 기능은 아직 일반적으로 사용할 수 없습니다. 2023년 6월에 출시될 예정입니다.
->* 기능을 사용해 보고 개선을 위한 피드백을 제공하려면 Adobe 담당자에게 문의하십시오.
-
 
 전체 스택 코드 파이프라인은 HTTPD/Dispatcher 구성과 함께 하나 이상의 AEM 서버 애플리케이션을 포함하는 백엔드 및 프론트엔드 코드 빌드를 동시에 배포합니다. 이 파이프라인 유형에 대한 자세한 내용은 [CI/CD 파이프라인](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) 문서를 참조하십시오.
 
