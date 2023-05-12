@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service의 현재 유지 관리 릴리스 정보입니다.'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
+source-git-commit: 3823b9369c612058998e265346b3f727001aef4b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 65%
+source-wordcount: '238'
+ht-degree: 56%
 
 ---
 
@@ -26,7 +26,10 @@ ht-degree: 65%
 
 ### 알려진 문제 {#known-issues-11873}
 
-없음.
+- SITES-13253 - 코어 구성 요소 v2.22.6의 RecursionTooDeepException
+- SITES-13256 - 특수 URL로 구성된 코어 WCM Teaser가 페이지 렌더링을 중단합니다
+- GRANITE-45462 - 메시징 클라이언트 다중 영역 구성
+- GRANITE-45562 - 404 대신 200을 반환하는 이미지 조합 문제
 
 ### 해결된 문제 {#fixed-issues-11873}
 
