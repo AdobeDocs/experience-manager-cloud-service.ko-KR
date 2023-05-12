@@ -3,10 +3,10 @@ title: 프로그램 제작
 description: Cloud Manager를 사용하여 첫 번째 프로그램을 만드는 방법을 알아봅니다.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '686'
+ht-degree: 87%
 
 ---
 
@@ -51,11 +51,15 @@ Cloud Manager 프로그램은 일련의 Cloud Manager 환경을 나타냅니다.
 
 1. Cloud Manager의 랜딩 페이지에서 화면 오른쪽 상단의 **프로그램 추가**&#x200B;를 클릭합니다.
 
-   ![Cloud Manager 랜딩 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![Cloud Manager 랜딩 페이지](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 프로그램 만들기 마법사에서 **샌드박스 설정**&#x200B;을 선택하고 프로그램 이름을 제공한 다음 **만들기**&#x200B;를 클릭합니다.
+1. 프로그램 만들기 마법사에서 **샌드박스 설정** 프로그램 이름을 입력하고 탭하거나 클릭합니다 **계속**.
 
    ![프로그램 유형 만들기](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+1. 에서 **샌드박스 설정** 대화 상자에서 샌드박스 프로그램에서 활성화할 솔루션을 선택할 수 있습니다. 다음 **Sites** 및 **자산** 솔루션은 항상 샌드박스 프로그램에 포함되며 자동으로 선택됩니다. 온보딩 예제에 충분합니다. **만들기**&#x200B;를 클릭합니다.
+
+   ![솔루션 선택](assets/set-up-sandbox-onboarding.png)
 
 설정 프로세스가 진행됨에 따라 상태 표시기가 있는 새로운 샌드박스 프로그램 카드가 랜딩 페이지에 표시됩니다.
 
