@@ -3,8 +3,8 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 최신 릴리스 정보'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: eb42c39af65f1e10417d855e5ad476cafc97da45
-workflow-type: ht
+source-git-commit: 371a8a0af731c1d9c139d08e4c773c0654dafd4e
+workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.2.0)의 릴리스 날짜는 2023년 4월 12일입니다. 다음 기능 릴리스(2023.4.0)는 2023년 5월 18일에 예정되어 있습니다.
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 현재 기능 릴리스(2023.2.0)의 릴리스 날짜는 2023년 4월 12일입니다. 다음 기능 릴리스(2023.4.0)는 2023년 5월 25일에 예정되어 있습니다.
 
 ## 릴리스 비디오 {#release-video}
 
