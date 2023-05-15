@@ -2,7 +2,7 @@
 title: AEM에서 Universal Editor 시작하기
 description: Universal Editor에 액세스하는 방법과 이를 사용하기 위해 첫 번째 AEM 앱 계측을 시작하는 방법을 알아봅니다.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: e62ddc2a72d12ad356decc0e2a933d8c7d308469
+source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 98%
@@ -109,14 +109,14 @@ Universal Editor 서비스에는 편집 중인 앱의 콘텐츠에 대한 올바
 앱에서 사용되는 연결은 페이지의 `<head>`에 `<meta>` 태그로 저장됩니다.
 
 ```html
-<meta name="urn:adobe:aem:editor:aemconnection:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - 연결을 식별하기 위해 문서에서 재사용되는 짧은 이름입니다. 예: `aemconnection`
 * `<protocol>` - Universal Editor 지속성 서비스의 어떤 지속성 플러그인을 사용할 것인지 나타냅니다. 예: `aem`
 * `<url>` - 변경 사항이 지속되어야 하는 시스템의 URL입니다. 예: `http://localhost:4502`
 
-식별자 `adobe:aem:editor:aemconnection` Adobe 범용 편집기에 대한 연결을 나타냅니다.
+식별자 `adobe:aem:editor` Adobe 범용 편집기에 대한 연결을 나타냅니다.
 
 `itemid`는 `urn` 접두사를 사용하여 식별자를 줄입니다.
 
@@ -136,8 +136,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:aemconnection:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
