@@ -2,9 +2,9 @@
 title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Adobe Experience Manager as a Cloud Service에서 Headless 콘텐츠 게재를 위한 GraphQL 필터링 최적화 목적으로 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
-workflow-type: ht
-source-wordcount: '925'
+source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
+workflow-type: tm+mt
+source-wordcount: '913'
 ht-degree: 100%
 
 ---
@@ -50,18 +50,9 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <th>유형</th>
       <th>메모</th>
      </tr>
-     <tr>
+
+   <tr>
       <td>1</td>
-      <td>`AEM_RELEASE_CHANNEL` </td>
-      <td>`prerelease` </td>
-      <td> </td>
-      <td>모두 </td>
-      <td> </td>
-      <td>변수 </td>
-      <td>기능을 활성화하는 데 필요합니다. </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>`CF_MIGRATION_ENABLED` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -71,7 +62,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>콘텐츠 조각 마이그레이션 작업의 트리거를 활성화(!=0) 또는 비활성화(0)합니다. </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>`CF_MIGRATION_ENFORCE` </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -81,7 +72,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>콘텐츠 조각의 리마이그레이션을 시행(!=0)합니다.<br>이 플래그를 0으로 설정하면 CF의 증분 마이그레이션이 수행됩니다. 즉, 어떤 이유로든 작업이 종료되면 다음에 작업을 실행했을 때 종료된 위치에서 마이그레이션이 시작됩니다. 최초의 마이그레이션은 시행(값=1)하는 것이 좋습니다. </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>`CF_MIGRATION_BATCH` </td>
       <td>`50` </td>
       <td>`50` </td>
@@ -91,7 +82,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>마이그레이션 후 콘텐츠 조각 수를 저장하기 위한 일괄 처리 크기입니다.<br>얼마나 많은 CF가 한 일괄 처리에서 저장소에 저장되는지와 관련이 있으며, 저장소에 대한 쓰기 수를 최적화하는 데 사용할 수 있습니다. </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>`CF_MIGRATION_LIMIT` </td>
       <td>`1000` </td>
       <td>`1000` </td>
@@ -101,7 +92,7 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
       <td>한 번에 처리할 콘텐츠 조각의 최대 수입니다.<br>`CF_MIGRATION_INTERVAL`에 대한 메모도 참조하십시오. </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>`CF_MIGRATION_INTERVAL` </td>
       <td>`60` </td>
       <td>`600` </td>
@@ -125,7 +116,8 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
    >* CF_MIGRATION_LIMIT = 1000
    >* CF_MIGRATION_INTERNAL = 60(초)
    >* 마이그레이션 완료에 필요한 대략적인 시간 = 60 + (20,000/1000 * 60) = 1260초 = 21분
-   >  시작 시 추가된 &quot;60&quot;초는 작업 시작 시 초기 지연으로 인한 것입니다.
+      >  시작 시 추가된 &quot;60&quot;초는 작업 시작 시 초기 지연으로 인한 것입니다.
+
    >
    >이는 작업을 완료하는 데 필요한 *최소한의* 시간이며 I/O 시간은 포함하지 않습니다. 소요되는 실제 시간은 이 추정치보다 훨씬 더 클 수 있습니다.
 
@@ -154,7 +146,6 @@ GraphQL 필터의 성능을 최적화하려면 콘텐츠 조각을 업데이트�
          ...
          23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
          ```
-
    Splunk를 사용하여 환경 로그에 대한 액세스를 활성화한 고객은 아래 예제 쿼리를 사용하여 업그레이드 프로세스를 모니터링할 수 있습니다. Splunk 로깅 활성화에 대한 자세한 내용은 [프로덕션 및 스테이지 디버깅](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 페이지를 참조하십시오.
 
    ```splunk
