@@ -4,8 +4,8 @@ description: 이전에 만든 콘텐츠 조각 모델을 사용하여 페이지 
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
-workflow-type: ht
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 1. 콘텐츠 조각 편집기에는 선택한 모델에서 정의한 필드가 표시됩니다. 여기에서 각 필드에 내용을 추가하여 콘텐츠 조각을 완성할 수 있습니다. 진행 상황이 자동으로 저장됩니다.
 
-1. `Tuscan adventure`을(을) 입력하여 조각에 **제목**&#x200B;을 부여합니다.
+1. `Tuscan Adventure`을(을) 입력하여 조각에 **제목**&#x200B;을 부여합니다.
 
 1. 다음 텍스트를 붙여넣기 하여 조각에 대한 **설명**&#x200B;을 입력합니다.
 

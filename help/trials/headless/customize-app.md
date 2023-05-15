@@ -4,10 +4,10 @@ description: 샘플 React 앱을 사용하여 AEM as a Cloud Service로 설정�
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
-workflow-type: ht
-source-wordcount: '1028'
-ht-degree: 100%
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="콘텐츠 조각 편집기 실행"
->abstract="AEM Headless 체험판은 샘플 React 앱과 통합되어 있으므로 개발 시간 없이 누구나 손쉽게 콘텐츠를 독립적으로 관리할 수 있습니다.<br><br>아래를 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
+>abstract="이제 헤드리스 컨텐츠 작성의 작동 방식을 살펴보겠습니다. AEM Headless 체험판은 샘플 React 앱과 통합되어 있으므로 개발 시간 없이 누구나 손쉽게 콘텐츠를 독립적으로 관리할 수 있습니다.<br><br>아래를 클릭하여 새 탭에서 이 모듈을 실행한 다음 이 안내서를 따르십시오."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
