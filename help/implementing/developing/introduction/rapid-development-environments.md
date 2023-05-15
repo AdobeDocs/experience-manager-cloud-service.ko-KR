@@ -1,13 +1,13 @@
 ---
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
-source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
+source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
 workflow-type: tm+mt
-source-wordcount: '3304'
+source-wordcount: '3325'
 ht-degree: 5%
 
 ---
-
 
 # 신속한 개발 환경 {#rapid-development-environments}
 
@@ -451,6 +451,8 @@ RDE를 재설정하면 모든 컨텐츠가 제거되므로, 원하는 경우 컨
 
 1. /apps 아래의 install.rde 폴더에 샘플 컨텐츠를 git에 넣고 커밋한 다음 명령줄 도구 를 사용하여 중요한 컨텐츠 패키지를 RDE에 동기화합니다.
 
+1. 를 사용하십시오 [컨텐츠 복사 도구](/help/implementing/developing/tools/content-copy.md) 를 사용하여 prod, stage, dev 환경 또는 다른 RDE에서 정의된 컨텐츠 세트를 복사합니다.
+
 1. 패키지 관리자 사용
 
 컨텐츠 패키지를 동기화할 때는 1GB로 제한됩니다.
@@ -499,4 +501,3 @@ Forms 개발자는 AEM Forms Cloud Service Rapid Development Environment를 사�
 ## RDE 자습서
 
 AEM as a Cloud Service의 RDE에 대해 알아보려면 [설정 방법, 사용 방법 및 개발 주기를 보여주는 비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
-
