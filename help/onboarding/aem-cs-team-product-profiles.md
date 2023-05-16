@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 팀 및 제품 프로필
 description: AEM as a Cloud Service 팀 및 제품 프로필이 라이선스가 부여된 Adobe 솔루션에 대한 액세스 권한을 부여하고 제한하는 방법을 알아봅니다.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 78%
+source-wordcount: '778'
+ht-degree: 75%
 
 ---
 
@@ -34,6 +34,10 @@ AEM as a Cloud Service 팀원은 온보딩 중에 Admin Console을 통해 다음
 >AEM as a Cloud Service 제품 프로필에 할당된 모든 사용자는 **Cloud Manager 사용자** 역할.
 >
 >만 사용하는 사용자 **Cloud Manager 사용자** 역할은 Cloud Manager에 로그인하고, AEM 작성 환경(있는 경우)으로 이동하여 **프로그램** 메뉴 옵션. 다음 **Cloud Manager 사용자** 역할이 프로그램 세부 정보에 액세스할 수 없습니다. 이러한 액세스가 필요한 경우, 사용자는 시스템 관리자가 추가 역할을 부여해야 합니다.
+
+>[!WARNING]
+>
+>다음 **AEM 관리자** 제품 프로필 이름은 변경할 수 없습니다. 이름 변경 **AEM 관리자** 제품 프로필은 해당 프로필에 할당된 모든 사용자의 관리자 권한을 제거합니다.
 
 >[!TIP]
 >
