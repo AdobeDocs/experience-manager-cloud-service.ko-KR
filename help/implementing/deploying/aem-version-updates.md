@@ -3,7 +3,7 @@ title: AEM 버전 업데이트
 description: AEM as a Cloud Service에서 CI/CD(Continuous Integration and Delivery)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 59bc2b5af22ef23775195f098517cec40d98d66b
+source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 23%
@@ -51,6 +51,6 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 
 대부분의 경우 업데이트는 노드 클러스터인 작성 인스턴스를 포함하여 다운타임 없이 발생합니다. 다음 이유로 인해 롤링 업데이트가 가능합니다 [oak의 복합 노드 저장소 기능.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 구름 속에서 [청록 배포,](/help/implementing/deploying/overview.md#index-management-using-blue-green-deployments) 새로운 녹색 AEM 버전에는 자체 버전이 포함되어 있습니다 `/libs` (TarMK 기반 가변 저장소), 이전 파란색 AEM 버전과 구별되는 저장소이지만, 두 리포지토리는 다음과 같은 영역을 포함하는 공유 DocumentMK 기반 가변 저장소를 참조합니다 `/content` , `/conf` , `/etc` 기타
+이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 구름 속에서 [청록 배포,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 새로운 녹색 AEM 버전에는 자체 버전이 포함되어 있습니다 `/libs` (TarMK 기반 가변 저장소), 이전 파란색 AEM 버전과 구별되는 저장소이지만, 두 리포지토리는 다음과 같은 영역을 포함하는 공유 DocumentMK 기반 가변 저장소를 참조합니다 `/content` , `/conf` , `/etc` 기타
 
 왜냐하면 파란색과 녹색이 모두 그들만의 버전을 가지고 있기 때문이죠 `/libs`를 채울 수 있습니다. 둘 다 롤링 업데이트 중에 활성화될 수 있으며, 파란색이 완전히 녹색으로 대체될 때까지 트래픽을 사용합니다.
