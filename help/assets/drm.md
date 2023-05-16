@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 4%
+source-wordcount: '1367'
+ht-degree: 5%
 
 ---
 
 # 디지털 자산에 대한 Digital Rights Management {#digital-rights-management-in-assets}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM as a Cloud Service | 이 문서 |
 
 디지털 자산은 종종 사용 약관 및 기간을 지정하는 라이선스와 연결됩니다. 사용 [!DNL Experience Manager] platform을 사용하면 자산 만료 정보 및 라이선스 정보를 효율적으로 관리할 수 있습니다.
 
@@ -154,13 +159,13 @@ DRM 기능은 라이선스 자산을 [!DNL Assets].
 
 * [에셋 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [자산 지원 파일 형식](file-format-support.md)
+* [에셋이 지원되는 파일 형식](file-format-support.md)
 * [에셋 검색](search-assets.md)
-* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [연결된 에셋](use-assets-across-connected-assets-instances.md)
 * [에셋 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
 * [에셋 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
-* [벌크 메타데이터 가져오기](metadata-import-export.md)
+* [일괄 메타데이터 가져오기](metadata-import-export.md)

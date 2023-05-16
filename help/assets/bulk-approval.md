@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 24%
+source-wordcount: '845'
+ht-degree: 25%
 
 ---
 
 # 폴더 및 컬렉션의 자산 검토 {#review-folder-assets-and-collections}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
+| AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager Assets를 사용하여 폴더 또는 컬렉션에 있는 자산에 대한 임시 검토 워크플로우를 설정할 수 있습니다. 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받을 수 있습니다. 검토 워크플로우를 프로젝트에 연결하거나 독립적인 검토 작업을 만들 수 있습니다.
 
@@ -113,13 +118,13 @@ Adobe Experience Manager Assets를 사용하여 폴더 또는 컬렉션에 있�
 
 * [에셋 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [자산 지원 파일 형식](file-format-support.md)
+* [에셋이 지원되는 파일 형식](file-format-support.md)
 * [에셋 검색](search-assets.md)
-* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [연결된 에셋](use-assets-across-connected-assets-instances.md)
 * [에셋 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
 * [에셋 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
-* [벌크 메타데이터 가져오기](metadata-import-export.md)
+* [일괄 메타데이터 가져오기](metadata-import-export.md)

@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 4%
+source-wordcount: '507'
+ht-degree: 7%
 
 ---
 
 # Adobe InDesign에 대한 배치 전용 표현물 생성 {#fpo-renditions}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en) |
+| AEM as a Cloud Service | 이 문서 |
 
 Experience Manager에서 Adobe InDesign 문서로 대규모 자산을 배치하는 경우 크리에이티브 전문가가 해당 자산이 끝나면 상당한 시간을 기다려야 합니다 [자산 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html). 한편 InDesign 사용이 차단되었습니다. 따라서 크리에이티브 플로우가 중단되고 사용자 경험에 부정적인 영향을 줍니다. Adobe을 사용하면 InDesign 문서에 작은 크기의 렌디션을 일시적으로 배치할 수 있습니다. 최종 출력이 필요한 경우(예: 인쇄 및 게시 워크플로우) 원래 전체 해상도 자산은 임시 변환을 백그라운드로 대체합니다. 백그라운드에서 이러한 비동기 업데이트를 통해 디자인 프로세스의 속도를 높여 생산성을 높이고 크리에이티브 프로세스를 방해하지 않습니다.
 
@@ -61,13 +66,13 @@ FPO 변환을 생성하려면 다음을 생성합니다 **[!UICONTROL 처리 프
 
 * [에셋 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [자산 지원 파일 형식](file-format-support.md)
+* [에셋이 지원되는 파일 형식](file-format-support.md)
 * [에셋 검색](search-assets.md)
-* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [연결된 에셋](use-assets-across-connected-assets-instances.md)
 * [에셋 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
 * [에셋 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
-* [벌크 메타데이터 가져오기](metadata-import-export.md)
+* [일괄 메타데이터 가져오기](metadata-import-export.md)

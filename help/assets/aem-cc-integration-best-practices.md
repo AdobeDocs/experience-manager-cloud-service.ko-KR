@@ -6,14 +6,19 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '3473'
-ht-degree: 15%
+source-wordcount: '3495'
+ht-degree: 16%
 
 ---
 
 # Adobe Experience Manager 및 Creative Cloud 통합 우수 사례 {#aem-and-creative-cloud-integration-best-practices}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html?lang=ko) |
+| AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager Assets는 DAM 사용자가 크리에이티브 팀과 함께 작업할 수 있도록 Adobe Creative Cloud과 통합하여 컨텐츠 작성 프로세스에서 간소화된 공동 작업을 수행할 수 있도록 해주는 DAM(디지털 자산 관리) 솔루션입니다.
 
@@ -233,13 +238,13 @@ Experience Manager 데스크탑 앱을 사용하여 Experience Manager Assets의
 
 * [에셋 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [자산 지원 파일 형식](file-format-support.md)
+* [에셋이 지원되는 파일 형식](file-format-support.md)
 * [에셋 검색](search-assets.md)
-* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [연결된 에셋](use-assets-across-connected-assets-instances.md)
 * [에셋 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
 * [에셋 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
-* [벌크 메타데이터 가져오기](metadata-import-export.md)
+* [일괄 메타데이터 가져오기](metadata-import-export.md)

@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 18%
+source-wordcount: '2530'
+ht-degree: 19%
 
 ---
 
-# Brand Portal로 Experience Manager Assets를 클라우드 서비스로 구성 {#configure-aem-assets-with-brand-portal}
+# Brand Portal로 Experience Manager Assets 구성 {#configure-aem-assets-with-brand-portal}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=ko) |
+| AEM as a Cloud Service | 이 문서 |
 
 Adobe Experience Manager Assets Brand Portal을 구성하면 Adobe Experience Manager Assets에서 승인된 브랜드 자산을 [!DNL Cloud Service] 인스턴스를 Brand Portal에 배포하고 Brand Portal 사용자에게 배포합니다.
 
@@ -147,7 +152,7 @@ Experience Manager Assets as a [!DNL Cloud Service] 인스턴스 및 Brand Porta
 
 이제 Experience Manager Assets에서 Brand Portal으로 자산을 게시하여 로그를 보도록 하겠습니다.
 
-1. 에 표시된 대로 절차(1에서 4 사이)를 수행합니다. **연결 테스트** 섹션을 탐색하고 분배 에이전트 페이지로 이동합니다.
+1. 에 표시된 대로 절차(1에서 4 사이)를 수행합니다. **연결 테스트** 섹션을 검색하고 분배 에이전트 페이지로 이동합니다.
 1. 클릭 **[!UICONTROL 로그]** 를 눌러 처리 및 오류 로그를 확인합니다.
 
    ![](assets/test-bpconfig5.png)
@@ -529,13 +534,13 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 
 * [에셋 번역](translate-assets.md)
 * [Assets HTTP API](mac-api-assets.md)
-* [자산 지원 파일 형식](file-format-support.md)
+* [에셋이 지원되는 파일 형식](file-format-support.md)
 * [에셋 검색](search-assets.md)
-* [연결된 자산](use-assets-across-connected-assets-instances.md)
+* [연결된 에셋](use-assets-across-connected-assets-instances.md)
 * [에셋 보고서](asset-reports.md)
 * [메타데이터 스키마](metadata-schemas.md)
 * [에셋 다운로드](download-assets-from-aem.md)
 * [메타데이터 관리](manage-metadata.md)
 * [검색 패싯](search-facets.md)
 * [컬렉션 관리](manage-collections.md)
-* [벌크 메타데이터 가져오기](metadata-import-export.md)
+* [일괄 메타데이터 가져오기](metadata-import-export.md)

@@ -3,10 +3,10 @@ title: Assets HTTP API의 Adobe Experience Manager as a Cloud Service 컨텐츠 
 description: AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 2%
+source-wordcount: '1783'
+ht-degree: 18%
 
 ---
 
@@ -14,24 +14,29 @@ ht-degree: 2%
 
 ## 개요 {#overview}
 
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=en) |
+| AEM as a Cloud Service | 이 문서 |
+
 AEM 헤드리스 게재 기능의 중요한 부분인 Assets HTTP API의 컨텐츠 조각에 대한 지원에 대해 알아봅니다.
 
 >[!NOTE]
 >
 >다음 [자산 HTTP API](/help/assets/mac-api-assets.md) 는 다음을 포함합니다.
 >
->* 자산 REST API
->* 컨텐츠 조각에 대한 지원 포함
+>* Assets REST API
+>* 콘텐츠 조각의 지원 포함
 >
 >자산 HTTP API의 현재 구현은 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 건축 스타일.
 
 다음 [자산 REST API](/help/assets/mac-api-assets.md) Adobe Experience Manager as a Cloud Service 개발자는 CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 컨텐츠(AEM에 저장됨)에 액세스할 수 있습니다.
 
-API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Cloud Service을 헤드리스 CMS(Content Management System)로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다.
+API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 Adobe Experience Manager as a Cloud Service을 헤드리스 CMS(Content Management System)로 운영할 수 있습니다. 아니면 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 다른 애플리케이션입니다.
 
 예, [단일 페이지 애플리케이션(SPA)](/help/implementing/developing/hybrid/introduction.md), 프레임워크 기반 또는 사용자 지정 환경에서는 HTTP API를 통해 제공되는 컨텐츠(일반적으로 JSON 형식)가 필요합니다.
 
-While [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 이 용도로 필요한 읽기 작업을 제공할 수 있고 사용자 지정할 수 있는 매우 포괄적이고 유연한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
+While [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 는 이 용도로 필요한 읽기 작업을 제공할 수 있고 사용자 지정할 수 있는 매우 포괄적이고 유연한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 먼저 포함할 필요 없이 자산(예: 이미지 및 컨텐츠 조각)에 직접 액세스하여 직렬화된 JSON 형식으로 콘텐츠를 제공할 수 있습니다.
 
@@ -49,7 +54,7 @@ Assets REST API를 사용하면 기존 자산, 컨텐츠 조각 및 폴더를 �
 
 ## 사전 요구 사항 {#prerequisites}
 
-Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전을 바로 설치할 때마다 사용할 수 있습니다.
+Assets REST API는 기본적으로 제공되는 최신 Adobe Experience Manager as a Cloud Service 버전 설치에서 사용할 수 있습니다.
 
 ## 주요 개념 {#key-concepts}
 
@@ -57,30 +62,30 @@ Assets REST API는 최신 Adobe Experience Manager as a Cloud Service 버전을 
 
 이 템플릿은 를 사용합니다 `/api/assets` 엔드포인트 및에 액세스할 자산의 경로가 필요합니다(선행 없이). `/content/dam`).
 
-* 즉, 다음 위치에서 자산에 액세스합니다.
+* 즉, 다음 위치에서 에셋에 액세스할 수 있습니다.
    * `/content/dam/path/to/asset`
 * 다음을 요청해야 합니다.
    * `/api/assets/path/to/asset`
 
-예를 들어, `/content/dam/wknd/en/adventures/cycling-tuscany`, 요청 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+예를 들어 `/content/dam/wknd/en/adventures/cycling-tuscany`에 액세스하기 위해 `/api/assets/wknd/en/adventures/cycling-tuscany.json`을 요청합니다.
 
 >[!NOTE]
->액세스 권한:
+>다음을 통한 액세스:
 >
->* `/api/assets` **포함하지 않음** 의 사용 필요 `.model` 선택기.
->* `/content/path/to/page` **does** 를 사용하려면 `.model` 선택기.
+>* `/api/assets`는 `.model` 선택기 사용이 필요하지 **않습니다**.
+>* `/content/path/to/page`는 `.model` 선택기 사용이 필요&#x200B;**합니다**.
 
 
 HTTP 메서드는 실행할 작업을 결정합니다.
 
-* **GET** - 자산 또는 폴더의 JSON 표현을 검색하려면
-* **POST** - 새 자산 또는 폴더를 만들려면
-* **PUT** - 자산 또는 폴더의 속성을 업데이트하려면
-* **DELETE** - 자산 또는 폴더를 삭제하려면
+* **GET** - 에셋 또는 폴더의 JSON 표현식 검색
+* **POST** - 새 에셋 또는 폴더 만들기
+* **PUT** - 에셋 또는 폴더의 속성 업데이트
+* **DELETE** - 에셋 또는 폴더 삭제
 
 >[!NOTE]
 >
->요청 본문 및/또는 URL 매개 변수를 사용하여 이러한 작업 중 일부를 구성할 수 있습니다. 예를 들어, 폴더 또는 자산을 **POST** 요청.
+>요청 본문 및/또는 URL 매개변수를 사용하여 해당 작업 중 일부를 구성할 수 있습니다(예: **POST** 요청에 의해 폴더 또는 에셋이 생성될 수 있도록 정의).
 
 지원되는 요청의 정확한 형식은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) 설명서.
 
@@ -96,7 +101,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
  <thead>
   <tr>
    <td>Aspect</td>
-   <td>자산 REST API<br/> </td>
+   <td>Assets REST API<br/> </td>
    <td>AEM 구성 요소<br/> (Sling 모델을 사용한 구성 요소)</td>
   </tr>
  </thead>
@@ -146,7 +151,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 >자세한 내용은 다음을 참조하십시오.
 >
 >* [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [비디오 - AEM을 사용한 CORS용 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [비디오 - AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)에서 CORS용 개발
 >
 
 
@@ -204,7 +209,7 @@ Assets REST API는 폴더의 속성에 대한 액세스 권한을 노출합니�
 >
 >하위 자산 및 폴더의 자산 유형에 따라 하위 엔티티 목록에 이미 각 하위 엔티티를 정의하는 전체 속성 세트가 포함될 수 있습니다. 또는 이 자식 엔티티 목록에서 엔티티에 대해 축소된 속성 집합만 노출될 수 있습니다.
 
-### 에셋 {#assets}
+### Assets {#assets}
 
 자산이 요청되면 응답은 해당 메타데이터를 반환합니다. 제목, 이름 및 각 자산 스키마에 의해 정의된 기타 정보와 같은 정보를 제공합니다.
 
@@ -239,22 +244,22 @@ A [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 ## 사용 {#using}
 
-사용법은 특정 사용 사례와 함께 AEM 작성자 또는 게시 환경을 사용하는지에 따라 다를 수 있습니다.
+사용량은 특정 사용 사례와 함께 AEM 작성자 또는 게시 환경 사용 여부에 따라 다를 수 있습니다.
 
 * 작성은 작성자 인스턴스([현재 이 API를 사용하여 게시할 조각을 복제할 방법이 없습니다](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
-* AEM은 요청된 컨텐츠를 JSON 형식으로만 제공하므로 두 방법 모두에서 게재가 가능합니다.
+* AEM은 JSON 형식으로만 요청된 콘텐츠를 제공하므로 모두에서 게재할 수 있습니다.
 
-   * AEM 작성자 인스턴스에서 저장 및 전달하면 방화벽 뒤에서 미디어 라이브러리 응용 프로그램이 충분해야 합니다.
+   * AEM 작성자 인스턴스 저장 및 게재는 방화벽 뒤 미디어 라이브러리 애플리케이션에 충분할 수 있습니다.
 
-   * 라이브 웹 전달을 위해 AEM 게시 인스턴스가 권장됩니다.
+   * 라이브 웹 게재의 경우 AEM 게시 인스턴스가 권장됩니다.
 
 >[!CAUTION]
 >
->AEM 클라우드 인스턴스의 Dispatcher 구성은에 대한 액세스를 차단할 수 있습니다 `/api`.
+>AEM 클라우드 인스턴스의 Dispatcher 구성은 `/api`에 대한 액세스를 차단할 수 있습니다.
 
 >[!NOTE]
 >
->자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 특히, [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>자세한 내용은 [API 참조](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ## 제한 사항 {#limitations}
 
@@ -337,7 +342,7 @@ A [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 자세한 API 참조는 다음을 참조하십시오.
 
-* [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 콘텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
