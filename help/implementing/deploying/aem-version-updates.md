@@ -1,25 +1,27 @@
 ---
 title: AEM 버전 업데이트
-description: AEM 버전 업데이트
+description: AEM as a Cloud Service에서 CI/CD(Continuous Integration and Delivery)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
+source-git-commit: 58ad2e4dec1c55426846f16918b3de13846ac03d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '483'
+ht-degree: 23%
 
 ---
 
 
 # AEM 버전 업데이트 {#aem-version-updates}
 
-## 소개 {#introduction}
+AEM as a Cloud Service에서 CI/CD(Continuous Integration and Delivery)를 사용하여 프로젝트를 최신 버전으로 유지하는 방법을 알아봅니다.
 
-AEM as a Cloud Service는 이제 지속적인 통합 및 연속 제공(CI/CD)을 사용하여 프로젝트를 가장 최신 AEM 버전에서 작업할 수 있도록 해 줍니다. 즉, 프로덕션 및 스테이징 인스턴스는 사용자를 위한 서비스를 중단 없이 최신 AEM 버전으로 업데이트됩니다.
+## CI/CD {#ci-cd}
 
->[!NOTE]
->
->프로덕션 환경 업데이트에 실패하는 경우 Cloud Manager에서 자동으로 스테이징 환경을 롤백합니다. 이 작업은 업데이트가 완료된 후 스테이징 및 프로덕션 환경이 동일한 AEM 버전에 있도록 자동으로 수행됩니다.
+AEM as a Cloud Service은 CI/CD(지속적 통합 및 지속적 전달)를 사용하여 프로젝트가 최신 AEM 버전을 사용하고 있는지 확인합니다. 이는 프러덕션 및 스테이징 인스턴스가 사용자에 대한 서비스 중단 없이 최신 AEM 버전으로 업데이트된다는 것을 뜻합니다.
+
+버전 업데이트는 프로덕션 및 스테이징 인스턴스에만 자동으로 적용됩니다. [AEM 업데이트는 다른 모든 인스턴스에 수동으로 적용해야 합니다.](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+
+## 업데이트 유형 {#update-types}
 
 AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다.
 
@@ -31,11 +33,15 @@ AEM 버전 업데이트에는 다음과 같은 두 가지 유형이 있습니다
 
 * **새로운 기능 업데이트**
 
-   * 예측 가능한 월별 일정을 통해 릴리스됩니다.
+   * 에서 릴리스 [예측 가능한 월별 일정.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ko-KR)
+
+## 업데이트 실패 {#update-failure}
 
 AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동화된 제품 유효성 검사 파이프라인을 통해 실행되므로 운영 중인 시스템에 대한 서비스 중단을 방지할 수 있습니다. 상태 검사는 응용 프로그램의 상태를 모니터링하는 데 사용됩니다. AEM as a Cloud Service 업데이트 중에 이러한 확인이 실패하면 릴리스가 진행되지 않으며 Adobe에서 업데이트로 인해 이 예기치 않은 동작이 발생한 이유를 조사합니다.
 
 [제품 테스트 및 고객 기능 테스트,](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) 또한 AEM 버전 업데이트 중에 제품 업그레이드 및 고객 코드 푸시가 프로덕션 시스템을 통과하지 못하도록 하는 유효성 검사도 수행됩니다.
+
+프로덕션 환경 업데이트에 실패하는 경우 Cloud Manager에서 자동으로 스테이징 환경을 롤백합니다. 이 작업은 업데이트가 완료된 후 스테이징 및 프로덕션 환경이 동일한 AEM 버전에 있도록 자동으로 수행됩니다.
 
 >[!NOTE]
 >
@@ -43,6 +49,8 @@ AEM 업데이트는 여러 단계를 포함하는 강력하고 완전히 자동�
 
 ## 복합 노드 저장소 {#composite-node-store}
 
-대부분의 경우 업데이트는 노드 클러스터인 작성 인스턴스를 포함하여 다운타임 없이 발생합니다. Oak의 복합 노드 저장소 기능으로 인해 롤링 업데이트가 가능합니다.
+대부분의 경우 업데이트는 노드 클러스터인 작성 인스턴스를 포함하여 다운타임 없이 발생합니다. 다음 이유로 인해 롤링 업데이트가 가능합니다 [oak의 복합 노드 저장소 기능.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 롤링 배포에서 새 녹색 AEM 버전에는 자체 버전이 포함되어 있습니다 `/libs` (TarMK 기반 가변 저장소), 이전 파란색 AEM 버전과 구별되는 저장소이지만, 두 리포지토리는 다음과 같은 영역을 포함하는 공유 DocumentMK 기반 가변 저장소를 참조합니다 `/content` , `/conf` , `/etc` 기타 왜냐하면 파란색과 녹색이 모두 그들만의 버전을 가지고 있기 때문이죠 `/libs`를 채울 수 있습니다. 둘 다 롤링 업데이트 중에 활성화될 수 있으며, 파란색이 완전히 녹색으로 대체될 때까지 트래픽을 사용합니다.
+이 기능을 사용하면 AEM에서 여러 저장소를 동시에 참조할 수 있습니다. 구름 속에서 [청록 배포,](/help/operations/indexing.md#what-is-blue-green-deployment) 새로운 녹색 AEM 버전에는 자체 버전이 포함되어 있습니다 `/libs` (TarMK 기반 가변 저장소), 이전 파란색 AEM 버전과 구별되는 저장소이지만, 두 리포지토리는 다음과 같은 영역을 포함하는 공유 DocumentMK 기반 가변 저장소를 참조합니다 `/content` , `/conf` , `/etc` 기타
+
+왜냐하면 파란색과 녹색이 모두 그들만의 버전을 가지고 있기 때문이죠 `/libs`를 채울 수 있습니다. 둘 다 롤링 업데이트 중에 활성화될 수 있으며, 파란색이 완전히 녹색으로 대체될 때까지 트래픽을 사용합니다.
