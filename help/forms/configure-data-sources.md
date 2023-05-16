@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
+source-git-commit: 8d1a19f62d58bc9087991fb861adc6e8205e92d2
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 * SalesForce
 * Microsoft® Azure Blob 저장 공간
 
-데이터 통합은 OAuth2.0, 기본 인증 및 API 키 인증 유형을 즉시 지원하며, 웹 서비스에 액세스하기 위한 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP 기반 및 OData 서비스는 [!DNL Experience Manager] as a Cloud Service, 관계형 데이터베이스용 JDBC 및 커넥터용 [!DNL Experience Manager] 사용자 프로필은 [!DNL Experience Manager] 웹 콘솔.
+데이터 통합은 OAuth2.0을 지원합니다<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, 기본 인증 및 API 키 인증 유형 을 기본적으로 제공하며, 웹 서비스에 액세스하기 위한 사용자 지정 인증을 구현할 수 있습니다. RESTful, SOAP 기반 및 OData 서비스는 [!DNL Experience Manager] as a Cloud Service, 관계형 데이터베이스용 JDBC 및 커넥터용 [!DNL Experience Manager] 사용자 프로필은 [!DNL Experience Manager] 웹 콘솔.
 
 ## 관계형 데이터베이스 구성 {#configure-relational-database}
 
@@ -135,7 +135,7 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
       * 호스트: REST API를 제공하는 호스트의 도메인 이름 또는 IP 주소입니다. 필수 필드입니다.
       * 기본 경로: 모든 API 경로의 URL 접두사입니다. 선택적 필드입니다.\
          필요한 경우 이러한 필드에 대해 미리 채워진 값을 편집합니다.
-   * 인증 유형(없음, OAuth2.0, 기본 인증, API 키 또는 사용자 지정 인증)을 선택하여 RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
+   * 인증 유형(없음, OAuth2.0)을 선택합니다<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, 기본 인증, API 키 또는 사용자 지정 인증 — RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
 
    선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키의 값을 지정합니다. API 키는 요청 헤더로 또는 쿼리 매개 변수로 보낼 수 있습니다. 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록에서 헤더 또는 쿼리 매개 변수의 이름을 지정합니다 **[!UICONTROL 매개 변수 이름]** 그에 따라 필드가 표시됩니다.
 
@@ -154,7 +154,7 @@ RESTful 웹 서비스는 [Swagger 사양](https://swagger.io/specification/v2/) 
 
    * 에서 URL 또는 파일 을 선택합니다 [!UICONTROL Swagger 소스] 드롭다운 및 그에 따라 [!DNL Swagger 3.0 URL] 변환 후[!DNL  Swagger] 정의 파일 또는 업로드 [!DNL Swagger] 파일을 로컬 파일 시스템에서 가져옵니다.
    * 기준[!DNL  Swagger] 소스 입력 시 대상 서버와의 연결 정보가 표시됩니다.
-   * 인증 유형(없음, OAuth2.0, 기본 인증, API 키 또는 사용자 지정 인증)을 선택하여 RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
+   * 인증 유형(없음, OAuth2.0)을 선택합니다<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, 기본 인증, API 키 또는 사용자 지정 인증 — RESTful 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
 
    선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키의 값을 지정합니다. API 키는 요청 헤더로 또는 쿼리 매개 변수로 보낼 수 있습니다. 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록에서 헤더 또는 쿼리 매개 변수의 이름을 지정합니다 **[!UICONTROL 매개 변수 이름]** 그에 따라 필드가 표시됩니다.
 
@@ -230,7 +230,7 @@ SOAP 기반 웹 서비스는 [WSDL(웹 서비스 설명 언어) 사양](https://
 
    * 웹 서비스의 WSDL URL입니다.
    * 서비스 엔드포인트. WSDL에 언급된 서비스 끝점을 무시하려면 이 필드에 값을 지정하십시오.
-   * 인증 유형(없음, OAuth2.0, 기본 인증 또는 사용자 지정 인증)을 선택하여 SOAP 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
+   * 인증 유형(없음, OAuth2.0)을 선택합니다<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, 기본 인증 또는 사용자 지정 인증 — SOAP 서비스에 액세스하고 그에 따라 인증에 대한 세부 사항을 제공합니다.
 
       <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
       <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
@@ -272,7 +272,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. 에서 OData 서비�
 1. OData 서비스에 대해 다음 세부 정보를 지정합니다.
 
    * 구성할 OData 서비스의 서비스 루트 URL입니다.
-   * 인증 유형(없음, OAuth2.0, 기본 인증, API 키 또는 사용자 지정 인증)을 선택하여 OData 서비스에 액세스하고 그에 따라 인증 세부 사항을 제공합니다.
+   * 인증 유형(없음, OAuth2.0)을 선택합니다<!--([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/))-->, 기본 인증, API 키 또는 사용자 지정 인증 — OData 서비스에 액세스하고 그에 따라 인증에 대한 세부 정보를 제공합니다.
 
    선택하는 경우 **[!UICONTROL API 키]** 인증 유형으로 API 키의 값을 지정합니다. API 키는 요청 헤더로 또는 쿼리 매개 변수로 보낼 수 있습니다. 다음 옵션 중 하나를 선택합니다 **[!UICONTROL 위치]** 드롭다운 목록에서 헤더 또는 쿼리 매개 변수의 이름을 지정합니다 **[!UICONTROL 매개 변수 이름]** 그에 따라 필드가 표시됩니다.
 

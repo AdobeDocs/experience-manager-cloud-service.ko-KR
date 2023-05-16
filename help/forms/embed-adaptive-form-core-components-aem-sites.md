@@ -5,9 +5,10 @@ description: AEM Sites 페이지에서 적응형 양식(핵심 구성 요소)을
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
+source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2207'
 ht-degree: 2%
 
 ---
@@ -22,22 +23,16 @@ AEM Sites 페이지에 적응형 Forms을 원활하게 작성 또는 포함하�
 
 * **양식 구성 요소를 적응형 Forms 컨테이너 구성 요소로 끌어다 놓아 적응형 양식 만들기**: 를 사용하십시오 [적응형 Forms 컨테이너](#af-container-component) 구성 요소를 사용하여 적응형 양식을 호스팅하는 웹 페이지 내에 공백을 만들 수 있습니다. 이 스페이스에서 적응형 양식 구성 요소를 끌어다 놓아 양식을 만들 수 있습니다. 예를 들어 다음 비디오를 참조하여 적응형 양식을 만드는 방법을 알아보십시오 [!UICONTROL 적응형 Forms 컨테이너] 구성 요소:
 
->[!VIDEO](/help/forms/assets/formcreationbyadaptiveformcontainer.mp4)
-
 다음 [적응형 양식 컨테이너](#af-container-component) 구성 요소를 사용하면 AEM Sites 편집기 내에서 바로 적응형 Forms 구성 요소를 활용하여 디지털 등록 경험을 구축할 수 있습니다. 이 통합은 AEM Sites 페이지 내에서 양식을 만들고 관리하려는 AEM Sites 작성자에게 원활한 경험을 제공합니다.
 
-* **기존 적응형 양식 포함**: 다음 [적응형 Forms - 포함](#embed-existing-af) 구성 요소를 사용하면 기존 적응형 양식을 AEM Sites 내의 페이지에 쉽게 통합할 수 있습니다. 예를 들어 [!UICONTROL 적응형 Forms - 포함] 다음 비디오에 표시된 대로 사이트 페이지의 구성 요소:
-
->[!VIDEO](/help/forms/assets/embednewform_embed.mp4)
+* **기존 적응형 양식 포함**: 다음 [적응형 Forms - 포함(V2)](#embed-existing-af) 구성 요소를 사용하면 기존 적응형 양식을 AEM Sites 내의 페이지에 쉽게 통합할 수 있습니다. 예를 들어 [!UICONTROL 적응형 Forms - 포함] 다음 비디오에 표시된 대로 사이트 페이지의 구성 요소:
 
 이 기능은 적응형 Forms의 적응성 및 재사용을 개선합니다. 이 통합을 통해 고객은 이미 만든 적응형 Forms을 편리하게 재사용할 수 있습니다.
 
 * **적응형 Forms 마법사를 사용하여 양식 만들기**:
 
-   를 사용하십시오 [적응형 Forms - 포함](#embed-new-af) 구성 요소를 사용하여 양식 만들기 마법사를 사용하여 AEM Sites 편집기 내에서 적응형 양식을 만들 수 있습니다. 양식이 외부 엔티티로 저장됩니다. 이 양식은 다른 사이트 페이지와 독립 실행형 양식에서 다시 사용할 수도 있습니다.
+   를 사용하십시오 [적응형 Forms - 포함(v2)](#embed-new-af) 구성 요소를 사용하여 양식 만들기 마법사를 사용하여 AEM Sites 편집기 내에서 적응형 양식을 만들 수 있습니다. 양식이 외부 엔티티로 저장됩니다. 이 양식은 다른 사이트 페이지와 독립 실행형 양식에서 다시 사용할 수도 있습니다.
 예를 들어 아래 비디오를 참조하여 을 사용하여 새로 만든 적응형 양식을 만들고 포함하는 방법을 알아보십시오 [!UICONTROL 적응형 Forms - 포함] 구성 요소를 생성하지 않습니다.
-
->[!VIDEO](/help/forms/assets/createnewform_embed.mp4)
 
 ### 고려 사항 {#considerations}
 
@@ -52,11 +47,12 @@ AEM Sites 페이지에 적응형 Forms을 원활하게 작성 또는 포함하�
 +++ 활성화 **[!UICONTROL 적응형 Forms 컨테이너]** 관련 템플릿의 정책에 있는 구성 요소입니다.
 
 활성화하려면 [!UICONTROL 적응형 Forms 컨테이너] 템플릿 정책에서 구성 요소를 수행하려면 다음 단계를 수행하십시오.
-1. 로 이동합니다. [!UICONTROL 페이지 정보] > [!UICONTROL 템플릿 편집]
-1. 을(를) 클릭합니다. [!UICONTROL 정책] 을(를) 선택하고 을(를) 선택합니다. **핵심 구성 요소 예 - 적응형 양식** 확인란을 선택합니다.
-1. 클릭 [!UICONTROL 완료].
 
->[!VIDEO](/help/forms/assets/adaptiveformcontainer.mp4)
+1. 로 이동합니다. [!UICONTROL 페이지 정보] > [!UICONTROL 템플릿 편집]
+1. 을(를) 클릭합니다. [!UICONTROL 정책] 을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 적응형 Forms 컨테이너]**  아래에 있는 확인란 **[AEM Archetype 프로젝트 이름] - 적응형 양식**.
+1. 클릭 **[!UICONTROL 완료]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
 +++
 
@@ -104,7 +100,7 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 1. 적응형 Forms 구성 요소를 사용하여 적응형 양식을 만듭니다.
 1. 설정을 저장합니다.
 
->[!VIDEO](/help/forms/assets/af-container.mp4)
+>[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 양식을 준비했습니다. AEM Sites 페이지를 게시하면 적응형 양식 및 관련 참조된 자산을 자동으로 게시합니다.
 
@@ -148,9 +144,9 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 * **메시지 표시**
    * **메시지 콘텐츠**: 서식 있는 텍스트 편집기를 사용하여 메시지를 작성하여 양식 제출 시 표시할 수 있습니다. 이 옵션은 감사 메시지를 표시하도록 선택하는 경우에만 사용할 수 있습니다.
 
-## 기존 적응형 양식 포함  {#aem-container-component}
+## 적응형 양식 포함  {#aem-container-component}
 
-사용 **[!UICONTROL 적응형 Forms - 포함]** 구성 요소로 새 적응형 양식을 포함하거나 사이트의 페이지에 기존 적응형 양식을 포함할 수 있습니다. 다음 [!UICONTROL 적응형 Forms - 포함] 구성 요소로 다음을 수행할 수 있습니다.
+사용 **[!UICONTROL 적응형 Forms - 포함(V2)]** 구성 요소로 새 적응형 양식을 포함하거나 사이트의 페이지에 기존 적응형 양식을 포함할 수 있습니다. 다음 [!UICONTROL 적응형 Forms - 포함] 구성 요소로 다음을 수행할 수 있습니다.
 
 * [기존 적응형 양식 포함](#embed-new-af)
 
@@ -160,12 +156,14 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 
 +++ 를 활성화합니다 **적응형 Forms - 포함** 관련 템플릿의 정책에 있는 구성 요소입니다.
 
-활성화하려면 [!UICONTROL 적응형 Forms - 포함] 템플릿 정책에서 구성 요소를 수행하려면 다음 단계를 수행하십시오.
-1. 로 이동합니다. [!UICONTROL 페이지 정보] > [!UICONTROL 템플릿 편집]
-1. 을(를) 클릭합니다. [!UICONTROL 정책] 을(를) 선택하고 을(를) 선택합니다. **핵심 컨텐츠** 확인란을 선택합니다.
-1. 클릭 [!UICONTROL 완료].
+활성화하려면 [!UICONTROL 적응형 Forms - 포함(v2)] 템플릿 정책에서 구성 요소를 수행하려면 다음 단계를 수행하십시오.
 
->[!VIDEO](/help/forms/assets/enableadaptiveform-embedtemplate.mp4)
+1. 로 이동합니다. [!UICONTROL 페이지 정보] > [!UICONTROL 템플릿 편집]
+
+1. 을(를) 클릭합니다. [!UICONTROL 정책] 을(를) 선택하고 을(를) 선택합니다. **[!UICONTROL 적응형 양식 - 포함(v2)]** 아래에 있는 확인란 **[!UICONTROL [AEM Archetype 프로젝트 이름] - Forms]** 그룹 을 사용하여 규칙 세트를 단순화하는 것을 고려하십시오.
+1. 클릭 **[!UICONTROL 완료]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
 +++
 
@@ -212,7 +210,7 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 ### 새 적응형 양식 포함 {#embed-new-af}
 
 1. 편집 모드에서 AEM Sites 페이지를 엽니다.
-1. 구성 요소 브라우저 패널에서 [!UICONTROL 적응형 Forms - 포함] 구성 요소를 생성하지 않습니다.
+1. 구성 요소 브라우저 패널에서 [!UICONTROL 적응형 Forms - 포함(v2)] 구성 요소를 생성하지 않습니다.
 1. 을(를) 클릭합니다. **플러스** 아이콘을 클릭하면 양식 만들기 마법사로 리디렉션됩니다.
 
    ![응용 Forms - 포함 구성 요소](/help/forms/assets/aemformcontainer.png)
@@ -220,6 +218,8 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 1. 에서 새 적응형 양식 만들기 [!UICONTROL 양식 만들기] 마법사
 1. 다음 [!UICONTROL 자산 경로] 이미 만든 적응형 양식의 경로가 포함되어 있습니다
 1. 설정을 저장합니다. 이제 적응형 양식이 페이지에 포함됩니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
 ### 기존 적응형 양식 포함 {#embed-existing-af}
 
@@ -229,9 +229,12 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 1. 에 포함할 적응형 양식을 찾아 선택합니다 [!UICONTROL 자산 경로].
 1. 설정을 저장합니다. 이제 적응형 양식이 페이지에 포함됩니다.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
 #### 적응형 양식 포함 속성 구성
 
-의 고급 설정을 사용자 지정할 수 있습니다 [!UICONTROL 적응형 양식 - 포함] 구성 요소. 에서 [!UICONTROL 적응형 Forms 편집 - 포함] 대화 상자에서 다음을 지정할 수 있습니다.
+의 고급 설정을 사용자 지정할 수 있습니다 [!UICONTROL 적응형 양식 - 포함(v2)] 구성 요소. 에서 [!UICONTROL 적응형 Forms 편집 - 포함(v2)] 대화 상자에서 다음을 지정할 수 있습니다.
+
 * **자산 경로**: 포함할 적응형 양식을 찾아 선택합니다. 자산 브라우저에서 삭제한 경우 자동으로 채워집니다.
 * **게시 제출** : 양식 제출 시 트리거할 작업을 선택합니다. 감사 메시지를 표시하거나 감사 인사 페이지를 표시하도록 선택할 수 있습니다.
    * **감사 메시지 표시**: 서식 있는 텍스트 편집기를 사용하여 메시지를 작성하여 양식 제출 시 표시할 수 있습니다. 이 옵션은 감사 메시지를 표시하도록 선택하는 경우에만 사용할 수 있습니다.
@@ -272,4 +275,3 @@ AEM Sites 페이지에 포함된 적응형 양식을 게시하기 위한 다음 
 ![AF 레이아웃 지원](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM 사이트 페이지는 적응형 양식에 대한 참조를 유지 관리합니다. AEM Sites 페이지를 번역하면 자동으로 적응형 양식 및 관련 참조된 자산을 [번역 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) 다른 언어로 변환해야 합니다.
-
