@@ -2,9 +2,9 @@
 title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
-workflow-type: ht
-source-wordcount: '2387'
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
+workflow-type: tm+mt
+source-wordcount: '2363'
 ht-degree: 100%
 
 ---
@@ -345,11 +345,3 @@ From the **Sites** console you can select several pages then use **View Properti
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
       * 필드가 다중 값(예: 태그)이면 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
    * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다.
-
->[!NOTE]
->
->벌크 편집에 사용할 수 있는 필드를 지정하도록 페이지 구성 요소를 구성할 수 있습니다. 자세한 내용은 페이지 속성의 벌크 편집을 위한 페이지 구성을 참조하십시오.
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
