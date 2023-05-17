@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 3aa753fb5cc5130ced7e9baafde63e8825394dce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Experience Cloud 전체에서 오른쪽 상단에 있는 벨 아이콘을 
 아래 단계에 따라 수신 알림을 구성합니다.
 
 1. [이 문서](/help/journey-onboarding/notification-profiles.md)에 설명된 대로 다음 제품 프로필을 만들고, 해당 프로필에 조직의 적절한 Adobe ID를 할당하기도 합니다. 이를 통해 관리자는 해당 알림을 수신하려는 사용자를 확인할 수 있습니다.
-1. 이전 단계에서 할당된 각 사용자는 알림을 수신하는 방법을 구성할 수 있습니다. 설정 [Experience Cloud 환경 설정 페이지](https://experience.adobe.com/preferences/notification-section), Experience Manager 구독이 활성화되어 있고, **운영 장애** 및 **사전 권장 사항** 확인란이 인앱 열과 이메일 열 모두에 대해 선택됩니다(아래 이미지 참조). 또한 이메일 섹션을 **즉시 알림**&#x200B;으로 설정하여 인시던트가 발생하면 알림을 수신하는 것이 좋습니다.
+1. 이전 단계에서 할당된 각 사용자는 알림을 수신하는 방법을 구성할 수 있습니다. [Experience Cloud 환경 설정](https://experience.adobe.com/preferences/notification-section) 페이지에서 Experience Manager 구독이 활성화되고, 인앱 및 이메일 열 모두에 대해 **운영 인시던트** 및 **사전 알림 추천** 확인란이 선택되어 있는지 확인합니다(아래 이미지 참조). 또한 이메일 섹션을 **즉시 알림**&#x200B;으로 설정하여 인시던트가 발생하면 알림을 수신하는 것이 좋습니다.
 
 ![구독 구성](/help/operations/assets/configure-subscriptions.png)
 
@@ -63,7 +63,7 @@ Adobe Experience Cloud 전체에서 오른쪽 상단에 있는 벨 아이콘을 
 
 ![지원에 문의 2](/help/operations/assets/contact-support2.png)
 
-모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 추가 설명을 추가할 수 있습니다.
+모든 지원 티켓과 마찬가지로 지원 티켓이 [Adobe Admin Console의 지원 사례 탭](https://helpx.adobe.com/kr/enterprise/using/support-for-enterprise.html)에 나타나며, 여기에서 지원 티켓을 추적하고 추가 설명을 추가할 수 있습니다.
 
 ![Admin Console 지원](/help/operations/assets/admin-console-support.png)
 
