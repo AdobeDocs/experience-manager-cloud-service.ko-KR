@@ -1,11 +1,11 @@
 ---
 title: 사용자 정의 코드 품질 규칙
-description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
+description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3508'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="사용자 정의 코드 품질 규칙"
->abstract="이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다."
+>abstract="이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다."
 
-이 페이지에서는 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)의 일부로 Cloud Manager에서 실행하는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Experience Manager Engineering의 모범 사례를 기반으로 합니다.
+이 페이지에서는 [코드 품질 테스트](/help/implementing/cloud-manager/code-quality-testing.md)의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 
 >[!NOTE]
 >
->Adobe 소유 정보로 인해 전체 SonarQube 규칙을 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) 규칙의 설명 및 예제를 보려면 이 문서를 계속 읽으십시오.
+>전체 SonarQube 규칙은 Adobe 독점 정보로 인해 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) 규칙에 대한 설명과 예를 보려면 이 문서를 계속 읽어 보십시오.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 99%
 
 ## SonarQube 규칙 {#sonarqube-rules}
 
-다음 섹션에서는 Cloud Manager에서 실행하는 SonarQube 규칙에 대해 자세히 설명합니다.
+다음 섹션에서는 Cloud Manager에서 실행되는 SonarQube 규칙에 대해 자세히 설명합니다.
 
 ### 잠재적으로 위험한 기능을 사용하지 않음 {#do-not-use-potentially-dangerous-functions}
 
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **심각도**: 심각
 * **이후**: 버전 2018.6.0
 
-Experience Manager 애플리케이션 내부에서 HTTP 요청을 실행할 때 불필요한 스레드 소비를 방지하기 위해 적절한 시간 초과가 구성되도록 하는 것이 중요합니다. 안타깝게도, Java™ 기본 HTTP 클라이언트(`java.net.HttpUrlConnection`)와 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트의 기본 비헤이비어는 시간 초과를 하지 않기 때문에 시간 초과를 명시적으로 설정해야 합니다. 또한 가장 좋은 방법은 이러한 시간 초과를 60초 이내로 설정하는 것입니다.
+Experience Manager 애플리케이션 내부에서 HTTP 요청을 실행할 때 불필요한 스레드 소비를 방지하기 위해 적절한 시간 초과가 구성되도록 하는 것이 중요합니다. Java™ 기본 HTTP 클라이언트(`java.net.HttpUrlConnection`)와 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트의 기본 비헤이비어는 시간 초과를 하지 않기 때문에 시간 초과를 명시적으로 설정해야 합니다. 또한 가장 좋은 방법은 이러한 시간 초과를 60초 이내로 설정하는 것입니다.
 
 #### 비준수 코드 {#non-compliant-code-2}
 
@@ -338,7 +338,7 @@ public void doGet() throws Exception {
 }
 ```
 
-### Logging 문의 첫 번째 매개 변수로 Exception.getMessage()를 사용하지 않음 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
+### Logging 문의 첫 번째 매개변수로 Exception.getMessage()를 사용하지 않음 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **키**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
 * **유형**: 코드 스멜
@@ -637,7 +637,7 @@ public class DontDoThis implements Page {
 * **심각도**: Blocker
 * **이후**: 2021.6.0
 
-Experience Manager Assets에서 에셋 검색이 올바르게 작동하려면 `damAssetLucene` Oak 인덱스의 사용자 정의가 이 인덱스와 관련된 일련의 지침을 따라야 합니다. 이 규칙은 인덱스 정의에 `visualSimilaritySearch` 값이 포함된 `tags`라는 다중 값 속성이 있어야 하는지 확인합니다.
+Experience Manager Assets에서 자산 검색이 올바르게 작동하려면 `damAssetLucene` Oak 인덱스의 사용자 정의가 이 인덱스와 관련된 일련의 지침을 따라야 합니다. 이 규칙은 인덱스 정의에 `visualSimilaritySearch` 값이 포함된 `tags`라는 다중 값 속성이 있어야 하는지 확인합니다.
 
 #### 비준수 코드 {#non-compliant-code-damAssetLucene}
 
@@ -842,7 +842,7 @@ Experience Manager 클라이언트 라이브러리에는 이미지 및 글꼴과
 * **심각도**: 주요
 * **이후**: 버전 2021.2.0
 
-Experience Manager as a Cloud Service에서의 에셋 처리를 위해 Asset 마이크로 서비스로 이동하면서, Experience Manager의 온프레미스 및 AMS 버전에서 사용되던 여러 워크플로 프로세스가 지원되지 않거나 불필요하게 되었습니다.
+Experience Manager as a Cloud Service에서의 자산 처리를 위해 Asset 마이크로 서비스로 이동하면서, Experience Manager의 온프레미스 및 AMS 버전에서 사용되던 여러 워크플로 프로세스가 지원되지 않거나 불필요하게 되었습니다.
 
 [Experience Manager as a Cloud Service Assets GitHub 저장소](https://github.com/adobe/aem-cloud-migration)에 있는 마이그레이션 도구를 사용하여 Experience Manager as a Cloud Service로 마이그레이션하는 동안 워크플로 모델을 업데이트할 수 있습니다.
 
