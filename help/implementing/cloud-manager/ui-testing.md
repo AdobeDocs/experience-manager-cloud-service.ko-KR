@@ -3,9 +3,9 @@ title: UI 테스트
 description: 사용자 정의 UI 테스트는 사용자 정의 애플리케이션에 대한 UI 테스트를 만들고 자동으로 실행할 수 있는 선택적 기능입니다.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2305'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 94%
 
 AEM은 사용자 정의 애플리케이션에 대한 원활한 업데이트를 보장하기 위해 통합된 [Cloud Manager 품질 게이트](/help/implementing/cloud-manager/custom-code-quality-rules.md) 제품군을 제공합니다 특히 IT 테스트 게이트는 이미 AEM API를 사용한 사용자 정의 테스트의 만들기 및 자동화를 지원합니다.
 
-UI 테스트는 Cypress.IO, Selenium, Java 및 Maven 및 Javascript와 같은 다양한 언어 및 프레임워크(예: Cypress.IO, Selenium, Java 및 Javascript)에서 사용할 수 있도록 Docker 이미지에 패키지화되어 있습니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
+UI 테스트는 언어 및 프레임워크(예: Cypress.IO, Selenium, Java 및 Maven, Javascript)에서 다양한 선택을 허용하도록 도커 이미지에 패키징되어 있습니다. 또한 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 사용하여 UI 테스트 프로젝트를 쉽게 생성할 수 있습니다.
 
-Adobe은 실시간 재로드 및 자동 대기 기능을 제공하므로 Cypress.IO를 사용하도록 권장하여 테스트 시간을 절약하고 생산성을 향상시킬 수 있습니다. 또한 Cypress.IO는 간단하고 직관적인 구문을 제공하므로 테스트를 처음 사용하는 사용자도 쉽게 배우고 사용할 수 있습니다.
+Adobe는 실시간 리로딩 및 자동 대기 기능을 제공하여 테스트 중 시간을 절약하고 생산성을 향상시키는 데 도움이 되는 Cypress.IO의 사용을 권장합니다. 또한 Cypress.IO는 간단하고 직관적인 구문을 제공하므로 테스트를 처음 접하는 사용자도 쉽게 배우고 사용할 수 있습니다.
 
 UI 테스트는 [**프로덕션 파이프라인**&#x200B;의 ](/help/implementing/cloud-manager/deploy-code.md)사용자 정의 UI 테스트[ 단계](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)를 통해 또는 선택적으로 [비프로덕션 파이프라인의 같은 단계를 통해 각 Cloud Manager 파이프라인에 대한 특정 품질 게이트의 일부로 실행됩니다](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). 회귀 및 새로운 기능을 포함한 모든 UI 테스트를 통해 오류를 감지 및 보고할 수 있습니다.
 
@@ -205,12 +205,12 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 
 ### 환경 변수 {#environment-variables}
 
-다음 환경 변수는 프레임워크에 따라 런타임에 Docker 이미지에 전달됩니다.
+다음 환경 변수는 프레임워크에 따라 런타임 시 도커 이미지로 전달됩니다.
 
 | 변수 | 예 | 설명 | 테스트 프레임워크 |
 |---|---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 서버의 URL | 셀레늄만 |
-| `SELENIUM_BROWSER` | `chrome` | Selenium 서버에서 사용하는 브라우저 구현 | 셀레늄만 |
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 서버의 URL | Selenium 전용 |
+| `SELENIUM_BROWSER` | `chrome` | Selenium 서버에서 사용하는 브라우저 구현 | Selenium 전용 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 작성자 인스턴스의 URL | 모두 |
 | `AEM_AUTHOR_USERNAME` | `admin` | AEM 작성자 인스턴스에 로그인하기 위한 사용자 이름 | 모두 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | AEM 작성자 인스턴스에 로그인하기 위한 암호 | 모두 |
@@ -218,7 +218,7 @@ Adobe에서 제공하는 샘플을 사용하는 경우 다음을 참조하십시
 | `AEM_PUBLISH_USERNAME` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 사용자 이름 | 모두 |
 | `AEM_PUBLISH_PASSWORD` | `admin` | AEM 게시 인스턴스에 로그인하기 위한 암호 | 모두 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 테스트 결과의 XML 보고서를 저장해야 하는 경로 | 모두 |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | 테스트 프레임워크에 액세스할 수 있도록 하기 위해 파일을 업로드해야 하는 URL입니다 | 모두 |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | 테스트 프레임워크에 액세스할 수 있도록 파일을 업로드해야 하는 URL | 모두 |
 
 Adobe 테스트 샘플은 구성 매개변수에 액세스하기 위한 도우미 기능을 제공합니다.
 
@@ -229,7 +229,7 @@ Adobe 테스트 샘플은 구성 매개변수에 액세스하기 위한 도우�
 
 >[!NOTE]
 >
->이 섹션은 Selenium이 선택된 테스트 인프라인 경우에만 적용됩니다.
+>이 섹션은 Selenium이 테스트 인프라로 선택된 경우에만 적용됩니다.
 
 테스트가 시작되기 전에 Selenium 서버가 실행 중인지 확인하는 것은 도커 이미지의 책임입니다. Selenium 서비스 대기는 2단계 프로세스입니다.
 
@@ -267,7 +267,7 @@ UI 테스트 실행 중 테스트 결과 아카이브가 만들어지면 Cloud M
 
 ### 파일 업로드 {#upload-files}
 
-경우에 따라 테스트 중인 애플리케이션에 파일을 업로드해야 합니다. 테스트에 비해 Selenium을 유연하게 배치하기 위해 에셋을 Selenium에 직접 업로드 할 수 없습니다. 대신 파일을 업로드하려면 다음 단계가 필요합니다.
+경우에 따라 테스트 중인 애플리케이션에 파일을 업로드해야 합니다. 테스트에 비해 Selenium을 유연하게 배치하기 위해 자산을 Selenium에 직접 업로드 할 수 없습니다. 대신 파일을 업로드하려면 다음 단계가 필요합니다.
 
 1. `UPLOAD_URL` 환경 변수로 지정된 URL에서 파일을 업로드합니다.
    * 업로드는 다중 부분 양식으로 된 하나의 POST 요청으로 수행되어야 합니다.
