@@ -3,9 +3,9 @@ title: Adobe Target으로 경험 조각 내보내기
 description: Adobe Target으로 경험 조각 내보내기
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2250'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -316,9 +316,9 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!CAUTION]
 >
->이미지와 같은 미디어 에셋의 경우 하나의 참조만 Target으로 가져올 수 있습니다. 에셋 자체는 AEM Assets 내에 저장되며 AEM 게시 인스턴스에서 전달됩니다.
+>이미지와 같은 미디어 자산의 경우 하나의 참조만 Target으로 가져올 수 있습니다. 자산 자체는 AEM Assets 내에 저장되며 AEM 게시 인스턴스에서 전달됩니다.
 >
->이로 인해 경험 조각 및 관련된 모든 에셋은 Target으로 내보내기 전에 게시되어야 합니다.
+>이로 인해 경험 조각 및 관련된 모든 자산은 Target으로 내보내기 전에 게시되어야 합니다.
 
 AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지정 이후):
 
@@ -379,5 +379,5 @@ AEM에서 Target으로 경험 조각을 내보내려면(클라우드 구성 지�
    * AEM 경험 조각 및 Target 오퍼가 원하지 않은 동작을 수행할 수 있습니다.
 
       * 경험 조각 HTML이 Target으로 푸시되었으므로 해당 오퍼는 여전히 렌더링될 수 있습니다.
-      * AEM에서 참조된 에셋을 삭제해도 경험 조각의 참조가 올바르게 작동하지 않을 수 있습니다.
+      * AEM에서 참조된 자산을 삭제해도 경험 조각의 참조가 올바르게 작동하지 않을 수 있습니다.
    * 물론, AEM에 경험 조각이 더 이상 존재하지 않으므로 이후에 경험 조각을 수정할 수 없습니다.
