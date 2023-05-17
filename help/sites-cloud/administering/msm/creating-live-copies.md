@@ -4,10 +4,10 @@ description: 라이브 카피를 만들고 동기화하여 사이트 간 콘텐�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
-source-wordcount: '4274'
-ht-degree: 100%
+source-wordcount: '4322'
+ht-degree: 98%
 
 ---
 
@@ -136,6 +136,10 @@ ht-degree: 100%
 
 1. (선택 사항) 라이브 카피에 사용할 롤아웃 구성을 하나 이상 지정하려면 **롤아웃 구성** 드롭다운 목록을 사용하여 선택하십시오. 선택한 구성은 드롭다운 선택기 아래에 표시됩니다.
 1. **만들기**&#x200B;를 클릭하거나 탭합니다. 표시되는 확인 메시지에서 **열기** 또는 **완료** 중 하나를 선택할 수 있습니다.
+
+   >[!NOTE]
+   >
+   >&quot;양식 제출 실패&quot;라는 메시지와 함께 오류 대화 상자가 나타날 수 있습니다. 네트워크 시간 제한으로 인해 발생합니다. 하지만 Live Copy를 만드는 프로세스는 백그라운드에서 실행됩니다. 잠시 기다렸다가 Live Copy 페이지가 올바르게 생성되었는지 확인합니다.
 
 ### 블루프린트 구성으로 사이트의 라이브 카피 만들기 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
