@@ -3,7 +3,7 @@ title: 페이지 속성 편집
 description: 페이지의 필수 속성 정의
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2363'
 ht-degree: 100%
 
