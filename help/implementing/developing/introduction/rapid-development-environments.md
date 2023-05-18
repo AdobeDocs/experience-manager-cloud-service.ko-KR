@@ -2,7 +2,7 @@
 title: 신속한 개발 환경
 description: 클라우드 환경에서 빠른 개발 반복을 위해 빠른 개발 환경을 활용하는 방법을 알아봅니다.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
+source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
 ht-degree: 5%
@@ -118,13 +118,7 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
    3. Workspace: <no workspace selected>
    ```
 
-1. 를 실행하여 로그인이 성공적으로 완료되었는지 확인합니다
-
-   `aio cloudmanager:list-programs`
-
-   구성된 조직의 모든 프로그램을 나열해야 합니다.
-
-   위의 사항을 사용하려면 Cloud Manager의 구성원이어야 합니다 **개발자 - Cloud Service** 제품 프로필. 자세한 내용은 [이 페이지](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 자세한 내용
+   이 단계를 수행하려면 Cloud Manager의 구성원이어야 합니다 **개발자 - Cloud Service** 제품 프로필. 자세한 내용은 [이 페이지](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 자세한 내용
 
    또는 이 명령을 실행하여 개발자 콘솔에 로그인할 수 있는 경우 이 개발자 역할이 있는지 확인할 수 있습니다.
 
@@ -138,6 +132,13 @@ Cloud Manager를 사용하여 프로그램에 대한 RDE를 추가한 후에는 
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
+1. 를 실행하여 로그인이 성공적으로 완료되었는지 확인합니다
+
+   `aio cloudmanager:list-programs`
+
+   구성된 조직의 모든 프로그램을 나열해야 합니다.
+
 
 자세한 내용 및 데모는 [RDE를 설정하는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html) 비디오 자습서입니다.
 
