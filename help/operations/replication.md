@@ -2,10 +2,10 @@
 title: 복제
 description: 배포 및 복제 문제 해결
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1a42cfaa1010686279bc11ca92f50afc75d89e9d
+source-git-commit: 6b2ce7a4fb355e9ce78fbd7e0efee65c09fed932
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 91%
+source-wordcount: '1381'
+ht-degree: 90%
 
 ---
 
@@ -70,7 +70,7 @@ Adobe Experience Manager as a Cloud Service은 [Sling 콘텐츠 배포](https://
    ![프로세스 단계](/help/operations/assets/processstep.png)
 
 1. 플로우에서 프로세스 단계를 클릭하고 렌치 아이콘을 눌러 **구성**&#x200B;을 선택합니다.
-1. **프로세스** 탭을 클릭한 다음 드롭다운 목록에서 `Publish Content Tree`를 선택합니다.
+1. **프로세스** 탭을 클릭한 다음 드롭다운 목록에서 `Publish Content Tree`를 선택합니다.를 입력한 다음 을(를) 선택합니다 **핸들러 고급** 확인란
 
    ![트리 활성화](/help/operations/assets/newstep.png)
 
