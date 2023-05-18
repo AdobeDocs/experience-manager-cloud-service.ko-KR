@@ -2,9 +2,9 @@
 title: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 description: 릴리스 정보 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 3a00faaf285be693243e3fb55159149520293610
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1113'
 ht-degree: 1%
 
 ---
@@ -15,21 +15,18 @@ ht-degree: 1%
 
 ## 릴리스 일자 {#release-date}
 
-최신 버전 1.9.9의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2023년 4월 10일입니다.
+최신 버전 1.9.10의 릴리스 날짜 [!DNL Workfront for Experience Manager enhanced connector] 은 2023년 5월 18일입니다.
 
 ## 릴리스 특징 {#release-highlights}
 
 최신 버전의 [!DNL Workfront for Experience Manager enhanced connector] 다음 업데이트를 포함합니다.
 
-* Experience Manager에 `DateTimeParseException` 연결된 폴더를 만드는 동안 Workfront에서 마지막으로 수정한 날짜를 받은 경우 예외가 발생합니다.
+* Workfront은 Experience Manager에서 Workfront으로 REST 호출을 기반으로 중복 이벤트 가입에 대한 409 HTTP 응답을 반환하며, 이로 인해 null 포인터 예외가 발생합니다.
 
-* 짧은 시간 내에 여러 연결된 프로젝트 폴더를 만드는 동안 문제가 발생합니다.
-
-* 새 프로젝트 연결 폴더 집합에 대한 임계값 제한을 구성할 수 없습니다.
 
 >[!IMPORTANT]
 >
->Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.9 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe은 다음을 수행하는 것을 권장합니다. [최신 1.9.10 버전으로 업그레이드](../assets/update-workfront-enhanced-connector.md) 의 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 알려진 문제 {#known-issues}
 
@@ -38,6 +35,16 @@ ht-degree: 1%
 * 클래식 Workfront 경험을 사용하는 경우 **[!UICONTROL 보내기]** 선택 사항은 **[!UICONTROL 자세히]** 드롭다운 목록에서 Experience Manager 내에서 대상 대상을 선택할 수 없습니다. 다음 **[!UICONTROL 보내기]** 옵션은 **[!UICONTROL 문서 작업]** 드롭다운 목록. 다음 **[!UICONTROL 보내기]** 옵션이 올바르게 작동합니다. **[!UICONTROL 자세히]** 드롭다운 목록 및 **[!UICONTROL 문서 작업]** 새 Workfront 경험에서 사용할 수 있는 드롭다운 목록입니다.
 
 ## 이전 릴리스 {#previous-releases}
+
+### 2023년 4월 릴리스 {#april-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] 2023년 4월 10일에 릴리스된 버전 1.9.9에는 다음 업데이트가 포함됩니다.
+
+* Experience Manager에 `DateTimeParseException` 연결된 폴더를 만드는 동안 Workfront에서 마지막으로 수정한 날짜를 받은 경우 예외가 발생합니다.
+
+* 짧은 시간 내에 여러 연결된 프로젝트 폴더를 만드는 동안 문제가 발생합니다.
+
+* 새 프로젝트 연결 폴더 집합에 대한 임계값 제한을 구성할 수 없습니다.
 
 ### 2023년 3월 릴리스 {#march-2023-release}
 
