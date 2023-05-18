@@ -1,40 +1,31 @@
 ---
-title: AEM Sites 페이지에서 적응형 양식(핵심 구성 요소) 추가
-seo-title: How to add an Adaptive Form (Core Components) to an AEM Sites page?
+title: AEM Sites 페이지에서 적응형 양식(핵심 구성 요소) 추가 또는 만들기
+seo-title: How to add or create an Adaptive Form (Core Components) to an AEM Sites page?
 description: AEM Sites 페이지에서 적응형 양식(핵심 구성 요소)을 사용하여 AEM Sites 페이지를 종료하지 않고 양식을 작성하고 제출할 수 있습니다.
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 0d21b4ba2e7ce7592e3f2c57e4d320adc0af1008
+source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2135'
 ht-degree: 2%
 
 ---
 
-# AEM Sites 페이지에 적응형 Forms 추가 {#add-an-adaptive-form-to-aem-sites-page}
-
-## 개요 {#overview}
+# AEM Sites 편집기를 사용하여 적응형 양식 만들기 또는 추가 {#add-an-adaptive-form-to-aem-sites-page}
 
 AEM Sites 페이지에 적응형 Forms을 원활하게 작성 또는 포함하여 사용자가 사이트 페이지를 종료하지 않고 양식을 작성하고 제출할 수 있도록 할 수 있습니다. 따라서 사용자는 웹 페이지의 다른 요소 컨텍스트에 남아 있고 동시에 양식과 상호 작용할 수 있습니다.
 
-다음 방법 중 하나를 선택하여 AEM Sites 페이지에 적응형 양식을 작성하거나 포함할 수 있습니다.
+다음 방법 중 하나를 선택하여 AEM Sites 페이지에 적응형 양식을 작성하거나 추가할 수 있습니다.
 
-* **양식 구성 요소를 적응형 Forms 컨테이너 구성 요소로 끌어다 놓아 적응형 양식 만들기**: 를 사용하십시오 [적응형 Forms 컨테이너](#af-container-component) 구성 요소를 사용하여 적응형 양식을 호스팅하는 웹 페이지 내에 공백을 만들 수 있습니다. 이 스페이스에서 적응형 양식 구성 요소를 끌어다 놓아 양식을 만들 수 있습니다. 예를 들어 다음 비디오를 참조하여 적응형 양식을 만드는 방법을 알아보십시오 [!UICONTROL 적응형 Forms 컨테이너] 구성 요소:
+* **적응형 Forms 컨테이너 구성 요소를 사용하여 적응형 양식 만들기**: 다음 [적응형 양식 컨테이너](#af-container-component) 구성 요소를 사용하면 AEM Sites 편집기 내에서 바로 적응형 Forms 구성 요소를 활용하여 디지털 등록 경험을 구축할 수 있습니다. 이 통합은 AEM Sites 페이지 내에서 양식을 만들고 관리하려는 AEM Sites 작성자에게 원활한 경험을 제공합니다.
 
-다음 [적응형 양식 컨테이너](#af-container-component) 구성 요소를 사용하면 AEM Sites 편집기 내에서 바로 적응형 Forms 구성 요소를 활용하여 디지털 등록 경험을 구축할 수 있습니다. 이 통합은 AEM Sites 페이지 내에서 양식을 만들고 관리하려는 AEM Sites 작성자에게 원활한 경험을 제공합니다.
+* **기존 적응형 양식 추가**: 다음 [적응형 Forms - 포함(v2)](#embed-existing-af) 구성 요소를 사용하면 기존 적응형 양식을 AEM Sites 내의 페이지에 쉽게 추가할 수 있습니다. 이 기능은 적응형 Forms의 적응성 및 재사용을 개선합니다. 이 통합을 통해 고객은 이미 만든 적응형 Forms을 편리하게 재사용할 수 있습니다.
 
-* **기존 적응형 양식 포함**: 다음 [적응형 Forms - 포함(V2)](#embed-existing-af) 구성 요소를 사용하면 기존 적응형 양식을 AEM Sites 내의 페이지에 쉽게 통합할 수 있습니다. 예를 들어 [!UICONTROL 적응형 Forms - 포함] 다음 비디오에 표시된 대로 사이트 페이지의 구성 요소:
+* **적응형 Forms 마법사를 사용하여 양식 만들기**: 를 사용하십시오 [적응형 Forms - 포함(v2)](#embed-new-af) 구성 요소를 사용하여 양식 만들기 마법사를 사용하여 AEM Sites 편집기 내에서 적응형 양식을 만들 수 있습니다. 양식이 외부 엔티티로 저장됩니다. 이 양식은 다른 사이트 페이지와 독립 실행형 양식에서 다시 사용할 수도 있습니다.
 
-이 기능은 적응형 Forms의 적응성 및 재사용을 개선합니다. 이 통합을 통해 고객은 이미 만든 적응형 Forms을 편리하게 재사용할 수 있습니다.
-
-* **적응형 Forms 마법사를 사용하여 양식 만들기**:
-
-   를 사용하십시오 [적응형 Forms - 포함(v2)](#embed-new-af) 구성 요소를 사용하여 양식 만들기 마법사를 사용하여 AEM Sites 편집기 내에서 적응형 양식을 만들 수 있습니다. 양식이 외부 엔티티로 저장됩니다. 이 양식은 다른 사이트 페이지와 독립 실행형 양식에서 다시 사용할 수도 있습니다.
-예를 들어 아래 비디오를 참조하여 을 사용하여 새로 만든 적응형 양식을 만들고 포함하는 방법을 알아보십시오 [!UICONTROL 적응형 Forms - 포함] 구성 요소를 생성하지 않습니다.
-
-### 고려 사항 {#considerations}
+* **AEM Sites 페이지에 여러 적응형 Forms 추가**: AEM Sites 페이지에 여러 개의 적응형 Forms을 추가하려면 AEM Forms 컨테이너 구성 요소 를 사용하십시오. [적응형 Forms - 포함(v2)](#embed-new-af) 및 [적응형 양식 컨테이너](#af-container-component). AEM Sites 페이지 내에서 두 개 이상의 적응형 양식을 div로 추가해야 하는 경우 적응형 양식 컨테이너 구성 요소를 사용할 수 있습니다.
 
 규칙 편집기를 사용하여 적응형 양식 구성 요소의 동적 동작을 추가하거나 제어할 수 있습니다. 예를 들어 구성 요소를 숨기거나 표시합니다. 비적응형 양식 구성 요소에는 규칙 편집기를 사용할 수 없습니다. 따라서 AEM Forms 컨테이너 구성 요소에서 비적응형 양식 구성 요소를 사용하는 동안 부지런함을 사용하십시오.
 
@@ -44,7 +35,7 @@ AEM Sites 페이지에 적응형 Forms을 원활하게 작성 또는 포함하�
 
 ### 사전 요구 사항 {#prerequisites-af-container}
 
-+++ 활성화 **[!UICONTROL 적응형 Forms 컨테이너]** 관련 템플릿의 정책에 있는 구성 요소입니다.
++++ 활성화 **[!UICONTROL 적응형 Forms 컨테이너]** 구성 요소.
 
 활성화하려면 [!UICONTROL 적응형 Forms 컨테이너] 템플릿 정책에서 구성 요소를 수행하려면 다음 단계를 수행하십시오.
 
@@ -56,7 +47,7 @@ AEM Sites 페이지에 적응형 Forms을 원활하게 작성 또는 포함하�
 
 +++
 
-+++ 사이트의 페이지에 clientlibs 포함
++++ AEM Sites 페이지에 적응형 Forms 클라이언트 라이브러리 포함
 
 AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM Archetype/Git 리포지토리 및 배포 파이프라인을 사용하여 AEM Sites 페이지에 Customerlibs 및 Customfoterlibs 클라이언트 라이브러리를 포함합니다.
 
@@ -106,7 +97,11 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 
 #### 적응형 양식 컨테이너 속성 구성 {#configure-additional-settings-container}
 
-의 고급 설정을 사용자 지정할 수 있습니다 [!UICONTROL 적응형 양식 컨테이너] 구성 요소. 예를 들어 사이트의 페이지에 값이 미리 채워진 적응형 양식을 로드하도록 미리 채우기 서비스를 구성할 수 있습니다. 적응형 양식과 데이터 모델을 연결하도록 데이터 모델 설정을 구성합니다. 적응형 양식을 제출할 때 OneDrive 또는 SharePoint에 데이터를 저장하려면 제출 작업에 대한 설정을 구성합니다. 응용 Forms에 대해 사용자 지정 제출 작업을 추가할 수도 있습니다.
+의 고급 설정을 사용자 지정할 수 있습니다 [!UICONTROL 적응형 양식 컨테이너] 구성 요소. 예를 들어
+
+* 사이트의 페이지에 값이 미리 채워진 적응형 양식을 로드하도록 미리 채우기 서비스를 구성할 수 있습니다.
+* 적응형 양식을 데이터 소스와 연결하도록 데이터 모델 설정을 구성할 수 있습니다.
+* 양식을 제출할 때 Microsoft® OneDrive, Microsoft® OneDrive 또는 다른 데이터 소스에 데이터를 보내도록 제출 작업을 구성할 수 있습니다. 응용 Forms에 대한 사용자 지정 제출 작업을 만들고 선택할 수도 있습니다.
 
 에 대한 속성을 설정하려면 **[!UICONTROL 적응형 Forms 컨테이너]** 구성 요소에서 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 를 클릭합니다. 다음 **[!UICONTROL 응용 Forms 컨테이너 편집]** 대화 상자가 열립니다.
 
@@ -127,17 +122,16 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 * **전송 탭**
 
    * **URL로 리디렉션**
+      * **리디렉션 URL/경로**: 제출 후 적응형 양식을 리디렉션할 URL 또는 경로를 지정합니다.
 
-      **리디렉션 URL/경로**: 제출 작업 후 적응형 양식을 리디렉션할 URL 또는 경로를 지정합니다.
-
-      **작업 제출**: 사용자가 적응형 양식에서 제출 단추를 클릭하면 제출 작업이 트리거됩니다. 다음을 수행할 수 있습니다 [적응형 양식에서 제출 작업 구성](/help/forms/configuring-submit-actions.md). 적응형 양식은 즉시 제출 작업을 제공합니다.
-      * REST 엔드포인트에 제출
-      * 이메일 보내기
-      * 양식 데이터 모델을 사용하여 제출
-      * AEM 워크플로우 호출
-      * SharePoint에 제출
-      * OneDrive에 제출
-      * Azure Blob 스토리지에 제출
+      * **작업 제출**: 사용자가 적응형 양식에서 제출 단추를 클릭하면 제출 작업이 트리거됩니다. 다음을 수행할 수 있습니다 [적응형 양식에서 제출 작업 구성](/help/forms/configuring-submit-actions.md). 적응형 양식은 즉시 다음과 같은 제출 작업을 제공합니다.
+         * REST 엔드포인트에 제출
+         * 이메일 보내기
+         * 양식 데이터 모델을 사용하여 제출
+         * AEM 워크플로우 호출
+         * SharePoint에 제출
+         * OneDrive에 제출
+         * Azure Blob 스토리지에 제출
 
    다음을 수행할 수도 있습니다 [기본 제출 작업 확장](custom-submit-action-form.md) 를 입력하여 고유한 사용자 지정 제출 작업을 만들 수 있습니다.
 
@@ -146,15 +140,15 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 
 ## 적응형 양식 포함  {#aem-container-component}
 
-사용 **[!UICONTROL 적응형 Forms - 포함(V2)]** 구성 요소로 새 적응형 양식을 포함하거나 사이트의 페이지에 기존 적응형 양식을 포함할 수 있습니다. 다음 [!UICONTROL 적응형 Forms - 포함] 구성 요소로 다음을 수행할 수 있습니다.
+사용 **[!UICONTROL 적응형 Forms - 포함(V2)]** 구성 요소로 새 적응형 양식을 포함하거나 사이트의 페이지에 기존 적응형 양식을 포함할 수 있습니다. 다음 [!UICONTROL 적응형 Forms - 포함(v2)] 구성 요소로 다음을 수행할 수 있습니다.
 
-* [기존 적응형 양식 포함](#embed-new-af)
+* [기존 적응형 양식 추가](#embed-new-af)
 
-* [새 적응형 양식 만들기 및 포함](#embed-existing-af)
+* [새 적응형 양식 만들기 및 추가](#embed-existing-af)
 
 ### 사전 요구 사항 {#prerequisites}
 
-+++ 를 활성화합니다 **적응형 Forms - 포함** 관련 템플릿의 정책에 있는 구성 요소입니다.
++++ 를 활성화합니다 **적응형 Forms - 포함** 구성 요소.
 
 활성화하려면 [!UICONTROL 적응형 Forms - 포함(v2)] 템플릿 정책에서 구성 요소를 수행하려면 다음 단계를 수행하십시오.
 
@@ -167,13 +161,13 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 
 +++
 
-+++ 사이트의 페이지에 clientlibs 포함
++++ AEM Sites 페이지에 적응형 Forms 클라이언트 라이브러리 포함
 
 이 **[!UICONTROL 양식에서 페이지의 전체 너비를 다룹니다.]** 옵션이 **[!UICONTROL 양식 컨테이너]** 대화 상자 구성 및 **핵심 구성 요소를 사용하는 적응형 Forms** 를 사용하는 경우 해당 사이트의 페이지에 clientlibs를 포함해야 합니다.
 
 ![오버레이 Gif](/help/forms/assets/overlaycorecomponent.gif)
 
-AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM Archetype/Git 리포지토리 및 배포 파이프라인을 사용하여 AEM Sites 페이지에 Customerlibs 및 Customfoterlibs 클라이언트 라이브러리를 포함합니다.
+AEM Sites 페이지에서 응용 Forms 구성 요소를 사용하려면 다음을 포함합니다. `Customheaderlibs` 및 `Customfooterlibs` AEM Archetype/Git 리포지토리 및 배포 파이프라인을 사용하여 AEM Sites 페이지에 클라이언트 라이브러리를 추가합니다.
 
 1. 다음 문서를 엽니다. [AEM Forms Archetype 또는 복제된 Git 리포지토리](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 텍스트 편집기의 프로젝트입니다. 예를 들어 Visual Studio 코드를 사용할 수 있습니다.
 1. 다음으로 이동 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
@@ -201,13 +195,25 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
    </sly>
    ```
 
-   customfoterlibs.html은 CSS의 JavaScript와 customerlibs.html에 사용됩니다.
+   다음 `customfooterlibs.html` 는 JavaScript용 및 `customheaderlibs.html` CSS에 사용할 수 있습니다.
 
 1. [파이프라인 실행](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 를 눌러 변경 사항을 배포합니다.
 
 +++
 
-### 새 적응형 양식 포함 {#embed-new-af}
+### AEM Sites 페이지에 기존 적응형 양식 추가 {#embed-existing-af}
+
+1. 편집 모드에서 AEM Sites 페이지를 엽니다.
+1. 구성 요소 브라우저 패널에서 [!UICONTROL 적응형 Forms - 포함] 구성 요소를 생성하지 않습니다.
+1. 탭하기 [!UICONTROL 적응형 Forms - 포함] [사이트] 페이지의 구성 요소를 탭하고 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 를 클릭합니다. 다음 **[!UICONTROL 적응형 Forms 편집 - 포함]** 대화 상자가 열립니다.
+1. 에 포함할 적응형 양식을 찾아 선택합니다 [!UICONTROL 자산 경로].
+1. 설정을 저장합니다. 이제 적응형 양식이 페이지에 포함됩니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
+
+
+
+### 새 적응형 양식을 만들어 AEM Sites 페이지에 추가 {#embed-new-af}
 
 1. 편집 모드에서 AEM Sites 페이지를 엽니다.
 1. 구성 요소 브라우저 패널에서 [!UICONTROL 적응형 Forms - 포함(v2)] 구성 요소를 생성하지 않습니다.
@@ -221,17 +227,7 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419366/adaptive-form-aem-forms?quality=12&learn=on)
 
-### 기존 적응형 양식 포함 {#embed-existing-af}
-
-1. 편집 모드에서 AEM Sites 페이지를 엽니다.
-1. 구성 요소 브라우저 패널에서 [!UICONTROL 적응형 Forms - 포함] 구성 요소를 생성하지 않습니다.
-1. 탭하기 [!UICONTROL 적응형 Forms - 포함] [사이트] 페이지의 구성 요소를 탭하고 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 를 클릭합니다. 다음 **[!UICONTROL 적응형 Forms 편집 - 포함]** 대화 상자가 열립니다.
-1. 에 포함할 적응형 양식을 찾아 선택합니다 [!UICONTROL 자산 경로].
-1. 설정을 저장합니다. 이제 적응형 양식이 페이지에 포함됩니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/3419368?quality=12&learn=on)
-
-#### 적응형 양식 포함 속성 구성
+#### 적응형 양식 구성 - 포함(v2) 속성 {#configure-adaptive-form-embed}
 
 의 고급 설정을 사용자 지정할 수 있습니다 [!UICONTROL 적응형 양식 - 포함(v2)] 구성 요소. 에서 [!UICONTROL 적응형 Forms 편집 - 포함(v2)] 대화 상자에서 다음을 지정할 수 있습니다.
 
@@ -246,32 +242,30 @@ AEM Sites 페이지에서 적응형 Forms 구성 요소를 사용하려면 AEM A
 * **높이**: 컨테이너의 높이를 지정합니다. 컨테이너의 크기를 자동으로 조정하려면 이 필드를 비워 둡니다.
 * **CSS 클라이언트 라이브러리**: CSS 클라이언트 라이브러리의 경로를 지정합니다.
 
-### 포함된 적응형 양식 게시 {#publishing-embedded-adaptive-form}
+### 적응형 양식 - 포함(v2) 구성 요소를 사용하여 적응형 Forms 게시 을 추가했습니다  {#publish-embedded-adaptive-form}
 
-AEM Sites 페이지에 포함된 적응형 양식을 게시하기 위한 다음 시나리오를 생각해 보겠습니다.
+다음을 사용하여 추가된 적응형 Forms을 게시하기 위한 다음 시나리오를 고려하십시오. **[!UICONTROL 적응형 양식 - 포함(v2)]** 구성 요소:
 
-* AEM 사이트 페이지를 처음으로 게시하고 포함된 적응형 양식이 포함된 경우 사이트 페이지와 포함된 자산을 게시합니다.
-* 게시된 사이트 페이지에서 포함된 적응형 양식만 수정한 경우 원래 자산을 게시하고 변경 사항이 게시된 사이트 페이지에 반영됩니다. 게시된 사이트 페이지에는 자산에 대한 참조가 포함되어 있으며 페이지를 다시 게시할 필요가 없습니다.
-* 사이트 페이지 및 포함된 적응형 양식 을 수정한 경우 사이트 페이지와 포함된 자산을 다시 게시합니다.
+* AEM Sites 페이지를 처음 게시하면 사이트 페이지에 추가된 양식이 자동으로 게시됩니다.
+* 이미 게시된 사이트 페이지에 추가된 적응형 양식을 수정하면 해당 적응형 Forms을 수동으로 게시합니다.
+* 사이트 페이지 및 해당 적응형 Forms을 수정하면 사이트 페이지와 사이트 페이지에 추가된 모든 적응형 Forms을 다시 게시합니다.
 
-### 포함된 적응형 양식 수정  {#modifying-embedded-adaptive-form}
+### 적응형 양식 - 포함(v2) 구성 요소를 사용하여 추가된 적응형 Forms 수정  {#modifying-embedded-adaptive-form}
 
-포함된 적응형 양식의 구성이나 속성을 수정하려면 다음 중 하나를 수행합니다.
+적응형 양식의 구성이나 속성을 수정하려면 다음 중 하나를 수행합니다.
 
 * 각 편집기에서 적응형 양식으로 원래 양식을 열고 수정합니다.
 * 편집 모드의 사이트 페이지 내에서 적응형 양식을 탭한 다음 탭합니다 **[!UICONTROL 새 창에서 편집]**. 원본 양식은 수정할 수 있는 편집 모드로 열립니다.
 
->[!NOTE]
->
->원래 적응형 양식에서 변경한 내용은 포함된 양식에 자동으로 반영됩니다. 하지만 게시된 페이지의 변경 사항을 반영하도록 적응형 양식 또는 사이트의 페이지를 다시 게시합니다.
+## AEM Sites 페이지에 추가된 적응형 양식의 레이아웃 변경 {#change-layout-af-aem-sites-page}
 
-### 우수 사례 {#best-practices}
-
-* 원본 양식의 머리글 및 바닥글은 포함된 양식에 포함되지 않습니다.
-* 포함된 양식의 사용자 초안 및 제출 문서가 Forms 포털의 초안 및 제출된 Forms 탭에서 지원되고 표시됩니다.
-
-[AEM Sites 페이지에서 레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/responsive-layout.html?#defining-layouts-layout-mode) AEM 사이트의 페이지 내에 만들거나 포함된 적응형 양식의 크기를 조정할 수 있습니다.
+AEM Sites 페이지에서 [레이아웃 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/responsive-layout.html?#defining-layouts-layout-mode) AEM Sites 페이지에 생성되거나 추가된 적응형 양식의 크기를 조정할 수 있습니다.
 
 ![AF 레이아웃 지원](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM 사이트 페이지는 적응형 양식에 대한 참조를 유지 관리합니다. AEM Sites 페이지를 번역하면 자동으로 적응형 양식 및 관련 참조된 자산을 [번역 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) 다른 언어로 변환해야 합니다.
+
+## 우수 사례 {#best-practices}
+
+* 원본 양식의 머리글 및 바닥글은 포함된 양식에 포함되지 않습니다.
+* 포함된 양식의 사용자 초안 및 제출 문서가 Forms 포털의 초안 및 제출된 Forms 탭에서 지원되고 표시됩니다.
