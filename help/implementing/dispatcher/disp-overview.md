@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 72%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_dispoverview"
 >title="클라우드의 Dispatcher"
->abstract="이 페이지에서는 지원되는 Apache 모듈인 Dispatcher 도구를 다운로드하고 추출하는 방법에 대해 설명하고 기존 및 유연한 모드에 대한 높은 수준의 개요를 제공합니다."
+>abstract="이 페이지에서는 지원되는 Apache 모듈인 Dispatcher 도구를 다운로드하고 추출하는 방법을 설명하고 레거시 모드와 유연한 모드에 대한 높은 수준의 개요를 제공합니다."
 
 ## 소개 {#apache-and-dispatcher-configuration-and-testing}
 

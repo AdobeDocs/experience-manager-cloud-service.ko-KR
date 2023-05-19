@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 15%
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 15%
 
 AEM as Cloud Service가 내장된 CDN과 함께 제공됩니다. 주요 목적은 브라우저 근처 가장자리에 CDN 노드에서 캐시 가능 콘텐츠를 게재하여 지연 시간을 줄이는 것입니다. AEM 애플리케이션 최적의 성능을 위해 완벽하게 관리 및 구성됩니다.
 
-AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 충족합니다. 게시 계층의 경우 고객은 선택적으로 관리해야 하는 자체 CDN에서 해당 CDN을 가리킬 수 있습니다. 이 시나리오는 중단하기 어려운 CDN 공급업체와 레거시 통합을 갖는 고객을 포함한 특정 전제 조건을 충족하는 것에 제한되지 않고, 케이스별로 허용됩니다.
+AEM 관리 CDN은 대부분의 고객의 성능 및 보안 요구 사항을 충족합니다. 게시 계층의 경우 고객은 관리해야 할 자신의 CDN에서 지정할 수 있습니다(선택 사항). 이 시나리오는 중단할 수 없는 고객과 CDN 공급업체의 기존 통합을 포함하되 이에 국한되지 않고 특정 사전 요구 사항을 충족하는지에 따라 사례별로 지정됩니다.
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
@@ -45,7 +45,7 @@ Cloud Manager 셀프 서비스 UI를 사용하여 기본 제공 CDN을 사용하
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="고객 CDN은 AEM Managed CDN에 지정"
->abstract="AEM as Cloud Service는 고객이 기존 CDN을 사용할 수 있는 옵션을 제공합니다. 게시 계층의 경우 고객은 선택적으로 관리해야 하는 자체 CDN에서 해당 CDN을 가리킬 수 있습니다. 이 시나리오는 중단하기 어려운 CDN 공급업체와 레거시 통합을 갖는 고객을 포함한 특정 전제 조건을 충족하는 것에 제한되지 않고, 케이스별로 허용됩니다."
+>abstract="AEM as Cloud Service는 고객이 기존 CDN을 사용할 수 있는 옵션을 제공합니다. 게시 계층의 경우 고객은 관리해야 할 자신의 CDN에서 지정할 수 있습니다(선택 사항). 이 시나리오는 중단할 수 없는 고객과 CDN 공급업체의 기존 통합을 포함하되 이에 국한되지 않고 특정 사전 요구 사항을 충족하는지에 따라 사례별로 지정됩니다."
 
 고객이 기존 CDN을 사용해야 하는 경우 이를 관리하고 AEM 관리 CDN에 가리키도록 하여 다음 사항을 만족시킬 수 있습니다.
 

@@ -3,7 +3,7 @@ title: 사용자 정의 코드 품질 규칙
 description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙에 대해 설명합니다. 이 규칙은 Adobe Experience Manager Engineering의 모범 사례를 기반으로 합니다.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3508'
 ht-degree: 100%
 
