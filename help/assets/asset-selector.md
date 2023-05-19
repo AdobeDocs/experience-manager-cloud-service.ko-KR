@@ -3,9 +3,9 @@ title: 에 대한 자산 선택기 [!DNL Adobe Experience Manager] 로서의 [!D
 description: 자산 선택기를 사용하여 애플리케이션 내에서 자산의 메타데이터와 표현물을 검색, 찾기 및 검색합니다.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 22d2a2235c8696fce76369d3ffe369bcbaa3f6f2
+source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2378'
 ht-degree: 3%
 
 ---
@@ -30,6 +30,8 @@ ht-degree: 3%
 * IMS 조직 내에서 자산을 선택하여 전환할 수 있습니다.
 
 * 이름, 차원 및 크기별로 자산을 정렬하여 목록, 그리드, 갤러리 또는 워터폴 보기에서 볼 수 있습니다.
+
+이 문서의 범위는 자산선택기를 [!DNL Adobe] 통합 셸 아래의 애플리케이션 또는 인증을 위해 생성된 imsToken 이 이미 있는 경우. 이러한 워크플로우를 이 문서에서 비SUSI 플로우라고 합니다.
 
 다음 작업을 수행하여 자산 선택기를 와 통합 및 사용합니다. [!DNL Experience Manager Assets as a Cloud Service] 저장소:
 
@@ -361,8 +363,8 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 |---|---|---|---|---|
 | *레일* | 부울 | 아니요 | false | 표시된 경우 `true`, 자산 선택기가 왼쪽 레일 보기에서 렌더링됩니다. 표시되었으면 `false`를 입력하면 자산 선택기가 모달 보기로 렌더링됩니다. |
 | *imsOrg* | 문자열 | 예 |  | Adobe IMS(Identity Management 시스템) ID를 프로비저닝하는 동안 할당됩니다 [!DNL Adobe Experience Manager] 로서의 [!DNL Cloud Service] 사용할 수 있습니다. 다음 `imsOrg` 액세스하는 조직이 Adobe IMS 아래에 있는지 여부를 인증하려면 키가 필요합니다. |
-| *imsToken* | 문자열 | 아니요 |  | 인증에 사용되는 IMS 베어러 토큰입니다. `imsToken` SUSI 플로우를 사용하는 경우에는 필요하지 않습니다. 그러나 비SUSI 플로우를 사용하는 경우에는 필수입니다. |
-| *apiKey* | 문자열 | 아니요 |  | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. `apiKey` SUSI 플로우를 사용하는 경우에는 필요하지 않습니다. 그러나 비SUSI 플로우에서는 필수입니다. |
+| *imsToken* | 문자열 | 아니요 |  | 인증에 사용되는 IMS 베어러 토큰입니다. `imsToken` 비SUSI 플로우를 사용하는 경우 필수입니다. |
+| *apiKey* | 문자열 | 아니요 |  | AEM Discovery 서비스에 액세스하는 데 사용되는 API 키입니다. `apiKey` 비SUSI 플로우를 사용하는 경우 필수입니다. |
 | *rootPath* | 문자열 | 아니요 | /content/dam/ | 자산 선택기가 자산을 표시하는 폴더 경로. `rootPath` 캡슐화 형태로도 사용할 수 있습니다. 예를 들어 다음 경로가 주어지면 `/content/dam/marketing/subfolder/`, 자산 선택기에서 상위 폴더를 트래버스할 수 없지만 하위 폴더만 표시합니다. |
 | *경로* | 문자열 | 아니요 |  | 자산 선택기가 렌더링될 때 자산의 특정 디렉토리로 이동하는 데 사용되는 경로입니다. |
 | *filterSchema* | 배열 | 아니요 |  | 필터 속성을 구성하는 데 사용되는 모델입니다. 이 기능은 자산 선택기에서 특정 필터 옵션을 제한하려는 경우 유용합니다. |
